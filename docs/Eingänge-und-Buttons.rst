@@ -5,7 +5,7 @@ Der Baustein "IX" ist für Eingänge vom Typ BOOL vorgesehen.
 also Eingänge mit 1 Bit Datenbreite, 
 oder anders ausgedrückt: ein Schaltsignal das nur 2 Zustände kennt: 0 (Taster losgelassen) oder 1 (Taster gedrückt)
 
-![image](https://user-images.githubusercontent.com/69573151/179404465-c9d5080f-fad1-421f-aee4-1f95a8a90990.png)
+.. image:: https://user-images.githubusercontent.com/69573151/179404465-c9d5080f-fad1-421f-aee4-1f95a8a90990.png
 
 * Eingänge: 
   * INIT Service Initialization
@@ -32,11 +32,11 @@ oder anders ausgedrückt: ein Schaltsignal das nur 2 Zustände kennt: 0 (Taster 
 
 
 
-![image](https://user-images.githubusercontent.com/69573151/179405617-a62999a0-8330-4a9c-a0e7-14ed488d7edc.png)
+.. image:: https://user-images.githubusercontent.com/69573151/179405617-a62999a0-8330-4a9c-a0e7-14ed488d7edc.png
 
 
 
-![image](https://user-images.githubusercontent.com/69573151/179405473-6ca8a44d-6c9b-46b8-b78f-bc9164141fb4.png)
+.. image:: https://user-images.githubusercontent.com/69573151/179405473-6ca8a44d-6c9b-46b8-b78f-bc9164141fb4.png
 
 
 

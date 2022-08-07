@@ -26,5 +26,5 @@ Contents
    Home
    Abgrenzung
    Visuelle-Programmiersprachen
-   Eing%C3%A4nge-und-Buttons
-   %C3%9Cbungsaufgaben
+   Eingänge-und-Buttons
+   Übungsaufgaben

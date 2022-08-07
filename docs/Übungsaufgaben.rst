@@ -39,7 +39,7 @@ Die Aufgaben bauen aufeinander auf, so dass es sich empfiehlt diese in der angeg
 
    #. Ein Lastenaufzug hat 2 Funktionen: Hoch (Q#) und Runter (Q2). 3 Taster steuern den Aufzug: Hoch (I#), Runter(I2) und Stop (I3). Die Ausgänge Q# und Q2 dürfen niemals gleichzeitig betätigt werden, sonst brennt der Motor durch. Bevor man die Richtung wechseln kann muss immer erst Stop gedrückt werden. 
 
-#. Flip Flops und E_ Funktionen
+#. Flip Flops und E Funktionen
 
    #. Ahmen Sie das Beispiel "Step # - Use 4diac Locally (Blinking Tutorial)" nach
 

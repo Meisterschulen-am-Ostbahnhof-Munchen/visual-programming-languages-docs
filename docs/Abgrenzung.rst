@@ -1,3 +1,6 @@
+Abgrenzung
+===================================
+
 # Abgrenzung _visuelle Programmiersprachen_ vs. _textuelle Programmiersprachen_
 
 Literatur:

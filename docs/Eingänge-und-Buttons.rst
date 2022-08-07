@@ -1,4 +1,5 @@
-# Eingänge und Buttons
+Eingänge und Buttons
+===================================
 
 Der Baustein "IX" ist für Eingänge vom Typ BOOL vorgesehen. 
 also Eingänge mit 1 Bit Datenbreite, 

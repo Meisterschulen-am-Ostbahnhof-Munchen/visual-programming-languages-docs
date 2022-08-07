@@ -23,3 +23,8 @@ Contents
    Home <self>
    usage
    api
+   Home
+   Abgrenzung
+   Visuelle-Programmiersprachen
+   Eing%C3%A4nge-und-Buttons
+   %C3%9Cbungsaufgaben

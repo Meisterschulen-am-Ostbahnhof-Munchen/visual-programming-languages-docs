@@ -19,8 +19,6 @@ Contents
    :numbered:
 
    Home <self>
-   usage
-   api
    Home
    Abgrenzung
    Visuelle-Programmiersprachen

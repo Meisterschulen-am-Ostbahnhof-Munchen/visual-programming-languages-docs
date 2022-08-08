@@ -17,7 +17,7 @@ Contents
 
 .. toctree::
    :numbered:
-   
+
    Home <self>
    usage
    api

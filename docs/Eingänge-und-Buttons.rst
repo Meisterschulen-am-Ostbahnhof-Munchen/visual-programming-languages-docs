@@ -23,7 +23,7 @@ oder anders ausgedrückt: ein Schaltsignal das nur 2 Zustände kennt: 0 (Taster 
     
   * PARAMS Service Parameters
   
-    * hier wird der Parameter angegeben. Muss als String angegeben werden, also z.B. 'I1'. (die einfachen Hochkommas sind wichtig)
+    * leer lassen. (das ist mit dem FORTE-IO das wir benutzen nicht mehr verwendet)
     
 * Ausgänge:
 
@@ -61,13 +61,6 @@ oder anders ausgedrückt: ein Schaltsignal das nur 2 Zustände kennt: 0 (Taster 
 
 
 
-Denkbare Werte für PARAMS
-----------------------------
-
-Ix
-............................
-
-damit sind die Werte I1, I2, I3 gemeint, diese bilden folgende Eingänge ab: 
 
 * I1 => GPIO_NUM_26 
 * I2 => GPIO_NUM_32 
@@ -94,70 +87,6 @@ Der Schaltplan findet sich hier: https://github.com/Meisterschulen-am-Ostbahnhof
 wenn die Eingänge AIx verwendet werden darf der Eingang I2 natürlich nicht gleichzeitig verwendet werden. Die Eingänge I1 und I3 sind davon nicht betroffen. 
 
 es können also 6 Buttons mit einem Draht eingelesen werden. Drücken von 2 Tasten gleichzeitig funktionieren dann natürlich nicht. 
-
-
-
-.BUTTON_PRESS_NORMAL
-............................
-
-damit ist gemeint dass man an AIx oder Ix einen Suffix anhängt. 
-Zum Beispiel AI1.BUTTON_PRESS_NORMAL oder I3.BUTTON_PRESS_NORMAL
-
-.BUTTON_PRESS_NORMAL hat keine andere Funktion, 
-somit entspricht I1 = I1.BUTTON_PRESS_NORMAL
-
-in diesem Fall wird am Ausgang IN der Zustand abgegeben, und im Ausgang IND ein Event je Zustandswechsel. 
-
-bei einem Kurzen Tastendruck mit loslassen würde man also 2 Events am Ausgang IND erwarten. 
-
-
-
-.BUTTON_PRESS_DOWN
-............................
-
-wird dieser Suffix angehängt, so wird am Ausgang IND nur ein Event beim Drücken des Buttons gesendet, nicht beim Loslassen. 
-der Ausgang IN bleibt in dieser Variante stets auf 0
-
-.BUTTON_PRESS_UP
-............................
-
-wird dieser Suffix angehängt, so wird am Ausgang IND nur ein Event beim Loslassen des Buttons gesendet, nicht beim Drücken. 
-der Ausgang IN bleibt in dieser Variante stets auf 0
-
-.BUTTON_PRESS_REPEAT
-............................
-
-wird dieser Suffix angehängt, so wird am Ausgang IND nur ein Event bei Mehrfachklicks des Buttons gesendet. 
-Wird dieser Parameter beim Baustein IB verwendet, so enthält IN die Anzahl der Clicks. Damit sind interessante Anwendungen möglich. 
-der Ausgang IN bleibt in dieser Variante stets auf 0
-
-.BUTTON_SINGLE_CLICK
-............................
-
-wird dieser Suffix angehängt, so wird am Ausgang IND nur ein Event beim Klicken des Buttons gesendet. 
-Damit erfolgt kein Event beim Doppelklick.
-der Ausgang IN bleibt in dieser Variante stets auf 0
-
-.BUTTON_DOUBLE_CLICK
-............................
-
-wird dieser Suffix angehängt, so wird am Ausgang IND nur ein Event beim Doppelklicken des Buttons gesendet. 
-Damit erfolgt kein Event beim Einfach oder Dreifachklick. 
-der Ausgang IN bleibt in dieser Variante stets auf 0
-
-.BUTTON_LONG_PRESS_START
-............................
-
-wird dieser Suffix angehängt, so wird am Ausgang IND nur ein Event beim langen drücken des Buttons gesendet. Dieses kommt ein mal pro langem drücken. 
-der Ausgang IN bleibt in dieser Variante stets auf 0
-
-.BUTTON_LONG_PRESS_HOLD
-............................
-
-wird dieser Suffix angehängt, so wird am Ausgang IND nur ein Event beim langen drücken des Buttons gesendet. Dieses kommt wiederholt solange der Button festgehalten wird. 
-der Ausgang IN bleibt in dieser Variante stets auf 0
-
-
 
 
 

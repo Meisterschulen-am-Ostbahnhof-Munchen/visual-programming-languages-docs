@@ -22,5 +22,5 @@ Contents
    Home
    Abgrenzung
    Visuelle-Programmiersprachen
-   Eingänge-und-Buttons
+   ProcessInterface
    Übungsaufgaben

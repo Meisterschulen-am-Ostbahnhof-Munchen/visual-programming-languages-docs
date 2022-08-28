@@ -1,12 +1,6 @@
 Eingänge und Buttons
 ===================================
 
-.. toctree::
-   :numbered:
-
-   Mapping
-   Eingänge
-
 
 Der Baustein "IX" ist für Eingänge vom Typ BOOL vorgesehen. 
 also Eingänge mit 1 Bit Datenbreite, 

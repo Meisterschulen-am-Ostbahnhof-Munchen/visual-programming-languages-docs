@@ -2,12 +2,14 @@ Visuelle Programmiersprachen
 ===================================
 
 Literatur:
+----------
 
 https://de.wikipedia.org/wiki/Visuelle_Programmiersprache
 
 https://en.wikipedia.org/wiki/Visual_programming_language
 
-## Allgemeine Visuelle Programmiersprachen 
+Allgemeine Visuelle Programmiersprachen 
+.......................................
 
 Beispiele für Allgemeine Visuelle Programmiersprachen sind zum Beispiel Scratch von Google. 
 
@@ -31,7 +33,8 @@ UIFlow von M5Stack nutzt Blockly von Google.
 
 
 
-## Visuelle Programmiersprachen in der Steuerungstechnik
+Visuelle Programmiersprachen in der Steuerungstechnik
+.....................................................
 
 neben diesen "erziehungsorientierten" Visuellen Programmiersprachen gibt es weitere die sich mehr an das Ingenieurswesen wenden, zum Beispiel LabVIEW.
 
@@ -41,7 +44,8 @@ Im Bereich der Programmierung von Steuerungen gibt es ebenfalls schon viele Jahr
 
 
 
-###  Visuelle Programmiersprachen in der IEC 61131
+Visuelle Programmiersprachen in der IEC 61131
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 * https://en.wikipedia.org/wiki/IEC_61131
   * https://en.wikipedia.org/wiki/IEC_61131-3
@@ -64,7 +68,8 @@ Im Bereich der Programmierung von Steuerungen gibt es ebenfalls schon viele Jahr
     * ST https://de.wikipedia.org/wiki/Strukturierter_Text
       * ist eine Textuelle Programmiersprache die an Pascal erinnert. 
 
-###  Visuelle Programmiersprachen in der IEC 61499
+Visuelle Programmiersprachen in der IEC 61499
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 https://en.wikipedia.org/wiki/IEC_61499
 

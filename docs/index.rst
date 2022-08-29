@@ -22,3 +22,4 @@ Contents
    Visuelle-Programmiersprachen
    ProcessInterface
    Übungsaufgaben
+   4diac_internals

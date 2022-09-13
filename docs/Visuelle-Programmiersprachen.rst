@@ -48,14 +48,17 @@ Visuelle Programmiersprachen in der IEC 61131
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 * https://en.wikipedia.org/wiki/IEC_61131
+  * IEC_61131-2
   * https://en.wikipedia.org/wiki/IEC_61131-3
     * IL https://en.wikipedia.org/wiki/Instruction_list
     * LD https://en.wikipedia.org/wiki/Ladder_logic
     * FBD https://en.wikipedia.org/wiki/Function_block_diagram
     * SFC https://en.wikipedia.org/wiki/Sequential_function_chart
     * ST https://en.wikipedia.org/wiki/Structured_text
+  * IEC_61131-4
 
 * https://de.wikipedia.org/wiki/EN_61131
+  * EN 61131-2
   * EN 61131-3
     * AWL https://de.wikipedia.org/wiki/Anweisungsliste
       * ist eine textuelle Programmiersprache die an Assembler erinnert. 
@@ -67,6 +70,7 @@ Visuelle Programmiersprachen in der IEC 61131
       * ist eine visuelle Programmiersprache die auch als GRAFCET bekannt ist. 
     * ST https://de.wikipedia.org/wiki/Strukturierter_Text
       * ist eine Textuelle Programmiersprache die an Pascal erinnert. 
+  * EN 61131-4
 
 Visuelle Programmiersprachen in der IEC 61499
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

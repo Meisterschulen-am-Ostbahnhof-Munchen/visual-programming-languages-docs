@@ -1,7 +1,7 @@
 .. include:: ../README.rst
 
-visual-programming-languages-docs
-===================================
+visual-programming-languages-docs index
+========================================
 
 .. image:: img/poweredby4diac_large.svg
 

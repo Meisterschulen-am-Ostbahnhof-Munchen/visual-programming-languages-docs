@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "Basic Sphinx Example Project"
-copyright = "2022, Read the Docs core team"
-author = "Read the Docs core team"
+project = "visual programming languages Docs"
+copyright = "2022, Meisterschulen am Ostbahnhof, München"
+author = "Franz Höpfinger"
 
 
 # -- General configuration ---------------------------------------------------
@@ -33,6 +33,8 @@ extensions = [
     "sphinx.ext.intersphinx",
 ]
 
+version = "0.0.1"
+release = version
 intersphinx_mapping = {
     "rtd": ("https://docs.readthedocs.io/en/stable/", None),
     "python": ("https://docs.python.org/3/", None),

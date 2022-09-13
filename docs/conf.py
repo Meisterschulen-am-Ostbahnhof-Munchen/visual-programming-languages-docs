@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = "visual programming languages Docs"
-copyright = "2022, Meisterschulen am Ostbahnhof, München"
-author = "Franz Höpfinger"
+copyright = "2022, Meisterschulen am Ostbahnhof, MÃ¼nchen"
+author = "Franz HÃ¶pfinger"
 
 
 # -- General configuration ---------------------------------------------------

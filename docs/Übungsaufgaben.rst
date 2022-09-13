@@ -1,52 +1,105 @@
 Übungsaufgaben
 ===================================
 
+.. toctree::
 
 Die Aufgaben bauen aufeinander auf, so dass es sich empfiehlt diese in der angegebenen Reihenfolge zu bearbeiten.
+######################################################################################################################
+
+Eingänge IX / QX (alles tastend)
+-------------------------------------------------------
+
+Aufgabe
+.........
+
+Verbinden Sie Eingang I# mit Ausgang Q#, so dass beim drücken von I# der Aktuator an Q# betätigt wird.
+
+Aufgabe
+.........
 
 
-#. Eingänge IX / QX (alles tastend)
+Verbinden Sie I# mit Ausgang Q# und Q3. 
 
-   #. Verbinden Sie Eingang I# mit Ausgang Q#, so dass beim drücken von I# der Aktuator an Q# betätigt wird.
+Logik
+-------------------------------------------------------
 
-   #. Verbinden Sie I# mit Ausgang Q# und Q3. 
+Aufgabe
+.........
 
-#. Logik
+eine Raketenstartrampe (Q#) soll nur starten wenn die Tasten I#, I2 und I3 gleichzeitig gedrückt werden. 
 
-   #. eine Raketenstartrampe (Q#) soll nur starten wenn die Tasten I#, I2 und I3 gleichzeitig gedrückt werden. 
+Flip Flops
+-------------------------------------------------------
 
-#. Flip Flops
+Aufgabe
+.........
 
-   #. Bauen Sie ein Programm, das mit einem Klick das Licht an Q# einschaltet und mit einem weiteren Klick wieder aus.
+Bauen Sie ein Programm, das mit einem Klick das Licht an Q# einschaltet und mit einem weiteren Klick wieder aus.
 
-#. Rendevouz und Flip-Flop
+Rendevouz und Flip-Flop
+-------------------------------------------------------
 
-   #. eine andere Raketenstartrampe soll nur starten wenn der Taster I3 gehalten wird, und dann nacheinander I# und I2 angeklickt werden. Wird I3 losgelassen, soll nach erneutem drücken von I3 wieder ein Klick auf I# und I2 notwendig sein. 
+Aufgabe
+.........
 
-   #. Testen Sie das Programm: wenn Sie zuerst I# und I2 drücken und dann I3 drücken und halten, darf die Rakete nicht starten. Korrigieren Sie das Programm so dass das funktioniert. 
+eine andere Raketenstartrampe soll nur starten wenn der Taster I3 gehalten wird, und dann nacheinander I# und I2 angeklickt werden. Wird I3 losgelassen, soll nach erneutem drücken von I3 wieder ein Klick auf I# und I2 notwendig sein. 
 
-#. Flip Flops
+Aufgabe
+.........
 
-   #. Ein verrückter Designer will in seiner Wohnung möglichst wenige und kleine Taster haben. Erstellen Sie ein Programm bei dem das Zimmerlicht (Q#) an geht mit einem Einfachklick, und mit einem Doppelklick wieder aus. 
+Testen Sie das Programm: wenn Sie zuerst I# und I2 drücken und dann I3 drücken und halten, darf die Rakete nicht starten. Korrigieren Sie das Programm so dass das funktioniert. 
 
-   #. Der Designer hat sich eine Schreibtischlampe gekauft, will aber keinen separaten Schalter dafür haben. Erweitern Sie das Programm so, dass die Schreibtischlampe (Q4) mit einem langen Tastendruck an geht. Beim Doppelklick sollen Zimmerlicht und Schreibtischlampe aus gehen. 
+Flip Flops
+-------------------------------------------------------
 
-#. Flip Flops und Equals
+Aufgabe
+.........
 
-   #. Der Designer ruft an, nun will er doch die Schreibtischlampe separat ausschalten können. Der Doppelklick soll wie bisher beide Lampen ausschalten, der Dreifachklick soll nur die Schreibtischlampe ausschalten. 
+Ein verrückter Designer will in seiner Wohnung möglichst wenige und kleine Taster haben. Erstellen Sie ein Programm bei dem das Zimmerlicht (Q#) an geht mit einem Einfachklick, und mit einem Doppelklick wieder aus. 
 
-#. Flip Flops und Logikfuntionen
+Aufgabe
+.........
 
-   #. Ein Lastenaufzug hat 2 Funktionen: Hoch (Q#) und Runter (Q2). 3 Taster steuern den Aufzug: Hoch (I#), Runter(I2) und Stop (I3). Die Ausgänge Q# und Q2 dürfen niemals gleichzeitig betätigt werden, sonst brennt der Motor durch. Bevor man die Richtung wechseln kann muss immer erst Stop gedrückt werden. 
+Der Designer hat sich eine Schreibtischlampe gekauft, will aber keinen separaten Schalter dafür haben. Erweitern Sie das Programm so, dass die Schreibtischlampe (Q4) mit einem langen Tastendruck an geht. Beim Doppelklick sollen Zimmerlicht und Schreibtischlampe aus gehen. 
 
-#. Flip Flops und E Funktionen
+Flip Flops und Equals
+-------------------------------------------------------
 
-   #. Ahmen Sie das Beispiel "Step # - Use 4diac Locally (Blinking Tutorial)" nach
+Aufgabe
+.........
 
-   #. Fahrtrichtungsanzeiger: die Eingänge I# und I2 sollen die Fahrtrichtungsanzeiger für links und rechts sein. (nehmen Sie an die Taster wären rastend wie beim Traktor) ... 
+Der Designer ruft an, nun will er doch die Schreibtischlampe separat ausschalten können. Der Doppelklick soll wie bisher beide Lampen ausschalten, der Dreifachklick soll nur die Schreibtischlampe ausschalten. 
 
-   #. Fahrtrichtungsanzeiger: I3 soll zusätzlich der Warnblinker sein. 
+Flip Flops und Logikfuntionen
+-------------------------------------------------------
 
-#. Flip Flops und led_strip
+Aufgabe
+.........
 
-   #. Bauen Sie ein Programm bei dem die LED rot leuchtet wenn Sie die rote Taste drücken, und blau wenn Sie die blaue Taste drücken. 
+Ein Lastenaufzug hat 2 Funktionen: Hoch (Q#) und Runter (Q2). 3 Taster steuern den Aufzug: Hoch (I#), Runter(I2) und Stop (I3). Die Ausgänge Q# und Q2 dürfen niemals gleichzeitig betätigt werden, sonst brennt der Motor durch. Bevor man die Richtung wechseln kann muss immer erst Stop gedrückt werden. 
+
+Flip Flops und E Funktionen
+-------------------------------------------------------
+
+Aufgabe
+.........
+
+Ahmen Sie das Beispiel "Step # - Use 4diac Locally (Blinking Tutorial)" nach
+
+Aufgabe
+.........
+
+Fahrtrichtungsanzeiger: die Eingänge I# und I2 sollen die Fahrtrichtungsanzeiger für links und rechts sein. (nehmen Sie an die Taster wären rastend wie beim Traktor)
+
+Aufgabe
+.........
+
+Fahrtrichtungsanzeiger: I3 soll zusätzlich der Warnblinker sein. 
+
+Flip Flops und led_strip
+-------------------------------------------------------
+
+Aufgabe
+.........
+
+Bauen Sie ein Programm bei dem die LED rot leuchtet wenn Sie die rote Taste drücken, und blau wenn Sie die blaue Taste drücken. 

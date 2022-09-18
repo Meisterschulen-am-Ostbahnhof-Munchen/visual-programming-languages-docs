@@ -29,7 +29,7 @@ author = "Franz Höpfinger"
 extensions = [
     "sphinx.ext.duration",
     "sphinx.ext.doctest",
-...."sphinx.ext.autosectionlabel",
+    "sphinx.ext.autosectionlabel",
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.imgconverter",

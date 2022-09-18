@@ -1,3 +1,3 @@
-## Installation 4diac
+# Installation 4diac
 
 Wie man 4 diac installiert

@@ -20,7 +20,7 @@ Contents
    Home
    Abgrenzung
    Visuelle-Programmiersprachen
-   Installation-4diac.md
+   Installation-4diac
    ProcessInterface
    Übungsaufgaben
    4diac_internals

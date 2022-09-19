@@ -28,6 +28,16 @@ entpacken:
 
 ![](https://user-images.githubusercontent.com/69573151/191043373-77729c22-07cd-4c7a-bcd6-9f4dcaafed8f.png)
 
-jetzt kann man die ZIP Datei löschen wenn man möchte: 
+jetzt kann man die ZIP Datei löschen wenn man möchte:
 
 ![](https://user-images.githubusercontent.com/69573151/191044320-3da5c89c-b0b9-468a-a5a7-8bc1dd2c523b.png)
+
+![](https://user-images.githubusercontent.com/69573151/191044781-3526dec3-7053-467e-b9c2-8f1ab1bb14c6.png)
+
+4diac-ide doppelklicken
+
+![](https://user-images.githubusercontent.com/69573151/191044862-a1cc3ff1-9b84-4d17-8857-ea31cbd734fa.png)
+
+![](https://user-images.githubusercontent.com/69573151/191044904-82c5c527-7053-4744-a84f-54de4f0b2133.png)
+
+Trotzdem ausführen.

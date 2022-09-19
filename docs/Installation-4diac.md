@@ -27,3 +27,7 @@ entpacken:
 ![](https://user-images.githubusercontent.com/69573151/191043181-64e41075-dcd3-4423-bf07-c5f017770f13.png)
 
 ![](https://user-images.githubusercontent.com/69573151/191043373-77729c22-07cd-4c7a-bcd6-9f4dcaafed8f.png)
+
+jetzt kann man die ZIP Datei löschen wenn man möchte: 
+
+![](https://user-images.githubusercontent.com/69573151/191044320-3da5c89c-b0b9-468a-a5a7-8bc1dd2c523b.png)

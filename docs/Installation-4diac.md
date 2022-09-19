@@ -10,10 +10,16 @@ Wie man 4 diac installiert
 
 oder: [https://drive.google.com/file/d/14FY9VwpcvyYthvsfPYKd3vDPlA09ZFST/view?usp=sharing](https://drive.google.com/file/d/14FY9VwpcvyYthvsfPYKd3vDPlA09ZFST/view?usp=sharing)
 
-Idealerweise: 
+Idealerweise:
 
-neuer Ordner: 
+neuer Ordner:
 
 C:\\SL\\
 
 entpacken:
+
+![](https://user-images.githubusercontent.com/69573151/191042730-864901db-c48f-4cd8-932c-910d4a519aa6.png)
+
+![](https://user-images.githubusercontent.com/69573151/191042807-81629e9c-8bfd-42b6-8724-92be7bc44505.png)
+
+![](https://user-images.githubusercontent.com/69573151/191042854-f1a2c161-463f-4e36-bea9-3d84ecf9d5f7.png)

@@ -8,4 +8,12 @@ Wie man 4 diac installiert
 
 4diac-ide.zip
 
-oder:
+oder: [https://drive.google.com/file/d/14FY9VwpcvyYthvsfPYKd3vDPlA09ZFST/view?usp=sharing](https://drive.google.com/file/d/14FY9VwpcvyYthvsfPYKd3vDPlA09ZFST/view?usp=sharing)
+
+Idealerweise: 
+
+neuer Ordner: 
+
+C:\\SL\\
+
+entpacken:

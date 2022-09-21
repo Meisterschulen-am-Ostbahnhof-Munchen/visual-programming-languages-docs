@@ -8,6 +8,12 @@ aber ich kann mir die Zahl leichter merken:
 
 [https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL](https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL)
 
+Allgemeine Infos: 
+
+[https://de.wikipedia.org/wiki/EN_61499](https://de.wikipedia.org/wiki/EN_61499)
+
+[https://en.wikipedia.org/wiki/IEC_61499](https://en.wikipedia.org/wiki/IEC_61499)
+
 ## Beuth Verlag: DIN
 
 ### DIN EN 61499-1

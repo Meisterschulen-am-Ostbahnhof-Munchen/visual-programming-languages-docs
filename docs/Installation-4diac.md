@@ -49,3 +49,11 @@ Trotzdem ausführen.
 Hide
 
 ![](https://user-images.githubusercontent.com/69573151/191045359-b1160a2a-93ed-446d-9aa4-d4eecb441faf.png)
+
+Als nächstes legen wir ein Projekt an: 
+
+![](https://user-images.githubusercontent.com/69573151/191612579-7617d56a-9783-4d20-954b-bfad93e36c32.png)
+
+![](https://user-images.githubusercontent.com/69573151/191612662-23b8d17f-ca26-4776-9bcb-edae6c137036.png)
+
+![](https://user-images.githubusercontent.com/69573151/191613038-94c52097-4443-484e-9863-f144748cc2a2.png)

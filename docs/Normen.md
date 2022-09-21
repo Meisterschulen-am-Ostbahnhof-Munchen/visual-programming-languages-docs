@@ -2,7 +2,7 @@
 
 Mit dem CASE/IHC 1455 hat die IEC 61499 nichts zu tun, 
 
-aber ich kann mir die Zahl leichter merken: 
+aber ich kann mir die Zahl leichter merken:
 
 [https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL](https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL)
 

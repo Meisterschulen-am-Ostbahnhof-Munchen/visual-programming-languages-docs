@@ -30,6 +30,10 @@ Trend im Engineering - IEC 61131 versus IEC 61499
 
 [https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/](https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/) (unten auf der Seite)
 
+[https://wirautomatisierer.industrie.de/steuerungstechnik-ipc-sps/iec-61499-als-offener-standard/](https://wirautomatisierer.industrie.de/steuerungstechnik-ipc-sps/iec-61499-als-offener-standard/)
+
+https://wirautomatisierer.industrie.de/steuerungstechnik-ipc-sps/schneider-electric-mit-dem-automation-expert-auf-neuen-pfaden/
+
 ## Englisch
 
 ### Bücher
@@ -53,6 +57,8 @@ https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7dD6R8jOnamCuvV4NwSgrQT](https://www.youtube.com/playlist?list=PLD-CHxmB4P7dD6R8jOnamCuvV4NwSgrQT)
 
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7c1DEYmsE2eJaq-jF82GRRi](https://www.youtube.com/playlist?list=PLD-CHxmB4P7c1DEYmsE2eJaq-jF82GRRi)
+
+https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html
 
 [https://www.youtube.com/watch?v=quCrTcl8qSc](https://www.youtube.com/watch?v=quCrTcl8qSc)
 

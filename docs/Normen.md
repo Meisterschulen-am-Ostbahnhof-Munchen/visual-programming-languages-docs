@@ -45,3 +45,17 @@ die EVS ist Quasi die DIN von Estland. 
 dort sind die meisten Normen viel viel billiger als bei BEUTH. 
 
 Empfehlung: die 3 User Licence kaufen!
+
+
+
+### EVS-EN 61499-1
+
+
+### EVS-EN 61499-2
+
+
+### EVS-EN 61499-4
+
+
+
+

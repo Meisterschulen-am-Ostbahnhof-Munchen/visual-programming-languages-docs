@@ -32,7 +32,15 @@ Trend im Engineering - IEC 61131 versus IEC 61499
 
 [https://wirautomatisierer.industrie.de/steuerungstechnik-ipc-sps/iec-61499-als-offener-standard/](https://wirautomatisierer.industrie.de/steuerungstechnik-ipc-sps/iec-61499-als-offener-standard/)
 
-https://wirautomatisierer.industrie.de/steuerungstechnik-ipc-sps/schneider-electric-mit-dem-automation-expert-auf-neuen-pfaden/
+[https://wirautomatisierer.industrie.de/steuerungstechnik-ipc-sps/schneider-electric-mit-dem-automation-expert-auf-neuen-pfaden/](https://wirautomatisierer.industrie.de/steuerungstechnik-ipc-sps/schneider-electric-mit-dem-automation-expert-auf-neuen-pfaden/)
+
+[https://de.wikipedia.org/wiki/EN_61499](https://de.wikipedia.org/wiki/EN_61499)
+
+[https://www.sps-magazin.de/allgemein/automatisieren-mit-der-iec-61499/](https://www.sps-magazin.de/allgemein/automatisieren-mit-der-iec-61499/)
+
+[https://prozesstechnik.industrie.de/chemie/automation-chemie/iec-61499-der-traum-vom-offenen-standard-lebt/](https://prozesstechnik.industrie.de/chemie/automation-chemie/iec-61499-der-traum-vom-offenen-standard-lebt/)
+
+https://www.nxtcontrol.com/verteilung/
 
 ## Englisch
 
@@ -79,3 +87,5 @@ https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html
 https://www.youtube.com/watch?v=U_ZMVoDH8oQ
 
 ### Sonstiges
+
+https://en.wikipedia.org/wiki/IEC_61499

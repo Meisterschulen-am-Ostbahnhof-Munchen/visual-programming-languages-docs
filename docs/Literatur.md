@@ -88,4 +88,12 @@ https://www.youtube.com/watch?v=U_ZMVoDH8oQ
 
 ### Sonstiges
 
-https://en.wikipedia.org/wiki/IEC_61499
+[https://en.wikipedia.org/wiki/IEC_61499](https://en.wikipedia.org/wiki/IEC_61499)
+
+[https://www.eclipse.org/4diac/index.php](https://www.eclipse.org/4diac/index.php)
+
+[https://www.eclipse.org/4diac/en_help.php](https://www.eclipse.org/4diac/en_help.php)
+
+[https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/overview.html](https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/overview.html)
+
+https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/use4diacLocally.html

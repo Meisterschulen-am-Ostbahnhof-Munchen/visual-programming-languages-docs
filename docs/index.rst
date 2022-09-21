@@ -20,6 +20,7 @@ Contents
    Home
    Abgrenzung
    Visuelle-Programmiersprachen
+   Normen
    Installation-4diac
    ProcessInterface
    Übungsaufgaben

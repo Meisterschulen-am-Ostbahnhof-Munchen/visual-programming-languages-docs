@@ -6,7 +6,7 @@ aber ich kann mir die Zahl leichter merken:
 
 [https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL](https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL)
 
-https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL
+[https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL](https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL)
 
 ## Beuth Verlag: DIN
 
@@ -20,7 +20,7 @@ https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL
 
 ### DIN EN 61499-4
 
-https://www.beuth.de/de/norm/din-en-61499-4/191866520
+[https://www.beuth.de/de/norm/din-en-61499-4/191866520](https://www.beuth.de/de/norm/din-en-61499-4/191866520)
 
 ## IEC
 

@@ -25,3 +25,15 @@ davor waren schon ca. 2 Jahre Forschung und Entwicklung
 dazwischen wurde 4diac am fortiss, und heute an der JKU entwickelt. 
 
 am 7.7.2022 feierte 4diac 15 Jähriges.
+
+## Open Source
+
+[https://de.wikipedia.org/wiki/Open_Source](https://de.wikipedia.org/wiki/Open_Source)
+
+4diac ist dabei komplett Open Source. Das heißt es ist sowohl kostenlos verfügbar, wie auch dass jedermann das Programm selbst weiterentwickeln und anpassen kann. 
+
+Details regelt dieser Vertrag: 
+
+[https://www.eclipse.org/legal/epl-2.0/](https://www.eclipse.org/legal/epl-2.0/)
+
+[https://de.wikipedia.org/wiki/Eclipse_Public_License](https://de.wikipedia.org/wiki/Eclipse_Public_License)

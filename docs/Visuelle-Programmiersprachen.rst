@@ -126,3 +126,10 @@ IEC 61499 EEC (Execution Control Chart)
 EEC ist eine State Machine innerhalb IEC 61499
 
 
+Vergleich IEC 61499 zu IEC 61131-3
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+Z.B. Video 
+Siehe Hierzu auch https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html
+ab 43:13
+

@@ -22,6 +22,7 @@ Contents
    Visuelle-Programmiersprachen
    Normen
    Ueber4diac
+   Literatur
    Installation-4diac
    ProcessInterface
    Übungsaufgaben

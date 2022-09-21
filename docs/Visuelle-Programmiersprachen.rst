@@ -37,6 +37,12 @@ oft ist ein Umschalten zwischen einer Textuellen und Visuellen Ansicht möglich.
 In erster Linie dienen diese Sprachen dem leichteren Erlernen von Textuellen Programmiersprachen auf Visuellem Weg. 
 
 
+Visuelle Programmiersprachen in der Informatik
+.....................................................
+
+https://de.wikipedia.org/wiki/Unified_Modeling_Language
+
+
 
 Visuelle Programmiersprachen in der Steuerungstechnik
 .....................................................

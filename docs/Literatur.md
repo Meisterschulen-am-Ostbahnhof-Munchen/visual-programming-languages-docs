@@ -24,9 +24,11 @@ Trend im Engineering - IEC 61131 versus IEC 61499
 
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7eQ4_rTjP3MxaVv9xyiTRAm](https://www.youtube.com/playlist?list=PLD-CHxmB4P7eQ4_rTjP3MxaVv9xyiTRAm)
 
-https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW
+[https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW) (diese Videos sind von MS-MUC selbst erstellt)
 
 ### Sonstiges
+
+[https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/](https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/) (unten auf der Seite)
 
 ## Englisch
 

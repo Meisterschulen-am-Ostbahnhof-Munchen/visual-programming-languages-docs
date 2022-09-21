@@ -120,8 +120,8 @@ Die visuelle Programmiersprache die in der IEC 61499 definiert ist ähnelt dem F
 dadurch lassen sich alle Funktionsbausteine die aus der IEC 61131-3 bekannt sind, und auch solche von Drittbibliotheken z.B. OSCAT auch in der IEC 61499 implementieren. 
 Umgekehrt ist das nicht in jedem Fall möglich. 
 
-IEC 61499 EEC
-----------------------------------
+IEC 61499 EEC (Execution Control Chart)
+---------------------------------------
 
 EEC ist eine State Machine innerhalb IEC 61499
 

@@ -14,6 +14,10 @@ https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaret
 
 ### Videos
 
+Trend im Engineering - IEC 61131 versus IEC 61499
+
+[https://www.youtube.com/watch?v=Go75w3-HJhw](https://www.youtube.com/watch?v=Go75w3-HJhw)
+
 ### Sonstiges
 
 ## Englisch
@@ -33,5 +37,17 @@ Modelling Control Systems Using IEC 61499 (Iet Control Engineering, Band 95)
 https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601
 
 ### Videos
+
+[https://www.youtube.com/watch?v=quCrTcl8qSc](https://www.youtube.com/watch?v=quCrTcl8qSc)
+
+[https://www.youtube.com/watch?v=6ppKrO1ZwE8](https://www.youtube.com/watch?v=6ppKrO1ZwE8)
+
+[https://www.youtube.com/watch?v=K9iItQBC-ac](https://www.youtube.com/watch?v=K9iItQBC-ac)
+
+[https://www.youtube.com/watch?v=rptqwLv9s-M](https://www.youtube.com/watch?v=rptqwLv9s-M)
+
+[https://www.youtube.com/watch?v=sUu5Dq8OiZ4](https://www.youtube.com/watch?v=sUu5Dq8OiZ4)
+
+https://www.youtube.com/watch?v=0oqRrviF7GQ
 
 ### Sonstiges

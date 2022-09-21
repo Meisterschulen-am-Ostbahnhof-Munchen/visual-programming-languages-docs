@@ -42,6 +42,9 @@ Visuelle Programmiersprachen in der Informatik
 
 https://de.wikipedia.org/wiki/Unified_Modeling_Language
 
+Siehe Hierzu auch https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html
+ab 17:00
+
 
 
 Visuelle Programmiersprachen in der Steuerungstechnik

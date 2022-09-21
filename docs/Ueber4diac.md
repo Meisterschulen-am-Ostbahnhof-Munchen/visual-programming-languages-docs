@@ -6,6 +6,8 @@ https://www.acin.tuwien.ac.at/en/
 
 [https://www.fortiss.org/](https://www.fortiss.org/)
 
+https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf
+
 fortiss GmbH  
 Landesforschungsinstitut des Freistaats Bayern  
 für softwareintensive Systeme
@@ -32,7 +34,7 @@ am 7.7.2022 feierte 4diac 15 Jähriges.
 
 4diac ist dabei komplett Open Source. Das heißt es ist sowohl kostenlos verfügbar, wie auch dass jedermann das Programm selbst weiterentwickeln und anpassen kann. 
 
-Details regelt dieser Vertrag: 
+Details regelt dieser Vertrag:
 
 [https://www.eclipse.org/legal/epl-2.0/](https://www.eclipse.org/legal/epl-2.0/)
 

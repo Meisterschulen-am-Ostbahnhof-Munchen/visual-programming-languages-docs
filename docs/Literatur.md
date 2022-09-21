@@ -18,6 +18,14 @@ Trend im Engineering - IEC 61131 versus IEC 61499
 
 [https://www.youtube.com/watch?v=Go75w3-HJhw](https://www.youtube.com/watch?v=Go75w3-HJhw)
 
+[https://www.youtube.com/playlist?list=PLD-CHxmB4P7fdBSAS_woF0Gd5XUqk9o4g](https://www.youtube.com/playlist?list=PLD-CHxmB4P7fdBSAS_woF0Gd5XUqk9o4g)
+
+[https://www.youtube.com/playlist?list=PLD-CHxmB4P7cT89D0MPK9bppQurDQ8wuj](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cT89D0MPK9bppQurDQ8wuj)
+
+[https://www.youtube.com/playlist?list=PLD-CHxmB4P7eQ4_rTjP3MxaVv9xyiTRAm](https://www.youtube.com/playlist?list=PLD-CHxmB4P7eQ4_rTjP3MxaVv9xyiTRAm)
+
+https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW
+
 ### Sonstiges
 
 ## Englisch
@@ -38,6 +46,12 @@ https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601
 
 ### Videos
 
+[https://www.youtube.com/playlist?list=PLD-CHxmB4P7fPvyNl7OhlzT0CQF7CI6uT](https://www.youtube.com/playlist?list=PLD-CHxmB4P7fPvyNl7OhlzT0CQF7CI6uT)
+
+[https://www.youtube.com/playlist?list=PLD-CHxmB4P7dD6R8jOnamCuvV4NwSgrQT](https://www.youtube.com/playlist?list=PLD-CHxmB4P7dD6R8jOnamCuvV4NwSgrQT)
+
+[https://www.youtube.com/playlist?list=PLD-CHxmB4P7c1DEYmsE2eJaq-jF82GRRi](https://www.youtube.com/playlist?list=PLD-CHxmB4P7c1DEYmsE2eJaq-jF82GRRi)
+
 [https://www.youtube.com/watch?v=quCrTcl8qSc](https://www.youtube.com/watch?v=quCrTcl8qSc)
 
 [https://www.youtube.com/watch?v=6ppKrO1ZwE8](https://www.youtube.com/watch?v=6ppKrO1ZwE8)
@@ -50,6 +64,10 @@ https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601
 
 [https://www.youtube.com/watch?v=0oqRrviF7GQ](https://www.youtube.com/watch?v=0oqRrviF7GQ)
 
-https://www.youtube.com/watch?v=R58kH0JMd7o
+[https://www.youtube.com/watch?v=R58kH0JMd7o](https://www.youtube.com/watch?v=R58kH0JMd7o)
+
+[https://www.youtube.com/watch?v=VqQVdPE6lm0](https://www.youtube.com/watch?v=VqQVdPE6lm0) (Awite Bioenergie GmbH)
+
+https://www.youtube.com/watch?v=U_ZMVoDH8oQ
 
 ### Sonstiges

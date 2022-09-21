@@ -61,3 +61,9 @@ Als nächstes legen wir ein Projekt an:
 ![](https://user-images.githubusercontent.com/69573151/191613305-85516569-f738-4598-aa68-dd4d4623430e.png)
 
 ![](https://user-images.githubusercontent.com/69573151/191613395-5f6404c5-0e01-4c9e-96ee-ec293993a42b.png)
+
+Deploy,
+
+Watch 
+
+Monitor

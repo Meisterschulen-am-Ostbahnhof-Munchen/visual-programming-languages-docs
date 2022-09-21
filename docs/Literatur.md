@@ -90,6 +90,12 @@ https://www.youtube.com/watch?v=U_ZMVoDH8oQ
 
 [https://en.wikipedia.org/wiki/IEC_61499](https://en.wikipedia.org/wiki/IEC_61499)
 
+*   [Wikipedia article on IEC 61499](https://en.wikipedia.org/wiki/IEC_61499)
+*   [Introduction to IEC 61499 in the Eclipse 4diac documentation](https://www.eclipse.org/4diac/en_help.php?helppage=html/before4DIAC/iec61499.html)
+*   [Modelling Control Systems Using IEC 61499 by Robert W. Lewis and Alois Zoitl](http://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601/ref=sr_1_1?ie=UTF8&qid=1438845779&sr=8-1&keywords=zoitl)
+*   [Real-Time Execution for IEC 61499 by Alois Zoitl](http://www.amazon.de/Real-Time-Execution-61499-Alois-Zoitl/dp/1934394270/ref=sr_1_3?ie=UTF8&qid=1438845779&sr=8-3&keywords=zoitl)
+*   [Distributed Control Applications by Alois Zoitl and Thomas Strasser](https://www.crcpress.com/Distributed-Control-Applications-Guidelines-Design-Patterns-and-Application/Zoitl-Strasser/9781482259056)
+
 [https://www.eclipse.org/4diac/index.php](https://www.eclipse.org/4diac/index.php)
 
 [https://www.eclipse.org/4diac/en_help.php](https://www.eclipse.org/4diac/en_help.php)

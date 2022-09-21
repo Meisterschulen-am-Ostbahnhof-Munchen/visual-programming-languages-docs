@@ -2,7 +2,7 @@
 
 ## Deutsch
 
-### Bücher
+### Bücher Deutsch
 
 Valeriy Vyatkin: IEC 61499 Function Blocks für den Entwurf: Dritte Ausgabe
 
@@ -12,7 +12,7 @@ Prozess-Steuerungen: Projektierung und Inbetriebnahme mit dem Softwaretool SPaS
 
 https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833
 
-### Videos
+### Videos Deutsch
 
 Trend im Engineering - IEC 61131 versus IEC 61499
 
@@ -28,7 +28,7 @@ https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g
 
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW) (diese Videos sind von MS-MUC selbst erstellt)
 
-### Sonstiges
+### Sonstiges Deutsch
 
 [https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/](https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/) (unten auf der Seite)
 
@@ -46,7 +46,7 @@ https://www.nxtcontrol.com/verteilung/
 
 ## Englisch
 
-### Bücher
+### Bücher Englisch
 
 Valeriy Vyatkin: IEC 61499 Function Blocks for Embedded and Distributed Control Systems Design
 
@@ -60,7 +60,7 @@ Modelling Control Systems Using IEC 61499 (Iet Control Engineering, Band 95)
 
 https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601
 
-### Videos
+### Videos Englisch
 
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7fPvyNl7OhlzT0CQF7CI6uT](https://www.youtube.com/playlist?list=PLD-CHxmB4P7fPvyNl7OhlzT0CQF7CI6uT)
 
@@ -88,7 +88,7 @@ https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html
 
 https://www.youtube.com/watch?v=U_ZMVoDH8oQ
 
-### Sonstiges
+### Sonstiges Englisch
 
 [https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf](https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf)
 

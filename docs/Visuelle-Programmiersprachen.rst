@@ -111,9 +111,18 @@ https://en.wikipedia.org/wiki/IEC_61499
 https://de.wikipedia.org/wiki/EN_61499
 
 
+IEC 61499 Function Block
+----------------------------------
+
+
 Die visuelle Programmiersprache die in der IEC 61499 definiert ist ähnelt dem FBS aus der IEC 61131-3. 
 
 dadurch lassen sich alle Funktionsbausteine die aus der IEC 61131-3 bekannt sind, und auch solche von Drittbibliotheken z.B. OSCAT auch in der IEC 61499 implementieren. 
 Umgekehrt ist das nicht in jedem Fall möglich. 
+
+IEC 61499 EEC
+----------------------------------
+
+EEC ist eine State Machine innerhalb IEC 61499
 
 

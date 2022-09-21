@@ -37,3 +37,11 @@ aber ich kann mir die Zahl leichter merken:
 [https://webstore.iec.ch/publication/5508](https://webstore.iec.ch/publication/5508)
 
 ## EVS
+
+[https://www.evs.ee/en](https://www.evs.ee/en)
+
+die EVS ist Quasi die DIN von Estland. 
+
+dort sind die meisten Normen viel viel billiger als bei BEUTH. 
+
+Empfehlung: die 3 User Licence kaufen!

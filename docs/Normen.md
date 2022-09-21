@@ -46,16 +46,14 @@ dort sind die meisten Normen viel viel billiger als bei BEUTH. 
 
 Empfehlung: die 3 User Licence kaufen!
 
-
-
 ### EVS-EN 61499-1
 
+https://www.evs.ee/en/evs-en-61499-1-2013
 
 ### EVS-EN 61499-2
 
+https://www.evs.ee/en/evs-en-61499-2-2013
 
 ### EVS-EN 61499-4
 
-
-
-
+https://www.evs.ee/en/evs-en-61499-4-2013

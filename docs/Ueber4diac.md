@@ -9,3 +9,5 @@ Landesforschungsinstitut des Freistaats Bayern
 für softwareintensive Systeme
 
 Guerickestr. 25 · 80805 München · Deutschland
+
+https://www.fortiss.org/aktuelles/details/professur-fuer-fortiss-wissenschaftler

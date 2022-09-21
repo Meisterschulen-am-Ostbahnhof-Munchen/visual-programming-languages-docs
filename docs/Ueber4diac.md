@@ -10,4 +10,6 @@ für softwareintensive Systeme
 
 Guerickestr. 25 · 80805 München · Deutschland
 
-https://www.fortiss.org/aktuelles/details/professur-fuer-fortiss-wissenschaftler
+[https://www.fortiss.org/aktuelles/details/professur-fuer-fortiss-wissenschaftler](https://www.fortiss.org/aktuelles/details/professur-fuer-fortiss-wissenschaftler)
+
+[https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/](https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/)

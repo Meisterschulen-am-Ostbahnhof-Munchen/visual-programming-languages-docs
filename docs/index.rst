@@ -23,6 +23,7 @@ Contents
    Normen
    Ueber4diac
    Literatur
+   Hilfe
    Installation-4diac
    ProcessInterface
    Übungsaufgaben

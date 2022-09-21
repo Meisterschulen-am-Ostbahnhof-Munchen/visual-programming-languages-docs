@@ -48,6 +48,8 @@ https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601
 
 [https://www.youtube.com/watch?v=sUu5Dq8OiZ4](https://www.youtube.com/watch?v=sUu5Dq8OiZ4)
 
-https://www.youtube.com/watch?v=0oqRrviF7GQ
+[https://www.youtube.com/watch?v=0oqRrviF7GQ](https://www.youtube.com/watch?v=0oqRrviF7GQ)
+
+https://www.youtube.com/watch?v=R58kH0JMd7o
 
 ### Sonstiges

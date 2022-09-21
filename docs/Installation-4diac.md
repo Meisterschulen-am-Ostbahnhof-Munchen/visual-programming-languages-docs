@@ -50,10 +50,14 @@ Hide
 
 ![](https://user-images.githubusercontent.com/69573151/191045359-b1160a2a-93ed-446d-9aa4-d4eecb441faf.png)
 
-Als nächstes legen wir ein Projekt an: 
+Als nächstes legen wir ein Projekt an:
 
 ![](https://user-images.githubusercontent.com/69573151/191612579-7617d56a-9783-4d20-954b-bfad93e36c32.png)
 
 ![](https://user-images.githubusercontent.com/69573151/191612662-23b8d17f-ca26-4776-9bcb-edae6c137036.png)
 
 ![](https://user-images.githubusercontent.com/69573151/191613038-94c52097-4443-484e-9863-f144748cc2a2.png)
+
+![](https://user-images.githubusercontent.com/69573151/191613305-85516569-f738-4598-aa68-dd4d4623430e.png)
+
+![](https://user-images.githubusercontent.com/69573151/191613395-5f6404c5-0e01-4c9e-96ee-ec293993a42b.png)

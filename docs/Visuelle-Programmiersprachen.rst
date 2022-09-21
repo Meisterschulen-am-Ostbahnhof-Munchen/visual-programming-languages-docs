@@ -31,6 +31,11 @@ https://www.youtube.com/watch?v=Og6fYoyiTIk
 
 UIFlow von M5Stack nutzt Blockly von Google. 
 
+Blockly/Scratch usw. lehnt sich in der Struktur stark an Textuelle Programmiersprachen an. 
+oft ist ein Umschalten zwischen einer Textuellen und Visuellen Ansicht möglich. 
+
+In erster Linie dienen diese Sprachen dem leichteren Erlernen von Textuellen Programmiersprachen auf Visuellem Weg. 
+
 
 
 Visuelle Programmiersprachen in der Steuerungstechnik

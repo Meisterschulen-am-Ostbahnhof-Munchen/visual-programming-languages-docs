@@ -54,7 +54,16 @@ neben diesen "erziehungsorientierten" Visuellen Programmiersprachen gibt es weit
 
 https://www.ni.com/de-de/shop/labview.html
 
-Im Bereich der Programmierung von Steuerungen gibt es ebenfalls schon viele Jahre diverse visuelle Programmiersprachen zum beispiel Ladder logic: 
+
+
+Im Bereich der Programmierung von Steuerungen gibt es ebenfalls schon viele Jahre diverse visuelle Programmiersprachen zum Beispiel Ladder logic: 
+https://de.wikipedia.org/wiki/Kontaktplan
+
+
+Automatisierungspyramide
+.....................................................
+
+https://de.wikipedia.org/wiki/Automatisierungspyramide
 
 
 

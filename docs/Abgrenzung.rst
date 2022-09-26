@@ -3,6 +3,8 @@ Abgrenzung
 
 
 .. mermaid:: Diagramm.mmd
+.. mermaid:: Diagramm2.mmd
+.. mermaid:: Diagramm3.mmd
 
 
 Abgrenzung visuelle Programmiersprachen vs. textuelle Programmiersprachen

@@ -35,7 +35,7 @@ extensions = [
     "sphinx.ext.imgconverter",
     "recommonmark",
     "sphinxcontrib.mermaid",
-    "sphinx-markdown-tables"
+    "sphinx_markdown_tables"
 ]
 
 version = "0.0.1"

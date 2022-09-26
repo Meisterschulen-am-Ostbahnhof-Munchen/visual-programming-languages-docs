@@ -34,6 +34,7 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.imgconverter",
     "recommonmark"
+    "sphinxcontrib.mermaid"
 ]
 
 version = "0.0.1"

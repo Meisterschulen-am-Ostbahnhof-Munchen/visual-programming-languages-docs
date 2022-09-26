@@ -30,9 +30,6 @@ Siehe auch: IEC 61499, Table E.1
 
 in 4diac ist der 64bit Typ optional, und im Moment abgeschaltet.
 
-
 | foo | bar |
-| ---- | -------:|
+| --- | --- |
 | 42 | 99 |
-
-

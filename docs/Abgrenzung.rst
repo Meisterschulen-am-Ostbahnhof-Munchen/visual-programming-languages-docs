@@ -2,8 +2,19 @@ Abgrenzung
 ===================================
 
 
+Abgrenzung visuelle/textuelle Progammiersprachen
+..................................................
+
 .. mermaid:: Diagramm.mmd
+
+Untergliederung textuelle Progammiersprachen
+..................................................
+
 .. mermaid:: Diagramm2.mmd
+
+Untergliederung visuelle Progammiersprachen
+..................................................
+
 .. mermaid:: Diagramm3.mmd
 
 

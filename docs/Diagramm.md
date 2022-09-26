@@ -1,5 +1,9 @@
 # Diagramm
 
+Das Diagramm hakt an einer Stelle: 
+
+ST ist eine Textuelle Programmiersprache, genauso wie IL.
+
 ```mermaid
 flowchart TB
 A["Programmiersprachen"] --> B["textuelle Programmiersprachen"]

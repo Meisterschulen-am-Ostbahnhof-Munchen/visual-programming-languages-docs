@@ -2,11 +2,11 @@
 
 [https://www.eclipse.org/4diac/](https://www.eclipse.org/4diac/)
 
-https://www.acin.tuwien.ac.at/en/
+[https://www.acin.tuwien.ac.at/en/](https://www.acin.tuwien.ac.at/en/)
 
 [https://www.fortiss.org/](https://www.fortiss.org/)
 
-https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf
+[https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf](https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf)
 
 fortiss GmbH  
 Landesforschungsinstitut des Freistaats Bayern  

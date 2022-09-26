@@ -6,7 +6,6 @@ Contents
 
 .. toctree::
 
-   Diagramm
 
 
 Abgrenzung visuelle Programmiersprachen vs. textuelle Programmiersprachen

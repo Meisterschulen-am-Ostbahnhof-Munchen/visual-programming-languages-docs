@@ -21,6 +21,7 @@ Contents
    Abgrenzung
    Visuelle-Programmiersprachen
    Normen
+   Allgemeines
    Ueber4diac
    Literatur
    Hilfe

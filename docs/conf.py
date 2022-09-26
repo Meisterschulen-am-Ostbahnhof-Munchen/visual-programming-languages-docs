@@ -33,7 +33,7 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.imgconverter",
-    "recommonmark"
+    "recommonmark",
     "sphinxcontrib.mermaid"
 ]
 

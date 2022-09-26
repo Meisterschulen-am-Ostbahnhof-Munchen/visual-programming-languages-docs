@@ -1,12 +1,8 @@
 Abgrenzung
 ===================================
 
-Contents
---------
 
-.. toctree::
-
-   Diagramm
+.. mermaid:: Diagramm.mmd
 
 
 Abgrenzung visuelle Programmiersprachen vs. textuelle Programmiersprachen

@@ -1,18 +1,23 @@
 # Diagramm
 
-Das Diagramm hakt an einer Stelle: 
+Das Diagramm hakt an einer Stelle:
 
 ST ist eine Textuelle Programmiersprache, genauso wie IL.
 
 ```mermaid
 flowchart TB
 A["Programmiersprachen"] --> B["textuelle Programmiersprachen"]
-A--> C["visuelle Programmiersprachen"]
-C -->D["erziehungsorientierte v. Programmiersprachen"]
+B --> Python
+B --> Java
+B --> C++
+B --> C
+B --> C#
+A--> CL["visuelle Programmiersprachen"]
+CL -->D["erziehungsorientierte v. Programmiersprachen"]
 D --> Scratch
 D --> Blockly
-C -->E["industrielle v. Programmiersprachen"]
-C -->Informatik
+CL -->E["industrielle v. Programmiersprachen"]
+CL -->Informatik
 Informatik --> UML
 E --> H["LabVIEW"]
 E --> F["IEC 61131-3"]

@@ -90,6 +90,10 @@ https://www.youtube.com/watch?v=U_ZMVoDH8oQ
 
 ### Sonstiges Englisch
 
+[https://www.vyatkin.org/](https://www.vyatkin.org/)
+
+https://iec61499.com/
+
 https://www.eclipse.org/4diac/en_help.php?helppage=html/before4DIAC/iec61499.html
 
 [https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf](https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf)

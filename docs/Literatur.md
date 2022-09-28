@@ -10,7 +10,7 @@ Valeriy Vyatkin: IEC 61499 Function Blocks für den Entwurf: Dritte Ausgabe
 
 Prozess-Steuerungen: Projektierung und Inbetriebnahme mit dem Softwaretool SPaS
 
-https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833
+[https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)
 
 ### Videos Deutsch
 
@@ -18,7 +18,7 @@ Trend im Engineering - IEC 61131 versus IEC 61499
 
 [https://www.youtube.com/watch?v=Go75w3-HJhw](https://www.youtube.com/watch?v=Go75w3-HJhw)
 
-https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g
+[https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g](https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g)
 
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7fdBSAS_woF0Gd5XUqk9o4g](https://www.youtube.com/playlist?list=PLD-CHxmB4P7fdBSAS_woF0Gd5XUqk9o4g)
 
@@ -42,7 +42,7 @@ https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g
 
 [https://prozesstechnik.industrie.de/chemie/automation-chemie/iec-61499-der-traum-vom-offenen-standard-lebt/](https://prozesstechnik.industrie.de/chemie/automation-chemie/iec-61499-der-traum-vom-offenen-standard-lebt/)
 
-https://www.nxtcontrol.com/verteilung/
+[https://www.nxtcontrol.com/verteilung/](https://www.nxtcontrol.com/verteilung/)
 
 ## Englisch
 
@@ -58,7 +58,7 @@ Distributed Control Applications: Guidelines, Design Patterns, and Application E
 
 Modelling Control Systems Using IEC 61499 (Iet Control Engineering, Band 95)
 
-https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601
+[https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601](https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601)
 
 ### Videos Englisch
 
@@ -68,7 +68,7 @@ https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601
 
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7c1DEYmsE2eJaq-jF82GRRi](https://www.youtube.com/playlist?list=PLD-CHxmB4P7c1DEYmsE2eJaq-jF82GRRi)
 
-https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html
+[https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html](https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html)
 
 [https://www.youtube.com/watch?v=quCrTcl8qSc](https://www.youtube.com/watch?v=quCrTcl8qSc)
 
@@ -86,19 +86,21 @@ https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html
 
 [https://www.youtube.com/watch?v=VqQVdPE6lm0](https://www.youtube.com/watch?v=VqQVdPE6lm0) (Awite Bioenergie GmbH)
 
-https://www.youtube.com/watch?v=U_ZMVoDH8oQ
+[https://www.youtube.com/watch?v=U_ZMVoDH8oQ](https://www.youtube.com/watch?v=U_ZMVoDH8oQ)
 
 ### Sonstiges Englisch
 
+[https://acris.aalto.fi/ws/portalfiles/portal/87471087/Jhunjhunwala_Monitoring_design_pattern_for_distributed_automation_systems.pdf](https://acris.aalto.fi/ws/portalfiles/portal/87471087/Jhunjhunwala_Monitoring_design_pattern_for_distributed_automation_systems.pdf)
+
 [https://www.vyatkin.org/](https://www.vyatkin.org/)
 
-https://iec61499.com/
+[https://iec61499.com/](https://iec61499.com/)
 
-https://www.eclipse.org/4diac/en_help.php?helppage=html/before4DIAC/iec61499.html
+[https://www.eclipse.org/4diac/en_help.php?helppage=html/before4DIAC/iec61499.html](https://www.eclipse.org/4diac/en_help.php?helppage=html/before4DIAC/iec61499.html)
 
 [https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf](https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf)
 
-https://www.eclipse.org/4diac/events/docs/2016/UW_10_Melik.pdf
+[https://www.eclipse.org/4diac/events/docs/2016/UW_10_Melik.pdf](https://www.eclipse.org/4diac/events/docs/2016/UW_10_Melik.pdf)
 
 [https://en.wikipedia.org/wiki/IEC_61499](https://en.wikipedia.org/wiki/IEC_61499)
 
@@ -114,4 +116,4 @@ https://www.eclipse.org/4diac/events/docs/2016/UW_10_Melik.pdf
 
 [https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/overview.html](https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/overview.html)
 
-https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/use4diacLocally.html
+[https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/use4diacLocally.html](https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/use4diacLocally.html)

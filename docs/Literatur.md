@@ -90,6 +90,10 @@ Modelling Control Systems Using IEC 61499 (Iet Control Engineering, Band 95)
 
 ### Sonstiges Englisch
 
+[IEC 61499 Applications on LinkedIn](https://www.linkedin.com/groups/4431365/)
+
+[IEC 61499 FAQ on LinkedIn](https://www.linkedin.com/groups/4335830/)
+
 [https://acris.aalto.fi/ws/portalfiles/portal/87471087/Jhunjhunwala_Monitoring_design_pattern_for_distributed_automation_systems.pdf](https://acris.aalto.fi/ws/portalfiles/portal/87471087/Jhunjhunwala_Monitoring_design_pattern_for_distributed_automation_systems.pdf)
 
 [https://www.vyatkin.org/](https://www.vyatkin.org/)

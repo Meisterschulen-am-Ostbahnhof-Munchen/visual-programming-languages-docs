@@ -53,8 +53,7 @@ oder anders ausgedrückt: ein Schaltsignal das nur 2 Zustände kennt: 0 (Taster 
     * Das ist der Zustand des Eingangs, also 0 oder 1 
 
 
-
-.. image:: https://user-images.githubusercontent.com/69573151/179405617-a62999a0-8330-4a9c-a0e7-14ed488d7edc.png
+.. image:: https://user-images.githubusercontent.com/37779037/194324027-afe739e9-dd30-48ec-8002-db896492c07d.png
 
 
 

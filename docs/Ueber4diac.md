@@ -8,9 +8,7 @@
 
 [https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf](https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf)
 
-fortiss GmbH  
-Landesforschungsinstitut des Freistaats Bayern  
-für softwareintensive Systeme
+fortiss GmbH Landesforschungsinstitut des Freistaats Bayern für softwareintensive Systeme
 
 Guerickestr. 25 · 80805 München · Deutschland
 

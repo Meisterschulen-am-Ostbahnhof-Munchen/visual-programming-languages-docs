@@ -1,13 +1,5 @@
 # Normen: IEC 61499 und co.
 
-Mit dem CASE/IHC 1455 hat die IEC 61499 nichts zu tun, 
-
-aber ich kann mir die Zahl leichter merken:
-
-[https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL](https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL)
-
-[https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL](https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL)
-
 Allgemeine Infos:
 
 [https://de.wikipedia.org/wiki/EN_61499](https://de.wikipedia.org/wiki/EN_61499)

@@ -8,7 +8,7 @@ Valeriy Vyatkin: IEC 61499 Function Blocks für den Entwurf: Dritte Ausgabe
 
 [https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447](https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447)
 
-https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin
+[https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
 
 Prozess-Steuerungen: Projektierung und Inbetriebnahme mit dem Softwaretool SPaS
 
@@ -32,23 +32,23 @@ Trend im Engineering - IEC 61131 versus IEC 61499
 
 ### Sonstiges Deutsch
 
-https://docplayer.org/71630572-Verteilte-steuerungen-nach-iec-61499.html
+[https://docplayer.org/71630572-Verteilte-steuerungen-nach-iec-61499.html](https://docplayer.org/71630572-Verteilte-steuerungen-nach-iec-61499.html)
 
-https://slideplayer.org/slide/879446/
+[https://slideplayer.org/slide/879446/](https://slideplayer.org/slide/879446/)
 
-https://issuu.com/hk-gt/docs/tech_201203_df55f692a05682
+[https://issuu.com/hk-gt/docs/tech_201203_df55f692a05682](https://issuu.com/hk-gt/docs/tech_201203_df55f692a05682)
 
-http://vyatkin.org/uploads/talk.pdf
+[http://vyatkin.org/uploads/talk.pdf](http://vyatkin.org/uploads/talk.pdf)
 
-https://www.profinet.felser.ch/was_ist_in_iec_61499_dann_anders_als_in_iec_61131.html
+[https://www.profinet.felser.ch/was_ist_in_iec_61499_dann_anders_als_in_iec_61131.html](https://www.profinet.felser.ch/was_ist_in_iec_61499_dann_anders_als_in_iec_61131.html)
 
-http://vyatkin.org/iec61499day/
+[http://vyatkin.org/iec61499day/](http://vyatkin.org/iec61499day/)
 
-http://vyatkin.org/iec61499day/pdfs/Vyatkin%20Intro%20IEC%2061499.pdf
+[http://vyatkin.org/iec61499day/pdfs/Vyatkin%20Intro%20IEC%2061499.pdf](http://vyatkin.org/iec61499day/pdfs/Vyatkin%20Intro%20IEC%2061499.pdf)
 
 [https://link.springer.com/content/pdf/10.1007/s00502-021-00918-w.pdf](https://link.springer.com/content/pdf/10.1007/s00502-021-00918-w.pdf) (PDF Download!)
 
-https://de.frwiki.wiki/wiki/CEI_61499
+[https://de.frwiki.wiki/wiki/CEI_61499](https://de.frwiki.wiki/wiki/CEI_61499)
 
 [https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/](https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/) (unten auf der Seite)
 
@@ -66,9 +66,9 @@ https://de.frwiki.wiki/wiki/CEI_61499
 
 [https://www.computer-automation.de/steuerungsebene/steuern-regeln/ein-neues-buendnis-auf-basis-der-iec-61499.191725.html](https://www.computer-automation.de/steuerungsebene/steuern-regeln/ein-neues-buendnis-auf-basis-der-iec-61499.191725.html)
 
-https://universalautomation.org/
+[https://universalautomation.org/](https://universalautomation.org/)
 
-https://www.computer-automation.de/steuerungsebene/steuern-regeln/das-single-line-engineering.130428.html
+[https://www.computer-automation.de/steuerungsebene/steuern-regeln/das-single-line-engineering.130428.html](https://www.computer-automation.de/steuerungsebene/steuern-regeln/das-single-line-engineering.130428.html)
 
 ## Englisch
 
@@ -78,7 +78,7 @@ Valeriy Vyatkin: IEC 61499 Function Blocks for Embedded and Distributed Control 
 
 [https://www.amazon.de/Function-Embedded-Distributed-Control-Systems/dp/1936007932](https://www.amazon.de/Function-Embedded-Distributed-Control-Systems/dp/1936007932)
 
-http://www.vyatkin.org/book/Pages%20from%20IEC%2061499%20Vyatkin%20Second%20Edition.pdf
+[http://www.vyatkin.org/book/Pages%20from%20IEC%2061499%20Vyatkin%20Second%20Edition.pdf](http://www.vyatkin.org/book/Pages%20from%20IEC%2061499%20Vyatkin%20Second%20Edition.pdf)
 
 Distributed Control Applications: Guidelines, Design Patterns, and Application Examples with the Iec 61499 (Industrial Information Technology)
 
@@ -90,7 +90,7 @@ Modelling Control Systems Using IEC 61499 (Iet Control Engineering, Band 95)
 
 ### Videos Englisch
 
-https://youtu.be/quCrTcl8qSc
+[https://youtu.be/quCrTcl8qSc](https://youtu.be/quCrTcl8qSc)
 
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7fPvyNl7OhlzT0CQF7CI6uT](https://www.youtube.com/playlist?list=PLD-CHxmB4P7fPvyNl7OhlzT0CQF7CI6uT)
 
@@ -120,7 +120,7 @@ https://youtu.be/quCrTcl8qSc
 
 ### Sonstiges Englisch
 
-https://publik.tuwien.ac.at/files/PubDat_251131.pptx
+[https://publik.tuwien.ac.at/files/PubDat_251131.pptx](https://publik.tuwien.ac.at/files/PubDat_251131.pptx)
 
 [IEC 61499 Applications on LinkedIn](https://www.linkedin.com/groups/4431365/)
 

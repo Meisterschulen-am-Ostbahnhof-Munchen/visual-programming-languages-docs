@@ -29,7 +29,7 @@ Siehe auch: IEC 61499, Table E.1
 | Typ | BYTE Länge | Bit Länge | Wertebereich | Wertebereich |
 | --- | --- | --- | --- | --- |
 |   |   |   | min | max |
-| BOOL | 0 | 1 Bit | 0 | 1 |
+| BOOL | 0 | 1 Bit | 0 = FALSE | 1= TRUE |
 | SINT | 1 | 8 Bit | −128 | 127 |
 | INT | 2 | 16 Bit | −32.768 | 32.767 |
 | DINT | 4 | 32 Bit | −2.147.483.648 | 2.147.483.647 |

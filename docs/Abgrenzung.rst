@@ -18,7 +18,7 @@ Untergliederung visuelle Progammiersprachen
 .. mermaid:: Diagramm2a.mmd
 
 Weitere Untergliederung visuelle Progammiersprachen
-..................................................
+......................................................
 
 .. mermaid:: Diagramm3.mmd
 

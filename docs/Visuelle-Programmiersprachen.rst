@@ -101,7 +101,7 @@ Visuelle Programmiersprachen in der IEC 61131
 
     * FBS https://de.wikipedia.org/wiki/Funktionsbausteinsprache
 
-      * ist eine visuelle Programmiersprache die mit Blöcken arbeitet. So wird beispielweise die Siemens Logo programmiert. Bei Siemens heißt diese Sprace FUP Funktionsplan
+      * ist eine visuelle Programmiersprache die mit Blöcken arbeitet. So wird beispielweise die Siemens Logo programmiert. Bei Siemens heißt diese Sprache FUP Funktionsplan
 
     * AS https://de.wikipedia.org/wiki/Ablaufsprache
 

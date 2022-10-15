@@ -32,6 +32,12 @@ Trend im Engineering - IEC 61131 versus IEC 61499
 
 ### Sonstiges Deutsch
 
+https://docplayer.org/71630572-Verteilte-steuerungen-nach-iec-61499.html
+
+https://slideplayer.org/slide/879446/
+
+https://issuu.com/hk-gt/docs/tech_201203_df55f692a05682
+
 http://vyatkin.org/uploads/talk.pdf
 
 https://www.profinet.felser.ch/was_ist_in_iec_61499_dann_anders_als_in_iec_61131.html
@@ -113,6 +119,8 @@ https://youtu.be/quCrTcl8qSc
 [https://www.youtube.com/watch?v=U_ZMVoDH8oQ](https://www.youtube.com/watch?v=U_ZMVoDH8oQ)
 
 ### Sonstiges Englisch
+
+https://publik.tuwien.ac.at/files/PubDat_251131.pptx
 
 [IEC 61499 Applications on LinkedIn](https://www.linkedin.com/groups/4431365/)
 

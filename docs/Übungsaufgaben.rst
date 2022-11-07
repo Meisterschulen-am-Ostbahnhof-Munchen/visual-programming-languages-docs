@@ -12,13 +12,13 @@ Eingänge IX / QX (alles tastend)
 Aufgabe Einfache Verbindung I
 .............................
 
-Verbinden Sie Eingang I# mit Ausgang Q#, so dass beim drücken von I# der Aktuator an Q# betätigt wird.
+Verbinden Sie Eingang I1 mit Ausgang Q1, so dass beim drücken von I1 der Aktuator an Q1 betätigt wird.
 
 Aufgabe Einfache Verbindung II
 ..............................
 
 
-Verbinden Sie I# mit Ausgang Q# und Q3. 
+Verbinden Sie I1 mit Ausgang Q1 und Q3. 
 
 Logik
 -------------------------------------------------------
@@ -26,7 +26,7 @@ Logik
 Aufgabe
 .........
 
-eine Raketenstartrampe (Q#) soll nur starten wenn die Tasten I#, I2 und I3 gleichzeitig gedrückt werden. 
+eine Raketenstartrampe (Q1) soll nur starten wenn die Tasten I1, I2 und I3 gleichzeitig gedrückt werden. 
 
 Flip Flops I
 -------------------------------------------------------
@@ -34,7 +34,7 @@ Flip Flops I
 Aufgabe Klick
 .............
 
-Bauen Sie ein Programm, das mit einem Klick das Licht an Q# einschaltet und mit einem weiteren Klick wieder aus.
+Bauen Sie ein Programm, das mit einem Klick das Licht an Q1 einschaltet und mit einem weiteren Klick wieder aus.
 
 Rendevouz und Flip-Flop
 -------------------------------------------------------
@@ -42,12 +42,12 @@ Rendevouz und Flip-Flop
 Aufgabe Rendevouz und Flip-Flop
 ...............................
 
-eine andere Raketenstartrampe soll nur starten wenn der Taster I3 gehalten wird, und dann nacheinander I# und I2 angeklickt werden. Wird I3 losgelassen, soll nach erneutem drücken von I3 wieder ein Klick auf I# und I2 notwendig sein. 
+eine andere Raketenstartrampe soll nur starten wenn der Taster I3 gehalten wird, und dann nacheinander I1 und I2 angeklickt werden. Wird I3 losgelassen, soll nach erneutem drücken von I3 wieder ein Klick auf I1 und I2 notwendig sein. 
 
 Aufgabe Reihenfolge
 ...................
 
-Testen Sie das Programm: wenn Sie zuerst I# und I2 drücken und dann I3 drücken und halten, darf die Rakete nicht starten. Korrigieren Sie das Programm so dass das funktioniert. 
+Testen Sie das Programm: wenn Sie zuerst I1 und I2 drücken und dann I3 drücken und halten, darf die Rakete nicht starten. Korrigieren Sie das Programm so dass das funktioniert. 
 
 Flip Flops II
 -------------------------------------------------------
@@ -55,7 +55,7 @@ Flip Flops II
 Aufgabe Ein verrückter Designer
 ...............................
 
-Ein verrückter Designer will in seiner Wohnung möglichst wenige und kleine Taster haben. Erstellen Sie ein Programm bei dem das Zimmerlicht (Q#) an geht mit einem Einfachklick, und mit einem Doppelklick wieder aus. 
+Ein verrückter Designer will in seiner Wohnung möglichst wenige und kleine Taster haben. Erstellen Sie ein Programm bei dem das Zimmerlicht (Q1) an geht mit einem Einfachklick, und mit einem Doppelklick wieder aus. 
 
 Aufgabe Schreibtischlampe
 ..........................
@@ -76,7 +76,7 @@ Flip Flops und Logikfuntionen
 Aufgabe Flip Flops und Logikfuntionen
 ......................................
 
-Ein Lastenaufzug hat 2 Funktionen: Hoch (Q#) und Runter (Q2). 3 Taster steuern den Aufzug: Hoch (I#), Runter(I2) und Stop (I3). Die Ausgänge Q# und Q2 dürfen niemals gleichzeitig betätigt werden, sonst brennt der Motor durch. Bevor man die Richtung wechseln kann muss immer erst Stop gedrückt werden. 
+Ein Lastenaufzug hat 2 Funktionen: Hoch (Q1) und Runter (Q2). 3 Taster steuern den Aufzug: Hoch (I1), Runter(I2) und Stop (I3). Die Ausgänge Q1 und Q2 dürfen niemals gleichzeitig betätigt werden, sonst brennt der Motor durch. Bevor man die Richtung wechseln kann muss immer erst Stop gedrückt werden. 
 
 Flip Flops und E Funktionen
 -------------------------------------------------------
@@ -89,7 +89,7 @@ Ahmen Sie das Beispiel "Step # - Use 4diac Locally (Blinking Tutorial)" nach
 Aufgabe Fahrtrichtungsanzeiger
 ..............................
 
-Fahrtrichtungsanzeiger: die Eingänge I# und I2 sollen die Fahrtrichtungsanzeiger für links und rechts sein. (nehmen Sie an die Taster wären rastend wie beim Traktor)
+Fahrtrichtungsanzeiger: die Eingänge I1 und I2 sollen die Fahrtrichtungsanzeiger für links und rechts sein. (nehmen Sie an die Taster wären rastend wie beim Traktor)
 
 Aufgabe Warnblinker
 ....................

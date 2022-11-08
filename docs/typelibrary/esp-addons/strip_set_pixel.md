@@ -1,0 +1,1 @@
+### strip_set_pixel

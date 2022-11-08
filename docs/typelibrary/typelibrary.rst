@@ -5,5 +5,5 @@ TypeLibrary
 
 .. toctree::
 
-   devices
-   events
+   devices/devices
+   events/events

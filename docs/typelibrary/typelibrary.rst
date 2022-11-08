@@ -3,9 +3,6 @@ TypeLibrary
 ========================================
 
 
-Contents
---------
-
 .. toctree::
 
    devices

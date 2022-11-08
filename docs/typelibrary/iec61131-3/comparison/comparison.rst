@@ -5,8 +5,9 @@ selection
 
 .. toctree::
 
-   F_LIMIT
-   F_MAX
-   F_MIN
-   F_MUX_2
-   F_SEL
+   F_EQ
+   F_GE
+   F_GT
+   F_LE
+   F_LT
+   F_NE

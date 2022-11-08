@@ -20,6 +20,16 @@ das Toggle flip flop stellt einen "Stromstoßschalter" dar. 
 
 ##### E\_T\_FF Anwendungen Taster 
 
+mit einem E\_T\_FF lässt sich so ein Taster realisieren, der eine Lampe ein und ausschaltet:
+
+mapping:
+
+
+App:
+
+
+EMB\_RES:
+
 ##### E\_T\_FF Anwendungen Blinker
 
 mit einem E\_T\_FF lässt sich so ein Blinker realisieren:

@@ -7,3 +7,4 @@ iec61131-3
 .. toctree::
 
    arithmetic/arithmetic
+   booleanOperators/booleanOperators

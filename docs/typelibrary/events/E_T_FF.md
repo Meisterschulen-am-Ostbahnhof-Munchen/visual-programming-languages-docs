@@ -18,4 +18,14 @@ das Toggle flip flop stellt einen "Stromstoßschalter" dar. 
 
 mit einem E\_T\_FF lässt sich so ein Blinker realisieren:
 
-![](https://user-images.githubusercontent.com/69573151/200581016-7a3a50a9-9d86-4cd4-8bc4-d501f05a772a.png)
+mapping:
+
+![](https://user-images.githubusercontent.com/69573151/200581547-83f78279-e1a1-4748-8240-8755630638a9.png)
+
+App:
+
+![](https://user-images.githubusercontent.com/69573151/200581603-62aadee2-2a3a-4562-994f-51475817da3b.png)
+
+EMB\_RES:
+
+![](https://user-images.githubusercontent.com/69573151/200581674-613cabbc-86a6-45b7-ad57-a9c16bd6262d.png)

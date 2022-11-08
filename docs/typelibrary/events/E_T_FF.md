@@ -16,6 +16,6 @@ das Toggle flip flop stellt einen "Stromstoßschalter" dar. 
 
 [https://de.wikipedia.org/wiki/Stromsto%C3%9Fschalter](https://de.wikipedia.org/wiki/Stromsto%C3%9Fschalter)
 
-mit einem E\_T\_FF lässt sich so ein Blinker realisieren: 
+mit einem E\_T\_FF lässt sich so ein Blinker realisieren:
 
-![](https://user-images.githubusercontent.com/69573151/200580177-8026e0d0-32c2-4a38-9327-d9d1ac6f3df3.png)
+![](https://user-images.githubusercontent.com/69573151/200581016-7a3a50a9-9d86-4cd4-8bc4-d501f05a772a.png)

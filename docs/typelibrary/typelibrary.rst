@@ -8,5 +8,5 @@ Contents
 
 .. toctree::
 
-devices
-events
+  devices
+  events

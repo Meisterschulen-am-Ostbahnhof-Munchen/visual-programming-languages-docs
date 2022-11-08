@@ -33,4 +33,4 @@ Contents
    ProcessInterface
    Übungsaufgaben
    4diac_internals
-   TypeLibrary
+   typelibrary/TypeLibrary

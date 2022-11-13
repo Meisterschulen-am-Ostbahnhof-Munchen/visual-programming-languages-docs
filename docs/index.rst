@@ -1,5 +1,7 @@
-visual-programming-languages-docs index
-========================================
+.. include:: ../README.rst
+
+Welcome to visual-programming-languages  documentation!
+========================================================
 
 .. image:: img/poweredby4diac_large.svg
 

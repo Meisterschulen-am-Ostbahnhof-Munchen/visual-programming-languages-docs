@@ -4,6 +4,5 @@
 
 https://agro-center.de/schalter-fuer-holzspaltermotor-etzxxx961020.html
 
-### Ein Schalter= Einschalten
-
-### Ein Schalter Ausschalten
+*   Ein Schalter= Einschalten
+*   Ein Schalter Ausschalten

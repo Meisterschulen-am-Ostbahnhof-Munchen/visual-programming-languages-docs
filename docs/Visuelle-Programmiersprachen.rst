@@ -15,7 +15,8 @@ Beispiele für Allgemeine Visuelle Programmiersprachen sind zum Beispiel Scratch
 
 https://sites.google.com/ochieseeducation.ca/teachertech/coding/scratch
 
-https://de.m.wikipedia.org/wiki/Scratch_(Programmiersprache) Scratch (Programmiersprache)
+
+`https://de.m.wikipedia.org/wiki/Scratch_(Programmiersprache)  <https://de.m.wikipedia.org/wiki/Scratch_(Programmiersprache)>`_ Scratch (Programmiersprache)
 erziehungsorientierte visuelle Programmiersprache für Kinder und Jugendliche
 
 

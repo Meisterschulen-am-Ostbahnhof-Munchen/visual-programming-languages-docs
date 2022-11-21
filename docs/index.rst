@@ -36,3 +36,4 @@ Contents
    Übungsaufgaben
    4diac_internals
    typelibrary/typelibrary
+   genindex

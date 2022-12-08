@@ -12,7 +12,7 @@ fortiss GmbH Landesforschungsinstitut des Freistaats Bayern für softwareintensi
 
 Guerickestr. 25 · 80805 München · Deutschland
 
-https://www.fortiss.org/ergebnisse/software/4diac
+[https://www.fortiss.org/ergebnisse/software/4diac](https://www.fortiss.org/ergebnisse/software/4diac)
 
 [https://www.fortiss.org/aktuelles/details/professur-fuer-fortiss-wissenschaftler](https://www.fortiss.org/aktuelles/details/professur-fuer-fortiss-wissenschaftler)
 

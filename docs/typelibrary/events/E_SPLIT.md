@@ -1,5 +1,7 @@
 ### E\_SPLIT
 
-Template for an empty basic function block
+61499-1 Annex A
 
-![](https://user-images.githubusercontent.com/113907528/204903912-7de687db-3d82-46dc-80ba-a9d68534c1e3.png)
+Split one event into two events
+
+![](https://user-images.githubusercontent.com/69573151/210802227-1615f35d-6ed5-459b-a796-a5ef5fb11452.png)

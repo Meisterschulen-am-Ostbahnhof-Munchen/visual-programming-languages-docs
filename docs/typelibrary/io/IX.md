@@ -1,18 +1,17 @@
-### IX
+### IX - Input BOOL (1 Bit)
 
 Input service interface function block for boolean input data
 
-![](https://user-images.githubusercontent.com/113907528/206917487-cb7e6ab9-6301-45f7-b737-0592e8f11545.png)
+![](https://user-images.githubusercontent.com/69573151/210780918-7dd9c9fc-17da-4fca-983d-f5d40e91ce47.png)
 
-*   Input
+*   Input Event
     *   INIT Service Initialization
-    *   REQ Service Request
+*   Input Data
     *   QI Event Input Qualifier 
-    *   PARAMS Service Parameters 
-*   Output
-    *   INIT0 Initialization Confirm
-    *   CNF Confirmation of Requested Service 
+*   Output Event
+    *   INITO Initialization Confirm
     *   IND Indication from Resource 
+*   Output Data
     *   QO Event Output Qualifier 
     *   STATUS Service Status
     *   IN Input data from resource

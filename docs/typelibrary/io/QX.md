@@ -1,17 +1,18 @@
-### QX
+### QX - Output BOOL (1 Bit)
 
 Service Interface Function Block Type
 
-![](https://user-images.githubusercontent.com/113907528/206917765-76738f99-496b-4e38-aa3a-058bcdd332ea.png)
+![](https://user-images.githubusercontent.com/69573151/210781265-4dabab2d-a9e3-4da6-a14b-8df0a8ed36e5.png)
 
-*   Input
+*   Input Event
     *   INIT Service Initialization
     *   REQ Service Request
+*   Input Data
     *   QI Event Input Qualifier 
-    *   PARAMS Service Parameters 
-    *   OUT Output data to resource 
-*   Output
+    *   OUT Output data to resource
+*   Output Event
     *   INIT0 Initialization Confirm
     *   CNF Confirmation of Requested Service 
+*   Output Data
     *   QO Event Output Qualifier 
     *   STATUS Service Status

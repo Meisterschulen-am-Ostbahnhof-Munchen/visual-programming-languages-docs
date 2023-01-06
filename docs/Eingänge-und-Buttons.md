@@ -1,7 +1,11 @@
 # Eingänge und Buttons
 
 Der Baustein "IX" ist für Eingänge vom Typ BOOL vorgesehen.  
-also Eingänge mit 1 Bit Datenbreite,  
+also Eingänge mit 1 Bit Datenbreite,
+
+![](https://user-images.githubusercontent.com/69573151/210997070-e57193e1-f049-433e-9cf2-d4ad6d374002.png)
+
+  
 oder anders ausgedrückt: ein Schaltsignal das nur 2 Zustände kennt: 0 (Taster losgelassen) oder 1 (Taster gedrückt)
 
 .. image:: https://user-images.githubusercontent.com/69573151/179404465-c9d5080f-fad1-421f-aee4-1f95a8a90990.png

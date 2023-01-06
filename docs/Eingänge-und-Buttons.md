@@ -8,7 +8,7 @@ also Eingänge mit 1 Bit Datenbreite,
   
 oder anders ausgedrückt: ein Schaltsignal das nur 2 Zustände kennt: 0 (Taster losgelassen) oder 1 (Taster gedrückt)
 
-.. image:: https://user-images.githubusercontent.com/69573151/179404465-c9d5080f-fad1-421f-aee4-1f95a8a90990.png
+![]https://user-images.githubusercontent.com/69573151/179404465-c9d5080f-fad1-421f-aee4-1f95a8a90990.png)
 
 Eingänge:
 
@@ -54,9 +54,9 @@ IN Input data from resource
 
 *   Das ist der Zustand des Eingangs, also 0 oder 1
 
-.. image:: https://user-images.githubusercontent.com/37779037/194324027-afe739e9-dd30-48ec-8002-db896492c07d.png
+![]https://user-images.githubusercontent.com/37779037/194324027-afe739e9-dd30-48ec-8002-db896492c07d.png)
 
-.. image:: https://user-images.githubusercontent.com/69573151/179405473-6ca8a44d-6c9b-46b8-b78f-bc9164141fb4.png
+![]https://user-images.githubusercontent.com/69573151/179405473-6ca8a44d-6c9b-46b8-b78f-bc9164141fb4.png)
 
 *   I1 => GPIO\_NUM\_26
 *   I2 => GPIO\_NUM\_32

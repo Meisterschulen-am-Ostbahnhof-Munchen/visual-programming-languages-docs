@@ -3,6 +3,17 @@
 Welcome to visual-programming-languages  documentation!
 ========================================================
 
+
+Willkommen bei Visual Programming Languages Docs!
+
+Haben Sie sich jemals gefragt, wie man Programme visuell erstellt? Mit unserer Website sind Sie genau an der richtigen Stelle. Hier finden Sie alle Informationen und Ressourcen, die Sie benötigen, um in die Welt der visuellen Programmierung einzutauchen.
+
+Wir bieten umfassende Dokumentationen und Tutorials für verschiedene visuelle Programmiersprachen, einschließlich Blockly, Scratch und vielen mehr. Unsere Inhalte sind für Anfänger und Fortgeschrittene geeignet und werden von erfahrenen Entwicklern und Dozenten erstellt.
+
+Auf unserer Website finden Sie auch Links zu hilfreichen Ressourcen und Tools, die Ihnen bei der Erstellung von visuellen Programmen helfen werden.
+
+Also, worauf warten Sie noch? Beginnen Sie jetzt mit der visuellen Programmierung und werden Sie Teil der wachsenden Gemeinschaft von Entwicklern, die sich für diese spannende Technologie interessieren. Besuchen Sie uns jetzt und starten Sie Ihre Reise in die Welt der visuellen Programmierung.
+
 .. image:: img/poweredby4diac_large.svg
 
 

@@ -1,4 +1,4 @@
-NetworkInterface
+Interface
 ================
 
 Das Network Interface und das Process Interface sind wichtige Konzepte im Umfeld von Eclipse 4diac. Sie sind wesentliche Bestandteile der IEC 61499 Architektur und ermöglichen die Kommunikation und den Austausch von Daten zwischen verschiedenen Steuerungssystemen.

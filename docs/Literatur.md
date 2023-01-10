@@ -4,31 +4,57 @@
 
 ### Bücher Deutsch
 
+#### IEC 61499 Function Blocks für den Entwurf von Eingebetteten und Verteilten Systemen
+
+<table><tbody><tr><td><p>"IEC 61499 Function Blocks für den Entwurf von Eingebetteten und Verteilten Systemen" ist ein umfassendes Lehrbuch, das sich mit der IEC 61499 Norm für die Echtzeit-Verarbeitung von Steuerungssystemen beschäftigt. Die dritte Ausgabe des Buches bietet eine aktualisierte und erweiterte Darstellung des IEC 61499 Standards und zeigt, wie er in der Praxis angewendet werden kann.</p><p>Das Buch beginnt mit einer Einführung in die IEC 61499 Architektur und erläutert die Grundlagen der Function Blocks, die zur Modellierung von Steuerungssystemen verwendet werden. Es geht weiter auf die verschiedenen Typen von Function Blocks ein und zeigt, wie sie in der Praxis verwendet werden.</p><p>Ein Schwerpunkt des Buches liegt auf der Verwendung von Function Blocks in eingebetteten Systemen. Es zeigt, wie Function Blocks zur Steuerung von Hardware-Komponenten wie Sensoren und Aktoren genutzt werden können und gibt Beispiele für mögliche Anwendungen in Industrieumgebungen.</p><p>Das Buch befasst sich auch mit der Verwendung von Function Blocks in verteilten Systemen und zeigt, wie sie zur Kommunikation und zum Austausch von Daten zwischen verschiedenen Steuerungssystemen genutzt werden können. Es gibt auch einen Abschnitt über die Integration von Function Blocks in industrielle Kommunikationsprotokolle wie EtherCAT und PROFINET.</p><p>Insgesamt bietet "IEC 61499 Function Blocks für den Entwurf von Eingebetteten und Verteilten Systemen" eine umfassende Einführung in die IEC 61499 Norm und zeigt, wie sie in der Praxis angewendet werden kann. Es ist ein wertvoller Leitfaden für alle, die sich mit der Entwicklung von Steuerungssystemen beschäftigen und die IEC 61499 nutzen möchten.</p></td></tr></tbody></table>
+
 Valeriy Vyatkin: IEC 61499 Function Blocks für den Entwurf: Dritte Ausgabe
+
+[https://www.isa.org/products/iec-61499-function-blocks-fur-den-entwurf-von-eing](https://www.isa.org/products/iec-61499-function-blocks-fur-den-entwurf-von-eing)
 
 [https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447](https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447)
 
 [https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
 
-Prozess-Steuerungen: Projektierung und Inbetriebnahme mit dem Softwaretool SPaS
+---
+
+#### Prozess-Steuerungen: Projektierung und Inbetriebnahme mit dem Softwaretool SPaS
 
 [https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)
 
 ### Videos Deutsch
 
-Trend im Engineering - IEC 61131 versus IEC 61499
+#### Trend im Engineering - IEC 61131 versus IEC 61499
+
+<table><tbody><tr><td><p>In den letzten Jahren gibt es einen Trend im Engineering hin zu der Verwendung der IEC 61499 Norm im Vergleich zur IEC 61131 Norm. Die IEC 61499 bietet eine flexiblere und modularere Architektur für die Entwicklung von Steuerungssystemen und ermöglicht es, Systeme einfacher zu vernetzen und zu kommunizieren.</p><p>Die IEC 61499 setzt auf die Verwendung von Function Blocks zur Modellierung von Steuerungssystemen. Function Blocks sind kleine Einheiten, die bestimmte Funktionen ausführen und leicht angepasst werden können. Sie ermöglichen es, Steuerungssysteme schneller und effizienter zu entwickeln und zu ändern.</p><p>Im Vergleich dazu setzt die IEC 61131 auf die Verwendung von Programmiersprachen wie Ladder Logic und Structured Text. Sie ist zwar immer noch weit verbreitet, wird jedoch als weniger flexibel und modularer betrachtet als die IEC 61499.</p><p>Insgesamt ist der Trend zur Verwendung der IEC 61499 Norm im Engineering auf ihre flexiblere und modularere Architektur zurückzuführen, die es ermöglicht, Steuerungssysteme einfacher zu vernetzen und zu kommunizieren. Die IEC 61499 wird daher immer häufiger im Vergleich zur IEC 61131 als Standard für die Entwicklung von Steuerungssystemen verwendet.</p></td></tr></tbody></table>
 
 [https://www.youtube.com/watch?v=Go75w3-HJhw](https://www.youtube.com/watch?v=Go75w3-HJhw)
 
+#### 4diac Playlist
+
 [https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g](https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g)
+
+[https://www.youtube.com/@4diac177/about](https://www.youtube.com/@4diac177/about)
+
+#### nxtControl GmbH
 
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7fdBSAS_woF0Gd5XUqk9o4g](https://www.youtube.com/playlist?list=PLD-CHxmB4P7fdBSAS_woF0Gd5XUqk9o4g)
 
+[https://www.youtube.com/@nxtControl/about](https://www.youtube.com/@nxtControl/about)
+
+#### Alois Zoitl deutsch
+
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7cT89D0MPK9bppQurDQ8wuj](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cT89D0MPK9bppQurDQ8wuj)
+
+#### **4Diac andere Deutsch**
 
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7eQ4_rTjP3MxaVv9xyiTRAm](https://www.youtube.com/playlist?list=PLD-CHxmB4P7eQ4_rTjP3MxaVv9xyiTRAm)
 
-[https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW) (diese Videos sind von MS-MUC selbst erstellt)
+#### **4Diac**
+
+(diese Videos sind von MS-MUC selbst erstellt)
+
+[https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW) 
 
 ### Sonstiges Deutsch
 
@@ -65,6 +91,8 @@ Trend im Engineering - IEC 61131 versus IEC 61499
 [https://www.nxtcontrol.com/verteilung/](https://www.nxtcontrol.com/verteilung/)
 
 [https://www.computer-automation.de/steuerungsebene/steuern-regeln/ein-neues-buendnis-auf-basis-der-iec-61499.191725.html](https://www.computer-automation.de/steuerungsebene/steuern-regeln/ein-neues-buendnis-auf-basis-der-iec-61499.191725.html)
+
+#### universalautomation.org
 
 [https://universalautomation.org/](https://universalautomation.org/)
 

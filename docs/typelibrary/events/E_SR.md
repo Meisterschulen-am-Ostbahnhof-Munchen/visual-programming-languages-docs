@@ -20,3 +20,5 @@ https://agro-center.de/schalter-fuer-holzspaltermotor-etzxxx961020.html
 
 *   Ein Schalter = Einschalten
 *   Aus Schalter = Ausschalten
+
+Siehe auch: \[https://www.holobloc.com/doc/fb/rt/events/E_SR.htm](https://www.holobloc.com/doc/fb/rt/events/E_SR.htm)

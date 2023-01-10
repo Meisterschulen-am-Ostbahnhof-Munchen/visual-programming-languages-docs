@@ -92,6 +92,8 @@ Valeriy Vyatkin: IEC 61499 Function Blocks für den Entwurf: Dritte Ausgabe
 
 [https://www.computer-automation.de/steuerungsebene/steuern-regeln/ein-neues-buendnis-auf-basis-der-iec-61499.191725.html](https://www.computer-automation.de/steuerungsebene/steuern-regeln/ein-neues-buendnis-auf-basis-der-iec-61499.191725.html)
 
+#### universalautomation.org
+
 [https://universalautomation.org/](https://universalautomation.org/)
 
 [https://www.computer-automation.de/steuerungsebene/steuern-regeln/das-single-line-engineering.130428.html](https://www.computer-automation.de/steuerungsebene/steuern-regeln/das-single-line-engineering.130428.html)

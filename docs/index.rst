@@ -59,7 +59,7 @@ Contents
    Literatur
    Hilfe
    Installation-4diac
-   ProcessInterface
+   Interface/Interface
    Übungsaufgaben
    4diac_internals
    typelibrary/typelibrary

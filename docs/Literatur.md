@@ -4,15 +4,12 @@
 
 ### Bücher Deutsch
 
-Valeriy Vyatkin: IEC 61499 Function Blocks für den Entwurf: Dritte Ausgabe
-
-[https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447](https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447)
-
-[https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
-
-Prozess-Steuerungen: Projektierung und Inbetriebnahme mit dem Softwaretool SPaS
-
-[https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)
+*   Valeriy Vyatkin: IEC 61499 Function Blocks für den Entwurf: Dritte Ausgabe
+    *   [https://www.isa.org/store/products/product-detail/?productId=115964#sthash.oiT0PxLu.dpuf](https://www.isa.org/store/products/product-detail/?productId=115964#sthash.oiT0PxLu.dpuf)
+    *   [https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447](https://www.amazon.de/Function-Entwurf-Eingebetteten-Verteilten-Systemen/dp/0876640447)
+    *   [https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
+*   Prozess-Steuerungen: Projektierung und Inbetriebnahme mit dem Softwaretool SPaS
+    *   [https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)
 
 ### Videos Deutsch
 

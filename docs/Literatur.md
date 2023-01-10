@@ -34,13 +34,27 @@ Valeriy Vyatkin: IEC 61499 Function Blocks für den Entwurf: Dritte Ausgabe
 
 [https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g](https://www.youtube.com/channel/UCt0MlNo6Y7dXCZSDACXFi1g)
 
+[https://www.youtube.com/@4diac177/about](https://www.youtube.com/@4diac177/about)
+
+#### nxtControl GmbH
+
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7fdBSAS_woF0Gd5XUqk9o4g](https://www.youtube.com/playlist?list=PLD-CHxmB4P7fdBSAS_woF0Gd5XUqk9o4g)
+
+[https://www.youtube.com/@nxtControl/about](https://www.youtube.com/@nxtControl/about)
+
+#### Alois Zoitl deutsch
 
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7cT89D0MPK9bppQurDQ8wuj](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cT89D0MPK9bppQurDQ8wuj)
 
+#### **4Diac andere Deutsch**
+
 [https://www.youtube.com/playlist?list=PLD-CHxmB4P7eQ4_rTjP3MxaVv9xyiTRAm](https://www.youtube.com/playlist?list=PLD-CHxmB4P7eQ4_rTjP3MxaVv9xyiTRAm)
 
-[https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW) (diese Videos sind von MS-MUC selbst erstellt)
+#### **4Diac**
+
+(diese Videos sind von MS-MUC selbst erstellt)
+
+[https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW) 
 
 ### Sonstiges Deutsch
 

@@ -49,3 +49,8 @@ App:
 EMB\_RES:
 
 ![](https://user-images.githubusercontent.com/69573151/200581674-613cabbc-86a6-45b7-ad57-a9c16bd6262d.png)
+
+
+
+
+Siehe auch: [https://www.holobloc.com/doc/fb/rt/events/E_T_FF.htm](https://www.holobloc.com/doc/fb/rt/events/E_T_FF.htm)

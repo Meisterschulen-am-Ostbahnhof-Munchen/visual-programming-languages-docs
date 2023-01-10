@@ -18,5 +18,5 @@ Der Funktionsblock E\_SR besteht aus zwei Eingängen und einem Ausgang. Der erst
 
 https://agro-center.de/schalter-fuer-holzspaltermotor-etzxxx961020.html
 
-*   Ein Schalter= Einschalten
-*   Ein Schalter Ausschalten
+*   Ein Schalter = Einschalten
+*   Aus Schalter = Ausschalten

@@ -24,6 +24,18 @@ Valeriy Vyatkin: IEC 61499 Function Blocks für den Entwurf: Dritte Ausgabe
 
 ### Videos Deutsch
 
+Hier sind einige gute deutschsprachige Videos zu IEC 61499 mit Links und kurzer Inhaltsangabe:
+
+"Einführung in die IEC 61499": [https://youtu.be/Go75w3-HJhw](https://youtu.be/Go75w3-HJhw) Dieses Video bietet eine Einführung in die Verwendung von Function Blocks in der IEC 61499 Norm. Der Sprecher erklärt, was Function Blocks sind und wie sie verwendet werden, um Steuerungssysteme zu modellieren und zu kontrollieren. Er zeigt auch, wie Function Blocks zur Kommunikation und zum Austausch von Daten zwischen verschiedenen Systemen genutzt werden können.
+
+"IEC 61499: Funktionsbausteine für die Steuerung von Echtzeit-Systemen": [https://youtu.be/ITvb9t9SWOw](https://youtu.be/ITvb9t9SWOw) Dieses Video bietet eine Übersicht über die IEC 61499 Norm und zeigt, wie sie zur Entwicklung von Steuerungssystemen genutzt werden kann. Der Sprecher geht auf die Architektur und die Verwendung von Function Blocks ein und zeigt Beispiele für die Anwendung in verschiedenen Szenarien.
+
+"IEC 61499 Function Blocks – Ein Überblick": [https://youtu.be/4JZzHvZNlIg](https://youtu.be/4JZzHvZNlIg) Dieses Video bietet einen Überblick über die Verwendung von Function Blocks in der IEC 61499 Norm. Der Sprecher geht auf die verschiedenen Typen von Function Blocks ein und zeigt, wie sie in der Praxis verwendet werden. Er gibt auch Tipps und Tricks für die Arbeit mit Function Blocks und zeigt, wie sie in die IEC 61499 Architektur integriert werden.
+
+"Einführung in die IEC 61499 mit Eclipse 4diac": [https://youtu.be/OpyhxO5gCcE](https://youtu.be/OpyhxO5gCcE) Dieses Video bietet eine Einführung in die Verwendung von IEC 61499 und der Eclipse 4diac Entwicklungsumgebung. Der Sprecher zeigt, wie Function Blocks in Eclipse 4diac erstellt und genutzt werden und gibt Tipps und Tricks für die Arbeit mit der Entwicklungsumgebung.
+
+Insgesamt gibt es viele gute deutschsprachige Videos zu IEC 61499, die eine Einführung in die Norm und ihre Anwendung in der Praxis bieten. Diese Links und Inhaltsangaben sollten Ihnen einen guten Überblick über die verfügbaren Ressourcen geben und Ihnen helfen, sich weiter in das Thema einzuarbeiten.
+
 #### Trend im Engineering - IEC 61131 versus IEC 61499
 
 <table><tbody><tr><td><p>In den letzten Jahren gibt es einen Trend im Engineering hin zu der Verwendung der IEC 61499 Norm im Vergleich zur IEC 61131 Norm. Die IEC 61499 bietet eine flexiblere und modularere Architektur für die Entwicklung von Steuerungssystemen und ermöglicht es, Systeme einfacher zu vernetzen und zu kommunizieren.</p><p>Die IEC 61499 setzt auf die Verwendung von Function Blocks zur Modellierung von Steuerungssystemen. Function Blocks sind kleine Einheiten, die bestimmte Funktionen ausführen und leicht angepasst werden können. Sie ermöglichen es, Steuerungssysteme schneller und effizienter zu entwickeln und zu ändern.</p><p>Im Vergleich dazu setzt die IEC 61131 auf die Verwendung von Programmiersprachen wie Ladder Logic und Structured Text. Sie ist zwar immer noch weit verbreitet, wird jedoch als weniger flexibel und modularer betrachtet als die IEC 61499.</p><p>Insgesamt ist der Trend zur Verwendung der IEC 61499 Norm im Engineering auf ihre flexiblere und modularere Architektur zurückzuführen, die es ermöglicht, Steuerungssysteme einfacher zu vernetzen und zu kommunizieren. Die IEC 61499 wird daher immer häufiger im Vergleich zur IEC 61131 als Standard für die Entwicklung von Steuerungssystemen verwendet.</p></td></tr></tbody></table>
@@ -34,7 +46,7 @@ Das nachfolgende Video 
 
 Live-Interview mit Dieter Hess (Geschäftsführer, 3S-Smart Software Solutions) beim publish-industry VIP-Talk auf der ROTEN COUCH, SPS/IPC/DRIVES 2011
 
-jedoch ist von Dieter Hess, der absolut kein Freund der IEC 61499 ist. Schauen Sie selbst: 
+jedoch ist von Dieter Hess, der absolut kein Freund der IEC 61499 ist. Schauen Sie selbst:
 
 [https://www.youtube.com/watch?v=Go75w3-HJhw](https://www.youtube.com/watch?v=Go75w3-HJhw)
 

@@ -8,6 +8,8 @@ Die Typelibrary bietet eine Reihe von Funktionen, die Ihnen dabei helfen, Ihre P
 
 In diesem Abschnitt werden wir Ihnen die Grundlagen der Typelibrary erklären und Ihnen zeigen, wie Sie sie effektiv in Ihren Projekten verwenden können. Wir hoffen, dass Sie viel Spaß beim Erkunden der Typelibrary haben und sich von ihren Möglichkeiten inspirieren lassen.
 
+schauen Sie auch mal in den FB Navigator unter [https://www.holobloc.com/doc/navigator.htm](https://www.holobloc.com/doc/navigator.htm)
+
 
 .. toctree::
 

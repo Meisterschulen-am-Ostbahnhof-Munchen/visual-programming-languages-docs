@@ -15,4 +15,5 @@ https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-langu
    
    
    
-.. image:: https://app.codacy.com/project/badge/Grade/be817b022b9a4f5c855f0d368927ba0a    :target: https://www.codacy.com/gh/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs&amp;utm_campaign=Badge_Grade
+.. image:: https://app.codacy.com/project/badge/Grade/be817b022b9a4f5c855f0d368927ba0a    
+    :target: https://www.codacy.com/gh/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs&amp;utm_campaign=Badge_Grade

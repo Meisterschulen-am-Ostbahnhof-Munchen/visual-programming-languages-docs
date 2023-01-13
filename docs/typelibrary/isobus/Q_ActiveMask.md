@@ -12,8 +12,8 @@ Return values
 
 iso\_s16
 
-* [E\_NO\_ERR](c/IsoCommonDef/E_NO_ERR) ( 0 ) - OK
-* [E\_OVERFLOW](c/IsoCommonDef#E_OVERFLOW) (-6 ) - buffer overflow
-* [E\_NOACT](c/IsoCommonDef.html#c.E_CANMSG_MISSED) (-8 ) - Command not possible in current state
-* [E\_NO\_INSTANCE](c/IsoCommonDef) (-21) - No VT client available
+* [E\_NO\_ERR](c/IsoCommonDef.html#c.E_NO_ERR) ( 0 ) - OK
+* [E\_OVERFLOW](c/IsoCommonDef.html#c.E_OVERFLOW) (-6 ) - buffer overflow
+* [E\_NOACT](c/IsoCommonDef.html#c.E_NOACT]) (-8 ) - Command not possible in current state
+* [E\_NO\_INSTANCE](c/IsoCommonDef.html#c.E_NO_INSTANCE) (-21) - No VT client available
 * 

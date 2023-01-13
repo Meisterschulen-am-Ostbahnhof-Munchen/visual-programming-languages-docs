@@ -11,8 +11,7 @@ This command is used to change the active mask of a working set to either a data
 Return values
 
 iso\_s16
-
-*   [E\_NO\_ERR](/c/IsoCommonDef) ( 0 ) - OK
-*   E\_OVERFLOW (-6 ) - buffer overflow
-*   E\_NOACT (-8 ) - Command not possible in current state
-*   E\_NO\_INSTANCE (-21) - No VT client available
+  * [E\_NO\_ERR](c/IsoCommonDef) ( 0 ) - OK
+  * [E\_OVERFLOW](c/IsoCommonDef) (-6 ) - buffer overflow
+  * [E\_NOACT](c/IsoCommonDef) (-8 ) - Command not possible in current state
+  * [E\_NO\_INSTANCE](c/IsoCommonDef) (-21) - No VT client available

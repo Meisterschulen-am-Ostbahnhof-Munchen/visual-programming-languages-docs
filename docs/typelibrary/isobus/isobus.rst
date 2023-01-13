@@ -6,6 +6,7 @@ isobus
 
 .. toctree::
 
+   c/c
    colours/colours
    CbVtStatus
    Q_ActiveMask

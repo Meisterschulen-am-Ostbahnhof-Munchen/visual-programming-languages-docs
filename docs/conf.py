@@ -11,9 +11,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
 
 
 # -- Project information -----------------------------------------------------
@@ -86,6 +86,8 @@ except ImportError:
     # The mock extension will include the hawkmoth test suite expected results
     # into the documentation instead of generating.
     extensions.append('automock')
+
+hawkmoth_root = os.path.join(os.path.abspath(os.path.dirname(__file__)), '../test')
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]

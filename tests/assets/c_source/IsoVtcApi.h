@@ -41,7 +41,7 @@
          - To create another instance with a different VT for a CF, 
            IsoVtcCreateInstance() can be called again with a different VT name.
 */
-ISO_CLIENT_API
+
 iso_u8 IsoVtcCreateInstance(  iso_s16 s16CfHandleMaster,
                      const ISO_USER_PARAM_T userParam,
                      ISOVT_CbStatus_t pfVTStatusCb,
@@ -67,7 +67,7 @@ iso_u8 IsoVtcCreateInstance(  iso_s16 s16CfHandleMaster,
    \param[in]  \wp{u8Instance, iso_u8}
                  Identifier of the client instance
 */
-ISO_CLIENT_API
+
 void IsoVtcCloseInstance(iso_u8 u8Instance);
 
 /* ************************************************************************ */
@@ -87,7 +87,7 @@ void IsoVtcCloseInstance(iso_u8 u8Instance);
                - #E_NOACT  - function called again 
                - #E_NO_INSTANCE - Instance not found
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcRestartInstance(iso_u8 u8Instance, iso_bool qReConnect);
 
 
@@ -129,7 +129,7 @@ iso_s16 IsoVtcRestartInstance(iso_u8 u8Instance, iso_bool qReConnect);
        and then stored in NVM and set with IsoVtcDataSet() next startup.
 
 */
-ISO_CLIENT_API
+
 iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
 
 #ifdef ISO_VTC_UT3
@@ -146,7 +146,7 @@ iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
    \param[in]  \wp{eObjType, OBJTYP_e}
                 Object type (Byte 3 of every object) 
 */
-ISO_CLIENT_API
+
    void IsoVtcObjTypeParsableSet(iso_u8 u8Instance, OBJTYP_e eObjType);
 
 /**********************************************************************************/
@@ -164,7 +164,7 @@ ISO_CLIENT_API
                 Range: 0 - 36, 40 see ISO11783 - 6 - A.1.1 or OBJTYP_e
    \retval      iso_bool     ISO_TRUE if VT supports this object
 */
-ISO_CLIENT_API
+
    iso_bool IsoVtcObjTypeIsSupported( iso_u8 u8Instance, OBJTYP_e eObjType);
 
 #endif  /* ISO_VTC_UT3 */
@@ -192,7 +192,7 @@ ISO_CLIENT_API
                - E_NO_ERR
                - E_NO_INSTANCE
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNew );
 
 /*****************************************************************************/
@@ -212,7 +212,7 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
        - Supported states:
           - waiting_before_store
 */
-ISO_CLIENT_API
+
      iso_s16 IsoVtcContinue( iso_u8 u8Instance );
 
 /**************************************************************************/
@@ -231,7 +231,7 @@ ISO_CLIENT_API
     \retval     iso_s16
                 Number of version strings received with (Extended) Get Version
 */
-ISO_CLIENT_API
+
      iso_u8 IsoVtcVersionStringGet(iso_u8 u8Instance, iso_u8 au8VersionStrings[][ISO_VTC_LEN_VERSIONSTR]);
 
 /*****************************************************************************/
@@ -254,7 +254,7 @@ ISO_CLIENT_API
    \par
        - This function should be used to select the wished VT during the #IsoEvConnSelectPreferredVT event callback. 
 */
-ISO_CLIENT_API
+
      iso_s16 IsoVtcSetNewPreferredVT(iso_u8 u8Instance, const ISO_CF_NAME_T* rpabVtName);
 
 /*****************************************************************************/
@@ -276,7 +276,7 @@ ISO_CLIENT_API
    \par
        - Using see example in VT application
 */
-ISO_CLIENT_API
+
      iso_s16 IsoVtcMultipleNextVT( iso_u8 u8Instance,const ISO_CF_NAME_T* rpabVtName );
 
 /******************************************************************************/
@@ -298,7 +298,7 @@ ISO_CLIENT_API
    - Attention: Function works only correct after login has passed the LC reception
     (e. g.  waiting_after_GetVersions) else it provides the TECU LC
 */
-ISO_CLIENT_API
+
    iso_s16 IsoVtcReadWorkingSetLanguageData( iso_u8 u8Instance, iso_u8 abLanguageCmd[] );
 
 /**********************************************************************/
@@ -314,7 +314,7 @@ ISO_CLIENT_API
                Number of free elements of command FIFO \n
                Range: 0 - ISO_VTC_CMD_BUFFER_MAX
 */
-ISO_CLIENT_API
+
     iso_u16  IsoVtcGetCMDFifoFree( iso_u8 u8Instance );
 
 /**********************************************************************/
@@ -331,7 +331,7 @@ ISO_CLIENT_API
    \retval     iso_u8  
                Identifier of the client instance or #ISO_INSTANCE_INVALID if not found
 */
-ISO_CLIENT_API
+
 iso_u8 IsoVtcGetInstanceID(iso_s16 s16CfHandleMaster, ISOVT_INSTANCE_TYPE_Te eInstanceType);
 
 /** @} */ /* end VT Client Management Functions */
@@ -364,7 +364,7 @@ iso_u8 IsoVtcGetInstanceID(iso_s16 s16CfHandleMaster, ISOVT_INSTANCE_TYPE_Te eIn
                - #E_NOACT           - Command not possible in current state
                - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_GetSupportedWidechar(iso_u8 u8Instance, iso_u8 u8CodePlane,
                                        iso_u16 u16RangeFirstWidechar, iso_u16 u16RangeLastWidechar);
 
@@ -384,7 +384,7 @@ iso_s16 IsoVtcCmd_GetSupportedWidechar(iso_u8 u8Instance, iso_u8 u8CodePlane,
                 - #E_NOACT           - Command not possible in current state
                 - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_GetWindowMaskData(iso_u8 u8Instance);
 
 /***************************************************************************/
@@ -402,7 +402,7 @@ iso_s16 IsoVtcCmd_GetWindowMaskData(iso_u8 u8Instance);
               - #E_NOACT           - Command not possible in current state
               - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_GetSupportedObjects(iso_u8 u8Instance);
 
 /*****************************************************************************/
@@ -424,7 +424,7 @@ iso_s16 IsoVtcCmd_GetSupportedObjects(iso_u8 u8Instance);
                - #E_NOACT           - Command not possible in current state
                - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ScreenCapture(iso_u8 u8Instance, iso_u8 u8ItemRequested, iso_u8 u8Path);
 
 /*****************************************************************************/
@@ -442,7 +442,7 @@ iso_s16 IsoVtcCmd_ScreenCapture(iso_u8 u8Instance, iso_u8 u8ItemRequested, iso_u
                - #E_NOACT           - Command not possible in current state
                - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_IdentifyVT(iso_u8 u8Instance);
 
 #endif /* ISO_VTC_UT3 */
@@ -465,7 +465,7 @@ iso_s16 IsoVtcCmd_IdentifyVT(iso_u8 u8Instance);
                - #E_NOACT           - Command not possible in current state
                - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_DeleteVersion(iso_u8 u8Instance, const iso_u8 au8VersionString[]);
 
 /* ************************************************************************ */
@@ -485,7 +485,7 @@ iso_s16 IsoVtcCmd_DeleteVersion(iso_u8 u8Instance, const iso_u8 au8VersionString
               - #E_NOACT           - Command not possible in current state
               - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_StoreVersion(iso_u8 u8Instance, const iso_u8 au8VersionString[]);
 
 /** @} */ /* END vttechmsg */
@@ -514,7 +514,7 @@ iso_s16 IsoVtcCmd_StoreVersion(iso_u8 u8Instance, const iso_u8 au8VersionString[
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ObjHideShow(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool qVisible);
 
 /*********************************************************************************/
@@ -536,7 +536,7 @@ iso_s16 IsoVtcCmd_ObjHideShow(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool qVis
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ObjEnableDisable(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool qAbility);
 
 /*********************************************************************************/
@@ -557,7 +557,7 @@ iso_s16 IsoVtcCmd_ObjEnableDisable(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ObjSelectInput(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Option);
 
 /***************************************************************************/
@@ -574,7 +574,7 @@ iso_s16 IsoVtcCmd_ObjSelectInput(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8O
                 - #E_NOACT           - Command not possible in current state
                 - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ESC(iso_u8 u8Instance);
 
 /* ************************************************************************ */
@@ -600,7 +600,7 @@ iso_s16 IsoVtcCmd_ESC(iso_u8 u8Instance);
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_CtrlAudioSignal(iso_u8 u8Instance, iso_u8 u8NumOfRepit, iso_u16 u16Frequency,
                                   iso_u16 u16OnTimeMs, iso_u16 u16OffTimeMs);
 
@@ -621,7 +621,7 @@ iso_s16 IsoVtcCmd_CtrlAudioSignal(iso_u8 u8Instance, iso_u8 u8NumOfRepit, iso_u1
                  - #E_NOT_AVAILABLE   - VT has got no adjustable volume output
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_SetAudioVolume(iso_u8 u8Instance, iso_u8 u8Volume);
 
 /*********************************************************************************/
@@ -646,7 +646,7 @@ iso_s16 IsoVtcCmd_SetAudioVolume(iso_u8 u8Instance, iso_u8 u8Volume);
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ChildLocation(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16ObjIdParent,
                                 iso_u8 u8Xchange, iso_u8 u8Ychange);
 
@@ -672,7 +672,7 @@ iso_s16 IsoVtcCmd_ChildLocation(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16
                 - #E_NOACT           - Command not possible in current state
                 - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ChildPosition(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16ObjIdParent,
                                 iso_s16 s16Xposition, iso_s16 s16Yposition);
 
@@ -696,7 +696,7 @@ iso_s16 IsoVtcCmd_ChildPosition(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_Size(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16Width, iso_u16 u16Height);
 
  /*****************************************************************************/
@@ -717,7 +717,7 @@ iso_s16 IsoVtcCmd_Size(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16Width, is
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_BackgroundColour(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Colour);
 
 /******************************************************************************/
@@ -739,7 +739,7 @@ iso_s16 IsoVtcCmd_BackgroundColour(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_NumericValue(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u32NewValue);
 
 /************************************************************************************/
@@ -762,7 +762,7 @@ iso_s16 IsoVtcCmd_NumericValue(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u32N
                   - #E_NOACT           - Command not possible in current state
                   - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_NumericValueRef(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u32NewValue);
 
 /*******************************************************************************/
@@ -784,7 +784,7 @@ iso_s16 IsoVtcCmd_NumericValueRef(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_String(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pau8String[]);
 
 /*******************************************************************************/
@@ -807,7 +807,7 @@ iso_s16 IsoVtcCmd_String(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pau8S
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_StringRef(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pau8String[]);
 
 /*******************************************************************************************/
@@ -833,7 +833,7 @@ iso_s16 IsoVtcCmd_StringRef(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pa
                 - #E_NOACT           - Command not possible in current state
                 - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_EndPoint(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16Width, iso_u16 u16Height, iso_u8 u8LineDirection);
 
 /*******************************************************************************/
@@ -860,7 +860,7 @@ iso_s16 IsoVtcCmd_EndPoint(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16Width
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16  IsoVtcCmd_FontAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                                    iso_u8 u8FontColour, iso_u8 u8FontSize,
                                    iso_u8 u8FontType, iso_u8 u8FontStyle
@@ -888,7 +888,7 @@ iso_s16  IsoVtcCmd_FontAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                 - #E_NOACT           - Command not possible in current state
                 - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16  IsoVtcCmd_LineAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                                    iso_u8 u8LineColour, iso_u8 u8LineWidth, iso_u16 u16LineArt );
 
@@ -914,7 +914,7 @@ iso_s16  IsoVtcCmd_LineAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                   - #E_NOACT           - Command not possible in current state
                   - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16	 IsoVtcCmd_FillAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                                     iso_u8 u8FillType, iso_u8 u8FillColour, iso_u16 u16FillPatternId );
 
@@ -937,7 +937,7 @@ iso_s16	 IsoVtcCmd_FillAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                   - #E_NOACT           - Command not possible in current state
                   - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ActiveMask(iso_u8 u8Instance, iso_u16 u16WorkSetId, iso_u16 u16NewMaskId);
 
 /******************************************************************************/
@@ -960,7 +960,7 @@ iso_s16 IsoVtcCmd_ActiveMask(iso_u8 u8Instance, iso_u16 u16WorkSetId, iso_u16 u1
                   - #E_NOACT           - Command not possible in current state
                   - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_SoftKeyMask(iso_u8 u8Instance, iso_u8 u8MaskType, iso_u16 u16DataMaskId, iso_u16 u16SoftKeyMaskId);
 
 /* ************************************************************************ */
@@ -984,7 +984,7 @@ iso_s16 IsoVtcCmd_SoftKeyMask(iso_u8 u8Instance, iso_u8 u8MaskType, iso_u16 u16D
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_Attribute(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8IdAttribute, iso_u32 u32ValueAttribute);
 
 /**********************************************************************************/
@@ -1005,7 +1005,7 @@ iso_s16 IsoVtcCmd_Attribute(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8IdAttr
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_Priority(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Priority);
 
 /*******************************************************************************/
@@ -1028,7 +1028,7 @@ iso_s16 IsoVtcCmd_Priority(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Priorit
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ListItem(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8ListIndex, iso_u16 u16NewObjId);
 
 #ifdef ISO_VTC_UT3
@@ -1054,7 +1054,7 @@ iso_s16 IsoVtcCmd_ListItem(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8ListInd
                 - #E_NOACT           - Command not possible in current state
                 - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_LockUnlockMask(iso_u8 u8Instance, iso_u8 u8LockCmd, iso_u16 u16MaskId, iso_u16 u16LockTimeoutMs);
 
 /*****************************************************************************/
@@ -1074,7 +1074,7 @@ iso_s16 IsoVtcCmd_LockUnlockMask(iso_u8 u8Instance, iso_u8 u8LockCmd, iso_u16 u1
                - #E_NOACT           - Command not possible in current state
                - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ExecuteMacro(iso_u8 u8Instance, iso_u16 u16ObjId);
 
 /*****************************************************************************/
@@ -1103,7 +1103,7 @@ iso_s16 IsoVtcCmd_ExecuteMacro(iso_u8 u8Instance, iso_u16 u16ObjId);
                - #E_NOACT           - Command not possible in current state
                - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ChangeObjectLabel(iso_u8 u8Instance, iso_u16 u16ObjId, 
                                     iso_u16 u16ObIdStringVar, iso_u8 u8FontType, iso_u16 u16ObIdGrafic);
 
@@ -1129,7 +1129,7 @@ iso_s16 IsoVtcCmd_ChangeObjectLabel(iso_u8 u8Instance, iso_u16 u16ObjId,
                - #E_NOACT           - Command not possible in current state
                - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ChangePolygonPoint(iso_u8 u8Instance, iso_u16 u16ObjId, 
                                      iso_u8 u8PointIndex, iso_u16 u16NewXValue, iso_u16 u16NewYValue);
 
@@ -1153,7 +1153,7 @@ iso_s16 IsoVtcCmd_ChangePolygonPoint(iso_u8 u8Instance, iso_u16 u16ObjId,
                - #E_NOACT           - Command not possible in current state
                - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ChangePolygonScale(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16NewWidth, iso_u16 u16NewHeight);
 
 /*****************************************************************************/
@@ -1180,7 +1180,7 @@ iso_s16 IsoVtcCmd_ChangePolygonScale(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u1
    \note  \par
    - Function uses string buffer ( Parameterlist has to be smaller than ISO_VTC_CMD_STR_MAX_LENGTH ) 
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_GraphicsContext(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8SubCommandID,
                                   const iso_u8 u8ParaList[], iso_u16 u16LenBytes);
 
@@ -1203,7 +1203,7 @@ iso_s16 IsoVtcCmd_GraphicsContext(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8
                  - #E_NOACT           - Command not possible in current state
                  - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_GetAttribute(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8AID);
 
 /* ************************************************************************ */
@@ -1227,7 +1227,7 @@ iso_s16 IsoVtcCmd_GetAttribute(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8AID
                 - #E_NOACT           - Command not possible in current state
                 - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_SelectColourMap(iso_u8 u8Instance, iso_u16 u16ObjIdColourMap);
 
 /*****************************************************************************/
@@ -1247,7 +1247,7 @@ iso_s16 IsoVtcCmd_SelectColourMap(iso_u8 u8Instance, iso_u16 u16ObjIdColourMap);
                - #E_NOACT           - Command not possible in current state
                - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_ExecuteExtendedMacro(iso_u8 u8Instance, iso_u16 u16ObjIdMacro);
 
 /*****************************************************************************/
@@ -1267,7 +1267,7 @@ iso_s16 IsoVtcCmd_ExecuteExtendedMacro(iso_u8 u8Instance, iso_u16 u16ObjIdMacro)
                - #E_NOACT           - Command not possible in current state
                - #E_NO_INSTANCE     - No VT client available
 */
-ISO_CLIENT_API
+
 iso_s16 IsoVtcCmd_SelectActiveWorkingSet(iso_u8 u8Instance, const iso_u8 pau8Name[]);
 
 #endif /* ISO_VTC_UT3 */

@@ -112,6 +112,9 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# -- Options for sphinx_c_autodoc, the extension being documented -----------
+
+c_autodoc_roots = ['../tests/assets/c_source']
 # force libclang access for read the docs.
 # Read the docs installs doxygen which will install libclang, unfortunatly it
 # doesn't appear the so is in the path so need to grab a _backend_ version of

@@ -115,4 +115,10 @@ html_static_path = ['_static']
 # -- Options for sphinx_c_autodoc, the extension being documented -----------
 
 c_autodoc_roots = ['../tests/assets/c_source']
-
+# force libclang access for read the docs.
+# Read the docs installs doxygen which will install libclang, unfortunatly it
+# doesn't appear the so is in the path so need to grab a _backend_ version of
+# the file.
+if 'READTHEDOCS' in os.environ:
+    from clang import cindex
+    cindex.Config.set_library_file("/usr/lib/x86_64-linux-gnu/libclang-6.0.so.1")

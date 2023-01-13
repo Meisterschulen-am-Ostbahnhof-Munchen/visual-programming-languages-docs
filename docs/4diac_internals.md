@@ -23,7 +23,7 @@ Es ist wichtig zu beachten, dass es manchmal sein kann, dass die Updates nicht k
 
 ## Update URLs for 4Diac
 
-Update URLs (Uniform Resource Locators) sind Webadressen, die auf einen bestimmten Bereich einer Website verweisen, in dem aktualisierte Versionen einer Software oder Erweiterungen zur Verfügung stehen. In Bezug auf 4diac werden Update URLs verwendet, um die neuesten Versionen der 4diac-Software und Erweiterungen zu verfügbar zu machen. Benutzer von 4diac können diese URLs verwenden, um ihre Installationen von 4diac zu aktualisieren, indem sie die neuesten Updates herunterladen und installieren. Die offizielle Update-URL für 4diac ist [https://download.eclipse.org/4diac/updates/latest](https://download.eclipse.org/4diac/updates/latest).
+Update URLs (Uniform Resource Locators) sind Webadressen, die auf einen bestimmten Bereich einer Website verweisen, in dem aktualisierte Versionen einer Software oder Erweiterungen zur Verfügung stehen. In Bezug auf 4diac werden Update URLs verwendet, um die neuesten Versionen der 4diac-Software und Erweiterungen zu verfügbar zu machen. Benutzer von 4diac können diese URLs verwenden, um ihre Installationen von 4diac zu aktualisieren, indem sie die neuesten Updates herunterladen und installieren. Die offizielle Update-URL für 4diac ist [https://download.eclipse.org/4diac/updates/latest/](https://download.eclipse.org/4diac/updates/latest/).
 
 ### Release
 
@@ -31,7 +31,7 @@ Eine Release Update URL (Uniform Resource Locator) ist eine Webadresse, die auf 
 Die offizielle Release Update URL für 4diac ist [https://download.eclipse.org/4diac/updates/releases/](https://download.eclipse.org/4diac/updates/releases/)
 
 Eclipse 4diac Latest  
-[https://download.eclipse.org/4diac/updates/latest](https://download.eclipse.org/4diac/updates/latest)
+[https://download.eclipse.org/4diac/updates/latest/](https://download.eclipse.org/4diac/updates/latest/)
 
 ### Release Candidate
 

@@ -16,11 +16,6 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 
-from hawkmoth.util import readthedocs
-
-readthedocs.clang_setup()
-
-
 # -- Project information -----------------------------------------------------
 
 project = "visual programming languages Docs"
@@ -52,6 +47,48 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ["std"]
 
+# -- General configuration ---------------------------------------------------
+
+# If your documentation needs a minimal Sphinx version, state it here.
+#
+# needs_sphinx = '1.0'
+
+# Add any Sphinx extension module names here, as strings. They can be
+# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
+# ones.
+
+# Handle failing hawkmoth import gracefully to be able to build the
+# documentation on e.g. https://readthedocs.org/ which would otherwise fail due
+# to missing clang.
+
+# This is not a good example to follow in regular documentation.
+try:
+    import hawkmoth
+    from hawkmoth.util import doccompat, readthedocs
+    from sphinx.ext.napoleon import docstring, Config
+
+    readthedocs.clang_setup()
+
+    extensions.append('hawkmoth')
+    tags.add('have_hawkmoth')
+
+    def napoleon_transform(comment):
+        config = Config(napoleon_use_rtype=False)
+        return str(docstring.GoogleDocstring(comment, config))
+
+    cautodoc_transformations = {
+        'napoleon': napoleon_transform,
+        'javadoc-liberal': doccompat.javadoc_liberal,
+    }
+except ImportError:
+    sys.stderr.write('Warning: Failed to import hawkmoth. Mocking results.\n')
+    sys.path.insert(0, os.path.abspath('ext'))
+    # The mock extension will include the hawkmoth test suite expected results
+    # into the documentation instead of generating.
+    extensions.append('automock')
+
+hawkmoth_root = os.path.join(os.path.abspath(os.path.dirname(__file__)), '../test')
+# Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 
 # -- Options for EPUB output

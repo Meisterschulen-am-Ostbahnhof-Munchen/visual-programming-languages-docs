@@ -1,7 +1,7 @@
 # 4diac\_internals
 
-## Update  
-......................
+## Update
+
 
 In Eclipse 4diac können Sie Updates auf verschiedene Weise durchführen. Hier sind die Schritte, um ein Update durchzuführen:
 
@@ -20,12 +20,12 @@ Wählen Sie die gewünschten Erweiterungen aus und klicken Sie auf "Next".
 Folgen Sie den Anweisungen auf dem Bildschirm, um die Installation abzuschließen.  
 Es ist wichtig zu beachten, dass es manchmal sein kann, dass die Updates nicht kompatibel mit der installierten 4diac Version sind, in diesem Fall müssen Sie ggf. die 4diac Version updaten, bevor Sie das Update durchführen können.
 
-## Update URLs for 4Diac  
-......................
+## Update URLs for 4Diac
+
 
 Update URLs (Uniform Resource Locators) sind Webadressen, die auf einen bestimmten Bereich einer Website verweisen, in dem aktualisierte Versionen einer Software oder Erweiterungen zur Verfügung stehen. In Bezug auf 4diac werden Update URLs verwendet, um die neuesten Versionen der 4diac-Software und Erweiterungen zu verfügbar zu machen. Benutzer von 4diac können diese URLs verwenden, um ihre Installationen von 4diac zu aktualisieren, indem sie die neuesten Updates herunterladen und installieren. Die offizielle Update-URL für 4diac ist https://download.eclipse.org/4diac/updates/latest.
 
-## Release
+### Release
 
 Eine Release Update URL (Uniform Resource Locator) ist eine Webadresse, die auf die neuesten Versionen einer Software oder Erweiterungen verweist, die als offizielle Veröffentlichungen (Releases) betrachtet werden. Im Falle von 4diac, stellt die Release Update URL die neueste stabile Version der 4diac-Software und Erweiterungen zur Verfügung, die von der 4diac-Entwicklergemeinschaft getestet und freigegeben wurden. Benutzer von 4diac können diese URL verwenden, um ihre Installationen von 4diac auf die neueste offizielle Version zu aktualisieren, indem sie die neuesten Updates herunterladen und installieren.  
 Die offizielle Release Update URL für 4diac ist https://download.eclipse.org/4diac/updates/releases/
@@ -33,7 +33,7 @@ Die offizielle Release Update URL für 4diac ist https://download.eclipse.org/4d
 Eclipse 4diac Latest  
 https://download.eclipse.org/4diac/updates/latest
 
-## Release Candidate
+### Release Candidate
 
 Ein Release Candidate (RC) ist eine Vorabversion einer Software, die als bereit für die Veröffentlichung betrachtet wird, aber noch von der Community getestet und überprüft werden muss, bevor sie offiziell veröffentlicht wird. Ein Release-Kandidat-Update-URL für 4diac ist eine Webadresse, die auf einen Bereich einer Website verweist, auf dem die neueste RC-Version von 4diac zum Download zur Verfügung steht.
 
@@ -44,7 +44,7 @@ Es ist jedoch zu beachten, dass Release-Kandidat-Updates möglicherweise nicht s
 Eclipse 4diac Release Candidate  
 https://download.eclipse.org/4diac/updates/rc/
 
-## Nightly Build
+### Nightly Build
 
 Nightly Builds sind tägliche automatisch erstellte Versionen einer Software, die die neuesten Änderungen und Entwicklungen enthalten. Diese Builds werden häufig von Entwicklern genutzt, um die neuesten Funktionen zu testen und Fehler zu finden. Nightly Build Update URLs für 4diac sind Webadressen, die auf die neuesten täglich erstellten Versionen der 4diac-Software verweisen. Diese URLs werden verwendet, um Benutzern die Möglichkeit zu geben, die neuesten Entwicklungen von 4diac zu testen und Feedback zu geben. Nightly Builds sind jedoch nicht als stabile Versionen gedacht und sollten daher nicht in produktiven Umgebungen verwendet werden. Die Nightly Build Update-URL für 4diac ist nicht immer offen zugänglich.
 

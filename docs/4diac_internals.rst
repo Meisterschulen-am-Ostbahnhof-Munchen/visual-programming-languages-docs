@@ -1,6 +1,28 @@
 4diac_internals
 =====================
 
+
+Update 
+......................
+
+In Eclipse 4diac können Sie Updates auf verschiedene Weise durchführen. Hier sind die Schritte, um ein Update durchzuführen:
+
+Starten Sie Eclipse 4diac und wählen Sie "Help" im Menü.
+Klicken Sie auf "Check for Updates". Das Update-Management-Fenster wird geöffnet.
+Klicken Sie auf "Select All" oder wählen Sie die Updates aus, die Sie installieren möchten.
+Klicken Sie auf "Next". Es werden die Lizenzvereinbarungen angezeigt, die Sie akzeptieren müssen, bevor Sie fortfahren können.
+Klicken Sie auf "Finish" um den Download und die Installation der Updates zu beginnen.
+Warten Sie bis der Download und die Installation abgeschlossen sind. Sie werden ggf. aufgefordert, Eclipse 4diac neu zu starten, um die Updates zu aktivieren.
+Alternativ, Sie können auch Updates direkt aus der URL herunterladen und installieren.
+
+Starten Sie Eclipse 4diac und wählen Sie "Help" im Menü.
+Klicken Sie auf "Install New Software...". Das Installationsfenster wird geöffnet.
+Geben Sie die Update-URL in das Feld "Work with" ein und klicken Sie auf "Add".
+Wählen Sie die gewünschten Erweiterungen aus und klicken Sie auf "Next".
+Folgen Sie den Anweisungen auf dem Bildschirm, um die Installation abzuschließen.
+Es ist wichtig zu beachten, dass es manchmal sein kann, dass die Updates nicht kompatibel mit der installierten 4diac Version sind, in diesem Fall müssen Sie ggf. die 4diac Version updaten, bevor Sie das Update durchführen können.
+
+
 Update URLs for 4Diac
 ......................
 

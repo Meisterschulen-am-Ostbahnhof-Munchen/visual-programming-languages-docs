@@ -132,7 +132,6 @@ iso_s16 IsoVtcRestartInstance(iso_u8 u8Instance, iso_bool qReConnect);
 
 iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
 
-#ifdef ISO_VTC_UT3
 
 
 /**

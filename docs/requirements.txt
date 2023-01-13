@@ -5,3 +5,4 @@ sphinxcontrib.mermaid
 sphinx-markdown-tables
 clang
 hawkmoth
+sphinxcontrib.autoprogram

@@ -29,9 +29,8 @@ python:
    - requirements: docs/requirements.txt
 
 
-formats:
-  - pdf
-  - epub
+# Optionally build your docs in additional formats such as PDF and ePub
+formats: all
 
 
 sphinx:

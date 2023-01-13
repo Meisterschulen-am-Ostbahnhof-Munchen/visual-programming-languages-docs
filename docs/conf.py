@@ -16,6 +16,11 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 
+from hawkmoth.util import readthedocs
+
+readthedocs.clang_setup()
+
+
 # -- Project information -----------------------------------------------------
 
 project = "visual programming languages Docs"

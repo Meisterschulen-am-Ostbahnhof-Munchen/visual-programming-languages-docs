@@ -30,4 +30,6 @@ https://download.eclipse.org/4diac/updates/rc/
 Nightly Build
 -------------
 
+Nightly Builds sind tägliche automatisch erstellte Versionen einer Software, die die neuesten Änderungen und Entwicklungen enthalten. Diese Builds werden häufig von Entwicklern genutzt, um die neuesten Funktionen zu testen und Fehler zu finden. Nightly Build Update URLs für 4diac sind Webadressen, die auf die neuesten täglich erstellten Versionen der 4diac-Software verweisen. Diese URLs werden verwendet, um Benutzern die Möglichkeit zu geben, die neuesten Entwicklungen von 4diac zu testen und Feedback zu geben. Nightly Builds sind jedoch nicht als stabile Versionen gedacht und sollten daher nicht in produktiven Umgebungen verwendet werden. Die Nightly Build Update-URL für 4diac ist nicht immer offen zugänglich.
+
 https://download.eclipse.org/4diac/updates/nightly/

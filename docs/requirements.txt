@@ -3,4 +3,5 @@ sphinx
 recommonmark
 sphinxcontrib.mermaid
 sphinx-markdown-tables
-
+clang
+hawkmoth

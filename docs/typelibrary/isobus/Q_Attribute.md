@@ -12,10 +12,7 @@ Return values
 
 iso\_s16
 
-E\_NO\_ERR - OK
-
-E\_OVERFLOW - buffer overflow
-
-E\_NOACT - Command not possible in current state
-
-E\_NO\_INSTANCE - No VT client available
+*   E\_NO\_ERR - OK
+*   E\_OVERFLOW - buffer overflow
+*   E\_NOACT - Command not possible in current state
+*   E\_NO\_INSTANCE - No VT client available

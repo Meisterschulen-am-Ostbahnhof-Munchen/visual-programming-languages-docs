@@ -12,7 +12,7 @@ Return values
 
 iso\_s16
 
-*   [E\_NO\_ERR](/c/IsoCommonDef#c.E_NO_ERR) ( 0 ) - OK
+*   [E\_NO\_ERR](/c/IsoCommonDef) ( 0 ) - OK
 *   E\_OVERFLOW (-6 ) - buffer overflow
 *   E\_NOACT (-8 ) - Command not possible in current state
 *   E\_NO\_INSTANCE (-21) - No VT client available

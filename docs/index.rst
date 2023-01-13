@@ -63,4 +63,10 @@ Contents
    Übungsaufgaben
    4diac_internals
    typelibrary/typelibrary
-   genindex
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`search`

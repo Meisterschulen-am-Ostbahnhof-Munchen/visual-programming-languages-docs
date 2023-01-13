@@ -1,14 +1,5 @@
 
-/* ************************************************************************ */
-/** \addtogroup errorhand
-@{
-*/
 
-/* ErrorCause - common */
-/** \name Common error codes
-    \details These defines are used as parameter iCause in the error handler callback function and as return value of the interface functions.
-@{
-*/
 #define E_NO_ERR            ( 0 )  /**< \brief ErrorCause: No error */
 #define E_UNKNOWN_ERR       (-1 )  /**< \brief ErrorCause: Unknown error */
 #define E_WARN              (-2 )  /**< \brief ErrorCause: System warnings */
@@ -21,12 +12,6 @@
 #define E_COM               (-9 )  /**< \brief ErrorCause: Communication error with other application hardware */
 #define E_CONFIG            (-10)  /**< \brief ErrorCause: Configuration error (function call not possible ) */
 #define E_CHECKSUM          (-11)  /**< \brief ErrorCause: Checksum error */
-/** @} */
-/* ISO special */
-/** \name ISO special error codes
-    \details These defines are used as parameter iCause in the error handler callback function and as return value of the interface functions.
-@{
-*/
 #define E_ERROR_INDI        (-16)  /**< \brief ErrorCause: ISO error indicator */
 #define E_NOT_AVAILABLE     (-17)  /**< \brief ErrorCause: Parameter, value ... not available */
 #define E_PGN_UNKNOWN       (-18)  /**< \brief ErrorCause: unknown PGN */
@@ -38,13 +23,7 @@
 #define E_OUT_OF_MEMORY     (-24)  /**< \brief ErrorCause: VT, TC has run out of memory */
 #define E_NACK              (-25)  /**< \brief ErrorCause: NACK or PDNACK received of bus */
 #define E_RESPTOCMDERROR    (-26)  /**< \brief ErrorCause: Response to Command with ErrorCode != 0 */
-/** @} */
-/** \name User defined error codes
-    \brief Range for own error codes - application errors can integrated with IsoErrorOut( ... )
-@{
-*/
-#define E_USER_DEFINED_START   (-32)
-#define E_USER_DEFINED_END     (-47)
-/** @} */  /* END Error cause / code definitions */
+
+
 
 

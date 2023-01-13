@@ -1,6 +1,6 @@
 
-/* ************************************************************************ */
-/*!
+
+/**
    \brief      Creates a VT client instance for the given working set master
 
    \param[in]  \wp{s16CfHandleMaster, iso_s16}
@@ -51,8 +51,8 @@ iso_u8 IsoVtcCreateInstance(  iso_s16 s16CfHandleMaster,
                      const ISO_CF_NAME_T* pau8NamePreferredVT,
                      iso_u8 u8BootTimePreferredVT );
 
-/* ************************************************************************ */
-/*!
+
+/**
    \brief      Removes the VT client instance
                
    Triggers the shutdown of the VT client instance.
@@ -70,8 +70,8 @@ iso_u8 IsoVtcCreateInstance(  iso_s16 s16CfHandleMaster,
 
 void IsoVtcCloseInstance(iso_u8 u8Instance);
 
-/* ************************************************************************ */
-/*!
+
+/**
    \brief      Restarts a VT client instance
 
    Triggers the shutdown of the VT client instance.
@@ -91,8 +91,8 @@ void IsoVtcCloseInstance(iso_u8 u8Instance);
 iso_s16 IsoVtcRestartInstance(iso_u8 u8Instance, iso_bool qReConnect);
 
 
-/* ************************************************************************ */
-/*!
+
+/**
    \brief       Reading information of a VT client instance
 
    This function can be used to read information about a VT client and the connected VT.
@@ -135,7 +135,7 @@ iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
 #ifdef ISO_VTC_UT3
 
 /**********************************************************************************/
-/*!
+/**
    \brief      Manual setting of a supported ( parsable ) object type
    
    This function is used to add object types of higher versions to a list
@@ -150,7 +150,7 @@ iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
    void IsoVtcObjTypeParsableSet(iso_u8 u8Instance, OBJTYP_e eObjType);
 
 /**********************************************************************************/
-/*!
+/**
    \brief       Check if object type is supported of VT
 
    Precondition for this function: VT must be version 4 or higher.
@@ -169,8 +169,8 @@ iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
 
 #endif  /* ISO_VTC_UT3 */
 
-/* ************************************************************************ */
-/*!
+
+/**
    \brief       Setting information of a VT client
 
    This function enables the change of some Working Set settings or the control
@@ -195,8 +195,8 @@ iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
 
 iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNew );
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief        Continue VT Login state machine
 
    There are some cases where VT Login stops for application interaction. 
@@ -216,7 +216,7 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
      iso_s16 IsoVtcContinue( iso_u8 u8Instance );
 
 /**************************************************************************/
-/*!
+/**
     \brief    Function reads the Version strings received from VT with (Extended) Get Versions
 
     The version strings received of VT can be read. If both Working Set and VT are Version 5
@@ -234,8 +234,8 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
 
      iso_u8 IsoVtcVersionStringGet(iso_u8 u8Instance, iso_u8 au8VersionStrings[][ISO_VTC_LEN_VERSIONSTR]);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief   Function to set the preferred VT to a new CF name.
 
    The function can only called before the client has selected a VT (safe state). \n
@@ -257,8 +257,8 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
 
      iso_s16 IsoVtcSetNewPreferredVT(iso_u8 u8Instance, const ISO_CF_NAME_T* rpabVtName);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief        Calling this function releases the procedure to move to another VT
 
    The application have to select an available VT and releases with this function the VT change.
@@ -280,7 +280,7 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
      iso_s16 IsoVtcMultipleNextVT( iso_u8 u8Instance,const ISO_CF_NAME_T* rpabVtName );
 
 /******************************************************************************/
-/*!
+/**
     \brief        This function reads the language of the working set
 
           The language command of the VT which displays the data masks is retured. If there
@@ -301,8 +301,8 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
 
    iso_s16 IsoVtcReadWorkingSetLanguageData( iso_u8 u8Instance, iso_u8 abLanguageCmd[] );
 
-/**********************************************************************/
-/*!
+
+/**
    \brief       Calculate free elements of Command FIFO
 
    This function determines the number of free elements of the command FIFO.
@@ -317,8 +317,8 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
 
     iso_u16  IsoVtcGetCMDFifoFree( iso_u8 u8Instance );
 
-/**********************************************************************/
-/*!
+
+/**
    \brief       Helper function to get the VT client instance identifier to a client CF handle
 
    This function determines the number of free elements of the command FIFO.
@@ -343,8 +343,8 @@ iso_u8 IsoVtcGetInstanceID(iso_s16 s16CfHandleMaster, ISOVT_INSTANCE_TYPE_Te eIn
 */
 
 #ifdef ISO_VTC_UT3
-/***************************************************************************/
-/*!
+
+/**
    \brief       This technical message requests the supported widechars for a certain code plane ( D.10 )
 
    The Get Supported Widechars message is used by the Working Set to determine the WideChars supported
@@ -368,8 +368,8 @@ iso_u8 IsoVtcGetInstanceID(iso_s16 s16CfHandleMaster, ISOVT_INSTANCE_TYPE_Te eIn
 iso_s16 IsoVtcCmd_GetSupportedWidechar(iso_u8 u8Instance, iso_u8 u8CodePlane,
                                        iso_u16 u16RangeFirstWidechar, iso_u16 u16RangeLastWidechar);
 
-/***************************************************************************/
-/*!
+
+/**
    \brief       This technical message requests background colours ( D.12 )
 
    The Working Set sends the Get Window Mask Data message to request the background colour
@@ -387,8 +387,8 @@ iso_s16 IsoVtcCmd_GetSupportedWidechar(iso_u8 u8Instance, iso_u8 u8CodePlane,
 
 iso_s16 IsoVtcCmd_GetWindowMaskData(iso_u8 u8Instance);
 
-/***************************************************************************/
-/*!
+
+/**
 \brief       This technical message requests for supported objects ( D.14 )
 
    This command is used by the WS to get the list of all object types supported by the VT.
@@ -405,8 +405,8 @@ iso_s16 IsoVtcCmd_GetWindowMaskData(iso_u8 u8Instance);
 
 iso_s16 IsoVtcCmd_GetSupportedObjects(iso_u8 u8Instance);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Screen capture ( Part 6 - D.16 )
 
    This command, available in VT version 6 and later, requests a lossless screen (image) capture from the VT
@@ -427,8 +427,8 @@ iso_s16 IsoVtcCmd_GetSupportedObjects(iso_u8 u8Instance);
 
 iso_s16 IsoVtcCmd_ScreenCapture(iso_u8 u8Instance, iso_u8 u8ItemRequested, iso_u8 u8Path);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Identify VT ( Part 6 - D.18 )
 
    The Identify VT message may be sent by either Working Sets or VTs.
@@ -448,7 +448,7 @@ iso_s16 IsoVtcCmd_IdentifyVT(iso_u8 u8Instance);
 #endif /* ISO_VTC_UT3 */
 
 /***************************************************************************************/
-/*!
+/**
    \brief         Command for deleting object pool of VT ROM
 
    This function releases a command to the VT. The pool selected with the version
@@ -468,8 +468,8 @@ iso_s16 IsoVtcCmd_IdentifyVT(iso_u8 u8Instance);
 
 iso_s16 IsoVtcCmd_DeleteVersion(iso_u8 u8Instance, const iso_u8 au8VersionString[]);
 
-/* ************************************************************************ */
-/*!
+
+/**
    \brief       Store object pool with version label from VT RAM to VT ROM
 
    This function stores the actual pool in VT RAM into the Flash (ROM) of the VT.
@@ -496,8 +496,8 @@ iso_s16 IsoVtcCmd_StoreVersion(iso_u8 u8Instance, const iso_u8 au8VersionString[
    \brief API functions for sending Annex F command messages
 @{
 */
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Hide/Show Object (Container) ( Part 6 - F.2 )
 
    The Hide/Show Object command is used to hide or show a container object.
@@ -518,7 +518,7 @@ iso_s16 IsoVtcCmd_StoreVersion(iso_u8 u8Instance, const iso_u8 au8VersionString[
 iso_s16 IsoVtcCmd_ObjHideShow(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool qVisible);
 
 /*********************************************************************************/
-/*!
+/**
    \brief      Command enable/disable (input) object - ( Part 6 - F.4 )
 
    This command is used to enable or disable an input field object and pertains
@@ -540,7 +540,7 @@ iso_s16 IsoVtcCmd_ObjHideShow(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool qVis
 iso_s16 IsoVtcCmd_ObjEnableDisable(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool qAbility);
 
 /*********************************************************************************/
-/*!
+/**
    \brief      Command Select input object ( Part 6 - F.6 )
 
    This command is used to force the selection of an input field object.
@@ -560,8 +560,8 @@ iso_s16 IsoVtcCmd_ObjEnableDisable(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool
 
 iso_s16 IsoVtcCmd_ObjSelectInput(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Option);
 
-/***************************************************************************/
-/*!
+
+/**
    \brief         Esc Command
 
    This command is used to abort operator input ( Part 6 - F.8 ).
@@ -577,8 +577,8 @@ iso_s16 IsoVtcCmd_ObjSelectInput(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8O
 
 iso_s16 IsoVtcCmd_ESC(iso_u8 u8Instance);
 
-/* ************************************************************************ */
-/*!
+
+/**
    \brief      Command Control audio device ( Part 6 - F.10 ).
 
    This command can be used to control the audio on the VT.
@@ -605,7 +605,7 @@ iso_s16 IsoVtcCmd_CtrlAudioSignal(iso_u8 u8Instance, iso_u8 u8NumOfRepit, iso_u1
                                   iso_u16 u16OnTimeMs, iso_u16 u16OffTimeMs);
 
 /***********************************************************************************/
-/*!
+/**
    \brief      Command SetAudioVolume
 
    This command can be used to control the audio on the VT (volume)  ( Part 6 - F.12 )
@@ -625,7 +625,7 @@ iso_s16 IsoVtcCmd_CtrlAudioSignal(iso_u8 u8Instance, iso_u8 u8NumOfRepit, iso_u1
 iso_s16 IsoVtcCmd_SetAudioVolume(iso_u8 u8Instance, iso_u8 u8Volume);
 
 /*********************************************************************************/
-/*!
+/**
    \brief      Command change child location ( Part 6 - F.14 )
 
    The Change Child Location command is used to change the relative position of an object.
@@ -651,7 +651,7 @@ iso_s16 IsoVtcCmd_ChildLocation(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16
                                 iso_u8 u8Xchange, iso_u8 u8Ychange);
 
 /****************************************************************************************/
-/*!
+/**
    \brief      Command change child position ( Part 6 - F.16 )
 
    The Change Child Location command is used to change the absolute position of an object.
@@ -677,7 +677,7 @@ iso_s16 IsoVtcCmd_ChildPosition(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16
                                 iso_s16 s16Xposition, iso_s16 s16Yposition);
 
 /***********************************************************************************/
-/*!
+/**/***************************************************************************/
    \brief      Command change size  ( Part 6 - F.18 )
 
    The Change Size command is used to change the size of an object.
@@ -699,8 +699,8 @@ iso_s16 IsoVtcCmd_ChildPosition(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16
 
 iso_s16 IsoVtcCmd_Size(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16Width, iso_u16 u16Height);
 
- /*****************************************************************************/
-/*!
+ 
+/**
    \brief      Command change background colour ( Part 6 - F.20 )
 
    This command is used to change the background colour of an object.
@@ -721,7 +721,7 @@ iso_s16 IsoVtcCmd_Size(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16Width, is
 iso_s16 IsoVtcCmd_BackgroundColour(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Colour);
 
 /******************************************************************************/
-/*!
+/**
    \brief      Command change numeric value ( Part 6 - F.22 )
 
    This command is used to change the value of an object. It applies only to objects
@@ -743,7 +743,7 @@ iso_s16 IsoVtcCmd_BackgroundColour(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u
 iso_s16 IsoVtcCmd_NumericValue(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u32NewValue);
 
 /************************************************************************************/
-/*!
+/**
    \brief      Command change numeric value with command buffer reference ( Part 6 - F.22 )
 
    This command is used to change the value of an object. It applies only to objects
@@ -766,7 +766,7 @@ iso_s16 IsoVtcCmd_NumericValue(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u32N
 iso_s16 IsoVtcCmd_NumericValueRef(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u32NewValue);
 
 /*******************************************************************************/
-/*!
+/**
    \brief      Command Change String Value ( Part 6 - F.24 )
 
    This command sends a string to the VT. The length of the string including '\0'
@@ -788,7 +788,7 @@ iso_s16 IsoVtcCmd_NumericValueRef(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u
 iso_s16 IsoVtcCmd_String(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pau8String[]);
 
 /*******************************************************************************/
-/*!
+/**
    \brief      Command Change String Value with command buffer reference ( Part 6 - F.24 )
 
    This command sends a string to the VT. If the ObjectID is already in the command FIFO
@@ -811,7 +811,7 @@ iso_s16 IsoVtcCmd_String(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pau8S
 iso_s16 IsoVtcCmd_StringRef(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pau8String[]);
 
 /*******************************************************************************************/
-/*!
+/**
    \brief      Command change end point ( Part 6 - F.26 )
 
    This command is used to change the end point of a line object by changing
@@ -837,7 +837,7 @@ iso_s16 IsoVtcCmd_StringRef(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pa
 iso_s16 IsoVtcCmd_EndPoint(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16Width, iso_u16 u16Height, iso_u8 u8LineDirection);
 
 /*******************************************************************************/
-/*!
+/**
    \brief      Command change font attributes ( Part 6 - F.28 )
 
    This command is used to change the font attributes in a font attributes object.
@@ -867,7 +867,7 @@ iso_s16  IsoVtcCmd_FontAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                                   );
 
 /*******************************************************************************/
-/*!
+/**
    \brief      Command change line attributes ( Part 6 - F.30 )
 
    This command is used to change the line attributes in a line attributes object.
@@ -893,7 +893,7 @@ iso_s16  IsoVtcCmd_LineAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                                    iso_u8 u8LineColour, iso_u8 u8LineWidth, iso_u16 u16LineArt );
 
 /**********************************************************************************/
-/*!
+/**
    \brief      Command change fill attributes ( Part 6 - F.32 )
 
    This command is used to change the fill attributes in a fill attributes object.
@@ -919,7 +919,7 @@ iso_s16	 IsoVtcCmd_FillAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                                     iso_u8 u8FillType, iso_u8 u8FillColour, iso_u16 u16FillPatternId );
 
 /******************************************************************************/
-/*!
+/**
    \brief      Command change active mask( Part 6 - F.34 )
 
    This command is used to change the active mask of a working set to either
@@ -941,7 +941,7 @@ iso_s16	 IsoVtcCmd_FillAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
 iso_s16 IsoVtcCmd_ActiveMask(iso_u8 u8Instance, iso_u16 u16WorkSetId, iso_u16 u16NewMaskId);
 
 /******************************************************************************/
-/*!
+/**
    \brief      Command change soft key mask( Part 6 - F.36 )
 
    This command is used to change the soft key mask associated with a data or alarm mask object.
@@ -963,8 +963,8 @@ iso_s16 IsoVtcCmd_ActiveMask(iso_u8 u8Instance, iso_u16 u16WorkSetId, iso_u16 u1
 
 iso_s16 IsoVtcCmd_SoftKeyMask(iso_u8 u8Instance, iso_u8 u8MaskType, iso_u16 u16DataMaskId, iso_u16 u16SoftKeyMaskId);
 
-/* ************************************************************************ */
-/*!
+
+/**
    \brief      Command change attribute( Part 6 - F.38 )
 
    This command is used to change any attribute with an assigned AID.
@@ -988,7 +988,7 @@ iso_s16 IsoVtcCmd_SoftKeyMask(iso_u8 u8Instance, iso_u8 u8MaskType, iso_u16 u16D
 iso_s16 IsoVtcCmd_Attribute(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8IdAttribute, iso_u32 u32ValueAttribute);
 
 /**********************************************************************************/
-/*!
+/**
    \brief      Command change priority( Part 6 - F.40 )
 
    This command is used to change the priority of an alarm mask.
@@ -1009,7 +1009,7 @@ iso_s16 IsoVtcCmd_Attribute(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8IdAttr
 iso_s16 IsoVtcCmd_Priority(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Priority);
 
 /*******************************************************************************/
-/*!
+/**
    \brief      Command change list item ( Part 6 - F.42 )
 
    This command is used to change a list item in a list input object.
@@ -1032,8 +1032,8 @@ iso_s16 IsoVtcCmd_Priority(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Priorit
 iso_s16 IsoVtcCmd_ListItem(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8ListIndex, iso_u16 u16NewObjId);
 
 #ifdef ISO_VTC_UT3
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Lock/UnlockMask( Part 6 - F.46 )
 
    This message is available in VT Version 4 and later. This command is used by a
@@ -1057,8 +1057,8 @@ iso_s16 IsoVtcCmd_ListItem(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8ListInd
 
 iso_s16 IsoVtcCmd_LockUnlockMask(iso_u8 u8Instance, iso_u8 u8LockCmd, iso_u16 u16MaskId, iso_u16 u16LockTimeoutMs);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Execute Macro( Part 6 - F.48 )
 
    This message is available in VT Version 4 and later.
@@ -1077,8 +1077,8 @@ iso_s16 IsoVtcCmd_LockUnlockMask(iso_u8 u8Instance, iso_u8 u8LockCmd, iso_u16 u1
 
 iso_s16 IsoVtcCmd_ExecuteMacro(iso_u8 u8Instance, iso_u16 u16ObjId);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Change Object Label( Part 6 - F.50 )
 
    This command is used by an ECU to change a label of an object. See also B.21
@@ -1107,8 +1107,8 @@ iso_s16 IsoVtcCmd_ExecuteMacro(iso_u8 u8Instance, iso_u16 u16ObjId);
 iso_s16 IsoVtcCmd_ChangeObjectLabel(iso_u8 u8Instance, iso_u16 u16ObjId, 
                                     iso_u16 u16ObIdStringVar, iso_u8 u8FontType, iso_u16 u16ObIdGrafic);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Change Polygon Point( Part 6 - F.52 )
 
    This command is used by a Working Set to modify a point in an Output Polygon object.
@@ -1133,8 +1133,8 @@ iso_s16 IsoVtcCmd_ChangeObjectLabel(iso_u8 u8Instance, iso_u16 u16ObjId,
 iso_s16 IsoVtcCmd_ChangePolygonPoint(iso_u8 u8Instance, iso_u16 u16ObjId, 
                                      iso_u8 u8PointIndex, iso_u16 u16NewXValue, iso_u16 u16NewYValue);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Change Polygon Scale( Part 6 - F.54 )
 
    This command is used by a Working Set to change the scale of a complete Output Polygon object.
@@ -1156,8 +1156,8 @@ iso_s16 IsoVtcCmd_ChangePolygonPoint(iso_u8 u8Instance, iso_u16 u16ObjId,
 
 iso_s16 IsoVtcCmd_ChangePolygonScale(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16NewWidth, iso_u16 u16NewHeight);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Graphics Context ( Part 6 - F.56 )
 
    This command is used to manipulate a graphics Context object (only on version 4 or later VTs).
@@ -1184,8 +1184,8 @@ iso_s16 IsoVtcCmd_ChangePolygonScale(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u1
 iso_s16 IsoVtcCmd_GraphicsContext(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8SubCommandID,
                                   const iso_u8 u8ParaList[], iso_u16 u16LenBytes);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command GetAttribute( Part 6 - F.58 )
 
    This message is available in VT Version 4 and later. This command is used by a
@@ -1206,8 +1206,8 @@ iso_s16 IsoVtcCmd_GraphicsContext(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8
 
 iso_s16 IsoVtcCmd_GetAttribute(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8AID);
 
-/* ************************************************************************ */
-/*!
+
+/**
    \brief      Command Select Colour Map ( VT version 4 and later ) ( Part 6 - F.60 )
 
    The Select Colour Map command is used to select the active Colour Map. This command can take a
@@ -1230,8 +1230,8 @@ iso_s16 IsoVtcCmd_GetAttribute(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8AID
 
 iso_s16 IsoVtcCmd_SelectColourMap(iso_u8 u8Instance, iso_u16 u16ObjIdColourMap);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Execute Extended Macro( Part 6 - F.62 )
 
    This command is used to execute a Macro with 16-bit Object ID.
@@ -1250,8 +1250,8 @@ iso_s16 IsoVtcCmd_SelectColourMap(iso_u8 u8Instance, iso_u16 u16ObjIdColourMap);
 
 iso_s16 IsoVtcCmd_ExecuteExtendedMacro(iso_u8 u8Instance, iso_u16 u16ObjIdMacro);
 
-/*****************************************************************************/
-/*!
+
+/**
    \brief      Command Select Active Working Set( Part 6 - F.64 )
 
    This command is used by the currently active Working Set to request that the VT select a new active Working Set.

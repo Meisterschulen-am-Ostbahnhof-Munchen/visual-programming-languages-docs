@@ -87,7 +87,6 @@ except ImportError:
     # into the documentation instead of generating.
     extensions.append('automock')
 
-hawkmoth_root = os.path.join(os.path.abspath(os.path.dirname(__file__)), '../test')
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 

@@ -61,6 +61,6 @@ Contents
    Installation-4diac
    Interface/Interface
    Übungsaufgaben
-   4diac_internals
+   4diac_Update
    typelibrary/typelibrary
    genindex

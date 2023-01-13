@@ -1,4 +1,7 @@
 IsoVtcApi
 ---------
 
-.. c:autodoc:: IsoVtcApi.h
+
+.. autocmodule:: IsoVtcApi.h
+   :members:
+   :private-members:

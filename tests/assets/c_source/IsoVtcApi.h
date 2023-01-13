@@ -134,7 +134,7 @@ iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
 
 #ifdef ISO_VTC_UT3
 
-/**********************************************************************************/
+
 /**
    \brief      Manual setting of a supported ( parsable ) object type
    
@@ -149,7 +149,7 @@ iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
 
    void IsoVtcObjTypeParsableSet(iso_u8 u8Instance, OBJTYP_e eObjType);
 
-/**********************************************************************************/
+
 /**
    \brief       Check if object type is supported of VT
 
@@ -167,7 +167,7 @@ iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
 
    iso_bool IsoVtcObjTypeIsSupported( iso_u8 u8Instance, OBJTYP_e eObjType);
 
-#endif  /* ISO_VTC_UT3 */
+
 
 
 /**
@@ -215,7 +215,7 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
 
      iso_s16 IsoVtcContinue( iso_u8 u8Instance );
 
-/**************************************************************************/
+
 /**
     \brief    Function reads the Version strings received from VT with (Extended) Get Versions
 
@@ -279,7 +279,7 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
 
      iso_s16 IsoVtcMultipleNextVT( iso_u8 u8Instance,const ISO_CF_NAME_T* rpabVtName );
 
-/******************************************************************************/
+
 /**
     \brief        This function reads the language of the working set
 
@@ -334,15 +334,6 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
 
 iso_u8 IsoVtcGetInstanceID(iso_s16 s16CfHandleMaster, ISOVT_INSTANCE_TYPE_Te eInstanceType);
 
-/** @} */ /* end VT Client Management Functions */
-
-/* ********************************* IsoVTCmd.c  *************************************** */
-/** \addtogroup vttechmsg 
-   \brief API functions for sending Annex D and E messages
-@{
-*/
-
-#ifdef ISO_VTC_UT3
 
 /**
    \brief       This technical message requests the supported widechars for a certain code plane ( D.10 )
@@ -445,9 +436,8 @@ iso_s16 IsoVtcCmd_ScreenCapture(iso_u8 u8Instance, iso_u8 u8ItemRequested, iso_u
 
 iso_s16 IsoVtcCmd_IdentifyVT(iso_u8 u8Instance);
 
-#endif /* ISO_VTC_UT3 */
 
-/***************************************************************************************/
+
 /**
    \brief         Command for deleting object pool of VT ROM
 
@@ -488,14 +478,6 @@ iso_s16 IsoVtcCmd_DeleteVersion(iso_u8 u8Instance, const iso_u8 au8VersionString
 
 iso_s16 IsoVtcCmd_StoreVersion(iso_u8 u8Instance, const iso_u8 au8VersionString[]);
 
-/** @} */ /* END vttechmsg */
-
-
-/* ********************************* IsoVTCmd.c  *************************************** */
-/** \addtogroup vtFcmdmsg
-   \brief API functions for sending Annex F command messages
-@{
-*/
 
 /**
    \brief      Command Hide/Show Object (Container) ( Part 6 - F.2 )
@@ -517,7 +499,7 @@ iso_s16 IsoVtcCmd_StoreVersion(iso_u8 u8Instance, const iso_u8 au8VersionString[
 
 iso_s16 IsoVtcCmd_ObjHideShow(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool qVisible);
 
-/*********************************************************************************/
+
 /**
    \brief      Command enable/disable (input) object - ( Part 6 - F.4 )
 
@@ -539,7 +521,7 @@ iso_s16 IsoVtcCmd_ObjHideShow(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool qVis
 
 iso_s16 IsoVtcCmd_ObjEnableDisable(iso_u8 u8Instance, iso_u16 u16ObjId, iso_bool qAbility);
 
-/*********************************************************************************/
+
 /**
    \brief      Command Select input object ( Part 6 - F.6 )
 
@@ -604,7 +586,7 @@ iso_s16 IsoVtcCmd_ESC(iso_u8 u8Instance);
 iso_s16 IsoVtcCmd_CtrlAudioSignal(iso_u8 u8Instance, iso_u8 u8NumOfRepit, iso_u16 u16Frequency,
                                   iso_u16 u16OnTimeMs, iso_u16 u16OffTimeMs);
 
-/***********************************************************************************/
+
 /**
    \brief      Command SetAudioVolume
 
@@ -624,7 +606,7 @@ iso_s16 IsoVtcCmd_CtrlAudioSignal(iso_u8 u8Instance, iso_u8 u8NumOfRepit, iso_u1
 
 iso_s16 IsoVtcCmd_SetAudioVolume(iso_u8 u8Instance, iso_u8 u8Volume);
 
-/*********************************************************************************/
+
 /**
    \brief      Command change child location ( Part 6 - F.14 )
 
@@ -650,7 +632,7 @@ iso_s16 IsoVtcCmd_SetAudioVolume(iso_u8 u8Instance, iso_u8 u8Volume);
 iso_s16 IsoVtcCmd_ChildLocation(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16ObjIdParent,
                                 iso_u8 u8Xchange, iso_u8 u8Ychange);
 
-/****************************************************************************************/
+
 /**
    \brief      Command change child position ( Part 6 - F.16 )
 
@@ -676,8 +658,8 @@ iso_s16 IsoVtcCmd_ChildLocation(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16
 iso_s16 IsoVtcCmd_ChildPosition(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16ObjIdParent,
                                 iso_s16 s16Xposition, iso_s16 s16Yposition);
 
-/***********************************************************************************/
-/**/***************************************************************************/
+
+/**
    \brief      Command change size  ( Part 6 - F.18 )
 
    The Change Size command is used to change the size of an object.
@@ -720,7 +702,7 @@ iso_s16 IsoVtcCmd_Size(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16Width, is
 
 iso_s16 IsoVtcCmd_BackgroundColour(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Colour);
 
-/******************************************************************************/
+
 /**
    \brief      Command change numeric value ( Part 6 - F.22 )
 
@@ -742,7 +724,6 @@ iso_s16 IsoVtcCmd_BackgroundColour(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u
 
 iso_s16 IsoVtcCmd_NumericValue(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u32NewValue);
 
-/************************************************************************************/
 /**
    \brief      Command change numeric value with command buffer reference ( Part 6 - F.22 )
 
@@ -765,7 +746,7 @@ iso_s16 IsoVtcCmd_NumericValue(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u32N
 
 iso_s16 IsoVtcCmd_NumericValueRef(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u32NewValue);
 
-/*******************************************************************************/
+
 /**
    \brief      Command Change String Value ( Part 6 - F.24 )
 
@@ -787,7 +768,7 @@ iso_s16 IsoVtcCmd_NumericValueRef(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u32 u
 
 iso_s16 IsoVtcCmd_String(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pau8String[]);
 
-/*******************************************************************************/
+
 /**
    \brief      Command Change String Value with command buffer reference ( Part 6 - F.24 )
 
@@ -810,7 +791,7 @@ iso_s16 IsoVtcCmd_String(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pau8S
 
 iso_s16 IsoVtcCmd_StringRef(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pau8String[]);
 
-/*******************************************************************************************/
+
 /**
    \brief      Command change end point ( Part 6 - F.26 )
 
@@ -836,7 +817,7 @@ iso_s16 IsoVtcCmd_StringRef(iso_u8 u8Instance, iso_u16 u16ObjId, const iso_u8 pa
 
 iso_s16 IsoVtcCmd_EndPoint(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16Width, iso_u16 u16Height, iso_u8 u8LineDirection);
 
-/*******************************************************************************/
+
 /**
    \brief      Command change font attributes ( Part 6 - F.28 )
 
@@ -866,7 +847,7 @@ iso_s16  IsoVtcCmd_FontAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                                    iso_u8 u8FontType, iso_u8 u8FontStyle
                                   );
 
-/*******************************************************************************/
+
 /**
    \brief      Command change line attributes ( Part 6 - F.30 )
 
@@ -892,7 +873,7 @@ iso_s16  IsoVtcCmd_FontAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
 iso_s16  IsoVtcCmd_LineAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                                    iso_u8 u8LineColour, iso_u8 u8LineWidth, iso_u16 u16LineArt );
 
-/**********************************************************************************/
+
 /**
    \brief      Command change fill attributes ( Part 6 - F.32 )
 
@@ -918,7 +899,7 @@ iso_s16  IsoVtcCmd_LineAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
 iso_s16	 IsoVtcCmd_FillAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                                     iso_u8 u8FillType, iso_u8 u8FillColour, iso_u16 u16FillPatternId );
 
-/******************************************************************************/
+
 /**
    \brief      Command change active mask( Part 6 - F.34 )
 
@@ -940,7 +921,7 @@ iso_s16	 IsoVtcCmd_FillAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
 
 iso_s16 IsoVtcCmd_ActiveMask(iso_u8 u8Instance, iso_u16 u16WorkSetId, iso_u16 u16NewMaskId);
 
-/******************************************************************************/
+
 /**
    \brief      Command change soft key mask( Part 6 - F.36 )
 
@@ -987,7 +968,7 @@ iso_s16 IsoVtcCmd_SoftKeyMask(iso_u8 u8Instance, iso_u8 u8MaskType, iso_u16 u16D
 
 iso_s16 IsoVtcCmd_Attribute(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8IdAttribute, iso_u32 u32ValueAttribute);
 
-/**********************************************************************************/
+
 /**
    \brief      Command change priority( Part 6 - F.40 )
 
@@ -1008,7 +989,7 @@ iso_s16 IsoVtcCmd_Attribute(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8IdAttr
 
 iso_s16 IsoVtcCmd_Priority(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Priority);
 
-/*******************************************************************************/
+
 /**
    \brief      Command change list item ( Part 6 - F.42 )
 
@@ -1031,7 +1012,7 @@ iso_s16 IsoVtcCmd_Priority(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8Priorit
 
 iso_s16 IsoVtcCmd_ListItem(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u8 u8ListIndex, iso_u16 u16NewObjId);
 
-#ifdef ISO_VTC_UT3
+
 
 /**
    \brief      Command Lock/UnlockMask( Part 6 - F.46 )
@@ -1270,5 +1251,5 @@ iso_s16 IsoVtcCmd_ExecuteExtendedMacro(iso_u8 u8Instance, iso_u16 u16ObjIdMacro)
 
 iso_s16 IsoVtcCmd_SelectActiveWorkingSet(iso_u8 u8Instance, const iso_u8 pau8Name[]);
 
-#endif /* ISO_VTC_UT3 */
+
 

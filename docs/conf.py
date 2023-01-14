@@ -6,16 +6,7 @@
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# -- Path setup --------------------------------------------------------------
 
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-import os
-import sys
-SOURCE_DIR = os.path.abspath(os.path.join('.', '..', 'src'))
-sys.path.insert(0, SOURCE_DIR)
 
 
 # -- Project information -----------------------------------------------------
@@ -93,7 +84,29 @@ epub_show_urls = 'footnote'
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store', 'CHANGELOG.rst']
+# -- MyST settings ---------------------------------------------------
 
+myst_enable_extensions = [
+    "dollarmath",
+    "amsmath",
+    "deflist",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    "colon_fence",
+    "smartquotes",
+    "replacements",
+    "linkify",
+    "strikethrough",
+    "substitution",
+    "tasklist",
+    "attrs_inline",
+    "inv_link",
+]
+myst_number_code_blocks = ["typescript"]
+myst_heading_anchors = 9
+myst_footnote_transition = True
+myst_dmath_double_inline = True
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for

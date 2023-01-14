@@ -130,7 +130,7 @@ iso_s16 IsoVtcRestartInstance(iso_u8 u8Instance, iso_bool qReConnect);
 
 */
 
-iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
+iso_u16 IsoVtcGetStatusInfo(iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
 
 
 
@@ -164,7 +164,7 @@ iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
    \retval      iso_bool     ISO_TRUE if VT supports this object
 */
 
-   iso_bool IsoVtcObjTypeIsSupported( iso_u8 u8Instance, OBJTYP_e eObjType);
+   iso_bool IsoVtcObjTypeIsSupported(iso_u8 u8Instance, OBJTYP_e eObjType);
 
 
 
@@ -192,7 +192,7 @@ iso_u16 IsoVtcGetStatusInfo( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo );
                - E_NO_INSTANCE
 */
 
-iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNew );
+iso_s16 IsoVtcDataSet(iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNew );
 
 
 /**
@@ -212,7 +212,7 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
           - waiting_before_store
 */
 
-     iso_s16 IsoVtcContinue( iso_u8 u8Instance );
+     iso_s16 IsoVtcContinue(iso_u8 u8Instance );
 
 
 /**
@@ -276,7 +276,7 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
        - Using see example in VT application
 */
 
-     iso_s16 IsoVtcMultipleNextVT( iso_u8 u8Instance,const ISO_CF_NAME_T* rpabVtName );
+     iso_s16 IsoVtcMultipleNextVT(iso_u8 u8Instance,const ISO_CF_NAME_T* rpabVtName );
 
 
 /**
@@ -298,7 +298,7 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
     (e. g.  waiting_after_GetVersions) else it provides the TECU LC
 */
 
-   iso_s16 IsoVtcReadWorkingSetLanguageData( iso_u8 u8Instance, iso_u8 abLanguageCmd[] );
+   iso_s16 IsoVtcReadWorkingSetLanguageData(iso_u8 u8Instance, iso_u8 abLanguageCmd[] );
 
 
 /**
@@ -314,7 +314,7 @@ iso_s16 IsoVtcDataSet( iso_u8 u8Instance, ISOVT_STATUS_e eVTInfo, iso_u16 wDatNe
                Range: 0 - ISO_VTC_CMD_BUFFER_MAX
 */
 
-    iso_u16  IsoVtcGetCMDFifoFree( iso_u8 u8Instance );
+    iso_u16  IsoVtcGetCMDFifoFree(iso_u8 u8Instance );
 
 
 /**
@@ -841,7 +841,7 @@ iso_s16 IsoVtcCmd_EndPoint(iso_u8 u8Instance, iso_u16 u16ObjId, iso_u16 u16Width
                  - #E_NO_INSTANCE     - No VT client available
 */
 
-iso_s16  IsoVtcCmd_FontAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
+iso_s16  IsoVtcCmd_FontAttributes(iso_u8 u8Instance, iso_u16 u16ObjId,
                                    iso_u8 u8FontColour, iso_u8 u8FontSize,
                                    iso_u8 u8FontType, iso_u8 u8FontStyle
                                   );
@@ -869,7 +869,7 @@ iso_s16  IsoVtcCmd_FontAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                 - #E_NO_INSTANCE     - No VT client available
 */
 
-iso_s16  IsoVtcCmd_LineAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
+iso_s16  IsoVtcCmd_LineAttributes(iso_u8 u8Instance, iso_u16 u16ObjId,
                                    iso_u8 u8LineColour, iso_u8 u8LineWidth, iso_u16 u16LineArt );
 
 
@@ -895,7 +895,7 @@ iso_s16  IsoVtcCmd_LineAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
                   - #E_NO_INSTANCE     - No VT client available
 */
 
-iso_s16	 IsoVtcCmd_FillAttributes( iso_u8 u8Instance, iso_u16 u16ObjId,
+iso_s16	 IsoVtcCmd_FillAttributes(iso_u8 u8Instance, iso_u16 u16ObjId,
                                     iso_u8 u8FillType, iso_u8 u8FillColour, iso_u16 u16FillPatternId );
 
 

@@ -52,7 +52,6 @@ extensions = [
     'sphinx_c_autodoc.viewcode',
     'sphinx.ext.intersphinx',
     'sphinx.ext.imgconverter',
-    'recommonmark',
     'sphinxcontrib.mermaid',
     'sphinx_markdown_tables'
     # Unfortunatly the typehints fail for the autodoc Documenter class, would

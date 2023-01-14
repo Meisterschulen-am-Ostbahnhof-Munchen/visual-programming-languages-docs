@@ -13,8 +13,8 @@ Return values
 iso\_s16
 
 *   [E\_NO\_ERR](c/IsoCommonDef) ( 0 ) - OK
-*   [E\_OVERFLOW](c/IsoCommonDef#c.E_OVERFLOW) (-6 ) - buffer overflow
-*   [E\_NOACT](c/IsoCommonDef.html#c.E_NOACT) (-8 ) - Command not possible in current state
-*   [E\_NO\_INSTANCE](c/IsoCommonDef.html#c.E_NO_INSTANCE) (-21) - No VT client available
+*   [E\_OVERFLOW](c/IsoCommonDef#E_OVERFLOW) (-6 ) - buffer overflow
+*   [E\_NOACT](c/IsoCommonDef#E_NOACT) (-8 ) - Command not possible in current state
+*   [E\_NO\_INSTANCE](c/IsoCommonDef#E_NO_INSTANCE) (-21) - No VT client available
 
-Related to: [IsoVtcCmd\_ActiveMask](c/IsoVtcApi.html#c.IsoVtcCmd_ActiveMask)
+Related to: [IsoVtcCmd\_ActiveMask](c/IsoVtcApi#IsoVtcCmd_ActiveMask)

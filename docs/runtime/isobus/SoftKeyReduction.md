@@ -10,18 +10,18 @@ In einer Beispielhaften Softkeymask, mit 12 Softkeys. Eine Strategie kann wie fo
 
 Ein Beispiel für eine Softkey-Maske mit 12 Softkeys könnte wie folgt aussehen:
 
-*   Softkey 0: Funktion A  
-    Softkey 1: Funktion B  
-    Softkey 2: Funktion C  
-    Softkey 3: Funktion D  
-    Softkey 4: Funktion E  
-    Softkey 5: Funktion F  
-    Softkey 6: Funktion G  
-    Softkey 7: Funktion H  
-    Softkey 8: Funktion I  
-    Softkey 9: Funktion J  
-    Softkey 10: Funktion K  
-    Softkey 11: Funktion L
+*   Softkey 0: Funktion A
+*   Softkey 1: Funktion B  
+*   Softkey 2: Funktion C  
+*   Softkey 3: Funktion D  
+*   Softkey 4: Funktion E  
+*   Softkey 5: Funktion F  
+*   Softkey 6: Funktion G  
+*   Softkey 7: Funktion H  
+*   Softkey 8: Funktion I  
+*   Softkey 9: Funktion J  
+*   Softkey 10: Funktion K  
+*   Softkey 11: Funktion L
 
 Eine mögliche Strategie für die Softkey-Reduktion könnte sein, die Softkeys paarweise zu behalten und dann jeweils das letzte Paar zu entfernen, wenn die Anzahl der Softkeys reduziert wird.
 

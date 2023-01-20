@@ -1,6 +1,10 @@
 # dual WLAN
 
-[unter Windows 10 mit 2 WLAN Verbindungen arbeiten](https://www.youtube.com/watch?v=a5Re1vOtmww)
+In diesem Video wird gezeigt, wie man unter Windows 10 mit zwei WLAN-Verbindungen arbeiten kann. Egal ob Sie auf der Arbeit oder zu Hause sind, es kann vorkommen, dass Sie sich mit einem öffentlichen WLAN und einem privaten WLAN verbinden müssen. Oder vielleicht möchten Sie Ihre Internetverbindung zwischen zwei verschiedenen Netzwerken wechseln, ohne die Verbindung zu unterbrechen. Mit diesem Video lernen Sie, wie Sie mehrere WLAN-Verbindungen unter Windows 10 einrichten und verwalten können, um Ihre Arbeit effizienter und produktiver zu gestalten.
+
+Video: [unter Windows 10 mit 2 WLAN Verbindungen arbeiten](https://www.youtube.com/watch?v=a5Re1vOtmww)
+
+---
 
 Vergleichstest verschiedener WLAN Adapter:
 

@@ -40,3 +40,16 @@ Bei einer weiteren Reduktion von 8 auf 6 Softkeys würde man das Paar 3/9 entfer
 ![](https://user-images.githubusercontent.com/69573151/213755944-66ff8a24-ba9f-4b98-99cd-f683ee9c8265.png)
 
 Diese Strategie ermöglicht es, die wichtigsten Funktionen beizubehalten, während die Anzahl der Softkeys reduziert wird, und sicherzustellen, dass die Funktionen auf dem Display in einer logischen und einfach zu verwendenden Anordnung angezeigt werden.
+
+
+die gezeigten Beispiele befinden sich hier: 
+
+https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample
+
+https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/6key
+
+https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/8key
+
+https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/10key
+
+https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/12key

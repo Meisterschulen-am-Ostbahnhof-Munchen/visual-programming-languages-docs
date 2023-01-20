@@ -44,12 +44,12 @@ Diese Strategie ermöglicht es, die wichtigsten Funktionen beizubehalten, währe
 
 die gezeigten Beispiele befinden sich hier: 
 
-https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample
+[4diac-SoftkeyReduction-sample](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample)
 
-https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/6key
+[6 key](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/6key)
 
-https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/8key
+[8 key](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/8key)
 
-https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/10key
+[10 key](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/10key)
 
-https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/12key
+[12 key](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-SoftkeyReduction-sample/tree/12key)

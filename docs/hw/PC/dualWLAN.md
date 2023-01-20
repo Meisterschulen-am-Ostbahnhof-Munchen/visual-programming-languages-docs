@@ -14,7 +14,6 @@ Video: [unter Windows 10 mit 2 WLAN Verbindungen arbeiten](https://www.youtube.c
 
 [![unter Windows 10 mit 2 WLAN Verbindungen arbeiten](https://img.youtube.com/vi/a5Re1vOtmww/0.jpg)](https://www.youtube.com/watch?v=a5Re1vOtmww "unter Windows 10 mit 2 WLAN Verbindungen arbeiten")
 
-OR If you want
 
 ---
 

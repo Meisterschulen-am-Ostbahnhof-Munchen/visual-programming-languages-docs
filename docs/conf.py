@@ -116,6 +116,11 @@ myst_number_code_blocks = ["typescript"]
 myst_heading_anchors = 9
 myst_footnote_transition = True
 myst_dmath_double_inline = True
+
+# Prefix document path to section labels, to use:
+# `path/to/file:heading` instead of just `heading`
+autosectionlabel_prefix_document = True
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for

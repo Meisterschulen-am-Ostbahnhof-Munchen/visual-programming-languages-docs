@@ -58,6 +58,7 @@ Contents
    Ueber4diac
    Literatur
    Hilfe
+   hw/hw
    Installation-4diac
    DasErsteProjekt
    Interface/Interface

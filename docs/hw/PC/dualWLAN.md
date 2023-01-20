@@ -26,11 +26,11 @@ Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS get
 
 | Typ | Link | Windows 10 | Ubuntu 22.04 LTS |
 | --- | --- | --- | --- |
-| Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz |   |   |   |
-| Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2 |   |   |   |
-| Edimax EW-7811UN Super Mini WLAN USB-Stick (150MBit), Version 1 |   |   |   |
-| Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick |   |   |   |
-| ALL-WA1200AC |   |   |   |
-| ALL-WA0300AC |   |   |   |
-| ALL-WA0150N (MTK7601) |   |   |   |
-| ALL-WA0100N (RTL8188EU) |   |   |   |
+| Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz |   | nicht getestet | nicht getestet |
+| Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2 |   | geht | geht |
+| Edimax EW-7811UN Super Mini WLAN USB-Stick (150MBit), Version 1 |   | geht | geht |
+| Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick |   | geht | nicht funktional |
+| ALL-WA1200AC |   | geht | geht |
+| ALL-WA0300AC |   | geht | nicht funktional |
+| ALL-WA0150N (MTK7601) |   | geht | geht |
+| ALL-WA0100N (RTL8188EU) | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/267408/allnet-all-wa0100n/150mbit-wireless-nano-usb-2.0-nano-adapter-rtl8188eu-chipset-ideal-fuer-bananapi/raspberry-pi/odroid-etc) | geht | geht |

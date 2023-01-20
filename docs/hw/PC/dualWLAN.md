@@ -1,5 +1,11 @@
 # dual WLAN
 
+## ChatGPT
+
+alle Texte auf dieser Seite sind erstellt mit [https://chat.openai.com/chat](https://chat.openai.com/chat)
+
+Erstaunlich
+
 ## **unter Windows 10 mit 2 WLAN Verbindungen arbeiten**
 
 In diesem Video wird gezeigt, wie man unter Windows 10 mit zwei WLAN-Verbindungen arbeiten kann. Egal ob Sie auf der Arbeit oder zu Hause sind, es kann vorkommen, dass Sie sich mit einem öffentlichen WLAN und einem privaten WLAN verbinden müssen. Oder vielleicht möchten Sie Ihre Internetverbindung zwischen zwei verschiedenen Netzwerken wechseln, ohne die Verbindung zu unterbrechen. Mit diesem Video lernen Sie, wie Sie mehrere WLAN-Verbindungen unter Windows 10 einrichten und verwalten können, um Ihre Arbeit effizienter und produktiver zu gestalten.
@@ -41,11 +47,15 @@ Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS get
 | ALL-WA0150N (MTK7601) | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-adapter-karten/253781/allnet-all0235nano/wireless-n-150mbit-usb-stick) | geht | geht |
 | ALL-WA0100N (RTL8188EU) | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/267408/allnet-all-wa0100n/150mbit-wireless-nano-usb-2.0-nano-adapter-rtl8188eu-chipset-ideal-fuer-bananapi/raspberry-pi/odroid-etc) | geht | geht |
 
-## Beschreibung der Verschiedenen Adapter: 
+## Beschreibung der Verschiedenen Adapter:
 
 ### Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz
 
+Der Hama N150 Nano-WLAN-USB-Stick ist ein WLAN-Adapter, der auf dem 802.11n-Standard basiert und eine maximale Datenübertragungsrate von 150Mbps unterstützt. Er nutzt einen 2,4GHz-Funk und unterstützt nur das 2.4GHz Frequenzband. Es unterstützt auch die neuesten Sicherheitsstandards wie WPA, WPA2 und WEP, um Ihre Verbindung zu schützen. Der Adapter hat einen sehr kleinen und leichten Formfaktor, was es einfach zu transportieren und zu verwenden macht. Es ist kompatibel mit Windows, MacOS und Linux und kann einfach an einen USB-Anschluss angeschlossen werden. Der Hama N150 Nano-WLAN-USB-Stick ist eine gute Wahl für Personen die einen kleinen, einfachen und preiswerten WLAN-Adapter suchen.
+
 ### Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2
+
+Der Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter ist ein WLAN-Adapter, der auf dem 802.11n-Standard basiert und eine maximale Datenübertragungsrate von 150Mbps unterstützt. Er nutzt einen 2,4GHz-Funk und unterstützt nur das 2.4GHz Frequenzband. Es unterstützt auch die neuesten Sicherheitsstandards wie WPA, WPA2 und WEP, um Ihre Verbindung zu schützen. Der Adapter hat einen sehr kleinen und leichten Formfaktor, was es einfach zu transportieren und zu verwenden macht. Es ist kompatibel mit Windows, MacOS und Linux und kann einfach an einen USB-Anschluss angeschlossen werden. Es ist die Version 2 des Edimax EW-7811Un nano Adapter, und kann sich durch seine kompakte Größe und gute Leistung auszeichnen.
 
 ### Edimax EW-7811UN Super Mini WLAN USB-Stick (150MBit), Version 1
 
@@ -57,6 +67,12 @@ Der ALL-WA1200AC ist ein WLAN USB-Adapter, der auf dem neuesten Wireless-AC-Stan
 
 ### ALL-WA0300AC
 
+Der ALL-WA0300AC ist ein WLAN USB-Adapter, der auf dem Wireless-AC-Standard basiert und eine maximale Datenübertragungsrate von 300Mbps unterstützt. Es unterstützt sowohl 2.4GHz als auch 5GHz Frequenzbänder und hat eine erweiterte Funktionen wie MU-MIMO und Beamforming, die es ermöglichen eine höhere Geschwindigkeit und eine größere Reichweite zu erreichen. Dieser Adapter unterstützt auch die neuesten Sicherheitsstandards wie WPA3, WPA2, WPA und WEP, um Ihre Verbindung zu schützen. Es hat einen kleinen und leichten Formfaktor, was es einfach zu transportieren und zu verwenden macht. Es ist kompatibel mit Windows, MacOS und Linux und kann einfach an einen USB-Anschluss angeschlossen werden.
+
 ### ALL-WA0150N (MTK7601)
 
+Der ALL-WA0150N (MTK7601) ist ein WLAN USB-Adapter, der auf dem 802.11n-Standard basiert und eine maximale Datenübertragungsrate von 150Mbps unterstützt. Er nutzt den Mediatek MTK7601 Chip und unterstützt nur das 2.4GHz Frequenzband. Es unterstützt auch die neuesten Sicherheitsstandards wie WPA, WPA2 und WEP, um Ihre Verbindung zu schützen. Der Adapter hat einen kleinen und leichten Formfaktor, was es einfach zu transportieren und zu verwenden macht. Es ist kompatibel mit Windows, MacOS und Linux und kann einfach an einen USB-Anschluss angeschlossen werden. Allerdings ist es nicht so leistungsfähig wie die neuesten WLAN-Adapter und hat auch eine geringere Reichweite und Geschwindigkeit.
+
 ### ALL-WA0100N (RTL8188EU)
+
+Der ALL-WA0100N (RTL8188EU) ist ein WLAN USB-Adapter, der auf dem 802.11n-Standard basiert und eine maximale Datenübertragungsrate von 150Mbps unterstützt. Es nutzt den Realtek RTL8188EU Chip und unterstützt sowohl 2.4GHz als auch 5GHz Frequenzbänder. Es unterstützt auch die neuesten Sicherheitsstandards wie WPA, WPA2 und WEP, um Ihre Verbindung zu schützen. Der Adapter hat einen kleinen und leichten Formfaktor, was es einfach zu transportieren und zu verwenden macht. Es ist kompatibel mit Windows, MacOS und Linux und kann einfach an einen USB-Anschluss angeschlossen werden. Allerdings ist es nicht so leistungsfähig wie die neuesten WLAN-Adapter und hat auch eine geringere Reichweite und Geschwindigkeit.

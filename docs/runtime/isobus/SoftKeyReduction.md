@@ -33,6 +33,10 @@ Bei einer Reduktion von 12 auf 10 Softkeys würde man das Paar 5/11 entfernen, w
 
 Bei einer weiteren Reduktion von 10 auf 8 Softkeys würde man das Paar 4/10 entfernen, wobei die Softkeys 0 bis 3 und 6 bis 9 verbleiben.
 
+![](https://user-images.githubusercontent.com/69573151/213755659-3d57694f-413e-48df-a253-a3a3a89c928e.png)
+
 Bei einer weiteren Reduktion von 8 auf 6 Softkeys würde man das Paar 3/9 entfernen, wobei die Softkeys 0 bis 2 und 6 bis 8 verbleiben.
+
+![](https://user-images.githubusercontent.com/69573151/213755944-66ff8a24-ba9f-4b98-99cd-f683ee9c8265.png)
 
 Diese Strategie ermöglicht es, die wichtigsten Funktionen beizubehalten, während die Anzahl der Softkeys reduziert wird, und sicherzustellen, dass die Funktionen auf dem Display in einer logischen und einfach zu verwendenden Anordnung angezeigt werden.

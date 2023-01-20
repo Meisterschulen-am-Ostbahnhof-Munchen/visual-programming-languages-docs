@@ -29,6 +29,8 @@ Eine mögliche Strategie für die Softkey-Reduktion könnte sein, die Softkeys p
 
 Bei einer Reduktion von 12 auf 10 Softkeys würde man das Paar 5/11 entfernen, wobei die Softkeys 0 bis 4 und 6 bis 10 verbleiben.
 
+![](https://user-images.githubusercontent.com/69573151/213754278-dc004bc9-1497-4ae4-ad96-d27389a3194f.png)
+
 Bei einer weiteren Reduktion von 10 auf 8 Softkeys würde man das Paar 4/10 entfernen, wobei die Softkeys 0 bis 3 und 6 bis 9 verbleiben.
 
 Bei einer weiteren Reduktion von 8 auf 6 Softkeys würde man das Paar 3/9 entfernen, wobei die Softkeys 0 bis 2 und 6 bis 8 verbleiben.

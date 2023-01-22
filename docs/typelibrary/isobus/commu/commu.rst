@@ -6,5 +6,5 @@ commu
 
 .. toctree::
 
-
+   Infos
 

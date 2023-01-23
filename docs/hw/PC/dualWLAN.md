@@ -86,4 +86,7 @@ Der ALL-WA0150N (MTK7601) ist ein WLAN USB-Adapter, der auf dem 802.11n-Standard
 
 ### ALL-WA0100N (RTL8188EU)
 
+![IMG20230123120013](https://user-images.githubusercontent.com/69573151/214024567-eb0448c0-28cd-49c9-b5d1-51f2630cc45f.jpg)
+
+
 Der ALL-WA0100N (RTL8188EU) ist ein WLAN USB-Adapter, der auf dem 802.11n-Standard basiert und eine maximale Datenübertragungsrate von 150Mbps unterstützt. Es nutzt den Realtek RTL8188EU Chip und unterstützt sowohl 2.4GHz als auch 5GHz Frequenzbänder. Es unterstützt auch die neuesten Sicherheitsstandards wie WPA, WPA2 und WEP, um Ihre Verbindung zu schützen. Der Adapter hat einen kleinen und leichten Formfaktor, was es einfach zu transportieren und zu verwenden macht. Es ist kompatibel mit Windows, MacOS und Linux und kann einfach an einen USB-Anschluss angeschlossen werden. Allerdings ist es nicht so leistungsfähig wie die neuesten WLAN-Adapter und hat auch eine geringere Reichweite und Geschwindigkeit.

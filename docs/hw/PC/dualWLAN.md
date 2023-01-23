@@ -35,6 +35,8 @@ Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS get
 
 ---
 
+### Tabelle 
+
 *   läuft unter Windows 10 ohne Treiberinstallation
 *   läuft unter Ubuntu 22.04 LTS ohne Treiberinstallation
 

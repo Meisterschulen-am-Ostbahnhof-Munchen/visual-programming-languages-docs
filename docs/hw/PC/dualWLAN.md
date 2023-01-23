@@ -38,16 +38,16 @@ Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS get
 *   läuft unter Windows 10 ohne Treiberinstallation
 *   läuft unter Ubuntu 22.04 LTS ohne Treiberinstallation
 
-| Typ | Link | Windows 10 | Ubuntu 22.04 LTS |
-| --- | --- | --- | --- |
-| Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz | [link](https://www.amazon.de/gp/product/B004CJ7JC2) | nicht getestet | nicht getestet |
-| Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2 | [link](https://amzn.eu/d/5MxkOMx) | geht | geht |
-| Edimax EW-7811UN Super Mini WLAN USB-Stick (150MBit), Version 1 | [link](https://www.amazon.de/gp/product/B003MTTJOY) | geht | geht |
-| Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick | [link](https://amzn.eu/d/hnTHa3d) | geht | nicht funktional |
-| ALL-WA1200AC | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/261762/allnet-all-wa1200ac/1200mbit-wireless-ac-usb-3.0-dual-band-adapter) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/1513/allnet-wireless-ac-1200mbit-usb-3.0-wlan-stick-dongle-all-wa1200ac) | geht | geht |
-| ALL-WA0300AC | [link](https://shop.allnet.de/detail/index/sarticle/336852) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/72531/allnet-wireless-ac-usb-wlan-stick-dongle-all-wa0300ac) | geht | nicht funktional |
-| ALL-WA0150N (MTK7601) | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-adapter-karten/253781/allnet-all0235nano/wireless-n-150mbit-usb-stick) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-adapter-karten/1510/allnet-all-wa0150n/all0235nano/wireless-n-150mbit-usb-stick) | geht | geht |
-| ALL-WA0100N (RTL8188EU) | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/267408/allnet-all-wa0100n/150mbit-wireless-nano-usb-2.0-nano-adapter-rtl8188eu-chipset-ideal-fuer-bananapi/raspberry-pi/odroid-etc.) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/1509/allnet-all-wa0100n/150mbit-wireless-nano-usb-2.0-nano-adapter-rtl8188eu-chipset-ideal-fuer-banana) | geht | geht |
+| Typ | Link | Windows 10 | Ubuntu 22.04 LTS | CCI OS 2.0.3 |
+| --- | --- | --- | --- | --- |
+| Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz | [link](https://www.amazon.de/gp/product/B004CJ7JC2) | nicht getestet | nicht getestet | \- |
+| Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2 | [link](https://amzn.eu/d/5MxkOMx) | geht | geht | \- |
+| Edimax EW-7811UN Super Mini WLAN USB-Stick (150MBit), Version 1 | [link](https://www.amazon.de/gp/product/B003MTTJOY) | geht | geht | geht |
+| Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick | [link](https://amzn.eu/d/hnTHa3d) | geht | nicht funktional | \- |
+| ALL-WA1200AC | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/261762/allnet-all-wa1200ac/1200mbit-wireless-ac-usb-3.0-dual-band-adapter) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/1513/allnet-wireless-ac-1200mbit-usb-3.0-wlan-stick-dongle-all-wa1200ac) | geht | geht | \- |
+| ALL-WA0300AC | [link](https://shop.allnet.de/detail/index/sarticle/336852) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/72531/allnet-wireless-ac-usb-wlan-stick-dongle-all-wa0300ac) | geht | nicht funktional | \- |
+| ALL-WA0150N (MTK7601) | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-adapter-karten/253781/allnet-all0235nano/wireless-n-150mbit-usb-stick) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-adapter-karten/1510/allnet-all-wa0150n/all0235nano/wireless-n-150mbit-usb-stick) | geht | geht | \- |
+| ALL-WA0100N (RTL8188EU) | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/267408/allnet-all-wa0100n/150mbit-wireless-nano-usb-2.0-nano-adapter-rtl8188eu-chipset-ideal-fuer-bananapi/raspberry-pi/odroid-etc.) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/1509/allnet-all-wa0100n/150mbit-wireless-nano-usb-2.0-nano-adapter-rtl8188eu-chipset-ideal-fuer-banana) | geht | geht | \- |
 
 ## Beschreibung der Verschiedenen Adapter:
 

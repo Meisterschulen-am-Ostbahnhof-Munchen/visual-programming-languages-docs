@@ -61,7 +61,7 @@ Contents
    hw/hw
    runtime/runtime
    Installation-4diac
-   DasErsteProjekt
+   DasErsteProjekt/DasErsteProjekt
    Interface/Interface
    Übungsaufgaben
    4diac_Update

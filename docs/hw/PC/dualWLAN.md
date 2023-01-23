@@ -58,13 +58,21 @@ Der Hama N150 Nano-WLAN-USB-Stick ist ein WLAN-Adapter, der auf dem 802.11n-Stan
 
 ### Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2
 
+![IMG20230123115616](https://user-images.githubusercontent.com/69573151/214024898-df5bb17e-1444-462f-a1c0-7433f05a2cd4.jpg)
+
+
+
 Der Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter ist ein WLAN-Adapter, der auf dem 802.11n-Standard basiert und eine maximale Datenübertragungsrate von 150Mbps unterstützt. Er nutzt einen 2,4GHz-Funk und unterstützt nur das 2.4GHz Frequenzband. Es unterstützt auch die neuesten Sicherheitsstandards wie WPA, WPA2 und WEP, um Ihre Verbindung zu schützen. Der Adapter hat einen sehr kleinen und leichten Formfaktor, was es einfach zu transportieren und zu verwenden macht. Es ist kompatibel mit Windows, MacOS und Linux und kann einfach an einen USB-Anschluss angeschlossen werden. Es ist die Version 2 des Edimax EW-7811Un nano Adapter, und kann sich durch seine kompakte Größe und gute Leistung auszeichnen.
 
 ### Edimax EW-7811UN Super Mini WLAN USB-Stick (150MBit), Version 1
 
+
 Der Edimax EW-7811UN Super Mini WLAN USB-Stick ist ein kleiner und leichter WLAN-Adapter, der an den USB-Anschluss eines Computers angeschlossen werden kann. Mit einer Datenübertragungsrate von 150MBit/s ist er in der Lage, eine schnelle und stabile Verbindung zu einem WLAN-Netzwerk herzustellen. Dieser USB-Stick ist in der Version 1 erhältlich und unterstützt die WLAN-Standards 802.11b/g/n. Er ist einfach zu installieren und zu verwenden und eignet sich perfekt für den Einsatz zu Hause oder im Büro.
 
 ### Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick
+
+![IMG20230123115748](https://user-images.githubusercontent.com/69573151/214024848-cc44983d-076c-4ea8-8d9a-a5e207298d80.jpg)
+
 
 Der Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick ist ein WLAN-Adapter, der an den USB-Anschluss eines Computers angeschlossen werden kann. Mit einer Datenübertragungsrate von 650Mbit/s bietet er eine schnelle und stabile Verbindung zu WLAN-Netzwerken. Er unterstützt die WLAN-Standards 802.11ac und ist damit in der Lage, hohe Datenraten und eine lange Reichweite zu bieten. Der Stick ist klein und leicht und einfach zu installieren und zu verwenden. Er eignet sich perfekt für den Einsatz zu Hause, im Büro oder unterwegs. Zusätzlich bietet er eine starke Signalstärke und eine gute Abdeckung, was ihn zu einer guten Wahl für die Nutzung von Online-Spielen, Video-Streaming oder anderen Anwendungen mit hohem Datenverbrauch macht.
 
@@ -72,15 +80,26 @@ Der Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick ist ein WLAN-Adapter, der
 
 ### ALL-WA1200AC
 
+![IMG20230123115856](https://user-images.githubusercontent.com/69573151/214024786-c8cccdff-1ce6-4757-8afe-759f69e19d85.jpg)
+
+![IMG20230123115850](https://user-images.githubusercontent.com/69573151/214024792-7d552687-febd-461a-9e5f-f5d07187e42a.jpg)
+
+
 Der ALL-WA1200AC ist ein WLAN USB-Adapter, der auf dem neuesten Wireless-AC-Standard basiert. Er unterstützt die neuesten WLAN-Technologien, wie z.B. MU-MIMO und Beamforming, um eine höhere Geschwindigkeit und eine größere Reichweite zu erreichen. Mit einer Datenübertragungsrate von bis zu 1200Mbps, ist der ALL-WA1200AC in der Lage, hochauflösende Videos und Daten in Echtzeit zu übertragen. Es unterstützt auch Dual-Band-Funktionen, was bedeutet das es sowohl 2,4Ghz als auch 5Ghz Frequenzen unterstützt. Dies ermöglicht es dem Adapter, Interferenzen zu vermeiden und eine höhere Geschwindigkeit und Zuverlässigkeit zu erreichen. Es hat einen kleinen und leichten Formfaktor, was es einfach zu transportieren und zu verwenden macht.
 
 ### ALL-WA0300AC
+
+![IMG20230123115918](https://user-images.githubusercontent.com/69573151/214024735-63292f05-4782-4d63-8fb5-edaad25e54b4.jpg)
+
 
 Der ALL-WA0300AC ist ein WLAN USB-Adapter, der auf dem Wireless-AC-Standard basiert und eine maximale Datenübertragungsrate von 300Mbps unterstützt. Es unterstützt sowohl 2.4GHz als auch 5GHz Frequenzbänder und hat eine erweiterte Funktionen wie MU-MIMO und Beamforming, die es ermöglichen eine höhere Geschwindigkeit und eine größere Reichweite zu erreichen. Dieser Adapter unterstützt auch die neuesten Sicherheitsstandards wie WPA3, WPA2, WPA und WEP, um Ihre Verbindung zu schützen. Es hat einen kleinen und leichten Formfaktor, was es einfach zu transportieren und zu verwenden macht. Es ist kompatibel mit Windows, MacOS und Linux und kann einfach an einen USB-Anschluss angeschlossen werden.
 
 Der ALL-WA0300AC ist ein drahtloser USB-WLAN-Stick, der unter Linux (Ubuntu 22.04 LTS) nicht ohne Treiberinstallation funktioniert. Das bedeutet, dass man zusätzliche Software oder Treiber installieren muss, damit der Stick auf dem System erkannt und verwendet werden kann. Dies kann entweder durch die Verwendung von proprietären Treibern oder durch die Verwendung von Open-Source-Treibern erfolgen. Es ist wichtig, dass man die richtigen Treiber für das betreffende System und die verwendete Hardware auswählt, um Probleme zu vermeiden und eine optimale Leistung zu erzielen. Es ist auch ratsam, die Anweisungen des Herstellers oder die Dokumentation des Produkts zu lesen, bevor man die Treiber installiert, um sicherzustellen, dass man die richtigen Schritte ausführt. Der ALL-WA0300AC unterstützt Dual-Band-WLAN (2,4 und 5GHz) und bietet eine hohe Datenübertragungsrate von bis zu 300Mbps. Es ist kompatibel mit den meisten WLAN-Routern und bietet eine starke Signalstärke und eine gute Abdeckung.
 
 ### ALL-WA0150N (MTK7601)
+
+![IMG20230123115948](https://user-images.githubusercontent.com/69573151/214024649-f7015bf1-1218-4b2a-9c84-e6a19243659a.jpg)
+
 
 Der ALL-WA0150N (MTK7601) ist ein WLAN USB-Adapter, der auf dem 802.11n-Standard basiert und eine maximale Datenübertragungsrate von 150Mbps unterstützt. Er nutzt den Mediatek MTK7601 Chip und unterstützt nur das 2.4GHz Frequenzband. Es unterstützt auch die neuesten Sicherheitsstandards wie WPA, WPA2 und WEP, um Ihre Verbindung zu schützen. Der Adapter hat einen kleinen und leichten Formfaktor, was es einfach zu transportieren und zu verwenden macht. Es ist kompatibel mit Windows, MacOS und Linux und kann einfach an einen USB-Anschluss angeschlossen werden. Allerdings ist es nicht so leistungsfähig wie die neuesten WLAN-Adapter und hat auch eine geringere Reichweite und Geschwindigkeit.
 

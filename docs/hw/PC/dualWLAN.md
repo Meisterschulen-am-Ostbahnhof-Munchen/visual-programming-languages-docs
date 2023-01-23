@@ -40,7 +40,7 @@ Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS get
 
 | Typ | Link | Windows 10 | Ubuntu 22.04 LTS | CCI OS 2.0.3 |
 | --- | --- | --- | --- | --- |
-| Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz | [link](https://www.amazon.de/gp/product/B004CJ7JC2) | nicht getestet | nicht getestet | \- |
+| Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz | [link](https://www.amazon.de/gp/product/B004CJ7JC2) | nicht getestet | nicht getestet | nicht getestet |
 | Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2 | [link](https://amzn.eu/d/5MxkOMx) | geht | geht | nicht funktional |
 | Edimax EW-7811UN Super Mini WLAN USB-Stick (150MBit), Version 1 | [link](https://www.amazon.de/gp/product/B003MTTJOY) | geht | geht | geht |
 | Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick | [link](https://amzn.eu/d/hnTHa3d) | geht | nicht funktional | nicht funktional |

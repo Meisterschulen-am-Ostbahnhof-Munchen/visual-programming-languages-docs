@@ -1,5 +1,6 @@
 ### SERVER_1_2
 
+![SERVER_1_2](https://user-images.githubusercontent.com/116869307/214154053-77111ccd-05d3-4ace-ad13-52629b7904d7.png)
 
 
 

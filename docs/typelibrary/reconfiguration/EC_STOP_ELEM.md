@@ -1,6 +1,7 @@
 ### EC_STOP_ELEM
 
 
+![EC_STOP_ELEM](https://user-images.githubusercontent.com/116869307/214154650-cf730975-2179-4eb9-8312-7affc7c95a31.png)
 
 
 

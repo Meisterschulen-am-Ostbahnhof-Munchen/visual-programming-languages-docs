@@ -11,6 +11,7 @@
 
 
 
+![E_TRAIN](https://user-images.githubusercontent.com/116869307/214142742-8ce9523e-eb2b-416c-afe8-109fb601dd20.png)
 
 
 

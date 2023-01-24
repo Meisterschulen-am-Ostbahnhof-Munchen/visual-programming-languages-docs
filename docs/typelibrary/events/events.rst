@@ -16,7 +16,6 @@ events
    E_DELAY
    E_DEMUX
    E_D_FF
-   E_FWD
    E_F_TRIG
    E_MERGE
    E_N_TABLE

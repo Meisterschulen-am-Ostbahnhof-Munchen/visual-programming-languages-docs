@@ -1,6 +1,4 @@
-# Das Erste Projekt
-
-[Neuster Stand von 4diac, LOGIBUS, Hutschinenmoped.](https://www.youtube.com/watch?v=vLaqaBcTHVQ)
+# 4Diac neues Projekt anlegen
 
 
 **Grundverständnis von 4Diac**
@@ -14,7 +12,7 @@
 **Neues Projekt starten bzw. anlegen**
 
 1.   4diac-ide (Desktopverknüpfung) starten. -> Fenster mit Workspace öffnet.
-2.  Workspace auswählen oder neu erstellen. (Jeder Workspace-namen kann nur 1x verwendet werden, notfalls Benennung mit Zahl 1... ergänzen)
+2.   Workspace auswählen oder neu erstellen. (Jeder Workspace-namen kann nur 1x verwendet werden, notfalls Benennung mit Zahl 1... ergänzen)
 
 ![](https://user-images.githubusercontent.com/113907476/212979811-deadc740-e1f7-4815-a421-7d4b1edd067f.png)
 

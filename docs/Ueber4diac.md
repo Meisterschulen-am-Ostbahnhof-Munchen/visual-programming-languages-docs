@@ -1,6 +1,6 @@
 # Über 4diac
 
-[Literatur.md/sonstiges-englisch](Literatur.md/sonstiges-englisch)
+[Literatur.md#sonstiges-englisch](Literatur.md#sonstiges-englisch)
 
 [https://www.eclipse.org/4diac/](https://www.eclipse.org/4diac/)
 

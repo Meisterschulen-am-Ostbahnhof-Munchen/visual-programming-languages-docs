@@ -29,6 +29,35 @@ Also, worauf warten Sie noch? Beginnen Sie jetzt mit der visuellen Programmierun
 
 ## IEC 61499
 
+### Gedicht im Stil Göthes
+
+Die IEC 61499,
+ein System moderner Prägung.
+Wie ein Uhrwerk, stets in Line,
+gestaltet es die Automatisierung.
+
+In Schichten aufgebaut,
+wie ein Turm aus Bauklotzsteinen.
+Jeder Baustein gut durchdacht,
+um Funktionen zu vereinen.
+
+Die Programmierung wird leicht,
+als wäre es ein Kinderspiel.
+Einheitlichkeit im ganzen Bereich,
+doch ist jedes System individuell.
+
+Wie ein Gedanke, der durch den Kopf geht,
+so fließt das Programm durch die Schichten.
+Dynamisch, flexibel, stets bereit,
+die Systeme zu steuern und zu richten.
+
+Die IEC 61499,
+ein Meisterwerk moderner Technik.
+Wie ein Dichter, der mit Worten spricht,
+so steuert es die Anlagen geschickt.
+
+### E
+
 Die IEC 61499 ist eine internationale Norm für die Echtzeit-Verarbeitung von Steuerungssystemen. Sie definiert eine Architektur und eine Methode zur Modellierung von Steuerungssystemen und bietet damit eine gemeinsame Sprache für die Kommunikation zwischen verschiedenen Systemen. Die IEC 61499 bietet eine flexible Plattform für die Entwicklung von Steuerungssystemen und ist in vielen Industrien weit verbreitet.
 
 ## Eclipse 4 DIAC

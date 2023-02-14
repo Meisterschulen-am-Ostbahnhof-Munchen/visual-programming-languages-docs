@@ -1,5 +1,29 @@
 # Über 4diac
 
+## Gedicht über 4diac im Stile Göthes
+
+Im 4diac fließen Ströme von Code,
+es lebt und pulsiert in seiner eig'nen Ode.
+Es tanzt im Rhythmus der Bits und Bytes,
+verschmilzt Elektronik und Automatisierung in eine Einheit.
+
+In seinen Tiefen, wie ein Ozean aus Daten,
+fließt das Leben von Prozessen und Maschinenraten.
+Es webt ein Netz von Sensor zu Aktor,
+schafft Verbindungen von der Fernsteuerung bis zur Leitwarte.
+
+Das System 4diac ist der Taktgeber,
+lenkt die Schritte der Robotik und steuert die Hebel.
+Es ist das Herz, das schlägt im Takt,
+und alle Maschinen in harmonischem Gleichklang bringt.
+
+O Göthe, wärst du nur noch hier,
+du sähest das 4diac in all seiner Pracht und Zier.
+Doch seine Schönheit ist für uns alle sichtbar,
+wir staunen und bewundern dieses technische Wunderbar.
+
+## xx
+
 [Literatur.md#sonstiges-englisch](Literatur.md#sonstiges-englisch)
 
 [https://www.eclipse.org/4diac/](https://www.eclipse.org/4diac/)

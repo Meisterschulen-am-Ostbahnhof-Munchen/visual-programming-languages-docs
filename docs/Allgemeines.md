@@ -49,8 +49,3 @@ Siehe auch: IEC 61499, Table E.1
 | DWORD | 4 | 32 Bit | 0 | 4.294.967.295 |
 | LWORD | 8 | 64 Bit | 0 | 18.446.744.073.709.551.615 |
 
-in 4diac ist der 64bit Typ optional, und im Moment abgeschaltet\*.
-
-\*TODO bin mir dessen nicht ganz sicher. nochmal prüfen. 
-
-\-DFORTE\_USE\_64BIT\_DATATYPES

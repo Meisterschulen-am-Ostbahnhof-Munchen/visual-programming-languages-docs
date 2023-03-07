@@ -1,5 +1,6 @@
 ---
 myst:
+  enable_extensions: ["colon_fence"]
   html_meta:
     "google-site-verification": "TyuFoyllrkvesmnVr-a6dR3czc5lWyl5tkGUnzqCehY"
     "description lang=en": "metadata description"
@@ -49,9 +50,11 @@ hier lang:
 This project is under active development.
 :::
 
-### Contents
+## Contents
 
 ```{toctree}
+:caption: 'Contents:'
+:maxdepth: 7
 :numbered: true
 
 Home <self>

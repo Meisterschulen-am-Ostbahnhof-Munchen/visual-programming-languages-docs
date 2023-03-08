@@ -1,6 +1,6 @@
-# visual-programming-languages-docs
+**visual-programming-languages-docs**
 
-### Need help or have a question? Join the chat at [Gitter](https://gitter.im/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs) or [open a new Discussion](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/discussions)
+**Need help or have a question? Join the chat at [Gitter](https://gitter.im/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs) or [open a new Discussion](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/discussions)**
 
 <https://visual-programming-languages-docs.readthedocs.io/de/latest/>
 

@@ -17,4 +17,4 @@ iso\_s16
 *   [E\_NOACT](c/IsoCommonDef.md#c.E_NOACT) (-8 ) - Command not possible in current state
 *   [E\_NO\_INSTANCE](c/IsoCommonDef.md#c.E_NO_INSTANCE) (-21) - No VT client available
 
-Related to: [IsoVtcCmd\_ActiveMask](c/IsoVtcApi#IsoVtcCmd_ActiveMask)
+Related to: [IsoVtcCmd\_ActiveMask](c/IsoVtcApi.md#c.IsoVtcCmd_ActiveMask)

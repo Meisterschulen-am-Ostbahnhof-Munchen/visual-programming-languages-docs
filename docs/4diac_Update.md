@@ -51,6 +51,7 @@ Eclipse 4diac ist eine open-source Plattform für die Entwicklung von Industrie 
 
 Ein Eclipse 4diac Milestone Build ist somit eine Zwischenversion der Eclipse 4diac-Plattform, die verschiedene neue Funktionen, Verbesserungen und Fehlerkorrekturen gegenüber der vorherigen stabilen Version enthält, aber auch noch nicht vollständig getestet wurde und daher möglicherweise noch einige Fehler enthält. Diese Versionen werden normalerweise an Entwickler und interessierte Anwender verteilt, um Feedback zu sammeln und bei der weiteren Entwicklung der Plattform zu unterstützen.
 
+Eclipse 4diac Milestone
 [https://download.eclipse.org/4diac/updates/milestone/](https://download.eclipse.org/4diac/updates/milestone/)
 
 
@@ -64,4 +65,5 @@ Ich empfehle folgende Vorgehensweise für das Nightly:
 2.  Update auf RC
 3.  jetzt erst das Nightly eintragen.
 
+Eclipse 4diac Nightly
 [https://download.eclipse.org/4diac/updates/nightly/](https://download.eclipse.org/4diac/updates/nightly/)

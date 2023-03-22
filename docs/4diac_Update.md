@@ -44,14 +44,22 @@ Es ist jedoch zu beachten, dass Release-Kandidat-Updates möglicherweise nicht s
 Eclipse 4diac Release Candidate  
 [https://download.eclipse.org/4diac/updates/rc/](https://download.eclipse.org/4diac/updates/rc/)
 
+
+### Milestone
+
+
+
+[https://download.eclipse.org/4diac/updates/milestone/](https://download.eclipse.org/4diac/updates/milestone/)
+
+
 ### Nightly Build
 
 Nightly Builds sind tägliche automatisch erstellte Versionen einer Software, die die neuesten Änderungen und Entwicklungen enthalten. Diese Builds werden häufig von Entwicklern genutzt, um die neuesten Funktionen zu testen und Fehler zu finden. Nightly Build Update URLs für 4diac sind Webadressen, die auf die neuesten täglich erstellten Versionen der 4diac-Software verweisen. Diese URLs werden verwendet, um Benutzern die Möglichkeit zu geben, die neuesten Entwicklungen von 4diac zu testen und Feedback zu geben. Nightly Builds sind jedoch nicht als stabile Versionen gedacht und sollten daher nicht in produktiven Umgebungen verwendet werden. Die Nightly Build Update-URL für 4diac ist nicht immer offen zugänglich.
 
-Ich empfehle folgende Vorgehensweise für das Nightly: 
+Ich empfehle folgende Vorgehensweise für das Nightly:
 
 1.  [https://www.eclipse.org/4diac/en_dow.php](https://www.eclipse.org/4diac/en_dow.php)
 2.  Update auf RC
-3.  jetzt erst das Nightly eintragen. 
+3.  jetzt erst das Nightly eintragen.
 
 [https://download.eclipse.org/4diac/updates/nightly/](https://download.eclipse.org/4diac/updates/nightly/)

@@ -47,7 +47,9 @@ Eclipse 4diac Release Candidate
 
 ### Milestone
 
+Eclipse 4diac ist eine open-source Plattform für die Entwicklung von Industrie 4.0 Anwendungen, die auf der Eclipse-Plattform aufbaut. Ein Milestone Build ist eine Zwischenversion, die während des Entwicklungsprozesses erstellt wird, um einen bestimmten Meilenstein oder einen bestimmten Entwicklungsfortschritt zu markieren.
 
+Ein Eclipse 4diac Milestone Build ist somit eine Zwischenversion der Eclipse 4diac-Plattform, die verschiedene neue Funktionen, Verbesserungen und Fehlerkorrekturen gegenüber der vorherigen stabilen Version enthält, aber auch noch nicht vollständig getestet wurde und daher möglicherweise noch einige Fehler enthält. Diese Versionen werden normalerweise an Entwickler und interessierte Anwender verteilt, um Feedback zu sammeln und bei der weiteren Entwicklung der Plattform zu unterstützen.
 
 [https://download.eclipse.org/4diac/updates/milestone/](https://download.eclipse.org/4diac/updates/milestone/)
 

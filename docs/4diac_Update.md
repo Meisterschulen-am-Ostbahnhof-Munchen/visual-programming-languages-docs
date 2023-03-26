@@ -1,8 +1,20 @@
 # 4diac Update
 
-NEU: 
+NEU:
 
 seit einiger Zeit finden sich auf allen Update-Seiten unten auch Links mit denen ein komplettes "sauberes" Paket heruntergeladen werden kann. 
+
+| Betriebsystem               | rc                                                                                                            | milestone                                                                                                     | nightly                                                                                                                          |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| win32.win32.x86_64.zip      | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_2.0.1-win32.win32.x86_64.zip)                  | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_2.0.1-win32.win32.x86_64.zip)           | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_2.0.1-win32.win32.x86_64.zip)                                |
+| linux.gtk.x86_64.tar.gz     | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_2.0.1-linux.gtk.x86_64.tar.gz)                 | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_2.0.1-linux.gtk.x86_64.tar.gz)          | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_2.0.1-linux.gtk.x86_64.tar.gz)                               |
+| macosx.cocoa.aarch64.dmg    | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_2.0.1-macosx.cocoa.aarch64.dmg)                | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_2.0.1-macosx.cocoa.aarch64.dmg)         | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_2.0.1-macosx.cocoa.aarch64.dmg)                              |
+| macosx.cocoa.aarch64.tar.gz | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_2.0.1-macosx.cocoa.aarch64.tar.gz)             | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_2.0.1-macosx.cocoa.aarch64.tar.gz)      | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_2.0.1-macosx.cocoa.aarch64.tar.gz)                           |
+| macosx.cocoa.x86_64.dmg     | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_2.0.1-macosx.cocoa.x86_64.dmg)                 | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_2.0.1-macosx.cocoa.x86_64.dmg)          | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_2.0.1-macosx.cocoa.x86_64.dmg)                               |
+| macosx.cocoa.x86_64.tar.gz  | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_2.0.1-macosx.cocoa.x86_64.tar.gz)              | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_2.0.1-macosx.cocoa.x86_64.tar.gz)       | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_2.0.1-macosx.cocoa.x86_64.tar.gz)                            |
+
+
+
 
 ## Update
 

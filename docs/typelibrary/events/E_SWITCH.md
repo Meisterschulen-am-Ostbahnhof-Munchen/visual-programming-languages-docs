@@ -8,4 +8,6 @@ Der Funktionsbaustein E\_SWITCH wird wie folgt verwendet: Wenn ein Kriterium erf
 
 ![image](https://user-images.githubusercontent.com/69573151/203071621-eb1065f1-d902-4120-95a3-0c50a7fcc66a.png)
 
+![](https://user-images.githubusercontent.com/113907466/227977666-83b58180-6774-414f-b6a2-3a73e43c385c.png)
+
 Siehe auch: [https://www.holobloc.com/doc/fb/rt/events/E_SWITCH.htm](https://www.holobloc.com/doc/fb/rt/events/E_SWITCH.htm)

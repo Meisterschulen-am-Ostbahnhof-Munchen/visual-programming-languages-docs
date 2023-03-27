@@ -56,7 +56,6 @@ This project is under active development.
 :caption: 'Contents:'
 :maxdepth: 7
 :numbered: true
-
 Home <self>
 Home
 Abgrenzung
@@ -64,16 +63,15 @@ Visuelle-Programmiersprachen
 Normen
 Allgemeines
 FunctionBlock
-Ueber4diac
 Literatur
 Hilfe
 hw/hw
+4diac/4diac
 runtime/runtime
-Installation-4diac
 DasErsteProjekt/DasErsteProjekt
 Interface/Interface
 Übungsaufgaben
-4diac_Update
+constants/constants
 typelibrary/typelibrary
 genindex
 search

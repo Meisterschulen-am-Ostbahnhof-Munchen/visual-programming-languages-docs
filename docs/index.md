@@ -1,5 +1,6 @@
 ---
 myst:
+  enable_extensions: ["colon_fence"]
   html_meta:
     "google-site-verification": "TyuFoyllrkvesmnVr-a6dR3czc5lWyl5tkGUnzqCehY"
     "description lang=en": "metadata description"
@@ -13,9 +14,9 @@ myst:
 ```{include} ../README.md
 ```
 
-# Welcome to visual-programming-languages  documentation!
+**Welcome to visual-programming-languages  documentation!**
 
-## Einleitung
+**Einleitung**
 
 Willkommen bei Visual Programming Languages Docs!
 
@@ -27,11 +28,11 @@ Auf unserer Website finden Sie auch Links zu hilfreichen Ressourcen und Tools, d
 
 Also, worauf warten Sie noch? Beginnen Sie jetzt mit der visuellen Programmierung und werden Sie Teil der wachsenden Gemeinschaft von Entwicklern, die sich für diese spannende Technologie interessieren. Besuchen Sie uns jetzt und starten Sie Ihre Reise in die Welt der visuellen Programmierung.
 
-## IEC 61499
+**IEC 61499**
 
 Die IEC 61499 ist eine internationale Norm für die Echtzeit-Verarbeitung von Steuerungssystemen. Sie definiert eine Architektur und eine Methode zur Modellierung von Steuerungssystemen und bietet damit eine gemeinsame Sprache für die Kommunikation zwischen verschiedenen Systemen. Die IEC 61499 bietet eine flexible Plattform für die Entwicklung von Steuerungssystemen und ist in vielen Industrien weit verbreitet.
 
-## Eclipse 4 DIAC
+**Eclipse 4 DIAC**
 
 Eclipse 4 DIAC (Distributed Industrial Automation and Control) ist eine Entwicklungsumgebung für die Erstellung von Anwendungen, die auf der IEC 61499 basieren. Es bietet viele nützliche Werkzeuge und Funktionen, um die Entwicklung von Steuerungssystemen zu vereinfachen und zu beschleunigen. Eclipse 4 DIAC ist eine kostenlose Open-Source-Anwendung und eine beliebte Wahl für viele Entwickler von Industriesteuerungssystemen.
 
@@ -49,29 +50,31 @@ hier lang:
 This project is under active development.
 :::
 
-### Contents
+**Contents**
 
 ```{toctree}
+:caption: 'Contents:'
+:maxdepth: 7
 :numbered: true
-
 Home <self>
 Home
 Abgrenzung
 Visuelle-Programmiersprachen
-Normen
+norms/norms
 Allgemeines
 FunctionBlock
-Ueber4diac
 Literatur
 Hilfe
 hw/hw
+4diac/4diac
 runtime/runtime
-Installation-4diac
 DasErsteProjekt/DasErsteProjekt
 Interface/Interface
 Übungsaufgaben
-4diac_Update
+constants/constants
 typelibrary/typelibrary
+genindex
+search
 ```
 
 # Indices and tables

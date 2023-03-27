@@ -1,4 +1,4 @@
-# Welcome to the visual-programming-languages wiki!
+**Welcome to the visual-programming-languages wiki!**
 
 Fragen/Anregungen:
 hier lang:

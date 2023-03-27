@@ -9,4 +9,18 @@ Rendezvous (AND) of two events
     *   EI2 second event to wait for 
     *   R reset the FB to inital state (i.e., wait again for both events)
 *   Output
-    *   EO triggered when both EI1 and EI2 occured at least once
+    *   EO triggered when both EI1 and EI2 occured at least Eingabe/Input:
+
+Eingang/Input
+
+\-EI1 erstes Ereignis, auf das gewartet werden soll
+
+\-EI2 zweites Ereignis, auf das gewartet werden soll
+
+\-R (wie ein reset-Knopf)  
+setzt den FB auf den Ausgangszustand zurück (d.h. wartet erneut auf beide Ereignisse)
+
+Ausgabe/Output:
+
+\-EO wird nur ausgelöst,  
+wenn sowohl EI1 als auch EI2 mindestens einmal aufgetreten sind!

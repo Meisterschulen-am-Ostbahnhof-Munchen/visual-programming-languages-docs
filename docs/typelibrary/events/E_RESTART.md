@@ -2,9 +2,9 @@
 
 Service Interface Function Block Type
 
-## **Bei Betätigung der Resettaste wird beim Hutschienenmopped** _**immer**_ **auf Cold geschaltet.** 
+**Bei Betätigung der Resettaste wird beim Hutschienenmopped** _**immer**_ **auf Cold geschaltet.**
 
-## **Dieses ist sehr oft mit INIT verbunden.** 
+**Dieses ist sehr oft mit INIT verbunden.**
 
 Beim Kaltstart (COLD) werden alle Daten die auf den Programmspeicher hinterlegt sind zurückgesetzt wie z.B. Zeiten, Zähler
 

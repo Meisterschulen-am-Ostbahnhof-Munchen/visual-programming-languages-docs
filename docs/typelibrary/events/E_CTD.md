@@ -10,3 +10,17 @@ Event-Driven Down Counter
 *   Output
     *   CDO Count Down Output Event 
     *   LDO Reset Output Event
+
+Input:
+
+CD:  Count Down Ereignis zum Abwärtszählen
+
+LD: Zählwert wird geladen
+
+Output:
+
+CDO: Countdown Ausgangsereignis
+
+LDO: Ausgansereignis zurücksetzen
+
+![](https://user-images.githubusercontent.com/113907474/227978396-fc4435d7-725a-4e9c-ba15-64cf12477f9f.png)

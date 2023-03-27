@@ -1,5 +1,9 @@
 ### E\_SR = (Holzspalter Schalter)
 
+:::{tip}
+In der IEC 61131-3 wird noch noch zwischen SR(vorrangiges Setzen) und RS(vorrangiges Rücksetzen) unterschieden, in der IEC 61499-1 nicht mehr. Das bedeutet RS und SR haben die gleiche Funktion nur die Anschlüsse Imput S und R sind vertauscht
+:::
+
 Event-driven bistable
 
 Der Funktionsblock E\_SR (Set-Reset) ist ein wichtiger Bestandteil der IEC 61499 Norm und wird häufig in Steuerungssystemen verwendet. Er dient dazu, eine bestimmte Aktion auszulösen, wenn eine bestimmte Bedingung erfüllt ist.

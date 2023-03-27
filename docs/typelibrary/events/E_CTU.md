@@ -13,3 +13,17 @@ Event driven up counter
     *   RO Reset output
     *   Q True if CV >= PV
     *   CV Counter Value
+
+Input:
+
+CU: Count up Ereignis zum Aufwärtszählen
+
+R: Zurücksetzen
+
+Output:
+
+CUO: Countup Ausgansereignis 
+
+R: Ausgang zurücksetzen
+
+![](https://user-images.githubusercontent.com/113907474/227977865-15a0089f-d648-4415-947b-bf80436d0094.png)

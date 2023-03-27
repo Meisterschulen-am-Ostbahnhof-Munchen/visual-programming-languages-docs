@@ -60,7 +60,7 @@ Home <self>
 Home
 Abgrenzung
 Visuelle-Programmiersprachen
-Normen
+norms/norms
 Allgemeines
 FunctionBlock
 Literatur

@@ -4,6 +4,8 @@ NEU:
 
 seit einiger Zeit finden sich auf allen Update-Seiten unten auch Links mit denen ein komplettes "sauberes" Paket heruntergeladen werden kann. 
 
+Die Links werden teils jede Nacht neu generiert, und sind auch manchmal nicht vorhanden ... das ist normal. 
+
 Direktlinks
 
 

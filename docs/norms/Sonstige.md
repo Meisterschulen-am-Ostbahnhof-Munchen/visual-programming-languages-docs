@@ -1,8 +1,6 @@
 # Weitere Normen
 
-
 ## IEC 61131-3
-
 
 ## ISOBUS
 
@@ -33,4 +31,19 @@
 ### ISO 11783-13
 
 ### ISO 11783-14
+
+## Symbole
+
+Abruf unter: [https://www.iso.org/obp](https://www.iso.org/obp)
+
+
+### ISO 7000
+
+ISO 7000 Graphical symbols for use on equipment
+
+ISO 7000 / IEC 60417 Graphical symbols for use on equipment
+
+
+
+
 

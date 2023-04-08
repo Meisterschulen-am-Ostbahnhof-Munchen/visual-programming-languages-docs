@@ -76,4 +76,4 @@ c_autodoc_roots = ["../tests/assets/c_source"]
 if "READTHEDOCS" in os.environ:
     from clang import cindex
 
-    cindex.Config.set_library_file("/usr/lib/x86_64-linux-gnu/libclang-14.so.1")
+    cindex.Config.set_library_file("/usr/lib/x86_64-linux-gnu/libclang-16.so.1")

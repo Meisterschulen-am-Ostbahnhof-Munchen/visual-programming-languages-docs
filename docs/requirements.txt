@@ -15,7 +15,7 @@ sphinxext.opengraph
 sphinx_pyscript
 sphinx_tippy
 sphinx-markdown-tables
-clang
+clang <= 14
 hawkmoth
 sphinxcontrib.autoprogram
 sphinx_c_autodoc

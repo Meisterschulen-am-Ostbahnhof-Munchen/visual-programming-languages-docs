@@ -63,7 +63,6 @@ Update URLs (Uniform Resource Locators) sind Webadressen, die auf einen bestimmt
 ### Release
 
 Eine Release Update URL (Uniform Resource Locator) ist eine Webadresse, die auf die neuesten Versionen einer Software oder Erweiterungen verweist, die als offizielle Veröffentlichungen (Releases) betrachtet werden. Im Falle von 4diac, stellt die Release Update URL die neueste stabile Version der 4diac-Software und Erweiterungen zur Verfügung, die von der 4diac-Entwicklergemeinschaft getestet und freigegeben wurden. Benutzer von 4diac können diese URL verwenden, um ihre Installationen von 4diac auf die neueste offizielle Version zu aktualisieren, indem sie die neuesten Updates herunterladen und installieren.  
-Die offizielle Release Update URL für 4diac ist [https://download.eclipse.org/4diac/updates/releases/](https://download.eclipse.org/4diac/updates/releases/)
 
 Eclipse 4diac Latest  
 [https://download.eclipse.org/4diac/updates/latest/](https://download.eclipse.org/4diac/updates/latest/)

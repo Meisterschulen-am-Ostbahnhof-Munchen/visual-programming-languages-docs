@@ -3,7 +3,7 @@
 finden Sie hier eine Legende: 
 https://eclipse.dev/4diac/en_news.php?s=09#en_news_20210621
 
-
+Hier die Icons nochmal wiedergegeben, damit Sie diese auch in der Volltextsuche finden.
 
 <p>This is the list of icons already redesigned.</p>
 <h3 id="function-blocks">Function Blocks</h3>

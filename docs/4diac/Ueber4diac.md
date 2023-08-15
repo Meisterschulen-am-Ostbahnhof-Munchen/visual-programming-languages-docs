@@ -1,4 +1,4 @@
-# Über 4diac
+# Über Eclipse 4diac™
 
 ## Gedicht über 4diac im Stile Göthes
 

@@ -106,6 +106,29 @@ genindex
 search
 ```
 
+
+
+# Links
+
+## logiBUS®
+
+<img src="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/.github/assets/69573151/126f9534-e2ad-426f-99f5-78863962ec2b" width="300">
+
+[https://www.logibus.tech/](https://www.logibus.tech/)
+
+## ISOmaX®
+
+<img src="https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/.github/assets/69573151/efdb81a4-7b43-4ae2-a730-8539e29bd821" width="300">
+
+
+[https://www.isomax.tech/](https://www.isomax.tech/)
+
+## 4diac
+
+<img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/img/poweredby4diac_large.svg" width="300">
+
+https://www.eclipse.org/4diac/index.php
+
 # Indices and tables
 
 - {ref}`genindex`

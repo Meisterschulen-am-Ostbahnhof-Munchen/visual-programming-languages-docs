@@ -1,4 +1,4 @@
-# 4diac Update
+# Eclipse 4diac™ Update
 
 NEU:
 

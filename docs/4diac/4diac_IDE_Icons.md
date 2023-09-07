@@ -8,7 +8,7 @@ Hier die Icons nochmal wiedergegeben, damit Sie diese auch in der Volltextsuche 
 <p>This is the list of icons already redesigned.</p>
 <h3 id="function-blocks">Function Blocks</h3>
 <ul>
-<li><img src="figs/icons/application.png" alt="Type Info"> Application</li>
+<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/application.png" alt="Type Info"> Application</li>
 <li><img src="figs/icons/basic_function_block.png" alt="Type Info"> Basic Function Block</li>
 <li><img src="figs/icons/composite_function_block.png" alt="Type Info"> Composite Function Block</li>
 <li><img src="figs/icons/service_interface_function_block.png" alt="Type Info"> Service Interface Function Block</li>

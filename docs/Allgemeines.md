@@ -22,6 +22,10 @@
 
 [https://help.codesys.com/webapp/_cds_datatype_integer;product=codesys;version=3.5.17.0](https://help.codesys.com/webapp/_cds_datatype_integer;product=codesys;version=3.5.17.0)
 
+[Datentypen](https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_reference_datatypes.html)
+
+
+
 ### Datentypen in der IEC 61499
 
 Siehe auch: IEC 61499, Table E.1

@@ -4,17 +4,17 @@
 
 [Natürliche Zahl – Wikipedia](https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl)
 
-[https://de.wikipedia.org/wiki/Ganze_Zahl](https://de.wikipedia.org/wiki/Ganze_Zahl)
+[Ganze Zahl – Wikipedia](https://de.wikipedia.org/wiki/Ganze_Zahl)
 
-[https://de.wikipedia.org/wiki/Rationale_Zahl](https://de.wikipedia.org/wiki/Rationale_Zahl)
+[Rationale Zahl – Wikipedia](https://de.wikipedia.org/wiki/Rationale_Zahl)
 
-[https://de.wikipedia.org/wiki/Reelle_Zahl](https://de.wikipedia.org/wiki/Reelle_Zahl)
+[Reelle Zahl – Wikipedia](https://de.wikipedia.org/wiki/Reelle_Zahl)
 
 ## Datentypen
 
-[https://de.wikipedia.org/wiki/Integer_(Datentyp)](https://de.wikipedia.org/wiki/Integer_(Datentyp))
+[Integer (Datentyp) – Wikipedia](https://de.wikipedia.org/wiki/Integer_(Datentyp))
 
-[https://de.wikipedia.org/wiki/Gleitkommazahl](https://de.wikipedia.org/wiki/Gleitkommazahl)
+[Gleitkommazahl – Wikipedia](https://de.wikipedia.org/wiki/Gleitkommazahl)
 
 ### Datentypen in der IEC 61131-3
 

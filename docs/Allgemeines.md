@@ -2,25 +2,29 @@
 
 ## Zahlen
 
-[https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl](https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl)
+[Natürliche Zahl – Wikipedia](https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl)
 
-[https://de.wikipedia.org/wiki/Ganze_Zahl](https://de.wikipedia.org/wiki/Ganze_Zahl)
+[Ganze Zahl – Wikipedia](https://de.wikipedia.org/wiki/Ganze_Zahl)
 
-[https://de.wikipedia.org/wiki/Rationale_Zahl](https://de.wikipedia.org/wiki/Rationale_Zahl)
+[Rationale Zahl – Wikipedia](https://de.wikipedia.org/wiki/Rationale_Zahl)
 
-[https://de.wikipedia.org/wiki/Reelle_Zahl](https://de.wikipedia.org/wiki/Reelle_Zahl)
+[Reelle Zahl – Wikipedia](https://de.wikipedia.org/wiki/Reelle_Zahl)
 
 ## Datentypen
 
-[https://de.wikipedia.org/wiki/Integer_(Datentyp)](https://de.wikipedia.org/wiki/Integer_(Datentyp))
+[Integer (Datentyp) – Wikipedia](https://de.wikipedia.org/wiki/Integer_(Datentyp))
 
-[https://de.wikipedia.org/wiki/Gleitkommazahl](https://de.wikipedia.org/wiki/Gleitkommazahl)
+[Gleitkommazahl – Wikipedia](https://de.wikipedia.org/wiki/Gleitkommazahl)
 
 ### Datentypen in der IEC 61131-3
 
-[https://help.codesys.com/webapp/_cds_struct_reference_datatypes;product=codesys;version=3.5.17.0](https://help.codesys.com/webapp/_cds_struct_reference_datatypes;product=codesys;version=3.5.17.0)
+[Data Types](https://help.codesys.com/webapp/_cds_struct_reference_datatypes;product=codesys;version=3.5.17.0)
 
 [https://help.codesys.com/webapp/_cds_datatype_integer;product=codesys;version=3.5.17.0](https://help.codesys.com/webapp/_cds_datatype_integer;product=codesys;version=3.5.17.0)
+
+[Datentypen](https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_reference_datatypes.html)
+
+
 
 ### Datentypen in der IEC 61499
 

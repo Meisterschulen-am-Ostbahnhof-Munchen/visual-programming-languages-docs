@@ -1,4 +1,4 @@
-**visual-programming-languages-docs**
+# Wiki 4: visual-programming-languages
 
 **Need help or have a question? Join the chat at [Gitter](https://gitter.im/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs) or [open a new Discussion](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/discussions)**
 
@@ -31,7 +31,7 @@ Wiki 2: [Wiki](https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/) ISO
 
 Wiki 3: [Wiki](https://docs.ms-muc-docs.de/projects/isobus-other-docs/) ISOBUS-other
 
-## Wiki 4
+## Wiki 4: visual-programming-languages
 
 Wiki 4: [Wiki](https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/) visual-programming-languages
 

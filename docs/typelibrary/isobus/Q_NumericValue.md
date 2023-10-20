@@ -49,7 +49,7 @@ Aufgabe dieses Bausteins ist es eine der folgenden Objekte die auf einem VT darg
 
 Querverweise: 
 
-[https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/de/latest/ID-07---Input-boolean---ISO-11783-6---B.8.2.html](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/de/latest/ID-07---Input-boolean---ISO-11783-6---B.8.2.html)
+[https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/de/latest/ID-07---Input-boolean---ISO-11783-6---B.8.2.html](https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/de/latest/ID-07---Input-boolean---ISO-11783-6---B.8.2.html)
 
 BEISPIEL
 

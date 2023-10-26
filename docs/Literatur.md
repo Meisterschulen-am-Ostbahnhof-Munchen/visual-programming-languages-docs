@@ -16,6 +16,24 @@ Valeriy Vyatkin: IEC 61499 Function Blocks für den Entwurf: Dritte Ausgabe
 
 [https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
 
+[https://www.fb61499.com/IEC61499German.html](https://www.fb61499.com/IEC61499German.html)
+
+Buch “IEC 61499 Function Blocks für den Entwurf von Eingebetteten und Verteilten Systemen” 
+
+ 
+
+Autor: Valeriy Vyatkin, Übersetzung: Ewald Matull
+
+ 
+
+ISBN: 978-0-876640-44-9, ISA-Verlag
+
+
+[Musterseiten Preview](https://www.fb61499.com/previews/Buch%20IEC61499%20Deutsche%20Ausgabe%20Preview.pdf)
+
+
+Direkt bestellen: [www.isa.org/IEC61499German](https://www.isa.org/IEC61499German)
+
 ---
 
 #### Prozess-Steuerungen: Projektierung und Inbetriebnahme mit dem Softwaretool SPaS

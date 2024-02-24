@@ -1,5 +1,8 @@
 # Wiki 4: visual-programming-languages
 
+![franz0748_a_new_logo_for_visual-programming-languages_--v_6_f8ce29a7-cd97-461c-8c60-3e9e01a29d58](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/assets/69573151/52317177-06fe-4607-80e7-fd75c07ad98d)
+
+
 **Need help or have a question? Join the chat at [Gitter](https://gitter.im/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs) or [open a new Discussion](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/discussions)**
 
 [https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/](https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/)

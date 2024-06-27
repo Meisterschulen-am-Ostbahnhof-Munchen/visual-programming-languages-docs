@@ -48,6 +48,8 @@ Siehe auch: IEC 61499, Table E.1
 | TIME | 8 | 64 Bit |   |   |
 | TIME\_OF\_DAY | 12 | 96 Bit | 1970-01-01-00:00:00.000 |   |
 | DATE\_AND\_TIME | 20 | 160 Bit | 1970-01-01-00:00:00.000 |   |
+| BOOL | 1/8 | 1 Bit | 0 = FALSE | 1= TRUE |
+| QUARTER | 1/4 | 2 Bit | 0 | 3 |
 | BYTE | 1 | 8 Bit | 0 | 255 |
 | WORD | 2 | 16 Bit | 0 | 65.535 |
 | DWORD | 4 | 32 Bit | 0 | 4.294.967.295 |

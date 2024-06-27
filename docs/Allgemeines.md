@@ -4,7 +4,7 @@
 
 &#8469; [Natürliche Zahl – Wikipedia](https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl)
 
-[Ganze Zahl – Wikipedia](https://de.wikipedia.org/wiki/Ganze_Zahl)
+&#8484; [Ganze Zahl – Wikipedia](https://de.wikipedia.org/wiki/Ganze_Zahl)
 
 [Rationale Zahl – Wikipedia](https://de.wikipedia.org/wiki/Rationale_Zahl)
 

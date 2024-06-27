@@ -12,6 +12,8 @@
 
 &#8477; [Reelle Zahl – Wikipedia](https://de.wikipedia.org/wiki/Reelle_Zahl)
 
+gibt viele weitere, siehe: [](https://www.matheretter.de/wiki/mathe-zeichen#zahlenmengen)
+
 ## Datentypen
 
 [Integer (Datentyp) – Wikipedia](https://de.wikipedia.org/wiki/Integer_(Datentyp))

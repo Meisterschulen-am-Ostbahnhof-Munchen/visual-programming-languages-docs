@@ -2,7 +2,7 @@
 
 ## Zahlen
 
-[Natürliche Zahl – Wikipedia](https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl)
+&#8469; [Natürliche Zahl – Wikipedia](https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl)
 
 [Ganze Zahl – Wikipedia](https://de.wikipedia.org/wiki/Ganze_Zahl)
 

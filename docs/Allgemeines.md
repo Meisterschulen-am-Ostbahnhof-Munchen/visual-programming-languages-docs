@@ -4,11 +4,13 @@
 
 &#8469; [Natürliche Zahl – Wikipedia](https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl)
 
+&#8469;₀ Natürliche Zahlen inkl. Null
+
 &#8484; [Ganze Zahl – Wikipedia](https://de.wikipedia.org/wiki/Ganze_Zahl)
 
-[Rationale Zahl – Wikipedia](https://de.wikipedia.org/wiki/Rationale_Zahl)
+&#8474; [Rationale Zahl – Wikipedia](https://de.wikipedia.org/wiki/Rationale_Zahl)
 
-[Reelle Zahl – Wikipedia](https://de.wikipedia.org/wiki/Reelle_Zahl)
+&#8477; [Reelle Zahl – Wikipedia](https://de.wikipedia.org/wiki/Reelle_Zahl)
 
 ## Datentypen
 

@@ -12,7 +12,7 @@
 
 &#8477; [Reelle Zahl – Wikipedia](https://de.wikipedia.org/wiki/Reelle_Zahl)
 
-gibt viele weitere, siehe: [](https://www.matheretter.de/wiki/mathe-zeichen#zahlenmengen)
+gibt viele weitere, siehe: [Zahlenmengen ](https://www.matheretter.de/wiki/mathe-zeichen#zahlenmengen)
 
 ## Datentypen
 

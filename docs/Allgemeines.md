@@ -1,5 +1,31 @@
 # Allgemeines
 
+## Namen
+
+Bitte Vermeiden: ä ü ö $ % & / 
+
+
+1. Namen dürfen maximal 31 Stellen lang sein. 
+2. Sie können aus den Buchstaben A-Z und a-z, den Ziffern 0-9 und dem Unterstrich bestehen.
+3. Die einzige Einschränkung besteht darin, dass am Anfang von Variablennamen keine Ziffern stehen dürfen; 
+4. Unterstriche am Anfang von Variablennamen sind zwar erlaubt, sollten aber vermieden werden, da diese üblicherweise für Bibliotheksfunktionen reserviert sind.
+
+
+### Beispiele: 
+
+#### Erlaubt: 
+
+`Maehwerk_links_15`
+
+#### Verboten: 
+
+`14_Klappung_Mähwerk`
+
+`Klappung Maehwerk`
+
+
+Quelle <https://www.grund-wissen.de/informatik/c/variablen-und-datentypen.html>
+
 ## Zahlen
 
 &#8469; [Natürliche Zahl – Wikipedia](https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl)

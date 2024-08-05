@@ -2,8 +2,8 @@
 
 | DATA MASK                                |         | SOFTKEY MASK & AUX                             |
 |------------------------------------------|---------|------------------------------------------------|
-|                                          |         | 0 -    0 - Centering - Working set object      |
-| 1000 - 1999 - Scaling - DataMask         |         |                                                |
+| x                                        |         | 0 -    0 - Centering - Working set object      |
+| 1000 - 1999 - Scaling - DataMask         |         | x                                              |
 | 2000 - 2999 - Scaling - AlarmMask        |         |                                                |
 | 3000 - 3499 - Scaling - Container        | &#8594; | 3500 - 3999 - Scaling - Container              |
 | 6000 - 6999 - Scaling - Button           | &#8594; | 5000 - 5999 - Centering – Softkeys             |

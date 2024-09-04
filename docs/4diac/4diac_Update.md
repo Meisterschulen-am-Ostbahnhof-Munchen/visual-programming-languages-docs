@@ -1,5 +1,16 @@
 # Eclipse 4diac™ Update
 
+
+Zuordnung GIT Branch zu Download: 
+
+develop -> nightly
+freeze -> milestone
+3.0.x -> RC
+release -> latest
+
+
+
+
 NEU:
 
 seit einiger Zeit finden sich auf allen Update-Seiten unten auch Links mit denen ein komplettes "sauberes" Paket heruntergeladen werden kann. 

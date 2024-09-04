@@ -3,13 +3,12 @@
 
 Zuordnung GIT Branch zu Download: 
 
-develop -> nightly
-
-freeze -> milestone
-
-3.0.x -> RC
-
-release -> latest
+| Git     | Link                                                            | Download  | Link                                                         |
+|---------|-----------------------------------------------------------------|-----------|--------------------------------------------------------------|
+| develop | [link](https://github.com/eclipse-4diac/4diac-ide/tree/develop) | nightly   | [link](https://download.eclipse.org/4diac/updates/nightly)   |
+| freeze  | [link](https://github.com/eclipse-4diac/4diac-ide/tree/freeze)  | milestone | [link](https://download.eclipse.org/4diac/updates/milestone) |
+| 3.0.x   | [link](https://github.com/eclipse-4diac/4diac-ide/tree/3.0.x)   | RC        | [link](https://download.eclipse.org/4diac/updates/rc)        |
+| release | [link](https://github.com/eclipse-4diac/4diac-ide/tree/release) | latest    | [link](https://download.eclipse.org/4diac/updates/latest)    |
 
 
 

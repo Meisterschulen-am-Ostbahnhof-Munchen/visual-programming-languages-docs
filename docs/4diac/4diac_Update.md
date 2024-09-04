@@ -4,8 +4,11 @@
 Zuordnung GIT Branch zu Download: 
 
 develop -> nightly
+
 freeze -> milestone
+
 3.0.x -> RC
+
 release -> latest
 
 

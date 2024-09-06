@@ -3,7 +3,7 @@
 
 Zuordnung GIT Branch zu Download: 
 
-| Git     | Link                                                            | Download  | Link                                                         |
+| Git     | Git Link                                                        | Download  | Download Link                                                |
 |---------|-----------------------------------------------------------------|-----------|--------------------------------------------------------------|
 | develop | [link](https://github.com/eclipse-4diac/4diac-ide/tree/develop) | nightly   | [link](https://download.eclipse.org/4diac/updates/nightly)   |
 | freeze  | [link](https://github.com/eclipse-4diac/4diac-ide/tree/freeze)  | milestone | [link](https://download.eclipse.org/4diac/updates/milestone) |

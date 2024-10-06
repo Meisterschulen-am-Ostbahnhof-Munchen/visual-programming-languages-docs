@@ -85,7 +85,7 @@ This project is under active development.
 :maxdepth: 7
 :numbered: true
 Home <self>
-Home
+Welcome
 Abgrenzung
 Visuelle-Programmiersprachen
 norms/norms

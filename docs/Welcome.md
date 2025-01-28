@@ -7,5 +7,5 @@ hier lang:
 
 [Discussion Forum](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/discussions)
 
-```{image} img/powerdby4diac_large_light.svg
-```
+![powerdby4diac_large_light](img/powerdby4diac_large_light.svg)
+

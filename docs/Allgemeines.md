@@ -60,10 +60,13 @@ gibt viele weitere, siehe: [Zahlenmengen ](https://www.matheretter.de/wiki/mathe
 
 Siehe auch: IEC 61499, Table E.1
 
-| Typ | BYTE Länge | Bit Länge | Wertebereich | Wertebereich |
+
+
+#### Datentypen zum Rechnen
+
+| Typ | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
 | --- | --- | --- | --- | --- |
-|   |   |   | min | max |
-| BOOL | 0 | 1 Bit | 0 = FALSE | 1= TRUE |
+| BOOL | 0 | 1 Bit | 0 = FALSE | 1 = TRUE |
 | SINT | 1 | 8 Bit | −128 | 127 |
 | INT | 2 | 16 Bit | −32.768 | 32.767 |
 | DINT | 4 | 32 Bit | −2.147.483.648 | 2.147.483.647 |
@@ -78,6 +81,12 @@ Siehe auch: IEC 61499, Table E.1
 | TIME | 8 | 64 Bit |   |   |
 | TIME\_OF\_DAY | 12 | 96 Bit | 1970-01-01-00:00:00.000 |   |
 | DATE\_AND\_TIME | 20 | 160 Bit | 1970-01-01-00:00:00.000 |   |
+
+
+#### Datentypen für I/O (Input / Output)
+
+| Typ | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
+| --- | --- | --- | --- | --- |
 | BOOL | 1/8 | 1 Bit | 0 = FALSE | 1= TRUE |
 | QUARTER [^1] | 1/4 | 2 Bit | 0 | 3 |
 | BYTE | 1 | 8 Bit | 0 | 255 |

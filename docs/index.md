@@ -64,7 +64,7 @@ Die IEC 61499 ist eine internationale Norm für die Echtzeit-Verarbeitung von St
 
 Eclipse 4 DIAC (Distributed Industrial Automation and Control) ist eine Entwicklungsumgebung für die Erstellung von Anwendungen, die auf der IEC 61499 basieren. Es bietet viele nützliche Werkzeuge und Funktionen, um die Entwicklung von Steuerungssystemen zu vereinfachen und zu beschleunigen. Eclipse 4 DIAC ist eine kostenlose Open-Source-Anwendung und eine beliebte Wahl für viele Entwickler von Industriesteuerungssystemen.
 
-```{image} img/powerdby4diac_large_light.svg
+```{image} img/powerdby4diac_large_light.png
 ```
 
 :::{note}

@@ -123,7 +123,7 @@ search
 
 ## Eclipse 4diac™
 
-<img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/img/poweredby4diac_large.svg" width="300">
+<img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/img/powerdby4diac_large_light.svg" width="300">
 
 [https://www.eclipse.org/4diac/index.php](https://www.eclipse.org/4diac/index.php)
 

@@ -1,4 +1,4 @@
-### E\_SR = (Holzspalter Schalter)
+# E\_SR = (Holzspalter Schalter)
 
 :::{tip}
 In der IEC 61131-3 wird noch noch zwischen SR(vorrangiges Setzen) und RS(vorrangiges Rücksetzen) unterschieden, in der IEC 61499-1 nicht mehr. Das bedeutet RS und SR haben die gleiche Funktion nur die Anschlüsse Imput S und R sind vertauscht
@@ -32,17 +32,17 @@ Siehe auch: \[https://www.holobloc.com/doc/fb/rt/events/E_SR.htm](https://www.ho
 
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 
-### Der Baustein E_SR in der IEC 61499: Ein Überblick
+## Der Baustein E_SR in der IEC 61499: Ein Überblick
 
-#### Einleitung
+### Einleitung
 
 Die IEC 61499 ist ein internationaler Standard, der die Modellierung von verteilten industriellen Steuerungssystemen ermöglicht. Ein zentrales Konzept in diesem Standard ist der Funktionsbaustein (FB), der als grundlegende Komponente für die Steuerungslogik dient. Der Baustein **E_SR** (Event-driven bistable) ist ein Beispiel für einen solchen Funktionsbaustein, der in der IEC 61499 verwendet wird, um ein einfaches bistabiles Verhalten zu modellieren. Dieser Aufsatz beschreibt die Struktur, das Verhalten und die Anwendung des E_SR-Bausteins anhand des bereitgestellten Quelltextes.
 
-#### Struktur des E_SR-Bausteins
+### Struktur des E_SR-Bausteins
 
 Der E_SR-Baustein ist ein **Basic Function Block (BFB)**, der gemäß der IEC 61499 spezifiziert ist. Ein BFB besteht aus einer Schnittstelle (Interface) und einer internen Logik, die durch einen Execution Control Chart (ECC) und Algorithmen definiert wird.
 
-##### Schnittstelle (Interface)
+#### Schnittstelle (Interface)
 
 Die Schnittstelle des E_SR-Bausteins besteht aus:
 
@@ -56,7 +56,7 @@ Die Schnittstelle des E_SR-Bausteins besteht aus:
 - **Ausgangsvariable (Output Variable)**:
   - **Q**: Dies ist eine boolesche Variable, die den aktuellen Zustand des Flip-Flops repräsentiert.
 
-##### Execution Control Chart (ECC)
+#### Execution Control Chart (ECC)
 
 Der ECC definiert das Verhalten des Bausteins durch Zustände und Übergänge. Der E_SR-Baustein hat drei Zustände:
 
@@ -70,7 +70,7 @@ Die Übergänge zwischen den Zuständen werden durch die Bedingungen **S** und *
 - Von **SET** nach **RESET**, wenn das **R**-Ereignis eintritt.
 - Von **RESET** nach **SET**, wenn das **S**-Ereignis erneut eintritt.
 
-##### Algorithmen
+#### Algorithmen
 
 Der E_SR-Baustein verfügt über zwei Algorithmen:
 
@@ -84,7 +84,7 @@ Der E_SR-Baustein verfügt über zwei Algorithmen:
    Q := FALSE;
    ```
 
-#### Verhalten des E_SR-Bausteins
+### Verhalten des E_SR-Bausteins
 
 Der E_SR-Baustein verhält sich wie ein einfaches bistabiles Element (Flip-Flop), das durch Ereignisse gesteuert wird. Das **S**-Ereignis setzt den Ausgang **Q** auf **TRUE**, während das **R**-Ereignis den Ausgang **Q** auf **FALSE** zurücksetzt. Jede Änderung des Ausgangs **Q** löst das **EO**-Ereignis aus, das andere Bausteine oder Systemkomponenten über die Zustandsänderung informieren kann.
 
@@ -95,7 +95,7 @@ Das Verhalten des Bausteins kann wie folgt zusammengefasst werden:
 3. **Zurücksetzen**: Wenn das **R**-Ereignis eintritt, wechselt der Baustein in den Zustand **RESET**, setzt **Q** auf **FALSE** und löst das **EO**-Ereignis aus.
 4. **Wiederholung**: Der Baustein kann zwischen den Zuständen **SET** und **RESET** hin- und herwechseln, abhängig von den eintreffenden **S**- und **R**-Ereignissen.
 
-#### Anwendungsbeispiele
+### Anwendungsbeispiele
 
 Der E_SR-Baustein kann in verschiedenen industriellen Steuerungsanwendungen eingesetzt werden, insbesondere in Szenarien, in denen ein bistabiles Verhalten erforderlich ist. Einige Beispiele sind:
 
@@ -103,7 +103,7 @@ Der E_SR-Baustein kann in verschiedenen industriellen Steuerungsanwendungen eing
 - **Ereignisgesteuerte Steuerung**: In Systemen, die auf Ereignisse reagieren müssen, kann der E_SR-Baustein verwendet werden, um Zustandsänderungen zu verwalten und andere Komponenten über diese Änderungen zu informieren.
 - **Sicherheitsfunktionen**: Der Baustein kann in Sicherheitssystemen eingesetzt werden, um kritische Zustände zu speichern und bei Bedarf zurückzusetzen.
 
-#### Fazit
+### Fazit
 
 Der E_SR-Baustein ist ein einfacher, aber leistungsfähiger Funktionsbaustein in der IEC 61499, der ein bistabiles Verhalten durch ereignisgesteuerte Logik realisiert. Durch seine klare Struktur und einfache Zustandsübergänge eignet er sich ideal für Anwendungen, in denen Zustände gespeichert und durch Ereignisse gesteuert werden müssen. Der Baustein demonstriert die Flexibilität und Modularität der IEC 61499, die es ermöglicht, komplexe Steuerungssysteme aus einfachen, wiederverwendbaren Komponenten aufzubauen.
 

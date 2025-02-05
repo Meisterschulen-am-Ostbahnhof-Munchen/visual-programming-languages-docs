@@ -7,7 +7,9 @@
 
 <https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_lt.html>
 
+* * * * * * * * * *
 
+Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 
 **Der LT-Operator in IEC 61499: Eine Einführung**
 

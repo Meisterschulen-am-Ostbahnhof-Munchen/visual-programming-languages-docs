@@ -1,7 +1,7 @@
 # timer
 
 ```{toctree}
-FB_TOF
 FB_TON
+FB_TOF
 FB_TP
 ```

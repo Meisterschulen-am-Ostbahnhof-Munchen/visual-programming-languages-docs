@@ -1,4 +1,4 @@
-### E\_REND
+# E\_REND
 
 Rendezvous (AND) of two events
 

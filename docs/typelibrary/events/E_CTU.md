@@ -1,4 +1,4 @@
-### E\_CTU
+# E\_CTU
 
 Event driven up counter
 
@@ -28,7 +28,9 @@ R: Ausgang zurücksetzen
 
 ![](https://user-images.githubusercontent.com/113907474/227977865-15a0089f-d648-4415-947b-bf80436d0094.png)
 
+* * * * * * * * * *
 
+Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 
 ### Der Baustein E_CTU in der IEC 61499: Ein Überblick
 

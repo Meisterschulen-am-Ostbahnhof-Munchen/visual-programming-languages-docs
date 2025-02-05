@@ -16,9 +16,9 @@ das Toggle flip flop stellt einen "Stromstoßschalter" dar. 
 
 [https://de.wikipedia.org/wiki/Stromsto%C3%9Fschalter](https://de.wikipedia.org/wiki/Stromsto%C3%9Fschalter)
 
-#### E\_T\_FF Anwendungen
+## E\_T\_FF Anwendungen
 
-##### E\_T\_FF Anwendungen Taster
+### E\_T\_FF Anwendungen Taster
 
 mit einem E\_T\_FF lässt sich so ein Taster realisieren, der eine Lampe ein und ausschaltet:
 
@@ -34,7 +34,7 @@ EMB\_RES:
 
 ![](https://user-images.githubusercontent.com/69573151/200582652-15139148-a200-49fb-a683-93e341eab607.png)
 
-##### E\_T\_FF Anwendungen Blinker
+### E\_T\_FF Anwendungen Blinker
 
 mit einem E\_T\_FF lässt sich so ein Blinker realisieren:
 
@@ -62,11 +62,11 @@ Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und 
 
 Die IEC 61499 ist ein internationaler Standard, der sich mit der Funktionsbausteinmodellierung für industrielle Automatisierungssysteme beschäftigt. Sie bietet einen Rahmen für die Entwicklung von verteilten Steuerungssystemen, die flexibel, modular und wiederverwendbar sind. Ein zentrales Element in diesem Standard sind die Funktionsbausteine, die als grundlegende Komponenten für die Implementierung von Steuerungslogik dienen. Einer dieser Bausteine ist der E_T_FF (Event-Triggered Flip-Flop), der in diesem Aufsatz näher betrachtet werden soll.
 
-### 1. Grundlagen des E_T_FF
+## 1. Grundlagen des E_T_FF
 
 Der E_T_FF ist ein ereignisgesteuerter Flip-Flop-Baustein, der in der IEC 61499 verwendet wird, um Zustandsänderungen in einem System zu verwalten. Ein Flip-Flop ist ein grundlegendes Element der digitalen Logik, das zwei stabile Zustände hat und als Speicherbaustein verwendet werden kann. Der E_T_FF erweitert dieses Konzept um die ereignisgesteuerte Funktionalität, die in der IEC 61499 von zentraler Bedeutung ist.
 
-### 2. Funktionsweise des E_T_FF
+## 2. Funktionsweise des E_T_FF
 
 Der E_T_FF hat einen Ereigniseingang (CLK), der eine Zustandsänderung auslöst. Der Baustein hat zwei Ausgänge: einen Datenausgang (Q) vom Typ BOOL und einen Ereignisausgang (EO). Der Datenausgang gibt den aktuellen Zustand des Flip-Flops wieder, während der Ereignisausgang ein Ereignis signalisiert, wenn sich der Zustand ändert.
 
@@ -78,7 +78,7 @@ Die Funktionsweise des E_T_FF kann wie folgt beschrieben werden:
 
 - **Ereignisausgang:** Wenn sich der Zustand des Flip-Flops ändert, wird ein Ereignis am Ereignisausgang (EO) ausgelöst. Dieses Ereignis kann verwendet werden, um nachgelagerte Bausteine zu aktivieren oder andere Aktionen im System auszulösen.
 
-### 3. Anwendungsbeispiele
+## 3. Anwendungsbeispiele
 
 Der E_T_FF kann in verschiedenen Anwendungen eingesetzt werden, bei denen es darum geht, Zustände zu speichern und ereignisgesteuert zu ändern. Einige Beispiele sind:
 
@@ -88,7 +88,7 @@ Der E_T_FF kann in verschiedenen Anwendungen eingesetzt werden, bei denen es dar
 
 - **Synchronisation von Prozessen:** Der E_T_FF kann auch zur Synchronisation von Prozessen verwendet werden. Wenn ein Prozess einen bestimmten Zustand erreicht hat, kann ein Ereignis ausgelöst werden, das andere Prozesse aktiviert oder deaktiviert.
 
-### 4. Vorteile des E_T_FF in der IEC 61499
+## 4. Vorteile des E_T_FF in der IEC 61499
 
 Die Verwendung des E_T_FF in der IEC 61499 bietet mehrere Vorteile:
 
@@ -98,7 +98,7 @@ Die Verwendung des E_T_FF in der IEC 61499 bietet mehrere Vorteile:
 
 - **Einfache Integration:** Der E_T_FF kann einfach in bestehende Steuerungslogiken integriert werden. Durch die klare Trennung von Ereignis- und Datenfluss ist die Integration in komplexe Systeme unkompliziert.
 
-### 5. Fazit
+## 5. Fazit
 
 Der E_T_FF ist ein wichtiger Baustein in der IEC 61499, der es ermöglicht, Zustände in einer ereignisgesteuerten Architektur zu speichern und zu verwalten. Seine einfache Funktionsweise und die klare Trennung von Ereignis- und Datenfluss machen ihn zu einem vielseitigen Werkzeug in der industriellen Automatisierung. Durch die Verwendung des E_T_FF können Entwickler flexible, modulare und wiederverwendbare Steuerungssysteme erstellen, die den Anforderungen moderner Automatisierungsanwendungen gerecht werden.
 

@@ -1,4 +1,4 @@
-### E\_SWITCH
+# E\_SWITCH
 
 Der Funktionsbaustein E\_SWITCH ist ein Standardfunktionsbaustein der IEC 61499-1 und wird verwendet, um die Steuerung von Schaltvorgängen in automatisierten Systemen zu realisieren. Er ermöglicht es, bestimmte Funktionen oder Aktionen basierend auf bestimmten Bedingungen auszuführen.
 

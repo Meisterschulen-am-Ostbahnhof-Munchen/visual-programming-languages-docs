@@ -1,4 +1,4 @@
-### E\_PERMIT
+# E\_PERMIT
 
 permissive propagation of an event
 

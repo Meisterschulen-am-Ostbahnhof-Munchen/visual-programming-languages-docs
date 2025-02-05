@@ -5,6 +5,10 @@ permissive propagation of an event
 ![](https://user-images.githubusercontent.com/113907528/204900302-7f7fcf0a-170c-4695-8177-e51c62311624.png)
 
 
+* * * * * * * * * *
+
+Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
+
 
 **Der Baustein E_PERMIT in der IEC 61499: Funktion und Anwendung**
 

@@ -10,17 +10,17 @@
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 
 
-### Der Baustein E_T_FF_SR in der IEC 61499: Ein Überblick
+**Der Baustein E_T_FF_SR in der IEC 61499: Ein Überblick**
 
-#### Einleitung
+### Einleitung
 
 Die IEC 61499 ist ein internationaler Standard, der die Modellierung von verteilten industriellen Steuerungssystemen ermöglicht. Ein zentrales Konzept in diesem Standard ist der Funktionsbaustein (FB), der als grundlegende Komponente für die Steuerungslogik dient. Der Baustein **E_T_FF_SR** (Event-driven bistable and Toggle) ist ein erweiterter Funktionsbaustein, der sowohl ein bistabiles Verhalten als auch eine Toggle-Funktionalität bietet. Dieser Aufsatz beschreibt die Struktur, das Verhalten und die Anwendung des E_T_FF_SR-Bausteins anhand des bereitgestellten Quelltextes.
 
-#### Struktur des E_T_FF_SR-Bausteins
+### Struktur des E_T_FF_SR-Bausteins
 
 Der E_T_FF_SR-Baustein ist ein **Basic Function Block (BFB)**, der gemäß der IEC 61499 spezifiziert ist. Ein BFB besteht aus einer Schnittstelle (Interface) und einer internen Logik, die durch einen Execution Control Chart (ECC) und Algorithmen definiert wird.
 
-##### Schnittstelle (Interface)
+#### Schnittstelle (Interface)
 
 Die Schnittstelle des E_T_FF_SR-Bausteins besteht aus:
 
@@ -35,7 +35,7 @@ Die Schnittstelle des E_T_FF_SR-Bausteins besteht aus:
 - **Ausgangsvariable (Output Variable)**:
   - **Q**: Dies ist eine boolesche Variable, die den aktuellen Zustand des Flip-Flops repräsentiert.
 
-##### Execution Control Chart (ECC)
+#### Execution Control Chart (ECC)
 
 Der ECC definiert das Verhalten des Bausteins durch Zustände und Übergänge. Der E_T_FF_SR-Baustein hat drei Zustände:
 
@@ -52,7 +52,7 @@ Die Übergänge zwischen den Zuständen werden durch die Bedingungen **S**, **R*
 - Von **RESET** nach **SET**, wenn das **CLK**-Ereignis eintritt.
 - Von **START** nach **SET**, wenn das **CLK**-Ereignis eintritt.
 
-##### Algorithmen
+#### Algorithmen
 
 Der E_T_FF_SR-Baustein verfügt über zwei Algorithmen:
 
@@ -66,7 +66,7 @@ Der E_T_FF_SR-Baustein verfügt über zwei Algorithmen:
    Q := FALSE;
    ```
 
-#### Verhalten des E_T_FF_SR-Bausteins
+### Verhalten des E_T_FF_SR-Bausteins
 
 Der E_T_FF_SR-Baustein verhält sich wie ein erweitertes bistabiles Element (Flip-Flop), das sowohl durch Set- und Reset-Ereignisse als auch durch einen Taktgeber gesteuert wird. Das **S**-Ereignis setzt den Ausgang **Q** auf **TRUE**, während das **R**-Ereignis den Ausgang **Q** auf **FALSE** zurücksetzt. Das **CLK**-Ereignis toggelt den Ausgang **Q**, d.h., es schaltet den Zustand von **TRUE** auf **FALSE** oder umgekehrt. Jede Änderung des Ausgangs **Q** löst das **EO**-Ereignis aus, das andere Bausteine oder Systemkomponenten über die Zustandsänderung informieren kann.
 
@@ -77,7 +77,7 @@ Das Verhalten des Bausteins kann wie folgt zusammengefasst werden:
 3. **Zurücksetzen**: Wenn das **R**-Ereignis eintritt, wechselt der Baustein in den Zustand **RESET**, setzt **Q** auf **FALSE** und löst das **EO**-Ereignis aus.
 4. **Toggeln**: Wenn das **CLK**-Ereignis eintritt, wechselt der Baustein zwischen den Zuständen **SET** und **RESET**, wodurch der Ausgang **Q** getoggelt wird.
 
-#### Anwendungsbeispiele
+### Anwendungsbeispiele
 
 Der E_T_FF_SR-Baustein kann in verschiedenen industriellen Steuerungsanwendungen eingesetzt werden, insbesondere in Szenarien, in denen ein bistabiles Verhalten mit zusätzlicher Toggle-Funktionalität erforderlich ist. Einige Beispiele sind:
 
@@ -85,7 +85,7 @@ Der E_T_FF_SR-Baustein kann in verschiedenen industriellen Steuerungsanwendungen
 - **Ereignisgesteuerte Steuerung**: In Systemen, die auf Ereignisse reagieren müssen, kann der E_T_FF_SR-Baustein verwendet werden, um Zustandsänderungen zu verwalten und andere Komponenten über diese Änderungen zu informieren.
 - **Taktgesteuerte Steuerung**: Der Baustein kann in Systemen eingesetzt werden, die eine taktgesteuerte Zustandsänderung erfordern, z.B. in Schaltnetzen oder digitalen Schaltkreisen.
 
-#### Fazit
+### Fazit
 
 Der E_T_FF_SR-Baustein ist ein vielseitiger Funktionsbaustein in der IEC 61499, der sowohl ein bistabiles Verhalten als auch eine Toggle-Funktionalität bietet. Durch seine klare Struktur und einfache Zustandsübergänge eignet er sich ideal für Anwendungen, in denen Zustände gespeichert und durch Ereignisse oder Takte gesteuert werden müssen. Der Baustein demonstriert die Flexibilität und Modularität der IEC 61499, die es ermöglicht, komplexe Steuerungssysteme aus einfachen, wiederverwendbaren Komponenten aufzubauen.
 

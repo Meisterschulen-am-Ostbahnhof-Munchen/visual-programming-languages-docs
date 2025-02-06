@@ -57,11 +57,6 @@ myst_heading_anchors = 7
 
 googleanalytics_id = 'G-4WPKCFX4NN'
 
-
-
-
-
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 

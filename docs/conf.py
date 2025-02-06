@@ -32,6 +32,7 @@ extensions = [
     "myst_parser",
     "sphinx_c_autodoc",
     "sphinxcontrib.mermaid",
+    "sphinxcontrib.googleanalytics",
 ]
 
 version = "0.0.1"
@@ -53,6 +54,12 @@ myst_enable_extensions = [
     "colon_fence",
 ]
 myst_heading_anchors = 7
+
+googleanalytics_id = 'G-4WPKCFX4NN'
+
+
+
+
 
 
 # -- Options for HTML output -------------------------------------------------

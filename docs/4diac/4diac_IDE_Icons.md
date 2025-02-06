@@ -1,51 +1,50 @@
 # Eclipse 4diac™ IDE Icon
 
-finden Sie hier eine Legende:
-https://eclipse.dev/4diac/en_news.php?s=09#en_news_20210621
 
-Hier die Icons nochmal wiedergegeben, damit Sie diese auch in der Volltextsuche finden.
+This is the list of icons already redesigned.
 
-<p>This is the list of icons already redesigned.</p>
-<h3 id="function-blocks">Function Blocks</h3>
-<ul>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/application.png" alt="Type Info"> Application</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/basic_function_block.png" alt="Type Info"> Basic Function Block</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/composite_function_block.png" alt="Type Info"> Composite Function Block</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/service_interface_function_block.png" alt="Type Info"> Service Interface Function Block</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/simple_function_function_block.png" alt="Type Info"> Simple Function Block</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/subapplication_typed_function_block.png" alt="Type Info"> Subapplication typed Function Block</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/subapplication_untyped_function_block.png" alt="Type Info"> Subapplication untyped Function Block</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/fb_type_library.png" alt="Type Library"> Type Library</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/data_type.png" alt="Type Info"> Data Type</li>
-</ul>
-<h3 id="system">System</h3>
-<ul>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/system.png" alt="Type Info"> System</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/system_configuration.png" alt="Type Info"> System Configuration</li>
-</ul>
-<h3 id="device">Device</h3>
-<ul>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/device.png" alt="Type Info"> Device</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/resource.png" alt="Type Info"> Resource</li>
-</ul>
-<h3 id="event-data-adapters">Event/Data/Adapters</h3>
-<ul>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/event.png" alt="Event"> Event</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/event_in.png" alt="Event In"> Event in </li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/event_out.png" alt="Event Out"> Event Out</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/data.png" alt="Data"> Data</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/data_in.png" alt="Data In"> Data In </li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/data_out.png" alt="Data Out"> Data Out</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/adapter.png" alt="Adapter"> Adapter</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/adapter_in.png" alt="Adapter In"> Adapter In</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/adapter_out.png" alt="Adapter Out"> Adapter Out</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/interface.png" alt="Interface"> Interface</li>
-</ul>
-<h3 id="ecc">ECC</h3>
-<ul>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/ecc.png" alt="ECC"> ECC</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/ecc_action.png" alt="ECC Action"> ECC Action</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/ecc_state.png" alt="ECC State"> ECC State</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/ecc_add_state.png" alt="ECC Add State"> ECC Add State</li>
-<li><img src="https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/ecc_algorithm.png" alt="ECC Algorithm"> ECC Algorithm</li>
-</ul>
+## Function Blocks
+
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/application.png) Application
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/basic_function_block.png) Basic Function Block
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/composite_function_block.png) Composite Function Block
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/service_interface_function_block.png) Service Interface Function Block
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/simple_function_function_block.png) Simple Function Block
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/subapplication_typed_function_block.png) Subapplication typed Function Block
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/subapplication_untyped_function_block.png) Subapplication untyped Function Block
+- ![Type Library](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/fb_type_library.png) Type Library
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/data_type.png) Data Type
+
+## System
+
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/system.png) System
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/system_configuration.png) System Configuration
+
+## Device
+
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/device.png) Device
+- ![Type Info](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/resource.png) Resource
+
+## Event/Data/Adapters
+
+- ![Event](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/event.png) Event
+- ![Event In](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/event_in.png) Event In
+- ![Event Out](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/event_out.png) Event Out
+- ![Data](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/data.png) Data
+- ![Data In](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/data_in.png) Data In
+- ![Data Out](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/data_out.png) Data Out
+- ![Adapter](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/adapter.png) Adapter
+- ![Adapter In](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/adapter_in.png) Adapter In
+- ![Adapter Out](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/adapter_out.png) Adapter Out
+- ![Interface](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/interface.png) Interface
+
+## ECC
+
+- ![ECC](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/ecc.png) ECC
+- ![ECC Action](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/ecc_action.png) ECC Action
+- ![ECC State](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/ecc_state.png) ECC State
+- ![ECC Add State](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/ecc_add_state.png) ECC Add State
+- ![ECC Algorithm](https://raw.githubusercontent.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/main/docs/4diac/figs/icons/ecc_algorithm.png) ECC Algorithm
+```
+
+Dieses Markdown ist sauber formatiert und sollte in jedem Markdown-Viewer korrekt angezeigt werden.

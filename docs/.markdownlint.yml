@@ -1,0 +1,5 @@
+# .markdownlint.yml - Konfigurationsdatei für MarkdownLint
+
+# Regeln, die deaktiviert werden sollen
+default: true  # Standardmäßig sind alle Regeln aktiviert
+

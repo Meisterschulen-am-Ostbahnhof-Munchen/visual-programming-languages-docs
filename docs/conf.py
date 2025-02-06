@@ -20,7 +20,7 @@ sys.path.insert(0, SOURCE_DIR)
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "Wiki 4: visual programming languages Docs"
-copyright = "2022-2023, Meisterschulen am Ostbahnhof, München"
+copyright = "2022-2025, Meisterschulen am Ostbahnhof - München"
 author = "Franz Höpfinger"
 
 html_baseurl = "https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/"

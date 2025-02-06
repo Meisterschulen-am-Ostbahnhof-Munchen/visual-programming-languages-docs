@@ -1,6 +1,6 @@
-## Eclipse 4diac™ IDE Icon
+# Eclipse 4diac™ IDE Icon
 
-finden Sie hier eine Legende: 
+finden Sie hier eine Legende:
 https://eclipse.dev/4diac/en_news.php?s=09#en_news_20210621
 
 Hier die Icons nochmal wiedergegeben, damit Sie diese auch in der Volltextsuche finden.

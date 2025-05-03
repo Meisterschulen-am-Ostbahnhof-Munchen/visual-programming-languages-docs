@@ -23,14 +23,60 @@ Ja, im **ISOBUS-Standard ISO 11783-6** (Teil 6: **Virtual Terminal**) ist das **
 ### Fazit:
 Die ISOBUS-Norm weist die Verantwortung für das Skalieren der Masken klar dem **Anbaugerät** zu, während das VT primär für die korrekte Darstellung der übermittelten Daten zuständig ist. Dies ermöglicht eine flexible Anpassung an verschiedene Terminalgrößen, erfordert aber eine korrekte Implementierung seitens der Anbaugeräte-Hersteller.  
 
-Brauchen Sie weitere Details zu einem bestimmten Aspekt von ISO 11783-6?
+
+## Erklärungsversuch 
+
+Das ist mit Deepseek generiert und noch nicht perfekt: 
+
+Ihre Tabelle zeigt eine interessante und pragmatische Herangehensweise, um die **Skalierungsregeln für ISOBUS-Objekte (ISO 11783-6)** festzulegen, basierend auf deren **Objekt-ID-Bereichen** und dem Kontext (DataMask vs. SoftkeyMask/Auxiliary). Diese Methode vermeidet das aufwändige Parsen des gesamten Object Pools und ermöglicht eine effiziente Zuordnung durch einfache numerische Bereichsprüfungen. Hier eine detaillierte Analyse:
+
+---
+
+### **Zusammenfassung der Skalierungslogik**
+1. **DataMask-exklusive Objekte** (z. B. Inputs, Outputs, Grafiken):  
+   - Werden **skaliert** (z. B. `1000–1999: DataMask-spezifische Skalierung`).  
+   - Beispiele: `InputNumber (9000–9999)`, `LinearBargraph (18000–18599)`.
+
+2. **SoftkeyMask/Auxiliary-exklusive Objekte**:  
+   - Werden **zentriert** (keine Skalierung, z. B. `0: Working Set Object`) oder haben spezielle Regeln (z. B. `5000–5999: Softkey-Buttons`).  
+
+3. **Hybride Objekte** (in beiden Maskentypen nutzbar):  
+   - Die Skalierung hängt vom **Bereich der Objekt-ID** ab:  
+     - **DataMask-Variante**: Skalierung aktiv (z. B. `11000–11499: OutputString`).  
+     - **SoftkeyMask-Variante**: Skalierung deaktiviert oder anders behandelt (z. B. `11500–11999: OutputString`).  
+
+---
+
+### **Vorteile dieser Methode**
+- **Einfachheit**: Keine komplexe Baumstruktur oder tiefgehende Object-Pool-Analyse nötig.  
+- **Performance**: Schnelle Zuordnung via numerischer Bereichsprüfung (z. B. `if (id >= 3000 && id < 3500) → Container für DataMask`).  
+- **Vorhersehbarkeit**: Klare Regeln für Entwickler beider Seiten (VT und Implement).  
+
+---
+
+### **Kritische Punkte & Klärungsbedarf**
+1. **Überschneidungen/Konsistenz**:  
+   - Einige Objekte (z. B. `Container`, `OutputString`) haben getrennte Bereiche für DataMask/SoftkeyMask.  
+   - **Frage**: Muss das Anbaugerät diese IDs strikt trennen, oder darf ein `OutputString` mit ID 11000 auch in der SoftkeyMask erscheinen?  
+     - *Laut ISO 11783-6 sollte die Maskenzugehörigkeit durch den Kontext (z. B. Parent-Object) definiert sein. Die ID-Bereiche sind dann eine Hilfslogik.*
+
+2. **Skalierungsausnahmen**:  
+   - Objekte wie `PictureGraphic` (DataMask: `20000–20499`, SoftkeyMask: `20500–20999`) haben unterschiedliche Skalierungsregeln.  
+
+3. **Auxiliary Functions** (`31000–31999`):  
+   - Diese werden explizit **zentriert** (nicht skaliert). Hier gilt eine Sonderbehandlung.  
+
+---
 
 
 
+---
+
+### **Fazit**
+Ihr Ansatz ist **praxistauglich und normkonform**, da ISO 11783-6 die Skalierungsverantwortung dem Anbaugerät zuweist. Durch die Aufteilung in numerische Bereiche lässt sich die Skalierung effizient umsetzen – vorausgesetzt, das Anbaugerät hält sich strikt an diese Zuordnung.  
 
 
-
-# Tabelle
+## Tabelle
 
 
 | DATA MASK                                |         | SOFTKEY MASK & AUX                             |

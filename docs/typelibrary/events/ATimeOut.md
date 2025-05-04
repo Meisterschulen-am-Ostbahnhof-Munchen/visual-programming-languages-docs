@@ -1,16 +1,16 @@
-### ATimeOut
+# ATimeOut
 
 ![ATimeOut](https://user-images.githubusercontent.com/116869307/214142228-09857ba5-6164-4597-bb66-8a99e74f4d14.png)
 
 * * * * * * * * * *  
 
-#### Einleitung  
+## Einleitung  
 Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter industrieller Steuerungssysteme. Der **ATimeOut**-Baustein (Active Timeout) ist ein Funktionsbaustein, der einen aktiven Timeout-Mechanismus bereitstellt. Dieser Aufsatz beschreibt die Struktur, das Verhalten und die typischen Anwendungen des ATimeOut-Bausteins.  
 
-#### Struktur des ATimeOut-Bausteins  
+## Struktur des ATimeOut-Bausteins  
 Der ATimeOut-Baustein ist als **Basic Function Block (BFB)** oder **Composite Function Block (CFB)** in der IEC 61499 spezifiziert.  
 
-##### Schnittstelle (Interface)  
+### Schnittstelle (Interface)  
 Die typische Schnittstelle des ATimeOut-Bausteins umfasst:  
 
 - **Eingangsereignisse (Event Inputs)**:  
@@ -27,7 +27,7 @@ Die typische Schnittstelle des ATimeOut-Bausteins umfasst:
 - **Ausgangsvariablen (Output Variables)**:  
   - **Q**: Boolescher Ausgang, der den aktiven Timeout-Zustand anzeigt (TRUE = Timeout läuft).  
 
-#### Verhalten des ATimeOut-Bausteins  
+## Verhalten des ATimeOut-Bausteins  
 1. **Start des Timeouts**:  
    - Bei Empfang des **START**-Ereignisses beginnt der Timeout mit der in **PT** definierten Dauer.  
    - Der Ausgang **Q** wird auf TRUE gesetzt.  
@@ -41,16 +41,16 @@ Die typische Schnittstelle des ATimeOut-Bausteins umfasst:
 4. **Reset**:  
    - Das **RESET**-Ereignis setzt den internen Timer zurück.  
 
-#### Technische Besonderheiten  
+## Technische Besonderheiten  
 - Der Baustein kann sowohl in zyklischen als auch ereignisgesteuerten Systemen eingesetzt werden.  
 - Die Timeout-Logik ist unabhängig von der Zykluszeit des übergeordneten Systems.  
 
-#### Anwendungsbeispiele  
+## Anwendungsbeispiele  
 - **Überwachung von Kommunikationszeitüberschreitungen** in verteilten Steuerungssystemen  
 - **Maschinensicherheit**: Erkennung von Stillstandszeiten oder fehlenden Sensorupdates  
 - **Prozesssteuerung**: Timeout für kritische Operationen  
 
-#### Vergleich mit ähnlichen Bausteinen  
+## Vergleich mit ähnlichen Bausteinen  
 | Feature        | ATimeOut | ARTimeOut (Adapter) | E_PULSE |  
 |----------------|----------|---------------------|---------|  
 | Timeout-Trigger| START    | START               | REQ     |  
@@ -58,5 +58,5 @@ Die typische Schnittstelle des ATimeOut-Bausteins umfasst:
 | Rückmeldung    | TimeOut  | TimeOut             | CNF     |  
 | Typ           | FB       | Adapter             | FB      |  
 
-#### Fazit  
+## Fazit  
 Der ATimeOut-Baustein bietet eine robuste Lösung für Timeout-Mechanismen in IEC 61499-Systemen. Durch seine klare Schnittstelle und flexible Einsatzmöglichkeiten eignet er sich besonders für Sicherheits- und Überwachungsfunktionen in industriellen Steuerungen. Die Unabhängigkeit von der Zykluszeit macht ihn zudem für ereignisgesteuerte Architekturen interessant.

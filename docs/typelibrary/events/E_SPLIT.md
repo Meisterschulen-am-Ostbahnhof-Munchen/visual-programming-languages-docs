@@ -1,20 +1,68 @@
-### E\_SPLIT
+# E_SPLIT (Ereignis-Verteiler)
 
-Aufsplitten eines Events.
+![E_SPLIT Funktionssymbol](https://user-images.githubusercontent.com/69573151/210802227-1615f35d-6ed5-459b-a796-a5ef5fb11452.png)  
 
-Eventeingang:
+* * * * * * * * * *
 
-*   EI:                   Ereigniseingang                      
+## Einleitung
+Der **E_SPLIT** ist ein standardkonformer Funktionsbaustein (IEC 61499-1 Annex A) zur Ereignisverteilung, entwickelt unter EPL-2.0 Lizenz. Version 1.0 teilt ein eingehendes Ereignis sequenziell in zwei Ausgangsereignisse auf.
 
-Eventausgänge:
+## Schnittstellenstruktur
 
-*   EO1                Erstes Ausgangsereignis
-*   EO2                Zweites Ausgangsereignis
+### **Ereignis-Eingang**
+- `EI`: Eingangsereignis (Trigger für die Verteilung)
 
-Das Auftreten eines Events EI verursacht das Auftreten der Events EO1 und EO2.
+### **Ereignis-Ausgänge**
+- `EO1`: Erstes Ausgangsereignis
+- `EO2`: Zweites Ausgangsereignis
 
-Beispiel: Ein Knopf wird betätigt und es werden je auf EO1 und EO2 ein Ereignis augelöst.
+## Funktionsweise
 
-![](https://user-images.githubusercontent.com/113907476/227972526-0c1d6245-f068-4b58-a4b6-37b9dcb98398.png)
+1. **Ereignisempfang**:
+   - Bei Eingang von `EI` wird der Zustandsautomat aktiviert
 
-![](https://user-images.githubusercontent.com/69573151/210802227-1615f35d-6ed5-459b-a796-a5ef5fb11452.png)
+2. **Sequenzielle Verarbeitung**:
+   - **START-Zustand**: Wartet auf Eingangsereignis
+   - **State-Zustand**:
+     - Führt `EO1`-Aktion aus (sofort)
+     - Führt `EO2`-Aktion aus (unmittelbar danach)
+   - Automatische Rückkehr zu START
+
+3. **Ausführungsreihenfolge**:
+   - Garantierte Abfolge: EI → EO1 → EO2
+   - Deterministisches Timing
+
+![Beispieldiagram](https://user-images.githubusercontent.com/113907476/227972526-0c1d6245-f068-4b58-a4b6-37b9dcb98398.png)
+
+
+## Technische Besonderheiten
+
+✔ **Strikte Sequenzierung** (EO1 vor EO2)  
+✔ **Zustandsbasierte Implementierung** (BasicFB)  
+✔ **Echtzeitfähige** Ereignisverarbeitung  
+✔ **EPL-2.0 Open-Source** Implementierung  
+
+## Anwendungsszenarien
+
+- **Ablaufsteuerung**: Getaktete Prozessschritte
+- **Gerätesteuerung**: Aktivierungssequenzen
+- **Sicherheitssysteme**: Verzögerte Notfallroutinen
+- **Testautomation**: Trigger für Testsequenzen
+
+## Vergleich mit ähnlichen Bausteinen
+
+| Feature        | E_SPLIT | E_DEMUX | E_MERGE |
+|---------------|---------|---------|---------|
+| Funktionsprinzip | 1:2 Sequenz | 1:n Verteilung | n:1 Kombination |
+| Ereignisreihenfolge | Fest | Adressabhängig | Beliebig |
+| Zustandsmodell | BasicFB | Variabel | Keins |
+
+## Fazit
+
+Der E_SPLIT-Baustein bietet eine zuverlässige Lösung für sequenzielle Ereignisverteilung:
+
+- Garantierte Ereignisabfolge
+- Einfache aber wirkungsvolle Funktionalität
+- Robustes Zustandsmaschinenmodell
+
+ Durch seine deterministische Arbeitsweise eignet er sich besonders für zeitkritische Steuerungsaufgaben und sicherheitsrelevante Anwendungen. Die standardkonforme Implementierung ermöglicht problemlose Integration in IEC 61499-basierte Systeme.

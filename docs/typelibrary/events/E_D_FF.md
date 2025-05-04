@@ -1,18 +1,65 @@
-### E\_D\_FF
+# E_D_FF
 
-Data latch (d) flip flop
+![E_D_FF Diagram](https://user-images.githubusercontent.com/113907528/204898130-f9f31fd9-da42-4b29-a664-add0d91e8890.png)
 
-Ein Datenlatch ist eine Schaltung in der Elektronik, die es ermöglicht, ein Datensignal zu speichern. Es besteht aus zwei Hauptkomponenten: einem Flip-Flop und zwei Eingängen, die als "D" und "CLK" bezeichnet werden. Der Eingang "D" steht für das Datensignal, das gespeichert werden soll, während der Eingang "CLK" ein Taktsignal darstellt, das angibt, wann das Datensignal gespeichert werden soll.
+* * * * * * * * * *
 
-Wenn das Flip-Flop aktiviert wird, speichert es den Wert des Eingangs "D" und hält ihn fest, bis es erneut aktiviert wird. Dies geschieht, indem das Flip-Flop auf das Taktsignal "CLK" reagiert und den Wert des Eingangs "D" speichert, wenn das Taktsignal einen vorbestimmten Zustand erreicht.
+## Einleitung
+Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter industrieller Steuerungssysteme. Der **E_D_FF**-Baustein (Data Flip-Flop) ist ein grundlegendes Speicherelement in dieser Norm, das digitale Signale synchron zu einem Taktsignal speichert. Dieser Funktionsbaustein spielt eine zentrale Rolle in Zustandsmaschinen und Speicheranwendungen industrieller Automatisierungslösungen.
 
-Das Datenlatch wird häufig in Schaltungen verwendet, die Daten zwischen verschiedenen Komponenten übertragen, um sicherzustellen, dass die Daten zum richtigen Zeitpunkt verfügbar sind. Es kann auch verwendet werden, um den Zustand eines Systems zu speichern, z.B. um die Eingabe eines Benutzers zu speichern, während andere Operationen ausgeführt werden.
+## Struktur des E_D_FF-Bausteins
 
-![](https://user-images.githubusercontent.com/113907528/204898130-f9f31fd9-da42-4b29-a664-add0d91e8890.png)
+### Schnittstelle (Interface)
 
-*   Input
-    *   CLK Clock 
-    *   D Value to latch
-*   Output
-    *   EO Triggered if clock results in a change of Q
-    *   Q Latched value
+**Ereignis-Eingänge:**
+- `CLK` (Clock): Taktsignal für die synchrone Datenspeicherung
+- `D`: Dateneingang (zu speichernder Wert)
+
+**Ereignis-Ausgänge:**
+- `EO` (Event Output): Wird bei jeder Änderung des gespeicherten Werts ausgelöst
+
+**Daten-Ausgänge:**
+- `Q`: Aktuell gespeicherter Wert (BOOL)
+
+## Funktionsweise
+
+1. **Datenspeicherung:**
+   - Bei jeder positiven Flanke des `CLK`-Signals wird der Wert von `D` in `Q` übernommen
+   - Bei Wertänderung wird das `EO`-Ereignis ausgelöst
+
+2. **Datenhaltung:**
+   - Zwischen den Taktflanken bleibt der gespeicherte Wert `Q` stabil
+   - Änderungen am Eingang `D` haben ohne Taktflanke keine Auswirkung
+
+## Technische Besonderheiten
+
+✔ **Taktgesteuerte Speicherung** für synchrone Systeme  
+✔ **Ereignisausgang** für Änderungsdetektion  
+✔ **Deterministisches Verhalten** in Echtzeitsystemen  
+✔ **Einfache Integration** in IEC 61499-Applikationen  
+
+## Anwendungsszenarien
+
+- **Zustandsspeicherung** in Automatisierungsprozessen
+- **Eingabepufferung** für Bedienereingaben
+- **Flankenerkennung** in Signalverarbeitungsketten
+- **Synchronisation** zwischen asynchronen Systemteilen
+
+## Vergleich mit ähnlichen Bausteinen
+
+| Feature        | E_D_FF | E_SR | E_R_TRIG |
+|---------------|--------|------|----------|
+| Speichertyp   | D-Flip-Flop | SR-Latch | Flankendetektor |
+| Taktung       | Erforderlich | Keine | Keine |
+| Datenhaltung  | Ja | Ja | Nein |
+| Ereignisausgang | Bei Änderung | Bei Set/Reset | Bei Flanke |
+
+## Fazit
+
+Der E_D_FF-Baustein stellt ein essentielles Speicherelement für IEC 61499-basierte Steuerungssysteme dar. Seine Hauptvorteile sind:
+
+- Zuverlässige taktsynchrone Datenspeicherung
+- Sofortige Rückmeldung von Zustandsänderungen
+- Robuste Integration in verteilte Steuerungsarchitekturen
+
+Durch seine einfache aber wirkungsvolle Funktionalität bildet er die Grundlage für komplexere Speicher- und Zustandssteuerungen in industriellen Automatisierungslösungen. Die strikte Einhaltung der IEC 61499-Standards gewährleistet dabei die problemlose Interoperabilität mit anderen Funktionsbausteinen.

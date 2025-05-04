@@ -78,7 +78,7 @@ Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf 
 
 Die strikte Einhaltung der ID-Bereiche durch das Anbaugerät ist entscheidend. 
 
-### **Originaltabelle (unverändert)**  
+## **Tabelle**  
 
 | DATA MASK                                |         | SOFTKEY MASK & AUX                             |
 |------------------------------------------|---------|------------------------------------------------|

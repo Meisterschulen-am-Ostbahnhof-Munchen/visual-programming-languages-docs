@@ -18,12 +18,8 @@ Der BeagleBone Black ist eine kostengünstige, community-unterstützte Entwicklu
   - 2x 46-pin Header mit GPIO, Analog Inputs, PWM, I2C, SPI und Serial Interfaces
 - **Power**: 5V DC via USB oder Barrel Jack
 
-## 4diac IDE Unterstützung
-Der BeagleBone Black wird als Target-Device in der 4diac IDE für die Ausführung von IEC 61499 Function Block Anwendungen unterstützt.
-
 ### Voraussetzungen
-- Debian Linux Image auf dem BeagleBone Black installiert
-- Java Runtime Environment (JRE) für 4diac FORTE Runtime
+- Linux Image auf dem BeagleBone Black installiert
 - Netzwerkverbindung zum Entwicklungssystem
 
 ### I/O Mapping

@@ -20,12 +20,9 @@ Der **Raspberry Pi** ist ein preiswerter Einplatinencomputer, der als **Target-D
   - 3,3V Logikpegel (keine 5V-Toleranz!)  
 - **Power**: 5V/3A via USB-C  
 
-## 4diac IDE Unterstützung  
-Der Raspberry Pi läuft unter **Linux** und kann mit **4diac FORTE** als **IEC 61499 Runtime** betrieben werden.  
-
 ### Voraussetzungen  
-- **Betriebssystem**: Raspberry Pi OS (32/64-Bit)  
-- **Java Runtime Environment (JRE)** für 4diac FORTE  
+- https://github.com/eclipse-4diac/4diac-documentation/blob/main/src/installation/raspi.adoc
+- **Betriebssystem**: Linux  
 - **Netzwerkverbindung** (SSH für Remote-Entwicklung)  
 
 ### I/O-Mapping (GPIO-Beispiel)  

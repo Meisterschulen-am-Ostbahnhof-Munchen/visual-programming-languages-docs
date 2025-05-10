@@ -5,7 +5,7 @@
 * * * * * * * * * *
 
 ## Einleitung
-Der **E_RESTART** ist ein spezieller Service-Interface-Funktionsbaustein nach IEC 61499 (Annex A), entwickelt von fortiss GmbH zur Steuerung von Neustartsequenzen in verteilten Automatisierungssystemen. Der Baustein dient als Schnittstelle zwischen Ressourcen und übergeordneten Steuerungen.
+Der **E_RESTART** ist ein spezieller Service-Interface-Funktionsbaustein nach IEC 61499 (Annex A), zur Steuerung von Neustartsequenzen in verteilten Automatisierungssystemen. Der Baustein dient als Schnittstelle zwischen Ressourcen und übergeordneten Steuerungen.
 
 ## Schnittstellenstruktur
 
@@ -73,4 +73,4 @@ Der E_RESTART-Baustein bietet eine normkonforme Lösung für kritische Systemste
 - Trennung von Kalt-/Warmstart-Logik
 - Zuverlässige Signalweiterleitung
 
-Als Teil der fortiss-Bibliothek ermöglicht er besonders die Entwicklung von robusten, fehlertoleranten Steuerungssystemen. Die klare Service-Schnittstelle nach IEC 61499 Annex A gewährleistet Interoperabilität über verschiedene Geräteplattformen hinweg.
+Ermöglicht besonders die Entwicklung von robusten, fehlertoleranten Steuerungssystemen. Die klare Service-Schnittstelle nach IEC 61499 Annex A gewährleistet Interoperabilität über verschiedene Geräteplattformen hinweg.

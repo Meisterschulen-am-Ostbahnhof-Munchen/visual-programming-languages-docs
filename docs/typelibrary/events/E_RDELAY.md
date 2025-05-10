@@ -1,8 +1,6 @@
 # E_RDELAY
 
-![E_RDELAY Symbol](https://user-images.githubusercontent.com/113907528/227959784-5391cacc-ca41-4bca-865e-7393a908e252.png)  
-*(Symbolische Darstellung gemäß IEC 61499 Standard)*
-
+![E_RDELAY Symbol](https://user-images.githubusercontent.com/113907528/204900519-829582bd-d9f3-4bee-934a-15dc393b4c34.png)  
 * * * * * * * * * *
 
 ## Einleitung

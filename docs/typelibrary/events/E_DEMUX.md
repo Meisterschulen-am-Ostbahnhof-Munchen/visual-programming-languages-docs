@@ -54,22 +54,6 @@ Der **E_DEMUX** (Event Demultiplexer) ist ein wichtiger Funktionsbaustein in der
 | Steuerung | Durch K-Wert | Durch K-Wert | Durch Bedingung |
 | Ereignisfluss | Aufteilung | Zusammenführung | Bedingte Weiterleitung |
 
-## Implementierungsbeispiel (für 4 Ausgänge)
-
-```iec61499
-FUNCTION_BLOCK E_DEMUX_4
-VAR_INPUT
-    EI : BOOL;
-    K : INT (0..3);
-END_VAR
-VAR_OUTPUT
-    EO0 : BOOL;
-    EO1 : BOOL;
-    EO2 : BOOL; 
-    EO3 : BOOL;
-END_VAR
-```
-
 ## Fazit
 
 Der E_DEMUX-Baustein ist ein wesentliches Element für die Ereignisverwaltung in IEC 61499-Systemen. Seine Hauptvorteile sind:

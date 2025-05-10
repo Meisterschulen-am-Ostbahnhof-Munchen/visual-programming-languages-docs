@@ -54,20 +54,6 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 | Datenhaltung  | Ja | Ja | Nein |
 | Ereignisausgang | Bei Änderung | Bei Set/Reset | Bei Flanke |
 
-## Implementierungsbeispiel
-
-```iec61499
-FUNCTION_BLOCK E_D_FF
-VAR_INPUT
-    CLK : BOOL;
-    D : BOOL;
-END_VAR
-VAR_OUTPUT
-    Q : BOOL;
-    EO : BOOL;
-END_VAR
-```
-
 ## Fazit
 
 Der E_D_FF-Baustein stellt ein essentielles Speicherelement für IEC 61499-basierte Steuerungssysteme dar. Seine Hauptvorteile sind:

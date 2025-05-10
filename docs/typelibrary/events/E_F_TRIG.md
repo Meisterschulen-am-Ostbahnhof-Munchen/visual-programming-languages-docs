@@ -54,22 +54,6 @@ Der **E_F_TRIG** (Falling Edge Trigger) ist ein grundlegender Funktionsbaustein 
 | Ereignissteuerung | Ja     | Ja       | Ja       |
 | Signalauswertung | Boolesch | Boolesch | Analog/Digital |
 
-## Implementierungsbeispiel
-
-```iec61499
-FUNCTION_BLOCK E_F_TRIG
-VAR_INPUT
-    EI : BOOL;
-    QI : BOOL;
-END_VAR
-VAR_OUTPUT
-    EO : BOOL;
-END_VAR
-VAR
-    LastQI : BOOL;
-END_VAR
-```
-
 ## Fazit
 
 Der E_F_TRIG-Baustein ist ein unverzichtbares Werkzeug für die Signalverarbeitung in Automatisierungssystemen. Seine Hauptvorteile sind:

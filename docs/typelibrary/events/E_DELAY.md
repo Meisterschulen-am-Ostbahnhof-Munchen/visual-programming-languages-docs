@@ -57,20 +57,6 @@ Der **E_DELAY** ist ein zentraler Funktionsbaustein der IEC 61499 Norm für indu
 | Abbruchmöglichkeit | Ja | Ja | Nein |
 | Zeitparameter | DT (Verzögerung) | DT (Zykluszeit) | PT (Impulsdauer) |
 
-## Implementierungsbeispiel
-
-```iec61499
-FUNCTION_BLOCK E_DELAY
-VAR_INPUT
-    START : BOOL;
-    STOP : BOOL;
-    DT : TIME;
-END_VAR
-VAR_OUTPUT
-    EO : BOOL;
-END_VAR
-```
-
 ## Fazit
 
 Der E_DELAY-Baustein ist ein unverzichtbares Werkzeug für zeitgesteuerte Automatisierungsprozesse. Seine Hauptvorteile sind:

@@ -1,4 +1,4 @@
-# E_TABLE (Ereignistabellen-Generator)
+# E_TABLE
 
 ![E_TABLE Funktionsbaustein](https://user-images.githubusercontent.com/113907528/204904862-ebdcc4da-7a49-4931-b534-673c9449cf5e.png)
 

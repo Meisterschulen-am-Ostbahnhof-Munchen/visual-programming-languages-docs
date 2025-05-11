@@ -1,5 +1,4 @@
-### RaspberryPI
-# Raspberry Pi - 4diac IDE Device Dokumentation  
+# RaspberryPI
 
 ## Übersicht  
 Der **Raspberry Pi** ist ein preiswerter Einplatinencomputer, der als **Target-Device** für **4diac IDE** eingesetzt werden kann. Dank seiner **GPIO-Schnittstelle** eignet er sich besonders für **Steuerungs- und Automatisierungsaufgaben**.  

@@ -1,10 +1,10 @@
-### BeagleBoneBlack
+# BeagleBoneBlack
 https://docs.beagle.cc/boards/beaglebone/black/index.html
 
 ## Übersicht
 Der BeagleBone Black ist eine kostengünstige, community-unterstützte Entwicklungsplattform für Embedded Systems, die als Target-Device für 4diac IDE Anwendungen genutzt werden kann.
 
-![BeabloBone Black](BeagleBoneBlack.png)
+![BeagleBone Black](BeagleBoneBlack.png)
 
 ## Technische Spezifikationen
 - **Prozessor**: AM335x 1GHz ARM® Cortex-A8

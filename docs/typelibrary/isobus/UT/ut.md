@@ -13,6 +13,7 @@ Q_ObjHideShow
 Q_SelectActiveWorkingSet
 Q_Size
 Q_BackgroundColour
+Q_BackgroundColourAux
 Q_ChangePolygonScale
 Q_CtrlAudioSignal
 Q_ExecuteExtendedMacro

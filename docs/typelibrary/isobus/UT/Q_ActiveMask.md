@@ -51,7 +51,7 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
 
 | Code | Konstante | Bedeutung |
 |------|-----------|-----------|
-| 0 | VT_E_NO_ERR | Erfolgreich |
+| 0 | [VT_E_NO_ERR](../c/IsoCommonDef.md#c.E_NO_ERR)| Erfolgreich |
 | -6 | VT_E_OVERFLOW | Pufferüberlauf |
 | -8 | VT_E_NOACT | Ungültiger Zustand |
 | -21 | VT_E_NO_INSTANCE | Keine VT-Instanz |

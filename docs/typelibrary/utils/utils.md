@@ -1,7 +1,7 @@
 # utils
 
 ```{toctree}
-E_STOPWATCH
+timing/timing
 FB_RANDOM
 OUT_ANY_CONSOLE
 ```

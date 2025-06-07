@@ -3,5 +3,6 @@
 ```{toctree}
 combi/combi
 event/event
-time/time
 ```
+
+time/time

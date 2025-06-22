@@ -31,5 +31,5 @@ signals/signals
 const/const
 splitting/splitting
 timing/timing
-
+sequence-control/sequence-control
 ```

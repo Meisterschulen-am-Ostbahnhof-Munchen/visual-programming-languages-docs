@@ -104,11 +104,25 @@ Eclipse 4diac Milestone
 
 Nightly Builds sind tägliche automatisch erstellte Versionen einer Software, die die neuesten Änderungen und Entwicklungen enthalten. Diese Builds werden häufig von Entwicklern genutzt, um die neuesten Funktionen zu testen und Fehler zu finden. Nightly Build Update URLs für 4diac sind Webadressen, die auf die neuesten täglich erstellten Versionen der 4diac-Software verweisen. Diese URLs werden verwendet, um Benutzern die Möglichkeit zu geben, die neuesten Entwicklungen von 4diac zu testen und Feedback zu geben. Nightly Builds sind jedoch nicht als stabile Versionen gedacht und sollten daher nicht in produktiven Umgebungen verwendet werden. Die Nightly Build Update-URL für 4diac ist nicht immer offen zugänglich.
 
-Ich empfehle folgende Vorgehensweise für das Nightly:
+#### Nightly Builds beziehen
 
-1.  [https://www.eclipse.org/4diac/en_dow.php](https://www.eclipse.org/4diac/en_dow.php)
-2.  Update auf RC
-3.  jetzt erst das Nightly eintragen.
+Sie haben zwei Möglichkeiten, die aktuellste Version der 4diac IDE zu erhalten:
 
-Eclipse 4diac Nightly  
+1. **Über das Update-System in der IDE** (empfohlen für kleine Updates):
+   - Öffnen Sie 4diac IDE
+   - Wählen Sie "Help" > "Check for Updates"
+   - Folgen Sie den Anweisungen
+
+2. **Manueller Download** (empfohlen für Neuinstallationen oder größere Updates):
+   - Laden Sie das aktuelle ZIP-Archiv von der Download Seite herunter
+   - Verwenden Sie zum Entpacken unbedingt **7-Zip** (oder ein vergleichbares Tool)
+     - *Wichtig:* Das integrierte Windows-Zip-Tool ist extrem langsam mit den 4diac-Archiven und kann zu langen Wartezeiten führen!
+
+#### Installation
+
+1. Entpacken Sie das heruntergeladene ZIP-Archiv mit 7-Zip
+2. Das entpackte Verzeichnis kann an beliebiger Stelle gespeichert werden
+3. Starten Sie die IDE über die `4diac-ide.exe` im Hauptverzeichnis
+
+### Eclipse 4diac Nightly Download Seite
 [https://download.eclipse.org/4diac/updates/nightly/](https://download.eclipse.org/4diac/updates/nightly/)

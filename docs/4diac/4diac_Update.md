@@ -124,5 +124,5 @@ Sie haben zwei Möglichkeiten, die aktuellste Version der 4diac IDE zu erhalten:
 2. Das entpackte Verzeichnis kann an beliebiger Stelle gespeichert werden
 3. Starten Sie die IDE über die `4diac-ide.exe` im Hauptverzeichnis
 
-### Eclipse 4diac Nightly Download Seite
+#### Eclipse 4diac Nightly Download Seite
 [https://download.eclipse.org/4diac/updates/nightly/](https://download.eclipse.org/4diac/updates/nightly/)

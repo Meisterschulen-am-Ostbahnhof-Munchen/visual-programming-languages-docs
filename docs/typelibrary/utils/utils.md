@@ -32,4 +32,9 @@ const/const
 splitting/splitting
 timing/timing
 sequence-control/sequence-control
+conversion_array/conversion_array
+conversion_struct/conversion_struct
+event_quarter/event_quarter
+events/events
+math/math
 ```

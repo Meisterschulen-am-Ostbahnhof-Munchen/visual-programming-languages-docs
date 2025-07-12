@@ -34,7 +34,7 @@ timing/timing
 sequence-control/sequence-control
 conversion_array/conversion_array
 conversion_struct/conversion_struct
-event_quarter/event_quarter
+event-quarter/event-quarter
 events/events
 math/math
 ```

@@ -20,6 +20,7 @@ net/net
 reconfiguration/reconfiguration
 resources/resources
 segments/segments
+signalprocessing/signalprocessing
 utils/utils
 math/math
 ```

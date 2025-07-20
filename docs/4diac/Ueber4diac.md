@@ -32,13 +32,11 @@ wir staunen und bewundern dieses technische Wunderbar.
 
 [https://www.fortiss.org/](https://www.fortiss.org/)
 
-[https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf](https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf)
+[https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf](https://web.archive.org/web/20230129204811/https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf)
 
 fortiss GmbH Landesforschungsinstitut des Freistaats Bayern für softwareintensive Systeme
 
 Guerickestr. 25 · 80805 München · Deutschland
-
-[https://www.fortiss.org/ergebnisse/software/4diac](https://www.fortiss.org/ergebnisse/software/4diac)
 
 [https://www.fortiss.org/aktuelles/details/professur-fuer-fortiss-wissenschaftler](https://www.fortiss.org/aktuelles/details/professur-fuer-fortiss-wissenschaftler)
 

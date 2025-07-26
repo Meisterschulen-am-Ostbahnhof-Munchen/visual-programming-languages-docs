@@ -88,8 +88,6 @@ jedoch ist von Dieter Hess, der absolut kein Freund der IEC 61499 ist. Schauen S
 
 [https://slideplayer.org/slide/879446/](https://slideplayer.org/slide/879446/)
 
-[https://issuu.com/hk-gt/docs/tech_201203_df55f692a05682](https://issuu.com/hk-gt/docs/tech_201203_df55f692a05682)
-
 [http://vyatkin.org/uploads/talk.pdf](http://vyatkin.org/uploads/talk.pdf)
 
 [https://www.profinet.felser.ch/was_ist_in_iec_61499_dann_anders_als_in_iec_61131.html](https://www.profinet.felser.ch/was_ist_in_iec_61499_dann_anders_als_in_iec_61131.html)
@@ -116,13 +114,13 @@ jedoch ist von Dieter Hess, der absolut kein Freund der IEC 61499 ist. Schauen S
 
 [https://www.nxtcontrol.com/verteilung/](https://www.nxtcontrol.com/verteilung/)
 
-[https://www.computer-automation.de/steuerungsebene/steuern-regeln/ein-neues-buendnis-auf-basis-der-iec-61499.191725.html](https://www.computer-automation.de/steuerungsebene/steuern-regeln/ein-neues-buendnis-auf-basis-der-iec-61499.191725.html)
+<https://www.computer-automation.de/steuern-und-regeln/ein-neues-buendnis-auf-basis-der-iec-61499.htm>
 
 #### universalautomation.org
 
 [https://universalautomation.org/](https://universalautomation.org/)
 
-[https://www.computer-automation.de/steuerungsebene/steuern-regeln/das-single-line-engineering.130428.html](https://www.computer-automation.de/steuerungsebene/steuern-regeln/das-single-line-engineering.130428.html)
+<https://www.computer-automation.de/steuern-und-regeln/das-single-line-engineering.htm>
 
 ## Englisch
 
@@ -174,7 +172,7 @@ Modelling Control Systems Using IEC 61499 (Iet Control Engineering, Band 95)
 
 ### Sonstiges Englisch
 
-[https://publik.tuwien.ac.at/files/PubDat_251131.pptx](https://publik.tuwien.ac.at/files/PubDat_251131.pptx)
+[https://publik.tuwien.ac.at/files/PubDat_251131.pptx](https://web.archive.org/web/20230129204830/https://publik.tuwien.ac.at/files/PubDat_251131.pptx)
 
 [IEC 61499 Applications on LinkedIn](https://www.linkedin.com/groups/4431365/)
 

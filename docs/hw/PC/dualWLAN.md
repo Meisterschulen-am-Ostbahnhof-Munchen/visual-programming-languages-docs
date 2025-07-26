@@ -49,11 +49,12 @@ Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS get
 | Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2 | [link](https://amzn.eu/d/5MxkOMx) | geht | geht | nicht funktional | geht |
 | Edimax EW-7811UN Super Mini WLAN USB-Stick (150MBit), Version 1 | [link](https://www.amazon.de/gp/product/B003MTTJOY) | geht | geht | geht | geht |
 | Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick | [link](https://amzn.eu/d/hnTHa3d) | geht | nicht funktional | nicht funktional | nicht funktional |
-| ALL-WA1200AC | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/261762/allnet-all-wa1200ac/1200mbit-wireless-ac-usb-3.0-dual-band-adapter) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/1513/allnet-wireless-ac-1200mbit-usb-3.0-wlan-stick-dongle-all-wa1200ac) | geht | geht | nicht funktional | nicht funktional |
-| ALL-WA0300AC | [link](https://shop.allnet.de/detail/index/sarticle/336852) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/72531/allnet-wireless-ac-usb-wlan-stick-dongle-all-wa0300ac) | geht | nicht funktional | nicht funktional | nicht funktional |
-| ALL-WA0150N (MTK7601) | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-adapter-karten/253781/allnet-all0235nano/wireless-n-150mbit-usb-stick) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-adapter-karten/1510/allnet-all-wa0150n/all0235nano/wireless-n-150mbit-usb-stick) | geht | geht | nicht funktional | nicht funktional |
-| ALL-WA0100N (RTL8188EU) | [link](https://shop.allnet.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/267408/allnet-all-wa0100n/150mbit-wireless-nano-usb-2.0-nano-adapter-rtl8188eu-chipset-ideal-fuer-bananapi/raspberry-pi/odroid-etc.) -- [innet24](https://www.innet24.de/netzwerk-aktive-komponenten/wireless-lan/wireless-lan-usb-adapter/1509/allnet-all-wa0100n/150mbit-wireless-nano-usb-2.0-nano-adapter-rtl8188eu-chipset-ideal-fuer-banana) | geht | geht | geht | geht |
-
+| ALL-WA1200AC | EOL | geht | geht | nicht funktional | nicht funktional |
+| ALL-WA0300AC | EOL | geht | nicht funktional | nicht funktional | nicht funktional |
+| ALL-WA0150N (MTK7601) | EOL | geht | geht | nicht funktional | nicht funktional |
+| ALL-WA0100N (RTL8188EU) | [link](https://shop.allnet.de/ALLNET-Wireless-N-100Mbit-USB-WLAN-Nano-Stick-ALL-WA0100N-RTL8188EU/119387) | geht | geht | nicht getestet | nicht getestet |
+| ALL-WA0150N (MTK7601) | [link](https://shop.allnet.de/ALLNET-Wireless-N-100Mbit-USB-WLAN-Nano-Stick-ALL-WA0150N-MTK7601/111798) | geht | geht | nicht getestet | nicht getestet |
+*EOL = End of Life, Produkt nicht mehr Erhältlich.
 ## Beschreibung der Verschiedenen Adapter:
 
 ### Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz

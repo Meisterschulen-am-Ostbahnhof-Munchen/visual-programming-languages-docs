@@ -26,6 +26,7 @@ Link zum Devkit: <https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp
 
 
 Spannungsteiler ist im Controller:
+47/13 
 
 
 

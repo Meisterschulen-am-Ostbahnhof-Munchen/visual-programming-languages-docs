@@ -4,5 +4,6 @@ Ein PC (Personal Computer) ist ein allgemein verwendbarer Computer, der für ver
 
 ```{toctree}
 SPS/SPS
+logiBUS/logiBUS
 PC/PC
 ```

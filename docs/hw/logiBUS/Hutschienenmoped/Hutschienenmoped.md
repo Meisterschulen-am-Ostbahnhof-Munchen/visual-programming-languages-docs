@@ -18,6 +18,7 @@ ACHTUNG: logiBUS® ist nicht auf dem Atom-Lite SKU:C008 lauffähig, nur auf dem 
 
 <https://docs.m5stack.com/en/unit/angle>
 
+Spannungsteiler ist NICHT im Controller sondern im Angle!!! Achtung wenn man den Eingang an andere Analogquellen anschließt muss ein externer Spannungsteiler vorgeschaltet werden. 
 
 
 

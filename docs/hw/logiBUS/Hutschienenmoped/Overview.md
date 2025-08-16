@@ -3,7 +3,7 @@
 Das Hutschienenmoped: Kompakte Steuerung für die DIN-Schiene
 Unser "Hutschienenmoped" ist die ideale Lösung für alle, die eine kompakte, flexible und kostengünstige Steuerung direkt im Schaltschrank benötigen. Montiert auf einer Standard-Hutschiene (DIN-Schiene), dient es als Gehirn für unzählige Automatisierungs- und Digitalisierungsaufgaben. Um den unterschiedlichen Anforderungen von Einsteigern und Profis gerecht zu werden, bieten wir das Hutschienenmoped in zwei Generationen an.
 
-#### 1. Das klassische Hutschienenmoped (Basis: ESP32)
+**1. Das klassische Hutschienenmoped (Basis: ESP32)**
 
 **Der bewährte Allrounder für den Einstieg.**
 
@@ -17,7 +17,7 @@ Wählen Sie diese Version, wenn Sie eine robuste und preiswerte Lösung für all
 
 ---
 
-#### 2. Das neue Hutschienenmoped S3 (Basis: ESP32-S3)
+**2. Das neue Hutschienenmoped S3 (Basis: ESP32-S3)**
 
 **Die nächste Generation für Performance, Konnektivität und KI.**
 

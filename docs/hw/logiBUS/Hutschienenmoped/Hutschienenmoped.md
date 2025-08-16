@@ -10,9 +10,9 @@ ACHTUNG: logiBUS® ist nicht auf dem Atom-Lite SKU:C008 lauffähig, nur auf dem 
 
 ### Analoge Eingänge
 
-| Ausgang: | PIN (ESP32) | Draht | Knopf |
-|----------|-------------|-------|-------|
-| Input_I2 | 32          | weiß  | Poti  |
+| Eingang:       | PIN (ESP32) | Draht | Knopf |
+|----------------|-------------|-------|-------|
+| AnalogInput_I2 | 32          | weiß  | Poti  |
 
 `ADC1_CHANNEL_4,     /*!< ADC1 channel 4 is GPIO32 */`
 
@@ -23,7 +23,7 @@ ACHTUNG: logiBUS® ist nicht auf dem Atom-Lite SKU:C008 lauffähig, nur auf dem 
 
 ### Digitale Eingänge
 
-| Ausgang: | PIN (ESP32) | Draht | Knopf |
+| Eingang: | PIN (ESP32) | Draht | Knopf |
 |----------|-------------|-------|-------|
 | Input_I1 | 26          | gelb  | Rot   |
 | Input_I2 | 32          | weiß  | Blau  |

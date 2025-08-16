@@ -1,0 +1,24 @@
+# bitwiseOperators
+
+```{toctree}
+AND_8
+XOR_9
+F_SHR
+OR_10
+AND_7
+F_AND
+OR_16
+XOR_8
+XOR_10
+OR_8
+F_OR
+F_SHL
+F_ROL
+OR_7
+OR_9
+F_ROR
+F_XOR
+AND_9
+XOR_7
+AND_10
+```

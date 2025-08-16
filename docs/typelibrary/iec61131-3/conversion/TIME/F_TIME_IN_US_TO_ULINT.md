@@ -1,0 +1,44 @@
+# F_TIME_IN_US_TO_ULINT
+
+* * * * * * * * * *
+## Einleitung
+Der Funktionsblock `F_TIME_IN_US_TO_ULINT` dient der Konvertierung eines Zeitwerts in Mikrosekunden (`TIME`) in einen vorzeichenlosen 64-Bit-Integer-Wert (`ULINT`). Dies ist besonders nützlich, wenn Zeitwerte in numerische Berechnungen oder für weitere Verarbeitungsschritte umgewandelt werden müssen.
+
+## Schnittstellenstruktur
+
+### **Ereignis-Eingänge**
+- **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verbunden.
+
+### **Ereignis-Ausgänge**
+- **CNF**: Signalisiert den Abschluss der Konvertierung. Der Ausgang ist mit dem Daten-Ausgang `OUT` verbunden.
+
+### **Daten-Eingänge**
+- **IN**: Der Eingang erwartet einen Zeitwert vom Typ `TIME` (in Mikrosekunden), der konvertiert werden soll.
+
+### **Daten-Ausgänge**
+- **OUT**: Gibt den konvertierten Wert als vorzeichenlosen 64-Bit-Integer (`ULINT`) zurück.
+
+### **Adapter**
+- Keine Adapter vorhanden.
+
+## Funktionsweise
+Der Funktionsblock nutzt den Algorithmus `REQ`, um den eingehenden `TIME`-Wert in Mikrosekunden in einen `ULINT`-Wert umzuwandeln. Die Konvertierung erfolgt durch die Funktion `TIME_IN_US_TO_ULINT(IN)`. Sobal die Konvertierung abgeschlossen ist, wird das Ereignis `CNF` ausgelöst, um den erfolgreichen Abschluss zu signalisieren.
+
+## Technische Besonderheiten
+- Der Funktionsblock ist einfach aufgebaut und enthält nur einen Algorithmus.
+- Die Konvertierung ist direkt und ohne zusätzliche Parameter oder Zustandsverwaltung.
+
+## Zustandsübersicht
+Da es sich um einen einfachen Funktionsblock handelt, gibt es keine komplexen Zustandsübergänge. Der Block reagiert auf das `REQ`-Ereignis, führt die Konvertierung durch und signalisiert den Abschluss mit `CNF`.
+
+## Anwendungsszenarien
+- Zeitmessung und -verarbeitung in Steuerungssystemen.
+- Umwandlung von Zeitwerten für die Verwendung in Berechnungen oder Logging-Systemen.
+- Integration in größere Steuerungsalgorithmen, die numerische Zeitwerte benötigen.
+
+## Vergleich mit ähnlichen Bausteinen
+- Im Vergleich zu generischen Konvertierungsblöcken ist `F_TIME_IN_US_TO_ULINT` spezialisiert auf die Umwandlung von `TIME` zu `ULINT`.
+- Andere Blöcke könnten zusätzliche Funktionen wie Skalierung oder Filterung anbieten, was hier nicht der Fall ist.
+
+## Fazit
+Der Funktionsblock `F_TIME_IN_US_TO_ULINT` ist ein einfaches, aber effektives Werkzeug zur Konvertierung von Zeitwerten in Mikrosekunden in numerische Werte. Seine Einfachheit und direkte Funktionsweise machen ihn zu einer zuverlässigen Komponente in Steuerungsanwendungen, die präzise Zeitverarbeitung erfordern.

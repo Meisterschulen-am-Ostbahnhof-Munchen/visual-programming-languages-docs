@@ -1,6 +1,17 @@
 # Hutschienenmoped
 
 
+## IO
+
+### Analoge Eingänge
+
+### Digitale Eingänge
+
+### Digitale Ausgänge
+
+### LED Strip
+
+
 
 
 

@@ -14,6 +14,8 @@ ACHTUNG: logiBUS® ist nicht auf dem Atom-Lite SKU:C008 lauffähig, nur auf dem 
 |----------|-------------|-------|-------|
 | Input_I2 | 32          | weiß  | Poti  |
 
+`ADC1_CHANNEL_4,     /*!< ADC1 channel 4 is GPIO32 */`
+
 <https://docs.m5stack.com/en/unit/angle>
 
 

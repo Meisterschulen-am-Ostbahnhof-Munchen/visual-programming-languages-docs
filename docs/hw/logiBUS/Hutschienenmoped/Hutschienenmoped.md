@@ -9,6 +9,15 @@
 
 ### Digitale Ausgänge
 
+| Ausgang:  | PIN (ESP32) |
+|-----------|-------------|
+| Output_Q1 | 19          |
+| Output_Q2 | 23          |
+| Output_Q3 | 33          |
+| Output_Q4 | 25          |
+
+
+
 ### LED Strip
 
 

@@ -12,6 +12,12 @@ ACHTUNG: logiBUS® ist nicht auf dem Atom-Lite SKU:C008 lauffähig, nur auf dem 
 
 ### Digitale Eingänge
 
+| Ausgang: | PIN (ESP32) | Draht | Knopf |
+|----------|-------------|-------|-------|
+| Input_I1 | 26          | gelb  | Rot   |
+| Input_I2 | 32          | weiß  | Blau  |
+| Input_I3 | 39          | -     | Grau  |
+
 ### Digitale Ausgänge
 
 | Ausgang:  | PIN (ESP32) |

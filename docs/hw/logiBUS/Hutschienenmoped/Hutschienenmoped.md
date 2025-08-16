@@ -10,6 +10,15 @@ ACHTUNG: logiBUS® ist nicht auf dem Atom-Lite SKU:C008 lauffähig, nur auf dem 
 
 ### Analoge Eingänge
 
+| Ausgang: | PIN (ESP32) | Draht | Knopf |
+|----------|-------------|-------|-------|
+| Input_I2 | 32          | weiß  | Poti  |
+
+<https://docs.m5stack.com/en/unit/angle>
+
+
+
+
 ### Digitale Eingänge
 
 | Ausgang: | PIN (ESP32) | Draht | Knopf |
@@ -17,6 +26,9 @@ ACHTUNG: logiBUS® ist nicht auf dem Atom-Lite SKU:C008 lauffähig, nur auf dem 
 | Input_I1 | 26          | gelb  | Rot   |
 | Input_I2 | 32          | weiß  | Blau  |
 | Input_I3 | 39          | -     | Grau  |
+
+<https://docs.m5stack.com/en/unit/dual_button>
+(Gauer Knopf ist direkt am M5)
 
 ### Digitale Ausgänge
 

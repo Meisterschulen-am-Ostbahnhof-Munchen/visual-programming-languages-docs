@@ -10,9 +10,9 @@ ACHTUNG: logiBUS® ist nicht auf dem Atom-Lite SKU:C008 lauffähig, nur auf dem 
 
 ### Analoge Eingänge
 
-| Eingang:       | PIN (ESP32) | Draht | Knopf |
-|----------------|-------------|-------|-------|
-| AnalogInput_I2 | 32          | weiß  | Poti  |
+| Eingang:       | PIN (ESP32)   | Draht | Knopf |
+|----------------|---------------|-------|-------|
+| AnalogInput_I2 | 32            | weiß  | Poti  |
 
 `ADC1_CHANNEL_4,     /*!< ADC1 channel 4 is GPIO32 */`
 
@@ -24,23 +24,23 @@ Spannungsteiler ist NICHT im Controller sondern im Angle!!! Achtung wenn man den
 
 ### Digitale Eingänge
 
-| Eingang: | PIN (ESP32) | Draht | Knopf |
-|----------|-------------|-------|-------|
-| Input_I1 | 26          | gelb  | Rot   |
-| Input_I2 | 32          | weiß  | Blau  |
-| Input_I3 | 39          | -     | Grau  |
+| Eingang: | PIN (ESP32)   | Draht | Knopf |
+|----------|---------------|-------|-------|
+| Input_I1 | 26            | gelb  | Rot   |
+| Input_I2 | 32            | weiß  | Blau  |
+| Input_I3 | 39            | -     | Grau  |
 
 <https://docs.m5stack.com/en/unit/dual_button>
 (Gauer Knopf ist direkt am M5)
 
 ### Digitale Ausgänge
 
-| Ausgang:  | PIN (ESP32) |
-|-----------|-------------|
-| Output_Q1 | 19          |
-| Output_Q2 | 23          |
-| Output_Q3 | 33          |
-| Output_Q4 | 25          |
+| Ausgang:  | PIN (ESP32)   |
+|-----------|---------------|
+| Output_Q1 | 19            |
+| Output_Q2 | 23            |
+| Output_Q3 | 33            |
+| Output_Q4 | 25            |
 
 
 

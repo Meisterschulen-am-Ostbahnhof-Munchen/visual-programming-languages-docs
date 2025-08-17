@@ -1,0 +1,4 @@
+[submodule "training1"]
+	path = training1
+	url = https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac_training1.git
+

@@ -99,6 +99,7 @@ runtime/runtime
 DasErsteProjekt/DasErsteProjekt
 Interface/Interface
 Übungsaufgaben
+training1
 constants/constants
 typelibrary/typelibrary
 genindex

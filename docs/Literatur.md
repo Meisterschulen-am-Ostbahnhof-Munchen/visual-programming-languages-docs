@@ -54,7 +54,23 @@ Live-Interview mit Dieter Hess (Geschäftsführer, 3S-Smart Software Solutions) 
 
 jedoch ist von Dieter Hess, der absolut kein Freund der IEC 61499 ist. Schauen Sie selbst: 
 
-[https://www.youtube.com/watch?v=Go75w3-HJhw](https://www.youtube.com/watch?v=Go75w3-HJhw)
+
+
+[Trend im Engineering - IEC 61131 versus IEC 61499](https://www.youtube.com/watch?v=Go75w3-HJhw)
+
+
+
+[5 Thesen zu: Trend im Engineering - IEC 61131 versus IEC 61499](https://www.youtube.com/watch?v=EC0sL5_x1l4)
+
+ich habe für jedes dieser Videos ein Notebooklm erstellt: 
+
+<https://notebooklm.google.com/notebook/c0639f91-23c3-4194-b347-e789f4a32732>
+
+<https://notebooklm.google.com/notebook/bf1b73cf-1ca5-4ba2-a2f1-0c336f75af09>
+
+
+
+
 
 #### 4diac Playlist
 

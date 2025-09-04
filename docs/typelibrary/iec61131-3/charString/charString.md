@@ -1,0 +1,14 @@
+# charString
+
+```{toctree}
+F_CONCAT_DATE_TOD
+F_FIND
+F_LEN
+F_MID
+F_DELETE
+F_RIGHT
+F_CONCAT
+F_LEFT
+F_INSERT
+F_REPLACE
+```

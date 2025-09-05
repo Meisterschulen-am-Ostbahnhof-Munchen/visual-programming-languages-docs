@@ -1,6 +1,7 @@
 # XOR_10
 
-![XOR_10 Funktionsblock](https://www.eclipse.org/4diac/images/logo.png) *(Bildbeispiel, nicht der tatsächliche FB)*
+<img width="400" alt="XOR_10 Funktionsblock" src="https://github.com/user-attachments/assets/7fb9f08e-7e56-4861-be45-c8e99338ca01" />
+
 
 * * * * * * * * * *
 

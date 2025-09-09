@@ -9,11 +9,9 @@ myst:
     "property=og:locale": "de"
 ---
 
-
-```{include} ../README.md
-```
-
 **Welcome to visual-programming-languages  documentation!**
+
+Main Menu: <https://www.ms-muc-docs.de/>
 
 **Einleitung**
 

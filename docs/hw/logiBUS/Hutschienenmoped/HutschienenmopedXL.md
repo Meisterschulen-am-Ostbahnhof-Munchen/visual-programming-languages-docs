@@ -22,7 +22,7 @@ Link zum Devkit: <https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp
     ADC1_CHANNEL_5,     /*!< ADC1 channel 5 is GPIO6  */
     ADC1_CHANNEL_6,     /*!< ADC1 channel 6 is GPIO7  */
     ADC1_CHANNEL_8,     /*!< ADC1 channel 8 is GPIO9  */
-    ```
+```
 
 
 Spannungsteiler ist im Controller:

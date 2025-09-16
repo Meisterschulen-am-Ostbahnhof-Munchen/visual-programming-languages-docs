@@ -28,7 +28,7 @@ CAN-RX 35
     ADC1_CHANNEL_6,     /*!< ADC1 channel 6 is GPIO34 */
 
 
-    ```
+```
 
 
 Spannungsteiler ist im Controller:

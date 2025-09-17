@@ -6,4 +6,4 @@
 | Ausgang:  | PIN (ESP32S3) |
 |-----------|---------------|
 | Output_Q1 | 21            |
-| Output_Q2 | 47            |
+| Output_Q2 | 46            |

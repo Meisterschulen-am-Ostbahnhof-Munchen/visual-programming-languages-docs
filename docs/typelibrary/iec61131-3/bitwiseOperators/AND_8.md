@@ -1,5 +1,7 @@
 # AND_8
 
+<img width="1123" height="360" alt="AND_8" src="https://github.com/user-attachments/assets/355c40e0-f2ad-48ea-be24-7a6449093f41" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `AND_8` führt eine bitweise logische UND-Operation auf bis zu acht Eingängen durch. Es handelt sich um einen generischen Funktionsblock, der mit verschiedenen Bit-Datentypen arbeiten kann. Der Block ist gemäß der Norm IEC 61131-3 klassifiziert und dient zur Verarbeitung von booleschen Operationen.

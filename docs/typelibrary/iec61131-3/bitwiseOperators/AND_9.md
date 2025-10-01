@@ -1,5 +1,7 @@
 # AND_9
 
+<img width="1312" height="451" alt="AND_9" src="https://github.com/user-attachments/assets/47386bac-4db8-4618-9536-8cf27bf07c3c" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `AND_9` führt eine bitweise logische UND-Operation (AND) auf bis zu neun Eingangsvariablen durch. Es handelt sich um einen generischen Funktionsblock, der mit verschiedenen Bit-Datentypen arbeiten kann. Der Block ist gemäß dem Standard IEC 61131-3 klassifiziert und eignet sich für Anwendungen in der Automatisierungstechnik.

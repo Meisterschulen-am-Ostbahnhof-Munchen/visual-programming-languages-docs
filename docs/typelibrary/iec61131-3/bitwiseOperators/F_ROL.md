@@ -1,5 +1,7 @@
 # F_ROL
 
+<img width="1340" height="208" alt="F_ROL" src="https://github.com/user-attachments/assets/24e2181b-8b77-46bf-bf08-bc549c06ab07" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_ROL` (Rotate Left) führt eine bitweise Linksrotation durch. Er rotiert den Eingabewert um eine angegebene Anzahl von Bits nach links und füllt die freiwerdenden Stellen rechts mit Nullen auf. Dieser Baustein ist gemäß der Norm IEC 61131-3 als Standard-Bitverschiebungsfunktion klassifiziert.

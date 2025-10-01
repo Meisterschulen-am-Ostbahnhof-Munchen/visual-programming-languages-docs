@@ -1,5 +1,7 @@
 # AND_10
 
+<img width="1136" height="412" alt="AND_10" src="https://github.com/user-attachments/assets/753b5e30-df9f-42fe-bbf1-aa33011dd4fc" />
+
 * * * * * * * * * *
 ## Einleitung
 Der `AND_10` Funktionsblock ist ein generischer Baustein zur Berechnung einer bitweisen logischen UND-Verknüpfung. Er unterstützt bis zu 10 Eingangsvariablen und ist gemäß der IEC 61131-3 Norm klassifiziert. Der FB ist Teil des `iec61131::bitwiseOperators` Pakets und eignet sich für Anwendungen, die logische Operationen auf Bit-Ebene erfordern.

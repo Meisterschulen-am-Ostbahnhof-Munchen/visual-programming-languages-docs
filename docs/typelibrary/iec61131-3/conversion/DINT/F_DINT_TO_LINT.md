@@ -1,5 +1,7 @@
 # F_DINT_TO_LINT
 
+<img width="1434" height="212" alt="F_DINT_TO_LINT" src="https://github.com/user-attachments/assets/cf39f6ad-2d08-456e-ae6b-1a02e87a6f50" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_LINT` dient der Konvertierung eines 32-Bit Ganzzahlwerts (DINT) in einen 64-Bit Ganzzahlwert (LINT). Dieser Baustein ist besonders nützlich in Szenarien, bei denen eine Erweiterung des Wertebereichs oder eine Typanpassung für nachfolgende Verarbeitungsschritte erforderlich ist.

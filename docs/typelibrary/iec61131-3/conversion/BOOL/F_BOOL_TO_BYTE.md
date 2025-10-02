@@ -1,5 +1,7 @@
 # F_BOOL_TO_BYTE
 
+<img width="1231" height="182" alt="F_BOOL_TO_BYTE" src="https://github.com/user-attachments/assets/726d9bee-c530-487f-ab01-086582dfd936" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_BYTE` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen Byte-Wert (`BYTE`). Diese Konvertierung ist nützlich, wenn boolesche Signale in Systemen verarbeitet werden müssen, die Byte-Daten erfordern.

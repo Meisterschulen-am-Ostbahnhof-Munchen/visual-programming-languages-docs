@@ -1,5 +1,7 @@
 # F_DINT_TO_INT
 
+<img width="1425" height="212" alt="F_DINT_TO_INT" src="https://github.com/user-attachments/assets/5147e94b-3493-443d-9b11-48a63ecf9d50" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_INT` dient der Konvertierung eines 32-Bit-DINT-Wertes in einen 16-Bit-INT-Wert. Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten zwischen Systemen mit unterschiedlicher Wortbreite ausgetauscht werden müssen.

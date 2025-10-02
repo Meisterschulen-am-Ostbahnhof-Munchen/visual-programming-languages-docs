@@ -1,5 +1,7 @@
 # F_BOOL_TO_DINT
 
+<img width="1235" height="182" alt="F_BOOL_TO_DINT" src="https://github.com/user-attachments/assets/a1422f1d-6480-464e-9ae1-5251c70d054e" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_DINT` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen 32-Bit-Integer-Wert (`DINT`). Diese Konvertierung ist nützlich, wenn boolesche Signale in numerische Berechnungen oder Steuerungen integriert werden müssen.

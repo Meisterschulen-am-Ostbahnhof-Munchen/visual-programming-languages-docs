@@ -1,5 +1,7 @@
 # F_DINT_TO_BYTE
 
+<img width="1437" height="212" alt="F_DINT_TO_BYTE" src="https://github.com/user-attachments/assets/ed116d5d-f0ed-4f4d-9ddc-489b45dec70f" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_BYTE` dient der Konvertierung eines 32-Bit Ganzzahlwerts (DINT) in einen 8-Bit Ganzzahlwert (BYTE). Diese Konvertierung ist besonders nützlich, wenn Daten zwischen Systemen mit unterschiedlichen Wortbreiten ausgetauscht oder verarbeitet werden müssen.

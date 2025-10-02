@@ -1,5 +1,7 @@
 # AND_6
 
+![AND_6](https://user-images.githubusercontent.com/116869307/214143980-5f9fcd38-c66e-4627-9ad6-6695d954dd53.png)
+
 * * * * * * * * * *
 ## Einleitung
 Der AND_6 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen booleschen UND-Verknüpfung mit sechs Eingängen. Er implementiert eine Standard-Funktion gemäß IEC 61131-3 und führt eine logische UND-Operation auf Bit-Ebene für bis zu sechs Eingangswerte durch.

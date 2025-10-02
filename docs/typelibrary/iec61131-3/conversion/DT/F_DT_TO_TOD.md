@@ -1,5 +1,7 @@
 # F_DT_TO_TOD
 
+<img width="1198" height="187" alt="F_DT_TO_TOD" src="https://github.com/user-attachments/assets/15e611cf-4581-41b1-a782-bf2f2d2920af" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DT_TO_TOD` dient der Konvertierung eines Datums- und Zeitwerts (DT) in einen reinen Zeitwert (TOD - Time of Day). Diese Funktion ist besonders nützlich, wenn nur die Tageszeit aus einem kombinierten Datums- und Zeitstempel extrahiert werden soll.

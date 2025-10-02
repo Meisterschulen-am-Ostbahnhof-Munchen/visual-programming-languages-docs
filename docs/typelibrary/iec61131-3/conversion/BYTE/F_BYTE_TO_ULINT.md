@@ -1,5 +1,7 @@
 # F_BYTE_TO_ULINT
 
+<img width="1451" height="212" alt="F_BYTE_TO_ULINT" src="https://github.com/user-attachments/assets/d4e7fc4c-195c-4c12-b30d-9326c5eea4de" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_ULINT` dient der Konvertierung eines `BYTE`-Wertes in einen `ULINT`-Wert. Diese Konvertierung ist insbesondere in Szenarien nützlich, in denen Daten unterschiedlicher Größe verarbeitet oder weitergegeben werden müssen.

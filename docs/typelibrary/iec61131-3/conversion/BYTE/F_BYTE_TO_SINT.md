@@ -1,5 +1,7 @@
 # F_BYTE_TO_SINT
 
+<img width="1436" height="211" alt="F_BYTE_TO_SINT" src="https://github.com/user-attachments/assets/d91baa83-169e-4ee8-860d-f5233c52c8e8" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_SINT` dient der Konvertierung eines Datentyps `BYTE` in den Datentyp `SINT`. Dieser Block ist besonders nützlich in Szenarien, wo eine direkte Typumwandlung ohne zusätzliche Berechnungen erforderlich ist.

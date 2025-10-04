@@ -1,5 +1,7 @@
 # F_CONCAT
 
+<img width="1436" height="240" alt="F_CONCAT" src="https://github.com/user-attachments/assets/5f43c8b8-b683-4d0d-83c8-16dc8e4e987d" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_CONCAT` dient der Verkettung (Konkatenation) von zwei Zeichenketten (Strings). Er ist Teil der Standard-Bibliothek für Zeichen- und String-Operationen gemäß IEC 61131-3.

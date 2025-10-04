@@ -1,5 +1,7 @@
 # F_SHR
 
+<img width="1350" height="208" alt="F_SHR" src="https://github.com/user-attachments/assets/7ff0f80c-c8c6-4472-85d8-32658fa25627" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_SHR` führt eine bitweise Rechtsverschiebung (Shift Right) durch. Er ist Teil der Standard-Bit-Operatoren gemäß IEC 61131-3 und wird für logische und arithmetische Operationen in Steuerungsanwendungen eingesetzt.

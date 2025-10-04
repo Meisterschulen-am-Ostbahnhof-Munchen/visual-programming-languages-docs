@@ -1,5 +1,7 @@
 # F_BOOL_TO_ULINT
 
+<img width="1242" height="183" alt="F_BOOL_TO_ULINT" src="https://github.com/user-attachments/assets/b10992cb-8e8e-46fe-85a0-f9372e711d1c" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_ULINT` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen vorzeichenlosen 64-Bit-Ganzzahlwert (`ULINT`). Diese Konvertierung ist insbesondere in Szenarien nützlich, in denen boolesche Zustände in numerische Werte umgewandelt werden müssen, beispielsweise für die Verarbeitung in mathematischen Operationen oder für die Speicherung in Datenbanken.

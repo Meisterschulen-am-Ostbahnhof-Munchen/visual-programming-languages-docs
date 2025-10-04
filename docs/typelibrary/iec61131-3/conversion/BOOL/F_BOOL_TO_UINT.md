@@ -1,5 +1,7 @@
 # F_BOOL_TO_UINT
 
+<img width="1230" height="183" alt="F_BOOL_TO_UINT" src="https://github.com/user-attachments/assets/0ed51abc-df99-4646-bb36-6243ba00a996" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_UINT` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen vorzeichenlosen Integerwert (`UINT`). Diese Konvertierung ist besonders nützlich, wenn boolesche Signale in numerische Werte umgewandelt werden müssen, z.B. für weitere Berechnungen oder Steuerungszwecke.

@@ -1,5 +1,7 @@
 # F_BYTE_TO_DINT
 
+<img width="1234" height="183" alt="F_BYTE_TO_DINT" src="https://github.com/user-attachments/assets/33fb3b6c-7400-46dd-b1bd-7f5031adddf3" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_DINT` dient der Konvertierung eines `BYTE`-Wertes in einen `DINT`-Wert. Er ist Teil der `iec61131::conversion`-Bibliothek und ermöglicht eine einfache und effiziente Typumwandlung zwischen diesen beiden Datentypen.

@@ -1,5 +1,7 @@
 # F_WORD_BCD_TO_UINT
 
+<img width="1281" height="182" alt="F_WORD_BCD_TO_UINT" src="https://github.com/user-attachments/assets/37d8f223-a93a-45ff-8ae6-a51b72d499a3" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WORD_BCD_TO_UINT` dient der Konvertierung eines BCD-codierten WORD-Wertes in einen vorzeichenlosen Integer (UINT). Dies ist besonders nützlich in Anwendungen, bei denen Daten im BCD-Format verarbeitet oder angezeigt werden müssen.

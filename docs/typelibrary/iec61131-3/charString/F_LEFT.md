@@ -1,5 +1,7 @@
 # F_LEFT
 
+<img width="1279" height="207" alt="F_LEFT" src="https://github.com/user-attachments/assets/a5684213-fe32-44e3-a3b3-69bfaefab215" />
+
 * * * * * * * * * *
 
 ## Einleitung

@@ -1,5 +1,7 @@
 # F_LWORD_BCD_TO_ULINT
 
+<img width="1304" height="185" alt="F_LWORD_BCD_TO_ULINT" src="https://github.com/user-attachments/assets/0e3846eb-9d65-4ac0-b7c1-067b148e9884" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LWORD_BCD_TO_ULINT` dient der Konvertierung eines BCD-kodierten `LWORD`-Werts in einen `ULINT`-Wert. Dies ist besonders nützlich in Anwendungen, wo BCD-kodierte Daten verarbeitet werden müssen, wie z.B. in industriellen Steuerungen oder Kommunikationsprotokollen.

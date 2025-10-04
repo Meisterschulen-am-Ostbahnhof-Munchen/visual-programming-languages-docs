@@ -1,5 +1,7 @@
 # F_DINT_TO_UDINT
 
+<img width="1454" height="217" alt="F_DINT_TO_UDINT" src="https://github.com/user-attachments/assets/1f958f49-ab73-4ac0-a2dd-fd1379a3cc6e" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_UDINT` dient der Konvertierung eines 32-Bit vorzeichenbehafteten Integer-Werts (DINT) in einen 32-Bit vorzeichenlosen Integer-Wert (UDINT). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Datentypen verwenden.

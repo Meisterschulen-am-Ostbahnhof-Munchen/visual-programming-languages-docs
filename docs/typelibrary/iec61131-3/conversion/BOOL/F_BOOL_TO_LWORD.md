@@ -1,5 +1,7 @@
 # F_BOOL_TO_LWORD
 
+<img width="1242" height="182" alt="F_BOOL_TO_LWORD" src="https://github.com/user-attachments/assets/eed96580-b3cb-4354-91df-bc8b33c8a966" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_LWORD` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen 64-Bit langen vorzeichenlosen Integerwert (`LWORD`). Diese Konvertierung ist insbesondere in Szenarien nützlich, in denen boolesche Werte in größere Datenstrukturen eingebettet oder mit anderen langen Integerwerten verarbeitet werden müssen.

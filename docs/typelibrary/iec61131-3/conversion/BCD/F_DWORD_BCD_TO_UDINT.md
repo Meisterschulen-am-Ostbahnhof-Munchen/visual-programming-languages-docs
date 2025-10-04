@@ -1,5 +1,7 @@
 # F_DWORD_BCD_TO_UDINT
 
+<img width="1089" height="154" alt="F_DWORD_BCD_TO_UDINT" src="https://github.com/user-attachments/assets/4f68ef0e-2d87-4362-94ac-25386376948e" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DWORD_BCD_TO_UDINT` dient der Konvertierung eines BCD-codierten DWORD-Werts in einen UDINT-Wert. BCD (Binary Coded Decimal) ist eine Codierungsmethode, bei der jede Ziffer einer Dezimalzahl durch vier Bits dargestellt wird. Dieser Funktionsblock ist besonders nützlich in Anwendungen, bei denen BCD-codierte Daten verarbeitet werden müssen.

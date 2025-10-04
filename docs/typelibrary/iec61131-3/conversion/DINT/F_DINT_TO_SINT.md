@@ -1,5 +1,7 @@
 # F_DINT_TO_SINT
 
+<img width="1437" height="217" alt="F_DINT_TO_SINT" src="https://github.com/user-attachments/assets/a19ea1e6-6fc7-492c-8a92-09e3466d0f6c" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_SINT` dient der Konvertierung eines 32-Bit Ganzzahlwertes (DINT) in einen 8-Bit Ganzzahlwert (SINT). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen unterschiedlich großen Integer-Datentypen erforderlich ist.

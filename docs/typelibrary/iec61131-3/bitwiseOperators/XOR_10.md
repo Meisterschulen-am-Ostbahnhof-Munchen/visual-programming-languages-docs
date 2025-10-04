@@ -1,6 +1,6 @@
 # XOR_10
 
-<img width="400" alt="XOR_10 Funktionsblock" src="https://github.com/user-attachments/assets/7fb9f08e-7e56-4861-be45-c8e99338ca01" />
+<img width="1133" height="411" alt="XOR_10" src="https://github.com/user-attachments/assets/fae74b7d-690a-4c2a-bd06-0c737cafc41d" />
 
 
 * * * * * * * * * *

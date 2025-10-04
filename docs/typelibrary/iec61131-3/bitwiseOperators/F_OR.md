@@ -1,5 +1,7 @@
 # F_OR
 
+<img width="1324" height="244" alt="F_OR" src="https://github.com/user-attachments/assets/aef4acae-7a18-40f2-85a5-69e0c6e0ef3b" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_OR` implementiert eine bitweise ODER-Verknüpfung gemäß dem IEC 61131-3 Standard. Er führt eine logische ODER-Operation auf zwei Eingangsvariablen vom Typ `ANY_BIT` durch und gibt das Ergebnis auf dem Ausgang aus.

@@ -1,5 +1,7 @@
 # F_MID
 
+<img width="1158" height="232" alt="F_MID" src="https://github.com/user-attachments/assets/0f4a4667-023e-4ada-8ea0-2df3b494c7db" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_MID` dient zur Extraktion einer Teilzeichenkette aus einer gegebenen Zeichenkette. Dabei wird eine bestimmte Anzahl von Zeichen ab einer definierten Startposition extrahiert. Der FB ist Teil der Standard-Charakter- und String-Funktionen gemäß IEC 61131-3.

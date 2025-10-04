@@ -1,5 +1,7 @@
 # F_BYTE_AS_WSTRING
 
+<img width="1274" height="183" alt="F_BYTE_AS_WSTRING" src="https://github.com/user-attachments/assets/711f52f0-48d7-47e3-bb8c-36a79a97fac4" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BYTE_AS_WSTRING` dient der Konvertierung eines BYTE-Wertes in einen WSTRING-Wert. Dies ist besonders nützlich in Szenarien, wo Byte-Daten als Unicode-Strings weiterverarbeitet oder ausgegeben werden müssen.

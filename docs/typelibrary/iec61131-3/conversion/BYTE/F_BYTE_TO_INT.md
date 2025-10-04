@@ -1,5 +1,7 @@
 # F_BYTE_TO_INT
 
+<img width="1421" height="210" alt="F_BYTE_TO_INT" src="https://github.com/user-attachments/assets/776dfcd4-d0f2-4a7f-9ef6-b4d4a2df49d0" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_INT` dient der Konvertierung eines `BYTE`-Wertes in einen `INT`-Wert. Er ist Teil des `iec61131::conversion`-Pakets und ermöglicht eine einfache und effiziente Typumwandlung zwischen diesen beiden Datentypen.

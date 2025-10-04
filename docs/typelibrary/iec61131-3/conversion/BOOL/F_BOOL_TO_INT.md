@@ -1,5 +1,7 @@
 # F_BOOL_TO_INT
 
+<img width="1221" height="182" alt="F_BOOL_TO_INT" src="https://github.com/user-attachments/assets/b06391ef-074e-42e4-a3ae-ee819a369ccb" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_INT` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen ganzzahligen Wert (`INT`). Dabei wird `TRUE` in `1` und `FALSE` in `0` umgewandelt. Der Block ist besonders nützlich in Szenarien, wo boolesche Logik in numerische Berechnungen integriert werden muss.

@@ -1,6 +1,6 @@
 # AND_7
 
-![AND_7 Funktionsblock](https://www.eclipse.org/4diac/en/images/logo.png) *(Bildbeispiel, nicht der tatsächliche FB)*
+<img width="1123" height="339" alt="AND_7 Funktinosblock" src="https://github.com/user-attachments/assets/a65ddf80-7688-483f-a906-c1dfff9fabd3" />
 
 * * * * * * * * * *
 

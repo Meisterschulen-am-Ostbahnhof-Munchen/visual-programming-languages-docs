@@ -1,5 +1,7 @@
 # F_BOOL_AS_STRING
 
+<img width="1257" height="182" alt="F_BOOL_AS_STRING" src="https://github.com/user-attachments/assets/943966eb-d165-4fd6-aead-9d6b33d6078d" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BOOL_AS_STRING` dient zur Konvertierung eines booleschen Wertes (`BOOL`) in eine Zeichenkette (`STRING`). Diese Funktionalität ist besonders nützlich, wenn boolesche Werte für die Ausgabe oder Weiterverarbeitung in einem Textformat benötigt werden.

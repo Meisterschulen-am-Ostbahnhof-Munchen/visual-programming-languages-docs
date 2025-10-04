@@ -1,5 +1,7 @@
 # F_DINT_TO_UINT
 
+<img width="1442" height="217" alt="F_DINT_TO_UINT" src="https://github.com/user-attachments/assets/19436375-bd4c-4e93-ad90-b387e008a9c2" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_UINT` dient der Konvertierung eines 32-Bit Integer-Wertes (DINT) in einen vorzeichenlosen 32-Bit Integer-Wert (UINT). Dieser Block ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.

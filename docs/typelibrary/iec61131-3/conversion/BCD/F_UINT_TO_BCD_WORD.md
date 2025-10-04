@@ -1,5 +1,7 @@
 # F_UINT_TO_BCD_WORD
 
+<img width="1281" height="185" alt="F_UINT_TO_BCD_WORD" src="https://github.com/user-attachments/assets/8e1d0c92-d549-4131-a8b9-a7bbc0add010" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_UINT_TO_BCD_WORD` dient der Konvertierung eines vorzeichenlosen Integer-Werts (UINT) in ein BCD-kodiertes Wort (WORD). BCD (Binary Coded Decimal) ist eine Methode zur Darstellung von Dezimalzahlen, bei der jede Ziffer durch 4 Bits kodiert wird. Dieser Baustein ist besonders nützlich in Anwendungen, bei denen numerische Werte in einem für Menschen lesbaren Format ausgegeben werden müssen, wie z.B. in Anzeigesystemen oder Druckern.

@@ -1,5 +1,7 @@
 # F_XOR
 
+<img width="1149" height="208" alt="F_XOR" src="https://github.com/user-attachments/assets/5f3451b6-8e0a-479b-9d80-1af4d73f9e69" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_XOR` führt eine bitweise XOR-Operation (exklusives ODER) auf zwei Eingabewerten durch. Er ist Teil der Standard-Bitoperationen gemäß IEC 61131-3 und eignet sich für logische Verarbeitungen in Steuerungsanwendungen.

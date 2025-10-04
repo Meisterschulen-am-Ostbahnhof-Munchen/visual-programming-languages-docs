@@ -1,6 +1,7 @@
 # FB_F_TRIG
 
-![FB_F_TRIG Symbol](symbol.png) *(Hinweis: Das Bild ist nur ein Platzhalter und sollte durch das tatsächliche Symbol ersetzt werden.)*
+<img width="400" alt="FB_F_TRIG Symbol" src="https://github.com/user-attachments/assets/513e71db-a9d3-4df1-9b9c-a94aa2352bab" />
+
 
 * * * * * * * * * *
 

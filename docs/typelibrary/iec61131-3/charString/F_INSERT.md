@@ -1,5 +1,7 @@
 # F_INSERT
 
+<img width="1330" height="232" alt="F_INSERT" src="https://github.com/user-attachments/assets/a4d23188-0238-4c4c-a6b8-f51a6a493b1c" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_INSERT` dient zur Manipulation von Zeichenketten. Er fügt eine Zeichenkette (`IN2`) in eine andere Zeichenkette (`IN1`) an einer bestimmten Position (`P`) ein. Der Block ist Teil der Standard-Charakter- und String-Funktionen gemäß IEC 61131-3.

@@ -1,5 +1,7 @@
 # F_BOOL_AS_WSTRING
 
+<img width="1267" height="182" alt="F_BOOL_AS_WSTRING" src="https://github.com/user-attachments/assets/846eba87-3267-475f-8b1c-02faddc7fcca" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BOOL_AS_WSTRING` dient der Konvertierung eines booleschen Wertes (`BOOL`) in eine breite Zeichenkette (`WSTRING`). Diese Funktionalität ist besonders nützlich, wenn boolesche Werte in menschenlesbarer Form ausgegeben oder weiterverarbeitet werden sollen.

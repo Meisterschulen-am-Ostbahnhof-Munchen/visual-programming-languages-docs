@@ -1,5 +1,7 @@
 # F_BOOL_TO_WORD
 
+<img width="1434" height="212" alt="F_BOOL_TO_WORD" src="https://github.com/user-attachments/assets/2108fbdb-57b2-48c1-9549-416c9024f862" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_WORD` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen 16-Bit-Wortwert (`WORD`). Diese Konvertierung ist insbesondere in Szenarien nützlich, in denen boolesche Signale in Wort-Datenstrukturen eingebettet oder weiterverarbeitet werden müssen.

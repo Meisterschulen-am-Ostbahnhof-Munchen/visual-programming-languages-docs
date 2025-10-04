@@ -1,5 +1,7 @@
 # XOR_9
 
+<img width="1122" height="386" alt="XOR_9" src="https://github.com/user-attachments/assets/c115089f-b2d9-4440-8c6f-6db5cba185f8" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `XOR_9` dient zur bitweisen Berechnung der XOR-Verknüpfung mit bis zu neun Eingängen. Er ist Teil der Standard-Bitoperationen gemäß IEC 61131-3 und ermöglicht die Verarbeitung beliebiger Bit-Datentypen (`ANY_BIT`).

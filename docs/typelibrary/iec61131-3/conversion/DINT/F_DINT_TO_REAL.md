@@ -1,5 +1,7 @@
 # F_DINT_TO_REAL
 
+<img width="1437" height="217" alt="F_DINT_TO_REAL" src="https://github.com/user-attachments/assets/9a171061-0724-4ae7-ae31-84f0ef970859" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_REAL` dient der Konvertierung eines ganzzahligen Wertes vom Typ `DINT` in einen Fließkommawert vom Typ `REAL`. Diese Konvertierung ist in vielen Steuerungs- und Automatisierungsanwendungen notwendig, wenn Daten zwischen verschiedenen Systemen oder Komponenten ausgetauscht werden müssen.

@@ -1,5 +1,7 @@
 # F_LREAL_TO_UINT
 
+<img width="1452" height="214" alt="F_LREAL_TO_UINT" src="https://github.com/user-attachments/assets/4379189d-901b-46e8-aab5-83f178f84371" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LREAL_TO_UINT` dient der Konvertierung eines LREAL-Wertes (64-Bit Gleitkommazahl) in einen UINT-Wert (vorzeichenlose 16-Bit Ganzzahl). Dieser Baustein ist Teil der `iec61131::conversion`-Bibliothek und ermöglicht eine einfache und effiziente Typumwandlung in Automatisierungsanwendungen.

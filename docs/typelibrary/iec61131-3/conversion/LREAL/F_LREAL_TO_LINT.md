@@ -1,5 +1,7 @@
 # F_LREAL_TO_LINT
 
+<img width="1447" height="214" alt="F_LREAL_TO_LINT" src="https://github.com/user-attachments/assets/e03961d0-f79d-4f0f-b085-02a7f2c18bc2" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LREAL_TO_LINT` dient der Konvertierung eines LREAL-Wertes (64-Bit Gleitkommazahl) in einen LINT-Wert (64-Bit Ganzzahl). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Gleitkommazahlen in Ganzzahlen umgewandelt werden müssen, beispielsweise bei der Verarbeitung von Sensorwerten oder bei der Steuerung von Aktoren.

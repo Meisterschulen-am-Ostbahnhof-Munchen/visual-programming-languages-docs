@@ -1,5 +1,7 @@
 # F_INT_TO_LREAL
 
+<img width="1232" height="182" alt="F_INT_TO_LREAL" src="https://github.com/user-attachments/assets/c99ad1d4-dafe-40fc-9bc4-7515768ec888" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_INT_TO_LREAL` dient der Konvertierung eines ganzzahligen Wertes (INT) in eine 64-Bit Gleitkommazahl (LREAL). Dieser Baustein ist besonders nützlich in Anwendungen, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.

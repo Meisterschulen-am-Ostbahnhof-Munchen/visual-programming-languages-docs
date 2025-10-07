@@ -1,5 +1,7 @@
 # F_DWORD_AS_STRING
 
+<img width="1057" height="152" alt="F_DWORD_AS_STRING" src="https://github.com/user-attachments/assets/cf3695f4-7fec-4843-b60a-77ec08c84447" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DWORD_AS_STRING` dient der Konvertierung eines DWORD-Wertes in einen STRING. Dieser Baustein ist besonders nützlich, wenn numerische Werte in eine für Menschen lesbare Form gebracht oder für die Ausgabe in Textform vorbereitet werden müssen.

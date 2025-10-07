@@ -1,5 +1,7 @@
 # F_LREAL_AS_WSTRING
 
+<img width="1280" height="182" alt="F_LREAL_AS_WSTRING" src="https://github.com/user-attachments/assets/440d684c-51cd-48e7-a918-9a5a0d6dcc22" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LREAL_AS_WSTRING` dient der Konvertierung eines LREAL-Wertes (64-Bit Fließkommazahl) in einen WSTRING (Wide-String). Dies ist besonders nützlich, wenn numerische Werte für die Anzeige oder Weiterverarbeitung als Text benötigt werden.

@@ -1,5 +1,7 @@
 # F_INT_AS_STRING
 
+<img width="1244" height="182" alt="F_INT_AS_STRING" src="https://github.com/user-attachments/assets/c27e3bee-e252-420c-846b-caa7085610b7" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_INT_AS_STRING` dient der Konvertierung eines ganzzahligen Wertes (`INT`) in eine Zeichenkette (`STRING`). Diese Funktionalität ist besonders nützlich, wenn numerische Werte in einer für den Benutzer lesbaren Form ausgegeben oder in einer Textverarbeitung weiterverarbeitet werden sollen.

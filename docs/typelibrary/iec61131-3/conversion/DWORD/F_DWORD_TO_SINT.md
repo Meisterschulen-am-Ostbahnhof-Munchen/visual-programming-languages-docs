@@ -1,5 +1,7 @@
 # F_DWORD_TO_SINT
 
+<img width="1248" height="181" alt="F_DWORD_TO_SINT" src="https://github.com/user-attachments/assets/f27122be-9192-4b18-a187-5b5710f2bdcf" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_SINT` dient der Konvertierung eines 32-Bit-DWORD-Wertes in einen 8-Bit-SINT-Wert (vorzeichenbehaftete Ganzzahl). Dieser Baustein ist Teil der IEC 61131-Konvertierungsbibliothek und ermöglicht eine einfache Typumwandlung zwischen diesen Datentypen.

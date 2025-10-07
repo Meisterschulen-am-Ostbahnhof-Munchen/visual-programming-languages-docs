@@ -1,5 +1,7 @@
 # F_LWORD_TO_LINT
 
+<img width="1450" height="211" alt="F_LWORD_TO_LINT" src="https://github.com/user-attachments/assets/af814d4f-020f-4276-840f-113fb63e2f16" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_LINT` dient der Konvertierung eines `LWORD`-Wertes (64-Bit unsigned) in einen `LINT`-Wert (64-Bit signed). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.

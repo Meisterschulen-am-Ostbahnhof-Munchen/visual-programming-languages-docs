@@ -1,5 +1,7 @@
 # F_LWORD_TO_SINT
 
+<img width="1452" height="216" alt="F_LWORD_TO_SINT" src="https://github.com/user-attachments/assets/53060025-97b1-48c5-abbb-a61940c248b2" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_SINT` dient der Konvertierung eines `LWORD`-Wertes (64-Bit unsigned integer) in einen `SINT`-Wert (8-Bit signed integer). Diese Konvertierung ist nützlich, wenn Daten aus einem größeren Wertebereich in einen kleineren, spezifischeren Bereich übertragen werden müssen.

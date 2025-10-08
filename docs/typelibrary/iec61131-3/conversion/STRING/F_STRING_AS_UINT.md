@@ -1,5 +1,7 @@
 # F_STRING_AS_UINT
 
+<img width="1467" height="212" alt="F_STRING_AS_UINT" src="https://github.com/user-attachments/assets/f8cf5972-de3c-4670-aef7-935e96a795d1" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_UINT` dient der Konvertierung eines `STRING`-Wertes in einen `UINT`-Wert (unsigned integer). Diese Funktion ist besonders nützlich, wenn numerische Werte als Zeichenketten vorliegen und für weitere Berechnungen oder Steuerungsaufgaben in numerischer Form benötigt werden.

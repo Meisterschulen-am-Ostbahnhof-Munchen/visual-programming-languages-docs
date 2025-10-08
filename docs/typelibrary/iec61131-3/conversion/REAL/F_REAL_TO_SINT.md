@@ -1,5 +1,7 @@
 # F_REAL_TO_SINT
 
+<img width="1441" height="213" alt="F_REAL_TO_SINT" src="https://github.com/user-attachments/assets/90ac7b2b-bde1-414a-9764-7b9723463b8e" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_SINT` dient der Konvertierung eines `REAL`-Wertes (Fließkommazahl) in einen `SINT`-Wert (8-Bit Ganzzahl mit Vorzeichen). Dieser Baustein ist besonders nützlich in Steuerungsanwendungen, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.

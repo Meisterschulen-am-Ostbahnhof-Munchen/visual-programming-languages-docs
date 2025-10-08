@@ -1,5 +1,7 @@
 # F_UINT_TO_LINT
 
+<img width="1436" height="216" alt="F_UINT_TO_LINT" src="https://github.com/user-attachments/assets/8f25baa4-d194-4dfd-887d-b962e086c413" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_UINT_TO_LINT` dient der Konvertierung eines vorzeichenlosen 16-Bit-Integer-Werts (UINT) in einen vorzeichenbehafteten 64-Bit-Integer-Wert (LINT). Diese Konvertierung ist besonders nützlich, wenn Daten zwischen Systemen mit unterschiedlicher Wortbreite ausgetauscht oder verarbeitet werden müssen.

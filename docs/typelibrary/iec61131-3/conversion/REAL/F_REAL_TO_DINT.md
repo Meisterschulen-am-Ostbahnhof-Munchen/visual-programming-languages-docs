@@ -1,5 +1,7 @@
 # F_REAL_TO_DINT
 
+<img width="1235" height="175" alt="F_REAL_TO_DINT" src="https://github.com/user-attachments/assets/fd78a595-bfca-47f7-b4d9-acd46bf10b52" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_DINT` dient der Konvertierung eines REAL-Wertes (Fließkommazahl) in einen DINT-Wert (32-Bit Ganzzahl). Diese Konvertierung erfolgt durch Abrundung des REAL-Wertes auf die nächstkleinere Ganzzahl.

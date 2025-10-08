@@ -1,5 +1,7 @@
 # F_TIME_IN_NS_TO_LREAL
 
+<img width="1538" height="212" alt="F_TIME_IN_NS_TO_LREAL" src="https://github.com/user-attachments/assets/c94f3148-26d5-44a8-88fc-e5eeb5938a75" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_NS_TO_LREAL` dient zur Konvertierung eines Zeitwertes in Nanosekunden (`TIME`) in einen Fließkommawert (`LREAL`). Diese Umwandlung ist insbesondere in Steuerungsanwendungen nützlich, wo Zeitwerte in mathematischen Berechnungen verwendet werden müssen.

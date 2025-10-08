@@ -1,5 +1,7 @@
 # F_TIME_IN_NS_TO_DINT
 
+<img width="1528" height="212" alt="F_TIME_IN_NS_TO_DINT" src="https://github.com/user-attachments/assets/1bf1ef7f-a9cc-4407-a8c7-72c2401edce4" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_NS_TO_DINT` dient zur Konvertierung eines TIME-Werts in Nanosekunden in einen DINT-Wert. Diese Konvertierung ist nützlich, wenn Zeitwerte in numerischen Berechnungen oder für weitere Verarbeitungsschritte benötigt werden.

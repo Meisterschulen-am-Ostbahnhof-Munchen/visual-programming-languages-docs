@@ -1,5 +1,7 @@
 # F_REAL_TO_USINT
 
+<img width="1450" height="213" alt="F_REAL_TO_USINT" src="https://github.com/user-attachments/assets/16d6af79-f844-41ac-bebb-55fd87c4d950" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_USINT` dient der Konvertierung eines REAL-Wertes (Fließkommazahl) in einen USINT-Wert (vorzeichenlose 8-Bit Ganzzahl). Diese Konvertierung ist besonders nützlich, wenn Fließkommazahlen in einem Bereich verarbeitet werden müssen, der nur ganzzahlige Werte erfordert.

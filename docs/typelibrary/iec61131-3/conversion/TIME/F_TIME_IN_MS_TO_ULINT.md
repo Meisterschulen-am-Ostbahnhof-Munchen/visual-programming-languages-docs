@@ -1,5 +1,7 @@
 # F_TIME_IN_MS_TO_ULINT
 
+<img width="1534" height="212" alt="F_TIME_IN_MS_TO_ULINT" src="https://github.com/user-attachments/assets/1e823341-98ae-4b40-bc4f-74b28764bb74" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_MS_TO_ULINT` dient der Konvertierung eines Zeitwerts in Millisekunden (`TIME`) in einen vorzeichenlosen 64-Bit-Integer-Wert (`ULINT`). Dieser Baustein ist besonders nützlich, wenn Zeitwerte für weitere Berechnungen oder Vergleiche in numerischer Form benötigt werden.

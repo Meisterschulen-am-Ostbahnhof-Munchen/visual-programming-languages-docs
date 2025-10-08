@@ -1,5 +1,7 @@
 # F_SINT_TO_LINT
 
+<img width="1434" height="213" alt="F_SINT_TO_LINT" src="https://github.com/user-attachments/assets/87eb573f-d686-40fb-aa1e-1a3c3c21f187" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_LINT` dient der Konvertierung eines `SINT`-Wertes (8-Bit Ganzzahl) in einen `LINT`-Wert (64-Bit Ganzahl). Diese Konvertierung ist nützlich, wenn Daten mit unterschiedlicher Bitbreite verarbeitet werden müssen.

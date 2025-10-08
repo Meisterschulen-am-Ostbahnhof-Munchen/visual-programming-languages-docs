@@ -1,5 +1,7 @@
 # F_SINT_TO_INT
 
+<img width="1426" height="213" alt="F_SINT_TO_INT" src="https://github.com/user-attachments/assets/398a23eb-3229-4f56-8246-e9d579c3932e" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_INT` dient zur Konvertierung eines `SINT`-Wertes (8-Bit Ganzzahl mit Vorzeichen) in einen `INT`-Wert (16-Bit Ganzahl mit Vorzeichen). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen unterschiedlichen Integer-Formaten erforderlich ist.

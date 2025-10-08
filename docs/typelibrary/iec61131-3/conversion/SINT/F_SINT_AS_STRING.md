@@ -1,5 +1,7 @@
 # F_SINT_AS_STRING
 
+<img width="1464" height="213" alt="F_SINT_AS_STRING" src="https://github.com/user-attachments/assets/8f81385a-a997-414c-938e-4a08f519242c" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_SINT_AS_STRING` dient der Konvertierung eines `SINT`-Wertes (8-Bit Ganzzahl) in einen `STRING` (Zeichenkette). Dieser Baustein ist besonders nützlich, wenn numerische Werte für die Anzeige oder Weiterverarbeitung als Text benötigt werden.

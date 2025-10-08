@@ -1,5 +1,7 @@
 # F_SINT_TO_BYTE
 
+<img width="1439" height="213" alt="F_SINT_TO_BYTE" src="https://github.com/user-attachments/assets/af182d96-472c-4593-8202-182a67b19c5a" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_BYTE` dient der Konvertierung eines vorzeichenbehafteten 8-Bit-Integer-Werts (SINT) in einen vorzeichenlosen 8-Bit-Integer-Wert (BYTE). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Darstellungen für 8-Bit-Werte verwenden.

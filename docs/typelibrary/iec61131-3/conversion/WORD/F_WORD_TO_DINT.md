@@ -1,5 +1,7 @@
 # F_WORD_TO_DINT
 
+<img width="1439" height="214" alt="F_WORD_TO_DINT" src="https://github.com/user-attachments/assets/b1305cee-de08-4bea-9af0-84521b8ee895" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_DINT` dient der Konvertierung eines `WORD`-Datentyps in einen `DINT`-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist, z.B. bei der Verarbeitung von Daten aus verschiedenen Quellen oder bei der Anpassung von Daten für unterschiedliche Systemkomponenten.

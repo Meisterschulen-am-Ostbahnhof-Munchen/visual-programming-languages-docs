@@ -1,5 +1,7 @@
 # F_USINT_AS_WSTRING
 
+<img width="1495" height="214" alt="F_USINT_AS_WSTRING" src="https://github.com/user-attachments/assets/f7e08d34-adb5-4269-aad6-74d5d362a5a3" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_USINT_AS_WSTRING` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (`USINT`) in eine Unicode-Zeichenkette (`WSTRING`). Diese Funktionalität ist besonders nützlich in Szenarien, wo numerische Werte als Text ausgegeben oder verarbeitet werden müssen.

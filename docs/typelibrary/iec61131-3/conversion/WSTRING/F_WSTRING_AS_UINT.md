@@ -1,5 +1,7 @@
 # F_WSTRING_AS_UINT
 
+<img width="1481" height="214" alt="F_WSTRING_AS_UINT" src="https://github.com/user-attachments/assets/4ea92136-06dd-4514-be80-70cc9b719213" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_UINT` dient der Konvertierung eines WSTRING-Wertes in einen UINT-Wert. Diese Funktion ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise für weitere Berechnungen oder Steuerungsaufgaben.

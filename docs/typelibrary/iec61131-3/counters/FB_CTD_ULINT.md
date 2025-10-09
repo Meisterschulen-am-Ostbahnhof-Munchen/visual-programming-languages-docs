@@ -1,5 +1,7 @@
 # FB_CTD_ULINT
 
+<img width="1411" height="282" alt="FB_CTD_ULINT" src="https://github.com/user-attachments/assets/47813539-b542-43ce-82f2-a1f5ec03073f" />
+
 * * * * * * * * * *
 ## Einleitung
 Der FB_CTD_ULINT ist ein Abwärtszähler (Down Counter) für den Datentyp ULINT (Unsigned Long Integer). Er wird verwendet, um Werte von einem vorgegebenen Startwert aus abwärts zu zählen und signalisiert, wenn der Zählerstand den Wert 0 erreicht oder unterschreitet.

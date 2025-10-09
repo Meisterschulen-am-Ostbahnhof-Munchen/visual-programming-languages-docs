@@ -1,5 +1,7 @@
 # FB_CTUD_LINT
 
+<img width="1418" height="340" alt="FB_CTUD_LINT" src="https://github.com/user-attachments/assets/3ef801dc-5210-49fd-b0d4-4c34251fea5f" />
+
 * * * * * * * * * *
 ## Einleitung
 Der FB_CTUD_LINT ist ein Funktionsblock für einen hoch- und runterzählenden Zähler mit 64-Bit-Ganzzahlwerten (LINT). Er bietet Funktionen zum Zählen nach oben und unten, zum Zurücksetzen des Zählers sowie zum Laden eines vordefinierten Wertes. Der Zähler ist besonders für Anwendungen geeignet, die große Zahlenbereiche erfordern.

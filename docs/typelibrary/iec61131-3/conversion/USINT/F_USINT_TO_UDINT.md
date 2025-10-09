@@ -1,5 +1,7 @@
 # F_USINT_TO_UDINT
 
+<img width="1464" height="214" alt="F_USINT_TO_UDINT" src="https://github.com/user-attachments/assets/270403b0-17c3-4974-9d94-16d82c7ec576" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_UDINT` dient der Konvertierung eines `USINT`-Wertes (8-Bit unsigned integer) in einen `UDINT`-Wert (32-Bit unsigned integer). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung ohne Datenverlust erforderlich ist.

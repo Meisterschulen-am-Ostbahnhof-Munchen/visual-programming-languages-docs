@@ -1,5 +1,7 @@
 # F_USINT_TO_LINT
 
+<img width="1448" height="214" alt="F_USINT_TO_LINT" src="https://github.com/user-attachments/assets/d5f2a448-fc5d-4ba6-952d-0852c28b6ea5" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_LINT` dient der Konvertierung eines `USINT`-Wertes (8-Bit unsigned integer) in einen `LINT`-Wert (64-Bit signed integer). Diese Konvertierung ist besonders nützlich, wenn Werte aus kleineren Datentypen in größere umgewandelt werden müssen, ohne dabei die ursprüngliche Information zu verlieren.

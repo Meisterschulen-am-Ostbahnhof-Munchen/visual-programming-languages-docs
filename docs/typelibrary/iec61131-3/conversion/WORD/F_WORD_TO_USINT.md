@@ -1,5 +1,7 @@
 # F_WORD_TO_USINT
 
+<img width="1455" height="214" alt="F_WORD_TO_USINT" src="https://github.com/user-attachments/assets/d4f29908-e033-443c-b917-5bb34d0d6283" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_USINT` dient der Konvertierung eines `WORD`-Datentyps in einen `USINT`-Datentyp. Er ist Teil des Pakets `iec61131::conversion` und eignet sich für Anwendungen, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.

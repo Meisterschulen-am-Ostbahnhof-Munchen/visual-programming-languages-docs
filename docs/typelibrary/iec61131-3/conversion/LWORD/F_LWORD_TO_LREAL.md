@@ -1,5 +1,7 @@
 # F_LWORD_TO_LREAL
 
+<img width="1464" height="211" alt="F_LWORD_TO_LREAL" src="https://github.com/user-attachments/assets/89f93d44-7207-4ef1-ba65-ed61f446770f" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_LREAL` dient der Konvertierung eines LWORD-Datenwerts (64-Bit Ganzzahl ohne Vorzeichen) in einen LREAL-Datenwert (64-Bit Gleitkommazahl nach IEEE 754). Dieser Baustein ist besonders nützlich in Anwendungen, wo eine direkte Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.

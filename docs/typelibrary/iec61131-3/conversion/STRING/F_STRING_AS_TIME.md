@@ -1,5 +1,7 @@
 # F_STRING_AS_TIME
 
+<img width="1467" height="220" alt="F_STRING_AS_TIME" src="https://github.com/user-attachments/assets/58d71ae2-9654-4005-b405-0b569a14e4f1" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_TIME` dient der Konvertierung eines Zeitwertes im STRING-Format in das TIME-Format. Dies ist besonders nützlich, wenn Zeitwerte als Text vorliegen und für weitere Verarbeitung in ein maschinenlesbares Format umgewandelt werden müssen.

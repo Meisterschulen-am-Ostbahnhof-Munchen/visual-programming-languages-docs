@@ -1,5 +1,7 @@
 # F_STRING_AS_REAL
 
+<img width="1467" height="213" alt="F_STRING_AS_REAL" src="https://github.com/user-attachments/assets/2ab258e3-0671-4f5c-8975-303faeef5972" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_REAL` dient der Konvertierung eines `STRING`-Wertes in einen `REAL`-Wert. Er ist besonders nützlich, wenn Daten aus einer Zeichenkette in eine numerische Darstellung umgewandelt werden müssen, beispielsweise bei der Verarbeitung von Benutzereingaben oder der Interpretation von Textdateien.

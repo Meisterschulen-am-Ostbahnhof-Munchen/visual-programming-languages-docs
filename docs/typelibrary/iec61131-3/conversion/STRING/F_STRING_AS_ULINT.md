@@ -1,5 +1,7 @@
 # F_STRING_AS_ULINT
 
+<img width="1480" height="212" alt="F_STRING_AS_ULINT" src="https://github.com/user-attachments/assets/42f8c0fa-f5ad-4f51-9d6b-3c35653b6782" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_ULINT` dient der Konvertierung eines `STRING`-Wertes in einen `ULINT`-Wert (unsigned 64-bit integer). Dieser Baustein ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise bei der Verarbeitung von Benutzereingaben oder beim Parsen von Daten aus externen Quellen.

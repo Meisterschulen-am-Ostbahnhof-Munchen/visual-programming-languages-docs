@@ -1,5 +1,7 @@
 # F_INT_TO_USINT
 
+<img width="1232" height="183" alt="F_INT_TO_USINT" src="https://github.com/user-attachments/assets/936ae83a-1805-4eae-89d4-6a1f41f0e727" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_INT_TO_USINT` dient der Konvertierung eines ganzzahligen Wertes vom Datentyp `INT` (16-Bit Ganzzahl mit Vorzeichen) in den Datentyp `USINT` (8-Bit Ganzzahl ohne Vorzeichen). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen unterschiedlich großen numerischen Werten erforderlich ist.

@@ -1,5 +1,7 @@
 # F_UDINT_TO_WORD
 
+<img width="1449" height="216" alt="F_UDINT_TO_WORD" src="https://github.com/user-attachments/assets/31e92c35-2b63-4389-99d2-83dc3fda9dc5" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_WORD` dient der Konvertierung eines 32-Bit unsignierten Integer-Werts (UDINT) in einen 16-Bit unsignierten Integer-Wert (WORD). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten zwischen Systemen mit unterschiedlichen Wortbreiten ausgetauscht werden müssen.

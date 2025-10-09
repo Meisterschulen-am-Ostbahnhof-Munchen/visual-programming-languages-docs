@@ -1,5 +1,7 @@
 # F_TIME_IN_S_TO_LINT
 
+<img width="1506" height="212" alt="F_TIME_IN_S_TO_LINT" src="https://github.com/user-attachments/assets/a16343bd-1465-4473-a54f-da877aa2e16a" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_S_TO_LINT` dient zur Konvertierung eines Zeitwertes in Sekunden (`TIME`) in einen 64-Bit Ganzzahlwert (`LINT`). Diese Konvertierung ist besonders nützlich, wenn Zeitwerte für Berechnungen oder Vergleiche in einer numerischen Form benötigt werden.

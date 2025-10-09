@@ -1,5 +1,7 @@
 # F_LWORD_AS_STRING
 
+<img width="1478" height="214" alt="F_LWORD_AS_STRING" src="https://github.com/user-attachments/assets/29fc831d-b4b3-4e7c-8264-93a698db1ab6" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LWORD_AS_STRING` dient der Konvertierung eines `LWORD`-Datentyps in einen `STRING`-Datentyp. Dieser Baustein ist besonders nützlich, wenn große binäre Daten (64-Bit) in eine lesbare Zeichenkette umgewandelt werden müssen.

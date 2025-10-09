@@ -1,5 +1,7 @@
 # F_TIME_IN_S_TO_LREAL
 
+<img width="1518" height="212" alt="F_TIME_IN_S_TO_LREAL" src="https://github.com/user-attachments/assets/918c65c5-b8f3-4a1c-8b73-11ee40e82859" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_S_TO_LREAL` dient zur Konvertierung eines Zeitwerts in Sekunden (`TIME`) in einen Fließkommawert (`LREAL`). Diese Konvertierung ist nützlich, wenn Zeitwerte in mathematischen Berechnungen oder für weitere Verarbeitungsschritte benötigt werden.

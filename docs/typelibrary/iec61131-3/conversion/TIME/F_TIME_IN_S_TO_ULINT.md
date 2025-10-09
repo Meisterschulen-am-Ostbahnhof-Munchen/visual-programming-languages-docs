@@ -1,5 +1,7 @@
 # F_TIME_IN_S_TO_ULINT
 
+<img width="1520" height="212" alt="F_TIME_IN_S_TO_ULINT" src="https://github.com/user-attachments/assets/60c0a628-bf00-4bf4-b81c-1397cad4dd61" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_S_TO_ULINT` dient der Konvertierung eines TIME-Werts in Sekunden in einen ULINT-Wert. Dies ist besonders nützlich, wenn Zeitwerte in numerische Formate umgewandelt werden müssen, um sie in Berechnungen oder für weitere Verarbeitungsschritte zu verwenden.

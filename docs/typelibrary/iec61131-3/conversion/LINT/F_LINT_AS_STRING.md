@@ -1,5 +1,7 @@
 # F_LINT_AS_STRING
 
+<img width="1256" height="183" alt="F_LINT_AS_STRING" src="https://github.com/user-attachments/assets/c1d86074-155a-49cf-b025-bacefa300e09" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LINT_AS_STRING` dient der Konvertierung eines LINT-Datentyps (64-Bit-Ganzzahl) in einen STRING-Datentyp (Zeichenkette). Dieser Baustein ist besonders nützlich, wenn numerische Werte für die Ausgabe oder Weiterverarbeitung als Text benötigt werden.

@@ -1,5 +1,7 @@
 # F_TIME_IN_S_TO_DINT
 
+<img width="1506" height="212" alt="F_TIME_IN_S_TO_DINT" src="https://github.com/user-attachments/assets/3154c79d-5b35-46bb-8057-39d2ce513a57" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_S_TO_DINT` dient der Konvertierung eines Zeitwerts in Sekunden (`TIME`) in einen vorzeichenbehafteten Ganzzahlwert (`DINT`). Diese Konvertierung ist nützlich, wenn Zeitwerte in numerischen Berechnungen oder für Steuerungszwecke verwendet werden müssen.

@@ -1,5 +1,7 @@
 # F_SINT_TO_REAL
 
+<img width="1439" height="213" alt="F_SINT_TO_REAL" src="https://github.com/user-attachments/assets/9477ea11-2b6e-441e-8fe2-16588d70cf27" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_REAL` dient der Konvertierung eines vorzeichenbehafteten 8-Bit-Integer-Werts (`SINT`) in einen Fließkommawert (`REAL`). Diese Konvertierung ist insbesondere in Steuerungsanwendungen nützlich, wo unterschiedliche Datentypen verarbeitet werden müssen.

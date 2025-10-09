@@ -1,5 +1,7 @@
 # F_UDINT_AS_STRING
 
+<img width="1481" height="212" alt="F_UDINT_AS_STRING" src="https://github.com/user-attachments/assets/a7240c03-594a-4f72-a90f-85145981374e" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_UDINT_AS_STRING` dient der Konvertierung eines vorzeichenlosen 32-Bit-Integer-Werts (UDINT) in einen String (STRING). Dieser Baustein ist besonders nützlich, wenn numerische Werte für die Anzeige oder Protokollierung in eine lesbare Textform umgewandelt werden müssen.

@@ -1,5 +1,7 @@
 # F_TIME_IN_S_TO_UDINT
 
+<img width="1520" height="212" alt="F_TIME_IN_S_TO_UDINT" src="https://github.com/user-attachments/assets/9fd11a62-281e-43ec-9520-98d7cc20671c" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_S_TO_UDINT` dient der Konvertierung eines TIME-Werts in Sekunden in einen UDINT-Wert. Diese Konvertierung ist nützlich, wenn Zeitwerte in numerischen Operationen oder für weitere Verarbeitungsschritte benötigt werden.

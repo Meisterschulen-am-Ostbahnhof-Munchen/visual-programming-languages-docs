@@ -1,5 +1,7 @@
 # F_DWORD_TO_LINT
 
+<img width="1246" height="184" alt="F_DWORD_TO_LINT" src="https://github.com/user-attachments/assets/ac17b63e-de6d-4ccb-9123-b8d797333e3e" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_LINT` dient der Konvertierung eines `DWORD`-Wertes in einen `LINT`-Wert. Diese Konvertierung ist besonders nützlich, wenn Daten zwischen Systemen oder Komponenten ausgetauscht werden müssen, die unterschiedliche Datentypen verwenden.

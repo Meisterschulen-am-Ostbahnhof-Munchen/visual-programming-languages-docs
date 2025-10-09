@@ -1,5 +1,7 @@
 # F_INT_TO_LWORD
 
+<img width="1232" height="182" alt="F_INT_TO_LWORD" src="https://github.com/user-attachments/assets/af2f07c7-56ec-498d-94f5-170a88e6a3e3" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_INT_TO_LWORD` dient der Konvertierung eines Integer-Werts (`INT`) in einen 64-Bit langen vorzeichenlosen Integer-Wert (`LWORD`). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.

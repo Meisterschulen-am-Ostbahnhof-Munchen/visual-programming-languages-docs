@@ -1,5 +1,7 @@
 # F_INT_AS_WSTRING
 
+<img width="1253" height="182" alt="F_INT_AS_WSTRING" src="https://github.com/user-attachments/assets/eecc33ca-d283-4589-bca8-ce57829c7162" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_INT_AS_WSTRING` dient der Konvertierung eines ganzzahligen Wertes (`INT`) in eine breite Zeichenkette (`WSTRING`). Diese Funktionalität ist besonders nützlich, wenn numerische Werte für die Anzeige oder Weiterverarbeitung als Text benötigt werden.

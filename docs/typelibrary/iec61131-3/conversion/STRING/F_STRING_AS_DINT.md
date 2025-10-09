@@ -1,5 +1,7 @@
 # F_STRING_AS_DINT
 
+<img width="1464" height="213" alt="F_STRING_AS_DINT" src="https://github.com/user-attachments/assets/cbb2bda3-8b1f-45cd-a56f-e4a1958ac543" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_DINT` dient der Konvertierung eines `STRING`-Wertes in einen `DINT`-Wert. Diese Funktion ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise bei der Verarbeitung von Benutzereingaben oder der Interpretation von Textdaten.

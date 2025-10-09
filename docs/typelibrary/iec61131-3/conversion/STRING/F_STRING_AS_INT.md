@@ -1,5 +1,7 @@
 # F_STRING_AS_INT
 
+<img width="1451" height="213" alt="F_STRING_AS_INT" src="https://github.com/user-attachments/assets/ed2bb7a0-e638-438c-92d8-997cb313e3dd" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_INT` dient der Konvertierung eines `STRING`-Wertes in einen `INT`-Wert. Diese Funktionalität ist besonders nützlich, wenn Zeichenketten, die numerische Werte repräsentieren, in ganzzahlige Werte umgewandelt werden müssen.

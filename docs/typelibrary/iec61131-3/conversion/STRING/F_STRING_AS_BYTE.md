@@ -1,5 +1,7 @@
 # F_STRING_AS_BYTE
 
+<img width="1464" height="213" alt="F_STRING_AS_BYTE" src="https://github.com/user-attachments/assets/cf7a5899-d56c-4a37-b212-e79196ce79e9" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_BYTE` dient der Konvertierung eines `STRING`-Wertes in einen `BYTE`-Wert. Diese Funktionalität ist besonders nützlich, wenn Zeichenketten in ihre entsprechenden Byte-Werte umgewandelt werden müssen, beispielsweise für die Verarbeitung in Protokollen oder bei der Kommunikation mit Hardware.

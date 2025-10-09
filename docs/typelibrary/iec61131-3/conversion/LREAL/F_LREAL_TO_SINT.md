@@ -1,5 +1,7 @@
 # F_LREAL_TO_SINT
 
+<img width="1453" height="214" alt="F_LREAL_TO_SINT" src="https://github.com/user-attachments/assets/033b49c4-f1c6-452a-a19e-2b4e91b60282" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LREAL_TO_SINT` dient der Konvertierung eines `LREAL`-Wertes (64-Bit Gleitkommazahl) in einen `SINT`-Wert (8-Bit Ganzahl). Diese Konvertierung ist nützlich, wenn Gleitkommazahlen in eine kompakte Ganzzahl-Darstellung umgewandelt werden müssen, z.B. für die Speicherung oder Übertragung in Systemen mit begrenzter Bandbreite.

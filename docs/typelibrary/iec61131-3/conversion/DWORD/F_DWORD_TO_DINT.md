@@ -1,5 +1,7 @@
 # F_DWORD_TO_DINT
 
+<img width="1248" height="184" alt="F_DWORD_TO_DINT" src="https://github.com/user-attachments/assets/118c3a3a-7bd4-4adb-a8e1-f927a4ca8bab" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_DINT` dient der Konvertierung eines `DWORD`-Wertes in einen `DINT`-Wert. Diese Konvertierung ist insbesondere dann notwendig, wenn Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Datentypen verwenden. Der Block ist Teil des Pakets `iec61131::conversion` und folgt dem Standard 61499-1.

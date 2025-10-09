@@ -1,5 +1,7 @@
 # F_DWORD_TO_INT
 
+<img width="1233" height="184" alt="F_DWORD_TO_INT" src="https://github.com/user-attachments/assets/06ada230-9c73-4717-8b06-0aee3362b757" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_INT` dient der Konvertierung eines DWORD-Wertes in einen INT-Wert. Er ist Teil des Pakets `iec61131::conversion` und ermöglicht die einfache Umwandlung zwischen diesen beiden Datentypen.

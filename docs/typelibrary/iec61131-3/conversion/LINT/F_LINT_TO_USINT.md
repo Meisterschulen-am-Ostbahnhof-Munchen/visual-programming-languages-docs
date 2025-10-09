@@ -1,5 +1,7 @@
 # F_LINT_TO_USINT
 
+<img width="1448" height="214" alt="F_LINT_TO_USINT" src="https://github.com/user-attachments/assets/847133a9-041d-466e-af83-f73ad8337642" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LINT_TO_USINT` dient der Konvertierung eines 64-Bit Ganzzahlwertes (`LINT`) in einen 8-Bit vorzeichenlosen Ganzzahlwert (`USINT`). Dieser Baustein ist Teil der IEC 61131-Konvertierungsbibliothek und wird typischerweise in Automatisierungsanwendungen eingesetzt, wo Datentypen unterschiedlicher Größe verarbeitet werden müssen.

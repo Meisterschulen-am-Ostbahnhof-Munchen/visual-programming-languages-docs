@@ -1,5 +1,7 @@
 # F_REAL_AS_WSTRING
 
+<img width="1256" height="180" alt="F_REAL_AS_WSTRING" src="https://github.com/user-attachments/assets/bc7fddcb-82a0-423e-aabe-56670bf82552" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_REAL_AS_WSTRING` dient der Konvertierung eines `REAL`-Wertes in einen `WSTRING`-Wert. Dieser Baustein ist besonders nützlich, wenn numerische Werte in eine für die Ausgabe oder Weiterverarbeitung geeignete Zeichenkette umgewandelt werden müssen.

@@ -1,5 +1,7 @@
 # F_REAL_TO_UINT
 
+<img width="1440" height="213" alt="F_REAL_TO_UINT" src="https://github.com/user-attachments/assets/c70dcb74-21d4-4caa-8404-2518a95ca3b4" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_UINT` dient der Konvertierung eines REAL-Wertes (Fließkommazahl) in einen UINT-Wert (vorzeichenlose Ganzzahl). Diese Konvertierung ist besonders nützlich, wenn Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Datentypen verwenden oder wenn eine explizite Typumwandlung erforderlich ist.

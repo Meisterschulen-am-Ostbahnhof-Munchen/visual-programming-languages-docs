@@ -1,5 +1,7 @@
 # F_LINT_TO_WORD
 
+<img width="1436" height="214" alt="F_LINT_TO_WORD" src="https://github.com/user-attachments/assets/4aa4298e-3732-42d1-a295-e26f81c02b3d" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LINT_TO_WORD` dient der Konvertierung eines LINT-Datentyps (64-Bit Ganzzahl) in einen WORD-Datentyp (16-Bit Ganzahl). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen mit unterschiedlicher Wortbreite ausgetauscht werden müssen oder wenn eine explizite Typumwandlung erforderlich ist.

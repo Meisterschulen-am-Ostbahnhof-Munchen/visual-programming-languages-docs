@@ -1,5 +1,7 @@
 # F_LWORD_TO_ULINT
 
+<img width="1463" height="212" alt="F_LWORD_TO_ULINT" src="https://github.com/user-attachments/assets/f5071900-017b-4af7-80c6-b542df47d0dc" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_ULINT` dient der Konvertierung eines LWORD-Datentyps in einen ULINT-Datentyp. Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten unterschiedlicher Bitlängen verarbeitet oder weitergegeben werden müssen.

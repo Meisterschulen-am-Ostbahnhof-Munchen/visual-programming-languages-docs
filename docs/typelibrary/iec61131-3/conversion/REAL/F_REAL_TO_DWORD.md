@@ -1,5 +1,7 @@
 # F_REAL_TO_DWORD
 
+<img width="1453" height="216" alt="F_REAL_TO_DWORD" src="https://github.com/user-attachments/assets/e2620ce1-a635-402f-98c9-6597cf979c6a" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_DWORD` dient der Konvertierung eines REAL-Wertes (Fließkommazahl) in einen DWORD-Wert (32-Bit vorzeichenlose Ganzzahl). Diese Konvertierung ist besonders nützlich, wenn Fließkommawerte in Systemen verarbeitet werden müssen, die nur Ganzzahloperationen unterstützen.

@@ -1,5 +1,7 @@
 # F_DWORD_TO_WORD
 
+<img width="1244" height="182" alt="F_DWORD_TO_WORD" src="https://github.com/user-attachments/assets/eeb53dda-9cf9-4235-91ac-ad7b17de8da7" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_WORD` dient der Konvertierung eines 32-Bit-DWORD-Wertes in einen 16-Bit-WORD-Wert. Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen mit unterschiedlichen Wortbreiten ausgetauscht werden müssen oder wenn Speicherplatz optimiert werden soll.

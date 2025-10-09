@@ -1,5 +1,7 @@
 # F_STRING_TO_WSTRING
 
+<img width="1509" height="212" alt="F_STRING_TO_WSTRING" src="https://github.com/user-attachments/assets/4ece7977-3ec9-493b-8cb5-e1ba73c202f8" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_STRING_TO_WSTRING` dient der Konvertierung eines `STRING`-Datentyps in einen `WSTRING`-Datentyp. Dies ist besonders nützlich in Umgebungen, wo eine Umwandlung zwischen schmalen (8-Bit) und breiten (16-Bit) Zeichenketten erforderlich ist, beispielsweise bei der Internationalisierung von Anwendungen oder der Kommunikation mit Systemen, die unterschiedliche Zeichenkodierungen verwenden.

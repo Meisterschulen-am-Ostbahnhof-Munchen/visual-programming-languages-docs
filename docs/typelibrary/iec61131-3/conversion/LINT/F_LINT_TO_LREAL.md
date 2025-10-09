@@ -1,5 +1,7 @@
 # F_LINT_TO_LREAL
 
+<img width="1448" height="214" alt="F_LINT_TO_LREAL" src="https://github.com/user-attachments/assets/411d5efa-708f-43f3-8da5-db0f863bcd2c" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_LINT_TO_LREAL` dient der Konvertierung eines ganzzahligen Wertes des Typs `LINT` (64-Bit Ganzzahl) in einen Fließkommawert des Typs `LREAL` (64-Bit Fließkomma). Diese Konvertierung ist insbesondere dann notwendig, wenn ganzzahlige Werte in Berechnungen mit Fließkommazahlen verwendet werden sollen.

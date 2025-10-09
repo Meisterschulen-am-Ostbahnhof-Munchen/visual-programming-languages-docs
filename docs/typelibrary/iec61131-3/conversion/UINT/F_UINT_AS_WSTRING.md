@@ -1,5 +1,7 @@
 # F_UINT_AS_WSTRING
 
+<img width="1478" height="216" alt="F_UINT_AS_WSTRING" src="https://github.com/user-attachments/assets/d0bb6f38-30a0-4c95-ab3e-003a118d9f81" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_UINT_AS_WSTRING` dient der Konvertierung eines vorzeichenlosen Integer-Werts (`UINT`) in eine Wide-String-Darstellung (`WSTRING`). Dieser Baustein ist besonders nützlich in Szenarien, wo numerische Werte in eine für Menschen lesbare Textform umgewandelt werden müssen.

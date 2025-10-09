@@ -1,5 +1,7 @@
 # F_STRING_AS_WORD
 
+<img width="1472" height="212" alt="F_STRING_AS_WORD" src="https://github.com/user-attachments/assets/8e482512-b995-4049-9756-73367fae1729" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_WORD` dient zur Konvertierung eines `STRING`-Wertes in einen `WORD`-Wert. Diese Funktionalität ist insbesondere in Szenarien nützlich, in denen Zeichenketten in numerische Werte umgewandelt werden müssen, um sie in weiteren Berechnungen oder Steuerungslogiken zu verwenden.

@@ -1,5 +1,7 @@
 # F_TIME_IN_US_TO_DINT
 
+<img width="1520" height="212" alt="F_TIME_IN_US_TO_DINT" src="https://github.com/user-attachments/assets/f69e17a7-e3ae-4ca9-ac0d-e8c66d9c31ce" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_US_TO_DINT` dient zur Konvertierung eines TIME-Wertes in Mikrosekunden (µs) in einen DINT-Wert. Diese Konvertierung ist insbesondere dann nützlich, wenn Zeitwerte in numerischen Berechnungen oder für Steuerungszwecke verwendet werden sollen.

@@ -1,5 +1,7 @@
 # F_SINT_TO_LWORD
 
+<img width="1448" height="213" alt="F_SINT_TO_LWORD" src="https://github.com/user-attachments/assets/97fc01cb-6efa-4b3f-9184-c61d04ddc8f4" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_LWORD` dient der Konvertierung eines vorzeichenbehafteten 8-Bit-Integer-Werts (`SINT`) in einen vorzeichenlosen 64-Bit-Integer-Wert (`LWORD`). Dieser Baustein ist Teil des `iec61131::conversion`-Pakets und wird typischerweise in Automatisierungsanwendungen eingesetzt, wo Datentypkonvertierungen erforderlich sind.

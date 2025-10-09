@@ -1,5 +1,7 @@
 # F_SINT_TO_DWORD
 
+<img width="1450" height="213" alt="F_SINT_TO_DWORD" src="https://github.com/user-attachments/assets/10f7168f-01f0-46a7-9a2e-ca0c754a294b" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_DWORD` dient der Konvertierung eines vorzeichenbehafteten 8-Bit-Integer-Werts (SINT) in einen vorzeichenlosen 32-Bit-Integer-Wert (DWORD). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.

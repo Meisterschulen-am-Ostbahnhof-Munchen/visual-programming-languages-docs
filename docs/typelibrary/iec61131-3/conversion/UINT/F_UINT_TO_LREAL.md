@@ -1,5 +1,7 @@
 # F_UINT_TO_LREAL
 
+<img width="1452" height="216" alt="F_UINT_TO_LREAL" src="https://github.com/user-attachments/assets/a0008558-2922-435e-9642-d1886e739723" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_UINT_TO_LREAL` dient der Konvertierung eines vorzeichenlosen 16-Bit-Integer-Werts (UINT) in einen 64-Bit-Gleitkommawert (LREAL). Diese Konvertierung ist insbesondere in Steuerungsanwendungen nützlich, wo unterschiedliche Datentypen verarbeitet werden müssen.

@@ -1,5 +1,7 @@
 # F_WSTRING_AS_DWORD
 
+<img width="1490" height="214" alt="F_WSTRING_AS_DWORD" src="https://github.com/user-attachments/assets/0a7a9611-fec8-4a92-8bfd-ea8b545785de" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_DWORD` dient zur Konvertierung eines WSTRING-Wertes in einen DWORD-Wert. Diese Funktionalität ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise für die weitere Verarbeitung in Steuerungsalgorithmen.

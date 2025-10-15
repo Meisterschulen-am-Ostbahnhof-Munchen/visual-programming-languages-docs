@@ -1,5 +1,7 @@
 # FB_CTD_LINT
 
+<img width="1399" height="282" alt="FB_CTD_LINT" src="https://github.com/user-attachments/assets/49df9c31-e52a-4ab3-9ab5-c17c58f2ee98" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `FB_CTD_LINT` ist ein Abwärtszähler (Counter Down) für 64-Bit-Ganzzahlen (LINT). Er ermöglicht das Herunterzählen eines internen Zählwerts und bietet Funktionen zum Laden eines vordefinierten Werts. Der Block ist besonders für Anwendungen geeignet, die mit großen Zahlenbereichen arbeiten müssen.

@@ -1,5 +1,7 @@
 # FB_CTU_LINT
 
+<img width="1396" height="277" alt="FB_CTU_LINT" src="https://github.com/user-attachments/assets/a956d757-67d1-486f-b882-ab20f78546cf" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `FB_CTU_LINT` ist ein Aufwärtszähler (Counter Up) für große Ganzzahlen. Er zählt bei jedem eintreffenden Zählereignis hoch und kann auf einen vordefinierten Wert zurückgesetzt werden. Der Block verwendet den Datentyp `LINT` (64-Bit Ganzzahl) für den Zählwert und den Sollwert.

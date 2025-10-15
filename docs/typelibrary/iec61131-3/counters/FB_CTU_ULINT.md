@@ -1,5 +1,7 @@
 # FB_CTU_ULINT
 
+<img width="1408" height="271" alt="FB_CTU_ULINT" src="https://github.com/user-attachments/assets/fb1bdbf1-e57f-4efd-8953-c3e697ae3f39" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `FB_CTU_ULINT` ist ein Aufwärtszähler (Counter Up) für den Datentyp `ULINT` (Unsigned Long Integer). Er zählt bei jedem Zählereignis hoch und kann auf einen vordefinierten Wert zurückgesetzt werden. Der Block ist besonders für Anwendungen geeignet, die große Zählbereiche erfordern.

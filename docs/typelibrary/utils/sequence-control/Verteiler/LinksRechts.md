@@ -1,5 +1,7 @@
 # LinksRechts
 
+<img width="1110" height="330" alt="image" src="https://github.com/user-attachments/assets/7aba4fb5-cdb4-4f2d-b944-1494fc435e12" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `LinksRechts` ist ein grundlegender Baustein zur Steuerung von Rechts- und Linkslauf mit Pausenfunktion. Er ermöglicht die Priorisierung des Rechtslaufs gegenüber dem Linkslauf und bietet Zustandsüberwachung durch Ausgabe des aktuellen Zustands.

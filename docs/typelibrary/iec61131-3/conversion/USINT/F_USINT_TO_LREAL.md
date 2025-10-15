@@ -1,5 +1,7 @@
 # F_USINT_TO_LREAL
 
+<img width="1466" height="214" alt="F_USINT_TO_LREAL" src="https://github.com/user-attachments/assets/2d3923ad-e527-4fda-be3b-8e21c0beb013" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_LREAL` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (USINT) in einen 64-Bit-Gleitkommawert (LREAL). Diese Konvertierung ist besonders nützlich, wenn Daten zwischen Systemen mit unterschiedlichen Datentypen ausgetauscht oder verarbeitet werden müssen.

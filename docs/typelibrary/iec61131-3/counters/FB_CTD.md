@@ -1,5 +1,7 @@
 # FB_CTD
 
+<img width="1325" height="282" alt="FB_CTD" src="https://github.com/user-attachments/assets/22cf142b-4252-487d-b0dc-2b3379946fbe" />
+
 * * * * * * * * * *
 ## Einleitung
 Der FB_CTD (Down Counter) ist ein Funktionsblock, der als Abwärtszähler fungiert. Er zählt bei jedem Trigger-Ereignis den internen Zählerstand herunter und gibt ein Signal aus, wenn der Zählerstand einen bestimmten Wert erreicht oder unterschreitet.

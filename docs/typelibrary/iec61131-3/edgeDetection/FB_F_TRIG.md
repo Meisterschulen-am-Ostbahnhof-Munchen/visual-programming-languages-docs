@@ -1,7 +1,6 @@
 # FB_F_TRIG
 
-<img width="400" alt="FB_F_TRIG Symbol" src="https://github.com/user-attachments/assets/513e71db-a9d3-4df1-9b9c-a94aa2352bab" />
-
+<img width="1366" height="219" alt="FB_F_TRIG" src="https://github.com/user-attachments/assets/9ea529ec-c4e2-4e3f-96f0-9a5ddd42ebf5" />
 
 * * * * * * * * * *
 

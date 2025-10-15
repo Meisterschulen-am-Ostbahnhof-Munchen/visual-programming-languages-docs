@@ -1,5 +1,7 @@
 # F_WSTRING_AS_ULINT
 
+<img width="1492" height="214" alt="F_WSTRING_AS_ULINT" src="https://github.com/user-attachments/assets/1523dbf5-1b9f-4c01-b8af-755a1cd1c490" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_ULINT` dient der Konvertierung eines WSTRING-Datentyps in einen ULINT-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, wo Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise bei der Verarbeitung von Benutzereingaben oder beim Parsen von Daten aus externen Quellen.

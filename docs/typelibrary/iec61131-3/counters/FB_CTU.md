@@ -1,5 +1,7 @@
 # FB_CTU
 
+<img width="1331" height="282" alt="FB_CTU" src="https://github.com/user-attachments/assets/98a598a6-b535-4237-abf5-a9546457fb05" />
+
 * * * * * * * * * *
 ## Einleitung
 Der FB_CTU (Up Counter) ist ein Funktionsblock, der als Aufwärtszähler fungiert. Er zählt Ereignisse hoch und kann zurückgesetzt werden. Der Zählerwert wird mit einem vordefinierten Wert (PV) verglichen, und ein Ausgangssignal (Q) wird aktiviert, sobald der Zählerwert den vordefinierten Wert erreicht oder überschreitet.

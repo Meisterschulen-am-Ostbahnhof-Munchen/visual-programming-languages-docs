@@ -1,5 +1,7 @@
 # F_ULINT_TO_LWORD
 
+<img width="1466" height="214" alt="F_ULINT_TO_LWORD" src="https://github.com/user-attachments/assets/8b0a2f9e-ac50-43f3-b73b-dadfee3ccecb" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_ULINT_TO_LWORD` dient der Konvertierung eines ULINT-Datentyps (64-Bit unsigned integer) in einen LWORD-Datentyp (64-Bit bitstring). Dieser Baustein ist besonders nützlich in Anwendungen, wo eine direkte Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.

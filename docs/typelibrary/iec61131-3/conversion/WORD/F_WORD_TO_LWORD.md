@@ -1,5 +1,7 @@
 # F_WORD_TO_LWORD
 
+<img width="1451" height="214" alt="F_WORD_TO_LWORD" src="https://github.com/user-attachments/assets/ccfea12c-64cc-4b10-91db-6d39f78fc006" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_LWORD` dient der Konvertierung eines `WORD`-Datentyps in einen `LWORD`-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, wo eine Erweiterung der Datenbreite erforderlich ist, beispielsweise bei der Kommunikation zwischen Systemen mit unterschiedlichen Datenwortgrößen.

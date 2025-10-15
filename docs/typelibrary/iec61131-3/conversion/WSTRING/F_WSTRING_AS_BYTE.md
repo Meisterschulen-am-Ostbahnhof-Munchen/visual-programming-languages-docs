@@ -1,5 +1,7 @@
 # F_WSTRING_AS_BYTE
 
+<img width="1480" height="214" alt="F_WSTRING_AS_BYTE" src="https://github.com/user-attachments/assets/5af29946-8d1c-495b-a40a-d21f8d38b1fc" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_BYTE` dient der Konvertierung eines WSTRING-Datentyps in einen BYTE-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, wo eine Umwandlung von breiten Zeichenketten in einzelne Bytes erforderlich ist.

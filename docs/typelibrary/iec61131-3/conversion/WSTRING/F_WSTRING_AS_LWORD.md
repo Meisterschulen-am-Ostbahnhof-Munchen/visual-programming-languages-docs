@@ -1,5 +1,7 @@
 # F_WSTRING_AS_LWORD
 
+<img width="1491" height="214" alt="F_WSTRING_AS_LWORD" src="https://github.com/user-attachments/assets/70e780c5-b20e-4cf1-86f9-bc905ada9d1e" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_LWORD` dient der Konvertierung eines WSTRING-Datentyps in einen LWORD-Datentyp. Diese Funktionalität ist insbesondere in Szenarien nützlich, in denen Zeichenketten in eine für die weitere Verarbeitung geeignete binäre Form umgewandelt werden müssen.

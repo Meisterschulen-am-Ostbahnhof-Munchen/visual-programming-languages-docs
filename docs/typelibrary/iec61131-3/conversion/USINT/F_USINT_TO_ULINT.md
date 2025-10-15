@@ -1,5 +1,7 @@
 # F_USINT_TO_ULINT
 
+<img width="1466" height="214" alt="F_USINT_TO_ULINT" src="https://github.com/user-attachments/assets/93d99220-51d0-4f22-9315-b8380b7daeae" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_ULINT` dient der Konvertierung eines `USINT`-Wertes (8-Bit unsigned integer) in einen `ULINT`-Wert (64-Bit unsigned integer). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen mit unterschiedlichen Wortbreiten ausgetauscht oder verarbeitet werden müssen.

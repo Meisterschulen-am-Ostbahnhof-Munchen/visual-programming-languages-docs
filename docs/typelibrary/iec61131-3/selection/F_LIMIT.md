@@ -1,5 +1,7 @@
 # F_LIMIT
 
+![F_LIMIT](https://user-images.githubusercontent.com/113907647/227977194-5735bf57-4df7-4ffb-9457-25cf02c36fc7.png)
+
 * * * * * * * * * *
 
 ## Einleitung
@@ -49,6 +51,10 @@ Nach Abschluss der Operation wird das CNF-Ereignis mit dem berechneten OUT-Wert 
 - Schutz vor Über- und Unterschreitung von Grenzwerten
 - Normierung von Messwerten auf einen zulässigen Bereich
 - Sicherheitsbegrenzung in Prozesssteuerungen
+
+![Textfeld:  
+Bsp. individuelle Eingabe
+](https://user-images.githubusercontent.com/113907647/227977195-29734e02-f9c3-4e29-bdab-218a9edc9e4a.png)
 
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Selektionsfunktionsblöcken:

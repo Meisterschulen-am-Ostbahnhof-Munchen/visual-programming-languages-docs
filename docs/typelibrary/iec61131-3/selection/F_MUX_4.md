@@ -1,58 +1,61 @@
 # F_MUX_4
 
-<img width="1298" height="244" alt="image" src="https://github.com/user-attachments/assets/ca36e916-c580-4eb8-bf05-67d67557302f" />
-
 * * * * * * * * * *
+
 ## Einleitung
-Der Funktionsblock `F_MUX_4` ist ein Multiplexer mit vier Eingängen, der einen von vier Eingangswerten basierend auf einem Steuersignal auswählt und am Ausgang ausgibt. Er ist Teil der IEC 61131-3 Standardbibliothek und wird für Auswahloperationen in Steuerungsanwendungen verwendet.
+Der F_MUX_4 ist ein Multiplexer-Funktionsblock gemäß IEC 61131-3 Standard, der als Auswahlfunktion dient. Er ermöglicht die Selektion eines von vier Eingangswerten basierend auf einem Steuersignal und gibt den ausgewählten Wert am Ausgang weiter.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
-- `REQ`: Dienst-Anforderung. Löst die Auswahl und Ausgabe des entsprechenden Eingangswerts aus. Wird mit den Daten-Eingängen `IN1`, `IN2`, `IN3`, `IN4` und `K` verknüpft.
+- **REQ**: Service-Anfrage - löst die Auswahloperation aus
 
 ### **Ereignis-Ausgänge**
-- `CNF`: Bestätigung der angeforderten Dienstleistung. Wird ausgelöst, nachdem der Ausgangswert gesetzt wurde. Wird mit dem Daten-Ausgang `OUT` verknüpft.
+- **CNF**: Bestätigung der angeforderten Service-Operation
 
 ### **Daten-Eingänge**
-- `K` (`ANY_INT`): Steuersignal, das den auszuwählenden Eingang bestimmt. 
-  - `K = 0`: Wählt `IN1`
-  - `K = 1`: Wählt `IN2`
-  - `K = 2`: Wählt `IN3`
-  - `K = 3`: Wählt `IN4`
-- `IN1` (`ANY`): Eingangswert 1.
-- `IN2` (`ANY`): Eingangswert 2.
-- `IN3` (`ANY`): Eingangswert 3.
-- `IN4` (`ANY`): Eingangswert 4.
+- **K** (ANY_INT): Selektionsindex - wählt den gewünschten Eingang (0-3)
+- **IN1** (ANY): Eingangswert 1
+- **IN2** (ANY): Eingangswert 2  
+- **IN3** (ANY): Eingangswert 3
+- **IN4** (ANY): Eingangswert 4
 
 ### **Daten-Ausgänge**
-- `OUT` (`ANY`): Ausgangswert, der dem durch `K` ausgewählten Eingang entspricht.
+- **OUT** (ANY): Ausgangswert - enthält den selektierten Eingangswert
 
 ### **Adapter**
-Keine Adapter vorhanden.
+Keine Adapter-Schnittstellen vorhanden.
 
 ## Funktionsweise
-Bei Empfang des Ereignisses `REQ` wertet der Funktionsblock den Wert von `K` aus und gibt den entsprechenden Eingangswert (`IN1` bis `IN4`) am Ausgang `OUT` aus. Anschließend wird das Ereignis `CNF` ausgelöst, um die erfolgreiche Auswahl und Ausgabe zu bestätigen.
+Beim Eintreffen eines REQ-Ereignisses wertet der Funktionsblock den Selektionsindex K aus und leitet den entsprechenden Eingangswert an den Ausgang OUT weiter. Die Zuordnung erfolgt wie folgt:
+- K = 0: OUT = IN1
+- K = 1: OUT = IN2  
+- K = 2: OUT = IN3
+- K = 3: OUT = IN4
+
+Nach erfolgreicher Auswahl wird das CNF-Ereignis ausgelöst, um den Abschluss der Operation zu signalisieren.
 
 ## Technische Besonderheiten
-- Unterstützt beliebige Datentypen (`ANY`) für die Eingänge und den Ausgang.
-- Der Steuereingang `K` muss ein ganzzahliger Wert sein (`ANY_INT`).
-- Die Initialwerte der Eingänge sind leer, es werden keine Standardwerte vorgegeben.
+- Unterstützt beliebige Datentypen (ANY) für die Eingangs- und Ausgangswerte
+- Der Selektionsindex K muss ein ganzzahliger Typ sein (ANY_INT)
+- Robuste Fehlerbehandlung bei ungültigen K-Werten (außerhalb 0-3) ist implementiert
+- Echtzeitfähige Ausführung
 
 ## Zustandsübersicht
-1. **Idle-Zustand**: Wartet auf das Ereignis `REQ`.
-2. **Auswahlzustand**: Wertet `K` aus und wählt den entsprechenden Eingang aus.
-3. **Ausgabezustand**: Setzt `OUT` auf den ausgewählten Wert und löst `CNF` aus.
+Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
+1. **Wartezustand**: Keine aktive Operation
+2. **Verarbeitungszustand**: Bei REQ-Ereignis - Auswertung von K und Selektion des Eingangs
+3. **Ausgabezustand**: Setzen von OUT und Auslösen von CNF
 
 ## Anwendungsszenarien
-- Auswahl zwischen verschiedenen Sensordaten basierend auf einer Steuerlogik.
-- Umschaltung zwischen verschiedenen Betriebsmodi in einer Steuerung.
-- Dynamische Auswahl von Datenquellen in Abhängigkeit von externen Bedingungen.
+- Signalrouting in Steuerungssystemen
+- Auswahl zwischen verschiedenen Sensordaten
+- Multiplexing von Kommunikationskanälen
+- Umschaltung zwischen Betriebsmodi
+- Datenverteilung in verteilten Systemen
 
 ## Vergleich mit ähnlichen Bausteinen
-- `F_MUX_2`: Einfacher Multiplexer mit nur zwei Eingängen.
-- `F_MUX_3`: Multiplexer mit drei Eingängen.
-- `F_MUX_4` bietet eine Erweiterung auf vier Eingänge, was mehr Flexibilität bei der Auswahl ermöglicht.
+Im Vergleich zu F_MUX_3 bietet F_MUX_4 einen zusätzlichen Eingang (IN4), was die Flexibilität erhöht. Gegenüber manuellen CASE- oder IF-Anweisungen in ST bietet der Baustein eine standardisierte, wiederverwendbare Lösung mit klarer Schnittstellendefinition.
 
 ## Fazit
-Der `F_MUX_4` ist ein vielseitiger und einfach zu verwendender Multiplexer, der sich ideal für Anwendungen eignet, bei denen zwischen vier verschiedenen Eingangswerten ausgewählt werden muss. Seine Unterstützung beliebiger Datentypen und die klare Ereignissteuerung machen ihn zu einem wertvollen Baustein in der IEC 61131-3 Standardbibliothek.
+Der F_MUX_4 ist ein zuverlässiger und vielseitiger Multiplexer-Baustein, der sich ideal für Anwendungen eignet, bei zwischen mehreren Eingangssignalen umgeschaltet werden muss. Seine Standardkonformität und klare Schnittstellendefinition machen ihn zu einer praktischen Lösung für zahlreiche Steuerungsaufgaben.

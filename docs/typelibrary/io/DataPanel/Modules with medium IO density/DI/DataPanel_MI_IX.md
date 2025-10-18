@@ -1,5 +1,7 @@
 # DataPanel_MI_IX
 
+<img width="1450" height="259" alt="image" src="https://github.com/user-attachments/assets/33ccd97b-6bf9-42a7-9b6e-91450f75eaa2" />
+
 * * * * * * * * * *
 
 ## Einleitung

@@ -1,5 +1,7 @@
 # DataPanel_LO_QX
 
+<img width="1450" height="259" alt="image" src="https://github.com/user-attachments/assets/d43cb985-d44e-40a8-978b-4acf5842a0b5" />
+
 * * * * * * * * * *
 
 ## Einleitung

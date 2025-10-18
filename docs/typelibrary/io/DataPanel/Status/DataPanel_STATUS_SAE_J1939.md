@@ -1,5 +1,7 @@
 # DataPanel_STATUS_SAE_J1939
 
+<img width="940" height="551" alt="image" src="https://github.com/user-attachments/assets/644acc53-838d-43a7-a35f-567f8db27d17" />
+
 * * * * * * * * * *
 
 ## Einleitung

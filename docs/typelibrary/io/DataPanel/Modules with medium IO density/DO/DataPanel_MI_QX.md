@@ -1,5 +1,7 @@
 # DataPanel_MI_QX
 
+<img width="1371" height="206" alt="image" src="https://github.com/user-attachments/assets/aca49b5e-0235-4f22-9cdb-020071e3df4a" />
+
 * * * * * * * * * *
 
 ## Einleitung

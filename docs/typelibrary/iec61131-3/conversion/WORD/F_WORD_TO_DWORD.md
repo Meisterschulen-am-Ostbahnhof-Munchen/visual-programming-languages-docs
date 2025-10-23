@@ -1,5 +1,7 @@
 # F_WORD_TO_DWORD
 
+<img width="1452" height="214" alt="F_WORD_TO_DWORD" src="https://github.com/user-attachments/assets/b85eea48-2c19-4b06-88ed-e59b7c9671b7" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_DWORD` dient der Konvertierung eines `WORD`-Wertes in einen `DWORD`-Wert. Er ist Teil des Pakets `iec61131::conversion` und ermöglicht eine einfache und effiziente Typumwandlung.

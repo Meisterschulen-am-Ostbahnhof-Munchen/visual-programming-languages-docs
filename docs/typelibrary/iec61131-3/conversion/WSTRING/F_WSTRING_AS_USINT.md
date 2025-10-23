@@ -1,5 +1,7 @@
 # F_WSTRING_AS_USINT
 
+<img width="1492" height="214" alt="F_WSTRING_AS_USINT" src="https://github.com/user-attachments/assets/8e64c350-6c28-45b7-9597-276c03f37b6b" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_USINT` dient der Konvertierung eines WSTRING-Wertes in einen USINT-Wert. Er ist Teil des Pakets `iec61131::conversion` und ermöglicht die einfache Umwandlung von breiten Zeichenketten in vorzeichenlose 8-Bit-Ganzzahlen.

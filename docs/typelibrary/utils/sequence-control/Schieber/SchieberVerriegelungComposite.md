@@ -1,5 +1,7 @@
 # SchieberVerriegelungComposite
 
+<img width="1403" height="323" alt="SchieberVerriegelungComposite" src="https://github.com/user-attachments/assets/34a032b1-1459-439a-8625-6e2a138d8673" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `SchieberVerriegelungComposite` ist ein Composite-FB, der andere Funktionsblökte kapselt und zur Steuerung von Schieberverriegelungen dient. Er ermöglicht die zentrale Verwaltung von Verriegelungszuständen für Haupt- und Seitenschieber.

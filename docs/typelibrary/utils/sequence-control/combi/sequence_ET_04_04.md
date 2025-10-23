@@ -1,5 +1,7 @@
 # sequence_ET_04_04
 
+<img width="1365" height="423" alt="image" src="https://github.com/user-attachments/assets/1b79f526-dd1e-44ec-995c-0dc1aa53c95a" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `sequence_ET_04_04` implementiert eine Sequenzsteuerung mit 8 Ausgangszuständen. Der Übergang zwischen den Zuständen kann entweder durch ein Ereignis (EVENT) oder zeitgesteuert (TIME) erfolgen. Der Block bietet umfassende Konfigurationsmöglichkeiten für zeitgesteuerte Übergänge und unterstützt einen Reset-Mechanismus von jedem Zustand zurück zum Startzustand.

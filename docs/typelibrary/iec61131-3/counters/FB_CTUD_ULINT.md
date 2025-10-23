@@ -1,5 +1,7 @@
 # FB_CTUD_ULINT
 
+<img width="1423" height="340" alt="FB_CTUD_ULINT" src="https://github.com/user-attachments/assets/dbd0e935-fff7-4ac2-b484-178aa62809f7" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `FB_CTUD_ULINT` ist ein Zähler mit Aufwärts- und Abwärtszählfunktion für den Datentyp `ULINT` (unsigned 64-bit integer). Er bietet zusätzliche Funktionen wie Reset, Laden eines Vorgabewerts und Statusausgaben für die Zählrichtung.

@@ -1,5 +1,7 @@
 # SchieberControl
 
+<img width="1504" height="335" alt="SchieberControl" src="https://github.com/user-attachments/assets/605ff73f-7393-4236-96f6-bcc678f4dcf6" />
+
 * * * * * * * * * *
 ## Einleitung
 Der SchieberControl Funktionsblock dient zur Steuerung eines pneumatischen Schiebersystems. Er ermöglicht das Öffnen, Schließen und Zurücksetzen des Schiebers sowie die Initialisierung und De-Initialisierung des Systems. Der FB bietet verschiedene Zustände für den Betrieb des Schiebers und unterstützt Zeitsteuerungen für Öffnungs- und Schließvorgänge.

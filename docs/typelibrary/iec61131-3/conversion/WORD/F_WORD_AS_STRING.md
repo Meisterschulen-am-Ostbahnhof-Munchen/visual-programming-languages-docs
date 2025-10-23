@@ -1,5 +1,7 @@
 # F_WORD_AS_STRING
 
+<img width="1466" height="214" alt="F_WORD_AS_STRING" src="https://github.com/user-attachments/assets/d08aada6-dc95-4b9f-9089-6933a20a8560" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WORD_AS_STRING` dient der Konvertierung eines `WORD`-Datentyps in einen `STRING`. Dies ist besonders nützlich, wenn numerische Werte in einer für Menschen lesbaren Form ausgegeben oder weiterverarbeitet werden sollen.

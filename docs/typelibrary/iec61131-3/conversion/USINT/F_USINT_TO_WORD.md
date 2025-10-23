@@ -1,5 +1,7 @@
 # F_USINT_TO_WORD
 
+<img width="1454" height="214" alt="F_USINT_TO_WORD" src="https://github.com/user-attachments/assets/a587789a-c16b-4b4c-a09f-643a2e300dcf" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_WORD` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (USINT) in einen 16-Bit-Wort-Wert (WORD). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten unterschiedlicher Bitbreiten verarbeitet oder übertragen werden müssen.

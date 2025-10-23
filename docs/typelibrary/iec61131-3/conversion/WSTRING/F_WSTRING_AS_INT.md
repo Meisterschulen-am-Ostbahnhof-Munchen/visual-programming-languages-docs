@@ -1,5 +1,7 @@
 # F_WSTRING_AS_INT
 
+<img width="1469" height="214" alt="F_WSTRING_AS_INT" src="https://github.com/user-attachments/assets/d83cc0b2-80c5-4d74-8885-958419a9091a" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_INT` dient zur Konvertierung eines WSTRING-Wertes in einen INT-Wert. Dieser Block ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise bei der Verarbeitung von Benutzereingaben oder der Interpretation von Textdaten.

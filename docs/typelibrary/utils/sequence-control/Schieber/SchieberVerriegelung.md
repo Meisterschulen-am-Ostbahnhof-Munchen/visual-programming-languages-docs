@@ -1,5 +1,7 @@
 # SchieberVerriegelung
 
+<img width="1313" height="347" alt="image" src="https://github.com/user-attachments/assets/fe5348b3-624e-44a5-8e31-8927d4dd851e" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock "SchieberVerriegelung" dient zur Steuerung und Verriegelung von drei Schiebern (Hauptschieber, linker und rechter Schieber). Er ermöglicht verschiedene Betriebszustände und gewährleistet eine sichere Steuerung der Schieberpositionen basierend auf den Eingangssignalen und Sperrzuständen.

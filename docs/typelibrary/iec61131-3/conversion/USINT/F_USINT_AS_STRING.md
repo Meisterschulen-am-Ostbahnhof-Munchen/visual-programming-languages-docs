@@ -1,5 +1,7 @@
 # F_USINT_AS_STRING
 
+<img width="1481" height="214" alt="F_USINT_AS_STRING" src="https://github.com/user-attachments/assets/bdc5d422-b30f-4da1-89aa-4becb5d9337d" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_USINT_AS_STRING` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (USINT) in einen String (STRING). Diese Funktionalität ist besonders nützlich, wenn numerische Werte für die Anzeige oder Protokollierung in eine lesbare Textform umgewandelt werden müssen.

@@ -1,6 +1,6 @@
 # FB_CTU_DINT
 
-<img width="400" alt="FB_CTU_DINT Block Symbol" src="https://github.com/user-attachments/assets/c324bdc2-9888-4a41-a76b-d2bb7668955e" />
+<img width="1396" height="277" alt="" src="https://github.com/user-attachments/assets/36c696fb-4dfc-457a-bd17-1842876fa432" />
 
 * * * * * * * * * *
 

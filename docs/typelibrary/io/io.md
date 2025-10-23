@@ -1,18 +1,28 @@
 # io
 
 ```{toctree}
-DataPanel/DataPanel
+zephyr/zephyr
+eliteboard/eliteboard
+eIO/eIO
+GPIOChip/GPIOChip
+QW
 esp32/esp32
+PLC01A1/PLC01A1
+QB
 isobus/isobus
 IE
-IX
+wago/wago
+PLCnext/PLCnext
 IB
-IW
-ID
-IL
-QX
-QB
-QW
-QD
 QL
+QX
+ADS/ADS
+ID
+IX
+DataPanel/DataPanel
+QD
+revpi/revpi
+IL
+embrick/embrick
+IW
 ```

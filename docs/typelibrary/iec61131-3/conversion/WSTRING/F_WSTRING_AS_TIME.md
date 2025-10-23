@@ -1,5 +1,7 @@
 # F_WSTRING_AS_TIME
 
+<img width="1481" height="214" alt="F_WSTRING_AS_TIME" src="https://github.com/user-attachments/assets/508ad921-2d01-48fe-b8ef-0c57d37b7f10" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_TIME` dient zur Konvertierung einer Zeichenkette im WSTRING-Format in einen TIME-Wert. Dieser Baustein ist besonders nützlich, wenn Zeitwerte als Zeichenketten vorliegen und in das TIME-Format umgewandelt werden müssen, um sie in weiteren Berechnungen oder Steuerungslogiken verwenden zu können.

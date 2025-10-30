@@ -24,4 +24,5 @@ signalprocessing/signalprocessing
 utils/utils
 math/math
 convert/convert
+logiBUS/logiBUS
 ```

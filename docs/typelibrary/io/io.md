@@ -2,7 +2,7 @@
 
 ```{toctree}
 zephyr/zephyr
-eliteboard/eliteboard
+eliteboard/index
 eIO/eIO
 GPIOChip/GPIOChip
 QW

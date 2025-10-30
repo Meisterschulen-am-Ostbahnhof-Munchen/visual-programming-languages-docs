@@ -1,7 +1,7 @@
 # io
 
 ```{toctree}
-zephyr/zephyr
+zephyr/index
 eliteboard/index
 eIO/eIO
 GPIOChip/GPIOChip

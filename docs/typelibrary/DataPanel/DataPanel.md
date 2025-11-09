@@ -1,0 +1,5 @@
+# DataPanel
+
+```{toctree}
+io/io
+```

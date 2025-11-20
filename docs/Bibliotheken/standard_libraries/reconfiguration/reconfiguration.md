@@ -1,4 +1,4 @@
-# reconfiguration
+# reconfiguration - Wird nicht mehr im Projekt benutzt
 
 ```{toctree}
 ST_SET_PARM

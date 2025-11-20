@@ -9,22 +9,5 @@ In diesem Abschnitt werden wir Ihnen die Grundlagen der Typelibrary erklären un
 schauen Sie auch mal in den FB Navigator unter [www.holobloc.com/doc/navigator](https://www.holobloc.com/doc/navigator.htm)
 
 ```{toctree}
-devices/devices
-esp32/esp32
-esp-addons/esp-addons
-events/events
-iec61131-3/iec61131-3
-io/io
-isobus/isobus
-net/net
-reconfiguration/reconfiguration
-resources/resources
-segments/segments
-signalprocessing/signalprocessing
-utils/utils
-math/math
-convert/convert
-logiBUS/logiBUS
-BlinkMarine/BlinkMarine
-Funk/Funk
+
 ```

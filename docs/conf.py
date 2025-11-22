@@ -64,6 +64,10 @@ googleanalytics_id = 'G-4WPKCFX4NN'
 # a list of builtin themes.
 #
 html_theme = "sphinx_rtd_theme"
+html_theme_options = {
+    'navigation_depth': 4,
+}
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

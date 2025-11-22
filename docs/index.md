@@ -97,7 +97,7 @@ runtime/runtime
 DasErsteProjekt/DasErsteProjekt
 Interface/Interface
 Übungsaufgaben
-Bibliothek/Bibliothek
+Bibliotheken/Bibliotheken
 training1/Ventilsteuerung/4diacIDE-workspace/test/Uebungen_doc/Uebungen
 constants/constants
 genindex

@@ -2,6 +2,6 @@
 
 ```{toctree}
 typelibrary/typelibrary
-external_libraries/external_libraries
-standard_libraries/standard_libraries
+ExternalLibraries/ExternalLibraries
+StandardLibraries/StandardLibraries
 ```

@@ -1,6 +1,5 @@
 # E_TONOF
 
-## Bild
 ![image](https://github.com/user-attachments/assets/e09eae11-e153-429f-8eaf-6bfff456f35a)
 
 

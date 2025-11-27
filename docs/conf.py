@@ -64,7 +64,7 @@ googleanalytics_id = 'G-4WPKCFX4NN'
 #
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
-    'navigation_depth': 6,
+    'navigation_depth': 7,
 }
 
 

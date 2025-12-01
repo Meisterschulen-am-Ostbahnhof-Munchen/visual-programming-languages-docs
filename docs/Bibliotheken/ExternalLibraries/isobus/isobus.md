@@ -1,9 +1,10 @@
 # isobus
 
 ```{toctree}
+TC/TC
+TECU/TECU
+UT/UT
 c/c
 colours/colours
-UT/UT
-TECU/TECU
-TC/TC
+pgn/pgn
 ```

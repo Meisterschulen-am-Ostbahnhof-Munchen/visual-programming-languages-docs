@@ -1,8 +1,9 @@
 # Button
 
 ```{toctree}
-Button_IX
 ButtonActivationCode
-Button_IXA
+ButtonActivationCode_S
 Button_IE
+Button_IX
+Button_IXA
 ```

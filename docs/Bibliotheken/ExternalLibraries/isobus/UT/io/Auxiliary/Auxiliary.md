@@ -1,6 +1,6 @@
 # Auxiliary
 
 ```{toctree}
-OUT/OUT
 IN/IN
+OUT/OUT
 ```

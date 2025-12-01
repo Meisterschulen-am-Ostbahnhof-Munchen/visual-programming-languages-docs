@@ -2,6 +2,6 @@
 
 ```{toctree}
 const/const
-DQ/DQ
 DI/DI
+DQ/DQ
 ```

@@ -1,7 +1,7 @@
 # revpi
 
 ```{toctree}
-IORevPiDIO
-IORevPiCore
 IORevPiAIO
+IORevPiCore
+IORevPiDIO
 ```

@@ -1,4 +1,4 @@
-# esp-addons - Wird abgelöst von external library
+# esp-addons
 
 ```{toctree}
 hsv2rgb

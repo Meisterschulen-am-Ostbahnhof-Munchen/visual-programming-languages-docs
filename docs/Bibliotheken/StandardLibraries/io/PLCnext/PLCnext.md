@@ -1,8 +1,8 @@
 # PLCnext
 
 ```{toctree}
-PLCnextAXLSEDO16
 PLCnextAXLSEDI16
-PLCnextMaster
+PLCnextAXLSEDO16
 PLCnextAXLSESC
+PLCnextMaster
 ```

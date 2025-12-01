@@ -1,8 +1,8 @@
 # eIO
 
 ```{toctree}
+eIW
+eIWconfig
 eIX
 eIXconfig
-eIWconfig
-eIW
 ```

@@ -1,4 +1,4 @@
-# resources - Wird nicht mehr im Projekt benutzt
+# resources
 
 ```{toctree}
 EMB_RES

@@ -1,7 +1,7 @@
 # DI
 
 ```{toctree}
-Funk_IX
 Funk_DI
+Funk_IX
 Funk_IXA
 ```

@@ -1,5 +1,7 @@
 # AlPgnRxNew8Bcylc_REQ
 
+<img width="1437" height="299" alt="image" src="https://github.com/user-attachments/assets/fa8d676b-f21e-4acb-8213-43edacdc6166" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `AlPgnRxNew8Bcylc_REQ` dient zur zyklischen Anforderung von Daten über ein CAN-Netzwerk gemäß dem ISOBUS-Standard (ISO 11783). Sein Hauptzweck ist die Installation und Verwaltung von Empfangsparametern für spezifische Parameter Group Numbers (PGNs). Der Baustein ermöglicht die Konfiguration eines zyklischen Empfangs und überwacht den Datenfluss, indem er bei erfolgreichem Empfang, bei Timeouts oder bei Fehlern entsprechende Ereignisse auslöst.

@@ -1,5 +1,7 @@
 # AlPgnTxNew8Bcycl_REQ
 
+<img width="1413" height="270" alt="image" src="https://github.com/user-attachments/assets/ec75d797-bd6e-4395-a60e-0a0677b04e1d" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `AlPgnTxNew8Bcycl_REQ` dient zur zyklischen Übertragung von Daten über ein ISOBUS-Netzwerk. Sein Hauptzweck ist die Installation und Verwaltung eines Parameter Group Number (PGN)-Transmit-Objekts (TX), das Daten in einem definierten Zeitintervall sendet. Ein zentrales Merkmal ist die Integration eines Callback-Adapters, der eine flexible Datenbereitstellung ermöglicht.

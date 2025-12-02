@@ -1,7 +1,6 @@
 # TECU
 
 ```{toctree}
-COGSOGRapidUpdate
 I_COGSOGRapidUpdate
 I_FHS
 I_FPTO
@@ -13,6 +12,4 @@ I_RPTO
 I_VDS
 I_VP1
 I_WBSD
-PosDeltaHighPrecRapidUpd
-VP1
 ```

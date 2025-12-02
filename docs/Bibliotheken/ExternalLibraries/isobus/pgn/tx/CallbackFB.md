@@ -1,5 +1,7 @@
 # CallbackFB
 
+<img width="1298" height="232" alt="image" src="https://github.com/user-attachments/assets/3e1dbee0-183b-4d4f-a9e7-110505249cb4" />
+
 * * * * * * * * * *
 ## Einleitung
 Der `CallbackFB` ist ein Composite-Funktionsblock, der die Verwendung des Callback-Mechanismus in Subapplikationen vereinfacht. Er dient als Wrapper-Baustein, um eine standardisierte Schnittstelle für die asynchrone Kommunikation über einen Callback-Adapter bereitzustellen. Sein primärer Zweck ist die Entkopplung und strukturierte Handhabung von Bestätigungsnachrichten (`CNF`) und Anfragen (`REQ`) innerhalb eines Funktionsblocknetzwerks.

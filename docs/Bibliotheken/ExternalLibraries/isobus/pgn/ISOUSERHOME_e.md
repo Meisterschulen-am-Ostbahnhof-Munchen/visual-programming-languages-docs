@@ -52,4 +52,4 @@ Die Konstanten werden primär in ISOBUS-konformen Steuerungssystemen in der Land
 *   **Direkte Verwendung von Zahlenwerten:** Die Verwendung von `ISOUSERHOME_e.intern` ist im Code deutlich aussagekräftiger und weniger fehleranfällig als die direkte Verwendung der Zahl `0`.
 
 ## Fazit
-`ISOUSERHOME_e` ist ein essentielles Hilfskonstrukt für die Entwicklung klarer und wartbarer ISOBUS-Anwendungen in 4diac. Durch die Bereitstellung aussagekräftiger Konstantennamen abstrahiert es von den zugrundeliegenden numerischen Werten und verbessert so die Lesbarkeit und Robustheit des Systementwurfs. Es ist ein Baustein auf Datencbene, der die Kommunikationslogik in höheren Funktionsblöcken unterstützt.
+`ISOUSERHOME_e` ist ein essentielles Hilfskonstrukt für die Entwicklung klarer und wartbarer ISOBUS-Anwendungen in 4diac. Durch die Bereitstellung aussagekräftiger Konstantennamen abstrahiert es von den zugrundeliegenden numerischen Werten und verbessert so die Lesbarkeit und Robustheit des Systementwurfs. Es ist ein Baustein auf Datenebene, der die Kommunikationslogik in höheren Funktionsblöcken unterstützt.

@@ -1,5 +1,7 @@
 # AlPgnTxNew8Bcycl
 
+<img width="1423" height="294" alt="image" src="https://github.com/user-attachments/assets/6227eb0b-12b6-465a-b728-3774bc6847d3" />
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `AlPgnTxNew8Bcycl` dient der zyklischen Übertragung von Daten über ein CAN-Netzwerk gemäß dem ISOBUS-Standard (ISO 11783). Sein Hauptzweck ist die Installation, Konfiguration und regelmäßige Aussendung von Parameter Group Numbers (PGNs). Er ermöglicht die Definition von Kommunikationseigenschaften wie Zieladresse, Priorität und Sendeintervall und stellt sicher, dass Daten zuverlässig und im konfigurierten Rhythmus versendet werden.
@@ -43,7 +45,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Technische Besonderheiten
 *   Der Block ist für die Verwendung in ISOBUS-Umgebungen (Landtechnik) vorgesehen und nutzt spezifische ISOBUS-Datentypen (`ISONETEVENT_T`, `CAN_MSG`).
-*   Die zyklische Übertragung kann durch Setzen von `u16DefRepRate` auf 0 deaktiviert werden, was einen bedarfsgesteuerten Betrieb ermöglicht (nur bei `UPD`?).
+*   Die zyklische Übertragung kann durch Setzen von `u16DefRepRate` auf 0 deaktiviert werden, was einen bedarfsgesteuerten Betrieb ermöglicht.
 *   Die Fehlerbehandlung ist über dedizierte Ereignisse (`dataERR`, `pgnERR`) strukturiert, was eine robuste Integration in übergeordnete Steuerungen ermöglicht.
 *   Die Rückgabe eines `PGN_handle` erlaubt die Verwaltung mehrerer installierter PGNs innerhalb eines Systems.
 

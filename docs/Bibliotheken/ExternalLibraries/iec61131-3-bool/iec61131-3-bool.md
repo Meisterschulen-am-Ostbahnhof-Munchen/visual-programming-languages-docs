@@ -3,4 +3,3 @@
 ```{toctree}
 booleanOperators/booleanOperators
 ```
-

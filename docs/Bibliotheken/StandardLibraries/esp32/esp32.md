@@ -1,4 +1,4 @@
-# esp32 - Wird abgelöst von external library
+# esp32
 
 ```{toctree}
 nvs/nvs

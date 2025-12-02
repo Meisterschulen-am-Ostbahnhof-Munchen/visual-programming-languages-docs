@@ -1,4 +1,4 @@
-# math - Wird nicht mehr im Projekt benutzt
+# math
 
 ```{toctree}
 FB_RANDOM

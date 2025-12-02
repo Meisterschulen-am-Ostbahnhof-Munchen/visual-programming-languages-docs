@@ -1,12 +1,12 @@
 # signalprocessing
 
 ```{toctree}
-SCALE
-SCALE_LIM
-RampLimitFS
-measurement/measurement
-FIELDBUS_WORD_TO_PERCENT
-FIELDBUS_PERCENT_TO_WORD
 distance/distance
 DualHysteresis
+FIELDBUS_PERCENT_TO_WORD
+FIELDBUS_WORD_TO_PERCENT
+measurement/measurement
+RampLimitFS
+SCALE
+SCALE_LIM
 ```

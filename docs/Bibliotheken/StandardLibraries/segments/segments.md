@@ -1,4 +1,4 @@
-# segments - Wird nicht mehr im Projekt benutzt
+# segments
 
 ```{toctree}
 Ethernet

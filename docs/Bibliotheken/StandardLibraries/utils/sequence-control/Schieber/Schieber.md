@@ -1,7 +1,7 @@
 # Schieber
 
 ```{toctree}
-SchieberVerriegelung
 SchieberControl
+SchieberVerriegelung
 SchieberVerriegelungComposite
 ```

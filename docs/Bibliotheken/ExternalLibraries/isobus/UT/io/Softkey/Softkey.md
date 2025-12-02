@@ -1,8 +1,8 @@
 # Softkey
 
 ```{toctree}
-SoftKeyActivationCode
-Softkey_IX
 Softkey_IE
+Softkey_IX
 Softkey_IXA
+SoftKeyActivationCode
 ```

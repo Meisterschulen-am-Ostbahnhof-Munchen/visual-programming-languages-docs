@@ -1,6 +1,5 @@
 # timing
 
-
 ```{toctree}
 E_STOPWATCH
 F_NOW

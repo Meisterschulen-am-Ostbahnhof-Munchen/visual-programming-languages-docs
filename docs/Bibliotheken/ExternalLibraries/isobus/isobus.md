@@ -3,7 +3,7 @@
 ```{toctree}
 c/c
 colours/colours
-UT/UT
-TECU/TECU
 TC/TC
+TECU/TECU
+UT/UT
 ```

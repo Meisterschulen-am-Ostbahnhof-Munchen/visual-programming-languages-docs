@@ -1,0 +1,5 @@
+# version
+
+```{toctree}
+fboot/fboot
+```

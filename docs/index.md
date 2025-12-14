@@ -98,9 +98,9 @@ DasErsteProjekt/DasErsteProjekt
 Interface/Interface
 Übungsaufgaben
 Bibliotheken/Bibliotheken
-training1/Ventilsteuerung/4diacIDE-workspace/test/Uebungen_doc/Uebungen
-constants/constants
-genindex
+training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebungen
+training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebungen
+training1/Ventilsteuerung/4diacIDE-workspace/test_VV/Uebungen_doc/Uebungen
 search
 ```
 

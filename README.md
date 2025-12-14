@@ -14,7 +14,7 @@ Unsere Inhalte richten sich sowohl an Anfänger als auch an Fortgeschrittene und
 ## Dokumentation
 
 Die vollständige und gerenderte Dokumentation finden Sie unter:
-👉 [https://www.ms-muc-docs.de/](https://www.ms-muc-docs.de/)
+👉 <https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/>
 
 ## Community & Support
 

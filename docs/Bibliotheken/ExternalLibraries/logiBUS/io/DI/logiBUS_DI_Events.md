@@ -34,6 +34,9 @@ Die GlobalConstants-Definition `logiBUS_DI_Events` enthält 14 verschiedene Erei
 - **Package-Zugehörigkeit**: `logiBUS::io::DI`
 - **Konstantendefinition**: Alle Werte sind als globale Konstanten (CONSTANT) deklariert
 
+
+<https://components.espressif.com/components/espressif/button>
+
 ## Zustandsübersicht
 
 Die Ereigniskonstanten decken folgende Zustände ab:

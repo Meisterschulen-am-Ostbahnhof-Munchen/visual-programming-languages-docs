@@ -1,157 +1,84 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4diac & IEC 61499 Referenz (Vollständig)</title>
-    <style>
-        :root {
-            --bg-color: #f8f9fa;
-            --text-main: #333;
-            --border-color: #dee2e6;
-            
-            /* User definierte Farben */
-            --color-ax: #9b59b6; /* Violett für AX */
-            --color-e: #27ae60;  /* Grün für E_ */
-            --color-std: #2c3e50; /* Standard Dunkelblau */
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            margin: 0;
-            padding: 20px;
-            font-size: 14px;
-        }
-
-        .container {
-            max-width: 1600px; /* Breiter für die Links */
-            margin: 0 auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
-
-        /* Suchleiste */
-        .header-section {
-            position: sticky;
-            top: 0;
-            background: white;
-            z-index: 100;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #eee;
-        }
-
-        h1 { margin-top: 0; color: var(--color-std); }
-
-        input#searchInput {
-            width: 100%;
-            padding: 12px;
-            font-size: 16px;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        input#searchInput:focus { outline: none; border-color: var(--color-e); }
-
-        /* Tabelle */
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        
-        th {
-            text-align: left;
-            padding: 12px 8px;
-            background-color: #e9ecef;
-            position: sticky;
-            top: 85px; /* Offset für Suchleiste */
-            z-index: 90;
-            border-bottom: 2px solid #ccc;
-        }
-
-        td {
-            padding: 10px 8px;
-            border-bottom: 1px solid #eee;
-            vertical-align: top;
-        }
-
-        tr:hover { background-color: #f1f3f5; }
-
-        /* Farb-Logik Klassen */
-        .term-ax { color: var(--color-ax); font-weight: 700; font-size: 1.1em; }
-        .term-e { color: var(--color-e); font-weight: 700; font-size: 1.1em; }
-        .term-std { color: var(--color-std); font-weight: 700; font-size: 1.1em; }
-
-        .exercise-badge {
-            background-color: #fff3cd;
-            color: #856404;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 0.85em;
-            white-space: pre-wrap; /* Damit mehrere Übungen umbrechen */
-        }
-
-        /* Links und Buttons */
-        .link-btn {
-            display: inline-block;
-            margin: 2px;
-            padding: 4px 8px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 0.8em;
-            border: 1px solid transparent;
-            transition: all 0.2s;
-        }
-        .btn-path { background-color: #e2e6ea; color: #333; border: 1px solid #ccc; }
-        .btn-ext { background-color: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
-        .btn-vid { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-        
-        .link-btn:hover { opacity: 0.8; text-decoration: none; }
-
-        .desc-text { white-space: pre-line; } /* Zeilenumbrüche erhalten */
-        .din-ref { font-size: 0.85em; color: #666; font-style: italic; margin-top: 4px; display: block; }
-    </style>
+<meta charset="UTF-8">
+<base target="_blank"> 
+<style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; background: #fff; padding: 10px; }
+    
+    /* Suchleiste */
+    .search-box { position: sticky; top: 0; background: #fff; padding-bottom: 10px; border-bottom: 2px solid #ccc; z-index: 999; }
+    input { width: 100%; padding: 10px; font-size: 16px; border: 1px solid #999; border-radius: 4px; box-sizing: border-box;}
+    
+    /* Tabelle */
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th { background: #eee; text-align: left; padding: 8px; position: sticky; top: 60px; z-index: 998; border-bottom: 2px solid #999;}
+    td { border-bottom: 1px solid #ddd; padding: 8px; vertical-align: top; }
+    
+    /* Farben */
+    .ax { color: #8e44ad; font-weight: bold; } /* Violett */
+    .ev { color: #27ae60; font-weight: bold; } /* Grün */
+    .std { color: #333; font-weight: bold; }
+    
+    /* Button Style für Links */
+    .btn {
+        display: inline-block;
+        background-color: #3498db;
+        color: white;
+        padding: 5px 10px;
+        text-decoration: none;
+        border-radius: 3px;
+        font-size: 12px;
+        margin-top: 2px;
+        white-space: nowrap;
+    }
+    .btn:hover { background-color: #2980b9; }
+    .btn-search { background-color: #95a5a6; } /* Grau für Suche */
+</style>
 </head>
 <body>
 
-<div class="container">
-    <div class="header-section">
-        <h1>IEC 61499 Glossar (Farbkodiert)</h1>
-        <input type="text" id="searchInput" placeholder="Suche nach Begriff, Übung oder Bedeutung...">
-        <div style="font-size: 0.9em; margin-top: 5px; color: #666;">
-            Legende: <span style="color:var(--color-ax); font-weight:bold;">AX (Violett)</span> | 
-            <span style="color:var(--color-e); font-weight:bold;">E (Grün)</span> | 
-            <span style="color:var(--color-std); font-weight:bold;">Standard</span>
-        </div>
-    </div>
-
-    <table id="dataTable">
-        <thead>
-            <tr>
-                <th style="width: 20%">Abkürzung / Fachbegriff</th>
-                <th style="width: 30%">Bedeutung / Beschreibung</th>
-                <th style="width: 10%">Übung</th>
-                <th style="width: 25%">Details & DIN Referenz</th>
-                <th style="width: 15%">Links & Ressourcen</th>
-            </tr>
-        </thead>
-        <tbody>
-            </tbody>
-    </table>
+<div class="search-box">
+    <h3 style="margin:0 0 5px 0;">IEC 61499 Glossar</h3>
+    <input type="text" id="myInput" onkeyup="filterTable()" placeholder="Begriff suchen...">
 </div>
 
+<table id="myTable">
+    <thead>
+        <tr>
+            <th style="width:20%">Begriff</th>
+            <th style="width:30%">Bedeutung</th>
+            <th style="width:30%">Details / Norm</th>
+            <th style="width:20%">Link / Suche</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        </tbody>
+</table>
+
 <script>
-    // Hilfsfunktion zur Bestimmung der Klasse
-    function getTypeClass(term) {
-        if (!term) return "term-std";
-        if (term.startsWith("AX")) return "term-ax";
-        if (term.startsWith("E_")) return "term-e";
-        return "term-std";
+    // Funktion: Link generieren der IMMER funktioniert
+    function makeLink(text, label) {
+        if(!text || text.length < 2 || text === "NaN") return "";
+        
+        var url = text;
+        var styleClass = "btn";
+        
+        // Wenn es kein http Link ist (also ein Pfad oder Text), mache eine Google Suche daraus
+        if (!text.startsWith("http")) {
+            url = "https://www.google.com/search?q=" + encodeURIComponent(text + " 4diac IEC 61499");
+            styleClass = "btn btn-search"; // Grauer Button für Suche
+            label = "🔍 " + label; // Lupe davor
+        } else {
+            label = "🔗 " + label; // Kettenglied für echten Link
+        }
+        
+        // target="_blank" ist hier der Schlüssel!
+        return '<a href="' + url + '" class="' + styleClass + '" target="_blank">' + label + '</a><br>';
     }
 
-    // Die kompletten Daten aus deiner CSV
-    const rawData = [
+    // Deine Daten
+    var data = [
         {id:1, term:"BOOL", mean:"Datentyp", ex:"", det:"Boolean", path:"Datentypen in der IEC 61499", extDe:"", extEn:""},
         {id:0, term:"QUARTER", mean:"Datentyp", ex:"", det:"", path:"", extDe:"", extEn:""},
         {id:0, term:"BYTE", mean:"Datentyp", ex:"", det:"", path:"", extDe:"", extEn:""},
@@ -406,54 +333,68 @@
         {id:0, term:"F_MUX_3", mean:"", ex:"Uebung_090a2", det:"", path:"", extDe:"", extEn:""},
         {id:119, term:"F_LIMIT", mean:"", ex:"", det:"", path:"", extDe:"", extEn:""},
         {id:120, term:"E_SELECT", mean:"", ex:"Uebung_095", det:"Auswahl aus zwei Ereignissen", path:"E_SELECT", extDe:"E_SELECT", extEn:""}
+
+        // ... (Füge hier bei Bedarf weitere Zeilen nach dem gleichen Muster hinzu)
+        // Muster: {t:"BEGRIFF", m:"BEDEUTUNG", d:"DETAILS", l:"LINK ODER TEXT"}
     ];
+    
+    // Wir fügen hier noch den Rest deiner wichtigen Daten hinzu, 
+    // damit die Liste voll ist (komprimiert für Google Sites Performance):
+    var extraData = [
+         {t:"E_SWITCH",m:"Weiche",d:"Demultiplexer",l:"Uebung_005"},
+         {t:"E_MERGE",m:"Zusammenführen",d:"OR für Events",l:"Uebung_004"},
+         {t:"E_CTU",m:"Zähler",d:"Hochzählen",l:"Uebung_080"},
+         {t:"F_ADD",m:"Mathe",d:"Addition",l:""},
+         {t:"F_GT",m:"Vergleich",d:"Größer als",l:"Uebung_071"},
+         {t:"E_R_TRIG",m:"Flanke",d:"Steigende Flanke",l:"Uebung_089"},
+         {t:"E_F_TRIG",m:"Flanke",d:"Fallende Flanke",l:"Uebung_088"},
+         {t:"E_CYCLE",m:"Generator",d:"Taktgeber / Blinker",l:"Uebung_007"},
+         {t:"Status",m:"Service",d:"Status Ausgang",l:""}
+    ];
+    data = data.concat(extraData);
 
-    const tableBody = document.querySelector('#dataTable tbody');
-    const searchInput = document.getElementById('searchInput');
+    var tbody = document.getElementById("tableBody");
 
-    function renderTable(data) {
-        tableBody.innerHTML = '';
-        data.forEach(item => {
-            const row = document.createElement('tr');
+    // Tabelle bauen
+    for(var i=0; i<data.length; i++) {
+        var row = document.createElement("tr");
+        var item = data[i];
+        
+        // Farbe bestimmen
+        var cssClass = "std";
+        if(item.t.startsWith("AX")) cssClass = "ax";
+        if(item.t.startsWith("E_")) cssClass = "ev";
+        
+        // Link bauen
+        var linkHtml = makeLink(item.l, "Link / Übung");
+        if(item.d.includes("Uebung")) {
+             linkHtml += makeLink(item.d, "Zur Übung"); // Falls Übung in Details steht
+        }
+
+        row.innerHTML = 
+            '<td><span class="' + cssClass + '">' + item.t + '</span></td>' +
+            '<td>' + item.m + '</td>' +
+            '<td>' + item.d + '</td>' +
+            '<td>' + linkHtml + '</td>';
             
-            // Klasse bestimmen (Farbe)
-            const typeClass = getTypeClass(item.term);
-
-            // Links bauen
-            let linksHtml = '';
-            if(item.path) linksHtml += `<a href="#" class="link-btn btn-path" title="${item.path}">Pfad/Link</a>`;
-            if(item.extDe) linksHtml += `<a href="#" class="link-btn btn-ext" title="${item.extDe}">Link (DE)</a>`;
-            if(item.extEn) linksHtml += `<a href="#" class="link-btn btn-ext" title="${item.extEn}">Link (EN)</a>`;
-
-            // Übung Badge
-            let exHtml = item.ex ? `<span class="exercise-badge">${item.ex.replace(/,/g, ', ')}</span>` : '';
-
-            row.innerHTML = `
-                <td><span class="${typeClass}">${item.term}</span></td>
-                <td>${item.mean}</td>
-                <td>${exHtml}</td>
-                <td class="desc-text">${item.det}<br><span class="din-ref">${item.det.includes('DIN') ? '⚠ Norm-Referenz' : ''}</span></td>
-                <td>${linksHtml}</td>
-            `;
-            tableBody.appendChild(row);
-        });
+        tbody.appendChild(row);
     }
 
-    // Init
-    renderTable(rawData);
-
-    // Suche
-    searchInput.addEventListener('input', (e) => {
-        const val = e.target.value.toLowerCase();
-        const filtered = rawData.filter(i => {
-            return (i.term && i.term.toLowerCase().includes(val)) ||
-                   (i.mean && i.mean.toLowerCase().includes(val)) ||
-                   (i.ex && i.ex.toLowerCase().includes(val)) ||
-                   (i.det && i.det.toLowerCase().includes(val));
-        });
-        renderTable(filtered);
-    });
-
+    // Suchfunktion
+    function filterTable() {
+        var input = document.getElementById("myInput");
+        var filter = input.value.toUpperCase();
+        var rows = tbody.getElementsByTagName("tr");
+        
+        for (var i = 0; i < rows.length; i++) {
+            var text = rows[i].textContent || rows[i].innerText;
+            if (text.toUpperCase().indexOf(filter) > -1) {
+                rows[i].style.display = "";
+            } else {
+                rows[i].style.display = "none";
+            }
+        }
+    }
 </script>
 
 </body>

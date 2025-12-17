@@ -610,6 +610,19 @@ const data_timer = [
       "title":"",
       "type":""
    }
+   {
+      "nr":"84",
+      "term":"E_STOPWATCH",
+      "mean":"",
+      "ex":"Uebung_020i",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"event"
+   }
 ];
 
     // --- GRUPPE 4: Logik & Arithmetik ---
@@ -1265,6 +1278,62 @@ const data_logic_math = [
       "type":""
    }
 ];
+
+const data_counters = [
+   {
+      "nr":"107",
+      "term":"E_CTU",
+      "mean":"",
+      "ex":"Uebung_080",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_CTU.html\" target=\"_blank\">E_CTU</a>",
+      "vid":"<a href=\"https://www.youtube.com/watch?v=oZOWd_zKFcc\" target=\"_blank\">E_CTU</a>",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://holobloc.com/doc/fb/rt/events/E_CTU.htm\" target=\"_blank\">E_CTU</a>",
+      "title":"Ereignisgesteuerter Aufwärtszähler / Event-Driven Up Counter",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"E_CTD",
+      "mean":"",
+      "ex":"Uebung_081",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_CTD.html\" target=\"_blank\">E_CTD</a>",
+      "vid":"<a href=\"https://www.youtube.com/watch?v=NgLWcVhgRqk\" target=\"_blank\">E_CTD</a>",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://holobloc.com/doc/fb/rt/events/E_CTD.htm\" target=\"_blank\">E_CTD</a>",
+      "title":"",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"E_CTUD",
+      "mean":"",
+      "ex":"Uebung_082",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_CTUD.html\" target=\"_blank\">E_CTUD</a>",
+      "vid":"<a href=\"https://youtu.be/H_MRtaMiaU8\" target=\"_blank\">E_CTUD</a>",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://holobloc.com/doc/fb/rt/events/E_CTUD.htm\" target=\"_blank\">E_CTUD</a>",
+      "title":"",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"E_CTUD_UDINT",
+      "mean":"",
+      "ex":"Uebung_083",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_CTUD_UDINT.html\" target=\"_blank\">E_CTUD_UDINT</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"event"
+   }
+];
+
 
     // --- GRUPPE 5: Events & Steuerung ---
 const data_events = [
@@ -1985,6 +2054,149 @@ const data_hardware = [
       "ext_de":"",
       "ext_en":"",
       "title":"Machine Selected Speed MSS",
+      "type":""
+   }
+   {
+      "nr":"85",
+      "term":"BUTTON_PRESS_DOWN",
+      "mean":"Taste gedrückt",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">Component: Button</a>",
+      "title":"Button pressed",
+      "type":""
+   },
+   {
+      "nr":"86",
+      "term":"BUTTON_PRESS_UP",
+      "mean":"Taste losgelassen",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
+      "title":"Button released",
+      "type":""
+   },
+   {
+      "nr":"87",
+      "term":"BUTTON_PRESS_REPEAT",
+      "mean":"Taste wiederholt gedrückt",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
+      "title":"Button pressed repeat",
+      "type":""
+   },
+   {
+      "nr":"88",
+      "term":"BUTTON_PRESS_REPEAT_DONE",
+      "mean":"Wiederholtes Drücken der Taste abgeschlossen",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
+      "title":"Button press repeat done",
+      "type":""
+   },
+   {
+      "nr":"89",
+      "term":"BUTTON_SINGLE_CLICK",
+      "mean":"Einfacher Klick auf die Taste",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
+      "title":"Button single click",
+      "type":""
+   },
+   {
+      "nr":"90",
+      "term":"BUTTON_DOUBLE_CLICK",
+      "mean":"Doppelklick auf die Taste",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
+      "title":"Button double click",
+      "type":""
+   },
+   {
+      "nr":"91",
+      "term":"BUTTON_MULTIPLE_CLICK",
+      "mean":"Mehrfacher Klick auf die Taste",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
+      "title":"Button multiple click",
+      "type":""
+   },
+   {
+      "nr":"92",
+      "term":"BUTTON_LONG_PRESS_START",
+      "mean":"Langer Tastendruck gestartet",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
+      "title":"Button long press start",
+      "type":""
+   },
+   {
+      "nr":"93",
+      "term":"BUTTON_LONG_PRESS_HOLD",
+      "mean":"Langer Tastendruck gehalten",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
+      "title":"Button long press hold",
+      "type":""
+   },
+   {
+      "nr":"94",
+      "term":"BUTTON_LONG_PRESS_UP",
+      "mean":"Langer Tastendruck beendet",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
+      "title":"Button long press up",
+      "type":""
+   },
+   {
+      "nr":"95",
+      "term":"BUTTON_PRESS_END",
+      "mean":"Tastendruck beendet",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
+      "title":"Button Press end",
       "type":""
    }
 ];

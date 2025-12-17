@@ -1,5 +1,0 @@
-# distance
-
-```{toctree}
-RangeBasedPulse
-```

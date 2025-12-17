@@ -1,0 +1,5 @@
+# Funk
+
+```{toctree}
+io/io
+```

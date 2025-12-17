@@ -97,10 +97,10 @@ runtime/runtime
 DasErsteProjekt/DasErsteProjekt
 Interface/Interface
 Übungsaufgaben
-training1/Ventilsteuerung/4diacIDE-workspace/test/FBs/Uebungen_doc/Uebungen
-constants/constants
-typelibrary/typelibrary
-genindex
+Bibliotheken/Bibliotheken
+training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebungen
+training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebungen
+training1/Ventilsteuerung/4diacIDE-workspace/test_VV/Uebungen_doc/Uebungen
 search
 ```
 

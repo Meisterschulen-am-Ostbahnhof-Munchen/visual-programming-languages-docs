@@ -3094,6 +3094,14 @@ const data_general = [
             tocLink.href = "#" + cat.id;
             tocLink.className = "toc-link";
             tocLink.innerText = cat.title;
+            tocLink.onclick = function(e) {
+                e.preventDefault(); // Verhindert das Öffnen eines neuen Fensters
+                const targetElement = document.getElementById(cat.id);
+                if (targetElement) {
+                    // Scrollt sanft zum Ziel
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            };
             tocList.appendChild(tocLink);
 
             // 2. Sektion erstellen (Container)

@@ -565,14 +565,216 @@ const data_flip_flops = [
 ];
 
     // --- GRUPPE 3: Timer & Zeit ---
-    const data_timer = [
-        { nr:"42", term:"E_TON", mean:"Einschaltverzögerung (On Delay)", type:"event" },
-        { nr:"", term:"FB_TON", mean:"Einschaltverzögerung (Zyklisch)", type:"" },
-        { nr:"43", term:"E_TOF", mean:"Ausschaltverzögerung (Off Delay)", type:"event" },
-        { nr:"46", term:"E_TP", mean:"Impuls (Pulse)", type:"event" },
-        { nr:"45", term:"E_PULSE", mean:"Impulsformer", type:"event" },
-        { nr:"41", term:"E_DELAY", mean:"Verzögerte Ausbreitung eines Ereignisses", type:"event" }
-    ];
+const data_timer = [
+   {
+      "nr":"41",
+      "term":"E_DELAY",
+      "mean":"Verzögerungsschalter",
+      "ex":"TODO",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_DELAY.html\" target=\"_blank\">E_DELAY</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"<a href=\"https://www.holobloc.com/doc/fb/rt/events/E_DELAY.htm\" target=\"_blank\">E_DELAY</a>",
+      "title":"Verzögerte Ausbreitung eines Ereignisses – abbrechbar",
+      "type":"event"
+   },
+   {
+      "nr":"42",
+      "term":"E_TON",
+      "mean":"Timer, Einschaltverzögert",
+      "ex":"Uebung_020c",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/timer/E_TON.html\" target=\"_blank\">E_TON</a>",
+      "vid":"",
+      "ext_de":"<a href=\"https://docs.ms-muc-docs.de/projects/isobus-other-docs/de/latest/IEC-Programmierung.html#ton-einschaltverzogerung\" target=\"_blank\">TON: Einschaltverzögerung</a>",
+      "ext_en":"",
+      "title":"Einschaltverzögerung, Ereignisgesteuert",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"FB_TON",
+      "mean":"Timer, Einschaltverzögert",
+      "ex":"Uebung_020c3",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/timer/FB_TON.html\" target=\"_blank\">FB_TON</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"Einschaltverzögerung, zyklisch",
+      "type":""
+   },
+   {
+      "nr":"",
+      "term":"AX_TON",
+      "mean":"Timer, Einschaltverzögert",
+      "ex":"Uebung_020c_AX",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/timers/AX_TON.html\" target=\"_blank\">AX_TON</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"adapter"
+   },
+   {
+      "nr":"43",
+      "term":"E_TOF",
+      "mean":"Timer, Ausschaltverzögert",
+      "ex":"Uebung_020e",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/timer/E_TOF.html\" target=\"_blank\">E_TOF</a>",
+      "vid":"",
+      "ext_de":"<a href=\"https://docs.ms-muc-docs.de/projects/isobus-other-docs/de/latest/IEC-Programmierung.html#tof-ausschaltverzogerung\" target=\"_blank\">TOF: Ausschaltverzögerung</a>",
+      "ext_en":"<a href=\"https://www.youtube.com/watch?v=ipSKjkC1HBU\" target=\"_blank\">Nachlauf Relais</a>",
+      "title":"Ausschaltverzögerung, Ereignisgesteuert",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"FB_TOF",
+      "mean":"Timer, Ausschaltverzögert",
+      "ex":"Uebung_020e2",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/timer/FB_TOF.html\" target=\"_blank\">FB_TOF</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"Ausschaltverzögerung, zyklisch",
+      "type":""
+   },
+   {
+      "nr":"",
+      "term":"AX_TOF",
+      "mean":"Timer, Ausschaltverzögert",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/timers/AX_TOF.html\" target=\"_blank\">AX_TOF</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"adapter"
+   },
+   {
+      "nr":"44",
+      "term":"E_TONOF",
+      "mean":"Timer, Ein-/Ausschaltverzögert",
+      "ex":"Uebung_020g",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/timer/E_TONOF.html\" target=\"_blank\">E_TONOF</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"AX_TONOF",
+      "mean":"Timer, Ein-/Ausschaltverzögert",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/timers/AX_TONOF.html\" target=\"_blank\">AX_TONOF</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"adapter"
+   },
+   {
+      "nr":"45",
+      "term":"E_PULSE",
+      "mean":"Timer, Impulsformend",
+      "ex":"Uebung_020h",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/timer/E_PULSE.html\" target=\"_blank\">E_PULSE</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"AX_PULSE",
+      "mean":"Timer, Impulsformend",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"adapter"
+   },
+   {
+      "nr":"46",
+      "term":"E_TP",
+      "mean":"Timer, Impulsformend",
+      "ex":"Uebung_020f",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/timer/E_TP.html\" target=\"_blank\">E_TP</a>",
+      "vid":"",
+      "ext_de":"<a href=\"https://docs.ms-muc-docs.de/projects/isobus-other-docs/de/latest/IEC-Programmierung.html#tp-impulsbildung\" target=\"_blank\">TP: Impulsbildung</a>",
+      "ext_en":"",
+      "title":"Puls, Ereignisgesteuert",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"FB_TP",
+      "mean":"Timer, Impulsformend",
+      "ex":"Uebung_020f2",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/timer/FB_TP.html\" target=\"_blank\">FB_TP</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"Puls, zyklisch",
+      "type":""
+   },
+   {
+      "nr":"",
+      "term":"AX_TP",
+      "mean":"Timer, Impulsformend (Adapter)",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/timers/AX_TP.html\" target=\"_blank\">AX_TP</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"adapter"
+   },
+   {
+      "nr":"",
+      "term":"F_MULTIME",
+      "mean":"Grundrechenart: Multiplikation",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/F_MULTIME.html\" target=\"_blank\">F_MULTIME</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":""
+   },
+   {
+      "nr":"",
+      "term":"F_DIVTIME",
+      "mean":"Grundrechenart: Division",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/F_DIVTIME.html\" target=\"_blank\">F_DIVTIME</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":""
+   }
+];
 
     // --- GRUPPE 4: Logik & Arithmetik ---
     const data_logic_math = [

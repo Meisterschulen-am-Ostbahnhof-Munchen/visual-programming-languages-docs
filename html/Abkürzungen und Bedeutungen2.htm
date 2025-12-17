@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abkürzungen und Bedeutungen - Strukturiert</title>
+    <style>
+        /* --- Basis Design --- */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f9f9fb;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* --- Header & Suche --- */
+        .header-container {
+            position: sticky;
+            top: 0;
+            background-color: #f9f9fb;
+            padding: 10px 0 10px 0;
+            z-index: 1000;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        h1 { color: #733C24; margin: 0 0 10px 0; font-size: 1.8rem; }
+
+        input#searchInput {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        input#searchInput:focus {
+            border-color: #9A5130;
+            outline: none;
+        }
+
+        /* --- Inhaltsverzeichnis (TOC) --- */
+        .toc-container {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 5px solid #9A5130;
+        }
+        .toc-container h3 { margin-top: 0; color: #555; }
+        .toc-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .toc-link {
+            text-decoration: none;
+            color: #007bff;
+            background: #f1f5f9;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .toc-link:hover { background: #e2e6ea; text-decoration: none; }
+
+        /* --- Sektionen & Tabellen --- */
+        .category-section {
+            margin-bottom: 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            overflow: hidden; /* Für border-radius */
+        }
+
+        .category-header {
+            background-color: #9A5130;
+            color: white;
+            padding: 15px 20px;
+            margin: 0;
+            font-size: 1.4rem;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1200px;
+        }
+
+        th {
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: left;
+            padding: 12px 10px;
+            font-weight: 600;
+            border-bottom: 2px solid #ddd;
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        tr:hover td { background-color: #f8f9fa; }
+
+        /* Farben für Typen */
+        tr.row-adapter td:nth-child(2) {
+            background-color: #efe2f7; /* Helles Lila */
+            color: #4a148c;
+            font-weight: bold;
+        }
+        tr.row-event td:nth-child(2) {
+            background-color: #e3f2d9; /* Helles Grün */
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        /* Links & Bilder */
+        a { color: #007bff; text-decoration: none; word-break: break-word; }
+        a:hover { text-decoration: underline; }
+        img { max-width: 100px; height: auto; display: block; }
+        .empty { color: #ccc; font-size: 0.8em; }
+
+        /* Utility Class zum Ausblenden */
+        .hidden { display: none !important; }
+        
+        /* Zähler-Badge */
+        .count-badge {
+            float: right;
+            font-size: 0.8rem;
+            background: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Wiki / Glossar</h1>
+        <input type="text" id="searchInput" placeholder="Suchbegriff eingeben... (Filtert über alle Kategorien)" onkeyup="filterAllTables()">
+        <div style="margin-top:5px; font-size: 0.9em; color: #666;">
+            Gesamt gefundene Einträge: <span id="globalCount">0</span>
+        </div>
+    </div>
+
+    <div class="toc-container" id="tocContainer">
+        <h3>Inhaltsverzeichnis</h3>
+        <div class="toc-list" id="tocList"></div>
+    </div>
+
+    <div id="contentArea"></div>
+
+<script>
+    // =================================================================
+    // 1. DATEN-TEIL (Aufgeteilt in Kategorien)
+    // =================================================================
+
+    // --- GRUPPE 1: Datentypen ---
+    const data_datatypes = [
+        { nr:"1", term:"BOOL", mean:"Datentyp (1 Bit)", link_int:"<a href='...'>Link</a>", type:"" },
+        { nr:"", term:"BYTE", mean:"Datentyp (8 Bit)", type:"" },
+        { nr:"", term:"WORD", mean:"Datentyp (16 Bit)", type:"" },
+        { nr:"", term:"DWORD", mean:"Datentyp (32 Bit)", type:"" },
+        { nr:"", term:"INT", mean:"Integer (Ganzzahl)", type:"" },
+        { nr:"", term:"REAL", mean:"Fließkommazahl", type:"" },
+        { nr:"", term:"TIME", mean:"Zeitdauer", type:"" }
+        // ... hier weitere Datentypen einfügen
+    ];
+
+    // --- GRUPPE 2: Flip-Flops & Speicher ---
+    const data_flip_flops = [
+        {
+            nr:"22", term:"E_T_FF", mean:"Toggle-Flip-Flop (Stromstoßschalter)",
+            link_int:"<a href='...'>E_T_FF</a>", vid:"<a href='...'>Video</a>", type:"event"
+        },
+        { nr:"", term:"AX_T_FF", mean:"Adapter für Toggle-Flip-Flop", type:"adapter" },
+        {
+            nr:"23", term:"E_SR", mean:"Set Reset-Flip-Flop (Vorrang Setzen)",
+            vid:"<a href='...'>E_SR</a>", type:"event"
+        },
+        { nr:"", term:"AX_SR", mean:"Adapter für SR-Flip-Flop", type:"adapter" },
+        {
+            nr:"40", term:"E_RS", mean:"Reset Set-Flip-Flop (Vorrang Rücksetzen)",
+            type:"event"
+        },
+        { nr:"72", term:"E_D_FF", mean:"D-Flip-Flop (Datenspeicher)", type:"event" }
+    ];
+
+    // --- GRUPPE 3: Timer & Zeit ---
+    const data_timer = [
+        { nr:"42", term:"E_TON", mean:"Einschaltverzögerung (On Delay)", type:"event" },
+        { nr:"", term:"FB_TON", mean:"Einschaltverzögerung (Zyklisch)", type:"" },
+        { nr:"43", term:"E_TOF", mean:"Ausschaltverzögerung (Off Delay)", type:"event" },
+        { nr:"46", term:"E_TP", mean:"Impuls (Pulse)", type:"event" },
+        { nr:"45", term:"E_PULSE", mean:"Impulsformer", type:"event" },
+        { nr:"41", term:"E_DELAY", mean:"Verzögerte Ausbreitung eines Ereignisses", type:"event" }
+    ];
+
+    // --- GRUPPE 4: Logik & Arithmetik ---
+    const data_logic_math = [
+        { nr:"", term:"AND", mean:"UND-Verknüpfung", title:"Konjunktion", type:"" },
+        { nr:"", term:"OR", mean:"ODER-Verknüpfung", title:"Disjunktion", type:"" },
+        { nr:"", term:"XOR", mean:"Exklusiv-ODER", title:"Antivalenz", type:"" },
+        { nr:"", term:"ADD", mean:"Addition", type:"" },
+        { nr:"", term:"SUB", mean:"Subtraktion", type:"" },
+        { nr:"", term:"MUL", mean:"Multiplikation", type:"" },
+        { nr:"", term:"F_GT", mean:"Größer als (Greater Than)", type:"" },
+        { nr:"", term:"F_EQ", mean:"Gleich (Equal)", type:"" }
+    ];
+
+    // --- GRUPPE 5: Events & Steuerung ---
+    const data_events = [
+        { nr:"69", term:"E_CYCLE", mean:"Zyklischer Taktgeber", type:"event" },
+        { nr:"39", term:"E_SWITCH", mean:"Ereignis-Weiche (Demultiplexer)", type:"event" },
+        { nr:"", term:"E_MERGE", mean:"Ereignis-Zusammenführung (ODER)", type:"event" },
+        { nr:"", term:"E_SPLIT", mean:"Ereignis-Verteiler (Aufsplittung)", type:"event" },
+        { nr:"83", term:"E_REND", mean:"Rendezvous (UND für Events)", type:"event" },
+        { nr:"113", term:"E_TABLE", mean:"Tabellengesteuerte Ereignisfolge", type:"event" }
+    ];
+
+    // --- GRUPPE 6: Hardware & IO ---
+    const data_hardware = [
+        { nr:"50", term:"IE", mean:"Input Event", type:"" },
+        { nr:"51", term:"IX", mean:"Input Boolean", type:"" },
+        { nr:"52", term:"QX", mean:"Output Boolean", type:"" },
+        { nr:"33", term:"Digital Input", mean:"Digitaler Eingang", type:"" },
+        { nr:"96", term:"PWM", mean:"Pulsweitenmodulation", type:"" },
+        { nr:"99", term:"WBSD", mean:"Wheel Based Speed", title:"Radgeschwindigkeit", type:"" }
+    ];
+
+    // --- GRUPPE 7: Sonstiges / Allgemein ---
+    const data_general = [
+        { nr:"1", term:"Deploy", mean:"Code auf Steuerung laden", type:"" },
+        { nr:"6", term:"Debug", mean:"Beobachten / Fehlersuche", type:"" },
+        { nr:"17", term:"Open Workspace", mean:"Arbeitsbereich öffnen", type:"" },
+        { nr:"56", term:"Mapping", mean:"Zuordnung Software zu Hardware", type:"" },
+        { nr:"2", term:"TRUE", mean:"Logisch 1", type:"" },
+        { nr:"3", term:"FALSE", mean:"Logisch 0", type:"" }
+    ];
+
+
+    // =================================================================
+    // 2. KONFIGURATION (Welche Tabelle kommt wann)
+    // =================================================================
+    
+    // Hier fügst du deine Konstanten hinzu. Die Reihenfolge hier bestimmt die Anzeige auf der Seite.
+    const categories = [
+        { id: "cat_types",    title: "Datentypen",              data: data_datatypes },
+        { id: "cat_flipflop", title: "Flip-Flops & Speicher",   data: data_flip_flops },
+        { id: "cat_timer",    title: "Timer (Zeitglieder)",     data: data_timer },
+        { id: "cat_logic",    title: "Logik & Arithmetik",      data: data_logic_math },
+        { id: "cat_events",   title: "Event Handling",          data: data_events },
+        { id: "cat_hw",       title: "Hardware & IO",           data: data_hardware },
+        { id: "cat_misc",     title: "Allgemeines & Begriffe",  data: data_general }
+    ];
+
+
+    // =================================================================
+    // 3. PROGRAMMLOGIK (Rendering & Filter)
+    // =================================================================
+
+    const contentArea = document.getElementById('contentArea');
+    const tocList = document.getElementById('tocList');
+    const globalCountDisplay = document.getElementById('globalCount');
+
+    // --- Initiale Erstellung der Seite ---
+    function initPage() {
+        let globalTotalItems = 0;
+
+        categories.forEach(cat => {
+            // 1. Eintrag im Inhaltsverzeichnis
+            const tocLink = document.createElement('a');
+            tocLink.href = "#" + cat.id;
+            tocLink.className = "toc-link";
+            tocLink.innerText = cat.title;
+            tocList.appendChild(tocLink);
+
+            // 2. Sektion erstellen (Container)
+            const section = document.createElement('div');
+            section.className = "category-section";
+            section.id = cat.id;
+
+            // 3. Header erstellen
+            const header = document.createElement('h2');
+            header.className = "category-header";
+            header.innerHTML = `${cat.title} <span class="count-badge" id="badge-${cat.id}">${cat.data.length}</span>`;
+            section.appendChild(header);
+
+            // 4. Tabelle erstellen
+            const tableContainer = document.createElement('div');
+            tableContainer.className = "table-responsive";
+            
+            const table = document.createElement('table');
+            table.innerHTML = `
+                <thead>
+                    <tr>
+                        <th width="3%">Nr</th>
+                        <th width="15%">Begriff</th>
+                        <th width="20%">Bedeutung</th>
+                        <th width="10%">Übung</th>
+                        <th width="10%">Intern</th>
+                        <th width="5%">Video</th>
+                        <th width="10%">Ext. (DE)</th>
+                        <th width="10%">Ext. (EN)</th>
+                        <th width="17%">Notiz</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-${cat.id}"></tbody>
+            `;
+            
+            tableContainer.appendChild(table);
+            section.appendChild(tableContainer);
+            contentArea.appendChild(section);
+
+            // 5. Daten in Tabelle füllen
+            const tbody = table.querySelector('tbody');
+            cat.data.forEach(row => {
+                const tr = document.createElement('tr');
+                if (row.type === 'adapter') tr.classList.add('row-adapter');
+                if (row.type === 'event') tr.classList.add('row-event');
+
+                tr.innerHTML = `
+                    <td>${safe(row.nr)}</td>
+                    <td>${safe(row.term)}</td>
+                    <td>${safe(row.mean)}</td>
+                    <td>${safe(row.ex)}</td>
+                    <td>${safe(row.link_int)}</td>
+                    <td>${safe(row.vid)}</td>
+                    <td>${safe(row.ext_de)}</td>
+                    <td>${safe(row.ext_en)}</td>
+                    <td>${safe(row.title)}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            globalTotalItems += cat.data.length;
+        });
+
+        globalCountDisplay.innerText = globalTotalItems;
+    }
+
+    // Hilfsfunktion für leere Zellen
+    function safe(val) {
+        return (val && val !== "") ? val : "<span class='empty'>-</span>";
+    }
+
+    // --- Filter Logik ---
+    function filterAllTables() {
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        let totalGlobalVisible = 0;
+
+        categories.forEach(cat => {
+            const section = document.getElementById(cat.id);
+            const tbody = document.getElementById("tbody-" + cat.id);
+            const rows = tbody.querySelectorAll('tr');
+            let catVisibleCount = 0;
+
+            rows.forEach(row => {
+                const text = row.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    row.classList.remove('hidden');
+                    catVisibleCount++;
+                } else {
+                    row.classList.add('hidden');
+                }
+            });
+
+            // Update Badge Count
+            document.getElementById(`badge-${cat.id}`).innerText = catVisibleCount;
+
+            // Ganze Sektion ausblenden, wenn Tabelle leer ist
+            if (catVisibleCount === 0) {
+                section.classList.add('hidden');
+            } else {
+                section.classList.remove('hidden');
+            }
+
+            totalGlobalVisible += catVisibleCount;
+        });
+
+        globalCountDisplay.innerText = totalGlobalVisible;
+        
+        // Optional: Meldung wenn gar nichts gefunden wurde
+        if(totalGlobalVisible === 0 && input !== "") {
+            // Man könnte hier eine "Nichts gefunden" Meldung einblenden
+        }
+    }
+
+    // Start
+    initPage();
+
+</script>
+
+</body>
+</html>

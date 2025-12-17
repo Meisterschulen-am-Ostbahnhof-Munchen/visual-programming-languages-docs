@@ -6,22 +6,6 @@
 
 Die GlobalConstants-Definition `logiBUS_DI_Events` stellt eine umfassende Sammlung von Ereigniskonstanten für digitale Eingänge (DI) im logiBUS-System bereit. Diese Konstanten definieren verschiedene Tastendruck-Ereignisse und deren eindeutige Identifikatoren, die in der Steuerungslogik für die Verarbeitung von Benutzereingaben über Taster verwendet werden.
 
-## Schnittstellenstruktur
-
-### **Ereignis-Eingänge**
-*Nicht verfügbar - Dies ist eine GlobalConstants-Definition*
-
-### **Ereignis-Ausgänge**
-*Nicht verfügbar - Dies ist eine GlobalConstants-Definition*
-
-### **Daten-Eingänge**
-*Nicht verfügbar - Dies ist eine GlobalConstants-Definition*
-
-### **Daten-Ausgänge**
-*Nicht verfügbar - Dies ist eine GlobalConstants-Definition*
-
-### **Adapter**
-*Nicht verfügbar - Dies ist eine GlobalConstants-Definition*
 
 ## Funktionsweise
 
@@ -33,6 +17,8 @@ Die GlobalConstants-Definition `logiBUS_DI_Events` enthält 14 verschiedene Erei
 - **Wertebereich**: Die EType-Werte reichen von 0-12 für gültige Ereignisse, mit 255 für ungültige Ereignisse
 - **Package-Zugehörigkeit**: `logiBUS::io::DI`
 - **Konstantendefinition**: Alle Werte sind als globale Konstanten (CONSTANT) deklariert
+
+Doku zu den einzelnen Events: <https://components.espressif.com/components/espressif/button>
 
 ## Zustandsübersicht
 

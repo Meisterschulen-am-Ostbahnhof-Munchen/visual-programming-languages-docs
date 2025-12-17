@@ -31,5 +31,5 @@ E_TABLE
 E_TABLE_CTRL
 E_TimeOut
 E_TRAIN
-timer/timer
+timers/timers
 ```

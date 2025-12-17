@@ -1,4 +1,4 @@
-# timer
+# timers
 
 ```{toctree}
 E_PULSE

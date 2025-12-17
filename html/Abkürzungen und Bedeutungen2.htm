@@ -180,23 +180,138 @@
     ];
 
     // --- GRUPPE 2: Flip-Flops & Speicher ---
-    const data_flip_flops = [
-        {
-            nr:"22", term:"E_T_FF", mean:"Toggle-Flip-Flop (Stromstoßschalter)",
-            link_int:"<a href='...'>E_T_FF</a>", vid:"<a href='...'>Video</a>", type:"event"
-        },
-        { nr:"", term:"AX_T_FF", mean:"Adapter für Toggle-Flip-Flop", type:"adapter" },
-        {
-            nr:"23", term:"E_SR", mean:"Set Reset-Flip-Flop (Vorrang Setzen)",
-            vid:"<a href='...'>E_SR</a>", type:"event"
-        },
-        { nr:"", term:"AX_SR", mean:"Adapter für SR-Flip-Flop", type:"adapter" },
-        {
-            nr:"40", term:"E_RS", mean:"Reset Set-Flip-Flop (Vorrang Rücksetzen)",
-            type:"event"
-        },
-        { nr:"72", term:"E_D_FF", mean:"D-Flip-Flop (Datenspeicher)", type:"event" }
-    ];
+const data_flip_flops = [
+   {
+      "nr":"22",
+      "term":"E_T_FF / Flip-Flop",
+      "mean":"Toggle-Flip-Flop (Stromstoßschalter)",
+      "ex":"Uebung_004a",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_T_FF.html\" target=\"_blank\">E_T_FF</a>",
+      "vid":"<a href=\"https://youtu.be/XZqsqNy_g_g\" target=\"_blank\">E_T_FF</a>",
+      "ext_de":"<a href=\"https://www.elektronik-kompendium.de/sites/dig/0210033.htm\" target=\"_blank\">T-Flip-Flop</a>",
+      "ext_en":"<a href=\"https://www.holobloc.com/doc/fb/rt/events/E_T_FF.htm\" target=\"_blank\">E_T_FF</a>",
+      "title":"",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"AX_T_FF",
+      "mean":"",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/AX_T_FF.html\" target=\"_blank\">AX_T_FF</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"adapter"
+   },
+   {
+      "nr":"23",
+      "term":"E_SR / Flip-Flop",
+      "mean":"Set Reset-Flip-Flop (Holzspalter-Schalter)",
+      "ex":"Uebung_006",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_SR.html\" target=\"_blank\">E_SR</a>",
+      "vid":"<a href=\"https://youtu.be/6nGmGX7gwAE\" target=\"_blank\">E_SR</a>",
+      "ext_de":"<a href=\"https://www.elektronik-kompendium.de/sites/dig/0209302.htm\" target=\"_blank\">SR-Flip-Flop</a>",
+      "ext_en":"<a href=\"https://www.holobloc.com/doc/fb/rt/events/E_SR.htm\" target=\"_blank\">E_SR</a>",
+      "title":"Ereignisgesteuertes bistabiles Element",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"AX_SR",
+      "mean":"",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/AX_SR.html\" target=\"_blank\">AX_SR</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"adapter"
+   },
+   {
+      "nr":"40",
+      "term":"E_RS",
+      "mean":"Identisch mit E_SR Flip-Flop",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_RS.html\" target=\"_blank\">E_RS</a>",
+      "vid":"<a href=\"https://youtu.be/GXOe8K7Jgr0\" target=\"_blank\">E_RS</a>",
+      "ext_de":"<a href=\"https://www.elektronik-kompendium.de/sites/dig/0209302.htm\" target=\"_blank\">RS-Flip-Flop</a>",
+      "ext_en":"<a href=\"https://www.holobloc.com/doc/fb/rt/events/E_RS.htm\" target=\"_blank\">E_RS</a>",
+      "title":"Ereignisgesteuertes bistabiles Element",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"AX_RS",
+      "mean":"",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/AX_RS.html\" target=\"_blank\">AX_RS</a>",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"adapter"
+   },
+   {
+      "nr":"71",
+      "term":"E_T_FF_SR",
+      "mean":"SR&T-Flip-Flop Mischung aus E_SR und E_T_FF",
+      "ex":"Uebung_006a, Uebung_006a2",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_T_FF_SR.html\" target=\"_blank\">E_T_FF_SR</a>",
+      "vid":"<a href=\"https://youtu.be/lfumU4WoIGs\" target=\"_blank\">E_T_FF_SR</a>",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"AX_T_FF_SR",
+      "mean":"SR&T-Flip-Flop Mischung aus E_SR und E_T_FF",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"adapter"
+   },
+   {
+      "nr":"72",
+      "term":"E_D_FF",
+      "mean":"D-Flip-Flop",
+      "ex":"Uebung_071a, Uebung_002c, Uebung_085",
+      "exdoc":"",
+      "link_int":"<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_D_FF.html\" target=\"_blank\">E_D_FF</a>",
+      "vid":"<a href=\"https://youtu.be/yGSx_0ggveE\" target=\"_blank\">E_D_FF</a>",
+      "ext_de":"<a href=\"https://www.elektronik-kompendium.de/sites/dig/0210031.htm\" target=\"_blank\">D-Flip-Flop</a>",
+      "ext_en":"<a href=\"https://www.holobloc.com/doc/fb/rt/events/E_D_FF.htm\" target=\"_blank\">E_D_FF</a>",
+      "title":"Ereignisgesteuerter Datenspeicher (D-Latch)",
+      "type":"event"
+   },
+   {
+      "nr":"",
+      "term":"AX_D_FF",
+      "mean":"D-Flip-Flop",
+      "ex":"",
+      "exdoc":"",
+      "link_int":"",
+      "vid":"",
+      "ext_de":"",
+      "ext_en":"",
+      "title":"",
+      "type":"adapter"
+   }
+];
 
     // --- GRUPPE 3: Timer & Zeit ---
     const data_timer = [

@@ -12,7 +12,7 @@
 import os
 import sys
 
-sys.setrecursionlimit(1500)
+sys.setrecursionlimit(5500)
 
 SOURCE_DIR = os.path.abspath(os.path.join(".", "..", "src"))
 sys.path.insert(0, SOURCE_DIR)

@@ -1,7 +1,3 @@
-<script>
-    // =================================================================
-    // 1. DATEN-TEIL (Aufgeteilt in Kategorien)
-    // =================================================================
 
     // --- GRUPPE 1: Datentypen ---
 const data_datatypes = [
@@ -2120,7 +2116,7 @@ const data_hardware = [
       "ext_en":"<a href=\"https://components.espressif.com/components/espressif/button\" target=\"_blank\">link</a>",
       "title":"Button Press end",
       "type":""
-   }
+   },
    {
       "nr":"96",
       "term":"PWM",
@@ -2284,7 +2280,7 @@ const data_general = [
    {
       "nr":"5",
       "term":"System Perspective",
-      "mean":"<img src=\"Abkürzungen%20und%20Bedeutungen-Dateien/Abkürzungen%20und%20Bedeutungen_20638_image001.png\">",
+      "mean":"",
       "ex":"",
       "exdoc":"",
       "link_int":"",
@@ -2310,7 +2306,7 @@ const data_general = [
    {
       "nr":"7",
       "term":"Debug Perspective",
-      "mean":"<img src=\"Abkürzungen%20und%20Bedeutungen-Dateien/Abkürzungen%20und%20Bedeutungen_20638_image002.png\">",
+      "mean":"",
       "ex":"",
       "exdoc":"",
       "link_int":"",

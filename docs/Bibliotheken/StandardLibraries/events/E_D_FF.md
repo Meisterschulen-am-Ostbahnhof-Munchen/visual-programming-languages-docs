@@ -12,14 +12,18 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 ### Schnittstelle (Interface)
 
 **Ereignis-Eingänge:**
-- `CLK` (Clock): Taktsignal für die synchrone Datenspeicherung
-- `D`: Dateneingang (zu speichernder Wert)
+- `CLK` (Clock): Taktereignis, das die Übernahme des Daten-Eingangs `D` auslöst.
+    - **Verbundene Daten**: `D`
 
 **Ereignis-Ausgänge:**
-- `EO` (Event Output): Wird bei jeder Änderung des gespeicherten Werts ausgelöst
+- `EO` (Event Output): Wird ausgelöst, wenn der `CLK`-Impuls zu einer Änderung des Ausgangs `Q` führt.
+    - **Verbundene Daten**: `Q`
+
+**Daten-Eingänge:**
+- `D`: Der zu speichernde Datenwert (Datentyp: `BOOL`).
 
 **Daten-Ausgänge:**
-- `Q`: Aktuell gespeicherter Wert (BOOL)
+- `Q`: Der aktuell gespeicherte Wert (Datentyp: `BOOL`).
 
 ## Funktionsweise
 

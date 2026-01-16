@@ -54,12 +54,14 @@ Der **E_MERGE** ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der 
 | Richtung      | n:1     | 1:n     | 1:1      |
 | Ereignisfluss | Kombination | Aufteilung | Selektion |
 
-## Erweiterte Varianten
+## Ähnliche Bausteine
+Für Anwendungsfälle, die mehr als zwei Ereigniseingänge benötigen, stellt die Bibliothek weitere Varianten zur Verfügung:
+- **E_MERGE**: Dieser Baustein (2 Eingänge)
+- **E_MERGE_2**: Funktional identisch zu `E_MERGE` (2 Eingänge)
+- **E_MERGE_3**: Eine Variante mit 3 Eingängen (`EI1`, `EI2`, `EI3`)
+- **E_MERGE_4**: Eine Variante mit 4 Eingängen
 
-Für Systeme mit mehreren Eingängen kann der Baustein erweitert werden:
-- E_MERGE_4 (4 Eingänge)
-- E_MERGE_8 (8 Eingänge)
-- E_MERGE_N (konfigurierbare Eingangsanzahl)
+Diese Bausteine erlauben die einfache Zusammenführung von bis zu vier Ereignisquellen auf einen einzigen Ausgang.
 
 ## Fazit
 

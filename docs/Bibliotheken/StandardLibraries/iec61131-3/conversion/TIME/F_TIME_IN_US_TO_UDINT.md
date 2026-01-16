@@ -37,6 +37,14 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Umwandlung von Zeitwerten für die Speicherung oder Übertragung in numerischer Form.
 - Integration in Systeme, die Zeitwerte in µs als UDINT verarbeiten müssen.
 
+## Umgekehrte Konvertierung (Numerisch zu TIME)
+Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
+
+Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+*   **Beispiel:** `500 * T#1ms = T#500ms`
+*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+
 ## Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen ist `F_TIME_IN_US_TO_UDINT` spezialisiert auf die Umwandlung von TIME in UDINT.
 - Ähnliche Blöcke könnten andere Zeitformate oder andere Ziel-Datentypen unterstützen, z.B. TIME in REAL oder TIME in STRING.

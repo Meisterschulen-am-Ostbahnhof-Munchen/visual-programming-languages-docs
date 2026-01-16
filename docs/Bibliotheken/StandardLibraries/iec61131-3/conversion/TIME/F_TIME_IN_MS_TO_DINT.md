@@ -39,6 +39,14 @@ Der Funktionsblock führt die Konvertierung durch, indem er den TIME-Wert in Mil
 - Integration in Steuerungssysteme, die numerische Zeitwerte benötigen.
 - Verwendung in Protokollierungs- und Überwachungssystemen, die Zeitstempel in numerischer Form speichern.
 
+## Umgekehrte Konvertierung (Numerisch zu TIME)
+Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
+
+Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+*   **Beispiel:** `500 * T#1ms = T#500ms`
+*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+
 ## Vergleich mit ähnlichen Bausteinen
 - **F_TIME_TO_UDINT**: Konvertiert TIME in UDINT, während `F_TIME_IN_MS_TO_DINT` in DINT konvertiert.
 - **F_TIME_IN_US_TO_DINT**: Konvertiert TIME in Mikrosekunden in DINT, während dieser Baustein Millisekunden verwendet.

@@ -41,6 +41,14 @@ Der Funktionsblock führt die Konvertierung durch, indem er den an `IN` anliegen
 - Integration in Steuerungslogik, die Zeitwerte in einem numerischen Format verarbeiten muss.
 - Verwendung in Diagnosesystemen zur Darstellung von Zeitdauern in einem lesbaren Format.
 
+## Umgekehrte Konvertierung (Numerisch zu TIME)
+Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
+
+Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+*   **Beispiel:** `500 * T#1ms = T#500ms`
+*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+
 ## Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsbausteinen ist dieser Funktionsblock speziell auf die Umwandlung von Zeitwerten in Nanosekunden optimiert.
 - Ähnliche Bausteine könnten zusätzliche Parameter oder Konfigurationsmöglichkeiten bieten, dieser Funktionsblock ist jedoch auf Einfachheit und Effizienz ausgelegt.

@@ -38,6 +38,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Zeitmessungen, bei denen die Ergebnisse in numerischer Form weiterverarbeitet werden müssen.
 - Steuerungsanwendungen, die präzise Zeitintervalle in Millisekunden benötigen.
 
+## Umgekehrte Konvertierung (Numerisch zu TIME)
+Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
+
+Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+*   **Beispiel:** `500 * T#1ms = T#500ms`
+*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+
 ## Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen, die möglicherweise nur in kleinere Ganzzahltypen konvertieren, bietet dieser Baustein eine höhere Genauigkeit durch die Verwendung des `LINT`-Datentyps.
 - Ähnliche Bausteine könnten die Zeit in anderen Einheiten (z.B. Sekunden oder Mikrosekunden) konvertieren, während dieser Baustein speziell auf Millisekunden ausgelegt ist.

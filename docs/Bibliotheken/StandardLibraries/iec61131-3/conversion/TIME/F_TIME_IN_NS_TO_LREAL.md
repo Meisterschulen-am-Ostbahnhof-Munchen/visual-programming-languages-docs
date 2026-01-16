@@ -37,6 +37,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 - Zeitmessungen in Steuerungssystemen, die eine weitere Verarbeitung in mathematischen Ausdrücken erfordern.
 - Integration in Regelkreise, wo Zeitwerte als Fließkommazahlen benötigt werden.
 
+## Umgekehrte Konvertierung (Numerisch zu TIME)
+Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
+
+Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+*   **Beispiel:** `500 * T#1ms = T#500ms`
+*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+
 ## Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_TIME_IN_NS_TO_LREAL` speziell auf die Umwandlung von Zeitwerten in Nanosekunden zu Fließkommazahlen optimiert.
 - Andere Blöcke wie `F_TIME_TO_LREAL` könnten eine ähnliche Funktionalität bieten, jedoch ohne die explizite Angabe der Nanosekunden-Einheit.

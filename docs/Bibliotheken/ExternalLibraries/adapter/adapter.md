@@ -5,4 +5,5 @@ booleanOperators/booleanOperators
 conversion/conversion
 events/events
 selection/selection
+types/types
 ```

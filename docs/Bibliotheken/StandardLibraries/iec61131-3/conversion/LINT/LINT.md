@@ -1,4 +1,6 @@
-# LINT
+# LINT Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps LINT.
 
 ```{toctree}
 F_LINT_AS_STRING

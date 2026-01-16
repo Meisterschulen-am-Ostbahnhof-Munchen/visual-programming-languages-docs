@@ -1,4 +1,6 @@
-# REAL
+# REAL Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps REAL.
 
 ```{toctree}
 F_REAL_AS_STRING

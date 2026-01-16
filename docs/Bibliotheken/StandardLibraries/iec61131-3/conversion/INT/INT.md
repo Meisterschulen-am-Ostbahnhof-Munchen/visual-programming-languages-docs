@@ -1,4 +1,6 @@
-# INT
+# INT Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps INT.
 
 ```{toctree}
 F_INT_AS_STRING

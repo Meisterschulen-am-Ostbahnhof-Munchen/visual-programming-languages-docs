@@ -1,4 +1,6 @@
-# BCD
+# BCD Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung von und nach BCD (Binary Coded Decimal).
 
 ```{toctree}
 F_BYTE_BCD_TO_USINT

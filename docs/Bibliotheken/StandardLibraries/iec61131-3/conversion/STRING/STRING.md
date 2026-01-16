@@ -1,4 +1,6 @@
-# STRING
+# STRING Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps STRING.
 
 ```{toctree}
 F_STRING_AS_BOOL

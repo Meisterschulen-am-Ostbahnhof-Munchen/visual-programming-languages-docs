@@ -1,4 +1,6 @@
-# WORD
+# WORD Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps WORD.
 
 ```{toctree}
 F_WORD_AS_STRING

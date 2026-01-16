@@ -1,4 +1,6 @@
-# DINT
+# DINT Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps DINT.
 
 ```{toctree}
 F_DINT_AS_STRING

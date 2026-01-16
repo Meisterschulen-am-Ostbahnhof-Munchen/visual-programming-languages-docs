@@ -1,4 +1,6 @@
-# BOOL
+# BOOL Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps BOOL.
 
 ```{toctree}
 F_BOOL_AS_STRING

@@ -1,4 +1,6 @@
-# TIME
+# TIME Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps TIME.
 
 ```{toctree}
 F_TIME_AS_STRING

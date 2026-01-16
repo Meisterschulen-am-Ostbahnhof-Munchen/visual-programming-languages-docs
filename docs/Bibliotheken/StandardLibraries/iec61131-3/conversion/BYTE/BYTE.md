@@ -1,4 +1,6 @@
-# BYTE
+# BYTE Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps BYTE.
 
 ```{toctree}
 F_BYTE_AS_STRING

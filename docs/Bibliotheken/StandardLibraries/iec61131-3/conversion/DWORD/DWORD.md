@@ -1,4 +1,6 @@
-# DWORD
+# DWORD Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps DWORD.
 
 ```{toctree}
 F_DWORD_AS_STRING

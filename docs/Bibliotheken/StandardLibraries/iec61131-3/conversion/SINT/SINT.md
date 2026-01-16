@@ -1,4 +1,6 @@
-# SINT
+# SINT Konvertierungen
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps SINT.
 
 ```{toctree}
 F_SINT_AS_STRING

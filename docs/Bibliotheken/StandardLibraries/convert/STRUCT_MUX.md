@@ -4,48 +4,54 @@
 
 * * * * * * * * * *
 ## Einleitung
-Der STRUCT_MUX Funktionsblock ist ein Service Interface Function Block Type, der für die Verarbeitung von Strukturdaten konzipiert ist. Er dient als Multiplexer für ANY_STRUCT Datentypen und ermöglicht die Weiterleitung von strukturierten Daten mit entsprechender Bestätigung.
+Der Funktionsblock (FB) `STRUCT_MUX` ist ein generischer Multiplexer für strukturierte Datentypen. Er fungiert als Gegenstück zum `STRUCT_DEMUX` und hat die Aufgabe, einzelne Datenwerte von mehreren Eingängen zu einer einzigen Datenstruktur am Ausgang zusammenzufügen.
 
 ## Schnittstellenstruktur
+Die Schnittstelle des `STRUCT_MUX`-Funktionsblocks ist generisch definiert. Die tatsächlichen Daten-Eingänge werden erst bei der Instanziierung des Blocks festgelegt.
 
 ### **Ereignis-Eingänge**
-- `REQ` (Event): Startet die normale Ausführung des Funktionsblocks.
+- **REQ**: Löst die Ausführung des Bausteins aus. Dies bewirkt das Einlesen der Werte an den Eingängen und das Zusammenbauen der Ausgangsstruktur.
+    - **Mit Datenvariablen**: Alle dynamisch erzeugten Daten-Eingänge.
 
 ### **Ereignis-Ausgänge**
-- `CNF` (Event): Bestätigt die erfolgreiche Ausführung des Funktionsblocks. Wird mit dem Datenausgang `OUT` verknüpft.
+- **CNF**: Bestätigt den Abschluss der Operation, nachdem die Ausgangsstruktur erfolgreich erstellt wurde.
+    - **Mit Datenvariable**: `OUT`
 
 ### **Daten-Eingänge**
-Keine Daten-Eingänge vorhanden.
+Die Daten-Eingänge dieses Funktionsblocks sind nicht fest vordefiniert. Stattdessen werden sie **dynamisch** basierend auf dem Datentyp erstellt, der für den `OUT`-Ausgang festgelegt wird. Für jeden Member der Ausgangsstruktur wird ein entsprechender Daten-Eingang mit demselben Namen und Datentyp am Baustein erzeugt.
+
+**Beispiel:**
+Wenn der `OUT`-Ausgang auf den Datentyp `MyStruct` mit den Membern `a` (Typ `INT`) and `b` (Typ `BOOL`) gesetzt wird, erzeugt der `STRUCT_MUX`-Baustein automatisch zwei Daten-Eingänge:
+- `a` (Typ `INT`)
+- `b` (Typ `BOOL`)
+
+Das Bild oben illustriert genau diesen Fall.
 
 ### **Daten-Ausgänge**
-- `OUT` (ANY_STRUCT): Der Ausgang für die strukturierten Daten.
-
-### **Adapter**
-Keine Adapter vorhanden.
+- **OUT** (Typ: `ANY_STRUCT`): Die Ausgangs-Datenstruktur, die aus den Werten der Eingänge zusammengebaut wird.
 
 ## Funktionsweise
-1. Bei Empfang eines `REQ`-Ereignisses wird der Funktionsblock aktiviert.
-2. Der Funktionsblock verarbeitet die internen Daten und gibt sie über den `OUT`-Ausgang aus.
-3. Gleichzeitig wird das `CNF`-Ereignis ausgelöst, um die erfolgreiche Verarbeitung zu bestätigen.
+Sobald ein `REQ`-Ereignis am Eingang des `STRUCT_MUX`-Funktionsblocks empfangen wird, liest der Baustein die Werte von all seinen dynamisch erzeugten Daten-Eingängen ein. Diese Werte werden dann zu einer einzigen Datenstruktur zusammengefügt. Die resultierende Struktur wird am `OUT`-Ausgang bereitgestellt. Unmittelbar danach wird das `CNF`-Ereignis ausgelöst, um den Abschluss des Vorgangs zu signalisieren.
 
 ## Technische Besonderheiten
-- Verwendet den generischen Klassennamen `GEN_STRUCT_MUX`.
-- Unterstützt den Datentyp `ANY_STRUCT` für die Ausgabe.
-- Als Service Interface Function Block Type implementiert, was eine spezielle Art der Interaktion zwischen Anwendung und Ressource ermöglicht.
+- **Generischer Baustein**: Dank des Attributs `GEN_STRUCT_MUX` ist der Baustein in der Lage, sich an jeden beliebigen strukturierten Datentyp (`ANY_STRUCT`) anzupassen.
+- **Dynamische Schnittstelle**: Die Fähigkeit, seine Eingänge basierend auf dem Ausgangs-Datentyp zu generieren, macht ihn extrem flexibel und wiederverwendbar.
+- **Service Interface Function Block Type**: Der Baustein ist als standardisierte Schnittstelle für diesen Dienst konzipiert.
 
 ## Zustandsübersicht
-1. **Idle**: Wartet auf ein `REQ`-Ereignis.
-2. **Processing**: Verarbeitet die Daten nach Empfang von `REQ`.
-3. **Confirmation**: Sendet `CNF` und `OUT` nach erfolgreicher Verarbeitung.
+Der `STRUCT_MUX` ist ein zustandsloser Baustein, der nach einem einfachen Anforderungs-Bestätigungs-Zyklus arbeitet:
+1.  **Bereit**: Wartet auf ein `REQ`-Ereignis.
+2.  **Ausführend**: Liest die Eingangswerte ein und baut die Ausgangsstruktur zusammen.
+3.  **Abgeschlossen**: Stellt die Struktur am `OUT`-Ausgang bereit, löst das `CNF`-Ereignis aus und kehrt in den Bereitschaftszustand zurück.
 
 ## Anwendungsszenarien
-- Weiterleitung von strukturierten Daten in Automatisierungssystemen.
-- Integration in größere Steuerungssysteme, die mit ANY_STRUCT Datentypen arbeiten.
-- Als Teil von Service-orientierten Architekturen in der industriellen Automatisierung.
+- **Zusammenfügen von Daten**: Bündeln einzelner Signale (z.B. Konfigurationsparameter, Steuerwerte) in einer einzigen Struktur für die weitere Verarbeitung oder Kommunikation.
+- **Verbesserung der Übersichtlichkeit**: Zusammenfassen vieler einzelner Datenleitungen zu einer einzigen strukturierten Leitung, um die Komplexität der grafischen Darstellung zu reduzieren.
+- **Schnittstellenanpassung**: Anpassen einzelner Datenwerte an einen Baustein, der eine einzelne Datenstruktur als Eingang erwartet.
 
 ## Vergleich mit ähnlichen Bausteinen
-- Im Vergleich zu einfachen Multiplexern unterstützt STRUCT_MUX speziell strukturierte Datentypen.
-- Anders als generische Multiplexer bietet er eine direkte Service-Schnittstelle für die Interaktion zwischen Anwendung und Ressource.
+- **`STRUCT_DEMUX`**: Der komplementäre Baustein, der eine einzelne Datenstruktur in ihre einzelnen Member aufspaltet.
+- **`SET_STRUCT_VALUE`**: Während `SET_STRUCT_VALUE` einen einzelnen Wert innerhalb einer bestehenden Struktur dynamisch ändert, erzeugt `STRUCT_MUX` eine komplett neue Struktur aus einzelnen Werten.
 
 ## Fazit
-Der STRUCT_MUX Funktionsblock ist ein spezialisierter Baustein für die Handhabung von strukturierten Daten in Automatisierungssystemen. Seine Service-Schnittstelle und die Unterstützung von ANY_STRUCT machen ihn besonders geeignet für komplexe Steuerungsanwendungen.
+`STRUCT_MUX` ist ein fundamentaler und sehr praktischer Baustein für die Arbeit mit Datenstrukturen in 4diac. Seine Fähigkeit, aus einzelnen Werten eine beliebige Struktur zu generieren, vereinfacht die Anwendungslogik und fördert eine saubere, strukturierte Datenhaltung. Er ist das Standardwerkzeug, um Daten zu bündeln und strukturierte Informationen zu erzeugen.

@@ -29,6 +29,8 @@ Wenn das `REQ`-Ereignis empfangen wird, liest der `ARRAY2VALUES_2_LREAL`-Funktio
 ## Technische Besonderheiten
 Der Funktionsblock ist darauf spezialisiert, genau ein Array von zwei `LREAL`-Werten zu verarbeiten und in zwei separate `LREAL`-Variablen aufzuteilen. Seine Implementierung ist direkt und auf diesen spezifischen Umwandlungszweck optimiert.
 
+*   **Generische Implementierung:** Interessanterweise verweist das Attribut `eclipse4diac::core::GenericClassName` auf `'GEN_ARRAY2ARRAY'`. Dies deutet darauf hin, dass der Baustein möglicherweise von einer generischen Array-zu-Array-Klasse abgeleitet ist, auch wenn seine Funktion die Aufteilung in einzelne Werte ist. Dies könnte ein Detail der Implementierungsgeschichte sein.
+
 ## Zustandsübersicht
 Dieser Funktionsblock ist zustandslos. Jede Auslösung des `REQ`-Ereignisses führt zu einer direkten Verarbeitung der aktuellen `IN`-Werte und einer Ausgabe über `OUT_1` und `OUT_2` ohne interne Zustandsänderungen, die über die aktuelle Transaktion hinausgehen würden.
 

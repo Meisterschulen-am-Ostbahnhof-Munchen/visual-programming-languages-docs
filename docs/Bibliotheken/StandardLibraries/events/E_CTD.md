@@ -12,31 +12,36 @@ Der **E_CTD** (Event-Driven Down Counter) ist ein ereignisgesteuerter Abwärtsz�
 ### Schnittstelle (Interface)  
 
 **Eingangsereignisse (Event Inputs):**  
-- **CD (Count Down):** Dekrementiert den Zählerstand um 1.  
-- **LD (Load):** Lädt einen neuen Startwert in den Zähler.  
+- **CD (Count Down):** Löst einen Zählschritt aus, der den Zählerstand dekrementiert.
+- **LD (Load):** Lädt den Startwert `PV` in den Zähler.  
 
 **Ausgangsereignisse (Event Outputs):**  
-- **CDO (Count Down Output):** Wird ausgelöst, wenn der Zählerstand 0 erreicht.  
-- **LDO (Load Output):** Bestätigt das erfolgreiche Laden eines neuen Zählerwerts.  
+- **CDO (Count Down Output):** Bestätigt einen Zählschritt. Wird nach jedem `CD`-Ereignis ausgelöst, solange der Zählerstand größer als 0 war.
+    - **Verbundene Daten**: `Q`, `CV`
+- **LDO (Load Output):** Bestätigt das erfolgreiche Laden eines neuen Zählerwerts.
+    - **Verbundene Daten**: `Q`, `CV`
 
 **Eingangsvariablen (Input Variables):**  
-- **PV (Preset Value):** Der Startwert, der bei einem LD-Ereignis geladen wird (Datentyp: INT).  
+- **PV (Preset Value):** Der Startwert, der bei einem LD-Ereignis geladen wird (Datentyp: `UINT`).  
 
 **Ausgangsvariablen (Output Variables):**  
-- **CV (Current Value):** Der aktuelle Zählerstand (Datentyp: INT).  
+- **Q (Status):** Ausgangs-Flag, das `TRUE` wird, wenn der Zählerstand `CV` den Wert 0 erreicht (Datentyp: `BOOL`).
+- **CV (Counter Value):** Der aktuelle Zählerstand (Datentyp: `UINT`).  
 
 ## Verhalten des E_CTD-Bausteins  
 
-1. **Initialisierung:**  
-   - Der Zähler wird mit dem Wert **PV** initialisiert, wenn ein **LD**-Ereignis eintritt.  
-   - Das **LDO**-Ereignis wird ausgelöst, um das erfolgreiche Laden zu bestätigen.  
+1. **Initialisierung/Laden:**  
+   - Wenn ein **LD**-Ereignis eintritt, wird der Zählerstand `CV` auf den Wert von **PV** gesetzt.
+   - Das Ausgangs-Flag `Q` wird basierend auf der Bedingung `CV = 0` aktualisiert.
+   - Das **LDO**-Ereignis wird ausgelöst und gibt den neuen Zählerstand `CV` und das Flag `Q` aus.
 
 2. **Abwärtszählen:**  
-   - Bei jedem **CD**-Ereignis wird der Zählerstand **CV** um 1 verringert.  
-   - Wenn **CV** den Wert 0 erreicht, wird das **CDO**-Ereignis ausgelöst.  
+   - Bei jedem **CD**-Ereignis wird der Zählerstand **CV**, sofern er größer als 0 ist, um 1 verringert.
+   - Danach wird das Ausgangs-Flag `Q` basierend auf der neuen Bedingung `CV = 0` aktualisiert.  
+   - Das **CDO**-Ereignis wird ausgelöst und gibt den aktuellen Zählerstand `CV` und das Flag `Q` aus.
 
 3. **Neuladen des Zählers:**  
-   - Ein erneutes **LD**-Ereignis setzt **CV** zurück auf **PV** und löst **LDO** aus.  
+   - Ein erneutes **LD**-Ereignis setzt **CV** jederzeit zurück auf **PV** und löst **LDO** aus.  
 
 ## Technische Besonderheiten  
 - **Ereignisgesteuert:** Der Baustein arbeitet ausschließlich auf Basis von Ereignissen und benötigt keinen zyklischen Aufruf.  

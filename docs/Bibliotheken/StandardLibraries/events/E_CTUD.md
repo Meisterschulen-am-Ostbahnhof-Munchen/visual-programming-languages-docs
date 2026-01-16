@@ -1,74 +1,67 @@
 # E_CTUD
 
-![E_CTUD Diagram](https://user-images.githubusercontent.com/113907528/204895474-3f88876a-7ce5-406e-8f44-765c1b97226c.png)
+<img width="1139" height="259" alt="E_CTUD" src="https://user-images.githubusercontent.com/113907528/204895474-3f88876a-7ce5-406e-8f44-765c1b97226c.png">
 
 * * * * * * * * * *
-
 ## Einleitung
-Der **E_CTUD** (Event-Driven Up-Down Counter) ist ein zentraler Funktionsbaustein der IEC 61499 Norm für industrielle Steuerungssysteme. Als bidirektionaler Zähler ermöglicht er sowohl Aufwärts- als auch Abwärtszählungen und bietet damit vielfältige Einsatzmöglichkeiten in Automatisierungslösungen.
+Der `E_CTUD` (Event-Driven Up-Down Counter) ist ein ereignisgesteuerter Vor- und Rückwärtszähler gemäß dem IEC 61499-Standard. Er kann einen Zählerwert basierend auf separaten Ereignissen inkrementieren, dekrementieren, zurücksetzen oder mit einem vordefinierten Wert laden. Dies macht ihn zu einem flexiblen und leistungsstarken Baustein für eine Vielzahl von Zählanwendungen.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
-- `CU` (Count Up): Erhöht den Zählerstand
-- `CD` (Count Down): Verringert den Zählerstand
-- `R` (Reset): Setzt den Zähler zurück
-- `LD` (Load): Lädt einen vordefinierten Wert
+- **CU (Count Up)**: Löst ein Aufwärtszählen aus.
+    - **Verbundene Daten**: `PV`
+- **CD (Count Down)**: Löst ein Abwärtszählen aus.
+- **R (Reset)**: Setzt den Zähler auf 0 zurück.
+- **LD (Load)**: Lädt einen neuen Wert in den Zähler.
+    - **Verbundene Daten**: `PV`
 
 ### **Ereignis-Ausgänge**
-- `CO` (Count Output): Signalisiert Zähleraktivität
-- `RO` (Reset Output): Bestätigt Reset-Vorgang
+- **CO (Count Output)**: Bestätigt eine Zähloperation (`CU` oder `CD`).
+    - **Verbundene Daten**: `QU`, `CV`, `QD`
+- **RO (Reset Output)**: Bestätigt das Zurücksetzen des Zählers.
+    - **Verbundene Daten**: `QU`, `CV`, `QD`
+- **LDO (Load Output)**: Bestätigt das Laden eines neuen Zählerwertes.
+    - **Verbundene Daten**: `QU`, `CV`, `QD`
 
-### **Daten-Ein-/Ausgänge**
-| Port | Typ | Beschreibung |
-|------|-----|-------------|
-| PV   | INT | Preset Value (Vorgabewert) |
-| CV   | INT | Current Value (aktueller Zählerstand) |
-| QU   | BOOL | True wenn CV ≥ PV |
-| QD   | BOOL | True wenn CV ≤ 0 |
+### **Daten-Eingänge**
+- **PV (Preset Value)**: Der Grenzwert für `QU` bzw. der zu ladende Wert für `LD` (Datentyp: `UINT`).
+
+### **Daten-Ausgänge**
+- **QU (Status Up)**: Ausgangs-Flag, das `TRUE` wird, wenn `CV >= PV` (Datentyp: `BOOL`).
+- **QD (Status Down)**: Ausgangs-Flag, das `TRUE` wird, wenn `CV = 0` (Datentyp: `BOOL`).
+- **CV (Counter Value)**: Der aktuelle Zählerstand (Datentyp: `UINT`).
 
 ## Funktionsweise
+Der `E_CTUD` reagiert auf vier verschiedene Ereignisse:
 
-1. **Zähloperationen**
-   - `CU`-Ereignis: Inkrementiert CV um 1
-   - `CD`-Ereignis: Dekrementiert CV um 1
+1.  **Aufwärtszählen (CU)**: Wenn ein `CU`-Ereignis eintritt und `CV` kleiner als der Maximalwert (65535) ist, wird `CV` um 1 erhöht. Anschließend wird das `CO`-Ereignis ausgelöst.
+2.  **Abwärtszählen (CD)**: Wenn ein `CD`-Ereignis eintritt und `CV` größer als 0 ist, wird `CV` um 1 verringert. Anschließend wird das `CO`-Ereignis ausgelöst.
+3.  **Zurücksetzen (R)**: Wenn ein `R`-Ereignis eintritt, wird `CV` auf 0 gesetzt. Anschließend wird das `RO`-Ereignis ausgelöst.
+4.  **Laden (LD)**: Wenn ein `LD`-Ereignis eintritt, wird `CV` auf den Wert von `PV` gesetzt. Anschließend wird das `LDO`-Ereignis ausgelöst.
 
-2. **Steuerfunktionen**
-   - `R`-Ereignis: Setzt CV auf 0 (löst RO aus)
-   - `LD`-Ereignis: Lädt PV in CV
-
-3. **Statusüberwachung**
-   - QU wird aktiv bei CV ≥ PV
-   - QD wird aktiv bei CV ≤ 0
+Nach jeder dieser Aktionen werden die Status-Flags `QU` und `QD` basierend auf dem neuen Wert von `CV` aktualisiert (`QU = (CV >= PV)` und `QD = (CV == 0)`). Die jeweiligen Ausgangsereignisse (`CO`, `RO`, `LDO`) geben dann den aktuellen Zählerstand `CV` und die beiden Status-Flags aus.
 
 ## Technische Besonderheiten
-
-✔ **Bidirektionale Zählung** (Auf- und Abwärts)
-✔ **Flexible Wertvorgabe** via PV
-✔ **Echtzeit-Statusüberwachung** (QU/QD)
-✔ **Ereignisgesteuerte Architektur**
+- **Bidirektionale Zählung**: Der Baustein beherrscht das Auf- und Abwärtszählen in einem Block.
+- **Umfassende Steuerung**: Bietet neben dem Zählen auch Funktionen zum expliziten Laden und Zurücksetzen.
+- **Zwei Statusausgänge**: `QU` signalisiert das Erreichen des oberen Grenzwertes, `QD` das Erreichen des unteren Grenzwertes (0).
+- **Über- und Unterlaufschutz**: Zähloperationen werden nur innerhalb der gültigen Grenzen (0 bis 65535) ausgeführt.
 
 ## Anwendungsszenarien
-
-- **Produktionszählung**: Teilezählung in beiden Richtungen
-- **Lagerverwaltung**: Ein- und Ausgangskontrolle
-- **Prozesssteuerung**: Zyklische Operationen
+- **Positionserfassung**: Zählen von Inkrementalgeber-Schritten in beide Richtungen.
+- **Füllstandsregelung**: Erfassen von Zu- und Abflüssen in einem Tank.
+- **Lagerplatzverwaltung**: Zählen von ein- und ausgelagerten Paletten.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-| Feature | E_CTUD | E_CTU | E_CTD |
-|---------|--------|-------|-------|
-| Richtung | Auf/Ab | Auf | Ab |
-| Reset | R | R | - |
-| Load | LD | - | LD |
-| Status | QU/QD | Q | Q |
+| Merkmal      | E_CTUD (Up/Down) | E_CTU (Up)      | E_CTD (Down)     |
+|--------------|------------------|-----------------|------------------|
+| Zählrichtung | Auf & Ab         | Nur Auf         | Nur Ab           |
+| Reset (auf 0)| Ja (`R`)         | Ja (`R`)        | Nein             |
+| Laden (auf PV)| Ja (`LD`)        | Nein            | Ja (`LD`)        |
+| Status Oben  | `QU` (`CV >= PV`)| `Q` (`CV >= PV`)| Nein             |
+| Status Unten | `QD` (`CV = 0`)  | Nein            | `Q` (`CV = 0`)   |
 
 ## Fazit
-
-Der E_CTUD-Baustein stellt eine leistungsfähige Zähllösung für industrielle Steuerungen dar, die durch seine bidirektionale Funktionalität und flexible Steuerbarkeit besticht. Besondere Stärken sind:
-
-- Komplette Ereignissteuerung
-- Sofortige Statusrückmeldung
-- Einfache Integration in IEC 61499-Systeme
-
-Durch die Kombination aus Zählfunktion und Statusüberwachung eignet er sich ideal für komplexe Steuerungsaufgaben in automatisierten Produktionsumgebungen. Die strikte Einhaltung der IEC 61499-Standards gewährleistet zudem problemlose Interoperabilität mit anderen Funktionsbausteinen.
+Der `E_CTUD` ist ein universeller Zählerbaustein, der die Funktionalität eines reinen Aufwärts- und Abwärtszählers kombiniert und erweitert. Durch seine vier Steuerereignisse (`CU`, `CD`, `R`, `LD`) und die beiden Statusausgänge (`QU`, `QD`) bietet er maximale Flexibilität für komplexe Zähl- und Überwachungsaufgaben in der industriellen Automatisierung.

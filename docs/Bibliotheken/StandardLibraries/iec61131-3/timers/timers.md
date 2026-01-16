@@ -1,4 +1,4 @@
-# timer
+# timers
 
 ```{toctree}
 FB_TOF

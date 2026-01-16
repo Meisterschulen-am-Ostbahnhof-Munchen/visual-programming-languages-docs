@@ -2,6 +2,7 @@
 
 ```{toctree}
 ADDRESS
+BaseMemberExternAdd
 CAN_MSG
 CF_INFO_T
 CF_NAME_T

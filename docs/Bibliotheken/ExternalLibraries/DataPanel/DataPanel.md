@@ -2,4 +2,5 @@
 
 ```{toctree}
 io/io
+Status/Status
 ```

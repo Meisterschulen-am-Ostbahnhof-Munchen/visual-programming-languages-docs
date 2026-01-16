@@ -9,7 +9,6 @@ io/io
 net/net
 powerlink/powerlink
 reconfiguration/reconfiguration
-resources/resources
 rtevents/rtevents
 signalprocessing/signalprocessing
 system/system

@@ -2,6 +2,7 @@
 
 ```{toctree}
 convert/convert
+core/core
 events/events
 iec61131-3/iec61131-3
 io/io

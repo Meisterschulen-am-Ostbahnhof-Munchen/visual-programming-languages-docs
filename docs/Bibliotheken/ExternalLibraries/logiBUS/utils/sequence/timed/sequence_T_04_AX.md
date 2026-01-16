@@ -1,24 +1,23 @@
-# sequence_E_04_loop_AX
+# sequence_T_04_AX
 
 * * * * * * * * * *
 ## Einleitung
-`sequence_E_04_loop_AX` ist eine Variante des `sequence_E_04_loop`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein ereignisgesteuerte, zyklische Sequenz mit 4 Ausgabezuständen.
+`sequence_T_04_AX` ist eine Variante des `sequence_T_04`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein zeitgesteuerte Sequenz mit 4 Ausgabezuständen.
 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
 *   **START_S1**: Startet die Sequenz bei State_01.
-*   **S1_S2**: Übergang State_01 -> State_02.
-*   **S2_S3**: Übergang State_02 -> State_03.
-*   **S3_S4**: Übergang State_03 -> State_04.
-*   **S4_S1**: Übergang State_04 -> State_01 (Loop).
 *   **RESET**: Setzt die Sequenz zurück.
 
 ### **Ereignis-Ausgänge**
 *   **CNF**: Bestätigung der Ausführung.
 
 ### **Daten-Eingänge**
-*   Keine.
+*   **DT_S1_S2**: Zeit für Übergang State_01 -> State_02.
+*   **DT_S2_S3**: Zeit für Übergang State_02 -> State_03.
+*   **DT_S3_S4**: Zeit für Übergang State_03 -> State_04.
+*   **DT_S4_START**: Zeit für Übergang State_04 -> START.
 
 ### **Daten-Ausgänge**
 *   **STATE_NR** (SINT): Aktuelle Zustandsnummer.
@@ -28,21 +27,22 @@
 *   **DO_S2** (adapter::types::unidirectional::AX): Ausgangsadapter für State_02.
 *   **DO_S3** (adapter::types::unidirectional::AX): Ausgangsadapter für State_03.
 *   **DO_S4** (adapter::types::unidirectional::AX): Ausgangsadapter für State_04.
+*   **timeOut** (iec61499::events::ATimeOut): Timer-Adapter.
 
 ## Funktionsweise
-Entspricht `sequence_E_04_loop`, verwendet jedoch Adapter für die Ausgänge.
+Entspricht `sequence_T_04`, verwendet jedoch Adapter für die Ausgänge.
 
 ## Technische Besonderheiten
 *   Verwendung von `adapter::types::unidirectional::AX`.
 
 ## Zustandsübersicht
-Siehe `sequence_E_04_loop`.
+Siehe `sequence_T_04`.
 
 ## Anwendungsszenarien
-Für zyklische ereignisgesteuerte Sequenzen mit Adapteranbindung.
+Für zeitgesteuerte 4-stufige Sequenzen mit Adapteranbindung.
 
 ## Vergleich mit ähnlichen Bausteinen
-*   **sequence_E_04_loop**: Standardvariante ohne Adapter.
+*   **sequence_T_04**: Standardvariante ohne Adapter.
 
 ## Fazit
-Adapter-Variante des 4-Schritt-Loop-Ereignis-Sequenzers.
+Adapter-Variante des 4-Schritt-Zeit-Sequenzers.

@@ -13,11 +13,6 @@ Der **E_TimeOut** ist ein standardkonformer Funktionsbaustein (IEC 61499-1) zur 
 - `TimeOutSocket` (vom Typ ATimeOut):
   - Eingänge: `START`, `STOP`, `DT` (Delay Time)
   - Ausgang: `TimeOut`-Ereignis
-  - **socket:** wird als Eingang eines Funktionsblocks hinzugefügt und innerhalb der Schnittstelle des Funktionsblocks dargestellt.  
-  - **plug:** wird als Ausgang eines Funktionsblocks hinzugefügt und innerhalb der Schnittstelle des Funktionsblocks dargestellt.
-
-![image](https://user-images.githubusercontent.com/113907483/227964793-560506b2-d55d-49af-91b8-ce9130149477.png)
-
 
 ### **Interne Komponenten**
 - `DLY` (E_DELAY): Kernkomponente für die Zeitsteuerung
@@ -25,48 +20,35 @@ Der **E_TimeOut** ist ein standardkonformer Funktionsbaustein (IEC 61499-1) zur 
 ## Funktionsweise
 
 1. **Timeout-Initialisierung**:
-   - Bei `START`-Ereignis am Socket beginnt der Timer
-   - Verwendet den konfigurierten `DT`-Wert
+   - Bei `START`-Ereignis am Socket beginnt der Timer mit dem konfigurierten `DT`-Wert.
+   - Ein weiteres `START`-Ereignis während der Timer läuft, wird ignoriert.
 
-2. **Timeout-Operation**:
-   - Timer läuft für die spezifizierte `DT`-Dauer
-   - Keine Reset-Funktion (im Gegensatz zu E_RDELAY)
+2. **Timeout-Abbruch**:
+   - Ein `STOP`-Ereignis bricht den aktiven Timer sofort ab. Es wird kein `TimeOut`-Ereignis generiert.
 
-3. **Timeout-Abbruch**:
-   - `STOP`-Ereignis bricht aktiven Timer ab
-
-4. **Timeout-Auslösung**:
-   - Nach Ablauf von `DT` wird `TimeOut`-Ereignis generiert
-   - Signalisiert über den Adapter-Socket
+3. **Timeout-Auslösung**:
+   - Nach Ablauf von `DT` wird das `TimeOut`-Ereignis einmalig generiert.
 
 ## Technische Besonderheiten
 
-✔ **Adapter-basierte** Schnittstelle  
-✔ **Einfache Timeout-Logik**  
-✔ **Deterministisches** Zeitverhalten  
-✔ **Echtzeitfähige** Implementierung  
+✔ **Adapter-basierte** Schnittstelle (`ATimeOut`).  
+✔ **Einfache, nicht-nachtriggerbare Timeout-Logik**.  
+✔ **Deterministisches** Zeitverhalten.  
 
 ## Anwendungsszenarien
 
-- **Netzwerkkommunikation**: Antwort-Timeout-Überwachung
-- **Gerätesteuerung**: Watchdog-Funktionen
-- **Prozessüberwachung**: Zeitbegrenzte Operationen
-- **Sicherheitssysteme**: Notfall-Timeout
+- **Netzwerkkommunikation**: Überwachung auf eine Antwort innerhalb einer festen Frist. Wenn die Antwort kommt, wird der Timer per `STOP` abgebrochen.
+- **Gerätesteuerung**: Einfache Watchdog-Funktionen, die nicht zurückgesetzt werden müssen.
+- **Prozessüberwachung**: Sicherstellen, dass ein Prozessschritt eine maximale Dauer nicht überschreitet.
 
-## Vergleich mit E_RDELAY
+## Vergleich mit E_RTimeOut
 
-| Feature        | E_TimeOut | E_RDELAY |
+| Feature        | E_TimeOut (dieser) | E_RTimeOut |
 |---------------|-----------|----------|
-| Reset-Funktion | ❌        | ✔️       |
+| Interner Baustein | E_DELAY | E_RDELAY |
+| `START` bei lfd. Timer | Ignoriert | Startet Timer neu |
 | Adaptertyp    | ATimeOut  | ARTimeOut |
-| Komplexität   | Einfach   | Erweitert |
 
 ## Fazit
 
-Der E_TimeOut-Baustein bietet eine robuste Grundimplementierung für Timeout-Anforderungen:
-
-- Einfache und zuverlässige Zeitüberwachung
-- Standardisierte Adapter-Schnittstelle
-- Klare Funktionsweise ohne Reset-Komplexität
-
-Durch die Verwendung des bewährten E_DELAY-Bausteins im Kern gewährleistet er präzise Zeitsteuerung für grundlegende Automatisierungsaufgaben. Die IEC 61499-Konformität ermöglicht einfache Integration in verteilte Steuerungssysteme.
+Der E_TimeOut-Baustein bietet eine robuste Grundimplementierung für nicht-nachtriggerbare Timeout-Anforderungen. Er ist ideal für Fälle, in denen ein Zeitablauf gestartet und entweder bis zum Ende durchlaufen oder explizit abgebrochen werden soll. Für Szenarien, die ein "Nachtriggern" oder Zurücksetzen des Timers erfordern (wie bei einem Watchdog, der periodisch "getreten" wird), ist der `E_RTimeOut`-Baustein die bessere Wahl.

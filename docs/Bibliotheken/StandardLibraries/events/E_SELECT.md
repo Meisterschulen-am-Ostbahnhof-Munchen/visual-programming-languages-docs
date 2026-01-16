@@ -57,9 +57,9 @@ Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A
 
 | Feature        | E_SELECT | E_SWITCH | E_MERGE |
 |---------------|----------|----------|---------|
-| Auswahlkriterium | Boolesch | Beliebig | Keines |
-| Richtung      | 2:1      | 1:1      | n:1     |
-| Zustandsmodell | BasicFB  | Typabhängig | Keins |
+| Auswahlkriterium | Boolesch (`G`) | Boolesch (`G`) | Keines |
+| Richtung      | 2:1 (Multiplexer)      | 1:2 (Demultiplexer)     | n:1 (OR-Gatter)     |
+| Zustandsmodell | BasicFB  | BasicFB | BasicFB/Generic |
 
 ## Fazit
 

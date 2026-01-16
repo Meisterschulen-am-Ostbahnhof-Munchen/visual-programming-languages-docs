@@ -49,5 +49,26 @@ Im Vergleich zu Bausteinen, die fest verdrahtete Strukturen oder nur das Auslese
 *   **Dynamische Member-Auswahl**: Der Member-Name wird zur Laufzeit als String übergeben, was eine dynamischere Feldselektion als bei fest definierten Ein-/Ausgängen erlaubt.
 Er ergänzt oft Bausteine, die Werte aus Strukturen auslesen (`GET_STRUCT_VALUE`), um eine vollständige Lese-/Schreibfunktionalität für generische Strukturen zu bieten.
 
+## Metadaten
+
+
+
+| Attribut | Wert |
+
+| :--- | :--- |
+
+| Copyright | (c) 2023 Primetals Technologies Austria GmbH |
+
+| Lizenz | EPL-2.0 |
+
+| Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2023-03-06, Alois Zoitl) |
+
+| 4diac-Paket | eclipse4diac::convert |
+
+
+
 ## Fazit
+
+
+
 Der `SET_STRUCT_VALUE`-Funktionsblock ist ein mächtiges Werkzeug für die dynamische Manipulation von Datenstrukturen innerhalb einer 4diac-Anwendung. Seine generische Natur und die Unterstützung für den Zugriff auf verschachtelte Mitglieder machen ihn äußerst vielseitig für Anwendungen, die eine flexible Konfiguration oder Datenverarbeitung zur Laufzeit erfordern.

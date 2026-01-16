@@ -53,5 +53,26 @@ Der `STRUCT_MUX` ist ein zustandsloser Baustein, der nach einem einfachen Anford
 - **`STRUCT_DEMUX`**: Der komplementäre Baustein, der eine einzelne Datenstruktur in ihre einzelnen Member aufspaltet.
 - **`SET_STRUCT_VALUE`**: Während `SET_STRUCT_VALUE` einen einzelnen Wert innerhalb einer bestehenden Struktur dynamisch ändert, erzeugt `STRUCT_MUX` eine komplett neue Struktur aus einzelnen Werten.
 
+## Metadaten
+
+
+
+| Attribut | Wert |
+
+| :--- | :--- |
+
+| Copyright | (c) 2020 Johannes Kepler University Linz |
+
+| Lizenz | EPL-2.0 |
+
+| Version | 3.0 (2025-04-14, Patrick Aigner) |
+
+| 4diac-Paket | eclipse4diac::convert |
+
+
+
 ## Fazit
+
+
+
 `STRUCT_MUX` ist ein fundamentaler und sehr praktischer Baustein für die Arbeit mit Datenstrukturen in 4diac. Seine Fähigkeit, aus einzelnen Werten eine beliebige Struktur zu generieren, vereinfacht die Anwendungslogik und fördert eine saubere, strukturierte Datenhaltung. Er ist das Standardwerkzeug, um Daten zu bündeln und strukturierte Informationen zu erzeugen.

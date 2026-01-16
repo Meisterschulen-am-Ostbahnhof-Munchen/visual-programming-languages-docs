@@ -55,5 +55,26 @@ Der `VALUES2ARRAY_2_LREAL` ist ein zustandsloser Funktionsblock. Jede `REQ`-Anfo
 ## Vergleich mit ähnlichen Bausteinen
 Dieser Funktionsblock ist spezifisch für die Konvertierung von zwei LREAL-Werten in ein LREAL-Array. Allgemeine "Werte-zu-Array"-Bausteine könnten flexibler in Bezug auf die Anzahl und den Datentyp der Eingänge sein, aber dieser Baustein bietet eine einfache, spezialisierte Lösung für den angegebenen Anwendungsfall. Für eine größere Anzahl von Werten oder unterschiedliche Datentypen wären entsprechende, speziell angepasste Bausteine erforderlich.
 
+## Metadaten
+
+
+
+| Attribut | Wert |
+
+| :--- | :--- |
+
+| Copyright | (c) 2014 Profactor GmbH |
+
+| Lizenz | EPL-2.0 |
+
+| Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2014-07-09, Matthias Plasch) |
+
+| 4diac-Paket | eclipse4diac::convert |
+
+
+
 ## Fazit
+
+
+
 Der `VALUES2ARRAY_2_LREAL` ist ein nützlicher und effizienter Funktionsblock für die spezifische Aufgabe, zwei LREAL-Werte in ein fest dimensioniertes LREAL-Array umzuwandeln. Seine Einfachheit und ereignisgesteuerte Arbeitsweise machen ihn zu einem klaren Bestandteil in Szenarien, wo eine solche Datenbündelung erforderlich ist, und tragen zur Modularität und Lesbarkeit der Applikation bei.

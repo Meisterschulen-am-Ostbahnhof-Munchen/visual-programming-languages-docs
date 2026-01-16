@@ -53,5 +53,26 @@ Der `STRUCT_DEMUX` ist ein zustandsloser Baustein, der nach einem einfachen Anfo
 - **`GET_STRUCT_VALUE`**: Während `GET_STRUCT_VALUE` einen einzelnen Member dynamisch über einen `STRING`-Namen extrahiert, legt `STRUCT_DEMUX` alle Member statisch als separate Ausgänge frei. `STRUCT_DEMUX` ist oft einfacher zu verwenden, wenn alle Member benötigt werden, während `GET_STRUCT_VALUE` flexibler ist, wenn nur bestimmte Member zur Laufzeit adressiert werden müssen.
 - **`STRUCT_MUX`**: Der komplementäre Baustein, der einzelne Daten-Eingänge zu einer einzigen Datenstruktur zusammenfügt.
 
+## Metadaten
+
+
+
+| Attribut | Wert |
+
+| :--- | :--- |
+
+| Copyright | (c) 2020 Johannes Kepler University Linz |
+
+| Lizenz | EPL-2.0 |
+
+| Version | 3.0 (2025-04-14, Patrick Aigner) |
+
+| 4diac-Paket | eclipse4diac::convert |
+
+
+
 ## Fazit
+
+
+
 `STRUCT_DEMUX` ist ein fundamentaler und äußerst nützlicher Baustein für die Arbeit mit Datenstrukturen in 4diac. Seine Fähigkeit, jede beliebige Struktur automatisch in ihre Bestandteile zu zerlegen, vereinfacht die Anwendungslogik erheblich und fördert eine klare, lesbare Verdrahtung. Er ist das Standardwerkzeug, um auf die Inhalte von Strukturen zuzugreifen.

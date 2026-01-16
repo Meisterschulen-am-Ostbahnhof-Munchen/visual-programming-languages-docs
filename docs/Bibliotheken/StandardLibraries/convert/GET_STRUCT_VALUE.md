@@ -53,5 +53,26 @@ Der `GET_STRUCT_VALUE` ist ein nicht-zustandsbehafteter Service-Baustein, der ei
 ## Vergleich mit ähnlichen Bausteinen
 Es gibt in der Standardbibliothek von 4diac keine direkt vergleichbaren Funktionsblöcke, die einen dynamischen Zugriff auf Strukturmember über einen `STRING`-Pfad ermöglichen. Dieser Baustein füllt eine Nische für Anwendungsfälle, die eine flexible und zur Laufzeit konfigurierbare Strukturmanipulation erfordern, welche über den statischen Zugriff herkömmlicher FBs hinausgeht.
 
+## Metadaten
+
+
+
+| Attribut | Wert |
+
+| :--- | :--- |
+
+| Copyright | (c) 2018 fortiss GmbH |
+
+| Lizenz | EPL-2.0 |
+
+| Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2018-10-16, Jose Cabral) |
+
+| 4diac-Paket | eclipse4diac::convert |
+
+
+
 ## Fazit
+
+
+
 Der `GET_STRUCT_VALUE` Funktionsblock ist ein wertvolles Werkzeug für Entwickler, die eine flexible und dynamische Methode zum Auslesen von Werten aus Datenstrukturen in 4diac benötigen. Seine Fähigkeit, auf Member über String-Pfade zuzugreifen, einschließlich verschachtelter Strukturen, macht ihn besonders nützlich in Szenarien, in denen die Struktur der benötigten Daten zur Kompilierzeit nicht vollständig bekannt oder variabel ist.

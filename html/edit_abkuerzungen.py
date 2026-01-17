@@ -197,8 +197,65 @@ def modify_data(data):
             term = item.get('term', '')
             if '_AX' in term or term.startswith(('AX_', 'AW_', 'AB_', 'AD_', 'AL_', 'AS_', 'AI_', 'AE_', 'ASR_', 'AUDI_', 'AUI_', 'ADI_', 'ALI_', 'AULI_', 'AR_', 'ALR_', 'A2X_')):
                 item['type'] = 'adapter'
-            elif 'sequence_E_' in term or term.startswith('E_'):
-                item['type'] = 'event'
+    # 12. Add ISOBUS UT Blocks (New Category)
+    cat_isobus = find_category(data, 'cat_isobus')
+    if not cat_isobus:
+        cat_isobus = {"id": "cat_isobus", "title": "ISOBUS UT (Client)", "data": []}
+        data['categories'].append(cat_isobus)
+
+    isobus_blocks = [
+        ("Q_ActiveMask", "Change Active Mask"),
+        ("Q_Attribute", "Change Attribute"),
+        ("Q_BackgroundColour", "Change Background Colour"),
+        ("Q_BackgroundColourAux", "Change Background Colour (Aux)"),
+        ("Q_ChangeObjectLabel", "Change Object Label"),
+        ("Q_ChangePolygonPoint", "Change Polygon Point"),
+        ("Q_ChangePolygonScale", "Change Polygon Scale"),
+        ("Q_ChildLocation", "Change Child Location"),
+        ("Q_ChildPosition", "Change Child Position"),
+        ("Q_CtrlAudioSignal", "Control Audio Signal"),
+        ("Q_EndPoint", "Change End Point"),
+        ("Q_ESC", "ESC Command"),
+        ("Q_ExecuteExtendedMacro", "Execute Extended Macro"),
+        ("Q_ExecuteMacro", "Execute Macro"),
+        ("Q_FillAttributes", "Change Fill Attributes"),
+        ("Q_FontAttributes", "Change Font Attributes"),
+        ("Q_GetAttribute", "Get Attribute Value"),
+        ("Q_GraphicsContext", "Graphics Context"),
+        ("Q_LineAttributes", "Change Line Attributes"),
+        ("Q_ListItem", "Change List Item"),
+        ("Q_LockUnlockMask", "Lock/Unlock Mask"),
+        ("Q_NumericValue", "Change Numeric Value"),
+        ("Q_NumericValue_AUDI", "Change Numeric Value (AUDI Adapter)"),
+        ("Q_NumericValueAux", "Change Numeric Value (Aux)"),
+        ("Q_ObjEnableDisable", "Enable/Disable Object"),
+        ("Q_ObjHideShow", "Hide/Show Object"),
+        ("Q_ObjSelectInput", "Select Input Object"),
+        ("Q_Priority", "Change Priority"),
+        ("Q_SelectActiveWorkingSet", "Select Active Working Set"),
+        ("Q_SelectColourMap", "Select Colour Map"),
+        ("Q_SetAudioVolume", "Set Audio Volume"),
+        ("Q_Size", "Change Size"),
+        ("Q_SoftKeyMask", "Change Soft Key Mask"),
+        ("Q_StringValue", "Change String Value")
+    ]
+
+    for term, mean in isobus_blocks:
+        # 1. Remove from other categories to avoid duplicates
+        for cat in data['categories']:
+            if cat['id'] == 'cat_isobus': continue
+            existing = find_item(cat, term)
+            if existing:
+                cat['data'].remove(existing)
+        
+        # 2. Add/Update in cat_isobus
+        link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/UT/Q/{term}.html'
+        # Check specific exercises (simplified map, or let scan find them next time)
+        # Using a few known ones
+        ex = ""
+        if term == "Q_NumericValue": ex = "Uebung_009, Uebung_010..." 
+        
+        update_or_add(cat_isobus, {"term": term, "link": link, "mean": mean, "title": f"ISOBUS UT Command: {mean}", "type": "io", "ex": ex})
 
     return data
 

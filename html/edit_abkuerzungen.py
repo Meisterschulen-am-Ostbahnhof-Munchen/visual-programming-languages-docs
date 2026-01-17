@@ -459,7 +459,9 @@ def modify_data(data):
             {"term": "sequence_ET_08_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_08_AX.html", "mean": "Sequenz (Event/Time, 8 Schritte, AX)", "title": "Sequence Control (Event/Time, 8 Steps, AX)", "type": "sequence", "ex": ""},
             {"term": "sequence_ET_04_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_loop_AX.html", "mean": "Sequenz (Event/Time, 4 Schritte, Loop, AX)", "title": "Sequence Control (Event/Time, 4 Steps, Loop, AX)", "type": "sequence", "ex": ""},
             {"term": "sequence_ET_05_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_05_loop_AX.html", "mean": "Sequenz (Event/Time, 5 Schritte, Loop, AX)", "title": "Sequence Control (Event/Time, 5 Steps, Loop, AX)", "type": "sequence", "ex": ""},
-            {"term": "sequence_ET_08_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_08_loop_AX.html", "mean": "Sequenz (Event/Time, 8 Schritte, Loop, AX)", "title": "Sequence Control (Event/Time, 8 Steps, Loop, AX)", "type": "sequence", "ex": ""}
+            {"term": "sequence_ET_08_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_08_loop_AX.html", "mean": "Sequenz (Event/Time, 8 Schritte, Loop, AX)", "title": "Sequence Control (Event/Time, 8 Steps, Loop, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_ET_04_04", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_04.html", "mean": "Sequenz (8 Ausgänge, 4+4 Schritte)", "title": "Sequence Control (8 Outputs, 4+4 Steps)", "type": "sequence", "ex": ""},
+            {"term": "sequence_ET_04_04_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_04_AX.html", "mean": "Sequenz (8 Ausgänge, 4+4 Schritte, AX)", "title": "Sequence Control (8 Outputs, 4+4 Steps, AX)", "type": "sequence", "ex": ""}
         ]
 
         for seq_def in sequence_blocks:

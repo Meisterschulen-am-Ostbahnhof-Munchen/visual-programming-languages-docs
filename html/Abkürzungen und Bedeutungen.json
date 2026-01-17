@@ -15,7 +15,7 @@
                "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Boolean\" target=\"_blank\">Boolean</a>",
                "ext_en": "",
                "title": "Boolesche Variable",
-               "type": ""
+               "type": "bool"
             },
             {
                "nr": "",
@@ -28,7 +28,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_bit"
             },
             {
                "nr": "",
@@ -41,7 +41,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_bit"
             },
             {
                "nr": "",
@@ -54,7 +54,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_bit"
             },
             {
                "nr": "",
@@ -67,7 +67,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_bit"
             },
             {
                "nr": "",
@@ -80,7 +80,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_bit"
             },
             {
                "nr": "",
@@ -93,7 +93,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -106,7 +106,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -119,7 +119,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -132,7 +132,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -145,7 +145,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -158,7 +158,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -171,7 +171,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -184,7 +184,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -197,7 +197,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_real"
             },
             {
                "nr": "",
@@ -210,7 +210,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_real"
             },
             {
                "nr": "",
@@ -223,7 +223,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -236,7 +236,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -249,7 +249,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -262,7 +262,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -275,7 +275,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_string"
             },
             {
                "nr": "",
@@ -288,7 +288,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -301,7 +301,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -314,7 +314,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -327,7 +327,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -340,7 +340,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_string"
             },
             {
                "nr": "",
@@ -353,7 +353,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_string"
             },
             {
                "nr": "",
@@ -366,7 +366,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_string"
             }
          ]
       },

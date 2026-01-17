@@ -43,10 +43,22 @@ def modify_data(data):
                 return item
         return None
 
+    # Helper to determine type for data types
+    def get_type_for_dt(dt_name):
+        if dt_name == "BOOL": return "bool"
+        if dt_name in ["BYTE", "WORD", "DWORD", "LWORD", "QUARTER"]: return "any_bit"
+        if dt_name in ["SINT", "INT", "DINT", "LINT", "USINT", "UINT", "UDINT", "ULINT"]: return "any_int"
+        if dt_name in ["REAL", "LREAL"]: return "any_real"
+        if dt_name in ["STRING", "WSTRING", "CHAR", "WCHAR"]: return "any_string"
+        if dt_name in ["TIME", "LTIME", "DATE", "LDATE", "TIME_OF_DAY", "LTOD", "DATE_AND_TIME", "LDT"]: return "time"
+        return ""
+
     cat_types = find_category('cat_types')
     if cat_types:
         for dt in data_types:
             item = find_item(cat_types, dt)
+            dt_type = get_type_for_dt(dt)
+            
             if item:
                 print(f"Updating {dt}...")
                 item['link_int'] = f'<a href="{dt_base_url}{dt}/{dt}_Detail.html" target="_blank">{dt} Detail</a>'
@@ -55,6 +67,9 @@ def modify_data(data):
                     item['mean'] = "Datentyp (2 Bit / 4 Zustände)"
                 elif item.get('mean') == "Datentyp":
                     item['mean'] = f"Standard-Datentyp {dt}"
+                
+                # Update type
+                item['type'] = dt_type
             else:
                 print(f"Adding {dt} to cat_types...")
                 new_dt = {
@@ -68,7 +83,7 @@ def modify_data(data):
                     "ext_de": "",
                     "ext_en": "",
                     "title": "",
-                    "type": ""
+                    "type": dt_type
                 }
                 cat_types['data'].append(new_dt)
 

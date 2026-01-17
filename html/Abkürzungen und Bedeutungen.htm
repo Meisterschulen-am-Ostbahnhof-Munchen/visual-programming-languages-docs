@@ -113,16 +113,54 @@
 
         tr:hover td { background-color: #f8f9fa; }
 
-        /* Farben für Typen */
-        tr.row-adapter td:nth-child(2) {
-            background-color: #efe2f7; /* Helles Lila */
-            color: #4a148c;
-            font-weight: bold;
-        }
+        /* Farben für Typen (Basierend auf Eclipse 4diac Farbschema) */
         tr.row-event td:nth-child(2) {
-            background-color: #e3f2d9; /* Helles Grün */
-            color: #2e7d32;
+            background-color: #E0F2D1; /* Hellgrün tint */
+            color: #63B31F;
             font-weight: bold;
+            border-left: 4px solid #63B31F;
+        }
+        tr.row-bool td:nth-child(2) {
+            background-color: #F2F3EE; /* Graugrün tint */
+            color: #9FA48A;
+            font-weight: bold;
+            border-left: 4px solid #9FA48A;
+        }
+        tr.row-adapter td:nth-child(2) {
+            background-color: #E6DDF2; /* Violett tint */
+            color: #845DAF;
+            font-weight: bold;
+            border-left: 4px solid #845DAF;
+        }
+        tr.row-any_bit td:nth-child(2) {
+            background-color: #E6ECEE; /* ANY_BIT tint */
+            color: #82A3A9;
+            font-weight: bold;
+            border-left: 4px solid #82A3A9;
+        }
+        tr.row-any_int td:nth-child(2) {
+            background-color: #D1DFF2; /* ANY_INT tint */
+            color: #18519E;
+            font-weight: bold;
+            border-left: 4px solid #18519E;
+        }
+        tr.row-any_real td:nth-child(2) {
+            background-color: #F8F0D1; /* ANY_REAL tint */
+            color: #DBB418;
+            font-weight: bold;
+            border-left: 4px solid #DBB418;
+        }
+        tr.row-any_string td:nth-child(2) {
+            background-color: #F2E7E0; /* ANY_STRING tint */
+            color: #BD8663;
+            font-weight: bold;
+            border-left: 4px solid #BD8663;
+        }
+        tr.row-time td:nth-child(2) {
+            background-color: #CCCCFF; /* TIME tint */
+            color: #0000FF;
+            font-weight: bold;
+            border-left: 4px solid #0000FF;
         }
 
         /* Links & Bilder */
@@ -185,7 +223,7 @@
                "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Boolean\" target=\"_blank\">Boolean</a>",
                "ext_en": "",
                "title": "Boolesche Variable",
-               "type": ""
+               "type": "bool"
             },
             {
                "nr": "",
@@ -198,7 +236,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_bit"
             },
             {
                "nr": "",
@@ -211,7 +249,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_bit"
             },
             {
                "nr": "",
@@ -224,7 +262,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_bit"
             },
             {
                "nr": "",
@@ -237,7 +275,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_bit"
             },
             {
                "nr": "",
@@ -250,7 +288,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_bit"
             },
             {
                "nr": "",
@@ -263,7 +301,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -276,7 +314,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -289,7 +327,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -302,7 +340,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -315,7 +353,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -328,7 +366,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -341,7 +379,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -354,7 +392,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_int"
             },
             {
                "nr": "",
@@ -367,7 +405,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_real"
             },
             {
                "nr": "",
@@ -380,7 +418,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_real"
             },
             {
                "nr": "",
@@ -393,7 +431,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -406,7 +444,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -419,7 +457,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -432,7 +470,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -445,7 +483,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_string"
             },
             {
                "nr": "",
@@ -458,7 +496,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -471,7 +509,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -484,7 +522,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -497,7 +535,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "time"
             },
             {
                "nr": "",
@@ -510,7 +548,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_string"
             },
             {
                "nr": "",
@@ -523,7 +561,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_string"
             },
             {
                "nr": "",
@@ -536,7 +574,7 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
-               "type": ""
+               "type": "any_string"
             }
          ]
       },
@@ -4333,8 +4371,9 @@
             const tbody = table.querySelector('tbody');
             cat.data.forEach(row => {
                 const tr = document.createElement('tr');
-                if (row.type === 'adapter') tr.classList.add('row-adapter');
-                if (row.type === 'event') tr.classList.add('row-event');
+                if (row.type) {
+                    tr.classList.add('row-' + row.type);
+                }
 
                 tr.innerHTML = `
                     <td>${safe(row.nr)}</td>

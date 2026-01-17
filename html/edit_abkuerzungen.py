@@ -103,6 +103,68 @@ def modify_data(data):
             print("Updating GET_AT_INDEX...")
             item_get['link_int'] = f'<a href="{base_url}Bibliotheken/StandardLibraries/convert/GET_AT_INDEX.html" target="_blank">GET_AT_INDEX</a>'
     
+    # 4. Update Timers in cat_timer
+    cat_timer = find_category('cat_timer')
+    if cat_timer:
+        timers_to_process = [
+            # Cyclical (IEC 61131-3) - Adapters
+            {"term": "AX_FB_TOF", "mean": "Standard Timer (Ausschaltverzögerung) mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/iec61131/timers/AX_FB_TOF.html", "title": "Off-Delay Timer (Cyclic) with Adapter", "type": "adapter", "ex": "Uebung_020e2_AX"},
+            {"term": "AX_FB_TON", "mean": "Standard Timer (Einschaltverzögerung) mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/iec61131/timers/AX_FB_TON.html", "title": "On-Delay Timer (Cyclic) with Adapter", "type": "adapter", "ex": "Uebung_020c3_AX"},
+            {"term": "AX_FB_TP", "mean": "Standard Timer (Impuls) mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/iec61131/timers/AX_FB_TP.html", "title": "Pulse Timer (Cyclic) with Adapter", "type": "adapter", "ex": "Uebung_020f2_AX"},
+            
+            # Cyclical (IEC 61131-3) - Standard
+            {"term": "FB_TON", "mean": "Standard Timer (Einschaltverzögerung), zyklisch", "link": "Bibliotheken/StandardLibraries/iec61131-3/timers/FB_TON.html", "title": "On-Delay Timer (Cyclic)", "type": "", "ex": "Uebung_020c3"},
+            {"term": "FB_TOF", "mean": "Standard Timer (Ausschaltverzögerung), zyklisch", "link": "Bibliotheken/StandardLibraries/iec61131-3/timers/FB_TOF.html", "title": "Off-Delay Timer (Cyclic)", "type": "", "ex": "Uebung_020e2"},
+            {"term": "FB_TP", "mean": "Standard Timer (Impuls), zyklisch", "link": "Bibliotheken/StandardLibraries/iec61131-3/timers/FB_TP.html", "title": "Pulse Timer (Cyclic)", "type": "", "ex": "Uebung_020f2"},
+            
+            # Event-Based (IEC 61499) - Standard
+            {"term": "E_PULSE", "mean": "Event-basierter Timer (Impulsformend)", "link": "Bibliotheken/StandardLibraries/events/timers/E_PULSE.html", "title": "Event-driven Pulse", "type": "event", "ex": "Uebung_020h, Uebung_020i"},
+            {"term": "E_TP", "mean": "Event-basierter Timer (Puls)", "link": "Bibliotheken/StandardLibraries/events/timers/E_TP.html", "title": "Event-driven Pulse Timer", "type": "event", "ex": "Uebung_020f, Uebung_039b"},
+            {"term": "E_TON", "mean": "Event-basierter Timer (Einschaltverzögerung)", "link": "Bibliotheken/StandardLibraries/events/timers/E_TON.html", "title": "Event-driven On-Delay Timer", "type": "event", "ex": "Uebung_020c, Uebung_020c2, Uebung_039b"},
+            {"term": "E_TONOF", "mean": "Event-basierter Timer (Ein-/Ausschaltverzögerung)", "link": "Bibliotheken/StandardLibraries/events/timers/E_TONOF.html", "title": "Event-driven On/Off-Delay Timer", "type": "event", "ex": "Uebung_020g"},
+            
+            # Event-Based - Adapters
+            {"term": "AX_TON", "mean": "Event-basierter Timer (Einschaltverzögerung) mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/events/unidirectional/timers/AX_TON.html", "title": "Event-driven On-Delay Timer with Adapter", "type": "adapter", "ex": "Uebung_020c_AX"},
+            {"term": "AX_TONOF", "mean": "Event-basierter Timer (Ein-/Ausschaltverzögerung) mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/events/unidirectional/timers/AX_TONOF.html", "title": "Event-driven On/Off-Delay Timer with Adapter", "type": "adapter", "ex": "Uebung_020g_AX"},
+            {"term": "AX_TOF", "mean": "Event-basierter Timer (Ausschaltverzögerung) mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/events/unidirectional/timers/AX_TOF.html", "title": "Event-driven Off-Delay Timer with Adapter", "type": "adapter", "ex": "Uebung_020e_AX"},
+            {"term": "AX_PULSE", "mean": "Event-basierter Timer (Impuls) mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/events/unidirectional/timers/AX_PULSE.html", "title": "Event-driven Pulse Timer with Adapter", "type": "adapter", "ex": "Uebung_020h_AX, Uebung_020i_AX"}
+        ]
+
+        for timer_def in timers_to_process:
+            term = timer_def["term"]
+            item = find_item(cat_timer, term)
+            full_link = f'{base_url}{timer_def["link"]}'
+            
+            if item:
+                print(f"Updating Timer {term}...")
+                # Update link and description if needed, preserving existing fields like 'ex' if they exist
+                item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
+                # Only update 'mean' if it's generic or empty
+                if not item.get('mean') or item.get('mean') == "Datentyp":
+                     item['mean'] = timer_def["mean"]
+                # Ensure type is set
+                if not item.get('type'):
+                    item['type'] = timer_def["type"]
+                # Update ex
+                item['ex'] = timer_def["ex"]
+
+            else:
+                print(f"Adding Timer {term}...")
+                new_timer = {
+                    "nr": "",
+                    "term": term,
+                    "mean": timer_def["mean"],
+                    "ex": timer_def["ex"],
+                    "exdoc": "",
+                    "link_int": f'<a href="{full_link}" target="_blank">{term}</a>',
+                    "vid": "",
+                    "ext_de": "",
+                    "ext_en": "",
+                    "title": timer_def["title"],
+                    "type": timer_def["type"]
+                }
+                cat_timer['data'].append(new_timer)
+
     return data
 
 def main():

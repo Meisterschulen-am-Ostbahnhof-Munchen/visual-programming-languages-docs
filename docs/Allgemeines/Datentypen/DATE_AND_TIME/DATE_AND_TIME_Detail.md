@@ -1,17 +1,20 @@
-# Datentyp-Detail: DATE_AND_TIME
+# Datentyp-Detail: DATE_AND_TIME (DT)
 
 ## Beschreibung
-Auch als DT bekannt
+Der Datentyp **DATE_AND_TIME** (kurz **DT**) kombiniert Kalenderdatum und Tageszeit in einem einzigen Element.
 
 ## Normative Definition
-Gemäß **DIN EN 61131-3** wird dieser Datentyp wie folgt spezifiziert:
+Gemäß **DIN EN 61131-3** (Tabelle 10, Nr. 15a):
 
 | Eigenschaft | Wert |
 | :--- | :--- |
-| **Bits** | variabel |
-| **Wertebereich** | Datum und Zeit |
-| **Referenz** | Tabelle 10, Nr. 15a |
+| **Bits** | Meist 32 Bit (Implementierungsabhängig) |
+| **Voreingestellter Wert** | `DT#1970-01-01-00:00:00` |
 
-## Verwendung in der Programmierung
-In der IEC 61131-3 und IEC 61499 wird dieser Typ zur Deklaration von Variablen und in Funktionsbausteinen verwendet. 
-Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `DATE_AND_TIME#...`.
+## Literaldarstellung
+Literale beginnen mit dem Präfix `DT#` oder `DATE_AND_TIME#`. Das Format folgt dem Schema `YYYY-MM-DD-hh:mm:ss.ss`.
+
+### Beispiele
+- `DT#2026-01-17-12:00:00`
+- `DATE_AND_TIME#1984-06-25-15:36:55.36`
+- `dt#2010-09-22-00:00:00`

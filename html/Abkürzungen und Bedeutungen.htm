@@ -167,9 +167,12 @@
     // 1. DATEN-TEIL (Aufgeteilt in Kategorien)
     // =================================================================
 
-    // --- GRUPPE 1: Datentypen ---
-const data_datatypes = [
-   {
+    const glossaryData = [
+    {
+        "id": "cat_types",
+        "title": "Datentypen",
+        "data": [
+{
       "nr":"1",
       "term":"BOOL",
       "mean":"Datentyp",
@@ -429,10 +432,13 @@ const data_datatypes = [
       "title":"",
       "type":""
    }
-];
-    // --- GRUPPE 2: Flip-Flops & Speicher ---
-const data_flip_flops = [
-   {
+        ]
+    },
+    {
+        "id": "cat_flipflop",
+        "title": "Flip-Flops & Speicher",
+        "data": [
+{
       "nr":"22",
       "term":"E_T_FF / Flip-Flop",
       "mean":"Toggle-Flip-Flop (Stromstoßschalter)",
@@ -562,11 +568,13 @@ const data_flip_flops = [
       "title":"",
       "type":"adapter"
    }
-];
-
-    // --- GRUPPE 3: Timer & Zeit ---
-const data_timer = [
-   {
+        ]
+    },
+    {
+        "id": "cat_timer",
+        "title": "Timer (Zeitglieder)",
+        "data": [
+{
       "nr":"41",
       "term":"E_DELAY",
       "mean":"Verzögerungsschalter",
@@ -787,11 +795,13 @@ const data_timer = [
       "title":"",
       "type":"event"
    }
-];
-
-    // --- GRUPPE 4: Logik & Arithmetik ---
-const data_logic_math = [
-   {
+        ]
+    },
+    {
+        "id": "cat_logic",
+        "title": "Logik & Arithmetik",
+        "data": [
+{
       "nr":"",
       "term":"NOT",
       "mean":"NICHT-Verknüpfung",
@@ -1480,10 +1490,13 @@ const data_logic_math = [
       "title":"",
       "type":""
    }
-];
-
-const data_counters = [
-   {
+        ]
+    },
+    {
+        "id": "cat_counters",
+        "title": "Zähler",
+        "data": [
+{
       "nr":"107",
       "term":"E_CTU",
       "mean":"",
@@ -1535,12 +1548,13 @@ const data_counters = [
       "title":"",
       "type":"event"
    }
-];
-
-
-    // --- GRUPPE 5: Events & Steuerung ---
-const data_events = [
-   {
+        ]
+    },
+    {
+        "id": "cat_events",
+        "title": "Event Handling",
+        "data": [
+{
       "nr":"30",
       "term":"INIT / INITO",
       "mean":"Initiierung Eingang und Ausgang",
@@ -1982,11 +1996,13 @@ const data_events = [
       "title":"Auswahl aus zwei Ereignissen / Selection between two events",
       "type":"event"
    }
-];
-
-    // --- GRUPPE 6: Hardware & IO ---
-const data_hardware = [
-   {
+        ]
+    },
+    {
+        "id": "cat_hw",
+        "title": "Hardware & IO",
+        "data": [
+{
       "nr":"32",
       "term":"Soft Key_F9",
       "mean":"Softkey F9",
@@ -2402,11 +2418,13 @@ const data_hardware = [
       "title":"Machine Selected Speed MSS",
       "type":""
    }
-];
-
-    // --- GRUPPE 7: Sonstiges / Allgemein ---
-const data_general = [
-   {
+        ]
+    },
+    {
+        "id": "cat_misc",
+        "title": "Allgemeines & Begriffe",
+        "data": [
+{
       "nr":"2",
       "term":"TRUE",
       "mean":"WAHR / 1",
@@ -3056,24 +3074,9 @@ const data_general = [
       "title":"",
       "type":""
    }
+        ]
+    }
 ];
-
-
-    // =================================================================
-    // 2. KONFIGURATION (Welche Tabelle kommt wann)
-    // =================================================================
-    
-    // Hier fügst du deine Konstanten hinzu. Die Reihenfolge hier bestimmt die Anzeige auf der Seite.
-    const categories = [
-        { id: "cat_types",     title: "Datentypen",              data: data_datatypes },
-        { id: "cat_flipflop",  title: "Flip-Flops & Speicher",   data: data_flip_flops },
-        { id: "cat_timer",     title: "Timer (Zeitglieder)",     data: data_timer },
-        { id: "cat_logic",     title: "Logik & Arithmetik",      data: data_logic_math },
-        { id: "cat_counters",  title: "Zähler",                  data: data_counters },
-        { id: "cat_events",    title: "Event Handling",          data: data_events },
-        { id: "cat_hw",        title: "Hardware & IO",           data: data_hardware },
-        { id: "cat_misc",      title: "Allgemeines & Begriffe",  data: data_general }
-    ];
 
 
     // =================================================================
@@ -3088,7 +3091,7 @@ const data_general = [
     function initPage() {
         let globalTotalItems = 0;
 
-        categories.forEach(cat => {
+        glossaryData.forEach(cat => {
             // 1. Eintrag im Inhaltsverzeichnis
             const tocLink = document.createElement('a');
             tocLink.href = "#" + cat.id;
@@ -3178,7 +3181,7 @@ const data_general = [
         const input = document.getElementById('searchInput').value.toLowerCase();
         let totalGlobalVisible = 0;
 
-        categories.forEach(cat => {
+        glossaryData.forEach(cat => {
             const section = document.getElementById(cat.id);
             const tbody = document.getElementById("tbody-" + cat.id);
             const rows = tbody.querySelectorAll('tr');

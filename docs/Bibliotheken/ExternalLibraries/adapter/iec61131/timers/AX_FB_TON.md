@@ -10,7 +10,7 @@ AX_FB_TON ist ein standardisierter Timer-Funktionsblock gemäß IEC 61131-3, der
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
-- Keine direkten Ereigniseingänge vorhanden (Steuerung über Adapter)
+- **REQ** (Event): Normal Execution Request (übernimmt den Wert von PT); ruft den Baustein auf (muss zyklisch aufgerufen werden)
 
 ### **Ereignis-Ausgänge**
 - Keine direkten Ereignisausgänge vorhanden (Steuerung über Adapter)

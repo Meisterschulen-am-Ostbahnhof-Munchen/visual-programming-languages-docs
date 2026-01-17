@@ -19,6 +19,15 @@ def save_json(path, data):
 
 def modify_data(data):
     base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/"
+    dt_base_url = base_url + "Allgemeines/Datentypen/"
+    
+    # List of data types from the directory structure
+    data_types = [
+        "BOOL", "BYTE", "CHAR", "DATE", "DATE_AND_TIME", "DINT", "DWORD", "INT", 
+        "LDATE", "LDT", "LINT", "LREAL", "LTIME", "LTOD", "LWORD", "REAL", 
+        "SINT", "STRING", "TIME", "TIME_OF_DAY", "UDINT", "UINT", "ULINT", 
+        "USINT", "WCHAR", "WORD", "WSTRING"
+    ]
     
     # Helper to find category
     def find_category(cat_id):
@@ -34,37 +43,37 @@ def modify_data(data):
                 return item
         return None
 
-    # 1. Update BOOL in cat_types
     cat_types = find_category('cat_types')
     if cat_types:
-        item_bool = find_item(cat_types, 'BOOL')
-        if item_bool:
-            print("Updating BOOL...")
-            item_bool['mean'] = "Datentyp (1 Bit), FALSE/TRUE"
-            item_bool['title'] = "Boolesche Variable"
-            item_bool['link_int'] = f'<a href="{base_url}Allgemeines/Datentypen/BOOL/BOOL_Detail.html" target="_blank">BOOL Detail</a>'
-    
-    # 2. Add or Update AX in cat_types (or where appropriate)
-    # Using cat_types for generic Adapter type AX
+        for dt in data_types:
+            item = find_item(cat_types, dt)
+            if item:
+                print(f"Updating {dt}...")
+                item['link_int'] = f'<a href="{dt_base_url}{dt}/{dt}_Detail.html" target="_blank">{dt} Detail</a>'
+                # Optionally update mean/title if they are generic "Datentyp"
+                if item.get('mean') == "Datentyp":
+                    item['mean'] = f"Standard-Datentyp {dt}"
+            else:
+                print(f"Adding {dt} to cat_types...")
+                new_dt = {
+                    "nr": "",
+                    "term": dt,
+                    "mean": f"Standard-Datentyp {dt}",
+                    "ex": "",
+                    "exdoc": "",
+                    "link_int": f'<a href="{dt_base_url}{dt}/{dt}_Detail.html" target="_blank">{dt} Detail</a>',
+                    "vid": "",
+                    "ext_de": "",
+                    "ext_en": "",
+                    "title": "",
+                    "type": ""
+                }
+                cat_types['data'].append(new_dt)
+
+    # 2. Update AX in cat_types
     if cat_types:
         item_ax = find_item(cat_types, 'AX')
-        if not item_ax:
-            print("Adding AX...")
-            new_ax = {
-                "nr": "",
-                "term": "AX",
-                "mean": "Adapter Interface (1 Event, 1 Bool)",
-                "ex": "Uebung_001_AX",
-                "exdoc": "",
-                "link_int": f'<a href="{base_url}Bibliotheken/ExternalLibraries/adapter/types/unidirectional/BOOL/AX.html" target="_blank">AX</a>',
-                "vid": "",
-                "ext_de": "",
-                "ext_en": "",
-                "title": "Unidirectional Adapter Interface",
-                "type": "adapter"
-            }
-            cat_types['data'].append(new_ax)
-        else:
+        if item_ax:
             print("Updating AX...")
             item_ax['mean'] = "Adapter Interface (1 Event, 1 Bool)"
             item_ax['ex'] = "Uebung_001_AX"

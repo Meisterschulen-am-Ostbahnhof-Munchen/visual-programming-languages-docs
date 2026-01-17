@@ -549,7 +549,96 @@ def modify_data(data):
                 cat_adapter['data'].append(new_conv)
             else:
                 print(f"Updating Conversion {term}...")
+    # 11. Add MUX/DEMUX Blocks and Fix Types
+    
+    # Fix types based on prefixes
+    for category in data.get('categories', []):
+        for item in category.get('data', []):
+            term = item.get('term', '')
+            if term.startswith(('AX_', 'AW_', 'AB_', 'AD_', 'AL_', 'AS_', 'AI_', 'AE_', 'ASR_', 'AUDI_', 'AUI_', 'ADI_', 'ALI_', 'AULI_', 'AR_', 'ALR_', 'A2X_')):
+                if not item.get('type'):
+                    item['type'] = 'adapter'
+            elif term.startswith('E_'):
+                if not item.get('type'):
+                    item['type'] = 'event'
+
+    # Add MUX/DEMUX blocks
+    cat_events = find_category('cat_events')
+    if cat_events:
+        event_mux_blocks = [
+            {"term": "E_MUX_2", "link": "Bibliotheken/StandardLibraries/events/E_MUX_2.html", "mean": "Event Multiplexer (2 Inputs)", "title": "Event Multiplexer 2", "type": "event", "ex": ""},
+            {"term": "E_MUX_4", "link": "Bibliotheken/StandardLibraries/events/E_MUX_4.html", "mean": "Event Multiplexer (4 Inputs)", "title": "Event Multiplexer 4", "type": "event", "ex": "Uebung_087a2"},
+            {"term": "E_MUX_8", "link": "Bibliotheken/StandardLibraries/events/E_MUX_8.html", "mean": "Event Multiplexer (8 Inputs)", "title": "Event Multiplexer 8", "type": "event", "ex": ""},
+            {"term": "E_DEMUX", "link": "Bibliotheken/StandardLibraries/events/E_DEMUX.html", "mean": "Event Demultiplexer", "title": "Event Demultiplexer", "type": "event", "ex": "Uebung_040, Uebung_087, Uebung_040_AX"},
+            {"term": "E_DEMUX_2", "link": "Bibliotheken/StandardLibraries/events/E_DEMUX_2.html", "mean": "Event Demultiplexer (2 Outputs)", "title": "Event Demultiplexer 2", "type": "event", "ex": ""},
+            {"term": "E_DEMUX_4", "link": "Bibliotheken/StandardLibraries/events/E_DEMUX_4.html", "mean": "Event Demultiplexer (4 Outputs)", "title": "Event Demultiplexer 4", "type": "event", "ex": "Uebung_087a1, Uebung_087a2"},
+            {"term": "E_DEMUX_8", "link": "Bibliotheken/StandardLibraries/events/E_DEMUX_8.html", "mean": "Event Demultiplexer (8 Outputs)", "title": "Event Demultiplexer 8", "type": "event", "ex": "Uebung_006c, Uebung_041"}
+        ]
+        
+        for mux in event_mux_blocks:
+            term = mux["term"]
+            item = find_item(cat_events, term)
+            full_link = f'{base_url}{mux["link"]}'
+            
+            if not item:
+                print(f"Adding Event MUX {term}...")
+                new_mux = {
+                    "nr": "",
+                    "term": term,
+                    "mean": mux["mean"],
+                    "ex": mux["ex"],
+                    "exdoc": "",
+                    "link_int": f'<a href="{full_link}" target="_blank">{term}</a>',
+                    "vid": "",
+                    "ext_de": "",
+                    "ext_en": "",
+                    "title": mux["title"],
+                    "type": mux["type"]
+                }
+                cat_events['data'].append(new_mux)
+            else:
+                print(f"Updating Event MUX {term}...")
                 item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
+                item['ex'] = mux["ex"]
+                item['type'] = mux["type"]
+
+    cat_logic = find_category('cat_logic')
+    if cat_logic:
+        ax_mux_blocks = [
+            {"term": "AX_MUX_2", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_MUX_2.html", "mean": "Adapter Multiplexer (2 Inputs)", "title": "Adapter Multiplexer 2", "type": "adapter", "ex": "Uebung_090a1_AX"},
+            {"term": "AX_MUX_3", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_MUX_3.html", "mean": "Adapter Multiplexer (3 Inputs)", "title": "Adapter Multiplexer 3", "type": "adapter", "ex": "Uebung_090a2_AX, Uebung_103, Uebung_103c, Uebung_103c2"},
+            {"term": "AX_DEMUX_2", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_DEMUX_2.html", "mean": "Adapter Demultiplexer (2 Outputs)", "title": "Adapter Demultiplexer 2", "type": "adapter", "ex": ""},
+            {"term": "AX_DEMUX_3", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_DEMUX_3.html", "mean": "Adapter Demultiplexer (3 Outputs)", "title": "Adapter Demultiplexer 3", "type": "adapter", "ex": "Uebung_103, Uebung_103c, Uebung_103c2"},
+            {"term": "AX_DEMUX_4", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_DEMUX_4.html", "mean": "Adapter Demultiplexer (4 Outputs)", "title": "Adapter Demultiplexer 4", "type": "adapter", "ex": ""},
+            {"term": "AX_DEMUX_5", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_DEMUX_5.html", "mean": "Adapter Demultiplexer (5 Outputs)", "title": "Adapter Demultiplexer 5", "type": "adapter", "ex": ""}
+        ]
+
+        for mux in ax_mux_blocks:
+            term = mux["term"]
+            item = find_item(cat_logic, term)
+            full_link = f'{base_url}{mux["link"]}'
+            
+            if not item:
+                print(f"Adding Adapter MUX {term}...")
+                new_mux = {
+                    "nr": "",
+                    "term": term,
+                    "mean": mux["mean"],
+                    "ex": mux["ex"],
+                    "exdoc": "",
+                    "link_int": f'<a href="{full_link}" target="_blank">{term}</a>',
+                    "vid": "",
+                    "ext_de": "",
+                    "ext_en": "",
+                    "title": mux["title"],
+                    "type": mux["type"]
+                }
+                cat_logic['data'].append(new_mux)
+            else:
+                print(f"Updating Adapter MUX {term}...")
+                item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
+                item['ex'] = mux["ex"]
+                item['type'] = mux["type"]
 
     return data
 

@@ -40,7 +40,13 @@ target_fbs = [
     "sequence_ET_04_04", "sequence_ET_04_04_AX",
     
     # Missing items
-    "AUDI_TO_AD", "ADI_DI_TO_DINT", "AUDI_CTUD_UDINT"
+    "AUDI_TO_AD", "ADI_DI_TO_DINT", "AUDI_CTUD_UDINT",
+    
+    # MUX/DEMUX
+    "AX_MUX_2", "AX_MUX_3", 
+    "AX_DEMUX_2", "AX_DEMUX_3", "AX_DEMUX_4", "AX_DEMUX_5",
+    "E_MUX_2", "E_MUX_4", "E_MUX_8", 
+    "E_DEMUX", "E_DEMUX_2", "E_DEMUX_4", "E_DEMUX_8"
 ]
 
 def scan_files():

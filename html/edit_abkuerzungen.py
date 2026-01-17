@@ -223,6 +223,29 @@ def modify_data(data):
     
     return data
 
+def make_exercises_clickable(data):
+    base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/training1/Ventilsteuerung/4diacIDE-workspace/"
+    
+    for category in data.get('categories', []):
+        for item in category.get('data', []):
+            ex_str = item.get('ex', '')
+            if ex_str and '<a href=' not in ex_str:
+                exercises = [e.strip() for e in ex_str.split(',')]
+                links = []
+                for ex in exercises:
+                    if not ex: continue
+                    # Determine path based on _AX suffix
+                    if '_AX' in ex:
+                        path = "test_AX/Uebungen_doc/"
+                    else:
+                        path = "test_B/Uebungen_doc/"
+                    
+                    link = f'<a href="{base_url}{path}{ex}.html" target="_blank">{ex}</a>'
+                    links.append(link)
+                
+                item['ex'] = ', '.join(links)
+    return data
+
 def main():
     if not os.path.exists(file_path):
         print(f"Error: File not found at {file_path}")
@@ -231,6 +254,7 @@ def main():
     try:
         data = load_json(file_path)
         data = modify_data(data)
+        data = make_exercises_clickable(data) # Apply clickability
         save_json(file_path, data)
         print("Done.")
     except Exception as e:

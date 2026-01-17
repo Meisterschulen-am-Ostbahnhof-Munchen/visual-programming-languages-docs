@@ -1,5 +1,0 @@
-# Verteiler
-
-```{toctree}
-LinksRechts
-```

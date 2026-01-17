@@ -1,16 +1,13 @@
 # utils
 
 ```{toctree}
-APPEND_STRING_2
-APPEND_STRING_3
-ARRAY2ARRAY_2_LREAL
-ARRAY2VALUES_2_LREAL
 assembling/assembling
 const/const
-conversion_array/conversion_array
-conversion_struct/conversion_struct
+selection/selection
+signals/signals
+splitting/splitting
+timing/timing
 CSV_WRITER_1
-CSV_WRITER_10
 CSV_WRITER_2
 CSV_WRITER_3
 CSV_WRITER_4
@@ -19,23 +16,11 @@ CSV_WRITER_6
 CSV_WRITER_7
 CSV_WRITER_8
 CSV_WRITER_9
+CSV_WRITER_10
 FB_RANDOM
-event-quarter/event-quarter
-events/events
-GET_AT_INDEX
-GET_STRUCT_VALUE
 GetInstancePath
 GetInstancePathAndName
-math/math
 OUT_ANY_CONSOLE
-selection/selection
-sequence-control/sequence-control
-SET_AT_INDEX
-SET_STRUCT_VALUE
-signals/signals
-splitting/splitting
 STEST_END
 TEST_CONDITION
-timing/timing
-VALUES2ARRAY_2_LREAL
 ```

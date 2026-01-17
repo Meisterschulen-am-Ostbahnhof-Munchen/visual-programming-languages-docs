@@ -42,6 +42,22 @@ gibt viele weitere, siehe: [Zahlenmengen ](https://www.matheretter.de/wiki/mathe
 
 ## Datentypen
 
+Die Datentypen in der IEC 61131-3 und IEC 61499 sind nach Bit-Länge und Verwendungszweck kategorisiert. Eine detaillierte Beschreibung jedes einzelnen Datentyps finden Sie im folgenden Abschnitt:
+
+```{toctree}
+Allgemeines/Datentypen/Datentypen
+```
+
+### Zusammenfassung der Kategorien
+Gemäß DIN EN 61131-3 werden die Datentypen in folgende Gruppen unterteilt:
+- **Bit-Datentypen**: BOOL, BYTE, WORD, DWORD, LWORD
+- **Ganzzahlen (mit Vorzeichen)**: SINT, INT, DINT, LINT
+- **Ganzzahlen (vorzeichenlos)**: USINT, UINT, UDINT, ULINT
+- **Gleitpunktzahlen**: REAL, LREAL
+- **Zeit und Datum**: TIME, DATE, TOD, DT
+- **Zeichenfolgen**: STRING, WSTRING
+## Datentypen2
+
 [Integer (Datentyp) – Wikipedia](https://de.wikipedia.org/wiki/Integer_(Datentyp))
 
 [Gleitkommazahl – Wikipedia](https://de.wikipedia.org/wiki/Gleitkommazahl)
@@ -88,5 +104,7 @@ Siehe auch: IEC 61499, Table E.1
 
 
 [^1]: QUARTER ist nicht normativ festgelegt.
+
+
 
 

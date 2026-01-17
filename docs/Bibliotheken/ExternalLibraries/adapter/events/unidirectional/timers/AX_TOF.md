@@ -5,6 +5,8 @@
 * * * * * * * * * *
 
 ## Einleitung
+**Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
+
 Der AX_TOF Funktionsblock ist ein standardmäßiger Timer-Baustein für Ausschaltverzögerungen (Off-Delay Timing). Er realisiert eine Zeitverzögerung beim Abschalten eines Signals und wird über Adapter-Schnittstellen angesteuert.
 
 ## Schnittstellenstruktur

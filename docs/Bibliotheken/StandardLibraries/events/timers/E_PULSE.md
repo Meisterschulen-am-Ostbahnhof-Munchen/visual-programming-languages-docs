@@ -1,5 +1,7 @@
 # E_PULSE
 
+**Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
+
 ![image](https://github.com/user-attachments/assets/f5119723-ac8b-477f-afe1-795808faa1e2)
 
 

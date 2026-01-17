@@ -1,5 +1,6 @@
 # E_TOF
 
+**Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
 
 ![image](https://github.com/user-attachments/assets/86d35e53-c4b8-42ac-b746-0d6b8a7c73dc)
 

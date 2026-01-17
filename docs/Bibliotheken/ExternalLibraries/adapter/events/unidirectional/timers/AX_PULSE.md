@@ -2,6 +2,8 @@
 
 * * * * * * * * * *
 ## Einleitung
+**Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
+
 Der AX_PULSE ist ein Funktionsblock, der einen Impuls über einen AX-Adapter ausgibt.
 
 ## Schnittstellenstruktur

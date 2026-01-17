@@ -1,7 +1,12 @@
 # E_TP
 
+**Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
+
+## Bild
+
 ![image](https://github.com/user-attachments/assets/8d531305-da9a-42e8-b44d-afab3a955be6)
 
+## Text 
 
 ## Beschreibung
 

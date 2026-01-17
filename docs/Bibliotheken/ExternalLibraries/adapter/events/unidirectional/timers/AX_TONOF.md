@@ -5,6 +5,8 @@
 * * * * * * * * * *
 
 ## Einleitung
+**Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
+
 Der AX_TONOF ist ein standardisierter Timer-Funktionsblock, der sowohl Ein- als auch Ausschaltverzögerungen realisiert. Dieser Baustein kombiniert die Funktionalitäten eines Einschaltverzögerungs- und Ausschaltverzögerungs-Timers in einer kompakten Lösung.
 
 ## Schnittstellenstruktur

@@ -5,6 +5,8 @@
 * * * * * * * * * *
 
 ## Einleitung
+**Wichtiger Hinweis: Dieser Baustein funktioniert nur korrekt, wenn er zyklisch aufgerufen wird.**
+
 AX_FB_TOF ist ein standardisierter Timer-Funktionsblock gemäß IEC 61131-3, der eine Ausschaltverzögerung (Off-Delay Timing) realisiert. Der Baustein hält das Ausgangssignal nach dem Abschalten des Eingangssignals für eine definierte Zeitdauer aufrecht.
 
 ## Schnittstellenstruktur

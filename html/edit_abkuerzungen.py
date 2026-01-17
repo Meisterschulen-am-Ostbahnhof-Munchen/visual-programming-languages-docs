@@ -401,7 +401,95 @@ def modify_data(data):
                 print(f"Updating Adapter {term}...")
                 item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
                 item['mean'] = adapter_def["mean"]
-                item['title'] = adapter_def["title"]
+    # 9. Add Sequence Control Blocks to cat_sequence
+    cat_sequence = find_category('cat_sequence')
+    if not cat_sequence:
+        cat_sequence = {
+            "id": "cat_sequence",
+            "title": "Sequenzsteuerung",
+            "data": []
+        }
+        data['categories'].append(cat_sequence)
+
+    if cat_sequence:
+        sequence_blocks = [
+            # Standard - Event
+            {"term": "sequence_E_04", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/event/sequence_E_04.html", "mean": "Sequenz (Event, 4 Schritte)", "title": "Sequence Control (Event, 4 Steps)", "type": "sequence", "ex": ""},
+            {"term": "sequence_E_05", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/event/sequence_E_05.html", "mean": "Sequenz (Event, 5 Schritte)", "title": "Sequence Control (Event, 5 Steps)", "type": "sequence", "ex": ""},
+            {"term": "sequence_E_08", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/event/sequence_E_08.html", "mean": "Sequenz (Event, 8 Schritte)", "title": "Sequence Control (Event, 8 Steps)", "type": "sequence", "ex": ""},
+            {"term": "sequence_E_04_loop", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/event/sequence_E_04_loop.html", "mean": "Sequenz (Event, 4 Schritte, Loop)", "title": "Sequence Control (Event, 4 Steps, Loop)", "type": "sequence", "ex": ""},
+            {"term": "sequence_E_05_loop", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/event/sequence_E_05_loop.html", "mean": "Sequenz (Event, 5 Schritte, Loop)", "title": "Sequence Control (Event, 5 Steps, Loop)", "type": "sequence", "ex": ""},
+            {"term": "sequence_E_08_loop", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/event/sequence_E_08_loop.html", "mean": "Sequenz (Event, 8 Schritte, Loop)", "title": "Sequence Control (Event, 8 Steps, Loop)", "type": "sequence", "ex": "Uebung_040, Uebung_041"},
+
+            # Standard - Time
+            {"term": "sequence_T_04", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/time/sequence_T_04.html", "mean": "Sequenz (Time, 4 Schritte)", "title": "Sequence Control (Time, 4 Steps)", "type": "sequence", "ex": ""},
+            {"term": "sequence_T_05", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/time/sequence_T_05.html", "mean": "Sequenz (Time, 5 Schritte)", "title": "Sequence Control (Time, 5 Steps)", "type": "sequence", "ex": ""},
+            {"term": "sequence_T_08", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/time/sequence_T_08.html", "mean": "Sequenz (Time, 8 Schritte)", "title": "Sequence Control (Time, 8 Steps)", "type": "sequence", "ex": ""},
+            {"term": "sequence_T_04_loop", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/time/sequence_T_04_loop.html", "mean": "Sequenz (Time, 4 Schritte, Loop)", "title": "Sequence Control (Time, 4 Steps, Loop)", "type": "sequence", "ex": "Uebung_035a"},
+            {"term": "sequence_T_05_loop", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/time/sequence_T_05_loop.html", "mean": "Sequenz (Time, 5 Schritte, Loop)", "title": "Sequence Control (Time, 5 Steps, Loop)", "type": "sequence", "ex": "Uebung_035a2, Uebung_035a3"},
+            {"term": "sequence_T_08_loop", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/time/sequence_T_08_loop.html", "mean": "Sequenz (Time, 8 Schritte, Loop)", "title": "Sequence Control (Time, 8 Steps, Loop)", "type": "sequence", "ex": "Uebung_038"},
+
+            # Standard - Combi
+            {"term": "sequence_ET_04", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/combi/sequence_ET_04.html", "mean": "Sequenz (Event/Time, 4 Schritte)", "title": "Sequence Control (Event/Time, 4 Steps)", "type": "sequence", "ex": "Uebung_035, Uebung_036"},
+            {"term": "sequence_ET_05", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/combi/sequence_ET_05.html", "mean": "Sequenz (Event/Time, 5 Schritte)", "title": "Sequence Control (Event/Time, 5 Steps)", "type": "sequence", "ex": "Uebung_039, Uebung_039a"},
+            {"term": "sequence_ET_08", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/combi/sequence_ET_08.html", "mean": "Sequenz (Event/Time, 8 Schritte)", "title": "Sequence Control (Event/Time, 8 Steps)", "type": "sequence", "ex": ""},
+            {"term": "sequence_ET_04_loop", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/combi/sequence_ET_04_loop.html", "mean": "Sequenz (Event/Time, 4 Schritte, Loop)", "title": "Sequence Control (Event/Time, 4 Steps, Loop)", "type": "sequence", "ex": "Uebung_037"},
+            {"term": "sequence_ET_05_loop", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/combi/sequence_ET_05_loop.html", "mean": "Sequenz (Event/Time, 5 Schritte, Loop)", "title": "Sequence Control (Event/Time, 5 Steps, Loop)", "type": "sequence", "ex": ""},
+            {"term": "sequence_ET_08_loop", "link": "Bibliotheken/StandardLibraries/utils/sequence-control/combi/sequence_ET_08_loop.html", "mean": "Sequenz (Event/Time, 8 Schritte, Loop)", "title": "Sequence Control (Event/Time, 8 Steps, Loop)", "type": "sequence", "ex": ""},
+
+            # Adapter (AX) - Event
+            {"term": "sequence_E_04_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/event/sequence_E_04_AX.html", "mean": "Sequenz (Event, 4 Schritte, AX)", "title": "Sequence Control (Event, 4 Steps, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_E_05_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/event/sequence_E_05_AX.html", "mean": "Sequenz (Event, 5 Schritte, AX)", "title": "Sequence Control (Event, 5 Steps, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_E_08_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/event/sequence_E_08_AX.html", "mean": "Sequenz (Event, 8 Schritte, AX)", "title": "Sequence Control (Event, 8 Steps, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_E_04_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/event/sequence_E_04_loop_AX.html", "mean": "Sequenz (Event, 4 Schritte, Loop, AX)", "title": "Sequence Control (Event, 4 Steps, Loop, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_E_05_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/event/sequence_E_05_loop_AX.html", "mean": "Sequenz (Event, 5 Schritte, Loop, AX)", "title": "Sequence Control (Event, 5 Steps, Loop, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_E_08_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/event/sequence_E_08_loop_AX.html", "mean": "Sequenz (Event, 8 Schritte, Loop, AX)", "title": "Sequence Control (Event, 8 Steps, Loop, AX)", "type": "sequence", "ex": "Uebung_040_AX"},
+
+            # Adapter (AX) - Time (Note path: timed)
+            {"term": "sequence_T_04_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/timed/sequence_T_04_AX.html", "mean": "Sequenz (Time, 4 Schritte, AX)", "title": "Sequence Control (Time, 4 Steps, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_T_05_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/timed/sequence_T_05_AX.html", "mean": "Sequenz (Time, 5 Schritte, AX)", "title": "Sequence Control (Time, 5 Steps, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_T_08_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/timed/sequence_T_08_AX.html", "mean": "Sequenz (Time, 8 Schritte, AX)", "title": "Sequence Control (Time, 8 Steps, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_T_04_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/timed/sequence_T_04_loop_AX.html", "mean": "Sequenz (Time, 4 Schritte, Loop, AX)", "title": "Sequence Control (Time, 4 Steps, Loop, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_T_05_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/timed/sequence_T_05_loop_AX.html", "mean": "Sequenz (Time, 5 Schritte, Loop, AX)", "title": "Sequence Control (Time, 5 Steps, Loop, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_T_08_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/timed/sequence_T_08_loop_AX.html", "mean": "Sequenz (Time, 8 Schritte, Loop, AX)", "title": "Sequence Control (Time, 8 Steps, Loop, AX)", "type": "sequence", "ex": "Uebung_038_AX"},
+
+            # Adapter (AX) - Combi
+            {"term": "sequence_ET_04_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_AX.html", "mean": "Sequenz (Event/Time, 4 Schritte, AX)", "title": "Sequence Control (Event/Time, 4 Steps, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_ET_05_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_05_AX.html", "mean": "Sequenz (Event/Time, 5 Schritte, AX)", "title": "Sequence Control (Event/Time, 5 Steps, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_ET_08_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_08_AX.html", "mean": "Sequenz (Event/Time, 8 Schritte, AX)", "title": "Sequence Control (Event/Time, 8 Steps, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_ET_04_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_loop_AX.html", "mean": "Sequenz (Event/Time, 4 Schritte, Loop, AX)", "title": "Sequence Control (Event/Time, 4 Steps, Loop, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_ET_05_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_05_loop_AX.html", "mean": "Sequenz (Event/Time, 5 Schritte, Loop, AX)", "title": "Sequence Control (Event/Time, 5 Steps, Loop, AX)", "type": "sequence", "ex": ""},
+            {"term": "sequence_ET_08_loop_AX", "link": "Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_08_loop_AX.html", "mean": "Sequenz (Event/Time, 8 Schritte, Loop, AX)", "title": "Sequence Control (Event/Time, 8 Steps, Loop, AX)", "type": "sequence", "ex": ""}
+        ]
+
+        for seq_def in sequence_blocks:
+            term = seq_def["term"]
+            item = find_item(cat_sequence, term)
+            full_link = f'{base_url}{seq_def["link"]}'
+            
+            if not item:
+                print(f"Adding Sequence Block {term}...")
+                new_seq = {
+                    "nr": "",
+                    "term": term,
+                    "mean": seq_def["mean"],
+                    "ex": seq_def["ex"],
+                    "exdoc": "",
+                    "link_int": f'<a href="{full_link}" target="_blank">{term}</a>',
+                    "vid": "",
+                    "ext_de": "",
+                    "ext_en": "",
+                    "title": seq_def["title"],
+                    "type": seq_def["type"]
+                }
+                cat_sequence['data'].append(new_seq)
+            else:
+                print(f"Updating Sequence Block {term}...")
+                item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
+                item['mean'] = seq_def["mean"]
+                item['title'] = seq_def["title"]
+                if seq_def["ex"]:
+                    item['ex'] = seq_def["ex"]
 
     return data
 

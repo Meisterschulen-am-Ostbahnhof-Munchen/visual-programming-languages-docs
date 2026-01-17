@@ -22,7 +22,21 @@ target_fbs = [
     
     # IO Blocks
     "IB", "ID", "IE", "IL", "IW", "IX",
-    "QB", "QD", "QL", "QW", "QX"
+    "QB", "QD", "QL", "QW", "QX",
+    
+    # Sequence Control
+    "sequence_E_04", "sequence_E_05", "sequence_E_08",
+    "sequence_T_04", "sequence_T_05", "sequence_T_08",
+    "sequence_ET_04", "sequence_ET_05", "sequence_ET_08",
+    "sequence_E_04_loop", "sequence_E_05_loop", "sequence_E_08_loop",
+    "sequence_T_04_loop", "sequence_T_05_loop", "sequence_T_08_loop",
+    "sequence_ET_04_loop", "sequence_ET_05_loop", "sequence_ET_08_loop",
+    "sequence_E_04_AX", "sequence_E_05_AX", "sequence_E_08_AX",
+    "sequence_T_04_AX", "sequence_T_05_AX", "sequence_T_08_AX",
+    "sequence_ET_04_AX", "sequence_ET_05_AX", "sequence_ET_08_AX",
+    "sequence_E_04_loop_AX", "sequence_E_05_loop_AX", "sequence_E_08_loop_AX",
+    "sequence_T_04_loop_AX", "sequence_T_05_loop_AX", "sequence_T_08_loop_AX",
+    "sequence_ET_04_loop_AX", "sequence_ET_05_loop_AX", "sequence_ET_08_loop_AX"
 ]
 
 def scan_files():

@@ -45,7 +45,8 @@ Der **Q_NumericValue** ist ein standardkonformer Funktionsbaustein zur Änderung
 ✔ **ISO 11783-6 konform** (F.22)  
 ✔ **32-Bit-Wertebereich** (UDINT)  
 ✔ **Sofortige Aktualisierung**  
-✔ **Rückverfolgbarkeit** (Vorheriger Wert)  
+✔ **Rückverfolgbarkeit** (Vorheriger Wert)
+✔ **Interne Pufferung**: Der Funktionsbaustein puffert den Wert intern. Eine Nachricht wird nur dann auf den Bus gesendet, wenn sich `u32NewValue` von `u32OldValue` unterscheidet. Dies reduziert die Buslast erheblich und verzeiht häufige REQ-Events.
 
 ## Wertebereich  
 
@@ -95,4 +96,4 @@ Essential für:
 - Industrielle Steuerungssysteme
 
 ## Beispielanwendungen
-[Q_NumericValue_beispiele](./UT/Q_NumericValue_beispiele.md)
+[Q_NumericValue_beispiele](Q_NumericValue_beispiele.md)

@@ -1,4 +1,4 @@
-# EVENT
+# Unidirectional EVENT Adapter
 
 ```{toctree}
 AE

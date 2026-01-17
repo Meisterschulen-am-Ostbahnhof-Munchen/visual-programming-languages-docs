@@ -1,4 +1,4 @@
-# LINT
+# Unidirectional LINT Adapter
 
 `{toctree}
 ALI

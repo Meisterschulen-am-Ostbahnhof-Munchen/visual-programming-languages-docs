@@ -1,4 +1,4 @@
-# BYTE
+# Unidirectional BYTE Adapter
 
 ```{toctree}
 AB

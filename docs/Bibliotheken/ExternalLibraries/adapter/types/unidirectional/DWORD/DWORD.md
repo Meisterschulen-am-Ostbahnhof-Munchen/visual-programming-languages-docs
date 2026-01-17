@@ -1,4 +1,4 @@
-# DWORD
+# Unidirectional DWORD Adapter
 
 `{toctree}
 AD

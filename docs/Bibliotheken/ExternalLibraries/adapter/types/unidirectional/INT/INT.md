@@ -1,4 +1,4 @@
-# INT
+# Unidirectional INT Adapter
 
 `{toctree}
 AI

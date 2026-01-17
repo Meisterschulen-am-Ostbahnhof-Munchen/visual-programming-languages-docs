@@ -1,4 +1,4 @@
-# UDINT
+# Unidirectional UDINT Adapter
 
 `{toctree}
 AUDI

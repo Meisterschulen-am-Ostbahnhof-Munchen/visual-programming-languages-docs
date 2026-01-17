@@ -1,4 +1,4 @@
-# AD
+# AD (DWORD)
 
 unidirectional Adapter Interface for 1 Event and 1 Dword
 

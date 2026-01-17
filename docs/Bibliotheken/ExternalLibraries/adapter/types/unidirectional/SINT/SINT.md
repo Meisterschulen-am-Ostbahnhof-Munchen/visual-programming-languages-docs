@@ -1,4 +1,4 @@
-# SINT
+# Unidirectional SINT Adapter
 
 `{toctree}
 AS

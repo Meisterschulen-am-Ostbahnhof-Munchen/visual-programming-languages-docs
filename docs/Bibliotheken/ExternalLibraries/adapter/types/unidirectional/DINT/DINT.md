@@ -1,4 +1,4 @@
-# DINT
+# Unidirectional DINT Adapter
 
 `{toctree}
 ADI

@@ -1,4 +1,4 @@
-# LREAL
+# Unidirectional LREAL Adapter
 
 `{toctree}
 ALR

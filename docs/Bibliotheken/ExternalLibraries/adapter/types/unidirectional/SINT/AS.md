@@ -1,4 +1,4 @@
-# AS
+# AS (SINT)
 
 unidirectional Adapter Interface for 1 Event and 1 Sint
 

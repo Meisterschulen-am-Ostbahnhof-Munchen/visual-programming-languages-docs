@@ -1,4 +1,4 @@
-# USINT
+# Unidirectional USINT Adapter
 
 `{toctree}
 AUS

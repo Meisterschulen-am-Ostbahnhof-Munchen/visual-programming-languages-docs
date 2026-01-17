@@ -1,4 +1,4 @@
-# ULINT
+# Unidirectional ULINT Adapter
 
 `{toctree}
 AULI

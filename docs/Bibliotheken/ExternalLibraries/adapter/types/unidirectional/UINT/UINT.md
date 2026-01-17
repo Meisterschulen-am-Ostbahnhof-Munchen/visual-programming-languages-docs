@@ -1,4 +1,4 @@
-# UINT
+# Unidirectional UINT Adapter
 
 `{toctree}
 AUI

@@ -305,6 +305,55 @@ def modify_data(data):
             }
             cat_hw['data'].append(new_qw)
 
+    # 7. Add all unidirectional adapters to cat_adapter
+    cat_adapter = find_category('cat_adapter')
+    if cat_adapter:
+        adapters_to_add = [
+            {"term": "AB", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/BYTE/AB.html", "mean": "Adapter Interface (1 Event, 1 Byte)", "title": "Unidirectional Adapter Interface (Byte)"},
+            {"term": "AD", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/DWORD/AD.html", "mean": "Adapter Interface (1 Event, 1 DWord)", "title": "Unidirectional Adapter Interface (DWord)"},
+            {"term": "AL", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/LWORD/AL.html", "mean": "Adapter Interface (1 Event, 1 LWord)", "title": "Unidirectional Adapter Interface (LWord)"},
+            {"term": "AS", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/SINT/AS.html", "mean": "Adapter Interface (1 Event, 1 SINT)", "title": "Unidirectional Adapter Interface (SINT)"},
+            {"term": "AUS", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/USINT/AUS.html", "mean": "Adapter Interface (1 Event, 1 USINT)", "title": "Unidirectional Adapter Interface (USINT)"},
+            {"term": "AI", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/INT/AI.html", "mean": "Adapter Interface (1 Event, 1 INT)", "title": "Unidirectional Adapter Interface (INT)"},
+            {"term": "AUI", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UINT/AUI.html", "mean": "Adapter Interface (1 Event, 1 UINT)", "title": "Unidirectional Adapter Interface (UINT)"},
+            {"term": "ADI", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/DINT/ADI.html", "mean": "Adapter Interface (1 Event, 1 DINT)", "title": "Unidirectional Adapter Interface (DINT)"},
+            {"term": "AUDI", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UDINT/AUDI.html", "mean": "Adapter Interface (1 Event, 1 UDINT)", "title": "Unidirectional Adapter Interface (UDINT)"},
+            {"term": "ALI", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/LINT/ALI.html", "mean": "Adapter Interface (1 Event, 1 LINT)", "title": "Unidirectional Adapter Interface (LINT)"},
+            {"term": "AULI", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/ULINT/AULI.html", "mean": "Adapter Interface (1 Event, 1 ULINT)", "title": "Unidirectional Adapter Interface (ULINT)"},
+            {"term": "AR", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/REAL/AR.html", "mean": "Adapter Interface (1 Event, 1 REAL)", "title": "Unidirectional Adapter Interface (REAL)"},
+            {"term": "ALR", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/LREAL/ALR.html", "mean": "Adapter Interface (1 Event, 1 LREAL)", "title": "Unidirectional Adapter Interface (LREAL)"},
+            {"term": "AE", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/EVENT/AE.html", "mean": "Adapter Interface (1 Event)", "title": "Unidirectional Adapter Interface (Event)"},
+            {"term": "ASR", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/EVENT/ASR.html", "mean": "Adapter Interface (Set/Reset)", "title": "Unidirectional Adapter Interface (Set/Reset)"},
+            {"term": "A2X", "link": "Bibliotheken/ExternalLibraries/adapter/types/unidirectional/BOOL/A2X.html", "mean": "Adapter Interface (BOOL)", "title": "Unidirectional Adapter Interface (A2X)"}
+        ]
+
+        for adapter_def in adapters_to_add:
+            term = adapter_def["term"]
+            item = find_item(cat_adapter, term)
+            full_link = f'{base_url}{adapter_def["link"]}'
+            
+            if not item:
+                print(f"Adding Adapter {term}...")
+                new_adapter = {
+                    "nr": "",
+                    "term": term,
+                    "mean": adapter_def["mean"],
+                    "ex": "",
+                    "exdoc": "",
+                    "link_int": f'<a href="{full_link}" target="_blank">{term}</a>',
+                    "vid": "",
+                    "ext_de": "",
+                    "ext_en": "",
+                    "title": adapter_def["title"],
+                    "type": "adapter"
+                }
+                cat_adapter['data'].append(new_adapter)
+            else:
+                print(f"Updating Adapter {term}...")
+                item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
+                item['mean'] = adapter_def["mean"]
+                item['title'] = adapter_def["title"]
+
     return data
 
 def make_exercises_clickable(data):

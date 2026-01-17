@@ -3970,6 +3970,32 @@
                "ext_en": "",
                "title": "Sequence Control (Event/Time, 8 Steps, Loop, AX)",
                "type": "sequence"
+            },
+            {
+               "nr": "",
+               "term": "sequence_ET_04_04",
+               "mean": "Sequenz (8 Ausgänge, 4+4 Schritte)",
+               "ex": "",
+               "exdoc": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_04.html\" target=\"_blank\">sequence_ET_04_04</a>",
+               "vid": "",
+               "ext_de": "",
+               "ext_en": "",
+               "title": "Sequence Control (8 Outputs, 4+4 Steps)",
+               "type": "sequence"
+            },
+            {
+               "nr": "",
+               "term": "sequence_ET_04_04_AX",
+               "mean": "Sequenz (8 Ausgänge, 4+4 Schritte, AX)",
+               "ex": "",
+               "exdoc": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_04_AX.html\" target=\"_blank\">sequence_ET_04_04_AX</a>",
+               "vid": "",
+               "ext_de": "",
+               "ext_en": "",
+               "title": "Sequence Control (8 Outputs, 4+4 Steps, AX)",
+               "type": "sequence"
             }
          ]
       }

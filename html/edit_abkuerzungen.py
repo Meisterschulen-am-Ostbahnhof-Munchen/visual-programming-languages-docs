@@ -610,7 +610,8 @@ def modify_data(data):
             {"term": "AX_DEMUX_2", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_DEMUX_2.html", "mean": "Adapter Demultiplexer (2 Outputs)", "title": "Adapter Demultiplexer 2", "type": "adapter", "ex": ""},
             {"term": "AX_DEMUX_3", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_DEMUX_3.html", "mean": "Adapter Demultiplexer (3 Outputs)", "title": "Adapter Demultiplexer 3", "type": "adapter", "ex": "Uebung_103, Uebung_103c, Uebung_103c2"},
             {"term": "AX_DEMUX_4", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_DEMUX_4.html", "mean": "Adapter Demultiplexer (4 Outputs)", "title": "Adapter Demultiplexer 4", "type": "adapter", "ex": ""},
-            {"term": "AX_DEMUX_5", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_DEMUX_5.html", "mean": "Adapter Demultiplexer (5 Outputs)", "title": "Adapter Demultiplexer 5", "type": "adapter", "ex": ""}
+            {"term": "AX_DEMUX_5", "link": "Bibliotheken/ExternalLibraries/adapter/selection/unidirectional/BOOL/AX_DEMUX_5.html", "mean": "Adapter Demultiplexer (5 Outputs)", "title": "Adapter Demultiplexer 5", "type": "adapter", "ex": ""},
+            {"term": "SPLIT_BYTE_INTO_QUARTERS", "link": "Bibliotheken/StandardLibraries/utils/splitting/SPLIT_BYTE_INTO_QUARTERS.html", "mean": "Byte in 4 Viertelbytes aufteilen", "title": "Split Byte into Quarters", "type": "", "ex": "Uebung_056"}
         ]
 
         for mux in ax_mux_blocks:

@@ -41,6 +41,7 @@ target_fbs = [
     
     # Missing items
     "AUDI_TO_AD", "ADI_DI_TO_DINT", "AUDI_CTUD_UDINT",
+    "SPLIT_BYTE_INTO_QUARTERS",
     
     # MUX/DEMUX
     "AX_MUX_2", "AX_MUX_3", 

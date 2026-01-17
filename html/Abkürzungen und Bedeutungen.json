@@ -1847,6 +1847,19 @@
                "ext_en": "",
                "title": "Adapter Demultiplexer 5",
                "type": "adapter"
+            },
+            {
+               "nr": "",
+               "term": "SPLIT_BYTE_INTO_QUARTERS",
+               "mean": "Byte in 4 Viertelbytes aufteilen",
+               "ex": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.html\" target=\"_blank\">Uebung_056</a>",
+               "exdoc": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/utils/splitting/SPLIT_BYTE_INTO_QUARTERS.html\" target=\"_blank\">SPLIT_BYTE_INTO_QUARTERS</a>",
+               "vid": "",
+               "ext_de": "",
+               "ext_en": "",
+               "title": "Split Byte into Quarters",
+               "type": ""
             }
          ]
       },

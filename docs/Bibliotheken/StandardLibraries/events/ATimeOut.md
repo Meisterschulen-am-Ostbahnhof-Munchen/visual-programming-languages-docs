@@ -5,58 +5,48 @@
 * * * * * * * * * *  
 
 ## Einleitung  
-Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter industrieller Steuerungssysteme. Der **ATimeOut**-Baustein (Active Timeout) ist ein Funktionsbaustein, der einen aktiven Timeout-Mechanismus bereitstellt. Dieser Aufsatz beschreibt die Struktur, das Verhalten und die typischen Anwendungen des ATimeOut-Bausteins.  
+Der **ATimeOut**-Adapter ist eine standardisierte Schnittstelle (AdapterType) gemäß IEC 61499 zur Implementierung von Timeout-Services. Er definiert die Kommunikation zwischen einem Dienstnutzer (PLUG) und einem Zeitdienst-Anbieter (SOCKET). Im Gegensatz zum `ARTimeOut` ist dieser Adapter für einfache, nicht-nachtriggerbare Timeouts vorgesehen.
 
-## Struktur des ATimeOut-Bausteins  
-Der ATimeOut-Baustein ist als **Basic Function Block (BFB)** oder **Composite Function Block (CFB)** in der IEC 61499 spezifiziert.  
+## Struktur des ATimeOut-Adapters  
+Der ATimeOut-Adapter definiert eine klare Trennung der Zuständigkeiten zwischen der Steuerlogik (Plug) und dem Zeitgeber (Socket).
 
 ### Schnittstelle (Interface)  
-Die typische Schnittstelle des ATimeOut-Bausteins umfasst:  
+Die Schnittstelle ist aus der Perspektive des **Plugs** definiert:
 
-- **Eingangsereignisse (Event Inputs)**:  
-  - **START**: Löst den Timeout mit der konfigurierten Dauer aus.  
-  - **STOP**: Bricht den laufenden Timeout ab.  
-  - **RESET**: Setzt den Timeout zurück.  
+- **Eingangsereignisse (Event Inputs - vom Socket empfangen)**:  
+  - **TimeOut**: Signalisiert, dass die vorgegebene Zeit abgelaufen ist.
 
-- **Ausgangsereignisse (Event Outputs)**:  
-  - **TimeOut**: Wird ausgelöst, wenn der Timeout abgelaufen ist.  
+- **Ausgangsereignisse (Event Outputs - an den Socket gesendet)**:  
+  - **START**: Initiiert den Timeout-Vorgang. Dieses Ereignis ist mit der Variablen **DT** verknüpft.
+  - **STOP**: Bricht einen laufenden Timeout-Vorgang ab.
 
-- **Eingangsvariablen (Input Variables)**:  
-  - **PT (Preset Time)**: Die vordefinierte Timeout-Dauer (TIME-Datentyp).  
+- **Ausgangsvariablen (Output Variables - an den Socket gesendet)**:  
+  - **DT (Duration Time)**: Definiert die Zeitdauer für den Timeout (Datentyp: TIME).
 
-- **Ausgangsvariablen (Output Variables)**:  
-  - **Q**: Boolescher Ausgang, der den aktiven Timeout-Zustand anzeigt (TRUE = Timeout läuft).  
+## Verhalten und Service-Sequenzen
+Der Adapter unterstützt zwei grundlegende Abläufe:
 
-## Verhalten des ATimeOut-Bausteins  
-1. **Start des Timeouts**:  
-   - Bei Empfang des **START**-Ereignisses beginnt der Timeout mit der in **PT** definierten Dauer.  
-   - Der Ausgang **Q** wird auf TRUE gesetzt.  
+1. **Timeout-Ablauf**:
+   - Der Plug sendet `START` mit einem Wert für `DT`.
+   - Der Socket verarbeitet die Zeit und sendet nach Ablauf `TimeOut` zurück.
+2. **Vorzeitiger Abbruch**:
+   - Der Plug sendet `START`.
+   - Bevor die Zeit abläuft, sendet der Plug `STOP`. Der Socket bricht die Zeitmessung ab; es erfolgt kein `TimeOut`-Ereignis.
 
-2. **Abbruch des Timeouts**:  
-   - Ein **STOP**-Ereignis setzt **Q** auf FALSE und hält den Timeout an.  
+## Technische Besonderheiten
+- **Nicht nachtriggerbar**: Ein erneutes `START` während eines laufenden Timeouts wird bei der Standard-Implementierung (`E_TimeOut`) ignoriert.
+- **Adapter-Konzept**: Ermöglicht eine saubere Kapselung der Zeitlogik und vereinfacht das Baustein-Netzwerk durch Reduzierung der Verbindungslinien.
 
-3. **Timeout-Ablauf**:  
-   - Nach Ablauf von **PT** wird das **TimeOut**-Ereignis ausgelöst und **Q** auf FALSE gesetzt.  
+## Anwendungsbeispiele
+- **Überwachung von Antwortzeiten**: Warten auf eine Bestätigung (z.B. von einem Kommunikationspartner) innerhalb eines festen Zeitfensters.
+- **Prozessüberwachung**: Sicherstellen, dass ein mechanischer Vorgang innerhalb der erwarteten Zeit abgeschlossen wird.
 
-4. **Reset**:  
-   - Das **RESET**-Ereignis setzt den internen Timer zurück.  
+## Vergleich mit ARTimeOut
+| Feature        | ATimeOut (dieser) | ARTimeOut |
+|----------------|-------------------|-----------|
+| Typ            | Adapter           | Adapter   |
+| Nachtriggerbar | Nein              | Ja        |
+| Ereignis START | Startet Timer     | Startet/Resetet Timer |
 
-## Technische Besonderheiten  
-- Der Baustein kann sowohl in zyklischen als auch ereignisgesteuerten Systemen eingesetzt werden.  
-- Die Timeout-Logik ist unabhängig von der Zykluszeit des übergeordneten Systems.  
-
-## Anwendungsbeispiele  
-- **Überwachung von Kommunikationszeitüberschreitungen** in verteilten Steuerungssystemen  
-- **Maschinensicherheit**: Erkennung von Stillstandszeiten oder fehlenden Sensorupdates  
-- **Prozesssteuerung**: Timeout für kritische Operationen  
-
-## Vergleich mit ähnlichen Bausteinen  
-| Feature        | ATimeOut | ARTimeOut (Adapter) | E_PULSE |  
-|----------------|----------|---------------------|---------|  
-| Timeout-Trigger| START    | START               | REQ     |  
-| Abbruch        | STOP     | STOP                | R (Reset)|  
-| Rückmeldung    | TimeOut  | TimeOut             | CNF     |  
-| Typ           | FB       | Adapter             | FB      |  
-
-## Fazit  
-Der ATimeOut-Baustein bietet eine robuste Lösung für Timeout-Mechanismen in IEC 61499-Systemen. Durch seine klare Schnittstelle und flexible Einsatzmöglichkeiten eignet er sich besonders für Sicherheits- und Überwachungsfunktionen in industriellen Steuerungen. Die Unabhängigkeit von der Zykluszeit macht ihn zudem für ereignisgesteuerte Architekturen interessant.
+## Fazit
+Der ATimeOut-Adapter stellt eine robuste und einfache Schnittstelle für zeitkritische Überwachungsaufgaben in verteilten Steuerungssystemen dar. Er ist die Basis für den Funktionsbaustein `E_TimeOut`.

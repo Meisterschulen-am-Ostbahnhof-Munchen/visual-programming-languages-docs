@@ -17,4 +17,5 @@ AX_SWITCH
 AX_T_FF
 AX_T_FF_SR
 timers/timers
+signals/signals
 ```

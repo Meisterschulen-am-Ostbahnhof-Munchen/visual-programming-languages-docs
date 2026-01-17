@@ -165,6 +165,60 @@ def modify_data(data):
                 }
                 cat_timer['data'].append(new_timer)
 
+    # 5. Update Flip-Flops in cat_flipflop
+    cat_flipflop = find_category('cat_flipflop')
+    if cat_flipflop:
+        flipflops_to_process = [
+            # Standard (IEC 61131-3)
+            {"term": "FB_RS", "mean": "Bistabiles Element (Rücksetz-Priorität)", "link": "Bibliotheken/StandardLibraries/iec61131-3/bistableElements/FB_RS.html", "title": "Bistable Element (Reset Priority)", "type": "", "ex": ""},
+            {"term": "FB_SR", "mean": "Bistabiles Element (Setz-Priorität)", "link": "Bibliotheken/StandardLibraries/iec61131-3/bistableElements/FB_SR.html", "title": "Bistable Element (Set Priority)", "type": "", "ex": ""},
+            
+            # Event-Based (IEC 61499)
+            {"term": "E_T_FF", "mean": "Event-driven Toggle Flip-Flop", "link": "Bibliotheken/StandardLibraries/events/E_T_FF.html", "title": "Toggle Flip-Flop", "type": "event", "ex": "Uebung_004a, Uebung_004a2, Uebung_004a3, Uebung_005, Uebung_007"},
+            {"term": "E_T_FF_SR", "mean": "Event-driven Toggle Flip-Flop mit Set/Reset", "link": "Bibliotheken/StandardLibraries/events/E_T_FF_SR.html", "title": "Toggle Flip-Flop with Set/Reset", "type": "event", "ex": "Uebung_004a7, Uebung_006a, Uebung_006a2"},
+            {"term": "E_SR", "mean": "Event-driven SR Flip-Flop", "link": "Bibliotheken/StandardLibraries/events/E_SR.html", "title": "SR Flip-Flop", "type": "event", "ex": "Uebung_004b, Uebung_006, Uebung_009, Uebung_015"},
+            {"term": "E_RS", "mean": "Event-driven RS Flip-Flop", "link": "Bibliotheken/StandardLibraries/events/E_RS.html", "title": "RS Flip-Flop", "type": "event", "ex": "Uebung_006b, Uebung_020a, Uebung_020b"},
+            {"term": "E_D_FF", "mean": "Event-driven Data Flip-Flop", "link": "Bibliotheken/StandardLibraries/events/E_D_FF.html", "title": "D Flip-Flop", "type": "event", "ex": "Uebung_071a, Uebung_085"},
+
+            # Adapter Event-Based
+            {"term": "AX_RS", "mean": "RS Flip-Flop mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/events/unidirectional/AX_RS.html", "title": "RS Flip-Flop with Adapter", "type": "adapter", "ex": "Uebung_006b_AX, Uebung_020a_AX"},
+            {"term": "AX_SR", "mean": "SR Flip-Flop mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/events/unidirectional/ASR_AX_SR.html", "title": "SR Flip-Flop with Adapter", "type": "adapter", "ex": "Uebung_006d_AX, Uebung_006_AX, Uebung_008_AX"},
+            {"term": "AX_T_FF_SR", "mean": "Toggle Flip-Flop (SR) mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/events/unidirectional/AX_T_FF_SR.html", "title": "Toggle Flip-Flop (SR) with Adapter", "type": "adapter", "ex": "Uebung_004a7_AX, Uebung_006a2_AX"},
+            {"term": "AX_D_FF", "mean": "Data Flip-Flop mit Adapter", "link": "Bibliotheken/ExternalLibraries/adapter/events/unidirectional/AX_D_FF.html", "title": "D Flip-Flop with Adapter", "type": "adapter", "ex": ""},
+            {"term": "AX_T_FF", "mean": "Toggle Flip-Flop mit Adapter", "link": "", "title": "", "type": "adapter", "ex": "Uebung_004a2_AX, Uebung_005_AX, Uebung_007_AX"} # Link missing in prompt but found exercises
+        ]
+
+        for ff_def in flipflops_to_process:
+            term = ff_def["term"]
+            item = find_item(cat_flipflop, term)
+            full_link = f'{base_url}{ff_def["link"]}' if ff_def["link"] else ""
+            
+            if item:
+                print(f"Updating Flip-Flop {term}...")
+                if full_link:
+                    item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
+                if not item.get('mean') or item.get('mean') == "Datentyp":
+                     item['mean'] = ff_def["mean"]
+                if not item.get('type'):
+                    item['type'] = ff_def["type"]
+                item['ex'] = ff_def["ex"]
+            else:
+                print(f"Adding Flip-Flop {term}...")
+                new_ff = {
+                    "nr": "",
+                    "term": term,
+                    "mean": ff_def["mean"],
+                    "ex": ff_def["ex"],
+                    "exdoc": "",
+                    "link_int": f'<a href="{full_link}" target="_blank">{term}</a>' if full_link else "",
+                    "vid": "",
+                    "ext_de": "",
+                    "ext_en": "",
+                    "title": ff_def["title"],
+                    "type": ff_def["type"]
+                }
+                cat_flipflop['data'].append(new_ff)
+    
     return data
 
 def main():

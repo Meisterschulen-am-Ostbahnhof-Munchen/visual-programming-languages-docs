@@ -8,10 +8,17 @@ search_dirs = [
 ]
 
 target_fbs = [
+    # Timers
     "AX_FB_TOF", "AX_FB_TON", "AX_FB_TP",
     "FB_TON", "FB_TOF", "FB_TP",
     "E_PULSE", "E_TP", "E_TON", "E_TONOF",
-    "AX_TON", "AX_TONOF", "AX_TOF", "AX_PULSE"
+    "AX_TON", "AX_TONOF", "AX_TOF", "AX_PULSE",
+    
+    # Flip-Flops
+    "FB_RS", "FB_SR",
+    "E_T_FF", "E_T_FF_SR", "E_SR", "E_RS", "E_D_FF",
+    "AX_RS", "ASR_AX_SR", "AX_T_FF_SR", "AX_D_FF",
+    "AX_T_FF", "AX_SR" # Adding potential variations or aliases if needed
 ]
 
 def scan_files():

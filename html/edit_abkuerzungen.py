@@ -488,8 +488,66 @@ def modify_data(data):
                 item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
                 item['mean'] = seq_def["mean"]
                 item['title'] = seq_def["title"]
-                if seq_def["ex"]:
-                    item['ex'] = seq_def["ex"]
+    # 10. Add missing Counter and Adapter Conversion blocks
+    cat_counters = find_category('cat_counters')
+    if cat_counters:
+        term = "AUDI_CTUD_UDINT"
+        item = find_item(cat_counters, term)
+        full_link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/events/unidirectional/AUDI_CTUD_UDINT.html'
+        ex = "Uebung_009_AX, Uebung_083_AX"
+        
+        if not item:
+            print(f"Adding Counter {term}...")
+            new_counter = {
+                "nr": "",
+                "term": term,
+                "mean": "Adapter-basierter Auf-/Abwärtszähler (UDINT)",
+                "ex": ex,
+                "exdoc": "",
+                "link_int": f'<a href="{full_link}" target="_blank">{term}</a>',
+                "vid": "",
+                "ext_de": "",
+                "ext_en": "",
+                "title": "Adapter-based Up/Down Counter (UDINT)",
+                "type": "event"
+            }
+            cat_counters['data'].append(new_counter)
+        else:
+            print(f"Updating Counter {term}...")
+            item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
+            item['ex'] = ex
+
+    cat_adapter = find_category('cat_adapter')
+    if cat_adapter:
+        conversions = [
+            {"term": "AUDI_TO_AD", "link": "Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AUDI/AUDI_TO_AD.html", "mean": "Adapter-Konvertierung (UDINT -> DWORD)", "title": "Adapter Conversion (UDINT to DWORD)", "ex": ""},
+            {"term": "ADI_DI_TO_DINT", "link": "Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/DINT/ADI_DI_TO_DINT.html", "mean": "Adapter-Konvertierung (ADI -> DINT)", "title": "Adapter Conversion (ADI to DINT)", "ex": ""}
+        ]
+        
+        for conv in conversions:
+            term = conv["term"]
+            item = find_item(cat_adapter, term)
+            full_link = f'{base_url}{conv["link"]}'
+            
+            if not item:
+                print(f"Adding Conversion {term}...")
+                new_conv = {
+                    "nr": "",
+                    "term": term,
+                    "mean": conv["mean"],
+                    "ex": conv["ex"],
+                    "exdoc": "",
+                    "link_int": f'<a href="{full_link}" target="_blank">{term}</a>',
+                    "vid": "",
+                    "ext_de": "",
+                    "ext_en": "",
+                    "title": conv["title"],
+                    "type": "adapter"
+                }
+                cat_adapter['data'].append(new_conv)
+            else:
+                print(f"Updating Conversion {term}...")
+                item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
 
     return data
 

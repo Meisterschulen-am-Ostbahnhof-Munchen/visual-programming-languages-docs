@@ -607,6 +607,32 @@
                "ext_en": "",
                "title": "Unidirectional Adapter Interface (A2X)",
                "type": "adapter"
+            },
+            {
+               "nr": "",
+               "term": "AUDI_TO_AD",
+               "mean": "Adapter-Konvertierung (UDINT -> DWORD)",
+               "ex": "",
+               "exdoc": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/AD_AUDI/AUDI_TO_AD.html\" target=\"_blank\">AUDI_TO_AD</a>",
+               "vid": "",
+               "ext_de": "",
+               "ext_en": "",
+               "title": "Adapter Conversion (UDINT to DWORD)",
+               "type": "adapter"
+            },
+            {
+               "nr": "",
+               "term": "ADI_DI_TO_DINT",
+               "mean": "Adapter-Konvertierung (ADI -> DINT)",
+               "ex": "",
+               "exdoc": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/conversion/unidirectional/DINT/ADI_DI_TO_DINT.html\" target=\"_blank\">ADI_DI_TO_DINT</a>",
+               "vid": "",
+               "ext_de": "",
+               "ext_en": "",
+               "title": "Adapter Conversion (ADI to DINT)",
+               "type": "adapter"
             }
          ]
       },
@@ -1826,6 +1852,19 @@
                "ext_de": "",
                "ext_en": "",
                "title": "",
+               "type": "event"
+            },
+            {
+               "nr": "",
+               "term": "AUDI_CTUD_UDINT",
+               "mean": "Adapter-basierter Auf-/Abwärtszähler (UDINT)",
+               "ex": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.html\" target=\"_blank\">Uebung_009_AX</a>, <a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_083_AX.html\" target=\"_blank\">Uebung_083_AX</a>",
+               "exdoc": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/AUDI_CTUD_UDINT.html\" target=\"_blank\">AUDI_CTUD_UDINT</a>",
+               "vid": "",
+               "ext_de": "",
+               "ext_en": "",
+               "title": "Adapter-based Up/Down Counter (UDINT)",
                "type": "event"
             }
          ]

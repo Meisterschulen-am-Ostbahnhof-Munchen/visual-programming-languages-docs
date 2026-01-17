@@ -24,6 +24,7 @@ Q_LineAttributes
 Q_ListItem
 Q_LockUnlockMask
 Q_NumericValue
+Q_NumericValue_AUDI
 Q_NumericValue_beispiele
 Q_NumericValueAux
 Q_ObjEnableDisable

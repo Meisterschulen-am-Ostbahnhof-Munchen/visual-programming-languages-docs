@@ -24,7 +24,7 @@ def modify_data(data):
     # List of data types from the directory structure
     data_types = [
         "BOOL", "BYTE", "CHAR", "DATE", "DATE_AND_TIME", "DINT", "DWORD", "INT", 
-        "LDATE", "LDT", "LINT", "LREAL", "LTIME", "LTOD", "LWORD", "REAL", 
+        "LDATE", "LDT", "LINT", "LREAL", "LTIME", "LTOD", "LWORD", "QUARTER", "REAL", 
         "SINT", "STRING", "TIME", "TIME_OF_DAY", "UDINT", "UINT", "ULINT", 
         "USINT", "WCHAR", "WORD", "WSTRING"
     ]
@@ -51,7 +51,9 @@ def modify_data(data):
                 print(f"Updating {dt}...")
                 item['link_int'] = f'<a href="{dt_base_url}{dt}/{dt}_Detail.html" target="_blank">{dt} Detail</a>'
                 # Optionally update mean/title if they are generic "Datentyp"
-                if item.get('mean') == "Datentyp":
+                if dt == "QUARTER":
+                    item['mean'] = "Datentyp (2 Bit / 4 Zustände)"
+                elif item.get('mean') == "Datentyp":
                     item['mean'] = f"Standard-Datentyp {dt}"
             else:
                 print(f"Adding {dt} to cat_types...")

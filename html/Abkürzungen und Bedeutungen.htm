@@ -167,7 +167,8 @@
     // 1. DATEN-TEIL (Aufgeteilt in Kategorien)
     // =================================================================
 
-    const glossaryData = [
+    const glossaryData = {
+    "categories": [
     {
         "id": "cat_types",
         "title": "Datentypen",
@@ -3076,8 +3077,8 @@
    }
         ]
     }
-];
-
+    ]
+};
 
     // =================================================================
     // 3. PROGRAMMLOGIK (Rendering & Filter)
@@ -3091,7 +3092,7 @@
     function initPage() {
         let globalTotalItems = 0;
 
-        glossaryData.forEach(cat => {
+        glossaryData.categories.forEach(cat => {
             // 1. Eintrag im Inhaltsverzeichnis
             const tocLink = document.createElement('a');
             tocLink.href = "#" + cat.id;
@@ -3181,7 +3182,7 @@
         const input = document.getElementById('searchInput').value.toLowerCase();
         let totalGlobalVisible = 0;
 
-        glossaryData.forEach(cat => {
+        glossaryData.categories.forEach(cat => {
             const section = document.getElementById(cat.id);
             const tbody = document.getElementById("tbody-" + cat.id);
             const rows = tbody.querySelectorAll('tr');

@@ -305,6 +305,55 @@ def modify_data(data):
             }
             cat_hw['data'].append(new_qw)
 
+    # 8. Add/Update IO blocks in cat_hw
+    cat_hw = find_category('cat_hw')
+    if cat_hw:
+        io_blocks = [
+            {"term": "IX", "link": "Bibliotheken/StandardLibraries/io/IX.html", "mean": "Input Bool", "title": "Input Bool Interface", "type": "io", "ex": "Uebung_001, Uebung_001c, Uebung_002, Uebung_002a, Uebung_002a2, Uebung_002a3, Uebung_002a4, Uebung_002a5b, Uebung_002b2, Uebung_002b3, Uebung_003, Uebung_003a0, Uebung_003a_sub, Uebung_003b2_sub, Uebung_003b_sub, Uebung_003c_sub, Uebung_003d, Uebung_005, Uebung_010, Uebung_010a, Uebung_010a2, Uebung_010a3, Uebung_010a4, Uebung_010b1, Uebung_010b4_sub, Uebung_010b5_sub, Uebung_010c, Uebung_010c2, Uebung_010c3_sub, Uebung_010c4_sub, Uebung_019c, Uebung_020a, Uebung_020b, Uebung_020c, Uebung_020c2, Uebung_020c3, Uebung_020d, Uebung_020e, Uebung_020e2, Uebung_020f, Uebung_020f2, Uebung_020g, Uebung_020i, Uebung_028, Uebung_029, Uebung_030, Uebung_032, Uebung_033_sub, Uebung_039b, Uebung_039_sub_Outputs, Uebung_049, Uebung_051, Uebung_052, Uebung_053, Uebung_054, Uebung_055, Uebung_056, Uebung_085, Uebung_086, Uebung_087, Uebung_087a1, Uebung_087a2, Uebung_088, Uebung_089, Uebung_090a1, Uebung_090a2, Uebung_094, Uebung_094a, Uebung_095, Uebung_160, Uebung_090a1_AX, Uebung_090a2_AX"},
+            {"term": "QX", "link": "Bibliotheken/StandardLibraries/io/QX.html", "mean": "Output Bool", "title": "Output Bool Interface", "type": "io", "ex": "Uebung_001, Uebung_001c, Uebung_002, Uebung_002a, Uebung_002a2, Uebung_002a3, Uebung_002a4, Uebung_002a5b, Uebung_002b2, Uebung_002b3, Uebung_003, Uebung_003a0, Uebung_003a_sub, Uebung_003b2_sub, Uebung_003b_sub, Uebung_003c_sub, Uebung_003d, Uebung_004a, Uebung_004a2, Uebung_004a3, Uebung_004a4, Uebung_004a5, Uebung_004a6, Uebung_004a7, Uebung_004a8, Uebung_004a9, Uebung_004b, Uebung_004b2, Uebung_004b3, Uebung_004c1, Uebung_004c2, Uebung_004c3, Uebung_004c4, Uebung_004c5, Uebung_004c6, Uebung_004c7, Uebung_005, Uebung_006, Uebung_006a, Uebung_006a2, Uebung_006a3, Uebung_006a4, Uebung_006b, Uebung_006c, Uebung_006d, Uebung_007, Uebung_007a1, Uebung_007a2, Uebung_007a3, Uebung_008, Uebung_009, Uebung_010, Uebung_010a, Uebung_010a2, Uebung_010a3, Uebung_010a4, Uebung_010b1, Uebung_010b2, Uebung_010b3, Uebung_010b4_sub, Uebung_010b5_sub, Uebung_010b6, Uebung_010b7, Uebung_010b8, Uebung_010b9, Uebung_010bA, Uebung_010bA2, Uebung_010bA3, Uebung_010bA4, Uebung_010c, Uebung_010c2, Uebung_010c3_sub, Uebung_010c4_sub, Uebung_013, Uebung_019b, Uebung_019c, Uebung_020a, Uebung_020b, Uebung_020c, Uebung_020c2, Uebung_020c3, Uebung_020d, Uebung_020e, Uebung_020e2, Uebung_020f, Uebung_020f2, Uebung_020f3, Uebung_020g, Uebung_020h, Uebung_020i, Uebung_021, Uebung_022, Uebung_023, Uebung_024, Uebung_025, Uebung_026_sub, Uebung_028, Uebung_029, Uebung_030, Uebung_032, Uebung_033_sub, Uebung_035, Uebung_035a, Uebung_035a2, Uebung_035a3, Uebung_036, Uebung_037, Uebung_038, Uebung_039a_sub_Outputs, Uebung_039b, Uebung_039_sub_Outputs, Uebung_040, Uebung_041, Uebung_049, Uebung_051, Uebung_052, Uebung_053, Uebung_054, Uebung_055, Uebung_056, Uebung_060_sub_Outputs, Uebung_071, Uebung_071a, Uebung_071b, Uebung_072b, Uebung_080, Uebung_080b, Uebung_080c, Uebung_081, Uebung_082, Uebung_083, Uebung_084, Uebung_085, Uebung_087, Uebung_087a1, Uebung_087a2, Uebung_088, Uebung_089, Uebung_090a1, Uebung_090a2, Uebung_091, Uebung_093, Uebung_093b, Uebung_094, Uebung_094a, Uebung_095, Uebung_110, Uebung_111, Uebung_160"},
+            {"term": "IE", "link": "Bibliotheken/StandardLibraries/io/IE.html", "mean": "Input Event", "title": "Input Event Interface", "type": "io", "ex": "Uebung_004a, Uebung_004a2, Uebung_004a3, Uebung_004a4, Uebung_004a5, Uebung_004a6, Uebung_004a7, Uebung_004a8, Uebung_004a9, Uebung_004b, Uebung_004b2, Uebung_004b3, Uebung_004c1, Uebung_004c2, Uebung_004c3, Uebung_004c4, Uebung_004c5, Uebung_006, Uebung_006a, Uebung_006a2, Uebung_006a3, Uebung_006a4, Uebung_006b, Uebung_006d, Uebung_007a1, Uebung_007a2, Uebung_007a3, Uebung_009a, Uebung_010b2, Uebung_010b3, Uebung_010b6, Uebung_010b7, Uebung_010b8, Uebung_010b9, Uebung_010bA, Uebung_010bA2, Uebung_010bA3, Uebung_010bA4, Uebung_013, Uebung_014, Uebung_015, Uebung_015a, Uebung_016, Uebung_016a, Uebung_017, Uebung_018, Uebung_019, Uebung_019a, Uebung_019b, Uebung_019c, Uebung_020f3, Uebung_020h, Uebung_020i, Uebung_021, Uebung_022, Uebung_023, Uebung_024, Uebung_025, Uebung_026, Uebung_031, Uebung_034b, Uebung_035, Uebung_035a, Uebung_035a2, Uebung_035a3, Uebung_036, Uebung_037, Uebung_038, Uebung_039, Uebung_039a, Uebung_039a_sub_Outputs, Uebung_040, Uebung_041, Uebung_042, Uebung_043, Uebung_080, Uebung_080b, Uebung_080c, Uebung_081, Uebung_082, Uebung_083, Uebung_084, Uebung_085, Uebung_087, Uebung_087a1, Uebung_091, Uebung_093, Uebung_093b, Uebung_094, Uebung_094a, Uebung_095, Uebung_110, Uebung_111, Uebung_124, Uebung_127, Uebung_128, Uebung_132, Uebung_004a2_AX, Uebung_004a3_AX, Uebung_004a4_AX, Uebung_004a5_AX, Uebung_004a6_AX, Uebung_004a7_AX, Uebung_004a8_AX, Uebung_004a9_AX, Uebung_004a_AX, Uebung_004b_AX, Uebung_004c1_AX, Uebung_004c2_AX, Uebung_004c3_AX, Uebung_004c4_AX, Uebung_004c5_AX, Uebung_006a2_AX, Uebung_006a3_AX, Uebung_006a4_AX, Uebung_006a_AX, Uebung_006b_AX, Uebung_006d_AX, Uebung_006_AX, Uebung_007a1_AX, Uebung_007a2_AX, Uebung_007a3_AX, Uebung_010b2_AX, Uebung_010b3_AX, Uebung_010b6_AX, Uebung_010b7_AX, Uebung_010b8_AX, Uebung_010b9_AX, Uebung_010bA2_AX, Uebung_010bA3_AX, Uebung_010bA4_AX, Uebung_010bA_AX, Uebung_013_AX, Uebung_020f3_AX, Uebung_020h_AX, Uebung_020i_AX, Uebung_038_AX, Uebung_040_AX, Uebung_083_AX, Uebung_094a_AX, Uebung_095_AX, Uebung_150_AX, Uebung_151_AX, Uebung_152, Uebung_153"},
+            
+            {"term": "IB", "link": "Bibliotheken/StandardLibraries/io/IB.html", "mean": "Input Byte", "title": "Input Byte Interface", "type": "io", "ex": "Uebung_006c, Uebung_011a"},
+            {"term": "QB", "link": "Bibliotheken/StandardLibraries/io/QB.html", "mean": "Output Byte", "title": "Output Byte Interface", "type": "io", "ex": ""},
+            {"term": "IW", "link": "Bibliotheken/StandardLibraries/io/IW.html", "mean": "Input Word", "title": "Input Word Interface", "type": "io", "ex": ""},
+            {"term": "QW", "link": "Bibliotheken/StandardLibraries/io/QW.html", "mean": "Output Word", "title": "Output Word Interface", "type": "io", "ex": ""},
+            {"term": "ID", "link": "Bibliotheken/StandardLibraries/io/ID.html", "mean": "Input DWord", "title": "Input DWord Interface", "type": "io", "ex": "Uebung_011, Uebung_011a2, Uebung_012, Uebung_012a_sub, Uebung_012b, Uebung_012c, Uebung_020c2_sub, Uebung_028, Uebung_034, Uebung_034a1_Q1, Uebung_034a1_Q2, Uebung_034a1_Q4, Uebung_060, Uebung_103, Uebung_150_AX, Uebung_151_AX, Uebung_152, Uebung_153"},
+            {"term": "QD", "link": "Bibliotheken/StandardLibraries/io/QD.html", "mean": "Output DWord", "title": "Output DWord Interface", "type": "io", "ex": "Uebung_060"},
+            {"term": "IL", "link": "Bibliotheken/StandardLibraries/io/IL.html", "mean": "Input LWord", "title": "Input LWord Interface", "type": "io", "ex": ""},
+            {"term": "QL", "link": "Bibliotheken/StandardLibraries/io/QL.html", "mean": "Output LWord", "title": "Output LWord Interface", "type": "io", "ex": ""}
+        ]
+
+        for io_def in io_blocks:
+            term = io_def["term"]
+            item = find_item(cat_hw, term)
+            full_link = f'{base_url}{io_def["link"]}'
+            
+            if item:
+                print(f"Updating IO Block {term}...")
+                item['link_int'] = f'<a href="{full_link}" target="_blank">{term}</a>'
+                if not item.get('mean') or item.get('mean') == "Datentyp": # Or generic
+                     item['mean'] = io_def["mean"]
+                item['title'] = io_def["title"]
+                item['type'] = io_def["type"]
+                if io_def["ex"]:
+                    item['ex'] = io_def["ex"]
+            else:
+                print(f"Adding IO Block {term}...")
+                new_io = {
+                    "nr": "",
+                    "term": term,
+                    "mean": io_def["mean"],
+                    "ex": io_def["ex"],
+                    "exdoc": "",
+                    "link_int": f'<a href="{full_link}" target="_blank">{term}</a>',
+                    "vid": "",
+                    "ext_de": "",
+                    "ext_en": "",
+                    "title": io_def["title"],
+                    "type": io_def["type"]
+                }
+                cat_hw['data'].append(new_io)
+
     # 7. Add all unidirectional adapters to cat_adapter
     cat_adapter = find_category('cat_adapter')
     if cat_adapter:

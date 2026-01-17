@@ -18,7 +18,11 @@ target_fbs = [
     "FB_RS", "FB_SR",
     "E_T_FF", "E_T_FF_SR", "E_SR", "E_RS", "E_D_FF",
     "AX_RS", "ASR_AX_SR", "AX_T_FF_SR", "AX_D_FF",
-    "AX_T_FF", "AX_SR" # Adding potential variations or aliases if needed
+    "AX_T_FF", "AX_SR", # Adding potential variations or aliases if needed
+    
+    # IO Blocks
+    "IB", "ID", "IE", "IL", "IW", "IX",
+    "QB", "QD", "QL", "QW", "QX"
 ]
 
 def scan_files():
@@ -41,10 +45,16 @@ def scan_files():
                         # Search for FB instantiations: Type="FB_NAME"
                         # We use regex to be robust against spacing
                         for fb in target_fbs:
-                            # Look for Type="fb" or Type="namespace::fb"
-                            # The pattern checks for Type="...fb" where ... can be anything ending with :: or nothing
-                            pattern = fr'Type="([^"]*::)?{re.escape(fb)}"' 
-                            if re.search(pattern, content):
+                            # Look for Type="...fb" where ... can be anything ending with :: or _
+                            # We want to match explicit usage.
+                            # Example: Type="logiBUS::io::DI::logiBUS_IX" should match IX
+                            # Example: Type="E_TON" should match E_TON
+                            pattern = fr'Type="[^"]*([:_]){re.escape(fb)}"'
+                            
+                            # Also handle exact match
+                            pattern_exact = fr'Type="{re.escape(fb)}"'
+                            
+                            if re.search(pattern, content) or re.search(pattern_exact, content):
                                 if fb not in fb_usage:
                                     fb_usage[fb] = []
                                 if exercise_name not in fb_usage[fb]:

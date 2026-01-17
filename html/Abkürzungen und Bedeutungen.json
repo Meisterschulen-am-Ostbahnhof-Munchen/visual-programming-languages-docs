@@ -1055,7 +1055,7 @@
                "mean": "",
                "ex": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020i.html\" target=\"_blank\">Uebung_020i</a>",
                "exdoc": "",
-               "link_int": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/utils/timing/E_STOPWATCH.html\" target=\"_blank\">E_STOPWATCH</a>",
                "vid": "",
                "ext_de": "",
                "ext_en": "",
@@ -1872,6 +1872,32 @@
                "ext_de": "",
                "ext_en": "",
                "title": "Split Byte into Quarters",
+               "type": ""
+            },
+            {
+               "nr": "",
+               "term": "ASSEMBLE_BYTE_FROM_BOOLS",
+               "mean": "",
+               "ex": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_053.html\" target=\"_blank\">Uebung_053</a>",
+               "exdoc": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/utils/assembling/ASSEMBLE_BYTE_FROM_BOOLS.html\" target=\"_blank\">ASSEMBLE_BYTE_FROM_BOOLS</a>",
+               "vid": "",
+               "ext_de": "",
+               "ext_en": "",
+               "title": "",
+               "type": ""
+            },
+            {
+               "nr": "",
+               "term": "SPLIT_BYTE_INTO_BOOLS",
+               "mean": "",
+               "ex": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_053.html\" target=\"_blank\">Uebung_053</a>",
+               "exdoc": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/utils/splitting/SPLIT_BYTE_INTO_BOOLS.html\" target=\"_blank\">SPLIT_BYTE_INTO_BOOLS</a>",
+               "vid": "",
+               "ext_de": "",
+               "ext_en": "",
+               "title": "",
                "type": ""
             }
          ]

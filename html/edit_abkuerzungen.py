@@ -186,10 +186,15 @@ def modify_data(data):
         (cat_logic, "AX_MUX_2", "ExternalLibraries/adapter/selection/unidirectional/BOOL", "adapter", "Uebung_090a1_AX"),
         (cat_logic, "AX_MUX_3", "ExternalLibraries/adapter/selection/unidirectional/BOOL", "adapter", "Uebung_103"),
         (cat_logic, "SPLIT_BYTE_INTO_QUARTERS", "StandardLibraries/utils/splitting", "", "Uebung_056"),
-        (cat_logic, "GET_AT_INDEX", "StandardLibraries/convert", "", "")
+        (cat_logic, "GET_AT_INDEX", "StandardLibraries/convert", "", ""),
+        (cat_logic, "ASSEMBLE_BYTE_FROM_BOOLS", "StandardLibraries/utils/assembling", "", "Uebung_053"),
+        (cat_logic, "SPLIT_BYTE_INTO_BOOLS", "StandardLibraries/utils/splitting", "", "Uebung_053")
     ]
     for cat, term, path, t, ex in muxs:
         update_or_add(cat, {"term": term, "link": f'{base_url}Bibliotheken/{path}/{term}.html', "type": t, "ex": ex})
+
+    # Update E_STOPWATCH link in cat_timer
+    update_or_add(cat_timer, {"term": "E_STOPWATCH", "link": f'{base_url}Bibliotheken/StandardLibraries/utils/timing/E_STOPWATCH.html', "type": "event", "ex": "Uebung_020i"})
 
     # 9. Final type fix for all
     for category in data.get('categories', []):

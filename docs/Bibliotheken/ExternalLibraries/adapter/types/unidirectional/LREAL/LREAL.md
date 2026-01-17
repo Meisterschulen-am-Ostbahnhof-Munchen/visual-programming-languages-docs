@@ -1,5 +1,9 @@
 # Unidirectional LREAL Adapter
 
-`{toctree}
+
+
+```{toctree}
 ALR
-`
+
+
+```

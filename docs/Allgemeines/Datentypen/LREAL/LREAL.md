@@ -1,5 +1,9 @@
 # Datentyp: LREAL
 
-`{toctree}
+
+
+```{toctree}
 LREAL_Detail
-`
+
+
+```

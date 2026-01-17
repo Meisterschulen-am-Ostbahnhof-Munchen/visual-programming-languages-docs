@@ -1,5 +1,9 @@
 # Datentyp: REAL
 
-`{toctree}
+
+
+```{toctree}
 REAL_Detail
-`
+
+
+```

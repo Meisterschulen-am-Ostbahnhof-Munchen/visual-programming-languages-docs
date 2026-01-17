@@ -1,5 +1,9 @@
 # Datentyp: WORD
 
-`{toctree}
+
+
+```{toctree}
 WORD_Detail
-`
+
+
+```

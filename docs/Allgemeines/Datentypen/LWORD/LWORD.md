@@ -1,5 +1,9 @@
 # Datentyp: LWORD
 
-`{toctree}
+
+
+```{toctree}
 LWORD_Detail
-`
+
+
+```

@@ -1,5 +1,9 @@
 # Datentyp: TIME
 
-`{toctree}
+
+
+```{toctree}
 TIME_Detail
-`
+
+
+```

@@ -1,5 +1,9 @@
 # Datentyp: BOOL
 
-`{toctree}
+
+
+```{toctree}
 BOOL_Detail
-`
+
+
+```

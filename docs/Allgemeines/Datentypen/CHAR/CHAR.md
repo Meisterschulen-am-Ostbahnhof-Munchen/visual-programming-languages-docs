@@ -1,5 +1,9 @@
 # Datentyp: CHAR
 
-`{toctree}
+
+
+```{toctree}
 CHAR_Detail
-`
+
+
+```

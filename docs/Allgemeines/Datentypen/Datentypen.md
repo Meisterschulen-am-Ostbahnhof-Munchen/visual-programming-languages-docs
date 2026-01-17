@@ -2,7 +2,7 @@
 
 In der folgenden Liste sind die elementaren Datentypen gemäß DIN EN 61131-3 aufgeführt.
 
-`{toctree}
+```{toctree}
 BOOL/BOOL
 BYTE/BYTE
 DATE/DATE
@@ -24,4 +24,4 @@ ULINT/ULINT
 USINT/USINT
 WORD/WORD
 WSTRING/WSTRING
-`
+```

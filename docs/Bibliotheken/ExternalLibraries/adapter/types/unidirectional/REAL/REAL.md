@@ -1,5 +1,9 @@
 # Unidirectional REAL Adapter
 
-`{toctree}
+
+
+```{toctree}
 AR
-`
+
+
+```

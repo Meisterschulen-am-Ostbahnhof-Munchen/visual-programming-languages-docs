@@ -1,5 +1,9 @@
 # Datentyp: INT
 
-`{toctree}
+
+
+```{toctree}
 INT_Detail
-`
+
+
+```

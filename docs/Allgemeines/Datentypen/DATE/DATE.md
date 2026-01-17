@@ -1,5 +1,9 @@
 # Datentyp: DATE
 
-`{toctree}
+
+
+```{toctree}
 DATE_Detail
-`
+
+
+```

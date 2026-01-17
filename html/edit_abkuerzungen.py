@@ -221,6 +221,90 @@ def modify_data(data):
                 }
                 cat_flipflop['data'].append(new_ff)
     
+    # 6. Restructuring and adding IO/Adapter types
+    
+    # Rename cat_types
+    cat_types = find_category('cat_types')
+    if cat_types:
+        cat_types['title'] = "Standard-Datentypen"
+        
+        # Move AX to cat_adapter
+        item_ax = find_item(cat_types, 'AX')
+        if item_ax:
+            cat_types['data'].remove(item_ax)
+            
+            # Find or create cat_adapter
+            cat_adapter = find_category('cat_adapter')
+            if not cat_adapter:
+                cat_adapter = {
+                    "id": "cat_adapter",
+                    "title": "Adapter-Typen",
+                    "data": []
+                }
+                # Insert after cat_types (index 1)
+                data['categories'].insert(1, cat_adapter)
+            
+            # Add AX to cat_adapter
+            if not find_item(cat_adapter, 'AX'):
+                cat_adapter['data'].append(item_ax)
+
+    # Add AW to cat_adapter
+    cat_adapter = find_category('cat_adapter')
+    if cat_adapter:
+        if not find_item(cat_adapter, 'AW'):
+            print("Adding AW...")
+            new_aw = {
+                "nr": "",
+                "term": "AW",
+                "mean": "Adapter Interface (1 Event, 1 Word)",
+                "ex": "",
+                "exdoc": "",
+                "link_int": f'<a href="{base_url}Bibliotheken/ExternalLibraries/adapter/types/unidirectional/WORD/AW.html" target="_blank">AW</a>',
+                "vid": "",
+                "ext_de": "",
+                "ext_en": "",
+                "title": "Unidirectional Adapter Interface (Word)",
+                "type": "adapter"
+            }
+            cat_adapter['data'].append(new_aw)
+
+    # Add IW and QW to cat_hw
+    cat_hw = find_category('cat_hw')
+    if cat_hw:
+        if not find_item(cat_hw, 'IW'):
+            print("Adding IW...")
+            new_iw = {
+                "nr": "",
+                "term": "IW",
+                "mean": "Input Word",
+                "ex": "",
+                "exdoc": "",
+                "link_int": f'<a href="{base_url}Bibliotheken/StandardLibraries/io/IW.html" target="_blank">IW</a>',
+                "vid": "",
+                "ext_de": "",
+                "ext_en": "",
+                "title": "Input Word Interface",
+                "type": "io"
+            }
+            cat_hw['data'].append(new_iw)
+            
+        if not find_item(cat_hw, 'QW'):
+            print("Adding QW...")
+            new_qw = {
+                "nr": "",
+                "term": "QW",
+                "mean": "Output Word",
+                "ex": "",
+                "exdoc": "",
+                "link_int": f'<a href="{base_url}Bibliotheken/StandardLibraries/io/QW.html" target="_blank">QW</a>',
+                "vid": "",
+                "ext_de": "",
+                "ext_en": "",
+                "title": "Output Word Interface",
+                "type": "io"
+            }
+            cat_hw['data'].append(new_qw)
+
     return data
 
 def make_exercises_clickable(data):

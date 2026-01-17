@@ -1,17 +1,28 @@
 # Datentyp-Detail: WSTRING
 
 ## Beschreibung
-Doppelbyte-Zeichenfolge
+Der Datentyp **WSTRING** (Wide String) repräsentiert eine Zeichenfolge aus "weiten" Zeichen (16-Bit), üblicherweise im Unicode-Format (UTF-16).
 
 ## Normative Definition
-Gemäß **DIN EN 61131-3** wird dieser Datentyp wie folgt spezifiziert:
+Gemäß **DIN EN 61131-3** (Tabelle 10, Nr. 16b):
 
 | Eigenschaft | Wert |
 | :--- | :--- |
-| **Bits** | 16 pro Zeichen |
-| **Wertebereich** | Zeichenfolge |
-| **Referenz** | Tabelle 10, Nr. 16b |
+| **Bits** | 16 Bit pro Zeichen |
+| **Voreingestellter Wert** | "" (leere Zeichenfolge) |
 
-## Verwendung in der Programmierung
-In der IEC 61131-3 und IEC 61499 wird dieser Typ zur Deklaration von Variablen und in Funktionsbausteinen verwendet. 
-Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `WSTRING#...`.
+## Literaldarstellung
+WSTRING-Literale werden in **doppelte Anführungszeichen** (`"`) eingeschlossen.
+
+### Sonderzeichen (Escape-Sequenzen)
+Ähnlich wie bei STRING, jedoch mit Unterstützung für 16-Bit-Hex-Codes:
+
+| Sequenz | Bedeutung |
+| :--- | :--- |
+| `$" ` | Doppeltes Anführungszeichen |
+| `$hhhh` | Zeichen mit 16-Bit Hex-Code (z.B. `$00C4` für 'Ä') |
+
+### Beispiele
+- `"Dies ist ein WSTRING"`
+- `"Sonderzeichen: $00D6"` (für 'Ö')
+- `"WSTRING#"Unicode-Text""` (Mit explizitem Typ-Präfix)

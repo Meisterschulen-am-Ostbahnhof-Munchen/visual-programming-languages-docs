@@ -1,53 +1,53 @@
 # Allgemeines
 
-## Namen
+In diesem Abschnitt werden grundlegende Konzepte erläutert, die für die Programmierung nach IEC 61131-3 und IEC 61499 sowie für die allgemeine Informatik wichtig sind.
 
-Bitte Vermeiden: ä ü ö $ % & / 
+## Identifikatoren (Namenskonventionen)
 
+Namen von Variablen, Funktionsbausteinen, Programmen und anderen Elementen werden als **Identifikatoren** bezeichnet. Um einen sauberen und portablen Code zu gewährleisten, legt die Norm IEC 61131-3 strikte Regeln fest.
 
-1. Namen dürfen maximal 31 Stellen lang sein. 
-2. Sie können aus den Buchstaben A-Z und a-z, den Ziffern 0-9 und dem Unterstrich bestehen.
-3. Die einzige Einschränkung besteht darin, dass am Anfang von Variablennamen keine Ziffern stehen dürfen; 
-4. Unterstriche am Anfang von Variablennamen sind zwar erlaubt, sollten aber vermieden werden, da diese üblicherweise für Bibliotheksfunktionen reserviert sind.
+### Grundregeln der Norm
+1.  **Zeichensatz:** Identifikatoren dürfen nur aus Buchstaben (A-Z, a-z), Ziffern (0-9) und dem Unterstrich (_) bestehen.
+2.  **Anfang:** Ein Name darf **nicht mit einer Ziffer** beginnen. Er muss mit einem Buchstaben oder einem Unterstrich starten.
+3.  **Leerzeichen:** Leerzeichen sind innerhalb eines Namens nicht erlaubt.
+4.  **Sonderzeichen:** Umlaute (ä, ö, ü) und Sonderzeichen ($, %, &, /) sind strikt verboten.
+5.  **Groß-/Kleinschreibung:** In der Standard-IEC 61131-3 wird meist nicht zwischen Groß- und Kleinschreibung unterschieden (`Motor_An` ist gleich `motor_an`). Es ist jedoch gute Praxis, eine konsistente Schreibweise beizubehalten.
+6.  **Reservierte Wörter:** Schlüsselwörter der Sprache (z. B. `IF`, `THEN`, `VAR`, `END_VAR`) dürfen nicht als Identifikatoren verwendet werden.
 
+### Best Practices (Empfehlungen)
+*   **Unterstriche:** Vermeiden Sie einfache Unterstriche am Anfang von Namen, da diese häufig für systeminterne Bibliotheksfunktionen reserviert sind.
+*   **Doppelte Unterstriche:** Diese sind in vielen Systemen reserviert oder verboten.
+*   **Klarheit:** Namen sollten selbsterklärend sein. Verwenden Sie lieber `Temperatur_Sensor_1` statt `T_S1`.
+*   **Schreibweisen:** 
+    *   **CamelCase:** `MaxTemperatur`
+    *   **Snake_Case:** `Max_Temperatur` (in der SPS-Welt sehr verbreitet)
 
-### Beispiele: 
+| Erlaubt | Verboten | Grund |
+| :--- | :--- | :--- |
+| `Maehwerk_An` | `Mähwerk_An` | Sonderzeichen (ä) |
+| `Start_Taster_1` | `1_Start_Taster` | Beginnt mit Ziffer |
+| `Sollwert_Vorgabe` | `Sollwert Vorgabe` | Leerzeichen |
+| `__Internal` | `Internal!` | Sonderzeichen (!) |
 
-#### Erlaubt: 
+---
 
-`Maehwerk_links_15`
+## Zahlen und Literale
 
-#### Verboten: 
+Die Darstellung von Zahlen (Binär, Hexadezimal, Dezimal) und die Verwendung von Literalen im Code sind für die Steuerungsprogrammierung essenziell.
 
-`14_Klappung_Mähwerk`
+*   Detaillierte Informationen finden Sie hier: **[Zahlen und Zahlensysteme](Allgemeines/Zahlen.md)**
 
-`Klappung Maehwerk`
-
-
-Quelle <https://www.grund-wissen.de/informatik/c/variablen-und-datentypen.html>
-
-## Zahlen
-
-&#8469; [Natürliche Zahl – Wikipedia](https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl)
-
-&#8469;₀ Natürliche Zahlen inkl. Null
-
-&#8484; [Ganze Zahl – Wikipedia](https://de.wikipedia.org/wiki/Ganze_Zahl)
-
-&#8474; [Rationale Zahl – Wikipedia](https://de.wikipedia.org/wiki/Rationale_Zahl)
-
-&#8477; [Reelle Zahl – Wikipedia](https://de.wikipedia.org/wiki/Reelle_Zahl)
-
-gibt viele weitere, siehe: [Zahlenmengen ](https://www.matheretter.de/wiki/mathe-zeichen#zahlenmengen)
+---
 
 ## Datentypen
 
-Die Datentypen in der IEC 61131-3 und IEC 61499 sind nach Bit-Länge und Verwendungszweck kategorisiert. Eine detaillierte Beschreibung jedes einzelnen Datentyps finden Sie im folgenden Abschnitt:
+Datentypen legen fest, welche Art von Information eine Variable speichern kann (z. B. eine ganze Zahl, eine Fließkommazahl oder ein Wahrheitswert).
+
+*   Eine Übersicht finden Sie hier: **[Datentypen](Allgemeines/Datentypen/Datentypen.md)**
 
 ```{toctree}
+:maxdepth: 2
+:hidden:
+Allgemeines/Zahlen
 Allgemeines/Datentypen/Datentypen
 ```
-
-
-
-

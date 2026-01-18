@@ -1,35 +1,36 @@
 # Sonstiges Englisch
 
-[https://publik.tuwien.ac.at/files/PubDat_251131.pptx](https://web.archive.org/web/20230129204830/https://publik.tuwien.ac.at/files/PubDat_251131.pptx)
+## Communities und Portale
 
-[IEC 61499 Applications on LinkedIn](https://www.linkedin.com/groups/4431365/)
+* [LinkedIn Group: IEC 61499 Applications](https://www.linkedin.com/groups/4431365/)
+* [LinkedIn Group: IEC 61499 FAQ](https://www.linkedin.com/groups/4335830/)
+* [Vyatkin.org - Official Site](https://www.vyatkin.org/)
+* [IEC61499.com Portal](https://iec61499.com/)
 
-[IEC 61499 FAQ on LinkedIn](https://www.linkedin.com/groups/4335830/)
+---
 
-[https://acris.aalto.fi/ws/portalfiles/portal/87471087/Jhunjhunwala_Monitoring_design_pattern_for_distributed_automation_systems.pdf](https://acris.aalto.fi/ws/portalfiles/portal/87471087/Jhunjhunwala_Monitoring_design_pattern_for_distributed_automation_systems.pdf)
+## Wissenschaftliche Artikel und Präsentationen
 
-[https://www.vyatkin.org/](https://www.vyatkin.org/)
+* [Monitoring Design Pattern for Distributed Automation (Aalto University)](https://acris.aalto.fi/ws/portalfiles/portal/87471087/Jhunjhunwala_Monitoring_design_pattern_for_distributed_automation_systems.pdf)
+* [Distributed Control Presentation (TU Wien)](https://web.archive.org/web/20230129204830/https://publik.tuwien.ac.at/files/PubDat_251131.pptx)
+* [Self-Configurable Automation Systems (Eclipse Insight PDF)](https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf)
+* [User Workshop Presentation (Melik PDF)](https://www.eclipse.org/4diac/events/docs/2016/UW_10_Melik.pdf)
 
-[https://iec61499.com/](https://iec61499.com/)
+---
 
-[https://www.eclipse.org/4diac/en_help.php?helppage=html/before4DIAC/iec61499.html](https://www.eclipse.org/4diac/en_help.php?helppage=html/before4DIAC/iec61499.html)
+## Wikipedia und Dokumentationen
 
-[https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf](https://www.eclipse.org/4diac/events/docs/2019/EclipseInsight_SelfConfigurableAutomationSystems.pdf)
+* [Wikipedia Article on IEC 61499](https://en.wikipedia.org/wiki/IEC_61499)
+* [Eclipse 4diac: Introduction to IEC 61499](https://www.eclipse.org/4diac/en_help.php?helppage=html/before4DIAC/iec61499.html)
+* [Eclipse 4diac Home](https://www.eclipse.org/4diac/index.php)
+* [Eclipse 4diac Documentation Overview](https://www.eclipse.org/4diac/en_help.php)
+* [4diac IDE Overview](https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/overview.html)
+* [Using 4diac Locally](https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/use4diacLocally.html)
 
-[https://www.eclipse.org/4diac/events/docs/2016/UW_10_Melik.pdf](https://www.eclipse.org/4diac/events/docs/2016/UW_10_Melik.pdf)
+---
 
-[https://en.wikipedia.org/wiki/IEC_61499](https://en.wikipedia.org/wiki/IEC_61499)
+## Buchempfehlungen (Referenzen)
 
-*   [Wikipedia article on IEC 61499](https://en.wikipedia.org/wiki/IEC_61499)
-*   [Introduction to IEC 61499 in the Eclipse 4diac documentation](https://www.eclipse.org/4diac/en_help.php?helppage=html/before4DIAC/iec61499.html)
-*   [Modelling Control Systems Using IEC 61499 by Robert W. Lewis and Alois Zoitl](http://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601/ref=sr_1_1?ie=UTF8&qid=1438845779&sr=8-1&keywords=zoitl)
-*   [Real-Time Execution for IEC 61499 by Alois Zoitl](http://www.amazon.de/Real-Time-Execution-61499-Alois-Zoitl/dp/1934394270/ref=sr_1_3?ie=UTF8&qid=1438845779&sr=8-3&keywords=zoitl)
-*   [Distributed Control Applications by Alois Zoitl and Thomas Strasser](https://www.crcpress.com/Distributed-Control-Applications-Guidelines-Design-Patterns-and-Application/Zoitl-Strasser/9781482259056)
-
-[https://www.eclipse.org/4diac/index.php](https://www.eclipse.org/4diac/index.php)
-
-[https://www.eclipse.org/4diac/en_help.php](https://www.eclipse.org/4diac/en_help.php)
-
-[https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/overview.html](https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/overview.html)
-
-[https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/use4diacLocally.html](https://www.eclipse.org/4diac/en_help.php?helppage=html/4diacIDE/use4diacLocally.html)
+*   [Modelling Control Systems Using IEC 61499 (Robert W. Lewis and Alois Zoitl)](http://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601/)
+*   [Real-Time Execution for IEC 61499 (Alois Zoitl)](http://www.amazon.de/Real-Time-Execution-61499-Alois-Zoitl/dp/1934394270/)
+*   [Distributed Control Applications (Alois Zoitl and Thomas Strasser)](https://www.crcpress.com/Distributed-Control-Applications-Guidelines-Design-Patterns-and-Application/Zoitl-Strasser/9781482259056)

@@ -12,8 +12,4 @@
 
 ## 📺 Video
 
-* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
-* ["Store Version" – Dein Schlüssel zur Verwaltung von Objektdatenpools im nichtflüchtigen VT-Speich...](https://www.youtube.com/watch?v=eVseHOOO9qM)
-* [2025-01-28 17-51-25  logiBUS® Projektupdate und EInit (leider ohne Ton)](https://www.youtube.com/watch?v=OBNqWd_gZVU)
-* [2025-01-28 20-01-36 logiBUS® Projektupdate und EInit (jetzt mit Ton)](https://www.youtube.com/watch?v=h-tzDyRtiHo)
-* [IEC 61499: Revolution der Automatisierung – Ereignisgesteuerte Systeme und intelligente Datenflüs...](https://www.youtube.com/watch?v=EUIy2hsu6Mw)
+* [LogiBUS  Projekt Update](https://www.youtube.com/watch?v=kVNTJ9ZejFM)

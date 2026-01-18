@@ -12,11 +12,11 @@
 
 ## 📺 Video
 
-* ["Store Version" – Dein Schlüssel zur Verwaltung von Objektdatenpools im nichtflüchtigen VT-Speich...](https://www.youtube.com/watch?v=eVseHOOO9qM)
-* [2025-02-21 15-23-28 logiBUS® mit Eclipse 4diac™ neues IO Konzept für alle Controller](https://www.youtube.com/watch?v=YUCodIng1UA)
-* [2025-02-23 11-43-44 Fusion 360 Übersicht Tutorials](https://www.youtube.com/watch?v=djM9ndIfp-0)
-* [2025-03-30 19-41-34 Python Installation prüfen](https://www.youtube.com/watch?v=pBo6QPdWtgA)
-* [2025-12-14 19-53-53 Installation Eclipse 4diac™ IDE 3.0.0 und Import des Training1 Projektes](https://www.youtube.com/watch?v=O3S1o_NUyvc)
+* [Der Katalog von 1863](https://www.youtube.com/watch?v=fk7tIjl2pTk)
+* [Der smarte Schalter](https://www.youtube.com/watch?v=7Q1_v_LenFs)
+* [Der unaufhaltsame Chip](https://www.youtube.com/watch?v=ajRNO-jSVSo)
+* [Digital decisions](https://www.youtube.com/watch?v=CivXY9CoJoM)
+* [Ideale Dioden](https://www.youtube.com/watch?v=cPYHaOczu6s)
 
 ## Interface
 

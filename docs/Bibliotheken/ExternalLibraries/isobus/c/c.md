@@ -12,8 +12,8 @@
 
 ## 📺 Video
 
-* ["Store Version" – Dein Schlüssel zur Verwaltung von Objektdatenpools im nichtflüchtigen VT-Speich...](https://www.youtube.com/watch?v=eVseHOOO9qM)
-* [06. Mai 2025 Tag 6 von logiBUS® Schulungsreihe (D)](https://www.youtube.com/watch?v=g-LuUu-QFcI)
-* [15. Apr. 2025  Tag 1 von logiBUS® Schulungsreihe (D)](https://www.youtube.com/watch?v=tlZC5rN_CUI)
-* [17. Apr. 2025 Tag 2 von logiBUS® Schulungsreihe (D)](https://www.youtube.com/watch?v=hy2S94jOVi0)
-* [2024 09 05 17 59 50 Bayerische Staatsbibliothek Buch Zugriff](https://www.youtube.com/watch?v=0qTGNMfAspU)
+* [CAN Bus Folge#1](https://www.youtube.com/watch?v=53EufV35raw)
+* [Charles Babbage](https://www.youtube.com/watch?v=sD7-TkvFNM4)
+* [Chip wird Kraftpaket](https://www.youtube.com/watch?v=IudBn-pRUkU)
+* [Das ESP32-S3-DevKitC-1](https://www.youtube.com/watch?v=fyQt3THIQEQ)
+* [Das Ohmsche Gesetz](https://www.youtube.com/watch?v=QtC1bT_24PQ)

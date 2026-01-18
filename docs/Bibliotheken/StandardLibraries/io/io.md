@@ -2,11 +2,11 @@
 
 ## 📺 Video
 
-* ["Store Version" – Dein Schlüssel zur Verwaltung von Objektdatenpools im nichtflüchtigen VT-Speich...](https://www.youtube.com/watch?v=eVseHOOO9qM)
-* [2024 09 05 17 59 50 Bayerische Staatsbibliothek Buch Zugriff](https://www.youtube.com/watch?v=0qTGNMfAspU)
-* [2025-01-29 09-27-56 Windows Defender exclusion check in der Eclipse 4diac™ IDE](https://www.youtube.com/watch?v=8k8-QnbTPxk)
-* [2025-02-02 18-21-50 Uebung_006c Funktion E_DEMUX8 und ..._DI_REPEAT](https://www.youtube.com/watch?v=fOSa4_A7-dE)
-* [2025-02-21 15-23-28 logiBUS® mit Eclipse 4diac™ neues IO Konzept für alle Controller](https://www.youtube.com/watch?v=YUCodIng1UA)
+* [Automation der Zukunft](https://www.youtube.com/watch?v=gqdgimyAk60)
+* [Die große Migration](https://www.youtube.com/watch?v=XcBu7y6ch4E)
+* [Digital decisions](https://www.youtube.com/watch?v=CivXY9CoJoM)
+* [Ideale Dioden](https://www.youtube.com/watch?v=cPYHaOczu6s)
+* [The Dual Wi Fi Solution](https://www.youtube.com/watch?v=FLimeAu_dV4)
 
 ## 🎧 Podcast
 

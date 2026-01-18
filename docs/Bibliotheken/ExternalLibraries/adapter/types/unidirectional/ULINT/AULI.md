@@ -10,13 +10,6 @@
 * [Druckbegrenzungsventile: Lebensversicherung der Hydraulik – Arten, Funktion und Systemintegration](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Druckbegrenzungsventile-Lebensversicherung-der-Hydraulik--Arten--Funktion-und-Systemintegration-e373nal)
 * [Kraftpakete im Einsatz: Das Geheimnis der Hydraulikzylinder – Von Baggern bis Hightech-Maschinen](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Kraftpakete-im-Einsatz-Das-Geheimnis-der-Hydraulikzylinder--Von-Baggern-bis-Hightech-Maschinen-e373ne8)
 
-## 📺 Video
-
-* [Außenzahnradmaschinen: Vom Arbeitstier zur Intelligenz der Hydraulik – Herausforderungen, Innovat...](https://www.youtube.com/watch?v=xKZjBzLeilM)
-* [The Explainer  The Hidden Force of Hydraulics](https://www.youtube.com/watch?v=AzsxpClD_UU)
-* [The Unsung Hero of Hydraulic Safety](https://www.youtube.com/watch?v=N1sz-7XJ_58)
-* [Ölhydraulik: Die unsichtbaren Helden der Sauberkeit – Warum Filter Lebensretter für Ihre Systeme ...](https://www.youtube.com/watch?v=Ds-JswnoF08)
-
 ## Interface
 
 ### Events

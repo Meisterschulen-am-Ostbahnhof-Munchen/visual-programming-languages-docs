@@ -12,11 +12,8 @@
 
 ## 📺 Video
 
-* [2025-02-23 11-18-57 Einstieg in Autodesk Fusion 360 - Mechanisches Design MCAD](https://www.youtube.com/watch?v=3bmFKBpIpZY)
-* [2025-11-04 20-15-06 LogiBUS® auf dem Weg zu Eclipse 4diac™ 3.0 - noch mehr Adapter (AX)](https://www.youtube.com/watch?v=RsY65VqTAMc)
-* [Ada Lovelace: Die erste Programmiererin der Welt?](https://www.youtube.com/watch?v=32-qMEKcL3o)
-* [Ada Lovelace: Die Pionierin](https://www.youtube.com/watch?v=Jc5ZDYb-9DI)
-* [Ada Lovelace: Die Poetin der Wissenschaft – Visionärin, Programmiererin und der Kampf um das digi...](https://www.youtube.com/watch?v=RZDG1iyOF6k)
+* [EAGLE CAD: A Legend](https://www.youtube.com/watch?v=ly1zAMmhnJ4)
+* [Via in Pad Plated Over](https://www.youtube.com/watch?v=E0vbluaWA8Y)
 
 ## Interface
 

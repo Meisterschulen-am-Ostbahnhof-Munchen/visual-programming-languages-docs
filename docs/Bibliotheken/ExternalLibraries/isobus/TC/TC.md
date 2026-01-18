@@ -12,8 +12,4 @@
 
 ## 📺 Video
 
-* [2025-03-11 16-53-43 Watch über App, nicht über Ressource](https://www.youtube.com/watch?v=bGwFMVQBj3k)
 * [Das ESP32-S3-DevKitC-1](https://www.youtube.com/watch?v=fyQt3THIQEQ)
-* [Eclipse & LogiBUS® Shortcut](https://www.youtube.com/watch?v=rDZu3G3lBQE)
-* [Ereignisschalter E_SWITCH aus der IEC 61499 (Übung 86)](https://www.youtube.com/watch?v=Gev-kGR4-Tc)
-* [ESP32-S3-DevKitC-1 Doku-Analyse: Das Speicher-Monster (32MB Flash/16MB PSRAM) und die Macht der D...](https://www.youtube.com/watch?v=oQPI4NFTt-k)

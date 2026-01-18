@@ -10,14 +10,6 @@
 * [DIN EN 61499-1 Entmystifiziert: Funktionsbausteine, Objektorientierung und verteilte Systeme](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Entmystifiziert-Funktionsbausteine--Objektorientierung-und-verteilte-Systeme-e37229b)
 * [DIN EN 61499-1: Bauklötze für die Industrie 4.0 – So revolutionieren Funktionsbausteine die Automatisierung](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Baukltze-fr-die-Industrie-4-0--So-revolutionieren-Funktionsbausteine-die-Automatisierung-e3681j7)
 
-## 📺 Video
-
-* [Adolf Webers Scharfe Analyse: Warum Technik allein nicht reicht – Lehren aus drei Industriellen P...](https://www.youtube.com/watch?v=Jb1kJ-azuzI)
-* [Aufwärts zählen Baustein E_CTU aus der IEC 61499 (Übung 80)](https://www.youtube.com/watch?v=oZOWd_zKFcc)
-* [Aufwärts/Abwärts zählen Baustein E_CTUD aus der IEC 61499 (Übung 82)](https://www.youtube.com/watch?v=H_MRtaMiaU8)
-* [Außenzahnradmaschinen: Vom Arbeitstier zur Intelligenz der Hydraulik – Herausforderungen, Innovat...](https://www.youtube.com/watch?v=xKZjBzLeilM)
-* [Betonmischen auf der Baustelle: Sicher und Effizient mit der HÄNER Betonmischschaufel – Ihr Leitf...](https://www.youtube.com/watch?v=gLkSu0fsioc)
-
 ## Interface
 
 ### Events

@@ -2,11 +2,8 @@
 
 ## 📺 Video
 
-* [06. Mai 2025 Tag 6 von logiBUS® Schulungsreihe (D)](https://www.youtube.com/watch?v=g-LuUu-QFcI)
-* [2025-12-14 19-53-53 Installation Eclipse 4diac™ IDE 3.0.0 und Import des Training1 Projektes](https://www.youtube.com/watch?v=O3S1o_NUyvc)
-* [2025-12-14 20-03-27 Aufspielen Training 1 Übung 1 auf das Hutschienenmoped.](https://www.youtube.com/watch?v=6iog7-DZvW0)
 * [AI: The Unknown Story](https://www.youtube.com/watch?v=9hD5RETI72w)
-* [Circuit board repair hacks](https://www.youtube.com/watch?v=dOXugrpcKE4)
+* [The silent failure](https://www.youtube.com/watch?v=KBMog5sdWtA)
 
 ## 🎧 Podcast
 

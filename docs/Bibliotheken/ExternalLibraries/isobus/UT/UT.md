@@ -12,8 +12,5 @@
 
 ## 📺 Video
 
-* [2025 11 15 12 35 11 Montage Hutschienenmoped logiBUS® -- Teil 3 -- Gehäuse](https://www.youtube.com/watch?v=MPm4vLmD5RE)
-* [2025 11 15 12 52 26 Montage Hutschienenmoped logiBUS® -- Teil 4 -- Aufbauten](https://www.youtube.com/watch?v=WeowCxZW70Y)
-* [2025-02-23 11-18-57 Einstieg in Autodesk Fusion 360 - Mechanisches Design MCAD](https://www.youtube.com/watch?v=3bmFKBpIpZY)
-* [2025-02-23 11-43-44 Fusion 360 Übersicht Tutorials](https://www.youtube.com/watch?v=djM9ndIfp-0)
-* [2025-07-20 21-12-23  Fusion 360 Schematic SPICE Simulation deutsch](https://www.youtube.com/watch?v=jHT9nZIXxGU)
+* [Automation der Zukunft](https://www.youtube.com/watch?v=gqdgimyAk60)
+* [The Dual Wi Fi Solution](https://www.youtube.com/watch?v=FLimeAu_dV4)

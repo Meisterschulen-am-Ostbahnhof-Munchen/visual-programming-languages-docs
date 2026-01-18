@@ -1,12 +1,5 @@
 # isobus
 
-## 📺 Video
-
-* [Das Working Set Objekt: Das Gehirn der ISOBUS-Bedienoberfläche verstehen – Von der Norm zur Praxi...](https://www.youtube.com/watch?v=SiRvrecE_7I)
-* [From Control Box to Custom ISOBUS  A DIY Guide](https://www.youtube.com/watch?v=tlsRGZIfh9I)
-* [ISOBUS-Bedienoberflächen: Wenn Tasten und Hauptanzeige unterschiedlich skalieren – ISO 11783-6 en...](https://www.youtube.com/watch?v=kQM4MLsyj5U)
-* [ISOBUS: The Secret Language](https://www.youtube.com/watch?v=Fezbc5Acd24)
-
 ## 🎧 Podcast
 
 * [Das Working Set Objekt: Das Gehirn der ISOBUS-Bedienoberfläche verstehen – Von der Norm zur Praxis im ISO-Designer](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/Das-Working-Set-Objekt-Das-Gehirn-der-ISOBUS-Bedienoberflche-verstehen--Von-der-Norm-zur-Praxis-im-ISO-Designer-e36cl5v)

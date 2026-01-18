@@ -12,8 +12,4 @@
 
 ## 📺 Video
 
-* [2025-01-29 09-27-56 Windows Defender exclusion check in der Eclipse 4diac™ IDE](https://www.youtube.com/watch?v=8k8-QnbTPxk)
-* [2025-03-11 16-08-47 Erzeugen von Dokumentation zur IEC 61499 mittels deepseek](https://www.youtube.com/watch?v=Ce__kP5iFc0)
-* [Adolf Webers Scharfe Analyse: Warum Technik allein nicht reicht – Lehren aus drei Industriellen P...](https://www.youtube.com/watch?v=Jb1kJ-azuzI)
-* [Bulldog, Boom und Business: Heinrich Lanz – Aufstieg aus dem Handelshaus zum Landmaschinenimperiu...](https://www.youtube.com/watch?v=yPSa8JeQ1J0)
-* [Das Kettenmonster erwacht: Lanz Bulldog Raupe – Die faszinierende Wiederbelebung des 10-Liter-Glü...](https://www.youtube.com/watch?v=OLSw_A64qOI)
+* [The downfall of Lanz](https://www.youtube.com/watch?v=wL8zIUJQ9-E)

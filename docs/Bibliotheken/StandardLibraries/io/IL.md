@@ -2,11 +2,7 @@
 
 ## 📺 Video
 
-* [2025 11 15 12 35 11 Montage Hutschienenmoped logiBUS® -- Teil 3 -- Gehäuse](https://www.youtube.com/watch?v=MPm4vLmD5RE)
-* [2025 11 15 12 52 26 Montage Hutschienenmoped logiBUS® -- Teil 4 -- Aufbauten](https://www.youtube.com/watch?v=WeowCxZW70Y)
-* [2025-02-02 18-56-54 DI_LONG_PRESS_HOLD (Teil 1)](https://www.youtube.com/watch?v=8pkKq_8HAIQ)
-* [2025-02-02 19-11-57 DI_LONG_PRESS_HOLD (Teil 2)](https://www.youtube.com/watch?v=vpA6dfZDwh0)
-* [2025-03-30 16-22-28 Boot-File in 4diac und logiBUS®](https://www.youtube.com/watch?v=26EKn0-xwkI)
+* [The silent failure](https://www.youtube.com/watch?v=KBMog5sdWtA)
 
 ## 🎧 Podcast
 

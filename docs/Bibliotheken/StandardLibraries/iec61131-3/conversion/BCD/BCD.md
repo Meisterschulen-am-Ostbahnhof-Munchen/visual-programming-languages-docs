@@ -9,7 +9,3 @@
 * [The VBCD DE-A Valve: Unpacking the Silent Guardian of Hydraulic Safety and Precision](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/The-VBCD-DE-A-Valve-Unpacking-the-Silent-Guardian-of-Hydraulic-Safety-and-Precision-e375b61)
 * [VBCD DE A: Il Cuore Idraulico per Sicurezza e Controllo di Carichi Estremi](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/VBCD-DE-A-Il-Cuore-Idraulico-per-Sicurezza-e-Controllo-di-Carichi-Estremi-e375bh8)
 * [VBCD DE A双向平衡阀：液压系统中的“精密刹车”与“安全锁”](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/VBCD-DE-A-e373ms3)
-
-## 📺 Video
-
-* [The VBCD DE A Valve  Mastering Heavy Loads](https://www.youtube.com/watch?v=txXaPjCIvsg)

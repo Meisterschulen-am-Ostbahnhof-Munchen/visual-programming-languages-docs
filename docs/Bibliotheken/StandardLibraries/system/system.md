@@ -1,13 +1,5 @@
 # system
 
-## 📺 Video
-
-* [2025-08-17 14-05-25 Vorstellung logiBUS® neues IO System ohne Mapping](https://www.youtube.com/watch?v=5YnRsE5zVBk)
-* [Eclipse 4diac: Ihr Fahrrad für die Industrie 4.0 – Software-Aufwand meistern und verteilte System...](https://www.youtube.com/watch?v=RcHBx6QrhfM)
-* [Hero of the Auto Nervous System TLE9351VSJ](https://www.youtube.com/watch?v=mB7WrGxPMIY)
-* [IEC 61499-1: Der Funktionsbaustein – Lego-Prinzip für moderne Steuerungssysteme in Land- und Baum...](https://www.youtube.com/watch?v=GyOoLXcGY2w)
-* [IEC 61499: Revolution der Automatisierung – Ereignisgesteuerte Systeme und intelligente Datenflüs...](https://www.youtube.com/watch?v=EUIy2hsu6Mw)
-
 ## 🎧 Podcast
 
 * [Eclipse 4diac: Ihr Fahrrad für die Industrie 4.0 – Software-Aufwand meistern und verteilte Systeme steuern](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Ihr-Fahrrad-fr-die-Industrie-4-0--Software-Aufwand-meistern-und-verteilte-Systeme-steuern-e368lq9)

@@ -1,10 +1,5 @@
 # E_D_FF
 
-## 📺 Video
-
-* [D-Flip-Flop: E_D_FF aus der IEC 61499 (Übung 002c) als "Eventbremse"](https://www.youtube.com/watch?v=yGSx_0ggveE)
-* [D-Flip-Flop: E_D_FF aus der IEC 61499 (Übung 85)](https://www.youtube.com/watch?v=VNaTUOE5izc)
-
 ---- 
 ```{index} single: E_D_FF
 ```

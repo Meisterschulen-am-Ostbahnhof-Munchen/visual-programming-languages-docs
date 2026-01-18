@@ -1,13 +1,5 @@
 # event
 
-## 📺 Video
-
-* [D-Flip-Flop: E_D_FF aus der IEC 61499 (Übung 002c) als "Eventbremse"](https://www.youtube.com/watch?v=yGSx_0ggveE)
-* [Doppeltes Lasthalteventil](https://www.youtube.com/watch?v=ZZ98nYTeWIc)
-* [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssyst...](https://www.youtube.com/watch?v=ZT3DCrHU-pA)
-* [EventFBs nach IEC 61499: Legosteine der Automatisierung – So funktionieren Ereignis-Funktionsbaus...](https://www.youtube.com/watch?v=4Z9TjTT78rg)
-* [The One Shot Signal  How PLCs Prevent Double Takes](https://www.youtube.com/watch?v=vu_iAothAu4)
-
 ## 🎧 Podcast
 
 * [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssysteme?](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)

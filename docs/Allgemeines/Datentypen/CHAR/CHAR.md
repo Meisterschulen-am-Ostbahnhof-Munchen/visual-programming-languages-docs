@@ -9,5 +9,4 @@
 
 ## 📺 Video
 
-* [Adolf Webers Scharfe Analyse: Warum Technik allein nicht reicht – Lehren aus drei Industriellen P...](https://www.youtube.com/watch?v=Jb1kJ-azuzI)
 * [Charles Babbage](https://www.youtube.com/watch?v=sD7-TkvFNM4)

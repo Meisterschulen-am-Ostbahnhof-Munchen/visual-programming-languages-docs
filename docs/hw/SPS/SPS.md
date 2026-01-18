@@ -1,9 +1,5 @@
 # SPS
 
-## 📺 Video
-
-* [Industrielle Automation verstehen: SPS, PLS, SCADA, MES und ERP entschlüsselt – Eine Reise durch ...](https://www.youtube.com/watch?v=25gerXrZQAY)
-
 ## 🎧 Podcast
 
 * [Von der SPS zur verteilten Intelligenz: IEC 61499 für Industrie 4.0 verstehen](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Von-der-SPS-zur-verteilten-Intelligenz-IEC-61499-fr-Industrie-4-0-verstehen-e36a78o)

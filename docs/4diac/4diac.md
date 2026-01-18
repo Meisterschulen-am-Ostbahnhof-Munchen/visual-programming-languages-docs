@@ -2,11 +2,7 @@
 
 ## 📺 Video
 
-* [2025-01-29 09-27-56 Windows Defender exclusion check in der Eclipse 4diac™ IDE](https://www.youtube.com/watch?v=8k8-QnbTPxk)
-* [2025-02-21 13-04-43 aktueller Stand logiBUS® Eclipse 4diac™ IDE](https://www.youtube.com/watch?v=OMNP9p12mAw)
-* [2025-02-21 15-23-28 logiBUS® mit Eclipse 4diac™ neues IO Konzept für alle Controller](https://www.youtube.com/watch?v=YUCodIng1UA)
-* [2025-11-02 13-19-52 LogiBUS® auf dem Weg zu Eclipse 4diac™ 3.0 - Umstellung eines Projektes](https://www.youtube.com/watch?v=5J_PuNkwxNo)
-* [2025-11-04 16-12-16 LogiBUS® on the way to Eclipse 4diac™ 3.0 - Content Assist](https://www.youtube.com/watch?v=HXOzyEPKhrU)
+* [Eclipse 4diac 3.0 (German)](https://www.youtube.com/watch?v=jWlzU_VB3UU)
 
 ## 🎧 Podcast
 

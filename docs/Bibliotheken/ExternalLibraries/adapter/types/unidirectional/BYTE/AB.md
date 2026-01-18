@@ -12,11 +12,7 @@
 
 ## 📺 Video
 
-* [Aufwärts/Abwärts zählen Baustein E_CTUD aus der IEC 61499 (Übung 82)](https://www.youtube.com/watch?v=H_MRtaMiaU8)
 * [Charles Babbage](https://www.youtube.com/watch?v=sD7-TkvFNM4)
-* [Die Maschenregel: So verstehen Gabelstapler & Elektronik die Spannung / Zweite Kirchhoffsche Rege...](https://www.youtube.com/watch?v=GSWaRR8C_Mc)
-* [Everything about timers in IEC 61131-3 | TON, TOF & TP explained in an easy-to-understand way! ⏱️](https://www.youtube.com/watch?v=Zlm488qBtZY)
-* [From Cable Chaos to Custom Control: How Logibus is Revolutionizing Agricultural Tech with Accessi...](https://www.youtube.com/watch?v=rAscABCk5ik)
 
 ## Interface
 

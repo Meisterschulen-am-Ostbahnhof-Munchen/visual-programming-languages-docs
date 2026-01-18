@@ -2,11 +2,11 @@
 
 ## 📺 Video
 
-* [2025-01-29 09-27-56 Windows Defender exclusion check in der Eclipse 4diac™ IDE](https://www.youtube.com/watch?v=8k8-QnbTPxk)
-* [2025-02-02 18-21-50 Uebung_006c Funktion E_DEMUX8 und ..._DI_REPEAT](https://www.youtube.com/watch?v=fOSa4_A7-dE)
-* [2025-02-02 18-56-54 DI_LONG_PRESS_HOLD (Teil 1)](https://www.youtube.com/watch?v=8pkKq_8HAIQ)
-* [2025-02-02 19-11-57 DI_LONG_PRESS_HOLD (Teil 2)](https://www.youtube.com/watch?v=vpA6dfZDwh0)
-* [2025-02-21 13-04-43 aktueller Stand logiBUS® Eclipse 4diac™ IDE](https://www.youtube.com/watch?v=OMNP9p12mAw)
+* [Decoding the datasheet](https://www.youtube.com/watch?v=0Ed9I68F2tM)
+* [Die große Migration](https://www.youtube.com/watch?v=XcBu7y6ch4E)
+* [Die Kunst des Lötens](https://www.youtube.com/watch?v=I6Srdxx6fzU)
+* [Die Welt der Normung](https://www.youtube.com/watch?v=9phDmkJVaGM)
+* [Digital decisions](https://www.youtube.com/watch?v=CivXY9CoJoM)
 
 ## 🎧 Podcast
 

@@ -12,11 +12,11 @@
 
 ## 📺 Video
 
-* [2025 11 15 12 35 11 Montage Hutschienenmoped logiBUS® -- Teil 3 -- Gehäuse](https://www.youtube.com/watch?v=MPm4vLmD5RE)
-* [2025 11 15 12 52 26 Montage Hutschienenmoped logiBUS® -- Teil 4 -- Aufbauten](https://www.youtube.com/watch?v=WeowCxZW70Y)
-* [2025-02-23 11-18-57 Einstieg in Autodesk Fusion 360 - Mechanisches Design MCAD](https://www.youtube.com/watch?v=3bmFKBpIpZY)
-* [2025-02-23 13-20-15 Fusion 360 Elektronik Stückliste Exportieren](https://www.youtube.com/watch?v=Z5RllKgpOfc)
-* [2025-03-11 16-08-47 Erzeugen von Dokumentation zur IEC 61499 mittels deepseek](https://www.youtube.com/watch?v=Ce__kP5iFc0)
+* [Die große Migration](https://www.youtube.com/watch?v=XcBu7y6ch4E)
+* [Die Kunst des Lötens](https://www.youtube.com/watch?v=I6Srdxx6fzU)
+* [Die Welt der Normung](https://www.youtube.com/watch?v=9phDmkJVaGM)
+* [Löten wie ein Profi](https://www.youtube.com/watch?v=8ulMWcxaB-c)
+* [The secret of the field](https://www.youtube.com/watch?v=MmMrEXum4w4)
 
 ## Einleitung
 Der IE-Funktionsblock (Input Event) ist ein Service-Interface-Funktionsblock für die Verarbeitung von Ereigniseingangsdaten. Er dient als Schnittstelle zwischen der Steuerungslogik und externen Eingabegeräten oder -signalen und ermöglicht die Initialisierung, Abfrage und Indikation von Eingabeereignissen.

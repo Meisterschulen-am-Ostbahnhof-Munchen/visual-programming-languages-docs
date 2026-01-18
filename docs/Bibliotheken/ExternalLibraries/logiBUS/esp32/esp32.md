@@ -3,10 +3,6 @@
 ## 📺 Video
 
 * [Das ESP32-S3-DevKitC-1](https://www.youtube.com/watch?v=fyQt3THIQEQ)
-* [ESP32 in der Landwirtschaft: Revolution durch Software!](https://www.youtube.com/watch?v=9N-hUHq4b1M)
-* [ESP32-S3-DevKitC-1 Doku-Analyse: Das Speicher-Monster (32MB Flash/16MB PSRAM) und die Macht der D...](https://www.youtube.com/watch?v=oQPI4NFTt-k)
-* [ESP32-S3: Universum im Chip](https://www.youtube.com/watch?v=xXfb8vsVZfs)
-* [logiBUS® ESP32 installer   Google Chrome 2022 10 18 17 38 33](https://www.youtube.com/watch?v=pQ53R2zChlc)
 
 ## 🎧 Podcast
 

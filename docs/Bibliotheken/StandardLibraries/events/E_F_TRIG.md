@@ -34,7 +34,7 @@ Die interne Logik des Bausteins (Stand: `events-3.0.0`) ist fehlerhaft und imple
 
 ## Technische Besonderheiten
 
-✔ **Ereignisgesteuert**: Die Prüfung erfolgt nur, wenn ein `EI`-Ereignis eintritt.  
+✔ **Ereignisgesteuert**: Die Prüfung erfolgt nur, wenn ein `EI`-Ereignis eintritt.
 ✔ **Fehlerhafte Logik**: Der Baustein ist als `E_F_TRIG` benannt, seine interne Verschaltung eines `E_D_FF` und `E_SWITCH` bewirkt jedoch, dass er auf eine **steigende Flanke** reagiert. Nutzer, die eine fallende Flankenerkennung benötigen, müssen stattdessen den `E_R_TRIG`-Baustein verwenden und dessen Eingang negieren oder auf eine Korrektur des Bausteins warten.
 
 ## Anwendungsszenarien (für eine fallende Flanke)

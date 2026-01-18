@@ -36,10 +36,10 @@ Die Funktion dient als Wrapper für die ST-Funktion NOW().
 
 ## Technische Besonderheiten
 
-✔ **IEC 61499-1 konform**  
-✔ **Lokale Zeitzonenunterstützung** (inkl. Sommer/Winterzeit)  
-✔ **Einfache Integration** als NOW()-Wrapper  
-✔ **Eclipse 4diac Integration**  
+✔ **IEC 61499-1 konform**
+✔ **Lokale Zeitzonenunterstützung** (inkl. Sommer/Winterzeit)
+✔ **Einfache Integration** als NOW()-Wrapper
+✔ **Eclipse 4diac Integration**
 
 ## Anwendungsszenarien
 
@@ -66,10 +66,10 @@ Die Funktion dient als Wrapper für die ST-Funktion NOW().
 
 ## Einschränkungen
 
-⚠ **Zeitsprünge möglich** bei:  
-- Sommer/Winterzeit-Umstellung  
-- Manuellen Zeitanpassungen  
-- NTP-Synchronisation  
+⚠ **Zeitsprünge möglich** bei:
+- Sommer/Winterzeit-Umstellung
+- Manuellen Zeitanpassungen
+- NTP-Synchronisation
 
 ## Fazit
 

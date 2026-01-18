@@ -27,7 +27,7 @@ Der AX_XOR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der bool
 ### **Adapter**
 **Sockets (Eingänge):**
 - **IN1**: XOR-Eingang 1 (Adapter-Typ: unidirectional::AX)
-- **IN2**: XOR-Eingang 2 (Adapter-Typ: unidirectional::AX)  
+- **IN2**: XOR-Eingang 2 (Adapter-Typ: unidirectional::AX)
 - **IN3**: XOR-Eingang 3 (Adapter-Typ: unidirectional::AX)
 
 **Plugs (Ausgänge):**

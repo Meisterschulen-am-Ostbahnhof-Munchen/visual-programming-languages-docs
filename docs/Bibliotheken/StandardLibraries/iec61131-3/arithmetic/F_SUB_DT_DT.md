@@ -42,10 +42,10 @@ Der **F_SUB_DT_DT** ist ein standardkonformer Funktionsbaustein zur präzisen Be
 
 ## Technische Besonderheiten
 
-✔ **Mikrosekundengenauigkeit**  
-✔ **Zeitzonen-unabhängige Berechnung** (UTC-Basis)  
-✔ **Volle Kalenderarithmetik** (Schaltsekunden, Monatslängen)  
-✔ **Plattformübergreifende Konsistenz**  
+✔ **Mikrosekundengenauigkeit**
+✔ **Zeitzonen-unabhängige Berechnung** (UTC-Basis)
+✔ **Volle Kalenderarithmetik** (Schaltsekunden, Monatslängen)
+✔ **Plattformübergreifende Konsistenz**
 
 ## Anwendungsszenarien
 

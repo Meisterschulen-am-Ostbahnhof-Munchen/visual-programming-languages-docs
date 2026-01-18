@@ -42,10 +42,10 @@ Der **F_EXPT** ist ein mathematischer Funktionsbaustein zur Berechnung von Poten
 
 ## Technische Spezifikationen
 
-✔ **Präzise Potenzberechnung**  
-✔ **Unterstützung für REAL und LREAL**  
-✔ **Automatische Typkonvertierung**  
-✔ **IEC 61131-3 konform**  
+✔ **Präzise Potenzberechnung**
+✔ **Unterstützung für REAL und LREAL**
+✔ **Automatische Typkonvertierung**
+✔ **IEC 61131-3 konform**
 
 ## Anwendungsbeispiele
 

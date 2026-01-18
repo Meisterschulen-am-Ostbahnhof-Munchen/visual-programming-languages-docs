@@ -28,7 +28,7 @@ Keine direkten Daten-Ausgänge vorhanden
 
 **Socket-Adapter:**
 - **IN1**: Unidirektionaler Adapter für XOR-Eingang 1
-- **IN2**: Unidirektionaler Adapter für XOR-Eingang 2  
+- **IN2**: Unidirektionaler Adapter für XOR-Eingang 2
 - **IN3**: Unidirektionaler Adapter für XOR-Eingang 3
 - **IN4**: Unidirektionaler Adapter für XOR-Eingang 4
 - **IN5**: Unidirektionaler Adapter für XOR-Eingang 5

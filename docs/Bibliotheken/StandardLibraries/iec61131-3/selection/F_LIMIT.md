@@ -33,7 +33,7 @@ Keine Adapter-Schnittstellen vorhanden.
 Der F_LIMIT Funktionsblock nimmt einen Eingangswert (IN) und begrenzt ihn auf den Bereich zwischen dem Minimum (MN) und Maximum (MX). Bei Aktivierung durch das REQ-Ereignis wird folgende Operation durchgeführt:
 
 - Wenn IN < MN, dann OUT = MN
-- Wenn IN > MX, dann OUT = MX  
+- Wenn IN > MX, dann OUT = MX
 - Wenn MN ≤ IN ≤ MX, dann OUT = IN
 
 Nach Abschluss der Operation wird das CNF-Ereignis mit dem berechneten OUT-Wert ausgegeben.
@@ -55,7 +55,7 @@ Nach Abschluss der Operation wird das CNF-Ereignis mit dem berechneten OUT-Wert 
 - Normierung von Messwerten auf einen zulässigen Bereich
 - Sicherheitsbegrenzung in Prozesssteuerungen
 
-![Textfeld:  
+![Textfeld:
 Bsp. individuelle Eingabe
 ](https://user-images.githubusercontent.com/113907647/227977195-29734e02-f9c3-4e29-bdab-218a9edc9e4a.png)
 

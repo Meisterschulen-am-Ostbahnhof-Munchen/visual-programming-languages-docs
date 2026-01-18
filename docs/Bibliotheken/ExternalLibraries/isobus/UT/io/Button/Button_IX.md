@@ -7,10 +7,6 @@
 
 * * * * * * * * * *
 
-## 🎧 Podcast
-
-* [ISOBUS Button: Mehr als nur ein Klick – Die Standardisierung der Landtechnik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Button-Mehr-als-nur-ein-Klick--Die-Standardisierung-der-Landtechnik-e3673rb)
-
 ## Einleitung
 Der Button_IX ist ein Service-Interface-Funktionsblock für boolesche Eingabedaten, der speziell für die Verarbeitung von Tasteneingaben in 4diac-Systemen entwickelt wurde. Dieser Baustein dient als Schnittstelle zwischen der Anwendungslogik und physikalischen Eingabegeräten wie Tastern oder Schaltern.
 

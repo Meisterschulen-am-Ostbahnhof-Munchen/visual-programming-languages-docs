@@ -6,10 +6,6 @@
 <img width="1448" height="213" alt="F_REAL_TO_UDINT" src="https://github.com/user-attachments/assets/2045df2e-f71d-4277-9b58-2a655adc3493" />
 
 * * * * * * * * * *
-## 📺 Video
-
-* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
-
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_UDINT` dient der Konvertierung eines REAL-Wertes in einen UDINT-Wert. Dieser Baustein ist Teil des `iec61131::conversion`-Pakets und implementiert eine einfache, aber wichtige Typumwandlung für die Verwendung in Steuerungsanwendungen.
 

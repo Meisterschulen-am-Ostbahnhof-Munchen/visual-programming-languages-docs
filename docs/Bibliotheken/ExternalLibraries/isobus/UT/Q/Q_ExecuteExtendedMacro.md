@@ -44,10 +44,10 @@ Der **Q_ExecuteExtendedMacro** ist ein standardkonformer Funktionsbaustein zur A
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.62)  
-✔ **Exklusiv für VT Version 5+**  
-✔ **16-bit Makro-IDs** (erweiterter Adressraum)  
-✔ **Atomare Ausführung** (Transaktionssicher)  
+✔ **ISO 11783-6 konform** (F.62)
+✔ **Exklusiv für VT Version 5+**
+✔ **16-bit Makro-IDs** (erweiterter Adressraum)
+✔ **Atomare Ausführung** (Transaktionssicher)
 
 ## Makro-Eigenschaften
 

@@ -6,10 +6,6 @@
 <img width="1220" height="246" alt="image" src="https://github.com/user-attachments/assets/d20cd567-e598-4dea-acd7-edb4d66605a5" />
 
 * * * * * * * * * *
-## 📺 Video
-
-* [2025-02-02 18-21-50 Uebung_006c Funktion E_DEMUX8 und ..._DI_REPEAT](https://www.youtube.com/watch?v=fOSa4_A7-dE)
-
 ## Einleitung
 Der AX_DEMUX_3 ist ein generischer Demultiplexer-Funktionsblock, der Eingangsdaten basierend auf einem Indexwert auf einen von drei möglichen Ausgängen verteilt. Der Baustein dient zur selektiven Weiterleitung von Datenströmen in verteilten Automatisierungssystemen.
 
@@ -34,7 +30,7 @@ Der AX_DEMUX_3 ist ein generischer Demultiplexer-Funktionsblock, der Eingangsdat
 
 #### **Plugs**
 - **OUT1** (adapter::types::unidirectional::AX): Erster Ausgangskanal
-- **OUT2** (adapter::types::unidirectional::AX): Zweiter Ausgangskanal  
+- **OUT2** (adapter::types::unidirectional::AX): Zweiter Ausgangskanal
 - **OUT3** (adapter::types::unidirectional::AX): Dritter Ausgangskanal
 
 ## Funktionsweise

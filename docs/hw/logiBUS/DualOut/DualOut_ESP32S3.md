@@ -6,7 +6,7 @@
 
 ### Digitale Ausgänge
 
-Diese Version ist erkennbar weil sie einen 6-poligen SKEDD Stecker hat und zusätlich einen 4-poligen SKEDD. 
+Diese Version ist erkennbar weil sie einen 6-poligen SKEDD Stecker hat und zusätlich einen 4-poligen SKEDD.
 
 | Ausgang:  | PIN (ESP32S3) |
 |-----------|---------------|
@@ -24,7 +24,7 @@ Diese Version ist erkennbar weil sie einen 6-poligen SKEDD Stecker hat und zusä
 
 ### Digitale Ausgänge
 
-Diese Version ist erkennbar weil sie nur einen 6-poligen SKEDD Stecker hat. 
+Diese Version ist erkennbar weil sie nur einen 6-poligen SKEDD Stecker hat.
 
 | Ausgang:  | PIN (ESP32S3) |
 |-----------|---------------|

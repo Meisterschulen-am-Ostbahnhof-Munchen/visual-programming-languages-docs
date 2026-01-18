@@ -52,7 +52,7 @@ Der EC_SET_EVT Funktionsblock empfängt über das REQ-Ereignis eine Anfrage zum 
 
 Der Funktionsblock unterstützt mehrere Service-Sequenzen:
 - **normal_establishment**: Erfolgreiche Initialisierung
-- **unsuccessful_establishment**: Fehlgeschlagene Initialisierung  
+- **unsuccessful_establishment**: Fehlgeschlagene Initialisierung
 - **request_confirm**: Erfolgreiche Service-Ausführung
 - **request_inhibited**: Unterdrückte Service-Anfrage
 - **request_error**: Fehlerhafte Service-Ausführung

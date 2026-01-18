@@ -41,10 +41,10 @@ Der **Q_ESC** ist ein standardkonformer Funktionsbaustein zur Abbruchsteuerung i
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.8)  
-✔ **Universeller Abbruchbefehl**  
-✔ **Keine Konfiguration** erforderlich  
-✔ **Sofortige Wirkung** bei Ausführung  
+✔ **ISO 11783-6 konform** (F.8)
+✔ **Universeller Abbruchbefehl**
+✔ **Keine Konfiguration** erforderlich
+✔ **Sofortige Wirkung** bei Ausführung
 
 ## Typische Anwendungsfälle
 

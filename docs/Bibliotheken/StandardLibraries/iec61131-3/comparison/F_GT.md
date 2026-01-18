@@ -105,4 +105,3 @@ Der GT-Operator ist ein wichtiges Werkzeug in der IEC 61499, das die Implementie
 
 
 
-

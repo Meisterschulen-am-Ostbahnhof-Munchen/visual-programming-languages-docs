@@ -6,10 +6,6 @@
 <img width="1494" height="214" alt="F_WSTRING_AS_UDINT" src="https://github.com/user-attachments/assets/80526643-8f3a-4829-a9c8-7fec610340b8" />
 
 * * * * * * * * * *
-## 📺 Video
-
-* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
-
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_UDINT` dient der Konvertierung eines WSTRING-Wertes in einen UDINT-Wert. Dieser Baustein ist besonders nützlich in Szenarien, wo Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise bei der Verarbeitung von Benutzereingaben oder der Interpretation von Daten aus externen Quellen.
 

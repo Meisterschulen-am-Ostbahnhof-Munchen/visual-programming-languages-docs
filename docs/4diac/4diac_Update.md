@@ -4,7 +4,7 @@
 ```
 
 
-Zuordnung GIT Branch zu Download: 
+Zuordnung GIT Branch zu Download:
 
 | Git     | Git Link                                                        | Download  | Download Link                                                |
 |---------|-----------------------------------------------------------------|-----------|--------------------------------------------------------------|
@@ -18,9 +18,9 @@ Zuordnung GIT Branch zu Download:
 
 NEU:
 
-seit einiger Zeit finden sich auf allen Update-Seiten unten auch Links mit denen ein komplettes "sauberes" Paket heruntergeladen werden kann. 
+seit einiger Zeit finden sich auf allen Update-Seiten unten auch Links mit denen ein komplettes "sauberes" Paket heruntergeladen werden kann.
 
-Die Links werden teils jede Nacht neu generiert, und sind auch manchmal nicht vorhanden ... das ist normal. 
+Die Links werden teils jede Nacht neu generiert, und sind auch manchmal nicht vorhanden ... das ist normal.
 
 Direktlinks
 
@@ -50,22 +50,6 @@ Links mit Mirrors
 | macosx.cocoa.x86_64.tar.gz  | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)              | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)       | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)                            |
 
 
-
-## 🎧 Podcast
-
-* [Eclipse 4diac 3.0: ST-Interpreter, FBE und 7200 Commits – Der Turbo für verteilte Automatisierung](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-3-0-ST-Interpreter--FBE-und-7200-Commits--Der-Turbo-fr-verteilte-Automatisierung-e3a5cpl)
-* [Eclipse 4diac FORTE: IEC 61499 verstehen – Der LEGO®-Baukasten für Ihre Industrie 4.0 Steuerung](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-FORTE-IEC-61499-verstehen--Der-LEGO-Baukasten-fr-Ihre-Industrie-4-0-Steuerung-e3682kc)
-* [Eclipse 4diac: Ihr Fahrrad für die Industrie 4.0 – Software-Aufwand meistern und verteilte Systeme steuern](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Ihr-Fahrrad-fr-die-Industrie-4-0--Software-Aufwand-meistern-und-verteilte-Systeme-steuern-e368lq9)
-* [Eclipse 4diac: Innovationsmotor Forschung vs. Nutzerbedürfnisse – Was treibt die Entwicklung wirklich voran?](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Innovationsmotor-Forschung-vs--Nutzerbedrfnisse--Was-treibt-die-Entwicklung-wirklich-voran-e38cke4)
-* [Eclipse 4diac: Open Source als Game Changer für industrielle Steuerungen?](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Open-Source-als-Game-Changer-fr-industrielle-Steuerungen-e372eru)
-
-## 📺 Video
-
-* [2025-01-29 09-27-56 Windows Defender exclusion check in der Eclipse 4diac™ IDE](https://www.youtube.com/watch?v=8k8-QnbTPxk)
-* [2025-02-21 13-04-43 aktueller Stand logiBUS® Eclipse 4diac™ IDE](https://www.youtube.com/watch?v=OMNP9p12mAw)
-* [2025-02-21 15-23-28 logiBUS® mit Eclipse 4diac™ neues IO Konzept für alle Controller](https://www.youtube.com/watch?v=YUCodIng1UA)
-* [2025-11-02 13-19-52 LogiBUS® auf dem Weg zu Eclipse 4diac™ 3.0 - Umstellung eines Projektes](https://www.youtube.com/watch?v=5J_PuNkwxNo)
-* [2025-11-04 16-12-16 LogiBUS® on the way to Eclipse 4diac™ 3.0 - Content Assist](https://www.youtube.com/watch?v=HXOzyEPKhrU)
 
 ## Update
 
@@ -125,9 +109,9 @@ Update URLs (Uniform Resource Locators) sind Webadressen, die auf einen bestimmt
 
 ### Release
 
-Eine Release Update URL (Uniform Resource Locator) ist eine Webadresse, die auf die neuesten Versionen einer Software oder Erweiterungen verweist, die als offizielle Veröffentlichungen (Releases) betrachtet werden. Im Falle von 4diac, stellt die Release Update URL die neueste stabile Version der 4diac-Software und Erweiterungen zur Verfügung, die von der 4diac-Entwicklergemeinschaft getestet und freigegeben wurden. Benutzer von 4diac können diese URL verwenden, um ihre Installationen von 4diac auf die neueste offizielle Version zu aktualisieren, indem sie die neuesten Updates herunterladen und installieren.  
+Eine Release Update URL (Uniform Resource Locator) ist eine Webadresse, die auf die neuesten Versionen einer Software oder Erweiterungen verweist, die als offizielle Veröffentlichungen (Releases) betrachtet werden. Im Falle von 4diac, stellt die Release Update URL die neueste stabile Version der 4diac-Software und Erweiterungen zur Verfügung, die von der 4diac-Entwicklergemeinschaft getestet und freigegeben wurden. Benutzer von 4diac können diese URL verwenden, um ihre Installationen von 4diac auf die neueste offizielle Version zu aktualisieren, indem sie die neuesten Updates herunterladen und installieren.
 
-#### Eclipse 4diac Latest  
+#### Eclipse 4diac Latest
 [https://download.eclipse.org/4diac/updates/latest/](https://download.eclipse.org/4diac/updates/latest/)
 
 ### Release Candidate
@@ -138,7 +122,7 @@ Benutzer von 4diac können diese URLs verwenden, um die neueste RC-Version von 4
 
 Es ist jedoch zu beachten, dass Release-Kandidat-Updates möglicherweise nicht so stabil sind wie die offiziellen Versionen und daher für Produktionsumgebungen nicht empfohlen werden.
 
-#### Eclipse 4diac Release Candidate  
+#### Eclipse 4diac Release Candidate
 [https://download.eclipse.org/4diac/updates/rc/](https://download.eclipse.org/4diac/updates/rc/)
 
 ### Milestone
@@ -147,7 +131,7 @@ Eclipse 4diac ist eine open-source Plattform für die Entwicklung von Industrie 
 
 Ein Eclipse 4diac Milestone Build ist somit eine Zwischenversion der Eclipse 4diac-Plattform, die verschiedene neue Funktionen, Verbesserungen und Fehlerkorrekturen gegenüber der vorherigen stabilen Version enthält, aber auch noch nicht vollständig getestet wurde und daher möglicherweise noch einige Fehler enthält. Diese Versionen werden normalerweise an Entwickler und interessierte Anwender verteilt, um Feedback zu sammeln und bei der weiteren Entwicklung der Plattform zu unterstützen.
 
-#### Eclipse 4diac Milestone  
+#### Eclipse 4diac Milestone
 [https://download.eclipse.org/4diac/updates/milestone/](https://download.eclipse.org/4diac/updates/milestone/)
 
 ### Nightly Build

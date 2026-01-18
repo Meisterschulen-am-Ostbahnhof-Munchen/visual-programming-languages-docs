@@ -45,10 +45,10 @@ Der **ADD_3** ist eine erweiterte Version des Addierers zur Berechnung der Summe
 
 ## Technische Besonderheiten
 
-✔ **Drei-Eingang-Addition** in einer Operation  
-✔ **Generische Implementierung** (GEN_ADD-Klasse)  
-✔ **Breite Typunterstützung** (ANY_MAGNITUDE)  
-✔ **Deterministische Ausführung**  
+✔ **Drei-Eingang-Addition** in einer Operation
+✔ **Generische Implementierung** (GEN_ADD-Klasse)
+✔ **Breite Typunterstützung** (ANY_MAGNITUDE)
+✔ **Deterministische Ausführung**
 
 ## Typische Anwendungsfälle
 

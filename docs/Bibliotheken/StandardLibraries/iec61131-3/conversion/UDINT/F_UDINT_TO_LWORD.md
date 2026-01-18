@@ -6,10 +6,6 @@
 <img width="1462" height="216" alt="F_UDINT_TO_LWORD" src="https://github.com/user-attachments/assets/b952fbc8-443f-43ff-9840-5f002a169f93" />
 
 * * * * * * * * * *
-## 📺 Video
-
-* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
-
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_LWORD` dient der Konvertierung eines 32-Bit unsigned integer Wertes (UDINT) in einen 64-Bit unsigned integer Wert (LWORD). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Erweiterung der Bitbreite von Daten erforderlich ist.
 

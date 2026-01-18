@@ -47,10 +47,10 @@ Der Baustein unterstützt die Ausgabe beliebiger Datentypen für Entwicklungs- u
 
 ## Technische Besonderheiten
 
-✔ **Universelle Typunterstützung** (ANY-Datentyp)  
-✔ **Flexible Beschriftung** mit LABEL-Parameter  
-✔ **Eclipse 4diac Integration** (Package: eclipse4diac::utils)  
-✔ **Plattformunabhängig** für verschiedene Zielsysteme  
+✔ **Universelle Typunterstützung** (ANY-Datentyp)
+✔ **Flexible Beschriftung** mit LABEL-Parameter
+✔ **Eclipse 4diac Integration** (Package: eclipse4diac::utils)
+✔ **Plattformunabhängig** für verschiedene Zielsysteme
 
 ## Anwendungsszenarien
 

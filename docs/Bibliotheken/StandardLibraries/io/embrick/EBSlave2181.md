@@ -22,7 +22,7 @@ Der EBSlave2181 ist ein Service Interface Function Block für die Kommunikation 
 ### **Daten-Eingänge**
 - **QI** (BOOL): Event Input Qualifier - Aktiviert/deaktiviert den Funktionsblock
 - **DigitalInput_1** bis **DigitalInput_8** (WSTRING): Konfiguration der digitalen Eingänge 1-8
-- **DigitalOutput_1** bis **DigitalOutput_8** (WSTRING): Konfiguration der digitalen Ausgänge 1-8  
+- **DigitalOutput_1** bis **DigitalOutput_8** (WSTRING): Konfiguration der digitalen Ausgänge 1-8
 - **UpdateInterval** (UINT): Aktualisierungsintervall des Slave-Moduls in Hz (vom Master geerbt)
 
 ### **Daten-Ausgänge**

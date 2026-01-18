@@ -50,10 +50,10 @@ Der **Q_ChangeObjectLabel** ist ein standardkonformer Funktionsbaustein zur Änd
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.50)  
-✔ **Flexible Beschriftung**: Text oder Grafik  
-✔ **Schriftart-Steuerung** (8-bit)  
-✔ **32-Zeichen Limit** für Textbeschriftungen  
+✔ **ISO 11783-6 konform** (F.50)
+✔ **Flexible Beschriftung**: Text oder Grafik
+✔ **Schriftart-Steuerung** (8-bit)
+✔ **32-Zeichen Limit** für Textbeschriftungen
 
 ## Standardparameter
 

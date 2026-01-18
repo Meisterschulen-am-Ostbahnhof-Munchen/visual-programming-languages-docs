@@ -31,7 +31,7 @@ Keine direkten Daten-Ausgänge vorhanden (Adapter-basierte Kommunikation)
 
 **Ausgangsadapter:**
 - **OUT1** (Plug): Unidirektionaler AX-Adapter-Ausgang 1
-- **OUT2** (Plug): Unidirektionaler AX-Adapter-Ausgang 2  
+- **OUT2** (Plug): Unidirektionaler AX-Adapter-Ausgang 2
 - **OUT3** (Plug): Unidirektionaler AX-Adapter-Ausgang 3
 - **OUT4** (Plug): Unidirektionaler AX-Adapter-Ausgang 4
 - **OUT5** (Plug): Unidirektionaler AX-Adapter-Ausgang 5

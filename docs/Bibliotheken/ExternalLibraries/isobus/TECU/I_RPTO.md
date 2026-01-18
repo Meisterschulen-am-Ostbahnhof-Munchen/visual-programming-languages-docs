@@ -71,10 +71,10 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65091) für die
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-7 konform** (PGN 65091)  
-✔ **Präzise Drehzahlregelung** mit 0.125 U/min Auflösung  
-✔ **4 Betriebsmodi** für unterschiedliche Anwendungen  
-✔ **64-stufige Fehlerdiagnose** mit detaillierten Codes  
+✔ **ISO 11783-7 konform** (PGN 65091)
+✔ **Präzise Drehzahlregelung** mit 0.125 U/min Auflösung
+✔ **4 Betriebsmodi** für unterschiedliche Anwendungen
+✔ **64-stufige Fehlerdiagnose** mit detaillierten Codes
 
 ## Anwendungsszenarien
 

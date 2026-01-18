@@ -1,13 +1,14 @@
 # quarterconst
 
+
+## 🎧 Podcast
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
+---- 
 ```{index} single: quarterconst
 ```
 
 * * * * * * * * * *
-
-## 🎧 Podcast
-
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
 ## Einleitung
 Globale Konstanten für Quarter-Werte.

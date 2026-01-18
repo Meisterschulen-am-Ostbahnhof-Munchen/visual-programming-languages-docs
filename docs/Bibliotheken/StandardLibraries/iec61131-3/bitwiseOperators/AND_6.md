@@ -19,7 +19,7 @@ Der AND_6 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweis
 
 ### **Daten-Eingänge**
 - **IN1** (ANY_BIT): UND-Eingang 1
-- **IN2** (ANY_BIT): UND-Eingang 2  
+- **IN2** (ANY_BIT): UND-Eingang 2
 - **IN3** (ANY_BIT): UND-Eingang 3
 - **IN4** (ANY_BIT): UND-Eingang 4
 - **IN5** (ANY_BIT): UND-Eingang 5

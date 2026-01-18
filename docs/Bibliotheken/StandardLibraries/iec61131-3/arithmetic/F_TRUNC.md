@@ -41,10 +41,10 @@ Der **F_TRUNC** ist ein standardkonformer Funktionsbaustein zur Abrundung von Fl
 
 ## Technische Besonderheiten
 
-✔ **Verlustfreie Typkonvertierung**  
-✔ **Konsistente Null-Richtung** (truncation toward zero)  
-✔ **Deterministische Ausführung**  
-✔ **Keine Überlaufausnahmen**  
+✔ **Verlustfreie Typkonvertierung**
+✔ **Konsistente Null-Richtung** (truncation toward zero)
+✔ **Deterministische Ausführung**
+✔ **Keine Überlaufausnahmen**
 
 ## Anwendungsszenarien
 

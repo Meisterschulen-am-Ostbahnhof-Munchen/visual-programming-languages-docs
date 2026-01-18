@@ -1,15 +1,16 @@
 # ASSEMBLE_BYTE_FROM_QUARTERS
 
+
+## 🎧 Podcast
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
+---- 
 ```{index} single: ASSEMBLE_BYTE_FROM_QUARTERS
 ```
 
 ![ASSEMBLE_BYTE_FROM_QUARTERS](https://github.com/user-attachments/assets/0c4e652e-a741-472a-b8d9-d7721c16cc9a)
 
 * * * * * * * * * *
-## 🎧 Podcast
-
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
-
 ## Einleitung
 Der Funktionsblock `ASSEMBLE_BYTE_FROM_QUARTERS` kombiniert vier einzelne Quarter-Bytes zu einem vollständigen Byte. Dies ist besonders nützlich in Szenarien, wo Daten in Teilen übertragen oder verarbeitet werden müssen und anschließend wieder zusammengesetzt werden sollen.
 

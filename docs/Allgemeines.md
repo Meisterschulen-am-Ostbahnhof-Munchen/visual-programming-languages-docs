@@ -21,7 +21,7 @@ Namen von Variablen, Funktionsbausteinen, Programmen und anderen Elementen werde
 *   **Unterstriche:** Vermeiden Sie einfache Unterstriche am Anfang von Namen, da diese häufig für systeminterne Bibliotheksfunktionen reserviert sind.
 *   **Doppelte Unterstriche:** Diese sind in vielen Systemen reserviert oder verboten.
 *   **Klarheit:** Namen sollten selbsterklärend sein. Verwenden Sie lieber `Temperatur_Sensor_1` statt `T_S1`.
-*   **Schreibweisen:** 
+*   **Schreibweisen:**
     *   **CamelCase:** `MaxTemperatur`
     *   **Snake_Case:** `Max_Temperatur` (in der SPS-Welt sehr verbreitet)
 

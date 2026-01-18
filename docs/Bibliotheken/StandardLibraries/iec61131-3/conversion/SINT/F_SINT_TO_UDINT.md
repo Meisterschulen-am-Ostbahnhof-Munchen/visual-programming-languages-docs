@@ -6,10 +6,6 @@
 <img width="1450" height="213" alt="F_SINT_TO_UDINT" src="https://github.com/user-attachments/assets/a5b8dca8-4533-4578-b402-729f15415b91" />
 
 * * * * * * * * * *
-## 📺 Video
-
-* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
-
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_UDINT` dient der Konvertierung eines vorzeichenbehafteten 8-Bit-Integer-Werts (SINT) in einen vorzeichenlosen 32-Bit-Integer-Wert (UDINT). Diese Konvertierung ist besonders nützlich, wenn Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Datentypen verwenden.
 

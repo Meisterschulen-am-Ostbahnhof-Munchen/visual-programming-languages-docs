@@ -46,10 +46,10 @@ Der **E_TABLE_CTRL** ist ein Unterstützungsbaustein für E_TABLE nach IEC 61499
 
 ## Technische Besonderheiten
 
-✔ **Tabellengesteuerte** Zeitplanung  
-✔ **Array-basierte** Konfiguration (bis zu 4 Zeitschritte)  
-✔ **Zustandsbasierte** Implementierung (BasicFB)  
-✔ **Echtzeitfähige** Ereignisgenerierung  
+✔ **Tabellengesteuerte** Zeitplanung
+✔ **Array-basierte** Konfiguration (bis zu 4 Zeitschritte)
+✔ **Zustandsbasierte** Implementierung (BasicFB)
+✔ **Echtzeitfähige** Ereignisgenerierung
 
 ## Anwendungsszenarien
 
@@ -79,7 +79,6 @@ Der E_TABLE_CTRL-Baustein erweitert die Möglichkeiten der tabellengesteuerten E
 - Robuste Zustandsmaschinen-Implementierung
 
 Durch seine Array-basierte Zeitsteuerung eignet er sich ideal für Anwendungen mit variablen Prozessschritten. Die Integration als BasicFB gewährleistet zuverlässige Operation in IEC 61499-basierten Steuerungssystemen.
-
 
 
 

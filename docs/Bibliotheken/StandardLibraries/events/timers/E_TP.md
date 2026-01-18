@@ -9,7 +9,7 @@
 
 ![image](https://github.com/user-attachments/assets/8d531305-da9a-42e8-b44d-afab3a955be6)
 
-## Text 
+## Text
 
 ## Beschreibung
 

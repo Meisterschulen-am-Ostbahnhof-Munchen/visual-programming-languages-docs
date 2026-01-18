@@ -3,7 +3,7 @@
 ```{index} single: E_RTimeOut (Resettable Timeout Service)
 ```
 
-![IEC 61499 Timeout Symbol](https://user-images.githubusercontent.com/113907528/204902807-7fadcd7d-d6e1-47c0-812e-f5c2d80f79e0.png)  
+![IEC 61499 Timeout Symbol](https://user-images.githubusercontent.com/113907528/204902807-7fadcd7d-d6e1-47c0-812e-f5c2d80f79e0.png)
 
 * * * * * * * * * *
 
@@ -15,11 +15,11 @@ Der **E_RTimeOut** ist ein spezieller Funktionsbaustein nach IEC 61499-2. Er imp
 ### **Adapter-Schnittstelle (Socket-Perspektive)**
 Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ARTimeOut`. Da es sich um einen Socket handelt, sind die Signalrichtungen gegenüber der Adapter-Definition (Plug) invertiert:
 
-- **Eingänge (vom Socket empfangen)**: 
+- **Eingänge (vom Socket empfangen)**:
   - `START`: Startet oder resetet den internen Timer.
   - `STOP`: Stoppt den internen Timer.
   - `DT` (TIME): Die zu verwendende Verzögerungszeit.
-- **Ausgang (an den Socket gesendet)**: 
+- **Ausgang (an den Socket gesendet)**:
   - `TimeOut`: Wird nach Ablauf der Zeit an den verbundenen Plug signalisiert.
 
 ### **Interne Komponenten**
@@ -44,10 +44,10 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ARTimeOut`. Da es sich
 
 ## Technische Besonderheiten
 
-✔ **Resettbare Timeout-Funktion**  
-✔ **Adapter-basierte Schnittstelle** (ARTimeOut)  
-✔ **Interne E_RDELAY-Implementierung**  
-✔ **IEC 61499-2 konform**  
+✔ **Resettbare Timeout-Funktion**
+✔ **Adapter-basierte Schnittstelle** (ARTimeOut)
+✔ **Interne E_RDELAY-Implementierung**
+✔ **IEC 61499-2 konform**
 
 ## Anwendungsszenarien
 

@@ -95,4 +95,3 @@ Der EQ-Operator ist ein grundlegendes Werkzeug in der IEC 61499, das die Impleme
 
 
 
-

@@ -7,10 +7,6 @@
 
 * * * * * * * * * *
 
-## 🎧 Podcast
-
-* [ISOBUS-Oberflächen: Hintergrundfarbe vs. Füll-Attribute – So optimieren Sie Ihre UI und Performance](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Oberflchen-Hintergrundfarbe-vs--Fll-Attribute--So-optimieren-Sie-Ihre-UI-und-Performance-e36oo3f)
-
 ## Einleitung
 Der **Q_Attribute** ist ein standardkonformer Funktionsbaustein zur Änderung von VT-Objekteigenschaften, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.38) Spezifikation für landwirtschaftliche Steuersysteme.
 
@@ -50,10 +46,10 @@ Der **Q_Attribute** ist ein standardkonformer Funktionsbaustein zur Änderung vo
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.38)  
-✔ **Deterministische** Ausführung  
-✔ **32-bit Wertunterstützung**  
-✔ **Echtzeitfähige** Verarbeitung  
+✔ **ISO 11783-6 konform** (F.38)
+✔ **Deterministische** Ausführung
+✔ **32-bit Wertunterstützung**
+✔ **Echtzeitfähige** Verarbeitung
 
 ## Rückgabecodes (s16result)
 

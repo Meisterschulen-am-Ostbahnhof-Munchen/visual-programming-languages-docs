@@ -48,7 +48,7 @@ Der AX_SR Funktionsblock arbeitet als Set-Reset-Flip-Flop mit folgenden Eigensch
 
 Zustandsübergänge:
 - START → SET: Bei S-Ereignis
-- SET → RESET: Bei R-Ereignis  
+- SET → RESET: Bei R-Ereignis
 - RESET → SET: Bei S-Ereignis
 
 ## Anwendungsszenarien

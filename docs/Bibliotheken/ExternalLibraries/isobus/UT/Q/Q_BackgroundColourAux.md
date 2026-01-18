@@ -46,10 +46,10 @@ Der **Q_BackgroundColourAux** ist ein standardkonformer Funktionsbaustein zur St
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.20 für Hilfsfarben)  
-✔ **8-bit Farbunterstützung** (256 Werte)  
-✔ **Kompatibel mit Q_BackgroundColour**  
-✔ **Zustandserhaltung** (u8OldColour)  
+✔ **ISO 11783-6 konform** (F.20 für Hilfsfarben)
+✔ **8-bit Farbunterstützung** (256 Werte)
+✔ **Kompatibel mit Q_BackgroundColour**
+✔ **Zustandserhaltung** (u8OldColour)
 
 ## Standard-Hilfsfarben (Auszug)
 
@@ -94,7 +94,6 @@ Idealer Einsatz bei:
 - Komplexen Anzeigelayouts
 - Mehrschichtigen Visualisierungen
 - Systemen mit erweitertem Farbmanagement
-
 
 
 

@@ -29,7 +29,7 @@ Der SERVER_0 Funktionsblock dient als Gegenstelle zu einem CLIENT_0 Block. Er er
 ## Funktionsweise
 Der SERVER_0 Block verwaltet die Verbindung.
 1. **Initialisierung**: Aktivierung über INIT.
-2. **Synchronisation**: 
+2. **Synchronisation**:
    - Wenn der Client eine Anfrage sendet (REQ), wird am Server das IND-Ereignis ausgelöst.
    - Der Server kann daraufhin mit RSP antworten, was beim Client zum CNF-Ereignis führt.
    Es werden dabei keine Nutzdaten (SD_x, RD_x) übertragen.

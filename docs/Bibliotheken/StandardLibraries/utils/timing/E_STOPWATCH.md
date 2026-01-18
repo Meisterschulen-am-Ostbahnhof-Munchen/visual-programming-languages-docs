@@ -45,11 +45,11 @@ Der Baustein ermöglicht millisekundengenaue Zeitmessungen zwischen Ereignissen 
 
 ## Technische Besonderheiten
 
-✔ **IEC 61499-2 konform**  
-✔ **Monotone Zeitmessung** (keine Systemzeitanpassungen)  
-✔ **Millisekundengenau**  
-✔ **Mehrfach triggerbar** während der Messung  
-✔ **Eclipse 4diac Integration** (Package: eclipse4diac::utils::timing)  
+✔ **IEC 61499-2 konform**
+✔ **Monotone Zeitmessung** (keine Systemzeitanpassungen)
+✔ **Millisekundengenau**
+✔ **Mehrfach triggerbar** während der Messung
+✔ **Eclipse 4diac Integration** (Package: eclipse4diac::utils::timing)
 
 ## Zustandsautomat (ECC)
 

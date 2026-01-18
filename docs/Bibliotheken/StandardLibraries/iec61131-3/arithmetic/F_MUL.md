@@ -44,10 +44,10 @@ Der **F_MUL** ist ein standardkonformer Funktionsbaustein zur Multiplikation num
 
 ## Technische Besonderheiten
 
-✔ **Typsichere Multiplikation** (ANY_NUM-Unterstützung)  
-✔ **Automatische Typkonvertierung**  
-✔ **Überlaufschutz**  
-✔ **Deterministische Ausführung**  
+✔ **Typsichere Multiplikation** (ANY_NUM-Unterstützung)
+✔ **Automatische Typkonvertierung**
+✔ **Überlaufschutz**
+✔ **Deterministische Ausführung**
 
 ## Anwendungsszenarien
 

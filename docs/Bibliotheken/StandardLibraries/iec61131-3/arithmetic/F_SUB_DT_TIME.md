@@ -42,10 +42,10 @@ Der **F_SUB_DT_TIME** ist ein standardkonformer Funktionsbaustein zur Subtraktio
 
 ## Technische Besonderheiten
 
-✔ **Mikrosekundengenauigkeit**  
-✔ **Vollständige Kalenderarithmetik**  
-✔ **Negative Zeitintervalle** (Zeitpunktverschiebung in die Zukunft)  
-✔ **Plattformübergreifende Konsistenz**  
+✔ **Mikrosekundengenauigkeit**
+✔ **Vollständige Kalenderarithmetik**
+✔ **Negative Zeitintervalle** (Zeitpunktverschiebung in die Zukunft)
+✔ **Plattformübergreifende Konsistenz**
 
 ## Anwendungsszenarien
 

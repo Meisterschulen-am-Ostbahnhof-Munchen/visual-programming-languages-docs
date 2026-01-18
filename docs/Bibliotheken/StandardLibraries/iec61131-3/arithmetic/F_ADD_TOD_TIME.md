@@ -43,10 +43,10 @@ Der **F_ADD_TOD_TIME** ist ein spezialisierter Funktionsbaustein zur Addition vo
 
 ## Technische Spezifikationen
 
-✔ **Präzise Tageszeitberechnung**  
-✔ **Automatischer Tagesübergang**  
-✔ **IEC 61131-3 konform**  
-✔ **Millisekundengenaue Berechnung**  
+✔ **Präzise Tageszeitberechnung**
+✔ **Automatischer Tagesübergang**
+✔ **IEC 61131-3 konform**
+✔ **Millisekundengenaue Berechnung**
 
 ## Anwendungsbeispiele
 
@@ -57,7 +57,7 @@ Der **F_ADD_TOD_TIME** ist ein spezialisierter Funktionsbaustein zur Addition vo
 
 ## Besondere Hinweise
 
-- **Gültigkeitsbereich**: 
+- **Gültigkeitsbereich**:
   - 00:00:00.000 bis 23:59:59.999
   - Bei Überschreitung: Wrap-around (z.B. 25:00:00 → 01:00:00)
 

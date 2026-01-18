@@ -44,10 +44,10 @@ Der **F_DIV** ist ein standardkonformer Funktionsbaustein zur Division numerisch
 
 ## Technische Besonderheiten
 
-✔ **Typsichere Division** (ANY_NUM-Unterstützung)  
-✔ **Automatische Typkonvertierung**  
-✔ **IEC 61131-3 konform**  
-✔ **Deterministische Ausführung**  
+✔ **Typsichere Division** (ANY_NUM-Unterstützung)
+✔ **Automatische Typkonvertierung**
+✔ **IEC 61131-3 konform**
+✔ **Deterministische Ausführung**
 
 ## Fehlerbehandlung
 

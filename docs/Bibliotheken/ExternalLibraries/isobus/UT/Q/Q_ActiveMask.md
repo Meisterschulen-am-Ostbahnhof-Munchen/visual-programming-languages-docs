@@ -45,10 +45,10 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.34)  
-✔ **Deterministisches** Verhalten  
-✔ **Multi-Client-fähige** Architektur  
-✔ **Echtzeitfähige** Ausführung  
+✔ **ISO 11783-6 konform** (F.34)
+✔ **Deterministisches** Verhalten
+✔ **Multi-Client-fähige** Architektur
+✔ **Echtzeitfähige** Ausführung
 
 ## Rückgabecodes (s16result)
 

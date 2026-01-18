@@ -5,25 +5,25 @@
 
 ![ATimeOut](https://user-images.githubusercontent.com/116869307/214142228-09857ba5-6164-4597-bb66-8a99e74f4d14.png)
 
-* * * * * * * * * *  
+* * * * * * * * * *
 
-## Einleitung  
+## Einleitung
 Der **ATimeOut**-Adapter ist eine standardisierte Schnittstelle (AdapterType) gemäß IEC 61499 zur Implementierung von Timeout-Services. Er definiert die Kommunikation zwischen einem Dienstnutzer (PLUG) und einem Zeitdienst-Anbieter (SOCKET). Im Gegensatz zum `ARTimeOut` ist dieser Adapter für einfache, nicht-nachtriggerbare Timeouts vorgesehen.
 
-## Struktur des ATimeOut-Adapters  
+## Struktur des ATimeOut-Adapters
 Der ATimeOut-Adapter definiert eine klare Trennung der Zuständigkeiten zwischen der Steuerlogik (Plug) und dem Zeitgeber (Socket).
 
-### Schnittstelle (Interface)  
+### Schnittstelle (Interface)
 Die Schnittstelle ist aus der Perspektive des **Plugs** definiert:
 
-- **Eingangsereignisse (Event Inputs - vom Socket empfangen)**:  
+- **Eingangsereignisse (Event Inputs - vom Socket empfangen)**:
   - **TimeOut**: Signalisiert, dass die vorgegebene Zeit abgelaufen ist.
 
-- **Ausgangsereignisse (Event Outputs - an den Socket gesendet)**:  
+- **Ausgangsereignisse (Event Outputs - an den Socket gesendet)**:
   - **START**: Initiiert den Timeout-Vorgang. Dieses Ereignis ist mit der Variablen **DT** verknüpft.
   - **STOP**: Bricht einen laufenden Timeout-Vorgang ab.
 
-- **Ausgangsvariablen (Output Variables - an den Socket gesendet)**:  
+- **Ausgangsvariablen (Output Variables - an den Socket gesendet)**:
   - **DT (Duration Time)**: Definiert die Zeitdauer für den Timeout (Datentyp: TIME).
 
 ## Verhalten und Service-Sequenzen

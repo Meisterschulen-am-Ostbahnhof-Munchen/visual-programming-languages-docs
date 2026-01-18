@@ -40,10 +40,10 @@ Der **ADD_2** ist ein generischer Funktionsbaustein zur Addition zweier Werte, e
 
 ## Technische Besonderheiten
 
-✔ **Generische Implementierung** (GEN_ADD)  
-✔ **Typflexible** Eingänge/Ausgänge  
-✔ **IEC 61131-3 konform**  
-✔ **Deterministische** Berechnung  
+✔ **Generische Implementierung** (GEN_ADD)
+✔ **Typflexible** Eingänge/Ausgänge
+✔ **IEC 61131-3 konform**
+✔ **Deterministische** Berechnung
 
 ## Unterstützte Datentypen
 

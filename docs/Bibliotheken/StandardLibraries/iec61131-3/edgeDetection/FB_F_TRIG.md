@@ -36,7 +36,7 @@ Der Funktionsblock speichert den vorherigen Zustand des `CLK`-Signals in einer i
 
 ## Zustandsübersicht
 1. **Initialisierung**: `MEM` wird mit `TRUE` initialisiert.
-2. **Erkennung einer fallenden Flanke**: 
+2. **Erkennung einer fallenden Flanke**:
    - Wenn `CLK` von `TRUE` auf `FALSE` wechselt, wird `Q` auf `TRUE` gesetzt.
    - In allen anderen Fällen wird `Q` auf `FALSE` gesetzt.
 3. **Speichern des aktuellen Zustands**: Der aktuelle Zustand von `CLK` wird in `MEM` gespeichert.

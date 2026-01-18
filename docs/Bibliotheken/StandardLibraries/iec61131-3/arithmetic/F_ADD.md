@@ -47,10 +47,10 @@ Der **F_ADD** ist ein standardkonformer arithmetischer Funktionsbaustein nach IE
 
 ## Technische Spezifikationen
 
-✔ **Generische Typunterstützung** (ANY_MAGNITUDE)  
-✔ **Deterministische Ausführung**  
-✔ **Überlaufschutz**  
-✔ **IEC 61131-3 konform**  
+✔ **Generische Typunterstützung** (ANY_MAGNITUDE)
+✔ **Deterministische Ausführung**
+✔ **Überlaufschutz**
+✔ **IEC 61131-3 konform**
 
 ## Unterstützte Datentypen
 

@@ -41,8 +41,8 @@ Laut XML-Spezifikation besteht der Baustein aus:
 
 ## Technische Besonderheiten
 
-✔ **Ereignisgesteuerte** Architektur (kein Polling).  
-✔ **Zustandsspeicherung** durch internen D-Flip-Flop.  
+✔ **Ereignisgesteuerte** Architektur (kein Polling).
+✔ **Zustandsspeicherung** durch internen D-Flip-Flop.
 ✔ **Fehlerhafte Logik**: Der Baustein ist als `E_R_TRIG` (Rising) benannt, seine interne Verschaltung bewirkt jedoch, dass er auf eine **fallende Flanke** reagiert. Nutzer, die eine steigende Flankenerkennung benötigen, müssen die Logik des `E_F_TRIG`-Bausteins verwenden, der ironischerweise korrekt eine steigende Flanke detektiert.
 
 ## Anwendungsszenarien (für eine steigende Flanke)

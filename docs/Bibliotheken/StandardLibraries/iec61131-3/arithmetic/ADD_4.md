@@ -43,10 +43,10 @@ Der **ADD_4** ist ein leistungsfähiger Funktionsbaustein zur Summation von vier
 
 ## Technische Spezifikationen
 
-✔ **Vier-Eingang-Addition** in einer Operation  
-✔ **Volle ANY_MAGNITUDE-Unterstützung**  
-✔ **Optimierte Berechnungsperformance**  
-✔ **Deterministisches Verhalten**  
+✔ **Vier-Eingang-Addition** in einer Operation
+✔ **Volle ANY_MAGNITUDE-Unterstützung**
+✔ **Optimierte Berechnungsperformance**
+✔ **Deterministisches Verhalten**
 
 ## Unterstützte Datentypen
 

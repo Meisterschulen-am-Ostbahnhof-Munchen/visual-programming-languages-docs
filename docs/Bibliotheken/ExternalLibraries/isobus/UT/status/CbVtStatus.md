@@ -41,10 +41,10 @@ Der **CbVtStatus** ist ein standardisierter Callback-Baustein für Virtual-Termi
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform**  
-✔ **Deterministisches** Verhalten  
-✔ **Multi-ECU Unterstützung**  
-✔ **Plug-in-fähige** Architektur  
+✔ **ISO 11783-6 konform**
+✔ **Deterministisches** Verhalten
+✔ **Multi-ECU Unterstützung**
+✔ **Plug-in-fähige** Architektur
 
 ## Unterstützte Betriebsmodi
 
@@ -92,7 +92,6 @@ Besonders wertvoll für Hersteller von:
 - ISOBUS-Diagnosegeräten
 
 Die standardisierte Implementierung ermöglicht zuverlässigen Betrieb in heterogenen Systemumgebungen.
-
 
 
 

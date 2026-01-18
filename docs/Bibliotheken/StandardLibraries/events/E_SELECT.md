@@ -3,7 +3,7 @@
 ```{index} single: E_SELECT
 ```
 
-![E_SELECT Logiksymbol](https://user-images.githubusercontent.com/69573151/210802464-116ee202-5bba-4394-bb08-38411823d000.png)  
+![E_SELECT Logiksymbol](https://user-images.githubusercontent.com/69573151/210802464-116ee202-5bba-4394-bb08-38411823d000.png)
 
 * * * * * * * * * *
 
@@ -44,10 +44,10 @@ Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A
 
 ## Technische Besonderheiten
 
-✔ **Boolesche Steuerung** der Ereignisauswahl  
-✔ **Echtzeitfähige** Verarbeitung  
-✔ **Zustandsbasierte** Implementierung (BasicFB)  
-✔ **EPL-2.0 Open-Source** Implementierung  
+✔ **Boolesche Steuerung** der Ereignisauswahl
+✔ **Echtzeitfähige** Verarbeitung
+✔ **Zustandsbasierte** Implementierung (BasicFB)
+✔ **EPL-2.0 Open-Source** Implementierung
 
 ## Anwendungsszenarien
 

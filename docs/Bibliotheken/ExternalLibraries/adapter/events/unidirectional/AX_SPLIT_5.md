@@ -30,7 +30,7 @@ Keine direkten Daten-Ausgänge vorhanden
 
 **Ausgangsadapter:**
 - **OUT1** - AX unidirektionaler Adapter (Plug)
-- **OUT2** - AX unidirektionaler Adapter (Plug)  
+- **OUT2** - AX unidirektionaler Adapter (Plug)
 - **OUT3** - AX unidirektionaler Adapter (Plug)
 - **OUT4** - AX unidirektionaler Adapter (Plug)
 - **OUT5** - AX unidirektionaler Adapter (Plug)

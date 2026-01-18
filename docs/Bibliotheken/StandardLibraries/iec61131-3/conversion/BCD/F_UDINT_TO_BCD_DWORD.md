@@ -6,10 +6,6 @@
 <img width="1304" height="185" alt="F_UDINT_TO_BCD_DWORD" src="https://github.com/user-attachments/assets/9028a6e3-4da9-4881-90d3-71ad99cbbef7" />
 
 * * * * * * * * * *
-## 📺 Video
-
-* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
-
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_BCD_DWORD` dient der Konvertierung eines vorzeichenlosen 32-Bit-Integer-Werts (UDINT) in ein BCD-kodiertes DWORD. Diese Konvertierung ist insbesondere in Anwendungen nützlich, bei denen numerische Werte in einem für Menschen lesbaren Format dargestellt oder verarbeitet werden müssen.
 

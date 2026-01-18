@@ -1,4 +1,4 @@
-# Welcome 
+# Welcome
 
 ```{index} single: Welcome
 ```
@@ -12,4 +12,3 @@ hier lang:
 
 ```{image} img/powerdby4diac_large_light.png
 ```
-

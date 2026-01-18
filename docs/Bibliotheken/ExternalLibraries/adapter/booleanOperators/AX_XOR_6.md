@@ -31,7 +31,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 
 **Socket-Adapter:**
 - **IN1** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 1
-- **IN2** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 2  
+- **IN2** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 2
 - **IN3** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 3
 - **IN4** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 4
 - **IN5** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 5

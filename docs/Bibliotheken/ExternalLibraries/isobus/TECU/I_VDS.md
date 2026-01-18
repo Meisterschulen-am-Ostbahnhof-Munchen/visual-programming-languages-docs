@@ -50,10 +50,10 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-7 konform** (PGN 65256)  
-✔ **Hochpräzise Richtungserfassung** mit 0.008° Auflösung  
-✔ **GPS-basierte Geschwindigkeit** mit 0.004 km/h Genauigkeit  
-✔ **Erweiterte Sensordaten** (Nickwinkel/Höhe reserviert)  
+✔ **ISO 11783-7 konform** (PGN 65256)
+✔ **Hochpräzise Richtungserfassung** mit 0.008° Auflösung
+✔ **GPS-basierte Geschwindigkeit** mit 0.004 km/h Genauigkeit
+✔ **Erweiterte Sensordaten** (Nickwinkel/Höhe reserviert)
 
 ## Anwendungsszenarien
 

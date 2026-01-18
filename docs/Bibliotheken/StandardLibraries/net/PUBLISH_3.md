@@ -24,7 +24,7 @@ Der PUBLISH_3-Funktionsblock dient zum Verteilen von Daten an einen oder mehrere
 - **QI** (BOOL): Qualifizierer für Initialisierung und Sendeoperationen
 - **ID** (WSTRING): Identifikator für den Publisher
 - **SD_1** (ANY): Erster zu sendender Datenwert (beliebiger Datentyp)
-- **SD_2** (ANY): Zweiter zu sendender Datenwert (beliebiger Datentyp)  
+- **SD_2** (ANY): Zweiter zu sendender Datenwert (beliebiger Datentyp)
 - **SD_3** (ANY): Dritter zu sendender Datenwert (beliebiger Datentyp)
 
 ### **Daten-Ausgänge**

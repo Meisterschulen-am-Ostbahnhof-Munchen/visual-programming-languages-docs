@@ -22,7 +22,7 @@ Der IORevPiAIO Funktionsblock stellt eine Schnittstelle für das Analog I/O-Modu
 ### **Daten-Eingänge**
 - **QI** (BOOL): Event Input Qualifier - Aktiviert/Deaktiviert den Funktionsblock
 - **AnalogInput_1** (STRING): Konfiguration für analogen Eingang 1
-- **AnalogInput_2** (STRING): Konfiguration für analogen Eingang 2  
+- **AnalogInput_2** (STRING): Konfiguration für analogen Eingang 2
 - **AnalogInput_3** (STRING): Konfiguration für analogen Eingang 3
 - **AnalogInput_4** (STRING): Konfiguration für analogen Eingang 4
 - **RTD_1** (STRING): Konfiguration für RTD-Sensor 1
@@ -43,7 +43,7 @@ Der IORevPiAIO Funktionsblock verwaltet die Kommunikation mit dem Revolution Pi 
 
 ## Technische Besonderheiten
 - Unterstützt bis zu 4 analoge Eingänge
-- Unterstützt bis zu 2 analoge Ausgänge  
+- Unterstützt bis zu 2 analoge Ausgänge
 - Integrierte RTD-Sensorunterstützung (2 Kanäle)
 - String-basierte Konfiguration der Pin-Zuordnung
 - Bus-Adapter-Architektur für hardwarenahe Kommunikation

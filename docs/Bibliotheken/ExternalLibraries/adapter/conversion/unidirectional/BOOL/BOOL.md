@@ -2,20 +2,3 @@
 
 ```{index} single: BOOL
 ```
-
-## 🎧 Podcast
-
-* [George Boole: Wie ein Autodidakt mit 0 und 1 das Fundament unserer digitalen Welt legte](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/George-Boole-Wie-ein-Autodidakt-mit-0-und-1-das-Fundament-unserer-digitalen-Welt-legte-e39hb34)
-
-## 📺 Video
-
-* [George Boole: Der Code unserer Welt](https://www.youtube.com/watch?v=Ojhzj9PCbkk)
-
-```{toctree}
-A2X_2AX_TO_2X
-A2X_2X_TO_2AX
-A2X_2X_TO_BOOL
-A2X_BOOL_TO_2X
-AX_BOOL_TO_X
-AX_X_TO_BOOL
-```

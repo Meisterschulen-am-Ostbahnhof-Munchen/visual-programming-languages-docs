@@ -25,7 +25,7 @@ Keine direkten Datenausgänge vorhanden.
 ### **Adapter**
 **Eingangsadapter:**
 - **IN1**: OR-Eingang 1 (Typ: adapter::types::unidirectional::AX)
-- **IN2**: OR-Eingang 2 (Typ: adapter::types::unidirectional::AX)  
+- **IN2**: OR-Eingang 2 (Typ: adapter::types::unidirectional::AX)
 - **IN3**: OR-Eingang 3 (Typ: adapter::types::unidirectional::AX)
 
 **Ausgangsadapter:**

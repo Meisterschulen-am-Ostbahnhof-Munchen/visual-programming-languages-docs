@@ -62,10 +62,10 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65092) für die
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-7 konform** (PGN 65092)  
-✔ **16-bit Drehzahlmessung** mit 0.125 1/min Auflösung  
-✔ **Zustandsautomaten** für Kupplung und Betriebsmodi  
-✔ **Diagnosefunktionen** mit Grundcodes  
+✔ **ISO 11783-7 konform** (PGN 65092)
+✔ **16-bit Drehzahlmessung** mit 0.125 1/min Auflösung
+✔ **Zustandsautomaten** für Kupplung und Betriebsmodi
+✔ **Diagnosefunktionen** mit Grundcodes
 
 ## Anwendungsszenarien
 

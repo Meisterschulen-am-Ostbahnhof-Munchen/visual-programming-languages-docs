@@ -28,7 +28,7 @@ Keine direkten Daten-Ausgänge vorhanden
 
 **Eingangsadapter (Sockets):**
 - **IN1** - AND-Eingang 1 (Typ: adapter::types::unidirectional::AX)
-- **IN2** - AND-Eingang 2 (Typ: adapter::types::unidirectional::AX)  
+- **IN2** - AND-Eingang 2 (Typ: adapter::types::unidirectional::AX)
 - **IN3** - AND-Eingang 3 (Typ: adapter::types::unidirectional::AX)
 
 **Ausgangsadapter (Plugs):**

@@ -42,10 +42,10 @@ Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation
 
 ## Technische Besonderheiten
 
-✔ **Typsichere Zeitwertverarbeitung**  
-✔ **Präzise Nanosekundenberechnung**  
-✔ **Automatische Typkonvertierung** (ANY_NUM → REAL)  
-✔ **Überlaufschutz** (Begrenzung auf TIME-Maximalwert)  
+✔ **Typsichere Zeitwertverarbeitung**
+✔ **Präzise Nanosekundenberechnung**
+✔ **Automatische Typkonvertierung** (ANY_NUM → REAL)
+✔ **Überlaufschutz** (Begrenzung auf TIME-Maximalwert)
 
 ## Anwendungsszenarien
 

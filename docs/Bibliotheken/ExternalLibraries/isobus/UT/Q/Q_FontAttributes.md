@@ -52,10 +52,10 @@ Der **Q_FontAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.28)  
-✔ **Umfassende Schriftsteuerung** (Farbe, Größe, Art, Stil)  
-✔ **Rückmeldung alter Werte** für Reversionsmöglichkeit  
-✔ **Transaktionssicher** (Atomare Ausführung)  
+✔ **ISO 11783-6 konform** (F.28)
+✔ **Umfassende Schriftsteuerung** (Farbe, Größe, Art, Stil)
+✔ **Rückmeldung alter Werte** für Reversionsmöglichkeit
+✔ **Transaktionssicher** (Atomare Ausführung)
 
 ## Attribut-Eigenschaften
 

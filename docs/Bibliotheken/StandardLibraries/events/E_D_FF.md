@@ -1,16 +1,17 @@
 # E_D_FF
 
+
+## 📺 Video
+* [D-Flip-Flop: E_D_FF aus der IEC 61499 (Übung 002c) als "Eventbremse"](https://www.youtube.com/watch?v=yGSx_0ggveE)
+* [D-Flip-Flop: E_D_FF aus der IEC 61499 (Übung 85)](https://www.youtube.com/watch?v=VNaTUOE5izc)
+
+---- 
 ```{index} single: E_D_FF
 ```
 
 ![E_D_FF Diagram](https://user-images.githubusercontent.com/113907528/204898130-f9f31fd9-da42-4b29-a664-add0d91e8890.png)
 
 * * * * * * * * * *
-
-## 📺 Video
-
-* [D-Flip-Flop: E_D_FF aus der IEC 61499 (Übung 002c) als "Eventbremse"](https://www.youtube.com/watch?v=yGSx_0ggveE)
-* [D-Flip-Flop: E_D_FF aus der IEC 61499 (Übung 85)](https://www.youtube.com/watch?v=VNaTUOE5izc)
 
 ## Einleitung
 Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter industrieller Steuerungssysteme. Der **E_D_FF**-Baustein (Data Flip-Flop) ist ein grundlegendes Speicherelement in dieser Norm, das digitale Signale synchron zu einem Taktsignal speichert. Dieser Funktionsbaustein spielt eine zentrale Rolle in Zustandsmaschinen und Speicheranwendungen industrieller Automatisierungslösungen.
@@ -45,10 +46,10 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 
 ## Technische Besonderheiten
 
-✔ **Taktgesteuerte Speicherung** für synchrone Systeme  
-✔ **Ereignisausgang** für Änderungsdetektion  
-✔ **Deterministisches Verhalten** in Echtzeitsystemen  
-✔ **Einfache Integration** in IEC 61499-Applikationen  
+✔ **Taktgesteuerte Speicherung** für synchrone Systeme
+✔ **Ereignisausgang** für Änderungsdetektion
+✔ **Deterministisches Verhalten** in Echtzeitsystemen
+✔ **Einfache Integration** in IEC 61499-Applikationen
 
 ## Anwendungsszenarien
 

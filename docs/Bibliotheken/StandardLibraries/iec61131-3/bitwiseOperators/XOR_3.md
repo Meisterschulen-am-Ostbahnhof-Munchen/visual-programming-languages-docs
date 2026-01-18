@@ -19,7 +19,7 @@ Der XOR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweis
 
 ### **Daten-Eingänge**
 - **IN1**: XOR-Eingang 1 (ANY_BIT Datentyp)
-- **IN2**: XOR-Eingang 2 (ANY_BIT Datentyp)  
+- **IN2**: XOR-Eingang 2 (ANY_BIT Datentyp)
 - **IN3**: XOR-Eingang 3 (ANY_BIT Datentyp)
 
 ### **Daten-Ausgänge**

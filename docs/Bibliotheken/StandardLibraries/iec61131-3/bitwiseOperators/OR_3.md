@@ -20,7 +20,7 @@ Der OR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweise
 
 ### **Daten-Eingänge**
 - **IN1**: OR-Eingang 1 (ANY_BIT Datentyp)
-- **IN2**: OR-Eingang 2 (ANY_BIT Datentyp)  
+- **IN2**: OR-Eingang 2 (ANY_BIT Datentyp)
 - **IN3**: OR-Eingang 3 (ANY_BIT Datentyp)
 
 ### **Daten-Ausgänge**

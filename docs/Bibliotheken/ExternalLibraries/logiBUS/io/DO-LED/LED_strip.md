@@ -4,15 +4,6 @@
 ```
 
 * * * * * * * * * *
-## 🎧 Podcast
-
-* [Strip-Till im Maisanbau: Wie Hochpräzision Wasser spart und den Boden schützt – Einblick in die Agrartechnik 2024](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Strip-Till-im-Maisanbau-Wie-Hochprzision-Wasser-spart-und-den-Boden-schtzt--Einblick-in-die-Agrartechnik-2024-e3ahcvp)
-
-## 📺 Video
-
-* [Die Strip-Till-Revolution](https://www.youtube.com/watch?v=HF9KDKdOd0E)
-* [Strip-Till im Maisanbau: Wie Hochpräzision Wasser spart und den Boden schützt – Einblick in die A...](https://www.youtube.com/watch?v=DNqc0vuEKSU)
-
 ## Einleitung
 LED_strip ist ein GlobalConstants-Baustein, der globale Konstanten für die Ansteuerung von LED-Streifen bereitstellt. Der Baustein definiert eine Ausgabevariable für die Steuerung von LED-Streifen und ist Teil des logiBUS-Systems.
 

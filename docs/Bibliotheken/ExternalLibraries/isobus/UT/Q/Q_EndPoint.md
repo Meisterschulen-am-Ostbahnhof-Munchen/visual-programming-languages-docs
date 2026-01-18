@@ -50,10 +50,10 @@ Der **Q_EndPoint** ist ein standardkonformer Funktionsbaustein zur Steuerung von
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.26 + B.27)  
-✔ **16-bit Positionsauflösung** (0-65535 Pixel)  
-✔ **Vollständige Liniensteuerung** (Position + Richtung)  
-✔ **Echtzeitfähige** Verarbeitung  
+✔ **ISO 11783-6 konform** (F.26 + B.27)
+✔ **16-bit Positionsauflösung** (0-65535 Pixel)
+✔ **Vollständige Liniensteuerung** (Position + Richtung)
+✔ **Echtzeitfähige** Verarbeitung
 
 ## Linienrichtungen (B.27)
 

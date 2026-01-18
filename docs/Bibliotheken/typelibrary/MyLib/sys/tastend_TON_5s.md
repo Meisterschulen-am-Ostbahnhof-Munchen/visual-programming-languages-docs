@@ -26,7 +26,7 @@ Diese Übung demonstriert die Verwendung eines Zeitrelais (Timer On-Delay) mit e
         - Ereignisausgang/-eingang: REQ (Eingang), CNF (Ausgang)
         - Datenausgang/-eingang: OUT (Eingang), AX_OUT (Ausgang)
 
-- **Funktionsweise**: 
+- **Funktionsweise**:
     Die Subapplikation wandelt ein eingehendes Adaptersignal (IN) über AX_X_TO_BOOL in einen Booleschen Wert um, der dann an den E_TON Timer weitergeleitet wird. Der Timer wartet 5 Sekunden, bevor er das Ausgangssignal über Q aktiviert. Dieses Signal wird anschließend über AX_BOOL_TO_X zurück in ein Adaptersignal (OUT) konvertiert.
 
 ## Programmablauf und Verbindungen

@@ -42,10 +42,10 @@ Der **F_MOD** ist ein arithmetischer Funktionsbaustein zur Berechnung des Divisi
 
 ## Technische Spezifikationen
 
-✔ **Ganzzahlige Modulo-Operation**  
-✔ **Unterstützung für vorzeichenbehaftete und -lose Typen**  
-✔ **IEC 61131-3 konform**  
-✔ **Deterministische Ausführung**  
+✔ **Ganzzahlige Modulo-Operation**
+✔ **Unterstützung für vorzeichenbehaftete und -lose Typen**
+✔ **IEC 61131-3 konform**
+✔ **Deterministische Ausführung**
 
 ## Anwendungsbeispiele
 

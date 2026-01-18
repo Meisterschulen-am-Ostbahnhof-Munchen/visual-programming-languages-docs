@@ -49,10 +49,10 @@ Der **Q_ChildLocation** ist ein standardkonformer Funktionsbaustein zur Position
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.14)  
-✔ **Relative Positionsänderung** (relativ zum Parent)  
-✔ **Signed 8-bit Werte** (-128 bis +127)  
-✔ **Echtzeitfähige** Verarbeitung  
+✔ **ISO 11783-6 konform** (F.14)
+✔ **Relative Positionsänderung** (relativ zum Parent)
+✔ **Signed 8-bit Werte** (-128 bis +127)
+✔ **Echtzeitfähige** Verarbeitung
 
 ## Positionsänderungsbereich
 

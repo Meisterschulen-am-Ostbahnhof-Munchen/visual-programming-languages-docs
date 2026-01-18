@@ -1,16 +1,16 @@
 # QUARTER_TO_STR_STATUS
 
+
+## 🎧 Podcast
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
+---- 
 ```{index} single: QUARTER_TO_STR_STATUS
 ```
 
 <img width="1745" height="212" alt="image" src="https://github.com/user-attachments/assets/52b6d758-7780-49a2-98e0-8be5f868339f" />
 
 * * * * * * * * * *
-## 🎧 Podcast
-
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
-* [Das Geheimnis des 2-Bit-Quarter: Effizienz im CAN-Bus für Nutzfahrzeuge](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Das-Geheimnis-des-2-Bit-Quarter-Effizienz-im-CAN-Bus-fr-Nutzfahrzeuge-e3673bk)
-
 ## Einleitung
 Der Funktionsblock `QUARTER_TO_STR_STATUS` dient der Konvertierung eines 2-Bit-Statuswerts (auch als "Quarter Byte" bezeichnet) in einen menschenlesbaren Text-String. Er ist Teil der `logiBUS::utils::quarter`-Bibliothek und wird typischerweise verwendet, um kompakte Statusinformationen aus Steuerungen oder Geräten für Anzeige-, Protokollierungs- oder Diagnosezwecke in eine verständliche Textform zu überführen.
 

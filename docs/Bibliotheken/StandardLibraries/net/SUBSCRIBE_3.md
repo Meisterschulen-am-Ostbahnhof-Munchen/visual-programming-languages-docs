@@ -28,7 +28,7 @@ Der SUBSCRIBE_3 Funktionsblock dient zum Abonnieren von Daten eines PUBLISH_3 Bl
 - **QO** (BOOL): Qualifizierer für Ausgangszustand
 - **STATUS** (WSTRING): Statusinformationen der Verbindung
 - **RD_1** (ANY): Empfangene Daten vom Typ 1
-- **RD_2** (ANY): Empfangene Daten vom Typ 2  
+- **RD_2** (ANY): Empfangene Daten vom Typ 2
 - **RD_3** (ANY): Empfangene Daten vom Typ 3
 
 ### **Adapter**

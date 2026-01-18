@@ -42,7 +42,7 @@ Bei einem SET-Ereignis über den S_R-Adapter wechselt der Block in den SET-Zusta
 ## Zustandsübergänge
 ```
 START → SET:    bei S_R.SET Ereignis
-SET → RESET:    bei S_R.RESET Ereignis  
+SET → RESET:    bei S_R.RESET Ereignis
 RESET → SET:    bei S_R.SET Ereignis
 ```
 

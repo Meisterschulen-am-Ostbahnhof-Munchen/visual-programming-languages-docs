@@ -7,11 +7,6 @@
 
 * * * * * * * * * *
 
-## 📺 Video
-
-* [2025-12-14 20-13-12 Hutschienenmoped Merged Bin aufspielen per ESPTOOL js.](https://www.youtube.com/watch?v=XwtH1p5uw88)
-* [Hutschienenmoped flashen mit der Merged Flash](https://www.youtube.com/watch?v=y7wVxIezsHA)
-
 ## Einleitung
 Der Funktionsblock AE2_SPLIT_MERGE_FORWARD ist ein bidirektionaler Splitter und Merger mit bidirektionaler Weiterleitung. Er dient als universeller Verteiler und Sammler für Ereignisse in 4diac-Systemen und ermöglicht die flexible Verteilung von Ereignissen über verschiedene Schnittstellen.
 

@@ -5,15 +5,11 @@
 
 **Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
 
-## 🎧 Podcast
-
-* [E_TON in der Industrieautomation: Wie ein simpler Timer Sicherheit und Stabilität schafft](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TON-in-der-Industrieautomation-Wie-ein-simpler-Timer-Sicherheit-und-Stabilitt-schafft-e3672u9)
-
 ## Bild
 
 ![image](https://github.com/user-attachments/assets/cc035168-0f10-4159-bbe5-941ec9919630)
 
-## Text 
+## Text
 
 Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) gemäß der Norm **IEC 61499**, der für **On-Delay-Timer** (Einschaltverzögerung) in industriellen Automatisierungssystemen verwendet wird. Dieser Baustein ermöglicht es, ein Signal zeitlich verzögert einzuschalten, was in vielen Steuerungsanwendungen erforderlich ist, um beispielsweise Maschinen oder Prozesse sicher zu steuern.
 

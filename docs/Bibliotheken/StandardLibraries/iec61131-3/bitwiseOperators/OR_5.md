@@ -20,7 +20,7 @@ Der OR_5 Funktionsblock ist ein generischer Baustein zur Durchführung einer bit
 
 ### **Daten-Eingänge**
 - **IN1**: ODER-Eingang 1 (ANY_BIT Datentyp)
-- **IN2**: ODER-Eingang 2 (ANY_BIT Datentyp)  
+- **IN2**: ODER-Eingang 2 (ANY_BIT Datentyp)
 - **IN3**: ODER-Eingang 3 (ANY_BIT Datentyp)
 - **IN4**: ODER-Eingang 4 (ANY_BIT Datentyp)
 - **IN5**: ODER-Eingang 5 (ANY_BIT Datentyp)

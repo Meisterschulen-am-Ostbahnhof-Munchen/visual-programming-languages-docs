@@ -48,10 +48,10 @@ Der **Q_ChangePolygonScale** ist ein standardkonformer Funktionsbaustein zur Ska
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.54)  
-✔ **Proportionale Skalierung** (Breite/Höhe)  
-✔ **16-bit Auflösung** (0-65535 Pixel)  
-✔ **Echtzeitfähige** Verarbeitung  
+✔ **ISO 11783-6 konform** (F.54)
+✔ **Proportionale Skalierung** (Breite/Höhe)
+✔ **16-bit Auflösung** (0-65535 Pixel)
+✔ **Echtzeitfähige** Verarbeitung
 
 ## Skalierungsverhalten
 
@@ -97,7 +97,6 @@ Idealer Einsatz bei:
 - Adaptiven Visualisierungen
 - Dynamischen Kartenansichten
 - Größenveränderbaren Bedienelementen
-
 
 
 

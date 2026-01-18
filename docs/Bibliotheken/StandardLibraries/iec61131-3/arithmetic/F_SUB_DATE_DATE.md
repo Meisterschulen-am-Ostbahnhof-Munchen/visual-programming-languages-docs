@@ -42,10 +42,10 @@ Der **F_SUB_DATE_DATE** ist ein standardkonformer Funktionsbaustein zur Berechnu
 
 ## Technische Besonderheiten
 
-✔ **Präzise Zeitdifferenz** (Tagesgenau)  
-✔ **Berücksichtigung von Schaltjahren**  
-✔ **Negative Zeitintervalle** für rückwirkende Berechnungen  
-✔ **Plattformunabhängige Zeitberechnung**  
+✔ **Präzise Zeitdifferenz** (Tagesgenau)
+✔ **Berücksichtigung von Schaltjahren**
+✔ **Negative Zeitintervalle** für rückwirkende Berechnungen
+✔ **Plattformunabhängige Zeitberechnung**
 
 ## Anwendungsszenarien
 

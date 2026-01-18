@@ -42,10 +42,10 @@ Der **F_MOVE** ist ein universeller Funktionsbaustein zur typsicheren Datenüber
 
 ## Technische Spezifikationen
 
-✔ **Generische Typunterstützung** (ANY)  
-✔ **Bitgenaue Datenkopie**  
-✔ **Einzyklus-Latenzzeit**  
-✔ **IEC 61131-3 konform**  
+✔ **Generische Typunterstützung** (ANY)
+✔ **Bitgenaue Datenkopie**
+✔ **Einzyklus-Latenzzeit**
+✔ **IEC 61131-3 konform**
 
 ## Anwendungsbeispiele
 

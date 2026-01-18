@@ -42,10 +42,10 @@ Der **F_DIVTIME** ist ein spezialisierter Funktionsbaustein zur Division von Zei
 
 ## Technische Spezifikationen
 
-✔ **Präzise Zeitdivision**  
-✔ **Unterstützung für ANY_NUM-Divisoren**  
-✔ **Millisekundengenaue Berechnung**  
-✔ **Automatische Typkonvertierung**  
+✔ **Präzise Zeitdivision**
+✔ **Unterstützung für ANY_NUM-Divisoren**
+✔ **Millisekundengenaue Berechnung**
+✔ **Automatische Typkonvertierung**
 
 ## Anwendungsbeispiele
 

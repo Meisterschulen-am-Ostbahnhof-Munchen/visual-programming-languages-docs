@@ -28,7 +28,7 @@ Die PKP_2200_LI_DI definiert globale Konstanten vom Typ `PKP_2200_LI_DI_S`, die 
 
 ## Technische Besonderheiten
 - **Datentyp**: Alle Konstanten verwenden den Strukturtyp `PKP_2200_LI_DI_S`
-- **Pin-Zuordnungen**: 
+- **Pin-Zuordnungen**:
   - DigitalInput_Key_1: Pin 1
   - DigitalInput_Key_2: Pin 2
   - DigitalInput_Key_3: Pin 3

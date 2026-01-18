@@ -43,10 +43,10 @@ Der **F_SUB_TOD_TOD** ist ein standardkonformer Funktionsbaustein zur Berechnung
 
 ## Technische Besonderheiten
 
-✔ **Mikrosekundengenauigkeit**  
-✔ **Automatische 24h-Überlaufbehandlung**  
-✔ **Bidirektionale Differenzberechnung**  
-✔ **Echtzeitfähige Ausführung**  
+✔ **Mikrosekundengenauigkeit**
+✔ **Automatische 24h-Überlaufbehandlung**
+✔ **Bidirektionale Differenzberechnung**
+✔ **Echtzeitfähige Ausführung**
 
 ## Anwendungsszenarien
 

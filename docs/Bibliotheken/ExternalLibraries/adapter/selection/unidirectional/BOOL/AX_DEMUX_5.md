@@ -6,10 +6,6 @@
 <img width="1220" height="301" alt="image" src="https://github.com/user-attachments/assets/8dd714c2-442d-4dc9-8935-4adc6eee0cd4" />
 
 * * * * * * * * * *
-## 📺 Video
-
-* [2025-02-02 18-21-50 Uebung_006c Funktion E_DEMUX8 und ..._DI_REPEAT](https://www.youtube.com/watch?v=fOSa4_A7-dE)
-
 ## Einleitung
 Der AX_DEMUX_5 ist ein generischer Demultiplexer-Funktionsblock, der eingehende AX-Signale auf einen von fünf Ausgängen verteilt. Der Baustein dient zur gezielten Weiterleitung von Datenströmen basierend auf einem Indexwert.
 
@@ -34,7 +30,7 @@ Der AX_DEMUX_5 ist ein generischer Demultiplexer-Funktionsblock, der eingehende 
 
 **Plugs:**
 - **OUT1**: AX-Ausgangsadapter 1
-- **OUT2**: AX-Ausgangsadapter 2  
+- **OUT2**: AX-Ausgangsadapter 2
 - **OUT3**: AX-Ausgangsadapter 3
 - **OUT4**: AX-Ausgangsadapter 4
 - **OUT5**: AX-Ausgangsadapter 5

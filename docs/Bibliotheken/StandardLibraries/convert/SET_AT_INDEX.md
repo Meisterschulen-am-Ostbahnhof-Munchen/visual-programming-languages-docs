@@ -6,10 +6,6 @@
 <img width="1449" height="238" alt="image" src="https://github.com/user-attachments/assets/b43c3e3b-03a9-421b-a9ba-bcd4c4f00f28" />
 
 * * * * * * * * * *
-## 🎧 Podcast
-
-* [LogiBUS zu 4diac 3.0: Die Komplette Migrationsanleitung – Kniffe, Stolpersteine und der Umstieg auf Index 1](https://podcasters.spotify.com/pod/show/logibus/episodes/LogiBUS-zu-4diac-3-0-Die-Komplette-Migrationsanleitung--Kniffe--Stolpersteine-und-der-Umstieg-auf-Index-1-e3ahcru)
-
 ## Einleitung
 Der Funktionsblock `SET_AT_INDEX` dient dazu, den Wert eines Elements in einem Array an einem bestimmten Index zu setzen. Dabei muss sichergestellt werden, dass die Datentypen des zu setzenden Wertes dem Datentyp des Arrays entsprechen. Das resultierende Ausgabe-Array wird ebenfalls den Datentyp des Eingabe-Arrays aufweisen. Dieser Baustein ist nützlich für die dynamische Manipulation von Array-Daten innerhalb eines Steuerungsprogramms.
 

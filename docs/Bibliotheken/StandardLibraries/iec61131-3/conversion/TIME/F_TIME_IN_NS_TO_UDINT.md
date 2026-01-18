@@ -6,10 +6,6 @@
 <img width="1538" height="212" alt="F_TIME_IN_NS_TO_UDINT" src="https://github.com/user-attachments/assets/cd46fa62-6fda-4f4a-8e2f-92db543f9c19" />
 
 * * * * * * * * * *
-## 📺 Video
-
-* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
-
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_NS_TO_UDINT` dient der Konvertierung eines Zeitwertes in Nanosekunden (`TIME`) in einen vorzeichenlosen 32-Bit-Integer-Wert (`UDINT`). Diese Konvertierung ist insbesondere dann nützlich, wenn Zeitwerte für weitere Berechnungen oder Steuerungszwecke in einem numerischen Format benötigt werden.
 

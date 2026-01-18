@@ -20,7 +20,7 @@ Der XOR_5 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweis
 
 ### **Daten-Eingänge**
 - **IN1**: XOR Eingang 1 (ANY_BIT Datentyp)
-- **IN2**: XOR Eingang 2 (ANY_BIT Datentyp)  
+- **IN2**: XOR Eingang 2 (ANY_BIT Datentyp)
 - **IN3**: XOR Eingang 3 (ANY_BIT Datentyp)
 - **IN4**: XOR Eingang 4 (ANY_BIT Datentyp)
 - **IN5**: XOR Eingang 5 (ANY_BIT Datentyp)

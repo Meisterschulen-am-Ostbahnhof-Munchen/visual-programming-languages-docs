@@ -29,7 +29,7 @@ Keine direkten Daten-Ausgänge vorhanden (Datenverarbeitung erfolgt über Adapte
 
 **Ausgangsadapter:**
 - `OUT1` - AX-Adapter (Plug) - Erster Ausgangskanal
-- `OUT2` - AX-Adapter (Plug) - Zweiter Ausgangskanal  
+- `OUT2` - AX-Adapter (Plug) - Zweiter Ausgangskanal
 - `OUT3` - AX-Adapter (Plug) - Dritter Ausgangskanal
 - `OUT4` - AX-Adapter (Plug) - Vierter Ausgangskanal
 

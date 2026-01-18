@@ -1,16 +1,16 @@
 # QUARTER_TO_BOOL
 
+
+## 🎧 Podcast
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
+---- 
 ```{index} single: QUARTER_TO_BOOL
 ```
 
 <img width="1424" height="183" alt="image" src="https://github.com/user-attachments/assets/81acd0ec-c837-49d1-9ed8-3000cb65786e" />
 
 * * * * * * * * * *
-## 🎧 Podcast
-
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
-* [Das Geheimnis des 2-Bit-Quarter: Effizienz im CAN-Bus für Nutzfahrzeuge](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Das-Geheimnis-des-2-Bit-Quarter-Effizienz-im-CAN-Bus-fr-Nutzfahrzeuge-e3673bk)
-
 ## Einleitung
 Der Funktionsblock `QUARTER_TO_BOOL` dient der Konvertierung eines 4-Zustands-Signals (Quad-State), das in den unteren zwei Bits eines BYTE-Wertes kodiert ist, in ein einfaches BOOL-Signal. Er ist besonders für die Anbindung an Systeme nützlich, die Statusinformationen mit mehr als zwei Zuständen liefern, die jedoch in einer einfachen binären Logik weiterverarbeitet werden sollen.
 

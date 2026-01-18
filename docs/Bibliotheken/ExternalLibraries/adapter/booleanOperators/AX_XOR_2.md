@@ -25,7 +25,7 @@ Keine direkten Datenausgänge vorhanden - die Ausgabe erfolgt über Adapter-Schn
 
 ### **Adapter**
 - **IN1** (Socket): XOR-Eingang 1 - Empfängt das erste Eingangssignal
-- **IN2** (Socket): XOR-Eingang 2 - Empfängt das zweite Eingangssignal  
+- **IN2** (Socket): XOR-Eingang 2 - Empfängt das zweite Eingangssignal
 - **OUT** (Plug): XOR-Ergebnis - Gibt das berechnete XOR-Ergebnis aus
 
 Alle Adapter verwenden den Typ `adapter::types::unidirectional::AX` für unidirektionale Kommunikation.

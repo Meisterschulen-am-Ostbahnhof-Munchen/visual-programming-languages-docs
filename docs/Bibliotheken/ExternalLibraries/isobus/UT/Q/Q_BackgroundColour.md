@@ -47,10 +47,10 @@ Der **Q_BackgroundColour** ist ein standardkonformer Funktionsbaustein zur Steue
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.20 + A.3 Farbpalette)  
-✔ **8-bit Farbunterstützung** (256 Werte)  
-✔ **Echtzeitfähige** Verarbeitung  
-✔ **Zustandserhaltung** (u8OldColour)  
+✔ **ISO 11783-6 konform** (F.20 + A.3 Farbpalette)
+✔ **8-bit Farbunterstützung** (256 Werte)
+✔ **Echtzeitfähige** Verarbeitung
+✔ **Zustandserhaltung** (u8OldColour)
 
 ## Standardfarbpalette (Auszug)
 

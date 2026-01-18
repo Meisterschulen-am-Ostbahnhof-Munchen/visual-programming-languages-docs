@@ -42,7 +42,7 @@ Der EC_STOP_ELEM Funktionsblock verarbeitet Stopp-Anforderungen für verschieden
 ## Zustandsübersicht
 Der Funktionsblock verfügt über mehrere Service-Sequenzen:
 - **normal_establishment**: Erfolgreiche Initialisierung
-- **unsuccessful_establishment**: Fehlgeschlagene Initialisierung  
+- **unsuccessful_establishment**: Fehlgeschlagene Initialisierung
 - **request_confirm**: Erfolgreiche Stopp-Anforderung
 - **request_inhibited**: Unterdrückte Stopp-Anforderung
 - **request_error**: Fehlerhafte Stopp-Anforderung

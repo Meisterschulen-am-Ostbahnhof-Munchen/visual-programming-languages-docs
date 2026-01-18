@@ -45,10 +45,10 @@ Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numeri
 
 ## Technische Besonderheiten
 
-✔ **Typsichere Subtraktion** (ANY_MAGNITUDE-Unterstützung)  
-✔ **Automatische Typkonvertierung**  
-✔ **Unterlaufschutz**  
-✔ **Deterministische Ausführung**  
+✔ **Typsichere Subtraktion** (ANY_MAGNITUDE-Unterstützung)
+✔ **Automatische Typkonvertierung**
+✔ **Unterlaufschutz**
+✔ **Deterministische Ausführung**
 
 ## Anwendungsszenarien
 

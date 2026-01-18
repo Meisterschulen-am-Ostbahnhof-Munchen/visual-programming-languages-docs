@@ -6,10 +6,6 @@
 <img width="1494" height="212" alt="F_UDINT_AS_WSTRING" src="https://github.com/user-attachments/assets/dd3fe324-73e2-4f6e-8ccc-6a9fe7bb8e35" />
 
 * * * * * * * * * *
-## 📺 Video
-
-* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
-
 ## Einleitung
 Der Funktionsblock `F_UDINT_AS_WSTRING` dient der Konvertierung eines vorzeichenlosen 32-Bit-Integer-Werts (`UDINT`) in eine Unicode-Zeichenkette (`WSTRING`). Diese Funktionalität ist besonders nützlich, wenn numerische Werte für die Anzeige oder Weiterverarbeitung als Text benötigt werden.
 

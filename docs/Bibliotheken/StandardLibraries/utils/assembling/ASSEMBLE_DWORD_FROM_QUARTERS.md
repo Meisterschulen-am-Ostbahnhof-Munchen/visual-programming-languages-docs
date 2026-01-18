@@ -1,15 +1,16 @@
 # ASSEMBLE_DWORD_FROM_QUARTERS
 
+
+## 🎧 Podcast
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
+---- 
 ```{index} single: ASSEMBLE_DWORD_FROM_QUARTERS
 ```
 
 ![ASSEMBLE_DWORD_FROM_QUARTERS](https://github.com/user-attachments/assets/b87a9cb4-49aa-4375-be7f-c4e32422490e)
 
 * * * * * * * * * *
-## 🎧 Podcast
-
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
-
 ## Einleitung
 Der Funktionsblock `ASSEMBLE_DWORD_FROM_QUARTERS` kombiniert 16 Quarter-Bytes (je 4 Bit) zu einem DWORD (32 Bit). Dies ist besonders nützlich, wenn Daten in kleineren Einheiten vorliegen und zu einer größeren Einheit zusammengefasst werden müssen.
 

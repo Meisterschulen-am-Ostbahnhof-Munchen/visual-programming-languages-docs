@@ -15,11 +15,11 @@ Der **E_TimeOut** ist ein standardkonformer Funktionsbaustein (IEC 61499-1) zur 
 ### **Adapter-Schnittstelle (Socket-Perspektive)**
 Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ATimeOut`. Da es sich um einen Socket handelt, sind die Signalrichtungen gegenüber der Adapter-Definition (Plug) invertiert:
 
-- **Eingänge (vom Socket empfangen)**: 
+- **Eingänge (vom Socket empfangen)**:
   - `START`: Startet den internen Timer.
   - `STOP`: Stoppt den internen Timer.
   - `DT` (TIME): Die zu verwendende Verzögerungszeit.
-- **Ausgang (an den Socket gesendet)**: 
+- **Ausgang (an den Socket gesendet)**:
   - `TimeOut`: Wird nach Ablauf der Zeit an den verbundenen Plug signalisiert.
 
 ### **Interne Komponenten**
@@ -39,9 +39,9 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ATimeOut`. Da es sich 
 
 ## Technische Besonderheiten
 
-✔ **Adapter-basierte** Schnittstelle (`ATimeOut`).  
-✔ **Einfache, nicht-nachtriggerbare Timeout-Logik**.  
-✔ **Deterministisches** Zeitverhalten.  
+✔ **Adapter-basierte** Schnittstelle (`ATimeOut`).
+✔ **Einfache, nicht-nachtriggerbare Timeout-Logik**.
+✔ **Deterministisches** Zeitverhalten.
 
 ## Anwendungsszenarien
 

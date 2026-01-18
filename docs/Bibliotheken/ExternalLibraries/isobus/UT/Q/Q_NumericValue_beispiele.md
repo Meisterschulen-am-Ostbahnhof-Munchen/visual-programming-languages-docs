@@ -6,7 +6,7 @@ Normativen Referenz:
 
 Dieser Funktionsbaustein bezieht sich auf den Abschnitt ISO 11783-6 F.22 Change Numeric Value command
 
-ACHTUNG: dieser Befehl kann so oft aufgerufen werden wie vom Anwendungsprogrammierer gewünscht, jedoch kann ein zu häufiges Aufrufen den ISOBUS stark überlasten, weshalb dieser Baustein mit Bedacht eingesetzt werden sollte. 
+ACHTUNG: dieser Befehl kann so oft aufgerufen werden wie vom Anwendungsprogrammierer gewünscht, jedoch kann ein zu häufiges Aufrufen den ISOBUS stark überlasten, weshalb dieser Baustein mit Bedacht eingesetzt werden sollte.
 
 Aufgabe dieses Bausteins ist es eine der folgenden Objekte die auf einem VT dargestellt werden zu aktualisieren:
 
@@ -41,13 +41,13 @@ Aufgabe dieses Bausteins ist es eine der folgenden Objekte die auf einem VT darg
 ![](https://user-images.githubusercontent.com/69573151/227979499-dd27d3ff-2bd5-40ab-b204-89dd96728006.png)
 
 *   Number variable: 4 bytes for integer value
-    *   Die Number Variable kann nicht direkt auf dem Display angezeigt werden, kann aber mit allen bisher genannen Objekten verknüpft werden; Vorteil: auch mehrfache Verknüpungen Möglich. 
+    *   Die Number Variable kann nicht direkt auf dem Display angezeigt werden, kann aber mit allen bisher genannen Objekten verknüpft werden; Vorteil: auch mehrfache Verknüpungen Möglich.
 *   Object pointer: 2 bytes for Object ID
     *   Sinnvoll um andere Objekte an Stelle des Pointers ein& und auszublenden.
 
 ![](https://user-images.githubusercontent.com/69573151/227979478-da0e0584-7714-442f-a5ba-ffce7d5b882b.png)
 
-Querverweise: 
+Querverweise:
 
 [https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/de/latest/ID-07---Input-boolean---ISO-11783-6---B.8.2.html](https://docs.ms-muc-docs.de/projects/isobus-vt-objects-docs/de/latest/ID-07---Input-boolean---ISO-11783-6---B.8.2.html)
 

@@ -5,12 +5,6 @@
 
 In der industriellen Automatisierung bilden Normen das Fundament für Interoperabilität, Sicherheit und Effizienz. Sie stellen sicher, dass Systeme verschiedener Hersteller zusammenarbeiten können und Software portabel bleibt.
 
-## 🎧 Podcast
-
-* [DIN EN 61131-3 vs. 61499-1: Dein Wegweiser durch die Normen der Industrieautomatisierung](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61131-3-vs--61499-1-Dein-Wegweiser-durch-die-Normen-der-Industrieautomatisierung-e36c6nc)
-* [logiBUS® entschlüsselt: Wie Open Source & Standards die Agrartechnik revolutionieren](https://podcasters.spotify.com/pod/show/logibus/episodes/logiBUS-entschlsselt-Wie-Open-Source--Standards-die-Agrartechnik-revolutionieren-e38b4lh)
-* [Naturgesetze vs. Normen: Dein Kompass für die Baumaschinen-Meisterschaft](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Naturgesetze-vs--Normen-Dein-Kompass-fr-die-Baumaschinen-Meisterschaft-e38dhgn)
-
 ## IEC 61499: Der Standard für verteilte Systeme
 
 Die IEC 61499 ist die zentrale Norm für dieses Projekt. Sie erweitert das Modell der IEC 61131-3 um eine systemweite Architektur für verteilte Steuerungssysteme.

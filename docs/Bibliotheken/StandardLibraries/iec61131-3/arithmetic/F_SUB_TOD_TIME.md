@@ -42,10 +42,10 @@ Der **F_SUB_TOD_TIME** ist ein standardkonformer Funktionsbaustein zur Subtrakti
 
 ## Technische Besonderheiten
 
-✔ **Mikrosekundengenauigkeit**  
-✔ **24h-Überlaufbehandlung** (zirkuläre Tageszeit)  
-✔ **Negative Intervalle** (Addition von Zeit)  
-✔ **Echtzeitfähige Berechnung**  
+✔ **Mikrosekundengenauigkeit**
+✔ **24h-Überlaufbehandlung** (zirkuläre Tageszeit)
+✔ **Negative Intervalle** (Addition von Zeit)
+✔ **Echtzeitfähige Berechnung**
 
 ## Anwendungsszenarien
 

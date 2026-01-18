@@ -48,7 +48,7 @@ Der Funktionsblock verfügt über drei Zustände:
 
 **Zustandsübergänge:**
 - START → SET: bei S-Ereignis
-- SET → RESET: bei R-Ereignis  
+- SET → RESET: bei R-Ereignis
 - RESET → SET: bei S-Ereignis
 
 ## Anwendungsszenarien

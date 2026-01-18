@@ -5,12 +5,6 @@
 
 
 
-## 🎧 Podcast
-
-* [ISOBUS Output Meter: Dynamische Anzeigen meistern – vom Zeiger bis zur Visualisierung auf dem VT](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Output-Meter-Dynamische-Anzeigen-meistern--vom-Zeiger-bis-zur-Visualisierung-auf-dem-VT-e36t2tp)
-* [ISOBUS-Balkendiagramm: Das Output Linear Bar Graph Objekt der ISO 11783-6 entschlüsselt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Balkendiagramm-Das-Output-Linear-Bar-Graph-Objekt-der-ISO-11783-6-entschlsselt-e36l0v2)
-* [ISOBUS-Terminals: Zahlen verstehen – NumberVariable, InputNumber & OutputNumber erklärt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)
-
 ## CAN-BUS
 
 CAN-TX 4
@@ -59,7 +53,7 @@ Spannungsteiler ist im Controller:
 2CAN-I1
 2CAN-I2
 
-Diese Eingänge haben einen Spannungsteiler im Controller: 47/13 --> und einen Schmitt Trigger. 
+Diese Eingänge haben einen Spannungsteiler im Controller: 47/13 --> und einen Schmitt Trigger.
 
 
 ### Digitale Ausgänge
@@ -74,4 +68,3 @@ Diese Eingänge haben einen Spannungsteiler im Controller: 47/13 --> und einen S
 | Output_Q06 | 19            |
 | Output_Q07 | 15            |
 | Output_Q08 |  8            |
-

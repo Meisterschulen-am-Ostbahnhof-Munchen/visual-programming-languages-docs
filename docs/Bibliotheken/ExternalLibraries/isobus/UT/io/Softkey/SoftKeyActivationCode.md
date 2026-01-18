@@ -12,7 +12,7 @@ Bei SoftKeyActivationCode handelt es sich um globale Konstanten und nicht um ein
 
 ### **Konstantendefinitionen**
 - **SK_RELEASED**: SoftKey wurde losgelassen (Zustandsänderung) - Code: 0
-- **SK_PRESSED**: SoftKey wurde gedrückt (Zustandsänderung) - Code: 1  
+- **SK_PRESSED**: SoftKey wurde gedrückt (Zustandsänderung) - Code: 1
 - **SK_STILL_HELD**: SoftKey wird weiterhin gehalten - Code: 2
 - **SK_STILL_HELD_START**: SoftKey wird weiterhin gehalten (Start) - Code: 2, bCyclic: FALSE
 - **SK_ABORTED**: SoftKey-Druck wurde abgebrochen (gilt für VT Version 4 und höher) - Code: 3

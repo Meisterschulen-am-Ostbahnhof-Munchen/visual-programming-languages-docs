@@ -27,7 +27,7 @@ Der Funktionsblock `SPLIT_DWORD_INTO_BOOLS` dient dazu, ein 32-Bit-DWORD in sein
 Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
-Der Funktionsblock extrahiert jedes Bit des Eingangs-DWORD `IN` und weist es den entsprechenden BOOL-Ausgängen zu. Die Zuordnung erfolgt direkt: 
+Der Funktionsblock extrahiert jedes Bit des Eingangs-DWORD `IN` und weist es den entsprechenden BOOL-Ausgängen zu. Die Zuordnung erfolgt direkt:
 - `BIT_00` = Bit 0 (LSB)
 - `BIT_01` = Bit 1
 - ...

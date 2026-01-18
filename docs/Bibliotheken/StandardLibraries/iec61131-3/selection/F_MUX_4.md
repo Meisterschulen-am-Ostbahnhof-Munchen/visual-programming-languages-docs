@@ -18,7 +18,7 @@ Der Funktionsblock `F_MUX_4` ist ein Multiplexer mit vier Eingängen, der einen 
 - `CNF`: Bestätigung der angeforderten Dienstleistung. Wird ausgelöst, nachdem der Ausgangswert gesetzt wurde. Wird mit dem Daten-Ausgang `OUT` verknüpft.
 
 ### **Daten-Eingänge**
-- `K` (`ANY_INT`): Steuersignal, das den auszuwählenden Eingang bestimmt. 
+- `K` (`ANY_INT`): Steuersignal, das den auszuwählenden Eingang bestimmt.
   - `K = 0`: Wählt `IN1`
   - `K = 1`: Wählt `IN2`
   - `K = 2`: Wählt `IN3`

@@ -50,10 +50,10 @@ Der **Q_FillAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.32)  
-✔ **Umfassende Attributsteuerung** (Typ, Farbe, Muster)  
-✔ **Rückmeldung alter Werte** für Reversionsmöglichkeit  
-✔ **Transaktionssicher** (Atomare Ausführung)  
+✔ **ISO 11783-6 konform** (F.32)
+✔ **Umfassende Attributsteuerung** (Typ, Farbe, Muster)
+✔ **Rückmeldung alter Werte** für Reversionsmöglichkeit
+✔ **Transaktionssicher** (Atomare Ausführung)
 
 ## Attribut-Eigenschaften
 

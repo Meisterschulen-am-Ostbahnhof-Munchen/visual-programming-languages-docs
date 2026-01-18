@@ -5,10 +5,6 @@
 
 * * * * * * * * * *
 
-## 🎧 Podcast
-
-* [From Workshop Grease to Wireless Updates: How One Man Bridged Mechanics and Digital AgTech for MF](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/From-Workshop-Grease-to-Wireless-Updates-How-One-Man-Bridged-Mechanics-and-Digital-AgTech-for-MF-e38ftcc)
-
 ## Einleitung
 Der RT_Bridge_11 Funktionsblock dient als Entkopplungsbrücke für 11 Datenverbindungen zwischen Echtzeit-Ereignisketten.
 

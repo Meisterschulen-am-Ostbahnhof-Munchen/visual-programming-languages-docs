@@ -8,7 +8,10 @@ myst:
 ---
 
 
-  <img src="logos/Meisterschulen_LogoG1_4c.gif" alt="Logo Meisterschulen am Ostbahnhof" width="400">
+```{image} _static/logos/Meisterschulen_LogoG1_4c.gif
+:alt: Logo Meisterschulen am Ostbahnhof
+:width: 400px
+```
 
 # Wiki 4: Visuelle Programmiersprachen
 
@@ -125,6 +128,13 @@ training1/Ventilsteuerung/4diacIDE-workspace/test_VV/Uebungen_doc/Uebungen
 ```
 
 ---
+
+```{toctree}
+:caption: 'Index & Suche'
+:maxdepth: 2
+genindex
+search
+```
 
 ### Index & Suche
 * {ref}`genindex`

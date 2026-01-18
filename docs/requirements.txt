@@ -6,6 +6,7 @@ docutils
 sphinxcontrib-serializinghtml
 myst_parser
 sphinx-rtd-theme
+sphinx-rtd-size
 sphinx
 sphinxcontrib-websupport
 sphinx_design
@@ -16,13 +17,7 @@ sphinxext.opengraph
 sphinx_pyscript
 sphinx_tippy
 sphinx-markdown-tables
-clang <= 14
-hawkmoth
-sphinxcontrib.autoprogram
-sphinx_c_autodoc
 setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
 requests>=2.32.0 # not directly required, pinned by Snyk to avoid a vulnerability
 urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
 zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
-reportlab
-openpyxl

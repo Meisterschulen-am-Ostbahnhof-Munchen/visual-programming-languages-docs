@@ -2,9 +2,13 @@
 
 ## IEC 61499 Function Blocks für den Entwurf von Eingebetteten und Verteilten Systemen
 
-<table><tbody><tr><td><p>"IEC 61499 Function Blocks für den Entwurf von Eingebetteten und Verteilten Systemen" ist ein umfassendes Lehrbuch, das sich mit der IEC 61499 Norm für die Echtzeit-Verarbeitung von Steuerungssystemen beschäftigt. Die dritte Ausgabe des Buches bietet eine aktualisierte und erweiterte Darstellung des IEC 61499 Standards und zeigt, wie er in der Praxis angewendet werden kann.</p><p>Das Buch beginnt mit einer Einführung in die IEC 61499 Architektur und erläutert die Grundlagen der Function Blocks, die zur Modellierung von Steuerungssystemen verwendet werden. Es geht weiter auf die verschiedenen Typen von Function Blocks ein und zeigt, wie sie in der Praxis verwendet werden.</p><p>Ein Schwerpunkt des Buches liegt auf der Verwendung von Function Blocks in eingebetteten Systemen. Es zeigt, wie Function Blocks zur Steuerung von Hardware-Komponenten wie Sensoren und Aktoren genutzt werden können und gibt Beispiele für mögliche Anwendungen in Industrieumgebungen.</p><p>Das Buch befasst sich auch mit der Verwendung von Function Blocks in verteilten Systemen und zeigt, wie sie zur Kommunikation und zum Austausch von Daten zwischen verschiedenen Steuerungssystemen genutzt werden können. Es gibt auch einen Abschnitt über die Integration von Function Blocks in industrielle Kommunikationsprotokolle wie EtherCAT und PROFINET.</p><p>Insgesamt bietet "IEC 61499 Function Blocks für den Entwurf von Eingebetteten und Verteilten Systemen" eine umfassende Einführung in die IEC 61499 Norm und zeigt, wie sie in der Praxis angewendet werden kann. Es ist ein wertvoller Leitfaden für alle, die sich mit der Entwicklung von Steuerungssystemen beschäftigen und die IEC 61499 nutzen möchten.</p></td></tr></tbody></table>
+### Über das Buch
+Dieses umfassende Lehrbuch widmet sich der IEC 61499 Norm und ihrer Anwendung in der modernen industriellen Automatisierung. In der dritten Ausgabe werden die theoretischen Grundlagen der Function Blocks (Funktionsbausteine) detailliert erläutert und mit praxisnahen Beispielen verknüpft. Das Werk schlägt eine Brücke zwischen klassischen SPS-Programmieransätzen und modernen, objektorientierten sowie verteilten Systemarchitekturen. Es ist ein essentielles Standardwerk für Ingenieure und Studierende, die sich mit der Digitalisierung der Produktion und "Smart Factories" beschäftigen.
 
-**Autor:** Valeriy Vyatkin, **Übersetzung:** Ewald Matull
+### Über den Autor
+**Valeriy Vyatkin** ist ein international anerkannter Experte auf dem Gebiet der industriellen Automatisierung und Informatik. Er hält Professuren an der Aalto Universität in Finnland und der Technischen Universität Luleå in Schweden. Vyatkin hat maßgeblich zur Weiterentwicklung und Standardisierung der IEC 61499 beigetragen. Seine Forschungsschwerpunkte liegen in der formalen Verifizierung von Steuerungsprogrammen, verteilten intelligenten Systemen und der Anwendung von Methoden der Informatik in der industriellen Praxis.
+
+**Übersetzung:** Ewald Matull
 **ISBN:** 978-0-876640-44-9, ISA-Verlag
 
 ### Links und Ressourcen
@@ -19,7 +23,11 @@
 
 ## Prozess-Steuerungen: Projektierung und Inbetriebnahme mit dem Softwaretool SPaS
 
-**Autor:** Diverse
+### Über das Buch
+Das Buch bietet einen praxisorientierten Leitfaden zur Projektierung und Inbetriebnahme von Prozesssteuerungen. Im Fokus steht das Softwaretool SPaS (System zur Projektierung von Automatisierungssystemen), das speziell für die effiziente Erstellung von Steuerungslösungen in prozesstechnischen Anlagen konzipiert wurde. Es behandelt den gesamten Lebenszyklus einer Automatisierungslösung – von der ersten Planung über die Programmierung bis hin zum Testlauf und der Übergabe an den Betreiber.
+
+### Über den Autor
+Das Werk wurde von Experten aus dem Bereich der Automatisierungstechnik verfasst (u.a. **Bernhard S. Gebhard**). Die Autoren verfügen über langjährige Erfahrung in der Planung von Industrieanlagen und der Entwicklung von Engineering-Werkzeugen. Ihr Fokus liegt auf der Reduzierung von Komplexität und der Erhöhung der Softwarequalität in der Prozessindustrie durch standardisierte Engineering-Workflows.
 
 ### Links und Ressourcen
 * [Amazon](https://www.amazon.de/Prozess-Steuerungen-Projektierung-Inbetriebnahme-Softwaretool-SPaS/dp/3540710833)

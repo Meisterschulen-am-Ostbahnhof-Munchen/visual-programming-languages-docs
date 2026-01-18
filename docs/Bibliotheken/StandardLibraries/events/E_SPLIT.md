@@ -37,7 +37,6 @@ Der **E_SPLIT** ist ein standardkonformer Funktionsbaustein (IEC 61499-1 Annex A
 
 ![Beispieldiagram](https://user-images.githubusercontent.com/113907476/227972526-0c1d6245-f068-4b58-a4b6-37b9dcb98398.png)
 
-
 ## Technische Besonderheiten
 
 ✔ **Strikte Sequenzierung** (EO1 vor EO2)

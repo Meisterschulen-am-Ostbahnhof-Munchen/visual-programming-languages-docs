@@ -2,4 +2,3 @@
 
 ```{index} single: DualCAN Übersicht
 ```
-

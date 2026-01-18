@@ -3,8 +3,6 @@
 ```{index} single: unidirectional
 ```
 
-
-
 ```{toctree}
 BOOL/BOOL
 BYTE/BYTE
@@ -22,6 +20,5 @@ UINT/UINT
 ULINT/ULINT
 USINT/USINT
 WORD/WORD
-
 
 ```

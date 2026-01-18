@@ -1,11 +1,16 @@
 # SPS
 
+## 📺 Video
+
+* [Industrielle Automation verstehen: SPS, PLS, SCADA, MES und ERP entschlüsselt – Eine Reise durch ...](https://www.youtube.com/watch?v=25gerXrZQAY)
 
 ## 🎧 Podcast
-* [Industrielle Automation verstehen: SPS, PLS, SCADA, MES und ERP entschlüsselt – Eine Reise durch die Smart Factory](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Industrielle-Automation-verstehen-SPS--PLS--SCADA--MES-und-ERP-entschlsselt--Eine-Reise-durch-die-Smart-Factory-e3671qn)
 
-## 📺 Video
-* [Industrielle Automation verstehen: SPS, PLS, SCADA, MES und ERP entschlüsselt – Eine Reise durch ...](https://www.youtube.com/watch?v=25gerXrZQAY)
+* [Von der SPS zur verteilten Intelligenz: IEC 61499 für Industrie 4.0 verstehen](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Von-der-SPS-zur-verteilten-Intelligenz-IEC-61499-fr-Industrie-4-0-verstehen-e36a78o)
+* [Industrielle Automation verstehen: SPS, PLS, SCADA, MES und ERP entschlüsselt – Eine Reise durch die Smart Factory](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Industrielle-Automation-verstehen-SPS--PLS--SCADA--MES-und-ERP-entschlsselt--Eine-Reise-durch-die-Smart-Factory-e3671qn)
+* [R_TRIG & F_TRIG: Einmalige Aktionen in der zyklischen SPS-Welt der IEC 61131-3](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/R_TRIG--F_TRIG-Einmalige-Aktionen-in-der-zyklischen-SPS-Welt-der-IEC-61131-3-e370ke8)
+* [R_TRIG & F_TRIG: So erkennen SPS-Steuerungen Signalflanken zuverlässig – ohne Doppelbehandlung](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/R_TRIG--F_TRIG-So-erkennen-SPS-Steuerungen-Signalflanken-zuverlssig--ohne-Doppelbehandlung-e370kqh)
+* [SPS: Das Unsichtbare Gehirn der Industrie – Von robuster Hardware zur IT/OT-Konvergenz](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/SPS-Das-Unsichtbare-Gehirn-der-Industrie--Von-robuster-Hardware-zur-ITOT-Konvergenz-e375g1f)
 
 ---- 
 ```{index} single: SPS

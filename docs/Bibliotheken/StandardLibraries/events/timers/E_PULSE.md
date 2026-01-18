@@ -7,11 +7,9 @@
 
 ![image](https://github.com/user-attachments/assets/f5119723-ac8b-477f-afe1-795808faa1e2)
 
-
 * * * * * * * * * *
 
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
-
 
 ### Der Baustein E_PULSE in der IEC 61499: Ein Überblick
 

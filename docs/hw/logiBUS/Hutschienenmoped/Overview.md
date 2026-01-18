@@ -33,7 +33,6 @@ Das Hutschienenmoped S3 ist ein deutliches Upgrade und richtet sich an Anwender 
 
 Wählen Sie das S3-Modell, wenn Sie anspruchsvolle Projekte planen, maximale Performance benötigen oder Ihr Projekt für zukünftige KI-Anwendungen rüsten wollen.
 
-
 ```{toctree}
 Hutschienenmoped
 HutschienenmopedXL

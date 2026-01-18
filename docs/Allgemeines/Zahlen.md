@@ -2,8 +2,9 @@
 
 ```{index} single: Zahlen und Zahlensysteme
 ```
+## 🎧 Podcast
 
-In der Automatisierungstechnik begegnen uns Zahlen in verschiedenen Formaten. Je nachdem, ob wir einen physikalischen Wert (z. B. Temperatur), einen Zählerstand oder den Status einzelner Bits (z. B. digitale Eingänge) betrachten, wählen wir das passende Zahlensystem.
+* [ISOBUS-Terminals: Zahlen verstehen – NumberVariable, InputNumber & OutputNumber erklärt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)
 
 ## Zahlensysteme
 

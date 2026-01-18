@@ -3,9 +3,6 @@
 ```{index} single: Datentypen (Übersicht)
 ```
 
-
-
-
 ### Zusammenfassung der Kategorien
 Gemäß DIN EN 61131-3 werden die Datentypen in folgende Gruppen unterteilt:
 - **Bit-Datentypen**: BOOL, BYTE, WORD, DWORD, LWORD
@@ -48,7 +45,6 @@ Siehe auch: IEC 61499, Table E.1
 | TIME\_OF\_DAY | 12 | 96 Bit | 1970-01-01-00:00:00.000 |   |
 | DATE\_AND\_TIME | 20 | 160 Bit | 1970-01-01-00:00:00.000 |   |
 
-
 #### Datentypen für I/O (Input / Output)
 
 | Typ | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
@@ -60,12 +56,7 @@ Siehe auch: IEC 61499, Table E.1
 | DWORD | 4 | 32 Bit | 0 | 4.294.967.295 |
 | LWORD | 8 | 64 Bit | 0 | 18.446.744.073.709.551.615 |
 
-
 [^1]: QUARTER ist nicht normativ festgelegt.
-
-
-
-
 
 In der folgenden Liste sind die elementaren Datentypen gemäß DIN EN 61131-3 aufgeführt.
 
@@ -93,3 +84,9 @@ USINT/USINT
 WORD/WORD
 WSTRING/WSTRING
 ```
+## 🎧 Podcast
+
+* [Datenkommunikation in der Automatisierung: Die Geheimnisse der IEC 61499 Datentypen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Datenkommunikation-in-der-Automatisierung-Die-Geheimnisse-der-IEC-61499-Datentypen-e3672lj)
+* [Datentypen der IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Datentypen-der-IEC-61499-e3672jf)
+* [Universum der Datentypen, wie sie in der IEC 61131-3 und IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Universum-der-Datentypen--wie-sie-in-der-IEC-61131-3-und-IEC-61499-e3673kb)
+* [Digitale Logik Flip-Flops und Datentypen](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Digitale-Logik-Flip-Flops-und-Datentypen-e3dic6t)

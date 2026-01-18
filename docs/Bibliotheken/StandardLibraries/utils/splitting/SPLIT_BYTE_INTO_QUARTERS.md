@@ -1,7 +1,7 @@
 # SPLIT_BYTE_INTO_QUARTERS
 
-
 ## 🎧 Podcast
+
 * [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
 ---- 

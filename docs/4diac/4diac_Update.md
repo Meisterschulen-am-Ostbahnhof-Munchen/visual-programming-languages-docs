@@ -3,7 +3,6 @@
 ```{index} single: Eclipse 4diac™ Update
 ```
 
-
 Zuordnung GIT Branch zu Download:
 
 | Git     | Git Link                                                        | Download  | Download Link                                                |
@@ -13,9 +12,6 @@ Zuordnung GIT Branch zu Download:
 | 3.0.x   | [link](https://github.com/eclipse-4diac/4diac-ide/tree/3.0.x)   | RC        | [link](https://download.eclipse.org/4diac/updates/rc)        |
 | release | [link](https://github.com/eclipse-4diac/4diac-ide/tree/release) | latest    | [link](https://download.eclipse.org/4diac/updates/latest)    |
 
-
-
-
 NEU:
 
 seit einiger Zeit finden sich auf allen Update-Seiten unten auch Links mit denen ein komplettes "sauberes" Paket heruntergeladen werden kann.
@@ -23,7 +19,6 @@ seit einiger Zeit finden sich auf allen Update-Seiten unten auch Links mit denen
 Die Links werden teils jede Nacht neu generiert, und sind auch manchmal nicht vorhanden ... das ist normal.
 
 Direktlinks
-
 
 | Betriebsystem               | rc                                                                                                            | milestone                                                                                                     | nightly                                                                                                                          |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -35,9 +30,7 @@ Direktlinks
 | macosx.cocoa.x86_64.dmg     | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)                 | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)          | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)                               |
 | macosx.cocoa.x86_64.tar.gz  | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)              | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)       | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)                            |
 
-
 Links mit Mirrors
-
 
 | Betriebsystem               | rc                                                                                                                                    | milestone                                                                                                                             | nightly                                                                                                                                                  |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -48,8 +41,6 @@ Links mit Mirrors
 | macosx.cocoa.aarch64.tar.gz | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.aarch64.tar.gz)             | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.aarch64.tar.gz)      | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.aarch64.tar.gz)                           |
 | macosx.cocoa.x86_64.dmg     | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)                 | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)          | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)                               |
 | macosx.cocoa.x86_64.tar.gz  | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)              | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)       | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)                            |
-
-
 
 ## Update
 

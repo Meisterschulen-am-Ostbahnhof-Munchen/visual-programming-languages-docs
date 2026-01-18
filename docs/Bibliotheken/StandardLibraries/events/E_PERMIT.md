@@ -2,10 +2,14 @@
 
 ```{index} single: E_PERMIT
 ```
+## 🎧 Podcast
 
-<img width="1139" height="202" alt="E_PERMIT" src="https://user-images.githubusercontent.com/113907528/204900302-7f7fcf0a-170c-4695-8177-e51c62311624.png">
+* [Der E_PERMIT-Baustein: Der "Türsteher" für Ereignisse in IEC 61499-Systemen entschlüsselt](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_PERMIT-Baustein-Der-Trsteher-fr-Ereignisse-in-IEC-61499-Systemen-entschlsselt-e3681m5)
+* [Decoding E_PERMIT: The Unsung Hero of Industrial Automation's Safety and Reliability](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Decoding-E_PERMIT-The-Unsung-Hero-of-Industrial-Automations-Safety-and-Reliability-e3681l1)
 
-* * * * * * * * * *
+## 📺 Video
+
+* [Gesteuerte Verbreitung eines Ereignisses E_PERMIT aus der IEC 61499 (Übung 94)](https://www.youtube.com/watch?v=ry5LTRd9H3M)
 
 ## Einleitung
 Der `E_PERMIT` (Event Permit) ist ein grundlegender Funktionsbaustein nach IEC 61499, der als steuerbares "Tor" für Ereignisse fungiert. Er lässt ein Eingangereignis nur dann zum Ausgang passieren, wenn eine explizite Freigabebedingung erfüllt ist.

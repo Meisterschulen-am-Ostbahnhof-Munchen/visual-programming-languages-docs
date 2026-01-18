@@ -54,8 +54,6 @@ Er ergänzt oft Bausteine, die Werte aus Strukturen auslesen (`GET_STRUCT_VALUE`
 
 ## Metadaten
 
-
-
 | Attribut | Wert |
 
 | :--- | :--- |
@@ -68,10 +66,6 @@ Er ergänzt oft Bausteine, die Werte aus Strukturen auslesen (`GET_STRUCT_VALUE`
 
 | 4diac-Paket | eclipse4diac::convert |
 
-
-
 ## Fazit
-
-
 
 Der `SET_STRUCT_VALUE`-Funktionsblock ist ein mächtiges Werkzeug für die dynamische Manipulation von Datenstrukturen innerhalb einer 4diac-Anwendung. Seine generische Natur und die Unterstützung für den Zugriff auf verschachtelte Mitglieder machen ihn äußerst vielseitig für Anwendungen, die eine flexible Konfiguration oder Datenverarbeitung zur Laufzeit erfordern.

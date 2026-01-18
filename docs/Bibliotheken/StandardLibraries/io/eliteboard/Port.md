@@ -2,10 +2,15 @@
 
 ```{index} single: Port
 ```
+## 🎧 Podcast
 
-<img width="548" height="474" alt="image" src="https://github.com/user-attachments/assets/96d800a7-1d77-4db8-a179-69be06de4dd2" />
+* [Das Technologie-Panorama von 1863: Lanz & Comp. und die Revolution der deutschen Landwirtschaft durch Import, Innovation und Guano](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Technologie-Panorama-von-1863-Lanz--Comp--und-die-Revolution-der-deutschen-Landwirtschaft-durch-Import--Innovation-und-Guano-e39auqa)
+* [ESP32-S3-DevKitC-1 Doku-Analyse: Das Speicher-Monster (32MB Flash/16MB PSRAM) und die Macht der Dual-USB-Ports](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/ESP32-S3-DevKitC-1-Doku-Analyse-Das-Speicher-Monster-32MB-Flash16MB-PSRAM-und-die-Macht-der-Dual-USB-Ports-e39hamt)
 
-* * * * * * * * * *
+## 📺 Video
+
+* [2025-02-23 13-20-15 Fusion 360 Elektronik Stückliste Exportieren](https://www.youtube.com/watch?v=Z5RllKgpOfc)
+* [2025-12-14 19-53-53 Installation Eclipse 4diac™ IDE 3.0.0 und Import des Training1 Projektes](https://www.youtube.com/watch?v=O3S1o_NUyvc)
 
 ## Einleitung
 Der Port-Funktionsblock dient als Service Interface Function Block für die Konfiguration und Verwaltung von digitalen Ein-/Ausgängen auf einem EliteBoard-System. Er ermöglicht die Zuordnung von Pin-Namen zu physischen Ports über einen Adapter-Mechanismus.

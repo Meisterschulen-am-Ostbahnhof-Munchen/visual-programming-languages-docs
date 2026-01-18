@@ -2,14 +2,14 @@
 
 ```{index} single: E_TOF
 ```
+## 🎧 Podcast
 
-**Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
+* [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssysteme?](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
+* [FB_TOF und E_TOF: Verzögerungstimer in IEC 61131-3 und 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
 
-![image](https://github.com/user-attachments/assets/86d35e53-c4b8-42ac-b746-0d6b8a7c73dc)
+## 📺 Video
 
-* * * * * * * * * *
-
-Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
+* [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssyst...](https://www.youtube.com/watch?v=ZT3DCrHU-pA)
 
 ## Beschreibung:
 
@@ -76,9 +76,7 @@ Der E_TOF-Baustein ist ein vielseitiger Funktionsbaustein in der IEC 61499, der 
 
 Der bereitgestellte Quelltext zeigt, wie der E_TOF-Baustein in der Praxis implementiert werden kann, und bietet eine solide Grundlage für die Entwicklung ähnlicher Bausteine in industriellen Steuerungssystemen. Die Unabhängigkeit vom zyklischen Aufruf ist dabei ein entscheidender Vorteil, der den Baustein für eine Vielzahl von Anwendungen geeignet macht.
 
-
 ## Vergleich E_TOF zu FB_TOF
-
 
 ### Kapitel 1: Der FB_TOF-Baustein
 

@@ -2,5 +2,6 @@
 
 ```{index} single: Vergleichsfunktionen
 ```
+## 📺 Video
 
-Hier finden Sie Funktionen zum Vergleichen von Werten (Gleich, Größer, Kleiner etc.).
+* [Comparison of CAN transceivers](https://www.youtube.com/watch?v=DQ45wcYPxOQ)

@@ -9,7 +9,6 @@
 
 Die GlobalConstants-Definition `logiBUS_DI_Events` stellt eine umfassende Sammlung von Ereigniskonstanten für digitale Eingänge (DI) im logiBUS-System bereit. Diese Konstanten definieren verschiedene Tastendruck-Ereignisse und deren eindeutige Identifikatoren, die in der Steuerungslogik für die Verarbeitung von Benutzereingaben über Taster verwendet werden.
 
-
 ## Funktionsweise
 
 Die GlobalConstants-Definition `logiBUS_DI_Events` enthält 14 verschiedene Ereigniskonstanten vom Typ `logiBUS_DI_Events_S`, die jeweils durch einen eindeutigen numerischen Wert (`EType`) identifiziert werden. Diese Konstanten werden verwendet, um verschiedene Zustände und Ereignisse von Tastern in der Steuerungslogik zu repräsentieren.

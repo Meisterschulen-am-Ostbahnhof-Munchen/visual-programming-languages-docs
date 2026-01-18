@@ -1,18 +1,19 @@
 # FB_TOF
 
+## 📺 Video
+
+* [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssyst...](https://www.youtube.com/watch?v=ZT3DCrHU-pA)
 
 ## 🎧 Podcast
-* [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssysteme?](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
 
-## 📺 Video
-* [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssyst...](https://www.youtube.com/watch?v=ZT3DCrHU-pA)
+* [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssysteme?](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
+* [FB_TOF und E_TOF: Verzögerungstimer in IEC 61131-3 und 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
 
 ---- 
 ```{index} single: FB_TOF
 ```
 
 ![image](https://github.com/user-attachments/assets/e60568d1-aba5-4e35-9488-8a79d1cb877b)
-
 
 * * * * * * * * * *
 
@@ -77,9 +78,7 @@ Der FB_TOF-Baustein ist ein einfacher, aber leistungsfähiger Funktionsbaustein 
 
 Der bereitgestellte Quelltext zeigt, wie der FB_TOF-Baustein in der Praxis implementiert werden kann, und bietet eine solide Grundlage für die Entwicklung ähnlicher Bausteine in industriellen Steuerungssystemen. Der zyklische Aufruf ist dabei ein entscheidender Faktor für die korrekte Funktionsweise des Bausteins.
 
-
 ## Vergleich E_TOF zu FB_TOF
-
 
 ### Kapitel 1: Der FB_TOF-Baustein
 

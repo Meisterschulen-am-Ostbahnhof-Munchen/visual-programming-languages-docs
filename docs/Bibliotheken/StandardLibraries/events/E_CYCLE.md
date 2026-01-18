@@ -2,10 +2,9 @@
 
 ```{index} single: E_CYCLE
 ```
+## 📺 Video
 
-<img width="1139" height="202" alt="E_CYCLE" src="https://user-images.githubusercontent.com/113907471/204306660-9e93e9cc-10f0-4d51-829f-229ee64a1227.png">
-
-* * * * * * * * * *
+* [E_CYCLE aus der IEC 61499 (Übung 84)](https://www.youtube.com/watch?v=PWJHijOPpFc)
 
 ## Einleitung
 Der `E_CYCLE` ist ein Funktionsbaustein nach IEC 61499, der als periodischer Ereignisgenerator dient. Nach dem Starten feuert der Baustein in einem festgelegten Zeitintervall (`DT`) wiederholt ein Ausgangsereignis (`EO`). Er ist das grundlegende Werkzeug zur Erstellung von Taktgebern und zyklischen Abläufen.

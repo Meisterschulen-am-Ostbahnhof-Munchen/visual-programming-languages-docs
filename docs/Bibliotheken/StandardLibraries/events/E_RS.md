@@ -2,10 +2,9 @@
 
 ```{index} single: E_RS
 ```
+## 📺 Video
 
-<img width="1139" height="202" alt="E_RS" src="https://user-images.githubusercontent.com/113907528/204902213-fedab003-82e3-4adf-ab40-fbb82a526c02.png">
-
-* * * * * * * * * *
+* [RS-Flip-Flop Baustein E_RS aus der IEC 61499 (Übung 006b)](https://www.youtube.com/watch?v=GXOe8K7Jgr0)
 
 ## Einleitung
 Der `E_RS` (Event-driven RS Flip-Flop) ist ein ereignisgesteuerter, bistabiler Funktionsbaustein nach IEC 61499. Er dient als grundlegendes Speicherelement, das durch separate "Set"- und "Reset"-Ereignisse gesteuert wird. Sein Ausgang `Q` behält seinen Zustand bei, bis ein entgegengesetztes Ereignis eintrifft.

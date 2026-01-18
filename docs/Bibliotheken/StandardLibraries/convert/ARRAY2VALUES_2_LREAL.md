@@ -47,8 +47,6 @@ Dieser Funktionsblock ist zustandslos. Jede Auslösung des `REQ`-Ereignisses fü
 
 ## Metadaten
 
-
-
 | Attribut | Wert |
 
 | :--- | :--- |
@@ -61,10 +59,6 @@ Dieser Funktionsblock ist zustandslos. Jede Auslösung des `REQ`-Ereignisses fü
 
 | 4diac-Paket | eclipse4diac::convert |
 
-
-
 ## Fazit
-
-
 
 Der `ARRAY2VALUES_2_LREAL`-Funktionsblock ist ein nützliches Werkzeug für die gezielte Umwandlung eines `LREAL`-Arrays der Größe 2 in zwei separate `LREAL`-Ausgänge. Er bietet eine einfache und effiziente Lösung für die Datenaufbereitung und Schnittstellenanpassung in 4diac-Anwendungen, bei denen diese spezifische Konvertierung erforderlich ist.

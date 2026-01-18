@@ -2,10 +2,10 @@
 
 ```{index} single: E_REND
 ```
+## 🎧 Podcast
 
-<img width="1139" height="202" alt="E_REND" src="https://user-images.githubusercontent.com/113907528/204900982-61a35320-e656-4b42-b0cf-43d8db93ebf0.png">
-
-* * * * * * * * * *
+* [E_REND: Ereignissynchronisation in IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_REND-Ereignissynchronisation-in-IEC-61499-e368co9)
+* [E_REND: Event Synchronization in IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/E_REND-Event-Synchronization-in-IEC-61499-e368cv2)
 
 ## Einleitung
 Der `E_REND` (Event Rendezvous) ist ein Funktionsbaustein nach IEC 61499, der als Synchronisationspunkt für zwei verschiedene Ereignisströme dient. Er feuert ein Ausgangsereignis erst dann, wenn er jeweils mindestens ein Ereignis von beiden seiner Eingänge empfangen hat. Dies entspricht einer logischen UND-Verknüpfung über die Zeit.

@@ -92,23 +92,3 @@ Besonders wertvoll für Hersteller von:
 - ISOBUS-Diagnosegeräten
 
 Die standardisierte Implementierung ermöglicht zuverlässigen Betrieb in heterogenen Systemumgebungen.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

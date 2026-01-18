@@ -2,5 +2,3 @@
 
 ```{index} single: Unidirectional USINT Adapter
 ```
-
-

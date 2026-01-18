@@ -68,8 +68,6 @@ Der `GET_AT_INDEX`-Baustein ist ein spezialisierter Baustein für den Array-Zugr
 
 ## Metadaten
 
-
-
 | Attribut | Wert |
 
 | :--- | :--- |
@@ -82,10 +80,6 @@ Der `GET_AT_INDEX`-Baustein ist ein spezialisierter Baustein für den Array-Zugr
 
 | 4diac-Paket | eclipse4diac::convert |
 
-
-
 ## Fazit
-
-
 
 Der `GET_AT_INDEX`-Funktionsblock ist ein elementarer und flexibler Baustein, der den direkten und indizierten Zugriff auf Array-Elemente ermöglicht. Seine Einfachheit und die Unterstützung generischer Datentypen (`ANY`) machen ihn zu einem vielseitigen Werkzeug in zahlreichen Automatisierungs- und Steuerungsanwendungen, bei denen Daten in geordneten Listen oder Tabellen vorliegen. Die korrekte Anwendung erfordert lediglich die Beachtung der Datentyp-Kompatibilität und des gültigen Indexbereichs.

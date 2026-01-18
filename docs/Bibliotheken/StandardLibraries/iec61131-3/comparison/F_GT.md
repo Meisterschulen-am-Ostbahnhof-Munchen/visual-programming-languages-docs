@@ -3,19 +3,13 @@
 ```{index} single: F_GT
 ```
 
-
-
-
 ![F_GT](https://user-images.githubusercontent.com/116869307/214144462-1c7d92c0-429d-443e-a766-64c3e94c0a0b.png)
 
-
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_gt.html>
-
 
 * * * * * * * * * *
 
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
-
 
 **Der GT-Operator in IEC 61499: Eine Einführung**
 
@@ -83,25 +77,3 @@ Hierbei sind `Eingang1` und `Eingang2` die beiden Werte, die verglichen werden s
 ### Fazit
 
 Der GT-Operator ist ein wichtiges Werkzeug in der IEC 61499, das die Implementierung von numerischen Vergleichen in industriellen Steuerungssystemen vereinfacht. Seine Fähigkeit, festzustellen, ob ein Wert größer als ein anderer Wert ist, macht ihn zu einem unverzichtbaren Bestandteil in der Prozessüberwachung, Regelung und Entscheidungsfindung. Ob in der Produktionssteuerung, Temperaturregelung oder Energieverbrauchsüberwachung – der GT-Operator ist ein leistungsstarkes und vielseitiges Element in der Welt der industriellen Automatisierung. Durch seine Einfachheit und Effizienz trägt er dazu bei, die Entwicklung von zuverlässigen und effektiven Steuerungssystemen zu unterstützen.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

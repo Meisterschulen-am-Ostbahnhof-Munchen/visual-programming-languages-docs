@@ -3,14 +3,10 @@
 ```{index} single: DualCAN hex-output ESP32
 ```
 
-
-
 ## CAN-BUS
 
 CAN-TX 21
 CAN-RX 35
-
-
 
 ## IO
 
@@ -30,16 +26,11 @@ CAN-RX 35
     ADC1_CHANNEL_5,     /*!< ADC1 channel 5 is GPIO33 */
     ADC1_CHANNEL_6,     /*!< ADC1 channel 6 is GPIO34 */
 
-
 ```
-
 
 Spannungsteiler ist im Controller:
 47/13 --> alle anderen Eingänge sowie die CAN2 DI Eingänge
 10/10 --> Eingänge I1/I2 - Ideal für 5V Singale
-
-
-
 
 ### Digitale Eingänge
 
@@ -50,14 +41,12 @@ Spannungsteiler ist im Controller:
 | Input_I3 | 34            |
 | Input_I4 | 33            |
 
-
 ### Digitale Eingänge (CAN2)
 
 2CAN-I1
 2CAN-I2
 
 Diese Eingänge haben einen Spannungsteiler im Controller: 47/13 --> und einen Schmitt Trigger.
-
 
 ### Digitale Ausgänge
 

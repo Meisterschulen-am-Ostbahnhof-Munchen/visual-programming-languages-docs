@@ -60,8 +60,6 @@ Dieser Funktionsblock ist spezifisch für die Konvertierung von zwei LREAL-Werte
 
 ## Metadaten
 
-
-
 | Attribut | Wert |
 
 | :--- | :--- |
@@ -74,10 +72,6 @@ Dieser Funktionsblock ist spezifisch für die Konvertierung von zwei LREAL-Werte
 
 | 4diac-Paket | eclipse4diac::convert |
 
-
-
 ## Fazit
-
-
 
 Der `VALUES2ARRAY_2_LREAL` ist ein nützlicher und effizienter Funktionsblock für die spezifische Aufgabe, zwei LREAL-Werte in ein fest dimensioniertes LREAL-Array umzuwandeln. Seine Einfachheit und ereignisgesteuerte Arbeitsweise machen ihn zu einem klaren Bestandteil in Szenarien, wo eine solche Datenbündelung erforderlich ist, und tragen zur Modularität und Lesbarkeit der Applikation bei.

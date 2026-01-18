@@ -5,7 +5,6 @@
 
 ![Q_BackgroundColourAux](https://github.com/user-attachments/assets/dfa37a79-ba8b-4fe0-bc04-0020e47257ee)
 
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -94,45 +93,3 @@ Idealer Einsatz bei:
 - Komplexen Anzeigelayouts
 - Mehrschichtigen Visualisierungen
 - Systemen mit erweitertem Farbmanagement
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

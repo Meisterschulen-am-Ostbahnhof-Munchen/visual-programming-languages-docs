@@ -36,7 +36,6 @@ In diesem Artikel werden insgesamt sieben verschiedene WLAN USB-Adapter getestet
 
 TODO Edimax EW-7611ULB
 
-
 Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS getestet, um ihre Funktionalität und ihre Fähigkeit zur sofortigen Erkennung ohne Treiberinstallation zu bewerten. Der Artikel gibt einen Überblick über die Ergebnisse des Tests und zeigt, welche Adapter ohne Probleme funktionieren und welche eventuell zusätzliche Schritte erfordern. Insgesamt wird der Artikel eine wertvolle Ressource für jeden sein, der einen WLAN USB-Adapter unter Windows 10 oder Ubuntu 22.04 LTS verwenden möchte.
 
 ---

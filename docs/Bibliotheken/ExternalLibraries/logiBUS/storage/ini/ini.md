@@ -2,10 +2,22 @@
 
 ```{index} single: INI
 ```
+## 🎧 Podcast
 
-<img width="1844" height="338" alt="image" src="https://github.com/user-attachments/assets/e5a9c5f0-2b32-4d82-8784-a0c476e5142a" />
+* [Der E_CTU in der IEC 61499: Ereignisgesteuertes Zählen und warum der Minimalist im Maschinenbau überzeugt](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-in-der-IEC-61499-Ereignisgesteuertes-Zhlen-und-warum-der-Minimalist-im-Maschinenbau-berzeugt-e3a9qnq)
+* [From "Mass Errors" to Masterpiece: Streamlining Industrial Software by Eliminating Mapping](https://podcasters.spotify.com/pod/show/logibus/episodes/From-Mass-Errors-to-Masterpiece-Streamlining-Industrial-Software-by-Eliminating-Mapping-e3759t4)
+* [Das Kettenmonster erwacht: Lanz Bulldog Raupe – Die faszinierende Wiederbelebung des 10-Liter-Glühkopf-Arbeitstiers nach 25 Jahren Stillstand](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Kettenmonster-erwacht-Lanz-Bulldog-Raupe--Die-faszinierende-Wiederbelebung-des-10-Liter-Glhkopf-Arbeitstiers-nach-25-Jahren-Stillstand-e39arpd)
+* [Meister des Wandels: Wie der Lehrplan für Land- und Baumaschinenmechatroniker lebenslanges Lernen neu definiert](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Meister-des-Wandels-Wie-der-Lehrplan-fr-Land--und-Baumaschinenmechatroniker-lebenslanges-Lernen-neu-definiert-e38di5u)
+* [Miniware TS101: Das mobile Löt-Multitalent – Stärken, Schwächen und die USB-C Revolution](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Miniware-TS101-Das-mobile-Lt-Multitalent--Strken--Schwchen-und-die-USB-C-Revolution-e368lka)
 
-* * * * * * * * * *
+## 📺 Video
+
+* [2025-01-28 17-51-25  logiBUS® Projektupdate und EInit (leider ohne Ton)](https://www.youtube.com/watch?v=OBNqWd_gZVU)
+* [2025-01-28 20-01-36 logiBUS® Projektupdate und EInit (jetzt mit Ton)](https://www.youtube.com/watch?v=h-tzDyRtiHo)
+* [2025-12-14 19-53-53 Installation Eclipse 4diac™ IDE 3.0.0 und Import des Training1 Projektes](https://www.youtube.com/watch?v=O3S1o_NUyvc)
+* [2025-12-14 20-03-27 Aufspielen Training 1 Übung 1 auf das Hutschienenmoped.](https://www.youtube.com/watch?v=6iog7-DZvW0)
+* [Das Kettenmonster erwacht: Lanz Bulldog Raupe – Die faszinierende Wiederbelebung des 10-Liter-Glü...](https://www.youtube.com/watch?v=OLSw_A64qOI)
+
 ## Einleitung
 Der INI-Funktionsblock ermöglicht das Laden und Speichern von Daten in einer `settings.ini`-Datei. Er bietet eine einfache Schnittstelle, um Werte anhand eines Sektionsnamens (SECTION) und eines Schlüssels (KEY) persistent zu verwalten. Der Block ist besonders nützlich für die Konfigurationsverwaltung in 4diac FORTE Applikationen, z.B. für das Setzen und Abrufen von Parametern wie IP-Adressen, Schwellwerten oder Betriebsmodi.
 

@@ -58,8 +58,6 @@ Der `STRUCT_DEMUX` ist ein zustandsloser Baustein, der nach einem einfachen Anfo
 
 ## Metadaten
 
-
-
 | Attribut | Wert |
 
 | :--- | :--- |
@@ -72,10 +70,6 @@ Der `STRUCT_DEMUX` ist ein zustandsloser Baustein, der nach einem einfachen Anfo
 
 | 4diac-Paket | eclipse4diac::convert |
 
-
-
 ## Fazit
-
-
 
 `STRUCT_DEMUX` ist ein fundamentaler und äußerst nützlicher Baustein für die Arbeit mit Datenstrukturen in 4diac. Seine Fähigkeit, jede beliebige Struktur automatisch in ihre Bestandteile zu zerlegen, vereinfacht die Anwendungslogik erheblich und fördert eine klare, lesbare Verdrahtung. Er ist das Standardwerkzeug, um auf die Inhalte von Strukturen zuzugreifen.

@@ -5,7 +5,6 @@
 
 ![F_NOW_MONOTONIC](https://github.com/user-attachments/assets/ae1652e1-fcca-44f4-aa16-c1cfa5a794cd)
 
-
 * * * * * * * * * *
 
 ## Einleitung

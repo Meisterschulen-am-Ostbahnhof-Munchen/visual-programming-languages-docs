@@ -18,6 +18,18 @@ Diese Version ist der perfekte Startpunkt in die Welt der digitalen Agrartechnik
 
 Wählen Sie diese Version, wenn Sie eine robuste und preiswerte Lösung für alltägliche Automatisierungsaufgaben suchen.
 
+## 🎧 Podcast
+
+* [Hutschienenmoped XL: ISOBUS ECU Entwicklung](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Hutschienenmoped-XL-ISOBUS-ECU-Entwicklung-e368hdg)
+
+## 📺 Video
+
+* [2025 11 15 12 35 11 Montage Hutschienenmoped logiBUS® -- Teil 3 -- Gehäuse](https://www.youtube.com/watch?v=MPm4vLmD5RE)
+* [2025 11 15 12 52 26 Montage Hutschienenmoped logiBUS® -- Teil 4 -- Aufbauten](https://www.youtube.com/watch?v=WeowCxZW70Y)
+* [2025-02-23 11-43-44 Fusion 360 Übersicht Tutorials](https://www.youtube.com/watch?v=djM9ndIfp-0)
+* [2025-11-13 17-50-42 Montage Hutschienenmoped logiBUS® -- Teil 1 -- Einführung und Löten](https://www.youtube.com/watch?v=HWBMBVLMPiw)
+* [2025-11-15 12-19-33 Montage Hutschienenmoped logiBUS® -- Teil 2 -- Einführung und Löten](https://www.youtube.com/watch?v=nohE36SZY9M)
+
 ---
 
 **2. Das neue Hutschienenmoped S3 (Basis: ESP32-S3)**
@@ -38,4 +50,3 @@ Wählen Sie das S3-Modell, wenn Sie anspruchsvolle Projekte planen, maximale Per
 Hutschienenmoped
 HutschienenmopedXL
 ```
-

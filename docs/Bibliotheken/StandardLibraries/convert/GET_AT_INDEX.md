@@ -6,6 +6,10 @@
 <img width="1341" height="212" alt="image" src="https://github.com/user-attachments/assets/05b8aa7e-9c77-4a15-8787-2bd7d986a846" />
 
 * * * * * * * * * *
+## 🎧 Podcast
+
+* [LogiBUS zu 4diac 3.0: Die Komplette Migrationsanleitung – Kniffe, Stolpersteine und der Umstieg auf Index 1](https://podcasters.spotify.com/pod/show/logibus/episodes/LogiBUS-zu-4diac-3-0-Die-Komplette-Migrationsanleitung--Kniffe--Stolpersteine-und-der-Umstieg-auf-Index-1-e3ahcru)
+
 ## Einleitung
 Dieser Funktionsblock (FB) dient dazu, einen Wert aus einem Array an einer spezifischen Indexposition abzurufen. Eine wichtige Voraussetzung für die korrekte Funktionsweise ist, dass der Datentyp des Eingabe-Arrays mit dem Datentyp des Ausgabewerts übereinstimmt. Es handelt sich um einen grundlegenden Baustein für den Zugriff auf Array-Elemente.
 

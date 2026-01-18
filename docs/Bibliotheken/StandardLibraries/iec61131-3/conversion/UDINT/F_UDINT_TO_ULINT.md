@@ -6,6 +6,10 @@
 <img width="1470" height="216" alt="F_UDINT_TO_ULINT" src="https://github.com/user-attachments/assets/71a1772b-ddff-44fd-b7e6-9dcd0ad29c71" />
 
 * * * * * * * * * *
+## 📺 Video
+
+* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
+
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_ULINT` dient der Konvertierung eines 32-Bit-unsigned-Integer-Werts (UDINT) in einen 64-Bit-unsigned-Integer-Wert (ULINT). Dieser Baustein ist besonders nützlich, wenn Daten zwischen Systemen oder Komponenten ausgetauscht werden, die unterschiedliche Integer-Größen verwenden.
 

@@ -6,6 +6,10 @@
 ![SPLIT_DWORD_INTO_QUARTERS](https://github.com/user-attachments/assets/140e8baa-2ae9-4977-91b3-1a7b608f9f12)
 
 * * * * * * * * * *
+## 🎧 Podcast
+
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ## Einleitung
 Der Funktionsblock `SPLIT_DWORD_INTO_QUARTERS` dient dazu, ein 32-Bit-Wort (DWORD) in seine 16 einzelnen 4-Bit-Blöcke (QUARTER_BYTE) aufzuteilen. Jeder dieser 4-Bit-Blöcke wird als separate BYTE-Variable ausgegeben. Der Block ist besonders nützlich, wenn einzelne Teile eines DWORDs separat verarbeitet oder analysiert werden müssen.
 

@@ -5,6 +5,10 @@
 
 * * * * * * * * * *
 
+## 📺 Video
+
+* [E_CYCLE aus der IEC 61499 (Übung 84)](https://www.youtube.com/watch?v=PWJHijOPpFc)
+
 ## Einleitung
 Der RT_E_CYCLE Funktionsblock implementiert eine periodische Ereigniserzeugung (Zyklus) mit Echtzeiteigenschaften. Er ermöglicht das Definieren von Deadlines und Ausführungszeiten (WCET).
 

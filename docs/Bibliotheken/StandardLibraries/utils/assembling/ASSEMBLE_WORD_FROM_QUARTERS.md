@@ -6,6 +6,10 @@
 ![ASSEMBLE_WORD_FROM_QUARTERS](https://github.com/user-attachments/assets/6677028d-5ee1-4e7f-80d6-df3177ab9181)
 
 * * * * * * * * * *
+## 🎧 Podcast
+
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ## Einleitung
 Der Funktionsblock `ASSEMBLE_WORD_FROM_QUARTERS` kombiniert 8 Quarter-Bytes zu einem WORD. Dies ist besonders nützlich, wenn Daten in kleineren Einheiten vorliegen und zu einer größeren Einheit zusammengefügt werden müssen.
 

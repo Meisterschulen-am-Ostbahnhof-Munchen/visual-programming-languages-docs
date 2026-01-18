@@ -6,6 +6,10 @@
 <img width="1139" height="259" alt="E_CTUD_UDINT" src="https://user-images.githubusercontent.com/116869307/214142444-55a16971-caf0-4c6c-a1fa-c0294a26464a.png">
 
 * * * * * * * * * *
+## 📺 Video
+
+* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
+
 ## Einleitung
 Der `E_CTUD_UDINT` ist eine Variante des `E_CTUD`-Zählers, die den Datentyp `UDINT` (Unsigned Double Integer, 32-Bit) verwendet. Dieser ereignisgesteuerte Vor- und Rückwärtszähler kann einen sehr großen Zählerbereich abdecken. Er kann einen Zählerwert basierend auf separaten Ereignissen inkrementieren, dekrementieren, zurücksetzen oder mit einem vordefinierten Wert laden.
 

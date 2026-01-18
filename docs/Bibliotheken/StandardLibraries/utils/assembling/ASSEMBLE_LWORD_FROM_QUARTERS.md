@@ -6,6 +6,10 @@
 ![ASSEMBLE_LWORD_FROM_QUARTERS](https://github.com/user-attachments/assets/c6bc85a7-e9e1-4464-b725-6d168027e7af)
 
 * * * * * * * * * *
+## 🎧 Podcast
+
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ## Einleitung
 Der Funktionsblock `ASSEMBLE_LWORD_FROM_QUARTERS` kombiniert 32 Byte-Werte (QUARTER_BYTE_00 bis QUARTER_BYTE_31) zu einem 64-Bit LWORD-Wert. Dies ist besonders nützlich, wenn Daten in kleineren Einheiten vorliegen und zu einem größeren Datenwort zusammengesetzt werden müssen.
 

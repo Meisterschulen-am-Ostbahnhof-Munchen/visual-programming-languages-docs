@@ -7,6 +7,11 @@
 
 * * * * * * * * * *
 
+## 📺 Video
+
+* [2025-12-14 20-13-12 Hutschienenmoped Merged Bin aufspielen per ESPTOOL js.](https://www.youtube.com/watch?v=XwtH1p5uw88)
+* [Hutschienenmoped flashen mit der Merged Flash](https://www.youtube.com/watch?v=y7wVxIezsHA)
+
 ## Einleitung
 Der AE2_SPLIT_MERGE ist ein bidirektionaler Splitter- und Merger-Funktionsblock, der Ereignisse in beide Richtungen verarbeiten kann. Der Baustein ermöglicht die Verteilung und Zusammenführung von Ereignissen über Adapterschnittstellen, wobei keine direkte Weiterleitung zwischen SOCKET und PLUG erfolgt.
 

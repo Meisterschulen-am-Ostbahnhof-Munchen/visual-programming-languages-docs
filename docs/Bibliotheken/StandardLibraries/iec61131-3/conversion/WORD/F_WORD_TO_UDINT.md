@@ -6,6 +6,10 @@
 <img width="1455" height="214" alt="F_WORD_TO_UDINT" src="https://github.com/user-attachments/assets/0620ecfb-f811-4aea-b442-967e54ac35c8" />
 
 * * * * * * * * * *
+## 📺 Video
+
+* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
+
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_UDINT` dient der Konvertierung eines `WORD`-Datentyps in einen `UDINT`-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, bei denen eine Typumwandlung erforderlich ist, um Daten für weitere Verarbeitungsschritte vorzubereiten.
 

@@ -7,6 +7,11 @@
 
 * * * * * * * * * *
 
+## 📺 Video
+
+* [2025-12-14 19-53-53 Installation Eclipse 4diac™ IDE 3.0.0 und Import des Training1 Projektes](https://www.youtube.com/watch?v=O3S1o_NUyvc)
+* [2025-12-14 20-03-27 Aufspielen Training 1 Übung 1 auf das Hutschienenmoped.](https://www.youtube.com/watch?v=6iog7-DZvW0)
+
 ## Einleitung
 Der `E_TRAIN` (Event Train) ist ein Funktionsbaustein nach IEC 61499, der eine endliche Folge von Ereignissen ("Ereigniszug") mit einem festen Zeitabstand generiert. Nach dem Start werden `N` Ereignisse im Abstand von `DT` erzeugt.
 

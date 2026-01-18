@@ -6,6 +6,15 @@
 <img width="1478" height="315" alt="image" src="https://github.com/user-attachments/assets/1892e226-bd9b-4dfc-bda7-8458f0a53619" />
 
 * * * * * * * * * *
+## 🎧 Podcast
+
+* [Strip-Till im Maisanbau: Wie Hochpräzision Wasser spart und den Boden schützt – Einblick in die Agrartechnik 2024](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Strip-Till-im-Maisanbau-Wie-Hochprzision-Wasser-spart-und-den-Boden-schtzt--Einblick-in-die-Agrartechnik-2024-e3ahcvp)
+
+## 📺 Video
+
+* [Die Strip-Till-Revolution](https://www.youtube.com/watch?v=HF9KDKdOd0E)
+* [Strip-Till im Maisanbau: Wie Hochpräzision Wasser spart und den Boden schützt – Einblick in die A...](https://www.youtube.com/watch?v=DNqc0vuEKSU)
+
 ## Einleitung
 Der Funktionsblock `strip_set_pixel` dient zur Steuerung einer RGB-LED-Leiste. Seine Hauptaufgabe ist es, die Farbe eines einzelnen Pixels (einer einzelnen LED) auf der Leiste zu setzen oder die gesamte Leiste auszuschalten. Er ist für den Einsatz in Steuerungssystemen konzipiert, die eine präzise, pixelweise Ansteuerung von RGB-LEDs erfordern.
 

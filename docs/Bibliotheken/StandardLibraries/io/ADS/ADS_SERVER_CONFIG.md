@@ -7,6 +7,10 @@
 
 * * * * * * * * * *
 
+## 🎧 Podcast
+
+* [From Pyramid to Plug-and-Play: The Rise of Self-Configurable Industrial Automation](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/From-Pyramid-to-Plug-and-Play-The-Rise-of-Self-Configurable-Industrial-Automation-e368lvk)
+
 ## Einleitung
 Der ADS_SERVER_CONFIG Funktionsblock dient zur Konfiguration von ADS-Server-Verbindungen in 4diac-Systemen. Er ermöglicht die Initialisierung und Parametrisierung von Verbindungseinstellungen für ADS-Kommunikation, die in nachgelagerten IO-Funktionsblöcken verwendet werden kann.
 

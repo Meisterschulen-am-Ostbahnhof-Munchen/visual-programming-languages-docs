@@ -6,6 +6,11 @@
 <img width="1487" height="288" alt="image" src="https://github.com/user-attachments/assets/b4e62664-7544-420c-a039-36905d34d735" />
 
 * * * * * * * * * *
+## 🎧 Podcast
+
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+* [Das Geheimnis des 2-Bit-Quarter: Effizienz im CAN-Bus für Nutzfahrzeuge](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Das-Geheimnis-des-2-Bit-Quarter-Effizienz-im-CAN-Bus-fr-Nutzfahrzeuge-e3673bk)
+
 ## Einleitung
 Der Funktionsblock `QUARTER_TO_E` dient dazu, einen 2-Bit-Zustandswert (ein sogenanntes "Quarter Byte") in vier verschiedene, eindeutige Ereignisse zu übersetzen. Er ist ein Hilfsbaustein, der häufig in Verbindung mit Bausteinen verwendet wird, die mehr als die üblichen zwei Zustände (EIN/AUS) melden, wie z.B. Statusmeldungen von Geräten, die auch Fehler- oder Nicht-Verfügbarkeitszustände anzeigen können.
 

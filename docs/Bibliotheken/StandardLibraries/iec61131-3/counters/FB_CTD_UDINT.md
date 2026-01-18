@@ -6,6 +6,10 @@
 <img width="1411" height="282" alt="FB_CTD_UDINT" src="https://github.com/user-attachments/assets/a8aab825-6766-4328-b0cb-4b841157bc33" />
 
 * * * * * * * * * *
+## 📺 Video
+
+* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
+
 ## Einleitung
 Der Funktionsblock `FB_CTD_UDINT` ist ein Abwärtszähler (Down Counter) für vorzeichenlose 32-Bit-Ganzzahlen (UDINT). Er wird verwendet, um einen Zählerwert bei jedem Ereignis herunterzuzählen, bis er Null erreicht.
 

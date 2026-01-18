@@ -3,6 +3,10 @@
 ```{index} single: Bücher Englisch
 ```
 
+## 🎧 Podcast
+
+* [Architektonisches Duell in München: König Ludwigs Palast-Vision, Gärtners Bücherkaserne und die gehe](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Architektonisches-Duell-in-Mnchen-Knig-Ludwigs-Palast-Vision--Grtners-Bcherkaserne-und-die-gehe-e38tb8e)
+
 ## IEC 61499 Function Blocks for Embedded and Distributed Control Systems Design
 
 ### Über das Buch

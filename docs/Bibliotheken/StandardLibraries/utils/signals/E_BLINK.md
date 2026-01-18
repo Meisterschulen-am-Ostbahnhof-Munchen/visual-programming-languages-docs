@@ -7,6 +7,10 @@
 
 * * * * * * * * * *
 
+## 🎧 Podcast
+
+* [4diac IDE: Dein "Hello World" der Automatisierung – Das Blinking Tutorial Lokal](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)
+
 ## Einleitung
 Der E_BLINK Funktionsblock simuliert ein blinkendes Signal, das zwischen den Zuständen TRUE und FALSE wechselt. Die Dauer der einzelnen Zustände kann individuell konfiguriert werden. Im Gegensatz zu ähnlichen Implementierungen kehrt dieser Funktionsblock beim STOP-Ereignis immer auf FALSE zurück.
 

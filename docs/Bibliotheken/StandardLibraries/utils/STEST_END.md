@@ -7,6 +7,10 @@
 
 * * * * * * * * * *
 
+## 🎧 Podcast
+
+* [G50 Hackgut Stresstest Was die Heizung knackt](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/G50-Hackgut-Stresstest-Was-die-Heizung-knackt-e3chov8)
+
 ## Einleitung
 Der Funktionsblock STEST_END ist ein Service Interface Function Block, der als Endpunkt für Service-Anfragen dient. Er wird typischerweise in Verbindung mit anderen Service-Funktionsblöcken verwendet, um eine Service-orientierte Architektur in 4diac-IDE zu implementieren.
 

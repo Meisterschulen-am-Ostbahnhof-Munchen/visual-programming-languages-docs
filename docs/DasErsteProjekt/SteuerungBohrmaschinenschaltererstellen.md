@@ -1,6 +1,22 @@
 
 # Steuerung Bohrmaschinenschalter erstellen
 
+## 🎧 Podcast
+
+* [Eclipse 4diac FORTE: IEC 61499 verstehen – Der LEGO®-Baukasten für Ihre Industrie 4.0 Steuerung](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-FORTE-IEC-61499-verstehen--Der-LEGO-Baukasten-fr-Ihre-Industrie-4-0-Steuerung-e3682kc)
+* [Eclipse 4diac: Open Source als Game Changer für industrielle Steuerungen?](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Open-Source-als-Game-Changer-fr-industrielle-Steuerungen-e372eru)
+* [DIN EN 61499-1 Entschlüsselt: Der Bauplan für modulare, verteilte Steuerungssysteme](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Entschlsselt-Der-Bauplan-fr-modulare--verteilte-Steuerungssysteme-e367nmj)
+* [DIN EN 61499-1: Die Lego-Steine für flexible und ereignisgesteuerte Industriesteuerungen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Die-Lego-Steine-fr-flexible-und-ereignisgesteuerte-Industriesteuerungen-e3681o1)
+* [DIN EN 61499-1: Revolution in der Steuerungstechnik – Modulare, ereignisgesteuerte Systeme verstehen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Revolution-in-der-Steuerungstechnik--Modulare--ereignisgesteuerte-Systeme-verstehen-e367nse)
+
+## 📺 Video
+
+* [2025-03-30 16-40-13 Softkey Ansteuerung Übung 10b2](https://www.youtube.com/watch?v=RLUNzsGLVw8)
+* [DIN EN 61499: Industrielle Steuerungen modular und ereignisbasiert mit Funktionsbausteinen meiste...](https://www.youtube.com/watch?v=fD6yS9dQVLY)
+* [Hutschienenmoped Verbindung herstellen per WLAN](https://www.youtube.com/watch?v=f74-3ga0Gns)
+* [IEC 61499-1: Der Funktionsbaustein – Lego-Prinzip für moderne Steuerungssysteme in Land- und Baum...](https://www.youtube.com/watch?v=GyOoLXcGY2w)
+* [logiBUS® ohne Mapping: Revolution in der Steuerungstechnik – Vereinfachung, Vorteile und Umstellu...](https://www.youtube.com/watch?v=6Rdq7fvgi3U)
+
 ```{index} single: Steuerung Bohrmaschinenschalter erstellen
 ```
 

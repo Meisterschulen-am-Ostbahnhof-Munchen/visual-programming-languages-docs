@@ -7,6 +7,10 @@
 
 * * * * * * * * * *
 
+## 🎧 Podcast
+
+* [Ereignisse und IEC 61499: Der Startschuss für intelligente Systeme](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Ereignisse-und-IEC-61499-Der-Startschuss-fr-intelligente-Systeme-e368461)
+
 ## Einleitung
 
 Der EC_START_ELEM Funktionsblock dient zum Starten von Instanzen gemäß dem Zustandsautomaten von IEC 61499 Funktionsblöcken. Er ermöglicht das gezielte Starten von Funktionsblock-Instanzen, Verbindungen (Ereignis/Daten), Ressourcen oder Geräten innerhalb eines verteilten Automatisierungssystems.

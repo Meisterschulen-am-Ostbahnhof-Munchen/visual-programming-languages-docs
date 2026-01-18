@@ -6,6 +6,11 @@
 <img width="1677" height="214" alt="image" src="https://github.com/user-attachments/assets/78d7da91-c9c9-424a-a08b-2ac7b67c5662" />
 
 * * * * * * * * * *
+## 🎧 Podcast
+
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+* [Das Geheimnis des 2-Bit-Quarter: Effizienz im CAN-Bus für Nutzfahrzeuge](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Das-Geheimnis-des-2-Bit-Quarter-Effizienz-im-CAN-Bus-fr-Nutzfahrzeuge-e3673bk)
+
 ## Einleitung
 Der Funktionsblock `BOOL_TO_QUARTER` dient der Konvertierung eines binären BOOL-Signals in ein spezielles, vordefiniertes Quartal-Byte (quarter byte). Er übersetzt die logischen Zustände `TRUE` und `FALSE` in entsprechende, semantisch bedeutungsvolle Byte-Konstanten, die typischerweise für Steuerbefehle (z. B. ENABLE/DISABLE) verwendet werden. Dieser Baustein ist Teil der `logiBUS::utils::quarter`-Bibliothek.
 

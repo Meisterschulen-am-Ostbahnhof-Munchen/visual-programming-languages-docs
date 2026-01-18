@@ -6,6 +6,10 @@
 <img width="1446" height="212" alt="F_UDINT_TO_INT" src="https://github.com/user-attachments/assets/e374f818-7a4c-400e-8da2-7b27a801baf9" />
 
 * * * * * * * * * *
+## 📺 Video
+
+* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
+
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_INT` dient der Konvertierung eines `UDINT`-Wertes (32-Bit vorzeichenlose Ganzzahl) in einen `INT`-Wert (16-Bit vorzeichenbehaftete Ganzzahl). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen oder Komponenten ausgetauscht werden müssen, die unterschiedliche Datentypen verwenden.
 

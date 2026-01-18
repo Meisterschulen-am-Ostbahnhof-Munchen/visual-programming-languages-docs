@@ -7,6 +7,10 @@
 
 * * * * * * * * * *
 
+## 🎧 Podcast
+
+* [Unlock Simultaneous Connectivity: Your Guide to Dual Wi-Fi for Uninterrupted Local Device Control](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Unlock-Simultaneous-Connectivity-Your-Guide-to-Dual-Wi-Fi-for-Uninterrupted-Local-Device-Control-e3756vt)
+
 ## Einleitung
 Der SET_LOCAL_ADS_ADDRESS Funktionsblock ist ein Service Interface Function Block zur Konfiguration der lokalen ADS-Adresse. ADS (Automation Device Specification) ist ein Kommunikationsprotokoll, das häufig in der Automatisierungstechnik verwendet wird. Dieser Baustein ermöglicht die dynamische Einstellung der lokalen ADS-Adresse während der Laufzeit.
 

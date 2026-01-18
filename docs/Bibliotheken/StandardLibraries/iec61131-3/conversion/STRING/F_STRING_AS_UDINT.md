@@ -6,6 +6,10 @@
 <img width="1478" height="220" alt="F_STRING_AS_UDINT" src="https://github.com/user-attachments/assets/703603e7-5595-4570-8772-7efeb1ea4785" />
 
 * * * * * * * * * *
+## 📺 Video
+
+* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
+
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_UDINT` dient der Konvertierung eines `STRING`-Wertes in einen `UDINT`-Wert (unsigned double integer). Er ist Teil des Pakets `iec61131::conversion` und ermöglicht die einfache Umwandlung von Zeichenketten in numerische Werte.
 

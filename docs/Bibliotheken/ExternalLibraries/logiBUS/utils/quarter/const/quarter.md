@@ -4,6 +4,11 @@
 ```
 
 * * * * * * * * * *
+## 🎧 Podcast
+
+* [Das Geheimnis des 2-Bit-Quarter: Effizienz im CAN-Bus für Nutzfahrzeuge](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Das-Geheimnis-des-2-Bit-Quarter-Effizienz-im-CAN-Bus-fr-Nutzfahrzeuge-e3673bk)
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ## Einleitung
 Die `quarter`-Bibliothek ist eine Sammlung globaler Konstanten, die für die Arbeit mit SAE J1939-konformen Status- und Befehlswerten in logiBUS-Anwendungen vorgesehen ist. Sie definiert standardisierte 2-Bit-Werte (repräsentiert als `BYTE`) und zugehörige Klartextbeschreibungen (`STRING`) für Zustände und Steuerbefehle. Diese Konstanten dienen der Vereinheitlichung und verbesserten Lesbarkeit von Code, der mit binären Statusinformationen und Steuerkommandos arbeitet.
 

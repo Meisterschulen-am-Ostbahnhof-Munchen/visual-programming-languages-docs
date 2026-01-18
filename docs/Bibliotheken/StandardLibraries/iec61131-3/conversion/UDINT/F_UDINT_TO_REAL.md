@@ -6,6 +6,10 @@
 <img width="1450" height="216" alt="F_UDINT_TO_REAL" src="https://github.com/user-attachments/assets/8be282c0-424f-4a10-8a26-e020cf9c2cc9" />
 
 * * * * * * * * * *
+## 📺 Video
+
+* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
+
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_REAL` dient der Konvertierung eines vorzeichenlosen 32-Bit-Integer-Werts (`UDINT`) in einen 32-Bit-Gleitkommawert (`REAL`). Dieser Baustein ist besonders nützlich in Szenarien, wo numerische Werte unterschiedlicher Datentypen verarbeitet werden müssen.
 

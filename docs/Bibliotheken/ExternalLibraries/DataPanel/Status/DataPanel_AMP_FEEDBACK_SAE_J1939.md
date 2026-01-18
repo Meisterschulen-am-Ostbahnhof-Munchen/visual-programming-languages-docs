@@ -5,6 +5,10 @@
 
 Amperage Feedback of 1 DataPanel Node
 
+## 📺 Video
+
+* [Schulungsvideo logiBUS® CAN - SAE J1939 Kommunikation](https://www.youtube.com/watch?v=lA8lygx9598)
+
 ## Interface
 
 ### Event Inputs

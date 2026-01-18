@@ -7,6 +7,11 @@
 
 * * * * * * * * * *
 
+## 📺 Video
+
+* [2025-12-14 20-13-12 Hutschienenmoped Merged Bin aufspielen per ESPTOOL js.](https://www.youtube.com/watch?v=XwtH1p5uw88)
+* [Hutschienenmoped flashen mit der Merged Flash](https://www.youtube.com/watch?v=y7wVxIezsHA)
+
 ## Einleitung
 Der `E_MERGE_4` ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der vier Ereignisströme (`EI1` bis `EI4`) zu einem einzigen Ausgang (`EO`) zusammenführt. Diese logische ODER-Verknüpfung von Ereignissen ist essentiell für die Steuerungslogik in industriellen Automatisierungssystemen.
 

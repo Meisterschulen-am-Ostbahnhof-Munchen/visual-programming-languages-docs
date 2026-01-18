@@ -5,6 +5,11 @@
 
 Hier finden Sie Standardfunktionen für arithmetische Operationen (Addition, Subtraktion, Multiplikation, Division etc.).
 
+## 📺 Video
+
+* [2025-03-15 15-57-14 Arithmetischer Überlauf](https://www.youtube.com/watch?v=TLanGc-c9Ww)
+* [2025-03-15 16-27-21 Arithmetischer Überlauf führt zu Division durch 0.](https://www.youtube.com/watch?v=7CyOJPYJVz0)
+
 ```{toctree}
 ADD_2
 ADD_3

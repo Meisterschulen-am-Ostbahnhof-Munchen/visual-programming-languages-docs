@@ -7,6 +7,10 @@
 
 * * * * * * * * * *
 
+## 📺 Video
+
+* [2025-02-02 18-21-50 Uebung_006c Funktion E_DEMUX8 und ..._DI_REPEAT](https://www.youtube.com/watch?v=fOSa4_A7-dE)
+
 ## Einleitung
 Der AX_DEMUX_4 ist ein generischer Demultiplexer-Funktionsblock, der eingehende Daten über einen Adapter-Eingang empfängt und basierend auf einem Indexwert selektiv an einen von vier Ausgangsadaptern weiterleitet. Der Baustein dient zur Verteilung von Datenströmen in verteilten Automatisierungssystemen.
 

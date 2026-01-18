@@ -3,6 +3,20 @@
 ```{index} single: Videos Deutsch
 ```
 
+## 🎧 Podcast
+
+* [Das Technologie-Panorama von 1863: Lanz & Comp. und die Revolution der deutschen Landwirtschaft durch Import, Innovation und Guano](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Technologie-Panorama-von-1863-Lanz--Comp--und-die-Revolution-der-deutschen-Landwirtschaft-durch-Import--Innovation-und-Guano-e39auqa)
+* [Industrie 4.0: Hype oder Revolution? Was wirklich in deutschen Fabriken passiert](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Industrie-4-0-Hype-oder-Revolution--Was-wirklich-in-deutschen-Fabriken-passiert-e37mb7u)
+* [Konfektionsschlepper: Wie kleine Hersteller mit zugekauften Motoren und Getrieben die deutsche Landw](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Konfektionsschlepper-Wie-kleine-Hersteller-mit-zugekauften-Motoren-und-Getrieben-die-deutsche-Landw-e39kmhd)
+* [Meister lernen lernen: Selbstgesteuert durch den deutschen Lehrplan für Land- und Baumaschinenmechatroniker](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Meister-lernen-lernen-Selbstgesteuert-durch-den-deutschen-Lehrplan-fr-Land--und-Baumaschinenmechatroniker-e38dhb1)
+* [Oskar von Miller: Genie, Machtmensch, Visionär – Wie der Mann hinter dem Deutschen Museum Bayern mit](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Oskar-von-Miller-Genie--Machtmensch--Visionr--Wie-der-Mann-hinter-dem-Deutschen-Museum-Bayern-mit-e38sh40)
+
+## 📺 Video
+
+* [2025-07-20 21-12-23  Fusion 360 Schematic SPICE Simulation deutsch](https://www.youtube.com/watch?v=jHT9nZIXxGU)
+* [Das Technologie-Panorama von 1863: Lanz & Comp. und die Revolution der deutschen Landwirtschaft d...](https://www.youtube.com/watch?v=ShV0oAGoY58)
+* [Meister lernen lernen: Selbstgesteuert durch den deutschen Lehrplan für Land- und Baumaschinenmec...](https://www.youtube.com/watch?v=mrNdj6_1eTc)
+
 ## Trend im Engineering - IEC 61131 versus IEC 61499
 
 <table><tbody><tr><td><p>In den letzten Jahren gibt es einen Trend im Engineering hin zu der Verwendung der IEC 61499 Norm im Vergleich zur IEC 61131 Norm. Die IEC 61499 bietet eine flexiblere und modularere Architektur für die Entwicklung von Steuerungssystemen und ermöglicht es, Systeme einfacher zu vernetzen und zu kommunizieren.</p><p>Die IEC 61499 setzt auf die Verwendung von Function Blocks zur Modellierung von Steuerungssystemen. Function Blocks sind kleine Einheiten, die bestimmte Funktionen ausführen und leicht angepasst werden können. Sie ermöglichen es, Steuerungssysteme schneller und effizienter zu entwickeln und zu ändern.</p><p>Im Vergleich dazu setzt die IEC 61131 auf die Verwendung von Programmiersprachen wie Ladder Logic und Structured Text. Sie ist zwar immer noch weit verbreitet, wird jedoch als weniger flexibel und modularer betrachtet als die IEC 61499.</p><p>Insgesamt ist der Trend zur Verwendung der IEC 61499 Norm im Engineering auf ihre flexiblere und modularere Architektur zurückzuführen, die es ermöglicht, Steuerungssysteme einfacher zu vernetzen und zu kommunizieren. Die IEC 61499 wird daher immer häufiger im Vergleich zur IEC 61131 als Standard für die Entwicklung von Steuerungssystemen verwendet.</p></td></tr></tbody></table>

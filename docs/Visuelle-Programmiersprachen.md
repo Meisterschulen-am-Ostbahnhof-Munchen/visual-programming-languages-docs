@@ -5,6 +5,15 @@
 
 Visuelle Programmiersprachen (VPL) ermöglichen die Erstellung von Programmen durch die grafische Manipulation von Elementen anstatt durch das Schreiben von Text. In der Welt der Technik und Informatik gibt es sehr unterschiedliche Ansätze, die je nach Zielgruppe und Anwendungsfall variieren.
 
+## 🎧 Podcast
+
+* [Das URI-Dreieck: Dein visueller Spickzettel für das Ohmsche Gesetz – Meistere die Elektrizität!](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-URI-Dreieck-Dein-visueller-Spickzettel-fr-das-Ohmsche-Gesetz--Meistere-die-Elektrizitt-e38dksp)
+* [EN 61131-3: Industrielle Programmiersprachen Entschlüsselt – Text vs. Grafik, Warum die Norm Zählt](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/EN-61131-3-Industrielle-Programmiersprachen-Entschlsselt--Text-vs--Grafik--Warum-die-Norm-Zhlt-e368k78)
+
+## 📺 Video
+
+* [2025-02-23 11-43-44 Fusion 360 Übersicht Tutorials](https://www.youtube.com/watch?v=djM9ndIfp-0)
+
 ## 1. Erziehungsorientierte und allgemeine Sprachen
 Diese Sprachen dienen oft als Einstieg in die Logik der Programmierung. Sie abstrahieren komplexe Syntaxregeln in farbige Blöcke, die wie Puzzleteile zusammengesteckt werden.
 

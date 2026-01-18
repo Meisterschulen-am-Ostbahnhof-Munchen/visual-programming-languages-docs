@@ -6,6 +6,10 @@
 <img width="1450" height="216" alt="F_UDINT_TO_UINT" src="https://github.com/user-attachments/assets/9ee78872-0f37-4ed5-be3e-2592ac760277" />
 
 * * * * * * * * * *
+## 📺 Video
+
+* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
+
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_UINT` dient der Konvertierung eines 32-Bit unsigned integer-Werts (UDINT) in einen 16-Bit unsigned integer-Wert (UINT). Der Block ist Teil des `iec61131::conversion` Pakets.
 

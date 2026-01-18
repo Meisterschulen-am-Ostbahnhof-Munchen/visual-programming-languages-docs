@@ -6,6 +6,10 @@
 <img width="1464" height="212" alt="F_UDINT_TO_DWORD" src="https://github.com/user-attachments/assets/2a17af0b-98a8-4d4b-ac10-de4278c1451a" />
 
 * * * * * * * * * *
+## 📺 Video
+
+* [Zusätzlich: Uebung_083: Aufwärts/Abwärts zählen: E_CTUD_UDINT Datentyp UDINT; mit Anzeige am VT.](https://www.youtube.com/watch?v=oTPDtsw5eAw)
+
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_DWORD` dient der Konvertierung eines `UDINT`-Wertes (32-Bit unsignierte Ganzzahl) in einen `DWORD`-Wert (32-Bit Datenwort). Diese Konvertierung ist insbesondere in Szenarien nützlich, in denen numerische Werte als Bitmuster weiterverarbeitet oder übertragen werden müssen.
 

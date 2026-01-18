@@ -1,5 +1,8 @@
 # timed
 
+```{index} single: timed
+```
+
 ```{toctree}
 sequence_T_04
 sequence_T_04_AX

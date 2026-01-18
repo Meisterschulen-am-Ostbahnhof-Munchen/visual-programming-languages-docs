@@ -1,5 +1,8 @@
 # ButtonActivationCode_S
 
+```{index} single: ButtonActivationCode_S
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `ButtonActivationCode_S` ist eine strukturierte Datenstruktur (Struct), die zur Konfiguration der Aktivierung eines Tasters (Buttons) in einem Steuerungssystem verwendet wird. Er definiert einen Aktivierungscode und ein Steuerungsflag für die Wiederholungslogik. Dieser Datentyp ist Teil des Pakets `isobus::UT::io::Button`.

@@ -1,5 +1,8 @@
 # ST02B
 
+```{index} single: ST02B
+```
+
 * * * * * * * * * *
 ## Einleitung
 `ST02B` ist ein benutzerdefinierter, strukturierter Datentyp innerhalb der 4diac-IDE. Er definiert eine Datenstruktur, die zwei einzelne Bytes zu einer logischen Einheit zusammenfasst. Dies vereinfacht die Handhabung von Paaren von Byte-Werten.

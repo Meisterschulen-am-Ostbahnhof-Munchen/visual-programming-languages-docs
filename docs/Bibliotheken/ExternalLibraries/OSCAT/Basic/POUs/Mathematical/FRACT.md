@@ -1,5 +1,8 @@
 # FRACT
 
+```{index} single: FRACT
+```
+
 this function returns the fraction of a real number
 
 ## Interface

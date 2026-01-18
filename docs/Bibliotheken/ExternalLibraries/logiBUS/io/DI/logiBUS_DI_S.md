@@ -1,5 +1,8 @@
 # logiBUS_DI_S
 
+```{index} single: logiBUS_DI_S
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `logiBUS_DI_S` ist ein strukturierter Datentyp (Struct), der zur Konfiguration eines digitalen Eingangs (DI) innerhalb des logiBUS-Frameworks dient. Er definiert die grundlegenden Parameter, die notwendig sind, um einen physischen oder logischen Eingangspunkt auf einem logiBUS-kompatiblen I/O-System anzusteuern. Dieser Datentyp wird typischerweise als Eingabe für spezifische I/O-Funktionsblöcke verwendet.

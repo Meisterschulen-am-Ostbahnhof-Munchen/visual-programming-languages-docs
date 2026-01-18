@@ -1,5 +1,8 @@
 # BaseMemberExternAdd
 
+```{index} single: BaseMemberExternAdd
+```
+
 Adds an external member to the network list manually.
 
 The use of this function is not ISO 11783 Part 5 conform.

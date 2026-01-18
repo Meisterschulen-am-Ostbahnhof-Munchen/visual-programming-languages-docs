@@ -1,5 +1,8 @@
 # Zahlen und Zahlensysteme
 
+```{index} single: Zahlen und Zahlensysteme
+```
+
 In der Automatisierungstechnik begegnen uns Zahlen in verschiedenen Formaten. Je nachdem, ob wir einen physikalischen Wert (z. B. Temperatur), einen Zählerstand oder den Status einzelner Bits (z. B. digitale Eingänge) betrachten, wählen wir das passende Zahlensystem.
 
 ## Zahlensysteme

@@ -1,5 +1,8 @@
 # RT_E_DELAY
 
+```{index} single: RT_E_DELAY
+```
+
 * * * * * * * * * *
 
 ## Einleitung

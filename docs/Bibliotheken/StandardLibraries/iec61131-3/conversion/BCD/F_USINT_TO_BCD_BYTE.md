@@ -1,5 +1,8 @@
 # F_USINT_TO_BCD_BYTE
 
+```{index} single: F_USINT_TO_BCD_BYTE
+```
+
 <img width="1293" height="181" alt="F_USINT_TO_BCD_BYTE" src="https://github.com/user-attachments/assets/80d3e282-af2a-4b59-89db-9d093b6ef103" />
 
 * * * * * * * * * *

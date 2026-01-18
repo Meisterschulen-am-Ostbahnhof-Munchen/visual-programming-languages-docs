@@ -1,5 +1,8 @@
 # ASR_2EVENTS_TO_SR
 
+```{index} single: ASR_2EVENTS_TO_SR
+```
+
 <img width="1224" height="249" alt="image" src="https://github.com/user-attachments/assets/67d010cb-b034-4855-bc18-d9a6b1015a81" />
 
 * * * * * * * * * *

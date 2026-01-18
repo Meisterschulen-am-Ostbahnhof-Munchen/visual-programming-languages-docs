@@ -1,5 +1,8 @@
 # quarterconst
 
+```{index} single: quarterconst
+```
+
 * * * * * * * * * *
 
 ## Einleitung

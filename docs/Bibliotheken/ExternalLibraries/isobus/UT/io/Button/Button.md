@@ -1,5 +1,8 @@
 # Button
 
+```{index} single: Button
+```
+
 ```{toctree}
 Button_IE
 Button_IX

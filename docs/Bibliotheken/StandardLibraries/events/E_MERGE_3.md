@@ -1,5 +1,8 @@
 # E_MERGE_3
 
+```{index} single: E_MERGE_3
+```
+
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *

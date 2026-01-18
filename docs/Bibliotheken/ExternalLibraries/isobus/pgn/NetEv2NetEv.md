@@ -1,5 +1,8 @@
 # NetEv2NetEv
 
+```{index} single: NetEv2NetEv
+```
+
 <img width="1476" height="216" alt="image" src="https://github.com/user-attachments/assets/9bc9ef5f-0a9d-4bd3-8f83-d60a1665ff9c" />
 
 * * * * * * * * * *

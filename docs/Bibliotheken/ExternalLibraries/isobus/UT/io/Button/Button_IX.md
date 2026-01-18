@@ -1,5 +1,8 @@
 # Button_IX
 
+```{index} single: Button_IX
+```
+
 <img width="1352" height="285" alt="image" src="https://github.com/user-attachments/assets/6e6968e4-bc91-448b-abea-62a909edce06" />
 
 * * * * * * * * * *

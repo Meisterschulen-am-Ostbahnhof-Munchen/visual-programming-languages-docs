@@ -1,5 +1,8 @@
 # F_INT_TO_SINT
 
+```{index} single: F_INT_TO_SINT
+```
+
 <img width="1222" height="187" alt="F_INT_TO_SINT" src="https://github.com/user-attachments/assets/81773477-cbb0-47ae-bfa8-b2bda3807bca" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # wago
 
+```{index} single: wago
+```
+
 ```{toctree}
 Wago1405_6
 Wago1504_5

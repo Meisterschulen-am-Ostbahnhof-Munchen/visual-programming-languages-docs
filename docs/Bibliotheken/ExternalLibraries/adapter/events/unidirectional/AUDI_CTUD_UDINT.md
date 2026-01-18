@@ -1,5 +1,8 @@
 # AUDI_CTUD_UDINT (Adapter-basierter Auf-/Abwärtszähler)
 
+```{index} single: AUDI_CTUD_UDINT (Adapter-basierter Auf-/Abwärtszähler)
+```
+
 ## Einleitung
 Der `AUDI_CTUD_UDINT` ist ein ereignisgesteuerter Auf-/Abwärtszähler (Counter Up/Down) für vorzeichenlose 32-Bit-Ganzzahlen (UDINT), der speziell für die Integration in adapterbasierte Systeme entwickelt wurde. Er nutzt `AUDI`-Adapter für die Übergabe des Zählwerts und des Vorgabewerts, was eine saubere Trennung von Ereignis- und Datenfluss ermöglicht.
 

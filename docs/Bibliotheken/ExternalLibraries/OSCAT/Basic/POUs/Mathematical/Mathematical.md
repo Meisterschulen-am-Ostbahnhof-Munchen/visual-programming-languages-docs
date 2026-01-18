@@ -1,5 +1,8 @@
 # Mathematical
 
+```{index} single: Mathematical
+```
+
 ```{toctree}
 D_TRUNC
 FLOOR

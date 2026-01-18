@@ -1,5 +1,8 @@
 # E_SPLIT (Ereignis-Verteiler)
 
+```{index} single: E_SPLIT (Ereignis-Verteiler)
+```
+
 ![E_SPLIT Funktionssymbol](https://user-images.githubusercontent.com/69573151/210802227-1615f35d-6ed5-459b-a796-a5ef5fb11452.png)  
 
 * * * * * * * * * *

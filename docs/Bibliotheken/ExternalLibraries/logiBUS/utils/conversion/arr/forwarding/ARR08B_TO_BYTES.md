@@ -1,5 +1,8 @@
 # ARR08B_TO_BYTES
 
+```{index} single: ARR08B_TO_BYTES
+```
+
 <img width="1089" height="362" alt="image" src="https://github.com/user-attachments/assets/35768584-80d4-464c-b258-e26d1456fd4f" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # GEN_SIN
 
+```{index} single: GEN_SIN
+```
+
 this signal generator generates a sine wave output
 
 this signal generator generates a sine wave output. The sine wave signal is defined by period time (PT), 

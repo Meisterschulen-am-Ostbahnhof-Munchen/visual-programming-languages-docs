@@ -1,5 +1,8 @@
 # CF_NAME_T
 
+```{index} single: CF_NAME_T
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `CF_NAME_T` ist ein strukturierter Datentyp, der in der 4diac-IDE zur Modellierung von ISO CF (Communication Function) oder Anwenderinformationsdaten-Arrays verwendet wird. Er dient als Typedef für ein Byte-Array fester Länge und wird typischerweise im Kontext von ISOBUS PGN (Parameter Group Number) Kommunikation eingesetzt.

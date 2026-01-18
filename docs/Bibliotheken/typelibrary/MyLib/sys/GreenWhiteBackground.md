@@ -1,5 +1,8 @@
 # GreenWhiteBackground
 
+```{index} single: GreenWhiteBackground
+```
+
 <img width="1273" height="233" alt="image" src="https://github.com/user-attachments/assets/ec8d48e6-6d6b-4749-bbe0-e53d06b6be01" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # E_TABLE
 
+```{index} single: E_TABLE
+```
+
 <img width="1139" height="202" alt="E_TABLE" src="https://user-images.githubusercontent.com/113907528/204904862-ebdcc4da-7a49-4931-b534-673c9449cf5e.png">
 
 * * * * * * * * * *

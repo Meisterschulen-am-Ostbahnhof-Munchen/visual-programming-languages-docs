@@ -1,5 +1,8 @@
 # utils
 
+```{index} single: utils
+```
+
 ```{toctree}
 assembling/assembling
 const/const

@@ -1,5 +1,8 @@
 # Abgrenzung und Einordnung
 
+```{index} single: Abgrenzung und Einordnung
+```
+
 Um die Besonderheiten der IEC 61499 zu verstehen, ist es hilfreich, sie in die breitere Landschaft der Programmiersprachen einzuordnen. Grundsätzlich lassen sich Programmiersprachen nach der Art ihrer Notation in zwei Hauptgruppen unterteilen: **textuelle** und **visuelle** Sprachen.
 
 ## Abgrenzung visuelle/textuelle Programmiersprachen

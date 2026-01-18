@@ -1,5 +1,8 @@
 # AS (SINT)
 
+```{index} single: AS (SINT)
+```
+
 unidirectional Adapter Interface for 1 Event and 1 Sint
 
 ## Interface

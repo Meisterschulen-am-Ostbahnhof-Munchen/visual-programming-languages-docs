@@ -1,5 +1,8 @@
 # logiBUS_AI_S
 
+```{index} single: logiBUS_AI_S
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `logiBUS_AI_S` ist ein strukturierter Datentyp (Struct), der zur Konfiguration eines analogen Eingangskanals (AI - Analog Input) innerhalb der logiBUS-Bibliothek dient. Er definiert die grundlegende Parameterstruktur, die benötigt wird, um einen physischen Pin eines logiBUS-Hardwaremoduls für die Erfassung analoger Signale zu adressieren.

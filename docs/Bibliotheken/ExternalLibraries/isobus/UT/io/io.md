@@ -1,5 +1,8 @@
 # io
 
+```{index} single: io
+```
+
 ```{toctree}
 Auxiliary/Auxiliary
 Button/Button

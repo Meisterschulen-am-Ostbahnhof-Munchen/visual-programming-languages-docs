@@ -1,5 +1,8 @@
 # Scaling
 
+```{index} single: Scaling
+```
+
 
 ## Grundlegendes
 

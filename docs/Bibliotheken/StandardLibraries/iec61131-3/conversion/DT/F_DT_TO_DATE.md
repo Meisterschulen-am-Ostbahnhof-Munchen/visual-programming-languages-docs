@@ -1,5 +1,8 @@
 # F_DT_TO_DATE
 
+```{index} single: F_DT_TO_DATE
+```
+
 <img width="1211" height="187" alt="F_DT_TO_DATE" src="https://github.com/user-attachments/assets/aebf2922-2636-4bac-b28f-2510579fdb3b" />
 
 * * * * * * * * * *

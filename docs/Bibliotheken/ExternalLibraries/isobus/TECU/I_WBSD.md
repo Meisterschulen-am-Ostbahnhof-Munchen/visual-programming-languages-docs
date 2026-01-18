@@ -1,5 +1,8 @@
 # I_WBSD
 
+```{index} single: I_WBSD
+```
+
 ![I_WBSD](https://github.com/user-attachments/assets/57c4ccff-80d8-49b9-a5d8-884e25c7b4a3)
 
 * * * * * * * * * *

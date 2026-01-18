@@ -1,5 +1,8 @@
 # CTRL_IN
 
+```{index} single: CTRL_IN
+```
+
 calculate the process error DIFF
 
 ## Interface

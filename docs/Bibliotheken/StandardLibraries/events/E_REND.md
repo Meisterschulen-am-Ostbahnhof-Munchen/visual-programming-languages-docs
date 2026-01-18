@@ -1,5 +1,8 @@
 # E_REND
 
+```{index} single: E_REND
+```
+
 <img width="1139" height="202" alt="E_REND" src="https://user-images.githubusercontent.com/113907528/204900982-61a35320-e656-4b42-b0cf-43d8db93ebf0.png">
 
 * * * * * * * * * *

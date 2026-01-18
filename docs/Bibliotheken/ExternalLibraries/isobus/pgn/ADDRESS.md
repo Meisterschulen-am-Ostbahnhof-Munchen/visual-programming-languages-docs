@@ -1,5 +1,8 @@
 # ADDRESS
 
+```{index} single: ADDRESS
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `ADDRESS` ist ein globaler Konstantenblock, der spezielle Adresskonstanten für die Verwendung in ISOBUS-basierten Anwendungen definiert. Er stellt vordefinierte Werte für Quell- und Zieladressen (Source Address, SA) bereit, die in der ISOBUS-Kommunikation eine besondere Bedeutung haben. Dieser Block dient dazu, den Quellcode lesbarer und wartbarer zu machen, indem magische Zahlen durch aussagekräftige Namen ersetzt werden.

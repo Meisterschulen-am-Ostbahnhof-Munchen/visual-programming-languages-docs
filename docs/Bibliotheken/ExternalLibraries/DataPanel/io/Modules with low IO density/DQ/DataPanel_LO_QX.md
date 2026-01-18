@@ -1,5 +1,8 @@
 # DataPanel_LO_QX
 
+```{index} single: DataPanel_LO_QX
+```
+
 <img width="1457" height="259" alt="image" src="https://github.com/user-attachments/assets/80fc4f29-178a-42f5-a007-1361dfa8834e" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # IDs
 
+```{index} single: IDs
+```
+
 * * * * * * * * * *
 
 ## Einleitung

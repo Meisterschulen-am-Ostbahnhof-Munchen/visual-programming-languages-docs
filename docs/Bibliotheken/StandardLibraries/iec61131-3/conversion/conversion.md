@@ -1,5 +1,8 @@
 # conversion
 
+```{index} single: conversion
+```
+
 ```{toctree}
 BCD/BCD
 BOOL/BOOL

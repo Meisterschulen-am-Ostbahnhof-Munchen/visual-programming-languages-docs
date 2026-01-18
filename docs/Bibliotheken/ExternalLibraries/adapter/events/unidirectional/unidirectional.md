@@ -1,5 +1,8 @@
 # unidirectional
 
+```{index} single: unidirectional
+```
+
 ```{toctree}
 ASR_AX_SR
 AX_D_FF

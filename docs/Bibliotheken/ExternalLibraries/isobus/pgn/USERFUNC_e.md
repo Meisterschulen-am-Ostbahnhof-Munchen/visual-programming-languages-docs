@@ -1,5 +1,8 @@
 # USERFUNC_e
 
+```{index} single: USERFUNC_e
+```
+
 * * * * * * * * * *
 ## Einleitung
 Die globale Konstante `USERFUNC_e` definiert eine Aufzählung (Enumeration) von numerischen Werten, die spezifische Gerätefunktionen oder Rollen innerhalb eines ISOBUS-Netzwerks repräsentieren. Sie dient der standardisierten und lesbaren Identifikation verschiedener ISOBUS-Gerätetypen und -Funktionen in Steuerungsanwendungen.

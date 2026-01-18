@@ -1,5 +1,8 @@
 # A2X_2X_TO_2AX
 
+```{index} single: A2X_2X_TO_2AX
+```
+
 <img width="1288" height="205" alt="image" src="https://github.com/user-attachments/assets/4b63ce13-a3c7-4b18-908a-dc885376b86d" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # AX_AE_MERGE
 
+```{index} single: AX_AE_MERGE
+```
+
 ## Einleitung
 Der AX_AE_MERGE Funktionsblock ermöglicht das Zusammenführen eines reinen Ereignis-Signals (**AE**) mit einem kombinierten Ereignis-Daten-Signal (**AX**). Das Ergebnis ist ein AX-Signalfluss, bei dem das Daten-Bit vom AX-Zweig erhalten bleibt, aber von beiden Quellen getriggert werden kann.
 

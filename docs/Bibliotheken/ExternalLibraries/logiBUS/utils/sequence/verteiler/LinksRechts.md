@@ -1,5 +1,8 @@
 # LinksRechts
 
+```{index} single: LinksRechts
+```
+
 <img width="1074" height="276" alt="image" src="https://github.com/user-attachments/assets/fc046311-1486-49c1-8932-8429e1dff4ed" />
 
 * * * * * * * * * *

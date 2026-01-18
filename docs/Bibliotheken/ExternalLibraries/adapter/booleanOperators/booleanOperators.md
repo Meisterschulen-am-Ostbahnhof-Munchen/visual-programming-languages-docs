@@ -1,5 +1,8 @@
 # booleanOperators
 
+```{index} single: booleanOperators
+```
+
 ```{toctree}
 AX_AND_2
 AX_AND_3

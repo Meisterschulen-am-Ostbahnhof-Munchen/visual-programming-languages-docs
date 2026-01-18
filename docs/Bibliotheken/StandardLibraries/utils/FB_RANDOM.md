@@ -1,5 +1,8 @@
 # FB_RANDOM
 
+```{index} single: FB_RANDOM
+```
+
 * * * * * * * * * *
 
 ## Einleitung

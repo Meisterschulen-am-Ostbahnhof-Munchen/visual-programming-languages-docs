@@ -1,5 +1,8 @@
 # VALUES2ARRAY_2_LREAL
 
+```{index} single: VALUES2ARRAY_2_LREAL
+```
+
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *

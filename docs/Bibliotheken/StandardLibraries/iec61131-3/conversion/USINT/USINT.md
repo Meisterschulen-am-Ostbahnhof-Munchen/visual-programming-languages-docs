@@ -1,5 +1,8 @@
 # USINT Konvertierungen
 
+```{index} single: USINT Konvertierungen
+```
+
 Hier finden Sie Funktionen zur Konvertierung des Datentyps USINT.
 
 ```{toctree}

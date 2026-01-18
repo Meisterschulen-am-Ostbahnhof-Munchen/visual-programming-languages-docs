@@ -1,5 +1,8 @@
 # AD_DWORD_TO_D
 
+```{index} single: AD_DWORD_TO_D
+```
+
 ## Einleitung
 Der AD_DWORD_TO_D Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines DWORD-Werts in das AD-Adapterformat dient.
 

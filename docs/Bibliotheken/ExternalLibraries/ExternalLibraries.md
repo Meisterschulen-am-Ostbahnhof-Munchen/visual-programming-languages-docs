@@ -1,5 +1,8 @@
 # External Libraries
 
+```{index} single: External Libraries
+```
+
 ```{toctree}
 adapter/adapter
 BlinkMarine/BlinkMarine

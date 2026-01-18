@@ -1,5 +1,8 @@
 # STRUCT_DEMUX
 
+```{index} single: STRUCT_DEMUX
+```
+
 <img width="1196" height="182" alt="STRUCT_DEMUX" src="https://github.com/user-attachments/assets/2420186b-20ea-4920-85e4-746488942325" />
 
 * * * * * * * * * *

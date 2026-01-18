@@ -1,5 +1,8 @@
 # AUS (USINT)
 
+```{index} single: AUS (USINT)
+```
+
 unidirectional Adapter Interface for 1 Event and 1 Usint
 
 ## Interface

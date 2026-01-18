@@ -1,5 +1,8 @@
 # FLOOR2
 
+```{index} single: FLOOR2
+```
+
 This is a rounding function which returns the biggest possible integer which is less or equal
 to X.
 

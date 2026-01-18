@@ -1,5 +1,8 @@
 # F_UDINT_TO_LWORD
 
+```{index} single: F_UDINT_TO_LWORD
+```
+
 <img width="1462" height="216" alt="F_UDINT_TO_LWORD" src="https://github.com/user-attachments/assets/b952fbc8-443f-43ff-9840-5f002a169f93" />
 
 * * * * * * * * * *

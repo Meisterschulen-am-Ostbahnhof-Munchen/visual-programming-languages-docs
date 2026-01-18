@@ -1,5 +1,8 @@
 # Aux_IE
 
+```{index} single: Aux_IE
+```
+
 <img width="1335" height="214" alt="image" src="https://github.com/user-attachments/assets/96c43b99-3ad6-4ea1-835a-f1ca01902622" />
 
 * * * * * * * * * *

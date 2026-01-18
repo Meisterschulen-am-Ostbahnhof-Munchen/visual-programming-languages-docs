@@ -1,5 +1,8 @@
 # CTRL_PI
 
+```{index} single: CTRL_PI
+```
+
 FT_PI is a PI controller with manual functionality.
 
 version 2.0	30. jun 2008

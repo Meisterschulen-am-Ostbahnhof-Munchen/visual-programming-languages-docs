@@ -1,5 +1,8 @@
 # FIELDBUS_WORD_TO_PERCENT
 
+```{index} single: FIELDBUS_WORD_TO_PERCENT
+```
+
 <img width="888" height="143" alt="FIELDBUS_WORD_TO_PERCENT" src="https://github.com/user-attachments/assets/e6b552d3-4641-408d-b965-e2eb5c8cdef0" />
 
 * * * * * * * * * *

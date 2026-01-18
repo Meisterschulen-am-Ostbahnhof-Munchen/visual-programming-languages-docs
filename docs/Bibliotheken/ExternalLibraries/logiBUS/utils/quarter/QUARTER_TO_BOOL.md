@@ -1,5 +1,8 @@
 # QUARTER_TO_BOOL
 
+```{index} single: QUARTER_TO_BOOL
+```
+
 <img width="1424" height="183" alt="image" src="https://github.com/user-attachments/assets/81acd0ec-c837-49d1-9ed8-3000cb65786e" />
 
 * * * * * * * * * *

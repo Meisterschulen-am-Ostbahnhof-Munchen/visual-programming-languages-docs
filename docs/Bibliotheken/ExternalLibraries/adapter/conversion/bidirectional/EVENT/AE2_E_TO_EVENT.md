@@ -1,5 +1,8 @@
 # AE2_E_TO_EVENT
 
+```{index} single: AE2_E_TO_EVENT
+```
+
 <img width="1172" height="190" alt="image" src="https://github.com/user-attachments/assets/02b7c06e-111f-4166-ac20-aebdf89c9956" />
 
 * * * * * * * * * *

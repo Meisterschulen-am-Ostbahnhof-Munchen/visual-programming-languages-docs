@@ -1,5 +1,8 @@
 # AUDI_TO_AD
 
+```{index} single: AUDI_TO_AD
+```
+
 ## Einleitung
 Der AUDI_TO_AD Funktionsblock ist ein spezialisierter Adapter-Konvertierungsbaustein. Er dient dazu, einen unidirektionalen **AUDI** (UDINT) Adapter-Socket in einen unidirektionalen **AD** (DWORD) Adapter-Plug umzuwandeln.
 

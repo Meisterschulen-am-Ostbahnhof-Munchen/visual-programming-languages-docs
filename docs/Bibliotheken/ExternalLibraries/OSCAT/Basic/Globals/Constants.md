@@ -1,5 +1,8 @@
 # Constants
 
+```{index} single: Constants
+```
+
 Global constants
 
 ## Global Constants

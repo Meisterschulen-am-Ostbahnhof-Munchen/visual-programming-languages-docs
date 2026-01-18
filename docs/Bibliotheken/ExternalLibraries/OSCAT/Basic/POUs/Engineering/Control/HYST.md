@@ -1,5 +1,8 @@
 # HYST
 
+```{index} single: HYST
+```
+
 Hystereses function
 
 This Hystereses function has two modes:

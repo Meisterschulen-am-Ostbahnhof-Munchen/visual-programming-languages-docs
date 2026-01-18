@@ -1,5 +1,8 @@
 # ST16B
 
+```{index} single: ST16B
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `ST16B` ist eine strukturierte Datenkomponente, die im 4diac-Framework definiert ist. Im Gegensatz zu einem Funktionsblock (FB) hat `ST16B` keine eigene Logik oder ausführbaren Funktionen, sondern dient als fester Container für 16 einzelne Byte-Werte. Sein Hauptzweck ist die Bereitstellung einer klar definierten Struktur für die Handhabung von Rohdatenpaketen fester Größe, was besonders in Kommunikationsprotokollen oder bei der Interaktion mit hardwarenahen Schnittstellen von Bedeutung ist.

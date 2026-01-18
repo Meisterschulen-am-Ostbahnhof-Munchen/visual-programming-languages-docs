@@ -1,5 +1,8 @@
 # E_SPLIT_3
 
+```{index} single: E_SPLIT_3
+```
+
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *

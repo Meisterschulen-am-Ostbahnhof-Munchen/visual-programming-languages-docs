@@ -1,5 +1,8 @@
 # Control
 
+```{index} single: Control
+```
+
 ```{toctree}
 CTRL_IN
 CTRL_OUT

@@ -1,5 +1,8 @@
 # ST_REC_CONN
 
+```{index} single: ST_REC_CONN
+```
+
 ![ST_REC_CONN](https://user-images.githubusercontent.com/116869307/214155169-b982c961-19de-4e7e-876a-55ba47f27411.png)
 
 * * * * * * * * * *

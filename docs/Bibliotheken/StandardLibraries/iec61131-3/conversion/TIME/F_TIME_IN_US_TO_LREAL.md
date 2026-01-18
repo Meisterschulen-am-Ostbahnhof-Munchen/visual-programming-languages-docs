@@ -1,5 +1,8 @@
 # F_TIME_IN_US_TO_LREAL
 
+```{index} single: F_TIME_IN_US_TO_LREAL
+```
+
 <img width="1536" height="212" alt="F_TIME_IN_US_TO_LREAL" src="https://github.com/user-attachments/assets/ece70afa-d5af-4a67-a95e-e1c2a79fc167" />
 
 * * * * * * * * * *

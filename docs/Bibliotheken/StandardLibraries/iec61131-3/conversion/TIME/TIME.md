@@ -1,5 +1,8 @@
 # TIME Konvertierungen
 
+```{index} single: TIME Konvertierungen
+```
+
 Hier finden Sie Funktionen zur Konvertierung des Datentyps TIME.
 
 **Hinweis zur Erstellung von TIME-Werten (Numerisch zu TIME):**

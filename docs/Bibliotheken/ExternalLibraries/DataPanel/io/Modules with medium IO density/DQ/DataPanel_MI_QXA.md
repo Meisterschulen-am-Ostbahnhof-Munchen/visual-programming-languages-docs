@@ -1,5 +1,8 @@
 # DataPanel_MI_QXA
 
+```{index} single: DataPanel_MI_QXA
+```
+
 <img width="1373" height="208" alt="image" src="https://github.com/user-attachments/assets/734858f5-fe59-47ff-9c4f-6ba7b19e3c85" />
 
 * * * * * * * * * *

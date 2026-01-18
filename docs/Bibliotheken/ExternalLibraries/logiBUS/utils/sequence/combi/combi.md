@@ -1,5 +1,8 @@
 # combi
 
+```{index} single: combi
+```
+
 ```{toctree}
 sequence_ET_04
 sequence_ET_04_AX

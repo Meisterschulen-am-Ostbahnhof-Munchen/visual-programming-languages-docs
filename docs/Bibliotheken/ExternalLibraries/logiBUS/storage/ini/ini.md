@@ -1,5 +1,8 @@
 # INI
 
+```{index} single: INI
+```
+
 <img width="1844" height="338" alt="image" src="https://github.com/user-attachments/assets/e5a9c5f0-2b32-4d82-8784-a0c476e5142a" />
 
 * * * * * * * * * *

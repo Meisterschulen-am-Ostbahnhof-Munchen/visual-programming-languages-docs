@@ -1,5 +1,8 @@
 # ST32X
 
+```{index} single: ST32X
+```
+
 *(Kein Bild vorhanden, da dies ein Datentyp und kein Funktionsblock ist.)*
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # ST_DEL_FB
 
+```{index} single: ST_DEL_FB
+```
+
 ![ST_DEL_FB](https://user-images.githubusercontent.com/116869307/214154809-ea8eaf7b-a851-4b0e-9cc9-2d7cdd14fcbd.png)
 
 * * * * * * * * * *

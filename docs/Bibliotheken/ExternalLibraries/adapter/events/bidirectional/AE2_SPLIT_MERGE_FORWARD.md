@@ -1,5 +1,8 @@
 # AE2_SPLIT_MERGE_FORWARD
 
+```{index} single: AE2_SPLIT_MERGE_FORWARD
+```
+
 <img width="1208" height="217" alt="image" src="https://github.com/user-attachments/assets/68ee26f9-debb-44fc-8735-e765847cdb6f" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # logiBUS_DI_Events
 
+```{index} single: logiBUS_DI_Events
+```
+
 * * * * * * * * * *
 
 ## Einleitung

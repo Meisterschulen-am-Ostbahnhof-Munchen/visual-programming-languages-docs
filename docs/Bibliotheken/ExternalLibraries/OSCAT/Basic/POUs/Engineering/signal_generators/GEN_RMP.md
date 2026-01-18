@@ -1,5 +1,8 @@
 # GEN_RMP
 
+```{index} single: GEN_RMP
+```
+
 this signal generator generates a ramp wave output
 
 this signal generator generates a ramp wave output. The ramp wave signal is defined by period time (PT), 

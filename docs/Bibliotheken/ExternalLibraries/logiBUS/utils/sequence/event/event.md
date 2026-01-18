@@ -1,5 +1,8 @@
 # event
 
+```{index} single: event
+```
+
 ```{toctree}
 sequence_E_04
 sequence_E_04_AX

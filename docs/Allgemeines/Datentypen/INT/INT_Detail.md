@@ -1,5 +1,8 @@
 # Datentyp-Detail: INT
 
+```{index} single: Datentyp-Detail: INT
+```
+
 ## Beschreibung
 Ganze Zahl (Integer)
 

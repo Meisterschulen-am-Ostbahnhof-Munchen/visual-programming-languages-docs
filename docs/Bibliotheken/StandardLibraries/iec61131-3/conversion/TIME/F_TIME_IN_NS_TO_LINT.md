@@ -1,5 +1,8 @@
 # F_TIME_IN_NS_TO_LINT
 
+```{index} single: F_TIME_IN_NS_TO_LINT
+```
+
 <img width="1521" height="212" alt="F_TIME_IN_NS_TO_LINT" src="https://github.com/user-attachments/assets/2aa3f00a-29f1-4cb9-944b-381d672567a3" />
 
 * * * * * * * * * *

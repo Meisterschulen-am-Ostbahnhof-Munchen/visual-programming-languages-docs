@@ -1,5 +1,8 @@
 # Datentyp-Detail: STRING
 
+```{index} single: Datentyp-Detail: STRING
+```
+
 ## Beschreibung
 Der Datentyp **STRING** repräsentiert eine Zeichenfolge, die aus 8-Bit-Zeichen (üblicherweise ISO/IEC 10646-1 oder ASCII) besteht.
 

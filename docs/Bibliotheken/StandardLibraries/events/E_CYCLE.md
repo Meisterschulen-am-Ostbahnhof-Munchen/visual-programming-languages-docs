@@ -1,5 +1,8 @@
 # E_CYCLE
 
+```{index} single: E_CYCLE
+```
+
 <img width="1139" height="202" alt="E_CYCLE" src="https://user-images.githubusercontent.com/113907471/204306660-9e93e9cc-10f0-4d51-829f-229ee64a1227.png">
 
 * * * * * * * * * *

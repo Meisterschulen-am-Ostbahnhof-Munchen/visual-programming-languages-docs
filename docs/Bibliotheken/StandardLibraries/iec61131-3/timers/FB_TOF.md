@@ -1,5 +1,8 @@
 # FB_TOF
 
+```{index} single: FB_TOF
+```
+
 ![image](https://github.com/user-attachments/assets/e60568d1-aba5-4e35-9488-8a79d1cb877b)
 
 

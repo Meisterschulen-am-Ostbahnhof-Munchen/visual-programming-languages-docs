@@ -1,5 +1,8 @@
 # ST01B
 
+```{index} single: ST01B
+```
+
 * * * * * * * * * *
 ## Einleitung
 Die bereitgestellte XML-Datei beschreibt den 4diac **Datentyp** `ST01B` (Structure with 1 BYTE), nicht einen Funktionsblock (FB). Dieser Datentyp definiert eine einfache Datenstruktur, die ein einzelnes Byte-Feld enthält. Die folgende Dokumentation versucht, die angeforderte Struktur für einen Funktionsblock so weit wie möglich anzuwenden, obwohl viele Abschnitte für einen reinen Datentyp nicht zutreffend sind.

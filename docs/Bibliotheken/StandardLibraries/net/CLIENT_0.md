@@ -1,5 +1,8 @@
 # CLIENT_0
 
+```{index} single: CLIENT_0
+```
+
 * * * * * * * * * *
 
 ## Einleitung

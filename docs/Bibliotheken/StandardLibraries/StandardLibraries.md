@@ -1,5 +1,8 @@
 # Standard Libraries
 
+```{index} single: Standard Libraries
+```
+
 ```{toctree}
 convert/convert
 core/core

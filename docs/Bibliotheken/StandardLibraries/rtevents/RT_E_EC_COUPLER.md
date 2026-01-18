@@ -1,5 +1,8 @@
 # RT_E_EC_COUPLER
 
+```{index} single: RT_E_EC_COUPLER
+```
+
 * * * * * * * * * *
 
 ## Einleitung

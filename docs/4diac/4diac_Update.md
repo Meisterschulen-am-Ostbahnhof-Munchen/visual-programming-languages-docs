@@ -1,5 +1,8 @@
 # Eclipse 4diac™ Update
 
+```{index} single: Eclipse 4diac™ Update
+```
+
 
 Zuordnung GIT Branch zu Download: 
 

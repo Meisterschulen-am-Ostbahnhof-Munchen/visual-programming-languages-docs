@@ -1,5 +1,8 @@
 # Q_CtrlAudioSignal
 
+```{index} single: Q_CtrlAudioSignal
+```
+
 ![Q_CtrlAudioSignal](https://user-images.githubusercontent.com/116869307/214147202-f060b872-d3d6-4c56-92c9-84961ce5127b.png)
 
 * * * * * * * * * *

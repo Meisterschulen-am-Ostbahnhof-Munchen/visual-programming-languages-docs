@@ -1,5 +1,8 @@
 # str
 
+```{index} single: str
+```
+
 ```{toctree}
 assembling/assembling
 converting/converting

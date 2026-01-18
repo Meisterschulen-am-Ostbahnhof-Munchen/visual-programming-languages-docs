@@ -1,5 +1,8 @@
 # F_ULINT_TO_BCD_LWORD
 
+```{index} single: F_ULINT_TO_BCD_LWORD
+```
+
 <img width="1302" height="181" alt="F_ULINT_TO_BCD_LWORD" src="https://github.com/user-attachments/assets/e52c2e4c-a8aa-4dc5-bb01-ce013aadd734" />
 
 * * * * * * * * * *

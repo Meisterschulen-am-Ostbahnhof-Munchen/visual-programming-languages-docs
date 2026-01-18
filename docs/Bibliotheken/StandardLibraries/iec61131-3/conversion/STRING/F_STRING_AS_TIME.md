@@ -1,5 +1,8 @@
 # F_STRING_AS_TIME
 
+```{index} single: F_STRING_AS_TIME
+```
+
 <img width="1467" height="220" alt="F_STRING_AS_TIME" src="https://github.com/user-attachments/assets/58d71ae2-9654-4005-b405-0b569a14e4f1" />
 
 * * * * * * * * * *

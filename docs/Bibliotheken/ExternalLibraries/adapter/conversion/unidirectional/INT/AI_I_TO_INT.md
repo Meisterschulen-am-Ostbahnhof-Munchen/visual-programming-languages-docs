@@ -1,5 +1,8 @@
 # AI_I_TO_INT
 
+```{index} single: AI_I_TO_INT
+```
+
 ## Einleitung
 Der AI_I_TO_INT Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung des AI-Adapterformats in einen INT-Wert dient.
 

@@ -1,5 +1,8 @@
 # IORevPiAIO
 
+```{index} single: IORevPiAIO
+```
+
 <img width="1354" height="423" alt="image" src="https://github.com/user-attachments/assets/165bf812-6c94-4b44-9d43-ee2d8f33454b" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # F_ADD_DT_TIME
 
+```{index} single: F_ADD_DT_TIME
+```
+
 ![Zeitadditionssymbol](https://github.com/user-attachments/assets/1fda9baa-1d7c-4fa6-8c87-608436deefa8)
 
 * * * * * * * * * *

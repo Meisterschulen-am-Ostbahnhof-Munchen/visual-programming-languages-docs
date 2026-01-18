@@ -1,5 +1,8 @@
 # GET_STRUCT_VALUE
 
+```{index} single: GET_STRUCT_VALUE
+```
+
 <img width="1391" height="128" alt="image" src="https://github.com/user-attachments/assets/0abda300-6bff-4217-b40b-4f2cccc9fc49" />
 
 * * * * * * * * * *

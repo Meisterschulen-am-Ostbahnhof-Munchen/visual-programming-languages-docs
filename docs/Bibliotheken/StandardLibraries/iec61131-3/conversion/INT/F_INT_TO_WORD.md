@@ -1,5 +1,8 @@
 # F_INT_TO_WORD
 
+```{index} single: F_INT_TO_WORD
+```
+
 <img width="1221" height="183" alt="F_INT_TO_WORD" src="https://github.com/user-attachments/assets/0fd8962d-cbc1-47ea-828f-2286fc7e411b" />
 
 * * * * * * * * * *

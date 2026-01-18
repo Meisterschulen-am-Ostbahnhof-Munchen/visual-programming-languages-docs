@@ -1,5 +1,8 @@
 # BOOLS_TO_QUARTERS
 
+```{index} single: BOOLS_TO_QUARTERS
+```
+
 <img width="1372" height="473" alt="image" src="https://github.com/user-attachments/assets/29cc86f3-ca17-48a7-8143-0a020e5cabcb" />
 
 * * * * * * * * * *

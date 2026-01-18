@@ -1,5 +1,8 @@
 # F_LWORD_TO_WORD
 
+```{index} single: F_LWORD_TO_WORD
+```
+
 <img width="1454" height="214" alt="F_LWORD_TO_WORD" src="https://github.com/user-attachments/assets/eeb29887-0982-497c-bd0d-0bac534c0573" />
 
 * * * * * * * * * *

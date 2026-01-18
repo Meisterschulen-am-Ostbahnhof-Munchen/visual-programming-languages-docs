@@ -1,5 +1,8 @@
 # Ethernet
 
+```{index} single: Ethernet
+```
+
 * * * * * * * * * *
 
 ## Einleitung

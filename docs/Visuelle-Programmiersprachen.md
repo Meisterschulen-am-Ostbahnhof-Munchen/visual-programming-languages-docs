@@ -1,5 +1,8 @@
 # Übersicht Visuelle Programmiersprachen
 
+```{index} single: Übersicht Visuelle Programmiersprachen
+```
+
 Visuelle Programmiersprachen (VPL) ermöglichen die Erstellung von Programmen durch die grafische Manipulation von Elementen anstatt durch das Schreiben von Text. In der Welt der Technik und Informatik gibt es sehr unterschiedliche Ansätze, die je nach Zielgruppe und Anwendungsfall variieren.
 
 ## 1. Erziehungsorientierte und allgemeine Sprachen

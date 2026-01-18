@@ -1,5 +1,8 @@
 # Datentyp-Detail: TIME
 
+```{index} single: Datentyp-Detail: TIME
+```
+
 ## Beschreibung
 Der Datentyp **TIME** wird zur Darstellung von Zeitdauern (Relativzeit) verwendet.
 

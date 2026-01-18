@@ -1,5 +1,8 @@
 # PLCnextMaster
 
+```{index} single: PLCnextMaster
+```
+
 * * * * * * * * * *
 
 ## Einleitung

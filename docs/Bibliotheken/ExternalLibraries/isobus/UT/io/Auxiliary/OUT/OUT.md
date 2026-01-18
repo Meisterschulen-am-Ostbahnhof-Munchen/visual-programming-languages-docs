@@ -1,5 +1,8 @@
 # OUT
 
+```{index} single: OUT
+```
+
 ```{toctree}
 Aux_QD
 Aux_QX

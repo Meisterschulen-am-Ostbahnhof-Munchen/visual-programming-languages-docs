@@ -1,5 +1,8 @@
 # AR (REAL)
 
+```{index} single: AR (REAL)
+```
+
 unidirectional Adapter Interface for 1 Event and 1 Real
 
 ## Interface

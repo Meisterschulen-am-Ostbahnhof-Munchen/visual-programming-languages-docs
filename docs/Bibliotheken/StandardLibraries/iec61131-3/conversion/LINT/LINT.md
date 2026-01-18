@@ -1,5 +1,8 @@
 # LINT Konvertierungen
 
+```{index} single: LINT Konvertierungen
+```
+
 Hier finden Sie Funktionen zur Konvertierung des Datentyps LINT.
 
 ```{toctree}

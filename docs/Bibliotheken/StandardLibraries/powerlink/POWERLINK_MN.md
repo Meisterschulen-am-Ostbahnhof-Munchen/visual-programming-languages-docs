@@ -1,5 +1,8 @@
 # POWERLINK_MN
 
+```{index} single: POWERLINK_MN
+```
+
 * * * * * * * * * *
 
 ## Einleitung

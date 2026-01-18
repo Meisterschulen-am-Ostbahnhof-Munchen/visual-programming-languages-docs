@@ -1,5 +1,8 @@
 # ASR_AX_SR
 
+```{index} single: ASR_AX_SR
+```
+
 <img width="1139" height="229" alt="image" src="https://github.com/user-attachments/assets/d4c4cfae-6044-477d-a62f-71e94d0d34a2" />
 
 * * * * * * * * * *

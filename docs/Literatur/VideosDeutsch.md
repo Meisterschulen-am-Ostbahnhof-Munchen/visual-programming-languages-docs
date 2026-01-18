@@ -1,5 +1,8 @@
 # Videos Deutsch
 
+```{index} single: Videos Deutsch
+```
+
 ## Trend im Engineering - IEC 61131 versus IEC 61499
 
 <table><tbody><tr><td><p>In den letzten Jahren gibt es einen Trend im Engineering hin zu der Verwendung der IEC 61499 Norm im Vergleich zur IEC 61131 Norm. Die IEC 61499 bietet eine flexiblere und modularere Architektur für die Entwicklung von Steuerungssystemen und ermöglicht es, Systeme einfacher zu vernetzen und zu kommunizieren.</p><p>Die IEC 61499 setzt auf die Verwendung von Function Blocks zur Modellierung von Steuerungssystemen. Function Blocks sind kleine Einheiten, die bestimmte Funktionen ausführen und leicht angepasst werden können. Sie ermöglichen es, Steuerungssysteme schneller und effizienter zu entwickeln und zu ändern.</p><p>Im Vergleich dazu setzt die IEC 61131 auf die Verwendung von Programmiersprachen wie Ladder Logic und Structured Text. Sie ist zwar immer noch weit verbreitet, wird jedoch als weniger flexibel und modularer betrachtet als die IEC 61499.</p><p>Insgesamt ist der Trend zur Verwendung der IEC 61499 Norm im Engineering auf ihre flexiblere und modularere Architektur zurückzuführen, die es ermöglicht, Steuerungssysteme einfacher zu vernetzen und zu kommunizieren. Die IEC 61499 wird daher immer häufiger im Vergleich zur IEC 61131 als Standard für die Entwicklung von Steuerungssystemen verwendet.</p></td></tr></tbody></table>

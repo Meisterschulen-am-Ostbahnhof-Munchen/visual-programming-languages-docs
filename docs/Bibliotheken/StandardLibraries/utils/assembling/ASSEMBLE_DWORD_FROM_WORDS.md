@@ -1,5 +1,8 @@
 # ASSEMBLE_DWORD_FROM_WORDS
 
+```{index} single: ASSEMBLE_DWORD_FROM_WORDS
+```
+
 ![ASSEMBLE_DWORD_FROM_WORDS](https://github.com/user-attachments/assets/6e0070a6-ac74-4370-9657-7d0fdd5e02cf)
 
 * * * * * * * * * *

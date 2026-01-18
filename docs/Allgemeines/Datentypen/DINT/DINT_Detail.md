@@ -1,5 +1,8 @@
 # Datentyp-Detail: DINT
 
+```{index} single: Datentyp-Detail: DINT
+```
+
 ## Beschreibung
 Doppelte ganze Zahl (Double Integer)
 

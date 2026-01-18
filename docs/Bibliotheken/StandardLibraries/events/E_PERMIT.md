@@ -1,5 +1,8 @@
 # E_PERMIT
 
+```{index} single: E_PERMIT
+```
+
 <img width="1139" height="202" alt="E_PERMIT" src="https://user-images.githubusercontent.com/113907528/204900302-7f7fcf0a-170c-4695-8177-e51c62311624.png">
 
 * * * * * * * * * *

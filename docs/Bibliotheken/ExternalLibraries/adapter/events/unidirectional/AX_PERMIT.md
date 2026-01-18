@@ -1,5 +1,8 @@
 # AX_PERMIT (Unidirectional Adapter Permit)
 
+```{index} single: AX_PERMIT (Unidirectional Adapter Permit)
+```
+
 ## Einleitung
 Der `AX_PERMIT` Funktionsblock ist eine adapterbasierte Variante des `E_PERMIT` Bausteins, implementiert als **Basic Function Block**. Er ermöglicht die bedingte Weitergabe eines Ereignisses, basierend auf dem booleschen Datenwert eines eingehenden `AX`-Adapters.
 

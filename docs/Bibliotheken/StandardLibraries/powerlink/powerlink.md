@@ -1,5 +1,8 @@
 # powerlink
 
+```{index} single: powerlink
+```
+
 ```{toctree}
 POWERLINK_MN
 X20AI2622

@@ -1,5 +1,8 @@
 # Datentyp-Detail: BOOL
 
+```{index} single: Datentyp-Detail: BOOL
+```
+
 ## Beschreibung
 Boolesche Variable
 

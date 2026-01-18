@@ -1,5 +1,8 @@
 # unidirectional conversion
 
+```{index} single: unidirectional conversion
+```
+
 ```{toctree}
 AD_AUDI/AD_TO_AUDI
 BOOL/BOOL

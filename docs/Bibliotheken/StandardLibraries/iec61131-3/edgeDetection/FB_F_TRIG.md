@@ -1,5 +1,8 @@
 # FB_F_TRIG
 
+```{index} single: FB_F_TRIG
+```
+
 <img width="1366" height="219" alt="FB_F_TRIG" src="https://github.com/user-attachments/assets/9ea529ec-c4e2-4e3f-96f0-9a5ddd42ebf5" />
 
 * * * * * * * * * *

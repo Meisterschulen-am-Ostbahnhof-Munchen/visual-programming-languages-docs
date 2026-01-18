@@ -1,5 +1,8 @@
 # RT_E_SWITCH
 
+```{index} single: RT_E_SWITCH
+```
+
 * * * * * * * * * *
 
 ## Einleitung

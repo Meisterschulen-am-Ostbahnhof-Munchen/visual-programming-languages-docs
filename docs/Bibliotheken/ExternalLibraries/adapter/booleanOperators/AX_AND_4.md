@@ -1,5 +1,8 @@
 # AX_AND_4
 
+```{index} single: AX_AND_4
+```
+
 <img width="1010" height="334" alt="image" src="https://github.com/user-attachments/assets/439ed538-1eef-44d6-95c8-5d2a9f64fd6a" />
 
 * * * * * * * * * *

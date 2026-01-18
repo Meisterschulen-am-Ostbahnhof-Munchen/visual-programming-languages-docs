@@ -1,5 +1,8 @@
 # ARRAY2VALUES_2_LREAL
 
+```{index} single: ARRAY2VALUES_2_LREAL
+```
+
 <img width="1227" height="178" alt="image" src="https://github.com/user-attachments/assets/1fda84e9-cd29-43f7-a566-6a8e259fa26f" />
 
 * * * * * * * * * *

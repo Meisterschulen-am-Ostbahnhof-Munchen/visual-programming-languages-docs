@@ -1,5 +1,8 @@
 # F_SHR
 
+```{index} single: F_SHR
+```
+
 <img width="1350" height="208" alt="F_SHR" src="https://github.com/user-attachments/assets/7ff0f80c-c8c6-4472-85d8-32658fa25627" />
 
 * * * * * * * * * *

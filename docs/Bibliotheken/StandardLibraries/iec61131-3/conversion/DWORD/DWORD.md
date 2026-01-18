@@ -1,5 +1,8 @@
 # DWORD Konvertierungen
 
+```{index} single: DWORD Konvertierungen
+```
+
 Hier finden Sie Funktionen zur Konvertierung des Datentyps DWORD.
 
 ```{toctree}

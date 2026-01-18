@@ -1,5 +1,8 @@
 # F_FIND
 
+```{index} single: F_FIND
+```
+
 <img width="1408" height="240" alt="F_FIND" src="https://github.com/user-attachments/assets/04ca16d1-99bf-4317-8cc7-adf2d6f70af7" />
 
 * * * * * * * * * *

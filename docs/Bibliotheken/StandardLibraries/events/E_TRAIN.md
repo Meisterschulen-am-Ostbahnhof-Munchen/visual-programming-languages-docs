@@ -1,5 +1,8 @@
 # E_TRAIN
 
+```{index} single: E_TRAIN
+```
+
 <img width="1139" height="202" alt="E_TRAIN" src="https://user-images.githubusercontent.com/116869307/214142742-8ce9523e-eb2b-416c-afe8-109fb601dd20.png">
 
 * * * * * * * * * *

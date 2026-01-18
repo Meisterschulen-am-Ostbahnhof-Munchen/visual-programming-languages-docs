@@ -1,5 +1,8 @@
 # E_SELECT
 
+```{index} single: E_SELECT
+```
+
 ![E_SELECT Logiksymbol](https://user-images.githubusercontent.com/69573151/210802464-116ee202-5bba-4394-bb08-38411823d000.png)  
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # DI
 
+```{index} single: DI
+```
+
 ```{toctree}
 Funk_DI
 Funk_DI_S

@@ -1,5 +1,8 @@
 # AX_SELECT
 
+```{index} single: AX_SELECT
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der AX_SELECT ist ein Funktionsblock, der basierend auf einem booleschen Eingang einen von zwei AX-Adapter-Eingängen auf den Ausgang schaltet.

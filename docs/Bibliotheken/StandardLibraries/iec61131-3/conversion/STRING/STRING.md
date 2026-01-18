@@ -1,5 +1,8 @@
 # STRING Konvertierungen
 
+```{index} single: STRING Konvertierungen
+```
+
 Hier finden Sie Funktionen zur Konvertierung des Datentyps STRING.
 
 ```{toctree}

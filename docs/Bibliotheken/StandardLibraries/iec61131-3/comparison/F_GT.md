@@ -1,5 +1,8 @@
 # F_GT
 
+```{index} single: F_GT
+```
+
 
 
 

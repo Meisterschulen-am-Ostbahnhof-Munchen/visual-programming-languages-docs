@@ -1,5 +1,8 @@
 # F_MULTIME
 
+```{index} single: F_MULTIME
+```
+
 ![F_MULTIME](https://github.com/user-attachments/assets/89982d6d-aa50-4897-b32c-6d280da63b1a)
 
 * * * * * * * * * *

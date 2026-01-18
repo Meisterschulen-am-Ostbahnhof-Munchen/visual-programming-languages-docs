@@ -1,5 +1,8 @@
 # F_INT_TO_LREAL
 
+```{index} single: F_INT_TO_LREAL
+```
+
 <img width="1232" height="182" alt="F_INT_TO_LREAL" src="https://github.com/user-attachments/assets/c99ad1d4-dafe-40fc-9bc4-7515768ec888" />
 
 * * * * * * * * * *

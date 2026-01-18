@@ -1,5 +1,8 @@
 # version
 
+```{index} single: version
+```
+
 <img width="909" height="244" alt="image" src="https://github.com/user-attachments/assets/e471c74a-8ace-47e3-8f6a-f48a25b212b5" />
 
 * * * * * * * * * *

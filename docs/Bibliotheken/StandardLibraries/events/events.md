@@ -1,5 +1,8 @@
 # events
 
+```{index} single: events
+```
+
 ```{toctree}
 ARTimeOut
 ATimeOut

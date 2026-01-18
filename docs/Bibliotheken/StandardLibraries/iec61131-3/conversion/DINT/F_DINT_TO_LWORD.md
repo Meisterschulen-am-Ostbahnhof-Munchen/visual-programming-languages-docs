@@ -1,5 +1,8 @@
 # F_DINT_TO_LWORD
 
+```{index} single: F_DINT_TO_LWORD
+```
+
 <img width="1454" height="217" alt="F_DINT_TO_LWORD" src="https://github.com/user-attachments/assets/2b51d495-a600-44ab-afbf-3f6e94586a86" />
 
 * * * * * * * * * *

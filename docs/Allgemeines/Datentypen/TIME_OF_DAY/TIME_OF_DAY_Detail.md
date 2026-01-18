@@ -1,5 +1,8 @@
 # Datentyp-Detail: TIME_OF_DAY (TOD)
 
+```{index} single: Datentyp-Detail: TIME_OF_DAY (TOD)
+```
+
 ## Beschreibung
 Der Datentyp **TIME_OF_DAY** (kurz **TOD**) wird zur Darstellung der Tageszeit verwendet.
 

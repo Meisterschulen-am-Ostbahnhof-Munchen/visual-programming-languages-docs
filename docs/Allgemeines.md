@@ -1,5 +1,8 @@
 # Allgemeines
 
+```{index} single: Allgemeines
+```
+
 In diesem Abschnitt werden grundlegende Konzepte erläutert, die für die Programmierung nach IEC 61131-3 und IEC 61499 sowie für die allgemeine Informatik wichtig sind.
 
 ## Identifikatoren (Namenskonventionen)

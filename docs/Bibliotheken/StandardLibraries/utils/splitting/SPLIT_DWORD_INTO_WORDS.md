@@ -1,5 +1,8 @@
 # SPLIT_DWORD_INTO_WORDS
 
+```{index} single: SPLIT_DWORD_INTO_WORDS
+```
+
 ![SPLIT_DWORD_INTO_WORDS](https://github.com/user-attachments/assets/393aad99-3222-4c5f-981b-4795868b5052)
 
 * * * * * * * * * *

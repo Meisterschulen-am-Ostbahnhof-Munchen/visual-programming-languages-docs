@@ -1,5 +1,8 @@
 # Softkey_IE
 
+```{index} single: Softkey_IE
+```
+
 <img width="1535" height="266" alt="image" src="https://github.com/user-attachments/assets/f4511361-3b89-455c-9aa8-418cfa227038" />
 
 * * * * * * * * * *

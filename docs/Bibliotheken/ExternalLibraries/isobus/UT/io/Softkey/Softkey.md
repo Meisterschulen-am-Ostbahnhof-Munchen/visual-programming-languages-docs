@@ -1,5 +1,8 @@
 # Softkey
 
+```{index} single: Softkey
+```
+
 ```{toctree}
 Softkey_IE
 Softkey_IX

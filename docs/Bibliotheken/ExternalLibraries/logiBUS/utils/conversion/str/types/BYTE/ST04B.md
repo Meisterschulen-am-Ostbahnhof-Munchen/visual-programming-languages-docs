@@ -1,5 +1,8 @@
 # ST04B
 
+```{index} single: ST04B
+```
+
 * * * * * * * * * *
 ## Einleitung
 `ST04B` ist ein benutzerdefinierter, strukturierter Datentyp innerhalb der 4diac-IDE. Im Gegensatz zu einem Funktionsblock (FB), der eine spezifische Funktionalität implementiert, definiert ein Datentyp eine Datenstruktur, die von Funktionsblöcken oder anderen Datentypen verwendet werden kann. Dieser Datentyp fasst vier einzelne Bytes zu einer logischen Einheit zusammen, um deren gemeinsame Handhabung zu vereinfachen.

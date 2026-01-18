@@ -1,5 +1,8 @@
 # arr
 
+```{index} single: arr
+```
+
 ```{toctree}
 assembling/assembling
 forwarding/forwarding

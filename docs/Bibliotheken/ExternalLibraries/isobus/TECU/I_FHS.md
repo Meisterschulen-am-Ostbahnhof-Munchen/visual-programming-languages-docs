@@ -1,5 +1,8 @@
 # I_FHS  
 
+```{index} single: I_FHS
+```
+
 ![I_FHS](https://github.com/user-attachments/assets/b03b0b7f-5254-4cc4-b25a-ec6da0840286)
   
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # Callback
 
+```{index} single: Callback
+```
+
 Message Callback
 
 ## Interface

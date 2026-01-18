@@ -1,5 +1,8 @@
 # ST08B
 
+```{index} single: ST08B
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `ST08B` ist eine strukturierte Datenstruktur, die genau acht Byte (BYTE) sequenziell zusammenfasst. Er dient primär als Container für die effiziente Gruppierung und den Transport von acht einzelnen Byte-Werten innerhalb eines IEC 61499-basierten Steuerungssystems. Dieser Datentyp ist besonders nützlich für die Handhabung von Rohdaten, Protokollrahmen oder für die strukturierte Übergabe von parametrisierten Datenblöcken zwischen Funktionsblöcken.

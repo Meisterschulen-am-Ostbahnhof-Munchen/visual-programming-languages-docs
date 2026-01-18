@@ -1,5 +1,8 @@
 # E_TONOF
 
+```{index} single: E_TONOF
+```
+
 **Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
 
 ## Bild

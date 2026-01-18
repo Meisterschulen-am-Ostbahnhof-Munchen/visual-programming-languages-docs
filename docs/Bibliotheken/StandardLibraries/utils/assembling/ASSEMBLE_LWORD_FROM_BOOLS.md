@@ -1,5 +1,8 @@
 # ASSEMBLE_LWORD_FROM_BOOLS
 
+```{index} single: ASSEMBLE_LWORD_FROM_BOOLS
+```
+
 ![ASSEMBLE_LWORD_FROM_BOOLS](https://github.com/user-attachments/assets/9df93a68-feb4-4868-8fbd-9aecbaab21a2)
 
 * * * * * * * * * *

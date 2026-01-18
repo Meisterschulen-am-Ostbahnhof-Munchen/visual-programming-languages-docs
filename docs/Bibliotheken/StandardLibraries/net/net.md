@@ -1,5 +1,8 @@
 # net
 
+```{index} single: net
+```
+
 ```{toctree}
 CLIENT_0
 CLIENT_0_1

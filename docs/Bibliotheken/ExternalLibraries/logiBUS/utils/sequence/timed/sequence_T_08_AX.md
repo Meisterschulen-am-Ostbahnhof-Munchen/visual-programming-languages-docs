@@ -1,5 +1,8 @@
 # sequence_T_08_AX
 
+```{index} single: sequence_T_08_AX
+```
+
 * * * * * * * * * *
 ## Einleitung
 `sequence_T_08_AX` ist eine Variante des `sequence_T_08`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein zeitgesteuerte Sequenz mit 8 Ausgabezuständen.

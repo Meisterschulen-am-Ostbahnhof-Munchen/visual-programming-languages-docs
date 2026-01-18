@@ -1,5 +1,8 @@
 # F_LINT_TO_BYTE
 
+```{index} single: F_LINT_TO_BYTE
+```
+
 <img width="1230" height="183" alt="F_LINT_TO_BYTE" src="https://github.com/user-attachments/assets/31f5aea5-3ee0-4d1d-83d9-c7897fad2fe4" />
 
 * * * * * * * * * *

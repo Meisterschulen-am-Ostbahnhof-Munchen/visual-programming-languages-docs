@@ -1,5 +1,8 @@
 # E\_CTD
 
+```{index} single: E\_CTD
+```
+
 ![E_CTD Diagram](https://user-images.githubusercontent.com/113907528/204893284-f9e75568-aeeb-4000-b4eb-2b0a7ef18187.png)  
 
 * * * * * * * * * *  

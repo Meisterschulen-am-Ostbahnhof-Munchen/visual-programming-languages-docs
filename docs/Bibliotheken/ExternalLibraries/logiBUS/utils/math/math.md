@@ -1,5 +1,8 @@
 # math
 
+```{index} single: math
+```
+
 ```{toctree}
 INTEGRAL
 OFFSET

@@ -1,5 +1,8 @@
 # HYST_1
 
+```{index} single: HYST_1
+```
+
 Hystereses function
 
 this hysteresis function switches the output high if the input signal reaches obove high and will

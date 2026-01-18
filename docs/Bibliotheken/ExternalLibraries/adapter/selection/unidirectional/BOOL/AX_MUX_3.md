@@ -1,5 +1,8 @@
 # AX_MUX_3
 
+```{index} single: AX_MUX_3
+```
+
 <img width="1205" height="246" alt="image" src="https://github.com/user-attachments/assets/24731b76-9e70-4627-9c7d-a57b754d23f9" />
 
 * * * * * * * * * *

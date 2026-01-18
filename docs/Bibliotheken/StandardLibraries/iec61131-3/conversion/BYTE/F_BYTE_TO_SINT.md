@@ -1,5 +1,8 @@
 # F_BYTE_TO_SINT
 
+```{index} single: F_BYTE_TO_SINT
+```
+
 <img width="1436" height="211" alt="F_BYTE_TO_SINT" src="https://github.com/user-attachments/assets/d91baa83-169e-4ee8-860d-f5233c52c8e8" />
 
 * * * * * * * * * *

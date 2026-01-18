@@ -1,5 +1,8 @@
 # Q_SoftKeyMask
 
+```{index} single: Q_SoftKeyMask
+```
+
 ![Q_SoftKeyMask](https://user-images.githubusercontent.com/116869307/214153149-6b211119-6c29-4154-bfa3-d1dd61a435bb.png)
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # EVENT
 
+```{index} single: EVENT
+```
+
 ```{toctree}
 AE_E_TO_EVENT
 AE_EVENT_TO_E

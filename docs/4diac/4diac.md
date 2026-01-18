@@ -1,5 +1,8 @@
 # Eclipse 4diac™
 
+```{index} single: Eclipse 4diac™
+```
+
 ## Kapitelinhalt
 
 ```{toctree}

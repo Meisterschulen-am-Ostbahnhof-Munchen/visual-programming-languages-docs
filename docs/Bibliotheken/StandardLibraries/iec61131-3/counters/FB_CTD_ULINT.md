@@ -1,5 +1,8 @@
 # FB_CTD_ULINT
 
+```{index} single: FB_CTD_ULINT
+```
+
 <img width="1411" height="282" alt="FB_CTD_ULINT" src="https://github.com/user-attachments/assets/47813539-b542-43ce-82f2-a1f5ec03073f" />
 
 * * * * * * * * * *

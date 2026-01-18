@@ -1,5 +1,8 @@
 # RT_Bridge_3
 
+```{index} single: RT_Bridge_3
+```
+
 * * * * * * * * * *
 
 ## Einleitung

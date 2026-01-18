@@ -1,5 +1,8 @@
 # rtevents
 
+```{index} single: rtevents
+```
+
 ```{toctree}
 RT_Bridge_1
 RT_Bridge_10

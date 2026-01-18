@@ -1,5 +1,8 @@
 # str
 
+```{index} single: str
+```
+
 ```{toctree}
 SchieberAuxInStruct
 SchieberAuxOutStruct

@@ -1,5 +1,8 @@
 # AX_XOR_8
 
+```{index} single: AX_XOR_8
+```
+
 <img width="1009" height="465" alt="image" src="https://github.com/user-attachments/assets/360232e2-8dcb-496e-84cf-311179b598af" />
 
 * * * * * * * * * *

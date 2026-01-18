@@ -1,5 +1,8 @@
 # SPLIT_DWORD_INTO_BOOLS
 
+```{index} single: SPLIT_DWORD_INTO_BOOLS
+```
+
 ![SPLIT_DWORD_INTO_BOOLS](https://github.com/user-attachments/assets/6450d832-86ef-4de3-96ad-82a9b4c7bb3e)
 
 * * * * * * * * * *

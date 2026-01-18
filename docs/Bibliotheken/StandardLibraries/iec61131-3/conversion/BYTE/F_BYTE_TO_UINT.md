@@ -1,5 +1,8 @@
 # F_BYTE_TO_UINT
 
+```{index} single: F_BYTE_TO_UINT
+```
+
 <img width="1436" height="212" alt="F_BYTE_TO_UINT" src="https://github.com/user-attachments/assets/8cb462ae-eb4e-4fd2-8556-33ab2b4fa9f3" />
 
 * * * * * * * * * *

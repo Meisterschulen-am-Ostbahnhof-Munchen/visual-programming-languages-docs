@@ -1,5 +1,8 @@
 # F_SINT_TO_UDINT
 
+```{index} single: F_SINT_TO_UDINT
+```
+
 <img width="1450" height="213" alt="F_SINT_TO_UDINT" src="https://github.com/user-attachments/assets/a5b8dca8-4533-4578-b402-729f15415b91" />
 
 * * * * * * * * * *

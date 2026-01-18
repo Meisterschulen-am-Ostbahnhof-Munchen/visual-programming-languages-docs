@@ -1,5 +1,8 @@
 # logiBUS®
 
+```{index} single: logiBUS®
+```
+
 **Die Hardware: Das robuste Herzstück Ihrer Maschinensteuerung**
 
 Die logiBUS-Hardware bildet die physische Grundlage, um Ihre digital erstellten Ideen in die Praxis umzusetzen. Hier werden die in der grafischen Programmierumgebung entworfenen Steuerungslogiken zum Leben erweckt und direkt an der Maschine ausgeführt. Jeder unserer Controller ist das Bindeglied zwischen der digitalen Welt Ihrer Anwendung und der realen Welt der Aktorik und Sensorik auf dem Feld.

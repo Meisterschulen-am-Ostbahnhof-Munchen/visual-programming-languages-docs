@@ -1,5 +1,8 @@
 # BeagleBoneBlack
 
+```{index} single: BeagleBoneBlack
+```
+
 * * * * * * * * * *
 
 ## Einleitung

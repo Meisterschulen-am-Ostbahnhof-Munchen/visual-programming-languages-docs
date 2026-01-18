@@ -1,5 +1,8 @@
 # Datentyp: LTIME
 
+```{index} single: Datentyp: LTIME
+```
+
 
 
 ```{toctree}

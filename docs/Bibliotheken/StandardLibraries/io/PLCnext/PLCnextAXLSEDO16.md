@@ -1,5 +1,8 @@
 # PLCnextAXLSEDO16
 
+```{index} single: PLCnextAXLSEDO16
+```
+
 <img width="1134" height="525" alt="image" src="https://github.com/user-attachments/assets/75f7b085-4f46-4f43-9c7b-b30650d90440" />
 
 * * * * * * * * * *

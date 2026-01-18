@@ -1,5 +1,8 @@
 # RampLimitFS
 
+```{index} single: RampLimitFS
+```
+
 <img width="842" height="294" alt="RampLimitFS" src="https://github.com/user-attachments/assets/29d36f04-bd95-4ebf-ae98-807414c5e6b9" />
 
 * * * * * * * * * *

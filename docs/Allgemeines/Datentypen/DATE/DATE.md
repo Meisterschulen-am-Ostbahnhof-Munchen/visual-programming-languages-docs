@@ -1,5 +1,8 @@
 # Datentyp: DATE
 
+```{index} single: Datentyp: DATE
+```
+
 
 
 ```{toctree}

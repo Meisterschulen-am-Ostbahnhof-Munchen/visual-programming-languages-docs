@@ -1,5 +1,8 @@
 # DI
 
+```{index} single: DI
+```
+
 ```{toctree}
 logiBUS_DI
 logiBUS_DI_Events

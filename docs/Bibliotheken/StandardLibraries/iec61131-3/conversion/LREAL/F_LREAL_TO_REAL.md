@@ -1,5 +1,8 @@
 # F_LREAL_TO_REAL
 
+```{index} single: F_LREAL_TO_REAL
+```
+
 <img width="1453" height="214" alt="F_LREAL_TO_REAL" src="https://github.com/user-attachments/assets/460d2ce1-b841-4ad8-ad35-6599f1a8d70c" />
 
 * * * * * * * * * *

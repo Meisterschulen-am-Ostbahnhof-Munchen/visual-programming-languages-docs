@@ -1,5 +1,8 @@
 # LO
 
+```{index} single: LO
+```
+
 * * * * * * * * * *
 ## Einleitung
 LO ist eine globale Konstantendefinition für Module mit geringer I/O-Dichte. Diese Konstanten definieren spezifische Adressbereiche für I/O-Module und werden in der 4diac-IDE zur Konfiguration von Steuerungssystemen verwendet.

@@ -1,5 +1,8 @@
 # ASSEMBLE_DWORD_FROM_QUARTERS
 
+```{index} single: ASSEMBLE_DWORD_FROM_QUARTERS
+```
+
 ![ASSEMBLE_DWORD_FROM_QUARTERS](https://github.com/user-attachments/assets/b87a9cb4-49aa-4375-be7f-c4e32422490e)
 
 * * * * * * * * * *

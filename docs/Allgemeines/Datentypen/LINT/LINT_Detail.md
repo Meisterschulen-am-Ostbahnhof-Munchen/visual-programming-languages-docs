@@ -1,5 +1,8 @@
 # Datentyp-Detail: LINT
 
+```{index} single: Datentyp-Detail: LINT
+```
+
 ## Beschreibung
 Lange ganze Zahl (Long Integer)
 

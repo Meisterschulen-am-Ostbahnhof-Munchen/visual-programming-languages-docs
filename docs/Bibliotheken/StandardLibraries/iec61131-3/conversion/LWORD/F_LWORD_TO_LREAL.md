@@ -1,5 +1,8 @@
 # F_LWORD_TO_LREAL
 
+```{index} single: F_LWORD_TO_LREAL
+```
+
 <img width="1464" height="211" alt="F_LWORD_TO_LREAL" src="https://github.com/user-attachments/assets/89f93d44-7207-4ef1-ba65-ed61f446770f" />
 
 * * * * * * * * * *

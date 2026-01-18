@@ -1,5 +1,8 @@
 # F_NOT_BOOL
 
+```{index} single: F_NOT_BOOL
+```
+
 <img width="1572" height="241" alt="image" src="https://github.com/user-attachments/assets/b637a4d2-b75e-4f3d-b5a9-99b2c93d33eb" />
 
 * * * * * * * * * *

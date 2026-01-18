@@ -1,5 +1,8 @@
 # Bücher Englisch
 
+```{index} single: Bücher Englisch
+```
+
 ## IEC 61499 Function Blocks for Embedded and Distributed Control Systems Design
 
 ### Über das Buch

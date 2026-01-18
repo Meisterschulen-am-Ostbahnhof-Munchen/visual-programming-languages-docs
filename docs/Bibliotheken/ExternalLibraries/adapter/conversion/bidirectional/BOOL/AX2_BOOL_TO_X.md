@@ -1,5 +1,8 @@
 # AX2_BOOL_TO_X
 
+```{index} single: AX2_BOOL_TO_X
+```
+
 <img width="1186" height="196" alt="image" src="https://github.com/user-attachments/assets/ed299069-4248-4942-bdcb-3615f0044660" />
 
 * * * * * * * * * *

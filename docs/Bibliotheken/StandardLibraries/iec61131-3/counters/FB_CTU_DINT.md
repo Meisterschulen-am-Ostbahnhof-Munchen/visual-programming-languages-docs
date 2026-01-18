@@ -1,5 +1,8 @@
 # FB_CTU_DINT
 
+```{index} single: FB_CTU_DINT
+```
+
 <img width="1396" height="277" alt="" src="https://github.com/user-attachments/assets/36c696fb-4dfc-457a-bd17-1842876fa432" />
 
 * * * * * * * * * *

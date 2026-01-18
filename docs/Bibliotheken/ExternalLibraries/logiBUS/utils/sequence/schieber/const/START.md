@@ -1,5 +1,8 @@
 # START
 
+```{index} single: START
+```
+
 * * * * * * * * * *
 ## Einleitung
 Die `START`-Konstantendeklaration definiert eine Reihe von ganzzahligen Konstanten (vom Typ `UINT`) für die Verwendung in Steuerungsprogrammen. Diese Konstanten repräsentieren spezifische Zustände, die typischerweise in Sequenzsteuerungen, beispielsweise für Schieber, verwendet werden. Sie dienen der Verbesserung der Code-Lesbarkeit und Wartbarkeit, indem sie numerische Werte durch aussagekräftige Namen ersetzen.

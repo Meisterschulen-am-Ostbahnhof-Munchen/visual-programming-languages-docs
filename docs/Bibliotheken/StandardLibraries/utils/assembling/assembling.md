@@ -1,5 +1,8 @@
 # assembling
 
+```{index} single: assembling
+```
+
 ```{toctree}
 ASSEMBLE_BYTE_FROM_BOOLS
 ASSEMBLE_BYTE_FROM_QUARTERS

@@ -1,5 +1,8 @@
 # RT_E_R_TRIG
 
+```{index} single: RT_E_R_TRIG
+```
+
 * * * * * * * * * *
 
 ## Einleitung

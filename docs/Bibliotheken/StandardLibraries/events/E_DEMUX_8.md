@@ -1,5 +1,8 @@
 # E_DEMUX_8
 
+```{index} single: E_DEMUX_8
+```
+
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *

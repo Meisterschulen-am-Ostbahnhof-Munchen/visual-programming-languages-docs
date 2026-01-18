@@ -1,5 +1,8 @@
 # adapter
 
+```{index} single: adapter
+```
+
 ```{toctree}
 booleanOperators/booleanOperators
 conversion/conversion

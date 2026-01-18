@@ -1,5 +1,8 @@
 # F_DWORD_BCD_TO_UDINT
 
+```{index} single: F_DWORD_BCD_TO_UDINT
+```
+
 <img width="1089" height="154" alt="F_DWORD_BCD_TO_UDINT" src="https://github.com/user-attachments/assets/4f68ef0e-2d87-4362-94ac-25386376948e" />
 
 * * * * * * * * * *

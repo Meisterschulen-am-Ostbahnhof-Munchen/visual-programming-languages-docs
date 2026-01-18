@@ -1,5 +1,8 @@
 # Q_NumericValueAux  
 
+```{index} single: Q_NumericValueAux
+```
+
 ![Q_NumericValueAux](https://github.com/user-attachments/assets/43c94891-1240-454a-b317-ce37c9cd4d32)
 
 * * * * * * * * * *

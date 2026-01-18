@@ -1,5 +1,8 @@
 # AX2
 
+```{index} single: AX2
+```
+
 bidirectional Adapter Interface for 1 Event and 1 Bool
 
 ## Interface

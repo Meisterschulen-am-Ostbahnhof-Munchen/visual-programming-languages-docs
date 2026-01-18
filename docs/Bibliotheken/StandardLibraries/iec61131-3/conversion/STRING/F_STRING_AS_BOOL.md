@@ -1,5 +1,8 @@
 # F_STRING_AS_BOOL
 
+```{index} single: F_STRING_AS_BOOL
+```
+
 <img width="1462" height="213" alt="F_STRING_AS_BOOL" src="https://github.com/user-attachments/assets/493e97a2-4fe1-488e-b506-d4a41641a727" />
 
 * * * * * * * * * *

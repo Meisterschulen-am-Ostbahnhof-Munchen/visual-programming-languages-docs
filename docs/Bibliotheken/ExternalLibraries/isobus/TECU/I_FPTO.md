@@ -1,5 +1,8 @@
 # I_FPTO
 
+```{index} single: I_FPTO
+```
+
 ![I_FPTO](https://github.com/user-attachments/assets/a0e9bd68-8b01-45be-aa48-e5e75d774d2b)
 
 * * * * * * * * * *

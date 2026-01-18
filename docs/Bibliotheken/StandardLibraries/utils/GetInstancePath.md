@@ -1,5 +1,8 @@
 # GetInstancePath
 
+```{index} single: GetInstancePath
+```
+
 ![GetInstancePath](https://github.com/user-attachments/assets/325783e2-0c06-4d8f-bdf5-56508a4e6f25)
 
 * * * * * * * * * *

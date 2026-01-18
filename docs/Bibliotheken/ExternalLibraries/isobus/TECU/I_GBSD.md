@@ -1,5 +1,8 @@
 # I_GBSD
 
+```{index} single: I_GBSD
+```
+
 ![I_GBSD](https://github.com/user-attachments/assets/0404f0fb-3b88-47aa-8df6-2312a96018cf)
 
 * * * * * * * * * *

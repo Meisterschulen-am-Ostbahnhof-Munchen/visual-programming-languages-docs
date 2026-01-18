@@ -1,5 +1,8 @@
 # F_WSTRING_AS_BYTE
 
+```{index} single: F_WSTRING_AS_BYTE
+```
+
 <img width="1480" height="214" alt="F_WSTRING_AS_BYTE" src="https://github.com/user-attachments/assets/5af29946-8d1c-495b-a40a-d21f8d38b1fc" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # Esp32EthernetKitIO
 
+```{index} single: Esp32EthernetKitIO
+```
+
 <img width="1256" height="313" alt="image" src="https://github.com/user-attachments/assets/b66a0967-8b6e-47b2-b65a-10053927e12e" />
 
 * * * * * * * * * *

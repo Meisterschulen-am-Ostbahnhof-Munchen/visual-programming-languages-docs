@@ -1,5 +1,8 @@
 # A2X_2X_TO_BOOL
 
+```{index} single: A2X_2X_TO_BOOL
+```
+
 <img width="1133" height="205" alt="image" src="https://github.com/user-attachments/assets/04474ccc-a4d3-46b8-b00e-a15ae93d09e9" />
 
 * * * * * * * * * *

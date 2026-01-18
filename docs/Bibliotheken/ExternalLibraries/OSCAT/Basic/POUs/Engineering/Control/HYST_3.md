@@ -1,5 +1,8 @@
 # HYST_3
 
+```{index} single: HYST_3
+```
+
 Hystereses function
 
 this is a double hysteresis function. Out1 follows a hysteresis function defined by val1and hyst,

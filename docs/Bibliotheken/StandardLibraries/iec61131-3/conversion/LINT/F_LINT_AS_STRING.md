@@ -1,5 +1,8 @@
 # F_LINT_AS_STRING
 
+```{index} single: F_LINT_AS_STRING
+```
+
 <img width="1256" height="183" alt="F_LINT_AS_STRING" src="https://github.com/user-attachments/assets/c1d86074-155a-49cf-b025-bacefa300e09" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # LED_FREQ
 
+```{index} single: LED_FREQ
+```
+
 * * * * * * * * * *
 
 ## Einleitung

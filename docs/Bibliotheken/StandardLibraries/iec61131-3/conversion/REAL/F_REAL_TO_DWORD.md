@@ -1,5 +1,8 @@
 # F_REAL_TO_DWORD
 
+```{index} single: F_REAL_TO_DWORD
+```
+
 <img width="1453" height="216" alt="F_REAL_TO_DWORD" src="https://github.com/user-attachments/assets/e2620ce1-a635-402f-98c9-6597cf979c6a" />
 
 * * * * * * * * * *

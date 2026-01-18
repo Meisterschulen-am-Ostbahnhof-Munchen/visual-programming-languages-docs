@@ -1,5 +1,8 @@
 # E_MERGE
 
+```{index} single: E_MERGE
+```
+
 ![E_MERGE](https://user-images.githubusercontent.com/69573151/210802574-4e7f467e-3b86-4cfe-9a43-715417adb081.png)
 
 * * * * * * * * * *

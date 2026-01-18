@@ -1,5 +1,8 @@
 # timers
 
+```{index} single: timers
+```
+
 ```{toctree}
 E_PULSE
 E_TOF

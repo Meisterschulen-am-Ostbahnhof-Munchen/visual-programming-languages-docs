@@ -1,5 +1,8 @@
 # AX_TOF
 
+```{index} single: AX_TOF
+```
+
 <img width="962" height="255" alt="image" src="https://github.com/user-attachments/assets/b86d8399-ca0b-492c-b20c-52dde7069371" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # Sonstiges Deutsch
 
+```{index} single: Sonstiges Deutsch
+```
+
 ## Artikel und Portale
 
 * [Verteilte Steuerungen nach IEC 61499 (Docplayer)](https://docplayer.org/71630572-Verteilte-steuerungen-nach-iec-61499.html)

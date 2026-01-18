@@ -1,5 +1,8 @@
 # sequence_ET_04_AX
 
+```{index} single: sequence_ET_04_AX
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `sequence_ET_04_AX` ist eine Variante des `sequence_ET_04`, der zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine Sequenz mit 4 Ausgabezuständen, wobei Übergänge ereignis- oder zeitgesteuert sein können.

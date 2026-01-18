@@ -1,5 +1,8 @@
 # DualCAN octa-output ESP32S3
 
+```{index} single: DualCAN octa-output ESP32S3
+```
+
 
 
 ## CAN-BUS

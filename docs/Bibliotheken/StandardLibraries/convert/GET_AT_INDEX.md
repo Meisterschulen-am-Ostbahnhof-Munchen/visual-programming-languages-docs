@@ -1,5 +1,8 @@
 # GET_AT_INDEX
 
+```{index} single: GET_AT_INDEX
+```
+
 <img width="1341" height="212" alt="image" src="https://github.com/user-attachments/assets/05b8aa7e-9c77-4a15-8787-2bd7d986a846" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # E_DELAY
 
+```{index} single: E_DELAY
+```
+
 ![E_DELAY Diagram](https://user-images.githubusercontent.com/113907528/227959784-5391cacc-ca41-4bca-865e-7393a908e252.png)
 
 * * * * * * * * * *

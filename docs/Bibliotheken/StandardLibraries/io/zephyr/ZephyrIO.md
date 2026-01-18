@@ -1,5 +1,8 @@
 # ZephyrIO
 
+```{index} single: ZephyrIO
+```
+
 <img width="1451" height="239" alt="image" src="https://github.com/user-attachments/assets/cc273604-5002-4492-a00b-90038a2d5b5f" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # Datentyp-Detail: ULINT
 
+```{index} single: Datentyp-Detail: ULINT
+```
+
 ## Beschreibung
 Vorzeichenlose lange ganze Zahl
 

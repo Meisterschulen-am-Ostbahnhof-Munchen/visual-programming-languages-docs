@@ -1,5 +1,8 @@
 # Datentyp-Detail: REAL
 
+```{index} single: Datentyp-Detail: REAL
+```
+
 ## Beschreibung
 Reelle Zahl
 

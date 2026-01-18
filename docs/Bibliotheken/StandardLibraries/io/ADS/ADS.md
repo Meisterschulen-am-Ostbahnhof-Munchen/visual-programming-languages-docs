@@ -1,5 +1,8 @@
 # ADS
 
+```{index} single: ADS
+```
+
 ```{toctree}
 ADS_SERVER_CONFIG
 SET_LOCAL_ADS_ADDRESS

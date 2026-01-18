@@ -1,5 +1,8 @@
 # F_BYTE_AS_STRING
 
+```{index} single: F_BYTE_AS_STRING
+```
+
 <img width="1257" height="183" alt="F_BYTE_AS_STRING" src="https://github.com/user-attachments/assets/8c04d5bd-c228-49a9-a534-2d29765aedb1" />
 
 * * * * * * * * * *

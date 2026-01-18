@@ -1,5 +1,8 @@
 # BOOL
 
+```{index} single: BOOL
+```
+
 ```{toctree}
 AX_DEMUX_2
 AX_DEMUX_3

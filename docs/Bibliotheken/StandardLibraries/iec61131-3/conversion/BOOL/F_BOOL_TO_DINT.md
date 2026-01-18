@@ -1,5 +1,8 @@
 # F_BOOL_TO_DINT
 
+```{index} single: F_BOOL_TO_DINT
+```
+
 <img width="1235" height="182" alt="F_BOOL_TO_DINT" src="https://github.com/user-attachments/assets/a1422f1d-6480-464e-9ae1-5251c70d054e" />
 
 * * * * * * * * * *

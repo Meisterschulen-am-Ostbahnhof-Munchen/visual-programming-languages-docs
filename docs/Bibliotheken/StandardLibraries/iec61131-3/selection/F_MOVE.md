@@ -1,5 +1,8 @@
 # F_MOVE
 
+```{index} single: F_MOVE
+```
+
 ![F_MOVE](https://github.com/user-attachments/assets/16aaf0c8-4559-4366-be56-14f0db433d33)
 
 

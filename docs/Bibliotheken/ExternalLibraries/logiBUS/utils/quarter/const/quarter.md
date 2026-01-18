@@ -1,5 +1,8 @@
 # quarter
 
+```{index} single: quarter
+```
+
 * * * * * * * * * *
 ## Einleitung
 Die `quarter`-Bibliothek ist eine Sammlung globaler Konstanten, die für die Arbeit mit SAE J1939-konformen Status- und Befehlswerten in logiBUS-Anwendungen vorgesehen ist. Sie definiert standardisierte 2-Bit-Werte (repräsentiert als `BYTE`) und zugehörige Klartextbeschreibungen (`STRING`) für Zustände und Steuerbefehle. Diese Konstanten dienen der Vereinheitlichung und verbesserten Lesbarkeit von Code, der mit binären Statusinformationen und Steuerkommandos arbeitet.

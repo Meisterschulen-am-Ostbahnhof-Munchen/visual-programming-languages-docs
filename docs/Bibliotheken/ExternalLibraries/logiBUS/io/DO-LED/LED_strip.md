@@ -1,5 +1,8 @@
 # LED_strip
 
+```{index} single: LED_strip
+```
+
 * * * * * * * * * *
 ## Einleitung
 LED_strip ist ein GlobalConstants-Baustein, der globale Konstanten für die Ansteuerung von LED-Streifen bereitstellt. Der Baustein definiert eine Ausgabevariable für die Steuerung von LED-Streifen und ist Teil des logiBUS-Systems.

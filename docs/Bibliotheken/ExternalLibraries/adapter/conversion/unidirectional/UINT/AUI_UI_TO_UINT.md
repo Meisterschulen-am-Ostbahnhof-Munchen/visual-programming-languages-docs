@@ -1,5 +1,8 @@
 # AUI_UI_TO_UINT
 
+```{index} single: AUI_UI_TO_UINT
+```
+
 ## Einleitung
 Der AUI_UI_TO_UINT Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung des AUI-Adapterformats in einen UINT-Wert dient.
 

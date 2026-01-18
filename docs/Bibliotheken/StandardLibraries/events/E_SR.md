@@ -1,5 +1,8 @@
 # E_SR
 
+```{index} single: E_SR
+```
+
 <img width="1139" height="202" alt="E_SR" src="https://user-images.githubusercontent.com/113907528/204904299-a6a3580a-42b4-4ea9-80c9-52b38b2d002b.png">
 
 * * * * * * * * * *

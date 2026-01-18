@@ -1,5 +1,8 @@
 # DataPanel_MI_IW
 
+```{index} single: DataPanel_MI_IW
+```
+
 Input service interface function block for analog input data
 
 ## Interface

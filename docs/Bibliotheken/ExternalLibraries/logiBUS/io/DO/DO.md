@@ -1,5 +1,8 @@
 # DO
 
+```{index} single: DO
+```
+
 ```{toctree}
 logiBUS_DO
 logiBUS_DO_S

@@ -1,5 +1,8 @@
 # Hutschienenmoped
 
+```{index} single: Hutschienenmoped
+```
+
 
 Link zum Devkit: <https://docs.m5stack.com/en/atom/atom_display>
 Link zum Devkit: <https://docs.m5stack.com/en/core/ATOM%20Lite>

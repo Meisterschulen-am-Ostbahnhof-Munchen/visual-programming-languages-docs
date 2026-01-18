@@ -1,5 +1,8 @@
 # F_SUB_TOD_TIME
 
+```{index} single: F_SUB_TOD_TIME
+```
+
 ![F_SUB_TOD_TIME](https://github.com/user-attachments/assets/6e8ab24c-c318-4a9f-916c-777af4e7be34)
 
 * * * * * * * * * *

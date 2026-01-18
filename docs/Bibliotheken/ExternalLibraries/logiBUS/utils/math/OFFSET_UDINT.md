@@ -1,5 +1,8 @@
 # OFFSET_UDINT
 
+```{index} single: OFFSET_UDINT
+```
+
 <img width="1747" height="246" alt="image" src="https://github.com/user-attachments/assets/03bc479b-bcf2-4609-90d0-c235966f16a4" />
 
 * * * * * * * * * *

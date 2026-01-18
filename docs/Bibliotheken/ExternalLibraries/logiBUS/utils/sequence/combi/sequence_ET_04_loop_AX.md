@@ -1,5 +1,8 @@
 # sequence_ET_04_loop_AX
 
+```{index} single: sequence_ET_04_loop_AX
+```
+
 * * * * * * * * * *
 ## Einleitung
 `sequence_ET_04_loop_AX` ist eine Variante des `sequence_ET_04_loop`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine zyklische Sequenz mit 4 Ausgabezuständen.

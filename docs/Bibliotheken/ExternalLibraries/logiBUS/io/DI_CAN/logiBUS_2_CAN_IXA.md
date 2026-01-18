@@ -1,5 +1,8 @@
 # logiBUS_2_CAN_IXA
 
+```{index} single: logiBUS_2_CAN_IXA
+```
+
 <img width="2031" height="363" alt="image" src="https://github.com/user-attachments/assets/d06a9404-82e0-4172-9321-7677d642f03f" />
 
 * * * * * * * * * *

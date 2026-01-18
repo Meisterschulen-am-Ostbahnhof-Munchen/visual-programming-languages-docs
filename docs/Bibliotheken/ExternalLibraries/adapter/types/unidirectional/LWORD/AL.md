@@ -1,5 +1,8 @@
 # AL (LWORD)
 
+```{index} single: AL (LWORD)
+```
+
 unidirectional Adapter Interface for 1 Event and 1 Lword
 
 ## Interface

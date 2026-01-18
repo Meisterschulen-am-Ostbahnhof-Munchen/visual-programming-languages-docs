@@ -1,5 +1,8 @@
 # E_T_FF
 
+```{index} single: E_T_FF
+```
+
 <img width="1139" height="202" alt="E_T_FF" src="https://user-images.githubusercontent.com/69573151/200578501-6ff6cc82-30c8-40a2-9a74-17fd320520ea.png">
 
 * * * * * * * * * *

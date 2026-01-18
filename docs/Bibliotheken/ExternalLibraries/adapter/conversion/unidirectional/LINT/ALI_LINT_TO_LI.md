@@ -1,5 +1,8 @@
 # ALI_LINT_TO_LI
 
+```{index} single: ALI_LINT_TO_LI
+```
+
 ## Einleitung
 Der ALI_LINT_TO_LI Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines LINT-Werts in das ALI-Adapterformat dient.
 

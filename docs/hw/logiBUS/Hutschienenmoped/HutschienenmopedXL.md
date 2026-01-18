@@ -1,5 +1,8 @@
 # Hutschienenmoped XL
 
+```{index} single: Hutschienenmoped XL
+```
+
 
 Link zum Devkit: <https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/index.html>
 

@@ -1,6 +1,9 @@
 
 # Steuerung Bohrmaschinenschalter erstellen
 
+```{index} single: Steuerung Bohrmaschinenschalter erstellen
+```
+
 **Neue Steuerung erstellen Bohrmaschinenschalter. (Ein- Ausschalter an Ständerbohrmaschine)**
 
 (Mit einem Knopf wird ein Ausgang an geschalten, mit einem anderen Knopf wird ein Ausgang aus geschalten) 

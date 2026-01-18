@@ -1,5 +1,8 @@
 # SET_LOCAL_ADS_ADDRESS
 
+```{index} single: SET_LOCAL_ADS_ADDRESS
+```
+
 <img width="1327" height="235" alt="image" src="https://github.com/user-attachments/assets/79166574-02f4-4798-bfa1-22a3911fc8a1" />
 
 * * * * * * * * * *

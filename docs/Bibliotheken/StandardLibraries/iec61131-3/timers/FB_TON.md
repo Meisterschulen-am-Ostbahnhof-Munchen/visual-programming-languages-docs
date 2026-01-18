@@ -1,5 +1,8 @@
 # FB_TON
 
+```{index} single: FB_TON
+```
+
 <img width="1324" height="243" alt="image" src="https://github.com/user-attachments/assets/b55df574-a026-4d8a-b907-32a7779df532" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # Q_SetAudioVolume
 
+```{index} single: Q_SetAudioVolume
+```
+
 ![Q_SetAudioVolume](https://user-images.githubusercontent.com/116869307/214153008-918f1900-9a0a-4ee0-8fdb-ef02818a91cd.png)
 
 * * * * * * * * * *

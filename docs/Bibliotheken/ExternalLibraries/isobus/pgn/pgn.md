@@ -1,5 +1,8 @@
 # pgn
 
+```{index} single: pgn
+```
+
 ```{toctree}
 ADDRESS
 BaseMemberExternAdd

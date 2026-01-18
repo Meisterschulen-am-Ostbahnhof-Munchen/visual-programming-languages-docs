@@ -1,5 +1,8 @@
 # sequence_E_08_AX
 
+```{index} single: sequence_E_08_AX
+```
+
 * * * * * * * * * *
 ## Einleitung
 `sequence_E_08_AX` ist eine Variante des `sequence_E_08`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein ereignisgesteuerte Sequenz mit 8 Ausgabezuständen.

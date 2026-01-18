@@ -1,5 +1,8 @@
 # E_CTUD_UDINT
 
+```{index} single: E_CTUD_UDINT
+```
+
 <img width="1139" height="259" alt="E_CTUD_UDINT" src="https://user-images.githubusercontent.com/116869307/214142444-55a16971-caf0-4c6c-a1fa-c0294a26464a.png">
 
 * * * * * * * * * *

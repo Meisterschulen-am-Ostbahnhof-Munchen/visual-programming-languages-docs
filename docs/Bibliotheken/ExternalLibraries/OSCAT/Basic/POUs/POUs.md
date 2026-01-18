@@ -1,5 +1,8 @@
 # POUs
 
+```{index} single: POUs
+```
+
 ```{toctree}
 conversion/conversion
 Engineering/Engineering

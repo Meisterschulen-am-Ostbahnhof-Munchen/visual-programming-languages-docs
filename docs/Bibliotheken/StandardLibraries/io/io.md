@@ -1,5 +1,8 @@
 # io
 
+```{index} single: io
+```
+
 ```{toctree}
 ADS/ADS
 eIO/eIO

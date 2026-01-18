@@ -1,5 +1,8 @@
 # Aux_QXA
 
+```{index} single: Aux_QXA
+```
+
 <img width="1474" height="164" alt="image" src="https://github.com/user-attachments/assets/d340aff6-bc76-425a-b4a7-5e628255f4a6" />
 
 * * * * * * * * * *

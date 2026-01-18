@@ -1,5 +1,8 @@
 # F_TIME_IN_US_TO_DINT
 
+```{index} single: F_TIME_IN_US_TO_DINT
+```
+
 <img width="1520" height="212" alt="F_TIME_IN_US_TO_DINT" src="https://github.com/user-attachments/assets/f69e17a7-e3ae-4ca9-ac0d-e8c66d9c31ce" />
 
 * * * * * * * * * *

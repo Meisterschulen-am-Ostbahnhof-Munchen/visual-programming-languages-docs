@@ -1,5 +1,8 @@
 # Q_ChildPosition
 
+```{index} single: Q_ChildPosition
+```
+
 ![Q_ChildPosition](https://user-images.githubusercontent.com/116869307/214147176-8b27f37a-4898-406a-98a0-e5f5701abc58.png)
 
 * * * * * * * * * *

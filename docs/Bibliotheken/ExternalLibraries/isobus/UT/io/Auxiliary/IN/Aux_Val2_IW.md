@@ -1,5 +1,8 @@
 # Aux_Val2_IW
 
+```{index} single: Aux_Val2_IW
+```
+
 <img width="1351" height="292" alt="image" src="https://github.com/user-attachments/assets/3d049160-0f3d-47ee-99f9-04a4361361bc" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # RT_E_TRAIN
 
+```{index} single: RT_E_TRAIN
+```
+
 * * * * * * * * * *
 
 ## Einleitung

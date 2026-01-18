@@ -1,5 +1,8 @@
 # E_MUX_2
 
+```{index} single: E_MUX_2
+```
+
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *

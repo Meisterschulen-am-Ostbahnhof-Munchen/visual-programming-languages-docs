@@ -1,5 +1,8 @@
 # RT_E_REND
 
+```{index} single: RT_E_REND
+```
+
 * * * * * * * * * *
 
 ## Einleitung

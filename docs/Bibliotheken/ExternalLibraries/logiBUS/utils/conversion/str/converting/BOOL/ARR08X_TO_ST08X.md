@@ -1,5 +1,8 @@
 # ARR08X_TO_ST08X
 
+```{index} single: ARR08X_TO_ST08X
+```
+
 <img width="1352" height="215" alt="image" src="https://github.com/user-attachments/assets/f6ca4174-d362-4551-a80d-487df811f414" />
 
 * * * * * * * * * *

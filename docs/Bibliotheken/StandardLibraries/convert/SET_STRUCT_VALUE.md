@@ -1,5 +1,8 @@
 # SET_STRUCT_VALUE
 
+```{index} single: SET_STRUCT_VALUE
+```
+
 <img width="1393" height="152" alt="image" src="https://github.com/user-attachments/assets/06ce9694-a203-4982-895d-68c27425acd1" />
 
 * * * * * * * * * *

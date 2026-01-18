@@ -1,5 +1,8 @@
 # DataPanel_STATUS_SAE_J1939
 
+```{index} single: DataPanel_STATUS_SAE_J1939
+```
+
 Status Output of 1 DataPanel Node
 
 ## Interface

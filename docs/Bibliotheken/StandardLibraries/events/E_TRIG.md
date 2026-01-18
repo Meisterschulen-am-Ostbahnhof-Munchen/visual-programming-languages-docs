@@ -1,5 +1,8 @@
 # E_TRIG
 
+```{index} single: E_TRIG
+```
+
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *

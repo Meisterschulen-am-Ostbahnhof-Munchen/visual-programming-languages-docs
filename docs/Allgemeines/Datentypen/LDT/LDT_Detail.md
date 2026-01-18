@@ -1,5 +1,8 @@
 # Datentyp-Detail: LDT
 
+```{index} single: Datentyp-Detail: LDT
+```
+
 ## Beschreibung
 Der Datentyp **LDT** (Long Date and Time) kombiniert Datum und hochauflösende Uhrzeit in einem 64-Bit-Element.
 

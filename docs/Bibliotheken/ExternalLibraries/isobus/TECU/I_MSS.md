@@ -1,5 +1,8 @@
 # I_MSS
 
+```{index} single: I_MSS
+```
+
 ![I_MSS](https://github.com/user-attachments/assets/eb4d09fb-b198-448d-bc88-992ac808bb29)
 
 * * * * * * * * * *

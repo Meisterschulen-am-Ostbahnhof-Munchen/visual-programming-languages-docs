@@ -1,5 +1,8 @@
 # Engineering
 
+```{index} single: Engineering
+```
+
 ```{toctree}
 Control/Control
 measurements/measurements

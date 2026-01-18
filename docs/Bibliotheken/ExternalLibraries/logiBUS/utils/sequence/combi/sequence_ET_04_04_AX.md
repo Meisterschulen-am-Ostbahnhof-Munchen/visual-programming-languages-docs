@@ -1,5 +1,8 @@
 # sequence_ET_04_04_AX
 
+```{index} single: sequence_ET_04_04_AX
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `sequence_ET_04_04_AX` ist die adapterbasierte Variante des `sequence_ET_04_04`. Er realisiert eine 8-stufige Sequenzsteuerung, bei der die Ausgänge über `AX`-Adapter (Ereignis + Daten) statt über einfache BOOL-Variablen angesteuert werden. Die Übergänge können sowohl ereignis- als auch zeitgesteuert erfolgen.

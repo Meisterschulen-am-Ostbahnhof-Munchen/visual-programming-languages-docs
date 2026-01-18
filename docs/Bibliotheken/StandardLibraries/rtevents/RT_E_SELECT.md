@@ -1,5 +1,8 @@
 # RT_E_SELECT
 
+```{index} single: RT_E_SELECT
+```
+
 * * * * * * * * * *
 
 ## Einleitung

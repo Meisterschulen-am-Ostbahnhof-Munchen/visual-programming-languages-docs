@@ -1,5 +1,8 @@
 # F_SINT_TO_LINT
 
+```{index} single: F_SINT_TO_LINT
+```
+
 <img width="1434" height="213" alt="F_SINT_TO_LINT" src="https://github.com/user-attachments/assets/87eb573f-d686-40fb-aa1e-1a3c3c21f187" />
 
 * * * * * * * * * *

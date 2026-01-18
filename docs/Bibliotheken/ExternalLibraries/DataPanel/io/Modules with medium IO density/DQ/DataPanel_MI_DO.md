@@ -1,5 +1,8 @@
 # DataPanel_MI_DO
 
+```{index} single: DataPanel_MI_DO
+```
+
 * * * * * * * * * *
 
 ## Einleitung

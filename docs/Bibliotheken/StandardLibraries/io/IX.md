@@ -1,5 +1,8 @@
 # IX
 
+```{index} single: IX
+```
+
 ![](https://user-images.githubusercontent.com/69573151/210780918-7dd9c9fc-17da-4fca-983d-f5d40e91ce47.png)
 
 * * * * * * * * * *

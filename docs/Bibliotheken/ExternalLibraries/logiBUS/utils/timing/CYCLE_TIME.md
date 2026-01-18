@@ -1,5 +1,8 @@
 # CYCLE_TIME
 
+```{index} single: CYCLE_TIME
+```
+
 <img width="1186" height="212" alt="image" src="https://github.com/user-attachments/assets/9a52222d-13af-45a6-94bb-67de45036241" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # AlPgnRxNew8B_REQ
 
+```{index} single: AlPgnRxNew8B_REQ
+```
+
 <img width="1324" height="281" alt="image" src="https://github.com/user-attachments/assets/692b1960-1bad-4a6d-89ca-c6daba8a85cd" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # ALI (LINT)
 
+```{index} single: ALI (LINT)
+```
+
 unidirectional Adapter Interface for 1 Event and 1 Lint
 
 ## Interface

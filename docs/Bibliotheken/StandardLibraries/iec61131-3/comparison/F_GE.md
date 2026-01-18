@@ -1,5 +1,8 @@
 # F_GE
 
+```{index} single: F_GE
+```
+
 
 
 

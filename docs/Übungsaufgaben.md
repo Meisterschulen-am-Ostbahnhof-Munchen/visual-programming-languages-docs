@@ -1,5 +1,8 @@
 # Übungsaufgaben
 
+```{index} single: Übungsaufgaben
+```
+
 ```{toctree}
 ```
 

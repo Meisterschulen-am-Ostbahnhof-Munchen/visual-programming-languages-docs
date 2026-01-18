@@ -1,5 +1,8 @@
 # SPLIT_DWORD_INTO_QUARTERS
 
+```{index} single: SPLIT_DWORD_INTO_QUARTERS
+```
+
 ![SPLIT_DWORD_INTO_QUARTERS](https://github.com/user-attachments/assets/140e8baa-2ae9-4977-91b3-1a7b608f9f12)
 
 * * * * * * * * * *

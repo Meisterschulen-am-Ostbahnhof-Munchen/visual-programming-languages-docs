@@ -1,5 +1,8 @@
 # quarter
 
+```{index} single: quarter
+```
+
 ```{toctree}
 BOOL_TO_QUARTER
 BOOLS_TO_QUARTERS

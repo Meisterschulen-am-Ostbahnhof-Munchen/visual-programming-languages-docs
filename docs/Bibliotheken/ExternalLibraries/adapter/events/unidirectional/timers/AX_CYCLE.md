@@ -1,5 +1,8 @@
 # AX_CYCLE
 
+```{index} single: AX_CYCLE
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der AX_CYCLE ist ein Funktionsblock, der ein zyklisches Ereignis über einen AX-Adapter ausgibt.

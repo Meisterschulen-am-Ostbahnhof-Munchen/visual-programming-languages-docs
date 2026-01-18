@@ -1,5 +1,8 @@
 # Softkey_IXA
 
+```{index} single: Softkey_IXA
+```
+
 * * * * * * * * * *
 
 ## Einleitung

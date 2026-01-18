@@ -1,5 +1,8 @@
 # SUBSCRIBE_0
 
+```{index} single: SUBSCRIBE_0
+```
+
 <img width="1291" height="276" alt="image" src="https://github.com/user-attachments/assets/073a3edc-8308-4c4f-a920-8f96a1ac017e" />
 
 * * * * * * * * * *

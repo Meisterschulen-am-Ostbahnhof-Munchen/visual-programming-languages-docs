@@ -1,5 +1,8 @@
 # DQ
 
+```{index} single: DQ
+```
+
 ```{toctree}
 DataPanel_LO_DO
 DataPanel_LO_DO_S

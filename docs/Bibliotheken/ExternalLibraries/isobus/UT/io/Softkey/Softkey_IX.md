@@ -1,5 +1,8 @@
 # Softkey_IX
 
+```{index} single: Softkey_IX
+```
+
 <img width="1581" height="340" alt="image" src="https://github.com/user-attachments/assets/7cd0488b-6f9a-4ca0-a7a7-17b503414278" />
 
 * * * * * * * * * *

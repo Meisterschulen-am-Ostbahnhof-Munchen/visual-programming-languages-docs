@@ -1,5 +1,8 @@
 # E_SWITCH
 
+```{index} single: E_SWITCH
+```
+
 <img width="1139" height="202" alt="E_SWITCH" src="https://user-images.githubusercontent.com/69573151/203071621-eb1065f1-d902-4120-95a3-0c50a7fcc66a.png">
 
 * * * * * * * * * *

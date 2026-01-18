@@ -1,5 +1,8 @@
 # AB (BYTE)
 
+```{index} single: AB (BYTE)
+```
+
 unidirectional Adapter Interface for 1 Event and 1 Byte
 
 ## Interface

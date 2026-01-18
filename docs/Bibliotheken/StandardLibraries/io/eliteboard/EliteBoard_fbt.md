@@ -1,5 +1,8 @@
 # EliteBoard
 
+```{index} single: EliteBoard
+```
+
 <img width="676" height="440" alt="image" src="https://github.com/user-attachments/assets/2d3b5eb6-9266-4eae-bc4e-44fbcf12f6e3" />
 
 * * * * * * * * * *

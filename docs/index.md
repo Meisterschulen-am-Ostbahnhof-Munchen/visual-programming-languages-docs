@@ -11,6 +11,9 @@ myst:
   <img src="logos/Meisterschulen_LogoG1_4c.gif" alt="Logo Meisterschulen am Ostbahnhof" width="400">
 
 # Wiki 4: Visuelle Programmiersprachen
+
+```{index} single: Wiki 4: Visuelle Programmiersprachen
+```
 ## Meisterschulen am Ostbahnhof, München
 
 ---

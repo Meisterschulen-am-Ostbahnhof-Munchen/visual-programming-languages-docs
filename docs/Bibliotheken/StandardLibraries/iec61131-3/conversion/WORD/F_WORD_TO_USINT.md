@@ -1,5 +1,8 @@
 # F_WORD_TO_USINT
 
+```{index} single: F_WORD_TO_USINT
+```
+
 <img width="1455" height="214" alt="F_WORD_TO_USINT" src="https://github.com/user-attachments/assets/d4f29908-e033-443c-b917-5bb34d0d6283" />
 
 * * * * * * * * * *

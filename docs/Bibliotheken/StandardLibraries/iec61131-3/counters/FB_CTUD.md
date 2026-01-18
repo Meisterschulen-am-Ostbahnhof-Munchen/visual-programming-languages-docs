@@ -1,5 +1,8 @@
 # FB_CTUD
 
+```{index} single: FB_CTUD
+```
+
 <img width="1337" height="340" alt="FB_CTUD" src="https://github.com/user-attachments/assets/c27b281b-91cd-4e44-8224-7fc42017d1a2" />
 
 * * * * * * * * * *

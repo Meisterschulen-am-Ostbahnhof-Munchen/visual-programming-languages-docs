@@ -1,5 +1,8 @@
 # Datentyp-Detail: LREAL
 
+```{index} single: Datentyp-Detail: LREAL
+```
+
 ## Beschreibung
 Lange reelle Zahl
 

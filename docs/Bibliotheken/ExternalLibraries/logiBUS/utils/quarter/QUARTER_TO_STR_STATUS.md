@@ -1,5 +1,8 @@
 # QUARTER_TO_STR_STATUS
 
+```{index} single: QUARTER_TO_STR_STATUS
+```
+
 <img width="1745" height="212" alt="image" src="https://github.com/user-attachments/assets/52b6d758-7780-49a2-98e0-8be5f868339f" />
 
 * * * * * * * * * *

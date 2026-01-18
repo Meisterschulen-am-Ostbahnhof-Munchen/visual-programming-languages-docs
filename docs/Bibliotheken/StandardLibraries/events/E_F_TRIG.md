@@ -1,5 +1,8 @@
 # E_F_TRIG
 
+```{index} single: E_F_TRIG
+```
+
 ![E_F_TRIG Diagram](https://user-images.githubusercontent.com/113907528/204898671-3eb058ff-7481-4fc8-a2d4-8cf50f349cee.png)
 
 * * * * * * * * * *

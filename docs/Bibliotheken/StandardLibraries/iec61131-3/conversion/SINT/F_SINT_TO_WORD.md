@@ -1,5 +1,8 @@
 # F_SINT_TO_WORD
 
+```{index} single: F_SINT_TO_WORD
+```
+
 <img width="1437" height="213" alt="F_SINT_TO_WORD" src="https://github.com/user-attachments/assets/91a7e9f0-a0c6-4151-a15e-61432acf0f37" />
 
 * * * * * * * * * *

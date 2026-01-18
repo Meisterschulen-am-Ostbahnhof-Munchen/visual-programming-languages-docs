@@ -1,5 +1,8 @@
 # PUBLISH_7
 
+```{index} single: PUBLISH_7
+```
+
 <img width="1180" height="416" alt="image" src="https://github.com/user-attachments/assets/f4ddc744-e21c-430b-979c-1cdd0463adf6" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # NumericValue_ID
 
+```{index} single: NumericValue_ID
+```
+
 <img width="1399" height="290" alt="image" src="https://github.com/user-attachments/assets/d47cfe0c-6224-4132-bb02-d186bc0e0c55" />
 
 * * * * * * * * * *

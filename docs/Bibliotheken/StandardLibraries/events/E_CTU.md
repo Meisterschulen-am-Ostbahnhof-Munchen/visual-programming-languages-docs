@@ -1,5 +1,8 @@
 # E_CTU
 
+```{index} single: E_CTU
+```
+
 <img width="1139" height="202" alt="E_CTU" src="https://user-images.githubusercontent.com/113907528/204894537-54f1c9c9-de57-4beb-ad38-697fff012b4b.png">
 
 * * * * * * * * * *

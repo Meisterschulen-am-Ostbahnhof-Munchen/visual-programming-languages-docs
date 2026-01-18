@@ -1,5 +1,8 @@
 # TypeHash
 
+```{index} single: TypeHash
+```
+
 * * * * * * * * * *
 
 ## Einleitung

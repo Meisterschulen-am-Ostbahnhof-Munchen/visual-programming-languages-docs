@@ -1,5 +1,8 @@
 # DualCAN Übersicht
 
+```{index} single: DualCAN Übersicht
+```
+
 
 ```{toctree}
 DualCAN_ESP32

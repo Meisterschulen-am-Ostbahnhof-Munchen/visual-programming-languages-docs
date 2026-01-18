@@ -1,5 +1,8 @@
 # WagoMaster
 
+```{index} single: WagoMaster
+```
+
 <img width="1355" height="250" alt="image" src="https://github.com/user-attachments/assets/61908fc9-2e56-4e6d-bb65-c71c1a08d10f" />
 
 * * * * * * * * * *

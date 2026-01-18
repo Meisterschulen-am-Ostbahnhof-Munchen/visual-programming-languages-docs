@@ -1,5 +1,8 @@
 # BOOL
 
+```{index} single: BOOL
+```
+
 ```{toctree}
 ST01X
 ST02X

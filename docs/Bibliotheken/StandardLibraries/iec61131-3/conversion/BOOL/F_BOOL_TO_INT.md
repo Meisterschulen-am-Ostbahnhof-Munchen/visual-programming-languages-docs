@@ -1,5 +1,8 @@
 # F_BOOL_TO_INT
 
+```{index} single: F_BOOL_TO_INT
+```
+
 <img width="1221" height="182" alt="F_BOOL_TO_INT" src="https://github.com/user-attachments/assets/b06391ef-074e-42e4-a3ae-ee819a369ccb" />
 
 * * * * * * * * * *

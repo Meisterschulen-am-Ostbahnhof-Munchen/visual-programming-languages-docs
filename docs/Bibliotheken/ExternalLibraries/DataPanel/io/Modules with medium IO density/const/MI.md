@@ -1,5 +1,8 @@
 # MI
 
+```{index} single: MI
+```
+
 * * * * * * * * * *
 ## Einleitung
 Die MI Global Constants stellen eine Sammlung von Konstanten für Module mit mittlerer I/O-Dichte dar. Diese Konstantendefinitionen werden in der 4diac-IDE verwendet, um einheitliche und wiederverwendbare Adressierungsinformationen für I/O-Module bereitzustellen.

@@ -1,5 +1,8 @@
 # UINT Konvertierungen
 
+```{index} single: UINT Konvertierungen
+```
+
 Hier finden Sie Funktionen zur Konvertierung des Datentyps UINT.
 
 ```{toctree}

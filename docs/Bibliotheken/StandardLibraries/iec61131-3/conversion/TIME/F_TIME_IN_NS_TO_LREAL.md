@@ -1,5 +1,8 @@
 # F_TIME_IN_NS_TO_LREAL
 
+```{index} single: F_TIME_IN_NS_TO_LREAL
+```
+
 <img width="1538" height="212" alt="F_TIME_IN_NS_TO_LREAL" src="https://github.com/user-attachments/assets/c94f3148-26d5-44a8-88fc-e5eeb5938a75" />
 
 * * * * * * * * * *

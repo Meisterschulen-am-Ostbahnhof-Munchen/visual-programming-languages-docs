@@ -1,5 +1,8 @@
 # Q
 
+```{index} single: Q
+```
+
 ```{toctree}
 const/const
 Q_ActiveMask

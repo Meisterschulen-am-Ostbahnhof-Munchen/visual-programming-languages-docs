@@ -1,5 +1,8 @@
 # SchieberAuxInStruct
 
+```{index} single: SchieberAuxInStruct
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der strukturierte Datentyp `SchieberAuxInStruct` dient der Bündelung von Informationen zur visuellen Darstellung eines Hilfselements (AUX) in einer Schieber-Steuerung. Er kombiniert die Angabe eines Bildes mit einer Hintergrundfarbe, um die grafische Repräsentation eines Hilfseingangs oder -elements zu definieren.

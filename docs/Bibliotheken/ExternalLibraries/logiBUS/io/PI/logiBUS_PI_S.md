@@ -1,5 +1,8 @@
 # logiBUS_PI_S
 
+```{index} single: logiBUS_PI_S
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `logiBUS_PI_S` ist ein Struktur-Datentyp (Structured Type), der für die Konfiguration eines digitalen Eingangs (PI - wahrscheinlich "Peripheral Input") innerhalb des logiBUS-Frameworks dient. Er definiert die notwendigen Parameter, um einen spezifischen physischen Pin eines I/O-Moduls oder Controllers anzusprechen. Dieser Datentyp wird typischerweise als Eingabeparameter für entsprechende IO-Funktionsblöcke verwendet.

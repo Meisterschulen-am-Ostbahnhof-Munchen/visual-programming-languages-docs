@@ -1,5 +1,8 @@
 # F_LEN
 
+```{index} single: F_LEN
+```
+
 <img width="1366" height="211" alt="F_LEN" src="https://github.com/user-attachments/assets/ca04179e-54ed-4419-aee6-51c03a2829a8" />
 
 * * * * * * * * * *

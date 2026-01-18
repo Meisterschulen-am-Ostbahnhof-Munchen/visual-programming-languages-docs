@@ -1,5 +1,8 @@
 # PgnDef
 
+```{index} single: PgnDef
+```
+
 * * * * * * * * * *
 ## Einleitung
 `PgnDef` ist eine Sammlung globaler Konstanten für die 4diac-IDE, die Parameter Group Numbers (PGNs) für ISOBUS- und NMEA-2000-Kommunikationsprotokolle definiert. Diese Konstanten repräsentieren numerische Identifikatoren für spezifische Nachrichtentypen, die in der landwirtschaftlichen und maritimen Fahrzeugvernetzung verwendet werden. Die Sammlung dient als zentrale Referenzbibliothek, um in IEC 61499-Applikationen auf standardisierte PGNs zugreifen zu können, was die Lesbarkeit und Wartbarkeit des Codes verbessert.

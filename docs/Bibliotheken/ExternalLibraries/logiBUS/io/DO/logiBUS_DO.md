@@ -1,5 +1,8 @@
 # logiBUS_DO
 
+```{index} single: logiBUS_DO
+```
+
 * * * * * * * * * *
 
 ## Einleitung

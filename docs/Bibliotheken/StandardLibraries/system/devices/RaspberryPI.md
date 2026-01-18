@@ -1,5 +1,8 @@
 # RaspberryPI
 
+```{index} single: RaspberryPI
+```
+
 * * * * * * * * * *
 
 ## Einleitung

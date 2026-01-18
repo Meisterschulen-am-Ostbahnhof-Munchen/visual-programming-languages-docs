@@ -1,5 +1,8 @@
 # FBRT_WINDOW
 
+```{index} single: FBRT_WINDOW
+```
+
 * * * * * * * * * *
 
 ## Einleitung

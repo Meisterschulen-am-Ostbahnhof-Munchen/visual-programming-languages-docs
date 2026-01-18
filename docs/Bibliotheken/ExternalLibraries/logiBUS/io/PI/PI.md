@@ -1,5 +1,8 @@
 # PI
 
+```{index} single: PI
+```
+
 ```{toctree}
 logiBUS_PI
 logiBUS_PI_ID

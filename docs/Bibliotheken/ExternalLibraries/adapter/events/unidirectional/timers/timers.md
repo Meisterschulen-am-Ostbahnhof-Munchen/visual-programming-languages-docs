@@ -1,5 +1,8 @@
 # timers
 
+```{index} single: timers
+```
+
 ```{toctree}
 AX_TOF
 AX_TON

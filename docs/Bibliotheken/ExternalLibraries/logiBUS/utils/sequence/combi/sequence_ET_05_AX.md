@@ -1,5 +1,8 @@
 # sequence_ET_05_AX
 
+```{index} single: sequence_ET_05_AX
+```
+
 * * * * * * * * * *
 ## Einleitung
 `sequence_ET_05_AX` ist eine Variante des `sequence_ET_05`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine Sequenz mit 5 Ausgabezuständen.

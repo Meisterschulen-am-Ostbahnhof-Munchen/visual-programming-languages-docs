@@ -1,5 +1,8 @@
 # F_SUB_DT_TIME
 
+```{index} single: F_SUB_DT_TIME
+```
+
 ![F_SUB_DT_TIME](https://github.com/user-attachments/assets/7408a361-8399-43ee-b55a-0e223571633e)
 
 * * * * * * * * * *

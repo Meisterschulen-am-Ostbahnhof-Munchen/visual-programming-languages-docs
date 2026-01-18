@@ -1,5 +1,8 @@
 # DataPanel_LO_DO
 
+```{index} single: DataPanel_LO_DO
+```
+
 * * * * * * * * * *
 ## Einleitung
 DataPanel_LO_DO ist eine globale Konstantendefinition für DataPanel-Module mit niedriger I/O-Dichte für digitale Ausgänge (DO). Die Konstante definiert eine strukturierte Zuordnung von Pin-Nummern zu spezifischen digitalen Ausgangskanälen und stellt einen ungültigen Zustand für Fehlerbehandlung bereit.

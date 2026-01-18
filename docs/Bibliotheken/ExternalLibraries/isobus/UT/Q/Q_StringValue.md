@@ -1,5 +1,8 @@
 # Q_StringValue
 
+```{index} single: Q_StringValue
+```
+
 ![Q_StringValue](https://user-images.githubusercontent.com/69573151/212334298-f7c6215c-a80c-491c-ad3e-6ba0e539f0d0.png)
 
 * * * * * * * * * *

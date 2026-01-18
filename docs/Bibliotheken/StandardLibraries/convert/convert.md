@@ -1,5 +1,8 @@
 # convert
 
+```{index} single: convert
+```
+
 ```{toctree}
 ARRAY2ARRAY_2_LREAL
 ARRAY2VALUES_2_LREAL

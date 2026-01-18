@@ -1,5 +1,8 @@
 # F_BOOL_TO_ULINT
 
+```{index} single: F_BOOL_TO_ULINT
+```
+
 <img width="1242" height="183" alt="F_BOOL_TO_ULINT" src="https://github.com/user-attachments/assets/b10992cb-8e8e-46fe-85a0-f9372e711d1c" />
 
 * * * * * * * * * *

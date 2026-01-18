@@ -1,5 +1,8 @@
 # isobus
 
+```{index} single: isobus
+```
+
 ```{toctree}
 c/c
 pgn/pgn

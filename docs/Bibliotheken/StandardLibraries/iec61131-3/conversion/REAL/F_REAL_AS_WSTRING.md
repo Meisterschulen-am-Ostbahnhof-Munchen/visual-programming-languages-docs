@@ -1,5 +1,8 @@
 # F_REAL_AS_WSTRING
 
+```{index} single: F_REAL_AS_WSTRING
+```
+
 <img width="1256" height="180" alt="F_REAL_AS_WSTRING" src="https://github.com/user-attachments/assets/bc7fddcb-82a0-423e-aabe-56670bf82552" />
 
 * * * * * * * * * *

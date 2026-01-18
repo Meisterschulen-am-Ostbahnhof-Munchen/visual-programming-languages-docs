@@ -1,5 +1,8 @@
 # logiBUS_LED_DO_QX
 
+```{index} single: logiBUS_LED_DO_QX
+```
+
 <img width="1892" height="360" alt="image" src="https://github.com/user-attachments/assets/204fbb78-59ee-4621-89fd-817c40d20cfc" />
 
 * * * * * * * * * *

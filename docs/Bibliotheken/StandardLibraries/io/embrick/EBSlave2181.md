@@ -1,5 +1,8 @@
 # EBSlave2181
 
+```{index} single: EBSlave2181
+```
+
 <img width="1232" height="438" alt="image" src="https://github.com/user-attachments/assets/c74605d8-26e7-4c52-9109-9f513c0e811a" />
 
 * * * * * * * * * *

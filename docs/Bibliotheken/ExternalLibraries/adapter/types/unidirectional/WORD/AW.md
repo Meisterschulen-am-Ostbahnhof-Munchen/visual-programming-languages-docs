@@ -1,5 +1,8 @@
 # AW (WORD)
 
+```{index} single: AW (WORD)
+```
+
 unidirectional Adapter Interface for 1 Event and 1 Word
 
 ## Interface

@@ -1,5 +1,8 @@
 # Rastend
 
+```{index} single: Rastend
+```
+
 <img width="666" height="233" alt="image" src="https://github.com/user-attachments/assets/b3bfdaca-bb42-428f-a91a-2e367b347faf" />
 
 * * * * * * * * * *

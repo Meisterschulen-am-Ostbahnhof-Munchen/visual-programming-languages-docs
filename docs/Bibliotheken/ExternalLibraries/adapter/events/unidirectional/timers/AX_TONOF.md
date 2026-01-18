@@ -1,5 +1,8 @@
 # AX_TONOF
 
+```{index} single: AX_TONOF
+```
+
 <img width="1154" height="290" alt="image" src="https://github.com/user-attachments/assets/eecdf987-773b-4d5a-9da7-7ba858235b94" />
 
 * * * * * * * * * *

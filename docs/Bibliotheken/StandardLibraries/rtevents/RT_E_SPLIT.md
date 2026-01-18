@@ -1,5 +1,8 @@
 # RT_E_SPLIT
 
+```{index} single: RT_E_SPLIT
+```
+
 * * * * * * * * * *
 
 ## Einleitung

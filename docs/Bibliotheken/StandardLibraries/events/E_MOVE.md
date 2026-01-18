@@ -1,5 +1,8 @@
 # E_MOVE
 
+```{index} single: E_MOVE
+```
+
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *

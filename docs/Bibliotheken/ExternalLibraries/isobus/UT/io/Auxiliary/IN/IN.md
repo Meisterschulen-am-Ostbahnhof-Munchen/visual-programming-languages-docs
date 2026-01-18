@@ -1,5 +1,8 @@
 # IN
 
+```{index} single: IN
+```
+
 ```{toctree}
 Aux_IE
 Aux_IX

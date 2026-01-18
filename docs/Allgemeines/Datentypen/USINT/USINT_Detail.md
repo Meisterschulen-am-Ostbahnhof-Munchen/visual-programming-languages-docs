@@ -1,5 +1,8 @@
 # Datentyp-Detail: USINT
 
+```{index} single: Datentyp-Detail: USINT
+```
+
 ## Beschreibung
 Vorzeichenlose kurze ganze Zahl
 

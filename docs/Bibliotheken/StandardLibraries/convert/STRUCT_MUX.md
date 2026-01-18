@@ -1,5 +1,8 @@
 # STRUCT_MUX
 
+```{index} single: STRUCT_MUX
+```
+
 <img width="1174" height="182" alt="STRUCT_MUX" src="https://github.com/user-attachments/assets/f133152d-9c9e-4f60-83b9-425cf3f873dd" />
 
 * * * * * * * * * *

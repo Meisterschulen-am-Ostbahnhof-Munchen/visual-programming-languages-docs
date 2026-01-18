@@ -1,5 +1,8 @@
 # OR_8
 
+```{index} single: OR_8
+```
+
 <img width="1295" height="419" alt="OR_8" src="https://github.com/user-attachments/assets/796c2ebd-f9a4-4c89-a96d-3cd2962919f4" />
 
 * * * * * * * * * *

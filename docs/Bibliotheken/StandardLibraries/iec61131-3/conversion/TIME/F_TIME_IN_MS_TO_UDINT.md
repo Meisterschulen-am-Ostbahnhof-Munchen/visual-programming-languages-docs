@@ -1,5 +1,8 @@
 # F_TIME_IN_MS_TO_UDINT
 
+```{index} single: F_TIME_IN_MS_TO_UDINT
+```
+
 <img width="1531" height="212" alt="F_TIME_IN_MS_TO_UDINT" src="https://github.com/user-attachments/assets/142405a6-cd3f-4140-b2ae-e38e692d620f" />
 
 * * * * * * * * * *

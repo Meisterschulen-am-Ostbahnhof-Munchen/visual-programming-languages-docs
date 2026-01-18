@@ -1,5 +1,8 @@
 # schieber
 
+```{index} single: schieber
+```
+
 ```{toctree}
 const/const
 SchieberControl

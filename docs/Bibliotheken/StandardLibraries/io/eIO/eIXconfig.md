@@ -1,5 +1,8 @@
 # eIXconfig
 
+```{index} single: eIXconfig
+```
+
 <img width="1406" height="219" alt="image" src="https://github.com/user-attachments/assets/0d14f01f-7aa9-4cd7-93a2-74a47d4f4646" />
 
 * * * * * * * * * *

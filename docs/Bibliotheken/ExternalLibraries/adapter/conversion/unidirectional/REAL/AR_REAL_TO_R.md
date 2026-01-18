@@ -1,5 +1,8 @@
 # AR_REAL_TO_R
 
+```{index} single: AR_REAL_TO_R
+```
+
 ## Einleitung
 Der AR_REAL_TO_R Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines REAL-Werts in das AR-Adapterformat dient.
 

@@ -1,5 +1,8 @@
 # E_DEMUX
 
+```{index} single: E_DEMUX
+```
+
 <img width="1139" height="202" alt="E_DEMUX" src="https://user-images.githubusercontent.com/113907528/204897696-f71c191f-099b-40f9-b861-6e94bb89c3ff.png">
 
 * * * * * * * * * *

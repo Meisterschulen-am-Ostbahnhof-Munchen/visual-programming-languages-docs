@@ -1,5 +1,8 @@
 # F_RIGHT
 
+```{index} single: F_RIGHT
+```
+
 <img width="1390" height="208" alt="F_RIGHT" src="https://github.com/user-attachments/assets/d39c7fe1-3c16-4c26-90c3-b78236b98380" />
 
 * * * * * * * * * *

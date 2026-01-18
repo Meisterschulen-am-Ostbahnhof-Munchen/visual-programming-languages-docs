@@ -1,5 +1,8 @@
 # ST08X_TO_BOOLS
 
+```{index} single: ST08X_TO_BOOLS
+```
+
 <img width="1020" height="423" alt="image" src="https://github.com/user-attachments/assets/4fc3f598-930f-475b-b552-aefad4b5bb28" />
 
 * * * * * * * * * *

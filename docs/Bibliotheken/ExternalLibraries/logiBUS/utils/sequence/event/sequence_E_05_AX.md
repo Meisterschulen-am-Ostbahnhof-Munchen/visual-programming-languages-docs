@@ -1,5 +1,8 @@
 # sequence_E_05_AX
 
+```{index} single: sequence_E_05_AX
+```
+
 * * * * * * * * * *
 ## Einleitung
 `sequence_E_05_AX` ist eine Variante des `sequence_E_05`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein ereignisgesteuerte Sequenz mit 5 Ausgabezuständen.

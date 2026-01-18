@@ -1,5 +1,8 @@
 # AX_INTERLOCK_2
 
+```{index} single: AX_INTERLOCK_2
+```
+
 <img width="1586" height="363" alt="image" src="https://github.com/user-attachments/assets/4dffb3ad-aa02-4748-b05b-3aa330a04b7c" />
 
 * * * * * * * * * *

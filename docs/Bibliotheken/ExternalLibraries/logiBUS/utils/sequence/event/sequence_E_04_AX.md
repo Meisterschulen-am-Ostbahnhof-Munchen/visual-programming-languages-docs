@@ -1,5 +1,8 @@
 # sequence_E_04_AX
 
+```{index} single: sequence_E_04_AX
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der `sequence_E_04_AX` ist eine Variante des `sequence_E_04`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein ereignisgesteuerte Sequenz mit 4 Ausgabezuständen.

@@ -1,5 +1,8 @@
 # sys
 
+```{index} single: sys
+```
+
 ```{toctree}
 GreenWhiteBackground
 rastend

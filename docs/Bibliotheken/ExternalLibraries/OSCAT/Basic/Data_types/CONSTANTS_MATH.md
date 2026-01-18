@@ -1,5 +1,8 @@
 # CONSTANTS_MATH
 
+```{index} single: CONSTANTS_MATH
+```
+
 CONSTANTS_MATH
 
 ## Structure

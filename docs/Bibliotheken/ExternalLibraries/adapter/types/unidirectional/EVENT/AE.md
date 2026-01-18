@@ -1,5 +1,8 @@
 # AE (EVENT)
 
+```{index} single: AE (EVENT)
+```
+
 unidirectional Adapter Interface for 1 Event
 
 ## Interface

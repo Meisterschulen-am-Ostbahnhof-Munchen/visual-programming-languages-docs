@@ -1,5 +1,8 @@
 # STATES
 
+```{index} single: STATES
+```
+
 States (Closed, Opened, Transitions)
 
 ## Global Constants

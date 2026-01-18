@@ -1,5 +1,8 @@
 # EC_SET_EVT
 
+```{index} single: EC_SET_EVT
+```
+
 ![EC_SET_EVT](https://user-images.githubusercontent.com/116869307/214154604-e4081ae0-85d5-496e-a037-2b8bf39eba7d.png)
 
 * * * * * * * * * *

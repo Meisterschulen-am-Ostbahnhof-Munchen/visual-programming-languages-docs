@@ -1,5 +1,8 @@
 # F_STRING_AS_ULINT
 
+```{index} single: F_STRING_AS_ULINT
+```
+
 <img width="1480" height="212" alt="F_STRING_AS_ULINT" src="https://github.com/user-attachments/assets/42f8c0fa-f5ad-4f51-9d6b-3c35653b6782" />
 
 * * * * * * * * * *

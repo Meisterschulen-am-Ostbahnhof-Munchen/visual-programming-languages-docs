@@ -14,6 +14,9 @@ author = "Franz Höpfinger"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+language = "de"
+html_search_language = "de"
+
 extensions = [
     "myst_parser",
     "sphinxcontrib.googleanalytics",

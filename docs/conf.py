@@ -6,6 +6,11 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+
+import sys; 
+sys.setrecursionlimit(1500)
+
+
 project = "Visuelle Programmiersprachen: Low-Code (4)"
 copyright = "2022-2025, Meisterschulen am Ostbahnhof - München"
 author = "Franz Höpfinger"

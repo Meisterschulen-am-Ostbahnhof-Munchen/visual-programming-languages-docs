@@ -1,5 +1,15 @@
 # DI
 
+
+```{toctree}
+:maxdepth: 1
+
+Funk_DI
+Funk_DI_S
+Funk_IX
+Funk_IXA
+```
+
 ## 📺 Video
 
 * [Decoding the datasheet](https://www.youtube.com/watch?v=0Ed9I68F2tM)

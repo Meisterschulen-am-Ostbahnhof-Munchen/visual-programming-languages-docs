@@ -2,6 +2,13 @@
 
 ```{index} single: Datentyp: TIME
 ```
+
+```{toctree}
+:maxdepth: 1
+
+TIME_Detail
+```
+
 ## 🎧 Podcast
 
 * [Die drei Timer der DIN EN 61131-3 entschlüsselt – TP, TON & TOF präzise erklärt](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Die-drei-Timer-der-DIN-EN-61131-3-entschlsselt--TP--TON--TOF-przise-erklrt-e3dma77)

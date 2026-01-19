@@ -2,6 +2,14 @@
 
 ```{index} single: DT Konvertierungen
 ```
+
+```{toctree}
+:maxdepth: 1
+
+F_DT_TO_DATE
+F_DT_TO_TOD
+```
+
 ## 🎧 Podcast
 
 * [ISOBUS Button: Mehr als nur ein Klick – Die Standardisierung der Landtechnik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Button-Mehr-als-nur-ein-Klick--Die-Standardisierung-der-Landtechnik-e3673rb)

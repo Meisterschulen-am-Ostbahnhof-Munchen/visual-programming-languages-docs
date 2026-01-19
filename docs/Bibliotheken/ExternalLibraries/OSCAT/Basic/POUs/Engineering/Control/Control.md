@@ -2,6 +2,28 @@
 
 ```{index} single: Control
 ```
+
+```{toctree}
+:maxdepth: 1
+
+CTRL_IN
+CTRL_OUT
+CTRL_PI
+CTRL_PID
+DEAD_ZONE
+FT_DERIV
+FT_DERIV_10
+FT_PIDWL
+FT_PIWL
+FT_PT1
+FT_PT2
+HYST
+HYST_1
+HYST_2
+HYST_3
+INTEGRATE
+```
+
 ## 🎧 Podcast
 
 * [Eclipse 4diac: Revolutionizing Industrial Control with Open-Source Cyber-Physical Systems](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/Eclipse-4diac-Revolutionizing-Industrial-Control-with-Open-Source-Cyber-Physical-Systems-e368lqu)

@@ -2,6 +2,15 @@
 
 ```{index} single: PI
 ```
+
+```{toctree}
+:maxdepth: 1
+
+logiBUS_PI
+logiBUS_PI_ID
+logiBUS_PI_S
+```
+
 ## 🎧 Podcast
 
 * [Decoding IEC 61499: The Industrial Revolution Reshaping Factories and Careers](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Decoding-IEC-61499-The-Industrial-Revolution-Reshaping-Factories-and-Careers-e376ob1)

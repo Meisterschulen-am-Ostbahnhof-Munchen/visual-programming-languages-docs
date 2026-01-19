@@ -1,5 +1,8 @@
 # F_SUB_DATE_DATE
 
+```{index} single: F_SUB_DATE_DATE
+```
+
 ![F_SUB_DATE_DATE](https://github.com/user-attachments/assets/07c56b47-428f-4e2c-b365-402ef41717ba)
 
 * * * * * * * * * *
@@ -39,10 +42,10 @@ Der **F_SUB_DATE_DATE** ist ein standardkonformer Funktionsbaustein zur Berechnu
 
 ## Technische Besonderheiten
 
-✔ **Präzise Zeitdifferenz** (Tagesgenau)  
-✔ **Berücksichtigung von Schaltjahren**  
-✔ **Negative Zeitintervalle** für rückwirkende Berechnungen  
-✔ **Plattformunabhängige Zeitberechnung**  
+✔ **Präzise Zeitdifferenz** (Tagesgenau)
+✔ **Berücksichtigung von Schaltjahren**
+✔ **Negative Zeitintervalle** für rückwirkende Berechnungen
+✔ **Plattformunabhängige Zeitberechnung**
 
 ## Anwendungsszenarien
 

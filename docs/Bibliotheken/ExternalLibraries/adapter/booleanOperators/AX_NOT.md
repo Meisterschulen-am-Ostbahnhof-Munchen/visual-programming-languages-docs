@@ -1,5 +1,8 @@
 # AX_NOT
 
+```{index} single: AX_NOT
+```
+
 <img width="820" height="231" alt="image" src="https://github.com/user-attachments/assets/dc31ab7f-e7b2-434e-88d6-7cf13a88d725" />
 
 * * * * * * * * * *

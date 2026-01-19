@@ -1,5 +1,8 @@
 # logiBUS_QD_PWM
 
+```{index} single: logiBUS_QD_PWM
+```
+
 <img width="1848" height="333" alt="image" src="https://github.com/user-attachments/assets/ea4b0496-56de-4eb9-a419-6cd8c9b095bb" />
 
 * * * * * * * * * *

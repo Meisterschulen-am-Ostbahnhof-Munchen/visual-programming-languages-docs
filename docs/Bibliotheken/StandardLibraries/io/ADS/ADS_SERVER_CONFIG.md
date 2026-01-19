@@ -1,5 +1,8 @@
 # ADS_SERVER_CONFIG
 
+```{index} single: ADS_SERVER_CONFIG
+```
+
 <img width="1348" height="238" alt="image" src="https://github.com/user-attachments/assets/3b924f75-67ac-48e2-9abf-411c3f4906fd" />
 
 * * * * * * * * * *

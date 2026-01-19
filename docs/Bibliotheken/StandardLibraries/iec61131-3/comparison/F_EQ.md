@@ -1,9 +1,9 @@
 # F_EQ
 
-
+```{index} single: F_EQ
+```
 
 ![F_EQ](https://user-images.githubusercontent.com/116869307/214144380-5a135396-6b9c-4595-8546-75adff7095b0.png)
-
 
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_eq.html>
 
@@ -69,27 +69,3 @@ Hierbei sind `Eingang1` und `Eingang2` die beiden Werte, die verglichen werden s
 ### Fazit
 
 Der EQ-Operator ist ein grundlegendes Werkzeug in der IEC 61499, das die Implementierung von logischen Vergleichen in industriellen Steuerungssystemen vereinfacht. Durch seine einfache Syntax und vielseitige Anwendbarkeit trägt er dazu bei, die Entwicklung von robusten und effizienten Steuerungsalgorithmen zu unterstützen. Ob in der Sensorüberwachung, Prozesssteuerung oder Fehlererkennung – der EQ-Operator ist ein unverzichtbares Element in der Welt der industriellen Automatisierung.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

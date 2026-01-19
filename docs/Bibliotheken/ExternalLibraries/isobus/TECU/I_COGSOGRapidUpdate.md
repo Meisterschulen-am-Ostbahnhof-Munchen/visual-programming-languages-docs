@@ -1,5 +1,8 @@
 # I_COGSOGRapidUpdate
 
+```{index} single: I_COGSOGRapidUpdate
+```
+
 <img width="1568" height="224" alt="image" src="https://github.com/user-attachments/assets/43b9d800-6165-47e8-a40b-37fe0288f95d" />
 
 * * * * * * * * * *

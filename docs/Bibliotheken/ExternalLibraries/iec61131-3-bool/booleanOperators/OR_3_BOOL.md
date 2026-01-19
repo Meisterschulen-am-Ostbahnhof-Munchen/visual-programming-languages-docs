@@ -1,5 +1,8 @@
 # OR_3_BOOL
 
+```{index} single: OR_3_BOOL
+```
+
 <img width="1370" height="281" alt="image" src="https://github.com/user-attachments/assets/b7317e35-c6b5-4925-bc67-76e89bd63323" />
 
 * * * * * * * * * *

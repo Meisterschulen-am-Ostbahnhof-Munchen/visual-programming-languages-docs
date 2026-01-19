@@ -1,125 +1,59 @@
-### E_TRAIN
+# E_TRAIN
 
-## Bild
+```{index} single: E_TRAIN
+```
 
-![image](https://github.com/user-attachments/assets/5fe13f2e-9e23-49c6-ae8c-3faec87c42c4)
+<img width="1139" height="202" alt="E_TRAIN" src="https://user-images.githubusercontent.com/116869307/214142742-8ce9523e-eb2b-416c-afe8-109fb601dd20.png">
 
+* * * * * * * * * *
 
-Zeigt eine Ereignisfolge 
+## Einleitung
+Der `E_TRAIN` (Event Train) ist ein Funktionsbaustein nach IEC 61499, der eine endliche Folge von Ereignissen ("Ereigniszug") mit einem festen Zeitabstand generiert. Nach dem Start werden `N` Ereignisse im Abstand von `DT` erzeugt.
 
-CV N Ereignisse zur Periode DT, beginnend bei DT nach START
+## Schnittstellenstruktur
 
-DT Time Periode zwischen Ereignissen
+### **Ereignis-Eingänge:**
+- **START**: Startet die Generierung der Ereignisfolge.
+    - **Verbundene Daten**: `DT`, `N`
+- **STOP**: Stoppt die laufende Generierung der Ereignisfolge vorzeitig.
 
-N UINT Anzahl der zu erzeugenden Ereignisse
+### **Ereignis-Ausgänge:**
+- **EO (Event Output)**: Das Ausgangsereignis, das periodisch ausgelöst wird.
+    - **Verbundene Daten**: `CV`
 
-![image](https://user-images.githubusercontent.com/113907658/227975285-56a17b67-0248-4336-8eef-829cf2d5d698.png)
+### **Daten-Eingänge:**
+- **DT (Delay Time)**: Die Zeitdauer, die zwischen den einzelnen `EO`-Ereignissen vergeht (Datentyp: `TIME`).
+- **N**: Die Gesamtzahl der zu generierenden Ereignisse (Datentyp: `UINT`).
 
+### **Daten-Ausgänge:**
+- **CV (Current Value)**: Der Zählerstand, der den Index des gerade ausgelösten Ereignisses angibt (0 bis N-1) (Datentyp: `UINT`).
 
-Über Event Start wird das Ereignis gestartet und über Stopp angehalten.
-Durch CV werden die aktuellen Ergebnisse gezählt und auf E0 das generierte Ergebnis
-Time stellt die Zeit da in welchen abständen das Event auftreten soll
-Unit wie viel Event bereit durchgeführt wurden
+## Funktionsweise
+1.  **Start der Sequenz**: Ein `START`-Ereignis löst den Baustein aus. Ein interner Zähler wird zurückgesetzt, und die Parameter `N` (Anzahl) und `DT` (Zeitabstand) werden übernommen. Der Timer für das erste Ereignis wird gestartet.
+2.  **Ereignis-Generierung**:
+    - Nach Ablauf der Zeit `DT` wird das erste `EO`-Ereignis ausgelöst. Der `CV`-Ausgang hat dabei den Wert `0`.
+    - Unmittelbar danach wird der Timer für das nächste Ereignis neu gestartet.
+    - Nach einer weiteren Zeitspanne `DT` wird das nächste `EO`-Ereignis mit `CV=1` ausgelöst.
+3.  **Ende der Sequenz**: Dieser Zyklus wiederholt sich, bis `N` Ereignisse generiert wurden. Nachdem das letzte Ereignis (mit `CV = N-1`) ausgelöst wurde, stoppt der Baustein automatisch.
+4.  **Stopp**: Ein `STOP`-Ereignis kann die Sequenz jederzeit vorzeitig abbrechen.
 
+## Technische Besonderheiten
+- **Puls-Generator**: Erzeugt eine feste Anzahl von Impulsen mit konstantem Abstand.
+- **Interner Zähler**: Der Baustein verwendet intern einen `E_CTU`-Zähler, um die Anzahl der bereits generierten Ereignisse zu verfolgen.
+- **Sequenz-Zähler**: Der `CV`-Ausgang liefert wertvolle Information darüber, an welcher Stelle der Sequenz man sich gerade befindet.
 
+## Anwendungsszenarien
+- **Schrittmotor-Ansteuerung**: Generieren einer exakten Anzahl von Schritten (`N`) mit einer definierten Geschwindigkeit (bestimmt durch `DT`).
+- **Dosierprozesse**: Auslösen von `N` Dosiervorgängen im Abstand von `DT`.
+- **Testsequenzen**: Senden einer definierten Anzahl von Test-Triggern an ein zu prüfendes Gerät.
 
+## Vergleich mit ähnlichen Bausteinen
 
+| Merkmal       | E_TRAIN | E_CYCLE | E_TABLE |
+|--------------|-----------|---------|-----------|
+| Ereignisabstand | Fix (`DT`) | Fix (`DT`) | Variabel (Array `DT`) |
+| Ereignisanzahl | Endlich (`N`) | Unendlich | Endlich (`N`) |
+| Zähler-Ausgang (`CV`) | Ja | Nein | Ja |
 
-
-
-
-
-
-![E_TRAIN](https://user-images.githubusercontent.com/116869307/214142742-8ce9523e-eb2b-416c-afe8-109fb601dd20.png)
-
-
-
-
-## Beschreibung
-
-
-Der Baustein **E_TRAIN** ist ein Funktionsbaustein (FB) nach der Norm **IEC 61499**, der verwendet wird, um eine endliche Folge von Ereignissen zu generieren, die durch eine bestimmte Zeitdauer (**DT**) voneinander getrennt sind. Dieser Baustein ist nützlich in Steuerungsanwendungen, bei denen eine Reihe von zeitlich getrennten Ereignissen benötigt wird, z. B. in Prozessen, die periodische Aktionen erfordern.
-
-### Beschreibung des Bausteins E_TRAIN:
-
-#### **Allgemeine Funktion:**
-- Der Baustein **E_TRAIN** generiert eine endliche Anzahl von Ereignissen (**EO**), die durch eine vorgegebene Zeitdauer (**DT**) voneinander getrennt sind.
-- Die Anzahl der zu generierenden Ereignisse wird durch den Eingang **N** festgelegt.
-- Jedes generierte Ereignis (**EO**) enthält einen Zählerwert (**CV**), der den Index des aktuellen Ereignisses angibt (0 bis N-1).
-- Der Baustein kann durch das **START**-Ereignis gestartet und durch das **STOP**-Ereignis gestoppt werden.
-
-#### **Schnittstellen (Interface):**
-
-1. **Eingangsereignisse (Event Inputs):**
-   - **START:** Dieses Ereignis startet die Generierung der Ereignisfolge. Es ist mit den Eingangsvariablen **DT** (Zeitabstand zwischen den Ereignissen) und **N** (Anzahl der zu generierenden Ereignisse) verknüpft.
-   - **STOP:** Dieses Ereignis stoppt die Generierung der Ereignisse. Wenn **STOP** ausgelöst wird, wird die Ereignisgenerierung sofort beendet, unabhängig davon, wie viele Ereignisse bereits generiert wurden.
-
-2. **Ausgangsereignisse (Event Outputs):**
-   - **EO (Generated Events):** Dieses Ereignis wird jedes Mal ausgelöst, wenn ein neues Ereignis generiert wird. Es ist mit der Ausgangsvariablen **CV** (Zählerwert) verknüpft, der den Index des aktuellen Ereignisses angibt.
-
-3. **Eingangsvariablen (Input Variables):**
-   - **DT (TIME):** Die Zeitdauer, die zwischen den generierten Ereignissen vergehen soll.
-   - **N (UINT):** Die Anzahl der Ereignisse, die generiert werden sollen.
-
-4. **Ausgangsvariablen (Output Variables):**
-   - **CV (UINT):** Der Zählerwert, der den Index des aktuellen Ereignisses angibt (0 bis N-1).
-
-#### **Internes Netzwerk (FBNetwork):**
-Der Baustein **E_TRAIN** verwendet intern mehrere andere Funktionsbausteine, um die Ereignisgenerierung zu realisieren:
-
-1. **E_CTU (Counter):**
-   - Dieser Baustein zählt die Anzahl der generierten Ereignisse. Er wird verwendet, um sicherzustellen, dass nur die angegebene Anzahl von Ereignissen (**N**) generiert wird.
-   - Der Zählerwert (**CV**) wird an den Ausgang **CV** des **E_TRAIN**-Bausteins weitergeleitet.
-
-2. **E_SWITCH (Switch):**
-   - Dieser Baustein wird verwendet, um den Fluss der Ereignisse zu steuern. Er ermöglicht es, die Ereignisgenerierung zu starten und zu stoppen, basierend auf dem Zustand des Zählers (**E_CTU**).
-
-3. **E_DELAY (Delay):**
-   - Dieser Baustein sorgt dafür, dass die Ereignisse mit dem angegebenen Zeitabstand (**DT**) generiert werden. Er wird verwendet, um die Zeit zwischen den Ereignissen zu steuern.
-
-#### **Verhalten:**
-- Wenn das **START**-Ereignis ausgelöst wird, beginnt der Baustein mit der Generierung der Ereignisse.
-- Jedes Ereignis wird durch das **EO**-Ereignis signalisiert, und der Zählerwert **CV** wird entsprechend erhöht.
-- Die Ereignisse werden im Abstand von **DT** generiert, bis die angegebene Anzahl von Ereignissen (**N**) erreicht ist.
-- Wenn das **STOP**-Ereignis ausgelöst wird, wird die Ereignisgenerierung sofort beendet, unabhängig davon, wie viele Ereignisse bereits generiert wurden.
-
-#### **Anwendungsbeispiele:**
-- **Periodische Steuerung:** Der Baustein kann verwendet werden, um periodische Aktionen in einer Steuerung zu realisieren, z. B. das periodische Einschalten einer Pumpe oder eines Motors.
-- **Testsequenzen:** In Testumgebungen kann der Baustein verwendet werden, um eine Reihe von Testereignissen zu generieren, die in regelmäßigen Abständen ausgelöst werden.
-- **Blinklichtsteuerung:** Der Baustein kann verwendet werden, um eine Reihe von Blinklichtsignalen zu generieren, die in bestimmten Zeitabständen aufleuchten.
-
-#### **Versionierung:**
-- **Version 1.0:** Ursprüngliche Version des Bausteins, erstellt von Alois Zoitl am 22.09.2017.
-- **Version 1.1:** Eine Fehlerbehebung wurde durchgeführt, und der Baustein wurde von Franz Höpfinger am 15.02.2025 aktualisiert.
-
-### Zusammenfassung:
-Der **E_TRAIN**-Baustein ist ein nützliches Werkzeug in der IEC 61499-basierten Steuerungstechnik, um eine endliche Folge von zeitlich getrennten Ereignissen zu generieren. Durch seine einfache Schnittstelle und das klare Verhalten ist er leicht in verschiedene Steuerungsanwendungen integrierbar. Die interne Verwendung von **E_CTU**, **E_SWITCH** und **E_DELAY** sorgt für eine zuverlässige und präzise Ereignisgenerierung.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Fazit
+Der `E_TRAIN`-Baustein ist ideal für Anwendungen, die eine feste Anzahl von Ereignissen in einem konstanten Zeitintervall benötigen. Er kombiniert die Funktionalität eines Taktgebers (`E_CYCLE`) mit einem Zähler, um eine kontrollierte, endliche Impulsfolge zu erzeugen. Der `CV`-Ausgang bietet dabei eine nützliche Rückmeldung über den Fortschritt der Sequenz.

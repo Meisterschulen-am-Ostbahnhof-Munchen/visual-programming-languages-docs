@@ -1,112 +1,55 @@
-# Visuelle Programmiersprachen
+# Übersicht Visuelle Programmiersprachen
 
-## Literatur:
+```{index} single: Übersicht Visuelle Programmiersprachen
+```
 
-<https://de.wikipedia.org/wiki/Visuelle_Programmiersprache>
+Visuelle Programmiersprachen (VPL) ermöglichen die Erstellung von Programmen durch die grafische Manipulation von Elementen anstatt durch das Schreiben von Text. In der Welt der Technik und Informatik gibt es sehr unterschiedliche Ansätze, die je nach Zielgruppe und Anwendungsfall variieren.
 
-<https://en.wikipedia.org/wiki/Visual_programming_language>
+## 1. Erziehungsorientierte und allgemeine Sprachen
+Diese Sprachen dienen oft als Einstieg in die Logik der Programmierung. Sie abstrahieren komplexe Syntaxregeln in farbige Blöcke, die wie Puzzleteile zusammengesteckt werden.
 
-### Allgemeine Visuelle Programmiersprachen
+*   **Scratch:** Die wohl bekannteste Sprache für Kinder und Jugendliche. Sie vermittelt spielerisch Konzepte wie Schleifen, Bedingungen und Variablen.
+*   **Blockly (Google):** Eine Bibliothek, die visuelle Blöcke in textuellen Code (z. B. Python oder JavaScript) übersetzt.
+*   **M5Stack / UIFlow:** Eine industrielle Anwendung von Blockly. Hier werden Mikrocontroller (ESP32) visuell programmiert, was den Prototypenbau extrem beschleunigt.
 
-Beispiele für Allgemeine Visuelle Programmiersprachen sind zum Beispiel Scratch von Google.
+---
 
-<https://sites.google.com/ochieseeducation.ca/teachertech/coding/scratch>
+## 2. Visuelle Modellierung in der Informatik
+Bevor Code geschrieben wird, nutzen Informatiker oft grafische Modelle, um Architekturen zu planen.
+*   **UML (Unified Modeling Language):** Ein Standard zur Visualisierung von Softwaresystemen. Klassendiagramme oder Zustandsdiagramme sind hierbei die bekanntesten Werkzeuge.
 
-[https://de.m.wikipedia.org/wiki/Scratch\_(Programmiersprache)](<https://de.m.wikipedia.org/wiki/Scratch_(Programmiersprache)>) Scratch (Programmiersprache)
-erziehungsorientierte visuelle Programmiersprache für Kinder und Jugendliche
+---
 
-Eine Umsetzung davon findet sich bei M5Stack:
+## 3. Ingenieurswissenschaftliche Sprachen (Datenfluss)
+In der Mess- und Regelungstechnik haben visuelle Sprachen eine dominierende Rolle, da sie den Fluss von Signalen und Daten intuitiv abbilden.
+*   **LabVIEW (National Instruments):** Eine mächtige Umgebung, in der "Virtuelle Instrumente" (VIs) durch das Verdrahten von Funktionsblöcken erstellt werden. Sie wird weltweit in Laboren und Prüfständen eingesetzt.
 
-<https://flow.m5stack.com/>
+---
 
-<https://m5stack.github.io/UIFlow_doc/en/>
+## 4. Automatisierungstechnik (Industrieller Standard)
+In der Industrie ist die visuelle Programmierung seit Jahrzehnten Standard, da sie direkt aus der Tradition der Elektrotechnik (Schaltpläne) und Verfahrenstechnik (Ablaufpläne) stammt.
 
-<https://shop.m5stack.com/pages/uiflow>
+### Die Sprachen der IEC 61131-3
+Dieser Standard definiert drei wesentliche visuelle Sprachen für Speicherprogrammierbare Steuerungen (SPS):
 
-<https://www.youtube.com/watch?v=Og6fYoyiTIk>
+| Kürzel | Bezeichnung (DE/EN) | Charakteristik | Anwendung |
+| :--- | :--- | :--- | :--- |
+| **KOP / LD** | Kontaktplan / Ladder Diagram | Sieht aus wie ein Stromlaufplan. | Einfache Logik, Verriegelungen. |
+| **FBS / FBD** | Funktionsbausteinsprache / Function Block Diagram | Logikgatter und Funktionsblöcke werden verbunden. | Komplexe Regelungen, mathematische Berechnungen. |
+| **AS / SFC** | Ablaufsprache / Sequential Function Chart | Modellierung von Schritten und Übergängen (Transitionen). | Maschinenabläufe, Chargenprozesse (ähnlich GRAFCET). |
 
-UIFlow von M5Stack nutzt Blockly von Google.
+### Die Evolution: IEC 61499
+Die IEC 61499 baut auf den Konzepten der IEC 61131-3 auf, führt aber entscheidende Neuerungen ein:
 
-Blockly/Scratch usw. lehnt sich in der Struktur stark an Textuelle Programmiersprachen an.
-oft ist ein Umschalten zwischen einer Textuellen und Visuellen Ansicht möglich.
+1.  **Function Blocks (FB):** Die Programmierung ähnelt der Funktionsbausteinsprache (FBS), ist aber strikt ereignisorientiert. Ein Block wird nur aktiv, wenn ein Ereignis (Event) eintrifft.
+2.  **ECC (Execution Control Chart):** Innerhalb eines Bausteins steuert eine Zustandsmaschine (State Machine), welcher Algorithmus bei welchem Ereignis ausgeführt wird. Dies ermöglicht eine viel präzisere Kontrolle über das Systemverhalten als in klassischen SPS-Zyklen.
 
-In erster Linie dienen diese Sprachen dem leichteren Erlernen von Textuellen Programmiersprachen auf Visuellem Weg.
+---
 
-### Visuelle Programmiersprachen in der Informatik
+## Warum visuelle Programmierung in der Industrie?
+Die Automatisierungspyramide zeigt, dass auf den unteren Ebenen (Feld- und Steuerungsebene) Echtzeitfähigkeit und klare Diagnosemöglichkeiten zählen. Visuelle Programme lassen sich im Fehlerfall oft schneller "lesen" und debuggen als tausende Zeilen Textcode. Sie schlagen die Brücke zwischen dem Schaltplan des Elektrikers und der Logik des Programmierers.
 
-<https://de.wikipedia.org/wiki/Unified_Modeling_Language>
-
-Siehe Hierzu auch <https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html>
-ab 17:00
-
-### Visuelle Programmiersprachen in der Steuerungstechnik
-
-neben diesen "erziehungsorientierten" Visuellen Programmiersprachen gibt es weitere die sich mehr an das Ingenieurswesen wenden, zum Beispiel LabVIEW.
-
-<https://www.ni.com/de-de/shop/labview.html>
-
-Im Bereich der Programmierung von Steuerungen gibt es ebenfalls schon viele Jahre diverse visuelle Programmiersprachen zum Beispiel Ladder logic:
-<https://de.wikipedia.org/wiki/Kontaktplan>
-
-### Automatisierungspyramide
-
-<https://de.wikipedia.org/wiki/Automatisierungspyramide>
-
-#### Visuelle Programmiersprachen in der IEC 61131
-
-- <https://en.wikipedia.org/wiki/IEC_61131>
-
-  - <https://en.wikipedia.org/wiki/IEC_61131-3>
-
-    - IL <https://en.wikipedia.org/wiki/Instruction_list>
-    - LD <https://en.wikipedia.org/wiki/Ladder_logic>
-    - FBD <https://en.wikipedia.org/wiki/Function_block_diagram>
-    - SFC <https://en.wikipedia.org/wiki/Sequential_function_chart>
-    - ST <https://en.wikipedia.org/wiki/Structured_text>
-
-- <https://de.wikipedia.org/wiki/EN_61131>
-
-  - EN 61131-3
-
-    - AWL <https://de.wikipedia.org/wiki/Anweisungsliste>
-
-      - ist eine textuelle Programmiersprache die an Assembler erinnert.
-
-    - KOP <https://de.wikipedia.org/wiki/Kontaktplan>
-
-      - ist eine visuelle Programmiersprache die an einen Schaltplan erinnert. So wird beispielsweise die Möller/Eaton Easy 719 programmiert.
-
-    - FBS <https://de.wikipedia.org/wiki/Funktionsbausteinsprache>
-
-      - ist eine visuelle Programmiersprache die mit Blöcken arbeitet. So wird beispielweise die Siemens Logo programmiert. Bei Siemens heißt diese Sprache FUP Funktionsplan
-
-    - AS <https://de.wikipedia.org/wiki/Ablaufsprache>
-
-      - ist eine visuelle Programmiersprache die auch als GRAFCET bekannt ist.
-
-    - ST <https://de.wikipedia.org/wiki/Strukturierter_Text>
-
-      - ist eine Textuelle Programmiersprache die an Pascal erinnert.
-
-#### Visuelle Programmiersprachen in der IEC 61499
-
-<https://en.wikipedia.org/wiki/IEC_61499>
-
-<https://de.wikipedia.org/wiki/EN_61499>
-
-##### IEC 61499 Function Block
-
-Die visuelle Programmiersprache die in der IEC 61499 definiert ist ähnelt dem FBS aus der IEC 61131-3.
-
-dadurch lassen sich alle Funktionsbausteine die aus der IEC 61131-3 bekannt sind, und auch solche von Drittbibliotheken z.B. OSCAT auch in der IEC 61499 implementieren.
-Umgekehrt ist das nicht in jedem Fall möglich.
-
-##### IEC 61499 EEC (Execution Control Chart)
-
-EEC ist eine State Machine innerhalb IEC 61499
-
-#### Vergleich IEC 61499 zu IEC 61131-3
-
-Z.B. Video
-Siehe Hierzu auch <https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html>
-ab 43:13
+### Weiterführende Ressourcen
+*   [Video: IEC 61131 vs. IEC 61499 (IEEE Webinar)](https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html)
+*   [Wikipedia: Visuelle Programmiersprache](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
+*   [M5Stack UIFlow Dokumentation](https://m5stack.github.io/UIFlow_doc/en/)

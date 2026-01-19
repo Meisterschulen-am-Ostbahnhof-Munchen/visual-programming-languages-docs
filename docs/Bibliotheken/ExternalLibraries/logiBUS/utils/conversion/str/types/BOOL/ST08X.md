@@ -1,5 +1,8 @@
 # ST08X
 
+```{index} single: ST08X
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp **ST08X** ist eine strukturierte Datenkomponente, die für die Verwaltung und Gruppierung von acht individuellen booleschen Werten konzipiert wurde. Sein Hauptzweck ist es, eine kompakte Darstellung für eine Sammlung von acht unabhängigen Bits bereitzustellen, die oft als Status-Flags, Steuersignale oder ähnliche binäre Zustände verwendet werden.

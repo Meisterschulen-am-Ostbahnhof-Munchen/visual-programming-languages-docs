@@ -1,5 +1,8 @@
 # SchieberStruct
 
+```{index} single: SchieberStruct
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der `SchieberStruct` ist ein strukturierter Datentyp, der zur Abbildung aller möglichen Zustände eines Schiebers (z. B. eines Ventils, einer Klappe oder eines Verschlusses) innerhalb eines Steuerungssystems dient. Er dient als zentraler Container für die Objekt-Identifikatoren (IDs), die den verschiedenen Zuständen des Schiebers zugeordnet sind. Dieser Datentyp wird typischerweise in Verbindung mit Funktionsblöcken verwendet, die Zustandsmaschinen oder Sequenzen für Schiebersteuerungen implementieren.

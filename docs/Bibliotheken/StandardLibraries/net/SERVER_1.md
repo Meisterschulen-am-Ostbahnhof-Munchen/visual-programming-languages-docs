@@ -1,5 +1,8 @@
 # SERVER_1
 
+```{index} single: SERVER_1
+```
+
 <img width="1394" height="159" alt="image" src="https://github.com/user-attachments/assets/1298c8cd-2696-4105-b2ea-370366175661" />
 
 * * * * * * * * * *
@@ -32,7 +35,7 @@ Der SERVER_1 Block verwaltet Server-Client-Verbindungen über zwei Hauptoperatio
 
 1. **Initialisierung/Deaktivierung**: Durch das INIT-Ereignis mit entsprechendem QI-Wert wird der Server aktiviert oder deaktiviert. Bei erfolgreicher Operation wird INITO mit Statusinformationen ausgelöst.
 
-2. **Datenkommunikation**: 
+2. **Datenkommunikation**:
    - Empfang: Eingehende Daten vom Client lösen das IND-Ereignis aus und stehen über RD_1 zur Verfügung
    - Sendung: Das RSP-Ereignis ermöglicht das Senden von Daten über SD_1 an den verbundenen Client
 

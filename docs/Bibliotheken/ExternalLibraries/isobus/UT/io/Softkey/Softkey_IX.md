@@ -1,8 +1,10 @@
 # Softkey_IX
 
-<img width="1581" height="340" alt="image" src="https://github.com/user-attachments/assets/7cd0488b-6f9a-4ca0-a7a7-17b503414278" />
+```{index} single: Softkey_IX
+```
+## 🎧 Podcast
 
-* * * * * * * * * *
+* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ## Einleitung
 Der Softkey_IX ist ein Service-Interface-Funktionsblock für boolesche Eingabedaten, der als Eingabeschnittstelle für Softkey-Funktionalitäten dient. Dieser Baustein ermöglicht die Kommunikation mit Ressourcen und die Verarbeitung von Tastatureingaben in Steuerungssystemen.

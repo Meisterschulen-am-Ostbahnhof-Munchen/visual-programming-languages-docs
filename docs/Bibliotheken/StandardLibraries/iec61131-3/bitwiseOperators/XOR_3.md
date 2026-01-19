@@ -1,5 +1,8 @@
 # XOR_3
 
+```{index} single: XOR_3
+```
+
 ![XOR_3](https://user-images.githubusercontent.com/116869307/214143735-3c0a538b-d39a-47e0-9cd3-1602d3640896.png)
 
 * * * * * * * * * *
@@ -16,7 +19,7 @@ Der XOR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweis
 
 ### **Daten-Eingänge**
 - **IN1**: XOR-Eingang 1 (ANY_BIT Datentyp)
-- **IN2**: XOR-Eingang 2 (ANY_BIT Datentyp)  
+- **IN2**: XOR-Eingang 2 (ANY_BIT Datentyp)
 - **IN3**: XOR-Eingang 3 (ANY_BIT Datentyp)
 
 ### **Daten-Ausgänge**

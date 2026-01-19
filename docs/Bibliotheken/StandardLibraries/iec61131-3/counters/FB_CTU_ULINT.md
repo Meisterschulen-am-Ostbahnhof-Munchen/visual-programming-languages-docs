@@ -1,5 +1,8 @@
 # FB_CTU_ULINT
 
+```{index} single: FB_CTU_ULINT
+```
+
 <img width="1408" height="271" alt="FB_CTU_ULINT" src="https://github.com/user-attachments/assets/fb1bdbf1-e57f-4efd-8953-c3e697ae3f39" />
 
 * * * * * * * * * *

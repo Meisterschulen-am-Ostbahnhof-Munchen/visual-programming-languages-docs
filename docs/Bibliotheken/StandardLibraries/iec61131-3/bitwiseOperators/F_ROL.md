@@ -1,5 +1,8 @@
 # F_ROL
 
+```{index} single: F_ROL
+```
+
 <img width="1340" height="208" alt="F_ROL" src="https://github.com/user-attachments/assets/24e2181b-8b77-46bf-bf08-bc549c06ab07" />
 
 * * * * * * * * * *

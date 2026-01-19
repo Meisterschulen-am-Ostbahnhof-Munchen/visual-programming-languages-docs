@@ -1,5 +1,8 @@
 # ST08B_TO_BYTES
 
+```{index} single: ST08B_TO_BYTES
+```
+
 <img width="1031" height="423" alt="image" src="https://github.com/user-attachments/assets/d97ce166-0caf-452f-8aa8-52ba1b60245d" />
 
 * * * * * * * * * *

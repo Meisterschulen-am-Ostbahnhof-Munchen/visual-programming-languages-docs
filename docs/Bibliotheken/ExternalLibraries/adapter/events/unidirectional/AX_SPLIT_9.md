@@ -1,5 +1,8 @@
 # AX_SPLIT_9
 
+```{index} single: AX_SPLIT_9
+```
+
 <img width="618" height="438" alt="image" src="https://github.com/user-attachments/assets/12cd00f4-dd8c-4d77-8da8-187b2aef4a83" />
 
 * * * * * * * * * *

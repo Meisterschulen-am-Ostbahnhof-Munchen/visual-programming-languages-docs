@@ -1,5 +1,8 @@
 # SchieberVerriegelungComposite
 
+```{index} single: SchieberVerriegelungComposite
+```
+
 <img width="1389" height="295" alt="image" src="https://github.com/user-attachments/assets/18618829-225f-479f-a034-f9c8d20b8b0c" />
 
 * * * * * * * * * *

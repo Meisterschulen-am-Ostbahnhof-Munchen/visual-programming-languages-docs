@@ -1,5 +1,8 @@
 # XOR_3_BOOL
 
+```{index} single: XOR_3_BOOL
+```
+
 <img width="1186" height="241" alt="image" src="https://github.com/user-attachments/assets/a3d5273a-10df-4b36-b9ea-460635fa84fc" />
 
 * * * * * * * * * *

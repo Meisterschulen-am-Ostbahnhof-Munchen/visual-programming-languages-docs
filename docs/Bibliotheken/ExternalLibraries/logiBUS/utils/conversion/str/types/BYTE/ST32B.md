@@ -1,5 +1,8 @@
 # ST32B
 
+```{index} single: ST32B
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `ST32B` ist ein strukturierter Datentyp (Structured Type) innerhalb der 4diac-IDE, der für die Aggregation von 32 einzelnen Bytes konzipiert ist. Er dient als Vorlage für Datenstrukturen, die eine feste Länge von 32 Byte benötigen und direkten Zugriff auf einzelne Bytes ermöglichen. Dieser Typ ist in der 4diac-IDE unter dem Paket `logiBUS::utils::conversion::types` registriert.

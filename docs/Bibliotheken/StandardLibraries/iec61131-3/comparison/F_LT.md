@@ -1,9 +1,9 @@
 # F_LT
 
+```{index} single: F_LT
+```
 
 ![F_LT](https://user-images.githubusercontent.com/116869307/214144532-b5430c89-2a21-4998-9685-34848ef4d5d1.png)
-
-
 
 <https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_lt.html>
 
@@ -77,25 +77,3 @@ Hierbei sind `Eingang1` und `Eingang2` die beiden Werte, die verglichen werden s
 ### Fazit
 
 Der LT-Operator ist ein wichtiges Werkzeug in der IEC 61499, das die Implementierung von numerischen Vergleichen in industriellen Steuerungssystemen vereinfacht. Seine Fähigkeit, festzustellen, ob ein Wert kleiner als ein anderer Wert ist, macht ihn zu einem unverzichtbaren Bestandteil in der Prozessüberwachung, Regelung und Entscheidungsfindung. Ob in der Produktionssteuerung, Temperaturregelung oder Energieverbrauchsüberwachung – der LT-Operator ist ein leistungsstarkes und vielseitiges Element in der Welt der industriellen Automatisierung. Durch seine Einfachheit und Effizienz trägt er dazu bei, die Entwicklung von zuverlässigen und effektiven Steuerungssystemen zu unterstützen.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

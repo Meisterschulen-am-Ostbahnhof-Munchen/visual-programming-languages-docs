@@ -1,5 +1,8 @@
 # SERVER_1_2
 
+```{index} single: SERVER_1_2
+```
+
 <img width="1411" height="176" alt="image" src="https://github.com/user-attachments/assets/244f332f-3155-4f3f-abb2-209e12652030" />
 
 * * * * * * * * * *

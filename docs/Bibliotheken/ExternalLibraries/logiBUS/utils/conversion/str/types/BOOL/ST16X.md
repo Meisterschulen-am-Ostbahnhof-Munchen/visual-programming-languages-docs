@@ -1,5 +1,8 @@
 # ST16X
 
+```{index} single: ST16X
+```
+
 * * * * * * * * * *
 ## Einleitung
 ST16X ist ein benutzerdefinierter Datentyp, der eine Struktur von 16 einzelnen BOOL-Werten definiert. Er dient dazu, eine Sammlung von binären Zuständen oder Flags in einer einzigen, organisierten Einheit zu kapseln. Obwohl es sich um einen Datentyp und nicht um einen Funktionsblock handelt, wird seine Struktur und Verwendungsweise hier beschrieben. Der Datentyp wurde erstellt, um eine übersichtliche und typsichere Möglichkeit zur Verwaltung von 16 logischen Zuständen zu bieten.

@@ -1,19 +1,17 @@
 # F_NE
 
-
+```{index} single: F_NE
+```
 
 ![F_NE](https://user-images.githubusercontent.com/116869307/214144558-e676465a-a116-46b2-87e7-fd3b912c702a.png)
-
 
 <https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_ne.html>
 
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_ne.html>
 
-
 * * * * * * * * * *
 
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
-
 
 **Der NE-Operator in IEC 61499: Eine Einführung**
 
@@ -81,21 +79,3 @@ Hierbei sind `Eingang1` und `Eingang2` die beiden Werte, die verglichen werden s
 ### Fazit
 
 Der NE-Operator ist ein wichtiges Werkzeug in der IEC 61499, das die Implementierung von Vergleichen in industriellen Steuerungssystemen vereinfacht. Seine Fähigkeit, festzustellen, ob zwei Werte ungleich sind, macht ihn zu einem unverzichtbaren Bestandteil in der Prozessüberwachung, Regelung und Entscheidungsfindung. Ob in der Produktionssteuerung, Temperaturregelung oder Fehlererkennung – der NE-Operator ist ein leistungsstarkes und vielseitiges Element in der Welt der industriellen Automatisierung. Durch seine Einfachheit und Effizienz trägt er dazu bei, die Entwicklung von zuverlässigen und effektiven Steuerungssystemen zu unterstützen.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,8 @@
 # PUBLISH_3
 
+```{index} single: PUBLISH_3
+```
+
 <img width="1372" height="365" alt="image" src="https://github.com/user-attachments/assets/d6ecaaa9-15ed-4f40-a1ce-43631c28c135" />
 
 * * * * * * * * * *
@@ -21,7 +24,7 @@ Der PUBLISH_3-Funktionsblock dient zum Verteilen von Daten an einen oder mehrere
 - **QI** (BOOL): Qualifizierer für Initialisierung und Sendeoperationen
 - **ID** (WSTRING): Identifikator für den Publisher
 - **SD_1** (ANY): Erster zu sendender Datenwert (beliebiger Datentyp)
-- **SD_2** (ANY): Zweiter zu sendender Datenwert (beliebiger Datentyp)  
+- **SD_2** (ANY): Zweiter zu sendender Datenwert (beliebiger Datentyp)
 - **SD_3** (ANY): Dritter zu sendender Datenwert (beliebiger Datentyp)
 
 ### **Daten-Ausgänge**

@@ -1,8 +1,11 @@
 # Port
 
-<img width="548" height="474" alt="image" src="https://github.com/user-attachments/assets/96d800a7-1d77-4db8-a179-69be06de4dd2" />
+```{index} single: Port
+```
+## 🎧 Podcast
 
-* * * * * * * * * *
+* [Das Technologie-Panorama von 1863: Lanz & Comp. und die Revolution der deutschen Landwirtschaft durch Import, Innovation und Guano](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Technologie-Panorama-von-1863-Lanz--Comp--und-die-Revolution-der-deutschen-Landwirtschaft-durch-Import--Innovation-und-Guano-e39auqa)
+* [ESP32-S3-DevKitC-1 Doku-Analyse: Das Speicher-Monster (32MB Flash/16MB PSRAM) und die Macht der Dual-USB-Ports](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/ESP32-S3-DevKitC-1-Doku-Analyse-Das-Speicher-Monster-32MB-Flash16MB-PSRAM-und-die-Macht-der-Dual-USB-Ports-e39hamt)
 
 ## Einleitung
 Der Port-Funktionsblock dient als Service Interface Function Block für die Konfiguration und Verwaltung von digitalen Ein-/Ausgängen auf einem EliteBoard-System. Er ermöglicht die Zuordnung von Pin-Namen zu physischen Ports über einen Adapter-Mechanismus.
@@ -17,7 +20,7 @@ Der Port-Funktionsblock dient als Service Interface Function Block für die Konf
 
 ### **Daten-Eingänge**
 - **Pin0** (STRING): Name des Pins 0
-- **Pin1** (STRING): Name des Pins 1  
+- **Pin1** (STRING): Name des Pins 1
 - **Pin2** (STRING): Name des Pins 2
 - **Pin3** (STRING): Name des Pins 3
 - **Pin4** (STRING): Name des Pins 4

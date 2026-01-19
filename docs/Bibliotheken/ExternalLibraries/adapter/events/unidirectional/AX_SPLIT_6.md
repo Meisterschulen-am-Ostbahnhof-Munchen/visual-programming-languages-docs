@@ -1,5 +1,8 @@
 # AX_SPLIT_6
 
+```{index} single: AX_SPLIT_6
+```
+
 <img width="705" height="397" alt="image" src="https://github.com/user-attachments/assets/1b0e2281-e41d-47e1-bad4-9690070e18e8" />
 
 * * * * * * * * * *
@@ -25,7 +28,7 @@ Der AX_SPLIT_6 Funktionsblock ist ein generischer Baustein, der dazu dient, eine
 
 **Ausgangsadapter:**
 - **OUT1** (Plug): Erster Ausgangskanal
-- **OUT2** (Plug): Zweiter Ausgangskanal  
+- **OUT2** (Plug): Zweiter Ausgangskanal
 - **OUT3** (Plug): Dritter Ausgangskanal
 - **OUT4** (Plug): Vierter Ausgangskanal
 - **OUT5** (Plug): Fünfter Ausgangskanal

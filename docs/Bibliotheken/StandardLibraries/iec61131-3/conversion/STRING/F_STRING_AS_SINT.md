@@ -1,5 +1,8 @@
 # F_STRING_AS_SINT
 
+```{index} single: F_STRING_AS_SINT
+```
+
 <img width="1467" height="213" alt="F_STRING_AS_SINT" src="https://github.com/user-attachments/assets/13cacff9-d6b7-49e3-93b4-b4ca9c36ab3b" />
 
 * * * * * * * * * *

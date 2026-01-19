@@ -1,5 +1,8 @@
 # AX_XOR_8
 
+```{index} single: AX_XOR_8
+```
+
 <img width="1009" height="465" alt="image" src="https://github.com/user-attachments/assets/360232e2-8dcb-496e-84cf-311179b598af" />
 
 * * * * * * * * * *
@@ -25,7 +28,7 @@ Keine direkten Daten-Ausgänge vorhanden
 
 **Socket-Adapter:**
 - **IN1**: Unidirektionaler Adapter für XOR-Eingang 1
-- **IN2**: Unidirektionaler Adapter für XOR-Eingang 2  
+- **IN2**: Unidirektionaler Adapter für XOR-Eingang 2
 - **IN3**: Unidirektionaler Adapter für XOR-Eingang 3
 - **IN4**: Unidirektionaler Adapter für XOR-Eingang 4
 - **IN5**: Unidirektionaler Adapter für XOR-Eingang 5

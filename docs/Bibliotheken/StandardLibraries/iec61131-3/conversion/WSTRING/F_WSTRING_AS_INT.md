@@ -1,5 +1,8 @@
 # F_WSTRING_AS_INT
 
+```{index} single: F_WSTRING_AS_INT
+```
+
 <img width="1469" height="214" alt="F_WSTRING_AS_INT" src="https://github.com/user-attachments/assets/d83cc0b2-80c5-4d74-8885-958419a9091a" />
 
 * * * * * * * * * *

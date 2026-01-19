@@ -1,5 +1,8 @@
 # eIX
 
+```{index} single: eIX
+```
+
 <img width="1435" height="298" alt="image" src="https://github.com/user-attachments/assets/cae6a064-563d-41dd-9f8e-9cb9bb401bc6" />
 
 * * * * * * * * * *

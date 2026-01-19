@@ -1,5 +1,8 @@
 # F_STRING_TO_WSTRING
 
+```{index} single: F_STRING_TO_WSTRING
+```
+
 <img width="1509" height="212" alt="F_STRING_TO_WSTRING" src="https://github.com/user-attachments/assets/4ece7977-3ec9-493b-8cb5-e1ba73c202f8" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # AX_OR_9
 
+```{index} single: AX_OR_9
+```
+
 <img width="960" height="503" alt="image" src="https://github.com/user-attachments/assets/8e2166fd-c540-4651-a06b-83a9435a923c" />
 
 * * * * * * * * * *
@@ -24,7 +27,7 @@ Der AX_OR_9 ist ein generischer Funktionsblock zur Berechnung der booleschen ODE
 ### **Adapter**
 **Sockets (Eingänge):**
 - **IN1** - ODER Eingang 1
-- **IN2** - ODER Eingang 2  
+- **IN2** - ODER Eingang 2
 - **IN3** - ODER Eingang 3
 - **IN4** - ODER Eingang 4
 - **IN5** - ODER Eingang 5

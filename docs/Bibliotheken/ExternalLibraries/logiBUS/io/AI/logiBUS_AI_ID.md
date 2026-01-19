@@ -1,5 +1,8 @@
 # logiBUS_AI_ID
 
+```{index} single: logiBUS_AI_ID
+```
+
 <img width="1998" height="363" alt="image" src="https://github.com/user-attachments/assets/c03aec55-c580-46c1-8d13-7cfd30b77783" />
 
 * * * * * * * * * *

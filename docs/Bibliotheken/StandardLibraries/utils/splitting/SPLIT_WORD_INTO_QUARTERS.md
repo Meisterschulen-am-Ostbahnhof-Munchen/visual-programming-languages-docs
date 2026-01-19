@@ -1,5 +1,13 @@
 # SPLIT_WORD_INTO_QUARTERS
 
+## 🎧 Podcast
+
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
+---- 
+```{index} single: SPLIT_WORD_INTO_QUARTERS
+```
+
 ![SPLIT_WORD_INTO_QUARTERS](https://github.com/user-attachments/assets/f26e7474-c9bf-4fb4-923f-d8c2ad4ac48e)
 
 * * * * * * * * * *

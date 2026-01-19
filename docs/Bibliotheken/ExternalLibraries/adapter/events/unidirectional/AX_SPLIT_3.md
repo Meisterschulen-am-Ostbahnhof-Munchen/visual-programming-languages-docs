@@ -1,5 +1,8 @@
 # AX_SPLIT_3
 
+```{index} single: AX_SPLIT_3
+```
+
 <img width="711" height="299" alt="image" src="https://github.com/user-attachments/assets/79f5b696-e66f-481a-8642-b19ac2f35cb4" />
 
 * * * * * * * * * *
@@ -26,7 +29,7 @@ Der AX_SPLIT_3 ist ein generischer Funktionsblock, der einen AX-Adapter-Eingang 
 
 **Ausgangsadapter:**
 - **OUT1** - AX-Adapter (Plug) - Erster Ausgangskanal
-- **OUT2** - AX-Adapter (Plug) - Zweiter Ausgangskanal  
+- **OUT2** - AX-Adapter (Plug) - Zweiter Ausgangskanal
 - **OUT3** - AX-Adapter (Plug) - Dritter Ausgangskanal
 
 ## Funktionsweise

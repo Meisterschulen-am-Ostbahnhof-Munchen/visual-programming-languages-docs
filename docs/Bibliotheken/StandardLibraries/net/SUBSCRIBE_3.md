@@ -1,5 +1,8 @@
 # SUBSCRIBE_3
 
+```{index} single: SUBSCRIBE_3
+```
+
 <img width="1291" height="365" alt="image" src="https://github.com/user-attachments/assets/45f461a5-c84b-4b74-bb5a-f54b1c6dd6a4" />
 
 * * * * * * * * * *
@@ -25,7 +28,7 @@ Der SUBSCRIBE_3 Funktionsblock dient zum Abonnieren von Daten eines PUBLISH_3 Bl
 - **QO** (BOOL): Qualifizierer für Ausgangszustand
 - **STATUS** (WSTRING): Statusinformationen der Verbindung
 - **RD_1** (ANY): Empfangene Daten vom Typ 1
-- **RD_2** (ANY): Empfangene Daten vom Typ 2  
+- **RD_2** (ANY): Empfangene Daten vom Typ 2
 - **RD_3** (ANY): Empfangene Daten vom Typ 3
 
 ### **Adapter**

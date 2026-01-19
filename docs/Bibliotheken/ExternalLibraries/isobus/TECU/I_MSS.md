@@ -1,5 +1,8 @@
 # I_MSS
 
+```{index} single: I_MSS
+```
+
 ![I_MSS](https://github.com/user-attachments/assets/eb4d09fb-b198-448d-bc88-992ac808bb29)
 
 * * * * * * * * * *
@@ -64,10 +67,10 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-7 konform** (PGN 65097)  
-✔ **Duale Geschwindigkeitsskalierung** für hohe Präzision  
-✔ **Multiquellen-Unterstützung** (8 mögliche Geschwindigkeitsquellen)  
-✔ **Intelligente Limitierungserkennung** mit 3-stufigem Status  
+✔ **ISO 11783-7 konform** (PGN 65097)
+✔ **Duale Geschwindigkeitsskalierung** für hohe Präzision
+✔ **Multiquellen-Unterstützung** (8 mögliche Geschwindigkeitsquellen)
+✔ **Intelligente Limitierungserkennung** mit 3-stufigem Status
 
 ## Anwendungsszenarien
 

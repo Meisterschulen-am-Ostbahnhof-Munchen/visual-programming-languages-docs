@@ -1,5 +1,8 @@
 # ARRAY2VALUES_2_LREAL
 
+```{index} single: ARRAY2VALUES_2_LREAL
+```
+
 <img width="1227" height="178" alt="image" src="https://github.com/user-attachments/assets/1fda84e9-cd29-43f7-a566-6a8e259fa26f" />
 
 * * * * * * * * * *
@@ -29,6 +32,8 @@ Wenn das `REQ`-Ereignis empfangen wird, liest der `ARRAY2VALUES_2_LREAL`-Funktio
 ## Technische Besonderheiten
 Der Funktionsblock ist darauf spezialisiert, genau ein Array von zwei `LREAL`-Werten zu verarbeiten und in zwei separate `LREAL`-Variablen aufzuteilen. Seine Implementierung ist direkt und auf diesen spezifischen Umwandlungszweck optimiert.
 
+*   **Generische Implementierung:** Interessanterweise verweist das Attribut `eclipse4diac::core::GenericClassName` auf `'GEN_ARRAY2ARRAY'`. Dies deutet darauf hin, dass der Baustein möglicherweise von einer generischen Array-zu-Array-Klasse abgeleitet ist, auch wenn seine Funktion die Aufteilung in einzelne Werte ist. Dies könnte ein Detail der Implementierungsgeschichte sein.
+
 ## Zustandsübersicht
 Dieser Funktionsblock ist zustandslos. Jede Auslösung des `REQ`-Ereignisses führt zu einer direkten Verarbeitung der aktuellen `IN`-Werte und einer Ausgabe über `OUT_1` und `OUT_2` ohne interne Zustandsänderungen, die über die aktuelle Transaktion hinausgehen würden.
 
@@ -40,5 +45,20 @@ Dieser Funktionsblock ist zustandslos. Jede Auslösung des `REQ`-Ereignisses fü
 ## Vergleich mit ähnlichen Bausteinen
 Ähnliche Bausteine könnten generische Array-Splitter sein, die eine variable Anzahl von Array-Elementen in eine entsprechende Anzahl von Ausgängen aufteilen können. `ARRAY2VALUES_2_LREAL` ist jedoch für den spezifischen Fall eines `LREAL`-Arrays der Größe 2 optimiert, was ihn einfacher in der Konfiguration und möglicherweise effizienter für diesen konkreten Anwendungsfall macht als einen flexibleren, aber potenziell komplexeren generischen Baustein.
 
+## Metadaten
+
+| Attribut | Wert |
+
+| :--- | :--- |
+
+| Copyright | (c) 2014 Profactor GmbH |
+
+| Lizenz | EPL-2.0 |
+
+| Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2014-07-09, Matthias Plasch) |
+
+| 4diac-Paket | eclipse4diac::convert |
+
 ## Fazit
+
 Der `ARRAY2VALUES_2_LREAL`-Funktionsblock ist ein nützliches Werkzeug für die gezielte Umwandlung eines `LREAL`-Arrays der Größe 2 in zwei separate `LREAL`-Ausgänge. Er bietet eine einfache und effiziente Lösung für die Datenaufbereitung und Schnittstellenanpassung in 4diac-Anwendungen, bei denen diese spezifische Konvertierung erforderlich ist.

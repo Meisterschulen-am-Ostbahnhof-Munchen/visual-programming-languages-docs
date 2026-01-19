@@ -1,5 +1,13 @@
 # QUARTER_TO_BOOL
 
+## 🎧 Podcast
+
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
+---- 
+```{index} single: QUARTER_TO_BOOL
+```
+
 <img width="1424" height="183" alt="image" src="https://github.com/user-attachments/assets/81acd0ec-c837-49d1-9ed8-3000cb65786e" />
 
 * * * * * * * * * *

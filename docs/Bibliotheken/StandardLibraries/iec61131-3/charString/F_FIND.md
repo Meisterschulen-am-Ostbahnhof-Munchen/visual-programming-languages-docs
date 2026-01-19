@@ -1,10 +1,13 @@
 # F_FIND
 
+```{index} single: F_FIND
+```
+
 <img width="1408" height="240" alt="F_FIND" src="https://github.com/user-attachments/assets/04ca16d1-99bf-4317-8cc7-adf2d6f70af7" />
 
 * * * * * * * * * *
 ## Einleitung
-Der Funktionsblock `F_FIND` dient zur Ermittlung der Position des ersten Auftretens einer Zeichenkette (IN2) innerhalb einer anderen Zeichenkette (IN1). Falls die gesuchte Zeichenkette nicht gefunden wird, gibt der Block den Wert 0 zurück. 
+Der Funktionsblock `F_FIND` dient zur Ermittlung der Position des ersten Auftretens einer Zeichenkette (IN2) innerhalb einer anderen Zeichenkette (IN1). Falls die gesuchte Zeichenkette nicht gefunden wird, gibt der Block den Wert 0 zurück.
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**

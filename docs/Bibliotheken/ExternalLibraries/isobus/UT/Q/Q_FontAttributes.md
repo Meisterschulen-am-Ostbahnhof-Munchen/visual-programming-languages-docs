@@ -1,5 +1,8 @@
 # Q_FontAttributes
 
+```{index} single: Q_FontAttributes
+```
+
 ![Q_FontAttributes](https://user-images.githubusercontent.com/116869307/214147610-3b768d9e-7d5f-4260-abb0-1393bea3f0ff.png)
 
 * * * * * * * * * *
@@ -49,10 +52,10 @@ Der **Q_FontAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.28)  
-✔ **Umfassende Schriftsteuerung** (Farbe, Größe, Art, Stil)  
-✔ **Rückmeldung alter Werte** für Reversionsmöglichkeit  
-✔ **Transaktionssicher** (Atomare Ausführung)  
+✔ **ISO 11783-6 konform** (F.28)
+✔ **Umfassende Schriftsteuerung** (Farbe, Größe, Art, Stil)
+✔ **Rückmeldung alter Werte** für Reversionsmöglichkeit
+✔ **Transaktionssicher** (Atomare Ausführung)
 
 ## Attribut-Eigenschaften
 

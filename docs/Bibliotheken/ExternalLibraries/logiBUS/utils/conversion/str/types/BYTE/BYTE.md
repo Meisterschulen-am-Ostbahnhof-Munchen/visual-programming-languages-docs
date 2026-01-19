@@ -1,5 +1,8 @@
 # BYTE
 
+```{index} single: BYTE
+```
+
 ```{toctree}
 ST01B
 ST02B

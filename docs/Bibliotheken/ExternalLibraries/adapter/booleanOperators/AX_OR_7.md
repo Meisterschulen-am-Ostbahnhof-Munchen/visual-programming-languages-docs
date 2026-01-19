@@ -1,5 +1,8 @@
 # AX_OR_7
 
+```{index} single: AX_OR_7
+```
+
 <img width="960" height="436" alt="image" src="https://github.com/user-attachments/assets/239ec61a-ac42-409e-9a51-94394f41ef93" />
 
 * * * * * * * * * *
@@ -23,7 +26,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 ### **Adapter**
 **Eingangsadapter:**
 - **IN1** - ODER Eingang 1
-- **IN2** - ODER Eingang 2  
+- **IN2** - ODER Eingang 2
 - **IN3** - ODER Eingang 3
 - **IN4** - ODER Eingang 4
 - **IN5** - ODER Eingang 5

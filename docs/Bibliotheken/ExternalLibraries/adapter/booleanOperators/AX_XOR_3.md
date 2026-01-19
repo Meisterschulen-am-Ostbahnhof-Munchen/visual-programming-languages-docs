@@ -1,5 +1,8 @@
 # AX_XOR_3
 
+```{index} single: AX_XOR_3
+```
+
 <img width="1009" height="299" alt="image" src="https://github.com/user-attachments/assets/716a2f15-e5b5-4f7f-b30c-42b13251bace" />
 
 * * * * * * * * * *
@@ -24,7 +27,7 @@ Der AX_XOR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der bool
 ### **Adapter**
 **Sockets (Eingänge):**
 - **IN1**: XOR-Eingang 1 (Adapter-Typ: unidirectional::AX)
-- **IN2**: XOR-Eingang 2 (Adapter-Typ: unidirectional::AX)  
+- **IN2**: XOR-Eingang 2 (Adapter-Typ: unidirectional::AX)
 - **IN3**: XOR-Eingang 3 (Adapter-Typ: unidirectional::AX)
 
 **Plugs (Ausgänge):**

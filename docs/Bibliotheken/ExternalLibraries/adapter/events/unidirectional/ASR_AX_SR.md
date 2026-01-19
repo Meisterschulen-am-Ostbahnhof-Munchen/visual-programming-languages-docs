@@ -1,5 +1,8 @@
 # ASR_AX_SR
 
+```{index} single: ASR_AX_SR
+```
+
 <img width="1139" height="229" alt="image" src="https://github.com/user-attachments/assets/d4c4cfae-6044-477d-a62f-71e94d0d34a2" />
 
 * * * * * * * * * *
@@ -39,7 +42,7 @@ Bei einem SET-Ereignis über den S_R-Adapter wechselt der Block in den SET-Zusta
 ## Zustandsübergänge
 ```
 START → SET:    bei S_R.SET Ereignis
-SET → RESET:    bei S_R.RESET Ereignis  
+SET → RESET:    bei S_R.RESET Ereignis
 RESET → SET:    bei S_R.SET Ereignis
 ```
 

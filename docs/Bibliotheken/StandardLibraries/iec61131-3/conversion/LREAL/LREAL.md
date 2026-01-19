@@ -1,4 +1,9 @@
-# LREAL
+# LREAL Konvertierungen
+
+```{index} single: LREAL Konvertierungen
+```
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps LREAL.
 
 ```{toctree}
 F_LREAL_AS_STRING

@@ -1,6 +1,9 @@
 # E_RESTART
 
-![IEC 61499 Service Interface Symbol](https://user-images.githubusercontent.com/113907528/204901925-d33114a6-a86a-4a53-854d-a3f499fc8802.png)  
+```{index} single: E_RESTART
+```
+
+![IEC 61499 Service Interface Symbol](https://user-images.githubusercontent.com/113907528/204901925-d33114a6-a86a-4a53-854d-a3f499fc8802.png)
 
 * * * * * * * * * *
 
@@ -45,10 +48,10 @@ Der **E_RESTART** ist ein spezieller Service-Interface-Funktionsbaustein nach IE
 
 ## Technische Besonderheiten
 
-✔ **Standardisierte Neustart-Steuerung** nach IEC 61499 Annex A  
-✔ **Drei Betriebsmodi** (Cold/Warm/Stop)  
-✔ **Ressourcenübergreifende** Konsistenz  
-✔ **EPL-2.0 Open-Source** Implementierung  
+✔ **Standardisierte Neustart-Steuerung** nach IEC 61499 Annex A
+✔ **Drei Betriebsmodi** (Cold/Warm/Stop)
+✔ **Ressourcenübergreifende** Konsistenz
+✔ **EPL-2.0 Open-Source** Implementierung
 
 ## Anwendungsszenarien
 

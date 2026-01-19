@@ -1,5 +1,8 @@
 # BOOLS_TO_ARR08X
 
+```{index} single: BOOLS_TO_ARR08X
+```
+
 <img width="1090" height="362" alt="image" src="https://github.com/user-attachments/assets/61dbe877-33a2-4798-8137-868082aad02a" />
 
 * * * * * * * * * *

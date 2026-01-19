@@ -1,5 +1,8 @@
 # I_VP1
 
+```{index} single: I_VP1
+```
+
 <img width="1306" height="390" alt="image" src="https://github.com/user-attachments/assets/0d8b45f8-4fd0-475e-a261-694c0e7ecac1" />
 
 * * * * * * * * * *

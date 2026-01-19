@@ -1,5 +1,4 @@
 # esp32_nvs
 
-```{toctree}
-NVS
+```{index} single: esp32_nvs
 ```

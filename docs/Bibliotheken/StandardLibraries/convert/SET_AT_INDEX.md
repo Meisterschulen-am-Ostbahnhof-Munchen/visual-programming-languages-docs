@@ -1,5 +1,8 @@
 # SET_AT_INDEX
 
+```{index} single: SET_AT_INDEX
+```
+
 <img width="1449" height="238" alt="image" src="https://github.com/user-attachments/assets/b43c3e3b-03a9-421b-a9ba-bcd4c4f00f28" />
 
 * * * * * * * * * *
@@ -44,7 +47,22 @@ Der `SET_AT_INDEX` Baustein ist im Wesentlichen ein ereignisgesteuerter Baustein
 *   **Benutzerinteraktion:** Setzen von Array-Werten basierend auf Benutzereingaben.
 
 ## Vergleich mit ähnlichen Bausteinen
-Dieser Baustein ist komplementär zu einem potenziellen `GET_FROM_INDEX`-Baustein, der Werte aus einem Array an einem bestimmten Index auslesen würde. Er ist eine grundlegende Operation für die Array-Manipulation und bildet die Basis für komplexere Datenstruktur-Algorithmen. Im Gegensatz zu Bausteinen, die ganze Arrays kopieren oder verschieben, konzentriert sich `SET_AT_INDEX` auf die präzise Manipulation eines einzelnen Elements.
+Dieser Baustein ist komplementär zum `GET_AT_INDEX`-Baustein, der Werte aus einem Array an einem bestimmten Index auslesen würde. Er ist eine grundlegende Operation für die Array-Manipulation und bildet die Basis für komplexere Datenstruktur-Algorithmen. Im Gegensatz zu Bausteinen, die ganze Arrays kopieren oder verschieben, konzentriert sich `SET_AT_INDEX` auf die präzise Manipulation eines einzelnen Elements.
+
+## Metadaten
+
+| Attribut | Wert |
+
+| :--- | :--- |
+
+| Copyright | (c) 2014 Profactor GmbH |
+
+| Lizenz | EPL-2.0 |
+
+| Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2014-08-05, Matthias Plasch) |
+
+| 4diac-Paket | eclipse4diac::convert |
 
 ## Fazit
+
 Der `SET_AT_INDEX` Funktionsblock ist ein grundlegendes, aber mächtiges Werkzeug zur Manipulation von Array-Daten in 4diac-Applikationen. Seine Flexibilität durch die `ANY`-Datentypen und die klare ereignisgesteuerte Schnittstelle machen ihn zu einem wertvollen Baustein für viele Anwendungen, die dynamische Datenstrukturen erfordern. Die korrekte Handhabung von Datentypen und Indizes ist entscheidend für seine fehlerfreie Nutzung.

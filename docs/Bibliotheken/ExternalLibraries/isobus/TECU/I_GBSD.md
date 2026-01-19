@@ -1,5 +1,8 @@
 # I_GBSD
 
+```{index} single: I_GBSD
+```
+
 ![I_GBSD](https://github.com/user-attachments/assets/0404f0fb-3b88-47aa-8df6-2312a96018cf)
 
 * * * * * * * * * *
@@ -61,10 +64,10 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-7 konform** (PGN 65097)  
-✔ **Hochpräzise Messung** mit 1mm Auflösung  
-✔ **32-bit Distanzzähler** (bis zu 4,294,967km Reichweite)  
-✔ **Robuste Richtungserkennung** mit 4 Zuständen  
+✔ **ISO 11783-7 konform** (PGN 65097)
+✔ **Hochpräzise Messung** mit 1mm Auflösung
+✔ **32-bit Distanzzähler** (bis zu 4,294,967km Reichweite)
+✔ **Robuste Richtungserkennung** mit 4 Zuständen
 
 ## Anwendungsszenarien
 

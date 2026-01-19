@@ -1,5 +1,8 @@
 # F_EXPT
 
+```{index} single: F_EXPT
+```
+
 ![F_EXPT](https://github.com/user-attachments/assets/0446a2d1-6283-400f-976d-18ac9c482b25)
 
 * * * * * * * * * *
@@ -39,10 +42,10 @@ Der **F_EXPT** ist ein mathematischer Funktionsbaustein zur Berechnung von Poten
 
 ## Technische Spezifikationen
 
-✔ **Präzise Potenzberechnung**  
-✔ **Unterstützung für REAL und LREAL**  
-✔ **Automatische Typkonvertierung**  
-✔ **IEC 61131-3 konform**  
+✔ **Präzise Potenzberechnung**
+✔ **Unterstützung für REAL und LREAL**
+✔ **Automatische Typkonvertierung**
+✔ **IEC 61131-3 konform**
 
 ## Anwendungsbeispiele
 

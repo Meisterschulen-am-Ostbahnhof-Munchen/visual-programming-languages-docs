@@ -1,5 +1,8 @@
 # AX_DEMUX_2
 
+```{index} single: AX_DEMUX_2
+```
+
 <img width="1220" height="220" alt="image" src="https://github.com/user-attachments/assets/843be5c8-1e18-4cc5-81d1-922180394ad4" />
 
 * * * * * * * * * *

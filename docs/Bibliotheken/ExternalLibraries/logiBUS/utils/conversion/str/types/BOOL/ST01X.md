@@ -1,5 +1,8 @@
 # ST01X
 
+```{index} single: ST01X
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `ST01X` ist ein einfacher strukturierter Datentyp, der einen einzelnen Booleschen Wert (BOOL) kapselt. Er dient dazu, eine klar definierte Struktur für einen einzelnen Binärzustand bereitzustellen, was die Standardisierung und Lesbarkeit in komplexeren Anwendungen verbessern kann.

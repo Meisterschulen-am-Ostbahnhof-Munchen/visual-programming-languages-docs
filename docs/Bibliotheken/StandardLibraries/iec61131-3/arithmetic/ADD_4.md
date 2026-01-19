@@ -1,5 +1,8 @@
 # ADD_4
 
+```{index} single: ADD_4
+```
+
 ![ADD_4](https://user-images.githubusercontent.com/116869307/214143055-ad68b786-ea59-490e-9e7b-c43c007e0ae7.png)
 
 * * * * * * * * * *
@@ -40,10 +43,10 @@ Der **ADD_4** ist ein leistungsfähiger Funktionsbaustein zur Summation von vier
 
 ## Technische Spezifikationen
 
-✔ **Vier-Eingang-Addition** in einer Operation  
-✔ **Volle ANY_MAGNITUDE-Unterstützung**  
-✔ **Optimierte Berechnungsperformance**  
-✔ **Deterministisches Verhalten**  
+✔ **Vier-Eingang-Addition** in einer Operation
+✔ **Volle ANY_MAGNITUDE-Unterstützung**
+✔ **Optimierte Berechnungsperformance**
+✔ **Deterministisches Verhalten**
 
 ## Unterstützte Datentypen
 

@@ -1,5 +1,8 @@
 # Q_ChangePolygonPoint
 
+```{index} single: Q_ChangePolygonPoint
+```
+
 ![Q_ChangePolygonPoint](https://user-images.githubusercontent.com/116869307/214147060-065896ae-60b6-4a01-a8d2-b2b95a424b74.png)
 
 * * * * * * * * * *
@@ -47,10 +50,10 @@ Der **Q_ChangePolygonPoint** ist ein standardkonformer Funktionsbaustein zur Mod
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.52)  
-✔ **Präzise Koordinatensteuerung** (16-bit)  
-✔ **Indexbasierter Zugriff** (0-255 Punkte)  
-✔ **Echtzeitfähige** Verarbeitung  
+✔ **ISO 11783-6 konform** (F.52)
+✔ **Präzise Koordinatensteuerung** (16-bit)
+✔ **Indexbasierter Zugriff** (0-255 Punkte)
+✔ **Echtzeitfähige** Verarbeitung
 
 ## Koordinatenbereich
 

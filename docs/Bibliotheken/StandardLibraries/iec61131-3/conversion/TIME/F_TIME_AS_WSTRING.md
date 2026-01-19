@@ -1,5 +1,8 @@
 # F_TIME_AS_WSTRING
 
+```{index} single: F_TIME_AS_WSTRING
+```
+
 <img width="1479" height="212" alt="F_TIME_AS_WSTRING" src="https://github.com/user-attachments/assets/ed6f36e7-4f40-4837-a19d-4f35b3fbce62" />
 
 * * * * * * * * * *

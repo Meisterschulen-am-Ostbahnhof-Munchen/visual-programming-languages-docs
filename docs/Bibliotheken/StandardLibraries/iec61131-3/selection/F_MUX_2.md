@@ -1,5 +1,8 @@
 # F_MUX_2
 
+```{index} single: F_MUX_2
+```
+
 ![F_MUX_2](https://user-images.githubusercontent.com/116869307/214145411-87b2a7e5-fd56-4491-aaca-385941a399ab.png)
 
 * * * * * * * * * *

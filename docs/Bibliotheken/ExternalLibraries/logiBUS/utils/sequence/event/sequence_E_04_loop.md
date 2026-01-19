@@ -1,5 +1,8 @@
 # sequence_E_04_loop
 
+```{index} single: sequence_E_04_loop
+```
+
 <img width="1712" height="415" alt="image" src="https://github.com/user-attachments/assets/789f0943-fa6f-4087-863c-cbd8da1948c7" />
 
 * * * * * * * * * *

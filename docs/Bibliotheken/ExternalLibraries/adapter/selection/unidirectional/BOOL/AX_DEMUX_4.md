@@ -1,5 +1,8 @@
 # AX_DEMUX_4
 
+```{index} single: AX_DEMUX_4
+```
+
 <img width="1220" height="274" alt="image" src="https://github.com/user-attachments/assets/b2301b38-e22d-4369-99f4-29de847e9d20" />
 
 * * * * * * * * * *
@@ -24,7 +27,7 @@ Der AX_DEMUX_4 ist ein generischer Demultiplexer-Funktionsblock, der eingehende 
 ### **Adapter**
 - **IN** (Socket): Unidirektionaler AX-Adapter für den Eingangswert zum Demultiplexen
 - **OUT1** (Plug): Unidirektionaler AX-Adapter für Ausgang 1
-- **OUT2** (Plug): Unidirektionaler AX-Adapter für Ausgang 2  
+- **OUT2** (Plug): Unidirektionaler AX-Adapter für Ausgang 2
 - **OUT3** (Plug): Unidirektionaler AX-Adapter für Ausgang 3
 - **OUT4** (Plug): Unidirektionaler AX-Adapter für Ausgang 4
 

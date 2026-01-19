@@ -1,5 +1,8 @@
 # F_DIV
 
+```{index} single: F_DIV
+```
+
 ![F_DIV](https://user-images.githubusercontent.com/116869307/214143200-dff8deec-3ba6-4ac9-aad3-6418b42506c1.png)
 
 * * * * * * * * * *
@@ -41,10 +44,10 @@ Der **F_DIV** ist ein standardkonformer Funktionsbaustein zur Division numerisch
 
 ## Technische Besonderheiten
 
-✔ **Typsichere Division** (ANY_NUM-Unterstützung)  
-✔ **Automatische Typkonvertierung**  
-✔ **IEC 61131-3 konform**  
-✔ **Deterministische Ausführung**  
+✔ **Typsichere Division** (ANY_NUM-Unterstützung)
+✔ **Automatische Typkonvertierung**
+✔ **IEC 61131-3 konform**
+✔ **Deterministische Ausführung**
 
 ## Fehlerbehandlung
 

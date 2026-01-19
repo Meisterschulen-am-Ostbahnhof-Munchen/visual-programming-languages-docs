@@ -1,117 +1,69 @@
-# E\_CTU
+# E_CTU
 
-Event driven up counter
+## 📺 Video
 
-![](https://user-images.githubusercontent.com/113907528/204894537-54f1c9c9-de57-4beb-ad38-697fff012b4b.png)
+* [The E_CTU upcounter](https://www.youtube.com/watch?v=2v4Ib2wZLGM)
 
-*   Input
-    *   CU Count up
-    *   R Reset
-    *   PV Process Value
-*   Output
-    *   CUO Count up output
-    *   RO Reset output
-    *   Q True if CV >= PV
-    *   CV Counter Value
+## 🎧 Podcast
 
-Input:
+* [Der E_CTU in der IEC 61499: Ereignisgesteuertes Zählen und warum der Minimalist im Maschinenbau überzeugt](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-in-der-IEC-61499-Ereignisgesteuertes-Zhlen-und-warum-der-Minimalist-im-Maschinenbau-berzeugt-e3a9qnq)
+* [Der E_CTU-Baustein: Ereignisgesteuertes Hochzählen in der Industrie nach IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-Baustein-Ereignisgesteuertes-Hochzhlen-in-der-Industrie-nach-IEC-61499-e36846t)
+* [E_CTUD: Bidirektionaler Zähler in IEC 61499 Systemen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTUD-Bidirektionaler-Zhler-in-IEC-61499-Systemen-e368lmb)
+* [Meisterwissen 61499: Der Ereignisgesteuerte Aufwärtszähler (E_CTU) – Robustes Zählen in Landmaschinen-Steuerungen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Meisterwissen-61499-Der-Ereignisgesteuerte-Aufwrtszhler-E_CTU--Robustes-Zhlen-in-Landmaschinen-Steuerungen-e3a9q5n)
 
-CU: Count up Ereignis zum Aufwärtszählen
+---- 
+```{index} single: E_CTU
+```
 
-R: Zurücksetzen
-
-Output:
-
-CUO: Countup Ausgansereignis 
-
-R: Ausgang zurücksetzen
-
-![](https://user-images.githubusercontent.com/113907474/227977865-15a0089f-d648-4415-947b-bf80436d0094.png)
+<img width="1139" height="202" alt="E_CTU" src="https://user-images.githubusercontent.com/113907528/204894537-54f1c9c9-de57-4beb-ad38-697fff012b4b.png">
 
 * * * * * * * * * *
+## Einleitung
+Der `E_CTU` (Event-Driven Up Counter) ist ein ereignisgesteuerter Aufwärtszähler gemäß dem IEC 61499-Standard. Seine Funktion ist es, bei jedem ankommenden Zählereignis einen internen Zählerstand zu erhöhen und diesen mit einem vorgegebenen Grenzwert zu vergleichen. Der Baustein kann jederzeit zurückgesetzt werden.
 
-Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
+## Schnittstellenstruktur
 
-### Der Baustein E_CTU in der IEC 61499: Ein Überblick
+### **Ereignis-Eingänge**
+- **CU (Count Up)**: Löst einen Zählschritt aus, der den Zählerstand `CV` um 1 erhöht.
+    - **Verbundene Daten**: `PV`
+- **R (Reset)**: Setzt den Zählerstand `CV` auf 0 zurück.
 
-#### Einleitung
+### **Ereignis-Ausgänge**
+- **CUO (Count Up Output)**: Bestätigt einen Zählschritt. Wird nach jedem `CU`-Ereignis ausgelöst.
+    - **Verbundene Daten**: `Q`, `CV`
+- **RO (Reset Output)**: Bestätigt das Zurücksetzen des Zählers.
+    - **Verbundene Daten**: `Q`, `CV`
 
-Die IEC 61499 ist ein internationaler Standard, der die Modellierung von verteilten industriellen Steuerungssystemen ermöglicht. Ein zentrales Konzept in diesem Standard ist der Funktionsbaustein (FB), der als grundlegende Komponente für die Steuerungslogik dient. Der Baustein **E_CTU** (Event-driven up counter) ist ein Beispiel für einen solchen Funktionsbaustein, der in der IEC 61499 verwendet wird, um einen ereignisgesteuerten Aufwärtszähler zu modellieren. Dieser Aufsatz beschreibt die Struktur, das Verhalten und die Anwendung des E_CTU-Bausteins anhand des bereitgestellten Quelltextes.
+### **Daten-Eingänge**
+- **PV (Preset Value)**: Der Grenzwert (Datentyp: `UINT`). Dieser Wert wird bei jedem `CU`-Ereignis mit dem Zählerstand verglichen.
 
-#### Struktur des E_CTU-Bausteins
+### **Daten-Ausgänge**
+- **Q (Status)**: Ausgangs-Flag, das `TRUE` wird, wenn der Zählerstand `CV` den Grenzwert `PV` erreicht oder überschreitet (Datentyp: `BOOL`).
+- **CV (Counter Value)**: Der aktuelle Zählerstand (Datentyp: `UINT`).
 
-Der E_CTU-Baustein ist ein **Basic Function Block (BFB)**, der gemäß der IEC 61499 spezifiziert ist. Ein BFB besteht aus einer Schnittstelle (Interface) und einer internen Logik, die durch einen Execution Control Chart (ECC) und Algorithmen definiert wird.
+## Funktionsweise
+Der `E_CTU`-Baustein hat zwei Hauptfunktionen: Zählen und Zurücksetzen.
 
-##### Schnittstelle (Interface)
+1.  **Zählen (CU)**: Wenn ein `CU`-Ereignis eintritt und der interne Zählerstand `CV` den Maximalwert für `UINT` (65535) noch nicht erreicht hat, wird `CV` um 1 erhöht. Anschließend wird `CV` mit dem am `PV`-Eingang anliegenden Grenzwert verglichen. Wenn `CV >= PV` ist, wird der Ausgang `Q` auf `TRUE` gesetzt, andernfalls auf `FALSE`. Nach dem Zählvorgang wird das `CUO`-Ereignis ausgelöst, das den aktuellen Zählerstand `CV` und das Status-Flag `Q` ausgibt.
 
-Die Schnittstelle des E_CTU-Bausteins besteht aus:
+2.  **Zurücksetzen (R)**: Wenn ein `R`-Ereignis eintritt, wird der Zählerstand `CV` sofort auf 0 und das Status-Flag `Q` auf `FALSE` gesetzt. Anschließend wird das `RO`-Ereignis ausgelöst, das die zurückgesetzten Werte `CV` und `Q` ausgibt.
 
-- **Eingangsereignisse (Event Inputs)**:
-  - **CU (Count Up)**: Dieses Ereignis erhöht den Zählerwert **CV** um eins. Es ist mit der Eingangsvariable **PV** (Process Value) verknüpft.
-  - **R (Reset)**: Dieses Ereignis setzt den Zählerwert **CV** auf null zurück.
+## Technische Besonderheiten
+- **Ereignisgesteuert**: Der Baustein arbeitet ausschließlich auf Basis von Ereignissen (`CU`, `R`).
+- **Überlaufschutz**: Der Zähler stoppt, wenn der maximale Wert für `UINT` (65535) erreicht ist, um einen Überlauf zu verhindern.
+- **PV bei jedem Zählschritt**: Der Grenzwert `PV` wird mit dem `CU`-Ereignis verknüpft, was bedeutet, dass er potenziell bei jedem Zählschritt geändert werden kann.
 
-- **Ausgangsereignisse (Event Outputs)**:
-  - **CUO (Count Up Output)**: Dieses Ereignis wird ausgelöst, wenn der Zählerwert **CV** erhöht wird. Es ist mit den Ausgangsvariablen **Q** und **CV** verknüpft.
-  - **RO (Reset Output)**: Dieses Ereignis wird ausgelöst, wenn der Zählerwert **CV** zurückgesetzt wird. Es ist ebenfalls mit den Ausgangsvariablen **Q** und **CV** verknüpft.
+## Anwendungsbeispiele
+- **Stückzähler**: Zählen von produzierten Teilen auf einem Förderband. Wenn eine Zielmenge (`PV`) erreicht ist, wird `Q` `TRUE`.
+- **Ereigniszählung**: Erfassen der Häufigkeit von Ereignissen, wie z.B. das Betätigen eines Schalters.
+- **Taktzähler**: Zählen von Taktzyklen in einer Maschine, um Wartungsintervalle zu signalisieren.
 
-- **Eingangsvariable (Input Variable)**:
-  - **PV (Process Value)**: Dies ist eine vorzeichenlose Ganzzahl (UINT), die den Schwellwert definiert, bei dem der Ausgang **Q** auf **TRUE** gesetzt wird.
+## Vergleich mit ähnlichen Bausteinen
+| Merkmal          | E_CTU (Up Counter) | E_CTD (Down Counter) | E_CTUD (Up/Down Counter) |
+|------------------|--------------------|----------------------|--------------------------|
+| Zählrichtung     | Aufwärts           | Abwärts              | Beides                   |
+| Ereignisgesteuert| Ja                 | Ja                   | Ja                       |
+| Reset-Funktion   | R (Reset auf 0)    | LD (Setzen auf PV)   | R (Reset auf 0)          |
 
-- **Ausgangsvariablen (Output Variables)**:
-  - **Q**: Dies ist eine boolesche Variable, die den Zustand des Zählers anzeigt. Sie ist **TRUE**, wenn der Zählerwert **CV** größer oder gleich dem Schwellwert **PV** ist.
-  - **CV (Counter Value)**: Dies ist eine vorzeichenlose Ganzzahl (UINT), die den aktuellen Zählerwert repräsentiert.
-
-##### Execution Control Chart (ECC)
-
-Der ECC definiert das Verhalten des Bausteins durch Zustände und Übergänge. Der E_CTU-Baustein hat drei Zustände:
-
-1. **START**: Der Initialzustand des Bausteins.
-2. **CU (Count Up)**: Dieser Zustand wird erreicht, wenn das **CU**-Ereignis eintritt und der Zählerwert **CV** kleiner als 65535 ist. In diesem Zustand wird der Algorithmus **CU** ausgeführt, der den Zählerwert **CV** um eins erhöht und den Ausgang **Q** entsprechend aktualisiert. Das **CUO**-Ereignis wird ausgelöst.
-3. **R (Reset)**: Dieser Zustand wird erreicht, wenn das **R**-Ereignis eintritt. In diesem Zustand wird der Algorithmus **R** ausgeführt, der den Zählerwert **CV** auf null zurücksetzt und den Ausgang **Q** auf **FALSE** setzt. Das **RO**-Ereignis wird ausgelöst.
-
-Die Übergänge zwischen den Zuständen werden durch die Bedingungen **CU** und **R** gesteuert:
-
-- Von **START** nach **CU**, wenn das **CU**-Ereignis eintritt und **CV** kleiner als 65535 ist.
-- Von **CU** zurück nach **START**, wenn der Zählerwert erhöht wurde.
-- Von **START** nach **R**, wenn das **R**-Ereignis eintritt.
-- Von **R** zurück nach **START**, nachdem der Zähler zurückgesetzt wurde.
-
-##### Algorithmen
-
-Der E_CTU-Baustein verfügt über zwei Algorithmen:
-
-1. **CU (Count Up)**: Dieser Algorithmus erhöht den Zählerwert **CV** um eins und setzt den Ausgang **Q** auf **TRUE**, wenn **CV** größer oder gleich **PV** ist.
-   ```structured-text
-   CV := CV + 1;
-   Q  := (CV >= PV);
-   ```
-
-2. **R (Reset)**: Dieser Algorithmus setzt den Zählerwert **CV** auf null und den Ausgang **Q** auf **FALSE**.
-   ```structured-text
-   CV := 0;
-   Q := FALSE;
-   ```
-
-#### Verhalten des E_CTU-Bausteins
-
-Der E_CTU-Baustein verhält sich wie ein ereignisgesteuerter Aufwärtszähler, der bei jedem **CU**-Ereignis den Zählerwert **CV** um eins erhöht. Wenn der Zählerwert den Schwellwert **PV** erreicht oder überschreitet, wird der Ausgang **Q** auf **TRUE** gesetzt. Das **R**-Ereignis setzt den Zählerwert **CV** auf null zurück und setzt den Ausgang **Q** auf **FALSE**.
-
-Das Verhalten des Bausteins kann wie folgt zusammengefasst werden:
-
-1. **Initialzustand**: Der Baustein startet im Zustand **START**.
-2. **Zählen**: Wenn das **CU**-Ereignis eintritt und **CV** kleiner als 65535 ist, wechselt der Baustein in den Zustand **CU**, erhöht den Zählerwert **CV** um eins und löst das **CUO**-Ereignis aus.
-3. **Zurücksetzen**: Wenn das **R**-Ereignis eintritt, wechselt der Baustein in den Zustand **R**, setzt den Zählerwert **CV** auf null und den Ausgang **Q** auf **FALSE**. Das **RO**-Ereignis wird ausgelöst.
-
-#### Anwendungsbeispiele
-
-Der E_CTU-Baustein kann in verschiedenen industriellen Steuerungsanwendungen eingesetzt werden, insbesondere in Szenarien, in denen ein ereignisgesteuerter Zähler erforderlich ist. Einige Beispiele sind:
-
-- **Ereigniszählung**: Der Baustein kann verwendet werden, um die Anzahl von Ereignissen zu zählen, z.B. die Anzahl von Produkten auf einem Förderband.
-- **Schwellwertüberwachung**: Der Baustein kann verwendet werden, um einen Schwellwert zu überwachen und eine Aktion auszulösen, wenn der Schwellwert erreicht oder überschritten wird.
-- **Zyklische Steuerung**: Der Baustein kann in zyklischen Steuerungssystemen eingesetzt werden, um Zyklen zu zählen und bestimmte Aktionen nach einer bestimmten Anzahl von Zyklen auszulösen.
-
-#### Fazit
-
-Der E_CTU-Baustein ist ein einfacher, aber leistungsfähiger Funktionsbaustein in der IEC 61499, der ein ereignisgesteuertes Zählverhalten realisiert. Durch seine klare Struktur und einfache Zustandsübergänge eignet er sich ideal für Anwendungen, in denen Ereignisse gezählt und Schwellwerte überwacht werden müssen. Der Baustein demonstriert die Flexibilität und Modularität der IEC 61499, die es ermöglicht, komplexe Steuerungssysteme aus einfachen, wiederverwendbaren Komponenten aufzubauen.
-
-Der bereitgestellte Quelltext zeigt, wie der E_CTU-Baustein in der Praxis implementiert werden kann, und bietet eine solide Grundlage für die Entwicklung ähnlicher Bausteine in industriellen Steuerungssystemen.
+## Fazit
+Der `E_CTU` ist ein grundlegender und vielseitiger Zählerbaustein für ereignisgesteuerte Systeme nach IEC 61499. Seine einfache Schnittstelle und sein vorhersehbares Verhalten machen ihn zu einem robusten Werkzeug für eine Vielzahl von Zähl- und Überwachungsaufgaben in der industriellen Automatisierung.

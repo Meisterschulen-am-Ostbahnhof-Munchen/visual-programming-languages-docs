@@ -1,5 +1,8 @@
 # Q_ChangePolygonScale
 
+```{index} single: Q_ChangePolygonScale
+```
+
 ![Q_ChangePolygonScale](https://user-images.githubusercontent.com/116869307/214147096-01ad8095-df5d-4cab-82ee-7f97a5758ea0.png)
 
 * * * * * * * * * *
@@ -45,10 +48,10 @@ Der **Q_ChangePolygonScale** ist ein standardkonformer Funktionsbaustein zur Ska
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.54)  
-✔ **Proportionale Skalierung** (Breite/Höhe)  
-✔ **16-bit Auflösung** (0-65535 Pixel)  
-✔ **Echtzeitfähige** Verarbeitung  
+✔ **ISO 11783-6 konform** (F.54)
+✔ **Proportionale Skalierung** (Breite/Höhe)
+✔ **16-bit Auflösung** (0-65535 Pixel)
+✔ **Echtzeitfähige** Verarbeitung
 
 ## Skalierungsverhalten
 
@@ -94,35 +97,3 @@ Idealer Einsatz bei:
 - Adaptiven Visualisierungen
 - Dynamischen Kartenansichten
 - Größenveränderbaren Bedienelementen
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

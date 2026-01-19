@@ -1,5 +1,8 @@
 # AX_XOR_2
 
+```{index} single: AX_XOR_2
+```
+
 <img width="1009" height="261" alt="image" src="https://github.com/user-attachments/assets/8e5ec6ce-d2bb-4517-ac38-d14a7e43976b" />
 
 * * * * * * * * * *
@@ -22,7 +25,7 @@ Keine direkten Datenausgänge vorhanden - die Ausgabe erfolgt über Adapter-Schn
 
 ### **Adapter**
 - **IN1** (Socket): XOR-Eingang 1 - Empfängt das erste Eingangssignal
-- **IN2** (Socket): XOR-Eingang 2 - Empfängt das zweite Eingangssignal  
+- **IN2** (Socket): XOR-Eingang 2 - Empfängt das zweite Eingangssignal
 - **OUT** (Plug): XOR-Ergebnis - Gibt das berechnete XOR-Ergebnis aus
 
 Alle Adapter verwenden den Typ `adapter::types::unidirectional::AX` für unidirektionale Kommunikation.

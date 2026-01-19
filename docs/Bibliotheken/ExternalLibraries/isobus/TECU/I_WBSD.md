@@ -1,5 +1,8 @@
 # I_WBSD
 
+```{index} single: I_WBSD
+```
+
 ![I_WBSD](https://github.com/user-attachments/assets/57c4ccff-80d8-49b9-a5d8-884e25c7b4a3)
 
 * * * * * * * * * *
@@ -59,10 +62,10 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-7 konform** (PGN 65096)  
-✔ **Präzise Geschwindigkeitsmessung** mit 1mm/s Auflösung  
-✔ **32-bit Distanzzähler** für lange Betriebszeiten  
-✔ **Integrierte Zustandsüberwachung** (Zündung, Start/Stop)  
+✔ **ISO 11783-7 konform** (PGN 65096)
+✔ **Präzise Geschwindigkeitsmessung** mit 1mm/s Auflösung
+✔ **32-bit Distanzzähler** für lange Betriebszeiten
+✔ **Integrierte Zustandsüberwachung** (Zündung, Start/Stop)
 
 ## Anwendungsszenarien
 
@@ -75,13 +78,13 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 
 | Parameter | Code | Bedeutung |
 |-----------|------|-----------|
-| `KEYSWITCHSTATE` | 0 | Aus | 
-| | 1 | Ein | 
-| | 2 | Start | 
+| `KEYSWITCHSTATE` | 0 | Aus |
+| | 1 | Ein |
+| | 2 | Start |
 | | 3 | Undefiniert |
-| `START_STOP_STATE` | 0 | Stopp | 
-| | 1 | Start | 
-| | 2 | Pause | 
+| `START_STOP_STATE` | 0 | Stopp |
+| | 1 | Start |
+| | 2 | Pause |
 | | 3 | Reserviert |
 
 ## Vergleich mit ähnlichen Systemen

@@ -1,5 +1,8 @@
 # CbVtStatus
 
+```{index} single: CbVtStatus
+```
+
 ![CbVtStatus](https://user-images.githubusercontent.com/116869307/214146846-2d9f0694-b5f4-4e70-aae0-dc64540eb356.png)
 
 * * * * * * * * * *
@@ -38,10 +41,10 @@ Der **CbVtStatus** ist ein standardisierter Callback-Baustein für Virtual-Termi
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform**  
-✔ **Deterministisches** Verhalten  
-✔ **Multi-ECU Unterstützung**  
-✔ **Plug-in-fähige** Architektur  
+✔ **ISO 11783-6 konform**
+✔ **Deterministisches** Verhalten
+✔ **Multi-ECU Unterstützung**
+✔ **Plug-in-fähige** Architektur
 
 ## Unterstützte Betriebsmodi
 
@@ -89,24 +92,3 @@ Besonders wertvoll für Hersteller von:
 - ISOBUS-Diagnosegeräten
 
 Die standardisierte Implementierung ermöglicht zuverlässigen Betrieb in heterogenen Systemumgebungen.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

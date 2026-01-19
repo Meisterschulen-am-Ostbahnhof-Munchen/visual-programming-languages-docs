@@ -1,5 +1,8 @@
 # DataPanel_MI_IX
 
+```{index} single: DataPanel_MI_IX
+```
+
 <img width="1444" height="264" alt="image" src="https://github.com/user-attachments/assets/72a89eba-1aec-4942-99dc-d2ed708c0850" />
 
 * * * * * * * * * *

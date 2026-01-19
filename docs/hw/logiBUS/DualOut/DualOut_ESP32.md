@@ -1,4 +1,7 @@
 # DualOut ESP32
+
+```{index} single: DualOut ESP32
+```
 ## IO
 
 ### Digitale Ausgänge

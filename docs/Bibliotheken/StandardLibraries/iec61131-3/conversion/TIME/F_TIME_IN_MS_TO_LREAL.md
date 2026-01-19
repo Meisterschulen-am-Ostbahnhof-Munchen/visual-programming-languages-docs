@@ -1,5 +1,8 @@
 # F_TIME_IN_MS_TO_LREAL
 
+```{index} single: F_TIME_IN_MS_TO_LREAL
+```
+
 <img width="1520" height="212" alt="F_TIME_IN_MS_TO_LREAL" src="https://github.com/user-attachments/assets/fd32035d-3e73-424b-9bef-32b3ce7a10d8" />
 
 * * * * * * * * * *
@@ -35,6 +38,14 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung wird bei jedem
 ## Anwendungsszenarien
 - Umwandlung von Zeitwerten für präzise Berechnungen.
 - Integration in Steuerungssysteme, die Gleitkommawerte für Zeitmessungen benötigen.
+
+## Umgekehrte Konvertierung (Numerisch zu TIME)
+Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
+
+Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+*   **Beispiel:** `500 * T#1ms = T#500ms`
+*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
 ## Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen ist dieser speziell auf die Umwandlung von TIME in LREAL ausgelegt und bietet daher eine einfache und direkte Lösung für diesen Anwendungsfall.

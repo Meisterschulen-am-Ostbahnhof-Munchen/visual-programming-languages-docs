@@ -1,5 +1,8 @@
 # F_SUB_DT_DT
 
+```{index} single: F_SUB_DT_DT
+```
+
 ![F_SUB_DT_DT](https://github.com/user-attachments/assets/45767e49-775c-4efc-8b6e-28967afab782)
 
 * * * * * * * * * *
@@ -39,10 +42,10 @@ Der **F_SUB_DT_DT** ist ein standardkonformer Funktionsbaustein zur präzisen Be
 
 ## Technische Besonderheiten
 
-✔ **Mikrosekundengenauigkeit**  
-✔ **Zeitzonen-unabhängige Berechnung** (UTC-Basis)  
-✔ **Volle Kalenderarithmetik** (Schaltsekunden, Monatslängen)  
-✔ **Plattformübergreifende Konsistenz**  
+✔ **Mikrosekundengenauigkeit**
+✔ **Zeitzonen-unabhängige Berechnung** (UTC-Basis)
+✔ **Volle Kalenderarithmetik** (Schaltsekunden, Monatslängen)
+✔ **Plattformübergreifende Konsistenz**
 
 ## Anwendungsszenarien
 

@@ -1,7 +1,4 @@
 # Das erste Projekt
 
-```{toctree}
-Video
-4DiacneuesProjektanlegen
-SteuerungBohrmaschinenschaltererstellen
+```{index} single: Das erste Projekt
 ```

@@ -1,35 +1,9 @@
 # events
 
-```{toctree}
-ARTimeOut
-ATimeOut
-E_CTD
-E_CTU
-E_CTUD
-E_CTUD_UDINT
-E_CYCLE
-E_D_FF
-E_DELAY
-E_DEMUX
-E_F_TRIG
-E_MERGE
-E_N_TABLE
-E_PERMIT
-E_R_TRIG
-E_RDELAY
-E_REND
-E_RESTART
-E_RS
-E_RTimeOut
-E_SELECT
-E_SPLIT
-E_SR
-E_SWITCH
-E_T_FF
-E_T_FF_SR
-E_TABLE
-E_TABLE_CTRL
-E_TimeOut
-E_TRAIN
-timer/timer
+## 🎧 Podcast
+
+* [Taster & Events: GPIO-Grundlagen für Land- und Baumaschinen Mechatroniker](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Taster--Events-GPIO-Grundlagen-fr-Land--und-Baumaschinen-Mechatroniker-e36aaen)
+
+---- 
+```{index} single: events
 ```

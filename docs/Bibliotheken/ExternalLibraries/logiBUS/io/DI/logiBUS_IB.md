@@ -1,5 +1,8 @@
 # logiBUS_IB
 
+```{index} single: logiBUS_IB
+```
+
 <img width="1903" height="313" alt="image" src="https://github.com/user-attachments/assets/56357e8e-ea36-427f-8c9a-3e990b8f634c" />
 
 * * * * * * * * * *

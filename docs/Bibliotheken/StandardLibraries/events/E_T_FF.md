@@ -1,111 +1,55 @@
-# E\_T\_FF
+# E_T_FF
 
-Toggle flip flop
+```{index} single: E_T_FF
+```
+## 🎧 Podcast
 
-IEC 61499-1 Annex A
+* [Der E_T_FF in IEC 61499: Modulares Kippen für die Industrie 4.0](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_T_FF-in-IEC-61499-Modulares-Kippen-fr-die-Industrie-4-0-e3674m7)
+* [Der E_T_FF_SR-Baustein: Herzstück der IEC 61499 – Speichern, Umschalten, Reagieren](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_T_FF_SR-Baustein-Herzstck-der-IEC-61499--Speichern--Umschalten--Reagieren-e3682dm)
+* [Unpacking E_T_FF_SR: The Secret Toggle Switch of Industrial Control Systems](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Unpacking-E_T_FF_SR-The-Secret-Toggle-Switch-of-Industrial-Control-Systems-e367ntv)
 
-![](https://user-images.githubusercontent.com/69573151/200578501-6ff6cc82-30c8-40a2-9a74-17fd320520ea.png)
+## Einleitung
+Der `E_T_FF` (Event-driven Toggle Flip-Flop) ist ein ereignisgesteuerter Kippschalter, der seinen Zustand (`Q`) bei jedem eingehenden Taktereignis (`CLK`) wechselt. Er ist das digitale Äquivalent eines "Stromstoßschalters" (Stromstoßrelais), bei dem ein kurzer Impuls den Zustand dauerhaft ändert.
 
-*   Input
-    *   CLK Clock for triggering a output toggle
-*   Output
-    *   EO inform of toggled output
-    *   Q value of flip flop
+## Schnittstellenstruktur
 
-das Toggle flip flop stellt einen "Stromstoßschalter" dar. 
+### **Ereignis-Eingänge:**
+- **CLK (Clock)**: Das Taktereignis, das den Zustand von `Q` umschaltet.
 
-[https://de.wikipedia.org/wiki/Stromsto%C3%9Fschalter](https://de.wikipedia.org/wiki/Stromsto%C3%9Fschalter)
+### **Ereignis-Ausgänge:**
+- **EO (Event Output)**: Wird ausgelöst, wenn sich der Zustand von `Q` ändert.
+    - **Verbundene Daten**: `Q`
 
-## E\_T\_FF Anwendungen
+### **Daten-Ausgänge:**
+- **Q**: Der aktuelle Zustand des Flip-Flops (Datentyp: `BOOL`).
 
-### E\_T\_FF Anwendungen Taster
+## Funktionsweise
+Der `E_T_FF`-Baustein ist ein einfacher Toggle Flip-Flop:
+1.  **Zustandswechsel**: Bei jedem eingehenden `CLK`-Ereignis ändert der Ausgang `Q` seinen Zustand: War `Q` `TRUE`, wird es `FALSE`, und war `Q` `FALSE`, wird es `TRUE`.
+2.  **Ereignisauslösung**: Jede Zustandsänderung von `Q` löst das `EO`-Ereignis aus.
 
-mit einem E\_T\_FF lässt sich so ein Taster realisieren, der eine Lampe ein und ausschaltet:
+## Technische Besonderheiten
+- **Stromstoßschalter-Analogie**: Der Baustein verhält sich wie ein Stromstoßschalter: Ein kurzer Impuls (`CLK`) schaltet das Licht (`Q`) ein, der nächste Impuls schaltet es aus.
+- **Speicherfunktion**: `Q` speichert den letzten Zustand des Flip-Flops.
+- **Zustandslos zwischen Takten**: Änderungen am `CLK`-Eingang beeinflussen `Q` nur zum Zeitpunkt des Ereignisses.
 
-mapping:
+## Anwendungsbeispiele
 
-![](https://user-images.githubusercontent.com/69573151/200582493-3b7830e9-6c99-48c8-8edb-3c51c2ec61f1.png)
+### Taster für eine Lampe
+Mit einem `E_T_FF` lässt sich eine Taster-Logik für eine Lampe realisieren:
+- **Konzept**: Ein Taster erzeugt ein `CLK`-Ereignis. Jedes Drücken schaltet die Lampe (`Q`) ein oder aus.
+- **Grafische Darstellung**:
+    - Mapping: ![E_T_FF Anwendung Taster Mapping](https://user-images.githubusercontent.com/69573151/200582493-3b7830e9-6c99-48c8-8edb-3c51c2ec61f1.png)
+    - Applikation: ![E_T_FF Anwendung Taster App](https://user-images.githubusercontent.com/69573151/200582537-03463197-4460-447e-b246-f11bafed81d3.png)
+    - Embedded Ressource: ![E_T_FF Anwendung Taster EMB_RES](https://user-images.githubusercontent.com/69573151/200582652-15139148-a200-49fb-a683-93e341eab607.png)
 
-App:
+### Blinker
+Durch Rückkopplung mit einem Zeitgeber lässt sich ein Blinker realisieren:
+- **Konzept**: Das `EO`-Ereignis des `E_T_FF` startet einen `E_DELAY`, dessen `EO` wiederum als `CLK` für den `E_T_FF` dient. Dies erzeugt einen periodischen Zustandswechsel.
+- **Grafische Darstellung**:
+    - Mapping: ![E_T_FF Anwendung Blinker Mapping](https://user-images.githubusercontent.com/69573151/200581547-83f78279-e1a1-4748-8240-8755630638a9.png)
+    - Applikation: ![E_T_FF Anwendung Blinker App](https://user-images.githubusercontent.com/69573151/200581603-62aadee2-2a3a-4562-994f-51475817da3b.png)
+    - Embedded Ressource: ![E_T_FF Anwendung Blinker EMB_RES](https://user-images.githubusercontent.com/69573151/200581674-613cabbc-86a6-45b7-ad57-a9c16bd6262d.png)
 
-![](https://user-images.githubusercontent.com/69573151/200582537-03463197-4460-447e-b246-f11bafed81d3.png)
-
-EMB\_RES:
-
-![](https://user-images.githubusercontent.com/69573151/200582652-15139148-a200-49fb-a683-93e341eab607.png)
-
-### E\_T\_FF Anwendungen Blinker
-
-mit einem E\_T\_FF lässt sich so ein Blinker realisieren:
-
-mapping:
-
-![](https://user-images.githubusercontent.com/69573151/200581547-83f78279-e1a1-4748-8240-8755630638a9.png)
-
-App:
-
-![](https://user-images.githubusercontent.com/69573151/200581603-62aadee2-2a3a-4562-994f-51475817da3b.png)
-
-EMB\_RES:
-
-![](https://user-images.githubusercontent.com/69573151/200581674-613cabbc-86a6-45b7-ad57-a9c16bd6262d.png)
-
-
-
-
-* * * * * * * * * *
-
-Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
-
-
-**Der Baustein E_T_FF in der IEC 61499: Eine korrigierte Einführung**
-
-Die IEC 61499 ist ein internationaler Standard, der sich mit der Funktionsbausteinmodellierung für industrielle Automatisierungssysteme beschäftigt. Sie bietet einen Rahmen für die Entwicklung von verteilten Steuerungssystemen, die flexibel, modular und wiederverwendbar sind. Ein zentrales Element in diesem Standard sind die Funktionsbausteine, die als grundlegende Komponenten für die Implementierung von Steuerungslogik dienen. Einer dieser Bausteine ist der E_T_FF (Event-Triggered Flip-Flop), der in diesem Aufsatz näher betrachtet werden soll.
-
-## 1. Grundlagen des E_T_FF
-
-Der E_T_FF ist ein ereignisgesteuerter Flip-Flop-Baustein, der in der IEC 61499 verwendet wird, um Zustandsänderungen in einem System zu verwalten. Ein Flip-Flop ist ein grundlegendes Element der digitalen Logik, das zwei stabile Zustände hat und als Speicherbaustein verwendet werden kann. Der E_T_FF erweitert dieses Konzept um die ereignisgesteuerte Funktionalität, die in der IEC 61499 von zentraler Bedeutung ist.
-
-## 2. Funktionsweise des E_T_FF
-
-Der E_T_FF hat einen Ereigniseingang (CLK), der eine Zustandsänderung auslöst. Der Baustein hat zwei Ausgänge: einen Datenausgang (Q) vom Typ BOOL und einen Ereignisausgang (EO). Der Datenausgang gibt den aktuellen Zustand des Flip-Flops wieder, während der Ereignisausgang ein Ereignis signalisiert, wenn sich der Zustand ändert.
-
-Die Funktionsweise des E_T_FF kann wie folgt beschrieben werden:
-
-- **Ereignisgesteuerte Zustandsänderung:** Wenn ein Ereignis am Ereigniseingang (CLK) eintrifft, wird der Zustand des Flip-Flops umgeschaltet. Der aktuelle Zustand wird am Datenausgang (Q) ausgegeben. Wenn der Zustand des Flip-Flops von FALSE auf TRUE oder von TRUE auf FALSE wechselt, wird ein Ereignis am Ereignisausgang (EO) ausgelöst.
-
-- **Zustandsspeicherung:** Der E_T_FF speichert den aktuellen Zustand, bis ein neues Ereignis am Ereigniseingang eintrifft. Dies ermöglicht die Verwendung des Bausteins als Speicherelement in einer Steuerungslogik.
-
-- **Ereignisausgang:** Wenn sich der Zustand des Flip-Flops ändert, wird ein Ereignis am Ereignisausgang (EO) ausgelöst. Dieses Ereignis kann verwendet werden, um nachgelagerte Bausteine zu aktivieren oder andere Aktionen im System auszulösen.
-
-## 3. Anwendungsbeispiele
-
-Der E_T_FF kann in verschiedenen Anwendungen eingesetzt werden, bei denen es darum geht, Zustände zu speichern und ereignisgesteuert zu ändern. Einige Beispiele sind:
-
-- **Zustandsmaschinen:** In Zustandsmaschinen kann der E_T_FF verwendet werden, um den aktuellen Zustand der Maschine zu speichern und bei Bedarf zu ändern. Jeder Zustand kann durch einen E_T_FF repräsentiert werden, und die Übergänge zwischen den Zuständen können durch Ereignisse gesteuert werden.
-
-- **Speicherung von Schaltzuständen:** In Steuerungssystemen, bei denen Schaltzustände (z.B. Ein/Aus) gespeichert werden müssen, kann der E_T_FF als Speicherelement verwendet werden. Der Zustand des Flip-Flops kann durch ein Ereignis geändert werden, das z.B. durch einen Taster oder einen Sensor ausgelöst wird.
-
-- **Synchronisation von Prozessen:** Der E_T_FF kann auch zur Synchronisation von Prozessen verwendet werden. Wenn ein Prozess einen bestimmten Zustand erreicht hat, kann ein Ereignis ausgelöst werden, das andere Prozesse aktiviert oder deaktiviert.
-
-## 4. Vorteile des E_T_FF in der IEC 61499
-
-Die Verwendung des E_T_FF in der IEC 61499 bietet mehrere Vorteile:
-
-- **Ereignisgesteuerte Architektur:** Die ereignisgesteuerte Architektur der IEC 61499 ermöglicht eine effiziente und flexible Steuerungslogik. Der E_T_FF passt perfekt in dieses Konzept, da er Zustandsänderungen basierend auf Ereignissen verwaltet.
-
-- **Modularität und Wiederverwendbarkeit:** Wie alle Bausteine in der IEC 61499 ist der E_T_FF modular und wiederverwendbar. Er kann in verschiedenen Anwendungen und Systemen eingesetzt werden, ohne dass Änderungen am Baustein selbst vorgenommen werden müssen.
-
-- **Einfache Integration:** Der E_T_FF kann einfach in bestehende Steuerungslogiken integriert werden. Durch die klare Trennung von Ereignis- und Datenfluss ist die Integration in komplexe Systeme unkompliziert.
-
-## 5. Fazit
-
-Der E_T_FF ist ein wichtiger Baustein in der IEC 61499, der es ermöglicht, Zustände in einer ereignisgesteuerten Architektur zu speichern und zu verwalten. Seine einfache Funktionsweise und die klare Trennung von Ereignis- und Datenfluss machen ihn zu einem vielseitigen Werkzeug in der industriellen Automatisierung. Durch die Verwendung des E_T_FF können Entwickler flexible, modulare und wiederverwendbare Steuerungssysteme erstellen, die den Anforderungen moderner Automatisierungsanwendungen gerecht werden.
-
-Die IEC 61499 und Bausteine wie der E_T_FF tragen dazu bei, die Komplexität von Steuerungssystemen zu reduzieren und gleichzeitig die Flexibilität und Effizienz zu erhöhen. In einer zunehmend vernetzten und automatisierten Welt sind solche Standards und Bausteine unverzichtbar, um die Herausforderungen der Industrie 4.0 zu meistern.
-
-
-
-
-
-Siehe auch: [https://www.holobloc.com/doc/fb/rt/events/E_T_FF.htm](https://www.holobloc.com/doc/fb/rt/events/E_T_FF.htm)
+## Fazit
+Der `E_T_FF`-Baustein ist ein einfacher, aber äußerst vielseitiger Speicherbaustein. Seine "Stromstoßschalter"-Funktion ist fundamental für die Implementierung von Taster-Logiken, Blinkern und anderen bistabilen Steuerungen in IEC 61499-Anwendungen.

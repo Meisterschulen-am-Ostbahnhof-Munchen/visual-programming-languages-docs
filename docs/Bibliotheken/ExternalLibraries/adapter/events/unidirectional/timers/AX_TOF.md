@@ -1,10 +1,15 @@
 # AX_TOF
 
+```{index} single: AX_TOF
+```
+
 <img width="962" height="255" alt="image" src="https://github.com/user-attachments/assets/b86d8399-ca0b-492c-b20c-52dde7069371" />
 
 * * * * * * * * * *
 
 ## Einleitung
+**Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
+
 Der AX_TOF Funktionsblock ist ein standardmäßiger Timer-Baustein für Ausschaltverzögerungen (Off-Delay Timing). Er realisiert eine Zeitverzögerung beim Abschalten eines Signals und wird über Adapter-Schnittstellen angesteuert.
 
 ## Schnittstellenstruktur

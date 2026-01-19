@@ -1,5 +1,8 @@
 # F_TIME_IN_NS_TO_UDINT
 
+```{index} single: F_TIME_IN_NS_TO_UDINT
+```
+
 <img width="1538" height="212" alt="F_TIME_IN_NS_TO_UDINT" src="https://github.com/user-attachments/assets/cd46fa62-6fda-4f4a-8e2f-92db543f9c19" />
 
 * * * * * * * * * *
@@ -40,6 +43,14 @@ Der Funktionsblock führt die Konvertierung durch, indem er den an `IN` anliegen
 - Umwandlung von Zeitstempeln für die Verwendung in numerischen Berechnungen.
 - Integration in Steuerungslogik, die Zeitwerte in einem numerischen Format verarbeiten muss.
 - Verwendung in Diagnosesystemen zur Darstellung von Zeitdauern in einem lesbaren Format.
+
+## Umgekehrte Konvertierung (Numerisch zu TIME)
+Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
+
+Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+*   **Beispiel:** `500 * T#1ms = T#500ms`
+*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
 ## Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsbausteinen ist dieser Funktionsblock speziell auf die Umwandlung von Zeitwerten in Nanosekunden optimiert.

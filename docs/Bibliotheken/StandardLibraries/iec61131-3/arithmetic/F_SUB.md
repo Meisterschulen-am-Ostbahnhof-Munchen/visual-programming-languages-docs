@@ -1,5 +1,8 @@
 # F_SUB
 
+```{index} single: F_SUB
+```
+
 ![F_SUB](https://user-images.githubusercontent.com/116869307/214143366-6c54d805-8807-48bd-b8fb-2ad08dd2f1b8.png)
 
 * * * * * * * * * *
@@ -42,10 +45,10 @@ Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numeri
 
 ## Technische Besonderheiten
 
-✔ **Typsichere Subtraktion** (ANY_MAGNITUDE-Unterstützung)  
-✔ **Automatische Typkonvertierung**  
-✔ **Unterlaufschutz**  
-✔ **Deterministische Ausführung**  
+✔ **Typsichere Subtraktion** (ANY_MAGNITUDE-Unterstützung)
+✔ **Automatische Typkonvertierung**
+✔ **Unterlaufschutz**
+✔ **Deterministische Ausführung**
 
 ## Anwendungsszenarien
 

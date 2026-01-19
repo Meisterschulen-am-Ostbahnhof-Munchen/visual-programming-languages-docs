@@ -1,5 +1,8 @@
 # TEST_CONDITION
 
+```{index} single: TEST_CONDITION
+```
+
 ![TEST_CONDITION](https://github.com/user-attachments/assets/4dae2b3c-d1d5-4286-a466-46948ad2a767)
 
 * * * * * * * * * *
@@ -15,7 +18,7 @@ Der Funktionsblock `TEST_CONDITION` dient zur Überprüfung einer Bedingung und 
 - **CNF**: Signalisiert den Abschluss der Überprüfung. Dieses Ereignis wird ausgelöst, nachdem die Bedingung ausgewertet wurde.
 
 ### **Daten-Eingänge**
-- **check**: Ein boolescher Wert (`BOOL`), der die zu überprüfende Bedingung darstellt. 
+- **check**: Ein boolescher Wert (`BOOL`), der die zu überprüfende Bedingung darstellt.
   - Wenn `check == TRUE`, gilt die Bedingung als erfüllt (Test bestanden).
   - Wenn `check == FALSE`, gilt die Bedingung als nicht erfüllt (Test nicht bestanden).
 

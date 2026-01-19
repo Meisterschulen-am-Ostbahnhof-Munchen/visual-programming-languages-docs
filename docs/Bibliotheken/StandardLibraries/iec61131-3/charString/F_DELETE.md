@@ -1,5 +1,8 @@
 # F_DELETE
 
+```{index} single: F_DELETE
+```
+
 <img width="1068" height="196" alt="F_DELETE" src="https://github.com/user-attachments/assets/bf84dd90-6f79-4860-924b-8bfa70fcafcc" />
 
 * * * * * * * * * *

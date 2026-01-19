@@ -1,5 +1,8 @@
 # EC_SET_EVT
 
+```{index} single: EC_SET_EVT
+```
+
 ![EC_SET_EVT](https://user-images.githubusercontent.com/116869307/214154604-e4081ae0-85d5-496e-a037-2b8bf39eba7d.png)
 
 * * * * * * * * * *
@@ -49,7 +52,7 @@ Der EC_SET_EVT Funktionsblock empfängt über das REQ-Ereignis eine Anfrage zum 
 
 Der Funktionsblock unterstützt mehrere Service-Sequenzen:
 - **normal_establishment**: Erfolgreiche Initialisierung
-- **unsuccessful_establishment**: Fehlgeschlagene Initialisierung  
+- **unsuccessful_establishment**: Fehlgeschlagene Initialisierung
 - **request_confirm**: Erfolgreiche Service-Ausführung
 - **request_inhibited**: Unterdrückte Service-Anfrage
 - **request_error**: Fehlerhafte Service-Ausführung

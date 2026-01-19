@@ -1,7 +1,9 @@
 # Eclipse 4diac™ Update
 
+```{index} single: Eclipse 4diac™ Update
+```
 
-Zuordnung GIT Branch zu Download: 
+Zuordnung GIT Branch zu Download:
 
 | Git     | Git Link                                                        | Download  | Download Link                                                |
 |---------|-----------------------------------------------------------------|-----------|--------------------------------------------------------------|
@@ -10,17 +12,13 @@ Zuordnung GIT Branch zu Download:
 | 3.0.x   | [link](https://github.com/eclipse-4diac/4diac-ide/tree/3.0.x)   | RC        | [link](https://download.eclipse.org/4diac/updates/rc)        |
 | release | [link](https://github.com/eclipse-4diac/4diac-ide/tree/release) | latest    | [link](https://download.eclipse.org/4diac/updates/latest)    |
 
-
-
-
 NEU:
 
-seit einiger Zeit finden sich auf allen Update-Seiten unten auch Links mit denen ein komplettes "sauberes" Paket heruntergeladen werden kann. 
+seit einiger Zeit finden sich auf allen Update-Seiten unten auch Links mit denen ein komplettes "sauberes" Paket heruntergeladen werden kann.
 
-Die Links werden teils jede Nacht neu generiert, und sind auch manchmal nicht vorhanden ... das ist normal. 
+Die Links werden teils jede Nacht neu generiert, und sind auch manchmal nicht vorhanden ... das ist normal.
 
 Direktlinks
-
 
 | Betriebsystem               | rc                                                                                                            | milestone                                                                                                     | nightly                                                                                                                          |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
@@ -32,9 +30,7 @@ Direktlinks
 | macosx.cocoa.x86_64.dmg     | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)                 | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)          | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)                               |
 | macosx.cocoa.x86_64.tar.gz  | [link](https://download.eclipse.org/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)              | [link](https://download.eclipse.org/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)       | [link](https://download.eclipse.org/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)                            |
 
-
 Links mit Mirrors
-
 
 | Betriebsystem               | rc                                                                                                                                    | milestone                                                                                                                             | nightly                                                                                                                                                  |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,8 +41,6 @@ Links mit Mirrors
 | macosx.cocoa.aarch64.tar.gz | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.aarch64.tar.gz)             | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.aarch64.tar.gz)      | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.aarch64.tar.gz)                           |
 | macosx.cocoa.x86_64.dmg     | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)                 | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)          | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.x86_64.dmg)                               |
 | macosx.cocoa.x86_64.tar.gz  | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/rc/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)              | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/milestone/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)       | [link](https://www.eclipse.org/downloads/download.php?file=/4diac/updates/nightly/4diac-ide_3.0.0-macosx.cocoa.x86_64.tar.gz)                            |
-
-
 
 ## Update
 
@@ -106,9 +100,9 @@ Update URLs (Uniform Resource Locators) sind Webadressen, die auf einen bestimmt
 
 ### Release
 
-Eine Release Update URL (Uniform Resource Locator) ist eine Webadresse, die auf die neuesten Versionen einer Software oder Erweiterungen verweist, die als offizielle Veröffentlichungen (Releases) betrachtet werden. Im Falle von 4diac, stellt die Release Update URL die neueste stabile Version der 4diac-Software und Erweiterungen zur Verfügung, die von der 4diac-Entwicklergemeinschaft getestet und freigegeben wurden. Benutzer von 4diac können diese URL verwenden, um ihre Installationen von 4diac auf die neueste offizielle Version zu aktualisieren, indem sie die neuesten Updates herunterladen und installieren.  
+Eine Release Update URL (Uniform Resource Locator) ist eine Webadresse, die auf die neuesten Versionen einer Software oder Erweiterungen verweist, die als offizielle Veröffentlichungen (Releases) betrachtet werden. Im Falle von 4diac, stellt die Release Update URL die neueste stabile Version der 4diac-Software und Erweiterungen zur Verfügung, die von der 4diac-Entwicklergemeinschaft getestet und freigegeben wurden. Benutzer von 4diac können diese URL verwenden, um ihre Installationen von 4diac auf die neueste offizielle Version zu aktualisieren, indem sie die neuesten Updates herunterladen und installieren.
 
-#### Eclipse 4diac Latest  
+#### Eclipse 4diac Latest
 [https://download.eclipse.org/4diac/updates/latest/](https://download.eclipse.org/4diac/updates/latest/)
 
 ### Release Candidate
@@ -119,7 +113,7 @@ Benutzer von 4diac können diese URLs verwenden, um die neueste RC-Version von 4
 
 Es ist jedoch zu beachten, dass Release-Kandidat-Updates möglicherweise nicht so stabil sind wie die offiziellen Versionen und daher für Produktionsumgebungen nicht empfohlen werden.
 
-#### Eclipse 4diac Release Candidate  
+#### Eclipse 4diac Release Candidate
 [https://download.eclipse.org/4diac/updates/rc/](https://download.eclipse.org/4diac/updates/rc/)
 
 ### Milestone
@@ -128,7 +122,7 @@ Eclipse 4diac ist eine open-source Plattform für die Entwicklung von Industrie 
 
 Ein Eclipse 4diac Milestone Build ist somit eine Zwischenversion der Eclipse 4diac-Plattform, die verschiedene neue Funktionen, Verbesserungen und Fehlerkorrekturen gegenüber der vorherigen stabilen Version enthält, aber auch noch nicht vollständig getestet wurde und daher möglicherweise noch einige Fehler enthält. Diese Versionen werden normalerweise an Entwickler und interessierte Anwender verteilt, um Feedback zu sammeln und bei der weiteren Entwicklung der Plattform zu unterstützen.
 
-#### Eclipse 4diac Milestone  
+#### Eclipse 4diac Milestone
 [https://download.eclipse.org/4diac/updates/milestone/](https://download.eclipse.org/4diac/updates/milestone/)
 
 ### Nightly Build

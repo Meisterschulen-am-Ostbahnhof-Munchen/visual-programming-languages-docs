@@ -1,5 +1,8 @@
 # F_WSTRING_AS_WORD
 
+```{index} single: F_WSTRING_AS_WORD
+```
+
 <img width="1482" height="214" alt="F_WSTRING_AS_WORD" src="https://github.com/user-attachments/assets/a3b2eb5b-24e3-4685-bc76-b8864d468811" />
 
 * * * * * * * * * *

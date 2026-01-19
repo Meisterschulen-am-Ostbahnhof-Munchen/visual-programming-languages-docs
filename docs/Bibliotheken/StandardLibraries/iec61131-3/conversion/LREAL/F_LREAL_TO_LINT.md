@@ -1,5 +1,8 @@
 # F_LREAL_TO_LINT
 
+```{index} single: F_LREAL_TO_LINT
+```
+
 <img width="1447" height="214" alt="F_LREAL_TO_LINT" src="https://github.com/user-attachments/assets/e03961d0-f79d-4f0f-b085-02a7f2c18bc2" />
 
 * * * * * * * * * *

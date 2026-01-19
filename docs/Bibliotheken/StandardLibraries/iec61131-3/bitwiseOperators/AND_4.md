@@ -1,5 +1,8 @@
 # AND_4
 
+```{index} single: AND_4
+```
+
 ![AND_4](https://user-images.githubusercontent.com/116869307/214143907-734625fe-6ca3-48ce-b30e-ae7b7edfc288.png)
 
 * * * * * * * * * *
@@ -17,7 +20,7 @@ Der AND_4 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweis
 
 ### **Daten-Eingänge**
 - **IN1**: AND-Eingang 1 (ANY_BIT Datentyp)
-- **IN2**: AND-Eingang 2 (ANY_BIT Datentyp) 
+- **IN2**: AND-Eingang 2 (ANY_BIT Datentyp)
 - **IN3**: AND-Eingang 3 (ANY_BIT Datentyp)
 - **IN4**: AND-Eingang 4 (ANY_BIT Datentyp)
 

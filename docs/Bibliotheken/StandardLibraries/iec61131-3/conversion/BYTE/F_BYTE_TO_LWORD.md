@@ -1,5 +1,8 @@
 # F_BYTE_TO_LWORD
 
+```{index} single: F_BYTE_TO_LWORD
+```
+
 <img width="1245" height="182" alt="F_BYTE_TO_LWORD" src="https://github.com/user-attachments/assets/c56c9f09-1174-475c-ad6f-123ba7f3aa49" />
 
 * * * * * * * * * *

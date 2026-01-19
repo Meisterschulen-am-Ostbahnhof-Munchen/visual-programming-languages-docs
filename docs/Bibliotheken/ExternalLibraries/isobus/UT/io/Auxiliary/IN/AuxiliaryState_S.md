@@ -1,5 +1,8 @@
 # AuxiliaryState_S
 
+```{index} single: AuxiliaryState_S
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `AuxiliaryState_S` ist eine strukturierte Datenstruktur (Struct), die den Zustand eines Hilfseingangs (Auxiliary Input) repräsentiert. Er wird im Kontext der ISOBUS-Schnittstelle (ISO 11783) für die Kommunikation in landwirtschaftlichen und forstwirtschaftlichen Maschinen verwendet. Dieser Datentyp kapselt sowohl den eigentlichen Wert des Eingangs als auch eine Steuerinformation für dessen zyklische Übertragung.

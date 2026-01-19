@@ -1,5 +1,8 @@
 # AND_6
 
+```{index} single: AND_6
+```
+
 ![AND_6](https://user-images.githubusercontent.com/116869307/214143980-5f9fcd38-c66e-4627-9ad6-6695d954dd53.png)
 
 * * * * * * * * * *
@@ -16,7 +19,7 @@ Der AND_6 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweis
 
 ### **Daten-Eingänge**
 - **IN1** (ANY_BIT): UND-Eingang 1
-- **IN2** (ANY_BIT): UND-Eingang 2  
+- **IN2** (ANY_BIT): UND-Eingang 2
 - **IN3** (ANY_BIT): UND-Eingang 3
 - **IN4** (ANY_BIT): UND-Eingang 4
 - **IN5** (ANY_BIT): UND-Eingang 5

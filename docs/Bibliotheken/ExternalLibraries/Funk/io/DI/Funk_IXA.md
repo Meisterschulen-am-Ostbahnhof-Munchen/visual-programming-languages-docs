@@ -1,5 +1,8 @@
 # Funk_IXA
 
+```{index} single: Funk_IXA
+```
+
 <img width="1725" height="316" alt="image" src="https://github.com/user-attachments/assets/18811a6e-8efc-454f-b9ec-ea728163a624" />
 
 * * * * * * * * * *

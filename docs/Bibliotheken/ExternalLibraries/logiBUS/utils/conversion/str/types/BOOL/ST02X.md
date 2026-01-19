@@ -1,5 +1,8 @@
 # ST02X
 
+```{index} single: ST02X
+```
+
 *(Kein Bild verfügbar für diesen Datentyp.)*
 
 * * * * * * * * * *

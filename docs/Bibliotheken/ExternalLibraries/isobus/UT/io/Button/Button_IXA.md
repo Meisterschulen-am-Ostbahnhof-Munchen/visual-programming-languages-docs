@@ -1,5 +1,8 @@
 # Button_IXA
 
+```{index} single: Button_IXA
+```
+
 <img width="1388" height="321" alt="image" src="https://github.com/user-attachments/assets/8f014f19-717a-4392-9d65-ba1fe63e1a6e" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # F_BOOL_TO_SINT
 
+```{index} single: F_BOOL_TO_SINT
+```
+
 <img width="1231" height="184" alt="F_BOOL_TO_SINT" src="https://github.com/user-attachments/assets/f88ef12a-b389-4669-b68c-8527d08d1d6e" />
 
 * * * * * * * * * *

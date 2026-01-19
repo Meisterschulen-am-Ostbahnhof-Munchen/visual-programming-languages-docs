@@ -1,5 +1,8 @@
 # FB_RS
 
+```{index} single: FB_RS
+```
+
 <img width="1308" height="242" alt="FB_RS" src="https://github.com/user-attachments/assets/ff0ca1ab-bc02-459b-bbda-2ef4f8aa880b" />
 
 * * * * * * * * * *

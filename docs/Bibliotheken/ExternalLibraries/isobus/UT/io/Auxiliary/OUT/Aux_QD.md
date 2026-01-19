@@ -1,5 +1,8 @@
 # Aux_QD
 
+```{index} single: Aux_QD
+```
+
 <img width="1484" height="176" alt="image" src="https://github.com/user-attachments/assets/ddafadb6-6b79-43d3-9d30-dc888d6fca95" />
 
 * * * * * * * * * *

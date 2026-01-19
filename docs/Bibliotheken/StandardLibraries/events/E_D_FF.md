@@ -1,5 +1,9 @@
 # E_D_FF
 
+---- 
+```{index} single: E_D_FF
+```
+
 ![E_D_FF Diagram](https://user-images.githubusercontent.com/113907528/204898130-f9f31fd9-da42-4b29-a664-add0d91e8890.png)
 
 * * * * * * * * * *
@@ -12,14 +16,18 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 ### Schnittstelle (Interface)
 
 **Ereignis-Eingänge:**
-- `CLK` (Clock): Taktsignal für die synchrone Datenspeicherung
-- `D`: Dateneingang (zu speichernder Wert)
+- `CLK` (Clock): Taktereignis, das die Übernahme des Daten-Eingangs `D` auslöst.
+    - **Verbundene Daten**: `D`
 
 **Ereignis-Ausgänge:**
-- `EO` (Event Output): Wird bei jeder Änderung des gespeicherten Werts ausgelöst
+- `EO` (Event Output): Wird ausgelöst, wenn der `CLK`-Impuls zu einer Änderung des Ausgangs `Q` führt.
+    - **Verbundene Daten**: `Q`
+
+**Daten-Eingänge:**
+- `D`: Der zu speichernde Datenwert (Datentyp: `BOOL`).
 
 **Daten-Ausgänge:**
-- `Q`: Aktuell gespeicherter Wert (BOOL)
+- `Q`: Der aktuell gespeicherte Wert (Datentyp: `BOOL`).
 
 ## Funktionsweise
 
@@ -33,10 +41,10 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 
 ## Technische Besonderheiten
 
-✔ **Taktgesteuerte Speicherung** für synchrone Systeme  
-✔ **Ereignisausgang** für Änderungsdetektion  
-✔ **Deterministisches Verhalten** in Echtzeitsystemen  
-✔ **Einfache Integration** in IEC 61499-Applikationen  
+✔ **Taktgesteuerte Speicherung** für synchrone Systeme
+✔ **Ereignisausgang** für Änderungsdetektion
+✔ **Deterministisches Verhalten** in Echtzeitsystemen
+✔ **Einfache Integration** in IEC 61499-Applikationen
 
 ## Anwendungsszenarien
 

@@ -1,5 +1,8 @@
 # F_TIME_IN_S_TO_ULINT
 
+```{index} single: F_TIME_IN_S_TO_ULINT
+```
+
 <img width="1520" height="212" alt="F_TIME_IN_S_TO_ULINT" src="https://github.com/user-attachments/assets/60c0a628-bf00-4bf4-b81c-1397cad4dd61" />
 
 * * * * * * * * * *
@@ -35,6 +38,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 ## Anwendungsszenarien
 - Umwandlung von Zeitwerten für die Verwendung in numerischen Berechnungen.
 - Integration in Steuerungssysteme, die Zeitwerte in numerischer Form verarbeiten müssen.
+
+## Umgekehrte Konvertierung (Numerisch zu TIME)
+Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
+
+Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+*   **Beispiel:** `500 * T#1ms = T#500ms`
+*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
 ## Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsblöcken ist dieser FB spezialisiert auf die Umwandlung von TIME in ULINT.

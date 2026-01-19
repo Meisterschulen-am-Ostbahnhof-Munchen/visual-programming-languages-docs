@@ -1,5 +1,8 @@
 # ADD_2
 
+```{index} single: ADD_2
+```
+
 ![ADD_2](https://user-images.githubusercontent.com/116869307/214142966-3facb074-7909-40e0-a9c9-4588e1bfc938.png)
 
 * * * * * * * * * *
@@ -37,10 +40,10 @@ Der **ADD_2** ist ein generischer Funktionsbaustein zur Addition zweier Werte, e
 
 ## Technische Besonderheiten
 
-✔ **Generische Implementierung** (GEN_ADD)  
-✔ **Typflexible** Eingänge/Ausgänge  
-✔ **IEC 61131-3 konform**  
-✔ **Deterministische** Berechnung  
+✔ **Generische Implementierung** (GEN_ADD)
+✔ **Typflexible** Eingänge/Ausgänge
+✔ **IEC 61131-3 konform**
+✔ **Deterministische** Berechnung
 
 ## Unterstützte Datentypen
 

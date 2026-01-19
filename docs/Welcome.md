@@ -1,4 +1,7 @@
-# Welcome 
+# Welcome
+
+```{index} single: Welcome
+```
 
 **Welcome to the visual-programming-languages wiki!**
 
@@ -9,4 +12,3 @@ hier lang:
 
 ```{image} img/powerdby4diac_large_light.png
 ```
-

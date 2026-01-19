@@ -1,5 +1,8 @@
 # Q_ChildLocation
 
+```{index} single: Q_ChildLocation
+```
+
 ![Q_ChildLocation](https://user-images.githubusercontent.com/116869307/214147140-820ec964-b57a-499c-9e0d-1811b56a585c.png)
 
 * * * * * * * * * *
@@ -46,10 +49,10 @@ Der **Q_ChildLocation** ist ein standardkonformer Funktionsbaustein zur Position
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.14)  
-✔ **Relative Positionsänderung** (relativ zum Parent)  
-✔ **Signed 8-bit Werte** (-128 bis +127)  
-✔ **Echtzeitfähige** Verarbeitung  
+✔ **ISO 11783-6 konform** (F.14)
+✔ **Relative Positionsänderung** (relativ zum Parent)
+✔ **Signed 8-bit Werte** (-128 bis +127)
+✔ **Echtzeitfähige** Verarbeitung
 
 ## Positionsänderungsbereich
 

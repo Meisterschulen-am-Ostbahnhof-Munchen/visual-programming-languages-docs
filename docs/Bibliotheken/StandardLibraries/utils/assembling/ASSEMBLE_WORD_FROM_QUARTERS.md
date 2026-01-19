@@ -1,5 +1,13 @@
 # ASSEMBLE_WORD_FROM_QUARTERS
 
+## 🎧 Podcast
+
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
+---- 
+```{index} single: ASSEMBLE_WORD_FROM_QUARTERS
+```
+
 ![ASSEMBLE_WORD_FROM_QUARTERS](https://github.com/user-attachments/assets/6677028d-5ee1-4e7f-80d6-df3177ab9181)
 
 * * * * * * * * * *

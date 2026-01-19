@@ -1,5 +1,8 @@
 # CommunicationPartners
 
+```{index} single: CommunicationPartners
+```
+
 * * * * * * * * * *
 ## Einleitung
 `CommunicationPartners` ist ein globaler Konstanten-Datensatz, der im Kontext der ISOBUS PGN-Kommunikation (Parameter Group Number) verwendet wird. Er dient dazu, einen vordefinierten Kommunikationspartner, in diesem Fall die globale Adresse, als konstante Konfiguration für andere Funktionsblöcke bereitzustellen. Dies vereinfacht die Konfiguration von ISOBUS-Netzwerkkomponenten, indem häufig benötigte Adressen zentral und wiederverwendbar definiert werden.

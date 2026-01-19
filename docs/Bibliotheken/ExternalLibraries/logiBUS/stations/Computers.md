@@ -1,6 +1,7 @@
 # Computers
 
-* * * * * * * * * *
+```{index} single: Computers
+```
 ## Einleitung
 Die Globalkonstanten `Computers` stellen eine Sammlung von vordefinierten Netzwerkadressen (IP-Adressen und Ports) als Zeichenketten (`WSTRING`) zur Verfügung. Sie dienen der zentralen Verwaltung von Verbindungsinformationen für verschiedene Rechner oder Stationen innerhalb eines logiBUS-Projekts. Durch die Verwendung dieser Konstanten wird die Wartbarkeit und Lesbarkeit des Codes verbessert, da Änderungen an Netzwerkadressen nur an einer zentralen Stelle vorgenommen werden müssen.
 

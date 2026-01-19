@@ -1,5 +1,8 @@
 # Q_GetAttribute
 
+```{index} single: Q_GetAttribute
+```
+
 ![Q_GetAttribute](https://user-images.githubusercontent.com/116869307/214147879-2749e8c2-364e-4335-9c0e-0445694831e4.png)
 
 * * * * * * * * * *
@@ -43,10 +46,10 @@ Der **Q_GetAttribute** ist ein standardkonformer Funktionsbaustein zum Abfragen 
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.58)  
-✔ **Exklusiv für VT Version 4+**  
-✔ **Universal einsetzbar** (Alle Objekttypen)  
-✔ **Echtzeitfähig** (Schnelle Abfragezyklen)  
+✔ **ISO 11783-6 konform** (F.58)
+✔ **Exklusiv für VT Version 4+**
+✔ **Universal einsetzbar** (Alle Objekttypen)
+✔ **Echtzeitfähig** (Schnelle Abfragezyklen)
 
 ## Attribut-Typen
 

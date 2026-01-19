@@ -1,5 +1,8 @@
 # F_CONCAT_DATE_TOD
 
+```{index} single: F_CONCAT_DATE_TOD
+```
+
 <img width="1388" height="208" alt="F_CONCAT_DATE_TOD" src="https://github.com/user-attachments/assets/7664ea18-4774-4f2d-b461-1b887d0a1c2a" />
 
 * * * * * * * * * *

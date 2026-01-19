@@ -1,5 +1,8 @@
 # F_INSERT
 
+```{index} single: F_INSERT
+```
+
 <img width="1330" height="232" alt="F_INSERT" src="https://github.com/user-attachments/assets/a4d23188-0238-4c4c-a6b8-f51a6a493b1c" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # logiBUS_IE2
 
+```{index} single: logiBUS_IE2
+```
+
 <img width="1746" height="283" alt="image" src="https://github.com/user-attachments/assets/ac2845b6-9709-446e-9377-bd61a000862d" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # Q_ESC
 
+```{index} single: Q_ESC
+```
+
 ![Q_ESC](https://user-images.githubusercontent.com/116869307/214147236-7b0ba071-871f-4b5c-8d15-5089ae7f07fc.png)
 
 * * * * * * * * * *
@@ -38,10 +41,10 @@ Der **Q_ESC** ist ein standardkonformer Funktionsbaustein zur Abbruchsteuerung i
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.8)  
-✔ **Universeller Abbruchbefehl**  
-✔ **Keine Konfiguration** erforderlich  
-✔ **Sofortige Wirkung** bei Ausführung  
+✔ **ISO 11783-6 konform** (F.8)
+✔ **Universeller Abbruchbefehl**
+✔ **Keine Konfiguration** erforderlich
+✔ **Sofortige Wirkung** bei Ausführung
 
 ## Typische Anwendungsfälle
 

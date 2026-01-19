@@ -1,5 +1,8 @@
 # AX_XOR_6
 
+```{index} single: AX_XOR_6
+```
+
 <img width="1009" height="398" alt="image" src="https://github.com/user-attachments/assets/73123b00-75a5-4eed-a5ab-368c0216fd0f" />
 
 * * * * * * * * * *
@@ -28,7 +31,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 
 **Socket-Adapter:**
 - **IN1** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 1
-- **IN2** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 2  
+- **IN2** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 2
 - **IN3** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 3
 - **IN4** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 4
 - **IN5** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 5

@@ -1,5 +1,8 @@
 # EC_STOP_ELEM
 
+```{index} single: EC_STOP_ELEM
+```
+
 ![EC_STOP_ELEM](https://user-images.githubusercontent.com/116869307/214154650-cf730975-2179-4eb9-8312-7affc7c95a31.png)
 
 * * * * * * * * * *
@@ -39,7 +42,7 @@ Der EC_STOP_ELEM Funktionsblock verarbeitet Stopp-Anforderungen für verschieden
 ## Zustandsübersicht
 Der Funktionsblock verfügt über mehrere Service-Sequenzen:
 - **normal_establishment**: Erfolgreiche Initialisierung
-- **unsuccessful_establishment**: Fehlgeschlagene Initialisierung  
+- **unsuccessful_establishment**: Fehlgeschlagene Initialisierung
 - **request_confirm**: Erfolgreiche Stopp-Anforderung
 - **request_inhibited**: Unterdrückte Stopp-Anforderung
 - **request_error**: Fehlerhafte Stopp-Anforderung

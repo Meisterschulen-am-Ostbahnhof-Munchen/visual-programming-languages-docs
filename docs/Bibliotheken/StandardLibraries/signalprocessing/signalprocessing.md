@@ -1,5 +1,8 @@
 # signalprocessing
 
+```{index} single: signalprocessing
+```
+
 ```{toctree}
 distance/distance
 DualHysteresis

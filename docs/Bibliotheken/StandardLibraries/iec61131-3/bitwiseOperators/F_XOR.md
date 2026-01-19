@@ -1,5 +1,8 @@
 # F_XOR
 
+```{index} single: F_XOR
+```
+
 <img width="1149" height="208" alt="F_XOR" src="https://github.com/user-attachments/assets/5f3451b6-8e0a-479b-9d80-1af4d73f9e69" />
 
 * * * * * * * * * *

@@ -1,5 +1,7 @@
 # 4Diac neues Projekt anlegen
 
+```{index} single: 4Diac neues Projekt anlegen
+```
 
 **Grundverständnis von 4Diac**
 
@@ -40,6 +42,6 @@
 
 ![](https://user-images.githubusercontent.com/113907476/212984600-42e91f6c-5baf-4c19-b352-ee5a0369f9e4.png)
 
-9\. Application Name mapping vergeben und mit Finish bestätigen. -> Application wurde angelegt. 
+9\. Application Name mapping vergeben und mit Finish bestätigen. -> Application wurde angelegt.
 
 Es kann mit dem mapping begonnen werden. Weiteres Vorgehen in File Neue Steuerung erstellen.

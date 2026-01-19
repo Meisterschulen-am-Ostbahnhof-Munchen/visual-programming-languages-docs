@@ -1,5 +1,13 @@
 # QUARTER_TO_E
 
+## 🎧 Podcast
+
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
+---- 
+```{index} single: QUARTER_TO_E
+```
+
 <img width="1487" height="288" alt="image" src="https://github.com/user-attachments/assets/b4e62664-7544-420c-a039-36905d34d735" />
 
 * * * * * * * * * *

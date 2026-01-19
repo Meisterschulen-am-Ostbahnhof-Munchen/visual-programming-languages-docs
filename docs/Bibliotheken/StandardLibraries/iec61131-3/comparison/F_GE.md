@@ -1,20 +1,15 @@
 # F_GE
 
-
-
-
+```{index} single: F_GE
+```
 
 ![F_GE](https://user-images.githubusercontent.com/116869307/214144421-cde348ba-0c9a-4bc9-b41f-5db5d97218b0.png)
 
-
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_ge.html>
-
-
 
 * * * * * * * * * *
 
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
-
 
 **Der GE-Operator in IEC 61499: Eine Einführung**
 
@@ -82,20 +77,3 @@ Hierbei sind `Eingang1` und `Eingang2` die beiden Werte, die verglichen werden s
 ### Fazit
 
 Der GE-Operator ist ein wichtiges Werkzeug in der IEC 61499, das die Implementierung von numerischen Vergleichen in industriellen Steuerungssystemen vereinfacht. Seine Fähigkeit, festzustellen, ob ein Wert größer oder gleich einem anderen Wert ist, macht ihn zu einem unverzichtbaren Bestandteil in der Prozessüberwachung, Regelung und Entscheidungsfindung. Ob in der Produktionssteuerung, Temperaturregelung oder Energieverbrauchsüberwachung – der GE-Operator ist ein leistungsstarkes und vielseitiges Element in der Welt der industriellen Automatisierung. Durch seine Einfachheit und Effizienz trägt er dazu bei, die Entwicklung von zuverlässigen und effektiven Steuerungssystemen zu unterstützen.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

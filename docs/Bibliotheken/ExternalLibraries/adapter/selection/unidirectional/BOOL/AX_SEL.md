@@ -1,5 +1,8 @@
 # AX_SEL
 
+```{index} single: AX_SEL
+```
+
 <img width="1242" height="224" alt="image" src="https://github.com/user-attachments/assets/70f03e26-14b2-40a3-9eff-056402fef00e" />
 
 * * * * * * * * * *

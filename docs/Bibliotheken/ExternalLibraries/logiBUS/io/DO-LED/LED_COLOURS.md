@@ -1,5 +1,8 @@
 # LED_COLOURS
 
+```{index} single: LED_COLOURS
+```
+
 * * * * * * * * * *
 ## Einleitung
 LED_COLOURS ist eine globale Konstantendefinition, die standardisierte Farbwerte für LED-Anzeigen bereitstellt. Diese Konstanten werden in logiBUS-Systemen zur einheitlichen Steuerung von farbigen LED-Ausgängen verwendet.
@@ -24,7 +27,7 @@ LED_COLOURS ist eine globale Konstantendefinition, die standardisierte Farbwerte
 LED_COLOURS definiert eine Sammlung globaler Konstanten vom Typ UINT (16-Bit vorzeichenlose Ganzzahl), die verschiedene LED-Farben repräsentieren. Jede Farbe ist einem festen numerischen Wert zugeordnet:
 
 - LED_RED: 1
-- LED_YELLOW: 2  
+- LED_YELLOW: 2
 - LED_ORANGE: 3
 - LED_GREEN: 4
 - LED_BLUE: 5

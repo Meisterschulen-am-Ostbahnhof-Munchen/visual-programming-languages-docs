@@ -1,5 +1,8 @@
 # TC_QD
 
+```{index} single: TC_QD
+```
+
 <img width="1355" height="263" alt="image" src="https://github.com/user-attachments/assets/9eac6074-381e-43b4-a37b-11784ad4fd72" />
 
 * * * * * * * * * *

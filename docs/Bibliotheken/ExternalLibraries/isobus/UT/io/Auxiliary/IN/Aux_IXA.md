@@ -1,5 +1,8 @@
 # Aux_IXA
 
+```{index} single: Aux_IXA
+```
+
 <img width="1383" height="318" alt="image" src="https://github.com/user-attachments/assets/d064bd8f-6af0-4b04-9952-995892584e9a" />
 
 * * * * * * * * * *

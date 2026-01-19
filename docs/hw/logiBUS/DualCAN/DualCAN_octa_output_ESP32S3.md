@@ -1,13 +1,12 @@
 # DualCAN octa-output ESP32S3
 
-
+```{index} single: DualCAN octa-output ESP32S3
+```
 
 ## CAN-BUS
 
 CAN-TX 4
 CAN-RX 5
-
-
 
 ## IO
 
@@ -27,13 +26,9 @@ CAN-RX 5
 
 ```
 
-
 Spannungsteiler ist im Controller:
 47/13 --> alle anderen Eingänge sowie die CAN2 DI Eingänge
 10/10 --> Eingänge I1/I2 - Ideal für 5V Singale
-
-
-
 
 ### Digitale Eingänge
 
@@ -44,14 +39,12 @@ Spannungsteiler ist im Controller:
 | Input_I3 |  6            |
 | Input_I4 | 16            |
 
-
 ### Digitale Eingänge (CAN2)
 
 2CAN-I1
 2CAN-I2
 
-Diese Eingänge haben einen Spannungsteiler im Controller: 47/13 --> und einen Schmitt Trigger. 
-
+Diese Eingänge haben einen Spannungsteiler im Controller: 47/13 --> und einen Schmitt Trigger.
 
 ### Digitale Ausgänge
 
@@ -65,5 +58,3 @@ Diese Eingänge haben einen Spannungsteiler im Controller: 47/13 --> und einen S
 | Output_Q06 | 19            |
 | Output_Q07 | 15            |
 | Output_Q08 |  8            |
-
-

@@ -1,9 +1,14 @@
 # AX_TP
 
+```{index} single: AX_TP
+```
+
 <img width="915" height="258" alt="image" src="https://github.com/user-attachments/assets/650ebf90-0b85-464b-a6bb-79536b7a5119" />
 
 * * * * * * * * * *
 ## Einleitung
+**Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
+
 Der AX_TP ist ein standardisierter Timer-Funktionsblock vom Typ "Pulse" (Impuls), der in 4diac-IDE Anwendungen verwendet wird. Dieser Baustein erzeugt einen zeitgesteuerten Impulsausgang basierend auf einem konfigurierbaren Zeitintervall.
 
 ## Schnittstellenstruktur

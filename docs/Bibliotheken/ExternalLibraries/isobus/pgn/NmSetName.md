@@ -1,5 +1,8 @@
 # NmSetName
 
+```{index} single: NmSetName
+```
+
 <img width="1021" height="248" alt="image" src="https://github.com/user-attachments/assets/313bb66b-066d-4f13-adfb-b0d058074d2d" />
 
 * * * * * * * * * *

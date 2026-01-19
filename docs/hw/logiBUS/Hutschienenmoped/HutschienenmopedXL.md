@@ -1,10 +1,9 @@
 # Hutschienenmoped XL
 
+```{index} single: Hutschienenmoped XL
+```
 
 Link zum Devkit: <https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/index.html>
-
-
-
 
 ## IO
 
@@ -24,12 +23,8 @@ Link zum Devkit: <https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp
     ADC1_CHANNEL_8,     /*!< ADC1 channel 8 is GPIO9  */
 ```
 
-
 Spannungsteiler ist im Controller:
-47/13 
-
-
-
+47/13
 
 ### Digitale Eingänge
 
@@ -44,7 +39,6 @@ Spannungsteiler ist im Controller:
 | Input_I7 |  7            |
 | Input_I8 |  6            |
 
-
 ### Digitale Ausgänge
 
 | Ausgang:  | PIN (ESP32S3) |
@@ -58,34 +52,10 @@ Spannungsteiler ist im Controller:
 | Output_Q7 |  1            |
 | Output_Q8 |  2            |
 
-
-
 ### LED Strip
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Weitere Infos
 
 <https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS_Hardware/tree/master/Hutschienenmoped-XL>
 
 contains the Hutschienenmoped-XL, a Open Source ISOBUS ECU.
-

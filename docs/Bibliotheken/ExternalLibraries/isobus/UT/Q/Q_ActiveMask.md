@@ -1,5 +1,8 @@
 # Q_ActiveMask
 
+```{index} single: Q_ActiveMask
+```
+
 ![Q_ActiveMask](https://user-images.githubusercontent.com/69573151/212328886-4d5587f1-b2cd-4e8a-9cbe-0aa55ca1abcf.png)
 
 * * * * * * * * * *
@@ -42,10 +45,10 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.34)  
-✔ **Deterministisches** Verhalten  
-✔ **Multi-Client-fähige** Architektur  
-✔ **Echtzeitfähige** Ausführung  
+✔ **ISO 11783-6 konform** (F.34)
+✔ **Deterministisches** Verhalten
+✔ **Multi-Client-fähige** Architektur
+✔ **Echtzeitfähige** Ausführung
 
 ## Rückgabecodes (s16result)
 

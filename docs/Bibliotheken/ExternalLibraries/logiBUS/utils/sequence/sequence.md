@@ -1,5 +1,8 @@
 # sequence
 
+```{index} single: sequence
+```
+
 ```{toctree}
 combi/combi
 const/const

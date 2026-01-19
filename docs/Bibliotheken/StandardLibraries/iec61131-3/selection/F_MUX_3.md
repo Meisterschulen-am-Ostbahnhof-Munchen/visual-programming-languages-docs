@@ -1,5 +1,8 @@
 # F_MUX_3
 
+```{index} single: F_MUX_3
+```
+
 <img width="1366" height="254" alt="F_MUX_3" src="https://github.com/user-attachments/assets/2dbe8298-6066-469e-96d6-1a6850de8bd8" />
 
 * * * * * * * * * *

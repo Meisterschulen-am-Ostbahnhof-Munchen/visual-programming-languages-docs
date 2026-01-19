@@ -1,5 +1,8 @@
 # F_SUB_TOD_TOD
 
+```{index} single: F_SUB_TOD_TOD
+```
+
 ![F_SUB_TOD_TOD](https://github.com/user-attachments/assets/24f90fce-ebfe-4c5f-9449-ddf8e41a6821)
 
 * * * * * * * * * *
@@ -40,10 +43,10 @@ Der **F_SUB_TOD_TOD** ist ein standardkonformer Funktionsbaustein zur Berechnung
 
 ## Technische Besonderheiten
 
-✔ **Mikrosekundengenauigkeit**  
-✔ **Automatische 24h-Überlaufbehandlung**  
-✔ **Bidirektionale Differenzberechnung**  
-✔ **Echtzeitfähige Ausführung**  
+✔ **Mikrosekundengenauigkeit**
+✔ **Automatische 24h-Überlaufbehandlung**
+✔ **Bidirektionale Differenzberechnung**
+✔ **Echtzeitfähige Ausführung**
 
 ## Anwendungsszenarien
 

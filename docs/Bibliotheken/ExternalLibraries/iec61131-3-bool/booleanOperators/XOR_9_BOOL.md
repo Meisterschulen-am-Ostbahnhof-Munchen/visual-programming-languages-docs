@@ -1,5 +1,8 @@
 # XOR_9_BOOL
 
+```{index} single: XOR_9_BOOL
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `XOR_9_BOOL` ist ein generischer Baustein zur Berechnung der logischen Exklusiv-ODER-Verknüpfung (XOR) für bis zu neun boolesche Eingangssignale. Er realisiert eine n-stellige XOR-Funktion, bei der der Ausgang genau dann `TRUE` ist, wenn eine ungerade Anzahl der aktiven Eingänge `TRUE` ist. Der Baustein folgt dem Standard IEC 61131-3 und ist für den Einsatz in Steuerungsanwendungen konzipiert, die eine Prüfung auf ungerade Parität oder eine spezielle Auswahl- bzw. Überwachungslogik erfordern.

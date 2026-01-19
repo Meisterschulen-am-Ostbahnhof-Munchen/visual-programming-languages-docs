@@ -1,5 +1,8 @@
 # F_NOW
 
+```{index} single: F_NOW
+```
+
 ![F_NOW](https://github.com/user-attachments/assets/3a8b2855-6d9a-49b3-ae77-6050fb2763d9)
 
 * * * * * * * * * *
@@ -33,10 +36,10 @@ Die Funktion dient als Wrapper für die ST-Funktion NOW().
 
 ## Technische Besonderheiten
 
-✔ **IEC 61499-1 konform**  
-✔ **Lokale Zeitzonenunterstützung** (inkl. Sommer/Winterzeit)  
-✔ **Einfache Integration** als NOW()-Wrapper  
-✔ **Eclipse 4diac Integration**  
+✔ **IEC 61499-1 konform**
+✔ **Lokale Zeitzonenunterstützung** (inkl. Sommer/Winterzeit)
+✔ **Einfache Integration** als NOW()-Wrapper
+✔ **Eclipse 4diac Integration**
 
 ## Anwendungsszenarien
 
@@ -63,10 +66,10 @@ Die Funktion dient als Wrapper für die ST-Funktion NOW().
 
 ## Einschränkungen
 
-⚠ **Zeitsprünge möglich** bei:  
-- Sommer/Winterzeit-Umstellung  
-- Manuellen Zeitanpassungen  
-- NTP-Synchronisation  
+⚠ **Zeitsprünge möglich** bei:
+- Sommer/Winterzeit-Umstellung
+- Manuellen Zeitanpassungen
+- NTP-Synchronisation
 
 ## Fazit
 

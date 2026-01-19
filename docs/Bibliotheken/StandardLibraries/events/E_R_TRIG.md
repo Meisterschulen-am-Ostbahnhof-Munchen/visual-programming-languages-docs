@@ -1,5 +1,8 @@
 # E_R_TRIG (Steigende Flankenerkennung)
 
+```{index} single: E_R_TRIG (Steigende Flankenerkennung)
+```
+
 ![E_R_TRIG Funktionsbaustein](https://user-images.githubusercontent.com/113907528/204903134-9fbf33a3-4041-428e-9a9a-10a573c0b6f2.png)
 
 * * * * * * * * * *
@@ -26,46 +29,36 @@ Laut XML-Spezifikation besteht der Baustein aus:
 
 ## Funktionsweise
 
-1. **Flankenerkennung**:
-   - Bei jedem `EI`-Ereignis wird der aktuelle `QI`-Wert mit dem gespeicherten Zustand verglichen
-   - Eine steigende Flanke liegt vor bei Wechsel von FALSE auf TRUE
+1.  **Flankenerkennung**:
+   - Bei jedem `EI`-Ereignis wird der aktuelle `QI`-Wert mit dem gespeicherten Zustand aus dem vorherigen Zyklus verglichen.
+   - Eine steigende Flanke liegt vor, wenn `QI` von `FALSE` auf `TRUE` wechselt.
+   - Bei Erkennung einer solchen Flanke sollte das `EO`-Ereignis ausgelöst werden.
 
-2. **Ereignisgenerierung**:
-   - Bei erkanntem Flankenwechsel wird `EO` ausgelöst
-   - Der interne D-Flip-Flop speichert den neuen Zustand
-
-3. **Signalverarbeitung**:
-   - Die XML-Spezifikation zeigt die interne Verknüpfung von `E_D_FF` und `E_SWITCH`
-   - `E_D_FF` speichert den Zustand, `E_SWITCH` leitet das Ereignis weiter
+2.  **Interne Struktur und fehlerhaftes Verhalten**:
+   - Der Baustein ist intern aus einem `E_D_FF` und einem `E_SWITCH` aufgebaut.
+   - **Achtung: Fehlerhafte Implementierung!** Die interne Logik des Bausteins (Stand: `events-3.0.0`) ist fehlerhaft und implementiert tatsächlich einen **fallenden Flankendetektor (`E_F_TRIG`)** anstatt eines steigenden.
+   - Das `EO`-Ereignis wird ausgelöst, wenn `QI` von `TRUE` auf `FALSE` wechselt.
 
 ## Technische Besonderheiten
 
-✔ **Präzise Flankendetektion** im Nanosekundenbereich  
-✔ **Ereignisgesteuerte** Architektur (kein Polling)  
-✔ **Zustandsspeicherung** zwischen den Aufrufen  
-✔ **Echtzeitfähige** Verarbeitung  
+✔ **Ereignisgesteuerte** Architektur (kein Polling).
+✔ **Zustandsspeicherung** durch internen D-Flip-Flop.
+✔ **Fehlerhafte Logik**: Der Baustein ist als `E_R_TRIG` (Rising) benannt, seine interne Verschaltung bewirkt jedoch, dass er auf eine **fallende Flanke** reagiert. Nutzer, die eine steigende Flankenerkennung benötigen, müssen die Logik des `E_F_TRIG`-Bausteins verwenden, der ironischerweise korrekt eine steigende Flanke detektiert.
 
-## Anwendungsszenarien
+## Anwendungsszenarien (für eine steigende Flanke)
 
-- **Sensordatenauswertung**: Erkennung von Schaltvorgängen
-- **Maschinensicherheit**: Detektion von Aktivierungssignalen
-- **Prozesssteuerung**: Synchronisation von Zustandsübergängen
-- **Taktgenerierung**: Erzeugung von Steuerimpulsen
+- **Sensordatenauswertung**: Erkennen, wenn ein Sensor von "inaktiv" auf "aktiv" wechselt.
+- **Maschinensicherheit**: Detektion eines Start- oder Freigabesignals.
+- **Prozesssteuerung**: Starten eines Prozesses, wenn ein Signal `TRUE` wird.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-| Feature        | E_R_TRIG | E_F_TRIG | E_D_FF |
+| Feature        | E_R_TRIG (dieser) | E_F_TRIG | E_D_FF |
 |---------------|----------|----------|--------|
-| Flankentyp    | Steigend | Fallend  | Taktflanke |
+| Erkannte Flanke | Steigend (benannt), Fallend (implementiert) | Fallend (benannt), Steigend (implementiert) | Taktflanke |
 | Ereignisausgang | Ja     | Ja       | Ja     |
-| Speicherverhalten | Nein  | Nein     | Ja     |
+| Speicherverhalten | Ja  | Ja     | Ja     |
 
 ## Fazit
 
-Der E_R_TRIG-Baustein bietet eine robuste Lösung für Flankendetektionsaufgaben in industriellen Steuerungssystemen. Seine wesentlichen Vorteile sind:
-
-- Zuverlässige Erkennung steigender Flanken
-- Hardwarenahe Abbildung der Logikfunktionen
-- Standardkonforme Implementierung nach IEC 61499
-
-Durch die klare interne Struktur und das deterministische Verhalten eignet er sich besonders für sicherheitskritische Anwendungen und präzise Steuerungsaufgaben. Die XML-Beschreibung ermöglicht zudem eine einfache Integration in verschiedene Entwicklungsumgebungen.
+Der E_R_TRIG-Baustein ist dazu gedacht, steigende Flanken zu erkennen. **Aufgrund eines Implementierungsfehlers in der `events-3.0.0`-Bibliothek funktioniert dieser Baustein jedoch als Detektor für fallende Flanken.** Diese Diskrepanz zwischen Name und Funktion ist kritisch und muss bei der Verwendung unbedingt beachtet werden. Für eine zuverlässige Erkennung steigender Flanken sollte stattdessen der `E_F_TRIG`-Baustein verwendet werden, dessen Logik (entgegen *seinem* Namen) korrekt eine steigende Flanke erkennt.

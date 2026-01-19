@@ -1,5 +1,8 @@
 # F_UINT_TO_USINT
 
+```{index} single: F_UINT_TO_USINT
+```
+
 <img width="1454" height="216" alt="F_UINT_TO_USINT" src="https://github.com/user-attachments/assets/a0991cf7-1e8b-4cee-971c-5bf9334f137f" />
 
 * * * * * * * * * *

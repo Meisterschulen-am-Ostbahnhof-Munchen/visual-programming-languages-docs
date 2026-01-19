@@ -1,5 +1,8 @@
 # I_RHS
 
+```{index} single: I_RHS
+```
+
 ![I_RHS](https://github.com/user-attachments/assets/1e655481-5a76-4cff-862c-653c219a9eeb)
 
 * * * * * * * * * *
@@ -55,10 +58,10 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-7 konform** (PGN 65093)  
-✔ **Bidirektionale Kraftmessung** (+/- 100% Bereich)  
-✔ **Präzise Positionserfassung** mit 0.4% Auflösung  
-✔ **64-stufige Fehlerdiagnose** mit detaillierten Codes  
+✔ **ISO 11783-7 konform** (PGN 65093)
+✔ **Bidirektionale Kraftmessung** (+/- 100% Bereich)
+✔ **Präzise Positionserfassung** mit 0.4% Auflösung
+✔ **64-stufige Fehlerdiagnose** mit detaillierten Codes
 
 ## Kupplungseigenschaften
 

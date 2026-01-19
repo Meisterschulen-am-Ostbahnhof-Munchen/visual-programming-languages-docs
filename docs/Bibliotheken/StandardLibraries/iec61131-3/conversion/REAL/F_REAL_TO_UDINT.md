@@ -1,5 +1,8 @@
 # F_REAL_TO_UDINT
 
+```{index} single: F_REAL_TO_UDINT
+```
+
 <img width="1448" height="213" alt="F_REAL_TO_UDINT" src="https://github.com/user-attachments/assets/2045df2e-f71d-4277-9b58-2a655adc3493" />
 
 * * * * * * * * * *

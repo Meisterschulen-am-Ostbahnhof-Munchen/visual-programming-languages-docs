@@ -1,5 +1,8 @@
 # AND_5_BOOL
 
+```{index} single: AND_5_BOOL
+```
+
 <img width="1383" height="334" alt="image" src="https://github.com/user-attachments/assets/26c969c4-f1f2-4142-9188-57cd244d9cd6" />
 
 * * * * * * * * * *

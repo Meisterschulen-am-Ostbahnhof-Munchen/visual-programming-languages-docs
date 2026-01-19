@@ -1,5 +1,8 @@
 # F_DINT_TO_UINT
 
+```{index} single: F_DINT_TO_UINT
+```
+
 <img width="1442" height="217" alt="F_DINT_TO_UINT" src="https://github.com/user-attachments/assets/19436375-bd4c-4e93-ad90-b387e008a9c2" />
 
 * * * * * * * * * *

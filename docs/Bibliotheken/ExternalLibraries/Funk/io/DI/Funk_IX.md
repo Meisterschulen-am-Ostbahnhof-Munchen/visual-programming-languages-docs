@@ -1,5 +1,8 @@
 # Funk_IX
 
+```{index} single: Funk_IX
+```
+
 <img width="1912" height="337" alt="image" src="https://github.com/user-attachments/assets/7b367819-772a-47fa-a298-1324da5fda1a" />
 
 * * * * * * * * * *

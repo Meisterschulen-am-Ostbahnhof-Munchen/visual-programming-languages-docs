@@ -1,5 +1,8 @@
 # ARRAY2ARRAY_2_LREAL
 
+```{index} single: ARRAY2ARRAY_2_LREAL
+```
+
 <img width="1219" height="160" alt="image" src="https://github.com/user-attachments/assets/57ce3ad0-2da9-4075-8d37-abf71840b469" />
 
 * * * * * * * * * *
@@ -57,6 +60,15 @@ Der Funktionsblock befindet sich typischerweise in zwei Hauptzuständen:
 ## Vergleich mit ähnlichen Bausteinen
 
 Dieser Baustein ist sehr spezifisch in seiner Funktion. Im Vergleich zu allgemeineren Datenmanipulationsbausteinen, die oft flexible Datentypen oder Array-Größen über Konfigurationsparameter ermöglichen, ist `ARRAY2ARRAY_2_LREAL` fest auf `LREAL`-Arrays der Größe 2 spezialisiert. Existierten Bausteine für generische Array-Kopien (z.B. `ARRAY_COPY` mit konfigurierbarer Größe und Typ), wäre dieser Baustein eine spezialisierte Instanz davon. Er ist einfacher als solche generischen Bausteine, aber weniger flexibel. Für seine spezifische Aufgabe bietet er jedoch eine klare und effiziente Lösung.
+
+## Metadaten
+
+| Attribut | Wert |
+| :--- | :--- |
+| Copyright | (c) 2014 Profactor GmbH |
+| Lizenz | EPL-2.0 |
+| Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2014-08-05, Matthias Plasch) |
+| 4diac-Paket | eclipse4diac::convert |
 
 ## Fazit
 

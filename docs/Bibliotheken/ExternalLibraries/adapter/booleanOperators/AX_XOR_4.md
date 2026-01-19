@@ -1,5 +1,8 @@
 # AX_XOR_4
 
+```{index} single: AX_XOR_4
+```
+
 <img width="1009" height="334" alt="image" src="https://github.com/user-attachments/assets/7d008034-d62e-4f60-b7e9-450014dd7e88" />
 
 * * * * * * * * * *
@@ -27,7 +30,7 @@ Der AX_XOR_4 Funktionsblock ist ein generischer Baustein zur Berechnung der bool
 
 **Socket-Adapter:**
 - **IN1**: Unidirektionaler Adapter für XOR-Eingang 1
-- **IN2**: Unidirektionaler Adapter für XOR-Eingang 2  
+- **IN2**: Unidirektionaler Adapter für XOR-Eingang 2
 - **IN3**: Unidirektionaler Adapter für XOR-Eingang 3
 - **IN4**: Unidirektionaler Adapter für XOR-Eingang 4
 

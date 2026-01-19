@@ -1,5 +1,8 @@
 # XOR_9
 
+```{index} single: XOR_9
+```
+
 <img width="1122" height="386" alt="XOR_9" src="https://github.com/user-attachments/assets/c115089f-b2d9-4440-8c6f-6db5cba185f8" />
 
 * * * * * * * * * *
@@ -24,9 +27,9 @@ Der Funktionsblock `XOR_9` dient zur bitweisen Berechnung der XOR-Verknüpfung m
 Der Funktionsblock verfügt über keine Adapter.
 
 ## Funktionsweise
-Bei Auslösung des `REQ`-Ereignisses berechnet der FB die XOR-Verknüpfung aller übergebenen Eingangswerte (`IN1` bis `IN9`). Das Ergebnis wird an `OUT` ausgegeben und das `CNF`-Ereignis signalisiert die Bereitschaft des Ergebnisses. 
+Bei Auslösung des `REQ`-Ereignisses berechnet der FB die XOR-Verknüpfung aller übergebenen Eingangswerte (`IN1` bis `IN9`). Das Ergebnis wird an `OUT` ausgegeben und das `CNF`-Ereignis signalisiert die Bereitschaft des Ergebnisses.
 
-**Beispiel (für BOOL-Eingänge):**  
+**Beispiel (für BOOL-Eingänge):**
 `OUT = IN1 XOR IN2 XOR ... XOR IN9`
 
 ## Technische Besonderheiten

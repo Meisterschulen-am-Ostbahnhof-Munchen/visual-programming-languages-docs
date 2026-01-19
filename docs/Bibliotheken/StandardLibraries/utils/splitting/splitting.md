@@ -1,5 +1,8 @@
 # splitting
 
+```{index} single: splitting
+```
+
 ```{toctree}
 SPLIT_BYTE_INTO_BOOLS
 SPLIT_BYTE_INTO_QUARTERS

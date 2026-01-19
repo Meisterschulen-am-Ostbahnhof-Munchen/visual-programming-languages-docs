@@ -1,5 +1,8 @@
 # AX_XOR_5
 
+```{index} single: AX_XOR_5
+```
+
 <img width="1009" height="366" alt="image" src="https://github.com/user-attachments/assets/cb5ecc68-f421-4466-a82b-f877edbb13f0" />
 
 * * * * * * * * * *
@@ -25,7 +28,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 
 **Eingangsadapter:**
 - **IN1**: XOR-Eingang 1 (unidirektionaler AX-Adapter)
-- **IN2**: XOR-Eingang 2 (unidirektionaler AX-Adapter)  
+- **IN2**: XOR-Eingang 2 (unidirektionaler AX-Adapter)
 - **IN3**: XOR-Eingang 3 (unidirektionaler AX-Adapter)
 - **IN4**: XOR-Eingang 4 (unidirektionaler AX-Adapter)
 - **IN5**: XOR-Eingang 5 (unidirektionaler AX-Adapter)

@@ -1,5 +1,7 @@
 # Eclipse 4diac™ IDE Icon
 
+```{index} single: Eclipse 4diac™ IDE Icon
+```
 
 This is the list of icons already redesigned.
 

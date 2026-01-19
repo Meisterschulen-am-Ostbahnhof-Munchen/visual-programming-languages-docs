@@ -1,5 +1,8 @@
 # SYS_ONTIME
 
+```{index} single: SYS_ONTIME
+```
+
 <img width="1639" height="206" alt="image" src="https://github.com/user-attachments/assets/08d09491-2560-44d8-be18-94d431bac08b" />
 
 * * * * * * * * * *

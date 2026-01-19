@@ -1,5 +1,8 @@
 # CSV_WRITER_5
 
+```{index} single: CSV_WRITER_5
+```
+
 ![CSV_WRITER_5](https://github.com/user-attachments/assets/f24a7a1e-0d03-409e-8ce7-c7d9a9719c2c)
 
 * * * * * * * * * *

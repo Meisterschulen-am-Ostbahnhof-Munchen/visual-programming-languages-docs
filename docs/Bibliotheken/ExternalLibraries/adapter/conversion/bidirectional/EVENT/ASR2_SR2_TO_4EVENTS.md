@@ -1,11 +1,14 @@
 # ASR2_SR2_TO_4EVENTS
 
+```{index} single: ASR2_SR2_TO_4EVENTS
+```
+
 <img width="1144" height="209" alt="image" src="https://github.com/user-attachments/assets/86e61c8f-102b-496b-bc1f-d0e024540466" />
 
 * * * * * * * * * *
 
 ## Einleitung
-Der Funktionsblock ASR2_SR2_TO_4EVENTS ist ein Composite-Funktionsblock, der zur Konvertierung von ASR2-Signalen in vier separate Ereignisse dient. Er ermöglicht die bidirektionale Umwandlung zwischen ASR2-Adapter-Schnittstellen und diskreten Ereignis-Ein- und Ausgängen.
+Der Funktionsblock ASR2_SR2_TO_4EVENTS ist ein Composite-Funktionsblock, der zur Bereitstellung der ASR2-Adaptersignale als vier diskrete Ereignis-Endpunkte dient. Er ermöglicht die bidirektionale Umwandlung zwischen ASR2-Adapter-Schnittstellen und diskreten Ereignis-Ein- und Ausgängen.
 
 ## Schnittstellenstruktur
 

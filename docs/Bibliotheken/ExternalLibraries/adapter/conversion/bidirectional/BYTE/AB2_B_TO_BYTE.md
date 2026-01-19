@@ -1,5 +1,8 @@
 # AB2_B_TO_BYTE
 
+```{index} single: AB2_B_TO_BYTE
+```
+
 <img width="1224" height="196" alt="image" src="https://github.com/user-attachments/assets/b8d88980-eb0b-4d26-8400-a6af1b5cbe0b" />
 
 * * * * * * * * * *

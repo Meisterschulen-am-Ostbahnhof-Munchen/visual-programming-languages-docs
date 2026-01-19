@@ -1,10 +1,15 @@
 # AX_TON
 
+```{index} single: AX_TON
+```
+
 <img width="962" height="243" alt="image" src="https://github.com/user-attachments/assets/d92dd0e6-fa14-499e-8a97-5c1432d0df3e" />
 
 * * * * * * * * * *
 
 ## Einleitung
+**Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
+
 AX_TON ist ein standardisierter Timer-Funktionsblock, der eine Einschaltverzögerung (On-Delay Timing) realisiert. Der Baustein wartet nach Aktivierung eine definierte Zeit ab, bevor er das Ausgangssignal setzt.
 
 ## Schnittstellenstruktur

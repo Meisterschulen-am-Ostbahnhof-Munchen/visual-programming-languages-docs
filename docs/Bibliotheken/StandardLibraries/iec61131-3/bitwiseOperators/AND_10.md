@@ -1,5 +1,8 @@
 # AND_10
 
+```{index} single: AND_10
+```
+
 <img width="1136" height="412" alt="AND_10" src="https://github.com/user-attachments/assets/753b5e30-df9f-42fe-bbf1-aa33011dd4fc" />
 
 * * * * * * * * * *

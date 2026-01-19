@@ -1,8 +1,12 @@
 # version
 
-<img width="909" height="244" alt="image" src="https://github.com/user-attachments/assets/e471c74a-8ace-47e3-8f6a-f48a25b212b5" />
+```{index} single: version
+```
+## 🎧 Podcast
 
-* * * * * * * * * *
+* ["Store Version" – Dein Schlüssel zur Verwaltung von Objektdatenpools im nichtflüchtigen VT-Speicher (ISO 11783-6)](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/Store-Version--Dein-Schlssel-zur-Verwaltung-von-Objektdatenpools-im-nichtflchtigen-VT-Speicher-ISO-11783-6-e36vfh0)
+* [VT-Versionen verstehen: Dein Weg zum Meister der Land- und Baumaschinenmechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/VT-Versionen-verstehen-Dein-Weg-zum-Meister-der-Land--und-Baumaschinenmechatronik-e36a8e8)
+
 ## Einleitung
 Der Funktionsblock `version` dient der einfachen Weitergabe einer Versionsinformation. Er empfängt eine Zeichenkette (String) als Eingabe und gibt diese unverändert an seinem Ausgang wieder. Dieser Baustein ist nützlich, um Versionsnummern oder andere Kennzeichnungen innerhalb einer Anwendungskette zu transportieren oder für Diagnosezwecke bereitzustellen.
 

@@ -1,5 +1,8 @@
 # F_SINT_TO_REAL
 
+```{index} single: F_SINT_TO_REAL
+```
+
 <img width="1439" height="213" alt="F_SINT_TO_REAL" src="https://github.com/user-attachments/assets/9477ea11-2b6e-441e-8fe2-16588d70cf27" />
 
 * * * * * * * * * *

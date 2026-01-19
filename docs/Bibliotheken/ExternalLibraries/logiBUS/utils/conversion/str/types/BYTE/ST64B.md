@@ -1,5 +1,8 @@
 # ST64B
 
+```{index} single: ST64B
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `ST64B` ist ein strukturierter Datentyp, der zur Kapselung von 64 einzelnen Byte-Werten dient. Er wurde entwickelt, um eine feste Datenstruktur von 64 Bytes bereitzustellen, die für verschiedene Anwendungsfälle genutzt werden kann, bei denen eine exakt definierte Größe und direkter Zugriff auf einzelne Bytes erforderlich ist. Die ursprüngliche XML-Definition enthielt einen Kommentar, der fälschlicherweise 16 Bytes angab; korrekt sind 64 Bytes.

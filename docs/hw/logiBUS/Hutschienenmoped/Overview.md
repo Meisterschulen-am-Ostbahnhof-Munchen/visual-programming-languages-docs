@@ -1,5 +1,8 @@
 # Hutschienenmoped Übersicht
 
+```{index} single: Hutschienenmoped Übersicht
+```
+
 Das Hutschienenmoped: Kompakte Steuerung für die DIN-Schiene
 Unser "Hutschienenmoped" ist die ideale Lösung für alle, die eine kompakte, flexible und kostengünstige Steuerung direkt im Schaltschrank benötigen. Montiert auf einer Standard-Hutschiene (DIN-Schiene), dient es als Gehirn für unzählige Automatisierungs- und Digitalisierungsaufgaben. Um den unterschiedlichen Anforderungen von Einsteigern und Profis gerecht zu werden, bieten wir das Hutschienenmoped in zwei Generationen an.
 
@@ -30,9 +33,7 @@ Das Hutschienenmoped S3 ist ein deutliches Upgrade und richtet sich an Anwender 
 
 Wählen Sie das S3-Modell, wenn Sie anspruchsvolle Projekte planen, maximale Performance benötigen oder Ihr Projekt für zukünftige KI-Anwendungen rüsten wollen.
 
-
 ```{toctree}
 Hutschienenmoped
 HutschienenmopedXL
 ```
-

@@ -1,5 +1,8 @@
 # Q_CtrlAudioSignal
 
+```{index} single: Q_CtrlAudioSignal
+```
+
 ![Q_CtrlAudioSignal](https://user-images.githubusercontent.com/116869307/214147202-f060b872-d3d6-4c56-92c9-84961ce5127b.png)
 
 * * * * * * * * * *
@@ -48,10 +51,10 @@ Der **Q_CtrlAudioSignal** ist ein standardkonformer Funktionsbaustein zur Steuer
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.10)  
-✔ **Flexible Signalsteuerung**: Frequenz, Dauer, Wiederholungen  
-✔ **16-bit Zeitauflösung** (0-65535 ms)  
-✔ **255 Wiederholungen** maximal  
+✔ **ISO 11783-6 konform** (F.10)
+✔ **Flexible Signalsteuerung**: Frequenz, Dauer, Wiederholungen
+✔ **16-bit Zeitauflösung** (0-65535 ms)
+✔ **255 Wiederholungen** maximal
 
 ## Standardparameterbereiche
 

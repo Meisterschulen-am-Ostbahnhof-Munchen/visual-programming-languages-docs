@@ -1,5 +1,8 @@
 # logiBUS_2_CAN_DI
 
+```{index} single: logiBUS_2_CAN_DI
+```
+
 * * * * * * * * * *
 
 ## Einleitung
@@ -12,7 +15,7 @@ Die logiBUS_2_CAN_DI GlobalConstants definieren Konstanten für die Konfiguratio
 Die GlobalConstants definieren drei Hauptkonstanten für die digitale Eingangskonfiguration:
 
 - **Input_CI1**: Konfiguration für digitalen Eingangskanal 1
-- **Input_CI2**: Konfiguration für digitalen Eingangskanal 2  
+- **Input_CI2**: Konfiguration für digitalen Eingangskanal 2
 - **Invalid**: Kennzeichnet einen ungültigen oder nicht konfigurierten Eingang
 
 ### **Datentypen**

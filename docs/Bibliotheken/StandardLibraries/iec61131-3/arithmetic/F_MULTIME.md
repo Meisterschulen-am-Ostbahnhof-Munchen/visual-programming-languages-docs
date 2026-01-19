@@ -1,5 +1,8 @@
 # F_MULTIME
 
+```{index} single: F_MULTIME
+```
+
 ![F_MULTIME](https://github.com/user-attachments/assets/89982d6d-aa50-4897-b32c-6d280da63b1a)
 
 * * * * * * * * * *
@@ -39,10 +42,10 @@ Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation
 
 ## Technische Besonderheiten
 
-✔ **Typsichere Zeitwertverarbeitung**  
-✔ **Präzise Nanosekundenberechnung**  
-✔ **Automatische Typkonvertierung** (ANY_NUM → REAL)  
-✔ **Überlaufschutz** (Begrenzung auf TIME-Maximalwert)  
+✔ **Typsichere Zeitwertverarbeitung**
+✔ **Präzise Nanosekundenberechnung**
+✔ **Automatische Typkonvertierung** (ANY_NUM → REAL)
+✔ **Überlaufschutz** (Begrenzung auf TIME-Maximalwert)
 
 ## Anwendungsszenarien
 

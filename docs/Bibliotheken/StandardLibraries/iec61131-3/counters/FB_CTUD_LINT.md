@@ -1,5 +1,8 @@
 # FB_CTUD_LINT
 
+```{index} single: FB_CTUD_LINT
+```
+
 <img width="1418" height="340" alt="FB_CTUD_LINT" src="https://github.com/user-attachments/assets/3ef801dc-5210-49fd-b0d4-4c34251fea5f" />
 
 * * * * * * * * * *

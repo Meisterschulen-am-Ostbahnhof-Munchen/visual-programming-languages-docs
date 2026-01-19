@@ -1,5 +1,8 @@
 # F_LINT_TO_WORD
 
+```{index} single: F_LINT_TO_WORD
+```
+
 <img width="1436" height="214" alt="F_LINT_TO_WORD" src="https://github.com/user-attachments/assets/4aa4298e-3732-42d1-a295-e26f81c02b3d" />
 
 * * * * * * * * * *

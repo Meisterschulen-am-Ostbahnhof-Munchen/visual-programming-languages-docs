@@ -1,5 +1,8 @@
 # Q_ChildPosition
 
+```{index} single: Q_ChildPosition
+```
+
 ![Q_ChildPosition](https://user-images.githubusercontent.com/116869307/214147176-8b27f37a-4898-406a-98a0-e5f5701abc58.png)
 
 * * * * * * * * * *
@@ -46,10 +49,10 @@ Der **Q_ChildPosition** ist ein standardkonformer Funktionsbaustein zur absolute
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.16)  
-✔ **Absolute Positionsänderung** (relativ zum Parent)  
-✔ **16-bit Wertebereich** (±32768 Pixel)  
-✔ **Echtzeitfähige** Verarbeitung  
+✔ **ISO 11783-6 konform** (F.16)
+✔ **Absolute Positionsänderung** (relativ zum Parent)
+✔ **16-bit Wertebereich** (±32768 Pixel)
+✔ **Echtzeitfähige** Verarbeitung
 
 ## Positionsbereich
 

@@ -1,5 +1,8 @@
 # DO-LED
 
+```{index} single: DO-LED
+```
+
 ```{toctree}
 LED_COLOURS
 LED_FREQ

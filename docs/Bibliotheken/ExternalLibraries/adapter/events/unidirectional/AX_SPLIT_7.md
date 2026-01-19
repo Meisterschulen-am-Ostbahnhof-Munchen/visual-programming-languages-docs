@@ -1,5 +1,8 @@
 # AX_SPLIT_7
 
+```{index} single: AX_SPLIT_7
+```
+
 <img width="618" height="383" alt="image" src="https://github.com/user-attachments/assets/99075a52-1b48-461b-ad14-dbeefe086a52" />
 
 * * * * * * * * * *
@@ -28,7 +31,7 @@ Keine direkten Daten-Ausgänge vorhanden (Adapter-basierte Kommunikation)
 
 **Ausgangsadapter:**
 - **OUT1** (Plug): Unidirektionaler AX-Adapter-Ausgang 1
-- **OUT2** (Plug): Unidirektionaler AX-Adapter-Ausgang 2  
+- **OUT2** (Plug): Unidirektionaler AX-Adapter-Ausgang 2
 - **OUT3** (Plug): Unidirektionaler AX-Adapter-Ausgang 3
 - **OUT4** (Plug): Unidirektionaler AX-Adapter-Ausgang 4
 - **OUT5** (Plug): Unidirektionaler AX-Adapter-Ausgang 5

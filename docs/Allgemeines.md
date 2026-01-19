@@ -1,92 +1,56 @@
 # Allgemeines
 
-## Namen
+```{index} single: Allgemeines
+```
 
-Bitte Vermeiden: ä ü ö $ % & / 
+In diesem Abschnitt werden grundlegende Konzepte erläutert, die für die Programmierung nach IEC 61131-3 und IEC 61499 sowie für die allgemeine Informatik wichtig sind.
 
+## Identifikatoren (Namenskonventionen)
 
-1. Namen dürfen maximal 31 Stellen lang sein. 
-2. Sie können aus den Buchstaben A-Z und a-z, den Ziffern 0-9 und dem Unterstrich bestehen.
-3. Die einzige Einschränkung besteht darin, dass am Anfang von Variablennamen keine Ziffern stehen dürfen; 
-4. Unterstriche am Anfang von Variablennamen sind zwar erlaubt, sollten aber vermieden werden, da diese üblicherweise für Bibliotheksfunktionen reserviert sind.
+Namen von Variablen, Funktionsbausteinen, Programmen und anderen Elementen werden als **Identifikatoren** bezeichnet. Um einen sauberen und portablen Code zu gewährleisten, legt die Norm IEC 61131-3 strikte Regeln fest.
 
+### Grundregeln der Norm
+1.  **Zeichensatz:** Identifikatoren dürfen nur aus Buchstaben (A-Z, a-z), Ziffern (0-9) und dem Unterstrich (_) bestehen.
+2.  **Anfang:** Ein Name darf **nicht mit einer Ziffer** beginnen. Er muss mit einem Buchstaben oder einem Unterstrich starten.
+3.  **Leerzeichen:** Leerzeichen sind innerhalb eines Namens nicht erlaubt.
+4.  **Sonderzeichen:** Umlaute (ä, ö, ü) und Sonderzeichen ($, %, &, /) sind strikt verboten.
+5.  **Groß-/Kleinschreibung:** In der Standard-IEC 61131-3 wird meist nicht zwischen Groß- und Kleinschreibung unterschieden (`Motor_An` ist gleich `motor_an`). Es ist jedoch gute Praxis, eine konsistente Schreibweise beizubehalten.
+6.  **Reservierte Wörter:** Schlüsselwörter der Sprache (z. B. `IF`, `THEN`, `VAR`, `END_VAR`) dürfen nicht als Identifikatoren verwendet werden.
 
-### Beispiele: 
+### Best Practices (Empfehlungen)
+*   **Unterstriche:** Vermeiden Sie einfache Unterstriche am Anfang von Namen, da diese häufig für systeminterne Bibliotheksfunktionen reserviert sind.
+*   **Doppelte Unterstriche:** Diese sind in vielen Systemen reserviert oder verboten.
+*   **Klarheit:** Namen sollten selbsterklärend sein. Verwenden Sie lieber `Temperatur_Sensor_1` statt `T_S1`.
+*   **Schreibweisen:**
+    *   **CamelCase:** `MaxTemperatur`
+    *   **Snake_Case:** `Max_Temperatur` (in der SPS-Welt sehr verbreitet)
 
-#### Erlaubt: 
+| Erlaubt | Verboten | Grund |
+| :--- | :--- | :--- |
+| `Maehwerk_An` | `Mähwerk_An` | Sonderzeichen (ä) |
+| `Start_Taster_1` | `1_Start_Taster` | Beginnt mit Ziffer |
+| `Sollwert_Vorgabe` | `Sollwert Vorgabe` | Leerzeichen |
+| `__Internal` | `Internal!` | Sonderzeichen (!) |
 
-`Maehwerk_links_15`
+---
 
-#### Verboten: 
+## Zahlen und Literale
 
-`14_Klappung_Mähwerk`
+Die Darstellung von Zahlen (Binär, Hexadezimal, Dezimal) und die Verwendung von Literalen im Code sind für die Steuerungsprogrammierung essenziell.
 
-`Klappung Maehwerk`
+*   Detaillierte Informationen finden Sie hier: **[Zahlen und Zahlensysteme](Allgemeines/Zahlen.md)**
 
-
-Quelle <https://www.grund-wissen.de/informatik/c/variablen-und-datentypen.html>
-
-## Zahlen
-
-&#8469; [Natürliche Zahl – Wikipedia](https://de.wikipedia.org/wiki/Nat%C3%BCrliche_Zahl)
-
-&#8469;₀ Natürliche Zahlen inkl. Null
-
-&#8484; [Ganze Zahl – Wikipedia](https://de.wikipedia.org/wiki/Ganze_Zahl)
-
-&#8474; [Rationale Zahl – Wikipedia](https://de.wikipedia.org/wiki/Rationale_Zahl)
-
-&#8477; [Reelle Zahl – Wikipedia](https://de.wikipedia.org/wiki/Reelle_Zahl)
-
-gibt viele weitere, siehe: [Zahlenmengen ](https://www.matheretter.de/wiki/mathe-zeichen#zahlenmengen)
+---
 
 ## Datentypen
 
-[Integer (Datentyp) – Wikipedia](https://de.wikipedia.org/wiki/Integer_(Datentyp))
+Datentypen legen fest, welche Art von Information eine Variable speichern kann (z. B. eine ganze Zahl, eine Fließkommazahl oder ein Wahrheitswert).
 
-[Gleitkommazahl – Wikipedia](https://de.wikipedia.org/wiki/Gleitkommazahl)
+*   Eine Übersicht finden Sie hier: **[Datentypen](Allgemeines/Datentypen/Datentypen.md)**
 
-### Datentypen in der IEC 61131-3
-
-[Datentypen](https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_reference_datatypes.html)
-
-### Datentypen in der IEC 61499
-
-Siehe auch: IEC 61499, Table E.1
-
-#### Datentypen zum Rechnen
-
-| Typ | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
-| --- | --- | --- | --- | --- |
-| BOOL | 1/8 | 1 Bit | 0 = FALSE | 1 = TRUE |
-| SINT | 1 | 8 Bit | −128 | 127 |
-| INT | 2 | 16 Bit | −32.768 | 32.767 |
-| DINT | 4 | 32 Bit | −2.147.483.648 | 2.147.483.647 |
-| LINT | 8 | 64 Bit | −9.223.372.036.854.775.808 | 9.223.372.036.854.775.807 |
-| USINT | 1 | 8 Bit | 0 | 255 |
-| UINT | 2 | 16 Bit | 0 | 65.535 |
-| UDINT | 4 | 32 Bit | 0 | 4.294.967.295 |
-| ULINT | 8 | 64 Bit | 0 | 18.446.744.073.709.551.615 |
-| REAL | 4 | 32 Bit |   |   |
-| LREAL | 8 | 64 Bit |   |   |
-| DATE | 8 | 64 Bit |   |   |
-| TIME | 8 | 64 Bit |   |   |
-| TIME\_OF\_DAY | 12 | 96 Bit | 1970-01-01-00:00:00.000 |   |
-| DATE\_AND\_TIME | 20 | 160 Bit | 1970-01-01-00:00:00.000 |   |
-
-
-#### Datentypen für I/O (Input / Output)
-
-| Typ | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
-| --- | --- | --- | --- | --- |
-| BOOL | 1/8 | 1 Bit | 0 = FALSE | 1= TRUE |
-| QUARTER [^1] | 1/4 | 2 Bit | 0 | 3 |
-| BYTE | 1 | 8 Bit | 0 | 255 |
-| WORD | 2 | 16 Bit | 0 | 65.535 |
-| DWORD | 4 | 32 Bit | 0 | 4.294.967.295 |
-| LWORD | 8 | 64 Bit | 0 | 18.446.744.073.709.551.615 |
-
-
-[^1]: QUARTER ist nicht normativ festgelegt.
-
-
+```{toctree}
+:maxdepth: 2
+:hidden:
+Allgemeines/Zahlen
+Allgemeines/Datentypen/Datentypen
+```

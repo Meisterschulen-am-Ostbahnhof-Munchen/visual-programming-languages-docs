@@ -1,5 +1,8 @@
 # E_STOPWATCH
 
+```{index} single: E_STOPWATCH
+```
+
 ![E_STOPWATCH](https://user-images.githubusercontent.com/116869307/214154982-af9a1e9b-6839-43e1-8191-1eca65a4308c.png)
 
 * * * * * * * * * *
@@ -42,11 +45,11 @@ Der Baustein ermöglicht millisekundengenaue Zeitmessungen zwischen Ereignissen 
 
 ## Technische Besonderheiten
 
-✔ **IEC 61499-2 konform**  
-✔ **Monotone Zeitmessung** (keine Systemzeitanpassungen)  
-✔ **Millisekundengenau**  
-✔ **Mehrfach triggerbar** während der Messung  
-✔ **Eclipse 4diac Integration** (Package: eclipse4diac::utils::timing)  
+✔ **IEC 61499-2 konform**
+✔ **Monotone Zeitmessung** (keine Systemzeitanpassungen)
+✔ **Millisekundengenau**
+✔ **Mehrfach triggerbar** während der Messung
+✔ **Eclipse 4diac Integration** (Package: eclipse4diac::utils::timing)
 
 ## Zustandsautomat (ECC)
 

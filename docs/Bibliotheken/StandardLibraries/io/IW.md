@@ -1,8 +1,11 @@
 # IW
 
-![](https://user-images.githubusercontent.com/69573151/210780698-5e8f8f13-fa13-49a1-91fa-d132aec3db58.png)
+```{index} single: IW
+```
+## 🎧 Podcast
 
-* * * * * * * * * *
+* [Miniware TS101: Das mobile Löt-Multitalent – Stärken, Schwächen und die USB-C Revolution](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Miniware-TS101-Das-mobile-Lt-Multitalent--Strken--Schwchen-und-die-USB-C-Revolution-e368lka)
+
 ## Einleitung
 Der IW-Funktionsblock (Input Word) ist ein Dienstschnittstellen-Funktionsblock für die Verarbeitung von Wort-Eingabedaten in 4diac-Systemen. Er dient als Schnittstelle zwischen der Steuerungslogik und externen Eingabegeräten oder Ressourcen, die Wort-Daten (16-Bit) bereitstellen.
 

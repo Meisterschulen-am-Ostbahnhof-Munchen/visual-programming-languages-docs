@@ -1,5 +1,8 @@
 # E_BLINK_TRAIN
 
+```{index} single: E_BLINK_TRAIN
+```
+
 ![E_BLINK_TRAIN](https://github.com/user-attachments/assets/41c5817d-1229-455b-b5c9-e7ad4003e0c5)
 
 * * * * * * * * * *

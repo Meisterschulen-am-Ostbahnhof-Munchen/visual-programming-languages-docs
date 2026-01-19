@@ -1,5 +1,8 @@
 # F_ADD
 
+```{index} single: F_ADD
+```
+
 ![Additionsbaustein](https://github.com/user-attachments/assets/3173760a-3b67-48dc-b078-43bcfc56423a)
 
 * * * * * * * * * *
@@ -44,10 +47,10 @@ Der **F_ADD** ist ein standardkonformer arithmetischer Funktionsbaustein nach IE
 
 ## Technische Spezifikationen
 
-✔ **Generische Typunterstützung** (ANY_MAGNITUDE)  
-✔ **Deterministische Ausführung**  
-✔ **Überlaufschutz**  
-✔ **IEC 61131-3 konform**  
+✔ **Generische Typunterstützung** (ANY_MAGNITUDE)
+✔ **Deterministische Ausführung**
+✔ **Überlaufschutz**
+✔ **IEC 61131-3 konform**
 
 ## Unterstützte Datentypen
 

@@ -1,5 +1,8 @@
 # PKP_2200_LI_IX
 
+```{index} single: PKP_2200_LI_IX
+```
+
 <img width="1893" height="365" alt="image" src="https://github.com/user-attachments/assets/4ab8ed94-c625-4318-8cef-598f76879881" />
 
 * * * * * * * * * *

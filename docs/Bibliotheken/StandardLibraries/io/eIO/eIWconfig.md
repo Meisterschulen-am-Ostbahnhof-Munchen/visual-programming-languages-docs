@@ -1,5 +1,8 @@
 # eIWconfig
 
+```{index} single: eIWconfig
+```
+
 <img width="1398" height="243" alt="image" src="https://github.com/user-attachments/assets/9688743e-0091-4849-bd83-351768377028" />
 
 * * * * * * * * * *
@@ -17,7 +20,7 @@ Der eIWconfig Funktionsblock dient als Service Interface für die Konfiguration 
 
 ### **Daten-Eingänge**
 - **ST** (WORD): "Smaller than" - Unterer Schwellwert
-- **BT** (WORD): "Bigger than" - Oberer Schwellwert  
+- **BT** (WORD): "Bigger than" - Oberer Schwellwert
 - **GRAD** (WORD): Gradient in Prozent - Steilheit der Übergänge
 
 ### **Daten-Ausgänge**

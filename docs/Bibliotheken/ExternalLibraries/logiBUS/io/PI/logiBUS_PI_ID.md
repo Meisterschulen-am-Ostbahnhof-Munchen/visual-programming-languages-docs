@@ -1,5 +1,8 @@
 # logiBUS_PI_ID
 
+```{index} single: logiBUS_PI_ID
+```
+
 <img width="1330" height="284" alt="image" src="https://github.com/user-attachments/assets/305f0854-9d3f-48c9-b61a-c134ab546dec" />
 
 * * * * * * * * * *

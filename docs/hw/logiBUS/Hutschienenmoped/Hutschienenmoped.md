@@ -1,10 +1,10 @@
 # Hutschienenmoped
 
+```{index} single: Hutschienenmoped
+```
+## 🎧 Podcast
 
-Link zum Devkit: <https://docs.m5stack.com/en/atom/atom_display>
-Link zum Devkit: <https://docs.m5stack.com/en/core/ATOM%20Lite>
-
-ACHTUNG: logiBUS® ist nicht auf dem Atom-Lite SKU:C008 lauffähig, nur auf dem Atom-PSRAM.
+* [Hutschienenmoped XL: ISOBUS ECU Entwicklung](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Hutschienenmoped-XL-ISOBUS-ECU-Entwicklung-e368hdg)
 
 ## IO
 
@@ -18,9 +18,7 @@ ACHTUNG: logiBUS® ist nicht auf dem Atom-Lite SKU:C008 lauffähig, nur auf dem 
 
 <https://docs.m5stack.com/en/unit/angle>
 
-Spannungsteiler ist NICHT im Controller sondern im Angle!!! Achtung wenn man den Eingang an andere Analogquellen anschließt muss ein externer Spannungsteiler vorgeschaltet werden. 
-
-
+Spannungsteiler ist NICHT im Controller sondern im Angle!!! Achtung wenn man den Eingang an andere Analogquellen anschließt muss ein externer Spannungsteiler vorgeschaltet werden.
 
 ### Digitale Eingänge
 
@@ -42,30 +40,7 @@ Spannungsteiler ist NICHT im Controller sondern im Angle!!! Achtung wenn man den
 | Output_Q3 | 33            |
 | Output_Q4 | 25            |
 
-
-
 ### LED Strip
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## Weitere Infos
 
@@ -73,6 +48,6 @@ Spannungsteiler ist NICHT im Controller sondern im Angle!!! Achtung wenn man den
 
 contains the Hutschienenmoped, a Open Source ISOBUS ECU.
 
-see more here: 
+see more here:
 
 <https://install-isobus-environment-docs.readthedocs.io/de/latest/HutschienenMoped.html>

@@ -1,5 +1,8 @@
 # F_LREAL_TO_DINT
 
+```{index} single: F_LREAL_TO_DINT
+```
+
 <img width="1448" height="210" alt="F_LREAL_TO_DINT" src="https://github.com/user-attachments/assets/ad2c6222-b7c0-4b49-b00b-e1ea330f724f" />
 
 * * * * * * * * * *

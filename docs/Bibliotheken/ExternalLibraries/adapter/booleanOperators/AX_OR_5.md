@@ -1,5 +1,8 @@
 # AX_OR_5
 
+```{index} single: AX_OR_5
+```
+
 <img width="963" height="369" alt="image" src="https://github.com/user-attachments/assets/7be25f5c-a69e-444a-9f06-b216c3290d77" />
 
 * * * * * * * * * *
@@ -27,7 +30,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 
 **Socket-Adapter:**
 - **IN1**: Unidirektionaler Adapter für ODER-Eingang 1
-- **IN2**: Unidirektionaler Adapter für ODER-Eingang 2  
+- **IN2**: Unidirektionaler Adapter für ODER-Eingang 2
 - **IN3**: Unidirektionaler Adapter für ODER-Eingang 3
 - **IN4**: Unidirektionaler Adapter für ODER-Eingang 4
 - **IN5**: Unidirektionaler Adapter für ODER-Eingang 5

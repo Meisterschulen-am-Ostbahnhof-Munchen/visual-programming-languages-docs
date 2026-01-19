@@ -1,5 +1,8 @@
 # CF_INFO_T
 
+```{index} single: CF_INFO_T
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `CF_INFO_T` (Control Function Information Type) ist eine strukturierte Datenkomponente, die innerhalb der ISO 11783 (ISOBUS)-Kommunikation verwendet wird. Er dient der standardisierten Abbildung und Verwaltung von Informationen über einen Teilnehmer (Control Function oder User) im ISOBUS-Netzwerk. Dieser Typedef fasst alle wesentlichen Merkmale und Zustände eines Netzwerkteilnehmers in einer einzigen Datenstruktur zusammen.

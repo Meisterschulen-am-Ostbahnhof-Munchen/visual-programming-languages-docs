@@ -1,5 +1,8 @@
 # ASSEMBLE_BYTE_FROM_BOOLS
 
+```{index} single: ASSEMBLE_BYTE_FROM_BOOLS
+```
+
 ![ASSEMBLE_BYTE_FROM_BOOLS](https://github.com/user-attachments/assets/4a70532a-aa28-4489-a8b6-5cf357a41460)
 
 * * * * * * * * * *

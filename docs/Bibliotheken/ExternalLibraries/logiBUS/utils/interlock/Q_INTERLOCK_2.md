@@ -1,5 +1,8 @@
 # Q_INTERLOCK_2
 
+```{index} single: Q_INTERLOCK_2
+```
+
 <img width="1630" height="363" alt="image" src="https://github.com/user-attachments/assets/16e11ed5-78f8-4474-8bd7-0c1cc9311808" />
 
 * * * * * * * * * *

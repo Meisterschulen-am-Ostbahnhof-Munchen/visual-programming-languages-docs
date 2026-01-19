@@ -1,5 +1,8 @@
 # Q_ChangeObjectLabel
 
+```{index} single: Q_ChangeObjectLabel
+```
+
 ![Q_ChangeObjectLabel](https://user-images.githubusercontent.com/116869307/214146892-63ae12b3-94e1-400d-bbdc-57754ce825f2.png)
 
 * * * * * * * * * *
@@ -47,10 +50,10 @@ Der **Q_ChangeObjectLabel** ist ein standardkonformer Funktionsbaustein zur Änd
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.50)  
-✔ **Flexible Beschriftung**: Text oder Grafik  
-✔ **Schriftart-Steuerung** (8-bit)  
-✔ **32-Zeichen Limit** für Textbeschriftungen  
+✔ **ISO 11783-6 konform** (F.50)
+✔ **Flexible Beschriftung**: Text oder Grafik
+✔ **Schriftart-Steuerung** (8-bit)
+✔ **32-Zeichen Limit** für Textbeschriftungen
 
 ## Standardparameter
 

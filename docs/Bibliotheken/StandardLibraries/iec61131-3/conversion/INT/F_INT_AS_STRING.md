@@ -1,5 +1,8 @@
 # F_INT_AS_STRING
 
+```{index} single: F_INT_AS_STRING
+```
+
 <img width="1244" height="182" alt="F_INT_AS_STRING" src="https://github.com/user-attachments/assets/c27e3bee-e252-420c-846b-caa7085610b7" />
 
 * * * * * * * * * *

@@ -1,5 +1,13 @@
 # QUARTER_TO_STR_MEASURED
 
+## 🎧 Podcast
+
+* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
+---- 
+```{index} single: QUARTER_TO_STR_MEASURED
+```
+
 <img width="1521" height="186" alt="image" src="https://github.com/user-attachments/assets/90319dba-980a-464e-aa11-c9c9729af26a" />
 
 * * * * * * * * * *

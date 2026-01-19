@@ -1,5 +1,8 @@
 # NmGetCfInfo
 
+```{index} single: NmGetCfInfo
+```
+
 <img width="1465" height="241" alt="image" src="https://github.com/user-attachments/assets/3ea313ab-46a3-4f18-9a72-53f679663551" />
 
 * * * * * * * * * *

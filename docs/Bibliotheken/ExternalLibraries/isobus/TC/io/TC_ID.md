@@ -1,5 +1,8 @@
 # TC_ID
 
+```{index} single: TC_ID
+```
+
 <img width="1359" height="261" alt="image" src="https://github.com/user-attachments/assets/430341ae-f535-482b-b9f2-3bfad916e8e4" />
 
 * * * * * * * * * *

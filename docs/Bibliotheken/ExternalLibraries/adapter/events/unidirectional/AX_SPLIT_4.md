@@ -1,5 +1,8 @@
 # AX_SPLIT_4
 
+```{index} single: AX_SPLIT_4
+```
+
 <img width="705" height="331" alt="image" src="https://github.com/user-attachments/assets/66b5a8a2-0227-4af4-8d00-17e48bfbe98c" />
 
 * * * * * * * * * *
@@ -26,7 +29,7 @@ Keine direkten Daten-Ausgänge vorhanden (Datenverarbeitung erfolgt über Adapte
 
 **Ausgangsadapter:**
 - `OUT1` - AX-Adapter (Plug) - Erster Ausgangskanal
-- `OUT2` - AX-Adapter (Plug) - Zweiter Ausgangskanal  
+- `OUT2` - AX-Adapter (Plug) - Zweiter Ausgangskanal
 - `OUT3` - AX-Adapter (Plug) - Dritter Ausgangskanal
 - `OUT4` - AX-Adapter (Plug) - Vierter Ausgangskanal
 

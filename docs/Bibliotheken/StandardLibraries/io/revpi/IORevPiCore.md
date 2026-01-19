@@ -1,5 +1,8 @@
 # IORevPiCore
 
+```{index} single: IORevPiCore
+```
+
 <img width="1374" height="243" alt="image" src="https://github.com/user-attachments/assets/482b592e-e1f6-4624-bb90-2a332f3aa7df" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # colours
 
+```{index} single: colours
+```
+
 * * * * * * * * * *
 ## Einleitung
 Das globale Konstantenpaket `colours` definiert eine Reihe von benannten Konstanten für Farbwerte. Diese Konstanten repräsentieren einen Satz von 16 vordefinierten Farben, die durch numerische Werte des Typs `USINT` (Unsigned Short Integer) kodiert sind. Die Verwendung solcher Konstanten verbessert die Lesbarkeit und Wartbarkeit von IEC 61499-Anwendungen, da anstelle von magischen Zahlen aussagekräftige Bezeichner wie `COLOR_RED` oder `COLOR_BLUE` verwendet werden können.

@@ -1,5 +1,8 @@
 # AX_RS
 
+```{index} single: AX_RS
+```
+
 <img width="1188" height="282" alt="image" src="https://github.com/user-attachments/assets/96fcd1e8-c68a-4b6e-a8f0-f615322d30e2" />
 
 * * * * * * * * * *
@@ -45,7 +48,7 @@ Der Funktionsblock verfügt über drei Zustände:
 
 **Zustandsübergänge:**
 - START → SET: bei S-Ereignis
-- SET → RESET: bei R-Ereignis  
+- SET → RESET: bei R-Ereignis
 - RESET → SET: bei S-Ereignis
 
 ## Anwendungsszenarien

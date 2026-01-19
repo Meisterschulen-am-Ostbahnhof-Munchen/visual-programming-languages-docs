@@ -1,5 +1,8 @@
 # sequence_ET_04
 
+```{index} single: sequence_ET_04
+```
+
 <img width="1642" height="359" alt="image" src="https://github.com/user-attachments/assets/832ed670-45d8-4465-b06b-c83d8d079f10" />
 
 * * * * * * * * * *

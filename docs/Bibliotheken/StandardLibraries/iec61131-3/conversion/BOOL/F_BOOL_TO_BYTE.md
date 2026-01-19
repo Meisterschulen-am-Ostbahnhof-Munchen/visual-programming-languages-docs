@@ -1,5 +1,8 @@
 # F_BOOL_TO_BYTE
 
+```{index} single: F_BOOL_TO_BYTE
+```
+
 <img width="1231" height="182" alt="F_BOOL_TO_BYTE" src="https://github.com/user-attachments/assets/726d9bee-c530-487f-ab01-086582dfd936" />
 
 * * * * * * * * * *

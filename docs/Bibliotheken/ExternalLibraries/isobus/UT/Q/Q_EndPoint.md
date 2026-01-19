@@ -1,5 +1,8 @@
 # Q_EndPoint
 
+```{index} single: Q_EndPoint
+```
+
 ![Q_EndPoint](https://user-images.githubusercontent.com/116869307/214147340-866900ae-dc9c-4cbd-a9e8-c8755d833674.png)
 
 * * * * * * * * * *
@@ -47,10 +50,10 @@ Der **Q_EndPoint** ist ein standardkonformer Funktionsbaustein zur Steuerung von
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-6 konform** (F.26 + B.27)  
-✔ **16-bit Positionsauflösung** (0-65535 Pixel)  
-✔ **Vollständige Liniensteuerung** (Position + Richtung)  
-✔ **Echtzeitfähige** Verarbeitung  
+✔ **ISO 11783-6 konform** (F.26 + B.27)
+✔ **16-bit Positionsauflösung** (0-65535 Pixel)
+✔ **Vollständige Liniensteuerung** (Position + Richtung)
+✔ **Echtzeitfähige** Verarbeitung
 
 ## Linienrichtungen (B.27)
 

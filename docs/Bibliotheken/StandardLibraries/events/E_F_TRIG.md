@@ -1,5 +1,8 @@
 # E_F_TRIG
 
+```{index} single: E_F_TRIG
+```
+
 ![E_F_TRIG Diagram](https://user-images.githubusercontent.com/113907528/204898671-3eb058ff-7481-4fc8-a2d4-8cf50f349cee.png)
 
 * * * * * * * * * *
@@ -12,54 +15,42 @@ Der **E_F_TRIG** (Falling Edge Trigger) ist ein grundlegender Funktionsbaustein 
 ### Schnittstelle (Interface)
 
 **Ereignis-Eingänge:**
-- `EI` (Event Input): Aktiviert die Flankenerkennung
-- `QI`: Zu überwachendes Eingangssignal (BOOL)
+- **EI (Event Input)**: Löst die Prüfung auf eine Flanke aus.
+    - **Verbundene Daten**: `QI`
 
 **Ereignis-Ausgänge:**
-- `EO` (Event Output): Wird bei Erkennung einer fallenden Flanke ausgelöst
+- **EO (Event Output)**: Wird ausgelöst, wenn eine Flanke erkannt wurde.
+
+**Daten-Eingänge:**
+- **QI (Qualifier Input)**: Das zu überwachende boolesche Signal (Datentyp: `BOOL`).
 
 ## Funktionsweise
+Der `E_F_TRIG` soll eine fallende Flanke am `QI`-Eingang erkennen. Eine fallende Flanke tritt auf, wenn `QI` beim letzten `EI`-Ereignis `TRUE` war und beim aktuellen `EI`-Ereignis `FALSE` ist.
 
-1. **Flankenerkennung:**
-   - Bei jedem `EI`-Ereignis wird der aktuelle Zustand von `QI` geprüft
-   - Eine fallende Flanke liegt vor, wenn `QI` von TRUE auf FALSE wechselt
+Bei jedem `EI`-Ereignis wird der aktuelle Zustand von `QI` mit dem Zustand aus dem vorherigen Zyklus verglichen. Wenn eine fallende Flanke erkannt wird, sollte das `EO`-Ereignis ausgelöst werden.
 
-2. **Ereignisauslösung:**
-   - Bei Erkennung einer fallenden Flanke wird `EO` ausgelöst
-   - Ohne Flankenwechsel bleibt `EO` inaktiv
-
-3. **Speicherverhalten:**
-   - Der Baustein merkt sich den letzten Zustand von `QI`
-   - Nur echte Zustandsänderungen werden detektiert
+**Achtung: Fehlerhafte Implementierung**
+Die interne Logik des Bausteins (Stand: `events-3.0.0`) ist fehlerhaft und implementiert tatsächlich einen **steigenden Flankendetektor (`E_R_TRIG`)** anstatt eines fallenden. Das `EO`-Ereignis wird ausgelöst, wenn `QI` von `FALSE` auf `TRUE` wechselt.
 
 ## Technische Besonderheiten
 
-✔ **Präzise Flankendetektion** für zuverlässige Signalauswertung  
-✔ **Ereignisgesteuert** (kein zyklischer Aufruf erforderlich)  
-✔ **Echtzeitfähig** für industrielle Anwendungen  
-✔ **Einfache Integration** in bestehende Steuerungsarchitekturen  
+✔ **Ereignisgesteuert**: Die Prüfung erfolgt nur, wenn ein `EI`-Ereignis eintritt.
+✔ **Fehlerhafte Logik**: Der Baustein ist als `E_F_TRIG` benannt, seine interne Verschaltung eines `E_D_FF` und `E_SWITCH` bewirkt jedoch, dass er auf eine **steigende Flanke** reagiert. Nutzer, die eine fallende Flankenerkennung benötigen, müssen stattdessen den `E_R_TRIG`-Baustein verwenden und dessen Eingang negieren oder auf eine Korrektur des Bausteins warten.
 
-## Anwendungsszenarien
+## Anwendungsszenarien (für eine fallende Flanke)
 
-- **Sensordatenauswertung**: Erkennung von Schaltvorgängen
-- **Maschinensicherheit**: Detektion von Not-Aus-Signalen
-- **Prozessüberwachung**: Erkennung von Zustandsänderungen
-- **Taktgenerierung**: Erzeugung von Steuerimpulsen
+- **Sensordatenauswertung**: Erkennen, wenn ein Sensor von "aktiv" auf "inaktiv" wechselt.
+- **Maschinensicherheit**: Detektion, wenn ein Schutzkontakt von "geschlossen" (TRUE) auf "offen" (FALSE) geht.
+- **Prozessüberwachung**: Erkennen des Endes eines Signals oder Prozesses.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-| Feature        | E_F_TRIG | E_R_TRIG | E_SWITCH |
-|---------------|----------|----------|----------|
-| Flankentyp    | Fallend  | Steigend | -        |
+| Feature        | E_F_TRIG (dieser) | E_R_TRIG | E_SWITCH |
+|---------------|------------------|----------|----------|
+| Erkannte Flanke | Fallend (benannt), Steigend (implementiert) | Steigend | - |
 | Ereignissteuerung | Ja     | Ja       | Ja       |
-| Signalauswertung | Boolesch | Boolesch | Analog/Digital |
+| Prinzip | Flankendetektor | Flankendetektor | Ereignisweiche |
 
 ## Fazit
 
-Der E_F_TRIG-Baustein ist ein unverzichtbares Werkzeug für die Signalverarbeitung in Automatisierungssystemen. Seine Hauptvorteile sind:
-
-- Zuverlässige Erkennung fallender Flanken
-- Sofortige Reaktion auf Signaländerungen
-- Robuste Integration in verteilte Steuerungsarchitekturen
-
-Durch seine spezialisierte Funktionalität und Standardkonformität nach IEC 61499 eignet er sich ideal für Sicherheitsanwendungen und präzise Steuerungsaufgaben in industriellen Umgebungen. Die ereignisgesteuerte Arbeitsweise macht ihn besonders effizient in komplexen Steuerungssystemen.
+Der E_F_TRIG-Baustein ist dazu gedacht, fallende Flanken zu erkennen, was ein häufiger Anwendungsfall in der Steuerungstechnik ist. **Aufgrund eines Implementierungsfehlers in der `events-3.0.0`-Bibliothek funktioniert dieser Baustein jedoch als Detektor für steigende Flanken.** Diese Diskrepanz zwischen Name und Funktion ist kritisch und muss bei der Verwendung unbedingt beachtet werden. Für eine zuverlässige Erkennung fallender Flanken sollte auf alternative Logiken zurückgegriffen werden.

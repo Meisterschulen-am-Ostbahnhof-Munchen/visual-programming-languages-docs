@@ -1,5 +1,8 @@
 # F_UDINT_TO_INT
 
+```{index} single: F_UDINT_TO_INT
+```
+
 <img width="1446" height="212" alt="F_UDINT_TO_INT" src="https://github.com/user-attachments/assets/e374f818-7a4c-400e-8da2-7b27a801baf9" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # F_BOOL_TO_USINT
 
+```{index} single: F_BOOL_TO_USINT
+```
+
 <img width="1450" height="212" alt="F_BOOL_TO_USINT" src="https://github.com/user-attachments/assets/72e9600a-837a-49a8-b423-6f5380816310" />
 
 * * * * * * * * * *

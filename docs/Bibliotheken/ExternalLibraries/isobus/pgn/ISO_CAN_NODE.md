@@ -1,5 +1,8 @@
 # ISO_CAN_NODE
 
+```{index} single: ISO_CAN_NODE
+```
+
 * * * * * * * * * *
 ## Einleitung
 Die globale Konstantendatei `ISO_CAN_NODE` definiert eine Reihe von numerischen Konstanten zur Identifikation von CAN-Knoten (Controller Area Network) innerhalb eines 4diac-Projekts. Sie dient der Abstraktion und Vereinheitlichung von Knotenadressen, um die Lesbarkeit und Wartbarkeit von Applikationen zu erhöhen, die mit mehreren CAN-Bussen arbeiten.

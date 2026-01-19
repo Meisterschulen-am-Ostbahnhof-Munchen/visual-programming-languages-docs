@@ -1,5 +1,8 @@
 # NmSetNameField
 
+```{index} single: NmSetNameField
+```
+
 <img width="1070" height="248" alt="image" src="https://github.com/user-attachments/assets/f7752178-ab95-47c7-9972-b0f2c8b49ec3" />
 
 * * * * * * * * * *

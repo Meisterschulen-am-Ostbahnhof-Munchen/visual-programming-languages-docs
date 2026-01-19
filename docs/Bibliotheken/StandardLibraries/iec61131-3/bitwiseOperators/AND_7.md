@@ -1,5 +1,8 @@
 # AND_7
 
+```{index} single: AND_7
+```
+
 <img width="1123" height="339" alt="AND_7 Funktinosblock" src="https://github.com/user-attachments/assets/a65ddf80-7688-483f-a906-c1dfff9fabd3" />
 
 * * * * * * * * * *

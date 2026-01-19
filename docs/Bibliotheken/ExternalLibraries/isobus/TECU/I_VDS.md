@@ -1,5 +1,8 @@
 # I_VDS
 
+```{index} single: I_VDS
+```
+
 ![I_VDS](https://github.com/user-attachments/assets/44a66235-75eb-4315-b30c-478582f14e6e)
 
 * * * * * * * * * *
@@ -47,10 +50,10 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 
 ## Technische Besonderheiten
 
-✔ **ISO 11783-7 konform** (PGN 65256)  
-✔ **Hochpräzise Richtungserfassung** mit 0.008° Auflösung  
-✔ **GPS-basierte Geschwindigkeit** mit 0.004 km/h Genauigkeit  
-✔ **Erweiterte Sensordaten** (Nickwinkel/Höhe reserviert)  
+✔ **ISO 11783-7 konform** (PGN 65256)
+✔ **Hochpräzise Richtungserfassung** mit 0.008° Auflösung
+✔ **GPS-basierte Geschwindigkeit** mit 0.004 km/h Genauigkeit
+✔ **Erweiterte Sensordaten** (Nickwinkel/Höhe reserviert)
 
 ## Anwendungsszenarien
 

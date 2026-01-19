@@ -1,5 +1,8 @@
 # F_UINT_TO_LINT
 
+```{index} single: F_UINT_TO_LINT
+```
+
 <img width="1436" height="216" alt="F_UINT_TO_LINT" src="https://github.com/user-attachments/assets/8f25baa4-d194-4dfd-887d-b962e086c413" />
 
 * * * * * * * * * *

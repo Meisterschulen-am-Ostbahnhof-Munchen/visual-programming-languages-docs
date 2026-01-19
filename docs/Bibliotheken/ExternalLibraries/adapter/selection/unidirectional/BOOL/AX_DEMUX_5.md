@@ -1,5 +1,8 @@
 # AX_DEMUX_5
 
+```{index} single: AX_DEMUX_5
+```
+
 <img width="1220" height="301" alt="image" src="https://github.com/user-attachments/assets/8dd714c2-442d-4dc9-8935-4adc6eee0cd4" />
 
 * * * * * * * * * *
@@ -27,7 +30,7 @@ Der AX_DEMUX_5 ist ein generischer Demultiplexer-Funktionsblock, der eingehende 
 
 **Plugs:**
 - **OUT1**: AX-Ausgangsadapter 1
-- **OUT2**: AX-Ausgangsadapter 2  
+- **OUT2**: AX-Ausgangsadapter 2
 - **OUT3**: AX-Ausgangsadapter 3
 - **OUT4**: AX-Ausgangsadapter 4
 - **OUT5**: AX-Ausgangsadapter 5

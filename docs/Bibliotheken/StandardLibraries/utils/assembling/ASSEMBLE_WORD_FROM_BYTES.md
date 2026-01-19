@@ -1,5 +1,8 @@
 # ASSEMBLE_WORD_FROM_BYTES
 
+```{index} single: ASSEMBLE_WORD_FROM_BYTES
+```
+
 ![ASSEMBLE_WORD_FROM_BYTES](https://github.com/user-attachments/assets/7ddc020d-4826-42e2-8447-7ba0fcfd215a)
 
 * * * * * * * * * *

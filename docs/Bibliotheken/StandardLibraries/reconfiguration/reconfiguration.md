@@ -1,5 +1,8 @@
 # reconfiguration
 
+```{index} single: reconfiguration
+```
+
 ```{toctree}
 EC_KILL_ELEM
 EC_SET_EVT

@@ -1,5 +1,8 @@
 # DualHysteresis
 
+```{index} single: DualHysteresis
+```
+
 <img width="1018" height="208" alt="DualHysteresis" src="https://github.com/user-attachments/assets/35798c6a-73cc-4b4d-b1ce-f9635b8f4546" />
 
 * * * * * * * * * *

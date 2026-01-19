@@ -1,6 +1,9 @@
 # E_SELECT
 
-![E_SELECT Logiksymbol](https://user-images.githubusercontent.com/69573151/210802464-116ee202-5bba-4394-bb08-38411823d000.png)  
+```{index} single: E_SELECT
+```
+
+![E_SELECT Logiksymbol](https://user-images.githubusercontent.com/69573151/210802464-116ee202-5bba-4394-bb08-38411823d000.png)
 
 * * * * * * * * * *
 
@@ -41,10 +44,10 @@ Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A
 
 ## Technische Besonderheiten
 
-✔ **Boolesche Steuerung** der Ereignisauswahl  
-✔ **Echtzeitfähige** Verarbeitung  
-✔ **Zustandsbasierte** Implementierung (BasicFB)  
-✔ **EPL-2.0 Open-Source** Implementierung  
+✔ **Boolesche Steuerung** der Ereignisauswahl
+✔ **Echtzeitfähige** Verarbeitung
+✔ **Zustandsbasierte** Implementierung (BasicFB)
+✔ **EPL-2.0 Open-Source** Implementierung
 
 ## Anwendungsszenarien
 
@@ -57,9 +60,9 @@ Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A
 
 | Feature        | E_SELECT | E_SWITCH | E_MERGE |
 |---------------|----------|----------|---------|
-| Auswahlkriterium | Boolesch | Beliebig | Keines |
-| Richtung      | 2:1      | 1:1      | n:1     |
-| Zustandsmodell | BasicFB  | Typabhängig | Keins |
+| Auswahlkriterium | Boolesch (`G`) | Boolesch (`G`) | Keines |
+| Richtung      | 2:1 (Multiplexer)      | 1:2 (Demultiplexer)     | n:1 (OR-Gatter)     |
+| Zustandsmodell | BasicFB  | BasicFB | BasicFB/Generic |
 
 ## Fazit
 

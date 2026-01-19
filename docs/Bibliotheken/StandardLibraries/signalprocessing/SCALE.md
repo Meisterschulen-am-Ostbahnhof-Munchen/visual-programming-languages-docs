@@ -1,5 +1,8 @@
 # SCALE
 
+```{index} single: SCALE
+```
+
 <img width="668" height="239" alt="SCALE" src="https://github.com/user-attachments/assets/b3a2d282-98ec-47f2-a311-70f4d8aa9d90" />
 
 * * * * * * * * * *

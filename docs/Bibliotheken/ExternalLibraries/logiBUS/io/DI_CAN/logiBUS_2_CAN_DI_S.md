@@ -1,5 +1,8 @@
 # logiBUS_2_CAN_DI_S
 
+```{index} single: logiBUS_2_CAN_DI_S
+```
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsbaustein `logiBUS_2_CAN_DI_S` ist ein strukturierter Datentyp (Struct), der zur Konfiguration eines digitalen Eingangs (DI) für ein logiBUS-CAN-System dient. Er definiert die grundlegenden Parameter, die benötigt werden, um einen physischen Eingangspin auf einem logiBUS-CAN-Modul zu adressieren und zu nutzen. Dieser Datentyp dient typischerweise als Eingabe für übergeordnete Funktionsbausteine, die die eigentliche Kommunikation über das CAN-Protokoll abwickeln.

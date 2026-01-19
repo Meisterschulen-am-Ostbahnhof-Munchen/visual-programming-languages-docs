@@ -1,5 +1,8 @@
 # ISO_NETEVENT_e
 
+```{index} single: ISO_NETEVENT_e
+```
+
 * * * * * * * * * *
 ## Einleitung
 Die globale Konstantendatei `ISO_NETEVENT_e` definiert eine Aufzählung (Enumeration) von Ereignistypen für das Netzwerkmanagement in einem ISOBUS-kompatiblen System. Sie stellt benannte, ganzzahlige Konstanten zur Verfügung, die verschiedene Zustandsänderungen und Ereignisse im Netzwerk repräsentieren, wie z.B. das Hinzufügen oder Entfernen von Teilnehmern oder Adresskonflikte. Die Verwendung dieser Konstanten erhöht die Lesbarkeit und Wartbarkeit des Quellcodes.

@@ -1,5 +1,8 @@
 # F_SEL_E_4
 
+```{index} single: F_SEL_E_4
+```
+
 ![F_SEL_E_4](https://github.com/user-attachments/assets/2deb1c98-9daf-4a3c-b155-a719bb97771b)
 
 * * * * * * * * * *

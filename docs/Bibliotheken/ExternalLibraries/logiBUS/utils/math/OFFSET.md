@@ -1,5 +1,8 @@
 # OFFSET
 
+```{index} single: OFFSET
+```
+
 <img width="1417" height="209" alt="image" src="https://github.com/user-attachments/assets/95399eba-9583-4cfe-af8d-3c4314a23cc2" />
 
 * * * * * * * * * *

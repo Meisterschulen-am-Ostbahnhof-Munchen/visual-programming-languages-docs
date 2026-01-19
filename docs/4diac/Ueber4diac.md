@@ -1,5 +1,8 @@
 # Über Eclipse 4diac™
 
+```{index} single: Über Eclipse 4diac™
+```
+
 ## Gedicht über 4diac im Stile Göthes
 
 Im 4diac fließen Ströme von Code,
@@ -48,7 +51,7 @@ am 7.7.2007 wurde die erste 4diac Version vom ACIN TU Wien vorgestellt.
 
 davor waren schon ca. 2 Jahre Forschung und Entwicklung
 
-dazwischen wurde 4diac am fortiss, und heute an der JKU entwickelt. 
+dazwischen wurde 4diac am fortiss, und heute an der JKU entwickelt.
 
 am 7.7.2022 feierte 4diac 15 Jähriges.
 
@@ -56,7 +59,7 @@ am 7.7.2022 feierte 4diac 15 Jähriges.
 
 [https://de.wikipedia.org/wiki/Open_Source](https://de.wikipedia.org/wiki/Open_Source)
 
-4diac ist dabei komplett Open Source. Das heißt es ist sowohl kostenlos verfügbar, wie auch dass jedermann das Programm selbst weiterentwickeln und anpassen kann. 
+4diac ist dabei komplett Open Source. Das heißt es ist sowohl kostenlos verfügbar, wie auch dass jedermann das Programm selbst weiterentwickeln und anpassen kann.
 
 Details regelt dieser Vertrag:
 

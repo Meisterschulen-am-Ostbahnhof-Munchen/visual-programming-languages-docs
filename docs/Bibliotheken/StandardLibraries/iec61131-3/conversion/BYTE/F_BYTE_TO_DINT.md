@@ -1,5 +1,8 @@
 # F_BYTE_TO_DINT
 
+```{index} single: F_BYTE_TO_DINT
+```
+
 <img width="1234" height="183" alt="F_BYTE_TO_DINT" src="https://github.com/user-attachments/assets/33fb3b6c-7400-46dd-b1bd-7f5031adddf3" />
 
 * * * * * * * * * *

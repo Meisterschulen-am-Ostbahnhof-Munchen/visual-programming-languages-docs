@@ -1,5 +1,8 @@
 # utils
 
+```{index} single: utils
+```
+
 ```{toctree}
 conversion/conversion
 interlock/interlock

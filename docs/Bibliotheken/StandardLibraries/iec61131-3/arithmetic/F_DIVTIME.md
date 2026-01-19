@@ -1,5 +1,8 @@
 # F_DIVTIME
 
+```{index} single: F_DIVTIME
+```
+
 ![F_DIVTIME](https://github.com/user-attachments/assets/c442ada4-119c-4919-be55-9c5e0d7acb7c)
 
 * * * * * * * * * *
@@ -39,10 +42,10 @@ Der **F_DIVTIME** ist ein spezialisierter Funktionsbaustein zur Division von Zei
 
 ## Technische Spezifikationen
 
-✔ **Präzise Zeitdivision**  
-✔ **Unterstützung für ANY_NUM-Divisoren**  
-✔ **Millisekundengenaue Berechnung**  
-✔ **Automatische Typkonvertierung**  
+✔ **Präzise Zeitdivision**
+✔ **Unterstützung für ANY_NUM-Divisoren**
+✔ **Millisekundengenaue Berechnung**
+✔ **Automatische Typkonvertierung**
 
 ## Anwendungsbeispiele
 

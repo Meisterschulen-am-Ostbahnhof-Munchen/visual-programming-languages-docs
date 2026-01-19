@@ -1,5 +1,8 @@
 # AlPgnTxNew8Bcycl
 
+```{index} single: AlPgnTxNew8Bcycl
+```
+
 <img width="1423" height="294" alt="image" src="https://github.com/user-attachments/assets/6227eb0b-12b6-465a-b728-3774bc6847d3" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # AuxiliaryState
 
+```{index} single: AuxiliaryState
+```
+
 * * * * * * * * * *
 
 ## Einleitung

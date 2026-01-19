@@ -1,5 +1,8 @@
 # F_BOOL_TO_LINT
 
+```{index} single: F_BOOL_TO_LINT
+```
+
 <img width="1234" height="182" alt="F_BOOL_TO_LINT" src="https://github.com/user-attachments/assets/4c333a4d-5021-4e63-8ee2-fdf1494dd38f" />
 
 * * * * * * * * * *

@@ -1,5 +1,8 @@
 # E_SREN
 
+```{index} single: E_SREN
+```
+
 <img width="1633" height="341" alt="image" src="https://github.com/user-attachments/assets/637ba12a-c1ae-4cc7-a7c5-06b2888347d5" />
 
 * * * * * * * * * *

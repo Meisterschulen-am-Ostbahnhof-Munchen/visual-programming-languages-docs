@@ -1,5 +1,8 @@
 # F_ADD_DT_TIME
 
+```{index} single: F_ADD_DT_TIME
+```
+
 ![Zeitadditionssymbol](https://github.com/user-attachments/assets/1fda9baa-1d7c-4fa6-8c87-608436deefa8)
 
 * * * * * * * * * *
@@ -41,10 +44,10 @@ Der **F_ADD_DT_TIME** ist ein spezialisierter Funktionsbaustein zur Addition von
 
 ## Technische Spezifikationen
 
-✔ **Präzise Zeit-/Datumsarithmetik**  
-✔ **Automatische Kalenderberechnung**  
-✔ **IEC 61131-3 konform**  
-✔ **Deterministische Ausführung**  
+✔ **Präzise Zeit-/Datumsarithmetik**
+✔ **Automatische Kalenderberechnung**
+✔ **IEC 61131-3 konform**
+✔ **Deterministische Ausführung**
 
 ## Anwendungsbeispiele
 
@@ -55,7 +58,7 @@ Der **F_ADD_DT_TIME** ist ein spezialisierter Funktionsbaustein zur Addition von
 
 ## Besondere Hinweise
 
-- **Gültigkeitsbereich**: 
+- **Gültigkeitsbereich**:
   - Unterstützt Datumsbereich 1970-2099
   - Zeitauflösung: 1 Millisekunde
 

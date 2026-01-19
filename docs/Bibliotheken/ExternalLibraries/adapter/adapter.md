@@ -2,6 +2,16 @@
 
 ```{index} single: adapter
 ```
+
+```{toctree}
+types/types
+selection/selection
+iec61131/iec61131
+events/events
+conversion/conversion
+booleanOperators/booleanOperators
+```
+
 ## 🎧 Podcast
 
 * [Code-Renovierung mit AX-Adaptern: Wie Eclipse 4diac™ durch Signal-Bündelung Komplexität besiegt](https://podcasters.spotify.com/pod/show/logibus/episodes/Code-Renovierung-mit-AX-Adaptern-Wie-Eclipse-4diac-durch-Signal-Bndelung-Komplexitt-besiegt-e3ahcd1)

@@ -1,5 +1,17 @@
 # io
 
+```{toctree}
+:maxdepth: 1
+
+AI/AI
+DI/DI
+DI_CAN/DI_CAN
+DO/DO
+DO-LED/DO-LED
+DO-Servo/DO-Servo
+PI/PI
+```
+
 ## 📺 Video
 
 * [Automation der Zukunft](https://www.youtube.com/watch?v=gqdgimyAk60)

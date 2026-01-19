@@ -1,5 +1,11 @@
 # Building
 
+```{toctree}
+:maxdepth: 1
+
+POUs/POUs
+```
+
 ```{index} single: Building
 ```
 ## 🎧 Podcast

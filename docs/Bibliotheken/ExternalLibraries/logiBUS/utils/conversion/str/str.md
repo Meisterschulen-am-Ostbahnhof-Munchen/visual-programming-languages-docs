@@ -1,5 +1,16 @@
 # str
 
+```{toctree}
+:maxdepth: 1
+
+assembling/assembling
+converting/converting
+forwarding/forwarding
+reversing/reversing
+splitting/splitting
+types/types
+```
+
 ```{index} single: str
 ```
 ## 🎧 Podcast

@@ -1,5 +1,11 @@
 # io
 
+```{toctree}
+:maxdepth: 1
+
+DI/DI
+```
+
 ## 📺 Video
 
 * [Automation der Zukunft](https://www.youtube.com/watch?v=gqdgimyAk60)

@@ -1,5 +1,11 @@
 # DI
 
+```{toctree}
+:maxdepth: 1
+
+PKP-2200-LI/PKP-2200-LI
+```
+
 ## 📺 Video
 
 * [Decoding the datasheet](https://www.youtube.com/watch?v=0Ed9I68F2tM)

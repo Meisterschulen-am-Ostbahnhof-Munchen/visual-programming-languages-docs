@@ -1,5 +1,11 @@
 # TC
 
+```{toctree}
+:maxdepth: 1
+
+io/io
+```
+
 ```{index} single: TC
 ```
 ## 🎧 Podcast

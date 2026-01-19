@@ -1,5 +1,11 @@
 # esp32
 
+```{toctree}
+:maxdepth: 1
+
+rgb/rgb
+```
+
 ## 📺 Video
 
 * [Das ESP32-S3-DevKitC-1](https://www.youtube.com/watch?v=fyQt3THIQEQ)

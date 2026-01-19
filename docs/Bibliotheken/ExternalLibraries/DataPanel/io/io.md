@@ -1,5 +1,12 @@
 # io
 
+```{toctree}
+:maxdepth: 1
+
+Modules with low IO density/Modules with low IO density
+Modules with medium IO density/Modules with medium IO density
+```
+
 ## 📺 Video
 
 * [Automation der Zukunft](https://www.youtube.com/watch?v=gqdgimyAk60)

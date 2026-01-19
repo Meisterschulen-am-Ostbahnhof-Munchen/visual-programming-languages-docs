@@ -1,5 +1,14 @@
 # arr
 
+```{toctree}
+:maxdepth: 1
+
+assembling/assembling
+forwarding/forwarding
+reversing/reversing
+splitting/splitting
+```
+
 ```{index} single: arr
 ```
 ## 🎧 Podcast

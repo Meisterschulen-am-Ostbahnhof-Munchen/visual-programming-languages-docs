@@ -1,5 +1,13 @@
 # Hardware
 
+```{toctree}
+:maxdepth: 1
+
+logiBUS/logiBUS
+PC/PC
+SPS/SPS
+```
+
 ```{index} single: Hardware
 ```
 ## 🎧 Podcast

@@ -1,5 +1,11 @@
 # version
 
+```{toctree}
+:maxdepth: 1
+
+fboot/fboot
+```
+
 ```{index} single: version
 ```
 ## 🎧 Podcast

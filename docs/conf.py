@@ -8,7 +8,7 @@
 
 
 import sys; 
-sys.setrecursionlimit(1500)
+sys.setrecursionlimit(3500)
 
 
 project = "Visuelle Programmiersprachen: Low-Code (4)"

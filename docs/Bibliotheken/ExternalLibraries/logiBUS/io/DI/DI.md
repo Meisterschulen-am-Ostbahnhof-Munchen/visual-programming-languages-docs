@@ -1,5 +1,21 @@
 # DI
 
+
+```{toctree}
+:maxdepth: 1
+
+logiBUS_DI
+logiBUS_DI_Events
+logiBUS_DI_Events_S
+logiBUS_DI_S
+logiBUS_IB
+logiBUS_ID
+logiBUS_IE
+logiBUS_IE2
+logiBUS_IX
+logiBUS_IXA
+```
+
 ## 📺 Video
 
 * [Decoding the datasheet](https://www.youtube.com/watch?v=0Ed9I68F2tM)

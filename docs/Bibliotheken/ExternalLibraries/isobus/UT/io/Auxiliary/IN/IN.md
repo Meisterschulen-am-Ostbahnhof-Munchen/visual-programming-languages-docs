@@ -2,6 +2,19 @@
 
 ```{index} single: IN
 ```
+
+```{toctree}
+:maxdepth: 1
+
+Aux_IE
+Aux_IX
+Aux_IXA
+Aux_Val1_IW
+Aux_Val2_IW
+AuxiliaryState
+AuxiliaryState_S
+```
+
 ## 🎧 Podcast
 
 * [4diac IDE: Dein "Hello World" der Automatisierung – Das Blinking Tutorial Lokal](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)

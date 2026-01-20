@@ -1,5 +1,14 @@
 # AI
 
+
+```{toctree}
+:maxdepth: 1
+
+logiBUS_AI
+logiBUS_AI_ID
+logiBUS_AI_S
+```
+
 ## 📺 Video
 
 * [AI: The Unknown Story](https://www.youtube.com/watch?v=9hD5RETI72w)

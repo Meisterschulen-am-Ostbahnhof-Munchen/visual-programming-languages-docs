@@ -1,5 +1,15 @@
 # DI
 
+
+```{toctree}
+:maxdepth: 1
+
+DataPanel_MI_DI
+DataPanel_MI_DI_S
+DataPanel_MI_IX
+DataPanel_MI_IXA
+```
+
 ## 📺 Video
 
 * [Decoding the datasheet](https://www.youtube.com/watch?v=0Ed9I68F2tM)

@@ -1,5 +1,14 @@
 # AI
 
+
+```{toctree}
+:maxdepth: 1
+
+DataPanel_MI_AI
+DataPanel_MI_AI_S
+DataPanel_MI_IW
+```
+
 ## 📺 Video
 
 * [AI: The Unknown Story](https://www.youtube.com/watch?v=9hD5RETI72w)

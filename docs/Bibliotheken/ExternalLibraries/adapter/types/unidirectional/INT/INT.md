@@ -2,6 +2,13 @@
 
 ```{index} single: Unidirectional INT Adapter
 ```
+
+```{toctree}
+:maxdepth: 1
+
+AI
+```
+
 ## 🎧 Podcast
 
 * [Eclipse 4diac 3.0: ST-Interpreter, FBE und 7200 Commits – Der Turbo für verteilte Automatisierung](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-3-0-ST-Interpreter--FBE-und-7200-Commits--Der-Turbo-fr-verteilte-Automatisierung-e3a5cpl)

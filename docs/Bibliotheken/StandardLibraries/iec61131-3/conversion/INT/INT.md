@@ -2,6 +2,27 @@
 
 ```{index} single: INT Konvertierungen
 ```
+
+```{toctree}
+:maxdepth: 1
+
+F_INT_AS_STRING
+F_INT_AS_WSTRING
+F_INT_TO_BYTE
+F_INT_TO_DINT
+F_INT_TO_DWORD
+F_INT_TO_LINT
+F_INT_TO_LREAL
+F_INT_TO_LWORD
+F_INT_TO_REAL
+F_INT_TO_SINT
+F_INT_TO_UDINT
+F_INT_TO_UINT
+F_INT_TO_ULINT
+F_INT_TO_USINT
+F_INT_TO_WORD
+```
+
 ## 🎧 Podcast
 
 * [Eclipse 4diac 3.0: ST-Interpreter, FBE und 7200 Commits – Der Turbo für verteilte Automatisierung](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-3-0-ST-Interpreter--FBE-und-7200-Commits--Der-Turbo-fr-verteilte-Automatisierung-e3a5cpl)

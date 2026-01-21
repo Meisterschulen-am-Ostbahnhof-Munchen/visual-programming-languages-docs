@@ -2,6 +2,34 @@
 
 ```{index} single: TIME Konvertierungen
 ```
+
+```{toctree}
+:maxdepth: 1
+
+F_TIME_AS_STRING
+F_TIME_AS_WSTRING
+F_TIME_IN_MS_TO_DINT
+F_TIME_IN_MS_TO_LINT
+F_TIME_IN_MS_TO_LREAL
+F_TIME_IN_MS_TO_UDINT
+F_TIME_IN_MS_TO_ULINT
+F_TIME_IN_NS_TO_DINT
+F_TIME_IN_NS_TO_LINT
+F_TIME_IN_NS_TO_LREAL
+F_TIME_IN_NS_TO_UDINT
+F_TIME_IN_NS_TO_ULINT
+F_TIME_IN_S_TO_DINT
+F_TIME_IN_S_TO_LINT
+F_TIME_IN_S_TO_LREAL
+F_TIME_IN_S_TO_UDINT
+F_TIME_IN_S_TO_ULINT
+F_TIME_IN_US_TO_DINT
+F_TIME_IN_US_TO_LINT
+F_TIME_IN_US_TO_LREAL
+F_TIME_IN_US_TO_UDINT
+F_TIME_IN_US_TO_ULINT
+```
+
 ## 🎧 Podcast
 
 * [Die drei Timer der DIN EN 61131-3 entschlüsselt – TP, TON & TOF präzise erklärt](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Die-drei-Timer-der-DIN-EN-61131-3-entschlsselt--TP--TON--TOF-przise-erklrt-e3dma77)

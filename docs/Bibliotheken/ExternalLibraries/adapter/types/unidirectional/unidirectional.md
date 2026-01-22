@@ -1,6 +1,6 @@
-# unidirectional
+# Unidirectional Adapters
 
-```{index} single: unidirectional
+```{index} single: Unidirectional Adapters
 ```
 
 ```{toctree}

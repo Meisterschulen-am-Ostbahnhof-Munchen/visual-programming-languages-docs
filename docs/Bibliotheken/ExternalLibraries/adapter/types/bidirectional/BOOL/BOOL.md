@@ -1,6 +1,6 @@
-# BOOL
+# Bidirectional BOOL Adapter
 
-```{index} single: BOOL
+```{index} single: Bidirectional BOOL Adapter
 ```
 
 ```{toctree}

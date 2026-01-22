@@ -1,6 +1,6 @@
-# bidirectional
+# Bidirectional Adapters
 
-```{index} single: bidirectional
+```{index} single: Bidirectional Adapters
 ```
 
 ```{toctree}

@@ -1,6 +1,6 @@
-# BYTE
+# Bidirectional BYTE Adapter
 
-```{index} single: BYTE
+```{index} single: Bidirectional BYTE Adapter
 ```
 
 ```{toctree}

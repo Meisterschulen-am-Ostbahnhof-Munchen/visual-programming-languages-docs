@@ -35,7 +35,7 @@ Vom kostengünstigen Einstiegsmodell für Lehre und einfache Projekte bis hin zu
 ---
 
 ```{toctree}
-DualCAN/Overview
-DualOut/Overview
-Hutschienenmoped/Overview
+DualCAN/DualCANOverview
+DualOut/DualOutOverview
+Hutschienenmoped/HutschienenmopedOverview
 ```

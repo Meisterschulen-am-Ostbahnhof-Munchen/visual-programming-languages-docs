@@ -5,7 +5,7 @@
 
 ADS/ADS
 eIO/eIO
-eliteboard/eliteboard
+eliteboard/EliteBoard
 embrick/embrick
 GPIOChip/GPIOChip
 PLC01A1/PLC01A1

@@ -12,5 +12,6 @@ F_MIN
 F_MUX_2
 F_MUX_3
 F_MUX_4
+F_MOVE
 F_SEL
 ```

@@ -19,6 +19,7 @@ html_search_language = "de"
 
 extensions = [
     "myst_parser",
+    "sphinxcontrib.mermaid",
     "sphinxcontrib.googleanalytics",
     "sphinx_rtd_size",
 ]

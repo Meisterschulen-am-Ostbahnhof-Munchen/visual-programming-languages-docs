@@ -102,7 +102,7 @@ Welcome
 Abgrenzung
 Visuelle-Programmiersprachen
 norms/norms
-Allgemeines
+Allgemeines/Allgemeines
 Literatur
 ```
 

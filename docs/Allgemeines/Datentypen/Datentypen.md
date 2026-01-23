@@ -21,6 +21,11 @@ Gemäß DIN EN 61131-3 werden die Datentypen in folgende Gruppen unterteilt:
 
 [Datentypen](https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_reference_datatypes.html)
 
+### Generische Datentypen (ANY-Typen)
+
+Für überladene Funktionen und Standard-Bibliotheken definiert die Norm generische Datentypen.
+Details zur Hierarchie und Verwendung finden Sie hier: **[ANY-Typen](GenerischeDatentypen/ANY_Typen.md)**
+
 ### Datentypen in der IEC 61499
 
 Siehe auch: IEC 61499, Table E.1

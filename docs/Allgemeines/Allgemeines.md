@@ -47,10 +47,12 @@ Die Darstellung von Zahlen (Binär, Hexadezimal, Dezimal) und die Verwendung von
 Datentypen legen fest, welche Art von Information eine Variable speichern kann (z. B. eine ganze Zahl, eine Fließkommazahl oder ein Wahrheitswert).
 
 *   Eine Übersicht finden Sie hier: **[Datentypen](Allgemeines/Datentypen/Datentypen.md)**
+*   Informationen zu generischen Datentypen: **[ANY-Typen](Datentypen/GenerischeDatentypen/ANY_Typen.md)**
 
 ```{toctree}
 :maxdepth: 2
 :hidden:
 Allgemeines/Zahlen
 Allgemeines/Datentypen/Datentypen
+Allgemeines/Datentypen/GenerischeDatentypen/ANY_Typen
 ```

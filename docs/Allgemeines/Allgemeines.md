@@ -51,7 +51,6 @@ Datentypen legen fest, welche Art von Information eine Variable speichern kann (
 
 ```{toctree}
 :maxdepth: 2
-:hidden:
 Allgemeines/Zahlen
 Allgemeines/Datentypen/Datentypen
 Allgemeines/Datentypen/GenerischeDatentypen/ANY_Typen

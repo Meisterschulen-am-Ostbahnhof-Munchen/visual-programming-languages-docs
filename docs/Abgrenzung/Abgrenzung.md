@@ -10,14 +10,14 @@ Um die Besonderheiten der IEC 61499 zu verstehen, ist es hilfreich, sie in die b
 Der wesentliche Unterschied liegt in der Art und Weise, wie die Logik eines Programms formuliert wird. Während textuelle Sprachen auf sequenziellem Code basieren, nutzen visuelle Sprachen grafische Elemente, um Zusammenhänge und Datenflüsse darzustellen.
 
 ```{eval-rst}
-.. mermaid:: Diagramm.mmd
+.. mermaid:: Abgrenzung_Textuell_Visuell.mmd
 ```
 
 ### Textuelle Programmiersprachen
 In textuellen Sprachen wird der Algorithmus durch eine Abfolge von Zeichenfolgen (Schlüsselwörter, Operatoren, Variablen) beschrieben. Diese Sprachen sind oft sehr mächtig und abstrakt, erfordern jedoch eine präzise Kenntnis der Syntax.
 
 ```{eval-rst}
-.. mermaid:: Diagramm2.mmd
+.. mermaid:: Beispiele_Textuell.mmd
 ```
 
 Typische Vertreter sind:
@@ -29,7 +29,7 @@ Typische Vertreter sind:
 Visuelle Programmiersprachen (VPL) nutzen grafische Symbole, Blöcke oder Icons, die durch Linien (Verbindungen) miteinander verknüpft werden. Dies ermöglicht es oft, komplexe Zusammenhänge (wie z. B. Signalflüsse in der Elektrotechnik) intuitiver darzustellen.
 
 ```{eval-rst}
-.. mermaid:: Diagramm2a.mmd
+.. mermaid:: Unterteilung_Visuell.mmd
 ```
 
 Man unterscheidet hierbei oft nach dem Einsatzzweck:
@@ -43,7 +43,7 @@ Man unterscheidet hierbei oft nach dem Einsatzzweck:
 In der Industrie hat die visuelle Programmierung eine lange Tradition, da sie eng an die Darstellung von Schaltplänen und Prozessabläufen angelehnt ist.
 
 ```{eval-rst}
-.. mermaid:: Diagramm3.mmd
+.. mermaid:: Industrielle_Standards.mmd
 ```
 
 ### IEC 61131-3 (Der klassische Standard)

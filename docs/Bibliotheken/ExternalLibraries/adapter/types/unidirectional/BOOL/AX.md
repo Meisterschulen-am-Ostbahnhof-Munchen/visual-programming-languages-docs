@@ -1,3 +1,5 @@
+![AX](AX.svg)
+
 # AX (BOOL)
 
 ```{index} single: AX (BOOL)

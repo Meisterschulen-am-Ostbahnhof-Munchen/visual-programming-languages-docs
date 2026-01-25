@@ -1,3 +1,5 @@
+![ALR](ALR.svg)
+
 # ALR (LREAL)
 
 ```{index} single: ALR (LREAL)

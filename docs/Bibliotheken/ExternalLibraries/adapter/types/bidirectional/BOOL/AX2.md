@@ -1,3 +1,5 @@
+![AX2](AX2.svg)
+
 # AX2
 
 ```{index} single: AX2

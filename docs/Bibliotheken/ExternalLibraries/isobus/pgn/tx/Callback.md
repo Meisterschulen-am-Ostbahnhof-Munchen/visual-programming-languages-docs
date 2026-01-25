@@ -1,3 +1,5 @@
+![Callback](Callback.svg)
+
 # Callback
 
 ```{index} single: Callback

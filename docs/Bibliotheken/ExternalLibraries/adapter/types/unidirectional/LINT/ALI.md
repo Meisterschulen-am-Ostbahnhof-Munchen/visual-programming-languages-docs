@@ -1,3 +1,5 @@
+![ALI](ALI.svg)
+
 # ALI (LINT)
 
 ```{index} single: ALI (LINT)

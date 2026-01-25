@@ -1,3 +1,5 @@
+![AL](AL.svg)
+
 # AL (LWORD)
 
 ```{index} single: AL (LWORD)

@@ -1,3 +1,5 @@
+![AE](AE.svg)
+
 # AE (EVENT)
 
 ```{index} single: AE (EVENT)

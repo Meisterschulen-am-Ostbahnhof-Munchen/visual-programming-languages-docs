@@ -1,3 +1,5 @@
+![AUS](AUS.svg)
+
 # AUS (USINT)
 
 ```{index} single: AUS (USINT)

@@ -1,3 +1,5 @@
+![AE2](AE2.svg)
+
 # AE2
 
 ```{index} single: AE2

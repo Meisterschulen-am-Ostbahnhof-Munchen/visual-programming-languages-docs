@@ -1,3 +1,5 @@
+![ASR2](ASR2.svg)
+
 # ASR2
 
 ```{index} single: ASR2

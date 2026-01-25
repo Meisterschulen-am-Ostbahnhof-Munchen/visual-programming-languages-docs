@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_DINT` dient der Konvertierung eines `USINT`-Wertes (8-Bit unsigned integer) in einen `DINT`-Werte (32-Bit signed integer). Diese Konvertierung ist nützlich, wenn Werte zwischen verschiedenen Datentypen umgewandelt werden müssen, insbesondere wenn eine Erweiterung der Bitbreite erforderlich ist.
 
+![F_USINT_TO_DINT](F_USINT_TO_DINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

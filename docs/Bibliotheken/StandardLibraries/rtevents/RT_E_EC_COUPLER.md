@@ -8,6 +8,8 @@
 ## Einleitung
 Koppelt Ereignisketten mit Echtzeitparametern.
 
+![RT_E_EC_COUPLER](RT_E_EC_COUPLER.svg)
+
 ## Metadaten
 | Attribut | Wert |
 | :--- | :--- |

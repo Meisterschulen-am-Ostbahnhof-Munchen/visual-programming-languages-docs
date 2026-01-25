@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UINT_TO_ULINT` dient der Konvertierung eines vorzeichenlosen 16-Bit-Integer-Werts (`UINT`) in einen vorzeichenlosen 64-Bit-Integer-Wert (`ULINT`). Diese Konvertierung ist insbesondere dann notwendig, wenn Werte zwischen Systemen mit unterschiedlicher Wortbreite ausgetauscht werden müssen.
 
+![F_UINT_TO_ULINT](F_UINT_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

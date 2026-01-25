@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LREAL_AS_STRING` dient zur Konvertierung eines LREAL-Wertes (64-Bit Gleitkommazahl) in einen STRING. Diese Funktionalität ist besonders nützlich, wenn numerische Werte für die Anzeige, Protokollierung oder Kommunikation als Zeichenketten benötigt werden.
 
+![F_LREAL_AS_STRING](F_LREAL_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

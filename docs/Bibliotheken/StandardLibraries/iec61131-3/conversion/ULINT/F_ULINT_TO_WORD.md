@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ULINT_TO_WORD` dient der Konvertierung eines 64-Bit unsigned integer Wertes (ULINT) in einen 16-Bit unsigned integer Wert (WORD). Der Block ist Teil des `iec61131::conversion` Pakets und implementiert eine einfache Typumwandlung.
 
+![F_ULINT_TO_WORD](F_ULINT_TO_WORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der OR_4 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen logischen ODER-Verknüpfung mit vier Eingängen. Er führt eine bitweise ODER-Operation auf den Eingabedaten durch und gibt das Ergebnis an seinem Ausgang aus. Der Baustein ist für alle ANY_BIT Datentypen geeignet und ermöglicht somit eine flexible Verwendung mit verschiedenen Bit-Datentypen.
 
+![OR_4](OR_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

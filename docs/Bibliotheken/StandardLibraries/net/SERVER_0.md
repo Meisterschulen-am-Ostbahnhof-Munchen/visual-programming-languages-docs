@@ -8,6 +8,8 @@
 ## Einleitung
 Der SERVER_0 Funktionsblock dient als Gegenstelle zu einem CLIENT_0 Block. Er ermöglicht die Einrichtung einer Server-Client-Verbindung ohne Austausch von Nutzdaten über Daten-Ein-/Ausgänge.
 
+![SERVER_0](SERVER_0.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der XOR_10 Funktionsblock ist ein generischer Baustein zur Berechnung einer bitweisen XOR-Verknüpfung mit bis zu 10 Eingängen. Er ist Teil der IEC 61131-3 Standardbibliothek für bitweise boolesche Operationen und kann mit verschiedenen Bit-Datentypen (ANY_BIT) verwendet werden.
 
+![XOR_10](XOR_10.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

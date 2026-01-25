@@ -8,6 +8,8 @@
 ## Einleitung
 Echtzeit-Variante des E_SWITCH Bausteins. Schaltet den Ereignisfluss ein oder aus.
 
+![RT_E_SWITCH](RT_E_SWITCH.svg)
+
 ## Metadaten
 | Attribut | Wert |
 | :--- | :--- |

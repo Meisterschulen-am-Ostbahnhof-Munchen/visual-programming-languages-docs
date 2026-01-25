@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DELETE` dient zur Manipulation von Zeichenketten. Er entfernt eine bestimmte Anzahl von Zeichen (`L`) aus einer Eingabezeichenkette (`IN`), beginnend an einer definierten Position (`P`). Das Ergebnis wird als neue Zeichenkette (`OUT`) ausgegeben.
 
+![F_DELETE](F_DELETE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

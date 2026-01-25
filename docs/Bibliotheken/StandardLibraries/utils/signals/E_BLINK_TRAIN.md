@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `E_BLINK_TRAIN` simuliert ein blinkendes Signal, das für bestimmte Zeitintervalle ein- und ausgeschaltet wird. Die Anzahl der Blinkzyklen kann begrenzt werden. Im Gegensatz zu ähnlichen Blink-Funktionsblöcken kehrt dieser FB beim Stoppen immer auf den Zustand `FALSE` zurück.
 
+![E_BLINK_TRAIN](E_BLINK_TRAIN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

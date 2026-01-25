@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_0-Funktionsblock dient zum Veröffentlichen von Daten für einen oder mehrere SUBSCRIBE_0-Blöcke. Er ermöglicht eine unbestätigte Kommunikation zwischen verschiedenen Komponenten in einem 4diac-System.
 
+![PUBLISH_0](PUBLISH_0.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

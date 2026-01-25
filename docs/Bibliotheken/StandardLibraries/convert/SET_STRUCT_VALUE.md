@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `SET_STRUCT_VALUE` ist ein Service-Schnittstellen-Funktionsblock, der dazu dient, einen bestimmten Wert innerhalb einer Datenstruktur zu setzen. Er ermöglicht die dynamische Manipulation von Strukturelementen, indem er einen neuen Wert für ein benanntes Mitglied der Struktur zuweist.
 
+![SET_STRUCT_VALUE](SET_STRUCT_VALUE.svg)
+
 ## Schnittstellenstruktur
 Der Funktionsblock verfügt über Ereignis- und Datenschnittstellen, um seine Funktionalität zu ermöglichen.
 

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_DWORD` dient der Konvertierung eines 32-Bit Ganzzahlwerts (DINT) in einen 32-Bit vorzeichenlosen Wert (DWORD). Diese Konvertierung ist insbesondere dann notwendig, wenn vorzeichenbehaftete Werte in vorzeichenlose Werte umgewandelt werden müssen, beispielsweise für die weitere Verarbeitung in bestimmten Steuerungsalgorithmen oder bei der Kommunikation mit anderen Systemen.
 
+![F_DINT_TO_DWORD](F_DINT_TO_DWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

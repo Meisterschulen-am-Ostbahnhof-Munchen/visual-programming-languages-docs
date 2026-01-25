@@ -9,6 +9,8 @@
 ## Einleitung
 Der OR_8 Funktionsblock ist ein generischer Baustein zur Berechnung einer bitweisen ODER-Verknüpfung. Er unterstützt bis zu 8 Eingänge und ist gemäß der Norm IEC 61131-3 klassifiziert. Der Baustein ist besonders für Anwendungen geeignet, in denen mehrere binäre Signale logisch verknüpft werden müssen.
 
+![OR_8](OR_8.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung des Funktionsblocks. Wird mit allen Daten-Eingängen verknüpft.

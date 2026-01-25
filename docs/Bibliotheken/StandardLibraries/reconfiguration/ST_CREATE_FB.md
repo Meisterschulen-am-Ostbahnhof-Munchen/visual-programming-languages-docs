@@ -11,6 +11,8 @@
 
 Der ST_CREATE_FB Funktionsblock dient zur dynamischen Erstellung von Funktionsblock- oder Resource-Instanzen während der Laufzeit eines IEC 61499-Systems. Dieser Baustein ermöglicht die Rekonfiguration von Automatisierungssystemen durch das Erzeugen neuer Funktionsblöcke basierend auf bestimmten FB-Typen.
 
+![ST_CREATE_FB](ST_CREATE_FB.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

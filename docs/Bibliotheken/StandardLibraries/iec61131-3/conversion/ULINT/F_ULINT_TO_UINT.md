@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ULINT_TO_UINT` dient zur Konvertierung eines 64-Bit unsigned integer Wertes (ULINT) in einen 16-Bit unsigned integer Wert (UINT). Der Baustein ist Teil des `iec61131::conversion` Pakets und implementiert eine einfache Typumwandlung.
 
+![F_ULINT_TO_UINT](F_ULINT_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

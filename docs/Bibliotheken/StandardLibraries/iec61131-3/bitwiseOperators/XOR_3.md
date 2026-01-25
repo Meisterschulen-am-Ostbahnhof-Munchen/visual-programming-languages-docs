@@ -9,6 +9,8 @@
 ## Einleitung
 Der XOR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen XOR-Verknüpfung mit drei Eingängen. Er implementiert die logische Exklusiv-ODER-Operation auf Bitebene gemäß dem IEC 61131-3 Standard und kann mit verschiedenen Bit-Datentypen verwendet werden.
 
+![XOR_3](XOR_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

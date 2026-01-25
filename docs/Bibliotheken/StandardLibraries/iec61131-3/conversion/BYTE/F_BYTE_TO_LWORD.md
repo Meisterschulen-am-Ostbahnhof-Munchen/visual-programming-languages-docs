@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_LWORD` dient der Konvertierung eines `BYTE`-Wertes in einen `LWORD`-Wert. Er ist Teil der `iec61131::conversion`-Bibliothek und ermöglicht eine einfache und effiziente Typumwandlung.
 
+![F_BYTE_TO_LWORD](F_BYTE_TO_LWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

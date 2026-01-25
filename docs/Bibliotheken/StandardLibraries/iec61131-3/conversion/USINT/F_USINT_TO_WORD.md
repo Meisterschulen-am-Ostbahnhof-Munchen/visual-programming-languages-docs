@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_WORD` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (USINT) in einen 16-Bit-Wort-Wert (WORD). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten unterschiedlicher Bitbreiten verarbeitet oder übertragen werden müssen.
 
+![F_USINT_TO_WORD](F_USINT_TO_WORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

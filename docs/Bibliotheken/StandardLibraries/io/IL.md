@@ -23,6 +23,8 @@
 ## Einleitung
 Der IL-Funktionsblock (Input Long Word) ist ein Service Interface Function Block für die Verarbeitung von Long Word-Eingabedaten. Er dient als Schnittstelle zwischen der Steuerungslogik und externen Eingabegeräten oder Ressourcen, die 64-Bit-Datenwerte bereitstellen.
 
+![IL](IL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der **E_F_TRIG** (Falling Edge Trigger) ist ein grundlegender Funktionsbaustein der IEC 61499 Norm zur Erkennung von fallenden Signalflanken. Dieser Baustein spielt eine wichtige Rolle in der Ereignisdetektion und Signalverarbeitung industrieller Steuerungssysteme.
 
+![E_F_TRIG](E_F_TRIG.svg)
+
 ## Struktur des E_F_TRIG-Bausteins
 
 ### Schnittstelle (Interface)

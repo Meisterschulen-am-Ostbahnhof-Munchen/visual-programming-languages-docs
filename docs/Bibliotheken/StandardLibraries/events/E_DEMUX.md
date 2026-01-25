@@ -5,6 +5,8 @@
 ## Einleitung
 Der `E_DEMUX` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, der ein einzelnes Eingangereignis (`EI`) an einen von mehreren Ausgängen weiterleitet. Die Auswahl des spezifischen Ausgangs wird durch den Wert einer Eingangsvariable (`K`) bestimmt. Diese Version des Bausteins ist ein 1-zu-4 Demultiplexer.
 
+![E_DEMUX](E_DEMUX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

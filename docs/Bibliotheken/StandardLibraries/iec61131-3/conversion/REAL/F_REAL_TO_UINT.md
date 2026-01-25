@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_UINT` dient der Konvertierung eines REAL-Wertes (Fließkommazahl) in einen UINT-Wert (vorzeichenlose Ganzzahl). Diese Konvertierung ist besonders nützlich, wenn Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Datentypen verwenden oder wenn eine explizite Typumwandlung erforderlich ist.
 
+![F_REAL_TO_UINT](F_REAL_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Wird dieser Ereigniseingang ausgelöst, wird der Algorithmus zur Umwandlung des REAL-Wertes in einen UINT-Wert ausgeführt.

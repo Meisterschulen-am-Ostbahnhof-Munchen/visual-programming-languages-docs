@@ -17,6 +17,8 @@
 ## Einleitung
 Der IB-Funktionsblock (Input Byte) ist ein Dienstschnittstellen-Funktionsblock für die Verarbeitung von Byte-Eingabedaten. Er dient als Schnittstelle zwischen einem IEC 61499-Steuerungssystem und externen Eingabegeräten oder Ressourcen, die Byte-Daten liefern.
 
+![IB](IB.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

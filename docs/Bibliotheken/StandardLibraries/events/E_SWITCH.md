@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_SWITCH` (Event Switch) ist ein grundlegender Funktionsbaustein nach IEC 61499, der als bedingte Ereignisweiche oder 1-zu-2-Demultiplexer fungiert. Er leitet ein einzelnes Eingangereignis (`EI`) basierend auf dem Zustand einer booleschen Steuervariable (`G`) an einen von zwei Ausgängen weiter.
 
+![E_SWITCH](E_SWITCH.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

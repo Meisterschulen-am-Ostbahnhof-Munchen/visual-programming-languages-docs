@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_US_TO_UDINT` dient der Konvertierung eines TIME-Werts in Mikrosekunden (µs) in einen UDINT-Wert. Diese Konvertierung ist insbesondere in Anwendungen nützlich, bei denen Zeitwerte in numerischer Form weiterverarbeitet werden müssen.
 
+![F_TIME_IN_US_TO_UDINT](F_TIME_IN_US_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

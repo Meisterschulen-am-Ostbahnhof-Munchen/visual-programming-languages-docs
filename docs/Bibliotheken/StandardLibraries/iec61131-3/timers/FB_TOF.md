@@ -74,6 +74,8 @@ Der FB_TOF-Baustein ist ein einfacher, aber leistungsfähiger Funktionsbaustein 
 
 Der bereitgestellte Quelltext zeigt, wie der FB_TOF-Baustein in der Praxis implementiert werden kann, und bietet eine solide Grundlage für die Entwicklung ähnlicher Bausteine in industriellen Steuerungssystemen. Der zyklische Aufruf ist dabei ein entscheidender Faktor für die korrekte Funktionsweise des Bausteins.
 
+![FB_TOF](FB_TOF.svg)
+
 ## Vergleich E_TOF zu FB_TOF
 
 ### Kapitel 1: Der FB_TOF-Baustein

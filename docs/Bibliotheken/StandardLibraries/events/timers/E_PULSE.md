@@ -9,6 +9,9 @@
 
 * * * * * * * * * *
 
+![E_PULSE](E_PULSE.svg)
+
+
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 
 ### Der Baustein E_PULSE in der IEC 61499: Ein Überblick

@@ -10,6 +10,8 @@
 ## Einleitung
 Der IORevPiAIO Funktionsblock stellt eine Schnittstelle für das Analog I/O-Modul des Revolution Pi von KUNBUS GmbH dar. Dieser Baustein ermöglicht die Ansteuerung und Auslesung von analogen Eingängen und Ausgängen sowie RTD-Sensoren (Resistance Temperature Detector) über das Revolution Pi System.
 
+![IORevPiAIO](IORevPiAIO.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der QB-Funktionsblock ist ein Ausgabeservice-Interface für Byte-Ausgabedaten. Er dient als Schnittstelle zwischen der Steuerungslogik und physischen Ausgabegeräten oder Ressourcen und ermöglicht die Ausgabe von Byte-Daten an externe Hardware.
 
+![QB](QB.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

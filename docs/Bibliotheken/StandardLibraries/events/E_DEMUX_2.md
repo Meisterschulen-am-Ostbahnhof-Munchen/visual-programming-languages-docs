@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_DEMUX_2` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, der ein einzelnes Eingangereignis (`EI`) an einen von zwei Ausgängen weiterleitet. Die Auswahl des Ausgangs wird durch den Wert der Eingangsvariable `K` bestimmt.
 
+![E_DEMUX_2](E_DEMUX_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

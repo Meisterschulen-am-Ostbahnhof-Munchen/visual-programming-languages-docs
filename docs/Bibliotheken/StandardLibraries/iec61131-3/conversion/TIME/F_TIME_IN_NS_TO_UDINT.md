@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_NS_TO_UDINT` dient der Konvertierung eines Zeitwertes in Nanosekunden (`TIME`) in einen vorzeichenlosen 32-Bit-Integer-Wert (`UDINT`). Diese Konvertierung ist insbesondere dann nützlich, wenn Zeitwerte für weitere Berechnungen oder Steuerungszwecke in einem numerischen Format benötigt werden.
 
+![F_TIME_IN_NS_TO_UDINT](F_TIME_IN_NS_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

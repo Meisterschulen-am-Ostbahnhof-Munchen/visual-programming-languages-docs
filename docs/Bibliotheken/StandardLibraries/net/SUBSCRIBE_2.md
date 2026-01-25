@@ -10,6 +10,8 @@
 ## Einleitung
 Der SUBSCRIBE_2-Funktionsblock dient als Abonnent für einen PUBLISH_2-Block und ermöglicht den Empfang von Daten über ein Publish-Subscribe-Kommunikationsmuster. Der Block kann zwei verschiedene Datenwerte von einem Publisher empfangen und weiterverarbeiten.
 
+![SUBSCRIBE_2](SUBSCRIBE_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der IORevPiDIO Funktionsblock ist ein digitales Ein-/Ausgabemodul für Revolution Pi Systeme von KUNBUS GmbH. Er ermöglicht die Ansteuerung und Überwachung digitaler Eingänge und Ausgänge über das Revolution Pi System und dient als Schnittstelle zwischen 4diac-IDE und der Revolution Pi Hardware.
 
+![IORevPiDIO](IORevPiDIO.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

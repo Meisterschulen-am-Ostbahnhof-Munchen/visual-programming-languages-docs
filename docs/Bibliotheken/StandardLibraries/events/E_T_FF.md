@@ -11,6 +11,8 @@
 ## Einleitung
 Der `E_T_FF` (Event-driven Toggle Flip-Flop) ist ein ereignisgesteuerter Kippschalter, der seinen Zustand (`Q`) bei jedem eingehenden Taktereignis (`CLK`) wechselt. Er ist das digitale Äquivalent eines "Stromstoßschalters" (Stromstoßrelais), bei dem ein kurzer Impuls den Zustand dauerhaft ändert.
 
+![E_T_FF](E_T_FF.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

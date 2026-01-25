@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_LREAL` dient der Konvertierung eines WSTRING-Wertes in einen LREAL-Wert. Dieser Baustein ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise für mathematische Berechnungen oder Datenverarbeitung.
 
+![F_WSTRING_AS_LREAL](F_WSTRING_AS_LREAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

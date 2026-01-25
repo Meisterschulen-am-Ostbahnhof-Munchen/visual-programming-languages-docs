@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_ABS Funktionsblock berechnet den absoluten Wert einer numerischen Eingabe. Er gehört zur Kategorie der Standardfunktionen für numerische Variablen gemäß IEC 61131-3 und ist Teil des iec61131::numerical Pakets.
 
+![F_ABS](F_ABS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

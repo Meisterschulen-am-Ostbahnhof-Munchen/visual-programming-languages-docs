@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_SINT_AS_STRING` dient der Konvertierung eines `SINT`-Wertes (8-Bit Ganzzahl) in einen `STRING` (Zeichenkette). Dieser Baustein ist besonders nützlich, wenn numerische Werte für die Anzeige oder Weiterverarbeitung als Text benötigt werden.
 
+![F_SINT_AS_STRING](F_SINT_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

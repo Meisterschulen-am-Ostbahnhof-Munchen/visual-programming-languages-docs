@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_DWORD` dient der Konvertierung eines `BYTE`-Wertes in einen `DWORD`-Wert. Dieser Baustein ist besonders nützlich in Szenarien, bei denen eine Erweiterung der Datenbreite erforderlich ist, beispielsweise bei der Verarbeitung von Sensordaten oder der Kommunikation zwischen Systemen mit unterschiedlichen Datenformaten.
 
+![F_BYTE_TO_DWORD](F_BYTE_TO_DWORD.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Dieser Eingang ist mit dem Daten-Eingang `IN` gekoppelt.

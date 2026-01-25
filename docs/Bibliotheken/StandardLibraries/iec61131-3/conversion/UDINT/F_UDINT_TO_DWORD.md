@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_DWORD` dient der Konvertierung eines `UDINT`-Wertes (32-Bit unsignierte Ganzzahl) in einen `DWORD`-Wert (32-Bit Datenwort). Diese Konvertierung ist insbesondere in Szenarien nützlich, in denen numerische Werte als Bitmuster weiterverarbeitet oder übertragen werden müssen.
 
+![F_UDINT_TO_DWORD](F_UDINT_TO_DWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

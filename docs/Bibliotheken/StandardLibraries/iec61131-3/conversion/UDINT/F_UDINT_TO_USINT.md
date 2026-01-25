@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_USINT` dient der Konvertierung eines 32-Bit unsigned integer Wertes (UDINT) in einen 8-Bit unsigned integer Wert (USINT). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen unterschiedlich großen numerischen Werten erforderlich ist.
 
+![F_UDINT_TO_USINT](F_UDINT_TO_USINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der IX-Funktionsblock ist ein Service-Interface-Funktionsblock für boolesche Eingabedaten. Er dient als Schnittstelle zur Kommunikation mit Eingabegeräten und ermöglicht die Abfrage und Verarbeitung von digitalen Eingangssignalen in 4diac-Systemen.
 
+![IX](IX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

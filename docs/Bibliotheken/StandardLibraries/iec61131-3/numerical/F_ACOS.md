@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_ACOS Funktionsblock berechnet den Hauptwert des Arkuskosinus (Arccosinus) einer numerischen Eingabe. Er implementiert die mathematische Funktion zur Bestimmung des Winkels, dessen Kosinus dem Eingabewert entspricht. Der Block gehört zur Kategorie der Standardfunktionen für numerische Variablen gemäß IEC 61131-3.
 
+![F_ACOS](F_ACOS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

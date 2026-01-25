@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_MOVE](F_MOVE.svg)
+
+
 ## Einführung
 Der **F_MOVE** ist ein universeller Funktionsbaustein zur typsicheren Datenübertragung, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die Übertragung beliebiger Datentypen (ANY) zwischen Variablen in Steuerungsanwendungen.
 

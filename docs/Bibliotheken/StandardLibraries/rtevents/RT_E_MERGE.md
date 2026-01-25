@@ -8,6 +8,8 @@
 ## Einleitung
 Echtzeit-Variante des E_MERGE Bausteins. Führt mehrere Ereignisse zusammen.
 
+![RT_E_MERGE](RT_E_MERGE.svg)
+
 ## Metadaten
 | Attribut | Wert |
 | :--- | :--- |

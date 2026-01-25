@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_BYTE` dient der Konvertierung eines `STRING`-Wertes in einen `BYTE`-Wert. Diese Funktionalität ist besonders nützlich, wenn Zeichenketten in ihre entsprechenden Byte-Werte umgewandelt werden müssen, beispielsweise für die Verarbeitung in Protokollen oder bei der Kommunikation mit Hardware.
 
+![F_STRING_AS_BYTE](F_STRING_AS_BYTE.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Normaler Ausführungsanforderung. Dieser Ereigniseingang löst die Konvertierung aus. Er ist mit dem Dateneingang `IN` verknüpft.

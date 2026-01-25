@@ -14,6 +14,8 @@
 ## Einleitung
 Der `E_CTUD` (Event-Driven Up-Down Counter) ist ein ereignisgesteuerter Vor- und Rückwärtszähler gemäß dem IEC 61499-Standard. Er kann einen Zählerwert basierend auf separaten Ereignissen inkrementieren, dekrementieren, zurücksetzen oder mit einem vordefinierten Wert laden. Dies macht ihn zu einem flexiblen und leistungsstarken Baustein für eine Vielzahl von Zählanwendungen.
 
+![E_CTUD](E_CTUD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

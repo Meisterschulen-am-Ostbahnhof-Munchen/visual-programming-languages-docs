@@ -17,6 +17,8 @@
 ## Einleitung
 Der ID-Funktionsblock ist ein Eingabeservice-Interface-Baustein für Doppelwort-Eingabedaten (DWORD). Er dient als Schnittstelle zwischen der Steuerungslogik und externen Eingabegeräten oder Ressourcen und ermöglicht die Abfrage von 32-Bit-Eingabedaten.
 
+![ID](ID.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

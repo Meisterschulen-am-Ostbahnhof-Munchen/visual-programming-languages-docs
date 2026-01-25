@@ -10,6 +10,8 @@
 ## Einleitung
 Der QL-Funktionsblock ist ein Ausgabeservice-Interface-Baustein für die Verarbeitung von Long-Word-Ausgabedaten. Er dient als Schnittstelle zwischen der Steuerungslogik und externen Ressourcen und ermöglicht die Ausgabe von 64-Bit-Datenwerten.
 
+![QL](QL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

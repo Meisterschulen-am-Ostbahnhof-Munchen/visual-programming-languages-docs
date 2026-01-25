@@ -10,6 +10,8 @@
 ## Einleitung
 Der **E_TimeOut** ist ein standardkonformer Funktionsbaustein (IEC 61499-1) zur Implementierung von Timeout-Services. Version 1.0 bietet eine einfache, aber effektive Timeout-Funktionalität durch interne Nutzung eines E_DELAY-Bausteins. Der **E\_TimeOut** ist ein zusammengesetzter Funktionsblock. Innerhalb des Netzwerks eines zusammengesetzten Funktionsblocks wird jeder Adapter, der zu seiner Schnittstelle hinzugefügt wird, durch einen Adapterblock repräsentiert, der wie ein Funktionsblock aussieht. Die Schnittstellenelemente dieses Adapterblocks sind wie ein Funktionsblock verbunden.
 
+![E_TimeOut](E_TimeOut.svg)
+
 ## Schnittstellenstruktur
 
 ### **Adapter-Schnittstelle (Socket-Perspektive)**

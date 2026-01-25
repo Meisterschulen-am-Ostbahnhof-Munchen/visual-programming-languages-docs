@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_AS_WSTRING` dient der Konvertierung eines vorzeichenlosen 32-Bit-Integer-Werts (`UDINT`) in eine Unicode-Zeichenkette (`WSTRING`). Diese Funktionalität ist besonders nützlich, wenn numerische Werte für die Anzeige oder Weiterverarbeitung als Text benötigt werden.
 
+![F_UDINT_AS_WSTRING](F_UDINT_AS_WSTRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

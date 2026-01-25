@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock (FB) `STRUCT_DEMUX` ist ein generischer Demultiplexer für strukturierte Datentypen. Seine Hauptaufgabe ist es, eine am Eingang anliegende Datenstruktur in ihre einzelnen Bestandteile (Member) aufzuspalten. Diese einzelnen Member werden dann über separate Daten-Ausgänge zur Verfügung gestellt, die dynamisch erzeugt werden.
 
+![STRUCT_DEMUX](STRUCT_DEMUX.svg)
+
 ## Schnittstellenstruktur
 Die Schnittstelle des `STRUCT_DEMUX`-Funktionsblocks ist generisch definiert. Die tatsächlichen Daten-Ausgänge werden erst bei der Instanziierung des Blocks festgelegt.
 

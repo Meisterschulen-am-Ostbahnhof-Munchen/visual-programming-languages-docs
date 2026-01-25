@@ -10,6 +10,8 @@
 ## Einleitung
 Der EBSlave2301 ist ein Service Interface Function Block für die Kommunikation mit einem EtherBrick Slave-Modul. Dieser Funktionsblock dient als Schnittstelle zur Konfiguration und Steuerung von bis zu sechs Relais-Ausgängen über ein EtherBrick-Bussystem.
 
+![EBSlave2301](EBSlave2301.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

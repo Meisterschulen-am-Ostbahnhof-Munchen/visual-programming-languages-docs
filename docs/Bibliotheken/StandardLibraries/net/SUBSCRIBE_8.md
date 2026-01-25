@@ -10,6 +10,8 @@
 ## Einleitung
 Der SUBSCRIBE_8 Funktionsblock dient als Abonnent für einen PUBLISH_8 Block und ermöglicht den Empfang von bis zu 8 verschiedenen Datenwerten über eine Kommunikationsverbindung. Der Block implementiert ein Publish-Subscribe-Kommunikationsmuster und ist Teil des iec61499::net Pakets.
 
+![SUBSCRIBE_8](SUBSCRIBE_8.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

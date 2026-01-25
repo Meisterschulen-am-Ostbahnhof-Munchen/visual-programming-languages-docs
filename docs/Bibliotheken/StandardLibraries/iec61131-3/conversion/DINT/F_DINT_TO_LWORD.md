@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_LWORD` dient der Konvertierung eines 32-Bit Integer-Werts (DINT) in einen 64-Bit unsigned Integer-Wert (LWORD). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Erweiterung des Wertebereichs oder eine Typanpassung für nachfolgende Verarbeitungsschritte erforderlich ist.
 
+![F_DINT_TO_LWORD](F_DINT_TO_LWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

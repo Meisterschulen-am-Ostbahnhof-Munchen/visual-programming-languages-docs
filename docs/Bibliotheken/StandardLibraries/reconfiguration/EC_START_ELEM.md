@@ -11,6 +11,8 @@
 
 Der EC_START_ELEM Funktionsblock dient zum Starten von Instanzen gemäß dem Zustandsautomaten von IEC 61499 Funktionsblöcken. Er ermöglicht das gezielte Starten von Funktionsblock-Instanzen, Verbindungen (Ereignis/Daten), Ressourcen oder Geräten innerhalb eines verteilten Automatisierungssystems.
 
+![EC_START_ELEM](EC_START_ELEM.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

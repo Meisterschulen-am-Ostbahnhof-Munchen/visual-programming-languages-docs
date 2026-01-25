@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ULINT_TO_BCD_LWORD` dient der Konvertierung eines `ULINT`-Wertes (64-Bit unsigned integer) in einen `LWORD`-Wertyp im BCD-Format (Binary Coded Decimal). Dieser Block ist besonders nützlich in Anwendungen, bei denen numerische Werte in ein für BCD-Systeme kompatibles Format umgewandelt werden müssen.
 
+![F_ULINT_TO_BCD_LWORD](F_ULINT_TO_BCD_LWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

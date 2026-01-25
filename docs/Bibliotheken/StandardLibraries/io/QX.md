@@ -10,6 +10,8 @@
 ## Einleitung
 Der QX-Funktionsblock ist ein Ausgabeservice-Schnittstellen-Funktionsblock für boolesche Ausgabedaten. Er dient als Schnittstelle zwischen der Steuerungslogik und physikalischen Ausgabegeräten und ermöglicht die Ausgabe von digitalen Signalen an externe Ressourcen.
 
+![QX](QX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

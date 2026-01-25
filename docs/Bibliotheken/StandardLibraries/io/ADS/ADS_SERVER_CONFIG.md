@@ -10,6 +10,8 @@
 ## Einleitung
 Der ADS_SERVER_CONFIG Funktionsblock dient zur Konfiguration von ADS-Server-Verbindungen in 4diac-Systemen. Er ermöglicht die Initialisierung und Parametrisierung von Verbindungseinstellungen für ADS-Kommunikation, die in nachgelagerten IO-Funktionsblöcken verwendet werden kann.
 
+![ADS_SERVER_CONFIG](ADS_SERVER_CONFIG.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

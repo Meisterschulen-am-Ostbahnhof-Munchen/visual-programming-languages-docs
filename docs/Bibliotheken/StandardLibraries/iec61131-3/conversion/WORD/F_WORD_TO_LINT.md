@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_LINT` dient der Konvertierung eines `WORD`-Datentyps in einen `LINT`-Datentyp. Er ist Teil des Pakets `iec61131::conversion` und ermöglicht eine einfache und effiziente Typumwandlung innerhalb von IEC 61499-basierten Steuerungssystemen.
 
+![F_WORD_TO_LINT](F_WORD_TO_LINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

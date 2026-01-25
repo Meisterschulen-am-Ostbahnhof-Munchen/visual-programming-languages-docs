@@ -1,3 +1,5 @@
+![E_TON](E_TON.svg)
+
 # E_TON
 
 ```{index} single: E_TON

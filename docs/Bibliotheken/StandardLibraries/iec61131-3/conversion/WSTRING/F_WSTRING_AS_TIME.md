@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_TIME` dient zur Konvertierung einer Zeichenkette im WSTRING-Format in einen TIME-Wert. Dieser Baustein ist besonders nützlich, wenn Zeitwerte als Zeichenketten vorliegen und in das TIME-Format umgewandelt werden müssen, um sie in weiteren Berechnungen oder Steuerungslogiken verwenden zu können.
 
+![F_WSTRING_AS_TIME](F_WSTRING_AS_TIME.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Wird dieser Ereigniseingang ausgelöst, wird der im Daten-Eingang `IN` enthaltene WSTRING-Wert in einen TIME-Wert umgewandelt.

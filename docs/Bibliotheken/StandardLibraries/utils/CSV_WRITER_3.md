@@ -9,6 +9,8 @@
 ## Einleitung
 Der CSV_WRITER_3 ist ein Funktionsblock, der dazu dient, Daten in eine CSV-Datei zu schreiben. Er unterstützt das Schreiben von bis zu drei verschiedenen Datenfeldern in eine Datei, die über den Parameter `FILE_NAME` angegeben wird. Der Funktionsblock ist besonders nützlich für die Protokollierung und Datenspeicherung in Automatisierungssystemen.
 
+![CSV_WRITER_3](CSV_WRITER_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der SUBSCRIBE_7 Funktionsblock dient als Abonnent für Daten eines PUBLISH_7 Blocks. Er ermöglicht den Empfang von bis zu sieben verschiedenen Datenpunkten über eine Kommunikationsverbindung. Der Block ist Teil der IEC 61499 Netzwerkkommunikationsfunktionalität und wird für verteilte Automatisierungssysteme eingesetzt.
 
+![SUBSCRIBE_7](SUBSCRIBE_7.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

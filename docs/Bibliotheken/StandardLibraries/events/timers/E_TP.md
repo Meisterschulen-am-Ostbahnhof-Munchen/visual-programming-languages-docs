@@ -1,3 +1,5 @@
+![E_TP](E_TP.svg)
+
 # E_TP
 
 ```{index} single: E_TP

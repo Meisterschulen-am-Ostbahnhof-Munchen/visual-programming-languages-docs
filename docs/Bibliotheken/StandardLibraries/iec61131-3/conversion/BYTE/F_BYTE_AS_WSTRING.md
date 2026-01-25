@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BYTE_AS_WSTRING` dient der Konvertierung eines BYTE-Wertes in einen WSTRING-Wert. Dies ist besonders nützlich in Szenarien, wo Byte-Daten als Unicode-Strings weiterverarbeitet oder ausgegeben werden müssen.
 
+![F_BYTE_AS_WSTRING](F_BYTE_AS_WSTRING.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Wird mit dem Eingabewert `IN` verknüpft.

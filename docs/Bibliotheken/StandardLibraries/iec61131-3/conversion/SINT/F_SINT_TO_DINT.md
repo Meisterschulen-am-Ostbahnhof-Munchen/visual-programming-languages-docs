@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_DINT` dient der Konvertierung eines `SINT`-Wertes (8-Bit Ganzahl mit Vorzeichen) in einen `DINT`-Wert (32-Bit Ganzahl mit Vorzeichen). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung erforderlich ist, um Daten für weitere Verarbeitungsschritte vorzubereiten.
 
+![F_SINT_TO_DINT](F_SINT_TO_DINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

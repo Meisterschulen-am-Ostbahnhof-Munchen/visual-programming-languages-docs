@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_SINT` dient der Konvertierung eines WSTRING-Wertes in einen SINT-Wert (8-Bit Ganzzahl). Der Block ist besonders nützlich in Szenarien, wo Zeichenketten in numerische Werte umgewandelt werden müssen.
 
+![F_WSTRING_AS_SINT](F_WSTRING_AS_SINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

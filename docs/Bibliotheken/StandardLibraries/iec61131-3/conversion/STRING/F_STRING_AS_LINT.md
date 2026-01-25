@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_LINT` dient der Konvertierung eines `STRING`-Wertes in einen `LINT`-Wert. Diese Funktionalität ist insbesondere dann nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, um sie in weiteren Berechnungen oder Steuerungslogiken zu verwenden.
 
+![F_STRING_AS_LINT](F_STRING_AS_LINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung des `STRING`-Wertes zu einem `LINT`-Wert. Dieser Ereigniseingang ist mit dem Daten-Eingang `IN` verknüpft.

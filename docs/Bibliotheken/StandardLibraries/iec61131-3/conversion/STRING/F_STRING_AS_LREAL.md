@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_LREAL` dient der Konvertierung eines STRING-Wertes in einen LREAL-Wert (64-Bit Fließkommazahl). Dieser Baustein ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, z.B. bei der Verarbeitung von Benutzereingaben oder beim Lesen von Daten aus externen Quellen.
 
+![F_STRING_AS_LREAL](F_STRING_AS_LREAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

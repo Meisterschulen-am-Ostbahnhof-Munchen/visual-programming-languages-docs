@@ -10,6 +10,8 @@
 ## Einleitung
 Der EC_STOP_ELEM Funktionsblock dient zum Stoppen von Instanzen gemäß dem Zustandsautomaten von IEC 61499 Funktionsblöcken. Er kann Funktionsblock-Instanzen, Verbindungen (Ereignis/Daten), Ressourcen oder Geräte anhalten. Dieser Baustein gehört zur Kategorie der Rekonfigurationsdienste und implementiert einen Ausführungssteuerungsdienst gemäß IEC 61499-1.
 
+![EC_STOP_ELEM](EC_STOP_ELEM.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

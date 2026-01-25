@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_MAX Funktionsblock ist ein Standard-Selektionsfunktionsblock gemäß IEC 61131-3, der den maximalen Wert aus zwei Eingangswerten ermittelt. Der Baustein vergleicht zwei beliebige elementare Datentypen und gibt den größeren der beiden Werte als Ergebnis zurück.
 
+![F_MAX](F_MAX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

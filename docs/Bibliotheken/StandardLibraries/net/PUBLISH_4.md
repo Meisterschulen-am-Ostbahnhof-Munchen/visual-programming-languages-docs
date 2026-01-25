@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_4 Funktionsblock dient zur Veröffentlichung von Daten an einen oder mehrere SUBSCRIBE_4 Blöcke. Er ermöglicht die unbestätigte Übertragung von bis zu vier verschiedenen Datenwerten über ein Publish-Subscribe-Kommunikationsmuster.
 
+![PUBLISH_4](PUBLISH_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

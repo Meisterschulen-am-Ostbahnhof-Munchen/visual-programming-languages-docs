@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_USINT_AS_STRING` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (USINT) in einen String (STRING). Diese Funktionalität ist besonders nützlich, wenn numerische Werte für die Anzeige oder Protokollierung in eine lesbare Textform umgewandelt werden müssen.
 
+![F_USINT_AS_STRING](F_USINT_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

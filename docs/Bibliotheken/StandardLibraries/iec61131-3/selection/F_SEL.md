@@ -12,6 +12,8 @@
 ## Einleitung
 Der F_SEL Funktionsblock ist ein binärer Selektor gemäß IEC 61131-3 Standard. Er ermöglicht die Auswahl zwischen zwei Eingangswerten basierend auf einem Steuersignal. Der Baustein dient zur bedingten Datenauswahl in Steuerungsanwendungen.
 
+![F_SEL](F_SEL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

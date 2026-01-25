@@ -10,6 +10,8 @@
 ## Einleitung
 Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A), der die bedingte Weiterleitung von Ereignissen basierend auf einem Steuersignal ermöglicht. Die aktuelle Version 1.0 steht unter EPL-2.0 Lizenz.
 
+![E_SELECT](E_SELECT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

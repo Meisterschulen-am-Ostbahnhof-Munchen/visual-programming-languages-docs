@@ -11,6 +11,8 @@
 
 Der ST_DEL_FB Funktionsblock dient zum Löschen einer Funktionsblock-Instanz eines bestimmten Funktionsblock-Typs. Dieser Baustein gehört zur Kategorie der Rekonfigurationsdienste und ermöglicht die dynamische Verwaltung von Funktionsblock-Instanzen zur Laufzeit.
 
+![ST_DEL_FB](ST_DEL_FB.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

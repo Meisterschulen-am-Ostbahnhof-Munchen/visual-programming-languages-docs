@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_LWORD` dient der Konvertierung eines `STRING`-Werts in einen `LWORD`-Wert. Er ist Teil des `iec61131::conversion`-Pakets und ermöglicht die einfache Umwandlung zwischen diesen beiden Datentypen.
 
+![F_STRING_AS_LWORD](F_STRING_AS_LWORD.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung der Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

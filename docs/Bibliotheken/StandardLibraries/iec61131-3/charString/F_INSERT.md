@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_INSERT` dient zur Manipulation von Zeichenketten. Er fügt eine Zeichenkette (`IN2`) in eine andere Zeichenkette (`IN1`) an einer bestimmten Position (`P`) ein. Der Block ist Teil der Standard-Charakter- und String-Funktionen gemäß IEC 61131-3.
 
+![F_INSERT](F_INSERT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

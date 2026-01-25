@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `XOR_7` führt eine bitweise XOR-Operation auf sieben Eingabewerten durch. Es handelt sich um einen generischen Funktionsblock, der mit verschiedenen Bit-Datentypen (z.B. BOOL, BYTE, WORD, DWORD, LWORD) verwendet werden kann. Der Block ist gemäß dem IEC 61131-3 Standard klassifiziert und dient zur Verarbeitung boolescher Operationen.
 
+![XOR_7](XOR_7.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ** (Normal Execution Request): Löst die Berechnung der XOR-Operation aus. Wird mit allen Daten-Eingängen (`IN1` bis `IN7`) verknüpft.

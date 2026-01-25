@@ -9,6 +9,8 @@
 ## Einleitung
 Der SUBSCRIBE_4 Funktionsblock dient zum Abonnieren von Daten eines PUBLISH_4 Blocks. Er ermöglicht den Empfang von bis zu vier verschiedenen Datenpunkten über eine Kommunikationsverbindung und stellt diese bei Verfügbarkeit zur Verfügung.
 
+![SUBSCRIBE_4](SUBSCRIBE_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

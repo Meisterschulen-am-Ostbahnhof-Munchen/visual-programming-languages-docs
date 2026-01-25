@@ -16,6 +16,8 @@ bei allen anderen "AND" Bausteinen selbe prinzip nur dass immer alle IN eingäng
 ## Einleitung
 Der AND_2 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen booleschen UND-Verknüpfung. Er implementiert eine Standard-Funktion gemäß IEC 61131-3 und kann mit beliebigen Bit-Datentypen verwendet werden.
 
+![AND_2](AND_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

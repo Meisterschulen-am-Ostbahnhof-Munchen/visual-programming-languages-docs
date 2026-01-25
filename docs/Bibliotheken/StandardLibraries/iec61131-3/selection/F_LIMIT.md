@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_LIMIT Funktionsblock ist ein Standard-Selektionsfunktionsblock gemäß IEC 61131-3, der als Begrenzer (Limiter) fungiert. Er begrenzt einen Eingangswert auf einen definierten Wertebereich zwischen einem unteren und oberen Grenzwert.
 
+![F_LIMIT](F_LIMIT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

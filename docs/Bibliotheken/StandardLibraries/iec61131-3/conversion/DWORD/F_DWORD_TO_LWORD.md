@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_LWORD` dient der Konvertierung eines 32-Bit-Datenwerts (DWORD) in einen 64-Bit-Datenwert (LWORD). Diese Konvertierung ist besonders in Szenarien nützlich, in denen eine Erweiterung der Datenbreite erforderlich ist, um Kompatibilität mit nachfolgenden Verarbeitungsschritten zu gewährleisten.
 
+![F_DWORD_TO_LWORD](F_DWORD_TO_LWORD.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ** (Typ: Event): Startet die Ausführung des Funktionsblocks. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

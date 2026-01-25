@@ -12,6 +12,8 @@
 
 Der FB_TP (Timer Pulse) ist ein standardisierter Zeitgeber-Funktionsblock nach IEC 61131-3, der eine pulsierende Ausgangsfunktion bereitstellt. Der Baustein erzeugt einen Impuls mit einer definierten Zeitdauer, unabhängig von der Dauer des Eingangssignals.
 
+![FB_TP](FB_TP.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

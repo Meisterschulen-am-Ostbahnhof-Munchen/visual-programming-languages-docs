@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ULINT_TO_USINT` dient der Konvertierung eines 64-Bit unsigned integer Wertes (`ULINT`) in einen 8-Bit unsigned integer Wert (`USINT`). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_ULINT_TO_USINT](F_ULINT_TO_USINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung des Funktionsblocks. Verbunden mit dem Daten-Eingang `IN`.

@@ -10,6 +10,8 @@
 ## Einleitung
 Der ZephyrIO Funktionsblock dient als Template für modulare Ein-/Ausgabe-Funktionalität mit Boards, die das Zephyr Betriebssystem verwenden. Dieser Baustein ermöglicht die Initialisierung und Konfiguration von IO-Services in verteilten Automatisierungssystemen.
 
+![ZephyrIO](ZephyrIO.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

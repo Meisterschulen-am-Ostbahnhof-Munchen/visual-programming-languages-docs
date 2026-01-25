@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_SPLIT_2` ist ein grundlegender Funktionsbaustein nach IEC 61499, der ein einzelnes Eingangereignis (`EI`) in eine Sequenz von zwei Ausgangsereignissen (`EO1` und `EO2`) aufteilt. Dieser Baustein ist funktional identisch mit `E_SPLIT`.
 
+![E_SPLIT_2](E_SPLIT_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingang**

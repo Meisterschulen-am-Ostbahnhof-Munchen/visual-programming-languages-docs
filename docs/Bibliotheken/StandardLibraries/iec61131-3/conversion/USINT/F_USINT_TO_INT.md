@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_INT` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (USINT) in einen vorzeichenbehafteten 16-Bit-Integer-Wert (INT). Dieser Baustein ist Teil des `iec61131::conversion` Pakets und ermöglicht eine einfache Typumwandlung zwischen diesen beiden Datentypen.
 
+![F_USINT_TO_INT](F_USINT_TO_INT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

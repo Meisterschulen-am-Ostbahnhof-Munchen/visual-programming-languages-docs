@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_SUB](F_SUB.svg)
+
+
 ## Einführung
 Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numerischer Werte, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Differenzbildung verschiedener numerischer Datentypen gemäß IEC 61131-3 Standard.
 

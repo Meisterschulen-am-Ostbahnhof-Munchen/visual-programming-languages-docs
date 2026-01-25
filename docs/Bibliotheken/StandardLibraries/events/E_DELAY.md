@@ -9,6 +9,8 @@
 ## Einleitung
 Der **E_DELAY** ist ein zentraler Funktionsbaustein der IEC 61499 Norm für industrielle Steuerungssysteme. Als ereignisgesteuerter Timer ermöglicht er die verzögerte Auslösung von Ereignissen mit konfigurierbarer Zeitspanne und Abbruchmöglichkeit. Dieser Baustein findet breite Anwendung in zeitgesteuerten Automatisierungsprozessen.
 
+![E_DELAY](E_DELAY.svg)
+
 ## Struktur des E_DELAY-Bausteins
 
 ### Schnittstelle (Interface)

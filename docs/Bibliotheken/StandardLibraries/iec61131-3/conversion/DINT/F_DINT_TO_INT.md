@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_INT` dient der Konvertierung eines 32-Bit-DINT-Wertes in einen 16-Bit-INT-Wert. Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten zwischen Systemen mit unterschiedlicher Wortbreite ausgetauscht werden müssen.
 
+![F_DINT_TO_INT](F_DINT_TO_INT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

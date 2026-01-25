@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `GetInstancePathAndName` dient dazu, den Instanzpfad und den Instanznamen aus der Laufzeitumgebung abzurufen. Dies ist besonders nützlich für Debugging-Zwecke oder für dynamische Konfigurationen, bei denen der genaue Pfad einer Instanz benötigt wird.
 
+![GetInstancePathAndName](GetInstancePathAndName.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Service-Anfrage, die den Abruf des Instanzpfades und -namens auslöst. Wird mit dem Separatorzeichen `Sep` verknüpft.

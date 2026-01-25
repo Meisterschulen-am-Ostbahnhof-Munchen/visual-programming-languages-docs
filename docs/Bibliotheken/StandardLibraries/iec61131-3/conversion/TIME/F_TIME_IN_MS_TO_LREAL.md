@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_MS_TO_LREAL` dient zur Konvertierung eines TIME-Werts in Millisekunden in einen LREAL-Wert. Dies ist besonders nützlich, wenn Zeitwerte für weitere Berechnungen oder Analysen in einer höheren Präzision benötigt werden.
 
+![F_TIME_IN_MS_TO_LREAL](F_TIME_IN_MS_TO_LREAL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Normaler Ausführungsanforderung. Löst die Konvertierung aus.

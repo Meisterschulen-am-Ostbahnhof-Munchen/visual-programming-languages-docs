@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DT_TO_DATE` dient der Konvertierung eines Datums-Zeit-Werts (DT) in ein reines Datum (DATE). Diese Funktionalität ist besonders nützlich, wenn in Steuerungsanwendungen nur das Datum ohne Zeitinformation benötigt wird.
 
+![F_DT_TO_DATE](F_DT_TO_DATE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

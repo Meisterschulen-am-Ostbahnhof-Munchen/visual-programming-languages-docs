@@ -10,6 +10,8 @@
 ## Einleitung
 Der EBMaster Funktionsblock ist ein Service Interface Function Block für die Kommunikation mit EtherBrick-Modulen über SPI (Serial Peripheral Interface). Er dient als Master-Komponente zur Steuerung und Konfiguration der SPI-Bus-Kommunikation mit angeschlossenen Slave-Modulen.
 
+![EBMaster](EBMaster.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

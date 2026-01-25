@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_USINT` dient der Konvertierung eines `WORD`-Datentyps in einen `USINT`-Datentyp. Er ist Teil des Pakets `iec61131::conversion` und eignet sich für Anwendungen, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_WORD_TO_USINT](F_WORD_TO_USINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - `REQ` (Event): Startet die Ausführung des Funktionsblocks. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

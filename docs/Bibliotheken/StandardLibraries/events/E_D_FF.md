@@ -11,6 +11,8 @@
 ## Einleitung
 Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter industrieller Steuerungssysteme. Der **E_D_FF**-Baustein (Data Flip-Flop) ist ein grundlegendes Speicherelement in dieser Norm, das digitale Signale synchron zu einem Taktsignal speichert. Dieser Funktionsbaustein spielt eine zentrale Rolle in Zustandsmaschinen und Speicheranwendungen industrieller Automatisierungslösungen.
 
+![E_D_FF](E_D_FF.svg)
+
 ## Struktur des E_D_FF-Bausteins
 
 ### Schnittstelle (Interface)

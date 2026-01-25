@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_REAL_AS_STRING` dient der Konvertierung eines REAL-Wertes in einen STRING-Wert. Er ist Teil des Pakets `iec61131::conversion` und ermöglicht die einfache Umwandlung von numerischen Werten in eine Zeichenkette.
 
+![F_REAL_AS_STRING](F_REAL_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung des REAL-Wertes in einen STRING. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

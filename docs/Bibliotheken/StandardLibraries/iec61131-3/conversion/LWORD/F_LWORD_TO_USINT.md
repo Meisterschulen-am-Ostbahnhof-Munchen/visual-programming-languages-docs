@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_USINT` dient der Konvertierung eines 64-Bit-Wertes (LWORD) in einen 8-Bit-unsigned-Integer-Wert (USINT). Diese Konvertierung ist besonders nützlich, wenn Daten aus einem größeren Wertebereich in einen kleineren, spezifischeren Bereich umgewandelt werden müssen.
 
+![F_LWORD_TO_USINT](F_LWORD_TO_USINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

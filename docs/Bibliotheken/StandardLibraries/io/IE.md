@@ -21,6 +21,8 @@
 ## Einleitung
 Der IE-Funktionsblock (Input Event) ist ein Service-Interface-Funktionsblock für die Verarbeitung von Ereigniseingangsdaten. Er dient als Schnittstelle zwischen der Steuerungslogik und externen Eingabegeräten oder -signalen und ermöglicht die Initialisierung, Abfrage und Indikation von Eingabeereignissen.
 
+![IE](IE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

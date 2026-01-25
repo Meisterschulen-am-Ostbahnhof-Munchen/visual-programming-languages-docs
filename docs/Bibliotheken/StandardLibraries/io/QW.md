@@ -10,6 +10,8 @@
 ## Einleitung
 Der QW-Funktionsblock ist ein Ausgabeservice-Interface-Baustein für die Ausgabe von Wort-Daten (WORD). Er dient als Schnittstelle zwischen der Steuerungslogik und physikalischen Ausgabegeräten oder Ressourcen und ermöglicht die sichere Übertragung von 16-Bit-Daten an externe Hardware.
 
+![QW](QW.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

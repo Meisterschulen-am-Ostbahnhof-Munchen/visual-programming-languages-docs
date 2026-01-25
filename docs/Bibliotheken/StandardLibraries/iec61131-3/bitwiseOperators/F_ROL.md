@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock `F_ROL` (Rotate Left) führt eine bitweise Linksrotation durch. Er rotiert den Eingabewert um eine angegebene Anzahl von Bits nach links. Dabei werden die Bits, die auf der linken Seite herausrotiert werden, auf der rechten Seite wieder eingefügt. Dies ist eine zyklische Operation, bei der keine Bits verloren gehen.
 
+![F_ROL](F_ROL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

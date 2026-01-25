@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AND_9` führt eine bitweise logische UND-Operation (AND) auf bis zu neun Eingangsvariablen durch. Es handelt sich um einen generischen Funktionsblock, der mit verschiedenen Bit-Datentypen arbeiten kann. Der Block ist gemäß dem Standard IEC 61131-3 klassifiziert und eignet sich für Anwendungen in der Automatisierungstechnik.
 
+![AND_9](AND_9.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

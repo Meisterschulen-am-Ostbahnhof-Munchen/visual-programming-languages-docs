@@ -10,6 +10,8 @@
 ## Einleitung
 Der XOR_6 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen XOR-Verknüpfung mit sechs Eingängen. Er implementiert die boolesche Exklusiv-ODER-Operation auf Bitebene gemäß dem IEC 61131-3 Standard und kann mit verschiedenen Bit-Datentypen arbeiten.
 
+![XOR_6](XOR_6.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

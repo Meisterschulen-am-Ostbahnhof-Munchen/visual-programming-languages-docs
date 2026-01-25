@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_LINT` dient der Konvertierung eines 32-Bit Ganzzahlwerts (DINT) in einen 64-Bit Ganzzahlwert (LINT). Dieser Baustein ist besonders nützlich in Szenarien, bei denen eine Erweiterung des Wertebereichs oder eine Typanpassung für nachfolgende Verarbeitungsschritte erforderlich ist.
 
+![F_DINT_TO_LINT](F_DINT_TO_LINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Dieser Ereigniseingang ist mit dem Daten-Eingang `IN` verknüpft.

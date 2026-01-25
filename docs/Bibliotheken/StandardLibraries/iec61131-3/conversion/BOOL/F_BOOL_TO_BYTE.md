@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_BYTE` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen Byte-Wert (`BYTE`). Diese Konvertierung ist nützlich, wenn boolesche Signale in Systemen verarbeitet werden müssen, die Byte-Daten erfordern.
 
+![F_BOOL_TO_BYTE](F_BOOL_TO_BYTE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

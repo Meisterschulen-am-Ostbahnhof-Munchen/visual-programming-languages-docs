@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_9 Funktionsblock dient zum Veröffentlichen von Daten an einen oder mehrere SUBSCRIBE_9 Blöcke. Er ermöglicht die unbestätigte Übertragung von bis zu neun verschiedenen Datenwerten über ein Kommunikationsnetzwerk.
 
+![PUBLISH_9](PUBLISH_9.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

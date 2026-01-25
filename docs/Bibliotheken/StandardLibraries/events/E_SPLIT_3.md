@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_SPLIT_3` ist ein grundlegender Funktionsbaustein nach IEC 61499, der ein einzelnes Eingangereignis (`EI`) in eine Sequenz von drei Ausgangsereignissen (`EO1`, `EO2`, `EO3`) aufteilt.
 
+![E_SPLIT_3](E_SPLIT_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingang**

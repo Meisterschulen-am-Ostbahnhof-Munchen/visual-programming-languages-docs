@@ -10,6 +10,8 @@
 ## Einleitung
 Der **F_DIV** ist ein standardkonformer Funktionsbaustein zur Division numerischer Werte, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Division verschiedener numerischer Datentypen gemäß IEC 61131-3 Standard.
 
+![F_DIV](F_DIV.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

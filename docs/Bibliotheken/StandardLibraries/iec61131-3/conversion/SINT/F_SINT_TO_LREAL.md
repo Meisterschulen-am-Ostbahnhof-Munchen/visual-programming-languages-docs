@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_LREAL` dient der Konvertierung eines ganzzahligen Wertes vom Typ `SINT` (8-Bit Ganzzahl) in einen Fließkommawert vom Typ `LREAL` (64-Bit Fließkomma). Dieser Baustein ist besonders nützlich in Anwendungen, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_SINT_TO_LREAL](F_SINT_TO_LREAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

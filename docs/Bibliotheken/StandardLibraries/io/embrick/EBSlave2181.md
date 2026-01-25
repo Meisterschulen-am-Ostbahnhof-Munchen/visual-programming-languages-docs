@@ -10,6 +10,8 @@
 ## Einleitung
 Der EBSlave2181 ist ein Service Interface Function Block für die Kommunikation mit EtherBrick-Slave-Modulen. Dieser Funktionsblock ermöglicht die Konfiguration und Überwachung von digitalen Ein- und Ausgängen eines EtherBrick-Slave-Moduls und dient als Schnittstelle zwischen der Steuerungslogik und der physikalischen Feldbus-Kommunikation.
 
+![EBSlave2181](EBSlave2181.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_LWORD` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen 64-Bit langen vorzeichenlosen Integerwert (`LWORD`). Diese Konvertierung ist insbesondere in Szenarien nützlich, in denen boolesche Werte in größere Datenstrukturen eingebettet oder mit anderen langen Integerwerten verarbeitet werden müssen.
 
+![F_BOOL_TO_LWORD](F_BOOL_TO_LWORD.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Normaler Ausführungsanforderung. Löst die Konvertierung aus. Wird mit dem Daten-Eingang `IN` verknüpft.

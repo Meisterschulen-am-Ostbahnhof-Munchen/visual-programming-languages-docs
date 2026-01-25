@@ -10,6 +10,8 @@
 ## Einleitung
 Der OR_5 Funktionsblock ist ein generischer Baustein zur Durchführung einer bitweisen ODER-Verknüpfung mit fünf Eingängen. Er implementiert eine Standard-Bitfunktion gemäß IEC 61131-3 und kann mit beliebigen Bit-Datentypen arbeiten.
 
+![OR_5](OR_5.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

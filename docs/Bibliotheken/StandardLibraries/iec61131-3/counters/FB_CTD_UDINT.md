@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `FB_CTD_UDINT` ist ein Abwärtszähler (Down Counter) für vorzeichenlose 32-Bit-Ganzzahlen (UDINT). Er wird verwendet, um einen Zählerwert bei jedem Ereignis herunterzuzählen, bis er Null erreicht.
 
+![FB_CTD_UDINT](FB_CTD_UDINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

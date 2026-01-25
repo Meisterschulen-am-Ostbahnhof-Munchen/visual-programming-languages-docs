@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ULINT_AS_STRING` dient der Konvertierung eines `ULINT`-Wertes (64-Bit unsigned integer) in einen `STRING`. Diese Funktionalität ist besonders nützlich, wenn numerische Werte für die Ausgabe, Protokollierung oder weitere Verarbeitung als Zeichenketten benötigt werden.
 
+![F_ULINT_AS_STRING](F_ULINT_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

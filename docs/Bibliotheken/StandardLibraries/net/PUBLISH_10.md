@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_10 Funktionsblock dient zum Verteilen von Daten an einen oder mehrere SUBSCRIBE_10 Blöcke. Er ermöglicht die unbestätigte Übertragung von bis zu 10 verschiedenen Datenwerten über ein Publish-Subscribe-Kommunikationsmuster.
 
+![PUBLISH_10](PUBLISH_10.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

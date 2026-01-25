@@ -16,6 +16,8 @@ TRUE dominiert, also sobald an einem IN ein TRUE anliegt wird der OUT auf TRUE g
 ## Einleitung
 Der OR_2-Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen booleschen ODER-Verknüpfung. Er führt eine logische ODER-Operation auf zwei Eingabewerten durch und gibt das Ergebnis aus. Der Baustein ist gemäß der Norm IEC 61131-3 klassifiziert und unterstützt generische Datentypen für maximale Flexibilität.
 
+![OR_2](OR_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

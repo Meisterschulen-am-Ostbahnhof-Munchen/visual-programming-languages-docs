@@ -10,6 +10,8 @@
 ## Einleitung
 Der eIW-Funktionsblock ist ein Eingabeservice-Interface für Wort-Eingabedaten (WORD) mit ereignisbasierter Auslösung. Er dient als Schnittstelle zwischen der Steuerungsanwendung und physikalischen Eingabegeräten und ermöglicht die Abfrage von 16-Bit-Datenwörtern.
 
+![eIW](eIW.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

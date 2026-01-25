@@ -10,6 +10,8 @@
 ## Einleitung
 Der SUBSCRIBE_5 Funktionsblock dient zum Abonnieren von Daten eines PUBLISH_5 Blocks. Er ermöglicht den Empfang von bis zu fünf verschiedenen Datenpunkten über eine Netzwerkverbindung und stellt eine standardisierte Schnittstelle für die Kommunikation zwischen verteilten Automatisierungskomponenten bereit.
 
+![SUBSCRIBE_5](SUBSCRIBE_5.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

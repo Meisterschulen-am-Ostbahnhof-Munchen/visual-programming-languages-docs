@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_T_FF_SR` (Event-driven Toggle Flip-Flop mit Set/Reset) ist ein erweiterter bistabiler Funktionsbaustein nach IEC 61499. Er kombiniert die Funktionalität eines `E_T_FF` (Toggeln) mit zusätzlichen `S`- (Setzen) und `R`- (Rücksetzen) Eingängen.
 
+![E_T_FF_SR](E_T_FF_SR.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

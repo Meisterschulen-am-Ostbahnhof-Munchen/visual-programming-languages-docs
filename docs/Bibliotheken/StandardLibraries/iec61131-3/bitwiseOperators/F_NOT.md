@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_NOT Funktionsblock implementiert eine bitweise logische NOT-Operation gemäß dem IEC 61131-3 Standard. Er führt eine bitweise Invertierung des Eingangswertes durch und gibt das Ergebnis am Ausgang aus.
 
+![F_NOT](F_NOT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

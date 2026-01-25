@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `RampLimitFS` dient zur schrittweisen Erhöhung oder Verringerung eines Ausgabewertes mit verschiedenen Geschwindigkeiten (schnell/langsam), ähnlich wie bei einer Tempomat-Funktion in Fahrzeugen. Zusätzlich bietet er die Möglichkeit, Minimal- und Maximalwerte zu setzen sowie einen vordefinierten Wert zu laden.
 
+![RampLimitFS](RampLimitFS.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - `ZERO`: Setzt den Ausgang `OUT` auf den Wert von `VAL_ZERO`.

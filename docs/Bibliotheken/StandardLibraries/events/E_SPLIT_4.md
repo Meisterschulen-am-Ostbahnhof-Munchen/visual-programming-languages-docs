@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_SPLIT_4` ist ein grundlegender Funktionsbaustein nach IEC 61499, der ein einzelnes Eingangereignis (`EI`) in eine Sequenz von vier Ausgangsereignissen (`EO1` bis `EO4`) aufteilt.
 
+![E_SPLIT_4](E_SPLIT_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingang**

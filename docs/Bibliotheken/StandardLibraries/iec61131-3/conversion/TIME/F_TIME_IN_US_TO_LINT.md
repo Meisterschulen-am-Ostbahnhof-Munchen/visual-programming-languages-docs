@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_US_TO_LINT` dient der Konvertierung eines TIME-Wertes in Mikrosekunden (µs) in einen LINT-Wert (64-Bit Ganzzahl). Diese Konvertierung ist nützlich, wenn Zeitwerte in numerischen Berechnungen oder für weitere Verarbeitungsschritte benötigt werden.
 
+![F_TIME_IN_US_TO_LINT](F_TIME_IN_US_TO_LINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

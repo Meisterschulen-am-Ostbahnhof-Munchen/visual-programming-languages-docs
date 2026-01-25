@@ -11,6 +11,8 @@
 
 Der EC_SET_EVT Funktionsblock dient zum Setzen von Ereignis-Ein- oder -Ausgängen einer Funktionsblock-Instanz. Er ermöglicht die gezielte Auslösung von Ereignissen in anderen Funktionsblöcken und kann beispielsweise als Ereignis-Sniffer eingesetzt werden. Der Baustein gehört zur Kategorie der Rekonfigurationsdienste gemäß IEC 61499-1 Standard.
 
+![EC_SET_EVT](EC_SET_EVT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_UINT` dient der Konvertierung eines 32-Bit unsigned integer-Werts (UDINT) in einen 16-Bit unsigned integer-Wert (UINT). Der Block ist Teil des `iec61131::conversion` Pakets.
 
+![F_UDINT_TO_UINT](F_UDINT_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der FB_CTD_ULINT ist ein Abwärtszähler (Down Counter) für den Datentyp ULINT (Unsigned Long Integer). Er wird verwendet, um Werte von einem vorgegebenen Startwert aus abwärts zu zählen und signalisiert, wenn der Zählerstand den Wert 0 erreicht oder unterschreitet.
 
+![FB_CTD_ULINT](FB_CTD_ULINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Normaler Ausführungsanforderung. Wird verwendet, um den Zähler zu aktualisieren. Verknüpft mit den Daten-Eingängen CD, PV und LD.

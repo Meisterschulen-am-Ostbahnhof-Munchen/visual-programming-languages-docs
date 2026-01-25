@@ -9,6 +9,8 @@
 ## Einleitung
 Der SUBSCRIBE_10 Funktionsblock dient als Abonnent in einem Publish-Subscribe-Kommunikationsmuster und ermöglicht das Empfangen von Daten von einem PUBLISH_10 Block. Der Block kann bis zu 10 verschiedene Datenwerte gleichzeitig empfangen und verarbeiten.
 
+![SUBSCRIBE_10](SUBSCRIBE_10.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

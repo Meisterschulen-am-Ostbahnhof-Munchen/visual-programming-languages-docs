@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LINT_AS_STRING` dient der Konvertierung eines LINT-Datentyps (64-Bit-Ganzzahl) in einen STRING-Datentyp (Zeichenkette). Dieser Baustein ist besonders nützlich, wenn numerische Werte für die Ausgabe oder Weiterverarbeitung als Text benötigt werden.
 
+![F_LINT_AS_STRING](F_LINT_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Bei Aktivierung dieses Ereignisses wird der Wert am Daten-Eingang `IN` verarbeitet.

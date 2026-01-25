@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LINT_TO_REAL` konvertiert einen ganzzahligen Wert des Typs `LINT` (64-Bit Integer) in einen Fließkommawert des Typs `REAL`. Diese Konvertierung ist nützlich, wenn Daten aus einem ganzzahligen Format in ein Fließkommaformat umgewandelt werden müssen, beispielsweise für weitere Berechnungen oder Anzeigen.
 
+![F_LINT_TO_REAL](F_LINT_TO_REAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

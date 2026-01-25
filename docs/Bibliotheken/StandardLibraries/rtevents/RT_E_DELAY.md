@@ -8,6 +8,8 @@
 ## Einleitung
 Der RT_E_DELAY Funktionsblock verzögert ein Ereignis um eine definierte Zeit (DT) unter Berücksichtigung von Echtzeitanforderungen.
 
+![RT_E_DELAY](RT_E_DELAY.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

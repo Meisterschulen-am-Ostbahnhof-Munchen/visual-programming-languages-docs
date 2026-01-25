@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_REND` (Event Rendezvous) ist ein Funktionsbaustein nach IEC 61499, der als Synchronisationspunkt für zwei verschiedene Ereignisströme dient. Er feuert ein Ausgangsereignis erst dann, wenn er jeweils mindestens ein Ereignis von beiden seiner Eingänge empfangen hat. Dies entspricht einer logischen UND-Verknüpfung über die Zeit.
 
+![E_REND](E_REND.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

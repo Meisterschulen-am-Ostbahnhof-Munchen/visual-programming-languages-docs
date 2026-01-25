@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_UINT` dient der Konvertierung eines `BYTE`-Wertes in einen `UINT`-Wert. Dies ist besonders nützlich, wenn Daten unterschiedlicher Typen in einem System verarbeitet werden müssen und eine Typumwandlung erforderlich ist.
 
+![F_BYTE_TO_UINT](F_BYTE_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung des Funktionsblocks. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

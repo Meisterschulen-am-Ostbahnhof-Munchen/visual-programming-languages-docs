@@ -10,6 +10,8 @@
 ## Einleitung
 Der SERVER_1 Funktionsblock dient zur Kommunikation mit einem CLIENT_1 Block und ermöglicht die Einrichtung einer Server-Client-Verbindung. Der Block kann Daten von Clients empfangen und an diese senden, wobei er eine flexible Kommunikationsschnittstelle für verschiedene Anwendungsfälle bereitstellt.
 
+![SERVER_1](SERVER_1.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

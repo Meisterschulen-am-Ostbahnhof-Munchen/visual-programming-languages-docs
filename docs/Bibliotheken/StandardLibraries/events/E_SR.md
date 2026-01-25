@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_SR` (Event-driven SR Flip-Flop) ist ein ereignisgesteuerter, bistabiler Funktionsbaustein nach IEC 61499. Er dient als grundlegendes Speicherelement, das durch separate "Set"- und "Reset"-Ereignisse gesteuert wird. Sein Ausgang `Q` behält seinen Zustand bei, bis ein entgegengesetztes Ereignis eintrifft.
 
+![E_SR](E_SR.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

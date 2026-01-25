@@ -10,6 +10,8 @@
 ## Einleitung
 Der SEND_RECV_1_1 Funktionsblock implementiert eine Duplex-Kommunikationsschnittstelle für den bidirektionalen Datenaustausch über Kommunikationskanäle. Der Baustein ermöglicht sowohl das Senden als auch das Empfangen von Daten über einen gemeinsamen Kanal und unterstützt generische Datentypen für maximale Flexibilität.
 
+![SEND_RECV_1_1](SEND_RECV_1_1.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `FB_CTD_DINT` ist ein Abwärtszähler (Down Counter) für 32-Bit Ganzzahlen (DINT). Er wird verwendet, um einen Wert schrittweise zu verringern und bei Erreichen eines bestimmten Schwellwerts ein Signal auszugeben.
 
+![FB_CTD_DINT](FB_CTD_DINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

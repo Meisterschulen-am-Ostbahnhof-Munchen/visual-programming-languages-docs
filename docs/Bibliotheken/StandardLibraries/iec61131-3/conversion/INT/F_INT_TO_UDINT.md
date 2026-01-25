@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_INT_TO_UDINT` dient der Konvertierung eines vorzeichenbehafteten 16-Bit Integer-Werts (`INT`) in einen vorzeichenlosen 32-Bit Integer-Wert (`UDINT`). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten zwischen Systemen mit unterschiedlichen Datentypen ausgetauscht werden müssen.
 
+![F_INT_TO_UDINT](F_INT_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

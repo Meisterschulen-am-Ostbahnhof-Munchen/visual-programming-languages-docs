@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LINT_TO_SINT` dient der Konvertierung eines 64-Bit-Ganzzahlwerts (`LINT`) in einen 8-Bit-Ganzzahlwert (`SINT`). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen mit unterschiedlicher Wortbreite ausgetauscht oder verarbeitet werden müssen.
 
+![F_LINT_TO_SINT](F_LINT_TO_SINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verbunden.

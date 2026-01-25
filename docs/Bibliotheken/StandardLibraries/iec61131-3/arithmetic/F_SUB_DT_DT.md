@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_SUB_DT_DT](F_SUB_DT_DT.svg)
+
+
 ## Einführung
 Der **F_SUB_DT_DT** ist ein standardkonformer Funktionsbaustein zur präzisen Berechnung von Zeitdifferenzen zwischen zwei Zeitstempeln (DATE_AND_TIME), entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht mikrosekundengenaue Zeitintervallberechnungen gemäß IEC 61131-3 Standard.
 

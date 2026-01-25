@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_N_TABLE` (Event N-Table) ist ein Funktionsbaustein nach IEC 61499, der eine endliche Sequenz von zeitlich versetzten Ereignissen auf separaten Ausgängen generiert. Er kombiniert intern einen tabellengesteuerten Zeitgeber (`E_TABLE`) mit einem Demultiplexer (`E_DEMUX`), um eine Kette von Ereignissen zu erzeugen, bei der jedes Ereignis auf einem eigenen Kanal ausgegeben wird.
 
+![E_N_TABLE](E_N_TABLE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

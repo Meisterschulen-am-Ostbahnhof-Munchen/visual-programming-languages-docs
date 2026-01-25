@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `FB_R_TRIG` dient der Erkennung einer steigenden Flanke eines booleschen Signals. Er wird typischerweise verwendet, um Zustandsänderungen von `FALSE` nach `TRUE` zu detektieren und darauf zu reagieren.
 
+![FB_R_TRIG](FB_R_TRIG.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

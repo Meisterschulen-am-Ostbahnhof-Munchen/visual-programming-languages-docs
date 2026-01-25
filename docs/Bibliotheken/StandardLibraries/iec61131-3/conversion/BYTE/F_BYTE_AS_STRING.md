@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BYTE_AS_STRING` dient der Konvertierung eines BYTE-Wertes in einen STRING. Diese Funktionalität ist besonders nützlich, wenn numerische Daten in eine für die Anzeige oder Protokollierung geeignete Textform umgewandelt werden müssen.
 
+![F_BYTE_AS_STRING](F_BYTE_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

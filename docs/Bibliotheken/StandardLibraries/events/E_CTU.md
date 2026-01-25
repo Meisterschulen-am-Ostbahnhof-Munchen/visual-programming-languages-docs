@@ -21,6 +21,8 @@
 ## Einleitung
 Der `E_CTU` (Event-Driven Up Counter) ist ein ereignisgesteuerter Aufwärtszähler gemäß dem IEC 61499-Standard. Seine Funktion ist es, bei jedem ankommenden Zählereignis einen internen Zählerstand zu erhöhen und diesen mit einem vorgegebenen Grenzwert zu vergleichen. Der Baustein kann jederzeit zurückgesetzt werden.
 
+![E_CTU](E_CTU.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

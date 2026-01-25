@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_ULINT` dient der Konvertierung eines 32-Bit vorzeichenbehafteten Integer-Werts (`DINT`) in einen 64-Bit vorzeichenlosen Integer-Wert (`ULINT`). Dieser Baustein ist besonders nützlich, wenn Daten zwischen Systemen mit unterschiedlichen Datentypen ausgetauscht werden müssen.
 
+![F_DINT_TO_ULINT](F_DINT_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

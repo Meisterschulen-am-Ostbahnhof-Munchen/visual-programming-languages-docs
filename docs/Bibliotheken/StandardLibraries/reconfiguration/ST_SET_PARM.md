@@ -10,6 +10,8 @@
 ## Einleitung
 Der ST_SET_PARM Funktionsblock dient zum Setzen von Parametern für Dateneingänge von Funktionsblöcken, Ressourcen oder Geräteinstanzen innerhalb eines 4diac-Systems. Dieser Baustein ermöglicht die dynamische Konfiguration von Systemparametern zur Laufzeit.
 
+![ST_SET_PARM](ST_SET_PARM.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

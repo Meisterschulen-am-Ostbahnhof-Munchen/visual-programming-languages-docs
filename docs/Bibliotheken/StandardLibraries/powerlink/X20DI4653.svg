@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="992" height="379" viewBox="-556 -20 992 379">
+<defs>
+</defs>
+<rect x="3" y="3" width="130" height="329" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H130 V92 H124 V132 H130 V329 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
+<path d="M0,30 L130,30" stroke="#606060" stroke-width="1" />
+<text x="65.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">X20DI4653</text>
+<text x="65.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-101" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-101" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Application Response to IND</text>
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-31" y="152" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-101" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">CNID</text>
+<text x="-31" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="-101" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Client Node ID</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">MODID</text>
+<text x="-31" y="204" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-101" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Station Number</text>
+<path d="M130,37 L130,47 L135,42 Z" fill="#5cb85c" stroke="none" />
+<text x="118" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="161" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="231" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M130,63 L130,73 L135,68 Z" fill="#5cb85c" stroke="none" />
+<text x="118" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="161" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="231" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
+<path d="M130,144 L130,154 L135,149 Z" fill="#0066cc" stroke="none" />
+<text x="118" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="161" y="152" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="231" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M130,170 L130,180 L135,175 Z" fill="#0066cc" stroke="none" />
+<text x="118" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNIDO</text>
+<text x="161" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="231" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Client Node ID Output</text>
+<path d="M130,196 L130,206 L135,201 Z" fill="#0066cc" stroke="none" />
+<text x="118" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="161" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="231" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
+<path d="M130,222 L130,232 L135,227 Z" fill="#0066cc" stroke="none" />
+<text x="118" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI01</text>
+<text x="161" y="230" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="231" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Digital Input 01</text>
+<path d="M130,248 L130,258 L135,253 Z" fill="#0066cc" stroke="none" />
+<text x="118" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI02</text>
+<text x="161" y="256" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="231" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Digital Input 02</text>
+<path d="M130,274 L130,284 L135,279 Z" fill="#0066cc" stroke="none" />
+<text x="118" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI03</text>
+<text x="161" y="282" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="231" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Digital Input 03</text>
+<path d="M130,300 L130,310 L135,305 Z" fill="#0066cc" stroke="none" />
+<text x="118" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI04</text>
+<text x="161" y="308" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="231" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Digital Input 04</text>
+<path d="M-12,42 L-12,201" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,149 L-5,149" stroke="#404040" />
+<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,201 L-5,201" stroke="#404040" />
+<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,68 L-20,149" stroke="#404040" stroke-width="1" />
+<path d="M0,68 L-20,68" stroke="#404040" />
+<rect x="-22" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,149 L-5,149" stroke="#404040" />
+<rect x="-22" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M142,42 L142,201" stroke="#404040" stroke-width="1" />
+<path d="M130,42 L142,42" stroke="#404040" />
+<rect x="140" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M142,149 L135,149" stroke="#404040" />
+<rect x="140" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M142,201 L135,201" stroke="#404040" />
+<rect x="140" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M142,175 L135,175" stroke="#404040" />
+<rect x="140" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M150,68 L150,305" stroke="#404040" stroke-width="1" />
+<path d="M130,68 L150,68" stroke="#404040" />
+<rect x="148" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M150,227 L135,227" stroke="#404040" />
+<rect x="148" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M150,253 L135,253" stroke="#404040" />
+<rect x="148" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M150,279 L135,279" stroke="#404040" />
+<rect x="148" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M150,305 L135,305" stroke="#404040" />
+<rect x="148" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M150,201 L135,201" stroke="#404040" />
+<rect x="148" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M150,149 L135,149" stroke="#404040" />
+<rect x="148" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `OR_7` führt eine bitweise logische ODER-Operation auf bis zu sieben Eingangsvariablen durch. Es handelt sich um einen generischen Funktionsblock, der mit verschiedenen Bit-Datentypen (`ANY_BIT`) arbeiten kann. Der Block ist Teil der `iec61131::bitwiseOperators`-Bibliothek und implementiert eine Standard-Bitoperation gemäß IEC 61131-3.
 
+![OR_7](OR_7.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

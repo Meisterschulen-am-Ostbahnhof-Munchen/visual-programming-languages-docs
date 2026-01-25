@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_UDINT` dient der Konvertierung eines `STRING`-Wertes in einen `UDINT`-Wert (unsigned double integer). Er ist Teil des Pakets `iec61131::conversion` und ermöglicht die einfache Umwandlung von Zeichenketten in numerische Werte.
 
+![F_STRING_AS_UDINT](F_STRING_AS_UDINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verbunden.

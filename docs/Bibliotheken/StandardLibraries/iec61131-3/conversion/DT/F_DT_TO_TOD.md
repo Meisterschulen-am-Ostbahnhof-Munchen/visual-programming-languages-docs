@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DT_TO_TOD` dient der Konvertierung eines Datums- und Zeitwerts (DT) in einen reinen Zeitwert (TOD - Time of Day). Diese Funktion ist besonders nützlich, wenn nur die Tageszeit aus einem kombinierten Datums- und Zeitstempel extrahiert werden soll.
 
+![F_DT_TO_TOD](F_DT_TO_TOD.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Wird dieser Eingang ausgelöst, führt der Funktionsblock die Umwandlung durch.

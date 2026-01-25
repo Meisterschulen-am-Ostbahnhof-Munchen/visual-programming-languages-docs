@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_UDINT` dient der Konvertierung eines REAL-Wertes in einen UDINT-Wert. Dieser Baustein ist Teil des `iec61131::conversion`-Pakets und implementiert eine einfache, aber wichtige Typumwandlung für die Verwendung in Steuerungsanwendungen.
 
+![F_REAL_TO_UDINT](F_REAL_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung der Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

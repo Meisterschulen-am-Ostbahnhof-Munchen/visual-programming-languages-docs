@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_TRAIN` (Event Train) ist ein Funktionsbaustein nach IEC 61499, der eine endliche Folge von Ereignissen ("Ereigniszug") mit einem festen Zeitabstand generiert. Nach dem Start werden `N` Ereignisse im Abstand von `DT` erzeugt.
 
+![E_TRAIN](E_TRAIN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

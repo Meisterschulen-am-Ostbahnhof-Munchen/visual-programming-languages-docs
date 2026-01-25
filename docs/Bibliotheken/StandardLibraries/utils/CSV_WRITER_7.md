@@ -9,6 +9,8 @@
 ## Einleitung
 Der CSV_WRITER_7 ist ein Funktionsblock, der Daten in eine CSV-Datei schreibt. Er unterstützt das Schreiben von bis zu sieben verschiedenen Datenfeldern in eine angegebene Datei. Der Funktionsblock ist besonders nützlich für die Protokollierung und Datenspeicherung in Automatisierungsanwendungen.
 
+![CSV_WRITER_7](CSV_WRITER_7.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

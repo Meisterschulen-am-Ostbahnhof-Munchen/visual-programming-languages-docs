@@ -10,6 +10,8 @@
 ## Einleitung
 Der AND_3-Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen logischen UND-Verknüpfung mit drei Eingängen. Er führt eine bitweise UND-Operation auf drei Eingabewerten durch und gibt das Ergebnis aus. Der Baustein unterstützt alle ANY_BIT-Datentypen und ist damit flexibel für verschiedene Bitbreiten einsetzbar.
 
+![AND_3](AND_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

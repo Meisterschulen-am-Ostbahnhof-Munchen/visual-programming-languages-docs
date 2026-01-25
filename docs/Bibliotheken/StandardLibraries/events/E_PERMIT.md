@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_PERMIT` (Event Permit) ist ein grundlegender Funktionsbaustein nach IEC 61499, der als steuerbares "Tor" für Ereignisse fungiert. Er lässt ein Eingangereignis nur dann zum Ausgang passieren, wenn eine explizite Freigabebedingung erfüllt ist.
 
+![E_PERMIT](E_PERMIT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_UDINT` dient der Konvertierung eines `LWORD`-Wertes (64-Bit unsigned integer) in einen `UDINT`-Wert (32-Bit unsigned integer). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen mit unterschiedlichen Wortbreiten übertragen oder verarbeitet werden müssen.
 
+![F_LWORD_TO_UDINT](F_LWORD_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

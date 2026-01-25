@@ -9,6 +9,8 @@
 ## Einleitung
 Dieser Funktionsblock (FB) dient dazu, einen Wert aus einem Array an einer spezifischen Indexposition abzurufen. Eine wichtige Voraussetzung für die korrekte Funktionsweise ist, dass der Datentyp des Eingabe-Arrays mit dem Datentyp des Ausgabewerts übereinstimmt. Es handelt sich um einen grundlegenden Baustein für den Zugriff auf Array-Elemente.
 
+![GET_AT_INDEX](GET_AT_INDEX.svg)
+
 ## Schnittstellenstruktur
 Der `GET_AT_INDEX`-Funktionsblock verfügt über eine klar definierte Schnittstellenstruktur mit Ereignis- und Dateneingängen sowie -ausgängen.
 

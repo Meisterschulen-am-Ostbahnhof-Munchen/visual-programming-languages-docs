@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_INT_TO_ULINT` dient der Konvertierung eines ganzzahligen Wertes vom Datentyp `INT` in einen vorzeichenlosen 64-Bit-Ganzzahlwert vom Datentyp `ULINT`. Diese Konvertierung ist besonders nützlich, wenn Werte zwischen unterschiedlichen Systemen oder Komponenten ausgetauscht werden müssen, die unterschiedliche Datentypen verwenden.
 
+![F_INT_TO_ULINT](F_INT_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung des Eingabewertes. Dieser Ereigniseingang ist mit dem Daten-Eingang `IN` verknüpft.

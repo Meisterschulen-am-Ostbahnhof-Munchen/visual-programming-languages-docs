@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LREAL_TO_USINT` dient der Konvertierung eines LREAL-Wertes (64-Bit Gleitkommazahl) in einen USINT-Wert (8-Bit vorzeichenlose Ganzzahl). Diese Konvertierung ist besonders nützlich, wenn Gleitkommazahlen in vorzeichenlose Ganzzahlen umgewandelt werden müssen, z.B. für die Steuerung von Hardware-Registern oder die Kommunikation mit Systemen, die nur Ganzzahlen verarbeiten können.
 
+![F_LREAL_TO_USINT](F_LREAL_TO_USINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

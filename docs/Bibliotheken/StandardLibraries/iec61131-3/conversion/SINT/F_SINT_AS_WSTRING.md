@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_SINT_AS_WSTRING` dient zur Konvertierung eines SINT-Wertes (8-Bit Ganzzahl mit Vorzeichen) in einen WSTRING (Wide-String). Dieser Baustein ist besonders nützlich, wenn numerische Werte in eine für die Anzeige oder Weiterverarbeitung geeignete Textform umgewandelt werden müssen.
 
+![F_SINT_AS_WSTRING](F_SINT_AS_WSTRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

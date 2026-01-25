@@ -10,6 +10,8 @@
 ## Einleitung
 Der ST_CREATE_CONN Funktionsblock dient zur Erstellung von Ereignis- oder Datenverbindungen zwischen zwei Funktionsblock-Instanzen zur Laufzeit. Dieser Baustein ermöglicht die dynamische Rekonfiguration von Verbindungen in einem 4diac-System und ist als struktureller Service klassifiziert.
 
+![ST_CREATE_CONN](ST_CREATE_CONN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

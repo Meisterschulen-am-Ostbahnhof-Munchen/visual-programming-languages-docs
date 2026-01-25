@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_RIGHT` ist ein Standard-Baustein für die Verarbeitung von Zeichenketten (Strings) nach der Norm IEC 61131-3. Er extrahiert die rechten `L` Zeichen aus der Eingabezeichenkette `IN` und gibt diese als Ergebnis `OUT` aus. Dieser Baustein ist besonders nützlich in Anwendungen, bei denen Teile von Zeichenketten verarbeitet oder analysiert werden müssen.
 
+![F_RIGHT](F_RIGHT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

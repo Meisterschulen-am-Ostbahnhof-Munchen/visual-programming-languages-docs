@@ -9,6 +9,8 @@
 ## Einleitung
 Der CSV_WRITER_8 ist ein Funktionsblock zur Ausgabe von Daten in eine CSV-Datei. Er ermöglicht das Schreiben von bis zu 8 verschiedenen Datenwerten in eine spezifizierte Datei. Der Funktionsblock ist Teil der eclipse4diac::utils-Paketfamilie und eignet sich besonders für Datenerfassungs- und Protokollierungsaufgaben.
 
+![CSV_WRITER_8](CSV_WRITER_8.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **INIT**: Initialisiert den Funktionsblock. Wird mit den Variablen QI (Qualifier) und FILE_NAME (Dateiname) verwendet.

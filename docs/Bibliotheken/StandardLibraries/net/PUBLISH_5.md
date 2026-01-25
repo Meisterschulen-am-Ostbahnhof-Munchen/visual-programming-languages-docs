@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_5 Funktionsblock dient zum Veröffentlichen von Daten an einen oder mehrere SUBSCRIBE_5 Blöcke. Er ermöglicht die Übertragung von bis zu fünf verschiedenen Datenwerten über ein Publish-Subscribe-Kommunikationsmuster.
 
+![PUBLISH_5](PUBLISH_5.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

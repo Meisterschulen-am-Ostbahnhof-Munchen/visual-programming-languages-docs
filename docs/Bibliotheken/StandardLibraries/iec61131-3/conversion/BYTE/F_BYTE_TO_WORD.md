@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_WORD` dient der Konvertierung eines `BYTE`-Datentyps in einen `WORD`-Datentyp. Diese Konvertierung ist nützlich, wenn Daten in verschiedenen Größen verarbeitet oder weitergegeben werden müssen.
 
+![F_BYTE_TO_WORD](F_BYTE_TO_WORD.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Dieser Ereigniseingang ist mit dem Daten-Eingang `IN` verknüpft.

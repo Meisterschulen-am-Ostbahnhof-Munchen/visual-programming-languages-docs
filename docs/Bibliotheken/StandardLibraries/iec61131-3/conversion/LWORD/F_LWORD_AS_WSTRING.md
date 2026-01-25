@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LWORD_AS_WSTRING` dient zur Konvertierung eines LWORD-Datentyps in einen WSTRING-Datentyp. Diese Funktionalität ist besonders nützlich, wenn Daten zwischen Systemen ausgetauscht werden müssen, die unterschiedliche Datentypen verwenden.
 
+![F_LWORD_AS_WSTRING](F_LWORD_AS_WSTRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

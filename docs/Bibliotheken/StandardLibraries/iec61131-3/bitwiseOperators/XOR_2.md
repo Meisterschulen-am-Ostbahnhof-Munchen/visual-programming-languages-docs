@@ -10,6 +10,8 @@
 ## Einleitung
 Der XOR_2-Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen booleschen XOR-Operation. Er führt eine exklusive ODER-Verknüpfung zwischen zwei Eingabewerten durch und gibt das Ergebnis aus. Der Baustein ist für alle ANY_BIT-Datentypen geeignet und ermöglicht somit eine flexible Verwendung mit verschiedenen Bit-Längen.
 
+![XOR_2](XOR_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

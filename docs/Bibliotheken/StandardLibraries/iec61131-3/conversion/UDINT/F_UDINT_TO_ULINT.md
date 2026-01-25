@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_ULINT` dient der Konvertierung eines 32-Bit-unsigned-Integer-Werts (UDINT) in einen 64-Bit-unsigned-Integer-Wert (ULINT). Dieser Baustein ist besonders nützlich, wenn Daten zwischen Systemen oder Komponenten ausgetauscht werden, die unterschiedliche Integer-Größen verwenden.
 
+![F_UDINT_TO_ULINT](F_UDINT_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

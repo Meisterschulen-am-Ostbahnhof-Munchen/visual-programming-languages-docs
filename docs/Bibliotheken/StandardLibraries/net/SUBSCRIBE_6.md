@@ -10,6 +10,8 @@
 ## Einleitung
 Der SUBSCRIBE_6 Funktionsblock dient zum Abonnieren von Daten eines PUBLISH_6 Blocks. Er ermöglicht den Empfang von bis zu sechs verschiedenen Datenwerten über eine Netzwerkverbindung und stellt diese für die weitere Verarbeitung in einem IEC 61499-System zur Verfügung.
 
+![SUBSCRIBE_6](SUBSCRIBE_6.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

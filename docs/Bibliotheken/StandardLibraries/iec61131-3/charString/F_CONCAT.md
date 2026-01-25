@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_CONCAT` dient der Verkettung (Konkatenation) von zwei Zeichenketten (Strings). Er ist Teil der Standard-Bibliothek für Zeichen- und String-Operationen gemäß IEC 61131-3.
 
+![F_CONCAT](F_CONCAT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

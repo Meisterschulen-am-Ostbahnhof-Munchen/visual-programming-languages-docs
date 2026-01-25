@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `XOR_9` dient zur bitweisen Berechnung der XOR-Verknüpfung mit bis zu neun Eingängen. Er ist Teil der Standard-Bitoperationen gemäß IEC 61131-3 und ermöglicht die Verarbeitung beliebiger Bit-Datentypen (`ANY_BIT`).
 
+![XOR_9](XOR_9.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

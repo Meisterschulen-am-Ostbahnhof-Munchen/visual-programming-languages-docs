@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_TABLE` (Event Table) ist ein Funktionsbaustein nach IEC 61499, der eine endliche Sequenz von Ereignissen mit individuell definierbaren Zeitabständen generiert. Er liest die Zeitabstände aus einer Tabelle (einem Array) und feuert eine bestimmte Anzahl von Ereignissen nacheinander.
 
+![E_TABLE](E_TABLE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

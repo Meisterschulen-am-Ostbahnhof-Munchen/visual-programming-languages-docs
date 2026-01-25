@@ -9,6 +9,8 @@
 ## Einleitung
 Der XOR_4 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen XOR-Verknüpfung mit vier Eingängen. Er implementiert die exklusive ODER-Operation auf Bitebene gemäß dem IEC 61131-3 Standard und kann mit verschiedenen Bit-Datentypen arbeiten.
 
+![XOR_4](XOR_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

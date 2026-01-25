@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_DWORD` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen 32-Bit-unsigned-Integer-Wert (`DWORD`). Der Block ist besonders nützlich in Szenarien, wo boolesche Signale in numerische Werte umgewandelt werden müssen, beispielsweise für die Kommunikation mit Systemen, die nur numerische Eingaben verarbeiten können.
 
+![F_BOOL_TO_DWORD](F_BOOL_TO_DWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

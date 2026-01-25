@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_ASIN Funktionsblock ist ein Standard-Funktionsbaustein gemäß IEC 61131-3, der den Arkussinus (Arcussinus) einer numerischen Eingabe berechnet. Er gehört zur Kategorie der mathematischen Standardfunktionen für eine numerische Variable und liefert den Hauptwert der Arkussinus-Funktion.
 
+![F_ASIN](F_ASIN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

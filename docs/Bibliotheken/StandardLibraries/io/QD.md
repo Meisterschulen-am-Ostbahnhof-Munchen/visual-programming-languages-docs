@@ -9,6 +9,8 @@
 ## Einleitung
 Der QD-Funktionsblock ist ein Ausgabeservice-Interface-Baustein für die Ausgabe von Doppelwort-Daten (DWORD). Er dient als Schnittstelle zwischen der Anwendungslogik und den physikalischen Ausgabegeräten eines Ressourcen-Managers.
 
+![QD](QD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

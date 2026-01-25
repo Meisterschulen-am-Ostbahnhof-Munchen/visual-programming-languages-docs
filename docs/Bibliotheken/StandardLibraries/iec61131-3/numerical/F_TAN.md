@@ -9,6 +9,8 @@
 ## Einleitung
 Der F_TAN Funktionsblock berechnet den Tangens eines Eingabewertes in Radiant. Es handelt sich um eine Standardfunktion für numerische Berechnungen gemäß IEC 61131-3.
 
+![F_TAN](F_TAN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

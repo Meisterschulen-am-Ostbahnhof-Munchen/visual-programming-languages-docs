@@ -1,3 +1,5 @@
+![E_TOF](E_TOF.svg)
+
 # E_TOF
 
 ```{index} single: E_TOF

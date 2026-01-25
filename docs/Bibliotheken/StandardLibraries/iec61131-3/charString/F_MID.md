@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_MID` dient zur Extraktion einer Teilzeichenkette aus einer gegebenen Zeichenkette. Dabei wird eine bestimmte Anzahl von Zeichen ab einer definierten Startposition extrahiert. Der FB ist Teil der Standard-Charakter- und String-Funktionen gemäß IEC 61131-3.
 
+![F_MID](F_MID.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Service-Anfrage zur Ausführung der Extraktion. Wird mit den Daten-Eingängen `IN`, `L` und `P` verknüpft.

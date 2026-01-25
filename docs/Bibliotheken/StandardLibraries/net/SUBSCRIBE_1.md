@@ -10,6 +10,8 @@
 ## Einleitung
 Der SUBSCRIBE_1 Funktionsblock dient zum Abonnieren von Daten eines PUBLISH_1 Blocks. Er ermöglicht die Kommunikation zwischen verschiedenen Komponenten in einem verteilten System, indem er Daten von einem Publisher empfängt und bei neuen Daten verfügbar macht.
 
+![SUBSCRIBE_1](SUBSCRIBE_1.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

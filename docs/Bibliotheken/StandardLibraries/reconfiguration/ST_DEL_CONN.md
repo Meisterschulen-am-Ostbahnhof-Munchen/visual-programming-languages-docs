@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock ST_DEL_CONN dient zum Löschen von Ereignis- oder Datenverbindungen zwischen zwei Funktionsblock-Instanzen innerhalb eines 4diac-Systems. Er ermöglicht die dynamische Rekonfiguration von Verbindungen zur Laufzeit und gehört zur Kategorie der Strukturellen Dienste gemäß IEC 61499-1.
 
+![ST_DEL_CONN](ST_DEL_CONN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

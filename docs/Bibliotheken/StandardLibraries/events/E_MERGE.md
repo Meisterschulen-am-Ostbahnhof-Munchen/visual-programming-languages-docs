@@ -10,6 +10,8 @@
 ## Einleitung
 Der **E_MERGE** ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der mehrere Ereignisströme zu einem einzigen Ausgang zusammenführt. Diese logische ODER-Verknüpfung von Ereignissen ist essentiell für die Steuerungslogik in industriellen Automatisierungssystemen.
 
+![E_MERGE](E_MERGE.svg)
+
 ## Struktur des E_MERGE-Bausteins
 
 ### Schnittstelle (Interface)

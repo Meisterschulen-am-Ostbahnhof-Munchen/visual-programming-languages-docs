@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LINT_TO_UDINT` dient zur Konvertierung eines 64-Bit vorzeichenbehafteten Integer-Werts (`LINT`) in einen 32-Bit vorzeichenlosen Integer-Wert (`UDINT`). Der Block ist Teil der `iec61131::conversion`-Bibliothek und eignet sich für Anwendungen, bei denen eine Typumwandlung erforderlich ist.
 
+![F_LINT_TO_UDINT](F_LINT_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

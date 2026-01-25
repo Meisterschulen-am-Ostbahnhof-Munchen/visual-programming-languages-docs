@@ -10,6 +10,8 @@
 ## Einleitung
 Der AND_5-Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen logischen UND-Verknüpfung mit fünf Eingängen. Er implementiert eine Standard-Bitoperation gemäß IEC 61131-3 und kann mit beliebigen Bit-Datentypen arbeiten.
 
+![AND_5](AND_5.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LREAL_TO_REAL` dient der Konvertierung eines LREAL-Wertes (64-Bit Fließkommazahl) in einen REAL-Wert (32-Bit Fließkommazahl). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden numerischen Datentypen erforderlich ist.
 
+![F_LREAL_TO_REAL](F_LREAL_TO_REAL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung der Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

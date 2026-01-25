@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_SUB_DT_TIME](F_SUB_DT_TIME.svg)
+
+
 ## Einführung
 Der **F_SUB_DT_TIME** ist ein standardkonformer Funktionsbaustein zur Subtraktion von Zeitintervallen von Zeitstempeln, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht präzise Zeitpunktberechnungen gemäß IEC 61131-3 Standard.
 

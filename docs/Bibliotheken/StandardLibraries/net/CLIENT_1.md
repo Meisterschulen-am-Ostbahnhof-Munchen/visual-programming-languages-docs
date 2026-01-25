@@ -10,6 +10,8 @@
 ## Einleitung
 Der CLIENT_1 Funktionsblock dient zur Kommunikation mit einem SERVER_1 Block über eine Netzwerkverbindung. Er ermöglicht das Aufbauen und Schließen von Verbindungen sowie den Datenaustausch zwischen Client und Server.
 
+![CLIENT_1](CLIENT_1.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

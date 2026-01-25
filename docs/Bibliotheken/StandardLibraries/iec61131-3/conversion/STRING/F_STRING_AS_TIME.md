@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_TIME` dient der Konvertierung eines Zeitwertes im STRING-Format in das TIME-Format. Dies ist besonders nützlich, wenn Zeitwerte als Text vorliegen und für weitere Verarbeitung in ein maschinenlesbares Format umgewandelt werden müssen.
 
+![F_STRING_AS_TIME](F_STRING_AS_TIME.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - `REQ`: Startet die Konvertierung des Zeitwertes. Wird dieser Ereigniseingang ausgelöst, beginnt der Funktionsblock mit der Umwandlung des an `IN` übergebenen Strings.

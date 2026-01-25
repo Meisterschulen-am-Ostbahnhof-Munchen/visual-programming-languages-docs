@@ -11,6 +11,8 @@
 Der **E_STOPWATCH**-Funktionsbaustein ist ein hochpräziser Zeitmessbaustein nach IEC 61499-2 Standard, entwickelt unter EPL-2.0 Lizenz.
 Der Baustein ermöglicht millisekundengenaue Zeitmessungen zwischen Ereignissen in Echtzeitsystemen.
 
+![E_STOPWATCH](E_STOPWATCH.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

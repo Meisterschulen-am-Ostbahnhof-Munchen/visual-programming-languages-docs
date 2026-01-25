@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WSTRING_TO_STRING` dient der Konvertierung eines WSTRING-Datentyps in einen STRING-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, wo eine Umwandlung von breiten Zeichenketten (Unicode) in einfache Zeichenketten (ASCII oder ähnlich) erforderlich ist.
 
+![F_WSTRING_TO_STRING](F_WSTRING_TO_STRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

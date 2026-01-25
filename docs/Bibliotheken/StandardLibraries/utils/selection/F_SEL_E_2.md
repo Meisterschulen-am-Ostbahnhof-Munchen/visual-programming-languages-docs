@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_SEL_E_2` ist ein ereignisbasierter Selektor, der zwischen zwei Eingangsvariablen auswählt. Er gehört zur Kategorie der Standard-Selektionsfunktionen gemäß IEC 61131-3 und wird typischerweise in Steuerungsanwendungen eingesetzt, wo eine bedingte Auswahl zwischen zwei Eingangssignalen erforderlich ist.
 
+![F_SEL_E_2](F_SEL_E_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der OR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen booleschen ODER-Verknüpfung mit drei Eingängen. Er führt eine logische ODER-Operation auf Bitebene durch und unterstützt verschiedene Bit-Datentypen gemäß der IEC 61131-3 Norm.
 
+![OR_3](OR_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_AND` ist ein standardisierter bitweiser boolescher UND-Operator gemäß IEC 61131-3. Er führt eine bitweise UND-Verknüpfung auf zwei Eingangsvariablen durch und gibt das Ergebnis an den Ausgang weiter. Dieser Block ist besonders nützlich für logische Operationen in Steuerungsanwendungen.
 
+![F_AND](F_AND.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_MULTIME](F_MULTIME.svg)
+
+
 ## Einführung
 Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation von Zeitwerten mit numerischen Faktoren, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Skalierung von Zeitintervallen gemäß IEC 61131-3 Standard.
 

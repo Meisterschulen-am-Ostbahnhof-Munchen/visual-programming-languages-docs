@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_MUX_8` (Event Multiplexer) ist ein Funktionsbaustein nach IEC 61499, der acht Ereigniseingänge (`EI1` bis `EI8`) auf einen einzigen Ereignisausgang (`EO`) zusammenführt. Zusätzlich zur Zusammenführung gibt der Baustein an einem Datenausgang `K` aus, welcher der Eingänge das Ereignis ausgelöst hat. Er ist das Gegenstück zum `E_DEMUX_8`.
 
+![E_MUX_8](E_MUX_8.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

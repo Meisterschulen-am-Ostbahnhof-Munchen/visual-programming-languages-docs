@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_SINT` dient der Konvertierung eines 32-Bit vorzeichenlosen Integer-Werts (UDINT) in einen 8-Bit vorzeichenbehafteten Integer-Wert (SINT). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen oder Komponenten ausgetauscht werden müssen, die unterschiedliche Datentypen verwenden.
 
+![F_UDINT_TO_SINT](F_UDINT_TO_SINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

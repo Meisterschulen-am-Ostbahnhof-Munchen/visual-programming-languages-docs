@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_INT_TO_REAL` dient der Konvertierung eines ganzzahligen Wertes (`INT`) in eine Fließkommazahl (`REAL`). Diese Funktionalität ist besonders nützlich, wenn in Steuerungsanwendungen Daten zwischen verschiedenen numerischen Darstellungen umgewandelt werden müssen.
 
+![F_INT_TO_REAL](F_INT_TO_REAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

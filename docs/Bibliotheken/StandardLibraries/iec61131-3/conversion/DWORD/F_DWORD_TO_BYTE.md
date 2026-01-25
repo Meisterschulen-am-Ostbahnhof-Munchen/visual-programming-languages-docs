@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_BYTE` dient der Konvertierung eines 32-Bit-Wertes (DWORD) in einen 8-Bit-Wert (BYTE). Diese Konvertierung ist nützlich in Szenarien, wo eine Datenreduktion oder Typanpassung erforderlich ist.
 
+![F_DWORD_TO_BYTE](F_DWORD_TO_BYTE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

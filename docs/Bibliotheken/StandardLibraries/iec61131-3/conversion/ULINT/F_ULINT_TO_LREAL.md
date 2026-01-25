@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ULINT_TO_LREAL` dient der Konvertierung eines `ULINT`-Wertes (64-Bit unsigned integer) in einen `LREAL`-Wert (64-Bit floating point). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Ganzzahlwerte in Gleitkommazahlen umgewandelt werden müssen, um weitere Berechnungen durchzuführen.
 
+![F_ULINT_TO_LREAL](F_ULINT_TO_LREAL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - `REQ`: Startet die Konvertierung. Dieser Eingang ist mit dem Daten-Eingang `IN` verbunden.

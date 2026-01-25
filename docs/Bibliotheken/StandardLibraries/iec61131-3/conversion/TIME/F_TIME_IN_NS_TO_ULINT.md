@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_NS_TO_ULINT` dient der Konvertierung eines `TIME`-Werts in Nanosekunden in einen `ULINT`-Wert. Diese Konvertierung ist besonders nützlich, wenn Zeitwerte in numerischen Berechnungen oder für weitere Verarbeitungsschritte benötigt werden.
 
+![F_TIME_IN_NS_TO_ULINT](F_TIME_IN_NS_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung des Funktionsblocks. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

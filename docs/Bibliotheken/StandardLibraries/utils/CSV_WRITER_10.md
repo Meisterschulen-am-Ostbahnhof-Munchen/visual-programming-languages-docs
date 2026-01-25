@@ -9,6 +9,8 @@
 ## Einleitung
 Der CSV_WRITER_10 Funktionsblock dient zum Schreiben von Daten in eine CSV-Datei. Er ermöglicht das Speichern von bis zu 10 verschiedenen Datenwerten in einer strukturierten Textdatei. Der Block ist besonders nützlich für Datenerfassung, Protokollierung und den Austausch von Daten mit anderen Systemen.
 
+![CSV_WRITER_10](CSV_WRITER_10.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

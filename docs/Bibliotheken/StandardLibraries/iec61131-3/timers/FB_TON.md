@@ -11,6 +11,8 @@
 
 Der FB_TON ist ein standardisierter Timer-Funktionsblock gemäß IEC 61131-3, der eine Einschaltverzögerung (On-Delay) realisiert. Dieser Baustein wird verwendet, um zeitgesteuerte Verzögerungen in Steuerungsprogrammen zu implementieren.
 
+![FB_TON](FB_TON.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

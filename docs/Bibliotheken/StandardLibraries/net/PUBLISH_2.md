@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_2-Funktionsblock dient zum Senden von Daten an einen oder mehrere SUBSCRIBE_2-Blöcke. Er ermöglicht eine unbestätigte Kommunikation zwischen verschiedenen Komponenten in einem verteilten System.
 
+![PUBLISH_2](PUBLISH_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

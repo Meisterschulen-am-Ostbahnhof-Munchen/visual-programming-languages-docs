@@ -55,6 +55,7 @@ Im Vergleich zu standardmäßigen UND-Bausteinen verwendet AX_AND_2 Adapter-basi
 Vergleich [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.md)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a_AX.md)

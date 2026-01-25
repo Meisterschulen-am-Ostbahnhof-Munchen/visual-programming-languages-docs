@@ -69,6 +69,7 @@ Der E_TOF-Baustein kann in verschiedenen industriellen Steuerungsanwendungen ein
 - **Ventilsteuerung**: Der Baustein kann verwendet werden, um ein Ventil nach dem Schließen noch für eine bestimmte Zeit offen zu halten, um z.B. Druck abzulassen.
 
 ##
+
 ## Zugehörige Übungen
 
 * [Uebung_020e](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020e.md)

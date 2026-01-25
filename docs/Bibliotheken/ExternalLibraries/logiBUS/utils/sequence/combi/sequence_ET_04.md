@@ -85,6 +85,7 @@ Nach `State_04` wechselt der Baustein in den Zustand `State_00` (von wo aus die 
 Im Gegensatz zu einfachen Timer-Bausteinen (`TON`) oder reinen Zustandsmaschinen (`E_SR`) kombiniert `sequence_ET_04` beides in einem spezialisierten Baustein. Er bietet eine vordefinierte, vierstufige Struktur mit dedizierten Ausgängen für jeden Schritt, was die Programmierung im Vergleich zur manuellen Verknüpfung mehrerer Einzelbausteine vereinfacht und übersichtlicher macht. Bausteine wie `E_CYCLE` bieten zyklische Ereignisauslösung, aber keine individuellen, zustandsabhängigen Datenausgänge oder hybride Trigger.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_035](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035.md)

@@ -57,6 +57,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt ausschl
 - Andere Blöcke wie `EXTRACT_BITS` oder `BIT_SLICE` sind allgemeiner, erfordern aber mehr Konfiguration und sind möglicherweise weniger effizient.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_056](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)

@@ -65,6 +65,7 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 | Ereignisausgang | Bei Änderung | Bei Set/Reset | Bei Flanke |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_071a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071a.md)

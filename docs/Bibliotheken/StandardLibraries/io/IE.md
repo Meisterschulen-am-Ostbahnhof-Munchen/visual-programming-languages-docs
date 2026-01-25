@@ -75,6 +75,7 @@ Im Vergleich zu einfacheren Eingabeblöcken bietet IE erweiterte Funktionalität
 - Erweiterte Statusrückmeldungen für verbesserte Fehlerdiagnose
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a.md)

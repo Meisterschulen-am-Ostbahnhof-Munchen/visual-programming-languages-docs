@@ -10,6 +10,7 @@ UINT_Detail
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_006c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)
@@ -44,3 +45,4 @@ UINT_Detail
 * [Uebung_090a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_090a2.md)
 * [Uebung_090a2_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
 * [Uebung_103](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
+

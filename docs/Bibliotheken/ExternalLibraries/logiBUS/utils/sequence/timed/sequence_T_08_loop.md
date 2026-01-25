@@ -77,6 +77,7 @@ Die Übergangsbedingungen sind:
 Im Gegensatz zu einem `E_CYCLE`- oder `E_DELAY`-FB, die einfache periodische oder verzögerte Ereignisse erzeugen, bietet `sequence_T_08_loop` eine strukturierte Zustandsmaschine mit mehreren unabhängigen Ausgängen. Im Vergleich zu einem frei programmierbaren `E_CTU` (Zähler) in Kombination mit `SEL`-Blöcken ist dieser FB vorkonfiguriert und damit einfacher und schneller für Standard-Sequenzen mit bis zu acht Schritten einsetzbar. Für komplexere oder zustandsabhängige Sequenzen müsste auf einen Service Sequence Function Block (SFC) oder eine individuelle Basic FB-Programmierung zurückgegriffen werden.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_038](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_038.md)

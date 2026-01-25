@@ -64,6 +64,7 @@ Im Vergleich zu anderen Selektionsbausteinen bietet F_SEL:
 - Standardisierte Ereignissteuerung gemäß IEC 61131-3
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_015](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_015.md)

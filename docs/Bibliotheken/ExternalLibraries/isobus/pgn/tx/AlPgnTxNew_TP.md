@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsbaustein **AlPgnTxNew_TP** dient der Übertragung von Daten über den ISOBUS/CAN-Bus basierend auf Parameter Group Numbers (PGN). Er ermöglicht die Registrierung einer spezifischen PGN und das anschließende versenden von Datenpaketen, wann immer ein lokales Anforderungsereignis (REQ) auftritt. Der Baustein ist Teil des Pakets `isobus::pgn::tx` und ist speziell für die Handhabung von Transportprotokollen oder generischen PGN-Übertragungen ausgelegt.
 
+![AlPgnTxNew_TP](AlPgnTxNew_TP.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

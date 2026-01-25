@@ -71,6 +71,7 @@ Im Vergleich zu anderen Eingabebausteinen:
 - Einfacher als komplexere Protokollbausteine, aber spezifischer für Byte-Daten
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_006c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)

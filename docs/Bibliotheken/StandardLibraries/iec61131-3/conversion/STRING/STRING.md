@@ -25,6 +25,7 @@ F_STRING_AS_WORD
 F_STRING_TO_WSTRING
 ```
 
+
 ## Zugehörige Übungen
 
 * [Uebung_012a_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012a_sub.md)
@@ -50,3 +51,4 @@ F_STRING_TO_WSTRING
 * [Uebung_132](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_132.md)
 * [Uebung_133](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_133.md)
 * [Uebung_134](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_134.md)
+

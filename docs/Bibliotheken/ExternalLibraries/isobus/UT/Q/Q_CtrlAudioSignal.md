@@ -92,6 +92,7 @@ Der **Q_CtrlAudioSignal** ist ein standardkonformer Funktionsbaustein zur Steuer
 | Frequenzkontrolle | Ja           | Nein           | Nein         |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_017](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_017.md)

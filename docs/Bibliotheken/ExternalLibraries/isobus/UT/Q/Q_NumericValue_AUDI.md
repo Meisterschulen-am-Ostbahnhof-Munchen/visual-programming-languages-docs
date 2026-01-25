@@ -42,7 +42,9 @@ Der Baustein wird über das `INIT`-Ereignis mit der Objekt-ID `u16ObjId` initial
 - **Sollwertvorgabe**: Übertragen von Zielwerten (z.B. Temperatur, Druck) vom ISOBUS-Terminal zur Steuerung (in Kombination mit einem NumericValue_IDA Eingangsbaustein).
 - **Feedback-Systeme**: Anzeigen von Prozesswerten in Echtzeit.
 
+
 ## Zugehörige Übungen
 
 * [Uebung_009_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)
 * [Uebung_083_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_083_AX.md)
+

@@ -60,6 +60,7 @@ Nach jeder dieser Aktionen werden die Status-Flags `QU` und `QD` basierend auf d
 - **Hochauflösende Positionserfassung**: Zählen von sehr vielen Inkrementen eines hochauflösenden Encoders.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_009](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009.md)

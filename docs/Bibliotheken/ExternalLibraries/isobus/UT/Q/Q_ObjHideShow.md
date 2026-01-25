@@ -88,6 +88,7 @@ Der **Q_ObjHideShow** ist ein standardkonformer Funktionsbaustein zur Sichtbarke
 | Rückmeldung   | ✔             | ✖                  | ✔                   |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_014](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_014.md)

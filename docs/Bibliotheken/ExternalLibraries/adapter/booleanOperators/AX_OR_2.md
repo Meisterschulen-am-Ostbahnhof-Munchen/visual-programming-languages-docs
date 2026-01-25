@@ -56,6 +56,7 @@ Im Vergleich zu anderen ODER-Bausteinen zeichnet sich AX_OR_2 durch seine Adapte
 Vergleich mit [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a3_AX.md)

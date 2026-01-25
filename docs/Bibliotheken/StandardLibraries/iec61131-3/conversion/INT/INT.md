@@ -32,9 +32,11 @@ F_INT_TO_WORD
 * [ERP-Systeme: Das digitale Gehirn – Chancen, Risiken und der Weg zur intelligenten Produktion](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/ERP-Systeme-Das-digitale-Gehirn--Chancen--Risiken-und-der-Weg-zur-intelligenten-Produktion-e375gdf)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_026_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_026_sub.md)
 * [Uebung_039_sub_NumbAnzeig](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
 * [Uebung_039a_sub_Outputs](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
 * [Uebung_060_sub_Outputs](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060_sub_Outputs.md)
+

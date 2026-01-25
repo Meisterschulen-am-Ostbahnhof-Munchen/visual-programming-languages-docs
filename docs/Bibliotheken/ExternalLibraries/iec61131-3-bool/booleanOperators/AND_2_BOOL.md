@@ -68,6 +68,7 @@ Der `AND_2_BOOL`-Block ist ein fundamentaler Baustein in der Steuerungs- und Aut
 *   **Kombinatorische Logik in SFC/ST:** Die UND-Funktion könnte auch direkt in Structured Text (ST) mit dem `&`- oder `AND`-Operator codiert werden. Der Vorteil des `AND_2_BOOL`-FB liegt in der standardisierten, wiederverwendbaren und grafisch verknüpfbaren Form innerhalb des 4diac-Funktionsbaustein-Netzwerks (FBN).
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a4](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a4.md)

@@ -74,6 +74,7 @@ Nach jeder dieser Aktionen werden die Status-Flags `QU` und `QD` basierend auf d
 | Status Unten | `QD` (`CV = 0`)  | Nein            | `Q` (`CV = 0`)   |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_082](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_082.md)

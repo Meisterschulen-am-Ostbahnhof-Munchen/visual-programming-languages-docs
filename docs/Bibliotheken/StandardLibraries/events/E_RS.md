@@ -40,6 +40,7 @@ Der `E_RS`-Baustein funktioniert als einfacher Speicher (Latch):
 - **`E_D_FF`**: Speichert ebenfalls einen Zustand, aber taktbasiert. `E_D_FF` übernimmt den Wert am `D`-Eingang bei einem `CLK`-Ereignis, während `E_RS` durch separate Set/Reset-Ereignisse gesteuert wird.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_006b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006b.md)

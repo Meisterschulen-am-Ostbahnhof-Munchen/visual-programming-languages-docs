@@ -49,6 +49,7 @@ Der `E_DEMUX_4` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, 
 - **Sequenzer/Schrittketten**: Aktivierung eines von vier möglichen nächsten Schritten.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_087a1](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087a1.md)

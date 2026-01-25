@@ -61,6 +61,7 @@ Im Vergleich zu anderen Timer-Bausteinen bietet AX_TP:
 Vergleich mit [E_TP](../../../../../StandardLibraries/events/timer/E_TP.md)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_020f_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f_AX.md)

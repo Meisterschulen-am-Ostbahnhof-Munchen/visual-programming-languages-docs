@@ -44,6 +44,7 @@ Für zeitgesteuerte zyklische 8-stufige Sequenzen mit Adapteranbindung.
 *   **sequence_T_08_loop**: Standardvariante ohne Adapter.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_038_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_038_AX.md)

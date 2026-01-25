@@ -75,6 +75,7 @@ Der **F_MOVE** ist ein universeller Funktionsbaustein zur typsicheren Datenüber
 | Latenz         | 1 Zyklus | Variabel     | 1 Zyklus |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002b2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b2.md)

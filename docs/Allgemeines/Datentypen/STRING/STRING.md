@@ -10,6 +10,7 @@ STRING_Detail
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_012a_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012a_sub.md)
@@ -35,3 +36,4 @@ STRING_Detail
 * [Uebung_132](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_132.md)
 * [Uebung_133](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_133.md)
 * [Uebung_134](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_134.md)
+

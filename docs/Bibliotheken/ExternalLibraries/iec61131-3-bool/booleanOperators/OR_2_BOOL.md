@@ -66,6 +66,7 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Sein Verhalten 
 *   **OR_n_BOOL:** Ein generischer ODER-Baustein, der eine variable Anzahl von Eingängen (n) verknüpfen kann, während `OR_2_BOOL` genau zwei feste Eingänge besitzt. Siehe: [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002b3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b3.md)

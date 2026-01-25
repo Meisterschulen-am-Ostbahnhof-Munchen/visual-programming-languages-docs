@@ -51,6 +51,7 @@ Der Baustein startet im `START`-Zustand (impliziert `Q` ist undefiniert/`FALSE`)
 - **Fehler-Reset und Toggle**: Ein Fehlerzustand kann durch `S` gesetzt werden, durch `R` quittiert, und der Zustand des Fehler-Handlings kann durch `CLK` getoggelt werden.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004a7](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a7.md)

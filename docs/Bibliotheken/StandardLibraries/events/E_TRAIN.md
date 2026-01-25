@@ -58,6 +58,7 @@ Der `E_TRAIN` (Event Train) ist ein Funktionsbaustein nach IEC 61499, der eine e
 | Zähler-Ausgang (`CV`) | Ja | Nein | Ja |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_035a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a2.md)

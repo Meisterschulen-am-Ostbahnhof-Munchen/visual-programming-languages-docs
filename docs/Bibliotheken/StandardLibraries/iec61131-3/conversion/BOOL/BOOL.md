@@ -27,6 +27,7 @@ F_BOOL_TO_WORD
 * [George Boole: Wie ein Autodidakt mit 0 und 1 das Fundament unserer digitalen Welt legte](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/George-Boole-Wie-ein-Autodidakt-mit-0-und-1-das-Fundament-unserer-digitalen-Welt-legte-e39hb34)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_001_AX_b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
@@ -45,3 +46,4 @@ F_BOOL_TO_WORD
 * [Uebung_060_sub_Outputs](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060_sub_Outputs.md)
 * [Uebung_094a_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_094a_AX.md)
 * [Uebung_160](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_160.md)
+

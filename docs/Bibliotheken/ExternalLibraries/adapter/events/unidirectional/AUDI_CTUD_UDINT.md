@@ -47,7 +47,9 @@ Der Zählwert wird über den `CV`-Adapter als `AUDI`-Signal ausgegeben. Die Ausg
 - **Betriebsstundenzähler**: Erfassen von Betriebszeiten (in Kombination mit Timern).
 - **Positionsüberwachung**: Einfache Positionszähler in Handling-Systemen.
 
+
 ## Zugehörige Übungen
 
 * [Uebung_009_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)
 * [Uebung_083_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_083_AX.md)
+

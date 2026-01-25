@@ -57,6 +57,7 @@ Die Operation erfolgt nach der Formel: OUT = IN1 ∧ IN2 ∧ IN3
 Im Vergleich zu Standard-UND-Bausteinen mit nur zwei Eingängen bietet AND_3 die Möglichkeit, drei Eingänge gleichzeitig zu verarbeiten, was die Anzahl benötigter Bausteine in komplexeren Schaltungen reduziert. Gegenüber Bausteinen mit fester Bitbreite bietet AND_3 durch die generische ANY_BIT-Typisierung größere Flexibilität.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a6_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a6_AX.md)

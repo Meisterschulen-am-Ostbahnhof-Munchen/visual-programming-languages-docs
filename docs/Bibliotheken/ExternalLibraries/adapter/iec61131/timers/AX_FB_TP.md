@@ -62,6 +62,7 @@ Der AX_FB_TP-Block arbeitet als Impulsgeber:
 Im Vergleich zum [AX_PULSE](../../events/unidirectional/timers/AX_PULSE.md) bietet AX_FB_TP die klassische IEC 61131-3 TP-Charakteristik inklusive dem ET-Statusausgang.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_020f2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f2_AX.md)

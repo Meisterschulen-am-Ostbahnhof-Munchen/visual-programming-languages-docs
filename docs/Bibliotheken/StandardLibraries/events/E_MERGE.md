@@ -69,6 +69,7 @@ Für Anwendungsfälle, die mehr als zwei Ereigniseingänge benötigen, stellt di
 Diese Bausteine erlauben die einfache Zusammenführung von bis zu vier Ereignisquellen auf einen einzigen Ausgang.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a2.md)

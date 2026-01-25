@@ -54,6 +54,7 @@ Im Vergleich zum Standard-E_SWITCH Block bietet AX_SWITCH eine Adapter-basierte 
 Vergleich mit [E_SWITCH](../../../../StandardLibraries/events/E_SWITCH.md)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX.md)

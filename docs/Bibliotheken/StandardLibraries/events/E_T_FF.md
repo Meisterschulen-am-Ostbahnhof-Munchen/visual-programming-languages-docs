@@ -54,6 +54,7 @@ Durch Rückkopplung mit einem Zeitgeber lässt sich ein Blinker realisieren:
     - Embedded Ressource: ![E_T_FF Anwendung Blinker EMB_RES](https://user-images.githubusercontent.com/69573151/200581674-613cabbc-86a6-45b7-ad57-a9c16bd6262d.png)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a.md)

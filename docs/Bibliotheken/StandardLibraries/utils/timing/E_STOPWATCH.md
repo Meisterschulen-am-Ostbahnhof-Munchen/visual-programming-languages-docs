@@ -95,6 +95,7 @@ stateDiagram-v2
 | Reset-Funktion | Ja | Teilweise | Ja |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_020i](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020i.md)

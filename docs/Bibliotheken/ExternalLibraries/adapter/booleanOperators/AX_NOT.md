@@ -54,6 +54,7 @@ Im Vergleich zu anderen booleschen Operatoren wie AND oder OR führt AX_NOT auss
 Vergleich mit [F_NOT](../../../StandardLibraries/iec61131-3/bitwiseOperators/F_NOT.md)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_006a3_sub_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)

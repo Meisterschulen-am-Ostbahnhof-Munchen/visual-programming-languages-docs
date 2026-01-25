@@ -68,6 +68,7 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei, kombinatorisch
 *   **AND_n_BOOL:** Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur dann `TRUE`, wenn **alle** Eingänge `TRUE` sind, während bei der ODER-Verknüpfung bereits **ein** `TRUE`-Eingang ausreicht.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a5b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a5b.md)

@@ -54,6 +54,7 @@ Bei Auslösung des Ereignisses `REQ` werden die aktuellen Werte der booleschen E
 - Ähnliche Bausteine könnten weniger Eingänge haben oder zusätzliche Features wie invertierte Logik bieten, was hier nicht der Fall ist.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_053](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_053.md)

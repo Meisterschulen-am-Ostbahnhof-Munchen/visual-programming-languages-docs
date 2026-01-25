@@ -58,6 +58,7 @@ Im Vergleich zu anderen Verteilungsbausteinen zeichnet sich AX_SPLIT_3 durch sei
 Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a5b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)

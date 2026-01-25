@@ -59,6 +59,7 @@ Im Vergleich zu anderen Flipflop-Typen wie RS- oder D-Flipflops bietet der Toggl
 Vergleich mit [E_T_FF](../../../../StandardLibraries/events/E_T_FF.md)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004a2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a2_AX.md)

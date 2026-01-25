@@ -63,6 +63,7 @@ Im Vergleich zu anderen Multiplexern bietet F_MUX_2:
 - Geringerer Ressourcenverbrauch bei 2-Wege-Auswahl
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_090a1](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_090a1.md)

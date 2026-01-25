@@ -72,6 +72,7 @@ Im Vergleich zu einfacheren Eingabebausteinen bietet ID:
 - 32-Bit-Datenbreite statt einfacher BOOL- oder BYTE-Werte
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_011](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011.md)

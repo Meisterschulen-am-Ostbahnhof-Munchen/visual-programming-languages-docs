@@ -76,6 +76,7 @@ Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation
 | Ausgangstyp   | TIME      | ANY_NUM | TIME      |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_020c2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c2.md)

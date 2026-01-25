@@ -89,6 +89,7 @@ Der **Q_StringValue** ist ein standardkonformer Funktionsbaustein zur dynamische
 | Rückmeldung   | ✔             | ✖            | ✔               |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_012c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012c.md)

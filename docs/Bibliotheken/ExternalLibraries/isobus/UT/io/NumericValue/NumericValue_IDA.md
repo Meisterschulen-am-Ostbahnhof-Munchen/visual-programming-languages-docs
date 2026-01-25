@@ -11,6 +11,8 @@ Der Funktionsbaustein **NumericValue_IDA** ist ein Service-Schnittstellen-Bauste
 
 Im Gegensatz zu Standard-Eingabebausteinen stellt dieser Baustein die empfangenen Daten nicht über direkte Datenausgänge, sondern über einen Adapter-Anschluss (`IN`) zur Verfügung. Er kapselt die Funktionalität des Bausteins `NumericValue_ID` und leitet dessen Signale auf eine Adapter-Schnittstelle um.
 
+![NumericValue_IDA](NumericValue_IDA.svg)
+
 ## Schnittstellenstruktur
 
 Der Baustein verfügt über Standard-Initialisierungs- und Anforderungs-Ereignisse sowie spezifische Konfigurationsparameter. Die eigentliche Datenübertragung erfolgt über den Adapter.

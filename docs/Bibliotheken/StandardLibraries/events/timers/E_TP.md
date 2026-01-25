@@ -57,7 +57,9 @@ Der Baustein **E_TP** (auch bekannt als **Pulsgeber** oder **Timer-Puls**) ist e
 ### Zusammenfassung:
 Der **E_TP**-Baustein ist ein nützliches Werkzeug in der IEC 61499-basierten Steuerungstechnik, um zeitgesteuerte Aktionen zu realisieren. Durch seine einfache Schnittstelle und das klare Verhalten ist er leicht in verschiedene Steuerungsanwendungen integrierbar. Die Reset-Funktion in Version 1.1 erhöht die Flexibilität des Bausteins, da der Timer nun manuell zurückgesetzt werden kann.
 
+
 ## Zugehörige Übungen
 
 * [Uebung_020f](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020f.md)
 * [Uebung_039b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039b.md)
+

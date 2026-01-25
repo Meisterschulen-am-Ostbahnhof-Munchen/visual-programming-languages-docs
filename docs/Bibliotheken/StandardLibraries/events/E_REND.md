@@ -41,6 +41,7 @@ Der `E_REND` (Event Rendezvous) ist ein Funktionsbaustein nach IEC 61499, der al
 - **Materialfluss**: Ein Förderband stoppt (`EO`), wenn sowohl der vordere als auch der hintere Sensor ein langes Bauteil detektiert haben.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004a6](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a6.md)

@@ -78,6 +78,7 @@ Hierbei sind `Eingang1` und `Eingang2` die beiden Werte, die verglichen werden s
 - **Robustheit:** Der GT-Operator trägt dazu bei, robuste Steuerungsalgorithmen zu entwickeln, die auf präzisen numerischen Vergleichen basieren.
 
 #
+
 ## Zugehörige Übungen
 
 * [Uebung_060](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)

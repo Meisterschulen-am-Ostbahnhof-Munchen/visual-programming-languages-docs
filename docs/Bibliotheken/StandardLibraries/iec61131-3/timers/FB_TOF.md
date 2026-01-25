@@ -68,7 +68,13 @@ Der FB_TOF-Baustein kann in verschiedenen industriellen Steuerungsanwendungen ei
 - **Beleuchtungssteuerung**: Der Baustein kann in Beleuchtungssystemen eingesetzt werden, um das Licht nach dem Ausschalten des Schalters noch für eine bestimmte Zeit brennen zu lassen.
 - **Ventilsteuerung**: Der Baustein kann verwendet werden, um ein Ventil nach dem Schließen noch für eine bestimmte Zeit offen zu halten, um z.B. Druck abzulassen.
 
-#### Fazit
+##
+## Zugehörige Übungen
+
+* [Uebung_020e2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020e2.md)
+* [Uebung_020e2_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
+
+## Fazit
 
 Der FB_TOF-Baustein ist ein einfacher, aber leistungsfähiger Funktionsbaustein in der IEC 61131-3, der eine verzögerte Abschaltfunktion realisiert. Durch seine klare Struktur und einfache Bedienung eignet er sich ideal für Anwendungen, in denen eine zeitverzögerte Steuerung erforderlich ist. Ein wichtiger Aspekt, der beachtet werden muss, ist, dass der Baustein **zyklisch aufgerufen** werden muss, um korrekt zu funktionieren. Nur durch den regelmäßigen Aufruf in jedem SPS-Zyklus kann der Timer die verstrichene Zeit korrekt berechnen und die Verzögerungszeit einhalten.
 

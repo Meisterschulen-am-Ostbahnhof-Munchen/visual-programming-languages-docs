@@ -78,5 +78,10 @@ Die ECC besteht aus sechs Zuständen:
 ## Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einfachen Timer-Blöcken oder Flip-Flops orchestriert dieser FB eine komplette, zustandsbasierte Sequenz. Im Vergleich zu einem `E_CYCLE`-Block bietet er eine explizite Zustandslogik mit klaren Übergangsbedingungen und der Möglichkeit, jeden Schritt individuell zu triggern. Er ist spezialisierter und strukturierter als eine selbst programmierte Sequenz aus `E_SR`- und `E_DELAY`-Blöcken.
 
+
+## Zugehörige Übungen
+
+* [Uebung_037](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_037.md)
+
 ## Fazit
 Der `sequence_ET_04_loop` ist ein robuster und flexibler Baustein zur Implementierung von zyklischen 4-Schritt-Sequenzen. Seine Stärke liegt in der hybriden Triggerung, die für jeden Schritt zwischen Ereignis- und Zeitsteuerung wählen lässt. Die klare Zustandsmaschine, die Rückmeldung des aktuellen Zustands und der integrierte Reset machen ihn zu einer zuverlässigen Komponente für wiederkehrende Steuerungsaufgaben in der Automatisierungstechnik.

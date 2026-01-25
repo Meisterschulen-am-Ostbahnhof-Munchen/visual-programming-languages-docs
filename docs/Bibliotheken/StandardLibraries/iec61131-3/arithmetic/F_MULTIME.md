@@ -75,6 +75,11 @@ Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation
 | Eingänge      | TIME × ANY_NUM | ANY_NUM × ANY_NUM | TIME ÷ ANY_NUM |
 | Ausgangstyp   | TIME      | ANY_NUM | TIME      |
 
+
+## Zugehörige Übungen
+
+* [Uebung_020c2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c2.md)
+
 ## Fazit
 
 Der F_MULTIME-Baustein bietet eine spezialisierte Lösung für die Skalierung von Zeitwerten:

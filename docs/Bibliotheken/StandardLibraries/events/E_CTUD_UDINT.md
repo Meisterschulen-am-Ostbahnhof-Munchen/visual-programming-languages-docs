@@ -59,5 +59,12 @@ Nach jeder dieser Aktionen werden die Status-Flags `QU` und `QD` basierend auf d
 - **Energiemessung**: Zählen von Impulsen eines Energiezählers (z.B. Wh oder kWh) über lange Zeiträume.
 - **Hochauflösende Positionserfassung**: Zählen von sehr vielen Inkrementen eines hochauflösenden Encoders.
 
+
+## Zugehörige Übungen
+
+* [Uebung_009](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009.md)
+* [Uebung_034b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034b.md)
+* [Uebung_083](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_083.md)
+
 ## Fazit
 Der `E_CTUD_UDINT` ist die `UDINT`-Variante des universellen `E_CTUD`-Zählers. Er bietet dieselbe Funktionalität, aber mit einem wesentlich größeren Zählbereich (32-Bit). Dies macht ihn zur idealen Wahl für Anwendungen, bei denen der Zählerstand über die Grenze eines 16-Bit-`UINT`-Zählers hinauswachsen kann. Seine robuste, ereignisgesteuerte Natur und die umfassenden Steuerungs- und Statusfunktionen bleiben dabei erhalten.

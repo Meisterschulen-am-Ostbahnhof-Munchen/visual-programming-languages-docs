@@ -75,5 +75,10 @@ Ein `RESET`-Ereignis von jedem Zustand aus führt in den `sRESET`-Zustand. Dort 
 *   **Ereignisgesteuerte Sequenzer**: Im Gegensatz zu ereignisgesteuerten Sequenzern (z.B. `sequence_E_04_loop`) erfolgen die Übergänge hier ausschließlich zeitbasiert, nicht durch externe Ereignisse.
 *   **SPS-Zyklus**: Die zeitgesteuerte Ablaufkontrolle ist präziser und unabhängig vom SPS-Zyklus, da sie auf dem `ATimeOut`-Adapter basiert.
 
+
+## Zugehörige Übungen
+
+* [Uebung_035a](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a.md)
+
 ## Fazit
 Der `sequence_T_04_loop` ist ein robuster und einfach zu konfigurierender Funktionsblock für zeitgesteuerte Ablaufsteuerungen mit vier Schritten. Durch die klare Trennung von Zustandslogik und Zeitparametern sowie die integrierte Reset-Funktionalität eignet er sich gut für standardisierte zyklische Prozesse in der Automatisierungstechnik. Die Verwendung eines Standard-Adapters für die Zeitmessung gewährleistet Portabilität und Zuverlässigkeit.

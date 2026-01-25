@@ -77,6 +77,11 @@ Der **F_MUL** ist ein standardkonformer Funktionsbaustein zur Multiplikation num
 | Eingänge      | 2      | 2      | 2      |
 | Typunterstützung | ANY_NUM | ANY_NUM | ANY_NUM |
 
+
+## Zugehörige Übungen
+
+* [Uebung_034b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034b.md)
+
 ## Fazit
 
 Der F_MUL-Baustein bietet eine robuste Lösung für Multiplikationsoperationen:

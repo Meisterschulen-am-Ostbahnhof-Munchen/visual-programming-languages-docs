@@ -78,6 +78,14 @@ Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numeri
 | Eingänge      | 2      | 2      | 2      |
 | Typunterstützung | ANY_MAGNITUDE | ANY_NUM | ANY_NUM |
 
+
+## Zugehörige Übungen
+
+* [Uebung_040](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
+* [Uebung_040_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_040_AX.md)
+* [Uebung_041](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_041.md)
+* [Uebung_072c](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+
 ## Fazit
 
 Der F_SUB-Baustein bietet eine robuste Lösung für Subtraktionsoperationen:

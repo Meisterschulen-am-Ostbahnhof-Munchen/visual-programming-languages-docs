@@ -66,5 +66,15 @@ Im Vergleich zu anderen logischen Verknüpfungsblöcken:
 - Arbeitet bitweise im Gegensatz zu rein booleschen UND-Blöcken
 - Ereignisgesteuert im Gegensatz zu zyklusgesteuerten Blöcken
 
+
+## Zugehörige Übungen
+
+* [Uebung_002a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a.md)
+* [Uebung_002a_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a_AX.md)
+* [Uebung_002b2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b2.md)
+* [Uebung_002b3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+* [Uebung_006a3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+* [Uebung_088](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_088.md)
+
 ## Fazit
 Der AND_2 Funktionsblock bietet eine flexible und standardkonforme Lösung für bitweise UND-Operationen in IEC 61131-3 basierten Steuerungssystemen. Seine generische Natur ermöglicht den Einsatz in vielfältigen Anwendungsbereichen, während die ereignisgesteuerte Architektur eine effiziente Ressourcennutzung gewährleistet.

@@ -76,5 +76,10 @@ Die Übergangsbedingungen sind:
 ## Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einem `E_CYCLE`- oder `E_DELAY`-FB, die einfache periodische oder verzögerte Ereignisse erzeugen, bietet `sequence_T_08_loop` eine strukturierte Zustandsmaschine mit mehreren unabhängigen Ausgängen. Im Vergleich zu einem frei programmierbaren `E_CTU` (Zähler) in Kombination mit `SEL`-Blöcken ist dieser FB vorkonfiguriert und damit einfacher und schneller für Standard-Sequenzen mit bis zu acht Schritten einsetzbar. Für komplexere oder zustandsabhängige Sequenzen müsste auf einen Service Sequence Function Block (SFC) oder eine individuelle Basic FB-Programmierung zurückgegriffen werden.
 
+
+## Zugehörige Übungen
+
+* [Uebung_038](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_038.md)
+
 ## Fazit
 Der `sequence_T_08_loop` ist ein robuster und einfach zu konfigurierender Funktionsblock für zeitgesteuerte Sequenzen mit fester Schrittanzahl. Seine klare Struktur aus Zuständen, konfigurierbaren Verweilzeiten und dedizierten Ausgängen macht ihn besonders geeignet für standardisierte Steuerungsaufgaben in der Automatisierungstechnik, bei denen Zuverlässigkeit und leichte Parametrierung im Vordergrund stehen. Die Integration eines Timer-Adapters entkoppelt die Zeitmessung von der FB-Logik und fördert die Wiederverwendbarkeit.

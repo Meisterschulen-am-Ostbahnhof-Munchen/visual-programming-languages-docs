@@ -74,6 +74,12 @@ Der **ADD_3** ist eine erweiterte Version des Addierers zur Berechnung der Summe
   - Leerer Wert (nicht-numerische Typen)
   - Kein Abbruch der Ausführung
 
+
+## Zugehörige Übungen
+
+* [Uebung_087](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087.md)
+* [Uebung_087a1](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087a1.md)
+
 ## Fazit
 
 Der ADD_3-Baustein erweitert die Möglichkeiten der typsicheren Addition:

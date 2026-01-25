@@ -84,5 +84,11 @@ Nach `State_04` wechselt der Baustein in den Zustand `State_00` (von wo aus die 
 ## Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einfachen Timer-Bausteinen (`TON`) oder reinen Zustandsmaschinen (`E_SR`) kombiniert `sequence_ET_04` beides in einem spezialisierten Baustein. Er bietet eine vordefinierte, vierstufige Struktur mit dedizierten Ausgängen für jeden Schritt, was die Programmierung im Vergleich zur manuellen Verknüpfung mehrerer Einzelbausteine vereinfacht und übersichtlicher macht. Bausteine wie `E_CYCLE` bieten zyklische Ereignisauslösung, aber keine individuellen, zustandsabhängigen Datenausgänge oder hybride Trigger.
 
+
+## Zugehörige Übungen
+
+* [Uebung_035](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035.md)
+* [Uebung_036](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_036.md)
+
 ## Fazit
 Der `sequence_ET_04` ist ein praktischer und flexibler Funktionsblock für alle Anwendungen, die eine klare, zyklische Schrittkette erfordern. Die Kombination aus ereignis- und zeitgesteuerten Übergängen sowie die klare Schnittstelle mit separaten Ausgängen für jeden Zustand machen ihn besonders wartungsfreundlich und einfach in übergeordnete Steuerungen zu integrieren. Die Verwendung eines Standard-Adapters für die Zeitfunktion hält den Baustein schlank und kompatibel.

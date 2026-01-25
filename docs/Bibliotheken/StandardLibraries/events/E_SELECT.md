@@ -66,6 +66,11 @@ Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A
 | Richtung      | 2:1 (Multiplexer)      | 1:2 (Demultiplexer)     | n:1 (OR-Gatter)     |
 | Zustandsmodell | BasicFB  | BasicFB | BasicFB/Generic |
 
+
+## Zugehörige Übungen
+
+* [Uebung_095](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_095.md)
+
 ## Fazit
 
 Der E_SELECT-Baustein bietet eine robuste Lösung für ereignisbasierte Steuerungsentscheidungen:

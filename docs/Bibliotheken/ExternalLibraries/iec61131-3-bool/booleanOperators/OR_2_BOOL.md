@@ -65,5 +65,11 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Sein Verhalten 
 *   **NOT_BOOL:** Führt eine logische NICHT-Verknüpfung (Negation) auf einem einzelnen Eingang durch.
 *   **OR_n_BOOL:** Ein generischer ODER-Baustein, der eine variable Anzahl von Eingängen (n) verknüpfen kann, während `OR_2_BOOL` genau zwei feste Eingänge besitzt. Siehe: [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
 
+
+## Zugehörige Übungen
+
+* [Uebung_002b3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b3.md)
+* [Uebung_160](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_160.md)
+
 ## Fazit
 Der `OR_2_BOOL` ist ein fundamentaler, zuverlässiger und einfach zu verwendender Funktionsblock zur Realisierung der grundlegenden logischen ODER-Funktion in 4diac-IDE Applikationen. Seine ereignisgesteuerte, zustandslose Architektur macht ihn vorhersehbar und gut in den Datenfluss von IEC 61499-Systemen integrierbar. Er ist ein unverzichtbarer Baustein für die Implementierung von Steuerungslogik und Bedingungsauswertungen.

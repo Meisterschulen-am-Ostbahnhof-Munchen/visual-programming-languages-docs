@@ -78,6 +78,14 @@ Der **ADD_2** ist ein generischer Funktionsbaustein zur Addition zweier Werte, e
   - Leerer Wert (für andere Typen)
   - Keine Exception-Generierung
 
+
+## Zugehörige Übungen
+
+* [Uebung_000](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_000.md)
+* [Uebung_000_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_000_AX.md)
+* [Uebung_110](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_110.md)
+* [Uebung_111](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_111.md)
+
 ## Fazit
 
 Der ADD_2-Baustein bietet eine flexible Lösung für arithmetische Operationen:

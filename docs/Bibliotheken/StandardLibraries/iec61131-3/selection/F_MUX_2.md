@@ -62,5 +62,10 @@ Im Vergleich zu anderen Multiplexern bietet F_MUX_2:
 - Direkte und klare Steuerlogik
 - Geringerer Ressourcenverbrauch bei 2-Wege-Auswahl
 
+
+## Zugehörige Übungen
+
+* [Uebung_090a1](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_090a1.md)
+
 ## Fazit
 Der F_MUX_2 ist ein effizienter und zuverlässiger Multiplexer für Anwendungen, die eine Auswahl zwischen zwei Eingangssignalen erfordern. Seine einfache Struktur und die Verwendung generischer Datentypen machen ihn zu einer vielseitigen Lösung für verschiedene Steuerungsaufgaben.

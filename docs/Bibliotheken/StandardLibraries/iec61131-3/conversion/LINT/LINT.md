@@ -22,3 +22,7 @@ F_LINT_TO_ULINT
 F_LINT_TO_USINT
 F_LINT_TO_WORD
 ```
+
+## Zugehörige Übungen
+
+* [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)

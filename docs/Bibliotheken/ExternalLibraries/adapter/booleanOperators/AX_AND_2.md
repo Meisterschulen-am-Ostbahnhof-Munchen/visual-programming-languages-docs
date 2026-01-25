@@ -54,5 +54,12 @@ Im Vergleich zu standardmäßigen UND-Bausteinen verwendet AX_AND_2 Adapter-basi
 
 Vergleich [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.md)
 
+
+## Zugehörige Übungen
+
+* [Uebung_002a_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a_AX.md)
+* [Uebung_002b3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+* [Uebung_006a3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+
 ## Fazit
 Der AX_AND_2 bietet eine zuverlässige und standardkonforme Implementierung der logischen UND-Funktion mit Adapter-basierten Schnittstellen. Seine generische Natur macht ihn vielseitig einsetzbar in verschiedenen Automatisierungsprojekten, die nach IEC 61499-Standard entwickelt werden.

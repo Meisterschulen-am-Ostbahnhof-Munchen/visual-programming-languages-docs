@@ -59,5 +59,10 @@ Der AX_FB_TON-Block arbeitet als Einschaltverzögerungstimer. Bei Empfang eines 
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zum [AX_TON](../../events/unidirectional/timers/AX_TON.md) bietet AX_FB_TON zusätzlich den Ausgang **ET** für die abgelaufene Zeit und folgt strikt dem Verhalten des IEC 61131-3 TON Blocks, während AX_TON eher auf den IEC 61499 E_TON optimiert ist.
 
+
+## Zugehörige Übungen
+
+* [Uebung_020c3_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
+
 ## Fazit
 AX_FB_TON kombiniert das bewährte Verhalten des IEC 61131-3 TON-Timers mit der Flexibilität von Adapter-Schnittstellen und ermöglicht so eine präzise Zeitsteuerung mit Rückmeldung des aktuellen Zeitstatus.

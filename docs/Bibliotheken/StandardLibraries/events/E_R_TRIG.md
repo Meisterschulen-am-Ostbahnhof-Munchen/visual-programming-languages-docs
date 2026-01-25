@@ -61,6 +61,11 @@ Laut XML-Spezifikation besteht der Baustein aus:
 | Ereignisausgang | Ja     | Ja       | Ja     |
 | Speicherverhalten | Ja  | Ja     | Ja     |
 
+
+## Zugehörige Übungen
+
+* [Uebung_089](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_089.md)
+
 ## Fazit
 
 Der E_R_TRIG-Baustein ist dazu gedacht, steigende Flanken zu erkennen. **Aufgrund eines Implementierungsfehlers in der `events-3.0.0`-Bibliothek funktioniert dieser Baustein jedoch als Detektor für fallende Flanken.** Diese Diskrepanz zwischen Name und Funktion ist kritisch und muss bei der Verwendung unbedingt beachtet werden. Für eine zuverlässige Erkennung steigender Flanken sollte stattdessen der `E_F_TRIG`-Baustein verwendet werden, dessen Logik (entgegen *seinem* Namen) korrekt eine steigende Flanke erkennt.

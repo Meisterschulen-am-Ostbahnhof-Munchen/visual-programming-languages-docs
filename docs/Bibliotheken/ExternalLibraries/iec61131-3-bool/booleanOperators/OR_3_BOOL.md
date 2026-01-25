@@ -67,5 +67,10 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei, kombinatorisch
 *   **GEN_OR:** Der zugrundeliegende generische Baustein, der für eine variable Anzahl von Eingängen konfiguriert werden kann. `OR_3_BOOL` ist eine spezifische, auf drei Eingänge festgelegte Instanz davon.
 *   **AND_n_BOOL:** Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur dann `TRUE`, wenn **alle** Eingänge `TRUE` sind, während bei der ODER-Verknüpfung bereits **ein** `TRUE`-Eingang ausreicht.
 
+
+## Zugehörige Übungen
+
+* [Uebung_002a5b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a5b.md)
+
 ## Fazit
 Der `OR_3_BOOL` ist ein grundlegender, zuverlässiger und standardkonformer Funktionsblock zur logischen ODER-Verknüpfung von drei Signalen. Seine ereignisgesteuerte, zustandslose Arbeitsweise macht ihn ideal für den Einsatz in klar strukturierten Steuerungsabläufen der Automatisierungstechnik. Er stellt eine essentielle Komponente für die Realisierung von Überwachungs-, Sicherheits- und Steuerungslogiken dar.

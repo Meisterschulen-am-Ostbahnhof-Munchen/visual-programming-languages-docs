@@ -94,6 +94,12 @@ stateDiagram-v2
 | Monotone Zeit | Ja | Nein | Ja |
 | Reset-Funktion | Ja | Teilweise | Ja |
 
+
+## Zugehörige Übungen
+
+* [Uebung_020i](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020i.md)
+* [Uebung_020i_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020i_AX.md)
+
 ## Fazit
 
 Der E_STOPWATCH-Baustein ist das präzise Instrument für Zeitmessungen:

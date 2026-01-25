@@ -61,5 +61,10 @@ Der AX_FB_TOF-Block arbeitet als Ausschaltverzögerungstimer:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu ereignisbasierten Timern wie [AX_TOF](../../events/unidirectional/timers/AX_TOF.md) folgt dieser Baustein dem klassischen SPS-Verhalten nach IEC 61131-3 und bietet zusätzlich den ET-Statusausgang.
 
+
+## Zugehörige Übungen
+
+* [Uebung_020e2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
+
 ## Fazit
 AX_FB_TOF ist der ideale Baustein für alle Anwendungen, die eine präzise Ausschaltverzögerung mit Statusrückmeldung über die abgelaufene Zeit erfordern.

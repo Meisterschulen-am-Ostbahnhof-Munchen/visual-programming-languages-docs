@@ -88,6 +88,12 @@ Der **Q_BackgroundColour** ist ein standardkonformer Funktionsbaustein zur Steue
 | Farbpalette   | Standard           | Erweitert       | Benutzerdef.   |
 | Objektbindung | Explizit           | Implizit        | Stylesheet     |
 
+
+## Zugehörige Übungen
+
+* [Uebung_016](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016.md)
+* [Uebung_016a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016a.md)
+
 ## Fazit
 
 Der Q_BackgroundColour-Baustein bietet die Referenzimplementierung für ISOBUS-Farbsteuerung:

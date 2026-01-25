@@ -43,5 +43,10 @@ Für zeitgesteuerte zyklische 8-stufige Sequenzen mit Adapteranbindung.
 ## Vergleich mit ähnlichen Bausteinen
 *   **sequence_T_08_loop**: Standardvariante ohne Adapter.
 
+
+## Zugehörige Übungen
+
+* [Uebung_038_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_038_AX.md)
+
 ## Fazit
 Adapter-Variante des 8-Schritt-Loop-Zeit-Sequenzers.

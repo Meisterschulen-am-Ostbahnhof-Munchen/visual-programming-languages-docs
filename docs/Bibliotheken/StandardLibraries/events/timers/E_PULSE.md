@@ -69,7 +69,13 @@ Der E_PULSE-Baustein kann in verschiedenen industriellen Steuerungsanwendungen e
 - **Beleuchtungssteuerung**: Der Baustein kann in Beleuchtungssystemen eingesetzt werden, um das Licht für eine bestimmte Zeit einzuschalten, z.B. für eine Sicherheitsbeleuchtung.
 - **Ventilsteuerung**: Der Baustein kann verwendet werden, um ein Ventil für eine bestimmte Zeit zu öffnen, z.B. um eine bestimmte Menge an Flüssigkeit oder Gas freizugeben.
 
-#### Fazit
+##
+## Zugehörige Übungen
+
+* [Uebung_020h](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020h.md)
+* [Uebung_020i](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020i.md)
+
+## Fazit
 
 Der E_PULSE-Baustein ist ein vielseitiger Funktionsbaustein in der IEC 61499, der einen Impuls mit einer bestimmten Dauer realisiert. Durch seine interne Verwendung des **E_DELAY**-Bausteins kann er **auch dann korrekt funktionieren, wenn er nicht zyklisch aufgerufen wird**. Dies macht ihn besonders geeignet für ereignisgesteuerte und verteilte Steuerungssysteme, in denen zyklische Aufrufe nicht immer gewährleistet sind.
 

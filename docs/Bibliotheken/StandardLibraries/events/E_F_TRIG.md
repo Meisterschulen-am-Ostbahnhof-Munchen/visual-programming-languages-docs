@@ -53,6 +53,11 @@ Die interne Logik des Bausteins (Stand: `events-3.0.0`) ist fehlerhaft und imple
 | Ereignissteuerung | Ja     | Ja       | Ja       |
 | Prinzip | Flankendetektor | Flankendetektor | Ereignisweiche |
 
+
+## Zugehörige Übungen
+
+* [Uebung_088](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_088.md)
+
 ## Fazit
 
 Der E_F_TRIG-Baustein ist dazu gedacht, fallende Flanken zu erkennen, was ein häufiger Anwendungsfall in der Steuerungstechnik ist. **Aufgrund eines Implementierungsfehlers in der `events-3.0.0`-Bibliothek funktioniert dieser Baustein jedoch als Detektor für steigende Flanken.** Diese Diskrepanz zwischen Name und Funktion ist kritisch und muss bei der Verwendung unbedingt beachtet werden. Für eine zuverlässige Erkennung fallender Flanken sollte auf alternative Logiken zurückgegriffen werden.

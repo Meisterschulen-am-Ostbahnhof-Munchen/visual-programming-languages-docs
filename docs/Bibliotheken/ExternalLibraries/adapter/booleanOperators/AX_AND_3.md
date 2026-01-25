@@ -63,5 +63,10 @@ Im Vergleich zu Standard-AND-Blöcken bietet AX_AND_3:
 
 Vergleich mit [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_3.md)
 
+
+## Zugehörige Übungen
+
+* [Uebung_002a6_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
+
 ## Fazit
 Der AX_AND_3 ist ein spezialisierter Logikbaustein für Anwendungen, die eine dreifache UND-Verknüpfung mit standardisierten AX-Adaptern erfordern. Seine Adapter-basierte Architektur ermöglicht eine einfache Integration in bestehende Steuerungssysteme und bietet eine zuverlässige Lösung für komplexe logische Verknüpfungen.

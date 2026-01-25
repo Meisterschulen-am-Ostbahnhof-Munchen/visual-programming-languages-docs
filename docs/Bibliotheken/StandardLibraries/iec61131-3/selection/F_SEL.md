@@ -63,5 +63,12 @@ Im Vergleich zu anderen Selektionsbausteinen bietet F_SEL:
 - Flexible Typunterstützung durch ANY-Datentyp
 - Standardisierte Ereignissteuerung gemäß IEC 61131-3
 
+
+## Zugehörige Übungen
+
+* [Uebung_015](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_015.md)
+* [Uebung_016](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016.md)
+* [Uebung_060](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+
 ## Fazit
 Der F_SEL-Block stellt eine grundlegende und vielseitige Selektionsfunktion für Steuerungsanwendungen bereit. Seine einfache Struktur und die flexible Typunterstützung machen ihn zu einem wertvollen Baustein für verschiedene Auswahl- und Umschaltaufgaben in industriellen Automatisierungssystemen.

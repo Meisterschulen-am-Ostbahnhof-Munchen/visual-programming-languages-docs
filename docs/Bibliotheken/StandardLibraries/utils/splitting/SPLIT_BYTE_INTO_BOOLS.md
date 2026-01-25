@@ -44,5 +44,10 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt direkt 
 - Im Vergleich zu generischen Bit-Manipulationsfunktionen bietet dieser Baustein eine spezialisierte und einfache Lösung für die Zerlegung eines Bytes in Bits.
 - Andere Bausteine könnten komplexere Operationen wie Bit-Shifts oder Masken erfordern, während dieser Baustein die direkte Extraktion der Bits ermöglicht.
 
+
+## Zugehörige Übungen
+
+* [Uebung_053](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_053.md)
+
 ## Fazit
 Der `SPLIT_BYTE_INTO_BOOLS`-Funktionsblock ist ein einfaches und effizientes Werkzeug zur Zerlegung eines Bytes in seine einzelnen Bits. Er eignet sich besonders für Anwendungen, bei denen eine schnelle und direkte Bit-Extraktion benötigt wird. Durch seine klare Schnittstelle und einfache Funktionsweise ist er leicht in bestehende Systeme integrierbar.

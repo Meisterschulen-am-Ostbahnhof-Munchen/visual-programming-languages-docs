@@ -85,6 +85,11 @@ Der **F_DIV** ist ein standardkonformer Funktionsbaustein zur Division numerisch
 | Fließkomma     | REAL, LREAL            |
 | Typkombination | INT/REAL, DINT/LREAL   |
 
+
+## Zugehörige Übungen
+
+* [Uebung_111](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_111.md)
+
 ## Fazit
 
 Der F_DIV-Baustein bietet eine robuste Lösung für Divisionsoperationen:

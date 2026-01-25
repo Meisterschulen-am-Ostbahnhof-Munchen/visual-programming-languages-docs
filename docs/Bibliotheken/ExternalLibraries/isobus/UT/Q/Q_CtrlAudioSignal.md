@@ -91,6 +91,12 @@ Der **Q_CtrlAudioSignal** ist ein standardkonformer Funktionsbaustein zur Steuer
 | Parametrierung| Vollständig       | Teilweise      | Einfach      |
 | Frequenzkontrolle | Ja           | Nein           | Nein         |
 
+
+## Zugehörige Übungen
+
+* [Uebung_017](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_017.md)
+* [Uebung_018](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_018.md)
+
 ## Fazit
 
 Der Q_CtrlAudioSignal-Baustein bietet die Referenzimplementierung für VT-Audiosteuerung:

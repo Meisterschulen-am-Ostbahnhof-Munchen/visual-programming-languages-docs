@@ -35,5 +35,11 @@ Signalisierung.
 ## Vergleich mit ähnlichen Bausteinen
 - **E_PULSE**
 
+
+## Zugehörige Übungen
+
+* [Uebung_020h_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020h_AX.md)
+* [Uebung_020i_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020i_AX.md)
+
 ## Fazit
 Adapter-basierter Impuls-Baustein.

@@ -55,5 +55,10 @@ Der Baustein arbeitet zustandslos:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen mit zwei Eingängen bietet XOR_3 die Möglichkeit, drei Eingänge gleichzeitig zu verarbeiten. Gegenüber AND/OR-Operationen liefert XOR ein exklusives Ergebnis, bei dem das Ausgangsbit nur dann 1 ist, wenn eine ungerade Anzahl der Eingangsbits 1 ist.
 
+
+## Zugehörige Übungen
+
+* [Uebung_002a7_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
+
 ## Fazit
 Der XOR_3 Funktionsblock stellt eine effiziente und flexible Lösung für bitweise XOR-Operationen mit drei Eingängen in 4diac-Systemen dar. Seine generische Natur ermöglicht den Einsatz mit verschiedenen Bit-Datentypen, was ihn vielseitig in industriellen Automatisierungsanwendungen einsetzbar macht.

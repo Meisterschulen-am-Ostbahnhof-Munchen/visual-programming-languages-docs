@@ -10,6 +10,8 @@
 ## Einleitung
 Der logiBUS_IX Funktionsblock ist ein Eingabeservice-Interface für boolesche Eingangsdaten, der speziell für die Kommunikation mit logiBUS-Eingabemodulen entwickelt wurde. Er dient als Schnittstelle zwischen der Steuerungslogik und physischen Eingabesignalen und ermöglicht die Abfrage von digitalen Eingangswerten.
 
+![logiBUS_IX](logiBUS_IX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

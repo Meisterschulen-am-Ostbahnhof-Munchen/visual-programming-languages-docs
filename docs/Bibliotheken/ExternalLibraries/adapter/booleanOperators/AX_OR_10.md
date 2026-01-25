@@ -7,6 +7,8 @@
 ## Einleitung
 Der AX_OR_10 ist ein generischer Funktionsblock zur Berechnung der logischen ODER-Verknüpfung von 10 Eingängen.
 
+![AX_OR_10](AX_OR_10.svg)
+
 ## Schnittstellenstruktur
 
 ### **Adapter**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_ET_04_loop` implementiert eine zyklische Sequenz mit vier Zuständen. Der Übergang zwischen den Zuständen kann entweder durch ein externes Ereignis oder nach Ablauf einer einstellbaren Zeit erfolgen. Der Block ist darauf ausgelegt, wiederkehrende Abläufe in Steuerungsanwendungen zu realisieren, bei denen Aktionen nacheinander und in einer Schleife ausgeführt werden müssen.
 
+![sequence_ET_04_loop](sequence_ET_04_loop.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   `START_S1`: Startet die Sequenz und wechselt vom `START`-Zustand in den Zustand `State_01`. Überträgt die vier Zeitparameter `DT_S1_S2`, `DT_S2_S3`, `DT_S3_S4` und `DT_S4_S1`.

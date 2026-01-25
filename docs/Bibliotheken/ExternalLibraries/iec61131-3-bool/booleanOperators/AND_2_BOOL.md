@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AND_2_BOOL` ist ein Standardbaustein zur Berechnung der logischen UND-Verknüpfung (Konjunktion) zweier boolescher Eingangswerte. Er folgt dem IEC 61131-3-Standard für grundlegende boolesche Funktionen und ist für den Einsatz in der 4diac-IDE konzipiert. Der Baustein wartet auf ein Auslöseereignis, führt die Operation aus und signalisiert die Beendigung der Berechnung mit einem Bestätigungsereignis.
 
+![AND_2_BOOL](AND_2_BOOL.svg)
+
 ## Schnittstellenstruktur
 Die Schnittstelle des `AND_2_BOOL`-Funktionsblocks ist einfach und übersichtlich aufgebaut und besteht aus einem Ereigniseingang, einem Ereignisausgang sowie den zugehörigen Datenverbindungen.
 

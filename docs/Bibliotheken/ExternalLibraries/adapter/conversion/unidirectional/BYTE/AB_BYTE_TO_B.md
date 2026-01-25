@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock AB_BYTE_TO_B ist ein Composite-Funktionsblock, der zur Konvertierung eines BYTE-Datentyps in das AB-Adapterformat dient. Er ermöglicht die unidirektionale Datenübertragung von Byte-Werten über ein standardisiertes Adapter-Interface.
 
+![AB_BYTE_TO_B](AB_BYTE_TO_B.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

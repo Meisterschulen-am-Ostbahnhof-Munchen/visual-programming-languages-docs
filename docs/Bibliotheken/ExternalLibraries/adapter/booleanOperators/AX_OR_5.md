@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_OR_5 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen ODER-Verknüpfung mit fünf Eingängen. Er dient zur logischen Verarbeitung von Signalen in Automatisierungssystemen und ermöglicht die Kombination mehrerer Eingangssignale zu einem Ausgangssignal.
 
+![AX_OR_5](AX_OR_5.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

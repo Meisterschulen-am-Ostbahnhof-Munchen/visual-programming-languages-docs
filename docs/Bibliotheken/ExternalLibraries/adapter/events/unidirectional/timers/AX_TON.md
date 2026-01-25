@@ -12,6 +12,8 @@
 
 AX_TON ist ein standardisierter Timer-Funktionsblock, der eine Einschaltverzögerung (On-Delay Timing) realisiert. Der Baustein wartet nach Aktivierung eine definierte Zeit ab, bevor er das Ausgangssignal setzt.
 
+![AX_TON](AX_TON.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock A2X_2X_TO_BOOL ist ein Composite-Funktionsblock, der zur Konvertierung von A2X-Signalen in zwei separate BOOL-Signale dient. Er ermöglicht die Umwandlung von bidirektionalen Steuersignalen in einfache logische Ausgänge für verschiedene Anwendungsfälle.
 
+![A2X_2X_TO_BOOL](A2X_2X_TO_BOOL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

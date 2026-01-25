@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `INTEGRAL` berechnet näherungsweise das zeitliche Integral eines Eingangssignals. Die Integration erfolgt durch die Summation von Teilflächen, die sich aus dem Produkt des Eingangswertes und der seit dem letzten Aufruf verstrichenen Zeit ergeben. Der Baustein ist nützlich für Anwendungen, in denen kumulative Werte wie verbrauchte Energie, geförderte Mengen oder zurückgelegte Wege bestimmt werden müssen.
 
+![INTEGRAL](INTEGRAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

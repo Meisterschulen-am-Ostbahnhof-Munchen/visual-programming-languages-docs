@@ -12,6 +12,8 @@
 
 AX_FB_TON ist ein standardisierter Timer-Funktionsblock gemäß IEC 61131-3, der eine Einschaltverzögerung (On-Delay Timing) realisiert und über Adapter-Schnittstellen verfügt. Der Baustein wartet nach Aktivierung eine definierte Zeit ab, bevor er das Ausgangssignal setzt, und stellt die abgelaufene Zeit zur Verfügung.
 
+![AX_FB_TON](AX_FB_TON.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

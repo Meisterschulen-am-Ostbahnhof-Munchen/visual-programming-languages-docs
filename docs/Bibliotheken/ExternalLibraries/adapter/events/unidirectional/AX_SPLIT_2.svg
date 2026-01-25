@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="970" height="187" viewBox="-540 -20 970 187">
+<defs>
+</defs>
+<rect x="3" y="3" width="140" height="137" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H140 V30 H134 V70 H140 V137 H0 V70 H6 V30 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
+<path d="M0,30 L140,30" stroke="#606060" stroke-width="1" />
+<text x="70.0" y="48.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AX_SPLIT_2</text>
+<text x="70.0" y="62.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<rect x="-5.0" y="82.0" width="10" height="10" fill="white" stroke="#985ec9" stroke-width="2.5" />
+<text x="12" y="91" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<rect x="135.0" y="82.0" width="10" height="10" fill="#985ec9" stroke="none" />
+<text x="128" y="91" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT1</text>
+<text x="155" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<rect x="135.0" y="108.0" width="10" height="10" fill="#985ec9" stroke="none" />
+<text x="128" y="117" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT2</text>
+<text x="155" y="116" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+</svg>

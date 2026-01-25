@@ -6,6 +6,8 @@
 ## Einleitung
 Der AR_R_TO_REAL Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung des AR-Adapterformats in einen REAL-Wert dient.
 
+![AR_R_TO_REAL](AR_R_TO_REAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

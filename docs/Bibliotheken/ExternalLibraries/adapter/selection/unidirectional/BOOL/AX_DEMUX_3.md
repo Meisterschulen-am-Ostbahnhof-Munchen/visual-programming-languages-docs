@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_DEMUX_3 ist ein generischer Demultiplexer-Funktionsblock, der Eingangsdaten basierend auf einem Indexwert auf einen von drei möglichen Ausgängen verteilt. Der Baustein dient zur selektiven Weiterleitung von Datenströmen in verteilten Automatisierungssystemen.
 
+![AX_DEMUX_3](AX_DEMUX_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `I_PosDeltaHighPrecRapidUpd` implementiert die Verarbeitung des NMEA 2000 Parameter Group Numbers (PGN) 129027 "Position Delta, High Precision Rapid Update". Dieser Baustein ist für Anwendungen konzipiert, die sehr hohe Präzision und sehr schnelle Aktualisierungsraten für Positionsdaten erfordern. Er kann Positionsänderungen (Delta) mit einer Auflösung von bis zu 1 Millimeter und einem Delta-Zeitintervall mit einer Genauigkeit von 5 Millisekunden bereitstellen.
 
+![I_PosDeltaHighPrecRapidUpd](I_PosDeltaHighPrecRapidUpd.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

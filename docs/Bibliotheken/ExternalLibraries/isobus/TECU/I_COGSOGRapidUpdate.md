@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `I_COGSOGRapidUpdate` implementiert die Verarbeitung des NMEA 2000 Parameter Group Number (PGN) 129026 "COG & SOG, Rapid Update". Dieser Baustein dient dem Empfang und der Bereitstellung von Navigationsdaten, speziell des momentanen Kurses über Grund (Course Over Ground, COG) und der Geschwindigkeit über Grund (Speed Over Ground, SOG) mit hoher Aktualisierungsrate. Er ist für den Einsatz in maritimen oder mobilen Arbeitsmaschinen-Steuerungssystemen konzipiert, die auf dem ISOBUS-Standard basieren.
 
+![I_COGSOGRapidUpdate](I_COGSOGRapidUpdate.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

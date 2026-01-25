@@ -10,6 +10,8 @@
 ## Einleitung
 Der Aux_IX Funktionsblock ist ein Service-Interface-Funktionsblock für boolesche Eingangsdaten. Er dient als Schnittstelle für Eingabedienste und ermöglicht die Kommunikation mit Ressourcen zur Abfrage von digitalen Eingangssignalen.
 
+![Aux_IX](Aux_IX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

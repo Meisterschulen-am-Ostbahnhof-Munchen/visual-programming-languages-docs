@@ -1,3 +1,5 @@
+![FT_DERIV](FT_DERIV.svg)
+
 # FT_DERIV
 
 ```{index} single: FT_DERIV

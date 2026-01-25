@@ -8,6 +8,8 @@ Der `AX_PERMIT` Funktionsblock ist eine adapterbasierte Variante des `E_PERMIT` 
 
 Der Baustein empfängt ein kombiniertes Ereignis- und Bool-Signal über einen `AX`-Adapter (genannt `PERMIT`). Das eingehende Ereignis wird nur dann an den Ausgang (`EO`) weitergeleitet, wenn der boolesche Datenwert des `PERMIT`-Adapters (`PERMIT.D1`) `TRUE` ist. Der Datenwert `PERMIT.D1` wird dabei **nicht** am Ausgang (`EO`) weitergereicht, sondern nur als Bedingung genutzt.
 
+![AX_PERMIT](AX_PERMIT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Adapter (Socket)**

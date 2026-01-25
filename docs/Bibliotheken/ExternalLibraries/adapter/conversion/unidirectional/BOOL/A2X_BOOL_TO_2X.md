@@ -9,6 +9,8 @@
 ## Einleitung
 Der A2X_BOOL_TO_2X ist ein zusammengesetzter Funktionsblock, der zwei BOOL-Werte in ein A2X-Ausgabeformat konvertiert. Dieser Baustein dient als Brücke zwischen einfachen booleschen Steuersignalen und dem standardisierten A2X-Adapterinterface.
 
+![A2X_BOOL_TO_2X](A2X_BOOL_TO_2X.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

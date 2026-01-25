@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_ExecuteExtendedMacro** ist ein standardkonformer Funktionsbaustein zur Ausführung erweiterter Makros in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.62) Spezifikation für VT ab Version 5.
 
+![Q_ExecuteExtendedMacro](Q_ExecuteExtendedMacro.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

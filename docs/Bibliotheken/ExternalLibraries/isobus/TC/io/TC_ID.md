@@ -10,6 +10,8 @@
 ## Einleitung
 Der TC_ID Funktionsblock ist ein Eingabe-Service-Interface-Baustein für Doppelwort-Eingabedaten (Double Word Input). Er dient als Schnittstelle zur Kommunikation mit TC-Eingabegeräten (Tractor Control) und ermöglicht den Zugriff auf spezifische Eingabedaten über definierte Datenwörter.
 
+![TC_ID](TC_ID.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

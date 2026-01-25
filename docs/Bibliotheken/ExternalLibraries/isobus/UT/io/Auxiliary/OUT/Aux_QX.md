@@ -10,6 +10,8 @@
 ## Einleitung
 Der Aux_QX Funktionsblock ist ein Ausgabeservice-Interface-Funktionsblock für boolesche Ausgabedaten. Er dient als Schnittstelle zu Auxiliary-Ausgabegeräten und ermöglicht die Steuerung von booleschen Ausgabesignalen über einen definierten Service-Mechanismus.
 
+![Aux_QX](Aux_QX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

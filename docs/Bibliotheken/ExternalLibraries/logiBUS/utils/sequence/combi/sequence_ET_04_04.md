@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_ET_04_04` ist ein Sequenzer mit 8 Ausgängen, der zur Steuerung von Abläufen in der Automatisierungstechnik dient. Er realisiert eine feste Zustandsfolge, wobei die Übergänge zwischen den Zuständen entweder durch ein externes Ereignis oder durch einen einstellbaren Zeitablauf ausgelöst werden können. Der Baustein ist besonders für Anwendungen geeignet, bei denen eine zyklische oder schrittweise Aktivierung von Ausgängen erforderlich ist.
 
+![sequence_ET_04_04](sequence_ET_04_04.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **`EI1`**: Allgemeines Eingangsereignis. Führt im Startzustand (`xSTART`) zu einer Selbsttransition (kein Zustandswechsel).

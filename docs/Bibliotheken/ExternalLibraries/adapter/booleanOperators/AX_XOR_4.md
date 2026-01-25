@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_XOR_4 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen XOR-Verknüpfung mit vier Eingängen. Er implementiert die exklusive ODER-Operation für bis zu vier verschiedene Eingangssignale.
 
+![AX_XOR_4](AX_XOR_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

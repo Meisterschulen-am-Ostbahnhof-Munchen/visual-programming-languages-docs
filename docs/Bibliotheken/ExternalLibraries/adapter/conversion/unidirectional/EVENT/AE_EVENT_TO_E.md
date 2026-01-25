@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock AE_EVENT_TO_E ist ein Composite-Funktionsblock, der zur Konvertierung von Ereignissen in AE-Adapter-Signale dient. Er ermöglicht die Umwandlung eines einfachen Ereignisses in ein Adapter-basiertes Ausgangssignal, was insbesondere bei der Integration verschiedener Kommunikationsschnittstellen nützlich ist.
 
+![AE_EVENT_TO_E](AE_EVENT_TO_E.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

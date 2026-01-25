@@ -10,6 +10,8 @@
 ## Einleitung
 Button_IXA ist ein zusammengesetzter Funktionsblock zur Verarbeitung von booleschen Eingabedaten. Der Baustein dient als Schnittstelle für Taster-Eingaben und bietet eine standardisierte Verarbeitung von Schaltzuständen in Automatisierungssystemen.
 
+![Button_IXA](Button_IXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

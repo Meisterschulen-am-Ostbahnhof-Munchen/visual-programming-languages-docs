@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_SelectColourMap** ist ein standardkonformer Funktionsbaustein zur Verwaltung von Farbpaletten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.60) Spezifikation für VT-Systeme ab Version 4.
 
+![Q_SelectColourMap](Q_SelectColourMap.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_SoftKeyMask** ist ein standardkonformer Funktionsbaustein zur Verwaltung von Softkey-Masken in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.36) Spezifikation für VT-Systeme.
 
+![Q_SoftKeyMask](Q_SoftKeyMask.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_AND_2 ist ein generischer Funktionsblock zur Berechnung der logischen UND-Verknüpfung. Der Baustein verarbeitet zwei boolesche Eingangssignale und gibt das logische UND-Ergebnis aus.
 
+![AX_AND_2](AX_AND_2.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Keine Ereignis-Eingänge vorhanden

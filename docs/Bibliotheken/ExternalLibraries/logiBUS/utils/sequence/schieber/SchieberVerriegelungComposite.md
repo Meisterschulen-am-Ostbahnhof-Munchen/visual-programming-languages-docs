@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `SchieberVerriegelungComposite` ist ein Composite-FB, der als Wrapper für andere Funktionsblöcke dient. Sein Hauptzweck ist die Verwaltung und Koordination der Verriegelungslogik für mehrere Schieber (Hauptschieber, Schieber links, Schieber rechts). Er kapselt die interne Logik und bietet eine vereinheitlichte Schnittstelle für die Initialisierung und den Datenaustausch mit den angeschlossenen Aktoren und Sensoren.
 
+![SchieberVerriegelungComposite](SchieberVerriegelungComposite.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -6,6 +6,8 @@
 ## Einleitung
 Der AUI_UINT_TO_UI Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines UINT-Werts in das AUI-Adapterformat dient.
 
+![AUI_UINT_TO_UI](AUI_UINT_TO_UI.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

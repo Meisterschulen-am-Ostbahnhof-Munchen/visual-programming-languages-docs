@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock AE2_EVENT_TO_E ist ein Composite-Funktionsblock, der zur Konvertierung von EVENT-Signalen in das AE2-Adapterformat dient. Er ermöglicht die bidirektionale Kommunikation zwischen Standard-Ereignissen und dem spezifischen AE2-Adapter.
 
+![AE2_EVENT_TO_E](AE2_EVENT_TO_E.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

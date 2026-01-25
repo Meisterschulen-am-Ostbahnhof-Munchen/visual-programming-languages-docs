@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_OR_6 ist ein generischer Funktionsblock zur Berechnung einer logischen ODER-Verknüpfung mit sechs Eingängen. Der Baustein dient zur Verarbeitung von booleschen Signalen in Automatisierungssystemen und gibt das Ergebnis der ODER-Operation über einen Adapterausgang aus.
 
+![AX_OR_6](AX_OR_6.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Keine Ereigniseingänge vorhanden

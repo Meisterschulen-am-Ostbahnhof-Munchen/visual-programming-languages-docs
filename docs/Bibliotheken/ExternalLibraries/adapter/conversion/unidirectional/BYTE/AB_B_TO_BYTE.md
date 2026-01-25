@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock AB_B_TO_BYTE ist ein Composite-Funktionsblock, der der Konvertierung von AB-Daten in das BYTE-Format dient. Er fungiert als Adapter-Konverter und ermöglicht die nahtlose Integration von AB-Datenquellen in Systeme, die BYTE-Daten erwarten.
 
+![AB_B_TO_BYTE](AB_B_TO_BYTE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

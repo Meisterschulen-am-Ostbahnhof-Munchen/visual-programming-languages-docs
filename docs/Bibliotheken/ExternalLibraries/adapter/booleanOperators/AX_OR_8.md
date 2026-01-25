@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_OR_8 Funktionsblock ist ein generischer Baustein zur Berechnung einer logischen ODER-Verknüpfung mit acht Eingängen. Er dient zur Verarbeitung von booleschen Signalen in Steuerungsanwendungen und ermöglicht die Kombination mehrerer Eingangssignale zu einem gemeinsamen Ausgangssignal.
 
+![AX_OR_8](AX_OR_8.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Keine Ereignis-Eingänge vorhanden

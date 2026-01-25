@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_T_08` ist ein zeitgesteuerter Sequenzer mit acht Ausgängen. Er realisiert eine feste Abfolge von Zuständen, wobei der Übergang zwischen den einzelnen Zuständen durch einstellbare Zeitverzögerungen gesteuert wird. Der Baustein ist für Anwendungen konzipiert, in denen Prozessschritte oder Maschinenzustände nacheinander für eine definierte Dauer aktiviert werden müssen, wie z.B. in Verpackungsmaschinen, Förderstrecken oder Waschanlagen.
 
+![sequence_T_08](sequence_T_08.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   `START_S1`: Startet die Sequenz. Ein Ereignis an diesem Eingang bewirkt den Übergang vom `START`-Zustand in den ersten aktiven Zustand `State_01`. Es werden alle acht Zeitdaten-Eingänge mitgelesen.

@@ -12,6 +12,8 @@
 
 AX_FB_TP ist ein standardisierter Timer-Funktionsblock gemäß IEC 61131-3, der einen Impuls (Pulse) mit definierter Länge erzeugt. Bei einer steigenden Flanke am Eingang wird ein Ausgangsimpuls für die festgelegte Zeitdauer generiert.
 
+![AX_FB_TP](AX_FB_TP.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

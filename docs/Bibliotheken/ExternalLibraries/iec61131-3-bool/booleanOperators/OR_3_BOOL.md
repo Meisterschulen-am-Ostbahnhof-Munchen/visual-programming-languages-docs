@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `OR_3_BOOL` ist ein standardisierter Baustein gemäß IEC 61131-3 zur Durchführung der logischen ODER-Verknüpfung. Er berechnet das logische ODER (Disjunktion) von drei booleschen Eingangssignalen. Der Baustein ist als generische Funktion realisiert und wird bei jedem Auslöseereignis ausgeführt.
 
+![OR_3_BOOL](OR_3_BOOL.svg)
+
 ## Schnittstellenstruktur
 Der Funktionsblock verfügt über einen Ereigniseingang, einen Ereignisausgang, drei Dateneingänge und einen Datenausgang. Es sind keine Adapterschnittstellen vorhanden.
 

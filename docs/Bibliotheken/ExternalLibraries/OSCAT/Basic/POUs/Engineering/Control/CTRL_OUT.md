@@ -1,3 +1,5 @@
+![CTRL_OUT](CTRL_OUT.svg)
+
 # CTRL_OUT
 
 ```{index} single: CTRL_OUT

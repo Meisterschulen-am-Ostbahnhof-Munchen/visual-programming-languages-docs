@@ -9,6 +9,8 @@
 ## Einleitung
 Der Softkey_IX ist ein Service-Interface-Funktionsblock für boolesche Eingabedaten, der als Eingabeschnittstelle für Softkey-Funktionalitäten dient. Dieser Baustein ermöglicht die Kommunikation mit Ressourcen und die Verarbeitung von Tastatureingaben in Steuerungssystemen.
 
+![Softkey_IX](Softkey_IX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

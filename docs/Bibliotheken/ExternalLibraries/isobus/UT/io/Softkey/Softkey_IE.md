@@ -9,6 +9,8 @@
 ## Einleitung
 Der Softkey_IE Funktionsblock ist ein Eingabeservice-Schnittstellen-Funktionsblock für Ereigniseingabedaten, der speziell für die Verarbeitung von Softkey-Ereignissen gemäß ISO 11783-6 entwickelt wurde. Er dient als Schnittstelle zwischen der Anwendungslogik und den physikalischen Softkey-Eingabegeräten in landwirtschaftlichen und mobilen Arbeitsmaschinen.
 
+![Softkey_IE](Softkey_IE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

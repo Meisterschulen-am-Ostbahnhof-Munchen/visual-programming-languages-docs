@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_DEMUX_4 ist ein generischer Demultiplexer-Funktionsblock, der eingehende Daten über einen Adapter-Eingang empfängt und basierend auf einem Indexwert selektiv an einen von vier Ausgangsadaptern weiterleitet. Der Baustein dient zur Verteilung von Datenströmen in verteilten Automatisierungssystemen.
 
+![AX_DEMUX_4](AX_DEMUX_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

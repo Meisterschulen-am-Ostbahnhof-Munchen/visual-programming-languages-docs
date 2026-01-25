@@ -7,6 +7,8 @@
 ## Einleitung
 `sequence_E_05_AX` ist eine Variante des `sequence_E_05`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein ereignisgesteuerte Sequenz mit 5 Ausgabezuständen.
 
+![sequence_E_05_AX](sequence_E_05_AX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock `logiBUS_QD_PWM` ist ein Ausgabeservice-Interface-Funktionsblock für doppelte Wort-Ausgabedaten. Er dient als Schnittstelle zur Steuerung von PWM-Ausgaben (Pulsweitenmodulation) über das logiBUS-System und ermöglicht die Ansteuerung von Ausgängen Q1 bis Q8.
 
+![logiBUS_QD_PWM](logiBUS_QD_PWM.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

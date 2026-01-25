@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_MUX_2 ist ein generischer Multiplexer-Funktionsblock, der zwei Eingangssignale über einen Indexwert selektiert und an einen Ausgang weiterleitet. Der Baustein dient zur dynamischen Auswahl zwischen zwei verschiedenen Eingangssignalen basierend auf einem Steuerindex.
 
+![AX_MUX_2](AX_MUX_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

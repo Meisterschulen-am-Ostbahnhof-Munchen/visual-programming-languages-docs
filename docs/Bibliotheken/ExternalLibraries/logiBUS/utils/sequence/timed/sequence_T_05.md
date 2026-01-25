@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_T_05` ist ein zeitgesteuerter Sequenzer mit fünf Ausgangszuständen. Er durchläuft eine feste Abfolge von Zuständen (State_01 bis State_05), wobei der Übergang zwischen den einzelnen Zuständen durch einstellbare Zeitverzögerungen gesteuert wird. Der Block ist für Anwendungen konzipiert, in denen Prozessschritte oder Aktionen nacheinander und für eine definierte Dauer aktiviert werden müssen.
 
+![sequence_T_05](sequence_T_05.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **`START_S1`**: Startet die Sequenz. Der Block wechselt vom Startzustand (`START` oder `State_00`) in den ersten aktiven Zustand `State_01`. Dieses Ereignis ist mit den fünf Zeitdaten-Eingängen verknüpft.

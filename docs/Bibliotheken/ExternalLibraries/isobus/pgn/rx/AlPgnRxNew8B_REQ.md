@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AlPgnRxNew8B_REQ` dient zur Anforderung (Request) von Daten über ein ISOBUS-Netzwerk. Er ermöglicht die Installation eines Empfangsparametersatzes (RX PGN) und das Auslösen einer einmaligen Anfrage für diesen Parameter. Der Baustein ist Teil einer ISOBUS-spezifischen Kommunikationsbibliothek und behandelt die Interaktion mit dem CAN-Netzwerkprotokoll nach ISO 11783.
 
+![AlPgnRxNew8B_REQ](AlPgnRxNew8B_REQ.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

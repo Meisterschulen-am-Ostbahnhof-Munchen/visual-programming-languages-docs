@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_OR_4 ist ein generischer Funktionsblock zur Berechnung einer logischen ODER-Verknüpfung mit vier Eingängen. Der Baustein dient zur Verarbeitung von booleschen Signalen und gibt das Ergebnis der ODER-Operation über einen Adapter-Ausgang aus.
 
+![AX_OR_4](AX_OR_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

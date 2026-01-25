@@ -10,6 +10,8 @@
 ## Einleitung
 Der NumericValue_ID Funktionsblock ist ein Eingabeservice-Interface-Funktionsblock für Doppelwort-Eingabedaten (DWORD). Er dient als Schnittstelle zur Kommunikation mit Ressourcen und ermöglicht die Verarbeitung von numerischen Eingabewerten in ISOBUS-kompatiblen Systemen.
 
+![NumericValue_ID](NumericValue_ID.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

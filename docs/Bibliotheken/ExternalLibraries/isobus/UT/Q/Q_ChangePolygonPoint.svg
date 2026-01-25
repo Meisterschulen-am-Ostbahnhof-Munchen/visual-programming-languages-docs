@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1094" height="327" viewBox="-556 -20 1094 327">
+<defs>
+</defs>
+<rect x="3" y="3" width="240" height="277" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H240 V92 H234 V132 H240 V277 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
+<path d="M0,30 L240,30" stroke="#606060" stroke-width="1" />
+<text x="120.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">Q_ChangePolygonPoint</text>
+<text x="120.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-101" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-101" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Request</text>
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16ObjId</text>
+<text x="-31" y="152" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-134" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Object ID of the Output Polygon object to change </text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8PointIndex</text>
+<text x="-31" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="-101" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Point index of the point to replace.</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16NewXValue</text>
+<text x="-31" y="204" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-155" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">New X value of a point relative to the top left corner of the polygon </text>
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16NewYValue</text>
+<text x="-31" y="230" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-155" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">New Y value of a point relative to the top left corner of the polygon </text>
+<path d="M240,37 L240,47 L245,42 Z" fill="#5cb85c" stroke="none" />
+<text x="228" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="263" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="333" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M240,63 L240,73 L245,68 Z" fill="#5cb85c" stroke="none" />
+<text x="228" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="263" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="333" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
+<path d="M240,144 L240,154 L245,149 Z" fill="#0066cc" stroke="none" />
+<text x="228" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="263" y="152" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="333" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
+<path d="M240,170 L240,180 L245,175 Z" fill="#0066cc" stroke="none" />
+<text x="228" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">u8OldPointIndex</text>
+<text x="263" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="333" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old point index of the point to replace.</text>
+<path d="M240,196 L240,206 L245,201 Z" fill="#0066cc" stroke="none" />
+<text x="228" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">u16OldXValue</text>
+<text x="263" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="333" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old X value of a point relative to the top left corner of the polygon </text>
+<path d="M240,222 L240,232 L245,227 Z" fill="#0066cc" stroke="none" />
+<text x="228" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">u16OldYValue</text>
+<text x="263" y="230" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="333" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old Y value of a point relative to the top left corner of the polygon </text>
+<path d="M240,248 L240,258 L245,253 Z" fill="#0066cc" stroke="none" />
+<text x="228" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">s16result</text>
+<text x="263" y="256" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<text x="333" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">retval see description</text>
+<path d="M-12,42 L-12,149" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,149 L-5,149" stroke="#404040" />
+<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,68 L-20,227" stroke="#404040" stroke-width="1" />
+<path d="M0,68 L-20,68" stroke="#404040" />
+<rect x="-22" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,175 L-5,175" stroke="#404040" />
+<rect x="-22" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,201 L-5,201" stroke="#404040" />
+<rect x="-22" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,227 L-5,227" stroke="#404040" />
+<rect x="-22" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M252,68 L252,253" stroke="#404040" stroke-width="1" />
+<path d="M240,68 L252,68" stroke="#404040" />
+<rect x="250" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M252,149 L245,149" stroke="#404040" />
+<rect x="250" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M252,253 L245,253" stroke="#404040" />
+<rect x="250" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M252,175 L245,175" stroke="#404040" />
+<rect x="250" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M252,201 L245,201" stroke="#404040" />
+<rect x="250" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M252,227 L245,227" stroke="#404040" />
+<rect x="250" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_XOR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen XOR-Verknüpfung mit drei Eingängen. Er implementiert die exklusive ODER-Operation für drei binäre Eingangssignale und gibt das entsprechende Ergebnis aus.
 
+![AX_XOR_3](AX_XOR_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

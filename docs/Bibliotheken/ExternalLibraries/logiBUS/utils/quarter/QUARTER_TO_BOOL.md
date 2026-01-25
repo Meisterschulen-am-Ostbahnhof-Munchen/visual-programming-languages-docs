@@ -14,6 +14,8 @@
 ## Einleitung
 Der Funktionsblock `QUARTER_TO_BOOL` dient der Konvertierung eines 4-Zustands-Signals (Quad-State), das in den unteren zwei Bits eines BYTE-Wertes kodiert ist, in ein einfaches BOOL-Signal. Er ist besonders für die Anbindung an Systeme nützlich, die Statusinformationen mit mehr als zwei Zuständen liefern, die jedoch in einer einfachen binären Logik weiterverarbeitet werden sollen.
 
+![QUARTER_TO_BOOL](QUARTER_TO_BOOL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **REQ**: Startet die Konvertierung. Mit diesem Ereignis wird der anliegende Eingangswert `IB` ausgewertet.

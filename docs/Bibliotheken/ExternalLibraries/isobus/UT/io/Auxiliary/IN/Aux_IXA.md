@@ -10,6 +10,8 @@
 ## Einleitung
 Der Aux_IXA ist ein Composite-Funktionsblock zur Verarbeitung von booleschen Eingangsdaten. Er dient als Wrapper für den Basis-Funktionsblock Aux_IX und bietet eine erweiterte Schnittstelle für die Integration in ISOBUS-kompatible Systeme.
 
+![Aux_IXA](Aux_IXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

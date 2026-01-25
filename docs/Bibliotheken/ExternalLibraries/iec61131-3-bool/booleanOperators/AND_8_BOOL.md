@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AND_8_BOOL` ist ein Standardbaustein zur Berechnung der logischen UND-Verknüpfung. Er führt eine bitweise UND-Operation auf acht boolesche Eingangswerte aus und liefert das Ergebnis auf einen einzigen booleschen Ausgang. Der Baustein folgt dem ereignisgesteuerten Ausführungsmodell von IEC 61499.
 
+![AND_8_BOOL](AND_8_BOOL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **REQ (Normal Execution Request):** Löst die Ausführung des Funktionsblocks aus. Bei Eintreffen dieses Ereignisses werden alle acht Daten-Eingänge gelesen, die UND-Operation berechnet und das Ergebnis am Ausgang `OUT` bereitgestellt. Anschließend wird das Bestätigungsereignis `CNF` generiert.

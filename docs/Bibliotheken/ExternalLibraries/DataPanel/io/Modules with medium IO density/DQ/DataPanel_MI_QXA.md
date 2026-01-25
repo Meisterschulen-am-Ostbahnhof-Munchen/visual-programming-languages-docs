@@ -10,6 +10,8 @@
 ## Einleitung
 Der DataPanel_MI_QXA ist ein Composite-Funktionsblock zur Steuerung von booleschen Ausgabedaten in Automatisierungssystemen. Dieser Baustein dient als Schnittstelle für digitale Ausgänge und ermöglicht die Konfiguration und Ansteuerung von Ausgangskanälen über standardisierte Service-Parameter.
 
+![DataPanel_MI_QXA](DataPanel_MI_QXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

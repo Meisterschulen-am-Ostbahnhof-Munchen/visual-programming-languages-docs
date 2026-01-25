@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AlPgnTxNew8B_REQ` dient zur Konfiguration und Steuerung der Übertragung von Parameter-Gruppen-Nummern (PGN) in einem ISOBUS-Netzwerk (J1939). Sein Hauptzweck ist die Installation eines neuen Transmit-PGN (TX-PGN) im Netzwerk. Der Baustein reagiert auf ein REQ-Ereignis (J1939-Netzwerkereignis) und bietet eine Callback-Schnittstelle zur asynchronen Rückmeldung über den Status der Datenübertragung. Er ist Teil einer spezialisierten Bibliothek für ISOBUS-Kommunikation.
 
+![AlPgnTxNew8B_REQ](AlPgnTxNew8B_REQ.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

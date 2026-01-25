@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AND_7_BOOL` ist ein generischer Baustein zur Berechnung der logischen UND-Verknüpfung. Er führt eine bitweise UND-Operation über sieben separate BOOL-Eingänge durch und gibt das Ergebnis auf einem einzigen BOOL-Ausgang aus. Der Block folgt dem ECC-Ausführungsmodell, bei dem eine Berechnung durch ein ankommendes Ereignis ausgelöst und mit einem ausgehenden Ereignis bestätigt wird.
 
+![AND_7_BOOL](AND_7_BOOL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

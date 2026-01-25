@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_Attribute** ist ein standardkonformer Funktionsbaustein zur Änderung von VT-Objekteigenschaften, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.38) Spezifikation für landwirtschaftliche Steuersysteme.
 
+![Q_Attribute](Q_Attribute.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

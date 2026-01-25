@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_T_FF_SR ist ein ereignisgesteuerter bistabiler Funktionsblock mit Toggle-Funktionalität. Es handelt sich um ein Flip-Flop-Element, das sowohl als Set-Reset-Flipflop als auch als Toggle-Flipflop betrieben werden kann. Der Baustein kombiniert die Eigenschaften eines SR-Flipflops mit zusätzlicher Toggle-Funktionalität über einen Takteingang.
 
+![AX_T_FF_SR](AX_T_FF_SR.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

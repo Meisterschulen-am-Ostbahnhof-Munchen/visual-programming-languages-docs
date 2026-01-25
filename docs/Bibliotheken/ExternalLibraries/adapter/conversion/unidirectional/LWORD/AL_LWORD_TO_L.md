@@ -6,6 +6,8 @@
 ## Einleitung
 Der AL_LWORD_TO_L Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines LWORD-Werts in das AL-Adapterformat dient.
 
+![AL_LWORD_TO_L](AL_LWORD_TO_L.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

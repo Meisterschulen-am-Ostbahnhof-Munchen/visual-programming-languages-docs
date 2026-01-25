@@ -9,6 +9,8 @@
 ## Einleitung
 Der logiBUS_ID Funktionsblock ist ein Eingabe-Service-Interface-Baustein für Doppelwort-Eingabedaten (DWORD). Er dient als Schnittstelle für die Kommunikation mit logiBUS-Eingabegeräten und ermöglicht die Verarbeitung von digitalen Eingangssignalen in 4diac-Steuerungssystemen.
 
+![logiBUS_ID](logiBUS_ID.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

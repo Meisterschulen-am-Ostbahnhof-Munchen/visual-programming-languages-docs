@@ -10,6 +10,8 @@
 ## Einleitung
 Der logiBUS_IB ist ein Service Interface Function Block für die Verarbeitung von Byte-Eingabedaten. Dieser Baustein dient als Eingabeschnittstelle für logiBUS-Systeme und ermöglicht die Kommunikation mit digitalen Eingängen. Er unterstützt spezielle Ereignisbehandlungen wie Tastendruck-Wiederholungen und bietet eine standardisierte Schnittstelle für die Initialisierung und den Betrieb von Eingabegeräten.
 
+![logiBUS_IB](logiBUS_IB.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

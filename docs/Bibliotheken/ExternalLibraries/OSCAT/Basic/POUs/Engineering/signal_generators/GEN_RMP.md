@@ -1,3 +1,5 @@
+![GEN_RMP](GEN_RMP.svg)
+
 # GEN_RMP
 
 ```{index} single: GEN_RMP

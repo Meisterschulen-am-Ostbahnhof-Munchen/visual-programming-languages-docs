@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_SWITCH Funktionsblock dient als Schaltbaustein (Demultiplexer) für Ereignisse basierend auf einem booleschen Eingangswert. Er leitet eingehende Ereignisse je nach Zustand des Steuersignals auf einen von zwei möglichen Ausgängen weiter.
 
+![AX_SWITCH](AX_SWITCH.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

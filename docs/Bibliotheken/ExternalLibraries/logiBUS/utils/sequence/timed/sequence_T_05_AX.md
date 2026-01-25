@@ -7,6 +7,8 @@
 ## Einleitung
 `sequence_T_05_AX` ist eine Variante des `sequence_T_05`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein zeitgesteuerte Sequenz mit 5 Ausgabezuständen.
 
+![sequence_T_05_AX](sequence_T_05_AX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

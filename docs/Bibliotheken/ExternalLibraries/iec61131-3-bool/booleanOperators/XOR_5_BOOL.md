@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `XOR_5_BOOL` ist ein Standardbaustein zur Berechnung der logischen Exklusiv-ODER-Verknüpfung (XOR) für fünf boolesche Eingangswerte. Er folgt dem IEC 61131-3 Standard und ist als generischer Baustein implementiert. Die Operation wird bei jedem eingehenden Ausführungsereignis durchgeführt und das Ergebnis über ein Bestätigungsereignis ausgegeben.
 
+![XOR_5_BOOL](XOR_5_BOOL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **REQ (Normal Execution Request):** Löst die Berechnung der XOR-Verknüpfung aus. Das Ereignis ist mit allen fünf Dateneingängen (`IN1` bis `IN5`) verknüpft.

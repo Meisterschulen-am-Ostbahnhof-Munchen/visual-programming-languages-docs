@@ -10,6 +10,8 @@
 ## Einleitung
 Der Aux_Val1_IW Funktionsblock ist ein Eingabeservice-Schnittstellen-Funktionsblock für Wort-Eingabedaten. Er dient als Schnittstelle zwischen der Steuerungslogik und externen Ressourcen zur Verarbeitung von 16-Bit-Wort-Eingabedaten im ISOBUS-Kontext.
 
+![Aux_Val1_IW](Aux_Val1_IW.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

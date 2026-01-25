@@ -9,6 +9,8 @@
 
 Der AX_PULSE ist ein Funktionsblock, der einen Impuls über einen AX-Adapter ausgibt.
 
+![AX_PULSE](AX_PULSE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Adapter**

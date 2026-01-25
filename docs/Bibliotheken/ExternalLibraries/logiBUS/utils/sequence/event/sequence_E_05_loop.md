@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_E_05_loop` implementiert eine zyklische Sequenz mit fünf Zuständen. Der Übergang zwischen den einzelnen Zuständen erfolgt ausschließlich über externe Ereignisse. Der Baustein ist für Anwendungen konzipiert, in denen ein Prozessschritt erst nach Abschluss eines vorherigen Schritts und dem Eintreffen eines spezifischen Freigabesignals beginnen darf. Die Sequenz kann von jedem Zustand aus in den initialen Startzustand zurückgesetzt werden.
 
+![sequence_E_05_loop](sequence_E_05_loop.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   `START_S1`: Wechselt vom Startzustand (`START`) in den ersten aktiven Zustand (`State_01`).

@@ -11,6 +11,8 @@
 Der **I_FPTO** ist ein standardkonformer Funktionsbaustein zur Steuerung und Überwachung der Front Power Take-Off (FPTO)-Ausgangswelle, entwickelt unter EPL-2.0 Lizenz.
 Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65092) für die Messung und Steuerung von FPTO-Parametern.
 
+![I_FPTO](I_FPTO.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

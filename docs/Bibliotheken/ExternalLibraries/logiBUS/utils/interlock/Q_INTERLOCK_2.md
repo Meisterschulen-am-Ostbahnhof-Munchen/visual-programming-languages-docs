@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `Q_INTERLOCK_2` ist ein ereignisgesteuerter, bistabiler Speicher mit Toggle-Funktionalität und dualer Verriegelung. Er dient der Steuerung zweier gegenseitig ausschließender Ausgänge (`OUT1` und `OUT2`). Der Baustein kann sowohl über direkte Setz-Ereignisse als auch über Takt-Ereignisse (für eine Toggle-Funktion) angesteuert werden und stellt sicher, dass immer nur einer der beiden Ausgänge aktiv sein kann. Ein gemeinsames Reset-Ereignis setzt beide Ausgänge zurück.
 
+![Q_INTERLOCK_2](Q_INTERLOCK_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

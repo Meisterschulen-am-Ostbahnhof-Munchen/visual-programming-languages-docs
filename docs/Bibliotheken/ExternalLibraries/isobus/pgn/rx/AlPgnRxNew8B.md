@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AlPgnRxNew8B` dient dem Empfang von Daten über ein CAN-Netzwerk nach dem ISOBUS-Standard (ISO 11783). Sein Hauptzweck ist die Installation und Verwaltung von Parameter Group Numbers (PGNs) für den Empfang von Nachrichten sowie die Bereitstellung empfangener Daten an die Anwendung. Er ist Teil einer spezialisierten Bibliothek für ISOBUS-Kommunikation.
 
+![AlPgnRxNew8B](AlPgnRxNew8B.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

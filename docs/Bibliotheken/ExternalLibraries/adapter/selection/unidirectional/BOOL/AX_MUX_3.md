@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_MUX_3 ist ein generischer Multiplexer-Funktionsblock, der drei Eingangssignale auf einen Ausgang umschalten kann. Der Baustein ermöglicht die Auswahl eines von drei Eingangssignalen basierend auf einem Indexwert und leitet das entsprechende Signal weiter.
 
+![AX_MUX_3](AX_MUX_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -11,6 +11,8 @@
 
 Der AX_TP ist ein standardisierter Timer-Funktionsblock vom Typ "Pulse" (Impuls), der in 4diac-IDE Anwendungen verwendet wird. Dieser Baustein erzeugt einen zeitgesteuerten Impulsausgang basierend auf einem konfigurierbaren Zeitintervall.
 
+![AX_TP](AX_TP.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

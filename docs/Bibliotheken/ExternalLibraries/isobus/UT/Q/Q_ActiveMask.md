@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung aktiver Masken in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.34) Spezifikation für landwirtschaftliche Steuersysteme.
 
+![Q_ActiveMask](Q_ActiveMask.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

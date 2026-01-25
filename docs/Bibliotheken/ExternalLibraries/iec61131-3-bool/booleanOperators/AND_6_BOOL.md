@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AND_6_BOOL` ist ein Standardbaustein zur Berechnung der logischen UND-Verknüpfung. Er führt eine bitweise UND-Operation über sechs separate boolesche Eingänge durch. Der Block gehört zur Kategorie der Standard-Booleschen Funktionen und ist für den Einsatz in Steuerungsanwendungen nach IEC 61131-3 konzipiert.
 
+![AND_6_BOOL](AND_6_BOOL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

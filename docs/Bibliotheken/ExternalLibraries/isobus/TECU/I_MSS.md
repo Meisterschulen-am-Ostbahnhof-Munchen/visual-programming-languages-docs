@@ -11,6 +11,8 @@
 Der **I_MSS** (Machine Selected Speed) ist ein standardkonformer Funktionsbaustein zur Steuerung und Überwachung der maschinengewählten Geschwindigkeit, entwickelt unter EPL-2.0 Lizenz.
 Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für präzise Geschwindigkeitssteuerung in landwirtschaftlichen und baulichen Maschinen.
 
+![I_MSS](I_MSS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_SPLIT_8 Funktionsblock ist ein generischer Baustein, der einen einzelnen AX-Adapter auf acht separate AX-Ausgänge aufteilt. Er dient zur Verteilung von Adapter-Signalen in komplexen Steuerungsarchitekturen.
 
+![AX_SPLIT_8](AX_SPLIT_8.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

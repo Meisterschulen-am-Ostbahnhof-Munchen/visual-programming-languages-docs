@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock logiBUS_LED_strip_QX ist ein Ausgabeservice-Interface-Funktionsblock für boolesche Ausgabedaten, der speziell für die Ansteuerung von LED-Streifen entwickelt wurde. Er bietet umfangreiche Konfigurationsmöglichkeiten für verschiedene LED-Parameter wie Farbe, Frequenz und Ausgangsnummer.
 
+![logiBUS_LED_strip_QX](logiBUS_LED_strip_QX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

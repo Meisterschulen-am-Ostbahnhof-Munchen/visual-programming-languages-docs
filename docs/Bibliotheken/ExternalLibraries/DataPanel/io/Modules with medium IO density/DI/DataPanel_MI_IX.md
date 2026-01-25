@@ -9,6 +9,8 @@
 ## Einleitung
 Der DataPanel_MI_IX ist ein Dienstschnittstellen-Funktionsblock für boolesche Eingabedaten, der speziell für die Kommunikation mit Digital-Eingängen in Automatisierungssystemen entwickelt wurde. Dieser Baustein ermöglicht die Initialisierung und Abfrage von digitalen Eingangssignalen über standardisierte Service-Schnittstellen.
 
+![DataPanel_MI_IX](DataPanel_MI_IX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

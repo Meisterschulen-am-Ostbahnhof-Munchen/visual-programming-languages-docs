@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `SchieberControl` ist ein Basis-Funktionsblock (Basic FB) gemäß IEC 61499 zur Steuerung eines Schieber-Antriebs (z. B. pneumatisch). Er realisiert eine vollständige Zustandsmaschine (ECC), die die Bewegung (Öffnen/Schließen), Haltezustände und Fehlerzustände eines Schiebers verwaltet. Der Baustein bietet eine umfassende Schnittstelle zur Parametrierung, zur Bedienung über Taster (Button), Softkeys und Hilfssteuerungen (Auxiliary) sowie zur Ausgabe von Steuersignalen für die Aktorik.
 
+![SchieberControl](SchieberControl.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

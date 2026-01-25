@@ -6,6 +6,8 @@
 ## Einleitung
 Der ADI_DINT_TO_DI Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines DINT-Werts in das ADI-Adapterformat dient.
 
+![ADI_DINT_TO_DI](ADI_DINT_TO_DI.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

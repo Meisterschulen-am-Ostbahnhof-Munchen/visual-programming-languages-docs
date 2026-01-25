@@ -1,3 +1,5 @@
+![INTEGRATE](INTEGRATE.svg)
+
 # INTEGRATE
 
 ```{index} single: INTEGRATE

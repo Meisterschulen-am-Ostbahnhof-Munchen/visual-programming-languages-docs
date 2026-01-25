@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_SR Funktionsblock ist ein ereignisgesteuertes bistabiles Element (Flip-Flop), das als Set-Reset-Speicher fungiert. Er ermöglicht das Setzen und Rücksetzen eines logischen Zustands und stellt diesen über eine Adapterschnittstelle zur Verfügung.
 
+![AX_SR](AX_SR.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

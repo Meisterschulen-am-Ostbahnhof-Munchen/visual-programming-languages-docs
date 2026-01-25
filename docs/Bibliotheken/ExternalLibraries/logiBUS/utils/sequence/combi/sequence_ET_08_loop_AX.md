@@ -7,6 +7,8 @@
 ## Einleitung
 `sequence_ET_08_loop_AX` ist eine Variante des `sequence_ET_08_loop`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine zyklische Sequenz mit 8 Ausgabezuständen.
 
+![sequence_ET_08_loop_AX](sequence_ET_08_loop_AX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

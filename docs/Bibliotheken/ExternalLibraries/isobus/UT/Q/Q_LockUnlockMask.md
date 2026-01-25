@@ -9,6 +9,8 @@
 ## Einleitung
 Der **Q_LockUnlockMask** ist ein standardkonformer Funktionsbaustein zur Steuerung des Sperrzustands von Masken in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.46) Spezifikation für VT-Systeme ab Version 4.
 
+![Q_LockUnlockMask](Q_LockUnlockMask.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

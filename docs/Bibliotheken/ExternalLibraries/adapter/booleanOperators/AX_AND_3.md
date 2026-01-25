@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_AND_3 ist ein generischer Funktionsblock zur Berechnung einer logischen UND-Verknüpfung mit drei Eingängen. Der Baustein führt eine boolesche AND-Operation auf drei unabhängigen Eingangssignalen durch und gibt das Ergebnis über einen Adapter-Ausgang aus.
 
+![AX_AND_3](AX_AND_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

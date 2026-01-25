@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_DEMUX_5 ist ein generischer Demultiplexer-Funktionsblock, der eingehende AX-Signale auf einen von fünf Ausgängen verteilt. Der Baustein dient zur gezielten Weiterleitung von Datenströmen basierend auf einem Indexwert.
 
+![AX_DEMUX_5](AX_DEMUX_5.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

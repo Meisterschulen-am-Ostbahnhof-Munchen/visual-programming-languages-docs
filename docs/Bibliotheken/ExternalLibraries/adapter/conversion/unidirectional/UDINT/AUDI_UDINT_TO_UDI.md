@@ -6,6 +6,8 @@
 ## Einleitung
 Der AUDI_UDINT_TO_UDI Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines UDINT-Werts in das AUDI-Adapterformat dient.
 
+![AUDI_UDINT_TO_UDI](AUDI_UDINT_TO_UDI.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

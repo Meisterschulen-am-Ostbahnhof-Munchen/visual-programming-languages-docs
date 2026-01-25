@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock `logiBUS_2_CAN_IX` ist ein Service-Interface-Funktionsblock für boolesche Eingangsdaten, der speziell für die Integration von logiBUS-Systemen mit CAN-Bus-Kommunikation entwickelt wurde. Er dient als Eingabeschnittstelle für digitale Signale und ermöglicht die Kommunikation zwischen dem Steuerungssystem und angeschlossenen CAN-fähigen Geräten.
 
+![logiBUS_2_CAN_IX](logiBUS_2_CAN_IX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

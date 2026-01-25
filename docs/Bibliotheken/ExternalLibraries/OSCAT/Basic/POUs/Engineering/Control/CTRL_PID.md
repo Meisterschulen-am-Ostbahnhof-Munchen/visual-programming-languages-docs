@@ -1,3 +1,5 @@
+![CTRL_PID](CTRL_PID.svg)
+
 # CTRL_PID
 
 ```{index} single: CTRL_PID

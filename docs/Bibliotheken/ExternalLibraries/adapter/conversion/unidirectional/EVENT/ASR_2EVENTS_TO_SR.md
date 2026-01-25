@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock ASR_2EVENTS_TO_SR ist ein Composite-Funktionsblock, der zwei separate Ereignisse in ein ASR-Signal (Set-Reset) umwandelt. Er dient als Brücke zwischen ereignisbasierten Steuerungssignalen und dem ASR-Adapterformat.
 
+![ASR_2EVENTS_TO_SR](ASR_2EVENTS_TO_SR.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

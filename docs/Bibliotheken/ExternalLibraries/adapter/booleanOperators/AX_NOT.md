@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_NOT Funktionsblock ist ein standardisierter boolescher NOT-Operator, der gemäß der Norm IEC 61131-3 implementiert wurde. Dieser Baustein führt eine logische Negation (NOT-Operation) auf den Eingangswerten durch und gibt das invertierte Ergebnis aus.
 
+![AX_NOT](AX_NOT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

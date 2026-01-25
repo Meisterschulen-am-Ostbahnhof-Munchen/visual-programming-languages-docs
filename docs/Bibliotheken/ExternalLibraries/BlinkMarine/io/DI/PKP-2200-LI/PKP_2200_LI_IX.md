@@ -10,6 +10,8 @@
 ## Einleitung
 Der PKP_2200_LI_IX ist ein Service-Interface-Funktionsblock für boolesche Eingangsdaten. Dieser Baustein dient als Schnittstelle für digitale Eingänge und ermöglicht die Kommunikation mit entsprechenden Hardware-Ressourcen.
 
+![PKP_2200_LI_IX](PKP_2200_LI_IX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

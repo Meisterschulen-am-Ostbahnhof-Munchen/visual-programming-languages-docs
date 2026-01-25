@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_ET_04` ist ein Sequenzer mit vier Ausgabezuständen. Er ermöglicht die Steuerung einer zyklischen Abfolge von vier Schritten (State_01 bis State_04), wobei der Übergang zwischen den Zuständen entweder durch ein externes Ereignis oder nach Ablauf einer einstellbaren Zeit erfolgen kann. Der Baustein ist für Anwendungen konzipiert, bei denen Prozessschritte sequenziell und mit zeitlicher oder ereignisgesteuerter Flexibilität ausgeführt werden müssen.
 
+![sequence_ET_04](sequence_ET_04.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

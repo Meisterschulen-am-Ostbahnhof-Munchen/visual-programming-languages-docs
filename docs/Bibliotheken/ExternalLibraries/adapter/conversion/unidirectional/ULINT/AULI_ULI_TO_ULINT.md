@@ -6,6 +6,8 @@
 ## Einleitung
 Der AULI_ULI_TO_ULINT Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung des AULI-Adapterformats in einen ULINT-Wert dient.
 
+![AULI_ULI_TO_ULINT](AULI_ULI_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

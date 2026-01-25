@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_StringValue** ist ein standardkonformer Funktionsbaustein zur dynamischen Textaktualisierung in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.24) Spezifikation für VT-Textobjekte.
 
+![Q_StringValue](Q_StringValue.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

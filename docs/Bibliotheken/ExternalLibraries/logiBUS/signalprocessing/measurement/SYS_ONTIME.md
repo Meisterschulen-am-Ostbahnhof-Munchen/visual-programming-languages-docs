@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `SYS_ONTIME` ist ein Service Interface Function Block (SIFB). Seine Hauptaufgabe ist es, die Betriebszeit (Ontime) der Ressource, in der er ausgeführt wird, auszulesen und bereitzustellen. Er dient als standardisierte Schnittstelle zwischen der Anwendungslogik und den systemnahen Diensten der Laufzeitumgebung.
 
+![SYS_ONTIME](SYS_ONTIME.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

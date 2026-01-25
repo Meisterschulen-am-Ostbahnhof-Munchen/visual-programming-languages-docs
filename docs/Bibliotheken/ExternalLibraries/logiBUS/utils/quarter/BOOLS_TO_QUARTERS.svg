@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1056" height="587" viewBox="-548 -20 1056 587">
+<defs>
+</defs>
+<rect x="3" y="3" width="210" height="537" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H210 V66 H204 V106 H210 V537 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
+<path d="M0,30 L210,30" stroke="#606060" stroke-width="1" />
+<text x="105.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">BOOLS_TO_QUARTERS</text>
+<text x="105.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Normal Execution Request</text>
+<path d="M-5,118 L-5,128 L0,123 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_00</text>
+<text x="-23" y="126" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_01</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_02</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_03</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_04</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_05</text>
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_06</text>
+<text x="-23" y="282" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_07</text>
+<text x="-23" y="308" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="308" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,326 L-5,336 L0,331 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_08</text>
+<text x="-23" y="334" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="334" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,352 L-5,362 L0,357 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="361" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_09</text>
+<text x="-23" y="360" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="360" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,378 L-5,388 L0,383 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="387" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_10</text>
+<text x="-23" y="386" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="386" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,404 L-5,414 L0,409 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="413" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_11</text>
+<text x="-23" y="412" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="412" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,430 L-5,440 L0,435 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="439" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_12</text>
+<text x="-23" y="438" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="438" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,456 L-5,466 L0,461 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="465" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_13</text>
+<text x="-23" y="464" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="464" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,482 L-5,492 L0,487 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="491" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_14</text>
+<text x="-23" y="490" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="490" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M-5,508 L-5,518 L0,513 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="517" font-size="12" text-anchor="start" font-family="Consolas, monospace">I_15</text>
+<text x="-23" y="516" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="516" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">BOOL Input</text>
+<path d="M210,37 L210,47 L215,42 Z" fill="#5cb85c" stroke="none" />
+<text x="198" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="233" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="303" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Execution Confirmation</text>
+<path d="M210,118 L210,128 L215,123 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_00</text>
+<text x="233" y="126" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,144 L210,154 L215,149 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_01</text>
+<text x="233" y="152" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,170 L210,180 L215,175 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_02</text>
+<text x="233" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,196 L210,206 L215,201 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_03</text>
+<text x="233" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,222 L210,232 L215,227 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_04</text>
+<text x="233" y="230" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,248 L210,258 L215,253 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_05</text>
+<text x="233" y="256" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,274 L210,284 L215,279 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_06</text>
+<text x="233" y="282" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,300 L210,310 L215,305 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_07</text>
+<text x="233" y="308" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,326 L210,336 L215,331 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_08</text>
+<text x="233" y="334" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,352 L210,362 L215,357 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_09</text>
+<text x="233" y="360" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,378 L210,388 L215,383 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_10</text>
+<text x="233" y="386" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,404 L210,414 L215,409 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_11</text>
+<text x="233" y="412" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,430 L210,440 L215,435 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_12</text>
+<text x="233" y="438" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,456 L210,466 L215,461 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_13</text>
+<text x="233" y="464" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,482 L210,492 L215,487 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="491" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_14</text>
+<text x="233" y="490" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M210,508 L210,518 L215,513 Z" fill="#0066cc" stroke="none" />
+<text x="198" y="517" font-size="12" text-anchor="end" font-family="Consolas, monospace">QB_15</text>
+<text x="233" y="516" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="303" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">2bit (quarter Byte) Output with 4 States (only 2 used)</text>
+<path d="M-12,42 L-12,513" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,123 L-5,123" stroke="#404040" />
+<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,149 L-5,149" stroke="#404040" />
+<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,201 L-5,201" stroke="#404040" />
+<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,227 L-5,227" stroke="#404040" />
+<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,253 L-5,253" stroke="#404040" />
+<rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,279 L-5,279" stroke="#404040" />
+<rect x="-14" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,305 L-5,305" stroke="#404040" />
+<rect x="-14" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,331 L-5,331" stroke="#404040" />
+<rect x="-14" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,357 L-5,357" stroke="#404040" />
+<rect x="-14" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,383 L-5,383" stroke="#404040" />
+<rect x="-14" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,409 L-5,409" stroke="#404040" />
+<rect x="-14" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,435 L-5,435" stroke="#404040" />
+<rect x="-14" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,461 L-5,461" stroke="#404040" />
+<rect x="-14" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,487 L-5,487" stroke="#404040" />
+<rect x="-14" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,513 L-5,513" stroke="#404040" />
+<rect x="-14" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,42 L222,513" stroke="#404040" stroke-width="1" />
+<path d="M210,42 L222,42" stroke="#404040" />
+<rect x="220" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,123 L215,123" stroke="#404040" />
+<rect x="220" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,149 L215,149" stroke="#404040" />
+<rect x="220" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,175 L215,175" stroke="#404040" />
+<rect x="220" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,201 L215,201" stroke="#404040" />
+<rect x="220" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,227 L215,227" stroke="#404040" />
+<rect x="220" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,253 L215,253" stroke="#404040" />
+<rect x="220" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,279 L215,279" stroke="#404040" />
+<rect x="220" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,305 L215,305" stroke="#404040" />
+<rect x="220" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,331 L215,331" stroke="#404040" />
+<rect x="220" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,357 L215,357" stroke="#404040" />
+<rect x="220" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,383 L215,383" stroke="#404040" />
+<rect x="220" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,409 L215,409" stroke="#404040" />
+<rect x="220" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,435 L215,435" stroke="#404040" />
+<rect x="220" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,461 L215,461" stroke="#404040" />
+<rect x="220" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,487 L215,487" stroke="#404040" />
+<rect x="220" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M222,513 L215,513" stroke="#404040" />
+<rect x="220" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

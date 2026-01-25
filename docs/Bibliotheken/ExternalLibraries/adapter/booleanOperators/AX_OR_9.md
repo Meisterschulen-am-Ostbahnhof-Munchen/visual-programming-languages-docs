@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_OR_9 ist ein generischer Funktionsblock zur Berechnung der booleschen ODER-Verknüpfung mit neun Eingängen. Der Baustein dient zur logischen Verarbeitung von Signalen in Automatisierungssystemen und gibt das Ergebnis der ODER-Operation aller Eingangssignale aus.
 
+![AX_OR_9](AX_OR_9.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

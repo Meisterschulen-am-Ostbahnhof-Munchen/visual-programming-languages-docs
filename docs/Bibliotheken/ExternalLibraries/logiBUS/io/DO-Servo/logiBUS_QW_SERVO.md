@@ -10,6 +10,8 @@
 ## Einleitung
 Der logiBUS_QW_SERVO ist ein Ausgabeservice-Schnittstellen-Funktionsblock für Wort-Ausgabedaten, der speziell für die Ansteuerung von logiBUS-Servoausgängen entwickelt wurde. Der Baustein ermöglicht die Initialisierung und Steuerung von digitalen Ausgängen über eine standardisierte Schnittstelle.
 
+![logiBUS_QW_SERVO](logiBUS_QW_SERVO.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

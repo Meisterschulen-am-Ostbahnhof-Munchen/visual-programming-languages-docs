@@ -11,6 +11,8 @@
 Der **I_RHS** (Rear Hitch Status) ist ein standardkonformer Funktionsbaustein zur Überwachung der Heckkupplungsparameter, entwickelt unter EPL-2.0 Lizenz.
 Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die präzise Erfassung von Position, Kraft und Status der Heckkupplung in Landmaschinen.
 
+![I_RHS](I_RHS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

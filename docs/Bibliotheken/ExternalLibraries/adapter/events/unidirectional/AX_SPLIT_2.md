@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_SPLIT_2 Funktionsblock dient als generischer Baustein zur Verteilung eines AX-Signals auf zwei separate Ausgänge. Der Block ermöglicht die Aufteilung eines eingehenden AX-Signals auf zwei unabhängige Ausgabekanäle.
 
+![AX_SPLIT_2](AX_SPLIT_2.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Keine direkten Ereignis-Eingänge vorhanden

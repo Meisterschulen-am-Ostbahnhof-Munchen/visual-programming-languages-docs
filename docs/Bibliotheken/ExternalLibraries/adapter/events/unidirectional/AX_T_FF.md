@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_T_FF (Toggle Flip-Flop) ist ein grundlegender Speicherbaustein in 4diac, der als Toggle-Flipflop fungiert. Bei jedem Taktereignis wechselt der Ausgabewert zwischen den beiden möglichen Zuständen. Der Baustein implementiert ein einfaches Schaltverhalten, bei dem der Ausgangswert bei jedem Taktimpuls umgeschaltet wird.
 
+![AX_T_FF](AX_T_FF.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

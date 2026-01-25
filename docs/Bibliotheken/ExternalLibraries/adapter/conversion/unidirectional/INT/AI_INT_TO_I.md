@@ -6,6 +6,8 @@
 ## Einleitung
 Der AI_INT_TO_I Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines INT-Werts in das AI-Adapterformat dient.
 
+![AI_INT_TO_I](AI_INT_TO_I.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

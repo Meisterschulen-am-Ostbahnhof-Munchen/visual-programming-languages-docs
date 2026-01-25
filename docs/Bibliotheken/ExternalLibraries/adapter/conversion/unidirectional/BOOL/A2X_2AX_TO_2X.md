@@ -9,6 +9,8 @@
 ## Einleitung
 Der A2X_2AX_TO_2X ist ein Composite-Funktionsblock, der zur Konvertierung von zwei AX-Signalen in ein A2X-Signal dient. Dieser Baustein ermöglicht die Zusammenführung von zwei unidirektionalen AX-Adapter-Signalen in einen einzigen A2X-Adapter-Ausgang.
 
+![A2X_2AX_TO_2X](A2X_2AX_TO_2X.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1092" height="457" viewBox="-548 -20 1092 457">
+<defs>
+</defs>
+<rect x="3" y="3" width="230" height="407" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H230 V118 H224 V158 H230 V407 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
+<path d="M0,30 L230,30" stroke="#606060" stroke-width="1" />
+<text x="115.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">I_COGSOGRapidUpdate</text>
+<text x="115.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M230,37 L230,47 L235,42 Z" fill="#5cb85c" stroke="none" />
+<text x="218" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="269" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="339" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M230,63 L230,73 L235,68 Z" fill="#5cb85c" stroke="none" />
+<text x="218" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="269" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="339" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
+<path d="M230,89 L230,99 L235,94 Z" fill="#5cb85c" stroke="none" />
+<text x="218" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
+<text x="269" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M230,170 L230,180 L235,175 Z" fill="#0066cc" stroke="none" />
+<text x="218" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="269" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="339" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M230,196 L230,206 L235,201 Z" fill="#0066cc" stroke="none" />
+<text x="218" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="269" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M230,222 L230,232 L235,227 Z" fill="#0066cc" stroke="none" />
+<text x="218" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q_timeout</text>
+<text x="269" y="230" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M230,248 L230,258 L235,253 Z" fill="#0066cc" stroke="none" />
+<text x="218" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_timeout</text>
+<text x="269" y="256" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M230,274 L230,284 L235,279 Z" fill="#0066cc" stroke="none" />
+<text x="218" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_data</text>
+<text x="269" y="282" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M230,300 L230,310 L235,305 Z" fill="#0066cc" stroke="none" />
+<text x="218" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">SID</text>
+<text x="269" y="308" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="339" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Sequence ID identifies the sequence this data is associated with so that the data can be synchronized with other vessel data for this same sequence being sent in another PGN.</text>
+<path d="M230,326 L230,336 L235,331 Z" fill="#0066cc" stroke="none" />
+<text x="218" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">COGReference</text>
+<text x="269" y="334" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="339" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">COG Reference--this field is used to indicate the direction reference of the course over ground. True North reference = 0.</text>
+<path d="M230,352 L230,362 L235,357 Z" fill="#0066cc" stroke="none" />
+<text x="218" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">CourseOverGround</text>
+<text x="269" y="360" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="339" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Course Over Ground--this field is used to indicate the course over ground (COG) in resolution of 1x10-4 radians.</text>
+<path d="M230,378 L230,388 L235,383 Z" fill="#0066cc" stroke="none" />
+<text x="218" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">SpeedOverGround</text>
+<text x="269" y="386" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="339" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Speed Over Ground--this field is used to indicate the speed over ground (SOG) in resolution of 1x10-2 meters/second.</text>
+<path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M242,42 L242,201" stroke="#404040" stroke-width="1" />
+<path d="M230,42 L242,42" stroke="#404040" />
+<rect x="240" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M242,175 L235,175" stroke="#404040" />
+<rect x="240" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M242,201 L235,201" stroke="#404040" />
+<rect x="240" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,68 L250,383" stroke="#404040" stroke-width="1" />
+<path d="M230,68 L250,68" stroke="#404040" />
+<rect x="248" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,175 L235,175" stroke="#404040" />
+<rect x="248" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,279 L235,279" stroke="#404040" />
+<rect x="248" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,305 L235,305" stroke="#404040" />
+<rect x="248" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,331 L235,331" stroke="#404040" />
+<rect x="248" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,201 L235,201" stroke="#404040" />
+<rect x="248" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,227 L235,227" stroke="#404040" />
+<rect x="248" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,357 L235,357" stroke="#404040" />
+<rect x="248" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,383 L235,383" stroke="#404040" />
+<rect x="248" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M258,94 L258,253" stroke="#404040" stroke-width="1" />
+<path d="M230,94 L258,94" stroke="#404040" />
+<rect x="256" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M258,253 L235,253" stroke="#404040" />
+<rect x="256" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M258,201 L235,201" stroke="#404040" />
+<rect x="256" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M258,227 L235,227" stroke="#404040" />
+<rect x="256" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

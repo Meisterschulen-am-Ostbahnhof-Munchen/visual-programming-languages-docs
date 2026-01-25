@@ -1,3 +1,5 @@
+![FT_PIWL](FT_PIWL.svg)
+
 # FT_PIWL
 
 ```{index} single: FT_PIWL

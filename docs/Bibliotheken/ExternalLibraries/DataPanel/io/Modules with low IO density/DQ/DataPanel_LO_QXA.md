@@ -10,6 +10,8 @@
 ## Einleitung
 Der DataPanel_LO_QXA ist ein zusammengesetzter Funktionsblock für die Ausgabe von booleschen Daten in Automatisierungssystemen. Er dient als Schnittstelle für digitale Ausgabefunktionen und ermöglicht die Steuerung von Ausgängen über definierte Service-Parameter.
 
+![DataPanel_LO_QXA](DataPanel_LO_QXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

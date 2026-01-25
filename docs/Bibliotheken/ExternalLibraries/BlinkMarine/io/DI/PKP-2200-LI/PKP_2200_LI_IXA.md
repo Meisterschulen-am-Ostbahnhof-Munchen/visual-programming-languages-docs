@@ -9,6 +9,8 @@
 ## Einleitung
 Der PKP_2200_LI_IXA ist ein zusammengesetzter Funktionsblock zur Verarbeitung von booleschen Eingangsdaten. Er dient als Schnittstelle für digitale Eingänge und bietet standardisierte Initialisierungs- und Abfragefunktionen für Eingabesignale.
 
+![PKP_2200_LI_IXA](PKP_2200_LI_IXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

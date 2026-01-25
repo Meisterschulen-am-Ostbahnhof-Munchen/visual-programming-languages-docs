@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_D_FF ist ein Daten-Latch-Flipflop, das als Basisbaustein in der digitalen Schaltungstechnik dient. Es handelt sich um ein D-Flipflop, das den anliegenden Datenwert speichert und bei bestimmten Ereignissen ausgibt.
 
+![AX_D_FF](AX_D_FF.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

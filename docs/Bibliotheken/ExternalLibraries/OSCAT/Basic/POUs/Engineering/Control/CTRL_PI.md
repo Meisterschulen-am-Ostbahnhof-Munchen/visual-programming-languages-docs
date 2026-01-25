@@ -1,3 +1,5 @@
+![CTRL_PI](CTRL_PI.svg)
+
 # CTRL_PI
 
 ```{index} single: CTRL_PI

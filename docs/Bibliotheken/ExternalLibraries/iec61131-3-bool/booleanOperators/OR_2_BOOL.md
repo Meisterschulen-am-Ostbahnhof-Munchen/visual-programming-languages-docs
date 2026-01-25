@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `OR_2_BOOL` führt eine logische ODER-Verknüpfung (Disjunktion) auf zwei boolesche Eingangswerte aus. Es handelt sich um einen generischen Baustein, der gemäß der IEC 61131-3 Norm für Standard-Boolesche Funktionen klassifiziert ist. Der Block wartet auf eine Ausführungsanforderung, berechnet das Ergebnis und signalisiert dessen Verfügbarkeit.
 
+![OR_2_BOOL](OR_2_BOOL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **REQ** (Normal Execution Request): Dieses Ereignis löst die Ausführung des Funktionsblocks aus. Bei seinem Eintreffen werden die an den Daten-Eingängen `IN1` und `IN2` anliegenden Werte gelesen und die ODER-Operation durchgeführt.

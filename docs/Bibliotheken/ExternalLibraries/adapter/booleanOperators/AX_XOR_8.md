@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_XOR_8 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen XOR-Verknüpfung mit 8 Eingängen. Er ermöglicht die Verarbeitung von logischen Signalen nach dem Exklusiv-ODER-Prinzip und ist für den Einsatz in Steuerungsanwendungen konzipiert.
 
+![AX_XOR_8](AX_XOR_8.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Keine Ereignis-Eingänge vorhanden

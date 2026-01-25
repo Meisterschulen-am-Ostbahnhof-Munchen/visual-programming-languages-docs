@@ -10,6 +10,8 @@
 ## Einleitung
 Der logiBUS_IE2 ist ein Eingabeservice-Schnittstellen-Funktionsblock für Ereigniseingabedaten. Er dient als Interface für die Verarbeitung von Eingabeereignissen in logiBUS-Systemen und ermöglicht die Verarbeitung verschiedener Eingabeereignistypen wie Tastendrücke, Klicks und zeitbasierte Ereignisse.
 
+![logiBUS_IE2](logiBUS_IE2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

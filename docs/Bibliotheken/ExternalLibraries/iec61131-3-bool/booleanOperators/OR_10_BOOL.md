@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `OR_10_BOOL` ist ein generischer Baustein zur Berechnung der logischen ODER-Verknüpfung. Er führt die ODER-Operation über bis zu zehn separate boolesche Eingangswerte aus und gibt das Ergebnis auf einem einzigen Ausgang aus. Dieser Baustein ist gemäß der Norm IEC 61131-3 klassifiziert und dient als Standardfunktion für bitweise Operationen in Steuerungsanwendungen.
 
+![OR_10_BOOL](OR_10_BOOL.svg)
+
 ## Schnittstellenstruktur
 Der Funktionsblock folgt dem standardmäßigen E/A- und Ereignismodell der 4diac-IDE.
 

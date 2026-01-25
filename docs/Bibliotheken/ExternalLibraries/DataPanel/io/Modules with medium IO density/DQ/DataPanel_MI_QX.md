@@ -10,6 +10,8 @@
 ## Einleitung
 Der DataPanel_MI_QX ist ein Service Interface Function Block für die Ausgabe von booleschen Daten an eine Ressource. Dieser Baustein dient als Schnittstelle zwischen der Steuerungslogik und den physischen Ausgängen eines DataPanel MI-Systems und ermöglicht die Konfiguration und Steuerung von digitalen Ausgängen.
 
+![DataPanel_MI_QX](DataPanel_MI_QX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

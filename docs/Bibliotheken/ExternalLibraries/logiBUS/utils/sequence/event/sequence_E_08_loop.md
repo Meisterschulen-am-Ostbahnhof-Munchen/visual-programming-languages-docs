@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_E_08_loop` ist ein Sequenzer mit acht Ausgangszuständen, der in einer Schleife arbeitet. Er dient zur Steuerung sequentieller Abläufe, bei denen jeder Schritt durch ein externes Ereignis ausgelöst wird. Der Baustein ist als Basic Function Block (BasicFB) nach IEC 61499 implementiert und eignet sich für Anwendungen, die eine klare, ereignisgesteuerte Zustandsmaschine erfordern.
 
+![sequence_E_08_loop](sequence_E_08_loop.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   `START_S1`: Wechselt vom Startzustand (`START`) in den Zustand `State_01`.

@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_DEMUX_2 ist ein generischer Demultiplexer-Funktionsblock, der Eingangssignale auf Basis eines Indexwerts auf verschiedene Ausgangskanäle verteilt. Der Baustein dient zur gezielten Weiterleitung von Datenströmen in verteilten Automatisierungssystemen.
 
+![AX_DEMUX_2](AX_DEMUX_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

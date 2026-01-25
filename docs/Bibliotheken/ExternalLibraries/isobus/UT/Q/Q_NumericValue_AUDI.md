@@ -6,6 +6,8 @@
 ## Einleitung
 Der `Q_NumericValue_AUDI` ist ein spezieller ISOBUS-Funktionsbaustein, der es ermöglicht, numerische Werte (`UDINT`) von einer Steuerung an ein Universal Terminal (UT) zu senden, um sie dort anzuzeigen oder zu ändern. Er nutzt `AUDI`-Adapter für die Übergabe von neuen und alten Werten, was eine moderne und typsichere Anbindung gewährleistet.
 
+![Q_NumericValue_AUDI](Q_NumericValue_AUDI.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

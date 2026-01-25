@@ -21,6 +21,12 @@ JSON_PATH = os.path.join(SCRIPT_DIR, JSON_FILE)
 PDF_PATH = os.path.join(SCRIPT_DIR, PDF_FILE)
 EXCEL_PATH = os.path.join(SCRIPT_DIR, EXCEL_FILE)
 
+# Paths for scanning exercises
+SEARCH_DIRS = [
+    os.path.join(SCRIPT_DIR, r"../docs/training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen"),
+    os.path.join(SCRIPT_DIR, r"../docs/training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen")
+]
+
 def clean_html(raw_html):
     """Remove HTML tags from a string."""
     if not raw_html:
@@ -35,6 +41,82 @@ def load_data():
         return None
     with open(JSON_PATH, 'r', encoding='utf-8') as f:
         return json.load(f)
+
+def save_data(data):
+    with open(JSON_PATH, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=3, ensure_ascii=False)
+    print(f"Saved updated JSON to {JSON_PATH}")
+
+def scan_for_all_exercises():
+    """Scans for all FB usage in exercises. Returns a dict {FB_NAME: [EX1, EX2, ...]}"""
+    # We collect all terms from the JSON to know what to look for
+    data = load_data()
+    if not data: return {}
+    
+    target_fbs = []
+    for cat in data.get('categories', []):
+        for item in cat.get('data', []):
+            term = item.get('term', '')
+            # Handle terms like "E_T_FF / Flip-Flop"
+            clean_term = term.split('/')[0].strip()
+            if clean_term and clean_term not in target_fbs:
+                target_fbs.append(clean_term)
+
+    fb_usage = {}
+    for directory in SEARCH_DIRS:
+        if not os.path.exists(directory):
+            print(f"Directory not found for scanning: {directory}")
+            continue
+
+        for filename in os.listdir(directory):
+            if filename.endswith(".SUB"):
+                filepath = os.path.join(directory, filename)
+                exercise_name = os.path.splitext(filename)[0]
+                
+                try:
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                        for fb in target_fbs:
+                            pattern = fr'Type="[^"]*([:_]){re.escape(fb)}"'
+                            pattern_exact = fr'Type="{re.escape(fb)}"'
+                            if re.search(pattern, content) or re.search(pattern_exact, content):
+                                if fb not in fb_usage:
+                                    fb_usage[fb] = []
+                                if exercise_name not in fb_usage[fb]:
+                                    fb_usage[fb].append(exercise_name)
+                except Exception as e:
+                    print(f"Error reading {filepath}: {e}")
+    return fb_usage
+
+def update_json_with_exercises():
+    print("Scanning exercises to update JSON...")
+    usage = scan_for_all_exercises()
+    data = load_data()
+    if not data: return
+
+    base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/training1/Ventilsteuerung/4diacIDE-workspace/"
+
+    for cat in data.get('categories', []):
+        for item in cat.get('data', []):
+            term = item.get('term', '')
+            clean_term = term.split('/')[0].strip()
+            
+            if clean_term in usage:
+                exercises = usage[clean_term]
+                links = []
+                for ex in sorted(exercises):
+                    # Determine subfolder based on exercise name or search dir
+                    # For simplicity, we check if it exists in test_B or test_AX
+                    subfolder = "test_B"
+                    if "_AX" in ex:
+                        subfolder = "test_AX"
+                    
+                    url = f"{base_url}{subfolder}/Uebungen_doc/{ex}.html"
+                    links.append(f'<a href="{url}" target="_blank">{ex}</a>')
+                
+                item['ex'] = ", ".join(links)
+
+    save_data(data)
 
 def generate_excel(data):
     wb = Workbook()
@@ -130,6 +212,12 @@ def generate_pdf(data):
             # Combine Type and Examples
             type_str = item.get('type', '')
             ex_str = item.get('ex', '')
+            
+            # Limit examples in PDF to prevent extreme row height
+            ex_list = ex_str.split(', ')
+            if len(ex_list) > 5:
+                ex_str = ", ".join(ex_list[:5]) + " ..."
+            
             combined_ex = []
             if type_str: combined_ex.append(f"<b>Typ:</b> {type_str}")
             if ex_str: combined_ex.append(f"<b>Bsp:</b> {ex_str}")
@@ -144,7 +232,7 @@ def generate_pdf(data):
             page_width = landscape(A4)[0] - 2*cm
             col_widths = [page_width * 0.15, page_width * 0.30, page_width * 0.25, page_width * 0.30]
             
-            t = Table(table_data, colWidths=col_widths, repeatRows=1)
+            t = Table(table_data, colWidths=col_widths, repeatRows=1, splitByRow=1)
             t.setStyle(TableStyle([
                 ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#f0f0f0")),
                 ('TEXTCOLOR', (0, 0), (-1, 0), colors.black),
@@ -166,6 +254,7 @@ def generate_pdf(data):
 
 def main():
     print("Starting generation...")
+    update_json_with_exercises()
     data = load_data()
     if data:
         generate_excel(data)

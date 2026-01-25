@@ -11,6 +11,8 @@
 
 Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter industrieller Steuerungssysteme. Innerhalb dieses Standards sind Adaptertypen eine wichtige Komponente, um wiederverwendbare Schnittstellen zwischen Funktionsbausteinen zu definieren. Der **ARTimeOut**-Adapter (Adapter for Resettable Timeout) ist ein Beispiel für einen solchen Adapter, der eine Schnittstelle für einen rücksetzbaren Timeout-Service bereitstellt.
 
+![ARTimeOut](ARTimeOut.svg)
+
 ## Struktur des ARTimeOut-Adapters
 
 Der ARTimeOut-Adapter ist als **AdapterType** in der IEC 61499 spezifiziert und definiert eine Schnittstelle für die Kommunikation zwischen einem SOCKET und einem PLUG.

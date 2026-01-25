@@ -1,8 +1,5 @@
 # TECU
 
-```{index} single: TECU
-```
-
 ```{toctree}
 I_COGSOGRapidUpdate
 I_FHS

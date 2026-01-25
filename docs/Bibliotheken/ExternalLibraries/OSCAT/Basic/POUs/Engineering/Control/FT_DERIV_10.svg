@@ -4,133 +4,133 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="150" height="745" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H150 V118 H144 V158 H150 V745 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L150,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H150 V118 H144 V158 H150 V745 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L150,30" stroke="#000000" stroke-width="1" />
 <text x="75.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">FT_DERIV_10</text>
 <text x="75.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Init Request</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
 <text x="-23" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-93" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Normal Execution Request</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">RST</text>
 <text x="-23" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-93" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset Buffer</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#DBB418" stroke="none" />
 <text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">in</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input Signal</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#18519E" stroke="none" />
 <text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">K</text>
-<text x="-23" y="204" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="-93" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Window Select: 0=1 Period, 9=10 Periods</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#DBB418" stroke="none" />
 <text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">Faktor</text>
-<text x="-23" y="230" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="-93" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Multiplication Factor (formerly K)</text>
-<path d="M-5,248 L-5,258 L0,253 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">run</text>
-<text x="-23" y="256" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="-93" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Enable calculation</text>
-<path d="M150,37 L150,47 L155,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M150,37 L150,47 L155,42 Z" fill="#63B31F" stroke="none" />
 <text x="138" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="173" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="243" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Init Confirmation</text>
-<path d="M150,63 L150,73 L155,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M150,63 L150,73 L155,68 Z" fill="#63B31F" stroke="none" />
 <text x="138" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
 <text x="173" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="243" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Execution Confirmation</text>
-<path d="M150,170 L150,180 L155,175 Z" fill="#0066cc" stroke="none" />
+<path d="M150,170 L150,180 L155,175 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">out</text>
-<text x="173" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="178" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Resulting Derivative based on K</text>
-<path d="M150,196 L150,206 L155,201 Z" fill="#0066cc" stroke="none" />
+<path d="M150,196 L150,206 L155,201 Z" fill="#9FA48A" stroke="none" />
 <text x="138" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">valid</text>
-<text x="173" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="173" y="204" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="243" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">True if buffer has enough data for K</text>
-<path d="M150,222 L150,232 L155,227 Z" fill="#0066cc" stroke="none" />
+<path d="M150,222 L150,232 L155,227 Z" fill="#18519E" stroke="none" />
 <text x="138" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">DT_0</text>
-<text x="173" y="230" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="173" y="230" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="243" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta T over 1 period</text>
-<path d="M150,248 L150,258 L155,253 Z" fill="#0066cc" stroke="none" />
+<path d="M150,248 L150,258 L155,253 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI_0</text>
-<text x="173" y="256" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="256" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta In over 1 period</text>
-<path d="M150,274 L150,284 L155,279 Z" fill="#0066cc" stroke="none" />
+<path d="M150,274 L150,284 L155,279 Z" fill="#18519E" stroke="none" />
 <text x="138" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">DT_1</text>
-<text x="173" y="282" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="173" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="243" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta T over 2 period</text>
-<path d="M150,300 L150,310 L155,305 Z" fill="#0066cc" stroke="none" />
+<path d="M150,300 L150,310 L155,305 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI_1</text>
-<text x="173" y="308" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="308" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta In over 2 period</text>
-<path d="M150,326 L150,336 L155,331 Z" fill="#0066cc" stroke="none" />
+<path d="M150,326 L150,336 L155,331 Z" fill="#18519E" stroke="none" />
 <text x="138" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">DT_2</text>
-<text x="173" y="334" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="173" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="243" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta T over 3 period</text>
-<path d="M150,352 L150,362 L155,357 Z" fill="#0066cc" stroke="none" />
+<path d="M150,352 L150,362 L155,357 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI_2</text>
-<text x="173" y="360" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="360" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta In over 3 period</text>
-<path d="M150,378 L150,388 L155,383 Z" fill="#0066cc" stroke="none" />
+<path d="M150,378 L150,388 L155,383 Z" fill="#18519E" stroke="none" />
 <text x="138" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">DT_3</text>
-<text x="173" y="386" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="173" y="386" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="243" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta T over 4 period</text>
-<path d="M150,404 L150,414 L155,409 Z" fill="#0066cc" stroke="none" />
+<path d="M150,404 L150,414 L155,409 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI_3</text>
-<text x="173" y="412" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="412" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta In over 4 period</text>
-<path d="M150,430 L150,440 L155,435 Z" fill="#0066cc" stroke="none" />
+<path d="M150,430 L150,440 L155,435 Z" fill="#18519E" stroke="none" />
 <text x="138" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">DT_4</text>
-<text x="173" y="438" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="173" y="438" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="243" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta T over 5 period</text>
-<path d="M150,456 L150,466 L155,461 Z" fill="#0066cc" stroke="none" />
+<path d="M150,456 L150,466 L155,461 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI_4</text>
-<text x="173" y="464" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="464" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta In over 5 period</text>
-<path d="M150,482 L150,492 L155,487 Z" fill="#0066cc" stroke="none" />
+<path d="M150,482 L150,492 L155,487 Z" fill="#18519E" stroke="none" />
 <text x="138" y="491" font-size="12" text-anchor="end" font-family="Consolas, monospace">DT_5</text>
-<text x="173" y="490" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="173" y="490" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="243" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta T over 6 period</text>
-<path d="M150,508 L150,518 L155,513 Z" fill="#0066cc" stroke="none" />
+<path d="M150,508 L150,518 L155,513 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="517" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI_5</text>
-<text x="173" y="516" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="516" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta In over 6 period</text>
-<path d="M150,534 L150,544 L155,539 Z" fill="#0066cc" stroke="none" />
+<path d="M150,534 L150,544 L155,539 Z" fill="#18519E" stroke="none" />
 <text x="138" y="543" font-size="12" text-anchor="end" font-family="Consolas, monospace">DT_6</text>
-<text x="173" y="542" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="173" y="542" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="243" y="542" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta T over 7 period</text>
-<path d="M150,560 L150,570 L155,565 Z" fill="#0066cc" stroke="none" />
+<path d="M150,560 L150,570 L155,565 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="569" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI_6</text>
-<text x="173" y="568" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="568" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="568" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta In over 7 period</text>
-<path d="M150,586 L150,596 L155,591 Z" fill="#0066cc" stroke="none" />
+<path d="M150,586 L150,596 L155,591 Z" fill="#18519E" stroke="none" />
 <text x="138" y="595" font-size="12" text-anchor="end" font-family="Consolas, monospace">DT_7</text>
-<text x="173" y="594" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="173" y="594" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="243" y="594" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta T over 8 period</text>
-<path d="M150,612 L150,622 L155,617 Z" fill="#0066cc" stroke="none" />
+<path d="M150,612 L150,622 L155,617 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="621" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI_7</text>
-<text x="173" y="620" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="620" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="620" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta In over 8 period</text>
-<path d="M150,638 L150,648 L155,643 Z" fill="#0066cc" stroke="none" />
+<path d="M150,638 L150,648 L155,643 Z" fill="#18519E" stroke="none" />
 <text x="138" y="647" font-size="12" text-anchor="end" font-family="Consolas, monospace">DT_8</text>
-<text x="173" y="646" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="173" y="646" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="243" y="646" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta T over 9 period</text>
-<path d="M150,664 L150,674 L155,669 Z" fill="#0066cc" stroke="none" />
+<path d="M150,664 L150,674 L155,669 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="673" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI_8</text>
-<text x="173" y="672" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="672" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="672" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta In over 9 period</text>
-<path d="M150,690 L150,700 L155,695 Z" fill="#0066cc" stroke="none" />
+<path d="M150,690 L150,700 L155,695 Z" fill="#18519E" stroke="none" />
 <text x="138" y="699" font-size="12" text-anchor="end" font-family="Consolas, monospace">DT_9</text>
-<text x="173" y="698" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="173" y="698" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="243" y="698" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta T over 10 period</text>
-<path d="M150,716 L150,726 L155,721 Z" fill="#0066cc" stroke="none" />
+<path d="M150,716 L150,726 L155,721 Z" fill="#DBB418" stroke="none" />
 <text x="138" y="725" font-size="12" text-anchor="end" font-family="Consolas, monospace">DI_9</text>
-<text x="173" y="724" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="173" y="724" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="243" y="724" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Delta In over 10 period</text>
 <path d="M-12,68 L-12,253" stroke="#404040" stroke-width="1" />
 <path d="M0,68 L-12,68" stroke="#404040" />

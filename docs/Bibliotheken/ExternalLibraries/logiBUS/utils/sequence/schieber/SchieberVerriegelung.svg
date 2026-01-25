@@ -4,74 +4,74 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="247" height="355" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H247 V222 H241 V262 H247 V355 H0 V262 H6 V222 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L247,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H247 V222 H241 V262 H247 V355 H0 V262 H6 V222 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L247,30" stroke="#000000" stroke-width="1" />
 <text x="123.5" y="240.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">SchieberVerriegelung</text>
 <text x="123.5" y="254.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-71" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-141" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Initialization Request</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_Hauptschieber_Open</text>
 <text x="-71" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_Hauptschieber_Close</text>
 <text x="-71" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M-5,115 L-5,125 L0,120 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="124" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_SchieberLinks_Open</text>
 <text x="-71" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M-5,141 L-5,151 L0,146 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,141 L-5,151 L0,146 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="150" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_SchieberLinks_Close</text>
 <text x="-71" y="149" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M-5,167 L-5,177 L0,172 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,167 L-5,177 L0,172 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="176" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_SchieberRechts_Open</text>
 <text x="-71" y="175" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M-5,193 L-5,203 L0,198 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,193 L-5,203 L0,198 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="202" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_SchieberRechts_Close</text>
 <text x="-71" y="201" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M-5,274 L-5,284 L0,279 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-71" y="282" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-71" y="282" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="-141" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input event qualifier</text>
-<path d="M-5,300 L-5,310 L0,305 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">DI_LINKS_GESPERRT</text>
-<text x="-71" y="308" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<path d="M-5,326 L-5,336 L0,331 Z" fill="#0066cc" stroke="none" />
+<text x="-71" y="308" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M-5,326 L-5,336 L0,331 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">DI_RECHTS_GESPERRT</text>
-<text x="-71" y="334" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<path d="M247,37 L247,47 L252,42 Z" fill="#5cb85c" stroke="none" />
+<text x="-71" y="334" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M247,37 L247,47 L252,42 Z" fill="#63B31F" stroke="none" />
 <text x="235" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="318" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="388" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
-<path d="M247,63 L247,73 L252,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M247,63 L247,73 L252,68 Z" fill="#63B31F" stroke="none" />
 <text x="235" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_Hauptschieber_Open</text>
 <text x="318" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M247,89 L247,99 L252,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M247,89 L247,99 L252,94 Z" fill="#63B31F" stroke="none" />
 <text x="235" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_Hauptschieber_Close</text>
 <text x="318" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M247,115 L247,125 L252,120 Z" fill="#5cb85c" stroke="none" />
+<path d="M247,115 L247,125 L252,120 Z" fill="#63B31F" stroke="none" />
 <text x="235" y="124" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_SchieberLinks_Open</text>
 <text x="318" y="123" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M247,141 L247,151 L252,146 Z" fill="#5cb85c" stroke="none" />
+<path d="M247,141 L247,151 L252,146 Z" fill="#63B31F" stroke="none" />
 <text x="235" y="150" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_SchieberLinks_Close</text>
 <text x="318" y="149" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M247,167 L247,177 L252,172 Z" fill="#5cb85c" stroke="none" />
+<path d="M247,167 L247,177 L252,172 Z" fill="#63B31F" stroke="none" />
 <text x="235" y="176" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_SchieberRechts_Open</text>
 <text x="318" y="175" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M247,193 L247,203 L252,198 Z" fill="#5cb85c" stroke="none" />
+<path d="M247,193 L247,203 L252,198 Z" fill="#63B31F" stroke="none" />
 <text x="235" y="202" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_SchieberRechts_Close</text>
 <text x="318" y="201" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M247,274 L247,284 L252,279 Z" fill="#0066cc" stroke="none" />
+<path d="M247,274 L247,284 L252,279 Z" fill="#9FA48A" stroke="none" />
 <text x="235" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="318" y="282" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="318" y="282" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="388" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output event qualifier</text>
-<path d="M247,300 L247,310 L252,305 Z" fill="#0066cc" stroke="none" />
+<path d="M247,300 L247,310 L252,305 Z" fill="#9FA48A" stroke="none" />
 <text x="235" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_LINKS_GESPERRT</text>
-<text x="318" y="308" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<path d="M247,326 L247,336 L252,331 Z" fill="#0066cc" stroke="none" />
+<text x="318" y="308" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M247,326 L247,336 L252,331 Z" fill="#9FA48A" stroke="none" />
 <text x="235" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_RECHTS_GESPERRT</text>
-<text x="318" y="334" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="318" y="334" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <path d="M-12,42 L-12,331" stroke="#404040" stroke-width="1" />
 <path d="M0,42 L-12,42" stroke="#404040" />
 <rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />

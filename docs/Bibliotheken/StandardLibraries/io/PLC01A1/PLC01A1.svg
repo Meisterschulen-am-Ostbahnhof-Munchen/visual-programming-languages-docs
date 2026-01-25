@@ -4,85 +4,85 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="166" height="615" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H166 V92 H160 V132 H166 V615 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L166,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H166 V92 H160 V132 H166 V615 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L166,30" stroke="#000000" stroke-width="1" />
 <text x="83.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">PLC01A1</text>
 <text x="83.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="-93" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN1</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN2</text>
-<text x="-23" y="204" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN3</text>
-<text x="-23" y="230" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,248 L-5,258 L0,253 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN4</text>
-<text x="-23" y="256" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,274 L-5,284 L0,279 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN5</text>
-<text x="-23" y="282" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,300 L-5,310 L0,305 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="282" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN6</text>
-<text x="-23" y="308" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,326 L-5,336 L0,331 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="308" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,326 L-5,336 L0,331 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN7</text>
-<text x="-23" y="334" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,352 L-5,362 L0,357 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="334" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,352 L-5,362 L0,357 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="361" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN8</text>
-<text x="-23" y="360" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,378 L-5,388 L0,383 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="360" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,378 L-5,388 L0,383 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="387" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT1</text>
-<text x="-23" y="386" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,404 L-5,414 L0,409 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="386" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,404 L-5,414 L0,409 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="413" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT2</text>
-<text x="-23" y="412" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,430 L-5,440 L0,435 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="412" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,430 L-5,440 L0,435 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="439" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT3</text>
-<text x="-23" y="438" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,456 L-5,466 L0,461 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="438" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,456 L-5,466 L0,461 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="465" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT4</text>
-<text x="-23" y="464" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,482 L-5,492 L0,487 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="464" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,482 L-5,492 L0,487 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="491" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT5</text>
-<text x="-23" y="490" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,508 L-5,518 L0,513 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="490" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,508 L-5,518 L0,513 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="517" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT6</text>
-<text x="-23" y="516" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,534 L-5,544 L0,539 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="516" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,534 L-5,544 L0,539 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="543" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT7</text>
-<text x="-23" y="542" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,560 L-5,570 L0,565 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="542" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,560 L-5,570 L0,565 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="569" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT8</text>
-<text x="-23" y="568" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
-<path d="M-5,586 L-5,596 L0,591 Z" fill="#0066cc" stroke="none" />
+<text x="-23" y="568" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,586 L-5,596 L0,591 Z" fill="#18519E" stroke="none" />
 <text x="12" y="595" font-size="12" text-anchor="start" font-family="Consolas, monospace">UpdateInterval</text>
-<text x="-23" y="594" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-23" y="594" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="-93" y="594" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Update interval in Hz</text>
-<path d="M166,37 L166,47 L171,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M166,37 L166,47 L171,42 Z" fill="#63B31F" stroke="none" />
 <text x="154" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="197" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="267" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
-<path d="M166,63 L166,73 L171,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M166,63 L166,73 L171,68 Z" fill="#63B31F" stroke="none" />
 <text x="154" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
 <text x="197" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="267" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
-<path d="M166,144 L166,154 L171,149 Z" fill="#0066cc" stroke="none" />
+<path d="M166,144 L166,154 L171,149 Z" fill="#9FA48A" stroke="none" />
 <text x="154" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="197" y="152" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="197" y="152" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="267" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
-<path d="M166,170 L166,180 L171,175 Z" fill="#0066cc" stroke="none" />
+<path d="M166,170 L166,180 L171,175 Z" fill="#BD8663" stroke="none" />
 <text x="154" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="197" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="197" y="178" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
 <text x="267" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
 <path d="M-12,42 L-12,591" stroke="#404040" stroke-width="1" />
 <path d="M0,42 L-12,42" stroke="#404040" />

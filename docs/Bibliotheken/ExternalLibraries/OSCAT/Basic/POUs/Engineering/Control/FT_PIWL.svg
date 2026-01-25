@@ -4,57 +4,57 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="130" height="303" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H130 V118 H124 V158 H130 V303 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L130,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H130 V118 H124 V158 H130 V303 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L130,30" stroke="#000000" stroke-width="1" />
 <text x="65.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">FT_PIWL</text>
 <text x="65.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Init Request</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
 <text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Normal Execution Request</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">RST</text>
 <text x="-31" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset Integrator</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#DBB418" stroke="none" />
 <text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
-<text x="-31" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="-31" y="178" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="-101" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Process Variable / Error Input</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#DBB418" stroke="none" />
 <text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">KP</text>
-<text x="-31" y="204" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="-31" y="204" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="-101" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Proportional Gain</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#DBB418" stroke="none" />
 <text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">KI</text>
-<text x="-31" y="230" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="-31" y="230" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="-101" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Integral Gain</text>
-<path d="M-5,248 L-5,258 L0,253 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#DBB418" stroke="none" />
 <text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">LIM_L</text>
-<text x="-31" y="256" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="-31" y="256" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="-101" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Lower Limit</text>
-<path d="M-5,274 L-5,284 L0,279 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#DBB418" stroke="none" />
 <text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">LIM_H</text>
-<text x="-31" y="282" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="-31" y="282" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="-101" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Upper Limit</text>
-<path d="M130,37 L130,47 L135,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M130,37 L130,47 L135,42 Z" fill="#63B31F" stroke="none" />
 <text x="118" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="161" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="231" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Init Confirmation</text>
-<path d="M130,63 L130,73 L135,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M130,63 L130,73 L135,68 Z" fill="#63B31F" stroke="none" />
 <text x="118" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
 <text x="161" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="231" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Execution Confirmation</text>
-<path d="M130,170 L130,180 L135,175 Z" fill="#0066cc" stroke="none" />
+<path d="M130,170 L130,180 L135,175 Z" fill="#DBB418" stroke="none" />
 <text x="118" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">Y</text>
-<text x="161" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
+<text x="161" y="178" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
 <text x="231" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Controller Output</text>
-<path d="M130,196 L130,206 L135,201 Z" fill="#0066cc" stroke="none" />
+<path d="M130,196 L130,206 L135,201 Z" fill="#9FA48A" stroke="none" />
 <text x="118" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">LIM</text>
-<text x="161" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="161" y="204" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="231" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Limit Reached Flag</text>
 <path d="M-12,68 L-12,279" stroke="#404040" stroke-width="1" />
 <path d="M0,68 L-12,68" stroke="#404040" />

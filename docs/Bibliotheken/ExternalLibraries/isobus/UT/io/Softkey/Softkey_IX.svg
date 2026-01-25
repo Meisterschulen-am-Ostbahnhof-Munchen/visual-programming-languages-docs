@@ -4,53 +4,53 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="140" height="251" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H140 V118 H134 V158 H140 V251 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L140,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H140 V118 H134 V158 H140 V251 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L140,30" stroke="#000000" stroke-width="1" />
 <text x="70.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">Softkey_IX</text>
 <text x="70.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
 <text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Request</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-31" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-31" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="-101" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
-<text x="-31" y="204" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="-31" y="204" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
 <text x="-101" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Parameters</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#18519E" stroke="none" />
 <text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16ObjId</text>
-<text x="-31" y="230" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-31" y="230" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="-101" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Object ID</text>
-<path d="M140,37 L140,47 L145,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M140,37 L140,47 L145,42 Z" fill="#63B31F" stroke="none" />
 <text x="128" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="179" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="249" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
-<path d="M140,63 L140,73 L145,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M140,63 L140,73 L145,68 Z" fill="#63B31F" stroke="none" />
 <text x="128" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
 <text x="179" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="249" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
-<path d="M140,89 L140,99 L145,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M140,89 L140,99 L145,94 Z" fill="#63B31F" stroke="none" />
 <text x="128" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
 <text x="179" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="249" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
-<path d="M140,170 L140,180 L145,175 Z" fill="#0066cc" stroke="none" />
+<path d="M140,170 L140,180 L145,175 Z" fill="#9FA48A" stroke="none" />
 <text x="128" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="179" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="179" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="249" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
-<path d="M140,196 L140,206 L145,201 Z" fill="#0066cc" stroke="none" />
+<path d="M140,196 L140,206 L145,201 Z" fill="#BD8663" stroke="none" />
 <text x="128" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="179" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="179" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
 <text x="249" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
-<path d="M140,222 L140,232 L145,227 Z" fill="#0066cc" stroke="none" />
+<path d="M140,222 L140,232 L145,227 Z" fill="#9FA48A" stroke="none" />
 <text x="128" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">IN</text>
-<text x="179" y="230" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="179" y="230" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="249" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Input data from resource</text>
 <path d="M-12,42 L-12,227" stroke="#404040" stroke-width="1" />
 <path d="M0,42 L-12,42" stroke="#404040" />

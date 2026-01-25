@@ -4,52 +4,52 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="160" height="277" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H160 V144 H154 V184 H160 V277 H0 V184 H6 V144 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L160,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H160 V144 H154 V184 H160 V277 H0 V184 H6 V144 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L160,30" stroke="#000000" stroke-width="1" />
 <text x="80.0" y="162.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">E_CTUD_UDINT</text>
 <text x="80.0" y="176.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">CU</text>
 <text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Count Up</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">CD</text>
 <text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Count Down</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">R</text>
 <text x="-31" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset</text>
-<path d="M-5,115 L-5,125 L0,120 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="124" font-size="12" text-anchor="start" font-family="Consolas, monospace">LD</text>
 <text x="-31" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Load</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#18519E" stroke="none" />
 <text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">PV</text>
-<text x="-31" y="204" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="-31" y="204" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="-101" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Preset Value</text>
-<path d="M160,37 L160,47 L165,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M160,37 L160,47 L165,42 Z" fill="#63B31F" stroke="none" />
 <text x="148" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CO</text>
 <text x="199" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="269" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Count Output Event</text>
-<path d="M160,63 L160,73 L165,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M160,63 L160,73 L165,68 Z" fill="#63B31F" stroke="none" />
 <text x="148" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">RO</text>
 <text x="199" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="269" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Reset Output Event</text>
-<path d="M160,89 L160,99 L165,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M160,89 L160,99 L165,94 Z" fill="#63B31F" stroke="none" />
 <text x="148" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">LDO</text>
 <text x="199" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M160,196 L160,206 L165,201 Z" fill="#0066cc" stroke="none" />
+<path d="M160,196 L160,206 L165,201 Z" fill="#9FA48A" stroke="none" />
 <text x="148" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">QU</text>
-<text x="199" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="199" y="204" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="269" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">CV &gt;=PV</text>
-<path d="M160,222 L160,232 L165,227 Z" fill="#0066cc" stroke="none" />
+<path d="M160,222 L160,232 L165,227 Z" fill="#9FA48A" stroke="none" />
 <text x="148" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">QD</text>
-<text x="199" y="230" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="199" y="230" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="269" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">CV &lt;= 0</text>
-<path d="M160,248 L160,258 L165,253 Z" fill="#0066cc" stroke="none" />
+<path d="M160,248 L160,258 L165,253 Z" fill="#18519E" stroke="none" />
 <text x="148" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">CV</text>
-<text x="199" y="256" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="199" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="269" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Counter Value</text>
 <path d="M-12,42 L-12,201" stroke="#404040" stroke-width="1" />
 <path d="M0,42 L-12,42" stroke="#404040" />

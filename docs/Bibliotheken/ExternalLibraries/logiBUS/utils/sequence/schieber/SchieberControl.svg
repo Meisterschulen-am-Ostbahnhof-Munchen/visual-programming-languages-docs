@@ -4,113 +4,113 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="190" height="485" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H190 V196 H184 V236 H190 V485 H0 V236 H6 V196 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L190,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H190 V196 H184 V236 H190 V485 H0 V236 H6 V196 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L190,30" stroke="#000000" stroke-width="1" />
 <text x="95.0" y="214.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">SchieberControl</text>
 <text x="95.0" y="228.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-159" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Set all Values. Initialization Request. De-Init is not  fully supported. </text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">Open</text>
 <text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Open</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">Close</text>
 <text x="-31" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Close</text>
-<path d="M-5,115 L-5,125 L0,120 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="124" font-size="12" text-anchor="start" font-family="Consolas, monospace">RESET</text>
 <text x="-31" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset to unknown State</text>
-<path d="M-5,141 L-5,151 L0,146 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,141 L-5,151 L0,146 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="150" font-size="12" text-anchor="start" font-family="Consolas, monospace">INPUT_DATA</text>
 <text x="-31" y="149" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M-5,248 L-5,258 L0,253 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-31" y="256" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-31" y="256" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="-101" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input event qualifier</text>
-<path d="M-5,274 L-5,284 L0,279 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#000000" stroke="none" />
 <text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">BT</text>
-<text x="-31" y="282" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">SchieberStruct</text>
+<text x="-31" y="282" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">SchieberStruct</text>
 <text x="-101" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Button</text>
-<path d="M-5,300 L-5,310 L0,305 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#000000" stroke="none" />
 <text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">SK</text>
-<text x="-31" y="308" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">SchieberStruct</text>
+<text x="-31" y="308" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">SchieberStruct</text>
 <text x="-101" y="308" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">SoftKey</text>
-<path d="M-5,326 L-5,336 L0,331 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,326 L-5,336 L0,331 Z" fill="#000000" stroke="none" />
 <text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">AUXC</text>
-<text x="-31" y="334" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">SchieberAuxInStruct</text>
+<text x="-31" y="334" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">SchieberAuxInStruct</text>
 <text x="-101" y="334" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Auxiliary Control</text>
-<path d="M-5,352 L-5,362 L0,357 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,352 L-5,362 L0,357 Z" fill="#0000FF" stroke="none" />
 <text x="12" y="361" font-size="12" text-anchor="start" font-family="Consolas, monospace">DT_Opening</text>
-<text x="-31" y="360" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-31" y="360" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
 <text x="-101" y="360" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">TIME Setting</text>
-<path d="M-5,378 L-5,388 L0,383 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,378 L-5,388 L0,383 Z" fill="#0000FF" stroke="none" />
 <text x="12" y="387" font-size="12" text-anchor="start" font-family="Consolas, monospace">DT_Closing</text>
-<text x="-31" y="386" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-31" y="386" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
 <text x="-101" y="386" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">TIME Setting</text>
-<path d="M-5,404 L-5,414 L0,409 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,404 L-5,414 L0,409 Z" fill="#18519E" stroke="none" />
 <text x="12" y="413" font-size="12" text-anchor="start" font-family="Consolas, monospace">START</text>
-<text x="-31" y="412" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
-<path d="M190,37 L190,47 L195,42 Z" fill="#5cb85c" stroke="none" />
+<text x="-31" y="412" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<path d="M190,37 L190,47 L195,42 Z" fill="#63B31F" stroke="none" />
 <text x="178" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="245" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="315" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">All Values have been Set. Initialization Confirm.</text>
-<path d="M190,63 L190,73 L195,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M190,63 L190,73 L195,68 Z" fill="#63B31F" stroke="none" />
 <text x="178" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO</text>
 <text x="245" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M190,89 L190,99 L195,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M190,89 L190,99 L195,94 Z" fill="#63B31F" stroke="none" />
 <text x="178" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_POWERED</text>
 <text x="245" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="315" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Actuate "Open" Valve for Pneumatic</text>
-<path d="M190,115 L190,125 L195,120 Z" fill="#5cb85c" stroke="none" />
+<path d="M190,115 L190,125 L195,120 Z" fill="#63B31F" stroke="none" />
 <text x="178" y="124" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_OPEN</text>
 <text x="245" y="123" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="315" y="123" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Actuate "Open" Valve</text>
-<path d="M190,141 L190,151 L195,146 Z" fill="#5cb85c" stroke="none" />
+<path d="M190,141 L190,151 L195,146 Z" fill="#63B31F" stroke="none" />
 <text x="178" y="150" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_CLOSE</text>
 <text x="245" y="149" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="315" y="149" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Actuate "Close" Valve</text>
-<path d="M190,167 L190,177 L195,172 Z" fill="#5cb85c" stroke="none" />
+<path d="M190,167 L190,177 L195,172 Z" fill="#63B31F" stroke="none" />
 <text x="178" y="176" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO1</text>
 <text x="245" y="175" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<rect x="185.0" y="248.0" width="10" height="10" fill="#985ec9" stroke="none" />
+<rect x="185.0" y="248.0" width="10" height="10" fill="#845DAF" stroke="none" />
 <text x="178" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">timeOut</text>
 <text x="245" y="256" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">ATimeOut</text>
 <text x="315" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">timeOut Adapter</text>
-<path d="M190,274 L190,284 L195,279 Z" fill="#0066cc" stroke="none" />
+<path d="M190,274 L190,284 L195,279 Z" fill="#9FA48A" stroke="none" />
 <text x="178" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="245" y="282" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="245" y="282" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="315" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output event qualifier</text>
-<path d="M190,300 L190,310 L195,305 Z" fill="#0066cc" stroke="none" />
+<path d="M190,300 L190,310 L195,305 Z" fill="#18519E" stroke="none" />
 <text x="178" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">Button</text>
-<text x="245" y="308" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="245" y="308" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="315" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Button Out</text>
-<path d="M190,326 L190,336 L195,331 Z" fill="#0066cc" stroke="none" />
+<path d="M190,326 L190,336 L195,331 Z" fill="#18519E" stroke="none" />
 <text x="178" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">Softkey</text>
-<text x="245" y="334" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="245" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="315" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Softkey Out</text>
-<path d="M190,352 L190,362 L195,357 Z" fill="#0066cc" stroke="none" />
+<path d="M190,352 L190,362 L195,357 Z" fill="#000000" stroke="none" />
 <text x="178" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">Auxiliary</text>
-<text x="245" y="360" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">SchieberAuxOutStruct</text>
+<text x="245" y="360" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">SchieberAuxOutStruct</text>
 <text x="315" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Auxiliary Control Out</text>
-<path d="M190,378 L190,388 L195,383 Z" fill="#0066cc" stroke="none" />
+<path d="M190,378 L190,388 L195,383 Z" fill="#9FA48A" stroke="none" />
 <text x="178" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_POWERED</text>
-<text x="245" y="386" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="245" y="386" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="315" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Actuate "Open" Valve for Pneumatic</text>
-<path d="M190,404 L190,414 L195,409 Z" fill="#0066cc" stroke="none" />
+<path d="M190,404 L190,414 L195,409 Z" fill="#9FA48A" stroke="none" />
 <text x="178" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_OPEN</text>
-<text x="245" y="412" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="245" y="412" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="315" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Actuate "Open" Valve</text>
-<path d="M190,430 L190,440 L195,435 Z" fill="#0066cc" stroke="none" />
+<path d="M190,430 L190,440 L195,435 Z" fill="#9FA48A" stroke="none" />
 <text x="178" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_CLOSE</text>
-<text x="245" y="438" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="245" y="438" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="315" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Actuate "Close" Valve</text>
-<path d="M190,456 L190,466 L195,461 Z" fill="#0066cc" stroke="none" />
+<path d="M190,456 L190,466 L195,461 Z" fill="#BD8663" stroke="none" />
 <text x="178" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATE</text>
-<text x="245" y="464" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="245" y="464" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
 <path d="M-12,42 L-12,409" stroke="#404040" stroke-width="1" />
 <path d="M0,42 L-12,42" stroke="#404040" />
 <rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />

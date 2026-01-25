@@ -4,27 +4,27 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="230" height="173" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H230 V92 H224 V132 H230 V173 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L230,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H230 V92 H224 V132 H230 V173 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L230,30" stroke="#000000" stroke-width="1" />
 <text x="115.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">ASR2_SR2_TO_4EVENTS</text>
 <text x="115.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_SET</text>
 <text x="-15" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Set / Switch on</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_RESET</text>
 <text x="-15" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset / Switch off</text>
-<rect x="-5.0" y="144.0" width="10" height="10" fill="white" stroke="#985ec9" stroke-width="2.5" />
+<rect x="-5.0" y="144.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
 <text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">ASR_IN</text>
 <text x="-15" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">ASR2</text>
 <text x="-85" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Adapter Input</text>
-<path d="M230,37 L230,47 L235,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M230,37 L230,47 L235,42 Z" fill="#63B31F" stroke="none" />
 <text x="218" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_SET</text>
 <text x="245" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="315" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Set / Switch on</text>
-<path d="M230,63 L230,73 L235,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M230,63 L230,73 L235,68 Z" fill="#63B31F" stroke="none" />
 <text x="218" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_RESET</text>
 <text x="245" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="315" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Reset / Switch off</text>

@@ -4,84 +4,84 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="319" height="563" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H319 V118 H313 V158 H319 V563 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L319,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H319 V118 H313 V158 H319 V563 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L319,30" stroke="#000000" stroke-width="1" />
 <text x="159.5" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">I_FPTO</text>
 <text x="159.5" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
-<path d="M319,37 L319,47 L324,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M319,37 L319,47 L324,42 Z" fill="#63B31F" stroke="none" />
 <text x="307" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="358" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="428" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
-<path d="M319,63 L319,73 L324,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M319,63 L319,73 L324,68 Z" fill="#63B31F" stroke="none" />
 <text x="307" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
 <text x="358" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="428" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
-<path d="M319,89 L319,99 L324,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M319,89 L319,99 L324,94 Z" fill="#63B31F" stroke="none" />
 <text x="307" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
 <text x="358" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M319,170 L319,180 L324,175 Z" fill="#0066cc" stroke="none" />
+<path d="M319,170 L319,180 L324,175 Z" fill="#9FA48A" stroke="none" />
 <text x="307" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="358" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="358" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="428" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
-<path d="M319,196 L319,206 L324,201 Z" fill="#0066cc" stroke="none" />
+<path d="M319,196 L319,206 L324,201 Z" fill="#BD8663" stroke="none" />
 <text x="307" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="358" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<path d="M319,222 L319,232 L324,227 Z" fill="#0066cc" stroke="none" />
+<text x="358" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M319,222 L319,232 L324,227 Z" fill="#9FA48A" stroke="none" />
 <text x="307" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q_timeout</text>
-<text x="358" y="230" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<path d="M319,248 L319,258 L324,253 Z" fill="#0066cc" stroke="none" />
+<text x="358" y="230" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M319,248 L319,258 L324,253 Z" fill="#18519E" stroke="none" />
 <text x="307" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_timeout</text>
-<text x="358" y="256" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
-<path d="M319,274 L319,284 L324,279 Z" fill="#0066cc" stroke="none" />
+<text x="358" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M319,274 L319,284 L324,279 Z" fill="#18519E" stroke="none" />
 <text x="307" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_data</text>
-<text x="358" y="282" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
-<path d="M319,300 L319,310 L324,305 Z" fill="#0066cc" stroke="none" />
+<text x="358" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M319,300 L319,310 L324,305 Z" fill="#18519E" stroke="none" />
 <text x="307" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">FRONT_PTO_OUTP_SHAFT_SPEED</text>
-<text x="358" y="308" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="358" y="308" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="428" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Front PTO output shaft speed (see Attributes for Details)</text>
-<path d="M319,326 L319,336 L324,331 Z" fill="#0066cc" stroke="none" />
+<path d="M319,326 L319,336 L324,331 Z" fill="#18519E" stroke="none" />
 <text x="307" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">FRONT_PTO_OUTP_SH_SPEED_SET</text>
-<text x="358" y="334" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="358" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="428" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Front PTO Output Shaft Speed Set Point (see Attributes for Details)</text>
-<path d="M319,352 L319,362 L324,357 Z" fill="#0066cc" stroke="none" />
+<path d="M319,352 L319,362 L324,357 Z" fill="#82A3A9" stroke="none" />
 <text x="307" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">FRONT_PTO_ENGAGEMENT</text>
-<text x="358" y="360" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="358" y="360" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
 <text x="428" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Front Power Take Off Engagement (see Attributes for Details)</text>
-<path d="M319,378 L319,388 L324,383 Z" fill="#0066cc" stroke="none" />
+<path d="M319,378 L319,388 L324,383 Z" fill="#82A3A9" stroke="none" />
 <text x="307" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">FRONT_PTO_MODE</text>
-<text x="358" y="386" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="358" y="386" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
 <text x="428" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Front Power Take Off Mode (see Attributes for Details)</text>
-<path d="M319,404 L319,414 L324,409 Z" fill="#0066cc" stroke="none" />
+<path d="M319,404 L319,414 L324,409 Z" fill="#82A3A9" stroke="none" />
 <text x="307" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">FRONT_PTO_ECONOMY_MODE</text>
-<text x="358" y="412" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="358" y="412" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
 <text x="428" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Front Power Take Off Economy Mode (see Attributes for Details)</text>
-<path d="M319,430 L319,440 L324,435 Z" fill="#0066cc" stroke="none" />
+<path d="M319,430 L319,440 L324,435 Z" fill="#82A3A9" stroke="none" />
 <text x="307" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">FRONT_PTO_ENGAGEMENT_REQ</text>
-<text x="358" y="438" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="358" y="438" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
 <text x="428" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Front PTO engagement request status (see Attributes for Details)</text>
-<path d="M319,456 L319,466 L324,461 Z" fill="#0066cc" stroke="none" />
+<path d="M319,456 L319,466 L324,461 Z" fill="#82A3A9" stroke="none" />
 <text x="307" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">FRONT_PTO_MODE_REQ_STATUS</text>
-<text x="358" y="464" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="358" y="464" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
 <text x="428" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Front PTO mode request status (see Attributes for Details)</text>
-<path d="M319,482 L319,492 L324,487 Z" fill="#0066cc" stroke="none" />
+<path d="M319,482 L319,492 L324,487 Z" fill="#82A3A9" stroke="none" />
 <text x="307" y="491" font-size="12" text-anchor="end" font-family="Consolas, monospace">FRONT_PTO_ECONOMY_MODE_REQ_STAT</text>
-<text x="358" y="490" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="358" y="490" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
 <text x="428" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Front PTO Economy mode request status (see Attributes for Details)</text>
-<path d="M319,508 L319,518 L324,513 Z" fill="#0066cc" stroke="none" />
+<path d="M319,508 L319,518 L324,513 Z" fill="#82A3A9" stroke="none" />
 <text x="307" y="517" font-size="12" text-anchor="end" font-family="Consolas, monospace">FRONT_PTO_SH_SPEED_LIMIT_STAT</text>
-<text x="358" y="516" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="358" y="516" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
 <text x="428" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Front PTO shaft speed limit status (see Attributes for Details)</text>
-<path d="M319,534 L319,544 L324,539 Z" fill="#0066cc" stroke="none" />
+<path d="M319,534 L319,544 L324,539 Z" fill="#82A3A9" stroke="none" />
 <text x="307" y="543" font-size="12" text-anchor="end" font-family="Consolas, monospace">FRONT_PTO_EXIT_REASON_CODE</text>
-<text x="358" y="542" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="358" y="542" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
 <text x="428" y="542" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Front PTO exit/reason code (see Attributes for Details)</text>
 <path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
 <path d="M0,42 L-12,42" stroke="#404040" />

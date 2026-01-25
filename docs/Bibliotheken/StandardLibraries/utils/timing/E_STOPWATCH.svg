@@ -4,41 +4,41 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="150" height="225" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H150 V144 H144 V184 H150 V225 H0 V184 H6 V144 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L150,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H150 V144 H144 V184 H150 V225 H0 V184 H6 V144 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L150,30" stroke="#000000" stroke-width="1" />
 <text x="75.0" y="162.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">E_STOPWATCH</text>
 <text x="75.0" y="176.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">START</text>
 <text x="-15" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Start the stopwatch</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">ET</text>
 <text x="-15" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Trigger the Time output</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOP</text>
 <text x="-15" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Stop the stopwatch</text>
-<path d="M-5,115 L-5,125 L0,120 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="124" font-size="12" text-anchor="start" font-family="Consolas, monospace">RESET</text>
 <text x="-15" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset the stopwatch to 0</text>
-<path d="M150,37 L150,47 L155,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M150,37 L150,47 L155,42 Z" fill="#63B31F" stroke="none" />
 <text x="138" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO</text>
 <text x="189" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="259" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output</text>
-<path d="M150,63 L150,73 L155,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M150,63 L150,73 L155,68 Z" fill="#63B31F" stroke="none" />
 <text x="138" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">ETO</text>
 <text x="189" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="259" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Trigger the Time output  confirm</text>
-<path d="M150,89 L150,99 L155,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M150,89 L150,99 L155,94 Z" fill="#63B31F" stroke="none" />
 <text x="138" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">RESETO</text>
 <text x="189" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="259" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Reset the stopwatch to 0  confirm</text>
-<path d="M150,196 L150,206 L155,201 Z" fill="#0066cc" stroke="none" />
+<path d="M150,196 L150,206 L155,201 Z" fill="#0000FF" stroke="none" />
 <text x="138" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">TD</text>
-<text x="189" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="189" y="204" font-size="11" text-anchor="start" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
 <text x="259" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">The measured time difference in milliseconds</text>
 <path d="M162,42 L162,201" stroke="#404040" stroke-width="1" />
 <path d="M150,42 L162,42" stroke="#404040" />

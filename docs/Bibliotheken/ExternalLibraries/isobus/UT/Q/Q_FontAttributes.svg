@@ -4,69 +4,69 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="200" height="303" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H200 V92 H194 V132 H200 V303 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L200,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H200 V92 H194 V132 H200 V303 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L200,30" stroke="#000000" stroke-width="1" />
 <text x="100.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">Q_FontAttributes</text>
 <text x="100.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
 <text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-101" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Request</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#18519E" stroke="none" />
 <text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16ObjId</text>
-<text x="-31" y="152" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-31" y="152" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="-101" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Object ID</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#18519E" stroke="none" />
 <text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8FontColour</text>
-<text x="-31" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="-31" y="178" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
 <text x="-101" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">New font colour (see Part 6 - A.3) </text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#18519E" stroke="none" />
 <text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8FontSize</text>
-<text x="-31" y="204" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="-31" y="204" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
 <text x="-101" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">New font size (see Part 6 - B.14) </text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#18519E" stroke="none" />
 <text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8FontType</text>
-<text x="-31" y="230" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="-31" y="230" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
 <text x="-101" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">New font type (see Part 6 - B.14) </text>
-<path d="M-5,248 L-5,258 L0,253 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#18519E" stroke="none" />
 <text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8FontStyle</text>
-<text x="-31" y="256" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="-31" y="256" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
 <text x="-101" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">New font style (see Part 6 - B.14)</text>
-<path d="M200,37 L200,47 L205,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M200,37 L200,47 L205,42 Z" fill="#63B31F" stroke="none" />
 <text x="188" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="223" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="293" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
-<path d="M200,63 L200,73 L205,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M200,63 L200,73 L205,68 Z" fill="#63B31F" stroke="none" />
 <text x="188" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
 <text x="223" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="293" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
-<path d="M200,144 L200,154 L205,149 Z" fill="#0066cc" stroke="none" />
+<path d="M200,144 L200,154 L205,149 Z" fill="#BD8663" stroke="none" />
 <text x="188" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="223" y="152" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="223" y="152" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
 <text x="293" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
-<path d="M200,170 L200,180 L205,175 Z" fill="#0066cc" stroke="none" />
+<path d="M200,170 L200,180 L205,175 Z" fill="#18519E" stroke="none" />
 <text x="188" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">u8OldFontColour</text>
-<text x="223" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="223" y="178" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
 <text x="293" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old font colour (see Part 6 - A.3) </text>
-<path d="M200,196 L200,206 L205,201 Z" fill="#0066cc" stroke="none" />
+<path d="M200,196 L200,206 L205,201 Z" fill="#18519E" stroke="none" />
 <text x="188" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">u8OldFontSize</text>
-<text x="223" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="223" y="204" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
 <text x="293" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old font size (see Part 6 - B.14) </text>
-<path d="M200,222 L200,232 L205,227 Z" fill="#0066cc" stroke="none" />
+<path d="M200,222 L200,232 L205,227 Z" fill="#18519E" stroke="none" />
 <text x="188" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">u8OldFontType</text>
-<text x="223" y="230" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="223" y="230" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
 <text x="293" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old font type (see Part 6 - B.14) </text>
-<path d="M200,248 L200,258 L205,253 Z" fill="#0066cc" stroke="none" />
+<path d="M200,248 L200,258 L205,253 Z" fill="#18519E" stroke="none" />
 <text x="188" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">u8OldFontStyle</text>
-<text x="223" y="256" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="223" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
 <text x="293" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old font style (see Part 6 - B.14)</text>
-<path d="M200,274 L200,284 L205,279 Z" fill="#0066cc" stroke="none" />
+<path d="M200,274 L200,284 L205,279 Z" fill="#18519E" stroke="none" />
 <text x="188" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">s16result</text>
-<text x="223" y="282" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<text x="223" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
 <text x="293" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">retval see description</text>
 <path d="M-12,42 L-12,149" stroke="#404040" stroke-width="1" />
 <path d="M0,42 L-12,42" stroke="#404040" />

@@ -4,40 +4,40 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="166" height="225" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H166 V92 H160 V132 H166 V225 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L166,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H166 V92 H160 V132 H166 V225 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L166,30" stroke="#000000" stroke-width="1" />
 <text x="83.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">IORevPiCore</text>
 <text x="83.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="-93" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#18519E" stroke="none" />
 <text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">UpdateInterval</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Update interval in Hz</text>
-<path d="M166,37 L166,47 L171,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M166,37 L166,47 L171,42 Z" fill="#63B31F" stroke="none" />
 <text x="154" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="197" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="267" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
-<path d="M166,63 L166,73 L171,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M166,63 L166,73 L171,68 Z" fill="#63B31F" stroke="none" />
 <text x="154" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
 <text x="197" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="267" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
-<rect x="161.0" y="144.0" width="10" height="10" fill="#985ec9" stroke="none" />
+<rect x="161.0" y="144.0" width="10" height="10" fill="#845DAF" stroke="none" />
 <text x="154" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">BusAdapterOut</text>
 <text x="197" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">IORevPiBusAdapter</text>
-<path d="M166,170 L166,180 L171,175 Z" fill="#0066cc" stroke="none" />
+<path d="M166,170 L166,180 L171,175 Z" fill="#9FA48A" stroke="none" />
 <text x="154" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="197" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="197" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="267" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
-<path d="M166,196 L166,206 L171,201 Z" fill="#0066cc" stroke="none" />
+<path d="M166,196 L166,206 L171,201 Z" fill="#BD8663" stroke="none" />
 <text x="154" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="197" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="197" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
 <text x="267" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
 <path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
 <path d="M0,42 L-12,42" stroke="#404040" />

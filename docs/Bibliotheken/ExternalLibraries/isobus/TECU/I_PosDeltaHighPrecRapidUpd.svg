@@ -4,58 +4,58 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="300" height="407" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H300 V118 H294 V158 H300 V407 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L300,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H300 V118 H294 V158 H300 V407 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L300,30" stroke="#000000" stroke-width="1" />
 <text x="150.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">I_PosDeltaHighPrecRapidUpd</text>
 <text x="150.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
-<path d="M300,37 L300,47 L305,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M300,37 L300,47 L305,42 Z" fill="#63B31F" stroke="none" />
 <text x="288" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="339" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="409" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
-<path d="M300,63 L300,73 L305,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M300,63 L300,73 L305,68 Z" fill="#63B31F" stroke="none" />
 <text x="288" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
 <text x="339" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="409" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
-<path d="M300,89 L300,99 L305,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M300,89 L300,99 L305,94 Z" fill="#63B31F" stroke="none" />
 <text x="288" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
 <text x="339" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M300,170 L300,180 L305,175 Z" fill="#0066cc" stroke="none" />
+<path d="M300,170 L300,180 L305,175 Z" fill="#9FA48A" stroke="none" />
 <text x="288" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="339" y="178" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="339" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="409" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
-<path d="M300,196 L300,206 L305,201 Z" fill="#0066cc" stroke="none" />
+<path d="M300,196 L300,206 L305,201 Z" fill="#BD8663" stroke="none" />
 <text x="288" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="339" y="204" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<path d="M300,222 L300,232 L305,227 Z" fill="#0066cc" stroke="none" />
+<text x="339" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M300,222 L300,232 L305,227 Z" fill="#9FA48A" stroke="none" />
 <text x="288" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q_timeout</text>
-<text x="339" y="230" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<path d="M300,248 L300,258 L305,253 Z" fill="#0066cc" stroke="none" />
+<text x="339" y="230" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,248 L300,258 L305,253 Z" fill="#18519E" stroke="none" />
 <text x="288" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_timeout</text>
-<text x="339" y="256" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
-<path d="M300,274 L300,284 L305,279 Z" fill="#0066cc" stroke="none" />
+<text x="339" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M300,274 L300,284 L305,279 Z" fill="#18519E" stroke="none" />
 <text x="288" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_data</text>
-<text x="339" y="282" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
-<path d="M300,300 L300,310 L305,305 Z" fill="#0066cc" stroke="none" />
+<text x="339" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M300,300 L300,310 L305,305 Z" fill="#18519E" stroke="none" />
 <text x="288" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">SID</text>
-<text x="339" y="308" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="339" y="308" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="409" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Sequence ID identifies the sequence this data is associated with so that the data can be synchronized with other vessel data for this same sequence being sent in another PGN.</text>
-<path d="M300,326 L300,336 L305,331 Z" fill="#0066cc" stroke="none" />
+<path d="M300,326 L300,336 L305,331 Z" fill="#18519E" stroke="none" />
 <text x="288" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">TimeDelta</text>
-<text x="339" y="334" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
-<path d="M300,352 L300,362 L305,357 Z" fill="#0066cc" stroke="none" />
+<text x="339" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<path d="M300,352 L300,362 L305,357 Z" fill="#18519E" stroke="none" />
 <text x="288" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">LatitudeDelta</text>
-<text x="339" y="360" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">INT</text>
-<path d="M300,378 L300,388 L305,383 Z" fill="#0066cc" stroke="none" />
+<text x="339" y="360" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<path d="M300,378 L300,388 L305,383 Z" fill="#18519E" stroke="none" />
 <text x="288" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">LongitudeDelta</text>
-<text x="339" y="386" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<text x="339" y="386" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
 <path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
 <path d="M0,42 L-12,42" stroke="#404040" />
 <rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />

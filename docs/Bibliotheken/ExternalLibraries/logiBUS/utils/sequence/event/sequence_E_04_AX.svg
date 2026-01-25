@@ -4,57 +4,57 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="200" height="381" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H200 V196 H194 V236 H200 V381 H0 V236 H6 V196 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L200,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H200 V196 H194 V236 H200 V381 H0 V236 H6 V196 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L200,30" stroke="#000000" stroke-width="1" />
 <text x="100.0" y="214.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">sequence_E_04_AX</text>
 <text x="100.0" y="228.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">START_S1</text>
 <text x="-15" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">jump from START to State_01</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">S1_S2</text>
 <text x="-15" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">jump from State_01 to State_02</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">S2_S3</text>
 <text x="-15" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">jump from State_02 to State_03</text>
-<path d="M-5,115 L-5,125 L0,120 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="124" font-size="12" text-anchor="start" font-family="Consolas, monospace">S3_S4</text>
 <text x="-15" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">jump from State_03 to State_04</text>
-<path d="M-5,141 L-5,151 L0,146 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,141 L-5,151 L0,146 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="150" font-size="12" text-anchor="start" font-family="Consolas, monospace">S4_START</text>
 <text x="-15" y="149" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="149" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">jump from State_04 to START</text>
-<path d="M-5,167 L-5,177 L0,172 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,167 L-5,177 L0,172 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="176" font-size="12" text-anchor="start" font-family="Consolas, monospace">RESET</text>
 <text x="-15" y="175" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-85" y="175" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset from any State to START</text>
-<path d="M200,37 L200,47 L205,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M200,37 L200,47 L205,42 Z" fill="#63B31F" stroke="none" />
 <text x="188" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
 <text x="223" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="293" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Execution Confirmation</text>
-<rect x="195.0" y="248.0" width="10" height="10" fill="#985ec9" stroke="none" />
+<rect x="195.0" y="248.0" width="10" height="10" fill="#845DAF" stroke="none" />
 <text x="188" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_S1</text>
 <text x="223" y="256" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
 <text x="293" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output if State_01 is active</text>
-<rect x="195.0" y="274.0" width="10" height="10" fill="#985ec9" stroke="none" />
+<rect x="195.0" y="274.0" width="10" height="10" fill="#845DAF" stroke="none" />
 <text x="188" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_S2</text>
 <text x="223" y="282" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
 <text x="293" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output if State_02 is active</text>
-<rect x="195.0" y="300.0" width="10" height="10" fill="#985ec9" stroke="none" />
+<rect x="195.0" y="300.0" width="10" height="10" fill="#845DAF" stroke="none" />
 <text x="188" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_S3</text>
 <text x="223" y="308" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
 <text x="293" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output if State_03 is active</text>
-<rect x="195.0" y="326.0" width="10" height="10" fill="#985ec9" stroke="none" />
+<rect x="195.0" y="326.0" width="10" height="10" fill="#845DAF" stroke="none" />
 <text x="188" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_S4</text>
 <text x="223" y="334" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
 <text x="293" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output if State_04 is active</text>
-<path d="M200,352 L200,362 L205,357 Z" fill="#0066cc" stroke="none" />
+<path d="M200,352 L200,362 L205,357 Z" fill="#18519E" stroke="none" />
 <text x="188" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATE_NR</text>
-<text x="223" y="360" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
+<text x="223" y="360" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
 <text x="293" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">State Number, START = 0, State_01 = 1 and so on. </text>
 <path d="M212,42 L212,357" stroke="#404040" stroke-width="1" />
 <path d="M200,42 L212,42" stroke="#404040" />

@@ -4,45 +4,45 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="247" height="251" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H247 V66 H241 V106 H247 V251 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L247,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H247 V66 H241 V106 H247 V251 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L247,30" stroke="#000000" stroke-width="1" />
 <text x="123.5" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">ADS_SERVER_CONFIG</text>
 <text x="123.5" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
-<path d="M-5,118 L-5,128 L0,123 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,118 L-5,128 L0,123 Z" fill="#9FA48A" stroke="none" />
 <text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-23" y="126" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-23" y="126" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="-93" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">FRIENDLY_NAME</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
 <text x="-93" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">User friendly server name to use in IO FBs</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">SERVER_ADS_ADDRESS</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
 <text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Server ADS address</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#18519E" stroke="none" />
 <text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">ADS_PORT</text>
-<text x="-23" y="204" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="-93" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Server ADS port</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#BD8663" stroke="none" />
 <text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">SERVER_IPV4_OR_HOSTNAME</text>
-<text x="-23" y="230" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
 <text x="-93" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">ADS Server IPv4 address or hostame</text>
-<path d="M247,37 L247,47 L252,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M247,37 L247,47 L252,42 Z" fill="#63B31F" stroke="none" />
 <text x="235" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="270" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="340" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
-<path d="M247,118 L247,128 L252,123 Z" fill="#0066cc" stroke="none" />
+<path d="M247,118 L247,128 L252,123 Z" fill="#9FA48A" stroke="none" />
 <text x="235" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="270" y="126" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="270" y="126" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="340" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
-<path d="M247,144 L247,154 L252,149 Z" fill="#0066cc" stroke="none" />
+<path d="M247,144 L247,154 L252,149 Z" fill="#BD8663" stroke="none" />
 <text x="235" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="270" y="152" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="270" y="152" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
 <text x="340" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
 <path d="M-12,42 L-12,123" stroke="#404040" stroke-width="1" />
 <path d="M0,42 L-12,42" stroke="#404040" />

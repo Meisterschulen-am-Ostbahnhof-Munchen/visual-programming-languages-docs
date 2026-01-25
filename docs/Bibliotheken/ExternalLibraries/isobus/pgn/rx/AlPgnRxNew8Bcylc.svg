@@ -4,86 +4,86 @@
 <defs>
 </defs>
 <rect x="3" y="3" width="220" height="433" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H220 V196 H214 V236 H220 V433 H0 V236 H6 V196 H0 Z" fill="#ffffff" stroke="#606060" stroke-width="2" />
-<path d="M0,30 L220,30" stroke="#606060" stroke-width="1" />
+<path d="M0,0 H220 V196 H214 V236 H220 V433 H0 V236 H6 V196 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L220,30" stroke="#000000" stroke-width="1" />
 <text x="110.0" y="214.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AlPgnRxNew8Bcylc</text>
 <text x="110.0" y="228.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
 <text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
 <text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">install</text>
 <text x="-23" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="-93" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">installs a Transmit PGN (TX) </text>
-<path d="M-5,248 L-5,258 L0,253 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#18519E" stroke="none" />
 <text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">u32Pgn</text>
-<text x="-23" y="256" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
 <text x="-93" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">PGN - Range: 0 - 0x3FFFF </text>
-<path d="M-5,274 L-5,284 L0,279 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#000000" stroke="none" />
 <text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">NmSource</text>
-<text x="-23" y="282" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">ISONETEVENT_T</text>
+<text x="-23" y="282" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ISONETEVENT_T</text>
 <text x="-93" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Define the Communication Partner</text>
-<path d="M-5,300 L-5,310 L0,305 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#18519E" stroke="none" />
 <text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16DaSize</text>
-<text x="-23" y="308" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-23" y="308" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="-93" y="308" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Data length of this PGN (0..8)</text>
-<path d="M-5,326 L-5,336 L0,331 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,326 L-5,336 L0,331 Z" fill="#18519E" stroke="none" />
 <text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8Priority</text>
-<text x="-23" y="334" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="-23" y="334" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
 <text x="-123" y="334" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Default priority of this PGN (0..7) 0=highest</text>
-<path d="M-5,352 L-5,362 L0,357 Z" fill="#0066cc" stroke="none" />
+<path d="M-5,352 L-5,362 L0,357 Z" fill="#18519E" stroke="none" />
 <text x="12" y="361" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16CtrlTime</text>
-<text x="-23" y="360" font-size="11" text-anchor="end" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-23" y="360" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
 <text x="-93" y="360" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">0 ... 0xFDFF ms Control time of a receive PGN</text>
-<path d="M220,37 L220,47 L225,42 Z" fill="#5cb85c" stroke="none" />
+<path d="M220,37 L220,47 L225,42 Z" fill="#63B31F" stroke="none" />
 <text x="208" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
 <text x="275" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="345" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
-<path d="M220,63 L220,73 L225,68 Z" fill="#5cb85c" stroke="none" />
+<path d="M220,63 L220,73 L225,68 Z" fill="#63B31F" stroke="none" />
 <text x="208" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">installO</text>
 <text x="275" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="345" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">install Done</text>
-<path d="M220,89 L220,99 L225,94 Z" fill="#5cb85c" stroke="none" />
+<path d="M220,89 L220,99 L225,94 Z" fill="#63B31F" stroke="none" />
 <text x="208" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
 <text x="275" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
 <text x="345" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Data was received</text>
-<path d="M220,115 L220,125 L225,120 Z" fill="#5cb85c" stroke="none" />
+<path d="M220,115 L220,125 L225,120 Z" fill="#63B31F" stroke="none" />
 <text x="208" y="124" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
 <text x="275" y="123" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M220,141 L220,151 L225,146 Z" fill="#5cb85c" stroke="none" />
+<path d="M220,141 L220,151 L225,146 Z" fill="#63B31F" stroke="none" />
 <text x="208" y="150" font-size="12" text-anchor="end" font-family="Consolas, monospace">dataERR</text>
 <text x="275" y="149" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M220,167 L220,177 L225,172 Z" fill="#5cb85c" stroke="none" />
+<path d="M220,167 L220,177 L225,172 Z" fill="#63B31F" stroke="none" />
 <text x="208" y="176" font-size="12" text-anchor="end" font-family="Consolas, monospace">pgnERR</text>
 <text x="275" y="175" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<path d="M220,248 L220,258 L225,253 Z" fill="#0066cc" stroke="none" />
+<path d="M220,248 L220,258 L225,253 Z" fill="#18519E" stroke="none" />
 <text x="208" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">PGN_handle</text>
-<text x="275" y="256" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<text x="275" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
 <text x="345" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">PGN-handle on success, HANDLE_UNVALID in case of an error </text>
-<path d="M220,274 L220,284 L225,279 Z" fill="#0066cc" stroke="none" />
+<path d="M220,274 L220,284 L225,279 Z" fill="#18519E" stroke="none" />
 <text x="208" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">dataERRC</text>
-<text x="275" y="282" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<text x="275" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
 <text x="345" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">dataERR error Code</text>
-<path d="M220,300 L220,310 L225,305 Z" fill="#0066cc" stroke="none" />
+<path d="M220,300 L220,310 L225,305 Z" fill="#18519E" stroke="none" />
 <text x="208" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">pgnERRC</text>
-<text x="275" y="308" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<text x="275" y="308" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
 <text x="345" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">pgnERR error Code</text>
-<path d="M220,326 L220,336 L225,331 Z" fill="#0066cc" stroke="none" />
+<path d="M220,326 L220,336 L225,331 Z" fill="#9FA48A" stroke="none" />
 <text x="208" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">bTimeout</text>
-<text x="275" y="334" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="275" y="334" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
 <text x="345" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Timeout occured TRUE = Timeout, FALSE = no Timeout</text>
-<path d="M220,352 L220,362 L225,357 Z" fill="#0066cc" stroke="none" />
+<path d="M220,352 L220,362 L225,357 Z" fill="#18519E" stroke="none" />
 <text x="208" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">s32TimeStamp_timeout</text>
-<text x="275" y="360" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<text x="275" y="360" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
 <text x="345" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Time stamp of the Timeout in ms</text>
-<path d="M220,378 L220,388 L225,383 Z" fill="#0066cc" stroke="none" />
+<path d="M220,378 L220,388 L225,383 Z" fill="#18519E" stroke="none" />
 <text x="208" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">s32TimeStamp</text>
-<text x="275" y="386" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<text x="275" y="386" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
 <text x="345" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Time stamp of the message in ms</text>
-<path d="M220,404 L220,414 L225,409 Z" fill="#0066cc" stroke="none" />
+<path d="M220,404 L220,414 L225,409 Z" fill="#000000" stroke="none" />
 <text x="208" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">Data</text>
-<text x="275" y="412" font-size="11" text-anchor="start" fill="#0066cc" font-style="italic" font-family="Verdana, sans-serif">CAN_MSG</text>
+<text x="275" y="412" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">CAN_MSG</text>
 <text x="345" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">data buffer</text>
 <path d="M-12,68 L-12,357" stroke="#404040" stroke-width="1" />
 <path d="M0,68 L-12,68" stroke="#404040" />

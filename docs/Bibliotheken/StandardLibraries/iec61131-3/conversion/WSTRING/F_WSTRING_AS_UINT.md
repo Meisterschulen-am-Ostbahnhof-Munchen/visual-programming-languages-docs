@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_UINT` dient der Konvertierung eines WSTRING-Wertes in einen UINT-Wert. Diese Funktion ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise für weitere Berechnungen oder Steuerungsaufgaben.
 
+![F_WSTRING_AS_UINT](F_WSTRING_AS_UINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Normaler Ausführungsanforderung. Dieser Eingang löst die Konvertierung aus.

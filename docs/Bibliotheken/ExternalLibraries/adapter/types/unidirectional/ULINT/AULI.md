@@ -1,3 +1,5 @@
+![AULI](AULI.svg)
+
 # AULI (ULINT)
 
 ```{index} single: AULI (ULINT)

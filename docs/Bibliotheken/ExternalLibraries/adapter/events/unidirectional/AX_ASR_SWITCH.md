@@ -8,6 +8,8 @@ Diese Funktionsbausteine dienen als Brücke zwischen der datenorientierten AX-We
 
 Da die Richtung der Ereignisse (welcher Zustand setzt, welcher löscht) fest im Adapter verdrahtet ist, stehen zwei Varianten zur Verfügung.
 
+![AX_ASR_SWITCH](AX_ASR_SWITCH.svg)
+
 ## Varianten
 
 ### **AX_ASR_SWITCH** (1:1)

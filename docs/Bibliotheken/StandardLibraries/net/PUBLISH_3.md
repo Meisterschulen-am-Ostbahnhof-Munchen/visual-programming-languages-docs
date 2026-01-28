@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_3-Funktionsblock dient zum Verteilen von Daten an einen oder mehrere SUBSCRIBE_3-Blöcke. Er ermöglicht die unbestätigte Übertragung von bis zu drei verschiedenen Datenwerten an Abonnenten in einem verteilten System.
 
+![PUBLISH_3](PUBLISH_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

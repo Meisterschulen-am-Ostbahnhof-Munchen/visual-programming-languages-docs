@@ -11,6 +11,8 @@
 Der **OUT_ANY_CONSOLE**-Funktionsbaustein ist ein universelles Debugging-Tool zur Ausgabe von Variablenwerten auf der Systemkonsole, entwickelt unter EPL-2.0 Lizenz (Version 3.0).
 Der Baustein unterstützt die Ausgabe beliebiger Datentypen für Entwicklungs- und Diagnosezwecke.
 
+![OUT_ANY_CONSOLE](OUT_ANY_CONSOLE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_ULINT` dient der Konvertierung eines `REAL`-Wertes (Fließkommazahl) in einen `ULINT`-Wert (64-Bit vorzeichenlose Ganzzahl). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_REAL_TO_ULINT](F_REAL_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

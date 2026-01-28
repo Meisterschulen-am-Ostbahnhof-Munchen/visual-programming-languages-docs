@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_7 Funktionsblock dient zum Verteilen von Daten an einen oder mehrere SUBSCRIBE_7 Blöcke. Er ermöglicht die unbestätigte Übertragung von bis zu sieben verschiedenen Datenwerten über eine Publish-Subscribe-Architektur.
 
+![PUBLISH_7](PUBLISH_7.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

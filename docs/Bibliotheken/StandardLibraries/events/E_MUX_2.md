@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_MUX_2` (Event Multiplexer) ist ein Funktionsbaustein nach IEC 61499, der zwei Ereigniseingänge (`EI1`, `EI2`) auf einen einzigen Ereignisausgang (`EO`) zusammenführt. Zusätzlich zur Zusammenführung gibt der Baustein an einem Datenausgang `K` aus, welcher der Eingänge das Ereignis ausgelöst hat. Er ist das Gegenstück zum `E_DEMUX_2`.
 
+![E_MUX_2](E_MUX_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

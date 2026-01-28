@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_MS_TO_UDINT` dient der Konvertierung eines `TIME`-Werts in Millisekunden in einen `UDINT`-Wert. Dies ist besonders nützlich, wenn Zeitwerte in numerischen Berechnungen oder für Steuerungszwecke verwendet werden sollen.
 
+![F_TIME_IN_MS_TO_UDINT](F_TIME_IN_MS_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Normaler Ausführungsanforderung. Löst die Konvertierung aus.

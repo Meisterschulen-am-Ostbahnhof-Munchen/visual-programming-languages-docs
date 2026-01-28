@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_UDINT` dient der Konvertierung eines `WORD`-Datentyps in einen `UDINT`-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, bei denen eine Typumwandlung erforderlich ist, um Daten für weitere Verarbeitungsschritte vorzubereiten.
 
+![F_WORD_TO_UDINT](F_WORD_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Bei Auslösung dieses Ereignisses wird der Eingangswert `IN` verarbeitet.

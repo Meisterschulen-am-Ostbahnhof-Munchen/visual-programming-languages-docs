@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_ULINT` dient der Konvertierung eines `BYTE`-Wertes in einen `ULINT`-Wert. Diese Konvertierung ist insbesondere in Szenarien nützlich, in denen Daten unterschiedlicher Größe verarbeitet oder weitergegeben werden müssen.
 
+![F_BYTE_TO_ULINT](F_BYTE_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

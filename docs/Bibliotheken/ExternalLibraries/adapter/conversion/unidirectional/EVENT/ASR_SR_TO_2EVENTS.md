@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock ASR_SR_TO_2EVENTS ist ein Composite-Funktionsblock, der zur Konvertierung eines ASR-Signals in zwei separate Ereignisse dient. Er ermöglicht die Umwandlung eines bidirektionalen Adapter-Signals in unabhängige SET- und RESET-Ereignisse.
 
+![ASR_SR_TO_2EVENTS](ASR_SR_TO_2EVENTS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

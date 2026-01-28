@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_UINT` dient der Konvertierung eines `STRING`-Wertes in einen `UINT`-Wert (unsigned integer). Diese Funktion ist besonders nützlich, wenn numerische Werte als Zeichenketten vorliegen und für weitere Berechnungen oder Steuerungsaufgaben in numerischer Form benötigt werden.
 
+![F_STRING_AS_UINT](F_STRING_AS_UINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

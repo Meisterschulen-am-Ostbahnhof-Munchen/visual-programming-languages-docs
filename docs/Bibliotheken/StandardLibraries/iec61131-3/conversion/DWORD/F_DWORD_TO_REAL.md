@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_REAL` dient der Konvertierung eines DWORD-Wertes (32-Bit-Ganzzahl ohne Vorzeichen) in einen REAL-Wert (32-Bit-Gleitkommazahl). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_DWORD_TO_REAL](F_DWORD_TO_REAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `ARRAY2VALUES_2_LREAL` ist ein Dienstschnittstellen-Baustein, der darauf ausgelegt ist, ein Array von zwei `LREAL`-Werten in zwei separate `LREAL`-Ausgangsvariablen aufzuteilen. Er dient der einfachen Umwandlung von einem strukturierten Array-Format in individuelle Datenpunkte.
 
+![ARRAY2VALUES_2_LREAL](ARRAY2VALUES_2_LREAL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **REQ**: Ein Service-Anforderungsereignis, das die Konvertierung initiiert. Es ist mit dem Daten-Eingang `IN` assoziiert.

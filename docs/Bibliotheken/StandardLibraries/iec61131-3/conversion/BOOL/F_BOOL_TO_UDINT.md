@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_UDINT` dient der Konvertierung eines `BOOL`-Wertes in einen `UDINT`-Wert. Diese Konvertierung ist nützlich, wenn boolesche Werte in Berechnungen oder Speicherungen verwendet werden sollen, die einen größeren numerischen Datentyp erfordern.
 
+![F_BOOL_TO_UDINT](F_BOOL_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

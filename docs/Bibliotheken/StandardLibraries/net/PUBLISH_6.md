@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_6 Funktionsblock dient zum Veröffentlichen von Daten an einen oder mehrere SUBSCRIBE_6 Blöcke. Er ermöglicht die Übertragung von bis zu sechs verschiedenen Datenwerten über ein Publish-Subscribe-Kommunikationsmuster und bietet sowohl bestätigte als auch unbestätigte Sendeoperationen.
 
+![PUBLISH_6](PUBLISH_6.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

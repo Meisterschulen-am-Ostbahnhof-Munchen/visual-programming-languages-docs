@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock STEST_END ist ein Service Interface Function Block, der als Endpunkt für Service-Anfragen dient. Er wird typischerweise in Verbindung mit anderen Service-Funktionsblöcken verwendet, um eine Service-orientierte Architektur in 4diac-IDE zu implementieren.
 
+![STEST_END](STEST_END.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

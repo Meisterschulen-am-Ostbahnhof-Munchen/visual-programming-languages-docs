@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_MERGE_4` ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der vier Ereignisströme (`EI1` bis `EI4`) zu einem einzigen Ausgang (`EO`) zusammenführt. Diese logische ODER-Verknüpfung von Ereignissen ist essentiell für die Steuerungslogik in industriellen Automatisierungssystemen.
 
+![E_MERGE_4](E_MERGE_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

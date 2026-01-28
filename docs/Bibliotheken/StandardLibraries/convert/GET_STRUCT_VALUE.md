@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock (FB) `GET_STRUCT_VALUE` ist ein Service-Schnittstellen-Baustein, der dafür entwickelt wurde, spezifische Werte aus einer gegebenen Datenstruktur dynamisch auszulesen. Er bietet eine flexible Möglichkeit, auf Strukturmember zuzugreifen, deren Namen oder Pfade zur Laufzeit bestimmt werden.
 
+![GET_STRUCT_VALUE](GET_STRUCT_VALUE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

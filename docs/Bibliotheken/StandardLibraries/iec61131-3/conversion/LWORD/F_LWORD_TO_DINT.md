@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_DINT` dient der Konvertierung eines `LWORD`-Datentyps in einen `DINT`-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist, beispielsweise bei der Verarbeitung von großen binären Daten oder bei der Kommunikation zwischen Systemen mit unterschiedlichen Datentypanforderungen.
 
+![F_LWORD_TO_DINT](F_LWORD_TO_DINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Dieser Ereigniseingang löst die Ausführung des Funktionsblocks aus. Er ist mit dem Daten-Eingang `IN` verbunden.

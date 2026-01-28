@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse 4diac Standard Farben</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (max-width: 640px) {
+            .chart-container { height: 300px; }
+        }
+        .color-swatch-large {
+            transition: all 0.3s ease;
+        }
+    </style>
+    <!-- Chosen Palette: Warm Neutral Background (Stone-50) with specific 4diac data colors as accents. The UI uses Slate-800 for text to maintain contrast and a professional IDE documentation feel. -->
+    
+    <!-- Application Structure Plan:
+         The application is designed as an interactive "Style Guide Dashboard". 
+         1. **Header & Context:** Brief introduction to why colors matter in IEC 61499.
+         2. **Interactive Explorer (Split View):** - Left: A Doughnut Chart acting as a visual navigation menu. It groups types by category (Core vs. Data Types) and shows the color distribution.
+            - Right: A Dynamic Detail Card. When a user clicks a chart slice or a list item, this card updates to show the specific color, Hex/RGB codes, description, and a generative Canvas visualization simulating how the connection looks in the IDE (Line vs. Plug).
+         3. **Complete Reference Grid:** A card-based grid showing all colors at once for quick scanning.
+         4. **Configuration Guide:** Static instruction on how to change these settings in Eclipse.
+         This structure allows both exploration (learning the types) and utility (quickly finding a hex code).
+    -->
+
+    <!-- Visualization & Content Choices:
+         1. **Doughnut Chart (Chart.js):**
+            - Goal: Inform & Navigate. Shows the palette at a glance.
+            - Interaction: Click to select a data type.
+            - Justification: Provides a visual overview of the color spectrum used in the IDE.
+         2. **Simulated Connection View (Native Canvas):**
+            - Goal: Context. Shows how the color applies to lines/connections.
+            - Interaction: Updates based on selection.
+            - Justification: Users need to see the color "in action" (e.g., Event lines are distinct from Data lines). NO SVG used.
+         3. **Detail Cards (HTML/Tailwind):**
+            - Goal: Inform. Displays Hex/RGB and descriptions.
+            - Interaction: Copy to clipboard buttons.
+    -->
+
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+</head>
+<body class="bg-stone-50 text-slate-800 antialiased selection:bg-indigo-100 selection:text-indigo-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm border-b border-stone-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-slate-800 rounded-md flex items-center justify-center text-white font-bold text-sm">4d</div>
+                <h1 class="text-xl font-bold tracking-tight text-slate-900">Eclipse 4diac <span class="text-slate-500 font-normal">Farb-Referenz</span></h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#explorer" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Explorer</a>
+                <a href="#grid" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Alle Typen</a>
+                <a href="#config" class="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Konfiguration</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+
+        <!-- Intro Text -->
+        <section class="max-w-3xl mx-auto text-center space-y-4">
+            <h2 class="text-3xl font-bold text-slate-900">Visuelle Identität in IEC 61499</h2>
+            <p class="text-lg text-slate-600 leading-relaxed">
+                In der Eclipse 4diac IDE sind Farben entscheidend, um den Datenfluss vom Kontrollfluss zu unterscheiden. 
+                Diese interaktive Referenz zeigt die Standardfarben für <strong>Events</strong>, <strong>Daten</strong> und <strong>Adapter</strong>, 
+                um die Entwicklung und das Debugging zu erleichtern.
+            </p>
+        </section>
+
+        <!-- Interactive Explorer Section -->
+        <section id="explorer" class="bg-white rounded-2xl shadow-lg border border-stone-100 overflow-hidden">
+            <div class="p-6 border-b border-stone-100">
+                <h3 class="text-lg font-semibold text-slate-800">Farb-Explorer</h3>
+                <p class="text-sm text-slate-500">Klicken Sie auf ein Segment im Diagramm oder nutzen Sie die Liste, um Details anzuzeigen.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 lg:p-10">
+                
+                <!-- Chart Column -->
+                <div class="lg:col-span-5 flex flex-col justify-center items-center">
+                    <div class="chart-container">
+                        <canvas id="colorChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-xs text-stone-400 text-center uppercase tracking-widest font-semibold">Interaktives Diagramm</p>
+                </div>
+
+                <!-- Detail Column -->
+                <div class="lg:col-span-7">
+                    <div id="detail-card" class="h-full flex flex-col justify-between space-y-6">
+                        <!-- Dynamic Content Header -->
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <span id="detail-cat" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-stone-100 text-stone-800 mb-2">Kategorie</span>
+                                <h2 id="detail-title" class="text-3xl font-bold text-slate-900">Wählen Sie einen Typ</h2>
+                                <p id="detail-desc" class="text-slate-600 mt-2">Klicken Sie links auf das Diagramm für Details.</p>
+                            </div>
+                            <div id="detail-swatch" class="w-16 h-16 rounded-xl shadow-inner border border-stone-200 bg-stone-100 transition-colors duration-500"></div>
+                        </div>
+
+                        <!-- Technical Details Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="bg-stone-50 p-4 rounded-xl border border-stone-100 hover:border-indigo-200 transition-colors group cursor-pointer" onclick="copyToClipboard('hex')">
+                                <p class="text-xs text-stone-500 font-semibold uppercase mb-1">HEX Code</p>
+                                <div class="flex items-center justify-between">
+                                    <code id="detail-hex" class="text-lg font-mono font-bold text-slate-800">---</code>
+                                    <span class="text-xs text-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity">Kopieren</span>
+                                </div>
+                            </div>
+                            <div class="bg-stone-50 p-4 rounded-xl border border-stone-100 hover:border-indigo-200 transition-colors group cursor-pointer" onclick="copyToClipboard('rgb')">
+                                <p class="text-xs text-stone-500 font-semibold uppercase mb-1">RGB Werte</p>
+                                <div class="flex items-center justify-between">
+                                    <code id="detail-rgb" class="text-lg font-mono font-bold text-slate-800">---</code>
+                                    <span class="text-xs text-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity">Kopieren</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Usage Context & Simulation -->
+                        <div class="bg-slate-900 rounded-xl p-6 text-white relative overflow-hidden">
+                            <div class="absolute top-0 right-0 p-4 opacity-20">
+                                <span class="text-6xl font-bold font-mono">IDE</span>
+                            </div>
+                            <h4 class="text-sm font-semibold text-slate-300 uppercase tracking-wider mb-4">Visuelle Simulation</h4>
+                            
+                            <div class="flex items-center gap-6">
+                                <div class="w-full h-32 bg-slate-800 rounded-lg border border-slate-700 relative flex items-center justify-center overflow-hidden" id="canvas-wrapper">
+                                    <canvas id="simCanvas" width="400" height="128" class="absolute inset-0 w-full h-full"></canvas>
+                                </div>
+                            </div>
+                            <p id="detail-usage" class="mt-4 text-sm text-slate-400 italic">Wählen Sie einen Datentyp, um die Verbindungssimulation zu sehen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid Reference Section -->
+        <section id="grid">
+            <div class="mb-6">
+                <h3 class="text-2xl font-bold text-slate-900">Alle Datentypen im Überblick</h3>
+                <p class="text-slate-600">Eine vollständige Liste aller definierten Standardfarben.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="grid-container">
+                <!-- Cards will be injected here via JS -->
+            </div>
+        </section>
+
+        <!-- Config Section -->
+        <section id="config" class="bg-indigo-50 rounded-2xl p-8 border border-indigo-100">
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div class="flex-1">
+                    <h3 class="text-xl font-bold text-indigo-900 mb-3">Farben anpassen</h3>
+                    <p class="text-indigo-800 mb-4">
+                        Möchten Sie das Farbschema an Ihre persönlichen Vorlieben oder an einen Dark Mode anpassen?
+                    </p>
+                    <ol class="list-decimal list-inside space-y-2 text-indigo-900 font-medium">
+                        <li>Navigieren Sie in Eclipse zu <span class="bg-white px-2 py-0.5 rounded border border-indigo-200 text-sm font-mono">Window > Preferences</span>.</li>
+                        <li>Wählen Sie <span class="bg-white px-2 py-0.5 rounded border border-indigo-200 text-sm font-mono">4diac IDE > Appearance</span>.</li>
+                        <li>Klicken Sie auf das Farbfeld neben dem gewünschten Verbindungstyp, um den Editor zu öffnen.</li>
+                    </ol>
+                </div>
+                <div class="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm border border-indigo-100 w-full md:w-64">
+                    <div class="text-center">
+                        <div class="text-4xl mb-2">🎨</div>
+                        <p class="text-sm text-slate-500">Tipp: Konsistente Farben im Team erleichtern das gemeinsame Code-Review.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="mb-2">Generiert basierend auf dem Eclipse 4diac Farbschema Dokument.</p>
+            <p class="text-xs text-slate-600">&copy; 2026 Interactive Reference Tool.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Data Source from Source Report
+        const colorData = [
+            {
+                id: 'event',
+                name: 'EVENT',
+                hex: '#63B31F',
+                rgb: '99, 179, 31',
+                category: 'Kern-Typen',
+                description: 'Trigger für die Ausführung von Algorithmen (Ereignisse).',
+                usage: 'Verbindungen am oberen Rand der FBs. Steuern den Kontrollfluss.',
+                type: 'connection'
+            },
+            {
+                id: 'bool',
+                name: 'BOOL',
+                hex: '#9FA48A',
+                rgb: '159, 164, 138',
+                category: 'Kern-Typen',
+                description: 'Boolescher Datentyp (TRUE/FALSE).',
+                usage: 'Dateneingänge/-ausgänge seitlich. Farbe unterscheidet sich von INT/REAL.',
+                type: 'data'
+            },
+            {
+                id: 'adapter',
+                name: 'ADAPTER',
+                hex: '#845DAF',
+                rgb: '132, 93, 175',
+                category: 'Kern-Typen',
+                description: 'Gekapselte Schnittstelle (Socket/Plug).',
+                usage: 'Spezielle Ports (Stecker/Buchsen). Bündelt Events und Daten.',
+                type: 'adapter'
+            },
+            {
+                id: 'any_bit',
+                name: 'ANY_BIT',
+                hex: '#82A3A9',
+                rgb: '130, 163, 169',
+                category: 'Daten-Gruppen',
+                description: 'Bit-basierte Typen: BYTE, WORD, DWORD, LWORD.',
+                usage: 'Allgemeine binäre Datenverarbeitung.',
+                type: 'data'
+            },
+            {
+                id: 'any_int',
+                name: 'ANY_INT',
+                hex: '#18519E',
+                rgb: '24, 81, 158',
+                category: 'Daten-Gruppen',
+                description: 'Ganzzahlen: SINT, INT, DINT, LINT, USINT, etc.',
+                usage: 'Arithmetische Operationen und Zähler.',
+                type: 'data'
+            },
+            {
+                id: 'any_real',
+                name: 'ANY_REAL',
+                hex: '#DBB418',
+                rgb: '219, 180, 24',
+                category: 'Daten-Gruppen',
+                description: 'Gleitkommazahlen: REAL, LREAL.',
+                usage: 'Analoge Werte und präzise Berechnungen.',
+                type: 'data'
+            },
+            {
+                id: 'any_string',
+                name: 'ANY_STRING',
+                hex: '#BD8663',
+                rgb: '189, 134, 99',
+                category: 'Daten-Gruppen',
+                description: 'Zeichenketten: STRING, WSTRING.',
+                usage: 'Textverarbeitung und Nachrichten.',
+                type: 'data'
+            },
+            {
+                id: 'data_time',
+                name: 'DATA / TIME',
+                hex: '#0000FF',
+                rgb: '0, 0, 255',
+                category: 'Komplex',
+                description: 'Strukturen, Arrays und TIME Datentypen.',
+                usage: 'Komplexe Datenobjekte und Zeitsteuerung.',
+                type: 'data'
+            }
+        ];
+
+        // State Management
+        let selectedId = 'event';
+
+        // DOM Elements
+        const detailTitle = document.getElementById('detail-title');
+        const detailDesc = document.getElementById('detail-desc');
+        const detailHex = document.getElementById('detail-hex');
+        const detailRgb = document.getElementById('detail-rgb');
+        const detailSwatch = document.getElementById('detail-swatch');
+        const detailCat = document.getElementById('detail-cat');
+        const detailUsage = document.getElementById('detail-usage');
+        const simCanvas = document.getElementById('simCanvas');
+        const gridContainer = document.getElementById('grid-container');
+
+        // Initialize Chart
+        function initChart() {
+            const ctx = document.getElementById('colorChart').getContext('2d');
+            
+            const data = {
+                labels: colorData.map(d => d.name),
+                datasets: [{
+                    data: colorData.map(() => 1), // Equal visualization size
+                    backgroundColor: colorData.map(d => d.hex),
+                    borderWidth: 0,
+                    hoverOffset: 15
+                }]
+            };
+
+            const config = {
+                type: 'doughnut',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '65%',
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const item = colorData[context.dataIndex];
+                                    return `${item.name}: ${item.hex}`;
+                                }
+                            },
+                            backgroundColor: 'rgba(30, 41, 59, 0.9)',
+                            padding: 12,
+                            cornerRadius: 8
+                        }
+                    },
+                    onClick: (event, elements) => {
+                        if (elements.length > 0) {
+                            const index = elements[0].index;
+                            updateDetail(colorData[index].id);
+                        }
+                    }
+                }
+            };
+
+            new Chart(ctx, config);
+        }
+
+        // Sim Canvas Drawing Logic
+        function drawSimulation(item) {
+            const ctx = simCanvas.getContext('2d');
+            const w = simCanvas.width;
+            const h = simCanvas.height;
+            
+            // Clear
+            ctx.clearRect(0, 0, w, h);
+
+            // Background grid (subtle)
+            ctx.strokeStyle = '#334155';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            for(let i=0; i<w; i+=20) { ctx.moveTo(i,0); ctx.lineTo(i,h); }
+            for(let i=0; i<h; i+=20) { ctx.moveTo(0,i); ctx.lineTo(w,i); }
+            ctx.stroke();
+
+            // Setup Style
+            ctx.strokeStyle = item.hex;
+            ctx.fillStyle = item.hex;
+            ctx.lineWidth = 4;
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+
+            // Draw based on Type
+            if (item.id === 'event') {
+                // Event: Top connection curve
+                ctx.beginPath();
+                ctx.moveTo(50, h); 
+                ctx.lineTo(50, 40);
+                ctx.quadraticCurveTo(50, 20, 70, 20);
+                ctx.lineTo(w - 70, 20);
+                ctx.quadraticCurveTo(w - 50, 20, w - 50, 40);
+                ctx.lineTo(w - 50, h);
+                ctx.stroke();
+                
+                // Event Trigger Arrows
+                ctx.beginPath();
+                ctx.moveTo(70, 20); ctx.lineTo(60, 15); ctx.lineTo(60, 25); ctx.fill();
+            } else if (item.id === 'adapter') {
+                // Adapter: Socket/Plug style (thick + circle)
+                ctx.lineWidth = 6;
+                ctx.beginPath();
+                ctx.moveTo(40, h/2);
+                ctx.lineTo(w - 40, h/2);
+                ctx.stroke();
+                
+                // Plug ends
+                ctx.beginPath();
+                ctx.arc(40, h/2, 10, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(w - 40, h/2, 10, 0, 2 * Math.PI);
+                ctx.stroke(); // Open circle for socket
+            } else {
+                // Data: Side connection (Curve)
+                ctx.beginPath();
+                ctx.moveTo(20, h/2 + 20);
+                ctx.bezierCurveTo(w/3, h/2 + 20, w/3, h/2 - 20, w - 20, h/2 - 20);
+                ctx.stroke();
+
+                // Data Points
+                ctx.beginPath();
+                ctx.arc(20, h/2 + 20, 4, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.beginPath();
+                ctx.arc(w - 20, h/2 - 20, 4, 0, 2 * Math.PI);
+                ctx.fill();
+            }
+        }
+
+        // Update Detail View
+        function updateDetail(id) {
+            selectedId = id;
+            const item = colorData.find(d => d.id === id);
+            
+            // Text Updates
+            detailTitle.textContent = item.name;
+            detailDesc.textContent = item.description;
+            detailHex.textContent = item.hex;
+            detailRgb.textContent = item.rgb;
+            detailCat.textContent = item.category;
+            detailUsage.textContent = item.usage;
+            
+            // Visual Updates
+            detailSwatch.style.backgroundColor = item.hex;
+            
+            // Canvas Simulation
+            drawSimulation(item);
+        }
+
+        // Populate Grid
+        function renderGrid() {
+            gridContainer.innerHTML = '';
+            colorData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-xl shadow-sm border border-stone-100 hover:shadow-md transition-shadow overflow-hidden cursor-pointer';
+                card.onclick = () => {
+                    document.getElementById('explorer').scrollIntoView({behavior: 'smooth'});
+                    updateDetail(item.id);
+                };
+                
+                card.innerHTML = `
+                    <div class="h-24 w-full" style="background-color: ${item.hex}"></div>
+                    <div class="p-4">
+                        <div class="flex justify-between items-center mb-2">
+                            <h4 class="font-bold text-slate-900">${item.name}</h4>
+                            <span class="text-[10px] uppercase font-bold text-stone-400 border border-stone-200 px-1 rounded">${item.category === 'Kern-Typen' ? 'KERN' : 'DATA'}</span>
+                        </div>
+                        <p class="text-xs text-stone-500 font-mono mb-2">${item.hex}</p>
+                        <p class="text-xs text-slate-600 line-clamp-2">${item.description}</p>
+                    </div>
+                `;
+                gridContainer.appendChild(card);
+            });
+        }
+
+        // Clipboard Utility
+        function copyToClipboard(type) {
+            const item = colorData.find(d => d.id === selectedId);
+            const text = type === 'hex' ? item.hex : `rgb(${item.rgb})`;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                // Visual Feedback
+                const el = type === 'hex' ? document.getElementById('detail-hex') : document.getElementById('detail-rgb');
+                const original = el.textContent;
+                el.textContent = 'Kopiert!';
+                el.classList.add('text-indigo-600');
+                
+                setTimeout(() => {
+                    el.textContent = original;
+                    el.classList.remove('text-indigo-600');
+                }, 1000);
+            });
+        }
+
+        // Init
+        document.addEventListener('DOMContentLoaded', () => {
+            initChart();
+            renderGrid();
+            updateDetail('event'); // Set default
+            
+            // Handle window resize for canvas
+            window.addEventListener('resize', () => {
+                const item = colorData.find(d => d.id === selectedId);
+                drawSimulation(item);
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_OR_2 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen ODER-Verknüpfung. Er verarbeitet zwei Eingangssignale und gibt das logische ODER-Ergebnis aus. Der Baustein ist speziell für die Verwendung in Automatisierungssystemen konzipiert.
 
+![AX_OR_2](AX_OR_2.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Keine Ereignis-Eingänge vorhanden
@@ -52,6 +54,14 @@ Da es sich um einen kombinatorischen Logikbaustein handelt, besitzt AX_OR_2 kein
 Im Vergleich zu anderen ODER-Bausteinen zeichnet sich AX_OR_2 durch seine Adapter-basierte Schnittstelle aus, die eine flexible Integration in verschiedene Systemarchitekturen ermöglicht. Die unidirektionalen Adapter gewährleisten eine klare Signalflussrichtung.
 
 Vergleich mit [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_002a3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a3_AX.md)
+* [Uebung_002b3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+* [Uebung_160_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_160_AX.md)
 
 ## Fazit
 Der AX_OR_2 Funktionsblock bietet eine zuverlässige und einfach zu integrierende Lösung für boolesche ODER-Verknüpfungen in Automatisierungssystemen. Seine Adapter-basierte Architektur ermöglicht eine flexible Verwendung in verschiedenen Steuerungskontexten.

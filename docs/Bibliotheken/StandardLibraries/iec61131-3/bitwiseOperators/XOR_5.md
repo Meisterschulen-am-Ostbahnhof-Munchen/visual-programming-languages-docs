@@ -10,6 +10,8 @@
 ## Einleitung
 Der XOR_5 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen booleschen XOR-Operation mit fünf Eingängen. Er implementiert die exklusive ODER-Verknüpfung für beliebige Bit-Datentypen gemäß dem IEC 61131-3 Standard.
 
+![XOR_5](XOR_5.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

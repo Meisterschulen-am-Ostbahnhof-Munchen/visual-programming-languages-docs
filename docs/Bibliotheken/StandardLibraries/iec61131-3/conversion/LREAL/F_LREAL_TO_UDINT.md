@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LREAL_TO_UDINT` dient zur Konvertierung eines 64-Bit Gleitkommawerts (LREAL) in einen 32-Bit vorzeichenlosen Integerwert (UDINT). Diese Konvertierung ist nützlich, wenn Gleitkommazahlen in vorzeichenlose Integerwerte umgewandelt werden müssen, z.B. für spezifische Steuerungs- oder Kommunikationsanwendungen.
 
+![F_LREAL_TO_UDINT](F_LREAL_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

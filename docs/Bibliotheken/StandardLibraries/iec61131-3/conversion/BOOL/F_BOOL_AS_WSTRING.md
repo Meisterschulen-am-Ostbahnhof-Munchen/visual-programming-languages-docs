@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BOOL_AS_WSTRING` dient der Konvertierung eines booleschen Wertes (`BOOL`) in eine breite Zeichenkette (`WSTRING`). Diese Funktionalität ist besonders nützlich, wenn boolesche Werte in menschenlesbarer Form ausgegeben oder weiterverarbeitet werden sollen.
 
+![F_BOOL_AS_WSTRING](F_BOOL_AS_WSTRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

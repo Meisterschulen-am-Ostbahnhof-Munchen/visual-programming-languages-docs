@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_ULINT` dient der Konvertierung eines vorzeichenbehafteten 8-Bit-Integer-Werts (`SINT`) in einen vorzeichenlosen 64-Bit-Integer-Wert (`ULINT`). Dieser Baustein ist besonders nützlich in Szenarien, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_SINT_TO_ULINT](F_SINT_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -56,5 +56,11 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt ausschl
 - Im Vergleich zu generischen Bitmanipulations-Funktionsblöcken bietet `SPLIT_BYTE_INTO_QUARTERS` eine spezialisierte und optimierte Lösung für die Aufteilung eines Bytes in vier Teile.
 - Andere Blöcke wie `EXTRACT_BITS` oder `BIT_SLICE` sind allgemeiner, erfordern aber mehr Konfiguration und sind möglicherweise weniger effizient.
 
+
+
+## Zugehörige Übungen
+
+* [Uebung_056](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
+
 ## Fazit
 Der `SPLIT_BYTE_INTO_QUARTERS`-Funktionsblock ist eine effiziente und spezialisierte Lösung für die Aufteilung eines Bytes in vier Viertelbytes. Durch die Verwendung von Bitoperationen und Konstanten ist er schnell und flexibel einsetzbar. Ideal für Anwendungen, bei denen Daten in kompakter Form vorliegen und separat verarbeitet werden müssen.

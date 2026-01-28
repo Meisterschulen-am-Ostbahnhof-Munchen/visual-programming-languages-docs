@@ -12,6 +12,8 @@
 
 Der FB_TP (Timer Pulse) ist ein standardisierter Zeitgeber-Funktionsblock nach IEC 61131-3, der eine pulsierende Ausgangsfunktion bereitstellt. Der Baustein erzeugt einen Impuls mit einer definierten Zeitdauer, unabhängig von der Dauer des Eingangssignals.
 
+![FB_TP](FB_TP.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -57,6 +59,13 @@ Der FB_TP funktioniert als monostabiler Multivibrator (One-Shot). Bei einem posi
 - **FB_TON**: Einschaltverzögerung - Q wird erst nach Ablauf von PT aktiv
 - **FB_TOF**: Ausschaltverzögerung - Q bleibt nach IN-Rücksetzung noch für PT aktiv
 - **FB_TP**: Impulsgeber - Erzeugt einen festen Impuls unabhängig von IN
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_020f2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020f2.md)
+* [Uebung_020f2_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
 
 ## Fazit
 Der FB_TP ist ein essentieller Baustein für zeitgesteuerte Anwendungen in der Automatisierungstechnik. Seine einfache Handhabung und zuverlässige Funktionsweise machen ihn ideal für Anwendungen, bei denen präzise Zeitimpulse benötigt werden. Die klare Trennung von Startimpuls und Impulsdauer ermöglicht flexible Steuerungskonzepte.

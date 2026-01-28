@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_INT_AS_WSTRING` dient der Konvertierung eines ganzzahligen Wertes (`INT`) in eine breite Zeichenkette (`WSTRING`). Diese Funktionalität ist besonders nützlich, wenn numerische Werte für die Anzeige oder Weiterverarbeitung als Text benötigt werden.
 
+![F_INT_AS_WSTRING](F_INT_AS_WSTRING.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Wird dieser Eingang ausgelöst, wird der Wert am Daten-Eingang `IN` verarbeitet.

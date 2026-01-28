@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_REAL_AS_WSTRING` dient der Konvertierung eines `REAL`-Wertes in einen `WSTRING`-Wert. Dieser Baustein ist besonders nützlich, wenn numerische Werte in eine für die Ausgabe oder Weiterverarbeitung geeignete Zeichenkette umgewandelt werden müssen.
 
+![F_REAL_AS_WSTRING](F_REAL_AS_WSTRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

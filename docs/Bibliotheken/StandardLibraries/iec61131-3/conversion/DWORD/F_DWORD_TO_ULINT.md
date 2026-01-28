@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_ULINT` dient der Konvertierung eines `DWORD`-Wertes in einen `ULINT`-Wert. Er ist Teil des `iec61131::conversion`-Pakets und wird typischerweise in Automatisierungsanwendungen eingesetzt, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_DWORD_TO_ULINT](F_DWORD_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

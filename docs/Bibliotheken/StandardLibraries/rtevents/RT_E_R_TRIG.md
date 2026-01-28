@@ -8,6 +8,8 @@
 ## Einleitung
 Echtzeit-Variante des E_R_TRIG Bausteins (Steigende Flanke).
 
+![RT_E_R_TRIG](RT_E_R_TRIG.svg)
+
 ## Metadaten
 | Attribut | Wert |
 | :--- | :--- |

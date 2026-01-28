@@ -10,6 +10,8 @@
 ## Einleitung
 Der E_BLINK Funktionsblock simuliert ein blinkendes Signal, das zwischen den Zuständen TRUE und FALSE wechselt. Die Dauer der einzelnen Zustände kann individuell konfiguriert werden. Im Gegensatz zu ähnlichen Implementierungen kehrt dieser Funktionsblock beim STOP-Ereignis immer auf FALSE zurück.
 
+![E_BLINK](E_BLINK.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

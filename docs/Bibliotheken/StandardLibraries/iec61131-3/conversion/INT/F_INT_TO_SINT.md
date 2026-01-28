@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_INT_TO_SINT` dient der Konvertierung eines ganzzahligen Wertes vom Typ `INT` in einen vorzeichenbehafteten 8-Bit-Integer-Wert vom Typ `SINT`. Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen mit unterschiedlichen Datentypen ausgetauscht oder verarbeitet werden müssen.
 
+![F_INT_TO_SINT](F_INT_TO_SINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der DataPanel_MI_IXA ist ein zusammengesetzter Funktionsblock für die Verarbeitung von booleschen Eingabedaten. Er dient als Schnittstelle für digitale Eingänge und ermöglicht die Initialisierung und Abfrage von Eingangsdaten über standardisierte Service-Schnittstellen.
 
+![DataPanel_MI_IXA](DataPanel_MI_IXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

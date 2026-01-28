@@ -10,6 +10,8 @@
 ## Einleitung
 Der logiBUS_QXA ist ein zusammengesetzter Funktionsblock für die Ausgabe von booleschen Daten. Er dient als Schnittstelle für digitale Ausgabefunktionen und ermöglicht die Steuerung von bis zu 8 digitalen Ausgängen über ein standardisiertes Protokoll.
 
+![logiBUS_QXA](logiBUS_QXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

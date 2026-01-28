@@ -10,6 +10,8 @@
 ## Einleitung
 Der AND_4 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen booleschen UND-Verknüpfung. Er verarbeitet vier Eingangswerte und führt eine logische UND-Operation auf Bitebene durch. Der Baustein ist nach dem IEC 61131-3 Standard klassifiziert und unterstützt beliebige Bit-Datentypen.
 
+![AND_4](AND_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

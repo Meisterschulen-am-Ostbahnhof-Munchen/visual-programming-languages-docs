@@ -10,6 +10,8 @@
 ## Einleitung
 Der Aux_QD Funktionsblock ist ein Ausgabeservice-Interface-Baustein für die Verarbeitung von Doppelwort-Ausgabedaten (DWORD). Er dient als Schnittstelle für Auxiliary-Ausgabefunktionen und unterstützt verschiedene Auxiliary-Typen zur flexiblen Datenausgabe.
 
+![Aux_QD](Aux_QD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

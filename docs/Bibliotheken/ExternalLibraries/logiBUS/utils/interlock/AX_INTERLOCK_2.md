@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AX_INTERLOCK_2` ist ein ereignisgesteuerter, bistabiler Baustein mit Toggle-Funktionalität und einem dualen Verriegelungsmechanismus (Interlock). Er dient zur Steuerung zweier unabhängiger, aber gegenseitig ausschließender Ausgänge. Der Baustein kombiniert Set-, Reset- und Toggle-Funktionen für zwei Kanäle und stellt sicher, dass immer nur einer der beiden Ausgänge aktiv sein kann.
 
+![AX_INTERLOCK_2](AX_INTERLOCK_2.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **SET1**: Setzt den Ausgang OUT1.

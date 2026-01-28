@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_INT` dient der Konvertierung eines `STRING`-Wertes in einen `INT`-Wert. Diese Funktionalität ist besonders nützlich, wenn Zeichenketten, die numerische Werte repräsentieren, in ganzzahlige Werte umgewandelt werden müssen.
 
+![F_STRING_AS_INT](F_STRING_AS_INT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Wird dieser Ereigniseingang ausgelöst, wird der `STRING`-Wert am Daten-Eingang `IN` in einen `INT`-Wert umgewandelt.

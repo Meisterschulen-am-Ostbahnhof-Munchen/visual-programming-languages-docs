@@ -8,6 +8,8 @@
 ## Einleitung
 Echtzeit-Variante des E_DEMUX Bausteins. Leitet ein Eingangsereignis an einen von mehreren Ausgängen weiter.
 
+![RT_E_DEMUX](RT_E_DEMUX.svg)
+
 ## Metadaten
 | Attribut | Wert |
 | :--- | :--- |

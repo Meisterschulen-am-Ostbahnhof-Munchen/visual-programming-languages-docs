@@ -7,6 +7,12 @@ search_dirs = [
     r"docs/training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen"
 ]
 
+# Correct paths relative to script execution location (root of repo)
+search_dirs = [
+    r"visual-programming-languages-docs/docs/training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen",
+    r"visual-programming-languages-docs/docs/training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen"
+]
+
 target_fbs = [
     # Timers
     "AX_FB_TOF", "AX_FB_TON", "AX_FB_TP",
@@ -48,7 +54,10 @@ target_fbs = [
     "AX_MUX_2", "AX_MUX_3", 
     "AX_DEMUX_2", "AX_DEMUX_3", "AX_DEMUX_4", "AX_DEMUX_5",
     "E_MUX_2", "E_MUX_4", "E_MUX_8", 
-    "E_DEMUX", "E_DEMUX_2", "E_DEMUX_4", "E_DEMUX_8"
+    "E_DEMUX", "E_DEMUX_2", "E_DEMUX_4", "E_DEMUX_8",
+
+    # ISOBUS
+    "Q_ActiveMask"
 ]
 
 def scan_files():

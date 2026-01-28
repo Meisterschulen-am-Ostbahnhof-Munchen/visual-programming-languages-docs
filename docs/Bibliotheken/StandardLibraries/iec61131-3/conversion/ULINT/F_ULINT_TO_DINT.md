@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ULINT_TO_DINT` dient der Konvertierung eines `ULINT`-Wertes (64-Bit unsignierte Ganzzahl) in einen `DINT`-Wert (32-Bit signierte Ganzzahl). Diese Konvertierung ist besonders in Szenarien relevant, in denen Daten zwischen Systemen mit unterschiedlichen Datentypen ausgetauscht werden müssen.
 
+![F_ULINT_TO_DINT](F_ULINT_TO_DINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -1,3 +1,5 @@
+![DataPanel_MI_QW_PWMi](DataPanel_MI_QW_PWMi.svg)
+
 # DataPanel_MI_QW_PWMi
 
 ```{index} single: DataPanel_MI_QW_PWMi

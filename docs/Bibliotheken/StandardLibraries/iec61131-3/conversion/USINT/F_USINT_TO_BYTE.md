@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_BYTE` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (USINT) in einen Byte-Wertyp (BYTE). Diese Konvertierung ist insbesondere in Szenarien erforderlich, wo Daten zwischen unterschiedlichen Formaten oder Systemen ausgetauscht werden müssen.
 
+![F_USINT_TO_BYTE](F_USINT_TO_BYTE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

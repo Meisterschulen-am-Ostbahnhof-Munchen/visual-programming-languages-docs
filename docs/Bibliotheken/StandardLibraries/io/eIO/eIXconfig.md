@@ -10,6 +10,8 @@
 ## Einleitung
 Der eIXconfig Funktionsblock dient als Service Interface Function Block zur Konfiguration von eIO-Instanzen. Er ermöglicht die Einstellung von Trigger-Eigenschaften für Ein- und Ausgänge und stellt eine Verbindung zu eIO-Instanzen über einen Adapter bereit.
 
+![eIXconfig](eIXconfig.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

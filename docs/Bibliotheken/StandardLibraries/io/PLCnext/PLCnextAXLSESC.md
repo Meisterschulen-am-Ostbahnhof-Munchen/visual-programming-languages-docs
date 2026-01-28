@@ -10,6 +10,8 @@
 ## Einleitung
 Der PLCnextAXLSESC ist ein Service Interface Function Block, der als Schnittstelle für PLCnext-Bussysteme dient. Dieser Baustein ermöglicht die Kommunikation zwischen der 4diac-Umgebung und PLCnext-Hardwarekomponenten über spezielle Busadapter.
 
+![PLCnextAXLSESC](PLCnextAXLSESC.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

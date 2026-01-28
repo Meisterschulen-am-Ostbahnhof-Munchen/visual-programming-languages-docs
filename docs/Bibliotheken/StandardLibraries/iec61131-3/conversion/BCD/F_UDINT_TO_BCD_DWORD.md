@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_BCD_DWORD` dient der Konvertierung eines vorzeichenlosen 32-Bit-Integer-Werts (UDINT) in ein BCD-kodiertes DWORD. Diese Konvertierung ist insbesondere in Anwendungen nützlich, bei denen numerische Werte in einem für Menschen lesbaren Format dargestellt oder verarbeitet werden müssen.
 
+![F_UDINT_TO_BCD_DWORD](F_UDINT_TO_BCD_DWORD.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

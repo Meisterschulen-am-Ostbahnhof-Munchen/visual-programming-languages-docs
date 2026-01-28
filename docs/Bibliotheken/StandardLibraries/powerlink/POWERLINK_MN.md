@@ -8,6 +8,8 @@
 ## Einleitung
 Der POWERLINK_MN Funktionsblock dient zur Konfiguration des openPOWERLINK Feldbusses. Er fungiert als Managing Node (MN) und initialisiert das Netzwerk.
 
+![POWERLINK_MN](POWERLINK_MN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

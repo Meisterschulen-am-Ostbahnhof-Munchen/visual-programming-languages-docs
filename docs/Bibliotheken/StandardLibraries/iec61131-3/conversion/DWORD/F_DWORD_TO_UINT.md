@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_UINT` dient der Konvertierung eines `DWORD`-Wertes in einen `UINT`-Wert. Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist, beispielsweise bei der Kommunikation zwischen verschiedenen Systemen oder bei der Verarbeitung von Daten aus unterschiedlichen Quellen.
 
+![F_DWORD_TO_UINT](F_DWORD_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

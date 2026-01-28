@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_USINT` dient der Konvertierung eines `BYTE`-Wertes in einen `USINT`-Wert (Unsigned Short Integer). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist, z.B. bei der Kommunikation zwischen verschiedenen Systemen oder bei der Datenverarbeitung.
 
+![F_BYTE_TO_USINT](F_BYTE_TO_USINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

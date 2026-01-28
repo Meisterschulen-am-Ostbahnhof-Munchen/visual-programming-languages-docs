@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UINT_TO_LWORD` dient der Konvertierung eines `UINT`-Wertes (16-Bit unsigned integer) in einen `LWORD`-Wert (64-Bit unsigned integer). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten unterschiedlicher Bitbreiten verarbeitet oder übertragen werden müssen.
 
+![F_UINT_TO_LWORD](F_UINT_TO_LWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

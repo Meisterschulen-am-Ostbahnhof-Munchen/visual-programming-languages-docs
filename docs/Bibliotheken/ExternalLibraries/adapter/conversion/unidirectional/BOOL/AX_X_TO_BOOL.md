@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock AX_X_TO_BOOL ist ein Composite-Funktionsblock, der für die Konvertierung von AX-Daten in den BOOL-Datentyp entwickelt wurde. Dieser Baustein dient als Adapter-Konverter und ermöglicht die unidirektionale Umwandlung von Daten zwischen unterschiedlichen Datentypen in 4diac-Systemen.
 
+![AX_X_TO_BOOL](AX_X_TO_BOOL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_BYTE` dient der Konvertierung eines WSTRING-Datentyps in einen BYTE-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, wo eine Umwandlung von breiten Zeichenketten in einzelne Bytes erforderlich ist.
 
+![F_WSTRING_AS_BYTE](F_WSTRING_AS_BYTE.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung des Funktionsblocks. Bei diesem Ereignis wird der Eingangswert `IN` verarbeitet.

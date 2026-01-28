@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_DEMUX_3 ist ein generischer Demultiplexer-Funktionsblock, der Eingangsdaten basierend auf einem Indexwert auf einen von drei möglichen Ausgängen verteilt. Der Baustein dient zur selektiven Weiterleitung von Datenströmen in verteilten Automatisierungssystemen.
 
+![AX_DEMUX_3](AX_DEMUX_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -59,6 +61,14 @@ Im Vergleich zu einfachen Demultiplexern bietet AX_DEMUX_3:
 - Generische Implementierung für Typunabhängigkeit
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_103](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
+* [Uebung_103c](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c.md)
+* [Uebung_103c2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c2.md)
 
 ## Fazit
 Der AX_DEMUX_3 stellt einen robusten und flexiblen Demultiplexer für verteilte Automatisierungssysteme dar. Durch die Verwendung standardisierter Adapter und die klare Ereignissteuerung eignet er sich besonders für komplexe Datenfluss-Steuerungen in industriellen Anwendungen.

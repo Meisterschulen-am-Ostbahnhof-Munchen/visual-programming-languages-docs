@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_ET_05` implementiert eine sequenzielle Steuerung mit fünf definierten Zuständen (State_01 bis State_05) und einem Startzustand (START). Der Übergang zwischen den Zuständen kann entweder durch ein externes Ereignis oder nach Ablauf einer einstellbaren Zeit erfolgen. Der Baustein ist für Anwendungen konzipiert, die eine schrittweise Abfolge von Aktionen mit flexiblen Übergangsbedingungen erfordern.
 
+![sequence_ET_05](sequence_ET_05.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -80,6 +82,13 @@ Die ECC umfasst folgende Zustände:
 
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Timer-Ketten oder Zählern bietet `sequence_ET_05` eine vollständig gekapselte Zustandsmaschine mit klaren Eingangs-/Ausgangsereignissen und der flexiblen Kombination aus Zeit- und Ereignissteuerung. Gegenüber einem generischen `E_SR`- oder `E_CTUD`-Baustein in einer Ad-hoc-Verknüpfung stellt er eine vordefinierte, getestete und leicht zu parametrierende Lösung für eine häufige Steuerungsaufgabe dar.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_039](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039.md)
+* [Uebung_039a](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039a.md)
 
 ## Fazit
 Der `sequence_ET_05` ist ein gut strukturierter und flexibler Funktionsblock zur Implementierung von 5-stufigen Sequenzen. Die klare Trennung von Steuerfluss (Ereignisse) und Parametern (Zeiten) sowie die Möglichkeit, jeden Übergang wahlweise manuell oder automatisch zu gestalten, machen ihn für eine Vielzahl von Steuerungsaufgaben in der Automatisierungstechnik geeignet. Die Nutzung standardisierter Adapter und die ausführliche Dokumentation der Schnittstellen erleichtern die Integration in größere Anwendungen.

@@ -8,6 +8,8 @@
 ## Einleitung
 Echtzeit-Variante des E_PERMIT Bausteins. Lässt ein Ereignis nur durch, wenn die Bedingung (PERMIT) wahr ist.
 
+![RT_E_PERMIT](RT_E_PERMIT.svg)
+
 ## Metadaten
 | Attribut | Wert |
 | :--- | :--- |

@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_BOOL_TO_X Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines BOOL-Werts in das AX-Adapterformat dient. Er ermöglicht die einfache Umwandlung von booleschen Werten in ein standardisiertes Ausgabeformat für die weitere Verarbeitung in Automatisierungssystemen.
 
+![AX_BOOL_TO_X](AX_BOOL_TO_X.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

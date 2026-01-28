@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_REND` (Event Rendezvous) ist ein Funktionsbaustein nach IEC 61499, der als Synchronisationspunkt für zwei verschiedene Ereignisströme dient. Er feuert ein Ausgangsereignis erst dann, wenn er jeweils mindestens ein Ereignis von beiden seiner Eingänge empfangen hat. Dies entspricht einer logischen UND-Verknüpfung über die Zeit.
 
+![E_REND](E_REND.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**
@@ -37,6 +39,17 @@ Der `E_REND` (Event Rendezvous) ist ein Funktionsbaustein nach IEC 61499, der al
 - **Prozess-Synchronisation**: Ein nächster Prozessschritt (`EO`) darf erst starten, wenn zwei voneinander unabhängige Vorbedingungen erfüllt sind (z.B. "Bauteil eingespannt" (`EI1`) und "Schutztür geschlossen" (`EI2`)).
 - **Quittierung**: Eine Aktion wird erst ausgeführt, wenn sowohl ein Befehl (`EI1`) als auch eine manuelle Quittierung durch einen Bediener (`EI2`) vorliegen.
 - **Materialfluss**: Ein Förderband stoppt (`EO`), wenn sowohl der vordere als auch der hintere Sensor ein langes Bauteil detektiert haben.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_004a6](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a6.md)
+* [Uebung_004a6_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a6_AX.md)
+* [Uebung_004a7](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a7.md)
+* [Uebung_004a7_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
+* [Uebung_025](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_025.md)
+* [Uebung_026](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_026.md)
 
 ## Fazit
 Der `E_REND`-Baustein ist ein kritisches Werkzeug für die Synchronisation von Prozessen in IEC 61499. Er bietet eine robuste Methode, um sicherzustellen, dass mehrere Bedingungen erfüllt sind, bevor eine nachfolgende Aktion ausgelöst wird. Seine Fähigkeit, sich das Eintreffen von Ereignissen zu "merken", macht ihn wesentlich leistungsfähiger als einfache logische Verknüpfungen und ist fundamental für die Steuerung von asynchronen und parallelen Abläufen.

@@ -8,6 +8,8 @@
 ## Einleitung
 Der Funktionsblock FB_RANDOM generiert eine zufällige REAL-Zahl zwischen 0 und 1.
 
+![FB_RANDOM](FB_RANDOM.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

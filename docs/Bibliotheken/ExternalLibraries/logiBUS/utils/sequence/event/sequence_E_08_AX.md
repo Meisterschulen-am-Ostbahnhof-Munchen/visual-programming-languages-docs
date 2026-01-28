@@ -7,6 +7,8 @@
 ## Einleitung
 `sequence_E_08_AX` ist eine Variante des `sequence_E_08`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein ereignisgesteuerte Sequenz mit 8 Ausgabezuständen.
 
+![sequence_E_08_AX](sequence_E_08_AX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

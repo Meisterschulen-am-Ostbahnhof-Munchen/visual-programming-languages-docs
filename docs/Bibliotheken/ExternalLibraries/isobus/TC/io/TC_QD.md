@@ -10,6 +10,8 @@
 ## Einleitung
 Der TC_QD Funktionsblock ist ein Ausgabeservice-Interface-Funktionsblock für Double-Word-Ausgabedaten. Er dient als Schnittstelle zur Kommunikation mit externen Ressourcen und ermöglicht die Ausgabe von 32-Bit-Datenwerten über spezifizierte Geräteelemente.
 
+![TC_QD](TC_QD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LREAL_TO_LWORD` dient der Konvertierung eines LREAL-Wertes (64-Bit Gleitkommazahl) in einen LWORD-Wert (64-Bit vorzeichenlose Ganzzahl). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Gleitkommazahlen in eine binäre Darstellung umgewandelt werden müssen.
 
+![F_LREAL_TO_LWORD](F_LREAL_TO_LWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

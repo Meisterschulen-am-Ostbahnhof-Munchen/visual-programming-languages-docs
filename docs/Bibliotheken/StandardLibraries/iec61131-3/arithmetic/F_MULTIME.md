@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_MULTIME](F_MULTIME.svg)
+
+
 ## Einführung
 Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation von Zeitwerten mit numerischen Faktoren, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Skalierung von Zeitintervallen gemäß IEC 61131-3 Standard.
 
@@ -71,6 +74,12 @@ Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation
 | Operation     | Zeitmultiplikation | Numerische Multiplikation | Zeitdivision |
 | Eingänge      | TIME × ANY_NUM | ANY_NUM × ANY_NUM | TIME ÷ ANY_NUM |
 | Ausgangstyp   | TIME      | ANY_NUM | TIME      |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_020c2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c2.md)
 
 ## Fazit
 

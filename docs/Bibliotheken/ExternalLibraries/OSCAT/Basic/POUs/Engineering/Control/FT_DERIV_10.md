@@ -1,3 +1,5 @@
+![FT_DERIV_10](FT_DERIV_10.svg)
+
 # FT_DERIV_10
 
 ```{index} single: FT_DERIV_10

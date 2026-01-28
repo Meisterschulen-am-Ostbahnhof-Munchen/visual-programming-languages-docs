@@ -8,6 +8,8 @@ Der AX_AE_MERGE Funktionsblock ermöglicht das Zusammenführen eines reinen Erei
 
 Dies ist besonders nützlich, wenn ein zyklisches Ereignis (z.B. von einem `AE_CYCLE`) einen Status-Check oder eine Aktion in einem AX-basierten Datenstrom erzwingen soll, ohne die Daten selbst zu verändern.
 
+![AX_AE_MERGE](AX_AE_MERGE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Adapter**

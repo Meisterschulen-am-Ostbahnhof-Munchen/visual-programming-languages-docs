@@ -9,6 +9,8 @@
 ## Einleitung
 Der OR_9 Funktionsblock ist ein generischer Baustein zur Berechnung einer bitweisen logischen ODER-Verknüpfung. Er unterstützt bis zu neun Eingangsvariablen und gibt das Ergebnis der ODER-Operation aus. Der Baustein ist Teil der IEC 61131-3 Standardbibliothek für bitweise boolesche Funktionen.
 
+![OR_9](OR_9.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

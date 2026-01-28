@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_MOVE](F_MOVE.svg)
+
+
 ## Einführung
 Der **F_MOVE** ist ein universeller Funktionsbaustein zur typsicheren Datenübertragung, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die Übertragung beliebiger Datentypen (ANY) zwischen Variablen in Steuerungsanwendungen.
 
@@ -70,6 +73,15 @@ Der **F_MOVE** ist ein universeller Funktionsbaustein zur typsicheren Datenüber
 | Funktionsumfang| Einzelwert | Speicherblock | Typkonvertierung |
 | Typunterstützung | ANY    | BYTE-Array   | ANY    |
 | Latenz         | 1 Zyklus | Variabel     | 1 Zyklus |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_002b2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b2.md)
+* [Uebung_103c](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c.md)
+* [Uebung_110](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_110.md)
+* [Uebung_111](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_111.md)
 
 ## Fazit
 

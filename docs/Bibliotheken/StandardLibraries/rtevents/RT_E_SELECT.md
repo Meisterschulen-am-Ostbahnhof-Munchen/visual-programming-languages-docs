@@ -8,6 +8,8 @@
 ## Einleitung
 Echtzeit-Variante des E_SELECT Bausteins. Wählt eines von zwei Eingangsereignissen basierend auf einem Selektor aus.
 
+![RT_E_SELECT](RT_E_SELECT.svg)
+
 ## Metadaten
 | Attribut | Wert |
 | :--- | :--- |

@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_SUB_TOD_TIME](F_SUB_TOD_TIME.svg)
+
+
 ## Einführung
 Der **F_SUB_TOD_TIME** ist ein standardkonformer Funktionsbaustein zur Subtraktion von Zeitintervallen von Tageszeiten (TIME_OF_DAY), entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht tageszeitbezogene Berechnungen gemäß IEC 61131-3 Standard.
 

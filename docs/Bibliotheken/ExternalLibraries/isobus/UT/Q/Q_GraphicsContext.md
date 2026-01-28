@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_GraphicsContext** ist ein standardkonformer Funktionsbaustein zur Steuerung von Grafik-Kontextobjekten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.56) Spezifikation für VT-Systeme ab Version 4.
 
+![Q_GraphicsContext](Q_GraphicsContext.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

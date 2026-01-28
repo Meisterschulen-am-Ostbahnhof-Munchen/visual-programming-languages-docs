@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_WORD` dient der Konvertierung eines 32-Bit-DWORD-Wertes in einen 16-Bit-WORD-Wert. Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen mit unterschiedlichen Wortbreiten ausgetauscht werden müssen oder wenn Speicherplatz optimiert werden soll.
 
+![F_DWORD_TO_WORD](F_DWORD_TO_WORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

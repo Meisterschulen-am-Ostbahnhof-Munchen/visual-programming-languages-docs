@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_SEL Funktionsblock ist ein binärer Selektor, der zur Auswahl zwischen zwei Eingangswerten dient. Er gehört zur Kategorie der Standard-Selektionsfunktionen gemäß IEC 61131-3 und ermöglicht die flexible Auswahl von Daten basierend auf einem Steuersignal.
 
+![AX_SEL](AX_SEL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

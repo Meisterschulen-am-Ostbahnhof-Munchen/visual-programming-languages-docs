@@ -10,6 +10,8 @@
 ## Einleitung
 Der **ADD_3** ist eine erweiterte Version des Addierers zur Berechnung der Summe dreier Werte, entwickelt unter EPL-2.0 Lizenz. Version 1.0 bietet typsichere Addition für verschiedene numerische Datentypen gemäß IEC 61131-3 Standard.
 
+![ADD_3](ADD_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -71,6 +73,13 @@ Der **ADD_3** ist eine erweiterte Version des Addierers zur Berechnung der Summe
   - OUT = 0 (numerische Typen)
   - Leerer Wert (nicht-numerische Typen)
   - Kein Abbruch der Ausführung
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_087](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087.md)
+* [Uebung_087a1](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087a1.md)
 
 ## Fazit
 

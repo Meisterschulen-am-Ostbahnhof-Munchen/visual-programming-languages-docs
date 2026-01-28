@@ -10,6 +10,8 @@
 ## Einleitung
 Der eIWconfig Funktionsblock dient als Service Interface für die Konfiguration von eIO-Instanzen. Er ermöglicht die Einstellung von Schwellwerten und Gradienten für industrielle IO-Operationen.
 
+![eIWconfig](eIWconfig.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

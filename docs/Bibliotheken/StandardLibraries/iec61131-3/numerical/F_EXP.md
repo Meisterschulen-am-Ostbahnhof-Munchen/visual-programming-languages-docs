@@ -9,6 +9,8 @@
 ## Einleitung
 Der F_EXP Funktionsblock berechnet die natürliche Exponentialfunktion (e^x) für numerische Eingabewerte. Er gehört zu den Standardfunktionen für numerische Variablen nach IEC 61131-3 und wird für mathematische Berechnungen in Steuerungsanwendungen eingesetzt.
 
+![F_EXP](F_EXP.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

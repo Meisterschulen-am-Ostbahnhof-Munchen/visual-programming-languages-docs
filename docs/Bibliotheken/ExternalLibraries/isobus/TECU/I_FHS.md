@@ -11,6 +11,8 @@
 Der **I_FHS** ist ein standardkonformer Funktionsbaustein für Front-Anbaugerätestatusinformationen nach ISO 11783-7 (PGN 65094).
 Entwickelt unter EPL-2.0 Lizenz,ermöglicht er die Überwachung und Steuerung von Front-Anbaugeräten in modernen Agrarsystemen.
 
+![I_FHS](I_FHS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

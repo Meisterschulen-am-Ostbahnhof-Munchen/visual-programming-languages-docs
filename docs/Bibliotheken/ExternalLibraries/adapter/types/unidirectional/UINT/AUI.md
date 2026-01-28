@@ -1,3 +1,5 @@
+![AUI](AUI.svg)
+
 # AUI (UINT)
 
 ```{index} single: AUI (UINT)

@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_ObjHideShow** ist ein standardkonformer Funktionsbaustein zur Sichtbarkeitssteuerung von Container-Objekten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.2) Spezifikation für VT-Container.
 
+![Q_ObjHideShow](Q_ObjHideShow.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -84,6 +86,12 @@ Der **Q_ObjHideShow** ist ein standardkonformer Funktionsbaustein zur Sichtbarke
 | Containerfokus| ✔             | ✔                  | ✖                   |
 | Kaskadierend  | ✔             | ✖                  | ✔                   |
 | Rückmeldung   | ✔             | ✖                  | ✔                   |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_014](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_014.md)
 
 ## Fazit
 

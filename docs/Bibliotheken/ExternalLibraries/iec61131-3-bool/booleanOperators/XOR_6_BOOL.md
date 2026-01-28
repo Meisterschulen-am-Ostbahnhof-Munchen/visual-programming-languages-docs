@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `XOR_6_BOOL` ist ein generischer Baustein zur Berechnung der logischen Exklusiv-ODER-Verknüpfung (XOR) für bis zu sechs boolesche Eingangswerte. Er folgt dem IEC 61131-3 Standard und ist für den Einsatz in Steuerungs- und Automatisierungsanwendungen konzipiert. Der Baustein wartet auf ein Auslöseereignis, berechnet das Ergebnis der XOR-Operation über alle aktiven Eingänge und gibt dieses zusammen mit einem Bestätigungsereignis aus.
 
+![XOR_6_BOOL](XOR_6_BOOL.svg)
+
 ## Schnittstellenstruktur
 Der FB besitzt einen ereignisgesteuerten Ein-/Ausgangsmechanismus mit sechs booleschen Dateneingängen und einem booleschen Datenausgang.
 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1012" height="301" viewBox="-548 -20 1012 301">
+<defs>
+</defs>
+<rect x="3" y="3" width="166" height="251" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H166 V92 H160 V132 H166 V251 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L166,30" stroke="#000000" stroke-width="1" />
+<text x="83.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">NmGetCfInfo</text>
+<text x="83.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">RSP</text>
+<text x="-23" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Response to IND</text>
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#18519E" stroke="none" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8CanIdx</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="-93" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">ISO_CAN_NODE</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#18519E" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">member</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#000000" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">address</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">NAMEFIELD_T</text>
+<text x="-93" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">The Address of the Other Participant</text>
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#000000" stroke="none" />
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">mask</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">NAMEFIELD_T</text>
+<text x="-93" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">The Mask - only 1 Bits are counted. </text>
+<path d="M166,37 L166,47 L171,42 Z" fill="#63B31F" stroke="none" />
+<text x="154" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="189" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="259" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M166,63 L166,73 L171,68 Z" fill="#63B31F" stroke="none" />
+<text x="154" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="189" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="259" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
+<path d="M166,144 L166,154 L171,149 Z" fill="#9FA48A" stroke="none" />
+<text x="154" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">bwaitingForRSP</text>
+<text x="189" y="152" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="259" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">the FB is waiting for a RSP now. </text>
+<path d="M166,170 L166,180 L171,175 Z" fill="#000000" stroke="none" />
+<text x="154" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">sNetEv</text>
+<text x="189" y="178" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ISONETEVENT_T</text>
+<text x="259" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">network layer event</text>
+<path d="M166,196 L166,206 L171,201 Z" fill="#000000" stroke="none" />
+<text x="154" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">sCfInfo</text>
+<text x="189" y="204" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">CF_INFO_T</text>
+<text x="259" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">ISO CF/user information data structure</text>
+<path d="M166,222 L166,232 L171,227 Z" fill="#000000" stroke="none" />
+<text x="154" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">sNameField</text>
+<text x="189" y="230" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">NAMEFIELD_T</text>
+<text x="259" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">ISOBUS Name</text>
+<path d="M-12,42 L-12,227" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,149 L-5,149" stroke="#404040" />
+<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,201 L-5,201" stroke="#404040" />
+<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,227 L-5,227" stroke="#404040" />
+<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M178,68 L178,227" stroke="#404040" stroke-width="1" />
+<path d="M166,68 L178,68" stroke="#404040" />
+<rect x="176" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M178,149 L171,149" stroke="#404040" />
+<rect x="176" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M178,175 L171,175" stroke="#404040" />
+<rect x="176" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M178,201 L171,201" stroke="#404040" />
+<rect x="176" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M178,227 L171,227" stroke="#404040" />
+<rect x="176" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

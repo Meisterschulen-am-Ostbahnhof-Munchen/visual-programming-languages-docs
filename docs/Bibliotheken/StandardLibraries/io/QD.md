@@ -9,6 +9,8 @@
 ## Einleitung
 Der QD-Funktionsblock ist ein Ausgabeservice-Interface-Baustein für die Ausgabe von Doppelwort-Daten (DWORD). Er dient als Schnittstelle zwischen der Anwendungslogik und den physikalischen Ausgabegeräten eines Ressourcen-Managers.
 
+![QD](QD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -59,6 +61,12 @@ Im Vergleich zu einfacheren Ausgabeblöcken bietet QD:
 - DWORD-Datenbreite statt einfacher BOOL- oder BYTE-Werte
 - Detaillierte Statusrückmeldungen für Fehlerdiagnose
 - Vollständige Service-Interface-Charakteristik mit Initialisierungsprozedur
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_060](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 Der QD-Funktionsblock stellt eine leistungsstarke und flexible Lösung für die Ausgabe von Doppelwort-Daten in IEC 61499-Systemen dar. Seine umfassende Parametrierbarkeit und detaillierte Statusrückmeldungen machen ihn besonders geeignet für anspruchsvolle Automatisierungsanwendungen, die zuverlässige und konfigurierbare Ausgabeservices erfordern.

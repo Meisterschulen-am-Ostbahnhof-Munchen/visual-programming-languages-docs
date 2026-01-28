@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DWORD_AS_WSTRING` dient der Konvertierung eines DWORD-Wertes in einen WSTRING-Wert. Dieser Baustein ist besonders nützlich in Szenarien, wo numerische Werte in eine Zeichenkette umgewandelt werden müssen, beispielsweise für die Anzeige oder Protokollierung.
 
+![F_DWORD_AS_WSTRING](F_DWORD_AS_WSTRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

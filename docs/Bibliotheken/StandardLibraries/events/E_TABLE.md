@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_TABLE` (Event Table) ist ein Funktionsbaustein nach IEC 61499, der eine endliche Sequenz von Ereignissen mit individuell definierbaren Zeitabständen generiert. Er liest die Zeitabstände aus einer Tabelle (einem Array) und feuert eine bestimmte Anzahl von Ereignissen nacheinander.
 
+![E_TABLE](E_TABLE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -62,6 +64,12 @@ Der `E_TABLE` (Event Table) ist ein Funktionsbaustein nach IEC 61499, der eine e
 | Ereignisabstand | Variabel (Array `DT`) | Fix (`DT`) | Variabel (Array `DT`) |
 | Ausgänge | Ein `EO`-Kanal | Ein `EO`-Kanal | Mehrere (`EO0`..`EO3`) |
 | Zähler-Ausgang (`CV`) | Ja | Nein | Nein (intern) |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_093](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_093.md)
 
 ## Fazit
 Der `E_TABLE`-Baustein ist ein sehr flexibler Zeitgeber zur Erzeugung von komplexen, endlichen Ereignisketten. Seine Fähigkeit, variable Zeitabstände aus einer Tabelle zu lesen, macht ihn ideal für nicht-periodische, sequenzielle Steuerungsaufgaben. Er ist die Basis für andere Bausteine wie `E_N_TABLE`, liefert aber im Gegensatz zu diesem den aktuellen Zählerstand als nützliche Ausgangsinformation.

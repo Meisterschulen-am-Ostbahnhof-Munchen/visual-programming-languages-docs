@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `RangeBasedPulse` ist ein distanzbasierter Impulsgenerator, der einen booleschen Ausgang (Q) basierend auf der zurückgelegten Distanz (DIST_IN) steuert. Der FB wird mit einem HIGH-Puls gestartet und erzeugt periodisch Ausgangsimpulse entsprechend den konfigurierten Distanzwerten für HIGH- und LOW-Phasen.
 
+![RangeBasedPulse](RangeBasedPulse.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

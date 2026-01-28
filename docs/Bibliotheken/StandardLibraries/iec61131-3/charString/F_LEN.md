@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LEN` dient zur Bestimmung der Länge eines Eingabe-Strings. Er ist Teil der Standard-Bibliothek für Zeichen- und String-Funktionen gemäß IEC 61131-3.
 
+![F_LEN](F_LEN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

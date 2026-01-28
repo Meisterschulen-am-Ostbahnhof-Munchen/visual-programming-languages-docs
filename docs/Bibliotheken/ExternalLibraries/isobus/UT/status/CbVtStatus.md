@@ -10,6 +10,8 @@
 ## Einleitung
 Der **CbVtStatus** ist ein standardisierter Callback-Baustein für Virtual-Terminal-Seitenwechsel, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 unterstützt ISO 11783-6 (ISOBUS) in landwirtschaftlichen Steuersystemen.
 
+![CbVtStatus](CbVtStatus.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

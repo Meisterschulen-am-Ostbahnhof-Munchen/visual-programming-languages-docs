@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_CONCAT_DATE_TOD` dient zur Verkettung eines Datums (`DATE`) und einer Tageszeit (`TIME_OF_DAY`) zu einem kombinierten Datums- und Zeitstempel (`DATE_AND_TIME`). Dieser Baustein ist besonders nützlich in Szenarien, wo separate Datums- und Zeitinformationen zu einem einzigen Zeitstempel zusammengeführt werden müssen.
 
+![F_CONCAT_DATE_TOD](F_CONCAT_DATE_TOD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

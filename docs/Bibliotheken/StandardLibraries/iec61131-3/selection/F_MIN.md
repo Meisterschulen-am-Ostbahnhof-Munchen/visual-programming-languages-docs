@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_MIN Funktionsblock ist ein Standard-Selektionsfunktionsblock gemäß IEC 61131-3, der das Minimum zweier Eingangswerte ermittelt. Der Baustein vergleicht zwei beliebige elementare Datentypen und gibt den kleineren der beiden Werte als Ergebnis zurück.
 
+![F_MIN](F_MIN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

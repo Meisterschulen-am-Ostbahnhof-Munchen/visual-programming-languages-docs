@@ -9,6 +9,8 @@
 ## Einleitung
 Der FB_CTUD_DINT ist ein Funktionsblock, der als Aufwärts-/Abwärtszähler (Up Down Counter) mit DINT-Zählwert fungiert. Er ermöglicht das Zählen in beide Richtungen sowie das Zurücksetzen und Laden eines vordefinierten Wertes. Der Zähler ist besonders für Steuerungsanwendungen geeignet, bei denen eine flexible Zählfunktion benötigt wird.
 
+![FB_CTUD_DINT](FB_CTUD_DINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

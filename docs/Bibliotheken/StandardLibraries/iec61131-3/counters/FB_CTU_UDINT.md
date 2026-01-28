@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `FB_CTU_UDINT` ist ein Aufwärtszähler (Counter Up) für den Datentyp `UDINT` (unsigned double integer). Er zählt bei jedem Ereignis `REQ` hoch, solange der Eingang `CU` aktiv ist, und kann über den Eingang `R` zurückgesetzt werden. Der Zähler vergleicht den aktuellen Zählerstand mit einem vorgegebenen Sollwert (`PV`) und gibt über den Ausgang `Q` ein Signal aus, wenn dieser erreicht oder überschritten wird.
 
+![FB_CTU_UDINT](FB_CTU_UDINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

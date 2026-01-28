@@ -10,6 +10,8 @@
 ## Einleitung
 Der **E_RTimeOut** ist ein spezieller Funktionsbaustein nach IEC 61499-2. Er implementiert einen resettablen Timeout-Service durch interne Verwendung eines E_RDELAY-Bausteins.
 
+![E_RTimeOut](E_RTimeOut.svg)
+
 ## Struktur und Schnittstellen
 
 ### **Adapter-Schnittstelle (Socket-Perspektive)**

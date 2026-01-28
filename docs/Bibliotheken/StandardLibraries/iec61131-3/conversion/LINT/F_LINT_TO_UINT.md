@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LINT_TO_UINT` dient zur Konvertierung eines 64-Bit-Ganzzahlwerts (`LINT`) in einen 16-Bit-unsigned-Ganzzahlwert (`UINT`). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen unterschiedlich großen numerischen Datentypen erforderlich ist.
 
+![F_LINT_TO_UINT](F_LINT_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

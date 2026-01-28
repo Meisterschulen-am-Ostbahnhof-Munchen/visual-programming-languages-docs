@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ULINT_TO_BYTE` dient der Konvertierung eines 64-Bit-unsigned-Integer-Werts (ULINT) in einen 8-Bit-unsigned-Integer-Wert (BYTE). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_ULINT_TO_BYTE](F_ULINT_TO_BYTE.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Wird mit dem Daten-Eingang `IN` verknüpft.

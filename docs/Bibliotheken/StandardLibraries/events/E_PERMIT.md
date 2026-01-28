@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_PERMIT` (Event Permit) ist ein grundlegender Funktionsbaustein nach IEC 61499, der als steuerbares "Tor" für Ereignisse fungiert. Er lässt ein Eingangereignis nur dann zum Ausgang passieren, wenn eine explizite Freigabebedingung erfüllt ist.
 
+![E_PERMIT](E_PERMIT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**
@@ -42,6 +44,14 @@ Der Baustein agiert somit als einfacher Wächter für den Ereignisfluss.
 
 ## Vergleich mit ähnlichen Bausteinen
 - **`E_SWITCH`**: Während `E_PERMIT` ein Ereignis entweder durchlässt oder blockiert (1-zu-1 oder 1-zu-0), leitet `E_SWITCH` ein Ereignis an einen von zwei verschiedenen Ausgängen weiter (1-zu-2). `E_PERMIT` ist ein Tor, `E_SWITCH` ist eine Weiche.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_009](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009.md)
+* [Uebung_080c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_080c.md)
+* [Uebung_094](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_094.md)
 
 ## Fazit
 Der `E_PERMIT`-Baustein ist ein fundamentaler und weit verbreiteter Baustein zur Implementierung von Bedingungen und Freigaben in der ereignisgesteuerten Logik von IEC 61499. Seine Einfachheit und klare Funktion machen ihn zu einem unverzichtbaren Werkzeug für die Erstellung von sicheren und robusten Steuerungsabläufen.

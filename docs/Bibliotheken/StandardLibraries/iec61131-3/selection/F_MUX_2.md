@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_MUX_2 ist ein Multiplexer-Funktionsblock nach IEC 61131-3, der als Standard-Selektionsfunktion klassifiziert ist. Der Baustein ermöglicht die Auswahl zwischen zwei Eingangssignalen basierend auf einem Steuersignal.
 
+![F_MUX_2](F_MUX_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -59,6 +61,12 @@ Im Vergleich zu anderen Multiplexern bietet F_MUX_2:
 - Einfacherer Aufbau als Multiplexer mit mehr Eingängen
 - Direkte und klare Steuerlogik
 - Geringerer Ressourcenverbrauch bei 2-Wege-Auswahl
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_090a1](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_090a1.md)
 
 ## Fazit
 Der F_MUX_2 ist ein effizienter und zuverlässiger Multiplexer für Anwendungen, die eine Auswahl zwischen zwei Eingangssignalen erfordern. Seine einfache Struktur und die Verwendung generischer Datentypen machen ihn zu einer vielseitigen Lösung für verschiedene Steuerungsaufgaben.

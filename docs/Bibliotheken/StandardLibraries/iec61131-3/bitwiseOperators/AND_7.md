@@ -10,6 +10,8 @@
 ## Einleitung
 Der AND_7 Funktionsblock führt eine bitweise logische UND-Verknüpfung (AND) auf bis zu sieben Eingangsvariablen durch. Es handelt sich um einen generischen Funktionsblock, der mit verschiedenen Bit-Datentypen (ANY_BIT) arbeiten kann. Der Block ist gemäß der IEC 61131-3 Norm klassifiziert und eignet sich für den Einsatz in Steuerungs- und Automatisierungssystemen.
 
+![AND_7](AND_7.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

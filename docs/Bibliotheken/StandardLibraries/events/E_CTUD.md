@@ -14,6 +14,8 @@
 ## Einleitung
 Der `E_CTUD` (Event-Driven Up-Down Counter) ist ein ereignisgesteuerter Vor- und Rückwärtszähler gemäß dem IEC 61499-Standard. Er kann einen Zählerwert basierend auf separaten Ereignissen inkrementieren, dekrementieren, zurücksetzen oder mit einem vordefinierten Wert laden. Dies macht ihn zu einem flexiblen und leistungsstarken Baustein für eine Vielzahl von Zählanwendungen.
 
+![E_CTUD](E_CTUD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -70,6 +72,12 @@ Nach jeder dieser Aktionen werden die Status-Flags `QU` und `QD` basierend auf d
 | Laden (auf PV)| Ja (`LD`)        | Nein            | Ja (`LD`)        |
 | Status Oben  | `QU` (`CV >= PV`)| `Q` (`CV >= PV`)| Nein             |
 | Status Unten | `QD` (`CV = 0`)  | Nein            | `Q` (`CV = 0`)   |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_082](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_082.md)
 
 ## Fazit
 Der `E_CTUD` ist ein universeller Zählerbaustein, der die Funktionalität eines reinen Aufwärts- und Abwärtszählers kombiniert und erweitert. Durch seine vier Steuerereignisse (`CU`, `CD`, `R`, `LD`) und die beiden Statusausgänge (`QU`, `QD`) bietet er maximale Flexibilität für komplexe Zähl- und Überwachungsaufgaben in der industriellen Automatisierung.

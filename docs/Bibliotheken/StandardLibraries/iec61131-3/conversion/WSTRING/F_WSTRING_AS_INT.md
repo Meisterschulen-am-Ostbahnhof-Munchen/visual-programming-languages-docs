@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_INT` dient zur Konvertierung eines WSTRING-Wertes in einen INT-Wert. Dieser Block ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise bei der Verarbeitung von Benutzereingaben oder der Interpretation von Textdaten.
 
+![F_WSTRING_AS_INT](F_WSTRING_AS_INT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Dieser Ereigniseingang löst die Ausführung des Funktionsblocks aus. Er ist mit dem Daten-Eingang `IN` verknüpft.

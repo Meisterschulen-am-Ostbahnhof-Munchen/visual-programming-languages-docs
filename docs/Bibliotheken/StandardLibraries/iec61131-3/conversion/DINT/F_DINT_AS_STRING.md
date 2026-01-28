@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DINT_AS_STRING` dient der Konvertierung eines 32-Bit-Ganzzahlwerts (DINT) in eine Zeichenkette (STRING). Diese Funktionalität ist besonders nützlich, wenn numerische Werte für die Anzeige oder Protokollierung in einem menschenlesbaren Format benötigt werden.
 
+![F_DINT_AS_STRING](F_DINT_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

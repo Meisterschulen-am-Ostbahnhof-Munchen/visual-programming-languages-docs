@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WORD_AS_STRING` dient der Konvertierung eines `WORD`-Datentyps in einen `STRING`. Dies ist besonders nützlich, wenn numerische Werte in einer für Menschen lesbaren Form ausgegeben oder weiterverarbeitet werden sollen.
 
+![F_WORD_AS_STRING](F_WORD_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Bei Auslösung dieses Ereignisses wird der Wert des Daten-Eingangs `IN` verarbeitet.

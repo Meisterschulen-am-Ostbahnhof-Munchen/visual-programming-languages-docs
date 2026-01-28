@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_LINT` dient der Konvertierung eines REAL-Wertes (Fließkommazahl) in einen LINT-Wert (64-Bit Ganzzahl). Diese Konvertierung ist besonders nützlich, wenn numerische Berechnungen mit unterschiedlichen Datentypen durchgeführt werden müssen.
 
+![F_REAL_TO_LINT](F_REAL_TO_LINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

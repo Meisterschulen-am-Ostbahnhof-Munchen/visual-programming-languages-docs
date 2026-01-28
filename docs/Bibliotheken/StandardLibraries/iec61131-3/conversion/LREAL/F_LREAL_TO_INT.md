@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LREAL_TO_INT` dient zur Konvertierung eines LREAL-Wertes (64-Bit Fließkommazahl) in einen INT-Wert (16-Bit Ganzzahl). Diese Konvertierung erfolgt durch Abrundung des LREAL-Wertes auf den nächstkleineren ganzzahligen Wert.
 
+![F_LREAL_TO_INT](F_LREAL_TO_INT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

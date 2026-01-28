@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UINT_TO_REAL` dient der Konvertierung eines vorzeichenlosen Integer-Werts (`UINT`) in eine Fließkommazahl (`REAL`). Diese Funktionalität ist besonders nützlich, wenn Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Datentypen verwenden.
 
+![F_UINT_TO_REAL](F_UINT_TO_REAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -11,6 +11,8 @@
 Der **E_STOPWATCH**-Funktionsbaustein ist ein hochpräziser Zeitmessbaustein nach IEC 61499-2 Standard, entwickelt unter EPL-2.0 Lizenz.
 Der Baustein ermöglicht millisekundengenaue Zeitmessungen zwischen Ereignissen in Echtzeitsystemen.
 
+![E_STOPWATCH](E_STOPWATCH.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -91,6 +93,13 @@ stateDiagram-v2
 | Trigger während Lauf | Ja | Nein | Ja |
 | Monotone Zeit | Ja | Nein | Ja |
 | Reset-Funktion | Ja | Teilweise | Ja |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_020i](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020i.md)
+* [Uebung_020i_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Fazit
 

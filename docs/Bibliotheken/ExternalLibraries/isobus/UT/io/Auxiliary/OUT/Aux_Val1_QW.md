@@ -9,6 +9,8 @@
 ## Einleitung
 Der Aux_Val1_QW ist ein Ausgabeservice-Schnittstellen-Funktionsblock für Wort-Ausgabedaten. Dieser Baustein dient als Schnittstelle zu Auxiliary-Output-Ressourcen und ermöglicht die Ausgabe von 16-Bit-Datenwörtern an externe Peripheriegeräte.
 
+![Aux_Val1_QW](Aux_Val1_QW.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

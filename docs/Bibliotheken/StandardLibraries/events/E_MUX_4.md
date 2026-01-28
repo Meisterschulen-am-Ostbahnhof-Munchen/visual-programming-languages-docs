@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_MUX_4` (Event Multiplexer) ist ein Funktionsbaustein nach IEC 61499, der vier Ereigniseingänge (`EI1` bis `EI4`) auf einen einzigen Ereignisausgang (`EO`) zusammenführt. Zusätzlich zur Zusammenführung gibt der Baustein an einem Datenausgang `K` aus, welcher der Eingänge das Ereignis ausgelöst hat. Er ist das Gegenstück zum `E_DEMUX_4`.
 
+![E_MUX_4](E_MUX_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**
@@ -45,6 +47,12 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 - **Zusammenfassen von Befehlen**: Vier verschiedene Taster lösen denselben Prozess aus, aber der Prozess muss wissen, welcher der vier Taster gedrückt wurde.
 - **Kombinierte Alarme**: Vier verschiedene Alarme werden zu einer zentralen Alarmroutine geleitet, die dann anhand von `K` den spezifischen Alarmtext anzeigt.
 - **Modus-Auswahl**: Zusammenführen der Start-Ereignisse von vier verschiedenen Betriebsmodi.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_087a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087a2.md)
 
 ## Fazit
 Der `E_MUX_4` ist ein nützlicher Baustein, um Ereignisströme von bis zu vier Quellen zu bündeln und gleichzeitig die Quelle des Ereignisses zu identifizieren. Er ist das Standard-Gegenstück zum `E_DEMUX_4` und wird häufig verwendet, um die Komplexität von Verdrahtungen zu reduzieren und Logik zu zentralisieren.

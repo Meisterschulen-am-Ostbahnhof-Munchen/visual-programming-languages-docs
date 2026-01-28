@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_T_04` ist ein zeitgesteuerter Sequenzer mit vier definierten Zuständen (State_01 bis State_04) und einem Startzustand (START). Er ermöglicht die zyklische oder einmalige Abarbeitung einer festen Reihenfolge, wobei die Verweildauer in jedem Zustand über konfigurierbare Zeitwerte gesteuert wird. Der Übergang zwischen den Zuständen erfolgt automatisch nach Ablauf der eingestellten Zeit. Der Baustein eignet sich ideal für zeitlich getaktete Ablaufsteuerungen, wie sie z.B. in Förderanlagen, Verpackungsmaschinen oder Waschprozessen vorkommen.
 
+![sequence_T_04](sequence_T_04.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der eIX-Funktionsblock ist ein Eingabeservice-Interface für boolesche Eingabedaten mit ereignisbasierter Auslösung. Er dient als Schnittstelle zwischen der Steuerungslogik und physikalischen Eingabegeräten und ermöglicht die Abfrage von digitalen Eingangssignalen.
 
+![eIX](eIX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

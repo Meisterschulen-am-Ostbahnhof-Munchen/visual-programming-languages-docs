@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_RS Funktionsblock ist ein ereignisgesteuertes bistabiles Element (Flip-Flop) nach dem RS-Prinzip. Es handelt sich um einen Basic Function Block, der einen Set-Reset-Mechanismus implementiert und über Adapter-Schnittstellen kommuniziert.
 
+![AX_RS](AX_RS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -64,6 +66,15 @@ Im Vergleich zu anderen Flip-Flop-Implementierungen:
 - Einfache RS-Logik ohne zusätzliche Takt- oder Enable-Signale
 
 Vergleich mit [E_RS](../../../../StandardLibraries/events/E_RS.md)
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_006b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006b_AX.md)
+* [Uebung_020a_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020a_AX.md)
+* [Uebung_020b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020b_AX.md)
+* [Uebung_020d_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020d_AX.md)
 
 ## Fazit
 Der AX_RS Funktionsblock bietet eine einfache und effiziente Implementierung eines RS-Flip-Flops für 4diac-basierte Steuerungssysteme. Durch die Verwendung von Adaptern ermöglicht er eine flexible Integration in verschiedene Systemarchitekturen und eignet sich besonders für Anwendungen, die zuverlässige Zustandsspeicherung mit ereignisgesteuerter Aktualisierung benötigen.

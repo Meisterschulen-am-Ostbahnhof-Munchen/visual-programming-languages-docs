@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_REAL` dient der Konvertierung eines ganzzahligen Wertes vom Typ `DINT` in einen Fließkommawert vom Typ `REAL`. Diese Konvertierung ist in vielen Steuerungs- und Automatisierungsanwendungen notwendig, wenn Daten zwischen verschiedenen Systemen oder Komponenten ausgetauscht werden müssen.
 
+![F_DINT_TO_REAL](F_DINT_TO_REAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

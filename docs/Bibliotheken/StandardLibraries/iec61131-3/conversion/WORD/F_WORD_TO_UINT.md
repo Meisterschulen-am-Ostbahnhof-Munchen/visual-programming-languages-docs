@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_UINT` dient der Konvertierung eines `WORD`-Datentyps in einen `UINT`-Datentyp. Diese Konvertierung ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist, z.B. bei der Kommunikation zwischen verschiedenen Systemen oder bei der Verarbeitung von Daten unterschiedlicher Quellen.
 
+![F_WORD_TO_UINT](F_WORD_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Dieser Eingang ist mit dem Daten-Eingang `IN` verknüpft.

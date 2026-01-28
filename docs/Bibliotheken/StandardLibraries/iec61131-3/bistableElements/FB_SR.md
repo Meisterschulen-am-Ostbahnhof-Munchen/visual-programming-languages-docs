@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `FB_SR` ist ein bistabiles Element, das als Set-Reset-Flipflop (SR-Flipflop) fungiert. Es speichert einen Zustand basierend auf den Eingangssignalen und behält diesen bei, bis er durch neue Eingangssignale geändert wird.
 
+![FB_SR](FB_SR.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

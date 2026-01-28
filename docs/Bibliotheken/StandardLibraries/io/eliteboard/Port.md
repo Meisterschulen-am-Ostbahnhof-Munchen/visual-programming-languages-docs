@@ -10,6 +10,8 @@
 ## Einleitung
 Der Port-Funktionsblock dient als Service Interface Function Block für die Konfiguration und Verwaltung von digitalen Ein-/Ausgängen auf einem EliteBoard-System. Er ermöglicht die Zuordnung von Pin-Namen zu physischen Ports über einen Adapter-Mechanismus.
 
+![Port](Port.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

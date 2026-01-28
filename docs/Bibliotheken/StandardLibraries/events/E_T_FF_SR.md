@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_T_FF_SR` (Event-driven Toggle Flip-Flop mit Set/Reset) ist ein erweiterter bistabiler Funktionsbaustein nach IEC 61499. Er kombiniert die Funktionalität eines `E_T_FF` (Toggeln) mit zusätzlichen `S`- (Setzen) und `R`- (Rücksetzen) Eingängen.
 
+![E_T_FF_SR](E_T_FF_SR.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**
@@ -47,6 +49,16 @@ Der Baustein startet im `START`-Zustand (impliziert `Q` ist undefiniert/`FALSE`)
 - **Steuerung mit manueller Korrektur**: Ein Toggler (`CLK`) für eine Lampe, die aber bei Bedarf (z.B. Sicherheitsgründen) direkt Ein (`S`) oder Aus (`R`) geschaltet werden kann.
 - **Modus-Umschaltung**: Zwischen verschiedenen Modi hin- und herwechseln (`CLK`), mit der Möglichkeit, einen Grundmodus (`R`) oder einen Sondermodus (`S`) direkt anzusteuern.
 - **Fehler-Reset und Toggle**: Ein Fehlerzustand kann durch `S` gesetzt werden, durch `R` quittiert, und der Zustand des Fehler-Handlings kann durch `CLK` getoggelt werden.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_004a7](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a7.md)
+* [Uebung_006a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006a.md)
+* [Uebung_006a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006a2.md)
+* [Uebung_006a3](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006a3.md)
+* [Uebung_006a4](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006a4.md)
 
 ## Fazit
 Der `E_T_FF_SR`-Baustein bietet maximale Flexibilität für Speicher- und Steuerungsaufgaben, indem er die Toggel-Funktion mit direkten Set- und Reset-Möglichkeiten kombiniert. Die spezifischen Verhaltensweisen aus dem `START`-Zustand und die fehlende Priorisierungsgarantie bei simultanen Ereignissen müssen bei der Implementierung sorgfältig berücksichtigt werden.

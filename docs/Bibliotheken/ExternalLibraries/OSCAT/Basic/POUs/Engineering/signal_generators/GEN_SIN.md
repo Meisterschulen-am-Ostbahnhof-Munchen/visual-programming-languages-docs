@@ -1,3 +1,5 @@
+![GEN_SIN](GEN_SIN.svg)
+
 # GEN_SIN
 
 ```{index} single: GEN_SIN

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AlPgnTxNew8B` dient zum Senden von Daten über ein CAN-Netzwerk gemäß dem ISOBUS-Standard (ISO 11783). Sein Hauptzweck ist die Installation und Verwaltung von Parameter Group Numbers (PGNs) für die Übertragung (TX) und das anschließende Senden von Datenpaketen, sobald ein lokales Sendeereignis (`REQ`) eintritt. Er ist für Anwendungen konzipiert, die eine unbestätigte (unconfirmed) Datenübertragung erfordern.
 
+![AlPgnTxNew8B](AlPgnTxNew8B.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `CSV_WRITER_1` dient als Service-Interface zum Schreiben von Daten in eine CSV-Datei. Er ermöglicht die Initialisierung des Schreibvorgangs sowie das kontrollierte Schreiben von Daten in eine Datei mit Statusrückmeldungen.
 
+![CSV_WRITER_1](CSV_WRITER_1.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der SUBSCRIBE_3 Funktionsblock dient zum Abonnieren von Daten eines PUBLISH_3 Blocks. Er ermöglicht den Empfang von drei verschiedenen Datenströmen über eine Netzwerkverbindung und stellt einen standardisierten Mechanismus für die Kommunikation zwischen verteilten Systemkomponenten bereit.
 
+![SUBSCRIBE_3](SUBSCRIBE_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funk_IX ist ein Service Interface Function Block für boolesche Eingabedaten. Er dient als Schnittstelle zur Kommunikation mit digitalen Eingängen in verteilten Automatisierungssystemen und ermöglicht die Initialisierung, Abfrage und asynchrone Benachrichtigung von Eingangssignalen.
 
+![Funk_IX](Funk_IX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

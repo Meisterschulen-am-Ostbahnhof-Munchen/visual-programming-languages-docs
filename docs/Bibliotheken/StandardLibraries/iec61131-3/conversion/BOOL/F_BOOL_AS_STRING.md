@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BOOL_AS_STRING` dient zur Konvertierung eines booleschen Wertes (`BOOL`) in eine Zeichenkette (`STRING`). Diese Funktionalität ist besonders nützlich, wenn boolesche Werte für die Ausgabe oder Weiterverarbeitung in einem Textformat benötigt werden.
 
+![F_BOOL_AS_STRING](F_BOOL_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

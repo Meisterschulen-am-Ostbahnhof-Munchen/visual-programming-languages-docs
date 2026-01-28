@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ULINT_TO_SINT` dient der Konvertierung eines `ULINT`-Wertes (64-Bit unsigned integer) in einen `SINT`-Wert (8-Bit signed integer). Dieser Baustein ist besonders nützlich in Anwendungen, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_ULINT_TO_SINT](F_ULINT_TO_SINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verbunden.

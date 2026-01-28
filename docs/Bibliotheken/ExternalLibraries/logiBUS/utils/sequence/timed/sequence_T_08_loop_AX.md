@@ -7,6 +7,8 @@
 ## Einleitung
 `sequence_T_08_loop_AX` ist eine Variante des `sequence_T_08_loop`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein zeitgesteuerte, zyklische Sequenz mit 8 Ausgabezuständen.
 
+![sequence_T_08_loop_AX](sequence_T_08_loop_AX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -40,6 +42,12 @@ Für zeitgesteuerte zyklische 8-stufige Sequenzen mit Adapteranbindung.
 
 ## Vergleich mit ähnlichen Bausteinen
 *   **sequence_T_08_loop**: Standardvariante ohne Adapter.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_038_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_038_AX.md)
 
 ## Fazit
 Adapter-Variante des 8-Schritt-Loop-Zeit-Sequenzers.

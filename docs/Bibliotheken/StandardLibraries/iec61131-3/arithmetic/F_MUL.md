@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_MUL](F_MUL.svg)
+
+
 ## Einführung
 Der **F_MUL** ist ein standardkonformer Funktionsbaustein zur Multiplikation numerischer Werte, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Multiplikation verschiedener numerischer Datentypen gemäß IEC 61131-3 Standard.
 
@@ -73,6 +76,12 @@ Der **F_MUL** ist ein standardkonformer Funktionsbaustein zur Multiplikation num
 | Operation     | Multiplikation | Addition | Division |
 | Eingänge      | 2      | 2      | 2      |
 | Typunterstützung | ANY_NUM | ANY_NUM | ANY_NUM |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_034b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034b.md)
 
 ## Fazit
 

@@ -10,6 +10,8 @@
 ## Einleitung
 Der EC_KILL_ELEM Funktionsblock dient zum Beenden von Instanzen gemäß der Zustandsmaschine von IEC 61499 Funktionsblöcken. Er ermöglicht das gezielte Beenden von Funktionsblock-Instanzen, Verbindungen (Ereignis/Daten), Ressourcen oder Geräten innerhalb eines 4diac-Systems.
 
+![EC_KILL_ELEM](EC_KILL_ELEM.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der Button_IE Funktionsblock ist ein Eingabeservice-Interface-Funktionsblock für Ereigniseingabedaten. Er dient als Schnittstelle für Taster-Ereignisse in Steuerungssystemen und ermöglicht die Verarbeitung verschiedener Tasteraktivitäten wie Drücken, Loslassen oder Mehrfachklicks.
 
+![Button_IE](Button_IE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

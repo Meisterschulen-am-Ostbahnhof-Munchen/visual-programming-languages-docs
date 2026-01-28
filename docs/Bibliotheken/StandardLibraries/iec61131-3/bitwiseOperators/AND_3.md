@@ -10,6 +10,8 @@
 ## Einleitung
 Der AND_3-Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen logischen UND-Verknüpfung mit drei Eingängen. Er führt eine bitweise UND-Operation auf drei Eingabewerten durch und gibt das Ergebnis aus. Der Baustein unterstützt alle ANY_BIT-Datentypen und ist damit flexibel für verschiedene Bitbreiten einsetzbar.
 
+![AND_3](AND_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -53,6 +55,12 @@ Die Operation erfolgt nach der Formel: OUT = IN1 ∧ IN2 ∧ IN3
 
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-UND-Bausteinen mit nur zwei Eingängen bietet AND_3 die Möglichkeit, drei Eingänge gleichzeitig zu verarbeiten, was die Anzahl benötigter Bausteine in komplexeren Schaltungen reduziert. Gegenüber Bausteinen mit fester Bitbreite bietet AND_3 durch die generische ANY_BIT-Typisierung größere Flexibilität.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_002a6_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
 
 ## Fazit
 Der AND_3-Funktionsblock ist ein vielseitiger und effizienter Baustein für bitweise UND-Operationen mit drei Eingängen. Seine generische Natur macht ihn für verschiedene Anwendungsfälle und Datentypen geeignet, während die klare Ereignissteuerung eine zuverlässige Integration in Steuerungssysteme ermöglicht.

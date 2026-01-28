@@ -8,6 +8,8 @@
 ## Einleitung
 Der RT_E_CYCLE Funktionsblock implementiert eine periodische Ereigniserzeugung (Zyklus) mit Echtzeiteigenschaften. Er ermöglicht das Definieren von Deadlines und Ausführungszeiten (WCET).
 
+![RT_E_CYCLE](RT_E_CYCLE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

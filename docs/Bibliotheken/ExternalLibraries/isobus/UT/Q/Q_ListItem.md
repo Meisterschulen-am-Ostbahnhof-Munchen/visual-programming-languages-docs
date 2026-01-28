@@ -9,6 +9,8 @@
 ## Einleitung
 Der **Q_ListItem** ist ein standardkonformer Funktionsbaustein zur Verwaltung von Listeneinträgen in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.42) Spezifikation für Listen-Input-Objekte in VT-Systemen.
 
+![Q_ListItem](Q_ListItem.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_REAL_TO_LREAL` dient der Konvertierung eines REAL-Wertes in einen LREAL-Wert. Dieser Baustein ist Teil des `iec61131::conversion`-Pakets und ermöglicht eine einfache Typumwandlung zwischen den beiden numerischen Datentypen.
 
+![F_REAL_TO_LREAL](F_REAL_TO_LREAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

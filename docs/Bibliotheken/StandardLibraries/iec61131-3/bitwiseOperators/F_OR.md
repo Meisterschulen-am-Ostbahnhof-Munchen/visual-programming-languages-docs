@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_OR` implementiert eine bitweise ODER-Verknüpfung gemäß dem IEC 61131-3 Standard. Er führt eine logische ODER-Operation auf zwei Eingangsvariablen vom Typ `ANY_BIT` durch und gibt das Ergebnis auf dem Ausgang aus.
 
+![F_OR](F_OR.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

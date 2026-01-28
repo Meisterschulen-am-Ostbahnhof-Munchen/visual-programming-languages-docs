@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `XOR_4_BOOL` ist ein Standardbaustein zur Berechnung der logischen Exklusiv-ODER-Verknüpfung (XOR) für bis zu vier boolesche Eingangswerte. Er folgt dem IEC 61131-3 Standard und ist als generischer Baustein implementiert, der in Steuerungsanwendungen zur kombinatorischen Logikverarbeitung eingesetzt wird.
 
+![XOR_4_BOOL](XOR_4_BOOL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **REQ** (Normal Execution Request): Dieses Ereignis löst die Berechnung der XOR-Verknüpfung aus. Es ist mit allen vier Dateneingängen (`IN1` bis `IN4`) verknüpft.

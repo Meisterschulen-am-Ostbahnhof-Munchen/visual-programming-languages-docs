@@ -10,6 +10,8 @@
 ## Einleitung
 Der SUBSCRIBE_9 Funktionsblock dient zum Abonnieren von Daten eines PUBLISH_9 Blocks. Er ermöglicht den Empfang von bis zu 9 verschiedenen Datenpunkten über eine Netzwerkverbindung und stellt diese für die weitere Verarbeitung im Steuerungssystem bereit.
 
+![SUBSCRIBE_9](SUBSCRIBE_9.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_AS_STRING` dient der Konvertierung eines vorzeichenlosen 32-Bit-Integer-Werts (UDINT) in einen String (STRING). Dieser Baustein ist besonders nützlich, wenn numerische Werte für die Anzeige oder Protokollierung in eine lesbare Textform umgewandelt werden müssen.
 
+![F_UDINT_AS_STRING](F_UDINT_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

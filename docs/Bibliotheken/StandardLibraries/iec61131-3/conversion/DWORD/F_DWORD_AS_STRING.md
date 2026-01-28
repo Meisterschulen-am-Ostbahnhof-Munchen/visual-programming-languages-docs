@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DWORD_AS_STRING` dient der Konvertierung eines DWORD-Wertes in einen STRING. Dieser Baustein ist besonders nützlich, wenn numerische Werte in eine für Menschen lesbare Form gebracht oder für die Ausgabe in Textform vorbereitet werden müssen.
 
+![F_DWORD_AS_STRING](F_DWORD_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

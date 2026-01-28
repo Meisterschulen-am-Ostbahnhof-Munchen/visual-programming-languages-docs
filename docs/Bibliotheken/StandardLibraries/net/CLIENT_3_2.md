@@ -10,6 +10,8 @@
 ## Einleitung
 Der CLIENT_3_2 ist ein Funktionsblock für HTTP-Kommunikation, der als Client mit drei Eingängen und zwei Ausgängen konzipiert wurde. Er ermöglicht die Kommunikation mit einem Server über das HTTP-Protokoll und unterstützt sowohl das Öffnen und Schließen von Verbindungen als auch das Senden von Anfragen und Empfangen von Antworten.
 
+![CLIENT_3_2](CLIENT_3_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

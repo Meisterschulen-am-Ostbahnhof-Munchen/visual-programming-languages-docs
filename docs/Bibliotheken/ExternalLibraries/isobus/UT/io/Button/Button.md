@@ -6,11 +6,11 @@
 ```{toctree}
 :maxdepth: 1
 
-ButtonActivationCode
-ButtonActivationCode_S
 Button_IE
 Button_IX
 Button_IXA
+ButtonActivationCode
+ButtonActivationCode_S
 ```
 
 ## 🎧 Podcast

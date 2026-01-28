@@ -9,6 +9,8 @@
 ## Einleitung
 Der CSV_WRITER_4 Funktionsblock dient zum Schreiben von Daten in eine CSV-Datei. Er unterstützt das Speichern von bis zu vier verschiedenen Datenwerten in einem strukturierten Format. Der FB ist besonders nützlich für Datenerfassung und -protokollierung in Automatisierungsanwendungen.
 
+![CSV_WRITER_4](CSV_WRITER_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_XOR_6 ist ein generischer Funktionsblock zur Berechnung der booleschen XOR-Verknüpfung mit sechs Eingängen. Der Baustein implementiert die exklusive ODER-Operation für bis zu sechs binäre Eingangssignale und gibt das Ergebnis über einen Adapter-Ausgang aus.
 
+![AX_XOR_6](AX_XOR_6.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

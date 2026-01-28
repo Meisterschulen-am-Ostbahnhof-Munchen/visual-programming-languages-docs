@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_REAL` dient der Konvertierung eines vorzeichenlosen 32-Bit-Integer-Werts (`UDINT`) in einen 32-Bit-Gleitkommawert (`REAL`). Dieser Baustein ist besonders nützlich in Szenarien, wo numerische Werte unterschiedlicher Datentypen verarbeitet werden müssen.
 
+![F_UDINT_TO_REAL](F_UDINT_TO_REAL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Wird dieser Eingang ausgelöst, wird der Wert am Daten-Eingang `IN` verarbeitet.

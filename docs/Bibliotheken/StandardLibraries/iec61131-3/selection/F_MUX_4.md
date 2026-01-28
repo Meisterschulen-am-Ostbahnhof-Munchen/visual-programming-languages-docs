@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_MUX_4` ist ein Multiplexer mit vier Eingängen, der einen von vier Eingangswerten basierend auf einem Steuersignal auswählt und am Ausgang ausgibt. Er ist Teil der IEC 61131-3 Standardbibliothek und wird für Auswahloperationen in Steuerungsanwendungen verwendet.
 
+![F_MUX_4](F_MUX_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

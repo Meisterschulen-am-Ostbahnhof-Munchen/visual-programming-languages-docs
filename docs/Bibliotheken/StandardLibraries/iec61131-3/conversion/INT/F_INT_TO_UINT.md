@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_INT_TO_UINT` dient der Konvertierung eines vorzeichenbehafteten Integer-Werts (`INT`) in einen vorzeichenlosen Integer-Wert (`UINT`). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Datentypen verwenden, oder wenn eine vorzeichenlose Verarbeitung erforderlich ist.
 
+![F_INT_TO_UINT](F_INT_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

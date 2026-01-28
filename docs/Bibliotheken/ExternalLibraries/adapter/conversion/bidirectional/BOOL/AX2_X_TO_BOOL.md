@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock AX2_X_TO_BOOL ist ein Composite-Funktionsblock zur Konvertierung von AX2-Daten in BOOL-Werte. Er dient als bidirektionaler Adapter für die Datentypumwandlung zwischen verschiedenen Schnittstellen in Automatisierungssystemen.
 
+![AX2_X_TO_BOOL](AX2_X_TO_BOOL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

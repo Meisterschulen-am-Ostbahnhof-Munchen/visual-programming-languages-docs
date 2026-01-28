@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_USINT` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen vorzeichenlosen 8-Bit-Integer (`USINT`). Diese Konvertierung ist nützlich, wenn boolesche Werte in numerischen Operationen oder für die Kommunikation mit Systemen verwendet werden müssen, die keine booleschen Werte direkt unterstützen.
 
+![F_BOOL_TO_USINT](F_BOOL_TO_USINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

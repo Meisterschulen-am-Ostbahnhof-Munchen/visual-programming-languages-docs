@@ -12,6 +12,8 @@
 ## Einleitung
 Der **Q_BackgroundColour** ist ein standardkonformer Funktionsbaustein zur Steuerung von Hintergrundfarben in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.20) Spezifikation für landwirtschaftliche Steuersysteme.
 
+![Q_BackgroundColour](Q_BackgroundColour.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -85,6 +87,13 @@ Der **Q_BackgroundColour** ist ein standardkonformer Funktionsbaustein zur Steue
 | ISO-Standard  | ✔                  | ✖               | ✖              |
 | Farbpalette   | Standard           | Erweitert       | Benutzerdef.   |
 | Objektbindung | Explizit           | Implizit        | Stylesheet     |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_016](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016.md)
+* [Uebung_016a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016a.md)
 
 ## Fazit
 

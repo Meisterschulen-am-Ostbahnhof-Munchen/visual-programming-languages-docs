@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_WORD` dient der Konvertierung eines WSTRING-Datentyps in einen WORD-Datentyp. Diese Funktionalität ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise für die weitere Verarbeitung in Steuerungsalgorithmen.
 
+![F_WSTRING_AS_WORD](F_WSTRING_AS_WORD.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung des Funktionsblocks. Dieser Ereigniseingang ist mit dem Daten-Eingang `IN` verknüpft.

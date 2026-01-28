@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_SQRT Funktionsblock ist ein Standardfunktionsblock gemäß IEC 61131-3, der die Quadratwurzel einer numerischen Eingabe berechnet. Er gehört zur Kategorie der numerischen Funktionen und dient zur mathematischen Berechnung der Quadratwurzel eines beliebigen reellen Eingabewertes.
 
+![F_SQRT](F_SQRT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

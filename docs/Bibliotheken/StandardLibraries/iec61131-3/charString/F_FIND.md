@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_FIND` dient zur Ermittlung der Position des ersten Auftretens einer Zeichenkette (IN2) innerhalb einer anderen Zeichenkette (IN1). Falls die gesuchte Zeichenkette nicht gefunden wird, gibt der Block den Wert 0 zurück.
 
+![F_FIND](F_FIND.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Suche nach der Zeichenkette. Die Eingänge IN1 und IN2 werden mit diesem Ereignis verknüpft.

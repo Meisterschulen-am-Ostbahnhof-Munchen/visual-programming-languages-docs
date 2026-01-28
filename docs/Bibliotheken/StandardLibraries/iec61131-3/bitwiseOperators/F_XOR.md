@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_XOR` führt eine bitweise XOR-Operation (exklusives ODER) auf zwei Eingabewerten durch. Er ist Teil der Standard-Bitoperationen gemäß IEC 61131-3 und eignet sich für logische Verarbeitungen in Steuerungsanwendungen.
 
+![F_XOR](F_XOR.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

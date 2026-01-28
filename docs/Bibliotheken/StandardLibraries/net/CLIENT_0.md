@@ -8,6 +8,8 @@
 ## Einleitung
 Der CLIENT_0 Funktionsblock dient zur Kommunikation mit einem SERVER_0 Block über eine Netzwerkverbindung. Er ermöglicht das Aufbauen und Schließen von Verbindungen. Im Gegensatz zu CLIENT_1 findet kein expliziter Datenaustausch über Daten-Ein-/Ausgänge statt, die Synchronisation erfolgt primär über Ereignisse.
 
+![CLIENT_0](CLIENT_0.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

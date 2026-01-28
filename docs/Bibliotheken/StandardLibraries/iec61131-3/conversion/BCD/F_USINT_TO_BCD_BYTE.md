@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_BCD_BYTE` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (USINT) in ein BCD-kodiertes Byte (BYTE). BCD (Binary Coded Decimal) ist eine Kodierung, bei der jede Dezimalziffer durch vier Bits dargestellt wird.
 
+![F_USINT_TO_BCD_BYTE](F_USINT_TO_BCD_BYTE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

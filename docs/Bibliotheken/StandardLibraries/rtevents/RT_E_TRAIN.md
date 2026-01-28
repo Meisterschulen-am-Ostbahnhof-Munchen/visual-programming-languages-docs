@@ -8,6 +8,8 @@
 ## Einleitung
 Echtzeit-Variante des E_TRAIN Bausteins. Erzeugt eine Folge von Ereignissen.
 
+![RT_E_TRAIN](RT_E_TRAIN.svg)
+
 ## Metadaten
 | Attribut | Wert |
 | :--- | :--- |

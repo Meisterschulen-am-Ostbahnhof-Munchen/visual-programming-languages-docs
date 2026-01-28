@@ -10,6 +10,8 @@
 ## Einleitung
 Der logiBUS_QX Funktionsblock ist ein Ausgabeservice-Interface-Baustein für boolesche Ausgabedaten. Er dient als Schnittstelle zur Steuerung von digitalen Ausgängen über das logiBUS-System und ermöglicht die Kommunikation zwischen der Steuerungsanwendung und den physischen Ausgangskanälen.
 
+![logiBUS_QX](logiBUS_QX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

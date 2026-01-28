@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock F_REPLACE dient zur Manipulation von Zeichenketten. Er ersetzt eine bestimmte Anzahl von Zeichen (L) in der ersten Eingabezeichenkette (IN1) durch die zweite Eingabezeichenkette (IN2), beginnend an einer spezifizierten Position (P).
 
+![F_REPLACE](F_REPLACE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

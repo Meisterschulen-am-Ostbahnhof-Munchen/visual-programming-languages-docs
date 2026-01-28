@@ -9,6 +9,8 @@
 ## Einleitung
 Der IW-Funktionsblock (Input Word) ist ein Dienstschnittstellen-Funktionsblock für die Verarbeitung von Wort-Eingabedaten in 4diac-Systemen. Er dient als Schnittstelle zwischen der Steuerungslogik und externen Eingabegeräten oder Ressourcen, die Wort-Daten (16-Bit) bereitstellen.
 
+![IW](IW.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

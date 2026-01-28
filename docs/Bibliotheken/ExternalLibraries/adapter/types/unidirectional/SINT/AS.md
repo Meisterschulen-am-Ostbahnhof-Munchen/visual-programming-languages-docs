@@ -1,3 +1,5 @@
+![AS](AS.svg)
+
 # AS (SINT)
 
 ```{index} single: AS (SINT)

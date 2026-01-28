@@ -10,6 +10,8 @@
 ## Einleitung
 Der WagoMaster ist ein Service Interface Function Block zur Steuerung und Überwachung von Wago-Bussystemen. Dieser Baustein dient als Master-Komponente für die Kommunikation mit Wago-IO-Systemen und ermöglicht die Initialisierung und Verwaltung der Busverbindung.
 
+![WagoMaster](WagoMaster.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

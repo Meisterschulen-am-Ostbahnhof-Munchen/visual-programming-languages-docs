@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_SPLIT_2` ist ein grundlegender Funktionsbaustein nach IEC 61499, der ein einzelnes Eingangereignis (`EI`) in eine Sequenz von zwei Ausgangsereignissen (`EO1` und `EO2`) aufteilt. Dieser Baustein ist funktional identisch mit `E_SPLIT`.
 
+![E_SPLIT_2](E_SPLIT_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingang**
@@ -33,6 +35,13 @@ Wenn ein Ereignis am Eingang `EI` eintrifft, löst der Baustein sofort nacheinan
 - **Reset und Start**: Ein einzelnes `RESET`-Ereignis kann verwendet werden, um zuerst einen Wert zurückzusetzen (`EO1`) und dann einen Prozess neu zu starten (`EO2`).
 - **Lesen und Verarbeiten**: Ein `REQ`-Ereignis kann dazu führen, zuerst einen Sensorwert zu lesen (`EO1`) und dann die Berechnung mit dem neuen Wert anzustoßen (`EO2`).
 - **Ablaufsteuerung**: Anstoßen von zwei aufeinanderfolgenden Aktionen mit einem einzigen Trigger-Ereignis.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_004a8](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a8.md)
+* [Uebung_004a8_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a8_AX.md)
 
 ## Fazit
 Der `E_SPLIT_2`-Baustein ist ein nützliches Werkzeug, um aus einem einzelnen Trigger eine feste, kurze Ereignissequenz zu generieren. Seine Einfachheit und die garantierte Ausführungsreihenfolge machen ihn zu einer robusten Komponente für die Ablaufsteuerung in IEC 61499-Anwendungen.

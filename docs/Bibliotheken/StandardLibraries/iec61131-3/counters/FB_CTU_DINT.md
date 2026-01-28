@@ -10,6 +10,8 @@
 ## Einleitung
 Der FB_CTU_DINT ist ein Aufwärtszähler (Counter Up) für den Datentyp DINT (32-Bit Ganzahl). Er zählt bei jedem Zählimpuls hoch und kann auf einen vordefinierten Wert zurückgesetzt werden. Der Baustein ist besonders geeignet für Anwendungen, die große Zählbereiche erfordern.
 
+![FB_CTU_DINT](FB_CTU_DINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

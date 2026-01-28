@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `OR_16_BOOL` ist ein Standard-Baustein zur Berechnung der logischen ODER-Verknüpfung. Er führt die ODER-Operation über 16 separate boolesche Eingänge durch und stellt das Ergebnis an einem einzigen Ausgang zur Verfügung. Dieser Baustein ist Teil der IEC 61131-3-konformen Bibliothek für bitweise Operationen und eignet sich für Anwendungen, in denen eine logische Verknüpfung mehrerer Signale erforderlich ist.
 
+![OR_16_BOOL](OR_16_BOOL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **REQ (Normal Execution Request):** Dieses Ereignis löst die Berechnung der ODER-Funktion aus. Es ist mit allen 16 Dateneingängen (`IN1` bis `IN16`) verknüpft.

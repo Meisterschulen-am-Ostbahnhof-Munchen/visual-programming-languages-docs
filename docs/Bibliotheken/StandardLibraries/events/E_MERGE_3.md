@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_MERGE_3` ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der drei Ereignisströme (`EI1`, `EI2`, `EI3`) zu einem einzigen Ausgang (`EO`) zusammenführt. Diese logische ODER-Verknüpfung von Ereignissen ist essentiell für die Steuerungslogik in industriellen Automatisierungssystemen.
 
+![E_MERGE_3](E_MERGE_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_MS_TO_LINT` dient der Konvertierung eines Zeitwertes (`TIME`) in Millisekunden in einen 64-Bit-Ganzzahlwert (`LINT`). Diese Funktionalität ist besonders nützlich, wenn Zeitwerte für Berechnungen oder Vergleiche in einer numerischen Form benötigt werden.
 
+![F_TIME_IN_MS_TO_LINT](F_TIME_IN_MS_TO_LINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

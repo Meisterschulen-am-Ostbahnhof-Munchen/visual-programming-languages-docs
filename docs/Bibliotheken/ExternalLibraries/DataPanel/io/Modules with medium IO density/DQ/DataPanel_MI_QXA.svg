@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1054" height="327" viewBox="-548 -20 1054 327">
+<defs>
+</defs>
+<rect x="3" y="3" width="200" height="277" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H200 V92 H194 V132 H200 V277 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L200,30" stroke="#000000" stroke-width="1" />
+<text x="100.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">DataPanel_MI_QXA</text>
+<text x="100.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<rect x="-5.0" y="144.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="-93" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Parameters</text>
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#18519E" stroke="none" />
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8SAMember</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="-93" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Node SA 224..239</text>
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#000000" stroke="none" />
+<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">Output</text>
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">DataPanel_MI_DO_S</text>
+<text x="-156" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Identify the Output DigitalOutput_1A..8B and Input_Power_Port_5..8</text>
+<path d="M200,37 L200,47 L205,42 Z" fill="#63B31F" stroke="none" />
+<text x="188" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="231" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="301" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M200,63 L200,73 L205,68 Z" fill="#63B31F" stroke="none" />
+<text x="188" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="231" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="301" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
+<path d="M200,144 L200,154 L205,149 Z" fill="#9FA48A" stroke="none" />
+<text x="188" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="231" y="152" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="301" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M200,170 L200,180 L205,175 Z" fill="#BD8663" stroke="none" />
+<text x="188" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="231" y="178" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="301" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
+<path d="M-12,42 L-12,253" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,201 L-5,201" stroke="#404040" />
+<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,227 L-5,227" stroke="#404040" />
+<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,253 L-5,253" stroke="#404040" />
+<rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M212,42 L212,175" stroke="#404040" stroke-width="1" />
+<path d="M200,42 L212,42" stroke="#404040" />
+<rect x="210" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M212,149 L205,149" stroke="#404040" />
+<rect x="210" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M212,175 L205,175" stroke="#404040" />
+<rect x="210" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M220,68 L220,175" stroke="#404040" stroke-width="1" />
+<path d="M200,68 L220,68" stroke="#404040" />
+<rect x="218" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M220,149 L205,149" stroke="#404040" />
+<rect x="218" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M220,175 L205,175" stroke="#404040" />
+<rect x="218" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

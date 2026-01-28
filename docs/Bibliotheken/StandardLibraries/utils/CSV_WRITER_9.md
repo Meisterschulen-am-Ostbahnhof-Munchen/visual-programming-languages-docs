@@ -9,6 +9,8 @@
 ## Einleitung
 Der CSV_WRITER_9 ist ein Funktionsblock zur Erstellung von CSV-Dateien. Er ermöglicht das Schreiben von bis zu neun verschiedenen Datenpunkten in eine CSV-Datei. Der Funktionsblock ist Teil des eclipse4diac::utils-Pakets und eignet sich für Anwendungen, bei denen Daten in einem standardisierten Format gespeichert werden müssen.
 
+![CSV_WRITER_9](CSV_WRITER_9.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_WORD` dient der Konvertierung eines SINT-Wertes (8-Bit Ganzahl mit Vorzeichen) in einen WORD-Wert (16-Bit Ganzahl ohne Vorzeichen). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen unterschiedlichen Integer-Formaten erforderlich ist.
 
+![F_SINT_TO_WORD](F_SINT_TO_WORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

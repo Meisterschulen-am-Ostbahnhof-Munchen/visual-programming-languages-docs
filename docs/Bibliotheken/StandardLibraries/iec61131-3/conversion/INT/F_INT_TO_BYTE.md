@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_INT_TO_BYTE` dient zur Konvertierung eines Integer-Werts (`INT`) in einen Byte-Wert (`BYTE`). Er ist Teil des Pakets `iec61131::conversion` und bietet eine einfache und effiziente Möglichkeit, Datentypen innerhalb von IEC 61499-Systemen umzuwandeln.
 
+![F_INT_TO_BYTE](F_INT_TO_BYTE.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Dieser Eingang ist mit dem Daten-Eingang `IN` verbunden.

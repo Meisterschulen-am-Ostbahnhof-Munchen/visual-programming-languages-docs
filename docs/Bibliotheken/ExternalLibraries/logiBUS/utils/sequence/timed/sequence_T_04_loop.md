@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_T_04_loop` ist ein zeitgesteuerter Sequenzer mit vier Ausgängen, der in einer Schleife arbeitet. Er durchläuft nacheinander vier Zustände (State_01 bis State_04). Der Übergang von einem Zustand zum nächsten erfolgt automatisch nach Ablauf einer einstellbaren Zeitverzögerung. Der Baustein kann von jedem Zustand aus zurückgesetzt werden und startet dann die Sequenz erneut.
 
+![sequence_T_04_loop](sequence_T_04_loop.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **`START_S1`**: Startet die Sequenz. Der Übergang erfolgt vom initialen `START`-Zustand in `State_01`. Das Ereignis ist mit den vier Zeitdaten-Eingängen verknüpft.
@@ -72,6 +74,12 @@ Ein `RESET`-Ereignis von jedem Zustand aus führt in den `sRESET`-Zustand. Dort 
 *   **Einfache Timer (TON)**: Einzelne Timer bieten keine integrierte Sequenzlogik. `sequence_T_04_loop` kapselt die komplette Zustandsmaschine mit vier Schritten.
 *   **Ereignisgesteuerte Sequenzer**: Im Gegensatz zu ereignisgesteuerten Sequenzern (z.B. `sequence_E_04_loop`) erfolgen die Übergänge hier ausschließlich zeitbasiert, nicht durch externe Ereignisse.
 *   **SPS-Zyklus**: Die zeitgesteuerte Ablaufkontrolle ist präziser und unabhängig vom SPS-Zyklus, da sie auf dem `ATimeOut`-Adapter basiert.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_035a](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a.md)
 
 ## Fazit
 Der `sequence_T_04_loop` ist ein robuster und einfach zu konfigurierender Funktionsblock für zeitgesteuerte Ablaufsteuerungen mit vier Schritten. Durch die klare Trennung von Zustandslogik und Zeitparametern sowie die integrierte Reset-Funktionalität eignet er sich gut für standardisierte zyklische Prozesse in der Automatisierungstechnik. Die Verwendung eines Standard-Adapters für die Zeitmessung gewährleistet Portabilität und Zuverlässigkeit.

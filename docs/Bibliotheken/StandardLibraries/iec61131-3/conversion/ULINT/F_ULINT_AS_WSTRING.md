@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ULINT_AS_WSTRING` dient der Konvertierung eines vorzeichenlosen 64-Bit-Integer-Werts (`ULINT`) in einen Unicode-String (`WSTRING`). Diese Funktionalität ist besonders nützlich in Szenarien, wo numerische Werte für die Anzeige oder Weiterverarbeitung als Text benötigt werden.
 
+![F_ULINT_AS_WSTRING](F_ULINT_AS_WSTRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

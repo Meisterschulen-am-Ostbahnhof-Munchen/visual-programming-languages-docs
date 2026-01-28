@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_AND_4 Funktionsblock ist ein generischer Baustein zur Berechnung einer logischen UND-Verknüpfung mit vier Eingängen. Er dient zur Verarbeitung von booleschen Signalen in Automatisierungssystemen und ermöglicht die Kombination mehrerer Eingangssignale zu einem gemeinsamen Ausgangssignal.
 
+![AX_AND_4](AX_AND_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

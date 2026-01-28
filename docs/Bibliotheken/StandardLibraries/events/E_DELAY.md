@@ -9,6 +9,8 @@
 ## Einleitung
 Der **E_DELAY** ist ein zentraler Funktionsbaustein der IEC 61499 Norm für industrielle Steuerungssysteme. Als ereignisgesteuerter Timer ermöglicht er die verzögerte Auslösung von Ereignissen mit konfigurierbarer Zeitspanne und Abbruchmöglichkeit. Dieser Baustein findet breite Anwendung in zeitgesteuerten Automatisierungsprozessen.
 
+![E_DELAY](E_DELAY.svg)
+
 ## Struktur des E_DELAY-Bausteins
 
 ### Schnittstelle (Interface)
@@ -58,6 +60,19 @@ Der **E_DELAY** ist ein zentraler Funktionsbaustein der IEC 61499 Norm für indu
 | Funktionsprinzip | Einmalverzögerung | Dauerzyklus | Einmalimpuls |
 | Abbruchmöglichkeit | Ja | Ja | Nein |
 | Zeitparameter | DT (Verzögerung) | DT (Zykluszeit) | PT (Impulsdauer) |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_018](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_018.md)
+* [Uebung_020b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020b.md)
+* [Uebung_020b_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020b_AX.md)
+* [Uebung_020d](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020d.md)
+* [Uebung_020d_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020d_AX.md)
+* [Uebung_024](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_024.md)
+* [Uebung_025](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_025.md)
+* [Uebung_026](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_026.md)
 
 ## Fazit
 

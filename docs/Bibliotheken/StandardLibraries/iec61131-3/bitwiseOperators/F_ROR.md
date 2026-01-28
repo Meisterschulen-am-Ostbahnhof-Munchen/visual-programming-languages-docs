@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_ROR` (Rotate Right) führt eine bitweise Rechtsrotation durch. Er gehört zur Kategorie der standardisierten Bitverschiebungsfunktionen gemäß IEC 61131-3. Der Block rotiert die Eingabedaten um eine angegebene Anzahl von Bits nach rechts und füllt die frei werdenden Bits mit den herausrotierenden Bits auf.
 
+![F_ROR](F_ROR.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

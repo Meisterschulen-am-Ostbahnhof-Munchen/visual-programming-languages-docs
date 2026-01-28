@@ -10,6 +10,8 @@
 ## Einleitung
 Der logiBUS_LED_PWM_QX ist ein Ausgabeservice-Interface-Funktionsblock für boolesche Ausgabedaten mit PWM-Funktionalität für LED-Ansteuerung. Der Baustein ermöglicht die Ansteuerung von LED-Ausgängen mit konfigurierbaren Frequenzen und bietet eine standardisierte Schnittstelle für die Kommunikation mit logiBUS-I/O-Ressourcen.
 
+![logiBUS_LED_PWM_QX](logiBUS_LED_PWM_QX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

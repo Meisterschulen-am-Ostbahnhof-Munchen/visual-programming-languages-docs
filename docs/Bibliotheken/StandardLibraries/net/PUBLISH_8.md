@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_8 Funktionsblock dient zum Senden von Daten an einen oder mehrere SUBSCRIBE_8 Blöcke. Er implementiert ein Publisher-Subscriber-Kommunikationsmuster und ermöglicht die Verteilung von bis zu acht verschiedenen Datenwerten an abonnierte Empfänger.
 
+![PUBLISH_8](PUBLISH_8.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_INT_TO_WORD` dient der Konvertierung eines ganzzahligen Wertes (INT) in einen 16-Bit-Wortwert (WORD). Diese Konvertierung ist besonders nützlich in Szenarien, wo Daten zwischen Systemen mit unterschiedlichen Datentypen ausgetauscht werden müssen.
 
+![F_INT_TO_WORD](F_INT_TO_WORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

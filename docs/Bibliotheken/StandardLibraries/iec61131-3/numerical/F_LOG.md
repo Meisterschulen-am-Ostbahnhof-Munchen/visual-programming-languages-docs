@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_LOG Funktionsblock berechnet den Logarithmus zur Basis 10 (dekadischer Logarithmus) eines numerischen Eingangswerts. Er gehört zur Kategorie der Standardfunktionen für eine numerische Variable gemäß IEC 61131-3 und ist Teil des Pakets `iec61131::numerical`.
 
+![F_LOG](F_LOG.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

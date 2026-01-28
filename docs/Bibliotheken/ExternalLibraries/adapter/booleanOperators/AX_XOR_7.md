@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_XOR_7 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen XOR-Verknüpfung mit sieben Eingängen. Er ermöglicht die Verarbeitung von bis zu sieben Eingangssignalen und gibt das Ergebnis der XOR-Operation aus.
 
+![AX_XOR_7](AX_XOR_7.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

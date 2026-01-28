@@ -11,6 +11,8 @@
 
 Der FB_TON ist ein standardisierter Timer-Funktionsblock gemäß IEC 61131-3, der eine Einschaltverzögerung (On-Delay) realisiert. Dieser Baustein wird verwendet, um zeitgesteuerte Verzögerungen in Steuerungsprogrammen zu implementieren.
 
+![FB_TON](FB_TON.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -54,6 +56,13 @@ Der FB_TON startet die Zeitmessung, wenn der Eingang IN von FALSE auf TRUE wechs
 - **FB_TOF**: Ausschaltverzögerung (Off-Delay) statt Einschaltverzögerung
 - **FB_TP**: Impulstimer mit fester Pulsdauer
 - **FB_TON_EXT**: Erweiterte Timer-Varianten mit zusätzlichen Funktionen
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_020c3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c3.md)
+* [Uebung_020c3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
 
 ## Fazit
 Der FB_TON ist ein grundlegender und robuster Timer-Baustein für Standard-Einschaltverzögerungen in industriellen Steuerungssystemen. Seine einfache und intuitive Bedienung sowie die Konformität zum IEC 61131-3 Standard machen ihn zu einer zuverlässigen Wahl für zeitgesteuerte Anwendungen.

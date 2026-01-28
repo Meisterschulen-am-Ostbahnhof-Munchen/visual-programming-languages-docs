@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_WORD` dient der Konvertierung eines 64-Bit-Wertes (LWORD) in einen 16-Bit-Wert (WORD). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten zwischen Systemen mit unterschiedlicher Wortbreite ausgetauscht oder verarbeitet werden müssen.
 
+![F_LWORD_TO_WORD](F_LWORD_TO_WORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

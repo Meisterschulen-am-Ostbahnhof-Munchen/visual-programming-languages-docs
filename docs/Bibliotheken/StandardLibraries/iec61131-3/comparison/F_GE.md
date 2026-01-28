@@ -9,6 +9,9 @@
 
 * * * * * * * * * *
 
+![F_GE](F_GE.svg)
+
+
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 
 **Der GE-Operator in IEC 61499: Eine Einführung**

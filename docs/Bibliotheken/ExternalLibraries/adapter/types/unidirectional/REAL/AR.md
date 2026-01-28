@@ -1,3 +1,5 @@
+![AR](AR.svg)
+
 # AR (REAL)
 
 ```{index} single: AR (REAL)

@@ -9,6 +9,8 @@
 ## Einleitung
 Der CSV_WRITER_5 ist ein Funktionsblock zur Ausgabe von Daten in eine CSV-Datei. Er ermöglicht das Schreiben von bis zu fünf verschiedenen Datenpunkten in eine benutzerdefinierte Datei. Der Funktionsblock ist besonders nützlich für Datenerfassungs- und Protokollierungsanwendungen.
 
+![CSV_WRITER_5](CSV_WRITER_5.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

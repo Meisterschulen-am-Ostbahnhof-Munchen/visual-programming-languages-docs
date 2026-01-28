@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_XOR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen XOR-Verknüpfung mit drei Eingängen. Er implementiert die exklusive ODER-Operation für drei binäre Eingangssignale und gibt das entsprechende Ergebnis aus.
 
+![AX_XOR_3](AX_XOR_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -57,6 +59,12 @@ Der Baustein besitzt keine internen Zustände und arbeitet statisch. Die Ausgabe
 Im Vergleich zu Standard-XOR-Bausteinen mit zwei Eingängen bietet AX_XOR_3 die Erweiterung auf drei Eingänge. Während ein 2-Eingang-XOR nur bei ungleichen Eingängen true liefert, berücksichtigt der 3-Eingang-XOR die Parität aller drei Signale.
 
 Vergleich mit [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.md)
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_002a7_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
 
 ## Fazit
 Der AX_XOR_3 Funktionsblock bietet eine zuverlässige und effiziente Lösung für dreifache XOR-Verknüpfungen in IEC 61499-basierten Steuerungssystemen. Durch die Verwendung von Adaptern ermöglicht er eine flexible Integration in verschiedene Systemarchitekturen und ist besonders für Anwendungen geeignet, die eine Paritätsprüfung oder spezielle logische Bedingungen mit drei Eingangssignalen erfordern.

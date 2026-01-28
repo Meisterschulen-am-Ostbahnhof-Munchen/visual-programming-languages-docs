@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_SPLIT_9 Funktionsblock ist ein generischer Baustein, der einen einzelnen AX-Adapter auf neun separate AX-Ausgänge aufteilt. Der Block dient als Verteiler für unidirektionale Adapterverbindungen und ermöglicht die Verteilung eines Eingangssignals auf multiple Ausgangskanäle.
 
+![AX_SPLIT_9](AX_SPLIT_9.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

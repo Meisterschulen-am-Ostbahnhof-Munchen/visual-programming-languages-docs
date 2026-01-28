@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_DINT` dient der Konvertierung eines WSTRING-Wertes in einen DINT-Wert. Er ist Teil des Pakets `iec61131::conversion` und ermöglicht die einfache Umwandlung von breiten Zeichenketten in ganzzahlige Werte.
 
+![F_WSTRING_AS_DINT](F_WSTRING_AS_DINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Normaler Ausführungsanforderung. Löst die Konvertierung aus.

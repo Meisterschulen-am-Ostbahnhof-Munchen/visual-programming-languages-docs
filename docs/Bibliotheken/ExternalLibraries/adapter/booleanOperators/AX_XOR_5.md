@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_XOR_5 ist ein generischer Funktionsblock zur Berechnung der booleschen XOR-Verknüpfung mit fünf Eingängen. Der Baustein implementiert die exklusive ODER-Operation für bis zu fünf Eingangssignale und gibt das Ergebnis über einen Adapter-Ausgang aus.
 
+![AX_XOR_5](AX_XOR_5.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

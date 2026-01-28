@@ -1,3 +1,5 @@
+![AB2](AB2.svg)
+
 # AB2
 
 ```{index} single: AB2

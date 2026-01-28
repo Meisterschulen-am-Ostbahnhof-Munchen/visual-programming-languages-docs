@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock FB_RS ist ein bistabiles Element, das als Set-Reset-Flipflop (RS-Flipflop) fungiert. Es speichert einen Zustand und ändert diesen basierend auf den Eingangssignalen S (Set) und R1 (Reset). Der Block ist gemäß dem IEC 61499-1 Standard implementiert und eignet sich für Steuerungsanwendungen, die eine Zustandsspeicherung erfordern.
 
+![FB_RS](FB_RS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

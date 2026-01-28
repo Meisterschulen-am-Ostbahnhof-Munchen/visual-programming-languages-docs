@@ -8,6 +8,8 @@
 ## Einleitung
 Echtzeit-Variante des E_REND Bausteins (Rendezvous). Wartet auf zwei Ereignisse.
 
+![RT_E_REND](RT_E_REND.svg)
+
 ## Metadaten
 | Attribut | Wert |
 | :--- | :--- |

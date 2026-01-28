@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WSTRING_AS_LWORD` dient der Konvertierung eines WSTRING-Datentyps in einen LWORD-Datentyp. Diese Funktionalität ist insbesondere in Szenarien nützlich, in denen Zeichenketten in eine für die weitere Verarbeitung geeignete binäre Form umgewandelt werden müssen.
 
+![F_WSTRING_AS_LWORD](F_WSTRING_AS_LWORD.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Normaler Ausführungsanforderung. Dieser Ereigniseingang löst die Konvertierung aus.

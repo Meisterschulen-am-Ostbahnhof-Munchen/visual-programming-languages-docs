@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LINT_TO_DWORD` dient der Konvertierung eines LINT-Wertes (64-Bit Ganzzahl) in einen DWORD-Wert (32-Bit vorzeichenlose Ganzzahl). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_LINT_TO_DWORD](F_LINT_TO_DWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

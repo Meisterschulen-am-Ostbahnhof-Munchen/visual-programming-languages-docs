@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock `FB_F_TRIG` dient zur Erkennung einer fallenden Flanke eines booleschen Signals. Er wird häufig in Steuerungsanwendungen eingesetzt, um Zustandsänderungen von `TRUE` nach `FALSE` zu detektieren und entsprechende Aktionen auszulösen.
 
+![FB_F_TRIG](FB_F_TRIG.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

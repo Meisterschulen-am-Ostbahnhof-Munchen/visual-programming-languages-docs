@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_UDINT` dient zur Konvertierung eines BYTE-Wertes in einen UDINT-Wert. Dieser Baustein ist besonders nützlich in Szenarien, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_BYTE_TO_UDINT](F_BYTE_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

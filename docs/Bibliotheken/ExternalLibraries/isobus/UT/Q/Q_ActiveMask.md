@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung aktiver Masken in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.34) Spezifikation für landwirtschaftliche Steuersysteme.
 
+![Q_ActiveMask](Q_ActiveMask.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -73,6 +75,16 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
 | ISO-Standard  | ✔            | ✖             | ✖                |
 | Fehlercodes   | Standard     | Hersteller    | Teilweise        |
 | Zustandsverwaltung | Voll | Basis       | Erweitert        |
+
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_019](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019.md)
+* [Uebung_019a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019a.md)
+* [Uebung_019b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019b.md)
+* [Uebung_019c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019c.md)
 
 ## Fazit
 

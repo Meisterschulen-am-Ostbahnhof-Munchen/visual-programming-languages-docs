@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_BYTE` dient zur Konvertierung eines `WORD`-Datentyps in einen `BYTE`-Datentyp. Er ist Teil des Pakets `iec61131::conversion` und eignet sich für Anwendungen, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_WORD_TO_BYTE](F_WORD_TO_BYTE.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung des Funktionsblocks. Dieser Eingang ist mit dem Daten-Eingang `IN` verknüpft.

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_USINT` dient der Konvertierung eines 32-Bit Ganzzahlwerts (DINT) in einen 8-Bit vorzeichenlosen Ganzzahlwert (USINT). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen oder Komponenten ausgetauscht werden müssen, die unterschiedliche Datentypen verwenden.
 
+![F_DINT_TO_USINT](F_DINT_TO_USINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Dieser Ereigniseingang ist mit dem Daten-Eingang `IN` verknüpft.

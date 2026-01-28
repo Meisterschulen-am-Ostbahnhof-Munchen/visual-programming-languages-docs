@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_OR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der logischen ODER-Verknüpfung mit drei Eingängen. Er dient zur Verarbeitung von booleschen Signalen in Steuerungsanwendungen und ermöglicht die flexible Kombination mehrerer Eingangssignale zu einem Ausgangssignal.
 
+![AX_OR_3](AX_OR_3.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Keine Ereigniseingänge vorhanden.
@@ -56,6 +58,13 @@ Da es sich um einen kombinatorischen Baustein ohne Speicherfunktion handelt, bes
 Im Vergleich zu Standard-ODER-Bausteinen bietet AX_OR_3 den Vorteil von drei Eingängen in einem einzigen Baustein, was die Verdrahtung vereinfacht. Gegenüber Bausteinen mit variabler Eingangsanzahl ist AX_OR_3 spezifisch optimiert für den dreifachen ODER-Einsatz.
 
 Vergleich mit [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3.md)
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_002a5_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
+* [Uebung_002a5b_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
 
 ## Fazit
 Der AX_OR_3 Funktionsblock stellt eine effiziente Lösung für ODER-Verknüpfungen mit drei Eingängen dar. Durch die Adapter-basierte Schnittstelle ermöglicht er eine flexible Integration in verschiedene Steuerungsarchitekturen und eignet sich besonders für Anwendungen, bei denen mehrere Bedingungen alternativ erfüllt sein können.

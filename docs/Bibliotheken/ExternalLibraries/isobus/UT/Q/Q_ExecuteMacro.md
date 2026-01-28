@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_ExecuteMacro** ist ein standardkonformer Funktionsbaustein zur Ausführung von Makros in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.48) Spezifikation für VT ab Version 4.
 
+![Q_ExecuteMacro](Q_ExecuteMacro.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_NS_TO_LINT` dient zur Konvertierung eines Zeitwerts in Nanosekunden (`TIME`) in einen 64-Bit-Ganzzahlwert (`LINT`). Diese Konvertierung ist nützlich, wenn Zeitwerte für Berechnungen oder Vergleiche in einer numerischen Form benötigt werden.
 
+![F_TIME_IN_NS_TO_LINT](F_TIME_IN_NS_TO_LINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

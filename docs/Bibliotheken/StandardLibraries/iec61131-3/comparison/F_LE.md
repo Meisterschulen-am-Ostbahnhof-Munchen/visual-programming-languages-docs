@@ -11,6 +11,9 @@
 
 * * * * * * * * * *
 
+![F_LE](F_LE.svg)
+
+
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 
 **Der LE-Operator in IEC 61499: Eine Einführung**

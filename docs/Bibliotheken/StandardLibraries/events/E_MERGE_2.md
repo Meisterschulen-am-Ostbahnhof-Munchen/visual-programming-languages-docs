@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_MERGE_2` ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der zwei Ereignisströme (`EI1`, `EI2`) zu einem einzigen Ausgang (`EO`) zusammenführt. Diese logische ODER-Verknüpfung von Ereignissen ist essentiell für die Steuerungslogik in industriellen Automatisierungssystemen. Dieser Baustein ist funktional identisch mit dem `E_MERGE`-Baustein.
 
+![E_MERGE_2](E_MERGE_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der Aux_IE Funktionsblock ist ein Eingabeservice-Interface-Funktionsblock für Ereigniseingabedaten. Er dient zur Verarbeitung von Hilfseingaben (Auxiliary Inputs) und ermöglicht die Erkennung verschiedener Eingabeereignisse wie Drücken, Loslassen, Einfachklick, Doppelklick etc.
 
+![Aux_IE](Aux_IE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

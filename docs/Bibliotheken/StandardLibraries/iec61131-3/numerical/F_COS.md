@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_COS Funktionsblock berechnet den Kosinus eines Eingangswertes in Bogenmaß (Radiant). Es handelt sich um eine Standardfunktion für numerische Berechnungen gemäß IEC 61131-3.
 
+![F_COS](F_COS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

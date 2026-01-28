@@ -7,6 +7,8 @@
 ## Einleitung
 `sequence_T_05_loop_AX` ist eine Variante des `sequence_T_05_loop`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein zeitgesteuerte, zyklische Sequenz mit 5 Ausgabezuständen.
 
+![sequence_T_05_loop_AX](sequence_T_05_loop_AX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

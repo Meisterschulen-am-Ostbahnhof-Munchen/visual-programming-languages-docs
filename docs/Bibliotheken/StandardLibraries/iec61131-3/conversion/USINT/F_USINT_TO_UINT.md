@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_UINT` dient der Konvertierung eines `USINT`-Wertes (Unsigned Short Integer) in einen `UINT`-Wert (Unsigned Integer). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung ohne Datenverlust erforderlich ist.
 
+![F_USINT_TO_UINT](F_USINT_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der IORevPiCore Funktionsblock dient als Kernmodul für die Revolution Pi Hardware von KUNBUS GmbH. Er ermöglicht die grundlegende Kommunikation und Konfiguration der Revolution Pi I/O-Module innerhalb einer 4diac-basierten Steuerungsanwendung.
 
+![IORevPiCore](IORevPiCore.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

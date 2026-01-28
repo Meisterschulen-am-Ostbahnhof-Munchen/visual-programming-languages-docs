@@ -10,6 +10,8 @@
 ## Einleitung
 Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A), der die bedingte Weiterleitung von Ereignissen basierend auf einem Steuersignal ermöglicht. Die aktuelle Version 1.0 steht unter EPL-2.0 Lizenz.
 
+![E_SELECT](E_SELECT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -63,6 +65,12 @@ Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A
 | Auswahlkriterium | Boolesch (`G`) | Boolesch (`G`) | Keines |
 | Richtung      | 2:1 (Multiplexer)      | 1:2 (Demultiplexer)     | n:1 (OR-Gatter)     |
 | Zustandsmodell | BasicFB  | BasicFB | BasicFB/Generic |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_095](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_095.md)
 
 ## Fazit
 

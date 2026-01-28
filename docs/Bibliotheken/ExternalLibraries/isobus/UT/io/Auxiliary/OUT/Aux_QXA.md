@@ -10,6 +10,8 @@
 ## Einleitung
 Der Aux_QXA ist ein zusammengesetzter Funktionsblock für die Ausgabe von booleschen Daten. Er dient als Schnittstelle für Hilfsausgänge (Auxiliary Outputs) in ISOBUS-kompatiblen Systemen und ermöglicht die Steuerung von booleschen Ausgabesignalen über standardisierte Schnittstellen.
 
+![Aux_QXA](Aux_QXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

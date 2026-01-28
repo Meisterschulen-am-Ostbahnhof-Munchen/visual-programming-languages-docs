@@ -9,6 +9,8 @@
 ## Einleitung
 Der **E_CTD** (Event-Driven Down Counter) ist ein ereignisgesteuerter Abwärtszähler nach dem IEC 61499-Standard. Dieser Funktionsbaustein wird in industriellen Steuerungssystemen eingesetzt, um Zählvorgänge zu realisieren, die durch Ereignisse gesteuert werden.
 
+![E_CTD](E_CTD.svg)
+
 ## Struktur des E_CTD-Bausteins
 
 ### Schnittstelle (Interface)
@@ -61,6 +63,12 @@ Der **E_CTD** (Event-Driven Down Counter) ist ein ereignisgesteuerter Abwärtsz�
 | Zählrichtung     | Abwärts           | Aufwärts           | Beides                   |
 | Ereignisgesteuert| Ja                | Ja                 | Ja                       |
 | Reset-Funktion   | LD (Neuladen)     | R (Reset)          | R (Reset)                |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_081](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_081.md)
 
 ## Fazit
 Der **E_CTD**-Baustein ist ein wesentliches Element in der IEC 61499, das eine zuverlässige und flexible Zählfunktion für industrielle Steuerungen bietet. Seine ereignisgesteuerte Natur macht ihn besonders geeignet für verteilte Systeme, wo zyklische Abfragen nicht praktikabel sind. Durch die klare Schnittstelle und das intuitive Verhalten ist er einfach in bestehende Steuerungskonzepte zu integrieren.

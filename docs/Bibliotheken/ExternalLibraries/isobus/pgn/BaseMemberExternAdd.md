@@ -1,3 +1,5 @@
+![BaseMemberExternAdd](BaseMemberExternAdd.svg)
+
 # BaseMemberExternAdd
 
 ```{index} single: BaseMemberExternAdd

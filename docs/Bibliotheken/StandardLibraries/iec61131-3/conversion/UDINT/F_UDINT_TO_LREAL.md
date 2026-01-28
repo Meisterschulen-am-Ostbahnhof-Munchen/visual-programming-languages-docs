@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_LREAL` dient der Konvertierung eines 32-Bit vorzeichenlosen Integer-Werts (UDINT) in einen 64-Bit Fließkommawert (LREAL). Dieser Baustein ist besonders nützlich in Anwendungen, wo numerische Werte unterschiedlicher Genauigkeit verarbeitet werden müssen.
 
+![F_UDINT_TO_LREAL](F_UDINT_TO_LREAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

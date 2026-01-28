@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AlPgnRxNew8Bcylc` dient dem zyklischen Empfang von Daten über ein ISOBUS-Netzwerk gemäß dem Parameter Group Number (PGN) Protokoll. Er ermöglicht die Konfiguration und Überwachung von Empfangskanälen für spezifische PGNs, inklusive der Handhabung von Timeouts und Fehlerzuständen. Der Block ist für den Einsatz in Steuerungssystemen konzipiert, die eine zuverlässige und überwachte Kommunikation mit anderen ISOBUS-Geräten erfordern.
 
+![AlPgnRxNew8Bcylc](AlPgnRxNew8Bcylc.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

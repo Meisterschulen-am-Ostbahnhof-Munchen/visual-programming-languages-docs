@@ -11,6 +11,8 @@
 
 Der PLCnextAXLSEDO16 ist ein Service Interface Function Block für die Ansteuerung von 16 digitalen Ausgängen in PLCnext-Systemen. Der Baustein dient als Schnittstelle zwischen der IEC 61499-basierten Steuerungslogik und den physikalischen Ausgängen des PLCnext-AXLSEDO16-Moduls.
 
+![PLCnextAXLSEDO16](PLCnextAXLSEDO16.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

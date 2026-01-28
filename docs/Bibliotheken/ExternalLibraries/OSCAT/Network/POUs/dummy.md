@@ -1,3 +1,5 @@
+![dummy](dummy.svg)
+
 # dummy
 
 ```{index} single: dummy

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UINT_TO_UDINT` dient der Konvertierung eines 16-Bit vorzeichenlosen Integer-Werts (`UINT`) in einen 32-Bit vorzeichenlosen Integer-Wert (`UDINT`). Der Block ist Teil des `iec61131::conversion`-Pakets und eignet sich für Anwendungen, bei denen eine Erweiterung der Bitbreite von numerischen Werten erforderlich ist.
 
+![F_UINT_TO_UDINT](F_UINT_TO_UDINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

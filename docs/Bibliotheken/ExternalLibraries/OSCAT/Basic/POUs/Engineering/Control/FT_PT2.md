@@ -1,3 +1,5 @@
+![FT_PT2](FT_PT2.svg)
+
 # FT_PT2
 
 ```{index} single: FT_PT2

@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_TRIG` ist ein spezieller Service-Funktionsbaustein nach IEC 61499. Seine Aufgabe ist es, *unverbundene* Ereignis-Eingänge eines bestimmten Typs (Namens) innerhalb einer Ressource programmatisch auszulösen. Dies ermöglicht fortgeschrittene Steuerungs- und Initialisierungs-Szenarien.
 
+![E_TRIG](E_TRIG.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

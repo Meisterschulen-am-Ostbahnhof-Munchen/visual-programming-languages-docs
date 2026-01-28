@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_INT_TO_DWORD` dient der Konvertierung eines Integer-Werts (INT) in einen Double-Word-Wert (DWORD). Diese Konvertierung ist besonders nützlich, wenn Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Datentypen verwenden.
 
+![F_INT_TO_DWORD](F_INT_TO_DWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

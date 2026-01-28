@@ -5,6 +5,8 @@
 ## Einleitung
 Der `E_DEMUX` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, der ein einzelnes Eingangereignis (`EI`) an einen von mehreren Ausgängen weiterleitet. Die Auswahl des spezifischen Ausgangs wird durch den Wert einer Eingangsvariable (`K`) bestimmt. Diese Version des Bausteins ist ein 1-zu-4 Demultiplexer.
 
+![E_DEMUX](E_DEMUX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -52,6 +54,14 @@ Das Eingangsereignis wird somit immer exklusiv an genau einen Ausgang weitergele
 | Ereignisfluss  | Aufteilung       | Zusammenführung| Bedingte Weiche  |
 
 *Hinweis: Es existieren auch andere Varianten wie `E_DEMUX_2` und `E_DEMUX_8` für 2 bzw. 8 Ausgänge.*
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_040](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
+* [Uebung_040_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_040_AX.md)
+* [Uebung_087](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087.md)
 
 ## Fazit
 Der `E_DEMUX` ist ein fundamentaler Baustein für die Steuerung des Ereignisflusses in IEC 61499-Anwendungen. Er ermöglicht eine klare, indexbasierte Aufteilung von Ereignisströmen und ist damit ein Schlüsselwerkzeug für die Implementierung von Zustandslogiken, Modus-Umschaltungen und Sequenzsteuerungen.

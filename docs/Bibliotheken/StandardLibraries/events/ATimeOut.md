@@ -10,6 +10,8 @@
 ## Einleitung
 Der **ATimeOut**-Adapter ist eine standardisierte Schnittstelle (AdapterType) gemäß IEC 61499 zur Implementierung von Timeout-Services. Er definiert die Kommunikation zwischen einem Dienstnutzer (PLUG) und einem Zeitdienst-Anbieter (SOCKET). Im Gegensatz zum `ARTimeOut` ist dieser Adapter für einfache, nicht-nachtriggerbare Timeouts vorgesehen.
 
+![ATimeOut](ATimeOut.svg)
+
 ## Struktur des ATimeOut-Adapters
 Der ATimeOut-Adapter definiert eine klare Trennung der Zuständigkeiten zwischen der Steuerlogik (Plug) und dem Zeitgeber (Socket).
 

@@ -9,6 +9,8 @@
 ## Einleitung
 Der SYS_ONTIME Funktionsblock dient als Service Interface für die Kommunikation zwischen einer Anwendung und einer Ressource. Er ermöglicht die Übertragung von Betriebszeitdaten in dezimalen Minuten (0,01 Stunden) von der Ressource zur Anwendung.
 
+![SYS_ONTIME](SYS_ONTIME.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

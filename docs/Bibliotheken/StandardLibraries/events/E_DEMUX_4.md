@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_DEMUX_4` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, der ein einzelnes Eingangereignis (`EI`) an einen von vier Ausgängen weiterleitet. Die Auswahl des Ausgangs wird durch den Wert der Eingangsvariable `K` bestimmt.
 
+![E_DEMUX_4](E_DEMUX_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -45,6 +47,13 @@ Der `E_DEMUX_4` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, 
 - **Zustandsmaschinen**: Auswahl des nächsten Zustandsübergangs basierend auf einem berechneten Index.
 - **Modus-Umschaltung**: Aktivierung unterschiedlicher Anlagenteile je nach gewähltem Betriebsmodus (`K` = Modus-Nummer).
 - **Sequenzer/Schrittketten**: Aktivierung eines von vier möglichen nächsten Schritten.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_087a1](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087a1.md)
+* [Uebung_087a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087a2.md)
 
 ## Fazit
 Der `E_DEMUX_4` ist eine Standard-Implementierung des Demultiplexer-Prinzips für vier Ausgänge. Er ist nützlich für die Aufteilung eines Ereignisflusses in bis zu vier Pfade. Die inkonsistente Benennung der Ausgänge im Verhältnis zum Indexwert erfordert besondere Aufmerksamkeit bei der Implementierung.

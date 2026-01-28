@@ -11,6 +11,8 @@
 Der **I_GBSD** (Ground-based Speed and Distance) ist ein standardkonformer Funktionsbaustein zur Messung von Fahrzeuggeschwindigkeit, Distanz und Fahrtrichtung, entwickelt unter EPL-2.0 Lizenz.
 Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für präzise Bewegungsdaten in landwirtschaftlichen und baulichen Maschinen.
 
+![I_GBSD](I_GBSD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

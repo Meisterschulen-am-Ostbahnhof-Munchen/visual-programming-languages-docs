@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_AS_STRING` dient zur Konvertierung eines `TIME`-Wertes in einen `STRING`-Wert. Er ist besonders nützlich, wenn Zeitwerte für die Anzeige oder Protokollierung in einer textuellen Form benötigt werden.
 
+![F_TIME_AS_STRING](F_TIME_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Löst die Ausführung des Funktionsblocks aus. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

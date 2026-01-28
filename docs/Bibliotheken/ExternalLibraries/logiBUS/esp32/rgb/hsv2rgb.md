@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `hsv2rgb` ist ein Hilfsbaustein zur Farbraumkonvertierung. Er wandelt eine im HSV-Farbmodell (Hue, Saturation, Value) definierte Farbe in die entsprechenden Werte des RGB-Farbmodells (Red, Green, Blue) um. Dies ist besonders nützlich für Anwendungen, die Farben auf Basis ihrer wahrnehmungsbezogenen Eigenschaften (Farbton, Sättigung, Helligkeit) steuern müssen, während die Ausgabegeräte (wie LEDs oder Displays) RGB-Werte erwarten.
 
+![hsv2rgb](hsv2rgb.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

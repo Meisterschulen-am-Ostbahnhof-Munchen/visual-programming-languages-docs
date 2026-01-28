@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_SINT_TO_UINT` dient der Konvertierung eines vorzeichenbehafteten 8-Bit-Integer-Werts (`SINT`) in einen vorzeichenlosen 16-Bit-Integer-Wert (`UINT`). Diese Konvertierung ist insbesondere dann notwendig, wenn Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Datentypen verwenden.
 
+![F_SINT_TO_UINT](F_SINT_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

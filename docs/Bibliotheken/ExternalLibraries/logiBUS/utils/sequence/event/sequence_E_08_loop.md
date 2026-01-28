@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_E_08_loop` ist ein Sequenzer mit acht Ausgangszuständen, der in einer Schleife arbeitet. Er dient zur Steuerung sequentieller Abläufe, bei denen jeder Schritt durch ein externes Ereignis ausgelöst wird. Der Baustein ist als Basic Function Block (BasicFB) nach IEC 61499 implementiert und eignet sich für Anwendungen, die eine klare, ereignisgesteuerte Zustandsmaschine erfordern.
 
+![sequence_E_08_loop](sequence_E_08_loop.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   `START_S1`: Wechselt vom Startzustand (`START`) in den Zustand `State_01`.
@@ -66,6 +68,13 @@ Die ECC (Execution Control Chart) umfasst folgende Zustände:
 
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Sequenzern mit zeitgesteuerten Übergängen (z.B. `sequence_T_08_loop`) bietet dieser FB maximale Flexibilität, da die Verweildauer in jedem Zustand extern vorgegeben wird. Er ist einfacher aufgebaut als Bausteine mit integrierter Fehlerbehandlung oder komplexen Verzweigungen, stellt aber eine robuste Grundlage für ereignisgesteuerte Abläufe dar. Alternative Implementierungen mit `E_SR`- oder `E_CTUD`-Blöcken wären deutlich komplexer und weniger übersichtlich.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_040](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
+* [Uebung_041](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_041.md)
 
 ## Fazit
 Der `sequence_E_08_loop` ist ein spezialisierter, zuverlässiger und einfach zu konfigurierender Funktionsblock für ereignisgesteuerte Sequenzabläufe. Seine klare Struktur, die konsistente Schnittstelle und die integrierte Reset-Funktionalität machen ihn besonders geeignet für Anwendungen, bei denen ein schrittweiser Prozess durch externe Signale (z.B. Taster, Sensoren, übergeordnete Steuerungen) vorangetrieben werden muss. Die Ausgabe der Zustandsnummer und die konfirmierenden Ereignisse ermöglichen eine einfache Anbindung an Visualisierungs- und Überwachungssysteme.

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `OR_8_BOOL` ist ein standardisierter Baustein zur Berechnung der logischen ODER-Verknüpfung. Er führt die ODER-Operation über acht separate boolesche Eingangswerte aus und liefert das Ergebnis auf einem einzelnen booleschen Ausgang. Dieser Baustein ist Teil der IEC 61131-3-konformen Bibliothek für bitweise Operationen und dient der einfachen und strukturierten Logikverarbeitung in Steuerungsanwendungen.
 
+![OR_8_BOOL](OR_8_BOOL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **REQ** (Normal Execution Request): Dieses Ereignis löst die Ausführung des Funktionsblocks aus. Bei seinem Eintreffen werden alle acht Daten-Eingänge (`IN1` bis `IN8`) ausgelesen und die ODER-Operation berechnet.

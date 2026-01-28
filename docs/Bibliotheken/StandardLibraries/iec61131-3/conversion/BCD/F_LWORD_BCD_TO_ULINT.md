@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LWORD_BCD_TO_ULINT` dient der Konvertierung eines BCD-kodierten `LWORD`-Werts in einen `ULINT`-Wert. Dies ist besonders nützlich in Anwendungen, wo BCD-kodierte Daten verarbeitet werden müssen, wie z.B. in industriellen Steuerungen oder Kommunikationsprotokollen.
 
+![F_LWORD_BCD_TO_ULINT](F_LWORD_BCD_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Der Eingang ist mit dem Daten-Eingang `IN` verknüpft.

@@ -8,6 +8,8 @@
 ## Einleitung
 Der CLIENT_0_1 Funktionsblock dient zur Kommunikation mit einem entsprechenden Server-Block (z.B. SERVER_1_0) über eine Netzwerkverbindung. Er ist spezialisiert auf den **Empfang** von Daten vom Server, ohne selbst Daten zu senden (Receive Only Client).
 
+![CLIENT_0_1](CLIENT_0_1.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

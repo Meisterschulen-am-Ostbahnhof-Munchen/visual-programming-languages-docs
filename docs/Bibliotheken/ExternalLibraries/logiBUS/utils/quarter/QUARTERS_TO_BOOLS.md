@@ -14,6 +14,8 @@
 ## Einleitung
 Der Funktionsblock `QUARTERS_TO_BOOLS` ist ein Composite Function Block, der 16 separate 2-Bit-Eingabewerte (sogenannte "Quarter Bytes") parallel in entsprechende boolesche Ausgangssignale umwandelt. Er dient als Wrapper und vereinfacht die Handhabung, indem er eine Vielzahl einzelner Konvertierungsbausteine zu einem einzigen, übersichtlichen Baustein zusammenfasst. Dieser Block ist besonders nützlich in Steuerungssystemen, in denen kompakte Datenformate (wie 2-Bit-Zustände in einem Byte) in einfache binäre Steuersignale für Aktoren oder Statusanzeigen umgesetzt werden müssen.
 
+![QUARTERS_TO_BOOLS](QUARTERS_TO_BOOLS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

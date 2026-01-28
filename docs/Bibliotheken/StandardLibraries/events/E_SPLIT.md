@@ -10,6 +10,8 @@
 ## Einleitung
 Der **E_SPLIT** ist ein standardkonformer Funktionsbaustein (IEC 61499-1 Annex A) zur Ereignisverteilung, entwickelt unter EPL-2.0 Lizenz. Version 1.0 teilt ein eingehendes Ereignis sequenziell in zwei Ausgangsereignisse auf.
 
+![E_SPLIT](E_SPLIT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingang**
@@ -58,6 +60,14 @@ Der **E_SPLIT** ist ein standardkonformer Funktionsbaustein (IEC 61499-1 Annex A
 | Funktionsprinzip | 1:2 Sequenz | 1:n Verteilung | n:1 Kombination |
 | Ereignisreihenfolge | Fest | Adressabhängig | Beliebig |
 | Zustandsmodell | BasicFB | Variabel | Keins |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_004a4](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a4.md)
+* [Uebung_004a4_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a4_AX.md)
+* [Uebung_080b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_080b.md)
 
 ## Fazit
 

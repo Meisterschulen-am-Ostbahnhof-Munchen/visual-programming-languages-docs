@@ -7,6 +7,8 @@
 ## Einleitung
 Der AX_SELECT ist ein Funktionsblock, der basierend auf einem booleschen Eingang einen von zwei AX-Adapter-Eingängen auf den Ausgang schaltet.
 
+![AX_SELECT](AX_SELECT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Daten-Eingänge**

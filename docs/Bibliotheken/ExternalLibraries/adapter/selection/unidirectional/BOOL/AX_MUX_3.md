@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_MUX_3 ist ein generischer Multiplexer-Funktionsblock, der drei Eingangssignale auf einen Ausgang umschalten kann. Der Baustein ermöglicht die Auswahl eines von drei Eingangssignalen basierend auf einem Indexwert und leitet das entsprechende Signal weiter.
 
+![AX_MUX_3](AX_MUX_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -57,6 +59,15 @@ Nach erfolgreicher Umschaltung wird ein CNF-Ereignis ausgegeben.
 Im Vergleich zu einfacheren Multiplexern bietet AX_MUX_3 drei Eingänge statt der üblichen zwei und verwendet Adapter-basierte Schnittstellen für eine standardisierte Signalübertragung. Die unidirektionale AX-Adapter-Schnittstelle gewährleistet eine klare Signalflussrichtung.
 
 Vergleich mit [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_3.md)
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_090a2_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
+* [Uebung_103](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
+* [Uebung_103c](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c.md)
+* [Uebung_103c2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c2.md)
 
 ## Fazit
 Der AX_MUX_3 ist ein vielseitiger und zuverlässiger Multiplexer-Baustein für Steuerungsanwendungen, der durch seine drei Eingänge und standardisierte Adapter-Schnittstellen eine flexible Signalauswahl ermöglicht. Die klare Ereignissteuerung und Bestätigungsmechanismen machen ihn besonders geeignet für sicherheitskritische Anwendungen.

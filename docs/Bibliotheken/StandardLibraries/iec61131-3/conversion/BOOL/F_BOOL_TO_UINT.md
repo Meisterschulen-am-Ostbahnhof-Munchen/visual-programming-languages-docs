@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_UINT` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen vorzeichenlosen Integerwert (`UINT`). Diese Konvertierung ist besonders nützlich, wenn boolesche Signale in numerische Werte umgewandelt werden müssen, z.B. für weitere Berechnungen oder Steuerungszwecke.
 
+![F_BOOL_TO_UINT](F_BOOL_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DWORD_TO_INT` dient der Konvertierung eines DWORD-Wertes in einen INT-Wert. Er ist Teil des Pakets `iec61131::conversion` und ermöglicht die einfache Umwandlung zwischen diesen beiden Datentypen.
 
+![F_DWORD_TO_INT](F_DWORD_TO_INT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

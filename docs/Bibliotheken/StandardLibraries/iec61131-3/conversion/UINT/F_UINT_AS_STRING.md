@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UINT_AS_STRING` dient der Konvertierung eines vorzeichenlosen Integer-Werts (`UINT`) in eine Zeichenkette (`STRING`). Diese Funktionalität ist besonders nützlich, wenn numerische Werte für die Ausgabe, Protokollierung oder Weiterverarbeitung als Text benötigt werden.
 
+![F_UINT_AS_STRING](F_UINT_AS_STRING.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

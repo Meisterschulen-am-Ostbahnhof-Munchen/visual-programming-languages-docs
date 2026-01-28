@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LINT_TO_LWORD` dient der Konvertierung eines LINT-Datentyps (64-Bit Ganzzahl mit Vorzeichen) in einen LWORD-Datentyp (64-Bit Bitstring). Dieser Baustein ist besonders nützlich in Szenarien, wo numerische Werte in ihre binäre Darstellung umgewandelt werden müssen.
 
+![F_LINT_TO_LWORD](F_LINT_TO_LWORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

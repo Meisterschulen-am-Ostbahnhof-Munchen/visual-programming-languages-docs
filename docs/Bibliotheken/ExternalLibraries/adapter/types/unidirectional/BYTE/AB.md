@@ -1,3 +1,5 @@
+![AB](AB.svg)
+
 # AB (BYTE)
 
 ```{index} single: AB (BYTE)

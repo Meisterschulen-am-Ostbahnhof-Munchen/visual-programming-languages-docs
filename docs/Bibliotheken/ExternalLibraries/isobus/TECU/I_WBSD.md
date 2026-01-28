@@ -11,6 +11,8 @@
 Der **I_WBSD**-Funktionsbaustein (Wheel-based Speed and Distance) ist ein ISO 11783-7-konformes System zur Erfassung radbasierter Geschwindigkeits- und Distanzdaten, entwickelt unter EPL-2.0 Lizenz.
 Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Betriebszuständen für Land- und Baumaschinen.
 
+![I_WBSD](I_WBSD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

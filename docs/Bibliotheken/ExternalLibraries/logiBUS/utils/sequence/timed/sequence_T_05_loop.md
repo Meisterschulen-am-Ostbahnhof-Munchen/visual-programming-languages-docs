@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `sequence_T_05_loop` ist ein zeitgesteuerter Sequenzer, der einen zyklischen Ablauf von fünf Zuständen (State_01 bis State_05) realisiert. Der Übergang von einem Zustand zum nächsten erfolgt nach einer einstellbaren Zeitverzögerung. Der Baustein ist für Anwendungen konzipiert, in denen Aktionen oder Prozessschritte nacheinander und für eine definierte Dauer aktiviert werden müssen, beispielsweise in automatisierten Handhabungs- oder Fertigungsprozessen.
 
+![sequence_T_05_loop](sequence_T_05_loop.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -61,6 +63,13 @@ Die ECC umfasst sieben Zustände:
 
 ## Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einem einfachen TON-Timer (Verzögerungseinschaltverzögerung) realisiert dieser FB eine vollständige Zustandsmaschine mit mehreren Schritten. Im Vergleich zu generischen Sequencer-FBs, die oft mit Schrittabfragen (z.B. über Steigungsflanken) arbeiten, ist dieser Baustein rein zeitgesteuert. Er ähnelt einer Kette von TON-Bausteinen, ist aber in einem einzigen, zustandsbasierten FB gekapselt, was die Anordnung und Parametrierung vereinfacht.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_035a2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a2.md)
+* [Uebung_035a3](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a3.md)
 
 ## Fazit
 Der `sequence_T_05_loop` ist ein spezialisierter, robuster und einfach zu konfigurierender Sequenzer für zyklische, zeitgesteuerte Abläufe mit fünf Schritten. Seine klare Struktur, die Nutzung standardisierter Adapter und die umfassende Bestätigung aller Zustandswechsel machen ihn zu einer zuverlässigen Komponente für zeitkritische Automatisierungsaufgaben. Die Schleifenfunktion und der zentrale Reset sind für Dauerbetriebsanwendungen besonders geeignet.

@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_DEMUX_8` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, der ein einzelnes Eingangereignis (`EI`) an einen von acht Ausgängen weiterleitet. Die Auswahl des Ausgangs wird durch den Wert der Eingangsvariable `K` bestimmt.
 
+![E_DEMUX_8](E_DEMUX_8.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -47,6 +49,13 @@ Der `E_DEMUX_8` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, 
 - **Zustandsmaschinen**: Auswahl des nächsten Zustandsübergangs aus bis zu acht Möglichkeiten.
 - **Modus-Umschaltung**: Aktivierung unterschiedlicher Anlagenteile je nach gewähltem Betriebsmodus.
 - **Kommunikations-Router**: Weiterleiten von Nachrichten oder Befehlen an einen von acht Kanälen.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_006c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)
+* [Uebung_041](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_041.md)
 
 ## Fazit
 Der `E_DEMUX_8` ist eine nützliche Implementierung des Demultiplexer-Prinzips für Anwendungsfälle mit bis zu acht verschiedenen Ereignispfaden. Wie bei den anderen `E_DEMUX`-Bausteinen erfordert die inkonsistente Benennung der Ausgänge im Verhältnis zum Indexwert besondere Aufmerksamkeit bei der Implementierung.

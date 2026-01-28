@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UINT_TO_BYTE` dient der Konvertierung eines vorzeichenlosen 16-Bit-Integer-Werts (UINT) in einen 8-Bit-Byte-Wert (BYTE). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
 
+![F_UINT_TO_BYTE](F_UINT_TO_BYTE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

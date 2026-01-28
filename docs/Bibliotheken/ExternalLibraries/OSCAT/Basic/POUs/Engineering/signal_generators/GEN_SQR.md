@@ -1,3 +1,5 @@
+![GEN_SQR](GEN_SQR.svg)
+
 # GEN_SQR
 
 ```{index} single: GEN_SQR

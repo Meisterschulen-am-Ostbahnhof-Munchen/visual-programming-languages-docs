@@ -1,3 +1,5 @@
+![AW](AW.svg)
+
 # AW (WORD)
 
 ```{index} single: AW (WORD)

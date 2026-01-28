@@ -10,6 +10,8 @@
 ## Einleitung
 Der AE2_SPLIT_MERGE ist ein bidirektionaler Splitter- und Merger-Funktionsblock, der Ereignisse in beide Richtungen verarbeiten kann. Der Baustein ermöglicht die Verteilung und Zusammenführung von Ereignissen über Adapterschnittstellen, wobei keine direkte Weiterleitung zwischen SOCKET und PLUG erfolgt.
 
+![AE2_SPLIT_MERGE](AE2_SPLIT_MERGE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

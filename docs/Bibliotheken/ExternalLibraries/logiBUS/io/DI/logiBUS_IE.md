@@ -10,6 +10,8 @@
 ## Einleitung
 Der logiBUS_IE Funktionsblock ist ein Eingabeservice-Schnittstellenbaustein für Ereigniseingabedaten. Er dient als Interface zwischen dem logiBUS-System und der 4diac-Laufzeitumgebung zur Verarbeitung von digitalen Eingangssignalen mit erweiterten Ereigniserkennungsfunktionen.
 
+![logiBUS_IE](logiBUS_IE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

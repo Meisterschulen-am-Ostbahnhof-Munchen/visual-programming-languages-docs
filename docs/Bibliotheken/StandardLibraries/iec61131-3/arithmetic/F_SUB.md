@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_SUB](F_SUB.svg)
+
+
 ## Einführung
 Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numerischer Werte, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Differenzbildung verschiedener numerischer Datentypen gemäß IEC 61131-3 Standard.
 
@@ -74,6 +77,15 @@ Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numeri
 | Operation     | Subtraktion | Addition | Multiplikation |
 | Eingänge      | 2      | 2      | 2      |
 | Typunterstützung | ANY_MAGNITUDE | ANY_NUM | ANY_NUM |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_040](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
+* [Uebung_040_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_040_AX.md)
+* [Uebung_041](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_041.md)
+* [Uebung_072c](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Fazit
 

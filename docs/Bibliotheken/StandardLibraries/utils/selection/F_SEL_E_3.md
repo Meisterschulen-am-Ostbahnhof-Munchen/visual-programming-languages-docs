@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_SEL_E_3` ist ein ereignisbasierter Selektor, der eine von drei Eingangsvariablen basierend auf dem auslösenden Ereignis auswählt und an den Ausgang weiterleitet. Er ist Teil des `eclipse4diac::utils::selection` Pakets und entspricht dem IEC 61131-3 Standard für Standard-Selektionsfunktionen.
 
+![F_SEL_E_3](F_SEL_E_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

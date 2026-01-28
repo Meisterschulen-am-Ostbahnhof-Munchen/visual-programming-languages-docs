@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `GetInstancePath` dient dazu, den Instanzpfad des eigenen Funktionsblocks innerhalb der 4diac-IDE zu ermitteln. Dieser Pfad kann beispielsweise für Diagnosezwecke oder zur dynamischen Konfiguration verwendet werden. Der FB ist besonders nützlich in komplexen Anwendungen, wo eine genaue Identifikation der Instanzposition erforderlich ist.
 
+![GetInstancePath](GetInstancePath.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

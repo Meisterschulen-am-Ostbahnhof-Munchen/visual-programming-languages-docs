@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_WORD` dient der Konvertierung eines 32-Bit Ganzzahlwertes (DINT) in einen 16-Bit Wortwert (WORD). Diese Konvertierung ist besonders nützlich, wenn Daten zwischen Systemen mit unterschiedlicher Wortbreite ausgetauscht werden müssen.
 
+![F_DINT_TO_WORD](F_DINT_TO_WORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

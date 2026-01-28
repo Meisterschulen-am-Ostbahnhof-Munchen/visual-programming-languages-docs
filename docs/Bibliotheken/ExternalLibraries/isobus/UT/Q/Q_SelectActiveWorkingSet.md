@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_SelectActiveWorkingSet** ist ein standardkonformer Funktionsbaustein zur Steuerung aktiver Arbeitsbereiche in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.64) Spezifikation für VT-Systeme ab Version 6.
 
+![Q_SelectActiveWorkingSet](Q_SelectActiveWorkingSet.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

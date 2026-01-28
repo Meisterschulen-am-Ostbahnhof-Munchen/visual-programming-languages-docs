@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_AS_WSTRING` dient der Konvertierung eines TIME-Wertes in einen WSTRING-Wert. Dies ist besonders nützlich, wenn Zeitwerte für die Anzeige oder Protokollierung in einer menschenlesbaren Form benötigt werden.
 
+![F_TIME_AS_WSTRING](F_TIME_AS_WSTRING.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Normaler Ausführungsaufruf. Wird dieser Eingang ausgelöst, führt der Funktionsblock die Konvertierung durch.

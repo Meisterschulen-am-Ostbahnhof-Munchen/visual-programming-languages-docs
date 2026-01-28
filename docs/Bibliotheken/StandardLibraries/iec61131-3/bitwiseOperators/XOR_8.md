@@ -9,6 +9,8 @@
 ## Einleitung
 Der XOR_8 Funktionsblock führt eine bitweise XOR-Operation auf bis zu 8 Eingangsvariablen durch. Es handelt sich um einen generischen Funktionsblock, der mit verschiedenen Bit-Datentypen (ANY_BIT) arbeiten kann. Der Block ist gemäß dem IEC 61131-3 Standard klassifiziert und bietet eine einfache Möglichkeit, XOR-Operationen in Steuerungsanwendungen durchzuführen.
 
+![XOR_8](XOR_8.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

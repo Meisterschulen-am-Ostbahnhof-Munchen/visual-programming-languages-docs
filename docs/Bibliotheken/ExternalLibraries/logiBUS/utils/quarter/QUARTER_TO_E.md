@@ -14,6 +14,8 @@
 ## Einleitung
 Der Funktionsblock `QUARTER_TO_E` dient dazu, einen 2-Bit-Zustandswert (ein sogenanntes "Quarter Byte") in vier verschiedene, eindeutige Ereignisse zu übersetzen. Er ist ein Hilfsbaustein, der häufig in Verbindung mit Bausteinen verwendet wird, die mehr als die üblichen zwei Zustände (EIN/AUS) melden, wie z.B. Statusmeldungen von Geräten, die auch Fehler- oder Nicht-Verfügbarkeitszustände anzeigen können.
 
+![QUARTER_TO_E](QUARTER_TO_E.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -9,6 +9,9 @@
 
 * * * * * * * * * *
 
+![F_LT](F_LT.svg)
+
+
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 
 **Der LT-Operator in IEC 61499: Eine Einführung**

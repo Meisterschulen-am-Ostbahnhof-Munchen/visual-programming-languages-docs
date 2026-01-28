@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_SIN Funktionsblock berechnet den Sinus eines Eingangswerts in Radiant. Es handelt sich um eine Standardfunktion für numerische Berechnungen gemäß IEC 61131-3, die mathematische Sinusoperationen in Steuerungsanwendungen ermöglicht.
 
+![F_SIN](F_SIN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

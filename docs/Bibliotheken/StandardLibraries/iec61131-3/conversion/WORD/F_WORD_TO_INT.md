@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_WORD_TO_INT` dient der Konvertierung eines `WORD`-Datentyps in einen `INT`-Datentyp. Er ist Teil des Pakets `iec61131::conversion` und ermöglicht eine einfache und effiziente Typumwandlung innerhalb von IEC 61131-3-basierten Steuerungssystemen.
 
+![F_WORD_TO_INT](F_WORD_TO_INT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

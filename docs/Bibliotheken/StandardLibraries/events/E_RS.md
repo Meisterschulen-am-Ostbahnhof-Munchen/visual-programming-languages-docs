@@ -5,6 +5,8 @@
 ## Einleitung
 Der `E_RS` (Event-driven RS Flip-Flop) ist ein ereignisgesteuerter, bistabiler Funktionsbaustein nach IEC 61499. Er dient als grundlegendes Speicherelement, das durch separate "Set"- und "Reset"-Ereignisse gesteuert wird. Sein Ausgang `Q` behält seinen Zustand bei, bis ein entgegengesetztes Ereignis eintrifft.
 
+![E_RS](E_RS.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**
@@ -36,6 +38,15 @@ Der `E_RS`-Baustein funktioniert als einfacher Speicher (Latch):
 ## Vergleich mit ähnlichen Bausteinen
 - **`E_SR`**: Funktional identisch zum `E_RS`, nur die Position der `S`- und `R`-Eingänge am grafischen Symbol ist vertauscht.
 - **`E_D_FF`**: Speichert ebenfalls einen Zustand, aber taktbasiert. `E_D_FF` übernimmt den Wert am `D`-Eingang bei einem `CLK`-Ereignis, während `E_RS` durch separate Set/Reset-Ereignisse gesteuert wird.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_006b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006b.md)
+* [Uebung_020a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020a.md)
+* [Uebung_020b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020b.md)
+* [Uebung_020d](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020d.md)
 
 ## Fazit
 Der `E_RS`-Baustein ist ein fundamentaler Speicherbaustein in der IEC 61499. Er ist ideal für einfache Zustandspeicherungen, bei denen ein Zustand durch ein Ereignis gesetzt und durch ein anderes explizit zurückgesetzt wird. Das Fehlen einer garantierten Set- oder Reset-Dominanz bei gleichzeitigen Ereignissen muss in kritischen Anwendungen beachtet werden.

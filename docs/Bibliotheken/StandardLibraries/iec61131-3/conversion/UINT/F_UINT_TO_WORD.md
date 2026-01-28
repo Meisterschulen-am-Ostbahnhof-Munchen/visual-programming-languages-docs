@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UINT_TO_WORD` dient der Konvertierung eines vorzeichenlosen 16-Bit-Integer-Werts (UINT) in ein 16-Bit-Wort (WORD). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten zwischen unterschiedlichen Darstellungsformen oder Systemen ausgetauscht werden müssen.
 
+![F_UINT_TO_WORD](F_UINT_TO_WORD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

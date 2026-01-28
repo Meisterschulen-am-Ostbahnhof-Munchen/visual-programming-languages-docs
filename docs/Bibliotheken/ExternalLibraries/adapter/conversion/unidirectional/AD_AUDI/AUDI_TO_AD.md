@@ -8,6 +8,8 @@ Der AUDI_TO_AD Funktionsblock ist ein spezialisierter Adapter-Konvertierungsbaus
 
 Intern nutzt der Baustein die Standard-Konvertierungsfunktion `F_UDINT_TO_DWORD`, um eine saubere Typwandlung zwischen dem numerischen Format (UDINT) und dem Bit-String-Format (DWORD) sicherzustellen.
 
+![AUDI_TO_AD](AUDI_TO_AD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Adapter**

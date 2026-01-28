@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `OFFSET_UDINT` dient dazu, einen Offsetwert zu berechnen. Bei der ersten Ausführung mit einem Eingangswert größer als Null speichert der Baustein diesen Wert als Referenz (`FIRST`). Bei jedem Aufruf wird die Differenz zwischen dem aktuellen Eingangswert und diesem gespeicherten Referenzwert als Ausgang (`OUT`) berechnet. Dies ist besonders nützlich, um relative Änderungen gegenüber einem initialen Startwert zu ermitteln.
 
+![OFFSET_UDINT](OFFSET_UDINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

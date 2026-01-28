@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_SPLIT_5 Funktionsblock ist ein generischer Baustein, der dazu dient, einen AX-Adapter in fünf separate AX-Ausgänge aufzuteilen. Der Block ermöglicht die Verteilung eines Eingangssignals auf mehrere Ausgangskanäle und findet insbesondere in Steuerungsanwendungen Verwendung, wo Signale auf verschiedene Komponenten verteilt werden müssen.
 
+![AX_SPLIT_5](AX_SPLIT_5.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

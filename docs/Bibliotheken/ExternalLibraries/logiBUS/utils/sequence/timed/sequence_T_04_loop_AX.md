@@ -7,6 +7,8 @@
 ## Einleitung
 `sequence_T_04_loop_AX` ist eine Variante des `sequence_T_04_loop`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein zeitgesteuerte, zyklische Sequenz mit 4 Ausgabezuständen.
 
+![sequence_T_04_loop_AX](sequence_T_04_loop_AX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

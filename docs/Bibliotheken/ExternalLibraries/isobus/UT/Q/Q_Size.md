@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_Size** ist ein standardkonformer Funktionsbaustein zur Größenänderung von Objekten in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.18) Spezifikation für VT-Objekte.
 
+![Q_Size](Q_Size.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

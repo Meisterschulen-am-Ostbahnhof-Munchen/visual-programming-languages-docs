@@ -9,6 +9,8 @@
 ## Einleitung
 Der OR_6 Funktionsblock ist ein generischer Bitweise-ODER-Baustein, der sechs Eingangswerte verarbeitet. Er führt eine bitweise logische ODER-Operation auf den sechs Eingangswerten durch und gibt das Ergebnis aus. Der Baustein ist nach der IEC 61131-3 Norm klassifiziert und kann mit beliebigen Bit-Datentypen (ANY_BIT) arbeiten.
 
+![OR_6](OR_6.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

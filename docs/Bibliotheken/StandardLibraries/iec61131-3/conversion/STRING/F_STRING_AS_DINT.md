@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_DINT` dient der Konvertierung eines `STRING`-Wertes in einen `DINT`-Wert. Diese Funktion ist besonders nützlich, wenn Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise bei der Verarbeitung von Benutzereingaben oder der Interpretation von Textdaten.
 
+![F_STRING_AS_DINT](F_STRING_AS_DINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Dieser Eingang ist mit dem Daten-Eingang `IN` verknüpft.

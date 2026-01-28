@@ -1,3 +1,5 @@
+![ADI](ADI.svg)
+
 # ADI (DINT)
 
 ```{index} single: ADI (DINT)

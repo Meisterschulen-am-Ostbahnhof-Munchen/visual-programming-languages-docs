@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_ATAN Funktionsblock berechnet den Arkustangens (Arcustangens) einer reellen Zahl. Es handelt sich um eine Standardfunktion für eine numerische Variable gemäß IEC 61131-3. Der Funktionsblock wandelt einen Tangenswert in den entsprechenden Winkel im Bogenmaß um.
 
+![F_ATAN](F_ATAN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

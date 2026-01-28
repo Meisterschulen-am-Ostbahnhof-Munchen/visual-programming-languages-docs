@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_MOVE`-Baustein (Event-driven Move) ist ein Datenlatch, der die Weitergabe von Daten und Ereignissen filtert. Er gibt ein Ausgangsereignis nur dann aus, wenn sich der am Eingang anliegende Datenwert vom zuletzt ausgegebenen Wert unterscheidet. Er funktioniert wie ein D-Flipflop für beliebige Datentypen (`ANY`).
 
+![E_MOVE](E_MOVE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge:**

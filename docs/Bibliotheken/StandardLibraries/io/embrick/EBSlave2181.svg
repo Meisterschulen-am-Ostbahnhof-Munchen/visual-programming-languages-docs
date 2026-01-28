@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1029" height="691" viewBox="-548 -20 1029 691">
+<defs>
+</defs>
+<rect x="3" y="3" width="175" height="641" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H175 V92 H169 V132 H175 V641 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L175,30" stroke="#000000" stroke-width="1" />
+<text x="87.5" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">EBSlave2181</text>
+<text x="87.5" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">MAP</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Map Pins</text>
+<rect x="-5.0" y="144.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">BusAdapterIn</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">EBBusAdapter</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalInput_1</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalInput_2</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalInput_3</text>
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalInput_4</text>
+<text x="-23" y="282" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalInput_5</text>
+<text x="-23" y="308" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,326 L-5,336 L0,331 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalInput_6</text>
+<text x="-23" y="334" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,352 L-5,362 L0,357 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="361" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalInput_7</text>
+<text x="-23" y="360" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,378 L-5,388 L0,383 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="387" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalInput_8</text>
+<text x="-23" y="386" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,404 L-5,414 L0,409 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="413" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalOutput_1</text>
+<text x="-23" y="412" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,430 L-5,440 L0,435 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="439" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalOutput_2</text>
+<text x="-23" y="438" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,456 L-5,466 L0,461 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="465" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalOutput_3</text>
+<text x="-23" y="464" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,482 L-5,492 L0,487 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="491" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalOutput_4</text>
+<text x="-23" y="490" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,508 L-5,518 L0,513 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="517" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalOutput_5</text>
+<text x="-23" y="516" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,534 L-5,544 L0,539 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="543" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalOutput_6</text>
+<text x="-23" y="542" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,560 L-5,570 L0,565 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="569" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalOutput_7</text>
+<text x="-23" y="568" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,586 L-5,596 L0,591 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="595" font-size="12" text-anchor="start" font-family="Consolas, monospace">DigitalOutput_8</text>
+<text x="-23" y="594" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,612 L-5,622 L0,617 Z" fill="#18519E" stroke="none" />
+<text x="12" y="621" font-size="12" text-anchor="start" font-family="Consolas, monospace">UpdateInterval</text>
+<text x="-23" y="620" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-138" y="620" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Update interval of slave module in Hz (inherited from Master)</text>
+<path d="M175,37 L175,47 L180,42 Z" fill="#63B31F" stroke="none" />
+<text x="163" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">MAPO</text>
+<text x="206" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="276" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirm Pin Mapping</text>
+<path d="M175,63 L175,73 L180,68 Z" fill="#63B31F" stroke="none" />
+<text x="163" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="206" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="276" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
+<rect x="170.0" y="144.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="163" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">BusAdapterOut</text>
+<text x="206" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">EBBusAdapter</text>
+<path d="M175,170 L175,180 L180,175 Z" fill="#9FA48A" stroke="none" />
+<text x="163" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="206" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="276" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M175,196 L175,206 L180,201 Z" fill="#BD8663" stroke="none" />
+<text x="163" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="206" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="276" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
+<path d="M-12,42 L-12,591" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,201 L-5,201" stroke="#404040" />
+<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,227 L-5,227" stroke="#404040" />
+<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,305 L-5,305" stroke="#404040" />
+<rect x="-14" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,253 L-5,253" stroke="#404040" />
+<rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,279 L-5,279" stroke="#404040" />
+<rect x="-14" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,331 L-5,331" stroke="#404040" />
+<rect x="-14" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,357 L-5,357" stroke="#404040" />
+<rect x="-14" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,383 L-5,383" stroke="#404040" />
+<rect x="-14" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,409 L-5,409" stroke="#404040" />
+<rect x="-14" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,435 L-5,435" stroke="#404040" />
+<rect x="-14" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,461 L-5,461" stroke="#404040" />
+<rect x="-14" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,487 L-5,487" stroke="#404040" />
+<rect x="-14" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,513 L-5,513" stroke="#404040" />
+<rect x="-14" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,539 L-5,539" stroke="#404040" />
+<rect x="-14" y="537" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,565 L-5,565" stroke="#404040" />
+<rect x="-14" y="563" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,591 L-5,591" stroke="#404040" />
+<rect x="-14" y="589" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M187,42 L187,175" stroke="#404040" stroke-width="1" />
+<path d="M175,42 L187,42" stroke="#404040" />
+<rect x="185" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M187,175 L180,175" stroke="#404040" />
+<rect x="185" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M195,68 L195,201" stroke="#404040" stroke-width="1" />
+<path d="M175,68 L195,68" stroke="#404040" />
+<rect x="193" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M195,175 L180,175" stroke="#404040" />
+<rect x="193" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M195,201 L180,201" stroke="#404040" />
+<rect x="193" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

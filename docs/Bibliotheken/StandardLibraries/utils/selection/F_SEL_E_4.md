@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock F_SEL_E_4 ist ein ereignisbasierter Selektor, der aus bis zu vier Eingängen einen auswählt und an den Ausgang weiterleitet. Er ist gemäß der Norm IEC 61131-3 klassifiziert und dient als Standard-Selektionsfunktion in Automatisierungssystemen.
 
+![F_SEL_E_4](F_SEL_E_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

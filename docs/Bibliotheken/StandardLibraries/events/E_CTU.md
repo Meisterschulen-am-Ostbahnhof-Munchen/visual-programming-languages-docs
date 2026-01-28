@@ -21,6 +21,8 @@
 ## Einleitung
 Der `E_CTU` (Event-Driven Up Counter) ist ein ereignisgesteuerter Aufwärtszähler gemäß dem IEC 61499-Standard. Seine Funktion ist es, bei jedem ankommenden Zählereignis einen internen Zählerstand zu erhöhen und diesen mit einem vorgegebenen Grenzwert zu vergleichen. Der Baustein kann jederzeit zurückgesetzt werden.
 
+![E_CTU](E_CTU.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -64,6 +66,19 @@ Der `E_CTU`-Baustein hat zwei Hauptfunktionen: Zählen und Zurücksetzen.
 | Zählrichtung     | Aufwärts           | Abwärts              | Beides                   |
 | Ereignisgesteuert| Ja                 | Ja                   | Ja                       |
 | Reset-Funktion   | R (Reset auf 0)    | LD (Setzen auf PV)   | R (Reset auf 0)          |
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_040](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
+* [Uebung_040_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_040_AX.md)
+* [Uebung_041](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_041.md)
+* [Uebung_080](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_080.md)
+* [Uebung_080b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_080b.md)
+* [Uebung_080c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_080c.md)
+* [Uebung_084](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_084.md)
+* [Uebung_12x_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Fazit
 Der `E_CTU` ist ein grundlegender und vielseitiger Zählerbaustein für ereignisgesteuerte Systeme nach IEC 61499. Seine einfache Schnittstelle und sein vorhersehbares Verhalten machen ihn zu einem robusten Werkzeug für eine Vielzahl von Zähl- und Überwachungsaufgaben in der industriellen Automatisierung.

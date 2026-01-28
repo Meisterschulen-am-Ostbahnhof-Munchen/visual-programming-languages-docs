@@ -10,6 +10,8 @@
 ## Einleitung
 Der PUBLISH_1-Funktionsblock dient zum Senden von Daten an einen oder mehrere SUBSCRIBE_1-Blöcke. Er implementiert ein Publish-Subscribe-Kommunikationsmuster, bei dem Daten unbestätigt an alle angemeldeten Empfänger verteilt werden.
 
+![PUBLISH_1](PUBLISH_1.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

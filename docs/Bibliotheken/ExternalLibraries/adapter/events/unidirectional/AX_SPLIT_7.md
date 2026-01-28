@@ -10,6 +10,8 @@
 ## Einleitung
 Der AX_SPLIT_7 Funktionsblock ist ein generischer Baustein, der einen einzelnen AX-Adapter-Eingang auf sieben separate AX-Adapter-Ausgänge aufteilt. Der Baustein dient als Verteiler für unidirektionale AX-Adapter und ermöglicht die Verteilung eines Eingangssignals an mehrere Empfänger.
 
+![AX_SPLIT_7](AX_SPLIT_7.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

@@ -10,6 +10,8 @@
 ## Einleitung
 Der CLIENT_2_1 Funktionsblock dient zur Kommunikation mit einem SERVER_1_2 Block über eine Netzwerkverbindung. Er ermöglicht das Aufbauen und Trennen von Verbindungen sowie den Datenaustausch zwischen Client und Server.
 
+![CLIENT_2_1](CLIENT_2_1.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

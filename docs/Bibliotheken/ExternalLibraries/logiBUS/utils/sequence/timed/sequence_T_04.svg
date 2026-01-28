@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1048" height="431" viewBox="-548 -20 1048 431">
+<defs>
+</defs>
+<rect x="3" y="3" width="170" height="381" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H170 V170 H164 V210 H170 V381 H0 V210 H6 V170 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L170,30" stroke="#000000" stroke-width="1" />
+<text x="85.0" y="188.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">sequence_T_04</text>
+<text x="85.0" y="202.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">START_S1</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">jump from START to State_01</text>
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">RESET</text>
+<text x="-23" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset from any State to START</text>
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">DT_S1_S2</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-93" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">State_01 to State_02 timed</text>
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">DT_S2_S3</text>
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-93" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">State_02 to State_03 timed</text>
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">DT_S3_S4</text>
+<text x="-23" y="282" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-93" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">State_03 to State_04 timed</text>
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#0000FF" stroke="none" />
+<text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">DT_S4_START</text>
+<text x="-23" y="308" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<text x="-93" y="308" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">State_04 to START timed</text>
+<path d="M170,37 L170,47 L175,42 Z" fill="#63B31F" stroke="none" />
+<text x="158" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="225" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="295" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Execution Confirmation</text>
+<path d="M170,63 L170,73 L175,68 Z" fill="#63B31F" stroke="none" />
+<text x="158" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_S1</text>
+<text x="225" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M170,89 L170,99 L175,94 Z" fill="#63B31F" stroke="none" />
+<text x="158" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_S2</text>
+<text x="225" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M170,115 L170,125 L175,120 Z" fill="#63B31F" stroke="none" />
+<text x="158" y="124" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_S3</text>
+<text x="225" y="123" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M170,141 L170,151 L175,146 Z" fill="#63B31F" stroke="none" />
+<text x="158" y="150" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_S4</text>
+<text x="225" y="149" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="165.0" y="222.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="158" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">timeOut</text>
+<text x="225" y="230" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">ATimeOut</text>
+<text x="295" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">timeOut Adapter</text>
+<path d="M170,248 L170,258 L175,253 Z" fill="#18519E" stroke="none" />
+<text x="158" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATE_NR</text>
+<text x="225" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
+<text x="295" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">State Number, START = 0, State_01 = 1 and so on. </text>
+<path d="M170,274 L170,284 L175,279 Z" fill="#9FA48A" stroke="none" />
+<text x="158" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_S1</text>
+<text x="225" y="282" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="295" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output if State_01 is active</text>
+<path d="M170,300 L170,310 L175,305 Z" fill="#9FA48A" stroke="none" />
+<text x="158" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_S2</text>
+<text x="225" y="308" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="295" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output if State_02 is active</text>
+<path d="M170,326 L170,336 L175,331 Z" fill="#9FA48A" stroke="none" />
+<text x="158" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_S3</text>
+<text x="225" y="334" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="295" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output if State_03 is active</text>
+<path d="M170,352 L170,362 L175,357 Z" fill="#9FA48A" stroke="none" />
+<text x="158" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_S4</text>
+<text x="225" y="360" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="295" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output if State_04 is active</text>
+<path d="M-12,42 L-12,305" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,227 L-5,227" stroke="#404040" />
+<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,253 L-5,253" stroke="#404040" />
+<rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,279 L-5,279" stroke="#404040" />
+<rect x="-14" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,305 L-5,305" stroke="#404040" />
+<rect x="-14" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M182,42 L182,253" stroke="#404040" stroke-width="1" />
+<path d="M170,42 L182,42" stroke="#404040" />
+<rect x="180" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M182,253 L175,253" stroke="#404040" />
+<rect x="180" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M190,68 L190,279" stroke="#404040" stroke-width="1" />
+<path d="M170,68 L190,68" stroke="#404040" />
+<rect x="188" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M190,279 L175,279" stroke="#404040" />
+<rect x="188" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M198,94 L198,305" stroke="#404040" stroke-width="1" />
+<path d="M170,94 L198,94" stroke="#404040" />
+<rect x="196" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M198,305 L175,305" stroke="#404040" />
+<rect x="196" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M206,120 L206,331" stroke="#404040" stroke-width="1" />
+<path d="M170,120 L206,120" stroke="#404040" />
+<rect x="204" y="118" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M206,331 L175,331" stroke="#404040" />
+<rect x="204" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M214,146 L214,357" stroke="#404040" stroke-width="1" />
+<path d="M170,146 L214,146" stroke="#404040" />
+<rect x="212" y="144" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M214,357 L175,357" stroke="#404040" />
+<rect x="212" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

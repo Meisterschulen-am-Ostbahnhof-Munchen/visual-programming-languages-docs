@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_DINT_TO_LREAL` dient der Konvertierung eines 32-Bit-Ganzzahlwertes (DINT) in einen 64-Bit-Gleitkommawert (LREAL). Diese Konvertierung ist insbesondere in Steuerungssystemen notwendig, wo unterschiedliche Datentypen in verschiedenen Teilen der Anwendung verarbeitet werden müssen.
 
+![F_DINT_TO_LREAL](F_DINT_TO_LREAL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Konvertierung. Wird dieser Eingang ausgelöst, wird der Wert am Daten-Eingang `IN` gelesen und konvertiert.

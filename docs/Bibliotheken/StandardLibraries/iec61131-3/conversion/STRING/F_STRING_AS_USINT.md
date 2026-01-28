@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_STRING_AS_USINT` dient der Konvertierung eines `STRING`-Wertes in einen `USINT`-Wert (Unsigned Short Integer). Der Block ist Teil des `iec61131::conversion`-Pakets und ermöglicht die einfache Umwandlung von Zeichenketten in numerische Werte.
 
+![F_STRING_AS_USINT](F_STRING_AS_USINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

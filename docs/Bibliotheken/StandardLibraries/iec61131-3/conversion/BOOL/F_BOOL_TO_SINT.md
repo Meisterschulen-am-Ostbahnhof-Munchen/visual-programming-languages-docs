@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BOOL_TO_SINT` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen vorzeichenbehafteten 8-Bit-Integer (`SINT`). Diese Konvertierung ist nützlich, wenn boolesche Werte in Berechnungen oder Steuerungen verwendet werden sollen, die ganzzahlige Werte erfordern.
 
+![F_BOOL_TO_SINT](F_BOOL_TO_SINT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

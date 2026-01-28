@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_INT` dient der Konvertierung eines `LWORD`-Wertes (64-Bit unsigned integer) in einen `INT`-Wert (16-Bit signed integer). Diese Konvertierung ist nützlich, wenn Daten zwischen Systemen mit unterschiedlichen Wortbreiten ausgetauscht oder verarbeitet werden müssen.
 
+![F_LWORD_TO_INT](F_LWORD_TO_INT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

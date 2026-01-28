@@ -9,6 +9,8 @@
 ## Einleitung
 Softkey_IXA ist ein Composite-Funktionsblock zur Verarbeitung von booleschen Eingabedaten. Der Baustein dient als Schnittstelle für Softkey-Operationen und ermöglicht die Initialisierung und Abfrage von Eingabezuständen über standardisierte ISOBUS-Kommunikationsprotokolle.
 
+![Softkey_IXA](Softkey_IXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

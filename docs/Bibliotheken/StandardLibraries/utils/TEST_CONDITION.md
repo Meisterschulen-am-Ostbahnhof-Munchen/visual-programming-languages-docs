@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `TEST_CONDITION` dient zur Überprüfung einer Bedingung und signalisiert, ob diese erfüllt ist oder nicht. Er wird typischerweise in Testumgebungen eingesetzt, um bestimmte Bedingungen zu validieren.
 
+![TEST_CONDITION](TEST_CONDITION.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

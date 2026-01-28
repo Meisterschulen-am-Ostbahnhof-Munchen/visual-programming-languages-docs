@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_Priority** ist ein standardkonformer Funktionsbaustein zur Prioritätssteuerung von Alarmmasken in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.40) Spezifikation für VT-Alarmmanagement.
 
+![Q_Priority](Q_Priority.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

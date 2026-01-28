@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_ULINT` dient der Konvertierung eines LWORD-Datentyps in einen ULINT-Datentyp. Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen Daten unterschiedlicher Bitlängen verarbeitet oder weitergegeben werden müssen.
 
+![F_LWORD_TO_ULINT](F_LWORD_TO_ULINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Dieser Ereigniseingang löst die Konvertierung aus. Er ist mit dem Daten-Eingang `IN` verknüpft.

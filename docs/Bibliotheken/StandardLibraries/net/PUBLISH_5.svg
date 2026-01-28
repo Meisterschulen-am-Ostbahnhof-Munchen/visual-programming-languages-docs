@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="992" height="379" viewBox="-556 -20 992 379">
+<defs>
+</defs>
+<rect x="3" y="3" width="130" height="329" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H130 V92 H124 V132 H130 V329 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L130,30" stroke="#000000" stroke-width="1" />
+<text x="65.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">PUBLISH_5</text>
+<text x="65.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-101" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Initialization</text>
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-101" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Send Data, unconfirmed</text>
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-31" y="152" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">ID</text>
+<text x="-31" y="178" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#000000" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">SD_1</text>
+<text x="-31" y="204" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#000000" stroke="none" />
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">SD_2</text>
+<text x="-31" y="230" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#000000" stroke="none" />
+<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">SD_3</text>
+<text x="-31" y="256" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#000000" stroke="none" />
+<text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">SD_4</text>
+<text x="-31" y="282" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#000000" stroke="none" />
+<text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">SD_5</text>
+<text x="-31" y="308" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<path d="M130,37 L130,47 L135,42 Z" fill="#63B31F" stroke="none" />
+<text x="118" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="161" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="231" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M130,63 L130,73 L135,68 Z" fill="#63B31F" stroke="none" />
+<text x="118" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="161" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="231" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Data was sent</text>
+<path d="M130,144 L130,154 L135,149 Z" fill="#9FA48A" stroke="none" />
+<text x="118" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="161" y="152" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M130,170 L130,180 L135,175 Z" fill="#BD8663" stroke="none" />
+<text x="118" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="161" y="178" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,149 L-5,149" stroke="#404040" />
+<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,68 L-20,305" stroke="#404040" stroke-width="1" />
+<path d="M0,68 L-20,68" stroke="#404040" />
+<rect x="-22" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,149 L-5,149" stroke="#404040" />
+<rect x="-22" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,201 L-5,201" stroke="#404040" />
+<rect x="-22" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,227 L-5,227" stroke="#404040" />
+<rect x="-22" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,253 L-5,253" stroke="#404040" />
+<rect x="-22" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,279 L-5,279" stroke="#404040" />
+<rect x="-22" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,305 L-5,305" stroke="#404040" />
+<rect x="-22" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M142,42 L142,175" stroke="#404040" stroke-width="1" />
+<path d="M130,42 L142,42" stroke="#404040" />
+<rect x="140" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M142,149 L135,149" stroke="#404040" />
+<rect x="140" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M142,175 L135,175" stroke="#404040" />
+<rect x="140" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M150,68 L150,175" stroke="#404040" stroke-width="1" />
+<path d="M130,68 L150,68" stroke="#404040" />
+<rect x="148" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M150,149 L135,149" stroke="#404040" />
+<rect x="148" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M150,175 L135,175" stroke="#404040" />
+<rect x="148" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

@@ -10,6 +10,8 @@
 ## Einleitung
 Der **ADD_4** ist ein leistungsfähiger Funktionsbaustein zur Summation von vier Werten, entwickelt unter EPL-2.0 Lizenz. Als Teil der GEN_ADD-Klasse bietet Version 1.0 eine typsichere Implementierung gemäß IEC 61131-3 Standard.
 
+![ADD_4](ADD_4.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

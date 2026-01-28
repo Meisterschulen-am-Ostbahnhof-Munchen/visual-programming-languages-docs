@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_SPLIT_3 ist ein generischer Funktionsblock, der einen AX-Adapter-Eingang auf drei separate AX-Adapter-Ausgänge aufteilt. Der Baustein ermöglicht die Verteilung eines eingehenden AX-Signals an drei verschiedene Empfänger innerhalb eines 4diac-Systems.
 
+![AX_SPLIT_3](AX_SPLIT_3.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -54,6 +56,14 @@ Der Funktionsblock besitzt einen einfachen Zustand: Im Betriebszustand leitet er
 Im Vergleich zu anderen Verteilungsbausteinen zeichnet sich AX_SPLIT_3 durch seine spezifische Ausrichtung auf AX-Adapter aus. Während allgemeine Verteilungsbausteine verschiedene Adaptertypen unterstützen können, ist dieser Baustein speziell für AX-Adapter optimiert.
 
 Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_002a5b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
+* [Uebung_006a3_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+* [Uebung_009_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)
 
 ## Fazit
 Der AX_SPLIT_3 bietet eine einfache und effiziente Lösung zur Signalverteilung in 4diac-Systemen. Seine generische Implementierung und standardkonforme Adapter-Schnittstelle machen ihn zu einem vielseitig einsetzbaren Baustein für verschiedene Automatisierungsanwendungen.

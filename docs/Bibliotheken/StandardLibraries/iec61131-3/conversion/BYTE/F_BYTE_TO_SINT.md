@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_BYTE_TO_SINT` dient der Konvertierung eines Datentyps `BYTE` in den Datentyp `SINT`. Dieser Block ist besonders nützlich in Szenarien, wo eine direkte Typumwandlung ohne zusätzliche Berechnungen erforderlich ist.
 
+![F_BYTE_TO_SINT](F_BYTE_TO_SINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung des Funktionsblocks. Dieser Eingang ist mit dem Daten-Eingang `IN` verknüpft.

@@ -10,6 +10,8 @@
 ## Einleitung
 Der DataPanel_LO_QX ist ein Ausgabeservice-Schnittstellen-Funktionsblock für boolesche Ausgabedaten, der speziell für die Kommunikation mit Digitalausgängen in Automatisierungssystemen entwickelt wurde. Der Baustein ermöglicht die sichere und kontrollierte Ausgabe von binären Signalen an angeschlossene Hardware-Ressourcen.
 
+![DataPanel_LO_QX](DataPanel_LO_QX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

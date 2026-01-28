@@ -7,6 +7,9 @@
 
 * * * * * * * * * *
 
+![F_MOD](F_MOD.svg)
+
+
 ## Einführung
 Der **F_MOD** ist ein arithmetischer Funktionsbaustein zur Berechnung des Divisionsrests, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die Modulo-Operation für ganzzahlige Datentypen gemäß IEC 61131-3 Standard.
 

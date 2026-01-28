@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_XOR_2 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen XOR-Operation (exklusives ODER). Er verarbeitet zwei Eingangssignale und gibt das logische XOR-Ergebnis aus.
 
+![AX_XOR_2](AX_XOR_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

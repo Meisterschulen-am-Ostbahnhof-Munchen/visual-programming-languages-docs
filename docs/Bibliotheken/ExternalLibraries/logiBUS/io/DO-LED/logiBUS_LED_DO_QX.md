@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock logiBUS_LED_DO_QX ist ein Ausgabeservice-Interface-Funktionsblock für boolesche Ausgabedaten. Er dient zur Ansteuerung von LED-Ausgängen über das logiBUS-System und bietet spezielle Funktionen zur Frequenzsteuerung der LEDs.
 
+![logiBUS_LED_DO_QX](logiBUS_LED_DO_QX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

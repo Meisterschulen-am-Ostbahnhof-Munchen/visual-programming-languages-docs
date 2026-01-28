@@ -10,6 +10,8 @@
 ## Einleitung
 Der `E_N_TABLE` (Event N-Table) ist ein Funktionsbaustein nach IEC 61499, der eine endliche Sequenz von zeitlich versetzten Ereignissen auf separaten Ausgängen generiert. Er kombiniert intern einen tabellengesteuerten Zeitgeber (`E_TABLE`) mit einem Demultiplexer (`E_DEMUX`), um eine Kette von Ereignissen zu erzeugen, bei der jedes Ereignis auf einem eigenen Kanal ausgegeben wird.
 
+![E_N_TABLE](E_N_TABLE.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -52,6 +54,12 @@ Der `E_N_TABLE` (Event N-Table) ist ein Funktionsbaustein nach IEC 61499, der ei
 - **Steuerung von Schrittketten**: Jeder Ausgang (`EO0`, `EO1`, ...) kann einen nachfolgenden Schritt in einer Prozesskette anstoßen.
 - **Komplexe Ansteuerung**: Ansteuern verschiedener Aktoren in einer genau definierten zeitlichen Abfolge (z.B. Ventile in einem Spülprozess).
 - **Testautomatisierung**: Generieren einer komplexen, zeitlich definierten Stimulus-Sequenz für ein Testobjekt.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_093b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_093b.md)
 
 ## Fazit
 Der `E_N_TABLE` ist ein mächtiger Baustein zur Erzeugung von komplexen, zeitlich definierten Ereignisketten. Im Gegensatz zu einem einfachen `E_CYCLE`, der nur einen periodischen Takt erzeugt, ermöglicht `E_N_TABLE` die Definition von variablen Zeitabständen und die Verteilung der einzelnen Sequenz-Ereignisse auf separate Kanäle. Dies macht ihn ideal für die Steuerung von sequenziellen Prozessen.

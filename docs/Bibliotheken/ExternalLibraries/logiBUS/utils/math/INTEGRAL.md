@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `INTEGRAL` berechnet näherungsweise das zeitliche Integral eines Eingangssignals. Die Integration erfolgt durch die Summation von Teilflächen, die sich aus dem Produkt des Eingangswertes und der seit dem letzten Aufruf verstrichenen Zeit ergeben. Der Baustein ist nützlich für Anwendungen, in denen kumulative Werte wie verbrauchte Energie, geförderte Mengen oder zurückgelegte Wege bestimmt werden müssen.
 
+![INTEGRAL](INTEGRAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -55,6 +57,12 @@ Beide Zustände führen nach ihrer Ausführung zur Ausgabe des `CNF`-Ereignisses
 
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Summierbausteinen (z.B. `ADD`) zeichnet sich `INTEGRAL` durch die explizite Berücksichtigung der Zeit als Integrationsvariable aus. Im Gegensatz zu komplexeren Regelbausteinen mit integrierten Timern (wie z.B. bestimmten PID-Implementierungen) ist `INTEGRAL` ein reiner, zeitdiskreter Integrator, der die Zeitdifferenz als Eingangsvariable erwartet und somit extern getaktet wird. Dies macht ihn flexibler in Systemen mit variabler oder nicht-periodischer Zykluszeit.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Fazit
 Der `INTEGRAL`-Funktionsblock ist ein grundlegendes und robustes Werkzeug zur zeitlichen Integration von Signalen in IEC 61499-Steuerungen. Seine klare Schnittstelle, die integrierte Überlaufsicherung und die flexible Handhabung der Zeitdifferenz machen ihn zu einer zuverlässigen Komponente für eine Vielzahl von Mess- und Regelaufgaben. Die Notwendigkeit, die verstrichene Zeit extern zu ermitteln und bereitzustellen, bietet maximale Flexibilität, erfordert aber auch eine korrekte Implementierung im umgebenden Anwendungsprogramm.

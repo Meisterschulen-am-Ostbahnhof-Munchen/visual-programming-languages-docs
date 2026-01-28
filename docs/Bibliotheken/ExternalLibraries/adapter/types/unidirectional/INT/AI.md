@@ -1,3 +1,5 @@
+![AI](AI.svg)
+
 # AI (INT)
 
 ```{index} single: AI (INT)

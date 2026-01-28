@@ -11,6 +11,8 @@
 
 Der ST_REC_CONN Funktionsblock dient zur dynamischen Neukonfiguration von Verbindungen zwischen Funktionsbausteinen in 4diac-Systemen. Er ermöglicht das Umleiten von Ereignis- oder Datenverbindungen von bestehenden Quell- und Ziel-Funktionsbausteinen zu neuen Instanzen während der Laufzeit.
 
+![ST_REC_CONN](ST_REC_CONN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

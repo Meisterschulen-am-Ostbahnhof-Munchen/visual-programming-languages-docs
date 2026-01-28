@@ -9,6 +9,8 @@
 ## Einleitung
 Der OFFSET-Funktionsblock dient dazu, einen Offset-Wert zu ermitteln und anzuwenden. Bei der ersten Verarbeitung eines Ereignisses mit einem Eingangswert größer als Null wird dieser Wert als Referenzpunkt (`FIRST`) gespeichert. Bei jedem Aufruf berechnet der Baustein die Differenz zwischen dem aktuellen Eingangswert und diesem gespeicherten Referenzwert. Dieser Baustein ist nützlich, um relative Änderungen gegenüber einem initialen Startwert zu messen.
 
+![OFFSET](OFFSET.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

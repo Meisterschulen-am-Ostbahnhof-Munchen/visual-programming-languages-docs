@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock (FB) `STRUCT_MUX` ist ein generischer Multiplexer für strukturierte Datentypen. Er fungiert als Gegenstück zum `STRUCT_DEMUX` und hat die Aufgabe, einzelne Datenwerte von mehreren Eingängen zu einer einzigen Datenstruktur am Ausgang zusammenzufügen.
 
+![STRUCT_MUX](STRUCT_MUX.svg)
+
 ## Schnittstellenstruktur
 Die Schnittstelle des `STRUCT_MUX`-Funktionsblocks ist generisch definiert. Die tatsächlichen Daten-Eingänge werden erst bei der Instanziierung des Blocks festgelegt.
 

@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_UDINT_TO_LWORD` dient der Konvertierung eines 32-Bit unsigned integer Wertes (UDINT) in einen 64-Bit unsigned integer Wert (LWORD). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Erweiterung der Bitbreite von Daten erforderlich ist.
 
+![F_UDINT_TO_LWORD](F_UDINT_TO_LWORD.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung der Konvertierung. Dieser Eingang ist mit dem Daten-Eingang `IN` verbunden.

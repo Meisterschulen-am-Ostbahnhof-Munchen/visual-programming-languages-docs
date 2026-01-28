@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock `F_LEFT` extrahiert die linken `L` Zeichen aus der Eingabezeichenkette `IN`. Er ist Teil der Standard-Character- und String-Funktionen gemäß IEC 61131-3.
 
+![F_LEFT](F_LEFT.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

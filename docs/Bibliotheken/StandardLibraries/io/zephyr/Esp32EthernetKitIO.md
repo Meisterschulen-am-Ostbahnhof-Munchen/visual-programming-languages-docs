@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock Esp32EthernetKitIO dient als Template für modulare Ein-/Ausgabe-Operationen mit dem Esp32EthernetKit-Board. Dieser Baustein ermöglicht die Steuerung und Überwachung verschiedener Hardware-Komponenten des Boards über eine einheitliche Schnittstelle.
 
+![Esp32EthernetKitIO](Esp32EthernetKitIO.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

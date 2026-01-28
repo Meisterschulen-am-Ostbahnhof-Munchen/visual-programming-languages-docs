@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_TIME_IN_US_TO_LREAL` dient zur Konvertierung eines Zeitwertes in Mikrosekunden (`TIME`) in eine Fließkommazahl mit doppelter Genauigkeit (`LREAL`). Diese Umwandlung ist insbesondere in Steuerungsanwendungen nützlich, wo Zeitwerte für weitere Berechnungen benötigt werden.
 
+![F_TIME_IN_US_TO_LREAL](F_TIME_IN_US_TO_LREAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

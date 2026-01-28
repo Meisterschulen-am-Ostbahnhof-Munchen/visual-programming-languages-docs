@@ -10,6 +10,8 @@
 ## Einleitung
 Der logiBUS_2_CAN_IXA ist ein Composite-Funktionsblock zur Verarbeitung von booleschen Eingangsdaten über CAN-Bus-Schnittstellen. Der Baustein dient als Schnittstelle zwischen logiBUS-Systemen und CAN-basierten Eingabegeräten und ermöglicht die Initialisierung und Abfrage von digitalen Eingängen.
 
+![logiBUS_2_CAN_IXA](logiBUS_2_CAN_IXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

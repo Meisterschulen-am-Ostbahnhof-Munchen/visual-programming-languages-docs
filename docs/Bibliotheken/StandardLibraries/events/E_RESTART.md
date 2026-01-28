@@ -10,6 +10,8 @@
 ## Einleitung
 Der **E_RESTART** ist ein spezieller Service-Interface-Funktionsbaustein nach IEC 61499 (Annex A), zur Steuerung von Neustartsequenzen in verteilten Automatisierungssystemen. Der Baustein dient als Schnittstelle zwischen Ressourcen und übergeordneten Steuerungen.
 
+![E_RESTART](E_RESTART.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Ausgänge**

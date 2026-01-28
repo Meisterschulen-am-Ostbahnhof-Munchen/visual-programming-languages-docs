@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `SET_AT_INDEX` dient dazu, den Wert eines Elements in einem Array an einem bestimmten Index zu setzen. Dabei muss sichergestellt werden, dass die Datentypen des zu setzenden Wertes dem Datentyp des Arrays entsprechen. Das resultierende Ausgabe-Array wird ebenfalls den Datentyp des Eingabe-Arrays aufweisen. Dieser Baustein ist nützlich für die dynamische Manipulation von Array-Daten innerhalb eines Steuerungsprogramms.
 
+![SET_AT_INDEX](SET_AT_INDEX.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **REQ** (Event): Ein Anforderungseingang, der die Ausführung des Funktionsblocks initiiert. Mit diesem Ereignis werden die Daten-Eingänge `IN_ARRAY`, `INDEX` und `VALUE` verarbeitet.

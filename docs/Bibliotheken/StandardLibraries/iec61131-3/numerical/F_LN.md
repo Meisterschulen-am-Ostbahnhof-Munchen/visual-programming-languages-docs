@@ -10,6 +10,8 @@
 ## Einleitung
 Der F_LN Funktionsblock berechnet den natürlichen Logarithmus (Logarithmus zur Basis e) eines numerischen Eingangswerts. Er gehört zur Kategorie der Standardfunktionen für eine numerische Variable gemäß IEC 61131-3 Standard.
 
+![F_LN](F_LN.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

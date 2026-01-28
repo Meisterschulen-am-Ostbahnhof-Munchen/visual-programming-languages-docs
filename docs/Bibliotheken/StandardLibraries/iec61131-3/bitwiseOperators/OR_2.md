@@ -16,6 +16,8 @@ TRUE dominiert, also sobald an einem IN ein TRUE anliegt wird der OUT auf TRUE g
 ## Einleitung
 Der OR_2-Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen booleschen ODER-Verknüpfung. Er führt eine logische ODER-Operation auf zwei Eingabewerten durch und gibt das Ergebnis aus. Der Baustein ist gemäß der Norm IEC 61131-3 klassifiziert und unterstützt generische Datentypen für maximale Flexibilität.
 
+![OR_2](OR_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -58,6 +60,21 @@ Die ODER-Operation wird auf Bitebene durchgeführt, wobei jedes Bit der Eingabew
 
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen booleschen Operationen wie AND oder XOR bietet OR_2 die spezifische Eigenschaft, dass das Ergebnis wahr ist, wenn mindestens einer der Operanden wahr ist. Im Gegensatz zu einfachen booleschen ODER-Bausteinen unterstützt OR_2 generische Bit-Datentypen und ermöglicht somit die Verarbeitung verschiedener Datenbreiten.
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_002a3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a3.md)
+* [Uebung_002a3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a3_AX.md)
+* [Uebung_002b2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b2.md)
+* [Uebung_002b3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+* [Uebung_035a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a.md)
+* [Uebung_035a2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a2.md)
+* [Uebung_035a3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a3.md)
+* [Uebung_039_sub_Outputs](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+* [Uebung_089](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_089.md)
+* [Uebung_160_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_160_AX.md)
 
 ## Fazit
 Der OR_2-Funktionsblock stellt eine flexible und normkonforme Lösung für bitweise ODER-Operationen in Automatisierungssystemen dar. Seine generische Natur ermöglicht den Einsatz in verschiedenen Anwendungskontexten mit unterschiedlichen Datentypen, während die ereignisgesteuerte Architektur eine effiziente Ressourcennutzung gewährleistet.

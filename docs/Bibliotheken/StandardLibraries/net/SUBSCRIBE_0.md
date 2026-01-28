@@ -10,6 +10,8 @@
 ## Einleitung
 Der SUBSCRIBE_0 Funktionsblock dient zum Abonnieren von Daten eines PUBLISH_0 Blocks. Er ermöglicht die Kommunikation zwischen verschiedenen Komponenten in einem verteilten Automatisierungssystem, indem er Daten von einem Publisher empfängt und bei neuen Daten Ereignisse auslöst.
 
+![SUBSCRIBE_0](SUBSCRIBE_0.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

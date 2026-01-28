@@ -6,6 +6,8 @@
 ## Einleitung
 Der `Q_NumericValue_AUDI` ist ein spezieller ISOBUS-Funktionsbaustein, der es ermöglicht, numerische Werte (`UDINT`) von einer Steuerung an ein Universal Terminal (UT) zu senden, um sie dort anzuzeigen oder zu ändern. Er nutzt `AUDI`-Adapter für die Übergabe von neuen und alten Werten, was eine moderne und typsichere Anbindung gewährleistet.
 
+![Q_NumericValue_AUDI](Q_NumericValue_AUDI.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -39,3 +41,10 @@ Der Baustein wird über das `INIT`-Ereignis mit der Objekt-ID `u16ObjId` initial
 - **Anzeige von Zählerständen**: Visualisierung von Zählerständen (z.B. Betriebsstunden, Stückzahlen) auf dem Terminal.
 - **Sollwertvorgabe**: Übertragen von Zielwerten (z.B. Temperatur, Druck) vom ISOBUS-Terminal zur Steuerung (in Kombination mit einem NumericValue_IDA Eingangsbaustein).
 - **Feedback-Systeme**: Anzeigen von Prozesswerten in Echtzeit.
+
+
+## Zugehörige Übungen
+
+* [Uebung_009_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)
+* [Uebung_083_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_083_AX.md)
+

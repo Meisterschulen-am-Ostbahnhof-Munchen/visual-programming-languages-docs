@@ -10,6 +10,8 @@
 ## Einleitung
 Der **Q_ObjSelectInput** ist ein standardkonformer Funktionsbaustein zur programmatischen Auswahl von Eingabefeldern in Virtual Terminals, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 implementiert die ISO 11783-6 (Teil 6 - F.6) Spezifikation für VT-Eingabeelemente.
 
+![Q_ObjSelectInput](Q_ObjSelectInput.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

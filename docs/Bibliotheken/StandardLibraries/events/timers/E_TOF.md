@@ -1,3 +1,5 @@
+![E_TOF](E_TOF.svg)
+
 # E_TOF
 
 ```{index} single: E_TOF
@@ -66,7 +68,13 @@ Der E_TOF-Baustein kann in verschiedenen industriellen Steuerungsanwendungen ein
 - **Beleuchtungssteuerung**: Der Baustein kann in Beleuchtungssystemen eingesetzt werden, um das Licht nach dem Ausschalten des Schalters noch für eine bestimmte Zeit brennen zu lassen.
 - **Ventilsteuerung**: Der Baustein kann verwendet werden, um ein Ventil nach dem Schließen noch für eine bestimmte Zeit offen zu halten, um z.B. Druck abzulassen.
 
-#### Fazit
+##
+
+## Zugehörige Übungen
+
+* [Uebung_020e](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020e.md)
+
+## Fazit
 
 Der E_TOF-Baustein ist ein vielseitiger Funktionsbaustein in der IEC 61499, der eine verzögerte Abschaltfunktion realisiert. Durch seine interne Verwendung des **E_DELAY**-Bausteins kann er **auch dann korrekt funktionieren, wenn er nicht zyklisch aufgerufen wird**. Dies macht ihn besonders geeignet für ereignisgesteuerte und verteilte Steuerungssysteme, in denen zyklische Aufrufe nicht immer gewährleistet sind.
 

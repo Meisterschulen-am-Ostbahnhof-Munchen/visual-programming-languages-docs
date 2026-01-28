@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_USINT_TO_REAL` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (USINT) in einen 32-Bit-Gleitkommawert (REAL). Diese Konvertierung ist insbesondere in Szenarien erforderlich, in denen numerische Werte unterschiedlicher Datentypen verarbeitet oder weiterverwendet werden müssen.
 
+![F_USINT_TO_REAL](F_USINT_TO_REAL.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

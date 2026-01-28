@@ -10,6 +10,8 @@
 ## Einleitung
 Der Button_IX ist ein Service-Interface-Funktionsblock für boolesche Eingabedaten, der speziell für die Verarbeitung von Tasteneingaben in 4diac-Systemen entwickelt wurde. Dieser Baustein dient als Schnittstelle zwischen der Anwendungslogik und physikalischen Eingabegeräten wie Tastern oder Schaltern.
 
+![Button_IX](Button_IX.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

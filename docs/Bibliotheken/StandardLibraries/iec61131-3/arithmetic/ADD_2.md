@@ -10,6 +10,8 @@
 ## Einleitung
 Der **ADD_2** ist ein generischer Funktionsbaustein zur Addition zweier Werte, entwickelt unter EPL-2.0 Lizenz. Die Version 1.0 unterstützt verschiedene numerische Datentypen gemäß IEC 61131-3 Standard.
 
+![ADD_2](ADD_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -75,6 +77,15 @@ Der **ADD_2** ist ein generischer Funktionsbaustein zur Addition zweier Werte, e
   - OUT = 0 (für numerische Typen)
   - Leerer Wert (für andere Typen)
   - Keine Exception-Generierung
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_000](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_000.md)
+* [Uebung_000_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_000_AX.md)
+* [Uebung_110](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_110.md)
+* [Uebung_111](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_111.md)
 
 ## Fazit
 

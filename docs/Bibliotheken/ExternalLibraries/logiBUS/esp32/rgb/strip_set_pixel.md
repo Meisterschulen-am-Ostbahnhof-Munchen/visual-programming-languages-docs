@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `strip_set_pixel` dient zur Steuerung einer RGB-LED-Leiste. Seine Hauptaufgabe ist es, die Farbe eines einzelnen Pixels (einer einzelnen LED) auf der Leiste zu setzen oder die gesamte Leiste auszuschalten. Er ist für den Einsatz in Steuerungssystemen konzipiert, die eine präzise, pixelweise Ansteuerung von RGB-LEDs erfordern.
 
+![strip_set_pixel](strip_set_pixel.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **INIT**: Initialisiert den Funktionsblock. Muss vor der ersten Nutzung ausgelöst werden.

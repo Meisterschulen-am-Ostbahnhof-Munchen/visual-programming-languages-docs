@@ -9,6 +9,8 @@
 ## Einleitung
 Der AX_MUX_2 ist ein generischer Multiplexer-Funktionsblock, der zwei Eingangssignale über einen Indexwert selektiert und an einen Ausgang weiterleitet. Der Baustein dient zur dynamischen Auswahl zwischen zwei verschiedenen Eingangssignalen basierend auf einem Steuerindex.
 
+![AX_MUX_2](AX_MUX_2.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -59,6 +61,12 @@ Im Vergleich zu einfachen Multiplexern bietet AX_MUX_2:
 - Generische Implementierung für Wiederverwendbarkeit
 
 Vergleich mit [F_MUX_2](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_2.md)
+
+
+
+## Zugehörige Übungen
+
+* [Uebung_090a1_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_090a1_AX.md)
 
 ## Fazit
 Der AX_MUX_2 ist ein effizienter und flexibler Multiplexer-Baustein, der sich ideal für modulare Steuerungssysteme eignet. Seine Adapter-basierte Architektur ermöglicht einfache Integration in bestehende Systeme, während der Ereignismechanismus eine zuverlässige und nachvollziehbare Signalverarbeitung gewährleistet.

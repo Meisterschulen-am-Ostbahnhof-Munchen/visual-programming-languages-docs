@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AND_8` führt eine bitweise logische UND-Operation auf bis zu acht Eingängen durch. Es handelt sich um einen generischen Funktionsblock, der mit verschiedenen Bit-Datentypen arbeiten kann. Der Block ist gemäß der Norm IEC 61131-3 klassifiziert und dient zur Verarbeitung von booleschen Operationen.
 
+![AND_8](AND_8.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Startet die Ausführung des Funktionsblocks. Die Operation wird ausgeführt, wenn dieses Ereignis eintritt. Es ist mit allen Daten-Eingängen verknüpft (`IN1` bis `IN8`).

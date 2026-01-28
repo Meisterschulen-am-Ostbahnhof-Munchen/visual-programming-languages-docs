@@ -10,6 +10,8 @@
 ## Einleitung
 Der Aux_Val2_IW ist ein Eingabeservice-Schnittstellen-Funktionsblock für Wort-Eingabedaten. Dieser Baustein dient als Schnittstelle zur Kommunikation mit Ressourcen und ermöglicht die Verarbeitung von 16-Bit-Wort-Eingabedaten in verteilten Automatisierungssystemen.
 
+![Aux_Val2_IW](Aux_Val2_IW.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

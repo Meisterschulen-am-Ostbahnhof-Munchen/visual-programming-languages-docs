@@ -10,6 +10,8 @@
 ## Einleitung
 Der Funktionsblock AE2_SPLIT_MERGE_FORWARD ist ein bidirektionaler Splitter und Merger mit bidirektionaler Weiterleitung. Er dient als universeller Verteiler und Sammler für Ereignisse in 4diac-Systemen und ermöglicht die flexible Verteilung von Ereignissen über verschiedene Schnittstellen.
 
+![AE2_SPLIT_MERGE_FORWARD](AE2_SPLIT_MERGE_FORWARD.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

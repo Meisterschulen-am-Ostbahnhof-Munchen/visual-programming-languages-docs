@@ -10,6 +10,8 @@
 ## Einleitung
 Der logiBUS_IXA ist ein Composite-Funktionsblock zur Verarbeitung von booleschen Eingangsdaten. Er dient als Schnittstelle für digitale Eingänge und ermöglicht die Initialisierung und Abfrage von Eingangssignalen über standardisierte Service-Schnittstellen.
 
+![logiBUS_IXA](logiBUS_IXA.svg)
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**

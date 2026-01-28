@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `F_LWORD_TO_UINT` dient der Konvertierung eines `LWORD`-Datentyps in einen `UINT`-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist, beispielsweise bei der Kommunikation zwischen Systemen mit unterschiedlichen Datenformaten.
 
+![F_LWORD_TO_UINT](F_LWORD_TO_UINT.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 - **REQ**: Normaler Ausführungsanforderung. Dieser Ereigniseingang löst die Konvertierung aus. Er ist mit dem Daten-Eingang `IN` verknüpft.

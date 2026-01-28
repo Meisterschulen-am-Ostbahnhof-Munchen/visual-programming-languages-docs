@@ -9,6 +9,8 @@
 ## Einleitung
 Der Funktionsblock `AND_4_BOOL` ist ein Standardbaustein zur Berechnung der logischen UND-Verknüpfung. Er führt eine bitweise UND-Operation über vier boolesche Eingangswerte aus. Der Baustein ist als generischer Funktionsblock implementiert und folgt dem IEC 61131-3 Standard für grundlegende boolesche Funktionen.
 
+![AND_4_BOOL](AND_4_BOOL.svg)
+
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 *   **REQ** (Normal Execution Request): Dieses Ereignis löst die Ausführung des Funktionsblocks aus. Es ist mit allen vier Dateneingängen (`IN1` bis `IN4`) verknüpft.

@@ -33,8 +33,7 @@ In der grafischen Darstellung (FBS) wird dies oft als ODER-Gatter am Setz-Eingan
 Q1 := S1 OR (Q1 AND NOT R);
 ```
 *(Unter Berücksichtigung der Dominanz von S1 bei gleichzeitiger Aktivierung)*
-Genauer laut Norm-Rumpf (Tabelle 43, 1a):
-```text
-Q1 := S1 OR (NOT R AND Q1);
-```
-Wenn `S1` TRUE ist, ist `Q1` TRUE, unabhängig von `R`.
+
+## Siehe auch
+
+*   [E_SR (IEC 61499)](../../StandardLibraries/events/E_SR.md): Das ereignisgesteuerte Äquivalent in der IEC 61499. Beachten Sie, dass dort keine garantierte "Dominanz" bei gleichzeitigen Ereignissen existiert.

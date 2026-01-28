@@ -1,4 +1,4 @@
-# BYTE
+# Unidirectional BYTE Adapter Conversion
 
 ```{index} single: BYTE
 ```

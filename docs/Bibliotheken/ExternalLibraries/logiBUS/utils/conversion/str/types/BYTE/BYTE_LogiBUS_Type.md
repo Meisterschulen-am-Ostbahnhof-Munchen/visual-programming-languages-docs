@@ -1,4 +1,4 @@
-# BYTE
+# LogiBUS BYTE Types
 
 ```{index} single: BYTE
 ```

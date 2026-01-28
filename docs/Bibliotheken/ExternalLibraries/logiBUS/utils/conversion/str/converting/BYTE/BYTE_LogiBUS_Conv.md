@@ -1,4 +1,4 @@
-# BYTE
+# LogiBUS BYTE Conversion
 
 ```{index} single: BYTE
 ```

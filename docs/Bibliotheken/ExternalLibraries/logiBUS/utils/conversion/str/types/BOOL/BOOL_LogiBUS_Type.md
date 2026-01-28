@@ -1,4 +1,4 @@
-# BOOL
+# LogiBUS BOOL Types
 
 ```{index} single: BOOL
 ```

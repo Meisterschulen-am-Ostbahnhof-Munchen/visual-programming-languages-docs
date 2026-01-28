@@ -37,16 +37,18 @@ Der AX_SR Funktionsblock arbeitet als Set-Reset-Flip-Flop mit folgenden Eigensch
 - Der Zustand bleibt erhalten, bis ein gegenteiliges Ereignis eintrifft
 - Die Zustandsänderungen werden über den Adapter Q kommuniziert
 
-## Technische Besonderheiten
-- Implementiert als Basic Function Block gemäß IEC 61499
-- Verwendet unidirektionale Adapter für die Ausgabekommunikation
-- Besitzt drei definierte Zustände: START, SET und RESET
-- Initialzustand ist START
+## Technische Besonderheiten und Normenvergleich
+
+Wie bei allen ereignisgesteuerten bistabilen Elementen in der IEC 61499 (siehe auch Anmerkung 8 in Tabelle A.1 der DIN EN 61499-1) gibt es hier keine inhärente "Dominanz" eines Eingangs, wie man sie von der IEC 61131-3 kennt.
+
+- **Vergleich zur IEC 61131-3**: Siehe [SR (Bistabil, vorrangig setzen)](../../../../Vergleich/IEC61131_3/SR_ALT.md). Während in der klassischen SPS-Welt bei gleichzeitigem TRUE an S1 und R das Setzen gewinnt, wird in der IEC 61499 jedes Ereignis nacheinander verarbeitet. Der Endzustand hängt davon ab, welches Ereignis zuletzt in der Ausführungskette (ECC) abgearbeitet wurde.
+- **Funktionale Identität**: `AX_SR` ist funktional identisch zu [AX_RS](AX_RS.md). Die unterschiedliche Benennung und Anordnung der Pins dient lediglich der besseren Orientierung für Entwickler, die an die IEC 61131-3 gewöhnt sind.
+- **Adapter-Kommunikation**: Der Baustein stellt seinen Zustand über den Adapter `Q` zur Verfügung.
 
 ## Zustandsübersicht
 1. **START**: Initialzustand
-2. **SET**: Zustand nach S-Ereignis, Ausgang Q = TRUE
-3. **RESET**: Zustand nach R-Ereignis, Ausgang Q = FALSE
+2. **SET**: Zustand nach S-Ereignis, Ausgang Q.D1 = TRUE
+3. **RESET**: Zustand nach R-Ereignis, Ausgang Q.D1 = FALSE
 
 Zustandsübergänge:
 - START → SET: Bei S-Ereignis
@@ -54,10 +56,14 @@ Zustandsübergänge:
 - RESET → SET: Bei S-Ereignis
 
 ## Anwendungsszenarien
-- Speicherung von Schaltzuständen in Steuerungsanwendungen
-- Zustandsverwaltung in sequenziellen Abläufen
+- Speicherung von Schaltzuständen in verteilten Steuerungsanwendungen
+- Zustandsverwaltung über Adapterschnittstellen
 - Signalverarbeitung mit Speicherfunktion
 - Überwachung von Betriebszuständen
+
+## Verwandte Bausteine
+- **[AX_RS](AX_RS.md)**: Funktional identisch, Eingänge im Symbol vertauscht.
+- **[E_SR](../../../../StandardLibraries/events/E_SR.md)**: Das Standard-Äquivalent mit direkten Daten-/Ereignisausgängen statt Adaptern.
 
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Speicherelementen bietet AX_SR:

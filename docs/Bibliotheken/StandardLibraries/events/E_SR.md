@@ -31,8 +31,12 @@ Der `E_SR`-Baustein funktioniert als einfacher Speicher (Latch):
 2.  **Zurücksetzen**: Wenn ein Ereignis am Eingang `R` eintrifft, wird der Ausgang `Q` auf `FALSE` gesetzt. Wenn `Q` vorher `TRUE` war, wird das `EO`-Ereignis ausgelöst.
 3.  **Speichern**: Zwischen den Ereignissen behält `Q` seinen zuletzt gesetzten Zustand bei.
 
-## Technische Besonderheiten
-- **Keine Priorisierung (Dominanz)**: Im Gegensatz zur IEC 61131-3 wird in der IEC 61499 nicht zwischen setz-dominant (SR) und rücksetz-dominant (RS) unterschieden. Treffen `S`- and `R`-Ereignisse quasi gleichzeitig ein, bestimmt die Verarbeitungsreihenfolge der Laufzeitumgebung, welches Ereignis "gewinnt". Der letzte verarbeitete Befehl bestimmt den Endzustand.
+## Technische Besonderheiten und Normenvergleich
+
+Laut **DIN EN 61499-1 (Tabelle A.1, Anmerkung 8)** ist die Implementierung dieses Funktionsbausteins identisch zum [E_RS](E_RS.md). Beide Bausteine (`E_SR` und `E_RS`) existieren zur Wahrung der Konsistenz mit den Typen der IEC 61131-3, obwohl es in der IEC 61499 keine inhärente "Dominanz" von Ereignissen gibt, wie es bei den pegelgesteuerten Eingängen der klassischen SPS-Programmierung der Fall ist.
+
+- **Vergleich zur IEC 61131-3**: Siehe [SR (Bistabil, vorrangig setzen)](../../Vergleich/IEC61131_3/SR_ALT.md). Während in der IEC 61131-3 der `SR`-Baustein eine definierte "Setz-Dominanz" hat (wenn S und R gleichzeitig TRUE sind, gewinnt S), hängt das Verhalten in der IEC 61499 bei kurz aufeinanderfolgenden Ereignissen von der Abarbeitungsreihenfolge der Laufzeitumgebung (ECC) ab. Da Ereignisse flüchtig sind, gibt es keinen dauerhaften Konflikt zweier statischer Signale.
+- **Funktionale Identität**: `E_SR` und `E_RS` unterscheiden sich technisch nicht. Die grafische Darstellung und Benennung lehnt sich lediglich an die Konventionen an, um Entwicklern die Orientierung zu erleichtern.
 - **Änderungserkennung**: Der `EO`-Ausgang wird nur bei einer tatsächlichen Zustandsänderung ausgelöst.
 
 ## Anwendungsszenarien
@@ -40,9 +44,9 @@ Der `E_SR`-Baustein funktioniert als einfacher Speicher (Latch):
 - **Fehlerspeicherung**: Ein Fehlerereignis setzt den Baustein (`S`), der den Fehlerzustand speichert, bis er von einem Bediener oder einem anderen Prozess explizit quittiert (`R`) wird.
 - **Modus-Speicher**: Speichern des aktuellen Betriebsmodus einer Anlage (z.B. "Hand" vs. "Automatik").
 
-## Vergleich mit ähnlichen Bausteinen
-- **`E_RS`**: Funktional identisch zum `E_SR`. Der einzige Unterschied liegt in der grafischen Anordnung der `S`- und `R`-Anschlüsse am Symbol, um unterschiedlichen Konventionen gerecht zu werden.
-- **`E_D_FF`**: Speichert ebenfalls einen Zustand, aber taktbasiert. `E_D_FF` übernimmt den Wert am `D`-Eingang bei einem `CLK`-Ereignis, während `E_SR` durch separate Set/Reset-Ereignisse gesteuert wird.
+## Verwandte Bausteine
+- **[E_RS](E_RS.md)**: Funktional identisch zum `E_SR`. Der einzige Unterschied liegt in der grafischen Anordnung der `S`- und `R`-Anschlüsse am Symbol.
+- **`E_D_FF`**: Speichert ebenfalls einen Zustand, aber taktbasiert. `E_D_FF` übernimmt den Wert am `D`-Eingang bei einem `CLK`-Ereignis.
 
 
 

@@ -35,18 +35,20 @@ Der AX_RS Funktionsblock arbeitet als RS-Flip-Flop mit folgenden Eigenschaften:
 - Bei Eintreffen eines R-Ereignis (Reset) wird der Ausgang Q auf FALSE gesetzt
 - Der Zustand bleibt erhalten, bis ein gegenteiliges Ereignis eintrifft
 
-## Technische Besonderheiten
-- Implementiert als Basic Function Block mit drei Zuständen
-- Verwendet unidirektionale Adapter für die Ausgabe
-- Der Ausgabewert wird über den Adapter Q.D1 transportiert
-- Ereignisausgaben werden über Q.E1 signalisiert
+## Technische Besonderheiten und Normenvergleich
+
+Wie bei allen ereignisgesteuerten bistabilen Elementen in der IEC 61499 (siehe auch Anmerkung 8 in Tabelle A.1 der DIN EN 61499-1) gibt es hier keine inhärente "Dominanz" eines Eingangs, wie man sie von der IEC 61131-3 kennt.
+
+- **Vergleich zur IEC 61131-3**: Siehe [RS (Bistabil, vorrangig rücksetzen)](../../../../Vergleich/IEC61131_3/RS_ALT.md). Während in der klassischen SPS-Welt bei gleichzeitigem TRUE an S und R1 das Rücksetzen gewinnt, wird in der IEC 61499 jedes Ereignis nacheinander verarbeitet. Der Endzustand hängt davon ab, welches Ereignis zuletzt in der Ausführungskette (ECC) abgearbeitet wurde.
+- **Funktionale Identität**: `AX_RS` ist funktional identisch zu [AX_SR](AX_SR.md). Die unterschiedliche Benennung dient lediglich der Konsistenz zur klassischen Programmierung und der besseren Lesbarkeit im Schaltplan.
+- **Adapter-Kommunikation**: Der Baustein gibt seinen Zustand ausschließlich über den Adapter `Q` (Typ `AX`) aus. Eine Änderung von `Q` löst das Ereignis `Q.E1` aus.
 
 ## Zustandsübersicht
-Der Funktionsblock verfügt über drei Zustände:
+Der Funktionsblock verfügt über drei Zustände im ECC:
 
 1. **START**: Initialzustand
-2. **SET**: Zustand nach Set-Operation (Q = TRUE)
-3. **RESET**: Zustand nach Reset-Operation (Q = FALSE)
+2. **SET**: Zustand nach Set-Operation (Q.D1 = TRUE)
+3. **RESET**: Zustand nach Reset-Operation (Q.D1 = FALSE)
 
 **Zustandsübergänge:**
 - START → SET: bei S-Ereignis
@@ -54,10 +56,14 @@ Der Funktionsblock verfügt über drei Zustände:
 - RESET → SET: bei S-Ereignis
 
 ## Anwendungsszenarien
-- Speicherung von binären Zuständen in Steuerungsanwendungen
-- Implementierung von Verriegelungsschaltungen
+- Speicherung von binären Zuständen mit Adapter-Ausgabe
+- Implementierung von Verriegelungsschaltungen in verteilten Systemen
 - Zustandsspeicherung in sequentiellen Abläufen
 - Signalverarbeitung in ereignisgesteuerten Systemen
+
+## Verwandte Bausteine
+- **[AX_SR](AX_SR.md)**: Funktional identisch, Eingänge im Symbol vertauscht.
+- **[E_RS](../../../../StandardLibraries/events/E_RS.md)**: Das Standard-Äquivalent mit direkten Daten-/Ereignisausgängen statt Adaptern.
 
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Flip-Flop-Implementierungen:

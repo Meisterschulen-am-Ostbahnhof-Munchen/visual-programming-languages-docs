@@ -34,3 +34,7 @@ Q1 := NOT R1 AND (S OR Q1);
 ```
 
 Wenn `R1` TRUE ist, wird der Ausdruck `NOT R1` zu FALSE, und somit wird `Q1` zwangsläufig `FALSE` (0), unabhängig vom Zustand von `S`. Dies realisiert die Rücksetz-Dominanz.
+
+## Siehe auch
+
+*   [E_RS (IEC 61499)](../../StandardLibraries/events/E_RS.md): Das ereignisgesteuerte Äquivalent in der IEC 61499. Beachten Sie, dass dort keine garantierte "Dominanz" bei gleichzeitigen Ereignissen existiert.

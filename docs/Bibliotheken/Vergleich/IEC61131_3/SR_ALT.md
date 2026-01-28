@@ -38,3 +38,7 @@ Genauer laut Norm-Rumpf (Tabelle 43, 1a):
 Q1 := S1 OR (NOT R AND Q1);
 ```
 Wenn `S1` TRUE ist, ist `Q1` TRUE, unabhängig von `R`.
+
+## Siehe auch
+
+*   [E_SR (IEC 61499)](../../StandardLibraries/events/E_SR.md): Das ereignisgesteuerte Äquivalent in der IEC 61499. Beachten Sie, dass dort keine garantierte "Dominanz" bei gleichzeitigen Ereignissen existiert.

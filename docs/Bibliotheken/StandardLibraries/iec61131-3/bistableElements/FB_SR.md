@@ -43,23 +43,23 @@ END_ALGORITHM
 ```
 
 ## Technische Besonderheiten
-- Der Funktionsblock ist ein einfaches bistabiles Element ohne zusätzliche Zustandsverwaltung oder komplexe Zeitsteuerung.
-- Die Ausführung wird durch das Ereignis `REQ` getriggert und bestätigt durch `CNF`.
+- **IEC 61131-3 Konformität**: Dieser Baustein bildet das Verhalten des klassischen `SR`-Flipflops exakt nach. Da die Eingänge `S1` und `R` Daten-Eingänge sind, die beim `REQ`-Ereignis gleichzeitig abgetastet werden, ist eine logische Priorisierung notwendig.
+- **Setz-Dominanz**: Der Baustein implementiert eine **Setz-Priorität**. Wenn `S1` und `R` gleichzeitig `TRUE` sind, wird der Ausgang `Q1` auf `TRUE` gesetzt.
+- **Trigger**: Die Ausführung (Logikberechnung) erfolgt nur beim Ereignis `REQ`.
 
 ## Zustandsübersicht
-Der Zustand des Flipflops (`Q1`) hängt von den aktuellen Werten von `S1` und `R` ab:
-- `S1 = TRUE`: `Q1` wird auf `TRUE` gesetzt (unabhängig von `R`).
-- `R = TRUE`: `Q1` wird auf `FALSE` gesetzt (falls `S1` nicht `TRUE` ist).
+Der Zustand des Flipflops (`Q1`) hängt von den aktuellen Werten von `S1` und `R` ab (zum Zeitpunkt des `REQ`):
+- `S1 = TRUE`: `Q1` wird auf `TRUE` gesetzt (unabhängig von `R`). -> **Setz-Dominanz**
+- `R = TRUE` UND `S1 = FALSE`: `Q1` wird auf `FALSE` gesetzt.
 - `S1 = FALSE` und `R = FALSE`: `Q1` bleibt unverändert.
 
 ## Anwendungsszenarien
-- Speicherung von binären Zuständen in Steuerungsanwendungen.
-- Verwendung in Schaltnetzen und Schaltwerken, wo ein einfaches Speicherelement benötigt wird.
-- Integration in größere Steuerungssysteme, die bistabile Elemente erfordern.
+- Speicherung von binären Zuständen in Steuerungsanwendungen, wo IEC 61131-3 Verhalten gefordert ist.
+- Verwendung in Schaltnetzen, bei denen die Dominanz des Setz-Signals sicherheitsrelevant oder prozessbedingt notwendig ist.
 
 ## Vergleich mit ähnlichen Bausteinen
-- Im Vergleich zu anderen bistabilen Elementen wie `FB_RS` (Reset-Set-Flipflop) priorisiert `FB_SR` den Set-Eingang (`S1`) über den Reset-Eingang (`R`).
-- Einfacher als komplexe Speicherelemente mit zusätzlichen Funktionen wie Taktsteuerung oder zusätzlichen Eingängen.
+- **[E_SR](../../events/E_SR.md)**: Der `E_SR` ist rein ereignisgesteuert. Dort gibt es keine gleichzeitigen Signale und somit keine Dominanz in diesem Sinne (das letzte Ereignis gewinnt). Der `FB_SR` hingegen wertet statische Signale zum Zeitpunkt `REQ` aus und erzwingt die Setz-Dominanz.
+- **[FB_RS](FB_RS.md)**: Das Gegenstück mit **Rücksetz-Dominanz** (Reset Priority).
 
 ## Fazit
 Der `FB_SR` ist ein grundlegender und effizienter Funktionsblock für die Speicherung binärer Zustände in Steuerungsanwendungen. Seine einfache Logik und klare Schnittstelle machen ihn ideal für den Einsatz in verschiedenen industriellen Automatisierungslösungen.

@@ -13,7 +13,7 @@
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/BOOL/BOOL_Detail.html\" target=\"_blank\">BOOL</a>",
                "vid": "",
                "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Boolean\" target=\"_blank\">Boolean</a>",
-               "ext_en": "",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Boolean_data_type\" target=\"_blank\">Wikipedia (EN)</a>",
                "title": "Boolesche Variable",
                "type": "bool"
             },
@@ -27,7 +27,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "2-Bit-Variable",
                "type": "any_bit"
             },
             {
@@ -38,9 +38,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/BYTE/BYTE_Detail.html\" target=\"_blank\">BYTE</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Datenwort\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Word_(computer_architecture)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Byte (8 Bit)",
                "type": "any_bit"
             },
             {
@@ -51,9 +51,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/WORD/WORD_Detail.html\" target=\"_blank\">WORD</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Datenwort\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Word_(computer_architecture)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Wort (16 Bit)",
                "type": "any_bit"
             },
             {
@@ -64,9 +64,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/DWORD/DWORD_Detail.html\" target=\"_blank\">DWORD</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Datenwort\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Word_(computer_architecture)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Doppelwort (32 Bit)",
                "type": "any_bit"
             },
             {
@@ -77,9 +77,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/LWORD/LWORD_Detail.html\" target=\"_blank\">LWORD</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Datenwort\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Word_(computer_architecture)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Langwort (64 Bit)",
                "type": "any_bit"
             },
             {
@@ -90,9 +90,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/SINT/SINT_Detail.html\" target=\"_blank\">SINT</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Ganzzahl\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Integer_(computer_science)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Kurze Ganzzahl (8 Bit)",
                "type": "any_int"
             },
             {
@@ -103,9 +103,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/INT/INT_Detail.html\" target=\"_blank\">INT</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Ganzzahl\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Integer_(computer_science)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Ganzzahl (16 Bit)",
                "type": "any_int"
             },
             {
@@ -116,9 +116,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/DINT/DINT_Detail.html\" target=\"_blank\">DINT</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Ganzzahl\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Integer_(computer_science)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Doppelganzzahl (32 Bit)",
                "type": "any_int"
             },
             {
@@ -129,9 +129,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/LINT/LINT_Detail.html\" target=\"_blank\">LINT</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Ganzzahl\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Integer_(computer_science)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Lange Ganzzahl (64 Bit)",
                "type": "any_int"
             },
             {
@@ -142,9 +142,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/USINT/USINT_Detail.html\" target=\"_blank\">USINT</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Ganzzahl\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Integer_(computer_science)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Vorzeichenlose kurze Ganzzahl (8 Bit)",
                "type": "any_int"
             },
             {
@@ -155,9 +155,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/UINT/UINT_Detail.html\" target=\"_blank\">UINT</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Ganzzahl\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Integer_(computer_science)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Vorzeichenlose Ganzzahl (16 Bit)",
                "type": "any_int"
             },
             {
@@ -168,9 +168,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/UDINT/UDINT_Detail.html\" target=\"_blank\">UDINT</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Ganzzahl\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Integer_(computer_science)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Vorzeichenlose Doppelganzzahl (32 Bit)",
                "type": "any_int"
             },
             {
@@ -181,9 +181,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/ULINT/ULINT_Detail.html\" target=\"_blank\">ULINT</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Ganzzahl\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Integer_(computer_science)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Vorzeichenlose lange Ganzzahl (64 Bit)",
                "type": "any_int"
             },
             {
@@ -194,9 +194,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/REAL/REAL_Detail.html\" target=\"_blank\">REAL</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Gleitkommazahl\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Floating-point_arithmetic\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Gleitkommazahl (32 Bit)",
                "type": "any_real"
             },
             {
@@ -207,9 +207,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/LREAL/LREAL_Detail.html\" target=\"_blank\">LREAL</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Gleitkommazahl\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Floating-point_arithmetic\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Gleitkommazahl (64 Bit)",
                "type": "any_real"
             },
             {
@@ -220,9 +220,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/DATE/DATE_Detail.html\" target=\"_blank\">DATE</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Datum_(Kalender)\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Calendar_date\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Datum",
                "type": "time"
             },
             {
@@ -233,9 +233,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/TIME/TIME_Detail.html\" target=\"_blank\">TIME</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Zeit\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Time\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Zeitdauer",
                "type": "time"
             },
             {
@@ -246,9 +246,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/TIME_OF_DAY/TIME_OF_DAY_Detail.html\" target=\"_blank\">TIME_OF_DAY</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Uhrzeit\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Time_of_day\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Uhrzeit",
                "type": "time"
             },
             {
@@ -259,9 +259,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/DATE_AND_TIME/DATE_AND_TIME_Detail.html\" target=\"_blank\">DATE_AND_TIME</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/ISO_8601\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/ISO_8601\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Datum und Uhrzeit",
                "type": "time"
             },
             {
@@ -272,9 +272,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/CHAR/CHAR_Detail.html\" target=\"_blank\">CHAR</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Zeichen_(Computer)\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Character_(computing)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Zeichen",
                "type": "any_string"
             },
             {
@@ -287,7 +287,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Standard-Datentyp LDATE",
                "type": "time"
             },
             {
@@ -300,7 +300,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Standard-Datentyp LDT",
                "type": "time"
             },
             {
@@ -313,7 +313,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Standard-Datentyp LTIME",
                "type": "time"
             },
             {
@@ -326,7 +326,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Standard-Datentyp LTOD",
                "type": "time"
             },
             {
@@ -337,9 +337,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/STRING/STRING_Detail.html\" target=\"_blank\">STRING</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Zeichenkette\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/String_(computer_science)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Zeichenkette",
                "type": "any_string"
             },
             {
@@ -350,9 +350,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/WCHAR/WCHAR_Detail.html\" target=\"_blank\">WCHAR</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Breitzeichen\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Wide_character\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Breites Zeichen",
                "type": "any_string"
             },
             {
@@ -363,9 +363,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Allgemeines/Datentypen/WSTRING/WSTRING_Detail.html\" target=\"_blank\">WSTRING</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Zeichenkette\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/String_(computer_science)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Breite Zeichenkette",
                "type": "any_string"
             },
             {
@@ -378,7 +378,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Strukturierte CAN-Nachricht",
                "type": "time"
             }
          ]
@@ -663,7 +663,7 @@
                "vid": "<a href=\"https://youtu.be/XZqsqNy_g_g\" target=\"_blank\">E_T_FF</a>",
                "ext_de": "<a href=\"https://www.elektronik-kompendium.de/sites/dig/0210033.htm\" target=\"_blank\">T-Flip-Flop</a>",
                "ext_en": "<a href=\"https://www.holobloc.com/doc/fb/rt/events/E_T_FF.htm\" target=\"_blank\">E_T_FF</a>",
-               "title": "",
+               "title": "Toggle-Flip-Flop (Stromstoßschalter)",
                "type": "event"
             },
             {
@@ -676,7 +676,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "T_FF Adapter",
                "type": "adapter"
             },
             {
@@ -702,7 +702,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Bistabiles Element (Setzvorrang) (Adapter)",
                "type": "adapter"
             },
             {
@@ -728,7 +728,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Bistabiles Element (Rücksetzvorrang) (Adapter)",
                "type": "adapter"
             },
             {
@@ -741,7 +741,7 @@
                "vid": "<a href=\"https://youtu.be/lfumU4WoIGs\" target=\"_blank\">E_T_FF_SR</a>",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "SR&T-Flip-Flop Mischung aus E_SR und E_T_FF",
                "type": "event"
             },
             {
@@ -754,7 +754,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "T_FF_SR Adapter",
                "type": "adapter"
             },
             {
@@ -780,7 +780,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "D_FF Adapter",
                "type": "adapter"
             },
             {
@@ -791,8 +791,8 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/bistableElements/FB_RS.html\" target=\"_blank\">FB_RS</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Flipflop#RS-Flipflop\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Flip-flop_(electronics)#SR_latch\" target=\"_blank\">Wikipedia (EN)</a>",
                "title": "Bistable Element (Reset Priority)",
                "type": ""
             },
@@ -804,8 +804,8 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/bistableElements/FB_SR.html\" target=\"_blank\">FB_SR</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Flipflop#RS-Flipflop\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Flip-flop_(electronics)#SR_latch\" target=\"_blank\">Wikipedia (EN)</a>",
                "title": "Bistable Element (Set Priority)",
                "type": ""
             },
@@ -830,8 +830,8 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/events/E_SR.html\" target=\"_blank\">E_SR</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Flipflop#RS-Flipflop\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Flip-flop_(electronics)#SR_latch\" target=\"_blank\">Wikipedia (EN)</a>",
                "title": "SR Flip-Flop",
                "type": "event"
             }
@@ -890,7 +890,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Einschaltverzögerung (Adapter)",
                "type": "adapter"
             },
             {
@@ -929,7 +929,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Ausschaltverzögerung (Adapter)",
                "type": "adapter"
             },
             {
@@ -942,7 +942,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Timer, Ein-/Ausschaltverzögert",
                "type": "event"
             },
             {
@@ -955,7 +955,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "TONOF Adapter",
                "type": "adapter"
             },
             {
@@ -968,7 +968,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Timer, Impulsformend",
                "type": "event"
             },
             {
@@ -981,7 +981,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "PULSE Adapter",
                "type": "adapter"
             },
             {
@@ -1020,7 +1020,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Impulsgeber (Adapter)",
                "type": "adapter"
             },
             {
@@ -1033,7 +1033,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Grundrechenart: Multiplikation",
                "type": ""
             },
             {
@@ -1046,7 +1046,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Grundrechenart: Division",
                "type": ""
             },
             {
@@ -1059,7 +1059,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "E_STOPWATCH",
                "type": "event"
             },
             {
@@ -1116,7 +1116,7 @@
                "link_int": "",
                "vid": "",
                "ext_de": "<a href=\"https://www.elektronik-kompendium.de/sites/dig/0205183.htm\" target=\"_blank\">NICHT / NOT / Negation</a>",
-               "ext_en": "",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/NOT_gate\" target=\"_blank\">Wikipedia (EN)</a>",
                "title": "bitweise NICHT oder Komplement",
                "type": ""
             },
@@ -1128,9 +1128,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/bitwiseOperators/F_NOT.html\" target=\"_blank\">F_NOT</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Nicht-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/NOT_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Bitweises NICHT",
                "type": ""
             },
             {
@@ -1143,7 +1143,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "NICHT-Verknüpfung",
                "type": ""
             },
             {
@@ -1156,7 +1156,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Bitweises NICHT (Adapter)",
                "type": "adapter"
             },
             {
@@ -1168,7 +1168,7 @@
                "link_int": "",
                "vid": "",
                "ext_de": "<a href=\"https://www.elektronik-kompendium.de/sites/dig/0205181.htm\" target=\"_blank\">UND / AND / Konjunktion</a>",
-               "ext_en": "",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/AND_gate\" target=\"_blank\">Wikipedia (EN)</a>",
                "title": "UND / AND / Konjunktion",
                "type": ""
             },
@@ -1180,9 +1180,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/bitwiseOperators/AND_2.html\" target=\"_blank\">AND_2</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Und-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/AND_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "UND-Baustein mit 2 Eingängen ANY_BIT",
                "type": ""
             },
             {
@@ -1193,9 +1193,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/AND_2_BOOL.html\" target=\"_blank\">AND_2_BOOL</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Und-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/AND_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "UND-Baustein mit 2 Eingängen BOOL",
                "type": ""
             },
             {
@@ -1208,7 +1208,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "AND_2 Adapter",
                "type": "adapter"
             },
             {
@@ -1219,9 +1219,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/bitwiseOperators/AND_3.html\" target=\"_blank\">AND_3</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Und-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/AND_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "UND-Baustein mit 3 Eingängen ANY_BIT",
                "type": ""
             },
             {
@@ -1232,9 +1232,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/AND_3_BOOL.html\" target=\"_blank\">AND_3_BOOL</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Und-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/AND_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "UND-Baustein mit 3 Eingängen BOOL",
                "type": ""
             },
             {
@@ -1247,7 +1247,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "AND_3 Adapter",
                "type": "adapter"
             },
             {
@@ -1260,7 +1260,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "AND_4 Adapter",
                "type": "adapter"
             },
             {
@@ -1272,7 +1272,7 @@
                "link_int": "",
                "vid": "",
                "ext_de": "<a href=\"https://www.elektronik-kompendium.de/sites/dig/0205182.htm\" target=\"_blank\">ODER / OR / Disjunktion</a>",
-               "ext_en": "",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/OR_gate\" target=\"_blank\">Wikipedia (EN)</a>",
                "title": "ODER / OR / Disjunktion",
                "type": ""
             },
@@ -1284,9 +1284,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/bitwiseOperators/OR_2.html\" target=\"_blank\">OR_2</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Oder-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/OR_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "ODER-Baustein mit 2 Eingängen ANY_BIT",
                "type": ""
             },
             {
@@ -1297,9 +1297,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/OR_2_BOOL.html\" target=\"_blank\">OR_2_BOOL</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Oder-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/OR_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "ODER-Baustein mit 2 Eingängen BOOL",
                "type": ""
             },
             {
@@ -1312,7 +1312,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "OR_2 Adapter",
                "type": "adapter"
             },
             {
@@ -1323,9 +1323,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/bitwiseOperators/OR_3.html\" target=\"_blank\">OR_3</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Oder-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/OR_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "ODER-Baustein mit 3 Eingängen ANY_BIT",
                "type": ""
             },
             {
@@ -1336,9 +1336,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/OR_3_BOOL.html\" target=\"_blank\">OR_3_BOOL</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Oder-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/OR_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "ODER-Baustein mit 3 Eingängen BOOL",
                "type": ""
             },
             {
@@ -1351,7 +1351,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "OR_3 Adapter",
                "type": "adapter"
             },
             {
@@ -1363,7 +1363,7 @@
                "link_int": "",
                "vid": "",
                "ext_de": "<a href=\"https://www.elektronik-kompendium.de/sites/dig/0205186.htm\" target=\"_blank\">XOR / Exklusiv-ODER / Antivalenz</a>",
-               "ext_en": "",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/XOR_gate\" target=\"_blank\">Wikipedia (EN)</a>",
                "title": "XOR / Exklusiv-ODER / Antivalenz",
                "type": ""
             },
@@ -1375,9 +1375,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.html\" target=\"_blank\">XOR_2</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/XOR-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/XOR_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "XOR-Baustein mit 2 Eingängen ANY_BIT",
                "type": ""
             },
             {
@@ -1388,9 +1388,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/XOR_2_BOOL.html\" target=\"_blank\">XOR_2_BOOL</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/XOR-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/XOR_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "XOR-Baustein mit 2 Eingängen BOOL",
                "type": ""
             },
             {
@@ -1403,7 +1403,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "XOR_2 Adapter",
                "type": "adapter"
             },
             {
@@ -1414,9 +1414,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.html\" target=\"_blank\">XOR_3</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/XOR-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/XOR_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "XOR-Baustein mit 3 Eingängen ANY_BIT",
                "type": ""
             },
             {
@@ -1427,9 +1427,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/ExternalLibraries/iec61131-3-bool/booleanOperators/XOR_3_BOOL.html\" target=\"_blank\">XOR_3_BOOL</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/XOR-Gatter\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/XOR_gate\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "XOR-Baustein mit 3 Eingängen BOOL",
                "type": ""
             },
             {
@@ -1442,7 +1442,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "XOR_3 Adapter",
                "type": "adapter"
             },
             {
@@ -1467,8 +1467,8 @@
                "link_int": "",
                "vid": "",
                "ext_de": "<a href=\"https://www.studienkreis.de/mathematik/grundrechenart-addition/\" target=\"_blank\">grundrechenart-addition</a>",
-               "ext_en": "",
-               "title": "",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Addition",
                "type": ""
             },
             {
@@ -1479,9 +1479,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/ADD_2.html\" target=\"_blank\">ADD_2</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Additions-Baustein mit 2 Eingängen",
                "type": ""
             },
             {
@@ -1492,9 +1492,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/ADD_3.html\" target=\"_blank\">ADD_3</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Additions-Baustein mit 3 Eingängen",
                "type": ""
             },
             {
@@ -1505,9 +1505,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/ADD_4.html\" target=\"_blank\">ADD_4</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Additions-Baustein mit 4 Eingängen",
                "type": ""
             },
             {
@@ -1518,9 +1518,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/ADD_5.html\" target=\"_blank\">ADD_5</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Additions-Baustein mit 5 Eingängen",
                "type": ""
             },
             {
@@ -1531,9 +1531,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/ADD_6.html\" target=\"_blank\">ADD_6</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Addition\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Additions-Baustein mit 6 Eingängen",
                "type": ""
             },
             {
@@ -1545,8 +1545,8 @@
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/F_SUB.html\" target=\"_blank\">F_SUB</a>",
                "vid": "",
                "ext_de": "grundrechenart-subtraktion",
-               "ext_en": "",
-               "title": "",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Subtraction\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Subtraktion",
                "type": ""
             },
             {
@@ -1558,8 +1558,8 @@
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/F_MUL.html\" target=\"_blank\">F_MUL</a>",
                "vid": "",
                "ext_de": "<a href=\"https://www.studienkreis.de/mathematik/grundrechenart-multiplikation/\" target=\"_blank\">grundrechenart-multiplikation</a>",
-               "ext_en": "",
-               "title": "",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Multiplication\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Multiplikation",
                "type": ""
             },
             {
@@ -1571,8 +1571,8 @@
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/F_DIV.html\" target=\"_blank\">F_DIV</a>",
                "vid": "",
                "ext_de": "<a href=\"https://www.studienkreis.de/mathematik/grundrechenart-division/\" target=\"_blank\">grundrechenart-division</a>",
-               "ext_en": "",
-               "title": "",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Division_(mathematics)\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Division",
                "type": ""
             },
             {
@@ -1584,8 +1584,8 @@
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/arithmetic/F_MOD.html\" target=\"_blank\">F_MOD</a>",
                "vid": "",
                "ext_de": "<a href=\"https://msmuc.sharepoint.com/sites/L2425/Freigegebene%20Dokumente/SL%20Classroom/Visuelle-Programmierung/Abkürzungen%20und%20Bedeutungen/Modulo-Rechnung\" target=\"_blank\">Modulo-Rechnung</a>",
-               "ext_en": "",
-               "title": "",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Modulo_operation\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Modulo",
                "type": ""
             },
             {
@@ -1596,8 +1596,8 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/selection/F_SEL.html\" target=\"_blank\">F_SEL</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Multiplexer\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Multiplexer\" target=\"_blank\">Wikipedia (EN)</a>",
                "title": "Auswahl",
                "type": ""
             },
@@ -1624,7 +1624,7 @@
                "vid": "",
                "ext_de": "<a href=\"https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_eq.html\" target=\"_blank\">operator_eq</a>",
                "ext_en": "<a href=\"https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_eq.html\" target=\"_blank\">operator_eq</a>",
-               "title": "",
+               "title": "Gleich",
                "type": ""
             },
             {
@@ -1635,9 +1635,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/comparison/F_GE.html\" target=\"_blank\">F_GE</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Vergleichsoperator\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Relational_operator\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Größer oder gleich",
                "type": ""
             },
             {
@@ -1650,7 +1650,7 @@
                "vid": "",
                "ext_de": "<a href=\"https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_gt.html\" target=\"_blank\">operator_gt</a>",
                "ext_en": "<a href=\"https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_gt.html\" target=\"_blank\">operator_gt</a>",
-               "title": "",
+               "title": "Größer als",
                "type": ""
             },
             {
@@ -1661,9 +1661,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/comparison/F_LE.html\" target=\"_blank\">F_LE</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Vergleichsoperator\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Relational_operator\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Kleiner oder gleich",
                "type": ""
             },
             {
@@ -1676,7 +1676,7 @@
                "vid": "",
                "ext_de": "<a href=\"https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_lt.html\" target=\"_blank\">operator_lt</a>",
                "ext_en": "<a href=\"https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_lt.html\" target=\"_blank\">operator_lt</a>",
-               "title": "",
+               "title": "Kleiner als",
                "type": ""
             },
             {
@@ -1687,9 +1687,9 @@
                "exdoc": "",
                "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Bibliotheken/StandardLibraries/iec61131-3/comparison/F_NE.html\" target=\"_blank\">F_NE</a>",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Vergleichsoperator\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Relational_operator\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Ungleich",
                "type": ""
             },
             {
@@ -1702,7 +1702,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "INTEGRAL",
                "type": ""
             },
             {
@@ -1713,9 +1713,9 @@
                "exdoc": "",
                "link_int": "",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Extremwert\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Maxima_and_minima\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Maximum",
                "type": ""
             },
             {
@@ -1726,9 +1726,9 @@
                "exdoc": "",
                "link_int": "",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Extremwert\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Maxima_and_minima\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Minimum",
                "type": ""
             },
             {
@@ -1741,7 +1741,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "F_MUX_2",
                "type": ""
             },
             {
@@ -1754,7 +1754,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "MUX_2 Adapter",
                "type": "adapter"
             },
             {
@@ -1767,7 +1767,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "DEMUX_2 Adapter",
                "type": "adapter"
             },
             {
@@ -1780,7 +1780,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "F_MUX_3",
                "type": ""
             },
             {
@@ -1791,9 +1791,9 @@
                "exdoc": "",
                "link_int": "",
                "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "",
+               "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Begrenzer\" target=\"_blank\">Wikipedia (DE)</a>",
+               "ext_en": "<a href=\"https://en.wikipedia.org/wiki/Limiter\" target=\"_blank\">Wikipedia (EN)</a>",
+               "title": "Begrenzer",
                "type": ""
             },
             {
@@ -1884,7 +1884,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "ASSEMBLE_BYTE_FROM_BOOLS",
                "type": ""
             },
             {
@@ -1897,7 +1897,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "SPLIT_BYTE_INTO_BOOLS",
                "type": ""
             }
          ]
@@ -1929,7 +1929,7 @@
                "vid": "<a href=\"https://www.youtube.com/watch?v=NgLWcVhgRqk\" target=\"_blank\">E_CTD</a>",
                "ext_de": "",
                "ext_en": "<a href=\"https://holobloc.com/doc/fb/rt/events/E_CTD.htm\" target=\"_blank\">E_CTD</a>",
-               "title": "",
+               "title": "Rückwärtszähler",
                "type": "event"
             },
             {
@@ -1942,7 +1942,7 @@
                "vid": "<a href=\"https://youtu.be/H_MRtaMiaU8\" target=\"_blank\">E_CTUD</a>",
                "ext_de": "",
                "ext_en": "<a href=\"https://holobloc.com/doc/fb/rt/events/E_CTUD.htm\" target=\"_blank\">E_CTUD</a>",
-               "title": "",
+               "title": "Vor-/Rückwärtszähler",
                "type": "event"
             },
             {
@@ -1955,7 +1955,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "E_CTUD_UDINT",
                "type": "event"
             },
             {
@@ -1987,7 +1987,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Initiierung Eingang und Ausgang",
                "type": ""
             },
             {
@@ -2026,7 +2026,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Anfrage / Bestätigung (Request / Confirm)",
                "type": ""
             },
             {
@@ -2091,7 +2091,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "E_TRAIN Ausgang",
                "type": "event"
             },
             {
@@ -2117,7 +2117,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "SWITCH Adapter",
                "type": "adapter"
             },
             {
@@ -2143,7 +2143,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "E_MERGE_2",
                "type": "event"
             },
             {
@@ -2156,7 +2156,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "E_MERGE_3",
                "type": "event"
             },
             {
@@ -2182,7 +2182,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "E_SPLIT_2",
                "type": "event"
             },
             {
@@ -2195,7 +2195,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "SPLIT_2 Adapter",
                "type": "adapter"
             },
             {
@@ -2208,7 +2208,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "E_SPLIT3",
-               "title": "",
+               "title": "E_SPLIT_3",
                "type": "event"
             },
             {
@@ -2221,7 +2221,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "SPLIT_3 Adapter",
                "type": "adapter"
             },
             {
@@ -2286,7 +2286,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "E_DEMUX_4",
                "type": "event"
             },
             {
@@ -2299,7 +2299,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "E_DEMUX_8",
                "type": "event"
             },
             {
@@ -2312,7 +2312,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "E_MUX_4",
                "type": "event"
             },
             {
@@ -2325,7 +2325,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "E_MUX_8",
                "type": "event"
             },
             {
@@ -2461,7 +2461,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Softkey F9",
                "type": ""
             },
             {
@@ -2474,7 +2474,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Digitaler Eingang",
                "type": ""
             },
             {
@@ -2513,7 +2513,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Eingang / Ausgang",
                "type": ""
             },
             {
@@ -2565,7 +2565,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Eingang / Ausgang",
                "type": ""
             },
             {
@@ -2578,7 +2578,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Ausgang Q1-Q4",
                "type": ""
             },
             {
@@ -2591,7 +2591,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Daten Eingang",
                "type": ""
             },
             {
@@ -2604,7 +2604,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Event Eingang",
                "type": ""
             },
             {
@@ -2760,7 +2760,7 @@
                "vid": "",
                "ext_de": "<a href=\"https://de.wikipedia.org/wiki/Pulsdauermodulation\" target=\"_blank\">Pulsdauermodulation</a>",
                "ext_en": "",
-               "title": "",
+               "title": "Pulsweitenmodulation",
                "type": ""
             },
             {
@@ -2987,7 +2987,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "WAHR / 1",
                "type": ""
             },
             {
@@ -3000,7 +3000,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "FALSCH / 0",
                "type": ""
             },
             {
@@ -3013,7 +3013,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Hochladen",
                "type": ""
             },
             {
@@ -3026,7 +3026,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "System Perspective",
                "type": ""
             },
             {
@@ -3039,7 +3039,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Hochladen, und dann Watch",
                "type": ""
             },
             {
@@ -3052,7 +3052,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Debug Perspective",
                "type": ""
             },
             {
@@ -3065,7 +3065,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "1. Ebene: Systemkonfiguration",
                "type": ""
             },
             {
@@ -3078,7 +3078,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "2. Ebene: Kommunikation",
                "type": ""
             },
             {
@@ -3091,7 +3091,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "3. Ebene Geräteebene",
                "type": ""
             },
             {
@@ -3104,7 +3104,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Embedded Resource (4. Ebene Resource)",
                "type": ""
             },
             {
@@ -3130,7 +3130,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "<a href=\"https://www.holobloc.com/doc/navigator.htm\" target=\"_blank\">FB Navigator</a>",
-               "title": "",
+               "title": "User Libary",
                "type": ""
             },
             {
@@ -3143,7 +3143,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "logiBUS Library",
                "type": ""
             },
             {
@@ -3156,7 +3156,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Eclipse 4diac Typen Bibliothek",
                "type": ""
             },
             {
@@ -3169,7 +3169,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "5. Ebene , 1. Ebene der Applikation",
                "type": ""
             },
             {
@@ -3182,7 +3182,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Siehe (Button)",
                "type": ""
             },
             {
@@ -3195,7 +3195,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Nicht rastend (tastend)",
                "type": ""
             },
             {
@@ -3208,7 +3208,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Projekt erstellen iop ausgeben",
                "type": ""
             },
             {
@@ -3221,7 +3221,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Projekte öffnen (Programm 7)",
                "type": ""
             },
             {
@@ -3234,7 +3234,7 @@
                "vid": "",
                "ext_de": "<a href=\"https://www.bucherautomation.com/iso-designer/sw10133\" target=\"_blank\">ISO-Designer</a>",
                "ext_en": "",
-               "title": "",
+               "title": "Oberfläche auf Display erstellen",
                "type": ""
             },
             {
@@ -3247,7 +3247,7 @@
                "vid": "",
                "ext_de": "<a href=\"https://www.bucherautomation.com/\" target=\"_blank\">Bucher Automation AG</a>",
                "ext_en": "",
-               "title": "",
+               "title": "Bucher Automation AG",
                "type": ""
             },
             {
@@ -3260,7 +3260,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Dateiendung *.iop, ISOBUS Object Pool",
                "type": ""
             },
             {
@@ -3299,7 +3299,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "weiter",
                "type": ""
             },
             {
@@ -3312,7 +3312,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Schrittkette E",
                "type": ""
             },
             {
@@ -3325,7 +3325,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Schrittkette T",
                "type": ""
             },
             {
@@ -3338,7 +3338,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Schritkette E kombiniert mit Schrittkette T",
                "type": ""
             },
             {
@@ -3351,7 +3351,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Function Block Netzwerk",
                "type": ""
             },
             {
@@ -3364,7 +3364,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Schnittstelle",
                "type": ""
             },
             {
@@ -3377,7 +3377,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Unterprogramm (Subapplikation)",
                "type": ""
             },
             {
@@ -3429,7 +3429,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Preset Time. (Eingestellte Zeit)",
                "type": ""
             },
             {
@@ -3442,7 +3442,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Automatisches ausrichten",
                "type": ""
             },
             {
@@ -3455,7 +3455,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Abbildung, zuordnen der Bausteine",
                "type": ""
             },
             {
@@ -3468,7 +3468,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Neue Sub-Applikation",
                "type": ""
             },
             {
@@ -3481,7 +3481,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Objekt Identifikationsnummer",
                "type": ""
             },
             {
@@ -3494,7 +3494,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Typ aktualisieren",
                "type": ""
             },
             {
@@ -3507,7 +3507,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "Typ ändern",
                "type": ""
             },
             {
@@ -3520,7 +3520,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "ID Nummer 0",
                "type": ""
             },
             {
@@ -3533,7 +3533,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "verriegelt",
                "type": ""
             },
             {
@@ -3546,7 +3546,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "<a href=\"https://github.com/eclipse-4diac/4diac-documentation/blob/main/src/tutorials/use4diacLocally.adoc\" target=\"_blank\">Blinking tutorial</a>",
-               "title": "",
+               "title": "Blinker",
                "type": ""
             },
             {
@@ -3572,7 +3572,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "ASSEMBLE_BYTE_FROM_BOOLS",
                "type": ""
             },
             {
@@ -3585,7 +3585,7 @@
                "vid": "",
                "ext_de": "",
                "ext_en": "",
-               "title": "",
+               "title": "SPLIT_BYTE_INTO_BOOLS",
                "type": ""
             }
          ]

@@ -1,28 +1,20 @@
-# Datentyp: INT
+# Datentyp-Detail: INT
 
-```{index} single: Datentyp: INT
+```{index} single: Datentyp-Detail: INT
 ```
 
-```{toctree}
-:maxdepth: 1
+## Beschreibung
+Ganze Zahl (Integer)
 
-INT_Detail
-```
+## Normative Definition
+Gemäß **DIN EN 61131-3** wird dieser Datentyp wie folgt spezifiziert:
 
-## 🎧 Podcast
+| Eigenschaft | Wert |
+| :--- | :--- |
+| **Bits** | 16 |
+| **Wertebereich** | -32.768 bis 32.767 |
+| **Referenz** | Tabelle 10, Nr. 3 |
 
-* [SINT, INT, DINT: Warum die Wahl des Datentyps über Effizienz und Fehler entscheidet](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/SINT--INT--DINT-Warum-die-Wahl-des-Datentyps-ber-Effizienz-und-Fehler-entscheidet-e3673b8)
-* [Eclipse 4diac 3.0: ST-Interpreter, FBE und 7200 Commits – Der Turbo für verteilte Automatisierung](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-3-0-ST-Interpreter--FBE-und-7200-Commits--Der-Turbo-fr-verteilte-Automatisierung-e3a5cpl)
-* [Von der SPS zur verteilten Intelligenz: IEC 61499 für Industrie 4.0 verstehen](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Von-der-SPS-zur-verteilten-Intelligenz-IEC-61499-fr-Industrie-4-0-verstehen-e36a78o)
-* [Simplifying Industrial Control: Your Deep Dive into Eclipse 4diac and IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/Simplifying-Industrial-Control-Your-Deep-Dive-into-Eclipse-4diac-and-IEC-61499-e3681v8)
-* [Ereignisse und IEC 61499: Der Startschuss für intelligente Systeme](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Ereignisse-und-IEC-61499-Der-Startschuss-fr-intelligente-Systeme-e368461)
-
-
-
-## Zugehörige Übungen
-
-* [Uebung_026_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_026_sub.md)
-* [Uebung_039_sub_NumbAnzeig](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
-* [Uebung_039a_sub_Outputs](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
-* [Uebung_060_sub_Outputs](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060_sub_Outputs.md)
-
+## Verwendung in der Programmierung
+In der IEC 61131-3 und IEC 61499 wird dieser Typ zur Deklaration von Variablen und in Funktionsbausteinen verwendet.
+Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `INT#...`.

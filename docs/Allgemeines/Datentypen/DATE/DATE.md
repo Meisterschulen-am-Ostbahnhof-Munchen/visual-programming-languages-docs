@@ -1,22 +1,23 @@
-# Datentyp: DATE
+# Datentyp-Detail: DATE
 
-```{index} single: Datentyp: DATE
+```{index} single: Datentyp-Detail: DATE
 ```
 
-```{toctree}
-:maxdepth: 1
+## Beschreibung
+Der Datentyp **DATE** wird zur Darstellung eines Kalenderdatums verwendet.
 
-DATE_Detail
-```
+## Normative Definition
+Gemäß **DIN EN 61131-3** (Tabelle 10, Nr. 13a):
 
-## 🎧 Podcast
+| Eigenschaft | Wert |
+| :--- | :--- |
+| **Bits** | Meist 32 Bit (Implementierungsabhängig) |
+| **Voreingestellter Wert** | `D#1970-01-01` |
 
-* [Datenkommunikation in der Automatisierung: Die Geheimnisse der IEC 61499 Datentypen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Datenkommunikation-in-der-Automatisierung-Die-Geheimnisse-der-IEC-61499-Datentypen-e3672lj)
-* [Datentypen der IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Datentypen-der-IEC-61499-e3672jf)
-* [SINT, INT, DINT: Warum die Wahl des Datentyps über Effizienz und Fehler entscheidet](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/SINT--INT--DINT-Warum-die-Wahl-des-Datentyps-ber-Effizienz-und-Fehler-entscheidet-e3673b8)
-* [Universum der Datentypen, wie sie in der IEC 61131-3 und IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Universum-der-Datentypen--wie-sie-in-der-IEC-61131-3-und-IEC-61499-e3673kb)
-* [Digitale Logik Flip-Flops und Datentypen](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Digitale-Logik-Flip-Flops-und-Datentypen-e3dic6t)
+## Literaldarstellung
+DATE-Literale beginnen mit dem Präfix `D#` oder `DATE#`. Das Format folgt dem Schema `YYYY-MM-DD`.
 
-## 📺 Video
-
-* [LogiBUS  Projekt Update](https://www.youtube.com/watch?v=kVNTJ9ZejFM)
+### Beispiele
+- `D#2026-01-17`
+- `DATE#1984-06-25`
+- `d#2010-09-22` (Kleinschreibung des Präfix ist zulässig)

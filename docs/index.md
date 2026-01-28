@@ -102,8 +102,8 @@ Welcome
 Abgrenzung/Abgrenzung
 Visuelle-Programmiersprachen
 norms/norms
-Allgemeines/Allgemeines
-Literatur
+Allgemeines/Allgemeines_Index
+Literatur_Index
 ```
 
 ```{toctree}
@@ -111,19 +111,19 @@ Literatur
 :maxdepth: 2
 FunctionBlock
 Interface/Interface
-4diac/4diac
-runtime/runtime
-hw/hw
+4diac/4diac_Index
+runtime/runtime_Index
+hw/hw_Index
 ```
 
 ```{toctree}
 :caption: 'Praxis & Training'
 :maxdepth: 2
-DasErsteProjekt/DasErsteProjekt
-Übungsaufgaben
-Bibliotheken/Bibliotheken
-training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebungen
-training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebungen
+DasErsteProjekt/DasErsteProjekt_Index
+Übungsaufgaben_Index
+Bibliotheken/Bibliotheken_Index
+training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebungen_Index
+training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebungen_Index
 training1/Ventilsteuerung/4diacIDE-workspace/test_VV/Uebungen_doc/Uebungen
 ```
 

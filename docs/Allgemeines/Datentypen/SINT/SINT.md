@@ -1,21 +1,20 @@
-# Datentyp: SINT
+# Datentyp-Detail: SINT
 
-```{index} single: Datentyp: SINT
+```{index} single: Datentyp-Detail: SINT
 ```
 
-```{toctree}
-:maxdepth: 1
+## Beschreibung
+Kurze ganze Zahl (Short Integer)
 
-SINT_Detail
-```
+## Normative Definition
+Gemäß **DIN EN 61131-3** wird dieser Datentyp wie folgt spezifiziert:
 
-## 🎧 Podcast
+| Eigenschaft | Wert |
+| :--- | :--- |
+| **Bits** | 8 |
+| **Wertebereich** | -128 bis 127 |
+| **Referenz** | Tabelle 10, Nr. 2 |
 
-* [SINT, INT, DINT: Warum die Wahl des Datentyps über Effizienz und Fehler entscheidet](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/SINT--INT--DINT-Warum-die-Wahl-des-Datentyps-ber-Effizienz-und-Fehler-entscheidet-e3673b8)
-
-
-
-## Zugehörige Übungen
-
-* [Uebung_039_sub_NumbAnzeig](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
-
+## Verwendung in der Programmierung
+In der IEC 61131-3 und IEC 61499 wird dieser Typ zur Deklaration von Variablen und in Funktionsbausteinen verwendet.
+Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `SINT#...`.

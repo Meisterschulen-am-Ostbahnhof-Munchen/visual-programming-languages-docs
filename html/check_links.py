@@ -51,7 +51,26 @@ def check_and_fix_links():
                 
                 # Check 1: Does the file exist?
                 if not os.path.exists(abs_file_path):
-                    print(f"[BROKEN] Term '{term}' points to missing file: {rel_md_path}")
+                    # Check for _Index variant
+                    dir_name = os.path.dirname(abs_file_path)
+                    base_name = os.path.splitext(os.path.basename(abs_file_path))[0]
+                    index_path = os.path.join(dir_name, base_name + '_Index.md')
+                    
+                    if os.path.exists(index_path):
+                        print(f"[RENAMED] Term '{term}' points to missing '{rel_md_path}', found '{base_name}_Index.md'.")
+                        
+                        # Construct new correct URL
+                        # Replace filename.html with filename_Index.html
+                        new_rel_url_path = rel_url_path.replace(base_name + '.html', base_name + '_Index.html')
+                        new_url = BASE_URL + new_rel_url_path
+                        if new_url.endswith('/'): # Handle trailing slash edge case? No, filename usually.
+                             pass
+
+                        entry['link_int'] = link_int.replace(url, new_url)
+                        print(f"   -> FIXED: Link updated to .../{base_name}_Index.html")
+                        found_changes = True
+                    else:
+                        print(f"[BROKEN] Term '{term}' points to missing file: {rel_md_path}")
                 else:
                     # Check 2: Consistency check (Fixing AX_SR -> ASR_AX_SR issue)
                     filename = os.path.basename(abs_file_path)

@@ -1,14 +1,20 @@
-# Datentyp: DINT
+# Datentyp-Detail: DINT
 
-```{index} single: Datentyp: DINT
+```{index} single: Datentyp-Detail: DINT
 ```
 
-```{toctree}
-:maxdepth: 1
+## Beschreibung
+Doppelte ganze Zahl (Double Integer)
 
-DINT_Detail
-```
+## Normative Definition
+Gemäß **DIN EN 61131-3** wird dieser Datentyp wie folgt spezifiziert:
 
-## 🎧 Podcast
+| Eigenschaft | Wert |
+| :--- | :--- |
+| **Bits** | 32 |
+| **Wertebereich** | -2.147.483.648 bis 2.147.483.647 |
+| **Referenz** | Tabelle 10, Nr. 4 |
 
-* [SINT, INT, DINT: Warum die Wahl des Datentyps über Effizienz und Fehler entscheidet](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/SINT--INT--DINT-Warum-die-Wahl-des-Datentyps-ber-Effizienz-und-Fehler-entscheidet-e3673b8)
+## Verwendung in der Programmierung
+In der IEC 61131-3 und IEC 61499 wird dieser Typ zur Deklaration von Variablen und in Funktionsbausteinen verwendet.
+Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `DINT#...`.

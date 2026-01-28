@@ -4,6 +4,6 @@
 ```
 
 ```{toctree}
-BOOL/BOOL_Index
-BYTE/BYTE_Index
+BOOL/BOOL_LogiBUS_Type
+BYTE/BYTE_LogiBUS_Type
 ```

@@ -4,5 +4,5 @@
 ```
 
 ```{toctree}
-BOOL/BOOL_Index
+BOOL/BOOL_Selection_Uni
 ```

@@ -4,7 +4,7 @@
 ```
 
 ```{toctree}
-BOOL/BOOL_Index
-BYTE/BYTE_Index
-EVENT/EVENT_Index
+BOOL/BOOL_Adapter_BiConv
+BYTE/BYTE_Adapter_BiConv
+EVENT/EVENT_Adapter_BiConv
 ```

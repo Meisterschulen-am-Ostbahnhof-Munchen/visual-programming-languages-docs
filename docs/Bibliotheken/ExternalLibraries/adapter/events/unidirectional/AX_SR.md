@@ -50,14 +50,29 @@ Wie bei allen ereignisgesteuerten bistabilen Elementen in der IEC 61499 (siehe a
 2. **SET**: Zustand nach S-Ereignis, Ausgang Q.D1 = TRUE
 3. **RESET**: Zustand nach R-Ereignis, Ausgang Q.D1 = FALSE
 
+Zustandsübergänge:
+- START → SET: Bei S-Ereignis
+- SET → RESET: Bei R-Ereignis
+- RESET → SET: Bei S-Ereignis
+
 ## Anwendungsszenarien
 - Speicherung von Schaltzuständen in verteilten Steuerungsanwendungen
 - Zustandsverwaltung über Adapterschnittstellen
 - Signalverarbeitung mit Speicherfunktion
+- Überwachung von Betriebszuständen
 
 ## Verwandte Bausteine
 - **[AX_RS](AX_RS.md)**: Funktional identisch, Eingänge im Symbol vertauscht.
 - **[E_SR](../../../../StandardLibraries/events/E_SR.md)**: Das Standard-Äquivalent mit direkten Daten-/Ereignisausgängen statt Adaptern.
+
+## Vergleich mit ähnlichen Bausteinen
+Im Vergleich zu anderen Speicherelementen bietet AX_SR:
+- Klare Trennung von Set- und Reset-Funktionalität
+- Adapter-basierte Schnittstelle für flexible Integration
+- Ereignisgesteuerte Zustandsänderungen
+- Einfache und robuste Zustandsverwaltung
+
+Vergleich mit [E_SR](../../../../StandardLibraries/events/E_SR.md)
 
 
 

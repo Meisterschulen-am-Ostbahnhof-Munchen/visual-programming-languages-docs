@@ -50,14 +50,28 @@ Der Funktionsblock verfügt über drei Zustände im ECC:
 2. **SET**: Zustand nach Set-Operation (Q.D1 = TRUE)
 3. **RESET**: Zustand nach Reset-Operation (Q.D1 = FALSE)
 
+**Zustandsübergänge:**
+- START → SET: bei S-Ereignis
+- SET → RESET: bei R-Ereignis
+- RESET → SET: bei S-Ereignis
+
 ## Anwendungsszenarien
 - Speicherung von binären Zuständen mit Adapter-Ausgabe
 - Implementierung von Verriegelungsschaltungen in verteilten Systemen
 - Zustandsspeicherung in sequentiellen Abläufen
+- Signalverarbeitung in ereignisgesteuerten Systemen
 
 ## Verwandte Bausteine
 - **[AX_SR](AX_SR.md)**: Funktional identisch, Eingänge im Symbol vertauscht.
 - **[E_RS](../../../../StandardLibraries/events/E_RS.md)**: Das Standard-Äquivalent mit direkten Daten-/Ereignisausgängen statt Adaptern.
+
+## Vergleich mit ähnlichen Bausteinen
+Im Vergleich zu anderen Flip-Flop-Implementierungen:
+- Verwendet Adapter-basierte Kommunikation statt direkter Datenausgänge
+- Ereignisgesteuerte Zustandsänderungen
+- Einfache RS-Logik ohne zusätzliche Takt- oder Enable-Signale
+
+Vergleich mit [E_RS](../../../../StandardLibraries/events/E_RS.md)
 
 
 

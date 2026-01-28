@@ -43,22 +43,23 @@ END_ALGORITHM
 ```
 
 ## Technische Besonderheiten
-- **Priorität**: Der Reset-Eingang (R1) hat Priorität über den Set-Eingang (S).
-- **Speicherverhalten**: Der Block behält seinen Zustand bei, solange keine Änderung an S oder R1 erfolgt.
+- **IEC 61131-3 Konformität**: Dieser Baustein bildet das Verhalten des klassischen `RS`-Flipflops exakt nach. Da die Eingänge `S` und `R1` Daten-Eingänge sind, die beim `REQ`-Ereignis gleichzeitig abgetastet werden, ist eine logische Priorisierung notwendig.
+- **Rücksetz-Dominanz (Priorität)**: Der Reset-Eingang (`R1`) hat Vorrang. Wenn `S` und `R1` gleichzeitig `TRUE` sind, wird der Ausgang `Q1` auf `FALSE` gesetzt.
+- **Speicherverhalten**: Der Block behält seinen Zustand bei, solange keine Änderung an `S` oder `R1` erfolgt (oder kein `REQ` Ereignis eintritt).
 
 ## Zustandsübersicht
-Der FB_RS hat zwei stabile Zustände:
-1. **Q1 = TRUE**: Wenn S zuletzt TRUE war und R1 FALSE ist.
-2. **Q1 = FALSE**: Wenn R1 zuletzt TRUE war oder beide Eingänge FALSE sind.
+Der `FB_RS` wertet die Eingänge bei `REQ` aus:
+1.  **Q1 = FALSE**: Wenn `R1` TRUE ist (unabhängig von `S`). -> **Rücksetz-Dominanz**
+2.  **Q1 = TRUE**: Wenn `S` TRUE ist UND `R1` FALSE ist.
+3.  **Q1 unverändert**: Wenn beide FALSE sind.
 
 ## Anwendungsszenarien
-- Speicherung von Schaltzuständen in Steuerungsanwendungen.
-- Implementierung von Verriegelungslogik (z.B. Not-Aus-Schaltungen).
-- Zustandssteuerung in Automatisierungsprozessen.
+- Speicherung von Schaltzuständen in Steuerungsanwendungen nach IEC 61131-3 Logik.
+- Implementierung von Verriegelungslogik (z.B. Not-Aus-Schaltungen), wo das Abschalten (Reset) immer Vorrang haben muss.
 
 ## Vergleich mit ähnlichen Bausteinen
-- **FB_SR**: Ein ähnlicher Funktionsblock, bei dem der Set-Eingang Priorität über den Reset-Eingang hat.
-- **FB_RS_EXT**: Erweiterte Version mit zusätzlichen Features wie einem zusätzlichen Reset-Eingang oder einem Enable-Signal.
+- **[E_RS](../../events/E_RS.md)**: Der `E_RS` ist rein ereignisgesteuert ("Last Event Wins"). Der `FB_RS` hingegen wertet statische Signale zum Zeitpunkt `REQ` aus und erzwingt die Rücksetz-Dominanz.
+- **[FB_SR](FB_SR.md)**: Das Gegenstück mit **Setz-Dominanz**.
 
 ## Fazit
 Der FB_RS ist ein grundlegender und robuster Funktionsblock für Zustandsspeicherung in IEC 61499-basierten Steuerungssystemen. Seine einfache und klare Logik macht ihn besonders geeignet für Anwendungen, bei denen ein zuverlässiges Set-Reset-Verhalten erforderlich ist. Die Priorisierung des Reset-Eingangs stellt sicher, dass Sicherheitsfunktionen zuverlässig ausgeführt werden können.

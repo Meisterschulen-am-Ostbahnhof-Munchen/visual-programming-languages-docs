@@ -21,7 +21,5 @@ NmGetCfInfo
 NmSetName
 NmSetNameField
 PgnDef
-rx/rx_Index
-tx/tx_Index
 USERFUNC_e
 ```

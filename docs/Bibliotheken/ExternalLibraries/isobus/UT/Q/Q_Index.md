@@ -1,9 +1,6 @@
 # Q
 
 ```{toctree}
-:maxdepth: 1
-
-const/const_Index
 Q_ActiveMask
 Q_Attribute
 Q_BackgroundColour

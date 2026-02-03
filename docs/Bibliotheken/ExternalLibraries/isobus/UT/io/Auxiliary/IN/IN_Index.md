@@ -4,8 +4,6 @@
 ```
 
 ```{toctree}
-:maxdepth: 1
-
 Aux_IE
 Aux_IX
 Aux_IXA

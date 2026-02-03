@@ -4,8 +4,6 @@
 ```
 
 ```{toctree}
-:maxdepth: 1
-
 Aux_QD
 Aux_QX
 Aux_QXA

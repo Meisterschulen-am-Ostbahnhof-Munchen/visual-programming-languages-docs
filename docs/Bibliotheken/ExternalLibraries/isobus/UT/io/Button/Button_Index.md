@@ -4,8 +4,6 @@
 ```
 
 ```{toctree}
-:maxdepth: 1
-
 Button_IE
 Button_IX
 Button_IXA

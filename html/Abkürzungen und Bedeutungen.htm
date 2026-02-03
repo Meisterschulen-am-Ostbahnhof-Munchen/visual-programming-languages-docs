@@ -24451,151 +24451,139 @@
          ]
       }
    ]
-}
-;
+}    ;
 
     // =================================================================
-    // 3. PROGRAMMLOGIK (Rendering & Filter)
+    // 2. LOGIK-TEIL (Generierung & Filterung)
     // =================================================================
 
     const contentArea = document.getElementById('contentArea');
     const tocList = document.getElementById('tocList');
-    const globalCountDisplay = document.getElementById('globalCount');
+    const globalCountEl = document.getElementById('globalCount');
 
-    // --- Initiale Erstellung der Seite ---
-    function initPage() {
-        let globalTotalItems = 0;
+    // Mappings für CSS-Klassen basierend auf 'type'
+    const typeClassMap = {
+        'event': 'row-event',
+        'bool': 'row-bool',
+        'adapter': 'row-adapter',
+        'any_bit': 'row-any_bit',
+        'any_int': 'row-any_int',
+        'any_real': 'row-any_real',
+        'any_string': 'row-any_string',
+        'time': 'row-time'
+    };
 
-        glossaryData.categories.forEach(cat => {
-            // 1. Eintrag im Inhaltsverzeichnis
+    function renderGlossary() {
+        let totalEntries = 0;
+
+        glossaryData.categories.forEach(category => {
+            // 1. TOC Link erstellen
             const tocLink = document.createElement('a');
-            tocLink.href = "#" + cat.id;
-            tocLink.className = "toc-link";
-            tocLink.innerText = cat.title;
-            tocLink.onclick = function(e) {
-                e.preventDefault(); // Verhindert das Öffnen eines neuen Fensters
-                const targetElement = document.getElementById(cat.id);
-                if (targetElement) {
-                    // Scrollt sanft zum Ziel
-                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            };
+            tocLink.href = '#' + category.id;
+            tocLink.className = 'toc-link';
+            tocLink.innerHTML = `${category.title} <span class="count-badge" style="color:#333; background:#e2e6ea;">${category.data.length}</span>`;
             tocList.appendChild(tocLink);
 
-            // 2. Sektion erstellen (Container)
+            // 2. Sektion erstellen
             const section = document.createElement('div');
-            section.className = "category-section";
-            section.id = cat.id;
+            section.className = 'category-section';
+            section.id = category.id;
 
-            // 3. Header erstellen
+            // Header
             const header = document.createElement('h2');
-            header.className = "category-header";
-            header.innerHTML = `${cat.title} <span class="count-badge" id="badge-${cat.id}">${cat.data.length}</span>`;
+            header.className = 'category-header';
+            header.innerHTML = `${category.title} <span class="count-badge">${category.data.length}</span>`;
             section.appendChild(header);
 
-            // 4. Tabelle erstellen
-            const tableContainer = document.createElement('div');
-            tableContainer.className = "table-responsive";
-            
+            // Tabelle Wrapper
+            const tableResp = document.createElement('div');
+            tableResp.className = 'table-responsive';
+
+            // Tabelle
             const table = document.createElement('table');
             table.innerHTML = `
                 <thead>
                     <tr>
-                        <th width="3%">Nr</th>
+                        <th width="5%">Nr</th>
                         <th width="15%">Begriff</th>
-                        <th width="20%">Bedeutung</th>
-                        <th width="10%">Übung</th>
-                        <th width="10%">Intern</th>
-                        <th width="5%">Video</th>
-                        <th width="10%">Ext. (DE)</th>
-                        <th width="10%">Ext. (EN)</th>
-                        <th width="17%">Notiz</th>
+                        <th width="25%">Bedeutung</th>
+                        <th width="15%">Übungen</th>
+                        <th width="10%">Doku</th>
+                        <th width="10%">Wiki (Intern)</th>
+                        <th width="10%">Video</th>
+                        <th width="10%">Links (Extern)</th>
                     </tr>
                 </thead>
-                <tbody id="tbody-${cat.id}"></tbody>
+                <tbody>
+                    ${category.data.map(item => {
+                        totalEntries++;
+                        // Bestimme CSS Klasse für die Zeile
+                        const rowClass = typeClassMap[item.type] || '';
+                        
+                        return `
+                        <tr class="${rowClass}">
+                            <td>${item.nr || '<span class="empty">-</span>'}</td>
+                            <td><strong>${item.term}</strong><br><small style="color:#666;">${item.type || ''}</small></td>
+                            <td>${item.mean || '<span class="empty">-</span>'}</td>
+                            <td>${item.ex || '<span class="empty">-</span>'}</td>
+                            <td>${item.exdoc || '<span class="empty">-</span>'}</td>
+                            <td>${item.link_int || '<span class="empty">-</span>'}</td>
+                            <td>${item.vid || '<span class="empty">-</span>'}</td>
+                            <td>
+                                ${item.ext_de ? item.ext_de + '<br>' : ''}
+                                ${item.ext_en ? item.ext_en : ''}
+                            </td>
+                        </tr>
+                        `;
+                    }).join('')}
+                </tbody>
             `;
-            
-            tableContainer.appendChild(table);
-            section.appendChild(tableContainer);
+
+            tableResp.appendChild(table);
+            section.appendChild(tableResp);
             contentArea.appendChild(section);
-
-            // 5. Daten in Tabelle füllen
-            const tbody = table.querySelector('tbody');
-            cat.data.forEach(row => {
-                const tr = document.createElement('tr');
-                if (row.type) {
-                    tr.classList.add('row-' + row.type);
-                }
-
-                tr.innerHTML = `
-                    <td>${safe(row.nr)}</td>
-                    <td>${safe(row.term)}</td>
-                    <td>${safe(row.mean)}</td>
-                    <td>${safe(row.ex)}</td>
-                    <td>${safe(row.link_int)}</td>
-                    <td>${safe(row.vid)}</td>
-                    <td>${safe(row.ext_de)}</td>
-                    <td>${safe(row.ext_en)}</td>
-                    <td>${safe(row.title)}</td>
-                `;
-                tbody.appendChild(tr);
-            });
-
-            globalTotalItems += cat.data.length;
         });
 
-        globalCountDisplay.innerText = globalTotalItems;
+        globalCountEl.textContent = totalEntries;
     }
 
-    // Hilfsfunktion für leere Zellen
-    function safe(val) {
-        return (val && val !== "") ? val : "<span class='empty'>-</span>";
-    }
-
-    // --- Filter Logik ---
     function filterAllTables() {
-        const input = document.getElementById('searchInput').value.toLowerCase();
-        let totalGlobalVisible = 0;
+        const input = document.getElementById('searchInput');
+        const filter = input.value.toUpperCase();
+        const sections = document.getElementsByClassName('category-section');
+        let totalVisible = 0;
 
-        glossaryData.categories.forEach(cat => {
-            const section = document.getElementById(cat.id);
-            const tbody = document.getElementById("tbody-" + cat.id);
-            const rows = tbody.querySelectorAll('tr');
-            let catVisibleCount = 0;
+        for (let section of sections) {
+            const trs = section.getElementsByTagName('tr');
+            let visibleRowsInSection = 0;
 
-            rows.forEach(row => {
-                const text = row.innerText.toLowerCase();
-                if (text.includes(input)) {
-                    row.classList.remove('hidden');
-                    catVisibleCount++;
+            // Start bei 1 um Header zu überspringen
+            for (let i = 1; i < trs.length; i++) {
+                let tr = trs[i];
+                let txtValue = tr.textContent || tr.innerText;
+                
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr.style.display = "";
+                    visibleRowsInSection++;
+                    totalVisible++;
                 } else {
-                    row.classList.add('hidden');
+                    tr.style.display = "none";
                 }
-            });
+            }
 
-            // Update Badge Count
-            document.getElementById(`badge-${cat.id}`).innerText = catVisibleCount;
-
-            // Ganze Sektion ausblenden, wenn Tabelle leer ist
-            if (catVisibleCount === 0) {
+            // Ganze Sektion ausblenden wenn keine Treffer
+            if (visibleRowsInSection === 0) {
                 section.classList.add('hidden');
             } else {
                 section.classList.remove('hidden');
             }
-
-            totalGlobalVisible += catVisibleCount;
-        });
-
-        globalCountDisplay.innerText = totalGlobalVisible;
-        
-        // Optional: Meldung wenn gar nichts gefunden wurde
-        if(totalGlobalVisible === 0 && input !== "") {
-            // Man könnte hier eine "Nichts gefunden" Meldung einblenden
         }
+        
+        globalCountEl.textContent = totalVisible;
     }
 
-    // Start
-    initPage();
+    // Initialisierung
+    document.addEventListener('DOMContentLoaded', renderGlossary);
 
 </script>
 

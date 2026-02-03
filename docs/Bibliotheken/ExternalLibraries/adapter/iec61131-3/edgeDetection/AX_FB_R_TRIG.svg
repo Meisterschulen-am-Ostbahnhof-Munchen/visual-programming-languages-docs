@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="990" height="161" viewBox="-540 -20 990 161">
+<defs>
+</defs>
+<rect x="3" y="3" width="160" height="111" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H160 V30 H154 V70 H160 V111 H0 V70 H6 V30 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L160,30" stroke="#000000" stroke-width="1" />
+<text x="80.0" y="48.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AX_FB_R_TRIG</text>
+<text x="80.0" y="62.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+<rect x="-5.0" y="82.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="12" y="91" font-size="12" text-anchor="start" font-family="Consolas, monospace">CLK</text>
+<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="-85" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Clock</text>
+<rect x="155.0" y="82.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="148" y="91" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q</text>
+<text x="175" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="245" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output</text>
+</svg>

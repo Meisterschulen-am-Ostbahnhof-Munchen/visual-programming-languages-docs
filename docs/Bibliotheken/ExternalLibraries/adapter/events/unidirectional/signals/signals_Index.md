@@ -4,6 +4,6 @@
 ```
 
 ```{toctree}
-AX_BLINK_TRAIN
 AX_BLINK
+AX_BLINK_TRAIN
 ```

@@ -71,6 +71,7 @@ Der Funktionsblock hat keinen internen Zustand. Jedes Ereignis führt sofort zur
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_009a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009a.md)

@@ -65,6 +65,7 @@ Der **E_SPLIT** ist ein standardkonformer Funktionsbaustein (IEC 61499-1 Annex A
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004a4](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a4.md)

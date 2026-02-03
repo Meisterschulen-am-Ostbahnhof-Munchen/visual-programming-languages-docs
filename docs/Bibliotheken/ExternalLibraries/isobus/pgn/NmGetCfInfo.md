@@ -61,6 +61,7 @@ Im Gegensatz zu einfachen Lese- oder Abfrage-Bausteinen ist `NmGetCfInfo` spezie
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_120](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_120.md)

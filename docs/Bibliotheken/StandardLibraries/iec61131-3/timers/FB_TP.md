@@ -64,6 +64,7 @@ Der FB_TP funktioniert als monostabiler Multivibrator (One-Shot). Bei einem posi
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_020f2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020f2.md)

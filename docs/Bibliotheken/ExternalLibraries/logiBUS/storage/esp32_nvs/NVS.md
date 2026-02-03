@@ -70,6 +70,7 @@ Die Datentypen der Ein- und Ausgänge `VALUE`, `DEFAULT_VALUE` und `VALUEO` müs
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_012](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012.md)

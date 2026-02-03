@@ -47,6 +47,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Verarbeitung erfolgt un
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_151](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_151.md)

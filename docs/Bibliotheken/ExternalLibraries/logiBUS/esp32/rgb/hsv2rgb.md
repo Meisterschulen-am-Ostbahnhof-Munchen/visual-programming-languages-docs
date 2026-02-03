@@ -56,6 +56,7 @@ Im Gegensatz zu universellen Rechenbausteinen (wie `MUL`, `ADD`) oder Skalierern
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_031](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_031.md)

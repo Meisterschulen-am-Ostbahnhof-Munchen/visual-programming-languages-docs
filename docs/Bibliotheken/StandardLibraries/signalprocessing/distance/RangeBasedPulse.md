@@ -52,6 +52,7 @@ Im Gegensatz zu einfachen Zeitgebern arbeitet dieser FB mit Distanzwerten statt 
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_071b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071b.md)

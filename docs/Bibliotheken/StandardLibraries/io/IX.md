@@ -64,6 +64,7 @@ Im Vergleich zu anderen Eingabe-Bausteinen bietet IX eine erweiterte Service-Sch
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_001](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_001.md)

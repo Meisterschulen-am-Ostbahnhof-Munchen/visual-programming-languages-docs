@@ -65,6 +65,7 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet `logiBUS_QD_PWM` erwe
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_034](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034.md)

@@ -57,6 +57,7 @@ Der Funktionsblock ist zustandslos (stateless). Jeder `REQ`-Aufruf ist unabhäng
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_126b_sub](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)

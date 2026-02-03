@@ -65,6 +65,7 @@ Im Vergleich zu einem einfachen `SR`- oder `RS`-Flipflop bietet `LinksRechts` ei
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_006a4](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006a4.md)

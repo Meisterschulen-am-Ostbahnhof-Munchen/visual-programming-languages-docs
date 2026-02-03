@@ -73,6 +73,7 @@ Im Vergleich zu generischen CAN-Empfangsblöcken ist `AlPgnRxNew8B_REQ` speziell
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_132](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_132.md)

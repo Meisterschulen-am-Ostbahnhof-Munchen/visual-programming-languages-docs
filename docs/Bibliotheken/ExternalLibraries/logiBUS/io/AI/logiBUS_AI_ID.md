@@ -64,6 +64,7 @@ Im Vergleich zu einfachen analogen Eingangsbausteinen bietet logiBUS_AI_ID erwei
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_028](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_028.md)

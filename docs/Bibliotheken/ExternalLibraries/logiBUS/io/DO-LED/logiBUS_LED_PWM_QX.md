@@ -64,6 +64,7 @@ Im Vergleich zu einfachen digitalen Ausgangsbausteinen bietet logiBUS_LED_PWM_QX
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_030](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_030.md)

@@ -64,6 +64,7 @@ Im Vergleich zu einfachen booleschen Eingangsblöcken bietet Aux_IXA:
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010b1_AX](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010b1_AX.md)

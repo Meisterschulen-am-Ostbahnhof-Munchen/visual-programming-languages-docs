@@ -48,6 +48,7 @@ in addition to a analog output Out there is a second boolean output Q with the c
 | Out | REAL | Analog Output |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_126b2_sub](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2_sub.md)

@@ -100,6 +100,7 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_070](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_070.md)

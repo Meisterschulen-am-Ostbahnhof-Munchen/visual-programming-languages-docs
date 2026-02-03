@@ -46,6 +46,7 @@ Angenommen, mehrere Funktionsbausteine in einer Ressource haben einen unverbunde
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_176](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_176.md)

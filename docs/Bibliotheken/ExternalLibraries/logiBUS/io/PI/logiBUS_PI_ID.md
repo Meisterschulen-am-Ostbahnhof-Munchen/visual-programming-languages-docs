@@ -68,6 +68,7 @@ Die Initialisierung (`INIT`) ist Voraussetzung für beide Betriebsarten. Dabei w
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_150](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_150.md)

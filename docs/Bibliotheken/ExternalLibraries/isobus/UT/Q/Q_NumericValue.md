@@ -91,6 +91,7 @@ Der **Q_NumericValue** ist ein standardkonformer Funktionsbaustein zur Änderung
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_009](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009.md)

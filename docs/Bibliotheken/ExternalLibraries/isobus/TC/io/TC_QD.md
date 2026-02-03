@@ -65,6 +65,7 @@ Im Vergleich zu einfacheren Ausgabeblöcken bietet TC_QD erweiterte Funktionalit
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)

@@ -67,6 +67,7 @@ Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet Softkey_IX erweite
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010.md)

@@ -67,6 +67,7 @@ Im Vergleich zu einfachen digitalen Eingangsblöcken bietet logiBUS_IX:
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_001](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_001.md)

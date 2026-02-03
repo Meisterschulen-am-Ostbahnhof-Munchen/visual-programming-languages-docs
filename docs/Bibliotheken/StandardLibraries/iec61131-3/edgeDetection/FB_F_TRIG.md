@@ -55,6 +55,7 @@ Der Funktionsblock speichert den vorherigen Zustand des `CLK`-Signals in einer i
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_178](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_178.md)

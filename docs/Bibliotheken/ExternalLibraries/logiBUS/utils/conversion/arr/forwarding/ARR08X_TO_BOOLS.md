@@ -69,6 +69,7 @@ Der Funktionsblock besitzt keinen internen Zustand (zustandslos). Sein Verhalten
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_054](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_054.md)

@@ -53,6 +53,7 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DO_S` keinen int
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_003a_AX_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)

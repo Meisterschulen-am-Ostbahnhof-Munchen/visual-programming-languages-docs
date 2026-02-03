@@ -62,6 +62,7 @@ Der Funktionsblock ist zustandslos (stateless). Er besitzt kein internes Gedäch
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_054](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_054.md)

@@ -39,6 +39,7 @@ Sonderzeichen werden durch ein Dollar-Zeichen (`$`) eingeleitet:
 - `'STRING#''Abc'''` (Mit explizitem Typ-Präfix)
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_012a_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012a_sub.md)

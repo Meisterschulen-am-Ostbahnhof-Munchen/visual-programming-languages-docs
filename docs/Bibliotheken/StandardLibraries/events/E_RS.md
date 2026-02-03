@@ -47,6 +47,7 @@ Laut **DIN EN 61499-1 (Tabelle A.1, Anmerkung 8)** ist die Implementierung diese
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_006b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006b.md)

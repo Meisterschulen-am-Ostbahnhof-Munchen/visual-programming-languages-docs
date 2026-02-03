@@ -58,6 +58,7 @@ Im Vergleich zu generischen Eingabebausteinen bietet Softkey_IE spezifische ISO 
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010b2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b2.md)

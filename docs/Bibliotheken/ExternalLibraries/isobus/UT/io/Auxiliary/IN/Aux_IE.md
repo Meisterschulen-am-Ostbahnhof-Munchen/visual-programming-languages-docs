@@ -64,6 +64,7 @@ Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IE erweiterte Fu
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010b3](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b3.md)

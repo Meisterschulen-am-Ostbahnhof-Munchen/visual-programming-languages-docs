@@ -53,6 +53,7 @@ Der Funktionsblock `F_SHL` führt eine bitweise Linksverschiebung des Eingabewer
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_034](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034.md)

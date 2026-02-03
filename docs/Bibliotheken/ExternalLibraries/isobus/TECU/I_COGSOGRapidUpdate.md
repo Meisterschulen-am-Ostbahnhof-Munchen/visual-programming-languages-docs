@@ -64,6 +64,7 @@ Der Baustein agiert als passiver Empfänger für das NMEA 2000 PGN 129026. Nach 
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)

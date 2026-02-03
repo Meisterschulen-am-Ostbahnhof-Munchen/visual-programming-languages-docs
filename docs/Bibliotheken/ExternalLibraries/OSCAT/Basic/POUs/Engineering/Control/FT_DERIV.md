@@ -41,6 +41,7 @@ Calculate derivative over signal 'in' with Factor 'K'
 | delta_in | REAL | Input signal difference |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_151](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_151.md)

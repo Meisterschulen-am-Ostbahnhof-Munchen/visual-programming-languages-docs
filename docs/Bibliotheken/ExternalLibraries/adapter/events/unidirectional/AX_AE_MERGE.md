@@ -36,6 +36,7 @@ In vielen Übungen (z. B. beim Blinker in `Uebung_007a3_AX`) wurde bisher fälsc
 - **Mehrfach-Trigger**: Ein AX-Signalfluss soll zusätzlich durch externe AE-Ereignisse (z.B. Taster-Clicks) angestoßen werden.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_007a3_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_007a3_AX.md)

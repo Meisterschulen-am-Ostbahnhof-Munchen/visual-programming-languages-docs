@@ -66,6 +66,7 @@ Vergleich mit [F_MUX_2](../../../../../StandardLibraries/iec61131-3/selection/F_
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_090a1_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_090a1_AX.md)

@@ -74,6 +74,7 @@ Der `STRUCT_DEMUX` ist ein zustandsloser Baustein, der nach einem einfachen Anfo
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_051](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_051.md)

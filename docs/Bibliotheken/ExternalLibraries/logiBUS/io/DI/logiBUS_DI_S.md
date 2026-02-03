@@ -42,6 +42,7 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DI_S` keinen Zus
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_003a_AX_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)

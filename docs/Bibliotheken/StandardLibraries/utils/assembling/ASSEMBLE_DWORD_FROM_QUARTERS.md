@@ -54,6 +54,7 @@ Der Funktionsblock nimmt 16 Quarter-Bytes entgegen und kombiniert sie zu einem 3
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_060](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)

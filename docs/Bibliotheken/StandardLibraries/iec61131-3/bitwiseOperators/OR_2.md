@@ -65,6 +65,7 @@ Im Vergleich zu anderen booleschen Operationen wie AND oder XOR bietet OR_2 die 
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a3.md)

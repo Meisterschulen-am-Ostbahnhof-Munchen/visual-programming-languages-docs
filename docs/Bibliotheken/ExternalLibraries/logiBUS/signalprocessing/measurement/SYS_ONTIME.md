@@ -57,6 +57,7 @@ Anschließend überwacht der Block kontinuierlich die Systemressource. Sobald si
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_140](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_140.md)

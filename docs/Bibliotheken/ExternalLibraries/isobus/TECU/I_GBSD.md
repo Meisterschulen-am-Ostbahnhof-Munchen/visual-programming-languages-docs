@@ -97,6 +97,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_072](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072.md)

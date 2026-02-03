@@ -54,6 +54,7 @@ Im Vergleich zu anderen Konvertierungsbausteinen zeichnet sich AX_X_TO_BOOL durc
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_001_AX_b](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_001_AX_b.md)

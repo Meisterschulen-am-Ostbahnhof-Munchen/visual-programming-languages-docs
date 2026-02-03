@@ -57,6 +57,7 @@ Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Softkey_IXA erweiter
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010_AX.md)

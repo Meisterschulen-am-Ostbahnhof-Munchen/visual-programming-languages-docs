@@ -20,6 +20,7 @@ In der IEC 61131-3 und IEC 61499 wird dieser Typ zur Deklaration von Variablen u
 Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `BYTE#...`.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_126b_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)

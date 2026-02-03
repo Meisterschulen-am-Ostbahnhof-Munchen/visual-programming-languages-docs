@@ -77,6 +77,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_133](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_133.md)

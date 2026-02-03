@@ -53,6 +53,7 @@ Der `F_AND`-Block führt eine bitweise UND-Verknüpfung zwischen den Eingangsvar
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a2.md)

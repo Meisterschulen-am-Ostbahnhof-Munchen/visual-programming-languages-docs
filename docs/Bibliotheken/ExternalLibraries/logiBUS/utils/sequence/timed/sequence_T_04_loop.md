@@ -79,6 +79,7 @@ Ein `RESET`-Ereignis von jedem Zustand aus führt in den `sRESET`-Zustand. Dort 
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_035a](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a.md)

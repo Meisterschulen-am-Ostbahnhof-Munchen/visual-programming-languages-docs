@@ -57,6 +57,7 @@ Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_128](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128.md)

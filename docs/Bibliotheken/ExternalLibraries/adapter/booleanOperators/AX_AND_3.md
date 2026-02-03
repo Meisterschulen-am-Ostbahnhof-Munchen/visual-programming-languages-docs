@@ -67,6 +67,7 @@ Vergleich mit [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a6_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a6_AX.md)

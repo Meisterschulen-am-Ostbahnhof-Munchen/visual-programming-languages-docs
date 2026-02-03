@@ -89,6 +89,7 @@ Der **F_DIV** ist ein standardkonformer Funktionsbaustein zur Division numerisch
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_111](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_111.md)

@@ -67,6 +67,7 @@ Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet logiBUS_IE erweite
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a.md)

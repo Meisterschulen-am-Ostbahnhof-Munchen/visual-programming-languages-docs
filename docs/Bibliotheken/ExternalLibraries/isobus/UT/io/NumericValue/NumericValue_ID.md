@@ -69,6 +69,7 @@ Im Vergleich zu einfachen Eingabeblöcken bietet NumericValue_ID erweiterte Serv
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_011](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011.md)

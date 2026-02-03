@@ -57,6 +57,7 @@ Der Baustein besitzt keinen persistenten internen Zustand im Sinne einer Zustand
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_122](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122.md)

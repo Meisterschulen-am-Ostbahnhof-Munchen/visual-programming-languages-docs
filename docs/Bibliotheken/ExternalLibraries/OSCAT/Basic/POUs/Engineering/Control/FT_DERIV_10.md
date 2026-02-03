@@ -61,6 +61,7 @@ Derivative with variable window size (0..9 periods)
 | DI_9 | REAL | Delta In over 10 period |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_152](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_152.md)

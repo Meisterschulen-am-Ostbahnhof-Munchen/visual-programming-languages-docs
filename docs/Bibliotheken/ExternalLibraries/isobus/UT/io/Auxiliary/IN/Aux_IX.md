@@ -63,6 +63,7 @@ Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IX erweiterte Se
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010b1](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b1.md)

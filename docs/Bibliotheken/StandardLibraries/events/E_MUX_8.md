@@ -47,6 +47,7 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_173](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_173.md)

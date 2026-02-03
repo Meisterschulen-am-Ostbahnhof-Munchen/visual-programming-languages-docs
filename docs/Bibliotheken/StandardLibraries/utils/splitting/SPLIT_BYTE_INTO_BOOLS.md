@@ -48,6 +48,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt direkt 
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_053](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_053.md)

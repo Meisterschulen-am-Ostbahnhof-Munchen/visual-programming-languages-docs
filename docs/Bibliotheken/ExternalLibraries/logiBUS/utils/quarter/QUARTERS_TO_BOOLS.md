@@ -62,6 +62,7 @@ Als Composite Function Block besitzt `QUARTERS_TO_BOOLS` keinen eigenen komplexe
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)

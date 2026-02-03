@@ -55,6 +55,7 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weitergabe erfo
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_019a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019a.md)

@@ -79,6 +79,7 @@ Der Baustein besitzt intern implizite Zustände, die durch die Verfügbarkeit ei
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_128b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128b.md)

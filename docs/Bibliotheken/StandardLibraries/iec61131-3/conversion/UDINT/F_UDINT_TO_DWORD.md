@@ -56,6 +56,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_034b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034b.md)

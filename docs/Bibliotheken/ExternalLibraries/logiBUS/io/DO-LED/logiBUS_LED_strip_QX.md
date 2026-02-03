@@ -64,6 +64,7 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_LED_strip_QX 
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_032](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_032.md)

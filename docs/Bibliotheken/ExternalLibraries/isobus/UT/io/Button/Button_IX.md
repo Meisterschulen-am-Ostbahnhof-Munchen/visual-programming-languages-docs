@@ -67,6 +67,7 @@ Im Vergleich zu einfachen digitalen Eingabeblöcken bietet Button_IX erweiterte 
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010a2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010a2.md)

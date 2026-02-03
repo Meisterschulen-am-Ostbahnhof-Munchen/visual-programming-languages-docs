@@ -89,7 +89,7 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 | | 2 | Pause |
 | | 3 | Reserviert |
 
-## Vergleich mit ähnlichen Systemen
+## ⚖️ Vergleich mit ähnlichen Systemen
 
 | Feature | I_WBSD | Standard | GPS-basiert |
 |---------|--------|----------|-------------|
@@ -101,7 +101,7 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_070](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_070.md)
 * [Uebung_071](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071.md)

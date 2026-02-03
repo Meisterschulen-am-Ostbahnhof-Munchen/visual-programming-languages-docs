@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände außer der initialen Bereits
 - Drucker und andere Ausgabegeräte, die BCD-kodierte Daten verarbeiten.
 - Systeme, die eine Kompatibilität mit älteren BCD-basierten Komponenten erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Konvertierungsbausteinen bietet `F_UINT_TO_BCD_WORD` eine spezialisierte Lösung für die BCD-Kodierung, die effizienter und einfacher in der Handhabung sein kann als universelle Konvertierungsmethoden.
 
 ## Fazit

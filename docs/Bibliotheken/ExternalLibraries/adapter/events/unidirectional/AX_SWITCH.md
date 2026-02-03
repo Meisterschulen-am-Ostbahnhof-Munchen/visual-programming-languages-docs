@@ -48,7 +48,7 @@ Der Block besitzt keine internen Zustände im klassischen Sinne. Er arbeitet rei
 - Verteilerfunktionen in ereignisbasierten Steuerungen
 - Demultiplexing von Ereignisströmen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zum Standard-E_SWITCH Block bietet AX_SWITCH eine Adapter-basierte Schnittstelle, was eine bessere Integration in Adapter-basierte Architekturen ermöglicht. Während E_SWITCH direkte Ein- und Ausgänge besitzt, kommuniziert AX_SWITCH ausschließlich über Adapter.
 
 Vergleich mit [E_SWITCH](../../../../StandardLibraries/events/E_SWITCH.md)
@@ -58,7 +58,7 @@ Vergleich mit [E_SWITCH](../../../../StandardLibraries/events/E_SWITCH.md)
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_004b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX.md)
 * [Uebung_004b_AX_ASR](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)

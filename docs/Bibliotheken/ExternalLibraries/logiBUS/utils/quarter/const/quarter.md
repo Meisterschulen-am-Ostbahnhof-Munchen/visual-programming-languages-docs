@@ -48,7 +48,7 @@ Nicht anwendbar, da es sich um eine statische Wertesammlung handelt.
 *   **Kommando-Schnittstellen:** Definition von Steuerbefehlen für entfernte Geräte oder Subsysteme (deaktivieren, aktivieren, keine Aktion).
 *   **Logging und Diagnose:** Nutzung der `_msg`-Strings zur Generierung lesbarer Log-Einträge oder Anzeigen im Bedienpanel.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`logiBUS::utils::bit::const`:** Enthält Konstanten für einzelne Bits (z.B. `BIT_FALSE`, `BIT_TRUE`). `quarter` erweitert dieses Konzept auf 2-Bit-Felder mit anwendungsspezifischer Semantik.
 *   **Manuelle Definition:** Anstelle der Verwendung dieser Bibliothek könnten die Werte direkt im Code als Zahlen oder Binärliterale geschrieben werden. Die Verwendung von `quarter` erhöht jedoch die Wartbarkeit, Lesbarkeit und Konsistenz über das gesamte Projekt hinweg.
 *   **SAE J1939-spezifische Bibliotheken:** `quarter` ist eine grundlegende Hilfsbibliothek. Umfangreichere J1939-Bibliotheken würden wahrscheinlich auf diese Konstanten zurückgreifen, um spezifischere Nachrichten (PGNs) oder Parameter (SPNs) zu definieren.

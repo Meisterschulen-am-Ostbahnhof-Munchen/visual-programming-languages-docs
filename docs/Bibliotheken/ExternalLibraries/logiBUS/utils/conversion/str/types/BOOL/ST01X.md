@@ -44,7 +44,7 @@ Ein Datentyp besitzt keine eigene "Zustandsübersicht" im Sinne eines Zustandsau
 *   **Strukturierte Datenhaltung:** Wenn ein Boolescher Wert in einer übergeordneten Struktur mit einem spezifischen Namen und Kommentar benötigt wird, um die Lesbarkeit und Wartbarkeit zu verbessern, besonders wenn viele einzelne Booleans in einer logischen Gruppe zusammengefasst werden sollen.
 *   **Typensicherheit:** Erzwingt die Verwendung eines explizit definierten Typs für bestimmte Boolesche Informationen, um Fehler durch versehentliche Typinkonsistenzen zu vermeiden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Vergleich mit dem primitiven Typ `BOOL`:** Im Gegensatz zum einfachen `BOOL`-Typ, der nur den reinen Wert darstellt, bietet `ST01X` eine benannte Kapselung (`X_00`). Dies verbessert die Selbstbeschreibung und die Semantik des Wertes innerhalb einer größeren Struktur. Während `BOOL` ein elementarer Datentyp ist, ist `ST01X` ein zusammengesetzter (strukturierter) Datentyp.
 *   **Vergleich mit größeren Strukturen (z.B. `ST08X`, `ST16X`):** `ST01X` ist die elementarste Form dieser Art von Struktur, spezialisiert auf nur ein Bit. Größere Strukturen wie `ST08X` oder `ST16X` würden entsprechend 8 oder 16 Boolesche Werte enthalten und dienen der Bündelung mehrerer Flags.
 

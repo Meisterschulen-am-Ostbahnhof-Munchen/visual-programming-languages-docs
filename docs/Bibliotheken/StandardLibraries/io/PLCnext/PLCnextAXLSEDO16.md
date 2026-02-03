@@ -64,7 +64,7 @@ Der Baustein initialisiert bei Empfang des INIT-Ereignisses die 16 digitalen Aus
 - Kontrolle von Ventilen und Motoren
 - Signalausgabe in Prozessleitsystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einfacheren digitalen Ausgangsbausteinen bietet PLCnextAXLSEDO16:
 - Höhere Kanalanzahl (16 statt typischerweise 8)

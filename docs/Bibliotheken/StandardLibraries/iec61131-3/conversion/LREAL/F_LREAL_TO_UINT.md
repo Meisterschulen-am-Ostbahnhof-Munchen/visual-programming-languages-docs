@@ -48,7 +48,7 @@ Der Algorithmus verwendet die Funktion `LREAL_TO_UINT` zur direkten Umwandlung d
 - Typumwandlung in Steuerungsanwendungen, wo Gleitkommazahlen in Ganzzahlen für bestimmte Operationen benötigt werden.
 - Schnittstellenanpassung zwischen Systemkomponenten mit unterschiedlichen Datentypen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_LREAL_TO_UINT` spezialisiert auf die Umwandlung von LREAL zu UINT.
 - Andere Konvertierungsblöcke könnten zusätzliche Funktionen wie Bereichsprüfung oder Fehlerbehandlung bieten, sind aber komplexer in der Handhabung.
 

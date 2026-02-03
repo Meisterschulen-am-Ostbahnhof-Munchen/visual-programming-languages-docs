@@ -48,7 +48,7 @@ Der Funktionsblock verfügt über keine internen Zustände und arbeitet rein kom
 - Ereignis-Routing in modularen Steuerungsarchitekturen
 - Bidirektionale Kommunikationsbrücken zwischen Funktionsblöcken
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Splitter-Blöcken bietet AE2_SPLIT_MERGE_FORWARD zusätzlich:
 - Bidirektionale Funktionalität
 - Adapter-basierte Schnittstellen

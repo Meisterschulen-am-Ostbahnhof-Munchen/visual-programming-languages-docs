@@ -55,7 +55,7 @@ Typische Anwendungen sind:
 *   **Freigabelogik:** Prüfen, ob mindestens eine von mehreren möglichen Freigabebedingungen (z.B. "Manuell freigegeben" ODER "Automatik freigegeben") erfüllt ist.
 *   **Verknüpfung von Tastereingaben:** In Bedienpanels, um eine Aktion auszulösen, wenn einer von mehreren Tastern gedrückt wird.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`OR_2_BOOL`, `OR_4_BOOL`:** Dies sind baugleiche Funktionsblöcke, die jedoch nur zwei bzw. vier Eingänge verknüpfen. `OR_8_BOOL` bietet eine höhere Eingangsanzahl, ohne mehrere Instanzen von Blöcken mit weniger Eingängen kaskadieren zu müssen. Siehe: [OR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_8.md)
 *   **`AND_n_BOOL`:** Führt die logische UND-Verknüpfung durch. Das Ergebnis ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind, während bei der ODER-Verknüpfung bereits ein einziger `TRUE`-Eingang ausreicht.
 *   **`XOR_n_BOOL`:** Führt die exklusive ODER-Verknüpfung (XOR) durch. Das Ergebnis ist `TRUE`, wenn eine ungerade Anzahl an Eingängen `TRUE` ist, was sich von der inklusiven ODER-Logik unterscheidet.

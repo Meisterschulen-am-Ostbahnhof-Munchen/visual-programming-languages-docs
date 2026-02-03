@@ -62,7 +62,7 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei / kombinatorisc
 *   **Mehrfachbedingungen in Prozessabläufen:** Prüfung, ob alle Voraussetzungen für den Start eines Maschinenzyklus erfüllt sind (z.B. "Werkstück eingelegt", "Druck erreicht", "Temperatur erreicht", "Schutzhaube geschlossen").
 *   **Verknüpfung von Statusmeldungen:** Kombination mehrerer Fehler- oder Statusbits zu einem zusammenfassenden Signal.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`AND_2_BOOL`, `AND_16_BOOL` etc.:** Diese Blöcke bieten die identische logische Funktion, jedoch für eine unterschiedliche Anzahl von Eingängen (2, 16, etc.). Die Wahl des Blocks richtet sich nach der benötigten Anzahl an Operanden. Siehe: [AND_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_8.md)
 *   **`OR_n_BOOL`:** Führt eine logische ODER-Verknüpfung durch. Das Ergebnis ist `TRUE`, wenn mindestens ein Eingang `TRUE` ist.
 *   **`XOR_n_BOOL`:** Führt eine exklusiv-ODER (XOR) Verknüpfung durch.

@@ -55,7 +55,7 @@ Der Baustein verfügt über zwei Hauptbetriebszustände:
 - Industrielle Automatisierungsanwendungen mit präziser Ausgangsansteuerung
 - Embedded-Systeme mit logiBUS-Interface
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_QW_SERVO erweiterte Funktionalität durch:
 - Wort-basierte Datenausgabe (16-Bit statt einzelner Bits)
 - Spezifische Servo-Steuerungsfunktionen

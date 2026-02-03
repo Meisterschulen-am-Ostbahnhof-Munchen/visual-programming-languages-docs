@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt sofort 
 - Kompatibilität zwischen Systemen mit unterschiedlicher Bitbreite
 - Datenkonvertierung in Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsblöcken (z.B. `F_INT_TO_LINT`) arbeitet dieser Block speziell mit 8-Bit Eingabedaten.
 - Ähnlich wie `F_BYTE_TO_LWORD`, aber für vorzeichenbehaftete Ganzzahlen.
 

@@ -54,7 +54,7 @@ Der SERVER_1_2 Block arbeitet als Server in einer Client-Server-Architektur. Bei
 - Implementierung von Server-Diensten in IEC 61499-basierten Systemen
 - Bidirektionale Kommunikation in industriellen Netzwerken
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Kommunikationsbausteinen bietet SERVER_1_2 eine vollständige Server-Implementierung mit Initialisierungs- und Statusmanagement. Die zwei separaten Empfangskanäle ermöglichen eine strukturierte Datenverarbeitung.
 
 ## Fazit

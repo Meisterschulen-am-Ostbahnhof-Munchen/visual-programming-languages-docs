@@ -43,7 +43,7 @@ Der Funktionsblock konvertiert den WSTRING-Wert am Eingang `IN` in einen LINT-We
 - Verarbeitung von Benutzereingaben, die als Zeichenketten vorliegen, aber als numerische Werte interpretiert werden sollen.
 - Interpretation von Textdaten aus externen Quellen, die numerische Informationen enthalten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_STRING_AS_LINT**: Ähnlicher Funktionsblock, aber für den Datentyp STRING statt WSTRING.
 - **F_WSTRING_AS_INT**: Konvertiert WSTRING in INT, bietet jedoch eine geringere Wertebereich als LINT.
 

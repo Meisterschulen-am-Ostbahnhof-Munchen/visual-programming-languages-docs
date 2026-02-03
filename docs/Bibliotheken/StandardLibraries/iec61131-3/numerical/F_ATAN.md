@@ -53,7 +53,7 @@ Die Funktion berechnet den Hauptwert des Arkustangens, der im Bereich von -π/2 
 - Signalverarbeitung in mathematischen Berechnungen
 - Navigation und Orientierungssysteme
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_ATAN2**: Berechnet den Arkustangens von zwei Koordinaten (x,y) und liefert einen Winkel im Bereich von -π bis π
 - **F_SIN/F_COS**: Trigonometrische Grundfunktionen für Sinus und Cosinus
 - **F_TAN**: Berechnet den Tangens eines Winkels (Umkehrfunktion zu F_ATAN)

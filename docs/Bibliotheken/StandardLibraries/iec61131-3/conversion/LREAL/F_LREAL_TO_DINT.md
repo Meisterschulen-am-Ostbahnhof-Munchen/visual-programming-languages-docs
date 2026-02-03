@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung ist rein er
 - Typumwandlung in Steuerungsanwendungen, wo Fließkommazahlen in Ganzzahlen umgewandelt werden müssen.
 - Einsatz in Berechnungen, wo eine Ganzzahldarstellung erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsblöcken wie `F_REAL_TO_INT` oder `F_LREAL_TO_LINT` bietet dieser Block eine spezifische Konvertierung von LREAL zu DINT.
 - Ähnliche Blöcke können unterschiedliche Quell- oder Zieltypen haben, wie z.B. `F_DINT_TO_LREAL` für die umgekehrte Konvertierung.
 

@@ -49,7 +49,7 @@ Der Funktionsblock wird durch das INIT-Ereignis aktiviert. Bei Aktivierung liest
 - Integration in Systeme mit variablen Netzwerkkonfigurationen
 - Wartung und Inbetriebnahme von ADS-basierten Steuerungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu statischen ADS-Konfigurationsbausteinen ermöglicht SET_LOCAL_ADS_ADDRESS eine dynamische Adressverwaltung während der Laufzeit. Der Baustein bietet zudem detaillierte Statusrückmeldungen, was die Fehlerdiagnose erleichtert.
 
 ## Fazit

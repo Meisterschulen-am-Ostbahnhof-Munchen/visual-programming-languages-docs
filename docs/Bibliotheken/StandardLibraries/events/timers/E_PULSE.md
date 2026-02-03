@@ -74,7 +74,7 @@ Der E_PULSE-Baustein kann in verschiedenen industriellen Steuerungsanwendungen e
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_020h](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020h.md)
 * [Uebung_020i](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020i.md)

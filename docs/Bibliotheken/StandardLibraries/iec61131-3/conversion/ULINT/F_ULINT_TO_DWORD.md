@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das `REQ`-Ereignis emp
 - Typumwandlung in Steuerungsanwendungen, wo 64-Bit Werte in 32-Bit Werte konvertiert werden müssen.
 - Datenverarbeitung in Systemen mit unterschiedlichen Wortbreiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_DWORD` oder `F_LINT_TO_DWORD` bieten Konvertierungen zwischen anderen Datentypen, jedoch nicht speziell von `ULINT` zu `DWORD`.
 - Im Gegensatz zu generischen Konvertierungsblöcken ist dieser spezialisiert und optimiert für die `ULINT`-zu-`DWORD`-Konvertierung.
 

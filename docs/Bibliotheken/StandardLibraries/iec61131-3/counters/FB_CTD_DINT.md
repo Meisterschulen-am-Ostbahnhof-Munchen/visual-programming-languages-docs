@@ -51,7 +51,7 @@ Der Funktionsblock hat keine expliziten Zustände, sondern arbeitet ereignisgest
 - Zeitsteuerungen mit Countdown-Funktion
 - Überwachung von Restmengen oder verbleibenden Schritten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu Aufwärtszählern (CTU) verringert dieser Block den Zählerwert
 - Im Vergleich zu 16-Bit Zählern (INT) bietet dieser Block einen größeren Wertebereich
 - Ähnlich wie Timer, aber für allgemeine Zählzwecke ohne Zeitbezug

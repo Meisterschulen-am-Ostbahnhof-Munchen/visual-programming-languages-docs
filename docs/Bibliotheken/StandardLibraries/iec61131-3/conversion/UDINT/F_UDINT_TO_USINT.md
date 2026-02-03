@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - Typumwandlung in Steuerungsanwendungen, wo Speicherplatz optimiert werden muss.
 - Kommunikation zwischen Systemen, die unterschiedliche Datentypen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_UDINT_TO_USINT` spezialisiert und daher effizienter in der Ausführung.
 - Andere Bausteine könnten zusätzliche Funktionalitäten wie Bereichsprüfungen bieten, was hier nicht der Fall ist.
 

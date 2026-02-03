@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Protokollierung von booleschen Zuständen in Logdateien.
 - Weiterverarbeitung von booleschen Werten in Systemen, die Zeichenketten erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu `F_BOOL_TO_STRING` wird hier eine breite Zeichenkette (`WSTRING`) anstelle einer normalen Zeichenkette (`STRING`) erzeugt.
 - Ähnliche Funktionsblöcke wie `F_INT_AS_WSTRING` oder `F_REAL_AS_WSTRING` konvertieren andere Datentypen in `WSTRING`.
 

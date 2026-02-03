@@ -43,7 +43,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung erfolgt unmitt
 - Datenkonvertierung in Steuerungssystemen, wo unterschiedliche Datentypen verwendet werden.
 - Schnittstellen zwischen Systemen, die unterschiedliche Integer-Formate erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_SINT` oder `F_INT_TO_SINT` führen ähnliche Konvertierungen durch, jedoch mit anderen Ausgangs- oder Eingangsdatentypen.
 - `F_UDINT_TO_SINT` ist spezifisch für die Konvertierung von UDINT zu SINT.
 

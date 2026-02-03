@@ -11,7 +11,7 @@ UINT
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_006c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)
 * [Uebung_010b4_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b4_sub.md)

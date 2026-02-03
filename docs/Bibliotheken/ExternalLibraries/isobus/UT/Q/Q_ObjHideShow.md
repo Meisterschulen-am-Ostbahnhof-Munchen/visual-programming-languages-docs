@@ -78,7 +78,7 @@ Der **Q_ObjHideShow** ist ein standardkonformer Funktionsbaustein zur Sichtbarke
 - **Alarmmanagement**: Störmeldungscontainer
 - **Benutzerführung**: Schrittweise Anleitungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ObjHideShow | VtContainerControl | VtVisibilityManager |
 |---------------|---------------|--------------------|---------------------|
@@ -92,7 +92,7 @@ Der **Q_ObjHideShow** ist ein standardkonformer Funktionsbaustein zur Sichtbarke
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_014](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_014.md)
 

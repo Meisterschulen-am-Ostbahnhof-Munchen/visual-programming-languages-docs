@@ -55,7 +55,7 @@ Der Block besitzt einen einfachen Zustand: Im Ruhezustand wartet er auf eingehen
 - Parallele Aktivierung mehrerer Subsysteme
 - Signalverteilung in dezentralen Steuerungsarchitekturen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Split-Bausteinen bietet AX_SPLIT_5 eine feste Anzahl von fünf Ausgängen. Andere Split-Varianten können unterschiedliche Ausgangszahlen oder konfigurierbare Verteilungslogiken bieten. Der Fokus liegt hier auf der einfachen, festen 1:5-Verteilung.
 
 Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)

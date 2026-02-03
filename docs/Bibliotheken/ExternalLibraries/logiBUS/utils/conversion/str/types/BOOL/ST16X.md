@@ -64,7 +64,7 @@ Als reiner Datentyp hat ST16X selbst keine 'Zustandsübersicht' im Sinne eines e
 *   **Digitale Ein-/Ausgangssignale:** Bündelung von digitalen Ein- oder Ausgängen eines Moduls, um sie als eine einzige Datenstruktur zu übergeben.
 *   **Datenpaketierung:** Vereinfachte Übergabe von mehreren binären Informationen zwischen Funktionsblöcken oder über Kommunikationsschnittstellen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Da ST16X ein Datentyp ist, kann er nicht direkt mit einem 'Baustein' im Sinne eines Funktionsblocks verglichen werden. Er kann jedoch mit anderen Möglichkeiten zur Speicherung von Binärdaten verglichen werden:
 
 *   **Einzelne BOOL-Variablen:** ST16X bietet den Vorteil, 16 BOOLs als eine Einheit zu behandeln, was die Datenstrukturierung und Übergabe vereinfacht und die Anzahl der deklarierten Variablen reduziert.

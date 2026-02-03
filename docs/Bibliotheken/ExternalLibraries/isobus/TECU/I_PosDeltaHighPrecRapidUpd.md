@@ -62,7 +62,7 @@ Der Funktionsblock besitzt im Wesentlichen zwei Hauptzustände:
 *   **Autonome Fahrzeuge**: Zur hochfrequenten Odometrie und Pfadkorrektur in Echtzeit.
 *   **Vermessung und Kartierung**: Bei der Erfassung von Geländedaten mit sehr hoher räumlicher und zeitlicher Auflösung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-Positionsbausteinen (z.B. solchen, die PGN 129029 "Position, Rapid Update" verarbeiten) bietet `I_PosDeltaHighPrecRapidUpd`:
 *   **Delta-basierte Daten**: Statt absoluter Positionen werden Änderungen (Deltas) übertragen, was bei hohen Update-Raten bandbreiteneffizienter sein kann.
 *   **Höhere Präzision**: Spezifiziert für Anwendungen, die eine höhere Genauigkeit als die typischen Rapid-Update-PGNs benötigen.

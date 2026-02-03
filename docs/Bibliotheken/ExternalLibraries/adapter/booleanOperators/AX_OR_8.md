@@ -61,7 +61,7 @@ Der Funktionsblock ist zustandslos und führt bei jeder Änderung an den Eingän
 - Alarmierungssysteme mit mehreren Auslösern
 - Verknüpfung mehrerer Freigabesignale
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen ODER-Bausteinen mit weniger Eingängen bietet AX_OR_8 die Möglichkeit, bis zu acht Signale direkt zu verknüpfen, ohne zusätzliche Verkettung mehrerer Bausteine. Die Verwendung von Adaptern statt direkter Datenanschlüsse ermöglicht eine flexiblere Integration in verschiedene Systemarchitekturen.
 
 Vergleich mit [OR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_8.md)

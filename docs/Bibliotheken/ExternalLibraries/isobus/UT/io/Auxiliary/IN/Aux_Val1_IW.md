@@ -64,7 +64,7 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 - Kommunikation mit externen I/O-Modulen
 - Automatisierungssysteme in der Agrartechnik
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Eingabeblöcken bietet Aux_Val1_IW erweiterte ISOBUS-Funktionalität mit parametrierbarer Initialisierung, Statusrückmeldungen und asynchronen Indikationsmechanismen.
 
 ## Fazit

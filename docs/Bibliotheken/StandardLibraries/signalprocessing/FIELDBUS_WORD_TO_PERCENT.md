@@ -42,7 +42,7 @@ Der Funktionsblock überprüft zunächst, ob der Eingangswert `WI` kleiner oder 
 - Steuerungssysteme in Nutzfahrzeugen (SAE J1939).
 - Allgemeine Feldbuskommunikation, wo WORD- zu REAL-Konvertierungen benötigt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `FIELDBUS_WORD_TO_PERCENT` speziell auf die Anforderungen von SAE J1939 und ISO 11783 optimiert.
 - Andere Blöcke bieten möglicherweise keine direkte Spiegelung des Eingangssignals zur Validierung.
 

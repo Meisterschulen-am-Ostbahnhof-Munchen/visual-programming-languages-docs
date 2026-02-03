@@ -52,7 +52,7 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 - Geometrische Berechnungen in technischen Systemen
 - Wissenschaftliche und ingenieurtechnische Berechnungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen trigonometrischen Funktionen:
 - F_ASIN ist die inverse Funktion zu F_SIN
 - Ähnlich zu F_ACOS (Arkuskosinus) und F_ATAN (Arkustangens)

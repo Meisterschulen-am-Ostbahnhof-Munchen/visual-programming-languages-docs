@@ -1,4 +1,4 @@
-# Hardware
+# 🔌 Hardware
 
 ```{toctree}
 :maxdepth: 1

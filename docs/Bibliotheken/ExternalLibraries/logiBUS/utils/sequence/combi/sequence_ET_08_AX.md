@@ -42,7 +42,7 @@ Siehe `sequence_ET_08`.
 ## Anwendungsszenarien
 Für 8-stufige Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_ET_08**: Standardvariante ohne Adapter.
 
 ## Fazit

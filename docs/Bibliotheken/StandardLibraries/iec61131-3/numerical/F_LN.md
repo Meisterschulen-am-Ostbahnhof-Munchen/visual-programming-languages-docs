@@ -49,7 +49,7 @@ Der Funktionsblock verfügt über einen einfachen Zustandsautomaten:
 - Steuerungstechnik bei exponentiellen Prozessen
 - Skalierung von Messwerten in logarithmischen Darstellungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen mathematischen Funktionsblöcken:
 - F_LN spezialisiert auf natürliche Logarithmen (Basis e)
 - F_LOG berechnet Logarithmen zu beliebiger Basis

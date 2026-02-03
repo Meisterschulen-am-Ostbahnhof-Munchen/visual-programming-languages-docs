@@ -46,7 +46,7 @@ Bei Auslösung des Ereignisses `REQ` extrahiert der Funktionsblock die ersten `L
 - Extraktion von Präfixen aus Zeichenketten.
 - Verkürzung von Strings für spezifische Anforderungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_RIGHT**: Extrahiert Zeichen von rechts.
 - **F_MID**: Extrahiert Zeichen aus der Mitte einer Zeichenkette.
 

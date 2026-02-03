@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt sofor
 - Datenkonvertierung zwischen Systemen, die unterschiedliche Datentypen verwenden.
 - Integration in Steuerungsalgorithmen, die Fließkommawerte erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_REAL**: Konvertiert `INT` zu `REAL`, hat aber einen kleineren Eingangsbereich im Vergleich zu `DINT`.
 - **F_LINT_TO_REAL**: Konvertiert `LINT` zu `REAL`, hat einen größeren Eingangsbereich, ist aber in den meisten Fällen nicht notwendig, wenn `DINT` ausreicht.
 

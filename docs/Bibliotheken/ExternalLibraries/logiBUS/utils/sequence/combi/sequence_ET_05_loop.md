@@ -80,7 +80,7 @@ Die ECC besteht aus sieben Zuständen:
 *   **Sicherheitssequenzen:** Überwachte Start- oder Stoppprozeduren, bei denen jeder Schritt manuell freigegeben (`EVENT`) oder nach einer Wartezeit (`TIME`) automatisch weiterläuft.
 *   **Teststände:** Automatisierte Prüfabläufe, bei denen nacheinander verschiedene Messungen oder Funktionstests durchgeführt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Timer-Bausteinen oder selbsthaltenden Relaiskaskaden bietet `sequence_ET_05_loop` eine vordefinierte, zyklische Struktur mit integrierter Zeit- und Ereignissteuerung. Gegenüber einer Programmierung mit einzelnen Blöcken (z.B. `E_SR`, `E_DELAY`) reduziert er den Verdrahtungsaufwand und erhöht die Übersichtlichkeit. Andere Sequenzer-FBs haben möglicherweise eine variable Anzahl von Schritten oder andere Übergangslogiken (nur Zeit ODER nur Ereignis). Dieser FB zeichnet sich durch die kombinierte `EVENT`/`TIME`-Triggerung pro Schritt aus.
 
 ## Fazit

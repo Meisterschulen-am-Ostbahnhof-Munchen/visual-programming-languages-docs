@@ -52,7 +52,7 @@ Der Funktionsblock führt eine direkte Zuweisung des Eingangswerts `IN` zum Ausg
 - **Datenverarbeitung**: In Algorithmen, die höhere Präzision für Berechnungen benötigen.
 
 * * * * * * * * * *
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_UINT_TO_INT**: Konvertiert `UINT` zu `INT` (16 Bit), aber mit Vorzeichenbehaftung.
 - **F_UINT_TO_DINT**: Konvertiert `UINT` zu `DINT` (32 Bit), bietet mehr Wertebereich als `INT`, aber weniger als `LINT`.
 - **F_UINT_TO_ULINT**: Konvertiert `UINT` zu `ULINT` (64 Bit), bleibt vorzeichenlos.

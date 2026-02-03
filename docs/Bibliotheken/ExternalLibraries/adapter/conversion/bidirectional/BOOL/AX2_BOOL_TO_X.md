@@ -60,7 +60,7 @@ Der Funktionsblock arbeitet zustandslos und leitet Ereignisse und Daten direkt z
 - Bidirektionale Datenaustausch-Szenarien
 - Adapter-basierte Systemintegration
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konvertierungsbausteinen bietet AX2_BOOL_TO_X:
 - Bidirektionale Funktionalität
 - Integrierte Adapter-Schnittstelle

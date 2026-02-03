@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 - Kommunikation zwischen Systemen, die unterschiedliche Datentypen verwenden.
 - Integration von Legacy-Systemen, die WORD-Datentypen erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_INT_TO_WORD` oder `F_BYTE_TO_WORD` ist `F_UINT_TO_WORD` speziell auf die Konvertierung von vorzeichenlosen 16-Bit-Integern ausgelegt.
 - Der Baustein ist einfacher aufgebaut als generische Konvertierungsbausteine, die mehrere Datentypen unterstützen.
 

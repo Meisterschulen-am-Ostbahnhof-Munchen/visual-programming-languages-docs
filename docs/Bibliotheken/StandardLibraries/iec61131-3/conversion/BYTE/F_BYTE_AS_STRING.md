@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Konvertierung von Sensorwerten für die Anzeige auf einem HMI.
 - Vorbereitung von Daten für die Protokollierung oder Kommunikation mit anderen Systemen, die String-Daten erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_WORD_AS_STRING` oder `F_DWORD_AS_STRING` ist dieser speziell für BYTE-Werte optimiert.
 - Einfacher und spezialisierter als generische Konvertierungsbausteine.
 

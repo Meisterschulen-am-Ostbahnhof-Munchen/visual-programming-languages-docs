@@ -71,7 +71,7 @@ Die erlaubten Übergänge sind: `START -> S1 -> S2 -> S3 -> S4 -> (S1)` sowie vo
 *   **Taktgesteuerte Prozesse**: In Produktionslinien, wo ein zentraler Taktgeber (`Sx_Sy`-Ereignisse) den Fortschritt der Baugruppe von Station zu Station signalisiert.
 *   **Test- und Inbetriebnahmesequenzen**: Strukturierte Abfolge von Tests, die vom Bediener bestätigt werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einem **Zyklischen Sequenzer mit Timer** (z.B. `E_CYCLE`) fehlt hier die integrierte Zeitsteuerung; die Weiter schaltung erfolgt rein ereignisbasiert. Gegenüber einem **Binären Schieberegister** oder Zähler bietet dieser Baustein eine explizite, leicht nachvollziehbare Zustandsmaschine mit klaren Entry/Exit-Aktionen und einem dedizierten Reset-Pfad, was die Fehlersuche vereinfacht.
 
 ## Fazit

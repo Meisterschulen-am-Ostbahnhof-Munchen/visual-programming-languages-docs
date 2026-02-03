@@ -42,14 +42,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Umwandlung von Sensorwerten, die als `UINT` vorliegen, in `REAL` für weitere Berechnungen.
 - Kompatibilität zwischen Systemen, die unterschiedliche Datentypen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu komplexeren Konvertierungsblöcken bietet `F_UINT_TO_REAL` eine einfache, direkte Umwandlung ohne zusätzliche Funktionalität.
 - Ähnliche Blöcke könnten zusätzliche Features wie Skalierung oder Bereichsprüfungen bieten, was hier nicht der Fall ist.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
 

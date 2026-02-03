@@ -43,7 +43,7 @@ Der Funktionsblock hat keine komplexen Zustände. Er reagiert einfach auf die RE
 - Als Endpunkt in einer Service-orientierten Architektur.
 - In Testumgebungen, um Service-Anfragen zu simulieren oder zu beenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Service-Funktionsblöcken hat STEST_END keine Ausgänge oder zusätzliche Schnittstellen, was ihn ideal als Endpunkt macht.
 
 ## Fazit

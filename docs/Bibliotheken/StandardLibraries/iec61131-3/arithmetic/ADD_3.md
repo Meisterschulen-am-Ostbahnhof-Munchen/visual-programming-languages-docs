@@ -59,7 +59,7 @@ Der **ADD_3** ist eine erweiterte Version des Addierers zur Berechnung der Summe
 - **Positionstechnik**: Mehrdimensionale Koordinaten
 - **Produktionsstatistik**: Mengenerfassung
 
-## Vergleich mit ADD_2
+## ⚖️ Vergleich mit ADD_2
 
 | Feature        | ADD_3  | ADD_2  |
 |---------------|--------|--------|
@@ -79,7 +79,7 @@ Der **ADD_3** ist eine erweiterte Version des Addierers zur Berechnung der Summe
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_087](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087.md)
 * [Uebung_087a1](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087a1.md)

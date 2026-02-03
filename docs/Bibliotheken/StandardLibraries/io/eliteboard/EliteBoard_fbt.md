@@ -50,7 +50,7 @@ Beim Empfang des MAP-Ereignisses initialisiert der EliteBoard-Funktionsblock die
 - Integration in verteilte Steuerungssysteme nach IEC 61499
 - Hardware-nahe Steuerungsaufgaben mit modularer Port-Verwaltung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen IO-Bausteinen bietet EliteBoard eine strukturierte Verwaltung multipler Ports über standardisierte Adapter-Schnittstellen. Während einfache IO-Bausteine typischerweise direkte Daten-Ein-/Ausgänge verwenden, setzt EliteBoard auf Adapter-basierte Architektur für bessere Modularität und Wiederverwendbarkeit.
 
 ## Fazit

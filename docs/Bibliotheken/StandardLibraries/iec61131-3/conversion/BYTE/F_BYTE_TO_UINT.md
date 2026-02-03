@@ -41,14 +41,14 @@ Der Funktionsblock hat keinen internen Zustand. Die Ausführung erfolgt unmittel
 - Typumwandlung in Steuerungs- und Automatisierungssystemen.
 - Datenverarbeitung in Systemen, die unterschiedliche Datentypen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_UINT` oder `F_DWORD_TO_UINT` führen ähnliche Konvertierungen durch, jedoch mit anderen Eingangstypen.
 - `F_BYTE_TO_UINT` ist spezialisiert auf die Konvertierung von `BYTE` zu `UINT` und daher effizienter für diesen spezifischen Anwendungsfall.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_006c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)
 

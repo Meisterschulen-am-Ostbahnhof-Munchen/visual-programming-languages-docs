@@ -56,7 +56,7 @@ Der ECC (Execution Control Chart) besteht aus sechs Zuständen:
 *   **Meldesysteme:** Darstellung des Status einer Maschine: "In Betrieb", "Stopp", "Fehler", "Wartung".
 *   **Sicherheitsrelevante Steuerungen:** Klare Trennung von normalen Betriebs- (`S`/`R`), Fehler- (`ERR`) und Wartungs-/Override-Zuständen (`NONE`).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **E_SR (Bistabile Funktion):** Der klassische Set-Reset-Flipflop kennt nur zwei stabile Zustände (`TRUE`/`FALSE`). Der E_SREN erweitert dieses Konzept um zwei weitere Zustände (`ERROR`, `NO_ACTION`), die über ein dediziertes Byte (`QB`) kodiert werden.
 *   **E_D_FF (D-Flipflop):** Übernimmt einen Datenwert bei einem Takt-Ereignis. Der E_SREN ist ereignisgesteuert (vier verschiedene Ereignisse) und hat keinen separaten Dateneingang. Die "Daten" sind in den auslösenden Ereignissen implizit enthalten.
 

@@ -44,7 +44,7 @@ Der Funktionsblock führt eine direkte Typumwandlung des Eingangswertes `IN` vom
 - **Kommunikation**: Bei der Übertragung von Daten zwischen Systemen mit unterschiedlichen Wortgrößen.
 - **Speicheroptimierung**: Wenn Speicherplatz begrenzt ist und kleinere Datentypen bevorzugt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_LWORD_TO_INT**: Konvertiert `LWORD` in `INT` (16-Bit signed integer).
 - **F_LWORD_TO_DINT**: Konvertiert `LWORD` in `DINT` (32-Bit signed integer).
 - **F_LWORD_TO_USINT**: Konvertiert `LWORD` in `USINT` (8-Bit unsigned integer).

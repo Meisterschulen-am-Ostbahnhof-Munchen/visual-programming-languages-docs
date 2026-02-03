@@ -58,7 +58,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 - Industrieautomation mit spezifischen SA-Adressierungsanforderungen
 - Anlagen mit verteilten E/A-Systemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Digital-Input-Blöcken bietet DataPanel_MI_IX:
 - Spezifische Adressierung für DataPanel-Systeme
 - Erweiterte Initialisierungsmöglichkeiten mit Parameter-Strings

@@ -56,7 +56,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 - Adapter-Lösungen für Legacy-Systeme mit AB2-Schnittstellen
 - Protokollumsetzung zwischen verschiedenen Kommunikationsstandards
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konvertierungsbausteinen bietet AB2_B_TO_BYTE:
 - Bidirektionale Funktionalität in einem einzigen Baustein
 - Integrierte Adapter-Schnittstelle für AB2-Typen

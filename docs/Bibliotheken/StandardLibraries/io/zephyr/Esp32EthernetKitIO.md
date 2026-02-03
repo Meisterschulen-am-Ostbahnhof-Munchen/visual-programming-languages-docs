@@ -57,7 +57,7 @@ Der Esp32EthernetKitIO-Baustein initialisiert und verwaltet die Hardware-Kompone
 - Regelung von Motoren oder Aktoren mittels PWM
 - IoT-Geräte mit Esp32EthernetKit-Board
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Ein-/Ausgabeblöcken bietet Esp32EthernetKitIO eine integrierte Lösung für das spezifische Hardware-Board mit Unterstützung für verschiedene Signaltypen und konfigurierbaren Aktualisierungsintervallen.
 
 ## Fazit

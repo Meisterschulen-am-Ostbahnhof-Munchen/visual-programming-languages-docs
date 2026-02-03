@@ -53,7 +53,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt rein er
 - Speicherung mehrerer Schaltzustände in einem einzigen Register.
 - Effiziente Verarbeitung von Bitmasken in Steuerungsalgorithmen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu manuellen Bit-Operationen in ST oder anderen FB-Typen bietet dieser Baustein eine vordefinierte, fehlerfreie Lösung für die Kombination von BOOLs zu einem DWORD.
 - Ähnliche Bausteine könnten weniger Bits verarbeiten oder zusätzliche Funktionen wie Bit-Verschiebungen bieten.
 

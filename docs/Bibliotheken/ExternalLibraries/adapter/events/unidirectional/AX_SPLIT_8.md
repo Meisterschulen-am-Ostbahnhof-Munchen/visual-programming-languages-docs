@@ -57,7 +57,7 @@ Der Baustein besitzt keinen internen Zustand und arbeitet stateless. Alle eingeh
 - Signalverteilung in redundanten Systemarchitekturen
 - Kaskadierung von Adapter-basierten Steuerungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Split-Bausteinen bietet AX_SPLIT_8 eine feste Anzahl von acht Ausgängen und arbeitet ausschließlich auf Adapter-Ebene. Andere Split-Komponenten können variabel viele Ausgänge besitzen oder auf Daten- bzw. Ereignisebene operieren.
 
 Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)

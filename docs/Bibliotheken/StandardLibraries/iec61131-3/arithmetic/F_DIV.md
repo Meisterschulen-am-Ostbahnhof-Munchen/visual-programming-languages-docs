@@ -69,7 +69,7 @@ Der **F_DIV** ist ein standardkonformer Funktionsbaustein zur Division numerisch
 - **Maschinensteuerung**: Geschwindigkeitsberechnungen
 - **Energiemanagement**: Wirkungsgradberechnungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | F_DIV  | F_MUL  | F_ADD  |
 |---------------|--------|--------|--------|
@@ -90,7 +90,7 @@ Der **F_DIV** ist ein standardkonformer Funktionsbaustein zur Division numerisch
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_111](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_111.md)
 

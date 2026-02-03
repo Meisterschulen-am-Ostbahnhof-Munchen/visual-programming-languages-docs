@@ -52,7 +52,7 @@ Bei Eintreffen eines REQ-Ereignisses vergleicht der F_MAX-Block die beiden Einga
 - Qualitätssicherung bei Messwerten
 - Priorisierungslogik in Steuerungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu spezifischen Maximum-Blöcken (wie MAX_INT, MAX_REAL etc.) bietet F_MAX den Vorteil der Typunabhängigkeit. Während spezifische Blöcke nur einen Datentyp verarbeiten können, ist F_MAX universell für alle elementaren Datentypen einsetzbar.
 
 ## Fazit

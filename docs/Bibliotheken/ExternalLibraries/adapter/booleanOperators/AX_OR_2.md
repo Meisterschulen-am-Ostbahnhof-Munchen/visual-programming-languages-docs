@@ -50,7 +50,7 @@ Da es sich um einen kombinatorischen Logikbaustein handelt, besitzt AX_OR_2 kein
 - Überwachungssysteme mit mehreren Eingangssignalen
 - Logische Verknüpfungen in Steuerungsalgorithmen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen ODER-Bausteinen zeichnet sich AX_OR_2 durch seine Adapter-basierte Schnittstelle aus, die eine flexible Integration in verschiedene Systemarchitekturen ermöglicht. Die unidirektionalen Adapter gewährleisten eine klare Signalflussrichtung.
 
 Vergleich mit [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
@@ -60,7 +60,7 @@ Vergleich mit [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002a3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a3_AX.md)
 * [Uebung_002b3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002b3_AX.md)

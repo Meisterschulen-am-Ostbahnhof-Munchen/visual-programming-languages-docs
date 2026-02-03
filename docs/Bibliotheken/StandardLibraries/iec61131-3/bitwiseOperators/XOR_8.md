@@ -52,7 +52,7 @@ Der Funktionsblock hat keine komplexen Zustände. Er reagiert auf das REQ-Ereign
 - Fehlererkennung in Datenübertragungen
 - Steuerungslogik mit bitweisen Operationen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren XOR-Blöcken (z.B. mit nur 2 Eingängen) bietet XOR_8 die Möglichkeit, bis zu 8 Eingänge gleichzeitig zu verarbeiten. Andere bitweise Operatoren (wie AND_8 oder OR_8) führen ähnliche Operationen mit unterschiedlichen logischen Verknüpfungen durch.
 
 ## Fazit

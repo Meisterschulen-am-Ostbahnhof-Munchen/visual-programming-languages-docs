@@ -41,7 +41,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Datenkonvertierung in Steuerungssystemen, wenn unterschiedliche Bitbreiten harmonisiert werden müssen.
 - Integration in größere Funktionsblocknetzwerke, die sowohl UINT- als auch DWORD-Daten verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen (z.B. `F_INT_TO_DINT`) ist `F_UINT_TO_DWORD` spezialisiert auf die Konvertierung von 16-Bit zu 32-Bit unsigned integers.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Skalierung oder Grenzwertprüfung bieten, was hier nicht der Fall ist.
 

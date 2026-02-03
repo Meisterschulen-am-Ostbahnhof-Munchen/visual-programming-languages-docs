@@ -45,7 +45,7 @@ Der Funktionsblock erhöht den Zählerwert (`CV`) um 1, wenn der Eingang `CU` ak
 - Überwachung von Ereignissen in lang laufenden Systemen.
 - Steuerung von Prozessen mit großen Zählbereichen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `FB_CTU_INT` oder `FB_CTU_DINT` bietet `FB_CTU_ULINT` einen deutlich größeren Zählbereich.
 - Ähnlich zu `FB_CTU`, aber spezialisiert auf den `ULINT`-Datentyp.
 

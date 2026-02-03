@@ -46,7 +46,7 @@ Dieser Strukturtyp wird in Szenarien eingesetzt, bei denen digitale Signale (z.B
 *   Mobile Anwendungen (Fahrzeuge, Roboter) mit robustem Bussystem.
 *   Anlagen, bei denen digitale Eingangssignale über größere Entfernungen verteilt sind.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu direkten I/O-Funktionsbausteinen (wie z.B. `E_SR` oder `E_D_FF`), die logische Zustände verarbeiten, ist `logiBUS_2_CAN_DI_S` ein reiner **Konfigurationsdatentyp**. Er ist vergleichbar mit anderen strukturierten Hardware-Konfigurationstypen in 4diac (z.B. für serielle Schnittstellen oder andere Feldbusse), die Parameter für die Hardware-Anbindung kapseln. Sein Gegenstück für digitale Ausgänge wäre ein entsprechender Struct-Typ (z.B. `logiBUS_2_CAN_DO_S`).
 
 ## Fazit

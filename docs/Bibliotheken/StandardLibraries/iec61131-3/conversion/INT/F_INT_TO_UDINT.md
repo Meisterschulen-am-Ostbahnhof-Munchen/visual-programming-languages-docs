@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung von `INT` zu `UDINT` durch, sobald d
 - Integration von Sensordaten, die als `INT` vorliegen, in Systeme, die `UDINT` erfordern.
 - Kompatibilitätslayer zwischen verschiedenen Hardware- oder Softwarekomponenten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_UDINT` oder `F_SINT_TO_UDINT` bieten Konvertierungen zwischen anderen Datentypen, jedoch nicht speziell für `INT` zu `UDINT`.
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_INT_TO_UDINT` auf eine spezifische Konvertierung optimiert.
 

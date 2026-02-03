@@ -35,7 +35,7 @@ Als passiver Datentyp, der lediglich eine Datenstruktur definiert, besitzt `ST04
 *   **Kleine Datenpakete**: Vereinfachte Handhabung von kleinen, fest definierten Datenpaketen in der industriellen Automatisierung.
 *   **Typkonvertierungshilfsmittel**: Interne Verwendung in Konvertierungsfunktionsblöcken, um spezifische Byte-Sequenzen zu verarbeiten und in andere Datentypen umzuwandeln.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Array von Bytes (ARRAY OF BYTE [4])**: Ein Array von 4 Bytes erfüllt den gleichen Zweck bezüglich der Speicherung. `ST04B` bietet jedoch den Vorteil, dass die einzelnen Bytes über benannte Felder (B_00, B_01, etc.) anstatt über Indizes (z.B. `myArray[0]`, `myArray[1]`) angesprochen werden können, was die Lesbarkeit und Selbstbeschreibung des Codes verbessern kann.
 *   **Andere strukturierte Typen**: Wenn die Bytes eine spezifische Bedeutung (z.B. Statusflag, Zählerwert) hätten, könnten komplexere strukturierte Typen mit aussagekräftigeren Variablennamen oder sogar Bitfeldern sinnvoller sein. `ST04B` ist bewusst generisch gehalten, um eine flexible Gruppierung von Bytes zu ermöglichen.
 *   **`WORD`, `DWORD`**: Diese Standarddatentypen repräsentieren ebenfalls eine bestimmte Anzahl von Bytes (2 bzw. 4). `ST04B` ist jedoch flexibler, wenn die einzelnen Bytes unabhängig voneinander manipuliert werden müssen oder wenn die Byte-Reihenfolge (Endianness) eine Rolle spielt und explizit gesteuert werden soll.

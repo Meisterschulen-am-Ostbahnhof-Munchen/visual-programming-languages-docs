@@ -75,7 +75,7 @@ Die ECC besteht aus folgenden Zuständen und möglichen Übergängen:
 *   **Sicherheitskritische Sequenzen:** Prozesse, bei denen ein unkontrollierter automatischer Wechsel vermieden werden soll.
 *   **Test- und Inbetriebnahmesequenzen:** Manuelles Durchschalten von einzelnen Funktionen eines Systems.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu **zyklisch ablaufenden Sequenzern** (z.B. `E_CYCLE`) oder **zeitgesteuerten Sequenzern** (mit `DELAY`-Blöcken) verharrt dieser Baustein in jedem Zustand, bis das spezifische Wechselereignis eintrifft. Er bietet damit maximale externe Kontrolle. Im Vergleich zu einem generischen **Zähler** (`CTU`) mit nachgelagerter Dekodierlogik bietet dieser FB eine vollständig gekapselte, zustandsbasierte Lösung mit klaren Entry/Exit-Aktionen und einem integrierten Reset-Mechanismus.
 
 ## Fazit

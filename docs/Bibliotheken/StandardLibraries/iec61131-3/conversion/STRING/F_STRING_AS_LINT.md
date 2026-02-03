@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine komplexen Zu
 - Verarbeitung von Zeichenketten, die numerische Daten enthalten, in Steuerungssystemen.
 - Integration in größere Steuerungslogiken, die numerische Berechnungen erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_STRING_AS_INT**: Konvertiert einen `STRING` in einen `INT`-Wert, ist jedoch auf kleinere Zahlenbereiche beschränkt.
 - **F_STRING_AS_REAL**: Konvertiert einen `STRING` in einen `REAL`-Wert, ist für Gleitkommazahlen geeignet.
 - **F_LINT_AS_STRING**: Führt die umgekehrte Konvertierung durch, also von `LINT` zu `STRING`.

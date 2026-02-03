@@ -39,7 +39,7 @@ Diese Datenstruktur wird typischerweise als Eingabe- oder Konfigurationsparamete
 2.  Softkey-Ereignisse in einer Anwendungslogik verarbeiten (z.B. Menünavigation, Werteingabe).
 3.  Die Tastenbelegung oder das Tastenverhalten eines Geräts dynamisch konfigurieren.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einem Funktionsbaustein (FB) ist `SoftKeyActivationCode_S` ein reiner **Datentyp** (Struct). Er enthält keine Algorithmen oder ereignisgesteuerte Logik.
 *   **Ähnlichkeit zu `E_SR` oder `E_RS`:** Diese sind Funktionsbausteine mit Speicherfunktion und besitzen eine interne Zustandslogik. `SoftKeyActivationCode_S` ist hingegen ein reiner Datenträger.
 *   **Vergleich mit einfachen Datentypen:** Im Gegensatz zu atomaren Typen wie `INT` oder `BOOL` bündelt dieser Struct zwei logisch zusammengehörige Informationen (`code` und Verhalten `bCyclic`) zu einer einzigen, wiederverwendbaren Einheit.

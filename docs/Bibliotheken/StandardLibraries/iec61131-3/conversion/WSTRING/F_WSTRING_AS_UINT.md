@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine komplexen Zu
 - Verarbeitung von Zeichenketten, die numerische Daten enthalten, für Steuerungszwecke.
 - Integration in größere Steuerungssysteme, die sowohl Zeichenketten als auch numerische Werte verarbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_STRING_AS_INT` oder `F_WSTRING_AS_INT` konvertiert dieser Block speziell in einen UINT-Wert, was für nicht-negative Zahlen geeignet ist.
 - Die Verwendung von WSTRING ermöglicht die Verarbeitung von Unicode-Zeichenketten, was im Vergleich zu einfachen STRING-Konvertierungen flexibler ist.
 

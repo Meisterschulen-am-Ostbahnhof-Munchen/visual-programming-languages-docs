@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, indem der ganzzahlige Eingang
 - Typumwandlung in Steuerungsanwendungen, bei denen Gleitkommaoperationen erforderlich sind.
 - Integration in größere Steuerungssysteme, die gemischte Datentypen verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_INT_TO_LREAL` spezialisiert auf die Umwandlung von `INT` zu `LREAL` und daher effizienter in dieser spezifischen Aufgabe.
 - Andere Bausteine könnten zusätzliche Funktionen wie Skalierung oder Bereichsprüfung bieten, was hier nicht der Fall ist.
 

@@ -29,7 +29,7 @@ Dieser Struct wird ausschließlich in Szenarien verwendet, in denen logiBUS-Hard
 *   Erfassung von Steuerspannungen
 *   Konfiguration von Mehrkanal-Messsystemen, bei denen für jeden Kanal eine separate Instanz von `logiBUS_AI_S` angelegt wird.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Innerhalb der logiBUS-Bibliothek existieren ähnliche strukturierte Datentypen für andere IO-Funktionen, wie z.B. `logiBUS_DI_S` für digitale Eingänge oder `logiBUS_AO_S` für analoge Ausgänge. Diese unterscheiden sich primär durch ihren kontextspezifischen Namen und sind für die jeweilige Art der Signalverarbeitung vorgesehen. Der grundlegende Aufbau (ein `Pin`-Feld) ist jedoch oft identisch oder sehr ähnlich.
 
 ## Fazit

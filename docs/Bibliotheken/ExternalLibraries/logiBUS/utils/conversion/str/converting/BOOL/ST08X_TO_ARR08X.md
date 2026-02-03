@@ -47,7 +47,7 @@ Der Funktionsblock `ST08X_TO_ARR08X` ist zustandslos (stateless). Er speichert k
 *   **Vereinheitlichung der Datenformate**: Wenn in einem Projekt verschiedene Konventionen für die Gruppierung von 8 BOOL-Werten verwendet werden, kann dieser FB dazu beitragen, die Daten in ein konsistentes Format zu bringen.
 *   **Kompatibilität mit älteren Systemen**: Kann verwendet werden, um Daten aus moderneren Strukturen in array-basierte Formate zu überführen, die von älteren oder einfacheren Systemen besser verarbeitet werden können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Während 4diac-IDE und der IEC 61499-Standard generische Datenkonvertierungsmechanismen und Funktionen zur Manipulation von Arrays bereitstellen, ist der `ST08X_TO_ARR08X` ein hochspezialisierter Baustein. Allgemeine Konvertierungs-FBs würden möglicherweise eine flexiblere Handhabung verschiedener Datentypen oder Array-Größen bieten, müssten aber oft konfiguriert werden oder würden zusätzliche Logik erfordern. Dieser Baustein bietet eine dedizierte, einfache und effiziente Lösung für genau diesen einen spezifischen Konvertierungsfall ohne Konfigurationsaufwand.
 
 ## Fazit

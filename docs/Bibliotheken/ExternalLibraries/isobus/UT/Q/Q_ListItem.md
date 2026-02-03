@@ -79,7 +79,7 @@ Der **Q_ListItem** ist ein standardkonformer Funktionsbaustein zur Verwaltung vo
 - **Parametereinstellungen**: Auswahloptionen
 - **Diagnoselisten**: Fehlercode-Verwaltung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ListItem | VtListManager | VtDynamicMenu |
 |---------------|------------|---------------|---------------|

@@ -42,7 +42,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung erfolgt unmitt
 - Typumwandlung in Steuerungsalgorithmen, wo Fließkommawerte in Ganzzahlen umgewandelt werden müssen.
 - Signalverarbeitung, bei der `REAL`-Sensordaten auf `SINT` reduziert werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine wie `F_REAL_TO_INT` oder `F_REAL_TO_USINT` bieten Konvertierungen in andere Ganzzahltypen. `F_REAL_TO_SINT` ist spezifisch für 8-Bit Ganzzahlen mit Vorzeichen.
 
 ## Fazit

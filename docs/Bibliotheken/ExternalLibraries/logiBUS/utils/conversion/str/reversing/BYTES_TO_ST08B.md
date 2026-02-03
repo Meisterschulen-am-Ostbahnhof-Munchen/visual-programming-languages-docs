@@ -61,7 +61,7 @@ Der `BYTES_TO_ST08B`-Baustein ist ein rein kombinatorischer Funktionsbaustein. E
 *   **Datentyp-Konvertierung:** Umwandlung von Raw-Byte-Daten in einen höherwertigen, strukturierten Datentyp zur besseren Handhabung und Lesbarkeit innerhalb der Applikation.
 *   **Hardware-Anbindung:** Wenn Daten von Sensoren oder Aktoren byteweise gelesen werden und zu einer festen Struktur aggregiert werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu allgemeinen Typumwandlungs- oder Array-Manipulationsbausteinen bietet `BYTES_TO_ST08B` eine spezialisierte Lösung für die Umwandlung von genau acht Bytes in eine vordefinierte `ST08B`-Struktur. Dies eliminiert die Notwendigkeit manueller Indizierung oder Schleifen und vereinfacht die Handhabung für diesen spezifischen Anwendungsfall. Andere Bausteine könnten flexibler sein (z.B. eine variable Anzahl von Bytes verarbeiten), aber dieser Baustein ist für seine feste Größe optimiert.
 
 ## Fazit

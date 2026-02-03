@@ -50,7 +50,7 @@ Der Funktionsblock `BOOLS_TO_ST08X` ist ein zustandsloser Baustein. Dies bedeute
 *   **Schnittstellenkommunikation:** Vorbereitung von binären Daten für die Übertragung über serielle Schnittstellen oder Kommunikationsprotokolle, die Daten in strukturierten Formaten erwarten.
 *   **Programmierlogik:** Vereinfachung der Logik in komplexeren Funktionsblöcken, indem acht separate Signale zu einer einzelnen, handlicheren Variablen gebündelt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Dieser Funktionsblock ist spezialisiert auf die Umwandlung von acht BOOL-Werten in den benutzerdefinierten `ST08X`-Typ. Im Vergleich zu:
 *   **`BOOLS_TO_BYTE` oder `BOOL_TO_WORD`:** Diese Bausteine wandeln einzelne BOOLs in einen primitiven Integer-Typ (Byte, Word) um, bei dem die einzelnen Bits über bitweise Operationen angesprochen werden müssen. `BOOLS_TO_ST08X` bietet hingegen eine strukturierte Variable, deren Felder direkt über Namen (`OUT.X_00`, `OUT.X_01`, etc.) zugänglich sind, was die Lesbarkeit des Codes verbessert.
 *   **Logische Operatoren (AND, OR, XOR):** Diese Operatoren kombinieren Bool-Werte, aber nicht zu einer Struktur, sondern zu einem einzelnen Bool-Ergebnis. `BOOLS_TO_ST08X` dient der Aggregation, nicht der logischen Verknüpfung.

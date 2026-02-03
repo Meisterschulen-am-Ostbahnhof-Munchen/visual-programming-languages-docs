@@ -48,7 +48,7 @@ Der Funktionsblock speichert den vorherigen Zustand des `CLK`-Signals in einer i
 - Synchronisation von Prozessen bei Signaländerungen.
 - Triggerung von Aktionen bei fallenden Flanken in zeitkritischen Anwendungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **FB_R_TRIG**: Erkennung einer steigenden Flanke (von `FALSE` nach `TRUE`).
 - **FB_R_F_TRIG**: Kombinierte Erkennung von steigenden und fallenden Flanken.
 - **FB_F_TRIG** ist spezialisiert auf die Erkennung von fallenden Flanken und daher effizienter in dieser spezifischen Anwendung.
@@ -56,7 +56,7 @@ Der Funktionsblock speichert den vorherigen Zustand des `CLK`-Signals in einer i
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_178](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_178.md)
 * [Uebung_178_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_178_AX.md)

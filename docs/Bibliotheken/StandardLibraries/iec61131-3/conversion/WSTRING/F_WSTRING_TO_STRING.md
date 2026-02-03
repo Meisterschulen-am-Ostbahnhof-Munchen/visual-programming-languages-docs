@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` aus
 - Verwendung in Systemen, die keine breiten Zeichenketten unterstützen.
 - Integration in bestehende Systeme, die nur mit STRING-Datentypen arbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsbausteinen ist `F_WSTRING_TO_STRING` spezialisiert auf die Umwandlung von WSTRING zu STRING.
 - Ähnliche Bausteine könnten zusätzliche Optionen wie Zeichensatz-Konvertierung bieten, dieser FB ist jedoch auf die grundlegende Funktionalität beschränkt.
 

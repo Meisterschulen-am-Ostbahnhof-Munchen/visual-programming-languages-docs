@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Datenkonvertierung in Steuerungssystemen, wo unterschiedliche Datentypen verarbeitet werden müssen.
 - Integration in größere Funktionsblock-Netzwerke, die Daten unterschiedlicher Bitbreiten verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_UINT_TO_LWORD` spezialisiert auf die Konvertierung von `UINT` zu `LWORD` und bietet somit eine optimierte und typsichere Lösung.
 - Andere Konvertierungsblöcke könnten zusätzliche Funktionen wie Fehlerbehandlung oder Überlaufprüfung bieten, was hier nicht der Fall ist.
 

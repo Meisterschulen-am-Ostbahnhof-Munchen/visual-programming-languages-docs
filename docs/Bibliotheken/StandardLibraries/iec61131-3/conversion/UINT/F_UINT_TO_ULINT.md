@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Datenverarbeitung in Steuerungen, die sowohl 16-Bit- als auch 64-Bit-Daten verarbeiten müssen
 - Erweiterung von Daten für nachfolgende Berechnungen, die höhere Präzision erfordern
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu `F_INT_TO_LINT` werden hier vorzeichenlose Datentypen verarbeitet
 - Ähnliche Konvertierungsbausteine existieren für andere Datentypkombinationen (z.B. `F_BYTE_TO_WORD`)
 

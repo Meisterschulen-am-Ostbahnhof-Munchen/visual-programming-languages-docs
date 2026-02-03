@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt unmitte
 - **Signalverarbeitung**: Konvertierung von booleschen Steuersignalen in Byte-Werte für die Kommunikation mit Geräten, die Byte-Daten erwarten.
 - **Datenprotokollierung**: Umwandlung von booleschen Statusinformationen in Byte-Format für die Speicherung oder Übertragung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_BOOL_TO_INT**: Konvertiert einen booleschen Wert in einen Integer-Wert, während `F_BOOL_TO_BYTE` speziell für Byte-Ausgaben optimiert ist.
 - **F_BOOL_TO_WORD**: Ähnlich wie `F_BOOL_TO_BYTE`, aber für größere Datenformate (Word) ausgelegt.
 

@@ -43,7 +43,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Protokollierung von Messwerten in Textdateien oder Datenbanken.
 - Vorbereitung von Daten für die Kommunikation über Textprotokolle.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu `F_STRING_TO_LREAL` führt dieser Baustein die umgekehrte Konvertierung durch.
 - Im Vergleich zu generischen Konvertierungsbausteinen ist dieser spezialisiert auf LREAL-zu-STRING-Konvertierungen.
 

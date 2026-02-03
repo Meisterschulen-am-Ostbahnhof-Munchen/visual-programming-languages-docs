@@ -45,7 +45,7 @@ Der Funktionsblock `F_LEN` berechnet die Länge des übergebenen Strings (`IN`) 
 - Validierung von String-Daten vor der weiteren Verarbeitung.
 - Logging und Debugging von String-Operationen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnlich zu `LEN` in anderen Programmiersprachen, jedoch als standardisierter Funktionsblock in IEC 61131-3.
 - Im Gegensatz zu `F_MID` oder `F_LEFT`, die Teile eines Strings extrahieren, liefert `F_LEN` nur die Länge.
 

@@ -46,7 +46,7 @@ Der `F_AND`-Block führt eine bitweise UND-Verknüpfung zwischen den Eingangsvar
 - Bitweise Maskenoperationen in Datenverarbeitungsanwendungen.
 - Kombination mit anderen logischen Blöcken für komplexe Steuerungslogik.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_OR**: Führt eine bitweise ODER-Verknüpfung durch.
 - **F_XOR**: Führt eine bitweise exklusive ODER-Verknüpfung durch.
 - **F_NOT**: Führt eine bitweise Negation durch.
@@ -54,7 +54,7 @@ Der `F_AND`-Block führt eine bitweise UND-Verknüpfung zwischen den Eingangsvar
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002a2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a2.md)
 * [Uebung_002a2_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a2_AX.md)

@@ -67,7 +67,7 @@ Der Funktionsblock verfügt über mehrere Service-Sequenzen:
 - Verteiltes Management von Ressourcen und Geräten
 - Fehlertolerante Systeme mit Wiederanlauf-Funktionalität
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einfachen Start-Funktionsblöcken bietet EC_START_ELEM erweiterte Funktionalität für verteilte Systeme mit spezifischer Zielortangabe und detaillierter Statusrückmeldung. Er ist Teil der Rekonfigurationsservices und unterstützt verschiedene Elementtypen über reine Funktionsblöcke hinaus.
 

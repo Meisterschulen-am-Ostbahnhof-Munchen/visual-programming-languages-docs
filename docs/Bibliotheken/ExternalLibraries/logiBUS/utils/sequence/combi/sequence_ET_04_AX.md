@@ -50,7 +50,7 @@ Siehe `sequence_ET_04`.
 ## Anwendungsszenarien
 Ähnlich wie `sequence_ET_04`, aber bevorzugt, wenn Adapterverbindungen genutzt werden sollen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_ET_04**: Die Standardvariante mit einfachen BOOL-Ausgängen.
 
 ## Fazit

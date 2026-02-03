@@ -39,7 +39,7 @@ Dieser Struct wird typischerweise als Dateneingang oder -ausgang in Funktionsbau
 *   FBs, die Hilfseingangswerte verarbeiten und an andere Systemkomponenten weiterleiten.
 *   FBs, die basierend auf dem `bCyclic`-Flag entscheiden, ob ein Wert aktualisiert und gesendet werden muss.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Als reiner Datentyp ist ein direkter Vergleich mit Funktionsbausteinen nicht sinnvoll. Innerhalb der ISOBUS-Datentypen könnte er mit einfacheren Datentypen wie einem reinen `USINT` für den Wert verglichen werden. Der Vorteil von `AuxiliaryState_S` liegt in der Erweiterung um die Metainformation zur Übertragungssteuerung (`bCyclic`), was eine höhere Integration und effizientere Kommunikation im ISOBUS-Netzwerk ermöglicht.
 
 ## Fazit

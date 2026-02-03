@@ -67,7 +67,7 @@ Da es sich um einen Composite Function Block ohne eigene Zustandsmaschine (ECC) 
 *   **Logik-Invertierung:** Anpassung von Sensoren, die "Active High" liefern, an Aktoren oder Steuerbausteine, die "Active Low" (bzw. Reset bei High) erwarten.
 *   **Spezifische Protokollanpassung:** Wenn ein Subsystem über einen AX-Adapter kommuniziert, das empfangende Subsystem jedoch einen ASR-Adapter mit invertierter Polarität benötigt.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 *   **AX_ASR_SWITCH (hypothetisch/Standard):** Ein Standard-Wandler würde typischerweise `TRUE` auf `SET` und `FALSE` auf `RESET` mappen. Der hier beschriebene `_X` Baustein ist das genaue Gegenteil.
 *   **E_SWITCH:** Der zugrunde liegende IEC 61499 Standardbaustein, der die eigentliche Weichenstellung der Ereignisse basierend auf einem Boolean-Wert übernimmt, jedoch ohne die Kapselung in Adapter.

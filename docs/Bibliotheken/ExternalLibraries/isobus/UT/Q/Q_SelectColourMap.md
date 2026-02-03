@@ -76,7 +76,7 @@ Der **Q_SelectColourMap** ist ein standardkonformer Funktionsbaustein zur Verwal
 - **Markenspezifika**: Corporate Design
 - **Barrierefreiheit**: Hochkontrast-Modi
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_SelectColourMap | VtColorManager | VtPaletteControl |
 |---------------|-------------------|----------------|------------------|

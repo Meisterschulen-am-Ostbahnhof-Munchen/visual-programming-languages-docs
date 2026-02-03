@@ -96,7 +96,7 @@ Der Baustein implementiert eine State-Machine (ECC), die zyklisch durch vier akt
 *   **Ampelsteuerungen**: Durch Anpassung der `DT`-Zeiten können einfache Ampelphasen realisiert werden (wobei hier meist 4 Schritte ausreichend sind, z.B. Rot, Rot-Gelb, Grün, Gelb).
 *   **Test-Muster-Generator**: Erzeugung von definierten Signalabfolgen zu Testzwecken.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Gegensatz zu einfachen Zählern bietet dieser Baustein integrierte Zeitsteuerungen pro Schritt und eine direkte Musterzuweisung. Gegenüber komplexeren Sequenzern (z.B. SFC / Ablaufsprache) ist er kompakter, aber auf genau 4 Schritte und 4 Ausgänge limitiert. Die "Loop"-Variante unterscheidet sich von "Single-Shot"-Sequenzern dadurch, dass sie nicht am Ende stehen bleibt, sondern endlos wiederholt.
 

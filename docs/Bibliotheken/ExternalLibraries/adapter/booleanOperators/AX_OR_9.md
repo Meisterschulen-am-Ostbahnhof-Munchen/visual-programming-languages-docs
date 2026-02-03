@@ -59,7 +59,7 @@ Der Funktionsblock besitzt keinen internen Zustand und arbeitet stateless. Die A
 - Steuerungslogik mit redundanten Eingangssignalen
 - Alarmierungssysteme mit mehreren Auslösern
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-ODER-Bausteinen mit weniger Eingängen bietet AX_OR_9 die Möglichkeit, bis zu neun Signale gleichzeitig zu verarbeiten, was die Verdrahtung komplexerer Logiken vereinfacht. Gegenüber konfigurierbaren ODER-Bausteinen hat dieser FB eine feste Anzahl an Eingängen, was bei bekannten Anforderungen die Konfiguration vereinfacht.
 
 Vergleich mit [OR_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_9.md)

@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, wenn das `REQ`-Ereignis empfa
 - Parsen von Daten aus externen Quellen (z.B. Dateien, Netzwerk) in numerische Formate.
 - Verwendung in Steuerungsanwendungen, wo Zeichenketten in Steuerungswerte umgewandelt werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_WSTRING_AS_ULINT` spezialisiert auf die Konvertierung von WSTRING zu ULINT und bietet daher eine optimierte und typsichere Lösung für diesen spezifischen Anwendungsfall.
 - Andere Bausteine wie `F_STRING_AS_INT` oder `F_WSTRING_AS_LINT` bieten ähnliche Funktionalitäten, jedoch für andere Datentypen.
 

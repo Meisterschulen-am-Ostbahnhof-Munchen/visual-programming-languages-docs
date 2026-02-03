@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - **Typumwandlung in Steuerungsanwendungen**: Wenn ein vorzeichenloser 8-Bit-Wert in einen vorzeichenbehafteten 16-Bit-Wert umgewandelt werden muss.
 - **Datenkompatibilität**: In Szenarien, wo verschiedene Komponenten unterschiedliche Datentypen erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_USINT_TO_UINT**: Konvertiert USINT zu UINT (vorzeichenloser 16-Bit-Integer).
 - **F_USINT_TO_DINT**: Konvertiert USINT zu DINT (vorzeichenbehafteter 32-Bit-Integer).
 - **F_USINT_TO_UDINT**: Konvertiert USINT zu UDINT (vorzeichenloser 32-Bit-Integer).

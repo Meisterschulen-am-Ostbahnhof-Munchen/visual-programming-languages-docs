@@ -20,7 +20,7 @@ Dies ist besonders nützlich, wenn ein zyklisches Ereignis (z.B. von einem `AE_C
 ## Funktionsweise
 Trifft an `IN_AX` ein Ereignis ein, wird dieses zusammen mit dem aktuellen Wert von `D1` an den Ausgang weitergereicht. Trifft an `IN_AE` ein Ereignis ein, wird am Ausgang ebenfalls ein Ereignis ausgelöst, wobei der *letzte bekannte* Wert von `IN_AX.D1` am Ausgang anliegt.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 In vielen Übungen (z. B. beim Blinker in `Uebung_007a3_AX`) wurde bisher fälschlicherweise ein `AX_OR_2` verwendet, um ein `AE`-Ereignis (vom `AE_CYCLE`) in einen `AX`-Datenstrom einzuspeisen.
 - **AX_OR_2**: Erwartet zwei vollwertige AX-Adapter. Das Anschließen eines AE-Adapters ist technisch unsauber, da der Datenwert für einen der Eingänge undefiniert bleibt.
 - **AX_AE_MERGE**: Ist exakt für diesen Mischbetrieb ausgelegt. Er stellt sicher, dass das Ereignis durchgereicht wird, während die Datenquelle (`IN_AX`) eindeutig definiert bleibt.
@@ -37,7 +37,7 @@ In vielen Übungen (z. B. beim Blinker in `Uebung_007a3_AX`) wurde bisher fälsc
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_007a3_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
 * [Uebung_008_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_008_AX.md)

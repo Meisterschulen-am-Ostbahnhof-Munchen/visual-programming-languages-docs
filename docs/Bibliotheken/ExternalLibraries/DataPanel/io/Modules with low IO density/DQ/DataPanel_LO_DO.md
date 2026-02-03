@@ -41,7 +41,7 @@ Die globale Konstante DataPanel_LO_DO definiert eine Sammlung von strukturierten
 - Typsichere Verwendung von digitalen Ausgangskanälen
 - Fehlerbehandlung durch definierte ungültige Zustände
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen I/O-Konstantendefinitionen bietet DataPanel_LO_DO:
 - Spezifische Anpassung für Module mit niedriger I/O-Dichte
 - Strukturierte Datentypen für bessere Typsicherheit

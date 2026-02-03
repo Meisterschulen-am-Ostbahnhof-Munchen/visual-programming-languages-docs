@@ -49,7 +49,7 @@ Der Funktionsblock empfängt über das REQ-Ereignis eine Konvertierungsanfrage u
 - Bidirektionale Kommunikation zwischen verschiedenen Protokollen
 - Adapterlösungen für bestehende Systeme mit unterschiedlichen Datentypen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konvertierungsblöcken bietet AX2_X_TO_BOOL eine bidirektionale Funktionalität mit integriertem Adapter-Interface. Während einfache Konverter typischerweise nur in eine Richtung arbeiten, ermöglicht dieser Block den Datenaustausch in beide Richtungen.
 
 ## Fazit

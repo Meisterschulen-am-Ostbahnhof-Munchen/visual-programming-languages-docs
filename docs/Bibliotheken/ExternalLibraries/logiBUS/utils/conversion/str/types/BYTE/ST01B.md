@@ -45,7 +45,7 @@ Dieser Datentyp kann in verschiedenen Szenarien nützlich sein, in denen ein ein
 *   Zur Vereinheitlichung von Schnittstellen, die einzelne Byte-Werte übergeben.
 *   Als Baustein für komplexere Strukturen, die aus einer Reihe von Bytes bestehen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Direkte Verwendung von `BYTE`**: `ST01B` unterscheidet sich von der direkten Verwendung des primitiven `BYTE`-Typs dadurch, dass es einen spezifischen Namen und eine Kapselung bietet. Dies kann die Lesbarkeit und Wartbarkeit des Codes verbessern, insbesondere wenn das Byte eine spezielle Bedeutung hat, die über den generischen `BYTE`-Typ hinausgeht.
 *   **Andere strukturierte Datentypen**: Im Vergleich zu komplexeren strukturierten Datentypen ist `ST01B` sehr einfach gehalten und dient als grundlegender Baustein.
 

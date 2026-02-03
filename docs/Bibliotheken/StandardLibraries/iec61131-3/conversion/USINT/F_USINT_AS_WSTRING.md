@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` aus
 - Protokollierung von numerischen Daten in Textdateien.
 - Kommunikation mit Systemen, die Textdaten erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_USINT_AS_WSTRING` spezialisiert auf die Konvertierung von `USINT` zu `WSTRING`.
 - Andere Blöcke könnten andere Datentypen oder zusätzliche Formatierungsoptionen unterstützen.
 

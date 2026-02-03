@@ -45,7 +45,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt unmitte
 - Erweiterung von 8-Bit unsigned Werten auf 32-Bit signed Werte in Steuerungsanwendungen.
 - Kompatibilität zwischen verschiedenen Teilen eines Steuerungssystems, die unterschiedliche Datentypen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_SINT_TO_DINT` oder `F_INT_TO_DINT` behandelt dieser Baustein ausschließlich unsigned 8-Bit Werte.
 - Ähnliche Konvertierungsbausteine existieren für andere Datentypen, wie z.B. `F_BOOL_TO_INT` oder `F_REAL_TO_LREAL`.
 

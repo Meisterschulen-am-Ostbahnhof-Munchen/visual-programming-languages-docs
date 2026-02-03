@@ -48,7 +48,7 @@ Der Funktionsblock nutzt Bitmasken und Schiebeoperationen, um die einzelnen 2-Bi
 - Extraktion von Steuerbits aus einem Statuswort.
 - Verarbeitung von kodierten Sensordaten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **SPLIT_WORD_INTO_BYTES**: Teilt ein Wort in zwei Bytes auf, nicht in acht Quarter-Bytes.
 - **BIT_EXTRACT**: Extrahiert einzelne Bits oder Bitgruppen, ist aber weniger spezialisiert für Quarter-Bytes.
 

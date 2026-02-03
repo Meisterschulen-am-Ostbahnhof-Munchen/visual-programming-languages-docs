@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - Datenverarbeitung, bei der unterschiedliche Datentypen verarbeitet werden müssen
 - Kommunikation zwischen Systemen mit unterschiedlichen Datentypen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_SINT` oder `F_LINT_TO_SINT` führen ähnliche Konvertierungen durch, jedoch mit anderen Ausgangsdatentypen.
 - `F_ULINT_TO_SINT` ist spezifisch für die Konvertierung von `ULINT` zu `SINT`.
 

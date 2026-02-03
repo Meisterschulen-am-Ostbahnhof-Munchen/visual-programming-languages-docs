@@ -52,7 +52,7 @@ Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmet
 *   **Beispiel:** `500 * T#1ms = T#500ms`
 *   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsbausteinen ist dieser Funktionsblock spezialisiert auf die Umwandlung von `TIME` in `ULINT`.
 - Andere Bausteine könnten zusätzliche Optionen wie die Konvertierung in andere Datentypen bieten, sind jedoch weniger spezifisch.
 

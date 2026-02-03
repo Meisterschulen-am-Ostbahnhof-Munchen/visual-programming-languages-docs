@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt unmitte
 - Kommunikation zwischen Systemen, die unterschiedliche Datentypen verwenden.
 - Debugging und Protokollierung, wo Bitrepräsentationen von numerischen Werten benötigt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_DINT_TO_LWORD` oder `F_UDINT_TO_LWORD` arbeitet dieser Baustein mit dem größeren ULINT-Datentyp.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Skalierung oder Formatierung bieten, dieser Baustein ist jedoch auf die reine Typumwandlung spezialisiert.
 

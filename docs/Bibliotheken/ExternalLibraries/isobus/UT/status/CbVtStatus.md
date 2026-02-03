@@ -63,7 +63,7 @@ Der **CbVtStatus** ist ein standardisierter Callback-Baustein für Virtual-Termi
 - **Diagnosetools**: VT-Zustandsmonitoring
 - **Multi-Display-Systeme**: Synchronisation
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | CbVtStatus | VtPageManager | VtEventLogger |
 |---------------|------------|---------------|---------------|
@@ -83,7 +83,7 @@ Der **CbVtStatus** ist ein standardisierter Callback-Baustein für Virtual-Termi
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_012](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012.md)
 * [Uebung_012a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012a.md)

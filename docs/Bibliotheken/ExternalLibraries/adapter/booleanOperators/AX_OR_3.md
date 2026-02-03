@@ -54,7 +54,7 @@ Da es sich um einen kombinatorischen Baustein ohne Speicherfunktion handelt, bes
 - Steuerungslogik mit alternativen Aktivierungsbedingungen
 - Verknüpfung von Statusmeldungen aus verschiedenen Quellen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-ODER-Bausteinen bietet AX_OR_3 den Vorteil von drei Eingängen in einem einzigen Baustein, was die Verdrahtung vereinfacht. Gegenüber Bausteinen mit variabler Eingangsanzahl ist AX_OR_3 spezifisch optimiert für den dreifachen ODER-Einsatz.
 
 Vergleich mit [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3.md)
@@ -64,7 +64,7 @@ Vergleich mit [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002a5_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
 * [Uebung_002a5b_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)

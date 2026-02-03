@@ -50,7 +50,7 @@ Dieser Funktionsblock ist ein reiner Datenkonverter ohne interne Zustände. Sein
 *   **Logische Verknüpfungen:** Vorbereitung von Daten für logische Operationen, die einzelne BOOL-Werte erfordern.
 *   **Visualisierung:** Darstellung einzelner Bits eines Byte-Wertes auf einer Benutzeroberfläche.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Standard-Funktionsblöcke in 4diac bieten oft allgemeine Typumwandlungen (z.B. `BYTE_TO_INT`). Dieser Baustein ist jedoch spezialisiert auf die Zerlegung eines Bytes in eine strukturierte Gruppe von Booleschen Werten (`ST08X`), was ihn von generischen Konvertern unterscheidet. Es gibt keine direkte Entsprechung in der Standardbibliothek für diese spezifische Strukturkonvertierung. Andere Ansätze könnten darin bestehen, Bitmasken und logische Operationen (AND, SHIFT) mit mehreren einzelnen Konvertierungsbausteinen zu verwenden, was jedoch zu einer komplexeren und weniger übersichtlichen Implementierung führen würde. Dieser Baustein bietet eine direkte und elegante Lösung für die genannte Aufgabe.
 
 ## Fazit

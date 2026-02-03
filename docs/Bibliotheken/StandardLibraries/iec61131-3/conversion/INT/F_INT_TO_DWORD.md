@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Datenkonvertierung in Steuerungssystemen, die unterschiedliche Datentypen verwenden.
 - Integration von Systemen, die INT-Werte erzeugen, aber DWORD-Werte benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_INT_TO_REAL` oder `F_DWORD_TO_INT` ist dieser Funktionsblock spezialisiert auf die Konvertierung von INT zu DWORD.
 - Einfacher und direkter als universelle Konvertierungsbausteine, die mehrere Datentypen unterstützen.
 

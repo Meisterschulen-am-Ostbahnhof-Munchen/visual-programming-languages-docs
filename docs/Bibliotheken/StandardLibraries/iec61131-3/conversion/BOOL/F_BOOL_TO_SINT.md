@@ -46,7 +46,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung erfolgt unmitt
 - Umwandlung von booleschen Signalen in numerische Werte für mathematische Operationen.
 - Integration von booleschen Steuerungssignalen in Systeme, die ganzzahlige Werte erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_BOOL_TO_INT**: Konvertiert `BOOL` in einen 16-Bit-Integer (`INT`). Dieser Baustein ist ähnlich, aber der Ausgangswert hat eine größere Bitbreite.
 - **F_BOOL_TO_USINT**: Konvertiert `BOOL` in einen vorzeichenlosen 8-Bit-Integer (`USINT`). Der Unterschied liegt in der Interpretation des Ausgangswertes (vorzeichenbehaftet vs. vorzeichenlos).
 

@@ -61,7 +61,7 @@ Nach Abschluss der Operation wird das CNF-Ereignis mit dem berechneten OUT-Wert 
 Bsp. individuelle Eingabe
 ](https://user-images.githubusercontent.com/113907647/227977195-29734e02-f9c3-4e29-bdab-218a9edc9e4a.png)
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Selektionsfunktionsblöcken:
 - F_LIMIT speziell für Wertebegrenzung optimiert
 - Einfacher als komplexe Vergleichsblöcke mit mehreren Ausgängen

@@ -82,7 +82,7 @@ Der **Q_EndPoint** ist ein standardkonformer Funktionsbaustein zur Steuerung von
 - **Technische Zeichnungen**: Konfigurierbare Hilfslinien
 - **UI-Design**: Adaptive Trennlinien
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_EndPoint   | VtLineEditor | VtDynamicLine |
 |---------------|--------------|--------------|---------------|

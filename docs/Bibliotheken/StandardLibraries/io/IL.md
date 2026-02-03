@@ -69,7 +69,7 @@ Der Block durchläuft folgende Zustände:
 - Datenerfassungssysteme mit hoher Präzision
 - Steuerungssysteme, die große Zahlenwerte verarbeiten müssen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Eingabeblöcken wie IB (Byte), IW (Word) oder ID (Double Word) verarbeitet IL die größte Datengröße (64 Bit). Er bietet damit die höchste Präzision für numerische Eingabewerte in der 4diac-IO-Bibliothek.
 
 ## Fazit

@@ -55,7 +55,7 @@ Der Funktionsblock arbeitet zustandslos - jeder REQ-Impuls führt zu einer sofor
 - Routing von Datenströmen in verteilten Steuerungsarchitekturen
 - Multiplexer/Demultiplexer-Schaltungen in industriellen Anwendungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Demultiplexern bietet AX_DEMUX_5 fünf Ausgangskanäle und ist speziell für AX-Adapter optimiert. Die generische Implementierung ermöglicht flexible Wiederverwendung in verschiedenen Kontexten.
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)

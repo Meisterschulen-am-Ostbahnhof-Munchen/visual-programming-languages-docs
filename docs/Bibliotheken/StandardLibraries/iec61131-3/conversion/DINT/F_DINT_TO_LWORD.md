@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Operation wird bei jede
 - Typkonvertierung in heterogenen Systemen, wo verschiedene Datentypen verarbeitet werden müssen.
 - Einsatz in Steuerungssystemen, wo eine höhere Präzision oder ein größerer Wertebereich benötigt wird.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsbausteinen ist `F_DINT_TO_LWORD` spezialisiert auf die Konvertierung von DINT zu LWORD.
 - Ähnliche Bausteine wie `F_INT_TO_DINT` oder `F_LINT_TO_LWORD` bieten Konvertierungen zwischen anderen Integer-Typen.
 

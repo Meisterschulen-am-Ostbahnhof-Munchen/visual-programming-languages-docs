@@ -90,7 +90,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die
 - **Diagnose**: Früherkennung von Hydraulikproblemen
 - **Sicherheit**: Überwachung der Kupplungsposition
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature | I_RHS | Standard | Premium |
 |---------|-------|----------|---------|
@@ -102,7 +102,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
 

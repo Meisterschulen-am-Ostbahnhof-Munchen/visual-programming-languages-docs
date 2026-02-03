@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Kompatibilität mit Systemen, die unterschiedliche Bitbreiten verwenden.
 - Datenverarbeitung in industriellen Automatisierungslösungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen wie `F_DINT_TO_LWORD` oder `F_UINT_TO_LWORD` ist dieser speziell für die Konvertierung von UDINT zu LWORD optimiert. Er bietet eine direkte und effiziente Lösung für diese spezifische Konvertierung.
 
 ## Fazit

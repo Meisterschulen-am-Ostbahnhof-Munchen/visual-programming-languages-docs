@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Typanpassung in heterogenen Systemen
 - Datenaufbereitung für Schnittstellen mit unterschiedlichen Anforderungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Konvertierungsbausteinen bietet `F_DINT_TO_LINT` eine spezialisierte und typsichere Lösung für die spezifische Konvertierung zwischen DINT und LINT. Andere Bausteine könnten allgemeinere Konvertierungsmöglichkeiten bieten, sind aber möglicherweise weniger effizient oder erfordern zusätzliche Konfiguration.
 
 ## Fazit

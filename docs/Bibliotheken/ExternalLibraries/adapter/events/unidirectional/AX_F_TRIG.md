@@ -58,7 +58,7 @@ Da es sich um einen Composite Function Block handelt, besitzt der **AX_F_TRIG** 
 *   **Ausschalt-Logik:** Auslösen von Aktionen, wenn ein Sensor oder Signal, das über einen Adapter angebunden ist, in den Zustand `FALSE` (Aus/Low) wechselt.
 *   **Event-Filterung:** Blockieren von Ereignissen, solange das zugehörige Datensignal `TRUE` ist, und Passierenlassen, wenn es `FALSE` ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 *   **E_F_TRIG:** Der Standard-Baustein für fallende Flankenerkennung in IEC 61499. Er nutzt separate Ereignis- (`EI`) und Daten-Eingänge (`QI`) anstelle eines Adapters.
 *   **AX_R_TRIG:** Das direkte Gegenstück zu diesem Baustein. Es detektiert eine steigende Flanke (Wechsel auf `TRUE`) unter Verwendung desselben Adapter-Typs.

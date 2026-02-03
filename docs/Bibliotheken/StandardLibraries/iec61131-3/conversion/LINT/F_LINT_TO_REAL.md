@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Operation wird bei jede
 - Umwandlung von Sensorwerten, die als `LINT` vorliegen, in `REAL` für weitere Verarbeitung.
 - Integration in Systeme, die Fließkommaoperationen erfordern, aber Eingangsdaten als Ganzzahlen erhalten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_INT_TO_REAL` oder `F_DINT_TO_REAL` führen ähnliche Konvertierungen durch, jedoch mit kleineren Integer-Typen (`INT` oder `DINT`).
 - `F_LINT_TO_REAL` ist speziell für 64-Bit Integer (`LINT`) optimiert.
 

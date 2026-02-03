@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung von einem LINT- zu einem INT-Wert du
 - Reduzierung der Speicherbelegung, wenn die volle 64-Bit-Präzision nicht benötigt wird.
 - Integration in Steuerungssysteme, die nur 16-Bit-Integer verarbeiten können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_LINT_TO_DINT**: Konvertiert LINT zu DINT (32-Bit Integer).
 - **F_LINT_TO_UDINT**: Konvertiert LINT zu UDINT (32-Bit vorzeichenloser Integer).
 - **F_LINT_TO_ULINT**: Konvertiert LINT zu ULINT (64-Bit vorzeichenloser Integer).

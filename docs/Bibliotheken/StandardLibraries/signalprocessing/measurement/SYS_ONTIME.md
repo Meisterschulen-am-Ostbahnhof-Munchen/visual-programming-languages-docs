@@ -67,13 +67,13 @@ Der Baustein arbeitet mit einer industriellen Zeitbasis (0,6-Minuten-Takt) statt
 - Überwachung der Betriebszeit von Maschinen und Anlagen.
 - Integration in Wartungs- und Diagnosesysteme.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Service Interface Funktionsblöcken bietet SYS_ONTIME eine spezialisierte Funktionalität für die Übertragung von Betriebszeitdaten. Andere Blöcke könnten allgemeinere Daten oder andere spezifische Informationen übertragen.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_140](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_140.md)
 

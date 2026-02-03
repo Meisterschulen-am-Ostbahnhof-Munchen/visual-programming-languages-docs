@@ -55,7 +55,7 @@ Der SUBSCRIBE_7 Block initialisiert sich über das INIT-Ereignis und stellt eine
 - Datenaustausch zwischen verschiedenen Steuerungskomponenten
 - Überwachungssysteme mit zentraler Datensammlung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren SUBSCRIBE-Blöcken bietet SUBSCRIBE_7 die Möglichkeit, bis zu sieben Datenpunkte parallel zu empfangen. Gegenüber individuellen Kommunikationslösungen bietet er standardisierte IEC 61499 Schnittstellen und vereinfachte Konfiguration.
 
 ## Fazit

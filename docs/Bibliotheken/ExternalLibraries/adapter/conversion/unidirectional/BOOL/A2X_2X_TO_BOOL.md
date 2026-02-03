@@ -49,7 +49,7 @@ Der Funktionsblock besitzt keine internen Zustände. Er verhält sich rein kombi
 - Anbindung von A2X-kompatiblen Komponenten an BOOL-basierte Steuerungen
 - Richtungserkennung in Antriebssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen bietet A2X_2X_TO_BOOL eine spezifische Lösung für die Umwandlung von A2X-Signalen in boolesche Richtungssignale. Andere Bausteine könnten zusätzliche Funktionen wie Filterung, Verzögerung oder komplexere Signalverarbeitung bieten.
 
 ## Fazit

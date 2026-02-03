@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Typumwandlung in Steuerungsanwendungen, wo ULINT-Werte auf UINT reduziert werden müssen.
 - Datenverarbeitung in eingebetteten Systemen mit begrenzter Speicherkapazität.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_ULINT_TO_UINT` spezialisiert und optimiert für die spezifische Konvertierung von ULINT zu UINT.
 - Andere Bausteine könnten zusätzliche Funktionalitäten wie Bereichsprüfungen oder Skalierungen bieten, was hier nicht der Fall ist.
 

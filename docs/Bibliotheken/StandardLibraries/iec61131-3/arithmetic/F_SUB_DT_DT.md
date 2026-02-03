@@ -67,7 +67,7 @@ Der **F_SUB_DT_DT** ist ein standardkonformer Funktionsbaustein zur präzisen Be
   - OUT = T#0s bei fehlerhaften Zeitstempeln
   - Keine Exception-Generierung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | F_SUB_DT_DT    | F_SUB_DATE_DATE | F_SUB_TIME |
 |---------------|----------------|-----------------|------------|

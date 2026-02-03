@@ -42,7 +42,7 @@ Der Block hat keine internen Zustände. Die Konvertierung erfolgt unmittelbar be
 - Konvertierung von Benutzereingaben in numerische Werte.
 - Verarbeitung von Zeichenketten aus externen Quellen (z.B. Sensoren oder Netzwerkkommunikation).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_WSTRING_AS_SINT` spezialisiert auf die Umwandlung von WSTRING zu SINT.
 - Andere Blöcke könnten zusätzliche Funktionen wie Fehlerbehandlung oder Typüberprüfung bieten.
 

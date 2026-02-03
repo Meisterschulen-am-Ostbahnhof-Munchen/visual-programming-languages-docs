@@ -53,7 +53,7 @@ Der Baustein hat keinen internen Zustandsautomaten. Die Logik wird bei jedem REQ
 - Überwachung von Zykluszeiten
 - Allgemeine Zählaufgaben in der Automatisierungstechnik
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Gegenüber FB_CTU_INT bietet FB_CTU_DINT einen größeren Zählbereich (32-Bit vs. 16-Bit)
 - Im Vergleich zu FB_CTU_LINT hat FB_CTU_DINT einen kleineren Wertebereich, aber geringeren Speicherbedarf
 - Ähnlich zu IEC 61131-3 CTU-Funktionsblöcken, aber in 4diac-IDE Implementierung

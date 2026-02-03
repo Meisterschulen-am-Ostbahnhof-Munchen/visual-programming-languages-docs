@@ -55,7 +55,7 @@ Nach erfolgreicher Verarbeitung wird das CNF-Ereignis ausgelöst, um den Abschlu
 - Umschaltung zwischen redundanten Signalquellen
 - Verarbeitungspfad-Auswahl in komplexen Steuerungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Multiplexern bietet F_MUX_2:
 - Spezifisch für 2 Eingänge optimiert
 - Einfacherer Aufbau als Multiplexer mit mehr Eingängen
@@ -67,7 +67,7 @@ Im Vergleich zu anderen Multiplexern bietet F_MUX_2:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_090a1](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_090a1.md)
 

@@ -58,7 +58,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 - Eingabe von Wort-Daten in Automatisierungsanwendungen
 - Schnittstelle zu externen Ressourcen für Datenerfassung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Eingabebausteinen bietet Aux_Val2_IW erweiterte Service-Funktionalität mit parametrierbarer Konfiguration, Statusrückmeldungen und Objekt-Identifikation. Er ist speziell für die Verarbeitung von Wort-Daten (16-Bit) ausgelegt.
 
 ## Fazit

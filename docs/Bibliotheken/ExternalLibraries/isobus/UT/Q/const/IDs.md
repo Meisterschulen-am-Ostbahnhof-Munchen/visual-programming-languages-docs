@@ -48,7 +48,7 @@ Da es sich um statische, konstante Werte handelt, existiert kein Zustandsautomat
 *   **Parameterisierung:** Verwendung der Konstanten als aussagekräftige Parameter in Funktionsbausteinen, anstelle von direkten numerischen Werten.
 *   **Kommando- und Statuswerte:** Verwendung von `OFF` und `GLOBAL` zur Steuerung von Prozessen oder zur Adressierung von Geräten in einem Netzwerk.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsbausteinen (FBs) mit Algorithmen und Ereignissteuerung stellt dieses Paket lediglich Datenbereitstellung dar. Es ist vergleichbar mit:
 *   **ENUM-Datentypen:** Während ENUMs eine Liste von benannten Ganzzahlwerten eines Typs definieren, definiert dieses Paket einzelne, lose Konstanten verschiedener Typen.
 *   **#define-Präprozessor-Direktiven (in C):** Beide ersetzen einen Namen durch einen Wert. Die Konstanten in `IDs` sind jedoch typsicher und in der 4diac-IDE verwaltbar.

@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 - **Kompatibilität**: Anpassung von Werten für Systeme oder Komponenten, die nur `SINT` verarbeiten können.
 - **Protokollierung**: Speicherplatzoptimierte Speicherung von Werten, bei denen die höheren Bits nicht benötigt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_SINT**: Ähnlicher Baustein, aber für 16-Bit zu 8-Bit Konvertierung.
 - **F_ANY_TO_<Typ>**: Generische Konvertierungsbausteine, die flexibler, aber möglicherweise weniger effizient sind.
 

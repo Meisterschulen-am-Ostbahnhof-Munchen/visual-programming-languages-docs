@@ -54,7 +54,7 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 - Konvertierung von Textdaten aus Dateien oder Netzwerkquellen
 - Schnittstellen zu Systemen, die numerische Daten als Zeichenketten übertragen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist dieser Funktionsblock spezialisiert auf die STRING-zu-LREAL-Konvertierung.
 - Andere ähnliche Bausteine könnten zusätzliche Parameter für die Zahlenformatierung bieten.
 

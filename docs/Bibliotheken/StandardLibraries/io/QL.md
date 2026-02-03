@@ -54,7 +54,7 @@ Der Block verfügt über zwei Hauptzustände:
 - Integration in verteilte Steuerungssysteme
 - Anbindung an spezielle IO-Module
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Ausgabeblöcken bietet QL die Verarbeitung von 64-Bit-Daten und eine erweiterte Parameterkonfiguration. Gegenüber universelleren Kommunikationsblöcken ist QL speziell auf die Ausgabefunktionalität optimiert.
 
 ## Fazit

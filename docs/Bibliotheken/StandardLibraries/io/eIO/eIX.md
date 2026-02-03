@@ -58,7 +58,7 @@ Der eIX-Block arbeitet als Service-Interface für digitale Eingänge. Bei Initia
 - Signalverarbeitung in Automatisierungssystemen
 - Zustandsüberwachung von Maschinen und Anlagen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet eIX erweiterte Funktionalität:
 - Ereignisbasierte statt zyklische Abfrage
 - Detaillierte Statusrückmeldungen

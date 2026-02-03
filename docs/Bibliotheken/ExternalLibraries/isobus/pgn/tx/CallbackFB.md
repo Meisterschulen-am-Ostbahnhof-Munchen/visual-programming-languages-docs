@@ -49,7 +49,7 @@ Da es sich um einen rein durchschleifenden Composite-Baustein ohne interne Zusta
 *   **Entkopplung von Komponenten**: Er ermöglicht die lose Kopplung zwischen einem Dienst-Anbieter (der den Socket bereitstellt) und einem Dienst-Nutzer (der diesen FB einsetzt), was die Wartbarkeit und Testbarkeit erhöht.
 *   **ISOBUS-Kommunikation**: Spezifische Anwendung in Steuerungssystemen für landwirtschaftliche Maschinen, um die Übertragung von CAN-Nachrichten (PGNs) asynchron zu bestätigen oder anzufordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Direkte Adapterverbindung**: Anstatt einen `Callback`-Adapter direkt in ein Netzwerk einzubinden, bietet der `CallbackFB` eine gebündelte, benannte Schnittstelle (`CNF`/`REQ`/`DI1`), die in manchen Entwürfen lesbarer sein kann.
 *   **Einfache E_CLASS vs. CallbackFB**: Ein einfacher E_CLASS-Baustein (Event Splitter/Merger) könnte ähnliche Ereigniswegleitungen durchführen, jedoch nicht die typsichere Datenverbindung für `isobus::pgn::CAN_MSG` zusammen mit dem standardisierten Adapter-Interface bereitstellen.
 *   **Generische Wrapper-FBs**: Im Gegensatz zu generischen Wrapper-Bausteinen ist der `CallbackFB` auf einen spezifischen Datentyp und Adapter spezialisiert, was Typsicherheit und klare Semantik gewährleistet.
@@ -57,7 +57,7 @@ Da es sich um einen rein durchschleifenden Composite-Baustein ohne interne Zusta
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_126b2_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2_sub.md)
 * [Uebung_126b_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)

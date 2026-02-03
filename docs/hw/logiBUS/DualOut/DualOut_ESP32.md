@@ -2,7 +2,7 @@
 
 ```{index} single: DualOut ESP32
 ```
-## IO
+## 🔌 IO
 
 ### Digitale Ausgänge
 

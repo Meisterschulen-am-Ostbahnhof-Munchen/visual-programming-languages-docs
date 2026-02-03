@@ -45,7 +45,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Vorverarbeitung von Sensordaten, die als UINT geliefert werden, aber als INT weiterverarbeitet werden sollen.
 - Kompatibilitätsherstellung zwischen verschiedenen Protokollen oder Schnittstellen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_UINT_TO_INT` spezialisiert und daher effizienter.
 - Ähnliche Blöcke wie `F_INT_TO_UINT` führen die umgekehrte Konvertierung durch.
 - Universalblöcke wie `F_ANY_TO_ANY` bieten mehr Flexibilität, sind aber unter Umständen weniger performant.

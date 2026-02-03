@@ -51,7 +51,7 @@ Der Baustein besitzt einen kontinuierlichen Betriebszustand und berechnet perman
 - Sicherheitsrelevante Schaltungen
 - Digitale Signalverarbeitung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen logischen Operatoren wie AND oder OR bietet XOR die Besonderheit, dass nur bei unterschiedlichen Eingangswerten ein TRUE-Signal erzeugt wird. Dies macht ihn besonders geeignet für Vergleichs- und Differenzerkennungsaufgaben.
 
 Vergleich mit [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md)

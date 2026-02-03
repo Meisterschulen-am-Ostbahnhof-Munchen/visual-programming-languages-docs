@@ -48,7 +48,7 @@ Siehe `sequence_T_05`.
 ## Anwendungsszenarien
 Für zeitgesteuerte 5-stufige Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_T_05**: Standardvariante ohne Adapter.
 
 ## Fazit

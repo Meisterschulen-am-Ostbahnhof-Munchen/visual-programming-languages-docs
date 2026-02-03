@@ -45,14 +45,14 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Er verhält sic
 *   **Diagnose und Protokollierung:** Zur übersichtlichen Darstellung und Protokollierung von Gerätenamen in menschenlesbarer, strukturierter Form anstelle des rohen 8-Byte-Wertes.
 *   **Filterung und Adressierung:** Als Vorverarbeitungsschritt, um basierend auf spezifischen Feldern (wie Geräteklasse oder Herstellercode) Entscheidungen über die weitere Kommunikation zu treffen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenstück `NmGetIsoName`:** Ein hypothetischer komplementärer Baustein würde die umgekehrte Operation durchführen: Er nähme eine `NAMEFIELD_T`-Struktur als Eingabe und erzeugte daraus das entsprechende 8-Byte-`CF_NAME_T`-Array. `NmSetNameField` ist der Dekodierer, sein Gegenstück wäre der Kodierer.
 *   **Generische Byte-Parser:** Im Gegensatz zu generischen Byte-zu-Struktur-Konvertern ist dieser Block spezifisch auf das ISO-NAME-Format zugeschnitten und enthält die exakte Bitlogik der Norm. Die Verwendung dieses spezialisierten Blocks reduziert Fehler und erhöht die Wartbarkeit im ISOBUS-Kontext.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_120](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_120.md)
 * [Uebung_121](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_121.md)

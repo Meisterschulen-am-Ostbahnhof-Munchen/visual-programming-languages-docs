@@ -54,7 +54,7 @@ Der `STRUCT_MUX` ist ein zustandsloser Baustein, der nach einem einfachen Anford
 - **Verbesserung der Übersichtlichkeit**: Zusammenfassen vieler einzelner Datenleitungen zu einer einzigen strukturierten Leitung, um die Komplexität der grafischen Darstellung zu reduzieren.
 - **Schnittstellenanpassung**: Anpassen einzelner Datenwerte an einen Baustein, der eine einzelne Datenstruktur als Eingang erwartet.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **`STRUCT_DEMUX`**: Der komplementäre Baustein, der eine einzelne Datenstruktur in ihre einzelnen Member aufspaltet.
 - **`SET_STRUCT_VALUE`**: Während `SET_STRUCT_VALUE` einen einzelnen Wert innerhalb einer bestehenden Struktur dynamisch ändert, erzeugt `STRUCT_MUX` eine komplett neue Struktur aus einzelnen Werten.
 
@@ -75,7 +75,7 @@ Der `STRUCT_MUX` ist ein zustandsloser Baustein, der nach einem einfachen Anford
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_051](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_051.md)
 * [Uebung_052](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_052.md)

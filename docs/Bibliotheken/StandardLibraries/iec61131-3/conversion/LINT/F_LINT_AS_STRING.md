@@ -44,7 +44,7 @@ Der Funktionsblock führt bei Aktivierung des `REQ`-Ereignisses die Konvertierun
 - Protokollierung von numerischen Daten in Textdateien.
 - Vorbereitung von Daten für die Kommunikation über Text-basierte Protokolle.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_INT_AS_STRING` oder `F_DINT_AS_STRING` unterstützt dieser Baustein den größeren LINT-Datentyp (64-Bit).
 
 ## Fazit

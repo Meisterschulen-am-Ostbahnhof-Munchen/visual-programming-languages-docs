@@ -51,7 +51,7 @@ Der Baustein besitzt einen einzigen, namensgebenden Zustand:
 *   **Kompensation von Grundlasten oder Nullabweichungen:** Erfassen eines initialen Basiswerts (z.B. Sensor-Grundlast) und Berechnung der reinen Änderung gegenüber dieser Basis.
 *   **Relative Zeitmessung:** Speichern eines Startzeitpunkts und Berechnung der vergangenen Zeit seit diesem Start.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **SUB / DINT_SUB:** Ein reiner Subtrahierer berechnet stets die Differenz zweier aktueller Eingangswerte. OFFSET hingegen speichert einen der Werte intern als konstanten Referenzpunkt.
 *   **DELAY / TON:** Zeitverzögerungsbausteine arbeiten auf der Zeitachse. OFFSET arbeitet mit Datenwerten und hat kein zeitbasiertes Verhalten.
 *   **SR / RS:** Speicherbausteine (Set/Reset) halten einen binären Zustand. OFFSET speichert einen ganzzahligen (`DINT`) Wert und verwendet ihn für eine arithmetische Operation.

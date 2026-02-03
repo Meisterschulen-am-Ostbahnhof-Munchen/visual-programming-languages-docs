@@ -66,7 +66,7 @@ Der **ADD_4** ist ein leistungsfähiger Funktionsbaustein zur Summation von vier
 - **Messdatenanalyse**: Aggregation von Sensorwerten
 - **Robotersteuerung**: Mehrdimensionale Positionsberechnung
 
-## Vergleich mit anderen Addierern
+## ⚖️ Vergleich mit anderen Addierern
 
 | Baustein | Eingänge | Vorteile |
 |----------|----------|----------|

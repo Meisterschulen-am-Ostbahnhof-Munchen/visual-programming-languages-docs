@@ -57,7 +57,7 @@ Der PUBLISH_3-Block wird zunächst über das INIT-Ereignis initialisiert, wobei 
 - Datenverteilung in Produktionsanlagen mit mehreren Verbrauchern
 - Messwertverteilung in Überwachungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren PUBLISH-Blöcken bietet PUBLISH_3 die Möglichkeit, bis zu drei verschiedene Datenwerte gleichzeitig zu übertragen, was die Effizienz in Systemen mit mehreren zusammenhängenden Datenpunkten erhöht. Die Verwendung von ANY-Datentypen bietet mehr Flexibilität als typspezifische Implementierungen.
 
 ## Fazit

@@ -77,7 +77,7 @@ Der **F_MOD** ist ein arithmetischer Funktionsbaustein zur Berechnung des Divisi
   - Optimierte Berechnung für alle ganzzahligen Typen
   - Ein Zyklus Latenzzeit
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal        | F_MOD  | F_DIV   | F_REM   |
 |----------------|--------|---------|---------|

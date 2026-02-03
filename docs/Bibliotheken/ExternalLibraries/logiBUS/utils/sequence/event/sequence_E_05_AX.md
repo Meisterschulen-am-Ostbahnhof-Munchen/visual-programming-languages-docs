@@ -48,7 +48,7 @@ Siehe `sequence_E_05`.
 ## Anwendungsszenarien
 Für ereignisgesteuerte 5-stufige Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_E_05**: Standardvariante ohne Adapter.
 
 ## Fazit

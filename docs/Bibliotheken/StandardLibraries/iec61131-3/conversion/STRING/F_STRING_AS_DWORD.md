@@ -41,7 +41,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt dir
 - Konvertierung von Benutzereingaben oder Kommunikationsdaten in numerische Werte.
 - Verwendung in Steuerungsalgorithmen, die numerische Werte anstelle von Zeichenketten erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_STRING_TO_INT` oder `F_STRING_TO_REAL` ist dieser Baustein speziell auf die Konvertierung in den `DWORD`-Datentyp ausgelegt.
 - Die direkte Verwendung der `STRING_AS_DWORD`-Funktion ermöglicht eine effiziente und spezialisierte Konvertierung.
 

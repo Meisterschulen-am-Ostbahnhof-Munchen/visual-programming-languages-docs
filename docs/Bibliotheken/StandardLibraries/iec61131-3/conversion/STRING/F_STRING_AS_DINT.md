@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Interpretation von Textdaten aus Dateien oder Netzwerkquellen.
 - Umwandlung von konfigurierbaren Parametern, die als Zeichenketten gespeichert sind.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu `F_STRING_TO_*`-Funktionsblöcken, die explizite Typkonvertierungen durchführen, interpretiert `F_STRING_AS_DINT` den `STRING`-Wert direkt als `DINT`.
 - Ähnliche Funktionsblöcke wie `F_STRING_TO_DINT` könnten zusätzliche Parameter für die Formatierung bieten, sind jedoch in der Standardbibliothek nicht enthalten.
 

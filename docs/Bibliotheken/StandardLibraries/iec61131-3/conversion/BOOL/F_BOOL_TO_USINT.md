@@ -46,7 +46,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Umwandlung von booleschen Schaltzuständen in numerische Werte für die Verarbeitung in mathematischen Operationen.
 - Kommunikation mit Systemen oder Geräten, die boolesche Werte nicht direkt unterstützen, aber numerische Werte verarbeiten können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsfunktionsblöcken wie `F_BOOL_TO_INT` oder `F_BOOL_TO_UINT` ist `F_BOOL_TO_USINT` spezifisch für die Konvertierung in einen vorzeichenlosen 8-Bit-Integer optimiert.
 - Ähnliche Funktionsblöcke können größere oder vorzeichenbehaftete Integer-Typen verwenden, was je nach Anwendungsfall mehr oder weniger geeignet sein kann.
 

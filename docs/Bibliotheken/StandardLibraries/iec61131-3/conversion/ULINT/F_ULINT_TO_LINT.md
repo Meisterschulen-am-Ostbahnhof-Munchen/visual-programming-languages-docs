@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Typumwandlung in Steuerungs- und Automatisierungssystemen.
 - Datenverarbeitung in industriellen Anwendungen, wo vorzeichenlose und vorzeichenbehaftete Werte verarbeitet werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen, wie z.B. `F_DINT_TO_INT`, ist dieser speziell für 64-Bit-Datentypen ausgelegt.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Fehlerbehandlungen beinhalten, was hier nicht der Fall ist.
 

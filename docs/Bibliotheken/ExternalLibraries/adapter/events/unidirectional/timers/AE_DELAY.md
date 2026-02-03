@@ -73,7 +73,7 @@ Der Baustein selbst besitzt keine explizite Zustandsmaschine (ECC), da es sich u
 *   **Verzögerte Signalketten:** Einfügen von Wartezeiten in einer Ereigniskette, die logisch durch Adapter gruppiert ist.
 *   **Prozesssteuerung:** Verzögertes Starten von Aggregaten oder Prozessen, die über standardisierte AE-Schnittstellen angesteuert werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschied |
 | :--- | :--- |

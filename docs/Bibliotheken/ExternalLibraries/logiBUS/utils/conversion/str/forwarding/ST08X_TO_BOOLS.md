@@ -48,7 +48,7 @@ Dieser Funktionsblock ist zustandslos. Er speichert keine internen Daten zwische
 *   **Anpassung der Schnittstelle:** Ermöglicht die Anbindung an andere Funktionsblöcke oder Systeme, die einzelne BOOL-Eingänge anstelle einer Struktur erwarten.
 *   **Visualisierung und Diagnose:** Vereinfacht die separate Anzeige oder Überwachung jedes einzelnen Bits einer `ST08X`-Struktur.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Dieser Funktionsblock ist speziell für die `ST08X`-Struktur konzipiert. Während generische Bit-Extraktionsfunktionen (z.B. aus einem BYTE oder WORD) ähnliche Ergebnisse liefern könnten, bietet `ST08X_TO_BOOLS` eine klar definierte, typisierte Schnittstelle für die spezifische `ST08X`-Struktur. Dies erhöht die Lesbarkeit und vermeidet potenzielle Fehler bei der manuellen Bit-Indizierung. Er ist simpler und spezifischer als Bausteine, die komplexe Bitfeld-Operationen oder variable Bitanzahlen unterstützen.
 
 ## Fazit

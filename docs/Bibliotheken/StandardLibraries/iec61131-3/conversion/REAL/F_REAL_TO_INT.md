@@ -41,7 +41,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - **Datenkonvertierung**: Umwandlung von Sensorwerten (Fließkommazahlen) in Ganzzahlen für weitere Verarbeitung.
 - **Schnittstellenkompatibilität**: Anpassung von Daten zwischen Systemen, die unterschiedliche Datentypen erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_TRUNC**: Konvertiert REAL zu INT durch Abschneiden der Nachkommastellen, während `F_REAL_TO_INT` eine standardmäßige Rundung durchführt.
 - **F_ROUND**: Rundet REAL zu INT, ähnlich wie `F_REAL_TO_INT`, aber mit spezifischen Rundungsregeln.
 

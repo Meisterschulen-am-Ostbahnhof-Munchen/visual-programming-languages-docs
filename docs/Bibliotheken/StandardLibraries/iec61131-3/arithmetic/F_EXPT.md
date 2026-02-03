@@ -75,7 +75,7 @@ Der **F_EXPT** ist ein mathematischer Funktionsbaustein zur Berechnung von Poten
   - LREAL-Berechnungen benötigen mehr Zyklen
   - Für Echtzeitanwendungen REAL bevorzugen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal        | F_EXPT  | F_LN    | F_POWER |
 |----------------|---------|---------|---------|

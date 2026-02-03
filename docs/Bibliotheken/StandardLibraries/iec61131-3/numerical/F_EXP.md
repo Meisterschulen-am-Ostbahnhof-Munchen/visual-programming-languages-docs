@@ -50,7 +50,7 @@ Bei Eintreffen eines REQ-Ereignisses berechnet der F_EXP-Block die natürliche E
 - Signalverarbeitung und Filterung
 - Wissenschaftliche Berechnungen in industriellen Steuerungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen mathematischen Funktionenblöcken wie F_LN (natürlicher Logarithmus) oder F_POWER (Potenzfunktion) bietet F_EXP eine spezialisierte Implementierung für die Exponentialfunktion mit optimierter Performance. Die Verwendung von ANY_REAL ermöglicht breitere Kompatibilität als typspezifische Implementierungen.
 
 ## Fazit

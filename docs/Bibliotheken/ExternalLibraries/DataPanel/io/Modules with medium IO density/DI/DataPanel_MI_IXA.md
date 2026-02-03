@@ -52,7 +52,7 @@ Der Baustein verfügt über einen initialisierten und einen Betriebszustand. Nac
 - Verwendung in Steuerungssystemen mit SA-Bus-Kommunikation
 - Abstraktion von Hardware-Eingängen in standardisierten Schnittstellen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet DataPanel_MI_IXA erweiterte Initialisierungsmöglichkeiten und Parameterisierung über den PARAMS-Eingang. Die SA-Mitgliedsnummerierung ermöglicht eine spezifische Adressierung in größeren Systemen.
 
 ## Fazit

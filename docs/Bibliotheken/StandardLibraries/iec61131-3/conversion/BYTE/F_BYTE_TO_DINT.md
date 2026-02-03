@@ -41,7 +41,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt einmali
 - Typumwandlung in Steuerungsanwendungen, wo `BYTE`-Daten in `DINT`-Daten umgewandelt werden müssen.
 - Integration in größere Systeme, die eine Typkompatibilität zwischen verschiedenen Datenformaten erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_WORD_TO_DINT` oder `F_INT_TO_DINT` ist dieser Funktionsblock speziell auf die Umwandlung von `BYTE` zu `DINT` ausgelegt.
 - Er bietet eine einfache und direkte Lösung für diese spezifische Konvertierung.
 

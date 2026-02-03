@@ -55,7 +55,7 @@ Keine Adapter vorhanden.
 - Export von Messdaten für externe Analyse
 - Schnittstelle zu Tabellenkalkulationsprogrammen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfacheren CSV-Writern bietet dieser Block mehr Flexibilität durch 10 Datenkanäle
 - Unterstützt im Gegensatz zu fest typisierten Writern beliebige Datentypen
 - Bietet detailliertere Statusrückmeldungen als Basisversionen

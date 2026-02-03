@@ -46,7 +46,7 @@ Der Adapter unterstützt zwei grundlegende Abläufe:
 - **Überwachung von Antwortzeiten**: Warten auf eine Bestätigung (z.B. von einem Kommunikationspartner) innerhalb eines festen Zeitfensters.
 - **Prozessüberwachung**: Sicherstellen, dass ein mechanischer Vorgang innerhalb der erwarteten Zeit abgeschlossen wird.
 
-## Vergleich mit ARTimeOut
+## ⚖️ Vergleich mit ARTimeOut
 | Feature        | ATimeOut (dieser) | ARTimeOut |
 |----------------|-------------------|-----------|
 | Typ            | Adapter           | Adapter   |

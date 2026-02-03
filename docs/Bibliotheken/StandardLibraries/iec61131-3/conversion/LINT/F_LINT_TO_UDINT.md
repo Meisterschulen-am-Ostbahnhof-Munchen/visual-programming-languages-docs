@@ -41,7 +41,7 @@ Der Block hat keine internen Zustände. Die Konvertierung erfolgt unmittelbar be
 - Typumwandlung in Steuerungsanwendungen, wo 64-Bit-Werte in 32-Bit-Werte umgewandelt werden müssen.
 - Verwendung in Datenverarbeitungsketten, wo unterschiedliche Datentypen kompatibel gemacht werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Blöcke wie `F_DINT_TO_UDINT` oder `F_INT_TO_UINT` bieten Konvertierungen zwischen anderen Integer-Typen, jedoch nicht für `LINT` zu `UDINT`.
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_LINT_TO_UDINT` spezialisiert und optimiert für diese spezifische Umwandlung.
 

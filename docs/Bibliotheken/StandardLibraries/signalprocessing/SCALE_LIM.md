@@ -60,7 +60,7 @@ Der FB hat einen einfachen Zustandsautomaten:
 - Skalierung von Sensorwerten mit Überwachung von Grenzwerten
 - Prozessregelung mit definierten Betriebsbereichen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Skalierungsbausteinen bietet SCALE_LIM zusätzlich:
 - Grenzwertüberwachung
 - Möglichkeit zur Ausgabe fixer Werte bei Grenzwertüberschreitung
@@ -69,7 +69,7 @@ Im Vergleich zu einfachen Skalierungsbausteinen bietet SCALE_LIM zusätzlich:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_043](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_043.md)
 

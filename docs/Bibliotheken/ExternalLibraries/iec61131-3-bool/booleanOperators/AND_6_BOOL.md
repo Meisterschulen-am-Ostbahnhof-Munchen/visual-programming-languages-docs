@@ -51,7 +51,7 @@ Typische Anwendungen sind Sicherheits- und Freigabeketten in Steuerungslogik, be
 *   **Prozessfreigabe:** Freigabe eines Prozessschritts nur, wenn alle vorgelagerten Schritte erfolgreich abgeschlossen (`TRUE`) und alle erforderlichen Ressourcen verfügbar (`TRUE`) sind.
 *   **Mehrfachsensor-Abfrage:** Auswertung mehrerer Sensoren, die alle ein Signal geben müssen, um eine Position oder einen Zustand zu bestätigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **AND (mit 2 Eingängen):** Der Standard-`AND`-Block hat typischerweise nur zwei Eingänge. `AND_6_BOOL` bietet eine spezialisierte, kompaktere Darstellung für Anwendungen mit genau sechs Eingängen, ohne dass mehrere Blöcke verkettet werden müssen. Siehe: [AND_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_6.md)
 *   **GEN_AND (Generischer UND-Baustein):** `AND_6_BOOL` ist eine konkrete Instanz dieses generischen Typs. Andere Instanzen könnten eine andere Anzahl von Eingängen haben (z.B. `AND_4_BOOL`).
 *   **OR_6_BOOL:** Ein ähnlicher Baustein, der jedoch eine logische ODER-Verknüpfung durchführt, bei der das Ergebnis `TRUE` ist, wenn mindestens ein Eingang `TRUE` ist.

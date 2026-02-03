@@ -50,7 +50,7 @@ Keine Adapter vorhanden.
 - Export von Messdaten für weitere Analysen.
 - Automatisierte Datenspeicherung in industriellen Steuerungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfachen Dateischreib-Blöcken bietet `CSV_WRITER_1` eine detaillierte Statusrückmeldung und Unterstützung für generische Datentypen.
 - Andere Blöcke könnten auf bestimmte Datentypen beschränkt sein oder weniger Feedback bieten.
 

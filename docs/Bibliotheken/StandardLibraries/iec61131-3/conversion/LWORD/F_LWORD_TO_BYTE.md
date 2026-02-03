@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` aus
 - Kommunikation mit Geräten, die nur BYTE-Daten verarbeiten können.
 - Speicheroptimierung in Systemen mit begrenzten Ressourcen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_WORD_TO_BYTE**: Konvertiert einen 16-Bit-Wert (WORD) in einen BYTE.
 - **F_DWORD_TO_BYTE**: Konvertiert einen 32-Bit-Wert (DWORD) in einen BYTE.
 - **F_LWORD_TO_WORD**: Konvertiert einen 64-Bit-Wert in einen 16-Bit-Wert.

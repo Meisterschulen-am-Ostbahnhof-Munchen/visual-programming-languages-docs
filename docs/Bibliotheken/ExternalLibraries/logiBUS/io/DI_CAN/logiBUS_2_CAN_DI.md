@@ -40,7 +40,7 @@ Die Konstanten werden zur Laufzeit nicht verändert und dienen ausschließlich d
 - Pin-Zuordnung in verteilten E/A-Systemen
 - Fehlerbehandlung bei nicht konfigurierten Eingängen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einfachen numerischen Konstanten bieten diese strukturierten Konstanten:
 - Höhere Typsicherheit durch strukturierte Datentypen

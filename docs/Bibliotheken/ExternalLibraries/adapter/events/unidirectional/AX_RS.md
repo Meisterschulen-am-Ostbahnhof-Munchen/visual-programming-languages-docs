@@ -65,7 +65,7 @@ Der Funktionsblock verfügt über drei Zustände im ECC:
 - **[AX_SR](AX_SR.md)**: Funktional identisch, Eingänge im Symbol vertauscht.
 - **[E_RS](../../../../StandardLibraries/events/E_RS.md)**: Das Standard-Äquivalent mit direkten Daten-/Ereignisausgängen statt Adaptern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Flip-Flop-Implementierungen:
 - Verwendet Adapter-basierte Kommunikation statt direkter Datenausgänge
 - Ereignisgesteuerte Zustandsänderungen
@@ -78,7 +78,7 @@ Vergleich mit [E_RS](../../../../StandardLibraries/events/E_RS.md)
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_006b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006b_AX.md)
 * [Uebung_020a_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020a_AX.md)

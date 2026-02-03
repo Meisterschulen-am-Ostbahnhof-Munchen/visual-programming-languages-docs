@@ -43,7 +43,7 @@ Dieses Konstantenpaket ist besonders nützlich in Anwendungen, die eine begrenzt
 *   **ISOBUS-konforme Anwendungen (UT/Universal Terminal):** Standardisierung von Farbwerten in landwirtschaftlichen Anwendungen, die das ISOBUS-Protokoll verwenden, um eine konsistente Darstellung auf verschiedenen Terminalgeräten zu gewährleisten.
 *   **Code-Verbesserung:** Ersetzen von undurchsichtigen Zahlenwerten in Algorithmen oder Konfigurationen durch selbsterklärende Bezeichner.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken, die Logik ausführen oder Daten verarbeiten, stellt ein globales Konstantenpaket lediglich benannte Werte bereit. Alternativen wären:
 1.  **Direkte Verwendung numerischer Werte:** Führt zu schlechter lesbarem und schwerer wartbarem Code ("Magic Numbers").
 2.  **Definition von Konstanten innerhalb jedes Funktionsblocks:** Führt zu Redundanz und erschwert die zentrale Änderung von Werten.

@@ -53,7 +53,7 @@ Der Funktionsblock arbeitet zustandslos - jede REQ-Anfrage wird unabhängig vera
 - Selektive Aktivierung von Subsystemen basierend auf Betriebszuständen
 - Routing von Steuerbefehlen an verschiedene Aktoren
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Demultiplexern bietet AX_DEMUX_3:
 - Standardisierte Adapter-Schnittstellen für bessere Integration
 - Drei statt zwei Ausgangskanäle für erweiterte Flexibilität
@@ -67,7 +67,7 @@ Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_103](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
 * [Uebung_103c](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c.md)

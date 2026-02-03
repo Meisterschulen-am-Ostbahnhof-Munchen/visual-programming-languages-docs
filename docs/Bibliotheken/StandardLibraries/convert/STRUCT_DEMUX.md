@@ -54,7 +54,7 @@ Der `STRUCT_DEMUX` ist ein zustandsloser Baustein, der nach einem einfachen Anfo
 - **Verbesserung der Lesbarkeit**: Anstatt auf Strukturmember über `GET_STRUCT_VALUE` zuzugreifen, können die Member direkt als separate Datenleitungen in der Logik verwendet werden.
 - **Schnittstellenanpassung**: Anpassen von Daten, die als eine einzelne Struktur von einem Baustein kommen, an mehrere Bausteine, die einzelne Eingänge erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **`GET_STRUCT_VALUE`**: Während `GET_STRUCT_VALUE` einen einzelnen Member dynamisch über einen `STRING`-Namen extrahiert, legt `STRUCT_DEMUX` alle Member statisch als separate Ausgänge frei. `STRUCT_DEMUX` ist oft einfacher zu verwenden, wenn alle Member benötigt werden, während `GET_STRUCT_VALUE` flexibler ist, wenn nur bestimmte Member zur Laufzeit adressiert werden müssen.
 - **`STRUCT_MUX`**: Der komplementäre Baustein, der einzelne Daten-Eingänge zu einer einzigen Datenstruktur zusammenfügt.
 
@@ -75,7 +75,7 @@ Der `STRUCT_DEMUX` ist ein zustandsloser Baustein, der nach einem einfachen Anfo
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_051](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_051.md)
 * [Uebung_120](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_120.md)

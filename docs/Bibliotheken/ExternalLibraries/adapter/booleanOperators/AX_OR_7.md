@@ -58,7 +58,7 @@ Da es sich um einen rein kombinatorischen Baustein ohne Ereignissteuerung handel
 - Überwachungssysteme mit mehreren Sensoren
 - Verknüpfung mehrerer Freigabesignale
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-ODER-Bausteinen bietet AX_OR_7 die Besonderheit von sieben Eingängen, was die Verkabelung vereinfacht, da weniger Bausteine in Reihe geschaltet werden müssen. Die Verwendung von Adaptern statt direkter Datenanschlüsse ermöglicht eine flexiblere Integration in verschiedene Systemarchitekturen.
 
 Vergleich mit [OR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_7.md)

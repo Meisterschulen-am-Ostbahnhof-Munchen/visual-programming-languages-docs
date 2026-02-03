@@ -47,14 +47,14 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DO_S` keinen int
 2.  **Strukturierte Parameterübergabe:** In komplexeren Applikationen können mehrere `logiBUS_DO_S`-Instanzen in Arrays oder weiteren Strukturen organisiert werden, um die Konfiguration aller Ausgänge einer Station zentral zu verwalten.
 3.  **Initialisierung:** Der Standardinitialwert ermöglicht es, Variablen dieses Typs zu deklarieren, ohne sie sofort befüllen zu müssen. Die eigentliche Konfiguration (Zuweisung einer gültigen Pin-Nummer) kann zu einem späteren Zeitpunkt im Programmablauf erfolgen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Einfacher `USINT`:** Der direkte Einsatz eines `USINT`-Werts für die Pin-Nummer ist möglich, bietet aber weniger semantische Klarheit und Typsicherheit. Der `logiBUS_DO_S` macht die Absicht des Datenelements explizit.
 *   **`logiBUS_DI_S`:** Dies ist das strukturelle Gegenstück für digitale Eingänge (DI). Es hat eine identische Struktur (ein `USINT`-Feld `Pin`), gehört aber konzeptionell zur Eingabeseite. Die Trennung in DO- und DI-Structs verbessert die Lesbarkeit und Wartbarkeit des Codes.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_003a_AX_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
 * [Uebung_003a_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003a_sub.md)

@@ -39,7 +39,7 @@ Bei `USERFUNC_e` handelt es sich um eine Sammlung globaler Konstanten und nicht 
 *   **Konfiguration:** Parametrierung von Netzwerkdiensten, die nur für bestimmte Geräterollen (z.B. `file_server`) verfügbar sein sollen.
 *   **Diagnose:** Lesbare Ausgabe von Geräterollen in Diagnoseprotokollen oder auf Benutzeroberflächen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken, die eine aktive Logik enthalten, ist `USERFUNC_e` eine passive Datentyp-/Konstantendefinition. Sie ist vergleichbar mit einem `ENUM`-Datentyp in höheren Programmiersprachen oder einer `CONSTANT`-Sektion in strukturiertem Text (ST). Ihr primärer Zweck ist die Bereitstellung semantisch bedeutsamer Namen für numerische Werte, die im ISOBUS-Kontext verwendet werden.
 
 ## Fazit

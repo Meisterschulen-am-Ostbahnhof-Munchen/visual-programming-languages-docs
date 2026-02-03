@@ -41,7 +41,7 @@ Siehe `sequence_E_08_loop`.
 ## Anwendungsszenarien
 Für zyklische ereignisgesteuerte 8-stufige Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_E_08_loop**: Standardvariante ohne Adapter.
 
 
@@ -49,7 +49,7 @@ Für zyklische ereignisgesteuerte 8-stufige Sequenzen mit Adapteranbindung.
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_040_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_040_AX.md)
 

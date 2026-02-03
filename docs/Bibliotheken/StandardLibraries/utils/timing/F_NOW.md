@@ -55,7 +55,7 @@ Die Funktion dient als Wrapper für die ST-Funktion NOW().
 | 14.04.2025 15:30:45 | DT#2025-04-14-15:30:45 |
 | 31.12.2024 23:59:59 | DT#2024-12-31-23:59:59 |
 
-## Vergleich mit ähnlichen Funktionen
+## ⚖️ Vergleich mit ähnlichen Funktionen
 
 | Feature | F_NOW | NOW | TIME() |
 |---------|-------|-----|--------|

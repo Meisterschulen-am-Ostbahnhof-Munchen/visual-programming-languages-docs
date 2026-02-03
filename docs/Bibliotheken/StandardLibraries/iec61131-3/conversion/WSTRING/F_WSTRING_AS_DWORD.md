@@ -41,7 +41,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung wird bei jedem
 - Konvertierung von Benutzereingaben (z.B. über HMI) in numerische Werte für die Steuerung.
 - Verarbeitung von Zeichenketten, die numerische Informationen enthalten, in Steuerungsalgorithmen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_STRING_AS_DWORD` ist dieser speziell für WSTRING-Eingaben ausgelegt.
 - Ähnliche Bausteine könnten zusätzliche Parameter oder Fehlerbehandlung bieten, dieser Funktionsblock ist jedoch auf die grundlegende Konvertierung beschränkt.
 

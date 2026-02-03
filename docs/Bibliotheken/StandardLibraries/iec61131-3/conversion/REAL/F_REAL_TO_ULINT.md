@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` aus
 - Typumwandlung in Steuerungsanwendungen, wo Fließkommazahlen in vorzeichenlose Ganzzahlen umgewandelt werden müssen.
 - Datenverarbeitung in industriellen Automatisierungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine wie `F_REAL_TO_INT` oder `F_REAL_TO_LINT` führen Konvertierungen in andere Ganzzahltypen durch. `F_REAL_TO_ULINT` ist spezifisch für 64-Bit vorzeichenlose Ganzzahlen.
 
 ## Fazit

@@ -58,7 +58,7 @@ Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A
 - **Fehlerbehandlung**: Alternative Fehlerroutinen
 - **Testautomation**: Umschaltung Test-/Normalbetrieb
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | E_SELECT | E_SWITCH | E_MERGE |
 |---------------|----------|----------|---------|
@@ -71,7 +71,7 @@ Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_095](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_095.md)
 

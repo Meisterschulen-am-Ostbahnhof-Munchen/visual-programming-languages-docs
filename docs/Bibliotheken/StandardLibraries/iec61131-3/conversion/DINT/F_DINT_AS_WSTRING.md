@@ -43,7 +43,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Protokollierung von numerischen Daten in Textform.
 - Vorbereitung von Daten für Text-basierte Kommunikationsprotokolle.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_INT_AS_WSTRING` verarbeitet dieser Block 32-Bit statt 16-Bit Ganzzahlen.
 - Ähnliche Blöcke wie `F_DINT_AS_STRING` konvertieren in ASCII- statt Unicode-Zeichenketten.
 

@@ -44,7 +44,7 @@ Diese Konstanten werden typischerweise in Funktionsblöcken verwendet, die:
 3.  Den Zustand anderer Netzwerkteilnehmer (Controller Applications, ECUs) verwalten.
 4.  Diagnose- oder Logging-Funktionen bereitstellen, die Netzwerkereignisse protokollieren.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken (FB) oder Basis-Funktionsblöcken (BFB) enthält eine Globale Konstantendatei keine ausführbare Logik oder Algorithmen. Sie ist vergleichbar mit einer Header-Datei in C/C++ oder einem `ENUM` in höheren Programmiersprachen. Ihr Zweck ist ausschließlich die Definition von unveränderlichen Werten für die gesamte Anwendung.
 
 ## Fazit

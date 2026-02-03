@@ -57,7 +57,7 @@ Der SUBSCRIBE_3 Block initialisiert sich über das INIT-Ereignis und stellt eine
 - Kommunikation zwischen verschiedenen Steuerungsebenen
 - Maschine-zu-Maschine-Kommunikation in Industrie 4.0 Umgebungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren SUBSCRIBE-Blöcken bietet SUBSCRIBE_3 die Möglichkeit, drei verschiedene Datenströme parallel zu empfangen. Die Verwendung von ANY-Datentypen ermöglicht größere Flexibilität bei den übertragenen Datenformaten.
 
 ## Fazit

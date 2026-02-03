@@ -41,7 +41,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung erfolgt unmitt
 - Typumwandlung in Steuerungsanwendungen, wo boolesche Werte in numerische Werte umgewandelt werden müssen.
 - Integration in größere Systeme, die eine einheitliche Datentypverarbeitung erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsblöcken wie `F_BOOL_TO_INT` oder `F_BOOL_TO_DINT` bietet dieser Block eine höhere Präzision durch die Verwendung des `LINT`-Datentyps (64-Bit).
 
 ## Fazit

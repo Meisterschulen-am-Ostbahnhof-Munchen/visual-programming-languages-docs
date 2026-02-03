@@ -67,7 +67,7 @@ Der **F_SUB_DT_TIME** ist ein standardkonformer Funktionsbaustein zur Subtraktio
   - IN2 = T#0s → OUT = IN1
   - IN2 negativ → Addition zum Zeitpunkt
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | F_SUB_DT_TIME | F_ADD_DT_TIME | F_SUB_DT_DT |
 |---------------|---------------|---------------|-------------|

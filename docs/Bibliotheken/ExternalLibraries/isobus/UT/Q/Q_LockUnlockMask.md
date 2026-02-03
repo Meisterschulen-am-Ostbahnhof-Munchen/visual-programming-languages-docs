@@ -79,7 +79,7 @@ Der **Q_LockUnlockMask** ist ein standardkonformer Funktionsbaustein zur Steueru
 - **Energieeffizienz**: Reduzierung von Display-Updates
 - **Diagnoseprotokolle**: Gezielte Aufzeichnung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_LockUnlockMask | VtMaskControl | VtScreenLock |
 |---------------|------------------|---------------|--------------|

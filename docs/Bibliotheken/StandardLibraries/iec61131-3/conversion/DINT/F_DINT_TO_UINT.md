@@ -43,7 +43,7 @@ Der Funktionsblock führt die Konvertierung von `DINT` zu `UINT` durch, wenn das
 - Typumwandlung in Steuerungsanwendungen, wo vorzeichenbehaftete Werte in vorzeichenlose Werte umgewandelt werden müssen.
 - Datenverarbeitung in industriellen Automatisierungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_DINT_TO_UINT` spezialisiert auf die Umwandlung zwischen `DINT` und `UINT` und bietet daher eine einfachere und direktere Lösung für diesen spezifischen Anwendungsfall.
 
 ## Fazit

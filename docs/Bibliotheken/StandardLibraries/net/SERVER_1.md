@@ -61,7 +61,7 @@ Der Block kann folgende Zustände annehmen:
 - Distributed Control Systems (DCS)
 - Maschine-zu-Maschine-Kommunikation
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Kommunikationsblöcken bietet SERVER_1:
 - Spezifische Server-Funktionalität für CLIENT_1-Blöcke
 - Flexible Datenübertragung durch ANY-Typ

@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Typumwandlung in Kommunikationsprotokollen, wo verschiedene Systeme unterschiedliche Datentypen verwenden.
 - Datenverarbeitung in Steuerungssystemen, wo eine Konvertierung zwischen `BYTE` und `USINT` erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_UINT` oder `F_DWORD_TO_UDINT` führen ähnliche Konvertierungen durch, jedoch mit anderen Datentypen.
 - `F_BYTE_TO_USINT` ist spezifisch für die Konvertierung von `BYTE` zu `USINT` optimiert und daher effizienter für diesen Anwendungsfall.
 

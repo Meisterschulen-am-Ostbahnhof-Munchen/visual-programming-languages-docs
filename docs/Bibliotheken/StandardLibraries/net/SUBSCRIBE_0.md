@@ -57,7 +57,7 @@ Der SUBSCRIBE_0 Block initialisiert sich über das INIT-Ereignis und stellt dabe
 - Überwachungssysteme, die Statusdaten von verschiedenen Quellen sammeln
 - Steuerungssysteme mit losgekoppelter Kommunikation zwischen Komponenten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Kommunikationsbausteinen fokussiert sich SUBSCRIBE_0 spezifisch auf das Publisher-Subscriber-Muster und bietet eine einfache Schnittstelle für das Abonnieren von Datenströmen. Im Gegensatz zu Client-Server-Bausteinen arbeitet er asynchron und push-basiert.
 
 ## Fazit

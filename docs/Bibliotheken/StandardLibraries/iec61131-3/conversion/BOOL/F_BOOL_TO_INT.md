@@ -43,7 +43,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Umwandlung von Schaltzuständen (`TRUE`/`FALSE`) in numerische Werte für weitere Berechnungen.
 - Verwendung in Regelungstechnik, wo boolesche Signale in numerische Steuersignale umgewandelt werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_BOOL_TO_REAL**: Konvertiert `BOOL` in `REAL` (Gleitkommazahl), ähnlich wie `F_BOOL_TO_INT`, aber mit Gleitkomma-Ausgabe.
 - **F_INT_TO_BOOL**: Führt die umgekehrte Konvertierung durch (`INT` zu `BOOL`).
 

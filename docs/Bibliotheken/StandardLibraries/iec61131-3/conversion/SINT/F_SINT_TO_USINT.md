@@ -45,7 +45,7 @@ Der Funktionsblock hat einen einfachen Zustandsautomaten:
 - Konvertierung von Sensorwerten, die als vorzeichenbehaftete Werte geliefert werden, aber als vorzeichenlose Werte weiterverarbeitet werden sollen.
 - Datenaufbereitung für Kommunikationsprotokolle, die vorzeichenlose Werte erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_UINT**: Konvertiert vorzeichenbehaftete 16-Bit-Integer-Werte in vorzeichenlose 16-Bit-Integer-Werte.
 - **F_DINT_TO_UDINT**: Konvertiert vorzeichenbehaftete 32-Bit-Integer-Werte in vorzeichenlose 32-Bit-Integer-Werte.
 - **F_SINT_TO_USINT** ist spezifisch für 8-Bit-Werte und daher effizienter für diese Datengröße.

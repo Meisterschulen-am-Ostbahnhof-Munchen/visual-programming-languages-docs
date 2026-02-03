@@ -70,7 +70,7 @@ Das `RESET`-Ereignis führt in einen dedizierten Reset-Zustand (`sRESET`), der a
 *   Steuerung einer Belichtungs- oder Spülsequenz in der Halbleiterfertigung.
 *   Allgemeine Zustandsautomaten, bei denen Schritte sowohl durch Sensorik (Ereignis) als auch durch feste Zeiten vorangetrieben werden können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Sequenzern (z.B. `E_SR` oder `E_CTU` in Reihe) bietet `sequence_ET_08` eine vollständig vordefinierte Schrittkette mit integrierter Zeitsteuerung und dedizierten Ausgängen pro Schritt. Im Gegensatz zu einer individuell programmierten SFC (Sequential Function Chart) ist die Logik fest verdrahtet, was die Anwendung einfacher, aber auch weniger flexibel macht. Bausteine wie `E_DELAY` müssten extern hinzugefügt werden, während hier die Zeitfunktionalität integriert ist.
 
 ## Fazit

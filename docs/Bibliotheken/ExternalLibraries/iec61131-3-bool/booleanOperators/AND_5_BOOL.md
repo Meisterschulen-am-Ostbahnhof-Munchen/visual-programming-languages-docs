@@ -53,7 +53,7 @@ Typische Anwendungen sind Sicherheits- und Freigabeketten in der Automatisierung
 *   Prüfung, ob alle erforderlichen Medien (Druck, Vakuum, Kühlung) verfügbar sind, bevor ein Prozess gestartet wird.
 *   Verknüpfung mehrerer Sensor- oder Schalterzustände zu einer gemeinsamen Freigabelogik.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`AND_2_BOOL` / `AND_3_BOOL` etc.**: Grundlegende UND-Bausteine mit zwei, drei oder vier Eingängen. `AND_5_BOOL` erweitert diese Logik auf fünf Eingänge, ohne dass mehrere Blöcke verkettet werden müssen. Siehe: [AND_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_5.md)
 *   **`GEN_AND`**: Der zugrundeliegende generische Baustein. `AND_5_BOOL` ist eine vorkonfigurierte, nicht veränderbare Instanz davon mit fester Eingangsanzahl.
 *   **OR-Bausteine**: Führen eine logische ODER-Verknüpfung durch. Während `AND_5_BOOL` nur bei allen `TRUE`-Eingängen ein `TRUE` ausgibt, geben OR-Bausteine bereits bei einem `TRUE`-Eingang ein `TRUE` aus.

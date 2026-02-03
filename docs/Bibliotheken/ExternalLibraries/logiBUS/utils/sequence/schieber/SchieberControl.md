@@ -76,7 +76,7 @@ Die ECC umfasst folgende Hauptzustände:
 *   **Anbindung an Bedienpanels (HMI)**, da strukturierte Daten für Taster, Softkeys und Anzeigen bereitgestellt werden.
 *   **Protokollierung und Visualisierung** des Schieberzustands über den `STATE`-String-Ausgang.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren binären Aktor-Bausteinen (z. B. einem einfachen Zylinder-FB) bietet `SchieberControl` eine deutlich höhere Funktionalität:
 *   **Vollständige Zustandsmaschine** mit Bewegungs-, End- und Stopp-Zuständen.
 *   **Integrierte Zeitsteuerung** für die Bewegung.

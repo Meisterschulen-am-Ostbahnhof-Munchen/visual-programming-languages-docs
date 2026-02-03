@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Integration in Steuerungssysteme, wo unterschiedliche Datentypen verarbeitet werden müssen.
 - Verwendung in Regelungstechnik, wo präzise Gleitkommaberechnungen erforderlich sind.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_DINT_TO_LREAL` spezialisiert auf die Umwandlung von `DINT` zu `LREAL` und bietet daher eine höhere Effizienz und Lesbarkeit im Code.
 - Andere Bausteine könnten zusätzliche Funktionen wie Skalierung oder Begrenzung bieten, was hier nicht der Fall ist.
 

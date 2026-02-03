@@ -51,7 +51,7 @@ Der **E_MERGE** ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der 
 - **Fehlermanagement**: Sammelstelle für verschiedene Störmeldungen
 - **Prozesssteuerung**: Verknüpfung von Prozessereignissen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | E_MERGE | E_DEMUX | E_SWITCH |
 |---------------|---------|---------|----------|
@@ -73,7 +73,7 @@ Diese Bausteine erlauben die einfache Zusammenführung von bis zu vier Ereignisq
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_004a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a2.md)
 * [Uebung_004a2_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a2_AX.md)

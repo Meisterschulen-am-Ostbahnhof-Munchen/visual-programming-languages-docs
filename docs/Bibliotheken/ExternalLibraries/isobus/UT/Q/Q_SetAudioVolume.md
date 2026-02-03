@@ -79,7 +79,7 @@ Der **Q_SetAudioVolume** ist ein standardkonformer Funktionsbaustein zur Lautst�
 - **Bedienkomfort**: Benutzerdefinierte Audioeinstellungen
 - **Nachtbetrieb**: Automatische Lautstärkereduzierung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_SetAudioVolume | VtAudioControl | VtSoundManager |
 |---------------|------------------|----------------|----------------|

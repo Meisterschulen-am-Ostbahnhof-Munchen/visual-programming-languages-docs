@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Konvertierung von Sensorwerten (z.B. Temperaturmessungen) für die Verarbeitung in Ganzzahl-basierten Systemen.
 - Vorbereitung von Fließkommawerten für die Ausgabe auf Ganzzahl-Displays oder -Schnittstellen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - `F_REAL_TO_INT`: Konvertiert REAL (32-Bit Fließkommazahl) zu INT.
 - `F_LREAL_TO_DINT`: Konvertiert LREAL zu DINT (32-Bit Ganzzahl) für einen größeren Wertebereich.
 

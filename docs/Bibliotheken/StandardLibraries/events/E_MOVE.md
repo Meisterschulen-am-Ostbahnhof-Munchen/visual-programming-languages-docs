@@ -47,14 +47,14 @@ Dieser Mechanismus reduziert die Anzahl der Ereignisse im System, indem er nur b
 - **Flankenerkennung für nicht-boolesche Werte**: Erkennen, wann sich ein analoger Wert oder ein Status ändert.
 - **Schnittstelle zu langsamen Systemen**: Sicherstellen, dass ein Befehl an ein unterlagertes System nur gesendet wird, wenn sich der Sollwert tatsächlich ändert.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **`E_D_FF`**: Funktional sehr ähnlich, aber `E_D_FF` ist spezifisch auf den Datentyp `BOOL` ausgelegt. `E_MOVE` ist die generische `ANY`-Variante davon.
 - **Direkte Verbindung**: Im Gegensatz zu einer direkten Verbindung von Daten und Ereignissen, die bei jeder Ausführung weitergeleitet werden, fügt `E_MOVE` eine "Änderungs-Firewall" ein.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_171](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_171.md)
 

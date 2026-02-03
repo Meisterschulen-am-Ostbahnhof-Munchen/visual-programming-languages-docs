@@ -41,7 +41,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Typumwandlung in Steuerungsanwendungen, wo `BYTE`-Werte in `LINT`-Werte umgewandelt werden müssen.
 - Verwendung in Datenverarbeitungsketten, wo unterschiedliche Datentypen verarbeitet werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_LINT` oder `F_DWORD_TO_LINT` bieten ähnliche Funktionalitäten, jedoch für andere Eingangstypen.
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_BYTE_TO_LINT` spezialisiert und optimiert für die Konvertierung von `BYTE` zu `LINT`.
 

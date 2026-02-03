@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Schnittstellen zwischen Systemen mit unterschiedlichen Datentypanforderungen.
 - Einfache Typumwandlungen in Automatisierungsanwendungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_USINT_TO_LREAL` spezialisiert und daher effizienter für diese spezifische Konvertierung.
 - Andere Blöcke könnten zusätzliche Funktionen wie Skalierung oder Bereichsprüfungen bieten, was hier nicht erforderlich ist.
 

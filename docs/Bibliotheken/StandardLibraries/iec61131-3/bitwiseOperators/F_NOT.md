@@ -50,7 +50,7 @@ Bei Empfang eines REQ-Ereignisses führt der F_NOT-Block eine bitweise logische 
 - Logische Verneinung von Bedingungen
 - Signalumkehr in digitalen Schaltungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen logischen Operationen wie F_AND oder F_OR führt F_NOT ausschließlich eine unäre Operation (ein Operand) durch, während andere logische Bausteine typischerweise binäre Operationen (zwei Operanden) implementieren.
 
 
@@ -58,7 +58,7 @@ Im Vergleich zu anderen logischen Operationen wie F_AND oder F_OR führt F_NOT a
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_006a3_sub](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006a3_sub.md)
 

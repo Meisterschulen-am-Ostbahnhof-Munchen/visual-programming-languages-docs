@@ -46,7 +46,7 @@ Der Funktionsblock besitzt keinen internen Zustand und arbeitet stateless. Jedes
 - Umwandlung bidirektionaler Signale in unabhängige Einzelereignisse
 - Schnittstellenanpassung zwischen verschiedenen Kommunikationsprotokollen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Adapter-Blöcken bietet dieser Composite-Funktionsblock eine spezifische Konvertierung von ASR- zu Ereignissignalen, während generische Adapter eine allgemeinere Schnittstellenanpassung ermöglichen.
 
 ## Fazit

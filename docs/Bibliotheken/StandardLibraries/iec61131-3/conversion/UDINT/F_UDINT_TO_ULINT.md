@@ -49,7 +49,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - **Datenkompatibilität**: Wird verwendet, wenn Systeme mit unterschiedlichen Integer-Größen kommunizieren müssen.
 - **Erweiterung des Wertebereichs**: Ermöglicht die Verwendung von UDINT-Werten in Kontexten, die ULINT erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_UDINT_TO_LINT**: Konvertiert UDINT in einen 64-Bit-signed-Integer (LINT). Im Gegensatz dazu behält `F_UDINT_TO_ULINT` den unsigned-Charakter bei.
 - **F_DINT_TO_ULINT**: Konvertiert einen 32-Bit-signed-Integer (DINT) in ULINT. `F_UDINT_TO_ULINT` ist spezifisch für unsigned-Werte.
 

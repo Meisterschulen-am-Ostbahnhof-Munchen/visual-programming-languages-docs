@@ -60,7 +60,7 @@ Die Operation wird für jedes Bit der Eingangswerte separat durchgeführt:
 - Logische Verknüpfungen in digitalen Schaltungen
 - Datenvorverarbeitung in Kommunikationsprotokollen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen logischen Verknüpfungsblöcken:
 - AND_2 ist generisch und unterstützt verschiedene Bit-Datentypen
 - Arbeitet bitweise im Gegensatz zu rein booleschen UND-Blöcken
@@ -71,7 +71,7 @@ Im Vergleich zu anderen logischen Verknüpfungsblöcken:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a.md)
 * [Uebung_002a_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a_AX.md)

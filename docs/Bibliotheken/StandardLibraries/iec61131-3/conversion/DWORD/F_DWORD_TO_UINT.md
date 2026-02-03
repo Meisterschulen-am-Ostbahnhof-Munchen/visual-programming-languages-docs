@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine komplexen Zu
 - Typumwandlung in Kommunikationsschnittstellen, wo unterschiedliche Systeme verschiedene Datentypen verwenden.
 - Datenverarbeitung in Steuerungssystemen, wo eine Konvertierung zwischen `DWORD` und `UINT` erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_WORD_TO_UINT` oder `F_BYTE_TO_UINT` ist dieser speziell für die Umwandlung von `DWORD` zu `UINT` optimiert.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Fehlerbehandlungen bieten, was dieser Funktionsblock nicht tut.
 

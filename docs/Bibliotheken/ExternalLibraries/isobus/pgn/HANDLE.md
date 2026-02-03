@@ -47,7 +47,7 @@ Da es sich um eine statische Konstantendefinition handelt, gibt es keine Zustand
 *   **Broadcast-Kommunikation:** Ein Senderblock kann den `GLOBAL`-Handle verwenden, um eine Nachricht an alle Teilnehmer im ISOBUS-Netzwerk zu adressieren, anstatt an einen spezifischen Empfänger.
 *   **Vergleiche:** Die Lesbarkeit von Bedingungen wie `IF currentHandle = UNVALID THEN ...` oder `IF targetHandle = GLOBAL THEN ...` wird deutlich verbessert.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`CONSTANT`-Funktionsblock:** Ein generischer `CONSTANT`-Block kann einen festen Wert ausgeben, ist aber eine Instanz innerhalb eines Funktionsblocknetzwerks. Die `HANDLE`-Globalkonstante ist eine zentrale, paketweite Definition, die nicht instanziiert werden muss und direkt über ihren Namen referenziert wird.
 *   **Direkte Werteingabe:** Anstatt `UNVALID` oder `GLOBAL` zu verwenden, könnten die numerischen Werte (`-1`, `32767`) direkt in die Blöcke eingegeben werden. Die Verwendung der Konstanten ist jedoch die deutlich bessere Praxis, da sie den Code selbsterklärender und änderungsresistenter macht (Änderungen nur an einer Stelle).
 

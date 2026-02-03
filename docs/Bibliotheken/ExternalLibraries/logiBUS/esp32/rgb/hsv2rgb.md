@@ -51,13 +51,13 @@ Der Funktionsblock besitzt einen einfachen, zustandslosen Ablauf:
 *   **Visualisierungs-Systeme:** Konvertierung von in HSV definierten Alarm- oder Statusfarben für die Darstellung auf RGB-Monitoren oder -Panels.
 *   **Industrielle Beleuchtung:** Dynamische Lichtsteuerung in Produktions- oder Logistikumgebungen, bei der Farbübergänge intuitiv über Helligkeit und Sättigung definiert werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu universellen Rechenbausteinen (wie `MUL`, `ADD`) oder Skalierern ist `hsv2rgb` ein anwendungsspezifischer Baustein, der einen komplexen, nicht-linearen Algorithmus kapselt. Er erspart dem Anwender die aufwändige und fehleranfällige Implementierung der Konvertierung in Structured Text oder anderen Sprachen. Ein direkter Gegenpart `rgb2hsv` für die umgekehrte Konvertierung wäre ein ähnlich spezialisierter Baustein.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_031](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_031.md)
 

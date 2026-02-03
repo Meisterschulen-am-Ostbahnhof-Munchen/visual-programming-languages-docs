@@ -47,13 +47,13 @@ Der Funktionsblock berechnet den Restwert (DIST_REMAINDER) der Summe aus zurück
 - Erzeugung von periodischen Signalen basierend auf Wegstrecken
 - Positionsabhängige Steuerung in Fahrzeug- oder Förderanlagen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einfachen Zeitgebern arbeitet dieser FB mit Distanzwerten statt Zeitintervallen. Er bietet mehr Flexibilität durch den Offset-Parameter und ermöglicht die Definition von individuellen HIGH- und LOW-Phasen.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_071b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071b.md)
 * [Uebung_072b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072b.md)

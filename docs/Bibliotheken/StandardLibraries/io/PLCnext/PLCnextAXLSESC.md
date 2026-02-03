@@ -53,7 +53,7 @@ Der PLCnextAXLSESC-Baustein dient als Vermittler zwischen der 4diac-Steuerung un
 - Überwachung und Steuerung von industriellen Automatisierungsprozessen
 - Bridge-Funktionalität zwischen 4diac und PLCnext-Ökosystem
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen IO-Bausteinen bietet PLCnextAXLSESC spezifische Anpassungen für die PLCnext-Plattform, insbesondere durch die integrierten Busadapter. Während Standard-IO-Bausteine allgemeine Schnittstellen bereitstellen, ist dieser Baustein speziell auf die Anforderungen der PLCnext-Architektur optimiert.
 
 ## Fazit

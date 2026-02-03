@@ -48,7 +48,7 @@ Der Funktionsblock besitzt keine internen Zustände und arbeitet stateless. Jede
 - Konvertierung von Taster-/Schaltersignalen in standardisierte Bewegungssignale
 - Antriebssteuerungen mit Vorwärts-/Rückwärtsfunktion
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konvertierungsbausteinen bietet A2X_BOOL_TO_2X die spezifische Kombination aus zwei booleschen Eingängen mit einem standardisierten A2X-Interface. Andere Bausteine könnten einzelne BOOL-zu-A2X-Konvertierungen durchführen, dieser Baustein kombiniert jedoch beide Richtungen in einer einzigen Komponente.
 
 ## Fazit

@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, indem er den USINT-Wert `IN` 
 - Kommunikation zwischen Geräten mit unterschiedlichen Datentypen.
 - Vorverarbeitung von Sensordaten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine wie `F_INT_TO_REAL` oder `F_BOOL_TO_INT` bieten Konvertierungen zwischen anderen Datentypen.
 - `F_USINT_TO_SINT` ist spezialisiert auf die Konvertierung zwischen 8-Bit-Integer-Typen.
 

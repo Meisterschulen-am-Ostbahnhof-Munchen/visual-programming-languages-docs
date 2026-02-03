@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Umwandlung von numerischen Werten für die Protokollierung in Textdateien.
 - Integration in Systeme, die String-basierte Kommunikation erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_INT_AS_STRING` oder `F_BOOL_AS_STRING` ist dieser speziell für REAL-Werte ausgelegt.
 - Einfacher und direkter als universelle Konvertierungsbausteine, die möglicherweise zusätzliche Parameter benötigen.
 

@@ -79,7 +79,7 @@ Der **Q_StringValue** ist ein standardkonformer Funktionsbaustein zur dynamische
 - **Prozessvisualisierung**: Echtzeit-Daten
 - **Benutzerkommunikation**: Dialoge und Hinweise
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_StringValue | VtTextUpdate | VtStringManager |
 |---------------|---------------|--------------|-----------------|
@@ -93,7 +93,7 @@ Der **Q_StringValue** ist ein standardkonformer Funktionsbaustein zur dynamische
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_012c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012c.md)
 

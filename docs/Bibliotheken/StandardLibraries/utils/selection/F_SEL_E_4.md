@@ -49,14 +49,14 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weitergabe erfo
 - Multiplexing von Steuersignalen in Automatisierungssystemen.
 - Flexible Datenweiterleitung in Abhängigkeit von externen Ereignissen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Selektoren bietet F_SEL_E_4 eine ereignisbasierte Steuerung, was eine präzisere Auswahl ermöglicht als zeit- oder zustandsbasierte Alternativen.
 - Die Unterstützung des ANY-Datentyps macht ihn flexibler als typenspezifische Selektoren.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_019a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019a.md)
 * [Uebung_019b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019b.md)

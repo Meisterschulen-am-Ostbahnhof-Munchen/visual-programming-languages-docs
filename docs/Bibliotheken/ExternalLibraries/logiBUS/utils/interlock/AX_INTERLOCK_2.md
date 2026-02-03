@@ -64,7 +64,7 @@ Die Toggle-Funktion wird durch die `CLK1`- und `CLK2`-Eingänge realisiert. Ein 
 *   **Betriebsartenschaltung**: Umschaltung zwischen zwei verschiedenen Betriebsarten einer Maschine (z.B. "Automatik" / "Manuell"), wobei sichergestellt wird, dass nur eine aktiv ist.
 *   **Toggle-Funktion mit Sicherheit**: Bereitstellung einer Toggle-Funktion (z.B. für ein Hand-/Ausschaltgerät), die mit einer gegenseitigen Verriegelung kombiniert ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **E_RS / E_SR (Bistabile Flip-Flops)**: Diese klassischen Bausteine bieten Set/Reset für einen einzigen Ausgang. Der `AX_INTERLOCK_2` erweitert dieses Konzept um einen zweiten Kanal mit integrierter gegenseitiger Verriegelung und separaten Toggle-Eingängen.
 *   **E_TOGGLE**: Bietet eine reine Toggle-Funktion für einen Ausgang. Der `AX_INTERLOCK_2` bietet Toggle-Funktionalität für zwei Kanäle, jedoch mit dem wesentlichen Zusatz der zwingenden gegenseitigen Ausschließlichkeit (Interlock).
 *   **E_D_FF (D-Flip-Flop)**: Übernimmt einen Datenwert taktgesteuert. Der `AX_INTERLOCK_2` hat keine Dateneingänge; sein Zustand wird ausschließlich durch die Ereigniseingänge bestimmt.

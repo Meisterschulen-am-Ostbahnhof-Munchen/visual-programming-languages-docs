@@ -45,7 +45,7 @@ Bei Auslösung des `REQ`-Ereignisses wird der Eingabewert `IN` vom Typ LREAL mit
 - Protokollierung von Messwerten in Textdateien.
 - Vorbereitung von Daten für die Kommunikation mit Systemen, die String-Daten erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_REAL_AS_WSTRING` verarbeitet dieser Baustein 64-Bit Fließkommazahlen statt 32-Bit.
 - Ähnlich zu `F_DINT_AS_WSTRING`, aber für Fließkommazahlen statt Ganzzahlen.
 

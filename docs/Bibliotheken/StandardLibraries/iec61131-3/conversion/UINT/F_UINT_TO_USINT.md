@@ -42,7 +42,7 @@ Der Funktionsblock ist zustandslos und führt die Konvertierung bei jedem `REQ`-
 - **Datenreduktion**: Verwendung in Systemen, wo Speicherplatz begrenzt ist und eine Reduktion der Datengröße erforderlich ist.
 - **Protokollanpassung**: Anpassung von Datenformaten für Kommunikationsprotokolle, die nur 8-Bit-Daten unterstützen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_UINT_TO_SINT**: Konvertiert UINT in einen vorzeichenbehafteten 8-Bit-Integer (SINT), wobei der Wertebereich anders behandelt wird.
 - **F_UINT_TO_INT**: Behält die 16-Bit-Größe bei, konvertiert aber in einen vorzeichenbehafteten Typ.
 

@@ -42,14 +42,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 - Typumwandlung in Steuerungsanwendungen, bei denen BYTE-Werte in UDINT-Werte umgewandelt werden müssen.
 - Integration in größere Steuerungssysteme, die eine einheitliche Datenverarbeitung erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_WORD_TO_UDINT` oder `F_DWORD_TO_UDINT` ist dieser Baustein speziell für die Konvertierung von `BYTE` zu `UDINT` optimiert.
 - Ähnliche Bausteine können unterschiedliche Eingangsdatentypen verarbeiten, sind aber ansonsten in ihrer Funktionsweise vergleichbar.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_011a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011a.md)
 

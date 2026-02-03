@@ -49,7 +49,7 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem `R
 - Fehlererkennung in Datenübertragungen.
 - Logische Steuerungen in Automatisierungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **XOR (Standard)**: Bietet typischerweise nur zwei Eingänge, während `XOR_7` sieben Eingänge unterstützt.
 - **AND/OR-Blöcke**: Führen andere logische Operationen durch, während `XOR_7` spezifisch für die XOR-Operation optimiert ist.
 

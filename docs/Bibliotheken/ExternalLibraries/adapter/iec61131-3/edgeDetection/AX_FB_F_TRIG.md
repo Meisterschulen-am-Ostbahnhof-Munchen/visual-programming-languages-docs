@@ -71,7 +71,7 @@ Der **AX_FB_F_TRIG** eignet sich für diverse Steuerungsaufgaben, bei denen das 
 *   **Alarm-Rücksetzung:** Erkennung, wenn ein Fehlersignal nicht mehr anliegt.
 *   **Strukturierte Programmierung:** Einsatz in komplexen Anwendungen, die intensiv auf Adapter setzen, um "Spaghetti-Code" (viele einzelne Verbindungslinien) zu vermeiden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschied |
 | :--- | :--- |

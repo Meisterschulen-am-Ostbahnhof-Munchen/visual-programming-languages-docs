@@ -44,7 +44,7 @@ Der Funktionsblock setzt die beiden Eingabe-Bytes `BYTE_00` und `BYTE_01` zu ein
 - Verarbeitung von Kommunikationsprotokollen, bei denen Daten in Byte-Paaren übertragen werden.
 - Allgemeine Datenmanipulation in Steuerungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Rechenbausteinen ist `ASSEMBLE_WORD_FROM_BYTES` spezialisiert und effizienter für diese spezielle Aufgabe.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Byte-Swapping oder Fehlerbehandlung bieten, sind aber komplexer.
 

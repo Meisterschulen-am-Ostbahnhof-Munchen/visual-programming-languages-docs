@@ -1,4 +1,4 @@
-# IORevPiCore
+# 🔌 IORevPiCore
 
 ```{index} single: IORevPiCore
 ```
@@ -51,7 +51,7 @@ Der IORevPiCore Block initialisiert die Kommunikation mit der Revolution Pi Hard
 - Integration von Revolution Pi Hardware in 4diac-basierte Steuerungssysteme
 - Überwachung und Diagnose von Revolution Pi Komponenten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen I/O-Blöcken bietet IORevPiCore spezifische Optimierungen für die Revolution Pi Hardware-Plattform, einschließlich spezialisierter Bus-Kommunikation und hardwarenaher Konfigurationsparameter.
 
 ## Fazit

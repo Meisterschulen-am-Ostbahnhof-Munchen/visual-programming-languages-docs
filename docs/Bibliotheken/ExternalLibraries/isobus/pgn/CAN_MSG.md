@@ -48,7 +48,7 @@ Der `CAN_MSG`-Typ ist grundlegend für:
 *   **Nachrichten-Konstruktion**: FBs, die aus einzelnen Werten (z.B. aus Sensor-FBs) eine gültige `CAN_MSG`-Struktur für die spätere Übertragung aufbauen.
 *   **Nachrichten-Filterung/Verarbeitung**: FBs, die eingehende `CAN_MSG`-Strukturen basierend auf Priorität, Dateninhalt oder Länge analysieren und verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Als Datentyp ist `CAN_MSG` mit anderen strukturierten Typen in 4diac vergleichbar, die Kommunikationsprotokolle abbilden (z.B. `UDP_PACKET`, `MODBUS_MSG`). Sein spezifisches Merkmal ist die enge Abbildung auf die Hardware-Eigenschaften des CAN-Bus-Protokolls (Priorität, 8-Byte-Limit). Im Gegensatz zu einem TP-basierten Nachrichtentyp (z.B. für ISO 11783 oder CANopen) fehlen hier Felder für Paketierung, Sequenznummern oder spezifische Protokollkopfzeilen.
 
 ## Fazit

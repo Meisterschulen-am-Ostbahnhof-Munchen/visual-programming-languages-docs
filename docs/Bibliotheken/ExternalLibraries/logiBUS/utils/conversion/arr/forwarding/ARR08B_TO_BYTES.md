@@ -59,7 +59,7 @@ Der Funktionsblock besitzt keine internen Zustände im Sinne einer Zustandsmasch
 *   **Schnittstellen-Adapter:** Anbindung von Funktionsblöcken, die mit Array-Strukturen arbeiten, an Blöcke, die einzelne Byte-Eingänge erwarten.
 *   **Datenprotokollierung und -visualisierung:** Separierung von Array-Daten, um einzelne Bytes in HMIs oder Logging-Systemen gezielt anzuzeigen oder zu speichern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`SEL_n` / `MUX`-Blöcke:** Diese Blöcke wählen ein Element aus einem Array basierend auf einem Index aus. `ARR08B_TO_BYTES` hingegen extrahiert **alle** Elemente gleichzeitig und parallel.
 *   **`BYTES_TO_ARR08B`:** Dies ist der inverse Baustein, der acht einzelne Byte-Eingänge zu einem 8-Byte-Array zusammenfasst.
 *   **Generische Array-Zerlegungsblöcke:** Es könnten generischere Blöcke existieren, die die Array-Länge als Parameter erhalten. `ARR08B_TO_BYTES` ist durch seine feste Größe einfacher, schneller und benötigt keine Konfiguration.

@@ -47,7 +47,7 @@ Der Funktionsblock verfügt über zwei Hauptzustände:
 - Einfache Ereigniskonvertierung in Automatisierungssystemen
 - Protokollumsetzung in verteilten Steuerungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Adapter-Konvertern zeichnet sich AE2_E_TO_EVENT durch seine spezifische Ausrichtung auf das AE2-Adapter-Protokoll aus. Während allgemeine Adapter-Konverter verschiedene Protokolle unterstützen, ist dieser Baustein speziell für die bidirektionale AE2-Kommunikation optimiert.
 
 ## Fazit

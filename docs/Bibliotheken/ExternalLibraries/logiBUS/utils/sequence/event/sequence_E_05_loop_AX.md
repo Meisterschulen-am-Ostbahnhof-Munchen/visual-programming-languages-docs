@@ -48,7 +48,7 @@ Siehe `sequence_E_05_loop`.
 ## Anwendungsszenarien
 Für zyklische ereignisgesteuerte 5-stufige Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_E_05_loop**: Standardvariante ohne Adapter.
 
 ## Fazit

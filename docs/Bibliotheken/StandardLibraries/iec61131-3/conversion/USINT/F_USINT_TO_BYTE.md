@@ -45,14 +45,14 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` emp
 - Kommunikation zwischen Systemen mit unterschiedlichen Datentypen.
 - Vorverarbeitung von Sensordaten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_BYTE_TO_USINT**: Führt die umgekehrte Konvertierung durch (BYTE zu USINT).
 - **F_INT_TO_STRING**: Konvertiert einen Integer-Wert in einen String, ist jedoch komplexer in der Handhabung.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_126b_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)
 

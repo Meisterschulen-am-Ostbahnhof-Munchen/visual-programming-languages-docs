@@ -58,7 +58,7 @@ Der Funktionsblock besitzt einen einfachen Zustand: Im aktiven Zustand leitet er
 - Signalverteilung in verzweigten Steuerungsarchitekturen
 - Redundante Signalweiterleitung an mehrere Empfänger
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Splitter-Bausteinen bietet AX_SPLIT_7 eine feste Anzahl von sieben Ausgängen, was für spezifische Anwendungsfälle mit genau sieben Empfängern optimiert ist. Gegenüber variablen Splittern hat dieser Baustein den Vorteil der fest definierten Schnittstellen.
 
 Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)

@@ -45,7 +45,7 @@ Die interne Logik des Bausteins (Stand: `events-3.0.0`) ist fehlerhaft und imple
 - **Maschinensicherheit**: Detektion, wenn ein Schutzkontakt von "geschlossen" (TRUE) auf "offen" (FALSE) geht.
 - **Prozessüberwachung**: Erkennen des Endes eines Signals oder Prozesses.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | E_F_TRIG (dieser) | E_R_TRIG | E_SWITCH |
 |---------------|------------------|----------|----------|
@@ -58,7 +58,7 @@ Die interne Logik des Bausteins (Stand: `events-3.0.0`) ist fehlerhaft und imple
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_088](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_088.md)
 

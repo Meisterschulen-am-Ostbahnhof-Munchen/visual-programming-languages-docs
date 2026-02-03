@@ -33,7 +33,7 @@ Dieser Datentyp wird primär verwendet, um die Nutzdaten von ISOBUS PGN-Nachrich
 *   Strukturierung von Daten für die Kommunikation zwischen verschiedenen Steuergeräten (ECUs) in einer mobilen Maschine.
 *   Verwendung als Teil eines größeren, strukturierten Datentyps, der mehrere Parameter einer komplexen Nachricht kombiniert.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 `CF_NAME_T` ist ein Datentyp und kein Funktionsbaustein. Er kann mit anderen strukturierten Datentypen (STRUCT) in 4diac verglichen werden, die Arrays definieren. Sein Unterscheidungsmerkmal ist die feste 8-Byte-Länge und die ISOBUS-spezifische Semantik. Ein generisches `ARRAY [0..7] OF BYTE` wäre funktional ähnlich, bietet aber nicht die typsichere Wiederverwendbarkeit und den kontextuellen Bezug.
 
 ## Fazit

@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung von `INT` zu `UINT` durch, wenn das 
 - **Datenverarbeitung**: Konvertierung von Sensorwerten oder Steuerungsdaten, die als `INT` vorliegen, für Systeme, die `UINT` erwarten.
 - **Kommunikation**: Vorbereitung von Daten für die Übertragung zwischen Systemen mit unterschiedlichen Datentypanforderungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_UINT_TO_INT**: Führt die umgekehrte Konvertierung von `UINT` zu `INT` durch.
 - **Generische Konvertierungsblöcke**: Bieten möglicherweise mehr Flexibilität, sind aber auch komplexer in der Handhabung.
 

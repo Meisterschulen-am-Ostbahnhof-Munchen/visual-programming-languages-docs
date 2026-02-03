@@ -78,7 +78,7 @@ Der **Q_ChildLocation** ist ein standardkonformer Funktionsbaustein zur Position
 - **Responsive Designs**: Anpassung an verschiedene Bildschirmgrößen
 - **Gruppierte Objekte**: Gemeinsame Bewegungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ChildLocation | VtAbsolutePosition | VtGroupMove |
 |---------------|-----------------|--------------------|-------------|

@@ -54,7 +54,7 @@ Der Baustein verfügt über folgende Hauptzustände:
 - Boolesche Eingabeverarbeitung in verteilten Automatisierungssystemen
 - Bedienfelder und Schaltpulte
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Button_IXA:
 - ISOBUS-Kompatibilität
 - Erweiterte Parametrierungsmöglichkeiten
@@ -64,7 +64,7 @@ Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Button_IXA:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_010a2_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010a2_AX.md)
 * [Uebung_010a3_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010a3_AX.md)

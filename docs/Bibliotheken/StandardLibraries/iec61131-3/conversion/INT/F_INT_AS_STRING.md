@@ -43,7 +43,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine expliziten Z
 - Vorbereitung von Daten für die Ausgabe in Textformaten (z.B. CSV, JSON).
 - Integration in Systeme, die Zeichenketten zur weiteren Verarbeitung benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_INT_AS_STRING` spezialisiert auf die Umwandlung von `INT` zu `STRING` und daher effizienter und einfacher in der Handhabung.
 - Andere Blöcke könnten zusätzliche Parameter wie Formatierung oder Locale-Einstellungen unterstützen, was hier nicht der Fall ist.
 

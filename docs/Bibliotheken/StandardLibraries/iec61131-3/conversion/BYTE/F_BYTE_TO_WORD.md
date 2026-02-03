@@ -41,7 +41,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - **Datenkonvertierung**: Wenn ein `BYTE`-Wert in einem System verarbeitet werden muss, das `WORD`-Werte erwartet.
 - **Schnittstellenanpassung**: Bei der Kommunikation zwischen Systemen, die unterschiedliche Datentypen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_WORD_TO_BYTE**: Führt die umgekehrte Konvertierung durch, von `WORD` zu `BYTE`.
 - **F_BYTE_TO_INT**: Konvertiert `BYTE` zu `INT`, was eine andere Art der Datentypumwandlung darstellt.
 

@@ -55,7 +55,7 @@ Der Baustein durchläuft folgende Zustände:
 - Steuerungssysteme in der Agrartechnik
 - Verteilte E/A-Systeme über CAN-Bus
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet logiBUS_2_CAN_IXA:
 - CAN-Bus-Kommunikationsfähigkeit
 - Erweiterte Parametrierungsmöglichkeiten

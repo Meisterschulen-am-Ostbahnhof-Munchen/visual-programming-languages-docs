@@ -42,7 +42,7 @@ Da es sich um einen passiven Datentyp und nicht um einen aktiven Funktionsblock 
 3.  **Rohdatenpuffer:** Temporäre Speicherung eines 8-Byte-blocks aus einem Sensor oder einem Kommunikationsinterface vor der weiteren Verarbeitung oder Interpretation.
 4.  **Konvertierungsbasis:** Nutzung als Quelle oder Ziel für Konvertierungs-Funktionsblöcke, die `ST08B` in andere Datentypen wie `LWORD` (64-Bit) umwandeln oder daraus generieren.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Einfache BYTE-Array:** Ein Array von 8 `BYTE` (`ARRAY[0..7] OF BYTE`) könnte eine ähnliche Funktion erfüllen. `ST08B` bietet jedoch den Vorteil der benannten Zugriffspfade (`B_01`), die im Gegensatz zu Index-basiertem Zugriff (`Array[1]`) die Code-Lesbarkeit und Wartbarkeit verbessern.
 *   **LWORD:** Der Datentyp `LWORD` repräsentiert ebenfalls 8 Bytes (64 Bit), jedoch als einen einzigen, ununterteilten numerischen Wert. `ST08B` erlaubt den gezielten Zugriff auf jedes einzelne Byte innerhalb dieser 64 Bit.
 *   **Andere STRUCT-Typen:** Ähnliche strukturierte Typen wie `ST04B` (4 Bytes) oder `ST16B` (16 Bytes) dienen demselben Zweck, aber für unterschiedliche Datenmengen. `ST08B` füllt die Lücke für 8-Byte-strukturierte Daten.

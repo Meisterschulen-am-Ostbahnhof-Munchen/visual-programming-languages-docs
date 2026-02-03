@@ -48,7 +48,7 @@ Der Funktionsblock nimmt 8 Quarter-Bytes entgegen und kombiniert sie zu einem WO
 - Kommunikationsprotokolle: Zusammensetzung von Datenpaketen aus einzelnen Bytes.
 - Signalverarbeitung: Kombination von Signalabschnitten zu einem Gesamtsignal.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine könnten `BYTE_TO_WORD` oder `SHL` sein, jedoch bietet `ASSEMBLE_WORD_FROM_QUARTERS` eine spezialisierte Funktion zur Kombination von 8 Quarter-Bytes zu einem WORD.
 - Im Gegensatz zu generischen Kombinationsbausteinen ist dieser Funktionsblock auf die spezifische Anforderung der Quarter-Byte-Kombination optimiert.
 

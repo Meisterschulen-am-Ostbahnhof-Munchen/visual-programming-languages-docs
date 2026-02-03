@@ -49,7 +49,7 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 - Datenaufbereitung für nachgelagerte Verarbeitungskomponenten
 - Protokollumsetzung bei unterschiedlichen Datentypen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konvertierungsblöcken bietet AB_BYTE_TO_B den Vorteil der standardisierten Adapter-Schnittstelle, was eine bessere Wiederverwendbarkeit und Integration in komplexere Systemarchitekturen ermöglicht. Die unidirektionale Ausrichtung macht ihn speziell für Ausgabeszenarien geeignet.
 
 ## Fazit

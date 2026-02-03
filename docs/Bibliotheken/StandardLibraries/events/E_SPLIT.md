@@ -53,7 +53,7 @@ Der **E_SPLIT** ist ein standardkonformer Funktionsbaustein (IEC 61499-1 Annex A
 - **Sicherheitssysteme**: Verzögerte Notfallroutinen
 - **Testautomation**: Trigger für Testsequenzen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | E_SPLIT | E_DEMUX | E_MERGE |
 |---------------|---------|---------|---------|
@@ -66,7 +66,7 @@ Der **E_SPLIT** ist ein standardkonformer Funktionsbaustein (IEC 61499-1 Annex A
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_004a4](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a4.md)
 * [Uebung_004a4_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a4_AX.md)

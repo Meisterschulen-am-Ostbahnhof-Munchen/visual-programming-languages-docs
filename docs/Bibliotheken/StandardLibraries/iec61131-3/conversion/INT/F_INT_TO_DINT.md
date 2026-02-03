@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Er reagiert ausschließlich
 - Erweiterung von Integer-Werten für weitere Berechnungen oder Speicherung.
 - Kompatibilität mit Bibliotheken oder Funktionen, die `DINT`-Werte erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_INT_TO_DINT` spezialisiert und optimiert für die Umwandlung von `INT` nach `DINT`.
 - Andere Konvertierungsblöcke könnten zusätzliche Funktionen wie Überlaufprüfungen oder Skalierungen bieten, was hier nicht notwendig ist.
 

@@ -63,13 +63,13 @@ Der Function Block durchläuft folgende Zustände:
 - Anbindung von Feldgeräten in Industrieautomation
 - Zustandsüberwachung von Maschinen und Anlagen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet Funk_IX erweiterte Service-Funktionalität mit Parametrierbarkeit, Statusrückmeldungen und asynchronen Benachrichtigungen. Die spezielle Eingangsidentifikation ermöglicht eine präzise Adressierung in komplexen Systemen.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_003b2_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003b2_sub.md)
 

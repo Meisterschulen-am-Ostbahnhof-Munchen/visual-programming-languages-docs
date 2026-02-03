@@ -44,7 +44,7 @@ Nicht zutreffend, da es sich um eine statische Konstantendeklaration handelt.
 *   **Nachrichtenfilterung:** In Gateway- oder Bridge-Funktionsblöcken, um eingehende Nachrichten anhand ihrer PGN zu filtern und weiterzuleiten.
 *   **Diagnose-Tools:** In Applikationen zur Diagnose und Überwachung von Fahrzeugnetzwerken, um empfangene Nachrichten korrekt zu benennen und anzuzeigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Einfache `VAR_GLOBAL CONSTANT`-Deklarationen:** `PgnDef` bietet gegenüber manuell im Funktionsblock deklarierten Konstanten den Vorteil der Zentralisierung, Wiederverwendbarkeit und Vermeidung von Redundanz und Tippfehlern.
 *   **Enumerations (ENUM):** Während ENUMs in IEC 61499 für geordnete Listen verwendet werden können, ist `PgnDef` als Sammlung diskreter, nicht notwendigerweise aufeinanderfolgender Werte besser geeignet. Konstanten bieten zudem mehr Flexibilität bei der Wertzuweisung (hexadezimal).
 *   **Spezifische Protokoll-FBs:** Im Gegensatz zu Funktionsblöcken, die eine bestimmte Protokollfunktion implementieren (z.B. ein `ADDRESS_CLAIM`-FB), ist `PgnDef` ein reines Hilfsmittel zur Referenzierung und enthält keine aktive Logik.

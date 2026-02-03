@@ -62,7 +62,7 @@ Da es sich um einen kombinatorischen Logikbaustein ohne Speicherfunktion handelt
 - Verteilte Entscheidungsfindung in Automatisierungssystemen
 - Sicherheitskritische Anwendungen mit redundanten Sensoren
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen mit weniger Eingängen bietet AX_XOR_5 die Möglichkeit, bis zu fünf Signale gleichzeitig zu verarbeiten. Während einfache XOR-Blöcke typischerweise nur zwei Eingänge haben, ermöglicht dieser Baustein komplexere logische Verknüpfungen ohne zusätzliche Verschachtelung.
 
 Vergleich mit [XOR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_5.md)

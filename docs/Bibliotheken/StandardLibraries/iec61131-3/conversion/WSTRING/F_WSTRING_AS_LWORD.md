@@ -43,7 +43,7 @@ Der Funktionsblock führt die Konvertierung von WSTRING zu LWORD durch, sobald d
 - Konvertierung von Zeichenketten in binäre Daten für die weitere Verarbeitung in Steuerungssystemen.
 - Verwendung in Protokollumsetzungen, wo Zeichenketten in eine binäre Form gebracht werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_STRING_AS_LWORD` arbeitet dieser FB spezifisch mit dem WSTRING-Datentyp, der Unicode-Zeichen unterstützt.
 
 ## Fazit

@@ -41,7 +41,7 @@ Der Funktionsblock ist zustandslos und führt bei jedem `REQ`-Ereignis die Konve
 - Typumwandlung in Steuerungsanwendungen, wo LREAL-Werte aus hochpräzisen Berechnungen in REAL-Werte für weitere Verarbeitungsschritte umgewandelt werden müssen.
 - Kompatibilität mit Systemen oder Bausteinen, die nur REAL-Datentypen verarbeiten können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_LREAL_TO_REAL` spezialisiert auf die Umwandlung zwischen LREAL und REAL und bietet daher eine klar definierte und effiziente Lösung für diesen spezifischen Anwendungsfall.
 
 ## Fazit

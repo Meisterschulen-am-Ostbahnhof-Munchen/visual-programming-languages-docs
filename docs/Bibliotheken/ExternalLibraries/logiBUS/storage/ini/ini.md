@@ -59,7 +59,7 @@ Der Block besitzt keine explizite, komplexe Zustandsmaschine im nutzerzugänglic
 *   **Betriebsdatenerfassung**: Persistentes Speichern einfacher Betriebszustände oder Zählerstände.
 *   **Benutzereinstellungen**: Verwalten von Spracheinstellungen oder anderen Benutzerpräferenzen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`E_SR` (SR-Flip-Flop) / `E_RS` (RS-Flip-Flop)**: Diese Blöcke speichern einen binären Zustand (`BOOL`) nur während der Laufzeit im Arbeitsspeicher. Der INI-Block speichert beliebige Typen dauerhaft auf nicht-flüchtigem Speicher.
 *   **`E_DEMUX` / `E_MUX`**: Diese dienen der Ereignis- und Datenverteilung, nicht der persistenten Speicherung.
 *   **`FB_RETAIN` (aus `eclipse4diac::core`)** : Speichert Daten persistent, nutzt jedoch typischerweise ein gerätespezifisches, nicht direkt zugängliches Retain-Memory. Der INI-Block verwendet eine standardisierte, lesbare Textdatei.

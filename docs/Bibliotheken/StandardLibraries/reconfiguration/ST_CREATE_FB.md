@@ -68,7 +68,7 @@ Der Funktionsblock verfügt über mehrere Service-Sequenzen:
 - Systeme mit modularem Aufbau, bei denen Komponenten zur Laufzeit hinzugefügt werden
 - Rekonfigurierbare Fertigungsanlagen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu statischen Funktionsblöcken bietet ST_CREATE_FB die einzigartige Fähigkeit, Instanzen zur Laufzeit zu erzeugen. Während Standard-Funktionsblöcke zur Kompilierungszeit festgelegt werden, ermöglicht dieser Baustein eine flexible Systemarchitektur.
 

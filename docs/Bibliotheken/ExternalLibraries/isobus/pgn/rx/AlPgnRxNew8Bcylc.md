@@ -67,13 +67,13 @@ Dieser Funktionsblock verwendet keine Adapter.
 *   **Fahrzeugdiagnose**: Zyklischer Empfang von Motordaten (Drehzahl, Temperatur) zur Anzeige und Überwachung im Terminal.
 *   **Implement Control**: Empfang von Sollwerten (z.B. Soll-Tiefe) von einer Bedienkonsole für einen hydraulischen Unterlenker.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu generischen CAN-Empfangsblöcken ist `AlPgnRxNew8Bcylc` speziell auf das ISOBUS-PGN-Protokoll zugeschnitten. Er bietet höhere Abstraktion durch direkte PGN-Adressierung, integrierte Partnererkennung (`NmSource`) und automatische Timeout-Verwaltung. Einfache Empfangsblöcke würden diese Protokollschicht und Verwaltungsfunktionen nicht bereitstellen.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_131](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_131.md)
 

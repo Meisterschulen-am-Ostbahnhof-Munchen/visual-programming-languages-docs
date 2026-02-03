@@ -45,7 +45,7 @@ Der Funktionsblock führt bei Auslösung des `REQ`-Ereignisses die Konvertierung
 - Interpretation von Daten aus Textdateien oder Netzwerkkommunikation.
 - Umwandlung von Konfigurationswerten, die als Zeichenketten gespeichert sind.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_STRING_AS_REAL` spezialisiert auf die Umwandlung von `STRING` zu `REAL`.
 - Andere Blöcke könnten zusätzliche Funktionen wie Fehlerbehandlung oder Formatierung bieten, sind dafür aber komplexer.
 

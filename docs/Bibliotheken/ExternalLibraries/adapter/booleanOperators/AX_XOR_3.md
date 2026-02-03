@@ -55,7 +55,7 @@ Der Baustein besitzt keine internen Zustände und arbeitet statisch. Die Ausgabe
 - Sicherheitskritische Steuerungen, wo ungerade Aktivierung erforderlich ist
 - Logische Verknüpfungen in Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen mit zwei Eingängen bietet AX_XOR_3 die Erweiterung auf drei Eingänge. Während ein 2-Eingang-XOR nur bei ungleichen Eingängen true liefert, berücksichtigt der 3-Eingang-XOR die Parität aller drei Signale.
 
 Vergleich mit [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.md)
@@ -65,7 +65,7 @@ Vergleich mit [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002a7_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
 

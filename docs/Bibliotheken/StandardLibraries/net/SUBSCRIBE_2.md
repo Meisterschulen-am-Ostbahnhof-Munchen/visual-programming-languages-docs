@@ -56,7 +56,7 @@ Der Block durchläuft folgende Hauptzustände:
 - Industrielle Automatisierung mit dezentraler Datenkommunikation
 - Systeme mit flexiblen Datentypanforderungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren SUBSCRIBE-Blöcken bietet SUBSCRIBE_2 die Möglichkeit, zwei verschiedene Datenwerte parallel zu empfangen. Die Verwendung von ANY-Datentypen ermöglicht eine höhere Flexibilität gegenüber typspezifischen Implementationen.
 
 ## Fazit

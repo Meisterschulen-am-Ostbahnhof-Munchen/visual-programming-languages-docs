@@ -53,7 +53,7 @@ Der Block durchläuft folgende Hauptzustände:
 - Schnittstelle zu IO-Modulen mit Wort-basierten Eingängen
 - Überwachung von Statuswörtern aus verteilten Systemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu IB (Input Byte) verarbeitet IW 16-Bit anstelle von 8-Bit Daten. Gegenüber ID (Input Double Word) bietet IW eine geringere Datenbreite. Der Block ähnelt in der Struktur anderen IO-Schnittstellenblöcken, ist jedoch speziell auf WORD-Datentypen optimiert.
 
 ## Fazit

@@ -73,7 +73,7 @@ Der E_TOF-Baustein kann in verschiedenen industriellen Steuerungsanwendungen ein
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_020e](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020e.md)
 
@@ -83,7 +83,7 @@ Der E_TOF-Baustein ist ein vielseitiger Funktionsbaustein in der IEC 61499, der 
 
 Der bereitgestellte Quelltext zeigt, wie der E_TOF-Baustein in der Praxis implementiert werden kann, und bietet eine solide Grundlage für die Entwicklung ähnlicher Bausteine in industriellen Steuerungssystemen. Die Unabhängigkeit vom zyklischen Aufruf ist dabei ein entscheidender Vorteil, der den Baustein für eine Vielzahl von Anwendungen geeignet macht.
 
-## Vergleich E_TOF zu FB_TOF
+## ⚖️ Vergleich E_TOF zu FB_TOF
 
 ### Kapitel 1: Der FB_TOF-Baustein
 

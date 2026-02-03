@@ -52,7 +52,7 @@ Der Funktionsblock besitzt einen einfachen Zustand: Bei Aktivierung des Eingangs
 - Signalverteilung in komplexen Steuerungssystemen
 - Redundante Signalweiterleitung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Splitter-Blöcken bietet AX_SPLIT_9 eine höhere Anzahl an Ausgängen (9 statt typischerweise 2-4). Gegenüber seriellen Verteilern ermöglicht er eine gleichzeitige Aktivierung aller Ausgänge ohne sequentielle Verzögerung.
 
 Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)

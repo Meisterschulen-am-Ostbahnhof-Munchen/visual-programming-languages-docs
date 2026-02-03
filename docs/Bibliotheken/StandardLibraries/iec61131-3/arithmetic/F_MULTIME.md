@@ -67,7 +67,7 @@ Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation
   - OUT = T#0s
   - Keine Exception-Generierung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | F_MULTIME | F_MUL  | F_DIVTIME |
 |---------------|-----------|--------|-----------|
@@ -80,7 +80,7 @@ Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_020c2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c2.md)
 

@@ -56,7 +56,7 @@ OUT[i] = IN1[i] ∧ IN2[i] ∧ IN3[i] ∧ IN4[i] ∧ IN5[i]
 - Signalverarbeitung mit mehreren Eingangssignalen
 - Filteroperationen in Datenverarbeitungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **AND_2**: Bietet nur zwei Eingänge für die UND-Verknüpfung
 - **OR_5**: Führt bitweise ODER-Verknüpfungen mit fünf Eingängen durch
 - **XOR_5**: Führt bitweise exklusive ODER-Verknüpfungen durch

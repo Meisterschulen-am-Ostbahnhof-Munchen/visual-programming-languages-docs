@@ -53,7 +53,7 @@ FIELDBUS_PERCENT_TO_WORD = UDINT_TO_WORD(REAL_TO_UDINT(RI * UDINT_TO_REAL(WORD_T
 - Industrielle Automatisierung mit Feldbuskommunikation
 - Prozessdatenkonvertierung zwischen verschiedenen Systemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Spezialisiert auf die spezifischen Anforderungen von SAE J1939 und ISO 11783
 - Bietet genauere Kontrolle über den Wertebereich als generische Konvertierungsbausteine
 - Optimiert für die Verwendung in der Signalverarbeitung

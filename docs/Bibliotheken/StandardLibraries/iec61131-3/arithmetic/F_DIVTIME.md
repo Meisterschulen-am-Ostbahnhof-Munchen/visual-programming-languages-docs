@@ -77,7 +77,7 @@ Der **F_DIVTIME** ist ein spezialisierter Funktionsbaustein zur Division von Zei
   - Positive Zeitwerte (T#0s bis T#106751d23h47m16s854ms)
   - Divisor muss positiv sein
 
-## Vergleich mit Standard-F_DIV
+## ⚖️ Vergleich mit Standard-F_DIV
 
 | Merkmal        | F_DIVTIME | F_DIV       |
 |----------------|-----------|-------------|

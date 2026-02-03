@@ -71,7 +71,7 @@ Entwickelt unter EPL-2.0 Lizenz,ermöglicht er die Überwachung und Steuerung vo
 - **Sicherheitssysteme**: Erkennung von Grenzwertüberschreitungen
 - **Diagnose**: Systematische Fehleranalyse
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | I_FHS | Standard Hitch Control | Advanced Hitch Manager |
 |---------------|-------|------------------------|------------------------|
@@ -83,7 +83,7 @@ Entwickelt unter EPL-2.0 Lizenz,ermöglicht er die Überwachung und Steuerung vo
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
 

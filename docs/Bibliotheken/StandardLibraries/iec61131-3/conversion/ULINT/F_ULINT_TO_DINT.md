@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Datenkonvertierung in Steuerungssystemen, die unterschiedliche Datentypen verwenden.
 - Integration von Systemen, die unterschiedliche Bitbreiten für Ganzzahlen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_ULINT_TO_DINT` spezialisiert auf die Konvertierung von `ULINT` zu `DINT`.
 - Andere Konvertierungsblöcke könnten andere Datentypen oder Konvertierungsrichtungen unterstützen.
 

@@ -55,7 +55,7 @@ Der Baustein besitzt keinen internen Zustand und arbeitet stateless. Die Ausgabe
 - Steuerungslogik mit parallelen Bedingungen
 - Alarmierungssysteme mit mehreren Auslösern
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-ODER-Bausteinen mit weniger Eingängen bietet AX_OR_5 die Möglichkeit, fünf Signale gleichzeitig zu verarbeiten, was die Verdrahtung vereinfacht und Platz spart. Gegenüber kaskadierten ODER-Verknüpfungen bietet dieser Baustein eine integrierte Lösung.
 
 Vergleich mit [OR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_5.md)

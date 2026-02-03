@@ -45,7 +45,7 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem `R
 - Dynamische Erstellung von Log-Nachrichten oder Benachrichtigungen.
 - Manipulation von Datenstrings vor der Weiterverarbeitung oder Ausgabe.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnlich zu `F_CONCAT`, das jedoch zwei Strings nur aneinanderhängt, ohne eine spezifische Einfügeposition zu berücksichtigen.
 - Im Gegensatz zu `F_MID`, das Teile eines Strings extrahiert, fügt `F_INSERT` einen String in einen anderen ein.
 

@@ -53,7 +53,7 @@ Typische Anwendungen sind Steuerungslogiken, bei denen eine Aktion nur dann ausg
 *   **Sicherheitskreis:** Aktivierung eines Prozesses nur bei geschützter Schutztür (`IN1`), aktivierter Not-Aus-Umgehung (`IN2`) und vorhandener Materialzufuhr (`IN3`).
 *   **Verkettung von Bedingungen:** Als Teil einer komplexeren logischen Gleichung innerhalb eines Algorithmus.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`AND_2_BOOL`:** Führt die UND-Verknüpfung für nur zwei Eingänge durch. `AND_3_BOOL` ist eine direkte Erweiterung für drei Eingänge.
 *   **`AND_n_BOOL` (theoretisch):** Ein generischer Block für eine variable Anzahl `n` von Eingängen. `AND_3_BOOL` ist eine spezifische, fest verdrahtete Instanz für `n=3`. Siehe: [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_3.md)
 *   **`OR_3_BOOL`:** Berechnet die logische ODER-Verknüpfung (Ausgang ist `TRUE`, wenn mindestens ein Eingang `TRUE` ist). Dies ist die komplementäre Funktion.

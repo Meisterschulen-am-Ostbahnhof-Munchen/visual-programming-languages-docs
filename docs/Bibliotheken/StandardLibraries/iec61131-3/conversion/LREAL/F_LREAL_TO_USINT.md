@@ -43,14 +43,14 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung erfolgt unmitt
 - Kommunikation mit Systemen, die nur Ganzzahlen verarbeiten können (z.B. ältere Steuerungen oder Protokolle).
 - Datenreduktion, wenn eine hohe Präzision nicht erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_REAL_TO_USINT` (Konvertierung von 32-Bit Gleitkommazahlen) bietet dieser Block eine höhere Eingangspräzision durch die Verwendung von 64-Bit Gleitkommazahlen.
 - Ähnliche Blöcke wie `F_LREAL_TO_INT` oder `F_LREAL_TO_UINT` bieten Konvertierungen in andere Ganzzahltypen mit unterschiedlichen Wertebereichen.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_126b_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)
 

@@ -48,7 +48,7 @@ Der eIXconfig Block empfängt über das CONF-Ereignis eine Konfigurationsanforde
 - Einstellung von Trigger-Eigenschaften für digitale Eingänge
 - Integration in größere Automatisierungssysteme mit eIO-Komponenten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen IO-Konfigurationsblöcken bietet eIXconfig spezifische eIO-Integration und erweiterte Trigger-Konfigurationsmöglichkeiten. Die Verwendung eines Adapters ermöglicht eine saubere Trennung zwischen Funktionalität und Hardwarekommunikation.
 
 ## Fazit

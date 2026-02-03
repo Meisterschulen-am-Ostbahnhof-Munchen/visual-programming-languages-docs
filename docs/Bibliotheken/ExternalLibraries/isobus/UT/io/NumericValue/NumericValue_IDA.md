@@ -75,7 +75,7 @@ Da es sich um einen Composite FB handelt, wird der Zustand primär durch die int
 *   **Parametrierung:** Einstellung von Maschinenparametern über numerische Felder auf dem Display.
 *   **Modulare Anwendungen:** Einsatz in Anwendungen, die stark auf Adapter-Verbindungen setzen, um den "Spaghetti-Code" von parallelen Event- und Datenleitungen zu vermeiden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 *   **NumericValue_ID:** Dies ist der interne Basisbaustein. Er bietet dieselbe Funktionalität, stellt die Daten jedoch über klassische `IND`/`CNF` Ereignisse und einen `IN` Datenausgang bereit. **NumericValue_IDA** ist die Adapter-Variante dieses Bausteins.
 *   **Andere `_IDA` Bausteine:** Ähnlich wie `Button_IDA` (für Schaltflächen) oder `String_IDA` (für Texte), folgt dieser Baustein dem Entwurfsmuster, Terminal-Eingaben über Adapter bereitzustellen.
@@ -83,7 +83,7 @@ Da es sich um einen Composite FB handelt, wird der Zustand primär durch die int
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_011_AUDI](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011_AUDI.md)
 

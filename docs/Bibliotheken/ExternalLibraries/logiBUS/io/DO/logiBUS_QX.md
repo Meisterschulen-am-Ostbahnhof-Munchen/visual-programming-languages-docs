@@ -56,7 +56,7 @@ Der Block durchläuft folgende Hauptzustände:
 - Automatisierungssysteme mit verteilten E/A-Komponenten
 - Sicherheitsrelevante Schaltvorgänge mit Statusrückmeldung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu standardmäßigen digitalen Ausgangsblöcken bietet logiBUS_QX:
 - Spezifische Integration in logiBUS-Systeme
 - Erweiterte Statusrückmeldungen
@@ -66,7 +66,7 @@ Im Vergleich zu standardmäßigen digitalen Ausgangsblöcken bietet logiBUS_QX:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_001](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_001.md)
 * [Uebung_001c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_001c.md)

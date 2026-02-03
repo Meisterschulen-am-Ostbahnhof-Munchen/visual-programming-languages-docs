@@ -55,7 +55,7 @@ Der Funktionsblock ist zustandslos (stateless). Er besitzt kein internes Gedäch
 *   **Strukturierung von E/A-Daten:** Ordnung von verteilten digitalen Eingangssignalen einer SPS in einer definierten Datenstruktur für verbesserte Lesbarkeit und Wartbarkeit des Programms.
 *   **Schnittstelle zu Visualisierungssystemen:** Einfacheres Mapping von vielen Einzelsignalen auf ein zusammengesetztes Symbol oder eine Statusanzeige in einer HMI.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`BOOL_TO_xxx` Blöcke:** Blöcke wie `BOOL_TO_INT` oder `BOOL_TO_BYTE` konvertieren mehrere Bool-Werte ebenfalls in ein kompakteres Datum. `BOOLS_TO_ARR08X` erzeugt hingegen explizit ein Array, was den indizierten Zugriff auf jedes einzelne Bit erhält und die semantische Bedeutung der Position bewahrt.
 *   **Manuelle Verkabelung:** Die Alternative wäre die direkte Verkabelung jedes Einzelbits auf die Indizes eines Array-Variablenbausteins. `BOOLS_TO_ARR08X` kapselt diese Operation, verbessert die Übersichtlichkeit im FBD/LD-Editor und reduziert Verdrahtungsaufwand.
 *   **`MERGE`/`CONCAT`-Blöcke:** Allgemeine Zusammenführungsblöcke können verschiedene Datentypen verbinden. `BOOLS_TO_ARR08X` ist spezialisiert und typsicher für genau acht BOOL-Eingänge und ein BOOL-Array als Ausgang.
@@ -63,7 +63,7 @@ Der Funktionsblock ist zustandslos (stateless). Er besitzt kein internes Gedäch
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_054](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_054.md)
 

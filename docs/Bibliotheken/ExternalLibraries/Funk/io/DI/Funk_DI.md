@@ -48,7 +48,7 @@ Da es sich um ein Konstanten-Paket handelt, gibt es keine Zustandsübergänge. A
 - **Wartbarkeit**: Zentrale Verwaltung aller digitaler Eingangskonfigurationen
 - **Funksysteme**: Speziell für Anwendungen in drahtlosen Steuerungssystemen entwickelt
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen digitalen Eingangs-Konstantenpaketen bietet Funk_DI:
 - Spezifische Pin-Zuordnungen für Funksysteme
 - Vordefinierte Konstanten für spezielle Funktionen (START, STOP, STATUS, COUNTER)

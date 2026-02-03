@@ -67,7 +67,7 @@ Der **F_SUB_TOD_TIME** ist ein standardkonformer Funktionsbaustein zur Subtrakti
   - IN2 = T#0s → OUT = IN1
   - IN2 negativ → Addition der Zeit (TOD#10:00 + T#-2h = TOD#12:00)
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | F_SUB_TOD_TIME | F_ADD_TOD_TIME | F_SUB_DT_TIME |
 |---------------|----------------|----------------|---------------|

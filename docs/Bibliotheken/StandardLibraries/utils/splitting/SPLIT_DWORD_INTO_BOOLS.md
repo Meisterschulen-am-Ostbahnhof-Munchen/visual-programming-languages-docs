@@ -47,7 +47,7 @@ Der Funktionsblock hat keinen internen Zustand. Bei jedem `REQ`-Ereignis werden 
 - Dekodierung von Bitmasken in Steuerungsanwendungen.
 - Aufteilung von DWORD-Werten für individuelle Bit-Manipulationen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Bit-Manipulations-Funktionen bietet dieser Baustein eine direkte und effiziente Methode zur Extraktion aller Bits eines DWORD.
 - Ähnliche Bausteine könnten nur Teile eines DWORD verarbeiten oder zusätzliche Logik enthalten, was hier nicht der Fall ist.
 

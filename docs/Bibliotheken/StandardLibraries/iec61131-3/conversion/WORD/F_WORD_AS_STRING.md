@@ -44,7 +44,7 @@ Der Funktionsblock nutzt den Algorithmus `REQ`, um den `WORD`-Wert am Eingang `I
 - Protokollierung von `WORD`-Werten in lesbarer Form.
 - Weiterverarbeitung von numerischen Werten in Systemen, die `STRING`-Daten erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_WORD_AS_STRING` spezialisiert auf die Umwandlung von `WORD` zu `STRING` und daher effizienter für diesen spezifischen Anwendungsfall.
 - Andere Blöcke könnten zusätzliche Parameter oder komplexere Logik beinhalten, was hier nicht notwendig ist.
 

@@ -44,7 +44,7 @@ Der Funktionsblock weist jedes der 64 Bits des LWORD-Ausgangs einem entsprechend
 - Verarbeitung von Bitmasken in Steuerungsanwendungen.
 - Effiziente Speicherung von binären Zuständen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnlich zu `BOOL_TO_*`-Funktionsblöcken, aber für 64 Bits optimiert.
 - Bietet mehr Flexibilität als fest codierte Bit-Operationen.
 

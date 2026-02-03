@@ -58,7 +58,7 @@ Nach erfolgreicher Initialisierung können kontinuierlich Ausgabeanforderungen v
 - Integration in verteilte Steuerungssysteme
 - Sicherheitskritische Schaltvorgänge
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Digitalausgangsblöcken bietet DataPanel_LO_QX erweiterte Funktionalitäten wie parametrierbare Hardware-Adressierung, detaillierte Statusrückmeldungen und eine strukturierte Initialisierungsprozedur. Die spezifische SA-Member-Adressierung macht ihn besonders für komplexe verteilte Systeme geeignet.
 
 ## Fazit

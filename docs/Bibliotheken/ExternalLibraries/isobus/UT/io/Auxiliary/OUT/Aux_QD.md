@@ -55,7 +55,7 @@ Der Block verfügt über zwei Hauptzustände:
 - Industrielle Automatisierungssysteme
 - Embedded Systems mit Auxiliary-Schnittstellen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Ausgabeblöcken bietet Aux_QD erweiterte Funktionen für Auxiliary-Schnittstellen und unterstützt spezifische ISOBUS-kompatible Datentypen. Die parallele Ausgabefähigkeit unterscheidet ihn von sequenziellen Ausgabeblöcken.
 
 ## Fazit

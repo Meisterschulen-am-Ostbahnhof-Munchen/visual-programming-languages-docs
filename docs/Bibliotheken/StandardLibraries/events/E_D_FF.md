@@ -55,7 +55,7 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 - **Flankenerkennung** in Signalverarbeitungsketten
 - **Synchronisation** zwischen asynchronen Systemteilen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | E_D_FF | E_SR | E_R_TRIG |
 |---------------|--------|------|----------|
@@ -69,7 +69,7 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_071a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071a.md)
 * [Uebung_071b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071b.md)

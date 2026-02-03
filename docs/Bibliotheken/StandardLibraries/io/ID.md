@@ -64,7 +64,7 @@ Der Baustein durchläuft folgende Hauptzustände:
 - Kommunikation mit Peripheriegeräten, die Doppelwort-Daten liefern
 - Integration von externen Messsystemen in 4diac-Steuerungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Eingabebausteinen bietet ID:
 - Erweiterte Statusrückmeldungen
 - Konfigurierbare Service-Parameter
@@ -76,7 +76,7 @@ Im Vergleich zu einfacheren Eingabebausteinen bietet ID:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_011](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011.md)
 * [Uebung_011a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011a2.md)

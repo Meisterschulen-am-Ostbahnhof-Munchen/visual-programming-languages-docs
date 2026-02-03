@@ -49,7 +49,7 @@ Der Funktionsblock besitzt keine internen Zustände, da er ausschließlich als D
 - Bidirektionale Signalübertragung in Automatisierungssystemen
 - Kopplung unterschiedlicher Kommunikationsprotokolle
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konverter-Blöcken bietet ASR2_SR2_TO_4EVENTS die Besonderheit der bidirektionalen Kommunikation und die spezifische Anpassung an ASR2-Adapter. Andere Konverter-Blöcke sind oft unidirektional oder unterstützen andere Adapter-Typen.
 
 ## Fazit

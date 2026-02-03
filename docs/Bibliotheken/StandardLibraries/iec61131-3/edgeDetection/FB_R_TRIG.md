@@ -43,14 +43,14 @@ Der Funktionsblock hat keinen komplexen Zustandsautomaten. Der Zustand wird ledi
 - Synchronisation von Prozessen auf steigende Flanken von Steuersignalen.
 - Triggerung von Aktionen bei bestimmten Ereignissen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **FB_F_TRIG**: Erkennung einer fallenden Flanke (von `TRUE` nach `FALSE`).
 - **FB_R_TRIG** ist spezifisch für steigende Flanken und daher komplementär zu `FB_F_TRIG`.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_177](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_177.md)
 * [Uebung_177_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_177_AX.md)

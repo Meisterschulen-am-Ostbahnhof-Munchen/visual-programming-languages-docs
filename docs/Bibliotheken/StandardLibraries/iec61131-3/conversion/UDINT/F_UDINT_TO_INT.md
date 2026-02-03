@@ -43,7 +43,7 @@ Der Funktionsblock hat keinen internen Zustand. Er reagiert ausschließlich auf 
 - Integration von Komponenten, die unterschiedliche Datentypen erwarten oder liefern.
 - Protokollierung oder Anzeige von Daten, die ursprünglich als `UDINT` gespeichert sind, aber als `INT` dargestellt werden sollen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_DINT_TO_INT**: Konvertiert `DINT` (32-Bit vorzeichenbehaftet) zu `INT`.
 - **F_UDINT_TO_DINT`: Konvertiert `UDINT` zu `DINT` (32-Bit vorzeichenbehaftet), ohne Datenverlust, da der Wertebereich von `DINT` größer ist.
 - **F_INT_TO_UDINT**: Führt die umgekehrte Konvertierung durch (`INT` zu `UDINT`).

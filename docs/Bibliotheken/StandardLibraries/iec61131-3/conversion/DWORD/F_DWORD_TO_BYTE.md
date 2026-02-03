@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung von `DWORD` zu `BYTE` durch, sobald 
 - Typkonvertierung in Kommunikationsprotokollen.
 - Anpassung von Daten für spezifische Hardware-Schnittstellen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_WORD_TO_BYTE**: Konvertiert einen 16-Bit-Wert (WORD) in ein BYTE.
 - **F_DWORD_TO_WORD**: Konvertiert einen 32-Bit-Wert (DWORD) in ein 16-Bit-Wert (WORD).
 - **F_BYTE_TO_DWORD**: Führt die umgekehrte Konvertierung durch (BYTE zu DWORD).

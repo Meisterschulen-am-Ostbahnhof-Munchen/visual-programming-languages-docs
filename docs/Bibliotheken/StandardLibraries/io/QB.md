@@ -54,7 +54,7 @@ Der QB-Block initialisiert sich über das INIT-Ereignis mit den entsprechenden P
 - Integration in IO-Subsysteme
 - Steuerung von Hardware mit Byte-Kommandos
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu allgemeineren Ausgabeblöcken ist QB speziell auf Byte-Daten optimiert. Andere Blöcke wie z.B. WORD- oder DWORD-Ausgabeblöcke arbeiten mit größeren Datentypen, während QB die effiziente Verarbeitung von 8-Bit-Daten ermöglicht.
 
 ## Fazit

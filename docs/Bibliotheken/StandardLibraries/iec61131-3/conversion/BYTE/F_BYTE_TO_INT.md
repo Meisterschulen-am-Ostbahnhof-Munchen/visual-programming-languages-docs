@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Typumwandlung in Steuerungsanwendungen, wo `BYTE`-Werte in `INT`-Werte umgewandelt werden müssen.
 - Integration in größere Steuerungssysteme, die unterschiedliche Datentypen verarbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_INT` oder `F_DWORD_TO_INT` bieten Konvertierungen für andere Datentypen, jedoch mit demselben Grundprinzip.
 - Im Gegensatz zu komplexeren Konvertierungsblöcken bietet `F_BYTE_TO_INT` eine einfache und direkte Lösung für die spezifische Umwandlung von `BYTE` zu `INT`.
 

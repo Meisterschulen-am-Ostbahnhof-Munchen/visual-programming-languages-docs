@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung von `USINT` nach `DWORD` durch, soba
 - Integration von Peripheriegeräten, die Daten in unterschiedlichen Formaten liefern.
 - Datenverarbeitung in industriellen Automatisierungslösungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_BYTE_TO_DWORD` oder `F_WORD_TO_DWORD` bieten Konvertierungen zwischen anderen Datentypen an.
 - `F_USINT_TO_DWORD` ist spezialisiert auf die Konvertierung von 8-Bit unsigned integer zu 32-Bit unsigned integer.
 

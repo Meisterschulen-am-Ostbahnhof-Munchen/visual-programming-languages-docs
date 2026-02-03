@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` aus
 - **Schnittstellenkommunikation**: Konvertierung von Zeichenketten, die über Netzwerke oder Schnittstellen empfangen werden, in numerische Werte für die Steuerungslogik.
 - **Internationale Anwendungen**: Verarbeitung von Unicode-kodierten Zeichenketten, die numerische Daten enthalten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_STRING_AS_REAL**: Ähnlicher Funktionsblock, jedoch für den Datentyp STRING anstelle von WSTRING. `F_WSTRING_AS_REAL` ist vorzuziehen, wenn Unicode-Unterstützung erforderlich ist.
 - **F_WSTRING_TO_***: Andere Konvertierungsbausteine für WSTRING, die jedoch in andere Datentypen wie INT oder BOOL umwandeln.
 

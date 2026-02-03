@@ -47,7 +47,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Ausführung erfolgt ausschli
 - Vorverarbeitung von Daten für Systeme mit begrenzter Speicherkapazität.
 - Integration in größere Steuerungssysteme, wo unterschiedliche Datentypen konvertiert werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_DINT_TO_BYTE` spezialisiert und optimiert für die spezifische Konvertierung von `DINT` zu `BYTE`.
 - Ähnliche Blöcke wie `F_INT_TO_BYTE` oder `F_WORD_TO_BYTE` bieten Konvertierungen zwischen anderen Datentypen, aber mit ähnlicher Funktionsweise.
 

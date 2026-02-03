@@ -50,7 +50,7 @@ Der Funktionsblock ist zustandslos (stateless). Jeder `REQ`-Aufruf ist unabhäng
 *   **Protokoll- und Schnittstellenanpassung:** Vorbereitung von Datenstrukturen für Kommunikationsprotokolle oder Funktionsblöcke, die ein Byte-Array anstelle einzelner Bytes erwarten.
 *   **Datenumstrukturierung:** Konvertierung zwischen verschiedenen Darstellungsformen von Daten innerhalb einer Steuerungsanwendung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`CONCAT`-Blöcke:** Allgemeine Blöcke zum Verketten von Strings sind nicht direkt vergleichbar, da sie auf den Datentyp `STRING` ausgelegt sind.
 *   **Manuelle Zuweisung in ST:** Die Funktionalität könnte direkt in einem ST-Programm durch Zuweisungen realisiert werden. Der Funktionsblock kapselt diese Logik jedoch für eine bessere Wiederverwendbarkeit, Lesbarkeit und Wartbarkeit innerhalb von FBD-/LD-Diagrammen.
 *   **Individuelle Array-Bausteine:** Im Gegensatz zu universellen Array-Bausteinen, die über Indexeingänge verfügen, ist `BYTES_TO_ARR08B` für eine spezifische, feste Aufgabe optimiert und daher einfacher und schneller in der Anwendung.
@@ -58,7 +58,7 @@ Der Funktionsblock ist zustandslos (stateless). Jeder `REQ`-Aufruf ist unabhäng
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_126b_sub](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)
 * [Uebung_12x_sub](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_12x_sub.md)

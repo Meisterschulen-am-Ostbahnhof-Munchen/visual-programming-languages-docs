@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt direkt 
 - Typumwandlung in Steuerungsanwendungen, wo `WORD`-Daten in `SINT`-Daten umgewandelt werden müssen.
 - Integration in größere Steuerungssysteme, die unterschiedliche Datentypen verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_INT_TO_SINT` oder `F_DWORD_TO_SINT` bieten Konvertierungen zwischen anderen Datentypen, sind aber in ihrer Funktionsweise vergleichbar.
 
 ## Fazit

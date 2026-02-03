@@ -64,7 +64,7 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 - Kommunikation mit Peripheriegeräten, die Byte-Daten liefern
 - Protokollimplementierungen mit Byte-orientierten Datenformaten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Eingabebausteinen:
 - IB spezialisiert auf BYTE-Datentyp (8-Bit)
 - Bietet sowohl pollende (REQ) als auch interrupt-artige (IND) Betriebsmodi
@@ -75,7 +75,7 @@ Im Vergleich zu anderen Eingabebausteinen:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_006c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)
 * [Uebung_011a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011a.md)

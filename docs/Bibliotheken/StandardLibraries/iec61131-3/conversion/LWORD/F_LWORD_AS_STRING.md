@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das `REQ`-Ereignis aus
 - Konvertierung von großen binären Daten in lesbare Zeichenketten.
 - Verwendung in Systemen, die mit binären und textuellen Daten arbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu anderen Konvertierungsbausteinen, die möglicherweise andere Datentypen verarbeiten, ist dieser speziell für die Umwandlung von `LWORD` zu `STRING` optimiert.
 
 ## Fazit

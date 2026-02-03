@@ -69,7 +69,7 @@ Der **F_MUL** ist ein standardkonformer Funktionsbaustein zur Multiplikation num
   - OUT = 0
   - Keine Exception-Generierung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | F_MUL  | F_ADD  | F_DIV  |
 |---------------|--------|--------|--------|
@@ -82,7 +82,7 @@ Der **F_MUL** ist ein standardkonformer Funktionsbaustein zur Multiplikation num
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_034b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034b.md)
 

@@ -56,7 +56,7 @@ Der Funktionsblock wechselt zwischen folgenden Zuständen:
 - Verteiltes Steuerungssystem mit Master-Slave-Architektur
 - Anwendungen mit konfigurierbaren Relais-Zuordnungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgangsbausteinen bietet der EBSlave2301:
 - Konfigurierbare Pin-Zuordnungen zur Laufzeit
 - Adapter-basierte Buskommunikation

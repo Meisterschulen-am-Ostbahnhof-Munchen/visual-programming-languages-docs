@@ -58,14 +58,14 @@ Der Baustein agiert als passiver Empfänger für das NMEA 2000 PGN 129026. Nach 
 *   **Datenlogging**: Protokollierung von Fahrzeugbewegungsdaten mit hoher zeitlicher Auflösung.
 *   **Sensorfusion**: Kombination der COG/SOG-Daten mit anderen Positions- und Bewegungssensoren (z.B. GNSS, Gyroskop) zur Verbesserung der Gesamtgenauigkeit.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenüber generischen CAN-Empfangsblöcken**: `I_COGSOGRapidUpdate` ist spezialisiert auf PGN 129026. Er übernimmt die komplette Dekodierung der Rohdaten gemäß NMEA-Spezifikation und stellt die physikalischen Werte direkt bereit. Ein generischer Empfänger würde nur die Roh-Bytes liefern.
 *   **Gegenüber PGN 129025 (COG/SOG)**: PGN 129026 ist die "Rapid Update"-Variante, die für eine höhere Update-Rate und geringere Latenz optimiert ist, während PGN 129025 zusätzliche Felder wie Zeitstempel enthalten kann. Die Wahl des Bausteins hängt von den Anforderungen der Anwendung an Aktualität und Datenumfang ab.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
 

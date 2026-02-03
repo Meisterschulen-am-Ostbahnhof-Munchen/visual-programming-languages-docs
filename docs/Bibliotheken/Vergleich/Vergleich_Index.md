@@ -1,4 +1,4 @@
-# Vergleich mit anderen Normen
+# ⚖️ Vergleich mit anderen Normen
 
 ```{index} single: Normenvergleich
 ```

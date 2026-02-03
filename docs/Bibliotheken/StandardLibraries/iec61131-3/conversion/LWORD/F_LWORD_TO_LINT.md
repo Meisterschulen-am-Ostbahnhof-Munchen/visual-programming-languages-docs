@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine komplexen Zu
 - Typumwandlung in Steuerungsanwendungen, wo `LWORD`-Daten in `LINT` umgewandelt werden müssen.
 - Integration in größere Systeme, die mit unterschiedlichen Datentypen arbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine könnten `F_DWORD_TO_DINT` oder `F_WORD_TO_INT` sein, die jedoch für kleinere Datentypen ausgelegt sind.
 - Im Gegensatz zu generischen Konvertierungsblöcken ist dieser speziell für die Umwandlung von `LWORD` zu `LINT` optimiert.
 

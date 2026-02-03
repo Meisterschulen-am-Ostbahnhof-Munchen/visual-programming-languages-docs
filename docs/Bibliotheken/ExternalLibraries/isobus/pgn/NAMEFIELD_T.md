@@ -51,7 +51,7 @@ Der Datentyp `NAMEFIELD_T` wird primär in ISOBUS-konformen Steuerungsapplikatio
 *   **Filterung:** Zur Konfiguration von Nachrichtenfiltern basierend auf Geräteklasse, Funktion oder Hersteller.
 *   **Diagnose:** Zur eindeutigen Identifikation von Geräten in Diagnose- und Konfigurationstools.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsbausteinen (FBs) wie `E_SR` oder `E_CYCLE` ist `NAMEFIELD_T` ein reiner **Datentyp** (Structured Data Type). Er enthält keine Algorithmen, Ereignisse oder einen ausgeführten Code.
 *   **Ähnlichkeit zu anderen STRUCTs:** Er ist vergleichbar mit anderen strukturierten Datentypen in 4diac (z.B. für komplexe Messwerte), jedoch spezialisiert auf das ISOBUS-Protokoll.
 *   **Unterschied zu Basis-Datentypen:** Während Basistypen wie `INT` oder `BOOL` einzelne Werte halten, fasst `NAMEFIELD_T` mehrere logisch zusammengehörige Werte zu einer Einheit zusammen.

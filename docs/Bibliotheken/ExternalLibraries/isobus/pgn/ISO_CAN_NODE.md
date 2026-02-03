@@ -39,7 +39,7 @@ Da es sich um statische Konstanten handelt, existiert kein Zustandsautomat.
 *   **ISOBUS-Anwendungen:** Zur Konfiguration von virtuellen Terminals (VT), Task-Controllern (TC) oder anderen Geräten in einem landtechnischen ISOBUS-Netzwerk.
 *   **Fehlerbehandlung:** Die Konstante `INVALID` kann als Rückgabewert oder Initialwert in Funktionsblöcken dienen, um anzuzeigen, dass kein gültiger CAN-Knoten ausgewählt oder erkannt wurde.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Direkte Werte:** Der alternative Ansatz wäre die direkte Verwendung numerischer Literale (0, 1, 2, ...) im Code. Die Verwendung von `ISO_CAN_NODE` ist diesem Ansatz in puncto Codequalität und Wartbarkeit überlegen.
 *   **Enumerations (ENUM):** In einigen Programmiersprachen oder FB-Typen könnten ähnliche Konstrukte als Enumeration definiert werden. Globale Konstanten sind in IEC 61499 ein einfaches und weit verbreitetes Mittel, um dieses Muster umzusetzen.
 

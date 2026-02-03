@@ -51,7 +51,7 @@ Der Funktionsblock arbeitet nach folgenden Regeln:
 - Zeitsteuerung mit großen Zeitintervallen.
 - Überwachung von Ereignissen mit begrenzter Anzahl.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Zählern (z.B. FB_CTD_INT) bietet dieser Baustein eine größere Zahlenreichweite durch ULINT.
 - Ähnlich wie FB_CTD, aber speziell für ULINT-Werte optimiert.
 

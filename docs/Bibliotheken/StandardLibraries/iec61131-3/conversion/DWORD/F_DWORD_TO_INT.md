@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Konvertierung von DWORD-Werten, die von Hardware oder anderen Systemen geliefert werden, in INT-Werte für die weitere Verarbeitung.
 - Integration in Steuerungssysteme, die unterschiedliche Datentypen verarbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_WORD_TO_INT` oder `F_BYTE_TO_INT` ist dieser Funktionsblock speziell für die Konvertierung von DWORD zu INT optimiert.
 - Er bietet eine einfache und direkte Lösung ohne zusätzliche Funktionen oder Parameter.
 

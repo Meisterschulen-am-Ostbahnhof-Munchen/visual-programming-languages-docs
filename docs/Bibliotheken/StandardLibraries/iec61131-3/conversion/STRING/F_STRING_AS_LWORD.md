@@ -41,7 +41,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - Umwandlung von String-Daten in `LWORD`-Werte für die weitere Verarbeitung in Steuerungssystemen.
 - Integration in Systeme, die `LWORD`-Werte erfordern, aber String-Eingaben erhalten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen ist `F_STRING_AS_LWORD` spezialisiert auf die Umwandlung von `STRING` zu `LWORD`.
 - Andere Bausteine wie `F_STRING_TO_*` könnten ähnliche Funktionen für andere Datentypen bieten.
 

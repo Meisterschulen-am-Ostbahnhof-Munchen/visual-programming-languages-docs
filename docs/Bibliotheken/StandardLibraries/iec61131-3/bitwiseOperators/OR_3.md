@@ -52,7 +52,7 @@ Die Operation wird für jeden Bit-Position separat durchgeführt: OUT[i] = IN1[i
 - Parallele Verarbeitung mehrerer Bedingungen
 - Signalverknüpfung in Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen ODER-Bausteinen mit nur zwei Eingängen bietet OR_3 die Möglichkeit, drei Eingänge direkt zu verknüpfen, was die Programmstruktur vereinfacht und zusätzliche Verkettungen vermeidet. Gegenüber arithmetischen Bausteinen arbeitet OR_3 ausschließlich auf Bitebene.
 
 
@@ -60,7 +60,7 @@ Im Vergleich zu einfachen ODER-Bausteinen mit nur zwei Eingängen bietet OR_3 di
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002a5_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
 * [Uebung_002a5b_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)

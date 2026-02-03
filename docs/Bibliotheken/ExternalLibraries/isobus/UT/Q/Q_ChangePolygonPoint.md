@@ -79,7 +79,7 @@ Der **Q_ChangePolygonPoint** ist ein standardkonformer Funktionsbaustein zur Mod
 - **Diagnoseanzeigen**: Geometrische Hervorhebungen
 - **Animierte Elemente**: Bewegte Polygonformen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ChangePolygonPoint | VtGeometryEditor | VtDynamicShape |
 |---------------|----------------------|------------------|----------------|

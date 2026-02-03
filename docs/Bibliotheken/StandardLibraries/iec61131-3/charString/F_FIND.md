@@ -46,7 +46,7 @@ Der Funktionsblock `F_FIND` durchsucht die Zeichenkette IN1 nach dem ersten Auft
 - Validierung von Eingabedaten.
 - Verarbeitung von Zeichenketten in Automatisierungsprozessen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_FIND_STRING` bietet `F_FIND` eine ähnliche Funktionalität, ist jedoch spezifisch für die Suche nach der ersten Position einer Teilzeichenkette.
 - Andere Blöcke wie `F_MID` oder `F_LEFT` bieten zusätzliche Funktionen zur Zeichenkettenmanipulation, aber keine Suchfunktion.
 

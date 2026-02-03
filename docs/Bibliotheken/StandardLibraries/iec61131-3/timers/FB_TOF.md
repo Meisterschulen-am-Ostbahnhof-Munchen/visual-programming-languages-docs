@@ -73,7 +73,7 @@ Der FB_TOF-Baustein kann in verschiedenen industriellen Steuerungsanwendungen ei
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_020e2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020e2.md)
 * [Uebung_020e2_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
@@ -86,7 +86,7 @@ Der bereitgestellte Quelltext zeigt, wie der FB_TOF-Baustein in der Praxis imple
 
 ![FB_TOF](FB_TOF.svg)
 
-## Vergleich E_TOF zu FB_TOF
+## ⚖️ Vergleich E_TOF zu FB_TOF
 
 ### Kapitel 1: Der FB_TOF-Baustein
 

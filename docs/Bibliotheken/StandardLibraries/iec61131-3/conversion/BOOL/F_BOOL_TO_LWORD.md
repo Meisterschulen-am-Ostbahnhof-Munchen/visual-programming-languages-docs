@@ -41,7 +41,7 @@ Da es sich um einen einfachen Funktionsblock ohne interne Zustände handelt, gib
 - Einbettung boolescher Werte in größere Datenstrukturen, die `LWORD` verwenden.
 - Verwendung in Systemen, die boolesche Werte als lange Integerwerte verarbeiten müssen, z.B. bei der Kommunikation mit externen Systemen oder bei der Speicherung in Datenbanken.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_BOOL_TO_<TYPE>**: Ähnliche Funktionsblöcke existieren für andere Datentypen (z.B. `F_BOOL_TO_BYTE`, `F_BOOL_TO_WORD`). Diese konvertieren boolesche Werte in andere Integer-Datentypen mit unterschiedlicher Bitbreite.
 - **F_<TYPE>_TO_LWORD**: Andere Konvertierungsblöcke wandeln verschiedene Datentypen (z.B. `INT`, `DINT`) in `LWORD` um, aber `F_BOOL_TO_LWORD` ist spezifisch für boolesche Werte.
 

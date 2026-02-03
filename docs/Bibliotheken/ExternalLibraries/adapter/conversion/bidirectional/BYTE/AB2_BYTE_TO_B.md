@@ -48,7 +48,7 @@ Der Funktionsblock empfängt über das REQ-Ereignis eine Konvertierungsanfrage u
 - Bidirektionale Datenaustausch-Schnittstellen
 - Adapter-basierte Systemintegration
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konvertierungsblöcken bietet AB2_BYTE_TO_B eine bidirektionale Funktionalität mit Adapter-Integration. Während einfache Konverter typischerweise nur in eine Richtung arbeiten, ermöglicht dieser Block die Kommunikation in beide Richtungen über standardisierte Adapterschnittstellen.
 
 ## Fazit

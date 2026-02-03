@@ -55,7 +55,7 @@ Der ECC des Funktionsblocks besteht aus sechs Zuständen:
 *   **Protokollierung und Diagnose:** Erzeugung von klartextbasierten Log-Einträgen für Fehler- oder Statusmeldungen, die einfacher zu analysieren sind als numerische Codes.
 *   **Schnittstelle zu übergeordneten Systemen:** Aufbereitung von Statusinformationen für die Übertragung an MES- oder ERP-Systeme, die String-Daten erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`BYTE_TO_STRING`:** Ein genereller Konverter, der einen beliebigen BYTE-Wert in seine dezimale String-Repräsentation umwandelt. `QUARTER_TO_STR_MEASURED` ist spezialisierter und wandelt spezifische, semantisch bedeutungsvolle Werte in vordefinierte, aussagekräftige Texte um, nicht in Zahlenstrings.
 *   **`E_SR` oder `E_RS` (FlipFlops):** Diese Blöcke repräsentieren binäre Zustände (SET/RESET) durch boolesche Signale. `QUARTER_TO_STR_MEASURED` erweitert dieses Konzept auf vier Zustände und bietet zusätzlich die textuelle Repräsentation.
 

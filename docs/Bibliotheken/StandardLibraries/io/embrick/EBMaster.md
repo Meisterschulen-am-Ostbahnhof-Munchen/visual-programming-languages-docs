@@ -59,7 +59,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 - Industrielle Steuerungen mit modularen I/O-Erweiterungen
 - Echtzeit-Datenerfassung mit konfigurierbaren Update-Raten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen SPI-Master-Blocks bietet EBMaster spezifische Optimierungen für EtherBrick-Module, einschließlich vorkonfigurierter Parameterwerte und spezialisierter Bus-Adapter-Schnittstellen.
 
 ## Fazit

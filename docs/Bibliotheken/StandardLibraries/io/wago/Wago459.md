@@ -59,7 +59,7 @@ Der Funktionsblock verfügt über folgende Betriebszustände:
 - Prozessüberwachung in industriellen Steuerungssystemen
 - Integration in dezentrale Peripheriesysteme mit Wago-Busarchitektur
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen IO-Funktionsblöcken bietet Wago459:
 - Spezifische Optimierung für Wago-750-459 Hardware
 - Vorkonfigurierte Adapter für Wago-Bussysteme

@@ -52,13 +52,13 @@ Der Funktionsblock verfügt über zwei Hauptzustände:
 - Anwendungen mit booleschen Eingabeabfragen
 - Systeme mit parametrierbaren Service-Schnittstellen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Softkey_IXA erweiterte ISOBUS-Kompatibilität, parametrierbare Service-Schnittstellen und Adapter-basierte Erweiterbarkeit. Die Composite-Struktur ermöglicht eine klare Trennung zwischen Schnittstellenlogik und Kernfunktionalität.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_010_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010_AX.md)
 * [Uebung_010a4_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010a4_AX.md)

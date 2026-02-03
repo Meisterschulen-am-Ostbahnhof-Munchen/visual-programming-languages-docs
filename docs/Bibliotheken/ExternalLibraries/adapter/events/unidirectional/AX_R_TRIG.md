@@ -50,7 +50,7 @@ Da es sich um einen Composite Function Block handelt, besitzt dieser Baustein ke
 *   **Adapter-Logik:** Einsatz in Systemen, die stark auf Adapter-Verbindungen setzen, um den Verdrahtungsaufwand zu minimieren.
 *   **Start-Trigger:** Auslösen von Prozessen, sobald ein boolesches Flag innerhalb einer Adapter-Struktur auf `TRUE` wechselt.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **E_R_TRIG:** Der Standard-Baustein für Ereignis-basierte steigende Flankenerkennung mit separaten Ereignis- und Dateneingängen. `AX_R_TRIG` ist das Äquivalent für Adapter-Verbindungen.
 *   **R_TRIG:** Der klassische SPS-Baustein (IEC 61131-3), der zyklisch abgefragt wird. `AX_R_TRIG` arbeitet hingegen rein ereignisgesteuert.
 

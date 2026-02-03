@@ -8,7 +8,7 @@ Diese Referenz listet die Standardfarben auf, die in Eclipse 4diac für verschie
 | :--- | :--- | :--- | :--- |
 | **EVENT** | `#63B31F` <span style="color:#63B31F">■</span> | 99, 179, 31 | Trigger für die Ausführung von Algorithmen (Ereignisse). |
 
-## Datentypen
+## 💾 Datentypen
 
 | Datentyp | Farbe (Hex) | RGB | Kategorie |
 | :--- | :--- | :--- | :--- |

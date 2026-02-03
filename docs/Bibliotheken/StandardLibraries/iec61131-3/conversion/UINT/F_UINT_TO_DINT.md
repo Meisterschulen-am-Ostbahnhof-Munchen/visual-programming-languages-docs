@@ -44,7 +44,7 @@ Bei Empfang eines Ereignisses am Eingang `REQ` wird der Wert von `IN` gelesen un
 - Datenkonvertierung in Steuerungssystemen, die unterschiedliche Datentypen verwenden.
 - Integration von Sensordaten, die als `UINT` vorliegen, in Systeme, die `DINT` erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_UINT_TO_DINT` spezialisiert und effizient für die Konvertierung von `UINT` zu `DINT`.
 - Andere Blöcke könnten zusätzliche Funktionen wie Skalierung oder Bereichsprüfung bieten, was hier nicht erforderlich ist.
 

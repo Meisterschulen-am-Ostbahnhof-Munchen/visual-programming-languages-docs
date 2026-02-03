@@ -50,7 +50,7 @@ Bei Empfang eines REQ-Ereignisses berechnet der F_TAN-Block den Tangens des an I
 - Mathematische Modellierung und Simulation
 - Regelungstechnik und Positionsbestimmung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_SIN**: Berechnet Sinus statt Tangens
 - **F_COS**: Berechnet Kosinus statt Tangens
 - **F_ATAN**: Inverse Funktion (Arcustangens)

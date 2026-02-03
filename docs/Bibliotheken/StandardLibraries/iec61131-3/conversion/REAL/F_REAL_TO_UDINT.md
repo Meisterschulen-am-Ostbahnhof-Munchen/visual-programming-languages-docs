@@ -41,14 +41,14 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Typumwandlung in Steuerungsanwendungen, wo REAL-Werte als UDINT verarbeitet werden müssen.
 - Integration in größere Funktionsblocknetzwerke, die unterschiedliche Datentypen verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Konvertierungsblöcke wie `F_REAL_TO_INT` oder `F_REAL_TO_LREAL` bieten Konvertierungen in andere Datentypen, aber nicht spezifisch in UDINT.
 - Im Gegensatz zu komplexeren Blöcken bietet `F_REAL_TO_UDINT` eine einfache und direkte Lösung für diese spezifische Konvertierung.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
 

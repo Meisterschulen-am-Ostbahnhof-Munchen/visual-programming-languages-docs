@@ -42,7 +42,7 @@ Der Baustein agiert somit als einfacher Wächter für den Ereignisfluss.
 - **Betriebsarten-Umschaltung**: Befehle von einer manuellen Steuerung (`EI`) werden nur dann weitergeleitet, wenn die Anlage im "Hand"-Modus ist (`PERMIT` = true).
 - **Daten-Validierung**: Ein Ereignis, das die Weiterverarbeitung von Daten anstößt, wird nur ausgelöst, wenn eine vorherige Prüfung der Daten erfolgreich war (`PERMIT` = true).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **`E_SWITCH`**: Während `E_PERMIT` ein Ereignis entweder durchlässt oder blockiert (1-zu-1 oder 1-zu-0), leitet `E_SWITCH` ein Ereignis an einen von zwei verschiedenen Ausgängen weiter (1-zu-2). `E_PERMIT` ist ein Tor, `E_SWITCH` ist eine Weiche.
 
 
@@ -50,7 +50,7 @@ Der Baustein agiert somit als einfacher Wächter für den Ereignisfluss.
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_009](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009.md)
 * [Uebung_080c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_080c.md)

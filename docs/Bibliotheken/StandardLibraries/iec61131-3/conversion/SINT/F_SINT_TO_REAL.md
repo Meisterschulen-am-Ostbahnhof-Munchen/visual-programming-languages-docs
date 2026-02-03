@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - **Messwertverarbeitung**: Umwandlung von Sensordaten, die als `SINT` vorliegen, in `REAL` für weitere Berechnungen.
 - **Steuerungsalgorithmen**: Integration in Regelkreise, wo Fließkommawerte benötigt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_REAL**: Konvertiert einen 16-Bit-Integer (`INT`) in `REAL`.
 - **F_DINT_TO_REAL**: Konvertiert einen 32-Bit-Integer (`DINT`) in `REAL`.
 - **F_SINT_TO_REAL** ist spezifisch für 8-Bit-Integer und bietet damit eine schlankere Lösung für diesen Datentyp.

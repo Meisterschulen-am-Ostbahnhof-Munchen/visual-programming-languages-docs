@@ -41,7 +41,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Datenkonvertierung in Steuerungssystemen, wo unterschiedliche Datentypen verarbeitet werden müssen.
 - Integration in größere Systeme, die eine Typumwandlung zwischen `LWORD` und `ULINT` erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen ist `F_LWORD_TO_ULINT` spezialisiert auf die Umwandlung von `LWORD` zu `ULINT` und bietet daher eine optimierte Lösung für diesen spezifischen Anwendungsfall.
 
 ## Fazit

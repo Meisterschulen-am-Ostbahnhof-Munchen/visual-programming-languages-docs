@@ -50,7 +50,7 @@ Siehe `sequence_ET_04_loop`.
 ## Anwendungsszenarien
 Für zyklische Prozesse, die über Adapter gesteuert werden sollen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_ET_04_loop**: Standardvariante ohne Adapter.
 
 ## Fazit

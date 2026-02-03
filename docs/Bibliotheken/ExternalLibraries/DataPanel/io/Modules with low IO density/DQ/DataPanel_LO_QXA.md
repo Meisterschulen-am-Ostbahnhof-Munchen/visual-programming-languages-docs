@@ -55,7 +55,7 @@ Der Funktionsblock initialisiert sich über das INIT-Ereignis und gibt über INI
 - Anbindung an übergeordnete Steuerungssysteme via Service-Parameter
 - Boolesche Signalausgabe in industriellen Anwendungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet DataPanel_LO_QXA erweiterte Funktionalität durch:
 - Parametrierbare Service-Schnittstelle
 - SA-Member-basierte Adressierung

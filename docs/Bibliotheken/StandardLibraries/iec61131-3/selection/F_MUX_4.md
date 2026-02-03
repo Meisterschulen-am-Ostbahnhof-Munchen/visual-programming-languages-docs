@@ -54,7 +54,7 @@ Bei Empfang des Ereignisses `REQ` wertet der Funktionsblock den Wert von `K` aus
 - Umschaltung zwischen verschiedenen Betriebsmodi in einer Steuerung.
 - Dynamische Auswahl von Datenquellen in Abhängigkeit von externen Bedingungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - `F_MUX_2`: Einfacher Multiplexer mit nur zwei Eingängen.
 - `F_MUX_3`: Multiplexer mit drei Eingängen.
 - `F_MUX_4` bietet eine Erweiterung auf vier Eingänge, was mehr Flexibilität bei der Auswahl ermöglicht.

@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Verarbeitung von Sensordaten, die als `BYTE` vorliegen, aber in `DWORD` weiterverarbeitet werden müssen.
 - Kompatibilitätsanpassungen zwischen verschiedenen Systemkomponenten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_WORD_TO_DWORD**: Konvertiert `WORD` zu `DWORD`, ähnlich in der Funktionsweise, aber mit einer anderen Eingangsdatengröße.
 - **F_BYTE_TO_WORD**: Konvertiert `BYTE` zu `WORD`, bietet eine geringere Ausgangsdatengröße im Vergleich zu `F_BYTE_TO_DWORD`.
 

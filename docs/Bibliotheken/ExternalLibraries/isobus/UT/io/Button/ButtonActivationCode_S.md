@@ -43,7 +43,7 @@ Dieser Struct wird typischerweise als Eingangs- oder Konfigurationsparameter fü
 *   In Maschinensteuerungen zur Parametrierung von physischen Steuertastern.
 *   Überall dort, wo zwischen einmaliger und wiederholter Aktion bei Tastendruck unterschieden werden muss.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Als reiner Datentyp ist `ButtonActivationCode_S` mit anderen strukturierten Datentypen (STRUCTs) in 4diac vergleichbar, wie z.B. `DATE_AND_TIME`. Sein spezifischer Zweck ist die Bündelung der für die Tastersteuerung relevanten Parameter (`code` für Identifikation, `bCyclic` für Zeitverhalten) in einer einzigen, wiederverwendbaren Einheit.
 
 ## Fazit

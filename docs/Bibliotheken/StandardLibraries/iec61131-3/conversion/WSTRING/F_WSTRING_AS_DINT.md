@@ -41,7 +41,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt direkt 
 - Umwandlung von Benutzereingaben in numerische Werte.
 - Verarbeitung von Zeichenketten, die numerische Daten enthalten, in Steuerungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_STRING_AS_DINT` konvertieren einfache Zeichenketten (`STRING`) in `DINT`, während dieser Block breite Zeichenketten (`WSTRING`) verarbeitet.
 - Im Vergleich zu generischen Konvertierungsblöcken ist dieser spezialisiert auf die Umwandlung von `WSTRING` zu `DINT`.
 

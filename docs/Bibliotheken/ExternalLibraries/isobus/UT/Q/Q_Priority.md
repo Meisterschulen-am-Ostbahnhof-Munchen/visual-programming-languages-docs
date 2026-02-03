@@ -80,7 +80,7 @@ Der **Q_Priority** ist ein standardkonformer Funktionsbaustein zur Prioritätsst
 - **Diagnosesysteme**: Eskalationsmanagement
 - **Wartungsmodi**: Temporäre Prioritätsänderungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_Priority | VtAlarmPriority | VtEventManager |
 |---------------|------------|-----------------|----------------|

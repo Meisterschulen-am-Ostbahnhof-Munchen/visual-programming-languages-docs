@@ -44,7 +44,7 @@ Da es sich um einen statischen Datentyp handelt, besitzt die `SchieberColorStruc
 *   **Konfiguration von Funktionsblöcken:** Ein Funktionsblock, der einen physischen Schieber steuert, kann eine Instanz dieses Typs als konfigurierbaren Eingang besitzen, um benutzerdefinierte Farben für die Zustandsrückmeldung zu ermöglichen.
 *   **Datenkapselung:** Bündelung aller zustandsbezogenen Farbinformationen in einem einzigen Parameter, der zwischen verschiedenen Softwaremodulen (z. B. Steuerung und Visualisierung) ausgetauscht werden kann.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken (FBs) wie `E_SR` oder `E_D_FF`, die eine Logik implementieren, ist `SchieberColorStruct` ein reiner **Datentyp** (STRUCT). Ähnliche strukturierte Typen könnten z. B. `MotorConfigStruct` (für Konfigurationsdaten) oder `AxisPositionStruct` (für mehrdimensionale Positionen) sein. Seine spezifische Aufgabe ist die Definition eines Farbschemas für eine vordefinierte Menge von Zuständen.
 
 ## Fazit

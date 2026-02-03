@@ -76,7 +76,7 @@ Der **Q_ExecuteMacro** ist ein standardkonformer Funktionsbaustein zur Ausführu
 - **Bediensequenzen**: Automatisierte Menünavigation
 - **Diagnose**: Vordefinierte Testroutinen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ExecuteMacro | Q_ExecuteExtendedMacro | VtMacroRunner |
 |---------------|----------------|------------------------|---------------|

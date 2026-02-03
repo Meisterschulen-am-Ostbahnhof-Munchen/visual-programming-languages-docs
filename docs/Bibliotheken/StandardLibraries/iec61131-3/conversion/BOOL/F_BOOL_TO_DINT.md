@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Umwandlung von Schaltzuständen (`TRUE`/`FALSE`) in numerische Werte für weitere Berechnungen.
 - Schnittstellen zwischen booleschen und numerischen Systemkomponenten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_BOOL_TO_INT**: Konvertiert `BOOL` in einen 16-Bit-Integer (`INT`). Im Gegensatz dazu liefert `F_BOOL_TO_DINT` einen 32-Bit-Integer.
 - **F_BOOL_TO_REAL**: Konvertiert `BOOL` in einen Gleitkommawert (`REAL`). `F_BOOL_TO_DINT` liefert hingegen einen ganzzahligen Wert.
 

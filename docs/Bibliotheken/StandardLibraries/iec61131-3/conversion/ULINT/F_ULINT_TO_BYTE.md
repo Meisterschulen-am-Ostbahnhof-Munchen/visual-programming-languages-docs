@@ -41,7 +41,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Typumwandlung in Steuerungsanwendungen, wo ULINT-Werte auf BYTE reduziert werden müssen.
 - Datenverarbeitung in eingebetteten Systemen mit begrenzter Speicherkapazität.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_BYTE` oder `F_UINT_TO_BYTE` führen ähnliche Konvertierungen durch, jedoch mit anderen Ausgangsdatentypen.
 - `F_ULINT_TO_BYTE` ist spezifisch für die Konvertierung von 64-Bit-unsigned-Integer zu 8-Bit-unsigned-Integer.
 

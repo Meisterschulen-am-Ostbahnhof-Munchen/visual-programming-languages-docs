@@ -56,13 +56,13 @@ Das `clear`-Ereignis setzt alle Pixel der Leiste auf Schwarz (aus), was einem L�
 *   **Einfache Lichteffekte**: Durch sequentielles Setzen einzelner Pixel können Lauflicht- oder Blinkeffekte realisiert werden.
 *   **Visualisierung von Prozessdaten**: Die Farbe oder Helligkeit eines Pixels kann einen Prozesswert (z.B. Temperatur, Füllstand) repräsentieren.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Bausteinen, die ganze Farbmuster oder Bilder auf eine LED-Matrix übertragen (z.B. `strip_show` oder `matrix_display`), arbeitet `strip_set_pixel` auf einer sehr granularen, pixelweisen Ebene. Er bietet maximale Kontrolle über jede einzelne LED, ist für die Übertragung komplexer Bilder jedoch weniger effizient. Bausteine wie `strip_fill` setzen typischerweise einen ganzen Bereich oder alle LEDs auf einmal auf eine Farbe, während `strip_set_pixel` individuell adressiert.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_031](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_031.md)
 

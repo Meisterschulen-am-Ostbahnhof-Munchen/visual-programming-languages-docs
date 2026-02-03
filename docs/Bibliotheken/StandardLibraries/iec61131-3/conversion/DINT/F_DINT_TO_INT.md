@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Integration von Systemen, die unterschiedliche Datentypen verwenden.
 - Reduzierung der Speicherbelegung, wenn die höhere Präzision eines DINT nicht benötigt wird.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_DINT_TO_INT` spezialisiert auf die Konvertierung von DINT zu INT und bietet daher eine einfache und direkte Lösung für diesen spezifischen Anwendungsfall.
 - Andere Konvertierungsbausteine, wie `F_INT_TO_DINT`, führen entgegengesetzte Konvertierungen durch.
 

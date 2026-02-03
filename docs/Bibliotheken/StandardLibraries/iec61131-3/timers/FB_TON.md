@@ -52,7 +52,7 @@ Der FB_TON startet die Zeitmessung, wenn der Eingang IN von FALSE auf TRUE wechs
 - Prozesssteuerungen mit definierten Wartezeiten
 - Verzögerte Alarmauslösungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **FB_TOF**: Ausschaltverzögerung (Off-Delay) statt Einschaltverzögerung
 - **FB_TP**: Impulstimer mit fester Pulsdauer
 - **FB_TON_EXT**: Erweiterte Timer-Varianten mit zusätzlichen Funktionen
@@ -62,7 +62,7 @@ Der FB_TON startet die Zeitmessung, wenn der Eingang IN von FALSE auf TRUE wechs
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_020c3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c3.md)
 * [Uebung_020c3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020c3_AX.md)

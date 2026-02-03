@@ -45,7 +45,7 @@ Der Funktionsblock nutzt die Funktion `STRING_AS_BOOL`, um den Eingabe-String `I
 - Interpretation von Textdaten aus externen Quellen (z.B. Konfigurationsdateien oder Netzwerkkommunikation).
 - Integration in Systeme, die boolesche Werte als Strings speichern oder übertragen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_STRING_TO_BOOL**: Ein ähnlicher Baustein, der möglicherweise zusätzliche Optionen für die String-Interpretation bietet.
 - **F_STRING_AS_***: Andere Konvertierungsbausteine für verschiedene Datentypen (z.B. `F_STRING_AS_INT`).
 

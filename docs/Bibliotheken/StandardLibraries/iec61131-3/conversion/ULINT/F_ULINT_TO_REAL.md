@@ -46,7 +46,7 @@ Der Funktionsblock hat einen einfachen Zustandsautomaten:
 - Datenverarbeitung in Steuerungssystemen, wo eine Typumwandlung erforderlich ist.
 - Integration in größere Steuerungsalgorithmen, die Gleitkommaberechnungen mit ursprünglich als Ganzzahlen gespeicherten Werten durchführen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_REAL` oder `F_LINT_TO_REAL` bieten Konvertierungen von anderen Ganzzahltypen zu `REAL`, jedoch mit unterschiedlichen Eingangsgrößen und Präzisionen.
 - `F_ULINT_TO_REAL` ist spezifisch für 64-Bit vorzeichenlose Ganzzahlen optimiert.
 

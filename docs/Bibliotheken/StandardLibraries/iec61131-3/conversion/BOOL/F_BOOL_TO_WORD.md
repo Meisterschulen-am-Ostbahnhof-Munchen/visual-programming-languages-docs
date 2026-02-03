@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Einbettung boolescher Signale in Wort-Datenstrukturen für die Kommunikation mit anderen Systemen.
 - Verwendung in Steuerungslogik, wo boolesche Werte als Teil größerer Datenwörter verarbeitet werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_BOOL_TO_BYTE` oder `F_BOOL_TO_DWORD` bieten Konvertierungen in andere Datentypen (`BYTE` oder `DWORD`). `F_BOOL_TO_WORD` ist spezifisch für 16-Bit-Wortwerte.
 
 ## Fazit

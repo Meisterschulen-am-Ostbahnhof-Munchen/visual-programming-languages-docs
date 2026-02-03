@@ -42,14 +42,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Integration in Steuerungssysteme, die nur Ganzzahloperationen unterstützen.
 - Datenkonvertierung für Kommunikationsprotokolle, die DWORD-Werte erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_REAL_TO_INT**: Konvertiert REAL in INT (vorzeichenbehaftete Ganzzahl). Im Gegensatz dazu liefert `F_REAL_TO_DWORD` einen vorzeichenlosen Wert.
 - **F_REAL_TO_LREAL**: Konvertiert REAL in LREAL (höhere Genauigkeit), während `F_REAL_TO_DWORD` den Wert in einen Ganzzahltyp umwandelt.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_126b2_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2_sub.md)
 

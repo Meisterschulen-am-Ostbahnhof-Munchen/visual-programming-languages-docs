@@ -55,7 +55,7 @@ Der PUBLISH_6 Block initialisiert sich über das INIT-Ereignis und bestätigt di
 - Datenverteilung in Produktionsanlagen mit mehreren Verbrauchern
 - Flexibles Messaging in IoT-Anwendungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Publish-Blöcken bietet PUBLISH_6 die Möglichkeit, bis zu sechs verschiedene Datenwerte gleichzeitig zu übertragen, was die Effizienz bei der Übertragung zusammengehöriger Daten erhöht. Die Verwendung des ANY-Datentyps ermöglicht maximale Flexibilität bei den zu übertragenden Datenformaten.
 
 ## Fazit

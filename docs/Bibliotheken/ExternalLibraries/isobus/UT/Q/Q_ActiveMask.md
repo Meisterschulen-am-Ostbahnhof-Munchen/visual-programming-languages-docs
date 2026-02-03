@@ -68,7 +68,7 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
 - **Diagnosesysteme**: Fehleranzeigemasken
 - **Multi-Terminal-Betrieb**: Synchronisierte Anzeigen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ActiveMask | VtMaskManager | VtDynamicDisplay |
 |---------------|--------------|---------------|------------------|
@@ -82,7 +82,7 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_019](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019.md)
 * [Uebung_019a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019a.md)

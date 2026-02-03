@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Typumwandlung in Steuerungsanwendungen, wo `UINT`-Werte in `SINT`-Werte umgewandelt werden müssen.
 - Datenverarbeitung in industriellen Automatisierungssystemen, wo unterschiedliche Datentypen verarbeitet werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_UINT_TO_SINT` spezialisiert auf die Umwandlung von `UINT` zu `SINT`.
 - Andere Konvertierungsbausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Fehlerbehandlung bieten.
 

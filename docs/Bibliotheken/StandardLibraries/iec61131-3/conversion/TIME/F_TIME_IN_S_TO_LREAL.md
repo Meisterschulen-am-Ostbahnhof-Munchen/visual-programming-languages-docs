@@ -50,7 +50,7 @@ Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmet
 *   **Beispiel:** `500 * T#1ms = T#500ms`
 *   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu anderen Konvertierungsbausteinen, die möglicherweise zusätzliche Parameter oder Zustände benötigen, ist `F_TIME_IN_S_TO_LREAL` auf eine spezifische und direkte Konvertierung ausgelegt.
 - Ähnliche Bausteine könnten z.B. `TIME_TO_STRING` oder `TIME_TO_INT` sein, die jedoch andere Ausgabetypen liefern.
 

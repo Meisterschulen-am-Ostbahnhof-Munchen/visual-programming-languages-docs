@@ -52,7 +52,7 @@ Der Funktionsblock besitzt keinen internen Zustand und arbeitet stateless. Alle 
 - Bidirektionale Kommunikation in verteilten Steuerungssystemen
 - Event-basierte Architekturen mit Adapter-Pattern
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Splitter- oder Merger-Blöcken bietet AE2_SPLIT_MERGE:
 - Bidirektionale Funktionalität in einem einzigen Block
 - Adapter-basierte Schnittstellen für standardisierte Kommunikation

@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Interpretation von Textdaten aus externen Quellen, die in numerische Werte umgewandelt werden sollen.
 - Integration in Systeme, die Zeichenketten und numerische Werte verarbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsblöcken wie `F_STRING_AS_INT` oder `F_WSTRING_AS_REAL` ist dieser Block speziell auf die Konvertierung von WSTRING zu INT ausgelegt.
 - Andere Blöcke könnten zusätzliche Funktionen wie Fehlerbehandlung oder Formatierung bieten, dieser Block ist jedoch auf die grundlegende Konvertierung beschränkt.
 

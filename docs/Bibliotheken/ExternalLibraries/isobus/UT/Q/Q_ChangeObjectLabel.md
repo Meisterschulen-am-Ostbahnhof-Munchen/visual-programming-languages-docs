@@ -79,7 +79,7 @@ Der **Q_ChangeObjectLabel** ist ein standardkonformer Funktionsbaustein zur Änd
 - **Statusanzeigen**: Symbolwechsel bei Alarmen
 - **Personalisierung**: Benutzerdefinierte Labels
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ChangeObjectLabel | VtDynamicLabel | VtTextManager |
 |---------------|---------------------|----------------|---------------|

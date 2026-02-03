@@ -49,7 +49,7 @@ Der Funktionsblock ist zustandslos (stateless). Er besitzt keinen internen Speic
 *   **Speicheroptimierung:** Kompaktere Speicherung von bis zu 8 Schaltzuständen oder Alarmbedingungen in einer einzigen Byte-Variablen.
 *   **SPS-interne Datenhandhabung:** Vorbereitung von Daten für Blöcke oder Funktionen, die Byte- oder Wort-Datentypen erwarten, anstatt einzelner Booles.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`BOOL_TO_BYTE`-Blöcke:** Viele Bibliotheken bieten Blöcke an, die acht einzelne `BOOL`-Eingänge (z. B. `IN0`...`IN7`) zu einem `BYTE` kombinieren. `ARR08X_TO_BYTE` verwendet hingegen ein Array als Eingabe, was die Verdrahtung bei vielen Signalen aus einer gemeinsamen Quelle (z. B. einem vorherigen Array-Ausgang) oft übersichtlicher gestaltet.
 *   **`MERGE`/`PACK`-Blöcke:** Allgemeinere Blöcke können verschiedene Datentypen zusammenführen. `ARR08X_TO_BYTE` ist spezialisierter, einfacher und für seinen spezifischen Zweck effizienter.
 *   **Bitweises Schieben (`SHL`, `OR`):** Die gleiche Funktion könnte mit einer Schleife und bitweisen Operationen in ST realisiert werden. Dieser vorgefertigte Block bietet eine standardisierte, sofort einsatzbereite und fehlerunanfälligere Lösung.

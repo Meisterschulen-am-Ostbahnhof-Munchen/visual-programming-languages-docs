@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Konvertierung von Gleitkommazahlen in eine binäre Darstellung für die weitere Verarbeitung in anderen Systemen.
 - Verwendung in Steuerungssystemen, wo Gleitkommawerte in eine für die Hardware verständliche Form umgewandelt werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_REAL_TO_WORD` oder `F_DINT_TO_DWORD` führen ähnliche Konvertierungen durch, jedoch mit anderen Datentypen.
 - `F_LREAL_TO_LWORD` ist spezifisch für die Konvertierung von 64-Bit Gleitkommazahlen in 64-Bit vorzeichenlose Ganzzahlen.
 

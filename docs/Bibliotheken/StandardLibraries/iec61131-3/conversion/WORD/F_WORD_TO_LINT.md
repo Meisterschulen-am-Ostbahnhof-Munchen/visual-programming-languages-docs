@@ -44,7 +44,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Integration in größere Steuerungssysteme, die unterschiedliche Datentypen verarbeiten.
 - Verwendung in Datenverarbeitungsketten, wo eine Erweiterung der Bitbreite erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_WORD_TO_LINT` spezialisiert und daher effizienter.
 - Andere Blöcke wie `F_INT_TO_LINT` oder `F_DWORD_TO_LINT` bieten ähnliche Funktionalität, aber für andere Datentypen.
 

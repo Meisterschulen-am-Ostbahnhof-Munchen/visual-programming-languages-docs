@@ -41,7 +41,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Umwandlung von booleschen Schaltzuständen für numerische Berechnungen.
 - Integration von booleschen Signalen in Systeme, die nur numerische Werte verarbeiten können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_BOOL_TO_INT` oder `F_BOOL_TO_DINT` bietet dieser Baustein eine Konvertierung in einen vorzeichenlosen 32-Bit-Integer.
 
 ## Fazit

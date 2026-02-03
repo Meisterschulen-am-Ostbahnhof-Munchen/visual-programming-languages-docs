@@ -45,7 +45,7 @@ Die Konstanten selbst repräsentieren abstrakte Zustände:
 ## Anwendungsszenarien
 Primär werden diese Konstanten in Zustandsautomaten (State Machines) oder Sequenzer-Funktionsblöcken eingesetzt, um die aktuelle Position oder den Status eines Aktors (wie einen linearen Schieber) eindeutig und lesbar zu kodieren. Beispielsweise könnte ein FB seinen internen Zustand oder einen Ausgangswert auf `STARTOpened` setzen, um anzuzeigen, dass der Schieber vollständig geöffnet ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken wie `E_SR` (Flip-Flop) oder `E_CYCLE` (Zyklusgeber) besitzt `START` keinerlei Algorithmus oder Verhaltenslogik. Es ist eine reine Datendeklaration. Ähnliche Konstrukte wären andere `GlobalConstants`- oder `Type`-Deklarationen, die ebenfalls symbolische Namen für Werte bereitstellen (z.B. für Fehlercodes oder Betriebsmodi).
 
 ## Fazit

@@ -60,7 +60,7 @@ Der Baustein basiert auf einer sehr einfachen Execution Control Chart (ECC) mit 
 *   **Verdrahtungsvereinfachung:** Einsatz in Systemen, die konsequent auf Adapter-Technologie setzen, um die Anzahl der sichtbaren Verbindungen zwischen Funktionsblöcken zu minimieren.
 *   **Start-Trigger:** Erkennung, wann ein Prozess oder eine Maschine gestartet wird (Übergang von 0 auf 1).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`R_TRIG` (Standard):** Der funktionale Kern ist identisch. Der Unterschied liegt in der Schnittstelle: `R_TRIG` nutzt separate `CLK` (BOOL) und `REQ` (Event) Eingänge sowie `Q` (BOOL) und `CNF` (Event) Ausgänge. `AX_FB_R_TRIG` nutzt Adapter.
 *   **`AX_FB_F_TRIG`:** Das Gegenstück zu diesem Baustein, welches auf fallende Flanken (High-to-Low) reagiert.
 

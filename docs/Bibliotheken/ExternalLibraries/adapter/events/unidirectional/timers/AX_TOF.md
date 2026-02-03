@@ -57,7 +57,7 @@ Der AX_TOF Block implementiert eine Ausschaltverzögerung (Off-Delay). Bei einem
 - Verzögerte Abschaltung von Motoren oder Aktoren
 - Prozesssteuerung mit definierten Ausschaltsequenzen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Timer-Bausteinen bietet AX_TOF:
 - Spezialisiert auf Ausschaltverzögerungen
 - Adapter-basierte Schnittstelle für modularen Aufbau
@@ -71,7 +71,7 @@ Vergleich mit [E_TOF](../../../../../StandardLibraries/events/timer/E_TOF.md)
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_020e_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020e_AX.md)
 

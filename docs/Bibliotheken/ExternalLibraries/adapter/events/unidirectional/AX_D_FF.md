@@ -54,7 +54,7 @@ Der Algorithmus LATCH kopiert den Eingangswert `I.D1` auf den Ausgang `Q.D1`. Di
 - Signalverzögerung und -pufferung
 - Als Grundbaustein für komplexere Flipflop-Schaltungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu getakteten D-Flipflops arbeitet der AX_D_FF asynchron und speichert den Wert sofort bei Änderung der Eingangsbedingungen. Es handelt sich um ein level-getriggertes anstatt eines flanken-getriggerten Elements.
 
 Vergleich mit [E_D_FF](../../../../StandardLibraries/events/E_D_FF.md)
@@ -62,7 +62,7 @@ Vergleich mit [E_D_FF](../../../../StandardLibraries/events/E_D_FF.md)
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_170_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_170_AX.md)
 

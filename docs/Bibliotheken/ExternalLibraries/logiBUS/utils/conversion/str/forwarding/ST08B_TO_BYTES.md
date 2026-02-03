@@ -58,7 +58,7 @@ Der Funktionsblock `ST08B_TO_BYTES` ist ein reiner Konverter ohne internen Zusta
 *   **Bit-Level-Manipulation**: Vorbereitung von Daten für Bit-Level-Operationen, bei denen jedes Byte einzeln adressiert werden muss.
 *   **Debugging**: Vereinfacht das Debugging von Daten in 8-Byte-Strukturen, indem die Inhalte der einzelnen Bytes sichtbar gemacht werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Ähnliche Funktionalität könnte in anderen Systemen durch explizite Typumwandlungen oder Zeigeroperationen erreicht werden. Im 4diac-Kontext stellt dieser Baustein eine ereignisgesteuerte, klar definierte und wiederverwendbare Lösung für diese spezifische Struktur-zu-Byte-Aufteilung dar. Der Vorteil liegt in der direkten Anbindung an das 4diac-Ereignismodell und der expliziten Deklaration der Schnittstelle, was die Lesbarkeit und Wartbarkeit verbessert. Alternativ müssten die Zuweisungen direkt im `ST`-Code eines Composite Function Blocks erfolgen, was die Wiederverwendbarkeit einschränken würde.
 
 ## Fazit

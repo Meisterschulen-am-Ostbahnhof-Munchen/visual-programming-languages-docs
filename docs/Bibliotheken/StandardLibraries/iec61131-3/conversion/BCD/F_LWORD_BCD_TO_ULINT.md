@@ -42,7 +42,7 @@ Der Funktionsblock führt die Konvertierung durch, wenn das `REQ`-Ereignis eintr
 - Verarbeitung von BCD-kodierten Daten in industriellen Steuerungen.
 - Konvertierung von BCD-kodierten Werten in numerische Werte für weitere Berechnungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_BCD_TO_ULINT**: Konvertiert BCD-kodierte Werte in `ULINT`, jedoch für andere Datentypen als `LWORD`.
 - **F_LWORD_TO_ULINT**: Konvertiert `LWORD` in `ULINT`, jedoch ohne BCD-Kodierung.
 

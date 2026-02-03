@@ -42,14 +42,14 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung wird bei jedem
 - Typumwandlung in Steuerungsanwendungen, bei denen `DWORD`-Werte in `UDINT`-Werte umgewandelt werden müssen.
 - Integration in größere Steuerungssysteme, die eine Typkompatibilität zwischen verschiedenen Datenformaten erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_UINT` oder `F_BYTE_TO_USINT` führen ähnliche Typumwandlungen durch, jedoch für andere Datentypen.
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_DWORD_TO_UDINT` spezialisiert und optimiert für die Umwandlung von `DWORD` zu `UDINT`.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_011](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011.md)
 * [Uebung_011a2](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011a2.md)

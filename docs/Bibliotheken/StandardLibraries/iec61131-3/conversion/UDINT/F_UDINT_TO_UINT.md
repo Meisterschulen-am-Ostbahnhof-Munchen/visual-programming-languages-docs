@@ -42,14 +42,14 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Konvertierung von 32-Bit-Werten in 16-Bit-Werten in Steuerungsanwendungen.
 - Verwendung in Systemen, die mit unterschiedlichen Integer-Größen arbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_UDINT_TO_UINT` spezialisiert auf die Konvertierung von UDINT zu UINT und daher effizienter in der Ausführung.
 - Ähnliche Blöcke wie `F_DINT_TO_INT` konvertieren zwischen anderen Integer-Typen.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_103](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
 

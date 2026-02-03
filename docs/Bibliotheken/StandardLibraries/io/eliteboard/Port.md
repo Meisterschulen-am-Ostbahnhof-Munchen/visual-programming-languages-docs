@@ -63,7 +63,7 @@ Da es sich um einen reinen Konfigurationsbaustein ohne Ereignissteuerung handelt
 - Integration in größere Steuerungssysteme mit einheitlicher Pin-Verwaltung
 - Wiederverwendbare Pin-Konfigurationen in verschiedenen Applikationen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu direkten GPIO-Bausteinen bietet der Port-FB eine höhere Abstraktionsebene durch die Verwendung von logischen Pin-Namen statt direkter Hardware-Adressierung. Er dient primär der Konfiguration, während andere Bausteine typischerweise die eigentliche Ein-/Ausgabe-Funktionalität bereitstellen.
 
 ## Fazit

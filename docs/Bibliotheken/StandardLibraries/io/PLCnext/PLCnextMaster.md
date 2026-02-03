@@ -55,7 +55,7 @@ Der PLCnextMaster initialisiert und verwaltet die Kommunikation mit PLCnext-Syst
 - Vernetzte Steuerungssysteme
 - IoT-Edge-Computing-Lösungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Bus-Master-Bausteinen bietet der PLCnextMaster spezifische Optimierungen für PLCnext-Hardware und unterstützt die spezifische Bus-Architektur von PLCnext-Systemen.
 
 ## Fazit

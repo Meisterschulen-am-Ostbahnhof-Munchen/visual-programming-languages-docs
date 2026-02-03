@@ -46,13 +46,13 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - Umwandlung von booleschen Sensordaten in numerische Werte für weitere Verarbeitung.
 - Integration in Steuerungssysteme, die numerische Werte anstelle von booleschen Werten erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_BOOL_TO_INT` oder `F_BOOL_TO_REAL` bieten Konvertierungen in andere Datentypen, aber `F_BOOL_TO_UINT` ist speziell für vorzeichenlose Integerwerte optimiert.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_087](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087.md)
 * [Uebung_087a1](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087a1.md)

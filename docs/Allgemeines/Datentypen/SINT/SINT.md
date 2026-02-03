@@ -21,7 +21,7 @@ Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `SINT#...
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_039_sub_NumbAnzeig](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
 

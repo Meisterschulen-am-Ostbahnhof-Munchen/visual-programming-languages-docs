@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung von ULINT zu INT durch, sobald das E
 - **Datenkompatibilität**: Wird verwendet, wenn Systeme mit unterschiedlichen Datentypen kommunizieren müssen.
 - **Datenreduktion**: Kann eingesetzt werden, um Speicherplatz zu sparen, wenn die höhere Präzision von ULINT nicht benötigt wird.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_ULINT_TO_DINT**: Konvertiert ULINT zu DINT (32-Bit), bietet einen größeren Wertebereich als INT.
 - **F_ULINT_TO_LINT**: Konvertiert ULINT zu LINT (64-Bit), behält die volle Präzision bei.
 

@@ -57,14 +57,14 @@ Der `FB_RS` wertet die Eingänge bei `REQ` aus:
 - Speicherung von Schaltzuständen in Steuerungsanwendungen nach IEC 61131-3 Logik.
 - Implementierung von Verriegelungslogik (z.B. Not-Aus-Schaltungen), wo das Abschalten (Reset) immer Vorrang haben muss.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **[E_RS](../../events/E_RS.md)**: Der `E_RS` ist rein ereignisgesteuert ("Last Event Wins"). Der `FB_RS` hingegen wertet statische Signale zum Zeitpunkt `REQ` aus und erzwingt die Rücksetz-Dominanz.
 - **[FB_SR](FB_SR.md)**: Das Gegenstück mit **Setz-Dominanz**.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_006e2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006e2.md)
 * [Uebung_006e2_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006e2_AX.md)

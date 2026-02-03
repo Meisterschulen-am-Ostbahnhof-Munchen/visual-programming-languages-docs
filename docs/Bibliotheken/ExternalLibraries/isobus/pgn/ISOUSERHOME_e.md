@@ -49,7 +49,7 @@ Die Konstanten werden primär in ISOBUS-konformen Steuerungssystemen in der Land
 *   **Nachrichtenkonstruktion:** Ein Senderblock kann den Wert setzen, um den beabsichtigten Empfänger einer ausgesendeten Nachricht zu kennzeichnen.
 *   **Statusrückmeldung:** Ein Block kann den Status `notdef` zurückgeben, wenn die Herkunft oder das Ziel einer Nachricht nicht ermittelt werden kann.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`E_SR` oder `E_RESTART`:** Dies sind ausführbare Basis-Funktionsblöcke mit Ereignislogik. `ISOUSERHOME_e` ist hingegen eine reine Datendefinition ohne Logik.
 *   **Benutzerdefinierte Datentypen (DT):** Ähnlich wie ein strukturierter Datentyp (STRUCT) oder eine Aufzählung (ENUM) dient `ISOUSERHOME_e` dazu, semantische Bedeutung zu kodieren. Der Unterschied liegt in der IEC 61499-Spezifikation: `GlobalConstants` sind für unveränderliche Werte vorgesehen, die projektweit gültig sind.
 *   **Direkte Verwendung von Zahlenwerten:** Die Verwendung von `ISOUSERHOME_e.intern` ist im Code deutlich aussagekräftiger und weniger fehleranfällig als die direkte Verwendung der Zahl `0`.

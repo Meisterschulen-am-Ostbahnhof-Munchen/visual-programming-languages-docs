@@ -63,7 +63,7 @@ Der Funktionsblock hat keinen internen Zustand. Jedes Ereignis führt sofort zur
 - **Prozesssteuerung**: Begrenzte Sollwertvorgabe mit manueller Feinjustierung.
 - **Parameterladen**: Laden von vordefinierten Werten (z. B. aus einem nichtflüchtigen Speicher).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **Vergleich mit Standard-Rampenfunktionen**:
   `RampLimitFS` bietet zusätzlich die Möglichkeit, zwischen schnellen und langsamen Schrittweiten zu wechseln und direkte Werte (Min/Max) zuzuweisen.
 - **Flexibilität**:
@@ -72,7 +72,7 @@ Der Funktionsblock hat keinen internen Zustand. Jedes Ereignis führt sofort zur
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_009a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009a.md)
 

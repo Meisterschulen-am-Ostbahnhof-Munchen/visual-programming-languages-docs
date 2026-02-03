@@ -77,7 +77,7 @@ Der **Q_NumericValueAux** ist ein standardkonformer Funktionsbaustein zur numeri
 - **Prozesssteuerung**: Sollwertvorgaben
 - **Diagnosesysteme**: Fehlercode-Anzeige
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_NumericValueAux | VtNumericUpdate | VtValueManager |
 |---------------|--------------------|-----------------|----------------|

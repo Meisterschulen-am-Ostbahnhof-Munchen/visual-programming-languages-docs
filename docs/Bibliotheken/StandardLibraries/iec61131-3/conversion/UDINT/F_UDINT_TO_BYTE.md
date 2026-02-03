@@ -43,7 +43,7 @@ Der Funktionsblock führt die Konvertierung durch, wenn das Ereignis `REQ` empfa
 - **Schnittstellenanpassung**: Bei der Kommunikation mit Systemen, die nur BYTE-Daten verarbeiten können.
 - **Speicheroptimierung**: In Umgebungen mit begrenztem Speicherplatz.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_DINT_TO_BYTE**: Konvertiert einen 32-Bit-signed-Integer (DINT) in einen BYTE-Wert.
 - **F_INT_TO_BYTE**: Konvertiert einen 16-Bit-signed-Integer (INT) in einen BYTE-Wert.
 - **F_UDINT_TO_WORD**: Konvertiert einen 32-Bit-unsigned-Integer (UDINT) in einen 16-Bit-unsigned-Integer (WORD).

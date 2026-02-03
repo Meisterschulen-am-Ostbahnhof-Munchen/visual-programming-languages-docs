@@ -43,7 +43,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine komplexen Zu
 - Verwendung in Steuerungssystemen, die BCD-Daten verarbeiten müssen.
 - Anzeige von BCD-Daten in einem für Menschen lesbaren Format.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_WORD_BCD_TO_UINT` spezialisiert auf die Konvertierung von BCD zu UINT.
 - Andere Blöcke könnten zusätzliche Funktionen wie Fehlerbehandlung oder verschiedene Codierungsformate unterstützen, sind dafür aber komplexer.
 

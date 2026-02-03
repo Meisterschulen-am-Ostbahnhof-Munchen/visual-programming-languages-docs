@@ -43,7 +43,7 @@ Der Funktionsblock nutzt die eingebaute Funktion `STRING_AS_TIME`, um den über 
 - Verarbeitung von Zeitwerten, die als Text in Benutzereingaben oder externen Datenquellen vorliegen.
 - Integration in Systeme, die Zeitwerte im TIME-Format für Steuerungs- oder Regelungsaufgaben benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen ist `F_STRING_AS_TIME` spezialisiert auf die Umwandlung von Zeitwerten und bietet daher eine direkte und effiziente Lösung für diesen spezifischen Anwendungsfall.
 
 ## Fazit

@@ -52,14 +52,14 @@ Der Funktionsblock `F_SEL_E_2` wählt zwischen zwei Eingangsvariablen basierend 
 - Umschaltung zwischen zwei Betriebsmodi in einer Steuerung.
 - Dynamische Auswahl von Eingangssignalen in Abhängigkeit von Prozessereignissen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Selektionsblöcken (z.B. `SEL` in der IEC 61131-3) ist `F_SEL_E_2` rein ereignisgesteuert und benötigt keine zusätzliche logische Bedingung für die Auswahl.
 - Ähnliche Blöcke wie `MUX` (Multiplexer) erlauben die Auswahl aus mehreren Eingängen, sind aber oft datenflussgesteuert und nicht ereignisbasiert.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_019](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019.md)
 * [Uebung_074](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_074.md)

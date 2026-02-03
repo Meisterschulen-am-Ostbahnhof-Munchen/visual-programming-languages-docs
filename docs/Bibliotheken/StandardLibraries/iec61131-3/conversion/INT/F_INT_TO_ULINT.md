@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Integration von Komponenten, die unterschiedliche Datentypen verwenden.
 - Verwendung in Steuerungssystemen, die eine Typumwandlung benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_DINT_TO_ULINT` oder `F_SINT_TO_ULINT` ist dieser Funktionsblock speziell für die Konvertierung von `INT` zu `ULINT` optimiert.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Fehlerbehandlung bieten, was dieser Funktionsblock nicht tut.
 

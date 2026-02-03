@@ -53,7 +53,7 @@ Zustandsübergänge:
 - Zähler- und Teiler-Schaltungen
 - Zustandssteuerungen mit alternierendem Verhalten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Flipflop-Typen wie RS- oder D-Flipflops bietet der Toggle-Flipflop eine spezialisierte Funktionalität für reine Umschaltoperationen. Er ist einfacher aufgebaut als universellere Flipflop-Typen und benötigt keine zusätzlichen Dateneingänge.
 
 Vergleich mit [E_T_FF](../../../../StandardLibraries/events/E_T_FF.md)
@@ -63,7 +63,7 @@ Vergleich mit [E_T_FF](../../../../StandardLibraries/events/E_T_FF.md)
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_004a2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a2_AX.md)
 * [Uebung_004a3_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a3_AX.md)

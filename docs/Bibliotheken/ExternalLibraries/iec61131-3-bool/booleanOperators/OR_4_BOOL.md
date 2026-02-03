@@ -48,7 +48,7 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei). Sein Verhalte
 *   **Logik in Sicherheitssteuerungen**: Implementierung von ODER-Gattern in Sicherheitsschaltungen.
 *   **Vereinfachung von Steuerungslogik**: Als klar definierter Baustein zur Strukturierung von Programmen in der Funktionsbausteinsprache (FBD) oder im Ablaufsprache (SFC).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`OR_2_BOOL` / `OR_8_BOOL`**: Diese Blöcke führen die identische logische ODER-Operation durch, jedoch mit einer unterschiedlichen Anzahl von Eingängen (2 bzw. 8). Die Wahl des Bausteins hängt von der benötigten Anzahl an zu verknüpfenden Signalen ab. Siehe: [OR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_4.md)
 *   **`AND_4_BOOL`**: Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind.
 *   **`XOR_4_BOOL`**: Führt eine exklusiv-ODER (XOR) Verknüpfung durch. Das Ergebnis ist `TRUE`, wenn eine ungerade Anzahl an Eingängen `TRUE` ist.

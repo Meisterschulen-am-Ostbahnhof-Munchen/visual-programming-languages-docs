@@ -57,7 +57,7 @@ Der `VALUES2ARRAY_2_LREAL` ist ein zustandsloser Funktionsblock. Jede `REQ`-Anfo
 *   **Kompatibilität mit Array-Schnittstellen**: Anpassung von skalaren Daten an Schnittstellen, die explizit Arrays erfordern.
 *   **Vorverarbeitung für mathematische Operationen**: Vorbereitung von Datenpaaren für Operationen, die auf Array-Basis arbeiten, wie z.B. Vektoraddition oder Skalierung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Dieser Funktionsblock ist spezifisch für die Konvertierung von zwei LREAL-Werten in ein LREAL-Array. Allgemeine "Werte-zu-Array"-Bausteine könnten flexibler in Bezug auf die Anzahl und den Datentyp der Eingänge sein, aber dieser Baustein bietet eine einfache, spezialisierte Lösung für den angegebenen Anwendungsfall. Für eine größere Anzahl von Werten oder unterschiedliche Datentypen wären entsprechende, speziell angepasste Bausteine erforderlich.
 
 ## Metadaten

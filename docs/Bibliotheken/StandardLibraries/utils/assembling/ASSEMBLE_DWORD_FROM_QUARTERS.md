@@ -48,14 +48,14 @@ Der Funktionsblock nimmt 16 Quarter-Bytes entgegen und kombiniert sie zu einem 3
 - Kommunikationsprotokolle: Verarbeitung von Daten, die in kleineren Einheiten übertragen werden.
 - Signalverarbeitung: Zusammenfassung von Teilen eines Signals zu einem vollständigen Wert.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine könnten `BYTE_TO_WORD` oder `WORD_TO_DWORD` sein, die jedoch weniger Flexibilität bieten, da sie nur feste Größen kombinieren.
 - `ASSEMBLE_DWORD_FROM_QUARTERS` bietet mehr Kontrolle über die Position jedes einzelnen Bits im resultierenden DWORD.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_060](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
 

@@ -60,7 +60,7 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherlos). Das Ausgangssi
 *   **Verknüpfung von Tastergruppen:** In einer Bedienstation, bei der ein Prozess durch Drücken mindestens eines von mehreren "Start"-Tastern initiiert werden kann.
 *   **Redundante Sensorauswertung:** Auswerten mehrerer redundanter Sensoren, wobei das Signal eines beliebigen Sensors als gültig anerkannt wird.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`OR_2_BOOL` / `OR_4_BOOL`:** Diese Blöcke bieten die gleiche ODER-Funktionalität, jedoch für eine geringere Anzahl von Eingängen (2 bzw. 4). `OR_10_BOOL` ist für Anwendungen mit einer höheren Anzahl zu verknüpfender Signale vorgesehen. Siehe: [OR_10](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_10.md)
 *   **`AND_10_BOOL`:** Führt die logische UND-Verknüpfung durch. Das Ergebnis ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind, während es bei `OR_10_BOOL` ausreicht, wenn *mindestens ein* Eingang `TRUE` ist.
 *   **`XOR_10_BOOL`:** Führt die exklusive ODER-Verknüpfung durch. Das Ergebnis ist `TRUE`, wenn eine ungerade Anzahl an Eingängen `TRUE` ist, was sich grundlegend von der inklusiven ODER-Logik unterscheidet.

@@ -57,7 +57,7 @@ Keine Adapter vorhanden.
 - Speicherung von Prozessdaten für spätere Analysen.
 - Export von Daten in ein tabellenbasiertes Format.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfacheren CSV-Writer-Blöcken bietet CSV_WRITER_5 mehr Flexibilität durch die Unterstützung von fünf Datenpunkten und beliebigen Datentypen.
 - Andere Blöcke könnten auf bestimmte Datentypen beschränkt sein oder weniger Datenpunkte unterstützen.
 

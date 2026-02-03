@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Operation ist stateless
 - Kompatibilitätssicherung zwischen Systemen mit unterschiedlichen Wortgrößen.
 - Einfache Datentypkonvertierung in Steuerungs- und Automatisierungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Konvertierungsbausteinen bietet `F_WORD_TO_LWORD` eine spezialisierte und effiziente Lösung für die Konvertierung von `WORD` zu `LWORD`. Andere Bausteine könnten allgemeiner sein, aber weniger optimiert für diese spezifische Aufgabe.
 
 ## Fazit

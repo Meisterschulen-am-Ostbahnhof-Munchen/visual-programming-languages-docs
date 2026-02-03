@@ -79,7 +79,7 @@ Der **Q_Size** ist ein standardkonformer Funktionsbaustein zur Größenänderung
 - **Layoutmanager**: Automatische Größenoptimierung
 - **Animationssteuerung**: Größenänderungseffekte
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_Size | VtResizeObject | VtGeometryManager |
 |---------------|--------|----------------|-------------------|

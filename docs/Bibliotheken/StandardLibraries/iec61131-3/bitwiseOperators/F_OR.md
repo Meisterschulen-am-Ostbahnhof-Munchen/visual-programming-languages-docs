@@ -44,7 +44,7 @@ Der Funktionsblock besitzt keine interne Zustandsmaschine, da die Operation dire
 - Maskenoperationen in der Signalverarbeitung
 - Logische Kombination von digitalen Signalen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_AND**: Führt eine bitweise UND-Verknüpfung durch
 - **F_XOR**: Führt eine bitweise exklusive ODER-Verknüpfung durch
 - **F_NOT**: Führt eine bitweise Negation durch

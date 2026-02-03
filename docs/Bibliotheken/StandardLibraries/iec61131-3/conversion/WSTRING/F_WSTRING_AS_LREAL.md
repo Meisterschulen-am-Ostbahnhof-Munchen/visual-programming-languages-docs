@@ -45,7 +45,7 @@ Der Funktionsblock führt bei Aktivierung des `REQ`-Ereignisses die Konvertierun
 - Verarbeitung von Textdaten aus externen Quellen für Berechnungen.
 - Integration in Systeme, die sowohl Zeichenketten als auch numerische Werte verarbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen ist `F_WSTRING_AS_LREAL` speziell auf die Umwandlung von WSTRING in LREAL ausgelegt.
 - Andere Bausteine könnten zusätzliche Parameter oder Fehlerbehandlung bieten, dieser Baustein ist jedoch auf Einfachheit und Effizienz optimiert.
 

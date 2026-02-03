@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 - Datenkonvertierung in Steuerungsanwendungen, wo `BYTE`-Werte in größere Datentypen wie `ULINT` umgewandelt werden müssen.
 - Integration in größere Systeme, die eine einheitliche Datenverarbeitung in `ULINT` erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_ULINT` oder `F_DWORD_TO_ULINT` führen Konvertierungen von anderen Datentypen nach `ULINT` durch. Der `F_BYTE_TO_ULINT` ist spezifisch für die Konvertierung von `BYTE`.
 
 ## Fazit

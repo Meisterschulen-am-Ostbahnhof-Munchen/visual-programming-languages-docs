@@ -1,4 +1,4 @@
-# Allgemeines
+# ℹ️ Allgemeines
 
 ```{index} single: Allgemeines
 ```
@@ -49,7 +49,7 @@ Die Darstellung von Zahlen (Binär, Hexadezimal, Dezimal) und die Verwendung von
 
 ---
 
-## Datentypen
+## 💾 Datentypen
 
 Datentypen legen fest, welche Art von Information eine Variable speichern kann (z. B. eine ganze Zahl, eine Fließkommazahl oder ein Wahrheitswert).
 

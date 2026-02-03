@@ -54,7 +54,7 @@ Der Funktionsblock besitzt keinen internen Zustand und arbeitet stateless. Die A
 - Steuerungslogik mit alternativen Aktivierungsbedingungen
 - Verknüpfung mehrerer Zustandsmeldungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren ODER-Bausteinen mit weniger Eingängen bietet AX_OR_6 eine höhere Flexibilität durch sechs separate Eingänge. Die ausschließliche Verwendung von Adaptern statt konventioneller Daten-Ein-/Ausgänge ermöglicht eine modulare Systemarchitektur.
 
 Vergleich mit [OR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_6.md)

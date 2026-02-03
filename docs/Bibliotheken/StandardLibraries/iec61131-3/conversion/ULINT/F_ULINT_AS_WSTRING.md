@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, wenn das Ereignis `REQ` ausge
 - Protokollierung von numerischen Daten in Textform.
 - Vorbereitung von Daten für die Kommunikation mit Systemen, die String-Daten erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_INT_AS_WSTRING` oder `F_DINT_AS_WSTRING` unterstützt dieser Baustein den größeren Wertebereich von `ULINT`.
 - Ähnlich zu `F_ULINT_TO_WSTRING`, jedoch mit direkter Konvertierung ohne zusätzliche Formatierungsoptionen.
 

@@ -64,7 +64,7 @@ Der CLIENT_3_2 Funktionsblock arbeitet in zwei Hauptphasen: Verbindungsmanagemen
 - Datenaustausch mit Cloud-Diensten
 - Authentifizierte Kommunikation mit Backend-Servern
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Client-Bausteinen bietet CLIENT_3_2 erweiterte Funktionalität durch drei separate Dateneingänge (SD_1-3) und zwei Datenausgänge (RD_1-2), was eine strukturierte Übertragung von Authentifizierungsdaten, Parametern und Nachrichteninhalten ermöglicht.
 
 ## Fazit

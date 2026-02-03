@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Schnittstellen zwischen Systemen, die unterschiedliche Datentypen verwenden.
 - Protokollierung und Überwachung, wo Daten in einheitlichen Formaten benötigt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_INT_TO_WORD` spezialisiert auf die Konvertierung von INT zu WORD und daher effizienter in dieser spezifischen Aufgabe.
 - Andere Blöcke wie `F_DINT_TO_WORD` oder `F_SINT_TO_WORD` bieten ähnliche Funktionalität, aber für unterschiedliche Quell-Datentypen.
 

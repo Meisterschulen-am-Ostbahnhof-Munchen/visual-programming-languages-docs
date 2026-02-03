@@ -112,7 +112,7 @@ Nicht zutreffend für einen Datentyp, da er keine interne Logik oder Zustandsmas
 *   **Kompakte Datenübertragung:** Wenn eine große Menge von BOOL-Werten effizient übermittelt werden muss, kann dieser Typ eine kompakte Darstellung bieten.
 *   **Abstrakte Zustände:** Darstellung komplexer Zustände, die sich aus der Kombination von 64 binären Merkmalen ergeben.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Da `ST64X` ein Datentyp ist, vergleicht man ihn nicht direkt mit Funktionsblöcken, sondern mit anderen Möglichkeiten zur Strukturierung von BOOL-Werten:
 
 *   **`ARRAY OF BOOL`:** Ein `ARRAY[0..63] OF BOOL` würde ebenfalls 64 BOOL-Werte speichern. Der Hauptunterschied besteht im Zugriff: `ST64X` verwendet benannte Felder (z.B. `MyVar.X_00`), was oft lesbarer ist, wenn jedes Bit eine spezifische Bedeutung hat. Arrays verwenden Indizes (z.B. `MyArray[0]`), was flexibler für Schleifen und dynamischen Zugriff ist, aber weniger aussagekräftig, wenn die Bedeutung der einzelnen Indizes nicht offensichtlich ist.

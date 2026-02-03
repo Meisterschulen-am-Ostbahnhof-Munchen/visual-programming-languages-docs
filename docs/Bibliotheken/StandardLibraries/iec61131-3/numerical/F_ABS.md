@@ -46,7 +46,7 @@ Der F_ABS Block besitzt keine internen Zustände. Er verhält sich rein funktion
 - Verwendung in Regelungstechnik für Abstandsberechnungen
 - Vorverarbeitung von Messwerten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen mathematischen Funktionsblöcken zeichnet sich F_ABS durch seine Einfachheit und spezifische Funktionalität aus. Während Blöcke wie F_ADD oder F_MUL komplexere Operationen durchführen, konzentriert sich F_ABS ausschließlich auf die Betragsbildung.
 
 ## Fazit

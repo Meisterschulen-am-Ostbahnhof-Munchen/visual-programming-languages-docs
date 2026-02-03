@@ -43,7 +43,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Ausführung erfolgt ausschli
 - Typumwandlung in Automatisierungsanwendungen, wo `DWORD`-Werte in `ULINT`-Werte umgewandelt werden müssen.
 - Integration in größere Steuerungssysteme, die unterschiedliche Datentypen verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_UINT` oder `F_BYTE_TO_USINT` führen ähnliche Konvertierungen durch, jedoch für andere Datentypen.
 - `F_DWORD_TO_ULINT` ist spezialisiert auf die Umwandlung von `DWORD` zu `ULINT` und bietet keine zusätzliche Funktionalität.
 

@@ -55,7 +55,7 @@ Der Block durchläuft folgende Zustände:
 - Wrapper-Implementierung für bestehende IO-Funktionalität
 - Parameterkonfiguration für Auxiliary-Inputs
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen booleschen Eingangsblöcken bietet Aux_IXA:
 - Erweiterte Parametrisierungsmöglichkeiten
 - ISOBUS-Spezifikation
@@ -65,7 +65,7 @@ Im Vergleich zu einfachen booleschen Eingangsblöcken bietet Aux_IXA:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_010b1_AX](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010b1_AX.md)
 

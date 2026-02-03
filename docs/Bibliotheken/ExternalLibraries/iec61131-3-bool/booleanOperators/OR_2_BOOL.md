@@ -59,7 +59,7 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Sein Verhalten 
 *   **Freigabelogik:** Erzeugen einer Freigabe, wenn eine von mehreren möglichen Quellen aktiv ist.
 *   **Grundbaustein in komplexeren logischen Schaltungen:** Als Teil von UND-ODER-Verknüpfungen (SOP - Sum of Products) zur Realisierung von Schaltfunktionen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **AND_2_BOOL:** Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur dann `TRUE`, wenn **beide** Eingänge `TRUE` sind.
 *   **XOR_2_BOOL:** Führt eine exklusive ODER-Verknüpfung (Antivalenz) durch. Das Ergebnis ist `TRUE`, wenn genau **ein** Eingang `TRUE` ist.
 *   **NOT_BOOL:** Führt eine logische NICHT-Verknüpfung (Negation) auf einem einzelnen Eingang durch.
@@ -70,7 +70,7 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Sein Verhalten 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002b3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b3.md)
 * [Uebung_160](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_160.md)

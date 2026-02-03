@@ -83,7 +83,7 @@ Der **Q_LineAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 - **Benutzerführung**: Visuelle Markierungen
 - **Maschinenvisualisierung**: Zustandsanzeigen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_LineAttributes | VtLineStyle | VtGraphicAttributes |
 |---------------|------------------|-------------|---------------------|

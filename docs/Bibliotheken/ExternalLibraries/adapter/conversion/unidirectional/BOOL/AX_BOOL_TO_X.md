@@ -50,13 +50,13 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 - Protokollumwandlung in verteilten Steuerungssystemen
 - Einbindung von Basis-Sensoren in AX-konforme Architekturen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen zeichnet sich AX_BOOL_TO_X durch seine spezifische Ausrichtung auf das AX-Adapterformat aus. Während allgemeine Konvertierungsblöcke oft mehrere Ausgabeformate unterstützen, bietet dieser Block eine optimierte Lösung für die spezifische AX-Schnittstelle.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_001_AX_b](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
 * [Uebung_002a2_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a2_AX.md)

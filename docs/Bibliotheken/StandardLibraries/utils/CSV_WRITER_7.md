@@ -54,7 +54,7 @@ Es sind keine Adapter vorhanden.
 - Speicherung von Messdaten für spätere Analysen.
 - Datenerfassung in Echtzeitsystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **CSV_WRITER_5**: Unterstützt nur fünf Datenfelder.
 - **FILE_WRITER**: Allgemeinerer Baustein, der nicht speziell für CSV-Dateien optimiert ist.
 

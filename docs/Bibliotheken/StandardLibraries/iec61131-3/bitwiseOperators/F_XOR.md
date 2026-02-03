@@ -46,7 +46,7 @@ Bei Aktivierung des Ereigniseingangs `REQ` führt der Funktionsblock eine bitwei
 - Bitweise Manipulation von Daten in industriellen Automatisierungsprozessen.
 - Implementierung von Sicherheitschecks oder Prüfsummenberechnungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_AND / F_OR**: Führen bitweise AND- bzw. OR-Operationen durch, während `F_XOR` eine exklusive ODER-Operation bietet.
 - **F_NOT**: Invertiert Bits, während `F_XOR` zwei Eingabewerte vergleicht.
 

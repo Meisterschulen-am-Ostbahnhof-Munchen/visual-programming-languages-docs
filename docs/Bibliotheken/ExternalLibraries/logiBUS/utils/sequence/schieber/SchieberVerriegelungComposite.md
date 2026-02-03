@@ -54,7 +54,7 @@ Dieser Funktionsblock ist für Steuerungsanwendungen konzipiert, in denen mehrer
 *   Sicherheitssteuerungen für Tore oder Klappen, die nur unter bestimmten Bedingungen geöffnet werden dürfen.
 *   Prozesssteuerungen, in denen die Reihenfolge von Schaltvorgängen eingehalten werden muss (z.B. Hauptschieber nur öffnen, wenn Seitenverschlüsse geschlossen sind).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einem einfachen, monolithischen Funktionsblock, der Logik und Schnittstellen vermischt, bietet dieser Composite-Block eine klare Trennung der Belange (Separation of Concerns). Ein direkter Vergleich wäre ein `SchieberVerriegelung`-FB, der die Adapter-Schnittstellen direkt integriert hätte. Der Composite-Ansatz ist modularer und erlaubt es, die Kernlogik (`SchieberVerriegelung`) unverändert in verschiedenen Netzwerkumgebungen wiederzuverwenden, indem nur der umschließende Composite-Block angepasst wird.
 
 ## Fazit

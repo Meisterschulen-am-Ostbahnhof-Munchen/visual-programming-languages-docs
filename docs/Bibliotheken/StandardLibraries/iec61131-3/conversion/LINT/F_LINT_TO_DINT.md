@@ -44,7 +44,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Speicheroptimierung, wenn 64-Bit Werte nicht benötigt werden.
 - Integration in größere Steuerungssysteme, die DINT-Werte erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_LINT_TO_DINT` spezialisiert auf die Konvertierung von LINT zu DINT.
 - Andere Blöcke könnten zusätzliche Funktionen wie Bereichsprüfungen oder Fehlerbehandlung bieten, was hier nicht der Fall ist.
 

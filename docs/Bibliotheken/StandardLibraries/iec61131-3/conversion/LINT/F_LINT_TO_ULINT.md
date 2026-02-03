@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Typumwandlung in Steuerungsanwendungen, wo vorzeichenbehaftete und vorzeichenlose Werte verarbeitet werden müssen.
 - Datenverarbeitung in industriellen Automatisierungssystemen, wo unterschiedliche Datentypen kompatibel gemacht werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine könnten `F_INT_TO_UINT` oder `F_DINT_TO_UDINT` sein, die jedoch für kleinere Integer-Typen konzipiert sind.
 - Im Gegensatz zu generischen Konvertierungsbausteinen ist `F_LINT_TO_ULINT` spezialisiert auf die 64-Bit-Varianten der Datentypen.
 

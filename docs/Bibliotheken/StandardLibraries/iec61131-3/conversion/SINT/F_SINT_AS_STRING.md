@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das `REQ`-Ereignis ein
 - Protokollierung von numerischen Daten als Text.
 - Vorbereitung von Daten für die Kommunikation über textbasierte Protokolle.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_AS_STRING**: Konvertiert einen `INT`-Wert (16-Bit) in einen `STRING`.
 - **F_DINT_AS_STRING**: Konvertiert einen `DINT`-Wert (32-Bit) in einen `STRING`.
 - **F_LINT_AS_STRING**: Konvertiert einen `LINT`-Wert (64-Bit) in einen `STRING`.

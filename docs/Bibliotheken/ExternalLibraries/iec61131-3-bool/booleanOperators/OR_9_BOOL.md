@@ -56,7 +56,7 @@ Der Block besitzt keinen internen Zustand oder Speicher. Sein Verhalten ist rein
 *   **Freigabelogik**: In Sicherheitsschaltungen, wo eine von mehreren möglichen Freigabebedingungen ausreicht, um einen Prozessschritt zu starten.
 *   **Vereinfachung von Verknüpfungsnetzen**: Ersetzt mehrere hintereinandergeschaltete Zwei-Eingangs-ODER-Gatter, was die Übersichtlichkeit in einem Funktionsbaustein-Diagramm (FBD) erhöht.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`OR_2_BOOL`, `OR_4_BOOL` etc.**: Diese Blöcke bieten die gleiche ODER-Funktionalität, jedoch für eine geringere Anzahl von Eingängen (2, 4, ...). `OR_9_BOOL` ist für Anwendungen mit speziell neun zu verknüpfenden Signalen optimiert. Siehe: [OR_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_9.md)
 *   **`AND_9_BOOL`**: Führt die logische UND-Verknüpfung durch. Das Ergebnis ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind, im Gegensatz zum ODER, wo *mindestens ein* Eingang `TRUE` sein muss.
 *   **`XOR_9_BOOL`**: Berechnet das exklusive ODER (Antivalenz). Das Ergebnis ist `TRUE`, wenn eine ungerade Anzahl an Eingängen `TRUE` ist.

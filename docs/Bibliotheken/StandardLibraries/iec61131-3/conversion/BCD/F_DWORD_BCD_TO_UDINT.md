@@ -42,7 +42,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung wird bei jedem
 - Verarbeitung von BCD-codierten Daten aus externen Geräten oder Sensoren.
 - Umwandlung von BCD-codierten Werten für weitere Berechnungen in UDINT-Format.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_DWORD_BCD_TO_UDINT` spezialisiert auf die Umwandlung von BCD-codierten DWORD-Werten in UDINT-Werte.
 - Andere Konvertierungsbausteine könnten zusätzliche Funktionen oder Flexibilität bieten, sind aber möglicherweise weniger effizient für diesen spezifischen Anwendungsfall.
 

@@ -71,7 +71,7 @@ Der **F_ADD** ist ein standardkonformer arithmetischer Funktionsbaustein nach IE
 - **Bewegungssteuerung**: Positionsberechnungen
 - **Energiemanagement**: Verbrauchssummierung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal       | F_ADD   | F_SUB   | F_MUL   |
 |--------------|---------|---------|---------|

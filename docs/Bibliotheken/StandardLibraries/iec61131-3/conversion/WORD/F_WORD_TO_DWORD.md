@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung von `WORD` zu `DWORD` durch, sobald 
 - Typumwandlung in Steuerungsanwendungen, wo `WORD`-Werte in `DWORD`-Werte umgewandelt werden müssen.
 - Integration in größere Steuerungssysteme, die eine Typkompatibilität erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen bietet `F_WORD_TO_DWORD` eine spezialisierte Funktionalität für die Umwandlung von `WORD` zu `DWORD` ohne zusätzliche Features oder Komplexität.
 
 ## Fazit

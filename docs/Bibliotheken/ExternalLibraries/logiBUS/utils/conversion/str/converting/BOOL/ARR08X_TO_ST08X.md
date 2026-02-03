@@ -52,7 +52,7 @@ Der Funktionsblock `ARR08X_TO_ST08X` ist ein zustandsloser (stateless) Baustein.
 *   **Visualisierung**: Vereinfacht die Anbindung an Visualisierungssysteme, die möglicherweise eine strukturierte Darstellung von Bool-Signalen gegenüber einem Array bevorzugen.
 *   **Legacy-Systeme**: Kann als Brücke zwischen älteren Systemen, die eventuell Bool-Arrays verwenden, und neueren Komponenten, die mit Strukturen arbeiten, dienen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Manuelle Zuweisung**: Die Funktion könnte auch durch direkte Zuweisungen im Code des Steuerprogramms (z.B. in einem `ST`-Baustein) realisiert werden. Der `ARR08X_TO_ST08X` kapselt diese Logik jedoch in einem wiederverwendbaren Funktionsblock, was die Modularität und Übersichtlichkeit erhöht.
 *   **Generische Konverter**: Im Gegensatz zu einem generischen Konverter, der beliebige Array-Größen oder Typen verarbeiten könnte, ist dieser Baustein spezifisch auf 8-BOOL-Arrays und die `ST08X`-Struktur zugeschnitten. Dies vereinfacht die Implementierung, macht ihn aber weniger flexibel für andere Größen.
 

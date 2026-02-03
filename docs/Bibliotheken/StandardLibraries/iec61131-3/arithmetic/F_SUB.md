@@ -70,7 +70,7 @@ Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numeri
   - OUT = 0
   - Keine Exception-Generierung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | F_SUB  | F_ADD  | F_MUL  |
 |---------------|--------|--------|--------|
@@ -83,7 +83,7 @@ Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numeri
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_040](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
 * [Uebung_040_2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040_2.md)

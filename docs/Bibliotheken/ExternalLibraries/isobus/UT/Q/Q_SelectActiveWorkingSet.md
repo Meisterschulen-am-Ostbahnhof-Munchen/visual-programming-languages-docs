@@ -78,7 +78,7 @@ Der **Q_SelectActiveWorkingSet** ist ein standardkonformer Funktionsbaustein zur
 - **Prozessphasen**: Betriebsmodus-Wechsel
 - **Diagnosemanagement**: Service-/Normalmodus
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_SelectActiveWorkingSet | VtContextSwitch | VtWorkspaceManager |
 |---------------|--------------------------|-----------------|--------------------|

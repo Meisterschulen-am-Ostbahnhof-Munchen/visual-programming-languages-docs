@@ -43,7 +43,7 @@ Der Funktionsblock `version` ist zustandslos. Er verharrt in einem einzigen, pas
 2.  **Diagnose und Tracing**: Der Block kann verwendet werden, um bestimmte Software-Stände oder Konfigurationsversionen in einem zentralen Log- oder Anzeigesystem zu sammeln.
 3.  **Datenkonsolidierung**: In Verbindung mit anderen Funktionsblöcken kann er dazu dienen, Versionsinformationen aus verschiedenen Quellen an einer zentralen Stelle (z.B. einem HMI oder einem Netzwerkdienst) bereitzustellen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`E_SR` oder `E_RS` (Flip-Flops)**: Diese Blöcke besitzen einen internen Zustand (gesetzt/rückgesetzt), der durch Ereignisse geändert wird. Der `version`-Block hat keinen solchen Zustand.
 *   **`E_MERGE`**: Dieser Block fusioniert Ereignisse von mehreren Eingängen. Der `version`-Block hat nur einen einzigen Ereigniseingang und verarbeitet keine Ereignisströme.
 *   **Einfache Daten-Blöcke (z.B. `E_R_TRIG`)**: Diese reagieren auf Signalflanken oder führen Timing-Operationen durch. Der `version`-Block führt ausschließlich eine Datenkopie durch.

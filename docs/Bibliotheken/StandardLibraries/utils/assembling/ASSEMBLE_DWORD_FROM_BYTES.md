@@ -50,7 +50,7 @@ Der Funktionsblock nimmt vier BYTE-Werte entgegen und kombiniert sie zu einem ei
 - Vorverarbeitung von Daten für die Übertragung oder Speicherung.
 - Verwendung in Protokollimplementierungen, wo Daten in Bytes segmentiert und später wieder zusammengesetzt werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke könnten einzelne Bytes zu anderen Datentypen (z.B. WORD) kombinieren.
 - Im Gegensatz zu manuellen Kombinationen in ST-Code bietet dieser Block eine vordefinierte und wiederverwendbare Lösung.
 

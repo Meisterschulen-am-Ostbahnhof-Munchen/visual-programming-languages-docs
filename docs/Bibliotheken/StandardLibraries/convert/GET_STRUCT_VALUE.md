@@ -55,7 +55,7 @@ Der `GET_STRUCT_VALUE` ist ein nicht-zustandsbehafteter Service-Baustein, der ei
 *   **Protokollierung und Diagnose:** Extrahieren spezifischer Statusinformationen oder Messwerte aus einer komplexen Systemzustandsstruktur für Überwachungs- oder Diagnosezwecke.
 *   **Schnittstellen zu externen Systemen:** Anpassung an Datenformate externer Systeme, bei denen die Feldnamen dynamisch übergeben werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Es gibt in der Standardbibliothek von 4diac keine direkt vergleichbaren Funktionsblöcke, die einen dynamischen Zugriff auf Strukturmember über einen `STRING`-Pfad ermöglichen. Dieser Baustein füllt eine Nische für Anwendungsfälle, die eine flexible und zur Laufzeit konfigurierbare Strukturmanipulation erfordern, welche über den statischen Zugriff herkömmlicher FBs hinausgeht.
 
 ## Metadaten
@@ -75,7 +75,7 @@ Es gibt in der Standardbibliothek von 4diac keine direkt vergleichbaren Funktion
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_052](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_052.md)
 

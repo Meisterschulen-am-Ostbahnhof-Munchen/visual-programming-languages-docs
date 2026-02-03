@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - **Benutzeroberflächen**: Darstellung von numerischen Werten als Text in Benutzeroberflächen.
 - **Datenkommunikation**: Vorbereitung von numerischen Werten für die Übertragung als Zeichenketten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_AS_STRING**: Konvertiert einen `INT`-Wert in einen `STRING`. Im Gegensatz dazu unterstützt `F_ULINT_AS_STRING` den größeren `ULINT`-Datentyp.
 - **F_DINT_AS_STRING**: Konvertiert einen `DINT`-Wert in einen `STRING`. Ähnlich, aber für 32-Bit signed integers.
 

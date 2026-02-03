@@ -53,7 +53,7 @@ Siehe `sequence_ET_05`.
 ## Anwendungsszenarien
 Für 5-stufige Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_ET_05**: Standardvariante ohne Adapter.
 
 ## Fazit

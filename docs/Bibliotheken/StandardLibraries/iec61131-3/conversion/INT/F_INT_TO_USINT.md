@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 - Reduzierung der Speicherbelegung durch Konvertierung in kleinere Datentypen, wo möglich.
 - Vorbereitung von Daten für die Kommunikation mit Systemen, die nur `USINT`-Werte verarbeiten können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_USINT` oder `F_SINT_TO_USINT` bieten Konvertierungen von anderen Ganzzahltypen zu `USINT`. `F_INT_TO_USINT` ist spezifisch für die Umwandlung von `INT` zu `USINT` optimiert.
 - Im Gegensatz zu generischen Konvertierungsblöcken bietet dieser Baustein eine direkte und effiziente Lösung für die spezifische Typumwandlung.
 

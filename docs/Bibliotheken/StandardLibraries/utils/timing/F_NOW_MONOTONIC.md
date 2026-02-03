@@ -74,7 +74,7 @@ Die Funktion dient als Wrapper für die ST-Funktion `NOW_MONOTONIC()`.
 
 ---
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 | Funktion            | `F_NOW_MONOTONIC`      | `NOW()`               | `NOW_SYSTEM()`        |
 |---------------------|------------------------|-----------------------|-----------------------|
 | **Zeitquelle**      | Monoton (Hardware)     | Systemzeit            | Systemzeit (UTC)      |

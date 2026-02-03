@@ -55,7 +55,7 @@ Der FB_TP funktioniert als monostabiler Multivibrator (One-Shot). Bei einem posi
 - Taktgenerierung für Prozesssteuerungen
 - Sicherheitszeitüberwachung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **FB_TON**: Einschaltverzögerung - Q wird erst nach Ablauf von PT aktiv
 - **FB_TOF**: Ausschaltverzögerung - Q bleibt nach IN-Rücksetzung noch für PT aktiv
 - **FB_TP**: Impulsgeber - Erzeugt einen festen Impuls unabhängig von IN
@@ -65,7 +65,7 @@ Der FB_TP funktioniert als monostabiler Multivibrator (One-Shot). Bei einem posi
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_020f2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020f2.md)
 * [Uebung_020f2_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f2_AX.md)

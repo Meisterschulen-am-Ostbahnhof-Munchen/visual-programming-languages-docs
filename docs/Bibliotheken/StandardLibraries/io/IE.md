@@ -68,7 +68,7 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 - Ereignisgesteuerte Steuerungsanwendungen
 - Hardware-nahe E/A-Verwaltung in Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Eingabeblöcken bietet IE erweiterte Funktionalität:
 - Gegenüber reinen E/A-Blöcken: Unterstützt sowohl poll- als auch event-basierte Abfragen
 - Gegenüber statischen Eingabeblöcken: Dynamische Parametrierung zur Laufzeit
@@ -79,7 +79,7 @@ Im Vergleich zu einfacheren Eingabeblöcken bietet IE erweiterte Funktionalität
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_004a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a.md)
 * [Uebung_004a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a2.md)

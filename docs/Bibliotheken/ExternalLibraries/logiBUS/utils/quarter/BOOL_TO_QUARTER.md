@@ -51,14 +51,14 @@ Der Block besitzt keinen internen Zustand im Sinne eines Speichers. Er verhält 
 *   **Schnittstellenanpassung**: Anbindung von Logikbausteinen, die mit BOOL-Werten arbeiten, an Steuerungskomponenten, die Befehle im Quarter-Byte-Format erwarten.
 *   **Code-Vereinheitlichung**: Sicherstellung, dass in einem Projekt immer die gleichen, zentral definierten Konstanten für Enable-/Disable-Befehle verwendet werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`BOOL_TO_BYTE`**: Ein generischer Konverter, der `TRUE` typischerweise auf `1` und `FALSE` auf `0` abbildet. `BOOL_TO_QUARTER` ist spezialisierter und verwendet projektspezifische, semantische Konstanten anstelle numerischer Werte.
 *   **Direkte Zuweisung**: Die Funktionalität könnte auch durch direkte Zuweisung in ST-Code (`QB := I`) nachgebildet werden, dabei gingen jedoch die Vorteile der zentralen Konstantendefinition und der klaren Schnittstelle (Events) verloren.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_055](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)
 * [Uebung_056](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)

@@ -45,7 +45,7 @@ Bei Auslösung des `REQ`-Ereignisses führt der Funktionsblock eine bitweise ODE
 - **Steuerungstechnik**: Verwendung in Steuerungsalgorithmen, wo mehrere Bedingungen gleichzeitig erfüllt sein müssen (ODER-Verknüpfung).
 - **Datenverarbeitung**: Bitweise Operationen auf Byte-, Word- oder DWord-Ebene.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **OR (Standard)**: Standard-ODER-Bausteine in IEC 61131-3 unterstützen typischerweise nur zwei Eingänge. `OR_7` erweitert diese Funktionalität auf bis zu sieben Eingänge.
 - **GEN_OR**: Der generische ODER-Baustein, auf dem `OR_7` basiert, kann theoretisch beliebig viele Eingänge verarbeiten, ist aber weniger spezifisch in der Implementierung.
 

@@ -66,7 +66,7 @@ Die Hysterese verhindert ein zu häufiges Schalten bei kleinen Signaländerungen
 - Füllstandserkennung mit unterschiedlichen Schaltpunkten für Füllen/Entleeren
 - Allgemeine Signalaufbereitung mit Rauschunterdrückung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Einfache Hysterese-Blöcke haben typischerweise nur einen Schaltausgang
 - Standard-Komparatoren bieten keine Totband- oder Hysterese-Funktionalität
 - Dieser Block kombiniert beide Richtungen in einem Baustein mit konfigurierbaren Parametern

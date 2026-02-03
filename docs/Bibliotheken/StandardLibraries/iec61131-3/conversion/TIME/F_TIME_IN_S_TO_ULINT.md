@@ -49,7 +49,7 @@ Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmet
 *   **Beispiel:** `500 * T#1ms = T#500ms`
 *   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsblöcken ist dieser FB spezialisiert auf die Umwandlung von TIME in ULINT.
 - Andere Blöcke könnten unterschiedliche Ausgabetypen oder zusätzliche Funktionen bieten, wie z.B. die Umwandlung in andere numerische Formate.
 

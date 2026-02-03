@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` aus
 - Typumwandlung in Steuerungsanwendungen, wo DWORD-Daten in Gleitkommazahlen umgewandelt werden müssen.
 - Integration in größere Funktionsblöcke, die eine Typkonvertierung erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_REAL` oder `F_INT_TO_REAL` bieten ähnliche Funktionalitäten, jedoch für andere Eingabetypen.
 - `F_DWORD_TO_REAL` ist spezifisch für die Umwandlung von DWORD zu REAL optimiert.
 

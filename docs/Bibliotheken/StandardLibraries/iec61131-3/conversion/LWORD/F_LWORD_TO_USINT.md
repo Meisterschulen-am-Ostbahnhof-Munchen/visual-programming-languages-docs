@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` aus
 - Kommunikation zwischen Systemen mit unterschiedlichen Datenbreiten.
 - Speicherplatzoptimierung in eingebetteten Systemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_LWORD_TO_BYTE**: Konvertiert ebenfalls LWORD in einen 8-Bit-Wert, jedoch ohne Vorzeichen (BYTE).
 - **F_LWORD_TO_INT**: Konvertiert in einen 16-Bit-signed-Integer, bietet einen größeren Wertebereich, aber mit Vorzeichen.
 

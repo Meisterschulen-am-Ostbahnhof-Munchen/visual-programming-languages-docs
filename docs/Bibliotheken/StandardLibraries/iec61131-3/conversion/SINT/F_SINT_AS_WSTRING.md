@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung des SINT-Wertes (`IN`) in einen WSTR
 - Protokollierung von numerischen Daten in Textform.
 - Weiterverarbeitung von numerischen Werten in Text-basierten Systemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_AS_WSTRING**: Konvertiert einen INT-Wert (16-Bit) in einen WSTRING.
 - **F_DINT_AS_WSTRING**: Konvertiert einen DINT-Wert (32-Bit) in einen WSTRING.
 - **F_LINT_AS_WSTRING**: Konvertiert einen LINT-Wert (64-Bit) in einen WSTRING.

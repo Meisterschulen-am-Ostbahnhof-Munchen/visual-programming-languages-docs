@@ -44,7 +44,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Steuerung von Aktoren, die Ganzzahlwerte erwarten.
 - Datenvorverarbeitung in Steuerungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - `F_REAL_TO_INT`: Konvertiert REAL (32-Bit Gleitkommazahl) zu INT (16-Bit Ganzzahl).
 - `F_LREAL_TO_DINT`: Konvertiert LREAL (64-Bit Gleitkommazahl) zu DINT (32-Bit Ganzzahl).
 - `F_LREAL_TO_LINT` bietet eine höhere Genauigkeit durch die Verwendung von 64-Bit Ganzahlen.

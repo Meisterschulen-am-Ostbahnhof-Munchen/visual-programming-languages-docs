@@ -80,7 +80,7 @@ Die ECC umfasst folgende Zustände:
 *   **Verkettete Maschinenabläufe:** Steuerung einer Maschine, deren Zyklus aus mehreren nacheinander geschalteten Aktionen besteht (z.B. Einlegen, Bearbeiten, Prüfen, Auswerfen).
 *   **Testsequenzen:** Automatisierte Prüfstände, die eine Reihe von Tests nacheinander durchführen, wobei jeder Test eine feste Dauer haben oder manuell bestätigt werden kann.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Timer-Ketten oder Zählern bietet `sequence_ET_05` eine vollständig gekapselte Zustandsmaschine mit klaren Eingangs-/Ausgangsereignissen und der flexiblen Kombination aus Zeit- und Ereignissteuerung. Gegenüber einem generischen `E_SR`- oder `E_CTUD`-Baustein in einer Ad-hoc-Verknüpfung stellt er eine vordefinierte, getestete und leicht zu parametrierende Lösung für eine häufige Steuerungsaufgabe dar.
 
 
@@ -88,7 +88,7 @@ Im Vergleich zu einfachen Timer-Ketten oder Zählern bietet `sequence_ET_05` ein
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_039](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039.md)
 * [Uebung_039a](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039a.md)

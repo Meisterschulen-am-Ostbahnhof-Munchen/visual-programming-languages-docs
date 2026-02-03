@@ -60,7 +60,7 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 *   **Verschlüsselungs- und Codierungsgrundfunktionen:** Als Basisbaustein für einfache kryptografische Operationen oder Fehlererkennungscodes.
 *   **Vergleich von zwei oder mehr Zuständen:** Feststellung, ob sich mindestens ein Signal in einer Gruppe von seinem Sollzustand unterscheidet.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`OR_8_BOOL` / `AND_8_BOOL`:** Diese Blöcke berechnen die logische ODER- bzw. UND-Verknüpfung. Im Gegensatz zum XOR liefert ODER `TRUE`, wenn *mindestens* ein Eingang wahr ist, und UND liefert `TRUE` nur, wenn *alle* Eingänge wahr sind. XOR ist spezifischer und reagiert auf die *Parität* (gerade/ungerade) der wahren Eingänge.
 *   **`XOR` (mit 2 Eingängen):** Ein Standard-XOR-Block mit nur zwei Eingängen. `XOR_8_BOOL` erweitert diese Funktionalität auf bis zu acht Eingänge, ohne dass mehrere Blöcke verkettet werden müssen. Siehe: [XOR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_8.md)
 *   **Kombinatorische Logik in SFC/ST:** Die Funktion könnte auch in Structured Text (ST) direkt programmiert werden (z.B. `OUT := IN1 XOR IN2 XOR ...;`). Der Vorteil des FBs liegt in der standardisierten, wiederverwendbaren und grafisch darstellbaren Schnittstelle innerhalb von FBD-Netzwerken.

@@ -48,7 +48,7 @@ Der Funktionsblock besitzt einen einfachen Zustand:
 - Selektion von Datenquellen in Abhängigkeit von Betriebszuständen
 - Wechsel zwischen manueller und automatischer Steuerung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Selektionsbausteinen bietet AX_SEL:
 - Größere Flexibilität durch ANY-Datentyp
 - Einfache Integration durch unidirektionalen Adapter

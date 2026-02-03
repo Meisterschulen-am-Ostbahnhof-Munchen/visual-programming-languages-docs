@@ -34,7 +34,7 @@ Typische Anwendungen für diese Konstanten sind:
 *   **Dokumentation und Logging:** Sie können verwendet werden, um den aktuellen Betriebszustand in Meldungen, Logdateien oder auf Bedienpanels anzuzeigen.
 *   **Vergleiche und Schaltlogik:** In der Programmlogik können Variablen oder Ausgänge mit diesen Konstanten verglichen werden, um Entscheidungen basierend auf dem aktuellen Zustand zu treffen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Globale Variablen (VAR_GLOBAL):** Im Gegensatz zu globalen Variablen können die Werte von Konstanten (`CONSTANT`) zur Laufzeit nicht verändert werden.
 *   **Enumerations (ENUM):** Während ENUM-Datentypen in einigen Programmiersprachen ähnliche Zwecke erfüllen, bietet die IEC 61499-Standardbibliothek keinen eingebauten ENUM-Typ. Die Verwendung von STRING-Konstanten ist eine gängige Methode, um semantisch benannte Werte in dieser Umgebung zu definieren.
 *   **Funktionsbaustein-internen Konstanten:** Konstanten können auch innerhalb von Funktionsbausteinen definiert werden. Globale Konstanten sind jedoch über Bausteingrenzen hinweg sichtbar und fördern so die Wiederverwendbarkeit und Konsistenz über ein gesamtes Projekt hinweg.

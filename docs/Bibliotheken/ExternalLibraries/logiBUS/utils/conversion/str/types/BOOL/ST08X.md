@@ -51,7 +51,7 @@ Als reiner Datentyp besitzt **ST08X** keine Zustände im Sinne einer Zustandsmas
 *   **Binäre Ein-/Ausgänge**: Repräsentation von 8 digitalen Ein- oder Ausgängen.
 *   **Datenbus-Repräsentation**: In Fällen, wo eine Gruppe von 8 Bits als Einheit behandelt werden soll, ohne sie als kompletten Byte-Wert zu interpretieren, ermöglicht ST08X den direkten Zugriff auf einzelne Bits.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Der Datentyp **ST08X** bietet eine Alternative zu:
 *   **Einzelne BOOL-Variablen**: Reduziert die Anzahl der Deklarationen und vereinfacht die Parameterübergabe, wenn viele boolesche Werte zusammengehören.
 *   **BYTE-Datentyp**: Während ein `BYTE` ebenfalls 8 Bits speichert, werden diese als numerischer Wert behandelt. **ST08X** behält die separate, namentliche Adressierbarkeit jedes einzelnen Bits, was die Semantik und den direkten Zugriff auf logische Flags verbessert, ohne Bitmaskierungen oder Bitverschiebeoperationen verwenden zu müssen. Die explizite Benennung `X_00` bis `X_07` macht den Code selbsterklärender.

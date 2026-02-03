@@ -1,4 +1,4 @@
-# Datentypen (Übersicht)
+# 💾 Datentypen (Übersicht)
 
 ```{index} single: Datentypen (Übersicht)
 ```
@@ -44,13 +44,13 @@ Gemäß DIN EN 61131-3 werden die Datentypen in folgende Gruppen unterteilt:
 - **Gleitpunktzahlen**: REAL, LREAL
 - **Zeit und Datum**: TIME, DATE, TOD, DT
 - **Zeichenfolgen**: STRING, WSTRING
-## Datentypen2
+## 💾 Datentypen2
 
 [Integer (Datentyp) – Wikipedia](https://de.wikipedia.org/wiki/Integer_(Datentyp))
 
 [Gleitkommazahl – Wikipedia](https://de.wikipedia.org/wiki/Gleitkommazahl)
 
-### Datentypen in der IEC 61131-3
+### 💾 Datentypen in der IEC 61131-3
 
 [Datentypen](https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_reference_datatypes.html)
 
@@ -59,11 +59,11 @@ Gemäß DIN EN 61131-3 werden die Datentypen in folgende Gruppen unterteilt:
 Für überladene Funktionen und Standard-Bibliotheken definiert die Norm generische Datentypen.
 Details zur Hierarchie und Verwendung finden Sie hier: **[ANY-Typen](GenerischeDatentypen/ANY_Typen.md)**
 
-### Datentypen in der IEC 61499
+### 💾 Datentypen in der IEC 61499
 
 Siehe auch: IEC 61499, Table E.1
 
-#### Datentypen zum Rechnen
+#### 💾 Datentypen zum Rechnen
 
 | Typ | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
 | --- | --- | --- | --- | --- |
@@ -83,7 +83,7 @@ Siehe auch: IEC 61499, Table E.1
 | TIME\_OF\_DAY | 12 | 96 Bit | 1970-01-01-00:00:00.000 |   |
 | DATE\_AND\_TIME | 20 | 160 Bit | 1970-01-01-00:00:00.000 |   |
 
-#### Datentypen für I/O (Input / Output)
+#### 💾 Datentypen für I/O (Input / Output)
 
 | Typ | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
 | --- | --- | --- | --- | --- |

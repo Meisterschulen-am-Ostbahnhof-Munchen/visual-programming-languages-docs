@@ -49,7 +49,7 @@ Der Funktionsblock besitzt einen einfachen Zustand:
 - Erweiterung von Systemen mit speziellen Adapter-Anforderungen
 - Protokollumsetzung in verteilten Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen zeichnet sich AE_E_TO_EVENT durch seine Einfachheit aus. Während andere Konverter oft zusätzliche Datenverarbeitung oder Signalaufbereitung bieten, beschränkt sich dieser Baustein auf die reine Ereignisweiterleitung.
 
 ## Fazit

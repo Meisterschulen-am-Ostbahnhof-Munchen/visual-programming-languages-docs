@@ -56,7 +56,7 @@ Da es sich um einen kombinatorischen Logikbaustein handelt, besitzt der AX_XOR_8
 - Logische Verknüpfungen in Automatisierungssystemen
 - Fehlererkennung in binären Signalketten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen XOR-Bausteinen mit weniger Eingängen bietet AX_XOR_8 die Möglichkeit, bis zu 8 Signale gleichzeitig zu verknüpfen. Die ausschließliche Verwendung von Adaptern statt direkter Daten- und Ereigniseingänge ermöglicht eine höhere Flexibilität in komplexen Systemarchitekturen.
 
 Vergleich mit [XOR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_8.md)

@@ -43,7 +43,7 @@ Bei DataPanel_MI_DI handelt es sich um eine globale Konstantendefinition, die fe
 - Vereinfachung der Pin-Zuordnung in IEC 61499-basierten Anwendungen
 - Wiederverwendbare Konstantendefinition für mehrere Projekte
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konstantendefinitionen bietet DataPanel_MI_DI:
 - Spezifische Pin-Zuordnungen für DataPanel-Hardware
 - Strukturierte Datentypen für bessere Typsicherheit

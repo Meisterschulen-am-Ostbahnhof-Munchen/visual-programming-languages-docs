@@ -76,7 +76,7 @@ Der **Q_ExecuteExtendedMacro** ist ein standardkonformer Funktionsbaustein zur A
 - **Diagnoseroutinen**: Automatisierte Tests
 - **Benutzeraktionen**: Makroaufzeichnungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ExecuteExtendedMacro | VtMacroPlayer | VtCommandSequence |
 |---------------|------------------------|---------------|-------------------|

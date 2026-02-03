@@ -58,7 +58,7 @@ Der Funktionsblock hat keinen internen Zustand im Sinne eines Zustandsautomaten.
 - Positionserfassung (z.B. in linearen Achsen)
 - Ereigniszählung mit Möglichkeit zur Richtungsumkehr
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfachen Zählern (z.B. CTU oder CTD) bietet dieser Baustein beide Zählrichtungen in einem Block.
 - Gegenüber Zählern mit kleinerem Datentyp (z.B. INT) bietet der DINT-Typ einen größeren Zählbereich.
 

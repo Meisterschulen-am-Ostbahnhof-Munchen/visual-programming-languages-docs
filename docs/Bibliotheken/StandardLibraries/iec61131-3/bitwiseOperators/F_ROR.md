@@ -45,7 +45,7 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem `R
 - Signalverarbeitung, bei denen Daten bitweise manipuliert werden müssen.
 - Low-Level-Hardware-Steuerungen, die bitweise Operationen benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - `F_SHR` (Shift Right): Führt eine Rechtsverschiebung durch, füllt aber die frei werdenden Bits mit Nullen auf.
 - `F_ROL` (Rotate Left): Führt eine Linksrotation durch, ähnlich wie `F_ROR`, aber in die entgegengesetzte Richtung.
 

@@ -49,7 +49,7 @@ Der Funktionsblock verfügt über zwei Hauptzustände:
 - Mathematische Transformationen in technischen Anwendungen
 - Positionsberechnungen in Robotik und Motion Control
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen trigonometrischen Funktionen wie F_COS (Kosinus) oder F_TAN (Tangens) bietet F_SIN die spezifische Sinusberechnung. Gegenüber universellen mathematischen Blöcken zeichnet sich F_SIN durch seine spezialisierte und optimierte Implementierung aus.
 
 ## Fazit

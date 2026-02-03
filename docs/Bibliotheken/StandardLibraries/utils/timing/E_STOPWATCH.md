@@ -85,7 +85,7 @@ stateDiagram-v2
 | START -> ET nach 750ms -> STOP nach 1,5s | T#750ms (ETO), T#1s500ms (EO) |
 | RESET während Messung | T#0s |
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature | E_STOPWATCH | Standard-Timer | High-Res-Timer |
 |---------|-------------|----------------|----------------|
@@ -99,7 +99,7 @@ stateDiagram-v2
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_020i](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020i.md)
 * [Uebung_020i_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020i_AX.md)

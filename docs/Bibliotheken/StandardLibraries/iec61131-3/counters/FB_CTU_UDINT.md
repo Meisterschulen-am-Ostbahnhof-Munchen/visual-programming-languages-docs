@@ -46,7 +46,7 @@ Der Funktionsblock hat keine internen Zustände außer dem aktuellen Zählerstan
 - Überwachung von Prozessen, bei denen eine bestimmte Anzahl von Schritten erreicht werden muss.
 - Als Teil einer größeren Steuerungslogik, die auf Zählerstände reagiert.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Zählern (z. B. `FB_CTU_INT`) arbeitet dieser Funktionsblock mit dem Datentyp `UDINT`, was einen größeren Wertebereich ermöglicht.
 - Ähnliche Funktionsblöcke könnten zusätzliche Funktionen wie Abwärtszählen oder eine kombinierte Auf-/Abwärtszählung bieten.
 

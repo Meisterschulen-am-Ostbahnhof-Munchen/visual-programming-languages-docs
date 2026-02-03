@@ -44,7 +44,7 @@ Bei Auslösung des Ereigniseingangs `REQ` wird der Wert am Eingang `IN` vom Typ 
 - Datenverarbeitung in Steuerungssystemen, wo unterschiedliche numerische Formate verarbeitet werden müssen.
 - Integration in größere Systeme, die sowohl Integer- als auch Fließkommaoperationen erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_UDINT_TO_LREAL` spezialisiert auf die Umwandlung von UDINT zu LREAL und daher effizienter in dieser spezifischen Anwendung.
 - Andere Bausteine könnten zusätzliche Funktionalitäten wie Bereichsprüfungen oder Skalierungen bieten, was hier nicht notwendig ist.
 

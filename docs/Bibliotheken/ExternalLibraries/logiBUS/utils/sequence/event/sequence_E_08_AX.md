@@ -41,7 +41,7 @@ Siehe `sequence_E_08`.
 ## Anwendungsszenarien
 Für ereignisgesteuerte 8-stufige Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_E_08**: Standardvariante ohne Adapter.
 
 ## Fazit

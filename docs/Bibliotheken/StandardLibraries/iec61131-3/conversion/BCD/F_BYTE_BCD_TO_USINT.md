@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung eines BCD-codierten BYTE-Wertes in e
 - Konvertierung von BCD-codierten Sensordaten in numerische Werte.
 - Integration in Steuerungslogik, die BCD-Daten verarbeiten muss.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsfunktionsblöcken ist `F_BYTE_BCD_TO_USINT` spezialisiert auf die Umwandlung von BCD-codierten BYTE-Werten in USINT-Werte.
 - Andere Funktionsblöcke könnten zusätzliche Konvertierungsoptionen bieten, sind jedoch möglicherweise weniger effizient für diesen spezifischen Anwendungsfall.
 

@@ -58,7 +58,7 @@ Der Funktionsblock verfügt über mehrere Service-Sequenzen:
 - Systemwartung und -updates
 - Fehlerbehandlung und Systemwiederherstellung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Execution-Control-Blöcken bietet EC_KILL_ELEM spezifische Funktionen zum Beenden von Elementinstanzen, während ähnliche Blöcke oft Erstellungs- oder Managementfunktionen bereitstellen. Die Fähigkeit, verschiedene Elementtypen (FB, Verbindungen, Ressourcen, Geräte) zu behandeln, macht ihn besonders vielseitig.
 
 ## Fazit

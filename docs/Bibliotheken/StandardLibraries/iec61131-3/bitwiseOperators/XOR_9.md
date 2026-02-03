@@ -50,7 +50,7 @@ Bei Auslösung des `REQ`-Ereignisses berechnet der FB die XOR-Verknüpfung aller
 - Kryptografische Grundoperationen
 - Fehlererkennung in Binärdaten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 | Feature        | XOR_9       | Standard-XOR (2 Eingänge) |
 |---------------|-------------|---------------------------|
 | Eingangsanzahl | 9           | 2                         |

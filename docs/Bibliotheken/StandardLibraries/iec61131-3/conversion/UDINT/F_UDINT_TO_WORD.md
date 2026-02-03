@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keinen internen Zustand. Die Konvertierung wird bei j
 - Kompatibilität mit älteren Systemen, die nur 16-Bit-Daten verarbeiten können.
 - Speicheroptimierung in ressourcenbeschränkten Umgebungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_DINT_TO_WORD` oder `F_INT_TO_WORD` verarbeitet dieser Baustein unsignierte Werte.
 - Ähnliche Bausteine wie `F_UDINT_TO_DWORD` führen keine Reduktion der Bitbreite durch.
 

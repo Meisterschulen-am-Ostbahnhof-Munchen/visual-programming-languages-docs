@@ -52,7 +52,7 @@ Der Baustein arbeitet zustandslos:
 - Steuerungslogik mit mehreren Bedingungen
 - Datenverarbeitung in industriellen Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen mit zwei Eingängen bietet XOR_3 die Möglichkeit, drei Eingänge gleichzeitig zu verarbeiten. Gegenüber AND/OR-Operationen liefert XOR ein exklusives Ergebnis, bei dem das Ausgangsbit nur dann 1 ist, wenn eine ungerade Anzahl der Eingangsbits 1 ist.
 
 
@@ -60,7 +60,7 @@ Im Vergleich zu Standard-XOR-Bausteinen mit zwei Eingängen bietet XOR_3 die Mö
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002a7_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
 

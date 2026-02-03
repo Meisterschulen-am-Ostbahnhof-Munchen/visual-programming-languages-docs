@@ -1,4 +1,4 @@
-# Installation Eclipse 4diac™
+# 📦 Installation Eclipse 4diac™
 
 ```{index} single: Installation Eclipse 4diac™
 ```

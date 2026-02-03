@@ -41,7 +41,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - **Datenkompatibilität**: Wenn ein System LWORD-Daten erzeugt, ein anderes System aber nur DWORD-Daten verarbeiten kann.
 - **Protokollumsetzung**: Bei der Kommunikation zwischen verschiedenen Protokollen oder Schnittstellen, die unterschiedliche Datentypen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_DWORD_TO_LWORD**: Führt die umgekehrte Konvertierung durch (DWORD zu LWORD).
 - **F_WORD_TO_DWORD**: Konvertiert WORD zu DWORD, hat aber eine geringere Eingangsgröße im Vergleich zu LWORD.
 

@@ -80,7 +80,7 @@ Der **Q_GetAttribute** ist ein standardkonformer Funktionsbaustein zum Abfragen 
 - **Automatisierung**: Regelbasierte Steuerungen
 - **Konfiguration**: Parameterauslesung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_GetAttribute | VtReadValue | VtObjectQuery |
 |---------------|----------------|-------------|---------------|

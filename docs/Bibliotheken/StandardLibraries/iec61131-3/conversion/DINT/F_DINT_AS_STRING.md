@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Protokollierung von Messwerten in Textdateien oder Datenbanken.
 - Vorbereitung von Daten für die Kommunikation mit Systemen, die nur Zeichenketten verarbeiten können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen bietet `F_DINT_AS_STRING` eine spezialisierte und effiziente Lösung für die Umwandlung von DINT zu STRING. Andere Bausteine könnten zusätzliche Funktionen wie Formatierung oder Locale-Einstellungen bieten, sind jedoch oft komplexer in der Handhabung.
 
 ## Fazit

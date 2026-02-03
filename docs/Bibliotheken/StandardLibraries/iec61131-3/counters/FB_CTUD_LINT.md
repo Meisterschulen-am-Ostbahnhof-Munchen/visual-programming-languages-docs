@@ -55,7 +55,7 @@ Der Funktionsblock hat keinen internen Zustand außer dem aktuellen Zählerstand
 - Überwachung von Produktionsprozessen.
 - Zeitmessung oder Ereigniszählung in langen Zeiträumen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfachen Zählern bietet FB_CTUD_LINT eine größere Zahlenreichweite (64-Bit).
 - Ähnlich zu FB_CTUD, aber mit LINT-Datentyp für erweiterte Anwendungen.
 

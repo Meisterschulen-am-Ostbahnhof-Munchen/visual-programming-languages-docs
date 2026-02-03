@@ -68,7 +68,7 @@ Der **F_ADD_TOD_TIME** ist ein spezialisierter Funktionsbaustein zur Addition vo
   - Bei Überlauf: Zyklische Weiterzählung
   - Bei ungültigen Eingaben: OUT = IN1
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal        | F_ADD_TOD_TIME | F_ADD_DT_TIME |
 |----------------|----------------|---------------|

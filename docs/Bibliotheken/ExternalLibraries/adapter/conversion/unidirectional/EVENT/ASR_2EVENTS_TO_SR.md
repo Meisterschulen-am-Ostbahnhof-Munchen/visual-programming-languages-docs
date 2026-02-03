@@ -45,13 +45,13 @@ Der Funktionsblock besitzt keinen internen Zustand. Er fungiert als reiner Signa
 - Verbindung zwischen verschiedenen Steuerungsebenen
 - Protokollumsetzung in Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Ereignis-Funktionsblöcken bietet ASR_2EVENTS_TO_SR eine spezifische Schnittstelle zum ASR-Adapter, während andere Blöcke möglicherweise direkte Datenausgänge verwenden.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_171_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_171_AX.md)
 

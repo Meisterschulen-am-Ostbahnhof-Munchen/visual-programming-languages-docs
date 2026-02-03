@@ -57,7 +57,7 @@ Nach Abschluss der Auswahloperation wird das CNF-Ereignis mit dem berechneten Au
 - Bedingte Datenweiterleitung in Prozessketten
 - Implementierung von Multiplexer-Funktionalität
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Selektionsbausteinen bietet F_SEL:
 - Einfache binäre Auswahl (nur zwei Eingänge)
 - Flexible Typunterstützung durch ANY-Datentyp
@@ -68,7 +68,7 @@ Im Vergleich zu anderen Selektionsbausteinen bietet F_SEL:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_015](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_015.md)
 * [Uebung_016](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016.md)

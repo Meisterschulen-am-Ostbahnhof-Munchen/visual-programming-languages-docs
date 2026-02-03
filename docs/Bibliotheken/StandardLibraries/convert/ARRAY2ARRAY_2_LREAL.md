@@ -59,7 +59,7 @@ Der Funktionsblock befindet sich typischerweise in zwei Hauptzuständen:
 *   **Schnittstellenanpassung:** Wenn ein Baustein ein `LREAL`-Array der Größe 2 als Ausgabe liefert und ein anderer Baustein dasselbe Array als Eingabe benötigt, kann dieser FB als Brücke dienen.
 *   **Konstante Datenweitergabe:** Übertragen von statischen oder selten aktualisierten `LREAL`-Arrays von einem Punkt zu einem anderen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Dieser Baustein ist sehr spezifisch in seiner Funktion. Im Vergleich zu allgemeineren Datenmanipulationsbausteinen, die oft flexible Datentypen oder Array-Größen über Konfigurationsparameter ermöglichen, ist `ARRAY2ARRAY_2_LREAL` fest auf `LREAL`-Arrays der Größe 2 spezialisiert. Existierten Bausteine für generische Array-Kopien (z.B. `ARRAY_COPY` mit konfigurierbarer Größe und Typ), wäre dieser Baustein eine spezialisierte Instanz davon. Er ist einfacher als solche generischen Bausteine, aber weniger flexibel. Für seine spezifische Aufgabe bietet er jedoch eine klare und effiziente Lösung.
 

@@ -49,7 +49,7 @@ Der FB_CTU hat keine internen Zustände. Die Logik wird bei jedem `REQ`-Ereignis
 - Überwachung von Prozessen, bei denen eine bestimmte Anzahl von Schritten erreicht werden muss.
 - Steuerung von Abläufen, die nach einer bestimmten Anzahl von Wiederholungen eine Aktion auslösen sollen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **FB_CTD**: Ein Abwärtszähler, der im Gegensatz zum FB_CTU herunterzählt.
 - **FB_CTUD**: Ein kombiniertes Auf- und Abwärtszähler, der sowohl hoch- als auch herunterzählen kann.
 

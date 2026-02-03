@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Integration von Peripheriegeräten, die Daten in unterschiedlichen Formaten liefern.
 - Allgemeine Typkonvertierung in IEC 61131-3-basierten Programmen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_SINT_TO_LINT` oder `F_UINT_TO_UDINT` führen ähnliche Konvertierungen durch, jedoch zwischen anderen Datentypen.
 - `F_USINT_TO_ULINT` ist spezifisch für die Konvertierung von 8-Bit zu 64-Bit unsigned integers optimiert.
 

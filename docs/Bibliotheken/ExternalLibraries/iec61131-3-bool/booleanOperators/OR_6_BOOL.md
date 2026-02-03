@@ -51,7 +51,7 @@ Typische Anwendungen sind Überwachungs- und Sicherheitslogiken, bei denen eine 
 *   **Alarmaggregation:** Mehrere Sensoren, die jeweils einen Fehlerzustand detektieren können, werden zusammengeschaltet. Ein allgemeiner Alarm wird aktiviert, sobald mindestens ein Sensor einen Fehler meldet.
 *   **Mehrfachbedienung:** In einer Maschine können mehrere Bedienstationen einen Prozess starten. Der Block kombiniert alle Startbefehle zu einem gemeinsamen Startsignal.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **AND_6_BOOL:** Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur `TRUE`, wenn **alle** Eingänge `TRUE` sind. Im Gegensatz dazu benötigt `OR_6_BOOL` nur **einen** wahren Eingang.
 *   **XOR_BOOL:** Führt eine exklusiv-ODER (XOR) Verknüpfung durch. Das Ergebnis ist `TRUE`, wenn eine ungerade Anzahl an Eingängen `TRUE` ist. `OR_6_BOOL` unterscheidet nicht zwischen einer oder mehreren wahren Bedingungen. Siehe: [OR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_6.md)
 *   **Blöcke mit variabler Eingangsanzahl:** Es existieren ODER-Blöcke mit zwei (`OR`) oder einer anderen Anzahl von Eingängen. `OR_6_BOOL` bietet eine feste, für bestimmte Anwendungen optimierte Schnittstelle mit sechs Eingängen.

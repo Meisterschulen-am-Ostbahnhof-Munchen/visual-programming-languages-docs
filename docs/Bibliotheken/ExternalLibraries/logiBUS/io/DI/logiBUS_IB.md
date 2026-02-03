@@ -65,7 +65,7 @@ Der Baustein verfügt über folgende Betriebszustände:
 - Allgemeine digitale Eingabeschnittstellen in logiBUS-Systemen
 - Hardware-nahe Eingabeoperationen mit Event-Behandlung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingabebausteinen bietet logiBUS_IB erweiterte Service-Funktionalität mit:
 - Parametrierbarer Konfiguration
 - Ereignisbasierter Kommunikation
@@ -75,7 +75,7 @@ Im Vergleich zu einfachen digitalen Eingabebausteinen bietet logiBUS_IB erweiter
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_006c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)
 * [Uebung_011a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011a.md)

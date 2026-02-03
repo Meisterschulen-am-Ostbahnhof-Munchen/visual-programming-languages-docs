@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Typkonvertierung in Steuerungsanwendungen, wo unterschiedliche Datentypen verarbeitet werden müssen.
 - Integration in größere Funktionsblocknetzwerke, wo Daten von einem niedrigeren zu einem höheren Präzisionsformat konvertiert werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_INT_TO_LWORD` oder `F_DINT_TO_LWORD` führen Konvertierungen von anderen Integer-Typen zu `LWORD` durch. `F_SINT_TO_LWORD` ist spezifisch für die Konvertierung von 8-Bit-Integern.
 - Im Gegensatz zu generischen Konvertierungsblöcken bietet dieser Baustein eine typsichere und optimierte Lösung für die spezifische Konvertierung.
 

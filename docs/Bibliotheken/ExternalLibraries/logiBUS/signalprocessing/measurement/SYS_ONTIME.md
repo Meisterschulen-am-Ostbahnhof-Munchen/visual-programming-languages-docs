@@ -50,7 +50,7 @@ Anschließend überwacht der Block kontinuierlich die Systemressource. Sobald si
 *   **Betriebsdatenerfassung (BDE)**: Protokollierung der Produktions- oder Maschinenlaufzeiten für Auswertungen zur Overall Equipment Effectiveness (OEE).
 *   **Lebensdauerüberwachung**: Überprüfung, ob kritische Komponenten ihre spezifizierte Lebensdauer (in Betriebsstunden) erreicht oder überschritten haben.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`E_CYCLE` / `E_DELAY`**: Diese Blöcke erzeugen selbst periodische Ereignisse oder Verzögerungen. `SYS_ONTIME` hingegen *liest* einen passiv vorhandenen, kumulativen Zeitwert aus dem System aus.
 *   **`E_SR` (Set-Reset) mit Zähler**: Ein manuell aufgebauter Zähler für Einschaltvorgänge könnte ähnliche Daten liefern, wäre aber anwendungsseitig implementiert und nicht systemseitig persistent. `SYS_ONTIME` bietet einen zuverlässigen, systemgeführten und meist auch nach einem Neustart persistenten Wert.
 *   **Andere SYS_*-Blöcke** (wie `SYS_TIME`): Während `SYS_TIME` die aktuelle Uhrzeit und das Datum liefert, stellt `SYS_ONTIME` spezifisch die reine Betriebsdauer einer Ressource bereit.
@@ -58,7 +58,7 @@ Anschließend überwacht der Block kontinuierlich die Systemressource. Sobald si
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_140](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_140.md)
 

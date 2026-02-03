@@ -54,7 +54,7 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 *   **Sicherheitskritische Verknüpfungen:** In Sicherheitsschaltungen, wo eine Antivalenz-Bedingung über mehrere Sicherheitseinrichtungen erforderlich ist.
 *   **Steuerungslogik:** Implementierung von speziellen logischen Verknüpfungen in Ablaufsteuerungen oder Verknüpfungssteuerungen, die eine XOR-Funktion mit genau sieben Operanden benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`XOR` (2 Eingänge):** Der Standard-XOR-Baustein verknüpft nur zwei Eingänge. Für eine Verknüpfung von sieben Signalen müsste dieser Block mehrfach verschachtelt werden, was die Lesbarkeit des Programms verringert. `XOR_7_BOOL` bietet eine direkte und übersichtliche Lösung. Siehe: [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)
 *   **`GEN_XOR` (Generisch, n Eingänge):** Der zugrundeliegende generische Baustein `GEN_XOR` kann mit einer variablen Anzahl von Eingängen instanziiert werden. `XOR_7_BOOL` ist eine spezifische, vorkonfigurierte Instanz mit sieben Eingängen, die direkt verwendet werden kann, ohne die Anzahl der Eingänge parametrieren zu müssen.
 *   **`PARITY_CHECK`:** Ein reiner Paritätsprüfblock könnte ähnliche Ergebnisse liefern, ist aber konzeptionell oft auf die Fehlererkennung in Datenströmen ausgelegt, während `XOR_7_BOOL` als allgemeiner logischer Operator in der Steuerungslogik dient.

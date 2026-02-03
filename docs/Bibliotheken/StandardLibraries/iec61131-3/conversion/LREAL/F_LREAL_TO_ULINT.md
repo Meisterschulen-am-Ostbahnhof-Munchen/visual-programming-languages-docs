@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Umwandlung von Gleitkommazahlen für die Speicherung in Datenbanken oder Protokollen, die nur Ganzzahlen unterstützen.
 - Verwendung in Steuerungsalgorithmen, die vorzeichenlose Ganzzahlen erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - `F_REAL_TO_UINT`: Konvertiert REAL (32-Bit Gleitkommazahl) in UINT (16-Bit vorzeichenlose Ganzzahl).
 - `F_LREAL_TO_LINT`: Konvertiert LREAL in LINT (64-Bit vorzeichenbehaftete Ganzzahl).
 - `F_LREAL_TO_ULINT` ist spezifisch für 64-Bit vorzeichenlose Konvertierungen und bietet somit eine höhere Genauigkeit und einen größeren Wertebereich im Vergleich zu 16- oder 32-Bit Varianten.

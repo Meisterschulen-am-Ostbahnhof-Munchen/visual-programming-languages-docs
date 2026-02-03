@@ -46,7 +46,7 @@ Der Funktionsblock hat einen einfachen Zustandsautomaten:
 - **Protokollierung**: Umwandlung von Zeichenketten in numerische IDs für die Speicherung oder Weiterverarbeitung.
 - **Schnittstellenkommunikation**: Vorbereitung von Daten für die Übertragung über Protokolle, die numerische Werte erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_STRING_AS_UDINT**: Ähnlicher Funktionsblock, jedoch für STRING anstelle von WSTRING.
 - **F_UDINT_AS_WSTRING**: Führt die umgekehrte Konvertierung durch (UDINT zu WSTRING).
 

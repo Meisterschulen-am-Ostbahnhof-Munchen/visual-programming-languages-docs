@@ -44,7 +44,7 @@ Da es sich um eine statische, konstante Definition handelt, gibt es keine Zustan
 *   **Vereinfachung der Parametrierung:** In komplexen Applikationen mit vielen kommunizierenden Blöcken ersetzt die Verwendung von `CommunicationPartners.GLOBAL` die wiederholte, hartkodierte Eingabe der globalen Adresse und erhöht so die Wartbarkeit.
 *   **Referenz für andere Konstanten:** Kann als Basis für die Definition weiterer, spezifischerer Kommunikationspartner-Konstanten dienen (z.B. `IMPLEMENT`, `TOOL`).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Direkte Wertzuweisung:** Anstatt `CommunicationPartners.GLOBAL` zu verwenden, könnte ein Entwickler den Wert `GLOBAL_A` auch direkt in jedem Daten-Eingang eines Funktionsblocks eintragen. Die Verwendung der Konstanten ist jedoch sauberer, typsicherer und änderungsfreundlicher.
 *   **Andere Adresskonstanten:** Innerhalb des gleichen Pakets (`isobus::pgn::ADDRESS`) existieren vermutlich ähnliche Konstanten für andere Adressen (z.B. `NULL_A`, `TOOL_A`). `CommunicationPartners` kapselt eine spezifische Auswahl oder Kombination dieser Adressen in einem für die Applikation sinnvollen Kontext.
 *   **Parameter-FBs vs. Globale Konstanten:** Ein alternativer Ansatz wäre ein Funktionsblock, der seine Zieladresse als konfigurierbaren Parameter erhält. Globale Konstanten sind hingegen einfacher und direkter, wenn der Wert für die gesamte Laufzeit der Applikation unveränderlich ist.

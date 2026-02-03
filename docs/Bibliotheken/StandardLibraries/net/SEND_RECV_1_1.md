@@ -60,7 +60,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 - Protokollimplementierungen mit Anfrage-Antwort-Mustern
 - Netzwerkkommunikation in industriellen Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen SEND- oder RECV-Blöcken bietet SEND_RECV_1_1 die kombinierte Funktionalität beider Operationen in einem einzigen Baustein. Die Duplex-Fähigkeit unterscheidet ihn von Simplex-Kommunikationsblöcken und ermöglicht effizientere Kommunikationsmuster.
 
 ## Fazit

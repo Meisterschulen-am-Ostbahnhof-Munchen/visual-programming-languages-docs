@@ -56,7 +56,7 @@ Die ECC umfasst folgende Zustände:
 *   **Teststände**: Automatisierte Abfolge von Prüf- und Messschritten an einem Bauteil.
 *   **Sicherheitssequenzen**: Geordnetes An- und Abfahren einer Anlage, bei dem Schritte erst nach einer Wartezeit ausgelöst werden dürfen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einem einfachen TON (Timer On-Delay) oder TOF (Timer Off-Delay), die nur einen einzigen zeitverzögerten Schaltvorgang steuern, orchestriert `sequence_T_08` eine komplette Kette von zeitgesteuerten Aktionen. Im Vergleich zu einem Zählerbaustein (CTU) bietet er eine vordefinierte, zustandsbasierte Logik mit dedizierten Ausgängen und ist daher einfacher zu konfigurieren und abzusichern. Er ist eine spezialisierte Form einer Schrittkette (Sequential Function Chart - SFC) mit fester Schrittanzahl und reiner Zeitsteuerung.
 
 ## Fazit

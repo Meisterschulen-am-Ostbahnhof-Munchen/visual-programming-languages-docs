@@ -54,7 +54,7 @@ Bei Aktivierung des REQ-Ereignisses führt der AND_6-Block eine bitweise UND-Ver
 - Signalverarbeitung mit mehreren Eingangssignalen
 - Sicherheitsrelevante Schaltungen mit mehreren Überwachungssignalen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren UND-Blöcken mit weniger Eingängen bietet AND_6 die Möglichkeit, bis zu sechs Signale gleichzeitig zu verknüpfen, was die Programmstruktur vereinfacht und weniger Verknüpfungsbausteine erfordert. Gegenüber seriellen UND-Verknüpfungen bietet er eine bessere Übersichtlichkeit und geringere Latenz.
 
 ## Fazit

@@ -66,14 +66,14 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 *   **Diagnose- und Überwachungssysteme**: Regelmäßige Übertragung von Status- und Betriebsparametern zu Überwachungszwecken.
 *   **Implementierung von ISOBUS-"Fast-Packet"-Protokollen**: Für PGNs, die mehr als 8 Byte Daten transportieren und daher in mehreren CAN-Botschaften übertragen werden müssen (unterstützt durch den `CAN_MSG`-Datentyp).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenüber einfachen `E_CYC`-Blöcken**: `AlPgnTxNew8Bcycl` ist spezialisiert auf ISOBUS-PGNs und bietet integrierte Handhabung von Priorität, Zieladressierung und Fehlermanagement, während ein generischer zyklischer Event-Generator (`E_CYC`) nur Timing bereitstellt.
 *   **Gegenüber generischen CAN-Sendeblöcken**: Dieser Block abstrahiert die niedrigleveligen CAN-Details (Identifier-Berechnung, Datenrahmen) und arbeitet direkt auf der logischeren PGN-Ebene gemäß ISOBUS-Standard.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_127](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_127.md)
 

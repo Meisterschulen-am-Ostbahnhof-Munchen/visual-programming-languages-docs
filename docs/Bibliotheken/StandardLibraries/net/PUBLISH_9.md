@@ -52,7 +52,7 @@ Der Block verfügt über zwei Hauptzustände: initialisiert und nicht initialisi
 - Broadcast-Kommunikation in Automatisierungsnetzwerken
 - Systeme mit 1-zu-n Kommunikationsbeziehungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu bestätigten Kommunikationsblöcken bietet PUBLISH_9 eine reduzierte Latenz durch den Verzicht auf Empfangsbestätigungen. Gegenüber Blöcken mit weniger Datenkanälen ermöglicht er die gleichzeitige Übertragung mehrerer Datenwerte, was die Systemeffizienz erhöht.
 
 ## Fazit

@@ -54,7 +54,7 @@ Der Funktionsblock verarbeitet die Eingabeereignisse und -daten wie folgt:
 - Zeitgesteuerte Abläufe, bei denen ein Countdown benötigt wird.
 - Überwachung von Zyklen oder Wiederholungen in automatisierten Systemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu einem Aufwärtszähler (CTU) verringert dieser Baustein den Zählerwert.
 - Ähnlich wie andere Zählerbausteine, aber spezialisiert auf vorzeichenlose 32-Bit-Ganzzahlen.
 

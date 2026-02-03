@@ -80,7 +80,7 @@ Der **Q_BackgroundColour** ist ein standardkonformer Funktionsbaustein zur Steue
 - **Markierungen**: Hervorhebung von Objekten
 - **Branding**: Hersteller-spezifische Farben
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_BackgroundColour | VtColourManager | VtDynamicStyle |
 |---------------|--------------------|-----------------|----------------|
@@ -93,7 +93,7 @@ Der **Q_BackgroundColour** ist ein standardkonformer Funktionsbaustein zur Steue
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_016](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016.md)
 * [Uebung_016a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016a.md)

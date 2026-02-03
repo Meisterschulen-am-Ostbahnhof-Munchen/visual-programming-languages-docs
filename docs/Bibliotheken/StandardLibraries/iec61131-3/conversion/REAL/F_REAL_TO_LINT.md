@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Konvertierung von Sensorwerten (z.B. Temperaturmessungen) für weitere Verarbeitung in Ganzzahl-Operationen.
 - Integration in Steuerungssysteme, die gemischte Datentypen verarbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen (z.B. `F_REAL_TO_INT`) bietet `F_REAL_TO_LINT` eine höhere Präzision durch die Verwendung des 64-Bit LINT-Datentyps.
 - Ähnliche Bausteine wie `F_LINT_TO_REAL` führen die umgekehrte Konvertierung durch.
 

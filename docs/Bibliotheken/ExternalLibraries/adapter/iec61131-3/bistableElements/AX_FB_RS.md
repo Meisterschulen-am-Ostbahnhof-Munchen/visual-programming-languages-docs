@@ -73,7 +73,7 @@ Dies bedeutet, dass der Baustein immer bereit ist, Eingangssignale zu verarbeite
 *   **Zustandsmerker:** Speichern von binären Zuständen innerhalb einer adapterbasierten Steuerungslogik.
 *   **Modulare Systeme:** Einsatz in Systemen, die konsequent auf Adapter-Schnittstellen setzen, um "Spaghetti-Code" in der grafischen Darstellung zu vermeiden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | AX_FB_RS | AX_FB_SR | RS (Standard) |
 | :--- | :--- | :--- | :--- |

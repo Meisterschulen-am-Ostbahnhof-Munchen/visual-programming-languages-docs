@@ -43,7 +43,7 @@ Bei Auslösung des Ereigniseingangs `REQ` wird der Wert am Daten-Eingang `IN` ge
 - Typumwandlung in Steuerungsanwendungen, wo `SINT`-Daten in `DINT` umgewandelt werden müssen.
 - Vorbereitung von Daten für weitere Verarbeitungsschritte, die `DINT` erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine wie `F_INT_TO_DINT` oder `F_USINT_TO_UDINT` führen ähnliche Konvertierungen durch, aber mit anderen Ausgangs- bzw. Eingangstypen.
 - `F_SINT_TO_DINT` ist spezifisch für die Konvertierung von `SINT` zu `DINT`.
 

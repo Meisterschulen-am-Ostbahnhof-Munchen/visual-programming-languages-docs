@@ -54,7 +54,7 @@ Der Funktionsblock besitzt keine internen Zustände, da es sich um eine reine Du
 - Integration in größere Steuerungssysteme mit A2X-Schnittstellenanforderungen
 - Bidirektionale Bewegungserfassung in Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen AX-Adaptern ermöglicht dieser Baustein die Kombination zweier entgegengesetzter Bewegungsrichtungen in einem einzigen A2X-Signal. Er ersetzt die manuelle Verkabelung von zwei AX-Adaptern zu einem A2X-Adapter.
 
 ## Fazit

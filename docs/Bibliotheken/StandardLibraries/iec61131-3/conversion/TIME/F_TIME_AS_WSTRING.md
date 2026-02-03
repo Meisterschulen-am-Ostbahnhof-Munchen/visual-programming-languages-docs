@@ -42,7 +42,7 @@ Der Funktionsblock hat keine komplexen Zustände. Er reagiert auf das `REQ`-Erei
 - Protokollierung von Zeitstempeln in lesbarer Form.
 - Integration in Systeme, die Zeitwerte als Zeichenketten benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen ist `F_TIME_AS_WSTRING` spezialisiert auf die Umwandlung von TIME zu WSTRING.
 - Andere Bausteine könnten zusätzliche Formatierungsoptionen bieten, dieser Baustein ist jedoch einfach und effizient.
 

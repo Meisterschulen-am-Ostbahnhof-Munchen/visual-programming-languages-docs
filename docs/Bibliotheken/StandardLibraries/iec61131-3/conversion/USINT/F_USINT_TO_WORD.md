@@ -45,7 +45,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung ist rein er
 - Integration von Sensordaten, die als USINT vorliegen, in Systeme, die WORD verarbeiten.
 - Allgemeine Typkonvertierung in Automatisierungsanwendungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_USINT_TO_WORD` spezialisiert und optimiert für die spezifische Konvertierung von USINT zu WORD.
 - Andere Blöcke könnten zusätzliche Funktionen wie Skalierung oder Fehlerbehandlung bieten, sind aber komplexer.
 

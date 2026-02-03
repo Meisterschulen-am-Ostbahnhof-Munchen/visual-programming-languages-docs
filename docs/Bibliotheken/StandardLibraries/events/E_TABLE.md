@@ -57,7 +57,7 @@ Der `E_TABLE` (Event Table) ist ein Funktionsbaustein nach IEC 61499, der eine e
 - **Komplexe Ansteuerung**: Ansteuern eines Aktors mit einer Serie von Impulsen mit variabler Pause.
 - **Testautomatisierung**: Generieren einer komplexen, zeitlich definierten Stimulus-Sequenz für ein Testobjekt, bei der der `CV`-Ausgang zur Synchronisation mit der Auswertung genutzt werden kann.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal       | E_TABLE | E_CYCLE | E_N_TABLE |
 |--------------|-----------|---------|-----------|
@@ -70,7 +70,7 @@ Der `E_TABLE` (Event Table) ist ein Funktionsbaustein nach IEC 61499, der eine e
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_093](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_093.md)
 

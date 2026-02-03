@@ -75,7 +75,7 @@ Der **Q_BackgroundColourAux** ist ein standardkonformer Funktionsbaustein zur St
 - **Editor-Modi**: Hilfslinien in Konfiguratoren
 - **Diagnose**: Zusatzinformationen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_BackgroundColourAux | Q_BackgroundColour | VtAuxColour |
 |---------------|-----------------------|--------------------|-------------|

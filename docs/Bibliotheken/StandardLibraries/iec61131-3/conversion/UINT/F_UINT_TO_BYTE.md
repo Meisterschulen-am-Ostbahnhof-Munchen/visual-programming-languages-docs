@@ -42,14 +42,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Typumwandlung in Kommunikationsprotokollen, wo BYTE-Daten erwartet werden.
 - Datenreduktion, wenn nur die unteren 8 Bit eines UINT-Werts relevant sind.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_UINT_TO_BYTE` spezialisiert auf die Umwandlung von UINT zu BYTE.
 - Andere Bausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Skalierungen bieten, was hier nicht der Fall ist.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_12x_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_12x_sub.md)
 

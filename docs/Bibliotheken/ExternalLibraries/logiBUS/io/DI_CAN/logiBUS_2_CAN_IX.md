@@ -64,7 +64,7 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 - Industrielle Automatisierungssysteme mit verteilten I/Os
 - Robotersteuerungen mit CAN-Peripherie
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu standardmäßigen digitalen Eingangsblöcken bietet `logiBUS_2_CAN_IX` spezielle CAN-Integration und erweiterte Statusrückmeldungen. Während einfache DI-Blöcke nur direkte Signalverarbeitung bieten, unterstützt dieser Block komplexere Protokollhandhabung und Fehlerbehandlung für industrielle CAN-Netzwerke.
 
 ## Fazit

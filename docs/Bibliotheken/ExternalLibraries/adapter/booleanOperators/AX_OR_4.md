@@ -55,7 +55,7 @@ Da es sich um einen kombinatorischen Baustein ohne Ereignissteuerung handelt, be
 - Steuerungslogik mit parallelen Bedingungen
 - Alarmierungsysteme mit mehreren Auslösern
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren ODER-Bausteinen bietet AX_OR_4 den Vorteil von vier Eingängen in einem einzigen Baustein, was die Verdrahtung vereinfacht und Platz spart. Gegenüber Bausteinen mit Ereignissteuerung arbeitet AX_OR_4 kontinuierlich ohne explizite Auslöseereignisse.
 
 Vergleich mit [OR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_4.md)

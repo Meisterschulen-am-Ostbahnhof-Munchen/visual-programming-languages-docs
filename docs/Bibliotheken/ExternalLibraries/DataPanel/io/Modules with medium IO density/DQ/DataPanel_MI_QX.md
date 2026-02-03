@@ -58,7 +58,7 @@ Der Function Block durchläuft folgende Zustände:
 - Implementierung von sicheren Ausgabeprotokollen
 - Integration in größere Steuerungssysteme mit mehreren Ausgabekanälen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet DataPanel_MI_QX erweiterte Funktionalitäten wie:
 - Parametrierbare SA-Node-Konfiguration
 - Spezifische Hardware-Identifikation für DataPanel MI-Systeme
@@ -68,7 +68,7 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet DataPanel_MI_QX erwei
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_003b2_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003b2_sub.md)
 * [Uebung_010a4](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010a4.md)

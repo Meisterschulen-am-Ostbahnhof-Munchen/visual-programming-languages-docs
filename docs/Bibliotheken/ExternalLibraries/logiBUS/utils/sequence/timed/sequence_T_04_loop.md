@@ -70,7 +70,7 @@ Ein `RESET`-Ereignis von jedem Zustand aus führt in den `sRESET`-Zustand. Dort 
 *   Ansteuerung von Aktoren in einer festen, zeitlich getakteten Reihenfolge.
 *   Als zentraler Taktgeber für übergeordnete Steuerungsabläufe.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Einfache Timer (TON)**: Einzelne Timer bieten keine integrierte Sequenzlogik. `sequence_T_04_loop` kapselt die komplette Zustandsmaschine mit vier Schritten.
 *   **Ereignisgesteuerte Sequenzer**: Im Gegensatz zu ereignisgesteuerten Sequenzern (z.B. `sequence_E_04_loop`) erfolgen die Übergänge hier ausschließlich zeitbasiert, nicht durch externe Ereignisse.
 *   **SPS-Zyklus**: Die zeitgesteuerte Ablaufkontrolle ist präziser und unabhängig vom SPS-Zyklus, da sie auf dem `ATimeOut`-Adapter basiert.
@@ -80,7 +80,7 @@ Ein `RESET`-Ereignis von jedem Zustand aus führt in den `sRESET`-Zustand. Dort 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_035a](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a.md)
 

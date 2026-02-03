@@ -47,7 +47,7 @@ Der Funktionsblock operiert hauptsächlich in einem anforderungsbasierten (`REQ`
 *   **Schnittstellen zu externen Systemen**: Anpassen von Datenstrukturen, die für die Kommunikation mit externen APIs oder Datenbanken verwendet werden.
 *   **Prozesssteuerung**: Modifizieren von Prozessparametern, die in Strukturen organisiert sind, basierend auf dynamischen Bedingungen oder Benutzereingaben.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Bausteinen, die fest verdrahtete Strukturen oder nur das Auslesen von Werten unterstützen, bietet `SET_STRUCT_VALUE` eine einzigartige Flexibilität durch:
 *   **Schreibzugriff**: Ermöglicht das Setzen von Werten, nicht nur das Lesen.
 *   **Generischer Zugriff**: Arbeitet mit beliebigen `ANY`-Typen, was ihn universeller macht als Bausteine, die an spezifische Strukturtypen gebunden sind.

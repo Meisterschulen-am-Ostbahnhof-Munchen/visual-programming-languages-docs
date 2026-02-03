@@ -53,7 +53,7 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 *   **Steuerungslogik**: Implementierung von speziellen Verzweigungen in Ablaufsteuerungen, bei denen eine Entscheidung getroffen werden muss, wenn die Eingänge unterschiedlich sind.
 *   **Sicherheitskritische Schaltungen**: Erzeugung von Signalen, die nur aktiv sind, wenn sich zwei überwachte Größen widersprechen (z.B. in Not-Halt-Schaltungen).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen logischen Grundfunktionsblöcken wie `AND_2_BOOL` oder `OR_2_BOOL` ist `XOR_2_BOOL` der einzige, der ein `TRUE`-Ergebnis liefert, wenn die Eingänge *unterschiedlich* sind. Blöcke wie `NOT` invertieren nur einen einzelnen Eingang. Der `XOR_2_BOOL` kann als Spezialfall eines Ungleichheitsvergleichs (`NE_BOOL`) für zwei boolesche Werte betrachtet werden. Siehe: [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md)
 
 ## Fazit

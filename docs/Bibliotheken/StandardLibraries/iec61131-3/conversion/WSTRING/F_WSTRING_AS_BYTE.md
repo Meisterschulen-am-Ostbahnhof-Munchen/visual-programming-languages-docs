@@ -41,7 +41,7 @@ Der Funktionsblock hat keine internen Zustände. Die Verarbeitung erfolgt direkt
 - Konvertierung von WSTRING-Daten in BYTE-Werte für die weitere Verarbeitung in Systemen, die nur BYTE-Daten unterstützen.
 - Verwendung in Kommunikationsprotokollen, wo Zeichenketten in Bytes umgewandelt werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_STRING_AS_BYTE` ist dieser speziell für WSTRING-Datentypen ausgelegt.
 - Ähnliche Bausteine könnten zusätzliche Parameter oder Zustände haben, dieser Funktionsblock ist jedoch auf die einfache Konvertierung beschränkt.
 

@@ -78,7 +78,7 @@ Der **Q_ObjSelectInput** ist ein standardkonformer Funktionsbaustein zur program
 - **Fehlermanagement**: Direktes Springen zu Fehlerfeldern
 - **Touch-Optimierung**: Programmatische Fokussteuerung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ObjSelectInput | VtFocusControl | VtInputSelector |
 |---------------|------------------|----------------|-----------------|

@@ -44,7 +44,7 @@ Der Funktionsblock nutzt die eingebaute Funktion `INT_AS_WSTRING`, um den ganzza
 - Protokollierung von numerischen Daten in Textform.
 - Vorbereitung von Daten für die Kommunikation mit Systemen, die Textformate erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_DINT_AS_WSTRING**: Konvertiert einen längeren ganzzahligen Wert (`DINT`) in eine breite Zeichenkette.
 - **F_REAL_AS_WSTRING**: Konvertiert einen Fließkommawert (`REAL`) in eine breite Zeichenkette.
 - **F_STRING_AS_INT**: Führt die umgekehrte Konvertierung durch (Zeichenkette zu Ganzzahl).

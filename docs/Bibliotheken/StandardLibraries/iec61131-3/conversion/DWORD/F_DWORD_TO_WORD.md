@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Speicheroptimierung in eingebetteten Systemen
 - Datenvorverarbeitung in Steuerungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu `F_DWORD_TO_BYTE` konvertiert dieser Baustein in einen WORD-Wert statt in ein BYTE.
 - Ähnlich wie `F_WORD_TO_BYTE`, aber mit anderen Datentypen.
 

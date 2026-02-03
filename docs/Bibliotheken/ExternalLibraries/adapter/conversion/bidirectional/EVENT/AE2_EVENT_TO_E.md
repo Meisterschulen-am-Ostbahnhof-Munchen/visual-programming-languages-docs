@@ -50,7 +50,7 @@ Der Funktionsblock verfügt über einen einfachen Zustandsautomaten:
 - Bidirektionale Kommunikationsbrücken zwischen verschiedenen Automatisierungskomponenten
 - Adapter-basierte Systemintegration
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen EVENT-Konvertern bietet AE2_EVENT_TO_E spezifische AE2-Adapterunterstützung mit bidirektionaler Kommunikation. Während Standard-Konverter oft nur unidirektional arbeiten, ermöglicht dieser Baustein vollständige Request-Response-Zyklen mit dem AE2-Protokoll.
 
 ## Fazit

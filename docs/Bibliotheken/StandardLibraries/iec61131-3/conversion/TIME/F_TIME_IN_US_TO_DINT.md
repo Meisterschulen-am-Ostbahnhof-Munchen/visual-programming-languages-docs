@@ -54,7 +54,7 @@ Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmet
 *   **Beispiel:** `500 * T#1ms = T#500ms`
 *   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist dieser Funktionsblock spezialisiert auf die Umwandlung von TIME in DINT.
 - Andere Bausteine könnten zusätzliche Funktionen wie Skalierung oder Filterung bieten, was hier nicht der Fall ist.
 

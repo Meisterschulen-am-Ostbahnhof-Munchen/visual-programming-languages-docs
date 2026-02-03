@@ -55,7 +55,7 @@ Der PUBLISH_7 Block initialisiert sich über das INIT-Ereignis mit einem spezifi
 - Datenverteilung in Produktionsanlagen
 - Messwertverteilung in Überwachungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren PUBLISH-Blöcken bietet PUBLISH_7 die Möglichkeit, sieben verschiedene Datenwerte parallel zu verteilen, während einfachere Varianten typischerweise nur einen oder wenige Datenkanäle unterstützen.
 
 ## Fazit

@@ -41,7 +41,7 @@ Da es sich um einen GlobalConstants-Baustein handelt, gibt es keine Zustandsübe
 - Verwendung in kombination mit digitalen Ausgabeblöcken
 - Integration in Beleuchtungssteuerungssysteme
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen GlobalConstants-Bausteinen bietet LED_strip eine spezifische Konstante für LED-Streifen-Steuerung. Während allgemeine Konstantenbausteine universelle Werte definieren, ist dieser Baustein auf die spezifischen Anforderungen der LED-Ansteuerung ausgelegt.
 
 ## Fazit

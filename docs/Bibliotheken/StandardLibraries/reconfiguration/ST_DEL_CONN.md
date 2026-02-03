@@ -59,7 +59,7 @@ Der Funktionsblock unterstützt verschiedene Service-Sequenzen:
 - Fehlerbehandlung bei Verbindungsproblemen
 - Adaptive Systeme, die sich an veränderte Anforderungen anpassen müssen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Rekonfigurations-Bausteinen spezialisiert sich ST_DEL_CONN ausschließlich auf das Löschen von Verbindungen, während andere Bausteine möglicherweise das Erstellen oder Modifizieren von Verbindungen unterstützen.
 
 ## Fazit

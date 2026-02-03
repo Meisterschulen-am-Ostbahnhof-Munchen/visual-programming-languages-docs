@@ -59,7 +59,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 - Prototyping und Entwicklung von IoT-Geräten
 - Industrielle Steuerungsanwendungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen I/O-Blöcken bietet GPIOChip erweiterte Funktionen wie konfigurierbare Bias-Modi, verschiedene Schreibmodi und direkten Zugriff auf das Linux GPIO-Subsystem. Er ist spezifisch für Linux-Systeme mit GPIO-Chip Unterstützung ausgelegt.
 
 ## Fazit

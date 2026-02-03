@@ -44,7 +44,7 @@ Der `AND_10` FB führt eine bitweise logische UND-Operation auf den Werten aller
 - Bitweise Maskierung von Datenwerten.
 - Steuerungslogik in industriellen Automatisierungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **Standard-AND-FB**: Unterstützt typischerweise nur 2 Eingänge. `AND_10` bietet mehr Flexibilität durch 10 Eingänge.
 - **Generic Logic Blocks**: Ähnlich generische Blöcke könnten weniger Eingänge oder spezifischere Datentypen unterstützen.
 

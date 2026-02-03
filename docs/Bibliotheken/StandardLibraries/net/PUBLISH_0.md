@@ -54,7 +54,7 @@ Der Block durchläuft folgende Hauptzustände:
 - Verteilung von Steuerbefehlen an multiple Aktoren
 - Datenaustausch in verteilten Steuerungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu bestätigten Kommunikationsblöcken bietet PUBLISH_0:
 - Höhere Performance durch unbestätigte Übertragung
 - Geringere Latenzzeiten

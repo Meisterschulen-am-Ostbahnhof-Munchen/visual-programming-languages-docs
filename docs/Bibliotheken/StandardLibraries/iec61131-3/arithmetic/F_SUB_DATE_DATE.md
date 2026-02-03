@@ -67,7 +67,7 @@ Der **F_SUB_DATE_DATE** ist ein standardkonformer Funktionsbaustein zur Berechnu
   - OUT = T#0s
   - Keine Exception-Generierung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | F_SUB_DATE_DATE | F_SUB_TIME | F_SUB_DT_DT |
 |---------------|-----------------|------------|-------------|

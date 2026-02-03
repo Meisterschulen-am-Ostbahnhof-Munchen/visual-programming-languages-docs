@@ -48,7 +48,7 @@ Der F_SQRT Funktionsblock berechnet die Quadratwurzel des Eingabewertes IN. Bei 
 - Wissenschaftliche und technische Anwendungen
 - Regelungstechnik und Prozesssteuerung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen mathematischen Funktionsblöcken bietet F_SQRT eine spezialisierte Funktion für die Quadratwurzelberechnung. Andere Blöcke wie F_ADD oder F_MUL bieten grundlegende arithmetische Operationen, während F_SQRT eine spezifische mathematische Funktion bereitstellt.
 
 ## Fazit

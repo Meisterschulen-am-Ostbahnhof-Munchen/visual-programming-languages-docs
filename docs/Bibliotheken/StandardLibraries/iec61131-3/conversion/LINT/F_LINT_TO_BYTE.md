@@ -41,7 +41,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Typumwandlung in Steuerungsanwendungen, wo LINT-Daten in BYTE-Daten umgewandelt werden müssen.
 - Verwendung in Datenverarbeitungsketten, wo unterschiedliche Datentypen kompatibel gemacht werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_INT_TO_BYTE` oder `F_DINT_TO_BYTE` führen ähnliche Konvertierungen durch, jedoch mit anderen Ausgangsdatentypen.
 - `F_LINT_TO_BYTE` ist spezifisch für die Konvertierung von 64-Bit zu 8-Bit Ganzzahlen.
 

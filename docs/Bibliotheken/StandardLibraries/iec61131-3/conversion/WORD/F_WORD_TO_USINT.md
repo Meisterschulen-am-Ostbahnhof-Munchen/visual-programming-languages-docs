@@ -43,7 +43,7 @@ Der Funktionsblock führt die Konvertierung von `WORD` zu `USINT` durch, sobald 
 - Typumwandlung in Steuerungsanwendungen, wo ein `WORD`-Wert in einen `USINT`-Wert umgewandelt werden muss.
 - Integration in größere Steuerungssysteme, die unterschiedliche Datentypen verarbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_INT_TO_REAL` oder `F_BOOL_TO_STRING` ist `F_WORD_TO_USINT` spezialisiert auf die Umwandlung von `WORD` zu `USINT`.
 - Ähnliche Bausteine könnten `F_USINT_TO_WORD` sein, welcher die umgekehrte Konvertierung durchführt.
 

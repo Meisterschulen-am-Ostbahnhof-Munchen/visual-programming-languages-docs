@@ -58,7 +58,7 @@ Der Funktionsblock verfügt über folgende Betriebszustände:
 - Integration von Tasteneingaben (BUTTON_PRESS_UP, BUTTON_LONG_PRESS_HOLD, BUTTON_LONG_PRESS_UP)
 - Überwachung von Zustandsänderungen an digitalen Eingängen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu standardmäßigen digitalen Eingangsblöcken bietet logiBUS_ID:
 - Spezifische logiBUS-Integration
 - Erweiterte Ereignisbehandlung
@@ -68,7 +68,7 @@ Im Vergleich zu standardmäßigen digitalen Eingangsblöcken bietet logiBUS_ID:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_011a2](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011a2.md)
 

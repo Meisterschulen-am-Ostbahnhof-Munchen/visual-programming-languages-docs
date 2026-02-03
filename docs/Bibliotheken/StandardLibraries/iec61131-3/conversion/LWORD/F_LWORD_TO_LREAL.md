@@ -45,7 +45,7 @@ Der Funktionsblock hat einen einfachen Zustandsautomaten:
 - Datenverarbeitung in Steuerungssystemen, wo LWORD-Werte in Gleitkommazahlen umgewandelt werden müssen.
 - Integration in größere Funktionsblocknetzwerke, die gemischte Datentypen verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine wie `F_DWORD_TO_REAL` oder `F_WORD_TO_REAL` bieten Konvertierungen für kleinere Datentypen.
 - `F_LWORD_TO_LREAL` ist spezifisch für 64-Bit Konvertierungen optimiert.
 

@@ -58,7 +58,7 @@ Der `QUARTER_TO_E` ist ein Basic Function Block mit einem internen Zustandsautom
 *   **Vereinfachung der Logik**: Anstatt in nachfolgenden Blöcken ständig den Byte-Wert abfragen zu müssen, können direkt auf die spezifischen Ereignisse (`S`, `R`, `ERR`) reagiert werden.
 *   **Abstraktion**: Dient als Adapter zwischen Bausteinen, die einen Quarter-Byte-Status liefern, und einer Logik, die mit klassischen Ereignis-/Boolsignalen arbeitet.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **E_DEMUX / E_SELECT**: Diese Blöcke leiten ein Eingangsereignis basierend auf einem Steuerwert an einen von mehreren Ausgängen weiter. `QUARTER_TO_E` ist spezialisierter: Er übersetzt einen spezifischen Datenwert (`IB`) nicht nur in eine Auswahl, sondern löst auch unterschiedliche *inhaltliche* Ereignisse aus und berechnet zusätzlich einen booleschen Wert (`Q`).
 *   **BYTE_TO_E**: Ein generischer Block, der jedes Bit eines Bytes in ein separates Ereignis umwandeln könnte. `QUARTER_TO_E` ist semantisch reicher, da er spezifische, vordefinierte Zustände (Enabled, Disabled, Error, None) und deren Bedeutung kennt und ausgibt.
 

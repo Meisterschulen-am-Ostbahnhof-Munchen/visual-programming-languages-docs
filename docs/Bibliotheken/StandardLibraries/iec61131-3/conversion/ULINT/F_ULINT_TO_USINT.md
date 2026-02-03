@@ -43,7 +43,7 @@ Der Funktionsblock hat einen einfachen Zustandsautomaten:
 - Typumwandlung in Steuerungssystemen, wo Daten in unterschiedlichen Formaten vorliegen.
 - Reduzierung der Speichergröße von Daten, wenn nur kleine Wertebereiche benötigt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_INT` oder `F_LREAL_TO_REAL` führen ähnliche Typumwandlungen durch, jedoch für andere Datentypen.
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_ULINT_TO_USINT` spezialisiert und optimiert für die Konvertierung zwischen `ULINT` und `USINT`.
 

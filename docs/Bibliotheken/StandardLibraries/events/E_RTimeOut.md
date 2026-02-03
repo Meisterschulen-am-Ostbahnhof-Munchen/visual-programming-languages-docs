@@ -58,7 +58,7 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ARTimeOut`. Da es sich
 - **Prozesssteuerung**: Zeitbegrenzte Operationskontrolle
 - **Gerätesteuerung**: Watchdog-Funktionalität
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | E_RTimeOut | E_DELAY | E_TABLE |
 |---------------|------------|---------|---------|
@@ -69,7 +69,7 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ARTimeOut`. Da es sich
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_035b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035b.md)
 * [Uebung_170](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_170.md)

@@ -43,7 +43,7 @@ Der Funktionsblock führt die Konvertierung durch, wenn das Ereignis `REQ` ausge
 - Konvertierung von Zeichenketten in numerische Werte für Steuerungsanwendungen.
 - Verwendung in Systemen, die Zeichenketten als Eingabe verwenden, aber numerische Verarbeitung erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsbausteinen ist `F_WSTRING_AS_USINT` spezialisiert auf die Umwandlung von WSTRING zu USINT.
 - Andere Bausteine könnten zusätzliche Parameter oder Fehlerbehandlung bieten, dieser Baustein ist jedoch auf Einfachheit und Effizienz ausgelegt.
 

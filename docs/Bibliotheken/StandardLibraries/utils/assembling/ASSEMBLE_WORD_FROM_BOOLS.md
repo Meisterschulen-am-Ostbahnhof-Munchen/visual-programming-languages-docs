@@ -49,7 +49,7 @@ Die Zuweisung erfolgt direkt über Bitoperationen, wobei jeder boolesche Eingang
 - Vorbereitung von Daten für die Kommunikation mit Geräten, die WORD-Daten erwarten
 - Bitweise Steuerung von Hardware-Registern
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu allgemeinen Kombinationsblöcken ist dieser FB speziell auf die Konvertierung von BOOL zu WORD optimiert
 - Bietet eine direktere und effizientere Lösung als die Verwendung mehrerer Einzelblöcke
 - Ähnlich zu BIT_TO_* Blöcken, aber mit fester 16-Bit-WORD-Ausgabe

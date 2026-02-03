@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt rei
 - Datenkonvertierung in Steuerungssystemen, wo unterschiedliche Datenbreiten verarbeitet werden müssen.
 - Integration in größere Funktionsblocknetzwerke, die eine einheitliche Datenbreite erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen (z.B. `F_INT_TO_LWORD`) ist dieser speziell für die Konvertierung von 8-Bit unsigned Integern optimiert.
 - Ähnliche Bausteine könnten zusätzliche Features wie Skalierung oder Fehlerbehandlung bieten, dieser Block ist jedoch auf die reine Konvertierung beschränkt.
 

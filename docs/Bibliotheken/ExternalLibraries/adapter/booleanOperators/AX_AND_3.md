@@ -54,7 +54,7 @@ Der Funktionsblock besitzt keinen internen Zustandsautomaten, da er als kombinat
 - Logische Verarbeitung in Automatisierungssystemen
 - Überwachungssysteme mit Mehrfachbedingungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-AND-Blöcken bietet AX_AND_3:
 - Drei Eingänge statt der typischen zwei Eingänge
 - Adapter-basierte Schnittstelle statt direkter Daten-Ein-/Ausgänge
@@ -68,7 +68,7 @@ Vergleich mit [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002a6_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
 

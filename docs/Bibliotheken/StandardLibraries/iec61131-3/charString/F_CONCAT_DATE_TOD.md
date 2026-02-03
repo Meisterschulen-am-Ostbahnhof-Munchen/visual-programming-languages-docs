@@ -45,7 +45,7 @@ Bei Auslösung des Ereignisses `REQ` werden die Eingabedaten `IN1` (Datum) und `
 - Kombination von separat erfassten Datums- und Zeitinformationen in Steuerungssystemen.
 - Erzeugung von Zeitstempeln für Protokollierungs- und Überwachungszwecke.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Bausteinen, die ähnliche Funktionen bieten, zeichnet sich `F_CONCAT_DATE_TOD` durch seine Einfachheit und direkte Verarbeitung aus. Es gibt keine zusätzlichen Parameter oder komplexen Konfigurationsmöglichkeiten, was ihn besonders für einfache Anwendungsfälle geeignet macht.
 
 ## Fazit

@@ -58,7 +58,7 @@ Der SUBSCRIBE_10 Block initialisiert sich über das INIT-Ereignis und verbindet 
 - Kommunikation zwischen verschiedenen Steuerungskomponenten
 - Überwachungssysteme mit mehreren Datenquellen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Subscribe-Blöcken bietet SUBSCRIBE_10 die Möglichkeit, bis zu 10 verschiedene Datenwerte gleichzeitig zu empfangen, was ihn für komplexere Anwendungen mit mehreren Datenpunkten geeignet macht.
 
 ## Fazit

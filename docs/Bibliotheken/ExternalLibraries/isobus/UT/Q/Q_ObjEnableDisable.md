@@ -78,7 +78,7 @@ Der **Q_ObjEnableDisable** ist ein standardkonformer Funktionsbaustein zur Aktiv
 - **Workflow-Management**: Schrittweise Freischaltung
 - **Diagnosemodi**: Eingabebeschränkungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ObjEnableDisable | VtInputControl | VtObjectState |
 |---------------|--------------------|----------------|---------------|

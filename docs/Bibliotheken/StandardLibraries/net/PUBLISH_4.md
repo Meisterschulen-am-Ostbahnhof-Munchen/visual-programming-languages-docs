@@ -58,7 +58,7 @@ Der PUBLISH_4 Block initialisiert sich über das INIT-Ereignis und bestätigt di
 - Systeme mit unidirektionaler Datenkommunikation
 - Anwendungen, die gleichzeitige Übertragung mehrerer Datenwerte benötigen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu bestätigten Kommunikationsblöcken bietet PUBLISH_4 geringere Latenz durch den unbestätigten Sendemodus. Gegenüber Blöcken mit weniger Datenkanälen ermöglicht er die gleichzeitige Übertragung von bis zu vier verschiedenen Datenwerten.
 
 ## Fazit

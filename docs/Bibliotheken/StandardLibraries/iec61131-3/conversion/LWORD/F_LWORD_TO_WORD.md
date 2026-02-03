@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Verarbeitung von Daten, die aus 64-Bit-Quellen stammen, aber in 16-Bit-Systemen weiterverwendet werden sollen.
 - Reduktion der Datenbreite zur Speicherplatzoptimierung, wenn die höherwertigen Bits nicht benötigt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_LWORD_TO_DWORD**: Konvertiert LWORD zu DWORD (32-Bit), behält mehr Datenbits bei.
 - **F_LWORD_TO_BYTE**: Konvertiert LWORD zu BYTE (8-Bit), reduziert die Datenbreite noch stärker.
 - **F_LWORD_TO_<any>**: Ähnliche Bausteine für andere Ziel-Datentypen, jeweils mit unterschiedlicher Bit-Breite im Ergebnis.

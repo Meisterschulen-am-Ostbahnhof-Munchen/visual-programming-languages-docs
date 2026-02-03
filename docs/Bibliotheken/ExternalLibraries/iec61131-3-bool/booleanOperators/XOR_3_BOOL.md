@@ -48,7 +48,7 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 *   **Verschlüsselung und Codierung:** Als grundlegende Komponente in einfachen kryptografischen oder fehlererkennenden Schaltungen (z.B. für Paritätsbits).
 *   **Signalvergleich:** Feststellen, ob sich ein drittes Signal von der Kombination zweier anderer Signale unterscheidet.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **XOR (2 Eingänge):** Der Standard-XOR-Baustein mit nur zwei Eingängen. `XOR_3_BOOL` erweitert diese Funktion auf drei Operanden. Siehe: [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.md)
 *   **ODER / UND (3 Eingänge):** Diese Blöcke berechnen die logische ODER- bzw. UND-Verknüpfung aller Eingänge. Die XOR-Logik ist spezieller und unterscheidet sich insbesondere im Fall, wenn alle drei Eingänge `TRUE` sind (bei ODER=TRUE, bei UND=TRUE, bei XOR=TRUE).
 *   **GEN_XOR:** Dies ist die generische Basis, von der `XOR_3_BOOL` als spezifische Instanz für den Datentyp `BOOL` abgeleitet ist.

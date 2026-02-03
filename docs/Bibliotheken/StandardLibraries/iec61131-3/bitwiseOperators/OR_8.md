@@ -44,7 +44,7 @@ Der OR_8 Funktionsblock führt eine bitweise ODER-Verknüpfung der Werte an den 
 - Steuerungslogik in industriellen Automatisierungssystemen.
 - Kombination von binären Steuersignalen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **OR_2/OR_4**: Ähnliche Funktionsblöcke mit weniger Eingängen (2 bzw. 4). OR_8 bietet mehr Flexibilität bei komplexeren Anwendungen.
 - **GEN_OR**: Generische Basisimplementierung, die durch OR_8 spezialisiert wird.
 

@@ -57,7 +57,7 @@ Der Funktionsblock besitzt keinen internen Zustand und arbeitet stateless. Alle 
 - Integration in Steuerungssysteme mit unterschiedlichen Signalformaten
 - Drehzahlregelung mit separaten Rechts-/Linkslauf-Steuerungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konverter-Bausteinen bietet dieser Composite-FB eine strukturierte Lösung für die Aufteilung bidirektionaler Signale in zwei unabhängige unidirektionale Kanäle. Die Verwendung standardisierter Adaptertypen gewährleistet Kompatibilität innerhalb des Adapter-Frameworks.
 
 ## Fazit

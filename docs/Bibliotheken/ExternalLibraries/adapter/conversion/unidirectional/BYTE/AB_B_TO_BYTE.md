@@ -46,7 +46,7 @@ Der Funktionsblock arbeitet zustandslos und reagiert sofort auf eingehende Adapt
 - Protokollkonvertierung in industriellen Automatisierungsanlagen
 - Adapter-basierte Datenumwandlung in verteilten Steuerungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konvertierungsbausteinen bietet AB_B_TO_BYTE den Vorteil der Adapter-Integration, was eine standardisierte und typsichere Schnittstelle ermöglicht. Andere Konvertierungsbausteine arbeiten typischerweise mit direkten Ein-/Ausgängen statt mit Adaptern.
 
 ## Fazit

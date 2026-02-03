@@ -56,7 +56,7 @@ Der OR_9 Funktionsblock führt eine bitweise logische ODER-Verknüpfung aller ak
 - Steuerungslogik mit mehreren Eingangsbedingungen
 - Signalverarbeitung in industriellen Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfacheren ODER-Bausteinen bietet OR_9 die Möglichkeit, bis zu neun Eingänge zu verarbeiten
 - Ähnlich zu anderen bitweisen Operatoren, aber speziell für ODER-Verknüpfungen optimiert
 - Generische Implementierung ermöglicht flexiblere Anwendung als typspezifische Varianten

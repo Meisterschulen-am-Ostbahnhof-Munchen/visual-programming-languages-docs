@@ -49,7 +49,7 @@ Keine Adapter vorhanden.
 - Verarbeitung von Protokoll- oder Log-Daten.
 - Manipulation von Textdaten in automatisierten Prozessen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INSERT**: Fügt Zeichen an einer bestimmten Position ein.
 - **F_REPLACE**: Ersetzt Zeichen in einer Zeichenkette.
 - **F_SUBSTRING**: Extrahiert einen Teilstring aus einer Zeichenkette.

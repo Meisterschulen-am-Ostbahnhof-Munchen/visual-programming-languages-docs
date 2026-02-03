@@ -45,7 +45,7 @@ Der Funktionsblock extrahiert die beiden Bytes aus dem Eingangswort `IN` und gib
 - **Hardwarenahe Programmierung**: Bei der Arbeit mit Registerinhalten, die als WORD gelesen werden, aber einzelne Bytes enthalten.
 - **Datenkonvertierung**: Bei der Umwandlung von WORD-Daten in zwei separate BYTE-Daten für weitere Verarbeitungsschritte.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Extraktionsfunktionen bietet `SPLIT_WORD_INTO_BYTES` eine spezialisierte und optimierte Lösung für die Aufteilung von WORD-Daten in Bytes.
 - Andere Bausteine könnten zusätzliche Funktionen wie die Behandlung von Vorzeichen oder die Extraktion von Bits bieten, sind aber für diese spezielle Aufgabe weniger effizient.
 

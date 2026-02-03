@@ -1,4 +1,4 @@
-# IORevPiAIO
+# 🔌 IORevPiAIO
 
 ```{index} single: IORevPiAIO
 ```
@@ -63,7 +63,7 @@ Der Funktionsblock verfügt über folgende Betriebszustände:
 - Analoges Signalverarbeitung in Steuerungssystemen
 - Revolution Pi-basierte Automatisierungslösungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Analog-I/O-Blöcken bietet IORevPiAIO spezifische Integration für die Revolution Pi Hardware und unterstützt zusätzlich RTD-Temperatursensoren. Die Bus-Adapter-Architektur ermöglicht eine effiziente Kommunikation mit dem Revolution Pi System.
 
 ## Fazit

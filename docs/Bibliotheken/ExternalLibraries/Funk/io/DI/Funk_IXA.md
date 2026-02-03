@@ -55,7 +55,7 @@ Der Block durchläuft folgende Zustände:
 - Verwendung in landwirtschaftlichen Maschinensteuerungen
 - Schnittstelle für Sensor-Datenerfassung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Funk_IXA:
 - Erweiterte Parameterisierungsmöglichkeiten
 - Statusrückmeldungen
@@ -65,7 +65,7 @@ Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Funk_IXA:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_003b2_sub_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
 * [Uebung_003b3_sub_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)

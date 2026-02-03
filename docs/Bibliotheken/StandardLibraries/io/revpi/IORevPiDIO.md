@@ -1,4 +1,4 @@
-# IORevPiDIO
+# 🔌 IORevPiDIO
 
 ```{index} single: IORevPiDIO
 ```
@@ -55,7 +55,7 @@ Der Funktionsblock ermöglicht die Konfiguration und Steuerung von bis zu 14 dig
 - Anbindung von Sensoren und Aktoren an 4diac-basierte Steuerungen
 - Prototyping und Entwicklung von IoT-Lösungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen I/O-Bausteinen bietet IORevPiDIO spezifische Unterstützung für Revolution Pi Hardware mit einer hohen Anzahl an konfigurierbaren Ein-/Ausgängen. Die Integration des Bus-Adapters ermöglicht eine direkte Kommunikation mit der Revolution Pi Plattform.
 
 ## Fazit

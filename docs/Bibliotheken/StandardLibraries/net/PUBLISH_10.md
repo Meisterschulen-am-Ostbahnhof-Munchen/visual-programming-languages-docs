@@ -55,7 +55,7 @@ Der PUBLISH_10 Block arbeitet nach dem Publish-Subscribe-Prinzip. Nach erfolgrei
 - Datenverteilung in Echtzeit-Steuerungssystemen
 - Multi-Consumer Datenpipeline-Architekturen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu bestätigten Kommunikationsblöcken bietet PUBLISH_10 reduzierte Latenz durch unbestätigte Übertragung. Gegenüber Blöcken mit weniger Datenkanälen ermöglicht er die gleichzeitige Verteilung mehrerer Datenströme.
 
 ## Fazit

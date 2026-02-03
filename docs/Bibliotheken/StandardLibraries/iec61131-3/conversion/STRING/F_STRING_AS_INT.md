@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Umwandlung von Daten aus Textdateien oder Kommunikationsprotokollen in numerische Werte.
 - Integration in Systeme, die Zeichenketten-basierte Datenquellen nutzen, aber numerische Verarbeitung erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_STRING_AS_INT` spezialisiert auf die Umwandlung von `STRING` zu `INT`.
 - Andere Bausteine könnten zusätzliche Funktionen wie Fehlerbehandlung oder Unterstützung für verschiedene numerische Formate bieten, was hier nicht der Fall ist.
 

@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung von `ULINT` zu `LWORD` im BCD-Format
 - Kommunikation mit Peripheriegeräten, die BCD-Daten erwarten.
 - Datenkonvertierung in Automatisierungsanwendungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken bietet `F_ULINT_TO_BCD_LWORD` eine spezialisierte Lösung für die Umwandlung in das BCD-Format.
 - Andere Blöcke könnten zusätzliche Konvertierungsoptionen bieten, sind jedoch möglicherweise weniger effizient für diesen spezifischen Anwendungsfall.
 

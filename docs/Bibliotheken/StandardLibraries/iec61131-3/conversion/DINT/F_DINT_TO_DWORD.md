@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung von DINT zu DWORD durch, wenn das Er
 - Umwandlung von vorzeichenbehafteten Sensordaten in vorzeichenlose Werte für die weitere Verarbeitung.
 - Vorbereitung von Daten für die Kommunikation mit Systemen, die vorzeichenlose Werte erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_DINT_TO_DWORD` spezialisiert auf die Umwandlung von DINT zu DWORD und bietet daher eine optimierte und fehlerfreie Konvertierung für diesen spezifischen Anwendungsfall.
 
 ## Fazit

@@ -56,7 +56,7 @@ Der **E_CTD** (Event-Driven Down Counter) ist ein ereignisgesteuerter Abwärtsz�
 - **Verpackungsmaschinen:** Steuerung von Füllvorgängen.
 - **Energiemanagement:** Überwachung von Verbrauchszyklen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature          | E_CTD             | E_CTU (Up Counter) | E_CTUD (Up/Down Counter) |
 |------------------|-------------------|--------------------|--------------------------|
@@ -69,7 +69,7 @@ Der **E_CTD** (Event-Driven Down Counter) ist ein ereignisgesteuerter Abwärtsz�
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_081](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_081.md)
 

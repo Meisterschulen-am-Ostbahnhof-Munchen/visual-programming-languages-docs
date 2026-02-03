@@ -51,7 +51,7 @@ END_ALGORITHM
 - **Datenausgabe**: Konvertierung von numerischen Werten für die Anzeige auf einem Bedienpanel oder in einer Log-Datei.
 - **Datenkommunikation**: Vorbereitung von numerischen Werten für die Übertragung als Zeichenketten in Netzwerkprotokollen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_REAL_TO_STRING**: Ähnlicher Funktionsblock, der jedoch in einen `STRING` statt in einen `WSTRING` konvertiert. `F_REAL_AS_WSTRING` ist für Unicode-fähige Umgebungen besser geeignet.
 - **F_WSTRING_AS_REAL**: Führt die umgekehrte Konvertierung durch (von `WSTRING` zu `REAL`).
 

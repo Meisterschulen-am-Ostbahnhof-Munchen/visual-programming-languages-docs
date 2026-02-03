@@ -53,7 +53,7 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 *   **Steuerungslogik:** Implementierung von speziellen Verknüpfungslogiken in Ablaufsteuerungen, wo eine Zustandsänderung nur bei einem ungeraden Aktivierungsmuster erfolgen soll.
 *   **Codierung/Decodierung:** Einfache kryptographische oder Codierungsaufgaben, die auf der XOR-Operation basieren.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Standard XOR-Blöcke (z.B., XOR mit 2 Eingängen):** Dieser Block erweitert die klassische 2-Eingang-XOR-Funktion auf bis zu zehn Eingänge in einem einzigen Baustein, was die Übersichtlichkeit bei vielen Signalen erhöht. Siehe: [XOR_10](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_10.md)
 *   **Bausteine mit variabler Eingangsanzahl:** Einige Bibliotheken bieten XOR-Blöcke an, denen dynamisch Eingänge hinzugefügt werden können. `XOR_10_BOOL` hat eine feste, dafür explizit deklarierte Schnittstelle, was die Code-Analyse vereinfachen kann.
 *   **Kombinatorische Logik in SFC/ST:** Die gleiche Funktion könnte auch in Structured Text (ST) mit einem Ausdruck wie `OUT := IN1 XOR IN2 XOR ... XOR IN10;` implementiert werden. Der Vorteil des FBs liegt in der klaren Kapselung und der ereignisgesteuerten Schnittstelle, die besser in FBNetzwerke integrierbar ist.

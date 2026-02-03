@@ -35,7 +35,7 @@ Dieser Strukturdatentyp wird primär in Verbindung mit logiBUS-I/O-Funktionsblö
 *   Als Element in einem Array zur Konfiguration aller digitalen Eingänge eines Moduls.
 *   Als Parameter, um festzulegen, bei welchem physikalischen Ereignis (z.B. steigende Flanke) ein logisches Event im Steuerungsprogramm ausgelöst werden soll.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsbausteinen (FBs) wie `E_R_TRIG` oder `F_TRIG`, die selbstständig Flankenereignisse generieren, ist `logiBUS_DI_Events_S` ein reiner Konfigurationsdatentyp. Er stellt die Information bereit, *welches* Hardware-Ereignis von einem separaten Treiber- oder Hardwareabstraktionsbaustein in ein solches logisches Flankenereignis übersetzt werden soll.
 
 ## Fazit

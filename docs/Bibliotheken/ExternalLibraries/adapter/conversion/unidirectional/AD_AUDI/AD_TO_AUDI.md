@@ -30,7 +30,7 @@ Sobald am `AD_IN` ein Ereignis (`E1`) zusammen mit Daten (`D1`) eintrifft, wird 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_011_AUDI](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011_AUDI.md)
 

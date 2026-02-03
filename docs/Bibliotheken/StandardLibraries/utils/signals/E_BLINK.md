@@ -48,7 +48,7 @@ Der E_BLINK Funktionsblock verwendet intern einen E_PULSE Timer und einen E_CYCL
 - Generierung von Taktsignalen für Testzwecke
 - Visualisierung von Zustandsänderungen in Bedienoberflächen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zum CODESYS BLINK Funktionsblock bietet E_BLINK eine vereinfachte Handhabung durch das automatische Zurücksetzen auf FALSE beim Stoppen. Die Funktionalität ist ähnlich, aber das Verhalten bei STOP ist konsistenter.
 
 ## Fazit

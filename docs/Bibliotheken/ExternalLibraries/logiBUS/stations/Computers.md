@@ -34,7 +34,7 @@ Die Konstanten werden beim Kompilieren des Projekts definiert. Jede Konstante er
 2.  **Portabilität zwischen Umgebungen:** Durch das einfache Austauschen der Werte in dieser Konstantendatei kann ein Programm schnell zwischen verschiedenen Netzwerkumgebungen (z.B. Entwicklungslokalhost, Testnetzwerk, Produktionsnetzwerk) angepasst werden.
 3.  **Vermeidung von Tippfehlern:** Die Verwendung des Konstantennamens `C_ET` ist weniger fehleranfällig als das wiederholte Eintippen der Zeichenkette `"192.168.5.1:61499"`.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`VAR_GLOBAL` (Globale Variablen):** Im Gegensatz zu globalen Variablen können Konstanten (`CONSTANT`) nach der Initialisierung nicht mehr verändert werden. Sie bieten somit höhere Programmsicherheit.
 *   **`VAR_CONFIG` (Konfigurationsvariablen):** Konfigurationsvariablen sind ebenfalls Konstanten, die jedoch pro Ressource konfiguriert werden können. Die hier definierten globalen Konstanten haben einen festen, projekteinheitlichen Wert.
 *   **Direkte Wertangabe:** Der direkte Einsatz von Zeichenketten-Literalen im Code ist möglich, führt aber zu schlechterer Wartbarkeit und höherer Fehleranfälligkeit im Vergleich zur Verwendung zentraler Konstanten.

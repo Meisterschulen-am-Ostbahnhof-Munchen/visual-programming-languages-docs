@@ -57,7 +57,7 @@ Der Funktionsblock besitzt keinen internen Zustand und arbeitet stateless. Die A
 - Fehlererkennung in binären Signalketten
 - Logische Verknüpfungen in industriellen Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen mit weniger Eingängen bietet AX_XOR_7 die Möglichkeit, XOR-Operationen mit bis zu sieben Eingängen durchzuführen. Während einfache XOR-Blöcke typischerweise nur zwei Eingänge verarbeiten, ermöglicht dieser Baustein komplexere Verknüpfungslogiken in einem einzigen Block.
 
 Vergleich mit [XOR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_7.md)

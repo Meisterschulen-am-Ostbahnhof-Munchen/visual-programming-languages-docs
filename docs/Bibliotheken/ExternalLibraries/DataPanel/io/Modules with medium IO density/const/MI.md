@@ -51,7 +51,7 @@ Bei den MI Global Constants handelt es sich um eine reine Konstantendeklaration 
 - Zentrale Verwaltung von Moduladressen
 - Vereinfachung der Projektkonfiguration
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konstantendefinitionen bietet MI spezifische Adressen für Module mit mittlerer I/O-Dichte. Andere Konstantensammlungen könnten unterschiedliche Adressbereiche oder Modultypen abdecken.
 
 ## Fazit

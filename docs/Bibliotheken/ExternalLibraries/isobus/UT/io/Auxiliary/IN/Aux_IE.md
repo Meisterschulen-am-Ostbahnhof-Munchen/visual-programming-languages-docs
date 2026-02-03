@@ -59,13 +59,13 @@ Der Block verfügt über einen Initialisierungszustand (INIT/INITO) und operativ
 - Erkennung komplexer Eingabemuster (Einzelklick, Doppelklick)
 - Integration in Steuerungssysteme für Agrartechnik
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IE erweiterte Funktionalität für die Erkennung komplexerer Eingabeereignisse und ist speziell für ISOBUS-Umgebungen optimiert.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_010b3](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b3.md)
 * [Uebung_010b3_AX](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010b3_AX.md)

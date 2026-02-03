@@ -61,7 +61,7 @@ Die ECC umfasst sieben Zustände:
 *   **Prozesssteuerung**: Schrittweise Durchführung von chemischen oder thermischen Prozessen, bei denen jeder Schritt eine definierte Haltezeit hat.
 *   **Anzeige- oder Blinksequenzen**: Steuerung von visuellen oder akustischen Signalen in einer festgelegten, zeitlich getakteten Reihenfolge.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einem einfachen TON-Timer (Verzögerungseinschaltverzögerung) realisiert dieser FB eine vollständige Zustandsmaschine mit mehreren Schritten. Im Vergleich zu generischen Sequencer-FBs, die oft mit Schrittabfragen (z.B. über Steigungsflanken) arbeiten, ist dieser Baustein rein zeitgesteuert. Er ähnelt einer Kette von TON-Bausteinen, ist aber in einem einzigen, zustandsbasierten FB gekapselt, was die Anordnung und Parametrierung vereinfacht.
 
 
@@ -69,7 +69,7 @@ Im Gegensatz zu einem einfachen TON-Timer (Verzögerungseinschaltverzögerung) r
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_035a2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a2.md)
 * [Uebung_035a3](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a3.md)

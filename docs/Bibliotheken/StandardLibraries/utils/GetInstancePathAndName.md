@@ -46,7 +46,7 @@ Der Funktionsblock hat keinen internen Zustand. Er reagiert ausschließlich auf 
 - **Dynamische Konfiguration**: Verwendung des Instanzpfades für dynamische Konfigurationen oder Logging.
 - **Systemüberwachung**: Überwachung und Protokollierung von Instanzpfaden in komplexen Systemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Funktionsblöcken, die ähnliche Informationen liefern, bietet `GetInstancePathAndName` die Flexibilität, den Separator für den Pfad anzupassen.
 - Andere Bausteine könnten nur den Pfad oder nur den Namen liefern, während dieser Funktionsblock beides kombiniert.
 

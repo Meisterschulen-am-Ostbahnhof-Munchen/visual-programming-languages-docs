@@ -40,7 +40,7 @@ Dieser Strukturdatentyp wird verwendet, um die Konfiguration von digitalen Einga
 *   Parametrierung von Funktionsblöcken, die digitale Eingänge in einem verteilten I/O-System (wie logi.BUS) auslesen.
 *   Vereinfachung der Wiederverwendung und Lesbarkeit von Code, da die Pin-Konfiguration in einer benannten Struktur gebündelt ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Einfache Datentypen (z.B. USINT direkt):** Die Verwendung einer strukturierten `logiBUS_PI_S`-Variable ist einer direkten Verwendung einer `USINT`-Variable für die Pinnummer vorzuziehen, da sie semantisch klarer ist und bei Erweiterungen der Konfiguration (z.B. um Filterzeit oder Invertierung) einfacher erweitert werden kann, ohne alle Aufrufstellen ändern zu müssen.
 *   **logiBUS_PO_S (Digitaler Ausgang):** Es existiert sehr wahrscheinlich ein komplementärer Datentyp `logiBUS_PO_S` für die Konfiguration digitaler Ausgänge (PO - Peripheral Output) mit identischer oder sehr ähnlicher Struktur.
 

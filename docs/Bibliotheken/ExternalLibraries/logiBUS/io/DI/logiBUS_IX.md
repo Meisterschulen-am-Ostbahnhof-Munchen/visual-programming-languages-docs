@@ -58,7 +58,7 @@ Der Funktionsblock durchläuft typischerweise folgende Zustände:
 - Überwachung von Schalterzuständen und Sensorsignalen
 - Industrielle E/A-Steuerung mit Statusüberwachung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet logiBUS_IX:
 - Erweiterte Statusinformationen
 - Parametrierbare Service-Parameter
@@ -68,7 +68,7 @@ Im Vergleich zu einfachen digitalen Eingangsblöcken bietet logiBUS_IX:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_001](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_001.md)
 * [Uebung_001c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_001c.md)

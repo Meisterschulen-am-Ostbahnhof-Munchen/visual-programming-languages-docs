@@ -62,14 +62,14 @@ Der Baustein durchläuft implizit folgende Hauptzustände:
 *   **Anbaugeräte**: Dynamische Konfiguration der Kommunikation zwischen einem Traktor und einem spezifischen Anbaugerät, das eine individuelle PGN für seine Daten benötigt.
 *   **Diagnosetools**: Ein Diagnosegerät, das temporär eine PGN im Netzwerk installiert, um bestimmte Daten anzufordern oder Befehle zu senden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`E_SEND` / `E_RCV` (Standard 61499)**: Diese generischen Kommunikationsbausteine sind protokollunabhängig. `AlPgnTxNew8B_REQ` ist hingegen spezialisiert auf ISOBUS/J1939 und übernimmt die protokollspezifische Konfiguration (PGN, Priorität, Zieladresse), die bei den Standardbausteinen manuell in den Datenparametern abgebildet werden müsste.
 *   **Einfache TX-Bausteine**: Andere ISOBUS-Sendebausteine erwarten oft einen bereits konfigurierten `PGN_handle`. `AlPgnTxNew8B_REQ` ist der vorgelagerte Baustein, der genau diesen Handle durch die Installation einer neuen PGN bereitstellt.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_125](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_125.md)
 

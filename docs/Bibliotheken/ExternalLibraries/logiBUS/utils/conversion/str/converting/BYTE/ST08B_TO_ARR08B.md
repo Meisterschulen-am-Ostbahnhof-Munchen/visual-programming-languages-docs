@@ -48,7 +48,7 @@ Der Funktionsblock `ST08B_TO_ARR08B` ist ein reiner Datenkonvertierungsbaustein 
 *   **Typumwandlung und Interoperabilität:** Verbesserung der Kompatibilität zwischen verschiedenen Teilen einer Anwendung oder zwischen verschiedenen Systemen, die unterschiedliche Datenrepräsentationen verwenden.
 *   **Archivierung und Logging:** Speicherung von strukturierten Daten in einem generischen Byte-Format für Archivierungs- oder Logging-Zwecke.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen zeichnet sich `ST08B_TO_ARR08B` durch seine Spezialisierung auf die Umwandlung einer 8-Byte-Struktur in ein 8-Byte-Array aus. Allgemeine Typumwandlungsfunktionen könnten komplexer sein und mehr Konfigurationsmöglichkeiten bieten, während dieser Baustein eine hochoptimierte und spezifische Aufgabe erfüllt. Bausteine für die Array-zu-Struktur-Konvertierung (z.B. `ARR08B_TO_ST08B`) wären die Umkehrfunktion dieses Bausteins.
 
 ## Fazit

@@ -41,7 +41,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine expliziten Z
 - Typumwandlung in Kommunikationsschnittstellen zwischen Systemen, die unterschiedliche Datentypen verwenden.
 - Datenverarbeitung in Steuerungssystemen, wo eine Konvertierung von `LWORD` zu `UINT` erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke könnten `F_DWORD_TO_UINT` oder `F_WORD_TO_UINT` sein, die jedoch andere Eingangsdatentypen verarbeiten.
 - Der Hauptunterschied liegt im Eingangsdatentyp (`LWORD`), der eine größere Bitbreite als `DWORD` oder `WORD` aufweist.
 

@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` emp
 - **Datenkommunikation**: Vorbereitung von Daten für die Übertragung in BCD-kodierten Protokollen.
 - **Druckersteuerung**: Umwandlung von numerischen Werten für den Druck in einem lesbaren Format.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_UDINT_TO_STRING**: Konvertiert einen UDINT in einen String, ist jedoch weniger effizient für BCD-spezifische Anwendungen.
 - **F_UDINT_TO_DWORD**: Führt eine direkte Typumwandlung durch, ohne BCD-Kodierung.
 

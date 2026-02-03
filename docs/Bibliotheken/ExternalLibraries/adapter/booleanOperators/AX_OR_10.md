@@ -31,7 +31,7 @@ Kombinatorischer Logikbaustein ohne Zustände.
 ## Anwendungsszenarien
 Logische Verknüpfungen mit vielen Eingängen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **AX_OR_2...9**: Varianten mit weniger Eingängen.
 
 ## Fazit

@@ -60,14 +60,14 @@ Als Composite FB ohne eigene, explizite Zustandsmaschine besitzt `BOOLS_TO_QUART
 *   **Datenkomprimierung für Bus-Kommunikation:** Vor der Übertragung über Feldbusse, wo viele binäre Signale in ein platzsparendes Byte- oder Wort-orientiertes Protokoll gepackt werden müssen.
 *   **Schnittstelle zu Legacy-Systemen:** Als Adapter zwischen modernen IEC 61499-Steuerungen und älteren Systemen, die Daten in einem speziellen Quarter-Byte-Format erwarten oder liefern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenüber `BOOL_TO_QUARTER`:** `BOOLS_TO_QUARTERS` ist im Wesentlichen ein Array aus 16 `BOOL_TO_QUARTER`-Blöcken mit einer fest verdrahteten seriellen Ereigniskette. Während `BOOL_TO_QUARTER` eine einzelne Konvertierung durchführt, aggregiert `BOOLS_TO_QUARTERS` viele solcher Konvertierungen in einem wiederverwendbaren Baustein.
 *   **Gegenüber generischen Pack-Blöcken (z.B. `BOOLx_TO_BYTE`):** Blöcke wie `BOOL8_TO_BYTE` packen mehrere BOOL-Werte in die Bits eines einzelnen BYTEs. `BOOLS_TO_QUARTERS` hingegen erzeugt für jeden Eingang ein eigenes (wenn auch nur teilweise genutztes) BYTE. Es findet keine Bit-Packung in ein gemeinsames Byte statt, sondern eine 1:1-Abbildung auf ein spezielles Kodierungsformat.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
 

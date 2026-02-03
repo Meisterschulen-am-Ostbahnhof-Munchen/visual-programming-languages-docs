@@ -42,7 +42,7 @@ Siehe `sequence_ET_08_loop`.
 ## Anwendungsszenarien
 Für zyklische 8-stufige Prozesse mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_ET_08_loop**: Standardvariante ohne Adapter.
 
 ## Fazit

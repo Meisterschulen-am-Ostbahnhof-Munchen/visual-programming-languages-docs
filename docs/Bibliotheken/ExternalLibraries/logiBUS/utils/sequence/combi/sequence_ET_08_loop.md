@@ -68,7 +68,7 @@ Die Übergangsbedingungen sind in der ECC definiert und kombinieren die Ereignis
 *   **Teststände:** Automatisierte Durchführung von Testsequenzen, bei denen Prüfungen (ereignisgesteuert) mit Wartezeiten (zeitgesteuert) kombiniert werden.
 *   **Verpackungsmaschinen:** Steuerung des Zyklus "Produkt zuführen - Verpackung schließen - Etikettieren - Austragen".
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Timern oder Flip-Flops bietet dieser FB eine vordefinierte, robuste Zustandsmaschine für 8-Schritt-Sequenzen. Gegenüber einer individuell programmierten SFC (Sequential Function Chart) in einem Service- oder Composite-FB stellt `sequence_ET_08_loop` eine sofort einsatzbereite, getestete und wiederverwendbare Komponente dar, die die Entwicklung beschleunigt und die Fehleranfälligkeit verringert. Bausteine mit fester Zustandsanzahl sind oft performanter und einfacher zu konfigurieren als vollständig frei programmierbare Sequenzer.
 
 ## Fazit

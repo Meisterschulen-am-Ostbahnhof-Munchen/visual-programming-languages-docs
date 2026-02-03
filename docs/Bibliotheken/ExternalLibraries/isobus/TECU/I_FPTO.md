@@ -76,7 +76,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65092) für die
 - **Zustandsüberwachung**: Echtzeit-Diagnose des FPTO-Systems
 - **Energieeffizienz**: Economy-Modus-Steuerung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | I_FPTO | Standard_PTO | Advanced_PTO |
 |---------------|--------|--------------|--------------|
@@ -88,7 +88,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65092) für die
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
 

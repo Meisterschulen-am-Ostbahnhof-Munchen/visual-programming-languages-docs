@@ -42,7 +42,7 @@ Der Block hat keinen internen Zustand. Die Zerlegung erfolgt bei jedem `REQ`-Ere
 - Verarbeitung von digitalen Signalen, die als LWORD kodiert sind.
 - Debugging oder Monitoring von einzelnen Bits in langen Datenwörtern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Blöcke wie `SPLIT_WORD_INTO_BOOLS` oder `SPLIT_DWORD_INTO_BOOLS` arbeiten mit kürzeren Datentypen (WORD bzw. DWORD).
 - Dieser Block ist speziell für 64-Bit-Daten optimiert.
 

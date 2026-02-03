@@ -42,7 +42,7 @@ Der Funktionsblock ist zustandslos und führt die Konvertierung bei jedem `REQ`-
 - Datenkommunikation zwischen Systemen mit unterschiedlicher Wortbreite.
 - Explizite Typumwandlung in Steuerungsanwendungen, wo eine 64-Bit-Zahl auf eine 16-Bit-Zahl reduziert werden muss.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_WORD` oder `F_INT_TO_WORD` führen ähnliche Konvertierungen durch, jedoch mit anderen Ausgangsdatentypen.
 - `F_LINT_TO_WORD` ist spezifisch für die Konvertierung von 64-Bit zu 16-Bit und bietet keine zusätzliche Funktionalität wie Überlaufprüfung.
 

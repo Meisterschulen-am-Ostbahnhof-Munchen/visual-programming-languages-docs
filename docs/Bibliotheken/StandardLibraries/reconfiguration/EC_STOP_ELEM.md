@@ -57,7 +57,7 @@ Der Funktionsblock verfügt über mehrere Service-Sequenzen:
 - Fehlerbehandlung durch gezieltes Stoppen fehlerhafter Komponenten
 - Wartungsarbeiten an laufenden Systemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Rekonfigurationsbausteinen bietet EC_STOP_ELEM eine spezialisierte Funktion zum gezielten Stoppen einzelner Systemkomponenten. Während allgemeine Rekonfigurationsbausteine oft komplexere Operationen unterstützen, konzentriert sich dieser Baustein auf die spezifische Aufgabe des kontrollierten Anhaltens.
 
 ## Fazit

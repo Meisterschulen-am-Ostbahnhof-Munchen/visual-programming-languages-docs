@@ -49,7 +49,7 @@ Der Funktionsblock arbeitet zustandslos und reagiert ausschließlich auf eingehe
 - Routing von Steuerbefehlen in modularen Anlagen
 - Lastverteilung in parallelen Verarbeitungsketten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Schaltern oder Multiplexern bietet der AX_DEMUX_2 eine spezialisierte Demultiplex-Funktionalität mit Adapter-basierter Schnittstelle. Die Verwendung standardisierter AX-Adapter gewährleistit Kompatibilität innerhalb des 4diac-Ökosystems.
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)

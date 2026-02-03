@@ -52,7 +52,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt ausschl
 - Extraktion von einzelnen Steuerbits aus einem Statusbyte.
 - Verarbeitung von Daten in Kommunikationsprotokollen, bei denen Informationen in Viertelbytes codiert sind.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Bitmanipulations-Funktionsblöcken bietet `SPLIT_BYTE_INTO_QUARTERS` eine spezialisierte und optimierte Lösung für die Aufteilung eines Bytes in vier Teile.
 - Andere Blöcke wie `EXTRACT_BITS` oder `BIT_SLICE` sind allgemeiner, erfordern aber mehr Konfiguration und sind möglicherweise weniger effizient.
 
@@ -61,7 +61,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt ausschl
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_056](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
 

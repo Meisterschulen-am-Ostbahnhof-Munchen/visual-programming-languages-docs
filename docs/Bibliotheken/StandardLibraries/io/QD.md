@@ -55,7 +55,7 @@ Der Block durchläuft folgende Zustände:
 - Integration in verteilte Steuerungssysteme mit Ressourcen-Management
 - Anwendungen mit hohen Anforderungen an die Ausgabedatenintegrität
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Ausgabeblöcken bietet QD:
 - Erweiterte Parametrierbarkeit durch STRING-Parameter
 - DWORD-Datenbreite statt einfacher BOOL- oder BYTE-Werte
@@ -67,7 +67,7 @@ Im Vergleich zu einfacheren Ausgabeblöcken bietet QD:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_060](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
 

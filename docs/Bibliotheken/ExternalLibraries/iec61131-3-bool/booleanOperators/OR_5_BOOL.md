@@ -53,7 +53,7 @@ Typische Anwendungen sind in Steuerungslogik zu finden, wo eine Bedingung als er
 *   Freigabelogik: Start einer Maschine, wenn mindestens eine von mehreren Sicherheitseinrichtungen aktiviert ist.
 *   Auswahl- oder Priorisierungslogik in verbundenen Steuerungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu diesem Baustein mit fünf festen Eingängen existieren in 4diac oft auch:
 *   **OR_2_BOOL, OR_3_BOOL, etc.:** Gleiche Funktionalität, aber mit einer geringeren, festen Anzahl an Eingängen (z.B. 2, 3, 4). Siehe: [OR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_5.md)
 *   **GEN_OR (Generisches ODER):** Ein übergeordneter, konfigurierbarer Baustein, der je nach Instanziierung eine variable Anzahl von Eingängen besitzen kann. `OR_5_BOOL` ist eine spezifische Instanziierung dieses Prinzips.

@@ -83,7 +83,7 @@ Der **Q_CtrlAudioSignal** ist ein standardkonformer Funktionsbaustein zur Steuer
 - **Sprachansagen**: Voraufgezeichnete Meldungen
 - **Maschinenstatus**: Akustische Statusindikatoren
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_CtrlAudioSignal | VtSoundManager | VtAudioAlert |
 |---------------|-------------------|----------------|--------------|
@@ -96,7 +96,7 @@ Der **Q_CtrlAudioSignal** ist ein standardkonformer Funktionsbaustein zur Steuer
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_017](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_017.md)
 * [Uebung_018](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_018.md)

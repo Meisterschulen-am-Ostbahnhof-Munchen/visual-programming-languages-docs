@@ -81,7 +81,7 @@ Ein `RESET`-Ereignis führt unmittelbar in den `sRESET`-Zustand. Dort werden üb
 *   **Teststände**: Automatisierte Abfolge von Test- und Prüfschritten an einem Bauteil.
 *   **Batch-Prozesse**: Steuerung von Reaktoren oder Mischbehältern, in denen nacheinander verschiedene Zutaten zugegeben oder Prozessparameter geändert werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **VS. `E_R_TRIG` / `E_F_TRIG`**: Diese Bausteine detektieren Flanken. `sequence_E_08` nutzt solche Flankendetektoren typischerweise als Quelle für seine Transitionsevents, ist selbst aber eine komplexe Zustandsmaschine.
 *   **VS. `E_DELAY`**: Ein reiner Verzögerungsbaustein. `sequence_E_08` kann durch externe Timer und entsprechende Verknüpfung zeitgesteuerte Abläufe realisieren, bietet aber von Haus aus keine integrierte Zeitsteuerung.
 *   **VS. `E_SR` (Flip-Flop)**: Ein elementarer Speicherbaustein mit Set/Reset. `sequence_E_08` kann als eine Kette solcher Speicher aufgefasst werden, bei der das Setzen eines Zustands das Zurücksetzen des vorherigen impliziert.

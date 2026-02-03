@@ -52,7 +52,7 @@ Bei LO handelt es sich um globale Konstanten, die als statische Werte definiert 
 - Verwendung in Verbindung mit spezifischen I/O-Treibern
 - Vereinfachung der Hardware-Konfiguration durch zentrale Konstantendefinition
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen globalen Konstanten-Bausteinen bietet LO spezifische Adressbereiche für Module mit geringer I/O-Dichte, während andere Bausteine möglicherweise andere Adressbereiche oder Konstantentypen definieren.
 
 ## Fazit

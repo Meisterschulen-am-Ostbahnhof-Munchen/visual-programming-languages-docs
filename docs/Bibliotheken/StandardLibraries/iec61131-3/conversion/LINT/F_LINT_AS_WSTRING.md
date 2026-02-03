@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das `REQ`-Ereignis ein
 - Protokollierung von numerischen Daten in Textdateien.
 - Kommunikation mit Systemen, die String-Daten erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_AS_WSTRING**: Konvertiert INT (16-Bit) zu WSTRING.
 - **F_DINT_AS_WSTRING**: Konvertiert DINT (32-Bit) zu WSTRING.
 - **F_LINT_AS_STRING**: Konvertiert LINT zu STRING (nicht Wide-String).

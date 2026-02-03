@@ -70,7 +70,7 @@ Nach Verlassen der aktiven Zustände (`SET1`, `SET2`, `RESET`) erfolgt ein autom
 *   **Betriebsartenschaltung**: Umschalten zwischen zwei verschiedenen Maschinen- oder Anlagenzuständen (z.B. "Automatik" vs. "Handbetrieb"), wobei ein Wechsel nur auf explizite Anforderung erfolgt.
 *   **Toggle-Schalter mit Priorität**: Ein Tastendruck (`CLK1`/`CLK2`) schaltet eine Funktion ein, ein Druck auf die andere Taste schaltet die erste aus und die zweite ein. Ein Not-Aus (`R`) schaltet alles ab.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **E_SR (Set-Reset)**: Der klassische SR-Flipflop hat separate `S1`/`S2` und `R1`/`R2` Eingänge. `Q_INTERLOCK_2` kombiniert dies mit Toggle-Funktionalität (`CLK1`/`CLK2`) und erzwingt die gegenseitige Ausschließlichkeit bereits intern. Bei `E_SR` kann durch gleichzeitiges Setzen beider Eingänge ein undefinierter Zustand entstehen, was hier durch das Interlock verhindert wird.
 *   **E_RS (Reset-Set)**: Ähnlich wie `E_SR`, jedoch mit priorisiertem Reset. `Q_INTERLOCK_2` hat ein globales Reset `R` mit höchster Priorität, aber die Set-Eingänge sind untereinander gleichberechtigt (das zuletzt ausgelöste Set- oder Toggle-Ereignis gewinnt).
 *   **E_T (T-Flipflop)**: Ein reiner Toggle-Baustein ohne Set-Funktion und ohne zweiten, gesperrten Ausgang. `Q_INTERLOCK_2` erweitert dies um die duale, verriegelte Struktur.

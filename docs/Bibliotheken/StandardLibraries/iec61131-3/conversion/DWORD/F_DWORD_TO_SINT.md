@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt unmitte
 - Typumwandlung in Steuerungsanwendungen, wo DWORD-Werte in kompaktere SINT-Werte umgewandelt werden müssen.
 - Datenreduktion, wenn nur der niederwertigste Teil eines DWORD-Wertes benötigt wird.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_DWORD_TO_INT` oder `F_DWORD_TO_USINT` konvertiert dieser Baustein in einen vorzeichenbehafteten 8-Bit-Wert.
 - Ähnliche Bausteine für andere Zieltypen sind in der IEC 61131-Konvertierungsbibliothek verfügbar.
 

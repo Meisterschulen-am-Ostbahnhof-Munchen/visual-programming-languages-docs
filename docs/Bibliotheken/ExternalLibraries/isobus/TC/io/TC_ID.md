@@ -64,7 +64,7 @@ Der Block durchläuft typische Service-Interface-Zustände:
 - Datenerfassung von TC-Eingabegeräten
 - Automatisierte Agrarsysteme mit standardisierten Datenformaten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Eingabeblöcken bietet TC_ID:
 - Standardisierte ISOBUS-Schnittstelle
 - DDI-basierte Datenidentifikation
@@ -74,7 +74,7 @@ Im Vergleich zu einfachen Eingabeblöcken bietet TC_ID:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
 

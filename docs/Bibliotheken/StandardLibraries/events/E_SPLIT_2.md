@@ -41,7 +41,7 @@ Wenn ein Ereignis am Eingang `EI` eintrifft, löst der Baustein sofort nacheinan
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_004a8](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a8.md)
 * [Uebung_004a8_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a8_AX.md)

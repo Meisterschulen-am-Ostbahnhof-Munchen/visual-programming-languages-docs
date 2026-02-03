@@ -86,7 +86,7 @@ Der Baustein arbeitet als endlicher Automat (State Machine) mit einer zyklischen
 *   **Ampelsteuerungen**: Zyklische Abfolge von Rot-Gelb-Grün Phasen.
 *   **Reinigungszyklen**: Spülen, Waschen, Trocknen in wiederkehrenden Intervallen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Gegensatz zu linearen Sequenzern (ohne Loop) ist dieser Baustein explizit für wiederkehrende Prozesse konzipiert. Er unterscheidet sich von einfachen Zählern dadurch, dass für jeden Schritt ein individuelles Ausgangsmuster und eine individuelle Zeit definiert werden kann. Die Verwendung von AX-Adaptern unterscheidet ihn von Standard-IEC-61499-Bausteinen, die meist direkte Boolesche Ausgänge verwenden, und prädestiniert ihn für strukturierte, objektorientierte Steuerungsdesigns.
 

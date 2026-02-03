@@ -43,7 +43,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine expliziten Z
 - **Benutzeroberflächen**: Darstellung von booleschen Werten in menschenlesbarer Form.
 - **Datenkommunikation**: Vorbereitung von booleschen Werten für die Übertragung als Text.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_STRING_TO_BOOL**: Führt die umgekehrte Konvertierung von `STRING` zu `BOOL` durch.
 - **F_BOOL_TO_***: Andere Konvertierungsbausteine, die boolesche Werte in verschiedene Datentypen umwandeln.
 

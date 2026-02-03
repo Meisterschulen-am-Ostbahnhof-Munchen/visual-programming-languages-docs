@@ -44,7 +44,7 @@ Bei Auslösung des `REQ`-Ereignisses wird der Algorithmus gestartet, der den `WO
 - Vorbereitung von Daten für weitere Berechnungen oder Speicherung.
 - Integration in größere Automatisierungslösungen, bei denen unterschiedliche Datentypen verarbeitet werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_INT_TO_REAL` oder `F_BOOL_TO_BYTE` bieten ähnliche Funktionalitäten für andere Datentypen.
 - `F_WORD_TO_UDINT` ist spezialisiert auf die Konvertierung von `WORD` zu `UDINT` und bietet daher eine optimierte Lösung für diesen spezifischen Anwendungsfall.
 

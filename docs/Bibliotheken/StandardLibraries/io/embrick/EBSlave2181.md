@@ -58,7 +58,7 @@ Der Funktionsblock verfügt über folgende Betriebszustände:
 - Integration in Steuerungssysteme mit EtherBrick-Feldbus-Kommunikation
 - Überwachung und Diagnose von Slave-Modulen in Echtzeit
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen I/O-Funktionsblöcken bietet der EBSlave2181 spezifische Integration für EtherBrick-Systeme mit vordefinierten Bus-Adapter-Schnittstellen. Er ist spezialisiert auf die Konfiguration und Überwachung von Slave-Modulen und bietet direkte Unterstützung für die EtherBrick-Kommunikationsprotokolle.
 
 ## Fazit

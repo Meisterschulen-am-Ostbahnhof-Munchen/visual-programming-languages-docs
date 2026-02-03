@@ -59,7 +59,7 @@ Der PUBLISH_5 Block initialisiert sich über das INIT-Ereignis und konfiguriert 
 - Flexibles Messaging zwischen verschiedenen Steuerungskomponenten
 - Systeme mit variablen Datenstrukturen (durch ANY-Typ Unterstützung)
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren PUBLISH-Blöcken bietet PUBLISH_5 die Möglichkeit, bis zu fünf verschiedene Datenwerte gleichzeitig zu senden. Die Verwendung des ANY-Datentyps ermöglicht größere Flexibilität als typspezifische Publish-Blöcke.
 
 ## Fazit

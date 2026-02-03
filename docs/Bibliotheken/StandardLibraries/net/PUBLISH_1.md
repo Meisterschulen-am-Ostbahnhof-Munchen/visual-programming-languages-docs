@@ -54,7 +54,7 @@ Der PUBLISH_1-Block ermöglicht die Verteilung von Daten an mehrere Empfänger �
 - Verteilen von Konfigurationsdaten an mehrere Steuerungen
 - Multi-Cast-Kommunikation in verteilten Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu bestätigten Kommunikationsblöcken bietet PUBLISH_1 reduzierte Latenz durch unbestätigte Übertragung. Gegenüber Punkt-zu-Punkt-Verbindungen ermöglicht er effiziente 1-zu-n-Kommunikation ohne explizite Verbindungsaufbauten zu jedem Empfänger.
 
 ## Fazit

@@ -45,7 +45,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt bei jed
 - Verarbeitung von DWORD-Daten, die aus Hardware-Registern oder Kommunikationsprotokollen stammen.
 - Aufteilung von 32-Bit Werten für die weitere Verarbeitung in 16-Bit Systemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Bit-Manipulationsblöcken ist `SPLIT_DWORD_INTO_WORDS` spezialisiert auf die Aufteilung von DWORD in WORDS.
 - Ähnliche Blöcke könnten zusätzliche Flexibilität bieten, wie z.B. die Auswahl der zu extrahierenden Bits, sind aber oft komplexer in der Handhabung.
 

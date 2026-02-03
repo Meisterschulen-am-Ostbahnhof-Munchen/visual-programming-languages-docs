@@ -51,7 +51,7 @@ Der Funktionsblock arbeitet nach folgender Logik:
 - Steuerung von Prozessen mit großen Zählbereichen, z.B. in der Produktionsautomatisierung.
 - Überwachung von Zeitintervallen oder Ereigniszählungen in industriellen Steuerungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnlich zu `FB_CTD_INT`, aber mit erweitertem Zahlenbereich (`LINT` statt `INT`).
 - Bietet im Vergleich zu einfacheren Zählern mehr Flexibilität durch den großen Wertebereich und die Ladefunktion.
 

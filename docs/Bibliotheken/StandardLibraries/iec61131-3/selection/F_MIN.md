@@ -51,7 +51,7 @@ Bei Aktivierung des REQ-Ereignisses vergleicht der F_MIN-Block die beiden Eingan
 - Sicherheitsrelevante Begrenzungen
 - Signalverarbeitung mit dynamischen Eingangswerten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu F_MAX (Maximum-Funktion) ermittelt F_MIN den kleineren statt den größeren Wert. Beide Blöcke teilen die gleiche Schnittstellenstruktur und arbeiten mit beliebigen elementaren Datentypen.
 
 ## Fazit

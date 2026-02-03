@@ -76,7 +76,7 @@ Als passiver Datentyp hat `ST32X` keine eigene Zustandsmaschine. Sein "Zustand" 
 *   **Bit-Mapping:** Obwohl die Elemente als `BOOL` definiert sind, könnte diese Struktur in Verbindung mit Konvertierungs-FBs (z.B. zur Umwandlung in einen `DINT`) verwendet werden, um auf die Bits eines 32-Bit-Wortes zuzugreifen oder diese zu manipulieren.
 *   **SPS-ähnliche E/A-Abbildungen:** In Umgebungen, die an SPS-Programmierungen angelehnt sind, kann eine solche Struktur zur Abbildung von digitalen Ein- oder Ausgängen dienen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Standard-Datentypen (z.B. `DINT`):** Ein `DINT` (Double Integer) ist ebenfalls 32 Bit breit, speichert jedoch die Bits als einen einzigen numerischen Wert. `ST32X` hingegen behandelt jedes Bit als eine separate boolesche Variable, was den direkten Zugriff per Namen ermöglicht, ohne Bitmaskierung oder Bit-Operationen.
 *   **Andere strukturierte Datentypen:** Es könnten andere benutzerdefinierte Strukturen existieren, die eine kleinere oder größere Anzahl von BOOLs bündeln oder unterschiedliche Datentypen mischen. `ST32X` ist spezifisch auf 32 BOOLs ausgelegt.
 *   **Array von BOOLs:** Ein `ARRAY[0..31] OF BOOL` würde ebenfalls 32 boolesche Werte speichern. Der Unterschied zu `ST32X` liegt im Zugriff: Bei `ST32X` erfolgt der Zugriff über benannte Elemente (z.B. `myST32X.X_00`), bei einem Array über den Index (z.B. `myArray[0]`). Benannte Elemente sind oft lesbarer und robuster gegenüber Änderungen in der Reihenfolge.

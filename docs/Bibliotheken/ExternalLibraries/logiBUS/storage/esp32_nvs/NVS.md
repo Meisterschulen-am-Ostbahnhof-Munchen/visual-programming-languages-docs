@@ -63,7 +63,7 @@ Die Datentypen der Ein- und Ausgänge `VALUE`, `DEFAULT_VALUE` und `VALUEO` müs
 *   **Kalibrierdaten**: Ablegen von sensor- oder actuatorspezifischen Kalibrierwerten.
 *   **Letzter bekannter Zustand**: Speichern des Systemzustands vor einem unerwarteten Abschalten, um diesen beim nächsten Start wiederherzustellen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **E_R_TRIG / F_TRIG**: Diese sind reine Ereignis-Trigger und bieten keine persistente Datenspeicherung.
 *   **BLINK / DELAY**: Zeitbasierte Blöcke ohne Speicherfunktionalität.
 *   **E_EEPROM**: Ein generischer EEPROM-Baustein. Der NVS-Block ist spezifisch für die ESP32-Plattform und nutzt dessen optimiertes, wear-leveling-fähiges Dateisystem (NVS), während ein generischer E_EEPROM-Block hardwareabhängig und oft auf einfacherem Speicher operieren würde.
@@ -71,7 +71,7 @@ Die Datentypen der Ein- und Ausgänge `VALUE`, `DEFAULT_VALUE` und `VALUEO` müs
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_012](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012.md)
 * [Uebung_012a_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012a_sub.md)

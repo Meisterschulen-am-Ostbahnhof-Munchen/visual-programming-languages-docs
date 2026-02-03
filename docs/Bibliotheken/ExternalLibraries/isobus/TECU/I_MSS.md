@@ -91,7 +91,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 | 3 | GPS | Überwachung |
 | 4-7 | Reserviert | Herstellerspezifisch |
 
-## Vergleich mit ähnlichen Systemen
+## ⚖️ Vergleich mit ähnlichen Systemen
 
 | Feature | I_MSS | Standard | GPS-basiert |
 |---------|-------|----------|-------------|
@@ -103,7 +103,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
 

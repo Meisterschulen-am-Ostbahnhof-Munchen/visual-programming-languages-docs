@@ -73,14 +73,14 @@ Der Baustein besitzt intern implizite Zustände, die durch die Verfügbarkeit ei
 *   **Sensor-Datenübertragung:** Ein Sensor-Modul sendet zyklisch oder ereignisbasiert Messwerte an den CAN-Bus.
 *   **Steuerbefehle:** Senden von Steuerungsnachrichten an Aktoren im Netzwerk (z.B. Ventile oder Motoren) mit definierter Priorität.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **AlPgnTx vs. AlPgnTxNew_TP:** Während ältere oder einfachere Versionen eventuell nur statische PGNs unterstützen, deutet der Zusatz "New_TP" auf eine überarbeitete Version hin, die möglicherweise Transportprotokolle (TP) besser unterstützt oder eine modernere Speicherverwaltung (via `InOut` Variablen) nutzt.
 *   **Standard CAN_WRITE:** Im Vergleich zu einem generischen `CAN_WRITE`-Baustein abstrahiert `AlPgnTxNew_TP` die Komplexität der PGN-Verwaltung (Priorität, Datenlänge, Handle-Management) und ist spezifischer auf das J1939/ISOBUS-Protokoll zugeschnitten.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_128b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128b.md)
 

@@ -43,7 +43,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` aus
 - Typumwandlung in Steuerungsanwendungen, wo `SINT`-Werte in `DWORD`-Werte umgewandelt werden müssen.
 - Integration in größere Steuerungssysteme, die unterschiedliche Datentypen verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_INT_TO_DINT` oder `F_BYTE_TO_WORD` bieten Konvertierungen zwischen anderen Datentypen, jedoch nicht speziell zwischen `SINT` und `DWORD`.
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_SINT_TO_DWORD` spezialisiert und daher effizienter für diesen spezifischen Anwendungsfall.
 

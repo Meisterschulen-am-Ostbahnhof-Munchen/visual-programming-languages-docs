@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Verwendung in Steuerungssystemen, wo Gleitkommazahlen in kompakte Ganzzahlformate umgewandelt werden müssen.
 - Integration in Datenverarbeitungsketten, wo eine Reduktion der Datenbreite erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_REAL_TO_SINT**: Konvertiert `REAL` (32-Bit Gleitkommazahl) in `SINT`. Im Vergleich zu `F_LREAL_TO_SINT` wird hier eine geringere Präzision der Eingangsdaten verarbeitet.
 - **F_LREAL_TO_INT**: Konvertiert `LREAL` in `INT` (16-Bit Ganzzahl). Bietet eine größere Ausgangsbreite im Vergleich zu `F_LREAL_TO_SINT`.
 

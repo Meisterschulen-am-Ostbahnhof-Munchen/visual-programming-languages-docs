@@ -43,7 +43,7 @@ Da der Funktionsblock zustandslos ist, gibt es keine Zustandsübergänge oder in
 - Reduzierung der Speicheranforderungen, wenn 64-Bit Werte nicht benötigt werden.
 - Kompatibilität mit älteren Systemen, die nur 32-Bit Werte unterstützen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_ULINT_TO_INT**: Konvertiert ULINT in INT (signed integer), wobei hier zusätzlich das Vorzeichen beachtet werden muss.
 - **F_ULINT_TO_LINT**: Konvertiert ULINT in LINT (64-Bit signed integer), was keine Datenreduktion bedeutet, aber das Vorzeichen ändert.
 - **F_UDINT_TO_ULINT**: Umgekehrte Konvertierung von UDINT zu ULINT, die keine Datenverluste verursacht.

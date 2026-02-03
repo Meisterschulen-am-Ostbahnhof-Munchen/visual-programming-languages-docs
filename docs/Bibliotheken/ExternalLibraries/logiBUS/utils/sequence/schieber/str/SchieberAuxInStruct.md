@@ -41,7 +41,7 @@ Dieser Datentyp wird typischerweise in SPS-Steuerungen (speicherprogrammierbare 
 *   **Sequenzsteuerungen:** Innerhalb von Ablaufsteuerungen, bei denen sich die Darstellung eines Elements (Farbe, Bild) in Abhängigkeit vom Prozesszustand ändern soll.
 *   **Datenkapselung:** Vereinfachung der Parametrisierung von Funktionsblöcken, die das Aussehen eines "AUX"-Elements steuern, indem alle visuellen Parameter in einer einzigen Variable übergeben werden können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken (FBs) besitzt dieser Baustein keinerlei Algorithmus oder Verhaltenslogik. Er ist mit einem `STRUCT` in der IEC 61131-3 oder einer `class`/`struct` in höheren Programmiersprachen vergleichbar. Andere ähnliche Elemente wären einfache Datentypen (z.B. `ARRAY` von Einzelwerten), die jedoch die semantische Gruppierung und Typsicherheit dieses strukturierten Typs nicht bieten.
 
 ## Fazit

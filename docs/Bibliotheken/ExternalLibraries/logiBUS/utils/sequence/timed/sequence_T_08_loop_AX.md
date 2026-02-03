@@ -40,7 +40,7 @@ Siehe `sequence_T_08_loop`.
 ## Anwendungsszenarien
 Für zeitgesteuerte zyklische 8-stufige Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_T_08_loop**: Standardvariante ohne Adapter.
 
 
@@ -48,7 +48,7 @@ Für zeitgesteuerte zyklische 8-stufige Sequenzen mit Adapteranbindung.
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_038_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_038_AX.md)
 

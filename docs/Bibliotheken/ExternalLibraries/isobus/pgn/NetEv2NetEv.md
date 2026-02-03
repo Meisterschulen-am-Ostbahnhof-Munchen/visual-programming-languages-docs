@@ -49,7 +49,7 @@ Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten
 *   **Event-Proxy/Adapter**: Der Block kann als einfacher Proxy eingesetzt werden, um eingehende Netzwerkereignisse mit einer neuen Quellkennung zu versehen, bevor sie an nachgelagerte Verarbeitungslogik weitergegeben werden.
 *   **Test und Simulation**: Zum Simulieren von Netzwerkereignissen von verschiedenen virtuellen Quellen (CFs) innerhalb eines Test-Setups.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **E_SR (SR-Flip-Flop) oder E_D_FF (D-Flip-Flop)**: Diese Blöcke besitzen einen internen Zustand (Speicher). `NetEv2NetEv` ist zustandslos und manipuliert nur durchlaufende Daten.
 *   **E_SELECT / E_MUX**: Diese Blöchte wählen zwischen verschiedenen Datenquellen aus oder leiten sie durch. `NetEv2NetEv` verändert aktiv einen Teil der durchlaufenden Daten.
 *   **E_R_TRIG / E_F_TRIG**: Diese sind reine Ereignis-Trigger ohne Datenmanipulation. `NetEv2NetEv` ist ein datenverarbeitender Block.
@@ -58,7 +58,7 @@ Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_128](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128.md)
 * [Uebung_128b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128b.md)

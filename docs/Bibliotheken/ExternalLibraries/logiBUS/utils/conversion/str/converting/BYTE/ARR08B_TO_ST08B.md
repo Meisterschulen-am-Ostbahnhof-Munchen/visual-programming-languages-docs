@@ -52,7 +52,7 @@ Dieser Funktionsblock ist nützlich in Szenarien, in denen:
 *   Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Repräsentationen für denselben 8-Byte-Datensatz verwenden (Array vs. Struktur).
 *   Eine klare und explizite Typumwandlung von einer linearen in eine benannte Struktur erforderlich ist, um die Programmlogik zu verbessern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Generische Kopierfunktionen (z.B. `MEMCPY`):** Im Gegensatz zu einer generischen Speicher-Kopierfunktion, die Speicherbereiche byteweise kopiert, bietet `ARR08B_TO_ST08B` eine typensichere und explizite Zuweisung von Array-Elementen zu strukturierten Feldern. Dies kann helfen, Fehler bei der Größen- oder Typanpassung zu vermeiden und die Lesbarkeit des Codes zu verbessern.
 *   **Manuelle Zuweisungen:** Die Funktionalität könnte auch durch acht einzelne Zuweisungszeilen im ST-Code erreicht werden. Dieser Funktionsblock kapselt diese Logik jedoch in einer wiederverwendbaren und leicht integrierbaren Einheit, was die Modularität und Wartbarkeit fördert.
 *   **Type Casting:** Während in einigen Sprachen ein Type Cast eine ähnliche Umwandlung ermöglichen könnte, bietet dieser Funktionsblock eine explizite, ereignisgesteuerte Schnittstelle, die gut in das 4diac-Modell passt und eine klare Triggerung der Konvertierung ermöglicht.

@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Konvertierung von Sensordaten (z.B. Temperaturmessungen) in vorzeichenlose Integerwerte für die weitere Verarbeitung.
 - Vorbereitung von Gleitkommawerten für die Kommunikation mit Systemen, die nur vorzeichenlose Integerwerte unterstützen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_REAL_TO_UINT**: Konvertiert 32-Bit Gleitkommawerte (REAL) in 16-Bit vorzeichenlose Integerwerte (UINT).
 - **F_LREAL_TO_DINT**: Konvertiert 64-Bit Gleitkommawerte (LREAL) in 32-Bit vorzeichenbehaftete Integerwerte (DINT).
 - **F_LREAL_TO_UDINT** ist spezifisch für die Konvertierung zu vorzeichenlosen 32-Bit Integern.
@@ -50,7 +50,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_152](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_152.md)
 * [Uebung_153](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_153.md)

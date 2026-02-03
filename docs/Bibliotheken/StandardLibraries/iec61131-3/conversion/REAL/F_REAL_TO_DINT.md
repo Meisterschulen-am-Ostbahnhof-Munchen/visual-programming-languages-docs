@@ -42,7 +42,7 @@ Keine Zustände vorhanden, da der Block stateless ist.
 - Konvertierung von Sensorwerten (Fließkomma) in ganzzahlige Werte für Steuerungslogik.
 - Datenverarbeitung in Steuerungssystemen, wo ganzzahlige Werte benötigt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke könnten andere Konvertierungsmethoden anbieten, z.B. mit Rundung oder Aufrundung.
 - Im Vergleich zu generischen Konvertierungsblöcken ist dieser spezialisiert auf REAL-zu-DINT Konvertierung.
 

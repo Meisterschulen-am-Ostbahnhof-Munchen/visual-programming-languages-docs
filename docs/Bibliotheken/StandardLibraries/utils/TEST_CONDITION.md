@@ -51,7 +51,7 @@ Der Funktionsblock hat einen einfachen Ablauf:
 - **Fehlererkennung**: Validierung von Systemzuständen oder Eingabedaten.
 - **Prototypische Implementierung**: Schnelle Integration in Testumgebungen zur Validierung von Logiken.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Testbausteinen bietet `TEST_CONDITION` eine minimalistische Schnittstelle und ist auf die Auswertung einer einzelnen Bedingung spezialisiert.
 - Komplexere Testbausteine könnten zusätzliche Funktionen wie Zeitüberwachung oder mehrere Bedingungen unterstützen.
 

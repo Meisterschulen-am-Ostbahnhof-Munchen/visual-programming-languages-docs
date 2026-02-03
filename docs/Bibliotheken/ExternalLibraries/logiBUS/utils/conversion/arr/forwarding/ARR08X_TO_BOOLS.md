@@ -62,7 +62,7 @@ Der Funktionsblock besitzt keinen internen Zustand (zustandslos). Sein Verhalten
 *   **Vereinfachung der Visualisierung:** Bereitstellung von einzeln adressierbaren Signalen für HMIs oder Alarmierungsysteme, anstatt mit Array-Indizes arbeiten zu müssen.
 *   **Dekodierung:** Umsetzung einer einfachen 8-Bit-Binärzahl in ihre logischen Einzelwerte.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`SEL` / `MUX` Bausteine:** Diese wählen ein einzelnes Element aus einem Array basierend auf einem Index aus. `ARR08X_TO_BOOLS` hingegen extrahiert **alle** Elemente gleichzeitig und parallel.
 *   **`BYTE_TO_BOOLS` / `WORD_TO_BOOLS`:** Diese Bausteine zerlegen ein Byte- oder Wort-Datenelement in seine einzelnen Bits. `ARR08X_TO_BOOLS` arbeitet direkt auf einem Array von BOOLs, was semantisch klarer ist, wenn die Quelle bereits ein BOOL-Array ist. Die funktionale Wirkung auf die Bits ist jedoch äquivalent.
 *   **Manuelle Indexierung:** Statt dieses Bausteins zu verwenden, könnte man im umgebenden Algorithmus direkt auf `IN[0]`, `IN[1]` usw. zugreifen. Der Funktionsblock bietet jedoch eine klarere Schnittstellenbeschreibung, verbessert die Lesbarkeit des FBD-Netzwerks und kapselt die Funktionalität.
@@ -70,7 +70,7 @@ Der Funktionsblock besitzt keinen internen Zustand (zustandslos). Sein Verhalten
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_054](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_054.md)
 

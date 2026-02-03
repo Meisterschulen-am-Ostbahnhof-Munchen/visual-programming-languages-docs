@@ -44,7 +44,7 @@ Der Funktionsblock führt eine direkte Konvertierung des REAL-Wertes am Eingang 
 - Konvertierung von Sensorwerten (z.B. Temperatur, Druck) in ganzzahlige Werte für die weitere Verarbeitung.
 - Vorverarbeitung von Daten für Systeme, die nur Ganzzahlen verarbeiten können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_REAL_TO_INT**: Konvertiert REAL in INT (vorzeichenbehaftete 16-Bit Ganzahl).
 - **F_REAL_TO_UINT**: Konvertiert REAL in UINT (vorzeichenlose 16-Bit Ganzahl).
 - **F_REAL_TO_ULINT**: Konvertiert REAL in ULINT (vorzeichenlose 64-Bit Ganzahl).

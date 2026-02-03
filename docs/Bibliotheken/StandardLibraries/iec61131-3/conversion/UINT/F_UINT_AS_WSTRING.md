@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Verarbeitung erfolgt unmitt
 - Protokollierung und Debugging, wo numerische Werte als Text ausgegeben werden müssen.
 - Kommunikation mit Systemen, die String-Daten erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_UINT_AS_WSTRING` spezialisiert auf die Umwandlung von `UINT` zu `WSTRING` und daher effizienter für diesen spezifischen Anwendungsfall.
 - Andere Bausteine könnten zusätzliche Funktionen wie Formatierung oder Locale-Anpassung bieten, was hier nicht der Fall ist.
 

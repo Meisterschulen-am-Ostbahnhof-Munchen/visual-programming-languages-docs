@@ -47,14 +47,14 @@ Der Block kehrt danach direkt wieder in den Wartezustand (1) zurück.
 *   **Dynamische Gerätekonfiguration:** In Systemen, wo sich die Geräteeigenschaften (z.B. Funktionsinstanz) zur Laufzeit ändern können, wird dieser Block verwendet, um den neuen, gültigen NAME zu generieren.
 *   **Test- und Simulationstools:** Zum Erzeugen von korrekten ISO-NAMEs für die Simulation verschiedener virtueller Geräte in einem ISOBUS-Netzwerk.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenstück `NmGetName`:** Während `NmSetName` eine strukturierte Beschreibung in ein Byte-Array packt, würde ein hypothetischer `NmGetName`-Block die umgekehrte Operation durchführen: Er extrahiert aus einem gegebenen ISO-NAME-Byte-Array die einzelnen Felder und stellt sie in einer `NAMEFIELD_T`-Struktur bereit. `NmSetName` ist somit der "Encoder", sein Pendant wäre der "Decoder".
 *   **Generische Byte-Packer:** Im Gegensatz zu generischen Bausteinen, die beliebige Datenstrukturen serialisieren, ist `NmSetName` spezifisch auf die ISO 11783-NAME-Struktur optimiert und garantiert so Normkonformität ohne zusätzliche Konfiguration.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_121](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_121.md)
 

@@ -65,7 +65,7 @@ Nicht zutreffend, da `ST16B` ein Datentyp ist und keine internen Zustände im Si
 *   **Puffer für binäre Daten:** Verwendung als Puffer für binäre Daten, die von externen Quellen gelesen oder an diese gesendet werden.
 *   **Zwischenspeicherung von Hashes oder IDs:** Für Anwendungen, die 128-Bit-Hashes (z.B. MD5) oder lange IDs speichern müssen, die genau 16 Bytes umfassen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`ARRAY[0..15] OF BYTE`:** `ST16B` ähnelt einem Array von 16 Bytes. Der Hauptunterschied liegt im Zugriff: Bei `ST16B` erfolgt der Zugriff über benannte Komponenten (`B_00`, `B_01`, etc.), während ein Array den Zugriff über Indizes (`MyArray[0]`, `MyArray[1]`) ermöglicht. Die benannten Komponenten können die Lesbarkeit verbessern, wenn jedes Byte eine spezifische semantische Bedeutung innerhalb der 16 Bytes hat.
 *   **Andere strukturierte Datentypen:** Im Vergleich zu benutzerdefinierten Strukturen, die verschiedene Datentypen (INT, REAL, BOOL) mischen, ist `ST16B` auf reine Byte-Sammlungen spezialisiert. Es bietet eine flache, gleichartige Struktur.
 

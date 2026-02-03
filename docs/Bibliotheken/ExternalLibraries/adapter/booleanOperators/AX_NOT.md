@@ -48,7 +48,7 @@ Der Funktionsblock arbeitet zustandslos und führt die NOT-Operation direkt auf 
 - Verwendung in kombinatorischen Schaltungen
 - Integration in größere Steuerungslogiken zur Signalverarbeitung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen booleschen Operatoren wie AND oder OR führt AX_NOT ausschließlich die Negationsoperation durch. Die Verwendung von Adaptern anstelle direkter Ein-/Ausgänge ermöglicht eine flexiblere Integration in komplexere Systemarchitekturen.
 
 Vergleich mit [F_NOT](../../../StandardLibraries/iec61131-3/bitwiseOperators/F_NOT.md)
@@ -58,7 +58,7 @@ Vergleich mit [F_NOT](../../../StandardLibraries/iec61131-3/bitwiseOperators/F_N
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_006a3_sub_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)
 

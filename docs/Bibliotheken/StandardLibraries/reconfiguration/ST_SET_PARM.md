@@ -54,7 +54,7 @@ Beim Eintreffen des REQ-Ereignisses versucht der ST_SET_PARM Funktionsblock, den
 - Automatisierte Parametrierung in Produktionsanlagen
 - Wartung und Optimierung von Steuerungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu statischen Parametrierungsmethoden bietet ST_SET_PARM die Möglichkeit, Parameter zur Laufzeit zu ändern, was eine höhere Flexibilität in adaptiven Steuerungssystemen ermöglicht. Andere Konfigurationsbausteine arbeiten typischerweise nur während der Initialisierungsphase.
 
 ## Fazit

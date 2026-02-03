@@ -50,7 +50,7 @@ Der Funktionsblock nutzt Bitoperationen (AND und Rechts-Shift) in Kombination mi
 - Extraktion einzelner Parameter aus gepackten Datenstrukturen
 - Bitweise Analyse von Sensor- oder Steuerdaten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu einfachen BYTE-Extraktionsblöcken kann dieser FB alle 32 Segmente gleichzeitig verarbeiten
 - Effizienter als mehrere hintereinandergeschaltete Extraktionsblöcke
 - Spezialisiert auf die Verarbeitung von LWORD-Datentypen

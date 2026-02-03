@@ -41,7 +41,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung ist rein er
 - Typkonvertierung in Steuerungsanwendungen, wo `BYTE`-Daten in `SINT` umgewandelt werden müssen.
 - Integration in größere Funktionsblocknetzwerke, wo unterschiedliche Datentypen verarbeitet werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_BYTE_TO_SINT` spezialisiert und bietet daher eine höhere Effizienz für diese spezifische Konvertierung.
 - Andere Blöcke könnten zusätzliche Funktionen wie Bereichsprüfungen oder Skalierungen bieten, was hier nicht der Fall ist.
 

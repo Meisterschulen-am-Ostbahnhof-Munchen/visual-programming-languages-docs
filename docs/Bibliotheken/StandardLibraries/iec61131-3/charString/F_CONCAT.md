@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem `R
 - Kombination von Textteilen in automatisierten Nachrichtensystemen.
 - Erstellung dynamischer Strings in Steuerungslogiken, z.B. für Protokollierung oder Benachrichtigungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_STRING_TO_*`-Blöcken, die Strings konvertieren, führt `F_CONCAT` keine Typumwandlung durch.
 - Einfacher als Blöcke mit zusätzlichen Formatierungsoptionen wie `F_STRING_FORMAT`.
 

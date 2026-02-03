@@ -86,7 +86,7 @@ Die ECC (Execution Control Chart) definiert folgende Zustände:
 *   **Beregnungsanlagen:** Sequentielle Ansteuerung von zwei Sektoren (Sektor Rechts -> Pause -> Sektor Links -> Pause), wobei bei Bedarf ein Sektor mehrfach hintereinander aktiviert werden kann (mittels `DI_Rechts`/`DI_Links`).
 *   **Reversiermotor:** Steuerung eines Motors, der bei jedem Neustart die Drehrichtung ändern soll, sofern nicht anders vorgegeben.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 *   **Einfaches Toggle (FlipFlop):** Ein Standard-Toggle schaltet nur einen Ausgang Ein/Aus. `LinksRechts_AX` schaltet zwischen *zwei* Ausgängen um.
 *   **RS-Glied:** Ein RS-Glied speichert nur einen Zustand basierend auf Set/Reset. Dieser Baustein beinhaltet eine Sequenzlogik (History-Memory), da er weiß, welcher Zustand *vor* der Pause aktiv war.

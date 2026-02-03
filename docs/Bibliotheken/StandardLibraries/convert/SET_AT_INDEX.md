@@ -48,7 +48,7 @@ Der `SET_AT_INDEX` Baustein ist im Wesentlichen ein ereignisgesteuerter Baustein
 *   **Algorithmische Anpassung:** Modifizieren von Look-Up-Tabellen oder Reglerparametern in Echtzeit.
 *   **Benutzerinteraktion:** Setzen von Array-Werten basierend auf Benutzereingaben.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Dieser Baustein ist komplementär zum `GET_AT_INDEX`-Baustein, der Werte aus einem Array an einem bestimmten Index auslesen würde. Er ist eine grundlegende Operation für die Array-Manipulation und bildet die Basis für komplexere Datenstruktur-Algorithmen. Im Gegensatz zu Bausteinen, die ganze Arrays kopieren oder verschieben, konzentriert sich `SET_AT_INDEX` auf die präzise Manipulation eines einzelnen Elements.
 
 ## Metadaten

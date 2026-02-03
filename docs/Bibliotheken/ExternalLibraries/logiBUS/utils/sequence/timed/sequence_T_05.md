@@ -64,7 +64,7 @@ Der Block arbeitet als Basic-FB mit einem definierten ECC (Execution Control Cha
 *   **Testsequenzen**: Automatisierte Prüfabläufe, bei denen verschiedene Signale nacheinander für eine bestimmte Zeit angelegt und das Ergebnis ausgewertet werden muss.
 *   **Beleuchtungssteuerung**: Zeitgesteuerte Choreografien für Werbe- oder Dekorationsbeleuchtung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einem einfachen `E_DELAY`- oder `E_SR`-Baustein bietet `sequence_T_05` eine vordefinierte, mehrstufige Sequenzlogik in einem einzigen, konfigurierbaren Block. Gegenüber einer selbst programmierten Sequenz mit mehreren verbundenen Bausteinen vereinfacht er die Applikation erheblich und reduziert die Fehleranfälligkeit. Andere Sequenzer-Bausteine könnten eventuell auf Ereignisse (anstelle von Zeit) für den Übergang reagieren oder eine variable Anzahl von Schritten erlauben.
 
 ## Fazit

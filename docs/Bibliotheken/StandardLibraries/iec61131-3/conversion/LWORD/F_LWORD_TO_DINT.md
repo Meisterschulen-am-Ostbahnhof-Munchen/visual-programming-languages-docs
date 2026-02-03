@@ -41,7 +41,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - **Datenkonvertierung**: In Systemen, wo `LWORD`-Daten in `DINT` umgewandelt werden müssen, z.B. bei der Kommunikation zwischen unterschiedlichen Hardwarekomponenten.
 - **Datenverarbeitung**: Bei der Verarbeitung von großen binären Daten, die in einem kleineren Format weiterverarbeitet werden sollen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_LWORD_TO_INT**: Ähnlicher Funktionsblock, aber konvertiert in den kleineren `INT`-Datentyp.
 - **F_LWORD_TO_UDINT**: Konvertiert in einen vorzeichenlosen `DINT`-Datentyp (`UDINT`).
 

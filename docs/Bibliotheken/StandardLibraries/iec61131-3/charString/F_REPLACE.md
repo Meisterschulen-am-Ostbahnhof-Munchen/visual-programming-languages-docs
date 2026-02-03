@@ -49,7 +49,7 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem RE
 - Manipulation von Zeichenketten in Protokollnachrichten.
 - Dynamische Anpassung von Konfigurationsstrings.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnlich zu F_INSERT, jedoch ersetzt F_REPLACE bestehende Zeichen statt neue einzufügen.
 - Im Vergleich zu F_DELETE wird hier nicht nur gelöscht, sondern durch andere Zeichen ersetzt.
 

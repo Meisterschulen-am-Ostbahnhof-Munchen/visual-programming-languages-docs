@@ -51,7 +51,7 @@ Keine Adapter vorhanden.
 - Speicherung von Prozessdaten für spätere Analysen.
 - Datenerfassung in Test- und Validierungsumgebungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfacheren CSV-Writer-Blöcken bietet `CSV_WRITER_6` die Möglichkeit, bis zu sechs verschiedene Datenwerte gleichzeitig zu speichern.
 - Andere Blöcke könnten auf bestimmte Datentypen beschränkt sein, während dieser Block `ANY`-Typen unterstützt.
 

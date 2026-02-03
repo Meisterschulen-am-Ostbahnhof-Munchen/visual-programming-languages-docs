@@ -66,7 +66,7 @@ Der **F_MOVE** ist ein universeller Funktionsbaustein zur typsicheren Datenüber
   - Konstant schnelle Ausführung
   - Unabhängig vom Datentyp
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal        | F_MOVE  | F_BLOCK_MOVE | F_CAST |
 |----------------|---------|--------------|--------|
@@ -79,7 +79,7 @@ Der **F_MOVE** ist ein universeller Funktionsbaustein zur typsicheren Datenüber
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002b2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b2.md)
 * [Uebung_103c](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c.md)

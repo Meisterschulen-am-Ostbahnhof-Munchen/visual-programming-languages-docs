@@ -53,7 +53,7 @@ Siehe `sequence_ET_05_loop`.
 ## Anwendungsszenarien
 Für zyklische 5-stufige Prozesse, die über Adapter gesteuert werden sollen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_ET_05_loop**: Standardvariante ohne Adapter.
 
 ## Fazit

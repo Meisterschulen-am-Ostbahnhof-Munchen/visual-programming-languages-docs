@@ -45,7 +45,7 @@ Bei Auslösung des Ereignisses `REQ` wird der Algorithmus ausgeführt, der den W
 - Protokollierung von Messwerten in Textdateien oder Datenbanken.
 - Vorbereitung von Daten für die Kommunikation über Textprotokolle (z.B. HTTP, MQTT).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen bietet `F_UDINT_AS_STRING` eine spezialisierte Lösung für die Umwandlung von UDINT zu STRING.
 - Andere Bausteine könnten zusätzliche Parameter wie Formatierung oder Längenbegrenzung unterstützen, was hier nicht der Fall ist.
 

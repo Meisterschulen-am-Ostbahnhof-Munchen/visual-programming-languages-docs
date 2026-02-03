@@ -79,7 +79,7 @@ Der **Q_ChangePolygonScale** ist ein standardkonformer Funktionsbaustein zur Ska
 - **Responsive Designs**: Anpassung an Displaygrößen
 - **Animierte Übergänge**: Fließende Größenänderungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ChangePolygonScale | VtGeometryScaler | VtDynamicResize |
 |---------------|----------------------|------------------|-----------------|

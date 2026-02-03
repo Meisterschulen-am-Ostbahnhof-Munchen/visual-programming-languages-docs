@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Umwandlung von Sensorwerten (z.B. als `INT` erfasst) in Fließkommazahlen für weitere Berechnungen.
 - Integration in Steuerungslogiken, die gemischte Datentypen verarbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_INT_TO_REAL` spezialisiert und daher effizienter für diesen spezifischen Anwendungsfall.
 - Andere Bausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Skalierungen bieten, was hier nicht erforderlich ist.
 

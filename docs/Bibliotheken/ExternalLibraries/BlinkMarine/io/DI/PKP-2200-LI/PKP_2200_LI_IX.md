@@ -58,7 +58,7 @@ Der Baustein durchläuft folgende Zustände:
 - Kommunikation mit PKP_2200-kompatibler Hardware
 - Überwachung von Schaltzuständen und Signalpegeln
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet PKP_2200_LI_IX erweiterte Service-Funktionalitäten mit Statusrückmeldungen und Parametrisierungsmöglichkeiten. Die spezifische PKP_2200-Integration unterscheidet ihn von generischen IO-Bausteinen.
 
 ## Fazit

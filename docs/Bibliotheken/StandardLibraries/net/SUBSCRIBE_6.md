@@ -53,7 +53,7 @@ Der Block durchläuft folgende Hauptzustände:
 - Industrie 4.0 Anwendungen mit Maschinendaten
 - SCADA-Systeme mit dezentralen Datenquellen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Subscribe-Blocks bietet SUBSCRIBE_6 die Möglichkeit, bis zu sechs verschiedene Datenwerte parallel zu empfangen, was eine höhere Datendurchsatzkapazität ermöglicht. Die Verwendung von WSTRING für Statusmeldungen ermöglicht detailliertere Fehlerinformationen.
 
 ## Fazit

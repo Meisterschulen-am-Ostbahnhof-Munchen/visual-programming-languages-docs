@@ -36,14 +36,14 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DI_S` keinen Zus
 *   **Parametrisierung über Netzwerke:** Die Struktur kann leicht in übergeordneten Steuerungen (z.B. einer SPS) instanziiert, konfiguriert (`Pin`-Nummer gesetzt) und an untergeordnete I/O-Knoten oder Treiberbausteine weitergegeben werden.
 *   **Strukturierte Programmierung:** Ermöglicht eine saubere Kapselung der Konfigurationsdaten für digitale Eingänge, was die Wiederverwendbarkeit und Lesbarkeit des Codes erhöht.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Einfache `USINT` Variable:** Anstelle eines Structs könnte direkt eine `USINT`-Variable verwendet werden. Der Struct bietet jedoch semantische Klarheit (der Name `logiBUS_DI_S` beschreibt den Zweck) und ist leichter erweiterbar, falls zukünftig weitere Konfigurationsparameter (wie Filterzeit, Invertierung) hinzugefügt werden müssen.
 *   **Gerätespezifische Structs:** Innerhalb des logiBUS-Ökosystems könnte es ähnliche Structs für andere Funktionen geben (z.B. `logiBUS_DO_S` für digitale Ausgänge, `logiBUS_AI_S` für analoge Eingänge). Diese würden eine einheitliche Konfigurationsphilosophie über verschiedene I/O-Typen hinweg ermöglichen.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_003a_AX_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
 * [Uebung_003a_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003a_sub.md)

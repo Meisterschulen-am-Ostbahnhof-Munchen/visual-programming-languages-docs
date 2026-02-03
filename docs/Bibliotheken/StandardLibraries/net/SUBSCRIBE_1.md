@@ -54,7 +54,7 @@ Der SUBSCRIBE_1 Block initialisiert sich über das INIT-Ereignis und abonniert d
 - Industrie 4.0 Kommunikationsstrukturen
 - Echtzeit-Datenaustausch zwischen verschiedenen Steuerungskomponenten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Kommunikationsblöcken bietet SUBSCRIBE_1 eine spezialisierte Lösung für das Publisher-Subscriber-Muster mit Fokus auf Flexibilität durch den ANY-Datentyp und Unicode-Unterstützung.
 
 ## Fazit

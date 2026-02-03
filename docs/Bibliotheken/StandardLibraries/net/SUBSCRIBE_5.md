@@ -56,7 +56,7 @@ Der SUBSCRIBE_5 Block initialisiert sich über das INIT-Ereignis und stellt ansc
 - Überwachungssysteme mit mehreren Sensordaten
 - SCADA-Systeme mit dezentralen Datenquellen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren SUBSCRIBE-Blöcken bietet SUBSCRIBE_5 die Möglichkeit, bis zu fünf verschiedene Datenpunkte parallel zu empfangen. Die Verwendung von ANY-Typen macht ihn flexibler als typspezifische Subscribe-Blöcke, erfordert jedoch eine korrekte Typzuordnung zum entsprechenden Publisher.
 
 ## Fazit

@@ -52,7 +52,7 @@ Der Funktionsblock verfügt über folgende Betriebszustände:
 - Verzögerungsschaltungen
 - Prozesssteuerung mit definierten Zeitintervallen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Timer-Bausteinen bietet AX_TP:
 - Adapter-basierte Schnittstelle für bessere Modularität
 - Explizite Reset-Funktionalität
@@ -65,7 +65,7 @@ Vergleich mit [E_TP](../../../../../StandardLibraries/events/timer/E_TP.md)
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_020f_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f_AX.md)
 * [Uebung_020j2_AX_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020j2_AX_sub.md)

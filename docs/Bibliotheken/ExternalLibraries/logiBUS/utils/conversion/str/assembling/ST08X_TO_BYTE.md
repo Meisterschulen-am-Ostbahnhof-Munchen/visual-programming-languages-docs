@@ -52,7 +52,7 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Zustandsautoma
 *   **Kompakte Speicherung**: Bündeln mehrerer digitaler Schaltzustände (z.B. von Grenzwertmeldern, Maschinenzuständen) in einem einzelnen Byte, um Speicherplatz zu optimieren.
 *   **Datenaufbereitung für Visualisierung oder Logging**: Umwandlung von strukturierten BOOL-Signalen in ein für Anzeigesysteme oder Datenspeicher einfacher zu handhabendes Byte-Format.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`BOOL_TO_BYTE` (oder ähnliche Blöcke aus Standardbibliotheken)**: Viele IEC 61499- oder IEC 61131-3-Bibliotheken bieten Blöcke an, die acht separate `BOOL`-Eingänge direkt in ein `BYTE` umwandeln. `ST08X_TO_BYTE` unterscheidet sich dadurch, dass die Eingangswerte bereits in einer strukturierten Variable (`ST08X`) gebündelt vorliegen, was die Verdrahtung im Anwendungsdiagramm vereinfachen kann.
 *   **`PACK` / `UNPACK`-Blöcke**: Allgemeinere Blöcke zum Packen und Entpacken von Daten. `ST08X_TO_BYTE` ist eine spezialisierte und typsichere Implementierung für genau diesen einen Anwendungsfall.
 *   **Manuelle Bit-Operationen**: Die Funktion könnte auch durch direkte Zuweisungen in Structured Text (ST) realisiert werden. Der Funktionsblock kapselt diese Logik und bietet eine standardisierte, wieder verwendbare Schnittstelle mit klarer Ereignissteuerung.

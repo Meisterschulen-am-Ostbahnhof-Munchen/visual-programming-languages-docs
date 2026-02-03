@@ -45,7 +45,7 @@ Keine Adapter vorhanden.
 - Diagnose und Logging: Identifikation der genauen Position einer FB-Instanz in einer komplexen Anwendung.
 - Dynamische Konfiguration: Verwendung des Pfads zur dynamischen Anpassung von Parametern oder Verhaltensweisen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu statischen Pfadangaben ermöglicht `GetInstancePath` eine dynamische Ermittlung des Pfads, was besonders in wiederverwendbaren oder verschachtelten Komponenten vorteilhaft ist.
 
 ## Fazit

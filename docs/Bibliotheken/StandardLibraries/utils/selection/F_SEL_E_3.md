@@ -51,7 +51,7 @@ Der Funktionsblock wartet auf ein eingehendes Ereignis (`REQ0`, `REQ1` oder `REQ
 - Multiplexing von Datenquellen in Steuerungssystemen
 - Implementierung von Prioritätslogik
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu `F_SEL_E_2` bietet dieser Baustein drei statt zwei Eingänge
 - Ähnlich zu `F_MUX`, aber mit ereignisbasierter statt datengesteuerter Auswahl
 - Komplexer als einfache Gatter, aber spezialisierter für Selektionsaufgaben
@@ -59,7 +59,7 @@ Der Funktionsblock wartet auf ein eingehendes Ereignis (`REQ0`, `REQ1` oder `REQ
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_015a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_015a.md)
 * [Uebung_016a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016a.md)

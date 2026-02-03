@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` aus
 - Protokollierung von numerischen Daten in Textdateien.
 - Vorbereitung von Daten für die Kommunikation über Text-basierte Protokolle.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_DINT_AS_WSTRING` verarbeitet dieser Baustein vorzeichenlose Werte.
 - Ähnlich wie `F_UDINT_AS_STRING`, aber mit Unicode-Unterstützung.
 

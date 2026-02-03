@@ -48,7 +48,7 @@ Nicht zutreffend für einen Datentyp. Ein Datentyp repräsentiert eine Datenstru
 *   **Binäreingänge/-ausgänge**: Gruppierung von vier digitalen Ein- oder Ausgängen einer Hardware-Schnittstelle.
 *   **Bitfelder**: Wenn eine kompakte Darstellung von vier unabhängigen binären Informationen erforderlich ist, z.B. bei der Verarbeitung von seriellen Datenprotokollen oder Gerätekonfigurationen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 ST04X ist ein Datentyp und kann daher nicht direkt mit Funktionsblöcken (Bausteinen) verglichen werden.
 Ein Vergleich wäre eher mit anderen Datentypen möglich, z.B.:
 *   **BOOL**: Ein einzelner Boolescher Wert. ST04X bündelt vier davon.

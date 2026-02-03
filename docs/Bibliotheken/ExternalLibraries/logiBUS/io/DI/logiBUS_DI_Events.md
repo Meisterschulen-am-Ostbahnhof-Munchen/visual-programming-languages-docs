@@ -51,7 +51,7 @@ Die Ereigniskonstanten decken folgende Zustände ab:
 - **Menünavigation**: Steuerung von Display-Menüs durch Tastereingaben
 - **Zustandsüberwachung**: Erkennung verschiedener Tasterbetätigungsmuster
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Gegensatz zu einfachen digitalen Eingangsbausteinen, die nur binäre Zustände (EIN/AUS) erfassen, bietet `logiBUS_DI_Events` eine erweiterte Ereigniserkennung mit:
 - Zeitlich aufgelösten Ereignissen (Press/Release)

@@ -49,7 +49,7 @@ Keine Adapter vorhanden.
 - Datenkompression oder -extraktion.
 - Schnelle Division durch Zweierpotenzen (bei vorzeichenlosen Zahlen).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - `F_SHL`: Führt eine Linksverschiebung durch.
 - `F_ROR`/`F_ROL`: Rotationsoperationen statt Verschiebungen.
 - `F_SHR` ist spezifisch für logische Rechtsverschiebungen (Null-Auffüllung).

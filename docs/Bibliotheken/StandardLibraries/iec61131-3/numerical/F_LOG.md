@@ -46,7 +46,7 @@ Der Funktionsblock besitzt keine komplexen internen Zustände. Er verhält sich 
 - Skalierung von Messwerten in logarithmischen Darstellungen
 - Audio- und Akustik-Anwendungen (z.B. dB-Berechnungen)
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen logarithmischen Funktionen:
 - F_LN: Berechnet den natürlichen Logarithmus (Basis e)
 - F_LOG: Berechnet spezifisch den dekadischen Logarithmus (Basis 10)

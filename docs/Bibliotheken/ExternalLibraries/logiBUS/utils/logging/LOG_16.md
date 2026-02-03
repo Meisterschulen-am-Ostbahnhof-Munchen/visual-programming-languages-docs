@@ -50,7 +50,7 @@ Der Baustein besitzt keinen persistenten internen Zustand im Sinne einer Zustand
 *   **Datenvorverarbeitung**: Bereitstellung eines gleitenden Fensters über die letzten 16 Werte für nachfolgende Berechnungen (z.B. in einem weiteren FB).
 *   **Debugging**: Einfache Überwachung von Variablenverläufen während der Entwicklung und Inbetriebnahme.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`E_DELAY` / Verzögerungsbausteine**: Diese Bausteine geben einen Eingangswert erst nach einer definierten Zeit verzögert wieder aus. Der `LOG_16` hingegen speichert eine Historie mehrerer Werte und gibt sie sofort, aber geordnet nach Aktualität, aus.
 *   **`FIFO`-Bausteine**: Klassische FIFO-Speicher (First-In-First-Out) haben oft variable Längen und ein separates Lese-/Schreib-Interface. Der `LOG_16` ist ein spezieller FIFO mit fester Länge (16), der bei jedem Schreibvorgang automatisch den gesamten Inhalt ausgibt und überschreibt.
 *   **Einfache `LOG`-Bausteine**: Einfache Logger ohne Puffer schreiben typischerweise nur einen einzelnen Wert. Die Stärke des `LOG_16` liegt in der ringförmigen Historie.
@@ -58,7 +58,7 @@ Der Baustein besitzt keinen persistenten internen Zustand im Sinne einer Zustand
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_122](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122.md)
 * [Uebung_122b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122b.md)

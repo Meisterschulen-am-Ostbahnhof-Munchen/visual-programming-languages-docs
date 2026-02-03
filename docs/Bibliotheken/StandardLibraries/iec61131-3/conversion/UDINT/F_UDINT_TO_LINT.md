@@ -43,14 +43,14 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - **Typumwandlung**: In Szenarien, wo ein vorzeichenloser 32-Bit-Wert in einen vorzeichenbehafteten 64-Bit-Wert umgewandelt werden muss, z.B. bei der Verarbeitung von Sensordaten oder in mathematischen Berechnungen.
 - **Datenkompatibilität**: Bei der Integration von Systemen, die unterschiedliche Integer-Typen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_UDINT_TO_DINT**: Konvertiert UDINT zu DINT (32-Bit vorzeichenbehaftet), kann jedoch zu Überlauf führen, da DINT einen kleineren Wertebereich hat.
 - **F_UDINT_TO_ULINT**: Konvertiert UDINT zu ULINT (64-Bit vorzeichenlos), behält jedoch den vorzeichenlosen Charakter bei.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
 

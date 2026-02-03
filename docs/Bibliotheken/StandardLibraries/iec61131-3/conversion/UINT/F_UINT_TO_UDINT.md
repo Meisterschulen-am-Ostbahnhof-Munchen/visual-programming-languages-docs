@@ -43,14 +43,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Operation wird bei jede
 - Kompatibilitätssicherung zwischen Systemen, die unterschiedliche Integer-Formate verwenden.
 - Vorverarbeitung von Daten für Algorithmen, die `UDINT` erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_UINT_TO_UDINT` spezialisiert und optimiert für die spezifische Konvertierung von `UINT` zu `UDINT`.
 - Andere Blöcke wie `F_INT_TO_DINT` behandeln vorzeichenbehaftete Integer, während dieser Block vorzeichenlose Werte verarbeitet.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_015](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_015.md)
 * [Uebung_015a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_015a.md)

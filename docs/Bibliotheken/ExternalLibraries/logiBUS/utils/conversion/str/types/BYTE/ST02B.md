@@ -27,7 +27,7 @@ Als passiver Datentyp hat `ST02B` keine eigene "Funktionsweise". Seine Funktion 
 *   **Registerabbildung**: Repräsentation eines 2-Byte-Registers (ähnlich einem WORD, aber mit explizitem Byte-Zugriff).
 *   **Kleine Datenpakete**: Vereinfachte Handhabung von kleinen, fest definierten Datenpaketen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Array von Bytes (ARRAY OF BYTE [2])**: Ein Array von 2 Bytes erfüllt den gleichen Zweck. `ST02B` bietet jedoch den Vorteil benannter Felder (B_00, B_01).
 *   **`WORD`**: Repräsentiert ebenfalls 2 Bytes. `ST02B` ist flexibler, wenn die einzelnen Bytes unabhängig voneinander manipuliert werden müssen.
 

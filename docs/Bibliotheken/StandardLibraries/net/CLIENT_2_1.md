@@ -58,7 +58,7 @@ Der Block kann folgende Zustände annehmen:
 - Datenaustausch zwischen verschiedenen Steuerungsebenen
 - Remote-Überwachung und -Steuerung von Geräten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Client-Blöcken bietet CLIENT_2_1 die Möglichkeit, zwei verschiedene Datenblöcke gleichzeitig zu senden und einen Datenblock zu empfangen. Die Integration von Verbindungsmanagement und Datenaustausch in einem Block vereinfacht die Anwendungslogik.
 
 ## Fazit

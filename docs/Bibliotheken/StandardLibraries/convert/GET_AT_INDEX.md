@@ -60,7 +60,7 @@ Der `GET_AT_INDEX`-Funktionsblock ist im Wesentlichen zustandslos in Bezug auf d
 *   **Robotersteuerung**: Zugriff auf Positionen oder Bewegungsparameter, die in Arrays gespeichert sind.
 *   **Visualisierung**: Abrufen von Datenpunkten für die Darstellung auf einer Benutzeroberfläche.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Der `GET_AT_INDEX`-Baustein ist ein spezialisierter Baustein für den Array-Zugriff. Er unterscheidet sich von:
 *   **`SET_AT_INDEX`**: Einem komplementären Baustein, der Werte an einer bestimmten Array-Position setzt, anstatt sie abzurufen.
 *   **Array-Iteratoren**: Bausteinen, die typischerweise das gesamte Array durchlaufen, anstatt nur ein einzelnes Element über einen direkten Index abzurufen.

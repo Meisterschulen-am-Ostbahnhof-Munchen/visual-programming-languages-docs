@@ -43,7 +43,7 @@ Der Funktionsblock zerlegt das Eingangswort `IN` in seine 16 einzelnen Bits und 
 - Dekodierung von Status- oder Steuerworten in Steuerungssystemen.
 - Schnittstelle zwischen Wort-basierten und Bit-basierten Systemkomponenten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Bit-Manipulationsfunktionen bietet dieser Baustein eine spezialisierte und einfache Schnittstelle für die Zerlegung von Wörtern.
 - Ähnliche Bausteine könnten eine flexible Anzahl von Bits unterstützen, was hier nicht der Fall ist.
 

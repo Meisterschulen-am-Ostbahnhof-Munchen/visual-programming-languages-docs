@@ -44,7 +44,7 @@ Dieser Funktionsblock ist zustandslos. Jede Auslösung des `REQ`-Ereignisses fü
 *   **Schnittstellenanpassung**: Anpassen von Schnittstellen, bei denen ein Quellbaustein Array-Daten sendet, der Zielbaustein jedoch diskrete Eingangsvariablen erwartet.
 *   **Vereinfachung von Logik**: Erhöhung der Lesbarkeit und Vereinfachung der Logik, indem Array-Zugriffe in einzelne Variablen umgewandelt werden, die in weiteren Schritten leichter verarbeitet werden können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Ähnliche Bausteine könnten generische Array-Splitter sein, die eine variable Anzahl von Array-Elementen in eine entsprechende Anzahl von Ausgängen aufteilen können. `ARRAY2VALUES_2_LREAL` ist jedoch für den spezifischen Fall eines `LREAL`-Arrays der Größe 2 optimiert, was ihn einfacher in der Konfiguration und möglicherweise effizienter für diesen konkreten Anwendungsfall macht als einen flexibleren, aber potenziell komplexeren generischen Baustein.
 
 ## Metadaten

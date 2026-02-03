@@ -41,7 +41,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine expliziten Z
 - Konvertierung von `DWORD`-Daten, die von einem System geliefert werden, in `DINT`-Daten für ein anderes System.
 - Verwendung in Steuerungssystemen, wo Datentypen harmonisiert werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Blöcke könnten `F_WORD_TO_INT` oder `F_LWORD_TO_LINT` sein, die jedoch andere Datentypen konvertieren.
 - Im Gegensatz zu komplexeren Konvertierungsblöcken bietet `F_DWORD_TO_DINT` eine direkte und einfache Lösung für die spezifische Konvertierung.
 

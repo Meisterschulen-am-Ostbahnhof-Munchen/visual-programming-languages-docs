@@ -40,7 +40,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt direkt 
 - **Hardware-Steuerung**: Bei der Ansteuerung von digitalen Ein- und Ausgängen, die als Byte organisiert sind, können einzelne Bits einfach ausgewertet werden.
 - **Datenverarbeitung**: Bei der Verarbeitung von Byte-Daten, bei denen einzelne Bits eine spezifische Bedeutung haben (z.B. Statusflags).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Bit-Manipulationsfunktionen bietet dieser Baustein eine spezialisierte und einfache Lösung für die Zerlegung eines Bytes in Bits.
 - Andere Bausteine könnten komplexere Operationen wie Bit-Shifts oder Masken erfordern, während dieser Baustein die direkte Extraktion der Bits ermöglicht.
 
@@ -49,7 +49,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt direkt 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_053](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_053.md)
 

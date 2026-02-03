@@ -52,7 +52,7 @@ Der ZephyrIO Funktionsblock initialisiert IO-Services für Zephyr-basierte Hardw
 - Modulare IO-Erweiterungen für Embedded-Systeme
 - Hardware-nahe Echtzeit-Steuerungen mit Zephyr RTOS
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen IO-Bausteinen bietet ZephyrIO spezifische Optimierungen für das Zephyr Betriebssystem und ermöglicht eine nahtlose Integration von Zephyr-basierter Hardware in 4diac-Umgebungen.
 
 ## Fazit

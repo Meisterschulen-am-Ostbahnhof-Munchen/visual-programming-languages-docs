@@ -44,7 +44,7 @@ Bei Auslösung des Ereigniseingangs `REQ` wird der Algorithmus ausgeführt, der 
 - Protokollierung von `WORD`-Werten als lesbare Zeichenketten.
 - Datenkonvertierung für die Kommunikation mit Systemen, die `WSTRING` erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_WORD_AS_WSTRING` spezialisiert und daher effizienter für diese spezifische Aufgabe.
 - Andere Bausteine könnten zusätzliche Parameter oder komplexere Konvertierungen unterstützen, was hier nicht notwendig ist.
 

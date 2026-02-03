@@ -41,7 +41,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine expliziten Z
 - **Datenkonvertierung**: Wenn Zeitwerte als Zeichenketten vorliegen (z.B. aus einer Benutzereingabe oder einer externen Datenquelle) und in das TIME-Format umgewandelt werden müssen.
 - **Schnittstellenkommunikation**: Bei der Kommunikation mit Systemen, die Zeitwerte als Zeichenketten übermitteln.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_STRING_AS_TIME**: Ähnlicher Funktionsblock, der jedoch mit STRING anstelle von WSTRING arbeitet. `F_WSTRING_AS_TIME` ist für Unicode-Zeichenketten geeignet.
 - **F_TIME_AS_WSTRING**: Führt die umgekehrte Konvertierung durch (TIME zu WSTRING).
 

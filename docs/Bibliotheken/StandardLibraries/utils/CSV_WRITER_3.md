@@ -51,7 +51,7 @@ Der Funktionsblock initialisiert sich beim Empfang des `INIT`-Ereignis und best�
 - Speicherung von Prozessdaten für spätere Analysen.
 - Datenaustausch mit anderen Systemen über CSV-Dateien.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfacheren CSV-Writer-Funktionsblöcken unterstützt `CSV_WRITER_3` das Schreiben von mehreren Datenfeldern (`SD_1`, `SD_2`, `SD_3`).
 - Andere Funktionsblöcke könnten auf bestimmte Datentypen beschränkt sein, während `CSV_WRITER_3` den `ANY`-Typ verwendet.
 

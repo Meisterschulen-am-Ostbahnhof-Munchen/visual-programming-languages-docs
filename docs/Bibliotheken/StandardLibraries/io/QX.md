@@ -55,7 +55,7 @@ Der Block wechselt zwischen folgenden Zuständen:
 - Integration in IO-Subsysteme für verteilte Steuerungen
 - Test- und Simulationsumgebungen für Ausgabesignale
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Ausgabeblöcken bietet QX spezifische Service-Schnittstellenfunktionalität mit parametrisierbarer Konfiguration und detailliertem Status-Reporting. Andere Blöcke wie einfache BOOL-Ausgaben haben typischerweise weniger Konfigurationsmöglichkeiten und Statusinformationen.
 
 
@@ -63,7 +63,7 @@ Im Vergleich zu generischen Ausgabeblöcken bietet QX spezifische Service-Schnit
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_001](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_001.md)
 * [Uebung_001c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_001c.md)

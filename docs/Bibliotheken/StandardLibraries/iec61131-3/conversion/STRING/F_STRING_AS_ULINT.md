@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - **Benutzereingaben**: Verarbeitung von Eingaben, die als Zeichenketten vorliegen, aber als Zahlen interpretiert werden sollen.
 - **Protokollierung**: Konvertierung von logischen oder textuellen Daten in numerische Formate für die weitere Analyse.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_STRING_AS_INT**: Konvertiert einen `STRING` in einen `INT` (signed 32-bit integer). Im Gegensatz dazu arbeitet `F_STRING_AS_ULINT` mit einem größeren Wertebereich und ohne Vorzeichen.
 - **F_STRING_AS_LINT**: Ähnlich, aber für `LINT` (signed 64-bit integer). `F_STRING_AS_ULINT` ist für vorzeichenlose Werte optimiert.
 

@@ -49,7 +49,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt unmitte
 - Typumwandlung in Steuerungsanwendungen, wo `INT`-Werte in `LWORD`-Werte konvertiert werden müssen.
 - Integration in größere Systeme, die unterschiedliche Datentypen verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_LWORD` oder `F_SINT_TO_LWORD` bieten Konvertierungen von anderen Integer-Typen zu `LWORD`.
 - `F_INT_TO_LWORD` ist spezifisch für die Konvertierung von `INT` zu `LWORD` optimiert.
 

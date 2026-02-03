@@ -52,7 +52,7 @@ Der Zähler führt folgende Operationen beim `REQ`-Ereignis aus:
 - Materialflussüberwachung mit hohen Stückzahlen
 - Generelle Steuerungsaufgaben mit Aufwärts-/Abwärtszählfunktion
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Gegenüber einfachen Zählern bietet dieser FB beide Zählrichtungen
 - Im Vergleich zu kleineren Datentypen (z.B. INT) ermöglicht ULINT extrem große Zählbereiche
 - Integrierte Statusausgänge (`QU`, `QD`) vereinfachen die Überwachung

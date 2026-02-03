@@ -42,7 +42,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung erfolgt unmitt
 - Typumwandlung in Steuerungsanwendungen, wo `SINT`-Werte in größere vorzeichenlose Integer-Typen umgewandelt werden müssen.
 - Datenverarbeitung in Systemen, die mit unterschiedlichen Integer-Formaten arbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine wie `F_INT_TO_ULINT` oder `F_DINT_TO_ULINT` führen ähnliche Konvertierungen durch, jedoch mit anderen Eingangstypen.
 - `F_SINT_TO_ULINT` ist spezifisch für die Konvertierung von `SINT` zu `ULINT` optimiert.
 

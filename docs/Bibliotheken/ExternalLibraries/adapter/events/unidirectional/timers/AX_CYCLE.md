@@ -32,7 +32,7 @@ Zustandsbasiert.
 ## Anwendungsszenarien
 Taktgenerierung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **E_CYCLE**: Standard Zyklus-Baustein.
 
 ## Fazit

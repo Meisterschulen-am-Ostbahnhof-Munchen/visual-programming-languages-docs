@@ -50,7 +50,7 @@ Der Baustein besitzt keinen internen Zustand (speicherfrei). Seine Ausgabe häng
 *   **Steuerungslogik:** Implementierung von speziellen Verknüpfungslogiken in SPS-Programmen, bei denen genau eine oder drei oder fünf von fünf möglichen Einzelbedingungen erfüllt sein müssen.
 *   **Signalvergleich:** Feststellen von Ungleichheit in einer Gruppe von fünf binären Signalen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Standard XOR (2 Eingänge):** Bibliotheksbausteine bieten oft nur die XOR-Verknüpfung für zwei Operanden. Für fünf Operanden müssten mehrere dieser Blöcke verkettet werden (z.B. `((IN1 XOR IN2) XOR (IN3 XOR IN4)) XOR IN5`). `XOR_5_BOOL` fasst diese Logik in einem einzigen, übersichtlichen Block zusammen. Siehe: [XOR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_5.md)
 *   **ODER / UND Bausteine:** Während ODER (`OR`) `TRUE` bei mindestens einem `TRUE`-Eingang liefert und UND (`AND`) nur bei allen `TRUE`-Eingängen, reagiert XOR spezifisch auf eine ungerade Anzahl von `TRUE`-Werten.
 *   **Generische XOR-Blöcke:** Es könnten generische Blöcke existieren, die eine variable Anzahl von Eingängen über Arrays oder wiederholte Eingänge handhaben. `XOR_5_BOOL` ist eine fest konfigurierte, spezifische Instanz für genau fünf Eingänge.

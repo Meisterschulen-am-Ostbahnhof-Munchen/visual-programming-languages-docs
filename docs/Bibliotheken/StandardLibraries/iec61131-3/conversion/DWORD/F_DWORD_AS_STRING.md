@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` aus
 - Vorbereitung von Daten für die Protokollierung oder Benutzeranzeige.
 - Integration in Systeme, die String-basierte Kommunikation erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_DWORD_AS_STRING` spezialisiert auf die Umwandlung von DWORD zu STRING und bietet daher eine einfache und direkte Lösung für diesen spezifischen Anwendungsfall.
 - Andere Bausteine könnten zusätzliche Konvertierungsoptionen oder Parameter bieten, sind jedoch möglicherweise komplexer in der Handhabung.
 

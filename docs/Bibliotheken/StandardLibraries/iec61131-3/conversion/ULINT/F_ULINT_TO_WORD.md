@@ -42,7 +42,7 @@ Der Block hat keine internen Zustände. Die Konvertierung erfolgt unmittelbar be
 - Typumwandlung in Steuerungsanwendungen, wo ULINT-Werte in WORD-Werte umgewandelt werden müssen.
 - Datenreduktion, wenn nur die unteren 16 Bit eines ULINT-Wertes relevant sind.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Blöcke wie `F_DINT_TO_WORD` oder `F_LINT_TO_WORD` bieten Konvertierungen von anderen Integer-Typen zu WORD, jedoch mit unterschiedlichen Wertebereichen und Genauigkeiten.
 
 ## Fazit

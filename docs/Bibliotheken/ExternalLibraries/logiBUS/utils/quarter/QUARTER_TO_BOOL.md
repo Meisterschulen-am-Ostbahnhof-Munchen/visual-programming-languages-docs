@@ -60,14 +60,14 @@ Die ECC (Execution Control Chart) besteht aus sechs Zuständen:
 *   **Vereinfachung von Logik**: In Steuerungen, die nur binäre Entscheidungen benötigen (z.B. "Prozess freigeben" ja/nein), kann dieser FB komplexere Statusmeldungen auf die entscheidende binäre Information reduzieren.
 *   **Fehlerbehandlung**: Ein einheitlicher Umgang mit Fehlerzuständen (`STATUS_ERROR`) durch Setzen des Ausgangs auf `FALSE`.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Standardkonverter (z.B., `BYTE_TO_BOOL`)**: Ein einfacher `BYTE_TO_BOOL`-Konverter würde typischerweise einen Schwellwert verwenden (z.B., alles >0 wird zu TRUE). `QUARTER_TO_BOOL` hingegen interpretiert spezifische, benannte Zustände und bietet ein definiertes Verhalten für jeden einzelnen, einschließlich der Möglichkeit, den Ausgang bei einem Zustand unverändert zu lassen.
 *   **`E_SELECT`- oder `E_DEMUX`-Bausteine**: Diese könnten verwendet werden, um basierend auf einem Eingangswert unterschiedliche Ereignispfade zu aktivieren. `QUARTER_TO_BOOL` kapselt diese Logik speziell für die Konvertierung von 4-Zustands-Signalen und liefert direkt das boolesche Ergebnis.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_055](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)
 * [Uebung_056](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)

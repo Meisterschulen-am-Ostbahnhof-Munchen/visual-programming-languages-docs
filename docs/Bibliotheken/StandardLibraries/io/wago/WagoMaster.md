@@ -57,7 +57,7 @@ Der Baustein durchläuft folgende Zustände:
 - Überwachung und Diagnose von Wago-Busnetzwerken
 - Industrie 4.0-Anwendungen mit verteilten Wago-IO-Systemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Bus-Master-Bausteinen bietet der WagoMaster spezifische Optimierungen für Wago-Bussysteme und eine integrierte Statusdiagnose über WSTRING. Die spezialisierte Adapter-Schnittstelle ermöglicht eine effizientere Kommunikation als universelle Bus-Adapter.
 
 ## Fazit

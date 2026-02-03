@@ -35,7 +35,7 @@ Die Datei definiert Konstanten, die zur Kompilierzeit durch ihre Werte ersetzt w
 2.  **Zeitgeber-Initialisierung:** Die Konstante `NO_TIME` kann verwendet werden, um Zeitgeber-Funktionsblöcken einen initialen "ungültigen" Wert zuzuweisen, bevor eine echte Zeitdauer gesetzt wird.
 3.  **Code-Verständlichkeit:** Ersetzen von Zahlen wie `SINT#5` im Code durch `State_05` verbessert die Lesbarkeit und zeigt die semantische Bedeutung des Wertes an.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **ENUM-Datentyp:** Ein benutzerdefinierter Aufzählungstyp (ENUM) könnte eine ähnliche Rolle wie die `State_XX`-Konstanten übernehmen und bietet oft eine strengere Typprüfung. Globale Konstanten sind jedoch einfacher zu definieren und in 4diac zu verwenden.
 *   **Direkte Werteingabe:** Der Hauptvorteil gegenüber der direkten Eingabe von Werten (z.B. `3`) ist die zentrale Definition. Eine Änderung des Wertes muss nur an einer Stelle (hier in der Konstantendatei) vorgenommen werden und wirkt sich auf alle Verwendungen aus.
 

@@ -42,14 +42,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - **Typumwandlung**: In Steuerungssystemen, wo unterschiedliche Datentypen verarbeitet werden müssen.
 - **Datenverarbeitung**: Bei der Kommunikation zwischen Komponenten, die unterschiedliche Datentypen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_USINT_TO_INT**: Konvertiert `USINT` zu `INT`, jedoch mit potenziellem Vorzeichenwechsel.
 - **F_USINT_TO_UINT**: Konvertiert `USINT` zu `UINT` (16-Bit), was einen kleineren Wertebereich als `UDINT` bietet.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_111](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_111.md)
 

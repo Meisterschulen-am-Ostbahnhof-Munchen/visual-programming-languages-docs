@@ -45,7 +45,7 @@ Bei Auslösung des `REQ`-Ereignisses wird die Funktion `STRING_AS_SINT` auf den 
 - Verarbeitung von Textdaten aus externen Quellen (z.B. Dateien oder Netzwerkkommunikation).
 - Konvertierung von Konfigurationswerten in Steuerungsparameter.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_STRING_AS_SINT` spezialisiert auf die Umwandlung in 8-Bit Ganzzahlen.
 - Ähnliche Blöcke wie `F_STRING_AS_INT` oder `F_STRING_AS_DINT` bieten Konvertierungen in größere Ganzzahltypen.
 

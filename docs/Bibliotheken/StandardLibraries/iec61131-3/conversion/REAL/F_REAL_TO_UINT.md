@@ -49,7 +49,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Datenaufbereitung für Systeme, die nur vorzeichenlose Ganzzahlen verarbeiten können.
 - Schnittstellen zwischen unterschiedlichen Systemkomponenten mit verschiedenen Datentypen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_REAL_TO_INT` oder `F_REAL_TO_UDINT` ist dieser Funktionsblock spezialisiert auf die Umwandlung in vorzeichenlose 16-Bit-Ganzzahlen (UINT).
 - Ähnliche Bausteine könnten zusätzliche Parameter wie Rundungsmodi oder Bereichsprüfungen bieten, was hier nicht der Fall ist.
 

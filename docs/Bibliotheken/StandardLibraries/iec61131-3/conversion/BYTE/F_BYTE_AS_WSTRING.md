@@ -43,7 +43,7 @@ Der Funktionsblock nutzt die eingebaute Funktion `BYTE_AS_WSTRING`, um den einge
 - Konvertierung von Byte-Daten für die Anzeige in Benutzeroberflächen.
 - Verarbeitung von Byte-Streams in Unicode-kompatiblen Systemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu `F_BYTE_AS_STRING` erzeugt dieser Block einen Unicode-String (WSTRING) statt eines ASCII-Strings (STRING).
 - Ähnlich zu `F_WORD_AS_WSTRING`, aber für 8-Bit-Daten optimiert.
 

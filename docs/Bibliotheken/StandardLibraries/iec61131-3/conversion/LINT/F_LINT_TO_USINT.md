@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt unmitte
 - Konvertierung von Sensorwerten oder Zählern, die als `LINT` vorliegen, für die Verarbeitung in Systemen, die nur `USINT` unterstützen.
 - Verwendung in Steuerungssystemen, wo Speicherplatz optimiert werden muss.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Konvertierungsblöcke wie `F_INT_TO_USINT` oder `F_DINT_TO_USINT` arbeiten mit kleineren Eingangsdatentypen (`INT` bzw. `DINT`).
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_LINT_TO_USINT` spezialisiert auf die Konvertierung von `LINT` zu `USINT`.
 

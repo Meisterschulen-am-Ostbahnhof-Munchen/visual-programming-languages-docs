@@ -48,7 +48,7 @@ Der Funktionsblock initialisiert sich beim Empfang des INIT-Ereignisses und best
 - Datenerfassung für Analysezwecke.
 - Export von Steuerungsdaten in CSV-Format.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren CSV-Writer-Blöcken bietet CSV_WRITER_8 die Möglichkeit, bis zu 8 verschiedene Datenwerte gleichzeitig zu schreiben und generische Datentypen zu verarbeiten.
 
 ## Fazit

@@ -56,7 +56,7 @@ Die XOR-Operation wird für jedes Bitposition separat durchgeführt:
 - Steuerungslogik mit mehreren Eingangssignalen
 - Generische Logikoperationen in Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfachen XOR-Blöcken mit 2 Eingängen bietet XOR_10 mehr Flexibilität
 - Ähnlich zu OR_10/AND_10 Blöcken, aber mit XOR-Logik
 - Generische Implementierung im Gegensatz zu typ-spezifischen Blöcken (z.B. XOR_BOOL, XOR_WORD)

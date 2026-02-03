@@ -66,7 +66,7 @@ Der ECC umfasst folgende Zustände:
 *   **Teststände**: Automatisierte, zyklische Prüfabläufe mit konfigurierbaren Wartezeiten zwischen den Testschritten.
 *   **Sicherheitssequenzen**: Geordnetes An- und Abfahren einer Anlage.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Timern (z.B. `TON`) oder Zählern (z.B. `CTU`) bietet dieser FB eine vordefinierte, komplexe Zustandslogik mit mehreren Ausgängen. Gegenüber generischen Schrittketten-Bausteinen (SFC) ist er weniger flexibel, aber dafür spezifischer, einfacher zu konfigurieren und bietet integrierte Reset- und Sprungfunktionen. Er stellt eine spezialisierte Lösung für 8-stufige Prozesse dar.
 
 ## Fazit

@@ -65,7 +65,7 @@ Zustandsübergänge:
 - **[AX_RS](AX_RS.md)**: Funktional identisch, Eingänge im Symbol vertauscht.
 - **[E_SR](../../../../StandardLibraries/events/E_SR.md)**: Das Standard-Äquivalent mit direkten Daten-/Ereignisausgängen statt Adaptern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Speicherelementen bietet AX_SR:
 - Klare Trennung von Set- und Reset-Funktionalität
 - Adapter-basierte Schnittstelle für flexible Integration
@@ -79,7 +79,7 @@ Vergleich mit [E_SR](../../../../StandardLibraries/events/E_SR.md)
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_004b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX.md)
 * [Uebung_004b_AX_ASR](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)

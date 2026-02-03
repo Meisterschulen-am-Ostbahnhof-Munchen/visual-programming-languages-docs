@@ -50,7 +50,7 @@ Der Funktionsblock `F_ROL` führt eine bitweise Linksrotation des Eingabewerts `
 - Signalverarbeitung, bei denen Datenbits zyklisch verschoben werden müssen.
 - Prüfsummenberechnungen und Datenkodierungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_SHL (Shift Left)**: Verschiebt Bits nach links und füllt freiwerdende Stellen rechts mit Nullen auf. Dies ist keine zyklische Operation.
 - **F_ROR (Rotate Right)**: Führt eine Rechtsrotation durch, bei der Bits von rechts nach links rotiert werden.
 - **F_ROL vs. F_SHL**: Während F_SHL eine Verschiebung mit Nullauffüllung durchführt, führt F_ROL eine zyklische Rotation ohne Nullauffüllung durch.

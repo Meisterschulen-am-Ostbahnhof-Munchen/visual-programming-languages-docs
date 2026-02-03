@@ -44,7 +44,7 @@ Der Funktionsblock besitzt keinen internen Zustand. Jeder Aufruf über `REQ` fü
 - **Schnittstellenanpassung**: Anpassung von Daten für Komponenten, die `LINT` erwarten.
 - **Protokollierung**: Speicherung von `INT`-Werten in Systemen, die `LINT` verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_DINT**: Konvertiert `INT` zu `DINT` (32-Bit), bietet weniger Wertebereich als `LINT`.
 - **F_DINT_TO_LINT**: Konvertiert `DINT` zu `LINT`, ähnlich aber mit anderem Eingangstyp.
 - **F_LINT_TO_INT**: Umgekehrte Konvertierung, potenziell mit Datenverlust.

@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, indem der USINT-Wert von `IN`
 - Konvertierung von Sensorwerten (z.B. ADC-Rohdaten) in Gleitkommawerte für weitere Berechnungen.
 - Integration in Steuerungssysteme, die unterschiedliche Datentypen verarbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_USINT_TO_REAL` spezialisiert und daher effizienter für diese spezifische Konvertierung.
 - Andere Blöcke wie `F_INT_TO_REAL` oder `F_DINT_TO_REAL` sind für andere Integer-Datentypen ausgelegt.
 

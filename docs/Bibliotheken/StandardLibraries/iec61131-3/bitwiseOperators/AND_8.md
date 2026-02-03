@@ -44,7 +44,7 @@ Der `AND_8`-Block führt eine bitweise UND-Operation auf den Werten aller aktive
 - Filterung von Signalen durch bitweise Maskierung.
 - Generische Verarbeitung von Bit-Daten in komplexen Automatisierungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **AND (Standard)**: Standard-UND-Block mit typischerweise zwei Eingängen. `AND_8` bietet mehr Flexibilität durch acht Eingänge und generische Typen.
 - **GEN_AND**: Generische UND-Implementierung, die als Basis für `AND_8` dient. `AND_8` ist eine spezialisierte Version mit fester Eingangsanzahl.
 

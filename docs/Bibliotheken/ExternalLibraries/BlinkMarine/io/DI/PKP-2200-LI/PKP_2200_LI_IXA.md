@@ -55,7 +55,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 - Integration in verteilte Steuerungssysteme
 - Boolesche Signalverarbeitung mit Qualitätsüberwachung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet PKP_2200_LI_IXA erweiterte Funktionalität durch:
 - Parametrierbare SA-Member-Konfiguration
 - Detaillierte Statusrückmeldungen

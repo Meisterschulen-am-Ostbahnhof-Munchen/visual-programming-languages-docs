@@ -59,7 +59,7 @@ Der Baustein unterstützt mehrere Service-Sequenzen:
 - Flexible Verbindungsverwaltung in verteilten Systemen
 - Adaptive Automatisierungssysteme
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu statisch konfigurierten Verbindungen ermöglicht ST_CREATE_CONN die dynamische Erstellung von Verbindungen zur Laufzeit. Andere Rekonfigurationsbausteine fokussieren sich typischerweise auf das Erstellen oder Löschen von FB-Instanzen, während dieser Baustein speziell für Verbindungsmanagement optimiert ist.
 
 ## Fazit

@@ -6,7 +6,7 @@
 
 * [Hutschienenmoped XL: ISOBUS ECU Entwicklung](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Hutschienenmoped-XL-ISOBUS-ECU-Entwicklung-e368hdg)
 
-## IO
+## 🔌 IO
 
 ### Analoge Eingänge
 

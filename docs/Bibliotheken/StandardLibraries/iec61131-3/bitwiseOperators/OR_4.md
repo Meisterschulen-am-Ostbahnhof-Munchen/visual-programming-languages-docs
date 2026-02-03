@@ -52,7 +52,7 @@ Bei Eintreffen des REQ-Ereignisses führt der OR_4-Baustein eine bitweise ODER-V
 - Parallele Verarbeitung mehrerer Bedingungen
 - Signalverarbeitung in industriellen Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren ODER-Bausteinen mit weniger Eingängen bietet OR_4 die Möglichkeit, vier Eingänge parallel zu verarbeiten, was die Anzahl benötigter Bausteine in komplexen Schaltungen reduziert. Gegenüber Bausteinen mit festen Datentypen bietet OR_4 durch die Verwendung von ANY_BIT eine höhere Flexibilität.
 
 ## Fazit

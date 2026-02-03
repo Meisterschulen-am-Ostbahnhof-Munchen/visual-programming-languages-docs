@@ -41,7 +41,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Umwandlung von Ganzzahlwerten in Gleitkommazahlen für weitere Berechnungen.
 - Verwendung in Steuerungs- und Regelungssystemen, wo Gleitkommaoperationen erforderlich sind.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen (z.B. `F_INT_TO_REAL`) ist dieser speziell für die Konvertierung von 64-Bit unsigned integers zu 64-Bit floating points optimiert.
 - Ähnliche Bausteine könnten eine geringere Genauigkeit oder einen kleineren Wertebereich aufweisen.
 

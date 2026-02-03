@@ -51,7 +51,7 @@ Da es sich um einen Datentyp und keinen aktiven Baustein handelt, existiert kein
 *   **Kommando-Weiterleitung:** Als Parameter für Kommunikationsbausteine, um Nachrichten gezielt an eine bestimmte CF (identifiziert durch `u8SourceAddress` und `au8Name`) zu adressieren.
 *   **Filterung:** Logikbausteine können anhand der Felder `eIsoUserFunct` oder `bExternalCf` entscheiden, ob Nachrichten einer bestimmten CF verarbeitet werden sollen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 `CF_INFO_T` ist kein Funktionsbaustein und kann daher nicht direkt mit Blöcken wie `E_SR` oder `E_CYCLE` verglichen werden. Innerhalb der ISOBUS-Kommunikation ist er vergleichbar mit anderen strukturierten Datentypen, die Netzwerk- oder Geräteinformationen bündeln (z.B. `PGN_INFO_T` für Parameter Group Numbers). Seine Besonderheit liegt in der spezifischen Zusammenstellung von Daten, die für die Identifikation und das Zustandsmanagement einer Control Function erforderlich sind.
 
 ## Fazit

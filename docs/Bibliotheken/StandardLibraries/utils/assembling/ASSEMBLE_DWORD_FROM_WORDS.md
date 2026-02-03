@@ -44,7 +44,7 @@ Der Funktionsblock nimmt die beiden 16-Bit-Eingabewörter (`WORD_00` und `WORD_0
 - Verarbeitung von Daten aus zwei separaten Kommunikationskanälen.
 - Erweiterung von 16-Bit-Daten auf 32-Bit für weitere Verarbeitung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu einfachen Bit-Operationen bietet dieser Funktionsblock eine klar definierte Schnittstelle und ist in 4diac-IDE integriert.
 - Ähnliche Funktionalität könnte mit Basisoperationen erreicht werden, dieser Baustein vereinfacht jedoch die Handhabung.
 

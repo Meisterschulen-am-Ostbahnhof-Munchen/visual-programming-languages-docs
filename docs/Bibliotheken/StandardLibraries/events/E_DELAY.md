@@ -53,7 +53,7 @@ Der **E_DELAY** ist ein zentraler Funktionsbaustein der IEC 61499 Norm für indu
 - **Alarmmanagement**: Verzögerte Störmeldungen
 - **Testautomation**: Zeitgesteuerte Testsequenzen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | E_DELAY | E_CYCLE | E_PULSE |
 |---------------|---------|---------|---------|
@@ -66,7 +66,7 @@ Der **E_DELAY** ist ein zentraler Funktionsbaustein der IEC 61499 Norm für indu
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_018](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_018.md)
 * [Uebung_020b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020b.md)

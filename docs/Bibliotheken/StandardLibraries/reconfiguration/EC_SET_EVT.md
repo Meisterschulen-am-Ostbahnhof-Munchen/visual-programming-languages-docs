@@ -69,7 +69,7 @@ Der Funktionsblock unterstützt mehrere Service-Sequenzen:
 - Ereignis-basierte Diagnosefunktionen
 - Simulation von externen Ereignissen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu Standard-Funktionsblöcken bietet EC_SET_EVT spezielle Rekonfigurationsfähigkeiten, die über normale Ereignisverarbeitung hinausgehen. Er ermöglicht externen Zugriff auf Ereignisse anderer Funktionsblöcke, was für Diagnose- und Testzwecke besonders wertvoll ist.
 

@@ -108,7 +108,7 @@ Als reiner Datentyp besitzt `ST64B` keine Zustände im Sinne einer Zustandsmasch
 *   **Daten-Serialisierung:** Speicherung von Rohdaten vor der Serialisierung oder nach der Deserialisierung, insbesondere wenn Daten ohne explizite Typinformationen übertragen werden.
 *   **Generische Datenblöcke:** Handhabung von generischen Datenblöcken fester Größe, die flexibel interpretiert werden können, z.B. als Teil größerer Protokolle oder Datenstrukturen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 `ST64B` ist ein grundlegender Datentyp und kann nicht direkt mit Funktionsblöcken verglichen werden. Innerhalb der Datentypen ist er vergleichbar mit:
 *   **Anderen strukturierten Datentypen:** `ST64B` ist eine spezifische Instanz eines `StructuredType`. Es gibt ähnliche Strukturen mit unterschiedlicher Anzahl oder Art von Elementen (z.B. Strukturen mit 8, 16, 32 Bytes oder solche, die Integers, Booleans usw. enthalten). `ST64B` zeichnet sich durch seine rein byteweise Aufteilung aus.
 *   **Arrays von BYTE:** Ein Array vom Typ `ARRAY[0..63] OF BYTE` würde ebenfalls 64 Bytes speichern. Der Unterschied besteht in der Zugriffsweise: Bei `ST64B` erfolgt der Zugriff über benannte Member (z.B. `myST64B.B_10`), während bei einem Array der Zugriff über einen Index erfolgt (z.B. `myArray[10]`). Die benannten Member können in bestimmten Kontexten für eine klarere Lesbarkeit des Codes oder für die direkte Adressierung spezifischer Byte-Positionen vorteilhaft sein.

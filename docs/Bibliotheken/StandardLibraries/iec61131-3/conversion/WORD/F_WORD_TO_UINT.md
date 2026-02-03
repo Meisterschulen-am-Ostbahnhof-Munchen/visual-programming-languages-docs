@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - Datenverarbeitung in industriellen Automatisierungslösungen.
 - Kommunikation zwischen Systemen mit unterschiedlichen Datentypen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen ist `F_WORD_TO_UINT` spezifisch auf die Umwandlung von `WORD` zu `UINT` ausgelegt. Andere Bausteine könnten zusätzliche Funktionen oder eine breitere Palette von Konvertierungen anbieten, sind dafür aber möglicherweise komplexer im Aufbau.
 
 ## Fazit

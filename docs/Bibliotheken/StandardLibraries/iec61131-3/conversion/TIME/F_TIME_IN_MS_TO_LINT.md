@@ -51,7 +51,7 @@ Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmet
 *   **Beispiel:** `500 * T#1ms = T#500ms`
 *   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen, die möglicherweise nur in kleinere Ganzzahltypen konvertieren, bietet dieser Baustein eine höhere Genauigkeit durch die Verwendung des `LINT`-Datentyps.
 - Ähnliche Bausteine könnten die Zeit in anderen Einheiten (z.B. Sekunden oder Mikrosekunden) konvertieren, während dieser Baustein speziell auf Millisekunden ausgelegt ist.
 

@@ -43,7 +43,7 @@ Der Funktionsblock führt die Konvertierung von `WORD` nach `ULINT` durch, sobal
 - Datenverarbeitung in Steuerungssystemen, wo unterschiedliche Datentypen kompatibel gemacht werden müssen.
 - Erweiterung von Daten für weitere Berechnungen oder Speicherung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine könnten direkte Konvertierungen zwischen anderen Datentypen anbieten, z.B. `F_WORD_TO_INT`.
 - Dieser Baustein spezialisiert sich auf die Konvertierung zu `ULINT`, was besonders für große, vorzeichenlose Zahlen relevant ist.
 

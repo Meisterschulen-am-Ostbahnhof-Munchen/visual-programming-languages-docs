@@ -55,7 +55,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 - Integration in logiBUS-basierte Steuerungsarchitekturen
 - Industrielle Automatisierung mit booleschen Ausgabesignalen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_QXA:
 - Erweiterte Parametrierungsmöglichkeiten
 - Statusrückmeldungen für Fehlerdiagnose
@@ -65,7 +65,7 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_QXA:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_001_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_001_AX.md)
 * [Uebung_001_AX_b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_001_AX_b.md)

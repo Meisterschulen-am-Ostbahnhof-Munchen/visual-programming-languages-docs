@@ -79,7 +79,7 @@ Der Funktionsblock arbeitet nach einem einfachen Anfrage-Bestätigungs-Prinzip:
 - Fehlertolerante Systeme mit redundanten Komponenten
 - Adaptive Steuerungssysteme mit wechselnden Betriebsmodi
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Gegensatz zu statischen Verbindungen in 4diac ermöglicht ST_REC_CONN:
 - Dynamische Anpassung von Verbindungen zur Laufzeit

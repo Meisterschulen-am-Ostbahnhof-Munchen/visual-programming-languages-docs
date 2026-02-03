@@ -56,7 +56,7 @@ Nach Abschluss der Berechnung wird das CNF-Ereignis zusammen mit dem Ergebnis an
 - **Datenverschlüsselung**: Einfache kryptografische Operationen
 - **Signalverarbeitung**: Kombination mehrerer digitaler Signale
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **AND/OR-Bausteine**: Verarbeiten logische UND/ODER-Operationen statt exklusivem ODER
 - **XOR mit weniger Eingängen**: Dieser Block bietet vier Eingänge im Vergleich zu Standard-XOR-Blöcken mit typischerweise zwei Eingängen
 - **Generische vs. spezifische Blöcke**: Kann verschiedene Bit-Datentypen verarbeiten, während spezifische Blöcke auf einen Datentyp beschränkt sind

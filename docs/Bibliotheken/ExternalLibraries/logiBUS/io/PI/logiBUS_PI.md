@@ -35,7 +35,7 @@ Da es sich um einen Konstanten-Block handelt, besitzt `logiBUS_PI` keinen intern
 *   **Parametrierung von Funktionsblöcken:** Vereinfachte und lesbare Parametrierung von Funktionsblöcken, die einen spezifischen Puls-Eingang benötigen. Statt der magischen Zahl `3` wird die selbsterklärende Konstante `PulseInput_I3` verwendet.
 *   **Wartung und Lesbarkeit:** Erhöht die Wartbarkeit und Lesbarkeit des Anwendungscodes, da die Hardware-Zuordnung direkt im Konstantennamen ersichtlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken wie `E_SR` (Flip-Flop) oder `E_CYCLE` (zyklischer Event-Generator) implementiert `logiBUS_PI` keine Logik oder Algorithmen. Er ist vergleichbar mit anderen Konstanten-Blöcken oder ENUM-Definitionen in der IEC 61499, die hardwarenahe Parameter kapseln (z.B. `GPIO_PIN_XX` Konstanten für Raspberry Pi). Sein Zweck ist rein deklarativ und konfigurativ.
 
 ## Fazit

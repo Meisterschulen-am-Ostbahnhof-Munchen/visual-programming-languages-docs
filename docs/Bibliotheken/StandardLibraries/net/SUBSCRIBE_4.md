@@ -60,7 +60,7 @@ Der SUBSCRIBE_4 Block initialisiert bei Empfang des INIT-Ereignisses eine Abonne
 - Kommunikation zwischen verschiedenen Steuerungskomponenten
 - Überwachungssysteme mit Datenabonnement
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren SUBSCRIBE-Blöcken bietet SUBSCRIBE_4 die Möglichkeit, bis zu vier verschiedene Datenpunkte gleichzeitig zu empfangen. Die erweiterte Funktionalität macht ihn besonders geeignet für komplexere Kommunikationsszenarien, bei denen mehrere Datenquellen konsolidiert werden müssen.
 
 ## Fazit

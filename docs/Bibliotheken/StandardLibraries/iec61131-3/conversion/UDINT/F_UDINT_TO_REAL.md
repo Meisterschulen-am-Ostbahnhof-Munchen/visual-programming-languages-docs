@@ -41,14 +41,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Verarbeitung erfolgt un
 - Umwandlung von Rohdaten (z.B. aus Sensoren oder Kommunikationsprotokollen) in Gleitkommawerte für weitere Berechnungen.
 - Integration in Steuerungssysteme, wo unterschiedliche Datentypen verarbeitet werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_UDINT_TO_REAL` spezialisiert und optimiert für die spezifische Konvertierung von `UDINT` zu `REAL`.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Skalierungen bieten, was hier nicht der Fall ist.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_151](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_151.md)
 * [Uebung_151_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_151_AX.md)

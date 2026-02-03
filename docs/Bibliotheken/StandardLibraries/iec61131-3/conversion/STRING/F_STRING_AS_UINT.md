@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 - Konvertierung von Daten aus Textdateien oder Kommunikationsprotokollen für die weitere numerische Verarbeitung.
 - Integration in Steuerungssysteme, die numerische Werte aus String-Quellen benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_STRING_AS_UINT` spezialisiert auf die Umwandlung von `STRING` zu `UINT` und bietet daher eine einfache und direkte Lösung für diesen spezifischen Anwendungsfall.
 - Andere Blöcke könnten zusätzliche Funktionen wie Fehlerbehandlung oder verschiedene numerische Formate unterstützen, was hier nicht der Fall ist.
 

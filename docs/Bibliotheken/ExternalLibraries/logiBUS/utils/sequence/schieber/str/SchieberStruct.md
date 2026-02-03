@@ -42,7 +42,7 @@ Die Struktur bildet explizit folgende fünf Zustände eines Schiebers ab:
 *   **Parametrierung:** Die Struktur kann als konfigurierbarer Parameter an einen Funktionsblock übergeben werden, der dann basierend auf seinem internen Zustand die entsprechende ID aus der Struktur auswählt und z. B. an ein Visualisierungssystem weiterleitet.
 *   **Visualisierung:** Ein HMI- oder SCADA-System kann die in der Struktur hinterlegten IDs nutzen, um das grafische Symbol des Schiebers entsprechend seines aktuellen Zustands (z. B. Farbe, Symbol) zu aktualisieren.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken wie `E_SR` (Speicherglied) oder `E_CTUD` (Zähler), die aktive Logik implementieren, ist `SchieberStruct` ein passiver Datentyp. Ähnliche strukturierte Datentypen könnten für andere Geräte mit Zustandsmaschinen definiert werden (z. B. `PumpeStruct`, `MotorStruct`). Die Besonderheit liegt in der spezifischen Abbildung der für einen linearen Schieber charakteristischen Zustände `Opening`, `Closing`, `Opened` und `Closed` inklusive eines `Unknown`-Zustands.
 
 ## Fazit

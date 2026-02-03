@@ -78,7 +78,7 @@ RESET (Q.D1 = FALSE)
 - Zustandsautomaten mit Speicherfunktion
 - Schaltnetze mit Rückkopplung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einem einfachen E_SR-Flipflop bietet der AX_T_FF_SR zusätzliche Toggle-Funktionalität durch den CLK-Eingang. Während ein reines SR-Flipflop nur über Set- und Reset-Eingänge verfügt, ermöglicht dieser Baustein zusätzlich das taktgesteuerte Umschalten des Ausgangszustands.
 
 Vergleich mit [E_T_FF_SR](../../../../StandardLibraries/events/E_T_FF_SR.md)
@@ -88,7 +88,7 @@ Vergleich mit [E_T_FF_SR](../../../../StandardLibraries/events/E_T_FF_SR.md)
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_004a7_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
 * [Uebung_006a2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a2_AX.md)

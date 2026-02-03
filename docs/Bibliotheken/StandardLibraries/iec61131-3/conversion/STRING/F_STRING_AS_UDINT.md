@@ -43,7 +43,7 @@ Der Funktionsblock führt die Konvertierung mithilfe der eingebauten Funktion `S
 - Umwandlung von Benutzereingaben oder Kommunikationsdaten in numerische Werte.
 - Integration in Systeme, die numerische Verarbeitung erfordern, aber Zeichenketten als Eingabe erhalten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungs-FBs bietet `F_STRING_AS_UDINT` eine spezialisierte und effiziente Lösung für die Umwandlung von `STRING` zu `UDINT`.
 - Andere FBs könnten zusätzliche Funktionen wie Fehlerbehandlung oder Formatierung bieten, sind jedoch komplexer in der Handhabung.
 

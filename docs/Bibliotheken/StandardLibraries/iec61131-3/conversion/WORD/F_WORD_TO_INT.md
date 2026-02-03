@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Typumwandlung in Steuerungsanwendungen, wo `WORD`-Daten in `INT`-Daten umgewandelt werden müssen.
 - Integration in größere Steuerungssysteme, die eine Typkompatibilität erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke könnten `F_BYTE_TO_INT` oder `F_DWORD_TO_INT` sein, die jedoch andere Datentypen konvertieren.
 - Im Gegensatz zu komplexeren Konvertierungsblöcken bietet `F_WORD_TO_INT` eine einfache und direkte Lösung für die spezifische Umwandlung von `WORD` zu `INT`.
 

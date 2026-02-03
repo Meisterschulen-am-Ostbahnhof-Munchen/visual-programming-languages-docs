@@ -49,7 +49,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt unmitte
 - Typumwandlung in Steuerungsanwendungen, wo verschiedene Integer-Formate verarbeitet werden müssen.
 - Integration in größere Funktionsblock-Netzwerke, wo eine einheitliche Datentypverarbeitung erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_INT_TO_SINT` führen die umgekehrte Konvertierung durch, jedoch mit potenziellem Datenverlust.
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_SINT_TO_INT` spezialisiert und optimiert für diese spezifische Umwandlung.
 

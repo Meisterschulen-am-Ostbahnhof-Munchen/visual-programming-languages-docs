@@ -44,7 +44,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Typumwandlung in Steuerungsanwendungen, wo `USINT`-Werte in `UINT` umgewandelt werden müssen.
 - Verwendung in Datenverarbeitungsketten, wo verschiedene Datentypen kompatibel gemacht werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_INT_TO_REAL` oder `F_BOOL_TO_STRING` ist dieser Baustein spezifisch für die Umwandlung zwischen zwei vorzeichenlosen Ganzzahltypen.
 - Ähnliche Bausteine könnten zusätzliche Prüfungen oder Skalierungen durchführen, was hier nicht notwendig ist.
 

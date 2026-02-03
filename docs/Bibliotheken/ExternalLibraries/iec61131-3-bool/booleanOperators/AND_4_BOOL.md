@@ -55,7 +55,7 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 *   **Bedingungsprüfung:** Überprüfung, ob mehrere Voraussetzungen in einem Prozessschritt gleichzeitig erfüllt sind.
 *   **Maskierung:** Selektives Aktivieren einer Funktion nur dann, wenn mehrere Freigabesignale vorliegen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **AND (2 Eingänge):** Ein grundlegender UND-Baustein mit nur zwei Eingängen. `AND_4_BOOL` konsolidiert vier solcher Operationen in einem einzigen Baustein, was die Lesbarkeit und Wartbarkeit des Diagramms verbessert. Siehe: [AND_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_4.md)
 *   **OR_4_BOOL:** Führt eine logische ODER-Verknüpfung durch, bei der das Ergebnis `TRUE` ist, wenn mindestens ein Eingang `TRUE` ist. Dies ist das logische Gegenstück zum UND.
 *   **GEN_AND:** Die generische Basisklasse, auf der `AND_4_BOOL` aufbaut. Sie kann für die Erstellung von UND-Bausteinen mit einer beliebigen Anzahl von Eingängen konfiguriert werden.

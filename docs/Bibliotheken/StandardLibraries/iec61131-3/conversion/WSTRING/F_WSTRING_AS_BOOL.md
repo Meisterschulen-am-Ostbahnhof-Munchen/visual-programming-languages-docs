@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, wenn das Ereignis `REQ` empfa
 - Interpretation von Konfigurationsdateien, die boolesche Werte als Zeichenketten speichern.
 - Schnittstellen zwischen Systemen, die unterschiedliche Datentypen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_STRING_AS_BOOL**: Konvertiert STRING statt WSTRING in BOOL.
 - **F_BOOL_AS_WSTRING**: Führt die umgekehrte Konvertierung durch (BOOL zu WSTRING).
 

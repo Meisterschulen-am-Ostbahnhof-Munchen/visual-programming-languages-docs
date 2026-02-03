@@ -48,7 +48,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine expliziten Z
 - Typkonvertierung in Steuerungsanwendungen, wo Integer-Werte in Byte-Werte umgewandelt werden müssen.
 - Integration in größere Systeme, die eine strenge Typenkontrolle erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_DINT_TO_BYTE` oder `F_WORD_TO_BYTE` bieten Konvertierungen zwischen anderen Datentypen, sind aber für unterschiedliche Quelltypen ausgelegt.
 - `F_INT_TO_BYTE` ist spezifisch für die Konvertierung von `INT` zu `BYTE` optimiert.
 

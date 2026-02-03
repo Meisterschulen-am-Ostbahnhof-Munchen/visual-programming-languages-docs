@@ -41,7 +41,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - **Datenverarbeitung**: In Steuerungssystemen, wo unterschiedliche Datentypen harmonisiert werden müssen.
 - **Schnittstellenkompatibilität**: Bei der Kommunikation zwischen Systemen, die unterschiedliche Datentypen verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_LINT_TO_INT**: Konvertiert `LINT` zu `INT`, behält aber das Vorzeichen bei.
 - **F_LINT_TO_ULINT**: Konvertiert `LINT` zu `ULINT`, ohne die Bitbreite zu reduzieren.
 

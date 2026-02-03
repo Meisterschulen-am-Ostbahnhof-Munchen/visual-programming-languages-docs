@@ -41,7 +41,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - Extraktion der Tageszeit aus Zeitstempeln für Zeitsteuerungen.
 - Vorverarbeitung von Daten für Systeme, die nur die Tageszeit benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu `F_TOD_TO_DT` konvertiert dieser Baustein in die entgegengesetzte Richtung.
 - Ähnliche Bausteine wie `F_DT_TO_DATE` oder `F_DT_TO_TIME` extrahieren andere Teile eines DT-Werts.
 

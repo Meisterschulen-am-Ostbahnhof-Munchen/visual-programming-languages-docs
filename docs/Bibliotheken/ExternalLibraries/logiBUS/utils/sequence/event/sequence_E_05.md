@@ -75,7 +75,7 @@ Beim Verlassen eines aktiven Zustands wird ein *Exit Step* (z.B. `State_01_X`) a
 *   **Manuelle Bediensequenzen:** Abarbeitung einer vom Bediener vorgegebenen Reihenfolge, z.B. in einer Maschineneinrichtung ("Schritt 1 freigeben" → "Schritt 2 freigeben").
 *   **Synchronisation mit übergeordneten Steuerungen:** Die Sequenz dient als Unterprogramm einer Hauptsteuerung, die den Fortschritt über die Ereignisse vorgibt.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einem zyklisch ablaufenden Sequenzer (z.B. `CYCLE_5`), der nach einer festen Zeit automatisch weiter schaltet, verharrt `sequence_E_05` in jedem Zustand, bis das entsprechende Weitereignis eintrifft. Dies macht ihn deterministischer in Bezug auf externe Bedingungen, erfordert aber eine zuverlässige Ereignisgenerierung durch die Peripherie oder übergeordnete Logik. Er ist einfacher und transparenter als ein kompletter Schrittkettenbaustein (SFC) für feste, lineare Abfolgen.
 
 ## Fazit

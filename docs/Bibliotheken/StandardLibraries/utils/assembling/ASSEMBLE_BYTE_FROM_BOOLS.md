@@ -49,7 +49,7 @@ Bei Auslösung des Ereignisses `REQ` werden die aktuellen Werte der booleschen E
 - Komprimierung von booleschen Statusinformationen für effizientere Datenübertragung.
 - Verwendung in Steuerungssystemen, wo mehrere boolesche Signale als ein Byte verarbeitet werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu manuellen Bit-Operationen in ST oder anderen Sprachen bietet dieser Baustein eine vordefinierte und wartungsfreundliche Lösung.
 - Ähnliche Bausteine könnten weniger Eingänge haben oder zusätzliche Features wie invertierte Logik bieten, was hier nicht der Fall ist.
 
@@ -58,7 +58,7 @@ Bei Auslösung des Ereignisses `REQ` werden die aktuellen Werte der booleschen E
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_035a1b_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_035a1b_AX.md)
 * [Uebung_053](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_053.md)

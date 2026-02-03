@@ -1,4 +1,4 @@
-# Normen und Standards
+# 📏 Normen und Standards
 
 ```{index} single: Normen und Standards
 ```

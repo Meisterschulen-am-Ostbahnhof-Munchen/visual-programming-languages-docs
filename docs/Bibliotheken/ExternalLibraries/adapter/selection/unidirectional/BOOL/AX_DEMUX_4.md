@@ -54,7 +54,7 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 - Selektive Datenweiterleitung basierend auf Prioritäten oder Zielgruppen
 - Routing von Kommunikationsdaten in Netzwerkarchitekturen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Multiplexern bietet AX_DEMUX_4 vier feste Ausgänge mit Adapter-basierter Schnittstelle, was eine höhere Flexibilität in verteilten Systemen ermöglicht. Die Verwendung von Standard-AX-Adaptern gewährleistet Kompatibilität mit anderen 4diac-Komponenten.
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)

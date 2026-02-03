@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Protokollierung von numerischen Daten in Textform.
 - Kommunikation mit Systemen, die Zeichenketten erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_DWORD_AS_WSTRING` spezialisiert auf die Konvertierung von DWORD zu WSTRING und daher effizienter in diesem spezifischen Anwendungsfall.
 - Andere Bausteine könnten zusätzliche Parameter oder Zustände haben, was hier nicht notwendig ist.
 

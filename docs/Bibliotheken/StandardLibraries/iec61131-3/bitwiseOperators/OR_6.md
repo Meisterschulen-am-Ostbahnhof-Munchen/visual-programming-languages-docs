@@ -58,7 +58,7 @@ Nach Abschluss der Berechnung wird das CNF-Ereignis zusammen mit dem Ergebniswer
 - **Signalverarbeitung**: Verknüpfung mehrerer digitaler Signale
 - **Datenfilterung**: Selektive Aktivierung von Bits aus verschiedenen Quellen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **OR_2**: Verarbeitet nur zwei Eingänge
 - **OR_4**: Verarbeitet vier Eingänge
 - **GEN_OR**: Generische Basisimplementierung, die OR_6 erweitert

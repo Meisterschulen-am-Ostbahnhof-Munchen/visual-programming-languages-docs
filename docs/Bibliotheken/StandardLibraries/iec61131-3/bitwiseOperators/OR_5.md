@@ -58,7 +58,7 @@ OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5
 - Signalverarbeitung in industriellen Automatisierungssystemen
 - Verwendung in Sicherheitsschaltungen mit mehreren Überwachungssensoren
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **Standard OR-Bausteine**: Typischerweise nur zwei Eingänge, OR_5 bietet fünf Eingänge
 - **AND-Bausteine**: Führen UND-Verknüpfungen statt ODER-Verknüpfungen durch
 - **XOR-Bausteine**: Führen exklusive ODER-Operationen durch

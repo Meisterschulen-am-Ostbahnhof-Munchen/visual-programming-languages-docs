@@ -58,7 +58,7 @@ Die definierten Konstanten umfassen folgende Zustände:
 - Zustandsüberwachung von Hilfsfunktionen in mobilen Arbeitsmaschinen
 - Implementierung von standardisierten Eingabezuständen in landwirtschaftlichen Steuerungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken mit aktiver Logik handelt es sich bei AuxiliaryState um passive Konstantendefinitionen, die als Referenzwerte in anderen Funktionsblöcken verwendet werden können. Sie bieten eine standardisierte Möglichkeit, Auxiliary-Zustände in ISOBUS-Umgebungen zu definieren.
 
 ## Fazit

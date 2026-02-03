@@ -59,7 +59,7 @@ Der SUBSCRIBE_8 Block initialisiert sich über das INIT-Ereignis und stellt dabe
 - Kommunikation zwischen verschiedenen Steuerungskomponenten
 - Systeme mit Publish-Subscribe-Architektur
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Subscribe-Blöcken bietet SUBSCRIBE_8 die Möglichkeit, bis zu 8 verschiedene Datenwerte parallel zu empfangen. Die Verwendung des ANY-Datentyps ermöglicht eine höhere Flexibilität als typspezifische Subscribe-Blöcke.
 
 ## Fazit

@@ -72,7 +72,7 @@ Der **Q_ESC** ist ein standardkonformer Funktionsbaustein zur Abbruchsteuerung i
 - **Menünavigation**: Zurück-Funktionalität
 - **Systemreset**: Abbruch aller aktiven Operationen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ESC       | VtAbortCmd  | VtCancelOp  |
 |---------------|-------------|-------------|-------------|

@@ -47,7 +47,7 @@ Die Funktionalität des `E_CYCLE` basiert intern auf einer Rückkopplungsschleif
 - **Watchdog**: Periodisches Senden eines "Lebenszeichens". Wenn das Signal ausbleibt, kann ein Fehler erkannt werden.
 - **Testautomatisierung**: Generierung von periodischen Stimuli für zu testende Systeme.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal      | E_CYCLE                 | E_DELAY                      | E_PULSE (hypothetisch)       |
 |--------------|-------------------------|------------------------------|------------------------------|
@@ -60,7 +60,7 @@ Die Funktionalität des `E_CYCLE` basiert intern auf einer Rückkopplungsschleif
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_007](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_007.md)
 * [Uebung_007_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_007_AX.md)

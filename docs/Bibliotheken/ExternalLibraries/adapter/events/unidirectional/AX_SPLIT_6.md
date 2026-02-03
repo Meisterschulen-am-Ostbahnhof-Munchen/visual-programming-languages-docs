@@ -57,7 +57,7 @@ Der Baustein besitzt einen einfachen Zustand:
 - Signalverteilung in redundanten Systemen
 - Multi-Casting von Steuerbefehlen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Splitter-Bausteinen bietet AX_SPLIT_6 eine feste Anzahl von sechs Ausgängen, was für spezifische Anwendungsfälle vorteilhaft ist. Andere Splitter können variabel mehr oder weniger Ausgänge bieten, sind aber möglicherweise komplexer in der Konfiguration.
 
 Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)

@@ -55,7 +55,7 @@ Der Baustein verfügt über zwei Hauptbetriebszustände:
 - Landwirtschaftliche und baumaschinenspezifische Anwendungen
 - Anbindung von Wort-basierten Ausgabegeräten über UT-Protokoll
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet Aux_Val1_QW erweiterte Funktionen für ISOBUS-Umgebungen, einschließlich Parametrierbarkeit, Statusrückmeldungen und Unterstützung verschiedener Auxiliary-Gerätetypen. Die WORD-Datenbreite ermöglicht die Ansteuerung komplexerer Peripheriegeräte im Vergleich zu einfachen BOOL-Ausgabeblöcken.
 
 ## Fazit

@@ -61,7 +61,7 @@ Der Baustein kann vereinfacht in folgende Hauptzustände übergehen:
 *   **Maschinen- und Flottenmanagement**: Ortung von landwirtschaftlichen oder kommunalen Fahrzeugen innerhalb eines Betriebsgeländes.
 *   **Assistenzsysteme**: Grundlage für kollisionsvermeidende Systeme oder automatische Lenksysteme, die eine genaue und standardisierte Positionsinformation benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Generische Eingangsbausteinen (z. B., `E_SR`, `E_RTRIG`)**: Diese bieten grundlegende Einlese- oder Triggerfunktionen, sind aber nicht auf die Verarbeitung eines spezifischen ISOBUS-PGNs ausgelegt. `I_VP1` hingegen enthält die komplette Logik zur Dekodierung, Skalierung und Fehlerbehandlung für PGN 65267.
 *   **Allgemeine ISOBUS-Eingangsbausteinen**: Es könnten allgemeinere Bausteinen existieren, die verschiedene PGNs einlesen. `I_VP1` ist spezialisiert und optimiert für die effiziente und zuverlässige Verarbeitung von Fahrzeugpositionsdaten, was die Konfiguration vereinfacht und die Fehleranfälligkeit verringert.
 

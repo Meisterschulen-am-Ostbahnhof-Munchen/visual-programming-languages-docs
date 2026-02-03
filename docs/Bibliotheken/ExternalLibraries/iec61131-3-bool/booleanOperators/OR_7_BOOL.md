@@ -58,7 +58,7 @@ Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten
 *   **Freigabelogik:** Kombinieren mehrerer Freigabesignale (z.B. aus verschiedenen Sicherheitssystemen) für einen Prozessschritt. Der Prozess startet, wenn mindestens eine Bedingung erfüllt ist.
 *   **Verknüpfung von Sensoren:** Auswerten mehrerer Grenzwertmelder, um zu prüfen, ob mindestens ein Sensor einen Schwellenwert überschritten hat.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **AND_7_BOOL:** Führt eine logische UND-Verknüpfung durch. Der Ausgang ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind.
 *   **XOR_7_BOOL:** Führt eine exklusiv-ODER (XOR) Verknüpfung durch. Der Ausgang ist `TRUE`, wenn eine ungerade Anzahl an Eingängen `TRUE` ist.
 *   **OR_n_BOOL (n=2,4,...):** Bausteine derselben Familie, die die ODER-Funktion für eine unterschiedliche, festgelegte Anzahl von Eingängen bereitstellen. Die Wahl des Bausteins hängt von der benötigten Anzahl an Signalen ab. Siehe: [OR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_7.md)

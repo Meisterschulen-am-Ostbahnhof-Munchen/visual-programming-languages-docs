@@ -41,7 +41,7 @@ Die Eingänge werden logisch ODER-verknüpft und ohne Priorisierung oder Verzög
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_004a2_2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a2_2.md)
 

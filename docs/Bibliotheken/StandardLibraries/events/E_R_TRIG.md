@@ -53,7 +53,7 @@ Laut XML-Spezifikation besteht der Baustein aus:
 - **Maschinensicherheit**: Detektion eines Start- oder Freigabesignals.
 - **Prozesssteuerung**: Starten eines Prozesses, wenn ein Signal `TRUE` wird.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | E_R_TRIG (dieser) | E_F_TRIG | E_D_FF |
 |---------------|----------|----------|--------|
@@ -66,7 +66,7 @@ Laut XML-Spezifikation besteht der Baustein aus:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_089](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_089.md)
 

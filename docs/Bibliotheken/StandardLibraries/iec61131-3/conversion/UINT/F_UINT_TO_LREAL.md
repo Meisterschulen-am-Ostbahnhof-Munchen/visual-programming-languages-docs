@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, indem der UINT-Wert von `IN` 
 - **Messwertverarbeitung**: Umwandlung von diskreten Sensorwerten (z.B. ADC-Rohdaten) in Gleitkommawerte für weitere Berechnungen.
 - **Datenkommunikation**: Konvertierung von ganzzahligen Werten für die Verwendung in Gleitkommaoperationen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_LREAL**: Konvertiert einen vorzeichenbehafteten Integer (INT) zu LREAL.
 - **F_DINT_TO_LREAL**: Konvertiert einen 32-Bit-Integer (DINT) zu LREAL.
 - **F_ULINT_TO_LREAL**: Konvertiert einen 64-Bit-unsigned Integer (ULINT) zu LREAL.

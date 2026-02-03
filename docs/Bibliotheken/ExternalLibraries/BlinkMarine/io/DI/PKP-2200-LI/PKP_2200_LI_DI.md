@@ -45,7 +45,7 @@ Die PKP_2200_LI_DI definiert globale Konstanten vom Typ `PKP_2200_LI_DI_S`, die 
 - Vereinfachung der Pin-Zuordnung in IEC 61499-Applikationen
 - Fehlerbehandlung durch definierten ungültigen Zustand
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken mit aktiver Logik handelt es sich hier um eine reine Konstantendefinition, die keine aktive Verarbeitung durchführt. Sie dient ausschließlich der zentralen Verwaltung von Hardware-Konfigurationen.
 
 ## Fazit

@@ -54,7 +54,7 @@ Der SUBSCRIBE_9 Block initialisiert bei Empfang des INIT-Ereignisses eine Verbin
 - Überwachungssysteme mit zentraler Datensammlung
 - Anlagen mit mehreren dezentralen Sensorknoten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren SUBSCRIBE-Blöcken bietet SUBSCRIBE_9 die Möglichkeit, bis zu 9 verschiedene Datenpunkte gleichzeitig zu empfangen, was die Effizienz in komplexeren Netzwerkstrukturen erhöht.
 
 ## Fazit

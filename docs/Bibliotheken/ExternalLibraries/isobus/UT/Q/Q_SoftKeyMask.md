@@ -81,7 +81,7 @@ Der **Q_SoftKeyMask** ist ein standardkonformer Funktionsbaustein zur Verwaltung
 - **Maskenhierarchien**: Dynamische Tastenbelegungen
 - **Benutzerführung**: Adaptive Bedienoberflächen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_SoftKeyMask | VtKeyMapping | VtMaskLinker |
 |---------------|---------------|--------------|--------------|

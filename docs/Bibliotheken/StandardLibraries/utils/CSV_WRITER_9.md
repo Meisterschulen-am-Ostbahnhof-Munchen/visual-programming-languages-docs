@@ -52,7 +52,7 @@ Es sind keine Adapter definiert.
 - Protokollierung von Prozessdaten in einer standardisierten CSV-Datei.
 - Integration in größere Automatisierungslösungen zur Datenverarbeitung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfacheren CSV-Writer-Funktionsblöcken bietet der CSV_WRITER_9 die Möglichkeit, bis zu neun Datenpunkte gleichzeitig zu schreiben.
 - Andere Funktionsblöcke könnten weniger Flexibilität bei den Datentypen bieten, da `ANY` verwendet wird.
 

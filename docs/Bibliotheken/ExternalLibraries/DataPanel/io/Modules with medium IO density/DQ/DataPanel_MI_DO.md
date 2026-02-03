@@ -43,7 +43,7 @@ Die globale Konstante DataPanel_MI_DO definiert feste Pin-Zuordnungen für ein D
 - Wiederverwendbare Konstantendefinitionen in größeren Automatisierungsprojekten
 - Hardware-abstrakte Programmierung durch symbolische Pin-Namen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einzelnen Pin-Definitionen bietet diese globale Konstante:
 - Zentrale Verwaltung aller Pin-Zuordnungen
 - Typisierte Zugriffsmöglichkeiten durch strukturierte Datentypen

@@ -78,7 +78,7 @@ Der **Q_ChildPosition** ist ein standardkonformer Funktionsbaustein zur absolute
 - **Komplexe Anordnungen**: Mehrschichtige Oberflächen
 - **Maschinenvisualisierung**: Technische Zeichnungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_ChildPosition | Q_ChildLocation | VtAbsoluteMove |
 |---------------|-----------------|-----------------|----------------|

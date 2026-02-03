@@ -54,7 +54,7 @@ Bei Empfang des REQ-Ereignisses führt der AND_4-Baustein eine bitweise UND-Verk
 - Logische Verknüpfungen mehrerer digitaler Signale
 - Filteroperationen in Datenverarbeitungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-AND-Blöcken mit weniger Eingängen bietet AND_4 die Möglichkeit, vier Signale gleichzeitig zu verknüpfen, was komplexere logische Operationen in einem einzigen Schritt ermöglicht. Gegenüber sequenziellen AND-Verknüpfungen mehrerer Blöcke bietet AND_4 eine kompaktere Lösung mit besserer Übersichtlichkeit.
 
 ## Fazit

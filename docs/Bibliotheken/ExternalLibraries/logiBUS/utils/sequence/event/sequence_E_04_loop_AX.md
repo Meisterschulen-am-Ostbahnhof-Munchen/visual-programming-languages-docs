@@ -46,7 +46,7 @@ Siehe `sequence_E_04_loop`.
 ## Anwendungsszenarien
 Für zyklische ereignisgesteuerte Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_E_04_loop**: Standardvariante ohne Adapter.
 
 ## Fazit

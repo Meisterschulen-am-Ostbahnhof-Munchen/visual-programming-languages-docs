@@ -43,7 +43,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Integration in bestehende Systeme, die unterschiedliche Datentypen verwenden.
 - Verwendung in mathematischen Berechnungen, die eine höhere Präzision erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine wie `F_INT_TO_REAL` oder `F_DINT_TO_LINT` führen ebenfalls Typumwandlungen durch, jedoch zwischen anderen Datentypen.
 - Im Gegensatz zu komplexen Konvertierungsbausteinen bietet `F_REAL_TO_LREAL` eine einfache und direkte Umwandlung ohne zusätzliche Parameter oder Logik.
 

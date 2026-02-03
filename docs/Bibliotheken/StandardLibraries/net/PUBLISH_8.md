@@ -54,7 +54,7 @@ Der Block verfügt über zwei Hauptzustände:
 - Einsatz in SPS-Systemen für Maschine-zu-Maschine-Kommunikation
 - Verwendung in Industrie-4.0-Anwendungen für flexible Datenverteilung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren PUBLISH-Blöcken bietet PUBLISH_8 die Möglichkeit, bis zu acht verschiedene Datenwerte parallel zu verteilen, was eine höhere Datendichte pro Kommunikationszyklus ermöglicht. Die Verwendung von ANY-Typen bietet maximale Flexibilität bei den zu übertragenden Datentypen.
 
 ## Fazit

@@ -67,7 +67,7 @@ Der Funktionsblock unterstützt mehrere Service-Sequenzen:
 - Laufzeit-Anpassung von Funktionsblock-Architekturen
 - Wartung und Updates von Automatisierungsanlagen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu statischen Funktionsblöcken ermöglicht ST_DEL_FB die dynamische Verwaltung von FB-Instanzen zur Laufzeit. Er unterscheidet sich von Erstellungs-Bausteinen durch seine spezifische Löschfunktionalität und bietet damit komplementäre Funktionalität für vollständige Lebenszyklusverwaltung.
 

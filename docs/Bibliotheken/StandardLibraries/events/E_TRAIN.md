@@ -49,7 +49,7 @@ Der `E_TRAIN` (Event Train) ist ein Funktionsbaustein nach IEC 61499, der eine e
 - **Dosierprozesse**: Auslösen von `N` Dosiervorgängen im Abstand von `DT`.
 - **Testsequenzen**: Senden einer definierten Anzahl von Test-Triggern an ein zu prüfendes Gerät.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal       | E_TRAIN | E_CYCLE | E_TABLE |
 |--------------|-----------|---------|-----------|
@@ -62,7 +62,7 @@ Der `E_TRAIN` (Event Train) ist ein Funktionsbaustein nach IEC 61499, der eine e
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_035a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a2.md)
 * [Uebung_035a2_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_035a2_AX.md)

@@ -66,7 +66,7 @@ Der **F_TRUNC** ist ein standardkonformer Funktionsbaustein zur Abrundung von Fl
   - NaN → 0
   ±INF → Maximalwert des Zieltyps
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | F_TRUNC  | F_ROUND  | F_FLOOR  |
 |---------------|----------|----------|----------|

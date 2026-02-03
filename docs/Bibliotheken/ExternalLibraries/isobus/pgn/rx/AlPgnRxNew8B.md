@@ -63,7 +63,7 @@ Der Block verfügt über implizite Zustände:
 *   **Anhängerkommunikation**: Empfang von Statusinformationen (Bremsdruck, Beleuchtung, Türkontakte) von einem intelligenten Anhänger.
 *   **Implementüberwachung**: Empfang von Echtzeitdaten von Sensoren an einem Gerät (z.B. Saatgutfluss, Arbeitsbreite).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Generische CAN-Empfangsblöcke**: Im Gegensatz zu generischen `CAN_RX`-Blöcken, die Roh-CAN-IDs und Daten verarbeiten, abstrahiert `AlPgnRxNew8B` die ISOBUS-spezifische PGN-Adressierung und -Verwaltung.
 *   **`E_SR` (Service Interface Function Block)**: Während `E_SR` ein generisches Server-Request-Muster für Dienste bereitstellt, ist `AlPgnRxNew8B` speziell auf den zyklischen oder ereignisgesteuerten Empfang von ISOBUS-Nachrichten ausgelegt.
 *   **Blöcke für andere Protokolle**: Ähnliche Blöcke existieren für andere höhere Protokolle (z.B. J1939), unterscheiden sich aber in den spezifischen Adressierungs- und Nachrichtenformaten.
@@ -71,7 +71,7 @@ Der Block verfügt über implizite Zustände:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_130](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_130.md)
 * [Uebung_134](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_134.md)

@@ -41,7 +41,7 @@ Die Logik entspricht exakt dem `sequence_ET_04_04`. Der entscheidende Unterschie
 ## Zustandsübersicht
 Siehe `sequence_ET_04_04`.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_ET_04_04**: Die Variante mit klassischen BOOL-Ausgängen und EO-Events.
 
 ## Fazit

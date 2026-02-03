@@ -55,7 +55,7 @@ Der Funktionsblock wird durch das INIT-Ereignis aktiviert und verarbeitet die be
 - Dynamische Rekonfiguration von Netzwerkeinstellungen
 - Integration in größere IO-Management-Systeme
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen ADS-IO-Blöcken bietet ADS_SERVER_CONFIG eine zentrale Konfigurationsmöglichkeit für mehrere nachgelagerte Blöcke. Er separiert die Konfigurationslogik von der eigentlichen Datenkommunikation und ermöglicht so wiederverwendbare Server-Einstellungen.
 
 ## Fazit

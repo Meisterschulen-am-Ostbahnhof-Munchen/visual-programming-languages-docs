@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung von `DINT` zu `ULINT` durch, sobald 
 - Integration von Komponenten, die vorzeichenlose 64-Bit Werte erfordern.
 - Erweiterung der Kompatibilität zwischen verschiedenen Systemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_ULINT**: Konvertiert einen kleineren vorzeichenbehafteten Integer (`INT`) zu `ULINT`.
 - **F_LINT_TO_ULINT**: Konvertiert einen 64-Bit vorzeichenbehafteten Integer (`LINT`) zu `ULINT`.
 - **F_DINT_TO_LINT**: Konvertiert `DINT` zu einem vorzeichenbehafteten 64-Bit Integer (`LINT`).

@@ -57,7 +57,7 @@ Der Funktionsblock verfügt über keine Adapter.
 - Export von Messdaten für externe Auswertungen.
 - Speicherung von Konfigurationsdaten in einem lesbaren Format.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfacheren Schreibfunktionsblöcken unterstützt `CSV_WRITER_2` zwei Datenfelder und bietet eine detaillierte Statusrückmeldung.
 - Andere CSV-Schreibfunktionsblöcke könnten weniger flexibel in der Datentypunterstützung sein oder keine Statusrückmeldung bieten.
 

@@ -50,7 +50,7 @@ Der Funktionsblock besitzt einen einzigen, stabilen Zustand:
 *   **Initialwert-Kompensation:** Zur Eliminierung eines systembedingten Grundoffsets (z.B. einer Vorspannung) bei der ersten gültigen Messung.
 *   **Zählbeginn-Normierung:** Wenn ein Zähler nicht bei 0 startet, kann der erste Wert gespeichert und von allen folgenden Werten subtrahiert werden, um eine Zählung ab 0 zu simulieren.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **SUB / DIF Bausteine:** Standard-Subtraktionsbausteine berechnen stets die Differenz zwischen zwei variablen Eingängen. `OFFSET_UDINT` hingegen friert einen der Operanden (`FIRST`) nach der ersten Operation ein und verwendet ihn fortan als festen Subtrahenden.
 *   **Schieberegister (FIFO) oder Verzögerungsbausteine:** Diese speichern eine Historie von Werten. `OFFSET_UDINT` speichert dagegen nur einen einzigen, initialen Wert dauerhaft.
 *   **Bausteine mit Merker (SR, RS):** Diese speichern einen binären Zustand. `OFFSET_UDINT` speichert einen spezifischen numerischen (`UDINT`) Startwert.
@@ -58,7 +58,7 @@ Der Funktionsblock besitzt einen einzigen, stabilen Zustand:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
 

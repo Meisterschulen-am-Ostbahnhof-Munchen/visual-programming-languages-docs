@@ -53,7 +53,7 @@ Keine Adapter vorhanden.
 - Datenerfassung für Analysezwecke.
 - Export von Messwerten in ein standardisiertes Format.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu einfacheren Schreib-FBs bietet CSV_WRITER_4 die Möglichkeit, mehrere Datenwerte gleichzeitig zu speichern.
 - Die Verwendung von ANY-Typen macht ihn flexibler als FBs mit festen Datentypen.
 

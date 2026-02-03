@@ -42,7 +42,7 @@ Der Funktionsblock führt die Konvertierung durch, wenn das Ereignis `REQ` empfa
 - Typumwandlung in Steuerungsanwendungen, bei denen `WORD`-Daten in `BYTE`-Daten umgewandelt werden müssen.
 - Integration in größere Steuerungssysteme, die eine kompatible Datentypkonvertierung erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsfunktionen bietet dieser Funktionsblock eine spezialisierte und optimierte Lösung für die Umwandlung von `WORD` zu `BYTE`.
 - Andere ähnliche Blöcke könnten zusätzliche Funktionen wie Fehlerbehandlung oder optionale Parameter bieten, was hier nicht der Fall ist.
 

@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Umwandlung von großen Ganzzahlen in Fließkommazahlen für mathematische Berechnungen.
 - Integration in Steuerungssysteme, die gemischte Datentypen verarbeiten müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_INT_TO_REAL` oder `F_DINT_TO_REAL` handelt `F_LINT_TO_LREAL` mit größeren Zahlenbereichen (64-Bit).
 
 ## Fazit

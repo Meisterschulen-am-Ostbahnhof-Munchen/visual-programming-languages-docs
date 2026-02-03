@@ -38,7 +38,7 @@ Primär dient dieser Baustein zur Parametrierung von Anzeigeelementen in ISOBUS-
 *   Dynamische Änderung von Symbolen und deren Hintergrund in Abhängigkeit vom Maschinenzustand (z.B. Warnung, Aktivität, Fehler).
 *   Standardisierung des Datenaustauschs zwischen Steuerungslogik und Visualisierungs-Funktionsblöcken.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken, die eine aktive Logik enthalten, ist `SchieberAuxOutStruct` ein reiner Datentyp. Ähnliche STRUCTs im gleichen Kontext könnten z.B. `SchieberAuxInStruct` für Eingabeparameter oder allgemeinere `DisplayElementStruct`-Bausteine sein, die möglicherweise zusätzliche Eigenschaften wie Position oder Größe enthalten. Dieser Baustein ist spezifisch auf die Kombination von Bild und Hintergrundfarbe zugeschnitten.
 
 ## Fazit

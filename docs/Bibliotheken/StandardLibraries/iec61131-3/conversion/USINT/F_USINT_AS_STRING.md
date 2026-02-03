@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Protokollierung von Messwerten in einer Textdatei oder Datenbank.
 - Vorbereitung von Daten für die Kommunikation über Textprotokolle (z.B. HTTP, MQTT).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_USINT_AS_STRING` spezialisiert auf die Konvertierung von USINT zu STRING und daher effizienter in dieser spezifischen Anwendung.
 - Andere Blöcke könnten zusätzliche Optionen wie Formatierung oder Locale-Einstellungen bieten, was hier nicht der Fall ist.
 

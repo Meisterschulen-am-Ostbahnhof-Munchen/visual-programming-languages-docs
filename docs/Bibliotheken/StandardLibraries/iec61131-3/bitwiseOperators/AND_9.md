@@ -45,7 +45,7 @@ Der Funktionsblock `AND_9` führt eine bitweise UND-Operation auf den Werten der
 - Filterung von Signalen durch logische Masken.
 - Implementierung von Sicherheitsfunktionen, bei denen mehrere Bedingungen gleichzeitig erfüllt sein müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **AND (Standard)**: Standardmäßig unterstützen viele PLC-Systeme nur UND-Operationen mit zwei Eingängen. `AND_9` erweitert diese Funktionalität auf bis zu neun Eingänge.
 - **GEN_AND**: Der generische AND-Block, auf dem `AND_9` basiert, kann für verschiedene Datentypen und eine variable Anzahl von Eingängen konfiguriert werden.
 

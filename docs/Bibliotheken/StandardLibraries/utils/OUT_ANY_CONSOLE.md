@@ -69,7 +69,7 @@ Der Baustein unterstützt die Ausgabe beliebiger Datentypen für Entwicklungs- u
 | "Status" | TRUE | "Status: TRUE" |
 | "" | 42 | "42" |
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature | OUT_ANY_CONSOLE | Standard-Debug | Erweitertes Logging |
 |---------|-----------------|----------------|---------------------|

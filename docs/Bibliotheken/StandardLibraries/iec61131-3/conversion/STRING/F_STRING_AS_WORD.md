@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt unmitte
 - Verwendung in Steuerungslogiken, die numerische Verarbeitung erfordern.
 - Integration in größere Automatisierungssysteme, die String- und Wort-Daten verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_STRING_TO_INT` oder `F_STRING_TO_REAL` konvertiert dieser Baustein spezifisch in den `WORD`-Datentyp.
 - Einfacher und direkter als Bausteine mit zusätzlichen Funktionen wie Fehlerbehandlung oder Formatierung.
 

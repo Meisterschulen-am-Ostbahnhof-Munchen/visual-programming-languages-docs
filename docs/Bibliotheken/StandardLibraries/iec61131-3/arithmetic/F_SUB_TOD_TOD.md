@@ -69,7 +69,7 @@ Der **F_SUB_TOD_TOD** ist ein standardkonformer Funktionsbaustein zur Berechnung
   - Maximale Differenz: ±T#23:59:59.999999
   - Keine Überlaufausnahme
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | F_SUB_TOD_TOD | F_SUB_DT_DT   | F_SUB_TIME   |
 |---------------|---------------|---------------|-------------|

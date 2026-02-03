@@ -40,7 +40,7 @@ Dieser Datentyp wird primär in Szenarien verwendet, in denen eine Applikation �
 *   Implementierung von benutzerdefinierter Logik beim Verbindungsaufbau oder -abbau zu einer bestimmten CF.
 *   Protokollierung von Netzwerkaktivitäten für Diagnosezwecke.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Innerhalb der 4diac-Typbibliothek existieren verschiedene strukturierte Datentypen für Kommunikationsprotokolle. Im Gegensatz zu generischen Kommunikationsstrukturen (wie z.B. für TCP/IP) ist `ISONETEVENT_T` hochspezialisiert auf die Ereignismeldungen des ISOBUS-Protokollstapels, insbesondere den Teil der Netzwerkverwaltung (NM). Andere ISOBUS-bezogene Typen könnten sich eher auf den Austausch von Prozessdaten (PGN-Daten) konzentrieren.
 
 ## Fazit

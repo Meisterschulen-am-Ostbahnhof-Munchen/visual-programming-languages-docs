@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Umwandlung von Benutzereingaben oder Kommunikationsdaten in numerische Werte.
 - Verwendung in Steuerungslogik, wo Zeichenketten in numerische Werte umgewandelt werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsblöcken wie `F_STRING_AS_INT` oder `F_STRING_AS_UINT` ist dieser Block speziell für die Umwandlung in `USINT`-Werte optimiert.
 
 ## Fazit

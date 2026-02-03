@@ -79,7 +79,7 @@ Die folgende Wahrheitstabelle beschreibt das Verhalten des Bausteins (wobei `Q_n
 *   **Start/Stop-Logik:** Realisierung von Maschinensteuerungen, bei denen das "Ein"-Signal (Setzen) Priorität hat oder eine dauerhafte Aktivierung sichergestellt werden muss, solange der Taster gedrückt ist.
 *   **Alarm-Handling:** Speichern von Alarmzuständen, die manuell quittiert (zurückgesetzt) werden müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 *   **SR (Standard):** Der `AX_FB_SR` entspricht logisch dem Standard-`SR` Baustein der IEC 61131-3, unterscheidet sich jedoch durch die Nutzung von `AX`-Adaptern anstelle von diskreten `BOOL`- und `EVENT`-Pins.
 *   **AX_FB_RS:** Dies ist das Gegenstück mit **Rücksetz-Dominanz**. Beim `AX_FB_RS` würde bei gleichzeitigem Anliegen von SET und RESET der Ausgang auf `FALSE` gehen.

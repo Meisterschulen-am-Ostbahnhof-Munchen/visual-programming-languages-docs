@@ -1,4 +1,4 @@
-# Vergleichsfunktionen
+# ⚖️ Vergleichsfunktionen
 
 ```{index} single: Vergleichsfunktionen
 ```

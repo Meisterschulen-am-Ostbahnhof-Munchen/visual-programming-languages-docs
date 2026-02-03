@@ -56,7 +56,7 @@ Der Block besitzt keinen internen Zustand im Sinne eines Speichers. Sein Verhalt
 *   **Mehrfachbedingung:** Prüfung, ob mehrere Voraussetzungen in einem Prozessschritt gleichzeitig erfüllt sind.
 *   **Verkettung von Logik:** Als Teil einer größeren logischen Schaltung, wo das Ergebnis von neun Quellen gemeinsam ausgewertet werden muss.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`AND` (2 Eingänge):** Der Standard-UND-Baustein mit nur zwei Eingängen. `AND_9_BOOL` ist eine spezielle, erweiterte Version für genau neun Eingänge. Siehe: [AND_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_9.md)
 *   **`GEN_AND`:** Der zugrunde liegende generische Baustein, der mit einer konfigurierbaren Anzahl von Eingängen instanziiert werden kann. `AND_9_BOOL` ist eine vordefinierte Instanz davon.
 *   **`OR_*` / `XOR_*` Bausteine:** Führen andere logische Grundoperationen (ODER, exklusives ODER) mit einer festen Anzahl von Eingängen durch.

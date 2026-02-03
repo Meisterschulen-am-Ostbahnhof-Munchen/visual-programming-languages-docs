@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Konvertierung von 64-Bit-Datenwerten für Systeme, die nur 16-Bit-Daten verarbeiten können.
 - Datenreduktion, wenn nur der untere 16-Bit-Teil eines 64-Bit-Werts relevant ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - `F_DWORD_TO_INT`: Konvertiert einen 32-Bit-Wert in einen 16-Bit-Wert.
 - `F_LWORD_TO_DINT`: Konvertiert einen 64-Bit-Wert in einen 32-Bit-Wert.
 - `F_LWORD_TO_SINT`: Konvertiert einen 64-Bit-Wert in einen 8-Bit-Wert.

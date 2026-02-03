@@ -48,7 +48,7 @@ Der Funktionsblock ist zustandslos (stateless). Sein Verhalten ist bei jedem `RE
 *   **Visualisierung:** Aufbereitung von Daten für Visualisierungssysteme (HMIs), die einzelne Schaltzustände oft als separate boolesche Lampen oder Indikatoren darstellen.
 *   **Schnittstelle zu Bit-orientierter Logik:** Bereitstellung einzelner Bits für nachfolgende Funktionsblöcke, die mit boolescher Logik arbeiten (AND, OR, NOT, FlipFlops), anstatt mit ganzen Bytes.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`BYTE_TO_BOOL` (oder ähnlich benannte Blöcke):** Viele Bibliotheken bieten Blöcke an, die ein Byte in acht separate BOOL-Ausgänge konvertieren. `BYTE_TO_ARR08X` unterscheidet sich dadurch, dass es die Bits in einem strukturierten **Array** ausgibt, was die Verkabelung in der 4diac IDE vereinfacht, da nur ein Datenausgang benötigt wird. Die Handhabung in ST-Code ist ebenfalls kompakter.
 *   **Bitweises Auslesen mittels `AND` & Vergleichen:** Die gleiche Funktionalität könnte durch eine Reihe von Vergleichen (`(IN AND 16#01) = 1` etc.) erreicht werden. Der `BYTE_TO_ARR08X`-Block kapselt diese Logik in einem wiederverwendbaren, leicht verständlichen Baustein.
 *   **Gegenstück `ARR08X_TO_BYTE`:** Ein komplementärer Baustein, der ein Array von acht BOOLs zu einem Byte zusammenfasst, würde die umgekehrte Operation durchführen.

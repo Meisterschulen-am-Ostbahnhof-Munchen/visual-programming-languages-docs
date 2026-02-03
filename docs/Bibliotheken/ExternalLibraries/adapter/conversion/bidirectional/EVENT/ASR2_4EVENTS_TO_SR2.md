@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keinen internen Zustand, da er ausschließlich als Du
 - Adapter-Lösungen für bestehende Automatisierungssysteme
 - Bidirektionale Kommunikation zwischen verschiedenen Ereignisformaten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Ereignis-Bausteinen bietet ASR2_4EVENTS_TO_SR2 spezifische Adapter-Funktionalität für das ASR2-Format. Während Standard-Bausteine typischerweise nur unidirektionale Signalverarbeitung bieten, ermöglicht dieser Baustein bidirektionale Kommunikation mit ASR2-kompatiblen Systemen.
 
 ## Fazit

@@ -42,7 +42,7 @@ Die globalen Konstanten stellen numerische Werte für verschiedene LED-Betriebsm
 - Visualisierung von Betriebszuständen mit unterschiedlicher Dringlichkeit
 - Mehrkanalige LED-Steuerung mit Prioritätsverwaltung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken mit dynamischer Verhaltenssteuerung bietet LED_FREQ statische, vordefinierte Betriebsmodi mit festen Prioritäten. Dies ermöglicht eine einfachere Implementierung bei bekannten, standardisierten Anzeigeanforderungen.
 
 ## Fazit

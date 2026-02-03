@@ -75,7 +75,7 @@ Die ECC besteht aus sechs Zuständen:
 *   **Ampelschaltungen**: Modellierung einer einfachen Lichtsignalanlage mit mehreren Phasen, wobei jede Phase eine feste Zeit dauern oder vorzeitig beendet werden kann.
 *   **Batch-Prozesse**: Abarbeitung von Chargenprozessen, bei denen einzelne Schritte entweder durch Sensoren (Ereignisse) oder nach einer Mindestzeit beendet werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einfachen Timer-Blöcken oder Flip-Flops orchestriert dieser FB eine komplette, zustandsbasierte Sequenz. Im Vergleich zu einem `E_CYCLE`-Block bietet er eine explizite Zustandslogik mit klaren Übergangsbedingungen und der Möglichkeit, jeden Schritt individuell zu triggern. Er ist spezialisierter und strukturierter als eine selbst programmierte Sequenz aus `E_SR`- und `E_DELAY`-Blöcken.
 
 
@@ -83,7 +83,7 @@ Im Gegensatz zu einfachen Timer-Blöcken oder Flip-Flops orchestriert dieser FB 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_037](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_037.md)
 

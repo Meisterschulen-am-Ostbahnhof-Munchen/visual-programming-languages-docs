@@ -2,7 +2,7 @@
 
 ```{index} single: DualOut ESP32S3
 ```
-## IO
+## 🔌 IO
 
 ### Digitale Ausgänge
 
@@ -14,7 +14,7 @@ Diese Version ist erkennbar weil sie einen 6-poligen SKEDD Stecker hat und zusä
 | Output_Q2 | 46            |
 
 # DualOut ESP32S3 (alte Version)
-## IO
+## 🔌 IO
 
 ### Digitale Ausgänge
 

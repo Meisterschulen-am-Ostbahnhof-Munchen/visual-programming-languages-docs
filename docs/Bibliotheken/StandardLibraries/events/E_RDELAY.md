@@ -62,7 +62,7 @@ Der **E_RDELAY** (Reloadable Delay) ist ein erweiterter Verzögerungsbaustein na
 - **Alarmsysteme**: Störmeldungsverzögerung
 - **Robotersteuerung**: Bewegungsablauf-Timing
 
-## Vergleich mit E_DELAY
+## ⚖️ Vergleich mit E_DELAY
 
 | Feature        | E_RDELAY | E_DELAY |
 |---------------|----------|---------|
@@ -73,7 +73,7 @@ Der **E_RDELAY** (Reloadable Delay) ist ein erweiterter Verzögerungsbaustein na
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_018a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_018a.md)
 

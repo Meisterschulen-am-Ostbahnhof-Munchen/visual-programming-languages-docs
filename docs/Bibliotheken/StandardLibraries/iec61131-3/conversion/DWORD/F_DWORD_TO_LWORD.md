@@ -41,7 +41,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung erfolgt unmitt
 - Erweiterung der Datenbreite für nachfolgende Verarbeitungsschritte.
 - Kompatibilitätsanpassung zwischen Systemen, die unterschiedliche Datenbreiten verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen (z.B. `F_WORD_TO_DWORD`) ist dieser Funktionsblock speziell für die Konvertierung von 32-Bit- zu 64-Bit-Werten optimiert.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Skalierung oder Offset-Anpassung bieten, was hier nicht der Fall ist.
 

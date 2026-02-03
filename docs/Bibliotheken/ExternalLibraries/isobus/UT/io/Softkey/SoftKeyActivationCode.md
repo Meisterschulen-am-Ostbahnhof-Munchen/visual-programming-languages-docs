@@ -33,7 +33,7 @@ Die Konstanten repräsentieren verschiedene Aktivierungszustände von SoftKeys i
 - Implementierung von SoftKey-Interaktionen in Virtual Terminal Applikationen
 - Zustandsüberwachung von Benutzereingaben in Echtzeit-Steuerungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken bieten globale Konstanten keine aktive Funktionalität, sondern dienen lediglich der Vereinheitlichung von Zustandswerten. Sie sind vergleichbar mit ENUM-Definitionen in anderen Programmiersprachen.
 
 ## Fazit

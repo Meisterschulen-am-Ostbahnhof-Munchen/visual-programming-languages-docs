@@ -78,7 +78,7 @@ Der **Q_NumericValue** ist ein standardkonformer Funktionsbaustein zur Änderung
 - **Diagnosesysteme**: Fehlercode-Anzeige
 - **Produktionsdaten**: Zähler und Statistiken
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_NumericValue | VtNumberUpdate | VtDataManager |
 |---------------|----------------|----------------|---------------|
@@ -92,7 +92,7 @@ Der **Q_NumericValue** ist ein standardkonformer Funktionsbaustein zur Änderung
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_009](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009.md)
 * [Uebung_009a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009a.md)

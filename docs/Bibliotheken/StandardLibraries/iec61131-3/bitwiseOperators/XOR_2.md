@@ -56,7 +56,7 @@ Nach Abschluss der Berechnung wird das Ergebnis über den OUT-Ausgang ausgegeben
 - **Steuerungstechnik**: Logische Verknüpfungen in Automatisierungssystemen
 - **Datenvergleich**: Erkennung von Unterschieden zwischen Datenwerten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen logischen Bausteinen bietet XOR_2:
 - **Flexibilität**: Unterstützung verschiedener Bit-Längen durch ANY_BIT-Typ
 - **Spezifische Logik**: Exklusive ODER-Operation im Gegensatz zu AND/OR-Operationen

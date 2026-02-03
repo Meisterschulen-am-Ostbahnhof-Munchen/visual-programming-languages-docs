@@ -54,7 +54,7 @@ Da es sich um einen Composite Function Block handelt, besitzt er keine eigene Zu
 *   **Blinken**: Ansteuerung von Signalleuchten (in Kombination mit Toggle-Logik).
 *   **Zeitgesteuerte Abläufe**: Takterzeugung für Schrittketten oder periodische Berechnungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **E_CYCLE**: Dies ist das direkte Standard-Pendant aus der IEC 61499 Bibliothek. `E_CYCLE` bietet die gleiche Funktionalität, nutzt jedoch einen direkten `EO`-Event-Ausgang statt eines Adapters.
 *   **E_DELAY**: `AE_CYCLE` basiert auf `E_DELAY`. Während `E_DELAY` ein Ereignis nur einmalig verzögert weiterleitet, sorgt `AE_CYCLE` durch die interne Verschaltung für eine endlose Wiederholung.
 *   **E_TRAIN**: Erzeugt eine begrenzte Anzahl von Impulsen (Pulse Train), während `AE_CYCLE` unendlich läuft, bis er gestoppt wird.

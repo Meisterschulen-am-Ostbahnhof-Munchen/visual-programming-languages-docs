@@ -45,7 +45,7 @@ Der Funktionsblock `F_MID` extrahiert eine Teilzeichenkette aus der Eingabezeich
 - Extraktion von Teilzeichenketten aus längeren Texten oder Datenstrings.
 - Verwendung in String-Verarbeitungsroutinen, z.B. zur Parsing von Datenformaten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_LEFT` oder `F_RIGHT` extrahieren Teilzeichenketten vom Anfang oder Ende einer Zeichenkette, während `F_MID` eine flexible Extraktion ab einer beliebigen Position ermöglicht.
 
 ## Fazit

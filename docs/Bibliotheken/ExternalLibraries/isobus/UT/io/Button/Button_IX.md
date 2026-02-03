@@ -58,7 +58,7 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 - ISOBUS-kompatible Landmaschinensteuerungen
 - Sicherheitskritische Eingabesysteme mit Statusüberwachung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingabeblöcken bietet Button_IX erweiterte Funktionalitäten wie:
 - Parametrierbare Service-Konfiguration
 - Detaillierte Statusrückmeldungen
@@ -68,7 +68,7 @@ Im Vergleich zu einfachen digitalen Eingabeblöcken bietet Button_IX erweiterte 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_010a2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010a2.md)
 * [Uebung_010a3](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010a3.md)

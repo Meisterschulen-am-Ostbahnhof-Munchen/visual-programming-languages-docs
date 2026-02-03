@@ -50,14 +50,14 @@ Der Funktionsblock nimmt vier Quarter-Bytes entgegen und kombiniert sie zu einem
 - **Datenkommunikation**: Kombination von in Teilen übertragenen Daten zu einem vollständigen Byte.
 - **Datenverarbeitung**: Verarbeitung von Daten, die in kleineren Einheiten vorliegen, aber als Ganzes benötigt werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Bit-Manipulations-Funktionsblöcken bietet `ASSEMBLE_BYTE_FROM_QUARTERS` eine spezialisierte und optimierte Lösung für die Kombination von Quarter-Bytes.
 - Andere Blöcke könnten ähnliche Funktionalität bieten, sind jedoch oft weniger spezifisch und erfordern mehr Konfiguration.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_056](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
 

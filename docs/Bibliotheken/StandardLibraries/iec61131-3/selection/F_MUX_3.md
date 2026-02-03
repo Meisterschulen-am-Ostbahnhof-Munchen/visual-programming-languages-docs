@@ -47,7 +47,7 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weiterleitung e
 - Auswahl zwischen verschiedenen Sensordaten.
 - Dynamische Konfiguration von Signalpfaden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - `F_MUX_2`: Ein einfacherer Multiplexer mit nur zwei Eingängen.
 - `F_SEL`: Ein allgemeinerer Selektor, der möglicherweise komplexere Auswahlkriterien unterstützt.
 
@@ -56,7 +56,7 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weiterleitung e
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_090a2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_090a2.md)
 

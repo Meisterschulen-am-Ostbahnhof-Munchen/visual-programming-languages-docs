@@ -43,7 +43,7 @@ Da es sich um einen einfachen Funktionsblock ohne interne Zustände handelt, gib
 - Anpassung von Daten für Peripheriegeräte, die nur WORD-Daten verarbeiten können.
 - Einsatz in Steuerungssystemen, wo Speicherplatz optimiert werden muss.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken wie `F_ANY_TO_ANY` ist `F_DINT_TO_WORD` spezialisiert und daher effizienter, wenn genau diese Konvertierung benötigt wird.
 - Ähnliche Blöcke wie `F_INT_TO_WORD` arbeiten mit kleineren Ganzzahltypen, während `F_DINT_TO_WORD` mit dem größeren DINT-Typ umgeht.
 

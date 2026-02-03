@@ -73,7 +73,7 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 | `Pitch` | 0xFFFF | Nicht verwendet |
 | `Altitude` | 0xFFFF | Nicht verwendet |
 
-## Vergleich mit ähnlichen Systemen
+## ⚖️ Vergleich mit ähnlichen Systemen
 
 | Feature | I_VDS | Standard-GPS | Premium-Navi |
 |---------|-------|-------------|--------------|
@@ -85,7 +85,7 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_073](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_073.md)
 * [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)

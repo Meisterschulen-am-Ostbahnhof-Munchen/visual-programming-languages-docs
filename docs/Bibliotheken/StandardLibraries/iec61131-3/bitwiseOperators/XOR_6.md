@@ -56,7 +56,7 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 - **Fehlererkennung**: Generierung von Prüfsummen in Kommunikationsprotokollen
 - **Steuerungstechnik**: Logische Verknüpfungen in Automatisierungsanwendungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Blöcken mit zwei Eingängen bietet XOR_6:
 - Erweiterte Funktionalität mit sechs direkten Eingängen
 - Vermeidung von Kaskadierung mehrerer XOR-Blöcke

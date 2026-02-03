@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Anpassung von Datenformaten zwischen unterschiedlichen Systemkomponenten.
 - Verwendung in Steuerungen, wo spezifische Hardware nur 8-Bit-Daten verarbeiten kann.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_WORD_TO_USINT**: Konvertiert einen 16-Bit-Wert (WORD) in einen 8-Bit-unsigned-Integer-Wert. Im Gegensatz dazu verarbeitet `F_DWORD_TO_USINT` 32-Bit-Werte.
 - **F_DWORD_TO_BYTE**: Ähnlich in der Funktionalität, aber der Ausgangstyp ist BYTE, was ebenfalls 8 Bit umfasst, aber ohne Vorzeichen.
 

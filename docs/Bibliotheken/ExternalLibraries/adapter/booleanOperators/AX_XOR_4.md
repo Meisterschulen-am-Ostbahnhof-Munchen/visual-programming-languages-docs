@@ -58,7 +58,7 @@ Da es sich um einen kombinatorischen Logikbaustein handelt, besitzt der AX_XOR_4
 - Sicherheitskritische Schaltungen mit Mehrfacheingängen
 - Verteilte Logikoperationen in Automatisierungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen bietet AX_XOR_4:
 - Vier Eingänge statt der typischen zwei Eingänge
 - Rein adapterbasierte Schnittstelle

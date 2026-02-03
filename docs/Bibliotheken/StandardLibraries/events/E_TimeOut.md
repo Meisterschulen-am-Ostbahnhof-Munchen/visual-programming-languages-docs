@@ -51,7 +51,7 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ATimeOut`. Da es sich 
 - **Gerätesteuerung**: Einfache Watchdog-Funktionen, die nicht zurückgesetzt werden müssen.
 - **Prozessüberwachung**: Sicherstellen, dass ein Prozessschritt eine maximale Dauer nicht überschreitet.
 
-## Vergleich mit E_RTimeOut
+## ⚖️ Vergleich mit E_RTimeOut
 
 | Feature        | E_TimeOut (dieser) | E_RTimeOut |
 |---------------|-----------|----------|
@@ -62,7 +62,7 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ATimeOut`. Da es sich 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_035](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035.md)
 * [Uebung_035a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a.md)

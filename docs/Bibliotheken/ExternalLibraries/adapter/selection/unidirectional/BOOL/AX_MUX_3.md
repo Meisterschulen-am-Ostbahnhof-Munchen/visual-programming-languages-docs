@@ -55,7 +55,7 @@ Nach erfolgreicher Umschaltung wird ein CNF-Ereignis ausgegeben.
 - Umschaltung zwischen Betriebsmodi
 - Redundante Systeme mit mehreren Eingangsquellen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Multiplexern bietet AX_MUX_3 drei Eingänge statt der üblichen zwei und verwendet Adapter-basierte Schnittstellen für eine standardisierte Signalübertragung. Die unidirektionale AX-Adapter-Schnittstelle gewährleistet eine klare Signalflussrichtung.
 
 Vergleich mit [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_3.md)
@@ -65,7 +65,7 @@ Vergleich mit [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/F_
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_090a2_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
 * [Uebung_103](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)

@@ -42,7 +42,7 @@ Da es sich um Konstanten handelt, sind keine Zustandsübergänge vorhanden. Die 
 - Fehlerbehandlung bei ungültigen Ausgangskonfigurationen
 - Standardisierung von Ausgangsbezeichnungen in Steuerungsanwendungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konstantendefinitionen bietet logiBUS_DO eine spezifische Struktur für digitale Ausgänge mit klarer Pin-Zuordnung und einer definierten Invalid-Konstante für robuste Fehlerbehandlung.
 
 ## Fazit

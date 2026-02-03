@@ -45,7 +45,7 @@ Der Funktionsblock führt die Konvertierung durch, indem er den Wert des Eingang
 - Schnittstellen zwischen Systemen, die unterschiedliche Datentypen verwenden.
 - Echtzeit-Datenverarbeitung, bei der Typkonvertierungen erforderlich sind.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_UDINT_TO_DINT` spezialisiert auf die Konvertierung zwischen `UDINT` und `DINT`.
 - Andere Bausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Fehlerbehandlung bieten, was hier nicht der Fall ist.
 

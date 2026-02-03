@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Typumwandlung in Steuerungsanwendungen, wo unterschiedliche Integer-Formate verarbeitet werden müssen.
 - Datenvorverarbeitung für Kommunikationsprotokolle oder Sensordaten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_INT_TO_WORD` oder `F_DINT_TO_WORD` bieten Konvertierungen von anderen Integer-Typen zu WORD.
 - `F_SINT_TO_WORD` ist spezifisch für die Konvertierung von 8-Bit vorzeichenbehafteten zu 16-Bit vorzeichenlosen Integern optimiert.
 

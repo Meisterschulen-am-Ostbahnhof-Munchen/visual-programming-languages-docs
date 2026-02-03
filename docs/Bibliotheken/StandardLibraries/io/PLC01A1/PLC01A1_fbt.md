@@ -66,7 +66,7 @@ Der PLC01A1 Funktionsblock initialisiert die Hardware-Schnittstelle beim Empfang
 - IO-Management in verteilten Steuerungssystemen
 - Prototypenentwicklung mit PLC01A1-Modulen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu generischen IO-Bausteinen bietet PLC01A1 eine spezifische Anpassung für das PLC01A1-Modul mit vordefinierten 8 Ein- und 8 Ausgängen. Die Verwendung von WSTRING ermöglicht eine flexible Datenrepräsentation, unterscheidet sich jedoch von typischen BOOL-basierten IO-Bausteinen.
 

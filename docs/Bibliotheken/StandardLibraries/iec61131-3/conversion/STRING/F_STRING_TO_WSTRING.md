@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - **Systemkommunikation**: Austausch von Daten zwischen Systemen, die unterschiedliche Zeichensätze verwenden.
 - **Datenverarbeitung**: Verarbeitung von Textdaten, die in verschiedenen Kodierungen vorliegen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_STRING_TO_WSTRING` spezialisiert auf die Umwandlung zwischen `STRING` und `WSTRING`.
 - Andere Blöcke wie `F_WSTRING_TO_STRING` bieten die umgekehrte Funktionalität.
 

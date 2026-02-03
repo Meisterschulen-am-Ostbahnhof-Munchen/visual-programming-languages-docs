@@ -56,7 +56,7 @@ Der CLIENT_1 Block initialisiert eine Netzwerkverbindung zum SERVER_1 Block übe
 - Client-Server-Architekturen in Automatisierungssystemen
 - Vernetzte Steuerungskomponenten über TCP/IP oder andere Protokolle
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Kommunikationsblöcken bietet CLIENT_1:
 - Bidirektionalen Datenaustausch in einer Transaktion
 - Flexible Datentypen durch ANY-Typ

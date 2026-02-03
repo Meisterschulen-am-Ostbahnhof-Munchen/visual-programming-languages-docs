@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - Konvertierung von Daten zwischen Systemen, die unterschiedliche Datentypen verwenden.
 - Verwendung in Steuerungssystemen, wo eine Typumwandlung erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungs-Funktionsblöcken ist `F_DWORD_TO_LINT` spezialisiert auf die Konvertierung von `DWORD` zu `LINT`.
 - Andere Funktionsblöcke könnten ähnliche Konvertierungen für andere Datentypen durchführen, wie z.B. `F_WORD_TO_INT`.
 

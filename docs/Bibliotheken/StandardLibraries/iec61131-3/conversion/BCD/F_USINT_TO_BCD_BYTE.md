@@ -43,7 +43,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung wird bei jedem
 - Kommunikation mit Geräten, die BCD-kodierte Daten erwarten.
 - Datenkonvertierung in Steuerungssystemen, die BCD-Format erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_USINT_TO_BCD_BYTE` spezialisiert auf die Umwandlung von USINT zu BCD.
 - Andere Blöcke könnten zusätzliche Funktionen wie Fehlerbehandlung oder unterschiedliche Kodierungen bieten, sind aber oft komplexer.
 

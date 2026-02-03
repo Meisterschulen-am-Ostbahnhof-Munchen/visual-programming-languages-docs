@@ -54,7 +54,7 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 *   **Fehlererkennung in redundanten Systemen:** Einfache Plausibilitätskontrolle bei Systemen mit mehreren redundanten Kanälen.
 *   **Verschlüsselungs- und Codierungsverfahren:** Als grundlegende Komponente in einfachen kryptografischen oder fehlerkorrigierenden Codes.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Standard XOR-Bausteine (z.B., XOR, E_XOR):** Diese haben typischerweise nur zwei Eingänge. `XOR_9_BOOL` erweitert diese Funktion auf bis zu neun Eingänge in einem einzigen Baustein.
 *   **ODER-Bausteine (OR) / UND-Bausteine (AND):** Liefern ein `TRUE`, wenn mindestens ein bzw. alle Eingänge `TRUE` sind. Die XOR-Logik ist spezifischer (ungerade Anzahl).
 *   **Paritätsbausteine:** Spezialisierte Blöcke zur Paritätsberechnung, die oft direkt für Datenworte (BYTE, WORD) arbeiten. `XOR_9_BOOL` arbeitet auf einzelnen Booleschen Bits und ist flexibler in der Eingangsanzahl.

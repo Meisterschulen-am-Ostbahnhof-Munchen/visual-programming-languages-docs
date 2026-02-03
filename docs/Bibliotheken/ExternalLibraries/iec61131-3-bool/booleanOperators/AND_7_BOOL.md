@@ -56,7 +56,7 @@ Der Block besitzt keinen internen Zustand im Sinne eines Speichers. Sein Verhalt
 *   **Mehrfachbedingung**: Prüfung, ob mehrere parallele Prozessschritte erfolgreich abgeschlossen wurden, bevor ein Folgeprozess gestartet wird.
 *   **Steuerungslogik**: Implementierung von komplexen UND-Bedingungen in Ablaufsteuerungen oder Verknüpfungssteuerungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`AND_n_BOOL`-Familie**: Es existieren Blöcke mit identischer Funktion, aber unterschiedlicher Anzahl von Eingängen (z.B., `AND_2_BOOL`, `AND_8_BOOL`). `AND_7_BOOL` füllt die Lücke für Anwendungen, die genau sieben Bedingungen benötigen. Siehe: [AND_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_7.md)
 *   **`&` (Bit-AND) Operator**: Während `AND_7_BOOL` nur mit BOOL-Datentypen arbeitet und ereignisgesteuert ist, kann der `&`-Operator in Structured Text (ST) auch auf Byte-, Wort- oder DWORD-Datentypen angewendet werden und wird zyklisch oder anweisungsgesteuert ausgewertet.
 *   **Serielle UND-Verknüpfung**: Das gleiche Ergebnis könnte durch die serielle Verkettung mehrerer `AND_2_BOOL`-Blöcke erreicht werden. `AND_7_BOOL` bietet eine kompaktere und übersichtlichere Lösung.

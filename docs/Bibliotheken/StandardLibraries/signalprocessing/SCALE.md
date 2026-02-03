@@ -50,7 +50,7 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem RE
 - Transformation von Messwerten für die Anzeige oder Weiterverarbeitung.
 - Allgemeine Signalverarbeitung in industriellen Steuerungssystemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Skalierungsbausteinen ist SCALE besonders einfach und direkt in der Anwendung.
 - Keine zusätzlichen Parameter oder komplexen Einstellungen erforderlich.
 - Ideal für einfache lineare Skalierungen ohne zusätzliche Logik.
@@ -58,7 +58,7 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem RE
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_042](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_042.md)
 

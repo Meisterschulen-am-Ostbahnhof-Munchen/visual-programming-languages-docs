@@ -50,14 +50,14 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Kompatibilität mit Systemen, die `DWORD`-Daten erwarten.
 - Datenvorbereitung für Kommunikationsprotokolle oder Hardware-Register.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu arithmetischen Funktionsblöcken ändert `F_UDINT_TO_DWORD` nicht den Wert, sondern nur den Datentyp.
 - Ähnliche Konvertierungsblöcke existieren für andere Datentypen (z.B. `INT_TO_DINT`), jedoch mit unterschiedlichen Quell- und Zieltypen.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_034b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034b.md)
 * [Uebung_152](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_152.md)

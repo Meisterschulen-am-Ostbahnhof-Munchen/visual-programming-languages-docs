@@ -43,7 +43,7 @@ Der Funktionsblock führt die Konvertierung durch, indem er den `SINT`-Wert am E
 - Konvertierung von Sensorwerten, die als `SINT` vorliegen, in einen `UDINT`-Wert für weitere Verarbeitung.
 - Datenaufbereitung für Systeme, die vorzeichenlose Integer-Werte erwarten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_UDINT**: Konvertiert einen vorzeichenbehafteten 16-Bit-Integer (`INT`) in einen vorzeichenlosen 32-Bit-Integer (`UDINT`).
 - **F_DINT_TO_UDINT**: Konvertiert einen vorzeichenbehafteten 32-Bit-Integer (`DINT`) in einen vorzeichenlosen 32-Bit-Integer (`UDINT`).
 

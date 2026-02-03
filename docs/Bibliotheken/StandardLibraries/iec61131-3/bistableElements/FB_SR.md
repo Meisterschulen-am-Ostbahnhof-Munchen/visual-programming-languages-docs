@@ -57,14 +57,14 @@ Der Zustand des Flipflops (`Q1`) hängt von den aktuellen Werten von `S1` und `R
 - Speicherung von binären Zuständen in Steuerungsanwendungen, wo IEC 61131-3 Verhalten gefordert ist.
 - Verwendung in Schaltnetzen, bei denen die Dominanz des Setz-Signals sicherheitsrelevant oder prozessbedingt notwendig ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **[E_SR](../../events/E_SR.md)**: Der `E_SR` ist rein ereignisgesteuert. Dort gibt es keine gleichzeitigen Signale und somit keine Dominanz in diesem Sinne (das letzte Ereignis gewinnt). Der `FB_SR` hingegen wertet statische Signale zum Zeitpunkt `REQ` aus und erzwingt die Setz-Dominanz.
 - **[FB_RS](FB_RS.md)**: Das Gegenstück mit **Rücksetz-Dominanz** (Reset Priority).
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_006e1](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006e1.md)
 * [Uebung_006e1_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006e1_AX.md)

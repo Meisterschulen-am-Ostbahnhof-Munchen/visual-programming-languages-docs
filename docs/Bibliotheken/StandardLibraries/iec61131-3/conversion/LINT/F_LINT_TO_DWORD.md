@@ -44,7 +44,7 @@ Der Funktionsblock führt die Konvertierung durch, indem er den `LINT`-Wert am E
 - Typumwandlung in Steuerungsanwendungen, wo unterschiedliche Datentypen verarbeitet werden müssen.
 - Datenreduktion, wenn nur die unteren 32 Bits eines `LINT`-Wertes relevant sind.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_INT_TO_DINT` oder `F_DINT_TO_LINT` führen ähnliche Typumwandlungen durch, jedoch zwischen anderen Datentypen.
 - `F_LINT_TO_DWORD` ist spezifisch für die Konvertierung von `LINT` zu `DWORD`.
 

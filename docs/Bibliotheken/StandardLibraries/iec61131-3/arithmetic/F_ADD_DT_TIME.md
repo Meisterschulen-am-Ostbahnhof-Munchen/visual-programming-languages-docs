@@ -69,7 +69,7 @@ Der **F_ADD_DT_TIME** ist ein spezialisierter Funktionsbaustein zur Addition von
   - Bei Überlauf: Wrap-around im gültigen Bereich
   - Bei ungültigen Eingaben: OUT = IN1
 
-## Vergleich mit Standard-F_ADD
+## ⚖️ Vergleich mit Standard-F_ADD
 
 | Merkmal        | F_ADD_DT_TIME | F_ADD       |
 |----------------|---------------|-------------|

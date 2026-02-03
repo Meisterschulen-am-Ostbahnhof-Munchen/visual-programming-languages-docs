@@ -58,13 +58,13 @@ Der Funktionsblock durchläuft folgende Zustände:
 - Überwachung von Schalterzuständen und Sensoren
 - Implementierung von standardisierten Eingabeschnittstellen in verteilten Systemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IX erweiterte Service-Funktionalität mit parametrierbarer Konfiguration, Statusrückmeldungen und sowohl anforderungs- als auch ereignisgesteuerter Datenbereitstellung.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_010b1](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b1.md)
 

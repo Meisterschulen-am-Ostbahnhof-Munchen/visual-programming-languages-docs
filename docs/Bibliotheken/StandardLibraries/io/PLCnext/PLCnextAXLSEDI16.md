@@ -54,7 +54,7 @@ Der Funktionsblock initialisiert sich über das INIT-Ereignis und konfiguriert d
 - Überwachungssysteme mit multiplen Eingangssignalen
 - PLCnext-basierte Steuerungsarchitekturen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet PLCnextAXLSEDI16 eine erweiterte Konfigurierbarkeit durch String-Parameter und eine integrierte Bus-Kommunikation für PLCnext-Systeme. Die 16 Kanäle ermöglichen eine höhere Eingangsdichte als Standardbausteine.
 
 ## Fazit

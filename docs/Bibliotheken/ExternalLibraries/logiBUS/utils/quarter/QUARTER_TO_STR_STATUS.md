@@ -61,7 +61,7 @@ Der ECC besteht aus sechs Zuständen:
 *   **Protokollierung und Diagnose:** Umwandlung von Statuscodes in lesbare Texte für Log-Dateien oder Diagnosetools, um die Fehleranalyse zu erleichtern.
 *   **Schnittstelle zu Text-basierten Systemen:** Vorbereitung von Statusinformationen für die Weiterverarbeitung in Systemen, die mit String-Nachrichten arbeiten (z.B. MQTT-Topics, CSV-Export).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`E_SR` oder `E_RS` (Flip-Flops):** Diese Blöcke speichern einen binären Zustand (SET/RESET). `QUARTER_TO_STR_STATUS` hingegen konvertiert einen vorhandenen 4-Zustands-Wert nur in einen String; er besitzt keinen eigenen Speicher.
 *   **`E_SELECT` oder `E_MUX`:** Können ebenfalls zwischen verschiedenen Pfaden/Werten wählen, sind aber generischer und nicht speziell auf die Konvertierung in Strings mit vordefinierten Quarter-Statuswerten ausgelegt.
 *   **Einfache `STRING`-Zuweisung:** Eine direkte Zuweisung im ST-Code könnte ähnliches leisten, aber der `QUARTER_TO_STR_STATUS`-Block kapselt die Logik, fördert die Wiederverwendbarkeit und erzwingt die Verwendung der standardisierten Konstanten, was die Konsistenz im gesamten Projekt erhöht.
@@ -69,7 +69,7 @@ Der ECC besteht aus sechs Zuständen:
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_055](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)
 * [Uebung_056](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)

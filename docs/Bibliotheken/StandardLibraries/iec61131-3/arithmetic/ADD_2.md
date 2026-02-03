@@ -63,7 +63,7 @@ Der **ADD_2** ist ein generischer Funktionsbaustein zur Addition zweier Werte, e
 - **Maschinensteuerung**: Positionsberechnung
 - **Energiemanagement**: Verbrauchssummierung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | ADD_2  | ADD_4  | MUL_2  |
 |---------------|--------|--------|--------|
@@ -83,7 +83,7 @@ Der **ADD_2** ist ein generischer Funktionsbaustein zur Addition zweier Werte, e
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_000](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_000.md)
 * [Uebung_000_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_000_AX.md)

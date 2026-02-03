@@ -53,7 +53,7 @@ Da es sich um eine reine Konstantendefinition handelt, gibt es keine Zustandsüb
 - Typsichere Pin-Zuordnungen in Steuerungsprogrammen
 - Fehlerbehandlung durch Verwendung der Invalid-Konstante
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Gegensatz zu Funktionsblöcken mit aktiver Logik handelt es sich hier um eine reine Konstantendefinition, die:
 - Keine aktive Verarbeitung durchführt

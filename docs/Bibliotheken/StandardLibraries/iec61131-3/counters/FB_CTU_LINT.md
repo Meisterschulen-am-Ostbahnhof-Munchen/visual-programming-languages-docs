@@ -50,7 +50,7 @@ Der Funktionsblock hat keinen internen Zustandsautomaten. Die Logik wird bei jed
 - Überwachung von Produktionsmengen
 - Steuerung von Prozessen mit hohen Zählwerten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `FB_CTU` (Standard-Counter) unterstützt dieser Block größere Zahlenbereiche (`LINT` statt `INT`)
 - Ähnlich zu `FB_CTUD`, aber ohne Abwärtszählfunktion
 

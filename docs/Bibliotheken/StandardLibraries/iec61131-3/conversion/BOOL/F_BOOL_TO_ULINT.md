@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Integration in Steuerungssysteme, die boolesche Signale in numerische Datenbanken speichern müssen.
 - Verwendung in Datenverarbeitungsketten, die eine Typkonvertierung erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_BOOL_TO_INT` oder `F_BOOL_TO_DINT` konvertieren boolesche Werte in andere numerische Typen, jedoch nicht in `ULINT`.
 - `F_BOOL_TO_ULINT` ist spezifisch für die Konvertierung in den vorzeichenlosen 64-Bit-Typ und eignet sich daher für Anwendungen, die einen großen Wertebereich erfordern.
 

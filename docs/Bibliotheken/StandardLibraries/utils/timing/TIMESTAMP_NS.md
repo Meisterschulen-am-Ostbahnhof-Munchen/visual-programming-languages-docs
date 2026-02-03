@@ -81,7 +81,7 @@ Entwickelt unter EPL-2.0 Lizenz.
 
 ---
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 | Funktion            | `TIMESTAMP_NS`        | `NOW()`               | `F_NOW_MONOTONIC`     |
 |---------------------|-----------------------|-----------------------|-----------------------|
 | **Ausgabeformat**   | Nanosekunden (ULINT)  | Zeitintervall (TIME)  | Zeitintervall (TIME)  |

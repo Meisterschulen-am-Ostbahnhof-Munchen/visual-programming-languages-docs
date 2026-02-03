@@ -46,7 +46,7 @@ Der Funktionsblock hat keine internen Zustände. Die Verarbeitung erfolgt direkt
 - Verarbeitung von Protokollen oder Datenformaten, die große Werte in segmentierter Form übermitteln.
 - Einsatz in Systemen, die mit 64-Bit-Daten arbeiten, aber nur 8-Bit-Schnittstellen zur Verfügung haben.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke könnten z. B. `ASSEMBLE_DWORD_FROM_BYTES` sein, die jedoch nur 32-Bit-Werte kombinieren.
 - Im Gegensatz zu manuellen Implementierungen bietet dieser Baustein eine standardisierte und optimierte Lösung für die Kombination von 32 Bytes zu einem LWORD.
 

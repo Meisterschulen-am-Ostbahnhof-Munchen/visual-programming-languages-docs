@@ -66,7 +66,7 @@ Die ECC (Execution Control Chart) umfasst folgende Zustände:
 *   Überwachung und Steuerung von Batch-Prozessen, bei denen ein Operator die nächste Phase einleitet.
 *   Als zentraler Steuerbaustein in Maschinen, die einen klar definierten, schrittweisen Arbeitsablauf haben.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Sequenzern mit zeitgesteuerten Übergängen (z.B. `sequence_T_08_loop`) bietet dieser FB maximale Flexibilität, da die Verweildauer in jedem Zustand extern vorgegeben wird. Er ist einfacher aufgebaut als Bausteine mit integrierter Fehlerbehandlung oder komplexen Verzweigungen, stellt aber eine robuste Grundlage für ereignisgesteuerte Abläufe dar. Alternative Implementierungen mit `E_SR`- oder `E_CTUD`-Blöcken wären deutlich komplexer und weniger übersichtlich.
 
 
@@ -74,7 +74,7 @@ Im Vergleich zu Sequenzern mit zeitgesteuerten Übergängen (z.B. `sequence_T_08
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_040](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
 * [Uebung_040_2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040_2.md)

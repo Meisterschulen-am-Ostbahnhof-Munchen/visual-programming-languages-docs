@@ -21,7 +21,7 @@ Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `LREAL#..
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_003a0](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003a0.md)
 * [Uebung_003a0_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003a0_AX.md)

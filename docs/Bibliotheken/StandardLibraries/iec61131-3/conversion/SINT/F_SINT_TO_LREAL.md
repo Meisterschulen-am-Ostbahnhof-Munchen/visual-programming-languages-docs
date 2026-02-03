@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Er reagiert ausschließlich
 - Typumwandlung in Steuerungsanwendungen, wo `SINT`-Werte in Berechnungen mit `LREAL`-Werten verwendet werden müssen.
 - Datenaufbereitung für Visualisierung oder Protokollierung, wo höhere Genauigkeit erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine wie `F_INT_TO_REAL` oder `F_DINT_TO_LREAL` bieten Konvertierungen zwischen anderen Datentypen, aber nicht spezifisch von `SINT` zu `LREAL`.
 - Dieser Baustein ist spezialisiert auf die Konvertierung von 8-Bit Ganzzahlen zu 64-Bit Fließkommazahlen.
 

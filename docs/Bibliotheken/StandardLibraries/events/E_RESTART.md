@@ -62,7 +62,7 @@ Der **E_RESTART** ist ein spezieller Service-Interface-Funktionsbaustein nach IE
 - **Energiemanagement**: Geplantes Herunterfahren
 - **Sicherheitskritische Systeme**: Zustandsgesicherte Restarts
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | E_RESTART | E_CYCLE | E_DELAY |
 |---------------|-----------|---------|---------|
@@ -73,7 +73,7 @@ Der **E_RESTART** ist ein spezieller Service-Interface-Funktionsbaustein nach IE
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_174](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_174.md)
 

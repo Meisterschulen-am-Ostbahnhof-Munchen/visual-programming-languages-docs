@@ -54,7 +54,7 @@ Der QW-Block initialisiert bei Empfang des INIT-Ereignisses die Hardware-Schnitt
 - Steuerung von Hardware mit 16-Bit-Datenworten
 - Integration in verteilte Steuerungssysteme
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu QB (Byte-Ausgabe) verarbeitet QW 16-Bit statt 8-Bit Daten. Gegenüber QD (Double-Word) bietet er eine geringere Datenbreite bei reduziertem Ressourcenbedarf. Die Struktur ähnelt anderen IO-Service-Blöcken, ist jedoch spezifisch auf WORD-Daten ausgelegt.
 
 ## Fazit

@@ -49,7 +49,7 @@ Der Baustein besitzt keinen internen Zustand im Sinne eines Speichers. Er verhä
 *   **Freigabelogik:** Prüfen, ob mindestens eine von mehreren Bedingungen für den Start eines Prozesses erfüllt ist.
 *   **Verknüpfung von Tastergruppen:** In einer Bedienstation, bei der eine Aktion durch das Betätigen mindestens eines von mehreren (bis zu 16) Tastern ausgelöst werden kann.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`OR_2_BOOL`, `OR_8_BOOL`:** Dies sind baugleiche ODER-Bausteine mit einer geringeren Anzahl an Eingängen (2 bzw. 8). `OR_16_BOOL` erweitert diese Reihe für Anwendungen mit höherer Eingangsanzahl. Siehe: [OR_16](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_16.md)
 *   **`AND_16_BOOL`:** Führt die logische UND-Verknüpfung durch. Das Ergebnis ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind, während es bei `OR_16_BOOL` reicht, wenn *mindestens ein* Eingang `TRUE` ist.
 *   **Bausteine mit variabler Eingangsanzahl:** Einige Bibliotheken bieten ODER-Bausteine an, bei denen die Anzahl der Eingänge konfigurierbar ist. `OR_16_BOOL` bietet hingegen eine feste, optimierte Schnittstelle für genau 16 Signale.

@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Kommunikation zwischen Systemen, die unterschiedliche Datentypen verwenden.
 - Reduzierung der Speicherbelegung, wenn ein kleinerer Datentyp ausreichend ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_USINT**: Konvertiert `INT` zu `USINT` (vorzeichenloser 8-Bit-Integer).
 - **F_INT_TO_DINT**: Konvertiert `INT` zu `DINT` (32-Bit-Integer), was keine Datenreduktion bedeutet.
 - **F_INT_TO_REAL**: Konvertiert `INT` zu `REAL` (Gleitkommazahl).

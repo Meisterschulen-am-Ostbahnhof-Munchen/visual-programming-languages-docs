@@ -61,7 +61,7 @@ Die Initialisierung (`INIT`) ist Voraussetzung für beide Betriebsarten. Dabei w
 *   **Überwachung von Statusgruppen**: Lesen eines 32-Bit-Statusworts eines angeschlossenen Geräts, wobei Änderungen nur in bestimmten Zeitabständen (`TimeDelta`) gemeldet werden müssen, um die CPU-Last zu reduzieren.
 *   **Zyklische Abfrage von Schalterbänken**: Polling mehrerer digitaler Eingänge, die zu einem DWORD zusammengefasst sind, über regelmäßige `REQ`-Ereignisse.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenüber `E_DEMUX` oder `E_SELECT`**: Diese Bausteine leiten Ereignisse weiter oder selektieren Daten. `logiBUS_PI_ID` ist spezifisch für die Hardware-Kommunikation und beinhaltet Treiberlogik sowie Initialisierung.
 *   **Gegenüber generischen I/O-FBs (z.B. `WAGO_750_5xx_DI`)**: Ähnliche Funktion, aber herstellerspezifisch (hier logiBUS). Die Konfiguration erfolgt über den strukturierten `Input`-Parameter und `PARAMS` anstelle fester Kanalnummern.
 *   **Gegenüber einfacheren Eingabeblöcken**: Bietet erweiterte Funktionen wie filternde Ereignisgenerierung (`IND`) über `ImpulseDelta`/`TimeDelta`, die in einfachen "Read"-Blöcken typischerweise nicht vorhanden sind.
@@ -69,7 +69,7 @@ Die Initialisierung (`INIT`) ist Voraussetzung für beide Betriebsarten. Dabei w
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_150](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_150.md)
 * [Uebung_150_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_150_AX.md)

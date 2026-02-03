@@ -58,7 +58,7 @@ Der FB_CTUD hat keine expliziten Zustände, aber der Zählerwert (CV) kann als Z
 - **Lagerverwaltung**: Überwachung des Lagerbestands.
 - **Steuerungstechnik**: Zeitgesteuerte Prozesse oder Ereigniszählung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **FB_CTU**: Einfacher Aufwärtszähler ohne Abwärtszählfunktion.
 - **FB_CTD**: Einfacher Abwärtszähler ohne Aufwärtszählfunktion.
 - **FB_CTUD**: Kombiniert beide Funktionen in einem Baustein und bietet zusätzlich Reset- und Lade-Funktionen.

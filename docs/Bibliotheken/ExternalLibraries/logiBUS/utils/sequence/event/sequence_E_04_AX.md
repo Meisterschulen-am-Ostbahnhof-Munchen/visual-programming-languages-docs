@@ -46,7 +46,7 @@ Siehe `sequence_E_04`.
 ## Anwendungsszenarien
 Für ereignisgesteuerte Sequenzen, die über Adapter gesteuert werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_E_04**: Standardvariante ohne Adapter.
 
 ## Fazit

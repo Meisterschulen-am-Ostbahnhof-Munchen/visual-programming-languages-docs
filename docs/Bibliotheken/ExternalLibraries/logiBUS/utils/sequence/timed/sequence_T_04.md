@@ -78,7 +78,7 @@ Der FB arbeitet als Basic Function Block (BFB) mit einer definierten Execution C
 *   **Reinigungsprozesse**: Steuerung einer Sprühkabine: Vorspülen (State_01) -> Hauptreinigung (State_02) -> Nachspülen (State_03) -> Trocknen (State_04).
 *   **Teststände**: Automatisierte Prüfsequenz, bei der jeder Testschritt eine feste Dauer hat.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Einfache Timer (TON)**: Einzelne Timerbausteine müssten für eine Sequenz verkettet und die Logik für die Zustandsübergänge und Ausgänge separat programmiert werden. `sequence_T_04` kapselt diese komplette Logik.
 *   **Zähler-basierte Sequenzer**: Sequenzer, die mit Ereignissen (nicht Zeit) weiterschalten, bieten eine andere Art der Steuerung. `sequence_T_04` ist speziell für zeitkritische Abläufe ohne externe Trigger gedacht.
 *   **SPS-spezifische Ablaufsprachen (S7-GRAFCET)**: Dieser FB implementiert ein ähnliches Prinzip wie eine Grafcet-Step-Kette, jedoch innerhalb des portablen IEC 61499-Standards.

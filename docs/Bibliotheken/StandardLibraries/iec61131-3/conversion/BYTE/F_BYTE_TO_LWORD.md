@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Typumwandlung in Steuerungsanwendungen, wo `BYTE`-Werte in `LWORD`-Werte umgewandelt werden müssen.
 - Einsatz in Datenverarbeitungsketten, wo unterschiedliche Datentypen verarbeitet werden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke sind `F_WORD_TO_LWORD` oder `F_DWORD_TO_LWORD`, die andere Datentypen konvertieren.
 - Im Gegensatz zu komplexeren Konvertierungsblöcken bietet `F_BYTE_TO_LWORD` eine einfache und direkte Lösung für die spezifische Konvertierung von `BYTE` zu `LWORD`.
 

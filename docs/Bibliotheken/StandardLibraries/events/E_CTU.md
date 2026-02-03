@@ -60,7 +60,7 @@ Der `E_CTU`-Baustein hat zwei Hauptfunktionen: Zählen und Zurücksetzen.
 - **Ereigniszählung**: Erfassen der Häufigkeit von Ereignissen, wie z.B. das Betätigen eines Schalters.
 - **Taktzähler**: Zählen von Taktzyklen in einer Maschine, um Wartungsintervalle zu signalisieren.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 | Merkmal          | E_CTU (Up Counter) | E_CTD (Down Counter) | E_CTUD (Up/Down Counter) |
 |------------------|--------------------|----------------------|--------------------------|
 | Zählrichtung     | Aufwärts           | Abwärts              | Beides                   |
@@ -72,7 +72,7 @@ Der `E_CTU`-Baustein hat zwei Hauptfunktionen: Zählen und Zurücksetzen.
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_040](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
 * [Uebung_040_2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040_2.md)

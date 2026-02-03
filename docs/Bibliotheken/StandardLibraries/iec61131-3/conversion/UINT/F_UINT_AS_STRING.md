@@ -43,7 +43,7 @@ Der Funktionsblock hat keinen internen Zustand. Jede Ausführung ist unabhängig
 - Protokollierung von Messwerten in Textdateien.
 - Vorbereitung von Daten für die Kommunikation über Text-basierte Protokolle.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_UINT_AS_STRING` spezialisiert auf die Umwandlung von `UINT` zu `STRING`.
 - Andere Blöcke könnten zusätzliche Parameter wie Formatierung oder Basis (dezimal, hexadezimal) unterstützen, was hier nicht der Fall ist.
 

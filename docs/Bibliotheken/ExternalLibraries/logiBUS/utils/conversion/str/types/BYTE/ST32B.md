@@ -50,7 +50,7 @@ Als passiver Datentyp hat `ST32B` keine internen Zustände im Sinne eines Zustan
 *   **Speicherabbild:** Zur Abbildung eines kleinen, festen Speicherbereichs oder Registersatzes in einer Steuerung.
 *   **Konfigurationsdaten:** Speicherung von 32 Byte umfassenden Konfigurationsparametern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Ein vergleichbarer Ansatz wäre die Verwendung eines Arrays vom Typ `ARRAY[0..31] OF BYTE`.
 Der Unterschied liegt hauptsächlich in der Art des Zugriffs und der Semantik:
 *   **`ST32B` (Struktur):** Ermöglicht den Zugriff auf Bytes über symbolische Namen (`B_00`, `B_01`, ...), was die Lesbarkeit und Wartbarkeit des Codes verbessern kann, insbesondere wenn die einzelnen Bytes eine spezifische Bedeutung haben.

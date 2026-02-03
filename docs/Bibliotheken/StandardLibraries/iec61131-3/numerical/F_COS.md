@@ -50,7 +50,7 @@ Bei Empfang eines REQ-Ereignisses berechnet der F_COS-Block den Kosinus des an I
 - Winkelfunktionen in technischen Anwendungen
 - Berechnungen in Robotik und Motion Control
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen trigonometrischen Funktionen:
 - F_SIN: Berechnet Sinus statt Kosinus
 - F_TAN: Berechnet Tangens

@@ -43,7 +43,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Verwendung in Protokollimplementierungen, wo numerische Werte als Bitstrings übertragen werden müssen.
 - Integration in Systeme, die mit hardwarenahen Bitmanipulationen arbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_LINT_TO_LWORD` spezialisiert auf die Umwandlung von `LINT` zu `LWORD` und bietet daher eine optimierte und typsichere Lösung.
 - Ähnliche Blöcke wie `INT_TO_WORD` oder `DINT_TO_DWORD` arbeiten mit kleineren Datentypen.
 

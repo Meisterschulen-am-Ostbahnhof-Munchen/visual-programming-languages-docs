@@ -48,7 +48,7 @@ Die ButtonActivationCode-Konstanten definieren verschiedene Tastenaktivierungszu
 - Verarbeitung von Tasteneingaben in Fahrzeugsteuerungssystemen
 - Entwicklung von Benutzerschnittstellen für landwirtschaftliche Anwendungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingängen bietet ButtonActivationCode eine fein granulierte Zustandsdarstellung für Tasten, die speziell auf die Anforderungen von ISOBUS-Systemen zugeschnitten ist. Die Konstanten unterstützen erweiterte Tastenfunktionen wie Verriegelungsmechanismen und Abbruchfunktionen.
 
 ## Fazit

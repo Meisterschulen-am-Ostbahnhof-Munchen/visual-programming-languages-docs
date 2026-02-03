@@ -46,7 +46,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Verarbeitung von Daten aus externen Quellen, die 64-Bit Werte liefern, aber nur 32-Bit Werte benötigt werden.
 - Reduzierung der Speichernutzung bei bekannten kleinen Wertebereichen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - `F_LWORD_TO_DINT`: Konvertiert in einen 32-Bit signed integer.
 - `F_LWORD_TO_UINT`: Konvertiert in einen 16-Bit unsigned integer.
 - `F_LWORD_TO_WORD`: Konvertiert in einen 16-Bit Wert ohne Vorzeichen.

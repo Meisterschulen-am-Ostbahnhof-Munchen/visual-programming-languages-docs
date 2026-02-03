@@ -60,7 +60,7 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 - Datenmanipulation und -transformation
 - Signalverarbeitung mit mehreren Eingangssignalen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen mit weniger Eingängen bietet XOR_5:
 - Erweiterte Funktionalität mit fünf statt zwei Eingängen
 - Höhere Flexibilität bei komplexeren logischen Verknüpfungen

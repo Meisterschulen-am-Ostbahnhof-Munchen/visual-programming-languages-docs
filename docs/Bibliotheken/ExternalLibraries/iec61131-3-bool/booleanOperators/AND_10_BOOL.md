@@ -56,7 +56,7 @@ Der `AND_10_BOOL`-Block besitzt keinen internen Zustand (speicherlos). Sein Ausg
 *   **Mehrfachbedingungen:** In Prozesssteuerungen, um zu prüfen, ob mehrere Voraussetzungen (z.B. Füllstand, Temperatur, Druck) gleichzeitig innerhalb ihrer Sollbereiche liegen.
 *   **Freigabelogik:** Als Teil einer Freigabekette, bei der mehrere Stationen oder Bediener ihre Zustimmung (TRUE-Signal) geben müssen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`AND` (mit 2 Eingängen):** Der Standard-AND-Baustein nach IEC 61131-3 hat typischerweise nur zwei Eingänge. `AND_10_BOOL` erweitert diese Funktionalität auf zehn Eingänge ohne die Notwendigkeit, mehrere Zwei-Eingangs-AND-Blöcke zu verschalten. Siehe: [AND_10](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_10.md)
 *   **`OR_10_BOOL`:** Führt eine logische ODER-Verknüpfung durch. Das Ergebnis ist TRUE, wenn mindestens ein Eingang TRUE ist, während `AND_10_BOOL` verlangt, dass alle Eingänge TRUE sind.
 *   **`XOR` / `XNOR`:** Berechnen die exklusive ODER- bzw. die Äquivalenz-Verknüpfung, die sich auf die Parität der TRUE-Signale beziehen, nicht auf eine Alles-oder-Nichts-Bedingung wie das UND.

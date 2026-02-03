@@ -58,7 +58,7 @@ Da es sich um einen rein kombinatorischen Baustein ohne Ereignissteuerung handel
 - Verschlüsselungsalgorithmen mit XOR-Operationen
 - Steuerungssysteme mit Mehrfacheingangs-Logik
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen mit weniger Eingängen bietet der AX_XOR_6 die Möglichkeit, bis zu sechs Signale gleichzeitig zu verarbeiten. Während einfache XOR-Blöcke typischerweise nur zwei Eingänge haben, ermöglicht dieser Baustein komplexere logische Verknüpfungen ohne zusätzliche Verschachtelung mehrerer Blöcke.
 
 Vergleich mit [XOR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_6.md)

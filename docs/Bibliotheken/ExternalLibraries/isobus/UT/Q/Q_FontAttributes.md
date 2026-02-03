@@ -86,7 +86,7 @@ Der **Q_FontAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 - **Benutzeroberflächen**: Stilwechsel
 - **Barrierefreiheit**: Schriftvergrößerungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_FontAttributes | VtTextStyle | VtFontManager |
 |---------------|------------------|-------------|---------------|

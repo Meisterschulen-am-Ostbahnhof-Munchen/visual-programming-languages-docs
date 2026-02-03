@@ -53,7 +53,7 @@ Der Baustein arbeitet zustandslos - eingehende Daten und Ereignisse werden sofor
 - Aufteilung von Steuerinformationen in verteilten Systemen
 - Redundante Datenverteilung für Sicherheitsanwendungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Split-Bausteinen bietet AX_SPLIT_4 eine spezifische 1:4-Aufteilung für AX-Adapter. Andere Split-Varianten könnten unterschiedliche Anzahlen von Ausgängen oder andere Adaptertypen unterstützen.
 
 Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)

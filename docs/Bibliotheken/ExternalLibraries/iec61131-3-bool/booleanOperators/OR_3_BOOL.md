@@ -62,7 +62,7 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei, kombinatorisch
 *   **Steuerungslogik:** Aktivierung eines Aktors (z.B. einer Pumpe oder eines Motors), wenn mindestens eine von mehreren Bedingungen erfüllt ist (z.B. manueller Startbefehl ODER automatischer Sollwert erreicht ODER Notstart aktiv).
 *   **Verkettung von Logikoperationen:** Als Teil komplexerer logischer Ausdrücke in Verbindung mit UND- und NOT-Bausteinen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **OR_2_BOOL:** Verknüpft nur zwei Eingänge. `OR_3_BOOL` erweitert diese Funktionalität um einen dritten Eingang. Siehe auch: [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3.md)
 *   **GEN_OR:** Der zugrundeliegende generische Baustein, der für eine variable Anzahl von Eingängen konfiguriert werden kann. `OR_3_BOOL` ist eine spezifische, auf drei Eingänge festgelegte Instanz davon.
 *   **AND_n_BOOL:** Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur dann `TRUE`, wenn **alle** Eingänge `TRUE` sind, während bei der ODER-Verknüpfung bereits **ein** `TRUE`-Eingang ausreicht.
@@ -72,7 +72,7 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei, kombinatorisch
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002a5b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a5b.md)
 

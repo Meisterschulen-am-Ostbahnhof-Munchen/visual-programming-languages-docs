@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - Integration von Komponenten, die unterschiedliche Datentypen verwenden.
 - Datenaufbereitung für weitere Verarbeitungsschritte.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_INT_TO_REAL` oder `F_BOOL_TO_BYTE` ist `F_WORD_TO_DINT` spezifisch auf die Umwandlung von `WORD` zu `DINT` ausgelegt.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Skalierungen bieten, was hier nicht der Fall ist.
 

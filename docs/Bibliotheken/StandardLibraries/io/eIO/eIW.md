@@ -59,7 +59,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 - Erfassung von Sensor-Datenwörtern
 - Schnittstelle zu I/O-Modulen mit Wort-Zugriff
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingabeblöcken bietet eIW:
 - Erweiterte 16-Bit-Datenverarbeitung
 - Detaillierte Statusrückmeldungen

@@ -69,7 +69,7 @@ Der **Q_Attribute** ist ein standardkonformer Funktionsbaustein zur Änderung vo
 - **Diagnosesysteme**: Debug-Informationen steuern
 - **Multi-Terminal-Betrieb**: Konsistente Objektattribute
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_Attribute | VtPropertySet | VtDynamicConfig |
 |---------------|-------------|---------------|-----------------|

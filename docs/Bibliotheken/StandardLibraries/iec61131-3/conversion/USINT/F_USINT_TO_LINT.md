@@ -41,7 +41,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt sofor
 - **Datenverarbeitung**: Wenn Werte aus kleineren in größere Datentypen umgewandelt werden müssen.
 - **Kommunikation**: Bei der Übertragung von Daten zwischen Systemen mit unterschiedlichen Datentyp-Anforderungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_USINT_TO_INT**: Konvertiert `USINT` zu `INT` (16-Bit signed integer). Im Gegensatz dazu bietet `F_USINT_TO_LINT` eine größere Reichweite durch den 64-Bit Ausgang.
 - **F_USINT_TO_ULINT**: Konvertiert `USINT` zu `ULINT` (64-Bit unsigned integer). Hier wird der Ausgang ebenfalls als unsigned behandelt.
 

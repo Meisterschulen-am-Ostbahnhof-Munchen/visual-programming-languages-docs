@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - Konvertierung von Sensorwerten, die als vorzeichenbehaftete Integer vorliegen, für Systeme, die vorzeichenlose Werte erwarten.
 - Datenaufbereitung für Kommunikationsprotokolle, die vorzeichenlose Integer verwenden.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_UINT**: Konvertiert 16-Bit vorzeichenbehaftete Integer in vorzeichenlose Integer.
 - **F_LINT_TO_ULINT**: Konvertiert 64-Bit vorzeichenbehaftete Integer in vorzeichenlose Integer.
 - **F_SINT_TO_USINT**: Konvertiert 8-Bit vorzeichenbehaftete Integer in vorzeichenlose Integer.
@@ -50,7 +50,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_009a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009a.md)
 

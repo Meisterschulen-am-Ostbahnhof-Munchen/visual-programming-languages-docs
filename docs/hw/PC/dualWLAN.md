@@ -19,7 +19,7 @@ Video: [unter Windows 10 mit 2 WLAN Verbindungen arbeiten](https://www.youtube.c
 
 ---
 
-## Vergleichstest verschiedener WLAN Adapter:
+## ⚖️ Vergleichstest verschiedener WLAN Adapter:
 
 In diesem Artikel werden mehrere WLAN USB-Adapter unter Windows 10 und Ubuntu 22.04 LTS getestet. Der Fokus liegt dabei auf der Funktionalität der Adapter sowie auf der Frage, ob sie ohne die Installation eines Treibers sofort erkannt werden. Dies ist von großem Vorteil, da es Zeit und Mühe spart, wenn man keinen extra Treiber suchen, herunterladen und installieren muss. Der Artikel gibt einen Überblick über die Ergebnisse des Tests und zeigt, welche Adapter ohne Probleme funktionieren und welche eventuell zusätzliche Schritte erfordern. Insgesamt wird der Artikel eine wertvolle Ressource für jeden sein, der einen WLAN USB-Adapter unter Windows 10 oder Ubuntu 22.04 LTS verwenden möchte.
 

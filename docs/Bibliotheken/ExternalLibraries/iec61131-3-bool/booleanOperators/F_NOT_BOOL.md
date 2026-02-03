@@ -51,7 +51,7 @@ Der Baustein besitzt keinen internen Zustand im Sinne einer Zustandsmaschine. Se
 *   **Steuerungslogik**: Als grundlegender Baustein in komplexeren logischen Ausdrücken und Bedingungen innerhalb von Ablaufsteuerungen.
 *   **Statusanzeige**: Umkehrung eines internen Status für die Ansteuerung einer Lampe (z.B. "Maschine bereit" = TRUE, aber "Störungslampe leuchtet" bei FALSE).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Innerhalb der `iec61131::bitwiseOperators`-Bibliothek existieren weitere logische Grundoperatoren wie `F_AND`, `F_OR` und `F_XOR`. Im Gegensatz zu diesen Bausteinen, die zwei oder mehr Eingänge verknüpfen, besitzt `F_NOT_BOOL` nur einen einzigen Dateneingang. Seine Funktion ist unverzichtbar, um logische Ausdrücke zu komplettieren und direkte Invertierungen durchzuführen. Die Implementierung als eigenständiger Baustein (anstatt als integrierter Operator in einem Ausdruck) erhöht die Übersichtlichkeit in grafischen Programmierumgebungen wie FBD. Siehe: [F_NOT](../../../StandardLibraries/iec61131-3/bitwiseOperators/F_NOT.md)
 
 ## Fazit

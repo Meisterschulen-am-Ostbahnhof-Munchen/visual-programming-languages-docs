@@ -50,7 +50,7 @@ Der Funktionsblock ist zustandslos (kombinatorisch). Er besitzt keinen internen 
 *   **Sicherheitskritische Logik:** In Schaltungen, wo ein Zustand nur dann aktiv sein darf, wenn exklusive Bedingungen vorliegen (z.B. Auswahl zwischen verschiedenen, sich gegenseitig ausschließenden Betriebsmodi).
 *   **Verknüpfung von Statusbits:** Kombination mehrerer Status- oder Fehlerflags zu einem zusammenfassenden "Ungerade-Paritäts"-Signal.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`XOR` (2 Eingänge):** Der Standard-XOR-Baustein mit nur zwei Eingängen. `XOR_6_BOOL` erweitert diese Funktionalität auf sechs Eingänge ohne die Notwendigkeit, mehrere 2-Eingangs-XOR-Blöcke zu verschalten. Siehe: [XOR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_6.md)
 *   **`AND_6_BOOL` / `OR_6_BOOL`:** Ähnliche Blöcke für die logischen UND- bzw. ODER-Verknüpfungen mit sechs Eingängen. Während diese Blöcke auf "Alle" bzw. "Mindestens eines" testen, testet `XOR_6_BOOL` auf "Ungerade Anzahl".
 *   **Bausteine mit variabler Eingangsanzahl:** Einige Implementierungen bieten möglicherweise einen `XOR`-Block an, dem eine beliebige Anzahl von Eingängen zugewiesen werden kann. `XOR_6_BOOL` bietet hingegen eine explizite und feste Schnittstelle.

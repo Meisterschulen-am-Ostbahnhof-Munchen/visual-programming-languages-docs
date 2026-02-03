@@ -68,7 +68,7 @@ Ein `RESET`-Ereignis führt alle notwendigen Exit-Algorithmen der aktiven Zustä
 *   **Taktung von Prozessen**: Synchronisation von Teilprozessen, bei denen jeder Schritt manuell oder durch ein Sensorsignal freigegeben wird.
 *   **Manuelle Bedienabläufe**: Umsetzung von geführten Bediensequenzen, bei denen der Operator jeden Schritt bestätigen muss.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einem `E_CYCLE`- oder `E_DELAY`-Baustein bietet `sequence_E_04` keine zeitgesteuerten, sondern rein ereignisgesteuerte Übergänge. Im Vergleich zu einem generischen `E_SR` (Flip-Flop) oder einer Kombination aus `E_D_FF` (D-Flip-Flop) realisiert dieser FB eine vordefinierte Zustandsmaschine mit mehreren Schritten und einer klaren Reset-Logik. Er ist spezialisierter und strukturierter als eine ad-hoc Implementierung mit mehreren Einzelbausteinen.
 
 ## Fazit

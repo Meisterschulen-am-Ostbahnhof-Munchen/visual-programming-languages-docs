@@ -50,7 +50,7 @@ LED_COLOURS definiert eine Sammlung globaler Konstanten vom Typ UINT (16-Bit vor
 - Vereinheitlichung der Farbsteuerung in verteilten Systemen
 - Visualisierung von Betriebszuständen in Industrieanlagen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken mit dynamischem Verhalten handelt es sich hier um rein statische Konstantendefinitionen. Ähnliche Konstrukte wären:
 - ENUM-Datentypen für Farbdefinitionen
 - #define-Präprozessoranweisungen in C/C++

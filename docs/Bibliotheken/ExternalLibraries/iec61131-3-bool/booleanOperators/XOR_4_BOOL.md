@@ -46,7 +46,7 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei, kombinatorisch
 *   **Steuerungslogik:** Implementierung von Sicherheitsschaltungen, bei denen genau eine von mehreren möglichen Eingangskombinationen eine Aktion auslösen darf.
 *   **Verschachtelte Logikvereinfachung:** Ersetzung mehrerer hintereinandergeschalteter 2-Eingang-XOR-Bausteine durch einen einzigen `XOR_4_BOOL`-Block für bessere Übersichtlichkeit im Funktionsplan (FBD).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Standard XOR (2 Eingänge):** Ein klassischer XOR-Baustein mit nur zwei Eingängen. Der `XOR_4_BOOL` konsolidiert die Funktion mehrerer solcher Blöcke. Siehe: [XOR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_4.md)
 *   **OR_4_BOOL / AND_4_BOOL:** Diese Blöcke berechnen die logische ODER- bzw. UND-Verknüpfung über vier Eingänge. Die XOR-Verknüpfung unterscheidet sich fundamental, da sie den Fall, dass alle Eingänge `TRUE` sind, als `FALSE` bewertet.
 *   **Parity-Check Blöcke:** Spezialisierte Blöcke zur Paritätsberechnung existieren oft für Datenworte (BYTE, WORD). `XOR_4_BOOL` bietet diese Funktion für einzelne Bits/Bool-Werte.

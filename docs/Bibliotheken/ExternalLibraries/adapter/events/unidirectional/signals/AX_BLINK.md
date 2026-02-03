@@ -30,13 +30,13 @@ Zustandsbasiert (Blinken).
 ## Anwendungsszenarien
 Blinkende Anzeigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **E_BLINK**: Standard Blink-Baustein.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_020f3_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f3_AX.md)
 

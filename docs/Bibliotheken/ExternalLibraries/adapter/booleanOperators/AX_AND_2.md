@@ -49,7 +49,7 @@ Da es sich um einen kombinatorischen Logikbaustein handelt, besitzt der AX_AND_2
 - Logische Verknüpfungen in Steuerungssystemen
 - Sicherheitsabschaltungen mit Mehrfachbedingungen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu standardmäßigen UND-Bausteinen verwendet AX_AND_2 Adapter-basierte Schnittstellen anstelle von direkten Daten- und Ereignisein-/ausgängen. Dies ermöglicht eine flexiblere Integration in Adapter-basierte Systemarchitekturen.
 
 Vergleich [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.md)
@@ -59,7 +59,7 @@ Vergleich [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.m
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_002a_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a_AX.md)
 * [Uebung_002b3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002b3_AX.md)

@@ -42,7 +42,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 - Verarbeitung von Texteingaben in numerische Steuerungssysteme.
 - Integration in Systeme, die eine Konvertierung zwischen unterschiedlichen Datentypen erfordern.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_WSTRING_AS_WORD` spezialisiert auf die Umwandlung von `WSTRING` zu `WORD`.
 - Andere Bausteine könnten zusätzliche Parameter oder Fehlerbehandlungen bieten, dieser Funktionsblock ist jedoch auf Einfachheit und Effizienz ausgelegt.
 

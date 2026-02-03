@@ -43,7 +43,7 @@ Der Funktionsblock führt die Konvertierung des `STRING`-Wertes `IN` in einen `B
 - Konvertierung von Zeichenketten in Byte-Werte für die Kommunikation mit seriellen Schnittstellen.
 - Verarbeitung von ASCII-Zeichen in Byte-Form für Protokolle oder Hardware-Steuerungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_STRING_TO_INT` oder `F_STRING_TO_REAL` ist `F_STRING_AS_BYTE` speziell auf die Umwandlung in einen `BYTE`-Wert ausgelegt.
 - Ein ähnlicher Baustein könnte `F_CHAR_AS_BYTE` sein, der jedoch einzelne Zeichen konvertiert, während `F_STRING_AS_BYTE` auf Zeichenketten arbeitet.
 

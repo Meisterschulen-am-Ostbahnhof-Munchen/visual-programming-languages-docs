@@ -53,7 +53,7 @@ Der Block hat keine internen Zustände. Bei jedem REQ-Ereignis wird die Operatio
 - Signalverarbeitung in Automatisierungssystemen
 - Generische Logikoperationen in IEC 61131-3 kompatiblen Systemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Standard AND-Blöcke bieten typischerweise nur 2-4 Eingänge
 - AND_7 ermöglicht die Verarbeitung von bis zu sieben Eingängen in einer Operation
 - Durch die generische Implementierung flexibler als typenspezifische Blöcke

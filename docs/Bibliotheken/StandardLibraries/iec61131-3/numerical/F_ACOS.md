@@ -52,7 +52,7 @@ Die Funktion berechnet den Hauptwert des Arkuskosinus, der im Bereich von 0 bis 
 - Wissenschaftliche Berechnungen und Simulationen
 - Geometrische Transformationen in CAD/CAM-Systemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen trigonometrischen Funktionen wie F_SIN (Sinus) oder F_COS (Kosinus) bietet F_ACOS die inverse Operation. Während F_COS einen Winkel auf einen Wert zwischen -1 und 1 abbildet, bildet F_ACOS einen Wert zwischen -1 und 1 auf einen Winkel zwischen 0 und π ab.
 
 ## Fazit

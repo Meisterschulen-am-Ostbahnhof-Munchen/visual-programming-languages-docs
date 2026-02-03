@@ -84,7 +84,7 @@ Der **Q_FillAttributes** ist ein standardkonformer Funktionsbaustein zur Änderu
 - **Musterwechsel**: Kontextsensitive Darstellungen
 - **Themenwechsel**: Dunkel-/Hellmodus Umschaltung
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Feature        | Q_FillAttributes | VtSetColor | VtPatternManager |
 |---------------|------------------|------------|------------------|

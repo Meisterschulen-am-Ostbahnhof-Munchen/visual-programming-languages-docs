@@ -42,14 +42,14 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine komplexen Zu
 - Konvertierung von Sensorwerten, die als `SINT` vorliegen, für Systeme, die `UINT` erwarten.
 - Datenaufbereitung für Kommunikationsprotokolle, die vorzeichenlose Werte benötigen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_SINT_TO_UINT` spezialisiert und optimiert für die Konvertierung von `SINT` zu `UINT`.
 - Andere Blöcke wie `F_INT_TO_UINT` oder `F_DINT_TO_UDINT` bieten ähnliche Funktionalität, jedoch für andere Datentypen.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_035](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035.md)
 * [Uebung_035b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035b.md)

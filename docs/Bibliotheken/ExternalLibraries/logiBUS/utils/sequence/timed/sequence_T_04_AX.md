@@ -46,7 +46,7 @@ Siehe `sequence_T_04`.
 ## Anwendungsszenarien
 Für zeitgesteuerte 4-stufige Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_T_04**: Standardvariante ohne Adapter.
 
 ## Fazit

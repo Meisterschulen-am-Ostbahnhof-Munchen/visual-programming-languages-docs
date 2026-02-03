@@ -42,7 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Protokollierung von Zeitstempeln in textuellen Logdateien.
 - Integration in Systeme, die Zeitwerte als Strings verarbeiten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_INT_AS_STRING` oder `F_REAL_AS_STRING` ist dieser Block speziell für die Konvertierung von `TIME`-Werten optimiert.
 - Ähnliche Funktionalität könnte auch mit einem benutzerdefinierten Algorithmus erreicht werden, dieser Block bietet jedoch eine standardisierte und wiederverwendbare Lösung.
 

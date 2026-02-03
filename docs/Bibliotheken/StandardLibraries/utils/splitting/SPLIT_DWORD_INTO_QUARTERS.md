@@ -46,14 +46,14 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt bei jed
 - Dekodierung von Status- oder Steuerinformationen, die in einem DWORD kodiert sind.
 - Aufteilung von Daten für die weitere Verarbeitung in nachgelagerten Systemen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Bitmanipulations-Blöcken bietet `SPLIT_DWORD_INTO_QUARTERS` eine spezialisierte Funktionalität für die Aufteilung eines DWORDs in 4-Bit-Blöcke.
 - Andere Blöcke wie `SPLIT_DWORD_INTO_BYTES` teilen ein DWORD in 8-Bit-Blöcke auf, während dieser Block eine feinere Granularität bietet.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_060](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
 

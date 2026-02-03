@@ -45,7 +45,7 @@ Der Funktionsblock hat keine internen Zustände. Die Verarbeitung erfolgt unmitt
 - Verarbeitung von festen Längenformaten, bei denen relevante Informationen am Ende der Zeichenkette stehen.
 - Allgemeine Stringmanipulation in Steuerungs- und Automatisierungsanwendungen.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_LEFT`, der die linken Zeichen einer Zeichenkette extrahiert, bietet `F_RIGHT` die umgekehrte Funktionalität.
 - Andere String-Funktionsblöcke wie `F_MID` ermöglichen die Extraktion von Teilzeichenketten aus der Mitte einer Zeichenkette, während `F_RIGHT` speziell auf die rechten Zeichen fokussiert ist.
 

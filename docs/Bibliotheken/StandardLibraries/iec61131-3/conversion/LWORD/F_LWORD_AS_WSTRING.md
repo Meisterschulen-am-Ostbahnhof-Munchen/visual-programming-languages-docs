@@ -43,7 +43,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt unmitte
 - Austausch von Daten zwischen Systemen, die unterschiedliche Datentypen verwenden.
 - Integration in größere Steuerungsanwendungen, wo eine Typumwandlung erforderlich ist.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen ist `F_LWORD_AS_WSTRING` spezialisiert auf die Umwandlung von LWORD zu WSTRING.
 - Andere Bausteine könnten allgemeinere Konvertierungen unterstützen, sind aber möglicherweise weniger effizient für diesen spezifischen Anwendungsfall.
 

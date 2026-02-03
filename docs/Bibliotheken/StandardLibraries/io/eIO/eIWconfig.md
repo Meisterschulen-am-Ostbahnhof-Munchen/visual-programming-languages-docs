@@ -49,7 +49,7 @@ Der Funktionsblock empfängt über das CONF-Ereignis eine Konfigurationsanforder
 - Einstellung von Filterparametern für Sensorsignale
 - Dynamische Anpassung von Grenzwerten in Regelungssystemen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen IO-Konfigurationsblöcken bietet eIWconfig eine erweiterte Funktionalität mit Gradientensteuerung und Adapter-basierter Architektur für höhere Flexibilität.
 
 ## Fazit

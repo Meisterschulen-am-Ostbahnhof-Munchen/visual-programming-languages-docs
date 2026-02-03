@@ -58,13 +58,13 @@ Der Funktionsblock durchläuft typische Service-Interface-Zustände:
 - Integration in logiBUS-basierte Steuerungssysteme
 - Prioritätsgesteuerte LED-Anzeigen
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_LED_DO_QX erweiterte Funktionen zur Frequenzsteuerung und spezifische LED-Optimierungen. Während Standard-DO-Blöcke nur einfache Ein/Aus-Steuerung bieten, ermöglicht dieser Block komplexere Blinkmuster und Prioritätssteuerung.
 
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_029](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_029.md)
 

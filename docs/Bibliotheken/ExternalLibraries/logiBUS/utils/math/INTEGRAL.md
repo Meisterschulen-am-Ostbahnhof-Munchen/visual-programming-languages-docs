@@ -55,7 +55,7 @@ Beide Zustände führen nach ihrer Ausführung zur Ausgabe des `CNF`-Ereignisses
 *   **Geschwindigkeitsintegration**: Bestimmung der zurückgelegten Strecke aus einem Geschwindigkeitssignal (`IN` = Geschwindigkeit in m/s, `OUT` = Weg in m).
 *   **Ladungsberechnung**: Integration eines Stromsignals zur Ermittlung der geflossenen Ladung (`IN` = Strom in A, `OUT` = Ladung in Ah).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Summierbausteinen (z.B. `ADD`) zeichnet sich `INTEGRAL` durch die explizite Berücksichtigung der Zeit als Integrationsvariable aus. Im Gegensatz zu komplexeren Regelbausteinen mit integrierten Timern (wie z.B. bestimmten PID-Implementierungen) ist `INTEGRAL` ein reiner, zeitdiskreter Integrator, der die Zeitdifferenz als Eingangsvariable erwartet und somit extern getaktet wird. Dies macht ihn flexibler in Systemen mit variabler oder nicht-periodischer Zykluszeit.
 
 
@@ -63,7 +63,7 @@ Im Vergleich zu einfacheren Summierbausteinen (z.B. `ADD`) zeichnet sich `INTEGR
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
 

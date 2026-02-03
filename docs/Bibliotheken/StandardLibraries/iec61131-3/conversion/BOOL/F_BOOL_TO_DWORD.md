@@ -47,7 +47,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 - Integration in Steuerungssysteme, die nur numerische Eingaben verarbeiten können.
 - Protokollierung von booleschen Ereignissen als numerische Werte.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu `F_BOOL_TO_INT` oder `F_BOOL_TO_REAL` konvertiert dieser Block spezifisch in einen `DWORD`-Typ, der für 32-Bit-Systeme optimiert ist.
 - Ähnliche Blöcke wie `F_DWORD_TO_BOOL` führen die umgekehrte Konvertierung durch.
 

@@ -75,7 +75,7 @@ Typische Anwendungen finden sich in Verteil- und Förderanlagen, beispielsweise 
 *   **Korn- oder Schüttgutförderer**: Der Hauptschieber leitet den Strom. Die Seitenschieber können je nach Bedarf geöffnet werden, um z.B. in verschiedene Silos zu verteilen. Die Verriegelung verhindert, dass beide Seiten gleichzeitig geöffnet sind, wenn dies mechanisch oder prozessbedingt unzulässig ist.
 *   **Weichensteuerung**: Analog zu einer mechanischen Weiche, bei der die Stellung eines Weichenschuhs die andere Position blockiert.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Schieber-Steuerungsbausteinen (z.B. einzelnen `E_SR`-FlipFlops pro Schieber) bietet der `SchieberVerriegelung`-FB:
 *   **Integrierte Kollisionsvermeidung**: Die Verriegelungslogik ist fest im Zustandsautomaten hinterlegt und muss nicht extern verdrahtet werden.
 *   **Zustandsbasierte Koordination**: Die Ausgangsbefehle sind immer konsistente Sets (`Open`/`Close`-Kombinationen für alle drei Schieber).

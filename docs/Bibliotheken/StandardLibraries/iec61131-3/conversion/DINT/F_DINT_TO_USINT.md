@@ -44,7 +44,7 @@ Bei Auslösung des Ereigniseingangs `REQ` wird der Algorithmus ausgeführt, der 
 - Reduzierung der Speicherbelegung, wenn nur kleine vorzeichenlose Werte benötigt werden.
 - Schnittstellenanpassung zwischen verschiedenen Systemkomponenten.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_INT_TO_USINT**: Konvertiert einen 16-Bit Ganzzahlwert (INT) in einen 8-Bit vorzeichenlosen Ganzzahlwert (USINT). Im Vergleich dazu verarbeitet `F_DINT_TO_USINT` größere Eingangswerte.
 - **F_LINT_TO_USINT**: Konvertiert einen 64-Bit Ganzzahlwert (LINT) in einen 8-Bit vorzeichenlosen Ganzzahlwert (USINT). `F_DINT_TO_USINT` ist für kleinere Eingangsbereiche ausgelegt.
 

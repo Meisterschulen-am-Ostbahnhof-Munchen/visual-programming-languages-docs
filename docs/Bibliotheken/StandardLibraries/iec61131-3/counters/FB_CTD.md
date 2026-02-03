@@ -49,7 +49,7 @@ Der FB_CTD hat keine expliziten Zustände, sondern reagiert direkt auf die Einga
 - Überwachung von Zeitintervallen oder Ereigniszählungen.
 - Einsatz in Automatisierungssystemen, wo ein herunterzählender Zähler benötigt wird.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **FB_CTU (Up Counter)**: Zählt nach oben statt nach unten.
 - **FB_CTUD (Up-Down Counter)**: Kombiniert Auf- und Abwärtszählen in einem Baustein.
 

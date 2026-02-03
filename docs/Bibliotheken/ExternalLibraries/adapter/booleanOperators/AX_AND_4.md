@@ -57,7 +57,7 @@ Da es sich um einen kombinatorischen Logikbaustein handelt, besitzt der AX_AND_4
 
 Vergleich mit [AND_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_4.md)
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen UND-Bausteinen mit weniger Eingängen bietet AX_AND_4 die Möglichkeit, vier Signale direkt zu verknüpfen, ohne zusätzliche Verkettungen. Gegenüber ODER-Verknüpfungen stellt die UND-Verknüpfung strengere Anforderungen an die Aktivierung.
 
 ## Fazit

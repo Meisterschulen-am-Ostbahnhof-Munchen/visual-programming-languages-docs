@@ -42,7 +42,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt ausschl
 - Verarbeitung von Sensordaten, bei denen nur die unteren 8 Bit relevant sind.
 - Kompatibilität mit älteren Systemen, die nur 8-Bit-Daten verarbeiten können.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_LINT_TO_SINT` spezialisiert und optimiert für die Konvertierung von `LINT` zu `SINT`.
 - Andere Konvertierungsblöcke könnten zusätzliche Funktionen wie Überlaufbehandlung oder Skalierung bieten, was hier nicht der Fall ist.
 

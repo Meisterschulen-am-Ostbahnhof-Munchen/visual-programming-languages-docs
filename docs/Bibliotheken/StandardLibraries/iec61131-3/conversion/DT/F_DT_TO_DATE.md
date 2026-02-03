@@ -43,7 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Jede `REQ`-Anfrage wird una
 - Vorverarbeitung von Datumsinformationen für Berichte oder Visualisierungen
 - Schnittstellen zu Systemen, die nur DATE-Datentypen verarbeiten können
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_DT_TO_TIME` konvertiert dieser Baustein nur den Datumsteil
 - Ähnlich zu `F_DT_TO_TOD`, aber mit Fokus auf das Datum statt der Tageszeit
 

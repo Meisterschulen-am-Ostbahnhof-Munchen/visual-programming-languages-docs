@@ -55,7 +55,7 @@ Der PUBLISH_2-Block initialisiert sich über das INIT-Ereignis und sendet anschl
 - Systeme mit variablen Datentypen
 - Kommunikation zwischen verschiedenen Steuerungskomponenten
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu bestätigten Kommunikationsblöcken bietet PUBLISH_2 eine höhere Performance bei gleichzeitig geringerer Zuverlässigkeit. Die Unterstützung für beliebige Datentypen macht ihn flexibler als typspezifische Kommunikationsblöcke.
 
 ## Fazit

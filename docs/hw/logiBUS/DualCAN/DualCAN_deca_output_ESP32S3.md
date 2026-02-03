@@ -8,7 +8,7 @@
 CAN-TX 4
 CAN-RX 5
 
-## IO
+## 🔌 IO
 
 ### Analoge Eingänge
 

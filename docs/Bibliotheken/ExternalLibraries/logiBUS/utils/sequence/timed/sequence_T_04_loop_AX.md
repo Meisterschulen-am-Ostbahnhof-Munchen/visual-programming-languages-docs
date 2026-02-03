@@ -46,7 +46,7 @@ Siehe `sequence_T_04_loop`.
 ## Anwendungsszenarien
 Für zeitgesteuerte zyklische 4-stufige Sequenzen mit Adapteranbindung.
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_T_04_loop**: Standardvariante ohne Adapter.
 
 ## Fazit

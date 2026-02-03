@@ -45,7 +45,7 @@ Das Eingangsereignis wird somit immer exklusiv an genau einen Ausgang weitergele
 - **Sequenzer/Schrittketten**: Aktivierung des nächsten Schritts in einer Kette.
 - **Fehler-Routing**: Weiterleiten eines allgemeinen Fehlerereignisses an einen spezifischen Handler basierend auf einem Fehlercode (`K` = Fehlercode).
 
-## Vergleich mit ähnlichen Bausteinen
+## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal        | E_DEMUX (dieser) | E_MUX          | E_SWITCH         |
 |----------------|------------------|----------------|------------------|
@@ -60,7 +60,7 @@ Das Eingangsereignis wird somit immer exklusiv an genau einen Ausgang weitergele
 
 
 
-## Zugehörige Übungen
+## 🛠️ Zugehörige Übungen
 
 * [Uebung_040](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
 * [Uebung_040_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_040_AX.md)

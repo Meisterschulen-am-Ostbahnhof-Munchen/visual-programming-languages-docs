@@ -6,6 +6,7 @@
 Hier finden Sie mathematische Funktionen wie Winkelfunktionen, Logarithmus, Wurzel etc.
 
 ```{toctree}
+:maxdepth: 1
 F_ABS
 F_ACOS
 F_ASIN

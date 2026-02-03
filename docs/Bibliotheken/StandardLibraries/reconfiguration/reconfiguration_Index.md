@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 EC_KILL_ELEM
 EC_SET_EVT
 EC_START_ELEM

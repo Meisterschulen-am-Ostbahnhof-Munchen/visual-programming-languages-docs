@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 logiBUS_2_CAN_DI
 logiBUS_2_CAN_DI_S
 logiBUS_2_CAN_IX

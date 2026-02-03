@@ -19,6 +19,7 @@
 ## Kapitelinhalt
 
 ```{toctree}
+:maxdepth: 1
 Ueber4diac
 Installation-4diac
 4diac_Update

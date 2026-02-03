@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 combi/combi_Index
 const/const_Index
 event/event_Index

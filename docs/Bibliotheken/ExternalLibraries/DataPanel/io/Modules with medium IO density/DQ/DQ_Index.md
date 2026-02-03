@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 DataPanel_MI_DO
 DataPanel_MI_DO_S
 DataPanel_MI_QW_PWM

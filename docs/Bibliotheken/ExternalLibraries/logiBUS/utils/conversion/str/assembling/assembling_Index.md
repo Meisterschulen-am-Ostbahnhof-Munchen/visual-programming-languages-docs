@@ -4,5 +4,6 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 ST08X_TO_BYTE
 ```

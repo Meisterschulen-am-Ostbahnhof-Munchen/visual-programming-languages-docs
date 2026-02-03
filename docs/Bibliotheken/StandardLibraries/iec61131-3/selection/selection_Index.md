@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Auswahl von Werten (Max, Min, Limit, Mux etc.).
 
 ```{toctree}
+:maxdepth: 1
 F_LIMIT
 F_MAX
 F_MIN

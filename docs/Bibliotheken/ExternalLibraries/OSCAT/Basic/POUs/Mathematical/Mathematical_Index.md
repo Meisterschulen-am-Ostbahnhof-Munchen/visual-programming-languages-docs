@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 D_TRUNC
 FLOOR
 FLOOR2

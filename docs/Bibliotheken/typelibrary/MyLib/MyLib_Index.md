@@ -4,5 +4,6 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 sys/sys_Index
 ```

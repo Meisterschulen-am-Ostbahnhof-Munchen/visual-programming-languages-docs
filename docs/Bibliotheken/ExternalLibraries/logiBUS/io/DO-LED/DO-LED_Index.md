@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 LED_COLOURS
 LED_FREQ
 LED_strip

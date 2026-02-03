@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Konvertierung des Datentyps BYTE.
 
 ```{toctree}
+:maxdepth: 1
 F_BYTE_AS_STRING
 F_BYTE_AS_WSTRING
 F_BYTE_TO_DINT

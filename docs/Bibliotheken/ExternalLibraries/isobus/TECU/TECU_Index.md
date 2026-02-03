@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 I_COGSOGRapidUpdate
 I_FHS
 I_FPTO

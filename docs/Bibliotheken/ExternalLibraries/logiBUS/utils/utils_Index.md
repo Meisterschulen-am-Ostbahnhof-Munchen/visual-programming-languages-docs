@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 conversion/conversion_Index
 interlock/interlock_Index
 logging/logging_Index

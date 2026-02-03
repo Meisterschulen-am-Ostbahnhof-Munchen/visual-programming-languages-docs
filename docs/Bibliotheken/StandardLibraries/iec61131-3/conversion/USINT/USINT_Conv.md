@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Konvertierung des Datentyps USINT.
 
 ```{toctree}
+:maxdepth: 1
 F_USINT_AS_STRING
 F_USINT_AS_WSTRING
 F_USINT_TO_BYTE

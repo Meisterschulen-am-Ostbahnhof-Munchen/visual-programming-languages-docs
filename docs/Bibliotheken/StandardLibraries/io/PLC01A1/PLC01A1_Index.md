@@ -6,5 +6,6 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 PLC01A1_fbt
 ```

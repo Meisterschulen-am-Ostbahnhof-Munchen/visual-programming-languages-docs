@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Konvertierung des Datentyps LWORD.
 
 ```{toctree}
+:maxdepth: 1
 F_LWORD_AS_STRING
 F_LWORD_AS_WSTRING
 F_LWORD_TO_BYTE

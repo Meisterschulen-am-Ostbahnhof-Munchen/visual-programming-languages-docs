@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 BCD/BCD_Index
 BOOL/BOOL_Conv
 BYTE/BYTE_Conv

@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 types/types_Index
 selection/selection_Index
 iec61131/iec61131_Index

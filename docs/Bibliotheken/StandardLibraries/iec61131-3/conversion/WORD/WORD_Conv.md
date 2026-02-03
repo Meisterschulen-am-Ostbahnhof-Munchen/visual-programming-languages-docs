@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Konvertierung des Datentyps WORD.
 
 ```{toctree}
+:maxdepth: 1
 F_WORD_AS_STRING
 F_WORD_AS_WSTRING
 F_WORD_TO_BYTE

@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 AB_B_TO_BYTE
 AB_BYTE_TO_B
 ```

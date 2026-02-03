@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 const/const_Index
 DQ/DQ_Index
 ```

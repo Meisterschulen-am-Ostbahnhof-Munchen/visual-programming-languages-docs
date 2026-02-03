@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 AND_10_BOOL
 AND_2_BOOL
 AND_3_BOOL

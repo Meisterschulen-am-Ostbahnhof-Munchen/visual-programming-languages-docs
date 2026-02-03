@@ -2,6 +2,7 @@
 
 
 ```{toctree}
+:maxdepth: 1
 TC_ID
 TC_QD
 ```

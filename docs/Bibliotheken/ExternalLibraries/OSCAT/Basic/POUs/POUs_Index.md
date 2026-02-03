@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 conversion/conversion_Index
 Engineering/Engineering_Index
 Mathematical/Mathematical_Index

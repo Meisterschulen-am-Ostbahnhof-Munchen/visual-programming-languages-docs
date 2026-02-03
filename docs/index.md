@@ -96,6 +96,7 @@ Besuchen Sie unser [Discussion Forum](https://github.com/Meisterschulen-am-Ostba
 :::
 
 ```{toctree}
+:maxdepth: 1
 :caption: 'Grundlagen'
 :maxdepth: 2
 Welcome
@@ -107,6 +108,7 @@ Literatur_Index
 ```
 
 ```{toctree}
+:maxdepth: 1
 :caption: 'Technik & Standards'
 :maxdepth: 2
 FunctionBlock
@@ -117,6 +119,7 @@ hw/hw_Index
 ```
 
 ```{toctree}
+:maxdepth: 1
 :caption: 'Praxis & Training'
 :maxdepth: 2
 DasErsteProjekt/DasErsteProjekt_Index
@@ -130,6 +133,7 @@ training1/Ventilsteuerung/4diacIDE-workspace/test_VV/Uebungen_doc/Uebungen
 ---
 
 ```{toctree}
+:maxdepth: 1
 :caption: 'Index & Suche'
 :maxdepth: 2
 genindex

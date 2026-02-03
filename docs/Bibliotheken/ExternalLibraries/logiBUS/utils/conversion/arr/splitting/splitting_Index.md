@@ -4,5 +4,6 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 BYTE_TO_ARR08X
 ```

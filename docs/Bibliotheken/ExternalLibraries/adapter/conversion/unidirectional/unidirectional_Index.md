@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 AD_AUDI/AD_AUDI_Index
 BOOL/BOOL_Adapter_Conv
 BYTE/BYTE_Adapter_Conv

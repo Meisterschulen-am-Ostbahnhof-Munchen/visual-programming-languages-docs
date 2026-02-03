@@ -66,6 +66,7 @@ Siehe auch: IEC 61499, Table E.1
 In der folgenden Liste sind die elementaren Datentypen gemäß DIN EN 61131-3 aufgeführt.
 
 ```{toctree}
+:maxdepth: 1
 BOOL/BOOL_Type
 BYTE/BYTE_Type
 CHAR/CHAR

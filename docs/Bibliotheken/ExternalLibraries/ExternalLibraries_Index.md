@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 adapter/adapter_Index
 BlinkMarine/BlinkMarine_Index
 DataPanel/DataPanel_Index

@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Konvertierung des Datentyps UINT.
 
 ```{toctree}
+:maxdepth: 1
 F_UINT_AS_STRING
 F_UINT_AS_WSTRING
 F_UINT_TO_BYTE

@@ -6,6 +6,7 @@
 Hier finden Sie alle Übungen des Arbeitsbereichs `unidirectional` in aufsteigender Reihenfolge.
 
 ```{toctree}
+:maxdepth: 1
 A2X_2AX_TO_2X
 A2X_2X_TO_2AX
 A2X_2X_TO_BOOL

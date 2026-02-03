@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 AUI_UINT_TO_UI
 AUI_UI_TO_UINT
 ```

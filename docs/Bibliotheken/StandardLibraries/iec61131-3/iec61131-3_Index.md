@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 arithmetic/arithmetic_Index
 bistableElements/bistableElements_Index
 bitwiseOperators/bitwiseOperators_Index

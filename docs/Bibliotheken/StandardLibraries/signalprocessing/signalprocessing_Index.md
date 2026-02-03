@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 distance/distance_Index
 DualHysteresis
 FIELDBUS_PERCENT_TO_WORD

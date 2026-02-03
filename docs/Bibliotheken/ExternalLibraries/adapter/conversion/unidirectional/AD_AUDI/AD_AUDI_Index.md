@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 AD_TO_AUDI
 AUDI_TO_AD
 ```

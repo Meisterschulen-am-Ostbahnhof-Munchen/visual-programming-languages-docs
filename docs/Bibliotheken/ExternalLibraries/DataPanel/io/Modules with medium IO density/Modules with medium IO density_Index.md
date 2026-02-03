@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 AI/AI_Index
 const/const_Index
 DI/DI_Index

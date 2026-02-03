@@ -6,6 +6,7 @@
 Hier finden Sie alle Übungen des Arbeitsbereichs `unidirectional` in aufsteigender Reihenfolge.
 
 ```{toctree}
+:maxdepth: 1
 AX_DEMUX_2
 AX_DEMUX_3
 AX_DEMUX_4

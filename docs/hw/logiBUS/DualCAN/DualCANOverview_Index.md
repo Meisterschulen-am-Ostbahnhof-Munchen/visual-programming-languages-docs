@@ -5,6 +5,7 @@
 
 
 ```{toctree}
+:maxdepth: 1
 DualCAN_ESP32
 DualCAN_ESP32S3
 DualCAN_hex_output_ESP32

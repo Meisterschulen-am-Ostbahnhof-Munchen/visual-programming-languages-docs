@@ -12,5 +12,6 @@ In diesem Abschnitt werden wir Ihnen die Grundlagen der Typelibrary erklären un
 schauen Sie auch mal in den FB Navigator unter [www.holobloc.com/doc/navigator](https://www.holobloc.com/doc/navigator.htm)
 
 ```{toctree}
+:maxdepth: 1
 MyLib/MyLib_Index
 ```

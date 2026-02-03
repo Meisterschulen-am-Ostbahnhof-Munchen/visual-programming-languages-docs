@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Konvertierung des Datentyps LREAL.
 
 ```{toctree}
+:maxdepth: 1
 F_LREAL_AS_STRING
 F_LREAL_AS_WSTRING
 F_LREAL_TO_DINT

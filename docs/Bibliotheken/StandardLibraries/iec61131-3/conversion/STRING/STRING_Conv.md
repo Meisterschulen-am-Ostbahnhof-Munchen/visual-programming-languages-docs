@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Konvertierung des Datentyps STRING.
 
 ```{toctree}
+:maxdepth: 1
 F_STRING_AS_BOOL
 F_STRING_AS_BYTE
 F_STRING_AS_DINT

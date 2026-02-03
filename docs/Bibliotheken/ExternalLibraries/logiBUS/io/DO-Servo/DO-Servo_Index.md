@@ -4,5 +4,6 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 logiBUS_QW_SERVO
 ```

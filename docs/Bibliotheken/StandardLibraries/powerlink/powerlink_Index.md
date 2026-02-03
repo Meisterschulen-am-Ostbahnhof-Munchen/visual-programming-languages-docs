@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 POWERLINK_MN
 X20AI2622
 X20AI4622

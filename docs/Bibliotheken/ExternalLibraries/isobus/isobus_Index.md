@@ -1,6 +1,7 @@
 # isobus
 
 ```{toctree}
+:maxdepth: 1
 pgn/pgn_Index
 TC/TC_Index
 TECU/TECU_Index

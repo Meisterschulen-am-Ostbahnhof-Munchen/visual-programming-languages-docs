@@ -6,6 +6,7 @@
 Hier finden Sie alle Übungen des Arbeitsbereichs `unidirectional` in aufsteigender Reihenfolge.
 
 ```{toctree}
+:maxdepth: 1
 AULI
 ULINT_Adapter_Uni
 ```

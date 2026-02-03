@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 PKP_2200
 PKP_2200_LI_DI
 PKP_2200_LI_DI_S

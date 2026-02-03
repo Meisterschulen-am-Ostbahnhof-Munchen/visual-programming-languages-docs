@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 AX_AND_2
 AX_AND_3
 AX_AND_4

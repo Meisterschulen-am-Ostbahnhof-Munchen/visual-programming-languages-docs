@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 ARRAY2ARRAY_2_LREAL
 ARRAY2VALUES_2_LREAL
 GET_AT_INDEX

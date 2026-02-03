@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Konvertierung des Datentyps WSTRING in andere Datentypen.
 
 ```{toctree}
+:maxdepth: 1
 F_WSTRING_AS_BOOL
 F_WSTRING_AS_BYTE
 F_WSTRING_AS_DINT

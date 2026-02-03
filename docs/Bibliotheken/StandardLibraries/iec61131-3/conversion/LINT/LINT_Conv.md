@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Konvertierung des Datentyps LINT.
 
 ```{toctree}
+:maxdepth: 1
 F_LINT_AS_STRING
 F_LINT_AS_WSTRING
 F_LINT_TO_BYTE

@@ -50,7 +50,7 @@ Datentypen legen fest, welche Art von Information eine Variable speichern kann (
 *   Informationen zu generischen Datentypen: **[ANY-Typen](Datentypen/GenerischeDatentypen/ANY_Typen.md)**
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 Zahlen
 Datentypen/Datentypen_Index
 Datentypen/GenerischeDatentypen/ANY_Typen

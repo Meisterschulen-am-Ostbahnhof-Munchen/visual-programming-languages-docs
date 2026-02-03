@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 ASR_AX_SR
 AUDI_CTUD_UDINT
 AX_AE_MERGE

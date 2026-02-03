@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 BOOL/BOOL_Adapter_Uni
 BYTE/BYTE_Adapter_Uni
 DINT/DINT_Adapter_Uni

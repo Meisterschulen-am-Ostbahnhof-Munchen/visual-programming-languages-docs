@@ -4,5 +4,6 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 TIME_TO_REAL
 ```

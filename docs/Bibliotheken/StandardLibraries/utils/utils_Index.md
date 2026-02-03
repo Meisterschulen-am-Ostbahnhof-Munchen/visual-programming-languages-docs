@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 assembling/assembling_Index
 const/const_Index
 selection/selection_Index

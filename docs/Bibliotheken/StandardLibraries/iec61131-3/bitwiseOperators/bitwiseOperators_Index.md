@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen für bitweise logische Operationen (AND, OR, XOR, Schieben, Rotieren).
 
 ```{toctree}
+:maxdepth: 1
 AND_10
 AND_2
 AND_3

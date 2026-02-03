@@ -6,6 +6,7 @@
 Hier finden Sie Funktionen zur Konvertierung des Datentyps DWORD.
 
 ```{toctree}
+:maxdepth: 1
 F_DWORD_AS_STRING
 F_DWORD_AS_WSTRING
 F_DWORD_TO_BYTE

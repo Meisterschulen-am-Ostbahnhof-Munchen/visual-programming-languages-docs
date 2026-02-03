@@ -1,6 +1,7 @@
 # Q
 
 ```{toctree}
+:maxdepth: 1
 Q_ActiveMask
 Q_Attribute
 Q_BackgroundColour

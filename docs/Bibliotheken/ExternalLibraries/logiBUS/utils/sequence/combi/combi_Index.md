@@ -4,6 +4,7 @@
 ```
 
 ```{toctree}
+:maxdepth: 1
 sequence_ET_04
 sequence_ET_04_AX
 sequence_ET_04_04

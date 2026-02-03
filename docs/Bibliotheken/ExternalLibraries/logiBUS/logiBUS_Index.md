@@ -15,13 +15,6 @@
 ```{toctree}
 :maxdepth: 1
 
-esp32/esp32_Index.md
-io/io_Index.md
-signalprocessing/signalprocessing_Index.md
-stations/stations_Index.md
-storage/storage_Index.md
-utils/utils_Index.md
-version/version_Index.md
 esp32/esp32_Index
 io/io_Index
 signalprocessing/signalprocessing_Index

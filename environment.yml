@@ -1,0 +1,32 @@
+name: docs
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - sphinx<8.0
+  - myst-parser
+  - sphinx_rtd_theme
+  - sphinx-design
+  - sphinxcontrib-mermaid
+  - sphinxext-opengraph
+  - jinja2
+  - requests>=2.32.0
+  - docutils
+  - snowballstemmer
+  - setuptools>=70.0.0
+  - urllib3>=2.2.2
+  - pip
+  - pip:
+    - linkify
+    - rtd
+    - sphinx-rtd-size
+    - sphinxcontrib-serializinghtml
+    - sphinxcontrib-websupport
+    - sphinxext.rediraffe
+    - sphinxcontrib.googleanalytics
+    - sphinx_pyscript
+    - sphinx_tippy
+    - sphinx-markdown-tables
+    - clang
+    - zipp>=3.19.1

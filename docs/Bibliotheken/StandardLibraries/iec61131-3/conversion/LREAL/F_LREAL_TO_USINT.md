@@ -47,5 +47,10 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung erfolgt unmitt
 - Im Vergleich zu `F_REAL_TO_USINT` (Konvertierung von 32-Bit Gleitkommazahlen) bietet dieser Block eine höhere Eingangspräzision durch die Verwendung von 64-Bit Gleitkommazahlen.
 - Ähnliche Blöcke wie `F_LREAL_TO_INT` oder `F_LREAL_TO_UINT` bieten Konvertierungen in andere Ganzzahltypen mit unterschiedlichen Wertebereichen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_126b_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)
+
 ## Fazit
 Der `F_LREAL_TO_USINT`-Funktionsblock ist ein einfaches, aber effektives Werkzeug zur Konvertierung von 64-Bit Gleitkommazahlen in 8-Bit vorzeichenlose Ganzzahlen. Er eignet sich besonders für Anwendungen, bei denen eine begrenzte Ausgabegröße erforderlich ist, jedoch sollte der Wertebereich des Eingangssignals beachtet werden, um Überläufe zu vermeiden.

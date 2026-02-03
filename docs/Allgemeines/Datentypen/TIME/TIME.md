@@ -37,3 +37,8 @@ Folgende Einheiten können kombiniert werden (Reihenfolge absteigend):
 - `TIME#14ms` (Alternative Schreibweise)
 - `T#-5s` (Negative Zeitdauer von 5 Sekunden)
 - `T#25h_15m` (Überlauf der Einheit ist erlaubt, entspricht 1 Tag, 1 Stunde, 15 Min)
+
+## Zugehörige Übungen
+
+* [Uebung_020j2_AX_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020j2_AX_sub.md)
+* [Uebung_072c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)

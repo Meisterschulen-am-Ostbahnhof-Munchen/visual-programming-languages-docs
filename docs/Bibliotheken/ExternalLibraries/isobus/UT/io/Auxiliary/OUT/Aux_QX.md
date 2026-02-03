@@ -53,5 +53,10 @@ Der Funktionsblock folgt einem typischen Service-Interface-Muster mit Initialisi
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen booleschen Ausgabeblöcken bietet Aux_QX erweiterte Service-Funktionalität mit Initialisierungssequenzen, Parameterkonfiguration und detailliertem Statusmanagement. Die spezifische Adressierung über iInpNr ermöglicht die Integration in komplexe Gerätepools.
 
+
+## Zugehörige Übungen
+
+* [Uebung_003c_sub](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003c_sub.md)
+
 ## Fazit
 Der Aux_QX Funktionsblock stellt eine robuste und standardisierte Lösung für die Ansteuerung von booleschen Auxiliary-Ausgängen dar. Durch sein vollständiges Service-Interface und die flexible Konfigurierbarkeit eignet er sich besonders für den Einsatz in professionellen Automatisierungsumgebungen mit ISOBUS-Kompatibilität.

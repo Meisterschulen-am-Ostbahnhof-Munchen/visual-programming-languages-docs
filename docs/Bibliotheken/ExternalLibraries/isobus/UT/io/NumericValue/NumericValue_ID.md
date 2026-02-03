@@ -67,5 +67,19 @@ Der Funktionsblock durchläuft folgende Zustände:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Eingabeblöcken bietet NumericValue_ID erweiterte Service-Funktionalität mit Initialisierungsprozeduren, Statusrückmeldungen und parametrierbaren Konfigurationsmöglichkeiten. Die spezielle Ausrichtung auf ISOBUS-Umgebungen unterscheidet ihn von generischen Eingabeblöcken.
 
+
+## Zugehörige Übungen
+
+* [Uebung_011](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011.md)
+* [Uebung_012](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012.md)
+* [Uebung_012a_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012a_sub.md)
+* [Uebung_012b](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012b.md)
+* [Uebung_012c](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012c.md)
+* [Uebung_020c2_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c2_sub.md)
+* [Uebung_034a1_Q1](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
+* [Uebung_034a1_Q2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
+* [Uebung_034a1_Q4](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
+* [Uebung_103](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
+
 ## Fazit
 Der NumericValue_ID Funktionsblock stellt eine robuste Lösung für die Verarbeitung von Doppelwort-Eingabedaten in ISOBUS-basierten Systemen dar. Durch seine strukturierte Initialisierung, klare Statusrückmeldungen und flexible Parametrierung eignet er sich ideal für industrielle Anwendungen mit hohen Anforderungen an Zuverlässigkeit und Diagnosefähigkeit.

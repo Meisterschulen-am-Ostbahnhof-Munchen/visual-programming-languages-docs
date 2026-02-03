@@ -71,9 +71,11 @@ Im Vergleich zu Sequenzern mit zeitgesteuerten Übergängen (z.B. `sequence_T_08
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_040](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
+* [Uebung_040_2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040_2.md)
 * [Uebung_041](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_041.md)
 
 ## Fazit

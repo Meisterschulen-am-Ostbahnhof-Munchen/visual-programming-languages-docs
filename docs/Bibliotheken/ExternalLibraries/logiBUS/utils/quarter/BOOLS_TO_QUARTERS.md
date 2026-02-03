@@ -64,5 +64,10 @@ Als Composite FB ohne eigene, explizite Zustandsmaschine besitzt `BOOLS_TO_QUART
 *   **Gegenüber `BOOL_TO_QUARTER`:** `BOOLS_TO_QUARTERS` ist im Wesentlichen ein Array aus 16 `BOOL_TO_QUARTER`-Blöcken mit einer fest verdrahteten seriellen Ereigniskette. Während `BOOL_TO_QUARTER` eine einzelne Konvertierung durchführt, aggregiert `BOOLS_TO_QUARTERS` viele solcher Konvertierungen in einem wiederverwendbaren Baustein.
 *   **Gegenüber generischen Pack-Blöcken (z.B. `BOOLx_TO_BYTE`):** Blöcke wie `BOOL8_TO_BYTE` packen mehrere BOOL-Werte in die Bits eines einzelnen BYTEs. `BOOLS_TO_QUARTERS` hingegen erzeugt für jeden Eingang ein eigenes (wenn auch nur teilweise genutztes) BYTE. Es findet keine Bit-Packung in ein gemeinsames Byte statt, sondern eine 1:1-Abbildung auf ein spezielles Kodierungsformat.
 
+
+## Zugehörige Übungen
+
+* [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+
 ## Fazit
 Der `BOOLS_TO_QUARTERS`-Funktionsblock bietet eine praktische und vorkonfektionierte Lösung, um eine große Anzahl boolescher Signale seriell in das Quarter-Byte-Format zu konvertieren. Seine komposite Natur macht ihn einfach zu verstehen und zu verwenden, da er die Verdrahtung von 16 einzelnen Blöcken und ihrer Ereignislogik abstrahiert. Die serielle Abarbeitung ist ein entscheidendes Merkmal, das bei Echtzeitanforderungen berücksichtigt werden muss. Der Block ist ideal für spezifische Anwendungen, die das Quarter-Byte-Format erfordern, weniger jedoch für allgemeine Bit-Pack- oder -Unpack-Operationen.

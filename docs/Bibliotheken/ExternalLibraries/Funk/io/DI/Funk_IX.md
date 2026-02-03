@@ -66,5 +66,10 @@ Der Function Block durchläuft folgende Zustände:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet Funk_IX erweiterte Service-Funktionalität mit Parametrierbarkeit, Statusrückmeldungen und asynchronen Benachrichtigungen. Die spezielle Eingangsidentifikation ermöglicht eine präzise Adressierung in komplexen Systemen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_003b2_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003b2_sub.md)
+
 ## Fazit
 Der Funk_IX Function Block stellt eine leistungsfähige und flexible Lösung für die Integration digitaler Eingänge in 4diac-basierte Automatisierungssysteme dar. Seine Service-orientierte Architektur mit Initialisierungs-, Abfrage- und Benachrichtigungsfunktionen macht ihn besonders geeignet für anspruchsvolle industrielle Anwendungen.

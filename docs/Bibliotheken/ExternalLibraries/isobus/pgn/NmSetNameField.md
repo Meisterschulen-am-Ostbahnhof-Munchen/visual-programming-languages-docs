@@ -49,5 +49,13 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Er verhält sic
 *   **Gegenstück `NmGetIsoName`:** Ein hypothetischer komplementärer Baustein würde die umgekehrte Operation durchführen: Er nähme eine `NAMEFIELD_T`-Struktur als Eingabe und erzeugte daraus das entsprechende 8-Byte-`CF_NAME_T`-Array. `NmSetNameField` ist der Dekodierer, sein Gegenstück wäre der Kodierer.
 *   **Generische Byte-Parser:** Im Gegensatz zu generischen Byte-zu-Struktur-Konvertern ist dieser Block spezifisch auf das ISO-NAME-Format zugeschnitten und enthält die exakte Bitlogik der Norm. Die Verwendung dieses spezialisierten Blocks reduziert Fehler und erhöht die Wartbarkeit im ISOBUS-Kontext.
 
+
+## Zugehörige Übungen
+
+* [Uebung_120](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_120.md)
+* [Uebung_121](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_121.md)
+* [Uebung_122](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122.md)
+* [Uebung_122b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122b.md)
+
 ## Fazit
 Der `NmSetNameField`-Funktionsblock ist ein essenzielles Hilfsmittel für die Arbeit mit ISOBUS-Netzwerken in 4diac. Er abstrahiert die komplexe Bit-Manipulation, die zur Interpretation des ISO-NAME erforderlich ist, und stellt die Informationen in einer leicht verarbeitbaren strukturierten Form bereit. Seine Verwendung fördert korrekte, normkonforme Applikationen und verbessert die Lesbarkeit des Quellcodes erheblich.

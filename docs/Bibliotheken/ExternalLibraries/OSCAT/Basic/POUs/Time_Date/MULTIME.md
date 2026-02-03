@@ -31,3 +31,7 @@ multiplies a time by a real number and returns a time
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | | TIME | |
+
+## Zugehörige Übungen
+
+* [Uebung_020c2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c2.md)

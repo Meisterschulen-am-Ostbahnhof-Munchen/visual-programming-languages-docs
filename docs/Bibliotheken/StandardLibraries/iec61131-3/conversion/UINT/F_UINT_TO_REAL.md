@@ -46,5 +46,10 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Im Gegensatz zu komplexeren Konvertierungsblöcken bietet `F_UINT_TO_REAL` eine einfache, direkte Umwandlung ohne zusätzliche Funktionalität.
 - Ähnliche Blöcke könnten zusätzliche Features wie Skalierung oder Bereichsprüfungen bieten, was hier nicht der Fall ist.
 
+
+## Zugehörige Übungen
+
+* [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+
 ## Fazit
 Der `F_UINT_TO_REAL`-Funktionsblock ist ein einfaches und effizientes Werkzeug für die Typumwandlung von `UINT` zu `REAL`. Seine Stärke liegt in der Einfachheit und direkten Anwendbarkeit, ohne Overhead durch zusätzliche Funktionen.

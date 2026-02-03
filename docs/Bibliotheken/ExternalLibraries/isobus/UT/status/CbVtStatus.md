@@ -80,6 +80,14 @@ Der **CbVtStatus** ist ein standardisierter Callback-Baustein für Virtual-Termi
   - STATUS = "ERR_INIT_FAILED"
   - System im Safe-State
 
+
+## Zugehörige Übungen
+
+* [Uebung_012](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012.md)
+* [Uebung_012a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012a.md)
+* [Uebung_012b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012b.md)
+* [Uebung_012c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012c.md)
+
 ## Fazit
 
 Der CbVtStatus-Baustein ist essentiell für ISOBUS-konforme Agrarsysteme:

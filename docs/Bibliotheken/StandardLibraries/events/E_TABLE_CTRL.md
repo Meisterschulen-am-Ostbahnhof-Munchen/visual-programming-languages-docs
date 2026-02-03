@@ -72,6 +72,11 @@ Innerhalb von `E_TABLE` arbeitet `E_TABLE_CTRL` mit einem `E_DELAY`-Baustein zus
 
 Dieser Baustein kapselt also die reine Zustandslogik (welcher Schritt ist der nächste, wie lange dauert er), während der `E_DELAY` die eigentliche Zeitverzögerung ausführt.
 
+
+## Zugehörige Übungen
+
+* [Uebung_175](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_175.md)
+
 ## Fazit
 
 Der E_TABLE_CTRL-Baustein erweitert die Möglichkeiten der tabellengesteuerten Ereignisgenerierung:

@@ -47,5 +47,11 @@ Der Funktionsblock hat keinen komplexen Zustandsautomaten. Der Zustand wird ledi
 - **FB_F_TRIG**: Erkennung einer fallenden Flanke (von `TRUE` nach `FALSE`).
 - **FB_R_TRIG** ist spezifisch für steigende Flanken und daher komplementär zu `FB_F_TRIG`.
 
+
+## Zugehörige Übungen
+
+* [Uebung_177](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_177.md)
+* [Uebung_177_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_177_AX.md)
+
 ## Fazit
 Der `FB_R_TRIG` ist ein einfacher und effektiver Funktionsblock zur Erkennung steigender Flanken. Seine klare Schnittstellenstruktur und einfache Funktionsweise machen ihn zu einem nützlichen Baustein in vielen Steuerungsanwendungen.

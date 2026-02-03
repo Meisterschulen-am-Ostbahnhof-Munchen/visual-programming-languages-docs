@@ -67,6 +67,7 @@ Der `E_TABLE` (Event Table) ist ein Funktionsbaustein nach IEC 61499, der eine e
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_093](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_093.md)

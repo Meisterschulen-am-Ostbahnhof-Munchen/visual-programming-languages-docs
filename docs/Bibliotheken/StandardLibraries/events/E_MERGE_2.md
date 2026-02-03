@@ -38,5 +38,10 @@ Die Eingänge werden logisch ODER-verknüpft und ohne Priorisierung oder Verzög
 - **Sensorik**: Kombination der Trigger-Ereignisse von zwei verschiedenen Sensoren.
 - **Fehlermanagement**: Erstellen einer Sammel-Störmeldung aus zwei potenziellen Fehlerquellen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_004a2_2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a2_2.md)
+
 ## Fazit
 Der `E_MERGE_2` ist ein fundamentaler und häufig verwendeter Baustein für die einfachste Form der Ereignis-Verknüpfung. Seine klare Funktionsweise und die effiziente Implementierung als generischer Baustein machen ihn zu einer zuverlässigen Komponente für grundlegende Steuerungslogik.

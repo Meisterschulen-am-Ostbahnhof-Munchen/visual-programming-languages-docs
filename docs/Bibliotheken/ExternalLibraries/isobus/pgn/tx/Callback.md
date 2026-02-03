@@ -26,3 +26,9 @@ Message Callback
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | DO1 | isobus::pgn::CAN_MSG | |
+
+## Zugehörige Übungen
+
+* [Uebung_126b2_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2_sub.md)
+* [Uebung_126b_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)
+* [Uebung_12x_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_12x_sub.md)

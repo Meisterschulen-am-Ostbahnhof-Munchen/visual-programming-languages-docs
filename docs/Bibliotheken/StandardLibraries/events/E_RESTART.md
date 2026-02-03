@@ -70,6 +70,11 @@ Der **E_RESTART** ist ein spezieller Service-Interface-Funktionsbaustein nach IE
 | Ereignistyp   | Steuerbefehle | Periodisch | Einmalig |
 | Standard      | Annex A   | Core     | Core     |
 
+
+## Zugehörige Übungen
+
+* [Uebung_174](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_174.md)
+
 ## Fazit
 
 Der E_RESTART-Baustein bietet eine normkonforme Lösung für kritische Systemsteuerungsaufgaben:

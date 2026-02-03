@@ -55,5 +55,11 @@ Der Baustein besitzt keinen persistenten internen Zustand im Sinne einer Zustand
 *   **`FIFO`-Bausteine**: Klassische FIFO-Speicher (First-In-First-Out) haben oft variable Längen und ein separates Lese-/Schreib-Interface. Der `LOG_16` ist ein spezieller FIFO mit fester Länge (16), der bei jedem Schreibvorgang automatisch den gesamten Inhalt ausgibt und überschreibt.
 *   **Einfache `LOG`-Bausteine**: Einfache Logger ohne Puffer schreiben typischerweise nur einen einzelnen Wert. Die Stärke des `LOG_16` liegt in der ringförmigen Historie.
 
+
+## Zugehörige Übungen
+
+* [Uebung_122](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122.md)
+* [Uebung_122b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122b.md)
+
 ## Fazit
 Der `LOG_16` ist ein nützlicher und generischer Funktionsblock für grundlegende Logging- und Pufferaufgaben in 4diac FORTE-Applikationen. Seine Stärken liegen in der Einfachheit, der generischen Typunterstützung und dem deterministischen Verhalten. Die feste Puffergröße von 16 ist für viele Überwachungsaufgaben ausreichend, für Anwendungen, die eine andere Puffertiefe oder ein selektives Lesen benötigen, sind jedoch angepasste oder erweiterte Bausteine erforderlich.

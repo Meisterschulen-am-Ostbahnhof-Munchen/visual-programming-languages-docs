@@ -80,6 +80,11 @@ Da es sich um einen Composite FB handelt, wird der Zustand primär durch die int
 *   **NumericValue_ID:** Dies ist der interne Basisbaustein. Er bietet dieselbe Funktionalität, stellt die Daten jedoch über klassische `IND`/`CNF` Ereignisse und einen `IN` Datenausgang bereit. **NumericValue_IDA** ist die Adapter-Variante dieses Bausteins.
 *   **Andere `_IDA` Bausteine:** Ähnlich wie `Button_IDA` (für Schaltflächen) oder `String_IDA` (für Texte), folgt dieser Baustein dem Entwurfsmuster, Terminal-Eingaben über Adapter bereitzustellen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_011_AUDI](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011_AUDI.md)
+
 ## Fazit
 
 Der **NumericValue_IDA** ist ein spezialisierter Schnittstellenbaustein für ISOBUS-Anwendungen in 4diac. Durch die Verwendung eines Adapters für die Datenausgabe ermöglicht er eine kompakte und übersichtliche Verschaltung von numerischen Eingabewerten im Funktionsplan. Er eignet sich ideal für Entwickler, die eine strukturierte und modulare Anwendungsarchitektur bevorzugen und numerische Eingaben vom Universal Terminal verarbeiten müssen.

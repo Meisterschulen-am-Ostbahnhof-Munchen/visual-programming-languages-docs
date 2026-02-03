@@ -69,6 +69,7 @@ Der `AND_2_BOOL`-Block ist ein fundamentaler Baustein in der Steuerungs- und Aut
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a4](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a4.md)

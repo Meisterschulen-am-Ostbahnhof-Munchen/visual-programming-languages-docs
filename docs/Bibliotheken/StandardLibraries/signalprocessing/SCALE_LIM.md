@@ -66,5 +66,10 @@ Im Vergleich zu einfachen Skalierungsbausteinen bietet SCALE_LIM zusätzlich:
 - Möglichkeit zur Ausgabe fixer Werte bei Grenzwertüberschreitung
 - Flexiblere Definition von Skalierungsbereichen
 
+
+## Zugehörige Übungen
+
+* [Uebung_043](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_043.md)
+
 ## Fazit
 SCALE_LIM ist ein vielseitiger Funktionsblock für Anwendungen, die sowohl Skalierung als auch Limitierung von Werten erfordern. Die zusätzlichen Grenzwertfunktionen machen ihn besonders geeignet für sicherheitsrelevante Anwendungen, bei denen definierte Reaktionen auf Grenzwertüberschreitungen erforderlich sind.

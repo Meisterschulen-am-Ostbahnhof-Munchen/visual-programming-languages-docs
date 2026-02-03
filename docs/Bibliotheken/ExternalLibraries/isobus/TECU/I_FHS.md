@@ -80,6 +80,11 @@ Entwickelt unter EPL-2.0 Lizenz,ermöglicht er die Überwachung und Steuerung vo
 | Kraftmessung  | ✔     | ✔                      | ✔                      |
 | Diagnosecodes | ✔     | ✖                      | ✔                      |
 
+
+## Zugehörige Übungen
+
+* [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
+
 ## Fazit
 
 Der I_FHS-Baustein bietet umfassende Front-Anbaugerätesteuerung:

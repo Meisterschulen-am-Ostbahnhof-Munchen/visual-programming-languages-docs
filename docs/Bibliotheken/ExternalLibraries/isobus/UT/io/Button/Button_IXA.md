@@ -61,5 +61,11 @@ Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Button_IXA:
 - Standardisierte Statusrückmeldungen
 - Adapter-basierte Architektur für bessere Wiederverwendbarkeit
 
+
+## Zugehörige Übungen
+
+* [Uebung_010a2_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010a2_AX.md)
+* [Uebung_010a3_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010a3_AX.md)
+
 ## Fazit
 Button_IXA ist ein spezialisierter Funktionsblock für die zuverlässige Verarbeitung von Taster-Eingaben in ISOBUS-Umgebungen. Durch seine modulare Architektur und standardisierte Schnittstellen eignet er sich ideal für den Einsatz in komplexen Automatisierungssystemen der Agrartechnik.

@@ -55,5 +55,11 @@ Der Block besitzt keinen internen Zustand im Sinne eines Speichers. Er verhält 
 *   **`BOOL_TO_BYTE`**: Ein generischer Konverter, der `TRUE` typischerweise auf `1` und `FALSE` auf `0` abbildet. `BOOL_TO_QUARTER` ist spezialisierter und verwendet projektspezifische, semantische Konstanten anstelle numerischer Werte.
 *   **Direkte Zuweisung**: Die Funktionalität könnte auch durch direkte Zuweisung in ST-Code (`QB := I`) nachgebildet werden, dabei gingen jedoch die Vorteile der zentralen Konstantendefinition und der klaren Schnittstelle (Events) verloren.
 
+
+## Zugehörige Übungen
+
+* [Uebung_055](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)
+* [Uebung_056](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
+
 ## Fazit
 Der `BOOL_TO_QUARTER`-Funktionsblock ist ein spezialisierter, aber nützlicher Konverter für Steueranwendungen. Er bietet eine saubere Schnittstelle mit Ereignissteuerung, verwendet zentral verwaltete Konstanten für eine einheitliche Semantik und ist durch das Quarter-Byte-Konzept potentiell erweiterbar. Seine Stärke liegt in der Verbindung von einfacher binärer Logik mit gerätespezifischen Steuerprotokollen.

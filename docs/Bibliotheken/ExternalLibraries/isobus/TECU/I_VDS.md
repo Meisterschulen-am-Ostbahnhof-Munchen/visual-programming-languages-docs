@@ -82,6 +82,12 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 | Update-Rate | 10Hz | 1Hz | 20Hz |
 | ISO-Konformität | Voll | Teilweise | Voll |
 
+
+## Zugehörige Übungen
+
+* [Uebung_073](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_073.md)
+* [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
+
 ## Fazit
 
 Der I_VDS-Baustein bietet präzise Navigation für mobile Arbeitsmaschinen:

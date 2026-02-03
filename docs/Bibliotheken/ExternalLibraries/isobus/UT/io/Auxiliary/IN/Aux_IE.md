@@ -62,5 +62,17 @@ Der Block verfügt über einen Initialisierungszustand (INIT/INITO) und operativ
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IE erweiterte Funktionalität für die Erkennung komplexerer Eingabeereignisse und ist speziell für ISOBUS-Umgebungen optimiert.
 
+
+## Zugehörige Übungen
+
+* [Uebung_010b3](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b3.md)
+* [Uebung_010b3_AX](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010b3_AX.md)
+* [Uebung_010bA2](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010bA2.md)
+* [Uebung_010bA2_AX](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010bA2_AX.md)
+* [Uebung_010bA3](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010bA3.md)
+* [Uebung_010bA3_AX](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010bA3_AX.md)
+* [Uebung_010bA4](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010bA4.md)
+* [Uebung_010bA4_AX](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010bA4_AX.md)
+
 ## Fazit
 Der Aux_IE Funktionsblock stellt eine leistungsfähige Schnittstelle für die Verarbeitung von Hilfseingabeereignissen in ISOBUS-basierten Steuerungssystemen dar und ermöglicht die zuverlässige Erkennung verschiedener Benutzerinteraktionen.

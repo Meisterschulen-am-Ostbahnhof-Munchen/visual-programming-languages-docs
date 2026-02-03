@@ -62,5 +62,10 @@ Der Baustein verfügt über folgende Betriebszustände:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgangsbausteinen bietet logiBUS_LED_PWM_QX erweiterte PWM-Funktionalität mit Frequenzsteuerung und prioritätsbasierter Ansteuerung. Die Integration in das logiBUS-Ökosystem ermöglicht eine standardisierte Kommunikation mit I/O-Ressourcen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_030](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_030.md)
+
 ## Fazit
 Der logiBUS_LED_PWM_QX ist ein spezialisierter Funktionsblock für anspruchsvolle LED-Ansteuerungsanwendungen in industriellen Automatisierungssystemen. Durch die PWM-Funktionalität, konfigurierbare Frequenzen und die Integration in das logiBUS-System bietet er eine leistungsstarke Lösung für visuelle Ausgabeszenarien mit hohen Anforderungen an Flexibilität und Zuverlässigkeit.

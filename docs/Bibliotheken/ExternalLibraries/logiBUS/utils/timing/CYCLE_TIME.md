@@ -52,5 +52,10 @@ Der Baustein besitzt einen einzigen Execution Control State (EC-State) mit dem N
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Zeitmessbausteinen (wie `E_DELAY` oder `E_CYCLE`) ist `CYCLE_TIME` spezialisiert auf die **Differenzbildung zwischen aufeinanderfolgenden Zeitpunkten**. Er führt keinen eigenen Timer, sondern wertet extern bereitgestellte Zeitstempel aus. Bausteine wie `E_SR` oder `E_R_TRIG` dienen grundlegend anderen Zwecken (Speichern, Flankenerkennung) und bieten keine Zeitdifferenzberechnung.
 
+
+## Zugehörige Übungen
+
+* [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+
 ## Fazit
 Der `CYCLE_TIME`-Funktionsblock ist ein einfaches, aber effektives Werkzeug zur Laufzeitmessung in IEC 61499-basierten Steuerungssystemen. Seine klare Schnittstelle und einfache Funktionsweise machen ihn zu einer robusten Komponente für Diagnose- und Monitoring-Aufgaben, wo die Genauigkeit und Zuverlässigkeit der Zykluszeiterfassung im Vordergrund steht.

@@ -53,6 +53,7 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weiterleitung e
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_090a2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_090a2.md)

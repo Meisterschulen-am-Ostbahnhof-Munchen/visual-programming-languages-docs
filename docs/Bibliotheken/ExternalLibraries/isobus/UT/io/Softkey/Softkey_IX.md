@@ -65,5 +65,20 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet Softkey_IX erweiterte Service-Funktionalitäten mit parametrierbaren Konfigurationen und ISOBUS-Kompatibilität. Die IND-Funktionalität ermöglicht asynchrone Ereignisbehandlung, was bei reinen Abfrage-basierten Bausteinen nicht verfügbar ist.
 
+
+## Zugehörige Übungen
+
+* [Uebung_010](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010.md)
+* [Uebung_010a](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010a.md)
+* [Uebung_010a4](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010a4.md)
+* [Uebung_010b4_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b4_sub.md)
+* [Uebung_010b5_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b5_sub.md)
+* [Uebung_010c](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c.md)
+* [Uebung_010c2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c2.md)
+* [Uebung_010c3_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c3_sub.md)
+* [Uebung_010c4_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c4_sub.md)
+* [Uebung_039_sub_Outputs](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+* [Uebung_039b](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039b.md)
+
 ## Fazit
 Der Softkey_IX-Funktionsblock stellt eine flexible und standardisierte Lösung für Softkey-Eingaben in industriellen Steuerungssystemen dar. Seine ISOBUS-Kompatibilität und die umfangreiche Service-Schnittstelle machen ihn besonders geeignet für anspruchsvolle Anwendungen in mobilen Arbeitsmaschinen und Industrieanlagen.

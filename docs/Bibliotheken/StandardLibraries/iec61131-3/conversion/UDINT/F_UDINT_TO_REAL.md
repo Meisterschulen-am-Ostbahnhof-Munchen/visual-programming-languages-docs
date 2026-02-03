@@ -45,5 +45,13 @@ Der Funktionsblock besitzt keine internen Zustände. Die Verarbeitung erfolgt un
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_UDINT_TO_REAL` spezialisiert und optimiert für die spezifische Konvertierung von `UDINT` zu `REAL`.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Skalierungen bieten, was hier nicht der Fall ist.
 
+
+## Zugehörige Übungen
+
+* [Uebung_151](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_151.md)
+* [Uebung_151_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_151_AX.md)
+* [Uebung_152](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_152.md)
+* [Uebung_153](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_153.md)
+
 ## Fazit
 Der `F_UDINT_TO_REAL`-Funktionsblock ist ein einfacher und effizienter Baustein für die Konvertierung von vorzeichenlosen 32-Bit-Integern in Gleitkommazahlen. Seine Einfachheit macht ihn besonders geeignet für Anwendungen, wo eine schnelle und direkte Konvertierung benötigt wird.

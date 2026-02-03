@@ -46,5 +46,10 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 - **Kombinierte Alarme**: Zwei verschiedene Alarme werden zu einer zentralen Alarmroutine geleitet, die dann anhand von `K` den spezifischen Alarmtext anzeigt.
 - **Vereinfachung von Logik**: Statt zwei separate Pfade für ähnliche Logik zu haben, werden die auslösenden Ereignisse zusammengeführt und der Index `K` wird als Parameter für die nachfolgende Logik verwendet.
 
+
+## Zugehörige Übungen
+
+* [Uebung_172](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_172.md)
+
 ## Fazit
 Der `E_MUX_2` ist ein nützlicher Baustein, um Ereignisströme zu bündeln und gleichzeitig die Quelle des Ereignisses zu identifizieren. Er ist das Standard-Gegenstück zum `E_DEMUX_2` und wird häufig verwendet, um die Komplexität von Verdrahtungen zu reduzieren und Logik zu zentralisieren.

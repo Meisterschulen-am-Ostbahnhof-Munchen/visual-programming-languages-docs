@@ -72,6 +72,16 @@ Der `STRUCT_MUX` ist ein zustandsloser Baustein, der nach einem einfachen Anford
 
 | 4diac-Paket | eclipse4diac::convert |
 
+
+## Zugehörige Übungen
+
+* [Uebung_051](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_051.md)
+* [Uebung_052](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_052.md)
+* [Uebung_121](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_121.md)
+* [Uebung_126b2_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2_sub.md)
+* [Uebung_126b_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)
+* [Uebung_12x_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_12x_sub.md)
+
 ## Fazit
 
 `STRUCT_MUX` ist ein fundamentaler und sehr praktischer Baustein für die Arbeit mit Datenstrukturen in 4diac. Seine Fähigkeit, aus einzelnen Werten eine beliebige Struktur zu generieren, vereinfacht die Anwendungslogik und fördert eine saubere, strukturierte Datenhaltung. Er ist das Standardwerkzeug, um Daten zu bündeln und strukturierte Informationen zu erzeugen.

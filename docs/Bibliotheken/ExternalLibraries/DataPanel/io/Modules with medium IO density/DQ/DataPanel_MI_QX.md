@@ -65,5 +65,11 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet DataPanel_MI_QX erwei
 - Detaillierte Statusrückmeldungen
 - Flexible Ausgangskonfiguration über den Output-Parameter
 
+
+## Zugehörige Übungen
+
+* [Uebung_003b2_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003b2_sub.md)
+* [Uebung_010a4](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010a4.md)
+
 ## Fazit
 Der DataPanel_MI_QX Function Block stellt eine leistungsstarke und flexible Lösung für die Ansteuerung digitaler Ausgänge in DataPanel MI-Systemen dar. Durch seine umfangreiche Parametrierbarkeit und detaillierte Statusrückmeldungen eignet er sich besonders für komplexe Automatisierungsanwendungen, die eine zuverlässige und konfigurierbare Ausgabeschnittstelle erfordern.

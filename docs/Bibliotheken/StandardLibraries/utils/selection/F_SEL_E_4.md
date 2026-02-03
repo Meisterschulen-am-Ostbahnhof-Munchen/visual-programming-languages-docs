@@ -53,5 +53,12 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weitergabe erfo
 - Im Vergleich zu anderen Selektoren bietet F_SEL_E_4 eine ereignisbasierte Steuerung, was eine präzisere Auswahl ermöglicht als zeit- oder zustandsbasierte Alternativen.
 - Die Unterstützung des ANY-Datentyps macht ihn flexibler als typenspezifische Selektoren.
 
+
+## Zugehörige Übungen
+
+* [Uebung_019a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019a.md)
+* [Uebung_019b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019b.md)
+* [Uebung_019c](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019c.md)
+
 ## Fazit
 Der F_SEL_E_4 ist ein vielseitiger und flexibler Funktionsblock für die ereignisbasierte Auswahl von Daten in Automatisierungssystemen. Seine einfache Schnittstelle und die Unterstützung verschiedener Datentypen machen ihn zu einer praktischen Lösung für viele Anwendungsfälle.

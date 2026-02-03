@@ -69,5 +69,10 @@ Der Funktionsblock hat keinen internen Zustand. Jedes Ereignis führt sofort zur
 - **Flexibilität**:
   Im Gegensatz zu einfachen Zählern ermöglicht dieser Baustein eine dynamische Anpassung der Schrittweiten und Grenzwerte.
 
+
+## Zugehörige Übungen
+
+* [Uebung_009a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009a.md)
+
 ## Fazit
 Der `RampLimitFS`-Funktionsblock ist ideal für Anwendungen, bei denen ein Wert schrittweise innerhalb definierter Grenzen angepasst werden muss. Durch die Unterscheidung zwischen schnellen und langsamen Änderungen sowie die Möglichkeit, direkte Werte zu laden, bietet er eine hohe Flexibilität für verschiedene Steuerungsaufgaben.

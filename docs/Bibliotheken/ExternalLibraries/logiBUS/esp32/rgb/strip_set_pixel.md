@@ -59,5 +59,10 @@ Das `clear`-Ereignis setzt alle Pixel der Leiste auf Schwarz (aus), was einem L�
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Bausteinen, die ganze Farbmuster oder Bilder auf eine LED-Matrix übertragen (z.B. `strip_show` oder `matrix_display`), arbeitet `strip_set_pixel` auf einer sehr granularen, pixelweisen Ebene. Er bietet maximale Kontrolle über jede einzelne LED, ist für die Übertragung komplexer Bilder jedoch weniger effizient. Bausteine wie `strip_fill` setzen typischerweise einen ganzen Bereich oder alle LEDs auf einmal auf eine Farbe, während `strip_set_pixel` individuell adressiert.
 
+
+## Zugehörige Übungen
+
+* [Uebung_031](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_031.md)
+
 ## Fazit
 Der `strip_set_pixel`-Funktionsblock ist ein grundlegender und essentieller Baustein für die Ansteuerung von adressierbaren RGB-LED-Leisten innerhalb von 4diac. Durch sein einfaches, ereignisbasiertes Interface ermöglicht er eine präzise und direkte Kontrolle über jedes einzelne Pixel. Seine Stärke liegt in der Einfachheit für punktuelle Steueraufgaben, während für komplexere Animationen die Kombination mit übergeordneten, sequenzierenden Bausteinen empfohlen wird.

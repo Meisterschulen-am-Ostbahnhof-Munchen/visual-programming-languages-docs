@@ -70,5 +70,10 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 *   **Gegenüber einfachen `E_CYC`-Blöcken**: `AlPgnTxNew8Bcycl` ist spezialisiert auf ISOBUS-PGNs und bietet integrierte Handhabung von Priorität, Zieladressierung und Fehlermanagement, während ein generischer zyklischer Event-Generator (`E_CYC`) nur Timing bereitstellt.
 *   **Gegenüber generischen CAN-Sendeblöcken**: Dieser Block abstrahiert die niedrigleveligen CAN-Details (Identifier-Berechnung, Datenrahmen) und arbeitet direkt auf der logischeren PGN-Ebene gemäß ISOBUS-Standard.
 
+
+## Zugehörige Übungen
+
+* [Uebung_127](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_127.md)
+
 ## Fazit
 Der `AlPgnTxNew8Bcycl` ist ein spezialisierter und leistungsstarker Funktionsblock für die zyklische Datenkommunikation in ISOBUS-Netzwerken. Durch seine klare Schnittstelle, die umfassende Konfigurierbarkeit und die integrierte Fehlerrückmeldung eignet er sich ideal für die zuverlässige Implementierung von Sendediensten in komplexen, verteilten Steuerungssystemen der Landtechnik.

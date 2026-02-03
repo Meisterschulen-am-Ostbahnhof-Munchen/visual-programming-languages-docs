@@ -62,9 +62,14 @@ Vergleich mit [E_TP](../../../../../StandardLibraries/events/timer/E_TP.md)
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_020f_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f_AX.md)
+* [Uebung_020j2_AX_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020j2_AX_sub.md)
+* [Uebung_020j_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020j_AX.md)
+* [Uebung_177_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_177_AX.md)
+* [Uebung_178_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_178_AX.md)
 
 ## Fazit
 Der AX_TP ist ein robuster und standardkonformer Timer-Funktionsblock, der sich ideal für zeitgesteuerte Anwendungen in verteilten Automatisierungssystemen eignet. Seine Adapter-basierte Architektur ermöglicht flexible Integration in komplexere Steuerungsstrukturen.

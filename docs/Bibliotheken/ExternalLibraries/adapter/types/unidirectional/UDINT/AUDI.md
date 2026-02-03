@@ -22,6 +22,7 @@ unidirectional Adapter Interface for 1 Event and 1 Udint
 | D1 | UDINT | Indication (or Request) Data from Plug |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_009_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)

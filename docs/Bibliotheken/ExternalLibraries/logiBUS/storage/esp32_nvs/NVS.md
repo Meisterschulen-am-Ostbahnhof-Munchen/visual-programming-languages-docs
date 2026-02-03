@@ -68,5 +68,12 @@ Die Datentypen der Ein- und Ausgänge `VALUE`, `DEFAULT_VALUE` und `VALUEO` müs
 *   **BLINK / DELAY**: Zeitbasierte Blöcke ohne Speicherfunktionalität.
 *   **E_EEPROM**: Ein generischer EEPROM-Baustein. Der NVS-Block ist spezifisch für die ESP32-Plattform und nutzt dessen optimiertes, wear-leveling-fähiges Dateisystem (NVS), während ein generischer E_EEPROM-Block hardwareabhängig und oft auf einfacherem Speicher operieren würde.
 
+
+## Zugehörige Übungen
+
+* [Uebung_012](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012.md)
+* [Uebung_012a_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012a_sub.md)
+* [Uebung_020c2_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c2_sub.md)
+
 ## Fazit
 Der NVS-Funktionsblock stellt eine einfache und robuste Schnittstelle zum nichtflüchtigen Speicher des ESP32 bereit. Durch die klare Trennung von Lese- und Schreiboperationen sowie die typflexible Datenverarbeitung eignet er sich ideal für eine Vielzahl von Anwendungen, die persistente Daten auf eingebetteten ESP32-Systemen benötigen. Seine Integration in die 4diac-IDE ermöglicht eine plattformspezifische Funktionalität innerhalb des portablen IEC 61499-Modells.

@@ -65,5 +65,11 @@ Im Vergleich zu einfachen digitalen Eingabeblöcken bietet Button_IX erweiterte 
 - ISOBUS-Integration
 - Asynchrone Ereignisbehandlung
 
+
+## Zugehörige Übungen
+
+* [Uebung_010a2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010a2.md)
+* [Uebung_010a3](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010a3.md)
+
 ## Fazit
 Der Button_IX-Funktionsblock stellt eine robuste und flexible Lösung für die Integration von Tasteneingaben in 4diac-basierten Steuerungssystemen dar. Seine umfangreiche Schnittstelle und Statusverwaltung machen ihn besonders geeignet für anspruchsvolle industrielle Anwendungen, die zuverlässige und überwachbare Eingabeverarbeitung erfordern.

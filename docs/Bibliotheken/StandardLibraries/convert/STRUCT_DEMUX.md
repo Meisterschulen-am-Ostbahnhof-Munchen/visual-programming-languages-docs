@@ -72,6 +72,27 @@ Der `STRUCT_DEMUX` ist ein zustandsloser Baustein, der nach einem einfachen Anfo
 
 | 4diac-Paket | eclipse4diac::convert |
 
+
+## Zugehörige Übungen
+
+* [Uebung_051](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_051.md)
+* [Uebung_120](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_120.md)
+* [Uebung_121](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_121.md)
+* [Uebung_122](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122.md)
+* [Uebung_122b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122b.md)
+* [Uebung_123](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_123.md)
+* [Uebung_124](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_124.md)
+* [Uebung_125](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_125.md)
+* [Uebung_126](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126.md)
+* [Uebung_127](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_127.md)
+* [Uebung_128](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128.md)
+* [Uebung_128b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128b.md)
+* [Uebung_130](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_130.md)
+* [Uebung_131](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_131.md)
+* [Uebung_132](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_132.md)
+* [Uebung_133](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_133.md)
+* [Uebung_134](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_134.md)
+
 ## Fazit
 
 `STRUCT_DEMUX` ist ein fundamentaler und äußerst nützlicher Baustein für die Arbeit mit Datenstrukturen in 4diac. Seine Fähigkeit, jede beliebige Struktur automatisch in ihre Bestandteile zu zerlegen, vereinfacht die Anwendungslogik erheblich und fördert eine klare, lesbare Verdrahtung. Er ist das Standardwerkzeug, um auf die Inhalte von Strukturen zuzugreifen.

@@ -62,5 +62,10 @@ Im Vergleich zu einfachen booleschen Eingangsblöcken bietet Aux_IXA:
 - Adapter-basierte Schnittstelle
 - Composite-Struktur für bessere Wiederverwendbarkeit
 
+
+## Zugehörige Übungen
+
+* [Uebung_010b1_AX](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010b1_AX.md)
+
 ## Fazit
 Der Aux_IXA stellt einen robusten Composite-Funktionsblock für die boolesche Eingangsdatenverarbeitung in ISOBUS-Umgebungen dar. Durch seine klare Schnittstellendefinition und Adapter-Integration ermöglicht er eine flexible Einbindung in komplexe Steuerungssysteme der Agrartechnik.

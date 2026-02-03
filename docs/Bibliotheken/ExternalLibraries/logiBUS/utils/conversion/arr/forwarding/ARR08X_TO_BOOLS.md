@@ -67,5 +67,10 @@ Der Funktionsblock besitzt keinen internen Zustand (zustandslos). Sein Verhalten
 *   **`BYTE_TO_BOOLS` / `WORD_TO_BOOLS`:** Diese Bausteine zerlegen ein Byte- oder Wort-Datenelement in seine einzelnen Bits. `ARR08X_TO_BOOLS` arbeitet direkt auf einem Array von BOOLs, was semantisch klarer ist, wenn die Quelle bereits ein BOOL-Array ist. Die funktionale Wirkung auf die Bits ist jedoch äquivalent.
 *   **Manuelle Indexierung:** Statt dieses Bausteins zu verwenden, könnte man im umgebenden Algorithmus direkt auf `IN[0]`, `IN[1]` usw. zugreifen. Der Funktionsblock bietet jedoch eine klarere Schnittstellenbeschreibung, verbessert die Lesbarkeit des FBD-Netzwerks und kapselt die Funktionalität.
 
+
+## Zugehörige Übungen
+
+* [Uebung_054](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_054.md)
+
 ## Fazit
 Der `ARR08X_TO_BOOLS` ist ein spezialisierter, aber sehr nützlicher Konvertierungsbaustein. Er stellt eine einfache und effiziente Methode dar, um ein kompaktes 8-Bit-BOOL-Array in acht diskrete Signale zu entpacken. Durch seine klare, zustandslose Funktionsweise und die explizite Benennung aller Ausgänge trägt er erheblich zur Verbesserung der Lesbarkeit und Wartbarkeit von Steuerungsapplikationen bei, in denen mit array-basierten Datenstrukturen gearbeitet wird.

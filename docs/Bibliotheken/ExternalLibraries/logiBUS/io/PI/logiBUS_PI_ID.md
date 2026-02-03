@@ -66,5 +66,15 @@ Die Initialisierung (`INIT`) ist Voraussetzung für beide Betriebsarten. Dabei w
 *   **Gegenüber generischen I/O-FBs (z.B. `WAGO_750_5xx_DI`)**: Ähnliche Funktion, aber herstellerspezifisch (hier logiBUS). Die Konfiguration erfolgt über den strukturierten `Input`-Parameter und `PARAMS` anstelle fester Kanalnummern.
 *   **Gegenüber einfacheren Eingabeblöcken**: Bietet erweiterte Funktionen wie filternde Ereignisgenerierung (`IND`) über `ImpulseDelta`/`TimeDelta`, die in einfachen "Read"-Blöcken typischerweise nicht vorhanden sind.
 
+
+## Zugehörige Übungen
+
+* [Uebung_150](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_150.md)
+* [Uebung_150_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_150_AX.md)
+* [Uebung_151](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_151.md)
+* [Uebung_151_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_151_AX.md)
+* [Uebung_152](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_152.md)
+* [Uebung_153](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_153.md)
+
 ## Fazit
 Der `logiBUS_PI_ID`-Funktionsblock ist ein leistungsfähiges und flexibles Interface für 32-Bit-Digitaleingänge innerhalb des logiBUS-Ökosystems. Durch die Kombination von Polling (`REQ`/`CNF`) und ereignisgesteuerter Abfrage (`IND`) mit konfigurierbaren Auslösekriterien eignet er sich für eine Vielzahl von Anwendungen, von der einfachen Statusabfrage bis zur komplexen Impulsauswertung. Die strikte Trennung von Initialisierungs- und Betriebslogik sowie das umfangreiche Status-Reporting machen ihn zu einem robusten Baustein für industrielle Steuerungsanwendungen.

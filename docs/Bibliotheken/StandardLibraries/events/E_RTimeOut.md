@@ -66,6 +66,12 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ARTimeOut`. Da es sich
 | Schnittstelle | Adapter    | Direkt  | Direkt  |
 | Standard      | 61499-2    | 61499-1 | 61499-1 |
 
+
+## Zugehörige Übungen
+
+* [Uebung_035b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035b.md)
+* [Uebung_170](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_170.md)
+
 ## Fazit
 
 Der E_RTimeOut-Baustein bietet eine elegante Lösung für Timeout-Anforderungen in verteilten Steuerungssystemen:

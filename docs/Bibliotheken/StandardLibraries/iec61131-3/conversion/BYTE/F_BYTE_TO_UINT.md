@@ -45,5 +45,10 @@ Der Funktionsblock hat keinen internen Zustand. Die Ausführung erfolgt unmittel
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_UINT` oder `F_DWORD_TO_UINT` führen ähnliche Konvertierungen durch, jedoch mit anderen Eingangstypen.
 - `F_BYTE_TO_UINT` ist spezialisiert auf die Konvertierung von `BYTE` zu `UINT` und daher effizienter für diesen spezifischen Anwendungsfall.
 
+
+## Zugehörige Übungen
+
+* [Uebung_006c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)
+
 ## Fazit
 Der Funktionsblock `F_BYTE_TO_UINT` ist ein einfaches und effizientes Werkzeug zur Konvertierung von `BYTE`-Werten in `UINT`-Werte. Seine klare Schnittstellenstruktur und direkte Funktionsweise machen ihn ideal für Anwendungen, bei denen solche Typumwandlungen erforderlich sind.

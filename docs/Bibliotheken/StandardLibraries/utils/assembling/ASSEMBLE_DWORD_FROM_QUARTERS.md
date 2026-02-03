@@ -52,5 +52,10 @@ Der Funktionsblock nimmt 16 Quarter-Bytes entgegen und kombiniert sie zu einem 3
 - Ähnliche Bausteine könnten `BYTE_TO_WORD` oder `WORD_TO_DWORD` sein, die jedoch weniger Flexibilität bieten, da sie nur feste Größen kombinieren.
 - `ASSEMBLE_DWORD_FROM_QUARTERS` bietet mehr Kontrolle über die Position jedes einzelnen Bits im resultierenden DWORD.
 
+
+## Zugehörige Übungen
+
+* [Uebung_060](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+
 ## Fazit
 Der `ASSEMBLE_DWORD_FROM_QUARTERS`-Funktionsblock ist ein leistungsfähiges Werkzeug zur Kombination von 16 Quarter-Bytes zu einem DWORD. Durch seine flexible und präzise Arbeitsweise eignet er sich ideal für Anwendungen, bei denen Daten in kleineren Einheiten vorliegen und zu einer größeren Einheit zusammengefasst werden müssen.

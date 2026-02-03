@@ -57,6 +57,7 @@ Im Vergleich zu einfachen ODER-Bausteinen mit nur zwei Eingängen bietet OR_3 di
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a5_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5_AX.md)

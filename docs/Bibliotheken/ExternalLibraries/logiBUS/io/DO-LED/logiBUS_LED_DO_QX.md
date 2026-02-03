@@ -61,5 +61,10 @@ Der Funktionsblock durchläuft typische Service-Interface-Zustände:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_LED_DO_QX erweiterte Funktionen zur Frequenzsteuerung und spezifische LED-Optimierungen. Während Standard-DO-Blöcke nur einfache Ein/Aus-Steuerung bieten, ermöglicht dieser Block komplexere Blinkmuster und Prioritätssteuerung.
 
+
+## Zugehörige Übungen
+
+* [Uebung_029](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_029.md)
+
 ## Fazit
 Der logiBUS_LED_DO_QX Funktionsblock stellt eine spezialisierte Lösung für die LED-Ausgabesteuerung in logiBUS-Systemen dar. Durch die integrierte Frequenzsteuerung und die flexible Konfiguration der Ausgänge eignet er sich besonders für Anwendungen, die erweiterte Visualisierungsfunktionen erfordern.

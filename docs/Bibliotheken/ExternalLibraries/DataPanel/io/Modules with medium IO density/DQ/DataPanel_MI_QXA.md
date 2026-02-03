@@ -62,5 +62,12 @@ Im Vergleich zu einfachen digitalen Ausgabebausteinen bietet DataPanel_MI_QXA:
 - Composite-Architektur mit Adapter-Schnittstelle
 - Umfassende Statusrückmeldungen
 
+
+## Zugehörige Übungen
+
+* [Uebung_003b2_sub_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
+* [Uebung_003b3_sub_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
+* [Uebung_010a4_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010a4_AX.md)
+
 ## Fazit
 Der DataPanel_MI_QXA ist ein leistungsstarker Composite-Funktionsblock für die Steuerung boolescher Ausgabedaten in komplexen Automatisierungsumgebungen. Durch seine modulare Architektur und standardisierten Schnittstellen eignet er sich ideal für den Einsatz in verteilten Steuerungssystemen mit hohen Anforderungen an Flexibilität und Wartbarkeit.

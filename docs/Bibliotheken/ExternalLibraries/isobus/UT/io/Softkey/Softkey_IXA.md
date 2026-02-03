@@ -55,5 +55,18 @@ Der Funktionsblock verfügt über zwei Hauptzustände:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Softkey_IXA erweiterte ISOBUS-Kompatibilität, parametrierbare Service-Schnittstellen und Adapter-basierte Erweiterbarkeit. Die Composite-Struktur ermöglicht eine klare Trennung zwischen Schnittstellenlogik und Kernfunktionalität.
 
+
+## Zugehörige Übungen
+
+* [Uebung_010_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010_AX.md)
+* [Uebung_010a4_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010a4_AX.md)
+* [Uebung_010a_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010a_AX.md)
+* [Uebung_010b4_sub_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
+* [Uebung_010b5_sub_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
+* [Uebung_010c2_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
+* [Uebung_010c3_sub_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
+* [Uebung_010c4_sub_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
+* [Uebung_010c_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010c_AX.md)
+
 ## Fazit
 Softkey_IXA stellt einen robusten und erweiterbaren Composite-Funktionsblock für Softkey-Operationen in ISOBUS-Umgebungen dar. Durch die klare Schnittstellentrennung und Adapter-Unterstützung eignet er sich ideal für komplexe Steuerungssysteme in der Agrartechnik.

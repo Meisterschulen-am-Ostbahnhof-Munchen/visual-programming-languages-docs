@@ -56,5 +56,11 @@ Der Funktionsblock `F_SEL_E_2` wählt zwischen zwei Eingangsvariablen basierend 
 - Im Vergleich zu anderen Selektionsblöcken (z.B. `SEL` in der IEC 61131-3) ist `F_SEL_E_2` rein ereignisgesteuert und benötigt keine zusätzliche logische Bedingung für die Auswahl.
 - Ähnliche Blöcke wie `MUX` (Multiplexer) erlauben die Auswahl aus mehreren Eingängen, sind aber oft datenflussgesteuert und nicht ereignisbasiert.
 
+
+## Zugehörige Übungen
+
+* [Uebung_019](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019.md)
+* [Uebung_074](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_074.md)
+
 ## Fazit
 Der `F_SEL_E_2` ist ein flexibler und einfach zu verwendender Funktionsblock für Anwendungen, bei denen eine ereignisbasierte Auswahl zwischen zwei Eingangsvariablen erforderlich ist. Seine Kompatibilität mit dem `ANY`-Datentyp macht ihn besonders vielseitig einsetzbar.

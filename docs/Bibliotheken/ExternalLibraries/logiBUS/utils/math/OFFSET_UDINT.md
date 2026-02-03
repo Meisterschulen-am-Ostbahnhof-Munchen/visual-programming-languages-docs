@@ -55,5 +55,10 @@ Der Funktionsblock besitzt einen einzigen, stabilen Zustand:
 *   **Schieberegister (FIFO) oder Verzögerungsbausteine:** Diese speichern eine Historie von Werten. `OFFSET_UDINT` speichert dagegen nur einen einzigen, initialen Wert dauerhaft.
 *   **Bausteine mit Merker (SR, RS):** Diese speichern einen binären Zustand. `OFFSET_UDINT` speichert einen spezifischen numerischen (`UDINT`) Startwert.
 
+
+## Zugehörige Übungen
+
+* [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+
 ## Fazit
 Der `OFFSET_UDINT` ist ein spezialisierter und effizienter Funktionsblock für Anwendungen, bei denen ein einmalig gemessener Startwert als Basis für alle folgenden relativen Berechnungen dienen soll. Seine Stärke liegt in der Einfachheit und der zuverlässigen, einmaligen Setzung des Referenzwertes, was manuelle Logik zur Erkennung des "ersten Zyklus" überflüssig macht. Er ist ideal für Initialisierungs- und Normierungsaufgaben in Steuerungsanwendungen.

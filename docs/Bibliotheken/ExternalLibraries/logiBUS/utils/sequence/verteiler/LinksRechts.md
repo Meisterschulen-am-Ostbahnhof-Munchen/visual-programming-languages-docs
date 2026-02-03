@@ -63,5 +63,10 @@ Typische Anwendungen sind:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einem einfachen `SR`- oder `RS`-Flipflop bietet `LinksRechts` eine höhere Abstraktionsebene, da er die Priorisierungslogik und die Pause-Funktionalität bereits kapselt. Gegenüber einem reinen `E_SWITCH`-Block, der nur zwischen zwei Ausgängen umschaltet, verwaltet `LinksRechts` zusätzlich interne Zustände (Pause) und bietet eine definierte Priorisierung der Eingänge.
 
+
+## Zugehörige Übungen
+
+* [Uebung_006a4](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006a4.md)
+
 ## Fazit
 Der `LinksRechts`-Funktionsblock ist ein nützlicher und robuster Grundbaustein für die Steuerung bidirektionaler Bewegungen. Durch die integrierte Priorisierungslogik (Rechtslauf vor Linkslauf) und die zustandsbasierte Pausefunktion vereinfacht er die Applikationsprogrammierung und erhöht die Übersichtlichkeit von Steuerungsprogrammen. Seine klare Schnittstelle und der ausgegebene Zustand unterstützen die Inbetriebnahme und Fehlersuche.

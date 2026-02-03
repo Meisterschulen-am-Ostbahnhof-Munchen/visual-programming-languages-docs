@@ -60,5 +60,10 @@ Als Composite Function Block besitzt `QUARTERS_TO_BOOLS` keinen eigenen komplexe
 *   **`QUARTER_TO_BOOL`**: Dies ist der elementare Baustein, der einen einzelnen 2-Bit-Eingang konvertiert. `QUARTERS_TO_BOOLS` bündelt 16 Instanzen dieses Blocks zu einer Einheit. Die Verwendung des Composite-Blocks ist effizienter für die Handhabung mehrerer Kanäle, während der Einzelblock maximale Flexibilität bei der individuellen Platzierung und Verdrahtung bietet.
 *   **`BYTE_TO_BOOL`-Blöcke**: Konventionelle Blöcke, die ein ganzes Byte in 8 einzelne Bits aufspalten. `QUARTERS_TO_BOOLS` ist spezialisierter, da er davon ausgeht, dass jedes Byte bereits in vier unabhängige 2-Bit-Einheiten unterteilt ist, die separat interpretiert werden müssen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+
 ## Fazit
 Der `QUARTERS_TO_BOOLS`-Funktionsblock ist ein praktisches und zeitsparendes Hilfsmittel für die IEC 61499-Programmierung, wenn häufig mehrere 2-Bit-Datenkanäle in boolesche Signale umgewandelt werden müssen. Durch die Kapselung von 16 Konvertierungen in einem Block reduziert er den Verdrahtungsaufwand in übergeordneten Applikationen erheblich und verbessert die Übersichtlichkeit. Seine deterministische, serielle Ereignisabarbeitung gewährleistet ein zuverlässiges Verhalten, das für Steuerungsaufgaben gut geeignet ist.

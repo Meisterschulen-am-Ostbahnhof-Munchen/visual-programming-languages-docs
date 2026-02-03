@@ -54,5 +54,12 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - Im Gegensatz zu arithmetischen Funktionsblöcken ändert `F_UDINT_TO_DWORD` nicht den Wert, sondern nur den Datentyp.
 - Ähnliche Konvertierungsblöcke existieren für andere Datentypen (z.B. `INT_TO_DINT`), jedoch mit unterschiedlichen Quell- und Zieltypen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_034b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034b.md)
+* [Uebung_152](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_152.md)
+* [Uebung_153](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_153.md)
+
 ## Fazit
 `F_UDINT_TO_DWORD` ist ein einfacher, aber essentieller Funktionsblock für Typkonvertierungen in IEC 61499-basierten Steuerungssystemen. Seine deterministische Funktionsweise und klare Schnittstelle machen ihn zu einem verlässlichen Werkzeug für Datenumwandlungen.

@@ -57,6 +57,7 @@ Im Vergleich zu Standard-XOR-Bausteinen mit zwei Eingängen bietet XOR_3 die Mö
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a7_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a7_AX.md)

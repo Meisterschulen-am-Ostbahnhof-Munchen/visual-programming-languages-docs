@@ -72,6 +72,11 @@ Es gibt in der Standardbibliothek von 4diac keine direkt vergleichbaren Funktion
 
 | 4diac-Paket | eclipse4diac::convert |
 
+
+## Zugehörige Übungen
+
+* [Uebung_052](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_052.md)
+
 ## Fazit
 
 Der `GET_STRUCT_VALUE` Funktionsblock ist ein wertvolles Werkzeug für Entwickler, die eine flexible und dynamische Methode zum Auslesen von Werten aus Datenstrukturen in 4diac benötigen. Seine Fähigkeit, auf Member über String-Pfade zuzugreifen, einschließlich verschachtelter Strukturen, macht ihn besonders nützlich in Szenarien, in denen die Struktur der benötigten Daten zur Kompilierzeit nicht vollständig bekannt oder variabel ist.

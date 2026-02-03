@@ -85,6 +85,11 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65092) für die
 | Economy-Modus | ✔ | ✖ | ✔ |
 | Diagnosecodes | ✔ | ✖ | ✔ |
 
+
+## Zugehörige Übungen
+
+* [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
+
 ## Fazit
 
 Der I_FPTO-Baustein bietet die Standardimplementierung für Front-PTO-Systeme:

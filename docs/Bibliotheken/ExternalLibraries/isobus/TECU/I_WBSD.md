@@ -98,6 +98,17 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 | Signalstabilität | Hoch | Mittel | Niedrig |
 | ISO-Konformität | Voll | Teilweise | Voll |
 
+
+## Zugehörige Übungen
+
+* [Uebung_070](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_070.md)
+* [Uebung_071](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071.md)
+* [Uebung_071a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071a.md)
+* [Uebung_071b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071b.md)
+* [Uebung_072](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072.md)
+* [Uebung_072b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072b.md)
+* [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
+
 ## Fazit
 
 Der I_WBSD-Baustein bietet zuverlässige Bewegungsdaten für mobile Arbeitsmaschinen:

@@ -66,5 +66,11 @@ Der ECC besteht aus sechs Zuständen:
 *   **`E_SELECT` oder `E_MUX`:** Können ebenfalls zwischen verschiedenen Pfaden/Werten wählen, sind aber generischer und nicht speziell auf die Konvertierung in Strings mit vordefinierten Quarter-Statuswerten ausgelegt.
 *   **Einfache `STRING`-Zuweisung:** Eine direkte Zuweisung im ST-Code könnte ähnliches leisten, aber der `QUARTER_TO_STR_STATUS`-Block kapselt die Logik, fördert die Wiederverwendbarkeit und erzwingt die Verwendung der standardisierten Konstanten, was die Konsistenz im gesamten Projekt erhöht.
 
+
+## Zugehörige Übungen
+
+* [Uebung_055](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)
+* [Uebung_056](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
+
 ## Fazit
 Der `QUARTER_TO_STR_STATUS` ist ein spezialisierter und nützlicher Funktionsblock für Anwendungen, die mit dem spezifischen 4-Zustands-Statusmodell (Quarter Byte) arbeiten. Durch die Nutzung einer Konstantenbibliothek und die klare Trennung von Logik und Schnittstelle trägt er zur Robustheit und Wartbarkeit von IEC 61499-Applikationen bei. Er ist die ideale Wahl, wenn kompakte Statusinformationen zuverlässig und einheitlich in eine für den Menschen lesbare Form gebracht werden müssen.

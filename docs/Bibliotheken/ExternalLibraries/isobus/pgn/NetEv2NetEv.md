@@ -55,5 +55,12 @@ Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten
 *   **E_R_TRIG / E_F_TRIG**: Diese sind reine Ereignis-Trigger ohne Datenmanipulation. `NetEv2NetEv` ist ein datenverarbeitender Block.
 *   **Generische ASSIGN-Bausteine**: Ein einfacher `ASSIGN`-Block kopiert einen Eingangswert 1:1 auf den Ausgang. `NetEv2NetEv` ist ein spezialisierter `ASSIGN`-Block für den Typ `ISONETEVENT_T`, der eine gezielte Modifikation (Handle-Überschreibung) vornimmt.
 
+
+## Zugehörige Übungen
+
+* [Uebung_128](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128.md)
+* [Uebung_128b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128b.md)
+* [Uebung_134](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_134.md)
+
 ## Fazit
 Der `NetEv2NetEv`-Funktionsblock ist ein spezialisiertes, schlankes Werkzeug für ISOBUS-Anwendungen. Er erfüllt eine klare und notwendige Nischenaufgabe: das Überschreiben des Quell-Handles in Netzwerkereignis-Datensätzen. Seine einfache, zustandslose Implementierung macht ihn robust und vorhersehbar. Für Entwickler, die mit ISOBUS PGNs und Netzwerkereignissen arbeiten, stellt er ein nützliches Hilfselement dar, um Datenflüsse korrekt zu kennzeichnen und anzupassen.

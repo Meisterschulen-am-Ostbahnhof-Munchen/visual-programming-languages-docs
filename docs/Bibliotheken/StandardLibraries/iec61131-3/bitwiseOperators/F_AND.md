@@ -51,5 +51,11 @@ Der `F_AND`-Block führt eine bitweise UND-Verknüpfung zwischen den Eingangsvar
 - **F_XOR**: Führt eine bitweise exklusive ODER-Verknüpfung durch.
 - **F_NOT**: Führt eine bitweise Negation durch.
 
+
+## Zugehörige Übungen
+
+* [Uebung_002a2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a2.md)
+* [Uebung_002a2_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
+
 ## Fazit
 Der `F_AND`-Funktionsblock ist ein grundlegender Baustein für bitweise logische Operationen in IEC 61131-3-konformen Steuerungssystemen. Seine einfache und standardisierte Schnittstelle macht ihn zuverlässig und vielseitig einsetzbar in verschiedenen Automatisierungsanwendungen.

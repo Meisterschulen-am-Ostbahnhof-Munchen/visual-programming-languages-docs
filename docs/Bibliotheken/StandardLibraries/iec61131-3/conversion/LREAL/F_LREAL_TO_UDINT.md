@@ -47,5 +47,11 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - **F_LREAL_TO_DINT**: Konvertiert 64-Bit Gleitkommawerte (LREAL) in 32-Bit vorzeichenbehaftete Integerwerte (DINT).
 - **F_LREAL_TO_UDINT** ist spezifisch für die Konvertierung zu vorzeichenlosen 32-Bit Integern.
 
+
+## Zugehörige Übungen
+
+* [Uebung_152](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_152.md)
+* [Uebung_153](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_153.md)
+
 ## Fazit
 Der Funktionsblock `F_LREAL_TO_UDINT` bietet eine einfache und effiziente Möglichkeit, Gleitkommawerte in vorzeichenlose Integerwerte umzuwandeln. Aufgrund der fehlenden Überlaufprüfung sollte er jedoch nur in Szenarien eingesetzt werden, in denen die Eingabewerte bekannt und innerhalb des zulässigen Bereichs liegen.

@@ -53,5 +53,14 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen zeichnet sich AX_BOOL_TO_X durch seine spezifische Ausrichtung auf das AX-Adapterformat aus. Während allgemeine Konvertierungsblöcke oft mehrere Ausgabeformate unterstützen, bietet dieser Block eine optimierte Lösung für die spezifische AX-Schnittstelle.
 
+
+## Zugehörige Übungen
+
+* [Uebung_001_AX_b](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
+* [Uebung_002a2_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
+* [Uebung_004b_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX.md)
+* [Uebung_004b_AX_ASR](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
+* [Uebung_004b_AX_ASR_X](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
+
 ## Fazit
 AX_BOOL_TO_X ist ein spezialisierter Konvertierungsbaustein, der eine einfache und effiziente Schnittstelle zwischen booleschen Signalen und dem AX-Adapterformat bereitstellt. Seine klare Struktur und direkte Funktionsweise machen ihn zu einer zuverlässigen Lösung für Integrationsaufgaben in Automatisierungssystemen.

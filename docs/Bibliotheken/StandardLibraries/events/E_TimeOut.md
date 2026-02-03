@@ -59,6 +59,24 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ATimeOut`. Da es sich 
 | `START` bei lfd. Timer | Ignoriert | Startet Timer neu |
 | Adaptertyp    | ATimeOut  | ARTimeOut |
 
+
+## Zugehörige Übungen
+
+* [Uebung_035](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035.md)
+* [Uebung_035a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a.md)
+* [Uebung_035a1_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_035a1_AX.md)
+* [Uebung_035a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a2.md)
+* [Uebung_035a2_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
+* [Uebung_035a3](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a3.md)
+* [Uebung_035a3_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
+* [Uebung_035c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035c.md)
+* [Uebung_036](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_036.md)
+* [Uebung_037](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_037.md)
+* [Uebung_038](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_038.md)
+* [Uebung_038_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_038_AX.md)
+* [Uebung_039](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039.md)
+* [Uebung_039a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039a.md)
+
 ## Fazit
 
 Der E_TimeOut-Baustein bietet eine robuste Grundimplementierung für nicht-nachtriggerbare Timeout-Anforderungen. Er ist ideal für Fälle, in denen ein Zeitablauf gestartet und entweder bis zum Ende durchlaufen oder explizit abgebrochen werden soll. Für Szenarien, die ein "Nachtriggern" oder Zurücksetzen des Timers erfordern (wie bei einem Watchdog, der periodisch "getreten" wird), ist der `E_RTimeOut`-Baustein die bessere Wahl.

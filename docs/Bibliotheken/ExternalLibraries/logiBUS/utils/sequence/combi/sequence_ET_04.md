@@ -86,9 +86,12 @@ Im Gegensatz zu einfachen Timer-Bausteinen (`TON`) oder reinen Zustandsmaschinen
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_035](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035.md)
+* [Uebung_035b](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035b.md)
+* [Uebung_035c](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035c.md)
 * [Uebung_036](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_036.md)
 
 ## Fazit

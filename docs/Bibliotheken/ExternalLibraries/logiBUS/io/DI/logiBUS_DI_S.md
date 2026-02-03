@@ -40,5 +40,15 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DI_S` keinen Zus
 *   **Einfache `USINT` Variable:** Anstelle eines Structs könnte direkt eine `USINT`-Variable verwendet werden. Der Struct bietet jedoch semantische Klarheit (der Name `logiBUS_DI_S` beschreibt den Zweck) und ist leichter erweiterbar, falls zukünftig weitere Konfigurationsparameter (wie Filterzeit, Invertierung) hinzugefügt werden müssen.
 *   **Gerätespezifische Structs:** Innerhalb des logiBUS-Ökosystems könnte es ähnliche Structs für andere Funktionen geben (z.B. `logiBUS_DO_S` für digitale Ausgänge, `logiBUS_AI_S` für analoge Eingänge). Diese würden eine einheitliche Konfigurationsphilosophie über verschiedene I/O-Typen hinweg ermöglichen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_003a_AX_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
+* [Uebung_003a_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003a_sub.md)
+* [Uebung_003b_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003b_sub.md)
+* [Uebung_003c_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003c_sub.md)
+* [Uebung_003c_sub_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003c_sub_AX.md)
+* [Uebung_033_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_033_sub.md)
+
 ## Fazit
 Der `logiBUS_DI_S` ist ein grundlegender und spezifischer Konfigurationsbaustein für die logiBUS-I/O-Architektur. Als strukturierter Datentyp bietet er eine standardisierte und klare Methode, um die Zieladresse (Pin) für einen digitalen Eingang zu definieren. Seine Stärke liegt in der Einfachheit und der Vorbereitung auf mögliche Erweiterungen, was ihn zu einem nützlichen Bestandteil für die strukturierte Konfiguration von Feldbussystemen in 4diac FORTE macht.

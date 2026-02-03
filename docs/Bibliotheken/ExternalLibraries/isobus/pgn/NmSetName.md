@@ -51,5 +51,10 @@ Der Block kehrt danach direkt wieder in den Wartezustand (1) zurück.
 *   **Gegenstück `NmGetName`:** Während `NmSetName` eine strukturierte Beschreibung in ein Byte-Array packt, würde ein hypothetischer `NmGetName`-Block die umgekehrte Operation durchführen: Er extrahiert aus einem gegebenen ISO-NAME-Byte-Array die einzelnen Felder und stellt sie in einer `NAMEFIELD_T`-Struktur bereit. `NmSetName` ist somit der "Encoder", sein Pendant wäre der "Decoder".
 *   **Generische Byte-Packer:** Im Gegensatz zu generischen Bausteinen, die beliebige Datenstrukturen serialisieren, ist `NmSetName` spezifisch auf die ISO 11783-NAME-Struktur optimiert und garantiert so Normkonformität ohne zusätzliche Konfiguration.
 
+
+## Zugehörige Übungen
+
+* [Uebung_121](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_121.md)
+
 ## Fazit
 Der `NmSetName`-Funktionsblock ist ein spezialisierter, unverzichtbarer Baustein für die ISOBUS-Kommunikation. Er abstrahiert die komplexe, bitgenaue Zusammensetzung des ISO-NAME gemäß der Norm und bietet dem Anwender eine einfache, strukturierte Schnittstelle. Seine deterministische und zustandslose Funktionsweise macht ihn robust und einfach in Steuerungsabläufe zur Geräteinitialisierung und -konfiguration integrierbar.

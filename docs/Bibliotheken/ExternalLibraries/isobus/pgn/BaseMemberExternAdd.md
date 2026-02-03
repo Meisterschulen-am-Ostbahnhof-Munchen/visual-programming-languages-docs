@@ -43,3 +43,7 @@ The added CF will be set to announced in the next iso_DlCyclicGlobal() run.
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | s16Handle | INT | Handle of the added member |
+
+## Zugehörige Übungen
+
+* [Uebung_134](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_134.md)

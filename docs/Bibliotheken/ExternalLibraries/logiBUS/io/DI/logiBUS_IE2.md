@@ -74,5 +74,13 @@ Der Funktionsblock verfügt über einen Initialisierungszustand (INIT/INITO) und
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingabeblöcken bietet logiBUS_IE2 erweiterte Funktionalität für komplexe Ereigniserkennung und unterstützt verschiedene Eingabeereignistypen mit konfigurierbaren Parametern.
 
+
+## Zugehörige Übungen
+
+* [Uebung_004c6](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004c6.md)
+* [Uebung_004c6_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004c6_AX.md)
+* [Uebung_004c7](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004c7.md)
+* [Uebung_004c7_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004c7_AX.md)
+
 ## Fazit
 Der logiBUS_IE2 ist ein leistungsstarker Funktionsblock für die Verarbeitung von Ereigniseingabedaten in logiBUS-Systemen, der durch seine Flexibilität bei der Ereigniserkennung und umfangreiche Konfigurationsmöglichkeiten für anspruchsvolle Steuerungsanwendungen geeignet ist.

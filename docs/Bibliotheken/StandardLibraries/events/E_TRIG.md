@@ -44,5 +44,10 @@ Angenommen, mehrere Funktionsbausteine in einer Ressource haben einen unverbunde
 - **Dynamische Konfiguration**: Nach dem Laden einer neuen Konfiguration können relevante Bausteine über einen gezielten `E_TRIG`-Aufruf dazu gebracht werden, die neuen Parameter zu übernehmen.
 - **Test und Debugging**: Manuelles Auslösen von bestimmten Ereignissen in einer laufenden Anwendung zu Testzwecken.
 
+
+## Zugehörige Übungen
+
+* [Uebung_176](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_176.md)
+
 ## Fazit
 Der `E_TRIG`-Baustein ist ein Werkzeug für fortgeschrittene Anwendungsfälle und für Entwickler, die tiefere Kenntnisse der 4diac-Ausführungsumgebung haben. Er bietet eine leistungsstarke Methode, um die normale, grafisch definierte Ereignisfluss-Logik zu umgehen und direkt mit der Laufzeitumgebung zu interagieren. Er sollte mit Bedacht eingesetzt werden, da seine Wirkung nicht unmittelbar aus dem grafischen Netzwerk ersichtlich ist.

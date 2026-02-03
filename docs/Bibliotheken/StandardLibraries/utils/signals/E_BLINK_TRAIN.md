@@ -53,5 +53,10 @@ Der Funktionsblock `E_BLINK_TRAIN` simuliert ein blinkendes Signal, das für bes
 - **CODESYS BLINK-FB**: Behält den letzten Zustand bei Stopp bei, während `E_BLINK_TRAIN` immer auf `FALSE` zurückkehrt.
 - **Einfache Timer-FBs**: Bieten keine integrierte Begrenzung der Zyklenanzahl (`N`).
 
+
+## Zugehörige Übungen
+
+* [Uebung_035a3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a3.md)
+
 ## Fazit
 Der `E_BLINK_TRAIN` ist ein vielseitiger Funktionsblock für die Erzeugung von blinkenden Signalen mit konfigurierbaren Zeiten und einer begrenzten Anzahl von Zyklen. Seine Besonderheit liegt in der Rückkehr zu `FALSE` beim Stoppen, was ihn für sicherheitsrelevante Anwendungen prädestiniert. Die klare Schnittstellenstruktur und die interne Verwendung bewährter Timer-FBs machen ihn zuverlässig und einfach einzusetzen.

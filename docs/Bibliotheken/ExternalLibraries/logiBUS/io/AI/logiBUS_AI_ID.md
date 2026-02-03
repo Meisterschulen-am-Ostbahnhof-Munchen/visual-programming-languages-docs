@@ -62,5 +62,11 @@ Der Baustein verfügt über folgende Betriebszustände:
 ## Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen analogen Eingangsbausteinen bietet logiBUS_AI_ID erweiterte Funktionen wie Hysterese-Steuerung, detaillierte Statusrückmeldungen und eine strukturierte Initialisierungsprozedur. Die Integration in das logiBUS-System ermöglicht eine standardisierte Kommunikation.
 
+
+## Zugehörige Übungen
+
+* [Uebung_028](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_028.md)
+* [Uebung_034](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034.md)
+
 ## Fazit
 Der logiBUS_AI_ID Function Block stellt eine robuste und flexible Lösung für die Anbindung analoger Eingabegeräte in industriellen Steuerungssystemen dar. Durch die umfangreiche Parametrierungsmöglichkeit und die integrierte Hysterese-Funktionalität eignet er sich besonders für anspruchsvolle Automatisierungsanwendungen.

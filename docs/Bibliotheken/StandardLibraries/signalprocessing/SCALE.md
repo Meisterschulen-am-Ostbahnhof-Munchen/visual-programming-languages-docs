@@ -55,5 +55,10 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem RE
 - Keine zusätzlichen Parameter oder komplexen Einstellungen erforderlich.
 - Ideal für einfache lineare Skalierungen ohne zusätzliche Logik.
 
+
+## Zugehörige Übungen
+
+* [Uebung_042](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_042.md)
+
 ## Fazit
 Der SCALE-Funktionsblock bietet eine effiziente und einfache Lösung für lineare Skalierungsaufgaben. Seine klare Schnittstelle und direkte Implementierung machen ihn zu einem wertvollen Baustein in der Signalverarbeitung.

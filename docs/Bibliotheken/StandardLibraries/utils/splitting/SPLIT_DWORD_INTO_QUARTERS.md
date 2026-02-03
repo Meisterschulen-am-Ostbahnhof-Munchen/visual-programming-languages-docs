@@ -50,5 +50,10 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt bei jed
 - Im Vergleich zu generischen Bitmanipulations-Blöcken bietet `SPLIT_DWORD_INTO_QUARTERS` eine spezialisierte Funktionalität für die Aufteilung eines DWORDs in 4-Bit-Blöcke.
 - Andere Blöcke wie `SPLIT_DWORD_INTO_BYTES` teilen ein DWORD in 8-Bit-Blöcke auf, während dieser Block eine feinere Granularität bietet.
 
+
+## Zugehörige Übungen
+
+* [Uebung_060](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+
 ## Fazit
 Der `SPLIT_DWORD_INTO_QUARTERS`-Funktionsblock ist ein spezialisiertes Werkzeug für die Aufteilung eines 32-Bit-Wortes in 16 einzelne 4-Bit-Blöcke. Durch seine einfache und effiziente Implementierung eignet er sich ideal für Anwendungen, bei denen eine detaillierte Analyse oder Verarbeitung von DWORD-Daten erforderlich ist.

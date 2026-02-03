@@ -55,5 +55,10 @@ Anschließend überwacht der Block kontinuierlich die Systemressource. Sobald si
 *   **`E_SR` (Set-Reset) mit Zähler**: Ein manuell aufgebauter Zähler für Einschaltvorgänge könnte ähnliche Daten liefern, wäre aber anwendungsseitig implementiert und nicht systemseitig persistent. `SYS_ONTIME` bietet einen zuverlässigen, systemgeführten und meist auch nach einem Neustart persistenten Wert.
 *   **Andere SYS_*-Blöcke** (wie `SYS_TIME`): Während `SYS_TIME` die aktuelle Uhrzeit und das Datum liefert, stellt `SYS_ONTIME` spezifisch die reine Betriebsdauer einer Ressource bereit.
 
+
+## Zugehörige Übungen
+
+* [Uebung_140](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_140.md)
+
 ## Fazit
 Der `SYS_ONTIME`-Funktionsblock ist ein essentielles Werkzeug für alle Anwendungen, die auf der Erfassung und Auswertung von Betriebszeiten basieren. Als standardisierte Service-Schnittstelle abstrahiert er die plattformspezifische Implementierung und bietet der Anwendungslogik einen einfachen, zuverlässigen Zugriff auf diese wichtige Systemkenngröße. Seine Verwendung ist besonders in den Bereichen Instandhaltung, Energieeffizienz und Betriebsdatenerfassung zu empfehlen.

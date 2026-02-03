@@ -46,5 +46,10 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_WORD_TO_UDINT` oder `F_DWORD_TO_UDINT` ist dieser Baustein speziell für die Konvertierung von `BYTE` zu `UDINT` optimiert.
 - Ähnliche Bausteine können unterschiedliche Eingangsdatentypen verarbeiten, sind aber ansonsten in ihrer Funktionsweise vergleichbar.
 
+
+## Zugehörige Übungen
+
+* [Uebung_011a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011a.md)
+
 ## Fazit
 Der `F_BYTE_TO_UDINT` Funktionsblock bietet eine einfache und effiziente Möglichkeit, BYTE-Werte in UDINT-Werte umzuwandeln. Durch seine klare Schnittstellenstruktur und direkte Funktionsweise eignet er sich ideal für Anwendungen, die eine schnelle und zuverlässige Typumwandlung erfordern.

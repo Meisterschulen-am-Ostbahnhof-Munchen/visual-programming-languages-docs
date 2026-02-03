@@ -47,5 +47,11 @@ Der Funktionsblock besitzt keine internen Zustände. Die Operation wird bei jede
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_UINT_TO_UDINT` spezialisiert und optimiert für die spezifische Konvertierung von `UINT` zu `UDINT`.
 - Andere Blöcke wie `F_INT_TO_DINT` behandeln vorzeichenbehaftete Integer, während dieser Block vorzeichenlose Werte verarbeitet.
 
+
+## Zugehörige Übungen
+
+* [Uebung_015](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_015.md)
+* [Uebung_015a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_015a.md)
+
 ## Fazit
 Der `F_UINT_TO_UDINT`-Funktionsblock ist ein effizientes und zuverlässiges Werkzeug für die Konvertierung von 16-Bit zu 32-Bit vorzeichenlosen Integer-Werten. Seine Einfachheit und Determinismus machen ihn ideal für Echtzeitanwendungen, bei denen Leistung und Präzision kritisch sind.

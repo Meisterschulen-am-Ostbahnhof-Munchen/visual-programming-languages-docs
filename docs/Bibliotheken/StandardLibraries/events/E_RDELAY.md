@@ -70,6 +70,11 @@ Der **E_RDELAY** (Reloadable Delay) ist ein erweiterter Verzögerungsbaustein na
 | Mehrfach-Trigger | Nur 1 EO | Nur 1 EO |
 | Service-Sequenzen | 3 definiert | 1 definiert |
 
+
+## Zugehörige Übungen
+
+* [Uebung_018a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_018a.md)
+
 ## Fazit
 
 Der E_RDELAY-Baustein erweitert die klassische Verzögerungsfunktion um wesentliche industrietaugliche Features:

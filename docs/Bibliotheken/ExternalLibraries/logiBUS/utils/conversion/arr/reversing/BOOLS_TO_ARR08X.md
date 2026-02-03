@@ -60,5 +60,10 @@ Der Funktionsblock ist zustandslos (stateless). Er besitzt kein internes Gedäch
 *   **Manuelle Verkabelung:** Die Alternative wäre die direkte Verkabelung jedes Einzelbits auf die Indizes eines Array-Variablenbausteins. `BOOLS_TO_ARR08X` kapselt diese Operation, verbessert die Übersichtlichkeit im FBD/LD-Editor und reduziert Verdrahtungsaufwand.
 *   **`MERGE`/`CONCAT`-Blöcke:** Allgemeine Zusammenführungsblöcke können verschiedene Datentypen verbinden. `BOOLS_TO_ARR08X` ist spezialisiert und typsicher für genau acht BOOL-Eingänge und ein BOOL-Array als Ausgang.
 
+
+## Zugehörige Übungen
+
+* [Uebung_054](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_054.md)
+
 ## Fazit
 Der `BOOLS_TO_ARR08X` ist ein spezialisierter, robuster und effizienter Funktionsblock für eine häufige Aufgabe in der industriellen Automatisierung: die Bündelung diskreter Signale. Seine Stärke liegt in der Einfachheit, der deterministischen Ablaufzeit und der klaren Schnittstellendefinition. Er ist die erste Wahl, wenn acht boolesche Signale in einer geordneten Array-Struktur für die Weiterverarbeitung bereitgestellt werden müssen.

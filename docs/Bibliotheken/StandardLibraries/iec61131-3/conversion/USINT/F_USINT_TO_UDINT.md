@@ -46,5 +46,10 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - **F_USINT_TO_INT**: Konvertiert `USINT` zu `INT`, jedoch mit potenziellem Vorzeichenwechsel.
 - **F_USINT_TO_UINT**: Konvertiert `USINT` zu `UINT` (16-Bit), was einen kleineren Wertebereich als `UDINT` bietet.
 
+
+## Zugehörige Übungen
+
+* [Uebung_111](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_111.md)
+
 ## Fazit
 Der `F_USINT_TO_UDINT`-Funktionsblock ist ein einfacher und effizienter Baustein zur sicheren Konvertierung von `USINT` nach `UDINT`. Durch seine direkte Zuweisung und den größeren Wertebereich des Ausgangstyps ist er ideal für Anwendungen, bei denen Datenintegrität gewährleistet sein muss.

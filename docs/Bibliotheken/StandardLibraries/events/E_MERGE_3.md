@@ -38,5 +38,10 @@ Die Eingänge werden logisch ODER-verknüpft und ohne Verzögerung weitergeleite
 - **Sensorik**: Kombination der Trigger-Ereignisse von drei verschiedenen Sensoren zu einem Gesamtereignis.
 - **Fehlermanagement**: Erstellen einer Sammel-Störmeldung aus drei potenziellen Fehlerquellen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_004a2_3](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a2_3.md)
+
 ## Fazit
 Der `E_MERGE_3` ist ein einfacher, aber nützlicher Baustein zur Verknüpfung von bis zu drei Ereignisquellen. Seine klare Funktionsweise und die effiziente Implementierung als generischer Baustein machen ihn zu einer zuverlässigen Komponente für grundlegende Steuerungslogik.

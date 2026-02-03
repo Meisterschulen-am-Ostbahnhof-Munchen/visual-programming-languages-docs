@@ -61,5 +61,13 @@ Der `FB_RS` wertet die Eingänge bei `REQ` aus:
 - **[E_RS](../../events/E_RS.md)**: Der `E_RS` ist rein ereignisgesteuert ("Last Event Wins"). Der `FB_RS` hingegen wertet statische Signale zum Zeitpunkt `REQ` aus und erzwingt die Rücksetz-Dominanz.
 - **[FB_SR](FB_SR.md)**: Das Gegenstück mit **Setz-Dominanz**.
 
+
+## Zugehörige Übungen
+
+* [Uebung_006e2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006e2.md)
+* [Uebung_006e2_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006e2_AX.md)
+* [Uebung_160b2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_160b2.md)
+* [Uebung_160b2_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
+
 ## Fazit
 Der FB_RS ist ein grundlegender und robuster Funktionsblock für Zustandsspeicherung in IEC 61499-basierten Steuerungssystemen. Seine einfache und klare Logik macht ihn besonders geeignet für Anwendungen, bei denen ein zuverlässiges Set-Reset-Verhalten erforderlich ist. Die Priorisierung des Reset-Eingangs stellt sicher, dass Sicherheitsfunktionen zuverlässig ausgeführt werden können.

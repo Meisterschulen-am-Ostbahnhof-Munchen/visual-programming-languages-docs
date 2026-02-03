@@ -67,10 +67,13 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Sein Verhalten 
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002b3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b3.md)
 * [Uebung_160](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_160.md)
+* [Uebung_160b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_160b.md)
+* [Uebung_160b2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_160b2.md)
 
 ## Fazit
 Der `OR_2_BOOL` ist ein fundamentaler, zuverlässiger und einfach zu verwendender Funktionsblock zur Realisierung der grundlegenden logischen ODER-Funktion in 4diac-IDE Applikationen. Seine ereignisgesteuerte, zustandslose Architektur macht ihn vorhersehbar und gut in den Datenfluss von IEC 61499-Systemen integrierbar. Er ist ein unverzichtbarer Baustein für die Implementierung von Steuerungslogik und Bedingungsauswertungen.

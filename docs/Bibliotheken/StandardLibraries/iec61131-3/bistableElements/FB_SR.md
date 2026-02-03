@@ -61,5 +61,11 @@ Der Zustand des Flipflops (`Q1`) hängt von den aktuellen Werten von `S1` und `R
 - **[E_SR](../../events/E_SR.md)**: Der `E_SR` ist rein ereignisgesteuert. Dort gibt es keine gleichzeitigen Signale und somit keine Dominanz in diesem Sinne (das letzte Ereignis gewinnt). Der `FB_SR` hingegen wertet statische Signale zum Zeitpunkt `REQ` aus und erzwingt die Setz-Dominanz.
 - **[FB_RS](FB_RS.md)**: Das Gegenstück mit **Rücksetz-Dominanz** (Reset Priority).
 
+
+## Zugehörige Übungen
+
+* [Uebung_006e1](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006e1.md)
+* [Uebung_006e1_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006e1_AX.md)
+
 ## Fazit
 Der `FB_SR` ist ein grundlegender und effizienter Funktionsblock für die Speicherung binärer Zustände in Steuerungsanwendungen. Seine einfache Logik und klare Schnittstelle machen ihn ideal für den Einsatz in verschiedenen industriellen Automatisierungslösungen.

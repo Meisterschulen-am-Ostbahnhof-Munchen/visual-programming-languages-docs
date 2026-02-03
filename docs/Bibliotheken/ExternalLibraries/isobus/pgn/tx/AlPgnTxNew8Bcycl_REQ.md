@@ -69,5 +69,12 @@ Der Funktionsblock durchläuft implizit folgende Hauptzustände:
 *   **Vs. Einmal-Sende-Blöcke (z.B. `AlPgnTx_REQ`)**: Dieser Block ist für **wiederholtes, periodisches** Senden ausgelegt, während einfache TX-Blöcke typischerweise ein einmaliges Senden pro Auslöseereignis durchführen.
 *   **Vs. Blöcke mit interner Datenspeicherung**: Die Verwendung eines **Callback-Adapters** unterscheidet diesen Block von solchen, bei denen die Daten direkt an einem Eingang bereitgestellt werden. Dies macht ihn flexibler, wenn sich die Daten häufig ändern oder aus komplexen Quellen stammen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_126](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126.md)
+* [Uebung_126b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b.md)
+* [Uebung_126b2](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2.md)
+
 ## Fazit
 Der `AlPgnTxNew8Bcycl_REQ` ist ein spezialisierter Funktionsblock für zuverlässige, zyklische Datenkommunikation in ISOBUS-Umgebungen. Seine Stärken liegen in der klaren Trennung von Konfiguration (`install`), dynamischer Datenbeschaffung (Callback-Adapter) und robustem Fehlerfeedback. Er ist ideal geeignet für Anwendungen, die regelmäßige Statusupdates oder Prozessdatenstreams erfordern.

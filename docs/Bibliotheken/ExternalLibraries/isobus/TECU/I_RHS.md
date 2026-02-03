@@ -99,6 +99,11 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65093) für die
 | Diagnosecodes | 64 | 8 | 128 |
 | ISO-Konformität | Voll | Teilweise | Voll |
 
+
+## Zugehörige Übungen
+
+* [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
+
 ## Fazit
 
 Der I_RHS-Baustein bietet umfassende Überwachung für Heckkupplungssysteme:

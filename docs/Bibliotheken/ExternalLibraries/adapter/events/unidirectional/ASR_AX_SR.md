@@ -63,5 +63,10 @@ RESET → SET:    bei S_R.SET Ereignis
 - **[E_SR](../../../../StandardLibraries/events/E_SR.md)**: Funktional ähnlich (ereignisgesteuert), aber mit direkten Event-Pins statt Adaptern.
 - **Konventionelle Flip-Flops**: Im Vergleich zu Flip-Flops mit direkten Ein-/Ausgängen erleichtert das Adapter-Design die Integration in modulare Systemarchitekturen.
 
+
+## Zugehörige Übungen
+
+* [Uebung_171_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_171_AX.md)
+
 ## Fazit
 Der ASR_AX_SR bietet eine saubere, adapter-basierte Implementierung eines bistabilen Speicherelements, das ideal für den Einsatz in modularen IEC 61499-Systemen geeignet ist. Die ausschließliche Verwendung von Adaptern ermöglicht eine hohe Flexibilität bei der Systemintegration.

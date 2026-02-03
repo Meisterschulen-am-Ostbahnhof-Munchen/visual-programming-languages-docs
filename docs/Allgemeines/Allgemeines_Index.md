@@ -3,6 +3,13 @@
 ```{index} single: Allgemeines
 ```
 
+```{toctree}
+:maxdepth: 1
+Zahlen
+Datentypen/Datentypen_Index
+Datentypen/GenerischeDatentypen/ANY_Typen
+```
+
 In diesem Abschnitt werden grundlegende Konzepte erläutert, die für die Programmierung nach IEC 61131-3 und IEC 61499 sowie für die allgemeine Informatik wichtig sind.
 
 ## Identifikatoren (Namenskonventionen)
@@ -49,9 +56,3 @@ Datentypen legen fest, welche Art von Information eine Variable speichern kann (
 *   Eine Übersicht finden Sie hier: **[Datentypen](Allgemeines/Datentypen/Datentypen.md)**
 *   Informationen zu generischen Datentypen: **[ANY-Typen](Datentypen/GenerischeDatentypen/ANY_Typen.md)**
 
-```{toctree}
-:maxdepth: 1
-Zahlen
-Datentypen/Datentypen_Index
-Datentypen/GenerischeDatentypen/ANY_Typen
-```

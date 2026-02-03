@@ -3,8 +3,6 @@
 ```{index} single: BYTE Konvertierungen
 ```
 
-Hier finden Sie Funktionen zur Konvertierung des Datentyps BYTE.
-
 ```{toctree}
 :maxdepth: 1
 F_BYTE_AS_STRING
@@ -21,6 +19,10 @@ F_BYTE_TO_ULINT
 F_BYTE_TO_USINT
 F_BYTE_TO_WORD
 ```
+
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps BYTE.
+
 
 
 ## Zugehörige Übungen

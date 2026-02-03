@@ -3,8 +3,6 @@
 ```{index} single: WSTRING Konvertierungen
 ```
 
-Hier finden Sie Funktionen zur Konvertierung des Datentyps WSTRING in andere Datentypen.
-
 ```{toctree}
 :maxdepth: 1
 F_WSTRING_AS_BOOL
@@ -25,3 +23,6 @@ F_WSTRING_AS_USINT
 F_WSTRING_AS_WORD
 F_WSTRING_TO_STRING
 ```
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps WSTRING in andere Datentypen.
+

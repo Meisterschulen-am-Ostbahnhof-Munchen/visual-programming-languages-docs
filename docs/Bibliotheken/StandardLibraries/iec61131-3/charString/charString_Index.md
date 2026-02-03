@@ -3,8 +3,6 @@
 ```{index} single: Zeichenketten Funktionen
 ```
 
-Hier finden Sie Funktionen zur Bearbeitung von Zeichenketten (Strings).
-
 ```{toctree}
 :maxdepth: 1
 F_CONCAT
@@ -18,3 +16,6 @@ F_MID
 F_REPLACE
 F_RIGHT
 ```
+
+Hier finden Sie Funktionen zur Bearbeitung von Zeichenketten (Strings).
+

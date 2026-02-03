@@ -3,8 +3,6 @@
 ```{index} single: WORD Konvertierungen
 ```
 
-Hier finden Sie Funktionen zur Konvertierung des Datentyps WORD.
-
 ```{toctree}
 :maxdepth: 1
 F_WORD_AS_STRING
@@ -21,3 +19,6 @@ F_WORD_TO_UINT
 F_WORD_TO_ULINT
 F_WORD_TO_USINT
 ```
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps WORD.
+

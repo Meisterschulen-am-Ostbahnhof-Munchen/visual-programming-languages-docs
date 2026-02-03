@@ -3,8 +3,6 @@
 ```{index} single: LREAL Konvertierungen
 ```
 
-Hier finden Sie Funktionen zur Konvertierung des Datentyps LREAL.
-
 ```{toctree}
 :maxdepth: 1
 F_LREAL_AS_STRING
@@ -20,6 +18,10 @@ F_LREAL_TO_UINT
 F_LREAL_TO_ULINT
 F_LREAL_TO_USINT
 ```
+
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps LREAL.
+
 
 
 ## Zugehörige Übungen

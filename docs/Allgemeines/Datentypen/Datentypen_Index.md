@@ -3,6 +3,39 @@
 ```{index} single: Datentypen (Übersicht)
 ```
 
+```{toctree}
+:maxdepth: 1
+BOOL/BOOL_Type
+BYTE/BYTE_Type
+CHAR/CHAR
+WCHAR/WCHAR
+DATE/DATE_Type
+LDATE/LDATE_Type
+DATE_AND_TIME/DT_Type
+LDT/LDT_Type
+DINT/DINT_Type
+DWORD/DWORD_Type
+INT/INT_Type
+LINT/LINT_Type
+LREAL/LREAL_Type
+LWORD/LWORD_Type
+REAL/REAL_Type
+SINT/SINT_Type
+STRING/STRING_Type
+QUARTER/QUARTER_Index
+TIME/TIME_Type
+LTIME/LTIME_Type
+TIME_OF_DAY/TOD_Type
+LTOD/LTOD_Type
+UDINT/UDINT_Type
+UINT/UINT_Type
+ULINT/ULINT_Type
+USINT/USINT_Type
+WORD/WORD_Type
+WSTRING/WSTRING_Type
+```
+
+
 ### Zusammenfassung der Kategorien
 Gemäß DIN EN 61131-3 werden die Datentypen in folgende Gruppen unterteilt:
 - **Bit-Datentypen**: BOOL, BYTE, WORD, DWORD, LWORD
@@ -65,37 +98,6 @@ Siehe auch: IEC 61499, Table E.1
 
 In der folgenden Liste sind die elementaren Datentypen gemäß DIN EN 61131-3 aufgeführt.
 
-```{toctree}
-:maxdepth: 1
-BOOL/BOOL_Type
-BYTE/BYTE_Type
-CHAR/CHAR
-WCHAR/WCHAR
-DATE/DATE_Type
-LDATE/LDATE_Type
-DATE_AND_TIME/DT_Type
-LDT/LDT_Type
-DINT/DINT_Type
-DWORD/DWORD_Type
-INT/INT_Type
-LINT/LINT_Type
-LREAL/LREAL_Type
-LWORD/LWORD_Type
-REAL/REAL_Type
-SINT/SINT_Type
-STRING/STRING_Type
-QUARTER/QUARTER_Index
-TIME/TIME_Type
-LTIME/LTIME_Type
-TIME_OF_DAY/TOD_Type
-LTOD/LTOD_Type
-UDINT/UDINT_Type
-UINT/UINT_Type
-ULINT/ULINT_Type
-USINT/USINT_Type
-WORD/WORD_Type
-WSTRING/WSTRING_Type
-```
 ## 🎧 Podcast
 
 * [Datenkommunikation in der Automatisierung: Die Geheimnisse der IEC 61499 Datentypen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Datenkommunikation-in-der-Automatisierung-Die-Geheimnisse-der-IEC-61499-Datentypen-e3672lj)

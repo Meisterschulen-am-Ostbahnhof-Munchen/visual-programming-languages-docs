@@ -3,7 +3,6 @@
 ```{index} single: Zähler
 ```
 
-Hier finden Sie Funktionsbausteine für verschiedene Zählertypen (Vorwärts, Rückwärts, etc.).
 ```{toctree}
 :maxdepth: 1
 
@@ -22,4 +21,7 @@ FB_CTU_LINT
 FB_CTU_UDINT
 FB_CTU_ULINT
 ```
+
+
+Hier finden Sie Funktionsbausteine für verschiedene Zählertypen (Vorwärts, Rückwärts, etc.).
 

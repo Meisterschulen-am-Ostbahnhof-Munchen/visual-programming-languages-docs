@@ -3,8 +3,6 @@
 ```{index} single: Auswahlfunktionen
 ```
 
-Hier finden Sie Funktionen zur Auswahl von Werten (Max, Min, Limit, Mux etc.).
-
 ```{toctree}
 :maxdepth: 1
 F_LIMIT
@@ -16,3 +14,6 @@ F_MUX_4
 F_MOVE
 F_SEL
 ```
+
+Hier finden Sie Funktionen zur Auswahl von Werten (Max, Min, Limit, Mux etc.).
+

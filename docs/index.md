@@ -17,6 +17,19 @@ myst:
 
 ```{index} single: Wiki 4: Visuelle Programmiersprachen
 ```
+
+```{toctree}
+:maxdepth: 1
+:caption: 'Grundlagen'
+:maxdepth: 2
+Welcome
+Abgrenzung/Abgrenzung
+Visuelle-Programmiersprachen
+norms/norms
+Allgemeines/Allgemeines_Index
+Literatur_Index
+```
+
 ## Meisterschulen am Ostbahnhof, München
 
 ---
@@ -95,17 +108,6 @@ Dieses Projekt befindet sich in aktiver Entwicklung. Fragen oder Anregungen?
 Besuchen Sie unser [Discussion Forum](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/discussions).
 :::
 
-```{toctree}
-:maxdepth: 1
-:caption: 'Grundlagen'
-:maxdepth: 2
-Welcome
-Abgrenzung/Abgrenzung
-Visuelle-Programmiersprachen
-norms/norms
-Allgemeines/Allgemeines_Index
-Literatur_Index
-```
 
 ```{toctree}
 :maxdepth: 1

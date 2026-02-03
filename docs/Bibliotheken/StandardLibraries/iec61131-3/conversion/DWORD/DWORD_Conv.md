@@ -3,8 +3,6 @@
 ```{index} single: DWORD Konvertierungen
 ```
 
-Hier finden Sie Funktionen zur Konvertierung des Datentyps DWORD.
-
 ```{toctree}
 :maxdepth: 1
 F_DWORD_AS_STRING
@@ -22,6 +20,10 @@ F_DWORD_TO_ULINT
 F_DWORD_TO_USINT
 F_DWORD_TO_WORD
 ```
+
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps DWORD.
+
 
 
 ## Zugehörige Übungen

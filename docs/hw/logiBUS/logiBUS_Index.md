@@ -1,5 +1,12 @@
 # logiBUS®
 
+```{toctree}
+:maxdepth: 1
+DualCAN/DualCANOverview_Index
+DualOut/DualOutOverview_Index
+Hutschienenmoped/HutschienenmopedOverview_Index
+```
+
 ## 📺 Video
 
 * [LogiBUS  Projekt Update](https://www.youtube.com/watch?v=kVNTJ9ZejFM)
@@ -34,9 +41,3 @@ Vom kostengünstigen Einstiegsmodell für Lehre und einfache Projekte bis hin zu
 
 ---
 
-```{toctree}
-:maxdepth: 1
-DualCAN/DualCANOverview_Index
-DualOut/DualOutOverview_Index
-Hutschienenmoped/HutschienenmopedOverview_Index
-```

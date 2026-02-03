@@ -3,8 +3,6 @@
 ```{index} single: USINT Konvertierungen
 ```
 
-Hier finden Sie Funktionen zur Konvertierung des Datentyps USINT.
-
 ```{toctree}
 :maxdepth: 1
 F_USINT_AS_STRING
@@ -23,6 +21,10 @@ F_USINT_TO_UINT
 F_USINT_TO_ULINT
 F_USINT_TO_WORD
 ```
+
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps USINT.
+
 
 
 ## Zugehörige Übungen

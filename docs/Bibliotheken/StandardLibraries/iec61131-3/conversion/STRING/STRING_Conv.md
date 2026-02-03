@@ -3,8 +3,6 @@
 ```{index} single: STRING Konvertierungen
 ```
 
-Hier finden Sie Funktionen zur Konvertierung des Datentyps STRING.
-
 ```{toctree}
 :maxdepth: 1
 F_STRING_AS_BOOL
@@ -25,6 +23,10 @@ F_STRING_AS_USINT
 F_STRING_AS_WORD
 F_STRING_TO_WSTRING
 ```
+
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps STRING.
+
 
 
 ## Zugehörige Übungen

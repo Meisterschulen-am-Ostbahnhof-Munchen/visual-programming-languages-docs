@@ -3,6 +3,15 @@
 ```{index} single: IEC 61131-3 Vergleich
 ```
 
+```{toctree}
+:maxdepth: 1
+
+TP_ALT
+TON_ALT
+TOF_ALT
+```
+
+
 Dieser Abschnitt beschreibt Funktionsbausteine gemäß der "klassischen" SPS-Norm **IEC 61131-3**.
 Diese Bausteine dienen als Referenz und Vergleichsbasis zu den IEC 61499-Konzepten.
 
@@ -12,13 +21,6 @@ Diese Bausteine entsprechen der **IEC 61131-3**. In der IEC 61499 können sich V
 
 ## Zeitgeber (Timer)
 
-```{toctree}
-:maxdepth: 1
-
-TP_ALT
-TON_ALT
-TOF_ALT
-```
 
 ## Bistabile Elemente (Flip-Flops)
 

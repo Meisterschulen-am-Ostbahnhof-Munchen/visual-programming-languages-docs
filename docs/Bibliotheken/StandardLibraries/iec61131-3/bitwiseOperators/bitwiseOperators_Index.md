@@ -3,8 +3,6 @@
 ```{index} single: Bitweise Operatoren
 ```
 
-Hier finden Sie Funktionen für bitweise logische Operationen (AND, OR, XOR, Schieben, Rotieren).
-
 ```{toctree}
 :maxdepth: 1
 AND_10
@@ -44,3 +42,6 @@ XOR_7
 XOR_8
 XOR_9
 ```
+
+Hier finden Sie Funktionen für bitweise logische Operationen (AND, OR, XOR, Schieben, Rotieren).
+

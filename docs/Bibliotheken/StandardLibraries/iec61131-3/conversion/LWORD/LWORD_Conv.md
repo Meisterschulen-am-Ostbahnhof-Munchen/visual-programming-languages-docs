@@ -3,8 +3,6 @@
 ```{index} single: LWORD Konvertierungen
 ```
 
-Hier finden Sie Funktionen zur Konvertierung des Datentyps LWORD.
-
 ```{toctree}
 :maxdepth: 1
 F_LWORD_AS_STRING
@@ -22,3 +20,6 @@ F_LWORD_TO_ULINT
 F_LWORD_TO_USINT
 F_LWORD_TO_WORD
 ```
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps LWORD.
+

@@ -3,8 +3,6 @@
 ```{index} single: LINT Konvertierungen
 ```
 
-Hier finden Sie Funktionen zur Konvertierung des Datentyps LINT.
-
 ```{toctree}
 :maxdepth: 1
 F_LINT_AS_STRING
@@ -23,6 +21,10 @@ F_LINT_TO_ULINT
 F_LINT_TO_USINT
 F_LINT_TO_WORD
 ```
+
+
+Hier finden Sie Funktionen zur Konvertierung des Datentyps LINT.
+
 
 
 ## Zugehörige Übungen

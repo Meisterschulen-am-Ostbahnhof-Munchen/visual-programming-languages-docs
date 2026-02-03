@@ -1,5 +1,14 @@
 # Eclipse 4diac™
 
+```{toctree}
+:maxdepth: 1
+Ueber4diac
+Installation-4diac
+4diac_Update
+4diac_IDE_Icons
+Farben/Eclipse-4diac-Farb-Referenz
+```
+
 ## 📺 Video
 
 * [Eclipse 4diac 3.0 (German)](https://www.youtube.com/watch?v=jWlzU_VB3UU)
@@ -18,11 +27,3 @@
 
 ## Kapitelinhalt
 
-```{toctree}
-:maxdepth: 1
-Ueber4diac
-Installation-4diac
-4diac_Update
-4diac_IDE_Icons
-Farben/Eclipse-4diac-Farb-Referenz
-```

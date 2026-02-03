@@ -1,5 +1,18 @@
 # logiBUS
 
+```{toctree}
+:maxdepth: 1
+
+esp32/esp32_Index
+io/io_Index
+signalprocessing/signalprocessing_Index
+stations/stations_Index
+storage/storage_Index
+utils/utils_Index
+version/version_Index
+```
+
+
 ## 📺 Video
 
 * [LogiBUS  Projekt Update](https://www.youtube.com/watch?v=kVNTJ9ZejFM)
@@ -12,17 +25,6 @@
 * [Logibus Revolution: Unpacking the "No Mapping" Future and Streamlined Development](https://podcasters.spotify.com/pod/show/logibus/episodes/Logibus-Revolution-Unpacking-the-No-Mapping-Future-and-Streamlined-Development-e375aph)
 * [Logibus Unleashed: How Eliminating "Mapping" Simplifies Complex Systems and Boosts Usability](https://podcasters.spotify.com/pod/show/logibus/episodes/Logibus-Unleashed-How-Eliminating-Mapping-Simplifies-Complex-Systems-and-Boosts-Usability-e375a3m)
 
-```{toctree}
-:maxdepth: 1
-
-esp32/esp32_Index
-io/io_Index
-signalprocessing/signalprocessing_Index
-stations/stations_Index
-storage/storage_Index
-utils/utils_Index
-version/version_Index
-```
 
 ---- 
 ```{index} single: logiBUS

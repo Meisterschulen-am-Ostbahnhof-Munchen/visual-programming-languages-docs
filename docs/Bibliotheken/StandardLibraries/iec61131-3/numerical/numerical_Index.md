@@ -3,8 +3,6 @@
 ```{index} single: Numerische Funktionen
 ```
 
-Hier finden Sie mathematische Funktionen wie Winkelfunktionen, Logarithmus, Wurzel etc.
-
 ```{toctree}
 :maxdepth: 1
 F_ABS
@@ -19,3 +17,6 @@ F_SIN
 F_SQRT
 F_TAN
 ```
+
+Hier finden Sie mathematische Funktionen wie Winkelfunktionen, Logarithmus, Wurzel etc.
+

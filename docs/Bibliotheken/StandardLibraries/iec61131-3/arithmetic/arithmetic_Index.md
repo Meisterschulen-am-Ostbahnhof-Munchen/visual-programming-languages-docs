@@ -3,7 +3,6 @@
 ```{index} single: Arithmetische Funktionen
 ```
 
-Hier finden Sie Standardfunktionen für arithmetische Operationen (Addition, Subtraktion, Multiplikation, Division etc.).
 ```{toctree}
 :maxdepth: 1
 
@@ -27,4 +26,7 @@ F_SUB_TOD_TIME
 F_SUB_TOD_TOD
 F_TRUNC
 ```
+
+
+Hier finden Sie Standardfunktionen für arithmetische Operationen (Addition, Subtraktion, Multiplikation, Division etc.).
 

@@ -55,6 +55,7 @@ Der Funktionsblock nimmt vier Quarter-Bytes entgegen und kombiniert sie zu einem
 - Andere Blöcke könnten ähnliche Funktionalität bieten, sind jedoch oft weniger spezifisch und erfordern mehr Konfiguration.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_056](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)

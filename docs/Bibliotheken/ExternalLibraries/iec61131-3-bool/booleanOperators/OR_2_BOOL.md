@@ -68,6 +68,7 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Sein Verhalten 
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002b3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b3.md)

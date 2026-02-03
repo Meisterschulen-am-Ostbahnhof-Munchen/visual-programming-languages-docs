@@ -75,6 +75,7 @@ Der Funktionsblock verfügt über einen Initialisierungszustand (INIT/INITO) und
 Im Vergleich zu einfachen digitalen Eingabeblöcken bietet logiBUS_IE2 erweiterte Funktionalität für komplexe Ereigniserkennung und unterstützt verschiedene Eingabeereignistypen mit konfigurierbaren Parametern.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004c6](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004c6.md)

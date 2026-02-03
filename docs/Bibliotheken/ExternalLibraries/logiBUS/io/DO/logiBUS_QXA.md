@@ -63,6 +63,7 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_QXA:
 - Unterstützung für multiple Ausgänge in einer Struktur
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_001_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_001_AX.md)

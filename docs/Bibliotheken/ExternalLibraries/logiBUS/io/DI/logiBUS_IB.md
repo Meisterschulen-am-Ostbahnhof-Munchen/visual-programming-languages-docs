@@ -73,6 +73,7 @@ Im Vergleich zu einfachen digitalen Eingabebausteinen bietet logiBUS_IB erweiter
 - Spezieller Unterstützung für Tastendruck-Wiederholungen
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_006c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)

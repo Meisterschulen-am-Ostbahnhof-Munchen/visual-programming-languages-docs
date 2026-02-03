@@ -72,6 +72,7 @@ Typische Anwendungen liegen in der landwirtschaftlichen oder mobilen Arbeitsmasc
 Im Vergleich zu generischen CAN-Empfangsblöcken ist `AlPgnRxNew8B_REQ` speziell auf das ISOBUS-Protokoll und dessen PGN-Konzept zugeschnitten. Er abstrahiert die niedrigleveligen CAN-Details (wie ID-Filterung) und bietet eine saubere Schnittstelle auf PGN-Ebene. Blöcke wie `E_CYCLE` oder `E_DELAY` könnten verwendet werden, um periodische Anfragen zu realisieren, während `AlPgnRxNew8B_REQ` selbst nur Einzelanfragen behandelt.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_132](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_132.md)

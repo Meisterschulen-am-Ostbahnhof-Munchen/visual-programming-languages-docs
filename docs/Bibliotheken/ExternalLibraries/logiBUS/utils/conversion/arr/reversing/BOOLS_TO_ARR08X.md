@@ -61,6 +61,7 @@ Der Funktionsblock ist zustandslos (stateless). Er besitzt kein internes Gedäch
 *   **`MERGE`/`CONCAT`-Blöcke:** Allgemeine Zusammenführungsblöcke können verschiedene Datentypen verbinden. `BOOLS_TO_ARR08X` ist spezialisiert und typsicher für genau acht BOOL-Eingänge und ein BOOL-Array als Ausgang.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_054](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_054.md)

@@ -52,6 +52,7 @@ Der Block kehrt danach direkt wieder in den Wartezustand (1) zurück.
 *   **Generische Byte-Packer:** Im Gegensatz zu generischen Bausteinen, die beliebige Datenstrukturen serialisieren, ist `NmSetName` spezifisch auf die ISO 11783-NAME-Struktur optimiert und garantiert so Normkonformität ohne zusätzliche Konfiguration.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_121](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_121.md)

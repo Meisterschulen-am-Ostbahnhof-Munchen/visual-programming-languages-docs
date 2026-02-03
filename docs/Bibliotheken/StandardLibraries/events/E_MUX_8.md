@@ -46,6 +46,7 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 - **Priorisierte Befehlsauswahl**: Acht Befehlsquellen werden zusammengeführt, und eine nachgeschaltete Logik entscheidet basierend auf dem Index `K` über die Priorität.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_173](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_173.md)

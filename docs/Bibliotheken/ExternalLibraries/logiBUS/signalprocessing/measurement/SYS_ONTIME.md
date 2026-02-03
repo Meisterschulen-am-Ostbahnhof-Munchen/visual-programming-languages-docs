@@ -56,6 +56,7 @@ Anschließend überwacht der Block kontinuierlich die Systemressource. Sobald si
 *   **Andere SYS_*-Blöcke** (wie `SYS_TIME`): Während `SYS_TIME` die aktuelle Uhrzeit und das Datum liefert, stellt `SYS_ONTIME` spezifisch die reine Betriebsdauer einer Ressource bereit.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_140](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_140.md)

@@ -39,6 +39,7 @@ Die Eingänge werden logisch ODER-verknüpft und ohne Priorisierung oder Verzög
 - **Fehlermanagement**: Erstellen einer Sammel-Störmeldung aus zwei potenziellen Fehlerquellen.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_004a2_2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a2_2.md)

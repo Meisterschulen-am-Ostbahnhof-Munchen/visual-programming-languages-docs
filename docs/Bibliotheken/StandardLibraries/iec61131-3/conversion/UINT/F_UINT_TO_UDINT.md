@@ -48,6 +48,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Operation wird bei jede
 - Andere Blöcke wie `F_INT_TO_DINT` behandeln vorzeichenbehaftete Integer, während dieser Block vorzeichenlose Werte verarbeitet.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_015](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_015.md)

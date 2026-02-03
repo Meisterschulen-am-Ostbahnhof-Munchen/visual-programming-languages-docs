@@ -66,6 +66,7 @@ Im Vergleich zu standardmäßigen digitalen Eingangsblöcken bietet logiBUS_ID:
 - Asynchrone Ereignisindikation
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_011a2](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011a2.md)

@@ -48,6 +48,7 @@ Der Funktionsblock hat keinen komplexen Zustandsautomaten. Der Zustand wird ledi
 - **FB_R_TRIG** ist spezifisch für steigende Flanken und daher komplementär zu `FB_F_TRIG`.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_177](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_177.md)

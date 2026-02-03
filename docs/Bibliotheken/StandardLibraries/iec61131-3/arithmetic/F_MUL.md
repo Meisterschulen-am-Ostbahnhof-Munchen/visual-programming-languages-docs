@@ -80,6 +80,7 @@ Der **F_MUL** ist ein standardkonformer Funktionsbaustein zur Multiplikation num
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_034b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034b.md)

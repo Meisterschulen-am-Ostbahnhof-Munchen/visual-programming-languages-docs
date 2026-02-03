@@ -51,6 +51,7 @@ Der Funktionsblock berechnet den Restwert (DIST_REMAINDER) der Summe aus zurück
 Im Gegensatz zu einfachen Zeitgebern arbeitet dieser FB mit Distanzwerten statt Zeitintervallen. Er bietet mehr Flexibilität durch den Offset-Parameter und ermöglicht die Definition von individuellen HIGH- und LOW-Phasen.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_071b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071b.md)

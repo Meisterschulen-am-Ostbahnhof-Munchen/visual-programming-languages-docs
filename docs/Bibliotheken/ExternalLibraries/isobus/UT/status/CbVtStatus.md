@@ -81,6 +81,7 @@ Der **CbVtStatus** ist ein standardisierter Callback-Baustein für Virtual-Termi
   - System im Safe-State
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_012](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012.md)

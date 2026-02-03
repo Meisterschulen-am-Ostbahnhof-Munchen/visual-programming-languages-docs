@@ -81,6 +81,7 @@ Da es sich um einen Composite FB handelt, wird der Zustand primär durch die int
 *   **Andere `_IDA` Bausteine:** Ähnlich wie `Button_IDA` (für Schaltflächen) oder `String_IDA` (für Texte), folgt dieser Baustein dem Entwurfsmuster, Terminal-Eingaben über Adapter bereitzustellen.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_011_AUDI](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011_AUDI.md)

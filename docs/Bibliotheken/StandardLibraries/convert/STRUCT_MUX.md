@@ -73,6 +73,7 @@ Der `STRUCT_MUX` ist ein zustandsloser Baustein, der nach einem einfachen Anford
 | 4diac-Paket | eclipse4diac::convert |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_051](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_051.md)

@@ -52,8 +52,10 @@ Der Programmablauf folgt dieser Signalverarbeitungskette:
 ## Zusammenfassung
 Diese Übung demonstriert die Implementierung einer rastenden Schaltfunktion mit Adaptern für Signalumwandlung. Sie zeigt die Verwendung von Toggle-Flipflops für Zustandsspeicherung und die strukturierte Signalverarbeitung über verschiedene Funktionsbausteine. Die Lösung ist besonders geeignet für Anwendungen, bei denen ein Signal nach dem Loslassen aktiv bleiben soll.
 
+
 ## Zugehörige Übungen
 
 * [Uebung_103](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
 * [Uebung_103c](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c.md)
 * [Uebung_103c2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c2.md)
+

@@ -56,6 +56,7 @@ Der Funktionsblock ist zustandslos (stateless). Jeder `REQ`-Aufruf ist unabhäng
 *   **Individuelle Array-Bausteine:** Im Gegensatz zu universellen Array-Bausteinen, die über Indexeingänge verfügen, ist `BYTES_TO_ARR08B` für eine spezifische, feste Aufgabe optimiert und daher einfacher und schneller in der Anwendung.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_126b_sub](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)

@@ -76,6 +76,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 *   **Generische CAN-RX-Blöcke**: Im Gegensatz zu Blöcken, die rohe CAN-IDs und Daten empfangen, arbeitet dieser Block auf der höheren, standardisierten PGN-Ebene des ISOBUS und übernimmt die protokollspezifische Dekodierung und Parameterverwaltung.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_133](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_133.md)

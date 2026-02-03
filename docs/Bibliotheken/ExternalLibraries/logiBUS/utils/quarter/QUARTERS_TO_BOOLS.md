@@ -61,6 +61,7 @@ Als Composite Function Block besitzt `QUARTERS_TO_BOOLS` keinen eigenen komplexe
 *   **`BYTE_TO_BOOL`-Blöcke**: Konventionelle Blöcke, die ein ganzes Byte in 8 einzelne Bits aufspalten. `QUARTERS_TO_BOOLS` ist spezialisierter, da er davon ausgeht, dass jedes Byte bereits in vier unabhängige 2-Bit-Einheiten unterteilt ist, die separat interpretiert werden müssen.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)

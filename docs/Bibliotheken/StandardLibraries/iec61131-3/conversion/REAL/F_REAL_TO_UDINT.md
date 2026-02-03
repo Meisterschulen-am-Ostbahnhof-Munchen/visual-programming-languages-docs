@@ -46,6 +46,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 - Im Gegensatz zu komplexeren Blöcken bietet `F_REAL_TO_UDINT` eine einfache und direkte Lösung für diese spezifische Konvertierung.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)

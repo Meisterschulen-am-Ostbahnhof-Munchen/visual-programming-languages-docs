@@ -70,6 +70,7 @@ Der Funktionsblock durchläuft implizit folgende Hauptzustände:
 *   **Vs. Blöcke mit interner Datenspeicherung**: Die Verwendung eines **Callback-Adapters** unterscheidet diesen Block von solchen, bei denen die Daten direkt an einem Eingang bereitgestellt werden. Dies macht ihn flexibler, wenn sich die Daten häufig ändern oder aus komplexen Quellen stammen.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_126](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126.md)

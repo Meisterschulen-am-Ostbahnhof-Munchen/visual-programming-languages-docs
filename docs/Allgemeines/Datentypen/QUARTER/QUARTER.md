@@ -33,7 +33,9 @@ Dieser Datentyp wird häufig zur effizienten Übertragung von Zustandsinformatio
 ## Hinweise
 Da **QUARTER** kein Standard-Datentyp der IEC-Normen ist, wird er in Programmierumgebungen oft als `BYTE` oder `USINT` abgebildet, wobei nur die unteren 2 Bits relevant sind oder mehrere QUARTER-Werte in ein Byte gepackt werden (Packing).
 
+
 ## Zugehörige Übungen
 
 * [Uebung_055](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)
 * [Uebung_056](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
+

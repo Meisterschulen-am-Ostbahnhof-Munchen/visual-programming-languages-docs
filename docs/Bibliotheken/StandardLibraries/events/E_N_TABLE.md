@@ -58,6 +58,7 @@ Der `E_N_TABLE` (Event N-Table) ist ein Funktionsbaustein nach IEC 61499, der ei
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_093b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_093b.md)

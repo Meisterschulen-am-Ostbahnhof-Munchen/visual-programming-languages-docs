@@ -65,6 +65,7 @@ Die ECC (Execution Control Chart) besteht aus sechs Zuständen:
 *   **`E_SELECT`- oder `E_DEMUX`-Bausteine**: Diese könnten verwendet werden, um basierend auf einem Eingangswert unterschiedliche Ereignispfade zu aktivieren. `QUARTER_TO_BOOL` kapselt diese Logik speziell für die Konvertierung von 4-Zustands-Signalen und liefert direkt das boolesche Ergebnis.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_055](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)

@@ -63,6 +63,7 @@ Der Block verfügt über einen Initialisierungszustand (INIT/INITO) und operativ
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IE erweiterte Funktionalität für die Erkennung komplexerer Eingabeereignisse und ist speziell für ISOBUS-Umgebungen optimiert.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010b3](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b3.md)

@@ -60,6 +60,7 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ATimeOut`. Da es sich 
 | Adaptertyp    | ATimeOut  | ARTimeOut |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_035](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035.md)

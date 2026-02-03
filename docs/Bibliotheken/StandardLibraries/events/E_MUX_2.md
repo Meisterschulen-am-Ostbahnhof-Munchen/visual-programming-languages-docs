@@ -47,6 +47,7 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 - **Vereinfachung von Logik**: Statt zwei separate Pfade für ähnliche Logik zu haben, werden die auslösenden Ereignisse zusammengeführt und der Index `K` wird als Parameter für die nachfolgende Logik verwendet.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_172](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_172.md)

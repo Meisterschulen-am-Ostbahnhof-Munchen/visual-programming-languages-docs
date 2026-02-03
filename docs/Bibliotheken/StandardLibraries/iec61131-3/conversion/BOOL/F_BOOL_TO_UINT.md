@@ -50,6 +50,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 - Ähnliche Funktionsblöcke wie `F_BOOL_TO_INT` oder `F_BOOL_TO_REAL` bieten Konvertierungen in andere Datentypen, aber `F_BOOL_TO_UINT` ist speziell für vorzeichenlose Integerwerte optimiert.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_087](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087.md)

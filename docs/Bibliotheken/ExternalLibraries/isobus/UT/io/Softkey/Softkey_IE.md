@@ -57,6 +57,7 @@ Der Funktionsblock verfügt über einen initialisierten und einen Betriebszustan
 Im Vergleich zu generischen Eingabebausteinen bietet Softkey_IE spezifische ISO 11783-6-Konformität und ist optimiert für die Anforderungen landwirtschaftlicher und mobiler Arbeitsmaschinen. Die Integration von SoftKeyActivationCode ermöglicht eine standardisierte Ereignisbehandlung.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010b2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b2.md)

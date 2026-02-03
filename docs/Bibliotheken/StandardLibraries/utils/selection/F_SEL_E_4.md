@@ -54,6 +54,7 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weitergabe erfo
 - Die Unterstützung des ANY-Datentyps macht ihn flexibler als typenspezifische Selektoren.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_019a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019a.md)

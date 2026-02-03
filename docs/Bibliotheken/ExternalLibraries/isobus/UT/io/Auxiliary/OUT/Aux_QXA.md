@@ -67,6 +67,7 @@ Im Vergleich zu einfachen booleschen Ausgabeblöcken bietet Aux_QXA:
 - Adapter-basierte Schnittstelle für erweiterte Kommunikation
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_003c_sub_AX](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003c_sub_AX.md)

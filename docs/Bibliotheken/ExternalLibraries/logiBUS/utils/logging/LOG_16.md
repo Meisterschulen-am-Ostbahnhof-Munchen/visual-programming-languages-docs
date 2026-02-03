@@ -56,6 +56,7 @@ Der Baustein besitzt keinen persistenten internen Zustand im Sinne einer Zustand
 *   **Einfache `LOG`-Bausteine**: Einfache Logger ohne Puffer schreiben typischerweise nur einen einzelnen Wert. Die Stärke des `LOG_16` liegt in der ringförmigen Historie.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_122](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122.md)

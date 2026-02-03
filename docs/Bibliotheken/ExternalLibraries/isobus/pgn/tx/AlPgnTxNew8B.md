@@ -68,6 +68,7 @@ Der Block durchläuft implizit folgende Hauptzustände:
 *   **Bestätigte Sende-Bausteine**: `AlPgnTxNew8B` sendet unbestätigt (`CNF`). Für bestätigte Kommunikation (Request/Response) wären andere, spezifischere TX-PGN-Blöcke oder Protokollstapel erforderlich.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_124](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_124.md)

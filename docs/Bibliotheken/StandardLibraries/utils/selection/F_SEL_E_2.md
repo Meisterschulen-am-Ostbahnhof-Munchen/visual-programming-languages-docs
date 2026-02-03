@@ -57,6 +57,7 @@ Der Funktionsblock `F_SEL_E_2` wählt zwischen zwei Eingangsvariablen basierend 
 - Ähnliche Blöcke wie `MUX` (Multiplexer) erlauben die Auswahl aus mehreren Eingängen, sind aber oft datenflussgesteuert und nicht ereignisbasiert.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_019](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_019.md)

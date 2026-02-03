@@ -56,6 +56,7 @@ Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten
 *   **Generische ASSIGN-Bausteine**: Ein einfacher `ASSIGN`-Block kopiert einen Eingangswert 1:1 auf den Ausgang. `NetEv2NetEv` ist ein spezialisierter `ASSIGN`-Block für den Typ `ISONETEVENT_T`, der eine gezielte Modifikation (Handle-Überschreibung) vornimmt.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_128](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128.md)

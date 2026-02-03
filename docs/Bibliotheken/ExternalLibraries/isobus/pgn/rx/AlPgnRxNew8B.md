@@ -69,6 +69,7 @@ Der Block verfügt über implizite Zustände:
 *   **Blöcke für andere Protokolle**: Ähnliche Blöcke existieren für andere höhere Protokolle (z.B. J1939), unterscheiden sich aber in den spezifischen Adressierungs- und Nachrichtenformaten.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_130](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_130.md)

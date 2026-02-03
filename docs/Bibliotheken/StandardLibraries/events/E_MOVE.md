@@ -52,6 +52,7 @@ Dieser Mechanismus reduziert die Anzahl der Ereignisse im System, indem er nur b
 - **Direkte Verbindung**: Im Gegensatz zu einer direkten Verbindung von Daten und Ereignissen, die bei jeder Ausführung weitergeleitet werden, fügt `E_MOVE` eine "Änderungs-Firewall" ein.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_171](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_171.md)

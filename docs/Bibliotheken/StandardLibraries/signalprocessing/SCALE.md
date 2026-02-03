@@ -56,6 +56,7 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem RE
 - Ideal für einfache lineare Skalierungen ohne zusätzliche Logik.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_042](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_042.md)

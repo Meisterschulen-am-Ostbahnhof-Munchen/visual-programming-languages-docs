@@ -38,6 +38,7 @@ Sonderzeichen werden durch ein Dollar-Zeichen (`$`) eingeleitet:
 - `'Zahl: $R$L100'` (Wagenrücklauf und Zeilenvorschub)
 - `'STRING#''Abc'''` (Mit explizitem Typ-Präfix)
 
+
 ## Zugehörige Übungen
 
 * [Uebung_012a_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_012a_sub.md)
@@ -63,3 +64,4 @@ Sonderzeichen werden durch ein Dollar-Zeichen (`$`) eingeleitet:
 * [Uebung_132](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_132.md)
 * [Uebung_133](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_133.md)
 * [Uebung_134](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_134.md)
+

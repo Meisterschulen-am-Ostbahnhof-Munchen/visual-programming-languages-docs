@@ -67,6 +67,7 @@ Der Baustein durchläuft implizit folgende Hauptzustände:
 *   **Einfache TX-Bausteine**: Andere ISOBUS-Sendebausteine erwarten oft einen bereits konfigurierten `PGN_handle`. `AlPgnTxNew8B_REQ` ist der vorgelagerte Baustein, der genau diesen Handle durch die Installation einer neuen PGN bereitstellt.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_125](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_125.md)

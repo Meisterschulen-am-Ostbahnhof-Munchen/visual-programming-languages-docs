@@ -19,6 +19,7 @@ Gemäß **DIN EN 61131-3** wird dieser Datentyp wie folgt spezifiziert:
 In der IEC 61131-3 und IEC 61499 wird dieser Typ zur Deklaration von Variablen und in Funktionsbausteinen verwendet.
 Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `LREAL#...`.
 
+
 ## Zugehörige Übungen
 
 * [Uebung_003a0](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003a0.md)
@@ -28,3 +29,4 @@ Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `LREAL#..
 * [Uebung_035a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a.md)
 * [Uebung_035a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a2.md)
 * [Uebung_035a3](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a3.md)
+

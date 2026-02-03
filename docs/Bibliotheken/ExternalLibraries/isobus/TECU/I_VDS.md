@@ -83,6 +83,7 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 | ISO-Konformität | Voll | Teilweise | Voll |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_073](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_073.md)

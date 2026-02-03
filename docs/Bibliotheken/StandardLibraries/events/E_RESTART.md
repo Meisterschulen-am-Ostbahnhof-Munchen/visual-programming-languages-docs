@@ -71,6 +71,7 @@ Der **E_RESTART** ist ein spezieller Service-Interface-Funktionsbaustein nach IE
 | Standard      | Annex A   | Core     | Core     |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_174](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_174.md)

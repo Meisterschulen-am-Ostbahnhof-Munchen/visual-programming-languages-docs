@@ -50,6 +50,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` emp
 - **F_INT_TO_STRING**: Konvertiert einen Integer-Wert in einen String, ist jedoch komplexer in der Handhabung.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_126b_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)

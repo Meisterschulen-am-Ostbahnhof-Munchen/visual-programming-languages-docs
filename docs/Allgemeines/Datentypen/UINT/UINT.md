@@ -19,6 +19,7 @@ Gemäß **DIN EN 61131-3** wird dieser Datentyp wie folgt spezifiziert:
 In der IEC 61131-3 und IEC 61499 wird dieser Typ zur Deklaration von Variablen und in Funktionsbausteinen verwendet.
 Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `UINT#...`.
 
+
 ## Zugehörige Übungen
 
 * [Uebung_006c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)
@@ -56,3 +57,4 @@ Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `UINT#...
 * [Uebung_090a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_090a2.md)
 * [Uebung_090a2_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
 * [Uebung_103](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
+

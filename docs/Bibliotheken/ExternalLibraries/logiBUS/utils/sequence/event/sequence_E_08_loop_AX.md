@@ -47,6 +47,7 @@ Für zyklische ereignisgesteuerte 8-stufige Sequenzen mit Adapteranbindung.
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_040_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_040_AX.md)

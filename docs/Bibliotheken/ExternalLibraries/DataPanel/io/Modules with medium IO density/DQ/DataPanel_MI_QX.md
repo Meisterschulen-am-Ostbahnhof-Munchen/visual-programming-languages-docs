@@ -66,6 +66,7 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet DataPanel_MI_QX erwei
 - Flexible Ausgangskonfiguration über den Output-Parameter
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_003b2_sub](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003b2_sub.md)

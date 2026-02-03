@@ -55,6 +55,7 @@ Da es sich um einen rein durchschleifenden Composite-Baustein ohne interne Zusta
 *   **Generische Wrapper-FBs**: Im Gegensatz zu generischen Wrapper-Bausteinen ist der `CallbackFB` auf einen spezifischen Datentyp und Adapter spezialisiert, was Typsicherheit und klare Semantik gewährleistet.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_126b2_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2_sub.md)

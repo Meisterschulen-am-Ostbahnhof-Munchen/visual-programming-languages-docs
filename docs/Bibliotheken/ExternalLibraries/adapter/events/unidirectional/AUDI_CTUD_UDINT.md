@@ -49,6 +49,7 @@ Der Zählwert wird über den `CV`-Adapter als `AUDI`-Signal ausgegeben. Die Ausg
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_009_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)

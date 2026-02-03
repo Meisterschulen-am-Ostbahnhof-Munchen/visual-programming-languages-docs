@@ -73,6 +73,7 @@ Es gibt in der Standardbibliothek von 4diac keine direkt vergleichbaren Funktion
 | 4diac-Paket | eclipse4diac::convert |
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_052](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_052.md)

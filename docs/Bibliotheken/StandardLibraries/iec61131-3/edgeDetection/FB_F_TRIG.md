@@ -54,6 +54,7 @@ Der Funktionsblock speichert den vorherigen Zustand des `CLK`-Signals in einer i
 - **FB_F_TRIG** ist spezialisiert auf die Erkennung von fallenden Flanken und daher effizienter in dieser spezifischen Anwendung.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_178](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_178.md)

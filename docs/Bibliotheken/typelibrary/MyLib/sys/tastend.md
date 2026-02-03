@@ -31,8 +31,10 @@ Die Verbindung erfolgt direkt vom Eingangsadapter IN zum Ausgangsadapter OUT. Di
 ## Zusammenfassung
 Die Übung "tastend" demonstriert die Erstellung eines einfachen Sub-Applikationstyps mit Adapterverbindungen. Sie zeigt die grundlegende Struktur von Sub-Bausteinen in 4diac-IDE und deren Integration in größere Steuerungsapplikationen durch standardisierte Adapterschnittstellen.
 
+
 ## Zugehörige Übungen
 
 * [Uebung_103](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
 * [Uebung_103c](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c.md)
 * [Uebung_103c2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c2.md)
+

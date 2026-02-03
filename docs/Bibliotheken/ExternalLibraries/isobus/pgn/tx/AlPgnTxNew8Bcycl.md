@@ -71,6 +71,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 *   **Gegenüber generischen CAN-Sendeblöcken**: Dieser Block abstrahiert die niedrigleveligen CAN-Details (Identifier-Berechnung, Datenrahmen) und arbeitet direkt auf der logischeren PGN-Ebene gemäß ISOBUS-Standard.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_127](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_127.md)

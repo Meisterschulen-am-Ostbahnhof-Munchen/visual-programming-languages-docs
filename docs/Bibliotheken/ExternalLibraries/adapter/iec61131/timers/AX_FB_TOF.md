@@ -64,6 +64,7 @@ Im Vergleich zu ereignisbasierten Timern wie [AX_TOF](../../events/unidirectiona
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_020e2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020e2_AX.md)

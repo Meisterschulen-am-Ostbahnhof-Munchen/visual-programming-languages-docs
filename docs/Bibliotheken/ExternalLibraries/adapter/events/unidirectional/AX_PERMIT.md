@@ -33,6 +33,8 @@ Der Baustein empfängt ein kombiniertes Ereignis- und Bool-Signal über einen `A
 - **Freigabeschaltung**: Ein nachfolgender Baustein soll nur dann getriggert werden, wenn eine Freigabe (`PERMIT.D1 = TRUE`) aktiv ist.
 - **Konditionale Ereignissteuerung**: Steuerung des Ereignisflusses basierend auf einem externen booleschen Status, der über einen AX-Adapter kommt.
 
+
 ## Zugehörige Übungen
 
 * [Uebung_009_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)
+

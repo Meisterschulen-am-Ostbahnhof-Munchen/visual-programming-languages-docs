@@ -61,6 +61,7 @@ Vergleich mit [E_TON](../../../../../StandardLibraries/events/timer/E_TON.md)
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_020c_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020c_AX.md)

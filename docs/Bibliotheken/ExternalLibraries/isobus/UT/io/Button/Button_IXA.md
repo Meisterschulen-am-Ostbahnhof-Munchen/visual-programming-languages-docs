@@ -62,6 +62,7 @@ Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Button_IXA:
 - Adapter-basierte Architektur für bessere Wiederverwendbarkeit
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010a2_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010a2_AX.md)

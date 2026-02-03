@@ -58,6 +58,7 @@ Der Funktionsblock verfügt über einen Initialisierungszustand (INIT/INITO) und
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Button_IE erweiterte Funktionalität für Tasterspezifische Ereignisse wie Mehrfachklicks und unterscheidet zwischen verschiedenen Aktivierungszuständen. Die ISOBUS-Integration macht ihn speziell für landwirtschaftliche Anwendungen geeignet.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_010b7](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b7.md)

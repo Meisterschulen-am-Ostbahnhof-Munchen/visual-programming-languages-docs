@@ -46,6 +46,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Ausführung erfolgt unmittel
 - `F_BYTE_TO_UINT` ist spezialisiert auf die Konvertierung von `BYTE` zu `UINT` und daher effizienter für diesen spezifischen Anwendungsfall.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_006c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)

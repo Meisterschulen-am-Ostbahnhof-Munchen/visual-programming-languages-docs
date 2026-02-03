@@ -69,6 +69,7 @@ Im Vergleich zu anderen logischen Verknüpfungsblöcken:
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a.md)

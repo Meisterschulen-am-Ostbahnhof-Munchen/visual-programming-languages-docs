@@ -54,6 +54,7 @@ Der Funktionsblock `E_BLINK_TRAIN` simuliert ein blinkendes Signal, das für bes
 - **Einfache Timer-FBs**: Bieten keine integrierte Begrenzung der Zyklenanzahl (`N`).
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_035a3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a3.md)

@@ -54,6 +54,7 @@ Der Funktionsblock folgt einem typischen Service-Interface-Muster mit Initialisi
 Im Vergleich zu einfachen booleschen Ausgabeblöcken bietet Aux_QX erweiterte Service-Funktionalität mit Initialisierungssequenzen, Parameterkonfiguration und detailliertem Statusmanagement. Die spezifische Adressierung über iInpNr ermöglicht die Integration in komplexe Gerätepools.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_003c_sub](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003c_sub.md)

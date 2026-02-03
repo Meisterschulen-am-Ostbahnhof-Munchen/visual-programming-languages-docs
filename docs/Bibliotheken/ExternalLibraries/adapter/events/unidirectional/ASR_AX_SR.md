@@ -64,6 +64,7 @@ RESET → SET:    bei S_R.SET Ereignis
 - **Konventionelle Flip-Flops**: Im Vergleich zu Flip-Flops mit direkten Ein-/Ausgängen erleichtert das Adapter-Design die Integration in modulare Systemarchitekturen.
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_171_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_171_AX.md)

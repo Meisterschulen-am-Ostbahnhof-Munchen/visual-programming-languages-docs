@@ -70,6 +70,7 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei, kombinatorisch
 
 
 
+
 ## Zugehörige Übungen
 
 * [Uebung_002a5b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a5b.md)

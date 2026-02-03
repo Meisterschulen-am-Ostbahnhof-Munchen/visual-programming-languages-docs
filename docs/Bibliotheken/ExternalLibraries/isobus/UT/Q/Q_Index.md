@@ -36,6 +36,7 @@ Q_SetAudioVolume
 Q_Size
 Q_SoftKeyMask
 Q_StringValue
+const/const_Index
 ```
 
 ```{index} single: Q

@@ -27,4 +27,6 @@ AX_SR
 AX_SWITCH
 AX_T_FF
 AX_T_FF_SR
+signals/signals_Index
+timers/timers_Index
 ```

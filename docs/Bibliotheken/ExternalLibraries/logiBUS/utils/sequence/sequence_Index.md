@@ -10,4 +10,5 @@ event/event_Index
 schieber/schieber_Index
 timed/timed_Index
 verteiler/verteiler_Index
+pattern/pattern_Index
 ```

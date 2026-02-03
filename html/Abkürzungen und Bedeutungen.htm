@@ -24496,7 +24496,7 @@
             // 4. Tabelle erstellen
             const tableContainer = document.createElement('div');
             tableContainer.className = "table-responsive";
-            
+
             const table = document.createElement('table');
             table.innerHTML = `
                 <thead>
@@ -24514,7 +24514,7 @@
                 </thead>
                 <tbody id="tbody-${cat.id}"></tbody>
             `;
-            
+
             tableContainer.appendChild(table);
             section.appendChild(tableContainer);
             contentArea.appendChild(section);
@@ -24587,7 +24587,7 @@
         });
 
         globalCountDisplay.innerText = totalGlobalVisible;
-        
+
         // Optional: Meldung wenn gar nichts gefunden wurde
         if(totalGlobalVisible === 0 && input !== "") {
             // Man könnte hier eine "Nichts gefunden" Meldung einblenden

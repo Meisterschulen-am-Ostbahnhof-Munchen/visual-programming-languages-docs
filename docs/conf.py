@@ -21,6 +21,7 @@ extensions = [
     "sphinxcontrib.mermaid",
     "sphinxcontrib.googleanalytics",
     "sphinx_rtd_size",
+    "sphinxemoji.sphinxemoji",
 ]
 
 sphinx_rtd_size_width = "90%"

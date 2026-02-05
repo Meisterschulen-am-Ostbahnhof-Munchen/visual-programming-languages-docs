@@ -5,6 +5,8 @@
 
 ```{toctree}
 :maxdepth: 1
+Unterschied_IEC61131_IEC61499
+IEC61499_Funktionsbausteine
 Zahlen
 Datentypen/Datentypen_Index
 Datentypen/GenerischeDatentypen/ANY_Typen

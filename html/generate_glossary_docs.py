@@ -13,8 +13,8 @@ from openpyxl.styles import Font, PatternFill
 
 # Configuration
 JSON_FILE = 'Abkuerzungen_und_Bedeutungen.json'
-PDF_FILE = 'Abkürzungen_und_Bedeutungen.pdf'
-EXCEL_FILE = 'Abkürzungen_und_Bedeutungen.xlsx'
+PDF_FILE = 'Abkuerzungen_und_Bedeutungen.pdf'
+EXCEL_FILE = 'Abkuerzungen_und_Bedeutungen.xlsx'
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_PATH = os.path.join(SCRIPT_DIR, JSON_FILE)

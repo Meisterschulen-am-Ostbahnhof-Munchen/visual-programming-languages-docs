@@ -1,7 +1,7 @@
 import json
 import os
 
-file_path = 'html/Abkürzungen und Bedeutungen.json'
+file_path = 'html/Abkuerzungen_und_Bedeutungen.json'
 
 # Mappings for term -> (ext_de, ext_en)
 # Focusing on Wikipedia as the primary safe source

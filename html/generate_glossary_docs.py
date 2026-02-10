@@ -12,7 +12,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
 
 # Configuration
-JSON_FILE = 'Abkürzungen und Bedeutungen.json'
+JSON_FILE = 'Abkuerzungen_und_Bedeutungen.json'
 PDF_FILE = 'Abkürzungen_und_Bedeutungen.pdf'
 EXCEL_FILE = 'Abkürzungen_und_Bedeutungen.xlsx'
 
@@ -189,7 +189,7 @@ def generate_pdf(data):
     )
     
     # Title
-    elements.append(Paragraph("Abkürzungen und Bedeutungen", title_style))
+    elements.append(Paragraph("Abkuerzungen_und_Bedeutungen", title_style))
     elements.append(Spacer(1, 0.5*cm))
 
     # Table columns: Term, Meaning, Title, Examples

@@ -3,7 +3,7 @@ import os
 import re
 
 # Configuration
-JSON_PATH = os.path.join(os.path.dirname(__file__), 'Abkürzungen und Bedeutungen.json')
+JSON_PATH = os.path.join(os.path.dirname(__file__), 'Abkuerzungen_und_Bedeutungen.json')
 DOCS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
 BASE_URL = 'https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/'
 

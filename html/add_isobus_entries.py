@@ -3,7 +3,7 @@ import os
 import re
 
 # Configuration
-json_file_path = 'visual-programming-languages-docs/html/Abkürzungen und Bedeutungen.json'
+json_file_path = 'visual-programming-languages-docs/html/Abkuerzungen_und_Bedeutungen.json'
 isobus_objects_dir = 'ISOBUS-VT-Objects-docs/docs/isobus-objects'
 base_url_int = 'https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/de/latest/isobus-objects/'
 

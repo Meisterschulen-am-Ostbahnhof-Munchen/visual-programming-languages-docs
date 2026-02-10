@@ -1,6 +1,6 @@
 import json
 
-file_path = 'html/Abkürzungen und Bedeutungen.json'
+file_path = 'html/Abkuerzungen_und_Bedeutungen.json'
 
 try:
     with open(file_path, 'r', encoding='utf-8') as f:

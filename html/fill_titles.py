@@ -1,7 +1,7 @@
 import json
 import os
 
-file_path = 'html/Abkürzungen und Bedeutungen.json'
+file_path = 'html/Abkuerzungen_und_Bedeutungen.json'
 
 # Mappings for specific terms to provide high-quality titles
 term_title_map = {

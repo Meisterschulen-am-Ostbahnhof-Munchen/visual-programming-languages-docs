@@ -2,8 +2,8 @@ import json
 import os
 
 # Configuration
-JSON_FILE = 'Abkürzungen und Bedeutungen.json'
-HTML_FILE = 'Abkürzungen und Bedeutungen.htm'
+JSON_FILE = 'Abkuerzungen_und_Bedeutungen.json'
+HTML_FILE = 'Abkuerzungen_und_Bedeutungen.htm'
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_PATH = os.path.join(SCRIPT_DIR, JSON_FILE)
@@ -14,7 +14,7 @@ HTML_HEADER = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abkürzungen und Bedeutungen - Strukturiert</title>
+    <title>Abkuerzungen_und_Bedeutungen - Strukturiert</title>
     <style>
         /* --- Basis Design --- */
         body {
@@ -198,7 +198,7 @@ HTML_HEADER = """<!DOCTYPE html>
 
     <div class="header-container">
         <h1>Wiki / Glossar</h1>
-		<h2>Abkürzungen und Bedeutungen</h2>
+		<h2>Abkuerzungen_und_Bedeutungen</h2>
 		<a href="https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen" target="_blank"> zur Offline-version</a>
 		
         <input type="text" id="searchInput" placeholder="Suchbegriff eingeben... (Filtert über alle Kategorien)" onkeyup="filterAllTables()">

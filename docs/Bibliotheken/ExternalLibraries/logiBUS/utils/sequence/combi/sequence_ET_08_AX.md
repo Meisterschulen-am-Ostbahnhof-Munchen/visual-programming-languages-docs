@@ -3,6 +3,9 @@
 ```{index} single: sequence_ET_08_AX
 ```
 
+
+![sequence_ET_08_AX_ecc](./sequence_ET_08_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 `sequence_ET_08_AX` ist eine Variante des `sequence_ET_08`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine Sequenz mit 8 Ausgabezuständen.

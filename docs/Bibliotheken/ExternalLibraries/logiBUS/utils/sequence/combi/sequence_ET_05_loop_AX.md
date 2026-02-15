@@ -3,6 +3,9 @@
 ```{index} single: sequence_ET_05_loop_AX
 ```
 
+
+![sequence_ET_05_loop_AX_ecc](./sequence_ET_05_loop_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 `sequence_ET_05_loop_AX` ist eine Variante des `sequence_ET_05_loop`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine zyklische Sequenz mit 5 Ausgabezuständen.

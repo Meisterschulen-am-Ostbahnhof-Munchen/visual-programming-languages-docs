@@ -5,6 +5,9 @@
 
 <img width="1668" height="355" alt="image" src="https://github.com/user-attachments/assets/9b71d8ed-bd09-4337-ae95-611573db02af" />
 
+
+![sequence_ET_04_loop_ecc](./sequence_ET_04_loop_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `sequence_ET_04_loop` implementiert eine zyklische Sequenz mit vier Zuständen. Der Übergang zwischen den Zuständen kann entweder durch ein externes Ereignis oder nach Ablauf einer einstellbaren Zeit erfolgen. Der Block ist darauf ausgelegt, wiederkehrende Abläufe in Steuerungsanwendungen zu realisieren, bei denen Aktionen nacheinander und in einer Schleife ausgeführt werden müssen.

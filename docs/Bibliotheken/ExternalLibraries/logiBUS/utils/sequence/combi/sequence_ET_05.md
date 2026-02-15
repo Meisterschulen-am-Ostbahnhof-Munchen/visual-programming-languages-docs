@@ -5,6 +5,9 @@
 
 <img width="1654" height="399" alt="image" src="https://github.com/user-attachments/assets/244b09cc-9ec4-43b7-9157-fb82556ce8ef" />
 
+
+![sequence_ET_05_ecc](./sequence_ET_05_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `sequence_ET_05` implementiert eine sequenzielle Steuerung mit fünf definierten Zuständen (State_01 bis State_05) und einem Startzustand (START). Der Übergang zwischen den Zuständen kann entweder durch ein externes Ereignis oder nach Ablauf einer einstellbaren Zeit erfolgen. Der Baustein ist für Anwendungen konzipiert, die eine schrittweise Abfolge von Aktionen mit flexiblen Übergangsbedingungen erfordern.

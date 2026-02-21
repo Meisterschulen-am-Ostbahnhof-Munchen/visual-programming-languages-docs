@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1261.0" height="800" viewBox="0 0 1261.0 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1261.0" height="800" fill="#ffffff" />
+<text x="630.0" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: E_DEMUX</text>
+<rect x="10.0" y="384.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="50.0" y="400.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">State_1</text>
+<rect x="100.0" y="384.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M90.0,400.0 L100.0,395.0" stroke="#000000" stroke-width="2" />
+<path d="M180.0,384.0 L180.0,406.0" stroke="#cccccc" stroke-width="1" />
+<rect x="100.0" y="388.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="140.0" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="181.0" y="388.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="221.0" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO0</text>
+<rect x="271.4190687361419" y="384.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="311.4190687361419" y="400.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">State_2</text>
+<rect x="361.4190687361419" y="384.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M351.4190687361419,400.0 L361.4190687361419,395.0" stroke="#000000" stroke-width="2" />
+<path d="M441.4190687361419,384.0 L441.4190687361419,406.0" stroke="#cccccc" stroke-width="1" />
+<rect x="361.4190687361419" y="388.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="401.4190687361419" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="442.4190687361419" y="388.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="482.4190687361419" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO1</text>
+<rect x="470.97560975609764" y="224.35476718403547" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="510.97560975609764" y="240.35476718403547" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="510.8869179600888" y="543.6452328159645" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="550.8869179600888" y="559.6452328159645" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">State</text>
+<rect x="656.5631929046564" y="384.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="696.5631929046564" y="400.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">State_3</text>
+<rect x="746.5631929046564" y="384.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M736.5631929046564,400.0 L746.5631929046564,395.0" stroke="#000000" stroke-width="2" />
+<path d="M826.5631929046564,384.0 L826.5631929046564,406.0" stroke="#cccccc" stroke-width="1" />
+<rect x="746.5631929046564" y="388.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="786.5631929046564" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="827.5631929046564" y="388.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.5631929046564" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO2</text>
+<rect x="910.0000000000001" y="384.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="950.0000000000001" y="400.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">State_4</text>
+<rect x="1000.0000000000001" y="384.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M990.0000000000001,400.0 L1000.0000000000001,395.0" stroke="#000000" stroke-width="2" />
+<path d="M1080.0,384.0 L1080.0,406.0" stroke="#cccccc" stroke-width="1" />
+<rect x="1000.0000000000001" y="388.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="1040.0" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="1081.0" y="388.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="1121.0" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO3</text>
+<path d="M90.0,400.0 C256.611346713196,400.0,480.97560975609764,422.9661138972315,480.97560975609764,256.3547671840355" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M480.97560975609764,256.3547671840355 L484.97560975609764,263.282970414311 L476.97560975609764,263.282970414311 L480.97560975609764,256.3547671840355" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(347.9670598954973,390.65663860946626)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M351.4190687361419,400.0 C432.93524770685354,400.0,495.97560975609764,337.8709461547471,495.97560975609764,256.3547671840355" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M495.97560975609764,256.3547671840355 L499.97560975609764,263.282970414311 L491.97560975609764,263.282970414311 L495.97560975609764,256.3547671840355" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(454.2659063601367,358.74595070603465)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M656.5631929046564,400.0 C574.7539540349139,400.0,510.97560975609764,338.164006053778,510.97560975609764,256.3547671840355" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M510.97560975609764,256.3547671840355 L514.9756097560976,263.282970414311 L506.97560975609764,263.282970414311 L510.97560975609764,256.3547671840355" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(553.0909367542235,358.85584816817124)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M910.0000000000001,400.0 C745.9957633654772,400.0,525.9756097560976,420.35900381855845,525.9756097560976,256.3547671840355" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M525.9756097560976,256.3547671840355 L529.9756097560976,263.282970414311 L521.9756097560976,263.282970414311 L525.9756097560976,256.3547671840355" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(656.4862161401028,389.67897232996387)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M550.9756097560976,232.85476718403547 C590.9756097560976,232.85476718403547,550.8869179600888,503.6452328159645,550.8869179600888,543.6452328159645" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M550.8869179600888,543.6452328159645 L546.8869179600888,536.717029585689 L554.8869179600888,536.717029585689 L550.8869179600888,543.6452328159645" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(565.9312638580932,373.25)">
+<rect x="-10.5" y="-7.5" width="21.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI</text>
+</g>
+<path d="M510.8869179600888,559.6452328159645 C317.78561643883967,559.6452328159645,50.0,609.1013015212491,50.0,416.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M50.0,416.0 L54.0,422.9282032302755 L46.0,422.9282032302755 L50.0,416.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(208.03047090957597,560.2356044784507)">
+<rect x="-26.75" y="-7.5" width="53.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[K = 0]</text>
+</g>
+<path d="M510.8869179600888,559.6452328159645 C412.5638783123807,559.6452328159645,311.4190687361419,514.3230396477081,311.4190687361419,416.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M311.4190687361419,416.0 L315.4190687361419,422.9282032302755 L307.4190687361419,422.9282032302755 L311.4190687361419,416.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(374.2818534802248,524.6937562758728)">
+<rect x="-26.75" y="-7.5" width="53.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[K = 1]</text>
+</g>
+<path d="M590.8869179600888,559.6452328159645 C670.8869179600888,559.6452328159645,696.5631929046564,496.0,696.5631929046564,416.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M696.5631929046564,416.0 L700.5631929046564,422.9282032302755 L692.5631929046564,422.9282032302755 L696.5631929046564,416.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(673.7250554323726,517.8226164079822)">
+<rect x="-26.75" y="-7.5" width="53.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[K = 2]</text>
+</g>
+<path d="M590.8869179600888,559.6452328159645 C745.5975684547237,559.6452328159645,950.0000000000001,570.7106504946349,950.0000000000001,416.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M950.0000000000001,416.0 L954.0000000000001,422.9282032302755 L946.0000000000001,422.9282032302755 L950.0000000000001,416.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(828.4599529155325,545.8391103434703)">
+<rect x="-26.75" y="-7.5" width="53.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[K = 3]</text>
+</g>
+<path d="M558.3869179600888,543.6452328159645 C558.3869179600888,498.6452328159645,540.9756097560976,301.3547671840355,540.9756097560976,256.3547671840355" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M540.9756097560976,256.3547671840355 L544.9756097560976,263.282970414311 L536.9756097560976,263.282970414311 L540.9756097560976,256.3547671840355" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(549.6812638580932,400.0)">
+<rect x="-26.75" y="-7.5" width="53.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[K &gt; 3]</text>
+</g>
+</svg>

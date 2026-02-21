@@ -4,6 +4,9 @@
 ```
 
 ## Einleitung
+
+![AX_PERMIT_ecc](./AX_PERMIT_ecc.svg)
+
 Der `AX_PERMIT` Funktionsblock ist eine adapterbasierte Variante des `E_PERMIT` Bausteins, implementiert als **Basic Function Block**. Er ermöglicht die bedingte Weitergabe eines Ereignisses, basierend auf dem booleschen Datenwert eines eingehenden `AX`-Adapters.
 
 Der Baustein empfängt ein kombiniertes Ereignis- und Bool-Signal über einen `AX`-Adapter (genannt `PERMIT`). Das eingehende Ereignis wird nur dann an den Ausgang (`EO`) weitergeleitet, wenn der boolesche Datenwert des `PERMIT`-Adapters (`PERMIT.D1`) `TRUE` ist. Der Datenwert `PERMIT.D1` wird dabei **nicht** am Ausgang (`EO`) weitergereicht, sondern nur als Bedingung genutzt.

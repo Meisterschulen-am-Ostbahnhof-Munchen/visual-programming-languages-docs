@@ -9,6 +9,9 @@ Der `E_DEMUX` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, de
 
 ## Schnittstellenstruktur
 
+
+![E_DEMUX_ecc](./E_DEMUX_ecc.svg)
+
 ### **Ereignis-Eingänge**
 - **EI (Event Input)**: Das Eingangereignis, das verteilt werden soll.
     - **Verbundene Daten**: `K`

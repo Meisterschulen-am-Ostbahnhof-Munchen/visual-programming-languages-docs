@@ -3,6 +3,9 @@
 ```{index} single: sequence
 ```
 
+
+![sequence](./sequence.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Die globale Konstantendatei `sequence` definiert eine Reihe von vordefinierten Konstanten, die in Verbindung mit Sequenz-Funktionsblöcken verwendet werden können. Sie stellt symbolische Namen für Zustände und einen speziellen Zeitwert bereit, um die Lesbarkeit und Wartbarkeit von IEC 61499-Applikationen zu erhöhen. Die Konstanten sind im Paket `logiBUS::utils::sequence::const` organisiert.

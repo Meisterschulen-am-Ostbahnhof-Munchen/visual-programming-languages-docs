@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: AX_D_FF</text>
+<rect x="10.0" y="114.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="50.0" y="130.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="290.0" y="654.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="330.0" y="670.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">RESET</text>
+<rect x="380.0" y="654.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M370.0,670.0 L380.0,665.0" stroke="#000000" stroke-width="2" />
+<path d="M460.0,654.0 L460.0,676.0" stroke="#cccccc" stroke-width="1" />
+<rect x="380.0" y="658.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="420.0" y="666.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">LATCH</text>
+<rect x="461.0" y="658.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="501.0" y="666.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">Q.E1</text>
+<rect x="507.5" y="286.5" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="547.5" y="302.5" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">SET</text>
+<rect x="597.5" y="286.5" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M587.5,302.5 L597.5,297.5" stroke="#000000" stroke-width="2" />
+<path d="M677.5,286.5 L677.5,308.5" stroke="#cccccc" stroke-width="1" />
+<rect x="597.5" y="290.5" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="637.5" y="298.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">LATCH</text>
+<rect x="678.5" y="290.5" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="718.5" y="298.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">Q.E1</text>
+<path d="M90.0,130.0 C280.5748147054064,130.0,540.0,95.92518529459355,540.0,286.5" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M540.0,286.5 L536.0,279.5717967697245 L544.0,279.5717967697245 L540.0,286.5" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(386.4655555145274,136.7844444854726)">
+<rect x="-36.5" y="-7.5" width="73.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">I.E1[I.D1]</text>
+</g>
+<path d="M507.5,295.0 C347.30649201668626,295.0,330.0,474.5,330.0,654.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M330.0,654.0 L326.0,647.0717967697245 L334.0,647.0717967697245 L330.0,654.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(358.6774345062573,407.1875)">
+<rect x="-36.5" y="-7.5" width="73.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[NOT I.D1]</text>
+</g>
+<path d="M370.0,677.5 C546.5455353762524,677.5,555.0,498.0,555.0,318.5" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M555.0,318.5 L559.0,325.4282032302755 L551.0,325.4282032302755 L555.0,318.5" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(528.7045757660946,565.3125)">
+<rect x="-23.5" y="-7.5" width="47.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[I.D1]</text>
+</g>
+</svg>

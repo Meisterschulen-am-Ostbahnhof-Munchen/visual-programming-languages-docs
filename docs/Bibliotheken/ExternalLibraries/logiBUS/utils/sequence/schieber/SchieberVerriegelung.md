@@ -5,6 +5,9 @@
 
 <img width="1448" height="327" alt="image" src="https://github.com/user-attachments/assets/ce587957-0a58-4d7e-b8e0-cb14bd8c2ef0" />
 
+
+![SchieberVerriegelung_ecc](./SchieberVerriegelung_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `SchieberVerriegelung` dient der koordinierten Steuerung und Verriegelung von drei Schiebern: einem Hauptschieber sowie einem linken und einem rechten Seitenschieber. Sein primärer Zweck ist es, basierend auf externen Anforderungen (Ereignisse) und Sperrzuständen, gültige und kollisionsfreie Schieber-Kombinationen zu gewährleisten. Der Baustein ist besonders für Anwendungen geeignet, bei denen die Bewegung eines Schiebers die Bewegung eines anderen verhindern oder erzwingen muss.

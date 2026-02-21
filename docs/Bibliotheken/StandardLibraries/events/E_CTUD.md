@@ -2,6 +2,9 @@
 
 ## 🎧 Podcast
 
+
+![E_CTUD_ecc](./E_CTUD_ecc.svg)
+
 * [E_CTUD: Bidirektionaler Zähler in IEC 61499 Systemen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTUD-Bidirektionaler-Zhler-in-IEC-61499-Systemen-e368lmb)
 
 ---- 

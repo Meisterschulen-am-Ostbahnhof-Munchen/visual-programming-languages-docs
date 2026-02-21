@@ -3,6 +3,9 @@
 ```{index} single: sequence_E_05_loop_AX
 ```
 
+
+![sequence_E_05_loop_AX_ecc](./sequence_E_05_loop_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 `sequence_E_05_loop_AX` ist eine Variante des `sequence_E_05_loop`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein ereignisgesteuerte, zyklische Sequenz mit 5 Ausgabezuständen.

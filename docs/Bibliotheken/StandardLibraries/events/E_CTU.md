@@ -2,6 +2,9 @@
 
 ## 📺 Video
 
+
+![E_CTU_ecc](./E_CTU_ecc.svg)
+
 * [The E_CTU upcounter](https://www.youtube.com/watch?v=2v4Ib2wZLGM)
 
 ## 🎧 Podcast

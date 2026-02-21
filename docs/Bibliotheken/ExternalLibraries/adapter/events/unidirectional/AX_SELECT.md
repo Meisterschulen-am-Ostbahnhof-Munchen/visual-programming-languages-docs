@@ -3,6 +3,9 @@
 ```{index} single: AX_SELECT
 ```
 
+
+![AX_SELECT_ecc](./AX_SELECT_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der AX_SELECT ist ein Funktionsblock, der basierend auf einem booleschen Eingang einen von zwei AX-Adapter-Eingängen auf den Ausgang schaltet.

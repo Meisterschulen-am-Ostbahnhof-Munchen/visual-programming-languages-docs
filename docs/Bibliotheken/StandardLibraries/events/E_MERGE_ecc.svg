@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: E_MERGE</text>
+<rect x="155.0" y="84.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="195.0" y="100.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="215.0" y="684.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="255.0" y="700.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">EO</text>
+<rect x="305.0" y="684.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M295.0,700.0 L305.0,695.0" stroke="#000000" stroke-width="2" />
+<path d="M385.0,684.0 L385.0,706.0" stroke="#cccccc" stroke-width="1" />
+<rect x="305.0" y="688.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="345.0" y="696.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="386.0" y="688.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="426.0" y="696.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO</text>
+<path d="M240.0,684.0 C240.0,456.0880871915642,195.0,400.0,195.0,116.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M195.0,116.0 L199.0,122.92820323027551 L191.0,122.92820323027551 L195.0,116.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(217.5,421.0330326968366)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M235.0,100.0 C280.0,100.0,247.5,639.0,247.5,684.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M247.5,684.0 L243.5,677.0717967697245 L251.5,677.0717967697245 L247.5,684.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(258.125,375.125)">
+<rect x="-13.75" y="-7.5" width="27.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI1</text>
+</g>
+<path d="M235.0,115.0 C492.86566217839845,115.0,262.5,399.5,262.5,684.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M262.5,684.0 L258.5,677.0717967697245 L266.5,677.0717967697245 L262.5,684.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(345.4496233168994,292.8125)">
+<rect x="-13.75" y="-7.5" width="27.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI2</text>
+</g>
+</svg>

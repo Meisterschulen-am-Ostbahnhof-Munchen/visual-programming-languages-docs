@@ -5,6 +5,9 @@
 
 <img width="1430" height="335" alt="image" src="https://github.com/user-attachments/assets/d4ccd971-ec44-43d1-b586-d98d13bac896" />
 
+
+![sequence_T_04_loop_ecc](./sequence_T_04_loop_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `sequence_T_04_loop` ist ein zeitgesteuerter Sequenzer mit vier Ausgängen, der in einer Schleife arbeitet. Er durchläuft nacheinander vier Zustände (State_01 bis State_04). Der Übergang von einem Zustand zum nächsten erfolgt automatisch nach Ablauf einer einstellbaren Zeitverzögerung. Der Baustein kann von jedem Zustand aus zurückgesetzt werden und startet dann die Sequenz erneut.

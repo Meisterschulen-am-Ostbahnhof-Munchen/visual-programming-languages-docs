@@ -4,6 +4,9 @@
 ```
 ## 🎧 Podcast
 
+
+![E_CTD_ecc](./E_CTD_ecc.svg)
+
 * [E_CTD: Ereignisgesteuerter Abwärtszähler nach IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTD-Ereignisgesteuerter-Abwrtszhler-nach-IEC-61499-e368lli)
 
 ## Einleitung

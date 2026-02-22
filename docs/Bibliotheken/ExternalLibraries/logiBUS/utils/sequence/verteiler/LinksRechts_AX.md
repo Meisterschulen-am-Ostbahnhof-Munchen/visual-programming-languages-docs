@@ -3,6 +3,9 @@
 
 ![LinksRechts_AX](.././LinksRechts_AX.svg)
 
+
+![LinksRechts_AX_ecc](./LinksRechts_AX_ecc.svg)
+
 *Hinweis: Ein Bild des Funktionsbausteins ist hier nicht verfügbar.*
 
 * * * * * * * * * *

@@ -14,3 +14,5 @@ States (Closed, Opened, Transitions)
 | Opened | STRING | 'Opened' |
 | Closing | STRING | 'Closing' |
 | Unknown | STRING | 'Unknown' |
+
+![STATES](./STATES.svg)

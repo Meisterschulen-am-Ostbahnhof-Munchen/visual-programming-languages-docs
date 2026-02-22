@@ -5,6 +5,9 @@
 
 <img width="1087" height="229" alt="image" src="https://github.com/user-attachments/assets/05b9faba-dff2-41e8-86a4-1031ffe644af" />
 
+
+![AX_D_FF_ecc](./AX_D_FF_ecc.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

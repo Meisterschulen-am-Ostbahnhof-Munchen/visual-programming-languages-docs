@@ -4,6 +4,9 @@
 ```
 ## 🎧 Podcast
 
+
+![START](./START.svg)
+
 * [Ereignisse und IEC 61499: Der Startschuss für intelligente Systeme](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Ereignisse-und-IEC-61499-Der-Startschuss-fr-intelligente-Systeme-e368461)
 
 ## Einleitung

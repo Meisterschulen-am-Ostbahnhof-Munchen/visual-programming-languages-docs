@@ -10,6 +10,9 @@ Der `AUDI_CTUD_UDINT` ist ein ereignisgesteuerter Auf-/Abwärtszähler (Counter 
 
 ## Schnittstellenstruktur
 
+
+![AUDI_CTUD_UDINT_ecc](./AUDI_CTUD_UDINT_ecc.svg)
+
 ### **Ereignis-Eingänge**
 - **CU**: `Event` - Zählt den Wert um eins hoch (`Count Up`).
 - **CD**: `Event` - Zählt den Wert um eins herunter (`Count Down`).

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: E_D_FF</text>
+<rect x="10.0" y="139.71428571428572" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="50.0" y="155.71428571428572" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="303.8775510204082" y="654.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="343.8775510204082" y="670.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">RESET</text>
+<rect x="393.8775510204082" y="654.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M383.8775510204082,670.0 L393.8775510204082,665.0" stroke="#000000" stroke-width="2" />
+<path d="M473.8775510204082,654.0 L473.8775510204082,676.0" stroke="#cccccc" stroke-width="1" />
+<rect x="393.8775510204082" y="658.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="433.8775510204082" y="666.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">LATCH</text>
+<rect x="474.8775510204082" y="658.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="514.8775510204082" y="666.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO</text>
+<rect x="623.469387755102" y="114.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="663.469387755102" y="130.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">SET</text>
+<rect x="713.469387755102" y="114.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M703.469387755102,130.0 L713.469387755102,125.0" stroke="#000000" stroke-width="2" />
+<path d="M793.469387755102,114.0 L793.469387755102,136.0" stroke="#cccccc" stroke-width="1" />
+<rect x="713.469387755102" y="118.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="753.469387755102" y="126.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">LATCH</text>
+<rect x="794.469387755102" y="118.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="834.469387755102" y="126.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO</text>
+<path d="M90.0,155.71428571428572 C130.0,155.71428571428572,655.969387755102,186.0,655.969387755102,146.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M655.969387755102,146.0 L659.969387755102,152.9282032302755 L651.969387755102,152.9282032302755 L655.969387755102,146.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(387.984693877551,165.85714285714286)">
+<rect x="-23.5" y="-7.5" width="47.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CLK[D]</text>
+</g>
+<path d="M623.469387755102,122.5 C383.2482079499301,122.5,343.8775510204082,388.25,343.8775510204082,654.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M343.8775510204082,654.0 L339.8775510204082,647.0717967697245 L347.8775510204082,647.0717967697245 L343.8775510204082,654.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(393.5905269608156,288.59375)">
+<rect x="-36.5" y="-7.5" width="73.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CLK[NOT D]</text>
+</g>
+<path d="M383.8775510204082,677.5 C640.5099901405562,677.5,670.969387755102,411.75,670.969387755102,146.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M670.969387755102,146.0 L674.969387755102,152.9282032302755 L666.969387755102,152.9282032302755 L670.969387755102,146.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(623.6606340578105,511.40625)">
+<rect x="-23.5" y="-7.5" width="47.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CLK[D]</text>
+</g>
+</svg>

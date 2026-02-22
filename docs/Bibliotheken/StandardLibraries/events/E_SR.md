@@ -4,6 +4,9 @@
 ```
 ## 🎧 Podcast
 
+
+![E_SR_ecc](./E_SR_ecc.svg)
+
 * [IEC 61499: Der E_SR-Baustein entschlüsselt – Einfachheit trifft Ereignissteuerung](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-Der-E_SR-Baustein-entschlsselt--Einfachheit-trifft-Ereignissteuerung-e3682bo)
 * [Decoding the E_SR Function Block: The Unsung Hero of Industrial Automation](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Decoding-the-E_SR-Function-Block-The-Unsung-Hero-of-Industrial-Automation-e3681qo)
 

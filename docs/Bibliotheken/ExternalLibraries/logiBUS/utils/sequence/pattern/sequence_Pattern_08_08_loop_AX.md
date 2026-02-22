@@ -5,6 +5,9 @@
 
 ![sequence_Pattern_08_08_loop_AX](.././sequence_Pattern_08_08_loop_AX.svg)
 
+
+![sequence_Pattern_08_08_loop_AX_ecc](./sequence_Pattern_08_08_loop_AX_ecc.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

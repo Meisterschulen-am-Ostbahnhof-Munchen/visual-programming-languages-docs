@@ -5,6 +5,9 @@
 
 <img width="1712" height="415" alt="image" src="https://github.com/user-attachments/assets/789f0943-fa6f-4087-863c-cbd8da1948c7" />
 
+
+![sequence_E_04_loop_ecc](./sequence_E_04_loop_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `sequence_E_04_loop` implementiert eine zyklische Sequenz mit vier Zuständen. Die Zustandsübergänge werden ausschließlich durch externe Ereignisse ausgelöst. Der Baustein ist für Steuerungsaufgaben konzipiert, bei denen eine feste Abfolge von Aktionen (repräsentiert durch die Ausgänge `DO_S1` bis `DO_S4`) durchlaufen werden muss und ein Rücksetzen von jedem Zustand aus möglich sein soll.

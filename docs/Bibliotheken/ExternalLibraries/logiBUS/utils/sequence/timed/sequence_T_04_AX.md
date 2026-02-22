@@ -3,6 +3,9 @@
 ```{index} single: sequence_T_04_AX
 ```
 
+
+![sequence_T_04_AX_ecc](./sequence_T_04_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 `sequence_T_04_AX` ist eine Variante des `sequence_T_04`, die zusätzlich Adapter (`AX`) für die Ausgänge verwendet. Er steuert eine rein zeitgesteuerte Sequenz mit 4 Ausgabezuständen.

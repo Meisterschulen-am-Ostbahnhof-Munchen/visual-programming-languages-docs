@@ -5,6 +5,9 @@
 
 <img width="1074" height="276" alt="image" src="https://github.com/user-attachments/assets/fc046311-1486-49c1-8932-8429e1dff4ed" />
 
+
+![LinksRechts_ecc](./LinksRechts_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `LinksRechts` ist ein grundlegender Baustein zur Steuerung einer bidirektionalen Bewegung, beispielsweise eines Antriebs, der sowohl im Rechts- als auch im Linkslauf betrieben werden kann. Er realisiert eine einfache Priorisierungslogik, bei der der Rechtslauf Vorrang vor dem Linkslauf hat, es sei denn, ein spezieller Linkslauf-Befehl ist aktiv. Der Block ermöglicht zudem das pausieren der Bewegung.

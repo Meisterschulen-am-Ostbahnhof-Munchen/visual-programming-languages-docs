@@ -3,6 +3,9 @@
 ```{index} single: STATES
 ```
 
+
+![STATES](./STATES.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Die globale Konstanten-Deklaration `STATES` definiert eine Sammlung von vordefinierten Zustandsbezeichnungen als Zeichenketten (STRING). Diese Konstanten werden typischerweise verwendet, um Betriebszustände in einer Steuerungssequenz zu benennen, insbesondere für Prozesse mit wechselnder Richtung (Linkslauf/Rechtslauf) und integrierten Pausen. Sie dient als zentrale und konsistente Quelle für diese Zustandsnamen innerhalb eines Projekts.

@@ -5,6 +5,9 @@
 
 <img width="1143" height="415" alt="image" src="https://github.com/user-attachments/assets/4a56f7f9-4f54-4812-883b-f99753f1fbd2" />
 
+
+![sequence_E_08_ecc](./sequence_E_08_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `sequence_E_08` ist ein Sequenzer mit acht Ausgängen, der durch Ereignisse gesteuert wird. Er realisiert eine lineare Zustandsmaschine mit einem definierten Startzustand und acht aktiven Zuständen. Der Übergang von einem Zustand zum nächsten erfolgt ausschließlich durch das Eintreffen eines spezifischen Ereignisses. Der Baustein eignet sich für Steuerungsaufgaben, bei denen Prozessschritte nacheinander und ereignisgesteuert durchlaufen werden müssen, wie z.B. in Handhabungs- oder Montageabläufen.

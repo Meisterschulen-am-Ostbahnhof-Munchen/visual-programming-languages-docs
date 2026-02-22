@@ -5,6 +5,9 @@
 
 <img width="1442" height="375" alt="image" src="https://github.com/user-attachments/assets/0c00023a-1184-4972-a6a3-69899cafe98b" />
 
+
+![sequence_T_05_loop_ecc](./sequence_T_05_loop_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `sequence_T_05_loop` ist ein zeitgesteuerter Sequenzer, der einen zyklischen Ablauf von fünf Zuständen (State_01 bis State_05) realisiert. Der Übergang von einem Zustand zum nächsten erfolgt nach einer einstellbaren Zeitverzögerung. Der Baustein ist für Anwendungen konzipiert, in denen Aktionen oder Prozessschritte nacheinander und für eine definierte Dauer aktiviert werden müssen, beispielsweise in automatisierten Handhabungs- oder Fertigungsprozessen.

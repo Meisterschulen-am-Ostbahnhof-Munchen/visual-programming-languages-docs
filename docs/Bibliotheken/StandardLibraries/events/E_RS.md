@@ -9,6 +9,9 @@ Der `E_RS` (Event-driven RS Flip-Flop) ist ein ereignisgesteuerter, bistabiler F
 
 ## Schnittstellenstruktur
 
+
+![E_RS_ecc](./E_RS_ecc.svg)
+
 ### **Ereignis-Eingänge:**
 - **S (Set)**: Setzt den Ausgang `Q` auf `TRUE`.
 - **R (Reset)**: Setzt den Ausgang `Q` auf `FALSE`.

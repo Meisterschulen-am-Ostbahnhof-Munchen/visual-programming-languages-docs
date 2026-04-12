@@ -24,7 +24,14 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
 
 ### **Daten-Eingänge**
 - `u16NewMaskId` (UINT): Objekt-ID der neuen Maske
-- `u16WorkSetId` (UINT): Arbeitsmengen-Kennung
+
+!!! note "WorkingSet Object ID fest auf 0"
+    Der **WorkingSet Object ID** (`u16WorkSetId`) ist **fest auf 0 gesetzt** durch die Autoren von [logiBUS®](https://www.logibus.tech/). Der Benutzer muss sicherstellen, dass das WorkingSet-Objekt im Objektpool immer Object ID 0 hat. Dies ist die Standardeinstellung in den meisten Tools:
+
+    - [ISO-Designer](https://www.bucherautomation.com/iso-designer/sw10133) von Bucher Automation AG
+    - [Isobus Studio](https://isobus-studio.com/) von [to-the-future / Tobias Tenberg](https://www.to-the-future.de/)
+
+    Da das Workingset ein einzelnes Objekt ist und nur 1x existiert, stellt diese Einschränkung kein Problem dar.
 
 ### **Daten-Ausgänge**
 - `STATUS` (STRING): Betriebsstatusmeldung

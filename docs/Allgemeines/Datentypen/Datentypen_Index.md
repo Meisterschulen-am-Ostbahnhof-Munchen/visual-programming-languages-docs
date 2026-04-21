@@ -65,36 +65,63 @@ Siehe auch: IEC 61499, Table E.1
 
 #### 💾 Datentypen zum Rechnen
 
-| Typ | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
-| --- | --- | --- | --- | --- |
-| BOOL | 1/8 | 1 Bit | 0 = FALSE | 1 = TRUE |
-| SINT | 1 | 8 Bit | −128 | 127 |
-| INT | 2 | 16 Bit | −32.768 | 32.767 |
-| DINT | 4 | 32 Bit | −2.147.483.648 | 2.147.483.647 |
-| LINT | 8 | 64 Bit | −9.223.372.036.854.775.808 | 9.223.372.036.854.775.807 |
-| USINT | 1 | 8 Bit | 0 | 255 |
-| UINT | 2 | 16 Bit | 0 | 65.535 |
-| UDINT | 4 | 32 Bit | 0 | 4.294.967.295 |
-| ULINT | 8 | 64 Bit | 0 | 18.446.744.073.709.551.615 |
-| REAL | 4 | 32 Bit |   |   |
-| LREAL | 8 | 64 Bit |   |   |
-| DATE | 8 | 64 Bit |   |   |
-| TIME | 8 | 64 Bit |   |   |
-| TIME\_OF\_DAY | 12 | 96 Bit | 1970-01-01-00:00:00.000 |   |
-| DATE\_AND\_TIME | 20 | 160 Bit | 1970-01-01-00:00:00.000 |   |
+| Typ | Kürzel | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
+| --- | --- | --- | --- | --- | --- |
+| BOOL | X | 1/8 | 1 Bit | 0 = FALSE | 1 = TRUE |
+| SINT | S | 1 | 8 Bit | −128 | 127 |
+| INT | I | 2 | 16 Bit | −32.768 | 32.767 |
+| DINT | DI | 4 | 32 Bit | −2.147.483.648 | 2.147.483.647 |
+| LINT | LI | 8 | 64 Bit | −9.223.372.036.854.775.808 | 9.223.372.036.854.775.807 |
+| USINT | US | 1 | 8 Bit | 0 | 255 |
+| UINT | UI | 2 | 16 Bit | 0 | 65.535 |
+| UDINT | UDI | 4 | 32 Bit | 0 | 4.294.967.295 |
+| ULINT | ULI | 8 | 64 Bit | 0 | 18.446.744.073.709.551.615 |
+| REAL | R | 4 | 32 Bit |   |   |
+| LREAL | LR | 8 | 64 Bit |   |   |
+| DATE | D | 8 | 64 Bit |   |   |
+| TIME | T | 8 | 64 Bit |   |   |
+| TIME\_OF\_DAY | TOD | 12 | 96 Bit | 1970-01-01-00:00:00.000 |   |
+| DATE\_AND\_TIME | DT | 20 | 160 Bit | 1970-01-01-00:00:00.000 |   |
 
 #### 💾 Datentypen für I/O (Input / Output)
 
-| Typ | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
-| --- | --- | --- | --- | --- |
-| BOOL | 1/8 | 1 Bit | 0 = FALSE | 1= TRUE |
-| QUARTER [^1] | 1/4 | 2 Bit | 0 | 3 |
-| BYTE | 1 | 8 Bit | 0 | 255 |
-| WORD | 2 | 16 Bit | 0 | 65.535 |
-| DWORD | 4 | 32 Bit | 0 | 4.294.967.295 |
-| LWORD | 8 | 64 Bit | 0 | 18.446.744.073.709.551.615 |
+| Typ | Kürzel | BYTE Länge | Bit Länge | Wertebereich min | Wertebereich max |
+| --- | --- | --- | --- | --- | --- |
+| BOOL | X | 1/8 | 1 Bit | 0 = FALSE | 1= TRUE |
+| QUARTER [^1] | Q | 1/4 | 2 Bit | 0 | 3 |
+| BYTE | B | 1 | 8 Bit | 0 | 255 |
+| WORD | W | 2 | 16 Bit | 0 | 65.535 |
+| DWORD | D | 4 | 32 Bit | 0 | 4.294.967.295 |
+| LWORD | L | 8 | 64 Bit | 0 | 18.446.744.073.709.551.615 |
 
 [^1]: QUARTER ist nicht normativ festgelegt.
+
+## 🔗 Adapter und IO-Bausteine
+
+In der folgenden Tabelle finden Sie die zugehörigen Adapter und IO-Bausteine für jeden Datentyp:
+
+| Datentyp | Kürzel | Adapter | Input | Output |
+| --- | --- | --- | --- | --- |
+| BOOL | X | [AX](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/BOOL/AX.md) | [IX](../../Bibliotheken/StandardLibraries/io/IX.md) | [QX](../../Bibliotheken/StandardLibraries/io/QX.md) |
+| BYTE | B | [AB](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/BYTE/AB.md) | [IB](../../Bibliotheken/StandardLibraries/io/IB.md) | [QB](../../Bibliotheken/StandardLibraries/io/QB.md) |
+| WORD | W | [AW](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/WORD/AW.md) | [IW](../../Bibliotheken/StandardLibraries/io/IW.md) | [QW](../../Bibliotheken/StandardLibraries/io/QW.md) |
+| DWORD | D | [AD](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/DWORD/AD.md) | [ID](../../Bibliotheken/StandardLibraries/io/ID.md) | [QD](../../Bibliotheken/StandardLibraries/io/QD.md) |
+| LWORD | L | [AL](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/LWORD/AL.md) | [IL](../../Bibliotheken/StandardLibraries/io/IL.md) | [QL](../../Bibliotheken/StandardLibraries/io/QL.md) |
+| SINT | S | [AS](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/SINT/AS.md) | — | — |
+| INT | I | [AI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/INT/AI.md) | — | — |
+| DINT | DI | [ADI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/DINT/ADI.md) | — | — |
+| LINT | LI | [ALI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/LINT/ALI.md) | — | — |
+| USINT | US | [AUS](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/USINT/AUS.md) | — | — |
+| UINT | UI | [AUI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UINT/AUI.md) | — | — |
+| UDINT | UDI | [AUDI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UDINT/AUDI.md) | — | — |
+| ULINT | ULI | [AULI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/ULINT/AULI.md) | — | — |
+| REAL | R | [AR](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/REAL/AR.md) | — | — |
+| LREAL | LR | [ALR](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/LREAL/ALR.md) | — | — |
+| DATE | D | — | — | — |
+| TIME | T | — | — | — |
+| TIME_OF_DAY | TOD | — | — | — |
+| DATE_AND_TIME | DT | — | — | — |
+| QUARTER | Q | — | — | — |
 
 In der folgenden Liste sind die elementaren Datentypen gemäß DIN EN 61131-3 aufgeführt.
 

@@ -33,6 +33,7 @@ ULINT/ULINT_Type
 USINT/USINT_Type
 WORD/WORD_Type
 WSTRING/WSTRING_Type
+Typkompatibilität
 ```
 
 

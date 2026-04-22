@@ -57,4 +57,5 @@ Datentypen legen fest, welche Art von Information eine Variable speichern kann (
 
 *   Eine Übersicht finden Sie hier: **[Datentypen](Allgemeines/Datentypen/Datentypen.md)**
 *   Informationen zu generischen Datentypen: **[ANY-Typen](Datentypen/GenerischeDatentypen/ANY_Typen.md)**
+*   Welche Typen miteinander verbunden werden dürfen: **[Typkompatibilität](Datentypen/Typkompatibilität.md)**
 

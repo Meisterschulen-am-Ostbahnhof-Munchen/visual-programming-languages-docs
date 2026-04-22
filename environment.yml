@@ -29,4 +29,3 @@ dependencies:
     - sphinx_tippy
     - sphinx-markdown-tables
     - sphinxemoji
-    - clang

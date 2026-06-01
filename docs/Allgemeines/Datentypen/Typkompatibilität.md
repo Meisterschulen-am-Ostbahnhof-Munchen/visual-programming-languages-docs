@@ -86,3 +86,54 @@ Lang-Typen akzeptieren auch die kurzen Varianten:
 2. **Keine Verengung:** Ein größerer Typ darf nicht auf einen kleineren Typ verbunden werden (z. B. `UDINT` → `UINT` ist verboten).
 3. **Sign-Grenze:** Signed und Unsigned Integer sind nicht kompatibel (z. B. `INT` → `UINT` ist verboten).
 4. **Bool-Sonderregel:** `BOOL` darf auf jeden Bit-Typ (`BYTE`, `WORD`, `DWORD`, `LWORD`) verbunden werden.
+
+## Typ-Umwandlungen (Casting)
+
+### direkte Bit-String zu Gleitkomma Konvertierungen
+
+In IEC 61131-3 / IEC 61499 sind folgende implizite Konvertierungen **nicht definiert**:
+
+- `BYTE_TO_REAL` → **nicht definiert**
+- `WORD_TO_REAL` → **nicht definiert**
+
+Stattdessen müssen Sie über den passenden vorzeichenlosen Integer-Typen konvertieren:
+
+| Quelle | Ziel | Korrekte Umwandlung |
+|--------|------|---------------------|
+| BYTE | REAL | `BYTE` → `USINT` → `REAL` |
+| WORD | REAL | `WORD` → `UINT` → `REAL` |
+| DWORD | REAL | `DWORD` → `UDINT` → `REAL` |
+| LWORD | REAL/LREAL | `LWORD` → `ULINT` → `LREAL` |
+
+### DWORD_TO_REAL = reinterpret_cast
+
+**Wichtig:** `DWORD_TO_REAL` in 4diac entspricht einem `reinterpret_cast` in C++. Das bedeutet:
+
+- Die Bit-Darstellung wird direkt als REAL interpretiert
+- Es findet **keine numerische Umwandlung** statt
+- Beispiel: `16#41480000` als DWORD wird zu `12.5` als REAL (gleiche Bitrepräsentation)
+
+Dies ist in der Regel **nicht** das gewünschte Verhalten für numerische Umwandlungen!
+
+### Das 16.777.216 Problem (REAL Präzisionsverlust)
+
+REAL hat nur 32 Bit und kann daher nur **7 Dezimalstellen** präzise darstellen.
+
+Bei der Konvertierung von großen vorzeichenlosen Werten geht ab **16.777.216** (2^24) die Genauigkeit verloren:
+
+```
+UDINT#16777216  →  REAL#16777216.0  →  Fehler!
+UDINT#16777217  →  REAL#16777216.0  →  Gleicher Wert!
+```
+
+**Lösung:** Bei Werten ≥ 16.777.216 `LREAL` statt `REAL` verwenden:
+
+```
+UDINT#16777216  →  UDINT_TO_LREAL()  →  LREAL#16777216.0  ✓
+```
+
+Dies betrifft insbesondere:
+- UDINT (32 Bit) und DWORD (32 Bit) Umwandlungen
+- LWORD (64 Bit) und ULINT (64 Bit) Umwandlungen
+
+**Faustregel:** Alle FIELDBUS Signal-Bausteine für DWORD, UDINT, LWORD und ULINT sollten `LREAL` als Ausgabetyp verwenden.

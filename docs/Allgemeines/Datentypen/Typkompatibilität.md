@@ -133,7 +133,7 @@ UDINT#16777216  →  UDINT_TO_LREAL()  →  LREAL#16777216.0  ✓
 ```
 
 Dies betrifft insbesondere:
-- UDINT (32 Bit) und DWORD (32 Bit) Umwandlungen
-- LWORD (64 Bit) und ULINT (64 Bit) Umwandlungen
+- UDINT (32 Bit) und DWORD (32 Bit) Umwandlungen in REAL
+- LWORD (64 Bit) und ULINT (64 Bit) Umwandlungen in REAL (bei LREAL tritt der Präzisionsverlust erst ab 2^53 auf)
 
 **Faustregel:** Alle FIELDBUS Signal-Bausteine für DWORD, UDINT, LWORD und ULINT sollten `LREAL` als Ausgabetyp verwenden.

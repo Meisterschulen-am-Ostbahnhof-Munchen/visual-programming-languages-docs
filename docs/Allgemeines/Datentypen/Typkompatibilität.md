@@ -91,7 +91,7 @@ Lang-Typen akzeptieren auch die kurzen Varianten:
 
 ### Direkte Bit-String-zu-Gleitkomma-Konvertierungen
 
-In IEC 61131-3 / IEC 61499 sind folgende implizite Konvertierungen **nicht definiert**:
+In IEC 61131-3 / IEC 61499 sind folgende direkten Konvertierungen **nicht definiert**:
 
 - `BYTE_TO_REAL` → **nicht definiert**
 - `WORD_TO_REAL` → **nicht definiert**

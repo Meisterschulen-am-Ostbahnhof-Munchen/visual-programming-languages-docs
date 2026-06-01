@@ -89,7 +89,7 @@ Lang-Typen akzeptieren auch die kurzen Varianten:
 
 ## Typ-Umwandlungen (Casting)
 
-### direkte Bit-String zu Gleitkomma Konvertierungen
+### Direkte Bit-String-zu-Gleitkomma-Konvertierungen
 
 In IEC 61131-3 / IEC 61499 sind folgende implizite Konvertierungen **nicht definiert**:
 

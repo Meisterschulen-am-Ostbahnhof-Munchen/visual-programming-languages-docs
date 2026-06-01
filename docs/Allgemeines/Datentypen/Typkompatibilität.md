@@ -103,11 +103,11 @@ Stattdessen müssen Sie über den passenden vorzeichenlosen Integer-Typen konver
 | BYTE | REAL | `BYTE` → `USINT` → `REAL` |
 | WORD | REAL | `WORD` → `UINT` → `REAL` |
 | DWORD | REAL | `DWORD` → `UDINT` → `REAL` |
-| LWORD | REAL/LREAL | `LWORD` → `ULINT` → `LREAL` |
+| LWORD | LREAL | `LWORD` → `ULINT` → `LREAL` |
 
-### DWORD_TO_REAL = reinterpret_cast
+### DWORD_TO_REAL, LWORD_TO_LREAL = reinterpret_cast
 
-**Wichtig:** `DWORD_TO_REAL` in 4diac entspricht einem `reinterpret_cast` in C++. Das bedeutet:
+**Wichtig:** `DWORD_TO_REAL` und `LWORD_TO_LREAL` in 4diac entsprechen einem `reinterpret_cast` in C++. Das bedeutet:
 
 - Die Bit-Darstellung wird direkt als REAL interpretiert
 - Es findet **keine numerische Umwandlung** statt

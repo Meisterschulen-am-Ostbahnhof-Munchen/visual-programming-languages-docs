@@ -122,8 +122,8 @@ REAL hat nur 32 Bit und kann daher nur **7 Dezimalstellen** präzise darstellen.
 Bei der Konvertierung von großen vorzeichenlosen Werten geht ab **16.777.216** (2^24) die Genauigkeit verloren:
 
 ```
-UDINT#16777216  →  REAL#16777216.0  →  Fehler!
-UDINT#16777217  →  REAL#16777216.0  →  Gleicher Wert!
+UDINT#16777216  →  REAL#16777216.0  →  Korrekt (2^24)
+UDINT#16777217  →  REAL#16777216.0  →  Präzisionsverlust (Rundung)
 ```
 
 **Lösung:** Bei Werten ≥ 16.777.216 `LREAL` statt `REAL` verwenden:

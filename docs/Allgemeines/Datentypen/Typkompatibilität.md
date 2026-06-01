@@ -129,7 +129,7 @@ UDINT#16777217  →  UDINT_TO_REAL()  →  REAL#16777216.0  →  Präzisionsverl
 **Lösung:** Bei Werten ≥ 16.777.216 `LREAL` statt `REAL` verwenden:
 
 ```iecst
-UDINT#16777216  →  UDINT_TO_LREAL()  →  LREAL#16777216.0  ✓
+UDINT#16777217  →  UDINT_TO_LREAL()  →  LREAL#16777217.0  ✓
 ```
 
 Dies betrifft insbesondere:

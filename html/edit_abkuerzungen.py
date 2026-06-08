@@ -99,7 +99,7 @@ def modify_data(data):
            "SINT", "STRING", "TIME", "TIME_OF_DAY", "UDINT", "UINT", "ULINT", 
            "USINT", "WCHAR", "WORD", "WSTRING", "CAN_MSG"]
     for dt in dts:
-        link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/pgn/CAN_MSG.html' if dt == "CAN_MSG" else f'{dt_base_url}{dt}/{dt}_Detail.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/pgn/CAN_MSG.html' if dt == "CAN_MSG" else f'{dt_base_url}{dt}/{dt}.html'
         mean = "Datentyp (2 Bit / 4 Zustände)" if dt == "QUARTER" else ("Strukturierte CAN-Nachricht" if dt == "CAN_MSG" else f"Standard-Datentyp {dt}")
         update_or_add(cat_types, {"term": dt, "link": link, "type": get_type_for_dt(dt), "mean": mean})
 
@@ -261,6 +261,259 @@ def modify_data(data):
         if term == "Q_NumericValue": ex = "Uebung_009, Uebung_010..." 
         
         update_or_add(cat_isobus, {"term": term, "link": link, "mean": mean, "title": f"ISOBUS UT Command: {mean}", "type": "io", "ex": ex})
+
+    # 13. New Event Types (cat_events)
+    cat_events = find_category(data, 'cat_events')
+    new_event_types = [
+        ("E_D_FF_ANY", "Generic D-Flip-Flop (any data type)"),
+        ("E_D_FF_ANY_TMIN", "D-Flip-Flop with minimum time"),
+        ("E_D_FF_TMIN", "D-Flip-Flop with minimum time (BOOL)"),
+        ("E_REND_2", "2-channel event distributor"),
+        ("E_REND_3", "3-channel event distributor"),
+        ("E_RF_TRIG", "R-Falling edge trigger"),
+        ("E_TMIN", "Minimum time event"),
+        ("E_BLINK", "Blinking event generator"),
+        ("E_CALIBRATE", "Calibration event"),
+    ]
+    for term, mean in new_event_types:
+        link = f'{base_url}Bibliotheken/StandardLibraries/events/{term}.html'
+        update_or_add(cat_events, {"term": term, "link": link, "mean": mean, "type": "event"})
+
+    # 14. New Flip-Flop Types (cat_flipflop)
+    cat_ff = find_category(data, 'cat_flipflop')
+    new_ff_types = [
+        ("FB_RS_T_FF", "RS-bistable T-Flip-Flop", ""),
+        ("FB_SR_T_FF", "SR-bistable T-Flip-Flop", ""),
+        ("FB_T_FF", "Toggle Flip-Flop", ""),
+        ("AX_FB_RS_T_FF", "Adapter RS-bistable T-Flip-Flop", "adapter"),
+        ("AX_FB_SR_T_FF", "Adapter SR-bistable T-Flip-Flop", "adapter"),
+        ("AX_FB_T_FF", "Adapter Toggle Flip-Flop", "adapter"),
+    ]
+    for term, mean, t in new_ff_types:
+        path = "ExternalLibraries/adapter/iec61131/bistableElements" if term.startswith("AX_FB") else "StandardLibraries/iec61131-3/bistableElements"
+        link = f'{base_url}Bibliotheken/{path}/{term}.html'
+        update_or_add(cat_ff, {"term": term, "link": link, "mean": mean, "type": t or "event"})
+
+    # 15. New Counter Adapter Types (cat_counters)
+    cat_counters = find_category(data, 'cat_counters')
+    counter_adapter_types = [
+        ("ADI_FB_CTD", "Adapter Down Counter (DINT)", "adapter"),
+        ("ADI_FB_CTU", "Adapter Up Counter (DINT)", "adapter"),
+        ("ADI_FB_CTUD", "Adapter Up/Down Counter (DINT)", "adapter"),
+        ("AI_FB_CTD", "Adapter Down Counter (INT)", "adapter"),
+        ("AI_FB_CTU", "Adapter Up Counter (INT)", "adapter"),
+        ("AI_FB_CTUD", "Adapter Up/Down Counter (INT)", "adapter"),
+        ("ALI_FB_CTD", "Adapter Down Counter (LINT)", "adapter"),
+        ("ALI_FB_CTU", "Adapter Up Counter (LINT)", "adapter"),
+        ("ALI_FB_CTUD", "Adapter Up/Down Counter (LINT)", "adapter"),
+        ("AUDI_FB_CTD", "Adapter Down Counter (UDINT)", "adapter"),
+        ("AUDI_FB_CTU", "Adapter Up Counter (UDINT)", "adapter"),
+        ("AUDI_FB_CTUD", "Adapter Up/Down Counter (UDINT)", "adapter"),
+        ("AULI_FB_CTD", "Adapter Down Counter (ULINT)", "adapter"),
+        ("AULI_FB_CTU", "Adapter Up Counter (ULINT)", "adapter"),
+        ("AULI_FB_CTUD", "Adapter Up/Down Counter (ULINT)", "adapter"),
+    ]
+    for term, mean, t in counter_adapter_types:
+        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/iec61131/counters/{term}.html'
+        update_or_add(cat_counters, {"term": term, "link": link, "mean": mean, "type": t})
+
+    # 16. New Logic / Utility Types (cat_logic)
+    cat_logic = find_category(data, 'cat_logic')
+    new_logic_types = [
+        ("F_NOT_BOOL_INIT", "BOOL NOT with INIT", ""),
+        ("NOOP", "No Operation", ""),
+        ("F_MUX_32", "32-channel Multiplexer", ""),
+        ("DWORDS_TO_ARR08B", "DWORD array to BYTE array", ""),
+        ("NumericObjectPool_S", "Numeric Object Pool (String)", ""),
+        ("SET_REAL", "Set REAL value", ""),
+        ("sequence_B_08_AX_AX", "Binary sequence 8 steps (AX adapter)", "adapter"),
+        ("FB_MM710_IMU", "Bosch MM710 IMU sensor", ""),
+        ("hsv2rgb", "HSV to RGB color conversion", ""),
+        ("strip_set_pixel", "LED strip set pixel", ""),
+        ("LOG_16", "16-channel logic gate", ""),
+        ("FB_CTUD_UDINT", "Up/Down Counter (UDINT)", ""),
+    ]
+    for term, mean, t in new_logic_types:
+        lib = "ExternalLibraries/adapter" if t == "adapter" else "StandardLibraries"
+        path = f"{lib}/utils" if not term.startswith("FB_") and term != "F_MUX_32" and term != "F_NOT_BOOL_INIT" else f"{lib}/iec61131-3"
+        if term == "FB_MM710_IMU": path = "ExternalLibraries/logiBUS/sensors"
+        if term in ("hsv2rgb", "strip_set_pixel"): path = "ExternalLibraries/logiBUS/utils"
+        link = f'{base_url}Bibliotheken/{path}/{term}.html'
+        update_or_add(cat_logic, {"term": term, "link": link, "mean": mean, "type": t})
+
+    # 17. New Adapter Conversion Types (cat_adapter)
+    cat_adapter = find_category(data, 'cat_adapter')
+    conversion_adapters = [
+        ("AB_TO_AUDI", "BYTE adapter to UDINT adapter"),
+        ("AD_TO_AR", "DWORD adapter to REAL adapter"),
+        ("ADI_TO_ALR", "DINT adapter to LREAL adapter"),
+        ("ADI_TO_AUDI", "DINT adapter to UDINT adapter"),
+        ("AI_TO_AR", "INT adapter to REAL adapter"),
+        ("AI_TO_AUDI", "INT adapter to UDINT adapter"),
+        ("ALI_TO_ALR", "LINT adapter to LREAL adapter"),
+        ("ALI_TO_AUDI", "LINT adapter to UDINT adapter"),
+        ("AS_TO_AUDI", "SINT adapter to UDINT adapter"),
+        ("AUDI_TO_ALR", "UDINT adapter to LREAL adapter"),
+        ("AUDI_TO_AR", "UDINT adapter to REAL adapter"),
+        ("AUI_TO_AUDI", "UINT adapter to UDINT adapter"),
+        ("AULI_TO_ALR", "ULINT adapter to LREAL adapter"),
+        ("AULI_TO_AUDI", "ULINT adapter to UDINT adapter"),
+    ]
+    for term, mean in conversion_adapters:
+        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/conversion/{term}.html'
+        update_or_add(cat_adapter, {"term": term, "link": link, "mean": mean, "type": "adapter"})
+
+    # 18. New Adapter Signal Processing / Arithmetic Types (cat_adapter)
+    signal_adapters = [
+        ("AR_CALIBRATE", "REAL adapter calibration"),
+        ("AR_SPLIT_2", "REAL adapter split into 2"),
+        ("AUDI_SPLIT_2", "UDINT adapter split into 2"),
+        ("AUI_CTU", "UINT adapter up counter"),
+        ("AUI_D_FF_HYS", "UINT D-Flip-Flop with hysteresis"),
+        ("AUI_D_FF_HYS_TMIN", "UINT D-FF with hysteresis and min time"),
+        ("AUI_D_FF_TMIN", "UINT D-FF with min time"),
+        ("AUI_SPLIT_2", "UINT adapter split into 2"),
+        ("ATM_AX_TON", "Adapter timer TON (AX)"),
+        ("AR_ADD_2", "REAL adapter add 2"),
+        ("AR_MULTIME", "REAL adapter multiply"),
+        ("AUDI_ADD_2", "UDINT adapter add 2"),
+        ("AD_SHL", "DWORD adapter shift left"),
+        ("AX_NOT_INIT", "AX adapter NOT INIT"),
+        ("AX_RF_TRIG", "AX R-Falling edge trigger"),
+        ("AX_T_FF_INIT", "AX T-Flip-Flop with INIT"),
+        ("AX_T_FF_SR_SYM_STORE", "AX T-FF SR symmetric store"),
+        ("ASSEMBLE_AB_FROM_AX", "Assemble BYTE adapter from AX"),
+        ("SPLIT_AB_INTO_AX", "Split BYTE adapter into AX"),
+        ("AUI_AX_SEL_AUI", "UINT adapter select (AX)"),
+        ("AX_FB_R_IO", "AX R-IO adapter"),
+    ]
+    for term, mean in signal_adapters:
+        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/utils/{term}.html'
+        if "TON" in term: link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/iec61131/timers/{term}.html'
+        if term in ("AR_ADD_2", "AR_MULTIME", "AUDI_ADD_2", "AD_SHL"): link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/arithmetic/{term}.html'
+        update_or_add(cat_adapter, {"term": term, "link": link, "mean": mean, "type": "adapter"})
+
+    # 19. New Hardware IO Adapter Types (cat_hw)
+    cat_hw = find_category(data, 'cat_hw')
+    new_hw_types = [
+        ("logiBUS_AI_IDA", "Analog input with ID adapter"),
+        ("logiBUS_IBA", "Byte input with adapter"),
+        ("logiBUS_IDA", "DWORD input with adapter"),
+        ("logiBUS_IEA", "Event input with adapter"),
+        ("logiBUS_QDA_PWM", "DWORD output PWM with adapter"),
+    ]
+    for term, mean in new_hw_types:
+        link = f'{base_url}Bibliotheken/ExternalLibraries/logiBUS/io/{term}.html'
+        update_or_add(cat_hw, {"term": term, "link": link, "mean": mean, "type": "io"})
+
+    # 20. New ISOBUS TECU and NumericValue Adapter Types (cat_isobus)
+    new_isobus_types = [
+        ("IA_GBSD", "ISOBUS TECU GBSD adapter"),
+        ("IA_Lighting", "ISOBUS TECU Lighting adapter"),
+        ("IA_MSS", "ISOBUS TECU MSS adapter"),
+        ("IA_RPTO", "ISOBUS TECU RPTO adapter"),
+        ("IA_VDS", "ISOBUS TECU VDS adapter"),
+        ("IA_WBSD", "ISOBUS TECU WBSD adapter"),
+        ("NumericValue_PHYS", "Numeric Value with physical unit"),
+        ("NumericValue_PHYSA", "Numeric Value with physical unit (adapter)"),
+        ("StringValue_AIS", "String Value (AIS adapter)"),
+        ("StringValue_IS", "String Value (IS adapter)"),
+        ("Q_NumericValue_PHYS", "Change Numeric Value (physical)"),
+        ("Q_NumericValue_PHYS_LREAL", "Change Numeric Value (physical, LREAL)"),
+        ("Q_NumericValue_PHYSA", "Change Numeric Value (physical adapter)"),
+        ("Q_NumericValue_PHYSA_LREAL", "Change Numeric Value (physical adapter, LREAL)"),
+        ("Q_ObjHideShow_AX", "Hide/Show Object (AX adapter)"),
+        ("Q_StringValue_AIS", "Change String Value (AIS adapter)"),
+    ]
+    for term, mean in new_isobus_types:
+        link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/UT/{term}.html'
+        if term.startswith("IA_"): link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/TECU/{term}.html'
+        update_or_add(cat_isobus, {"term": term, "link": link, "mean": mean, "type": "io", "title": f"ISOBUS: {mean}"})
+
+    # 21. Add Interlock Category (cat_interlock)
+    cat_interlock = find_category(data, 'cat_interlock')
+    if not cat_interlock:
+        cat_interlock = {"id": "cat_interlock", "title": "Interlock (Verriegelung)", "data": []}
+        data['categories'].append(cat_interlock)
+
+    interlock_types = [
+        ("ILOCK_2_E", "2-event interlock"),
+        ("ILOCK_2_E_AX", "2-event interlock (AX adapter)", "adapter"),
+        ("ILOCK_BLOCK", "Interlock block"),
+        ("ILOCK_BLOCK_AX", "Interlock block (AX adapter)", "adapter"),
+        ("ILOCK_BLOCK_PROTECT", "Interlock block protected"),
+        ("ILOCK_BLOCK_PROTECT_AX", "Interlock block protected (AX adapter)", "adapter"),
+        ("ILOCK_CONFLICT_TRIP", "Interlock conflict trip"),
+        ("ILOCK_CONFLICT_TRIP_AX", "Interlock conflict trip (AX adapter)", "adapter"),
+        ("ILOCK_FB_RS", "Interlock RS flip-flop"),
+        ("ILOCK_FB_RS_AX", "Interlock RS flip-flop (AX adapter)", "adapter"),
+        ("ILOCK_FB_SR", "Interlock SR flip-flop"),
+        ("ILOCK_FB_SR_AX", "Interlock SR flip-flop (AX adapter)", "adapter"),
+        ("ILOCK_IO", "Interlock I/O"),
+        ("ILOCK_IO_AX", "Interlock I/O (AX adapter)", "adapter"),
+        ("ILOCK_SWITCH", "Interlock switch"),
+        ("ILOCK_SWITCH_AX", "Interlock switch (AX adapter)", "adapter"),
+        ("ILOCK_SWITCH_PROTECT", "Interlock switch protected"),
+        ("ILOCK_SWITCH_PROTECT_AX", "Interlock switch protected (AX adapter)", "adapter"),
+        ("ILOCK_T_FF", "Interlock T flip-flop"),
+        ("ILOCK_T_FF_AX", "Interlock T flip-flop (AX adapter)", "adapter"),
+    ]
+    for entry in interlock_types:
+        term = entry[0]
+        mean = entry[1]
+        t = entry[2] if len(entry) > 2 else ""
+        link = f'{base_url}Bibliotheken/ExternalLibraries/logiBUS/signalprocessing/interlock/{term}.html'
+        detected = "adapter" if t == "adapter" else ("event" if term.startswith("E_") else "io")
+        update_or_add(cat_interlock, {"term": term, "link": link, "mean": mean, "type": detected})
+
+    # 22. Add Storage Category (cat_storage)
+    cat_storage = find_category(data, 'cat_storage')
+    if not cat_storage:
+        cat_storage = {"id": "cat_storage", "title": "Speicher (Storage)", "data": []}
+        data['categories'].append(cat_storage)
+
+    storage_types = [
+        ("INI_AIS", "INI storage (AIS adapter)"),
+        ("INI_AR", "INI storage (REAL adapter)"),
+        ("INI_AR2", "INI storage (REAL adapter 2)"),
+        ("INI_AUDI", "INI storage (UDINT adapter)"),
+        ("INI_AX2", "INI storage (AX2 adapter)"),
+        ("NVS_AIS", "NVS storage (AIS adapter)"),
+        ("NVS_AR", "NVS storage (REAL adapter)"),
+        ("NVS_AR2", "NVS storage (REAL adapter 2)"),
+        ("NVS_AUDI", "NVS storage (UDINT adapter)"),
+        ("NVS_AX2", "NVS storage (AX2 adapter)"),
+        ("NVS_IN_AND_STORE_AIS", "NVS input and store (AIS)"),
+        ("NVS_IN_AND_STORE_AR", "NVS input and store (REAL)"),
+        ("NVS_IN_AND_STORE_AUDI", "NVS input and store (UDINT)"),
+        ("INI_IN_AND_STORE_AIS", "INI input and store (AIS)"),
+        ("INI_IN_AND_STORE_AR", "INI input and store (REAL)"),
+        ("INI_IN_AND_STORE_AUDI", "INI input and store (UDINT)"),
+        ("E_CTUD_UDINT", "Event up/down counter (UDINT)"),
+    ]
+    for term, mean in storage_types:
+        lib = "eclipse4diac/storage" if term.startswith("INI") else "logiBUS/storage/esp32_nvs"
+        if term.startswith("E_"): lib = "StandardLibraries/events"
+        link = f'{base_url}Bibliotheken/{lib}/{term}.html'
+        t = "event" if term.startswith("E_") else "adapter"
+        update_or_add(cat_storage, {"term": term, "link": link, "mean": mean, "type": t})
+
+    # 23. New Signal Processing / Hysteresis / Bypass / Fieldbus Types (cat_logic)
+    signal_processing_types = [
+        ("BYPASS_AX_AX", "Bypass (AX to AX)", "adapter"),
+        ("BYPASS_AX_BOOL", "Bypass (AX to BOOL)", "adapter"),
+        ("AX_RangeBasedPulse", "Range-based pulse (AX)", "adapter"),
+        ("AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE", "Fieldbus UINT to signal (compound scale)", "adapter"),
+        ("AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED", "Fieldbus UINT to signal (scaled)", "adapter"),
+        ("FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE", "Fieldbus UINT to signal (compound scale)", ""),
+        ("FIELDBUS_UINT_TO_SIGNAL_SCALED", "Fieldbus UINT to signal (scaled)", ""),
+        ("E_D_FF_ANY_HYS", "D-FF with hysteresis (any type)", "event"),
+        ("E_D_FF_ANY_HYS_TMIN", "D-FF with hysteresis and min time", "event"),
+        ("Hysteresis_AR_AX", "Hysteresis (REAL adapter)", "adapter"),
+    ]
+    for term, mean, t in signal_processing_types:
+        link = f'{base_url}Bibliotheken/ExternalLibraries/logiBUS/signalprocessing/{term}.html'
+        update_or_add(cat_logic, {"term": term, "link": link, "mean": mean, "type": t})
 
     return data
 

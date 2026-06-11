@@ -5,5 +5,7 @@
 
 ```{toctree}
 :maxdepth: 1
+
 CbVtStatus
+GetVtcStatus
 ```

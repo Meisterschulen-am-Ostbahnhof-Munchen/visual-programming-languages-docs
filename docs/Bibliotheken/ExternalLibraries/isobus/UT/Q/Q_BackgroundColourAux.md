@@ -3,7 +3,6 @@
 ```{index} single: Q_BackgroundColourAux
 ```
 
-![Q_BackgroundColourAux](https://github.com/user-attachments/assets/dfa37a79-ba8b-4fe0-bc04-0020e47257ee)
 
 * * * * * * * * * *
 

@@ -5,6 +5,7 @@
 
 ```{toctree}
 :maxdepth: 1
+
 ADDRESS
 BaseMemberExternAdd
 CAN_MSG
@@ -23,6 +24,4 @@ NmSetName
 NmSetNameField
 PgnDef
 USERFUNC_e
-rx/rx_Index
-tx/tx_Index
 ```

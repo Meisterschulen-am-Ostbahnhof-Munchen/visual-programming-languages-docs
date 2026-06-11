@@ -3,7 +3,6 @@
 ```{index} single: I_VDS
 ```
 
-![I_VDS](https://github.com/user-attachments/assets/44a66235-75eb-4315-b30c-478582f14e6e)
 
 * * * * * * * * * *
 

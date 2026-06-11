@@ -3,6 +3,9 @@
 ```{index} single: AuxiliaryState
 ```
 
+
+![AuxiliaryState](./AuxiliaryState.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

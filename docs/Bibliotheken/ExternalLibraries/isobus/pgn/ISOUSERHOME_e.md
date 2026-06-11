@@ -3,6 +3,9 @@
 ```{index} single: ISOUSERHOME_e
 ```
 
+
+![ISOUSERHOME_e](./ISOUSERHOME_e.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

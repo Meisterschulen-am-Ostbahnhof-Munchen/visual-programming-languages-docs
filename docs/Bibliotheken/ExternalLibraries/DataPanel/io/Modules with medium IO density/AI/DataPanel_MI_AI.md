@@ -26,3 +26,5 @@ DataPanel Modules with medium IO density AI constants
 | AnalogInput_8A | DataPanel::io::MI::AI::DataPanel_MI_AI_S | (Pin := 15) |
 | AnalogInput_8B | DataPanel::io::MI::AI::DataPanel_MI_AI_S | (Pin := 16) |
 | Invalid | DataPanel::io::MI::AI::DataPanel_MI_AI_S | (Pin := 255) |
+
+![DataPanel_MI_AI](./DataPanel_MI_AI.svg)

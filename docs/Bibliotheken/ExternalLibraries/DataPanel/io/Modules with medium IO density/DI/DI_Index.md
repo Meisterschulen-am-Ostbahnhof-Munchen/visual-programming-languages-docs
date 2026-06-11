@@ -6,8 +6,13 @@
 
 DataPanel_MI_DI
 DataPanel_MI_DI_S
+DataPanel_MI_ID_ENC
+DataPanel_MI_IW_CNT
+DataPanel_MI_IW_DutyCycle
+DataPanel_MI_IW_FREQ
 DataPanel_MI_IX
 DataPanel_MI_IXA
+DataPanel_MI_IXn
 ```
 
 ## 📺 Video

@@ -9,6 +9,11 @@
 DataPanel_MI_AI
 DataPanel_MI_AI_S
 DataPanel_MI_IW
+DataPanel_MI_IW_0_10V
+DataPanel_MI_IW_0_32V
+DataPanel_MI_IW_0_5V
+DataPanel_MI_IW_4_20mA
+DataPanel_MI_IW_Ratio
 ```
 
 ## 📺 Video

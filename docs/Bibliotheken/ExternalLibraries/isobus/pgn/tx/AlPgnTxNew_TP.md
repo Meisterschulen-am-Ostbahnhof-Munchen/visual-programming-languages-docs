@@ -1,9 +1,7 @@
 # AlPgnTxNew_TP
 
-![AlPgnTxNew_TP](AlPgnTxNew_TP.png)
 
 
-![AlPgnTxNew_TP](.././AlPgnTxNew_TP.svg)
 
 * * * * * * * * * *
 

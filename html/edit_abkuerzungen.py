@@ -99,7 +99,7 @@ def modify_data(data):
            "SINT", "STRING", "TIME", "TIME_OF_DAY", "UDINT", "UINT", "ULINT", 
            "USINT", "WCHAR", "WORD", "WSTRING", "CAN_MSG"]
     for dt in dts:
-        link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/pgn/CAN_MSG.html' if dt == "CAN_MSG" else f'{dt_base_url}{dt}/{dt}.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/pgn/CAN_MSG/' if dt == "CAN_MSG" else f'{dt_base_url}{dt}/'
         mean = "Datentyp (2 Bit / 4 Zustände)" if dt == "QUARTER" else ("Strukturierte CAN-Nachricht" if dt == "CAN_MSG" else f"Standard-Datentyp {dt}")
         update_or_add(cat_types, {"term": dt, "link": link, "type": get_type_for_dt(dt), "mean": mean})
 
@@ -111,7 +111,7 @@ def modify_data(data):
         ("AE", "EVENT"), ("ASR", "EVENT"), ("A2X", "BOOL")
     ]
     for term, dtype in adapters:
-        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/types/unidirectional/{dtype}/{term}.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/types/unidirectional/{dtype}/{term}/'
         update_or_add(cat_adapter, {"term": term, "link": link, "type": "adapter"})
 
     # 4. IO Blocks (cat_hw)
@@ -124,7 +124,7 @@ def modify_data(data):
         ("ID", "Uebung_011, Uebung_012, Uebung_034, Uebung_060, Uebung_103"), ("QD", "Uebung_060"), ("IL", ""), ("QL", "")
     ]
     for term, ex in io_defs:
-        link = f'{base_url}Bibliotheken/StandardLibraries/io/{term}.html'
+        link = f'{base_url}Bibliotheken/StandardLibraries/io/{term}/'
         update_or_add(cat_hw, {"term": term, "link": link, "type": "io", "ex": ex})
 
     # 5. Timers (cat_timer)
@@ -137,7 +137,7 @@ def modify_data(data):
         ("AX_TON", "adapter", "Uebung_020c_AX"), ("AX_TONOF", "adapter", "Uebung_020g_AX"), ("AX_TOF", "adapter", "Uebung_020e_AX"), ("AX_PULSE", "adapter", "Uebung_020h_AX, Uebung_020i_AX")
     ]
     for term, t, ex in timers:
-        link = f'{base_url}Bibliotheken/{"ExternalLibraries/adapter/iec61131" if term.startswith("AX_FB") else ("ExternalLibraries/adapter/events/unidirectional" if term.startswith("AX_") else ("StandardLibraries/iec61131-3" if term.startswith("FB_") else "StandardLibraries/events"))}/timers/{term}.html'
+        link = f'{base_url}Bibliotheken/{"ExternalLibraries/adapter/iec61131" if term.startswith("AX_FB") else ("ExternalLibraries/adapter/events/unidirectional" if term.startswith("AX_") else ("StandardLibraries/iec61131-3" if term.startswith("FB_") else "StandardLibraries/events"))}/timers/{term}/'
         update_or_add(cat_timer, {"term": term, "link": link, "type": t, "ex": ex})
 
     # 6. Flip-Flops (cat_flipflop)
@@ -151,8 +151,8 @@ def modify_data(data):
     ]
     for term, t, ex in ffs:
         path = "StandardLibraries/iec61131-3/bistableElements" if term.startswith("FB_") else ("ExternalLibraries/adapter/events/unidirectional" if term.startswith("AX_") else "StandardLibraries/events")
-        link = f'{base_url}Bibliotheken/{path}/{term}.html'
-        if term == "AX_SR": link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/events/unidirectional/ASR_AX_SR.html'
+        link = f'{base_url}Bibliotheken/{path}/{term}/'
+        if term == "AX_SR": link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/events/unidirectional/ASR_AX_SR/'
         update_or_add(cat_ff, {"term": term, "link": link, "type": t, "ex": ex})
 
     # 7. Sequences (cat_sequence)
@@ -168,13 +168,13 @@ def modify_data(data):
                 
                 group = "event" if t == "E" else ("timed" if t == "T" else "combi")
                 lib = "ExternalLibraries/logiBUS" if "AX" in suffix else "StandardLibraries"
-                link = f'{base_url}Bibliotheken/{lib}/utils/sequence-control/{group}/{term}.html'
-                if "AX" in suffix: link = f'{base_url}Bibliotheken/{lib}/utils/sequence/{group}/{term}.html'
+                link = f'{base_url}Bibliotheken/{lib}/utils/sequence-control/{group}/{term}/'
+                if "AX" in suffix: link = f'{base_url}Bibliotheken/{lib}/utils/sequence/{group}/{term}/'
                 update_or_add(cat_sequence, {"term": term, "link": link, "ex": ex})
 
     # Special Sequences
-    update_or_add(cat_sequence, {"term": "sequence_ET_04_04", "link": f"{base_url}Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_04.html", "type": "sequence"})
-    update_or_add(cat_sequence, {"term": "sequence_ET_04_04_AX", "link": f"{base_url}Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_04_AX.html", "type": "adapter"})
+    update_or_add(cat_sequence, {"term": "sequence_ET_04_04", "link": f"{base_url}Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_04/", "type": "sequence"})
+    update_or_add(cat_sequence, {"term": "sequence_ET_04_04_AX", "link": f"{base_url}Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/combi/sequence_ET_04_04_AX/", "type": "adapter"})
 
     # 8. MUX/DEMUX & Logic
     cat_logic = find_category(data, 'cat_logic')
@@ -191,10 +191,10 @@ def modify_data(data):
         (cat_logic, "SPLIT_BYTE_INTO_BOOLS", "StandardLibraries/utils/splitting", "", "Uebung_053")
     ]
     for cat, term, path, t, ex in muxs:
-        update_or_add(cat, {"term": term, "link": f'{base_url}Bibliotheken/{path}/{term}.html', "type": t, "ex": ex})
+        update_or_add(cat, {"term": term, "link": f'{base_url}Bibliotheken/{path}/{term}/', "type": t, "ex": ex})
 
     # Update E_STOPWATCH link in cat_timer
-    update_or_add(cat_timer, {"term": "E_STOPWATCH", "link": f'{base_url}Bibliotheken/StandardLibraries/utils/timing/E_STOPWATCH.html', "type": "event", "ex": "Uebung_020i"})
+    update_or_add(cat_timer, {"term": "E_STOPWATCH", "link": f'{base_url}Bibliotheken/StandardLibraries/utils/timing/E_STOPWATCH/', "type": "event", "ex": "Uebung_020i"})
 
     # 9. Final type fix for all
     for category in data.get('categories', []):
@@ -254,12 +254,10 @@ def modify_data(data):
                 cat['data'].remove(existing)
         
         # 2. Add/Update in cat_isobus
-        link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/UT/Q/{term}.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/UT/Q/{term}/'
         # Check specific exercises (simplified map, or let scan find them next time)
         # Using a few known ones
         ex = ""
-        if term == "Q_NumericValue": ex = "Uebung_009, Uebung_010..." 
-        
         update_or_add(cat_isobus, {"term": term, "link": link, "mean": mean, "title": f"ISOBUS UT Command: {mean}", "type": "io", "ex": ex})
 
     # 13. New Event Types (cat_events)
@@ -276,7 +274,7 @@ def modify_data(data):
         ("E_CALIBRATE", "Calibration event"),
     ]
     for term, mean in new_event_types:
-        link = f'{base_url}Bibliotheken/StandardLibraries/events/{term}.html'
+        link = f'{base_url}Bibliotheken/StandardLibraries/events/{term}/'
         update_or_add(cat_events, {"term": term, "link": link, "mean": mean, "type": "event"})
 
     # 14. New Flip-Flop Types (cat_flipflop)
@@ -291,7 +289,7 @@ def modify_data(data):
     ]
     for term, mean, t in new_ff_types:
         path = "ExternalLibraries/adapter/iec61131/bistableElements" if term.startswith("AX_FB") else "StandardLibraries/iec61131-3/bistableElements"
-        link = f'{base_url}Bibliotheken/{path}/{term}.html'
+        link = f'{base_url}Bibliotheken/{path}/{term}/'
         update_or_add(cat_ff, {"term": term, "link": link, "mean": mean, "type": t or "event"})
 
     # 15. New Counter Adapter Types (cat_counters)
@@ -314,7 +312,7 @@ def modify_data(data):
         ("AULI_FB_CTUD", "Adapter Up/Down Counter (ULINT)", "adapter"),
     ]
     for term, mean, t in counter_adapter_types:
-        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/iec61131/counters/{term}.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/iec61131/counters/{term}/'
         update_or_add(cat_counters, {"term": term, "link": link, "mean": mean, "type": t})
 
     # 16. New Logic / Utility Types (cat_logic)
@@ -338,7 +336,7 @@ def modify_data(data):
         path = f"{lib}/utils" if not term.startswith("FB_") and term != "F_MUX_32" and term != "F_NOT_BOOL_INIT" else f"{lib}/iec61131-3"
         if term == "FB_MM710_IMU": path = "ExternalLibraries/logiBUS/sensors"
         if term in ("hsv2rgb", "strip_set_pixel"): path = "ExternalLibraries/logiBUS/utils"
-        link = f'{base_url}Bibliotheken/{path}/{term}.html'
+        link = f'{base_url}Bibliotheken/{path}/{term}/'
         update_or_add(cat_logic, {"term": term, "link": link, "mean": mean, "type": t})
 
     # 17. New Adapter Conversion Types (cat_adapter)
@@ -360,7 +358,7 @@ def modify_data(data):
         ("AULI_TO_AUDI", "ULINT adapter to UDINT adapter"),
     ]
     for term, mean in conversion_adapters:
-        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/conversion/{term}.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/conversion/{term}/'
         update_or_add(cat_adapter, {"term": term, "link": link, "mean": mean, "type": "adapter"})
 
     # 18. New Adapter Signal Processing / Arithmetic Types (cat_adapter)
@@ -388,9 +386,9 @@ def modify_data(data):
         ("AX_FB_R_IO", "AX R-IO adapter"),
     ]
     for term, mean in signal_adapters:
-        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/utils/{term}.html'
-        if "TON" in term: link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/iec61131/timers/{term}.html'
-        if term in ("AR_ADD_2", "AR_MULTIME", "AUDI_ADD_2", "AD_SHL"): link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/arithmetic/{term}.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/utils/{term}/'
+        if "TON" in term: link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/iec61131/timers/{term}/'
+        if term in ("AR_ADD_2", "AR_MULTIME", "AUDI_ADD_2", "AD_SHL"): link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/arithmetic/{term}/'
         update_or_add(cat_adapter, {"term": term, "link": link, "mean": mean, "type": "adapter"})
 
     # 19. New Hardware IO Adapter Types (cat_hw)
@@ -403,7 +401,7 @@ def modify_data(data):
         ("logiBUS_QDA_PWM", "DWORD output PWM with adapter"),
     ]
     for term, mean in new_hw_types:
-        link = f'{base_url}Bibliotheken/ExternalLibraries/logiBUS/io/{term}.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/logiBUS/io/{term}/'
         update_or_add(cat_hw, {"term": term, "link": link, "mean": mean, "type": "io"})
 
     # 20. New ISOBUS TECU and NumericValue Adapter Types (cat_isobus)
@@ -426,8 +424,8 @@ def modify_data(data):
         ("Q_StringValue_AIS", "Change String Value (AIS adapter)"),
     ]
     for term, mean in new_isobus_types:
-        link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/UT/{term}.html'
-        if term.startswith("IA_"): link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/TECU/{term}.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/UT/{term}/'
+        if term.startswith("IA_"): link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/TECU/{term}/'
         update_or_add(cat_isobus, {"term": term, "link": link, "mean": mean, "type": "io", "title": f"ISOBUS: {mean}"})
 
     # 21. Add Interlock Category (cat_interlock)
@@ -462,7 +460,7 @@ def modify_data(data):
         term = entry[0]
         mean = entry[1]
         t = entry[2] if len(entry) > 2 else ""
-        link = f'{base_url}Bibliotheken/ExternalLibraries/logiBUS/signalprocessing/interlock/{term}.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/logiBUS/signalprocessing/interlock/{term}/'
         detected = "adapter" if t == "adapter" else ("event" if term.startswith("E_") else "io")
         update_or_add(cat_interlock, {"term": term, "link": link, "mean": mean, "type": detected})
 
@@ -494,7 +492,7 @@ def modify_data(data):
     for term, mean in storage_types:
         lib = "eclipse4diac/storage" if term.startswith("INI") else "logiBUS/storage/esp32_nvs"
         if term.startswith("E_"): lib = "StandardLibraries/events"
-        link = f'{base_url}Bibliotheken/{lib}/{term}.html'
+        link = f'{base_url}Bibliotheken/{lib}/{term}/'
         t = "event" if term.startswith("E_") else "adapter"
         update_or_add(cat_storage, {"term": term, "link": link, "mean": mean, "type": t})
 
@@ -512,7 +510,7 @@ def modify_data(data):
         ("Hysteresis_AR_AX", "Hysteresis (REAL adapter)", "adapter"),
     ]
     for term, mean, t in signal_processing_types:
-        link = f'{base_url}Bibliotheken/ExternalLibraries/logiBUS/signalprocessing/{term}.html'
+        link = f'{base_url}Bibliotheken/ExternalLibraries/logiBUS/signalprocessing/{term}/'
         update_or_add(cat_logic, {"term": term, "link": link, "mean": mean, "type": t})
 
     return data
@@ -527,7 +525,7 @@ def make_exercises_clickable(data):
                 for ex in exercises:
                     if not ex: continue
                     path = "test_AX/Uebungen_doc/" if '_AX' in ex else "test_B/Uebungen_doc/"
-                    links.append(f'<a href="{ex_base_url}{path}{ex}.html" target="_blank">{ex}</a>')
+                    links.append(f'<a href="{ex_base_url}{path}{ex}/" target="_blank">{ex}</a>')
                 item['ex'] = ', '.join(links)
     return data
 

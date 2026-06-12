@@ -1,7 +1,6 @@
 # F_SEL_E_2
 
-```{index} single: F_SEL_E_2
-```
+
 
 ![F_SEL_E_2](https://github.com/user-attachments/assets/01359d6b-dfd8-4397-ab2d-a78e7f4e6168)
 

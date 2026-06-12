@@ -1,7 +1,6 @@
 # Datentyp-Detail: UINT
 
-```{index} single: Datentyp-Detail: UINT
-```
+
 
 ## Beschreibung
 Vorzeichenlose ganze Zahl

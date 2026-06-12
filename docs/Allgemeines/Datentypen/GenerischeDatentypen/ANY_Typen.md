@@ -1,9 +1,7 @@
 # Generische Datentypen (ANY-Typen)
 
-```{index} single: Datentypen; Generische
-```
-```{index} single: ANY-Typen
-```
+
+
 
 In der Norm DIN EN 61131-3 werden generische Datentypen (auch als "allgemeine" Datentypen bezeichnet) verwendet, um Funktionen und Funktionsbausteine zu definieren, die mit verschiedenen, aber verwandten Datentypen arbeiten können (Überladen). Diese Typen werden durch das Präfix `ANY` gekennzeichnet.
 

@@ -1,7 +1,6 @@
 # Numerischer Index (unidirectional)
 
-```{index} single: Numerischer Index (unidirectional)
-```
+
 
 
 

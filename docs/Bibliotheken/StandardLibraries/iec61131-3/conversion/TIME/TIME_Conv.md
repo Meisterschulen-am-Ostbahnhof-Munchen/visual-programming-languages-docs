@@ -1,7 +1,6 @@
 # TIME Konvertierungen
 
-```{index} single: TIME Konvertierungen
-```
+
 
 
 

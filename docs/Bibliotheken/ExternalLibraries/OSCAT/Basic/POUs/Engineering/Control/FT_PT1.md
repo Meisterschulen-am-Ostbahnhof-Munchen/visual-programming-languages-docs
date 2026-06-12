@@ -2,8 +2,7 @@
 
 # FT_PT1
 
-```{index} single: FT_PT1
-```
+
 
 Low Pass Filter (PT1)
 

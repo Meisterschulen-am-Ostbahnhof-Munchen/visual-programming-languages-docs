@@ -1,5 +1,4 @@
 # eIO
 
-```{index} single: eIO
-```
+
 

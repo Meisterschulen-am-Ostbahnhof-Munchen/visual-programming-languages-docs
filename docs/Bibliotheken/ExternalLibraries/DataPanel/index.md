@@ -1,5 +1,4 @@
 # DataPanel
 
-```{index} single: DataPanel
-```
+
 

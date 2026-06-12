@@ -1,7 +1,6 @@
 # OUT
 
-```{index} single: OUT
-```
+
 
 
 

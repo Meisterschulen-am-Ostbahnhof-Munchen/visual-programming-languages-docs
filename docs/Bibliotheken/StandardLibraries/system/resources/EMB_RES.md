@@ -1,7 +1,6 @@
 # EMB_RES
 
-```{index} single: EMB_RES
-```
+
 
 * * * * * * * * * *
 

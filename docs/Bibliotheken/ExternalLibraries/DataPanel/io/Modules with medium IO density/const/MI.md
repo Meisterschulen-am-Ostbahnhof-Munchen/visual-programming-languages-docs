@@ -1,7 +1,6 @@
 # MI
 
-```{index} single: MI
-```
+
 ## 🎧 Podcast
 
 

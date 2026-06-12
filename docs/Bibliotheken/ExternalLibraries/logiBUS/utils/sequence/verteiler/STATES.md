@@ -1,7 +1,6 @@
 # STATES
 
-```{index} single: STATES
-```
+
 
 
 ![STATES](./STATES.svg)

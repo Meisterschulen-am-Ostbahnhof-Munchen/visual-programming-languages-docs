@@ -1,7 +1,6 @@
 # Zeichenketten Funktionen
 
-```{index} single: Zeichenketten Funktionen
-```
+
 
 
 

@@ -1,7 +1,6 @@
 # I_MSS
 
-```{index} single: I_MSS
-```
+
 
 
 * * * * * * * * * *

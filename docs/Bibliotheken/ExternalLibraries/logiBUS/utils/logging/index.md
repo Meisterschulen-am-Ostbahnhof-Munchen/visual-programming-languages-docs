@@ -1,5 +1,4 @@
 # logging
 
-```{index} single: logging
-```
+
 

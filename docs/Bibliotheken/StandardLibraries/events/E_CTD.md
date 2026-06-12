@@ -1,7 +1,6 @@
 # E\_CTD
 
-```{index} single: E\_CTD
-```
+
 ## 🎧 Podcast
 
 

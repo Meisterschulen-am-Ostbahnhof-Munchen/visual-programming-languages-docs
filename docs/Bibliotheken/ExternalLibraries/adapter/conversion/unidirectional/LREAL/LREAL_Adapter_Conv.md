@@ -1,7 +1,6 @@
 # LREAL Conversion
 
-```{index} single: LREAL Conversion
-```
+
 
 
 

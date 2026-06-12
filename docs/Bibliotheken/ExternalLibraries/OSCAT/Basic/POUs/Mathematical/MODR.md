@@ -1,7 +1,6 @@
 # MODR
 
-```{index} single: MODR
-```
+
 
 this is a modulo funtion for real numbers
 

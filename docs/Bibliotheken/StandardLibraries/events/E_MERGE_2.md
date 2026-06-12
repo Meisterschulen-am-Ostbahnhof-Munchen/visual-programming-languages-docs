@@ -1,7 +1,6 @@
 # E_MERGE_2
 
-```{index} single: E_MERGE_2
-```
+
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 

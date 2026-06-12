@@ -1,7 +1,6 @@
 # BCD Konvertierungen
 
-```{index} single: BCD Konvertierungen
-```
+
 
 
 

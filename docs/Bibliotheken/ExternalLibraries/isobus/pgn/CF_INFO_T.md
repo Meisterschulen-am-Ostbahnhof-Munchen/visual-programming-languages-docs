@@ -1,7 +1,6 @@
 # CF_INFO_T
 
-```{index} single: CF_INFO_T
-```
+
 
 * * * * * * * * * *
 ## Einleitung

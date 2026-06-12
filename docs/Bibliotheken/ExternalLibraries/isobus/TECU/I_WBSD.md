@@ -1,7 +1,6 @@
 # I_WBSD
 
-```{index} single: I_WBSD
-```
+
 
 
 * * * * * * * * * *

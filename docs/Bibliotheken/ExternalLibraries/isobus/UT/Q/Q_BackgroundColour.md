@@ -1,7 +1,6 @@
 # Q_BackgroundColour
 
-```{index} single: Q_BackgroundColour
-```
+
 
 ![Q_BackgroundColour](https://user-images.githubusercontent.com/113907471/204320542-f628c868-03d7-4d81-9ebb-5cf63d9ce541.png)
 

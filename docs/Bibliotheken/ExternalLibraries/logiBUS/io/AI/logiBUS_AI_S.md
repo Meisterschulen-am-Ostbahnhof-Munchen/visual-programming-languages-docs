@@ -1,7 +1,6 @@
 # logiBUS_AI_S
 
-```{index} single: logiBUS_AI_S
-```
+
 
 * * * * * * * * * *
 ## Einleitung

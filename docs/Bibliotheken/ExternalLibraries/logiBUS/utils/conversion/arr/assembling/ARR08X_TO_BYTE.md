@@ -1,7 +1,6 @@
 # ARR08X_TO_BYTE
 
-```{index} single: ARR08X_TO_BYTE
-```
+
 
 <img width="1176" height="217" alt="image" src="https://github.com/user-attachments/assets/7e2d9580-9a80-4dea-ad4f-4100a7186544" />
 

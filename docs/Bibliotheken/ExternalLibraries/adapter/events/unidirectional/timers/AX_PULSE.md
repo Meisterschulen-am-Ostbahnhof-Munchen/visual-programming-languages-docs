@@ -1,7 +1,6 @@
 # AX_PULSE
 
-```{index} single: AX_PULSE
-```
+
 
 * * * * * * * * * *
 ## Einleitung

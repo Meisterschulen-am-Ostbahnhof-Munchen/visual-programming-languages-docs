@@ -1,7 +1,6 @@
 # Datentyp-Detail: WSTRING
 
-```{index} single: Datentyp-Detail: WSTRING
-```
+
 
 ## Beschreibung
 Der Datentyp **WSTRING** (Wide String) repräsentiert eine Zeichenfolge aus "weiten" Zeichen (16-Bit), üblicherweise im Unicode-Format (UTF-16).

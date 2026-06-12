@@ -1,7 +1,6 @@
 # Numerischer Index (sequence)
 
-```{index} single: Numerischer Index (sequence)
-```
+
 
 
 

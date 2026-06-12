@@ -1,7 +1,6 @@
 # core
 
-```{index} single: core
-```
+
 
 
 

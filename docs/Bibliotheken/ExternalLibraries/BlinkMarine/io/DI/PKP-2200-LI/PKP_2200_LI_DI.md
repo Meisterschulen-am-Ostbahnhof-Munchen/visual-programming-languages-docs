@@ -1,7 +1,6 @@
 # PKP_2200_LI_DI
 
-```{index} single: PKP_2200_LI_DI
-```
+
 
 
 ![PKP_2200_LI_DI](./PKP_2200_LI_DI.svg)

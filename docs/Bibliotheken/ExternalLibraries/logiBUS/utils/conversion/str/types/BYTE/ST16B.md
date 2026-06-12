@@ -1,7 +1,6 @@
 # ST16B
 
-```{index} single: ST16B
-```
+
 
 * * * * * * * * * *
 ## Einleitung

@@ -1,7 +1,6 @@
 # USINT Konvertierungen
 
-```{index} single: USINT Konvertierungen
-```
+
 
 
 

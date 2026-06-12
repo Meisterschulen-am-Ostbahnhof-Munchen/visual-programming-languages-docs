@@ -2,6 +2,5 @@
 
 # eliteboard
 
-```{index} single: eliteboard
-```
+
 

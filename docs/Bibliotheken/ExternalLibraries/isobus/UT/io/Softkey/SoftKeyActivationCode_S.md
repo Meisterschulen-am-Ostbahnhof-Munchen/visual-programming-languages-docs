@@ -1,7 +1,6 @@
 # SoftKeyActivationCode_S
 
-```{index} single: SoftKeyActivationCode_S
-```
+
 
 * * * * * * * * * *
 ## Einleitung

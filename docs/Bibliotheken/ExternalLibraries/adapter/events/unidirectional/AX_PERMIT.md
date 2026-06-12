@@ -1,7 +1,6 @@
 # AX_PERMIT (Unidirectional Adapter Permit)
 
-```{index} single: AX_PERMIT (Unidirectional Adapter Permit)
-```
+
 
 ## Einleitung
 

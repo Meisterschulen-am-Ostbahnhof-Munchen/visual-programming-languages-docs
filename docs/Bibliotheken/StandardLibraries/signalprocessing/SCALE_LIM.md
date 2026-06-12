@@ -1,7 +1,6 @@
 # SCALE_LIM
 
-```{index} single: SCALE_LIM
-```
+
 
 <img width="951" height="257" alt="SCALE_LIM" src="https://github.com/user-attachments/assets/9cc71e27-9ab8-454a-a6fc-01b86dfde68e" />
 

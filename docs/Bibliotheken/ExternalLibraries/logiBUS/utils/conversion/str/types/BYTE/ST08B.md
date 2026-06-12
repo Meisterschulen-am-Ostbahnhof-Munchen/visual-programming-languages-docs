@@ -1,7 +1,6 @@
 # ST08B
 
-```{index} single: ST08B
-```
+
 
 * * * * * * * * * *
 ## Einleitung

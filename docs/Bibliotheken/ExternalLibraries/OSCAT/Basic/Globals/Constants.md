@@ -1,7 +1,6 @@
 # Constants
 
-```{index} single: Constants
-```
+
 
 Global constants
 

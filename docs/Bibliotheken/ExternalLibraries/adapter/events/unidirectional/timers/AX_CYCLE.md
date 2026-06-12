@@ -1,7 +1,6 @@
 # AX_CYCLE
 
-```{index} single: AX_CYCLE
-```
+
 
 * * * * * * * * * *
 ## Einleitung

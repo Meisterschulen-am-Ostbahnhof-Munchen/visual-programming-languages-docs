@@ -1,7 +1,6 @@
 # logiBUS_PI_S
 
-```{index} single: logiBUS_PI_S
-```
+
 
 * * * * * * * * * *
 ## Einleitung

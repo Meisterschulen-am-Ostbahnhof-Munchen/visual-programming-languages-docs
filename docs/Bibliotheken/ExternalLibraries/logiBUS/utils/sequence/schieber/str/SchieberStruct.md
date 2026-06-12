@@ -1,7 +1,6 @@
 # SchieberStruct
 
-```{index} single: SchieberStruct
-```
+
 
 * * * * * * * * * *
 ## Einleitung

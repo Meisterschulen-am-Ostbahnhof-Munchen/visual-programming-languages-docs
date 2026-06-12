@@ -2,6 +2,5 @@
 
 # GPIOChip
 
-```{index} single: GPIOChip
-```
+
 

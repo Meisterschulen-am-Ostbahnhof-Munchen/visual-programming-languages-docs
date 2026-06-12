@@ -1,5 +1,4 @@
 # combi
 
-```{index} single: combi
-```
+
 

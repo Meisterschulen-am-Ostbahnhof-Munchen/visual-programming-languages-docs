@@ -1,7 +1,6 @@
 # E_SWITCH
 
-```{index} single: E_SWITCH
-```
+
 ## 🎧 Podcast
 
 

@@ -1,7 +1,6 @@
 # Literatur zu IEC 61499
 
-```{index} single: Literatur zu IEC 61499
-```
+
 
 
 

@@ -1,5 +1,4 @@
 # powerlink
 
-```{index} single: powerlink
-```
+
 

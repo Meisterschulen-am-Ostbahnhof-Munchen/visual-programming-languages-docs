@@ -1,5 +1,4 @@
 # 📚 Bibliotheken
 
-```{index} single: Bibliotheken
-```
+
 

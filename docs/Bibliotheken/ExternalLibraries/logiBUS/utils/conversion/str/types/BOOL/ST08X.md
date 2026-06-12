@@ -1,7 +1,6 @@
 # ST08X
 
-```{index} single: ST08X
-```
+
 
 * * * * * * * * * *
 ## Einleitung

@@ -1,7 +1,6 @@
 # Bidirectional BOOL Adapter
 
-```{index} single: Bidirectional BOOL Adapter
-```
+
 
 
 

@@ -1,7 +1,6 @@
 # TEST_CONDITION
 
-```{index} single: TEST_CONDITION
-```
+
 
 ![TEST_CONDITION](https://github.com/user-attachments/assets/4dae2b3c-d1d5-4286-a466-46948ad2a767)
 

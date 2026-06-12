@@ -2,8 +2,7 @@
 
 # BaseMemberExternAdd
 
-```{index} single: BaseMemberExternAdd
-```
+
 
 Adds an external member to the network list manually.
 

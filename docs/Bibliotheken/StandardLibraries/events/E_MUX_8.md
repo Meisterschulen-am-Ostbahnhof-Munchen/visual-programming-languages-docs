@@ -1,7 +1,6 @@
 # E_MUX_8
 
-```{index} single: E_MUX_8
-```
+
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 

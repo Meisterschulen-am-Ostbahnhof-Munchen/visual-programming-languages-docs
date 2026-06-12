@@ -1,7 +1,6 @@
 # colours
 
-```{index} single: colours
-```
+
 
 
 ![colours](./colours.svg)

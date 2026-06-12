@@ -1,7 +1,6 @@
 # Q_BackgroundColourAux
 
-```{index} single: Q_BackgroundColourAux
-```
+
 
 
 * * * * * * * * * *

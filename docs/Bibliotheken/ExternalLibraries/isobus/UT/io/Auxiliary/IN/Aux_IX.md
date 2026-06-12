@@ -1,7 +1,6 @@
 # Aux_IX
 
-```{index} single: Aux_IX
-```
+
 
 <img width="1351" height="286" alt="image" src="https://github.com/user-attachments/assets/490e8389-ce94-4dd0-b554-b7010a05fdde" />
 

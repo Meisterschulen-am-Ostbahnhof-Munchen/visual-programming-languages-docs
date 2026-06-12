@@ -1,7 +1,6 @@
 # AuxiliaryState_S
 
-```{index} single: AuxiliaryState_S
-```
+
 
 * * * * * * * * * *
 ## Einleitung

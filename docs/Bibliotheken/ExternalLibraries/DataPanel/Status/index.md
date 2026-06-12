@@ -1,5 +1,4 @@
 # Status
 
-```{index} single: Status
-```
+
 

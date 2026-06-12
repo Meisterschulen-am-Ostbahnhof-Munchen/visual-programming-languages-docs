@@ -2,8 +2,7 @@
 
 # E_TON
 
-```{index} single: E_TON
-```
+
 ## 🎧 Podcast
 
 * [E_TON in der Industrieautomation: Wie ein simpler Timer Sicherheit und Stabilität schafft](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TON-in-der-Industrieautomation-Wie-ein-simpler-Timer-Sicherheit-und-Stabilitt-schafft-e3672u9)

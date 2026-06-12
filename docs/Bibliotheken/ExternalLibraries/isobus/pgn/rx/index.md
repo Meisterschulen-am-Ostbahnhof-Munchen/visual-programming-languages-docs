@@ -1,5 +1,4 @@
 # rx
 
-```{index} single: rx
-```
+
 

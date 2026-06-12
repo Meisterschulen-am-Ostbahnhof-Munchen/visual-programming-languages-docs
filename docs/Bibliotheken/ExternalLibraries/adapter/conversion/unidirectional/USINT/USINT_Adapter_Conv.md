@@ -1,7 +1,6 @@
 # USINT Conversion
 
-```{index} single: USINT Conversion
-```
+
 
 
 

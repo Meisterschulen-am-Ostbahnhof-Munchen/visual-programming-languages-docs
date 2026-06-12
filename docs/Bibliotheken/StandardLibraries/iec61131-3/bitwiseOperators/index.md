@@ -1,7 +1,6 @@
 # Bitweise Operatoren
 
-```{index} single: Bitweise Operatoren
-```
+
 
 
 

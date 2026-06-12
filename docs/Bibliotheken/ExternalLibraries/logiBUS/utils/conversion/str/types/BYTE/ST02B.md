@@ -1,7 +1,6 @@
 # ST02B
 
-```{index} single: ST02B
-```
+
 
 * * * * * * * * * *
 ## Einleitung

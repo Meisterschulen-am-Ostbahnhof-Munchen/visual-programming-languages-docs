@@ -1,7 +1,6 @@
 # Datentyp-Detail: DWORD
 
-```{index} single: Datentyp-Detail: DWORD
-```
+
 
 ## Beschreibung
 Bitfolge der Länge 32

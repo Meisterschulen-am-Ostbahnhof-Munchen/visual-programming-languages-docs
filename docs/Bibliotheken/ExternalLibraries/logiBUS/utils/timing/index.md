@@ -1,5 +1,4 @@
 # timing
 
-```{index} single: timing
-```
+
 

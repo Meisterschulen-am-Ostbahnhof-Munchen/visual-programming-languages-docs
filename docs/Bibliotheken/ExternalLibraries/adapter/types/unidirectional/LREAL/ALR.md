@@ -2,8 +2,7 @@
 
 # ALR (LREAL)
 
-```{index} single: ALR (LREAL)
-```
+
 
 unidirectional Adapter Interface for 1 Event and 1 Lreal
 

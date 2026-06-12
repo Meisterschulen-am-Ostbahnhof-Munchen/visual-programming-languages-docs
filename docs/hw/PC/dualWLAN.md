@@ -1,7 +1,6 @@
 # dual WLAN
 
-```{index} single: dual WLAN
-```
+
 
 ## ChatGPT
 

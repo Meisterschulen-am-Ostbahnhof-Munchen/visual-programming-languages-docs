@@ -2,8 +2,7 @@
 
 # AX (BOOL)
 
-```{index} single: AX (BOOL)
-```
+
 ## 🎧 Podcast
 
 * [Eclipse 4diac: Wie Open Source Forschung und Praxis in der industriellen Automatisierung verbindet](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Wie-Open-Source-Forschung-und-Praxis-in-der-industriellen-Automatisierung-verbindet-e38bhlu)

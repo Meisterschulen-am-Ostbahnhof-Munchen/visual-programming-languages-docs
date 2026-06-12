@@ -1,7 +1,6 @@
 # START
 
-```{index} single: START
-```
+
 ## 🎧 Podcast
 
 

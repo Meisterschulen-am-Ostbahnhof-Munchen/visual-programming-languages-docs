@@ -1,7 +1,6 @@
 # Hutschienenmoped Übersicht
 
-```{index} single: Hutschienenmoped Übersicht
-```
+
 
 
 

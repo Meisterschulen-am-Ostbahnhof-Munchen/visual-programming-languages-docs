@@ -1,7 +1,6 @@
 # WORD Konvertierungen
 
-```{index} single: WORD Konvertierungen
-```
+
 
 
 

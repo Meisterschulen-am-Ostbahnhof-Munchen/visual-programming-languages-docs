@@ -1,7 +1,6 @@
 # Datentyp-Detail: SINT
 
-```{index} single: Datentyp-Detail: SINT
-```
+
 
 ## Beschreibung
 Kurze ganze Zahl (Short Integer)

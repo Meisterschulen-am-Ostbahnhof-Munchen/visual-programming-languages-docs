@@ -1,5 +1,4 @@
 # reconfiguration
 
-```{index} single: reconfiguration
-```
+
 

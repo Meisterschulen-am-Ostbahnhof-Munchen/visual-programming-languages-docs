@@ -1,7 +1,6 @@
 # AX_BLINK_TRAIN
 
-```{index} single: AX_BLINK_TRAIN
-```
+
 
 * * * * * * * * * *
 ## Einleitung

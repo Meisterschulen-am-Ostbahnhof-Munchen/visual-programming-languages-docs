@@ -1,7 +1,6 @@
 # CF_NAME_T
 
-```{index} single: CF_NAME_T
-```
+
 
 * * * * * * * * * *
 ## Einleitung

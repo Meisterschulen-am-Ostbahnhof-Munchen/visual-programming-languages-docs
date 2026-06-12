@@ -1,7 +1,6 @@
 # LWORD Konvertierungen
 
-```{index} single: LWORD Konvertierungen
-```
+
 
 
 

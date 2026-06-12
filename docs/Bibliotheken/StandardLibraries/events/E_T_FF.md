@@ -1,7 +1,6 @@
 # E_T_FF
 
-```{index} single: E_T_FF
-```
+
 ## 🎧 Podcast
 
 

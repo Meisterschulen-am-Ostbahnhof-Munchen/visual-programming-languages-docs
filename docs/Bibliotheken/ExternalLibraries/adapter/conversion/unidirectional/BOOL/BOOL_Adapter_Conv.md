@@ -1,7 +1,6 @@
 # Unidirectional BOOL Adapter Conversion
 
-```{index} single: BOOL
-```
+
 
 
 

@@ -1,7 +1,6 @@
 # AUS_USINT_TO_US
 
-```{index} single: AUS_USINT_TO_US
-```
+
 
 ## Einleitung
 Der AUS_USINT_TO_US Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines USINT-Werts in das AUS-Adapterformat dient.

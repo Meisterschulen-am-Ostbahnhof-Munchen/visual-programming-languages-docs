@@ -1,5 +1,4 @@
 # rgb
 
-```{index} single: rgb
-```
+
 

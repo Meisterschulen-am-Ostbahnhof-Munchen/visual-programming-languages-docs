@@ -1,7 +1,6 @@
 # Q_NumericValueAux
 
-```{index} single: Q_NumericValueAux
-```
+
 
 
 * * * * * * * * * *

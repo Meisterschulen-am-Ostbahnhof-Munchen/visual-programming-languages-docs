@@ -1,7 +1,6 @@
 # DataPanel_MI_AI
 
-```{index} single: DataPanel_MI_AI
-```
+
 
 DataPanel Modules with medium IO density AI constants
 

@@ -1,7 +1,6 @@
 # I_FPTO
 
-```{index} single: I_FPTO
-```
+
 
 
 * * * * * * * * * *

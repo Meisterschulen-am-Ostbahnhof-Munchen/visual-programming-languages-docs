@@ -1,7 +1,6 @@
 # logiBUS_2_CAN_DI
 
-```{index} single: logiBUS_2_CAN_DI
-```
+
 
 * * * * * * * * * *
 

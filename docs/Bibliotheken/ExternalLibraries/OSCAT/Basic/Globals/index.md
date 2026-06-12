@@ -1,5 +1,4 @@
 # Globals
 
-```{index} single: Globals
-```
+
 

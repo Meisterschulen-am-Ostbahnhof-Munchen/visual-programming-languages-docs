@@ -1,7 +1,6 @@
 # BYTE Konvertierungen
 
-```{index} single: BYTE Konvertierungen
-```
+
 
 
 

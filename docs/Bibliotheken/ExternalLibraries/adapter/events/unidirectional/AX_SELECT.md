@@ -1,7 +1,6 @@
 # AX_SELECT
 
-```{index} single: AX_SELECT
-```
+
 
 
 ![AX_SELECT_ecc](./AX_SELECT_ecc.svg)

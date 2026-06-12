@@ -1,7 +1,6 @@
 # BOOL Konvertierungen
 
-```{index} single: BOOL Konvertierungen
-```
+
 
 
 

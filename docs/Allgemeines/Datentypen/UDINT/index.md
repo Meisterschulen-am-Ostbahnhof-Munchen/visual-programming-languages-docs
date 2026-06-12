@@ -1,7 +1,6 @@
 # Datentyp-Detail: UDINT
 
-```{index} single: Datentyp-Detail: UDINT
-```
+
 
 ## Beschreibung
 Vorzeichenlose doppelte ganze Zahl

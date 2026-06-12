@@ -1,5 +1,4 @@
 # forwarding
 
-```{index} single: forwarding
-```
+
 

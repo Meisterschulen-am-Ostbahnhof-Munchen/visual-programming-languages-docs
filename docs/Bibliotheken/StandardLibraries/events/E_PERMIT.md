@@ -1,7 +1,6 @@
 # E_PERMIT
 
-```{index} single: E_PERMIT
-```
+
 ## 🎧 Podcast
 
 

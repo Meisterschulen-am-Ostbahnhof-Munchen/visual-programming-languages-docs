@@ -1,5 +1,4 @@
 # stations
 
-```{index} single: stations
-```
+
 

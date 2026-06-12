@@ -1,7 +1,6 @@
 # F_DIVTIME
 
-```{index} single: F_DIVTIME
-```
+
 
 ![F_DIVTIME](https://github.com/user-attachments/assets/c442ada4-119c-4919-be55-9c5e0d7acb7c)
 

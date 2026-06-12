@@ -1,7 +1,6 @@
 # Datentyp: CHAR
 
-```{index} single: Datentyp: CHAR
-```
+
 ## 🎧 Podcast
 
 * [Adolf Webers Scharfe Analyse: Warum Technik allein nicht reicht – Lehren aus drei Industriellen Phasen](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Adolf-Webers-Scharfe-Analyse-Warum-Technik-allein-nicht-reicht--Lehren-aus-drei-Industriellen-Phasen-e36eger)

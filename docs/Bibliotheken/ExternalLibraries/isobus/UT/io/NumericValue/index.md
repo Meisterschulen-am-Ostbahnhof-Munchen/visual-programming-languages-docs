@@ -1,5 +1,4 @@
 # NumericValue
 
-```{index} single: NumericValue
-```
+
 

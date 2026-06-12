@@ -2,8 +2,7 @@
 
 # CTRL_OUT
 
-```{index} single: CTRL_OUT
-```
+
 
 Control Output with Limit and Manual Override
 

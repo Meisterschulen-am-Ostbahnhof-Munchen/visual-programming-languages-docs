@@ -1,5 +1,4 @@
 # PLCnext
 
-```{index} single: PLCnext
-```
+
 

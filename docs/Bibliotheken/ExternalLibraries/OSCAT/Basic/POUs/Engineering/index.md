@@ -1,5 +1,4 @@
 # Engineering
 
-```{index} single: Engineering
-```
+
 

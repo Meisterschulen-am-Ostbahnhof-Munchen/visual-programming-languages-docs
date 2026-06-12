@@ -1,7 +1,6 @@
 # Funk_DI
 
-```{index} single: Funk_DI
-```
+
 
 
 ![Funk_DI](./Funk_DI.svg)

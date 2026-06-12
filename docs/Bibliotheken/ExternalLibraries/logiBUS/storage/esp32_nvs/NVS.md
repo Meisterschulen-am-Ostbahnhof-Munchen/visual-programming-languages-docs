@@ -1,7 +1,6 @@
 # NVS
 
-```{index} single: NVS
-```
+
 
 <img width="1739" height="315" alt="image" src="https://github.com/user-attachments/assets/58cbe71a-173a-41eb-848d-c641fafb502f" />
 

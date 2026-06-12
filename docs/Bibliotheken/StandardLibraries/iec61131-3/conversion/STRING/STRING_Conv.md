@@ -1,7 +1,6 @@
 # STRING Konvertierungen
 
-```{index} single: STRING Konvertierungen
-```
+
 
 
 

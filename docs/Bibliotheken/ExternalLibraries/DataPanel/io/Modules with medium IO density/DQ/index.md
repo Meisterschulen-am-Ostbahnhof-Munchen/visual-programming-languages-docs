@@ -1,5 +1,4 @@
 # DQ
 
-```{index} single: DQ
-```
+
 

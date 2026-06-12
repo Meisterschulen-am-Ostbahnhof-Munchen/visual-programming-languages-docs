@@ -1,7 +1,6 @@
 # Softkey
 
-```{index} single: Softkey
-```
+
 
 
 

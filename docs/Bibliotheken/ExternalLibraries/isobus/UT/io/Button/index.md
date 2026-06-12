@@ -1,7 +1,6 @@
 # Button
 
-```{index} single: Button
-```
+
 
 
 

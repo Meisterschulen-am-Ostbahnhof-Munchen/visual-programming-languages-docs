@@ -1,7 +1,6 @@
 # T_PLC_US
 
-```{index} single: T_PLC_US
-```
+
 
 T_PLC_US reads the internal PLC timer and return the time
 

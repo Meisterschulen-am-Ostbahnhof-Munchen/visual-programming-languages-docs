@@ -1,7 +1,6 @@
 # AX_BLINK
 
-```{index} single: AX_BLINK
-```
+
 
 * * * * * * * * * *
 ## Einleitung

@@ -1,7 +1,6 @@
 # LED_COLOURS
 
-```{index} single: LED_COLOURS
-```
+
 
 * * * * * * * * * *
 ## Einleitung

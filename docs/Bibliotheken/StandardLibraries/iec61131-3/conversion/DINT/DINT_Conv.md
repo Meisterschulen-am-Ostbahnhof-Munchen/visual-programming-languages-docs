@@ -1,7 +1,6 @@
 # DINT Konvertierungen
 
-```{index} single: DINT Konvertierungen
-```
+
 
 
 

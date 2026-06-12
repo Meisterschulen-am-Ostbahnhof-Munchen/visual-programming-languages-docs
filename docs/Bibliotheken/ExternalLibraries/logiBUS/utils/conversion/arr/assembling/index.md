@@ -1,5 +1,4 @@
 # assembling
 
-```{index} single: assembling
-```
+
 

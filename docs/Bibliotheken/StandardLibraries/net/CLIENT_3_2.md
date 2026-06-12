@@ -1,7 +1,6 @@
 # CLIENT_3_2
 
-```{index} single: CLIENT_3_2
-```
+
 
 <img width="1368" height="191" alt="image" src="https://github.com/user-attachments/assets/bd26cabe-e445-4ad6-97b6-00579ab220c9" />
 

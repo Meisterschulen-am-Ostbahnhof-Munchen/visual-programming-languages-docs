@@ -1,7 +1,6 @@
 # ST04B
 
-```{index} single: ST04B
-```
+
 
 * * * * * * * * * *
 ## Einleitung

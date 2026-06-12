@@ -1,7 +1,6 @@
 # F_SUB_TOD_TOD
 
-```{index} single: F_SUB_TOD_TOD
-```
+
 
 ![F_SUB_TOD_TOD](https://github.com/user-attachments/assets/24f90fce-ebfe-4c5f-9449-ddf8e41a6821)
 

@@ -1,7 +1,6 @@
 # LogiBUS BOOL Conversion
 
-```{index} single: BOOL
-```
+
 
 
 

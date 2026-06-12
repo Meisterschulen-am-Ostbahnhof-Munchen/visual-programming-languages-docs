@@ -1,7 +1,6 @@
 # CAN_MSG
 
-```{index} single: CAN_MSG
-```
+
 
 * * * * * * * * * *
 ## Einleitung

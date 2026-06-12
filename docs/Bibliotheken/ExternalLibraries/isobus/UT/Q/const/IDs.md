@@ -1,7 +1,6 @@
 # IDs
 
-```{index} single: IDs
-```
+
 
 
 ![IDs](./IDs.svg)

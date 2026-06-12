@@ -1,7 +1,6 @@
 # ADDRESS
 
-```{index} single: ADDRESS
-```
+
 
 
 ![ADDRESS](./ADDRESS.svg)

@@ -1,7 +1,6 @@
 # Config_EMB_RES
 
-```{index} single: Config_EMB_RES
-```
+
 
 * * * * * * * * * *
 

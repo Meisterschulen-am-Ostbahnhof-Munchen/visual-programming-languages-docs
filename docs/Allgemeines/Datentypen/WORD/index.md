@@ -1,7 +1,6 @@
 # Datentyp-Detail: WORD
 
-```{index} single: Datentyp-Detail: WORD
-```
+
 
 ## Beschreibung
 Bitfolge der Länge 16

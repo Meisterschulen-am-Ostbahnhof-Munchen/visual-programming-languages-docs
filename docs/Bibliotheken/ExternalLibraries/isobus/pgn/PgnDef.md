@@ -1,7 +1,6 @@
 # PgnDef
 
-```{index} single: PgnDef
-```
+
 
 
 ![PgnDef](./PgnDef.svg)

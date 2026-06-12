@@ -1,7 +1,6 @@
 # Tastend
 
-```{index} single: Tastend
-```
+
 
 <img width="662" height="233" alt="image" src="https://github.com/user-attachments/assets/26789397-647c-4c13-b28d-5752fd19880c" />
 

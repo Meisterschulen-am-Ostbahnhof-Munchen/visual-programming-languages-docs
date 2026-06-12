@@ -1,7 +1,6 @@
 # GenericClassName
 
-```{index} single: GenericClassName
-```
+
 
 * * * * * * * * * *
 

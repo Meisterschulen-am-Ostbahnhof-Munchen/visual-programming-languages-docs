@@ -2,8 +2,7 @@
 
 # AD (DWORD)
 
-```{index} single: AD (DWORD)
-```
+
 ## 🎧 Podcast
 
 * [Eclipse 4diac: Ihr Fahrrad für die Industrie 4.0 – Software-Aufwand meistern und verteilte Systeme steuern](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Ihr-Fahrrad-fr-die-Industrie-4-0--Software-Aufwand-meistern-und-verteilte-Systeme-steuern-e368lq9)

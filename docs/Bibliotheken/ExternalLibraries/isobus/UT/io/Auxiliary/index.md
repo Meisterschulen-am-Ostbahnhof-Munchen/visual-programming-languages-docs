@@ -1,5 +1,4 @@
 # Auxiliary
 
-```{index} single: Auxiliary
-```
+
 

@@ -1,7 +1,6 @@
 # Arithmetische Funktionen
 
-```{index} single: Arithmetische Funktionen
-```
+
 
 
 

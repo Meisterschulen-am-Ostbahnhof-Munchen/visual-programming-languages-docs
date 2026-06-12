@@ -1,7 +1,6 @@
 # RT_E_CYCLE
 
-```{index} single: RT_E_CYCLE
-```
+
 
 * * * * * * * * * *
 

@@ -1,7 +1,6 @@
 # DT Konvertierungen
 
-```{index} single: DT Konvertierungen
-```
+
 
 
 

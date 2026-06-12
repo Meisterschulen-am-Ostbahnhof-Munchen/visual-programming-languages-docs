@@ -1,7 +1,6 @@
 # I_RPTO
 
-```{index} single: I_RPTO
-```
+
 
 
 * * * * * * * * * *

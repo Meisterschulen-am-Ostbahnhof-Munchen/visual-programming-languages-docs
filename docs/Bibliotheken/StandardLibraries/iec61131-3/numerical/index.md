@@ -1,7 +1,6 @@
 # Numerische Funktionen
 
-```{index} single: Numerische Funktionen
-```
+
 
 
 

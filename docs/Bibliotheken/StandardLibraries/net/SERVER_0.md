@@ -1,7 +1,6 @@
 # SERVER_0
 
-```{index} single: SERVER_0
-```
+
 
 * * * * * * * * * *
 

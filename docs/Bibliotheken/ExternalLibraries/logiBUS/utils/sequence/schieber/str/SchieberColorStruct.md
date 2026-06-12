@@ -1,7 +1,6 @@
 # SchieberColorStruct
 
-```{index} single: SchieberColorStruct
-```
+
 
 * * * * * * * * * *
 ## Einleitung

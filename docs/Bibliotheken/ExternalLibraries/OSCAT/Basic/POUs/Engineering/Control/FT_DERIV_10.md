@@ -2,8 +2,7 @@
 
 # FT_DERIV_10
 
-```{index} single: FT_DERIV_10
-```
+
 
 Derivative with variable window size (0..9 periods)
 

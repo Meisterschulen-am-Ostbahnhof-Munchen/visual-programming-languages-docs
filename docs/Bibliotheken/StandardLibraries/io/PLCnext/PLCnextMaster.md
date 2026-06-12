@@ -1,7 +1,6 @@
 # PLCnextMaster
 
-```{index} single: PLCnextMaster
-```
+
 
 * * * * * * * * * *
 

@@ -1,7 +1,6 @@
 # I_RHS
 
-```{index} single: I_RHS
-```
+
 
 
 * * * * * * * * * *

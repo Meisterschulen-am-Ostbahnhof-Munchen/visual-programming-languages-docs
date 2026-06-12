@@ -1,7 +1,6 @@
 # FB_CTD_UDINT
 
-```{index} single: FB_CTD_UDINT
-```
+
 
 <img width="1411" height="282" alt="FB_CTD_UDINT" src="https://github.com/user-attachments/assets/a8aab825-6766-4328-b0cb-4b841157bc33" />
 

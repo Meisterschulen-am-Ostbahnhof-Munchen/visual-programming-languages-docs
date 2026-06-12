@@ -1,7 +1,6 @@
 # BYTE
 
-```{index} single: BYTE
-```
+
 
 
 

@@ -1,7 +1,6 @@
 # NAMEFIELD_T
 
-```{index} single: NAMEFIELD_T
-```
+
 
 * * * * * * * * * *
 

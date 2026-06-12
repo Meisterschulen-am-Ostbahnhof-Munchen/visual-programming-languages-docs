@@ -1,5 +1,4 @@
 # unidirectional
 
-```{index} single: unidirectional
-```
+
 

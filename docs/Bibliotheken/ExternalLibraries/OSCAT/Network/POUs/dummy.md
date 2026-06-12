@@ -2,8 +2,7 @@
 
 # dummy
 
-```{index} single: dummy
-```
+
 
 does nothing
 

@@ -1,5 +1,4 @@
 # rtevents
 
-```{index} single: rtevents
-```
+
 

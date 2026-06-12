@@ -1,7 +1,6 @@
 # I_GBSD
 
-```{index} single: I_GBSD
-```
+
 
 
 * * * * * * * * * *

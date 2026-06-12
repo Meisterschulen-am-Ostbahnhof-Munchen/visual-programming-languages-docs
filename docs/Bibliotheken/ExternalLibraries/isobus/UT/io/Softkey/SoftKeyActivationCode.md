@@ -1,7 +1,6 @@
 # SoftKeyActivationCode
 
-```{index} single: SoftKeyActivationCode
-```
+
 
 
 ![SoftKeyActivationCode](./SoftKeyActivationCode.svg)

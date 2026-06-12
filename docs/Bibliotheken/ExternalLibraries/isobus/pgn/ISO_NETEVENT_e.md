@@ -1,7 +1,6 @@
 # ISO_NETEVENT_e
 
-```{index} single: ISO_NETEVENT_e
-```
+
 
 
 ![ISO_NETEVENT_e](./ISO_NETEVENT_e.svg)

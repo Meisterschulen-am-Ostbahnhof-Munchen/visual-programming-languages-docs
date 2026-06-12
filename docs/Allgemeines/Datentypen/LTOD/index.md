@@ -1,7 +1,6 @@
 # Datentyp-Detail: LTOD
 
-```{index} single: Datentyp-Detail: LTOD
-```
+
 
 ## Beschreibung
 Der Datentyp **LTOD** (Long Time of Day) repräsentiert die Tageszeit mit einer hohen Auflösung von 64 Bit (Nanosekunden-Präzision).

@@ -1,5 +1,4 @@
 # wago
 
-```{index} single: wago
-```
+
 

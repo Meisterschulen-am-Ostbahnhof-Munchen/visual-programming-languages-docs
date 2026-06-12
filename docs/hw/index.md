@@ -2,8 +2,7 @@
 
 
 
-```{index} single: Hardware
-```
+
 ## 🎧 Podcast
 
 * [IEC 61499: So gewinnt die moderne Automation – Strategien für mehr Reichweite und Business-Impact](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-So-gewinnt-die-moderne-Automation--Strategien-fr-mehr-Reichweite-und-Business-Impact-e3ahc65)

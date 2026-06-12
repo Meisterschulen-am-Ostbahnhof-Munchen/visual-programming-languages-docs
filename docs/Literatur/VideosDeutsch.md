@@ -1,7 +1,6 @@
 # 📺 Videos Deutsch
 
-```{index} single: Videos Deutsch
-```
+
 
 ## Trend im Engineering - IEC 61131 versus IEC 61499
 

@@ -1,7 +1,6 @@
 # net
 
-```{index} single: net
-```
+
 
 
 

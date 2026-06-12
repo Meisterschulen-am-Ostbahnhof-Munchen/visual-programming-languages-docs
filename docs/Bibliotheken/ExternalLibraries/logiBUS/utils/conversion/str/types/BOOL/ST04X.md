@@ -1,7 +1,6 @@
 # ST04X
 
-```{index} single: ST04X
-```
+
 
 * * * * * * * * * *
 ## Einleitung

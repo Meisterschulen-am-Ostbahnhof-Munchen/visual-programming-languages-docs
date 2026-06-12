@@ -1,7 +1,6 @@
 # HANDLE
 
-```{index} single: HANDLE
-```
+
 
 
 ![HANDLE](./HANDLE.svg)

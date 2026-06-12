@@ -1,7 +1,6 @@
 # sequence
 
-```{index} single: sequence
-```
+
 
 
 ![sequence](./sequence.svg)

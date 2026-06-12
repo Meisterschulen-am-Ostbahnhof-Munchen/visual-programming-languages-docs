@@ -2,8 +2,7 @@
 
 # FT_DERIV
 
-```{index} single: FT_DERIV
-```
+
 
 Calculate derivative over signal 'in' with Factor 'K'
 

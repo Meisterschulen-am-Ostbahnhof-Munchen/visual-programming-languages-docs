@@ -1,7 +1,6 @@
 # Flankenerkennung
 
-```{index} single: Flankenerkennung
-```
+
 
 
 

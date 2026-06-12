@@ -1,5 +1,4 @@
 # zephyr
 
-```{index} single: zephyr
-```
+
 

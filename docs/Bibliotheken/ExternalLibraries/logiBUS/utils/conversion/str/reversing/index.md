@@ -1,5 +1,4 @@
 # reversing
 
-```{index} single: reversing
-```
+
 

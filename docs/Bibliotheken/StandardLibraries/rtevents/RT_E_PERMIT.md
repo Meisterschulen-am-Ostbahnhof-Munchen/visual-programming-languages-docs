@@ -1,7 +1,6 @@
 # RT_E_PERMIT
 
-```{index} single: RT_E_PERMIT
-```
+
 
 * * * * * * * * * *
 

@@ -1,7 +1,6 @@
 # DO
 
-```{index} single: DO
-```
+
 
 
 

@@ -1,7 +1,6 @@
 # RT_E_MERGE
 
-```{index} single: RT_E_MERGE
-```
+
 
 * * * * * * * * * *
 

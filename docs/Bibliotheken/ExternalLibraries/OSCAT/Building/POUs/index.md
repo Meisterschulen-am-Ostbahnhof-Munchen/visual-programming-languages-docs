@@ -1,5 +1,4 @@
 # POUs
 
-```{index} single: POUs
-```
+
 

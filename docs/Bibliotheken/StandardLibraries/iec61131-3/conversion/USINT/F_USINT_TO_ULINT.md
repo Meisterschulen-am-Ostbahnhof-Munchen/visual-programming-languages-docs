@@ -1,7 +1,6 @@
 # F_USINT_TO_ULINT
 
-```{index} single: F_USINT_TO_ULINT
-```
+
 
 <img width="1466" height="214" alt="F_USINT_TO_ULINT" src="https://github.com/user-attachments/assets/93d99220-51d0-4f22-9315-b8380b7daeae" />
 

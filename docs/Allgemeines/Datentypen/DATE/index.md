@@ -1,7 +1,6 @@
 # Datentyp-Detail: DATE
 
-```{index} single: Datentyp-Detail: DATE
-```
+
 
 ## Beschreibung
 Der Datentyp **DATE** wird zur Darstellung eines Kalenderdatums verwendet.

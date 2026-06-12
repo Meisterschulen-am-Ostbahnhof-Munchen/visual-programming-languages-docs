@@ -1,7 +1,6 @@
 # I_FHS
 
-```{index} single: I_FHS
-```
+
 
 
 * * * * * * * * * *

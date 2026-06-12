@@ -1,7 +1,6 @@
 # WSTRING Konvertierungen
 
-```{index} single: WSTRING Konvertierungen
-```
+
 
 
 

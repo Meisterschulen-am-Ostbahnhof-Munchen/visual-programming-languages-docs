@@ -1,7 +1,6 @@
 # Sonstiges Englisch
 
-```{index} single: Sonstiges Englisch
-```
+
 
 ## Communities und Portale
 

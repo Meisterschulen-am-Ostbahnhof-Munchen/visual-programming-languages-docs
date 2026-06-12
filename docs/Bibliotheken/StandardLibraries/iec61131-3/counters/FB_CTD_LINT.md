@@ -1,7 +1,6 @@
 # FB_CTD_LINT
 
-```{index} single: FB_CTD_LINT
-```
+
 
 <img width="1399" height="282" alt="FB_CTD_LINT" src="https://github.com/user-attachments/assets/49df9c31-e52a-4ab3-9ab5-c17c58f2ee98" />
 

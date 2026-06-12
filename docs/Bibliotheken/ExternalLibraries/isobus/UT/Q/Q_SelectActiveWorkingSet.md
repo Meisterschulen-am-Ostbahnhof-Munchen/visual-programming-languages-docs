@@ -1,7 +1,6 @@
 # Q_SelectActiveWorkingSet
 
-```{index} single: Q_SelectActiveWorkingSet
-```
+
 
 ![Q_SelectActiveWorkingSet](https://user-images.githubusercontent.com/116869307/214148333-97dd868b-07dc-4e3c-9dcf-aa68d76603f2.png)
 

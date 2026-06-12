@@ -1,7 +1,6 @@
 # AL_LWORD_TO_L
 
-```{index} single: AL_LWORD_TO_L
-```
+
 
 ## Einleitung
 Der AL_LWORD_TO_L Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines LWORD-Werts in das AL-Adapterformat dient.

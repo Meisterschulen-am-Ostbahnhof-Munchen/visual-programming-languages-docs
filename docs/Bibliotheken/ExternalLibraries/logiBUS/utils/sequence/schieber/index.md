@@ -1,5 +1,4 @@
 # schieber
 
-```{index} single: schieber
-```
+
 

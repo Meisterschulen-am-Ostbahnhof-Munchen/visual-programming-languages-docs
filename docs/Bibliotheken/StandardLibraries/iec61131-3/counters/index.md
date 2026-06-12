@@ -1,7 +1,6 @@
 # Zähler
 
-```{index} single: Zähler
-```
+
 
 
 

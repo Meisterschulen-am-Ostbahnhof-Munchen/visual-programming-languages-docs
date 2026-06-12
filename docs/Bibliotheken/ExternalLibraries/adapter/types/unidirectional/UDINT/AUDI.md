@@ -2,8 +2,7 @@
 
 # AUDI (UDINT)
 
-```{index} single: AUDI (UDINT)
-```
+
 
 unidirectional Adapter Interface for 1 Event and 1 Udint
 

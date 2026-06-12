@@ -1,5 +1,4 @@
 # interlock
 
-```{index} single: interlock
-```
+
 

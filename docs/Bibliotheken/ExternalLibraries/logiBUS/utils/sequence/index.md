@@ -1,5 +1,4 @@
 # sequence
 
-```{index} single: sequence
-```
+
 

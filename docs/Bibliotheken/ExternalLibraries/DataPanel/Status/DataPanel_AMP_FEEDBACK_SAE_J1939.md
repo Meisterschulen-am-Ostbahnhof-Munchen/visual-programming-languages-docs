@@ -1,7 +1,6 @@
 # DataPanel_AMP_FEEDBACK_SAE_J1939
 
-```{index} single: DataPanel_AMP_FEEDBACK_SAE_J1939
-```
+
 
 Amperage Feedback of 1 DataPanel Node
 

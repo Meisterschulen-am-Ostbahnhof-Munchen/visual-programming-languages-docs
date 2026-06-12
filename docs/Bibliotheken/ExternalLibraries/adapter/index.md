@@ -1,7 +1,6 @@
 # adapter
 
-```{index} single: adapter
-```
+
 
 
 

@@ -1,7 +1,6 @@
 # DualCAN hex-output ESP32
 
-```{index} single: DualCAN hex-output ESP32
-```
+
 
 ## CAN-BUS
 

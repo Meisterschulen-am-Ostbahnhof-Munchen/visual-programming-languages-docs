@@ -1,7 +1,6 @@
 # RT_Bridge_5
 
-```{index} single: RT_Bridge_5
-```
+
 
 * * * * * * * * * *
 

@@ -1,5 +1,4 @@
 # MyLib
 
-```{index} single: MyLib
-```
+
 

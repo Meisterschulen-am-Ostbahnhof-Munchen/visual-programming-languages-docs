@@ -2,8 +2,7 @@
 
 # CTRL_PID
 
-```{index} single: CTRL_PID
-```
+
 
 FT_PI is a PI controller with manual functionality.
 

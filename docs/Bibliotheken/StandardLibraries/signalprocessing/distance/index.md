@@ -1,5 +1,4 @@
 # distance
 
-```{index} single: distance
-```
+
 

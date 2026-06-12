@@ -1,7 +1,6 @@
 # AuxiliaryState
 
-```{index} single: AuxiliaryState
-```
+
 
 
 ![AuxiliaryState](./AuxiliaryState.svg)

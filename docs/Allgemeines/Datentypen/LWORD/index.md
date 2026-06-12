@@ -1,7 +1,6 @@
 # Datentyp-Detail: LWORD
 
-```{index} single: Datentyp-Detail: LWORD
-```
+
 
 ## Beschreibung
 Bitfolge der Länge 64

@@ -1,7 +1,6 @@
 # LREAL Konvertierungen
 
-```{index} single: LREAL Konvertierungen
-```
+
 
 
 

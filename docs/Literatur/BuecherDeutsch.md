@@ -1,7 +1,6 @@
 # Bücher Deutsch
 
-```{index} single: Bücher Deutsch
-```
+
 
 ## IEC 61499 Function Blocks für den Entwurf von Eingebetteten und Verteilten Systemen
 

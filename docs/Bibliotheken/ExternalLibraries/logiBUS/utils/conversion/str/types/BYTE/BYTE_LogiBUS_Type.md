@@ -1,7 +1,6 @@
 # LogiBUS BYTE Types
 
-```{index} single: BYTE
-```
+
 
 
 

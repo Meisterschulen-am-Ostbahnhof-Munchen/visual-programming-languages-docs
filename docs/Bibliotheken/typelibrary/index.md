@@ -1,7 +1,6 @@
 # TypeLibrary
 
-```{index} single: TypeLibrary
-```
+
 
 
 

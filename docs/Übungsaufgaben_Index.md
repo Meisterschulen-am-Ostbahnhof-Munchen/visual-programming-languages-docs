@@ -1,7 +1,6 @@
 # Übungsaufgaben
 
-```{index} single: Übungsaufgaben
-```
+
 
 
 

@@ -1,7 +1,6 @@
 # TypeHash
 
-```{index} single: TypeHash
-```
+
 
 * * * * * * * * * *
 

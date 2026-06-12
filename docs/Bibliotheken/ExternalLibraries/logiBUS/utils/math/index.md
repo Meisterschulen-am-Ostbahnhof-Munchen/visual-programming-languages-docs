@@ -1,5 +1,4 @@
 # math
 
-```{index} single: math
-```
+
 

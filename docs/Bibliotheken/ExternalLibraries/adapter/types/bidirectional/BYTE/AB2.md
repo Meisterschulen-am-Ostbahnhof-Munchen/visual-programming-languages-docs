@@ -2,8 +2,7 @@
 
 # AB2
 
-```{index} single: AB2
-```
+
 
 bidirectional Adapter Interface for 1 Event and 1 Byte
 

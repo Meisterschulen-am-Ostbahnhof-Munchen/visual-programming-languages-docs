@@ -1,7 +1,6 @@
 # logiBUS_DO_S
 
-```{index} single: logiBUS_DO_S
-```
+
 
 * * * * * * * * * *
 ## Einleitung

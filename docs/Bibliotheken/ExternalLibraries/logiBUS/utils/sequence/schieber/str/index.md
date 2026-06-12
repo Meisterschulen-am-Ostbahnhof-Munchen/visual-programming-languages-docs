@@ -1,7 +1,6 @@
 # str
 
-```{index} single: str
-```
+
 
 
 

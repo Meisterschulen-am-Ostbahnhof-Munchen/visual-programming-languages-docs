@@ -2,6 +2,5 @@
 
 # PLC01A1
 
-```{index} single: PLC01A1
-```
+
 

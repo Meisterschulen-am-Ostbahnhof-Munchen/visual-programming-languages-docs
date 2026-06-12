@@ -1,7 +1,6 @@
 # LO
 
-```{index} single: LO
-```
+
 ## 🎧 Podcast
 
 

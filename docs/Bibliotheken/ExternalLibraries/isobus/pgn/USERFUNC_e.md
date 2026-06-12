@@ -1,7 +1,6 @@
 # USERFUNC_e
 
-```{index} single: USERFUNC_e
-```
+
 
 
 ![USERFUNC_e](./USERFUNC_e.svg)

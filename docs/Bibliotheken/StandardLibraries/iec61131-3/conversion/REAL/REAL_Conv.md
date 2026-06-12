@@ -1,7 +1,6 @@
 # REAL Konvertierungen
 
-```{index} single: REAL Konvertierungen
-```
+
 
 
 

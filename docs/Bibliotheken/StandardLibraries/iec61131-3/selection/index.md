@@ -1,7 +1,6 @@
 # Auswahlfunktionen
 
-```{index} single: Auswahlfunktionen
-```
+
 
 
 

@@ -1,5 +1,4 @@
 # signals
 
-```{index} single: signals
-```
+
 

@@ -1,7 +1,6 @@
 # SINT Konvertierungen
 
-```{index} single: SINT Konvertierungen
-```
+
 
 
 

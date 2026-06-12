@@ -1,5 +1,4 @@
 # verteiler
 
-```{index} single: verteiler
-```
+
 

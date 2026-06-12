@@ -1,7 +1,6 @@
 # RT_E_DEMUX
 
-```{index} single: RT_E_DEMUX
-```
+
 
 * * * * * * * * * *
 

@@ -1,7 +1,6 @@
 # SET_AT_INDEX
 
-```{index} single: SET_AT_INDEX
-```
+
 
 <img width="1449" height="238" alt="image" src="https://github.com/user-attachments/assets/b43c3e3b-03a9-421b-a9ba-bcd4c4f00f28" />
 

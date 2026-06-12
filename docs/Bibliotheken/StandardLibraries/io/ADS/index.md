@@ -1,7 +1,6 @@
 # ADS
 
-```{index} single: ADS
-```
+
 
 
 

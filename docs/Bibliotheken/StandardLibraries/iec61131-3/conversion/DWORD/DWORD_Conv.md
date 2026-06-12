@@ -1,7 +1,6 @@
 # DWORD Konvertierungen
 
-```{index} single: DWORD Konvertierungen
-```
+
 
 
 

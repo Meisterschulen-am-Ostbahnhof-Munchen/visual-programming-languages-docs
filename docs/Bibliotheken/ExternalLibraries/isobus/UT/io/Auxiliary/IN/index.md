@@ -1,7 +1,6 @@
 # IN
 
-```{index} single: IN
-```
+
 
 
 

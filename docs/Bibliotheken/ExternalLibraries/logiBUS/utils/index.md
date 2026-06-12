@@ -1,5 +1,4 @@
 # utils
 
-```{index} single: utils
-```
+
 

@@ -1,7 +1,6 @@
 # FORTE_PC
 
-```{index} single: FORTE_PC
-```
+
 
 * * * * * * * * * *
 

@@ -1,7 +1,6 @@
 # HYST_2
 
-```{index} single: HYST_2
-```
+
 
 Hystereses function
 

@@ -1,7 +1,6 @@
 # INT Konvertierungen
 
-```{index} single: INT Konvertierungen
-```
+
 
 
 

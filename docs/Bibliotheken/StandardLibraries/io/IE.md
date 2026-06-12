@@ -1,7 +1,6 @@
 # IE
 
-```{index} single: IE
-```
+
 ## 🎧 Podcast
 
 * [4diac IDE: Dein "Hello World" der Automatisierung – Das Blinking Tutorial Lokal](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)

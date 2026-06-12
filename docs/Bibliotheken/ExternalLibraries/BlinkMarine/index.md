@@ -1,5 +1,4 @@
 # BlinkMarine
 
-```{index} single: BlinkMarine
-```
+
 

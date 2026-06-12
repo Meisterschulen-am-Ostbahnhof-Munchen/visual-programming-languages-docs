@@ -1,7 +1,6 @@
 # FB_CTUD_DINT
 
-```{index} single: FB_CTUD_DINT
-```
+
 
 <img width="1418" height="340" alt="FB_CTUD_DINT" src="https://github.com/user-attachments/assets/9e2492b2-42d8-4fe5-a22a-8cf85b070cef" />
 

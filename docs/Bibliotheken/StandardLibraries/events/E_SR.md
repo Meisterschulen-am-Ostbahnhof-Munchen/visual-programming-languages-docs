@@ -1,7 +1,6 @@
 # E_SR
 
-```{index} single: E_SR
-```
+
 ## 🎧 Podcast
 
 

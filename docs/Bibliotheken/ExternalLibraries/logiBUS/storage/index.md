@@ -1,5 +1,4 @@
 # storage
 
-```{index} single: storage
-```
+
 

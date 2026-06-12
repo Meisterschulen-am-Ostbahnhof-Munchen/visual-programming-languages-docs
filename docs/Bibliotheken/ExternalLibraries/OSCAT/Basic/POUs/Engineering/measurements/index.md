@@ -1,5 +1,4 @@
 # measurements
 
-```{index} single: measurements
-```
+
 

@@ -1,7 +1,6 @@
 # MULTIME
 
-```{index} single: MULTIME
-```
+
 
 multiplies a time by a real number and returns a time
 

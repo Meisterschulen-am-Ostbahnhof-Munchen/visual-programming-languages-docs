@@ -1,7 +1,6 @@
 # UINT Conversion
 
-```{index} single: UINT Conversion
-```
+
 
 
 

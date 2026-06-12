@@ -2,8 +2,7 @@
 
 # AE2
 
-```{index} single: AE2
-```
+
 
 bidirectional Adapter Interface for 1 Event
 

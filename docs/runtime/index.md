@@ -1,7 +1,6 @@
 # ⚙️ Runtime
 
-```{index} single: Runtime
-```
+
 
 
 

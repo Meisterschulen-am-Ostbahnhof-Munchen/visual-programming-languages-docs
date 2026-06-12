@@ -1,5 +1,4 @@
 # timed
 
-```{index} single: timed
-```
+
 

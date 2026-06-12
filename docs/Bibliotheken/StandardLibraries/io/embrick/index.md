@@ -1,5 +1,4 @@
 # embrick
 
-```{index} single: embrick
-```
+
 

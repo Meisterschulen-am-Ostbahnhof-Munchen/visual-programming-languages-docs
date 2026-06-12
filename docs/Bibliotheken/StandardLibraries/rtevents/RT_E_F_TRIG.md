@@ -1,7 +1,6 @@
 # RT_E_F_TRIG
 
-```{index} single: RT_E_F_TRIG
-```
+
 
 * * * * * * * * * *
 

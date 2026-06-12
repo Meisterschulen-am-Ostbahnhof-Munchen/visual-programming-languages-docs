@@ -1,7 +1,6 @@
 # ℹ️ Allgemeines
 
-```{index} single: Allgemeines
-```
+
 
 
 

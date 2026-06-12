@@ -1,5 +1,4 @@
 # OSCAT
 
-```{index} single: OSCAT
-```
+
 

@@ -1,5 +1,4 @@
 # bidirectional
 
-```{index} single: bidirectional
-```
+
 

@@ -1,7 +1,6 @@
 # INTEGRAL
 
-```{index} single: INTEGRAL
-```
+
 
 <img width="1755" height="158" alt="image" src="https://github.com/user-attachments/assets/4eac3645-d857-4c04-9bc3-7692be451a96" />
 

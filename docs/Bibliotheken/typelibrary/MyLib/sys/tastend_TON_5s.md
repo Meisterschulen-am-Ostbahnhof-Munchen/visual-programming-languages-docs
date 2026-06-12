@@ -1,7 +1,6 @@
 # tastend_TON_5s
 
-```{index} single: tastend_TON_5s
-```
+
 
 * * * * * * * * * *
 

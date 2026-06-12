@@ -1,7 +1,6 @@
 # logiBUS_QW_SERVO
 
-```{index} single: logiBUS_QW_SERVO
-```
+
 
 <img width="1341" height="240" alt="image" src="https://github.com/user-attachments/assets/a0a3a085-d2e5-4393-893f-f377b4a3f346" />
 

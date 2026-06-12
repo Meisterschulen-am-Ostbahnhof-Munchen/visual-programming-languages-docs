@@ -2,8 +2,7 @@
 
 # AUS (USINT)
 
-```{index} single: AUS (USINT)
-```
+
 ## 🎧 Podcast
 
 * [Der E_CTU-Baustein: Ereignisgesteuertes Hochzählen in der Industrie nach IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-Baustein-Ereignisgesteuertes-Hochzhlen-in-der-Industrie-nach-IEC-61499-e36846t)

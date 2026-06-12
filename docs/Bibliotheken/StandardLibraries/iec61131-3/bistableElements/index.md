@@ -1,7 +1,6 @@
 # Bistabile Elemente
 
-```{index} single: Bistabile Elemente
-```
+
 
 
 

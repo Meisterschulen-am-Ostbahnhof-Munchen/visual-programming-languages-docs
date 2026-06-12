@@ -1,7 +1,6 @@
 # EBMaster
 
-```{index} single: EBMaster
-```
+
 
 <img width="1420" height="292" alt="image" src="https://github.com/user-attachments/assets/699321b3-f59e-49ad-8e4c-2d0a94a6fccc" />
 

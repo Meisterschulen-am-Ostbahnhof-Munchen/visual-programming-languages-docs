@@ -1,7 +1,6 @@
 # ST64B
 
-```{index} single: ST64B
-```
+
 
 * * * * * * * * * *
 ## Einleitung

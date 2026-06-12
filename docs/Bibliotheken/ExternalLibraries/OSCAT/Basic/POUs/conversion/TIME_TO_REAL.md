@@ -1,7 +1,6 @@
 # TIME_TO_REAL
 
-```{index} single: TIME_TO_REAL
-```
+
 
 Converts TIME to REAL
 

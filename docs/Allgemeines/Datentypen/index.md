@@ -1,7 +1,6 @@
 # 💾 Datentypen (Übersicht)
 
-```{index} single: Datentypen (Übersicht)
-```
+
 
 
 

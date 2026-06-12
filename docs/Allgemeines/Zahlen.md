@@ -1,7 +1,6 @@
 # Zahlen und Zahlensysteme
 
-```{index} single: Zahlen und Zahlensysteme
-```
+
 ## 🎧 Podcast
 
 * [ISOBUS-Terminals: Zahlen verstehen – NumberVariable, InputNumber & OutputNumber erklärt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)

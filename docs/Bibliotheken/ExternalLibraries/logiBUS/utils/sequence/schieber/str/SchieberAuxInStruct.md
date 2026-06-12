@@ -1,7 +1,6 @@
 # SchieberAuxInStruct
 
-```{index} single: SchieberAuxInStruct
-```
+
 
 * * * * * * * * * *
 ## Einleitung

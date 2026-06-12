@@ -1,7 +1,6 @@
 # logiBUS_ID
 
-```{index} single: logiBUS_ID
-```
+
 
 <img width="1903" height="313" alt="image" src="https://github.com/user-attachments/assets/52ce1d6d-0a92-42d7-8fd0-ce51ed902a2b" />
 

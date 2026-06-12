@@ -1,7 +1,6 @@
 # AND_9
 
-```{index} single: AND_9
-```
+
 
 <img width="1312" height="451" alt="AND_9" src="https://github.com/user-attachments/assets/47386bac-4db8-4618-9536-8cf27bf07c3c" />
 

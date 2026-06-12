@@ -1,5 +1,4 @@
 # devices
 
-```{index} single: devices
-```
+
 

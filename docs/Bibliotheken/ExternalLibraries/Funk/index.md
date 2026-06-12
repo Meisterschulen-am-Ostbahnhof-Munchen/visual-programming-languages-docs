@@ -1,7 +1,6 @@
 # Funk
 
-```{index} single: Funk
-```
+
 
 
 

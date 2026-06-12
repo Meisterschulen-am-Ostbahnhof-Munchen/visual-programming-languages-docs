@@ -1,7 +1,6 @@
 # F_SUB_DATE_DATE
 
-```{index} single: F_SUB_DATE_DATE
-```
+
 
 ![F_SUB_DATE_DATE](https://github.com/user-attachments/assets/07c56b47-428f-4e2c-b365-402ef41717ba)
 

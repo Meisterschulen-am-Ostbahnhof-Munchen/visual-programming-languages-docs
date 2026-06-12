@@ -2,8 +2,7 @@
 
 # AE (EVENT)
 
-```{index} single: AE (EVENT)
-```
+
 ## Interface
 
 ### Events

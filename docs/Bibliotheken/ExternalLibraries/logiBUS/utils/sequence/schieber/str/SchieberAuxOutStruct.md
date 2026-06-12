@@ -1,7 +1,6 @@
 # SchieberAuxOutStruct
 
-```{index} single: SchieberAuxOutStruct
-```
+
 
 * * * * * * * * * *
 ## Einleitung

@@ -1,7 +1,6 @@
 # CommunicationPartners
 
-```{index} single: CommunicationPartners
-```
+
 
 
 ![CommunicationPartners](./CommunicationPartners.svg)

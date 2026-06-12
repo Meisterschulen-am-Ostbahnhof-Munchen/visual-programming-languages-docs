@@ -1,5 +1,4 @@
 # resources
 
-```{index} single: resources
-```
+
 

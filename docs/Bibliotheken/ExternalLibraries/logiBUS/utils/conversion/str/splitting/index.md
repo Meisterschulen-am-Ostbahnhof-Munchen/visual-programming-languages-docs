@@ -1,5 +1,4 @@
 # splitting
 
-```{index} single: splitting
-```
+
 

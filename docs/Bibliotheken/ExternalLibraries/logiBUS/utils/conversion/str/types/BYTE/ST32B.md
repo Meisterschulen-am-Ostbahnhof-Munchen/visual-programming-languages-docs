@@ -1,7 +1,6 @@
 # ST32B
 
-```{index} single: ST32B
-```
+
 
 * * * * * * * * * *
 ## Einleitung

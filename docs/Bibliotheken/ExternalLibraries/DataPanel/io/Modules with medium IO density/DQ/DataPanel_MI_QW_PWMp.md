@@ -2,8 +2,7 @@
 
 # DataPanel_MI_QW_PWMp
 
-```{index} single: DataPanel_MI_QW_PWMp
-```
+
 
 Output service interface function block for PWM output data (Percent Mode 3)
 

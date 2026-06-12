@@ -1,7 +1,6 @@
 # OR_16_BOOL
 
-```{index} single: OR_16_BOOL
-```
+
 
 <img width="993" height="478" alt="image" src="https://github.com/user-attachments/assets/f25a88ac-7108-4946-bddf-753712006566" />
 

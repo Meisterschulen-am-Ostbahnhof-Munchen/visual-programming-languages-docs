@@ -1,7 +1,6 @@
 # Numerischer Index (iec61131-3)
 
-```{index} single: Numerischer Index (iec61131-3)
-```
+
 
 
 

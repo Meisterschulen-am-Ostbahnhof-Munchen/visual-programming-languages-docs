@@ -2,8 +2,7 @@
 
 # ADI (DINT)
 
-```{index} single: ADI (DINT)
-```
+
 ## 🎧 Podcast
 
 * [DIN EN 61499-1: Funktionsbausteine und der Paradigmenwechsel in der industriellen Softwareentwicklung](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Funktionsbausteine-und-der-Paradigmenwechsel-in-der-industriellen-Softwareentwicklung-e36clps)

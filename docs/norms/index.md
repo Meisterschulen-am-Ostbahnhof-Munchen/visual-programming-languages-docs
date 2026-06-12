@@ -1,7 +1,6 @@
 # 📏 Normen und Standards
 
-```{index} single: Normen und Standards
-```
+
 
 In der industriellen Automatisierung bilden Normen das Fundament für Interoperabilität, Sicherheit und Effizienz. Sie stellen sicher, dass Systeme verschiedener Hersteller zusammenarbeiten können und Software portabel bleibt.
 

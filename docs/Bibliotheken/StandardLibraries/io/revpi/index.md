@@ -1,5 +1,4 @@
 # revpi
 
-```{index} single: revpi
-```
+
 

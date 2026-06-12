@@ -1,7 +1,6 @@
 # Datentyp-Detail: LDATE
 
-```{index} single: Datentyp-Detail: LDATE
-```
+
 
 ## Beschreibung
 Der Datentyp **LDATE** (Long Date) repräsentiert ein Kalenderdatum mit einer Breite von 64 Bit und ermöglicht einen wesentlich größeren Zeitrahmen.

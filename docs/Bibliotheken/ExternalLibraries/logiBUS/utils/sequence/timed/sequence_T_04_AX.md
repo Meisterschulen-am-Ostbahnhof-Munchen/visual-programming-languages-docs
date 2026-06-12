@@ -1,7 +1,6 @@
 # sequence_T_04_AX
 
-```{index} single: sequence_T_04_AX
-```
+
 
 
 ![sequence_T_04_AX_ecc](./sequence_T_04_AX_ecc.svg)

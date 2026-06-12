@@ -1,7 +1,6 @@
 # F_DINT_TO_LREAL
 
-```{index} single: F_DINT_TO_LREAL
-```
+
 
 <img width="1449" height="212" alt="F_DINT_TO_LREAL" src="https://github.com/user-attachments/assets/bdda654f-6dbe-4c4a-aaba-6440c9a13e8f" />
 

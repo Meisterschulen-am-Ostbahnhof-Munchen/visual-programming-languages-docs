@@ -1,7 +1,6 @@
 # eIW
 
-```{index} single: eIW
-```
+
 
 <img width="1434" height="296" alt="image" src="https://github.com/user-attachments/assets/4b045e96-1325-4fca-9291-53d4d39a6161" />
 

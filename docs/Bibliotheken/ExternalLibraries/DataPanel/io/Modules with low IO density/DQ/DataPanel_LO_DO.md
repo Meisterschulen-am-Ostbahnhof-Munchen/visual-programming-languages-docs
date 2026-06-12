@@ -1,7 +1,6 @@
 # DataPanel_LO_DO
 
-```{index} single: DataPanel_LO_DO
-```
+
 
 
 ![DataPanel_LO_DO](./DataPanel_LO_DO.svg)

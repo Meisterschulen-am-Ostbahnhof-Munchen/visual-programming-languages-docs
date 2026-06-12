@@ -2,8 +2,7 @@
 
 # GEN_SQR
 
-```{index} single: GEN_SQR
-```
+
 
 this signal generator generates a square wave output
 

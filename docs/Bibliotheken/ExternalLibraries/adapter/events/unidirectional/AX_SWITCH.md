@@ -1,7 +1,6 @@
 # AX_SWITCH
 
-```{index} single: AX_SWITCH
-```
+
 
 <img width="1215" height="181" alt="image" src="https://github.com/user-attachments/assets/e3a4235c-ef25-4396-b440-3929cea8731a" />
 

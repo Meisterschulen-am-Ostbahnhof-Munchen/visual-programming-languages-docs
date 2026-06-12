@@ -1,7 +1,6 @@
 # E_DELAY
 
-```{index} single: E_DELAY
-```
+
 ## 🎧 Podcast
 
 * [E_DELAY in IEC 61499: Präzise, Abbrechbare Zeitverzögerung in Steuerungssystemen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_DELAY-in-IEC-61499-Przise--Abbrechbare-Zeitverzgerung-in-Steuerungssystemen-e3674le)

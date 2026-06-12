@@ -1,7 +1,6 @@
 # 📺 Videos Englisch
 
-```{index} single: Videos Englisch
-```
+
 
 ## Ausgewählte Videos und Playlists
 

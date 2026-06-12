@@ -1,7 +1,6 @@
 # LED_strip
 
-```{index} single: LED_strip
-```
+
 
 * * * * * * * * * *
 ## Einleitung

@@ -1,7 +1,6 @@
 # Bidirectional BYTE Adapter
 
-```{index} single: Bidirectional BYTE Adapter
-```
+
 
 
 

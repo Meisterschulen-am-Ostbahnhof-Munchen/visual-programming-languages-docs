@@ -6,8 +6,7 @@
 * [FB_TOF und E_TOF: Verzögerungstimer in IEC 61131-3 und 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
 
 ---- 
-```{index} single: FB_TOF
-```
+
 
 ![image](https://github.com/user-attachments/assets/e60568d1-aba5-4e35-9488-8a79d1cb877b)
 

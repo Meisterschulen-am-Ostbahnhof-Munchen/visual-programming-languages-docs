@@ -1,7 +1,6 @@
 # BeagleBoneBlack
 
-```{index} single: BeagleBoneBlack
-```
+
 
 * * * * * * * * * *
 

@@ -15,8 +15,7 @@
 * [Eclipse 4diac: Open Source als Game Changer für industrielle Steuerungen?](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Open-Source-als-Game-Changer-fr-industrielle-Steuerungen-e372eru)
 
 ---- 
-```{index} single: Eclipse 4diac™
-```
+
 
 ## Kapitelinhalt
 

@@ -1,7 +1,6 @@
 # LINT Conversion
 
-```{index} single: LINT Conversion
-```
+
 
 
 

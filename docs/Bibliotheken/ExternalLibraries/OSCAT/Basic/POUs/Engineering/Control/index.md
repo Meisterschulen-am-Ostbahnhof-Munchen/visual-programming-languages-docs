@@ -1,7 +1,6 @@
 # Control
 
-```{index} single: Control
-```
+
 
 
 

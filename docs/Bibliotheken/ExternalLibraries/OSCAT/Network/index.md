@@ -1,5 +1,4 @@
 # Network
 
-```{index} single: Network
-```
+
 

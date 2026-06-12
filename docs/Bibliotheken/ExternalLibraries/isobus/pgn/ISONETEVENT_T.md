@@ -1,7 +1,6 @@
 # ISONETEVENT_T
 
-```{index} single: ISONETEVENT_T
-```
+
 
 * * * * * * * * * *
 ## Einleitung

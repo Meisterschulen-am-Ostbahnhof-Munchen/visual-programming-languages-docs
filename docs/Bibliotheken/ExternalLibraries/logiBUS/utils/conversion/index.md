@@ -1,5 +1,4 @@
 # conversion
 
-```{index} single: conversion
-```
+
 

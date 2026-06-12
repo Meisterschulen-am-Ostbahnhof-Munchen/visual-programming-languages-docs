@@ -1,7 +1,6 @@
 # ButtonActivationCode
 
-```{index} single: ButtonActivationCode
-```
+
 
 
 ![ButtonActivationCode](./ButtonActivationCode.svg)

@@ -15,8 +15,7 @@
 * [Logibus Unleashed: How Eliminating "Mapping" Simplifies Complex Systems and Boosts Usability](https://podcasters.spotify.com/pod/show/logibus/episodes/Logibus-Unleashed-How-Eliminating-Mapping-Simplifies-Complex-Systems-and-Boosts-Usability-e375a3m)
 
 ---- 
-```{index} single: logiBUS®
-```
+
 
 **Die Hardware: Das robuste Herzstück Ihrer Maschinensteuerung**
 

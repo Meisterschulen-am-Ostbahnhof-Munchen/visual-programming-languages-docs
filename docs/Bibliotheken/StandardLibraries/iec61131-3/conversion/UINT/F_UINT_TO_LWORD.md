@@ -1,7 +1,6 @@
 # F_UINT_TO_LWORD
 
-```{index} single: F_UINT_TO_LWORD
-```
+
 
 <img width="1452" height="216" alt="F_UINT_TO_LWORD" src="https://github.com/user-attachments/assets/be6bea7a-7598-41df-9c89-9d0b6d2272ef" />
 

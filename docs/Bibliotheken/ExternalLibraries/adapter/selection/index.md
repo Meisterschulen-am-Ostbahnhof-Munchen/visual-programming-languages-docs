@@ -1,5 +1,4 @@
 # selection
 
-```{index} single: selection
-```
+
 

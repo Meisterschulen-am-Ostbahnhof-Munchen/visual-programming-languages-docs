@@ -1,7 +1,6 @@
 # F_BOOL_TO_WORD
 
-```{index} single: F_BOOL_TO_WORD
-```
+
 
 <img width="1434" height="212" alt="F_BOOL_TO_WORD" src="https://github.com/user-attachments/assets/2108fbdb-57b2-48c1-9549-416c9024f862" />
 

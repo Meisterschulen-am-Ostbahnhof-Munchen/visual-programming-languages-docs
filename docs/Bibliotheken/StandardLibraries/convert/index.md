@@ -1,5 +1,4 @@
 # convert
 
-```{index} single: convert
-```
+
 

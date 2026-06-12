@@ -1,7 +1,6 @@
 # sequence_ET_05
 
-```{index} single: sequence_ET_05
-```
+
 
 <img width="1654" height="399" alt="image" src="https://github.com/user-attachments/assets/244b09cc-9ec4-43b7-9157-fb82556ce8ef" />
 

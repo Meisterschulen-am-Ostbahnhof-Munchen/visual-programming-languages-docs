@@ -2,8 +2,7 @@
 
 # FT_PIDWL
 
-```{index} single: FT_PIDWL
-```
+
 
 PI Controller with Anti-Windup
 

@@ -1,7 +1,6 @@
 # F_TIME_IN_US_TO_UDINT
 
-```{index} single: F_TIME_IN_US_TO_UDINT
-```
+
 
 <img width="1536" height="212" alt="F_TIME_IN_US_TO_UDINT" src="https://github.com/user-attachments/assets/4ae404ca-902a-488d-8a1e-3385150b6d56" />
 

@@ -2,8 +2,7 @@
 
 # ASR (EVENT)
 
-```{index} single: ASR (EVENT)
-```
+
 
 unidirectional Adapter Interface for 2 Events
 

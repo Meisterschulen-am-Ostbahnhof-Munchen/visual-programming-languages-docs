@@ -1,7 +1,6 @@
 # F_DWORD_TO_WORD
 
-```{index} single: F_DWORD_TO_WORD
-```
+
 
 <img width="1244" height="182" alt="F_DWORD_TO_WORD" src="https://github.com/user-attachments/assets/eeb53dda-9cf9-4235-91ac-ad7b17de8da7" />
 

@@ -1,7 +1,6 @@
 # PI
 
-```{index} single: PI
-```
+
 
 
 

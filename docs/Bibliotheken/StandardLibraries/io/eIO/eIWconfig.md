@@ -1,7 +1,6 @@
 # eIWconfig
 
-```{index} single: eIWconfig
-```
+
 
 <img width="1398" height="243" alt="image" src="https://github.com/user-attachments/assets/9688743e-0091-4849-bd83-351768377028" />
 

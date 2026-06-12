@@ -1,7 +1,6 @@
 # XOR_10_BOOL
 
-```{index} single: XOR_10_BOOL
-```
+
 
 <img width="1397" height="485" alt="image" src="https://github.com/user-attachments/assets/2a69233b-010f-46f7-af45-759eb7f7fdb4" />
 

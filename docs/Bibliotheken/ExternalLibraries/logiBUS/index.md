@@ -17,5 +17,3 @@
 
 
 ---- 
-```{index} single: logiBUS
-```

@@ -1,7 +1,6 @@
 # E_REND
 
-```{index} single: E_REND
-```
+
 ## 🎧 Podcast
 
 

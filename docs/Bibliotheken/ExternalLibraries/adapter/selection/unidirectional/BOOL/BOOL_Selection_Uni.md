@@ -1,7 +1,6 @@
 # BOOL
 
-```{index} single: BOOL
-```
+
 
 
 

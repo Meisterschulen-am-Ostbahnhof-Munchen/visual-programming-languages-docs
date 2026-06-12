@@ -1,7 +1,6 @@
 # F_UDINT_TO_LREAL
 
-```{index} single: F_UDINT_TO_LREAL
-```
+
 
 <img width="1462" height="212" alt="F_UDINT_TO_LREAL" src="https://github.com/user-attachments/assets/d665c8a5-8333-49ed-8f5d-bd9ef9b69169" />
 

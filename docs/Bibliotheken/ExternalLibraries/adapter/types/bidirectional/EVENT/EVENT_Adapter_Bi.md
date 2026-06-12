@@ -1,7 +1,6 @@
 # Bidirectional EVENT Adapter
 
-```{index} single: Bidirectional EVENT Adapter
-```
+
 
 
 

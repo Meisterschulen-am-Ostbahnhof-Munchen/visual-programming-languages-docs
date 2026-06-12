@@ -1,7 +1,6 @@
 # F_UDINT_TO_BCD_DWORD
 
-```{index} single: F_UDINT_TO_BCD_DWORD
-```
+
 
 <img width="1304" height="185" alt="F_UDINT_TO_BCD_DWORD" src="https://github.com/user-attachments/assets/9028a6e3-4da9-4881-90d3-71ad99cbbef7" />
 

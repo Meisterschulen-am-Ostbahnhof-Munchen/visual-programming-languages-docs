@@ -20,5 +20,3 @@
 * [Software-Drachen zähmen: Warum IEC 61499 die Industrie revolutionieren könnte](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Software-Drachen-zhmen-Warum-IEC-61499-die-Industrie-revolutionieren-knnte-e372ecb)
 
 ---- 
-```{index} single: io
-```

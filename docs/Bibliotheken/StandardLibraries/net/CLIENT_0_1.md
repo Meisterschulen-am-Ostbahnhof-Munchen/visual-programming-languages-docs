@@ -1,7 +1,6 @@
 # CLIENT_0_1
 
-```{index} single: CLIENT_0_1
-```
+
 
 * * * * * * * * * *
 

@@ -1,7 +1,6 @@
 # ButtonActivationCode_S
 
-```{index} single: ButtonActivationCode_S
-```
+
 
 * * * * * * * * * *
 ## Einleitung

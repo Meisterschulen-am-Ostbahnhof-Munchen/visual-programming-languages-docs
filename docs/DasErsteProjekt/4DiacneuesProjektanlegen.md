@@ -1,7 +1,6 @@
 # 4Diac neues Projekt anlegen
 
-```{index} single: 4Diac neues Projekt anlegen
-```
+
 
 **Grundverständnis von 4Diac**
 

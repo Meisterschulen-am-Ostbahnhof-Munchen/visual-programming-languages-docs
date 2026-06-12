@@ -8,15 +8,11 @@ myst:
 ---
 
 
-```{image} _static/logos/Meisterschulen_LogoG1_4c.gif
-:alt: Logo Meisterschulen am Ostbahnhof
-:width: 400px
-```
+<img src="_static/logos/Meisterschulen_LogoG1_4c.gif" alt="Logo Meisterschulen am Ostbahnhof" width="400px" />
 
 # Wiki 4: Visuelle Programmiersprachen
 
-```{index} single: Wiki 4: Visuelle Programmiersprachen
-```
+
 
 
 
@@ -61,10 +57,7 @@ Die **IEC 61499** ist eine internationale Norm für die Echtzeit-Verarbeitung in
 
 **Eclipse 4diac** ist die führende Open-Source-Entwicklungsumgebung für diesen Standard. Sie ermöglicht es, komplexe industrielle Anwendungen effizient zu modellieren und zu verteilen.
 
-```{image} img/powerdby4diac_large_light.png
-:align: center
-:width: 400px
-```
+<p align="center"><img src="img/powerdby4diac_large_light.png" width="400px" /></p>
 
 ---
 
@@ -106,8 +99,6 @@ die Systeme zu steuern und zu richten.
 
 
 
-### Index & Suche
-* {ref}`genindex`
-* {ref}`search`
+
 
 [🏠 Hauptmenü](https://www.ms-muc-docs.de/) | [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/) | [Schnelle Suche (IEC 61499)](https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen/abk%C3%BCrzungen-und-bedeutungen)

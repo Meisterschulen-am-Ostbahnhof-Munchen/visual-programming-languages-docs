@@ -1,5 +1,4 @@
 # Mathematical
 
-```{index} single: Mathematical
-```
+
 

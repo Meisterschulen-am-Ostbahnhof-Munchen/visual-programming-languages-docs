@@ -1,7 +1,6 @@
 # Sonstiges Deutsch
 
-```{index} single: Sonstiges Deutsch
-```
+
 
 ## Artikel und Portale
 

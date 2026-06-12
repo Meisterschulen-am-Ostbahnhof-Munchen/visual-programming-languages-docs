@@ -1,7 +1,6 @@
 # Wago459
 
-```{index} single: Wago459
-```
+
 
 <img width="1338" height="318" alt="image" src="https://github.com/user-attachments/assets/a327cecb-2330-4f40-9961-8c1c1b151097" />
 

@@ -1,7 +1,6 @@
 # I_VDS
 
-```{index} single: I_VDS
-```
+
 
 
 * * * * * * * * * *

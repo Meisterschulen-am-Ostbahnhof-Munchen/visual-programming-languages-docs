@@ -1,7 +1,6 @@
 # ⚖️ Vergleich mit anderen Normen
 
-```{index} single: Normenvergleich
-```
+
 
 
 

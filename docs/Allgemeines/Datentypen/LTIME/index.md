@@ -1,7 +1,6 @@
 # Datentyp-Detail: LTIME
 
-```{index} single: Datentyp-Detail: LTIME
-```
+
 
 ## Beschreibung
 Der Datentyp **LTIME** (Long Time) dient zur Darstellung von hochauflösenden Zeitdauern mit einer Breite von 64 Bit.

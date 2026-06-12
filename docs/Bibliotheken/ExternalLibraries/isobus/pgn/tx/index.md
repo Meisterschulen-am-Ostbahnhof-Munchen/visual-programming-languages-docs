@@ -1,5 +1,4 @@
 # tx
 
-```{index} single: tx
-```
+
 

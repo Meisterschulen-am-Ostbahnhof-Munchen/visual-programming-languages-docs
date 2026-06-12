@@ -2,8 +2,7 @@
 
 # AULI (ULINT)
 
-```{index} single: AULI (ULINT)
-```
+
 ## 🎧 Podcast
 
 * [Außenzahnradmaschinen: Vom Arbeitstier zur Intelligenz der Hydraulik – Herausforderungen, Innovationen & Keplers Erbe](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Auenzahnradmaschinen-Vom-Arbeitstier-zur-Intelligenz-der-Hydraulik--Herausforderungen--Innovationen--Keplers-Erbe-e36opo0)

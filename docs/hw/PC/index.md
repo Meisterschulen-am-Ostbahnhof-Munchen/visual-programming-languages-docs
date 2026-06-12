@@ -1,7 +1,6 @@
 # PC
 
-```{index} single: PC
-```
+
 
 
 

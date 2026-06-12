@@ -1,7 +1,6 @@
 # IEC 61131-3 (Alte Norm)
 
-```{index} single: IEC 61131-3 Vergleich
-```
+
 
 
 

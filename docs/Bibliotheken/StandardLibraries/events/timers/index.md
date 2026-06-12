@@ -1,6 +1,5 @@
 # timers
 
-```{index} single: timers
-```
+
 
 

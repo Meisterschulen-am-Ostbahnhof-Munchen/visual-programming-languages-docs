@@ -1,7 +1,6 @@
 # AX_OR_10
 
-```{index} single: AX_OR_10
-```
+
 
 * * * * * * * * * *
 ## Einleitung

@@ -1,7 +1,6 @@
 # XOR_9_BOOL
 
-```{index} single: XOR_9_BOOL
-```
+
 
 * * * * * * * * * *
 ## Einleitung

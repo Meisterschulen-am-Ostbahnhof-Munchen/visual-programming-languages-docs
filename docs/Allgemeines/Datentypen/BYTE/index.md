@@ -1,7 +1,6 @@
 # Datentyp-Detail: BYTE
 
-```{index} single: Datentyp-Detail: BYTE
-```
+
 
 ## Beschreibung
 Bitfolge der Länge 8

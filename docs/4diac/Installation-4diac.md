@@ -1,7 +1,6 @@
 # 📦 Installation Eclipse 4diac™
 
-```{index} single: Installation Eclipse 4diac™
-```
+
 
 Wie man 4 diac installiert
 

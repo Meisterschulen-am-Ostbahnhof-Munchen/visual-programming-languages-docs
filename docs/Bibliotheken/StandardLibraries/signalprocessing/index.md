@@ -1,5 +1,4 @@
 # signalprocessing
 
-```{index} single: signalprocessing
-```
+
 

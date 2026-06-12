@@ -107,3 +107,27 @@ Da `F_MOVE` generisch ist, muss er in XML-Netzwerkdateien über das Attribut `Da
 
 Ohne dieses Attribut oder mit leerem Wert ist der Baustein ungültig und schlägt in der Validierung fehl.
 
+## Explizite Typkonvertierungen (Casting) in Structured Text (ST)
+
+Wenn eine Zuweisung nicht implizit erlaubt ist (siehe Matrix oben), muss eine explizite Konvertierungsfunktion der Form `[SOURCE_TYPE]_TO_[TARGET_TYPE]` verwendet werden (z. B. `DINT_TO_UDINT`).
+
+### ⚠️ Wichtiger Sonderfall: Bit-Strings zu Numerischen Typen (reinterpret_cast)
+
+In FORTE / 4diac werden Konvertierungen von Bit-Strings (wie `DWORD`, `WORD`, `BYTE`) zu numerischen Typen (`REAL`, `INT`, `DINT` etc.) als Bit-Ebene **`reinterpret_cast`** ausgeführt. Das bedeutet, dass die Bitmuster direkt kopiert werden, ohne den mathematischen Wert anzupassen.
+
+#### Szenario A: Im DWORD ist ein Zahlenwert (z.B. UDINT) gespeichert
+Wenn in einem `DWORD` ein numerischer Ganzzahlwert (z. B. 123) abgelegt ist und du diesen in eine Fließkommazahl (`REAL`) konvertieren möchtest:
+* **Falsch:** `real_var := DWORD_TO_REAL(dword_var);`
+  * *Erklärung:* Dies kopiert die Bits von 123 direkt in das float-Bitmuster. Nach IEEE-754 wird dies als eine extrem kleine, fast unendlich nahe Null interpretiert, was mathematisch falsch ist.
+* **Richtig (doppelte Konvertierung):**
+  ```pascal
+  real_var := UDINT_TO_REAL(DWORD_TO_UDINT(dword_var));
+  ```
+  * *Erklärung:* `DWORD_TO_UDINT` kopiert das Bitmuster (123 bleibt 123 als UDINT). `UDINT_TO_REAL` führt dann die echte mathematische Umwandlung in die Fließkommazahl `123.0` durch.
+
+#### Szenario B: Im DWORD ist bereits ein IEEE-754 Float-Bitmuster gespeichert
+Wenn das `DWORD` direkt das Roh-Bitmuster einer Fließkommazahl enthält (z. B. eingelesen über ein Modbus-Register oder eine Netzwerk-Verbindung):
+* **Richtig:** `real_var := DWORD_TO_REAL(dword_var);`
+  * *Erklärung:* Hier ist der Direkt-Cast per `reinterpret_cast` genau das Gewünschte, um die Roh-Bits direkt als Fließkommazahl zu interpretieren.
+
+

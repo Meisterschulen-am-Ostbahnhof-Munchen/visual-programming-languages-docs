@@ -1,0 +1,38 @@
+site_name: 'Low-Code Übungen AX (test_AX)'
+docs_dir: docs/training1/Ventilsteuerung/4diacIDE-workspace/test_AX
+theme:
+  name: material
+  language: de
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+  features:
+  - navigation.sections
+  - navigation.expand
+  - search.suggest
+  - search.highlight
+plugins:
+- search
+- to-pdf:
+    author: Franz Höpfinger
+    copyright: 2022-2025, Meisterschulen am Ostbahnhof - München
+    cover: true
+    toc_title: Inhaltsverzeichnis
+    toc_level: 3
+markdown_extensions:
+- attr_list
+- md_in_html
+- tables
+- fenced_code
+- toc:
+    permalink: true

@@ -1,0 +1,26 @@
+version: 2
+
+submodules:
+  include: all
+  recursive: true
+
+build:
+  os: ubuntu-24.04
+  tools:
+    python: "3.12"
+  apt_packages:
+    - libpango1.0-dev
+    - libpangoft2-1.0-0
+    - libjpeg-dev
+    - libopenjp2-7-dev
+    - libffi-dev
+
+mkdocs:
+  configuration: mkdocs_test_AX.yml
+
+python:
+   install:
+   - requirements: docs/requirements.txt
+
+formats:
+  - pdf

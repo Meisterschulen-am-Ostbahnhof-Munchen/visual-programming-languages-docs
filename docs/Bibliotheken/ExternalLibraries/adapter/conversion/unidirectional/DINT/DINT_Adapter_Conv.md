@@ -3,12 +3,7 @@
 ```{index} single: DINT Conversion
 ```
 
-```{toctree}
-:maxdepth: 1
 
-ADI_DINT_TO_DI
-ADI_DI_TO_DINT
-```
 
 ## 🎧 Podcast
 

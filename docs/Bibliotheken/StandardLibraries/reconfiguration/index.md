@@ -1,0 +1,5 @@
+# reconfiguration
+
+```{index} single: reconfiguration
+```
+

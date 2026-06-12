@@ -1,0 +1,5 @@
+# const
+
+```{index} single: const
+```
+

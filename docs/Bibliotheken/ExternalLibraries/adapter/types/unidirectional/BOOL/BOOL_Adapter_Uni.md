@@ -3,12 +3,7 @@
 ```{index} single: Unidirectional BOOL Adapter
 ```
 
-```{toctree}
-:maxdepth: 1
 
-A2X
-AX
-```
 
 ## 🎧 Podcast
 

@@ -3,10 +3,7 @@
 ```{index} single: Bidirectional BYTE Adapter
 ```
 
-```{toctree}
-:maxdepth: 1
-AB2
-```
+
 
 
 ## 🛠️ Zugehörige Übungen

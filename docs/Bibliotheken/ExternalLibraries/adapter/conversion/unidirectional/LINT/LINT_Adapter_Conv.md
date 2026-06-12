@@ -3,11 +3,7 @@
 ```{index} single: LINT Conversion
 ```
 
-```{toctree}
-:maxdepth: 1
-ALI_LINT_TO_LI
-ALI_LI_TO_LINT
-```
+
 
 
 ## 🛠️ Zugehörige Übungen

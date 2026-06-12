@@ -3,11 +3,7 @@
 ```{index} single: Unidirectional INT Adapter
 ```
 
-```{toctree}
-:maxdepth: 1
 
-AI
-```
 
 ## 🎧 Podcast
 

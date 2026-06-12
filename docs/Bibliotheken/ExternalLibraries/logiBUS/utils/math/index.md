@@ -1,0 +1,5 @@
+# math
+
+```{index} single: math
+```
+

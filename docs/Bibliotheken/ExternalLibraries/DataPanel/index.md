@@ -1,0 +1,5 @@
+# DataPanel
+
+```{index} single: DataPanel
+```
+

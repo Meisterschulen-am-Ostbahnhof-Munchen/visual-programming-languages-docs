@@ -1,0 +1,6 @@
+# ⚖️ Vergleichsfunktionen
+
+```{index} single: Vergleichsfunktionen
+```
+
+

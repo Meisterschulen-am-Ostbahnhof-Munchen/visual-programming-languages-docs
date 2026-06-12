@@ -1,0 +1,5 @@
+# selection
+
+```{index} single: selection
+```
+

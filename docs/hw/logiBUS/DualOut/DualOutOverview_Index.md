@@ -4,8 +4,3 @@
 ```
 
 
-```{toctree}
-:maxdepth: 1
-DualOut_ESP32
-DualOut_ESP32S3
-```

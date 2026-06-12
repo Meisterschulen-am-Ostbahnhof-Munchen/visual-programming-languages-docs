@@ -3,11 +3,7 @@
 ```{index} single: BYTE
 ```
 
-```{toctree}
-:maxdepth: 1
-ARR08B_TO_ST08B
-ST08B_TO_ARR08B
-```
+
 
 
 ## 🛠️ Zugehörige Übungen

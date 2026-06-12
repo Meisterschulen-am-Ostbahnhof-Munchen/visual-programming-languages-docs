@@ -1,0 +1,5 @@
+# rtevents
+
+```{index} single: rtevents
+```
+

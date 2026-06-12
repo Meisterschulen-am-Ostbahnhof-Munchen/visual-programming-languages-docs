@@ -1,0 +1,5 @@
+# types
+
+```{index} single: types
+```
+

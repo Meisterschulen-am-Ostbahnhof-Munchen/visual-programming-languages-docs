@@ -18,17 +18,7 @@ myst:
 ```{index} single: Wiki 4: Visuelle Programmiersprachen
 ```
 
-```{toctree}
-:maxdepth: 1
-:caption: 'Grundlagen'
-:maxdepth: 2
-Welcome
-Abgrenzung/Abgrenzung
-Visuelle-Programmiersprachen
-norms/norms
-Allgemeines/Allgemeines_Index
-Literatur_Index
-```
+
 
 ## Meisterschulen am Ostbahnhof, München
 
@@ -103,44 +93,18 @@ die Systeme zu steuern und zu richten.
 
 ## 🛠 Navigation
 
-:::{note}
-Dieses Projekt befindet sich in aktiver Entwicklung. Fragen oder Anregungen? 
-Besuchen Sie unser [Discussion Forum](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/discussions).
-:::
+!!! note
+    Dieses Projekt befindet sich in aktiver Entwicklung. Fragen oder Anregungen? 
+    Besuchen Sie unser [Discussion Forum](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/discussions).
 
 
-```{toctree}
-:maxdepth: 1
-:caption: 'Technik & Standards'
-:maxdepth: 2
-FunctionBlock
-Interface/Interface
-4diac/4diac_Index
-runtime/runtime_Index
-hw/hw_Index
-```
 
-```{toctree}
-:maxdepth: 1
-:caption: 'Praxis & Training'
-:maxdepth: 2
-DasErsteProjekt/DasErsteProjekt_Index
-Übungsaufgaben_Index
-Bibliotheken/Bibliotheken_Index
-training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebungen_Index
-training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebungen_Index
-training1/Ventilsteuerung/4diacIDE-workspace/test_VV/Uebungen_doc/Uebungen
-```
+
+
 
 ---
 
-```{toctree}
-:maxdepth: 1
-:caption: 'Index & Suche'
-:maxdepth: 2
-genindex
-search
-```
+
 
 ### Index & Suche
 * {ref}`genindex`

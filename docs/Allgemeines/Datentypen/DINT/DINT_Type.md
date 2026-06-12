@@ -3,11 +3,7 @@
 ```{index} single: Datentyp: DINT
 ```
 
-```{toctree}
-:maxdepth: 1
 
-DINT
-```
 
 ## 🎧 Podcast
 

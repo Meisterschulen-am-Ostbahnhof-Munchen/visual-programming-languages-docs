@@ -2,11 +2,7 @@
 
 ```{index} single: Datentyp: DWORD
 ```
-```{toctree}
-:maxdepth: 1
 
-DWORD
-```
 
 
 

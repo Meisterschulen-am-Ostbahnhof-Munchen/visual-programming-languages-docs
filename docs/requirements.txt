@@ -1,25 +1,3 @@
-linkify
-rtd
-jinja2
-requests
-docutils
-sphinxcontrib-serializinghtml
-myst_parser
-sphinx-rtd-theme
-sphinx-rtd-size
-sphinx<8.0
-sphinxcontrib-websupport
-sphinx_design
-sphinxext.rediraffe
-sphinxcontrib.mermaid
-sphinxcontrib.googleanalytics
-sphinxext.opengraph
-sphinx_pyscript
-sphinx_tippy
-sphinx-markdown-tables
-snowballstemmer
-clang
-setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
-requests>=2.32.0 # not directly required, pinned by Snyk to avoid a vulnerability
-urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
-zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
+mkdocs-material
+mkdocs-to-pdf
+weasyprint

@@ -1,0 +1,5 @@
+# wago
+
+```{index} single: wago
+```
+

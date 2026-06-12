@@ -1,14 +1,7 @@
 # Unidirectional EVENT Adapter Conversion
 
 
-```{toctree}
-:maxdepth: 1
 
-AE_EVENT_TO_E
-AE_E_TO_EVENT
-ASR_2EVENTS_TO_SR
-ASR_SR_TO_2EVENTS
-```
 
 ## 🎧 Podcast
 

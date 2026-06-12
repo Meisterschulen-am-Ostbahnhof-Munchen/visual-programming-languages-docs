@@ -1,0 +1,5 @@
+# Auxiliary
+
+```{index} single: Auxiliary
+```
+

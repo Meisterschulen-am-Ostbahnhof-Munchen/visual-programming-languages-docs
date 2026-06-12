@@ -3,12 +3,7 @@
 ```{index} single: SINT Conversion
 ```
 
-```{toctree}
-:maxdepth: 1
 
-AS_SINT_TO_S
-AS_S_TO_SINT
-```
 
 ## 🎧 Podcast
 

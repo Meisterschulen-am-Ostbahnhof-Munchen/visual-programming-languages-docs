@@ -3,12 +3,7 @@
 ```{index} single: Unidirectional EVENT Adapter
 ```
 
-```{toctree}
-:maxdepth: 1
 
-AE
-ASR
-```
 
 ## 🎧 Podcast
 

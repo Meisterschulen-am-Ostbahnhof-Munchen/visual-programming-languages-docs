@@ -1,0 +1,5 @@
+# status
+
+```{index} single: status
+```
+

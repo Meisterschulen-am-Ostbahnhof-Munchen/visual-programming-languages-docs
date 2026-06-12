@@ -1,0 +1,5 @@
+# signals
+
+```{index} single: signals
+```
+

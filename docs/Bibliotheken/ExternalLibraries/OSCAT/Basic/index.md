@@ -1,0 +1,5 @@
+# Basic
+
+```{index} single: Basic
+```
+

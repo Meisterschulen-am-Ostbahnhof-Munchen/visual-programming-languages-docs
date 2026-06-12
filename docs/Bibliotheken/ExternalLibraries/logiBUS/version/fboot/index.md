@@ -1,0 +1,5 @@
+# fboot
+
+```{index} single: fboot
+```
+

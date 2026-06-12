@@ -1,0 +1,5 @@
+# sequence
+
+```{index} single: sequence
+```
+

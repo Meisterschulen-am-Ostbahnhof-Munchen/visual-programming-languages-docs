@@ -3,11 +3,7 @@
 ```{index} single: Unidirectional REAL Adapter
 ```
 
-```{toctree}
-:maxdepth: 1
 
-AR
-```
 
 ## 🎧 Podcast
 

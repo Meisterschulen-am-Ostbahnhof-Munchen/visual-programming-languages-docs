@@ -1,0 +1,5 @@
+# bidirectional
+
+```{index} single: bidirectional
+```
+

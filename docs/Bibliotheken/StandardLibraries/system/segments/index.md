@@ -1,0 +1,5 @@
+# segments
+
+```{index} single: segments
+```
+

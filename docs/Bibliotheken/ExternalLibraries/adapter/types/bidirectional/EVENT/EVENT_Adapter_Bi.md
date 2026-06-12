@@ -3,12 +3,7 @@
 ```{index} single: Bidirectional EVENT Adapter
 ```
 
-```{toctree}
-:maxdepth: 1
 
-AE2
-ASR2
-```
 
 ## 🎧 Podcast
 

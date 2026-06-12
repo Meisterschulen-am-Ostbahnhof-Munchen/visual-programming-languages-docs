@@ -1,0 +1,5 @@
+# rx
+
+```{index} single: rx
+```
+

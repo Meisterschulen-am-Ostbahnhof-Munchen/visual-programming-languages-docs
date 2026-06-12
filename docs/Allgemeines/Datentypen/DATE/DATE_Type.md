@@ -3,11 +3,7 @@
 ```{index} single: Datentyp: DATE
 ```
 
-```{toctree}
-:maxdepth: 1
 
-DATE
-```
 
 ## 🎧 Podcast
 

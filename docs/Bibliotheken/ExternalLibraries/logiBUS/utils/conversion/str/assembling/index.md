@@ -1,0 +1,5 @@
+# assembling
+
+```{index} single: assembling
+```
+

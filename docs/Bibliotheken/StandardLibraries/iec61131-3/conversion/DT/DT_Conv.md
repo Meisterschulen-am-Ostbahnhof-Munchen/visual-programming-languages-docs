@@ -3,12 +3,7 @@
 ```{index} single: DT Konvertierungen
 ```
 
-```{toctree}
-:maxdepth: 1
 
-F_DT_TO_DATE
-F_DT_TO_TOD
-```
 
 ## 🎧 Podcast
 

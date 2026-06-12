@@ -1,0 +1,5 @@
+# MyLib
+
+```{index} single: MyLib
+```
+

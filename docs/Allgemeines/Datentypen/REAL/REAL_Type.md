@@ -3,11 +3,7 @@
 ```{index} single: Datentyp: REAL
 ```
 
-```{toctree}
-:maxdepth: 1
 
-REAL
-```
 
 ## 🎧 Podcast
 

@@ -3,11 +3,7 @@
 ```{index} single: Unidirectional SINT Adapter
 ```
 
-```{toctree}
-:maxdepth: 1
 
-AS
-```
 
 ## 🎧 Podcast
 

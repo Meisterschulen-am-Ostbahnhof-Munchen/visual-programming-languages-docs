@@ -1,0 +1,5 @@
+# rgb
+
+```{index} single: rgb
+```
+

@@ -3,11 +3,7 @@
 ```{index} single: Datentyp: SINT
 ```
 
-```{toctree}
-:maxdepth: 1
 
-SINT
-```
 
 ## 🎧 Podcast
 

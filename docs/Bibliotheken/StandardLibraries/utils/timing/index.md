@@ -1,0 +1,5 @@
+# timing
+
+```{index} single: timing
+```
+

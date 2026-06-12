@@ -3,12 +3,7 @@
 ```{index} single: BOOL
 ```
 
-```{toctree}
-:maxdepth: 1
 
-ARR08X_TO_ST08X
-ST08X_TO_ARR08X
-```
 
 ## 🎧 Podcast
 

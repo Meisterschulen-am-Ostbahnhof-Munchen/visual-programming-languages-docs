@@ -3,22 +3,7 @@
 ```{index} single: REAL Konvertierungen
 ```
 
-```{toctree}
-:maxdepth: 1
 
-F_REAL_AS_STRING
-F_REAL_AS_WSTRING
-F_REAL_TO_DINT
-F_REAL_TO_DWORD
-F_REAL_TO_INT
-F_REAL_TO_LINT
-F_REAL_TO_LREAL
-F_REAL_TO_SINT
-F_REAL_TO_UDINT
-F_REAL_TO_UINT
-F_REAL_TO_ULINT
-F_REAL_TO_USINT
-```
 
 ## 🎧 Podcast
 

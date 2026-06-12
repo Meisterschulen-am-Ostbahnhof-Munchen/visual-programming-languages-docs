@@ -1,0 +1,5 @@
+# logging
+
+```{index} single: logging
+```
+

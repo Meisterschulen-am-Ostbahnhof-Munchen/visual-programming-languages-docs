@@ -3,12 +3,7 @@
 ```{index} single: INT Conversion
 ```
 
-```{toctree}
-:maxdepth: 1
 
-AI_INT_TO_I
-AI_I_TO_INT
-```
 
 ## 🎧 Podcast
 

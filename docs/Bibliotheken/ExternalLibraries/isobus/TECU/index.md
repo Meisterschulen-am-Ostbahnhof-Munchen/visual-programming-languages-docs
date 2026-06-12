@@ -1,0 +1,5 @@
+# TECU
+
+```{index} single: TECU
+```
+

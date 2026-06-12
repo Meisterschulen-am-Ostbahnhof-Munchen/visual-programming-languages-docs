@@ -1,0 +1,5 @@
+# devices
+
+```{index} single: devices
+```
+

@@ -3,11 +3,7 @@
 ```{index} single: USINT Conversion
 ```
 
-```{toctree}
-:maxdepth: 1
-AUS_USINT_TO_US
-AUS_US_TO_USINT
-```
+
 
 
 ## 🛠️ Zugehörige Übungen

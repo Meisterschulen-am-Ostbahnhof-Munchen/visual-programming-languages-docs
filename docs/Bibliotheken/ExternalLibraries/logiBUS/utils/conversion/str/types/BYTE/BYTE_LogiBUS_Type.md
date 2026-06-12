@@ -3,16 +3,7 @@
 ```{index} single: BYTE
 ```
 
-```{toctree}
-:maxdepth: 1
-ST01B
-ST02B
-ST04B
-ST08B
-ST16B
-ST32B
-ST64B
-```
+
 
 
 ## 🛠️ Zugehörige Übungen

@@ -1,0 +1,5 @@
+# timed
+
+```{index} single: timed
+```
+

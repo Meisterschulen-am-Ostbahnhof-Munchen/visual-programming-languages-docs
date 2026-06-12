@@ -3,11 +3,7 @@
 ```{index} single: Datentyp: BOOL
 ```
 
-```{toctree}
-:maxdepth: 1
 
-BOOL
-```
 
 ## 🎧 Podcast
 

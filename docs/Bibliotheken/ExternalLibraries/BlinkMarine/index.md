@@ -1,0 +1,5 @@
+# BlinkMarine
+
+```{index} single: BlinkMarine
+```
+

@@ -1,0 +1,5 @@
+# embrick
+
+```{index} single: embrick
+```
+

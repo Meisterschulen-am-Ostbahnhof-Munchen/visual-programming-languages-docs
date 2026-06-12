@@ -3,11 +3,7 @@
 ```{index} single: LREAL Conversion
 ```
 
-```{toctree}
-:maxdepth: 1
-ALR_LREAL_TO_LR
-ALR_LR_TO_LREAL
-```
+
 
 
 ## 🛠️ Zugehörige Übungen

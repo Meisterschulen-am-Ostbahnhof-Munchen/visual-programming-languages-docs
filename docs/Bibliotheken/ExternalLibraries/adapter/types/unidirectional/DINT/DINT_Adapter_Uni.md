@@ -3,11 +3,7 @@
 ```{index} single: Unidirectional DINT Adapter
 ```
 
-```{toctree}
-:maxdepth: 1
 
-ADI
-```
 
 ## 🎧 Podcast
 

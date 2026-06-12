@@ -23,12 +23,12 @@ theme:
   - search.highlight
 plugins:
 - search
-- to-pdf:
-    author: Franz Höpfinger
-    copyright: 2022-2025, Meisterschulen am Ostbahnhof - München
-    cover: true
-    toc_title: Inhaltsverzeichnis
-    toc_level: 3
+# - to-pdf:
+#     author: Franz Höpfinger
+#     copyright: 2022-2025, Meisterschulen am Ostbahnhof - München
+#     cover: true
+#     toc_title: Inhaltsverzeichnis
+#     toc_level: 3
 markdown_extensions:
 - attr_list
 - md_in_html

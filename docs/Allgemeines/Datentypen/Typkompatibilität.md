@@ -86,3 +86,24 @@ Lang-Typen akzeptieren auch die kurzen Varianten:
 2. **Keine Verengung:** Ein größerer Typ darf nicht auf einen kleineren Typ verbunden werden (z. B. `UDINT` → `UINT` ist verboten).
 3. **Sign-Grenze:** Signed und Unsigned Integer sind nicht kompatibel (z. B. `INT` → `UINT` ist verboten).
 4. **Bool-Sonderregel:** `BOOL` darf auf jeden Bit-Typ (`BYTE`, `WORD`, `DWORD`, `LWORD`) verbunden werden.
+
+## Veraltete Konvertierungen & F_MOVE
+
+### 1. Deprecated Konvertierungsbausteine
+Alle alten Identitäts-Konvertierungsbausteine aus dem Ordner `convert-1.0.0` (wie z. B. `BOOL2BOOL`, `INT2INT`, `DINT2DINT`, `REAL2REAL`, `STRING2STRING` etc.) sind **veraltet (deprecated)** und dürfen nicht mehr verwendet werden.
+
+### 2. Verwendung von `F_MOVE`
+Für das Kopieren bzw. Weiterleiten von Werten desselben Typs muss stattdessen der generische Baustein `F_MOVE` (`iec61131::selection::F_MOVE`) verwendet werden.
+
+### 3. Konfiguration von `F_MOVE`
+Da `F_MOVE` generisch ist, muss er in XML-Netzwerkdateien über das Attribut `DataType` auf den gewünschten Zieldatentyp konfiguriert werden. 
+
+**Beispiel-Konfiguration in der XML:**
+```xml
+<FB Name="MeinFMove" Type="iec61131::selection::F_MOVE">
+    <Attribute Name="DataType" Value="BOOL"/> <!-- Hier Datentyp konfigurieren -->
+</FB>
+```
+
+Ohne dieses Attribut oder mit leerem Wert ist der Baustein ungültig und schlägt in der Validierung fehl.
+

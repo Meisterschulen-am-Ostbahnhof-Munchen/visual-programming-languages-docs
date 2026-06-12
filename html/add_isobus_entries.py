@@ -93,7 +93,7 @@ def update_json():
                 ext_link_de_url = f"https://isobus-studio.com/isobus-wiki/{ext_link_en_match.group(1)}"
 
         # Construct Internal Link
-        html_filename = filename.replace('.md', '.html')
+        html_filename = filename.replace('.md', '/')
         link_int_url = f"{base_url_int}{html_filename}"
 
         # Construct Entry

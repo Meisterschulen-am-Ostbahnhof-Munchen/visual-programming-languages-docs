@@ -111,7 +111,7 @@ def update_json_with_exercises():
                     if "_AX" in ex:
                         subfolder = "test_AX"
                     
-                    url = f"{base_url}{subfolder}/Uebungen_doc/{ex}.html"
+                    url = f"{base_url}{subfolder}/Uebungen_doc/{ex}/"
                     links.append(f'<a href="{url}" target="_blank">{ex}</a>')
                 
                 item['ex'] = ", ".join(links)

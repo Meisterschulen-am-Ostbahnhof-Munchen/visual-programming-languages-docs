@@ -30,7 +30,10 @@ def get_linked_files_and_dirs(data):
                 if url.startswith(BASE_URL):
                     # Convert URL to relative path
                     rel_path = url[len(BASE_URL):].split('#')[0] # remove anchor
-                    rel_path = rel_path.replace('.html', '.md')
+                    if rel_path.endswith('/'):
+                        rel_path = rel_path[:-1] + '.md'
+                    elif '.html' in rel_path:
+                        rel_path = rel_path.replace('.html', '.md')
                     linked_files.add(rel_path)
                     
                     # Track which category this directory usually belongs to
@@ -106,7 +109,7 @@ def scan_and_add_missing():
             "mean": f"{term} (Auto-added)", # Placeholder description
             "ex": "",
             "exdoc": "",
-            "link_int": f'<a href="{BASE_URL}{rel_path.replace(".md", ".html")}" target="_blank">{term}</a>',
+            "link_int": f'<a href="{BASE_URL}{rel_path.replace(".md", "/")}" target="_blank">{term}</a>',
             "vid": "",
             "ext_de": "",
             "ext_en": "",

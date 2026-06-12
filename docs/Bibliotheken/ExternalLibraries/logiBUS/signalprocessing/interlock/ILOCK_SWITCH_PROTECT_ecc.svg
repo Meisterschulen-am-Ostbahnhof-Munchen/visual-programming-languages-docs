@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: ILOCK_SWITCH_PROTECT</text>
+<rect x="10.0" y="367.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="50.0" y="383.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">STOP</text>
+<rect x="385.0" y="547.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="425.0" y="563.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">DOWN</text>
+<rect x="475.0" y="547.0" width="161" height="36" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M465.0,563.0 L475.0,558.0" stroke="#000000" stroke-width="2" />
+<path d="M555.0,547.0 L555.0,583.0" stroke="#cccccc" stroke-width="1" />
+<rect x="475.0" y="551.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="515.0" y="559.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">DOWN</text>
+<rect x="556.0" y="551.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="596.0" y="559.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_DOWN</text>
+<path d="M475.0,565.0 L636.0,565.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="475.0" y="565.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="515.0" y="573.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="556.0" y="565.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="596.0" y="573.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_UP</text>
+<rect x="430.0" y="382.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="470.0" y="398.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">PROTECT</text>
+<rect x="520.0" y="382.0" width="167.0" height="50" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M510.0,398.0 L520.0,393.0" stroke="#000000" stroke-width="2" />
+<path d="M600.0,382.0 L600.0,432.0" stroke="#cccccc" stroke-width="1" />
+<rect x="520.0" y="386.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="560.0" y="394.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">STOP</text>
+<rect x="601.0" y="386.0" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="644.0" y="394.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_UP</text>
+<path d="M520.0,400.0 L687.0,400.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="520.0" y="400.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="560.0" y="408.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="601.0" y="400.0" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="644.0" y="408.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_DOWN</text>
+<path d="M520.0,414.0 L687.0,414.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="520.0" y="414.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="560.0" y="422.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="601.0" y="414.0" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="644.0" y="422.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.START</text>
+<rect x="445.0" y="217.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="485.0" y="233.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">UP</text>
+<rect x="535.0" y="217.0" width="161" height="36" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M525.0,233.0 L535.0,228.0" stroke="#000000" stroke-width="2" />
+<path d="M615.0,217.0 L615.0,253.0" stroke="#cccccc" stroke-width="1" />
+<rect x="535.0" y="221.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="575.0" y="229.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">UP</text>
+<rect x="616.0" y="221.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="656.0" y="229.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_UP</text>
+<path d="M535.0,235.0 L696.0,235.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="535.0" y="235.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="575.0" y="243.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="616.0" y="235.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="656.0" y="243.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_DOWN</text>
+<rect x="910.0" y="382.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="950.0" y="398.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">EVAL</text>
+<path d="M90.0,383.0 C254.0059755008945,383.0,477.5,413.00597550089446,477.5,249.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M477.5,249.0 L481.5,255.9282032302755 L473.5,255.9282032302755 L477.5,249.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(345.25224081283545,377.50224081283545)">
+<rect x="-43.0" y="-7.5" width="86.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_UP[DI_UP]</text>
+</g>
+<path d="M90.0,383.0 C236.50720118820098,383.0,417.5,400.49279881179905,417.5,547.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M417.5,547.0 L413.5,540.0717967697245 L421.5,540.0717967697245 L417.5,547.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(308.6902004455754,410.05979955442467)">
+<rect x="-56.0" y="-7.5" width="112.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_DOWN[DI_DOWN]</text>
+</g>
+<path d="M477.5,249.0 C477.5,329.0,440.0,302.0,440.0,382.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M440.0,382.0 L436.0,375.0717967697245 L444.0,375.0717967697245 L440.0,382.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(458.75,315.5)">
+<rect x="-56.0" y="-7.5" width="112.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_UP[NOT DI_UP]</text>
+</g>
+<path d="M492.5,249.0 C492.5,344.0,455.0,287.0,455.0,382.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M455.0,382.0 L451.0,375.0717967697245 L459.0,375.0717967697245 L455.0,382.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(473.75,333.5)">
+<rect x="-56.0" y="-7.5" width="112.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_DOWN[DI_DOWN]</text>
+</g>
+<path d="M417.5,547.0 C417.5,467.0,470.0,494.0,470.0,414.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M470.0,414.0 L474.0,420.9282032302755 L466.0,420.9282032302755 L470.0,414.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(443.75,480.5)">
+<rect x="-69.0" y="-7.5" width="138.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_DOWN[NOT DI_DOWN]</text>
+</g>
+<path d="M432.5,547.0 C432.5,452.0,485.0,509.0,485.0,414.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M485.0,414.0 L489.0,420.9282032302755 L481.0,420.9282032302755 L485.0,414.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(458.75,498.5)">
+<rect x="-43.0" y="-7.5" width="86.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_UP[DI_UP]</text>
+</g>
+<path d="M510.0,390.5 C550.0,390.5,950.0,342.0,950.0,382.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M950.0,382.0 L946.0,375.0717967697245 L954.0,375.0717967697245 L950.0,382.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(745.0,371.25)">
+<rect x="-52.75" y="-7.5" width="105.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.TimeOut</text>
+</g>
+<path d="M910.0,398.0 C732.6834469092071,398.0,492.5,426.316553090793,492.5,249.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M492.5,249.0 L496.5,255.9282032302755 L488.5,255.9282032302755 L492.5,249.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(634.7562925909526,389.9937074090474)">
+<rect x="-78.75" y="-7.5" width="157.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[DI_UP AND NOT DI_DOWN]</text>
+</g>
+<path d="M910.0,398.0 C709.9171171739072,398.0,432.5,346.9171171739072,432.5,547.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M432.5,547.0 L428.5,540.0717967697245 L436.5,540.0717967697245 L432.5,547.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(596.2189189402152,397.4689189402152)">
+<rect x="-78.75" y="-7.5" width="157.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[DI_DOWN AND NOT DI_UP]</text>
+</g>
+<path d="M910.0,398.0 C870.0,398.0,50.0,439.0,50.0,399.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M50.0,399.0 L54.0,405.9282032302755 L46.0,405.9282032302755 L50.0,399.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(465.0,413.5)">
+<rect x="-91.75" y="-7.5" width="183.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[NOT DI_UP AND NOT DI_DOWN]</text>
+</g>
+<path d="M910.0,405.5 C730.7308306467705,405.5,500.0,202.73083064677047,500.0,382.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M500.0,382.0 L496.0,375.0717967697245 L504.0,375.0717967697245 L500.0,382.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(637.774061492539,326.5240614925389)">
+<rect x="-65.75" y="-7.5" width="131.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[DI_UP AND DI_DOWN]</text>
+</g>
+</svg>

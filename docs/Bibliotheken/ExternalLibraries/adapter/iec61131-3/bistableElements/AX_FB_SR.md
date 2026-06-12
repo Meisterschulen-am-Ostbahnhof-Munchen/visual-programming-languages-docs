@@ -3,7 +3,9 @@
 [Bild des Funktionsbausteins AX_FB_SR, falls vorhanden]
 
 
-![AX_FB_SR](.././AX_FB_SR.svg)
+
+
+![AX_FB_SR_ecc](./AX_FB_SR_ecc.svg)
 
 * * * * * * * * * *
 

@@ -2,6 +2,9 @@
 
 
 
+
+![LED_FREQ](./LED_FREQ.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

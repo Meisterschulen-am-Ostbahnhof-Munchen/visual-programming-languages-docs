@@ -3,6 +3,7 @@
 
 
 
+
 ## 📺 Video
 
 * [Decoding the datasheet](https://www.youtube.com/watch?v=0Ed9I68F2tM)

@@ -4,6 +4,9 @@
 
 <img width="1352" height="215" alt="image" src="https://github.com/user-attachments/assets/f6ca4174-d362-4551-a80d-487df811f414" />
 
+
+![ARR08X_TO_ST08X](./ARR08X_TO_ST08X.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Dieser Funktionsblock (FB) dient dazu, ein Array von 8 BOOL-Werten (ARR08X) in eine entsprechende Struktur von 8 BOOL-Werten (ST08X) umzuwandeln. Er ermöglicht eine einfache Konvertierung zwischen diesen beiden Datenformaten.

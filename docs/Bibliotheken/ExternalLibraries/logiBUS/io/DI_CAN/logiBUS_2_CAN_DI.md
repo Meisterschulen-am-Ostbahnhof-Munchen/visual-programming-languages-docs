@@ -2,6 +2,9 @@
 
 
 
+
+![logiBUS_2_CAN_DI](./logiBUS_2_CAN_DI.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

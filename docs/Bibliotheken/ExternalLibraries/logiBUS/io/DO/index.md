@@ -4,6 +4,7 @@
 
 
 
+
 ## 🎧 Podcast
 
 * [R_TRIG & F_TRIG: So erkennen SPS-Steuerungen Signalflanken zuverlässig – ohne Doppelbehandlung](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/R_TRIG--F_TRIG-So-erkennen-SPS-Steuerungen-Signalflanken-zuverlssig--ohne-Doppelbehandlung-e370kqh)
@@ -15,3 +16,5 @@
 ## 📺 Video
 
 * [The downfall of Lanz](https://www.youtube.com/watch?v=wL8zIUJQ9-E)
+
+

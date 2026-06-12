@@ -11,3 +11,4 @@
 * [From "Mass Errors" to Masterpiece: Streamlining Industrial Software by Eliminating Mapping](https://podcasters.spotify.com/pod/show/logibus/episodes/From-Mass-Errors-to-Masterpiece-Streamlining-Industrial-Software-by-Eliminating-Mapping-e3759t4)
 * [Logibus Revolution: Unpacking the "No Mapping" Future and Streamlined Development](https://podcasters.spotify.com/pod/show/logibus/episodes/Logibus-Revolution-Unpacking-the-No-Mapping-Future-and-Streamlined-Development-e375aph)
 * [Logibus Unleashed: How Eliminating "Mapping" Simplifies Complex Systems and Boosts Usability](https://podcasters.spotify.com/pod/show/logibus/episodes/Logibus-Unleashed-How-Eliminating-Mapping-Simplifies-Complex-Systems-and-Boosts-Usability-e375a3m)
+

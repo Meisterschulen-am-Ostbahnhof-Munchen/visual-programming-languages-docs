@@ -1,7 +1,9 @@
 # AX_FB_F_TRIG
 
 
-![AX_FB_F_TRIG](.././AX_FB_F_TRIG.svg)
+
+
+![AX_FB_F_TRIG_ecc](./AX_FB_F_TRIG_ecc.svg)
 
 *Hier Platzhalter für das Bild des Funktionsblocks einfügen, falls vorhanden*
 

@@ -7,6 +7,9 @@ Die Globalkonstanten `Computers` stellen eine Sammlung von vordefinierten Netzwe
 ## Schnittstellenstruktur
 Bei Globalkonstanten handelt es sich nicht um einen Funktionsbaustein im klassischen Sinne, daher existieren keine Ereignis- oder Datenschnittstellen. Stattdessen werden Konstantendeklarationen bereitgestellt, die projektweit zur Verfügung stehen.
 
+
+![Computers](./Computers.svg)
+
 ### **Daten-Eingänge**
 *Nicht zutreffend.* Konstanten sind feste Werte und besitzen keine Eingänge.
 

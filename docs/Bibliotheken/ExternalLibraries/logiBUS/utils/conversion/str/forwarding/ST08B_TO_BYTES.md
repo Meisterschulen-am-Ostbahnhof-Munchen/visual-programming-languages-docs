@@ -4,6 +4,9 @@
 
 <img width="1031" height="423" alt="image" src="https://github.com/user-attachments/assets/d97ce166-0caf-452f-8aa8-52ba1b60245d" />
 
+
+![ST08B_TO_BYTES](./ST08B_TO_BYTES.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Dieser Funktionsblock dient dazu, die einzelnen 8 Bytes einer speziellen 8-Byte-Struktur (`ST08B`) zu extrahieren und als separate Byte-Ausgänge bereitzustellen. Er ermöglicht eine detaillierte Aufteilung und Weiterverarbeitung von strukturierten 8-Byte-Daten.

@@ -2,6 +2,9 @@
 
 
 
+
+![logiBUS_PI](./logiBUS_PI.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `logiBUS_PI` ist eine Sammlung globaler Konstanten für die Konfiguration von Puls-Eingängen (Pulse Inputs) in logiBUS-Systemen. Er definiert vorkonfigurierte Strukturen, die die physischen Eingangspins eines logiBUS I/O-Moduls repräsentieren. Diese Konstanten dienen der einfachen und fehlerfreien Zuweisung von Hardware-Pins in übergeordneten Funktionsblöcken oder Anwendungen.

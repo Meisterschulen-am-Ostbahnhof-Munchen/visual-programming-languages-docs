@@ -1,7 +1,6 @@
 # LinksRechts_AX
 
 
-![LinksRechts_AX](.././LinksRechts_AX.svg)
 
 
 ![LinksRechts_AX_ecc](./LinksRechts_AX_ecc.svg)

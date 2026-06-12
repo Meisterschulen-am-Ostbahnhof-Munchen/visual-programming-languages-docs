@@ -4,6 +4,9 @@
 
 <img width="1102" height="362" alt="image" src="https://github.com/user-attachments/assets/a1d78d97-bc58-4056-8fa5-6127a949d1fc" />
 
+
+![BYTES_TO_ARR08B](./BYTES_TO_ARR08B.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `BYTES_TO_ARR08B` dient der Konvertierung von acht einzelnen `BYTE`-Werten in ein Array vom Typ `BYTE` mit acht Elementen. Er ist Teil einer Sammlung von Hilfsfunktionen für Datenkonvertierungen und Array-Operationen.

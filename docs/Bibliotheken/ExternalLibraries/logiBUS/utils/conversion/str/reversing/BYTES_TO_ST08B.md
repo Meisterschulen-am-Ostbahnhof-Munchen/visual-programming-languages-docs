@@ -4,6 +4,9 @@
 
 <img width="1047" height="423" alt="image" src="https://github.com/user-attachments/assets/d2c1b827-1e6e-4e74-b89f-c8b60ae0824f" />
 
+
+![BYTES_TO_ST08B](./BYTES_TO_ST08B.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Dieser Funktionsbaustein dient dazu, acht individuelle BYTE-Werte zu einer einzigen 8-BYTE-Struktur vom Typ `ST08B` zusammenzuführen. Er ermöglicht eine geordnete Überführung von diskreten Byte-Werten in ein strukturiertes Datenformat.

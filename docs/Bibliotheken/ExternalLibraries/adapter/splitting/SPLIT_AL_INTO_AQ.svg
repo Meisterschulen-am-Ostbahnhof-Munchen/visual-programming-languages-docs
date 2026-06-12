@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1280" height="967" viewBox="-540 -20 1280 967">
+<defs>
+</defs>
+<rect x="3" y="3" width="200" height="917" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H200 V30 H194 V70 H200 V917 H0 V70 H6 V30 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L200,30" stroke="#000000" stroke-width="1" />
+<text x="100.0" y="48.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">SPLIT_AL_INTO_AQ</text>
+<text x="100.0" y="62.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<rect x="-5.0" y="82.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="12" y="91" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AL</text>
+<text x="-69" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">LWORD Input</text>
+<rect x="195.0" y="82.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="91" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_00</text>
+<text x="215" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 0</text>
+<rect x="195.0" y="108.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="117" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_01</text>
+<text x="215" y="116" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="116" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 1</text>
+<rect x="195.0" y="134.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="143" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_02</text>
+<text x="215" y="142" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="142" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 2</text>
+<rect x="195.0" y="160.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="169" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_03</text>
+<text x="215" y="168" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="168" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 3</text>
+<rect x="195.0" y="186.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="195" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_04</text>
+<text x="215" y="194" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="194" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 4</text>
+<rect x="195.0" y="212.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="221" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_05</text>
+<text x="215" y="220" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="220" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 5</text>
+<rect x="195.0" y="238.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="247" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_06</text>
+<text x="215" y="246" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="246" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 6</text>
+<rect x="195.0" y="264.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="273" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_07</text>
+<text x="215" y="272" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="272" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 7</text>
+<rect x="195.0" y="290.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="299" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_08</text>
+<text x="215" y="298" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="298" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 8</text>
+<rect x="195.0" y="316.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="325" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_09</text>
+<text x="215" y="324" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="324" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 9</text>
+<rect x="195.0" y="342.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="351" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_10</text>
+<text x="215" y="350" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="350" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 10</text>
+<rect x="195.0" y="368.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="377" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_11</text>
+<text x="215" y="376" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="376" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 11</text>
+<rect x="195.0" y="394.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="403" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_12</text>
+<text x="215" y="402" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="402" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 12</text>
+<rect x="195.0" y="420.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="429" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_13</text>
+<text x="215" y="428" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="428" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 13</text>
+<rect x="195.0" y="446.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="455" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_14</text>
+<text x="215" y="454" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="454" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 14</text>
+<rect x="195.0" y="472.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="481" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_15</text>
+<text x="215" y="480" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="480" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 15</text>
+<rect x="195.0" y="498.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="507" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_16</text>
+<text x="215" y="506" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="506" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 16</text>
+<rect x="195.0" y="524.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="533" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_17</text>
+<text x="215" y="532" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="532" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 17</text>
+<rect x="195.0" y="550.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="559" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_18</text>
+<text x="215" y="558" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="558" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 18</text>
+<rect x="195.0" y="576.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="585" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_19</text>
+<text x="215" y="584" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="584" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 19</text>
+<rect x="195.0" y="602.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="611" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_20</text>
+<text x="215" y="610" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="610" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 20</text>
+<rect x="195.0" y="628.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="637" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_21</text>
+<text x="215" y="636" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="636" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 21</text>
+<rect x="195.0" y="654.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="663" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_22</text>
+<text x="215" y="662" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="662" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 22</text>
+<rect x="195.0" y="680.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="689" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_23</text>
+<text x="215" y="688" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="688" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 23</text>
+<rect x="195.0" y="706.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="715" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_24</text>
+<text x="215" y="714" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="714" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 24</text>
+<rect x="195.0" y="732.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="741" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_25</text>
+<text x="215" y="740" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="740" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 25</text>
+<rect x="195.0" y="758.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="767" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_26</text>
+<text x="215" y="766" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="766" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 26</text>
+<rect x="195.0" y="784.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="793" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_27</text>
+<text x="215" y="792" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="792" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 27</text>
+<rect x="195.0" y="810.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="819" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_28</text>
+<text x="215" y="818" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="818" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 28</text>
+<rect x="195.0" y="836.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="845" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_29</text>
+<text x="215" y="844" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="844" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 29</text>
+<rect x="195.0" y="862.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="871" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_30</text>
+<text x="215" y="870" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="870" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 30</text>
+<rect x="195.0" y="888.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="897" font-size="12" text-anchor="end" font-family="Consolas, monospace">QUARTER_BYTE_31</text>
+<text x="215" y="896" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AQ</text>
+<text x="285" y="896" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Quarter 31</text>
+</svg>

@@ -4,6 +4,9 @@
 
 <img width="1633" height="341" alt="image" src="https://github.com/user-attachments/assets/637ba12a-c1ae-4cc7-a7c5-06b2888347d5" />
 
+
+![E_SREN_ecc](./E_SREN_ecc.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der E_SREN (Event-driven quad-state) ist ein ereignisgesteuerter Funktionsblock, der einen Ausgang mit vier definierten Zuständen steuert. Er reagiert auf verschiedene Eingangsereignisse und setzt seinen Ausgang entsprechend auf einen der vier Zustände: Aktiviert (`SET`), Deaktiviert (`RESET`), Fehler (`ERROR`) oder Keine Aktion (`NONE`). Der Baustein ist besonders für Anwendungen geeignet, in denen ein Signal mehrere Betriebszustände repräsentieren muss, wie z.B. in Überwachungs- oder Steuerungssystemen.

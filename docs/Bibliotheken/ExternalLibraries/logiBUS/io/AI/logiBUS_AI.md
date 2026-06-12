@@ -2,6 +2,9 @@
 
 
 
+
+![logiBUS_AI](./logiBUS_AI.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Die logiBUS_AI GlobalConstants definieren eine Sammlung von Konstanten für die Konfiguration von analogen Eingängen im logiBUS-System. Diese Konstanten werden zur einfachen und einheitlichen Referenzierung der analogen Eingangskanäle verwendet.

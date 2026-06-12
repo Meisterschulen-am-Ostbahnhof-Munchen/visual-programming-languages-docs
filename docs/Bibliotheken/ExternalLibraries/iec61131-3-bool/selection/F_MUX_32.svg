@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1226" height="1029" viewBox="-548 -20 1226 1029">
+<defs>
+</defs>
+<rect x="3" y="3" width="130" height="979" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H130 V66 H124 V106 H130 V979 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L130,30" stroke="#000000" stroke-width="1" />
+<text x="65.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">F_MUX_32</text>
+<text x="65.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-100" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Request</text>
+<path d="M-5,118 L-5,128 L0,123 Z" fill="#000000" stroke="none" />
+<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">K</text>
+<text x="-23" y="126" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY_INT</text>
+<text x="-100" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Select one of n inputs</text>
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#000000" stroke="none" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN1</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 1</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#000000" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN2</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 2</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#000000" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN3</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 3</text>
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#000000" stroke="none" />
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN4</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 4</text>
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#000000" stroke="none" />
+<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN5</text>
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 5</text>
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#000000" stroke="none" />
+<text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN6</text>
+<text x="-23" y="282" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 6</text>
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#000000" stroke="none" />
+<text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN7</text>
+<text x="-23" y="308" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="308" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 7</text>
+<path d="M-5,326 L-5,336 L0,331 Z" fill="#000000" stroke="none" />
+<text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN8</text>
+<text x="-23" y="334" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="334" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 8</text>
+<path d="M-5,352 L-5,362 L0,357 Z" fill="#000000" stroke="none" />
+<text x="12" y="361" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN9</text>
+<text x="-23" y="360" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="360" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 9</text>
+<path d="M-5,378 L-5,388 L0,383 Z" fill="#000000" stroke="none" />
+<text x="12" y="387" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN10</text>
+<text x="-23" y="386" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="386" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 10</text>
+<path d="M-5,404 L-5,414 L0,409 Z" fill="#000000" stroke="none" />
+<text x="12" y="413" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN11</text>
+<text x="-23" y="412" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="412" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 11</text>
+<path d="M-5,430 L-5,440 L0,435 Z" fill="#000000" stroke="none" />
+<text x="12" y="439" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN12</text>
+<text x="-23" y="438" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="438" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 12</text>
+<path d="M-5,456 L-5,466 L0,461 Z" fill="#000000" stroke="none" />
+<text x="12" y="465" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN13</text>
+<text x="-23" y="464" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="464" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 13</text>
+<path d="M-5,482 L-5,492 L0,487 Z" fill="#000000" stroke="none" />
+<text x="12" y="491" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN14</text>
+<text x="-23" y="490" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="490" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 14</text>
+<path d="M-5,508 L-5,518 L0,513 Z" fill="#000000" stroke="none" />
+<text x="12" y="517" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN15</text>
+<text x="-23" y="516" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="516" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 15</text>
+<path d="M-5,534 L-5,544 L0,539 Z" fill="#000000" stroke="none" />
+<text x="12" y="543" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN16</text>
+<text x="-23" y="542" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="542" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 16</text>
+<path d="M-5,560 L-5,570 L0,565 Z" fill="#000000" stroke="none" />
+<text x="12" y="569" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN17</text>
+<text x="-23" y="568" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="568" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 17</text>
+<path d="M-5,586 L-5,596 L0,591 Z" fill="#000000" stroke="none" />
+<text x="12" y="595" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN18</text>
+<text x="-23" y="594" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="594" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 18</text>
+<path d="M-5,612 L-5,622 L0,617 Z" fill="#000000" stroke="none" />
+<text x="12" y="621" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN19</text>
+<text x="-23" y="620" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="620" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 19</text>
+<path d="M-5,638 L-5,648 L0,643 Z" fill="#000000" stroke="none" />
+<text x="12" y="647" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN20</text>
+<text x="-23" y="646" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="646" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 20</text>
+<path d="M-5,664 L-5,674 L0,669 Z" fill="#000000" stroke="none" />
+<text x="12" y="673" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN21</text>
+<text x="-23" y="672" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="672" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 21</text>
+<path d="M-5,690 L-5,700 L0,695 Z" fill="#000000" stroke="none" />
+<text x="12" y="699" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN22</text>
+<text x="-23" y="698" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="698" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 22</text>
+<path d="M-5,716 L-5,726 L0,721 Z" fill="#000000" stroke="none" />
+<text x="12" y="725" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN23</text>
+<text x="-23" y="724" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="724" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 23</text>
+<path d="M-5,742 L-5,752 L0,747 Z" fill="#000000" stroke="none" />
+<text x="12" y="751" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN24</text>
+<text x="-23" y="750" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="750" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 24</text>
+<path d="M-5,768 L-5,778 L0,773 Z" fill="#000000" stroke="none" />
+<text x="12" y="777" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN25</text>
+<text x="-23" y="776" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="776" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 25</text>
+<path d="M-5,794 L-5,804 L0,799 Z" fill="#000000" stroke="none" />
+<text x="12" y="803" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN26</text>
+<text x="-23" y="802" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="802" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 26</text>
+<path d="M-5,820 L-5,830 L0,825 Z" fill="#000000" stroke="none" />
+<text x="12" y="829" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN27</text>
+<text x="-23" y="828" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="828" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 27</text>
+<path d="M-5,846 L-5,856 L0,851 Z" fill="#000000" stroke="none" />
+<text x="12" y="855" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN28</text>
+<text x="-23" y="854" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="854" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 28</text>
+<path d="M-5,872 L-5,882 L0,877 Z" fill="#000000" stroke="none" />
+<text x="12" y="881" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN29</text>
+<text x="-23" y="880" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="880" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 29</text>
+<path d="M-5,898 L-5,908 L0,903 Z" fill="#000000" stroke="none" />
+<text x="12" y="907" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN30</text>
+<text x="-23" y="906" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="906" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 30</text>
+<path d="M-5,924 L-5,934 L0,929 Z" fill="#000000" stroke="none" />
+<text x="12" y="933" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN31</text>
+<text x="-23" y="932" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="932" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 31</text>
+<path d="M-5,950 L-5,960 L0,955 Z" fill="#000000" stroke="none" />
+<text x="12" y="959" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN32</text>
+<text x="-23" y="958" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-100" y="958" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 32</text>
+<path d="M130,37 L130,47 L135,42 Z" fill="#63B31F" stroke="none" />
+<text x="118" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="153" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="223" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
+<path d="M130,118 L130,128 L135,123 Z" fill="#000000" stroke="none" />
+<text x="118" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
+<text x="153" y="126" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="223" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN1 for K = 0, IN2 for K = 1, IN3 for K = 2, IN4</text>
+<text x="223" y="138" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">for K = 3, IN5 for K = 4, IN6 for K = 5, IN7 for K</text>
+<text x="223" y="150" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">= 6, IN8 for K = 7, IN9 for K = 8, IN10 for K = 9,</text>
+<text x="223" y="162" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN11 for K = 10, IN12 for K = 11, IN13 for K = 12,</text>
+<text x="223" y="174" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN14 for K = 13, IN15 for K = 14, IN16 for K = 15,</text>
+<text x="223" y="186" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN17 for K = 16, IN18 for K = 17, IN19 for K = 18,</text>
+<text x="223" y="198" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN20 for K = 19, IN21 for K = 20, IN22 for K = 21,</text>
+<text x="223" y="210" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN23 for K = 22, IN24 for K = 23, IN25 for K = 24,</text>
+<text x="223" y="222" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN26 for K = 25, IN27 for K = 26, IN28 for K = 27,</text>
+<text x="223" y="234" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN29 for K = 28, IN30 for K = 29, IN31 for K = 30,</text>
+<text x="223" y="246" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN32 for K = 31</text>
+<path d="M-12,42 L-12,955" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,149 L-5,149" stroke="#404040" />
+<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,201 L-5,201" stroke="#404040" />
+<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,227 L-5,227" stroke="#404040" />
+<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,253 L-5,253" stroke="#404040" />
+<rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,279 L-5,279" stroke="#404040" />
+<rect x="-14" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,305 L-5,305" stroke="#404040" />
+<rect x="-14" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,331 L-5,331" stroke="#404040" />
+<rect x="-14" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,357 L-5,357" stroke="#404040" />
+<rect x="-14" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,383 L-5,383" stroke="#404040" />
+<rect x="-14" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,409 L-5,409" stroke="#404040" />
+<rect x="-14" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,435 L-5,435" stroke="#404040" />
+<rect x="-14" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,461 L-5,461" stroke="#404040" />
+<rect x="-14" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,487 L-5,487" stroke="#404040" />
+<rect x="-14" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,513 L-5,513" stroke="#404040" />
+<rect x="-14" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,539 L-5,539" stroke="#404040" />
+<rect x="-14" y="537" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,565 L-5,565" stroke="#404040" />
+<rect x="-14" y="563" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,591 L-5,591" stroke="#404040" />
+<rect x="-14" y="589" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,617 L-5,617" stroke="#404040" />
+<rect x="-14" y="615" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,643 L-5,643" stroke="#404040" />
+<rect x="-14" y="641" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,669 L-5,669" stroke="#404040" />
+<rect x="-14" y="667" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,695 L-5,695" stroke="#404040" />
+<rect x="-14" y="693" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,721 L-5,721" stroke="#404040" />
+<rect x="-14" y="719" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,747 L-5,747" stroke="#404040" />
+<rect x="-14" y="745" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,773 L-5,773" stroke="#404040" />
+<rect x="-14" y="771" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,799 L-5,799" stroke="#404040" />
+<rect x="-14" y="797" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,825 L-5,825" stroke="#404040" />
+<rect x="-14" y="823" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,851 L-5,851" stroke="#404040" />
+<rect x="-14" y="849" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,877 L-5,877" stroke="#404040" />
+<rect x="-14" y="875" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,903 L-5,903" stroke="#404040" />
+<rect x="-14" y="901" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,929 L-5,929" stroke="#404040" />
+<rect x="-14" y="927" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,955 L-5,955" stroke="#404040" />
+<rect x="-14" y="953" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,123 L-5,123" stroke="#404040" />
+<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M142,42 L142,123" stroke="#404040" stroke-width="1" />
+<path d="M130,42 L142,42" stroke="#404040" />
+<rect x="140" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M142,123 L135,123" stroke="#404040" />
+<rect x="140" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

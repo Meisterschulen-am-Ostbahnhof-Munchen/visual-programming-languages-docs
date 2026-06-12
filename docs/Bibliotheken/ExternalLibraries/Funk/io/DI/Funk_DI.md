@@ -3,6 +3,9 @@
 ```{index} single: Funk_DI
 ```
 
+
+![Funk_DI](./Funk_DI.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Funk_DI ist ein GlobalConstants-Paket für die 4diac-IDE, das Konstanten für digitale Eingänge in Funksystemen definiert. Das Paket stellt vordefinierte Pin-Konfigurationen für verschiedene digitale Eingangssignale zur Verfügung, die in Steuerungsanwendungen verwendet werden können.

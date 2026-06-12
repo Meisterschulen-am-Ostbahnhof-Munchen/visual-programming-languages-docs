@@ -5,6 +5,9 @@
 
 <img width="1476" height="216" alt="image" src="https://github.com/user-attachments/assets/9bc9ef5f-0a9d-4bd3-8f83-d60a1665ff9c" />
 
+
+![NetEv2NetEv](./NetEv2NetEv.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `NetEv2NetEv` dient der Manipulation von Netzwerkereignissen (NetEv) innerhalb eines ISOBUS-basierten Systems. Sein primärer Zweck ist es, einen eingehenden Netzwerkereignis-Datensatz zu übernehmen und einen spezifischen Wert – den Netzwerk-Member-Handle – zu überschreiben. Der Block fungiert somit als einfacher Konverter oder Adapter für ISONETEVENT_T-Datenstrukturen.

@@ -5,6 +5,8 @@
 
 ```{toctree}
 :maxdepth: 1
+
+all_colours
 colours
 IDs
 ```

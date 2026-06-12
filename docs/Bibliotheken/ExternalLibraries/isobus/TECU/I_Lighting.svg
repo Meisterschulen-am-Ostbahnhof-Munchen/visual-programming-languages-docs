@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1494" height="1159" viewBox="-548 -20 1494 1159">
+<defs>
+</defs>
+<rect x="3" y="3" width="382" height="1109" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H382 V118 H376 V158 H382 V1109 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L382,30" stroke="#000000" stroke-width="1" />
+<text x="191.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">I_Lighting</text>
+<text x="191.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-103" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M382,37 L382,47 L387,42 Z" fill="#63B31F" stroke="none" />
+<text x="370" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="421" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="491" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M382,63 L382,73 L387,68 Z" fill="#63B31F" stroke="none" />
+<text x="370" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="421" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="491" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
+<path d="M382,89 L382,99 L387,94 Z" fill="#63B31F" stroke="none" />
+<text x="370" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
+<text x="421" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M382,170 L382,180 L387,175 Z" fill="#9FA48A" stroke="none" />
+<text x="370" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="421" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="491" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M382,196 L382,206 L387,201 Z" fill="#BD8663" stroke="none" />
+<text x="370" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="421" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M382,222 L382,232 L387,227 Z" fill="#9FA48A" stroke="none" />
+<text x="370" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q_timeout</text>
+<text x="421" y="230" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M382,248 L382,258 L387,253 Z" fill="#18519E" stroke="none" />
+<text x="370" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_timeout</text>
+<text x="421" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M382,274 L382,284 L387,279 Z" fill="#18519E" stroke="none" />
+<text x="370" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_data</text>
+<text x="421" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M382,300 L382,310 L387,305 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">DAYTIME_RUNNING_LIGHTS</text>
+<text x="421" y="308" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Daytime running lights 2-bit QUARTER value (see</text>
+<text x="491" y="320" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,326 L382,336 L387,331 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">ALTERNATE_HEADLIGHTS</text>
+<text x="421" y="334" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Alternate headlights 2-bit QUARTER value (see</text>
+<text x="491" y="346" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,352 L382,362 L387,357 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">LOW_BEAM_HEADLIGHTS</text>
+<text x="421" y="360" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Low-beam headlights 2-bit QUARTER value (see</text>
+<text x="491" y="372" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,378 L382,388 L387,383 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">HIGH_BEAM_HEADLIGHTS</text>
+<text x="421" y="386" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">High-beam headlights 2-bit QUARTER value (see</text>
+<text x="491" y="398" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,404 L382,414 L387,409 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_FRONT_FOG_LIGHTS</text>
+<text x="421" y="412" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor front fog lights 2-bit QUARTER value (see</text>
+<text x="491" y="424" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,430 L382,440 L387,435 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">ROTATING_BEACON_LIGHT</text>
+<text x="421" y="438" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Rotating beacon light 2-bit QUARTER value (see</text>
+<text x="491" y="450" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,456 L382,466 L387,461 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">RIGHT_TURN_SIGNAL_LIGHTS</text>
+<text x="421" y="464" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Right-turn signal lights 2-bit QUARTER value (see</text>
+<text x="491" y="476" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,482 L382,492 L387,487 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="491" font-size="12" text-anchor="end" font-family="Consolas, monospace">LEFT_TURN_SIGNAL_LIGHTS</text>
+<text x="421" y="490" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Left-turn signal lights 2-bit QUARTER value (see</text>
+<text x="491" y="502" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,508 L382,518 L387,513 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="517" font-size="12" text-anchor="end" font-family="Consolas, monospace">BACK_UP_LIGHTS_AND_ALARM_HORN</text>
+<text x="421" y="516" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Back-up lights and alarm horn 2-bit QUARTER value</text>
+<text x="491" y="528" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">(see Attributes for Details)</text>
+<path d="M382,534 L382,544 L387,539 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="543" font-size="12" text-anchor="end" font-family="Consolas, monospace">CENTER_STOP_LIGHTS</text>
+<text x="421" y="542" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="542" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Center stop lights 2-bit QUARTER value (see</text>
+<text x="491" y="554" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,560 L382,570 L387,565 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="569" font-size="12" text-anchor="end" font-family="Consolas, monospace">RIGHT_STOP_LIGHTS</text>
+<text x="421" y="568" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="568" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Right stop lights 2-bit QUARTER value (see</text>
+<text x="491" y="580" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,586 L382,596 L387,591 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="595" font-size="12" text-anchor="end" font-family="Consolas, monospace">LEFT_STOP_LIGHTS</text>
+<text x="421" y="594" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="594" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Left stop lights 2-bit QUARTER value (see</text>
+<text x="491" y="606" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,612 L382,622 L387,617 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="621" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_CLEARANCE_LIGHTS</text>
+<text x="421" y="620" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="620" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement clearance lights 2-bit QUARTER value</text>
+<text x="491" y="632" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">(see Attributes for Details)</text>
+<path d="M382,638 L382,648 L387,643 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="647" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_CLEARANCE_LIGHTS</text>
+<text x="421" y="646" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="646" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor clearance lights 2-bit QUARTER value (see</text>
+<text x="491" y="658" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,664 L382,674 L387,669 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="673" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_MARKER_LIGHTS</text>
+<text x="421" y="672" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="672" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement marker (position) lights 2-bit QUARTER</text>
+<text x="491" y="684" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">value (see Attributes for Details)</text>
+<path d="M382,690 L382,700 L387,695 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="699" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_MARKER_LIGHTS</text>
+<text x="421" y="698" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="698" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor marker (position) lights 2-bit QUARTER</text>
+<text x="491" y="710" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">value (see Attributes for Details)</text>
+<path d="M382,716 L382,726 L387,721 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="725" font-size="12" text-anchor="end" font-family="Consolas, monospace">REAR_FOG_LIGHTS</text>
+<text x="421" y="724" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="724" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Rear fog lights 2-bit QUARTER value (see</text>
+<text x="491" y="736" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Attributes for Details)</text>
+<path d="M382,742 L382,752 L387,747 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="751" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_UNDERSIDE_MOUNTED_WORK_LIGHTS</text>
+<text x="421" y="750" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="750" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor underside-mounted work lights 2-bit</text>
+<text x="491" y="762" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">QUARTER value (see Attributes for Details)</text>
+<path d="M382,768 L382,778 L387,773 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="777" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_REAR_LOW_MOUNTED_WORK_LIGHTS</text>
+<text x="421" y="776" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="776" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor rear low-mounted work lights 2-bit QUARTER</text>
+<text x="491" y="788" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">value (see Attributes for Details)</text>
+<path d="M382,794 L382,804 L387,799 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="803" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_REAR_HIGH_MOUNTED_WORK_LIGHTS</text>
+<text x="421" y="802" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="802" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor rear high-mounted work lights 2-bit</text>
+<text x="491" y="814" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">QUARTER value (see Attributes for Details)</text>
+<path d="M382,820 L382,830 L387,825 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="829" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_SIDE_LOW_MOUNTED_WORK_LIGHTS</text>
+<text x="421" y="828" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="828" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor side low-mounted work lights 2-bit QUARTER</text>
+<text x="491" y="840" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">value (see Attributes for Details)</text>
+<path d="M382,846 L382,856 L387,851 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="855" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_SIDE_HIGH_MOUNTED_WORK_LIGHTS</text>
+<text x="421" y="854" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="854" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor side high-mounted work lights 2-bit</text>
+<text x="491" y="866" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">QUARTER value (see Attributes for Details)</text>
+<path d="M382,872 L382,882 L387,877 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="881" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_FRONT_LOW_MOUNTED_WORK_LIGHTS</text>
+<text x="421" y="880" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="880" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor front low-mounted work lights 2-bit</text>
+<text x="491" y="892" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">QUARTER value (see Attributes for Details)</text>
+<path d="M382,898 L382,908 L387,903 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="907" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_FRONT_HIGH_MOUNTED_WORK_LIGHTS</text>
+<text x="421" y="906" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="906" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor front high-mounted work lights 2-bit</text>
+<text x="491" y="918" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">QUARTER value (see Attributes for Details)</text>
+<path d="M382,924 L382,934 L387,929 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="933" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_OEM_OPTION_2_LIGHT</text>
+<text x="421" y="932" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="932" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement OEM option 2 light 2-bit QUARTER value</text>
+<text x="491" y="944" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">(see Attributes for Details)</text>
+<path d="M382,950 L382,960 L387,955 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="959" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_OEM_OPTION_1_LIGHT</text>
+<text x="421" y="958" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="958" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement OEM option 1 light 2-bit QUARTER value</text>
+<text x="491" y="970" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">(see Attributes for Details)</text>
+<path d="M382,976 L382,986 L387,981 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="985" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_RIGHT_FORWARD_WORK_LIGHTS</text>
+<text x="421" y="984" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="984" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement right forward work lights 2-bit QUARTER</text>
+<text x="491" y="996" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">value (see Attributes for Details)</text>
+<path d="M382,1002 L382,1012 L387,1007 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="1011" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_LEFT_FORWARD_WORK_LIGHTS</text>
+<text x="421" y="1010" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="1010" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement left forward work lights 2-bit QUARTER</text>
+<text x="491" y="1022" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">value (see Attributes for Details)</text>
+<path d="M382,1028 L382,1038 L387,1033 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="1037" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_RIGHT_FACING_WORK_LIGHTS</text>
+<text x="421" y="1036" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="1036" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement right-facing work lights 2-bit QUARTER</text>
+<text x="491" y="1048" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">value (see Attributes for Details)</text>
+<path d="M382,1054 L382,1064 L387,1059 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="1063" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_LEFT_FACING_WORK_LIGHTS</text>
+<text x="421" y="1062" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="1062" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement left-facing work lights 2-bit QUARTER</text>
+<text x="491" y="1074" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">value (see Attributes for Details)</text>
+<path d="M382,1080 L382,1090 L387,1085 Z" fill="#82A3A9" stroke="none" />
+<text x="370" y="1089" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_REAR_WORK_LIGHTS</text>
+<text x="421" y="1088" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="491" y="1088" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement rear work lights 2-bit QUARTER value</text>
+<text x="491" y="1100" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">(see Attributes for Details)</text>
+<path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M394,42 L394,201" stroke="#404040" stroke-width="1" />
+<path d="M382,42 L394,42" stroke="#404040" />
+<rect x="392" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M394,175 L387,175" stroke="#404040" />
+<rect x="392" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M394,201 L387,201" stroke="#404040" />
+<rect x="392" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,68 L402,1085" stroke="#404040" stroke-width="1" />
+<path d="M382,68 L402,68" stroke="#404040" />
+<rect x="400" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,175 L387,175" stroke="#404040" />
+<rect x="400" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,279 L387,279" stroke="#404040" />
+<rect x="400" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,201 L387,201" stroke="#404040" />
+<rect x="400" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,227 L387,227" stroke="#404040" />
+<rect x="400" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,305 L387,305" stroke="#404040" />
+<rect x="400" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,331 L387,331" stroke="#404040" />
+<rect x="400" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,357 L387,357" stroke="#404040" />
+<rect x="400" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,383 L387,383" stroke="#404040" />
+<rect x="400" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,409 L387,409" stroke="#404040" />
+<rect x="400" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,435 L387,435" stroke="#404040" />
+<rect x="400" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,461 L387,461" stroke="#404040" />
+<rect x="400" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,487 L387,487" stroke="#404040" />
+<rect x="400" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,513 L387,513" stroke="#404040" />
+<rect x="400" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,539 L387,539" stroke="#404040" />
+<rect x="400" y="537" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,565 L387,565" stroke="#404040" />
+<rect x="400" y="563" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,591 L387,591" stroke="#404040" />
+<rect x="400" y="589" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,617 L387,617" stroke="#404040" />
+<rect x="400" y="615" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,643 L387,643" stroke="#404040" />
+<rect x="400" y="641" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,669 L387,669" stroke="#404040" />
+<rect x="400" y="667" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,695 L387,695" stroke="#404040" />
+<rect x="400" y="693" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,721 L387,721" stroke="#404040" />
+<rect x="400" y="719" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,747 L387,747" stroke="#404040" />
+<rect x="400" y="745" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,773 L387,773" stroke="#404040" />
+<rect x="400" y="771" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,799 L387,799" stroke="#404040" />
+<rect x="400" y="797" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,825 L387,825" stroke="#404040" />
+<rect x="400" y="823" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,851 L387,851" stroke="#404040" />
+<rect x="400" y="849" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,877 L387,877" stroke="#404040" />
+<rect x="400" y="875" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,903 L387,903" stroke="#404040" />
+<rect x="400" y="901" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,929 L387,929" stroke="#404040" />
+<rect x="400" y="927" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,955 L387,955" stroke="#404040" />
+<rect x="400" y="953" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,981 L387,981" stroke="#404040" />
+<rect x="400" y="979" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,1007 L387,1007" stroke="#404040" />
+<rect x="400" y="1005" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,1033 L387,1033" stroke="#404040" />
+<rect x="400" y="1031" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,1059 L387,1059" stroke="#404040" />
+<rect x="400" y="1057" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M402,1085 L387,1085" stroke="#404040" />
+<rect x="400" y="1083" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M410,94 L410,253" stroke="#404040" stroke-width="1" />
+<path d="M382,94 L410,94" stroke="#404040" />
+<rect x="408" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M410,253 L387,253" stroke="#404040" />
+<rect x="408" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M410,201 L387,201" stroke="#404040" />
+<rect x="408" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M410,227 L387,227" stroke="#404040" />
+<rect x="408" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

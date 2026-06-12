@@ -3,7 +3,6 @@
 ```{index} single: I_RPTO
 ```
 
-![I_RPTO](https://github.com/user-attachments/assets/3d2c12dd-8e9c-45b9-80f8-3dcfba8843af)
 
 * * * * * * * * * *
 

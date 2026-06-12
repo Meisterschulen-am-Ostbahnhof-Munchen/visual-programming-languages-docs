@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1386" height="275" viewBox="-548 -20 1386 275">
+<defs>
+</defs>
+<rect x="3" y="3" width="290" height="225" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H290 V92 H284 V132 H290 V225 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L290,30" stroke="#000000" stroke-width="1" />
+<text x="145.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">Q_BackgroundColourAux_AUS</text>
+<text x="145.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-153" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<rect x="-5.0" y="144.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8Colour</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AUS</text>
+<text x="-153" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">New Background colour see Part 6 - A.3 VT standard</text>
+<text x="-153" y="164" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">colour palette</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#18519E" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16ObjId</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-153" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Object ID</text>
+<path d="M290,37 L290,47 L295,42 Z" fill="#63B31F" stroke="none" />
+<text x="278" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="313" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="383" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M290,63 L290,73 L295,68 Z" fill="#63B31F" stroke="none" />
+<text x="278" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="313" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="383" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
+<rect x="285.0" y="144.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="278" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">u8OldColour</text>
+<text x="313" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AUS</text>
+<text x="383" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Old value of ID</text>
+<path d="M290,170 L290,180 L295,175 Z" fill="#BD8663" stroke="none" />
+<text x="278" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="313" y="178" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="383" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
+<path d="M290,196 L290,206 L295,201 Z" fill="#18519E" stroke="none" />
+<text x="278" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">s16result</text>
+<text x="313" y="204" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<text x="383" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">retval see description</text>
+<path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M302,68 L302,201" stroke="#404040" stroke-width="1" />
+<path d="M290,68 L302,68" stroke="#404040" />
+<rect x="300" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M302,175 L295,175" stroke="#404040" />
+<rect x="300" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M302,201 L295,201" stroke="#404040" />
+<rect x="300" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

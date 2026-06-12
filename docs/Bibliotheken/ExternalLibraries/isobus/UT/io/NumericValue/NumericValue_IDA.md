@@ -1,7 +1,6 @@
 # NumericValue_IDA
 
 
-![NumericValue_IDA](.././NumericValue_IDA.svg)
 
 * * * * * * * * * *
 

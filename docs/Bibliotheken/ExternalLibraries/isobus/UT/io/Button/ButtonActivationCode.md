@@ -3,6 +3,9 @@
 ```{index} single: ButtonActivationCode
 ```
 
+
+![ButtonActivationCode](./ButtonActivationCode.svg)
+
 * * * * * * * * * *
 ## Einleitung
 ButtonActivationCode ist eine Sammlung von globalen Konstanten für die Verarbeitung von Tastenaktivierungen in ISOBUS-kompatiblen Systemen. Diese Konstanten definieren verschiedene Zustände und Ereignisse, die bei der Bedienung von Tasten auftreten können, und werden hauptsächlich in landwirtschaftlichen Anwendungen eingesetzt.

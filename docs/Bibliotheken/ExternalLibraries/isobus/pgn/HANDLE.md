@@ -3,6 +3,9 @@
 ```{index} single: HANDLE
 ```
 
+
+![HANDLE](./HANDLE.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Die `HANDLE`-Konstante ist eine globale Konstantendefinition für die 4diac-IDE, die im Kontext der ISOBUS-Protokoll- und Parameter-Gruppen-Nummer (PGN) Verarbeitung verwendet wird. Sie definiert spezielle Werte zur Kennzeichnung ungültiger oder globaler Adressierungsziele innerhalb eines ISOBUS-Netzwerks. Diese Konstanten dienen als zentrale Referenzwerte für Funktionsblöcke, die mit Handle-basierter Kommunikation arbeiten.

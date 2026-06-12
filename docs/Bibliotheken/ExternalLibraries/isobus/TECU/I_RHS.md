@@ -3,7 +3,6 @@
 ```{index} single: I_RHS
 ```
 
-![I_RHS](https://github.com/user-attachments/assets/1e655481-5a76-4cff-862c-653c219a9eeb)
 
 * * * * * * * * * *
 

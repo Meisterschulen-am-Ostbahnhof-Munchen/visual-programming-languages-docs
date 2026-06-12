@@ -4,6 +4,9 @@
 
 <img width="1225" height="244" alt="image" src="https://github.com/user-attachments/assets/aaadee66-4701-4548-a8a5-c07d4936e97d" />
 
+
+![BYTE_TO_ST08X](./BYTE_TO_ST08X.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Dieser Funktionsblock (FB) dient dazu, einen einzelnen Byte-Wert in eine Struktur von acht einzelnen BOOL-Werten aufzuschlüsseln. Jedes Bit des Eingangsbytes wird dabei einem separaten Bool-Feld in der Ausgangsstruktur zugewiesen, was die Handhabung bitweiser Informationen vereinfacht.

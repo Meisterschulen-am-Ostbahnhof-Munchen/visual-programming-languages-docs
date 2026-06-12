@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1280" height="1799" viewBox="-540 -20 1280 1799">
+<defs>
+</defs>
+<rect x="3" y="3" width="200" height="1749" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H200 V30 H194 V70 H200 V1749 H0 V70 H6 V30 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L200,30" stroke="#000000" stroke-width="1" />
+<text x="100.0" y="48.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">SPLIT_AL_INTO_AX</text>
+<text x="100.0" y="62.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<rect x="-5.0" y="82.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="12" y="91" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AL</text>
+<text x="-69" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">LWORD Input</text>
+<rect x="195.0" y="82.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="91" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_00</text>
+<text x="215" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 0</text>
+<rect x="195.0" y="108.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="117" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_01</text>
+<text x="215" y="116" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="116" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 1</text>
+<rect x="195.0" y="134.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="143" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_02</text>
+<text x="215" y="142" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="142" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 2</text>
+<rect x="195.0" y="160.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="169" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_03</text>
+<text x="215" y="168" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="168" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 3</text>
+<rect x="195.0" y="186.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="195" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_04</text>
+<text x="215" y="194" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="194" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 4</text>
+<rect x="195.0" y="212.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="221" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_05</text>
+<text x="215" y="220" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="220" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 5</text>
+<rect x="195.0" y="238.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="247" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_06</text>
+<text x="215" y="246" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="246" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 6</text>
+<rect x="195.0" y="264.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="273" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_07</text>
+<text x="215" y="272" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="272" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 7</text>
+<rect x="195.0" y="290.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="299" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_08</text>
+<text x="215" y="298" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="298" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 8</text>
+<rect x="195.0" y="316.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="325" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_09</text>
+<text x="215" y="324" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="324" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 9</text>
+<rect x="195.0" y="342.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="351" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_10</text>
+<text x="215" y="350" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="350" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 10</text>
+<rect x="195.0" y="368.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="377" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_11</text>
+<text x="215" y="376" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="376" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 11</text>
+<rect x="195.0" y="394.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="403" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_12</text>
+<text x="215" y="402" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="402" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 12</text>
+<rect x="195.0" y="420.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="429" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_13</text>
+<text x="215" y="428" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="428" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 13</text>
+<rect x="195.0" y="446.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="455" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_14</text>
+<text x="215" y="454" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="454" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 14</text>
+<rect x="195.0" y="472.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="481" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_15</text>
+<text x="215" y="480" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="480" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 15</text>
+<rect x="195.0" y="498.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="507" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_16</text>
+<text x="215" y="506" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="506" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 16</text>
+<rect x="195.0" y="524.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="533" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_17</text>
+<text x="215" y="532" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="532" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 17</text>
+<rect x="195.0" y="550.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="559" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_18</text>
+<text x="215" y="558" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="558" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 18</text>
+<rect x="195.0" y="576.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="585" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_19</text>
+<text x="215" y="584" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="584" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 19</text>
+<rect x="195.0" y="602.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="611" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_20</text>
+<text x="215" y="610" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="610" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 20</text>
+<rect x="195.0" y="628.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="637" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_21</text>
+<text x="215" y="636" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="636" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 21</text>
+<rect x="195.0" y="654.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="663" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_22</text>
+<text x="215" y="662" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="662" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 22</text>
+<rect x="195.0" y="680.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="689" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_23</text>
+<text x="215" y="688" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="688" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 23</text>
+<rect x="195.0" y="706.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="715" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_24</text>
+<text x="215" y="714" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="714" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 24</text>
+<rect x="195.0" y="732.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="741" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_25</text>
+<text x="215" y="740" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="740" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 25</text>
+<rect x="195.0" y="758.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="767" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_26</text>
+<text x="215" y="766" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="766" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 26</text>
+<rect x="195.0" y="784.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="793" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_27</text>
+<text x="215" y="792" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="792" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 27</text>
+<rect x="195.0" y="810.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="819" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_28</text>
+<text x="215" y="818" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="818" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 28</text>
+<rect x="195.0" y="836.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="845" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_29</text>
+<text x="215" y="844" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="844" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 29</text>
+<rect x="195.0" y="862.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="871" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_30</text>
+<text x="215" y="870" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="870" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 30</text>
+<rect x="195.0" y="888.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="897" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_31</text>
+<text x="215" y="896" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="896" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 31</text>
+<rect x="195.0" y="914.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="923" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_32</text>
+<text x="215" y="922" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="922" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 32</text>
+<rect x="195.0" y="940.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="949" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_33</text>
+<text x="215" y="948" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="948" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 33</text>
+<rect x="195.0" y="966.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="975" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_34</text>
+<text x="215" y="974" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="974" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 34</text>
+<rect x="195.0" y="992.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1001" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_35</text>
+<text x="215" y="1000" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1000" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 35</text>
+<rect x="195.0" y="1018.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1027" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_36</text>
+<text x="215" y="1026" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1026" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 36</text>
+<rect x="195.0" y="1044.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1053" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_37</text>
+<text x="215" y="1052" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1052" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 37</text>
+<rect x="195.0" y="1070.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1079" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_38</text>
+<text x="215" y="1078" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1078" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 38</text>
+<rect x="195.0" y="1096.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1105" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_39</text>
+<text x="215" y="1104" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1104" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 39</text>
+<rect x="195.0" y="1122.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1131" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_40</text>
+<text x="215" y="1130" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1130" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 40</text>
+<rect x="195.0" y="1148.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1157" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_41</text>
+<text x="215" y="1156" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1156" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 41</text>
+<rect x="195.0" y="1174.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1183" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_42</text>
+<text x="215" y="1182" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1182" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 42</text>
+<rect x="195.0" y="1200.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1209" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_43</text>
+<text x="215" y="1208" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1208" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 43</text>
+<rect x="195.0" y="1226.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1235" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_44</text>
+<text x="215" y="1234" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1234" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 44</text>
+<rect x="195.0" y="1252.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1261" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_45</text>
+<text x="215" y="1260" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1260" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 45</text>
+<rect x="195.0" y="1278.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1287" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_46</text>
+<text x="215" y="1286" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1286" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 46</text>
+<rect x="195.0" y="1304.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1313" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_47</text>
+<text x="215" y="1312" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1312" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 47</text>
+<rect x="195.0" y="1330.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1339" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_48</text>
+<text x="215" y="1338" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1338" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 48</text>
+<rect x="195.0" y="1356.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1365" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_49</text>
+<text x="215" y="1364" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1364" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 49</text>
+<rect x="195.0" y="1382.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1391" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_50</text>
+<text x="215" y="1390" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1390" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 50</text>
+<rect x="195.0" y="1408.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1417" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_51</text>
+<text x="215" y="1416" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1416" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 51</text>
+<rect x="195.0" y="1434.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1443" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_52</text>
+<text x="215" y="1442" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1442" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 52</text>
+<rect x="195.0" y="1460.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1469" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_53</text>
+<text x="215" y="1468" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1468" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 53</text>
+<rect x="195.0" y="1486.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1495" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_54</text>
+<text x="215" y="1494" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1494" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 54</text>
+<rect x="195.0" y="1512.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1521" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_55</text>
+<text x="215" y="1520" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1520" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 55</text>
+<rect x="195.0" y="1538.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1547" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_56</text>
+<text x="215" y="1546" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1546" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 56</text>
+<rect x="195.0" y="1564.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1573" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_57</text>
+<text x="215" y="1572" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1572" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 57</text>
+<rect x="195.0" y="1590.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1599" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_58</text>
+<text x="215" y="1598" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1598" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 58</text>
+<rect x="195.0" y="1616.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1625" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_59</text>
+<text x="215" y="1624" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1624" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 59</text>
+<rect x="195.0" y="1642.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1651" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_60</text>
+<text x="215" y="1650" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1650" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 60</text>
+<rect x="195.0" y="1668.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1677" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_61</text>
+<text x="215" y="1676" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1676" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 61</text>
+<rect x="195.0" y="1694.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1703" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_62</text>
+<text x="215" y="1702" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1702" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 62</text>
+<rect x="195.0" y="1720.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="188" y="1729" font-size="12" text-anchor="end" font-family="Consolas, monospace">BIT_63</text>
+<text x="215" y="1728" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="285" y="1728" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Bool Bit 63</text>
+</svg>

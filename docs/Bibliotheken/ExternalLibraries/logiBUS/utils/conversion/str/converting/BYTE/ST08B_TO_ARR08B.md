@@ -4,6 +4,9 @@
 
 <img width="1352" height="215" alt="image" src="https://github.com/user-attachments/assets/2ae15254-1c8f-40ed-9f4b-d611666ba335" />
 
+
+![ST08B_TO_ARR08B](./ST08B_TO_ARR08B.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `ST08B_TO_ARR08B` dient der Konvertierung eines 8-Byte-Strukturdatentyps (`ST08B`) in ein 8-Byte-Array. Diese Umwandlung ermöglicht die einfache Anpassung von strukturierten Daten an Schnittstellen oder Protokolle, die eine sequentielle Anordnung von Bytes erfordern.

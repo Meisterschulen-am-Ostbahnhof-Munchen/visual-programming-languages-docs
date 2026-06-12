@@ -4,6 +4,9 @@
 
 <img width="1176" height="217" alt="image" src="https://github.com/user-attachments/assets/7e2d9580-9a80-4dea-ad4f-4100a7186544" />
 
+
+![ARR08X_TO_BYTE](./ARR08X_TO_BYTE.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `ARR08X_TO_BYTE` dient der Konvertierung eines Arrays von acht booleschen Werten (`BOOL`) in einen einzigen Byte-Wert (`BYTE`). Jedes Bit im resultierenden Byte entspricht dabei einem Element des Eingabe-Arrays. Diese Operation ist nützlich, um mehrere binäre Signale (z. B. Schalterzustände oder Fehlerflags) platzsparend zu bündeln und für die weitere Verarbeitung oder Kommunikation vorzubereiten.

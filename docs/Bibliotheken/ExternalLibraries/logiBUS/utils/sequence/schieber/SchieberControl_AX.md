@@ -1,6 +1,5 @@
 # SchieberControl_AX
 
-![SchieberControl_AX](path/to/SchieberControl_AX.png)
 
 
 ![SchieberControl_AX](./SchieberControl_AX.svg)

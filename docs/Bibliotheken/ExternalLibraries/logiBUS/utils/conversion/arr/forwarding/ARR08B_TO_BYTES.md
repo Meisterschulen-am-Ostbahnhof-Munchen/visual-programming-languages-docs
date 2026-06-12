@@ -4,6 +4,9 @@
 
 <img width="1089" height="362" alt="image" src="https://github.com/user-attachments/assets/35768584-80d4-464c-b258-e26d1456fd4f" />
 
+
+![ARR08B_TO_BYTES](./ARR08B_TO_BYTES.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `ARR08B_TO_BYTES` dient der Zerlegung eines 8-Elemente-Byte-Arrays (`ARR08B`) in acht einzelne Byte-Ausgänge. Er ist ein Hilfsbaustein für die Datenkonvertierung und -weiterleitung innerhalb von Steuerungsapplikationen, insbesondere wenn strukturierte Daten aus einem Array in diskrete Signale aufgeteilt werden müssen.

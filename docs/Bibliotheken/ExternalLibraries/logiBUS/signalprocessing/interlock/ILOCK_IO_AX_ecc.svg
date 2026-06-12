@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: ILOCK_IO_AX</text>
+<rect x="122.69516219494699" y="375.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="162.695162194947" y="391.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+<rect x="212.695162194947" y="375.0" width="167.0" height="50" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M202.695162194947,391.0 L212.695162194947,386.0" stroke="#000000" stroke-width="2" />
+<path d="M292.695162194947,375.0 L292.695162194947,425.0" stroke="#cccccc" stroke-width="1" />
+<rect x="212.695162194947" y="379.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="252.695162194947" y="387.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+<rect x="293.695162194947" y="379.0" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="336.695162194947" y="387.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">OUT.E1</text>
+<path d="M212.695162194947,393.0 L379.695162194947,393.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="212.695162194947" y="393.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="252.695162194947" y="401.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="293.695162194947" y="393.0" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="336.695162194947" y="401.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">ILOCK_IN.EI1</text>
+<path d="M212.695162194947,407.0 L379.695162194947,407.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="212.695162194947" y="407.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="252.695162194947" y="415.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="293.695162194947" y="407.0" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="336.695162194947" y="415.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">ILOCK_OUT.EO1</text>
+<path d="M182.695162194947,407.0 C242.695162194947,463.0,82.69516219494699,463.0,142.695162194947,407.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M142.695162194947,407.0 L140.35953572543687,414.6514605791916 L134.90098972255677,408.80301843324867 L142.695162194947,407.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(162.695162194947,427.0)">
+<rect x="-20.25" y="-7.5" width="40.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">IN.E1</text>
+</g>
+<path d="M182.695162194947,407.0 C242.695162194947,488.0,82.69516219494699,488.0,142.695162194947,407.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M142.695162194947,407.0 L141.78553352933176,414.9481177451451 L135.3570759825738,410.1862973401392 L142.695162194947,407.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(162.695162194947,457.5)">
+<rect x="-43.0" y="-7.5" width="86.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">ILOCK_IN.EO1</text>
+</g>
+<path d="M182.695162194947,407.0 C242.695162194947,513.0,82.69516219494699,513.0,142.695162194947,407.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M142.695162194947,407.0 L142.76336903722782,414.9997092338826 L135.80131419665616,411.0589234750684 L142.695162194947,407.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(162.695162194947,488.0)">
+<rect x="-46.25" y="-7.5" width="92.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">ILOCK_OUT.EI1</text>
+</g>
+</svg>

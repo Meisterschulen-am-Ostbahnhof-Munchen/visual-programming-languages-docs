@@ -4,6 +4,9 @@
 
 <img width="1315" height="219" alt="image" src="https://github.com/user-attachments/assets/9af3b849-ed33-437d-9688-1de0bee2a1f9" />
 
+
+![BYTE_TO_ARR08X](./BYTE_TO_ARR08X.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `BYTE_TO_ARR08X` dient der Konvertierung eines einzelnen Byte-Wertes in ein Array von acht booleschen Werten (BOOL). Jedes Bit des Eingangsbytes wird einem separaten Element im Ausgangsarray zugeordnet. Dieser Baustein ist besonders nützlich, um kompakte digitale Informationen, die in einem Byte gespeichert sind, für die individuelle Verarbeitung oder Visualisierung aufzuschlüsseln.

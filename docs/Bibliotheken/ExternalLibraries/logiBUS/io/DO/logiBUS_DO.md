@@ -2,6 +2,9 @@
 
 
 
+
+![logiBUS_DO](./logiBUS_DO.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

@@ -2,6 +2,9 @@
 
 
 
+
+![logiBUS_DI_Events](./logiBUS_DI_Events.svg)
+
 * * * * * * * * * *
 
 ## Einleitung

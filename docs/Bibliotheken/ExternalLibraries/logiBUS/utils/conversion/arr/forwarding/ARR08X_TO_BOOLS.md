@@ -4,6 +4,9 @@
 
 <img width="1076" height="362" alt="image" src="https://github.com/user-attachments/assets/d607edb8-cbf2-4776-a5f2-cc8022ad9574" />
 
+
+![ARR08X_TO_BOOLS](./ARR08X_TO_BOOLS.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock **ARR08X_TO_BOOLS** dient der Umwandlung eines 8-elementigen BOOL-Arrays in acht einzelne BOOL-Signale. Er extrahiert jedes Bit aus dem Eingangsarray und stellt es über einen eigenen, benannten Datenausgang zur Verfügung. Dieser Baustein ist besonders nützlich, um kompakte Array-Daten aus übergeordneten Systemen oder Kommunikationsschnittstellen in einzelne, leicht zu verarbeitende logische Signale aufzuschlüsseln.

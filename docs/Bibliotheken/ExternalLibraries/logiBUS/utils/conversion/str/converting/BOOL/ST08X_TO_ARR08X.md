@@ -4,6 +4,9 @@
 
 <img width="1352" height="215" alt="image" src="https://github.com/user-attachments/assets/d556a75a-b21c-4bf2-b1c3-909baea1e51e" />
 
+
+![ST08X_TO_ARR08X](./ST08X_TO_ARR08X.svg)
+
 * * * * * * * * * *
 ## Einleitung
 Dieser Funktionsblock (FB) dient dazu, eine spezifische Struktur vom Typ `ST08X`, die acht einzelne BOOL-Werte enthält, in ein Array von ebenfalls acht BOOL-Werten umzuwandeln. Er ermöglicht eine nahtlose Anpassung der Datenrepräsentation in Automatisierungsanwendungen.

@@ -47,7 +47,7 @@ Die Darstellung von Zahlen (Binär, Hexadezimal, Dezimal) und die Verwendung von
 
 Datentypen legen fest, welche Art von Information eine Variable speichern kann (z. B. eine ganze Zahl, eine Fließkommazahl oder ein Wahrheitswert).
 
-*   Eine Übersicht finden Sie hier: **[Datentypen](Allgemeines/Datentypen/Datentypen.md)**
+*   Eine Übersicht finden Sie hier: **[Datentypen](Datentypen/Datentypen.md)**
 *   Informationen zu generischen Datentypen: **[ANY-Typen](Datentypen/GenerischeDatentypen/ANY_Typen.md)**
 *   Welche Typen miteinander verbunden werden dürfen: **[Typkompatibilität](Datentypen/Typkompatibilität.md)**
 

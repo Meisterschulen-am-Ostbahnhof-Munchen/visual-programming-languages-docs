@@ -16,7 +16,7 @@ build:
     - libffi-dev
 
 mkdocs:
-  configuration: docs/Bibliotheken/StandardLibraries/mkdocs_standard_libraries.yml
+  configuration: docs/Bibliotheken/StandardLibraries/mkdocs.yml
 
 python:
    install:

@@ -58,7 +58,7 @@ Der AX_FB_TP-Block arbeitet als Impulsgeber:
 - Generierung von definierten Signalpulsen in der Prozessautomatisierung
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
-Im Vergleich zum [AX_PULSE](../../events/unidirectional/timers/AX_PULSE.md) bietet AX_FB_TP die klassische IEC 61131-3 TP-Charakteristik inklusive dem ET-Statusausgang.
+Im Vergleich zum [AX_PULSE](../../events/unidirectional/BOOL/timers/AX_PULSE.md) bietet AX_FB_TP die klassische IEC 61131-3 TP-Charakteristik inklusive dem ET-Statusausgang.
 
 
 

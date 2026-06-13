@@ -57,7 +57,7 @@ Der Block besitzt einen einfachen Zustand: Im Ruhezustand wartet er auf eingehen
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Split-Bausteinen bietet AX_SPLIT_5 eine feste Anzahl von fünf Ausgängen. Andere Split-Varianten können unterschiedliche Ausgangszahlen oder konfigurierbare Verteilungslogiken bieten. Der Fokus liegt hier auf der einfachen, festen 1:5-Verteilung.
 
-Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)
+Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Fazit
 Der AX_SPLIT_5 ist ein spezialisierter Verteilerbaustein, der durch seine einfache und deterministische Funktionsweise ideal für Anwendungen geeignet ist, bei denen ein Signal auf genau fünf Empfänger verteilt werden muss. Die Verwendung standardisierter AX-Adapter gewährleistet Kompatibilität innerhalb bestehender Steuerungssysteme.

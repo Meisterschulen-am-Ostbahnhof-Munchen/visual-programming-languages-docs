@@ -57,7 +57,7 @@ Der Funktionsblock kann folgende Zustände annehmen:
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Timer-Bausteinen wie TON oder TOF bietet AX_TONOF die kombinierte Funktionalität beider Timer-Typen in einem Baustein. Die Verwendung von Adaptern anstelle direkter Ein-/Ausgänge ermöglicht eine flexiblere Integration in komplexere Steuerungsstrukturen.
 
-Vergleich mit [E_TONOF](../../../../../StandardLibraries/events/timer/E_TONOF.md)
+Vergleich mit [E_TONOF](../../../../../../StandardLibraries/events/timers/E_TONOF.md)
 
 
 
@@ -66,7 +66,7 @@ Vergleich mit [E_TONOF](../../../../../StandardLibraries/events/timer/E_TONOF.md
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020g_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020g_AX.md)
+* [Uebung_020g_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020g_AX.md)
 
 ## Fazit
 Der AX_TONOF stellt einen vielseitigen Timer-Baustein dar, der durch seine kombinierte Ein-/Ausschaltverzögerungsfunktionalität und die Adapter-basierte Schnittstellengestaltung besonders für modulare Steuerungsarchitekturen geeignet ist. Die integrierte Reset-Funktion erhöht die Flexibilität in praktischen Anwendungen.

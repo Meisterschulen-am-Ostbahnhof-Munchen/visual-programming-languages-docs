@@ -35,6 +35,6 @@ Die Übung "tastend" demonstriert die Erstellung eines einfachen Sub-Applikation
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_103](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
-* [Uebung_103c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103c.md)
-* [Uebung_103c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103c2.md)
+* [Uebung_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
+* [Uebung_103c2](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c2.md)
 

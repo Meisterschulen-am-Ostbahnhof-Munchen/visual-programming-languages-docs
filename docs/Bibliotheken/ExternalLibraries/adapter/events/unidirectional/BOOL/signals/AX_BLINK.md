@@ -37,7 +37,7 @@ Blinkende Anzeigen.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020f3_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f3_AX.md)
+* [Uebung_020f3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f3_AX.md)
 
 ## Fazit
 Adapter-basierter Blink-Baustein.

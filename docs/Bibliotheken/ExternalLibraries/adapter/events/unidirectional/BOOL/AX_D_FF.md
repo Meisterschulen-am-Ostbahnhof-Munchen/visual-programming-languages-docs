@@ -59,14 +59,14 @@ Der Algorithmus LATCH kopiert den Eingangswert `I.D1` auf den Ausgang `Q.D1`. Di
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu getakteten D-Flipflops arbeitet der AX_D_FF asynchron und speichert den Wert sofort bei Änderung der Eingangsbedingungen. Es handelt sich um ein level-getriggertes anstatt eines flanken-getriggerten Elements.
 
-Vergleich mit [E_D_FF](../../../../StandardLibraries/events/E_D_FF.md)
+Vergleich mit [E_D_FF](../../../../../StandardLibraries/events/E_D_FF.md)
 
 
 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_170_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_170_AX.md)
+* [Uebung_170_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_170_AX.md)
 
 ## Fazit
 Der AX_D_FF bietet eine einfache und effektive Lösung für grundlegende Datenspeicheraufgaben in 4diac-Steuerungssystemen. Seine klare Zustandslogik und die Verwendung standardisierter Adapter machen ihn zu einem zuverlässigen Baustein für verschiedene Anwendungsfälle.

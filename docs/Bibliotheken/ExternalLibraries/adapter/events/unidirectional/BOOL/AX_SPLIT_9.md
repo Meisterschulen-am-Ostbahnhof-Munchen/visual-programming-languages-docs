@@ -54,7 +54,7 @@ Der Funktionsblock besitzt einen einfachen Zustand: Bei Aktivierung des Eingangs
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Splitter-Blöcken bietet AX_SPLIT_9 eine höhere Anzahl an Ausgängen (9 statt typischerweise 2-4). Gegenüber seriellen Verteilern ermöglicht er eine gleichzeitige Aktivierung aller Ausgänge ohne sequentielle Verzögerung.
 
-Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)
+Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Fazit
 Der AX_SPLIT_9 Funktionsblock stellt eine effiziente Lösung für die parallele Verteilung unidirektionaler Adaptersignale dar. Seine generische Natur und die hohe Anzahl an Ausgängen machen ihn besonders geeignet für komplexe Steuerungsanwendungen, bei denen ein Signal an multiple Empfänger verteilt werden muss.

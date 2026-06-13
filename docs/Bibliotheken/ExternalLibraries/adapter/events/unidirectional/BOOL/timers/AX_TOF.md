@@ -63,7 +63,7 @@ Im Vergleich zu anderen Timer-Bausteinen bietet AX_TOF:
 - Integrierte Reset-Funktionalität
 - Standardisierte TIME-Datentypen
 
-Vergleich mit [E_TOF](../../../../../StandardLibraries/events/timer/E_TOF.md)
+Vergleich mit [E_TOF](../../../../../../StandardLibraries/events/timers/E_TOF.md)
 
 
 
@@ -72,7 +72,7 @@ Vergleich mit [E_TOF](../../../../../StandardLibraries/events/timer/E_TOF.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020e_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020e_AX.md)
+* [Uebung_020e_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e_AX.md)
 
 ## Fazit
 Der AX_TOF Funktionsblock bietet eine zuverlässige und standardisierte Lösung für Ausschaltverzögerungen in 4diac-basierten Steuerungssystemen. Durch die Verwendung von Adapter-Schnittstellen ermöglicht er eine flexible Integration in komplexere Funktionsbaustein-Netzwerke.

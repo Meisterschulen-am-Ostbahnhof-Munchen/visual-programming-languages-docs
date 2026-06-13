@@ -55,7 +55,7 @@ Der Baustein arbeitet zustandslos - eingehende Daten und Ereignisse werden sofor
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Split-Bausteinen bietet AX_SPLIT_4 eine spezifische 1:4-Aufteilung für AX-Adapter. Andere Split-Varianten könnten unterschiedliche Anzahlen von Ausgängen oder andere Adaptertypen unterstützen.
 
-Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)
+Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Fazit
 Der AX_SPLIT_4 Funktionsblock bietet eine einfache und effiziente Lösung zur Verteilung von AX-Adapter-Daten auf vier parallele Ausgänge. Seine generische Natur und die Verwendung standardisierter Adapter machen ihn vielseitig einsetzbar in verschiedenen Automatisierungsanwendungen.

@@ -53,7 +53,7 @@ Im Vergleich zu anderen Selektionsbausteinen bietet AX_SEL:
 - Einfache Integration durch unidirektionalen Adapter
 - Standardisierte Schnittstelle gemäß IEC 61131-3
 
-Vergleich mit [F_SEL](../../../../../StandardLibraries/iec61131-3/selection/F_SEL.md)
+Vergleich mit [F_SEL](../../../../StandardLibraries/iec61131-3/selection/F_SEL.md)
 
 ## Fazit
 Der AX_SEL Funktionsblock stellt eine einfache und flexible Lösung für binäre Auswahlaufgaben in Steuerungssystemen dar. Durch die Verwendung des ANY-Datentyps und standardisierter Adapter-Schnittstellen ermöglicht er eine vielseitige Anwendung in verschiedenen Automatisierungsprojekten.

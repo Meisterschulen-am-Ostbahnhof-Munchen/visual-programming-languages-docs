@@ -62,5 +62,5 @@ Die Subapplikation tastend_TON_5s stellt eine kompakte Lösung für zeitverzöge
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_103](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
-* [Uebung_103c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103c.md)
+* [Uebung_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
 

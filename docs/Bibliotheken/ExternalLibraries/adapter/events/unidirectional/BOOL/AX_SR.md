@@ -43,7 +43,7 @@ Der AX_SR Funktionsblock arbeitet als Set-Reset-Flip-Flop mit folgenden Eigensch
 
 Wie bei allen ereignisgesteuerten bistabilen Elementen in der IEC 61499 (siehe auch Anmerkung 8 in Tabelle A.1 der DIN EN 61499-1) gibt es hier keine inhärente "Dominanz" eines Eingangs, wie man sie von der IEC 61131-3 kennt.
 
-- **Vergleich zur IEC 61131-3**: Siehe [SR (Bistabil, vorrangig setzen)](../../../../Vergleich/IEC61131_3/SR_ALT.md). Während in der klassischen SPS-Welt bei gleichzeitigem TRUE an S1 und R das Setzen gewinnt, wird in der IEC 61499 jedes Ereignis nacheinander verarbeitet. Der Endzustand hängt davon ab, welches Ereignis zuletzt in der Ausführungskette (ECC) abgearbeitet wurde.
+- **Vergleich zur IEC 61131-3**: Siehe [SR (Bistabil, vorrangig setzen)](../../../../../Vergleich/IEC61131_3/SR_ALT.md). Während in der klassischen SPS-Welt bei gleichzeitigem TRUE an S1 und R das Setzen gewinnt, wird in der IEC 61499 jedes Ereignis nacheinander verarbeitet. Der Endzustand hängt davon ab, welches Ereignis zuletzt in der Ausführungskette (ECC) abgearbeitet wurde.
 - **Funktionale Identität**: `AX_SR` ist funktional identisch zu [AX_RS](AX_RS.md). Die unterschiedliche Benennung und Anordnung der Pins dient lediglich der besseren Orientierung für Entwickler, die an die IEC 61131-3 gewöhnt sind.
 - **Adapter-Kommunikation**: Der Baustein stellt seinen Zustand über den Adapter `Q` zur Verfügung.
 
@@ -65,7 +65,7 @@ Zustandsübergänge:
 
 ## Verwandte Bausteine
 - **[AX_RS](AX_RS.md)**: Funktional identisch, Eingänge im Symbol vertauscht.
-- **[E_SR](../../../../StandardLibraries/events/E_SR.md)**: Das Standard-Äquivalent mit direkten Daten-/Ereignisausgängen statt Adaptern.
+- **[E_SR](../../../../../StandardLibraries/events/E_SR.md)**: Das Standard-Äquivalent mit direkten Daten-/Ereignisausgängen statt Adaptern.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Speicherelementen bietet AX_SR:
@@ -74,7 +74,7 @@ Im Vergleich zu anderen Speicherelementen bietet AX_SR:
 - Ereignisgesteuerte Zustandsänderungen
 - Einfache und robuste Zustandsverwaltung
 
-Vergleich mit [E_SR](../../../../StandardLibraries/events/E_SR.md)
+Vergleich mit [E_SR](../../../../../StandardLibraries/events/E_SR.md)
 
 
 
@@ -83,17 +83,17 @@ Vergleich mit [E_SR](../../../../StandardLibraries/events/E_SR.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX.md)
-* [Uebung_004b_AX_ASR](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
-* [Uebung_004b_AX_ASR_X](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
-* [Uebung_006_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006_AX.md)
-* [Uebung_006d_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006d_AX.md)
-* [Uebung_007a3_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
-* [Uebung_008_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_008_AX.md)
-* [Uebung_009_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)
-* [Uebung_013_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_013_AX.md)
-* [Uebung_160b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_160b_AX.md)
-* [Uebung_171_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_171_AX.md)
+* [Uebung_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
+* [Uebung_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
+* [Uebung_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
+* [Uebung_006_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006_AX.md)
+* [Uebung_006d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006d_AX.md)
+* [Uebung_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
+* [Uebung_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)
+* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+* [Uebung_013_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_013_AX.md)
+* [Uebung_160b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
+* [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
 
 ## Fazit
 Der AX_SR Funktionsblock stellt eine zuverlässige und einfach zu verwendende Lösung für bistabile Speicherfunktionen in verteilten Automatisierungssystemen dar. Durch die Verwendung von Adaptern ermöglicht er eine flexible Integration in verschiedene Systemarchitekturen und bietet eine klare, ereignisgesteuerte Schnittstelle für Set-Reset-Operationen.

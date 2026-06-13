@@ -59,7 +59,7 @@ Der Baustein besitzt keinen internen Zustand und arbeitet stateless. Alle eingeh
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Split-Bausteinen bietet AX_SPLIT_8 eine feste Anzahl von acht Ausgängen und arbeitet ausschließlich auf Adapter-Ebene. Andere Split-Komponenten können variabel viele Ausgänge besitzen oder auf Daten- bzw. Ereignisebene operieren.
 
-Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)
+Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Fazit
 Der AX_SPLIT_8 Funktionsblock stellt eine einfache und effiziente Lösung zur Verteilung von Adapter-Signalen in 4diac-Systemen dar. Seine feste Ausgangsanzahl von acht Ports macht ihn besonders geeignet für standardisierte Verteilungsaufgaben in industriellen Steuerungsanwendungen.

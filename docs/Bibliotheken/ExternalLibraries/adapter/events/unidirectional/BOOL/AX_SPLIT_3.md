@@ -54,7 +54,7 @@ Der Funktionsblock besitzt einen einfachen Zustand: Im Betriebszustand leitet er
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Verteilungsbausteinen zeichnet sich AX_SPLIT_3 durch seine spezifische Ausrichtung auf AX-Adapter aus. Während allgemeine Verteilungsbausteine verschiedene Adaptertypen unterstützen können, ist dieser Baustein speziell für AX-Adapter optimiert.
 
-Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)
+Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 
 
@@ -63,9 +63,9 @@ Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a5b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
-* [Uebung_006a3_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
-* [Uebung_009_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)
+* [Uebung_002a5b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
+* [Uebung_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
 
 ## Fazit
 Der AX_SPLIT_3 bietet eine einfache und effiziente Lösung zur Signalverteilung in 4diac-Systemen. Seine generische Implementierung und standardkonforme Adapter-Schnittstelle machen ihn zu einem vielseitig einsetzbaren Baustein für verschiedene Automatisierungsanwendungen.

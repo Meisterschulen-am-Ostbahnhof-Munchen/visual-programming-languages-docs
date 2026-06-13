@@ -60,7 +60,7 @@ Der Funktionsblock besitzt einen einfachen Zustand: Im aktiven Zustand leitet er
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Splitter-Bausteinen bietet AX_SPLIT_7 eine feste Anzahl von sieben Ausgängen, was für spezifische Anwendungsfälle mit genau sieben Empfängern optimiert ist. Gegenüber variablen Splittern hat dieser Baustein den Vorteil der fest definierten Schnittstellen.
 
-Vergleich mit [E_SPLIT](../../../../StandardLibraries/events/E_SPLIT.md)
+Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Fazit
 Der AX_SPLIT_7 Funktionsblock stellt eine effiziente Lösung für die Verteilung unidirektionaler AX-Signale an sieben Empfänger dar. Seine generische Natur und einfache Funktionsweise machen ihn zu einem robusten und zuverlässigen Baustein für verteilte Steuerungssysteme.

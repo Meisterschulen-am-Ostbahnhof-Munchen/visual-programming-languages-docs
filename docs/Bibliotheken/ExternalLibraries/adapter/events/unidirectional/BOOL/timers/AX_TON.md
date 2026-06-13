@@ -55,7 +55,7 @@ Der AX_TON-Block arbeitet als Einschaltverzögerungstimer. Bei Empfang eines Ein
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Timer-Blöcken bietet AX_TON eine standardisierte Schnittstelle durch Adapter, was die Wiederverwendbarkeit und modulare Integration in größere Steuerungssysteme erleichtert.
 
-Vergleich mit [E_TON](../../../../../StandardLibraries/events/timer/E_TON.md)
+Vergleich mit [E_TON](../../../../../../StandardLibraries/events/timers/E_TON.md)
 
 
 
@@ -64,8 +64,8 @@ Vergleich mit [E_TON](../../../../../StandardLibraries/events/timer/E_TON.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020c_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020c_AX.md)
-* [Uebung_160b2_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
+* [Uebung_020c_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c_AX.md)
+* [Uebung_160b2_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
 
 ## Fazit
 AX_TON ist ein robuster und zuverlässiger Timer-Baustein für Einschaltverzögerungen, der durch seine standardisierte Adapter-basierte Schnittstelle eine flexible Integration in verschiedene Automatisierungssysteme ermöglicht.

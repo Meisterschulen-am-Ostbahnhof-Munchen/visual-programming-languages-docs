@@ -83,7 +83,7 @@ RESET (Q.D1 = FALSE)
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einem einfachen E_SR-Flipflop bietet der AX_T_FF_SR zusätzliche Toggle-Funktionalität durch den CLK-Eingang. Während ein reines SR-Flipflop nur über Set- und Reset-Eingänge verfügt, ermöglicht dieser Baustein zusätzlich das taktgesteuerte Umschalten des Ausgangszustands.
 
-Vergleich mit [E_T_FF_SR](../../../../StandardLibraries/events/E_T_FF_SR.md)
+Vergleich mit [E_T_FF_SR](../../../../../StandardLibraries/events/E_T_FF_SR.md)
 
 
 
@@ -92,11 +92,11 @@ Vergleich mit [E_T_FF_SR](../../../../StandardLibraries/events/E_T_FF_SR.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004a7_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
-* [Uebung_006a2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a2_AX.md)
-* [Uebung_006a3_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
-* [Uebung_006a4_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a4_AX.md)
-* [Uebung_006a_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a_AX.md)
+* [Uebung_004a7_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
+* [Uebung_006a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a2_AX.md)
+* [Uebung_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+* [Uebung_006a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a4_AX.md)
+* [Uebung_006a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a_AX.md)
 
 ## Fazit
 Der AX_T_FF_SR ist ein vielseitiger bistabiler Speicherbaustein, der die Vorteile von SR- und T-Flipflops kombiniert. Durch die Adapter-basierte Schnittstelle ermöglicht er eine flexible Integration in größere Steuerungssysteme und eignet sich besonders für Anwendungen, die sowohl direkte Zustandssetzung als auch taktgesteuertes Umschalten erfordern.

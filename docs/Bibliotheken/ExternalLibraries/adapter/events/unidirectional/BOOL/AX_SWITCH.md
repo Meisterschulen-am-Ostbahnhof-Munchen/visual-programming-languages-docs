@@ -50,7 +50,7 @@ Der Block besitzt keine internen Zustände im klassischen Sinne. Er arbeitet rei
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zum Standard-E_SWITCH Block bietet AX_SWITCH eine Adapter-basierte Schnittstelle, was eine bessere Integration in Adapter-basierte Architekturen ermöglicht. Während E_SWITCH direkte Ein- und Ausgänge besitzt, kommuniziert AX_SWITCH ausschließlich über Adapter.
 
-Vergleich mit [E_SWITCH](../../../../StandardLibraries/events/E_SWITCH.md)
+Vergleich mit [E_SWITCH](../../../../../StandardLibraries/events/E_SWITCH.md)
 
 
 
@@ -59,21 +59,21 @@ Vergleich mit [E_SWITCH](../../../../StandardLibraries/events/E_SWITCH.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX.md)
-* [Uebung_004b_AX_ASR](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
-* [Uebung_004b_AX_ASR_X](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
-* [Uebung_005_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_005_AX.md)
-* [Uebung_006a3_sub_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)
-* [Uebung_007a3_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
-* [Uebung_008_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_008_AX.md)
-* [Uebung_009_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)
-* [Uebung_020a_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020a_AX.md)
-* [Uebung_020b_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020b_AX.md)
-* [Uebung_020c3_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
-* [Uebung_020d_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020d_AX.md)
-* [Uebung_020e2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
-* [Uebung_020f2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
-* [Uebung_020i_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020i_AX.md)
+* [Uebung_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
+* [Uebung_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
+* [Uebung_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
+* [Uebung_005_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_005_AX.md)
+* [Uebung_006a3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)
+* [Uebung_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
+* [Uebung_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)
+* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+* [Uebung_020a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020a_AX.md)
+* [Uebung_020b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)
+* [Uebung_020c3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
+* [Uebung_020d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)
+* [Uebung_020e2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
+* [Uebung_020f2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
+* [Uebung_020i_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Fazit
 AX_SWITCH ist ein spezialisierter Schaltbaustein für ereignisbasierte Systeme, der durch seine Adapter-basierte Architektur eine flexible Integration in komplexere Steuerungssysteme ermöglicht. Die klare Trennung von Ereignis- und Datenfluss über Adapter sorgt für eine übersichtliche Systemstruktur.

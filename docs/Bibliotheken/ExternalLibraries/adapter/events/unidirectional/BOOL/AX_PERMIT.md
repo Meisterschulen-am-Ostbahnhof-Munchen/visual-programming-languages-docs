@@ -39,5 +39,5 @@ Der Baustein empfängt ein kombiniertes Ereignis- und Bool-Signal über einen `A
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_009_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)
+* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
 

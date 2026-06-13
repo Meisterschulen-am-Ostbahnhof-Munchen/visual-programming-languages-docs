@@ -39,7 +39,7 @@ Namen von Variablen, Funktionsbausteinen, Programmen und anderen Elementen werde
 
 Die Darstellung von Zahlen (Binär, Hexadezimal, Dezimal) und die Verwendung von Literalen im Code sind für die Steuerungsprogrammierung essenziell.
 
-*   Detaillierte Informationen finden Sie hier: **[Zahlen und Zahlensysteme](Allgemeines/Zahlen.md)**
+*   Detaillierte Informationen finden Sie hier: **[Zahlen und Zahlensysteme](Zahlen.md)**
 
 ---
 

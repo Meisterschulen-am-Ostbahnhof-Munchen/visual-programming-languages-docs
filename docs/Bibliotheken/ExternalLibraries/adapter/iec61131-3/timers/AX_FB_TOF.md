@@ -58,7 +58,7 @@ Der AX_FB_TOF-Block arbeitet als Ausschaltverzögerungstimer:
 - Sicherstellung von Mindestlaufzeiten nach einem Stopp-Befehl
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
-Im Vergleich zu ereignisbasierten Timern wie [AX_TOF](../../events/unidirectional/timers/AX_TOF.md) folgt dieser Baustein dem klassischen SPS-Verhalten nach IEC 61131-3 und bietet zusätzlich den ET-Statusausgang.
+Im Vergleich zu ereignisbasierten Timern wie [AX_TOF](../../events/unidirectional/BOOL/timers/AX_TOF.md) folgt dieser Baustein dem klassischen SPS-Verhalten nach IEC 61131-3 und bietet zusätzlich den ET-Statusausgang.
 
 
 

@@ -16,7 +16,7 @@ build:
     - libffi-dev
 
 mkdocs:
-  configuration: docs/Bibliotheken/ExternalLibraries/mkdocs.yml
+  configuration: mkdocs.yml
 
 python:
    install:

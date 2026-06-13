@@ -16,7 +16,7 @@ build:
     - libffi-dev
 
 mkdocs:
-  configuration: docs/Uebungen/test_AX/Uebungen_doc/mkdocs.yml
+  configuration: mkdocs.yml
 
 python:
    install:

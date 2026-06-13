@@ -57,8 +57,8 @@ Der Funktionsblock speichert den vorherigen Zustand des `CLK`-Signals in einer i
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_178](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_178.md)
-* [Uebung_178_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_178_AX.md)
+* [Uebung_178](../../../../Uebungen/test_B/Uebungen_doc/Uebung_178.md)
+* [Uebung_178_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_178_AX.md)
 
 ## Fazit
 Der `FB_F_TRIG` ist ein einfacher und effizienter Funktionsblock zur Erkennung von fallenden Flanken in booleschen Signalen. Durch seine klare Schnittstelle und einfache Funktionsweise eignet er sich ideal für Steuerungsanwendungen, bei denen Zustandsänderungen detektiert werden müssen.

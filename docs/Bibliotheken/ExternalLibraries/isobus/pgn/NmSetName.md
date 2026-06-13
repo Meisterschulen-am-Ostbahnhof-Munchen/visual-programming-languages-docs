@@ -58,7 +58,7 @@ Der Block kehrt danach direkt wieder in den Wartezustand (1) zurück.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_121](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_121.md)
+* [Uebung_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
 
 ## Fazit
 Der `NmSetName`-Funktionsblock ist ein spezialisierter, unverzichtbarer Baustein für die ISOBUS-Kommunikation. Er abstrahiert die komplexe, bitgenaue Zusammensetzung des ISO-NAME gemäß der Norm und bietet dem Anwender eine einfache, strukturierte Schnittstelle. Seine deterministische und zustandslose Funktionsweise macht ihn robust und einfach in Steuerungsabläufe zur Geräteinitialisierung und -konfiguration integrierbar.

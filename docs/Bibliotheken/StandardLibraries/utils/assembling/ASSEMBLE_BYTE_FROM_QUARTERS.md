@@ -58,7 +58,7 @@ Der Funktionsblock nimmt vier Quarter-Bytes entgegen und kombiniert sie zu einem
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_056](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
+* [Uebung_056](../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 ## Fazit
 Der `ASSEMBLE_BYTE_FROM_QUARTERS`-Funktionsblock ist eine effiziente und spezialisierte Lösung für die Kombination von vier Quarter-Bytes zu einem vollständigen Byte. Durch die Verwendung von Bit-Shift- und logischen Operationen bietet er eine performante und flexible Möglichkeit zur Datenverarbeitung in entsprechenden Anwendungsszenarien.

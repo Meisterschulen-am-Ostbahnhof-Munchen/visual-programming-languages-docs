@@ -56,7 +56,7 @@ Im Vergleich zu generischen Zeitmessbausteinen (wie `E_DELAY` oder `E_CYCLE`) is
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+* [Uebung_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Fazit
 Der `CYCLE_TIME`-Funktionsblock ist ein einfaches, aber effektives Werkzeug zur Laufzeitmessung in IEC 61499-basierten Steuerungssystemen. Seine klare Schnittstelle und einfache Funktionsweise machen ihn zu einer robusten Komponente für Diagnose- und Monitoring-Aufgaben, wo die Genauigkeit und Zuverlässigkeit der Zykluszeiterfassung im Vordergrund steht.

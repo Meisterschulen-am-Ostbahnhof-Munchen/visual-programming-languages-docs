@@ -58,9 +58,9 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_034b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034b.md)
-* [Uebung_152](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_153.md)
+* [Uebung_034b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)
+* [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+* [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Fazit
 `F_UDINT_TO_DWORD` ist ein einfacher, aber essentieller Funktionsblock für Typkonvertierungen in IEC 61499-basierten Steuerungssystemen. Seine deterministische Funktionsweise und klare Schnittstelle machen ihn zu einem verlässlichen Werkzeug für Datenumwandlungen.

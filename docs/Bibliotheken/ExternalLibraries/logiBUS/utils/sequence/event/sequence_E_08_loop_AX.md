@@ -53,7 +53,7 @@ Für zyklische ereignisgesteuerte 8-stufige Sequenzen mit Adapteranbindung.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_040_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_040_AX.md)
+* [Uebung_040_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
 
 ## Fazit
 Adapter-Variante des 8-Schritt-Loop-Ereignis-Sequenzers.

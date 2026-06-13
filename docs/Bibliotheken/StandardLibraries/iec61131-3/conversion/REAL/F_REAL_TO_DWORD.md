@@ -50,7 +50,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_126b2_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2_sub.md)
+* [Uebung_126b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
 
 ## Fazit
 Der Funktionsblock `F_REAL_TO_DWORD` bietet eine einfache und effiziente Möglichkeit, Fließkommawerte in vorzeichenlose Ganzzahlen umzuwandeln. Er ist besonders nützlich in Umgebungen, die nur Ganzzahloperationen unterstützen oder wenn Daten in einem bestimmten Format weiterverarbeitet werden müssen. Bei der Verwendung ist jedoch auf mögliche Datenverluste durch die Konvertierung zu achten.

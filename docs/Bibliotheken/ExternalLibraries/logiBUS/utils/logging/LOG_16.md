@@ -59,8 +59,8 @@ Der Baustein besitzt keinen persistenten internen Zustand im Sinne einer Zustand
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_122](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122.md)
-* [Uebung_122b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122b.md)
+* [Uebung_122](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
+* [Uebung_122b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
 
 ## Fazit
 Der `LOG_16` ist ein nützlicher und generischer Funktionsblock für grundlegende Logging- und Pufferaufgaben in 4diac FORTE-Applikationen. Seine Stärken liegen in der Einfachheit, der generischen Typunterstützung und dem deterministischen Verhalten. Die feste Puffergröße von 16 ist für viele Überwachungsaufgaben ausreichend, für Anwendungen, die eine andere Puffertiefe oder ein selektives Lesen benötigen, sind jedoch angepasste oder erweiterte Bausteine erforderlich.

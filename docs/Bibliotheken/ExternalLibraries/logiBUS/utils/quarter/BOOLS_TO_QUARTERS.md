@@ -68,7 +68,7 @@ Als Composite FB ohne eigene, explizite Zustandsmaschine besitzt `BOOLS_TO_QUART
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+* [Uebung_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 Der `BOOLS_TO_QUARTERS`-Funktionsblock bietet eine praktische und vorkonfektionierte Lösung, um eine große Anzahl boolescher Signale seriell in das Quarter-Byte-Format zu konvertieren. Seine komposite Natur macht ihn einfach zu verstehen und zu verwenden, da er die Verdrahtung von 16 einzelnen Blöcken und ihrer Ereignislogik abstrahiert. Die serielle Abarbeitung ist ein entscheidendes Merkmal, das bei Echtzeitanforderungen berücksichtigt werden muss. Der Block ist ideal für spezifische Anwendungen, die das Quarter-Byte-Format erfordern, weniger jedoch für allgemeine Bit-Pack- oder -Unpack-Operationen.

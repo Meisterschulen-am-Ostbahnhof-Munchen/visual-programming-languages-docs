@@ -75,7 +75,7 @@ Im Vergleich zu generischen CAN-Empfangsblöcken ist `AlPgnRxNew8B_REQ` speziell
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_132](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_132.md)
+* [Uebung_132](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
 
 ## Fazit
 Der `AlPgnRxNew8B_REQ` ist ein spezialisierter Funktionsblock für die bedarfsgesteuerte (on-demand) Kommunikation in ISOBUS-Netzwerken. Durch die Trennung von Installation (`install`) und Ausführung (`REQ`) ermöglicht er eine flexible und kontrollierte Datenanforderung. Seine integrierte Fehlerbehandlung und typsichere Datenschnittstelle machen ihn zu einem robusten Baustein für anspruchsvolle Embedded-Steuerungen in der Agrartechnik.

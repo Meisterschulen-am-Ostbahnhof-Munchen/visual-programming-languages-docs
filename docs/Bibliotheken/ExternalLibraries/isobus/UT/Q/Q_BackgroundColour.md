@@ -94,8 +94,8 @@ Der **Q_BackgroundColour** ist ein standardkonformer Funktionsbaustein zur Steue
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_016](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016.md)
-* [Uebung_016a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016a.md)
+* [Uebung_016](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
+* [Uebung_016a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
 
 ## Fazit
 

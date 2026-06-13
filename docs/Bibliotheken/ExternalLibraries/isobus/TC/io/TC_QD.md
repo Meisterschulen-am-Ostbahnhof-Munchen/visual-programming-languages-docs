@@ -67,7 +67,7 @@ Im Vergleich zu einfacheren Ausgabeblöcken bietet TC_QD erweiterte Funktionalit
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+* [Uebung_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 Der TC_QD Funktionsblock stellt eine leistungsstarke und flexible Lösung für die Ausgabe von Double-Word-Daten in ISOBUS-Umgebungen dar. Seine strukturierte Schnittstelle und umfangreiche Parametrierungsmöglichkeiten machen ihn besonders geeignet für anspruchsvolle Steuerungsanwendungen in der mobilen Automation.

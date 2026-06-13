@@ -59,7 +59,7 @@ Der Funktionsblock besitzt einen einzigen, stabilen Zustand:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+* [Uebung_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Fazit
 Der `OFFSET_UDINT` ist ein spezialisierter und effizienter Funktionsblock für Anwendungen, bei denen ein einmalig gemessener Startwert als Basis für alle folgenden relativen Berechnungen dienen soll. Seine Stärke liegt in der Einfachheit und der zuverlässigen, einmaligen Setzung des Referenzwertes, was manuelle Logik zur Erkennung des "ersten Zyklus" überflüssig macht. Er ist ideal für Initialisierungs- und Normierungsaufgaben in Steuerungsanwendungen.

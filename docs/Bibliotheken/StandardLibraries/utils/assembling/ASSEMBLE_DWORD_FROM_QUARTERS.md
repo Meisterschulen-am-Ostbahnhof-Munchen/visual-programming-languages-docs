@@ -56,7 +56,7 @@ Der Funktionsblock nimmt 16 Quarter-Bytes entgegen und kombiniert sie zu einem 3
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+* [Uebung_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 Der `ASSEMBLE_DWORD_FROM_QUARTERS`-Funktionsblock ist ein leistungsfähiges Werkzeug zur Kombination von 16 Quarter-Bytes zu einem DWORD. Durch seine flexible und präzise Arbeitsweise eignet er sich ideal für Anwendungen, bei denen Daten in kleineren Einheiten vorliegen und zu einer größeren Einheit zusammengefasst werden müssen.

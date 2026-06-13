@@ -83,11 +83,11 @@ Hierbei sind `Eingang1` und `Eingang2` die beiden Werte, die verglichen werden s
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
-* [Uebung_071](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071.md)
-* [Uebung_071a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071a.md)
-* [Uebung_110](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_110.md)
-* [Uebung_111](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_111.md)
+* [Uebung_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+* [Uebung_071](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)
+* [Uebung_071a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
+* [Uebung_110](../../../../Uebungen/test_B/Uebungen_doc/Uebung_110.md)
+* [Uebung_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
 
 ## Fazit
 

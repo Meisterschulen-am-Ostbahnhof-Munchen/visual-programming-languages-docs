@@ -74,7 +74,7 @@ Der E_TOF-Baustein kann in verschiedenen industriellen Steuerungsanwendungen ein
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020e](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020e.md)
+* [Uebung_020e](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e.md)
 
 ## Fazit
 

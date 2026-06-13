@@ -60,8 +60,8 @@ Der Funktionsblock wartet auf ein eingehendes Ereignis (`REQ0`, `REQ1` oder `REQ
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_015a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_015a.md)
-* [Uebung_016a](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_016a.md)
+* [Uebung_015a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
+* [Uebung_016a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)
 
 ## Fazit
 Der `F_SEL_E_3` ist ein effizienter und flexibler Baustein für Anwendungen, bei denen zwischen drei verschiedenen Datenquellen ereignisgesteuert gewechselt werden muss. Seine einfache Schnittstelle und Unterstützung für beliebige Datentypen machen ihn zu einem vielseitigen Werkzeug in der Automatisierungstechnik.

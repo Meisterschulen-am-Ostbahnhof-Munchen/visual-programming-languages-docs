@@ -54,9 +54,9 @@ Der Baustein agiert somit als einfacher Wächter für den Ereignisfluss.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_009](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009.md)
-* [Uebung_080c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_080c.md)
-* [Uebung_094](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_094.md)
+* [Uebung_009](../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
+* [Uebung_080c](../../../Uebungen/test_B/Uebungen_doc/Uebung_080c.md)
+* [Uebung_094](../../../Uebungen/test_B/Uebungen_doc/Uebung_094.md)
 
 ## Fazit
 Der `E_PERMIT`-Baustein ist ein fundamentaler und weit verbreiteter Baustein zur Implementierung von Bedingungen und Freigaben in der ereignisgesteuerten Logik von IEC 61499. Seine Einfachheit und klare Funktion machen ihn zu einem unverzichtbaren Werkzeug für die Erstellung von sicheren und robusten Steuerungsabläufen.

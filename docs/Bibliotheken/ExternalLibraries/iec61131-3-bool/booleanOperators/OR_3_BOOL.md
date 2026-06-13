@@ -73,7 +73,7 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei, kombinatorisch
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a5b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a5b.md)
+* [Uebung_002a5b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a5b.md)
 
 ## Fazit
 Der `OR_3_BOOL` ist ein grundlegender, zuverlässiger und standardkonformer Funktionsblock zur logischen ODER-Verknüpfung von drei Signalen. Seine ereignisgesteuerte, zustandslose Arbeitsweise macht ihn ideal für den Einsatz in klar strukturierten Steuerungsabläufen der Automatisierungstechnik. Er stellt eine essentielle Komponente für die Realisierung von Überwachungs-, Sicherheits- und Steuerungslogiken dar.

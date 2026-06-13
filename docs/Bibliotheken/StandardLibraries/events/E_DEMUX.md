@@ -64,9 +64,9 @@ Das Eingangsereignis wird somit immer exklusiv an genau einen Ausgang weitergele
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_040](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_040.md)
-* [Uebung_040_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_040_AX.md)
-* [Uebung_087](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087.md)
+* [Uebung_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+* [Uebung_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
+* [Uebung_087](../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
 
 ## Fazit
 Der `E_DEMUX` ist ein fundamentaler Baustein für die Steuerung des Ereignisflusses in IEC 61499-Anwendungen. Er ermöglicht eine klare, indexbasierte Aufteilung von Ereignisströmen und ist damit ein Schlüsselwerkzeug für die Implementierung von Zustandslogiken, Modus-Umschaltungen und Sequenzsteuerungen.

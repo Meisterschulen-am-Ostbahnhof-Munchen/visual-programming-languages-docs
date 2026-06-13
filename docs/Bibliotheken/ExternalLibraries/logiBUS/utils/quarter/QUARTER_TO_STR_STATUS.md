@@ -73,8 +73,8 @@ Der ECC besteht aus sechs Zuständen:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_055](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)
-* [Uebung_056](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
+* [Uebung_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
+* [Uebung_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 ## Fazit
 Der `QUARTER_TO_STR_STATUS` ist ein spezialisierter und nützlicher Funktionsblock für Anwendungen, die mit dem spezifischen 4-Zustands-Statusmodell (Quarter Byte) arbeiten. Durch die Nutzung einer Konstantenbibliothek und die klare Trennung von Logik und Schnittstelle trägt er zur Robustheit und Wartbarkeit von IEC 61499-Applikationen bei. Er ist die ideale Wahl, wenn kompakte Statusinformationen zuverlässig und einheitlich in eine für den Menschen lesbare Form gebracht werden müssen.

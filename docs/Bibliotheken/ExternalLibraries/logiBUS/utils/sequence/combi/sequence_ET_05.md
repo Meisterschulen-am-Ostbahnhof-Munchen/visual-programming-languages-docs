@@ -92,8 +92,8 @@ Im Vergleich zu einfachen Timer-Ketten oder Zählern bietet `sequence_ET_05` ein
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_039](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039.md)
-* [Uebung_039a](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039a.md)
+* [Uebung_039](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039.md)
+* [Uebung_039a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a.md)
 
 ## Fazit
 Der `sequence_ET_05` ist ein gut strukturierter und flexibler Funktionsblock zur Implementierung von 5-stufigen Sequenzen. Die klare Trennung von Steuerfluss (Ereignisse) und Parametern (Zeiten) sowie die Möglichkeit, jeden Übergang wahlweise manuell oder automatisch zu gestalten, machen ihn für eine Vielzahl von Steuerungsaufgaben in der Automatisierungstechnik geeignet. Die Nutzung standardisierter Adapter und die ausführliche Dokumentation der Schnittstellen erleichtern die Integration in größere Anwendungen.

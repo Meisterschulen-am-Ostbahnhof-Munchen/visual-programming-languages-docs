@@ -74,7 +74,7 @@ Der **E_RDELAY** (Reloadable Delay) ist ein erweiterter Verzögerungsbaustein na
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_018a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_018a.md)
+* [Uebung_018a](../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
 
 ## Fazit
 

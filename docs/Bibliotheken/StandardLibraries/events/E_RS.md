@@ -52,10 +52,10 @@ Laut **DIN EN 61499-1 (Tabelle A.1, Anmerkung 8)** ist die Implementierung diese
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006b.md)
-* [Uebung_020a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020a.md)
-* [Uebung_020b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020b.md)
-* [Uebung_020d](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020d.md)
+* [Uebung_006b](../../../Uebungen/test_B/Uebungen_doc/Uebung_006b.md)
+* [Uebung_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)
+* [Uebung_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
+* [Uebung_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
 
 ## Fazit
 Der `E_RS`-Baustein ist ein fundamentaler Speicherbaustein in der IEC 61499. Er ist ideal für einfache Zustandspeicherungen, bei denen ein Zustand durch ein Ereignis gesetzt und durch ein anderes explizit zurückgesetzt wird. Das Fehlen einer garantierten Set- oder Reset-Dominanz bei gleichzeitigen Ereignissen muss in kritischen Anwendungen beachtet werden.

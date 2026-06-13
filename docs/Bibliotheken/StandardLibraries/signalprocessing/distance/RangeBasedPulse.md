@@ -54,8 +54,8 @@ Im Gegensatz zu einfachen Zeitgebern arbeitet dieser FB mit Distanzwerten statt 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_071b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071b.md)
-* [Uebung_072b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072b.md)
+* [Uebung_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+* [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
 
 ## Fazit
 Der RangeBasedPulse FB ist ein spezialisierter Funktionsblock für Anwendungen, die distanzbasierte Steuerungssignale benötigen. Durch seine einfache Konfiguration und flexible Offset-Einstellung eignet er sich gut für verschiedene industrielle Steuerungsaufgaben.

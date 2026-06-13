@@ -26,7 +26,7 @@ unidirectional Adapter Interface for 1 Event and 1 Udint
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_009_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_009_AX.md)
-* [Uebung_011_AUDI](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011_AUDI.md)
-* [Uebung_083_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_083_AX.md)
+* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+* [Uebung_011_AUDI](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011_AUDI.md)
+* [Uebung_083_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)
 

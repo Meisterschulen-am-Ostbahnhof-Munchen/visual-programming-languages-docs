@@ -58,9 +58,9 @@ Da es sich um einen rein durchschleifenden Composite-Baustein ohne interne Zusta
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_126b2_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2_sub.md)
-* [Uebung_126b_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)
-* [Uebung_12x_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_12x_sub.md)
+* [Uebung_126b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
+* [Uebung_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+* [Uebung_12x_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Fazit
 Der `CallbackFB` ist ein nützliches Hilfskonstrukt für die strukturierte Anwendung des Adapter-Patterns in IEC 61499, speziell im ISOBUS-Umfeld. Er reduziert die Komplexität im Hauptnetzwerk, indem er die Verbindungslogik für Callback-Kommunikation in einen einzigen, wiederverwendbaren Composite-Baustein auslagert. Seine Stärke liegt in der Einfachheit und Klarheit, während er selbst keine aktive Logik implementiert. Er ist die ideale Wahl, wenn eine standardisierte und typsichere Callback-Schnittstelle in einer Subapplikation benötigt wird.

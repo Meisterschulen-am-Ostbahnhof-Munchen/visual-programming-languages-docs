@@ -49,7 +49,7 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_173](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_173.md)
+* [Uebung_173](../../../Uebungen/test_B/Uebungen_doc/Uebung_173.md)
 
 ## Fazit
 Der `E_MUX_8` ist ein nützlicher Baustein, um Ereignisströme von bis zu acht Quellen zu bündeln und gleichzeitig die Quelle des Ereignisses zu identifizieren. Er ist das Standard-Gegenstück zum `E_DEMUX_8` und wird häufig verwendet, um die Komplexität von Verdrahtungen zu reduzieren und Logik zu zentralisieren.

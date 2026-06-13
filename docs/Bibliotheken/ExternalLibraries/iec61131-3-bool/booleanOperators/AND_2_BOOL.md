@@ -73,9 +73,9 @@ Der `AND_2_BOOL`-Block ist ein fundamentaler Baustein in der Steuerungs- und Aut
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a4](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002a4.md)
-* [Uebung_002b3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_002b3.md)
-* [Uebung_006a3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006a3.md)
+* [Uebung_002a4](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a4.md)
+* [Uebung_002b3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b3.md)
+* [Uebung_006a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006a3.md)
 
 ## Fazit
 Der `AND_2_BOOL`-Funktionsblock ist ein essentieller, zuverlässiger und einfach zu verwendender Grundbaustein für die Implementierung boolescher Logik in 4diac-basierten Steuerungsanwendungen. Seine klare, ereignisgesteuerte Schnittstelle und die deterministische Funktionsweise machen ihn zum idealen Baustein für Sicherheitsverknüpfungen, Steuerungsbedingungen und allgemeine logische Operationen. Für reine boolesche Zweier-Verknüpfungen ist er die erste Wahl.

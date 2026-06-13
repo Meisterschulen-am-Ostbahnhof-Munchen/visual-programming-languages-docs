@@ -64,7 +64,7 @@ Im Vergleich zu einfacheren Summierbausteinen (z.B. `ADD`) zeichnet sich `INTEGR
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+* [Uebung_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Fazit
 Der `INTEGRAL`-Funktionsblock ist ein grundlegendes und robustes Werkzeug zur zeitlichen Integration von Signalen in IEC 61499-Steuerungen. Seine klare Schnittstelle, die integrierte Überlaufsicherung und die flexible Handhabung der Zeitdifferenz machen ihn zu einer zuverlässigen Komponente für eine Vielzahl von Mess- und Regelaufgaben. Die Notwendigkeit, die verstrichene Zeit extern zu ermitteln und bereitzustellen, bietet maximale Flexibilität, erfordert aber auch eine korrekte Implementierung im umgebenden Anwendungsprogramm.

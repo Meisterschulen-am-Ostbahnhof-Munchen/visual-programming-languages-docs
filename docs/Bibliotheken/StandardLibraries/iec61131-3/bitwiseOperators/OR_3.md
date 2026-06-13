@@ -61,8 +61,8 @@ Im Vergleich zu einfachen ODER-Bausteinen mit nur zwei Eingängen bietet OR_3 di
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a5_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
-* [Uebung_002a5b_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
+* [Uebung_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
+* [Uebung_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
 
 ## Fazit
 Der OR_3 Funktionsblock stellt eine effiziente und flexible Lösung für bitweise ODER-Operationen mit drei Eingängen dar. Seine generische Natur ermöglicht den Einsatz in verschiedenen Anwendungsbereichen und mit unterschiedlichen Bit-Datentypen, was ihn zu einem vielseitigen Werkzeug in der Automatisierungstechnik macht.

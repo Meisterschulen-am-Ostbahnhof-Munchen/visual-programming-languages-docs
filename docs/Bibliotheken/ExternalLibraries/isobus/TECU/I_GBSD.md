@@ -98,11 +98,11 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072.md)
-* [Uebung_072b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072b.md)
-* [Uebung_072c](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
-* [Uebung_073](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_073.md)
-* [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
+* [Uebung_072](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
+* [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+* [Uebung_072c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+* [Uebung_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
+* [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Fazit
 

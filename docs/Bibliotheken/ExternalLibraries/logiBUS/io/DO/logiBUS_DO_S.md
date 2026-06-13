@@ -55,22 +55,22 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DO_S` keinen int
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003a_AX_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
-* [Uebung_003a_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003a_sub.md)
-* [Uebung_003b_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003b_sub.md)
-* [Uebung_010b4_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b4_sub.md)
-* [Uebung_010b4_sub_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
-* [Uebung_010b5_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b5_sub.md)
-* [Uebung_010b5_sub_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
-* [Uebung_010c2](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c2.md)
-* [Uebung_010c2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
-* [Uebung_010c3_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c3_sub.md)
-* [Uebung_010c3_sub_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
-* [Uebung_010c4_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c4_sub.md)
-* [Uebung_010c4_sub_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
-* [Uebung_026_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_026_sub.md)
-* [Uebung_039_sub_Outputs](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
-* [Uebung_039a_sub_Outputs](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
+* [Uebung_003a_AX_sub](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
+* [Uebung_003a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003a_sub.md)
+* [Uebung_003b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b_sub.md)
+* [Uebung_010b4_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
+* [Uebung_010b4_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
+* [Uebung_010b5_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b5_sub.md)
+* [Uebung_010b5_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
+* [Uebung_010c2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
+* [Uebung_010c2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
+* [Uebung_010c3_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
+* [Uebung_010c3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
+* [Uebung_010c4_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
+* [Uebung_010c4_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
+* [Uebung_026_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
+* [Uebung_039_sub_Outputs](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+* [Uebung_039a_sub_Outputs](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
 
 ## Fazit
 Der `logiBUS_DO_S`-Struct ist ein einfaches, aber wesentliches Hilfselement im logiBUS-Ökosystem der 4diac IDE. Er standardisiert und formalisiert die Adressierung von digitalen Ausgangspins, fördert die typsichere Programmierung und dient durch seinen definierten Initialwert als Grundlage für eine robuste Initialisierungslogik. Seine Verwendung ist empfohlen, wenn Funktionsblöcke der logiBUS-Bibliothek für digitale Ausgaben konfiguriert werden sollen.

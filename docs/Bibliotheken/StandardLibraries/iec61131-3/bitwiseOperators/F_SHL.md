@@ -55,7 +55,7 @@ Der Funktionsblock `F_SHL` führt eine bitweise Linksverschiebung des Eingabewer
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_034](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034.md)
+* [Uebung_034](../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
 
 ## Fazit
 Der `F_SHL`-Funktionsblock ist ein effizientes Werkzeug für bitweise Linksverschiebungen in Steuerungssystemen. Seine Flexibilität bei der Unterstützung verschiedener Bit- und Integer-Datentypen macht ihn vielseitig einsetzbar. Die klare Ereignissteuerung und Standardkonformität nach IEC 61131-3 gewährleisten eine zuverlässige Integration in bestehende Systeme.

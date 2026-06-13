@@ -58,7 +58,7 @@ Im Gegensatz zu universellen Rechenbausteinen (wie `MUL`, `ADD`) oder Skalierern
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_031](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_031.md)
+* [Uebung_031](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_031.md)
 
 ## Fazit
 Der `hsv2rgb`-Funktionsblock ist ein nützliches und spezialisiertes Werkzeug für alle 4diac-Anwendungen, die mit Farbmanipulation zu tun haben. Durch die Kapselung des Konvertierungsalgorithmus in einen standardisierten IEC 61499-Baustein vereinfacht er die Programmierung erheblich, fördert die Wiederverwendbarkeit und erhöht die Zuverlässigkeit der Software. Seine Verwendung ist dort empfehlenswert, wo eine intuitive, auf menschlicher Farbwahrnehmung basierende Steuerung auf eine geräteorientierte RGB-Ausgabe trifft.

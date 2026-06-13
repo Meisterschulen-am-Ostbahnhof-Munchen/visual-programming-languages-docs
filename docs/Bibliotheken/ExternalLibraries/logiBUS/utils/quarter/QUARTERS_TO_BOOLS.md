@@ -64,7 +64,7 @@ Als Composite Function Block besitzt `QUARTERS_TO_BOOLS` keinen eigenen komplexe
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+* [Uebung_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 Der `QUARTERS_TO_BOOLS`-Funktionsblock ist ein praktisches und zeitsparendes Hilfsmittel für die IEC 61499-Programmierung, wenn häufig mehrere 2-Bit-Datenkanäle in boolesche Signale umgewandelt werden müssen. Durch die Kapselung von 16 Konvertierungen in einem Block reduziert er den Verdrahtungsaufwand in übergeordneten Applikationen erheblich und verbessert die Übersichtlichkeit. Seine deterministische, serielle Ereignisabarbeitung gewährleistet ein zuverlässiges Verhalten, das für Steuerungsaufgaben gut geeignet ist.

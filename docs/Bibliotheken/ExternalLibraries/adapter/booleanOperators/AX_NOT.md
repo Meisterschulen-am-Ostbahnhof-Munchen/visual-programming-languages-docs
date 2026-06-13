@@ -59,7 +59,7 @@ Vergleich mit [F_NOT](../../../StandardLibraries/iec61131-3/bitwiseOperators/F_N
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006a3_sub_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)
+* [Uebung_006a3_sub_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)
 
 ## Fazit
 Der AX_NOT Funktionsblock bietet eine zuverlässige und standardkonforme Implementierung der booleschen NOT-Operation. Durch die Adapter-basierte Schnittstellengestaltung eignet er sich besonders für modulare Systemdesigns und ermöglicht eine einfache Integration in bestehende Automatisierungslösungen.

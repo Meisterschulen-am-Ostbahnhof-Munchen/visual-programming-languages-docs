@@ -55,7 +55,7 @@ Dieser Mechanismus reduziert die Anzahl der Ereignisse im System, indem er nur b
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_171](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_171.md)
+* [Uebung_171](../../../Uebungen/test_B/Uebungen_doc/Uebung_171.md)
 
 ## Fazit
 Der `E_MOVE`-Baustein ist ein äußerst nützliches Werkzeug zur Optimierung von IEC 61499-Anwendungen. Indem er die Ereignis-Verarbeitung auf tatsächliche Datenänderungen beschränkt, trägt er maßgeblich zur Reduzierung der Systemlast und zur Erhöhung der Effizienz bei. Seine generische Natur macht ihn sehr flexibel, die Einschränkung bei Fließkommazahlen muss jedoch beachtet werden.

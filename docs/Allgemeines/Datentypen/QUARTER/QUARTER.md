@@ -36,6 +36,6 @@ Da **QUARTER** kein Standard-Datentyp der IEC-Normen ist, wird er in Programmier
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_055](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)
-* [Uebung_056](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
+* [Uebung_055](../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
+* [Uebung_056](../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 

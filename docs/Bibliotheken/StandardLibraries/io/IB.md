@@ -76,8 +76,8 @@ Im Vergleich zu anderen Eingabebausteinen:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006c.md)
-* [Uebung_011a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011a.md)
+* [Uebung_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
+* [Uebung_011a](../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
 
 ## Fazit
 Der IB-Funktionsblock bietet eine effiziente und flexible Lösung für die Integration von Byte-basierten Eingabedaten in IEC 61499-Steuerungssysteme. Seine duale Betriebsart (anforderungsbasiert und ereignisgesteuert) macht ihn vielseitig einsetzbar für verschiedene Anwendungsfälle in der industriellen Automatisierung.

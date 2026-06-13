@@ -94,5 +94,5 @@ Der **E_TONOF**-Baustein ist ein leistungsstarkes Werkzeug in der IEC 61499, um 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020g](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020g.md)
+* [Uebung_020g](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020g.md)
 

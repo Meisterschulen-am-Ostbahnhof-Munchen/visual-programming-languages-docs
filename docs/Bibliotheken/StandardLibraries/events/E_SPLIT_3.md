@@ -43,8 +43,8 @@ Wenn ein Ereignis am Eingang `EI` eintrifft, löst der Baustein sofort nacheinan
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004a9](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a9.md)
-* [Uebung_004a9_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a9_AX.md)
+* [Uebung_004a9](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a9.md)
+* [Uebung_004a9_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a9_AX.md)
 
 ## Fazit
 Der `E_SPLIT_3`-Baustein ist ein nützliches Werkzeug, um aus einem einzelnen Trigger eine feste, kurze Ereignissequenz von drei Schritten zu generieren. Seine Einfachheit und die garantierte Ausführungsreihenfolge machen ihn zu einer robusten Komponente für die Ablaufsteuerung in IEC 61499-Anwendungen.

@@ -51,7 +51,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_009a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_009a.md)
+* [Uebung_009a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
 
 ## Fazit
 Der Funktionsblock `F_DINT_TO_UDINT` bietet eine einfache und effiziente Möglichkeit, vorzeichenbehaftete 32-Bit Integer in vorzeichenlose 32-Bit Integer zu konvertieren. Er ist besonders nützlich in Szenarien, wo Daten zwischen Systemen mit unterschiedlichen Datentypanforderungen ausgetauscht werden müssen.

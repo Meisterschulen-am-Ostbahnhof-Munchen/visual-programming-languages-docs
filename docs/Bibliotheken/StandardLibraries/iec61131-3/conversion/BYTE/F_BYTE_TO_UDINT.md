@@ -50,7 +50,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_011a](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011a.md)
+* [Uebung_011a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
 
 ## Fazit
 Der `F_BYTE_TO_UDINT` Funktionsblock bietet eine einfache und effiziente Möglichkeit, BYTE-Werte in UDINT-Werte umzuwandeln. Durch seine klare Schnittstellenstruktur und direkte Funktionsweise eignet er sich ideal für Anwendungen, die eine schnelle und zuverlässige Typumwandlung erfordern.

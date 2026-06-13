@@ -52,7 +52,7 @@ Im Vergleich zu einfachen Ereignis-Funktionsblöcken bietet ASR_2EVENTS_TO_SR ei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_171_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_171_AX.md)
+* [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
 
 ## Fazit
 ASR_2EVENTS_TO_SR ist ein spezialisierter Funktionsblock für die Konvertierung von zwei separaten Ereignissen in das ASR-Adapterformat. Seine einfache und direkte Funktionsweise macht ihn zu einer zuverlässigen Lösung für Systemintegrationen.

@@ -62,8 +62,8 @@ Der **E_TP**-Baustein ist ein nützliches Werkzeug in der IEC 61499-basierten St
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020f](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020f.md)
-* [Uebung_039b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039b.md)
-* [Uebung_177](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_177.md)
-* [Uebung_178](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_178.md)
+* [Uebung_020f](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f.md)
+* [Uebung_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
+* [Uebung_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
+* [Uebung_178](../../../../Uebungen/test_B/Uebungen_doc/Uebung_178.md)
 

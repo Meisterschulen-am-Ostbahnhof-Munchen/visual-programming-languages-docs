@@ -51,7 +51,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+* [Uebung_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Fazit
 Der `F_UDINT_TO_LINT`-Funktionsblock bietet eine einfache und effiziente Möglichkeit, vorzeichenlose 32-Bit-Integer-Werte in vorzeichenbehaftete 64-Bit-Integer-Werte umzuwandeln. Durch seine direkte und verlustfreie Konvertierung eignet er sich ideal für Anwendungen, die eine Erweiterung des Wertebereichs erfordern.

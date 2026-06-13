@@ -74,7 +74,7 @@ Im Vergleich zu anderen Service Interface Funktionsblöcken bietet SYS_ONTIME ei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_140](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_140.md)
+* [Uebung_140](../../../../Uebungen/test_B/Uebungen_doc/Uebung_140.md)
 
 ## Fazit
 Der SYS_ONTIME Funktionsblock ist ein spezialisiertes Werkzeug für die Übertragung von Betriebszeitdaten in IEC 61499-basierten Systemen. Seine klare Schnittstellenstruktur und robuste Fehlerbehandlung machen ihn zu einer zuverlässigen Lösung für entsprechende Anwendungen.

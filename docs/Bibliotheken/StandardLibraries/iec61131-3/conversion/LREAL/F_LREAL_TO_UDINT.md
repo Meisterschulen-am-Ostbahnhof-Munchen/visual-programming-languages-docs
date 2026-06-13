@@ -51,8 +51,8 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_152](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_153.md)
+* [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+* [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Fazit
 Der Funktionsblock `F_LREAL_TO_UDINT` bietet eine einfache und effiziente Möglichkeit, Gleitkommawerte in vorzeichenlose Integerwerte umzuwandeln. Aufgrund der fehlenden Überlaufprüfung sollte er jedoch nur in Szenarien eingesetzt werden, in denen die Eingabewerte bekannt und innerhalb des zulässigen Bereichs liegen.

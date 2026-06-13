@@ -67,16 +67,16 @@ Der **E_DELAY** ist ein zentraler Funktionsbaustein der IEC 61499 Norm für indu
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_018](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_018.md)
-* [Uebung_020b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020b.md)
-* [Uebung_020b_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020b_AX.md)
-* [Uebung_020d](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020d.md)
-* [Uebung_020d_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020d_AX.md)
-* [Uebung_024](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_024.md)
-* [Uebung_025](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_025.md)
-* [Uebung_026](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_026.md)
-* [Uebung_160b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_160b.md)
-* [Uebung_160b_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_160b_AX.md)
+* [Uebung_018](../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
+* [Uebung_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
+* [Uebung_020b_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)
+* [Uebung_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
+* [Uebung_020d_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)
+* [Uebung_024](../../../Uebungen/test_B/Uebungen_doc/Uebung_024.md)
+* [Uebung_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
+* [Uebung_026](../../../Uebungen/test_B/Uebungen_doc/Uebung_026.md)
+* [Uebung_160b](../../../Uebungen/test_B/Uebungen_doc/Uebung_160b.md)
+* [Uebung_160b_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
 
 ## Fazit
 

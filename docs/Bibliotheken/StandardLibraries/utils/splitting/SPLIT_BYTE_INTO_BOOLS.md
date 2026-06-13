@@ -50,7 +50,7 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt direkt 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_053](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_053.md)
+* [Uebung_053](../../../../Uebungen/test_B/Uebungen_doc/Uebung_053.md)
 
 ## Fazit
 Der `SPLIT_BYTE_INTO_BOOLS`-Funktionsblock ist ein einfaches und effizientes Werkzeug zur Zerlegung eines Bytes in seine einzelnen Bits. Er eignet sich besonders für Anwendungen, bei denen eine schnelle und direkte Bit-Extraktion benötigt wird. Durch seine klare Schnittstelle und einfache Funktionsweise ist er leicht in bestehende Systeme integrierbar.

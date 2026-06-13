@@ -75,7 +75,7 @@ Im Vergleich zu einfachen Eingabeblöcken bietet TC_ID:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+* [Uebung_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 Der TC_ID Funktionsblock stellt eine robuste und standardisierte Schnittstelle für TC-Eingabedaten in ISOBUS-Umgebungen bereit. Durch seine flexible Architektur mit sowohl angefragten als auch spontanen Datenübertragungsmechanismen eignet er sich ideal für komplexe Agraranwendungen, die zuverlässigen Zugriff auf spezifische Eingabedaten erfordern.

@@ -59,8 +59,8 @@ Bei Auslösung des Ereignisses `REQ` werden die aktuellen Werte der booleschen E
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_035a1b_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_035a1b_AX.md)
-* [Uebung_053](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_053.md)
+* [Uebung_035a1b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a1b_AX.md)
+* [Uebung_053](../../../../Uebungen/test_B/Uebungen_doc/Uebung_053.md)
 
 ## Fazit
 Der `ASSEMBLE_BYTE_FROM_BOOLS`-Funktionsblock ist eine einfache und effiziente Lösung, um 8 boolesche Werte zu einem Byte zu kombinieren. Durch seine klare Schnittstelle und direkte Implementierung eignet er sich ideal für Anwendungen, bei denen boolesche Signale kompakt verarbeitet werden müssen.

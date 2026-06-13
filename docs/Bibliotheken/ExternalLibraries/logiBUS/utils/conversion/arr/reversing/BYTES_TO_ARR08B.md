@@ -62,8 +62,8 @@ Der Funktionsblock ist zustandslos (stateless). Jeder `REQ`-Aufruf ist unabhäng
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_126b_sub](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)
-* [Uebung_12x_sub](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_12x_sub.md)
+* [Uebung_126b_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+* [Uebung_12x_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Fazit
 Der `BYTES_TO_ARR08B` ist ein spezialisierter und effizienter Hilfsbaustein für eine häufige Aufgabe in der Datenmanipulation. Er bietet eine klare, ereignisgesteuerte Schnittstelle und erspart dem Anwender die wiederholte manuelle Implementierung der Array-Zuordnung. Seine Stärke liegt in der Einfachheit und Eindeutigkeit für den konkreten Anwendungsfall der Kombination von acht Bytes.

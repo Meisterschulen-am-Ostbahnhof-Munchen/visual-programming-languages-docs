@@ -84,7 +84,7 @@ Da es sich um einen Composite FB handelt, wird der Zustand primär durch die int
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_011_AUDI](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_011_AUDI.md)
+* [Uebung_011_AUDI](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011_AUDI.md)
 
 ## Fazit
 

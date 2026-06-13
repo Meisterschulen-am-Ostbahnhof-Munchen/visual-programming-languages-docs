@@ -62,7 +62,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt ausschl
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_056](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
+* [Uebung_056](../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 ## Fazit
 Der `SPLIT_BYTE_INTO_QUARTERS`-Funktionsblock ist eine effiziente und spezialisierte Lösung für die Aufteilung eines Bytes in vier Viertelbytes. Durch die Verwendung von Bitoperationen und Konstanten ist er schnell und flexibel einsetzbar. Ideal für Anwendungen, bei denen Daten in kompakter Form vorliegen und separat verarbeitet werden müssen.

@@ -71,8 +71,8 @@ Der Block durchläuft implizit folgende Hauptzustände:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_124](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_124.md)
-* [Uebung_128](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128.md)
+* [Uebung_124](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_124.md)
+* [Uebung_128](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)
 
 ## Fazit
 Der `AlPgnTxNew8B` ist ein spezialisierter Funktionsblock für die zuverlässige, konfigurierbare und unbestätigte Datenübertragung in ISOBUS-Umgebungen. Seine klare Trennung von Konfiguration (`install`) und Operation (`REQ`) sowie die differenzierte Fehlerrückmeldung machen ihn gut wartbar und einfach in übergeordnete Applikationslogiken zu integrieren. Er ist die erste Wahl, wenn CAN-Nachrichten nach ISOBUS-Standard mit einer festen PGN gesendet werden müssen.

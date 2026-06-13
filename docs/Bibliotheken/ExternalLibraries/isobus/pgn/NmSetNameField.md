@@ -56,10 +56,10 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Er verhält sic
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_120](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_120.md)
-* [Uebung_121](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_121.md)
-* [Uebung_122](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122.md)
-* [Uebung_122b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_122b.md)
+* [Uebung_120](../../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)
+* [Uebung_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
+* [Uebung_122](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
+* [Uebung_122b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
 
 ## Fazit
 Der `NmSetNameField`-Funktionsblock ist ein essenzielles Hilfsmittel für die Arbeit mit ISOBUS-Netzwerken in 4diac. Er abstrahiert die komplexe Bit-Manipulation, die zur Interpretation des ISO-NAME erforderlich ist, und stellt die Informationen in einer leicht verarbeitbaren strukturierten Form bereit. Seine Verwendung fördert korrekte, normkonforme Applikationen und verbessert die Lesbarkeit des Quellcodes erheblich.

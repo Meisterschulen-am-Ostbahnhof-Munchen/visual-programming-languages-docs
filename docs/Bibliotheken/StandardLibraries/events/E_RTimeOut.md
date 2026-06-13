@@ -70,8 +70,8 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ARTimeOut`. Da es sich
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_035b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035b.md)
-* [Uebung_170](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_170.md)
+* [Uebung_035b](../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
+* [Uebung_170](../../../Uebungen/test_B/Uebungen_doc/Uebung_170.md)
 
 ## Fazit
 

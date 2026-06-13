@@ -50,7 +50,7 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_172](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_172.md)
+* [Uebung_172](../../../Uebungen/test_B/Uebungen_doc/Uebung_172.md)
 
 ## Fazit
 Der `E_MUX_2` ist ein nützlicher Baustein, um Ereignisströme zu bündeln und gleichzeitig die Quelle des Ereignisses zu identifizieren. Er ist das Standard-Gegenstück zum `E_DEMUX_2` und wird häufig verwendet, um die Komplexität von Verdrahtungen zu reduzieren und Logik zu zentralisieren.

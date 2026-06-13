@@ -22,5 +22,5 @@ Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `LINT#...
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+* [Uebung_072c](../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 

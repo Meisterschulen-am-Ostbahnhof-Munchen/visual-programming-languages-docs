@@ -63,7 +63,7 @@ Im Vergleich zu Bausteinen, die ganze Farbmuster oder Bilder auf eine LED-Matrix
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_031](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_031.md)
+* [Uebung_031](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_031.md)
 
 ## Fazit
 Der `strip_set_pixel`-Funktionsblock ist ein grundlegender und essentieller Baustein für die Ansteuerung von adressierbaren RGB-LED-Leisten innerhalb von 4diac. Durch sein einfaches, ereignisbasiertes Interface ermöglicht er eine präzise und direkte Kontrolle über jedes einzelne Pixel. Seine Stärke liegt in der Einfachheit für punktuelle Steueraufgaben, während für komplexere Animationen die Kombination mit übergeordneten, sequenzierenden Bausteinen empfohlen wird.

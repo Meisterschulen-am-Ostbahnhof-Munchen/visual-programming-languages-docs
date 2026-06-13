@@ -50,7 +50,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_12x_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_12x_sub.md)
+* [Uebung_12x_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Fazit
 Der `F_UINT_TO_BYTE` Funktionsblock ist ein einfacher und effizienter Baustein für die spezifische Konvertierung von UINT zu BYTE. Er eignet sich besonders für Anwendungen, wo eine schnelle und direkte Typumwandlung benötigt wird.

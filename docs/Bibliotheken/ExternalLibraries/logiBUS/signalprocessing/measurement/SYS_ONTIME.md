@@ -59,7 +59,7 @@ Anschließend überwacht der Block kontinuierlich die Systemressource. Sobald si
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_140](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_140.md)
+* [Uebung_140](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_140.md)
 
 ## Fazit
 Der `SYS_ONTIME`-Funktionsblock ist ein essentielles Werkzeug für alle Anwendungen, die auf der Erfassung und Auswertung von Betriebszeiten basieren. Als standardisierte Service-Schnittstelle abstrahiert er die plattformspezifische Implementierung und bietet der Anwendungslogik einen einfachen, zuverlässigen Zugriff auf diese wichtige Systemkenngröße. Seine Verwendung ist besonders in den Bereichen Instandhaltung, Energieeffizienz und Betriebsdatenerfassung zu empfehlen.

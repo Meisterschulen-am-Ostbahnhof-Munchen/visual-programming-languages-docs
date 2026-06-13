@@ -67,7 +67,7 @@ Im Vergleich zum [AX_PULSE](../../events/unidirectional/timers/AX_PULSE.md) biet
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020f2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
+* [Uebung_020f2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
 
 ## Fazit
 AX_FB_TP ist der Standardbaustein für die Erzeugung stabiler, zeitlich exakt definierter Impulse in einer adapterbasierten Umgebung.

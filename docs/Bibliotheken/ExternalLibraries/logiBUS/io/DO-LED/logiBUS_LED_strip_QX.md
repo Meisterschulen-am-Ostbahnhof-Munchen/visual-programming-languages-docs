@@ -66,8 +66,8 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_LED_strip_QX 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_032](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_032.md)
-* [Uebung_033_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_033_sub.md)
+* [Uebung_032](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_032.md)
+* [Uebung_033_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_033_sub.md)
 
 ## Fazit
 Der logiBUS_LED_strip_QX ist ein leistungsstarker Funktionsblock für die professionelle LED-Streifen-Steuerung in industriellen Automatisierungslösungen. Seine flexible Parametrierung und zuverlässige Statusrückmeldung machen ihn ideal für anspruchsvolle Beleuchtungsanwendungen.

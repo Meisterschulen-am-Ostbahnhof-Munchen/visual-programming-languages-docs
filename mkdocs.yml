@@ -29,6 +29,8 @@ plugins:
     cover: true
     toc_title: Inhaltsverzeichnis
     toc_level: 3
+    enabled_if_env: BUILD_PDF
+    output_path: 'pdf/Low-Code-Referenz.pdf'
     exclude_pages:
     - 'Bibliotheken/'
     - 'training1/'

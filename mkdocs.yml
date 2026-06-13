@@ -31,9 +31,6 @@ plugins:
     toc_level: 3
     enabled_if_env: BUILD_PDF
     output_path: 'pdf/Low-Code-Referenz.pdf'
-    exclude_pages:
-    - 'Bibliotheken/'
-    - 'training1/'
 markdown_extensions:
 - attr_list
 - md_in_html

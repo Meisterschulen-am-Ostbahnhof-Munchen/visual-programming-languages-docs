@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="2278.0" height="702.1538461538462" viewBox="0 0 2278.0 702.1538461538462">
+<defs>
+</defs>
+<rect x="0" y="0" width="2278.0" height="702.1538461538462" fill="#ffffff" />
+<text x="1139.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_039_sub_NumbAnzeig_AS: Spiegelabfolge V2 mit Schrittkette SUB Num</text>
+<path d="M287.0,573.1538461538462 C779.0,573.1538461538462,1435.0000000000002,289.0,1927.0000000000002,289.0" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<rect x="1930.0000000000002" y="143.0" width="200" height="242" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1927.0000000000002,140.0 H2127.0 V232.0 H2121.0 V272.0 H2127.0 V382.0 H1927.0000000000002 V272.0 H1933.0000000000002 V232.0 H1927.0000000000002 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1927.0000000000002,170.0 L2127.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="2027.0000000000002" y="250.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">Q_NumericValue</text>
+<text x="2027.0000000000002" y="264.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Q_NumericValue_AUDI</text>
+<text x="2027.0000000000002" y="276.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">u16ObjId=OutputNumber_N1</text>
+<path d="M1922.0000000000002,177.0 L1922.0000000000002,187.0 L1927.0000000000002,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="1939.0000000000002" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="1912.0000000000002" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="1922.0000000000002" y="284.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="1939.0000000000002" y="293.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">u32NewValue</text>
+<text x="1912.0000000000002" y="292.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+<path d="M1922.0000000000002,310.0 L1922.0000000000002,320.0 L1927.0000000000002,315.0 Z" fill="#18519E" stroke="none" />
+<text x="1939.0000000000002" y="319.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16ObjId</text>
+<text x="1912.0000000000002" y="318.0" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<path d="M2132.0,177.0 L2132.0,187.0 L2127.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="2115.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="2142.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2132.0,203.0 L2132.0,213.0 L2127.0,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="2115.0" y="212.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="2142.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="2122.0" y="284.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="2115.0" y="293.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">u32OldValue</text>
+<text x="2142.0" y="292.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+<path d="M2132.0,310.0 L2132.0,320.0 L2127.0,315.0 Z" fill="#BD8663" stroke="none" />
+<text x="2115.0" y="319.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="2142.0" y="318.0" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M2132.0,336.0 L2132.0,346.0 L2127.0,341.0 Z" fill="#18519E" stroke="none" />
+<text x="2115.0" y="345.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">s16result</text>
+<text x="2142.0" y="344.0" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<rect x="130.0" y="489.1538461538462" width="160" height="116" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M127.0,486.1538461538462 H287.0 V516.1538461538462 H281.0 V556.1538461538462 H287.0 V602.1538461538462 H127.0 V556.1538461538462 H133.0 V516.1538461538462 H127.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M127.0,516.1538461538462 L287.0,516.1538461538462" stroke="#000000" stroke-width="1" />
+<text x="207.0" y="534.1538461538462" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AS_TO_AUDI</text>
+<text x="207.0" y="548.1538461538462" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AS_TO_AUDI</text>
+<rect x="122.0" y="568.1538461538462" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="139.0" y="577.1538461538462" font-size="12" text-anchor="start" font-family="Consolas, monospace">AS_IN</text>
+<text x="112.0" y="576.1538461538462" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AS</text>
+<rect x="282.0" y="568.1538461538462" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="275.0" y="577.1538461538462" font-size="12" text-anchor="end" font-family="Consolas, monospace">AUDI_OUT</text>
+<text x="302.0" y="576.1538461538462" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+</svg>

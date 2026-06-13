@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="2306.0" height="821.0243902439024" viewBox="0 0 2306.0 821.0243902439024">
+<defs>
+</defs>
+<rect x="0" y="0" width="2306.0" height="821.0243902439024" fill="#ffffff" />
+<text x="1153.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_134: Übung zu ISOBUS Receive from Unclaimed Partner</text>
+<path d="M870.0243902439024,208.0 C966.2439024390244,208.0,1094.5365853658536,357.609756097561,1190.7560975609756,357.609756097561" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1360.7560975609756,357.609756097561 C1453.7560975609756,357.609756097561,1536.780487804878,273.8536585365854,1629.780487804878,273.8536585365854" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M367.0,383.609756097561 C460.0,383.609756097561,527.0243902439024,208.0,620.0243902439024,208.0" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1809.780487804878,299.8536585365854 C1884.780487804878,299.8536585365854,1906.0,621.0243902439024,1981.0,621.0243902439024" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M870.0243902439024,289.0 C966.2439024390244,289.0,1094.5365853658536,438.609756097561,1190.7560975609756,438.609756097561" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M367.0,490.609756097561 C614.1268292682927,490.609756097561,943.6292682926829,464.609756097561,1190.7560975609756,464.609756097561" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1360.7560975609756,438.609756097561 C1453.7560975609756,438.609756097561,1536.780487804878,458.8536585365854,1629.780487804878,458.8536585365854" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1809.780487804878,536.8536585365854 C1884.780487804878,536.8536585365854,1906.0,702.0243902439024,1981.0,702.0243902439024" stroke="#404040" stroke-width="1.5" fill="none" />
+<rect x="623.0243902439024" y="143.0" width="250" height="228" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M620.0243902439024,140.0 H870.0243902439024 V232.0 H864.0243902439024 V272.0 H870.0243902439024 V368.0 H620.0243902439024 V272.0 H626.0243902439024 V232.0 H620.0243902439024 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M620.0243902439024,170.0 L870.0243902439024,170.0" stroke="#000000" stroke-width="1" />
+<text x="745.0243902439024" y="250.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">BaseMemberExternAdd</text>
+<text x="745.0243902439024" y="264.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">BaseMemberExternAdd</text>
+<text x="745.0243902439024" y="276.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">u8CanIdx=NODE1</text>
+<text x="745.0243902439024" y="288.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">u8SA=55</text>
+<path d="M615.0243902439024,177.0 L615.0243902439024,187.0 L620.0243902439024,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="632.0243902439024" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="605.0243902439024" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M615.0243902439024,203.0 L615.0243902439024,213.0 L620.0243902439024,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="632.0243902439024" y="212.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="605.0243902439024" y="211.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M615.0243902439024,284.0 L615.0243902439024,294.0 L620.0243902439024,289.0 Z" fill="#18519E" stroke="none" />
+<text x="632.0243902439024" y="293.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8CanIdx</text>
+<text x="605.0243902439024" y="292.0" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<path d="M615.0243902439024,310.0 L615.0243902439024,320.0 L620.0243902439024,315.0 Z" fill="#18519E" stroke="none" />
+<text x="632.0243902439024" y="319.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8SA</text>
+<text x="605.0243902439024" y="318.0" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<path d="M875.0243902439024,177.0 L875.0243902439024,187.0 L870.0243902439024,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="858.0243902439024" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="885.0243902439024" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M875.0243902439024,203.0 L875.0243902439024,213.0 L870.0243902439024,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="858.0243902439024" y="212.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="885.0243902439024" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M875.0243902439024,284.0 L875.0243902439024,294.0 L870.0243902439024,289.0 Z" fill="#18519E" stroke="none" />
+<text x="858.0243902439024" y="293.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">s16Handle</text>
+<text x="885.0243902439024" y="292.0" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<rect x="1632.780487804878" y="208.85365853658539" width="180" height="384" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1629.780487804878,205.85365853658539 H1809.780487804878 V375.8536585365854 H1803.780487804878 V415.8536585365854 H1809.780487804878 V589.8536585365854 H1629.780487804878 V415.8536585365854 H1635.780487804878 V375.8536585365854 H1629.780487804878 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1629.780487804878,235.85365853658539 L1809.780487804878,235.85365853658539" stroke="#000000" stroke-width="1" />
+<text x="1719.780487804878" y="393.8536585365854" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AlPgnRxNew8B</text>
+<text x="1719.780487804878" y="407.8536585365854" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AlPgnRxNew8B</text>
+<text x="1719.780487804878" y="419.8536585365854" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">u32Pgn=61184</text>
+<text x="1719.780487804878" y="431.8536585365854" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">u16DaSize=8</text>
+<path d="M1624.780487804878,242.85365853658539 L1624.780487804878,252.85365853658539 L1629.780487804878,247.85365853658539 Z" fill="#63B31F" stroke="none" />
+<text x="1641.780487804878" y="251.85365853658539" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="1614.780487804878" y="250.85365853658539" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1624.780487804878,268.8536585365854 L1624.780487804878,278.8536585365854 L1629.780487804878,273.8536585365854 Z" fill="#63B31F" stroke="none" />
+<text x="1641.780487804878" y="277.8536585365854" font-size="12" text-anchor="start" font-family="Consolas, monospace">install</text>
+<text x="1614.780487804878" y="276.8536585365854" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1624.780487804878,427.8536585365854 L1624.780487804878,437.8536585365854 L1629.780487804878,432.8536585365854 Z" fill="#18519E" stroke="none" />
+<text x="1641.780487804878" y="436.8536585365854" font-size="12" text-anchor="start" font-family="Consolas, monospace">u32Pgn</text>
+<text x="1614.780487804878" y="435.8536585365854" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<path d="M1624.780487804878,453.8536585365854 L1624.780487804878,463.8536585365854 L1629.780487804878,458.8536585365854 Z" fill="#000000" stroke="none" />
+<text x="1641.780487804878" y="462.8536585365854" font-size="12" text-anchor="start" font-family="Consolas, monospace">NmSource</text>
+<text x="1614.780487804878" y="461.8536585365854" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ISONETEVENT_T</text>
+<path d="M1624.780487804878,479.8536585365854 L1624.780487804878,489.8536585365854 L1629.780487804878,484.8536585365854 Z" fill="#18519E" stroke="none" />
+<text x="1641.780487804878" y="488.8536585365854" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16DaSize</text>
+<text x="1614.780487804878" y="487.8536585365854" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<path d="M1624.780487804878,505.8536585365854 L1624.780487804878,515.8536585365854 L1629.780487804878,510.8536585365854 Z" fill="#18519E" stroke="none" />
+<text x="1641.780487804878" y="514.8536585365854" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8Priority</text>
+<text x="1614.780487804878" y="513.8536585365854" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<path d="M1814.780487804878,242.85365853658539 L1814.780487804878,252.85365853658539 L1809.780487804878,247.85365853658539 Z" fill="#63B31F" stroke="none" />
+<text x="1797.780487804878" y="251.85365853658539" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="1824.780487804878" y="250.85365853658539" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1814.780487804878,268.8536585365854 L1814.780487804878,278.8536585365854 L1809.780487804878,273.8536585365854 Z" fill="#63B31F" stroke="none" />
+<text x="1797.780487804878" y="277.8536585365854" font-size="12" text-anchor="end" font-family="Consolas, monospace">installO</text>
+<text x="1824.780487804878" y="276.8536585365854" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1814.780487804878,294.8536585365854 L1814.780487804878,304.8536585365854 L1809.780487804878,299.8536585365854 Z" fill="#63B31F" stroke="none" />
+<text x="1797.780487804878" y="303.8536585365854" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="1824.780487804878" y="302.8536585365854" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1814.780487804878,320.8536585365854 L1814.780487804878,330.8536585365854 L1809.780487804878,325.8536585365854 Z" fill="#63B31F" stroke="none" />
+<text x="1797.780487804878" y="329.8536585365854" font-size="12" text-anchor="end" font-family="Consolas, monospace">dataERR</text>
+<text x="1824.780487804878" y="328.8536585365854" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1814.780487804878,346.8536585365854 L1814.780487804878,356.8536585365854 L1809.780487804878,351.8536585365854 Z" fill="#63B31F" stroke="none" />
+<text x="1797.780487804878" y="355.8536585365854" font-size="12" text-anchor="end" font-family="Consolas, monospace">pgnERR</text>
+<text x="1824.780487804878" y="354.8536585365854" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1814.780487804878,427.8536585365854 L1814.780487804878,437.8536585365854 L1809.780487804878,432.8536585365854 Z" fill="#18519E" stroke="none" />
+<text x="1797.780487804878" y="436.8536585365854" font-size="12" text-anchor="end" font-family="Consolas, monospace">PGN_handle</text>
+<text x="1824.780487804878" y="435.8536585365854" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<path d="M1814.780487804878,453.8536585365854 L1814.780487804878,463.8536585365854 L1809.780487804878,458.8536585365854 Z" fill="#18519E" stroke="none" />
+<text x="1797.780487804878" y="462.8536585365854" font-size="12" text-anchor="end" font-family="Consolas, monospace">dataERRC</text>
+<text x="1824.780487804878" y="461.8536585365854" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<path d="M1814.780487804878,479.8536585365854 L1814.780487804878,489.8536585365854 L1809.780487804878,484.8536585365854 Z" fill="#18519E" stroke="none" />
+<text x="1797.780487804878" y="488.8536585365854" font-size="12" text-anchor="end" font-family="Consolas, monospace">pgnERRC</text>
+<text x="1824.780487804878" y="487.8536585365854" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<path d="M1814.780487804878,505.8536585365854 L1814.780487804878,515.8536585365854 L1809.780487804878,510.8536585365854 Z" fill="#18519E" stroke="none" />
+<text x="1797.780487804878" y="514.8536585365854" font-size="12" text-anchor="end" font-family="Consolas, monospace">s32TimeStamp</text>
+<text x="1824.780487804878" y="513.8536585365854" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M1814.780487804878,531.8536585365854 L1814.780487804878,541.8536585365854 L1809.780487804878,536.8536585365854 Z" fill="#000000" stroke="none" />
+<text x="1797.780487804878" y="540.8536585365854" font-size="12" text-anchor="end" font-family="Consolas, monospace">Data</text>
+<text x="1824.780487804878" y="539.8536585365854" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">CAN_MSG</text>
+<rect x="184.0" y="318.609756097561" width="186" height="304" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M181.0,315.609756097561 H367.0 V407.609756097561 H361.0 V447.609756097561 H367.0 V619.609756097561 H181.0 V447.609756097561 H187.0 V407.609756097561 H181.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M181.0,345.609756097561 L367.0,345.609756097561" stroke="#000000" stroke-width="1" />
+<text x="274.0" y="425.609756097561" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">NmGetCfInfo</text>
+<text x="274.0" y="439.609756097561" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">NmGetCfInfo</text>
+<text x="274.0" y="451.609756097561" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">u8CanIdx=NODE1</text>
+<text x="274.0" y="463.609756097561" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">member=thisMember</text>
+<text x="274.0" y="475.609756097561" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">address=FLT_ALL_PASS</text>
+<text x="274.0" y="487.609756097561" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">mask=FLT_ALL_PASS</text>
+<path d="M176.0,352.609756097561 L176.0,362.609756097561 L181.0,357.609756097561 Z" fill="#63B31F" stroke="none" />
+<text x="193.0" y="361.609756097561" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="166.0" y="360.609756097561" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M176.0,378.609756097561 L176.0,388.609756097561 L181.0,383.609756097561 Z" fill="#63B31F" stroke="none" />
+<text x="193.0" y="387.609756097561" font-size="12" text-anchor="start" font-family="Consolas, monospace">RSP</text>
+<text x="166.0" y="386.609756097561" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M176.0,459.609756097561 L176.0,469.609756097561 L181.0,464.609756097561 Z" fill="#18519E" stroke="none" />
+<text x="193.0" y="468.609756097561" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8CanIdx</text>
+<text x="166.0" y="467.609756097561" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<path d="M176.0,485.609756097561 L176.0,495.609756097561 L181.0,490.609756097561 Z" fill="#18519E" stroke="none" />
+<text x="193.0" y="494.609756097561" font-size="12" text-anchor="start" font-family="Consolas, monospace">member</text>
+<text x="166.0" y="493.609756097561" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
+<path d="M176.0,511.609756097561 L176.0,521.609756097561 L181.0,516.609756097561 Z" fill="#000000" stroke="none" />
+<text x="193.0" y="520.609756097561" font-size="12" text-anchor="start" font-family="Consolas, monospace">address</text>
+<text x="166.0" y="519.609756097561" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">NAMEFIELD_T</text>
+<path d="M176.0,537.609756097561 L176.0,547.609756097561 L181.0,542.609756097561 Z" fill="#000000" stroke="none" />
+<text x="193.0" y="546.609756097561" font-size="12" text-anchor="start" font-family="Consolas, monospace">mask</text>
+<text x="166.0" y="545.609756097561" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">NAMEFIELD_T</text>
+<path d="M372.0,352.609756097561 L372.0,362.609756097561 L367.0,357.609756097561 Z" fill="#63B31F" stroke="none" />
+<text x="355.0" y="361.609756097561" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="382.0" y="360.609756097561" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M372.0,378.609756097561 L372.0,388.609756097561 L367.0,383.609756097561 Z" fill="#63B31F" stroke="none" />
+<text x="355.0" y="387.609756097561" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="382.0" y="386.609756097561" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M372.0,459.609756097561 L372.0,469.609756097561 L367.0,464.609756097561 Z" fill="#9FA48A" stroke="none" />
+<text x="355.0" y="468.609756097561" font-size="12" text-anchor="end" font-family="Consolas, monospace">bwaitingForRSP</text>
+<text x="382.0" y="467.609756097561" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M372.0,485.609756097561 L372.0,495.609756097561 L367.0,490.609756097561 Z" fill="#000000" stroke="none" />
+<text x="355.0" y="494.609756097561" font-size="12" text-anchor="end" font-family="Consolas, monospace">sNetEv</text>
+<text x="382.0" y="493.609756097561" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ISONETEVENT_T</text>
+<path d="M372.0,511.609756097561 L372.0,521.609756097561 L367.0,516.609756097561 Z" fill="#000000" stroke="none" />
+<text x="355.0" y="520.609756097561" font-size="12" text-anchor="end" font-family="Consolas, monospace">sCfInfo</text>
+<text x="382.0" y="519.609756097561" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">CF_INFO_T</text>
+<path d="M372.0,537.609756097561 L372.0,547.609756097561 L367.0,542.609756097561 Z" fill="#000000" stroke="none" />
+<text x="355.0" y="546.609756097561" font-size="12" text-anchor="end" font-family="Consolas, monospace">sNameField</text>
+<text x="382.0" y="545.609756097561" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">NAMEFIELD_T</text>
+<rect x="1193.7560975609756" y="318.609756097561" width="170" height="168" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1190.7560975609756,315.609756097561 H1360.7560975609756 V381.609756097561 H1354.7560975609756 V421.609756097561 H1360.7560975609756 V483.609756097561 H1190.7560975609756 V421.609756097561 H1196.7560975609756 V381.609756097561 H1190.7560975609756 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1190.7560975609756,345.609756097561 L1360.7560975609756,345.609756097561" stroke="#000000" stroke-width="1" />
+<text x="1275.7560975609756" y="399.609756097561" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">NetEv2NetEv</text>
+<text x="1275.7560975609756" y="413.609756097561" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">NetEv2NetEv</text>
+<path d="M1185.7560975609756,352.609756097561 L1185.7560975609756,362.609756097561 L1190.7560975609756,357.609756097561 Z" fill="#63B31F" stroke="none" />
+<text x="1202.7560975609756" y="361.609756097561" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="1175.7560975609756" y="360.609756097561" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1185.7560975609756,433.609756097561 L1185.7560975609756,443.609756097561 L1190.7560975609756,438.609756097561 Z" fill="#000000" stroke="none" />
+<text x="1202.7560975609756" y="442.609756097561" font-size="12" text-anchor="start" font-family="Consolas, monospace">s16Handle</text>
+<text x="1175.7560975609756" y="441.609756097561" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<path d="M1185.7560975609756,459.609756097561 L1185.7560975609756,469.609756097561 L1190.7560975609756,464.609756097561 Z" fill="#000000" stroke="none" />
+<text x="1202.7560975609756" y="468.609756097561" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="1175.7560975609756" y="467.609756097561" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<path d="M1365.7560975609756,352.609756097561 L1365.7560975609756,362.609756097561 L1360.7560975609756,357.609756097561 Z" fill="#63B31F" stroke="none" />
+<text x="1348.7560975609756" y="361.609756097561" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="1375.7560975609756" y="360.609756097561" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1365.7560975609756,433.609756097561 L1365.7560975609756,443.609756097561 L1360.7560975609756,438.609756097561 Z" fill="#000000" stroke="none" />
+<text x="1348.7560975609756" y="442.609756097561" font-size="12" text-anchor="end" font-family="Consolas, monospace"></text>
+<text x="1375.7560975609756" y="441.609756097561" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<rect x="1984.0" y="582.0243902439024" width="180" height="142" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1981.0,579.0243902439024 H2161.0 V645.0243902439024 H2155.0 V685.0243902439024 H2161.0 V721.0243902439024 H1981.0 V685.0243902439024 H1987.0 V645.0243902439024 H1981.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1981.0,609.0243902439024 L2161.0,609.0243902439024" stroke="#000000" stroke-width="1" />
+<text x="2071.0" y="663.0243902439024" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">STRUCT_DEMUX</text>
+<text x="2071.0" y="677.0243902439024" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">STRUCT_DEMUX</text>
+<path d="M1976.0,616.0243902439024 L1976.0,626.0243902439024 L1981.0,621.0243902439024 Z" fill="#63B31F" stroke="none" />
+<text x="1993.0" y="625.0243902439024" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="1966.0" y="624.0243902439024" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1976.0,697.0243902439024 L1976.0,707.0243902439024 L1981.0,702.0243902439024 Z" fill="#000000" stroke="none" />
+<text x="1993.0" y="706.0243902439024" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="1966.0" y="705.0243902439024" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY_STRUCT</text>
+<path d="M2166.0,616.0243902439024 L2166.0,626.0243902439024 L2161.0,621.0243902439024 Z" fill="#63B31F" stroke="none" />
+<text x="2149.0" y="625.0243902439024" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="2176.0" y="624.0243902439024" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+</svg>

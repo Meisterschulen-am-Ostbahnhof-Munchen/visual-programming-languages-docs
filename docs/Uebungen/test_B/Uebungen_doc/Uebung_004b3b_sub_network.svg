@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1820.0" height="408.0" viewBox="0 0 1820.0 408.0">
+<defs>
+</defs>
+<rect x="0" y="0" width="1820.0" height="408.0" fill="#ffffff" />
+<text x="910.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_004b3b_sub: Sub-Applikation für ein Toggle-Flip-Flop mit externen RESET-Eingang und SET-Ausgang zur Verriegelung</text>
+<path d="M315.0,182.0 C684.0,182.0,1176.0,182.0,1545.0,182.0" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M315.0,208.0 C684.0,208.0,1176.0,208.0,1545.0,208.0" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1675.0,289.0 C2134.0,289.0,-314.0,289.0,145.0,289.0" stroke="#404040" stroke-width="1.5" fill="none" />
+<rect x="1548.0" y="143.0" width="130" height="168" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1545.0,140.0 H1675.0 V232.0 H1669.0 V272.0 H1675.0 V308.0 H1545.0 V272.0 H1551.0 V232.0 H1545.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1545.0,170.0 L1675.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="1610.0" y="250.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">E_SR_I1</text>
+<text x="1610.0" y="264.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">E_SR</text>
+<path d="M1540.0,177.0 L1540.0,187.0 L1545.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="1557.0" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">S</text>
+<text x="1530.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1540.0,203.0 L1540.0,213.0 L1545.0,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="1557.0" y="212.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">R</text>
+<text x="1530.0" y="211.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1680.0,177.0 L1680.0,187.0 L1675.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="1663.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO</text>
+<text x="1690.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1680.0,284.0 L1680.0,294.0 L1675.0,289.0 Z" fill="#9FA48A" stroke="none" />
+<text x="1663.0" y="293.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q</text>
+<text x="1690.0" y="292.0" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<rect x="148.0" y="143.0" width="170" height="168" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M145.0,140.0 H315.0 V232.0 H309.0 V272.0 H315.0 V308.0 H145.0 V272.0 H151.0 V232.0 H145.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M145.0,170.0 L315.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="230.0" y="250.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">E_SWITCH_I1</text>
+<text x="230.0" y="264.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">E_SWITCH</text>
+<path d="M140.0,177.0 L140.0,187.0 L145.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="157.0" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI</text>
+<text x="130.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M140.0,284.0 L140.0,294.0 L145.0,289.0 Z" fill="#9FA48A" stroke="none" />
+<text x="157.0" y="293.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">G</text>
+<text x="130.0" y="292.0" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M320.0,177.0 L320.0,187.0 L315.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="303.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO0</text>
+<text x="330.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M320.0,203.0 L320.0,213.0 L315.0,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="303.0" y="212.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO1</text>
+<text x="330.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+</svg>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="2175.0" height="404.0" viewBox="0 0 2175.0 404.0">
+<defs>
+</defs>
+<rect x="0" y="0" width="2175.0" height="404.0" fill="#ffffff" />
+<text x="1087.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_171: Exercise for E_D_FF_ANY</text>
+<path d="M260.0,182.0 C751.9999999999999,182.0,1408.0,182.0,1899.9999999999998,182.0" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M260.0,263.0 C751.9999999999999,263.0,1408.0,263.0,1899.9999999999998,263.0" stroke="#404040" stroke-width="1.5" fill="none" />
+<rect x="103.0" y="143.0" width="160" height="164" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M100.0,140.0 H260.0 V206.0 H254.0 V246.0 H260.0 V304.0 H100.0 V246.0 H106.0 V206.0 H100.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M100.0,170.0 L260.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="180.0" y="224.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">E_D_FF_ANY</text>
+<text x="180.0" y="238.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">E_D_FF_ANY</text>
+<text x="180.0" y="250.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">D=DINT#0</text>
+<path d="M265.0,177.0 L265.0,187.0 L260.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="248.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO</text>
+<text x="275.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M265.0,258.0 L265.0,268.0 L260.0,263.0 Z" fill="#000000" stroke="none" />
+<text x="248.0" y="267.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q</text>
+<text x="275.0" y="266.0" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<rect x="1902.9999999999998" y="143.0" width="130" height="142" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1899.9999999999998,140.0 H2029.9999999999998 V206.0 H2023.9999999999998 V246.0 H2029.9999999999998 V282.0 H1899.9999999999998 V246.0 H1905.9999999999998 V206.0 H1899.9999999999998 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1899.9999999999998,170.0 L2029.9999999999998,170.0" stroke="#000000" stroke-width="1" />
+<text x="1964.9999999999998" y="224.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">F_MOVE</text>
+<text x="1964.9999999999998" y="238.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">F_MOVE</text>
+<path d="M1894.9999999999998,177.0 L1894.9999999999998,187.0 L1899.9999999999998,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="1911.9999999999998" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="1884.9999999999998" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1894.9999999999998,258.0 L1894.9999999999998,268.0 L1899.9999999999998,263.0 Z" fill="#000000" stroke="none" />
+<text x="1911.9999999999998" y="267.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="1884.9999999999998" y="266.0" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<path d="M2034.9999999999998,177.0 L2034.9999999999998,187.0 L2029.9999999999998,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="2017.9999999999998" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="2044.9999999999998" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2034.9999999999998,258.0 L2034.9999999999998,268.0 L2029.9999999999998,263.0 Z" fill="#000000" stroke="none" />
+<text x="2017.9999999999998" y="267.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
+<text x="2044.9999999999998" y="266.0" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+</svg>

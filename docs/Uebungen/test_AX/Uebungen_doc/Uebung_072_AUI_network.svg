@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="2346.0" height="901.7511057213235" viewBox="0 0 2346.0 901.7511057213235">
+<defs>
+</defs>
+<rect x="0" y="0" width="2346.0" height="901.7511057213235" fill="#ffffff" />
+<text x="1173.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_072_AUI: GBSD und WBSD auf UT ausgeben (Adapter Version)</text>
+<path d="M277.0,182.0 C777.4,182.0,1444.6,182.0,1945.0,182.0" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M280.6281268286929,575.7511057213235 C779.939688780085,575.7511057213235,1445.6884380486078,575.7511057213235,1945.0,575.7511057213235" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M277.0,263.0 C622.258792771569,263.0,1082.6038498003275,227.0,1427.8626425718965,227.0" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<path d="M1577.8626425718965,227.0 C1688.0038498003275,227.0,1834.858792771569,289.0,1945.0,289.0" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<path d="M280.6281268286929,656.7511057213235 C624.7984815516539,656.7511057213235,1083.6922878489354,620.7511057213235,1427.8626425718965,620.7511057213235" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<path d="M1577.8626425718965,620.7511057213235 C1688.0038498003275,620.7511057213235,1834.858792771569,682.7511057213235,1945.0,682.7511057213235" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<rect x="148.0" y="143.0" width="132" height="268" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M145.0,140.0 H277.0 V206.0 H271.0 V246.0 H277.0 V408.0 H145.0 V246.0 H151.0 V206.0 H145.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M145.0,170.0 L277.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="211.0" y="224.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">IA_GBSD</text>
+<text x="211.0" y="238.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">IA_GBSD</text>
+<text x="211.0" y="250.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<path d="M140.0,177.0 L140.0,187.0 L145.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="157.0" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="130.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M140.0,258.0 L140.0,268.0 L145.0,263.0 Z" fill="#9FA48A" stroke="none" />
+<text x="157.0" y="267.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="130.0" y="266.0" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M282.0,177.0 L282.0,187.0 L277.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="265.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="292.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="272.0" y="258.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="265.0" y="267.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">SPEED</text>
+<text x="292.0" y="266.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUI</text>
+<rect x="272.0" y="284.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="265.0" y="293.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">DISTANCE</text>
+<text x="292.0" y="292.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+<rect x="272.0" y="310.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="265.0" y="319.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
+<text x="292.0" y="318.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<path d="M282.0,336.0 L282.0,346.0 L277.0,341.0 Z" fill="#9FA48A" stroke="none" />
+<text x="265.0" y="345.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="292.0" y="344.0" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M282.0,362.0 L282.0,372.0 L277.0,367.0 Z" fill="#BD8663" stroke="none" />
+<text x="265.0" y="371.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="292.0" y="370.0" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<rect x="1948.0" y="143.0" width="250" height="242" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1945.0,140.0 H2195.0 V232.0 H2189.0 V272.0 H2195.0 V382.0 H1945.0 V272.0 H1951.0 V232.0 H1945.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1945.0,170.0 L2195.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="2070.0" y="250.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">Q_NumericValue_GBSD</text>
+<text x="2070.0" y="264.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Q_NumericValue_AUDI</text>
+<text x="2070.0" y="276.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">u16ObjId=NumberVariable_Ground_based_machine_speed</text>
+<path d="M1940.0,177.0 L1940.0,187.0 L1945.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="1957.0" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="1930.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="1940.0" y="284.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="1957.0" y="293.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">u32NewValue</text>
+<text x="1930.0" y="292.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+<path d="M1940.0,310.0 L1940.0,320.0 L1945.0,315.0 Z" fill="#18519E" stroke="none" />
+<text x="1957.0" y="319.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16ObjId</text>
+<text x="1930.0" y="318.0" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<path d="M2200.0,177.0 L2200.0,187.0 L2195.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="2183.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="2210.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2200.0,203.0 L2200.0,213.0 L2195.0,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="2183.0" y="212.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="2210.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="2190.0" y="284.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="2183.0" y="293.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">u32OldValue</text>
+<text x="2210.0" y="292.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+<path d="M2200.0,310.0 L2200.0,320.0 L2195.0,315.0 Z" fill="#BD8663" stroke="none" />
+<text x="2183.0" y="319.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="2210.0" y="318.0" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M2200.0,336.0 L2200.0,346.0 L2195.0,341.0 Z" fill="#18519E" stroke="none" />
+<text x="2183.0" y="345.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">s16result</text>
+<text x="2210.0" y="344.0" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<rect x="151.62812682869293" y="536.7511057213235" width="132" height="268" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M148.62812682869293,533.7511057213235 H280.6281268286929 V599.7511057213235 H274.6281268286929 V639.7511057213235 H280.6281268286929 V801.7511057213235 H148.62812682869293 V639.7511057213235 H154.62812682869293 V599.7511057213235 H148.62812682869293 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M148.62812682869293,563.7511057213235 L280.6281268286929,563.7511057213235" stroke="#000000" stroke-width="1" />
+<text x="214.62812682869293" y="617.7511057213235" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">IA_WBSD</text>
+<text x="214.62812682869293" y="631.7511057213235" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">IA_WBSD</text>
+<text x="214.62812682869293" y="643.7511057213235" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<path d="M143.62812682869293,570.7511057213235 L143.62812682869293,580.7511057213235 L148.62812682869293,575.7511057213235 Z" fill="#63B31F" stroke="none" />
+<text x="160.62812682869293" y="579.7511057213235" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="133.62812682869293" y="578.7511057213235" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M143.62812682869293,651.7511057213235 L143.62812682869293,661.7511057213235 L148.62812682869293,656.7511057213235 Z" fill="#9FA48A" stroke="none" />
+<text x="160.62812682869293" y="660.7511057213235" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="133.62812682869293" y="659.7511057213235" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M285.6281268286929,570.7511057213235 L285.6281268286929,580.7511057213235 L280.6281268286929,575.7511057213235 Z" fill="#63B31F" stroke="none" />
+<text x="268.6281268286929" y="579.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="295.6281268286929" y="578.7511057213235" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="275.6281268286929" y="651.7511057213235" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="268.6281268286929" y="660.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">SPEED</text>
+<text x="295.6281268286929" y="659.7511057213235" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUI</text>
+<rect x="275.6281268286929" y="677.7511057213235" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="268.6281268286929" y="686.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">DISTANCE</text>
+<text x="295.6281268286929" y="685.7511057213235" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+<rect x="275.6281268286929" y="703.7511057213235" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="268.6281268286929" y="712.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
+<text x="295.6281268286929" y="711.7511057213235" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<path d="M285.6281268286929,729.7511057213235 L285.6281268286929,739.7511057213235 L280.6281268286929,734.7511057213235 Z" fill="#9FA48A" stroke="none" />
+<text x="268.6281268286929" y="738.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="295.6281268286929" y="737.7511057213235" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M285.6281268286929,755.7511057213235 L285.6281268286929,765.7511057213235 L280.6281268286929,760.7511057213235 Z" fill="#BD8663" stroke="none" />
+<text x="268.6281268286929" y="764.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="295.6281268286929" y="763.7511057213235" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<rect x="1948.0" y="536.7511057213235" width="250" height="242" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1945.0,533.7511057213235 H2195.0 V625.7511057213235 H2189.0 V665.7511057213235 H2195.0 V775.7511057213235 H1945.0 V665.7511057213235 H1951.0 V625.7511057213235 H1945.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1945.0,563.7511057213235 L2195.0,563.7511057213235" stroke="#000000" stroke-width="1" />
+<text x="2070.0" y="643.7511057213235" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">Q_NumericValue_WBSD</text>
+<text x="2070.0" y="657.7511057213235" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Q_NumericValue_AUDI</text>
+<text x="2070.0" y="669.7511057213235" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">u16ObjId=NumberVariable_Wheel_based_machine_speed</text>
+<path d="M1940.0,570.7511057213235 L1940.0,580.7511057213235 L1945.0,575.7511057213235 Z" fill="#63B31F" stroke="none" />
+<text x="1957.0" y="579.7511057213235" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="1930.0" y="578.7511057213235" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="1940.0" y="677.7511057213235" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="1957.0" y="686.7511057213235" font-size="12" text-anchor="start" font-family="Consolas, monospace">u32NewValue</text>
+<text x="1930.0" y="685.7511057213235" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+<path d="M1940.0,703.7511057213235 L1940.0,713.7511057213235 L1945.0,708.7511057213235 Z" fill="#18519E" stroke="none" />
+<text x="1957.0" y="712.7511057213235" font-size="12" text-anchor="start" font-family="Consolas, monospace">u16ObjId</text>
+<text x="1930.0" y="711.7511057213235" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<path d="M2200.0,570.7511057213235 L2200.0,580.7511057213235 L2195.0,575.7511057213235 Z" fill="#63B31F" stroke="none" />
+<text x="2183.0" y="579.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="2210.0" y="578.7511057213235" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2200.0,596.7511057213235 L2200.0,606.7511057213235 L2195.0,601.7511057213235 Z" fill="#63B31F" stroke="none" />
+<text x="2183.0" y="605.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="2210.0" y="604.7511057213235" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="2190.0" y="677.7511057213235" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="2183.0" y="686.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">u32OldValue</text>
+<text x="2210.0" y="685.7511057213235" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+<path d="M2200.0,703.7511057213235 L2200.0,713.7511057213235 L2195.0,708.7511057213235 Z" fill="#BD8663" stroke="none" />
+<text x="2183.0" y="712.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="2210.0" y="711.7511057213235" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M2200.0,729.7511057213235 L2200.0,739.7511057213235 L2195.0,734.7511057213235 Z" fill="#18519E" stroke="none" />
+<text x="2183.0" y="738.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">s16result</text>
+<text x="2210.0" y="737.7511057213235" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+<rect x="1430.8626425718965" y="143.0" width="150" height="116" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1427.8626425718965,140.0 H1577.8626425718965 V170.0 H1571.8626425718965 V210.0 H1577.8626425718965 V256.0 H1427.8626425718965 V210.0 H1433.8626425718965 V170.0 H1427.8626425718965 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1427.8626425718965,170.0 L1577.8626425718965,170.0" stroke="#000000" stroke-width="1" />
+<text x="1502.8626425718965" y="188.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">CONV_GBSD</text>
+<text x="1502.8626425718965" y="202.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AUI_TO_AUDI</text>
+<rect x="1422.8626425718965" y="222.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="1439.8626425718965" y="231.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">AUI_IN</text>
+<text x="1412.8626425718965" y="230.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUI</text>
+<rect x="1572.8626425718965" y="222.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="1565.8626425718965" y="231.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">AUDI_OUT</text>
+<text x="1592.8626425718965" y="230.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+<rect x="1430.8626425718965" y="536.7511057213235" width="150" height="116" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1427.8626425718965,533.7511057213235 H1577.8626425718965 V563.7511057213235 H1571.8626425718965 V603.7511057213235 H1577.8626425718965 V649.7511057213235 H1427.8626425718965 V603.7511057213235 H1433.8626425718965 V563.7511057213235 H1427.8626425718965 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1427.8626425718965,563.7511057213235 L1577.8626425718965,563.7511057213235" stroke="#000000" stroke-width="1" />
+<text x="1502.8626425718965" y="581.7511057213235" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">CONV_WBSD</text>
+<text x="1502.8626425718965" y="595.7511057213235" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AUI_TO_AUDI</text>
+<rect x="1422.8626425718965" y="615.7511057213235" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="1439.8626425718965" y="624.7511057213235" font-size="12" text-anchor="start" font-family="Consolas, monospace">AUI_IN</text>
+<text x="1412.8626425718965" y="623.7511057213235" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUI</text>
+<rect x="1572.8626425718965" y="615.7511057213235" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="1565.8626425718965" y="624.7511057213235" font-size="12" text-anchor="end" font-family="Consolas, monospace">AUDI_OUT</text>
+<text x="1592.8626425718965" y="623.7511057213235" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+</svg>

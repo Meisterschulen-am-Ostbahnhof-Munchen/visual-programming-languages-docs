@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="2358.0" height="1338.181818181818" viewBox="0 0 2358.0 1338.181818181818">
+<defs>
+</defs>
+<rect x="0" y="0" width="2358.0" height="1338.181818181818" fill="#ffffff" />
+<text x="1179.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_204: Interlock: ILOCK_CONFLICT_TRIP (Trip bei Konflikt mit Reset)</text>
+<path d="M397.0,234.0 C604.0,234.0,880.0,509.27272727272725,1087.0,509.27272727272725" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M397.0,643.090909090909 C604.0,643.090909090909,880.0,535.2727272727273,1087.0,535.2727272727273" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M427.0,1052.181818181818 C625.0,1052.181818181818,889.0,561.2727272727273,1087.0,561.2727272727273" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1219.0,509.27272727272725 C1449.3999999999999,509.27272727272725,1756.6,208.0,1986.9999999999998,208.0" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1219.0,535.2727272727273 C1449.3999999999999,535.2727272727273,1756.6,617.090909090909,1986.9999999999998,617.090909090909" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1219.0,561.2727272727273 C1449.3999999999999,561.2727272727273,1756.6,1026.181818181818,1986.9999999999998,1026.181818181818" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M397.0,367.0 C604.0,367.0,880.0,642.2727272727273,1087.0,642.2727272727273" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M397.0,776.090909090909 C604.0,776.090909090909,880.0,668.2727272727273,1087.0,668.2727272727273" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1219.0,642.2727272727273 C1449.3999999999999,642.2727272727273,1756.6,341.0,1986.9999999999998,341.0" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1219.0,668.2727272727273 C1449.3999999999999,668.2727272727273,1756.6,750.090909090909,1986.9999999999998,750.090909090909" stroke="#404040" stroke-width="1.5" fill="none" />
+<path d="M1219.0,694.2727272727273 C1449.3999999999999,694.2727272727273,1756.6,1159.181818181818,1986.9999999999998,1159.181818181818" stroke="#404040" stroke-width="1.5" fill="none" />
+<rect x="190.0" y="143.0" width="210" height="280" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M187.0,140.0 H397.0 V258.0 H391.0 V298.0 H397.0 V420.0 H187.0 V298.0 H193.0 V258.0 H187.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M187.0,170.0 L397.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="292.0" y="276.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">DigitalInput_I1</text>
+<text x="292.0" y="290.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">logiBUS_IX</text>
+<text x="292.0" y="302.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="292.0" y="314.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Input=Input_I1</text>
+<path d="M182.0,177.0 L182.0,187.0 L187.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="199.0" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="172.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M182.0,203.0 L182.0,213.0 L187.0,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="199.0" y="212.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="172.0" y="211.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M182.0,310.0 L182.0,320.0 L187.0,315.0 Z" fill="#9FA48A" stroke="none" />
+<text x="199.0" y="319.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="172.0" y="318.0" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M182.0,336.0 L182.0,346.0 L187.0,341.0 Z" fill="#BD8663" stroke="none" />
+<text x="199.0" y="345.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
+<text x="172.0" y="344.0" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M182.0,362.0 L182.0,372.0 L187.0,367.0 Z" fill="#000000" stroke="none" />
+<text x="199.0" y="371.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">Input</text>
+<text x="172.0" y="370.0" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">logiBUS_DI_S</text>
+<path d="M402.0,177.0 L402.0,187.0 L397.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="385.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="412.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M402.0,203.0 L402.0,213.0 L397.0,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="385.0" y="212.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="412.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M402.0,229.0 L402.0,239.0 L397.0,234.0 Z" fill="#63B31F" stroke="none" />
+<text x="385.0" y="238.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="412.0" y="237.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M402.0,310.0 L402.0,320.0 L397.0,315.0 Z" fill="#9FA48A" stroke="none" />
+<text x="385.0" y="319.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="412.0" y="318.0" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M402.0,336.0 L402.0,346.0 L397.0,341.0 Z" fill="#BD8663" stroke="none" />
+<text x="385.0" y="345.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="412.0" y="344.0" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M402.0,362.0 L402.0,372.0 L397.0,367.0 Z" fill="#9FA48A" stroke="none" />
+<text x="385.0" y="371.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">IN</text>
+<text x="412.0" y="370.0" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<rect x="190.0" y="552.090909090909" width="210" height="280" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M187.0,549.090909090909 H397.0 V667.090909090909 H391.0 V707.090909090909 H397.0 V829.090909090909 H187.0 V707.090909090909 H193.0 V667.090909090909 H187.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M187.0,579.090909090909 L397.0,579.090909090909" stroke="#000000" stroke-width="1" />
+<text x="292.0" y="685.090909090909" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">DigitalInput_I2</text>
+<text x="292.0" y="699.090909090909" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">logiBUS_IX</text>
+<text x="292.0" y="711.090909090909" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="292.0" y="723.090909090909" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Input=Input_I2</text>
+<path d="M182.0,586.090909090909 L182.0,596.090909090909 L187.0,591.090909090909 Z" fill="#63B31F" stroke="none" />
+<text x="199.0" y="595.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="172.0" y="594.090909090909" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M182.0,612.090909090909 L182.0,622.090909090909 L187.0,617.090909090909 Z" fill="#63B31F" stroke="none" />
+<text x="199.0" y="621.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="172.0" y="620.090909090909" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M182.0,719.090909090909 L182.0,729.090909090909 L187.0,724.090909090909 Z" fill="#9FA48A" stroke="none" />
+<text x="199.0" y="728.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="172.0" y="727.090909090909" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M182.0,745.090909090909 L182.0,755.090909090909 L187.0,750.090909090909 Z" fill="#BD8663" stroke="none" />
+<text x="199.0" y="754.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
+<text x="172.0" y="753.090909090909" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M182.0,771.090909090909 L182.0,781.090909090909 L187.0,776.090909090909 Z" fill="#000000" stroke="none" />
+<text x="199.0" y="780.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">Input</text>
+<text x="172.0" y="779.090909090909" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">logiBUS_DI_S</text>
+<path d="M402.0,586.090909090909 L402.0,596.090909090909 L397.0,591.090909090909 Z" fill="#63B31F" stroke="none" />
+<text x="385.0" y="595.090909090909" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="412.0" y="594.090909090909" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M402.0,612.090909090909 L402.0,622.090909090909 L397.0,617.090909090909 Z" fill="#63B31F" stroke="none" />
+<text x="385.0" y="621.090909090909" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="412.0" y="620.090909090909" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M402.0,638.090909090909 L402.0,648.090909090909 L397.0,643.090909090909 Z" fill="#63B31F" stroke="none" />
+<text x="385.0" y="647.090909090909" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="412.0" y="646.090909090909" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M402.0,719.090909090909 L402.0,729.090909090909 L397.0,724.090909090909 Z" fill="#9FA48A" stroke="none" />
+<text x="385.0" y="728.090909090909" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="412.0" y="727.090909090909" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M402.0,745.090909090909 L402.0,755.090909090909 L397.0,750.090909090909 Z" fill="#BD8663" stroke="none" />
+<text x="385.0" y="754.090909090909" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="412.0" y="753.090909090909" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M402.0,771.090909090909 L402.0,781.090909090909 L397.0,776.090909090909 Z" fill="#9FA48A" stroke="none" />
+<text x="385.0" y="780.090909090909" font-size="12" text-anchor="end" font-family="Consolas, monospace">IN</text>
+<text x="412.0" y="779.090909090909" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<rect x="190.0" y="961.1818181818181" width="240" height="280" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M187.0,958.1818181818181 H427.0 V1076.181818181818 H421.0 V1116.181818181818 H427.0 V1238.181818181818 H187.0 V1116.181818181818 H193.0 V1076.181818181818 H187.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M187.0,988.1818181818181 L427.0,988.1818181818181" stroke="#000000" stroke-width="1" />
+<text x="307.0" y="1094.181818181818" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">DigitalInput_Reset</text>
+<text x="307.0" y="1108.181818181818" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">logiBUS_IX</text>
+<text x="307.0" y="1120.181818181818" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="307.0" y="1132.181818181818" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Input=Input_I3</text>
+<path d="M182.0,995.1818181818181 L182.0,1005.1818181818181 L187.0,1000.1818181818181 Z" fill="#63B31F" stroke="none" />
+<text x="199.0" y="1004.1818181818181" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="172.0" y="1003.1818181818181" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M182.0,1021.181818181818 L182.0,1031.181818181818 L187.0,1026.181818181818 Z" fill="#63B31F" stroke="none" />
+<text x="199.0" y="1030.181818181818" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="172.0" y="1029.181818181818" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M182.0,1128.181818181818 L182.0,1138.181818181818 L187.0,1133.181818181818 Z" fill="#9FA48A" stroke="none" />
+<text x="199.0" y="1137.181818181818" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="172.0" y="1136.181818181818" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M182.0,1154.181818181818 L182.0,1164.181818181818 L187.0,1159.181818181818 Z" fill="#BD8663" stroke="none" />
+<text x="199.0" y="1163.181818181818" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
+<text x="172.0" y="1162.181818181818" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M182.0,1180.181818181818 L182.0,1190.181818181818 L187.0,1185.181818181818 Z" fill="#000000" stroke="none" />
+<text x="199.0" y="1189.181818181818" font-size="12" text-anchor="start" font-family="Consolas, monospace">Input</text>
+<text x="172.0" y="1188.181818181818" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">logiBUS_DI_S</text>
+<path d="M432.0,995.1818181818181 L432.0,1005.1818181818181 L427.0,1000.1818181818181 Z" fill="#63B31F" stroke="none" />
+<text x="415.0" y="1004.1818181818181" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="442.0" y="1003.1818181818181" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M432.0,1021.181818181818 L432.0,1031.181818181818 L427.0,1026.181818181818 Z" fill="#63B31F" stroke="none" />
+<text x="415.0" y="1030.181818181818" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="442.0" y="1029.181818181818" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M432.0,1047.181818181818 L432.0,1057.181818181818 L427.0,1052.181818181818 Z" fill="#63B31F" stroke="none" />
+<text x="415.0" y="1056.181818181818" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="442.0" y="1055.181818181818" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M432.0,1128.181818181818 L432.0,1138.181818181818 L427.0,1133.181818181818 Z" fill="#9FA48A" stroke="none" />
+<text x="415.0" y="1137.181818181818" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="442.0" y="1136.181818181818" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M432.0,1154.181818181818 L432.0,1164.181818181818 L427.0,1159.181818181818 Z" fill="#BD8663" stroke="none" />
+<text x="415.0" y="1163.181818181818" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="442.0" y="1162.181818181818" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M432.0,1180.181818181818 L432.0,1190.181818181818 L427.0,1185.181818181818 Z" fill="#9FA48A" stroke="none" />
+<text x="415.0" y="1189.181818181818" font-size="12" text-anchor="end" font-family="Consolas, monospace">IN</text>
+<text x="442.0" y="1188.181818181818" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<rect x="1090.0" y="470.27272727272725" width="132" height="246" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1087.0,467.27272727272725 H1219.0 V585.2727272727273 H1213.0 V625.2727272727273 H1219.0 V713.2727272727273 H1087.0 V625.2727272727273 H1093.0 V585.2727272727273 H1087.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1087.0,497.27272727272725 L1219.0,497.27272727272725" stroke="#000000" stroke-width="1" />
+<text x="1153.0" y="603.2727272727273" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">ILOCK</text>
+<text x="1153.0" y="617.2727272727273" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">ILOCK_CONFLICT_TRIP</text>
+<path d="M1082.0,504.27272727272725 L1082.0,514.2727272727273 L1087.0,509.27272727272725 Z" fill="#63B31F" stroke="none" />
+<text x="1099.0" y="513.2727272727273" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_UP</text>
+<text x="1072.0" y="512.2727272727273" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1082.0,530.2727272727273 L1082.0,540.2727272727273 L1087.0,535.2727272727273 Z" fill="#63B31F" stroke="none" />
+<text x="1099.0" y="539.2727272727273" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_DOWN</text>
+<text x="1072.0" y="538.2727272727273" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1082.0,556.2727272727273 L1082.0,566.2727272727273 L1087.0,561.2727272727273 Z" fill="#63B31F" stroke="none" />
+<text x="1099.0" y="565.2727272727273" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_RESET</text>
+<text x="1072.0" y="564.2727272727273" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1082.0,637.2727272727273 L1082.0,647.2727272727273 L1087.0,642.2727272727273 Z" fill="#9FA48A" stroke="none" />
+<text x="1099.0" y="646.2727272727273" font-size="12" text-anchor="start" font-family="Consolas, monospace">DI_UP</text>
+<text x="1072.0" y="645.2727272727273" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M1082.0,663.2727272727273 L1082.0,673.2727272727273 L1087.0,668.2727272727273 Z" fill="#9FA48A" stroke="none" />
+<text x="1099.0" y="672.2727272727273" font-size="12" text-anchor="start" font-family="Consolas, monospace">DI_DOWN</text>
+<text x="1072.0" y="671.2727272727273" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M1224.0,504.27272727272725 L1224.0,514.2727272727273 L1219.0,509.27272727272725 Z" fill="#63B31F" stroke="none" />
+<text x="1207.0" y="513.2727272727273" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_UP</text>
+<text x="1234.0" y="512.2727272727273" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1224.0,530.2727272727273 L1224.0,540.2727272727273 L1219.0,535.2727272727273 Z" fill="#63B31F" stroke="none" />
+<text x="1207.0" y="539.2727272727273" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_DOWN</text>
+<text x="1234.0" y="538.2727272727273" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1224.0,556.2727272727273 L1224.0,566.2727272727273 L1219.0,561.2727272727273 Z" fill="#63B31F" stroke="none" />
+<text x="1207.0" y="565.2727272727273" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_TRIP</text>
+<text x="1234.0" y="564.2727272727273" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1224.0,637.2727272727273 L1224.0,647.2727272727273 L1219.0,642.2727272727273 Z" fill="#9FA48A" stroke="none" />
+<text x="1207.0" y="646.2727272727273" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_UP</text>
+<text x="1234.0" y="645.2727272727273" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M1224.0,663.2727272727273 L1224.0,673.2727272727273 L1219.0,668.2727272727273 Z" fill="#9FA48A" stroke="none" />
+<text x="1207.0" y="672.2727272727273" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_DOWN</text>
+<text x="1234.0" y="671.2727272727273" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M1224.0,689.2727272727273 L1224.0,699.2727272727273 L1219.0,694.2727272727273 Z" fill="#9FA48A" stroke="none" />
+<text x="1207.0" y="698.2727272727273" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_TRIP</text>
+<text x="1234.0" y="697.2727272727273" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<rect x="1989.9999999999998" y="143.0" width="220" height="280" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1986.9999999999998,140.0 H2207.0 V232.0 H2201.0 V272.0 H2207.0 V420.0 H1986.9999999999998 V272.0 H1992.9999999999998 V232.0 H1986.9999999999998 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1986.9999999999998,170.0 L2207.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="2097.0" y="250.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">DigitalOutput_Q1</text>
+<text x="2097.0" y="264.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">logiBUS_QX</text>
+<text x="2097.0" y="276.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="2097.0" y="288.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Output=Output_Q1</text>
+<path d="M1981.9999999999998,177.0 L1981.9999999999998,187.0 L1986.9999999999998,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="1998.9999999999998" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="1971.9999999999998" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1981.9999999999998,203.0 L1981.9999999999998,213.0 L1986.9999999999998,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="1998.9999999999998" y="212.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="1971.9999999999998" y="211.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1981.9999999999998,284.0 L1981.9999999999998,294.0 L1986.9999999999998,289.0 Z" fill="#9FA48A" stroke="none" />
+<text x="1998.9999999999998" y="293.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="1971.9999999999998" y="292.0" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M1981.9999999999998,310.0 L1981.9999999999998,320.0 L1986.9999999999998,315.0 Z" fill="#BD8663" stroke="none" />
+<text x="1998.9999999999998" y="319.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
+<text x="1971.9999999999998" y="318.0" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M1981.9999999999998,336.0 L1981.9999999999998,346.0 L1986.9999999999998,341.0 Z" fill="#9FA48A" stroke="none" />
+<text x="1998.9999999999998" y="345.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT</text>
+<text x="1971.9999999999998" y="344.0" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M1981.9999999999998,362.0 L1981.9999999999998,372.0 L1986.9999999999998,367.0 Z" fill="#000000" stroke="none" />
+<text x="1998.9999999999998" y="371.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">Output</text>
+<text x="1971.9999999999998" y="370.0" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">logiBUS_DO_S</text>
+<path d="M2212.0,177.0 L2212.0,187.0 L2207.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="2195.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="2222.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2212.0,203.0 L2212.0,213.0 L2207.0,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="2195.0" y="212.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="2222.0" y="211.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2212.0,284.0 L2212.0,294.0 L2207.0,289.0 Z" fill="#9FA48A" stroke="none" />
+<text x="2195.0" y="293.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="2222.0" y="292.0" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M2212.0,310.0 L2212.0,320.0 L2207.0,315.0 Z" fill="#BD8663" stroke="none" />
+<text x="2195.0" y="319.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="2222.0" y="318.0" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<rect x="1989.9999999999998" y="552.090909090909" width="220" height="280" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1986.9999999999998,549.090909090909 H2207.0 V641.090909090909 H2201.0 V681.090909090909 H2207.0 V829.090909090909 H1986.9999999999998 V681.090909090909 H1992.9999999999998 V641.090909090909 H1986.9999999999998 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1986.9999999999998,579.090909090909 L2207.0,579.090909090909" stroke="#000000" stroke-width="1" />
+<text x="2097.0" y="659.090909090909" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">DigitalOutput_Q2</text>
+<text x="2097.0" y="673.090909090909" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">logiBUS_QX</text>
+<text x="2097.0" y="685.090909090909" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="2097.0" y="697.090909090909" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Output=Output_Q2</text>
+<path d="M1981.9999999999998,586.090909090909 L1981.9999999999998,596.090909090909 L1986.9999999999998,591.090909090909 Z" fill="#63B31F" stroke="none" />
+<text x="1998.9999999999998" y="595.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="1971.9999999999998" y="594.090909090909" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1981.9999999999998,612.090909090909 L1981.9999999999998,622.090909090909 L1986.9999999999998,617.090909090909 Z" fill="#63B31F" stroke="none" />
+<text x="1998.9999999999998" y="621.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="1971.9999999999998" y="620.090909090909" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1981.9999999999998,693.090909090909 L1981.9999999999998,703.090909090909 L1986.9999999999998,698.090909090909 Z" fill="#9FA48A" stroke="none" />
+<text x="1998.9999999999998" y="702.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="1971.9999999999998" y="701.090909090909" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M1981.9999999999998,719.090909090909 L1981.9999999999998,729.090909090909 L1986.9999999999998,724.090909090909 Z" fill="#BD8663" stroke="none" />
+<text x="1998.9999999999998" y="728.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
+<text x="1971.9999999999998" y="727.090909090909" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M1981.9999999999998,745.090909090909 L1981.9999999999998,755.090909090909 L1986.9999999999998,750.090909090909 Z" fill="#9FA48A" stroke="none" />
+<text x="1998.9999999999998" y="754.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT</text>
+<text x="1971.9999999999998" y="753.090909090909" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M1981.9999999999998,771.090909090909 L1981.9999999999998,781.090909090909 L1986.9999999999998,776.090909090909 Z" fill="#000000" stroke="none" />
+<text x="1998.9999999999998" y="780.090909090909" font-size="12" text-anchor="start" font-family="Consolas, monospace">Output</text>
+<text x="1971.9999999999998" y="779.090909090909" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">logiBUS_DO_S</text>
+<path d="M2212.0,586.090909090909 L2212.0,596.090909090909 L2207.0,591.090909090909 Z" fill="#63B31F" stroke="none" />
+<text x="2195.0" y="595.090909090909" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="2222.0" y="594.090909090909" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2212.0,612.090909090909 L2212.0,622.090909090909 L2207.0,617.090909090909 Z" fill="#63B31F" stroke="none" />
+<text x="2195.0" y="621.090909090909" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="2222.0" y="620.090909090909" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2212.0,693.090909090909 L2212.0,703.090909090909 L2207.0,698.090909090909 Z" fill="#9FA48A" stroke="none" />
+<text x="2195.0" y="702.090909090909" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="2222.0" y="701.090909090909" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M2212.0,719.090909090909 L2212.0,729.090909090909 L2207.0,724.090909090909 Z" fill="#BD8663" stroke="none" />
+<text x="2195.0" y="728.090909090909" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="2222.0" y="727.090909090909" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<rect x="1989.9999999999998" y="961.1818181818181" width="180" height="280" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1986.9999999999998,958.1818181818181 H2167.0 V1050.181818181818 H2161.0 V1090.181818181818 H2167.0 V1238.181818181818 H1986.9999999999998 V1090.181818181818 H1992.9999999999998 V1050.181818181818 H1986.9999999999998 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1986.9999999999998,988.1818181818181 L2167.0,988.1818181818181" stroke="#000000" stroke-width="1" />
+<text x="2077.0" y="1068.181818181818" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">Trip_Anzeige</text>
+<text x="2077.0" y="1082.181818181818" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">logiBUS_QX</text>
+<text x="2077.0" y="1094.181818181818" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="2077.0" y="1106.181818181818" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Output=Output_Q4</text>
+<path d="M1981.9999999999998,995.1818181818181 L1981.9999999999998,1005.1818181818181 L1986.9999999999998,1000.1818181818181 Z" fill="#63B31F" stroke="none" />
+<text x="1998.9999999999998" y="1004.1818181818181" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="1971.9999999999998" y="1003.1818181818181" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1981.9999999999998,1021.181818181818 L1981.9999999999998,1031.181818181818 L1986.9999999999998,1026.181818181818 Z" fill="#63B31F" stroke="none" />
+<text x="1998.9999999999998" y="1030.181818181818" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="1971.9999999999998" y="1029.181818181818" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M1981.9999999999998,1102.181818181818 L1981.9999999999998,1112.181818181818 L1986.9999999999998,1107.181818181818 Z" fill="#9FA48A" stroke="none" />
+<text x="1998.9999999999998" y="1111.181818181818" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="1971.9999999999998" y="1110.181818181818" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M1981.9999999999998,1128.181818181818 L1981.9999999999998,1138.181818181818 L1986.9999999999998,1133.181818181818 Z" fill="#BD8663" stroke="none" />
+<text x="1998.9999999999998" y="1137.181818181818" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
+<text x="1971.9999999999998" y="1136.181818181818" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M1981.9999999999998,1154.181818181818 L1981.9999999999998,1164.181818181818 L1986.9999999999998,1159.181818181818 Z" fill="#9FA48A" stroke="none" />
+<text x="1998.9999999999998" y="1163.181818181818" font-size="12" text-anchor="start" font-family="Consolas, monospace">OUT</text>
+<text x="1971.9999999999998" y="1162.181818181818" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M1981.9999999999998,1180.181818181818 L1981.9999999999998,1190.181818181818 L1986.9999999999998,1185.181818181818 Z" fill="#000000" stroke="none" />
+<text x="1998.9999999999998" y="1189.181818181818" font-size="12" text-anchor="start" font-family="Consolas, monospace">Output</text>
+<text x="1971.9999999999998" y="1188.181818181818" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">logiBUS_DO_S</text>
+<path d="M2172.0,995.1818181818181 L2172.0,1005.1818181818181 L2167.0,1000.1818181818181 Z" fill="#63B31F" stroke="none" />
+<text x="2155.0" y="1004.1818181818181" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="2182.0" y="1003.1818181818181" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2172.0,1021.181818181818 L2172.0,1031.181818181818 L2167.0,1026.181818181818 Z" fill="#63B31F" stroke="none" />
+<text x="2155.0" y="1030.181818181818" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="2182.0" y="1029.181818181818" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2172.0,1102.181818181818 L2172.0,1112.181818181818 L2167.0,1107.181818181818 Z" fill="#9FA48A" stroke="none" />
+<text x="2155.0" y="1111.181818181818" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="2182.0" y="1110.181818181818" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M2172.0,1128.181818181818 L2172.0,1138.181818181818 L2167.0,1133.181818181818 Z" fill="#BD8663" stroke="none" />
+<text x="2155.0" y="1137.181818181818" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="2182.0" y="1136.181818181818" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+</svg>

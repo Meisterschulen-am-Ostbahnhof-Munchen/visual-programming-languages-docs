@@ -73,10 +73,10 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_071a](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071a.md)
-* [Uebung_071b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_071b.md)
-* [Uebung_072b](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072b.md)
-* [Uebung_085](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_085.md)
+* [Uebung_071a](../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
+* [Uebung_071b](../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+* [Uebung_072b](../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+* [Uebung_085](../../../Uebungen/test_B/Uebungen_doc/Uebung_085.md)
 
 ## Fazit
 

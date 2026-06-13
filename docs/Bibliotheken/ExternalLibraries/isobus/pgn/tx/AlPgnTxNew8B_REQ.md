@@ -70,7 +70,7 @@ Der Baustein durchläuft implizit folgende Hauptzustände:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_125](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_125.md)
+* [Uebung_125](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_125.md)
 
 ## Fazit
 Der `AlPgnTxNew8B_REQ` ist ein essentieller Konfigurationsbaustein für die ISOBUS-Kommunikation in 4diac. Er abstrahiert die komplexe Einrichtung einer Sende-PGN in einem J1939-Netzwerk hinter einer klaren, ereignisgesteuerten Schnittstelle. Die Trennung von Installation (`install`/`installO`) und Betrieb (`CNF`/`*ERR`) sowie die Nutzung eines Callback-Adapters machen ihn robust und gut integrierbar in größere Steuerungsanwendungen für die mobile Arbeitsmaschinenkommunikation.

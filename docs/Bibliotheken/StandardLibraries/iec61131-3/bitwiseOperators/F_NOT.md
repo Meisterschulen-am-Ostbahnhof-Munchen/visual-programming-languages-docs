@@ -59,7 +59,7 @@ Im Vergleich zu anderen logischen Operationen wie F_AND oder F_OR führt F_NOT a
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006a3_sub](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_006a3_sub.md)
+* [Uebung_006a3_sub](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006a3_sub.md)
 
 ## Fazit
 Der F_NOT Funktionsblock bietet eine standardkonforme, effiziente Lösung für bitweise Invertierungsoperationen in IEC 61131-3 kompatiblen Steuerungssystemen. Seine einfache Schnittstelle und universelle ANY_BIT-Typunterstützung machen ihn zu einem vielseitig einsetzbaren Baustein für verschiedene Anwendungsfälle.

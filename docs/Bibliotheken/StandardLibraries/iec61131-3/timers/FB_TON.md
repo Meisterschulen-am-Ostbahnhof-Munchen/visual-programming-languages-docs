@@ -63,8 +63,8 @@ Der FB_TON startet die Zeitmessung, wenn der Eingang IN von FALSE auf TRUE wechs
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020c3](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c3.md)
-* [Uebung_020c3_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
+* [Uebung_020c3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c3.md)
+* [Uebung_020c3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
 
 ## Fazit
 Der FB_TON ist ein grundlegender und robuster Timer-Baustein für Standard-Einschaltverzögerungen in industriellen Steuerungssystemen. Seine einfache und intuitive Bedienung sowie die Konformität zum IEC 61131-3 Standard machen ihn zu einer zuverlässigen Wahl für zeitgesteuerte Anwendungen.

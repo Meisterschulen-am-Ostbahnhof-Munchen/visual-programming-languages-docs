@@ -57,7 +57,7 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weiterleitung e
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_090a2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_090a2.md)
+* [Uebung_090a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
 
 ## Fazit
 Der `F_MUX_3` ist ein einfacher und effizienter Multiplexer für Anwendungen, bei denen zwischen drei Signalen ausgewählt werden muss. Seine Flexibilität in Bezug auf Datentypen macht ihn vielseitig einsetzbar.

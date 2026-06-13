@@ -65,7 +65,7 @@ Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IX erweiterte Se
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010b1](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010b1.md)
+* [Uebung_010b1](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b1.md)
 
 ## Fazit
 Der Aux_IX Funktionsblock stellt eine robuste und flexible Lösung für die Integration von booleschen Eingangsdaten in IEC 61499-basierte Steuerungssysteme dar. Durch seine Service-orientierte Architektur und umfangreiche Statusrückmeldungen eignet er sich besonders für anspruchsvolle Industrieanwendungen mit hohen Anforderungen an Zuverlässigkeit und Diagnosefähigkeit.

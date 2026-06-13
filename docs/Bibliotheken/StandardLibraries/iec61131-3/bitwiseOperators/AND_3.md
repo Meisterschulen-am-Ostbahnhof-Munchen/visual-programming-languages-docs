@@ -62,7 +62,7 @@ Im Vergleich zu Standard-UND-Bausteinen mit nur zwei Eingängen bietet AND_3 die
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a6_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
+* [Uebung_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
 
 ## Fazit
 Der AND_3-Funktionsblock ist ein vielseitiger und effizienter Baustein für bitweise UND-Operationen mit drei Eingängen. Seine generische Natur macht ihn für verschiedene Anwendungsfälle und Datentypen geeignet, während die klare Ereignissteuerung eine zuverlässige Integration in Steuerungssysteme ermöglicht.

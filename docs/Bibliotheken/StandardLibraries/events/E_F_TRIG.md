@@ -59,7 +59,7 @@ Die interne Logik des Bausteins (Stand: `events-3.0.0`) ist fehlerhaft und imple
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_088](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_088.md)
+* [Uebung_088](../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
 
 ## Fazit
 

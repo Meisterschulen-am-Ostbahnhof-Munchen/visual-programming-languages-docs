@@ -66,10 +66,10 @@ Vergleich mit [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/F_
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_090a2_AX](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
-* [Uebung_103](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
-* [Uebung_103c](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c.md)
-* [Uebung_103c2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c2.md)
+* [Uebung_090a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
+* [Uebung_103](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+* [Uebung_103c](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103c.md)
+* [Uebung_103c2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103c2.md)
 
 ## Fazit
 Der AX_MUX_3 ist ein vielseitiger und zuverlässiger Multiplexer-Baustein für Steuerungsanwendungen, der durch seine drei Eingänge und standardisierte Adapter-Schnittstellen eine flexible Signalauswahl ermöglicht. Die klare Ereignissteuerung und Bestätigungsmechanismen machen ihn besonders geeignet für sicherheitskritische Anwendungen.

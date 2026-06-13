@@ -74,7 +74,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_127](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_127.md)
+* [Uebung_127](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_127.md)
 
 ## Fazit
 Der `AlPgnTxNew8Bcycl` ist ein spezialisierter und leistungsstarker Funktionsblock für die zyklische Datenkommunikation in ISOBUS-Netzwerken. Durch seine klare Schnittstelle, die umfassende Konfigurierbarkeit und die integrierte Fehlerrückmeldung eignet er sich ideal für die zuverlässige Implementierung von Sendediensten in komplexen, verteilten Steuerungssystemen der Landtechnik.

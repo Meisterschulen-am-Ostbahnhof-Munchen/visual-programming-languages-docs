@@ -66,8 +66,8 @@ Im Vergleich zu einfachen analogen Eingangsbausteinen bietet logiBUS_AI_ID erwei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_028](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_028.md)
-* [Uebung_034](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_034.md)
+* [Uebung_028](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_028.md)
+* [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
 
 ## Fazit
 Der logiBUS_AI_ID Function Block stellt eine robuste und flexible Lösung für die Anbindung analoger Eingabegeräte in industriellen Steuerungssystemen dar. Durch die umfangreiche Parametrierungsmöglichkeit und die integrierte Hysterese-Funktionalität eignet er sich besonders für anspruchsvolle Automatisierungsanwendungen.

@@ -42,8 +42,8 @@ Wenn ein Ereignis am Eingang `EI` eintrifft, löst der Baustein sofort nacheinan
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004a8](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_004a8.md)
-* [Uebung_004a8_AX](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_004a8_AX.md)
+* [Uebung_004a8](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a8.md)
+* [Uebung_004a8_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a8_AX.md)
 
 ## Fazit
 Der `E_SPLIT_2`-Baustein ist ein nützliches Werkzeug, um aus einem einzelnen Trigger eine feste, kurze Ereignissequenz zu generieren. Seine Einfachheit und die garantierte Ausführungsreihenfolge machen ihn zu einer robusten Komponente für die Ablaufsteuerung in IEC 61499-Anwendungen.

@@ -72,8 +72,8 @@ Der Block verfügt über implizite Zustände:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_130](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_130.md)
-* [Uebung_134](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_134.md)
+* [Uebung_130](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_130.md)
+* [Uebung_134](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
 
 ## Fazit
 Der `AlPgnRxNew8B` ist ein essentieller Baustein für die Entwicklung von ISOBUS-kompatiblen Empfangsanwendungen in der 4diac IDE. Er kapselt die Komplexität der PGN-Filterung und -Verwaltung und bietet der Anwendung eine saubere, ereignisgesteuerte Schnittstelle für den Empfang von CAN-Nachrichten nach dem ISO 11783-Standard. Seine klare Trennung von Konfiguration (`install`), Datentransfer (`IND`) und Fehlerbehandlung macht ihn robust und einfach in übergeordnete Steuerungslogiken zu integrieren.

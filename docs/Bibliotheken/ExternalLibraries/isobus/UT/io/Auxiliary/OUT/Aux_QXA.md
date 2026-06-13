@@ -70,7 +70,7 @@ Im Vergleich zu einfachen booleschen Ausgabeblöcken bietet Aux_QXA:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003c_sub_AX](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003c_sub_AX.md)
+* [Uebung_003c_sub_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003c_sub_AX.md)
 
 ## Fazit
 Der Aux_QXA Funktionsblock stellt eine robuste und standardkonforme Lösung für die Steuerung von booleschen Hilfsausgängen in ISOBUS-Systemen dar. Durch seine modulare Architektur und erweiterte Parametrierungsmöglichkeiten eignet er sich besonders für komplexe Steuerungsaufgaben in der modernen Agrartechnik.

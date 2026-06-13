@@ -54,7 +54,7 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_087a2](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_087a2.md)
+* [Uebung_087a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_087a2.md)
 
 ## Fazit
 Der `E_MUX_4` ist ein nützlicher Baustein, um Ereignisströme von bis zu vier Quellen zu bündeln und gleichzeitig die Quelle des Ereignisses zu identifizieren. Er ist das Standard-Gegenstück zum `E_DEMUX_4` und wird häufig verwendet, um die Komplexität von Verdrahtungen zu reduzieren und Logik zu zentralisieren.

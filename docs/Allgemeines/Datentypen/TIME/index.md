@@ -41,6 +41,6 @@ Folgende Einheiten können kombiniert werden (Reihenfolge absteigend):
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020j2_AX_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020j2_AX_sub.md)
-* [Uebung_072c](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+* [Uebung_020j2_AX_sub](../../../Uebungen/test_AX/Uebungen_doc/Uebung_020j2_AX_sub.md)
+* [Uebung_072c](../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 

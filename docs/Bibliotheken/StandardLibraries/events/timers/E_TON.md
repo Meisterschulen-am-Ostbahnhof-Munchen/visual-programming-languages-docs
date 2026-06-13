@@ -82,8 +82,8 @@ Der **E_TON**-Baustein ist ein einfaches, aber leistungsstarkes Werkzeug in der 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020c](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c.md)
-* [Uebung_020c2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020c2.md)
-* [Uebung_039b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039b.md)
-* [Uebung_160b2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_160b2.md)
+* [Uebung_020c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c.md)
+* [Uebung_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
+* [Uebung_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
+* [Uebung_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
 

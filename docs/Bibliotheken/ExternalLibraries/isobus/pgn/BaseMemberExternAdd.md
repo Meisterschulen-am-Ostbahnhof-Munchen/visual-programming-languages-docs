@@ -47,5 +47,5 @@ The added CF will be set to announced in the next iso_DlCyclicGlobal() run.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_134](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_134.md)
+* [Uebung_134](../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
 

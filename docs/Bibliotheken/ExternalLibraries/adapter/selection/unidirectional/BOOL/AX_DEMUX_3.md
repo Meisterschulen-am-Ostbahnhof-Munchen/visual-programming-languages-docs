@@ -68,9 +68,9 @@ Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_103](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103.md)
-* [Uebung_103c](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c.md)
-* [Uebung_103c2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_103c2.md)
+* [Uebung_103](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+* [Uebung_103c](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103c.md)
+* [Uebung_103c2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103c2.md)
 
 ## Fazit
 Der AX_DEMUX_3 stellt einen robusten und flexiblen Demultiplexer für verteilte Automatisierungssysteme dar. Durch die Verwendung standardisierter Adapter und die klare Ereignissteuerung eignet er sich besonders für komplexe Datenfluss-Steuerungen in industriellen Anwendungen.

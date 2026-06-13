@@ -73,9 +73,9 @@ Der Funktionsblock durchläuft implizit folgende Hauptzustände:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_126](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126.md)
-* [Uebung_126b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b.md)
-* [Uebung_126b2](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2.md)
+* [Uebung_126](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126.md)
+* [Uebung_126b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b.md)
+* [Uebung_126b2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2.md)
 
 ## Fazit
 Der `AlPgnTxNew8Bcycl_REQ` ist ein spezialisierter Funktionsblock für zuverlässige, zyklische Datenkommunikation in ISOBUS-Umgebungen. Seine Stärken liegen in der klaren Trennung von Konfiguration (`install`), dynamischer Datenbeschaffung (Callback-Adapter) und robustem Fehlerfeedback. Er ist ideal geeignet für Anwendungen, die regelmäßige Statusupdates oder Prozessdatenstreams erfordern.

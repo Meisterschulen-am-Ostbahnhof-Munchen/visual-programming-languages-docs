@@ -71,8 +71,8 @@ Die ECC (Execution Control Chart) besteht aus sechs Zuständen:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_055](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)
-* [Uebung_056](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
+* [Uebung_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
+* [Uebung_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 ## Fazit
 Der `QUARTER_TO_BOOL`-Funktionsblock ist ein spezialisierter und nützlicher Konverter für Anwendungen, in denen kompakte Statusinformationen mit vier diskreten Zuständen in eine einfache binäre Logik integriert werden müssen. Seine klare Definition des Verhaltens für jeden Zustand, insbesondere die Beibehaltung des Ausgangswerts im "Nicht verfügbar"-Fall, macht ihn robust und gut vorhersagbar. Er eignet sich ideal für die Schnittstelle zwischen komplexeren Feldbussystemen und grundlegender binärer Steuerungslogik.

@@ -49,7 +49,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072c](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_072c.md)
+* [Uebung_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Fazit
 Der `F_REAL_TO_UDINT`-Funktionsblock ist ein einfacher, aber essenzieller Baustein für die Typumwandlung in IEC 61499-basierten Steuerungsanwendungen. Seine deterministische und zustandslose Natur macht ihn zuverlässig und leicht integrierbar in verschiedene Anwendungen.

@@ -76,12 +76,12 @@ Der `STRUCT_MUX` ist ein zustandsloser Baustein, der nach einem einfachen Anford
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_051](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_051.md)
-* [Uebung_052](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_052.md)
-* [Uebung_121](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_121.md)
-* [Uebung_126b2_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b2_sub.md)
-* [Uebung_126b_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_126b_sub.md)
-* [Uebung_12x_sub](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_12x_sub.md)
+* [Uebung_051](../../../Uebungen/test_B/Uebungen_doc/Uebung_051.md)
+* [Uebung_052](../../../Uebungen/test_B/Uebungen_doc/Uebung_052.md)
+* [Uebung_121](../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
+* [Uebung_126b2_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
+* [Uebung_126b_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+* [Uebung_12x_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Fazit
 

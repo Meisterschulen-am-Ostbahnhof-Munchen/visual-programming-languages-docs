@@ -61,10 +61,10 @@ Die GreenWhiteBackground-Übung zeigt eine praktische Anwendung zur dynamischen 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010c](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c.md)
-* [Uebung_010c2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c2.md)
-* [Uebung_010c3_sub](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c3_sub.md)
-* [Uebung_010c4_sub](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_010c4_sub.md)
-* [Uebung_039_sub_Outputs](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
-* [Uebung_039a_sub_Outputs](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
+* [Uebung_010c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c.md)
+* [Uebung_010c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
+* [Uebung_010c3_sub](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
+* [Uebung_010c4_sub](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
+* [Uebung_039_sub_Outputs](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+* [Uebung_039a_sub_Outputs](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
 

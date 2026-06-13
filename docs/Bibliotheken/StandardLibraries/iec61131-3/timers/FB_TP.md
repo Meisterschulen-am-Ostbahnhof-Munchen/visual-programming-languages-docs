@@ -66,8 +66,8 @@ Der FB_TP funktioniert als monostabiler Multivibrator (One-Shot). Bei einem posi
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020f2](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020f2.md)
-* [Uebung_020f2_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
+* [Uebung_020f2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f2.md)
+* [Uebung_020f2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
 
 ## Fazit
 Der FB_TP ist ein essentieller Baustein für zeitgesteuerte Anwendungen in der Automatisierungstechnik. Seine einfache Handhabung und zuverlässige Funktionsweise machen ihn ideal für Anwendungen, bei denen präzise Zeitimpulse benötigt werden. Die klare Trennung von Startimpuls und Impulsdauer ermöglicht flexible Steuerungskonzepte.

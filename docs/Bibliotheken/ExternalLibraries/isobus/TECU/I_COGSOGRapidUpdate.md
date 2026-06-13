@@ -66,7 +66,7 @@ Der Baustein agiert als passiver Empfänger für das NMEA 2000 PGN 129026. Nach 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
+* [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Fazit
 Der `I_COGSOGRapidUpdate`-Funktionsblock ist eine essentielle Komponente für jedes ISOBUS- oder NMEA 2000-basierte System, das auf präzise und schnell aktualisierte Kurs- und Geschwindigkeitsinformationen über Grund angewiesen ist. Durch seine standardkonforme Implementierung gewährleistet er zuverlässigen Datenaustausch und eine einfache Integration in übergeordnete Steuerungs- und Anzeigesysteme.

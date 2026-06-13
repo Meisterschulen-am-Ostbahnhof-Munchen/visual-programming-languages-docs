@@ -48,7 +48,7 @@ Angenommen, mehrere Funktionsbausteine in einer Ressource haben einen unverbunde
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_176](../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_176.md)
+* [Uebung_176](../../../Uebungen/test_B/Uebungen_doc/Uebung_176.md)
 
 ## Fazit
 Der `E_TRIG`-Baustein ist ein Werkzeug für fortgeschrittene Anwendungsfälle und für Entwickler, die tiefere Kenntnisse der 4diac-Ausführungsumgebung haben. Er bietet eine leistungsstarke Methode, um die normale, grafisch definierte Ereignisfluss-Logik zu umgehen und direkt mit der Laufzeitumgebung zu interagieren. Er sollte mit Bedacht eingesetzt werden, da seine Wirkung nicht unmittelbar aus dem grafischen Netzwerk ersichtlich ist.

@@ -57,7 +57,7 @@ Im Vergleich zu einfachen booleschen Ausgabeblöcken bietet Aux_QX erweiterte Se
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003c_sub](../../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003c_sub.md)
+* [Uebung_003c_sub](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003c_sub.md)
 
 ## Fazit
 Der Aux_QX Funktionsblock stellt eine robuste und standardisierte Lösung für die Ansteuerung von booleschen Auxiliary-Ausgängen dar. Durch sein vollständiges Service-Interface und die flexible Konfigurierbarkeit eignet er sich besonders für den Einsatz in professionellen Automatisierungsumgebungen mit ISOBUS-Kompatibilität.

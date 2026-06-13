@@ -66,8 +66,8 @@ Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Funk_IXA:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003b2_sub_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
-* [Uebung_003b3_sub_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
+* [Uebung_003b2_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
+* [Uebung_003b3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
 
 ## Fazit
 Der Funk_IXA-Funktionsblock stellt eine robuste und flexible Lösung für die Verarbeitung digitaler Eingangssignale dar. Durch seine Composite-Struktur und die Verwendung standardisierter Schnittstellen eignet er sich besonders für komplexe Automatisierungsanwendungen, die zuverlässige Datenerfassung und Statusüberwachung erfordern.

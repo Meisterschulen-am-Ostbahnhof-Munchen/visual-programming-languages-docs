@@ -54,7 +54,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt bei jed
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_060.md)
+* [Uebung_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 Der `SPLIT_DWORD_INTO_QUARTERS`-Funktionsblock ist ein spezialisiertes Werkzeug für die Aufteilung eines 32-Bit-Wortes in 16 einzelne 4-Bit-Blöcke. Durch seine einfache und effiziente Implementierung eignet er sich ideal für Anwendungen, bei denen eine detaillierte Analyse oder Verarbeitung von DWORD-Daten erforderlich ist.

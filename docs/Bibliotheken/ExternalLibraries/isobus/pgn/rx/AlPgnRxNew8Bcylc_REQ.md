@@ -79,7 +79,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_133](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_133.md)
+* [Uebung_133](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_133.md)
 
 ## Fazit
 Der `AlPgnRxNew8Bcylc_REQ` ist ein essentieller Baustein für die Implementierung von ISOBUS-konformen Empfangsfunktionalitäten in 4diac. Er abstrahiert die Komplexität der CAN-Kommunikation und bietet eine saubere, ereignisgesteuerte Schnittstelle zur zuverlässigen, zyklischen Datenerfassung mit integrierter Fehler- und Timeout-Erkennung. Seine Verwendung erhöht die Wiederverwendbarkeit und Robustheit von Steuerungsapplikationen in der Landtechnik.

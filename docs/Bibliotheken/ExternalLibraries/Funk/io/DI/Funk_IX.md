@@ -70,7 +70,7 @@ Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet Funk_IX erweiterte
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003b2_sub](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_003b2_sub.md)
+* [Uebung_003b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b2_sub.md)
 
 ## Fazit
 Der Funk_IX Function Block stellt eine leistungsfähige und flexible Lösung für die Integration digitaler Eingänge in 4diac-basierte Automatisierungssysteme dar. Seine Service-orientierte Architektur mit Initialisierungs-, Abfrage- und Benachrichtigungsfunktionen macht ihn besonders geeignet für anspruchsvolle industrielle Anwendungen.

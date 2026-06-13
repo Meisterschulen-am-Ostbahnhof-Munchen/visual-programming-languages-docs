@@ -74,7 +74,7 @@ Im Gegensatz zu generischen CAN-Empfangsblöcken ist `AlPgnRxNew8Bcylc` speziell
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_131](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_131.md)
+* [Uebung_131](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_131.md)
 
 ## Fazit
 Der `AlPgnRxNew8Bcylc` ist ein essentieller Baustein für robuste ISOBUS-Anwendungen, die zyklische Daten von anderen Netzwerkteilnehmern empfangen müssen. Durch seine integrierten Funktionen zur Kanalverwaltung, Zeitüberwachung und Fehlererkennung vereinfacht er die Entwicklung zuverlässiger Kommunikationsschnittstellen erheblich und entlastet den Applikationsentwickler von niedriglegigen Protokolldetails.

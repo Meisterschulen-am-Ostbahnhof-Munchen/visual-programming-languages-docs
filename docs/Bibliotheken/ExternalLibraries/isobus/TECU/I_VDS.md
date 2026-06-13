@@ -85,8 +85,8 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_073](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_073.md)
-* [Uebung_079](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_079.md)
+* [Uebung_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
+* [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Fazit
 

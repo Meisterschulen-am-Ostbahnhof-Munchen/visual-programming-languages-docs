@@ -62,9 +62,9 @@ Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_128](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128.md)
-* [Uebung_128b](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128b.md)
-* [Uebung_134](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_134.md)
+* [Uebung_128](../../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)
+* [Uebung_128b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)
+* [Uebung_134](../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
 
 ## Fazit
 Der `NetEv2NetEv`-Funktionsblock ist ein spezialisiertes, schlankes Werkzeug für ISOBUS-Anwendungen. Er erfüllt eine klare und notwendige Nischenaufgabe: das Überschreiben des Quell-Handles in Netzwerkereignis-Datensätzen. Seine einfache, zustandslose Implementierung macht ihn robust und vorhersehbar. Für Entwickler, die mit ISOBUS PGNs und Netzwerkereignissen arbeiten, stellt er ein nützliches Hilfselement dar, um Datenflüsse korrekt zu kennzeichnen und anzupassen.

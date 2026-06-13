@@ -67,7 +67,7 @@ Im Vergleich zu ereignisbasierten Timern wie [AX_TOF](../../events/unidirectiona
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020e2_AX](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
+* [Uebung_020e2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
 
 ## Fazit
 AX_FB_TOF ist der ideale Baustein für alle Anwendungen, die eine präzise Ausschaltverzögerung mit Statusrückmeldung über die abgelaufene Zeit erfordern.

@@ -62,8 +62,8 @@ Der Block besitzt keinen internen Zustand im Sinne eines Speichers. Er verhält 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_055](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_055.md)
-* [Uebung_056](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_056.md)
+* [Uebung_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
+* [Uebung_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 ## Fazit
 Der `BOOL_TO_QUARTER`-Funktionsblock ist ein spezialisierter, aber nützlicher Konverter für Steueranwendungen. Er bietet eine saubere Schnittstelle mit Ereignissteuerung, verwendet zentral verwaltete Konstanten für eine einheitliche Semantik und ist durch das Quarter-Byte-Konzept potentiell erweiterbar. Seine Stärke liegt in der Verbindung von einfacher binärer Logik mit gerätespezifischen Steuerprotokollen.

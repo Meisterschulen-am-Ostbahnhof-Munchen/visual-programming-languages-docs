@@ -100,8 +100,8 @@ stateDiagram-v2
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020i](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_020i.md)
-* [Uebung_020i_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_020i_AX.md)
+* [Uebung_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)
+* [Uebung_020i_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Fazit
 

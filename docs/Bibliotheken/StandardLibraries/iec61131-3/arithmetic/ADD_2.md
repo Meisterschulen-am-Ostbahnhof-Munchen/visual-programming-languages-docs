@@ -84,10 +84,10 @@ Der **ADD_2** ist ein generischer Funktionsbaustein zur Addition zweier Werte, e
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_000](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_000.md)
-* [Uebung_000_AX](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/Uebung_000_AX.md)
-* [Uebung_110](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_110.md)
-* [Uebung_111](../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_111.md)
+* [Uebung_000](../../../../Uebungen/test_B/Uebungen_doc/Uebung_000.md)
+* [Uebung_000_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_000_AX.md)
+* [Uebung_110](../../../../Uebungen/test_B/Uebungen_doc/Uebung_110.md)
+* [Uebung_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
 
 ## Fazit
 

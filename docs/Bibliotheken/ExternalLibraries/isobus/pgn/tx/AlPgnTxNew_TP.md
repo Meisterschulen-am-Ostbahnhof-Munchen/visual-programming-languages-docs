@@ -80,7 +80,7 @@ Der Baustein besitzt intern implizite Zustände, die durch die Verfügbarkeit ei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_128b](../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_128b.md)
+* [Uebung_128b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)
 
 ## Fazit
 Der **AlPgnTxNew_TP** ist ein spezialisierter und robuster Funktionsbaustein für das Senden von Nachrichten in ISOBUS-Netzwerken. Durch die Trennung von Konfiguration (`install`) und Übertragung (`REQ`) sowie die Nutzung von Referenz-Datenpuffern (`InOut`) eignet er sich hervorragend für ressourceneffiziente Steuerungsanwendungen, die eine präzise Kontrolle über PGN-Parameter erfordern.

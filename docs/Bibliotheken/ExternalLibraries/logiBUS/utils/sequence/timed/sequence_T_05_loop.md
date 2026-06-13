@@ -73,8 +73,8 @@ Im Gegensatz zu einem einfachen TON-Timer (Verzögerungseinschaltverzögerung) r
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_035a2](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a2.md)
-* [Uebung_035a3](../../../../../../training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen_doc/Uebung_035a3.md)
+* [Uebung_035a2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
+* [Uebung_035a3](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
 
 ## Fazit
 Der `sequence_T_05_loop` ist ein spezialisierter, robuster und einfach zu konfigurierender Sequenzer für zyklische, zeitgesteuerte Abläufe mit fünf Schritten. Seine klare Struktur, die Nutzung standardisierter Adapter und die umfassende Bestätigung aller Zustandswechsel machen ihn zu einer zuverlässigen Komponente für zeitkritische Automatisierungsaufgaben. Die Schleifenfunktion und der zentrale Reset sind für Dauerbetriebsanwendungen besonders geeignet.

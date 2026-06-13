@@ -19,7 +19,7 @@ Dieses umfassende Lehrbuch widmet sich der IEC 61499 Norm und ihrer Anwendung in
 * [Vorschau auf Yumpu](https://www.yumpu.com/de/document/view/51443348/books-preview-dr-valeriy-vyatkin)
 * [FB61499 Projektseite](https://www.fb61499.com/IEC61499German.html)
 * [Musterseiten Preview (PDF)](https://www.fb61499.com/previews/Buch%20IEC61499%20Deutsche%20Ausgabe%20Preview.pdf)
-* [Direkt bestellen](www.isa.org/IEC61499German)
+* [Direkt bestellen](https://www.isa.org/IEC61499German)
 
 ---
 

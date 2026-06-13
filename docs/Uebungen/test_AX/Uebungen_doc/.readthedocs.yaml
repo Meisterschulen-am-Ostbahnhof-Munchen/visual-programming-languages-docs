@@ -16,7 +16,7 @@ build:
     - libffi-dev
 
 mkdocs:
-  configuration: docs/training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen_doc/mkdocs.yml
+  configuration: docs/Uebungen/test_AX/Uebungen_doc/mkdocs.yml
 
 python:
    install:

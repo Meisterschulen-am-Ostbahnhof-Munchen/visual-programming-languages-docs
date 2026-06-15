@@ -43,8 +43,9 @@ jobs:
 
       - name: Convert combined Markdown to Typst
         run: |
-          pandoc docs/combined.md -o docs/book.typ --from gfm+header_attributes --to typst
+          pandoc docs/combined.md -o docs/book.typ --from commonmark_x --to typst
           (echo '#let horizontalrule = line(length: 100%, stroke: 0.5pt + luma(150))'; echo '#let blockquote = quote.with(block: true)') | cat - docs/book.typ > temp && mv temp docs/book.typ
+
 
 
 

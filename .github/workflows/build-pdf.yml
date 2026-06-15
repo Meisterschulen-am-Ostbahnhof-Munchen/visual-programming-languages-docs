@@ -44,30 +44,24 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r docs/requirements.txt
+          if [ -f docs/requirements.txt ]; then
+            pip install -r docs/requirements.txt
+          elif [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
 
-      - name: Merge Markdown files
+      - name: "Compile PDF (Visuelle Programmiersprachen: Low-Code (4) - de)"
         run: |
-          python merge_docs.py
-
-      - name: Convert combined Markdown to Typst
-        run: |
+          python merge_docs.py mkdocs.yml
           pandoc docs/combined.md -o docs/book.typ --from commonmark_x --to typst
           (echo '#let horizontalrule = line(length: 100%, stroke: 0.5pt + luma(150))'; echo '#let blockquote = quote.with(block: true)') | cat - docs/book.typ > temp && mv temp docs/book.typ
-
-
-
-
-
-      - name: Compile PDF with Typst
-        run: |
-          mkdir -p site/pdf
-          typst compile docs/main.typ site/pdf/Low-Code-Referenz.pdf
+          mkdir -p site/de/pdf
+          typst compile docs/main.typ site/de/pdf/document.pdf
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/pdf
+          path: site
 
       - name: Deploy to GitHub Pages
         id: deployment

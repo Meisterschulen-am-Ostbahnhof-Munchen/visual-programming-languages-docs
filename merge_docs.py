@@ -2,6 +2,8 @@ import os
 import re
 import sys
 import yaml
+import hashlib
+import urllib.request
 from unittest.mock import MagicMock
 
 # Mock weasyprint before importing mkdocs to avoid GObject/GTK loading errors on Windows and CI
@@ -30,7 +32,44 @@ def build_path_to_id_map(pages):
         path_to_id[src.replace('\\', '/')] = clean_id(src)
     return path_to_id
 
-def rewrite_content(content, file_src_path, path_to_id):
+def download_remote_image(url, docs_dir):
+    # Create downloaded directory under docs/img/downloaded
+    downloaded_dir = os.path.join(docs_dir, 'img', 'downloaded')
+    os.makedirs(downloaded_dir, exist_ok=True)
+    
+    # Generate unique local filename based on URL hash
+    url_hash = hashlib.md5(url.encode('utf-8')).hexdigest()
+    
+    # Extract extension or fallback
+    clean_url = url.split('?')[0]
+    ext = os.path.splitext(clean_url)[1].lower()
+    if not ext or len(ext) > 5:
+        ext = '.png'
+        
+    local_name = f"{url_hash}{ext}"
+    local_path = os.path.join(downloaded_dir, local_name)
+    
+    # Path relative to docs/ folder so markdown/typst can find it
+    rel_path = f"img/downloaded/{local_name}"
+    
+    if not os.path.exists(local_path):
+        print(f"Downloading remote image: {url} -> {rel_path}")
+        try:
+            req = urllib.request.Request(
+                url, 
+                headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+            )
+            with urllib.request.urlopen(req, timeout=15) as response:
+                with open(local_path, 'wb') as out_file:
+                    out_file.write(response.read())
+        except Exception as e:
+            print(f"Error downloading {url}: {e}")
+            # If download fails, return the original URL so it's not silently swallowed
+            return url
+            
+    return rel_path
+
+def rewrite_content(content, file_src_path, path_to_id, docs_dir):
     # file_src_path is e.g. "4diac/Installation-4diac.md"
     file_dir = os.path.dirname(file_src_path).replace('\\', '/')
     
@@ -51,7 +90,20 @@ def rewrite_content(content, file_src_path, path_to_id):
             # Local anchor link in same file
             return f"{prefix}{text}](#{anchor.lower()})"
             
-        if url_path.startswith(('http://', 'https://', 'mailto:', 'ftp:', 'www.', '/')):
+        # Check for remote URL
+        is_remote = url_path.startswith(('http://', 'https://'))
+        
+        if is_remote:
+            if prefix == '![':
+                # It is an image! Download it.
+                local_rel_path = download_remote_image(url_path, docs_dir)
+                anchor_str = f"#{anchor}" if anchor else ""
+                return f"{prefix}{text}]({local_rel_path}{anchor_str})"
+            else:
+                # It is a normal link, keep it remote
+                return match.group(0)
+                
+        if url_path.startswith(('mailto:', 'ftp:', 'www.', '/')):
             return match.group(0)
             
         # Target path relative to docs/
@@ -81,10 +133,13 @@ def rewrite_content(content, file_src_path, path_to_id):
             return match.group(0)
         url_part = src_match.group(1).strip()
         
-        if url_part.startswith(('http://', 'https://', 'mailto:', 'ftp:', 'www.', '/')):
+        if url_part.startswith(('http://', 'https://')):
+            # Download remote image
+            target_src = download_remote_image(url_part, docs_dir)
+        elif url_part.startswith(('mailto:', 'ftp:', 'www.', '/')):
             return match.group(0)
-            
-        target_src = os.path.normpath(os.path.join(file_dir, url_part)).replace('\\', '/')
+        else:
+            target_src = os.path.normpath(os.path.join(file_dir, url_part)).replace('\\', '/')
         
         # Check if there is a width attribute
         width_match = re.search(r'width=["\']([^"\']+)["\']', attrs)
@@ -205,7 +260,7 @@ def process_nav(items, path_to_id, docs_dir, output_file, depth=0):
                 continue
                 
             # Rewrite paths and links
-            content = rewrite_content(content, src_path, path_to_id)
+            content = rewrite_content(content, src_path, path_to_id, docs_dir)
             
             # Shift headings and attach page ID
             content = shift_headings(content, shift, page_id)

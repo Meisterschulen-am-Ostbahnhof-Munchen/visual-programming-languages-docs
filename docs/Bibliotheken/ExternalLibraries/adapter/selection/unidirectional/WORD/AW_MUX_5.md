@@ -3,7 +3,6 @@
 
 ![AW_MUX_5](./AW_MUX_5.svg)
 
-![FB-Symbol]() *(Bild nicht verfügbar)*
 
 * * * * * * * * * *
 ## Einleitung

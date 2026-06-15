@@ -86,6 +86,14 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
         else:
             url_path, anchor = url_part, ''
             
+        if not url_path and not anchor:
+            # Empty image reference or link!
+            # If it's an image, replace it with empty string to avoid rendering in Typst
+            if prefix == '![':
+                return ""
+            else:
+                return f"[{text}]"
+                
         if not url_path and anchor:
             # Local anchor link in same file
             return f"{prefix}{text}](#{anchor.lower()})"
@@ -123,16 +131,19 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
         anchor_str = f"#{anchor}" if anchor else ""
         return f"{prefix}{text}]({target_src}{anchor_str})"
         
-    content = re.sub(r'(!?\[)([^\]]*)\]\(([^\)]+)\)', replace_url, content)
+    content = re.sub(r'(!?\[)([^\]]*)\]\(([^\)]*)\)', replace_url, content) # Note: changed ([^\)]+) to ([^\)]*) to allow empty parentheses ()
     
     # 2. HTML image sources <img src="path" ...> to Markdown image syntax
     def replace_html_img(match):
         attrs = match.group(0)
-        src_match = re.search(r'src=["\']([^"\']+)["\']', attrs)
+        src_match = re.search(r'src=["\']([^"\']*)["\']', attrs)
         if not src_match:
             return match.group(0)
         url_part = src_match.group(1).strip()
         
+        if not url_part:
+            return ""
+            
         if url_part.startswith(('http://', 'https://')):
             # Download remote image
             target_src = download_remote_image(url_part, docs_dir)

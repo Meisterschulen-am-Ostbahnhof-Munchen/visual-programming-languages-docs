@@ -22,21 +22,33 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install system dependencies for WeasyPrint
+      - name: Install Pandoc
         run: |
           sudo apt-get update
-          sudo apt-get install -y libpango1.0-dev libpangoft2-1.0-0 libjpeg-dev libopenjp2-7-dev libffi-dev
+          sudo apt-get install -y pandoc
+
+      - name: Set up Typst
+        uses: typst-community/setup-typst@v5
+        with:
+          typst-version: latest
 
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r docs/requirements.txt
 
-      - name: Build MkDocs and generate PDF
-        env:
-          BUILD_PDF: "1"
+      - name: Merge Markdown files
         run: |
-          python -m mkdocs build
+          python merge_docs.py
+
+      - name: Convert combined Markdown to Typst
+        run: |
+          pandoc docs/combined.md -o docs/book.typ --from gfm --to typst
+
+      - name: Compile PDF with Typst
+        run: |
+          mkdir -p site/pdf
+          typst compile docs/main.typ site/pdf/Low-Code-Referenz.pdf
 
       - name: Deploy PDF to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

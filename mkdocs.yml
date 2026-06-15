@@ -23,14 +23,7 @@ theme:
   - search.highlight
 plugins:
 - search
-- to-pdf:
-    author: Franz Höpfinger
-    copyright: 2022-2025, Meisterschulen am Ostbahnhof - München
-    cover: true
-    toc_title: Inhaltsverzeichnis
-    toc_level: 3
-    enabled_if_env: BUILD_PDF
-    output_path: 'pdf/Low-Code-Referenz.pdf'
+
 markdown_extensions:
 - attr_list
 - md_in_html

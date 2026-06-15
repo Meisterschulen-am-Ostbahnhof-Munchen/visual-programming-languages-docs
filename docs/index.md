@@ -27,7 +27,7 @@ Diese Dokumentation ist Teil der Wissensdatenbank der Meisterschulen am Ostbahnh
 **Nützliche Links:**
 * [🏠 Hauptmenü](https://www.ms-muc-docs.de/)
 * [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/)
-* [📄 PDF-Handbuch herunterladen](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/de/pdf/document.pdf)
+* [📄 PDF-Handbuch herunterladen](pdf/document.pdf)
 
 ---
 

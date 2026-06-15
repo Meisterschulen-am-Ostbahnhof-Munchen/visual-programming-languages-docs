@@ -10,6 +10,11 @@ from unittest.mock import MagicMock
 sys.modules['weasyprint'] = MagicMock()
 
 import mkdocs.config
+import mkdocs.config.config_options
+# No-op validation to allow docs_dir: . and site_dir inside docs_dir during merge
+mkdocs.config.config_options.DocsDir.post_validation = lambda self, config, key_name: None
+mkdocs.config.config_options.SiteDir.post_validation = lambda self, config, key_name: None
+
 from mkdocs.structure.files import get_files
 from mkdocs.structure.nav import get_navigation
 
@@ -40,34 +45,53 @@ def download_remote_image(url, docs_dir):
     # Generate unique local filename based on URL hash
     url_hash = hashlib.md5(url.encode('utf-8')).hexdigest()
     
-    # Extract extension or fallback
-    clean_url = url.split('?')[0]
-    ext = os.path.splitext(clean_url)[1].lower()
-    if not ext or len(ext) > 5:
-        ext = '.png'
-        
-    local_name = f"{url_hash}{ext}"
-    local_path = os.path.join(downloaded_dir, local_name)
+    content_type_map = {
+        'image/jpeg': '.jpg',
+        'image/jpg': '.jpg',
+        'image/png': '.png',
+        'image/gif': '.gif',
+        'image/svg+xml': '.svg',
+        'image/webp': '.webp',
+        'image/bmp': '.bmp',
+    }
     
-    # Path relative to docs/ folder so markdown/typst can find it
-    rel_path = f"img/downloaded/{local_name}"
-    
-    if not os.path.exists(local_path):
-        print(f"Downloading remote image: {url} -> {rel_path}")
-        try:
-            req = urllib.request.Request(
-                url, 
-                headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
-            )
-            with urllib.request.urlopen(req, timeout=15) as response:
-                with open(local_path, 'wb') as out_file:
-                    out_file.write(response.read())
-        except Exception as e:
-            print(f"Error downloading {url}: {e}")
-            # If download fails, return the original URL so it's not silently swallowed
-            return url
+    # Check if a file with this hash and any known extension already exists
+    for ext in ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.bmp']:
+        local_path = os.path.join(downloaded_dir, f"{url_hash}{ext}")
+        if os.path.exists(local_path):
+            return f"img/downloaded/{url_hash}{ext}"
             
-    return rel_path
+    try:
+        req = urllib.request.Request(
+            url, 
+            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+        )
+        print(f"Downloading remote image: {url}")
+        with urllib.request.urlopen(req, timeout=15) as response:
+            content_type = response.info().get_content_type()
+            ext = None
+            if content_type:
+                ext = content_type_map.get(content_type.lower())
+                
+            if not ext:
+                clean_url = url.split('?')[0]
+                url_ext = os.path.splitext(clean_url)[1].lower()
+                if url_ext and len(url_ext) <= 5:
+                    ext = url_ext
+                else:
+                    ext = '.png'
+                    
+            local_name = f"{url_hash}{ext}"
+            local_path = os.path.join(downloaded_dir, local_name)
+            
+            with open(local_path, 'wb') as out_file:
+                out_file.write(response.read())
+                
+            return f"img/downloaded/{local_name}"
+    except Exception as e:
+        print(f"Error downloading {url}: {e}")
+        return url
+
 
 def rewrite_content(content, file_src_path, path_to_id, docs_dir):
     # file_src_path is e.g. "4diac/Installation-4diac.md"

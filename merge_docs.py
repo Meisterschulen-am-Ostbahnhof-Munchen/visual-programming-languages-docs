@@ -86,6 +86,14 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
         else:
             url_path, anchor = url_part, ''
             
+        # Safeguard: demote image prefix if target does not look like an image
+        if prefix == '![':
+            is_remote = url_path.startswith(('http://', 'https://'))
+            if not is_remote:
+                image_extensions = ('.png', '.jpg', '.jpeg', '.gif', '.svg', '.bmp', '.webp', '.pdf')
+                if not url_path.lower().endswith(image_extensions):
+                    prefix = '['
+
         if not url_path and not anchor:
             # Empty image reference or link!
             # If it's an image, replace it with empty string to avoid rendering in Typst
@@ -109,10 +117,10 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
                 return f"{prefix}{text}]({local_rel_path}{anchor_str})"
             else:
                 # It is a normal link, keep it remote
-                return match.group(0)
+                return f"{prefix}{text}]({url_part})"
                 
         if url_path.startswith(('mailto:', 'ftp:', 'www.', '/')):
-            return match.group(0)
+            return f"{prefix}{text}]({url_part})"
             
         # Target path relative to docs/
         target_src = os.path.normpath(os.path.join(file_dir, url_path)).replace('\\', '/')
@@ -156,10 +164,13 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
         width_match = re.search(r'width=["\']([^"\']+)["\']', attrs)
         width_attr = ""
         if width_match:
-            width_val = width_match.group(1)
-            # if it's just a number, append px or %
+            width_val = width_match.group(1).strip()
+            # if it's just a number, append pt
             if width_val.isdigit():
-                width_attr = f"{{width={width_val}px}}"
+                width_attr = f"{{width={width_val}pt}}"
+            elif width_val.endswith('px'):
+                val_num = width_val[:-2].strip()
+                width_attr = f"{{width={val_num}pt}}"
             else:
                 width_attr = f"{{width={width_val}}}"
                 

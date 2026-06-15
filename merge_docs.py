@@ -113,10 +113,8 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
     
     # Rewrite images and links
     # 1. Markdown syntax: ![alt](path) or [text](path)
-    def replace_url(match):
-        prefix = match.group(1) # "![" or "["
-        text = match.group(2)
-        url_part = match.group(3).strip()
+    def rewrite_single_link(prefix, text, url_part):
+        url_part = url_part.strip()
         
         # Split anchor
         if '#' in url_part:
@@ -188,8 +186,35 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
         if ' ' in dest and not (dest.startswith('<') and dest.endswith('>')):
             dest = f"<{dest}>"
         return f"{prefix}{text}]({dest})"
-        
-    content = re.sub(r'(!?\[)([^]]*)\]\(([^)]*)\)', replace_url, content) # Note: changed ([^)]+) to ([^)]*) to allow empty parentheses ()
+
+    def replace_any_link(match):
+        # If the first alternative matched, it's a nested link
+        if match.group(1) is not None:
+            inner_img_markdown = match.group(1)
+            outer_url = match.group(2)
+            
+            # Rewrite the inner image
+            inner_match = re.match(r'(!\[)([^]]*)\]\(([^)]*)\)', inner_img_markdown)
+            if inner_match:
+                rewritten_inner = rewrite_single_link(inner_match.group(1), inner_match.group(2), inner_match.group(3))
+            else:
+                rewritten_inner = inner_img_markdown
+                
+            # Rewrite the outer link url
+            rewritten_outer_md = rewrite_single_link('[', 'dummy', outer_url)
+            outer_url_match = re.match(r'\[dummy\]\(([^)]*)\)', rewritten_outer_md)
+            rewritten_outer_url = outer_url_match.group(1) if outer_url_match else outer_url
+            
+            return f"[{rewritten_inner}]({rewritten_outer_url})"
+        else:
+            # Otherwise, it's a simple link or image
+            prefix = match.group(3)
+            text = match.group(4)
+            url_part = match.group(5)
+            return rewrite_single_link(prefix, text, url_part)
+            
+    pattern = r'(?:\[(!\[[^]]*\]\([^)]*\))\]\(([^)]*)\))|(?:(!?\[)([^]]*)\]\(([^)]*)\))'
+    content = re.sub(pattern, replace_any_link, content)
     
     # 2. HTML image sources <img src="path" ...> to Markdown image syntax
     def replace_html_img(match):

@@ -37,14 +37,30 @@ def build_path_to_id_map(pages):
         path_to_id[src.replace('\\', '/')] = clean_id(src)
     return path_to_id
 
+def _detect_image_ext(data):
+    """Detect image format from magic bytes, returns extension like '.png'."""
+    if data[:8] == b'\x89PNG\r\n\x1a\n':
+        return '.png'
+    if data[:2] == b'\xff\xd8':
+        return '.jpg'
+    if data[:6] in (b'GIF87a', b'GIF89a'):
+        return '.gif'
+    if data[:4] == b'RIFF' and data[8:12] == b'WEBP':
+        return '.webp'
+    if data[:2] == b'BM':
+        return '.bmp'
+    if b'<svg' in data[:200] or b'<?xml' in data[:200]:
+        return '.svg'
+    return None
+
 def download_remote_image(url, docs_dir):
     # Create downloaded directory under docs/img/downloaded
     downloaded_dir = os.path.join(docs_dir, 'img', 'downloaded')
     os.makedirs(downloaded_dir, exist_ok=True)
-    
+
     # Generate unique local filename based on URL hash
     url_hash = hashlib.md5(url.encode('utf-8')).hexdigest()
-    
+
     content_type_map = {
         'image/jpeg': '.jpg',
         'image/jpg': '.jpg',
@@ -54,25 +70,26 @@ def download_remote_image(url, docs_dir):
         'image/webp': '.webp',
         'image/bmp': '.bmp',
     }
-    
+
     # Check if a file with this hash and any known extension already exists
     for ext in ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.bmp']:
         local_path = os.path.join(downloaded_dir, f"{url_hash}{ext}")
         if os.path.exists(local_path):
             return f"img/downloaded/{url_hash}{ext}"
-            
+
     try:
         req = urllib.request.Request(
-            url, 
+            url,
             headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
         )
         print(f"Downloading remote image: {url}")
         with urllib.request.urlopen(req, timeout=15) as response:
             content_type = response.info().get_content_type()
+            data = response.read()
             ext = None
             if content_type:
                 ext = content_type_map.get(content_type.lower())
-                
+
             if not ext:
                 clean_url = url.split('?')[0]
                 url_ext = os.path.splitext(clean_url)[1].lower()
@@ -80,13 +97,18 @@ def download_remote_image(url, docs_dir):
                     ext = url_ext
                 else:
                     ext = '.png'
-                    
+
+            # Override extension if magic bytes reveal a different actual format
+            actual_ext = _detect_image_ext(data)
+            if actual_ext and actual_ext != ext:
+                ext = actual_ext
+
             local_name = f"{url_hash}{ext}"
             local_path = os.path.join(downloaded_dir, local_name)
-            
+
             with open(local_path, 'wb') as out_file:
-                out_file.write(response.read())
-                
+                out_file.write(data)
+
             return f"img/downloaded/{local_name}"
     except Exception as e:
         print(f"Error downloading {url}: {e}")

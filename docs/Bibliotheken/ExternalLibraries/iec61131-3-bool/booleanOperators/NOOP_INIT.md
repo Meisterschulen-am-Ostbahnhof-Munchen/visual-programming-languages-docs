@@ -9,23 +9,27 @@ Der Funktionsblock **NOOP_INIT** (No Operation with INIT) dient als einfacher Du
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | INIT | EInit | Initialisierungsanforderung |
 | REQ  | Event | Normale Ausführungsanforderung (verbunden mit IN) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | INITO | EInit | Initialisierungsbestätigung |
 | CNF   | Event | Ausführungsbestätigung (verbunden mit OUT) |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | IN   | BOOL | Eingangssignal |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | OUT  | BOOL | Ausgangssignal (entspricht IN nach einem Durchlauf) |

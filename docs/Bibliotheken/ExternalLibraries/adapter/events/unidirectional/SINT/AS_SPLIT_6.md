@@ -21,6 +21,7 @@ Der Funktionsbaustein **AS_SPLIT_6** dient der Aufteilung eines einzelnen eingeh
 – Keine –
 
 ### **Adapter**
+
 | Richtung | Name | Typ |
 |----------|------|-----|
 | SOCKET   | IN   | unidirectional::AS (generisch) |

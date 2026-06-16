@@ -21,6 +21,7 @@ Der Funktionsblock **AB_TO_AQ** dient der Konvertierung eines unidirektionalen A
 - **OUT.D1** (über Adapter OUT): Datenausgang des Quarter-Byte-Adapters (1 Quarter Byte).
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | **IN**  | Socket   | `adapter::types::unidirectional::AB` | BYTE-Eingangsadapter (8 Bit) |

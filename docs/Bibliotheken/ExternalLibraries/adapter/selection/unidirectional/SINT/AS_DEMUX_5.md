@@ -9,16 +9,19 @@ Der Funktionsblock **AS_DEMUX_5** ist ein generischer Demultiplexer für das uni
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar               |
 |------|-------|-------------------------|
 | REQ  | Event | Set Index K             |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Kommentar                       |
 |------|-------|---------------------------------|
 | CNF  | Event | Confirmation of Set Index K     |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Kommentar |
 |------|------|-----------|
 | K    | UINT | Index     |
@@ -28,11 +31,13 @@ Der FB besitzt keine direkten Datenausgänge. Die Ausgaben erfolgen über die Ad
 
 ### **Adapter**
 **Socket (Eingang)**
+
 | Name | Typ                                      | Kommentar                    |
 |------|------------------------------------------|------------------------------|
 | IN   | `adapter::types::unidirectional::AS`     | Input Value to demultiplex   |
 
 **Plugs (Ausgänge)**
+
 | Name | Typ                                      | Kommentar |
 |------|------------------------------------------|-----------|
 | OUT1 | `adapter::types::unidirectional::AS`     |           |

@@ -9,16 +9,19 @@ Der Funktionsblock **SET_INT** dient dazu, einen Wert vom Datentyp `INT` aus ein
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Beschreibung | Mit Daten |
 |----------|----------|---------------|-----------|
 | `REQ`    | Event    | Normaler Ausführungsanforderung. Löst das Übernehmen des Wertes von `IN` nach `OUT` aus. | `IN`, `OUT` |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Beschreibung | Mit Daten |
 |----------|----------|---------------|-----------|
 | `CNF`    | Event    | Ausführungsbestätigung. Wird gesendet, nachdem der Wert erfolgreich in `OUT` geschrieben wurde. | `OUT` |
 
 ### **Daten-Eingänge**
+
 | Variable | Datentyp | Beschreibung | Initialwert |
 |----------|----------|---------------|-------------|
 | `IN`     | INT      | Der Wert, der in die InOut-Variable kopiert werden soll. | 0 |
@@ -30,6 +33,7 @@ Der FB besitzt keinen reinen Datenausgang. Die Ausgabe erfolgt über die InOut-V
 Keine.
 
 ### **InOut-Variable**
+
 | Variable | Datentyp | Beschreibung | Initialwert |
 |----------|----------|---------------|-------------|
 | `OUT`    | INT      | Zielvariable, in die der Wert von `IN` geschrieben wird. Diese Variable ist als InOut deklariert, d. h. sie wird von außerhalb des Bausteins referenziert und kann direkt manipuliert werden. | 0 |

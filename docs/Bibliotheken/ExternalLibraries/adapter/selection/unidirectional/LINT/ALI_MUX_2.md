@@ -10,16 +10,19 @@ Der Funktionsblock **ALI_MUX_2** ist ein generischer Multiplexer für zwei ALI�
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `REQ`    | Setzt den Index `K` und löst die Multiplexerlogik aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `CNF`    | Bestätigung, dass der Multiplexer den ausgewählten Wert über `OUT` bereitstellt. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Kommentar |
 |----------|-------|-----------|
 | `K`      | UINT  | Index für die Wahl des Eingangs (0 → `IN1`, 1 → `IN2`). |
@@ -28,6 +31,7 @@ Der Funktionsblock **ALI_MUX_2** ist ein generischer Multiplexer für zwei ALI�
 Keine eigenständigen Datenausgänge; die Ausgabe erfolgt über den Adapter `OUT`.
 
 ### **Adapter**
+
 | Richtung | Name | Typ                                               | Kommentar                                    |
 |----------|------|---------------------------------------------------|----------------------------------------------|
 | Plug     | `OUT`| `adapter::types::unidirectional::ALI`             | Ausgangssignal (entspricht dem gewählten Eingang) |

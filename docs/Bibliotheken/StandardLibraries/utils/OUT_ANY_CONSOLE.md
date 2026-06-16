@@ -21,6 +21,7 @@ Der Baustein unterstützt die Ausgabe beliebiger Datentypen für Entwicklungs- u
 - `CNF`: Bestätigung der Ausgabeoperation
 
 ### **Daten-Eingänge**
+
 | Parameter | Typ | Beschreibung |
 |-----------|-----|--------------|
 | `QI` | BOOL | Aktiviert die Ausgabe bei TRUE |
@@ -28,6 +29,7 @@ Der Baustein unterstützt die Ausgabe beliebiger Datentypen für Entwicklungs- u
 | `IN` | ANY | Beliebiger auszugebender Wert |
 
 ### **Daten-Ausgänge**
+
 | Parameter | Typ | Beschreibung |
 |-----------|-----|--------------|
 | `QO` | BOOL | Bestätigt erfolgreiche Ausgabe |

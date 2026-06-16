@@ -9,16 +9,19 @@ Der Funktionsblock **AS_D_FF_TMIN** realisiert ein datenverriegelndes D‑Flipfl
 
 ## Schnittstellenstruktur
 ### **Ereignis‑Eingänge**
+
 | Ereignis | Typ   | Kommentar                                 |
 |----------|-------|-------------------------------------------|
 | INIT     | EInit | Initialisierungsanforderung (liest `Tmin`) |
 
 ### **Ereignis‑Ausgänge**
+
 | Ereignis | Typ   | Kommentar                           |
 |----------|-------|-------------------------------------|
 | INITO    | EInit | Bestätigung der Initialisierung     |
 
 ### **Daten‑Eingänge**
+
 | Name | Typ  | Kommentar                                                     |
 |------|------|---------------------------------------------------------------|
 | Tmin | TIME | Minimale Zeit zwischen zwei aufeinanderfolgenden CLK‑Ereignissen |
@@ -27,6 +30,7 @@ Der Funktionsblock **AS_D_FF_TMIN** realisiert ein datenverriegelndes D‑Flipfl
 Der Block besitzt keine expliziten Datenausgänge; die Ausgabe erfolgt ausschließlich über den Adapter **Q**.
 
 ### **Adapter**
+
 | Richtung | Adapter | Typ                                                | Kommentar               |
 |----------|---------|-----------------------------------------------------|-------------------------|
 | Socket   | I       | adapter::types::unidirectional::AS                 | Eingangsdaten (D1) und Takt (E1) |
@@ -60,6 +64,7 @@ Der Block besitzt keine expliziten Zustandsmaschinen im Sinne eines Statecharts.
 - **Ratenbegrenzung für Kommunikationsschnittstellen**: Nur alle `Tmin` Sekunden wird ein neuer Wert akzeptiert (z. B. bei Bus‑Zugriffen).
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein         | Zeitfilterung                     | Zusätzliche Merkmale                      |
 |------------------|-----------------------------------|-------------------------------------------|
 | AS_D_FF          | Nein (sofortige Übernahme)        | Einfaches D‑Flipflop ohne Zeitbeschränkung |

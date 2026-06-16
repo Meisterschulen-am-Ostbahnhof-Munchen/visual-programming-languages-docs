@@ -9,16 +9,19 @@ Der Funktionsblock **AB_MUX_4** ist ein generischer Multiplexer für vier Adapte
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ | Event | Setzt den Index K und löst die Multiplexer-Aktion aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF | Event | Bestätigung, dass der Index K übernommen und die Auswahl aktualisiert wurde. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K | UINT | Index (0 … 3) zur Auswahl des aktiven Eingangs. |
@@ -27,6 +30,7 @@ Der Funktionsblock **AB_MUX_4** ist ein generischer Multiplexer für vier Adapte
 Keine eigenen Daten-Ausgänge. Die Ausgabe erfolgt über den Adapter-Ausgang `OUT`.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Kommentar |
 |-----|------|----------|-----------|
 | adapter::types::unidirectional::AB | OUT | Plug | Ausgang, der den ausgewählten Eingang widerspiegelt. |

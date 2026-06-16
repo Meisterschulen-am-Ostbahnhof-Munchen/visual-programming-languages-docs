@@ -9,21 +9,25 @@ Der Funktionsblock **GET_WSTRING** dient dem Auslesen einer WSTRING-Variablen ü
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | REQ      | Event    | Normale Ausführungsanforderung – löst das Lesen der InOut-Variablen aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | CNF      | Event    | Bestätigung der Ausführung – wird nach dem erfolgreichen Kopiervorgang gesendet. |
 
 ### **Daten-Eingänge**
+
 | Variable | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | IN       | WSTRING  | InOut-Quellvariable, deren Wert ausgelesen wird. (Die Variable wird nicht verändert.) |
 
 ### **Daten-Ausgänge**
+
 | Variable | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | OUT      | WSTRING  | Gepufferter Ausgabewert – enthält den zum Zeitpunkt des REQ-Ereignisses gelesenen Inhalt von IN. |
@@ -57,6 +61,7 @@ Der FB besitzt nur einen aktiven Zustand:
 - **Realisierung eines "Get"-Funktionsblocks** in einer InOut-basierten Architektur, wie sie häufig in der **EC‑61499**‑Vernetzung verwendet wird.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Datentyp | Besonderheit |
 |----------|----------|--------------|
 | GET_STRING | STRING | Analoger FB für ASCII-Zeichenketten (nicht Unicode). |

@@ -11,26 +11,31 @@ Der Funktionsblock **ADI_TO_AX** ist ein Composite-Baustein, der eine einfache S
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Beschreibung |
 |---|---|
 | *(keine expliziten Ereignis-Eingänge)* | Der FB nutzt ausschließlich die über den ADI_IN-Adapter angebundenen Ereignisse. Tatsächlich wird das Ereignis `E1` des ADI_IN-Adapters intern auf den Funktionsbaustein `F_NE` weitergeleitet. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Beschreibung |
 |---|---|
 | *(keine expliziten Ereignis-Ausgänge)* | Der Ausgang erfolgt über den AX_OUT-Adapter; das Ereignis `E1` des AX_OUT-Adapters wird nach erfolgreicher Verarbeitung des `F_NE`-Aufrufs gesendet. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |---|---|---|
 | *(über ADI_IN-Adapter)* | `DINT` | Der über den Adapter-Socket angebundene DINT-Wert (z. B. Messwert oder Statuscode) wird als Eingang `D1` des ADI_IN-Adapters empfangen. |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |---|---|---|
 | *(über AX_OUT-Adapter)* | `BOOL` | Der Ausgangswert wird als `D1` des AX_OUT-Adapters bereitgestellt. TRUE, wenn der empfangene DINT-Wert ungleich 0 ist; sonst FALSE. |
 
 ### **Adapter**
+
 | Adapter | Name | Richtung | Typ | Beschreibung |
 |---|---|---|---|---|
 | Socket | ADI_IN | Eingang | `adapter::types::unidirectional::ADI` | Nimmt einen DINT-Wert (mit zugehörigem Ereignis) entgegen. |

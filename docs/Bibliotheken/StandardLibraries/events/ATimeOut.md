@@ -46,6 +46,7 @@ Der Adapter unterstützt zwei grundlegende Abläufe:
 - **Prozessüberwachung**: Sicherstellen, dass ein mechanischer Vorgang innerhalb der erwarteten Zeit abgeschlossen wird.
 
 ## ⚖️ Vergleich mit ARTimeOut
+
 | Feature        | ATimeOut (dieser) | ARTimeOut |
 |----------------|-------------------|-----------|
 | Typ            | Adapter           | Adapter   |

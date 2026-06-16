@@ -10,12 +10,14 @@ Der Funktionsblock **DataPanel_MI_ID_ENC** ist ein Eingangs-Service-Interface-Fu
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung | Mitgeführte Daten |
 |----------|--------------|-------------------|
 | INIT | Service-Initialisierung | QI, PARAMS, u8SAMember, Input, ImpulseDelta, TimeDelta |
 | REQ | Service-Anforderung | QI |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung | Mitgeführte Daten |
 |----------|--------------|-------------------|
 | INITO | Bestätigung der Initialisierung | QO, STATUS |
@@ -23,6 +25,7 @@ Der Funktionsblock **DataPanel_MI_ID_ENC** ist ein Eingangs-Service-Interface-Fu
 | IND | Asynchrone Anzeige eines Ereignisses (Impuls- oder Zeitüberschreitung) | QO, STATUS, IN |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Initialwert | Beschreibung |
 |------|-----|-------------|--------------|
 | QI | BOOL | – | Ereignis-Eingangsqualifizierer |
@@ -33,6 +36,7 @@ Der Funktionsblock **DataPanel_MI_ID_ENC** ist ein Eingangs-Service-Interface-Fu
 | TimeDelta | DWORD | – | Zeit in Millisekunden, nach der ein IND ausgelöst wird |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | QO | BOOL | Ereignis-Ausgangsqualifizierer |
@@ -60,6 +64,7 @@ Der Ausgang `IN` enthält zu jedem Ereignis (CNF und IND) den aktuellen 32-Bit-Z
 - **Knotenadressierung**: Über `u8SAMember` (Wertebereich 224–239) wird der physikalische Knoten im Bus-System ausgewählt. Der Initialwert `MI::MI_00` verweist auf eine Konstante des Moduls `MI`.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung |
 |---------|--------------|
 | IDLE | Warten auf INIT oder REQ |

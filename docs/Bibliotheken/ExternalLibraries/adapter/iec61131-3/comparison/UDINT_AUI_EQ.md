@@ -12,6 +12,7 @@ Der Funktionsbaustein **UDINT_AUI_EQ** dient dem Vergleich zweier Werte auf Glei
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Mit Variablen | Kommentar |
 |------|-----|---------------|-----------|
 | REQ  | Event | IN1 | Dient als Auslöser für den Vergleich. Der Wert von IN1 wird bei einem Ereignis am REQ-Eingang verarbeitet. |
@@ -20,6 +21,7 @@ Der Funktionsbaustein **UDINT_AUI_EQ** dient dem Vergleich zweier Werte auf Glei
 Keine direkten Ereignis-Ausgänge vorhanden. Das Ergebnis wird über den Adapter-Ausgang (OUT) signalisiert.
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | IN1  | ANY_ELEMENTARY | Erster zu vergleichender Wert. Der Datentyp kann jeder elementare Typ (z. B. BOOL, INT, REAL, UDINT) sein. |
@@ -28,6 +30,7 @@ Keine direkten Ereignis-Ausgänge vorhanden. Das Ergebnis wird über den Adapter
 Keine direkten Daten-Ausgänge. Das Vergleichsergebnis wird über den Adapter-Ausgang (OUT) bereitgestellt.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | IN2  | adapter::types::unidirectional::AUI | Socket (Eingang) | Zweiter zu vergleichender Wert; wird über den Adapter als Ereignis und Datenwert bereitgestellt. |

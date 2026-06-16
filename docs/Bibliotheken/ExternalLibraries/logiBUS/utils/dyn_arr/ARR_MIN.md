@@ -11,21 +11,25 @@ Der Funktionsblock **ARR_MIN** ermittelt das Minimum aller Elemente eines eindim
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Mit Daten |
 |---------|-----------|
 | `REQ`   | `A`       |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Mit Daten |
 |---------|-----------|
 | `CNF`   | `A` (und leerer Datenausgang) |
 
 ### **Daten-Eingänge**
+
 | Name | Typ            | Kommentar |
 |------|----------------|-----------|
 | `A`  | `ARRAY[*] OF INT` | Eingabearray (Ein-/Ausgang) |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ  | Kommentar |
 |------|------|-----------|
 | (unbenannt) | `INT` | Minimalwert des Arrays |

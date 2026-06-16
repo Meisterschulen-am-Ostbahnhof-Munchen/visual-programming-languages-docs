@@ -23,6 +23,7 @@ Da es sich um einen Composite FB handelt, werden alle E/A-Signale über die beid
 - Keine eigenständigen Daten-Ausgänge.
 
 ### **Adapter**
+
 | Bezeichnung | Typ | Richtung | Beschreibung |
 |-------------|-----|----------|--------------|
 | **AUS_IN** | `adapter::types::unidirectional::AUS` | Socket (Eingang) | Empfängt den USINT-Wert sowie das zugehörige Ereignis. Der Adapter stellt intern einen Ereignis-Eingang `E1` und einen Daten-Eingang `D1` (USINT) bereit. |

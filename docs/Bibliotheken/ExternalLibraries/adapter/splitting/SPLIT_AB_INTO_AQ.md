@@ -10,6 +10,7 @@ Der Funktionsblock `SPLIT_AB_INTO_AQ` dient dazu, ein über einen `AB`‑Adapter
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name    | Beschreibung |
 |---------|--------------|
 | `IN.E1` | Ereignis am Socket löst die Zerlegung und Ausgabe der Quartette aus. |
@@ -18,6 +19,7 @@ Der Funktionsblock `SPLIT_AB_INTO_AQ` dient dazu, ein über einen `AB`‑Adapter
 Keine direkten Ereignisausgänge; die Ausgabe erfolgt über die Ereignisse der angeschlossenen Adapter (`QUARTER_BYTE_xx.E1`).
 
 ### **Daten-Eingänge**
+
 | Name    | Beschreibung |
 |---------|--------------|
 | `IN.D1` | Das eingehende Datenbyte (Typ: BYTE), das in vier Quartette aufgeteilt wird. |
@@ -26,6 +28,7 @@ Keine direkten Ereignisausgänge; die Ausgabe erfolgt über die Ereignisse der a
 Keine direkten Datenausgänge; die Quartette werden über die Daten‑Schnittstellen der Ausgangs‑Adapter (`QUARTER_BYTE_xx.D1`) bereitgestellt.
 
 ### **Adapter**
+
 | Name               | Typ | Richtung | Beschreibung |
 |--------------------|-----|----------|--------------|
 | `IN`               | `adapter::types::unidirectional::AB` | Socket (Eingang) | Empfängt das zu zerlegende Byte inkl. Ereignis. |

@@ -9,6 +9,7 @@ Der Funktionsblock **AX_SR_SYM_INIT** realisiert ein ereignisgesteuertes, bistab
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INIT     | EInit | Initialisierungsanforderung; mit `QI` und `Q_INIT` verknüpft |
@@ -16,22 +17,26 @@ Der Funktionsblock **AX_SR_SYM_INIT** realisiert ein ereignisgesteuertes, bistab
 | R        | Event | Setzt den Ausgang `Q` zurück |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INITO    | EInit | Initialisierungsbestätigung; mit `QO` verknüpft |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | QI       | BOOL | Eingangsqualifier – steuert, ob Aktionen ausgeführt werden |
 | Q_INIT   | BOOL | Gewünschter Wert des Ausgangs `Q` nach einer Initialisierung |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | QO       | BOOL | Ausgangsqualifier – spiegelt den Wert von `QI` zum Zeitpunkt des auslösenden Ereignisses |
 
 ### **Adapter**
+
 | Adapter | Typ | Beschreibung |
 |---------|-----|--------------|
 | Q       | adapter::types::unidirectional::AX | Wert des Flipflops – wird über die Schnittstelle gesetzt/ zurückgesetzt |

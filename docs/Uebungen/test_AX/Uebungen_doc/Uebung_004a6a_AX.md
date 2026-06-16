@@ -81,6 +81,7 @@ Die SubApp verwendet folgende (Sub-)Bausteine:
    - Bei jedem erfolgreichen Rendezvous schaltet die Ausgabe also um (Toggle-Funktion).
 
 **Zusammenfassende Verbindungstabelle:**  
+
 | Quelle | Ziel |
 |--------|------|
 | `DigitalInput_CLK_I1.IND` | `RT_E_REND.EI1` |

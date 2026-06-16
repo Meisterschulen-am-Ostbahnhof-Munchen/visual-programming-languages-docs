@@ -12,6 +12,7 @@ Der Funktionsbaustein **AX_RF_TRIG** dient der Erkennung von steigenden und fall
 Der Baustein besitzt keine direkten Ereignis-Eingänge. Die Auslösung der Flankenerkennung erfolgt ereignisgetrieben über den angeschlossenen Adapter (siehe Adapter).
 
 ### **Ereignis-Ausgänge**
+
 | Name | Kommentar |
 |------|-----------|
 | ER   | Bestätigung, dass eine steigende Flanke (0→1) erkannt wurde. |
@@ -24,6 +25,7 @@ Keine direkten Dateneingänge. Der zu überwachende boolesche Wert wird über de
 Keine Datenausgänge.
 
 ### **Adapter**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | QI   | adapter::types::unidirectional::AX | Empfängt den booleschen Wert, dessen Flanken überwacht werden sollen. Der Adapter stellt sowohl ein Ereignis (E1) als auch den Datenwert (D1) bereit. |

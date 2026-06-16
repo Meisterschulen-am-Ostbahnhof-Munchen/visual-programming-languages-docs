@@ -21,6 +21,7 @@ Keine separaten Daten-Eingänge vorhanden. Die Daten werden über den Socket‑A
 Keine separaten Daten-Ausgänge vorhanden. Die konvertierten Daten werden über den Plug‑Adapter `ADI_OUT` ausgegeben.
 
 ### **Adapter**
+
 | Name | Richtung | Typ | Beschreibung |
 |------|----------|-----|--------------|
 | `AUS_IN` | Socket (Eingang) | `adapter::types::unidirectional::AUS` | Unidirektionaler Adapter‑Eingang, der einen `USINT`‑Wert (und ein zugehöriges Ereignis) bereitstellt. |

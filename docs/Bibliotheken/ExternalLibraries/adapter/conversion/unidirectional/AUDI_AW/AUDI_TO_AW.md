@@ -11,26 +11,31 @@ Der Baustein kapselt die Konvertierungslogik und wird typischerweise in Automati
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | (über AUDI_IN.E1) | EVENT | Ereignis, das die Konvertierung anstößt (bereitgestellt durch den angeschlossenen AUDI-Adapter) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | (über AW_OUT.E1) | EVENT | Ausgangsereignis nach erfolgreicher Konvertierung (bereitgestellt durch den AW-Adapter) |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | (über AUDI_IN.D1) | UDINT | 32-Bit unsigned Integer, der konvertiert werden soll (bereitgestellt durch den AUDI-Adapter) |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | (über AW_OUT.D1) | WORD | 16-Bit unsigned Integer (Ergebnis der Konvertierung, bereitgestellt durch den AW-Adapter) |
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | AUDI_IN | adaper::types::unidirectional::AUDI | Socket (Eingang) | Empfängt das UDINT-Signal und das zugehörige Ereignis |

@@ -9,6 +9,7 @@ Der Funktionsblock `AX_T_FF_SR_SYM_STORE` realisiert ein ereignisgesteuertes, bi
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar                                   |
 |------|-------|---------------------------------------------|
 | S    | Event | Setzt den Ausgang `Q` auf TRUE              |
@@ -25,6 +26,7 @@ Keine direkten Daten-Eingänge. Initialwert und Zustand werden über Adapter ein
 Keine direkten Daten-Ausgänge. Der aktuelle Zustand wird über die Adapter verfügbar gemacht.
 
 ### **Adapter**
+
 | Name    | Typ                              | Kommentar                                   |
 |---------|----------------------------------|---------------------------------------------|
 | Q       | adapter::types::unidirectional::AX | Liefert den aktuellen Zustand des Flipflops (einadriger boolescher Wert) |
@@ -60,6 +62,7 @@ Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-F
   Diese funktionale Reduktion vereinfacht die Schnittstelle und vermeidet Verwechslungen mit den Adaptern.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung                             | Ausgabe bei Ereignis                          |
 |---------|------------------------------------------|-----------------------------------------------|
 | START   | Initialer Wartezustand                   | Wartet auf Initialisierungsereignis über Q_INIT.EI1 |

@@ -11,16 +11,19 @@ Der Funktionsblock **ADI_D_FF_TMIN** realisiert ein Daten-Latch (D‑Flip‑Flop
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | INIT | EInit | Init‑Anforderung; Übergibt den Parameter Tmin |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | INITO | EInit | Init‑Bestätigung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | Tmin | TIME | Mindestzeit zwischen zwei Ereignissen am Eingang I.E1 |
@@ -29,6 +32,7 @@ Der Funktionsblock **ADI_D_FF_TMIN** realisiert ein Daten-Latch (D‑Flip‑Flop
 Keine direkten Datenausgänge – der gelatchte Wert wird über den Adapter‑Ausgang Q bereitgestellt.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Socket (Eingang) | I | adapter::types::unidirectional::ADI | Wert und Ereignis zum Latchen |

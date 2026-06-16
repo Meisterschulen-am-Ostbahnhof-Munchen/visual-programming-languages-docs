@@ -10,16 +10,19 @@ Der Funktionsbaustein **AIS_MUX_4** ist ein generischer AIS-Multiplexer mit vier
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar                     |
 |------|-------|-------------------------------|
 | REQ  | Event | Setzt den Index `K` und aktiviert die Auswahl |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Kommentar                                           |
 |------|-------|-----------------------------------------------------|
 | CNF  | Event | Bestätigung der Index-Auswahl (nach erfolgter Umschaltung) |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Kommentar                    |
 |------|------|------------------------------|
 | K    | UINT | Index (0 = IN1, 1 = IN2, …) |
@@ -28,6 +31,7 @@ Der Funktionsbaustein **AIS_MUX_4** ist ein generischer AIS-Multiplexer mit vier
 _Keine. Die Ausgabedaten werden über den Adapter–Plug `OUT` bereitgestellt._
 
 ### **Adapter**
+
 | Name    | Verwendung | Typ                                 | Kommentar                                                   |
 |---------|------------|--------------------------------------|-------------------------------------------------------------|
 | IN1     | Socket     | adapter::types::unidirectional::AIS | Erster AIS-Eingang (für K = 0)                              |

@@ -11,18 +11,21 @@ Der Funktionsblock `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` dient zur Aufbereitu
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ   | Beschreibung                                           |
 |----------|-------|--------------------------------------------------------|
 | `INIT`   | EInit | Initialisierungsanforderung (Parameterübernahme)       |
 | `REQ`    | Event | Normale Ausführungsanforderung (Verarbeitung von `IN`) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ   | Beschreibung                               |
 |----------|-------|--------------------------------------------|
 | `INITO`  | EInit | Bestätigung der Initialisierung            |
 | `CNF`    | Event | Bestätigung der Ausführung (nach `REQ`)    |
 
 ### **Daten-Eingänge**
+
 | Variable    | Typ    | Initialwert                | Beschreibung                                           |
 |-------------|--------|----------------------------|--------------------------------------------------------|
 | `IN`        | UINT   | `WORD_TO_UINT(NOT_AVAILABLE_WM)` | Rohwert vom Feldbus                                    |
@@ -31,6 +34,7 @@ Der Funktionsblock `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` dient zur Aufbereitu
 | `OFFSET`    | DINT   | `0`                        | Offset, der nach der Skalierung addiert wird (in REAL) |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ    | Initialwert | Beschreibung                                      |
 |----------|--------|-------------|---------------------------------------------------|
 | `OUT`    | REAL   | `0.0`       | Skalierter Ausgabewert                            |
@@ -79,6 +83,7 @@ Der FB ist als SimpleFB implementiert; es gibt keine weiteren Zustände wie IDLE
 - **Nachverarbeitung von Logging‑Daten**: Rohdaten aus einem Feldbus‑Logger werden mit den ursprünglichen Skalierungen wieder in die physikalischen Größen zurückgerechnet.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaft | Unterschied |
 |----------|-------------|-------------|
 | `SCALE` (z. B. nach IEC 61131) | Linearer Faktor und Offset auf den gesamten Wert | Keine Aufteilung in Bytes, keine Gültigkeitsprüfung |

@@ -35,6 +35,7 @@ Der Block initialisiert den openPOWERLINK Stack auf dem angegebenen Ethernet-Int
 - Master-Komponente in einem Echtzeit-Ethernet-System.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2011 AIT |

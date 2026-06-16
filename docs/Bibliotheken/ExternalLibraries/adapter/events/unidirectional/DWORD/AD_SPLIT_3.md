@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Typ | Richtung | Bezeichnung | Beschreibung |
 |------|----------|-------------|--------------|
 | Socket (Eingang) | Input | IN | Unidirektionaler Adapter-Eingang, der auf die drei Ausgänge verteilt wird. |

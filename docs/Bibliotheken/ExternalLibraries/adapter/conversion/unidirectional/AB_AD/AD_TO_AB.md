@@ -21,6 +21,7 @@ Der Baustein besitzt keine direkt sichtbaren Daten-Eingänge. Die Bereitstellung
 Der Baustein besitzt keine direkt sichtbaren Daten-Ausgänge. Die Ausgabe des BYTE-Werts erfolgt über den Adapter **AB_OUT**.
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | **AD_IN** | `adapter::types::unidirectional::AD` | Socket (Eingang) | Nimmt ein DWORD (32‑Bit) sowie ein zugehöriges Ereignis (hier `E1`) entgegen. |
@@ -52,6 +53,7 @@ Da es sich um einen reinen Composite‑Baustein ohne eigene Zustandsmaschine han
 - **Reduzierung der Datenbreite**: Gezielte Extraktion des niederwertigen Bytes aus einem DWORD für nachfolgende Verarbeitungsschritte.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Konvertierung | Richtung | Adapter-Typ |
 |----------|---------------|----------|-------------|
 | AD_TO_AB | DWORD → BYTE  | unidirektional | AD ↔ AB |

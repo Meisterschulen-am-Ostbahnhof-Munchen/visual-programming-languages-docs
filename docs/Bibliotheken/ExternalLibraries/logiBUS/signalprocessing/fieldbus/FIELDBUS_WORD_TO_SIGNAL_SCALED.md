@@ -9,18 +9,21 @@ Der Funktionsblock **FIELDBUS_WORD_TO_SIGNAL_SCALED** dient dazu, einen digitale
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|-------------|
 | `INIT`   | Initialisierungsanfrage; setzt die Skalierungsfaktoren (`SCALE`, `OFFSET`). |
 | `REQ`    | Normale Verarbeitungsanfrage; wertet den aktuellen Eingang `IN` aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|-------------|
 | `INITO`  | Bestätigung der Initialisierung. |
 | `CNF`    | Bestätigung der Verarbeitung; signalisiert, dass die Ausgänge `OUT` und `VALID` aktualisiert wurden. |
 
 ### **Daten-Eingänge**
+
 | Name    | Datentyp | Vorgabewert     | Beschreibung |
 |---------|----------|-----------------|-------------|
 | `IN`    | WORD     | `NOT_AVAILABLE_WM` | Rohwert vom Feldbus (z. B. 0…65535). Die Konstante `NOT_AVAILABLE_WM` kennzeichnet einen ungültigen Startwert. |
@@ -28,6 +31,7 @@ Der Funktionsblock **FIELDBUS_WORD_TO_SIGNAL_SCALED** dient dazu, einen digitale
 | `OFFSET`| DINT     | `0`             | Ganzzahliger Offset, der nach der Skalierung addiert wird (als REAL konvertiert). |
 
 ### **Daten-Ausgänge**
+
 | Name    | Datentyp | Vorgabewert | Beschreibung |
 |---------|----------|-------------|-------------|
 | `OUT`   | REAL     | `0.0`       | Skalierter Signalwert. Nur gültig, wenn `VALID = TRUE`. |
@@ -63,6 +67,7 @@ Der Vergleichswert `VALID_SIGNAL_W` sowie der Standard‑Eingangswert `NOT_AVAIL
 - **Initialverhalten**: Die Eingänge `IN` haben als Vorgabewert `NOT_AVAILABLE_WM`, sodass der FB nach einem Reset oder bei fehlender Kommunikation sofort „ungültig“ meldet, bis ein gültiger Wert ankommt.
 
 ## Zustandsübersicht
+
 | Zustand | Inhalt | Aktion | Ausgangsereignis |
 |---------|--------|--------|-----------------|
 | `INIT`  | Initialisierung (leerer Algorithmus) | – | `INITO` |
@@ -76,6 +81,7 @@ Der FB kennt keine weiteren Zustände; nach jedem Ereignis kehrt er in den entsp
 - **Diagnose‑ und Sicherheitsfunktionen**: Durch die Gültigkeitsprüfung lassen sich Signalverluste oder Bereichsüberschreitungen einfach erkennen und eine Fehlerreaktion einleiten.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Unterschiede |
 |----------|-------------|
 | **FIELDBUS_WORD_TO_SIGNAL** (ohne Skalierung) | Bildet den Rohwert 1:1 ab, ohne Multiplikation/Addition. |

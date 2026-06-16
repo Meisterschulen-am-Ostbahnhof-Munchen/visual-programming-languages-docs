@@ -27,6 +27,7 @@ Daten werden ausschließlich über den Adapter **AR_OUT** ausgegeben.
 - **AR_OUT.D1** – Datenwert vom Typ **REAL** (Gleitkommazahl).
 
 ### **Adapter**  
+
 | Typ | Name | Richtung | Kommentar |
 |-----|------|----------|-----------|
 | `adapter::types::unidirectional::AS` | **AS_IN** | Socket | Eingangsadapter für SINT‑Daten |

@@ -21,6 +21,7 @@ Keine Daten-Eingänge vorhanden.
 Keine Daten-Ausgänge vorhanden.
 
 ### **Adapter**
+
 | Richtung | Name | Typ              | Beschreibung                                       |
 |----------|------|------------------|----------------------------------------------------|
 | Sockets  | IN   | AUS (unidirectional) | Eingangsadapter, der das zu verteilende Signal empfängt |

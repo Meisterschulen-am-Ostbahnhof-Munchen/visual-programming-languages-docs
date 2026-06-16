@@ -9,16 +9,19 @@ Der Funktionsbaustein `AUDI_DEMUX_2` ist ein generischer 1‑zu‑2‑Demultiple
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung | Mit Daten |
 |----------|--------------|-----------|
 | `REQ`    | Anforderung zum Weiterleiten des aktuellen Eingangswerts gemäß Index `K` | `K` |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF`    | Bestätigung, dass die Weiterleitung abgeschlossen ist |
 
 ### **Daten-Eingänge**
+
 | Name | Typ   | Beschreibung |
 |------|-------|--------------|
 | `K`  | `UINT` | Auswahlindex (0 → OUT1, 1 → OUT2) |
@@ -27,6 +30,7 @@ Der Funktionsbaustein `AUDI_DEMUX_2` ist ein generischer 1‑zu‑2‑Demultiple
 Keine.
 
 ### **Adapter**
+
 | Rolle        | Name   | Typ                      | Richtung   | Beschreibung                     |
 |--------------|--------|--------------------------|------------|----------------------------------|
 | Socket       | `IN`   | `adapter::types::unidirectional::AUDI` | Eingang    | Eingangswert, der demultiplext wird |

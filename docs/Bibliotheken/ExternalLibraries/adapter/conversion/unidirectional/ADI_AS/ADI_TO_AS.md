@@ -21,6 +21,7 @@ Keine separaten Daten‑Eingänge – der Datenwert wird über den **ADI‑IN‑
 Keine separaten Daten‑Ausgänge – der konvertierte Wert wird über den **AS‑OUT‑Adapter** ausgegeben.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Kommentar |
 |---------|----------|-----|-----------|
 | **ADI_IN** | Socket (Eingang) | `adapter::types::unidirectional::ADI` | DINT‑Adapter‑Eingang |

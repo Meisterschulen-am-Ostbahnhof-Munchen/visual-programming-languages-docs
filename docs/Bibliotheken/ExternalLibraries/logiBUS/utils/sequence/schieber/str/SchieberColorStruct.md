@@ -16,6 +16,7 @@ Diese Struktur besitzt keine Ereignis-Eingänge im herkömmlichen Sinne, da es s
 Diese Struktur besitzt keine Ereignis-Ausgänge. Die Mitgliedsvariablen stellen die gespeicherten Daten dar.
 
 ### **Daten-Elemente (Struktur-Mitglieder)**
+
 | Name     | Datentyp | Kommentar                          | Initialwert       |
 | :------- | :------- | :--------------------------------- | :---------------- |
 | `Unknown`| `USINT`  | u8Colour for Unknown State         | `COLOR_WHITE`     |

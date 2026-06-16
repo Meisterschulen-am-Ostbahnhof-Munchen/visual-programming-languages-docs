@@ -25,6 +25,7 @@ Der FB besitzt keine direkten Ereignis- oder Datenein-/ausgänge, sondern kommun
 - **AR_OUT.D1** (Daten zum Plug AR_OUT) – der konvertierte REAL-Wert.
 
 ### **Adapter**
+
 | Name   | Richtung | Typ                                              | Beschreibung                  |
 |--------|----------|--------------------------------------------------|-------------------------------|
 | AULI_IN | Socket   | `adapter::types::unidirectional::AULI` (ULINT) | Eingangswert                 |

@@ -9,17 +9,20 @@ Der Funktionsblock **AUI_UDINT_AX_SEL** führt eine binäre Auswahl („binary s
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | `EI0`    | Event    | Setzt den Wert von `IN0` und löst eine Auswahl aus. |
 | `EI1`    | Event    | Setzt den Wert von `IN1` und löst eine Auswahl aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | `CNF`    | Event    | Bestätigung der erfolgreichen Auswahl und Aktualisierung von `OUT`. |
 
 ### **Daten-Eingänge**
+
 | Variable | Datentyp        | Kommentar |
 |----------|-----------------|-----------|
 | `IN0`    | `UINT`          | Auswählbarer Eingangswert (erste Alternative). |
@@ -28,11 +31,13 @@ Der Funktionsblock **AUI_UDINT_AX_SEL** führt eine binäre Auswahl („binary s
 *Hinweis:* `IN1` ist als beliebiger elementarer Datentyp (`ANY_ELEMENTARY`) deklariert. Die tatsächliche Kompatibilität mit dem Ausgangstyp `UINT` hängt vom verwendeten Elementartyp ab (implizite oder explizite Konvertierung ist je nach Zielsystem erforderlich).
 
 ### **Daten-Ausgänge**
+
 | Variable | Datentyp | Kommentar |
 |----------|----------|-----------|
 | `OUT`    | `UINT`   | Der ausgewählte Eingangswert (entweder `IN0` oder `IN1`). |
 
 ### **Adapter**
+
 | Adapter | Typ                                     | Kommentar |
 |---------|-----------------------------------------|-----------|
 | `G`     | `adapter::types::unidirectional::AX`    | Liefert das Auswahlkriterium (z. B. ein Bool‑Signal oder einen numerischen Wert). |

@@ -23,6 +23,7 @@ Der Daten-Ausgang wird über den Plug bereitgestellt:
 * **AL_OUT.D1** (Typ: LWORD) – Der konvertierte Wert (LWORD).
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `AUI` | **AUI_IN** | Eingang (Socket) | Eingangsadapter für den UINT-Wert und das Trigger-Ereignis. |

@@ -23,6 +23,7 @@ Der RT_Bridge_4 Funktionsblock dient als Entkopplungsbrücke für 4 Datenverbind
 - **RD_1** - **RD_4** (ANY): Ausgangsdaten.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2023 Johannes Kepler University Linz |

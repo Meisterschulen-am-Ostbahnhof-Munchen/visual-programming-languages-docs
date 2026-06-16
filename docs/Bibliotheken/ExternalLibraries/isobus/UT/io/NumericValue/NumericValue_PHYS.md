@@ -11,18 +11,21 @@ Der Funktionsblock **NumericValue_PHYS** ist ein Eingangs-Service-Interface-Baus
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Mit Variablen | Kommentar |
 |----------|-----|---------------|-----------|
 | INIT | EInit | QI, PARAMS, stObj | Initialisierung des Bausteins |
 | REQ | Event | QI | Anforderung eines neuen physikalischen Wertes |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Mit Variablen | Kommentar |
 |----------|-----|---------------|-----------|
 | INITO | EInit | QO, STATUS | Bestätigung der Initialisierung |
 | IND | Event | QO, STATUS, rPhys | Ausgabe des berechneten physikalischen Wertes |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ | Kommentar |
 |----------|-----|-----------|
 | QI | BOOL | Eingangsqualifikator (aktiviert die Verarbeitung) |
@@ -30,6 +33,7 @@ Der Funktionsblock **NumericValue_PHYS** ist ein Eingangs-Service-Interface-Baus
 | stObj | logiBUS::utils::conversion::phys::NumericObjectPool_S | Objektpool-Eigenschaften: Objekt-ID (16 Bit), Skalierung, Offset, Dezimalstellen |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ | Kommentar |
 |----------|-----|-----------|
 | QO | BOOL | Ausgangsqualifikator (Status der Verarbeitung) |

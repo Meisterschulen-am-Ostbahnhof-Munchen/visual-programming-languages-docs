@@ -9,16 +9,19 @@ Der Funktionsblock **SET_ANY** dient dazu, einen beliebigen Wert vom Eingang `IN
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | REQ      | Event    | Normaler Ausführungsanforderung – löst die Zuweisung aus. Verbunden mit den Variablen `IN` und `OUT`. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | CNF      | Event    | Bestätigung der erfolgreichen Ausführung. Verbunden mit der Variablen `OUT`. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | IN   | ANY      | Wert, der auf die Zielvariable geschrieben wird. |
@@ -27,6 +30,7 @@ Der Funktionsblock **SET_ANY** dient dazu, einen beliebigen Wert vom Eingang `IN
 > **Hinweis:** `OUT` ist als InOut deklariert. Es fungiert als Daten-Eingang (die ursprüngliche Variable wird gelesen, falls nötig) und als Daten-Ausgang (überschrieben mit dem Wert von `IN`).
 
 ### **Daten-Ausgänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | OUT  | ANY      | **InOut-Parameter** – enthält nach der Ausführung den Wert des Eingangs `IN`. Die Variable kann auch außerhalb des Bausteins verwendet werden. |
@@ -47,6 +51,7 @@ Nach der Zuweisung wird das Ausgangsereignis `CNF` gesendet. Die Ausführung ist
 - **Einfache Zustandsmaschine:** Der FB enthält nur einen Zustand, wodurch er sehr leichtgewichtig und ressourcenschonend ist.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung |
 |---------|--------------|
 | REQ     | Wartet auf ein `REQ`-Ereignis. Bei Eintritt wird der Algorithmus ausgeführt, anschließend wird `CNF` gesendet und der Zustand bleibt aktiv. |
@@ -59,6 +64,7 @@ Es gibt keine weiteren Zustände, keine Verzweigungen oder Zeitüberwachungen.
 - **Punkt-zu-Punkt-Datentransfer:** Wenn ein Wert von einer Quelle auf ein direkt verbundenes Ziel kopiert werden soll, ohne dass eine separate Logik erforderlich ist.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Unterschied |
 |----------|-------------|
 | **SET**  | Ist auf einen spezifischen Datentyp festgelegt (z. B. SET_BOOL, SET_INT). `SET_ANY` ist generisch. |

@@ -21,6 +21,7 @@ Keine Daten-Eingänge vorhanden.
 Keine Daten-Ausgänge vorhanden.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Socket (Eingang) | `IN` | `adapter::types::unidirectional::AULI` | Eingehender AULI‑Adapter, der auf die acht Ausgänge verteilt wird. |

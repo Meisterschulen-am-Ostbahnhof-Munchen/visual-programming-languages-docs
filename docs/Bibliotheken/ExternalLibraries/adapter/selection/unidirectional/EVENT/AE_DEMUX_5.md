@@ -9,16 +9,19 @@ Der Funktionsblock **AE_DEMUX_5** ist ein generischer AE-Demultiplexer, der ein 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **REQ** | Auslöser zum Setzen des Index **K** und Auswahl des Ausgangs. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF** | Bestätigt die erfolgreiche Verarbeitung von **REQ**. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | **K**    | UINT  | Indexwert zur Auswahl des Ausgangs (gültige Werte: 1 … 5). |
@@ -27,6 +30,7 @@ Der Funktionsblock **AE_DEMUX_5** ist ein generischer AE-Demultiplexer, der ein 
 Keine Datenausgänge vorhanden.
 
 ### **Adapter**
+
 | Rolle | Name | Typ                        | Beschreibung |
 |-------|------|----------------------------|--------------|
 | Socket| **IN** | `adapter::types::unidirectional::AE` | Eingangssignal, das demultiplext wird. |

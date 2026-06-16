@@ -21,6 +21,7 @@ Der FB besitzt keine eigenen Daten-Eingänge. Der zu konvertierende `INT`-Wert w
 Der FB besitzt keine eigenen Daten-Ausgänge. Der konvertierte `SINT`-Wert wird über den Adapter-Ausgang `AS_OUT` (Datenpunkt `D1`) ausgegeben.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | `AI_IN` | Eingang (Socket) | `adapter::types::unidirectional::AI` | INT-basierter Adapter-Eingang; liefert das Ereignis `E1` und den Datenwert `D1` (Typ `INT`). |

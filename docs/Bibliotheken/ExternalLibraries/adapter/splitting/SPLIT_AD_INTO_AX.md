@@ -15,6 +15,7 @@ Keine. Die Ereignissteuerung erfolgt indirekt über den Adapter‑Socket.
 Keine. Die Ausgabe erfolgt über die Adapter‑Plugs, deren internes Ereignisverhalten durch die verwendeten Typen (AX) definiert wird.
 
 ### **Daten-Eingänge**
+
 | Bezeichnung | Typ   | Kommentar              |
 |-------------|-------|------------------------|
 | IN          | AD    | DWORD Input (32 Bit)   |
@@ -22,6 +23,7 @@ Keine. Die Ausgabe erfolgt über die Adapter‑Plugs, deren internes Ereignisver
 Die Daten werden über den Adapter‑Socket IN empfangen. Der AD‑Adapter stellt einen DWORD‑Wert sowie ein zugehöriges Ereignis (E1) bereit.
 
 ### **Daten-Ausgänge**
+
 | Bezeichnung | Typ   | Kommentar           |
 |-------------|-------|---------------------|
 | BIT_00      | AX    | Bool Bit 0          |

@@ -9,6 +9,7 @@ Der Funktionsblock **AUDI_UDINT_LT** realisiert einen „Kleiner als“-Vergleic
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Service Request – löst den Vergleich aus |
@@ -17,6 +18,7 @@ Der Funktionsblock **AUDI_UDINT_LT** realisiert einen „Kleiner als“-Vergleic
 Der Baustein besitzt keine direkten Ereignis-Ausgänge. Das Ergebnisereignis wird über den Adapter‑Plug **OUT** (Ereignis **E1**) bereitgestellt.
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | IN2  | UDINT | Input value 2 (zweiter Vergleichswert) |
@@ -25,6 +27,7 @@ Der Baustein besitzt keine direkten Ereignis-Ausgänge. Das Ergebnisereignis wir
 Der Baustein besitzt keine direkten Daten-Ausgänge. Das Vergleichsergebnis wird über den Adapter‑Plug **OUT** (Daten **D1**, Typ BOOL) bereitgestellt.
 
 ### **Adapter**
+
 | Rolle | Name | Typ | Kommentar |
 |-------|------|-----|-----------|
 | Socket | IN1  | adapter::types::unidirectional::AUDI | Input value 1 – liefert Ereignis (E1) und Daten (D1) |

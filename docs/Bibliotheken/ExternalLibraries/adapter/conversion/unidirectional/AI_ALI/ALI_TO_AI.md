@@ -9,26 +9,31 @@ Der Funktionsblock **ALI_TO_AI** ist ein zusammengesetzter Baustein (Composite F
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name     | Datentyp | Beschreibung                                        |
 |----------|----------|-----------------------------------------------------|
 | ALI_IN   | Ereignis | Steuersignal des ALI‑Adapters, löst die Konvertierung aus |
 
 ### **Ereignis-Ausgänge**
+
 | Name     | Datentyp | Beschreibung                                          |
 |----------|----------|-------------------------------------------------------|
 | AI_OUT   | Ereignis | Bestätigungssignal des AI‑Adapters nach erfolgreicher Konvertierung |
 
 ### **Daten-Eingänge**
+
 | Name     | Datentyp | Beschreibung                       |
 |----------|----------|------------------------------------|
 | ALI_IN.D1| LINT     | Der umzuwandelnde LINT‑Wert        |
 
 ### **Daten-Ausgänge**
+
 | Name     | Datentyp | Beschreibung                       |
 |----------|----------|------------------------------------|
 | AI_OUT.D1| INT      | Der konvertierte INT‑Wert          |
 
 ### **Adapter**
+
 | Richtung | Name    | Typ          | Beschreibung                              |
 |----------|---------|--------------|-------------------------------------------|
 | Socket   | ALI_IN  | ALI (unidirectional) | Liefert LINT‑Werte und Steuereignisse   |
@@ -60,6 +65,7 @@ Als zusammengesetzter Baustein ohne eigenes Zustandsdiagramm hat **ALI_TO_AI** k
 - **Bereinigung von Datenpfaden**: Vereinfachung des Signalflusses durch definierte Konvertierung an einer zentralen Stelle.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein        | Funktion                                  | Unterschied                                                      |
 |-----------------|-------------------------------------------|------------------------------------------------------------------|
 | ALI_TO_AI       | LINT → INT über Adapter                   | Speziell für unidirektionale ALI‑/AI‑Schnittstellen              |

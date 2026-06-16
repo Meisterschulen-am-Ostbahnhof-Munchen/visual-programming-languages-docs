@@ -9,6 +9,7 @@ Der Funktionsblock `sequence_E_04_AX_SR` realisiert einen ereignisgesteuerten Se
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `START_S1` | Übergang von START/State_00 nach State_01 |
@@ -21,6 +22,7 @@ Der Funktionsblock `sequence_E_04_AX_SR` realisiert einen ereignisgesteuerten Se
 | `RESET`   | Setzt die Sequenz aus jedem Zustand zurück in den START-Zustand (State_00) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF` | Bestätigung der Ausführung. Mitgeführte Ausgabedaten: `STATE_NR`, `PAUSED` |
@@ -29,12 +31,14 @@ Der Funktionsblock `sequence_E_04_AX_SR` realisiert einen ereignisgesteuerten Se
 Keine externen Dateneingänge.
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | `STATE_NR` | SINT | Aktuelle Zustandsnummer: START = 0, State_01 = 1, …, State_04 = 4 |
 | `PAUSED`   | BOOL | `TRUE`, wenn der Sequenzer pausiert ist (STOP aktiv) |
 
 ### **Adapter**
+
 | Adapter  | Typ                                | Beschreibung |
 |----------|------------------------------------|--------------|
 | `DO_S1`  | `adapter::types::unidirectional::AX` | Ausgang, der in State_01 aktiv ist (D1 = TRUE) |
@@ -64,6 +68,7 @@ Der `RESET`-Befehl bringt den Sequenzer unabhängig vom aktuellen Zustand in ein
 - **Reset-Verhalten**: Der `RESET` schaltet vor dem Rücksprung nach State_00 alle vier Ausgänge aus, wodurch ein definierter Ausgangszustand gewährleistet wird.
 
 ## Zustandsübersicht
+
 | Zustand          | Aktiver Ausgang | `STATE_NR` | `PAUSED` |
 |------------------|-----------------|------------|----------|
 | xSTART           | keiner          | 0          | FALSE    |

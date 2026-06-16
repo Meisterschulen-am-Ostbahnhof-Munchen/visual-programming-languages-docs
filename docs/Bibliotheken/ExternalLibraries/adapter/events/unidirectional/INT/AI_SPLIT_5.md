@@ -21,6 +21,7 @@ Keine direkten Daten-Eingänge vorhanden. Die Signalübertragung erfolgt ausschl
 Keine direkten Daten-Ausgänge vorhanden. Die Signalübertragung erfolgt ausschließlich über die Adapter-Ausgänge.
 
 ### **Adapter**
+
 | Richtung | Name   | Typ                          | Beschreibung                                        |
 |----------|--------|------------------------------|-----------------------------------------------------|
 | Socket   | IN     | `adapter::types::unidirectional::AI` | Empfängt das eingehende analoge Signal.             |

@@ -11,16 +11,19 @@ Der Funktionsblock **AR_DEMUX_3** ist ein generischer Demultiplexer für unidire
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `REQ`    | Startet die Demultiplex-Operation. Der Datenwert `K` wird ausgewertet, um die Verbindung zwischen `IN` und einem der drei Ausgänge herzustellen. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF`    | Bestätigt die erfolgreiche Durchführung der Demultiplex-Aktion nach Verarbeitung von `REQ`. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `K`  | `UINT` | Index (1–3), der festlegt, welcher Ausgang (`OUT1` bis `OUT3`) mit dem Eingangsadapter `IN` verbunden wird. Werte außerhalb des gültigen Bereichs führen zu keiner Verbindung. |
@@ -29,6 +32,7 @@ Der Funktionsblock **AR_DEMUX_3** ist ein generischer Demultiplexer für unidire
 Keine.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|------|----------|--------------|
 | `IN` | `adapter::types::unidirectional::AR` | Socket | Eingangsadapter, der die zu verteilenden Daten bereitstellt. |

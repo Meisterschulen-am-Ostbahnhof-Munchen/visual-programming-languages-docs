@@ -10,21 +10,25 @@ Der Funktionsblock **IA_Lighting** dient als ISOBUS-Adapter für Beleuchtungsdat
 * * * * * * * * * *
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|-----------------------------|
 | INIT | EInit | Initialisierung des Bausteins. Wird mit `QI` ausgelöst. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|-----------------------------|
 | INITO | EInit | Bestätigung der erfolgreichen Initialisierung. Wird zusammen mit `QO` und `STATUS` ausgegeben. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|-----------------------------|
 | QI | BOOL | Qualifizierer für die Initialisierung (Freigabe). |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|-----------------------------|
 | QO | BOOL | Ausgangsqualifizierer – zeigt an, ob der Baustein betriebsbereit ist. |

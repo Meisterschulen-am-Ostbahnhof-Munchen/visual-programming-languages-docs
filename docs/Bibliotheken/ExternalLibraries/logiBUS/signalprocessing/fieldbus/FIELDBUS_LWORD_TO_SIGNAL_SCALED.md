@@ -9,18 +9,21 @@ Der Funktionsblock **FIELDBUS_LWORD_TO_SIGNAL_SCALED** dient der Umwandlung eine
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung | Mitgeführte Daten |
 |----------|-----|--------------|-------------------|
 | INIT | EInit | Initialisierungsanforderung: Skalierungsfaktor (SCALE) und Offset (OFFSET) setzen | SCALE, OFFSET |
 | REQ | Event | Normale Ausführungsanforderung: Verarbeitung des Eingangssignals (IN) | IN |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung | Mitgeführte Daten |
 |----------|-----|--------------|-------------------|
 | INITO | EInit | Bestätigung der Initialisierung | – |
 | CNF | Event | Bestätigung der Ausführung | OUT, VALID |
 
 ### **Daten-Eingänge**
+
 | Name     | Typ    | Initialwert           | Beschreibung                                  |
 |----------|--------|-----------------------|-----------------------------------------------|
 | IN       | LWORD  | NOT_AVAILABLE_LWM     | Feldbus-Rohsignal (LWORD)                     |
@@ -28,6 +31,7 @@ Der Funktionsblock **FIELDBUS_LWORD_TO_SIGNAL_SCALED** dient der Umwandlung eine
 | OFFSET   | DINT   | DINT#0                | Offset, der nach der Skalierung addiert wird |
 
 ### **Daten-Ausgänge**
+
 | Name   | Typ   | Initialwert | Beschreibung                                                  |
 |--------|-------|-------------|---------------------------------------------------------------|
 | OUT    | LREAL | LREAL#0.0   | Skalierter Ausgangswert (LREAL)                               |
@@ -63,6 +67,7 @@ Die Skalierung erfolgt also linear: `OUT = IN_als_LREAL * SCALE + OFFSET`. Der S
 - **Ereignissteuerung**: Der Baustein hat eine einfache Zustandsmaschine mit zwei Zuständen und erfordert eine explizite Initialisierung vor der ersten Verarbeitung.
 
 ## Zustandsübersicht
+
 | Zustand | Ausgelöst durch | Ausgabealgorithmus | Ereignisausgang | Beschreibung |
 |---------|----------------|--------------------|-----------------|--------------|
 | INIT    | Ereignis INIT  | INIT               | INITO           | Initialisierung: Skalierungsparameter übernehmen |

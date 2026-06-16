@@ -11,28 +11,33 @@ Der Funktionsblock **UDINT_AUDI_AX_SEL** realisiert eine binäre Auswahl zwische
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis     | Kommentar                 | Mit Daten          |
 |------------- |---------------------------|--------------------|
 | `EI0`        | Set IN0                   | `IN0`              |
 | `EI1`        | Set IN1                   | `IN1`              |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis     | Kommentar                                 |
 |------------- |-------------------------------------------|
 | `CNF`        | Bestätigung der angeforderten Operation   |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ              | Kommentar                     |
 |----------|------------------|-------------------------------|
 | `IN0`    | `ANY_ELEMENTARY` | Erster auswählbarer Eingang   |
 | `IN1`    | `UDINT`          | Zweiter auswählbarer Eingang  |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ     | Kommentar                 |
 |----------|---------|---------------------------|
 | `OUT`    | `UDINT` | Ausgewählter Eingangswert |
 
 ### **Adapter**
+
 | Adapter | Typ                                      | Kommentar          |
 |---------|------------------------------------------|--------------------|
 | `G`     | `adapter::types::unidirectional::AX`     | Selektionssteuerung |
@@ -68,6 +73,7 @@ Die interne Logik ist rein kombinatorisch nach dem Trigger durch das Adapter-Ere
 - Flexibles Routing von Signalen in einer Automatisierungsanwendung mit minimaler Konfiguration.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein            | Eigenschaft                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
 | `UDINT_AUDI_AX_SEL` | Binäre Auswahl, externes Selektionssignal über Adapter, zwei Eingänge + Konvertierung von ANY_ELEMENTARY zu UDINT. |

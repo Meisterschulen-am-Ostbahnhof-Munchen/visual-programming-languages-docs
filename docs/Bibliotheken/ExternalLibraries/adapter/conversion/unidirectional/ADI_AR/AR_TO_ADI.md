@@ -25,6 +25,7 @@ Die Schnittstelle des Bausteins besteht ausschließlich aus Adaptern, die sowohl
 - **ADI_OUT.D1** (Datentyp DINT) – Der konvertierte Ganzzahlwert.
 
 ### **Adapter**
+
 | Adapter | Name | Richtung | Beschreibung |
 |---------|------|----------|--------------|
 | AR  | AR_IN | Socket (Eingang)  | Unidirektionaler REAL‑Adapter, der das Eingangssignal bereitstellt. |

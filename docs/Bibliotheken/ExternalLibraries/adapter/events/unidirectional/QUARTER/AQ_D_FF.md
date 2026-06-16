@@ -21,6 +21,7 @@ Keine direkten Daten-Eingänge vorhanden. Der zu latchende Datenwert wird über 
 Keine direkten Daten-Ausgänge vorhanden. Der gelatchte Datenwert wird über den Adapter `Q` ausgegeben.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | `I`     | Socket (Eingang) | `adapter::types::unidirectional::AQ` | Liefert den zu latchenden Datenwert sowie das auslösende Ereignis. |
@@ -55,6 +56,7 @@ Der `AQ_D_FF` besitzt keinen expliziten Zustandsautomaten. Sein Verhalten lässt
 - **Ereignisgesteuerte Datenweitergabe**: Der Baustein kann als einfacher „Data-Holder“ in einem Adapter-basierten Kommunikationspfad verwendet werden, um Daten nur bei bestimmten Ereignissen weiterzuleiten.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaften |
 |----------|---------------|
 | `E_D_FF` (direkte IOs) | Gleiche Latch-Funktionalität, aber mit separaten Ereignis- und Dateneingängen/-ausgängen. Keine Adapter. |

@@ -30,6 +30,7 @@ Es existieren keine separaten DataOutputs. Die Ausgabedaten werden über die fol
 - **CV** (Plug, Typ `adapter::types::unidirectional::ALI`): Aktueller Zählerwert (LINT).
 
 ### **Adapter**
+
 | Bezeichnung | Richtung | Typ | Beschreibung |
 |-------------|----------|-----|--------------|
 | CD          | Socket   | AX  | Abwärtszählimpuls (Ereignis + Bool) |

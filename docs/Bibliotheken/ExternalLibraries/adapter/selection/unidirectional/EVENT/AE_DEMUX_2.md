@@ -11,16 +11,19 @@ Der Funktionsblock **AE_DEMUX_2** ist ein generischer Adapter-Demultiplexer. Er 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `REQ`    | Setzt den Index `K` und löst die Demultiplex-Funktion aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF`    | Bestätigt die erfolgreiche Ausführung des Index-Setzens. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung               |
 |----------|-------|----------------------------|
 | `K`      | UINT  | Index des Zielausgangs (1 oder 2). |
@@ -29,6 +32,7 @@ Der Funktionsblock **AE_DEMUX_2** ist ein generischer Adapter-Demultiplexer. Er 
 Keine direkten Daten-Ausgänge, da die Ausgabe über die Adapter-Plugs erfolgt.
 
 ### **Adapter**
+
 | Richtung | Name  | Typ des Adapters                | Beschreibung                                          |
 |----------|-------|---------------------------------|-------------------------------------------------------|
 | Socket   | `IN`  | `adapter::types::unidirectional::AE` | Eingangswert, der je nach Index weitergeleitet wird. |

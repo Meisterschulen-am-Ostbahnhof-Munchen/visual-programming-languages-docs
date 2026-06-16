@@ -9,16 +9,19 @@ Der AIWS_MUX_2 ist ein generischer Multiplexer für den AIWS-Adapter. Er ermögl
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung | Mit-Variablen |
 |----------|--------------|---------------|
 | REQ      | Ereignis zur Auslösung der Indexsetzung | K |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF      | Bestätigung der Selektion |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ  | Beschreibung |
 |----------|------|--------------|
 | K        | UINT | Index für die Auswahl (0 = IN1, 1 = IN2) |
@@ -27,6 +30,7 @@ Der AIWS_MUX_2 ist ein generischer Multiplexer für den AIWS-Adapter. Er ermögl
 Keine (die Signalübergabe erfolgt ausschließlich über Adapter).
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Plug (Ausgang) | OUT | AIWS | Ausgangssignal, liefert das ausgewählte AIWS-Signal |

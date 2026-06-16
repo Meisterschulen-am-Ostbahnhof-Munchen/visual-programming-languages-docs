@@ -9,16 +9,19 @@ Der Funktionsblock **AX_MUX_4** ist ein generischer Multiplexer für Adapter vom
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Beschreibung                       |
 |------|-------|------------------------------------|
 | REQ  | Event | Auslösen der Umschaltung auf den durch K definierten Eingang. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Beschreibung                                    |
 |------|-------|-------------------------------------------------|
 | CNF  | Event | Bestätigung, dass die Umschaltung erfolgt ist. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Beschreibung                     |
 |------|------|----------------------------------|
 | K    | UINT | Index des gewünschten Eingangs (0 … 3). |
@@ -27,6 +30,7 @@ Der Funktionsblock **AX_MUX_4** ist ein generischer Multiplexer für Adapter vom
 Keine.
 
 ### **Adapter**
+
 | Typ                                      | Richtung | Name | Beschreibung                                                                 |
 |------------------------------------------|----------|------|-----------------------------------------------------------------------------|
 | `adapter::types::unidirectional::AX`     | Plug     | OUT  | Ausgang: liefert die Daten des durch K ausgewählten Eingangs.               |

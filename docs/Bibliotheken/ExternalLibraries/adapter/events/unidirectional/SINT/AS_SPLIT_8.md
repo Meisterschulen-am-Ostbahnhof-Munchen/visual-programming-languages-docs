@@ -22,6 +22,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |---|---|---|---|
 | `adapter::types::unidirectional::AS` | IN | Socket (Eingang) | Empfängt den zu verteilenden AS-Datenstrom. |

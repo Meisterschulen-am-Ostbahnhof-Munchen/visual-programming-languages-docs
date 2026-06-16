@@ -23,6 +23,7 @@ Der Baustein besitzt keine klassischen Ereignis- oder Dateneingänge/-ausgänge 
 - Keine direkten Daten-Ausgänge vorhanden. Daten werden über den **AW_OUT**-Adapter gesendet.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Eingang (Socket) | **AB_IN** | `adapter::types::unidirectional::AB` | BYTE-Adapter-Eingang, liefert ein BYTE-Datum und ein Ereignis |

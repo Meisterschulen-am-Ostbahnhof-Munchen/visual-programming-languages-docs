@@ -11,16 +11,19 @@ Der Funktionsblock `AW_FIELDBUS_WORD_TO_SIGNAL_SCALED` dient dazu, ein eingehend
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ   | Kommentar |
 |----------|-------|-----------|
 | INIT     | EInit | Initialisierungsanforderung (z. B. Reset der internen Logik) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ   | Kommentar |
 |----------|-------|-----------|
 | INITO    | EInit | Bestätigung der erfolgreichen Initialisierung |
 
 ### **Daten-Eingänge**
+
 | Name   | Typ  | Default         | Kommentar                     |
 |--------|------|-----------------|-------------------------------|
 | SCALE  | REAL | REAL#1.0        | Skalierungsfaktor             |
@@ -30,6 +33,7 @@ Der Funktionsblock `AW_FIELDBUS_WORD_TO_SIGNAL_SCALED` dient dazu, ein eingehend
 Der Baustein besitzt keine separaten Datenausgänge. Die Ausgangswerte werden über die Adapter bereitgestellt.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ (unidirektional) | Kommentar |
 |---------|----------|----------------------|-----------|
 | IN      | Socket   | AW                   | Eingangssignal (Feldbus-Wort) |

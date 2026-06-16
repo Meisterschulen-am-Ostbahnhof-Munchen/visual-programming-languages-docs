@@ -10,6 +10,7 @@ Echtzeit-Variante des E_SWITCH Bausteins. Schaltet den Ereignisfluss ein oder au
 ![RT_E_SWITCH](RT_E_SWITCH.svg)
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Lizenz | EPL-2.0 |

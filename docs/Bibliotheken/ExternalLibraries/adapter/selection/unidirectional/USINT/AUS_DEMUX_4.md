@@ -11,16 +11,19 @@ Der Funktionsbaustein **AUS_DEMUX_4** realisiert einen Demultiplexer für den Ad
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|-------------|
 | `REQ` | Startet die Demultiplex‑Operation. Der Index `K` wird eingelesen und der Wert des `IN`‑Adapters auf den entsprechenden Ausgangsadapter weitergeleitet. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|-------------|
 | `CNF` | Bestätigung, dass der Demultiplexvorgang abgeschlossen ist und der gewählte Ausgang den aktuellen Wert des `IN`‑Adapters trägt. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|-------------|
 | `K`      | UINT  | Index des gewünschten Ausgangs (1 = OUT1, 2 = OUT2, 3 = OUT3, 4 = OUT4). Werte außerhalb dieses Bereichs werden ignoriert oder führen zu keinem Ausgangswechsel (implementierungsabhängig). |
@@ -29,6 +32,7 @@ Der Funktionsbaustein **AUS_DEMUX_4** realisiert einen Demultiplexer für den Ad
 Keine direkten Datenausgänge – die Werte werden über die Adapterausgänge bereitgestellt.
 
 ### **Adapter**
+
 | Adapter  | Richtung | Typ   | Beschreibung |
 |----------|----------|-------|-------------|
 | `IN`     | Eingang  | `adapter::types::unidirectional::AUS` | Wert, der demultiplext werden soll. |

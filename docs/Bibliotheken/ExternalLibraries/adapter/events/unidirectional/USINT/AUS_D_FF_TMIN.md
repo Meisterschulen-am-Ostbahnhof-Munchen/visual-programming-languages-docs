@@ -9,16 +9,19 @@ Der Funktionsblock **AUS_D_FF_TMIN** realisiert ein taktgesteuertes D‑Latch (D
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar | Mit Variable |
 |------|-----|-----------|--------------|
 | INIT | EInit | Init Request | Tmin |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | INITO | EInit | Init Confirmation |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | HYSTERESIS | ANY_NUM | Hysterese‑Band (derzeit nicht im internen Netzwerk verbunden) |
@@ -28,6 +31,7 @@ Der Funktionsblock **AUS_D_FF_TMIN** realisiert ein taktgesteuertes D‑Latch (D
 Keine direkten Daten‑Ausgänge – die Ausgabedaten werden ausschließlich über den **Adapter‑Plug Q** bereitgestellt.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Socket | I | adapter::types::unidirectional::AUS | Wert, der übernommen werden soll (enthält Ereignis E1 und Daten D1) |
@@ -55,6 +59,7 @@ Der interne FB **E_D_FF_ANY_TMIN** besitzt einen Speicher für den zuletzt über
 - **Zeitgesteuerte Latch‑Funktion**: Übernahme eines Wertes nur dann, wenn die letzte Ausgabe länger als *Tmin* zurückliegt.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaften |
 |----------|---------------|
 | **E_D_FF** (einfaches D‑Flip‑Flop) | Übernimmt Wert sofort bei jedem Takt, keine Zeitsteuerung. |

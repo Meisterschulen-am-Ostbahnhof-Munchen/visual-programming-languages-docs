@@ -23,6 +23,7 @@ Der Baustein besitzt keine separaten Daten-Eingänge. Die Eingangsdaten (BOOL) w
 Der Baustein besitzt keine separaten Daten-Ausgänge. Die Ausgangsdaten (WORD) werden über den Plug-Adapter `AW_OUT` (Datenpunkt `D1`, Typ `WORD`) ausgegeben.
 
 ### **Adapter**
+
 | Richtung | Bezeichnung | Typ | Kommentar |
 |----------|-------------|-----|-----------|
 | **Socket** | `AX_IN` | `adapter::types::unidirectional::AX` | BOOL-Adapter-Eingang (bestehend aus Ereignis `E1` und Daten `D1:BOOL`) |

@@ -33,6 +33,7 @@ Der Baustein verfügt über keine klassischen separaten Event- oder Datenports, 
 - **ILOCK_OUT.DO1** (über Plug-Adapter `ILOCK_OUT`): Weiterleitung des Reset-Signals nach unten.
 
 ### Adapter
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | `SET1` | unidirectional AX | Socket | Set-Eingang |

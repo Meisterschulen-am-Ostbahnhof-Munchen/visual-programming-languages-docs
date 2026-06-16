@@ -9,6 +9,7 @@ Der Funktionsbaustein **UDINT_AUI_LT** realisiert den Vergleich "less than". Er 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | **REQ** | Event | Service Request – löst den Vergleich aus (verbunden mit IN1) |
@@ -17,6 +18,7 @@ Der Funktionsbaustein **UDINT_AUI_LT** realisiert den Vergleich "less than". Er 
 *(keine direkten Ereignisausgänge; das Ergebnisereignis wird über den Adapter OUT bereitgestellt)*
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | **IN1** | ANY_ELEMENTARY | Erster Vergleichswert |
@@ -25,6 +27,7 @@ Der Funktionsbaustein **UDINT_AUI_LT** realisiert den Vergleich "less than". Er 
 *(keine direkten Datenausgänge; der Ergebniswert wird über den Adapter OUT bereitgestellt)*
 
 ### **Adapter**
+
 | Richtung | Name | Adaptertyp | Kommentar |
 |----------|------|------------|-----------|
 | Eingang (Socket) | **IN2** | `adapter::types::unidirectional::AUI` | Zweiter Vergleichswert (wird über das Ereignis E1 des Adapters getriggert) |
@@ -54,6 +57,7 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten. Die Abarbeitung erfolgt r
 - **Modulare Automatisierung**: Einbinden in bestehende Adapter‑Strukturen ohne zusätzliche Konvertierungsbausteine.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Vergleichstyp | Besonderheit |
 |----------|---------------|--------------|
 | **F_LT** | less than | Direkte Ein‑/Ausgänge, kein Adapter |

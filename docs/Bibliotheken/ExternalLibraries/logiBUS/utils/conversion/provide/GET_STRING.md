@@ -9,21 +9,25 @@ Der Funktionsblock `GET_STRING` dient dazu, einen Stringwert aus einer InOut-Var
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | REQ      | Event    | Normaler Ausführungsanforderung. Löst das Einlesen der InOut-Variablen aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | CNF      | Event    | Bestätigung der Ausführung. Wird gesendet, nachdem der Wert gelesen und an den Ausgang übergeben wurde. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | IN   | STRING   | InOut-Variable, die als Quelle dient. Ihr aktueller Wert wird bei REQ gelesen und gepuffert. |
 
 ### **Daten-Ausgänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | OUT  | STRING   | Gepufferter Ausgabewert. Enthält den zum Zeitpunkt des letzten REQ gelesenen String von IN. |

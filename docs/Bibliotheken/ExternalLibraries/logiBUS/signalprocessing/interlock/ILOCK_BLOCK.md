@@ -9,24 +9,28 @@ Der Funktionsblock **ILOCK_BLOCK** realisiert eine Verriegelung (Interlock) zwis
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Mit Variable | Beschreibung |
 |----------|--------------|--------------|
 | `EI_UP`  | `DI_UP`      | Ereignis zum Setzen der UP-Richtung |
 | `EI_DOWN`| `DI_DOWN`    | Ereignis zum Setzen der DOWN-Richtung |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis  | Mit Variable | Beschreibung |
 |-----------|--------------|--------------|
 | `EO_UP`   | `DO_UP`      | Wird ausgelöst, wenn die UP-Richtung aktiv geschaltet wird oder wenn sie deaktiviert wird |
 | `EO_DOWN` | `DO_DOWN`    | Wird ausgelöst, wenn die DOWN-Richtung aktiv geschaltet wird oder wenn sie deaktiviert wird |
 
 ### **Daten-Eingänge**
+
 | Variable   | Typ  | Kommentar |
 |------------|------|-----------|
 | `DI_UP`    | BOOL | TRUE = vorwärts, aufwärts, rechts, im Uhrzeigersinn |
 | `DI_DOWN`  | BOOL | TRUE = rückwärts, abwärts, links, gegen den Uhrzeigersinn |
 
 ### **Daten-Ausgänge**
+
 | Variable   | Typ  | Kommentar |
 |------------|------|-----------|
 | `DO_UP`    | BOOL | TRUE = vorwärts, aufwärts, rechts, im Uhrzeigersinn |
@@ -52,6 +56,7 @@ Der Baustein besitzt zwei Aktivierungszustände (UP, DOWN) und zwei Zwischenzust
 - Alle Ausgänge werden nach einem Stopp wieder auf FALSE gesetzt.
 
 ## Zustandsübersicht
+
 | Zustand      | Beschreibung                                                                                                                                 |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | **STOP**     | Ruhezustand. Beide Ausgänge FALSE. Warte auf Aktivierung.                                                                                     |

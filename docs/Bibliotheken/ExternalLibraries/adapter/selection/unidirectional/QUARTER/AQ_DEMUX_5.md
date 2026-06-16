@@ -9,16 +9,19 @@ Der Funktionsblock **AQ_DEMUX_5** realisiert einen 1-zu-5 Demultiplexer für Ada
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `REQ`    | Startet die Weiterleitung des aktuellen Werts aus dem Eingangsadapter `IN` an den durch `K` bestimmten Ausgang. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `CNF`    | Quittiert die erfolgreiche Ausführung der Demultiplex-Operation. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ   | Kommentar                 |
 |------|-------|---------------------------|
 | `K`  | `UINT`| Index des gewünschten Ausgangs (1..5). |
@@ -27,6 +30,7 @@ Der Funktionsblock **AQ_DEMUX_5** realisiert einen 1-zu-5 Demultiplexer für Ada
 – Keine eigenen Datenausgänge; die Ausgabe erfolgt über die Adapter-Plugs.
 
 ### **Adapter**
+
 | Richtung | Name  | Typ                               | Kommentar                            |
 |----------|-------|-----------------------------------|--------------------------------------|
 | Socket (Eingang) | `IN`  | `adapter::types::unidirectional::AQ` | Eingangsdaten, die demultiplext werden. |

@@ -30,12 +30,14 @@ Der FB besitzt keine direkten Datenausgänge. Die Ausgangsdaten werden über die
 
 ### **Adapter**
 **Sockets (Eingänge)**
+
 | Adapter | Typ | Beschreibung |
 |---|---|---|
 | `UP_IN` | `adapter::types::unidirectional::AX` | Eingang für Aufwärts-Richtung (Ereignis + Daten) |
 | `DOWN_IN` | `adapter::types::unidirectional::AX` | Eingang für Abwärts-Richtung (Ereignis + Daten) |
 
 **Plugs (Ausgänge)**
+
 | Adapter | Typ | Beschreibung |
 |---|---|---|
 | `UP_OUT` | `adapter::types::unidirectional::AX` | Ausgang für Aufwärts-Richtung |
@@ -72,6 +74,7 @@ Die Priorisierung erfolgt implizit: Solange kein Konflikt vorliegt, wird die zue
 - **Keine direkten Events/Daten:** Der FB besitzt keine klassischen Event- oder Daten-Ein-/Ausgänge, sondern nutzt ausschließlich die Adapter-Schnittstellen.
 
 ## Zustandsübersicht
+
 | Zustand | UP_OUT.D1 | DOWN_OUT.D1 | TRIP_OUT.D1 | Beschreibung |
 |---|---|---|---|---|
 | `STOP` | FALSE | FALSE | FALSE | Ruheposition, keine Richtung aktiv |

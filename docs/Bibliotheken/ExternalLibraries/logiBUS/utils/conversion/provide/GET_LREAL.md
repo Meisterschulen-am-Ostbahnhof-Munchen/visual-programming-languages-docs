@@ -10,11 +10,13 @@ Der Funktionsbaustein `GET_LREAL` dient dem lesenden Zugriff auf eine `LREAL`-Va
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | REQ      | Event    | Normaler Ausführungsanstoß; liest den Wert von `IN` |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | CNF      | Event    | Bestätigung der Ausführung; wird nach dem Lesen gesendet |
@@ -23,6 +25,7 @@ Der Funktionsbaustein `GET_LREAL` dient dem lesenden Zugriff auf eine `LREAL`-Va
 Der Baustein besitzt keine eigenständigen Dateneingänge. Die Quelldaten werden über den InOut‑Parameter `IN` bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 | Ausgang | Datentyp | Initialwert | Kommentar                  |
 |---------|----------|-------------|----------------------------|
 | OUT     | LREAL    | 0.0         | Gepufferter Ausgabewert    |

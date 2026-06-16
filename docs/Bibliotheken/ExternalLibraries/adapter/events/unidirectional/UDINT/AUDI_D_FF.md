@@ -21,6 +21,7 @@ Keine – die Datenaufnahme erfolgt ausschließlich über den Socket‑Adapter.
 Keine – die Datenausgabe erfolgt ausschließlich über den Plug‑Adapter.
 
 ### **Adapter**
+
 | Bezeichnung | Typ | Richtung | Beschreibung |
 |------------|-----|----------|--------------|
 | **I**      | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | Liefert das Taktereignis (E1) und den zu übernehmenden Datenwert (D1). |

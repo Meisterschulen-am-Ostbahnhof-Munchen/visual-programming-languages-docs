@@ -23,6 +23,7 @@ Der RT_Bridge_6 Funktionsblock dient als Entkopplungsbrücke für 6 Datenverbind
 - **RD_1** - **RD_6** (ANY): Ausgangsdaten.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2023 Johannes Kepler University Linz |

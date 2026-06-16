@@ -21,6 +21,7 @@ Keine direkten Daten-Eingänge vorhanden. Die Eingangsdaten werden über den Ada
 Keine direkten Daten-Ausgänge vorhanden. Die umgewandelten Daten werden über den Adapter **ADI_OUT** (vom Typ ADI) ausgegeben.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | **ALI_IN** | `adapter::types::unidirectional::ALI` | Socket (Eingang) | Liefert den LINT-Wert sowie ein zugehöriges Ereignis (E1). |

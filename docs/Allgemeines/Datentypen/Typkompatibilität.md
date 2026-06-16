@@ -24,6 +24,7 @@ Das bedeutet: der Target-Typ muss gleich oder *größer/allgemeiner* sein als de
 ## Integer-Typen
 
 ### Signed
+
 | Source → | SINT | INT | DINT | LINT |
 |----------|:----:|:---:|:----:|:----:|
 | **SINT** | ✓ | ✓ | ✓ | ✓ |
@@ -32,6 +33,7 @@ Das bedeutet: der Target-Typ muss gleich oder *größer/allgemeiner* sein als de
 | **LINT** | ✗ | ✗ | ✗ | ✓ |
 
 ### Unsigned
+
 | Source → | USINT | UINT | UDINT | ULINT |
 |----------|:-----:|:----:|:-----:|:-----:|
 | **USINT** | ✓ | ✓ | ✓ | ✓ |

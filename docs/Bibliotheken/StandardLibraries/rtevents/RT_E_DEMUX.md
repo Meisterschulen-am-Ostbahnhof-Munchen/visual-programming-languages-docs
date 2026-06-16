@@ -10,6 +10,7 @@ Echtzeit-Variante des E_DEMUX Bausteins. Leitet ein Eingangsereignis an einen vo
 ![RT_E_DEMUX](RT_E_DEMUX.svg)
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Lizenz | EPL-2.0 |

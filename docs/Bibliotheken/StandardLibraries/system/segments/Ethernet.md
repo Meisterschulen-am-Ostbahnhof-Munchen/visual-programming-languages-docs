@@ -8,6 +8,7 @@
 Ein Ethernet-Netzwerksegment zur Verbindung von Geräten.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2008 Profactor GmbH |

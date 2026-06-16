@@ -21,6 +21,7 @@ Keine. Das zu konvertierende LINT‑Signal wird über den ALI‑Adapter eingeles
 Keine. Das konvertierte SINT‑Signal wird über den AS‑Adapter ausgegeben.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | **ALI_IN** | `adapter::types::unidirectional::ALI` | Socket (Eingang) | Aufnahme eines LINT‑Werts (64‑Bit) über das Ereignis E1 und Datum D1. |

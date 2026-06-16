@@ -21,6 +21,7 @@ Nicht vorhanden. Die Datenaufnahme erfolgt über den Adapter-Socket **AS_IN**.
 Nicht vorhanden. Die Datenausgabe erfolgt über den Adapter-Plug **AUDI_OUT**.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | **AS_IN** | `adapter::types::unidirectional::AS` | Socket (Eingang) | SINT-Adapter, der einen Eingangswert (SINT) und ein zugehöriges Ereignis bereitstellt. |

@@ -9,16 +9,19 @@ Der Funktionsblock `AD_DEMUX_2` ist ein generischer AD-Demultiplexer. Er verteil
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `REQ` | Setzt den Index `K` und löst die Weiterleitung des AD-Eingangs auf den entsprechenden Ausgang aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF` | Bestätigt die erfolgreiche Ausführung des Demultiplex-Vorgangs. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung                 |
 |----------|-------|------------------------------|
 | `K`      | UINT  | Index (0-basiert) zur Auswahl des Ausgangs (0 → OUT1, 1 → OUT2) |
@@ -27,6 +30,7 @@ Der Funktionsblock `AD_DEMUX_2` ist ein generischer AD-Demultiplexer. Er verteil
 Keine Datenausgänge vorhanden.
 
 ### **Adapter**
+
 | Richtung | Name | Typ                               | Beschreibung                        |
 |----------|------|-----------------------------------|-------------------------------------|
 | Socket   | `IN` | `adapter::types::unidirectional::AD` | Eingangs-Adapter (zu verteilendes Signal) |

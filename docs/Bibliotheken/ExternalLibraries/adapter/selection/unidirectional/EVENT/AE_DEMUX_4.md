@@ -9,16 +9,19 @@ Der Funktionsbaustein **AE_DEMUX_4** ist ein generischer Demultiplexer für Adap
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung | Mit Daten |
 |----------|--------------|-----------|
 | `REQ`    | Setzt den Index K und löst die Weiterleitung aus | `K` |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF`    | Bestätigt die Ausführung der Demultiplexing-Operation |
 
 ### **Daten-Eingänge**
+
 | Name | Typ   | Beschreibung       |
 |------|-------|--------------------|
 | `K`  | UINT  | Index des Zielausgangs (1..4) |

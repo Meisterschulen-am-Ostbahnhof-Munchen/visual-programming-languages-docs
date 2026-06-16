@@ -25,6 +25,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | **Socket** | `IN` | `adapter::types::unidirectional::AE` | Eingehender unidirektionaler AE-Adapter |

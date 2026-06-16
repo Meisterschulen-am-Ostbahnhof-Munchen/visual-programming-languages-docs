@@ -51,6 +51,7 @@ Der SERVER_0 Block verwaltet die Verbindung.
 - Signalisierung von Zuständen ohne Dateninhalt
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2025 Monika Wenger |

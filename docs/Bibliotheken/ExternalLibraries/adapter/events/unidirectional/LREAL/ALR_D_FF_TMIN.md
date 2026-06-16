@@ -10,16 +10,19 @@ Der Funktionsblock **ALR_D_FF_TMIN** realisiert einen taktflankengesteuerten Dat
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ   | Kommentar                                          |
 |----------|-------|----------------------------------------------------|
 | INIT     | EInit | Initialisierungsanforderung; setzt die Mindestzeit `Tmin` |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ   | Kommentar                                |
 |----------|-------|------------------------------------------|
 | INITO    | EInit | Bestätigung der erfolgreichen Initialisierung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Kommentar                                   |
 |------|------|---------------------------------------------|
 | Tmin | TIME | Minimale Wartezeit zwischen zwei EO-Ereignissen |
@@ -28,6 +31,7 @@ Der Funktionsblock **ALR_D_FF_TMIN** realisiert einen taktflankengesteuerten Dat
 *Keine eigenen Datenausgänge vorhanden – der gelatchte Wert wird über den Adapterausgang bereitgestellt.*
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ         | Kommentar                         |
 |---------|----------|-------------|-----------------------------------|
 | I       | Socket   | ALR (unidirektional) | Eingangswert (`D1`) und Takt (`E1`) |

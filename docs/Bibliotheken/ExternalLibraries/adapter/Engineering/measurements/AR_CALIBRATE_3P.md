@@ -9,6 +9,7 @@ Der Funktionsblock **AR_CALIBRATE_3P** ermöglicht eine 3‑Punkt‑Kalibrierung
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | SET | Event | Setzt die Referenzwerte (MIN_REF, MID_REF, MAX_REF) für die Kalibrierungskennlinie. Löst keine Berechnung aus, sondern legt nur die Zielausgabewerte fest. |
@@ -17,6 +18,7 @@ Der Funktionsblock **AR_CALIBRATE_3P** ermöglicht eine 3‑Punkt‑Kalibrierung
 Keine expliziten Ereignisausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über den Adapter **Y**.
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Vorgabewert | Kommentar |
 |------|----------|-------------|-----------|
 | MIN_REF | REAL | 0.0 | Zielwert für den kleinsten Eingangswert (Min). |
@@ -27,6 +29,7 @@ Keine expliziten Ereignisausgänge vorhanden. Die Ausgabe erfolgt ausschließlic
 Keine direkten Datenausgänge – alle Ausgaben werden über die **Plugs** (Ausgangsadapter) bereitgestellt.
 
 ### **Adapter**
+
 | Richtung | Name | Adaptertyp | Kommentar |
 |----------|------|------------|-----------|
 | **Plug** (Ausgang) | Y | `adapter::types::unidirectional::AR` | Kalibrierter Ausgabewert (Analogwert plus Ereignis). |
@@ -66,6 +69,7 @@ Die Kalibrierung basiert auf einer stückweisen linearen Interpolation zwischen 
 - **Keine Selbstkalibrierung:** Der FB speichert keine Historie – das System muss die Kalibrierungspunkte explizit setzen.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung |
 |---------|--------------|
 | **IDLE** | Warte – kein Ereignis anliegend. Transitionen: Bei `SET` → IDLE (nur Referenzwerte setzen); bei `X_MIN.EI1`, `X_MID.EI1`, `X_MAX.EI1` → IDLE (keine Aktion); bei `C_MIN.E1[C_MIN.D1]` → CAL_MIN; bei `C_MID.E1[C_MID.D1]` → CAL_MID; bei `C_MAX.E1[C_MAX.D1]` → CAL_MAX; bei `X.E1` → REQ. |
@@ -87,6 +91,7 @@ Die Kalibrierung basiert auf einer stückweisen linearen Interpolation zwischen 
 - **Sensoren mit Offset und Skalierungsfehler:** Z. B. ein Drucksensor mit nichtlinearem Verhalten zwischen 0 %, 50 % und 100 % des Bereichs.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaft |
 |----------|-------------|
 | **AR_SCALE** | Einfache lineare Skalierung (2‑Punkt) – ohne Korrektur von Nichtlinearitäten in der Mitte. |

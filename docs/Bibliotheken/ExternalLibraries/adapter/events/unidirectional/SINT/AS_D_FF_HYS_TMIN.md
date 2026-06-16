@@ -11,16 +11,19 @@ Der Funktionsbaustein **AS_D_FF_HYS_TMIN** realisiert ein datengetriggertes Flip
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name  | Typ   | Kommentar                                   |
 |-------|-------|---------------------------------------------|
 | INIT  | EInit | Initialisierungsanfrage; setzt Hysterese und Mindestzeit |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ   | Kommentar                                   |
 |-------|-------|---------------------------------------------|
 | INITO | EInit | Bestätigung der abgeschlossenen Initialisierung |
 
 ### **Daten-Eingänge**
+
 | Name       | Typ  | Kommentar                                        |
 |------------|------|--------------------------------------------------|
 | HYSTERESIS | SINT | Hysterese-Band (ganzzahliger Wert, z. B. 8 Bit) |
@@ -30,6 +33,7 @@ Der Funktionsbaustein **AS_D_FF_HYS_TMIN** realisiert ein datengetriggertes Flip
 Keine direkten Datenausgänge – das Ausgangssignal wird über den Adapter **Q** bereitgestellt.
 
 ### **Adapter**
+
 | Typ | Bezeichnung | Richtung | Kommentar                             |
 |-----|-------------|----------|---------------------------------------|
 | AS  | I (Socket)  | Eingang  | Unidirektionaler Adapter für das zu latchnde Signal (z. B. Daten‑ + Ereignisleitung) |

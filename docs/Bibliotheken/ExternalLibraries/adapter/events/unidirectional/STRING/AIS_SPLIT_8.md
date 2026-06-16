@@ -21,6 +21,7 @@ Keine vorhanden.
 Keine vorhanden.
 
 ### **Adapter**
+
 | Richtung | Name  | Typ                              | Beschreibung                                      |
 |----------|-------|----------------------------------|---------------------------------------------------|
 | Eingang  | IN    | `adapter::types::unidirectional::AIS` | Eingehendes AIS-Signal, das verteilt werden soll. |

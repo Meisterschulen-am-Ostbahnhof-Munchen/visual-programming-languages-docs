@@ -11,16 +11,19 @@ Der Funktionsblock **AUS_DEMUX_5** ist ein generischer AUS-Demultiplexer. Er ver
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Setzt den Index K und löst die Umschaltung aus |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung der erfolgten Umschaltung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index des zu aktivierenden Ausgangs (1..5) |
@@ -29,6 +32,7 @@ Der Funktionsblock **AUS_DEMUX_5** ist ein generischer AUS-Demultiplexer. Er ver
 Keine Datenausgänge definiert.
 
 ### **Adapter**
+
 | Rolle | Name | Typ | Kommentar |
 |-------|------|-----|-----------|
 | Socket (Eingang) | IN | adapter::types::unidirectional::AUS | Eingangssignal, das demultiplext werden soll |

@@ -10,16 +10,19 @@ Der Funktionsblock **SET_SINT** dient dazu, einen SINT-Wert von seinem Dateneing
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **REQ**  | Normale Ausführungsanforderung. Löst die Zuweisung von **IN** nach **OUT** aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF**  | Bestätigung der Ausführung. Wird nach erfolgreicher Zuweisung gesendet. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Initialwert | Beschreibung |
 |------|------|-------------|--------------|
 | **IN** | SINT | 0           | Der Wert, der geschrieben werden soll. |

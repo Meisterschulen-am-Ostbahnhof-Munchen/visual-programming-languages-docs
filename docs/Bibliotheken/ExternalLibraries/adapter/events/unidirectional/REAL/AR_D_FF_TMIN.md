@@ -10,16 +10,19 @@ Der Baustein **AR_D_FF_TMIN** realisiert ein Data-Latch (D-Flipflop) mit einem E
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar                        |
 |------|-------|----------------------------------|
 | INIT | EInit | Initialisierungsanforderung (mit Parameter `Tmin`) |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ   | Kommentar                       |
 |-------|-------|---------------------------------|
 | INITO | EInit | Initialisierungsbestätigung     |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Kommentar                                  |
 |------|------|--------------------------------------------|
 | Tmin | TIME | Mindestverzögerung zwischen zwei EO-Ereignissen |
@@ -28,6 +31,7 @@ Der Baustein **AR_D_FF_TMIN** realisiert ein Data-Latch (D-Flipflop) mit einem E
 Keine eigenständigen Daten-Ausgänge; der Wert wird über den Adapter `Q` ausgegeben.
 
 ### **Adapter**
+
 | Richtung | Name | Typ                                              | Kommentar               |
 |----------|------|---------------------------------------------------|-------------------------|
 | Socket   | I    | `adapter::types::unidirectional::AR`              | zu übernehmender Wert   |

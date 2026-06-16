@@ -9,16 +9,19 @@ Der Funktionsblock **ALI_D_FF_HYS_TMIN** realisiert ein datengesteuertes D-Flip-
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name  | Typ   | Kommentar |
 |-------|-------|-----------|
 | INIT  | EInit | Initialisierungsanforderung – setzt die Hysteresebreite und die Mindestzeit fest. |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ   | Kommentar |
 |-------|-------|-----------|
 | INITO | EInit | Bestätigung der erfolgreichen Initialisierung. |
 
 ### **Daten-Eingänge**
+
 | Name       | Typ  | Kommentar |
 |------------|------|-----------|
 | HYSTERESIS | LINT | Hystereseband als ganzzahliger Wert (LINT). |
@@ -29,6 +32,7 @@ Der Funktionsblock **ALI_D_FF_HYS_TMIN** realisiert ein datengesteuertes D-Flip-
 Der Baustein gibt seinen Zustand über den Adapter **Q** aus (siehe Adapter).
 
 ### **Adapter**
+
 | Typ    | Name | Richtung | Kommentar |
 |--------|------|----------|-----------|
 | `adapter::types::unidirectional::ALI` | I    | Socket   | Eingangsadapter – liefert das zu übernehmende Signal (Ereignis und Datenwert). |
@@ -72,6 +76,7 @@ Eine formale Zustandsmaschine ist nicht über die XML‑Schnittstelle sichtbar, 
 - **Messwertübernahme mit Totzeit** – In Dosier‑ oder Positioniersystemen muss die Mindestzeit zwischen zwei gültigen Messwerten eingehalten werden, um die Systemdynamik nicht zu überlasten.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Hysterese | Mindestzeit | Adapterschnittstelle |
 |----------|-----------|-------------|----------------------|
 | `E_D_FF` (einfach) | Nein | Nein | Nein (direkte I/O) |

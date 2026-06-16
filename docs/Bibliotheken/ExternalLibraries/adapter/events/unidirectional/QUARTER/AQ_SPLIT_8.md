@@ -21,6 +21,7 @@ Keine – die gesamte Signalübertragung erfolgt über AQ-Adapter.
 Keine – siehe Daten-Eingänge.
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | **IN** | `adapter::types::unidirectional::AQ` | Socket (Eingang) | Empfängt das zu verteilende AQ-Signal. |

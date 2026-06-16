@@ -21,6 +21,7 @@ Keine – der Baustein besitzt keine dedizierten Dateneingänge; alle Daten werd
 Keine – die Daten werden über die Adapter `OUT1`, `OUT2`, `OUT3` ausgegeben.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | `IN` | `adapter::types::unidirectional::AUS` | Socket (eingehend) | Empfängt ein AUS-Signal. |

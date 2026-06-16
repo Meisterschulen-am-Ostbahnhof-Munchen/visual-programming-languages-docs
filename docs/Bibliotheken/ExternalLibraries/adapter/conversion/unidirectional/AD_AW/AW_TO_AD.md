@@ -23,6 +23,7 @@ Der Funktionsbaustein **AW_TO_AD** ist ein zusammengesetzter Baustein (Composite
 - **AD_OUT.D1** – Datenausgang (Typ: DWORD, 32 Bit) über den Plug `AD_OUT`. Die empfangenen 16 Bit werden auf die unteren 16 Bit des DWORD abgebildet; die oberen 16 Bit werden mit Nullen aufgefüllt (implizite Konvertierung).
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | `AW_IN` | `adapter::types::unidirectional::AW` | Socket (Eingang) | WORD-Adapter, der Ereignis‑ und Dateneingänge bereitstellt |

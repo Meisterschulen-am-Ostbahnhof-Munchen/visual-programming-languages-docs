@@ -10,16 +10,19 @@ Der Funktionsbaustein `AUI_MUX_3` ist ein generischer Multiplexer für den AUI-D
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `REQ` (Event) | Setzt den Index `K` und startet die Auswahl des entsprechenden Eingangs. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `CNF` (Event) | Bestätigt die erfolgreiche Übertragung des ausgewählten Adapters an `OUT`. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `K` | UINT | Index, der den aktiven Eingang bestimmt (0 = IN1, 1 = IN2, 2 = IN3). |
@@ -28,6 +31,7 @@ Der Funktionsbaustein `AUI_MUX_3` ist ein generischer Multiplexer für den AUI-D
 Keine direkten Datenausgänge vorhanden. Die Ausgabe erfolgt über den Adapter-Ausgang `OUT`.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Plug (Ausgang) | `OUT` | `adapter::types::unidirectional::AUI` | Ausgang, der den ausgewählten Eingang weiterleitet. |

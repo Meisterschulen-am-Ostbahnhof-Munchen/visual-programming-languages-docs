@@ -12,16 +12,19 @@ Der Funktionsblock `ADI_DEMUX_4` ist ein generischer Demultiplexer, der einen ei
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | REQ | Event | Ereignis zur Ausführung der Demultiplex-Operation; löst die Verarbeitung des Index `K` aus |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | CNF | Event | Bestätigung, dass der Demultiplex-Vorgang abgeschlossen ist |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | K | UINT | Index (1‑basiert) für die Auswahl des Zielausgangs (1→OUT1, 2→OUT2, 3→OUT3, 4→OUT4) |
@@ -30,6 +33,7 @@ Der Funktionsblock `ADI_DEMUX_4` ist ein generischer Demultiplexer, der einen ei
 _Keine_
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|-------------|
 | Socket | IN | ADI (unidirektional) | Eingangsadapter, über den der zu verteilende Datenwert anliegt |

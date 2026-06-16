@@ -22,6 +22,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AD` | IN | Socket | Eingangsadapter, der auf die sechs Ausgänge verteilt wird. |

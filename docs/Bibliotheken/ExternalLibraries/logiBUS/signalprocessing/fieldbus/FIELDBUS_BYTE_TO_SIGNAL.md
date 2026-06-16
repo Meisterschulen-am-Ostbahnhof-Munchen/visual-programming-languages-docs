@@ -9,21 +9,25 @@ Der Funktionsblock **FIELDBUS_BYTE_TO_SIGNAL** dient der einfachen Validierung e
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | REQ | Event | Normaler Ausführungsanstoß; verarbeitet den aktuellen Wert am Eingang IN. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | CNF | Event | Bestätigung der Ausführung; die Ausgänge OUT und VALID wurden aktualisiert. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Initialwert | Kommentar |
 |------|----------|-------------|-----------|
 | IN | BYTE | NOT_AVAILABLE_B | Eingangssignal als Byte-Wert. |
 
 ### **Daten-Ausgänge**
+
 | Name | Datentyp | Initialwert | Kommentar |
 |------|----------|-------------|-----------|
 | OUT | BYTE | 16#00 | Gefilterter Ausgangswert; 0 wenn Signal ungültig. |

@@ -12,16 +12,19 @@ Der Funktionsblock **AL_DEMUX_3** ist ein generischer Demultiplexer für unidire
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ | Event | Setzt den Index K und leitet die Daten um |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF | Event | Bestätigung der erfolgreichen Umschaltung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K | UINT | Index (1, 2 oder 3) für den zu aktivierenden Ausgang |
@@ -30,6 +33,7 @@ Der Funktionsblock **AL_DEMUX_3** ist ein generischer Demultiplexer für unidire
 – Keine –
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Plug | **OUT1** | adapter::types::unidirectional::AL | Erster Ausgangskanal |

@@ -9,26 +9,31 @@ Der Funktionsblock **AX_TO_AQ** dient der Umwandlung eines booleschen Signals (A
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `IN.E1`  | Startet die Konvertierung des eingehenden Bool‑Werts. Wird als Befehl (COMMAND) interpretiert. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `OUT.E1` | Bestätigt die abgeschlossene Konvertierung und signalisiert die Gültigkeit des Ausgangs‑Quarter‑Byte‑Werts. |
 
 ### **Daten-Eingänge**
+
 | Daten | Typ | Beschreibung |
 |-------|-----|--------------|
 | `IN.D1` | BOOL (über AX‑Adapter) | Boolescher Eingangswert, der in ein Quarter‑Byte umgewandelt werden soll. |
 
 ### **Daten-Ausgänge**
+
 | Daten | Typ | Beschreibung |
 |-------|-----|--------------|
 | `OUT.D1` | Quarter Byte (über AQ‑Adapter) | Ausgangswert – das umgewandelte Quarter‑Byte (4‑Bit‑Darstellung). |
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | `IN`    | Socket   | `adapter::types::unidirectional::AX` | Empfängt das boolesche Signal. Der AX‑Adapter stellt einen unidirektionalen Bool‑Kanal bereit. |
@@ -59,6 +64,7 @@ Der Funktionsblock besitzt keine explizite Zustandsmaschine. Er arbeitet als rei
 - **Adapterbrücke**: Der Baustein fungiert als Zwischenstück zwischen einem AX‑kompatiblen Sender und einem AQ‑kompatiblen Empfänger in einer unidirektionalen Kette.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Aufgabe | Unterschied |
 |----------|---------|-------------|
 | `BOOL_TO_BYTE` | Konvertiert BOOL in ein Byte (8‑Bit) | Arbeitet mit 8‑Bit‑ statt 4‑Bit‑Ausgabe. Benötigt andere Adaptertypen (z. B. `AB`). |

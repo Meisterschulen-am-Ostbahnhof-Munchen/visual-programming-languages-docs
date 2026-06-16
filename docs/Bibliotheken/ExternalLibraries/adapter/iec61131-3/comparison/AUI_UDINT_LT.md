@@ -9,6 +9,7 @@ Der Baustein **AUI_UDINT_LT** führt einen Kleiner-als-Vergleich zwischen zwei W
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ | Service Request – startet den Vergleich. Zusammen mit diesem Ereignis wird der Datenwert **IN2** eingelesen. |
@@ -17,6 +18,7 @@ Der Baustein **AUI_UDINT_LT** führt einen Kleiner-als-Vergleich zwischen zwei W
 Der Baustein besitzt keine direkten Ereignisausgänge. Das Ergebnis wird über den **OUT-Adapter** (Ereignis **E1**) signalisiert.
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | IN2  | UDINT | Zweiter Vergleichswert (unsigned double integer, 32 Bit). |
@@ -25,6 +27,7 @@ Der Baustein besitzt keine direkten Ereignisausgänge. Das Ergebnis wird über d
 Keine direkten Datenausgänge. Das Ergebnis wird über den **OUT-Adapter** (Datenwert **D1**) bereitgestellt.
 
 ### **Adapter**
+
 | Rolle | Typ | Beschreibung |
 |-------|-----|--------------|
 | IN1   | adapter::types::unidirectional::AUI | Erster Vergleichswert (Wert 1). Das Ereignis **E1** startet die Übergabe des Datenwertes **D1** an die interne Logik. |

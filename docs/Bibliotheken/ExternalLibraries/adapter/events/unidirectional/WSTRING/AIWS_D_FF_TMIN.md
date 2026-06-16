@@ -10,16 +10,19 @@ Der Funktionsblock **AIWS_D_FF_TMIN** realisiert einen Daten-Latch (D-Flip-Flop)
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|----------|
 | INIT | EInit | Initialisierungsanforderung (mit Tmin-Parameter) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|----------|
 | INITO | EInit | Initialisierungsbestätigung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|----------|
 | Tmin | TIME | Mindestzeit zwischen zwei Ausgabeereignissen (inter-disposal time) |
@@ -28,6 +31,7 @@ Der Funktionsblock **AIWS_D_FF_TMIN** realisiert einen Daten-Latch (D-Flip-Flop)
 Keine eigenen Datenausgänge – der gelatchte Wert wird ausschließlich über den Adapter **Q** bereitgestellt.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|----------|
 | Socket (Eingang) | I | adapter::types::unidirectional::AIWS | Wert, der gelatcht werden soll |

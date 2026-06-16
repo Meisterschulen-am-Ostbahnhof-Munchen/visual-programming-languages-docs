@@ -17,6 +17,7 @@ Auch hier existieren keine direkten Ereignis-Ausgänge. Der Ausgangsadapter **OU
 
 ### **Daten-Eingänge**
 Die Daten werden über die beiden Socket-Adapter eingelesen:
+
 | Adapter | Typ | Beschreibung |
 |---------|-----|--------------|
 | `WORD_00` | `adapter::types::unidirectional::AW` | Erstes 16‑Bit‑Wort (niederwertiger Anteil des Doppelworts) |
@@ -26,6 +27,7 @@ Jeder dieser Adapter stellt einen Datenausgang (`D1`) mit dem eigentlichen WORD�
 
 ### **Daten-Ausgänge**
 Der Ausgang erfolgt über einen Plug-Adapter:
+
 | Adapter | Typ | Beschreibung |
 |---------|-----|--------------|
 | `OUT` | `adapter::types::unidirectional::AD` | Zusammengesetztes 32‑Bit‑Doppelwort (DWORD) |
@@ -53,6 +55,7 @@ Auf diese Weise wird sichergestellt, dass der Ausgangswert nur bei tatsächliche
 
 ## Zustandsübersicht
 Der FB selbst besitzt keinen expliziten Zustandsautomaten. Der interne Ablauf lässt sich aber durch die Zustände des D‑Flipflops charakterisieren:
+
 | Zustand | Beschreibung |
 |---------|--------------|
 | **Warten auf Ereignis** | Das Flipflop hält den zuletzt berechneten Wert; es liegt kein neues Eingangsereignis an. |

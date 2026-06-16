@@ -9,6 +9,7 @@ Der Funktionsblock `UDINT_AUI_AX_SEL_AUI` realisiert eine binäre Auswahl zwisch
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `EI0`    | Setzt den Wert von `IN0` |
@@ -18,6 +19,7 @@ Der Funktionsblock `UDINT_AUI_AX_SEL_AUI` realisiert eine binäre Auswahl zwisch
 Keine eigenen Ereignis-Ausgänge. Der Ausgang erfolgt über den Adapter `OUT` (siehe Abschnitt Adapter).
 
 ### **Daten-Eingänge**
+
 | Name | Typ               | Kommentar                     |
 |------|-------------------|-------------------------------|
 | `IN0`| `ANY_ELEMENTARY`  | Erster auswählbarer Wert      |
@@ -27,6 +29,7 @@ Keine eigenen Ereignis-Ausgänge. Der Ausgang erfolgt über den Adapter `OUT` (s
 Keine eigenen Daten-Ausgänge. Der ausgewählte Wert wird über den Adapter `OUT` ausgegeben (siehe Abschnitt Adapter).
 
 ### **Adapter**
+
 | Adapter | Typ                                  | Richtung | Kommentar                     |
 |---------|--------------------------------------|----------|-------------------------------|
 | `G`     | `adapter::types::unidirectional::AX` | Socket (Eingang) | Empfängt das binäre Selektorsignal und das Auslöseereignis |

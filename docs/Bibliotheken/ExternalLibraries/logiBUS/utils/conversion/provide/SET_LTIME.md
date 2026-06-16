@@ -9,21 +9,25 @@ Der Funktionsblock **SET_LTIME** dient dazu, einen Eingangswert vom Typ `LTIME` 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Normaler Ausführungsanstoß. Verbunden mit den Daten `IN` und `OUT`. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung der erfolgreichen Ausführung. Verbunden mit Daten `OUT`. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Initialwert | Kommentar |
 |------|-----|-------------|-----------|
 | IN   | LTIME | LT#0s | Wert, der in die Zielvariable geschrieben werden soll. |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Initialwert | Kommentar |
 |------|-----|-------------|-----------|
 | OUT  | LTIME | LT#0s | **InOut-Variable** – Zielvariable, die den übergebenen Wert erhält. Der FB schreibt den Wert von `IN` in diese Variable. Als InOut kann sie sowohl gelesen als auch von außen beschrieben werden. |

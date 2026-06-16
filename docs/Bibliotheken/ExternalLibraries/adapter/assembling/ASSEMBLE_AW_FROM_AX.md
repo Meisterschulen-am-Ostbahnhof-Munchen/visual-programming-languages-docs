@@ -21,6 +21,7 @@ Keine direkten Daten-Eingänge. Die 16 Einzelwerte (BOOL) werden über die AX-Ad
 Keine direkten Daten-Ausgänge. Das resultierende 16‑Bit‑Wort (WORD) wird über den AW-Adapter (Dateneingang `D1`) ausgegeben.
 
 ### **Adapter**
+
 | Typ | Name | Beschreibung |
 |------|------|--------------|
 | **Socket (Eingang)** | `BIT_00` | AX-Adapter, Bool Bit 0 |

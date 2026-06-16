@@ -21,6 +21,7 @@ Keine eigenständigen Daten-Eingänge. Die Eingangsdaten werden über den Socket
 Keine eigenständigen Daten-Ausgänge. Die Ausgangsdaten werden über den Plug-Adapter `AX_OUT` bereitgestellt (siehe Abschnitt **Adapter**).
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Kommentar |
 |---------|----------|-----|-----------|
 | `AD_IN` | Socket | `adapter::types::unidirectional::AD` | DWORD-Eingangsadapter – liefert Ereignis und DWORD-Daten. |

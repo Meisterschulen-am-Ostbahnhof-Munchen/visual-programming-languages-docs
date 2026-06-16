@@ -10,6 +10,7 @@ Der Funktionsblock **ATM_AX_TLIM** ist ein standardisierter Zeitüberwachungsbau
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name  | Typ    | Kommentar                              |
 |-------|--------|----------------------------------------|
 | EIPT  | Event  | Set Preset Time (nicht auslösend)      |
@@ -24,6 +25,7 @@ Es existieren keine direkten Dateneingänge. Die erforderlichen Daten (Eingangss
 Analog dazu gibt es keine direkten Datenausgänge. Das Resultat (boolescher Wert Q) wird über den Adapterausgang **Q** (Port `D1`) ausgegeben.
 
 ### **Adapter**
+
 | Bezeichnung | Typ    | Richtung  | Kommentar                            |
 |-------------|--------|-----------|--------------------------------------|
 | IN          | AX     | Eingang   | Boolescher Eingang (Adapter)         |

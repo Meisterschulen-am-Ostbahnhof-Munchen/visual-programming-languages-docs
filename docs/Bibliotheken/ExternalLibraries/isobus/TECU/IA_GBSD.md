@@ -10,27 +10,32 @@ Der Funktionsblock **IA_GBSD** dient als Adapter-Wrapper für den ISOBUS-kompati
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar                       |
 |------|-------|---------------------------------|
 | INIT | EInit | Service Initialization          |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ   | Kommentar                     |
 |-------|-------|-------------------------------|
 | INITO | EInit | Initialization Confirm        |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Kommentar                  |
 |------|------|----------------------------|
 | QI   | BOOL | Event Input Qualifier      |
 
 ### **Daten-Ausgänge**
+
 | Name   | Typ    | Kommentar                     |
 |--------|--------|-------------------------------|
 | QO     | BOOL   | Event Output Qualifier        |
 | STATUS | STRING | Statusinformation             |
 
 ### **Adapter**
+
 | Name     | Typ                           | Kommentar                              |
 |----------|-------------------------------|----------------------------------------|
 | SPEED    | adapter::types::unidirectional::AUI  | Bodenbasierte Maschinengeschwindigkeit |

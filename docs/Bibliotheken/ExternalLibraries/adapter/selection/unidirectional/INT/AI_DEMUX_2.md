@@ -9,16 +9,19 @@ Der Funktionsbaustein **AI_DEMUX_2** ist ein generischer Demultiplexer für unid
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Set Index K (mit Daten-Eingang **K** verbunden) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung der Indexauswahl (nach erfolgter Weiterleitung) |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index für die Auswahl des Ausgangs (1 oder 2) |
@@ -27,6 +30,7 @@ Der Funktionsbaustein **AI_DEMUX_2** ist ein generischer Demultiplexer für unid
 Keine direkten Datenausgänge – die Datenweitergabe erfolgt über die nachgeschalteten Adapter.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Socket   | IN   | Adapter `adapter::types::unidirectional::AI` | Eingangswert, der demultiplext werden soll |

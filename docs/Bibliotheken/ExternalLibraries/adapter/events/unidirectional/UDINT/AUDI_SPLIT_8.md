@@ -22,6 +22,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Typ | Richtung | Name | Beschreibung |
 |-----|----------|------|--------------|
 | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | `IN` | Eingangsadapter, der das zu verteilende Signal empfängt. |

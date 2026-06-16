@@ -23,6 +23,7 @@ Keine (Dateneingabe erfolgt über den Adapter **QI**)
 Keine (Datenausgabe erfolgt über den Adapter **Q**)
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | **QI** | `adapter::types::unidirectional::AX` | Socket | Nimmt das auf Flanken zu prüfende boolesche Signal entgegen. Enthält das Ereignis `E1` (Auslöser) und das Datenwort `D1` (Wert). |

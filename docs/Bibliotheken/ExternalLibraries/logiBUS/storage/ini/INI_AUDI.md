@@ -10,16 +10,19 @@ Der Funktionsblock **INI_AUDI** ermöglicht das Lesen und Speichern von UDINT-Da
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name  | Typ   | Kommentar                         |
 |-------|-------|-----------------------------------|
 | INIT  | EInit | Service Initialization            |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ   | Kommentar                        |
 |-------|-------|----------------------------------|
 | INITO | EInit | Initialization Confirm           |
 
 ### **Daten-Eingänge**
+
 | Name           | Typ    | Kommentar                                           |
 |----------------|--------|-----------------------------------------------------|
 | QI             | BOOL   | Event Input Qualifier                               |
@@ -28,12 +31,14 @@ Der Funktionsblock **INI_AUDI** ermöglicht das Lesen und Speichern von UDINT-Da
 | DEFAULT_VALUE  | UDINT  | Rückfallwert, falls der Schlüssel nicht gefunden wird |
 
 ### **Daten-Ausgänge**
+
 | Name   | Typ    | Kommentar        |
 |--------|--------|------------------|
 | QO     | BOOL   | Output Qualifier |
 | STATUS | STRING | Service Status   |
 
 ### **Adapter**
+
 | Name     | Typ      | Richtung       | Kommentar                       |
 |----------|----------|----------------|---------------------------------|
 | AUDI_OUT | AUDI     | Plug (Ausgang) | Ausgabe des gelesenen Werts     |

@@ -23,6 +23,7 @@ Der RT_Bridge_2 Funktionsblock dient als Entkopplungsbrücke für 2 Datenverbind
 - **RD_1** - **RD_2** (ANY): Ausgangsdaten.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2023 Johannes Kepler University Linz |

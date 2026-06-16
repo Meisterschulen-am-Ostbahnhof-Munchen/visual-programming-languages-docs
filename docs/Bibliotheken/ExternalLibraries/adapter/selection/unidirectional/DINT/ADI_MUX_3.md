@@ -9,16 +9,19 @@ Der Funktionsblock **ADI_MUX_3** ist ein generischer Multiplexer (MUX) für drei
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Signalisiert eine neue Indexanforderung. Wird mit dem Daten-Eingang **K** ausgewertet. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung, dass der ausgewählte Eingang auf den Ausgang geschaltet wurde. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index (0, 1, 2) zur Auswahl des aktiven Eingangs. |
@@ -27,6 +30,7 @@ Der Funktionsblock **ADI_MUX_3** ist ein generischer Multiplexer (MUX) für drei
 – (keine)
 
 ### **Adapter**
+
 | Name | Richtung | Typ | Kommentar |
 |------|----------|-----|-----------|
 | OUT  | Plug     | adapter::types::unidirectional::ADI | Ausgangssignal; entspricht IN1 bei K=0, IN2 bei K=1, IN3 bei K=2. |
@@ -59,6 +63,7 @@ Diese Abfolge wiederholt sich bei jedem neuen **REQ**-Ereignis.
 - **Parametrierbare Kanalselektion**: Flexibles Routing von Steuerungsdaten in modularen Automatisierungssystemen.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Anzahl Eingänge | Besonderheit |
 |----------|-----------------|--------------|
 | ADI_MUX_2 | 2 | Einfachere 2‑zu‑1‑Multiplexer-Funktion. |

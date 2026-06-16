@@ -9,16 +9,19 @@ Der Funktionsblock **AIS_DEMUX_2** ist ein generischer AIS-Demultiplexer für di
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ      | Setzt den Auswahlindex K und löst die Demultiplexierung aus. Der Eingang IN wird auf den durch K bestimmten Ausgang geleitet. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF      | Bestätigt die erfolgreiche Verarbeitung des REQ-Ereignisses. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ  | Beschreibung       |
 |----------|------|--------------------|
 | K        | UINT | Index zur Auswahl des Ausgangs (1 oder 2). |
@@ -27,6 +30,7 @@ Der Funktionsblock **AIS_DEMUX_2** ist ein generischer AIS-Demultiplexer für di
 Der Funktionsblock besitzt keine Daten-Ausgänge. Die Ausgabe erfolgt ausschließlich über die Adapter-Schnittstellen.
 
 ### **Adapter**
+
 | Richtung | Name | Typ                              | Beschreibung                                   |
 |----------|------|----------------------------------|------------------------------------------------|
 | Socket   | IN   | adapter::types::unidirectional::AIS | Eingangs-AIS-Signal, das demultiplext wird. |

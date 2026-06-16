@@ -12,6 +12,7 @@ Der Funktionsblock **AULI_FB_CTU** realisiert einen Aufwärtszähler (Up Counter
 Keine eigenständigen Ereignis-Eingänge. Ereignisse werden ausschließlich über die **AX‑Adapter** der Sockets (CU, R, PV) empfangen.
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF | Event | Bestätigung der Ausführung (Execution Confirmation) – wird bei jeder Aktualisierung des Zählers ausgelöst |
@@ -23,6 +24,7 @@ Keine direkten Daten-Eingänge. Die benötigten Daten (CU‑Impuls, Reset‑Sign
 Keine direkten Daten-Ausgänge. Die Ergebniswerte (aktueller Zählerstand CV und Schwellwert‑Status Q) werden über die **AULI‑bzw. AX‑Adapter** der Plugs ausgegeben.
 
 ### **Adapter**
+
 | Richtung | Adapter‑Name | Typ | Kommentar |
 |----------|--------------|-----|-----------|
 | **Socket (Eingang)** | CU | `adapter::types::unidirectional::AX` | Count‑Up‑Impuls (Ereignis + Daten) |

@@ -23,6 +23,7 @@ Der Baustein besitzt keine direkten Ein‑/Ausgangs‑Events oder Datenports. Al
 - **AW_OUT.D1** (über Plug `AW_OUT`): Ausgangsdaten vom Typ `WORD`, die das Ergebnis der Konvertierung enthalten.
 
 ### **Adapter**
+
 | Rolle | Name  | Typ | Richtung | Kommentar |
 |-------|-------|-----|----------|-----------|
 | Socket | AD_IN | `adapter::types::unidirectional::AD` | Eingang (DWORD) | Liefert DWORD‑Daten und Ereignis. |

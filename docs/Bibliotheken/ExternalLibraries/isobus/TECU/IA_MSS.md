@@ -10,27 +10,32 @@ Der Funktionsblock **IA_MSS** stellt einen ISOBUS-Adapter für die maschinensele
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INIT | EInit | Dienstinitialisierung; wird mit dem Daten-Eingang `QI` ausgelöst. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INITO | EInit | Bestätigung der Initialisierung; liefert die Ausgangsdaten `QO` und `STATUS`. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | QI | BOOL | Qualifizierer für den Initialisierungseingang. |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | QO | BOOL | Qualifizierer für den Initialisierungsausgang. |
 | STATUS | STRING | Statusmeldung der Initialisierung. |
 
 ### **Adapter**
+
 | Adapter | Typ | Beschreibung |
 |---------|-----|--------------|
 | SPEED | adapter::types::unidirectional::AUI | Ausgang für die maschinenselektierte Geschwindigkeit (Wert vom Typ `AUI`). |

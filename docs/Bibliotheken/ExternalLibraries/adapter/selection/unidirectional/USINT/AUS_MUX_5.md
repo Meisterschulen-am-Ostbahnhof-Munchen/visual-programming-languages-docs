@@ -9,16 +9,19 @@ Der Funktionsblock **AUS_MUX_5** ist ein generischer Multiplexer, der aus fünf 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Setzt den Index K und löst die Multiplexer-Aktion aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung, dass der Index übernommen und der entsprechende Eingang auf den Ausgang gelegt wurde. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Auswahlindex: 0 → IN1, 1 → IN2, 2 → IN3, 3 → IN4, 4 → IN5. |
@@ -27,6 +30,7 @@ Der Funktionsblock **AUS_MUX_5** ist ein generischer Multiplexer, der aus fünf 
 *Keine Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
+
 | Name | Richtung | Typ | Kommentar |
 |------|----------|-----|-----------|
 | IN1  | Socket   | adapter::types::unidirectional::AUS | Erster Eingangswert (für K=0) |

@@ -21,6 +21,7 @@ Keine Daten-Eingänge vorhanden.
 Keine Daten-Ausgänge vorhanden.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Eingang (Socket) | `IN` | `adapter::types::unidirectional::AI` | Einzelner analoger Eingang, der auf alle Ausgänge verteilt wird. |

@@ -9,16 +9,19 @@ Der Funktionsblock **ADI_MUX_4** ist ein generischer Multiplexer, der über den 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Lösen die Auswahl des Index **K** aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung, dass der Index **K** gesetzt und der entsprechende Eingang auf den Ausgang geschaltet wurde. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Wertebereich | Kommentar |
 |------|-----|--------------|-----------|
 | K    | UINT | 0 … 3       | Index für die Auswahl des gewünschten Eingangsadapters. |
@@ -27,6 +30,7 @@ Der Funktionsblock **ADI_MUX_4** ist ein generischer Multiplexer, der über den 
 *Keine klassischen Datenausgänge vorhanden.* Die Ausgangsdaten werden ausschließlich über den Adapter **OUT** transportiert.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Kommentar |
 |-----|------|----------|-----------|
 | Adapter (Socket) | IN1 | Eingang | Wert für K = 0 |

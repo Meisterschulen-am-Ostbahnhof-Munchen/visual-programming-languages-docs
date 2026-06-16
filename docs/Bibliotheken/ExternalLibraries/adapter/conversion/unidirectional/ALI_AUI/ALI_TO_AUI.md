@@ -22,6 +22,7 @@ Nicht vorhanden – die Datenübergabe erfolgt über die Adapter.
 Nicht vorhanden – die Datenübergabe erfolgt über die Adapter.
 
 ### **Adapter**
+
 | Typ | Name | Kommentar |
 |------|------|-----------|
 | Socket | `ALI_IN` | Eingangsadapter vom Typ `adapter::types::unidirectional::ALI` – liefert LINT-Wert und assoziiertes Ereignis. |

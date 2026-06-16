@@ -9,12 +9,14 @@ Der Funktionsblock **INIT** dient als direkte Durchleitung von Ereignissen. Er i
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name  | Typ    | Kommentar                     |
 |-------|--------|-------------------------------|
 | INIT  | EInit  | Initialisierungsanforderung   |
 | REQ   | Event  | Dienstanforderung             |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ    | Kommentar                     |
 |-------|--------|-------------------------------|
 | INITO | EInit  | Initialisierungsbestätigung   |

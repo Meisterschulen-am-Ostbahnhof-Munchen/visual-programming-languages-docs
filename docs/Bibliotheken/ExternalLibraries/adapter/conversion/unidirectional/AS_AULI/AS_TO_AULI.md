@@ -29,6 +29,7 @@ Der Baustein besitzt **keine direkten Daten-Ausgänge**. Die Datenausgabe erfolg
 - **`AULI_OUT.D1`** – Daten-Ausgang vom Typ **ULINT**, der den konvertierten Wert liefert.
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | `AS_IN` | `adapter::types::unidirectional::AS` (Socket) | Eingang | Empfängt SINT-Werte und Auslöseereignis `E1`. |
@@ -73,6 +74,7 @@ Eine Fehlerbehandlung ist nicht explizit modelliert; der innere Baustein gibt be
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Zieltyp | Quelltyp | Besonderheit |
 |----------|---------|----------|--------------|
 | `AS_TO_AULI` | ULINT | SINT | Konvertierung SINT → ULINT |

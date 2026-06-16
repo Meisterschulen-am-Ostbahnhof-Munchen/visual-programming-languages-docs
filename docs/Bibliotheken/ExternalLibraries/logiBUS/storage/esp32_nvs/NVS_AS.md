@@ -11,16 +11,19 @@ Der Funktionsblock **NVS_AS** dient als Schnittstelle zum Lesen und Schreiben vo
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung | Mitgeführte Variablen |
 |----------|--------------|-----------------------|
 | INIT     | Initialisiert den NVS und löst das erste Laden eines gespeicherten Werts aus. | QI, KEY, DEFAULT_VALUE |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung | Mitgeführte Variablen |
 |----------|--------------|-----------------------|
 | INITO    | Bestätigung der Initialisierung und des ersten Ladevorgangs. | QO, STATUS |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ    | Beschreibung |
 |----------|--------|--------------|
 | QI       | BOOL   | Freigabe der Initialisierung (TRUE = aktivieren). |
@@ -28,12 +31,14 @@ Der Funktionsblock **NVS_AS** dient als Schnittstelle zum Lesen und Schreiben vo
 | DEFAULT_VALUE | SINT | Standardwert, der gelesen wird, falls kein Wert unter dem Schlüssel existiert. |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ    | Beschreibung |
 |----------|--------|--------------|
 | QO       | BOOL   | Bestätigt erfolgreiche Initialisierung und Betriebsbereitschaft. |
 | STATUS   | STRING | Statusmeldung (z. B. „Success“ oder Fehlertext). |
 
 ### **Adapter**
+
 | Adapter   | Typ      | Richtung | Beschreibung |
 |-----------|----------|----------|--------------|
 | AS_IN     | AS       | SOCKET   | Empfängt einen zu speichernden SINT-Wert über ein unidirektionales Adapterprotokoll (Event + Data). |

@@ -17,6 +17,7 @@ Keine.
 ### **Daten-Ausgänge**
 Keine.
 ### **Adapter**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | IN | AULI (unidirectional) | Eingangsadapter – empfängt das zu verteilende Signal. |

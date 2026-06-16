@@ -81,6 +81,7 @@ Der Ausgang `Q` (über den Adapter) wird gesetzt, sobald `Zähler ≥ PV` ist. D
 - **Adapter-basierte Automatisierungssysteme** – überall dort, wo eine einheitliche Adapter-Schnittstelle gefordert ist.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaften |
 |----------|---------------|
 | `CTU` (Standard, ohne Adapter) | Gleiche Zählfunktion, aber mit direkten Ereignis- und Dateneingängen/-ausgängen. Einfacher in klassischen IEC‑61499-Netzwerken nutzbar. |

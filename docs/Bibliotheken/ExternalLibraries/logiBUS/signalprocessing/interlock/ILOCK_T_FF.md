@@ -9,11 +9,13 @@ Der **ILOCK_T_FF** ist ein zusammengesetzter Funktionsblock (Composite FB), der 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | CLK  | Ereignis | Triggersignal zum Umschalten des Ausgangs (Toggle). |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | EO   | Ereignis | Wird ausgelöst, sobald der interne Set‑/Reset‑Latch seinen Zustand geändert hat. |
@@ -22,11 +24,13 @@ Der **ILOCK_T_FF** ist ein zusammengesetzter Funktionsblock (Composite FB), der 
 Keine Dateneingänge (die Steuerung erfolgt rein über Ereignisse und die Adapter).
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | Q    | BOOL | Aktueller Zustand des Flipflops (0 oder 1). |
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|-------------|
 | ILOCK_IN | `adapter::types::bidirectional::AE2` | Sockel (Socket) | Empfängt und sendet Lock‑Signale von bzw. an vorgeschaltete Bausteine in der Kette. |
@@ -76,6 +80,7 @@ Ein aktiver Lock liegt vor, sobald eines der Adapter‑Ereignisse (ILOCK_IN.EO1 
 - **Protokolladaption für Interlock‑Signale**: Der Baustein kann als universelles Glied in einer Verriegelungskette eingesetzt werden, bei der der Ausgang Q einen Schaltvorgang repräsentiert.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaften | Unterschied zum ILOCK_T_FF |
 |----------|---------------|----------------------------|
 | **T‑Flipflop (z.B. `E_TOGGLE`)** | Reine Toggle‑Funktion ohne Sperrlogik. | Fehlende Lock‑/Interlock‑Fähigkeit, kein Adapter‑Interface. |

@@ -17,6 +17,7 @@ Keine.
 ### **Daten-Ausgänge**
 Keine.
 ### **Adapter**
+
 | Bezeichnung | Typ | Richtung |
 |-------------|-----|----------|
 | **IN** | `adapter::types::unidirectional::AR` | Socket (Eingang) |

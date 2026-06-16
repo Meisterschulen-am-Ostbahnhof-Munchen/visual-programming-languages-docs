@@ -9,6 +9,7 @@ Der Funktionsblock `AX_AUDI_SEL_AUDI` realisiert eine binäre Auswahl (binary se
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `EI0` | Event | Setzt den Wert von `IN0` (übernimmt ihn in die interne Verarbeitung) |
@@ -18,6 +19,7 @@ Der Funktionsblock `AX_AUDI_SEL_AUDI` realisiert eine binäre Auswahl (binary se
 Die Ereignisausgabe erfolgt ausschließlich über den Adapter `OUT`. Sobald die Auswahl abgeschlossen ist, wird das Ereignis `E1` am Adapter `OUT` gesendet.
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `IN0` | UDINT | Erster auswählbarer Wert |
@@ -27,6 +29,7 @@ Die Ereignisausgabe erfolgt ausschließlich über den Adapter `OUT`. Sobald die 
 Der Ausgangswert wird ausschließlich über den Adapter `OUT` als Datenelement `D1` bereitgestellt.
 
 ### **Adapter**
+
 | Name | Typ | Rolle |
 |------|-----|-------|
 | `G` | `adapter::types::unidirectional::AX` | Liefert den Selektionssteuerwert (Ereignis `E1` + Daten `D1`) |

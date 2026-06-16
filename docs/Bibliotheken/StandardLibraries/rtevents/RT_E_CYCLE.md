@@ -30,6 +30,7 @@ Der RT_E_CYCLE Funktionsblock implementiert eine periodische Ereigniserzeugung (
 Nach dem `START`-Ereignis wird das `EO`-Ereignis periodisch mit der Zeit `DT` ausgelöst. Die Parameter `Deadline` und `WCET` dienen der Echtzeitplanung und -überwachung.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2008 ACIN |

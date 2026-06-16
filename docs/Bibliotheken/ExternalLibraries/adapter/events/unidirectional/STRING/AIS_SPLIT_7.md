@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Socket (Eingang) | IN | `adapter::types::unidirectional::AIS` | Eingehender AIS-Datenstrom, der auf alle Ausgänge verteilt wird. |

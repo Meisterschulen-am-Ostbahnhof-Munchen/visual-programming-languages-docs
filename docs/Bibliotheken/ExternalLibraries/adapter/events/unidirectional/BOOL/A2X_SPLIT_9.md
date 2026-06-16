@@ -21,6 +21,7 @@ Keine
 Keine
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | Socket | IN | Eingang | Eingehender A2X-Adapter, dessen Signale auf die neun Ausgänge verteilt werden. |

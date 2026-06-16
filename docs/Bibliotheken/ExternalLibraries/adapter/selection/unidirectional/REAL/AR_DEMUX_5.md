@@ -9,16 +9,19 @@ Der Funktionsblock AR_DEMUX_5 ist ein generischer Demultiplexer (Demultiplexor) 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ | Event | Setzt den Index K und löst die Demultiplexierung aus. (Mit Daten-Eingang K) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF | Event | Bestätigung, dass der Index K verarbeitet und der Eingangswert an den entsprechenden Ausgang weitergeleitet wurde. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K | UINT | Index (1 bis 5) zur Auswahl des Zielausgangs. |
@@ -27,6 +30,7 @@ Der Funktionsblock AR_DEMUX_5 ist ein generischer Demultiplexer (Demultiplexor) 
 – Keine –
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Kommentar |
 |-----|------|----------|-----------|
 | adatper::types::unidirectional::AR | IN | Socket | Eingangsadapter, der die zu demultiplexenden Daten bereitstellt. |

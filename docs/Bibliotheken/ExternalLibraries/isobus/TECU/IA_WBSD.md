@@ -9,27 +9,32 @@ Der Funktionsblock **IA_WBSD** (ISOBUS Adapter for Wheel Based Speed and Distanc
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | INIT     | EInit | Service Initialization |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | INITO    | EInit | Initialization Confirm |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | QI   | BOOL | Event Input Qualifier (Initialisierungsfreigabe) |
 
 ### **Daten-Ausgänge**
+
 | Name   | Typ   | Kommentar |
 |--------|-------|-----------|
 | QO     | BOOL  | Event Output Qualifier (Initialisierungsergebnis) |
 | STATUS | STRING| Statusmeldung (z. B. Fehler oder Erfolg) |
 
 ### **Adapter**
+
 | Adapter  | Typ | Kommentar |
 |----------|-----|-----------|
 | SPEED    | adapter::types::unidirectional::AUI | Wheel‑based machine speed (unidirektional, analoger Wert) |

@@ -9,17 +9,20 @@ Der Funktionsblock **logiBUS_IBA** ist ein zusammengesetzter Baustein (Composite
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INIT | EInit | Service-Initialisierung; übernimmt die Konfigurationsparameter (QI, PARAMS, Input, InputEvent) |
 | REQ | Event | Service-Anforderung zur Ausführung einer Funktion (abhängig von QI) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INITO | EInit | Initialisierungsbestätigung; signalisiert erfolgreiche oder fehlgeschlagene Initialisierung (QO, STATUS) |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | QI | BOOL | Qualifizierer für Ereigniseingänge; steuert die Aktivierung der Ereignisverarbeitung |
@@ -28,12 +31,14 @@ Der Funktionsblock **logiBUS_IBA** ist ein zusammengesetzter Baustein (Composite
 | InputEvent | logiBUS::io::DI::logiBUS_DI_Events_S | Auswahl des Ereignistyps (derzeit nur `REPEAT` unterstützt); Standardwert: `logiBUS_DI_Events::Invalid` |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | QO | BOOL | Qualifizierer für Ereignisausgänge; zeigt den Erfolg der Operation an |
 | STATUS | STRING | Statusmeldung (z. B. Fehler- oder Erfolgsmeldung) |
 
 ### **Adapter**
+
 | Adapter | Typ | Beschreibung |
 |---------|-----|--------------|
 | IN | adapter::types::unidirectional::AB | Unidirektionaler Adapter zur Bereitstellung der Eingabedaten an die übergeordnete Ressource |

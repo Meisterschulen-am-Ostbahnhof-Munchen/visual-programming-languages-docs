@@ -26,6 +26,7 @@ Der Baustein ermöglicht millisekundengenaue Zeitmessungen zwischen Ereignissen 
 - `RESETO`: Bestätigung des Reset-Vorgangs
 
 ### **Daten-Ausgänge**
+
 | Parameter | Typ | Beschreibung | Genauigkeit |
 |-----------|-----|--------------|-------------|
 | `TD` | TIME | Gemessene Zeitdifferenz | 1 ms |

@@ -10,26 +10,31 @@ Der Funktionsblock **AX_FB_TOF_LTIME** realisiert einen Standard-Timer für die 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `REQ` | Normaler Ausführungsauftrag (nicht auslösend) – startet bzw. aktualisiert die Timerberechnung. Der zugehörige Daten-Eingang ist `PT`. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `CNF` | Bestätigung der Ausführung – signalisiert den Abschluss einer Timeraktualisierung. Der zugehörige Daten-Ausgang ist `ET`. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ | Kommentar |
 |----------|-----|-----------|
 | `PT` | `LTIME` | Prozesszeit – die gewünschte Ausschaltverzögerungsdauer. |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ | Kommentar |
 |----------|-----|-----------|
 | `ET` | `LTIME` | Verstrichene Zeit – die bereits abgelaufene Zeit seit Start der Verzögerung. |
 
 ### **Adapter**
+
 | Richtung | Adaptertyp | Kommentar |
 |----------|------------|-----------|
 | **Socket** `IN` | `adapter::types::unidirectional::AX` | Eingangsadapter – nimmt das binäre Steuersignal entgegen (z. B. über Ereignis `E1` und Daten `D1`). |
@@ -57,6 +62,7 @@ Die Variable `ET` wird direkt vom Timer übernommen und zeigt jederzeit die aktu
 - **Interne Struktur**: Der Baustein kombiniert einen reinen Timer (`FB_TOF_LTIME`) mit einem flankengetriggerten D‑Flipflop, um das Ausschaltverzögerungsverhalten zu realisieren.
 
 ## Zustandsübersicht
+
 | Zustand | Eingang `IN` | Ausgang `Q` | Verstrichene Zeit `ET` |
 |---------|--------------|-------------|------------------------|
 | Inaktiv / Bereit | TRUE | TRUE | 0 (Null) |

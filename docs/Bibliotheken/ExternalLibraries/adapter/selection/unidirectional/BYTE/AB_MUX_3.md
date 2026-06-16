@@ -10,16 +10,19 @@ Der Funktionsbaustein `AB_MUX_3` ist ein generischer Multiplexer für Adapter vo
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name  | Typ   | Kommentar                |
 |-------|-------|--------------------------|
 | `REQ` | Event | Set Index K (mit Var `K`)|
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ   | Kommentar                       |
 |-------|-------|----------------------------------|
 | `CNF` | Event | Confirmation of Set Index K      |
 
 ### **Daten-Eingänge**
+
 | Name | Typ   | Kommentar   |
 |------|-------|-------------|
 | `K`  | UINT  | Index (0-2) |
@@ -28,6 +31,7 @@ Der Funktionsbaustein `AB_MUX_3` ist ein generischer Multiplexer für Adapter vo
 Keine.
 
 ### **Adapter**
+
 | Name | Richtung | Typ                                  | Kommentar                     |
 |------|----------|--------------------------------------|-------------------------------|
 | `OUT`| Plug     | `adapter::types::unidirectional::AB` | Ausgang – verbindet den ausgewählten Eingang |

@@ -23,6 +23,7 @@ Der FB besitzt keine direkten Ereignis‑ oder Dateneingänge/-ausgänge. Die ge
 - **Q.D1** (über Plug `Q`): Datenausgang – der gespeicherte, latched Wert.
 
 ### **Adapter**
+
 | Adapter  | Typ                      | Richtung | Beschreibung                     |
 |----------|--------------------------|----------|----------------------------------|
 | `I`      | adapter::types::unidirectional::ALR | Socket (Eingang) | Liefert das Taktereignis und den Datenwert. |

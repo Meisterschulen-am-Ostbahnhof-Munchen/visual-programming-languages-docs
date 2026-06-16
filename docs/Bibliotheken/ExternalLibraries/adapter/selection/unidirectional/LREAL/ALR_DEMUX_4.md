@@ -10,16 +10,19 @@ Der Funktionsblock **ALR_DEMUX_4** fungiert als ein Demultiplexer für datenstro
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **REQ** | Auslöser für die Umschaltung des Datenpfads. Der zugehörige Daten-Eingang K wird dabei ausgewertet. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF** | Bestätigung, dass der Datenpfad entsprechend K gesetzt wurde. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ    | Beschreibung |
 |------|--------|--------------|
 | **K** | UINT   | Index des gewünschten Ausgangs (Wertebereich 1..4). |
@@ -28,6 +31,7 @@ Der Funktionsblock **ALR_DEMUX_4** fungiert als ein Demultiplexer für datenstro
 Keine direkten Daten-Ausgänge vorhanden. Die Datenweitergabe erfolgt ausschließlich über die Adapter-Schnittstellen.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | Socket (Input) | **IN** | unidirektional | ALR-Eingang, der verteilt werden soll. |

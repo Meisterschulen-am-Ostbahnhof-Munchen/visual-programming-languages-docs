@@ -20,6 +20,7 @@ Der FB besitzt keine direkten, separaten Ereignis-Eingänge. Die erforderlichen 
 | PV     | E1                    | Vorgabeaktualisierung        |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ    | Beschreibung                                              |
 |------|--------|-----------------------------------------------------------|
 | CNF  | Event  | Bestätigungsereignis nach jeder Zähleraktualisierung (CD, LD, PV) |
@@ -38,6 +39,7 @@ Es gibt keine direkten Daten-Ausgänge. Die Ausgangsdaten werden über die Plug-
 - **CV** liefert den aktuellen Zählerstand (D1) – INT.
 
 ### **Adapter**
+
 | Bezeichnung | Richtung | Typ                               | Beschreibung                                         |
 |-------------|----------|-----------------------------------|------------------------------------------------------|
 | CD          | Socket   | `adapter::types::unidirectional::AX` | Zählereingang (Ereignis + Daten) für Abwärtszählen   |

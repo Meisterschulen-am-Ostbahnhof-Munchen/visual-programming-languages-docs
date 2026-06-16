@@ -11,16 +11,19 @@ Der Funktionsblock **AUS_D_FF_HYS_TMIN** realisiert ein datengetriggertes Flip-F
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ   | Mit Variablen         | Beschreibung                                      |
 |----------|-------|-----------------------|---------------------------------------------------|
 | `INIT`   | EInit | `HYSTERESIS`, `Tmin`  | Initialisierungsanforderung; setzt Hysterese und Mindestzeit. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ   | Mit Variablen | Beschreibung                                  |
 |----------|-------|---------------|-----------------------------------------------|
 | `INITO`  | EInit | –             | Bestätigung der abgeschlossenen Initialisierung. |
 
 ### **Daten-Eingänge**
+
 | Name         | Typ      | Beschreibung                                                     |
 |--------------|----------|------------------------------------------------------------------|
 | `HYSTERESIS` | ANY_NUM  | Hystereseband – Schwellwertdifferenz, die über‑/unterschritten werden muss, damit ein neuer Wert gelatcht wird. |
@@ -30,6 +33,7 @@ Der Funktionsblock **AUS_D_FF_HYS_TMIN** realisiert ein datengetriggertes Flip-F
 – Keine direkten Datenausgänge vorhanden. Der gelatchte Wert wird über den Adapter‑Plug `Q` ausgegeben.
 
 ### **Adapter**
+
 | Adapter | Richtung    | Typ                                 | Beschreibung                                                              |
 |---------|-------------|--------------------------------------|---------------------------------------------------------------------------|
 | `I`     | Socket (In) | `adapter::types::unidirectional::AUS`| Empfängt das zu latchende Ereignis und den dazugehörigen Datenwert.      |

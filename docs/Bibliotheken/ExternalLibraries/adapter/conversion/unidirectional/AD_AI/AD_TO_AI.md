@@ -26,6 +26,7 @@ Auch diese werden ausschließlich über die Adapter bereitgestellt:
 - **AI_OUT.D1** (INT) – Der konvertierte Wert, der über den AI‑Adapter nach außen gegeben wird.
 
 ### **Adapter**
+
 | Adaptertyp | Richtung | Typ | Beschreibung |
 |-----------|----------|-----|--------------|
 | Socket | Eingang | `adapter::types::unidirectional::AD` | Empfängt einen DWORD‑Wert (über Ereignis E1 und Daten D1). |

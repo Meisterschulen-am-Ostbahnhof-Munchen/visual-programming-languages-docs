@@ -21,6 +21,7 @@ Der Baustein besitzt keine expliziten Ereignis-Ausgänge auf der obersten Ebene.
 - **BIT_00.D1 … BIT_07.D1** – über die Plug‑Adapter **BIT_00** bis **BIT_07** (Typ AX) werden die einzelnen booleschen Werte der Bits (Bit 0 bis Bit 7) ausgegeben.
 
 ### **Adapter**
+
 | Adapter | Typ                          | Richtung | Beschreibung                               |
 |---------|------------------------------|----------|--------------------------------------------|
 | IN      | adapter::types::unidirectional::AB | Socket (Eingang) | BYTE‑Wert, wird in Einzelbits zerlegt     |

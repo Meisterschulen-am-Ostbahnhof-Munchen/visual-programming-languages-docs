@@ -26,6 +26,7 @@ Daten-Ausgänge werden über den **Plug-Adapter `AS_OUT`** bereitgestellt:
 > Hinweis: Ein `UDINT`-Wert größer als 127 wird durch die Konvertierung abgeschnitten oder interpretiert (abhängig von der Implementierung von `F_UDINT_TO_SINT`).  
 
 ### **Adapter**
+
 | Name      | Typ                                       | Richtung | Beschreibung                     |
 |-----------|-------------------------------------------|----------|----------------------------------|
 | `AUDI_IN` | `adapter::types::unidirectional::AUDI`    | Socket   | Eingangsadapter (UDINT)          |

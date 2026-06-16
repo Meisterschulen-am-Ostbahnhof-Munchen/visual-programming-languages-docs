@@ -10,16 +10,19 @@ Der **AQ_MUX_2** ist ein generischer 2‑Kanal‑Multiplexer für analoge Ausgan
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **REQ**  | Mit diesem Ereignis wird die Umschaltung des Multipexers ausgelöst. Der aktuelle Wert von `K` bestimmt, welcher Eingang zum Ausgang durchgeschaltet wird. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF**  | Bestätigt die erfolgreiche Ausführung der durch `REQ` angeforderten Auswahl. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ   | Beschreibung |
 |------|-------|--------------|
 | **K** | UINT  | Index für die Auswahl des Eingangs. Gültige Werte: `0` → IN1, `1` → IN2. Werte außerhalb dieses Bereichs sind undefiniert. |
@@ -28,6 +31,7 @@ Der **AQ_MUX_2** ist ein generischer 2‑Kanal‑Multiplexer für analoge Ausgan
 Der Baustein besitzt keine eigenständigen Datenausgänge; die Ausgangsdaten werden über den Adapter `OUT` bereitgestellt.
 
 ### **Adapter**
+
 | Rolle | Name | Typ (Adapter) | Beschreibung |
 |-------|------|---------------|--------------|
 | Plug  | **OUT**  | `adapter::types::unidirectional::AQ` | Ausgewählter analoger Ausgangswert. |

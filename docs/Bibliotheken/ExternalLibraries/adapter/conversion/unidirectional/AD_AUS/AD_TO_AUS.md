@@ -22,6 +22,7 @@ Der Adapter-Eingang **AD_IN** liefert einen DWORD-Wert (32‑Bit) über die Date
 Der Adapter-Ausgang **AUS_OUT** stellt den konvertierten USINT-Wert (8‑Bit) über die Datenleitung **D1** zur Verfügung.
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | **AD_IN** | `adapter::types::unidirectional::AD` | Eingang (Socket) | Nimmt DWORD‑Daten und Steuerereignisse auf. |

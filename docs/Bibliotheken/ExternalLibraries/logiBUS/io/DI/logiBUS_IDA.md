@@ -10,17 +10,20 @@ Der **logiBUS_IDA** ist ein Composite-Funktionsblock (CFB) zur digitalen Doppelw
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ   | Beschreibung |
 |----------|-------|--------------|
 | INIT     | EInit | Service-Initialisierung; erwartet gültige Parameter (QI, PARAMS, Input, InputEvent) |
 | REQ      | Event | Service-Anforderung; triggert eine erneute Datenabfrage am internen Baustein |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ   | Beschreibung |
 |----------|-------|--------------|
 | INITO    | EInit | Initialisierungsbestätigung; gibt den Status (QO, STATUS) zurück |
 
 ### **Daten-Eingänge**
+
 | Variable      | Typ                         | Beschreibung |
 |---------------|-----------------------------|--------------|
 | QI            | BOOL                        | Qualifizierer für den Ereigniseingang; steuert die Ausführung |
@@ -29,12 +32,14 @@ Der **logiBUS_IDA** ist ein Composite-Funktionsblock (CFB) zur digitalen Doppelw
 | InputEvent    | logiBUS_DI_Events_S         | Auswahl des Ereignistyps (aktuell nur *REPEAT* unterstützt); Vorgabewert: *Invalid* |
 
 ### **Daten-Ausgänge**
+
 | Variable      | Typ    | Beschreibung |
 |---------------|--------|--------------|
 | QO            | BOOL   | Qualifizierer des Ausgangsereignisses |
 | STATUS        | STRING | Dienststatus (z. B. Fehlermeldungen oder Betriebszustand) |
 
 ### **Adapter**
+
 | Adapter | Typ                          | Beschreibung |
 |---------|------------------------------|--------------|
 | IN      | adapter::types::unidirectional::AD | Unidirektionaler Eingangsadapter zur Aufnahme der digitalen Doppelwortdaten aus der Ressource |

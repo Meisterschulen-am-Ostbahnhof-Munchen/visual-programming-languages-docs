@@ -9,16 +9,19 @@ Der ADI_DEMUX_2 ist ein generischer Demultiplexer-Funktionsbaustein, der ein üb
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ      | Trigger zum Setzen des Index K; löst die Umschaltung aus |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF      | Bestätigung der erfolgreichen Indexauswahl und Weiterleitung |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ  | Beschreibung         |
 |----------|------|----------------------|
 | K        | UINT | Index (1 oder 2) zur Auswahl des Zielausgangs |
@@ -27,6 +30,7 @@ Der ADI_DEMUX_2 ist ein generischer Demultiplexer-Funktionsbaustein, der ein üb
 Keine Datenausgänge – die Ausgabe erfolgt ausschließlich über die Adapter.
 
 ### **Adapter**
+
 | Richtung | Name | Typ                                           | Beschreibung                              |
 |----------|------|-----------------------------------------------|-------------------------------------------|
 | Socket   | IN   | adapter::types::unidirectional::ADI           | Eingangssignal, das demultiplext wird      |

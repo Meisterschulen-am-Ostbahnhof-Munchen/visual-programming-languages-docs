@@ -9,16 +9,19 @@ Der Funktionsblock `ATM_D_FF_TMIN` realisiert ein taktgesteuertes D‑Flipflop (
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name  | Typ    | Kommentar                        |
 |-------|--------|----------------------------------|
 | INIT  | EInit  | Initialisierungsanforderung (mit `Tmin`) |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ    | Kommentar                        |
 |-------|--------|----------------------------------|
 | INITO | EInit  | Initialisierungsbestätigung      |
 
 ### **Daten-Eingänge**
+
 | Name  | Typ    | Kommentar                                      |
 |-------|--------|------------------------------------------------|
 | Tmin  | TIME   | Minimaler zeitlicher Abstand zwischen zwei EO-Ereignissen |
@@ -27,6 +30,7 @@ Der Funktionsblock `ATM_D_FF_TMIN` realisiert ein taktgesteuertes D‑Flipflop (
 Der Baustein besitzt keine direkten Datenausgänge. Der gespeicherte Wert wird über den Adapter-Ausgang `Q.D1` bereitgestellt.
 
 ### **Adapter**
+
 | Richtung | Name | Typ                                      | Kommentar            |
 |----------|------|------------------------------------------|----------------------|
 | Eingang (Socket) | I    | `adapter::types::unidirectional::ATM`    | Zu übernehmender Wert |

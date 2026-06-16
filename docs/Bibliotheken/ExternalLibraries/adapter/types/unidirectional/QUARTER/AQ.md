@@ -12,6 +12,7 @@ Der Adapter `AQ` stellt eine unidirektionale Schnittstelle (Plug-Seite) für die
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | E1 | Event | Indication (or Request) Event from Plug (wird zusammen mit D1 ausgelöst) |
@@ -20,6 +21,7 @@ Keine.
 Keine.
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | D1 | BYTE | Indication (or Request) Data from Plug (2 Bit genutzt) |
@@ -45,6 +47,7 @@ Der Adapter selbst besitzt keinen internen Zustand. Der sendende Funktionsbauste
 - Als Teil einer übergeordneten Adapter-Paarung für minimale, gerichtete Kommunikation zwischen FBs.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Merkmal | AQ (dieser Adapter) | Andere Adapter (z. B. mit mehreren Events) |
 |---------|---------------------|--------------------------------------------|
 | Ereignisse | 1 Ausgang | Oft mehrere Ein-/Ausgänge |

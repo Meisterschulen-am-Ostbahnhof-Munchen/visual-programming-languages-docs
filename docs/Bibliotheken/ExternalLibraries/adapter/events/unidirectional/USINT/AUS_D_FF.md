@@ -21,6 +21,7 @@ Keine direkten Daten-Eingänge. Die zu speichernden Daten werden über den Adapt
 Keine direkten Daten-Ausgänge. Der gespeicherte Wert wird über den Adapter‑Ausgang **Q** ausgegeben.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | **I** | Socket | `adapter::types::unidirectional::AUS` | Liefert das zu latchende Signal (Ereignis E1 und Daten D1). |

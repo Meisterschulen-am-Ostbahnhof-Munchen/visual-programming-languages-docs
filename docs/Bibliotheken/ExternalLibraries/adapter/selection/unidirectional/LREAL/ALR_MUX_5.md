@@ -11,16 +11,19 @@ Der Funktionsblock **ALR_MUX_5** ist ein generischer Multiplexer für den Adapte
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Setzt den Index K und übernimmt die Auswahl |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung der Ausführung nach REQ |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Wertebereich | Kommentar |
 |------|-----|--------------|-----------|
 | K    | UINT | 0 .. 4       | Index des auszuwählenden Eingangs |
@@ -31,6 +34,7 @@ Der Funktionsblock **ALR_MUX_5** ist ein generischer Multiplexer für den Adapte
 ### **Adapter**
 
 **Sockets (Eingänge)**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | IN1  | adapter::types::unidirectional::ALR | Eingangswert 1 (K = 0) |
@@ -40,6 +44,7 @@ Der Funktionsblock **ALR_MUX_5** ist ein generischer Multiplexer für den Adapte
 | IN5  | adapter::types::unidirectional::ALR | Eingangswert 5 (K = 4) |
 
 **Plug (Ausgang)**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | OUT  | adapter::types::unidirectional::ALR | Ausgang: liefert den ausgewählten Eingangswert |

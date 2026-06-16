@@ -10,16 +10,19 @@ Der Funktionsblock **AI_DEMUX_3** realisiert einen generischen Demultiplexer fü
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ      | Übernimmt den Index **K** und leitet den aktuellen Wert des Adapter-Eingangs **IN** auf den entsprechenden Adapter-Ausgang (**OUT1**, **OUT2** oder **OUT3**) um. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF      | Bestätigt die erfolgreiche Weiterleitung nach Bearbeitung eines **REQ**-Ereignisses. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Beschreibung |
 |------|------|--------------|
 | K    | UINT | Index zur Auswahl des Ausgangs (gültige Werte: 1, 2, 3). |
@@ -28,6 +31,7 @@ Der Funktionsblock **AI_DEMUX_3** realisiert einen generischen Demultiplexer fü
 Keine Datenausgänge vorhanden – die Ausgabe erfolgt ausschließlich über die Adapter-Ausgänge.
 
 ### **Adapter**
+
 | Typ   | Name  | Richtung | Beschreibung |
 |-------|-------|----------|--------------|
 | AI    | IN    | Socket   | Eingangsadapter für den zu verteilenden analogen Wert. |

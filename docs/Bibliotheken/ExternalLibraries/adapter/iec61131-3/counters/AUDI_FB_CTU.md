@@ -37,6 +37,7 @@ Auch die Daten werden **über die Adapter‑Sockets** bereitgestellt:
 * **CV.D1** (UDINT, über Adapter CV) – Aktueller Zählerstand (Count Value).
 
 ### **Adapter**
+
 | Adapter-Typ | Richtung | Name | Kurzbeschreibung |
 |-------------|----------|------|------------------|
 | `AX` (unidirectional) | Socket (Eingang) | CU | Liefert das Zählimpuls‑Ereignis und einen flankenbewerteten Datenwert. |

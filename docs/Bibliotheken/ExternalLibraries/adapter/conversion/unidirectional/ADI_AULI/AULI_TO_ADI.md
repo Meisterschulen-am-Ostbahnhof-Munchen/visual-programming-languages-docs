@@ -23,6 +23,7 @@ Keine (ausschließlich über Adapter).
 Keine (ausschließlich über Adapter).
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AULI` | `AULI_IN` | Socket / Eingang | Aufnahme eines ULINT‑Werts über Ereignis‑ und Datenkanäle (E1, D1) |

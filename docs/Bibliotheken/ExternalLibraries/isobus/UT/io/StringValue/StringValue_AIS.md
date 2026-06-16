@@ -9,17 +9,20 @@ Der Funktionsblock **StringValue_AIS** ist ein Dienstschnittstellen-Baustein (Se
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Mit Variablen | Beschreibung |
 |----------|-----|---------------|--------------|
 | INIT | EInit | QI, PARAMS, u16ObjId | Initialisiert den Dienst und übergibt Qualifier, Parameter und Objekt-ID. |
 | REQ | Event | QI | Fordert eine Datenabfrage oder -verarbeitung an. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Mit Variablen | Beschreibung |
 |----------|-----|---------------|--------------|
 | INITO | EInit | QO, STATUS | Bestätigt die Initialisierung und liefert Statusinformationen. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ | Initialwert | Beschreibung |
 |----------|-----|-------------|--------------|
 | QI | BOOL | – | Qualifier für Ereignisse (TRUE = aktiv). |
@@ -27,12 +30,14 @@ Der Funktionsblock **StringValue_AIS** ist ein Dienstschnittstellen-Baustein (Se
 | u16ObjId | UINT | ID_NULL | Objekt-ID, die im Protokoll referenziert wird. |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | QO | BOOL | Ausgangsqualifier (Bestätigung des Dienstes). |
 | STATUS | STRING | Statusmeldung des Dienstes (z. B. Fehlertext oder Erfolgsmeldung). |
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | IN | adapter::types::unidirectional::AIS | Eingang | Unidirektionaler Adapter für den Datenaustausch mit einer externen Ressource (z. B. Hardware-Schnittstelle). |

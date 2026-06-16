@@ -9,16 +9,19 @@ Der Funktionsblock **AULI_DEMUX_3** realisiert einen generischen Demultiplexer f
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Beschreibung             | Mit Variablen |
 |------|-------|--------------------------|---------------|
 | REQ  | Event | Setzt den Index K und löst die Weiterleitung aus | K (UINT) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Beschreibung                      |
 |------|-------|-----------------------------------|
 | CNF  | Event | Bestätigung der erfolgten Weiterleitung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Beschreibung                 |
 |------|------|------------------------------|
 | K    | UINT | Index des Zielausgangs (1..3) |

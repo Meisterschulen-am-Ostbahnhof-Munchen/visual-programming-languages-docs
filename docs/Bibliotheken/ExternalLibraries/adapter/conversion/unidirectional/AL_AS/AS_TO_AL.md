@@ -23,6 +23,7 @@ Der Baustein besitzt **keine direkten Ereignis- oder Datenschnittstellen** auf o
 - Keine (Daten werden über den Plug-Adapter AL_OUT bereitgestellt)
 
 ### **Adapter**
+
 | Name   | Typ                                    | Richtung | Beschreibung                     |
 |--------|----------------------------------------|----------|----------------------------------|
 | AS_IN  | adapter::types::unidirectional::AS     | Socket   | SINT-Adapter (Eingang)           |

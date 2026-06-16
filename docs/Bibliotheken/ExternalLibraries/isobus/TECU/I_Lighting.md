@@ -9,11 +9,13 @@ Der Funktionsblock **I_Lighting** verarbeitet die Beleuchtungsdaten eines landwi
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung | Mitgeführte Daten |
 |----------|-----|--------------|-------------------|
 | INIT | EInit | Initialisiert den Baustein und aktiviert die Verarbeitung. | QI |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung | Mitgeführte Daten |
 |----------|-----|--------------|-------------------|
 | INITO | EInit | Bestätigt die erfolgreiche Initialisierung. | QO, STATUS |
@@ -21,11 +23,13 @@ Der Funktionsblock **I_Lighting** verarbeitet die Beleuchtungsdaten eines landwi
 | TIMEOUT | Event | Wird ausgelöst, wenn die erwarteten Daten ausbleiben (Zeitüberschreitung). | timestamp_timeout, STATUS, Q_timeout |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|-------------|
 | QI | BOOL | Aktivierungssignal für die Initialisierung; bei TRUE wird der Baustein gestartet. |
 
 ### **Daten-Ausgänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|-------------|
 | QO | BOOL | Quittierungssignal nach erfolgreicher Initialisierung oder Datenverarbeitung. |

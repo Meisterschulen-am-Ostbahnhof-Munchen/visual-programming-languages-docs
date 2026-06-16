@@ -9,16 +9,19 @@ Der Funktionsblock **AUI_DEMUX_5** ist ein generischer Demultiplexer für das AU
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | `REQ`    | Event    | Auslöser zum Setzen des Index `K` und zur Weiterleitung des Eingangssignals auf den entsprechenden Ausgang. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | `CNF`    | Event    | Bestätigung, dass die Indexumschaltung und Weiterleitung abgeschlossen sind. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Beschreibung |
 |------|------|--------------|
 | `K`  | UINT | Ganzzahliger Index (1 … 5), der den Zielausgang festlegt. |
@@ -27,6 +30,7 @@ Der Funktionsblock **AUI_DEMUX_5** ist ein generischer Demultiplexer für das AU
 Keine Datenausgänge vorhanden.
 
 ### **Adapter**
+
 | Typ            | Richtung | Anzahl | Beschreibung |
 |----------------|----------|--------|--------------|
 | IN             | Socket   | 1      | Eingangsadapter vom Typ `AUI` (unidirektional). Das zu verteilende Signal gelangt hier an. |
@@ -59,6 +63,7 @@ Der FB besitzt keine explizit modellierten Zustände (ECC). Sein Verhalten entsp
 - **Ressourcenoptimierung:** Reduzierung der Anzahl physischer Leitungen, indem dieselbe AUI‑Verbindung zeitlich gemultiplext und dann im Empfänger demultiplext wird.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein        | Anzahl Ausgänge | Besonderheiten |
 |-----------------|-----------------|----------------|
 | `AUI_DEMUX_2`   | 2               | Einfacher 2‑fach Demultiplexer. |

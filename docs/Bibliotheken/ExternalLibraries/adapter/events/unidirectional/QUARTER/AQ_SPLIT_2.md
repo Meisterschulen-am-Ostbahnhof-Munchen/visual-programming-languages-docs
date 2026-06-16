@@ -21,6 +21,7 @@ Keine Daten-Eingänge vorhanden.
 Keine Daten-Ausgänge vorhanden.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |------|------|----------|--------------|
 | `adapter::types::unidirectional::AQ` | `IN` | Socket (Eingang) | Eingangsadapter für das zu teilende AQ-Signal. |

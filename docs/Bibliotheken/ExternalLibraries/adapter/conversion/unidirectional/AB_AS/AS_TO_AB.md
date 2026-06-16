@@ -13,26 +13,31 @@ Der Baustein nutzt intern die IEC‑61131-Funktion **F_SINT_TO_BYTE** und ist al
 Da der FB über keine direkten Ereignis- oder Datenports verfügt, werden Ein- und Ausgänge über die folgenden Adapter bereitgestellt:
 
 ### **Ereignis-Eingänge**
+
 | Port | Beschreibung |
 |------|--------------|
 | `AS_IN.E1` | Startet die Konvertierung eines SINT-Werts. |
 
 ### **Ereignis-Ausgänge**
+
 | Port | Beschreibung |
 |------|--------------|
 | `AB_OUT.E1` | Signalisiert den Abschluss der Konvertierung. |
 
 ### **Daten-Eingänge**
+
 | Port | Datentyp | Beschreibung |
 |------|----------|--------------|
 | `AS_IN.D1` | SINT | Der zu konvertierende Wert (Signed Short Integer). |
 
 ### **Daten-Ausgänge**
+
 | Port | Datentyp | Beschreibung |
 |------|----------|--------------|
 | `AB_OUT.D1` | BYTE | Der konvertierte Wert (Byte). |
 
 ### **Adapter**
+
 | Bezeichnung | Typ | Richtung | Kommentar |
 |-------------|-----|----------|-----------|
 | `AS_IN` | `adapter::types::unidirectional::AS` | Socket (Eingang) | SINT Adapter Eingang |

@@ -9,16 +9,19 @@ Der **AI_MUX_5** ist ein generischer Analog-Eingangs-Multiplexer, der es ermögl
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | REQ  | Event | Löst die Auswahl des Eingangs aus. Das Ereignis übernimmt den aktuellen Wert von **K** und setzt den entsprechenden Eingang auf den Ausgang. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | CNF  | Event | Bestätigt die erfolgreiche Auswahl. Wird nach dem Durchschalten des Multiplexers ausgegeben. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | K    | UINT | Auswahlindex (0…4). Legt fest, welcher der fünf Eingänge (IN1 bis IN5) auf den Ausgang OUT geschaltet wird. |
@@ -27,6 +30,7 @@ Der **AI_MUX_5** ist ein generischer Analog-Eingangs-Multiplexer, der es ermögl
 Der Baustein besitzt keine direkten Datenausgänge. Die Ausgabe erfolgt über den **Adapter-Ausgang OUT**, der die analogen Werte des gewählten Eingangs weitergibt.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Plug     | OUT  | adapter::types::unidirectional::AI | Ausgangsadapter, der den Wert des ausgewählten analogen Eingangs bereitstellt. |

@@ -10,16 +10,19 @@ Der Funktionsblock **ADI_DEMUX_5** ist ein generischer Demultiplexer für den ad
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `REQ`    | Startet die Demultiplex-Operation. Der aktuelle Wert von K bestimmt den Zielausgang. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF`    | Wird gesendet, sobald die Übertragung des Wertes an den gewählten Ausgang abgeschlossen ist. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | `K`      | UINT  | Index des Zielausgangs (1‑basiert: 1 → OUT1, …, 5 → OUT5). |
@@ -28,6 +31,7 @@ Der Funktionsblock **ADI_DEMUX_5** ist ein generischer Demultiplexer für den ad
 Keine direkten Datenausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über die Adapter.
 
 ### **Adapter**
+
 | Rolle | Name  | Typ (Adapter) | Beschreibung |
 |-------|-------|---------------|--------------|
 | Socket | `IN`   | ADI (unidirektional) | Eingangswert, der demultiplext werden soll. |

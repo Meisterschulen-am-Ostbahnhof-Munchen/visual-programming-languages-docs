@@ -9,16 +9,19 @@ Der Funktionsblock SET_UINT dient dazu, einen UINT-Wert, der an einem Dateneinga
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Beschreibung               |
 |------|-------|----------------------------|
 | REQ  | Event | Normaler Ausführungsbefehl  |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Beschreibung                   |
 |------|-------|--------------------------------|
 | CNF  | Event | Bestätigung der Ausführung      |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Initialwert | Beschreibung                |
 |------|------|-------------|-----------------------------|
 | IN   | UINT | 0           | Wert, der geschrieben wird  |
@@ -43,6 +46,7 @@ Die InOut‑Variable `OUT` wird dabei als referenzierte Variable interpretiert �
 - **Keine Zustandsautomaten:** Der FB besitzt nur einen Einstiegszustand (`REQ`), eine Zustandsänderung oder Schleifen sind nicht vorgesehen.
 
 ## Zustandsübersicht
+
 | Zustand | Aktion | Ausgabe |
 |---------|--------|---------|
 | REQ     | `OUT := IN` | CNF     |

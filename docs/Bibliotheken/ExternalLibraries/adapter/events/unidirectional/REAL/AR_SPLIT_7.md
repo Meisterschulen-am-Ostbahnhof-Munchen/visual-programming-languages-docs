@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AR` | IN | Socket | Eingehender AR‑Adapter, der auf die sieben Ausgänge verteilt wird. |

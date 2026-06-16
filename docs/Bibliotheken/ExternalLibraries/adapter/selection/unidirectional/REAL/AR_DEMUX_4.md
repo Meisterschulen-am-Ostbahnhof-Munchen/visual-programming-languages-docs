@@ -9,16 +9,19 @@ Der Funktionsblock `AR_DEMUX_4` ist ein generischer Demultiplexer für den AR‑
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ | Event | Set Index K und löse Demultiplexing aus |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF | Event | Bestätigung der Verarbeitung von K |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K | UINT | Index des gewünschten Ausgangskanals (1..4) |
@@ -27,6 +30,7 @@ Der Funktionsblock `AR_DEMUX_4` ist ein generischer Demultiplexer für den AR‑
 Keine.
 
 ### **Adapter**
+
 | Name | Richtung | Typ | Kommentar |
 |------|----------|-----|-----------|
 | IN | Socket (Eingang) | `adapter::types::unidirectional::AR` | Eingangswert, der demultiplext werden soll |

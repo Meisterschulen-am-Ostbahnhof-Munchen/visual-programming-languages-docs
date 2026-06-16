@@ -9,6 +9,7 @@ Der Funktionsblock `AUI_UDINT_GT` realisiert einen Vergleich zweier vorzeichenlo
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | `REQ` | Event | Service Request – löst die Vergleichsoperation aus. Erwartet einen gültigen Wert an `IN2`. |
@@ -17,6 +18,7 @@ Der Funktionsblock `AUI_UDINT_GT` realisiert einen Vergleich zweier vorzeichenlo
 Keine direkten Ereignis-Ausgänge. Das Ergebnis wird über den Adapter `OUT` ausgegeben.
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | `IN2` | UDINT | Zweiter Eingangswert für den Vergleich (Wert 2). |
@@ -25,6 +27,7 @@ Keine direkten Ereignis-Ausgänge. Das Ergebnis wird über den Adapter `OUT` aus
 Keine direkten Daten-Ausgänge. Das Vergleichsergebnis wird über den Adapter `OUT` ausgegeben.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | `IN1` | `adapter::types::unidirectional::AUI` | Socket | Aufnehmender Adapter – liefert den ersten Eingangswert (Wert 1) und ein Auslöseereignis. |
@@ -60,6 +63,7 @@ Ein- und Ausgangsdaten werden nicht zwischengespeichert; der Baustein arbeitet i
 - **Adapter‑basierte Komponenten:** Einbinden dieses Bausteins in eine Komponentenbibliothek, die über genormte Adapter kommuniziert (z. B. nach dem 4diac‑IDE‑Ansatz).
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Funktion | Adaptertyp |
 |----------|----------|------------|
 | `AUI_UDINT_GT` | `IN1 > IN2` | AUI (Socket), AX (Plug) |

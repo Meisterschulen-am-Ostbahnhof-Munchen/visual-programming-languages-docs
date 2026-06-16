@@ -11,16 +11,19 @@ Der Funktionsblock **AE_MUX_3** ist ein generischer Multiplexer für den AE-Adat
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | REQ  | Event    | Startet die Umschaltung auf den über `K` festgelegten Eingang. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | CNF  | Event    | Bestätigt, dass die Umschaltung auf den gewählten Eingang abgeschlossen ist. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | K    | UINT     | Index des auszuwählenden Eingangs: 0 → IN1, 1 → IN2, 2 → IN3. |
@@ -30,11 +33,13 @@ Keine.
 
 ### **Adapter**
 **Ausgang (Plug)**
+
 | Name | Typ                              | Beschreibung |
 |------|----------------------------------|--------------|
 | OUT  | adapter::types::unidirectional::AE | Ausgang, der den ausgewählten Eingang (IN1/IN2/IN3) durchschaltet. |
 
 **Eingänge (Sockets)**
+
 | Name | Typ                              | Beschreibung |
 |------|----------------------------------|--------------|
 | IN1  | adapter::types::unidirectional::AE | Erster AE-Eingang – wird bei K=0 an OUT gelegt. |

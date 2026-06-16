@@ -23,6 +23,7 @@ Keine direkten Daten-Eingänge.
 Keine direkten Daten-Ausgänge.
 
 ### **Adapter**
+
 | Bezeichnung | Richtung | Typ | Beschreibung |
 |-------------|----------|-----|--------------|
 | **I** | Socket | `adapter::types::unidirectional::AI` | Liefert das Eingangsereignis (E1) und den zu latchenden Datenwert (D1). |

@@ -9,21 +9,25 @@ Der Funktionsblock **FIELDBUS_UDINT_TO_SIGNAL** dient dazu, einen eingehenden UD
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Event | Beschreibung |
 |-------|--------------|
 | REQ   | Normaler Ausführungsanforderung; löst die Verarbeitung des Eingangs IN aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Event | Beschreibung |
 |-------|--------------|
 | CNF   | Bestätigt die abgeschlossene Verarbeitung. Wird nach dem Algorithmus ausgelöst. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ   | Initialwert                                    | Beschreibung |
 |------|-------|------------------------------------------------|--------------|
 | IN   | UDINT | `DWORD_TO_UDINT(NOT_AVAILABLE_DWM)`            | Der zu prüfende Eingangswert. |
 
 ### **Daten-Ausgänge**
+
 | Name  | Typ   | Initialwert | Beschreibung |
 |-------|-------|-------------|--------------|
 | OUT   | UDINT | `16#00000000` | Der gefilterte Ausgangswert. Bei gültigem Signal entspricht er IN, sonst 0. |

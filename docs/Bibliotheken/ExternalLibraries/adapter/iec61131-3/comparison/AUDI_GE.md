@@ -25,6 +25,7 @@ Die Datenwerte, die verglichen werden sollen, werden über die Adapter bezogen:
 - **Adapter `OUT`** – gibt den booleschen Wert `TRUE` aus, wenn `IN1 ≥ IN2` ist, andernfalls `FALSE` (Typ entsprechend dem Adapter `AX`).
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | `IN1` | Socket | `adapter::types::unidirectional::AUDI` | Erster Eingabewert |

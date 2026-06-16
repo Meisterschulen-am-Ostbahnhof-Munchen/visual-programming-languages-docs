@@ -9,16 +9,19 @@ Der Funktionsblock **AI_MUX_3** ist ein generischer Analog-Multiplexer, der übe
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Set Index K |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Confirmation of Set Index K |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index |
@@ -27,6 +30,7 @@ Der Funktionsblock **AI_MUX_3** ist ein generischer Analog-Multiplexer, der übe
 Keine eigenen Datenausgänge – die Ausgangsdaten werden über den Adapter OUT bereitgestellt.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Plug (Ausgang) | OUT | adapter::types::unidirectional::AI | IN1 für K=0, IN2 für K=1, IN3 für K=2 |

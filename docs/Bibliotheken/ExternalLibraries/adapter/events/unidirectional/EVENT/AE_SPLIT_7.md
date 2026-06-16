@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AE` | **IN** | Socket | Eingangsadapter, der das zu verteilende Ereignis empfängt. |

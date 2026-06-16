@@ -9,22 +9,26 @@ Der Funktionsblock **Q_NumericValue_PHYSA_LREAL** dient als Kommando zum Ändern
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name  | Typ   | Kommentar                                   |
 |-------|-------|---------------------------------------------|
 | INIT  | EInit | Initialisierung des Bausteins (mit stObj). |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ   | Kommentar                                        |
 |-------|-------|--------------------------------------------------|
 | INITO | EInit | Bestätigung der erfolgreichen Initialisierung.   |
 | CNF   | Event | Bestätigung der angeforderten Wertänderung (enthält STATUS und s16result). |
 
 ### **Daten-Eingänge**
+
 | Name  | Typ                                                                | Kommentar                                                                                     |
 |-------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | stObj | logiBUS::utils::conversion::phys::NumericObjectPool_S               | Eigenschaften des Objektpools (ObjID, Skalierung, Offset, Dezimalstellen). Initial: (u16ObjId := ID_NULL, r32Scale := 1.0, i32Offset := 0, u8Decimals := 0). |
 
 ### **Daten-Ausgänge**
+
 | Name      | Typ    | Kommentar                                                                 |
 |-----------|--------|---------------------------------------------------------------------------|
 | STATUS    | STRING | Statusmeldung des Dienstes.                                               |
@@ -32,11 +36,13 @@ Der Funktionsblock **Q_NumericValue_PHYSA_LREAL** dient als Kommando zum Ändern
 
 ### **Adapter**
 **Sockets (Eingangsadapter)**
+
 | Name   | Typ                     | Kommentar                                                     |
 |--------|-------------------------|---------------------------------------------------------------|
 | lrPhys | ALR (unidirectional)    | Eingang für den physikalischen LREAL-Wert (wird über E1 getriggert). |
 
 **Plugs (Ausgangsadapter)**
+
 | Name   | Typ                     | Kommentar                                                     |
 |--------|-------------------------|---------------------------------------------------------------|
 | xOver  | AX (unidirectional)     | Signalisiert, dass der physikalische Wert die obere ISOBUS-Grenze überschreitet. |

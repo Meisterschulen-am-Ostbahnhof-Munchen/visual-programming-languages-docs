@@ -10,16 +10,19 @@ Der Funktionsbaustein **AD_MUX_3** dient als generischer 3‑Kanal‑Multiplexer
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Set Index K |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Confirmation of Set Index K |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index (0, 1 oder 2) |
@@ -28,6 +31,7 @@ Der Funktionsbaustein **AD_MUX_3** dient als generischer 3‑Kanal‑Multiplexer
 Keine Datenausgänge definiert (die Datenweitergabe erfolgt über den Adapter `OUT`).
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Plug (Ausgang) | OUT | adapter::types::unidirectional::AD | Ausgang, liefert die Daten des ausgewählten Eingangs |

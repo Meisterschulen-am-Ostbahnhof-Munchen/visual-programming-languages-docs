@@ -12,6 +12,7 @@ Der Funktionsblock `E_T_FF_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bist
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name  | Typ    | Kommentar                                |
 |-------|--------|------------------------------------------|
 | INIT  | EInit  | Initialisierungsanforderung              |
@@ -20,18 +21,21 @@ Der Funktionsblock `E_T_FF_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bist
 | CLK   | Event  | Takt für das Umschalten (Toggle) von Q   |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ    | Kommentar                                |
 |-------|--------|------------------------------------------|
 | INITO | EInit  | Bestätigung der Initialisierung          |
 | EO    | Event  | Signalisiert eine Änderung von Q         |
 
 ### **Daten-Eingänge**
+
 | Name    | Typ   | Kommentar                                    |
 |---------|-------|----------------------------------------------|
 | QI      | BOOL  | Ereignisqualifier (steuert die Ausführung)   |
 | Q_INIT  | BOOL  | Wert, den Q bei INIT annehmen soll           |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ   | Kommentar                                |
 |------|-------|------------------------------------------|
 | QO   | BOOL  | Ausgangsqualifier (Spiegel von QI)       |
@@ -66,6 +70,7 @@ Der Baustein durchläuft einen endlichen Automaten mit fünf Zuständen: `START`
 - **Deinitialisierung**: Wird während der Laufzeit ein `INIT`-Ereignis mit `QI = FALSE` empfangen, so wird der Baustein deinitialisiert und geht in den Ruhezustand (`START`). In diesem Zustand reagiert er auf keine weiteren Ereignisse, bis er erneut initialisiert wird.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung                                 | Aktion bei Eintritt                         |
 |---------|----------------------------------------------|---------------------------------------------|
 | START   | Warten auf Initialisierung                   | –                                           |

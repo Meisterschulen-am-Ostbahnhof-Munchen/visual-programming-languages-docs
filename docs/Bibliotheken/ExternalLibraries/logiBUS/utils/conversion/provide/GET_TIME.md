@@ -9,11 +9,13 @@ Der Funktionsbaustein **GET_TIME** ermöglicht das Auslesen eines TIME-Werts aus
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar | Mit Variablen |
 |------|-----|-----------|---------------|
 | REQ | Event | Normaler Ausführungsanforderung | IN |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar | Mit Variablen |
 |------|-----|-----------|---------------|
 | CNF | Event | Bestätigung der Ausführung | OUT, IN |
@@ -22,6 +24,7 @@ Der Funktionsbaustein **GET_TIME** ermöglicht das Auslesen eines TIME-Werts aus
 Keine dedizierten Daten-Eingänge vorhanden.
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Kommentar | Initialwert |
 |------|-----|-----------|-------------|
 | OUT | TIME | Gepufferter Ausgangswert | T#0s |
@@ -38,6 +41,7 @@ Keine Adapter vorhanden.
 - Der Baustein besitzt keinen eigenen Zeitgeber oder Puffer für Verzögerungen.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung | Ausgeführte Aktion |
 |---------|--------------|-------------------|
 | REQ | Wartet auf ein Ereignis am Eingang **REQ**. Nach Eintritt wird der Algorithmus ausgeführt und ein **CNF**-Ereignis gesendet. | `OUT := IN;` |

@@ -9,21 +9,25 @@ Der Funktionsblock **AVG** (Array Average) berechnet den arithmetischen Mittelwe
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Event | Mit Daten |
 |---|---|
 | `REQ` | `A` |
 
 ### **Ereignis-Ausgänge**
+
 | Event | Mit Daten |
 |---|---|
 | `CNF` | *(Ergebnis-Ausgang)*, `A` |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Initialwert | Kommentar |
 |---|---|---|---|
 | `A` | `ARRAY[*] OF INT` | – | Array von Ganzzahlen, dessen Durchschnitt berechnet wird (InOut-Variable) |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Initialwert | Kommentar |
 |---|---|---|---|
 | *(kein Name)* | `REAL` | – | Ergebnis des Durchschnittswerts |
@@ -55,6 +59,7 @@ Da es sich um einen **kombinatorischen Funktionsblock** handelt, existieren kein
 - **Statistische Auswertung in Qualitätskontrollen**: Beispielsweise Berechnung des Durchmessers mehrerer Prüflinge als Gleitkommawert zur Genauigkeitsanalyse.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Merkmal | **AVG** | Typischer IEC‑61131-3 AVG-Baustein |
 |---|---|---|
 | **Parametrierung** | Dynamisch via Array (kein Limit) | Oft statische Array-Größe oder Listen |

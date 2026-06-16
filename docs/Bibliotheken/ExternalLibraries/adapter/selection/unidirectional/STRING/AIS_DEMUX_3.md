@@ -9,16 +9,19 @@ Der Funktionsblock **AIS_DEMUX_3** ist ein generischer Demultiplexer für AIS‑
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | REQ      | Event    | Startet die Weiterleitung. Der aktuelle Wert des Sockets `IN` wird an den durch `K` bestimmten Ausgangs‑Adapter gesendet. Der Eingang `K` wird gleichzeitig mit diesem Ereignis gelesen. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | CNF      | Event    | Bestätigt die erfolgreiche Durchführung der Demultiplex‑Operation. |
 
 ### **Daten-Eingänge**
+
 | Variable | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | K        | UINT     | Index des gewünschten Ausgangs (1, 2 oder 3). Werte außerhalb dieses Bereichs werden ignoriert oder führen zu keinem Ausgang (abhängig von der Implementierung). |
@@ -27,6 +30,7 @@ Der Funktionsblock **AIS_DEMUX_3** ist ein generischer Demultiplexer für AIS‑
 Keine Daten‑Ausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über die Adapter‑Ausgänge.
 
 ### **Adapter**
+
 | Typ | Richtung | Bezeichner | Beschreibung |
 |-----|----------|------------|--------------|
 | Socket (Eingang) | input | IN | Empfängt den AIS‑Wert, der demultiplext werden soll. Typ: `adapter::types::unidirectional::AIS`. |

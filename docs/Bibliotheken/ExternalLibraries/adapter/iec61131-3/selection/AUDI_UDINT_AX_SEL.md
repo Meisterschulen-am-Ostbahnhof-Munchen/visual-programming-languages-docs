@@ -11,28 +11,33 @@ Der Funktionsblock `AUDI_UDINT_AX_SEL` realisiert eine binäre Auswahl (binary s
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `EI0` | Event | Setzt den Eingang `IN0` (Wert wird mit dem Daten-Eingang `IN0` verknüpft) |
 | `EI1` | Event | Setzt den Eingang `IN1` (Wert wird mit dem Daten-Eingang `IN1` verknüpft) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `CNF` | Event | Bestätigung der durchgeführten Auswahl (wird nach erfolgreicher Selektion gesendet) |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `IN0` | UDINT | Erster auswählbarer Eingangswert (unsignierte 32‑Bit‑Ganzzahl) |
 | `IN1` | ANY_ELEMENTARY | Zweiter auswählbarer Eingangswert (beliebiger elementarer Datentyp) |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `OUT` | UDINT | Ergebnis der binären Auswahl (der gewählte Wert, als UDINT) |
 
 ### **Adapter**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `G` | adapter::types::unidirectional::AX | Steuerungsadapter: liefert das Auswahlkriterium (Daten `G.D1`) und das Triggersignal (`G.E1`) für die Selektion |
@@ -64,6 +69,7 @@ Der Baustein enthält keine explizite Zustandsmaschine. Die Funktionalität ist 
 - **Redundante Signale:** Zwei redundante Quellen (z. B. Geschwindigkeitssensoren) liefern die Werte, und ein Signal entscheidet, welche Quelle verwendet wird.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaften |
 |----------|---------------|
 | `MUX` (IEC 61131) | Mehrere Eingänge, Index-Auswahl; benötigt einen Index-Eingang als skalaren Wert. |

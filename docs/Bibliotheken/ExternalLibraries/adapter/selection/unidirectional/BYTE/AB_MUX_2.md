@@ -12,16 +12,19 @@ Der Funktionsbaustein **AB_MUX_2** ist ein generischer Multiplexer, der zwei an 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `REQ`    | Startet die Umschaltung: Der Index `K` wird ausgewertet und das entsprechende Eingangssignal an `OUT` übergeben. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF`    | Bestätigt die erfolgreiche Ausführung der Umschaltung. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | `K`      | UINT  | Auswahlindex: 0 → IN1, 1 → IN2 (andere Werte verhalten sich undefiniert oder bleiben unverändert). |
@@ -30,6 +33,7 @@ Der Funktionsbaustein **AB_MUX_2** ist ein generischer Multiplexer, der zwei an 
 Keine direkten Datenausgänge – die Ausgabe erfolgt ausschließlich über den Adapter `OUT`.
 
 ### **Adapter**
+
 | Typ | Name | Beschreibung |
 |-----|------|--------------|
 | **Plug** | `OUT` | Adapter vom Typ `adapter::types::unidirectional::AB` – liefert das ausgewählte Signal. |

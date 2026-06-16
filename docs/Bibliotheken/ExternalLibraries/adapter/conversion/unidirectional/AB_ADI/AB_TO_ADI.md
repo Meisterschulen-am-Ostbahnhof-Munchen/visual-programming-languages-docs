@@ -21,6 +21,7 @@ Keine – die Daten werden über den `AB_IN`-Adapter bereitgestellt.
 Keine – die konvertierten Daten werden über den `ADI_OUT`-Adapter ausgegeben.
 
 ### **Adapter**
+
 | Typ     | Name    | Richtung | Kommentar                        |
 |---------|---------|----------|----------------------------------|
 | Socket  | `AB_IN` | Eingang  | BYTE-Adapter (Eingang)           |

@@ -10,6 +10,7 @@ Echtzeit-Variante des E_F_TRIG Bausteins (Fallende Flanke).
 ![RT_E_F_TRIG](RT_E_F_TRIG.svg)
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Lizenz | EPL-2.0 |

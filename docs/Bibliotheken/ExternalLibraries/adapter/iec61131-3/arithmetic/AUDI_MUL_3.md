@@ -21,6 +21,7 @@ Nicht vorhanden – die Eingangswerte werden über die **Sockets IN1, IN2 und IN
 Nicht vorhanden – das Ergebnis wird über den **Plug OUT** als Adapter ausgegeben.
 
 ### **Adapter**
+
 | Name | Richtung | Typ | Beschreibung |
 |------|----------|-----|--------------|
 | **IN1** | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Erster Multiplikationsfaktor. |

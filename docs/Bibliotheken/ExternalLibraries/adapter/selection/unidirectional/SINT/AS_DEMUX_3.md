@@ -9,16 +9,19 @@ Der Funktionsblock **AS_DEMUX_3** ist ein generischer Demultiplexer für den Dat
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Set Index K – löst die Weiterleitung aus |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Confirmation of Set Index K – bestätigt die Ausführung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index (0‑basiert? oder 1‑basiert? typischerweise 0‑basiert) zur Auswahl des Zielausgangs |
@@ -27,6 +30,7 @@ Der Funktionsblock **AS_DEMUX_3** ist ein generischer Demultiplexer für den Dat
 Keine direkten Datenausgänge – die Datenweitergabe erfolgt über die Adapter.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Plug     | OUT1 | adapter::types::unidirectional::AS | Erster Ausgang |

@@ -9,16 +9,19 @@ Der Funktionsblock **Q_ObjHideShow_AB** dient als Wrapper für den Baustein `Q_O
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | mit Variablen | Kommentar |
 |---|---|---|
 | `INIT` | `u16ObjId` | Service Initialization; Objekt-ID wird übergeben |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |---|---|
 | `INITO` | Initialisierung bestätigt |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |---|---|---|
 | `u16ObjId` | UINT | Objekt-ID (Object ID) |
@@ -27,6 +30,7 @@ Der Funktionsblock **Q_ObjHideShow_AB** dient als Wrapper für den Baustein `Q_O
 Keine expliziten Datenausgänge auf FB-Ebene. Die Ausgangsdaten werden über den Adapter `qOldVisible` bereitgestellt.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |---|---|---|---|
 | Socket (Eingang) | `qVisible` | `adapter::types::unidirectional::AB` | Sollwert der Sichtbarkeit: 0 = versteckt, 1 = angezeigt |
@@ -60,6 +64,7 @@ Der FB selbst besitzt keinen eigenen Zustandsautomaten. Sein Verhalten wird voll
 - **Adapter-basierte Automatisierung**: Einbindung in ein System, das auf Adapter-Schnittstellen setzt, um Austauschbarkeit und Entkopplung zu erreichen.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaften |
 |---|---|
 | `Q_ObjHideShow` (direkt) | Ereignis-/Daten-Schnittstelle ohne Adapter; direkte Verschaltung erforderlich |

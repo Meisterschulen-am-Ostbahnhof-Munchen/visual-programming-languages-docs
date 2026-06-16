@@ -22,6 +22,7 @@ Keine vorhanden.
 Keine vorhanden.
 
 ### **Adapter**
+
 | Typ | Richtung | Name |
 | --- | -------- | ---- |
 | Socket (adapter::types::unidirectional::AUI) | Eingang | IN |

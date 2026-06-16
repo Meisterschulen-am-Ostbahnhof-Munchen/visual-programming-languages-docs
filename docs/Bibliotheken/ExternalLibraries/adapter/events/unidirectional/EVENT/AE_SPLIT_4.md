@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Socket (Eingang) | **IN** | `adapter::types::unidirectional::AE` | Empfängt ein unidirektionales Adapter-Ereignis (Ereignis + zugehörige Daten). |

@@ -9,11 +9,13 @@ Der Funktionsblock **GET_BOOL** dient dem Auslesen eines BOOL-Wertes aus einer a
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung | Mit Variablen |
 |----------|--------------|---------------|
 | REQ      | Normale Ausführungsanforderung | IN |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung | Mit Variablen |
 |----------|--------------|---------------|
 | CNF      | Bestätigung der Ausführung | OUT, IN |
@@ -22,6 +24,7 @@ Der Funktionsblock **GET_BOOL** dient dem Auslesen eines BOOL-Wertes aus einer a
 Es existieren keine deklarierten Dateneingänge (*InputVars*). Der Zugriff auf die Quellvariable erfolgt ausschließlich über einen InOut-Parameter.
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ   | Initialwert | Beschreibung               |
 |----------|-------|-------------|----------------------------|
 | OUT      | BOOL  | FALSE       | Gepufferter Ausgangswert   |
@@ -56,6 +59,7 @@ Nach Ausführung des Algorithmus wird sofort der Ausgangszustand wieder verlasse
 - **Puffer und Synchronisation**: In getakteten Systemen kann durch einen `REQ`-Impuls der aktuelle Wert abgetastet und für die Dauer eines Zyklus gehalten werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Zweck | Datentyp |
 |----------|-------|----------|
 | GET_BOOL | Lesen eines BOOL-Wertes über InOut | BOOL |

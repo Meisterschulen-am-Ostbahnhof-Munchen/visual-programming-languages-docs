@@ -25,6 +25,7 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 - `QI` (BOOL): Qualifier für Initialisierung
 
 ### **Daten-Ausgänge**
+
 | Parameter | Typ | SPN | Bit | Skalierung | Bereich | Beschreibung |
 |-----------|-----|-----|-----|------------|---------|--------------|
 | `QO` | BOOL | - | 1 | - | TRUE/FALSE | Ereignisqualifier |

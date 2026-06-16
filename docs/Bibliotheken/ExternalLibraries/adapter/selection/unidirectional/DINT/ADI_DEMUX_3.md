@@ -9,16 +9,19 @@ Der Funktionsblock **ADI_DEMUX_3** ist ein generischer Demultiplexer für Adapte
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **REQ**   | Setzt den Index **K** und löst die Weiterleitung des eingehenden Werts an den entsprechenden Ausgang aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF**   | Bestätigung, dass der Demultiplex-Vorgang abgeschlossen ist und der Index **K** übernommen wurde. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | **K**    | UINT  | Index (1‑basiert) zur Auswahl des Ausgangs. Gültige Werte: 1, 2, 3. Werte außerhalb dieses Bereichs führen zu keinem aktiven Ausgang. |
@@ -27,6 +30,7 @@ Der Funktionsblock **ADI_DEMUX_3** ist ein generischer Demultiplexer für Adapte
 Keine Daten-Ausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über die Adapter.
 
 ### **Adapter**
+
 | Richtung | Bezeichnung | Typ | Beschreibung |
 |----------|-------------|-----|--------------|
 | **Socket** (Eingang) | **IN** | `adapter::types::unidirectional::ADI` | Eingangs-Adapter, der den zu multiplexenden Datenwert bereitstellt. |
@@ -60,6 +64,7 @@ Der FB besitzt keine explizit modellierten Zustände. Die interne Logik verarbei
 - **Test‑ und Simulationsumgebungen**: Ein Testsignal kann dynamisch an unterschiedliche Funktionsblöcke weitergeleitet werden, ohne die Verkabelung zu ändern.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Anzahl Ausgänge | Adaptertyp | Besonderheit |
 |----------|-----------------|------------|--------------|
 | **ADI_DEMUX_3** (dieser FB) | 3 (OUT1‑3) | ADI unidirektional | Generisch, ereignisgesteuerte Umschaltung |

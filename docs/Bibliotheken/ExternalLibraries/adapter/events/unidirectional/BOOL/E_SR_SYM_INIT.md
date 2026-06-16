@@ -9,6 +9,7 @@ Der Funktionsblock `E_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bistabile
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Event | Typ | Kommentar |
 |-------|-----|-----------|
 | `INIT` | EInit | Initialisierungsanforderung; wird mit `QI` und `Q_INIT` ausgewertet |
@@ -16,18 +17,21 @@ Der Funktionsblock `E_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bistabile
 | `R` | Event | Setze den Ausgang `Q` auf `FALSE` (nur wirksam wenn `QI = TRUE`) |
 
 ### **Ereignis-Ausgänge**
+
 | Event | Typ | Kommentar |
 |-------|-----|-----------|
 | `INITO` | EInit | Bestätigung der Initialisierung/Deinitialisierung |
 | `EO` | Event | Wird ausgelöst, wenn sich `Q` geändert hat (durch S oder R) |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ | Kommentar |
 |----------|-----|-----------|
 | `QI` | BOOL | Eingangsqualifikator; steuert, ob die Operationen (S, R, INIT) auf `Q` wirken |
 | `Q_INIT` | BOOL | Wert, den `Q` bei einer erfolgreichen Initialisierung (`INIT` mit `QI = TRUE`) annehmen soll |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ | Kommentar |
 |----------|-----|-----------|
 | `QO` | BOOL | Ausgangsqualifikator; gibt den Wert von `QI` während der letzten Aktion zurück (bei Deinitialisierung `FALSE`) |

@@ -23,6 +23,7 @@ Keine separaten Daten-Eingänge. Daten werden indirekt über den AX‑Adapter-So
 Keine separaten Daten-Ausgänge. Daten werden indirekt über den ALI‑Adapter-Plug ausgegeben.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | `AX_IN` | Socket | `adapter::types::unidirectional::AX` | BOOL-Adapter-Eingang: Empfängt ein BOOL-Signal über den unidirektionalen AX‑Adapter. |

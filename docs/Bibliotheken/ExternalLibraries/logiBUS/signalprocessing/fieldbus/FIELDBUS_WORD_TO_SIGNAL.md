@@ -10,21 +10,25 @@ Der Funktionsblock FIELDBUS_WORD_TO_SIGNAL dient der einfachen Signalfilterung i
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ | Event | Normaler Ausführungsauftrag; getriggert durch den Eingang IN. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF | Event | Bestätigung der Ausführung; wird nach Abschluss der Verarbeitung ausgegeben. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Initialwert | Kommentar |
 |------|-----|-------------|-----------|
 | IN | WORD | NOT_AVAILABLE_WM | Eingangswert, der auf Gültigkeit geprüft wird. |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Initialwert | Kommentar |
 |------|-----|-------------|-----------|
 | OUT | WORD | 16#0000 | Gefilterter Ausgangswert (nur bei gültigem Signal). |

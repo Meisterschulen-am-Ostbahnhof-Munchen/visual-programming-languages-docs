@@ -9,29 +9,34 @@ Der Funktionsblock **Q_Attribute_AUDI** implementiert das Kommando „Change Att
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INIT     | EInit | Initialisiert den Service und startet die Kommunikation mit dem ISOBUS-VT |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INITO    | EInit | Bestätigt den erfolgreichen Abschluss der Initialisierung |
 | CNF      | Event | Bestätigt die Durchführung des angeforderten Attributänderungs-Kommandos |
 
 ### **Daten-Eingänge**
+
 | Variable      | Typ   | Beschreibung |
 |---------------|-------|--------------|
 | u16ObjId      | UINT  | Objekt-ID des zu ändernden Attributs (Initialwert: ID_NULL) |
 | u8IdAttribute | USINT | Attribut-ID (AID) – definiert, welches Attribut des Objekts geändert werden soll |
 
 ### **Daten-Ausgänge**
+
 | Variable   | Typ    | Beschreibung |
 |------------|--------|--------------|
 | STATUS     | STRING | Statusmeldung des ausgeführten Dienstes |
 | s16result  | INT    | Rückgabewert des Kommandos (Fehlercodes siehe Funktionsweise) |
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | u32ValueAttribute | Socket | unidirectional::AUDI | Neuer Wert für das Attribut (32-Bit, wird über den Adapter in den FB eingespeist) |

@@ -9,21 +9,25 @@ Der Funktionsbaustein **ARR08B_TO_WORDS** dient der Aufteilung eines 8‑Byte‑
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ      | Auslösen der Konvertierung; der Baustein verarbeitet den aktuellen Wert von `IN` und legt die Ergebnisse an den Ausgängen an. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF      | Bestätigung, dass die Konvertierung abgeschlossen ist und die Ausgangswerte gültig sind. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ   | Array-Größe | Beschreibung |
 |------|-------|-------------|--------------|
 | IN   | BYTE  | 0…7         | Eingangsarray aus 8 Bytes, das in vier Words zerlegt wird. |
 
 ### **Daten-Ausgänge**
+
 | Name    | Typ  | Beschreibung |
 |---------|------|--------------|
 | OUT_00  | WORD | Aus den Bytes IN[0] und IN[1] gebildetes Word (niederwertigstes). |

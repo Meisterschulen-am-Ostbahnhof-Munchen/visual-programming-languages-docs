@@ -10,16 +10,19 @@ Der Funktionsbaustein `ALR_DEMUX_3` ist ein generischer Demultiplexer für ALR-A
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `REQ` | Event | Setze den Index `K` und löse die Weiterleitung aus |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `CNF` | Event | Bestätigung der erfolgten Umschaltung/Weiterleitung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `K` | UINT | Index des Zielausgangs (1..3) |
@@ -28,6 +31,7 @@ Der Funktionsbaustein `ALR_DEMUX_3` ist ein generischer Demultiplexer für ALR-A
 *Keine Daten-Ausgänge vorhanden.* Die eigentliche Datenübertragung erfolgt über die Adapter.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | `IN` | ALR (unidirectional) | Socket | Eingangsadapter (Datenquelle) |

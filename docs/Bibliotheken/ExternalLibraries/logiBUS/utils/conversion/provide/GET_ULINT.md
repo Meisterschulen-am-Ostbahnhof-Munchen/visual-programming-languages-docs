@@ -9,21 +9,25 @@ Der Funktionsblock **GET_ULINT** dient dazu, den aktuellen Wert einer als InOut-
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name  | Typ    | Kommentar               | Mit Daten |
 |-------|--------|-------------------------|-----------|
 | `REQ` | Event  | Normal Execution Request | `IN`      |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ    | Kommentar                | Mit Daten       |
 |-------|--------|--------------------------|-----------------|
 | `CNF` | Event  | Execution Confirmation   | `OUT`, `IN`     |
 
 ### **Daten-Eingänge**
+
 | Name | Typ    | Kommentar       |
 |------|--------|-----------------|
 | -    | -      | -               |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ    | Kommentar                | Initialwert |
 |------|--------|--------------------------|-------------|
 | `OUT`| ULINT  | Buffered output value    | 0           |
@@ -33,6 +37,7 @@ Keine Adapter vorhanden.
 
 ### **InOut‑Variablen (intern)**
 Zusätzlich zu den reinen Ein‑/Ausgängen besitzt der Baustein eine InOut‑Variable:
+
 | Name | Typ    | Kommentar                    | Initialwert |
 |------|--------|------------------------------|-------------|
 | `IN` | ULINT  | Source variable (InOut)      | 0           |

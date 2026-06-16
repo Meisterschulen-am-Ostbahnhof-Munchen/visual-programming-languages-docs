@@ -12,16 +12,19 @@ Der **AD_MUX_4** ist ein generischer, ereignisgesteuerter Adapter-Multiplexer f�
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **REQ**   | Anforderung, den Index *K* auszuwerten und die entsprechende Verbindung herzustellen. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF**   | Bestätigung der erfolgreichen Schaltoperation. |
 
 ### **Daten-Eingänge**
+
 | Variablenname | Typ  | Beschreibung |
 |---------------|------|--------------|
 | **K**         | UINT | Index für die Auswahl des Eingangskanals (Wertebereich 0–3). |

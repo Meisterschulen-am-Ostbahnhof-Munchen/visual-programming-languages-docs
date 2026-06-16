@@ -9,24 +9,28 @@ Der Funktionsbaustein **BasicOne** ist ein grundlegender, ereignisgesteuerter Ba
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Mitgeführte Daten | Beschreibung |
 |----------|-----|-------------------|--------------|
 | `INIT`   | EInit | `QI` | Initialisierungsanforderung; die Transition hängt vom Wert des Qualifiers `QI` ab. |
 | `REQ`    | Event | `QI`, `DI1` | Normale Ausführungsanforderung; startet die Hauptoperation. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Mitgeführte Daten | Beschreibung |
 |----------|-----|-------------------|--------------|
 | `INITO`  | EInit | `QO` | Bestätigung einer erfolgreichen Initialisierung oder Deinitialisierung. |
 | `CNF`    | Event | `QO`, `DO1` | Bestätigung der normalen Ausführung; gibt den aktuellen Zustand aus. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `QI`  | BOOL | Eingangsqualifier – steuert, ob eine Initialisierung aktiv (`TRUE`) oder deinitialisierend (`FALSE`) ist. Beeinflusst auch die Ausführung der Hauptoperation. |
 | `DI1` | BOOL | Erster Dateneingang; wird nur bei aktiver Initialisierung (`QI = TRUE`) während der normalen Operation auf den Ausgang `DO1` übertragen. |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `QO`  | BOOL | Ausgangsqualifier – spiegelt nach einer Aktion den Wert von `QI` wider (außer nach Deinitialisierung: dann `FALSE`). |
@@ -50,6 +54,7 @@ Wichtig: Die normale Operation wird nur dann ausgeführt, wenn `QI = TRUE` ist. 
 - **Keine Selbsthemmung**: Der Baustein blockiert nicht; nach jeder erfolgreichen Ausführung ist er bereit für das nächste Ereignis.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung | Mögliche Aktionen |
 |---------|--------------|-------------------|
 | `START` | Initialer Ruhezustand nach Systemstart oder nach einer Deinitialisierung. | Wartet auf `INIT` mit `QI = TRUE`. |

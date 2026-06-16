@@ -25,6 +25,7 @@ Der Baustein besitzt keine eigenen Ereignis- oder Datenein-/ausgänge, sondern s
 - Keine direkten Datenausgänge – der konvertierte DWORD-Wert wird über den Adapter **AD_OUT** (Plug) über dessen Dateneingang **D1** ausgegeben.
 
 ### **Adapter**
+
 | Adaptername | Richtung | Typ | Beschreibung |
 |-------------|----------|-----|--------------|
 | **AS_IN** | Socket (Eingang) | adapter::types::unidirectional::AS | Eingangsadapter für den SINT-Wert (inkl. Ereignis E1) |

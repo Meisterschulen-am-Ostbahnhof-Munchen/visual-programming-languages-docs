@@ -18,6 +18,7 @@ Der Funktionsblock **FIELDBUS_UINT_TO_SIGNAL_SCALED** dient der Aufbereitung ein
 - **CNF** (Event): Bestätigung der Ausführung. Wird nach Verarbeitung des REQ-Ereignisses gesendet und transportiert die Ausgangsdaten `OUT` und `VALID`.
 
 ### **Daten-Eingänge**
+
 | Name   | Typ   | Initialwert                     | Beschreibung                                              |
 |--------|-------|----------------------------------|-----------------------------------------------------------|
 | IN     | UINT  | WORD_TO_UINT(NOT_AVAILABLE_WM)   | Rohwert vom Feldbus, der skaliert werden soll.            |
@@ -25,6 +26,7 @@ Der Funktionsblock **FIELDBUS_UINT_TO_SIGNAL_SCALED** dient der Aufbereitung ein
 | OFFSET | DINT  | DINT#0                          | Additiver Offset, der nach der Skalierung addiert wird.   |
 
 ### **Daten-Ausgänge**
+
 | Name   | Typ   | Initialwert | Beschreibung                                              |
 |--------|-------|-------------|-----------------------------------------------------------|
 | OUT    | REAL  | REAL#0.0    | Skalierter Ausgangswert. Bei ungültigem Signal = 0.0.     |

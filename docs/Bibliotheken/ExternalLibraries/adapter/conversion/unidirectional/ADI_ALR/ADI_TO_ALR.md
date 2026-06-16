@@ -26,6 +26,7 @@ Der Funktionsblock **ADI_TO_ALR** ist ein zusammengesetzter Baustein (Composite 
   Der konvertierte Wert wird über den Adapter **ALR_OUT** ausgegeben (siehe Adapter‑Abschnitt).
 
 ### **Adapter**
+
 | Name        | Typ                                        | Richtung | Beschreibung                       |
 |-------------|--------------------------------------------|----------|------------------------------------|
 | **ADI_IN**  | `adapter::types::unidirectional::ADI`      | Socket   | Eingang: DINT‑Wert und Ereignis    |
@@ -55,6 +56,7 @@ Der Baustein besitzt **keine Zustandsmaschine**. Er ist rein kombinatorisch (ere
 - **Prototypische Entwicklung:** Einfache Umwandlung ohne zusätzliche Logik, um schnell verschiedene Adapterprotokolle zu verknüpfen.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein               | Typumwandlung        | Ereignisverhalten                                   |
 |------------------------|----------------------|-----------------------------------------------------|
 | **ADI_TO_ALR**         | DINT → LREAL         | Direkte Durchleitung ohne Verzögerung               |

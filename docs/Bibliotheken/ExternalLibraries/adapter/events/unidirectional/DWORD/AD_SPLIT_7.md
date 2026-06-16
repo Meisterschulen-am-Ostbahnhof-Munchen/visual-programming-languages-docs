@@ -66,6 +66,7 @@ Der Baustein besitzt keine Zustände oder Zustandsautomaten. Das Verhalten ist r
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Anzahl Ausgänge | Besonderheit |
 |----------|-----------------|--------------|
 | `AD_SPLIT_2` | 2 | Einfache 1:2-Verteilung |

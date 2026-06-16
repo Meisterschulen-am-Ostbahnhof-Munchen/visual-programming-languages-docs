@@ -21,6 +21,7 @@ Keine direkten Daten-Eingänge vorhanden. Die Eingangswerte werden über die Ada
 Keine direkten Daten-Ausgänge vorhanden. Das Ergebnis wird über den Adapter-Ausgang bereitgestellt.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | IN1 | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | ADD input 1 |

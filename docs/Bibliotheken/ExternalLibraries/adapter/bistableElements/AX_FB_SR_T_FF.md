@@ -29,6 +29,7 @@ Die drei Eingangsadapter liefern jeweils einen Datenwert `D1` (BOOL):
 Der Ausgangsadapter **Q1** gibt über **Q1.D1** den aktuellen Zustand des Latch als BOOL-Wert aus.
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | `SET1`  | `adapter::types::unidirectional::AX` | Socket (Eingang) | Setz-Eingang |

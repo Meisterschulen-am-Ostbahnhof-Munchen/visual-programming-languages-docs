@@ -9,11 +9,13 @@ Der Funktionsbaustein **GET_LTIME** dient dazu, den aktuellen Wert einer LTIME-V
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | REQ      | Event    | Normaler Ausführungsauftrag. Verbunden mit dem Eingangswert IN. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | CNF      | Event    | Bestätigung der Ausführung. Verbunden mit den Ausgängen OUT und IN. |
@@ -22,6 +24,7 @@ Der Funktionsbaustein **GET_LTIME** dient dazu, den aktuellen Wert einer LTIME-V
 Der Baustein besitzt keine klassischen Dateneingänge. Der Zugriff auf den Quellwert erfolgt ausschließlich über die InOut-Variable.
 
 ### **Daten-Ausgänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | OUT  | LTIME    | Gepufferter Ausgabewert (Initialwert LT#0s). |

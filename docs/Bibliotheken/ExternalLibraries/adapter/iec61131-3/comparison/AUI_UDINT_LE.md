@@ -10,6 +10,7 @@ Der Baustein `AUI_UDINT_LE` führt einen Vergleich "kleiner oder gleich" (less o
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `REQ` | Event | Service Request; löst den Vergleich aus. Der Datenwert `IN2` wird zu diesem Zeitpunkt gelesen. |
@@ -18,6 +19,7 @@ Der Baustein `AUI_UDINT_LE` führt einen Vergleich "kleiner oder gleich" (less o
 Der Baustein besitzt keine direkten Ereignisausgänge. Die Ergebnisbenachrichtigung erfolgt über den Ereignisausgang des Ausgangsadapters `OUT.E1`.
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `IN2` | UDINT | Zweiter Eingangswert für den Vergleich. |
@@ -26,6 +28,7 @@ Der Baustein besitzt keine direkten Ereignisausgänge. Die Ergebnisbenachrichtig
 Der Baustein besitzt keine direkten Datenausgänge. Das Vergleichsergebnis wird über den Datenausgang `OUT.D1` des Ausgangsadapters bereitgestellt.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | `IN1` | AUI (adapter::types::unidirectional::AUI) | Socket | Eingangsadapter für den ersten Vergleichswert (UDINT). |

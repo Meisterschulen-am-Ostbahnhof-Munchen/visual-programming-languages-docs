@@ -9,16 +9,19 @@ Der Funktionsblock **ALI_D_FF_HYS** realisiert ein Datenlatch (D-Flipflop) mit e
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis  | Typ    | Kommentar                                 |
 |-----------|--------|-------------------------------------------|
 | `INIT`    | EInit  | Setzt den Hysteresewert für die Schaltschwelle. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis  | Typ    | Kommentar                                 |
 |-----------|--------|-------------------------------------------|
 | `INITO`   | EInit  | Bestätigung der erfolgreichen Initialisierung. |
 
 ### **Daten-Eingänge**
+
 | Variable      | Typ  | Kommentar                                     |
 |---------------|------|-----------------------------------------------|
 | `HYSTERESIS`  | LINT | Hysterese-Bandbreite (z. B. als Ganzzahl)     |
@@ -27,6 +30,7 @@ Der Funktionsblock **ALI_D_FF_HYS** realisiert ein Datenlatch (D-Flipflop) mit e
 Keine direkten Datenausgänge – die Ausgabe erfolgt über den Adapter `Q`.
 
 ### **Adapter**
+
 | Richtung | Name | Typ                                        | Kommentar                    |
 |----------|------|--------------------------------------------|------------------------------|
 | Socket   | `I`  | `adapter::types::unidirectional::ALI`      | Eingangswert (Daten + Takt) |
@@ -76,6 +80,7 @@ Typische Einsatzfelder dieses Bausteins sind:
 - **Grundbaustein für komplexere Logik** mit Adapter-basierter Datenweitergabe, z. B. als Eingangsstufe eines Zustandsautomaten.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein               | Merkmal                                              |
 |------------------------|------------------------------------------------------|
 | **ALI_D_FF** (ohne Hyst.) | Einfaches D-FF ohne Rauschunterdrückung           |

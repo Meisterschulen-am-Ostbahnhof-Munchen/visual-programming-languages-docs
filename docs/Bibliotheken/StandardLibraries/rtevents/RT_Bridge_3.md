@@ -23,6 +23,7 @@ Der RT_Bridge_3 Funktionsblock dient als Entkopplungsbrücke für 3 Datenverbind
 - **RD_1** - **RD_3** (ANY): Ausgangsdaten.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2023 Johannes Kepler University Linz |

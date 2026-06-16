@@ -9,16 +9,19 @@ Der Funktionsbaustein **AB_DEMUX_5** ist ein generischer AB-Demultiplexer mit f�
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ      | Stößt die Demultiplex-Operation an; übernimmt den Index **K** und gibt den Wert am entsprechenden Ausgangsadapter weiter. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF      | Bestätigt die erfolgreiche Durchführung der Demultiplex-Operation. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | K    | UINT     | Index, der den Zielausgang (1–5) festlegt. |
@@ -28,11 +31,13 @@ Keine direkten Daten-Ausgänge – die Ausgabe erfolgt über die Adapter-Plugs.
 
 ### **Adapter**
 **Socket (Eingang):**
+
 | Name | Adaptertyp | Beschreibung |
 |------|------------|--------------|
 | IN   | adapter::types::unidirectional::AB | Wert, der demultiplext werden soll. |
 
 **Plugs (Ausgänge):**
+
 | Name | Adaptertyp | Beschreibung |
 |------|------------|--------------|
 | OUT1 | adapter::types::unidirectional::AB | Zielausgang bei K = 1 |

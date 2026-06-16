@@ -12,16 +12,19 @@ Der Funktionsblock **ATM_DEMUX_3** ist ein generischer Demultiplexer für unidir
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ    | Kommentar                  |
 |----------|--------|----------------------------|
 | REQ      | Event  | Setzt den Index K und löst die Weiterleitung aus |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ    | Kommentar                        |
 |----------|--------|----------------------------------|
 | CNF      | Event  | Bestätigung der Index-Setzung und Weiterleitung |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Kommentar |
 |----------|-------|-----------|
 | K        | UINT  | Index zur Auswahl des Ausgangs (1, 2 oder 3) |
@@ -31,6 +34,7 @@ Keine direkten Daten-Ausgänge vorhanden; die Datenweitergabe erfolgt über die 
 
 ### **Adapter**
 **Plugs (Ausgänge):**
+
 | Name | Typ                                | Kommentar |
 |------|------------------------------------|-----------|
 | OUT1 | adapter::types::unidirectional::ATM | Erster Ausgang |
@@ -38,6 +42,7 @@ Keine direkten Daten-Ausgänge vorhanden; die Datenweitergabe erfolgt über die 
 | OUT3 | adapter::types::unidirectional::ATM | Dritter Ausgang |
 
 **Sockets (Eingänge):**
+
 | Name | Typ                                | Kommentar                 |
 |------|------------------------------------|---------------------------|
 | IN   | adapter::types::unidirectional::ATM | Eingangsdatenstrom zum Demultiplexen |

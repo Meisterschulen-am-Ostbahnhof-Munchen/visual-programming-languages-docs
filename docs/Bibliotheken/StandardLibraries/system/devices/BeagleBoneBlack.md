@@ -8,6 +8,7 @@
 Dieses Gerät repräsentiert eine FORTE-Laufzeitumgebung auf einem BeagleBone Black Board.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Lizenz | EPL-2.0 |

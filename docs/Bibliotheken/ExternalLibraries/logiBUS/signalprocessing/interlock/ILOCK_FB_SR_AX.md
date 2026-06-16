@@ -11,6 +11,7 @@ Der Funktionsblock **ILOCK_FB_SR_AX** realisiert ein set-dominantes (Set-vorrang
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datenherkunft | Beschreibung |
 |----------|---------------|--------------|
 | `SET1.E1` | Socket SET1 | Setzt den Ausgang Q1 (set-dominant) |
@@ -19,6 +20,7 @@ Der Funktionsblock **ILOCK_FB_SR_AX** realisiert ein set-dominantes (Set-vorrang
 | `ILOCK_OUT.EI1` | Plug ILOCK_OUT | Empfängt ein Ereignis von der untergeordneten Interlock-Stufe (z. B. Bestätigung) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datenherkunft | Beschreibung |
 |----------|---------------|--------------|
 | `Q1.E1` | Plug Q1 | Ausgangsereignis nach jeder Aktualisierung von Q1 |
@@ -26,6 +28,7 @@ Der Funktionsblock **ILOCK_FB_SR_AX** realisiert ein set-dominantes (Set-vorrang
 | `ILOCK_OUT.EO1` | Plug ILOCK_OUT | Sendet Propagationsereignis an die untergeordnete Stufe |
 
 ### **Daten-Eingänge**
+
 | Daten | Typ | Beschreibung |
 |-------|-----|--------------|
 | `SET1.D1` | BOOL | Set-Eingang (dominant) |
@@ -34,6 +37,7 @@ Der Funktionsblock **ILOCK_FB_SR_AX** realisiert ein set-dominantes (Set-vorrang
 | `ILOCK_OUT.DI1` | BOOL | Daten von der untergeordneten Interlock-Stufe (Rückkopplung) |
 
 ### **Daten-Ausgänge**
+
 | Daten | Typ | Beschreibung |
 |-------|-----|--------------|
 | `Q1.D1` | BOOL | Ausgang des Latches (gesetzt durch Set oder Interlock) |
@@ -41,6 +45,7 @@ Der Funktionsblock **ILOCK_FB_SR_AX** realisiert ein set-dominantes (Set-vorrang
 | `ILOCK_OUT.DO1` | BOOL | Propagiertes Set-Signal an die untergeordnete Stufe |
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | `Q1` | AX (unidirectional) | Plug | Ausgang des Latches |

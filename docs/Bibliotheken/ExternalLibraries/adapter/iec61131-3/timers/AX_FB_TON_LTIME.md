@@ -11,26 +11,31 @@ Der Baustein **AX_FB_TON_LTIME** realisiert eine Einschaltverzögerung (On-Delay
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**  
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | REQ | `Event` | Normaler Ausführungsanstoß (nicht flankengetriggert); startet die Zeitmessung, wenn das Signal am Dateneingang `IN` oder am Adapter `IN.E1` aktiv ist. |
 
 ### **Ereignis-Ausgänge**  
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | CNF | `Event` | Bestätigung der Ausführung. Wird ausgelöst, sobald der Timer abläuft oder die Bedingung erfüllt ist. |
 
 ### **Daten-Eingänge**  
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | PT | `LTIME` | Vorgabezeit (Preset Time) für die Einschaltverzögerung. |
 
 ### **Daten-Ausgänge**  
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | ET | `LTIME` | Abgelaufene Zeit (Elapsed Time) seit dem Start der Zeitmessung. |
 
 ### **Adapter**  
+
 | Typ | Richtung | Beschreibung |
 |-----|----------|-------------|
 | `IN` | Socket (Input) | Unidirektionaler AX‑Adapter für Eingangsdaten. Enthält ein Ereignis (`E1`) und einen Datenwert (`D1`). Das Ereignis startet die Zeitmessung; der Datenwert bestimmt den Timer‑Eingang (`IN`). |

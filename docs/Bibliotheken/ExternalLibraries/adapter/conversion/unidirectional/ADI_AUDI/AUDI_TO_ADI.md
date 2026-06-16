@@ -10,26 +10,31 @@ Der Funktionsblock **AUDI_TO_ADI** ist ein Composite-Baustein, der einen unidire
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | AUDI_IN.E1 | EVENT | Ereignis-Eingang über den AUDI‑Adapter; löst die Konvertierung aus |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | ADI_OUT.E1 | EVENT | Ereignis-Ausgang über den ADI‑Adapter; signalisiert abgeschlossene Konvertierung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | AUDI_IN.D1 | UDINT | Unsignierter 32‑Bit‑Wert, der in einen vorzeichenbehafteten DINT gewandelt wird |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | ADI_OUT.D1 | DINT | Konvertierter vorzeichenbehafteter 32‑Bit‑Wert |
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | AUDI_IN | adaper::types::unidirectional::AUDI | Socket (Eingang) | UDINT‑Adapter-Schnittstelle |

@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | SOCKET | IN | `adapter::types::unidirectional::AUS` | Eingehendes AUS‑Signal |
@@ -43,6 +44,7 @@ Der Baustein besitzt keine eigenen Zustände oder eine Ereignisablaufsteuerung (
 - **Test- und Simulationsaufbauten**: Ein Simulationssignal wird auf mehrere Beobachter oder Protokollierungsblöcke verteilt.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Typ | Ausgänge | Besonderheit |
 |----------|-----|----------|--------------|
 | AUS_SPLIT_9 | Adapter | 9 | Generisch, für unidirektionale AUS‑Adapter |

@@ -61,6 +61,7 @@ Der Gesamt‑FB spiegelt dieses Verhalten nach außen wider.
 - **Bildung von Konvertierungskaskaden**: Zusammen mit anderen Bausteinen, die z.B. DINT‑ oder REAL‑Adapter verwenden, können beliebige Datenformat‑Anpassungen aufgebaut werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eingangsadapter | Ausgangsadapter | Konvertierung | Bemerkung |
 |----------|-----------------|-----------------|---------------|-----------|
 | `AW_TO_AUDI` | `AW` (WORD) | `AUDI` (UDINT) | WORD → UDINT | Composite, kapselt `F_WORD_TO_UDINT` |

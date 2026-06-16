@@ -13,6 +13,7 @@ Die Attributdeklaration `GenericClassName` definiert den Klassennamen für gener
 - **Verwendung:** Wird auf `FBType`-Ebene angewendet, um generische Implementierungen zu kennzeichnen.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Lizenz | EPL-2.0 |

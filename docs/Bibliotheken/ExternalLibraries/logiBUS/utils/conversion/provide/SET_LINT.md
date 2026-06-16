@@ -9,16 +9,19 @@ Der Funktionsbaustein **SET_LINT** dient dazu, einen Wert vom Typ `LINT` (64‑B
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Beschreibung                          | Mit Variablen |
 |------|-------|---------------------------------------|---------------|
 | REQ  | Event | Auslösung des Schreibvorgangs         | IN, OUT       |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Beschreibung                          | Mit Variablen |
 |------|-------|---------------------------------------|---------------|
 | CNF  | Event | Bestätigung nach erfolgreichem Schreiben | OUT           |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Initialwert | Beschreibung                |
 |------|------|-------------|-----------------------------|
 | IN   | LINT | 0           | Der zu schreibende Wert     |

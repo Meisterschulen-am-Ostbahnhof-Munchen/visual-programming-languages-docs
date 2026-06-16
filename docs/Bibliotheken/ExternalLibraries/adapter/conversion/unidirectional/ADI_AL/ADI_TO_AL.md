@@ -27,6 +27,7 @@ Der Baustein besitzt keine direkten Ereignis- oder Datenein-/-ausgänge. Die ges
   Die Ausgangsdaten werden über den AL‑Adapter `AL_OUT.D1` (Datentyp: LWORD) bereitgestellt.
 
 ### **Adapter**
+
 | Bezeichnung | Typ | Richtung | Kommentar |
 |-------------|-----|----------|-----------|
 | `ADI_IN`    | `adapter::types::unidirectional::ADI` | Socket (Eingang) | Liefert einen DINT-Wert und steuert die Verarbeitung über Ereignis `E1`. |

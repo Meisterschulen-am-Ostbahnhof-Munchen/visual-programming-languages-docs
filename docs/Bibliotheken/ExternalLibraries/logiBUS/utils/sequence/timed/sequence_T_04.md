@@ -62,6 +62,7 @@ Der FB arbeitet als Basic Function Block (BFB) mit einer definierten Execution C
 *   **Adapter-Nutzung**: Die Zeitsteuerung ist komplett in den standardisierten `ATimeOut`-Adapter ausgelagert, was Wiederverwendbarkeit und Klarheit erhöht.
 
 ## Zustandsübersicht
+
 | Zustandsname | Beschreibung | Aktive Ausgänge | Übergangsbedingung zum nächsten Zustand |
 | :--- | :--- | :--- | :--- |
 | **xSTART** | Initialer Idle-Zustand. | Keine | `START_S1` |

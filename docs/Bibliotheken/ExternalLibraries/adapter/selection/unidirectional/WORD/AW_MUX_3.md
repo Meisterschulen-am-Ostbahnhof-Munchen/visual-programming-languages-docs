@@ -9,16 +9,19 @@ Der Funktionsbaustein `AW_MUX_3` ist ein generischer Multiplexer (MUX) mit drei 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `REQ` | Event | Setzt den Index K und löst die Umschaltung aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `CNF` | Event | Bestätigung der erfolgten Umschaltung auf den durch K spezifizierten Eingang. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `K` | UINT | Index des auszuwählenden Eingangs (0, 1 oder 2). |
@@ -27,6 +30,7 @@ Der Funktionsbaustein `AW_MUX_3` ist ein generischer Multiplexer (MUX) mit drei 
 Keine direkten Datenausgänge vorhanden. Die Ausgabe erfolgt über den Adapter `OUT`.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | `IN1` | `AW` (unidirectional) | Socket | Eingangswert 1 (ausgewählt bei K = 0). |

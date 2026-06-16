@@ -21,6 +21,7 @@ Der Baustein verfügt über keine klassischen Dateneingänge. Alle Eingangswerte
 Der Baustein verfügt über keine klassischen Datenausgänge. Das Multiplikationsergebnis wird über einen Adapter-Plug ausgegeben.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Kommentar |
 |------|------|----------|-----------|
 | `adapter::types::unidirectional::AUDI` | IN1 | Eingang (Socket) | MUL input 1 |

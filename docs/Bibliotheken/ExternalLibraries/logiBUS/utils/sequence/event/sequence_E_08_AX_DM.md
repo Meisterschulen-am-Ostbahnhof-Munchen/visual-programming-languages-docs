@@ -10,6 +10,7 @@ Der Funktionsblock `sequence_E_08_AX_DM` realisiert eine ereignisgesteuerte Abla
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `START_S1` | Wechsel vom Startzustand zu Zustand 1 (State_01) |
@@ -24,6 +25,7 @@ Der Funktionsblock `sequence_E_08_AX_DM` realisiert eine ereignisgesteuerte Abla
 | `RESET` | Rücksetzen aus jedem Zustand in den Startzustand (State_00) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Mit Variable | Beschreibung |
 |----------|--------------|--------------|
 | `CNF` | `STATE_NR` | Bestätigung der Zustandsänderung; liefert gleichzeitig die aktuelle Zustandsnummer |
@@ -32,11 +34,13 @@ Der Funktionsblock `sequence_E_08_AX_DM` realisiert eine ereignisgesteuerte Abla
 Keine Daten-Eingänge vorhanden.
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | `STATE_NR` | SINT | Aktuelle Zustandsnummer (0 = State_00, 1 = State_01, …, 8 = State_08) |
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Plug | `DO_S1` | unidirectional::AX | Ausgang für Zustand 1 (State_01 aktiv) |

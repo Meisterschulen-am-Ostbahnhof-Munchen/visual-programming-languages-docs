@@ -9,21 +9,25 @@ Der Funktionsblock **SET_TIME** dient dazu, einen über den Dateneingang `IN` be
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `REQ` | Normaler Ausführungsrequest. Lösen den Algorithmus aus, der den Wert von `IN` nach `OUT` kopiert. Assoziierte Daten: `IN`, `OUT`. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF` | Bestätigung der erfolgreichen Ausführung. Wird nach Abschluss des Algorithmus gesendet. Assoziierte Daten: `OUT`. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Initialwert | Beschreibung |
 |------|-----|-------------|--------------|
 | `IN` | `TIME` | `T#0s` | Der Zeitwert, der in die Zielvariable geschrieben werden soll. |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Initialwert | Beschreibung |
 |------|-----|-------------|--------------|
 | `OUT` | `TIME` (InOut) | `T#0s` | Zielvariable, die beim Aufruf als InOut-Parameter übergeben wird. Der Wert von `IN` wird in diese Variable kopiert. |

@@ -10,22 +10,26 @@ Der Funktionsblock **F_PHYS_TO_RAW** wandelt einen physikalischen REAL-Wert in e
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ | Anforderung zur Umrechnung des physikalischen Wertes. Wird mit den Parametern `rPhys` und `stObj` ausgeführt. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF | Bestätigung, dass die Umrechnung abgeschlossen ist. Liefert den berechneten Rohwert sowie die Alarmflags `xOver` und `xUnder`. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | rPhys | REAL | Der physikalische Wert, der umgerechnet werden soll. |
 | stObj | NumericObjectPool_S | Struktur mit den Parametern `i32Offset` (DINT) und `r32Scale` (REAL) für die ISOBUS-Formel. |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | * | UDINT | Der berechnete ISOBUS-Rohwert (Rückgabewert der Funktion). Gesättigt auf den Bereich 0 bis 4294967295. |

@@ -27,6 +27,7 @@ Der Funktionsblock `SPLIT_AL_INTO_AD` dient dazu, einen eingehenden **AL (LWORD)
 - **DWORD_01.D1** – Zweites aufgeteiltes DWORD (High-Teil) am PLUG-Adapter `DWORD_01`.
 
 ### **Adapter**
+
 | Typ   | Name       | Richtung | Kommentar                          |
 |-------|------------|----------|------------------------------------|
 | SOCKET | `IN`       | Eingang  | AL (LWORD) – Quelladapter          |

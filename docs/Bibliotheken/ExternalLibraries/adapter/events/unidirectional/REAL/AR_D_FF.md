@@ -28,6 +28,7 @@ Der AR_D_FF besitzt keine direkten Ereignis- oder Datenein-/ausgänge; die gesam
   Der gelatchte Datenwert wird über den Ausgangsadapter **Q** bereitgestellt (siehe Adapter‑Abschnitt).
 
 ### **Adapter**
+
 | Adapter | Richtung / Typ | Beschreibung | Enthaltene Elemente |
 |---------|----------------|--------------|---------------------|
 | **I**   | Socket (`adapter::types::unidirectional::AR`) | Wert, der gelatcht werden soll. | **E1** (Ereigniseingang) – Taktsignal (CLK)<br>**D1** (Dateneingang) – Datenwert |
@@ -62,6 +63,7 @@ Es gibt keine weiteren internen Zustände oder Verzweigungen.
 - **Ereignisgesteuerte Signalweitergabe:** Anwendungen, in denen ein Wert nur dann aktualisiert werden darf, wenn ein bestimmtes Ereignis eintritt.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaft | Unterschied zu AR_D_FF |
 |----------|-------------|------------------------|
 | **AR_SR_FF** | Set‑Reset‑Flipflop | Latcht keinen Datenwert, sondern wird über Set/Reset gesetzt/rückgesetzt. Besitzt zwei Ereigniseingänge. |

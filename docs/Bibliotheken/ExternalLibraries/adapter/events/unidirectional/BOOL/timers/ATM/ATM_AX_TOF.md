@@ -9,6 +9,7 @@ Der Funktionsblock `ATM_AX_TOF` realisiert eine Ausschaltverzögerung (off-delay
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar |
 |------|-------|-----------|
 | R    | Event | Setzt den Timer zurück (Reset) |
@@ -23,6 +24,7 @@ Keine direkten Daten-Eingänge vorhanden. Die Daten werden über die Adapter `IN
 Keine direkten Daten-Ausgänge vorhanden. Der Ausgang erfolgt über den Adapter `Q`.
 
 ### **Adapter**
+
 | Name | Richtung | Typ  | Beschreibung |
 |------|----------|------|--------------|
 | IN   | Socket   | AX   | Eingangsadapter: Liefert das boolsche Triggersignal (D1: BOOL) und einen Event (E1) zur Auslösung der Timer-Funktion |
@@ -61,6 +63,7 @@ Der FB durchläuft folgende Betriebszustände:
 - **Sicherheitsabschaltungen:** Reset über R ermöglicht ein sofortiges Abschalten in Notfällen.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Eigenschaft             | ATM_AX_TOF                               | E_TOF (Standard)                     |
 |-------------------------|------------------------------------------|--------------------------------------|
 | Schnittstelle           | Adapter (AX/ATM)                         | Direkte Events/Daten                 |

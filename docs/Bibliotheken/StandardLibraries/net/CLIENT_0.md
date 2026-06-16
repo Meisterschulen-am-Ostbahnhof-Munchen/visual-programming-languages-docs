@@ -51,6 +51,7 @@ Der CLIENT_0 Block initialisiert eine Netzwerkverbindung zum SERVER_0 Block übe
 - Trigger-Signale über Netzwerk
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2025 Monika Wenger |

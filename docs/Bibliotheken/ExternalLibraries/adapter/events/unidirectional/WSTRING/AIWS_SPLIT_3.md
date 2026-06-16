@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Socket (Eingang) | IN | `adapter::types::unidirectional::AIWS` | Eingangsadapter, der das zu verteilende Signal empfängt. |

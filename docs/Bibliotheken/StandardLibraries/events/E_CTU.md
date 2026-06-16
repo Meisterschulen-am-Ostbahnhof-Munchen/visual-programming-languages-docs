@@ -63,6 +63,7 @@ Der `E_CTU`-Baustein hat zwei Hauptfunktionen: Zählen und Zurücksetzen.
 - **Taktzähler**: Zählen von Taktzyklen in einer Maschine, um Wartungsintervalle zu signalisieren.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
+
 | Merkmal          | E_CTU (Up Counter) | E_CTD (Down Counter) | E_CTUD (Up/Down Counter) |
 |------------------|--------------------|----------------------|--------------------------|
 | Zählrichtung     | Aufwärts           | Abwärts              | Beides                   |

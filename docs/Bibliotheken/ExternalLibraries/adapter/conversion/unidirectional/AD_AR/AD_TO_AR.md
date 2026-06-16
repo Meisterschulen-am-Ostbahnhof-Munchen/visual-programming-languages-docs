@@ -23,6 +23,7 @@ Der Baustein besitzt keine direkten (einzelnen) Ereignis- oder Daten-Ein-/Ausgä
 - *Keine direkten Daten-Ausgänge* – die Datenausgabe erfolgt über den ausgehenden Adapter.
 
 ### **Adapter**
+
 | Name   | Typ                                       | Richtung | Beschreibung                                                                 |
 |--------|--------------------------------------------|----------|-----------------------------------------------------------------------------|
 | AD_IN  | `adapter::types::unidirectional::AD`      | Socket   | Empfängt ein Ereignis (E1) und einen DWORD-Wert (D1) zur Konvertierung.    |

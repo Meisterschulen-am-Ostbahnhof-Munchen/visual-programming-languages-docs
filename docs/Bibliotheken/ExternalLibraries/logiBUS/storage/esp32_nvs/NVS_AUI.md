@@ -10,16 +10,19 @@ Der Funktionsblock **NVS_AUI** dient dem Laden und Speichern von UINT-Daten in e
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar | Mitgeführte Daten |
 |----------|-----------|-------------------|
 | `INIT`   | Service‑Initialisierung | `QI` (BOOL), `KEY` (STRING), `DEFAULT_VALUE` (UDINT) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar | Mitgeführte Daten |
 |----------|-----------|-------------------|
 | `INITO`  | Initialisierungsbestätigung | `QO` (BOOL), `STATUS` (STRING) |
 
 ### **Daten-Eingänge**
+
 | Name            | Typ    | Kommentar |
 |-----------------|--------|-----------|
 | `QI`            | BOOL   | Qualifikator für das Eingangsereignis |
@@ -27,12 +30,14 @@ Der Funktionsblock **NVS_AUI** dient dem Laden und Speichern von UINT-Daten in e
 | `DEFAULT_VALUE` | UDINT  | Wert, der ausgelesen wird, falls im NVS kein Eintrag vorhanden |
 
 ### **Daten-Ausgänge**
+
 | Name     | Typ    | Kommentar |
 |----------|--------|-----------|
 | `QO`     | BOOL   | Qualifikator für das Ausgangsereignis |
 | `STATUS` | STRING | Dienststatus‑Meldung |
 
 ### **Adapter**
+
 | Adapter    | Typ / Richtung                         | Kommentar |
 |------------|----------------------------------------|-----------|
 | `AUI_IN`   | **Socket** (Eingang) – Typ: `adapter::types::unidirectional::AUI` | Liefert den zu speichernden Wert (SET) |

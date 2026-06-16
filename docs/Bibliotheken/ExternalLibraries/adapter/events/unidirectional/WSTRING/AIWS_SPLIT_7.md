@@ -21,6 +21,7 @@ Keine (der Funktionsblock besitzt keine direkten Daten-Eingänge; die Datenüber
 Keine (der Funktionsblock besitzt keine direkten Daten-Ausgänge; die Datenübertragung erfolgt ausschließlich über die Adapter-Schnittstellen).
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AIWS` | **IN** | Socket (Eingang) | Empfängt den zu verteilenden AIWS-Datenstrom. |

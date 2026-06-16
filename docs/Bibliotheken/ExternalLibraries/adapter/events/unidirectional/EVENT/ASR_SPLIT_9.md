@@ -25,11 +25,13 @@ Keine separaten Datenausgänge. Die Daten werden über die ASR-Adapter **OUT1** 
 ### **Adapter**
 
 **Socket (Eingang):**
+
 | Name | Typ | Richtung |
 |------|-----|----------|
 | IN   | `adapter::types::unidirectional::ASR` | Socket |
 
 **Plugs (Ausgänge):**
+
 | Name  | Typ | Richtung |
 |-------|-----|----------|
 | OUT1  | `adapter::types::unidirectional::ASR` | Plug |

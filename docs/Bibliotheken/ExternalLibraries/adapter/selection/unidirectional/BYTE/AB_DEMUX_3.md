@@ -10,16 +10,19 @@ Der **AB_DEMUX_3** ist ein generischer Demultiplexer für den Adaptertyp `unidir
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **REQ** | Setzt den Index **K** und triggert die Demultiplexung. (Mit **K** verknüpft) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF** | Bestätigt die erfolgreiche Einstellung des Index **K**. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | **K**    | UINT  | Index des Zielausgangs (1 = OUT1, 2 = OUT2, 3 = OUT3). |
@@ -28,6 +31,7 @@ Der **AB_DEMUX_3** ist ein generischer Demultiplexer für den Adaptertyp `unidir
 Keine Datenausgänge vorhanden – die Ausgabe erfolgt über die Adapter-Plugs.
 
 ### **Adapter**
+
 | Adapter   | Richtung        | Typ                          | Beschreibung |
 |-----------|-----------------|------------------------------|--------------|
 | **IN**    | Socket (Eingang)| `adapter::types::unidirectional::AB` | Eingangswert, der demultiplext wird. |

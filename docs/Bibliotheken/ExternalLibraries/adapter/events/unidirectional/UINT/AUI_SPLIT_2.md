@@ -21,6 +21,7 @@ Keine direkten Dateneingänge vorhanden. Der Datentransport erfolgt ausschließl
 Keine direkten Datenausgänge vorhanden. Der Datentransport erfolgt ausschließlich über die Adapter.
 
 ### **Adapter**
+
 | Name | Typ | Richtung / Rolle |
 |------|-----|------------------|
 | `IN` | `adapter::types::unidirectional::AUI` | Socket (Eingang) |

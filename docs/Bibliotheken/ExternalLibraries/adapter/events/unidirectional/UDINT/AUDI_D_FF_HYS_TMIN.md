@@ -11,16 +11,19 @@ Der Funktionsblock **AUDI_D_FF_HYS_TMIN** realisiert ein taktflankengesteuertes 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ   | Kommentar                                    |
 |----------|-------|----------------------------------------------|
 | INIT     | EInit | Initialisierungsanfrage, setzt Hysterese und Mindestzeit |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ   | Kommentar                                    |
 |----------|-------|----------------------------------------------|
 | INITO    | EInit | Initialisierungsbestätigung                  |
 
 ### **Daten-Eingänge**
+
 | Variable     | Typ   | Kommentar                                                 |
 |--------------|-------|-----------------------------------------------------------|
 | HYSTERESIS   | UDINT | Hysterese-Band (Breite der Totzone zur Störunterdrückung) |
@@ -30,6 +33,7 @@ Der Funktionsblock **AUDI_D_FF_HYS_TMIN** realisiert ein taktflankengesteuertes 
 Keine direkten Datenausgänge – die Ausgangsdaten werden über den Adapter **Q** bereitgestellt.
 
 ### **Adapter**
+
 | Bezeichnung | Typ                                | Richtung | Kommentar                  |
 |-------------|------------------------------------|----------|----------------------------|
 | I           | `adapter::types::unidirectional::AUDI` | Eingang  | Zu übernehmender Datenwert |

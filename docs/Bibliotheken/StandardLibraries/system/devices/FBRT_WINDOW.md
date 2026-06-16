@@ -8,6 +8,7 @@
 Dieses Gerät repräsentiert eine FBRT (Function Block RunTime) Fenster-Anwendung.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Lizenz | EPL-2.0 |

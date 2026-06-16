@@ -21,6 +21,7 @@ Der Funktionsblock **ALI_SPLIT_3** dient dazu, einen eingehenden unidirektionale
 – Keine (die gesamte Kommunikation erfolgt über die Adapter-Schnittstellen)
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Socket (Eingang) | `IN` | `adapter::types::unidirectional::ALI` | Empfängt das eingehende ALI-Signal. |

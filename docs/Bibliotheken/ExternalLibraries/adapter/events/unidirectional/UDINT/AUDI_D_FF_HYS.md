@@ -9,16 +9,19 @@ Der Funktionsbaustein `AUDI_D_FF_HYS` realisiert ein datengetriggertes Flip‑Fl
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ   | Kommentar       | Mit Variable |
 |----------|-------|-----------------|--------------|
 | `INIT`   | EInit | Set Hysteresis  | `HYSTERESIS` |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ   | Kommentar          |
 |----------|-------|--------------------|
 | `INITO`  | EInit | Init Confirmation  |
 
 ### **Daten-Eingänge**
+
 | Variable      | Typ   | Kommentar        |
 |---------------|-------|------------------|
 | `HYSTERESIS`  | UDINT | Hysteresis band  |
@@ -27,6 +30,7 @@ Der Funktionsbaustein `AUDI_D_FF_HYS` realisiert ein datengetriggertes Flip‑Fl
 Keine direkten Datenausgänge – die Ausgabedaten werden über den Adapter `Q` bereitgestellt.
 
 ### **Adapter**
+
 | Rolle   | Name | Typ (Adapter)               | Kommentar          |
 |---------|------|-----------------------------|--------------------|
 | Plug    | `Q`  | `adapter::types::unidirectional::AUDI` | Latched value     |

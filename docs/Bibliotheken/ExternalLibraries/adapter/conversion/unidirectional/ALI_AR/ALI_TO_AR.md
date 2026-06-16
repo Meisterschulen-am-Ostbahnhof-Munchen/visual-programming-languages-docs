@@ -23,6 +23,7 @@ Der Baustein besitzt keine direkten Ereignis‑ oder Datenports. Die gesamte Kom
 – Keine (die Datenschnittstelle wird über den Adapter **AR_OUT** bereitgestellt)
 
 ### **Adapter**
+
 | Richtung | Name   | Typ                                      | Beschreibung                     |
 |----------|--------|------------------------------------------|----------------------------------|
 | Socket   | ALI_IN | `adapter::types::unidirectional::ALI`    | LINT‑Eingabeadapter (64‑Bit Integer) |

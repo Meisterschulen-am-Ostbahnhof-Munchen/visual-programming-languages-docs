@@ -9,24 +9,28 @@ Der Funktionsblock **E_T_FF_INIT** realisiert ein **Toggle-Flip-Flop** mit integ
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ    | Mit Variablen | Beschreibung                                          |
 |----------|--------|---------------|-------------------------------------------------------|
 | **INIT** | EInit  | QI, Q_INIT    | Initialisierungsanforderung; setzt *Q* auf *Q_INIT*.  |
 | **CLK**  | Event  | –             | Taktsignal; löst bei jeder steigenden Flanke das Umschalten von *Q* aus (sofern *QI* = TRUE). |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ    | Mit Variablen | Beschreibung                                         |
 |----------|--------|---------------|------------------------------------------------------|
 | **INITO**| EInit  | QO            | Initialisierungsbestätigung; signalisiert Ende der Initialisierung. |
 | **EO**   | Event  | Q             | Ausgangsereignis; wird nach jeder Zustandsänderung von *Q* ausgegeben. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung                                               |
 |----------|-------|------------------------------------------------------------|
 | **QI**   | BOOL  | Freigabesignal für die normale Toggle‑Funktion.            |
 | **Q_INIT** | BOOL | Gewünschter Wert von *Q* nach der Initialisierung (bei TRUE wird *Q* gesetzt). |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ   | Beschreibung                                               |
 |----------|-------|------------------------------------------------------------|
 | **QO**   | BOOL  | Ausgangsqualifikator; wird bei INIT auf *QI* gesetzt, bei De‑Initialisierung auf FALSE. |
@@ -65,6 +69,7 @@ Der Baustein arbeitet als **zustandsgesteuerte Maschine (ECC)** mit fünf Zustä
 - **Ausgangsqualifikator QO**: *QO* spiegelt den Freigabezustand wider – er wird bei erfolgreicher Initialisierung auf TRUE, bei De‑Initialisierung auf FALSE gesetzt. Dies ermöglicht eine einfache Überwachung des Baustein‑Status.
 
 ## Zustandsübersicht
+
 | Zustand  | Beschreibung                                                           | Eingehende Transition(en)               | Ausgehende Aktion (Algorithmus) | Ausgehendes Ereignis |
 |----------|------------------------------------------------------------------------|-----------------------------------------|---------------------------------|----------------------|
 | START    | Ruhezustand nach Initialisierung (oder nach De‑Initialisierung).      | *DeInit* → START                        | –                               | –                    |
@@ -92,6 +97,7 @@ Der Baustein arbeitet als **zustandsgesteuerte Maschine (ECC)** mit fünf Zustä
    In einer Ablaufsteuerung wird *E_T_FF_INIT* als Flip‑Flop für einen Schritt eingesetzt. Die Initialisierung erlaubt es, den Schritt direkt nach dem Start entweder aktiv oder inaktiv zu setzen, ohne einen separaten Setz‑ oder Rücksetzimpuls.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein        | Besonderheit                                                                 |
 |-----------------|------------------------------------------------------------------------------|
 | **E_T_FF**      | Reines T‑Flip‑Flop ohne Initialisierungslogik. Startet stets im RESET‑Zustand. |

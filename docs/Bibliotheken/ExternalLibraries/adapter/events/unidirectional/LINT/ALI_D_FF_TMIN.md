@@ -9,16 +9,19 @@ Der Funktionsblock **ALI_D_FF_TMIN** realisiert einen Datenspeicher (D-Flip-Flop
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Mit Variablen | Kommentar |
 |----------|-----|---------------|-----------|
 | INIT     | EInit | Tmin | Initialisierungsanforderung, setzt die minimale Haltezeit |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Mit Variablen | Kommentar |
 |----------|-----|---------------|-----------|
 | INITO    | EInit | – | Bestätigung der Initialisierung |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Kommentar |
 |----------|-------|-----------|
 | Tmin     | TIME  | Minimale Zeit zwischen zwei Ausgangsereignissen (EO) |
@@ -27,6 +30,7 @@ Der Funktionsblock **ALI_D_FF_TMIN** realisiert einen Datenspeicher (D-Flip-Flop
 Keine direkten Datenausgänge. Der latched Wert wird über den **Q-Adapter** bereitgestellt.
 
 ### **Adapter**
+
 | Bezeichnung | Typ | Richtung | Kommentar |
 |-------------|-----|----------|-----------|
 | I           | ALI (unidirectional) | Socket (Eingang) | Wert, der übernommen werden soll |
@@ -61,6 +65,7 @@ Der genaue Zustandsautomat liegt jedoch im internen FB und ist hier nicht abgebi
 - **Sequenzielle Verarbeitung mit Mindestabstand**: Sicherstellung, dass nachfolgende Bausteine genügend Zeit zur Verarbeitung haben.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Unterschied |
 |----------|-------------|
 | `ALI_D_FF` (ohne TMIN) | Keine Mindestzeit zwischen Ausgangsereignissen, sofortige Weiterleitung bei jeder Flanke. |

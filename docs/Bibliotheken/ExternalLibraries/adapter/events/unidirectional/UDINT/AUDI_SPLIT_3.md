@@ -21,6 +21,7 @@ Der Funktionsblock **AUDI_SPLIT_3** dient der Vervielfachung eines eingehenden *
 - Keine
 
 ### **Adapter**
+
 | Typ | Name | Beschreibung |
 |-----|------|--------------|
 | Socket (adapter::types::unidirectional::AUDI) | **IN** | Eingangsadapter zum Empfang des AUDI-Signals |

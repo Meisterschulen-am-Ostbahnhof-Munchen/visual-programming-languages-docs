@@ -21,6 +21,7 @@ Der Funktionsblock **AULI_TO_AUI** ist ein zusammengesetzter Baustein (Composite
 Über den Adapter-Plug `AUI_OUT` wird ein Datenwert vom Typ `D1` (entspricht `UINT`) ausgegeben.
 
 ### **Adapter**
+
 | Name     | Richtung | Typ                        |
 |----------|----------|----------------------------|
 | AULI_IN  | Socket   | `adapter::types::unidirectional::AULI` |
@@ -50,6 +51,7 @@ Der Baustein besitzt keinen eigenen endlichen Automaten. Die interne Konvertieru
 - **Datenreduktion**: Gezielte Reduzierung der Auflösung für nachfolgende Verarbeitungsschritte (z. B. Anzeige oder einfache Schwellwertlogik).
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein      | Eingangstyp | Ausgangstyp | Besonderheit |
 |---------------|-------------|-------------|--------------|
 | `AULI_TO_AUI` | `ULINT`     | `UINT`      | Adapter‑Wrapper, ereignisgesteuert |

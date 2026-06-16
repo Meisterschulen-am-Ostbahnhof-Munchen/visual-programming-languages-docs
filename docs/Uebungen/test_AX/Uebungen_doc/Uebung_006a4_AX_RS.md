@@ -19,6 +19,7 @@ Ziel ist es, das Verhalten eines **reset-dominanten** Toggle-Flipflops zu verste
 - **DigitalOutput_Q1** (Typ: `logiBUS_QXA`): Gibt den Zustand des Flipflops an den logiBUS-Ausgang `Output_Q1` aus.
 
 ### Parameter
+
 | FB | Parameter | Wert |
 |----|-----------|------|
 | DigitalInput_SET | `QI` | `TRUE` |

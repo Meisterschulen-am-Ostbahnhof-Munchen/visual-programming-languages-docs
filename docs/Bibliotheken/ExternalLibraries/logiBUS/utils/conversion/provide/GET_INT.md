@@ -9,11 +9,13 @@ Der Funktionsblock **GET_INT** dient dazu, den aktuellen Wert einer INT-Variable
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **REQ** | Normaler Ausführungsrequest; löst das Auslesen der InOut-Variablen **IN** aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF** | Bestätigung der Ausführung; signalisiert, dass der Wert von **IN** gepuffert und am Ausgang **OUT** bereitsteht. |
@@ -24,6 +26,7 @@ Der Funktionsblock **GET_INT** dient dazu, den aktuellen Wert einer INT-Variable
 Der Eingabewert wird über den InOut-Parameter **IN** bereitgestellt (siehe nächster Abschnitt).
 
 ### **Daten-Ausgänge**
+
 | Ausgang | Typ | Beschreibung |
 |---------|-----|--------------|
 | **OUT** | INT | Gepufferter Ausgabewert, der den letzten gelesenen Wert von **IN** enthält. Initialwert: 0. |
@@ -32,6 +35,7 @@ Der Eingabewert wird über den InOut-Parameter **IN** bereitgestellt (siehe näc
 – *Keine Adapter vorhanden.*
 
 ### **InOut-Variablen (implizit)**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | **IN** | INT | Quelle des auszulesenden Werts. Kann sowohl als Eingabe als auch als Ausgabe verwendet werden (hier nur lesend). Initialwert: 0. |
@@ -66,6 +70,7 @@ Der FB besitzt einen einzigen Zustand **REQ**:
 - **Ersatz eines MOVE-FBs**: Wenn aus Performance-Gründen ein direkter Speicherzugriff über InOut bevorzugt wird, ersetzt **GET_INT** den klassischen MOVE-Baustein mit separatem Eingang und Ausgang.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Typ des Eingangs | Pufferung | Besonderheit |
 |----------|------------------|-----------|--------------|
 | **GET_INT** | InOut (INT) | Ja (einmaliges Lesen bei REQ) | Zugriff auf Originalvariable, keine zusätzliche Variable erforderlich |

@@ -9,6 +9,7 @@ Der Funktionsblock **AW_DEMUX_4** ist ein generischer Demultiplexer für Adapter
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar                    |
 |------|-------|------------------------------|
 | REQ  | Event | Setzt den Index `K`          |
@@ -16,6 +17,7 @@ Der Funktionsblock **AW_DEMUX_4** ist ein generischer Demultiplexer für Adapter
 Der Ereigniseingang `REQ` löst die Verarbeitung aus: Der aktuelle Wert von `K` wird übernommen und das Eingangssignal an den entsprechenden Ausgang weitergeleitet.
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Kommentar                               |
 |------|-------|-----------------------------------------|
 | CNF  | Event | Bestätigung der Übernahme von `K`       |
@@ -23,6 +25,7 @@ Der Ereigniseingang `REQ` löst die Verarbeitung aus: Der aktuelle Wert von `K` 
 Nach erfolgreicher Umschaltung wird das Ereignis `CNF` gesendet.
 
 ### **Daten-Eingänge**
+
 | Name | Typ   | Kommentar        |
 |------|-------|------------------|
 | K    | UINT  | Index (1‑basierend typischerweise) |
@@ -33,6 +36,7 @@ Der Wert von `K` bestimmt, welcher Ausgangsadapter aktiviert wird. Gültige Wert
 Keine.
 
 ### **Adapter**
+
 | Richtung | Name  | Typ                                     | Kommentar                       |
 |----------|-------|-----------------------------------------|---------------------------------|
 | Socket   | IN    | `adapter::types::unidirectional::AW`   | Eingangssignal (Quelle)         |
@@ -70,6 +74,7 @@ Eine explizite Zustandsmaschine ist im XML nicht definiert, aber das beschrieben
 - **Test‑ und Simulationsumgebungen:** Ein Signalgenerator kann über den Index `K` flexibel an mehrere Testobjekte angeschlossen werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein       | Funktion                                   | Ausgänge |
 |----------------|--------------------------------------------|----------|
 | **AW_DEMUX_4** | Demultiplexer für AW‑Adapter (1→4)         | 4        |

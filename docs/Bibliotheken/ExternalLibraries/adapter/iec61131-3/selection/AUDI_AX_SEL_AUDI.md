@@ -28,6 +28,7 @@ Der FB besitzt keine dedizierten Daten-Ausgänge. Der ausgewählte Datenwert wir
 - **OUT.D1** (Typ: AUDI) – ausgewählter Datenwert (entspricht IN0.D1 oder IN1.D1)
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Kommentar |
 |---------|----------|-----|-----------|
 | **IN0** | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Erster auswählbarer Eingang |
@@ -70,6 +71,7 @@ Der Baustein eignet sich ideal für folgende Einsatzfälle in der Automatisierun
 Die Verwendung benutzerdefinierter Adaptertypen (`AUDI`, `AX`) erlaubt eine einfache Anpassung an projektspezifische Datenstrukturen.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Kriterium | **AUDI_AX_SEL_AUDI** | Einfacher Bool-MUX (z. B. `F_SEL`) |
 |-----------|------------------------|---------------------------------------|
 | **Schnittstelle** | Reine Adapter (Ereignis+Daten gekapselt) | Getrennte Ein-/Ausgangspins |

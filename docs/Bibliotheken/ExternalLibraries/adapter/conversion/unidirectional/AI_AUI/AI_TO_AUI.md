@@ -21,6 +21,7 @@ Keine separaten Daten-Eingänge vorhanden. Der zu konvertierende Wert wird über
 Keine separaten Daten-Ausgänge vorhanden. Der konvertierte Wert wird über den Adapter `AUI_OUT.D1` (Typ UINT) bereitgestellt.
 
 ### Adapter
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Socket (Eingang) | `AI_IN` | `adapter::types::unidirectional::AI` | INT‑Adapter‑Eingang. Liefert das Ereignis `E1` und den Datenwert `D1` (INT). |

@@ -11,12 +11,14 @@ Der Funktionsblock **FB_MM710_IMU** ist ein serviceorientierter Baustein (SIFB) 
 ## Schnittstellenstruktur
 
 ### **Ereignis‑Eingänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INIT | EInit | Initialisierung des Bausteins. Mit diesem Ereignis werden die CAN‑Parameter (Index, Source‑Address) sowie der Aktivierungs‑Qualifier QI gesetzt. |
 | REQ | Event | Auslösen einer erneuten Messwertabfrage. Nach erfolgreicher Initialisierung können die Sensordaten zyklisch oder ereignisgesteuert angefordert werden. |
 
 ### **Ereignis‑Ausgänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INITO | EInit | Bestätigung der erfolgreichen Initialisierung (QO = TRUE) oder Fehlermeldung. |
@@ -24,6 +26,7 @@ Der Funktionsblock **FB_MM710_IMU** ist ein serviceorientierter Baustein (SIFB) 
 | ERROR | Event | Tritt bei Kommunikations‑ oder CRC‑Fehlern auf. Enthält detaillierte Fehlerinformationen. |
 
 ### **Daten‑Eingänge**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | QI | BOOL | Aktivierungs‑Qualifier: Nur bei QI = TRUE wird die Initialisierung (INIT) ausgeführt. |
@@ -32,6 +35,7 @@ Der Funktionsblock **FB_MM710_IMU** ist ein serviceorientierter Baustein (SIFB) 
 | SA | BYTE | Source‑Address für J1939‑Kommunikation (Initialwert: `16#DA`). |
 
 ### **Daten‑Ausgänge**
+
 | Variable | Typ | Beschreibung |
 |----------|-----|--------------|
 | QO | BOOL | Quittierung der Initialisierung (TRUE = erfolgreich). |

@@ -9,6 +9,7 @@ Der Funktionsblock **AUDI_UDINT_EQ** führt einen Vergleich zweier Werte vom Typ
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Event | Beschreibung |
 |-------|--------------|
 | `REQ` | Service-Request: Startet den Vergleich. Der Wert von `IN2` wird mit dem aktuellen Wert des Adapters `IN1` verglichen. |
@@ -19,6 +20,7 @@ Hinweis: Zusätzlich kann der Vergleich auch durch ein Ereignis vom Socket-Adapt
 Der FB besitzt keine direkten Event-Ausgänge. Das Ergebnis des Vergleichs wird jedoch über den Plug-Adapter `OUT` ausgegeben, welcher den Event `E1` führt (siehe Adapter). Der Ausgangs-Event wird nach Abschluss des Vergleichs generiert.
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `IN2` | `UDINT` | Zweiter Vergleichswert (direkter Eingang). |
@@ -29,6 +31,7 @@ Hinweis: Der erste Vergleichswert wird über den Socket-Adapter `IN1` bezogen (d
 Keine direkten Daten-Ausgänge. Das Vergleichsergebnis (BOOL) wird über den Plug-Adapter `OUT` ausgegeben (dessen Datenausgang `D1`).
 
 ### **Adapter**
+
 | Typ | Richtung | Beschreibung |
 |-----|----------|--------------|
 | `IN1` – Socket | Eingang | Adapter vom Typ `adapter::types::unidirectional::AUDI`. Liefert den ersten Vergleichswert (Dateneingang `D1`) und kann ein Ereignis (`E1`) zum Starten des Vergleichs senden. |

@@ -44,6 +44,7 @@ Der CLIENT_0_1 Block baut über INIT eine Verbindung auf. Mit dem REQ-Ereignis f
 - Überwachungssysteme (Monitoring), die nur Daten lesen
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2017, 2025 fortiss GmbH, JKU Linz |

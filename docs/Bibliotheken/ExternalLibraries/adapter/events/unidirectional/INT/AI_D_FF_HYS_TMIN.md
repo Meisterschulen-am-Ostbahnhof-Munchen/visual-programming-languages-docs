@@ -11,16 +11,19 @@ Der Funktionsblock **AI_D_FF_HYS_TMIN** realisiert ein Data-Latch (D-Flipflop) m
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | INIT     | EInit | Initialisierungsanforderung (setzt Hystereseband und Tmin) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | INITO    | EInit | Initialisierungsbestätigung |
 
 ### **Daten-Eingänge**
+
 | Variable     | Typ   | Kommentar |
 |--------------|-------|-----------|
 | HYSTERESIS   | INT   | Hystereseband (Wert in derselben Einheit wie das Eingangssignal) |
@@ -30,6 +33,7 @@ Der Funktionsblock **AI_D_FF_HYS_TMIN** realisiert ein Data-Latch (D-Flipflop) m
 Der Baustein besitzt keine eigenen Datenausgänge. Der latched Wert wird über den Ausgangsadapter **Q** bereitgestellt.
 
 ### **Adapter**
+
 | Adapter | Typ | Kommentar |
 |---------|-----|-----------|
 | **I**   | adapter::types::unidirectional::AI | Eingangsadapter: liefert das zu verarbeitende Signal (über Ereignis E1 und Daten D1) |
@@ -65,6 +69,7 @@ Der Baustein besitzt keine expliziten benannten Zustände. Das interne Flipflop 
 - **Schnittstellenentkopplung** – Verwendung als stabilisierte Zwischenstufe zwischen einem schnellen Signalgeber und einer trägen Aktorik.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Wesentlicher Unterschied |
 |----------|--------------------------|
 | **E_D_FF** (einfaches D-Flipflop) | Kein Hystereseband, keine Mindestzeit – übernimmt jede Änderung sofort. |

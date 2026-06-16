@@ -9,11 +9,13 @@ Der Funktionsblock `GET_TIME_OF_DAY` dient dem Auslesen eines Tageszeitwertes (T
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | REQ      | Event    | Ausführungsanforderung; liest den aktuellen Wert von IN |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | CNF      | Event    | Bestätigung nach erfolgreichem Lesen und Puffern |
@@ -22,6 +24,7 @@ Der Funktionsblock `GET_TIME_OF_DAY` dient dem Auslesen eines Tageszeitwertes (T
 Es sind keine reinen Eingänge vorhanden. Die Quelldaten werden über den InOut‑Eingang `IN` bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 | Ausgang | Datentyp   | Kommentar                     |
 |---------|------------|-------------------------------|
 | OUT     | TIME_OF_DAY| Gepufferter Tageszeitwert     |

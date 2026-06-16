@@ -10,6 +10,7 @@ Der Funktionsblock **AX_SEL_AUDI** realisiert eine binäre Auswahlfunktion nach 
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | **EI0** | Setzt den Eingang IN0 (mit IN0 verbunden). Das Ereignis dient der Aktualisierung des Wertes IN0. |
@@ -19,6 +20,7 @@ Der Funktionsblock **AX_SEL_AUDI** realisiert eine binäre Auswahlfunktion nach 
 Der Baustein besitzt keine expliziten Ereignis-Ausgänge. Die Ausgabe von Ereignissen erfolgt ausschließlich über den **OUT**-Adapter (siehe Adapter).
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Kommentar                         |
 |----------|-------|-----------------------------------|
 | **IN0**  | UDINT | Erster selektierbarer Eingangswert. |
@@ -28,6 +30,7 @@ Der Baustein besitzt keine expliziten Ereignis-Ausgänge. Die Ausgabe von Ereign
 Der Baustein besitzt keine expliziten Daten-Ausgänge. Der ausgewählte Wert wird über den **OUT**-Adapter ausgegeben (siehe Adapter).
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ (Paket) | Kommentar |
 |---------|----------|-------------|-----------|
 | **G**   | Socket   | `adapter::types::unidirectional::AX` | Liefert das Steuersignal zur Auswahl: Ereignis **E1** und Datenwert **D1** (z. B. BOOL, 0 = IN0, 1 = IN1). |
@@ -71,6 +74,7 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Abläufe sind rein
 - **Redundanz:** Falls ein Signal ausfällt, kann über das Steuersignal auf ein alternatives Signal umgeschaltet werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaften |
 |----------|---------------|
 | **F_SEL** (Standard) | Reine Funktionsblock‑Implementierung ohne Adapter; verwendet klassische Ein‑/Ausgangsvariablen. |

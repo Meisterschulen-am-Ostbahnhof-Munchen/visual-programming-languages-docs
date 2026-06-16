@@ -10,16 +10,19 @@ Der AW_MUX_5 ist ein generischer Multiplexer-Funktionsblock, der auf Basis eines
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Setzt den Index K und löst die Umschaltung aus (verbunden mit K) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigt die erfolgreiche Umschaltung auf den gewählten Eingang |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Auswahlindex (Wertebereich 0–4) |
@@ -33,6 +36,7 @@ Keine Datenausgänge vorhanden.
   Liefert den Wert des durch K ausgewählten Eingangs.
 
 **Sockets (Eingänge):**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | IN1  | AW  | Eingangswert für K = 0 |

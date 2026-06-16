@@ -21,6 +21,7 @@ Der Daten-Eingang wird über den Socket **AR_IN** bereitgestellt. Der Eingangswe
 Der Daten-Ausgang wird über den Plug **AI_OUT** bereitgestellt. Der Ausgangswert **AI_OUT.D1** ist vom Typ INT.
 
 ### **Adapter**
+
 | Bezeichnung | Richtung | Typ | Bemerkung |
 |-------------|----------|-----|-----------|
 | AR_IN       | Eingang  | `adapter::types::unidirectional::AR` | REAL‑Adapter (Eingang) |

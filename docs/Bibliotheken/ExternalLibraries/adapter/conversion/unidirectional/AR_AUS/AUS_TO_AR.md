@@ -21,6 +21,7 @@ Keine separaten Daten-Eingänge vorhanden. Daten werden ausschließlich über de
 Keine separaten Daten-Ausgänge vorhanden. Daten werden ausschließlich über den **AR_OUT** Adapter ausgegeben.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Kommentar |
 |---|---|---|---|
 | `adapter::types::unidirectional::AUS` | AUS_IN | Socket (Eingang) | USINT-basierter Adapter-Eingang |

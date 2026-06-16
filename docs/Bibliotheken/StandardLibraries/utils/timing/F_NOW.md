@@ -19,6 +19,7 @@ Die Funktion dient als Wrapper für die ST-Funktion NOW().
 - `CNF`: Bestätigung der Zeitabfrage
 
 ### **Daten-Ausgänge**
+
 | Parameter | Typ | Beschreibung | Format |
 |-----------|-----|--------------|--------|
 | (implizit) | DATE_AND_TIME | Aktueller Zeitstempel | DT#2025-04-14-15:30:45 |

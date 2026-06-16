@@ -10,6 +10,7 @@ Der Funktionsblock **AX_SR_SYM** ist ein ereignisgesteuertes, bistabiles Flipflo
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Beschreibung               |
 |------|-------|----------------------------|
 | S    | Event | Setzt den Ausgang Q auf TRUE. |
@@ -25,6 +26,7 @@ Keine.
 Keine (der Ausgangswert wird über einen Adapter bereitgestellt).
 
 ### **Adapter**
+
 | Name | Typ                                          | Beschreibung                          |
 |------|----------------------------------------------|---------------------------------------|
 | Q    | `adapter::types::unidirectional::AX`         | Bietet den aktuellen binären Zustand. Der Adapter stellt ein Ereignis (`E1`) und einen Datenwert (`D1`) bereit. Nach jeder Zustandsänderung wird `Q.E1` ausgelöst und der neue Wert an `Q.D1` ausgegeben. |
@@ -42,6 +44,7 @@ Die Transitionen erfolgen ausschließlich durch die Ereignisse `S` und `R`. Aus 
 - **Adapter-Schnittstelle**: Der Zustand wird nicht direkt als Datenausgang geführt, sondern über einen unidirektionalen Adapter (`AX`). Änderungen werden durch ein Ereignis (`Q.E1`) signalisiert, sodass der empfangende Baustein asynchron reagieren kann.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung                                         |
 |---------|------------------------------------------------------|
 | START   | Warte auf erstes Ereignis; kein Ausgangswert definiert. |

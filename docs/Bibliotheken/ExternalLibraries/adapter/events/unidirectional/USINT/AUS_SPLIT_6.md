@@ -21,6 +21,7 @@ Der Funktionsbaustein **AUS_SPLIT_6** ist ein generischer Baustein, der ein eing
 - Keine direkten Datenausgänge. Die Ausgabedaten werden über die Adapter‑Plugs zur Verfügung gestellt.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AUS` | **IN** | Socket | Eingehendes AUS-Signal, das auf alle Ausgänge verteilt wird. |

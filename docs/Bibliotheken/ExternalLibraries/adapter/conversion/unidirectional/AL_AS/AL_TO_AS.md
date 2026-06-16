@@ -21,6 +21,7 @@ Der Funktionsblock **AL_TO_AS** ist ein Composite-Baustein, der einen unidirekti
 - Keine
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | Socket | AL_IN | Input | Unidirektionaler AL-Adapter, der LWORD-Daten bereitstellt. |
@@ -49,6 +50,7 @@ Der FB besitzt keinen eigenen Zustandsautomaten. Sein Verhalten ist rein kombina
 - **Protokollanpassung**: In heterogenen Automatisierungsnetzwerken, in denen unterschiedliche Adaptertypen (unidirektional) zum Einsatz kommen, vereinfacht dieser FB die Konvertierung auf einer einzigen logischen Ebene.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eingangstyp | Ausgangstyp | Besonderheit |
 |----------|-------------|-------------|--------------|
 | **AL_TO_AS** | LWORD (Adapter) | SINT (Adapter) | Composite; verwendet `F_LWORD_TO_SINT` |

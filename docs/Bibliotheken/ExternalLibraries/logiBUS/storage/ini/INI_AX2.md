@@ -11,16 +11,19 @@ Der Funktionsblock INI_AX2 dient dem Lesen und Speichern von REAL-Daten aus eine
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Beschreibung |
 |------|--------------|
 | INIT | Initialisierungsereignis zum Starten des Lesevorgangs. Erwartet die Parameter QI, SECTION, KEY und DEFAULT_VALUE. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Beschreibung |
 |------|--------------|
 | INITO | Bestätigung der Initialisierung. Wird nach Abschluss des Lesevorgangs gesendet. Statusinformationen über QO und STATUS verfügbar. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | QI | BOOL | Eingangsqualifikator zur Steuerung der Verarbeitung. |
@@ -29,12 +32,14 @@ Der Funktionsblock INI_AX2 dient dem Lesen und Speichern von REAL-Daten aus eine
 | DEFAULT_VALUE | BOOL | Standardwert, der gelesen wird, falls der Schlüssel in der Datei nicht vorhanden ist. Voreinstellung: FALSE. |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | QO | BOOL | Ausgangsqualifikator, signalisiert erfolgreiche Verarbeitung. |
 | STATUS | STRING | Statusmeldung des Dienstes (z. B. Fehlertexte). |
 
 ### **Adapter**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | VAL | adapter::types::bidirectional::AX2 | Bidirektionaler Adapter für den Austausch von Werten. Über diesen Adapter wird der gelesene Wert als Ausgang (DO1) bereitgestellt und ein Schreibwert als Eingang (DI1) entgegengenommen. |

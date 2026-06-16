@@ -21,6 +21,7 @@ Der FB besitzt keine eigenständigen Daten-Eingänge. Die Daten werden über die
 Der FB besitzt keine eigenständigen Daten-Ausgänge. Die aufgeteilten Daten werden über die AQ-Adapter-Plugs (jeweils über `QUARTER_BYTE_xx.D1`) ausgegeben.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | `IN` | `adapter::types::unidirectional::AD` | Socket (Eingang) | DWORD-Eingangsadapter (32 Bit). Über `E1` und `D1` werden Ereignis und Daten empfangen. |
@@ -51,6 +52,7 @@ Als Composite-FB besitzt `SPLIT_AD_INTO_AQ` keinen eigenen Zustandsautomaten. Di
 - **Parallelverarbeitung von Teilinformationen**: Zerlegung eines DWORDs für nachgelagerte Bausteine, die jeweils nur 2 Bit des Originals benötigen.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Beschreibung | Unterschied zu `SPLIT_AD_INTO_AQ` |
 |----------|--------------|-----------------------------------|
 | `SPLIT_DWORD_INTO_QUARTERS` | Zerlegt einen DWORD in 16 Quarter-Werte und gibt diese als direkte Datenausgänge aus. | `SPLIT_AD_INTO_AQ` kapselt diese Zerlegung zusätzlich in Adapter-Schnittstellen und fügt eine Flip-Flop-Synchronisation hinzu. |

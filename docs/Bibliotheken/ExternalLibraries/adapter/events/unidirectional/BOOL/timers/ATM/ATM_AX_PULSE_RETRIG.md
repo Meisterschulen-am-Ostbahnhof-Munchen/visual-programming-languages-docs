@@ -9,6 +9,7 @@ Der Funktionsbaustein **ATM_AX_PULSE_RETRIG** erzeugt einen Impuls (Puls) defini
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar                                  |
 |------|-------|--------------------------------------------|
 | REQ  | Event | Startbefehl – löst einen neuen Impuls aus und startet die Timer-Zeit neu |
@@ -24,6 +25,7 @@ Keine. Die Impulsdauer wird über den Adapter **PT** (Socket) bereitgestellt.
 Keine. Der Impulsstatus (aktiv/inaktiv) wird über den Adapter **Q** (Plug) ausgegeben.
 
 ### **Adapter**
+
 | Rolle | Name | Typ   | Richtung | Beschreibung                                          |
 |-------|------|-------|----------|-------------------------------------------------------|
 | Input | PT   | ATM   | Socket   | Liefert die gewünschte Impulsdauer <small>(D1 → PT)</small> |
@@ -50,6 +52,7 @@ Der Baustein kennt zwei Zustände:
 - **Ansteuerung von Aktoren mit Mindesteinschaltzeit**: Ventile, Motoren oder Relais, die eine bestimmte Einschaltdauer benötigen, können zuverlässig angesteuert werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein                | Retriggerbar | Schnittstelle        | Einsatzgebiet                     |
 |-------------------------|--------------|----------------------|-----------------------------------|
 | **ATM_AX_PULSE_RETRIG** | Ja           | Adapter (ATM/AX)     | Modulare Steuerungen mit Adapter-Konzept |

@@ -15,16 +15,19 @@ Der Baustein ist als generischer FB (GenericClassName `GEN_AE_DEMUX`) realisiert
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `REQ`    | Übernahme des Index `K` und Weiterleitung des Adapter-Eingangs auf einen der drei Ausgänge |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF`    | Bestätigung der abgeschlossenen Weiterleitung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ   | Beschreibung |
 |------|-------|--------------|
 | `K`  | UINT  | Index des ausgewählten Ausgangs (gültige Werte: 1, 2 oder 3) |
@@ -33,6 +36,7 @@ Der Baustein ist als generischer FB (GenericClassName `GEN_AE_DEMUX`) realisiert
 *Keine direkten Datenausgänge vorhanden. Die Ausgangsdaten werden über die Adapter-Ausgänge bereitgestellt.*
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ                                  | Beschreibung |
 |---------|----------|--------------------------------------|--------------|
 | `IN`    | Socket   | `adapter::types::unidirectional::AE` | Eingangs-AE-Signal |

@@ -9,16 +9,19 @@ Der Funktionsblock **Q_ObjEnableDisable_AX** ist ein Composite-Baustein, der als
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | `INIT` | EInit | Initialisierung des Bausteins; übergeben wird die Objekt-ID (u16ObjId). |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | `INITO` | EInit | Bestätigung der erfolgreichen Initialisierung. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `u16ObjId` | UINT | Objekt-ID, die beim INIT-Ereignis gesetzt wird. |
@@ -27,6 +30,7 @@ Der Funktionsblock **Q_ObjEnableDisable_AX** ist ein Composite-Baustein, der als
 Keine direkten Datenausgänge; der alte Zustand wird über den Adapter-Plug `qOldAbility` ausgegeben.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | `qAbility` | `adapter::types::unidirectional::AX` | Socket | Empfängt den Enable/Disable-Befehl (0 = disable, 1 = enable, 0xFF = undefined). |
@@ -64,6 +68,7 @@ Der FB `Q_ObjEnableDisable_AX` selbst besitzt keinen eigenen Zustandsautomaten. 
 - **Zustandsrückmeldung**: Erfassung des vorherigen Zustands für Diagnose- oder Überwachungszwecke.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Schnittstelle | Besonderheit |
 |----------|---------------|--------------|
 | **Q_ObjEnableDisable** | Direkte Ereignis-/Dateneingänge | Erfordert separate Bool-Eingänge und Ereignisse. |

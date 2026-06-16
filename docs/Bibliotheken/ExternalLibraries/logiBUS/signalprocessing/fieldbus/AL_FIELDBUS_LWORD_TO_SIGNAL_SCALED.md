@@ -9,22 +9,26 @@ Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL_SCALED` dient der Umwandlung ein
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar |
 |------|-------|-----------|
 | INIT | EInit | Init-Anforderung |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ   | Kommentar |
 |-------|-------|-----------|
 | INITO | EInit | Init-Bestätigung |
 
 ### **Daten-Eingänge**
+
 | Name   | Typ   | Anfangswert | Kommentar                    |
 |--------|-------|-------------|------------------------------|
 | SCALE  | LREAL | 1.0         | Skalierungsfaktor            |
 | OFFSET | DINT  | 0           | Nach der Skalierung addierter Offset |
 
 ### **Adapter**
+
 | Typ  | Richtung | Name  | Kommentar                |
 |------|----------|-------|--------------------------|
 | AL   | Socket   | IN    | Eingangssignal (LWORD)   |

@@ -11,16 +11,19 @@ Der Baustein **AIWS_MUX_4** ist ein Multiplexer für vier unidirektionale AIWS�
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **REQ**  | Startet die Umschaltung. Der Wert von **K** wird ausgelesen und der entsprechende Eingang auf den Ausgang geschaltet. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF**  | Quittierung: Die Umschaltung wurde durchgeführt. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | **K**    | UINT  | Index des auszuwählenden Eingangs (Wertebereich 0 … 3). |
@@ -29,6 +32,7 @@ Der Baustein **AIWS_MUX_4** ist ein Multiplexer für vier unidirektionale AIWS�
 Keine.
 
 ### **Adapter**
+
 | Name | Typ                                           | Richtung | Beschreibung |
 |------|-----------------------------------------------|----------|--------------|
 | IN1  | adapter::types::unidirectional::AIWS          | Socket   | Erster Eingang (K = 0). |

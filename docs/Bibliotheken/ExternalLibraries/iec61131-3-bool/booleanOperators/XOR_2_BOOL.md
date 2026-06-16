@@ -31,6 +31,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 Der `XOR_2_BOOL`-Block arbeitet ereignisgesteuert. Bei Eintreffen des Ereignisses `REQ` werden die aktuellen Werte an den Daten-Eingängen `IN1` und `IN2` gelesen. Anschließend wird die logische XOR-Operation (`OUT = (IN1 AND NOT IN2) OR (NOT IN1 AND IN2)`) durchgeführt. Das berechnete Ergebnis wird am Datenausgang `OUT` ausgegeben und gleichzeitig wird das Bestätigungsereignis `CNF` aktiviert, um den Abschluss der Operation an nachfolgende Blöcke zu signalisieren.
 
 Die Wahrheitstabelle der Operation ist:
+
 | IN1 | IN2 | OUT |
 |-----|-----|-----|
 | 0   | 0   | 0   |

@@ -9,16 +9,19 @@ Der Funktionsblock **ATM_MUX_5** dient als universeller Multiplexer für fünf u
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar                |
 |------|-------|--------------------------|
 | REQ  | Event | Set Index K und ausführen |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Kommentar                        |
 |------|-------|----------------------------------|
 | CNF  | Event | Bestätigung der Indexumschaltung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Kommentar       |
 |------|------|-----------------|
 | K    | UINT | Auswahlindex (0..4) |
@@ -27,6 +30,7 @@ Der Funktionsblock **ATM_MUX_5** dient als universeller Multiplexer für fünf u
 Keine Datenausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über den Adapter‑Plug `OUT`.
 
 ### **Adapter**
+
 | Richtung | Name | Typ                                   | Kommentar                                               |
 |----------|------|---------------------------------------|---------------------------------------------------------|
 | Plug     | OUT  | adapter::types::unidirectional::ATM   | Ausgang: bei `K=0` = IN1, `K=1` = IN2, …, `K=4` = IN5 |

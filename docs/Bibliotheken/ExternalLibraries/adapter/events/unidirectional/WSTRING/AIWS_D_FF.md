@@ -11,26 +11,31 @@ Der Funktionsblock AIWS_D_FF realisiert ein data latch (D)-Flipflop, das einen e
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | I.E1 | Ereignis (über Adapter) | Ereignis, das das Übernehmen des Datenwertes auslöst |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | Q.E1 | Ereignis (über Adapter) | Ereignis, das den gespeicherten Datenwert anzeigt |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | I.D1 | ANY (über Adapter) | Datenwert, der beim Eintreffen von I.E1 übernommen wird |
 
 ### **Daten-Ausgänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | Q.D1 | ANY (über Adapter) | Gespeicherter Datenwert, der mit Q.E1 ausgegeben wird |
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | **I** | `adapter::types::unidirectional::AIWS` | Socket (Eingang) | Liefert den zu latchenden Wert sowie das auslösende Ereignis |

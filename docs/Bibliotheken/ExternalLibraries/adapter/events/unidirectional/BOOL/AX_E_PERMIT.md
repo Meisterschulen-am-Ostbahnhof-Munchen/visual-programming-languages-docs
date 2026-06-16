@@ -11,11 +11,13 @@ Der Baustein **AX_E_PERMIT** realisiert eine bedingte Ereignisweitergabe (permis
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar      |
 |------|-------|----------------|
 | EI   | Event | Ereigniseingang |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Kommentar       |
 |------|-------|-----------------|
 | EO   | Event | Ereignisausgang |
@@ -27,6 +29,7 @@ Der Baustein besitzt keine eigenen Dateneingänge. Das Freigabesignal wird über
 Der Baustein besitzt keine Datenausgänge.
 
 ### **Adapter**
+
 | Rolle   | Name   | Typ                                    | Kommentar                     |
 |---------|--------|----------------------------------------|-------------------------------|
 | Socket  | PERMIT | `adapter::types::unidirectional::AX`   | Liefert das Freigabesignal (D1) |

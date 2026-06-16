@@ -36,6 +36,7 @@ Alle Dateneingänge werden über die Adapter-Sockets bereitgestellt:
 - **CV.D1** (über Adapter CV, Typ AI) – Aktueller Zählerstand (INT).
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | CU   | adapter::types::unidirectional::AX | Socket (Eingang) | Ereignis- und Datenadapter für den Zählimpuls |
@@ -71,6 +72,7 @@ Der Baustein hat keine eigenen sequentiellen Zustände jenseits dieser Datenabh�
 - **Modulare Automatisierung**: Einbettung in größere Funktionsbausteine über einheitliche Adapter-Schnittstellen (AX/AI).
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eigenschaften |
 |----------|---------------|
 | **AI_FB_CTU** | Adapter-basiert, verwendet IEC 61131-3 CTU, löst bei jedem Eingang aus |

@@ -9,24 +9,28 @@ Der Funktionsblock `PoolReload` ist ein Service-Interface-Baustein gemäß ISO 1
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | `INIT` | `EInit` | Initialisierung des Dienstes (mit den Parametern `QI` und `poolFileName`) |
 | `REQ` | `Event` | Dienstaufforderung – führt das Nachladen des Pools aus (mit `QI`) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | `INITO` | `EInit` | Bestätigung der Initialisierung (gibt `QO` und `STATUS` aus) |
 | `CNF` | `Event` | Bestätigung – Pool-Nachladen abgeschlossen (gibt `QO`, `STATUS` und `s16Result` aus) |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `QI` | `BOOL` | Quality Input: `TRUE` schaltet den Dienst aktiv |
 | `poolFileName` | `STRING` | Pfad zur Pool-Datei (z. B. `pools/pool_de.iop`) |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `QO` | `BOOL` | Quality Output: `TRUE`, wenn das Nachladen erfolgreich war |
@@ -72,6 +76,7 @@ Der Baustein kann folgende grundlegende Zustände durchlaufen:
 - **Last-Minute-Änderungen**: Während der Inbetriebnahme können geänderte Pool-Dateien schnell geladen werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Beschreibung |
 |----------|--------------|
 | `PoolLoader` | Lädt den Pool nur beim Systemstart; kein Nachladen zur Laufzeit. |

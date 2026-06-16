@@ -47,6 +47,7 @@ Die Toggle-Funktion wird durch die `CLK`-Transitionen realisiert: unabhängig vo
 - **Kombination von SR- und T-Flipflop**: Der Baustein vereint Setzen, Rücksetzen und Toggeln in einer kompakten Einheit.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung | Ausgang Q.D1 | Ereignis nach Algorithmus |
 |---------|--------------|--------------|---------------------------|
 | START   | Initialzustand, kein definierter Wert | undefiniert | - |

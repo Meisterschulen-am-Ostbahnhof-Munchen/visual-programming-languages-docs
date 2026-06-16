@@ -27,6 +27,7 @@ Da es sich um einen Composite-Baustein handelt, werden alle Ein- und Ausgänge �
   Der Adapter **AUS_OUT** führt den Daten-Ausgang **D1** (Typ: USINT), der das konvertierte Ganzzahlergebnis ausgibt.
 
 ### **Adapter**
+
 | Name      | Typ                                          | Richtung | Kommentar                       |
 |-----------|----------------------------------------------|----------|---------------------------------|
 | `ALR_IN`  | `adapter::types::unidirectional::ALR`        | Socket   | Unidirektionaler LREAL-Eingang  |

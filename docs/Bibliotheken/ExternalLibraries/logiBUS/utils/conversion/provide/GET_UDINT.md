@@ -9,6 +9,7 @@ Der Funktionsblock **GET_UDINT** dient dazu, den aktuellen Wert einer als InOut 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ | Event | Normaler Ausführungsanforderung |
@@ -17,6 +18,7 @@ Der Funktionsblock **GET_UDINT** dient dazu, den aktuellen Wert einer als InOut 
 - **IN** (InOut-Variable) wird bei REQ gelesen.
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF | Event | Bestätigung der Ausführung |
@@ -26,11 +28,13 @@ Der Funktionsblock **GET_UDINT** dient dazu, den aktuellen Wert einer als InOut 
 - **IN** (InOut-Variable) wird ebenfalls assoziiert, d. h. ihr Wert kann nach dem Event am Ausgang gelesen werden.
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Vorgabewert | Kommentar |
 |------|-----|-------------|-----------|
 | IN | UDINT (InOut) | 0 | Quellvariable, die gelesen wird |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Vorgabewert | Kommentar |
 |------|-----|-------------|-----------|
 | OUT | UDINT | 0 | Gepufferter Ausgangswert |

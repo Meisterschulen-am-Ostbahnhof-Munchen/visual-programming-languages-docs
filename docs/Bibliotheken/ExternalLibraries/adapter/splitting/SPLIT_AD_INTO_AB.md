@@ -11,11 +11,13 @@ Der Funktionsblock **SPLIT_AD_INTO_AB** dient der Aufteilung eines 32‑Bit-Date
 Der FB besitzt keine klassischen Ereignis‑ oder Datenschnittstellen. Die gesamte Kommunikation erfolgt über Adapter:
 
 ### **Adapter (Sockets)**
+
 | Adapter | Typ | Kommentar |
 |---------|-----|------------|
 | IN | `adapter::types::unidirectional::AD` | DWORD‑Eingang (32‑Bit) |
 
 ### **Adapter (Plugs)**
+
 | Adapter | Typ | Kommentar |
 |---------|-----|------------|
 | BYTE_00 | `adapter::types::unidirectional::AB` | Byte 0 (niederwertigstes Byte) |

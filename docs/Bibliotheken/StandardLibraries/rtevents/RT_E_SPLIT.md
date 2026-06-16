@@ -10,6 +10,7 @@ Echtzeit-Variante des E_SPLIT Bausteins. Teilt ein Ereignis in mehrere auf.
 ![RT_E_SPLIT](RT_E_SPLIT.svg)
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Lizenz | EPL-2.0 |

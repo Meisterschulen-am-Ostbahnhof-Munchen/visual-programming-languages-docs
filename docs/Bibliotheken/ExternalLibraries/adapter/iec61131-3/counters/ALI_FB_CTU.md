@@ -28,6 +28,7 @@ Der Baustein besitzt keine separaten, diskreten Daten‑Ausgänge. Die Ausgangsd
 - **CV.D1** – Aktueller Zählerstand (LINT)
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | **Sockets** (Eingänge) | CU | AX | Count‑Up: Ereignis + BOOL‑Signal |

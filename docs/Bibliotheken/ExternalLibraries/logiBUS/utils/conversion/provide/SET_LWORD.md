@@ -9,21 +9,25 @@ Der Funktionsbaustein **SET_LWORD** dient dazu, einen LWORD-Wert (64-Bit-Integer
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | REQ      | Event    | Normaler Ausführungsanstoß |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | CNF      | Event    | Bestätigung der Ausführung |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Initialwert | Kommentar              |
 |------|----------|-------------|------------------------|
 | IN   | LWORD    | 0           | Wert, der geschrieben wird |
 
 ### **Daten-Ausgänge**
+
 | Name | Datentyp | Initialwert | Kommentar                          |
 |------|----------|-------------|------------------------------------|
 | OUT  | LWORD    | 0           | Zielvariable (als InOut deklariert) |

@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AL` | IN | Socket | Eingangs-Adapter, der das zu verteilende Signal bereitstellt. |

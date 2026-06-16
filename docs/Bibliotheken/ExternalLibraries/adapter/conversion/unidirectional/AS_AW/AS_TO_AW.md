@@ -27,6 +27,7 @@ Der Baustein besitzt einen **Plug** vom Typ `AW`, der indirekt einen Ereignis-Au
 - **AW_OUT.D1** (`WORD`) – Ausgangsdatenwert des AW-Plugs; der konvertierte WORD-Wert.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Kommentar |
 |------|------|----------|-----------|
 | `AS` (unidirektional) | **AS_IN** | Socket (Eingang) | SINT Adapter Eingang |

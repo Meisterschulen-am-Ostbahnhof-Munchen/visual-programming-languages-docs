@@ -10,16 +10,19 @@ Der **AL_MUX_3** ist ein generischer Multiplexer (Signalweiche) für AL-Datenada
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ      | Fordert die Auswahl des durch **K** bestimmten Eingangs an. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF      | Bestätigt die Durchführung der Auswahl (keine Datenübergabe) |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ  | Beschreibung                               |
 |----------|------|--------------------------------------------|
 | K        | UINT | Index des zu selektierenden Eingangs (0/1/2) |
@@ -28,6 +31,7 @@ Der **AL_MUX_3** ist ein generischer Multiplexer (Signalweiche) für AL-Datenada
 – Keine direkten Datenausgänge vorhanden. Die Datenweitergabe erfolgt ausschließlich über den Adapter **OUT**.
 
 ### **Adapter**
+
 | Richtung | Name | Typ                                   | Beschreibung                           |
 |----------|------|---------------------------------------|----------------------------------------|
 | Plug     | OUT  | adapter::types::unidirectional::AL    | Ausgang, der den ausgewählten Eingang weitergibt |

@@ -21,6 +21,7 @@ Keine
 Keine
 
 ### **Adapter**
+
 | Name | Typ | Richtung |
 |------|-----|----------|
 | IN   | adapter::types::unidirectional::AD | Socket (Eingang) |

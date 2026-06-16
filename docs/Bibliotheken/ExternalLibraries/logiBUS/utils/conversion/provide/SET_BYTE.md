@@ -10,16 +10,19 @@ Der Funktionsblock **SET_BYTE** dient dem einfachen Überschreiben einer BYTE-Va
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `REQ` | Event | Normaler Ausführungsauftrag (Schreibvorgang starten) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `CNF` | Event | Bestätigung der erfolgten Zuweisung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Wertebereich | Initialwert | Kommentar |
 |------|-----|--------------|-------------|-----------|
 | `IN` | BYTE | 0…255 | 0 | Wert, der auf die Zielvariable geschrieben werden soll |

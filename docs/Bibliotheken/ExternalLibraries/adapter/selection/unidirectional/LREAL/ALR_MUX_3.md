@@ -9,16 +9,19 @@ Der Funktionsblock **ALR_MUX_3** ist ein generischer Multiplexer für ALR‑Adap
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | `REQ`    | Event    | Startet die Auswahl des Index `K` und aktualisiert den Ausgang `OUT`. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | `CNF`    | Event    | Bestätigt die erfolgreiche Durchführung der Indexauswahl. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | `K`  | `UINT`   | Index zur Auswahl des aktiven Eingangs (Werte 0, 1 oder 2). |
@@ -28,6 +31,7 @@ Der Funktionsblock **ALR_MUX_3** ist ein generischer Multiplexer für ALR‑Adap
 Die Ausgabe erfolgt ausschließlich über den Adapter `OUT`.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | **Plug** | `OUT`  | `adapter::types::unidirectional::ALR` | Ausgang des Multiplexers – enthält die Daten des ausgewählten Eingangs. |

@@ -12,11 +12,13 @@ Der Funktionsblock **AX_E_SWITCH** realisiert ein ereignisgesteuertes Demultiple
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Bezeichnung | Typ    | Beschreibung                  |
 |-------------|--------|-------------------------------|
 | **EI**      | Event  | Ereigniseingang, der umgeschaltet wird |
 
 ### **Ereignis-Ausgänge**
+
 | Bezeichnung | Typ    | Beschreibung                               |
 |-------------|--------|--------------------------------------------|
 | **EO0**     | Event  | Wird aktiviert, wenn **G** = 0             |
@@ -29,6 +31,7 @@ Der Baustein besitzt keine separaten Dateneingänge. Die Schaltinformation wird 
 Keine Datenausgänge vorhanden.
 
 ### **Adapter**
+
 | Bezeichnung | Typ                               | Beschreibung                                                              |
 |-------------|-----------------------------------|---------------------------------------------------------------------------|
 | **G**       | `adapter::types::unidirectional::AX` | Boolesche Schnittstelle; liefert den Wert für die Umschaltung (0 → EO0, 1 → EO1) |

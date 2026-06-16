@@ -9,6 +9,7 @@ Der Funktionsblock `ATM_MUX_4` ist ein generischer Multiplexer, der einen von vi
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar             |
 |------|-------|-----------------------|
 | REQ  | Event | Set Index K (Eingang auswählen) |
@@ -16,6 +17,7 @@ Der Funktionsblock `ATM_MUX_4` ist ein generischer Multiplexer, der einen von vi
 Der Ereigniseingang `REQ` löst die Multiplexer-Funktion aus. Er ist mit der Dateneingangsvariable `K` verknüpft.
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Kommentar                        |
 |------|-------|----------------------------------|
 | CNF  | Event | Confirmation of Set Index K      |
@@ -23,6 +25,7 @@ Der Ereigniseingang `REQ` löst die Multiplexer-Funktion aus. Er ist mit der Dat
 Nach erfolgreicher Umschaltung des Ausgangs auf den durch `K` bestimmten Eingang wird das Ereignis `CNF` ausgegeben.
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Kommentar |
 |------|------|-----------|
 | K    | UINT | index     |
@@ -33,6 +36,7 @@ Mit diesem ganzzahligen Wert wird festgelegt, welcher der vier ATM‑Adapter-Ein
 Der Baustein besitzt keine eigenen Datenausgänge. Die Datenweitergabe erfolgt ausschließlich über die Adapter.
 
 ### **Adapter**
+
 | Name | Typ                                     | Kommentar                                   |
 |------|-----------------------------------------|---------------------------------------------|
 | IN1  | `adapter::types::unidirectional::ATM`   | Input value 1 (K = 0)                       |

@@ -14,11 +14,13 @@ Der Funktionsbaustein **ASSEMBLE_AW_FROM_AB** dient dazu, zwei unidirektionale B
 Der FB besitzt keine direkten Ereignis- oder Datenein-/ausgänge, sondern kommuniziert ausschließlich über Adapter‑Schnittstellen:
 
 ### **Adapter (Plugs – Ausgang)**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | OUT | `adapter::types::unidirectional::AW` | Plug | WORD‑Ausgabe (16 Bit) |
 
 ### **Adapter (Sockets – Eingänge)**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | BYTE_00 | `adapter::types::unidirectional::AB` | Socket | Byte 0 (niedrigwertiges Byte) |

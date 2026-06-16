@@ -26,6 +26,7 @@ Der RT_Bridge_1 Funktionsblock dient als Entkopplungsbrücke für eine Datenverb
 Der Baustein speichert die über `WR` empfangenen Daten zwischen und stellt sie bei `RD` am Ausgang zur Verfügung. Dies entkoppelt den Schreib- vom Leseprozess zeitlich.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2023 Johannes Kepler University Linz |

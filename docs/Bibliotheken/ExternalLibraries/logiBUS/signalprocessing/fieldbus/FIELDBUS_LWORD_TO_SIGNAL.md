@@ -10,16 +10,19 @@ Der Funktionsblock **FIELDBUS_LWORD_TO_SIGNAL** dient der Umwandlung eines LWORD
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Normale Ausführungsanforderung (mit Daten-Eingang `IN`) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Ausführungsbestätigung (mit Daten-Ausgängen `OUT` und `VALID`) |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Initialwert | Kommentar |
 |------|-----|-------------|-----------|
 | IN   | LWORD | `NOT_AVAILABLE_LWM` | Eingangswert vom Feldbus |
@@ -27,6 +30,7 @@ Der Funktionsblock **FIELDBUS_LWORD_TO_SIGNAL** dient der Umwandlung eines LWORD
 *Hinweis:* `NOT_AVAILABLE_LWM` ist eine im Projekt definierte Konstante (z. B. `LWORD#16#FFFFFFFFFFFFFFFF`), die einen ungültigen oder nicht verfügbaren Wert repräsentiert.
 
 ### **Daten-Ausgänge**
+
 | Name  | Typ    | Initialwert                      | Kommentar |
 |-------|--------|----------------------------------|-----------|
 | OUT   | LWORD  | `LWORD#16#0000000000000000`      | Gefilterter Ausgangswert (0 bei ungültigem Signal) |
@@ -56,6 +60,7 @@ Die Konstante `VALID_SIGNAL_LW` definiert die Obergrenze des gültigen Wertebere
 - **Keine weitere Zustandsmaschine:** Der Baustein besitzt nur einen einzigen Zustand (`REQ`), der nach Ausführung des Algorithmus sofort wieder verlassen wird. Es gibt keine internen Verzögerungen oder Warteschleifen.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung | Aktion |
 |---------|--------------|--------|
 | REQ     | Wartet auf ein Ereignis am Eingang `REQ`. | Führt den Algorithmus `REQ` aus (Prüfung und ggf. Filterung) und sendet anschließend das Ereignis `CNF`. |

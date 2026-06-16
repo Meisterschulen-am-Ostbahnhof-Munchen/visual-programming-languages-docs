@@ -11,21 +11,25 @@ Der Adapter-Typ **AR2** stellt eine bidirektionale Schnittstelle zwischen zwei F
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar | mit Daten |
 |------|-----|-----------|-----------|
 | EI1  | Event | Request (or Indication) | DI1 |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar | mit Daten |
 |------|-----|-----------|-----------|
 | EO1  | Event | Indication (or Request) | DO1 |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | DI1  | REAL     | Request (or Indication) to Socket |
 
 ### **Daten-Ausgänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | DO1  | REAL     | Indication (or Request) Data from Plug |

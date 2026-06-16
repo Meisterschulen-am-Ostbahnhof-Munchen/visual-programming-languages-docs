@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Richtung | Name | Typ |
 |----------|------|-----|
 | Socket (Eingang) | `IN` | `adapter::types::unidirectional::AUS` |

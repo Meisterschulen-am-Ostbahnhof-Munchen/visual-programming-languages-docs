@@ -21,6 +21,7 @@ Keine
 Keine
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | IN | `adapter::types::unidirectional::ALR` | Socket (Eingang) | ALR-Eingangssignal, das auf alle Ausgänge kopiert wird |

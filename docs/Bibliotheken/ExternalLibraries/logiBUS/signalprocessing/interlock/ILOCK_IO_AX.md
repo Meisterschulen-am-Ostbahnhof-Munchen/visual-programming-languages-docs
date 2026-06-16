@@ -11,6 +11,7 @@ Der Funktionsblock **ILOCK_IO_AX** realisiert einen kettbaren (chainable) Moment
 Der Baustein besitzt keine klassischen Ereignis- oder Datenein-/ausgänge auf FB-Ebene. Die gesamte Kommunikation erfolgt über **Adapter-Schnittstellen**. Nachfolgend sind die über die Adapter übertragenen Signale aufgeschlüsselt.
 
 ### **Ereignis-Eingänge**
+
 | Signal | Adapter | Beschreibung |
 |--------|---------|--------------|
 | `IN.E1` | IN (AX) | Auslöser für die Verarbeitung des Eingangssignals. |
@@ -18,6 +19,7 @@ Der Baustein besitzt keine klassischen Ereignis- oder Datenein-/ausgänge auf FB
 | `ILOCK_OUT.EI1` | ILOCK_OUT (AX2) | Ereignis vom untergeordneten FB in der Kette (z. B. wenn dieser aktiv wird). |
 
 ### **Ereignis-Ausgänge**
+
 | Signal | Adapter | Beschreibung |
 |--------|---------|--------------|
 | `OUT.E1` | OUT (AX) | Bestätigung, dass die Verarbeitung abgeschlossen ist. |
@@ -25,6 +27,7 @@ Der Baustein besitzt keine klassischen Ereignis- oder Datenein-/ausgänge auf FB
 | `ILOCK_OUT.EO1` | ILOCK_OUT (AX2) | Ereignis an den untergeordneten FB (wird bei jedem Verarbeitungszyklus gesendet). |
 
 ### **Daten-Eingänge**
+
 | Signal | Adapter | Beschreibung |
 |--------|---------|--------------|
 | `IN.D1` | IN (AX) | Setzeingang (BOOL) – wenn TRUE und kein anderer FB in der Kette aktiv, wird der Ausgang aktiv. |
@@ -32,6 +35,7 @@ Der Baustein besitzt keine klassischen Ereignis- oder Datenein-/ausgänge auf FB
 | `ILOCK_OUT.DI1` | ILOCK_OUT (AX2) | Zustand des untergeordneten FBs (TRUE bedeutet, dass dort der Ausgang aktiv ist). |
 
 ### **Daten-Ausgänge**
+
 | Signal | Adapter | Beschreibung |
 |--------|---------|--------------|
 | `OUT.D1` | OUT (AX) | Ausgangssignal (BOOL) – aktiv, wenn `IN.D1` gesetzt und kein anderer FB in der Kette aktiv ist. |
@@ -39,6 +43,7 @@ Der Baustein besitzt keine klassischen Ereignis- oder Datenein-/ausgänge auf FB
 | `ILOCK_OUT.DO1` | ILOCK_OUT (AX2) | Eigenes Ausgangssignal wird an den untergeordneten FB weitergegeben. |
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | `IN` | Socket (Eingang) | `adapter::types::unidirectional::AX` | Eingangssignal vom Anwender (Setzeingang und Ereignis). |
@@ -79,6 +84,7 @@ Im Zustand `REQ` werden die Algorithmus `REQ` und die Ereignisausgaben ausgefüh
 - **Verkettete Sicherheitssteuerungen**, bei denen eine Aktivierung einer nachfolgenden Stufe die vorherige deaktivieren muss (oder umgekehrt).
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Beschreibung | Unterschied zu ILOCK_IO_AX |
 |----------|--------------|----------------------------|
 | **SR-Flipflop** | Setzt Ausgang bei SET, rückgesetzt bei RESET. | Kein Interlock – mehrere FBs können gleichzeitig aktiv sein. |

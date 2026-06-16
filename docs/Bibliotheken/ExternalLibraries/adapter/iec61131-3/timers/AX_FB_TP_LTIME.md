@@ -9,21 +9,25 @@ Der **AX_FB_TP_LTIME** ist ein standardisierter Puls-Timer-Funktionsblock (Timer
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Normaler Ausführungsanforderung (nicht-triggernd) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Ausführungsbestätigung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | PT   | LTIME | Pulszeit (Impulsdauer) |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | ET   | LTIME | Verstrichene Zeit (Elapsed Time) |
@@ -70,6 +74,7 @@ Da der Funktionsblock aus zwei Teilen besteht, ergibt sich folgendes Zustandsver
 - **Zeitmessung mit hoher Auflösung:** Nutzung von `LTIME` für präzise Zeitsteuerungen im Mikro‑ oder Nanosekundenbereich.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Typ | Besonderheit |
 |----------|-----|--------------|
 | **FB_TP_LTIME** (Standard) | TP‑Timer | Kein Adapter, nur Standard‑Events und Signale. |

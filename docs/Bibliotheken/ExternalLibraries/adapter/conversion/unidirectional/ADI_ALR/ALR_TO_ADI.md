@@ -24,6 +24,7 @@ Der FB hat keine direkten Daten-Eingänge. Daten werden über den **ALR_IN**-Soc
 Der FB hat keine direkten Daten-Ausgänge. Daten werden über den **ADI_OUT**-Plug gesendet.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | ALR_IN | Socket | adapter::types::unidirectional::ALR | Liefert ein Ereignis (E1) und einen Datenwert (D1) vom Typ LREAL. |

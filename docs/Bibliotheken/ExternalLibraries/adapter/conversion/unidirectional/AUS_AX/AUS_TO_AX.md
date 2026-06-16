@@ -24,6 +24,7 @@ Keine direkten Dateneingänge. Das Datensignal (USINT) wird über den Adapter **
 Keine direkten Datenausgänge. Das Datensignal (BOOL) wird über den Adapter **AX\_OUT.D1** ausgegeben.
 
 ### **Adapter**
+
 | Name | Richtung | Typ | Kommentar |
 |------|----------|-----|-----------|
 | AUS\_IN | Socket | adapter::types::unidirectional::AUS | USINT-Eingangswert und Ereignis |

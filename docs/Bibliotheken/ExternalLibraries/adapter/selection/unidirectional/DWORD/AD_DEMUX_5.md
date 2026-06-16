@@ -10,16 +10,19 @@ Der Funktionsblock **AD_DEMUX_5** ist ein generischer Demultiplexer für Adapter
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | REQ      | Event    | Setzt den Index K und löst die Demultiplexer-Aktion aus |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | CNF      | Event    | Bestätigung, dass der Index K übernommen und die Verbindung aktiviert wurde |
 
 ### **Daten-Eingänge**
+
 | Variable | Datentyp | Kommentar |
 |----------|----------|-----------|
 | K        | UINT     | Zielindex (Wertebereich 1..5) für die Auswahl des Ausgangsadapters |
@@ -28,6 +31,7 @@ Der Funktionsblock **AD_DEMUX_5** ist ein generischer Demultiplexer für Adapter
 *Keine* – die Datenweitergabe erfolgt über die Adapterschnittstellen.
 
 ### **Adapter**
+
 | Richtung | Bezeichner | Typ                        | Kommentar                          |
 |----------|------------|----------------------------|------------------------------------|
 | Socket   | IN         | adapter::types::unidirectional::AD | Eingangsadapter (zu verteilendes Signal) |
@@ -66,6 +70,7 @@ Eine Zustandsmaschine ist im XML nicht explizit definiert, entspricht aber dem t
 - **Test‑ und Simulationsumgebungen:** Einfaches Umleiten von Datenströmen zwischen verschiedenen logischen Einheiten zur Fehlersuche.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein               | Besonderheiten |
 |------------------------|----------------|
 | **AD_DEMUX_5**         | Adapter-basiert, unidirektional, 5 Ausgänge, generisch |

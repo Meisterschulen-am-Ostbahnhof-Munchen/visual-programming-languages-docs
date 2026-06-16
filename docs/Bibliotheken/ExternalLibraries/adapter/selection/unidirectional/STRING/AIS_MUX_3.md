@@ -10,16 +10,19 @@ Der Funktionsbaustein **AIS_MUX_3** ist ein generischer Multiplexer für AIS-Dat
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ      | Startet die Multiplex-Operation: Der Wert von `K` bestimmt, welcher Eingang auf den Ausgang geschaltet wird. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF      | Quittiert die erfolgreiche Auswahl des Eingangs entsprechend `K`. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Beschreibung |
 |------|------|--------------|
 | K    | UINT | Index für die Auswahl des Eingangs (0 = IN1, 1 = IN2, 2 = IN3). |
@@ -28,6 +31,7 @@ Der Funktionsbaustein **AIS_MUX_3** ist ein generischer Multiplexer für AIS-Dat
 Keine direkten Datenausgänge vorhanden. Die Ausgangsdaten werden über den Adapter `OUT` bereitgestellt.
 
 ### **Adapter**
+
 | Name | Typ                                    | Beschreibung |
 |------|----------------------------------------|--------------|
 | OUT  | adapter::types::unidirectional::AIS    | Ausgangsadapter, der den gewählten Eingang widerspiegelt. |
@@ -61,6 +65,7 @@ Der FB weist keine dokumentierte Zustandsautomaten-Steuerung auf. Aus der Schnit
 - **Redundanz und Test**: Wechsel zwischen mehreren AIS-Signalquellen zur Validierung oder Fehlererkennung.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Anzahl Eingänge | Besonderheit |
 |----------|-----------------|--------------|
 | AIS_MUX_2 | 2 | Einfacher Zweikanal-Multiplexer für AIS-Adapter. |

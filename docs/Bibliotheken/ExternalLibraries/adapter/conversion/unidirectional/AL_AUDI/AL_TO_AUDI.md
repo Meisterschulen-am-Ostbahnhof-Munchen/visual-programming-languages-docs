@@ -21,6 +21,7 @@ Der FB besitzt keine direkten Daten-Eingänge. Die zu konvertierenden LWORD-Date
 Der FB besitzt keine direkten Daten-Ausgänge. Die konvertierten UDINT-Daten werden über den Plug-Adapter `AUDI_OUT` ausgegeben.
 
 ### **Adapter**
+
 | Adaptertyp | Name      | Beschreibung                                          |
 |------------|-----------|-------------------------------------------------------|
 | Socket     | `AL_IN`   | LWORD-Adaptereingang (Typ: `adapter::types::unidirectional::AL`) |

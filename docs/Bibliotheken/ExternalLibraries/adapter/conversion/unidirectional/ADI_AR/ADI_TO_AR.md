@@ -21,6 +21,7 @@ Der Funktionsblock **ADI_TO_AR** ist ein Composite-Baustein, der einen DINT-Adap
 - Keine direkt sichtbaren Daten-Ausgänge. Der Ausgabedatenwert wird über den Adapter **AR_OUT** (Datenpunkt D1 vom Typ REAL) ausgegeben.
 
 ### **Adapter**
+
 | Adapter | Rolle | Typ | Beschreibung |
 |---------|-------|-----|--------------|
 | ADI_IN | Socket | adapter::types::unidirectional::ADI | Unidirektionaler DINT-Adapter als Eingangsschnittstelle. |

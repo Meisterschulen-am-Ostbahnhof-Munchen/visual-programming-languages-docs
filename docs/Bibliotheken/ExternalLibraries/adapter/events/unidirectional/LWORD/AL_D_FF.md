@@ -21,6 +21,7 @@ Keine direkten Daten-Eingänge. Der zu speichernde Datenwert wird über den Adap
 Keine direkten Daten-Ausgänge. Der gespeicherte Datenwert wird über den Adapter-Plug **Q** (D1) ausgegeben.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | I | `adapter::types::unidirectional::AL` | Socket | Wert, der gelatcht werden soll |

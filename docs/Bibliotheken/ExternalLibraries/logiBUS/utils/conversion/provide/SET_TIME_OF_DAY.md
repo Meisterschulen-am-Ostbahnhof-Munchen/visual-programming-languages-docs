@@ -9,16 +9,19 @@ Der Funktionsbaustein `SET_TIME_OF_DAY` dient dazu, einen über den Dateneingang
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Normaler Ausführungsanforderung (gebunden an `IN` und `OUT`) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung der Ausführung (gebunden an `OUT`) |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | IN   | TIME_OF_DAY | Der zu schreibende Tageszeitwert |

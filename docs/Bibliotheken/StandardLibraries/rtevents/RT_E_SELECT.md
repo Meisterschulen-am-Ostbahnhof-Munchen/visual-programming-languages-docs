@@ -10,6 +10,7 @@ Echtzeit-Variante des E_SELECT Bausteins. Wählt eines von zwei Eingangsereignis
 ![RT_E_SELECT](RT_E_SELECT.svg)
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Lizenz | EPL-2.0 |

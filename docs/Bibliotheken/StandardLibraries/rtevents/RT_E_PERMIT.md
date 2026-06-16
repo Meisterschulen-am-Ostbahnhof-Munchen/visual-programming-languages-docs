@@ -10,6 +10,7 @@ Echtzeit-Variante des E_PERMIT Bausteins. Lässt ein Ereignis nur durch, wenn di
 ![RT_E_PERMIT](RT_E_PERMIT.svg)
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Lizenz | EPL-2.0 |

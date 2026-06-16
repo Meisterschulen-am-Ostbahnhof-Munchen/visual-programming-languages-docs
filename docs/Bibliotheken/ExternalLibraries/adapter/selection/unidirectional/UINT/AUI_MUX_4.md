@@ -9,17 +9,20 @@ Der Funktionsblock **AUI_MUX_4** ist ein generischer Multiplexer für AUI-Adapte
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ      | Setzt den Index **K** und aktiviert die Durchschaltung. |
 
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF      | Bestätigung, dass die Auswahl gemäß **K** erfolgt ist. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung           |
 |----------|-------|------------------------|
 | K        | UINT  | Auswahlindex (0 … 3)   |
@@ -28,6 +31,7 @@ Der Funktionsblock **AUI_MUX_4** ist ein generischer Multiplexer für AUI-Adapte
 Keine.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ    | Beschreibung                                    |
 |---------|----------|--------|-------------------------------------------------|
 | OUT     | Plug     | AUI    | Ausgangsadapter (multiplexiertes Signal)        |

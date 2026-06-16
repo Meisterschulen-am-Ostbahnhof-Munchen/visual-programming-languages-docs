@@ -11,16 +11,19 @@ Der Funktionsblock `AQ_MUX_5` ist ein generischer Multiplexer für analoge Ausg�
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `REQ` | Übernahme des Index `K` und Durchschalten des entsprechenden Eingangs auf den Ausgang |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `CNF` | Bestätigung, dass der Index `K` übernommen und der Ausgang aktualisiert wurde |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `K` | `UINT` | Index für die Auswahl des Eingangs (0 = IN1, 1 = IN2, 2 = IN3, 3 = IN4, 4 = IN5) |
@@ -29,6 +32,7 @@ Der Funktionsblock `AQ_MUX_5` ist ein generischer Multiplexer für analoge Ausg�
 Keine separaten Datenausgänge; der ausgewählte Analogwert wird über den Adapter `OUT` bereitgestellt.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Socket (Eingang) | `IN1` | `adapter::types::unidirectional::AQ` | 1. analoger Eingangswert |

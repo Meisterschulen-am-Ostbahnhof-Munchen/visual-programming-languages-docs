@@ -11,16 +11,19 @@ Der Funktionsbaustein **AIS_D_FF_TMIN** realisiert ein datenabhängiges Flip-Flo
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ  | Kommentar |
 |----------|------|-----------|
 | `INIT`   | EInit | Initialisierungsanforderung (mit `Tmin`) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ  | Kommentar |
 |----------|------|-----------|
 | `INITO`  | EInit | Initialisierungsbestätigung |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ  | Kommentar |
 |----------|------|-----------|
 | `Tmin`   | TIME | Mindestzeitabstand zwischen zwei EO‑Ereignissen |
@@ -29,6 +32,7 @@ Der Funktionsbaustein **AIS_D_FF_TMIN** realisiert ein datenabhängiges Flip-Flo
 Der FB besitzt keine eigenen Datenausgänge. Die Ausgabe erfolgt ausschließlich über den Adapter‑Plug (siehe unten).
 
 ### **Adapter**
+
 | Richtung | Bezeichnung | Adaptertyp | Kommentar |
 |----------|-------------|------------|-----------|
 | **Plug** (Ausgang) | `Q` | `adapter::types::unidirectional::AIS` | Gelatchter Ausgabewert |

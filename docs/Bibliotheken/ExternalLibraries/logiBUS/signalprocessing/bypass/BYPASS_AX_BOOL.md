@@ -9,26 +9,31 @@ Der Funktionsblock `BYPASS_AX_BOOL` realisiert eine Bypass-Funktionalität für 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | REQ  | Event | Normaler Ausführungsanstoß |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | CNF  | Event | Bestätigung der Ausführung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | IN   | BOOL | Eingangssignal |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | OUT  | BOOL | Durchgeschleiftes Eingangssignal (identisch zu IN) |
 
 ### **Adapter**
+
 | Rolle | Name | Typ | Richtung | Beschreibung |
 |-------|------|-----|----------|--------------|
 | Plug  | BY_OUT | `adapter::types::unidirectional::AX` | Ausgang | Gibt den gespeicherten Bypass-Zustand aus |

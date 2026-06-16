@@ -11,26 +11,31 @@ Der Funktionsblock **ALR_TO_AULI** ist ein **Composite FB** zur unidirektionalen
 Der FB besitzt **keine direkten** Ereignis‑ oder Datenein-/-ausgänge. Die Kommunikation erfolgt ausschließlich über die beiden **Adapter** (Socket & Plug). Die nachfolgenden Tabellen beschreiben die über die Adapter bereitgestellten Signale.
 
 ### **Ereignis-Eingänge**
+
 | Signal | Quelle | Datentyp | Beschreibung |
 |--------|--------|----------|--------------|
 | E1 | über Socket `ALR_IN` | (Ereignis) | Startet die Konvertierung eines eingehenden LREAL-Wertes. |
 
 ### **Ereignis-Ausgänge**
+
 | Signal | Ziel | Datentyp | Beschreibung |
 |--------|------|----------|--------------|
 | E1 | über Plug `AULI_OUT` | (Ereignis) | Signalisiert, dass der konvertierte ULINT-Wert am Ausgang anliegt. |
 
 ### **Daten-Eingänge**
+
 | Signal | Quelle | Datentyp | Beschreibung |
 |--------|--------|----------|--------------|
 | D1 | über Socket `ALR_IN` | LREAL | Der umzuwandelnde Gleitkomma‑Wert. |
 
 ### **Daten-Ausgänge**
+
 | Signal | Ziel | Datentyp | Beschreibung |
 |--------|------|----------|--------------|
 | D1 | über Plug `AULI_OUT` | ULINT | Der konvertierte ganzzahlige Wert ohne Vorzeichen. |
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | `ALR_IN` | `adapter::types::unidirectional::ALR` | Socket (Eingang) | Nimmt den LREAL‑Wert sowie das dazugehörige Ereignis entgegen. |

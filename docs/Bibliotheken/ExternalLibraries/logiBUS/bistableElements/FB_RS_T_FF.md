@@ -9,16 +9,19 @@ Der Funktionsblock `FB_RS_T_FF` realisiert einen bistabilen, reset-dominanten La
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `REQ` | Normaler Ausführungsanforderung – löst die Verarbeitung der Eingangssignale aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `CNF` | Bestätigt die Ausführung nach erfolgter Berechnung des Ausgangs `Q1`. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Kommentar |
 |----------|-------|-----------|
 | `S`      | BOOL  | Setzen – setzt den Ausgang `Q1` auf `TRUE`, sofern `R1` nicht gleichzeitig aktiv ist. |
@@ -26,6 +29,7 @@ Der Funktionsblock `FB_RS_T_FF` realisiert einen bistabilen, reset-dominanten La
 | `CLK`    | BOOL  | Clock – Taktgeber für die Toggle-Funktion; bei steigender Flanke wird `Q1` invertiert, wenn weder Reset noch Set aktiv sind. |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ   | Kommentar |
 |----------|-------|-----------|
 | `Q1`     | BOOL  | Ausgang des Latch – zeigt den aktuellen gespeicherten Zustand an. |

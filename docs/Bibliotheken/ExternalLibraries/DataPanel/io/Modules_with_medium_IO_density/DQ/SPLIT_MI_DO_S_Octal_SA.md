@@ -9,21 +9,25 @@ Der Funktionsblock **SPLIT_MI_DO_S_Octal_SA** dient dazu, einen einzelnen Datenw
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `REQ`    | Service‑Anforderung; die Verarbeitung wird gestartet, sobald das Ereignis eintritt. Der Benutzer muss den Daten‑Eingang `IN` vorher gültig setzen. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `CNF`    | Bestätigung der abgeschlossenen Verarbeitung. Signalisiert, dass alle acht Ausgänge aktualisiert wurden. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ                              | Kommentar                          |
 |------|----------------------------------|------------------------------------|
 | `IN` | `DataPanel_MI_DO_S_Octal_SA`     | Oktaler Eingabewert (Port 1…8 und gemeinsamer `u8SAMember`) |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ                               | Kommentar                |
 |------|-----------------------------------|--------------------------|
 | `OUT1` | `DataPanel_MI_DO_S_Single_SA`   | Einzelausgang 1          |

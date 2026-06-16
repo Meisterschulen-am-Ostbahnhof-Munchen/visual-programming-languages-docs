@@ -11,16 +11,19 @@ Der Funktionsbaustein `AUI_DEMUX_2` realisiert einen generischen Demultiplexer f
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `REQ`    | Setzt den Index `K` und löst die Demultiplexer-Operation aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `CNF`    | Bestätigt die erfolgreiche Ausführung der Indexsetzung und Datenweitergabe. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Kommentar |
 |----------|-------|-----------|
 | `K`      | UINT  | Index für die Auswahl des Ziel-Ausgangs (1 = OUT1, 2 = OUT2). |
@@ -29,6 +32,7 @@ Der Funktionsbaustein `AUI_DEMUX_2` realisiert einen generischen Demultiplexer f
 Keine Datenausgänge vorhanden.
 
 ### **Adapter**
+
 | Richtung | Bezeichnung | Typ                              | Kommentar                     |
 |----------|-------------|----------------------------------|-------------------------------|
 | Ausgang  | `OUT1`      | `adapter::types::unidirectional::AUI` | Erster Demultiplexer-Ausgang. |

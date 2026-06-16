@@ -9,21 +9,25 @@ Der Funktionsblock **GET_DATE** liest einen DATE-Wert aus einer InOut-Variable a
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar | Mit-Variablen |
 |------|-----|-----------|----------------|
 | REQ | Event | Normale Ausführungsanforderung | IN |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar | Mit-Variablen |
 |------|-----|-----------|----------------|
 | CNF | Event | Ausführungsbestätigung | OUT, IN |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | IN | DATE | Quellvariable (InOut) |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | OUT | DATE | Gepufferter Ausgabewert |

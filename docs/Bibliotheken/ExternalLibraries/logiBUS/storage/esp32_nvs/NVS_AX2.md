@@ -9,16 +9,19 @@ Der Funktionsblock **NVS_AX2** dient dem Laden und Speichern von REAL-Daten im n
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ    | Kommentar                        | Mitgeführte Variablen     |
 |----------|--------|----------------------------------|---------------------------|
 | `INIT`   | EInit  | Service Initialization           | QI, KEY, DEFAULT_VALUE    |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ    | Kommentar                        | Mitgeführte Variablen     |
 |----------|--------|----------------------------------|---------------------------|
 | `INITO`  | EInit  | Initialization Confirm           | QO, STATUS                |
 
 ### **Daten-Eingänge**
+
 | Name           | Typ    | Kommentar                                               |
 |----------------|--------|---------------------------------------------------------|
 | `QI`           | BOOL   | Event Input Qualifier (Freigabe der Initialisierung)    |
@@ -26,12 +29,14 @@ Der Funktionsblock **NVS_AX2** dient dem Laden und Speichern von REAL-Daten im n
 | `DEFAULT_VALUE`| BOOL   | Standardwert, falls der Schlüssel im NVS nicht existiert (Voreinstellung: FALSE) |
 
 ### **Daten-Ausgänge**
+
 | Name     | Typ    | Kommentar                        |
 |----------|--------|----------------------------------|
 | `QO`     | BOOL   | Event Output Qualifier           |
 | `STATUS` | STRING | Dienststatus                     |
 
 ### **Adapter**
+
 | Adapter | Typ                                       | Kommentar      |
 |---------|-------------------------------------------|----------------|
 | `VAL`   | `adapter::types::bidirectional::AX2` (Socket) | Wert (REAL)    |

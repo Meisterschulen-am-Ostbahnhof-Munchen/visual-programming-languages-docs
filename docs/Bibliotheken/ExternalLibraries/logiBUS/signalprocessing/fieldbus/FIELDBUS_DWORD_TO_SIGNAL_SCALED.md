@@ -10,18 +10,21 @@ Der Funktionsblock **FIELDBUS_DWORD_TO_SIGNAL_SCALED** dient der Konvertierung e
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INIT     | EInit | Initialisierungsanforderung; übergibt Skalierungsparameter |
 | REQ      | Event | Normale Ausführungsanforderung zur Verarbeitung des Eingangs |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | INITO    | EInit | Bestätigung der Initialisierung |
 | CNF      | Event | Bestätigung der Ausführung; liefert skalierten Ausgang und Gültigkeitsflagge |
 
 ### **Daten-Eingänge**
+
 | Name   | Typ   | Initialwert           | Beschreibung |
 |--------|-------|-----------------------|--------------|
 | IN     | DWORD | NOT_AVAILABLE_DWM     | Eingangswert vom Feldbus |
@@ -29,6 +32,7 @@ Der Funktionsblock **FIELDBUS_DWORD_TO_SIGNAL_SCALED** dient der Konvertierung e
 | OFFSET | DINT  | DINT#0                | Offset, der nach der Skalierung addiert wird |
 
 ### **Daten-Ausgänge**
+
 | Name  | Typ   | Initialwert | Beschreibung |
 |-------|-------|-------------|--------------|
 | OUT   | LREAL | LREAL#0.0   | Skalierter Ausgangswert |
@@ -60,6 +64,7 @@ Die Konstanten `NOT_AVAILABLE_DWM` und `VALID_SIGNAL_DW` stammen aus importierte
 - Der Baustein ist als SimpleFB implementiert und eignet sich für zyklische Verarbeitung.
 
 ## Zustandsübersicht
+
 | Zustand | Auslöser | Aktion | Ausgang |
 |---------|----------|--------|---------|
 | INIT    | INIT-Ereignis | Algorithmus INIT (leer) | INITO |

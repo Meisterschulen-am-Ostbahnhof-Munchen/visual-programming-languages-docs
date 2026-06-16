@@ -9,16 +9,19 @@ Der Funktionsblock **INI_AS** dient dem Laden und Speichern von SINT‑Daten aus
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ  | Mit‑Vars | Beschreibung |
 |----------|------|----------|--------------|
 | `INIT`   | EInit | QI, SECTION, KEY, DEFAULT_VALUE | Service‑Initialisierung: Liest den Wert aus der INI‑Datei und gibt ihn über den Adapter aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ  | Mit‑Vars | Beschreibung |
 |----------|------|----------|--------------|
 | `INITO`  | EInit | QO, STATUS | Bestätigung der Initialisierung. |
 
 ### **Daten-Eingänge**
+
 | Name          | Datentyp | Beschreibung |
 |---------------|----------|--------------|
 | `QI`          | BOOL     | Eingangsqualifikator (z. B. Freigabe). |
@@ -27,12 +30,14 @@ Der Funktionsblock **INI_AS** dient dem Laden und Speichern von SINT‑Daten aus
 | `DEFAULT_VALUE` | SINT   | Wert, der zurückgegeben wird, wenn der Schlüssel in der INI‑Datei nicht vorhanden ist. |
 
 ### **Daten-Ausgänge**
+
 | Name     | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | `QO`     | BOOL     | Ausgangsqualifikator (zeigt erfolgreiche Operation an). |
 | `STATUS` | STRING   | Statusmeldung (z. B. Fehlertexte). |
 
 ### **Adapter**
+
 | Bezeichnung | Typ                 | Richtung | Beschreibung |
 |-------------|---------------------|----------|--------------|
 | `AS_IN`     | `adapter::types::unidirectional::AS` | Eingang (Socket) | Empfängt einen neuen zu speichernden Wert (SET‑Operation). |

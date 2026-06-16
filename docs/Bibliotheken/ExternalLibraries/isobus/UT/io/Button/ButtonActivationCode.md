@@ -35,6 +35,7 @@ Die ButtonActivationCode-Konstanten definieren verschiedene Tastenaktivierungszu
 - **Strukturierte Konstanten**: Verwendung eines strukturierten Datentyps mit Code-Werten und zusätzlichen Flags
 
 ## Zustandsübersicht
+
 | Konstante | Code | Beschreibung |
 |-----------|------|--------------|
 | BT_RELEASED_UNLATCHED | 0 | Taste wurde entriegelt oder losgelassen (Zustandsänderung) |

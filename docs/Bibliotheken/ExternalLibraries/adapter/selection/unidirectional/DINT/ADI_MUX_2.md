@@ -9,16 +9,19 @@ Der Funktionsblock **ADI_MUX_2** ist ein generischer Multiplexer für ADI-Adapte
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Setzt den Index K und löst die Multiplexer-Aktion aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigt die erfolgte Indexsetzung und Auswahl. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Auswahlindex (0 → IN1, 1 → IN2) |
@@ -27,6 +30,7 @@ Der Funktionsblock **ADI_MUX_2** ist ein generischer Multiplexer für ADI-Adapte
 Keine direkten Datenausgänge. Die Ausgabe erfolgt über den Adapter **OUT**.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Plug (Ausgang) | OUT   | `adapter::types::unidirectional::ADI` | Ausgang: liefert die Daten des gewählten Eingangs. |

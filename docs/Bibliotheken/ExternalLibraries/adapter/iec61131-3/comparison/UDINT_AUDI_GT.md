@@ -9,6 +9,7 @@ Der Funktionsblock **UDINT_AUDI_GT** führt einen Vergleich zweier Werte durch u
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar |
 |------|-------|-----------|
 | REQ  | Event | Service Request – löst den Vergleich aus |
@@ -17,6 +18,7 @@ Der Funktionsblock **UDINT_AUDI_GT** führt einen Vergleich zweier Werte durch u
 Der Baustein besitzt keine eigenen Ereignis-Ausgänge. Das Ergebnis-Ereignis wird über den **Out-Adapter** (OUT) bereitgestellt (siehe Adapter).
 
 ### **Daten-Eingänge**
+
 | Name | Typ             | Kommentar     |
 |------|----------------|---------------|
 | IN1  | ANY_ELEMENTARY | Erster Vergleichswert (größer als ?) |
@@ -25,6 +27,7 @@ Der Baustein besitzt keine eigenen Ereignis-Ausgänge. Das Ergebnis-Ereignis wir
 Der Baustein besitzt keine eigenen Daten-Ausgänge. Das Vergleichsergebnis wird über den **Out-Adapter** (OUT) ausgegeben (siehe Adapter).
 
 ### **Adapter**
+
 | Name | Typ      | Richtung | Kommentar |
 |------|----------|----------|-----------|
 | IN2  | `adapter::types::unidirectional::AUDI` | Socket | Zweiter Vergleichswert (Eingabe) |

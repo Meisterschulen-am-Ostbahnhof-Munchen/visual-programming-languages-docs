@@ -9,16 +9,19 @@ Der Funktionsbaustein AUI\_DEMUX\_3 realisiert einen generischen Demultiplexer f
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Beschreibung |
 | :--- | :--- | :--- |
 | REQ | Event | Setzt den aktiven Ausgangskanal K. Ausgelöst durch das anliegende Indexsignal. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Beschreibung |
 | :--- | :--- | :--- |
 | CNF | Event | Bestätigt, dass der Index K übernommen und der Multiplex umgeschaltet wurde. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Beschreibung |
 | :--- | :--- | :--- |
 | K | UINT | Index des gewünschten Ausgangskanals (Wertebereich: 0…2, entspricht OUT1…OUT3). |
@@ -27,6 +30,7 @@ Der Funktionsbaustein AUI\_DEMUX\_3 realisiert einen generischen Demultiplexer f
 _Keine direkten Datenausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über die Adapter-Plugs._
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 | :--- | :--- | :--- | :--- |
 | Socket | IN | `adapter::types::unidirectional::AUI` | Eingangsschnittstelle – empfängt den zu multiplexenden Datenstrom. |

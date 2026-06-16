@@ -10,16 +10,19 @@ Der **AULI_DEMUX_4** ist ein generischer Demultiplexer, der einen eingehenden AU
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ | Event | Setzt den Index K und löst die Demultiplexing‑Operation aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF | Event | Bestätigt die erfolgreiche Weiterleitung an den ausgewählten Adapter. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K | UINT | Index (Wertebereich 0–3 für OUT1…OUT4) |
@@ -28,6 +31,7 @@ Der **AULI_DEMUX_4** ist ein generischer Demultiplexer, der einen eingehenden AU
 *Keine*
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | IN | AULI | Socket (Eingang) | Eingangsadapter mit den zu verteilenden Daten |
@@ -65,6 +69,7 @@ Eine detaillierte Zustandsgraphik ist nicht erforderlich, da der Baustein atomar
 - **Test- und Simulationsumgebungen**: Gezieltes Ansprechen einzelner Komponenten in einer AULI‑basierten Testplattform.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Typ | Unterschied |
 |----------|-----|-------------|
 | AULI_MUX_4 | Multiplexer | Fasst mehrere AULI‑Eingänge zu einem Ausgang zusammen (umgekehrte Richtung). |

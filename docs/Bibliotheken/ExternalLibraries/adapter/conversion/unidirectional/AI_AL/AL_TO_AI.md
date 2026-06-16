@@ -21,6 +21,7 @@ Der FB besitzt keine expliziten Daten-Eingänge. Die aufzunehmenden Daten werden
 Der FB besitzt keine expliziten Daten-Ausgänge. Die konvertierten Daten werden über den Plug-Adapter **AI_OUT** als INT ausgegeben.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|-------------|
 | **AL_IN** | Socket (Eingang) | `adapter::types::unidirectional::AL` | Liefert ein LWORD (über Daten-Port D1) sowie ein Ereignis (E1). |

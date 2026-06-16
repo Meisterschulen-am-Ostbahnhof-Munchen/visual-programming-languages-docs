@@ -21,6 +21,7 @@ Keine
 Keine
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Socket (Eingang) | IN | `ALI` (unidirektional) | Einspeisung des zu verteilenden ALI-Signals |

@@ -9,16 +9,19 @@ Der Funktionsblock **AIWS_MUX_5** ist ein generischer Multiplexer für AIWS‑Ad
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Mit Variable | Beschreibung |
 |----------|--------------|--------------|
 | **REQ**  | K            | Übernimmt den Index K und aktualisiert den Ausgang OUT. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF**  | Bestätigt die Übernahme des Index und die Aktualisierung von OUT. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | **K**    | UINT  | Auswahlindex (0…4). |
@@ -27,6 +30,7 @@ Der Funktionsblock **AIWS_MUX_5** ist ein generischer Multiplexer für AIWS‑Ad
 Keine direkten Datenausgänge; die ausgegebenen Daten werden über den Adapter **OUT** bereitgestellt.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | **Plug** | OUT  | `adapter::types::unidirectional::AIWS` | Ausgang, der den Wert des ausgewählten Eingangs liefert. |

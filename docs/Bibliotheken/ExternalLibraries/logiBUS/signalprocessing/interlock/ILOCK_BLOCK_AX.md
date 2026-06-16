@@ -51,6 +51,7 @@ Die Algorithmen setzen die Ausgangssignale:
 - **Zwischenzustände:** Die Zustände `UP_STOP` und `DOWN_STOP` gewährleisten, dass die Deaktivierung sauber mit einem Ereignis auf dem entsprechenden Ausgangsadapter quittiert wird.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung | Ausgangssignale |
 |---------|--------------|-----------------|
 | **STOP** | Ruhezustand, keine Richtung aktiv | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = FALSE` |

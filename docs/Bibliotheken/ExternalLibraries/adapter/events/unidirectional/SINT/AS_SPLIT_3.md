@@ -22,6 +22,7 @@ Keine
 Keine
 
 ### **Adapter**
+
 | Bezeichnung | Typ | Richtung | Beschreibung |
 |-------------|-----|----------|--------------|
 | IN | `adapter::types::unidirectional::AS` | Socket | Eingangsadapter – Datenquelle, die auf drei Ausgänge verteilt wird. |

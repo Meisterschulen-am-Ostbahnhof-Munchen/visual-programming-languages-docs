@@ -10,21 +10,25 @@ Der Funktionsbaustein FIELDBUS_UINT_TO_SIGNAL dient der Verarbeitung von Feldbus
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | REQ | Event | Normaler Ausführungsanstoß (verbunden mit IN) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Kommentar |
 |----------|----------|-----------|
 | CNF | Event | Bestätigung der Ausführung (verbunden mit OUT und VALID) |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Initialwert | Kommentar |
 |------|----------|-------------|-----------|
 | IN | UINT | WORD_TO_UINT(NOT_AVAILABLE_WM) | Eingangswert (rohes Feldbussignal) |
 
 ### **Daten-Ausgänge**
+
 | Name | Datentyp | Initialwert | Kommentar |
 |------|----------|-------------|-----------|
 | OUT | UINT | 16#0000 | Gefilterter Ausgangswert |

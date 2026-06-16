@@ -9,17 +9,20 @@ Der Funktionsblock `logiBUS_LED_PWM_QXA` ist ein Composite-Baustein zur Steuerun
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Mit Variablen | Beschreibung |
 |----------|-----|---------------|--------------|
 | `INIT`   | EInit | `QI`, `PARAMS`, `Output`, `FREQ` | Service-Initialisierung; startet den FB mit den angegebenen Parametern |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Mit Variablen | Beschreibung |
 |----------|-----|---------------|--------------|
 | `INITO`  | EInit | `QO`, `STATUS` | Bestätigung der erfolgreichen Initialisierung |
 | `CNF`    | Event | `QO`, `STATUS` | Bestätigung eines angeforderten Dienstes (z. B. nach Datenanforderung über den Adapter) |
 
 ### **Daten-Eingänge**
+
 | Variable   | Typ                                  | Initialwert  | Beschreibung |
 |------------|--------------------------------------|--------------|--------------|
 | `QI`       | BOOL                                 | –            | Qualifikator für den Ereigniseingang (Aktivierung) |
@@ -28,12 +31,14 @@ Der Funktionsblock `logiBUS_LED_PWM_QXA` ist ein Composite-Baustein zur Steuerun
 | `FREQ`     | UINT                                 | `LED_OFF`    | Frequenz und Priorität der LED-PWM (z. B. aus Enumeration `LED_FREQ`) |
 
 ### **Daten-Ausgänge**
+
 | Variable   | Typ    | Beschreibung |
 |------------|--------|--------------|
 | `QO`       | BOOL   | Qualifikator für den Ereignisausgang (Aktivierungsquittung) |
 | `STATUS`   | STRING | Dienststatus (Fehler-/Erfolgsmeldung) |
 
 ### **Adapter**
+
 | Adapter | Typ | Beschreibung |
 |---------|-----|--------------|
 | `OUT`   | `adapter::types::unidirectional::AX` | Ausgangs-Adapter für die Datenübertragung zur logiBUS-Ressource (über Event `E1` und Data `D1`) |

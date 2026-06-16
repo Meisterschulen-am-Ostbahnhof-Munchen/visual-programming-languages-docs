@@ -11,11 +11,13 @@ Der Funktionsbaustein **UDINT_AUDI_LT** realisiert einen numerischen Kleiner-Ver
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ    | Beschreibung                 |
 |------|--------|-----------------------------|
 | REQ  | Event  | Auslöser für den Vergleichsprozess |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ    | Beschreibung                 |
 |------|--------|-----------------------------|
 | (über Adapter OUT.E1) | Event  | Quittung nach erfolgreichem Vergleich |
@@ -23,6 +25,7 @@ Der Funktionsbaustein **UDINT_AUDI_LT** realisiert einen numerischen Kleiner-Ver
 Der Ereignisausgang wird über den Adapter **OUT** (Typ `AX`) realisiert.
 
 ### **Daten-Eingänge**
+
 | Name | Typ               | Beschreibung                 |
 |------|-------------------|-----------------------------|
 | IN1  | ANY_ELEMENTARY    | Erster Vergleichswert        |
@@ -31,6 +34,7 @@ Der Ereignisausgang wird über den Adapter **OUT** (Typ `AX`) realisiert.
 Der zweite Vergleichswert wird über einen Socket-Adapter **IN2** (Typ `AUDI`) eingelesen.
 
 ### **Daten-Ausgänge**
+
 | Name | Typ               | Beschreibung                 |
 |------|-------------------|-----------------------------|
 | (über Adapter OUT.D1) | (implizit) | Vergleichsergebnis (TRUE/FALSE) |
@@ -38,6 +42,7 @@ Der zweite Vergleichswert wird über einen Socket-Adapter **IN2** (Typ `AUDI`) e
 Das Ergebnis wird über den Adapter **OUT** (Typ `AX`) als logischer Wert ausgegeben.
 
 ### **Adapter**
+
 | Name  | Typ    | Richtung   | Beschreibung                        |
 |-------|--------|------------|-------------------------------------|
 | OUT   | AX     | Plug       | Ausgangsadapter für Ergebnis und Ereignis |
@@ -63,6 +68,7 @@ Der Baustein besitzt keine explizite Zustandsmaschine. Die Verarbeitung erfolgt 
 - **Parametrierbare Bibliotheksbausteine** – Durch die Adapter-Schnittstelle kann der zweite Vergleichswert oft von einer übergeordneten Konfiguration bereitgestellt werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein       | Funktion          | Schnittstelle                      |
 |----------------|-------------------|------------------------------------|
 | **UDINT_AUDI_LT** | Kleiner (<)       | Adapter-basiert (IN2, OUT)         |

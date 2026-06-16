@@ -11,16 +11,19 @@ Der **AB_D_FF_TMIN** ist ein Adapter-basierter Funktionsbaustein (FB) nach IEC 6
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name   | Typ    | Kommentar                           |
 |--------|--------|-------------------------------------|
 | `INIT` | EInit  | Initialisierungsanforderung (setzt die minimale Zeit) |
 
 ### **Ereignis-Ausgänge**
+
 | Name    | Typ    | Kommentar                           |
 |---------|--------|-------------------------------------|
 | `INITO` | EInit  | Initialisierungsbestätigung         |
 
 ### **Daten-Eingänge**
+
 | Name   | Typ  | Kommentar                                      |
 |--------|------|------------------------------------------------|
 | `Tmin` | TIME | Mindestzeit zwischen zwei Ausgangsereignissen EO |
@@ -29,6 +32,7 @@ Der **AB_D_FF_TMIN** ist ein Adapter-basierter Funktionsbaustein (FB) nach IEC 6
 Keine direkten Datenausgänge; die Datenausgabe erfolgt über den Adapter-Plug `Q`.
 
 ### **Adapter**
+
 | Richtung | Name | Typ                              | Kommentar                                                   |
 |----------|------|----------------------------------|-------------------------------------------------------------|
 | Socket   | `I`  | adapter::types::unidirectional::AB | Eingangsadapter: liefert Ereignis `E1` und Datenwert `D1` (der zu latchende Wert) |

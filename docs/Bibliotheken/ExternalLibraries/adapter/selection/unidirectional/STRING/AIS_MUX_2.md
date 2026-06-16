@@ -10,16 +10,19 @@ Der Funktionsblock `AIS_MUX_2` realisiert einen generischen Multiplexer für den
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `REQ` | Event | Setzt den Index K und löst die Umschaltung aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `CNF` | Event | Bestätigt die Übernahme des neuen Index K. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `K` | UINT | Index für die Auswahl des aktiven Eingangs (0 = IN1, 1 = IN2). |
@@ -28,6 +31,7 @@ Der Funktionsblock `AIS_MUX_2` realisiert einen generischen Multiplexer für den
 Keine Daten-Ausgänge vorhanden. Die Weiterleitung der Adaptersignale erfolgt über die Adapter-Schnittstellen.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Plug (Ausgang) | `OUT` | `adapter::types::unidirectional::AIS` | Ausgangsadapter, der den ausgewählten Eingang widerspiegelt. |

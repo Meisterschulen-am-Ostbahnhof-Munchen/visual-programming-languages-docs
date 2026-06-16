@@ -12,21 +12,25 @@ Der Funktionsblock `FIELDBUS_DWORD_TO_SIGNAL` dient der Spiegelung und Validieru
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | REQ      | Normaler Ausführungsanstoß; verarbeitet den aktuellen Wert von `IN`. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | CNF      | Bestätigung der Ausführung; wird nach der Berechnung gesendet. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ    | Initialwert         | Kommentar        |
 |----------|--------|---------------------|------------------|
 | IN       | DWORD  | `NOT_AVAILABLE_DWM` | Eingangssignal   |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ    | Initialwert   | Kommentar                          |
 |----------|--------|---------------|------------------------------------|
 | OUT      | DWORD  | `16#00000000` | Gefilterter Ausgangswert           |

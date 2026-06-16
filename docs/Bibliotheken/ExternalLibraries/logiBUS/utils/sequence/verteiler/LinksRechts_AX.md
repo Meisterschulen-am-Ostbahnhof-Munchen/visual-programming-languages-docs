@@ -23,6 +23,7 @@ Der Baustein verwendet primär Adapter für die Kommunikation, stellt jedoch auc
 *Es sind keine direkten Ereignis-Eingänge vorhanden. Die Steuerung erfolgt über die Ereignisse der Adapter-Sockets.*
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Beschreibung |
 | :--- | :--- | :--- |
 | **EO** | Event | Ereignis, das ausgelöst wird, wenn sich der interne Zustand (`STATE`) ändert. |
@@ -31,6 +32,7 @@ Der Baustein verwendet primär Adapter für die Kommunikation, stellt jedoch auc
 *Es sind keine direkten Daten-Eingänge vorhanden. Die Daten werden über die Adapter-Sockets eingelesen.*
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 | :--- | :--- | :--- |
 | **STATE** | STRING | Aktueller Zustand des Bausteins (z.B. "Rechtslauf", "Linkslauf_Pause"). |
@@ -38,6 +40,7 @@ Der Baustein verwendet primär Adapter für die Kommunikation, stellt jedoch auc
 ### **Adapter**
 
 **Sockets (Eingangs-Schnittstellen):**
+
 | Name | Typ | Kommentar |
 | :--- | :--- | :--- |
 | **EIN** | adapter::types::unidirectional::AX | **Einschalten**: Das Hauptsignal zum Starten und Stoppen der Bewegung. |
@@ -45,6 +48,7 @@ Der Baustein verwendet primär Adapter für die Kommunikation, stellt jedoch auc
 | **DI_Links** | adapter::types::unidirectional::AX | **Nur Linkslauf**: Wenn aktiv, wird ein Wechsel auf Rechtslauf verhindert und der Linkslauf erzwungen. |
 
 **Plugs (Ausgangs-Schnittstellen):**
+
 | Name | Typ | Kommentar |
 | :--- | :--- | :--- |
 | **Rechts** | adapter::types::unidirectional::AX | **Rechtslauf**: Ausgangssignal für die Rechtsbewegung. |

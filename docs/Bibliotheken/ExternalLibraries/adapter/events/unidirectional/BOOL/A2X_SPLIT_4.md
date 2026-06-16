@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Richtung | Bezeichner | Typ | Beschreibung |
 |----------|------------|-----|--------------|
 | **Socket (Eingang)** | IN | `adapter::types::unidirectional::A2X` | Ein eingehendes A2X-Signal (unidirektional) |

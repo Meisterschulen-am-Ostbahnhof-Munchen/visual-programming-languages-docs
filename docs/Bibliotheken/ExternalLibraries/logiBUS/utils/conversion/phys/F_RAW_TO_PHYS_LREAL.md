@@ -13,6 +13,7 @@ Der Baustein ist für den Einsatz in landwirtschaftlichen Steuerungssystemen (IS
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Mit Variablen |
 |------|------|---------------|
 | REQ  | Event | u32Raw, stObj |
@@ -20,6 +21,7 @@ Der Baustein ist für den Einsatz in landwirtschaftlichen Steuerungssystemen (IS
 Der Baustein wird durch ein Ereignis am Eingang `REQ` gestartet.
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Mit Variablen |
 |------|------|---------------|
 | CNF  | Event | (keine) |
@@ -27,12 +29,14 @@ Der Baustein wird durch ein Ereignis am Eingang `REQ` gestartet.
 Nach erfolgreicher Berechnung wird das Ergebnis über das Ereignis `CNF` quittiert.
 
 ### **Daten-Eingänge**
+
 | Name | Typ         | Beschreibung |
 |------|-------------|--------------|
 | u32Raw | UDINT      | Rohwert aus dem ISOBUS-Bus (0 … 4.294.967.295) |
 | stObj | NumericObjectPool_S | Struktur mit den Umrechnungsparametern: `i32Offset` (DINT) und `r32Scale` (REAL) |
 
 ### **Daten-Ausgänge**
+
 | Name  | Typ   | Beschreibung |
 |-------|-------|--------------|
 | (kein Name) | LREAL | Berechneter physikalischer Wert (ieee-doppelte Genauigkeit) |
@@ -72,6 +76,7 @@ Der Baustein besitzt keinen internen Zustandsautomaten, da es sich um eine reine
 - **Simulation**: Nachbildung von ISOBUS‑Sensordaten in Testumgebungen, bei denen Rohwerte aus einer Datenbank mit unterschiedlichen Skalierungen verarbeitet werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Datentyp Eingang | Datentyp Ausgang | Besonderheit |
 |----------|------------------|------------------|--------------|
 | `F_RAW_TO_PHYS_LREAL` | UDINT | LREAL | Doppelte Genauigkeit, LINT‑Zwischenschritt |

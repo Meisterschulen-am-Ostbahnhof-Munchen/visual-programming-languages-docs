@@ -44,6 +44,7 @@ Der CLIENT_1_0 Block baut über INIT eine Verbindung auf. Wenn das REQ-Ereignis 
 - Logging-Clients, die Daten an einen zentralen Server pushen
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2017, 2025 fortiss GmbH, JKU Linz |

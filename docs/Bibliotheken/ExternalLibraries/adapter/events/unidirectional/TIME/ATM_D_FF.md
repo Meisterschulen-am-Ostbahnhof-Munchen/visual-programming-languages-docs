@@ -21,6 +21,7 @@ Der FB besitzt keine direkten Daten-Eingänge. Über den Socket‑Adapter **I** 
 Der FB besitzt keine direkten Daten-Ausgänge. Über den Plug‑Adapter **Q** wird ein Datenwert an der Adapter‑Schnittstelle *D1* ausgegeben.
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Kommentar |
 |---------|-----|----------|-----------|
 | I | `adapter::types::unidirectional::ATM` | Socket (eingehend) | Wert zum Übernehmen (latch) |

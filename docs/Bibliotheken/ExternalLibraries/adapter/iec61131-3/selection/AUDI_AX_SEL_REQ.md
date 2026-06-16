@@ -9,27 +9,32 @@ Der Funktionsblock **AUDI_AX_SEL_REQ** realisiert eine binäre Auswahl zwischen 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `REQ` | Event | Service Request; löst die Auswahl aus |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `CNF` | Event | Confirmation; wird nach erfolgter Auswahl ausgegeben |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `IN0` | UDINT | Erster auswählbarer Wert |
 | `IN1` | UDINT | Zweiter auswählbarer Wert |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `OUT` | UDINT | Selektierter Wert (entspricht entweder IN0 oder IN1) |
 
 ### **Adapter**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `G` | Socket: `adapter::types::unidirectional::AX` | Selector; liefert das Auswahlsignal (über Datenausgang `D1`) und ein Ereignis `E1` |

@@ -9,6 +9,7 @@ Der Funktionsblock **AD_SHL** führt eine bitweise Linksverschiebung (Shift Left
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung | Mit-Parameter |
 |----------|---------------|---------------|
 | `UPDATE` | Aktualisiert die Schiebeanzahl und startet die Berechnung. | `N` |
@@ -17,6 +18,7 @@ Der Funktionsblock **AD_SHL** führt eine bitweise Linksverschiebung (Shift Left
 Keine direkten Ereignis-Ausgänge vorhanden. Das Ereignis zur Weitergabe des Ergebnisses erfolgt über den Adapter `OUT` (Ereignis `OUT.E1`).
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `N` | `ANY_INT` | Anzahl der Bit-Positionen, um die verschoben werden soll. |
@@ -25,6 +27,7 @@ Keine direkten Ereignis-Ausgänge vorhanden. Das Ereignis zur Weitergabe des Erg
 Keine direkten Daten-Ausgänge. Das Ergebnis der Verschiebung wird über den Adapter `OUT` (Daten `OUT.D1`) bereitgestellt.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Socket | `IN` | `adapter::types::unidirectional::AD` | Empfängt den zu verschiebenden Wert über den Adapter-Kanal. |

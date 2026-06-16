@@ -21,6 +21,7 @@ Der FB besitzt keine expliziten Daten-Eingänge auf oberster Ebene. Die Datenüb
 Der FB besitzt keine expliziten Daten-Ausgänge auf oberster Ebene. Die Datenübertragung erfolgt über die Adapter-Schnittstellen.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AQ` | IN | Eingang (Socket) | AQ-Adapter als Eingangsschnittstelle für Quarter-Byte-Daten |

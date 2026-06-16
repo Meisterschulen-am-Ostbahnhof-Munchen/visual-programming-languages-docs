@@ -23,6 +23,7 @@ Der RT_Bridge_7 Funktionsblock dient als Entkopplungsbrücke für 7 Datenverbind
 - **RD_1** - **RD_7** (ANY): Ausgangsdaten.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2023 Johannes Kepler University Linz |

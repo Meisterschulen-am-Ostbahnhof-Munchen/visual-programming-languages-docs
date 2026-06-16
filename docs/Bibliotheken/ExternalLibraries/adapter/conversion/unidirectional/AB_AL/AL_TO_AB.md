@@ -9,11 +9,13 @@ Der Funktionsblock **AL_TO_AB** ist ein Composite-FB, der eine unidirektionale K
 
 ## Schnittstellenstruktur
 ### **Adapter (Eingang)**
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | AL_IN | `adapter::types::unidirectional::AL` | LWORD-Adapter-Socket. Über diesen Adapter werden die zu konvertierenden LWORD-Daten empfangen. Der Adapter stellt standardmäßig einen Ereignisausgang `E1` und einen Datenausgang `D1` (Datentyp LWORD) zur Verfügung. |
 
 ### **Adapter (Ausgang)**
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | AB_OUT | `adapter::types::unidirectional::AB` | BYTE-Adapter-Plug. Über diesen Adapter werden die konvertierten BYTE-Daten ausgegeben. Der Adapter besitzt einen Ereigniseingang `E1` und einen Dateneingang `D1` (Datentyp BYTE). |
@@ -42,6 +44,7 @@ Der Funktionsblock besitzt keinen eigenen Zustandsautomaten. Die gesamte Ablaufs
 - **Datenreduktion**: Gezielte Umwandlung von 64‑Bit‑LWORD in 8‑Bit‑BYTE, wenn die höheren Bytes nicht benötigt werden oder eine schmalere Schnittstelle erforderlich ist.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Funktion | Unterschied |
 |----------|----------|-------------|
 | `LWORD_TO_BYTE` | Reine Datentypkonvertierung ohne Adapter | Keine Adapter‑Schnittstelle; direkte Daten‑ und Ereignisports |

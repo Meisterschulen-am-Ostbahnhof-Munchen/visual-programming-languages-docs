@@ -73,6 +73,7 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Verarbeitung erfol
 - **Ereignisgesteuerte Steuerungen** in der Automatisierungstechnik, bei denen Zählerstände über Adapter ausgetauscht werden.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Eigenschaft | ADI_FB_CTUD | Standard CTUD (IEC 61131-3) |
 |-------------|--------------|------------------------------|
 | Schnittstelle | Adapter-basiert (AX/ADI) | Direkte Ein-/Ausgänge (Events, Daten) |

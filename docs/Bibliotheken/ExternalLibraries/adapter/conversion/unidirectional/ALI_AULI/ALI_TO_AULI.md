@@ -23,6 +23,7 @@ Der Baustein besitzt keine eigenen Ereignis- oder Datenschnittstellen, sondern l
 – Keine (Daten werden über den AULI‑Adapter ausgegeben)
 
 ### **Adapter**
+
 | Adaptertyp | Richtung | Name | Kommentar |
 |------------|----------|------|-----------|
 | `adapter::types::unidirectional::ALI` | Socket (Eingang) | `ALI_IN` | LINT‑Adapter‑Eingang (liefert Ereignis und einen LINT‑Wert) |

@@ -22,6 +22,7 @@ Es gibt keine direkten Daten-Eingänge. Alle Daten werden über die **Socket-Ada
 Es gibt keinen direkten Daten-Ausgang. Der zusammengeführte DWORD‑Wert wird über den **Plug-Adapter** (OUT) ausgegeben.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | BYTE_00 | `adapter::types::unidirectional::AB` | Socket | Byte 0 (niederwertigstes Byte) |

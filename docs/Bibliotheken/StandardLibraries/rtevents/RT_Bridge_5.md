@@ -23,6 +23,7 @@ Der RT_Bridge_5 Funktionsblock dient als Entkopplungsbrücke für 5 Datenverbind
 - **RD_1** - **RD_5** (ANY): Ausgangsdaten.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2023 Johannes Kepler University Linz |

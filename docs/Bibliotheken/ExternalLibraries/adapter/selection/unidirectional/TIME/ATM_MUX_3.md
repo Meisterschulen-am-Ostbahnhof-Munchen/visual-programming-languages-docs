@@ -10,16 +10,19 @@ Der Funktionsblock **ATM_MUX_3** ist ein generischer Multiplexer für ATM-Adapte
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Setzt den Index K und löst die Umschaltung aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung der erfolgten Index-Setzung und Umschaltung. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index zur Auswahl des aktiven Eingangs (0 für IN1, 1 für IN2, 2 für IN3). |
@@ -28,6 +31,7 @@ Der Funktionsblock **ATM_MUX_3** ist ein generischer Multiplexer für ATM-Adapte
 Keine.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Plug (OUT) | OUT | adapter::types::unidirectional::ATM | Ausgangs-Adapter, der je nach K mit einem der drei Sockets verbunden wird. |

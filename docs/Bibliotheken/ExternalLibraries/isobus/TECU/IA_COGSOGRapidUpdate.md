@@ -9,27 +9,32 @@ Der Funktionsblock **IA_COGSOGRapidUpdate** dient als ISOBUS-Adapter für die NM
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | INIT | EInit | Service-Initialisierung, ausgelöst durch Eingang QI |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | INITO | EInit | Initialisierungsbestätigung, liefert QO und STATUS |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ | Kommentar |
 |----------|-----|-----------|
 | QI | BOOL | Eingangsqualifikator für die Initialisierung |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ | Kommentar |
 |----------|-----|-----------|
 | QO | BOOL | Ausgangsqualifikator (Initialisierungsstatus) |
 | STATUS | STRING | Statusmeldung (z. B. Fehlertext oder „OK“) |
 
 ### **Adapter**
+
 | Adapter-Name | Typ | Kommentar |
 |--------------|-----|-----------|
 | COG | adapter::types::unidirectional::AUI | Kurs über Grund (Course Over Ground) |

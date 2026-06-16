@@ -13,22 +13,26 @@ Der Funktionsblock (FB) `GET_STRUCT_VALUE` ist ein Service-Schnittstellen-Bauste
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Beschreibung                     | Daten mit |
 | :--- | :---- | :------------------------------- | :-------- |
 | `REQ`| `Event`| Fordert das Auslesen eines Wertes aus der Struktur an. | `member`, `in_struct` |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Beschreibung                     | Daten mit |
 | :--- | :---- | :------------------------------- | :-------- |
 | `CNF`| `Event`| Bestätigt den Abschluss des `REQ`-Ereignisses. | `QO`, `output`    |
 
 ### **Daten-Eingänge**
+
 | Name      | Typ      | Beschreibung                                                                                              |
 | :-------- | :------- | :-------------------------------------------------------------------------------------------------------- |
 | `in_struct`| `ANY`    | Die Datenstruktur, aus der ein Wert ausgelesen werden soll.                                                |
 | `member`  | `STRING` | Der Name des Members der Struktur, der abgerufen werden soll. Innere Member werden über den Punkt-Operator (`.`) angesprochen. |
 
 ### **Daten-Ausgänge**
+
 | Name   | Typ   | Beschreibung                                          |
 | :----- | :---- | :---------------------------------------------------- |
 | `QO`   | `BOOL`| `TRUE`, wenn keine Fehler aufgetreten sind, andernfalls `FALSE`. |

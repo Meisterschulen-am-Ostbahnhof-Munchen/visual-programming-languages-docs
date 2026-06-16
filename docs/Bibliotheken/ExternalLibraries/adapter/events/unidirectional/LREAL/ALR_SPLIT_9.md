@@ -22,6 +22,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Richtung | Name | Typ |
 |----------|------|-----|
 | **Socket** | `IN` | `ALR` (unidirectional) – Der Eingang, der auf die neun Ausgänge verteilt wird. |

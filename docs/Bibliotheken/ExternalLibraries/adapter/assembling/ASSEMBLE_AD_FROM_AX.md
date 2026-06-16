@@ -26,6 +26,7 @@ Keine expliziten Daten-Ausgänge. Das zusammengesetzte DWORD wird über den Date
 - `OUT.D1`: **DWORD** (das aus den 32 BOOL-Eingängen zusammengesetzte 32-Bit-Wort).
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AX` | `BIT_00` … `BIT_31` | Socket (Eingang) | 32 boolesche Einzelsignale, jeweils mit eigenem Ereignis (Datenänderung) |

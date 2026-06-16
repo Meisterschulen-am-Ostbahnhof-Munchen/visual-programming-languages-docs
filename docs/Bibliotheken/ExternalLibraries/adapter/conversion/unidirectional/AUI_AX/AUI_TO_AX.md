@@ -58,6 +58,7 @@ Da es sich um einen Composite-Baustein ohne eigene ECC (Execution Control Chart)
 - **Einfache Logikverkettung:** Verwendung als binäre Entscheidungsstufe in größeren Composite-Funktionsblöcken.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Eingabetyp | Ausgabetyp | Funktion |
 |----------|------------|------------|----------|
 | **AUI_TO_AX** | AUI (UINT) | AX (BOOL) | Ungleichheit mit Null |

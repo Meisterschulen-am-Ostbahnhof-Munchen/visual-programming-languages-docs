@@ -23,6 +23,7 @@ Keine eigenen Daten-Eingänge vorhanden. Daten werden über den **AS_OUT‑Adapt
 Keine eigenen Daten-Ausgänge vorhanden. Daten werden über den **AR_IN‑Adapter** gesendet (siehe Adapter).
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | `AR_IN` | `adapter::types::unidirectional::AR` | Socket (eingehend) | Unidirektionaler REAL‑Adapter. Liefert einen REAL‑Wert (D1) und ein zugehöriges Ereignis (E1). |

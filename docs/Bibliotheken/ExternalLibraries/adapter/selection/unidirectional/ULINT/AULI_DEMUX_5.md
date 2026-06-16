@@ -9,16 +9,19 @@ Der **AULI_DEMUX_5** ist ein unidirektionaler Demultiplexer-Baustein für den AU
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Kommentar | Mit Variablen |
 |------|-----------|---------------|
 | REQ  | Set Index K | K |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Kommentar |
 |------|-----------|
 | CNF  | Bestätigung der Index-Setzung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Kommentar |
 |------|------|-----------|
 | K    | UINT | Index zur Auswahl des Ausgangs (gültig: 1…5) |
@@ -49,6 +52,7 @@ Die Datenweitergabe erfolgt passiv über die Adapter-Schnittstelle; der Baustein
 
 ## Zustandsübersicht
 Da der FB keine Zustandsmaschine besitzt, kann das Verhalten durch zwei implizite Phasen beschrieben werden:
+
 | Zustand | Beschreibung |
 |---------|--------------|
 | IDLE    | Warten auf ein REQ-Ereignis; keine Verbindung aktiv. |

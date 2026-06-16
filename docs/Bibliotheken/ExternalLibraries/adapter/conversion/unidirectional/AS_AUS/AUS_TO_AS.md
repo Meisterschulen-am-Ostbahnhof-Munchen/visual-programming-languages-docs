@@ -24,6 +24,7 @@ Keine direkt sichtbaren Dateneingänge. Die Daten werden über den Socket-Adapte
 Keine direkt sichtbaren Datenausgänge. Die Daten werden über den Plug-Adapter `AS_OUT` ausgegeben.
 
 ### **Adapter**
+
 | Name     | Typ                                           | Richtung | Kommentar                     |
 |----------|-----------------------------------------------|----------|-------------------------------|
 | `AUS_IN` | `adapter::types::unidirectional::AUS` (Socket) | Eingang  | USINT-Adapter-Eingang         |

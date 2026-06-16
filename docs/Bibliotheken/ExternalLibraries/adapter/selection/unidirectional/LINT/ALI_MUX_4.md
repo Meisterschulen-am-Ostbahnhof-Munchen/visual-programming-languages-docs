@@ -9,16 +9,19 @@ Der Funktionsblock **ALI_MUX_4** ist ein generischer Multiplexer für ALI-Adapte
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ      | Übernahme des Index K und Durchschaltung des gewählten Eingangs auf den Ausgang. Gekoppelt mit dem Daten-Eingang K. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | CNF      | Bestätigung, dass die Umschaltung gemäß Index K erfolgt ist. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | K        | UINT  | Index für die Auswahl des aktiven Eingangs (0 = IN1, 1 = IN2, 2 = IN3, 3 = IN4). |
@@ -27,6 +30,7 @@ Der Funktionsblock **ALI_MUX_4** ist ein generischer Multiplexer für ALI-Adapte
 Keine Daten-Ausgänge vorhanden; die Ausgabe erfolgt ausschließlich über den Adapter OUT.
 
 ### **Adapter**
+
 | Adapter | Typ                              | Richtung | Beschreibung |
 |---------|----------------------------------|----------|--------------|
 | IN1     | adapter::types::unidirectional::ALI | Eingang (Socket) | Erster ALI-Eingang (ausgewählt bei K=0). |

@@ -25,6 +25,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 Daten werden über den Adapter `OUT` weitergegeben.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Kommentar |
 |-----|------|----------|-----------|
 | `adapter::types::unidirectional::AX` | IN | Socket (Eingang) | Empfängt Ereignisse und Daten |
@@ -53,6 +54,7 @@ Der Baustein besitzt keine eigene Zustandsmaschine. Sein Verhalten ist statisch 
 - **Adapter-Transparenz**: Überprüfen, ob ein Adaptertyp korrekt verbunden ist, ohne Funktionslogik.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Beschreibung | Unterschied |
 |----------|--------------|-------------|
 | `E_NOP` | Ereignis-NOP mit direkten Ereignis-/Daten-Ein-/Ausgängen | Verwendet Standard-I/O statt Adapter |

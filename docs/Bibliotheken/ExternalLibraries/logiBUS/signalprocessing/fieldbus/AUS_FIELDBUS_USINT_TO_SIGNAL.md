@@ -10,28 +10,33 @@ Der Funktionsblock `AUS_FIELDBUS_USINT_TO_SIGNAL` dient der Weitergabe eines USI
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Bezeichnung | Beschreibung |
 |-------------|--------------|
 | `IN.E1` | Über den Adapter `IN` (Socket) eingehendes Ereignis, das die Verarbeitung anstößt. |
 
 ### **Ereignis-Ausgänge**
+
 | Bezeichnung | Beschreibung |
 |-------------|--------------|
 | `OUT.E1` | Über den Adapter `OUT` (Plug) ausgegebenes Ereignis nach erfolgreicher Spiegelung des gültigen Signals. |
 | `VALID.E1` | Über den Adapter `VALID` (Plug) ausgegebenes Ereignis nach Aktualisierung des Gültigkeitsstatus. |
 
 ### **Daten-Eingänge**
+
 | Bezeichnung | Typ | Beschreibung |
 |-------------|-----|--------------|
 | `IN.D1` | USINT (implizit) | Eingangsdatenwert, der auf Gültigkeit geprüft und gespiegelt wird. |
 
 ### **Daten-Ausgänge**
+
 | Bezeichnung | Typ | Beschreibung |
 |-------------|-----|--------------|
 | `OUT.D1` | (analog zu IN) | Ausgangsdatenwert, der bei gültigem Signal den Eingangswert widerspiegelt. |
 | `VALID.D1` | BOOL | Gültigkeitsflag: `TRUE` wenn das Eingangssignal als gültig erkannt wurde, sonst `FALSE`. |
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Beschreibung |
 |------|-----|----------|--------------|
 | `IN` | `adapter::types::unidirectional::AUS` | Socket | Empfängt das Rohsignal (Ereignis + Daten) vom Feldbus. |

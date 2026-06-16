@@ -23,6 +23,7 @@ Der Baustein besitzt keine direkten Ereignis- oder Daten-Ein-/Ausgänge auf FB-E
 - über **Plug AUS_OUT** (Typ AUS): Daten-Ausgang **D1** (USINT) – der konvertierte 8‑Bit‑Wert.
 
 ### **Adapter**
+
 | Bezeichnung | Typ        | Richtung | Beschreibung                     |
 |-------------|------------|----------|----------------------------------|
 | AULI_IN     | AULI       | Socket   | Eingangsadapter für ULINT-Daten  |

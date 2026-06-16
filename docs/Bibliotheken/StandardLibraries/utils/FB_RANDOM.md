@@ -26,6 +26,7 @@ Der Funktionsblock FB_RANDOM generiert eine zufällige REAL-Zahl zwischen 0 und 
 - **VAL** (REAL): Die generierte Zufallszahl.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2012 Profactor GmbH |

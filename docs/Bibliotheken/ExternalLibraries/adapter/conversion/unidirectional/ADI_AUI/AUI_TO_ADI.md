@@ -21,6 +21,7 @@ Keine. Die Dateneingabe erfolgt über den angeschlossenen AUI-Adapter.
 Keine. Die Datenausgabe erfolgt über den ADI-Adapter.
 
 ### **Adapter**
+
 | Name | Richtung | Typ | Beschreibung |
 |------|----------|-----|--------------|
 | AUI_IN | Socket (Eingang) | `adapter::types::unidirectional::AUI` | UINT-Adapter zum Empfangen von Eingangsdaten und Ereignissen. |

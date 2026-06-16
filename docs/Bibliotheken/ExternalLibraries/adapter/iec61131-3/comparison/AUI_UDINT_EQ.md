@@ -9,28 +9,33 @@ Der Funktionsblock **AUI_UDINT_EQ** realisiert einen Gleichheitsvergleich zwisch
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ | Event | Service Request – löst den Vergleich aus. |
 | (über Adapter IN1.E1) | Event | Ereignis vom Adaptereingang – löst ebenfalls den Vergleich aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | OUT.E1 | Event | Bestätigungsereignis am Adapterausgang, signalisiert Abschluss des Vergleichs. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | IN2 | UDINT | Zweiter Operand (unsigned double integer). |
 | (über Adapter IN1.D1) | (implizit) | Erster Operand, typabhängig (via AUI-Adapter). |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | OUT.D1 | BOOL | Vergleichsergebnis: TRUE, wenn die Werte gleich sind, sonst FALSE. |
 
 ### **Adapter**
+
 | Typ | Richtung | Name | Kommentar |
 |-----|----------|------|-----------|
 | `adapter::types::unidirectional::AUI` | Socket (Eingang) | IN1 | Stellt den ersten Operanden als Wert (D1) und ein Ereignis (E1) zur Verfügung. |

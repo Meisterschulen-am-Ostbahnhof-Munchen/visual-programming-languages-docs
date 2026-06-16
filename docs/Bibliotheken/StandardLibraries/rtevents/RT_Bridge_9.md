@@ -23,6 +23,7 @@ Der RT_Bridge_9 Funktionsblock dient als Entkopplungsbrücke für 9 Datenverbind
 - **RD_1** - **RD_9** (ANY): Ausgangsdaten.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2023 Johannes Kepler University Linz |

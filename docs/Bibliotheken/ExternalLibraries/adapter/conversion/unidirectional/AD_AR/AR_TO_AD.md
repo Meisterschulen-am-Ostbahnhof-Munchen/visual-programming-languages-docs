@@ -10,21 +10,25 @@ Der Funktionsblock `AR_TO_AD` dient als zusammengesetzter Baustein (Composite FB
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Eingang | Typ | Beschreibung |
 |---------|-----|--------------|
 | `AR_IN.E1` | Adapter-Ereignis | Empfängt das Auslöseereignis vom AR-Adapter, welches die Konvertierung startet. |
 
 ### **Ereignis-Ausgänge**
+
 | Ausgang | Typ | Beschreibung |
 |---------|-----|--------------|
 | `AD_OUT.E1` | Adapter-Ereignis | Sendet ein Ereignis an den AD-Adapter, sobald der konvertierte DWORD-Wert anliegt. |
 
 ### **Daten-Eingänge**
+
 | Eingang | Typ | Beschreibung |
 |---------|-----|--------------|
 | `AR_IN.D1` | REAL | Der zu konvertierende REAL-Wert, der vom AR-Adapter bereitgestellt wird. |
 
 ### **Daten-Ausgänge**
+
 | Ausgang | Typ | Beschreibung |
 |---------|-----|--------------|
 | `AD_OUT.D1` | DWORD | Der konvertierte DWORD-Wert, der an den AD-Adapter übergeben wird. |

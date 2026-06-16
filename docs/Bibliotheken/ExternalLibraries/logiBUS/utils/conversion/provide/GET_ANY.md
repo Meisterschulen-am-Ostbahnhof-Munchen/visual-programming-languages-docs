@@ -9,11 +9,13 @@ Der Funktionsblock **GET_ANY** liest einen beliebigen Wert (Typ `ANY`) aus einer
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Mit Variablen | Beschreibung |
 |------|-----|---------------|--------------|
 | REQ | Event | IN | Normaler Ausführungsauftrag; liest den aktuellen Wert von IN. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Mit Variablen | Beschreibung |
 |------|-----|---------------|--------------|
 | CNF | Event | IN, OUT | Bestätigung nach erfolgreicher Ausführung; die Werte von IN und OUT sind dann gültig. |
@@ -22,6 +24,7 @@ Der Funktionsblock **GET_ANY** liest einen beliebigen Wert (Typ `ANY`) aus einer
 Der FB besitzt keine separaten Dateneingänge. Die Quelldaten werden über die InOut-Variable bereitgestellt.
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | OUT | ANY | Gepufferter Ausgangswert. Enthält den zum Zeitpunkt der letzten REQ-Ausführung gelesenen Wert von IN. |

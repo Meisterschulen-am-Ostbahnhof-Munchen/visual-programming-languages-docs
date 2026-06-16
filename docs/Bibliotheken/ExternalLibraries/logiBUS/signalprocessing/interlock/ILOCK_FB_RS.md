@@ -12,27 +12,32 @@ Der Funktionsblock `ILOCK_FB_RS` realisiert ein bistabiles Reset-dominantes RS-L
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `REQ` | Normaler Ausführungsanforderung (mit den Daten S und R1 verknüpft) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | `CNF` | Bestätigung der Ausführung (mit dem Datenausgang Q1 verknüpft) |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ    | Kommentar |
 |----------|--------|-----------|
 | `S`      | BOOL   | Setzen (aktiver High) |
 | `R1`     | BOOL   | Rücksetzen (aktiver High) – Reset-dominant |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ    | Kommentar |
 |----------|--------|-----------|
 | `Q1`     | BOOL   | Ausgang des Flipflops |
 
 ### **Adapter**
+
 | Bezeichnung | Richtung | Typ                 | Beschreibung |
 |-------------|----------|---------------------|--------------|
 | `ILOCK_IN`  | Socket   | bidirektional::AX2  | Empfängt Signale vom vorherigen Baustein der Kette (Ereignis EO1, Daten DO1) |

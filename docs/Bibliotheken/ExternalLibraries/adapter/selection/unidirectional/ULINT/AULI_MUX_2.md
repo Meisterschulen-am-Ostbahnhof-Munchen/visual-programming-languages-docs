@@ -12,16 +12,19 @@ Der Baustein ist als generischer Funktionsblock (GenericClassName: `GEN_AULI_MUX
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `REQ` | Event | Setzt den Index **K** und löst die Auswahl aus. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `CNF` | Event | Bestätigt die Umschaltung nach Verarbeitung eines `REQ`-Ereignisses. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | `K`   | UINT     | Auswahlindex (erwartet: 0 für IN1, 1 für IN2). |
@@ -30,6 +33,7 @@ Der Baustein ist als generischer Funktionsblock (GenericClassName: `GEN_AULI_MUX
 Keine direkten Datenausgänge – der ausgegebene Wert wird über den Adapter `OUT` transportiert.
 
 ### **Adapter**
+
 | Name | Typ (Adapter) | Richtung | Kommentar |
 |------|----------------|----------|-----------|
 | `OUT` | adapter::types::unidirectional::AULI | Plug | Ausgang des Multiplexers – liefert den Wert des gewählten Eingangs. |

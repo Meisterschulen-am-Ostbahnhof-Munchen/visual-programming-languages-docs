@@ -9,16 +9,19 @@ Der AD_DEMUX_3 ist ein generischer Demultiplexer-Funktionsblock, der einen über
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Set Index K (mit Datenausgang K) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Confirmation of Set Index K |
 
 ### **Daten-Eingänge**
+
 | Name | Typ  | Kommentar |
 |------|------|-----------|
 | K    | UINT | Index zur Auswahl des Ausgangs (gültige Werte 0, 1, 2) |
@@ -27,6 +30,7 @@ Der AD_DEMUX_3 ist ein generischer Demultiplexer-Funktionsblock, der einen über
 Keine Datenausgänge vorhanden.
 
 ### **Adapter**
+
 | Rolle       | Name | Typ                                  | Kommentar |
 |-------------|------|--------------------------------------|-----------|
 | Socket (IN) | IN   | adapter::types::unidirectional::AD   | Eingangswert, der demultiplext wird |

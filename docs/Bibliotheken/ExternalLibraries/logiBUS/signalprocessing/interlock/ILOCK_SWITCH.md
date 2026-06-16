@@ -11,24 +11,28 @@ Der Funktionsbaustein **ILOCK_SWITCH** dient als prioritätsgesteuerte Weiche mi
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | mit Daten | Beschreibung |
 |----------|-----------|--------------|
 | **EI_UP** | DI_UP | Ereignis zur Anforderung der Aufwärts‑/Vorwärts‑Richtung. |
 | **EI_DOWN** | DI_DOWN | Ereignis zur Anforderung der Abwärts‑/Rückwärts‑Richtung. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | mit Daten | Beschreibung |
 |----------|-----------|--------------|
 | **EO_UP** | DO_UP | Wird bei Aktivierung der Aufwärts‑Richtung oder beim Verlassen des UP‑Zustands getriggert. |
 | **EO_DOWN** | DO_DOWN | Wird bei Aktivierung der Abwärts‑Richtung oder beim Verlassen des DOWN‑Zustands getriggert. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | **DI_UP** | BOOL | TRUE = vorwärts, aufwärts, rechts, im Uhrzeigersinn |
 | **DI_DOWN** | BOOL | TRUE = rückwärts, abwärts, links, gegen Uhrzeigersinn |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | **DO_UP** | BOOL | TRUE = vorwärts, aufwärts, rechts, im Uhrzeigersinn |

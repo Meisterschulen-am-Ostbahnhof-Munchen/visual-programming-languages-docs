@@ -14,6 +14,7 @@ Der Adapter **AIS** (Adapter Interface String) stellt eine unidirektionale Schni
 Keine.
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ   | Kommentar |
 |------|-------|-----------|
 | E1   | Event | Indikation (oder Request) – das Ereignis wird beim Senden der Daten ausgelöst. |
@@ -22,6 +23,7 @@ Keine.
 Keine.
 
 ### **Daten-Ausgänge**
+
 | Name | Typ    | Kommentar |
 |------|--------|-----------|
 | D1   | STRING | Die zum Ereignis gehörenden Daten (Zeichenkette). |

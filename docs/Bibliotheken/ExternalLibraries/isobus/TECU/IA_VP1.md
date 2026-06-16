@@ -9,27 +9,32 @@ Der Funktionsblock **IA_VP1** ist ein ISOBUS-Adapter für die Vehicle Position 1
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | INIT | EInit | Service Initialization |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Kommentar |
 |----------|-----|-----------|
 | INITO | EInit | Initialization Confirm |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ | Kommentar |
 |----------|-----|-----------|
 | QI | BOOL | Event Input Qualifier |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ | Kommentar |
 |----------|-----|-----------|
 | QO | BOOL | Event Output Qualifier |
 | STATUS | STRING | Statusinformation |
 
 ### **Adapter**
+
 | Adapter | Typ | Kommentar |
 |---------|-----|-----------|
 | LAT | adapter::types::unidirectional::AR | Latitude |

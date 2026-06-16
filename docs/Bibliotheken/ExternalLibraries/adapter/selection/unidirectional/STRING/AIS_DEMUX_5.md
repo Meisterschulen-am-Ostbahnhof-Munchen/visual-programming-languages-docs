@@ -11,16 +11,19 @@ Der Funktionsblock **AIS_DEMUX_5** ist ein generischer AIS-Demultiplexer (Generi
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Mit Variablen | Beschreibung                                      |
 |----------|---------------|---------------------------------------------------|
 | **REQ**  | K             | Setzt den Index **K** und startet die Demultiplex-Aktion |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung                                   |
 |----------|------------------------------------------------|
 | **CNF**  | Bestätigung, dass der Demultiplex-Vorgang abgeschlossen ist |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung                            |
 |----------|-------|-----------------------------------------|
 | **K**    | UINT  | Index des gewünschten Ausgangs (1 … 5)  |
@@ -29,6 +32,7 @@ Der Funktionsblock **AIS_DEMUX_5** ist ein generischer AIS-Demultiplexer (Generi
 Keine Daten-Ausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über die Adapter-Schnittstellen.
 
 ### **Adapter**
+
 | Richtung | Adapter     | Typ                                  | Beschreibung                                          |
 |----------|-------------|--------------------------------------|-------------------------------------------------------|
 | Sockel   | **IN**      | adapter::types::unidirectional::AIS  | Eingangs-AIS-Signal, das auf die Ausgänge verteilt wird |

@@ -10,16 +10,19 @@ Der Funktionsbaustein **AB_MUX_5** realisiert einen generischen Multiplexer für
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | REQ      | Setzt den Index K und aktiviert die Weiterleitung zur entsprechenden Eingangsverbindung |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Kommentar |
 |----------|-----------|
 | CNF      | Bestätigung der erfolgten Index-Setzung und der Aktualisierung des Ausgangs |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ  | Kommentar |
 |----------|------|-----------|
 | K        | UINT | Index des auszuwählenden Eingangs (0 = IN1, 1 = IN2, …, 4 = IN5) |
@@ -28,6 +31,7 @@ Der Funktionsbaustein **AB_MUX_5** realisiert einen generischen Multiplexer für
 *Keine direkten Datenausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über den Adapter-Plug `OUT`.*
 
 ### **Adapter**
+
 | Richtung | Adapter | Typ                                   | Kommentar |
 |----------|---------|---------------------------------------|-----------|
 | Plug     | OUT     | adapter::types::unidirectional::AB   | Ausgangsadapter, der die Werte des gewählten Eingangs bereitstellt |
@@ -61,6 +65,7 @@ Damit ist der FB deterministisch und arbeitet ohne Verzögerungen außer der int
 - **Test- und Simulationsumgebungen**: Gezielte Wahl eines Eingangsadapter-Signals für Prüfzwecke.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein        | Anzahl Eingänge | Auswahlmechanismus | Unterschiede |
 |-----------------|-----------------|---------------------|--------------|
 | AB_MUX_5        | 5               | Index K (UINT)      | Dieser FB; reiner Adapter-Multiplexer |

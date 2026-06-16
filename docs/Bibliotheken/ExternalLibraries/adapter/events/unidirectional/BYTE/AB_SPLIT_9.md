@@ -23,6 +23,7 @@ Keine vorhanden.
 Keine vorhanden.
 
 ### **Adapter**
+
 | Schnittstelle | Richtung | Typ | Beschreibung |
 |--------------|----------|-----|--------------|
 | IN | Socket | `adapter::types::unidirectional::AB` | Eingehender Adapter (Quelle) |
@@ -47,6 +48,7 @@ Der Baustein besitzt **keine** eigenen Zustände. Das Verhalten ist rein kombina
 - **Test‑ und Simulationsumgebungen**: Ein eingehender Datenstrom kann auf mehrere Überwachungs‑ oder Logging‑Module aufgeteilt werden, ohne die ursprüngliche Verbindung zu beeinträchtigen.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Ausgänge | Besonderheit |
 |----------|----------|--------------|
 | `AB_SPLIT_9` | 9 | Standard‑Split für 1→9, generisch |

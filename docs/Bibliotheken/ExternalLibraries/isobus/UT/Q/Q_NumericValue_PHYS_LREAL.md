@@ -11,24 +11,28 @@ Der Baustein kapselt die notwendigen Schritte der physikalischen Umrechnung und 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `INIT`   | Initialisiert den Baustein mit den Objekt-Pool-Eigenschaften (`stObj`). |
 | `REQ`    | Startet die Verarbeitung: der physikalische Wert (`lrPhys`) wird an das Zielobjekt gesendet. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `INITO`  | Quittiert die erfolgreiche Initialisierung. |
 | `CNF`    | Quittiert die Ausführung des Befehls; die Ausgangsdaten sind gültig. |
 
 ### **Daten-Eingänge**
+
 | Name   | Typ | Beschreibung |
 |--------|-----|--------------|
 | `stObj` | `logiBUS::utils::conversion::phys::NumericObjectPool_S` | Objekt-Pool-Eigenschaften (Objekt‑ID, Skalierung, Offset, Dezimalstellen). Standardwert: `(u16ObjId := ID_NULL, r32Scale := 1.0, i32Offset := 0, u8Decimals := 0)`. |
 | `lrPhys` | `LREAL` | Der physikalische Wert (z. B. Druck, Temperatur), der gesendet werden soll. Hinweis: Vor der Übergabe sollte der Wert ggf. mit `F_PHYS_LREAL_TO_RAW` umgerechnet werden; der Baustein führt dies intern automatisch durch. |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `STATUS` | `STRING` | Statusmeldung des durchgeführten Dienstes. |

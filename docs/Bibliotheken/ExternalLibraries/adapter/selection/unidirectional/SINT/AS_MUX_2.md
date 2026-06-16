@@ -9,16 +9,19 @@ Der AS_MUX_2 ist ein generischer Multiplexer-Funktionsblock, der es ermöglicht,
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datentyp | Mit Variablen | Beschreibung |
 |----------|----------|---------------|--------------|
 | `REQ`    | Event    | `K`           | Startet die Auswahl des Eingangs. Der Wert von `K` bestimmt, welcher Adapter durchgeschaltet wird. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Datentyp | Mit Variablen | Beschreibung |
 |----------|----------|---------------|--------------|
 | `CNF`    | Event    | –             | Bestätigt, dass die Umschaltung abgeschlossen ist und der gewählte Adapter aktiv ist. |
 
 ### **Daten-Eingänge**
+
 | Variable | Datentyp | Beschreibung |
 |----------|----------|--------------|
 | `K`      | UINT     | Index für die Auswahl: `0` → IN1, `1` → IN2. Andere Werte sind ungültig und führen zu keiner Umschaltung. |
@@ -27,6 +30,7 @@ Der AS_MUX_2 ist ein generischer Multiplexer-Funktionsblock, der es ermöglicht,
 Keine Daten-Ausgänge vorhanden.
 
 ### **Adapter**
+
 | Typ       | Name | Richtung | Beschreibung |
 |-----------|------|----------|--------------|
 | Plug      | OUT  | Ausgang  | Ausgangsadapter, der mit dem gewählten Eingang verbunden wird. |

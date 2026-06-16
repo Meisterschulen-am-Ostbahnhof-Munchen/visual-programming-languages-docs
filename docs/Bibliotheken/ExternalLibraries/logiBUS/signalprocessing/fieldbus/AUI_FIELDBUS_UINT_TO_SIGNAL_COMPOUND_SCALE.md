@@ -10,16 +10,19 @@ Der Funktionsblock `AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` dient der Umwand
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|-------------|
 | INIT | EInit | Initialisierungsanforderung; versetzt den Baustein in einen definierten Startzustand. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|-------------|
 | INITO | EInit | Initialisierungsbestätigung; wird nach erfolgreicher Initialisierung gesendet. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ | Initialwert | Beschreibung |
 |----------|-----|-------------|-------------|
 | SCALE_HIGH | REAL | 0.256 | Skalierungsfaktor für das obere Byte des eingehenden Wertes. |
@@ -30,6 +33,7 @@ Der Funktionsblock `AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` dient der Umwand
 Der Baustein besitzt keine separaten Datenausgänge als `VarDeclaration`. Die Ausgangsdaten werden über die Adapter `OUT` und `VALID` bereitgestellt.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|-------------|
 | IN      | Socket   | adapter::types::unidirectional::AUI | Eingang für den zu verarbeitenden Feldbus‑Datenwert. |

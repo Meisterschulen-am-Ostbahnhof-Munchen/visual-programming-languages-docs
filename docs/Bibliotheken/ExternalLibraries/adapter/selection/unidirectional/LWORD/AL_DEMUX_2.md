@@ -9,16 +9,19 @@ Der Funktionsbaustein **AL_DEMUX_2** ist ein generischer AL-Demultiplexer. Er le
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Datenparameter | Beschreibung |
 |----------|----------------|--------------|
 | `REQ` | `K` | Setzt den Index `K` und startet die Weiterleitung des aktuellen Werts vom Eingang an den entsprechenden Ausgang. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF` | Bestätigt die erfolgreiche Umschaltung und Weiterleitung des Wertes. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | `K` | `UINT` | Index zur Auswahl des Ausgangs (0 → OUT1, 1 → OUT2). |
@@ -27,6 +30,7 @@ Der Funktionsbaustein **AL_DEMUX_2** ist ein generischer AL-Demultiplexer. Er le
 Keine eigenen Datenausgänge. Die Datenweitergabe erfolgt ausschließlich über die Adapter-Plugs.
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
 | Socket   | `IN` | `adapter::types::unidirectional::AL` | Eingangsadapter, der den zu demultiplexenden Wert bereitstellt. |

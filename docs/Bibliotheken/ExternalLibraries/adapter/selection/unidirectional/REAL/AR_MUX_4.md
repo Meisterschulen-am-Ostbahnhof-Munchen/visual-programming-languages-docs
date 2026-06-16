@@ -11,16 +11,19 @@ Der **AR_MUX_4** ist ein generischer AR-Multiplexer, der einen von vier Eingangs
 ## Schnittstellenstruktur
 
 ### Ereignis-Eingänge
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **REQ**  | Steuert die Umschaltung anhand des Index K. |
 
 ### Ereignis-Ausgänge
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | **CNF**  | Bestätigt die erfolgte Umschaltung. |
 
 ### Daten-Eingänge
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | **K**    | UINT  | Index (0–3) zur Auswahl des aktiven Eingangs. |
@@ -29,6 +32,7 @@ Der **AR_MUX_4** ist ein generischer AR-Multiplexer, der einen von vier Eingangs
 Keine Daten-Ausgänge vorhanden.
 
 ### Adapter
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | Plug (Ausgang) | **OUT** | Ausgang | Liefert den Signalpfad des ausgewählten Eingangs. |

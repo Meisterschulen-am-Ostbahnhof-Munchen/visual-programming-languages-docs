@@ -21,6 +21,7 @@ Keine.
 Keine.
 
 ### **Adapter**
+
 | Typ | Richtung | Name | Beschreibung |
 |-----|----------|------|--------------|
 | `adapter::types::unidirectional::ASR` | Eingang (Socket) | **IN** | Eingehendes ASR-Signal |

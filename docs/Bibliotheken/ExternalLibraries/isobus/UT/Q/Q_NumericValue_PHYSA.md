@@ -10,28 +10,33 @@ Der Funktionsblock `Q_NumericValue_PHYSA` dient als **Wrapper** für den Baustei
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `INIT` | `EInit` | Service-Initialisierung; wird mit dem Daten-Eingang `stObj` ausgeführt |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `INITO` | `EInit` | Bestätigung der erfolgreichen Initialisierung |
 | `CNF` | `Event` | Bestätigung der durchgeführten Wertänderung; ausgegeben zusammen mit `STATUS` und `s16result` |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `stObj` | `logiBUS::utils::conversion::phys::NumericObjectPool_S` | Objektpool-Eigenschaften: `u16ObjId` (Objekt-ID), `r32Scale` (Skalierung), `i32Offset` (Offset), `u8Decimals` (Dezimalstellen). Standardwert: `(u16ObjId := ID_NULL, r32Scale := 1.0, i32Offset := 0, u8Decimals := 0)` |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | `STATUS` | `STRING` | Statusmeldung des Dienstes |
 | `s16result` | `INT` | Rückgabewert (siehe Dokumentation von `Q_NumericValue`) |
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | `adapter::types::unidirectional::AR` | `rPhys` | Socket (Eingang) | Empfängt den physikalischen `REAL`-Wert zur Verarbeitung |
@@ -59,6 +64,7 @@ Der FB selbst besitzt keine explizite Zustandsmaschine. Der initialisierte Zusta
 - **Grenzwertüberwachung:** Durch die Ausgänge `xOver` und `xUnder` kann die übergeordnete Steuerung auf Über- oder Unterschreitungen reagieren.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Beschreibung | Unterschied |
 |----------|--------------|-------------|
 | `Q_NumericValue_PHYS` | Direkter FB für physikalische Werte | `Q_NumericValue_PHYSA` wrappt diesen FB und fügt explizite Adapterausgänge (`xOver`, `xUnder`) für Grenzsignale hinzu |

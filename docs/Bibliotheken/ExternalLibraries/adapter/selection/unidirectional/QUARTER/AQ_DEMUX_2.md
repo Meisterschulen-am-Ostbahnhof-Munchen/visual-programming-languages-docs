@@ -9,16 +9,19 @@ Der **AQ_DEMUX_2** ist ein generischer Funktionsbaustein, der als Demultiplexer 
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Auslöser zum Setzen des Index K und Weiterleitung des Werts. Verbunden mit dem Daten-Eingang K. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung, dass der Index K gesetzt und der Wert weitergeleitet wurde. |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index zur Auswahl des Ausgangs (1 → OUT1, 2 → OUT2). |
@@ -27,6 +30,7 @@ Der **AQ_DEMUX_2** ist ein generischer Funktionsbaustein, der als Demultiplexer 
 Der Baustein besitzt keine direkten Daten-Ausgänge. Die Ausgaben erfolgen über die Adapter-Schnittstellen.
 
 ### **Adapter**
+
 | Typ | Richtung | Name | Kommentar |
 |-----|----------|------|-----------|
 | adapter::types::unidirectional::AQ | Eingang (Socket) | IN | Eingangswert, der demultiplext werden soll. |

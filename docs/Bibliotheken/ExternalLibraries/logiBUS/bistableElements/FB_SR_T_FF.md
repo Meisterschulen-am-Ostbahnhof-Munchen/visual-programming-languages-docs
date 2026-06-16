@@ -9,16 +9,19 @@ Der Funktionsbaustein `FB_SR_T_FF` realisiert ein bistabiles, set-dominantes RS-
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ | Event | Normaler Ausführungsauftrag (löst Verarbeitung aus) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF | Event | Bestätigung der Ausführung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Initialwert | Kommentar |
 |------|-----|-------------|-----------|
 | S1 | BOOL | - | Set-Eingang (dominant) |
@@ -26,6 +29,7 @@ Der Funktionsbaustein `FB_SR_T_FF` realisiert ein bistabiles, set-dominantes RS-
 | CLK | BOOL | - | Taktsignal (steigende Flanke löst Toggle aus) |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Initialwert | Kommentar |
 |------|-----|-------------|-----------|
 | Q1 | BOOL | - | Ausgangssignal |

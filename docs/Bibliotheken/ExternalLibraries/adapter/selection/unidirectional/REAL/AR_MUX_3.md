@@ -11,16 +11,19 @@ Der Funktionsblock `AR_MUX_3` ist ein generischer 3-fach-Multiplexer für den Ad
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Set Index K – löst die Auswahl aus |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung der erfolgten Umschaltung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index für die Auswahl (0, 1 oder 2) |
@@ -29,6 +32,7 @@ Der Funktionsblock `AR_MUX_3` ist ein generischer 3-fach-Multiplexer für den Ad
 Keine (die Ausgangsdaten werden über den Adapter OUT bereitgestellt).
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Plug     | OUT  | adapter::types::unidirectional::AR | Ausgang, der den gewählten Eingang weitergibt |
@@ -68,6 +72,7 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten, da die Logik rein durc
 - **Test- und Diagnosefunktionen**: Einspielen von Testsignalen auf einen gemeinsamen Ausgangskanal.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein | Anzahl Eingänge | Besonderheit |
 |----------|-----------------|--------------|
 | AR_MUX_2 | 2               | Einfacherer Multiplexer für zwei Quellen |

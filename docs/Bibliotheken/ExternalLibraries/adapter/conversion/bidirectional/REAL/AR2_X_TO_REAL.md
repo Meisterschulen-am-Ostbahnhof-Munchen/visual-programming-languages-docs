@@ -9,26 +9,31 @@ Der Funktionsblock **AR2_X_TO_REAL** ist ein Composite-Baustein, der als Brücke
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `REQ`    | Startet die Datenübertragung an den Adapter. Der Datenwert `OUT` wird gesendet. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF`    | Quittiert die Rückmeldung des Adapters. Der konvertierte Wert liegt als `IN` an. |
 
 ### **Daten-Eingänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | `OUT`    | REAL  | Datenwert, der an den Adapter übergeben wird. |
 
 ### **Daten-Ausgänge**
+
 | Variable | Typ   | Beschreibung |
 |----------|-------|--------------|
 | `IN`     | REAL  | Vom Adapter zurückgelieferter konvertierter Wert. |
 
 ### **Adapter**
+
 | Name      | Typ                                      | Richtung | Beschreibung |
 |-----------|------------------------------------------|----------|--------------|
 | `AR2_IN`  | `adapter::types::bidirectional::AR2`     | Socket   | Bidirektionaler Adapter für die AR2‑Kommunikation und Konvertierung. |

@@ -9,16 +9,19 @@ Der **AIWS_DEMUX_2** ist ein generischer Demultiplexer-Funktionsblock für das A
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Setzt den Index K und startet die Weiterleitung |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigt die Verarbeitung des Index |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index, der den Zielausgang bestimmt (z. B. 0 → OUT1, 1 → OUT2) |
@@ -27,6 +30,7 @@ Der **AIWS_DEMUX_2** ist ein generischer Demultiplexer-Funktionsblock für das A
 Keine.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Kommentar |
 |-----|------|----------|-----------|
 | AIWS (unidirectional) | IN | Socket (Eingang) | Eingangsdatenstrom, der demultiplext werden soll |

@@ -11,26 +11,31 @@ Der Composite-Funktionsblock `AX_TO_AB` dient zur Umwandlung eines BOOL-Adapters
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
+
 | Name | Beschreibung |
 |------|--------------|
 | `E1` (aus `AX_IN`) | Ereigniseingang, der über den BOOL-Adapter empfangen und unverändert an den Ausgang weitergeleitet wird. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Beschreibung |
 |------|--------------|
 | `E1` (aus `AB_OUT`) | Ereignisausgang, der das durchgereichte Ereignis vom Eingang bereitstellt. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | `D1` (aus `AX_IN`) | `BOOL` | Das zu konvertierende boolesche Signal (TRUE oder FALSE). |
 
 ### **Daten-Ausgänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | `D1` (aus `AB_OUT`) | `BYTE` | Das konvertierte Signal: `TRUE` wird zu `1`, `FALSE` zu `0`. |
 
 ### **Adapter**
+
 | Typ | Richtung | Bezeichner | Kommentar |
 |-----|----------|------------|-----------|
 | `adapter::types::unidirectional::AX` | Socket (Eingang) | `AX_IN` | BOOL-Adapter, der die Eingangsdaten und Ereignisse liefert. |

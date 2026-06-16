@@ -9,16 +9,19 @@ Der Funktionsblock **AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED** dient der skalierend
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ   | Kommentar            |
 |------|-------|----------------------|
 | INIT | EInit | Init Request         |
 
 ### **Ereignis-Ausgänge**
+
 | Name  | Typ   | Kommentar             |
 |-------|-------|-----------------------|
 | INITO | EInit | Init Confirmation     |
 
 ### **Daten-Eingänge**
+
 | Name   | Typ   | Initialwert | Kommentar                       |
 |--------|-------|-------------|-----------------------------------|
 | SCALE  | LREAL | 1.0         | Skalierungsfaktor               |
@@ -29,11 +32,13 @@ Der Funktionsblock **AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED** dient der skalierend
 
 ### **Adapter**
 #### **Socket (Eingang)**
+
 | Name | Typ                                              | Kommentar |
 |------|--------------------------------------------------|-----------|
 | IN   | adapter::types::unidirectional::AULI             | Input     |
 
 #### **Plug (Ausgang)**
+
 | Name  | Typ                                              | Kommentar           |
 |-------|--------------------------------------------------|---------------------|
 | OUT   | adapter::types::unidirectional::ALR              | Output Filtered     |

@@ -16,6 +16,7 @@ Der Datentyp `AuxiliaryState_S` ist eine strukturierte Datenstruktur (Struct), d
 *(Nicht anwendbar – Dies ist ein Datentyp, kein Funktionsbaustein)*
 
 ### **Strukturierte Datenfelder**
+
 | Name | Datentyp | Initialwert | Kommentar |
 | :--- | :--- | :--- | :--- |
 | `value` | `USINT` (0...255) | 255 | Repräsentiert den Wert des Hilfseingangs. |

@@ -31,6 +31,7 @@ Der RT_E_DELAY Funktionsblock verzögert ein Ereignis um eine definierte Zeit (D
 - **QO** (BOOL): Status.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2008, 2014 ACIN, Profactor GmbH |

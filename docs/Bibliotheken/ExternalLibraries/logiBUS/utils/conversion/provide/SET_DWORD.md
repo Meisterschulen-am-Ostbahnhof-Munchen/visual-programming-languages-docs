@@ -9,6 +9,7 @@ Der Funktionsbaustein `SET_DWORD` dient dazu, einen DWORD-Wert über einen Einga
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Comment |
 |------|-----|---------|
 | REQ  | Event | Normal Execution Request – löst das Schreiben aus |
@@ -16,6 +17,7 @@ Der Funktionsbaustein `SET_DWORD` dient dazu, einen DWORD-Wert über einen Einga
 Mit dem Ereignis `REQ` werden die Daten `IN` und `OUT` gleichzeitig bereitgestellt.
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Comment |
 |------|-----|---------|
 | CNF  | Event | Execution Confirmation – wird nach erfolgreicher Ausführung gesendet |
@@ -23,11 +25,13 @@ Mit dem Ereignis `REQ` werden die Daten `IN` und `OUT` gleichzeitig bereitgestel
 Der Ausgang `CNF` referenziert die veränderte Variable `OUT`.
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Comment |
 |------|-----|---------|
 | IN   | DWORD | Wert, der in die Zielvariable geschrieben werden soll (Initialwert: 0) |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Comment |
 |------|-----|---------|
 | OUT  | DWORD | Zielvariable (InOut) – der Wert von `IN` wird hierhin geschrieben (Initialwert: 0) |

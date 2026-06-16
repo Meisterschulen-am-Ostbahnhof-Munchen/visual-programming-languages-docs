@@ -9,11 +9,13 @@ Der Funktionsblock **ASR_SPLIT_4** ist ein generischer Baustein, der einen einge
 
 ## Schnittstellenstruktur
 ### **Adapter-Eingänge (Sockets)**
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | IN | `adapter::types::unidirectional::ASR` | Eingangs-Adapter, der die zu verteilende ASR-Verbindung bereitstellt. |
 
 ### **Adapter-Ausgänge (Plugs)**
+
 | Name | Typ | Beschreibung |
 |------|-----|-------------|
 | OUT1 | `adapter::types::unidirectional::ASR` | Erster Ausgangs-Adapter (identische Kopie des Eingangs). |

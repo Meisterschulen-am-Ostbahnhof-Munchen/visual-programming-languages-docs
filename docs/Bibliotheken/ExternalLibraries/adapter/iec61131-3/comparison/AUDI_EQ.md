@@ -25,6 +25,7 @@ Der FB besitzt ausschließlich Adapter-Schnittstellen. Es sind keine direkten Er
 - **OUT.D1** (über Adapter `OUT`): Boolesches Ergebnis des Vergleichs (`TRUE` wenn beide Werte gleich sind, sonst `FALSE`).
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Kurzbeschreibung |
 |---------|----------|-----|------------------|
 | `IN1`   | Socket   | `adapter::types::unidirectional::AUDI` | Liefert den ersten analogen Wert inkl. Ereignis. |

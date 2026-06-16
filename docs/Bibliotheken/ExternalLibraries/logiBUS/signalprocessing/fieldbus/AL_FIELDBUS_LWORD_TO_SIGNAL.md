@@ -26,6 +26,7 @@ Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL` dient der filternden Weitergabe
 - **`VALID.D1`** (über Plug `VALID`, Typ: `BOOL`): Zeigt an, ob das aktuell ausgegebene Signal gültig ist. Der Wert wird durch ein internes Flipflop (E_D_FF) zwischengespeichert und bei jedem Verarbeitungszyklus aktualisiert.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | `IN` | Socket | `adapter::types::unidirectional::AL` | Empfängt das Ereignis- und Datensignal von einem vorgeschalteten Baustein. |

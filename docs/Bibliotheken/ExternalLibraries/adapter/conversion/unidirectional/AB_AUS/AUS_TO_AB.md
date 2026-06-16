@@ -27,6 +27,7 @@ Daten werden über den **AB_OUT**-Adapter weitergegeben:
 - **AB_OUT.D1** (BYTE) – Der konvertierte Byte‑Wert.
 
 ### **Adapter**
+
 | Name      | Typ                                    | Richtung | Beschreibung |
 |-----------|----------------------------------------|----------|--------------|
 | **AUS_IN** | `adapter::types::unidirectional::AUS` | Socket   | Eingangsadapter für USINT‑Daten und Ereignisse. |

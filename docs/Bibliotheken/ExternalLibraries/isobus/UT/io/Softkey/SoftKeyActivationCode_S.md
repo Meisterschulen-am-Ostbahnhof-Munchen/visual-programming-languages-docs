@@ -16,6 +16,7 @@ Dies ist ein Datentyp und besitzt daher keine Ereignis- oder Adapterschnittstell
 *(Nicht anwendbar – dies ist ein Datentyp)*
 
 ### **Datenfelder (Strukturkomponenten)**
+
 | Name     | Datentyp | Initialwert | Kommentar |
 | :------- | :------- | :---------- | :-------- |
 | `code`   | `USINT`  | 255         | Definiert den numerischen Code, der den spezifischen Softkey identifiziert. |

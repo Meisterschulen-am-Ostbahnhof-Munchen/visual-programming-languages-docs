@@ -11,6 +11,7 @@ Der Funktionsblock **ATM_AX_PULSE** ist ein standardisierter Timerbaustein zur E
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | **REQ** | Event | Service Anforderung – startet den Impuls. |
@@ -26,6 +27,7 @@ Keine direkten Dateneingänge. Die Impulszeit wird über den Adapter **PT** bere
 Keine direkten Datenausgänge. Der Impulszustand wird über den Adapter **Q** abgefragt.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | **PT**  | Socket   | `adapter::types::unidirectional::ATM` | Liefert die Impulsdauer als Zeitwert. |

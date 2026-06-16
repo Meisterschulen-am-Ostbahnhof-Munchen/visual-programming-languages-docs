@@ -9,16 +9,19 @@ Der Funktionsblock `AL_MUX_4` ist ein generischer Multiplexer für Adapter-Schni
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | `REQ` | `Event` | Setzt den Index `K` und startet die Auswahl. |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | `CNF` | `Event` | Bestätigung der erfolgten Umschaltung. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Kommentar |
 |------|----------|-----------|
 | `K` | `UINT` | Index des zu wählenden Eingangs (0…3). |
@@ -28,11 +31,13 @@ Keine.
 
 ### **Adapter**
 **Plugs (Ausgang):**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `OUT` | `adapter::types::unidirectional::AL` | Ausgang: liefert den gewählten Eingangsadapter. |
 
 **Sockets (Eingänge):**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `IN1` | `adapter::types::unidirectional::AL` | Eingangswert 1 (für `K=0`). |

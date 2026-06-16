@@ -9,16 +9,19 @@ Der Funktionsblock `AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED` dient dazu, ein eingehend
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | `INIT` | EInit | Initialisierungsanforderung (z. B. zum Setzen von Parametern) |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | `INITO` | EInit | Bestätigung der erfolgreichen Initialisierung |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Initialwert | Beschreibung |
 |------|-----|-------------|--------------|
 | `SCALE` | REAL | 1.0 | Skalierungsfaktor, der auf den Rohwert angewendet wird |
@@ -28,6 +31,7 @@ Der Funktionsblock `AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED` dient dazu, ein eingehend
 Der Baustein besitzt keine eigenständigen Daten-Eingänge oder -Ausgänge – die Ein‑/Ausgabe erfolgt ausschließlich über Adapter.
 
 ### **Adapter**
+
 | Adapter | Typ | Richtung | Beschreibung |
 |---------|-----|----------|--------------|
 | `IN` | AB (Adapter Typ A→B) | Socket | Empfang des rohen BYTE-Signals |

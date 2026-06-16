@@ -27,6 +27,7 @@ Die Daten werden über den **AI_IN**‑Adapter als Integer-Wert bereitgestellt.
 Die Daten werden über den **AR_OUT**‑Adapter als Real-Wert ausgegeben.
 
 ### **Adapter**
+
 | Name   | Typ                                          | Richtung | Beschreibung          |
 |--------|----------------------------------------------|----------|-----------------------|
 | AI_IN  | `adapter::types::unidirectional::AI`        | Socket   | Integer‑Adapter (Eingang) |
@@ -53,6 +54,7 @@ Der Baustein besitzt keinen Zustandsautomaten. Die Verarbeitung erfolgt direkt o
 - **Prototypen und Tests**: Schnelles Zusammenstecken von unterschiedlichen Adapter‑Komponenten während der Entwicklungsphase.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein  | Funktion                                        | Besonderheit                          |
 |-----------|-------------------------------------------------|---------------------------------------|
 | AI_TO_AR  | Durchleitung von INT nach REAL über Adapter     | Keine eigene Logik, reine Adaptervermittlung |

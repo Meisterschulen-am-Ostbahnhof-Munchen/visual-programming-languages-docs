@@ -11,6 +11,7 @@ Der Funktionsblock **AULI_TO_AS** ist ein Composite-Baustein zur Konvertierung e
 Der Baustein besitzt keine separaten Ereignis‑ oder Datenports auf der obersten Ebene. Die gesamte Kommunikation erfolgt ausschließlich über zwei Adapter.
 
 ### **Adapter**
+
 | Adapter | Richtung | Typ | Beschreibung |
 |---------|----------|-----|--------------|
 | `AULI_IN` | Socket (Eingang) | `adapter::types::unidirectional::AULI` | Bietet ein Ereignis `E1` und einen Datenwert `D1` vom Typ `ULINT`. |

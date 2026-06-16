@@ -21,6 +21,7 @@ Keine eigenen Daten-Eingänge: Der Baustein besitzt keine direkten Daten-Eingän
 Keine eigenen Daten-Ausgänge: Der Baustein besitzt keine direkten Daten-Ausgänge. Daten werden über den angeschlossenen Plug-Adapter **AUDI_OUT** gesendet.
 
 ### **Adapter**
+
 | Name | Typ | Richtung | Kommentar |
 |------|-----|----------|-----------|
 | AUI_IN | `adapter::types::unidirectional::AUI` | Socket (Eingang) | Empfängt UINT-Daten und zugehöriges Ereignis |

@@ -23,6 +23,7 @@ Der RT_Bridge_10 Funktionsblock dient als Entkopplungsbrücke für 10 Datenverbi
 - **RD_1** - **RD_10** (ANY): Ausgangsdaten.
 
 ## Metadaten
+
 | Attribut | Wert |
 | :--- | :--- |
 | Copyright | (c) 2023 Johannes Kepler University Linz |

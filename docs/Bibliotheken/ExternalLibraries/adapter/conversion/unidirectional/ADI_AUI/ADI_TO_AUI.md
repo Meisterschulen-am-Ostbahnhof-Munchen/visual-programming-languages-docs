@@ -21,6 +21,7 @@ Keine – alle Daten werden über den Socket-Adapter bereitgestellt.
 Keine – alle Daten werden über den Plug-Adapter ausgegeben.
 
 ### **Adapter**
+
 | Typ | Name | Richtung | Beschreibung |
 |-----|------|----------|--------------|
 | Socket | `ADI_IN` | Eingang | ADI-Adapter (DINT) – liefert den zu konvertierenden Wert und ein Ereignis |

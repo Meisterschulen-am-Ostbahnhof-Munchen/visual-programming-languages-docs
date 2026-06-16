@@ -9,16 +9,19 @@ Der Funktionsblock **SET_REAL** dient dazu, einen REAL-Wert von einem Dateneinga
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | REQ  | Event | Normale Ausführungsanforderung (mit IN und OUT verbunden) |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Beschreibung |
 |------|-----|--------------|
 | CNF  | Event | Bestätigung der Ausführung (mit OUT verbunden) |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Initialwert | Beschreibung |
 |------|-----|-------------|--------------|
 | IN   | REAL | 0.0 | Wert, der geschrieben werden soll |
@@ -45,6 +48,7 @@ Der aktuelle Wert von IN wird der InOut-Variable OUT zugewiesen. Anschließend w
 - **Einfachheit**: Der FB besteht aus nur einem Zustand und einem Algorithmus, was eine sehr geringe Laufzeitkomplexität garantiert.
 
 ## Zustandsübersicht
+
 | Zustand | Beschreibung | Aktion | Ausgabe |
 |---------|--------------|--------|---------|
 | REQ     | Warte auf Ausführungsanforderung | Führe Algorithmus REQ aus → OUT := IN | CNF |
@@ -57,6 +61,7 @@ Es existiert kein weiterer Zustand; der FB kehrt nach dem Durchlauf sofort wiede
 - **Wertkopie innerhalb einer Applikation**: Einfaches Überschreiben einer bestehenden REAL-Variablen durch einen anderen Wert, gesteuert durch ein Ereignis.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | FB | Typ | Unterschied |
 |----|-----|-------------|
 | **SET_BOOL** | BOOL | Schreibt boolesche Werte, analoge Funktionsweise |

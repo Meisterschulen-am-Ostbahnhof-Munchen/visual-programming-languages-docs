@@ -10,16 +10,19 @@ Der Funktionsblock **WORDS_TO_ARR08B_BE** fasst vier 16‑Bit‑Wörter (WORD) z
 
 ## Schnittstellenstruktur
 ### **Ereignis‑Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `REQ`    | Startet die Konvertierung aller vier Eingangswörter. |
 
 ### **Ereignis‑Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF`    | Wird gesendet, sobald das Ausgabearray vollständig berechnet wurde. |
 
 ### **Daten‑Eingänge**
+
 | Name    | Typ   | Kommentar |
 |---------|-------|-----------|
 | `IN_00` | WORD  | Word 00 (erstes Wort) |
@@ -28,6 +31,7 @@ Der Funktionsblock **WORDS_TO_ARR08B_BE** fasst vier 16‑Bit‑Wörter (WORD) z
 | `IN_03` | WORD  | Word 03 (viertes Wort) |
 
 ### **Daten‑Ausgänge**
+
 | Name | Typ             | Kommentar |
 |------|-----------------|-----------|
 | `OUT`| ARRAY[0..7] OF BYTE | 8‑Byte‑Array im Big‑Endian‑Format |
@@ -63,6 +67,7 @@ Der Funktionsblock besitzt keinen expliziten internen Zustand (zustandslos). Er 
 - **Gateway‑Funktionen**: Umsetzung zwischen Little‑Endian‑Steuerungen und Big‑Endian‑Netzwerken.
 
 ## Vergleich mit ähnlichen Bausteinen
+
 | Baustein                    | Besonderheit |
 |-----------------------------|--------------|
 | WORDS_TO_ARR08B_BE          | Big‑Endian, 4 WORDS → 8 Bytes |

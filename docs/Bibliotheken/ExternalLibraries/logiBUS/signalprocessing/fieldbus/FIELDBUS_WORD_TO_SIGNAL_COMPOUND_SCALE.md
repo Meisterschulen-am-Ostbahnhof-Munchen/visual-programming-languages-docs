@@ -17,6 +17,7 @@ Dieser Funktionsbaustein bildet einen 16‑Bit‑Wort‑Eingang auf einen skalie
 - **CNF** (Event) – Bestätigung der Ausführung; mit den Parametern `OUT` und `VALID`.
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Initialwert | Beschreibung |
 |------|-----|-------------|--------------|
 | `IN` | WORD | `NOT_AVAILABLE_WM` | Das zu verarbeitende 16‑Bit‑Feldbussignal. |
@@ -25,6 +26,7 @@ Dieser Funktionsbaustein bildet einen 16‑Bit‑Wort‑Eingang auf einen skalie
 | `OFFSET` | DINT | 0 | Ganzzahliger Offset, der nach der Skalierung addiert wird. |
 
 ### **Daten-Ausgänge**
+
 | Name | Typ | Initialwert | Beschreibung |
 |------|-----|-------------|--------------|
 | `OUT` | REAL | 0.0 | Berechneter skalarer Ausgangswert. |

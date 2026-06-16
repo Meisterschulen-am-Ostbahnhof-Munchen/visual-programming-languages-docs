@@ -9,16 +9,19 @@ Der Funktionsbaustein **SET_WSTRING** dient dazu, einen Wert vom Datentyp `WSTRI
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `REQ`    | Normaler Ausführungsauftruf: Die Zuweisung des Eingabewerts an die InOut-Variable wird ausgelöst. |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Beschreibung |
 |----------|--------------|
 | `CNF`    | Bestätigung der Ausführung. Wird nach erfolgreicher Zuweisung gesendet. |
 
 ### **Daten-Eingänge**
+
 | Name | Datentyp | Beschreibung |
 |------|----------|--------------|
 | `IN`  | `WSTRING`| Quellwert, der in die Zielvariable geschrieben werden soll. |

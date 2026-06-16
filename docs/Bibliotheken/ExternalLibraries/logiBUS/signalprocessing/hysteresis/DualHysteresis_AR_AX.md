@@ -21,27 +21,32 @@ Damit wird ein sicheres Schaltverhalten mit verminderter Schaltfrequenz erreicht
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | `INIT`   | EInit | Initialisierungsanforderung, begleitet von Daten-Eingang `QI` |
 
 ### **Ereignis-Ausgänge**
+
 | Ereignis | Typ | Beschreibung |
 |----------|-----|--------------|
 | `INITO`  | EInit | Initialisierungsbestätigung, begleitet von Daten-Ausgang `QO` |
 
 ### **Daten-Eingänge**
+
 | Daten | Typ | Beschreibung |
 |-------|-----|--------------|
 | `QI`  | BOOL | Eingangsqualifikator – steuert die Aktivierung des Bausteins. Bei `TRUE` wird die Hysterese-Logik ausgeführt, bei `FALSE` werden Ausgänge zurückgesetzt. |
 
 ### **Daten-Ausgänge**
+
 | Daten | Typ | Beschreibung |
 |-------|-----|--------------|
 | `QO`  | BOOL | Ausgangsqualifikator – wird auf den Wert von `QI` gesetzt, spiegelt den Betriebszustand wider. |
 
 ### **Adapter**
 **Sockets (Eingangsadapter):**
+
 | Adapter | Typ | Beschreibung |
 |---------|-----|--------------|
 | `INPUT` | adapter::types::unidirectional::AR | Analoger Eingangswert (z. B. 0…1 oder anderer Bereich) |
@@ -50,6 +55,7 @@ Damit wird ein sicheres Schaltverhalten mit verminderter Schaltfrequenz erreicht
 | `HYSTERESIS` | adapter::types::unidirectional::AR | Hysterese (Absolutwert) – erweitert die Ausschaltpunkte zu den Einschaltpunkten |
 
 **Plugs (Ausgangsadapter):**
+
 | Adapter | Typ | Beschreibung |
 |---------|-----|--------------|
 | `DO_UP`   | adapter::types::unidirectional::AX | Binärausgang für den **UP**-Zustand (Einschalten bei Überschreiten der oberen Schwelle) |
@@ -75,6 +81,7 @@ Ist `QI = FALSE` bei einem `INIT`-Ereignis, wird der FB deinitialisiert und beid
 - **Ereignisgesteuerte Verarbeitung**: Die Hysterese-Logik wird nur bei jedem neuen `INPUT.E1`-Ereignis ausgewertet – keine zyklische Abfrage.
 
 ## Zustandsübersicht
+
 | Zustand   | Beschreibung |
 |-----------|--------------|
 | `START`   | Initialer Ruhezustand nach Systemstart. |

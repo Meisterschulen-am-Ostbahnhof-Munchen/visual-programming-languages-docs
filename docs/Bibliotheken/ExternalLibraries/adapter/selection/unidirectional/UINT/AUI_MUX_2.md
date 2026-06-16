@@ -10,16 +10,19 @@ Der Funktionsblock **AUI_MUX_2** ist ein generischer Multiplexer für AUI-Adapte
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | REQ  | Event | Set Index K; übernimmt den Wert von K |
 
 ### **Ereignis-Ausgänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | CNF  | Event | Bestätigung, dass der Index K gesetzt wurde |
 
 ### **Daten-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | K    | UINT | Index für die Auswahl (0 = IN1, 1 = IN2) |
@@ -28,6 +31,7 @@ Der Funktionsblock **AUI_MUX_2** ist ein generischer Multiplexer für AUI-Adapte
 *Keine*
 
 ### **Adapter**
+
 | Richtung | Name | Typ | Kommentar |
 |----------|------|-----|-----------|
 | Socket   | IN1  | `adapter::types::unidirectional::AUI` | Erster Eingangswert |

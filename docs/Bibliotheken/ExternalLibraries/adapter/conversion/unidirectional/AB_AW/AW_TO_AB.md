@@ -21,6 +21,7 @@ Der Baustein besitzt keine eigenen Daten-Eingänge. Der zu konvertierende WORD-W
 Der Baustein besitzt keine eigenen Daten-Ausgänge. Das konvertierte BYTE-Ergebnis wird über den Adapter-Ausgang `AB_OUT` (Daten `D1`) ausgegeben.
 
 ### **Adapter**
+
 | Name | Richtung | Typ | Beschreibung |
 |------|----------|-----|-------------|
 | `AW_IN` | Socket (Eingang) | `adapter::types::unidirectional::AW` | WORD-Adapter mit einem Ereignis `E1` und einem Datenwert `D1` (WORD) |

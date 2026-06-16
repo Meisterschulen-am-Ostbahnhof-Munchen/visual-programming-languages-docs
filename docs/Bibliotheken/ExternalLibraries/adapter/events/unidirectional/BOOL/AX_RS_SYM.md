@@ -9,6 +9,7 @@ Der **AX_RS_SYM** ist ein ereignisgesteuerter, bistabiler Funktionsblock (RS‑F
 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `R` | Event | Setzt den Ausgang `Q.D1` auf `FALSE` und feuert `Q.E1` |
@@ -24,6 +25,7 @@ Keine.
 Der FB besitzt keine separaten Daten-Ausgänge. Der aktuelle Zustand wird über den Adapter `Q` als `Q.D1` (vom Typ BOOL) bereitgestellt.
 
 ### **Adapter**
+
 | Name | Typ | Kommentar |
 |------|-----|-----------|
 | `Q` | `adapter::types::unidirectional::AX` | Bietet den Flip‑Flop‑Wert (D1) und ein Bestätigungsereignis (E1) |

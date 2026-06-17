@@ -1,6 +1,8 @@
 site_name: 'Visuelle Programmiersprachen: Low-Code (4)'
 site_url: https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/
 repo_url: https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs
+edit_uri: edit/main/docs/
+view_uri: blob/main/docs/
 theme:
   name: material
   language: de

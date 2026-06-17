@@ -1,4 +1,4 @@
-# Visual Programming Languages Docs
+# Visuelle Programmiersprachen: Low-Code (4)
 
 Willkommen im Dokumentations-Repository für visuelle Programmiersprachen! Dieses Projekt bietet umfassende Informationen, Ressourcen und Tutorials für verschiedene visuelle Programmiersprachen und Standards.
 
@@ -15,6 +15,11 @@ Unsere Inhalte richten sich sowohl an Anfänger als auch an Fortgeschrittene und
 
 Die vollständige und gerenderte Dokumentation finden Sie unter:
 👉 <https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/>
+
+- [📖 Dokumentation (ReadTheDocs)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/)
+- [📄 PDF herunterladen](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/pdf/visual-programming-languages-docs.pdf)
+- [GitHub Repository](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs)
+
 
 ## Community & Support
 

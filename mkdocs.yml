@@ -29,6 +29,10 @@ theme:
 plugins:
 - search
 
+extra_javascript:
+- _static/js/expand_tabs.js
+- _static/js/nav-toggle.js
+
 markdown_extensions:
 - attr_list
 - md_in_html

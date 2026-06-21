@@ -10,20 +10,29 @@
   text-align: center;
 }
 
-/* Nav toggle button */
-.nav-toggle-btn {
+/* Nav toggle wrapper */
+.nav-toggle-wrapper {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  width: 100%;
+  margin-top: 0;
   margin-bottom: 0.5rem;
-  padding: 0.4rem 0.6rem;
-  font-size: 0.75rem;
-  font-weight: 500;
+  padding: 0;
+}
+
+/* Icon-only toggle button */
+.nav-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  flex-shrink: 0;
   color: var(--md-default-fg-color);
   background: var(--md-default-bg-color);
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0.2rem;
+  border: 1.5px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.25rem;
   cursor: pointer;
   transition: background 0.2s, border-color 0.2s;
 }
@@ -34,13 +43,27 @@
 }
 
 .nav-toggle-btn .md-icon {
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
-.nav-toggle-btn .nav-toggle-label {
-  flex: 1;
-  text-align: left;
+/* Label beside the button */
+.nav-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  height: 2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color);
+  user-select: none;
+  cursor: default;
 }
 
-/* Collapsed state handled by .md-toggle checkbox state — no custom CSS needed */
+/* Collapsed state: collapse only the first sub-level under each section.
+   Deeper nesting is left visible. Material's checkbox CSS has higher
+   specificity, so individual section toggles still work. */
+[data-nav-collapsed="true"] .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item--nested > .md-nav > .md-nav__list {
+  display: none;
+}

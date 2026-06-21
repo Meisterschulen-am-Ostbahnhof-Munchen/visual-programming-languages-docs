@@ -43,12 +43,4 @@
   text-align: left;
 }
 
-/* Collapsed state: hide nested lists */
-[data-nav-collapsed="true"] .md-nav__item--nested > .md-nav__list {
-  display: none !important;
-}
-
-/* Collapsed state: rotate chevrons */
-[data-nav-collapsed="true"] .md-nav__item--nested > .md-nav__link .md-nav__icon {
-  transform: rotate(-90deg);
-}
+/* Collapsed state handled by .md-toggle checkbox state — no custom CSS needed */

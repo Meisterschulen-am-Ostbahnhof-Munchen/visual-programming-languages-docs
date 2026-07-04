@@ -1,6 +1,3 @@
-Hier ist die Dokumentationsseite für die Übung `Uebung_175`, basierend auf den bereitgestellten Daten.
-
-```markdown
 # Uebung_175: Exercise for E_TABLE_CTRL
 
 
@@ -45,4 +42,3 @@ Das Netzwerk dieser Übung ist als **Aufgabe (TODO)** konzipiert.
 
 ## Zusammenfassung
 Die `Uebung_175` ist eine leere Übungsumgebung ("Skeleton"), die lediglich den Baustein `E_TABLE_CTRL` bereitstellt. Ziel der Übung ist es, die Funktionalität dieses Bausteins durch eigenständiges Erstellen der Verbindungen und Logik zu erlernen.
-```

@@ -23,8 +23,8 @@ EXCEL_PATH = os.path.join(SCRIPT_DIR, EXCEL_FILE)
 
 # Paths for scanning exercises
 SEARCH_DIRS = [
-    os.path.join(SCRIPT_DIR, r"../docs/training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen"),
-    os.path.join(SCRIPT_DIR, r"../docs/training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen")
+    os.path.join(SCRIPT_DIR, r"../docs/Uebungen/test_B/Uebungen_doc"),
+    os.path.join(SCRIPT_DIR, r"../docs/Uebungen/test_AX/Uebungen_doc")
 ]
 
 def clean_html(raw_html):
@@ -94,7 +94,7 @@ def update_json_with_exercises():
     data = load_data()
     if not data: return
 
-    base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/training1/Ventilsteuerung/4diacIDE-workspace/"
+    base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Uebungen/"
 
     for cat in data.get('categories', []):
         for item in cat.get('data', []):

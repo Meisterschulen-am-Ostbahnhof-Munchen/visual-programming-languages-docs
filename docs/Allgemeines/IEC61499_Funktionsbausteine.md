@@ -68,3 +68,8 @@ Aktionen werden ausgeführt, sobald ein Zustand aktiv wird. Eine Aktion besteht 
 5.  Im neuen Zustand werden nacheinander alle zugeordneten **Algorithmen** ausgeführt.
 6.  Danach werden die zugeordneten **Ausgabe-Ereignisse** gefeuert.
 7.  Das ECC wartet im neuen Zustand auf das nächste Ereignis.
+
+---
+
+> 💡 **Tipp:** Sie können sich die Normnummer **61499** partout nicht merken?
+> Dann hilft die **[Eselsbrücke: IEC 61499](Eselsbruecke_IEC61499.md)**.

@@ -51,3 +51,11 @@ Datentypen legen fest, welche Art von Information eine Variable speichern kann (
 *   Informationen zu generischen Datentypen: **[ANY-Typen](Datentypen/GenerischeDatentypen/ANY_Typen.md)**
 *   Welche Typen miteinander verbunden werden dürfen: **[Typkompatibilität](Datentypen/Typkompatibilität.md)**
 
+---
+
+## 🚜 Eselsbrücke: Normnummer merken
+
+Wer sich die Nummer **IEC 61499** partout nicht merken kann, findet hier eine Gedächtnisstütze:
+
+*   **[Eselsbrücke: IEC 61499](Eselsbruecke_IEC61499.md)**
+

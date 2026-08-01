@@ -54,17 +54,18 @@ Der Baustein arbeitet auf einer Datei `settings.ini`, die eine einfache Schlüss
 
 1. **INIT** – Mit dem INIT-Ereignis werden die Parameter `SECTION` und `KEY` übergeben. Der Baustein öffnet oder lädt die INI-Datei und bereitet die Lese-/Schreiboperationen vor. Eine erfolgreiche Initialisierung wird durch das INITO-Ereignis signalisiert.
 
-2. **SET** – Nach der Initialisierung kann mit SET ein neuer Wert für den zuvor definierten Schlüssel geschrieben werden. Der übergebene `VALUE` wird in der INI-Datei gespeichert. Der Ausgang `VALUEO` gibt den geschriebenen Wert zurück.
+2. **SET** – Nach der Initialisierung kann mit SET ein neuer Wert für den zuvor definierten Schlüssel geschrieben werden. Der übergebene `VALUE` wird in `settings.ini` gespeichert, sofern der Schlüssel nicht schreibgeschützt ist. Handelt es sich um einen schreibgeschützten Parameter aus `settingsReadOnly.ini`, wird der Schreibversuch abgelehnt, es feuert das Fehlerereignis **`SETOE`** und `STATUS` meldet `"Key is read-only"`.
 
-3. **GET** – Mit GET wird der aktuelle Wert des Schlüssels gelesen. Existiert der Schlüssel nicht, wird der über `DEFAULT_VALUE` angegebene Standardwert zurückgegeben. Der gelesene Wert erscheint am Ausgang `VALUEO`.
+3. **GET** – Mit GET wird der aktuelle Wert des Schlüssels gelesen. Bei schreibgeschützten Parametern wird stets der Wert aus `settingsReadOnly.ini` zurückgegeben. Existiert ein normaler Schlüssel nicht in `settings.ini`, wird der über `DEFAULT_VALUE` angegebene Standardwert zurückgegeben. Der gelesene Wert erscheint am Ausgang `VALUEO`.
 
-Die Ausführung jedes Ereignisses wird durch den jeweiligen Ausgang (INITO, SETO, GETO) quittiert. Dabei zeigt `QO` an, ob die Operation erfolgreich war, und `STATUS` liefert eine textuelle Rückmeldung.
+Die Ausführung jedes Ereignisses wird durch den jeweiligen Ausgang (INITO, SETO/SETOE, GETO) quittiert. Dabei zeigt `QO` an, ob die Operation erfolgreich war, und `STATUS` liefert eine textuelle Rückmeldung.
 
 ## Technische Besonderheiten
 
 - **Generische Datentypen** – `VALUE` und `DEFAULT_VALUE` sind als `ANY` deklariert. Der Baustein kann daher mit verschiedenen Datentypen (z. B. BOOL, INT, REAL, STRING) arbeiten, sofern die Laufzeitumgebung diese unterstützt.
+- **Schreibschutz (Werkseinstellungen)** – Das System unterstützt neben `settings.ini` auch die schreibgeschützte Vorgabedatei `settingsReadOnly.ini`. Parameter aus dieser Datei überschreiben veränderbare Werte und lehnen Schreibversuche mit `STATUS = "Key is read-only"` ab. Siehe auch [Schreibgeschützte Einstellungen (`settingsReadOnly.ini`)](./settingsReadOnly.md).
 - **Event-basierte Steuerung** – Alle Aktionen werden über Ereignisse ausgelöst. Der Baustein ist somit vollständig in ein ereignisgesteuertes System (z. B. IEC 61499) integrierbar.
-- **Fehlerbehandlung** – Der Ausgangsqualifier `QO` und der `STATUS`-String ermöglichen eine einfache Fehlerdiagnose (z. B. bei nicht vorhandener Datei oder ungültigem Abschnitt).
+- **Fehlerbehandlung** – Der Ausgangsqualifier `QO` und der `STATUS`-String ermöglichen eine einfache Fehlerdiagnose (z. B. bei schreibgeschützten Schlüsseln, fehlender Datei oder ungültigem Abschnitt).
 
 ## Zustandsübersicht
 

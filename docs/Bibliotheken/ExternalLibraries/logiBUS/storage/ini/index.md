@@ -49,7 +49,8 @@ Ein `SET`-Ereignis schreibt den aktuellen Wert des `VALUE`-Eingangs unter dem ko
 
 ## Technische Besonderheiten
 *   **Typflexibilität**: Die Daten-Ein-/Ausgänge `VALUE`, `DEFAULT_VALUE` und `VALUEO` verwenden den generischen Datentyp `ANY_ELEMENTARY`. Dies erlaubt die Speicherung verschiedenster elementarer Datentypen (z.B. Zahlen, Boolesche Werte, Strings) mit demselben Funktionsblock.
-*   **Persistenz**: Die Daten werden in einer textbasierten INI-Datei gespeichert, die auch außerhalb von FORTE manuell bearbeitet werden kann.
+*   **Persistenz**: Die Daten werden in textbasierten INI-Dateien gespeichert (`settings.ini` für beschreibbare Werte, `settingsReadOnly.ini` für schreibgeschützte Werkseinstellungen).
+*   **Schreibschutz & Werkseinstellungen**: Schlüssel in `settingsReadOnly.ini` überschreiben Werte in `settings.ini` und lehnen Schreibversuche (`SET`) ab (`STATUS = "Key is read-only"`). Für Details siehe [Schreibgeschützte Einstellungen (settingsReadOnly.ini)](./settingsReadOnly.md).
 *   **Fehlerbehandlung**: Der `STATUS`-Ausgang bietet eine textuelle Rückmeldung über Erfolg oder Misserfolg der Operation, was das Debuggen erleichtert.
 *   **Package**: Der Block ist im Package `eclipse4diac::storage` enthalten.
 

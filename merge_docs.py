@@ -320,10 +320,11 @@ def shift_headings(markdown_text, shift, page_id):
                     attached_id = True
                     
                 if shift > 0:
-                    new_hashes = '#' * (len(hashes) + shift)
+                    new_hashes = '#' * min(6, len(hashes) + shift)
                     line = f"{new_hashes} {title}{id_suffix}"
                 else:
-                    line = f"{hashes} {title}{id_suffix}"
+                    new_hashes = '#' * min(6, len(hashes))
+                    line = f"{new_hashes} {title}{id_suffix}"
                     
         new_lines.append(line)
         
@@ -346,7 +347,7 @@ def process_nav(items, path_to_id, docs_dir, output_file, depth=0):
             
             if not has_index:
                 # If there's no index page, output a heading for the section
-                header_level = depth + 1
+                header_level = min(6, depth + 1)
                 hashes = '#' * header_level
                 section_id = clean_id(item.title)
                 output_file.write(f"\n\n{hashes} {item.title} {{#{section_id}}}\n\n")

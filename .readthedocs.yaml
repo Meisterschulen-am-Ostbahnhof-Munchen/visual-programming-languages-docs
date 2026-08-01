@@ -23,5 +23,7 @@ mkdocs:
   configuration: mkdocs.yml
 
 python:
-   install:
-   - requirements: docs/requirements.txt
+  install:
+    - method: uv
+      command: pip
+      requirements: docs/requirements.txt

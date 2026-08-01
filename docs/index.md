@@ -39,15 +39,10 @@ Willkommen in der Welt der grafischen Programmierung! Diese Dokumentation bietet
 
 Haben Sie sich jemals gefragt, wie man Programme visuell erstellt? Hier finden Sie Ressourcen für Anfänger und Fortgeschrittene – von den Grundlagen in **Blockly** oder **Scratch** bis hin zur professionellen Anwendung in der Industrie.
 
-:::{grid} 2
-:gutter: 3
-
-**Warum visuelle Programmierung?**
-Abstraktion komplexer Logik in intuitive grafische Bausteine.
-
-**Fokus IEC 61499**
-Der Standard für verteilte, ereignisorientierte Steuerungssysteme.
-:::
+- **Warum visuelle Programmierung?**  
+  Abstraktion komplexer Logik in intuitive grafische Bausteine.
+- **Fokus IEC 61499**  
+  Der Standard für verteilte, ereignisorientierte Steuerungssysteme.
 
 ---
 
@@ -64,24 +59,22 @@ Die **IEC 61499** ist eine internationale Norm für die Echtzeit-Verarbeitung in
 
 ## 🎭 Ein wenig Inspiration
 
-:::{admonition} Die IEC 61499 – Ein Gedicht im Stile Goethes
-:class: note, dropdown
+??? note "Die IEC 61499 – Ein Gedicht im Stile Goethes"
 
-Die IEC 61499,  
-ein System moderner Prägung.  
-Wie ein Uhrwerk, stets in Line,  
-gestaltet es die Automatisierung.  
+    Die IEC 61499,  
+    ein System moderner Prägung.  
+    Wie ein Uhrwerk, stets in Line,  
+    gestaltet es die Automatisierung.  
 
-In Schichten aufgebaut,  
-wie ein Turm aus Bauklotzsteinen.  
-Jeder Baustein gut durchdacht,  
-um Funktionen zu vereinen.  
+    In Schichten aufgebaut,  
+    wie ein Turm aus Bauklotzsteinen.  
+    Jeder Baustein gut durchdacht,  
+    um Funktionen zu vereinen.  
 
-Wie ein Gedanke, der durch den Kopf geht,  
-so fließt das Programm durch die Schichten.  
-Dynamisch, flexibel, stets bereit,  
-die Systeme zu steuern und zu richten.
-:::
+    Wie ein Gedanke, der durch den Kopf geht,  
+    so fließt das Programm durch die Schichten.  
+    Dynamisch, flexibel, stets bereit,  
+    die Systeme zu steuern und zu richten.
 
 ---
 

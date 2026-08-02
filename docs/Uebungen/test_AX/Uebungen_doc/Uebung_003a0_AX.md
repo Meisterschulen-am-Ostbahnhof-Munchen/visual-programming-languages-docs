@@ -1,14 +1,10 @@
 # Uebung_003a0_AX: DigitalInput_I1/_I2 auf DigitalOutput_Q1/_I2 - mit untyped Subapp
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003a0_AX`. Im Gegensatz zur Verwendung von Typen (wie in `Uebung_003a_AX`) wird hier gezeigt, wie man Logik visuell gruppieren kann, ohne separate Typ-Definitionen anzulegen. Dies geschieht durch sogenannte "Untyped SubApps".
 
 ----
-
 
 ## Ziel der Übung
 
@@ -24,8 +20,6 @@ Das Hauptziel dieser Übung ist es, Möglichkeiten zur rein visuellen Strukturie
 
 Anders als bei typisierten SubApps, die auf einer externen Definition basieren, existiert die Logik dieser Container nur innerhalb dieser spezifischen Instanz.
 
-
-
 1.  **Container `SubApp`**:
     *   Beinhaltet die Logik für Kanal 2.
     *   Intern: [cite_start]`DigitalInput_I2` verbunden mit `DigitalOutput_Q2`[cite: 1].
@@ -37,6 +31,7 @@ Anders als bei typisierten SubApps, die auf einer externen Definition basieren, 
 ### Funktionsbausteine (FBs)
 
 Innerhalb der Container werden die bekannten Bausteine verwendet:
+
   * **`logiBUS_IXA`**: Zum Einlesen der Signale.
   * **`logiBUS_QXA`**: Zum Ausgeben der Signale.
 
@@ -74,6 +69,7 @@ Die Logik ist identisch zur parallelen Steuerung, jedoch ist die Ansicht hierarc
 
 Der funktionale Ablauf:
 Die Kapselung hat keinen Einfluss auf die Laufzeit-Ausführung. Die Bausteine verhalten sich exakt so, als wären sie alle auf der obersten Ebene platziert.
+
 1.  `SubApp_1` verarbeitet das Signal von `I1` zu `Q1`.
 2.  `SubApp` verarbeitet das Signal von `I2` zu `Q2`.
 

@@ -1,8 +1,5 @@
 # Uebung_221_ADI: Standard IEC 61131-3 ADI_FB_CTUD (Adapter Version, Vorwärts-/Rückwärtszähler, DINT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_221_ADI_network](./Uebung_221_ADI_network.svg)
 
 * * * * * * * * * *

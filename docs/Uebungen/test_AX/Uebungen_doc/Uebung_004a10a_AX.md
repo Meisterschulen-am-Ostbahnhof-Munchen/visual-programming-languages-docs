@@ -1,8 +1,5 @@
 # Uebung_004a10a_AX: Toggle Flip-Flop mit IE mit BUTTON_SINGLE_CLICK und INIT auf FALSE
 
-
-
-
 ![Uebung_004a10a_AX_network](./Uebung_004a10a_AX_network.svg)
 
 * * * * * * * * * *

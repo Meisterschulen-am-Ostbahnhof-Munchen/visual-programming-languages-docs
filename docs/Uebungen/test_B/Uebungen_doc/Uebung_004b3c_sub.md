@@ -1,6 +1,5 @@
 # Uebung_004b3c_sub: Sub-Applikation für ein verriegelbares Toggle-Flip-Flop mit AE2-Adapter-Schnittstelle
 
-
 ![Uebung_004b3c_sub_network](./Uebung_004b3c_sub_network.svg)
 
 *Bild der Übung nicht vorhanden*
@@ -75,6 +74,7 @@ Die Sub-Applikation realisiert eine **verriegelbare Toggle-Funktion** mit folgen
 3. Nach jeder Zustandsänderung gibt das `E_SR` ein Ereignis an `EO` (Ausgang der Sub-App) und aktualisiert `Q`.
 4. **Verriegelung über den AE2-Adapter**:  
    Parallel zu den direkten Verbindungen werden die Adapter-Konverter angesteuert:
+
    - Jedes Ereignis von `E_SWITCH.EO0` löst gleichzeitig `AE2_EVENT_TO_E` und `AE2_E_TO_EVENT` aus (über die dargestellten Ereignisverbindungen).
    - Die beiden Konverter sind kreuzweise miteinander verbunden, sodass ein Ereignis von einem zum anderen weitergeleitet wird (siehe EventConnections im Netzwerk).  
    - Dies ermöglicht es, dass ein externer Adapter (z.B. ein weiteres System) das Toggle-Verhalten beeinflussen oder überwachen kann.  

@@ -1,6 +1,5 @@
 # Uebung_203: Interlock: ILOCK_SWITCH (Umschalt-Priorität Last-Wins)
 
-
 ![Uebung_203_network](./Uebung_203_network.svg)
 
 > **Interlock: ILOCK_SWITCH (Umschalt-Priorität Last-Wins)**

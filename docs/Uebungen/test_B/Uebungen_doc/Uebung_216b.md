@@ -1,6 +1,5 @@
 # Uebung_216b: Standard IEC 61131-3 FB_CTD_DINT (Rückwärtszähler, DINT) mit Terminal-Ausgabe (PHYS_LREAL)
 
-
 ![Uebung_216b_network](./Uebung_216b_network.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Die Steuerung erfolgt rein ereignisgesteuert über die **IND**-Ereignisse der Ei
 
 3. **Ausgang Q1 und Terminalanzeige:**  
    Nach Abschluss der Zählerverarbeitung wird das `CNF`-Ereignis ausgelöst. Dieses wird parallel an die `REQ`-Eingänge von `Output_Q1` und `Q_NumericValue_PHYS_LREAL` gesendet.  
+
    - Der Ausgangswert `FB_CTD_DINT.Q` (logisch, wenn Zählerstand ≤ 0) wird über die Datenverbindung an `Output_Q1.OUT` gelegt und somit am Hardware-Ausgang Q1 ausgegeben.  
    - Der aktuelle Zählerstand `FB_CTD_DINT.CV` (Typ `DINT`) wird an `Q_NumericValue_PHYS_LREAL.lrPhys` übergeben und als physikalischer `LREAL`-Wert auf dem Terminal dargestellt.
 

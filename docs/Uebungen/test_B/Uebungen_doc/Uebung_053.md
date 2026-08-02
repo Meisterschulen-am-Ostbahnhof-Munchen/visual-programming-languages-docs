@@ -1,14 +1,10 @@
 # Uebung_053: DigitalInput_I1-_I4 auf DigitalOutput_Q1-_Q4
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_053`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Kombination von Bits zu einem Byte. Dies ist eine hardwarenahe Form der Bündelu
 [cite_start]Die Subapplikation `Uebung_053.SUB` nutzt Konvertierungs-Bausteine für den Datentyp `BYTE`[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_053_network](./Uebung_053_network.svg)
 

@@ -1,14 +1,10 @@
 # Uebung_006d: SR-Flip-Flop mit 2x IE und Doppelklick.
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006d`. Hier wird eine asymmetrische Bedienlogik zum Schutz der Anlage implementiert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Kombination von komplexen Eingangsereignissen (Doppelklick) mit Speicherbaustein
 [cite_start]Die Subapplikation `Uebung_006d.SUB` realisiert eine Ein/Aus-Logik mit unterschiedlichen Hürden[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_006d_network](./Uebung_006d_network.svg)
 

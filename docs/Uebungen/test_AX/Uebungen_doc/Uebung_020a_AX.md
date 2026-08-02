@@ -1,14 +1,10 @@
 # Uebung_020a_AX: DigitalInput_I1 auf DigitalOutput_Q1 via AX_RS (Puffer)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020a_AX`, bei der ein digitaler Eingang über eine RS-Speicherlogik auf einen digitalen Ausgang weitergeleitet wird.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Das Hauptziel dieser Übung ist es, die Kombination von Ereignis-Weichen (`AX_SW
 [cite_start]Die Übung besteht aus einer Subapplikation (`Uebung_020a_AX.SUB`), die den Zustand eines Eingangs über eine Weiche in Set/Reset-Befehle für einen Speicher wandelt[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_020a_AX_network](./Uebung_020a_AX_network.svg)
 
@@ -52,6 +45,7 @@ Die Logik wird durch die Verknüpfung der Ereignis-Ausgänge der Weiche mit den 
 [cite_start][cite: 1]
 
 Der Ablauf ist wie folgt:
+
 1.  **Drücken von I1**: Der `IXA`-Baustein sendet ein Event und den Wert `TRUE`. Der `AX_SWITCH` leitet das Event an `EO1` -> `AX_RS` wird gesetzt (`S`) -> `Q1` geht an.
 2.  **Loslassen von I1**: Der `IXA`-Baustein sendet ein Event und den Wert `FALSE`. Der `AX_SWITCH` leitet das Event an `EO0` -> `AX_RS` wird rückgesetzt (`R`) -> `Q1` geht aus.
 

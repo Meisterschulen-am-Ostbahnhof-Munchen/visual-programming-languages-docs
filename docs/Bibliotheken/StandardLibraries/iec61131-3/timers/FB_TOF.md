@@ -7,7 +7,6 @@
 
 ---- 
 
-
 ![image](https://github.com/user-attachments/assets/e60568d1-aba5-4e35-9488-8a79d1cb877b)
 
 * * * * * * * * * *
@@ -68,9 +67,6 @@ Der FB_TOF-Baustein kann in verschiedenen industriellen Steuerungsanwendungen ei
 - **Ventilsteuerung**: Der Baustein kann verwendet werden, um ein Ventil nach dem Schließen noch für eine bestimmte Zeit offen zu halten, um z.B. Druck abzulassen.
 
 ##
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

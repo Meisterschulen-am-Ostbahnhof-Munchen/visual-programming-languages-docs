@@ -1,14 +1,10 @@
 # Uebung_042: Scaling Function Block Testing
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_042`. Hier wird die mathematische Umrechnung von Wertebereichen demonstriert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verwendung des Bausteins `SCALE`. In der Automatisierungstechnik müssen Rohwert
 [cite_start]In `Uebung_042.SUB` wird ein Test-Szenario für den Skalierungs-Baustein aufgebaut[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_042_network](./Uebung_042_network.svg)
 

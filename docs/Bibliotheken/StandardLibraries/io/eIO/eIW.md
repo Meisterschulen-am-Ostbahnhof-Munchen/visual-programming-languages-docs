@@ -1,7 +1,5 @@
 # eIW
 
-
-
 <img width="1434" height="296" alt="image" src="https://github.com/user-attachments/assets/4b045e96-1325-4fca-9291-53d4d39a6161" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der eIW-Funktionsblock arbeitet als Vermittler zwischen der Steuerungsanwendung 
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Block ist betriebsbereit, aber nicht konfiguriert
 2. **Initialisiert**: Hardware-Parameter sind konfiguriert, Block ist betriebsbereit
 3. **Abfrage aktiv**: Service-Anfrage wird verarbeitet
@@ -60,6 +59,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingabeblöcken bietet eIW:
+
 - Erweiterte 16-Bit-Datenverarbeitung
 - Detaillierte Statusrückmeldungen
 - Flexible Konfigurationsmöglichkeiten

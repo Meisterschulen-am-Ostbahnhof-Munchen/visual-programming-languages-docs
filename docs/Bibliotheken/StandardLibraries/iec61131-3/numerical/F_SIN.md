@@ -1,7 +1,5 @@
 # F_SIN
 
-
-
 ![F_SIN](https://user-images.githubusercontent.com/116869307/214145144-c567d2d6-40d6-4df3-a9ef-5e336b6ff32f.png)
 
 * * * * * * * * * *
@@ -39,6 +37,7 @@ Bei Empfang eines REQ-Ereignisses berechnet der Funktionsblock den Sinus des an 
 
 ## Zustandsübergänge
 Der Funktionsblock verfügt über zwei Hauptzustände:
+
 1. **Wartezustand**: Wartet auf REQ-Ereignis
 2. **Berechnungszustand**: Verarbeitet die Sinusberechnung und generiert CNF-Ereignis
 

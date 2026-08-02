@@ -1,8 +1,5 @@
 # Uebung_039_sub_NumbAnzeig_AS: Spiegelabfolge V2 mit Schrittkette SUB Num
 
-
-
-
 ![Uebung_039_sub_NumbAnzeig_AS_network](./Uebung_039_sub_NumbAnzeig_AS_network.svg)
 
 * * * * * * * * * *

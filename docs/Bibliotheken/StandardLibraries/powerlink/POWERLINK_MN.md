@@ -1,7 +1,5 @@
 # POWERLINK_MN
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

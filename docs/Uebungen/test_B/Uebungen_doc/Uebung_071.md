@@ -1,14 +1,10 @@
 # Uebung_071: WBSD auf UT ausgeben, Q1 Schalten wenn Speed &gt;0
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_071`. Hier wird die Traktor-Geschwindigkeit nicht nur angezeigt, sondern direkt zur Steuerung eines Aktors verwendet.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,7 +18,6 @@ Implementierung einer Schwellwert-Logik basierend auf TECU-Daten. Der Ausgang so
 
 ### Funktionsbausteine (FBs)
 
-
 ![Uebung_071_network](./Uebung_071_network.svg)
 
   * **`I_WBSD`**: Liefert die aktuelle Geschwindigkeit.
@@ -34,6 +29,7 @@ Implementierung einer Schwellwert-Logik basierend auf TECU-Daten. Der Ausgang so
 ## Funktionsweise
 
 Die Logik reagiert auf jede Geschwindigkeits-Nachricht der TECU:
+
 1.  `I_WBSD.IND` triggert den Vergleich `F_GT`.
 2.  Ist die Geschwindigkeit > 0, liefert `F_GT.OUT` ein `TRUE`.
 3.  Das Bestätigungs-Event `CNF` fordert den Ausgang `Q1` zur Aktualisierung auf.

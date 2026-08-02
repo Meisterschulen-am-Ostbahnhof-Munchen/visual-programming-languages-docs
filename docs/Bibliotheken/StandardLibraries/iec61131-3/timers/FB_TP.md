@@ -1,7 +1,5 @@
 # FB_TP
 
-
-
 <img width="1339" height="243" alt="image" src="https://github.com/user-attachments/assets/81d9eac8-28d0-415d-9678-95305521054c" />
 
 * * * * * * * * * *
@@ -58,11 +56,6 @@ Der FB_TP funktioniert als monostabiler Multivibrator (One-Shot). Bei einem posi
 - **FB_TON**: Einschaltverzögerung - Q wird erst nach Ablauf von PT aktiv
 - **FB_TOF**: Ausschaltverzögerung - Q bleibt nach IN-Rücksetzung noch für PT aktiv
 - **FB_TP**: Impulsgeber - Erzeugt einen festen Impuls unabhängig von IN
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

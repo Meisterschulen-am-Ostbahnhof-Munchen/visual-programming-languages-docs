@@ -1,7 +1,5 @@
 # Wago459
 
-
-
 <img width="1338" height="318" alt="image" src="https://github.com/user-attachments/assets/a327cecb-2330-4f40-9961-8c1c1b151097" />
 
 * * * * * * * * * *
@@ -47,6 +45,7 @@ Der Wago459-Funktionsblock dient als Schnittstelle zwischen der 4diac-Steuerung 
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über folgende Betriebszustände:
+
 - Inaktiv: Wartet auf MAP-Ereignis mit aktiviertem QI
 - Konfiguration: Verarbeitet Pin-Zuordnungen nach MAP-Ereignis
 - Betrieb: Überwacht kontinuierlich den Modulstatus und sendet IND-Ereignisse
@@ -60,6 +59,7 @@ Der Funktionsblock verfügt über folgende Betriebszustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen IO-Funktionsblöcken bietet Wago459:
+
 - Spezifische Optimierung für Wago-750-459 Hardware
 - Vorkonfigurierte Adapter für Wago-Bussysteme
 - Direkte Unterstützung für alle vier Kanäle des Moduls

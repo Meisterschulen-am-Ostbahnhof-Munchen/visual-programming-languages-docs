@@ -1,7 +1,5 @@
 # F_UDINT_TO_REAL
 
-
-
 <img width="1450" height="216" alt="F_UDINT_TO_REAL" src="https://github.com/user-attachments/assets/8be282c0-424f-4a10-8a26-e020cf9c2cc9" />
 
 * * * * * * * * * *
@@ -43,9 +41,6 @@ Der Funktionsblock besitzt keine internen Zustände. Die Verarbeitung erfolgt un
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsbausteinen ist `F_UDINT_TO_REAL` spezialisiert und optimiert für die spezifische Konvertierung von `UDINT` zu `REAL`.
 - Ähnliche Bausteine könnten zusätzliche Funktionen wie Bereichsprüfungen oder Skalierungen bieten, was hier nicht der Fall ist.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

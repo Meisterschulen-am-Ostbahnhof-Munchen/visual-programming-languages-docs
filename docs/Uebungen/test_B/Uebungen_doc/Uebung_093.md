@@ -1,14 +1,10 @@
 # Uebung_093: Beispiel für E_TABLE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_093`. Hier wird ein komplexes Zeitmuster für Ereignisse definiert.
 
 ## 🎧 Podcast
-
 
 ![Uebung_093_network](./Uebung_093_network.svg)
 
@@ -16,7 +12,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_093`. Hier wird ein kompl
 * [Infineon TLE9351VSJ der unsichtbare Auto-Bodyguard](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-TLE9351VSJ-der-unsichtbare-Auto-Bodyguard-e3b8nhl)
 
 ----
-
 
 ## Ziel der Übung
 
@@ -31,6 +26,7 @@ Verwendung des Bausteins `E_TABLE`. Im Gegensatz zum gleichmäßigen Takt des `E
 ### Funktionsweise
 
 Ein Klick auf **I1** startet die Tabelle:
+
 1.  Ereignis 1: Sofort (`0s`).
 2.  Ereignis 2: Nach weiteren 2 Sekunden.
 3.  Ereignis 3: Nach weiteren 3 Sekunden.

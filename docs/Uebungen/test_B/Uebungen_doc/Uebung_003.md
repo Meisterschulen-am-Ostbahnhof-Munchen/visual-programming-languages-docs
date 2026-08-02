@@ -1,14 +1,10 @@
 # Uebung_003: DigitalInput_I1/_I2 auf DigitalOutput_Q1/_I2 - flach
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003`. In dieser Übung werden zwei voneinander unabhängige Signalpfade realisiert, wobei jeder digitale Eingang direkt einen zugeordneten digitalen Ausgang steuert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,7 +19,6 @@ Das Hauptziel dieser Übung ist es, die parallele Verarbeitung von Signalen in d
 ### Funktionsbausteine (FBs)
 
 Es werden zwei Paare von Ein- und Ausgangsbausteinen verwendet:
-
 
 ![Uebung_003_network](./Uebung_003_network.svg)
 
@@ -50,6 +45,7 @@ Die Unabhängigkeit der beiden Kanäle wird durch die getrennten Ereignis- und D
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  Ändert sich der Zustand von `I1`, feuert der erste Baustein ein `IND`-Event, welches `Q1` zur Aktualisierung auffordert.
 2.  Ändert sich der Zustand von `I2`, feuert der zweite Baustein ein `IND`-Event, welches `Q2` zur Aktualisierung auffordert.
 

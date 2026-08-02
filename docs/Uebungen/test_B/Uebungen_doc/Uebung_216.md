@@ -1,6 +1,5 @@
 # Uebung_216: Standard IEC 61131-3 FB_CTD_DINT (Rückwärtszähler, DINT) mit Terminal-Ausgabe
 
-
 ![Uebung_216_network](./Uebung_216_network.svg)
 
 * * * * * * * * * *
@@ -9,6 +8,7 @@
 
 Diese Übung demonstriert die Implementierung eines **Rückwärtszählers (CTD)** nach IEC 61131-3 mit ganzzahligem Datentyp `DINT` (Double Integer) und einer **Terminal-Ausgabe** des aktuellen Zählerstandes.  
 Der Zähler wird durch zwei digitale Eingänge gesteuert:  
+
 - **Eingang I1** – dekrementiert den Zähler bei positiver Flanke.  
 - **Eingang I2** – lädt den vorgegebenen Startwert (PV = 10) in den Zähler.  
 
@@ -69,6 +69,7 @@ Ein digitaler Ausgang **Q1** wird aktiviert, sobald der Zählerstand den Wert 0 
 ## Zusammenfassung
 
 Die Übung „Uebung_216“ vermittelt den Einsatz eines IEC 61131-3 Rückwärtszählers (`FB_CTD_DINT`) in Verbindung mit einer Terminalausgabe. Sie zeigt:
+
 - Die Steuerung eines Zählers über zwei digitale Eingänge (Dekrement/Laden).  
 - Die Verwendung eines Ausgangsbausteins zur Signalisierung des Erreichens des Zählendes.  
 - Die Umwandlung von Datentypen (`DINT` → `UDINT`) und deren Grenzen (keine negativen Werte).  

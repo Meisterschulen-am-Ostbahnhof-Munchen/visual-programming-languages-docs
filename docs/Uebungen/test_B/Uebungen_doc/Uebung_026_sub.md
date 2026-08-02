@@ -1,8 +1,5 @@
 # Uebung_026_sub: Spiegelabfolge (6)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt den Sub-App-Typ `Uebung_026_sub`. Dieser Baustein dient als standardisiertes Interface für Aktoren innerhalb einer komplexen Schrittkette.
@@ -21,7 +18,6 @@ Kapselung der Ausgangs-Logik. Der Baustein trennt die Ablauf-Logik (wann muss wa
 
 ### Interne Funktionsbausteine (FBs)
 
-
 ![Uebung_026_sub_network](./Uebung_026_sub_network.svg)
 
   * **`E_SR`**: Speichert, ob der Aktor gerade aktiv sein soll.
@@ -33,13 +29,12 @@ Kapselung der Ausgangs-Logik. Der Baustein trennt die Ablauf-Logik (wann muss wa
 ## Schnittstellen
 
 [cite_start]Der Baustein bietet eine klare Event-Schnittstelle[cite: 1]:
+
 *   **`SET`**: Schaltet den Aktor ein.
 *   **`RESET`**: Schaltet den Aktor aus.
 *   **`EO1`**: Meldet den erfolgreichen Vollzug des Einschaltbefehls zurück (Quittierung).
 
 In der Hauptanwendung ermöglicht dieser Typ eine sehr übersichtliche Verschaltung der Phasenübergänge, da die Details der Speicherverwaltung und Hardware-Adressierung im Inneren verborgen bleiben.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

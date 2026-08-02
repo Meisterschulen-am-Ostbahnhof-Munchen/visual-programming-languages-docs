@@ -1,7 +1,5 @@
 # FB_CTUD
 
-
-
 <img width="1337" height="340" alt="FB_CTUD" src="https://github.com/user-attachments/assets/c27b281b-91cd-4e44-8224-7fc42017d1a2" />
 
 * * * * * * * * * *
@@ -35,6 +33,7 @@ Der FB_CTUD verfügt über keine Adapter.
 
 ## Funktionsweise
 Der Funktionsblock FB_CTUD führt folgende Operationen aus:
+
 1. **Reset (R)**: Wenn R aktiviert ist, wird der Zählerwert (CV) auf 0 gesetzt.
 2. **Laden (LD)**: Wenn LD aktiviert ist, wird der vordefinierte Wert (PV) in den Zähler (CV) geladen.
 3. **Zählen (CU/CD)**:

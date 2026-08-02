@@ -1,6 +1,5 @@
 # Uebung_211b: Standard IEC 61131-3 FB_CTU_DINT (Vorwärtszähler, DINT) mit Terminal-Ausgabe (PHYS_LREAL)
 
-
 ![Uebung_211b_network](./Uebung_211b_network.svg)
 
 * * * * * * * * * *
@@ -63,6 +62,7 @@ Im SubApp-Netzwerk werden fünf Instanzen von vordefinierten Bausteintypen verwe
 
 2. **Zählerausführung**  
    Nachdem der Zähler das Ereignis verarbeitet hat (Ausführung der Funktion), sendet er über `CNF` zwei gleichzeitige Ereignisse:
+
    - an `Output_Q1.REQ` (Aktualisierung des digitalen Ausgangs)
    - an `Q_NumericValue_PHYS_LREAL.REQ` (Aktualisierung der Terminal-Anzeige)
 

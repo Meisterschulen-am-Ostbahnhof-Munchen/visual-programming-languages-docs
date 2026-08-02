@@ -1,14 +1,10 @@
 # Uebung_020h_AX: DigitalInput_I1 auf DigitalOutput_Q1; AX_PULSE; Impulsformend
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020h_AX`. Hier wird der Baustein `AX_PULSE` verwendet, der im Gegensatz zum `AX_TP` rein ereignisbasiert arbeitet.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Das Ziel ist es, ein einzelnes, kurzes Ereignis (z.B. einen Mausklick oder Taste
 [cite_start]Die Subapplikation `Uebung_020h_AX.SUB` kombiniert einen Event-Eingang mit einem Adapter-Puls-Baustein[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_020h_AX_network](./Uebung_020h_AX_network.svg)
 

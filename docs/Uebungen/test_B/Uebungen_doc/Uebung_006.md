@@ -1,8 +1,5 @@
 # Uebung_006: SR-Flip-Flop mit 2x IE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006`. Hier wird ein klassischer Selbsthaltespeicher mit getrennten Tastern für Ein und Aus implementiert.
@@ -22,7 +19,6 @@ Realisierung einer Schaltung mit getrennter Setz- und Rücksetz-Logik unter Verw
 [cite_start]Die Subapplikation `Uebung_006.SUB` nutzt zwei ereignisbasierte Eingänge und einen SR-Speicher[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_006_network](./Uebung_006_network.svg)
 

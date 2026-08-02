@@ -1,8 +1,5 @@
 # Uebung_215b_AR: Standard IEC 61131-3 AI_FB_CTD (Adapter Version, INT) mit Terminal-Ausgabe (PHYS)
 
-
-
-
 ![Uebung_215b_AR_network](./Uebung_215b_AR_network.svg)
 
 * * * * * * * * * *
@@ -11,6 +8,7 @@
 Diese Übung implementiert einen Abwärtszähler (CTD) nach IEC 61131-3 als Adaptervariante. Der Zähler wird über zwei digitale Eingänge (Count-Down und Load) gesteuert und gibt einen digitalen Ausgang (Q) sowie den aktuellen Zählerwert (CV) aus. Der Zählerwert wird über einen Konverter in eine Textdarstellung umgewandelt und auf einem Terminal (PHYS) ausgegeben. Der Preset-Wert (PV) wird fest auf 10 gesetzt und dem Zähler über einen weiteren Adapter zugeführt.
 
 Lernziele:
+
 - Verständnis des Funktionsbausteins AI_FB_CTD (Abwärtszähler als Adapter)
 - Umgang mit Adapter-Schnittstellen zur Daten- und Ereignisübertragung
 - Datentypkonvertierung (INT nach Adapter, CV nach Array)

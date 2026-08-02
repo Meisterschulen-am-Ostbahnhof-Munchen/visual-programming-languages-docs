@@ -1,9 +1,5 @@
 # net
 
-
-
-
-
 ## 🎧 Podcast
 
 * [Industrielle Netzwerke: Das Nervensystem der modernen Fabrik – OT, IT & die Zukunft der Automatisierung](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Industrielle-Netzwerke-Das-Nervensystem-der-modernen-Fabrik--OT--IT--die-Zukunft-der-Automatisierung-e375g9g)

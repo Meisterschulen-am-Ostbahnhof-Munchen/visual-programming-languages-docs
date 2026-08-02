@@ -1,6 +1,5 @@
 # Uebung_224b: Standard IEC 61131-3 FB_CTUD_ULINT (Vor-/Rückwärtszähler, ULINT) mit Terminal-Ausgabe (PHYS_LREAL)
 
-
 ![Uebung_224b_network](./Uebung_224b_network.svg)
 
 * * * * * * * * * *

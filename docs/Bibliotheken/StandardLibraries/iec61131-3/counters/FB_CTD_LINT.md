@@ -1,7 +1,5 @@
 # FB_CTD_LINT
 
-
-
 <img width="1399" height="282" alt="FB_CTD_LINT" src="https://github.com/user-attachments/assets/49df9c31-e52a-4ab3-9ab5-c17c58f2ee98" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock arbeitet nach folgender Logik:
+
 1. Wenn `LD` aktiv ist, wird der vordefinierte Wert (`PV`) in den Zähler (`CV`) geladen.
 2. Wenn `CD` aktiv ist und der Zählerwert (`CV`) nicht den minimalen 64-Bit-Wert erreicht hat, wird `CV` um 1 verringert.
 3. Der Ausgang `Q` wird auf `TRUE` gesetzt, wenn `CV` kleiner oder gleich Null ist.

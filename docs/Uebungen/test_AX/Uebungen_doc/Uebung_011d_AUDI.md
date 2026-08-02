@@ -1,8 +1,5 @@
 # Uebung_011d_AUDI: Numeric Value Input I1 Durchschleifen auf N3 (Offset/Scale Effekt)
 
-
-
-
 ![Uebung_011d_AUDI_network](./Uebung_011d_AUDI_network.svg)
 
 * * * * * * * * * *
@@ -10,6 +7,7 @@
 
 Diese Übung demonstriert das Durchschleifen eines numerischen Eingangswerts (I1) auf einen Ausgang (N3) unter Verwendung eines Offset-/Scale-Effekts. Der eingehende Wert wird über einen Adapter gewandelt und an einen Ausgangs-Funktionsbaustein weitergegeben.  
 Beispiel:  
+
 - Eingabe von 100000 auf I1 → N3 zeigt 0,00  
 - Eingabe von 50000 auf I1 → N3 zeigt -500,00  
 

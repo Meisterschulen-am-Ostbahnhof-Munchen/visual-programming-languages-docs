@@ -1,8 +1,5 @@
 # Uebung_008_AE: Blinker mit E_CYCLE, E_SWITCH und E_SR
 
-
-
-
 ![Uebung_008_AE_network](./Uebung_008_AE_network.svg)
 
 * * * * * * * * * *

@@ -1,14 +1,10 @@
 # Uebung_004a9_AX: mit E_SPLIT_3
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a9_AX`. Hier wird das Konzept des Event-Splittings auf drei Ziele erweitert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Demonstration der Skalierbarkeit von Event-Verteilern. Mit `E_SPLIT_3` können d
 [cite_start]Die Subapplikation `Uebung_004a9_AX.SUB` verteilt das Signal eines Tasters auf drei separate Toggle-Flip-Flops und somit auf drei Ausgänge[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_004a9_AX_network](./Uebung_004a9_AX_network.svg)
 
@@ -48,6 +41,7 @@ Demonstration der Skalierbarkeit von Event-Verteilern. Mit `E_SPLIT_3` können d
 [cite_start][cite: 1]
 
 Ein einzelner Klick auf den Taster löst eine Kaskade aus:
+
 1.  `EO1` feuert -> `Q1` toggelt.
 2.  `EO2` feuert -> `Q2` toggelt.
 3.  `EO3` feuert -> `Q3` toggelt.

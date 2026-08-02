@@ -1,14 +1,10 @@
 # Uebung_020i: DigitalInput_I1 auf DigitalOutput_Q1; E_PULSE; Impulsformend; Teach-In
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020i`. Dies ist eine sehr praxisnahe Übung, bei der eine Zeitdauer nicht durch Zahlenwerte, sondern durch "Vormachen" (Teach-In) gelernt wird.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Programmierung einer variablen Impulsdauer unter Verwendung des `E_STOPWATCH` Ba
 [cite_start]Die Subapplikation `Uebung_020i.SUB` nutzt zwei Taster: Einen zum Ausführen und einen zum Lernen der Zeit[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_020i_network](./Uebung_020i_network.svg)
 

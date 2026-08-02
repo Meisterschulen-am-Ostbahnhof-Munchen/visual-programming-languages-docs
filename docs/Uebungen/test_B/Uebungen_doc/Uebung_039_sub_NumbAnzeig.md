@@ -2,10 +2,6 @@ Hier ist die generierte Dokumentation basierend auf dem bereitgestellten XML-Cod
 
 # Uebung_039_sub_NumbAnzeig: Spiegelabfolge V2 mit Schrittkette SUB Num
 
-
-
-
-
 ![Uebung_039_sub_NumbAnzeig_network](./Uebung_039_sub_NumbAnzeig_network.svg)
 
 * * * * * * * * * *
@@ -49,6 +45,7 @@ Der Ablauf innerhalb dieses Sub-Bausteins ist streng linear und ereignisgesteuer
 
 3.  **Anzeige-Update**:
     Sobald die Konvertierung bestätigt ist (Event `CNF` von `F_SINT_TO_UINT`), wird der Baustein `Q_NumericValue` aktiviert.
+
     *   Er übernimmt den konvertierten Wert am Eingang `u32NewValue`.
     *   Der Parameter `u16ObjId` ist fest auf `OutputNumber_N1` eingestellt, was bedeutet, dass genau dieses Feld auf der Benutzeroberfläche aktualisiert wird.
 
@@ -58,8 +55,6 @@ Der Ablauf innerhalb dieses Sub-Bausteins ist streng linear und ereignisgesteuer
 
 ## Zusammenfassung
 Die Übung **Uebung_039_sub_NumbAnzeig** demonstriert die Kapselung von Logik in einer Sub-Applikation. Sie dient als Schnittstelle zwischen der Steuerungslogik (Schrittkette) und der Visualisierung (ISOBUS-Terminal), indem sie Datentypen anpasst und die Kommunikation mit dem Ausgabeobjekt `OutputNumber_N1` übernimmt. Dies fördert die Wiederverwendbarkeit und Übersichtlichkeit im Hauptprogramm.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

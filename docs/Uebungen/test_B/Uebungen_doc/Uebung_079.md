@@ -1,14 +1,10 @@
 # Uebung_079: alle TECU FBs
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_079`. Dies ist eine Sammel-Übung, die alle verfügbaren Bausteine zur Erfassung von Traktor-Informationen vorstellt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -19,7 +15,6 @@ Erlernen der gesamten Palette an TECU-Schnittstellenbausteinen. Ein ISOBUS-Trakt
 ## Übersicht der Bausteine (FBs)
 
 [cite_start]In `Uebung_079.SUB` sind alle relevanten TECU-Eingangsbausteine platziert[cite: 1]:
-
 
 ![Uebung_079_network](./Uebung_079_network.svg)
 

@@ -1,8 +1,5 @@
 # Uebung_012g_AR: Numeric Value Input PHYS und Speichern INI (AR Adapter, plain)
 
-
-
-
 ![Uebung_012g_AR_network](./Uebung_012g_AR_network.svg)
 
 * * * * * * * * * *

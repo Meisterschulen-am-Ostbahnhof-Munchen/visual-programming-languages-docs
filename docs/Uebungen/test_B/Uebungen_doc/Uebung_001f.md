@@ -1,6 +1,5 @@
 # Uebung_001f: DigitalInput_I1 negiert mit INIT auf DigitalOutput_Q1
 
-
 ![Uebung_001f_network](./Uebung_001f_network.svg)
 
 * * * * * * * * * *

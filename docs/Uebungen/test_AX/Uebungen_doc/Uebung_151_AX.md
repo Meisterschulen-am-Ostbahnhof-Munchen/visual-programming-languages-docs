@@ -1,14 +1,10 @@
 # Uebung_151_AX: Impulszähler &amp; DigitalInput_I1 auf DigitalOutput_Q1, mit Plug and Socket
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_151_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Berechnung einer zeitlichen Änderung (Differenzialquotient) aus Impulswerten.
 [cite_start]Die Subapplikation `Uebung_151_AX.SUB` erweitert den Impulszähler um mathematische Funktionen[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_151_AX_network](./Uebung_151_AX_network.svg)
 

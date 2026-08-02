@@ -1,14 +1,10 @@
 # Uebung_091: Beispiel für E_TRAIN
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_091`. Hier wird die automatische Erzeugung einer festen Anzahl von Ereignissen demonstriert.
 
 ## 🎧 Podcast
-
 
 ![Uebung_091_network](./Uebung_091_network.svg)
 
@@ -17,7 +13,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_091`. Hier wird die autom
 * [Smart Farming Vision 1991 Auernhammers Blaupausen](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Smart-Farming-Vision-1991-Auernhammers-Blaupausen-e3b09r2)
 
 ----
-
 
 ## Ziel der Übung
 

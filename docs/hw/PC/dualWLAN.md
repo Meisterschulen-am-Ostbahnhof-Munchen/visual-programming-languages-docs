@@ -1,7 +1,5 @@
 # dual WLAN
 
-
-
 ## ChatGPT
 
 alle Texte auf dieser Seite sind erstellt mit [https://chat.openai.com/chat](https://chat.openai.com/chat)

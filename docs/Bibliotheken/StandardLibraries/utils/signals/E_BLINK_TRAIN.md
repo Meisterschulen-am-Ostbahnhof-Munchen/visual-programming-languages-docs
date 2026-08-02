@@ -1,7 +1,5 @@
 # E_BLINK_TRAIN
 
-
-
 ![E_BLINK_TRAIN](https://github.com/user-attachments/assets/41c5817d-1229-455b-b5c9-e7ad4003e0c5)
 
 * * * * * * * * * *
@@ -51,9 +49,6 @@ Der Funktionsblock `E_BLINK_TRAIN` simuliert ein blinkendes Signal, das für bes
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **CODESYS BLINK-FB**: Behält den letzten Zustand bei Stopp bei, während `E_BLINK_TRAIN` immer auf `FALSE` zurückkehrt.
 - **Einfache Timer-FBs**: Bieten keine integrierte Begrenzung der Zyklenanzahl (`N`).
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

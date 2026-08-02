@@ -1,14 +1,10 @@
 # Uebung_004a3_AX: wie Uebung_004a2 aber ohne E_MERGE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a3_AX`. Diese Übung zeigt eine Vereinfachung gegenüber `Uebung_004a2_AX`: In IEC 61499 (und speziell in 4diac) können mehrere Ereignisquellen oft direkt auf denselben Ereigniseingang verbunden werden.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Das Ziel ist die Reduktion der visuellen Komplexität. Es wird demonstriert, das
 [cite_start]Die Subapplikation `Uebung_004a3_AX.SUB` verbindet zwei Event-Quellen direkt mit dem Takteingang des Flip-Flops[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_004a3_AX_network](./Uebung_004a3_AX_network.svg)
 

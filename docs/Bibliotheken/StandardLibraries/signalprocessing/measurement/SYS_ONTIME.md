@@ -1,7 +1,5 @@
 # SYS_ONTIME
 
-
-
 <img width="1095" height="143" alt="SYS_ONTIME" src="https://github.com/user-attachments/assets/154ba5c7-4a31-4dc3-8dbc-c6a731fdf46b" />
 
 * * * * * * * * * *
@@ -68,9 +66,6 @@ Der Baustein arbeitet mit einer industriellen Zeitbasis (0,6-Minuten-Takt) statt
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Service Interface Funktionsblöcken bietet SYS_ONTIME eine spezialisierte Funktionalität für die Übertragung von Betriebszeitdaten. Andere Blöcke könnten allgemeinere Daten oder andere spezifische Informationen übertragen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

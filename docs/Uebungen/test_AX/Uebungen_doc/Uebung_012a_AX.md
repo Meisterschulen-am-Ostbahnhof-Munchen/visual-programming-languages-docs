@@ -1,7 +1,5 @@
 # Uebung_012a_AX: Numeric Value Input und Speichern (Adapter Version)
 
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -17,11 +15,14 @@ Der Baustein selbst besitzt keine sichtbaren Ein‑/Ausgangsschnittstellen – d
 - **Typ**: `MyLib::sys::NVS_IN_AND_STORE_AUDI`
 - **Verwendete interne FBs**:  
   Nicht näher spezifiziert – der Baustein enthält eine gekapselte Implementierung zur Adapter‑basierten Eingabe und NVS-Speicherung.
+
 - **Parameter**:
   - `KEY` = `KEY_I1_STORE`  
     (Schlüssel, unter dem der Wert im NVS abgelegt wird; definiert in `Uebungen::const::NVS::NVS_Keys`)
+
   - `u16ObjId` = `InputNumber_I1`  
     (Identifikation des Eingabewerts; definiert in `Uebungen::const::UT::DefaultPool`)
+
 - **Funktionsweise**:  
   Der FB liest bei Aktivierung den aktuellen numerischen Wert von einem Adapter ein und speichert diesen persistent im NVS unter dem angegebenen `KEY`. Die Objekt‑ID `InputNumber_I1` referenziert die Bereitstellung des Werts durch die übergeordnete Umgebung (z. B. eine HMI‑Eingabe oder eine übergeordnete Steuerung).
 

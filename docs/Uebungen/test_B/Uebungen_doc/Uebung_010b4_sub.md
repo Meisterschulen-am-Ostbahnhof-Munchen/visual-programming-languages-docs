@@ -1,8 +1,6 @@
 # Uebung_010b4_sub: IX auf QX (generisch)
 
-
 ## 🎧 Podcast
-
 
 ![Uebung_010b4_sub_network](./Uebung_010b4_sub_network.svg)
 
@@ -12,8 +10,6 @@
 
 [cite_start]Dieser Sub-App-Typ dient der strukturierten Anbindung von ISOBUS-Softkeys an Hardware-Ausgänge[cite: 1].
 Er bündelt eine `Softkey_IX` Instanz und einen `DigitalOutput_QX` Baustein. Über die Parameter `u16ObjId` und `Output` kann die Zuordnung zwischen virtuellem Button und physischer Lampe/Ventil direkt an der Sub-App vorgenommen werden. Dies ermöglicht den Aufbau von großen Bedien-Matrizen (wie in Übung 010b4 gezeigt) mit minimalem Verdrahtungsaufwand im Hauptdiagramm.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

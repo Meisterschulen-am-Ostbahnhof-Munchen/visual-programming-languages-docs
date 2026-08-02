@@ -1,8 +1,5 @@
 # Uebung_214b_ALR: Standard IEC 61131-3 AULI_FB_CTU (Adapter Version, Vorwärtszähler, ULINT) mit Terminal-Ausgabe (PHYSA_LREAL)
 
-
-
-
 ![Uebung_214b_ALR_network](./Uebung_214b_ALR_network.svg)
 
 * * * * * * * * * *

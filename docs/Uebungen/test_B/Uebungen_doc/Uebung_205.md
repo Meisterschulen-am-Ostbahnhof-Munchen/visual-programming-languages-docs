@@ -1,6 +1,5 @@
 # Uebung_205: Interlock: ILOCK_SWITCH_PROTECT (Umschalt-Priorität mit Schutzzeit)
 
-
 ![Uebung_205_network](./Uebung_205_network.svg)
 
 * * * * * * * * * *

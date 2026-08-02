@@ -1,14 +1,10 @@
 # Uebung_001_AX_b: DigitalInput_I1 auf DigitalOutput_Q1, mit Plug and Socket
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_001_AX_b`, bei der ein digitaler Eingang über eine Signalwandlung mit einem digitalen Ausgang verbunden wird. Im Gegensatz zur direkten Adapterverbindung wird hier der Adapter-Zustand explizit in einen booleschen Wert und wieder zurück gewandelt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Das Hauptziel dieser Übung ist es, die Wandlung zwischen Adapter-Schnittstellen
 ### Funktionsbausteine (FBs)
 
 In der Subapplikation werden vier Funktionsbausteine instanziiert:
-
-
-
 
 ![Uebung_001_AX_b_network](./Uebung_001_AX_b_network.svg)
 
@@ -60,6 +53,7 @@ Die Logik wird durch die Verknüpfung von Adapter-, Ereignis- und Datenverbindun
 [cite_start][cite: 1]
 
 Der Ablauf gestaltet sich wie folgt:
+
 1.  Ändert sich der Zustand am Eingang `I1`, sendet `DigitalInput_I1` ein Adapter-Ereignis.
 2.  Der Baustein `AX_X_TO_BOOL` empfängt dieses, gibt den aktuellen Zustand am Datenausgang `IN` aus und signalisiert dies durch das Ereignis `CNF`.
 3.  Das Ereignis `CNF` triggert den `REQ`-Eingang von `AX_BOOL_TO_X`, welcher daraufhin den Wert von `OUT` übernimmt.

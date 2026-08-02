@@ -1,8 +1,5 @@
 # Uebung_223_AUDI: Standard IEC 61131-3 AUDI_FB_CTUD (Adapter Version, Vorwärts-/Rückwärtszähler, UDINT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_223_AUDI_network](./Uebung_223_AUDI_network.svg)
 
 * * * * * * * * * *

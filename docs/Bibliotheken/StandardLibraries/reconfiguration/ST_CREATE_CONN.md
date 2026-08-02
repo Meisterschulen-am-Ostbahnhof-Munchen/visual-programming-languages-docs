@@ -1,7 +1,5 @@
 # ST_CREATE_CONN
 
-
-
 ![ST_CREATE_CONN](https://user-images.githubusercontent.com/116869307/214154724-8b937f3d-9158-4a65-8267-347c9eeaf763.png)
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ Der Funktionsblock erstellt auf Anforderung (REQ-Ereignis) eine Verbindung zwisc
 
 ## Zustandsübersicht
 Der Baustein unterstützt mehrere Service-Sequenzen:
+
 - Normale Verbindungserstellung
 - Erfolglose Verbindungserstellung
 - Anforderungs-Bestätigungs-Zyklus

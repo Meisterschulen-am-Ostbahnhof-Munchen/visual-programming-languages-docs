@@ -2,9 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_003b2_sub_AX`, basierend auf 
 
 # Uebung_003b2_sub_AX: IX auf QX (generisch)
 
-
-
-
 ![Uebung_003b2_sub_AX_network](./Uebung_003b2_sub_AX_network.svg)
 
 *(Platzhalter für Bild der Übung, falls vorhanden)*

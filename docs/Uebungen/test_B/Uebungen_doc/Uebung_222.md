@@ -1,6 +1,5 @@
 # Uebung_222: Standard IEC 61131-3 FB_CTUD_LINT (Vor-/Rückwärtszähler, LINT) mit Terminal-Ausgabe
 
-
 ![Uebung_222_network](./Uebung_222_network.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # F_ULINT_TO_INT
 
-
-
 <img width="1442" height="214" alt="F_ULINT_TO_INT" src="https://github.com/user-attachments/assets/ef9d1612-2e7c-4316-b959-f3ed32453d61" />
 
 * * * * * * * * * *

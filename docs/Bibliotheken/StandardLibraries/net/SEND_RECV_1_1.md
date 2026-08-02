@@ -1,7 +1,5 @@
 # SEND_RECV_1_1
 
-
-
 <img width="1257" height="287" alt="image" src="https://github.com/user-attachments/assets/91b59d90-84f9-436c-93b0-702ec3b5def5" />
 
 * * * * * * * * * *
@@ -48,6 +46,7 @@ Der Funktionsblock arbeitet als bidirektionale Kommunikationsschnittstelle, die 
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor INIT-Aufruf
 2. **Initialisiert**: Nach erfolgreicher INIT/INITO-Sequenz
 3. **Sende-Betrieb**: Während REQ/CNF-Operation

@@ -1,14 +1,10 @@
 # Uebung_002a3_AX: DigitalInput_I1/_I2 mit OR auf DigitalOutput_Q1, mit Plug and Socket
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002a3_AX`. In dieser Übung wird eine logische ODER-Verknüpfung (OR) implementiert, bei der ein digitaler Ausgang aktiviert wird, sobald mindestens einer von zwei digitalen Eingängen den Zustand "Wahr" (HIGH) einnimmt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Das Hauptziel dieser Übung ist es, die Funktionsweise einer ODER-Verknüpfung i
 ### Funktionsbausteine (FBs)
 
 Folgende Bausteine werden verwendet:
-
-
-
 
 ![Uebung_002a3_AX_network](./Uebung_002a3_AX_network.svg)
 
@@ -54,6 +47,7 @@ Die Logik wird durch die Verschaltung der Adapter-Anschlüsse in der Subapplikat
 [cite_start][cite: 1]
 
 Der Prozess folgt dieser Logik:
+
 1.  Der Baustein `AX_OR_2` überwacht beide Adapter-Eingänge.
 2.  Wenn mindestens ein Eingang (`IN1` OR `IN2`) den Datenwert `D1 = TRUE` führt, setzt der Baustein seinen Ausgang `OUT` ebenfalls auf `TRUE` und sendet ein Ereignis.
 3.  Nur wenn beide Eingänge auf `FALSE` stehen, geht auch der Ausgang auf `FALSE`.

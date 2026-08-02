@@ -1,7 +1,5 @@
 # F_UDINT_TO_LINT
 
-
-
 <img width="1451" height="212" alt="F_UDINT_TO_LINT" src="https://github.com/user-attachments/assets/bdc7f6e4-7460-464c-8c40-94f9399b9c0e" />
 
 * * * * * * * * * *
@@ -45,9 +43,6 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_UDINT_TO_DINT**: Konvertiert UDINT zu DINT (32-Bit vorzeichenbehaftet), kann jedoch zu Überlauf führen, da DINT einen kleineren Wertebereich hat.
 - **F_UDINT_TO_ULINT**: Konvertiert UDINT zu ULINT (64-Bit vorzeichenlos), behält jedoch den vorzeichenlosen Charakter bei.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

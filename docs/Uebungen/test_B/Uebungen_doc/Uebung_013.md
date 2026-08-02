@@ -1,14 +1,10 @@
 # Uebung_013: SR-Flip-Flop (Softkey)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_013`. Hier wird eine Speicherfunktion realisiert, die vollständig über das ISOBUS-Terminal bedient wird.
 
 ## 🎧 Podcast
-
 
 ![Uebung_013_network](./Uebung_013_network.svg)
 
@@ -19,7 +15,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_013`. Hier wird eine Spei
 * [IEC 61499 vs. 61131: Brauchen wir einen neuen Standard für IIoT? Analyse einer hitzigen Debatte um Verteilte Intelligenz](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-vs--61131-Brauchen-wir-einen-neuen-Standard-fr-IIoT--Analyse-einer-hitzigen-Debatte-um-Verteilte-Intelligenz-e3ahc2r)
 
 ----
-
 
 ## Ziel der Übung
 

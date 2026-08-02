@@ -1,6 +1,5 @@
 # Uebung_070b: WBSD auf UT ausgeben, mit QI
 
-
 ![Uebung_070b_network](./Uebung_070b_network.svg)
 
 * * * * * * * * * *

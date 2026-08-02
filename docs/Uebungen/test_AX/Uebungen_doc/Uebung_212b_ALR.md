@@ -1,8 +1,5 @@
 # Uebung_212b_ALR: Standard IEC 61131-3 ALI_FB_CTU (Adapter Version, Vorwärtszähler, LINT) mit Terminal-Ausgabe (PHYS)
 
-
-
-
 ![Uebung_212b_ALR_network](./Uebung_212b_ALR_network.svg)
 
 * * * * * * * * * *

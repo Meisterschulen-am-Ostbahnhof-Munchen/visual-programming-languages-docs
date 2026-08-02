@@ -1,8 +1,5 @@
 # Uebung_028b_AR: Analog-Eingang Kalibrierung mit Adaptern INI und Hysterese-Regler am Ausgang
 
-
-
-
 ![Uebung_028b_AR_network](./Uebung_028b_AR_network.svg)
 
 * * * * * * * * * *
@@ -16,37 +13,45 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mit Hi
 
 - **DigitalInput_I1** / **DigitalInput_I2_CO** / **DigitalInput_I3_CS**:  
   Digitaleingänge (Typ `logiBUS::io::DI::logiBUS_IXA`)  
+
   - Parameter: `QI` = TRUE; `Input` = zugehöriger logiBUS-Eingang (I1, I2, I3)
 
 - **DigitalOutput_Q1** / **DigitalOutput_Q2**:  
   Digitalausgänge (Typ `logiBUS::io::DQ::logiBUS_QXA`)  
+
   - Parameter: `QI` = TRUE; `Output` = zugehöriger logiBUS-Ausgang (Q1, Q2)
 
 - **AnalogInput_I4**:  
   Analogeingang (Typ `logiBUS::io::AI::logiBUS_AI_IDA`)  
+
   - Parameter: `QI` = TRUE; `Input` = AnalogInput_I4; `AnalogInput_hysteresis` = 50; `TimeDelta` = 250; `TimeRateLimit` = 100
 
 - **CALIBRATE**:  
   Kalibrierungsadapter (Typ `adapter::Engineering::measurements::AR_CALIBRATE`)  
+
   - Parameter: `Y_Offset` = 100.0; `Y_Scale` = 600.0  
   - Führt eine lineare Kalibrierung durch (Offset und Skalierung) und gibt die kalibrierten Werte sowie die tatsächlichen Offset-/Skalierungs-Parameter aus.
 
 - **INI_OFFSET** / **INI_SCALE**:  
   INI-Speicherbausteine (Typ `eclipse4diac::storage::INI_AR2`)  
+
   - Parameter: `QI` = TRUE; `SECTION` = `'Uebung_028a_AR'`; `KEY` = `'OFFSET'` bzw. `'SCALE'`; `DEFAULT_VALUE` = 0.0 bzw. 1.0  
   - Speichern die vom Kalibrierungsadapter berechneten Offset- und Skalierungswerte persistent in einer INI-Datei.
 
 - **AX_SPLIT_2**:  
   Ereignis-Splitter (Typ `adapter::events::unidirectional::AX_SPLIT_2`)  
+
   - Verteilt ein eingehendes Ereignis (AX) auf zwei Ausgänge.
 
 - **Hysteresis_AR_AX**:  
   Hysterese-Regler (Typ `logiBUS::signalprocessing::hysteresis::Hysteresis_AR_AX`)  
+
   - Parameter: `QI` = TRUE  
   - Vergleicht den kalibrierten Analogeingang mit einem Schwellwert und einer Hysterese und schaltet den Ausgang entsprechend.
 
 - **AD_TO_AUDI** / **AUDI_TO_AR**:  
   Konvertierungsadapter (Typ `adapter::conversion::unidirectional::AD_TO_AUDI` bzw. `AUDI_TO_AR`)  
+
   - Wandeln das analoge Signal von der Adapterdarstellung `AD` in `AUDI` und zurück in `AR` um.  
   - **Hinweis**: Eine direkte Konvertierung `AD_TO_AR` würde wie ein `reinterpret_cast` wirken – die separate Nutzung beider Adapter ist hier beabsichtigt.
 

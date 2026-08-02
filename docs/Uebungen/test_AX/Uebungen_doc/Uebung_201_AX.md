@@ -1,8 +1,5 @@
 # Uebung_201_AX: Interlock: ILOCK_BLOCK_AX (Gegenseitige Verriegelung via Adapter)
 
-
-
-
 ![Uebung_201_AX_network](./Uebung_201_AX_network.svg)
 
 * * * * * * * * * *

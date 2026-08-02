@@ -1,7 +1,5 @@
 # OUT_ANY_CONSOLE
 
-
-
 ![OUT_ANY_CONSOLE](https://user-images.githubusercontent.com/116869307/214155060-5060da47-97f7-475f-9a49-036c24119346.png)
 
 * * * * * * * * * *
@@ -88,6 +86,7 @@ Der OUT_ANY_CONSOLE-Baustein ist ein unverzichtbares Werkzeug für die Entwicklu
 - **Leistungsstark**: Für Echtzeit-Debugging geeignet
 
 Idealer Einsatz bei:
+
 - Prototypenentwicklung
 - Systemtests
 - Fehleranalyse

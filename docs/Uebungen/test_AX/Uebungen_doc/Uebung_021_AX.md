@@ -1,8 +1,5 @@
 # Uebung_021_AX: Spiegelabfolge (1) - AX Variante
 
-
-
-
 ![Uebung_021_AX_network](./Uebung_021_AX_network.svg)
 
 * * * * * * * * * *

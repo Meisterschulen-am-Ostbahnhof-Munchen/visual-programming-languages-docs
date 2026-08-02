@@ -1,14 +1,10 @@
 # Uebung_035: Spiegelabfolge V2 mit Schrittkette
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_035`. Hier wird die Steuerung von komplexen Abläufen mittels eines Sequenzers (Schrittkette) demonstriert.
 
 ## 🎧 Podcast
-
 
 ![Uebung_035_network](./Uebung_035_network.svg)
 
@@ -18,7 +14,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_035`. Hier wird die Steue
 * [JBCs Löt-Geheimnis: 350 Grad in 2 Sekunden und warum die Spitze über Effizienz und Lebensdauer entscheidet](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/JBCs-Lt-Geheimnis-350-Grad-in-2-Sekunden-und-warum-die-Spitze-ber-Effizienz-und-Lebensdauer-entscheidet-e39arff)
 
 ----
-
 
 ## Ziel der Übung
 
@@ -51,4 +46,9 @@ Verwendung des Bausteins `sequence_ET_04`. Es wird gezeigt, wie ein Prozess in v
 ## Anwendungsbeispiel
 
 **Automatischer Reinigungszyklus**:
-Ein Knopfdruck startet das Programm: 1. Ventile spülen (2s), 2. Reinigungsmittel einlassen (2s), 3. Einwirken (2s), 4. Klarspülen (2s). Die Schrittkette garantiert, dass die Phasen exakt nacheinander und niemals gleichzeitig ablaufen.
+Ein Knopfdruck startet das Programm:
+
+1. Ventile spülen (2s),
+2. Reinigungsmittel einlassen (2s),
+3. Einwirken (2s),
+4. Klarspülen (2s). Die Schrittkette garantiert, dass die Phasen exakt nacheinander und niemals gleichzeitig ablaufen.

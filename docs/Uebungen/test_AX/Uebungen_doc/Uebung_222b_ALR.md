@@ -1,8 +1,5 @@
 # Uebung_222b_ALR: Standard IEC 61131-3 ALI_FB_CTUD (Adapter Version, Vorwärts-/Rückwärtszähler, LINT) mit Terminal-Ausgabe (PHYSA_LREAL)
 
-
-
-
 ![Uebung_222b_ALR_network](./Uebung_222b_ALR_network.svg)
 
 * * * * * * * * * *
@@ -16,6 +13,7 @@ Der aktuelle Zählerstand (`CV`) wird über einen Konverter in einen physikalisc
 Ein konstanter Startwert (`PV = 5`) wird über einen separaten Konvertierungsbaustein bereitgestellt.
 
 Lernziele:
+
 - Verwendung des adaptierten IEC-Zählers `ALI_FB_CTUD`
 - Verbindung von digitalen Ein‑/Ausgängen (logiBUS)
 - Konvertierung zwischen LINT und LREAL
@@ -87,6 +85,7 @@ Die logischen Verbindungen (über Adapter) stellen den Datenfluss her:
    Der Zählerwert (LINT) wird in einen LREAL‑Wert umgewandelt und an die Terminal‑Ausgabe gesendet.
 
 Beachten Sie die Kommentare im Netzwerk:
+
 - *„hier sind negative Werte möglich!“* (der LINT‑Zähler kann unter Null zählen)
 - *„hier gegebenenfalls je einen AX_D_FF einbauen, damit die Events reduziert werden.“* (Hinweis zur Ereignisoptimierung an den Ausgängen)
 

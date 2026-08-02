@@ -1,21 +1,16 @@
 # Uebung_022: Spiegelabfolge (2)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_022`. Hier wird die Ablaufsteuerung auf zwei nacheinander folgende Schritte erweitert.
 
 ## 🎧 Podcast
 
-
 ![Uebung_022_network](./Uebung_022_network.svg)
 
 * [Als Landtechnik-Spezialist durch die Hölle: Wie Lanz-Wery Krieg, Besatzung und Hyperinflation überlebte – Einblicke in Original-Geschäftsberichte 1915-1922](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Als-Landtechnik-Spezialist-durch-die-Hlle-Wie-Lanz-Wery-Krieg--Besatzung-und-Hyperinflation-berlebte--Einblicke-in-Original-Geschftsberichte-1915-1922-e39athj)
 
 ----
-
 
 ## Ziel der Übung
 
@@ -50,6 +45,7 @@ Erlernen der Ereignisverkettung. Das Ende eines Prozesses (Erreichen der Endlage
 [cite_start][cite: 1]
 
 Der Ablauf:
+
 1.  Klick auf **F1** ➡️ Zylinder 1 fährt aus (`Q1`).
 2.  Zylinder 1 erreicht Endlage (**F2**) ➡️ `Q1` wird abgeschaltet **UND** zeitgleich wird Zylinder 2 gestartet (`Q2`).
 3.  Zylinder 2 erreicht seine Endlage (**F3**) ➡️ `Q2` wird abgeschaltet.

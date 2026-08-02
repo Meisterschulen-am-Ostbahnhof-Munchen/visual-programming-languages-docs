@@ -1,7 +1,5 @@
 # F_ASIN
 
-
-
 ![F_ASIN](https://user-images.githubusercontent.com/116869307/214144951-8d3d1b57-2dd9-4f99-8fb8-5c2bbac522d2.png)
 
 * * * * * * * * * *
@@ -41,6 +39,7 @@ Die Funktion arbeitet nach der mathematischen Definition: OUT = arcsin(IN), wobe
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
+
 1. **Wartezustand**: Wartet auf REQ-Ereignis
 2. **Berechnungszustand**: Führt Arkussinus-Berechnung durch
 3. **Ausgabezustand**: Sendet CNF-Ereignis mit Ergebnis
@@ -53,6 +52,7 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen trigonometrischen Funktionen:
+
 - F_ASIN ist die inverse Funktion zu F_SIN
 - Ähnlich zu F_ACOS (Arkuskosinus) und F_ATAN (Arkustangens)
 - Liefert Ergebnisse im spezifischen Wertebereich für Arkussinus

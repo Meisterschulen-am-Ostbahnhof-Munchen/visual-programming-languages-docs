@@ -1,8 +1,5 @@
 # Uebung_001g_AX: DigitalInput_I1 negiert mit INIT und Delay auf DigitalOutput_Q1
 
-
-
-
 ![Uebung_001g_AX_network](./Uebung_001g_AX_network.svg)
 
 * * * * * * * * * *

@@ -1,6 +1,5 @@
 # Uebung_004b3b: Zwei gegenseitig verriegelte Toggle-Flip-Flops (Radio-Button-Logik) via Event-Verdrahtung
 
-
 ![Uebung_004b3b_network](./Uebung_004b3b_network.svg)
 
 * * * * * * * * * *

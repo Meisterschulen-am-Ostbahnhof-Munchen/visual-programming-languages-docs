@@ -2,9 +2,6 @@
 
 Analog-Eingang auf PWM Ausgang (Adapter Version)
 
-
-
-
 ![Uebung_034_AD_network](./Uebung_034_AD_network.svg)
 
 * * * * * * * * * *
@@ -56,6 +53,7 @@ Der Ablauf beginnt mit der Initialisierung des analogen Eingangs (`AnalogInput_I
 - `AnalogInput_I7.INITO` → `PWMOutput_Q4.INIT`
 
 Parallel dazu werden die Daten über Adapterverbindungen übertragen:
+
 1. Der Analogwert wird vom Adapterausgang `AnalogInput_I7.IN` an den Adaptereingang `AD_SHL.IN` weitergeleitet.
 2. Der aus `AD_SHL.OUT` resultierende verschobene Wert wird an den Adaptereingang `PWMOutput_Q4.OUT` übergeben.
 

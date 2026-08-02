@@ -1,6 +1,5 @@
 # Uebung_001c4: DigitalInput_I1 auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot.
 
-
 ![Uebung_001c4_network](./Uebung_001c4_network.svg)
 
 * * * * * * * * * *

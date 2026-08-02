@@ -1,14 +1,10 @@
 # Uebung_087: Beispiel für E_DEMUX
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_087`. Hier wird die Auswahl eines Ereignispfads durch eine Kombination von Logikwerten demonstriert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,7 +18,6 @@ Verwendung des `E_DEMUX` (Event Demultiplexer). Es wird gezeigt, wie ein zentral
 
 ### Funktionsbausteine (FBs)
 
-
 ![Uebung_087_network](./Uebung_087_network.svg)
 
   * **`I1` (Trigger)**: Das Ereignis, das verteilt werden soll.
@@ -35,6 +30,7 @@ Verwendung des `E_DEMUX` (Event Demultiplexer). Es wird gezeigt, wie ein zentral
 ## Funktionsweise
 
 Die Anzahl der gedrückten "Wahl-Taster" bestimmt, welche Lampe beim Klick auf **I1** toggelt:
+
 *   Kein Wahl-Taster gedrückt ➡️ Summe = 0 ➡️ Klick auf I1 toggelt **Q1**.
 *   Ein Wahl-Taster gedrückt ➡️ Summe = 1 ➡️ Klick auf I1 toggelt **Q2**.
 *   Zwei Wahl-Taster gedrückt ➡️ Summe = 2 ➡️ Klick auf I1 toggelt **Q3**.

@@ -1,8 +1,5 @@
 # Uebung_211_ADI: Standard IEC 61131-3 ADI_FB_CTU (Adapter Version, Vorwärtszähler, DINT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_211_ADI_network](./Uebung_211_ADI_network.svg)
 
 * * * * * * * * * *

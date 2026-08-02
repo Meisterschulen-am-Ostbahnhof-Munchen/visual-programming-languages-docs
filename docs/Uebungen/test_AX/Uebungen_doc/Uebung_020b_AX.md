@@ -1,14 +1,10 @@
 # Uebung_020b_AX: DigitalInput_I1 auf DigitalOutput_Q1; TON Einschaltverzögert; aufgelöst
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020b_AX`. Hier wird eine Einschaltverzögerung (TON) nicht als fertiger Baustein verwendet, sondern aus diskreten Ereignis- und Speicherbausteinen aufgebaut.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Das Ziel dieser Übung ist es, das Verständnis für die zeitliche Steuerung von
 [cite_start]Die Subapplikation `Uebung_020b_AX.SUB` kombiniert eine Ereignis-Weiche, eine Zeitverzögerung und einen RS-Speicher[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_020b_AX_network](./Uebung_020b_AX_network.svg)
 
@@ -41,8 +34,10 @@ Die Logik arbeitet in drei Phasen:
 
 1.  **Einschalten (Start der Verzögerung)**:
     Wird `I1` gedrückt, sendet die Weiche ein Event an `E_DELAY.START`. Die Zeit läuft.
+
 2.  **Ablauf der Zeit (Durchschalten)**:
     Nach 2 Sekunden feuert `E_DELAY` an seinem Ausgang `EO`. Dieses Event setzt den Speicher `AX_RS.S` -> `Q1` geht an.
+
 3.  **Ausschalten (Sofort-Stopp)**:
     Wird `I1` losgelassen, sendet die Weiche ein Event an `EO0`. Dieses Event stoppt sofort eine eventuell laufende Zeitmessung (`E_DELAY.STOP`) und setzt gleichzeitig den Speicher zurück (`AX_RS.R`) -> `Q1` geht sofort aus.
 

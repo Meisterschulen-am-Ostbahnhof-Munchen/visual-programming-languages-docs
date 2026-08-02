@@ -1,7 +1,5 @@
 # F_LWORD_TO_LREAL
 
-
-
 <img width="1464" height="211" alt="F_LWORD_TO_LREAL" src="https://github.com/user-attachments/assets/89f93d44-7207-4ef1-ba65-ed61f446770f" />
 
 * * * * * * * * * *
@@ -36,6 +34,7 @@ Bei Auslösung des `REQ`-Ereignisses wird der Algorithmus ausgeführt, der den `
 
 ## Zustandsübersicht
 Der Funktionsblock hat einen einfachen Zustandsautomaten:
+
 1. **Idle**: Wartet auf das `REQ`-Ereignis.
 2. **Processing**: Führt die Konvertierung durch.
 3. **Complete**: Sendet das `CNF`-Ereignis mit dem Ergebnis.

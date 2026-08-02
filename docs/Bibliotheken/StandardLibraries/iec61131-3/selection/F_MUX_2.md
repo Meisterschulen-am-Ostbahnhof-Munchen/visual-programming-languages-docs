@@ -1,7 +1,5 @@
 # F_MUX_2
 
-
-
 ![F_MUX_2](https://user-images.githubusercontent.com/116869307/214145411-87b2a7e5-fd56-4491-aaca-385941a399ab.png)
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Keine Adapter-Schnittstellen vorhanden.
 
 ## Funktionsweise
 Der F_MUX_2 arbeitet als 2:1 Multiplexer. Bei Eintreffen eines REQ-Ereignisses wertet der Baustein den Steuereingang K aus:
+
 - Bei K = 0 wird der Wert von IN1 an OUT weitergegeben
 - Bei K = 1 wird der Wert von IN2 an OUT weitergegeben
 
@@ -56,15 +55,11 @@ Nach erfolgreicher Verarbeitung wird das CNF-Ereignis ausgelöst, um den Abschlu
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Multiplexern bietet F_MUX_2:
+
 - Spezifisch für 2 Eingänge optimiert
 - Einfacherer Aufbau als Multiplexer mit mehr Eingängen
 - Direkte und klare Steuerlogik
 - Geringerer Ressourcenverbrauch bei 2-Wege-Auswahl
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

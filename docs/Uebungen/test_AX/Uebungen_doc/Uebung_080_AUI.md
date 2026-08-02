@@ -1,8 +1,5 @@
 # Uebung_080_AUI: Beispiel für E_CTU (Adapter Version) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_080_AUI_network](./Uebung_080_AUI_network.svg)
 
 * * * * * * * * * *
@@ -69,7 +66,8 @@ Die Übung ist als Subapplikation (`Uebung_080_AUI`) angelegt und benötigt kein
 
 **Ablauf**:
 1. Nach dem Start der Applikation ist der Zählerstand 0.
-2. Jeder Druck auf `Input_I1` erhöht den Zähler um 1. Der neue Wert wird sofort auf dem Terminal angezeigt.
+2. Jeder Druck auf `Input_I1` erhöht den Zähler um
+1. Der neue Wert wird sofort auf dem Terminal angezeigt.
 3. Wird der voreingestellte Schwellwert (PV) erreicht, wird `Output_Q1` auf `TRUE` gesetzt.
 4. Ein Druck auf `Input_I2` setzt den Zähler zurück auf 0 (auch der Ausgang wird wieder `FALSE`).
 

@@ -1,14 +1,10 @@
 # Uebung_003b3_AX: Funk 16 Tasten auf DataPanel 16
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003b3_AX`. Diese Übung ist die konsequente Weiterentwicklung von `Uebung_003b2_AX`. Sie nutzt explizit parametrierte typisierte Sub-Applikationen, um 15 Funktasten auf 15 Ausgänge zu mappen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -28,8 +24,6 @@ Das Ziel ist maximale Wiederverwendbarkeit und Übersichtlichkeit. Durch die Ver
 
 Die Zuweisung ist in der Datei klar lesbar:
 
-
-
 *   **`F1`**: `STOP` -> `Output_1A` (Achtung: Logik prüfen, ob STOP ggf. invertiert oder speziell behandelt wird)
 *   **`F2`**: `START` -> `Output_1B`
 *   **`F3`**: `Key_01` -> `Output_2A`
@@ -44,6 +38,7 @@ Alle Instanzen nutzen `MI_00` als `u8SAMember` (Adresse des DataPanels).
 ## Funktionsweise
 
 Die Funktionsweise ist identisch zur vorherigen Übung:
+
 1.  Die Hauptanwendung übergibt die Parameter (z.B. "Benutze Taste 1") an die Sub-Applikation.
 2.  Die Sub-Applikation konfiguriert ihren internen `Funk_IXA` Baustein entsprechend.
 3.  Das Signal wird gelesen und via Adapter an den `DataPanel_MI_QXA` weitergeleitet.

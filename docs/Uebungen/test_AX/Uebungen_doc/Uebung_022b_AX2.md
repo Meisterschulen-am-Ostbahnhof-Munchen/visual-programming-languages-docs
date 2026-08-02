@@ -1,8 +1,5 @@
 # Uebung_022b_AX2: Spiegelabfolge (2) - AX Variante
 
-
-
-
 ![Uebung_022b_AX2_network](./Uebung_022b_AX2_network.svg)
 
 * * * * * * * * * *
@@ -83,6 +80,7 @@ Die Steuerung folgt einer festen Abfolge:
 
 2. **Taste F2 drücken** → Ereignis von `SoftKey_F2_DOWN.IND`  
    → Wird an zwei Ziele verteilt:  
+
    - `AX_SR_Ausfahren_Cyl_1.R` → **Zylinder 1 fährt ein** (Q1 = FALSE).  
    - `AX_SR_Ausfahren_Cyl_2.S` → **Zylinder 2 fährt aus** (Q2 = TRUE).
 

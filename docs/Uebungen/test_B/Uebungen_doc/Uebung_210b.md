@@ -1,6 +1,5 @@
 # Uebung_210b: Standard IEC 61131-3 FB_CTU (Vorwärtszähler, INT) mit Terminal-Ausgabe
 
-
 ![Uebung_210b_network](./Uebung_210b_network.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Daten:
 
 - **Ausgabe**:  
   Nach jedem Zählvorgang wird das `CNF`-Ereignis des Zählers an den digitalen Ausgang `Output_Q1` und an die Terminal‑Ausgabe `Q_NumericValue_PHYS` weitergeleitet.  
+
   - Der `Q`-Wert wird auf den Ausgang `Output_Q1` geschrieben.  
   - Der `CV`-Wert wird als physikalische Größe (`rPhys`) an das Terminal übergeben und dort numerisch dargestellt.
 

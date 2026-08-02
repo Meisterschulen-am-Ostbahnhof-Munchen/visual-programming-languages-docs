@@ -1,14 +1,10 @@
 # Uebung_094a_AX: Beispiel für QI anstelle Permit
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_094a_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Nutzung des `QI` (Qualifier Input) Parameters zur Laufzeit-Steuerung von Funktio
 [cite_start]Die Subapplikation `Uebung_094a_AX.SUB` schaltet einen Eingangspfad aktiv oder inaktiv[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_094a_AX_network](./Uebung_094a_AX_network.svg)
 

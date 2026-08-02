@@ -1,8 +1,5 @@
 # Uebung_217b_ALR: Standard IEC 61131-3 ALI_FB_CTD (Adapter Version, LINT) mit Terminal-Ausgabe (PHYSA_LREAL)
 
-
-
-
 ![Uebung_217b_ALR_network](./Uebung_217b_ALR_network.svg)
 
 * * * * * * * * * *

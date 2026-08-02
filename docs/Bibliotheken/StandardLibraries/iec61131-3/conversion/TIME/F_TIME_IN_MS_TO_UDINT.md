@@ -1,7 +1,5 @@
 # F_TIME_IN_MS_TO_UDINT
 
-
-
 <img width="1531" height="212" alt="F_TIME_IN_MS_TO_UDINT" src="https://github.com/user-attachments/assets/142405a6-cd3f-4140-b2ae-e38e692d620f" />
 
 * * * * * * * * * *
@@ -44,6 +42,7 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
 
 Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+
 *   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
 *   **Beispiel:** `500 * T#1ms = T#500ms`
 *   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).

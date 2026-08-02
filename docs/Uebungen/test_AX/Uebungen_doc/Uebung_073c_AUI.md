@@ -1,8 +1,5 @@
 # Uebung_073c_AUI: VDS und GBSD auf UT ausgeben mit PHYS (Adapter Version)
 
-
-
-
 ![Uebung_073c_AUI_network](./Uebung_073c_AUI_network.svg)
 
 * * * * * * * * * *

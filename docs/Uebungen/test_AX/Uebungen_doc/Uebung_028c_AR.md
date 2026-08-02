@@ -1,8 +1,5 @@
 # Uebung_028c_AR: Analog-Eingang Kalibrierung mit Adaptern INI und Hysterese-Regler am Ausgang und Display Anzeige
 
-
-
-
 ![Uebung_028c_AR_network](./Uebung_028c_AR_network.svg)
 
 *Bild der Übung folgt*
@@ -56,6 +53,7 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangs (AnalogInput_
 
 3. **Wertverteilung**:  
    Der kalibrierte Wert `Y` wird über `AR_SPLIT_2` auf zwei Pfade verteilt:
+
    - Pfad 1 zu `Q_NumericValue_PHYSA` (Display-Anzeige)
    - Pfad 2 zum Hysterese-Block `Hysteresis_AR_AX` (Eingang `INPUT`)
 

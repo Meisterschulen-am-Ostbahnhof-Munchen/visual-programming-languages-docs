@@ -1,7 +1,5 @@
 # F_SEL_E_2
 
-
-
 ![F_SEL_E_2](https://github.com/user-attachments/assets/01359d6b-dfd8-4397-ab2d-a78e7f4e6168)
 
 * * * * * * * * * *
@@ -31,6 +29,7 @@ Der Funktionsblock `F_SEL_E_2` ist ein ereignisbasierter Selektor, der zwischen 
 
 ## Funktionsweise
 Der Funktionsblock `F_SEL_E_2` wählt zwischen zwei Eingangsvariablen basierend auf den eingehenden Ereignissen aus:
+
 - Wird das Ereignis `REQ0` ausgelöst, wird der Wert von `IN0` an `OUT` weitergegeben.
 - Wird das Ereignis `REQ1` ausgelöst, wird der Wert von `IN1` an `OUT` weitergegeben.
 - Nach der Auswahl wird das Bestätigungsereignis `CNF` ausgegeben, um die erfolgreiche Selektion zu signalisieren.
@@ -54,9 +53,6 @@ Der Funktionsblock `F_SEL_E_2` wählt zwischen zwei Eingangsvariablen basierend 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Selektionsblöcken (z.B. `SEL` in der IEC 61131-3) ist `F_SEL_E_2` rein ereignisgesteuert und benötigt keine zusätzliche logische Bedingung für die Auswahl.
 - Ähnliche Blöcke wie `MUX` (Multiplexer) erlauben die Auswahl aus mehreren Eingängen, sind aber oft datenflussgesteuert und nicht ereignisbasiert.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

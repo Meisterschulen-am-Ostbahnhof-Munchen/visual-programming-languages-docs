@@ -1,7 +1,5 @@
 # 🔌 IORevPiDIO
 
-
-
 <img width="921" height="625" alt="image" src="https://github.com/user-attachments/assets/755478f0-ea5d-495b-b524-68330b4f45d5" />
 
 * * * * * * * * * *

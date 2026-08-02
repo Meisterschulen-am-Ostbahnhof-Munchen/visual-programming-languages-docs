@@ -2,9 +2,6 @@
 
 (WBSD auf UT ausgeben, Q1 Schalten wenn Speed > 0 – Adapter Version)
 
-
-
-
 ![Uebung_071a_AUI_network](./Uebung_071a_AUI_network.svg)
 
 * * * * * * * * * *
@@ -48,6 +45,7 @@ Diese Übung demonstriert die Verwendung von Adapter-Interfaces (AUI/AUDI) in 4d
 ## Zusammenfassung
 
 Die Übung **Uebung_071a_AUI** zeigt eine typische Anwendung von Adapter-Interfaces in der Automatisierungstechnik mit 4diac. Der Lernende wird mit folgenden Konzepten vertraut gemacht:
+
 - **Adapter-Split, Konvertierung und Weiterleitung** (AUI, AUDI)
 - **Auslesen eines ISOBUS-Sensors** (WBSD) und Darstellung auf einem UT
 - **Schwellwertvergleich** und **Flip-Flop-Logik** für eine zuverlässige Ausgangsschaltung

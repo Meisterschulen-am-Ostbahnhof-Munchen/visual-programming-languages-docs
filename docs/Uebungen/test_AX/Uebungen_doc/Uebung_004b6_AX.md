@@ -1,8 +1,5 @@
 # Uebung_004b6_AX: Toggle Flip-Flop mit IXA / AX_PERMIT + AX_T_FF
 
-
-
-
 ![Uebung_004b6_AX_network](./Uebung_004b6_AX_network.svg)
 
 * * * * * * * * * *

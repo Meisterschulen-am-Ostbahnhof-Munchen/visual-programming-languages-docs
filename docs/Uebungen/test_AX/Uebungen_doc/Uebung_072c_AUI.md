@@ -1,8 +1,5 @@
 # Uebung_072c_AUI: GBSD und WBSD auf UT ausgeben mit PHYS (Adapter Version)
 
-
-
-
 ![Uebung_072c_AUI_network](./Uebung_072c_AUI_network.svg)
 
 * * * * * * * * * *

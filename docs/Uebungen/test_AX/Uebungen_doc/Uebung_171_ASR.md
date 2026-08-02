@@ -1,8 +1,5 @@
 # Uebung_171_ASR: Exercise for ASR_AX_SR
 
-
-
-
 ![Uebung_171_ASR_network](./Uebung_171_ASR_network.svg)
 
 * * * * * * * * * *

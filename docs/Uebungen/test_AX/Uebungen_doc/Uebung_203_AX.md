@@ -1,8 +1,5 @@
 # Uebung_203_AX: Interlock: ILOCK_SWITCH_AX (Umschalt-Priorität via Adapter)
 
-
-
-
 ![Uebung_203_AX_network](./Uebung_203_AX_network.svg)
 
 * * * * * * * * * *

@@ -1,6 +1,5 @@
 # Uebung_210: Standard IEC 61131-3 FB_CTU (Vorwärtszähler, INT) mit Terminal-Ausgabe
 
-
 ![Uebung_210_network](./Uebung_210_network.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Der Ablauf wird durch Ereignisverbindungen gesteuert:
 ## Zusammenfassung
 
 Diese Übung vermittelt den praktischen Umgang mit dem IEC‑61131-3 Zählerbaustein **FB_CTU** in der 4diac-IDE. Lernziele sind:
+
 - Erstellung eines einfachen Vorwärtszählers mit einstellbarem Schwellwert.
 - Anbindung digitaler Ein- und Ausgänge über den logiBUS.
 - Datenkonvertierung und Darstellung numerischer Werte auf einem Terminal.

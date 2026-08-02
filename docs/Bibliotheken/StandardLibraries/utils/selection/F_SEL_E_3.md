@@ -1,7 +1,5 @@
 # F_SEL_E_3
 
-
-
 ![F_SEL_E_3](https://github.com/user-attachments/assets/7dbef3ab-5e30-406e-8013-d5f2bfadb120)
 
 * * * * * * * * * *
@@ -54,9 +52,6 @@ Der Funktionsblock wartet auf ein eingehendes Ereignis (`REQ0`, `REQ1` oder `REQ
 - Im Gegensatz zu `F_SEL_E_2` bietet dieser Baustein drei statt zwei Eingänge
 - Ähnlich zu `F_MUX`, aber mit ereignisbasierter statt datengesteuerter Auswahl
 - Komplexer als einfache Gatter, aber spezialisierter für Selektionsaufgaben
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

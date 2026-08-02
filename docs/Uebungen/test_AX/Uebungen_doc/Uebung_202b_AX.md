@@ -1,8 +1,5 @@
 # Uebung_202b_AX: Interlock: ILOCK_BLOCK_PROTECT_AX (Motor Reversierung mit Schutzzeit via Adapter)
 
-
-
-
 ![Uebung_202b_AX_network](./Uebung_202b_AX_network.svg)
 
 * * * * * * * * * *

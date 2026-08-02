@@ -1,14 +1,10 @@
 # Uebung_160_AX: Motor Links/Rechtslauf
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_160_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Kombination von Einzelausgängen und einer Sammelmeldung.
 [cite_start]Die Subapplikation `Uebung_160_AX.SUB` steuert zwei Drehrichtungen und einen gemeinsamen Status-Ausgang[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_160_AX_network](./Uebung_160_AX_network.svg)
 

@@ -1,7 +1,5 @@
 # EMB_RES
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

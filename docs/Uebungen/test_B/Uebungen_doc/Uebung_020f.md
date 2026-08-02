@@ -1,14 +1,10 @@
 # Uebung_020f: DigitalInput_I1 auf DigitalOutput_Q1; E_TP; Impulsformend
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020f`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -24,7 +20,6 @@ Das Besondere: Der Ausgang bleibt für die volle Zeit aktiv, auch wenn der Einga
 -----
 
 ## Anwendungsbeispiel
-
 
 ![Uebung_020f_network](./Uebung_020f_network.svg)
 

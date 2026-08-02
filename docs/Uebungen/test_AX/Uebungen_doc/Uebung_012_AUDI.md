@@ -1,8 +1,5 @@
 # Uebung_012_AUDI: Numeric Value Input und Speichern
 
-
-
-
 ![Uebung_012_AUDI_network](./Uebung_012_AUDI_network.svg)
 
 * * * * * * * * * *

@@ -1,23 +1,16 @@
 # Uebung_013_AX: SR-Flip-Flop (Softkey)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_013_AX`.
 
 ## 🎧 Podcast
 
-
-
-
 ![Uebung_013_AX_network](./Uebung_013_AX_network.svg)
 
 * [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ----
-
 
 ## Ziel der Übung
 

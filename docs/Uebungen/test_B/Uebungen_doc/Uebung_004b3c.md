@@ -2,7 +2,6 @@
 
 (Der Übung liegt keine bildliche Darstellung bei.)
 
-
 ![Uebung_004b3c_network](./Uebung_004b3c_network.svg)
 
 * * * * * * * * * *
@@ -65,6 +64,7 @@ Diese Sub-Applikation realisiert ein verriegelbares Toggle-Flip-Flop mit einer b
 
 - **Funktionsweise**:  
   Der interne Toggle-Mechanismus wird durch das Set-Reset-Flip-Flop `E_SR` realisiert. Beim Eintreffen eines Ereignisses am Eingang `IND` wird durch `E_SWITCH` abhängig vom aktuellen Zustand `Q` (das auf `G` zurückgeführt ist) entschieden, ob gesetzt oder zurückgesetzt werden soll:
+
   - Ist `Q = FALSE` → Ereignis über `EO0` zum Set-Eingang `S` → Flip-Flop wird gesetzt.
   - Ist `Q = TRUE`  → Ereignis über `EO1` zum Reset-Eingang `R` → Flip-Flop wird zurückgesetzt.
 

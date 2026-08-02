@@ -1,7 +1,5 @@
 # CLIENT_0_1
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

@@ -1,6 +1,5 @@
 # Uebung_007d4: Blinker mit E_CYCLE und E_T_FF
 
-
 ![Uebung_007d4_network](./Uebung_007d4_network.svg)
 
 * * * * * * * * * *
@@ -58,6 +57,7 @@ Das Ergebnis schaltet einen digitalen Ausgang (logiBUS QX) – es entsteht ein u
 
 5. **Schwellwertvergleich**  
    F_GT prüft, ob der kopierte Wert größer als 0.49 ist.  
+
    - Ist der Wert > 0.49 (d.h. der Hysterese‑Ausgang war TRUE), wird `OUT` = TRUE.  
    - Ist er ≤ 0.49, wird `OUT` = FALSE.  
    Das Ereignis `CNF` von F_GT triggert den Digitalausgang.

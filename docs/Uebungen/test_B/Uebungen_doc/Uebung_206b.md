@@ -1,6 +1,5 @@
 # Uebung_206b: Interlock: ILOCK_T_FF (Drei gegenseitig verriegelte Toggle-Flip-Flops via Adapter-Kette)
 
-
 ![Uebung_206b_network](./Uebung_206b_network.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ In dieser Übung wird eine Anwendung mit drei gegenseitig verriegelten Toggle-Fl
 
 2. **Verriegelung (Interlock)**:  
    Die drei ILOCK_T_FF sind über ihre Adapter-Schnittstellen verbunden:  
+
    - ILOCK_T_FF_1.ILOCK_OUT → ILOCK_T_FF_2.ILOCK_IN  
    - ILOCK_T_FF_2.ILOCK_OUT → ILOCK_T_FF_3.ILOCK_IN  
    Diese Kette bewirkt, dass nur eines der drei Flip-Flops seinen Ausgang **Q** auf TRUE setzen kann. Sobald ein anderes Flip-Flop seinen Zustand ändert, wird das vorher aktive zurückgesetzt.

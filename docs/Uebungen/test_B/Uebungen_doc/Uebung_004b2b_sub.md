@@ -1,6 +1,5 @@
 # Uebung_004b2b_sub: Sub-Applikation für ein Toggle-Flip-Flop (E_SWITCH + E_SR)
 
-
 ![Uebung_004b2b_sub_network](./Uebung_004b2b_sub_network.svg)
 
 * * * * * * * * * *
@@ -28,10 +27,12 @@ Diese Übung implementiert ein **Toggle-Flip-Flop** (auch bekannt als Umschaltgl
     - Datenausgang: `Q` (BOOL, aktueller Zustand)
 - **Funktionsweise**:
   Der `E_SWITCH` leitet das Eingangsereignis `IND` abhängig vom Wert des Dateneingangs `G` an einen seiner beiden Ereignisausgänge weiter:
+
   - Ist `G = FALSE`, wird das Ereignis auf `EO0` (Set) gegeben.
   - Ist `G = TRUE`, wird das Ereignis auf `EO1` (Reset) gegeben.
   
   Der `E_SR` reagiert auf die Ereignisse an seinen Set- und Reset-Eingängen:
+
   - Ein Ereignis auf `S` setzt den Ausgang `Q = TRUE`.
   - Ein Ereignis auf `R` setzt `Q = FALSE`.
   
@@ -50,6 +51,7 @@ Diese Übung implementiert ein **Toggle-Flip-Flop** (auch bekannt als Umschaltgl
   `E_SWITCH.EO0` → `E_SR.S`  
   `E_SWITCH.EO1` → `E_SR.R`  
   `E_SR.EO` → `EO` (äußerer Ausgang)
+
 - Datenverbindungen:  
   `E_SR.Q` → `E_SWITCH.G` (Rückkopplung)  
   `E_SR.Q` → `Q` (äußerer Ausgang)

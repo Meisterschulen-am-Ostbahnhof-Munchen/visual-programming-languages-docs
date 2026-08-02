@@ -1,7 +1,5 @@
 # RangeBasedPulse
 
-
-
 <img width="1038" height="216" alt="RangeBasedPulse" src="https://github.com/user-attachments/assets/7a38dda2-cdee-4a47-be13-09d2637500b0" />
 
 * * * * * * * * * *
@@ -48,9 +46,6 @@ Der Funktionsblock berechnet den Restwert (DIST_REMAINDER) der Summe aus zurück
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einfachen Zeitgebern arbeitet dieser FB mit Distanzwerten statt Zeitintervallen. Er bietet mehr Flexibilität durch den Offset-Parameter und ermöglicht die Definition von individuellen HIGH- und LOW-Phasen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

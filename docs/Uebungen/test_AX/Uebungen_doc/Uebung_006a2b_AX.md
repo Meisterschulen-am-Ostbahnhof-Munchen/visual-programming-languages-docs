@@ -2,9 +2,6 @@
 
 <!-- Hier könnte ein Bild eingefügt werden, falls vorhanden. -->
 
-
-
-
 ![Uebung_006a2b_AX_network](./Uebung_006a2b_AX_network.svg)
 
 * * * * * * * * * *

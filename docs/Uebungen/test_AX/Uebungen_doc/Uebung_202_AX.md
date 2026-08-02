@@ -1,8 +1,5 @@
 # Uebung_202_AX: Interlock: ILOCK_BLOCK_PROTECT_AX (Verriegelung mit Schutzzeit via Adapter)
 
-
-
-
 ![Uebung_202_AX_network](./Uebung_202_AX_network.svg)
 
 * * * * * * * * * *

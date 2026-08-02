@@ -1,8 +1,5 @@
 # Uebung_220b_AR: Standard IEC 61131-3 AI_FB_CTUD (Adapter Version, Vorwärts-/Rückwärtszähler, INT) mit Terminal-Ausgabe (PHYS)
 
-
-
-
 ![Uebung_220b_AR_network](./Uebung_220b_AR_network.svg)
 
 *Bild nicht vorhanden*
@@ -37,20 +34,25 @@ Diese Übung realisiert einen Vorwärts-/Rückwärtszähler (CTUD) nach IEC 6113
 
 ## Programmablauf und Verbindungen
 Die Ereignissteuerung erfolgt über einen einzigen Ereignispfad:
+
 - Der Baustein **Input_LD** löst beim Initialisierungsereignis (`INITO`) den Baustein **AI_INT_TO_I** aus (`REQ`), sodass dieser den konstanten Preset-Wert (INT#5) auf seinem Ausgang bereitstellt.
 
 Die logischen Datenverbindungen (Adapterverbindungen) verknüpfen die Komponenten wie folgt:
+
 - **Digitaleingänge zu Zähler:**  
   `Input_CU.IN` → `AI_FB_CTUD.CU` (Vorwärtszählimpuls)  
   `Input_CD.IN` → `AI_FB_CTUD.CD` (Rückwärtszählimpuls)  
   `Input_R.IN` → `AI_FB_CTUD.R` (Reset)  
   `Input_LD.IN` → `AI_FB_CTUD.LD` (Laden des Presetwerts)
+
 - **Zählerausgänge zu Digitalausgängen:**  
   `AI_FB_CTUD.QU` → `Output_QU.OUT` (Vorwärtszählererreicht)  
   `AI_FB_CTUD.QD` → `Output_QD.OUT` (Rückwärtszählererreicht)
+
 - **Zählerwert zu Terminalausgabe:**  
   `AI_FB_CTUD.CV` → `AI_TO_AR.AI_IN` (Aktueller Zählerwert)  
   `AI_TO_AR.AR_OUT` → `Q_NumericValue_PHYSA.rPhys` (Analogwert für Terminalanzeige)
+
 - **Preset-Wert:**  
   `AI_INT_TO_I.AI_OUT` → `AI_FB_CTUD.PV` (Setzt den Preset-Wert auf INT#5)
 

@@ -1,8 +1,5 @@
 # Uebung_219_AULI: Standard IEC 61131-3 AULI_FB_CTD (Adapter Version, Rückwärtszähler, ULINT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_219_AULI_network](./Uebung_219_AULI_network.svg)
 
 * * * * * * * * * *

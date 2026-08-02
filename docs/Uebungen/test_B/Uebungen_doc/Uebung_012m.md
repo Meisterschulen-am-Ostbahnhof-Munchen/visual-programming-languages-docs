@@ -49,6 +49,7 @@ Diese Übung demonstriert die Verarbeitung eines Zeichenketten-Inputs (String) a
 ## Programmablauf und Verbindungen
 
 Die Haupt-SubApp `Uebung_012m` instanziiert `Uebung_012m_sub` und versorgt diese mit zwei Parametern:
+
 - `KEY` = `KEY_I1_STORE` (ein konstanter Schlüssel für den NVS-Eintrag)
 - `u16ObjId` = `InputString_S1` (die isobus-Objekt-ID, von der der Eingabestring gelesen wird)
 
@@ -75,6 +76,7 @@ Die Verbindungen innerhalb von `Uebung_012m_sub` sind wie folgt (aus der XML-Dat
 ## Zusammenfassung
 
 In dieser Übung wird der Umgang mit String-Eingaben, nichtflüchtigem Speicher (NVS) und isobus-Kommunikation in einer gekapselten SubApp trainiert. Die Lernziele umfassen:
+
 - Verständnis für die Initialisierung und Nutzung des NVS-FBs.
 - Ereignisgesteuerte Verkettung von Lese-, Schreib- und Kommunikationsvorgängen.
 - Parametrisierung von SubApps zur Wiederverwendung.

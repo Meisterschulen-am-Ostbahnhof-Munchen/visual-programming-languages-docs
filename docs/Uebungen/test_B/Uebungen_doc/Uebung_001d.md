@@ -1,6 +1,5 @@
 # Uebung_001d: DigitalInput_I1 auf DigitalOutput_Q1
 
-
 ![Uebung_001d_network](./Uebung_001d_network.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Diese Übung demonstriert die grundlegende Verknüpfung eines digitalen Eingangs
 3. Gleichzeitig wird der Datenwert `IN` des Eingangsbausteins über zwei parallele **Datenverbindungen** an die Dateneingänge `IN1` und `IN2` des AND_2‑Bausteins weitergegeben.
 4. Der **AND_2**‑Baustein berechnet die logische UND-Verknüpfung der beiden identischen Signale:  
    `OUT = IN1 AND IN2 = IN (da beide Eingänge gleich sind)`.
+
 5. Nach der Berechnung wird das Ereignis `CNF` ausgelöst, das an den **DigitalOutput_Q1**‑Baustein (Ereigniseingang `REQ`) weitergeleitet wird.
 6. Der Datenwert `OUT` des AND_2‑Bausteins wird an den Dateneingang `OUT` des Ausgangsbausteins übergeben. Dadurch wird der physikalische Ausgang `Output_Q1` auf den gleichen Wert wie der Eingang `Input_I1` gesetzt.
 

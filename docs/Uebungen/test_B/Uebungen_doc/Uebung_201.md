@@ -1,6 +1,5 @@
 # Uebung_201: Interlock: ILOCK_BLOCK (Gegenseitige Verriegelung)
 
-
 ![Uebung_201_network](./Uebung_201_network.svg)
 
 * * * * * * * * * *
@@ -77,6 +76,7 @@ Der Ablauf der Übung wird durch die **Ereignis‑ und Datenverbindungen** im Su
    - `DigitalInput_I1.IND` → `ILOCK.EI_UP`  
    - `DigitalInput_I2.IND` → `ILOCK.EI_DOWN`  
    Gleichzeitig werden die aktuellen digitalen Werte über die Datenverbindungen an den `ILOCK` übergeben:  
+
    - `DigitalInput_I1.IN` → `ILOCK.DI_UP`  
    - `DigitalInput_I2.IN` → `ILOCK.DI_DOWN`
 
@@ -85,6 +85,7 @@ Der Ablauf der Übung wird durch die **Ereignis‑ und Datenverbindungen** im Su
 
 4. **Ausgabe an die Hardware**  
    Die Ereignisse und Daten des `ILOCK` werden an die Digitalausgänge weitergeleitet:  
+
    - `ILOCK.EO_UP` → `DigitalOutput_Q1.REQ`  
    - `ILOCK.EO_DOWN` → `DigitalOutput_Q2.REQ`  
    - `ILOCK.DO_UP` → `DigitalOutput_Q1.OUT`  

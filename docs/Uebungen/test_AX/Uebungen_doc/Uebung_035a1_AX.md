@@ -2,10 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_035a1_AX` basierend auf den b
 
 # Uebung_035a1_AX: Ampelsteuerung mit Pattern Sequencer (AX)
 
-
-
-
-
 ![Uebung_035a1_AX_network](./Uebung_035a1_AX_network.svg)
 
 * * * * * * * * * *
@@ -69,6 +65,7 @@ Der Ablauf der Ampelsteuerung gestaltet sich wie folgt:
 
 2.  **Sequenzablauf (Pattern Sequencer)**:
     Der `PatternSeq` Baustein steuert die Ampelphasen basierend auf den konfigurierten Parametern. Die Ausgänge werden binär kodiert angesteuert (Q3, Q2, Q1):
+
     *   **Phase 1 (Rot)**: Dauer 3s (`DT_S1_S2`). Parameter `P_S1 = 1` (Binär `001`) aktiviert Adapter-Ausgang `Q1` -> **Rote Lampe**.
     *   **Phase 2 (Rot-Gelb)**: Dauer 1s (`DT_S2_S3`). Parameter `P_S2 = 3` (Binär `011`) aktiviert `Q1` und `Q2` -> **Rote und Gelbe Lampen**.
     *   **Phase 3 (Grün)**: Dauer 3s (`DT_S3_S4`). Parameter `P_S3 = 4` (Binär `100`) aktiviert `Q3` -> **Grüne Lampe**.

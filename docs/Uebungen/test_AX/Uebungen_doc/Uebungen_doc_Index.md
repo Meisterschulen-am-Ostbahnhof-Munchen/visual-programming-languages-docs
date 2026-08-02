@@ -1,7 +1,5 @@
 # Numerischer Index (test_AX)
 
-
-
 ```{toctree}
 :maxdepth: 1
 

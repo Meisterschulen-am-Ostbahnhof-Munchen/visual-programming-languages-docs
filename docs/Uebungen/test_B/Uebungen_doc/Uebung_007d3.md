@@ -1,6 +1,5 @@
 # Uebung_007d3: Blinker mit E_CYCLE und E_T_FF
 
-
 ![Uebung_007d3_network](./Uebung_007d3_network.svg)
 
 * * * * * * * * * *

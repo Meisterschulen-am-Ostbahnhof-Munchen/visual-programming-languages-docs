@@ -1,6 +1,5 @@
 # Uebung_004b4c: Drei gegenseitig verriegelte Toggle-Flip-Flops in einer Kette via AE2-Adapter
 
-
 ![Uebung_004b4c_network](./Uebung_004b4c_network.svg)
 
 * * * * * * * * * *

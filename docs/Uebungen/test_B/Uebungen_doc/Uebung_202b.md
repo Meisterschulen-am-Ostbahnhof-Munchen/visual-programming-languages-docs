@@ -1,6 +1,5 @@
 # Uebung_202b: Interlock: ILOCK_BLOCK_PROTECT (Motor Reversierung mit Schutzzeit)
 
-
 ![Uebung_202b_network](./Uebung_202b_network.svg)
 
 * * * * * * * * * *
@@ -15,18 +14,21 @@ Die Übung besteht aus folgenden Funktionsbausteinen (FB-Instanzen), die alle in
 
 - **DigitalInput_I1**: Typ ``logiBUS::io::DI::logiBUS_IX``  
   Lest den digitalen Eingang ``Input_I1`` ein.  
+
   - Parameter: QI = TRUE, Input = ``Input_I1``  
   - Ereignisausgang: IND (Indication)  
   - Datenausgang: IN (Wert des Eingangs)
 
 - **DigitalInput_I2**: Typ ``logiBUS::io::DI::logiBUS_IX``  
   Lest den digitalen Eingang ``Input_I2`` ein.  
+
   - Parameter: QI = TRUE, Input = ``Input_I2``  
   - Ereignisausgang: IND  
   - Datenausgang: IN
 
 - **ILOCK**: Typ ``logiBUS::signalprocessing::interlock::ILOCK_BLOCK_PROTECT``  
   Kernbaustein der Interlock-Funktion mit Schutzzeit.  
+
   - Parameter: DT_PROTECT = T#1s (Schutzzeit 1 Sekunde)  
   - Ereigniseingänge: EI_UP, EI_DOWN  
   - Ereignisausgänge: EO_UP, EO_DOWN  
@@ -36,24 +38,28 @@ Die Übung besteht aus folgenden Funktionsbausteinen (FB-Instanzen), die alle in
 
 - **Rechtslauf**: Typ ``logiBUS::io::DQ::logiBUS_QX``  
   Steuert den digitalen Ausgang ``Output_Q5`` (Rechtslauf).  
+
   - Parameter: QI = TRUE, Output = ``Output_Q5``  
   - Ereigniseingang: REQ  
   - Dateneingang: OUT
 
 - **Linkslauf**: Typ ``logiBUS::io::DQ::logiBUS_QX``  
   Steuert den digitalen Ausgang ``Output_Q6`` (Linkslauf).  
+
   - Parameter: QI = TRUE, Output = ``Output_Q6``  
   - Ereigniseingang: REQ  
   - Dateneingang: OUT
 
 - **LowSide_Treiber**: Typ ``logiBUS::io::DQ::logiBUS_QX``  
   Steuert den gemeinsamen Low-Side-Ausgang ``Output_Q56``.  
+
   - Parameter: QI = TRUE, Output = ``Output_Q56``  
   - Ereigniseingang: REQ  
   - Dateneingang: OUT
 
 - **OR_2_BOOL**: Typ ``iec61131::bitwiseOperators::OR_2_BOOL``  
   Logische ODER-Verknüpfung zweier Boolescher Werte.  
+
   - Ereigniseingang: REQ  
   - Ereignisausgang: CNF  
   - Dateneingänge: IN1, IN2  
@@ -61,6 +67,7 @@ Die Übung besteht aus folgenden Funktionsbausteinen (FB-Instanzen), die alle in
 
 - **E_TimeOut**: Typ ``iec61499::events::E_TimeOut``  
   Zeitgeber, der die Schutzzeit des ILOCK überwacht.  
+
   - Adapterschnittstelle: TimeOutSocket (verbunden mit ILOCK.timeOut)
 
 ## Programmablauf und Verbindungen
@@ -83,6 +90,7 @@ Die Komponenten sind wie folgt verschaltet:
    Der ``E_TimeOut``-Baustein ist über eine Adapterverbindung mit dem ILOCK verbunden und stellt die notwendige Timing-Funktionalität für die Schutzzeit bereit.
 
 Zusammenfassend ergibt sich folgender Ablauf:  
+
 - Betätigung von Eingang I1 → Rechtslauf wird eingeschaltet, Linkslauf ist gesperrt, Low-Side-Treiber wird aktiv.  
 - Bei Wechsel auf I2: die Schutzzeit von 1s muss abgelaufen sein, bevor der Linkslauf aktiv wird. Während der Schutzzeit bleibt der letzte Zustand erhalten.  
 - Der Low-Side-Treiber folgt dem aktuell aktiven Laufbefehl.

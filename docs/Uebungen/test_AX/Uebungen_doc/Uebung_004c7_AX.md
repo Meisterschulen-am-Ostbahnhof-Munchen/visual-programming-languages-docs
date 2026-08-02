@@ -1,14 +1,10 @@
 # Uebung_004c7_AX: Toggle Flip-Flop mit IE mit BUTTON_PRESS_END
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004c7_AX`. Auch hier wird `logiBUS_IE2` genutzt, um die Zeitdauer für einen "langen Druck" anzupassen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Definition einer spezifischen Haltezeit.
 -----
 
 ## Funktionsweise
-
-
-
 
 ![Uebung_004c7_AX_network](./Uebung_004c7_AX_network.svg)
 

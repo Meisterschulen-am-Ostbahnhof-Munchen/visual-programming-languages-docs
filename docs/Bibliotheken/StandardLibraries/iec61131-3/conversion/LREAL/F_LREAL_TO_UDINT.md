@@ -1,7 +1,5 @@
 # F_LREAL_TO_UDINT
 
-
-
 <img width="1466" height="214" alt="F_LREAL_TO_UDINT" src="https://github.com/user-attachments/assets/8b6d5f6b-1cdf-44b6-a520-33c18fb77913" />
 
 * * * * * * * * * *
@@ -45,9 +43,6 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 - **F_REAL_TO_UINT**: Konvertiert 32-Bit Gleitkommawerte (REAL) in 16-Bit vorzeichenlose Integerwerte (UINT).
 - **F_LREAL_TO_DINT**: Konvertiert 64-Bit Gleitkommawerte (LREAL) in 32-Bit vorzeichenbehaftete Integerwerte (DINT).
 - **F_LREAL_TO_UDINT** ist spezifisch für die Konvertierung zu vorzeichenlosen 32-Bit Integern.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

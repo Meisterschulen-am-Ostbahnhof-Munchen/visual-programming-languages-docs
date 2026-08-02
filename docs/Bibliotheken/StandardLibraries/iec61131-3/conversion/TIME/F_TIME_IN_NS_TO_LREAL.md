@@ -1,7 +1,5 @@
 # F_TIME_IN_NS_TO_LREAL
 
-
-
 <img width="1538" height="212" alt="F_TIME_IN_NS_TO_LREAL" src="https://github.com/user-attachments/assets/c94f3148-26d5-44a8-88fc-e5eeb5938a75" />
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
 
 Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+
 *   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
 *   **Beispiel:** `500 * T#1ms = T#500ms`
 *   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).

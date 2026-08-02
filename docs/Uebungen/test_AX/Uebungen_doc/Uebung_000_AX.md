@@ -1,14 +1,10 @@
 # Uebung_000_AX: Einfache Addition
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_000_AX`, das absolute Basisbeispiel für Berechnungen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Ziel ist die Platzierung und Parametrierung eines Standard-Bausteins der IEC
 [cite_start]Die Subapplikation `Uebung_000_AX.SUB` enthält lediglich einen Rechenbaustein[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_000_AX_network](./Uebung_000_AX_network.svg)
 

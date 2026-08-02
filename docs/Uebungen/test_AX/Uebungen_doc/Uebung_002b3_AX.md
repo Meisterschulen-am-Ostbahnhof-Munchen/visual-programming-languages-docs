@@ -1,14 +1,10 @@
 # Uebung_002b3_AX: DigitalInput_I1/_I2/_I3 auf DigitalOutput_Q1
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002b3_AX`. In dieser Übung wird eine kombinatorische Logikschaltung implementiert, die zwei Grundoperationen (UND und ODER) miteinander verknüpft, um eine komplexere Schaltbedingung zu erfüllen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Das Hauptziel dieser Übung ist die hierarchische Verknüpfung von Logikbaustein
 ### Funktionsbausteine (FBs)
 
 In der Subapplikation werden folgende Komponenten instanziiert:
-
-
-
 
 ![Uebung_002b3_AX_network](./Uebung_002b3_AX_network.svg)
 
@@ -57,6 +50,7 @@ Die hierarchische Struktur der Logik wird durch die Verschaltung der Adapter-Ver
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  Das System berechnet zuerst das Teilergebnis der UND-Verknüpfung von `I1` und `I2`.
 2.  Dieses Teilergebnis wird an den ersten Eingang des ODER-Bausteins gereicht.
 3.  Der ODER-Baustein vergleicht dieses Teilergebnis mit dem direkten Signal von `I3`.

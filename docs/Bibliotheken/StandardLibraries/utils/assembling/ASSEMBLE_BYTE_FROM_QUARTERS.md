@@ -6,7 +6,6 @@
 
 ---- 
 
-
 ![ASSEMBLE_BYTE_FROM_QUARTERS](https://github.com/user-attachments/assets/0c4e652e-a741-472a-b8d9-d7721c16cc9a)
 
 * * * * * * * * * *
@@ -52,9 +51,6 @@ Der Funktionsblock nimmt vier Quarter-Bytes entgegen und kombiniert sie zu einem
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Bit-Manipulations-Funktionsblöcken bietet `ASSEMBLE_BYTE_FROM_QUARTERS` eine spezialisierte und optimierte Lösung für die Kombination von Quarter-Bytes.
 - Andere Blöcke könnten ähnliche Funktionalität bieten, sind jedoch oft weniger spezifisch und erfordern mehr Konfiguration.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

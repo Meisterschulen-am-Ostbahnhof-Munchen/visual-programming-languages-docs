@@ -1,14 +1,10 @@
 # Uebung_028: Analog-Eingang
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_028`. Hier verlassen wir die digitale Welt (An/Aus) und erfassen kontinuierliche Messwerte (Analogsignale).
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,7 +18,6 @@ Verwendung des Bausteins `logiBUS_AI_ID`. Es wird demonstriert, wie analoge Span
 
 ### Funktionsbausteine (FBs)
 
-
 ![Uebung_028_network](./Uebung_028_network.svg)
 
   * **`AnalogInput_I4` & `I7`**: Typ `logiBUS_AI_ID`. [cite_start]Diese Bausteine repräsentieren die analogen Hardware-Eingänge. Sie wandeln die elektrische Spannung in einen numerischen Digitalwert um[cite: 1].
@@ -34,6 +29,7 @@ Verwendung des Bausteins `logiBUS_AI_ID`. Es wird demonstriert, wie analoge Span
 ## Funktionsweise
 
 Der Analogbaustein bietet zwei Möglichkeiten der Abfrage:
+
 1.  **Ereignisgesteuert**: Sobald sich die Eingangsspannung signifikant ändert (außerhalb der Hysterese), sendet der Baustein automatisch ein `IND`-Event.
 2.  **Manuell (Polling)**: In dieser Übung triggert zusätzlich der digitale Taster `I1` den `REQ`-Eingang der Analog-Bausteine. Dies erzwingt eine sofortige Aktualisierung der Werte, egal ob sie sich geändert haben oder nicht.
 

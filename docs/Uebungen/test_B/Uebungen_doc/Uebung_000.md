@@ -1,14 +1,10 @@
 # Uebung_000: ADD
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_000`. Dies ist das absolute Einstiegsbeispiel für die mathematische Datenverarbeitung.
 
 ## 🎧 Podcast
-
 
 ![Uebung_000_network](./Uebung_000_network.svg)
 
@@ -16,7 +12,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_000`. Dies ist das absolu
 * [Hannes' Turbo-Mais: Wie ein Landwirt mit Hackschnitzel-Kreislauf und Turmtrockner 15.000 Tonnen Körnermais verarbeitet](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Hannes-Turbo-Mais-Wie-ein-Landwirt-mit-Hackschnitzel-Kreislauf-und-Turmtrockner-15-000-Tonnen-Krnermais-verarbeitet-e3a5e0o)
 
 ----
-
 
 ## Ziel der Übung
 
@@ -46,6 +41,7 @@ Der Baustein nimmt die beiden Eingangswerte und addiert sie intern. Da in diesem
 ## Lernziel
 
 Diese Übung dient dazu, sich mit der 4diac-Oberfläche vertraut zu machen:
+
 1.  Bausteine aus der Bibliothek ziehen.
 2.  Eigenschaften (Parameter) von Bausteinen im Properties-Fenster editieren.
 3.  Den Unterschied zwischen variablen Eingängen und Konstanten verstehen.

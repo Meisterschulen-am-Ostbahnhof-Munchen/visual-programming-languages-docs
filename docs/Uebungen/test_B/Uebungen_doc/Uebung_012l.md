@@ -1,6 +1,5 @@
 # Uebung_012l: String Input und Speichern NVS
 
-
 ![Uebung_012l_network](./Uebung_012l_network.svg)
 
 * * * * * * * * * *

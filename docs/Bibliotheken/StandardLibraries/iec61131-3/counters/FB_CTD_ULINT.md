@@ -1,7 +1,5 @@
 # FB_CTD_ULINT
 
-
-
 <img width="1411" height="282" alt="FB_CTD_ULINT" src="https://github.com/user-attachments/assets/47813539-b542-43ce-82f2-a1f5ec03073f" />
 
 * * * * * * * * * *
@@ -31,6 +29,7 @@ Es sind keine Adapter für diesen Funktionsblock definiert.
 
 ## Funktionsweise
 Der Funktionsblock arbeitet nach folgenden Regeln:
+
 1. Wenn LD (Load) aktiviert ist, wird der Zählerstand (CV) auf den vorgegebenen Wert (PV) gesetzt.
 2. Wenn CD (Count Down) aktiviert ist und der Zählerstand (CV) größer als 0 ist, wird der Zählerstand um 1 verringert.
 3. Der Ausgang Q wird auf TRUE gesetzt, wenn der Zählerstand (CV) kleiner oder gleich 0 ist.

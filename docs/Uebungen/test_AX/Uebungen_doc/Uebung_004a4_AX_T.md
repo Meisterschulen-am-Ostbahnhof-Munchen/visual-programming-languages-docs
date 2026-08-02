@@ -1,8 +1,5 @@
 # Uebung_004a4_AX_T: Exercise for AX_FB_T_FF (Toggle Flip-Flop with Adapter)
 
-
-
-
 ![Uebung_004a4_AX_T_network](./Uebung_004a4_AX_T_network.svg)
 
 * * * * * * * * * *
@@ -59,6 +56,7 @@ Die Funktionsbausteine sind über **Adapterverbindungen** (keine klassischen Eve
 
 ## Zusammenfassung
 Mit dieser Übung wird die Anwendung eines **Toggle-Flipflops** über Adapterverbindungen in der 4diac-IDE vermittelt.  
+
 - Lernziele:  
   - Verstehen der Arbeitsweise eines Toggle-Flipflops (AX_FB_T_FF).  
   - Anbinden von physikalischen Ein-/Ausgängen über logiBUS-Adapter.  

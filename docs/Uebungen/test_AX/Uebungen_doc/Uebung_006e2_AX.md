@@ -2,10 +2,6 @@ Hier ist die Dokumentationsseite für die Übung `Uebung_006e2_AX` basierend auf
 
 # Uebung_006e2_AX: RS-Flip-Flop mit 2x IXA
 
-
-
-
-
 ![Uebung_006e2_AX_network](./Uebung_006e2_AX_network.svg)
 
 * * * * * * * * * *

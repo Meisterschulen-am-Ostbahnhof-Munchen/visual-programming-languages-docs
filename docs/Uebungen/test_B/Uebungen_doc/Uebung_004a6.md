@@ -1,17 +1,12 @@
 # Uebung_004a6: Toggle Flip-Flop mit IE und E_REND (Rendezvous)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a6`. Hier wird ein fortgeschrittenes Ereignis-Muster vorgestellt: Das Rendezvous. Ein Ereignis wird erst dann weitergegeben, wenn mehrere unterschiedliche Bedingungen zeitunabhängig eingetroffen sind.
 
 ----
 
-
 ## Ziel der Übung
-
 
 ![Uebung_004a6_network](./Uebung_004a6_network.svg)
 
@@ -48,6 +43,7 @@ Die Logik verlangt die Bestätigung beider Quellen:
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  Drückt man nur Taster 1 (`I1`), passiert am Ausgang nichts. `E_REND` speichert intern: "EI1 ist erledigt".
 2.  Drückt man irgendwann später Taster 2 (`I2`), ist die Bedingung erfüllt (beide waren da). `E_REND` feuert nun das Event an `EO`.
 3.  Das Flip-Flop toggelt den Ausgangszustand.

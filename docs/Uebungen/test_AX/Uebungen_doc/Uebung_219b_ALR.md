@@ -1,8 +1,5 @@
 # Uebung_219b_ALR: Standard IEC 61131-3 AULI_FB_CTD (Adapter Version, Rückwärtszähler, ULINT) mit Terminal-Ausgabe (PHYSA_LREAL)
 
-
-
-
 ![Uebung_219b_ALR_network](./Uebung_219b_ALR_network.svg)
 
 * * * * * * * * * *
@@ -12,6 +9,7 @@
 Diese Übung implementiert einen Rückwärtszähler (CTD – Count Down) gemäß IEC 61131-3 als Adapter-Version. Der Zähler verarbeitet ULINT-Werte und gibt das aktuelle Zählergebnis über eine Terminalausgabe (PHYSA_LREAL) aus. Zusätzlich wird ein digitaler Ausgang gesetzt, wenn der Zählwert Null erreicht.
 
 Die Übung demonstriert den Einsatz von:
+
 - Adapter-basierten Funktionsbausteinen für Zähler und Konvertierungen
 - physikalischen Ein- und Ausgängen (logiBUS)
 - Formatierung und Ausgabe numerischer Werte auf einem Terminal

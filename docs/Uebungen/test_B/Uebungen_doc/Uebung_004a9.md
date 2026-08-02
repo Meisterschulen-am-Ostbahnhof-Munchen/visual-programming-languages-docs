@@ -1,14 +1,10 @@
 # Uebung_004a9: mit E_SPLIT_3
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a9`. Hier wird das Konzept des sequenziellen Event-Splittings auf drei Ziele erweitert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,7 +18,6 @@ Demonstration der Skalierbarkeit von Ereignis-Verteilern. Mit `E_SPLIT_3` könne
 
 ### Funktionsbausteine (FBs)
 
-
 ![Uebung_004a9_network](./Uebung_004a9_network.svg)
 
   * **`DigitalInput_CLK_I1`**: Der zentrale Auslöser (Taster).
@@ -35,6 +30,7 @@ Demonstration der Skalierbarkeit von Ereignis-Verteilern. Mit `E_SPLIT_3` könne
 ## Funktionsweise
 
 Ein einziger Klick auf den Taster löst eine definierte Ereigniskette aus:
+
 1.  `EO1` feuert ➡️ `Q1` toggelt.
 2.  `EO2` feuert ➡️ `Q2` toggelt.
 3.  `EO3` feuert ➡️ `Q3` toggelt.

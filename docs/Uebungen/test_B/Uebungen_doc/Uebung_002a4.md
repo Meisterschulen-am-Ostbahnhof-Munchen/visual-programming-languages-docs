@@ -1,14 +1,10 @@
 # Uebung_002a4: DigitalInput_I1/_I2 mit AND_BOOL auf DigitalOutput_Q1
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002a4`. In dieser Übung wird eine logische UND-Verknüpfung (AND) realisiert, wobei ein digitaler Ausgang nur dann aktiviert wird, wenn zwei digitale Eingänge gleichzeitig den Zustand "Wahr" (HIGH) führen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Hauptziel dieser Übung ist die Implementierung einer logischen Entscheidung
 [cite_start]Die Subapplikation `Uebung_002a4.SUB` verknüpft zwei digitale Eingänge über einen Logik-Baustein mit einem digitalen Ausgang[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_002a4_network](./Uebung_002a4_network.svg)
 
@@ -51,6 +46,7 @@ Die Logik wird durch die Verschaltung der Ereignis- und Datenpfade in der Subapp
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  Jeder Tastendruck an `I1` oder `I2` löst ein `IND`-Ereignis aus.
 2.  Das Ereignis triggert den `REQ`-Eingang des `AND_2_BOOL`-Bausteins.
 3.  Der Baustein liest die aktuellen Zustände beider Eingänge und verknüpft sie logisch (UND).

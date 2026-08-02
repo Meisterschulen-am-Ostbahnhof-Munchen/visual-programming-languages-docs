@@ -1,14 +1,10 @@
 # Uebung_020d: DigitalInput_I1 auf DigitalOutput_Q1; TOF Ausschaltverzögert; aufgelöst
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020d`. Hier wird die Funktion einer Ausschaltverzögerung (TOF) manuell aus Grundbausteinen aufgebaut.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Realisierung eines Nachlauf-Verhaltens. Der Ausgang soll beim Drücken des Taste
 [cite_start]In `Uebung_020d.SUB` wird die TOF-Logik durch geschickte Verknüpfung von `E_DELAY` und `E_RS` implementiert[cite: 1].
 
 ### Funktionsweise
-
 
 ![Uebung_020d_network](./Uebung_020d_network.svg)
 

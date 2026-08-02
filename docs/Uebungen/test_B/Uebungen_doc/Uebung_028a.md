@@ -1,6 +1,5 @@
 # Uebung_028a: Analog-Eingang
 
-
 ![Uebung_028a_network](./Uebung_028a_network.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Der Ablauf wird durch Ereignisse gesteuert:
 7. Die gespeicherten Werte werden nach dem Initialisieren (`INITO` → `GET`) über **SET_REAL_OFFSET** und **SET_REAL_SCALE** zurück an **CALIBRATE** geführt, sodass die Kalibrierung dauerhaft erhalten bleibt.
 
 Die Datenflüsse verbinden:
+
 - `AnalogInput_I4.IN` → `F_DWORD_TO_UDINT_I4.IN`
 - `F_DWORD_TO_UDINT_I4.OUT` → `CALIBRATE.X`
 - `INI_OFFSET.VALUEO` → `SET_REAL_OFFSET.IN` → `SET_REAL_OFFSET.OUT` → `CALIBRATE.OFFSET`

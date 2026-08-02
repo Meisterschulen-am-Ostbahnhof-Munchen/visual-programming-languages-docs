@@ -1,14 +1,10 @@
 # Uebung_015: Object Pointer umschalten
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_015`. Hier wird eine fortgeschrittene ISOBUS-Technik demonstriert: Das Umschalten von Object Pointern, um Bildschirminhalte dynamisch auszutauschen.
 
 ## 🎧 Podcast
-
 
 ![Uebung_015_network](./Uebung_015_network.svg)
 
@@ -18,7 +14,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_015`. Hier wird eine fort
 * [Schlüter 1500 Spezial: Turbo-Giftigkeit, 40 Jahre und die Seele eines Kraftprotzes](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Schlter-1500-Spezial-Turbo-Giftigkeit--40-Jahre-und-die-Seele-eines-Kraftprotzes-e39au2l)
 
 ----
-
 
 ## Ziel der Übung
 

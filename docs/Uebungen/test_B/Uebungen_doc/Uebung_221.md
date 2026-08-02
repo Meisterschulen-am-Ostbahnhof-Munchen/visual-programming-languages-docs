@@ -1,6 +1,5 @@
 # Uebung_221: Standard IEC 61131-3 FB_CTUD_DINT (Vor-/Rückwärtszähler, DINT) mit Terminal-Ausgabe
 
-
 ![Uebung_221_network](./Uebung_221_network.svg)
 
 * * * * * * * * * *

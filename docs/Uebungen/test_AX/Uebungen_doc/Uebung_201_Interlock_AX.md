@@ -1,8 +1,5 @@
 # Uebung_201_Interlock_AX: Interlock advanced exercise (AX)
 
-
-
-
 ![Uebung_201_Interlock_AX_network](./Uebung_201_Interlock_AX_network.svg)
 
 * * * * * * * * * *
@@ -41,11 +38,13 @@ Diese Übung erweitert die grundlegende Interlock-Schaltung auf eine komplexere 
 
 ## Programmablauf und Verbindungen
 Die Schaltung besteht aus vier identischen Interlock-Stufen, die in Reihe geschaltet sind. Jede Stufe enthält:
+
 - einen digitalen Eingang (DigitalInput)
 - einen ILOCK_IO_AX-Baustein
 - einen digitalen Ausgang (DigitalOutput)
 
 Die Verbindungen im Netzwerk:
+
 1. **Eingangsseite**: Jeder `DigitalInput` ist mit seinem zugehörigen `ILOCK_AX`-Baustein über den Adapter `IN` verbunden.
    - `DigitalInput_I1.IN` → `ILOCK_AX_1.IN`
    - `DigitalInput_I2.IN` → `ILOCK_AX_2.IN`

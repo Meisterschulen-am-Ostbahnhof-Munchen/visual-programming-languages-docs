@@ -1,6 +1,5 @@
 # Uebung_011b1: Numeric Value Input ADD
 
-
 ![Uebung_011b1_network](./Uebung_011b1_network.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Der Ablauf wird durch die Ereignis- und Datenverbindungen im Netzwerk gesteuert:
 4. **Ausgabe** – Das `CNF`-Ereignis von `ADD_2` triggert den Baustein `Q_NumericValue`. An dessen Dateneingang `u32NewValue` liegt das Additionsergebnis an. Der Baustein sendet diesen Wert über den ISOBUS an die Objekt-ID `OutputNumber_N1`.
 
 Hinweise für den Nutzer:
+
 - Die Objekt-IDs (`InputNumber_I1`, `InputNumber_I2`, `OutputNumber_N1`) müssen mit den im ISOBUS‑System konfigurierten Objekten übereinstimmen.
 - Die Übung setzt Grundkenntnisse in der 4diac-IDE und der IEC 61499‑Ereignissteuerung voraus.
 - Schwierigkeitsgrad: Einsteiger.

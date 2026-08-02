@@ -2,8 +2,6 @@ Hier ist die Dokumentation für die Übung 178, basierend auf den bereitgestellt
 
 # Uebung_178: Beispiel für FB_F_TRIG (Falling Edge Detection)
 
-
-
 ![Uebung_178_network](./Uebung_178_network.svg)
 
 * * * * * * * * * *
@@ -36,16 +34,19 @@ Der Programmablauf dieser Übung gestaltet sich wie folgt:
 
 2.  **Flankenerkennung:**
     Das Eingangssignal (`IN` von `DigitalInput_I1`) ist mit dem Takteingang (`CLK`) des `FB_F_TRIG` verbunden.
+
     *   Der `FB_F_TRIG` überwacht dieses Signal.
     *   Erkennt der Baustein einen Wechsel von **High auf Low** (z.B. Loslassen eines Tasters), schaltet der Ausgang `Q` kurzzeitig auf `TRUE`.
 
 3.  **Zeitsteuerung (Impuls):**
     Das Ausgangssignal `Q` des Flankentriggers ist mit dem Eingang `IN` des Timers `E_TP` verbunden.
+
     *   Sobald die fallende Flanke erkannt wurde, startet der Timer `E_TP`.
     *   Der Timer generiert einen Impuls mit der Dauer von **1 Sekunde** (definiert durch `PT = T#1s`).
 
 4.  **Signalausgang:**
     Der Ausgang `Q` des Timers steuert den Eingang `OUT` des `DigitalOutput_Q1`.
+
     *   Dies bewirkt, dass der Hardware-Ausgang `Output_Q1` (z.B. eine Lampe) für genau 1 Sekunde aktiviert wird, nachdem das Eingangssignal abgefallen ist.
 
 **Zusammenfassender Datenfluss:**

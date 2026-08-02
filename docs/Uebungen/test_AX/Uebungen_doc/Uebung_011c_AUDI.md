@@ -1,8 +1,5 @@
 # Uebung_011c_AUDI: Numeric Value Input I3 Durchschleifen auf N3
 
-
-
-
 ![Uebung_011c_AUDI_network](./Uebung_011c_AUDI_network.svg)
 
 * * * * * * * * * *

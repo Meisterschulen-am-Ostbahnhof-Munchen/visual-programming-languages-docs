@@ -1,6 +1,5 @@
 # Uebung_215b: Standard IEC 61131-3 FB_CTD (Rückwärtszähler, INT) mit Terminal-Ausgabe (PHYS)
 
-
 ![Uebung_215b_network](./Uebung_215b_network.svg)
 
 * * * * * * * * * *

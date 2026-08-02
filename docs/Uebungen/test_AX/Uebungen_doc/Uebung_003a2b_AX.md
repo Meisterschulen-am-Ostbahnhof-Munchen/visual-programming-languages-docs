@@ -1,8 +1,5 @@
 # Uebung_003a2b_AX: 2x R_IO mit IXA
 
-
-
-
 ![Uebung_003a2b_AX_network](./Uebung_003a2b_AX_network.svg)
 
 * * * * * * * * * *

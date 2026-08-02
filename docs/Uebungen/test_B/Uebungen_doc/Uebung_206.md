@@ -1,6 +1,5 @@
 # Uebung_206: Interlock: ILOCK_T_FF (Zwei gegenseitig verriegelte Toggle-Flip-Flops via Adapter-Kette)
 
-
 ![Uebung_206_network](./Uebung_206_network.svg)
 
 * * * * * * * * * *

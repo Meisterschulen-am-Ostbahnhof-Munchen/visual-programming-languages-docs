@@ -1,6 +1,5 @@
 # Uebung_076: MSS mit Compound Scaling auf UT ausgeben
 
-
 ![Uebung_076_network](./Uebung_076_network.svg)
 
 * * * * * * * * * *
@@ -44,12 +43,14 @@ Der Ablauf erfolgt rein intern innerhalb des Subapplikationstyps (keine äußere
 **Ereignisverbindungen**:
 1. `I_MSS.IND` → `COMPOUND_SCALE.REQ`  
    Sobald ein neuer MSS-Wert anliegt, wird die Skalierung angestoßen.
+
 2. `COMPOUND_SCALE.CNF` → `Q_NumericValue.REQ`  
    Nach abgeschlossener Skalierung wird der ausgegebene Wert zum UT gesendet.
 
 **Datenverbindungen**:
 1. `I_MSS.SELECTEDMACHINESPEED` → `COMPOUND_SCALE.IN`  
    Der rohe Maschinengeschwindigkeitswert (UINT) wird an den Skalierungsbaustein weitergeleitet.
+
 2. `COMPOUND_SCALE.OUT` → `Q_NumericValue.rPhys`  
    Der skalierte Wert (REAL) wird als physikalischer Wert für die UT-Ausgabe übergeben.
 

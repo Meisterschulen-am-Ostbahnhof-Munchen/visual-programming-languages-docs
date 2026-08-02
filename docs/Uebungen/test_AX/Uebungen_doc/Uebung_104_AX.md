@@ -1,8 +1,5 @@
 # Uebung_104_AX: Zustandsbasierte Schrittkette mit Power-Fail Recovery (AX-Version)
 
-
-
-
 ![Uebung_104_AX_network](./Uebung_104_AX_network.svg)
 
 * * * * * * * * * *

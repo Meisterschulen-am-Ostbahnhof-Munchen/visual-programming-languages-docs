@@ -1,8 +1,5 @@
 # Uebung_011b1_PHYSA: Numeric Value Input ADD with Physical Values
 
-
-
-
 ![Uebung_011b1_PHYSA_network](./Uebung_011b1_PHYSA_network.svg)
 
 * * * * * * * * * *
@@ -50,6 +47,7 @@ Das Netzwerk verbindet die Bausteine ausschließlich über Adapter-Kanäle (Typ 
    Der Adapter-Ausgang `AR_ADD_2.OUT` ist mit dem Adapter-Eingang `Q_NumericValue_PHYSA.rPhys` verbunden. Der Ausgangsbaustein übernimmt diesen Wert und schreibt ihn auf die Hardware‑Schnittstelle `OutputNumber_N3`.
 
 Die Verbindungen im Detail:
+
 - `NumericValue_PHYSA_I3.rPhys` → `AR_ADD_2.IN1`
 - `NumericValue_PHYSA_I4.rPhys` → `AR_ADD_2.IN2`
 - `AR_ADD_2.OUT` → `Q_NumericValue_PHYSA.rPhys`

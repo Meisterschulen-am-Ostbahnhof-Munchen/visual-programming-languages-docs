@@ -1,8 +1,5 @@
 # Uebung_090a2: Beispiel für F_MUX_3
 
-
-
-
 ![Uebung_090a2_network](./Uebung_090a2_network.svg)
 
 * * * * * * * * * *

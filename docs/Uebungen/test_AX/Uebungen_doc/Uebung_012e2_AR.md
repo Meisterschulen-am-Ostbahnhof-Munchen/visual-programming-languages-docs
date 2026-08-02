@@ -1,8 +1,5 @@
 # Uebung_012e2_AR: Numeric Value Input PHYS und Speichern INI mit Subapp (AR Adapter)
 
-
-
-
 ![Uebung_012e2_AR_network](./Uebung_012e2_AR_network.svg)
 
 * * * * * * * * * *
@@ -53,10 +50,12 @@ Diese Übung demonstriert die Verwendung eines **AR-Adapters** zur Kombination e
 
 2. **Timer-Start**  
    Dieses Signal wird direkt mit dem `IN`-Adapter des Timers `AX_TON` verbunden.  
+
    - Bei einer steigenden Flanke (EIN) startet der Timer.
 
 3. **Variable Timer-Zeit**  
    Der Sub-Baustein `Uebung_012e_sub_AR` liefert über seinen AR-Ausgang `VALUEO` den aus dem NVS geladenen numerischen Wert.  
+
    - Dieser Wert wird mit dem AR-Adapter an den `IN2`-Eingang des arithmetischen Bausteins `AR_MULTIME` übergeben.  
    - Der Baustein `AR_MULTIME` multipliziert den festen Wert `T#100ms` (IN1) mit dem variablen Wert (IN2) und gibt das Ergebnis (Time) an seinem `OUT`-Adapter aus.  
    - Der Ausgang `OUT` wird mit dem `PT`-Adapter des Timers `AX_TON` verbunden. Dadurch wird die Timer-Ablaufzeit dynamisch aus dem gespeicherten Wert berechnet.

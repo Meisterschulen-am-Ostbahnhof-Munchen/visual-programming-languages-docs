@@ -1,14 +1,10 @@
 # Uebung_006c: SR-Flip-Flop mit IB auf DI_REPEAT
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006c`. Hier wird eine komplexe Kanalsteuerung unter Verwendung von Byte-Daten und Ereignis-Demultiplexern realisiert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,7 +18,6 @@ Erlernen der adressierten Ereignisverteilung. Anstatt für jeden Kanal eine eige
 
 ### Funktionsbausteine (FBs)
 
-
 ![Uebung_006c_network](./Uebung_006c_network.svg)
 
   * **`logiBUS_IB`**: Ein spezieller Eingangsbaustein für "Input Byte". Er liefert einen Zahlenwert (0-255), der meist von einem Multi-Funktions-Bedienelement (z.B. einem ISOBUS-Joystick mit vielen Tasten) stammt.
@@ -34,6 +29,7 @@ Erlernen der adressierten Ereignisverteilung. Anstatt für jeden Kanal eine eige
 ## Funktionsweise
 
 Das System arbeitet mit zwei Kanälen:
+
 1.  **Setzen-Kanal**: Ein Druck auf Taster `I1` (konfiguriert als Repeat) liefert eine Nummer. Der Demux `E_DEMUX8_S` leitet das Ereignis an den entsprechenden Speicherplatz weiter ➡️ Die Lampe geht an.
 2.  **Rücksetzen-Kanal**: Taster `I2` liefert analog dazu eine Nummer an `E_DEMUX8_R` ➡️ Die entsprechende Lampe geht aus.
 

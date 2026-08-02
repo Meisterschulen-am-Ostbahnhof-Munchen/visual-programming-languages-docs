@@ -1,7 +1,5 @@
 # GPIOChip
 
-
-
 <img width="1343" height="245" alt="image" src="https://github.com/user-attachments/assets/612f184c-bce3-4376-bb09-9881ec2162c0" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der GPIOChip FB initialisiert bei Empfang des INIT-Ereignisses eine Verbindung z
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Ausgangszustand vor INIT
 2. **Initialisierung**: Während der GPIO-Chip Konfiguration
 3. **Bereit**: Nach erfolgreicher Initialisierung (INITO+)

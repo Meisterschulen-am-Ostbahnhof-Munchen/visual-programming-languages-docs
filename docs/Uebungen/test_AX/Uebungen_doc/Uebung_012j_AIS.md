@@ -1,8 +1,5 @@
 # Uebung_012j_AIS: String Input und Speichern
 
-
-
-
 ![Uebung_012j_AIS_network](./Uebung_012j_AIS_network.svg)
 
 * * * * * * * * * *
@@ -59,6 +56,7 @@ Der Datenfluss innerhalb der SubApp erfolgt über Adapterverbindungen:
 Die SubApp ist so konzipiert, dass bei jedem Start automatisch der zuletzt gespeicherte Wert aus dem NVS geladen und ausgegeben wird (DEFAULT_VALUE dient als Initialwert). Eine externe Applikation kann den Eingangswert überschreiben, woraufhin der neue Wert gespeichert und sofort ausgegeben wird.
 
 Hinweise:
+
 - Die Konstanten `InputNumber_I1`, `SECTION_S1_STORE` und `KEY_S1_STORE` sind in übergeordneten Bibliotheken definiert und müssen vor der Verwendung importiert werden.
 - Die Übung demonstriert ein typisches Muster für persistente Datenspeicherung in der Automatisierungstechnik.
 

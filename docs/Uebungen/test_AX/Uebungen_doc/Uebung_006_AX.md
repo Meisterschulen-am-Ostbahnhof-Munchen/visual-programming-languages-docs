@@ -1,14 +1,10 @@
 # Uebung_006_AX: SR-Flip-Flop mit 2x IE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006_AX`. Hier wird das klassische RS-Glied (Speicherglied) implementiert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Realisierung einer Schaltung mit getrennten Tastern für "Ein" und "Aus".
 [cite_start]Die Subapplikation `Uebung_006_AX.SUB` nutzt zwei Taster und einen `AX_SR` Baustein[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_006_AX_network](./Uebung_006_AX_network.svg)
 

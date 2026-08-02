@@ -1,14 +1,10 @@
 # Uebung_003d_AX: DigitalInput_I1/_I2 auf DigitalOutput_Q1/_I2
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003d_AX`. Diese Übung ist strukturell nahezu identisch mit `Uebung_003_AX` und dient der Festigung des Verständnisses für parallele Signalpfade.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Das Ziel ist die Wiederholung der direkten I/O-Verknüpfung mittels Adapter-Tech
 [cite_start]Die Subapplikation `Uebung_003d_AX.SUB` verbindet zwei Eingänge mit zwei Ausgängen[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_003d_AX_network](./Uebung_003d_AX_network.svg)
 

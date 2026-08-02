@@ -2,7 +2,6 @@ Hier ist die Dokumentation für die Übung basierend auf den bereitgestellten XM
 
 # Uebung_010b5_sub_AX: IX auf QX (generisch)
 
-
 * * * * * * * * * *
 
 ## Einleitung

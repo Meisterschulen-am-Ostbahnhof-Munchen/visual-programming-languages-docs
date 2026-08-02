@@ -1,6 +1,5 @@
 # Uebung_011b2: Numeric Value Input MUL
 
-
 ![Uebung_011b2_network](./Uebung_011b2_network.svg)
 
 *Bild folgt (sofern vorhanden)*

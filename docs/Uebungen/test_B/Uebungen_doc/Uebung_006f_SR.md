@@ -1,6 +1,5 @@
 # Uebung_006f_SR: Exercise for FB_SR_T_FF (Set-Dominant Toggle Flip-Flop)
 
-
 ![Uebung_006f_SR_network](./Uebung_006f_SR_network.svg)
 
 * * * * * * * * * *

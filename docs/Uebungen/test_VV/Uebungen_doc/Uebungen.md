@@ -1,6 +1,5 @@
 # 🎓 training1 - Uebungen VV (Verteilte Verarbeitung)
 
-
 ## 🎧 Podcast
 
 * [4diac IDE: Dein Open-Source-Werkzeugkasten für verteilte Industrieautomatisierung nach IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Open-Source-Werkzeugkasten-fr-verteilte-Industrieautomatisierung-nach-IEC-61499-e36821e)

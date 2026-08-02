@@ -1,6 +1,5 @@
 # Uebung_205b: Interlock: ILOCK_SWITCH_PROTECT (Motor Reversierung Priorität mit Schutzzeit)
 
-
 ![Uebung_205b_network](./Uebung_205b_network.svg)
 
 * * * * * * * * * *

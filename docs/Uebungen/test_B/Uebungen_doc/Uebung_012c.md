@@ -1,14 +1,10 @@
 # Uebung_012c: Numeric Value Input und Speichern INI mit Subapp
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_012c`. Hier wird demonstriert, dass auch Text-Informationen persistent gespeichert werden können.
 
 ----
-
 
 ## Ziel der Übung
 

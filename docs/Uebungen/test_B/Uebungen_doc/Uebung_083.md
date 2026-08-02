@@ -1,14 +1,10 @@
 # Uebung_083: Beispiel für E_CTUD_UDINT
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_083`.
 
 ## 🎧 Podcast
-
 
 ![Uebung_083_network](./Uebung_083_network.svg)
 
@@ -19,7 +15,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_083`.
 * [ISOBUS-Bedienoberflächen: Wenn Tasten und Hauptanzeige unterschiedlich skalieren – ISO 11783-6 entschlüsselt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Bedienoberflchen-Wenn-Tasten-und-Hauptanzeige-unterschiedlich-skalieren--ISO-11783-6-entschlsselt-e36a8n8)
 
 ----
-
 
 ## Übersicht
 

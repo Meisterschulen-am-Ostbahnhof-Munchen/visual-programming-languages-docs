@@ -1,7 +1,5 @@
 # F_LN
 
-
-
 ![F_LN](https://user-images.githubusercontent.com/116869307/214145086-21782799-0c9c-4cbd-9bde-286e5e78f7a6.png)
 
 * * * * * * * * * *
@@ -38,6 +36,7 @@ Bei Empfang eines REQ-Ereignisses berechnet der F_LN-Block den natürlichen Loga
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über einen einfachen Zustandsautomaten:
+
 1. **Wartezustand**: Block wartet auf REQ-Ereignis
 2. **Berechnungszustand**: Verarbeitet die Logarithmusberechnung
 3. **Ausgabezustand**: Sendet CNF-Ereignis mit berechnetem Ergebnis
@@ -50,6 +49,7 @@ Der Funktionsblock verfügt über einen einfachen Zustandsautomaten:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen mathematischen Funktionsblöcken:
+
 - F_LN spezialisiert auf natürliche Logarithmen (Basis e)
 - F_LOG berechnet Logarithmen zu beliebiger Basis
 - F_EXP berechnet die Exponentialfunktion (Umkehrfunktion zu LN)

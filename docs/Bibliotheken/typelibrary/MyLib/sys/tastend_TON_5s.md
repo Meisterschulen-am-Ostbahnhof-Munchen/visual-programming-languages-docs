@@ -1,7 +1,5 @@
 # tastend_TON_5s
 
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -56,8 +54,6 @@ Diese Übung demonstriert die Verwendung eines Zeitrelais (Timer On-Delay) mit e
 
 ## Zusammenfassung
 Die Subapplikation tastend_TON_5s stellt eine kompakte Lösung für zeitverzögerte Signalverarbeitung dar. Durch die feste Zeitvorgabe von 5 Sekunden und die Verwendung standardisierter Adapter-Schnittstellen kann sie einfach in verschiedene Steuerungsanwendungen integriert werden. Die klare Struktur mit Signalwandlung, Timer-Funktionalität und Rückwandlung macht die Funktionsweise transparent und nachvollziehbar.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

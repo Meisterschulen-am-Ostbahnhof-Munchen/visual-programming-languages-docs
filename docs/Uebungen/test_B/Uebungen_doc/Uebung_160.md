@@ -1,14 +1,10 @@
 # Uebung_160: Motor Links/Rechtslauf
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_160`. Hier wird die einfache logische Verknüpfung zur Steuerung eines umschaltbaren Antriebs gezeigt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Realisierung einer Steuerung für Linkslauf, Rechtslauf und ein Summensignal (Mo
 [cite_start]In `Uebung_160.SUB` werden zwei Taster auf drei Ausgänge gemappt[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_160_network](./Uebung_160_network.svg)
 

@@ -2,7 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_171_AX` basierend auf den ber
 
 # Uebung_171_AX: Exercise for ASR_AX_SR
 
-
 * * * * * * * * * *
 
 ## Einleitung

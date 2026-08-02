@@ -1,6 +1,5 @@
 # Uebung_001c2: DigitalInput_I1 negiert auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot.
 
-
 ![Uebung_001c2_network](./Uebung_001c2_network.svg)
 
 * * * * * * * * * *

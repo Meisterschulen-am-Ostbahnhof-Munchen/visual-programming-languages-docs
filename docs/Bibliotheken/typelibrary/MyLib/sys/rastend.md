@@ -1,7 +1,5 @@
 # Rastend
 
-
-
 <img width="666" height="233" alt="image" src="https://github.com/user-attachments/assets/b3bfdaca-bb42-428f-a91a-2e367b347faf" />
 
 * * * * * * * * * *
@@ -50,8 +48,6 @@ Der Programmablauf folgt dieser Signalverarbeitungskette:
 
 ## Zusammenfassung
 Diese Übung demonstriert die Implementierung einer rastenden Schaltfunktion mit Adaptern für Signalumwandlung. Sie zeigt die Verwendung von Toggle-Flipflops für Zustandsspeicherung und die strukturierte Signalverarbeitung über verschiedene Funktionsbausteine. Die Lösung ist besonders geeignet für Anwendungen, bei denen ein Signal nach dem Loslassen aktiv bleiben soll.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

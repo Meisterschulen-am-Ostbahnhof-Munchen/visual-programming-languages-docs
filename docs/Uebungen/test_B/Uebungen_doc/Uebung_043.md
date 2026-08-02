@@ -1,14 +1,10 @@
 # Uebung_043: Scaling Function Block with limits Testing
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_043`. Dies ist eine Erweiterung der Skalierung um Sicherheitsgrenzen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verwendung des Bausteins `SCALE_LIM`. Im Gegensatz zum einfachen `SCALE` bietet 
 [cite_start]In `Uebung_043.SUB` wird ein hochkomplexer Skalierungs-Szenario mit fixen Grenzen aufgebaut[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_043_network](./Uebung_043_network.svg)
 

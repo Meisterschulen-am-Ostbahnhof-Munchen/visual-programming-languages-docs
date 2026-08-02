@@ -1,8 +1,5 @@
 # Uebung_073_AUI: VDS auf UT ausgeben (Adapter Version)
 
-
-
-
 ![Uebung_073_AUI_network](./Uebung_073_AUI_network.svg)
 
 * * * * * * * * * *

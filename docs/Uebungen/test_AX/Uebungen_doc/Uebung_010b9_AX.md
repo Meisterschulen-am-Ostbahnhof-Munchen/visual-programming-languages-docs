@@ -1,14 +1,10 @@
 # Uebung_010b9_AX: Toggle Flip-Flop mit IE Button_A1 BT_STILL_HELD
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010b9_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Wiederholende Events.
 -----
 
 ## Funktionsweise
-
-
-
 
 ![Uebung_010b9_AX_network](./Uebung_010b9_AX_network.svg)
 

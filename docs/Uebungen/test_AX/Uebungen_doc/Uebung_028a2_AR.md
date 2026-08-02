@@ -1,8 +1,5 @@
 # Uebung_028a2_AR: Analog-Eingang Kalibrierung mit Adaptern NVS
 
-
-
-
 ![Uebung_028a2_AR_network](./Uebung_028a2_AR_network.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # SUBSCRIBE_2
 
-
-
 <img width="1291" height="336" alt="image" src="https://github.com/user-attachments/assets/55eb6a91-e2ee-4848-813e-eb2568e1ed1c" />
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ Der SUBSCRIBE_2-Block initialisiert sich über das INIT-Ereignis und abonniert d
 
 ## Zustandsübersicht
 Der Block durchläuft folgende Hauptzustände:
+
 1. **Nicht initialisiert**: Block wartet auf INIT-Ereignis
 2. **Initialisiert**: Block ist bereit zum Empfang von Daten
 3. **Datenempfang**: Verarbeitung eingehender Daten und Auslösen von IND

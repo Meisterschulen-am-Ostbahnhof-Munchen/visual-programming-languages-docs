@@ -1,7 +1,5 @@
 # GreenWhiteBackground
 
-
-
 <img width="1273" height="233" alt="image" src="https://github.com/user-attachments/assets/ec8d48e6-6d6b-4749-bbe0-e53d06b6be01" />
 
 * * * * * * * * * *
@@ -56,8 +54,6 @@ Die Übung "GreenWhiteBackground" demonstriert die Verwendung von Hintergrundfar
 
 ## Zusammenfassung
 Die GreenWhiteBackground-Übung zeigt eine praktische Anwendung zur dynamischen Änderung von Hintergrundfarben in ISOBUS-Systemen. Durch die Kombination eines Selektionsbausteins mit einem ISOBUS-spezifischen Farbsteuerungsbaustein wird ein einfacher aber effektiver Farbwechselmechanismus implementiert, der grundlegende Konzepte der Funktionsbausteinprogrammierung und ISOBUS-Kommunikation vermittelt.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

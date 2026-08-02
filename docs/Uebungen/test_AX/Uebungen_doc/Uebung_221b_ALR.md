@@ -1,8 +1,5 @@
 # Uebung_221b_ALR: Standard IEC 61131-3 ADI_FB_CTUD (Adapter Version, Vorwärts-/Rückwärtszähler, DINT) mit Terminal-Ausgabe (PHYS)
 
-
-
-
 ![Uebung_221b_ALR_network](./Uebung_221b_ALR_network.svg)
 
 * * * * * * * * * *

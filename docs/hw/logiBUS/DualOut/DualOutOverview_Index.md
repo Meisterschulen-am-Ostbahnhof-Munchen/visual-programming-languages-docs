@@ -1,5 +1,2 @@
 # DualOut Übersicht
 
-
-
-

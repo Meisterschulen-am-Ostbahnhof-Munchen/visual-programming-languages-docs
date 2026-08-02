@@ -1,19 +1,12 @@
 # Uebung_020d_AX: DigitalInput_I1 auf DigitalOutput_Q1; TOF Ausschaltverzögert; aufgelöst
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020d_AX`. Hier wird eine Ausschaltverzögerung (TOF) aus diskreten Ereignis- und Speicherbausteinen aufgebaut.
 
 ----
 
-
 ## Ziel der Übung
-
-
-
 
 ![Uebung_020d_AX_network](./Uebung_020d_AX_network.svg)
 
@@ -41,8 +34,10 @@ Die Logik arbeitet wie folgt:
 
 1.  **Einschalten (Sofort)**:
     Wird `I1` gedrückt, sendet die Weiche ein Event an `EO1`. Dieses Event setzt sofort den Speicher `AX_RS.S` -> `Q1` geht an. Gleichzeitig wird eine eventuell noch laufende Verzögerung gestoppt (`E_DELAY.STOP`).
+
 2.  **Loslassen (Start der Verzögerung)**:
     Wird `I1` losgelassen, sendet die Weiche ein Event an `EO0`. Dieses Event startet die Zeitmessung `E_DELAY.START`. Der Speicher bleibt vorerst auf TRUE.
+
 3.  **Ausschalten (Nach Ablauf der Zeit)**:
     Nach 2 Sekunden feuert `E_DELAY.EO`. Dieses Event setzt den Speicher zurück (`AX_RS.R`) -> `Q1` geht aus.
 

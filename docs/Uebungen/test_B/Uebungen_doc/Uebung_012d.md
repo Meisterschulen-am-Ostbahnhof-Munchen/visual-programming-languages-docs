@@ -1,6 +1,5 @@
 # Uebung_012d: Numeric Value Input PHYS und Speichern NVS
 
-
 ![Uebung_012d_network](./Uebung_012d_network.svg)
 
 * * * * * * * * * *

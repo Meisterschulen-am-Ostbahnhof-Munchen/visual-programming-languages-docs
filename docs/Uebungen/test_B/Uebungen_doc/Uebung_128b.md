@@ -2,8 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_128b` basierend auf den berei
 
 # Uebung_128b: Übung zu ISOBUS Send Message GLOBAL TP BAM
 
-
-
 ![Uebung_128b_network](./Uebung_128b_network.svg)
 
 * * * * * * * * * *
@@ -59,6 +57,7 @@ In dieser Übung werden verschiedene Funktionsbausteine verschaltet, um die Netz
 
 ### Debugging / Visualisierung
 Folgende Bausteine dienen der Aufschlüsselung von Strukturen zu Diagnosezwecken:
+
 *   **eclipse4diac::convert::STRUCT_DEMUX** (`STRUCT_DEMUX_3`): Zerlegt `isobus::pgn::NAMEFIELD_T`.
 *   **eclipse4diac::convert::STRUCT_DEMUX** (`STRUCT_DEMUX_4`): Zerlegt `isobus::pgn::CF_INFO_T`.
 *   **eclipse4diac::convert::STRUCT_DEMUX** (`STRUCT_DEMUX_5`): Zerlegt `isobus::pgn::ISONETEVENT_T`.

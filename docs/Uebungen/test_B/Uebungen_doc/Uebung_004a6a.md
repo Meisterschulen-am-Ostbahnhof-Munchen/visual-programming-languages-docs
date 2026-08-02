@@ -1,6 +1,5 @@
 # Uebung_004a6a: Toggle Flip-Flop mit IE und RT_E_REND (Real-Time Rendezvous)
 
-
 ![Uebung_004a6a_network](./Uebung_004a6a_network.svg)
 
 * * * * * * * * * *

@@ -1,14 +1,10 @@
 # Uebung_007: Blinker mit E_CYCLE und E_T_FF
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_007`. Hier wird gezeigt, wie man periodische Ereignisse erzeugt, um ein zyklisches Blinksignal zu realisieren.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verwendung des `E_CYCLE` Bausteins zur Erzeugung einer Zeitbasis. Es wird demons
 [cite_start]Die Subapplikation `Uebung_007.SUB` kombiniert einen Taktgeber mit einem Speicherglied[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_007_network](./Uebung_007_network.svg)
 

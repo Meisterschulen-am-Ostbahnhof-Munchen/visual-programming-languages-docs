@@ -1,7 +1,5 @@
 # 📚 Bibliotheken: Sequenzer (AX Adapter)
 
-
-
 Dieser Abschnitt beschreibt die in der logiBUS®-Bibliothek verfügbaren Sequenzer-Bausteine, die für die Verwendung mit dem **AX Adapter** optimiert sind.
 
 ---
@@ -50,6 +48,7 @@ Die Pattern-Sequenzer (`sequence_Pattern_xx_AX`) ermöglichen es, für jeden Sch
 
 ### Funktionsweise
 Jeder Zustand `S1` bis `Sx` hat einen zugehörigen Eingang `P_S1` bis `P_Sx` vom Typ `BYTE`. Die einzelnen Bits dieses Bytes steuern die Adapter-Ausgänge `Q1` bis `Qx`:
+
 - Bit 0 -> Ausgang Q1
 - Bit 1 -> Ausgang Q2
 - ...und so weiter.

@@ -1,8 +1,5 @@
 # Uebung_205_AX: Interlock: ILOCK_SWITCH_PROTECT_AX (Umschalt-Priorität mit Schutzzeit via Adapter)
 
-
-
-
 ![Uebung_205_AX_network](./Uebung_205_AX_network.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # F_UINT_TO_REAL
 
-
-
 <img width="1441" height="216" alt="F_UINT_TO_REAL" src="https://github.com/user-attachments/assets/4cb48960-25c6-479d-9c4c-636b5a546a0c" />
 
 * * * * * * * * * *
@@ -44,9 +42,6 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu komplexeren Konvertierungsblöcken bietet `F_UINT_TO_REAL` eine einfache, direkte Umwandlung ohne zusätzliche Funktionalität.
 - Ähnliche Blöcke könnten zusätzliche Features wie Skalierung oder Bereichsprüfungen bieten, was hier nicht der Fall ist.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

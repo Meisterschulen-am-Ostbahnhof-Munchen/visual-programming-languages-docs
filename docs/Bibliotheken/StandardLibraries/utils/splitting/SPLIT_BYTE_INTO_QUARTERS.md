@@ -6,7 +6,6 @@
 
 ---- 
 
-
 ![SPLIT_BYTE_INTO_QUARTERS](https://github.com/user-attachments/assets/9cbf32e0-f8c2-437f-88d3-8e29db1731dd)
 
 * * * * * * * * * *
@@ -35,6 +34,7 @@ Es werden keine Adapter verwendet.
 
 ## Funktionsweise
 Der Funktionsblock extrahiert die vier Viertelbytes aus dem Eingabebyte `IN` mithilfe von Bitoperationen:
+
 1. Jedes Viertelbyte wird durch eine bitweise UND-Operation mit einer entsprechenden Maske isoliert.
 2. Anschließend wird das Ergebnis durch eine Rechtsverschiebung (`SHR`) in die richtige Position gebracht.
 3. Die verwendeten Masken und Verschiebungswerte sind in der Konstanten-Datei `quarterconst` definiert.
@@ -54,11 +54,6 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt ausschl
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Bitmanipulations-Funktionsblöcken bietet `SPLIT_BYTE_INTO_QUARTERS` eine spezialisierte und optimierte Lösung für die Aufteilung eines Bytes in vier Teile.
 - Andere Blöcke wie `EXTRACT_BITS` oder `BIT_SLICE` sind allgemeiner, erfordern aber mehr Konfiguration und sind möglicherweise weniger effizient.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

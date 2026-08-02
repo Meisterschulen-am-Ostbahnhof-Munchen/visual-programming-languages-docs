@@ -1,14 +1,10 @@
 # Uebung_038: Lauflicht 8 reine Zeitsteuerung
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_038`. Hier wird eine umfangreichere Schrittkette mit 8 Phasen realisiert.
 
 ----
-
 
 ## Übersicht
 

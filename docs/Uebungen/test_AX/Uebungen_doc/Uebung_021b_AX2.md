@@ -1,8 +1,5 @@
 # Uebung_021b_AX2: Spiegelabfolge (1) - AX Variante
 
-
-
-
 ![Uebung_021b_AX2_network](./Uebung_021b_AX2_network.svg)
 
 * * * * * * * * * *
@@ -49,12 +46,14 @@ Diese Übung demonstriert die Steuerung einer einfachen Spiegelabfolge mithilfe 
 ## Programmablauf und Verbindungen
 
 Der Ablauf ist in zwei Kommentarfelder unterteilt:
+
 - **START-Knopf** (bei Softkey F1)  
 - **Endlage** (bei Softkey F2)
 
 ### Ereignisverbindungen
 - `SoftKey_UP_F1.IND` → `AX_FB_SR.S`  
   Ein Druck auf Softkey F1 sendet ein Ereignis an den Set‑Eingang des Flipflops.
+
 - `SoftKey_F2_DOWN.IND` → `AX_FB_SR.R`  
   Ein Druck auf Softkey F2 sendet ein Ereignis an den Reset‑Eingang des Flipflops.
 
@@ -70,6 +69,7 @@ Der Ablauf ist in zwei Kommentarfelder unterteilt:
 ## Zusammenfassung
 
 In dieser Übung wird ein AX‑SR‑Flipflop verwendet, um eine einfache Spiegelsteuerung zu realisieren. Sie lernen:
+
 - Wie man Softkey‑Ereignisse in die Steuerungslogik einbindet.
 - Die Funktionsweise eines adapterbasierten SR‑Flipflops (Setzen und Rücksetzen über Ereignisse).
 - Die Ansteuerung eines digitalen Ausgangs (logiBUS_QXA) über Adapterverbindungen.

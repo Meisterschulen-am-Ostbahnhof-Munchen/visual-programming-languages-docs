@@ -1,11 +1,5 @@
 # UDINT Konvertierungen
 
-
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_009](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)

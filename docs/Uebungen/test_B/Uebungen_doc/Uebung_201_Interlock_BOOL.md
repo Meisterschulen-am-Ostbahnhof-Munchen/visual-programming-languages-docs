@@ -1,6 +1,5 @@
 # Uebung_201_Interlock_BOOL: Interlock basic exercise (BOOL)
 
-
 ![Uebung_201_Interlock_BOOL_network](./Uebung_201_Interlock_BOOL_network.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Es sind keine verschachtelten Sub‑Bausteine (Unterapplikationen) vorhanden.
 
 3. **Verriegelungskette**  
    Über Adapterverbindungen sind die Interlock‑Blöcke kaskadiert:
+
    - `ILOCK_1.ILOCK_OUT` → `ILOCK_2.ILOCK_IN`
    - `ILOCK_2.ILOCK_OUT` → `ILOCK_3.ILOCK_IN`
    - `ILOCK_3.ILOCK_OUT` → `ILOCK_4.ILOCK_IN`

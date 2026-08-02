@@ -1,8 +1,5 @@
 # Uebung_075_AX: LD auf Q
 
-
-
-
 ![Uebung_075_AX_network](./Uebung_075_AX_network.svg)
 
 * * * * * * * * * *
@@ -39,8 +36,10 @@ Die Verdrahtung innerhalb des SubApp-Netzwerks erfolgt ausschließlich über **A
 2. Die Verbindung  
    - **`IA_Lighting.RIGHT_TURN_SIGNAL_LIGHTS` → `DigitalOutput_Q1.OUT`**  
      leitet das Signal für den rechten Blinker zum digitalen Ausgang Q1.
+
    - **`IA_Lighting.LEFT_TURN_SIGNAL_LIGHTS` → `DigitalOutput_Q2.OUT`**  
      leitet das Signal für den linken Blinker zum digitalen Ausgang Q2.
+
 3. Der dritte Ausgangsbaustein `DigitalOutput_Q3` bleibt in dieser Übung ungenutzt (kann als Reserve oder für Erweiterungen dienen).
 
 Dank der Adaptertechnik entfällt eine aufwändige Parameterübergabe – die Signalpropagation erfolgt typisiert und automatisch.

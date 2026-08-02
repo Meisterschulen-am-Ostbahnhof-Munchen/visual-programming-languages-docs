@@ -1,8 +1,5 @@
 # Uebung_211b_ALR: Standard IEC 61131-3 ADI_FB_CTU (Adapter Version, Vorwärtszähler, DINT) mit Terminal-Ausgabe (PHYS)
 
-
-
-
 ![Uebung_211b_ALR_network](./Uebung_211b_ALR_network.svg)
 
 * * * * * * * * * *

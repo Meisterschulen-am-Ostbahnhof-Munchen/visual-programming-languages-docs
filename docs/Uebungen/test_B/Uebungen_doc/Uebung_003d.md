@@ -1,14 +1,10 @@
 # Uebung_003d: DigitalInput_I1/_I2 auf DigitalOutput_Q1/_I2
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003d`. Diese Übung ist strukturell identisch mit `Uebung_003` und dient der Festigung des Verständnisses für parallele Signalpfade in der IEC 61499.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Ziel ist die Wiederholung der direkten I/O-Verknüpfung mittels Ereignis- un
 [cite_start]Die Subapplikation `Uebung_003d.SUB` verbindet zwei Eingangsbausteine direkt mit zwei Ausgangsbausteinen[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_003d_network](./Uebung_003d_network.svg)
 

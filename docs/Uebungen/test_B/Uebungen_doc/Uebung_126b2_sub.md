@@ -1,6 +1,5 @@
 # Uebung_126b2_sub:  SINUS-Funktion Plotten auf PCAN Explorer
 
-
 ![Uebung_126b2_sub_network](./Uebung_126b2_sub_network.svg)
 
 * * * * * * * * * *
@@ -15,6 +14,7 @@ Die Übung verwendet die folgenden Funktionsbausteine innerhalb des Subapplikati
 
 - **GEN_SIN** (Typ: `OSCAT::Basic::POUs::Engineering::signal_generators::GEN_SIN`)  
   Erzeugt einen sinusförmigen Signalverlauf.  
+
   - Parameter:  
     - `PT` = T#10s (Periodendauer 10 Sekunden)  
     - `AM` = 10.0 (Amplitude)  
@@ -25,17 +25,20 @@ Die Übung verwendet die folgenden Funktionsbausteine innerhalb des Subapplikati
 
 - **F_REAL_TO_DWORD** (Typ: `iec61131::conversion::F_REAL_TO_DWORD`)  
   Wandelt den REAL-Sinuswert in ein DWORD (32-Bit) um.  
+
   - Ereigniseingang `REQ`, Ausgang `CNF`.  
   - Dateneingang `IN`, Datenausgang `OUT`.
 
 - **BYTES_TO_ARR08B** (Typ: `logiBUS::utils::conversion::arr::reversing::DWORDS_TO_ARR08B`)  
   Konvertiert ein DWORD in ein Array von 8 Bytes (umgekehrte Byte-Reihenfolge).  
+
   - Parameter: `IN_01` = 16#00 (zweites DWORD auf null gesetzt, da nur ein DWORD verarbeitet wird).  
   - Dateneingang `IN_00` erhält das konvertierte DWORD von `F_REAL_TO_DWORD`.  
   - Datenausgang `OUT` liefert das Byte-Array.
 
 - **STRUCT_MUX** (Typ: `eclipse4diac::convert::STRUCT_MUX`)  
   Baut aus den Eingangsdaten eine Struktur vom Typ `isobus::pgn::CAN_MSG` zusammen.  
+
   - Parameter:  
     - `StructuredType` = `isobus::pgn::CAN_MSG`  
     - `u16DaSize` = 0 (Längenfeld)  
@@ -46,6 +49,7 @@ Die Übung verwendet die folgenden Funktionsbausteine innerhalb des Subapplikati
 
 - **CallbackFB** (Typ: `isobus::pgn::tx::CallbackFB`)  
   Sendet die CAN-Nachricht über den Adapter `PLUG1` an den PCAN Explorer.  
+
   - Parameter: `DI1` = `(data := [16#FF, 16#FF, ...])` (dieser Wert wird durch die Verbindung von `STRUCT_MUX.OUT` überschrieben).  
   - Ereigniseingang `CNF` zum Auslösen des Sendens.  
   - Ausgang `REQ` (Trigger für nächsten Zyklus).  
@@ -63,6 +67,7 @@ Der Ablauf ist zyklisch und wird durch die Ereignisverkettung gesteuert:
 6. **Senden**: `CallbackFB` sendet die CAN-Nachricht über den Adapter `PLUG1` und triggert anschließend erneut `GEN_SIN` (über `REQ`), wodurch der Zyklus von vorne beginnt.
 
 Die Datenverbindungen übertragen die entsprechenden Werte:
+
 - `GEN_SIN.Out` → `F_REAL_TO_DWORD.IN`
 - `F_REAL_TO_DWORD.OUT` → `BYTES_TO_ARR08B.IN_00`
 - `BYTES_TO_ARR08B.OUT` → `STRUCT_MUX.data`

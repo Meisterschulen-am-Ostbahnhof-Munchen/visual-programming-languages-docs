@@ -1,7 +1,5 @@
 # SPLIT_DWORD_INTO_BOOLS
 
-
-
 ![SPLIT_DWORD_INTO_BOOLS](https://github.com/user-attachments/assets/6450d832-86ef-4de3-96ad-82a9b4c7bb3e)
 
 * * * * * * * * * *
@@ -27,6 +25,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 Der Funktionsblock extrahiert jedes Bit des Eingangs-DWORD `IN` und weist es den entsprechenden BOOL-Ausgängen zu. Die Zuordnung erfolgt direkt:
+
 - `BIT_00` = Bit 0 (LSB)
 - `BIT_01` = Bit 1
 - ...

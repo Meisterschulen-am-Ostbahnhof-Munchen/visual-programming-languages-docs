@@ -1,8 +1,5 @@
 # Uebung_070_AUI: WBSD auf UT ausgeben (Adapter Version)
 
-
-
-
 ![Uebung_070_AUI_network](./Uebung_070_AUI_network.svg)
 
 * * * * * * * * * *

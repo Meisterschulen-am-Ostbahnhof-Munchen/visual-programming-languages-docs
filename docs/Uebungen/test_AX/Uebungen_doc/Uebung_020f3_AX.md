@@ -1,14 +1,10 @@
 # Uebung_020f3_AX: DigitalInput_I1 auf DigitalOutput_Q1; BLINKER
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020f3_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Verwendung des `AX_BLINK` Bausteins für asymmetrisches Blinken.
 [cite_start]Die Subapplikation `Uebung_020f3_AX.SUB` nutzt einen spezialisierten Blinker-Baustein[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_020f3_AX_network](./Uebung_020f3_AX_network.svg)
 

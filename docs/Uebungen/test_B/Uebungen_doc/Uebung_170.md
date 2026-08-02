@@ -2,8 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_170` basierend auf den bereit
 
 # Uebung_170: Exercise for ARTimeOut
 
-
-
 ![Uebung_170_network](./Uebung_170_network.svg)
 
 * * * * * * * * * *

@@ -1,14 +1,10 @@
 # Uebung_111: Übung zum Integer Überlauf
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_111`. Hier wird gezeigt, wie man durch rechtzeitige Konvertierung in größere Datentypen Rechenfehler verhindert.
 
 ----
-
 
 ## Übersicht
 

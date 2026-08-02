@@ -1,6 +1,5 @@
 # Uebung_007c: Blinker mit E_CYCLE und E_T_FF
 
-
 ![Uebung_007c_network](./Uebung_007c_network.svg)
 
 * * * * * * * * * *
@@ -9,6 +8,7 @@
 
 Diese Übung demonstriert die Erstellung eines einfachen Blinkers mithilfe der IEC‑61499‑Bausteine `E_CYCLE` und `E_T_FF`.  
 Der Blinker wird über zwei digitale Eingänge gesteuert:  
+
 - **Eingang I1** (Taster Single‑Click) startet die Blinkfunktion.  
 - **Eingang I2** (Taster Single‑Click) stoppt sie.  
 

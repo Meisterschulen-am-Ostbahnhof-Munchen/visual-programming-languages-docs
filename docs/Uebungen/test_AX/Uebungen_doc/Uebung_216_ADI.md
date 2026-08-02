@@ -1,8 +1,5 @@
 # Uebung_216_ADI: Standard IEC 61131-3 ADI_FB_CTD (Adapter Version, Rückwärtszähler, DINT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_216_ADI_network](./Uebung_216_ADI_network.svg)
 
 * * * * * * * * * *

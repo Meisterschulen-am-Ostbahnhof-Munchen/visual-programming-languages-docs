@@ -1,6 +1,5 @@
 # IB
 
-
 ## 🎧 Podcast
 
 * [Eclipse 4diac: Innovationsmotor Forschung vs. Nutzerbedürfnisse – Was treibt die Entwicklung wirklich voran?](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Innovationsmotor-Forschung-vs--Nutzerbedrfnisse--Was-treibt-die-Entwicklung-wirklich-voran-e38cke4)
@@ -52,6 +51,7 @@ Der IB-Funktionsblock arbeitet als bidirektionale Schnittstelle für Byte-Eingab
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Hauptzustände:
+
 1. **Nicht initialisiert**: Wartet auf INIT-Ereignis
 2. **Initialisiert**: Bereit für Datenerfassung
 3. **Datenanforderung**: Verarbeitet REQ-Ereignisse
@@ -65,14 +65,10 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Eingabebausteinen:
+
 - IB spezialisiert auf BYTE-Datentyp (8-Bit)
 - Bietet sowohl pollende (REQ) als auch interrupt-artige (IND) Betriebsmodi
 - Einfacher als komplexere Protokollbausteine, aber spezifischer für Byte-Daten
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

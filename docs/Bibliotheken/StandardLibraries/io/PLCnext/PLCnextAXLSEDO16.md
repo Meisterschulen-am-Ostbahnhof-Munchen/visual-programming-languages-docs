@@ -1,7 +1,5 @@
 # PLCnextAXLSEDO16
 
-
-
 <img width="1134" height="525" alt="image" src="https://github.com/user-attachments/assets/75f7b085-4f46-4f43-9c7b-b30650d90440" />
 
 * * * * * * * * * *
@@ -66,6 +64,7 @@ Der Baustein initialisiert bei Empfang des INIT-Ereignisses die 16 digitalen Aus
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einfacheren digitalen Ausgangsbausteinen bietet PLCnextAXLSEDO16:
+
 - Höhere Kanalanzahl (16 statt typischerweise 8)
 - Spezifische Integration für PLCnext-Hardware
 - Erweiterte Statusrückmeldungen

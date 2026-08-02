@@ -1,14 +1,10 @@
 # Uebung_020e_AX: DigitalInput_I1 auf DigitalOutput_Q1; AX_TOF; Ausschaltverzögert
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020e_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Kennenlernen des Timer-Bausteins `AX_TOF`.
 [cite_start]Die Subapplikation `Uebung_020e_AX.SUB` verzögert das Ausschaltsignal[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_020e_AX_network](./Uebung_020e_AX_network.svg)
 

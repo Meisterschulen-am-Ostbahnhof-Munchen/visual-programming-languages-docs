@@ -1,8 +1,5 @@
 # Uebung_213b_ALR: Standard IEC 61131-3 AUDI_FB_CTU (Adapter Version, Vorwärtszähler, UDINT) mit Terminal-Ausgabe (PHYSA_LREAL)
 
-
-
-
 ![Uebung_213b_ALR_network](./Uebung_213b_ALR_network.svg)
 
 * * * * * * * * * *

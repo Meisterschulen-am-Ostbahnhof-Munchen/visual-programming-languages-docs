@@ -1,6 +1,5 @@
 # IE
 
-
 ## 🎧 Podcast
 
 * [4diac IDE: Dein "Hello World" der Automatisierung – Das Blinking Tutorial Lokal](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)
@@ -55,6 +54,7 @@ Der IE-Funktionsblock arbeitet als bidirektionale Schnittstelle für Eingabeerei
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Hauptzustände:
+
 1. **Nicht initialisiert**: Block wartet auf INIT-Ereignis
 2. **Initialisiert**: Block ist betriebsbereit und kann REQ- und IND-Ereignisse verarbeiten
 3. **Abfrage aktiv**: Verarbeitung einer REQ-Anfrage
@@ -69,14 +69,10 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Eingabeblöcken bietet IE erweiterte Funktionalität:
+
 - Gegenüber reinen E/A-Blöcken: Unterstützt sowohl poll- als auch event-basierte Abfragen
 - Gegenüber statischen Eingabeblöcken: Dynamische Parametrierung zur Laufzeit
 - Erweiterte Statusrückmeldungen für verbesserte Fehlerdiagnose
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

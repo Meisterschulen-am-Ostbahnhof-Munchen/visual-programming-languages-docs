@@ -24,6 +24,7 @@ Diese Übung demonstriert das Einlesen eines String-Wertes von einer Eingabequel
 
 ## Programmablauf und Verbindungen
 Der oberste Baustein `Uebung_012k` besitzt keine eigene Schnittstelle (leere `SubAppInterfaceList`). Er instanziiert den Sub-Baustein `Uebung_012k_sub` und übergibt diesem drei konstante Parameter:
+
 - `KEY` = `KEY_I1_STORE`
 - `SECTION` = `SECTION_I1_STORE`
 - `u16ObjId` = `InputString_S1`

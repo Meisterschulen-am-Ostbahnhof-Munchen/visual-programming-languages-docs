@@ -1,8 +1,5 @@
 # Uebung_205b_AX: Interlock: ILOCK_SWITCH_PROTECT_AX (Motor Reversierung mit Schutzzeit via Adapter)
 
-
-
-
 ![Uebung_205b_AX_network](./Uebung_205b_AX_network.svg)
 
 * * * * * * * * * *
@@ -56,6 +53,7 @@ Vorkenntnisse: Grundlagen der 4diac-IDE, Umgang mit Ein-/Ausgangsbausteinen, Ver
 - **Verwendete interne FBs**: (keine detaillierten Informationen in der Übung enthalten)  
 - **Funktionsweise**:  
   Dieser Sub-Baustein dient der Weiterleitung und logischen Verknüpfung der Auf- und Abwärtssignale.  
+
   - **UP_IN** und **DOWN_IN** werden als Eingänge empfangen.  
   - **UP_OUT** gibt das Signal von UP_IN unverändert weiter.  
   - **DOWN_OUT** gibt das Signal von DOWN_IN unverändert weiter.  
@@ -70,6 +68,7 @@ Vorkenntnisse: Grundlagen der 4diac-IDE, Umgang mit Ein-/Ausgangsbausteinen, Ver
 
 2. **Interlock-Logik**  
    `ILOCK_AX` wertet die beiden Anforderungen aus.  
+
    - Bei einer aktiven Anforderung (z.B. `UP_IN`) wird der entsprechende Ausgang (`UP_OUT`) aktiviert, sofern nicht gleichzeitig die Gegenrichtung anliegt.  
    - Die Schutzzeit `DT_PROTECT = 1s` verhindert, dass nach einem Richtungswechsel sofort die andere Richtung geschaltet werden kann.  
    - Wenn die Schutzzeit aktiv ist und eine Anforderung für die Gegenrichtung kommt, wird der Ausgang blockiert und der `timeOut`-Ereignisausgang getriggert.
@@ -79,6 +78,7 @@ Vorkenntnisse: Grundlagen der 4diac-IDE, Umgang mit Ein-/Ausgangsbausteinen, Ver
 
 4. **Signalverteilung via AX_2_TO_3**  
    Die Ausgänge `UP_OUT` und `DOWN_OUT` von `ILOCK_AX` werden an die SubApp `AX_2_TO_3` übergeben.  
+
    - `UP_OUT` → `AX_2_TO_3.UP_IN`  
    - `DOWN_OUT` → `AX_2_TO_3.DOWN_IN`  
    Der Sub-Baustein leitet die Signale getrennt an die Ausgangsbausteine `Rechtslauf` (Q5) und `Linkslauf` (Q6) weiter.  

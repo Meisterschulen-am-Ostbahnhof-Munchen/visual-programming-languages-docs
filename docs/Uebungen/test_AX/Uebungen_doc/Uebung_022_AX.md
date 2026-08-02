@@ -2,9 +2,6 @@
 
 Kein Bild verfügbar.
 
-
-
-
 ![Uebung_022_AX_network](./Uebung_022_AX_network.svg)
 
 * * * * * * * * * *

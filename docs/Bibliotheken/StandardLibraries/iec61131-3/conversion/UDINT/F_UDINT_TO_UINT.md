@@ -1,7 +1,5 @@
 # F_UDINT_TO_UINT
 
-
-
 <img width="1450" height="216" alt="F_UDINT_TO_UINT" src="https://github.com/user-attachments/assets/9ee78872-0f37-4ed5-be3e-2592ac760277" />
 
 * * * * * * * * * *
@@ -44,9 +42,6 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_UDINT_TO_UINT` spezialisiert auf die Konvertierung von UDINT zu UINT und daher effizienter in der Ausführung.
 - Ähnliche Blöcke wie `F_DINT_TO_INT` konvertieren zwischen anderen Integer-Typen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

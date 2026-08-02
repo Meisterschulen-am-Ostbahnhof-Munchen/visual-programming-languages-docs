@@ -1,7 +1,5 @@
 # FIELDBUS_PERCENT_TO_WORD
 
-
-
 <img width="919" height="181" alt="FIELDBUS_PERCENT_TO_WORD" src="https://github.com/user-attachments/assets/559a5a2e-44fd-433f-b22a-d685fe90c062" />
 
 * * * * * * * * * *
@@ -27,6 +25,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock führt folgende Schritte durch:
+
 1. Multiplikation des Eingangs-REAL-Werts (`RI`) mit dem konvertierten maximalen gültigen Signalwert (`FIELDBUS_SIGNAL::VALID_SIGNAL_W`).
 2. Konvertierung des Ergebnisses in einen UDINT-Wert.
 3. Umwandlung des UDINT-Werts in den finalen WORD-Ausgangswert.

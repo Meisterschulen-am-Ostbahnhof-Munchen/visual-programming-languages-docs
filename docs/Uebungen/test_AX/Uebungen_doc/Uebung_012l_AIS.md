@@ -1,8 +1,5 @@
 # Uebung_012l_AIS: String Input und Speichern NVS (AIS Adapter, plain)
 
-
-
-
 ![Uebung_012l_AIS_network](./Uebung_012l_AIS_network.svg)
 
 * * * * * * * * * *

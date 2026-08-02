@@ -1,14 +1,10 @@
 # Uebung_004a3: wie Uebung_004a2 aber ohne E_MERGE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a3`. Diese Übung zeigt eine Vereinfachung gegenüber `Uebung_004a2`: In IEC 61499 können mehrere Ereignisquellen oft direkt auf denselben Ereigniseingang verbunden werden.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Ziel ist die Reduktion der visuellen Komplexität im Netzwerk-Diagramm. Es w
 [cite_start]Die Subapplikation `Uebung_004a3.SUB` verbindet zwei Event-Quellen direkt mit dem Takteingang des Flip-Flops[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_004a3_network](./Uebung_004a3_network.svg)
 

@@ -1,6 +1,5 @@
 # Uebung_203b: Interlock: ILOCK_SWITCH (Motor Reversierung Priorität Last-Wins)
 
-
 ![Uebung_203b_network](./Uebung_203b_network.svg)
 
 * * * * * * * * * *
@@ -69,6 +68,7 @@ Ein zusätzlicher **Low-Side-Treiber** wird bei jeder aktiven Drehrichtung einge
 6. Sobald mindestens einer der beiden Datenwerte `TRUE` ist, liefert `OR_2_BOOL.OUT = TRUE`. Das Bestätigungsereignis `CNF` aktiviert dann den **LowSide_Treiber** (`REQ`), der die gemeinsame Versorgung der Last (z. B. Motorspannung) über `Output_Q56` einschaltet.
 
 Durch diese Verschaltung wird sichergestellt:
+
 - Nie beide Drehrichtungen gleichzeitig aktiv.
 - Die Last wird nur bestromt, wenn eine Drehrichtung angefordert wird.
 - Die **Last-Wins-Priorität** verhindert Blockaden bei gleichzeitigen Tasterbetätigungen.

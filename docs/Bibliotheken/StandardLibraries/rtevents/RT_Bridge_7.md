@@ -1,7 +1,5 @@
 # RT_Bridge_7
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

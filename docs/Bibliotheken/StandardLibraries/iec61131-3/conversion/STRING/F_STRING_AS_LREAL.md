@@ -1,7 +1,5 @@
 # F_STRING_AS_LREAL
 
-
-
 <img width="1478" height="213" alt="F_STRING_AS_LREAL" src="https://github.com/user-attachments/assets/880cb73d-8178-4d13-866b-ef55bab0ae2a" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ END_ALGORITHM
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
+
 1. Wartet auf `REQ`-Ereignis
 2. Führt Konvertierung durch
 3. Sendet `CNF`-Ereignis

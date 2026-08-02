@@ -1,6 +1,5 @@
 # Uebung_219b: Standard IEC 61131-3 FB_CTD_ULINT (Rückwärtszähler, ULINT) mit Terminal-Ausgabe (PHYS_LREAL)
 
-
 ![Uebung_219b_network](./Uebung_219b_network.svg)
 
 * * * * * * * * * *
@@ -45,11 +44,13 @@ Der Ablauf wird durch Ereignis- und Datenverbindungen gesteuert:
    - `Input_LD.IN` → `FB_CTD_ULINT.LD` (Load)  
 
    → Die logischen Zustände der beiden Eingänge bestimmen die Aktion:  
+
      - Ist **CD = TRUE** und **LD = FALSE**, wird der Zählwert dekrementiert.  
      - Ist **LD = TRUE** (unabhängig von CD), wird der Preset-Wert (10) geladen.
 
 3. **Ausgabe nach Verarbeitung**  
    Nach Abschluss der Zähleroperation wird das Ereignis **CNF** des Zählers ausgelöst. Dieses ist mit zwei nachfolgenden Bausteinen verbunden:  
+
    - `Output_Q1.REQ`: Der aktuelle Zustand von `FB_CTD_ULINT.Q` (Zählerstand = 0 → TRUE) wird auf den digitalen Ausgang `Output_Q1` geschrieben.  
    - `F_ULINT_TO_LREAL.REQ`: Der aktuelle Zählwert (`FB_CTD_ULINT.CV`) wird in eine LREAL-Zahl umgewandelt.
 

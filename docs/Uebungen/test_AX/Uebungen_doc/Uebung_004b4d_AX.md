@@ -1,8 +1,5 @@
 # Uebung_004b4d_AX: Drei gegenseitig verriegelte Toggle-Flip-Flops in einer Kette via AE2-Adapter mit ILOCK_T_FF_AX
 
-
-
-
 ![Uebung_004b4d_AX_network](./Uebung_004b4d_AX_network.svg)
 
 * * * * * * * * * *
@@ -46,6 +43,7 @@ Es sind keine Sub‑Bausteine innerhalb dieser SubApp definiert. Alle verwendete
 ## Zusammenfassung
 
 Die Übung demonstriert den Aufbau einer verriegelten Toggle‑Kette mit Hilfe des Funktionsbausteins `ILOCK_T_FF_AX`. Lernziele sind das Verständnis von:
+
 - Toggle‑Flip‑Flops und deren Zustandswechsel,
 - gegenseitiger Verriegelung (Interlocking) über Adapter‑Schnittstellen,
 - kaskadierter Sperrlogik, bei der immer nur genau ein Ausgang aktiv sein kann.

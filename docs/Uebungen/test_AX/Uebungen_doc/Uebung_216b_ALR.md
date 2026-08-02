@@ -1,8 +1,5 @@
 # Uebung_216b_ALR: Standard IEC 61131-3 ADI_FB_CTD (Adapter Version, DINT) mit Terminal-Ausgabe (PHYS)
 
-
-
-
 ![Uebung_216b_ALR_network](./Uebung_216b_ALR_network.svg)
 
 * * * * * * * * * *

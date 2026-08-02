@@ -1,7 +1,5 @@
 # FB_CTU_DINT
 
-
-
 <img width="1396" height="277" alt="" src="https://github.com/user-attachments/assets/36c696fb-4dfc-457a-bd17-1842876fa432" />
 
 * * * * * * * * * *
@@ -33,6 +31,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der FB_CTU_DINT arbeitet nach folgenden Regeln:
+
 1. Bei aktivem Reset (R=TRUE) wird der Zählerwert (CV) auf 0 zurückgesetzt
 2. Bei aktivem Zähleingang (CU=TRUE) und nicht aktivem Reset wird der Zählerwert um 1 erhöht (bis zum Maximalwert von 2147483647)
 3. Der Ausgang Q wird auf TRUE gesetzt, sobald der Zählerwert (CV) den Preset-Wert (PV) erreicht oder überschreitet

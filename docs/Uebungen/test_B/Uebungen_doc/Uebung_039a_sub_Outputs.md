@@ -2,10 +2,7 @@ Hier ist die Dokumentation für die Übung basierend auf den bereitgestellten XM
 
 # Uebung_039a_sub_Outputs: Subapplication Type
 
-
-
 ![Bild der Übung, falls vorhanden]
-
 
 ![Uebung_039a_sub_Outputs_network](./Uebung_039a_sub_Outputs_network.svg)
 
@@ -79,8 +76,6 @@ Der Ablauf innerhalb dieser Sub-Applikation lässt sich wie folgt beschreiben:
 ## Zusammenfassung
 
 Die `Uebung_039a_sub_Outputs` stellt einen kompletten Funktionsblock dar, der einen Softkey mit einem digitalen Ausgang verknüpft. Sie bietet eine integrierte Toggle-Funktionalität sowie eine automatische visuelle Aktualisierung der Taste auf dem Display. Durch die zusätzlichen `SET` und `RESET` Eingänge lässt sie sich flexibel in übergeordnete Steuerungslogiken einbinden.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

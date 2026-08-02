@@ -1,6 +1,5 @@
 # Uebung_204: Interlock: ILOCK_CONFLICT_TRIP (Trip bei Konflikt mit Reset)
 
-
 ![Uebung_204_network](./Uebung_204_network.svg)
 
 * * * * * * * * * *

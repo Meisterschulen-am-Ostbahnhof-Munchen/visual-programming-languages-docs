@@ -1,14 +1,10 @@
 # Uebung_004c7: Toggle Flip-Flop mit IE mit BUTTON_PRESS_END
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004c7`. Auch hier wird der Baustein `logiBUS_IE2` genutzt, um die Haltezeit für ein Ereignis individuell anzupassen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,7 +19,6 @@ Festlegung einer spezifischen Zeitdauer für einen langen Tastendruck.
 -----
 
 ## Funktionsweise
-
 
 ![Uebung_004c7_network](./Uebung_004c7_network.svg)
 

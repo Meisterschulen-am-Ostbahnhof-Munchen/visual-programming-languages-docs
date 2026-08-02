@@ -1,7 +1,5 @@
 # ASSEMBLE_WORD_FROM_BOOLS
 
-
-
 ![ASSEMBLE_WORD_FROM_BOOLS](https://github.com/user-attachments/assets/0f9e88ae-3645-4364-a8e7-183caf4f1bb0)
 
 * * * * * * * * * *
@@ -18,6 +16,7 @@ Der Funktionsblock `ASSEMBLE_WORD_FROM_BOOLS` kombiniert 16 boolesche Eingangswe
 
 ### **Daten-Eingänge**
 16 boolesche Eingänge (BIT_00 bis BIT_15), die jeweils einem Bit im resultierenden WORD entsprechen:
+
 - `BIT_00` bis `BIT_15` (BOOL): Einzelne Bits für das zusammenzusetzende WORD
 
 ### **Daten-Ausgänge**
@@ -28,6 +27,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Bei Auslösung des `REQ`-Ereignisses werden alle 16 booleschen Eingangswerte gelesen und zu einem 16-Bit-WORD kombiniert. Dabei entspricht:
+
 - `BIT_00` dem Bit 0 (LSB)
 - `BIT_15` dem Bit 15 (MSB)
 

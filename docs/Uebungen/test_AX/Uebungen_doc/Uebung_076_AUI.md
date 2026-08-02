@@ -1,8 +1,5 @@
 # Uebung_076_AUI: MSS mit Compound Scaling auf UT ausgeben (Adapter Version)
 
-
-
-
 ![Uebung_076_AUI_network](./Uebung_076_AUI_network.svg)
 
 * * * * * * * * * *
@@ -54,6 +51,7 @@ Die Übung veranschaulicht die typische ISO-bus-Datenverarbeitungskette:
 **Sensor/MSS → Skalierung → Ausgabe auf Terminal**.  
 Durch die Verwendung von Adapterverbindungen bleibt die Konfiguration flexibel und erweiterbar.  
 Lernziele sind unter anderem:
+
 - Verständnis der MSS-Verarbeitung in der Landtechnik
 - Anwendung von Compound Scaling (zusammengesetzte Skalierung)
 - Arbeiten mit ISO-bus-Adapter-FBs und Object-Pool-Referenzen

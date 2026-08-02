@@ -1,7 +1,5 @@
 # QD
 
-
-
 ![](https://user-images.githubusercontent.com/69573151/210781704-73d6a020-e7c0-430e-9797-2d0ef1cc6cc3.png)
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der QD-Block arbeitet als zyklischer Service-Interface-Baustein. Bei Empfang des
 
 ## Zustandsübersicht
 Der Block durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Block wartet auf INIT-Ereignis
 2. **Initialisiert**: Block ist betriebsbereit und wartet auf REQ-Ereignisse
 3. **Service-Ausführung**: Verarbeitung einer REQ-Anforderung
@@ -56,15 +55,11 @@ Der Block durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Ausgabeblöcken bietet QD:
+
 - Erweiterte Parametrierbarkeit durch STRING-Parameter
 - DWORD-Datenbreite statt einfacher BOOL- oder BYTE-Werte
 - Detaillierte Statusrückmeldungen für Fehlerdiagnose
 - Vollständige Service-Interface-Charakteristik mit Initialisierungsprozedur
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

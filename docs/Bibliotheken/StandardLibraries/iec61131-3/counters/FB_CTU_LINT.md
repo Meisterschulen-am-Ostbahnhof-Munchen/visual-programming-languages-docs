@@ -1,7 +1,5 @@
 # FB_CTU_LINT
 
-
-
 <img width="1396" height="277" alt="FB_CTU_LINT" src="https://github.com/user-attachments/assets/a956d757-67d1-486f-b882-ab20f78546cf" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 Der Funktionsblock führt bei jedem `REQ`-Ereignis folgende Operationen durch:
+
 1. Wenn `R` TRUE ist, wird der Zähler (`CV`) auf 0 zurückgesetzt.
 2. Wenn `CU` TRUE ist und der Zähler noch nicht den Maximalwert (9223372036854775807) erreicht hat, wird der Zähler um 1 erhöht.
 3. Der Ausgang `Q` wird auf TRUE gesetzt, wenn der Zählerstand (`CV`) den Sollwert (`PV`) erreicht oder überschreitet.

@@ -1,14 +1,10 @@
 # Uebung_082: Beispiel für E_CTUD
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_082`. Hier werden beide Zählrichtungen in einem Baustein kombiniert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verwendung des Bausteins `E_CTUD` (Event Count Up/Down). Es wird gezeigt, wie ma
 [cite_start]Die Subapplikation `Uebung_082.SUB` nutzt vier Taster zur vollständigen Kontrolle des Zählers[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_082_network](./Uebung_082_network.svg)
 
@@ -37,6 +32,7 @@ Verwendung des Bausteins `E_CTUD` (Event Count Up/Down). Es wird gezeigt, wie ma
 ## Funktionsweise
 
 Der Baustein überwacht zwei Schwellwerte gleichzeitig:
+
 *   Der Ausgang `QU` reagiert auf die Obergrenze (`PV`).
 *   Der Ausgang `QD` reagiert auf die Untergrenze (Null).
 

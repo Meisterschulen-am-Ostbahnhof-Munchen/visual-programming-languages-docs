@@ -1,8 +1,5 @@
 # Uebung_011f_PHYSA: Numeric Value Input I1 Durchschleifen auf N3 mit PHYSA (Physikalische Werte)
 
-
-
-
 ![Uebung_011f_PHYSA_network](./Uebung_011f_PHYSA_network.svg)
 
 * * * * * * * * * *
@@ -37,6 +34,7 @@ Beide Bausteine werden aus den importierten Bibliotheken `Uebungen::const::UT::D
 ## Programmablauf und Verbindungen
 
 Die Verbindung zwischen den beiden Bausteinen erfolgt über eine einzige **Adapterverbindung**:
+
 - Quelle: `NumericValue_PHYSA.rPhys`
 - Ziel: `Q_NumericValue_PHYSA.rPhys`
 

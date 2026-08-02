@@ -2,8 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_040_2` basierend auf den bere
 
 # Uebung_040_2: Lauflicht 8
 
-
-
 ![Uebung_040_2_network](./Uebung_040_2_network.svg)
 
 * * * * * * * * * *
@@ -23,6 +21,7 @@ Dies ist der zentrale Baustein zur Steuerung der Zustände des Lauflichts.
     - **Interne Logik**: Zustandsautomat (State Machine)
 - **Funktionsweise**:
     Dieser Baustein verwaltet 8 sequentielle Zustände (S1 bis S8). Er verfügt über Ereigniseingänge, um spezifische Übergänge auszulösen (z.B. `S1_S2` für den Wechsel von Schritt 1 zu 2).
+
     - **Eingänge**: `START_S1` (Initialisierung), `RESET` (Zurücksetzen), sowie diverse Übergangstrigger (`S1_S2`, `S2_S3`, etc.).
     - **Ausgänge**: Für jeden Zustand gibt es ein Ereignis (`EO_S1`..`EO_S8`) und ein Datensignal (`DO_S1`..`DO_S8`), welche die physikalischen Ausgänge steuern. Zusätzlich wird die aktuelle Zustandsnummer (`STATE_NR`) ausgegeben.
 

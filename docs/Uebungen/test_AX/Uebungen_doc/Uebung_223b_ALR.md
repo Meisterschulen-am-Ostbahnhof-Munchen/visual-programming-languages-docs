@@ -1,8 +1,5 @@
 # Uebung_223b_ALR: Standard IEC 61131-3 AUDI_FB_CTUD (Adapter Version, Vorwärts-/Rückwärtszähler, UDINT) mit Terminal-Ausgabe (PHYSA_LREAL)
 
-
-
-
 ![Uebung_223b_ALR_network](./Uebung_223b_ALR_network.svg)
 
 * * * * * * * * * *
@@ -60,6 +57,7 @@ Die Übung demonstriert die Adaptertechnologie der 4diac‑IDE, die Typkonvertie
 ## Programmablauf und Verbindungen
 
 Der Zähler wird durch die digitalen Eingänge gesteuert:
+
 - **Vorwärtszählen** über `Input_CU` → `CU`
 - **Rückwärtszählen** über `Input_CD` → `CD`
 - **Reset** über `Input_R` → `R`

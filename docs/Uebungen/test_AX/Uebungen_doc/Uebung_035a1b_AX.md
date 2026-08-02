@@ -2,10 +2,6 @@ Hier ist die Dokumentation für die Übung basierend auf den bereitgestellten XM
 
 # Uebung_035a1b_AX: Ampelsteuerung mit Pattern Sequencer (AX) und Bit-Assembler
 
-
-
-
-
 ![Uebung_035a1b_AX_network](./Uebung_035a1b_AX_network.svg)
 
 * * * * * * * * * *
@@ -20,6 +16,7 @@ In dieser SubApplikation werden verschiedene Bausteine verschaltet, um die Steue
 
 ### Haupt-Steuerungsbaustein: `sequence_Pattern_04_04_loop_AX`
 Dieser Baustein ist der Kern der Steuerung. Er durchläuft 4 Schritte in einer Endlosschleife.
+
 - **Typ**: `logiBUS::utils::sequence::pattern::sequence_Pattern_04_04_loop_AX`
 - **Funktion**: Er schaltet die Ausgänge basierend auf Byte-Mustern (`P_S1` bis `P_S4`) und hält jeden Schritt für eine definierte Zeit.
 - **Konfiguration**:
@@ -58,6 +55,7 @@ Der Ablauf der Steuerung gliedert sich in die Initialisierung der Muster und den
 
 ### 1. Initialisierung
 Damit der Sequencer weiß, welche Lampen in welchem Schritt leuchten sollen, müssen die Bitmuster (`P1` bis `P4`) zunächst berechnet und übergeben werden.
+
 - Das Initialisierungs-Signal (`INITO`) vom Eingangsbaustein `DigitalInput_I1` startet eine Kette.
 - Es triggert nacheinander die `REQ`-Eingänge der Assembler-Bausteine: `P1_Red` -> `P2_RedYellow` -> `P3_Green` -> `P4_Yellow`.
 - Am Ende dieser Kette wird der `RESET`-Eingang des Sequencers (`sequence_Pattern_04_04_loop_AX`) ausgelöst. Dadurch werden die erzeugten Byte-Muster an die Eingänge `P_S1` bis `P_S4` des Sequencers übernommen.

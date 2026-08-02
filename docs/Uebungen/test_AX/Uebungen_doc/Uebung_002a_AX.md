@@ -1,14 +1,10 @@
 # Uebung_002a_AX: DigitalInput_I1/_I2 mit AND auf DigitalOutput_Q1, mit Plug and Socket
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002a_AX`. In dieser Übung wird eine klassische UND-Verknüpfung (AND) realisiert, bei der ein digitaler Ausgang nur dann aktiviert wird, wenn zwei digitale Eingänge gleichzeitig den Zustand "Wahr" (HIGH) führen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Das Hauptziel dieser Übung ist die Implementierung einer grundlegenden logische
 ### Funktionsbausteine (FBs)
 
 Folgende Bausteine werden verwendet:
-
-
-
 
 ![Uebung_002a_AX_network](./Uebung_002a_AX_network.svg)
 
@@ -54,6 +47,7 @@ Die Logik wird durch die Verschaltung der Adapter-Anschlüsse in der Subapplikat
 [cite_start][cite: 1]
 
 Der Prozess folgt dieser Logik:
+
 1.  Der Baustein `AX_AND_2` überwacht beide Adapter-Eingänge.
 2.  Nur wenn beide Eingänge (`IN1` AND `IN2`) den Datenwert `D1 = TRUE` führen, setzt der Baustein seinen Ausgang `OUT` ebenfalls auf `TRUE` und sendet ein Ereignis.
 3.  Sobald einer der Eingänge auf `FALSE` geht, wird auch der Ausgang sofort auf `FALSE` gesetzt.

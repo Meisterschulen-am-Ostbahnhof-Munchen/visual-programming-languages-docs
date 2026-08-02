@@ -1,14 +1,10 @@
 # Uebung_004c5: Toggle Flip-Flop mit IE mit BUTTON_PRESS_END
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004c5`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -19,7 +15,6 @@ Nutzung des Ereignisses `BUTTON_PRESS_END`.
 ## Funktionsweise
 
 [cite_start]Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c5.SUB` reagiert auf jede fallende Flanke[cite: 1].
-
 
 ![Uebung_004c5_network](./Uebung_004c5_network.svg)
 

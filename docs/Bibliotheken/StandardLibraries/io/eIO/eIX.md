@@ -1,7 +1,5 @@
 # eIX
 
-
-
 <img width="1435" height="298" alt="image" src="https://github.com/user-attachments/assets/cae6a064-563d-41dd-9f8e-9cb9bb401bc6" />
 
 * * * * * * * * * *
@@ -59,6 +57,7 @@ Der eIX-Block arbeitet als Service-Interface für digitale Eingänge. Bei Initia
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet eIX erweiterte Funktionalität:
+
 - Ereignisbasierte statt zyklische Abfrage
 - Detaillierte Statusrückmeldungen
 - Konfigurierbare Trigger-Mechanismen

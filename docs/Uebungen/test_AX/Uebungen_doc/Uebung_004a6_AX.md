@@ -1,19 +1,12 @@
 # Uebung_004a6_AX: Toggle Flip-Flop mit IE und E_REND (Rendezvous)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a6_AX`. Hier wird ein komplexeres Event-Handling-Muster vorgestellt: Das Rendezvous. Ein Ereignis wird erst dann weitergegeben, wenn zwei Bedingungen (Events) eingetreten sind.
 
 ----
 
-
 ## Ziel der Übung
-
-
-
 
 ![Uebung_004a6_AX_network](./Uebung_004a6_AX_network.svg)
 

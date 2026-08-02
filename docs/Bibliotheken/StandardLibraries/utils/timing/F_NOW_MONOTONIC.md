@@ -1,7 +1,5 @@
 # F_NOW_MONOTONIC
 
-
-
 ![F_NOW_MONOTONIC](https://github.com/user-attachments/assets/ae1652e1-fcca-44f4-aa16-c1cfa5a794cd)
 
 * * * * * * * * * *
@@ -66,8 +64,10 @@ Die Funktion dient als Wrapper für die ST-Funktion `NOW_MONOTONIC()`.
 ## Anwendungsszenarien
 1. **Echtzeit-Messungen**:
    Laufzeitanalyse von Steuerungszyklen ohne Einfluss durch Systemzeitänderungen.
+
 2. **Synchronisation**:
    Zeitstempel für Logging in verteilten Systemen.
+
 3. **Timeout-Steuerung**:
    Zuverlässige Timer für kritische Prozesse.
 

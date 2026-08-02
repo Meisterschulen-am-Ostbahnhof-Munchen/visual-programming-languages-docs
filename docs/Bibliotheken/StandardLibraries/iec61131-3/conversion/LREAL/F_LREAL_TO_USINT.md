@@ -1,7 +1,5 @@
 # F_LREAL_TO_USINT
 
-
-
 <img width="1463" height="214" alt="F_LREAL_TO_USINT" src="https://github.com/user-attachments/assets/65089d2d-a285-4427-8a17-fbb9a66adf8b" />
 
 * * * * * * * * * *
@@ -45,9 +43,6 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung erfolgt unmitt
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu `F_REAL_TO_USINT` (Konvertierung von 32-Bit Gleitkommazahlen) bietet dieser Block eine höhere Eingangspräzision durch die Verwendung von 64-Bit Gleitkommazahlen.
 - Ähnliche Blöcke wie `F_LREAL_TO_INT` oder `F_LREAL_TO_UINT` bieten Konvertierungen in andere Ganzzahltypen mit unterschiedlichen Wertebereichen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

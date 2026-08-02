@@ -1,7 +1,5 @@
 # F_SINT_TO_UINT
 
-
-
 <img width="1441" height="213" alt="F_SINT_TO_UINT" src="https://github.com/user-attachments/assets/76c8c3fe-c626-4192-8647-9b5e552de116" />
 
 * * * * * * * * * *
@@ -44,9 +42,6 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine komplexen Zu
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Konvertierungsblöcken ist `F_SINT_TO_UINT` spezialisiert und optimiert für die Konvertierung von `SINT` zu `UINT`.
 - Andere Blöcke wie `F_INT_TO_UINT` oder `F_DINT_TO_UDINT` bieten ähnliche Funktionalität, jedoch für andere Datentypen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

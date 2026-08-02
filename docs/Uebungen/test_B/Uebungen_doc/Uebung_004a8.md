@@ -1,14 +1,10 @@
 # Uebung_004a8: mit E_SPLIT_2
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a8`. Dies ist eine Variante der Übung 004a4, bei der ein spezifischer Baustein für zwei Ausgänge verwendet wird.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Kennenlernen von typspezifischen Splitter-Bausteinen. Während `E_SPLIT` oft gen
 [cite_start]Die Subapplikation `Uebung_004a8.SUB` nutzt einen `E_SPLIT_2` Baustein zur Ereignisverteilung[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_004a8_network](./Uebung_004a8_network.svg)
 

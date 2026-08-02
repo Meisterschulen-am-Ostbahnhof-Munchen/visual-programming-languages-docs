@@ -1,7 +1,5 @@
 # SCALE
 
-
-
 <img width="668" height="239" alt="SCALE" src="https://github.com/user-attachments/assets/b3a2d282-98ec-47f2-a311-70f4d8aa9d90" />
 
 * * * * * * * * * *
@@ -53,9 +51,6 @@ Der Funktionsblock hat keine internen Zustände. Die Operation wird bei jedem RE
 - Im Vergleich zu anderen Skalierungsbausteinen ist SCALE besonders einfach und direkt in der Anwendung.
 - Keine zusätzlichen Parameter oder komplexen Einstellungen erforderlich.
 - Ideal für einfache lineare Skalierungen ohne zusätzliche Logik.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

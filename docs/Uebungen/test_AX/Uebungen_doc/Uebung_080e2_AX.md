@@ -1,8 +1,5 @@
 # Uebung_080e2_AX: Beispiel für E_CTU mit Eventbremse durch AX_D_FF / AUI_D_FF_TMIN
 
-
-
-
 ![Uebung_080e2_AX_network](./Uebung_080e2_AX_network.svg)
 
 * * * * * * * * * *

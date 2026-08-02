@@ -1,14 +1,10 @@
 # Uebung_010a3_AX: Button_L1 (Latching) auf DigitalOutput_Q1
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010a3_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Umgang mit rastenden Tasten (Latching Buttons).
 [cite_start]Die Subapplikation `Uebung_010a3_AX.SUB` verwendet `Button_L1`[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_010a3_AX_network](./Uebung_010a3_AX_network.svg)
 

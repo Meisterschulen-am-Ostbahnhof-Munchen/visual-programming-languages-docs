@@ -1,12 +1,8 @@
 # Uebung_020c3_AX: DigitalInput_I1 auf DigitalOutput_Q1; AX_FB_TON; Einschaltverzögert
 
-
-
-
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020c3_AX`. Hier wird der adapterbasierte IEC 61131-3 Timer-Baustein `AX_FB_TON` verwendet, der eine regelmäßige Triggerung (Takt) benötigt, um den internen Status (ET) zu aktualisieren.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -19,9 +15,6 @@ Das Ziel ist es, eine Einschaltverzögerung mit einem klassischen SPS-Verhalten 
 Die Subapplikation `Uebung_020c3_AX.SUB` nutzt einen `E_CYCLE` Baustein, um den Takt für den Timer zu generieren.
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_020c3_AX_network](./Uebung_020c3_AX_network.svg)
 

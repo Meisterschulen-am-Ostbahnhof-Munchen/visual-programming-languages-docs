@@ -1,7 +1,5 @@
 # ST_DEL_FB
 
-
-
 ![ST_DEL_FB](https://user-images.githubusercontent.com/116869307/214154809-ea8eaf7b-a851-4b0e-9cc9-2d7cdd14fcbd.png)
 
 * * * * * * * * * *
@@ -51,6 +49,7 @@ Der ST_DEL_FB Funktionsblock reagiert auf das REQ-Ereignis und versucht, die spe
 ## Zustandsübersicht
 
 Der Funktionsblock unterstützt mehrere Service-Sequenzen:
+
 - Normale Einrichtung (normal_establishment)
 - Erfolglose Einrichtung (unsuccessful_establishment)
 - Anforderungsbestätigung (request_confirm)

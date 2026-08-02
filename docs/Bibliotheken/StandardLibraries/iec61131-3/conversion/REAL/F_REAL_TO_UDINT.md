@@ -1,7 +1,5 @@
 # F_REAL_TO_UDINT
 
-
-
 <img width="1448" height="213" alt="F_REAL_TO_UDINT" src="https://github.com/user-attachments/assets/2045df2e-f71d-4277-9b58-2a655adc3493" />
 
 * * * * * * * * * *
@@ -43,9 +41,6 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Konvertierungsblöcke wie `F_REAL_TO_INT` oder `F_REAL_TO_LREAL` bieten Konvertierungen in andere Datentypen, aber nicht spezifisch in UDINT.
 - Im Gegensatz zu komplexeren Blöcken bietet `F_REAL_TO_UDINT` eine einfache und direkte Lösung für diese spezifische Konvertierung.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,8 +1,5 @@
 # Uebung_213_AUDI: Standard IEC 61131-3 AUDI_FB_CTU (Adapter Version, Vorwärtszähler, UDINT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_213_AUDI_network](./Uebung_213_AUDI_network.svg)
 
 * * * * * * * * * *
@@ -11,6 +8,7 @@
 Diese Übung implementiert einen **Vorwärtszähler (CTU)** nach IEC 61131-3 in einer Adapter‑Variante für den Datentyp **UDINT**. Der Zähler wird über zwei digitale Eingänge gesteuert (Zählimpuls und Reset) und gibt den aktuellen Zählerstand sowie den Zählerendwert auf einem Terminal und einem digitalen Ausgang aus. Ein fester Preset‑Wert von 5 wird über einen Konvertierungsbaustein vorgegeben.
 
 Die Übung dient dem Kennenlernen von:
+
 - Adapter‑basierten Funktionsbausteinen (AUDI_FB_CTU)
 - Datenkonvertierung (UDINT → UDI)
 - Anbindung von logiBUS‑Ein-/Ausgängen

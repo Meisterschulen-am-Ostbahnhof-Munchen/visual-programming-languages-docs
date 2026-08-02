@@ -1,10 +1,5 @@
 # 🛠️ Übungen (Arbeitsbereich test_AX)
 
-
-
-
-
-
 Hier finden Sie die Dokumentation der Übungen für den logiBUS® mit dem **AX Adapter**. Die Übungen sind thematisch gruppiert, um den Lernfortschritt optimal zu unterstützen.
 
 ## Themengebiete

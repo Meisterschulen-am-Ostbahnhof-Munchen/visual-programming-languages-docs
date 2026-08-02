@@ -1,8 +1,5 @@
 # Uebung_203b_AX: Interlock: ILOCK_SWITCH_AX (Motor Reversierung Priorität via Adapter)
 
-
-
-
 ![Uebung_203b_AX_network](./Uebung_203b_AX_network.svg)
 
 * * * * * * * * * *

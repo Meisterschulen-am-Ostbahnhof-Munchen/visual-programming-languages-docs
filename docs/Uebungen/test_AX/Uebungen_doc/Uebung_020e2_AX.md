@@ -1,12 +1,8 @@
 # Uebung_020e2_AX: DigitalInput_I1 auf DigitalOutput_Q1; AX_FB_TOF; Ausschaltverzögert
 
-
-
-
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020e2_AX`. Hier wird der adapterbasierte IEC 61131-3 Timer-Baustein `AX_FB_TOF` verwendet, der eine regelmäßige Triggerung (Takt) benötigt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -19,9 +15,6 @@ Realisierung einer Ausschaltverzögerung, die auch während der Nachlaufzeit ihr
 Die Subapplikation `Uebung_020e2_AX.SUB` nutzt einen `E_CYCLE` Baustein für die Taktung.
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_020e2_AX_network](./Uebung_020e2_AX_network.svg)
 

@@ -1,7 +1,5 @@
 # PLCnextAXLSESC
 
-
-
 <img width="1361" height="242" alt="image" src="https://github.com/user-attachments/assets/c3189554-60bb-4983-b079-ab992b7f0911" />
 
 * * * * * * * * * *

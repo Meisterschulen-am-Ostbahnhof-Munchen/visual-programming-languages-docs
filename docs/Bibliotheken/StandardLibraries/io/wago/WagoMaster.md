@@ -1,7 +1,5 @@
 # WagoMaster
 
-
-
 <img width="1355" height="250" alt="image" src="https://github.com/user-attachments/assets/61908fc9-2e56-4e6d-bb65-c71c1a08d10f" />
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ Der WagoMaster initialisiert und verwaltet die Kommunikation mit Wago-Bussysteme
 
 ## Zustandsübersicht
 Der Baustein durchläuft folgende Zustände:
+
 1. **Inaktiv**: Vor der Initialisierung
 2. **Initialisierung**: Bei INIT-Ereignis mit QI=TRUE
 3. **Aktiv**: Nach erfolgreicher Initialisierung (QO=TRUE)

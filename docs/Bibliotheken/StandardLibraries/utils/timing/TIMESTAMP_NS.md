@@ -1,7 +1,5 @@
 # TIMESTAMP_NS
 
-
-
 ![TIMESTAMP_NS](https://github.com/user-attachments/assets/4c753c7c-ff7e-40de-87ed-fbcf46d758a9)
 
 * * * * * * * * * *
@@ -73,8 +71,10 @@ Entwickelt unter EPL-2.0 Lizenz.
 ## Anwendungsszenarien
 1. **High-Performance-Logging**:
    Synchronisation von Ereignissen in verteilten Systemen.
+
 2. **Echtzeit-Messungen**:
    Laufzeitanalyse mit Nanosekunden-Präzision.
+
 3. **Benutzerdefinierte Zeiträume**:
    Berechnung von Intervallen ab beliebigen Referenzpunkten.
 
@@ -93,6 +93,7 @@ Entwickelt unter EPL-2.0 Lizenz.
 
 ## Fazit
 `TIMESTAMP_NS` ist ein essentieller Baustein für Anwendungen, die hochpräzise und flexible Zeitstempel benötigen. Seine Unterstützung benutzerdefinierter Startdaten und Nanosekunden-Präzision macht ihn ideal für:
+
 - **Industrielle Datenaufzeichnung**
 - **Echtzeit-Steuerungen**
 - **Wissenschaftliche Messsysteme**

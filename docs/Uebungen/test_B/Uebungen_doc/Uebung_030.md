@@ -1,14 +1,10 @@
 # Uebung_030: LED_PWM Blinkende LED
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_030`. Hier werden die erweiterten Fähigkeiten der LED-Ansteuerung mittels Pulsweitenmodulation (PWM) demonstriert.
 
 ## 🎧 Podcast
-
 
 ![Uebung_030_network](./Uebung_030_network.svg)
 
@@ -18,7 +14,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_030`. Hier werden die erw
 * [Infineon BTS7030-2EPA: Intelligenter High-Side Leistungsschalter](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-BTS7030-2EPA-Intelligenter-High-Side-Leistungsschalter-e368fl3)
 
 ----
-
 
 ## Ziel der Übung
 
@@ -43,6 +38,7 @@ Verwendung des Bausteins `logiBUS_LED_PWM_QX`. Es wird gezeigt, wie man weiche L
 ## Funktionsweise
 
 Jeder Taster aktiviert eine andere Instanz des PWM-Bausteins, die alle auf denselben physikalischen Ausgang `Output_Q1` wirken.
+
 *   **Taster I3** ➡️ Aktiviert den 0,5 Hz Breathing-Effekt. Die LED wird langsam heller und wieder dunkler.
 *   **Taster I1 & I2** ➡️ Aktivieren schnelles oder langsames Blinken.
 *   **Taster I4** ➡️ Schaltet die LED auf Dauerlicht.

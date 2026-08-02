@@ -1,8 +1,5 @@
 # Uebung_222_ALI: Standard IEC 61131-3 ALI_FB_CTUD (Adapter Version, Vorwärts-/Rückwärtszähler, LINT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_222_ALI_network](./Uebung_222_ALI_network.svg)
 
 *Bild nicht vorhanden*

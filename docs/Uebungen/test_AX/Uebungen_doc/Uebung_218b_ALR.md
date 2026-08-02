@@ -1,8 +1,5 @@
 # Uebung_218b_ALR: Standard IEC 61131-3 AUDI_FB_CTD (Adapter Version, Rückwärtszähler, UDINT) mit Terminal-Ausgabe (PHYSA_LREAL)
 
-
-
-
 ![Uebung_218b_ALR_network](./Uebung_218b_ALR_network.svg)
 
 * * * * * * * * * *

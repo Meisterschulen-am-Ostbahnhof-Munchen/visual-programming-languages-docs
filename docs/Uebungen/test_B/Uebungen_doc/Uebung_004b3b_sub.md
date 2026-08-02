@@ -1,6 +1,5 @@
 # Uebung_004b3b_sub: Sub-Applikation für ein Toggle-Flip-Flop mit externen RESET-Eingang und SET-Ausgang zur Verriegelung
 
-
 ![Uebung_004b3b_sub_network](./Uebung_004b3b_sub_network.svg)
 
 * * * * * * * * * *

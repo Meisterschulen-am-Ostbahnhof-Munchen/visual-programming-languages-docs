@@ -1,19 +1,12 @@
 # Uebung_002a7_AX: DigitalInput_I1-3 mit XOR auf DigitalOutput_Q1, mit Plug and Socket
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002a7_AX`. In dieser Übung wird eine exklusive ODER-Verknüpfung (XOR) mit drei Eingängen realisiert. Der Ausgang wird aktiviert, wenn eine ungerade Anzahl von Eingängen aktiv ist.
 
 ----
 
-
 ## Ziel der Übung
-
-
-
 
 ![Uebung_002a7_AX_network](./Uebung_002a7_AX_network.svg)
 
@@ -55,6 +48,7 @@ Die Logik wird durch die Verschaltung der Eingangsbausteine mit dem XOR-Logik-Ba
 [cite_start][cite: 1]
 
 Die XOR-Logik mit drei Eingängen verhält sich wie folgt:
+
 *   Der Ausgang ist **TRUE**, wenn genau **ein** Eingang aktiv ist.
 *   Der Ausgang ist **TRUE**, wenn alle **drei** Eingänge aktiv sind.
 *   Der Ausgang ist **FALSE**, wenn kein Eingang oder genau zwei Eingänge aktiv sind.

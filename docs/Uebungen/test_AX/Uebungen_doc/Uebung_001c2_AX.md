@@ -1,8 +1,5 @@
 # Uebung_001c2_AX: DigitalInput_I1 negiert auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot.
 
-
-
-
 ![Uebung_001c2_AX_network](./Uebung_001c2_AX_network.svg)
 
 * * * * * * * * * *

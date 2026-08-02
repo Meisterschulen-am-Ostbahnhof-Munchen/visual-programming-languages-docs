@@ -1,6 +1,5 @@
 # Uebung_218b: Standard IEC 61131-3 FB_CTD_UDINT (Rückwärtszähler, UDINT) mit Terminal-Ausgabe (PHYS)
 
-
 ![Uebung_218b_network](./Uebung_218b_network.svg)
 
 * * * * * * * * * *

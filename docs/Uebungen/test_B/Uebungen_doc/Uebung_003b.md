@@ -1,14 +1,10 @@
 # Uebung_003b: DigitalInput_I1-2-3-4 auf DigitalOutput_Q1-2-3-4
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003b`. Diese Übung erweitert das Konzept der modularen Steuerung aus `Uebung_003a` auf insgesamt vier unabhängige Kanäle.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,12 +19,14 @@ Das Hauptziel ist die Demonstration der Skalierbarkeit durch Typisierung. Es wir
 ### Typisierte Sub-Applikation: `Uebung_003b_sub`
 
 [cite_start]Dieser Baustein kapselt die 1:1 Weiterleitung von einem digitalen Eingang (`IX`) zu einem digitalen Ausgang (`QX`)[cite: 2]. Er stellt zwei Parameter für die Konfiguration bereit:
+
   * **`Input`**: Auswahl des physischen Eingangs (z.B. `Input_I1` bis `Input_I4`).
   * **`Output`**: Auswahl des physischen Ausgangs (z.B. `Output_Q1` bis `Output_Q4`).
 
 ### Instanzen in der Hauptanwendung
 
 In `Uebung_003b` werden vier Instanzen (`F1` bis `F4`) genutzt:
+
   * **`F1`**: `I1` ➡️ `Q1`
   * **`F2`**: `I2` ➡️ `Q2`
   * **`F3`**: `I3` ➡️ `Q3`

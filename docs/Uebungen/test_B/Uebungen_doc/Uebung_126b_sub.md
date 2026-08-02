@@ -1,6 +1,5 @@
 # Uebung_126b_sub:  SINUS-Funktion Plotten auf PCAN Explorer
 
-
 ![Uebung_126b_sub_network](./Uebung_126b_sub_network.svg)
 
 * * * * * * * * * *

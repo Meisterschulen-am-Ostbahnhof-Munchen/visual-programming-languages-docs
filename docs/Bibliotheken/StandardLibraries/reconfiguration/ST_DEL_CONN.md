@@ -1,7 +1,5 @@
 # ST_DEL_CONN
 
-
-
 ![ST_DEL_CONN](https://user-images.githubusercontent.com/116869307/214154770-816b11aa-c17e-4fad-93d5-e43f10015347.png)
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ Beim Auslösen des REQ-Ereignisses wird die spezifizierte Verbindung zwischen de
 
 ## Zustandsübersicht
 Der Funktionsblock unterstützt verschiedene Service-Sequenzen:
+
 - Normale Initialisierung (INIT+ → INITO+)
 - Fehlgeschlagene Initialisierung (INIT+ → INITO-)
 - Erfolgreiche Anfrage (REQ+ → CNF+)

@@ -1,14 +1,10 @@
 # Uebung_051: DigitalInput_I1-_I4 auf DigitalOutput_Q1-_Q4
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_051`. Hier wird gezeigt, wie man viele Einzelsignale zu einem Paket (Struktur) zusammenfasst, um sie effizienter durch das Programm zu leiten.
 
 ## 🎧 Podcast
-
 
 ![Uebung_051_network](./Uebung_051_network.svg)
 
@@ -18,7 +14,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_051`. Hier wird gezeigt, 
 * [Land- und Forstwirtschaft 4.0: Das Fundament der Sicherheit – Analyse der DIN EN ISO 25119-1 und der](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Land--und-Forstwirtschaft-4-0-Das-Fundament-der-Sicherheit--Analyse-der-DIN-EN-ISO-25119-1-und-der-e39kn2f)
 
 ----
-
 
 ## Ziel der Übung
 

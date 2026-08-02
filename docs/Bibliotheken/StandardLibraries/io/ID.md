@@ -1,6 +1,5 @@
 # ID
 
-
 ## 🎧 Podcast
 
 * [4diac IDE: Dein "Hello World" der Automatisierung – Das Blinking Tutorial Lokal](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)
@@ -52,6 +51,7 @@ Der ID-Baustein arbeitet als Service-Interface für Doppelwort-Eingaben. Bei Ini
 
 ## Zustandsübersicht
 Der Baustein durchläuft folgende Hauptzustände:
+
 1. **Nicht initialisiert**: Vor der INIT-Verarbeitung
 2. **Initialisiert**: Nach erfolgreicher INIT-Verarbeitung, bereit für Datenabfragen
 3. **Datenabfrage**: Während der Verarbeitung von REQ-Ereignissen
@@ -65,15 +65,11 @@ Der Baustein durchläuft folgende Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Eingabebausteinen bietet ID:
+
 - Erweiterte Statusrückmeldungen
 - Konfigurierbare Service-Parameter
 - Unterstützung für beide Betriebsmodi (anforderungsbasiert und spontan)
 - 32-Bit-Datenbreite statt einfacher BOOL- oder BYTE-Werte
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

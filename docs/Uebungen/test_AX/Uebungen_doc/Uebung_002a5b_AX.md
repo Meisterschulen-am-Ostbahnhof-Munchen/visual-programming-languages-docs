@@ -56,6 +56,7 @@ Die Übung `Uebung_002a5b_AX` realisiert eine Steuerungslogik, bei der die Zust�
     *   `DigitalInput_I2.IN` ist mit `AX_OR_3.IN2` verbunden.
     *   `DigitalInput_I3.IN` ist mit `AX_OR_3.IN3` verbunden.
     Der `AX_OR_3` Baustein verknüpft diese drei booleschen Werte logisch. Das Ergebnis (`TRUE`, wenn I1 ODER I2 ODER I3 `TRUE` ist) wird an seinem Datenausgang `AX_OR_3.OUT` zur Verfügung gestellt.
+
 3.  **Signalverteilung**: Der Datenausgang des OR-Bausteins (`AX_OR_3.OUT`) wird an den Dateneingang des Signalverteilers `AX_SPLIT_3` (`AX_SPLIT_3.IN`) angeschlossen. Der `AX_SPLIT_3` Baustein dupliziert dieses einzelne Steuersignal und leitet es an seine drei Datenausgänge (`AX_SPLIT_3.OUT1`, `AX_SPLIT_3.OUT2`, `AX_SPLIT_3.OUT3`) weiter.
 4.  **Ansteuerung der Ausgänge**: Die Ausgänge des Signalverteilers sind jeweils mit den Eingängen der digitalen Ausgangsbausteine verbunden:
     *   `AX_SPLIT_3.OUT1` ist mit `DigitalOutput_Q1.OUT` verbunden.

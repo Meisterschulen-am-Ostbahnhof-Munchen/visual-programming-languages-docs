@@ -1,6 +1,5 @@
 # Uebung_223: Standard IEC 61131-3 FB_CTUD_UDINT (Vor-/Rückwärtszähler, UDINT) mit Terminal-Ausgabe
 
-
 ![Uebung_223_network](./Uebung_223_network.svg)
 
 * * * * * * * * * *

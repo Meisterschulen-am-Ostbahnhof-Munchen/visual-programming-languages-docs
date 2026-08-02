@@ -1,6 +1,5 @@
 # Uebung_211: Standard IEC 61131-3 FB_CTU_DINT (Vorwärtszähler, DINT) mit Terminal-Ausgabe
 
-
 ![Uebung_211_network](./Uebung_211_network.svg)
 
 * * * * * * * * * *
@@ -67,6 +66,7 @@ Das Zusammenspiel der Bausteine erfolgt wie folgt:
 
 3. **Ausgangssteuerung:**  
    Nach der Bearbeitung des Zählers wird das Ereignis `CNF` ausgelöst. Dieses triggert zwei Aktionen parallel:  
+
    - `Output_Q1.REQ` – der digitale Ausgang Q1 wird durch den Wert von `FB_CTU_DINT.Q` gesetzt.  
    - `F_DINT_TO_UDINT.REQ` – der aktuelle Zählerstand (CV) wird von `DINT` nach `UDINT` konvertiert.
 

@@ -1,8 +1,5 @@
 # Uebung_009_AUDI: Ticker (AX-Adapter basiert)
 
-
-
-
 ![Uebung_009_AUDI_network](./Uebung_009_AUDI_network.svg)
 
 * * * * * * * * * *
@@ -68,6 +65,7 @@ Der Ablauf der Übung lässt sich wie folgt beschreiben:
 
 5. **Signalverteilung**  
    Das Signal von `AX_SR.Q` wird auf `AX_SPLIT_3.IN` gegeben und auf drei Ausgänge verteilt:
+
    - `OUT1` → zurück zur Ereignisvereinigung `AX_AE_MERGE.IN_AX`.
    - `OUT2` → an den **digitalen Ausgang** `DigitalOutput_Q1.OUT`. Damit wird der Ausgang `Output_Q1` gesetzt, solange das SR-Glied gesetzt ist.
    - `OUT3` → an `AX_PERMIT.PERMIT`.

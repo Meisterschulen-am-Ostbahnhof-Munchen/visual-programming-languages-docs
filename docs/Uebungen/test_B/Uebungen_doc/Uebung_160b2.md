@@ -2,7 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_160b2` im gewünschten Format
 
 # Uebung_160b2: Motor Links/Rechtslauf Automatisierung IX
 
-
 ![Uebung_160b2_network](./Uebung_160b2_network.svg)
 
 *(Falls ein Bild der Netzwerksicht vorhanden ist, bitte hier einfügen)*

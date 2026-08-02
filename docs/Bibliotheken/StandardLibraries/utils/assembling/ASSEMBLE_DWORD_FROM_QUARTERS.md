@@ -6,7 +6,6 @@
 
 ---- 
 
-
 ![ASSEMBLE_DWORD_FROM_QUARTERS](https://github.com/user-attachments/assets/b87a9cb4-49aa-4375-be7f-c4e32422490e)
 
 * * * * * * * * * *
@@ -50,9 +49,6 @@ Der Funktionsblock nimmt 16 Quarter-Bytes entgegen und kombiniert sie zu einem 3
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Bausteine könnten `BYTE_TO_WORD` oder `WORD_TO_DWORD` sein, die jedoch weniger Flexibilität bieten, da sie nur feste Größen kombinieren.
 - `ASSEMBLE_DWORD_FROM_QUARTERS` bietet mehr Kontrolle über die Position jedes einzelnen Bits im resultierenden DWORD.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

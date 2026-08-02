@@ -1,7 +1,5 @@
 # FB_CTUD_LINT
 
-
-
 <img width="1418" height="340" alt="FB_CTUD_LINT" src="https://github.com/user-attachments/assets/3ef801dc-5210-49fd-b0d4-4c34251fea5f" />
 
 * * * * * * * * * *
@@ -35,6 +33,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock führt folgende Operationen aus, wenn das REQ-Ereignis eintritt:
+
 1. **Reset (R)**: Setzt den Zählerstand (CV) auf 0 zurück.
 2. **Load (LD)**: Lädt den vordefinierten Wert (PV) in den Zählerstand (CV).
 3. **Count Up (CU)**: Erhöht den Zählerstand um 1, solange der maximale Wert (9223372036854775807) nicht überschritten wird.

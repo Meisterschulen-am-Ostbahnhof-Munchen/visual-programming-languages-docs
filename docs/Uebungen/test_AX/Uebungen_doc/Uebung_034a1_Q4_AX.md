@@ -1,8 +1,5 @@
 # Uebung_034a1_Q4_AX: Numeric Value Input auf PWM Ausgang (Adapter Version)
 
-
-
-
 ![Uebung_034a1_Q4_AX_network](./Uebung_034a1_Q4_AX_network.svg)
 
 * * * * * * * * * *

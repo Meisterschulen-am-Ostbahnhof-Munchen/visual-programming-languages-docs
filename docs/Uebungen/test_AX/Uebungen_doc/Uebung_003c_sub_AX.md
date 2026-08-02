@@ -4,9 +4,6 @@ Hier ist die Dokumentation für die Sub-Applikation `Uebung_003c_sub_AX` basiere
 
 <Bild der Übung, falls vorhanden>
 
-
-
-
 ![Uebung_003c_sub_AX_network](./Uebung_003c_sub_AX_network.svg)
 
 * * * * * * * * * *

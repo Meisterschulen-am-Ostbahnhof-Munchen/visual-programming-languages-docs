@@ -1,7 +1,5 @@
 # F_SEL_E_4
 
-
-
 ![F_SEL_E_4](https://github.com/user-attachments/assets/2deb1c98-9daf-4a3c-b155-a719bb97771b)
 
 * * * * * * * * * *
@@ -51,9 +49,6 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weitergabe erfo
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Selektoren bietet F_SEL_E_4 eine ereignisbasierte Steuerung, was eine präzisere Auswahl ermöglicht als zeit- oder zustandsbasierte Alternativen.
 - Die Unterstützung des ANY-Datentyps macht ihn flexibler als typenspezifische Selektoren.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

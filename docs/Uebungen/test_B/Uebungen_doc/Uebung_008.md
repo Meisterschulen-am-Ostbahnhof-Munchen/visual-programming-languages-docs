@@ -1,14 +1,10 @@
 # Uebung_008: Blinker mit E_CYCLE, E_SWITCH und E_SR
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_008`. Hier wird die Logik eines dauerhaft laufenden Taktgebers mit internem Speicherzustand gezeigt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -25,7 +21,6 @@ Der Taktgeber `E_CYCLE` läuft (nach einmaliger Initialisierung durch das System
 -----
 
 ## Anwendungsbeispiel
-
 
 ![Uebung_008_network](./Uebung_008_network.svg)
 

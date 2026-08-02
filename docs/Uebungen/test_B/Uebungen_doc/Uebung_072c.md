@@ -1,14 +1,10 @@
 # Uebung_072c: GBSD auf UT ausgeben
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_072c`. Hier wird eine mathematische Methode gezeigt, um aus der Geschwindigkeit die zurückgelegte Strecke selbst zu berechnen (Integration).
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verwendung des Bausteins `INTEGRAL`. Es wird demonstriert, wie man einen Wegwert
 [cite_start]Die Subapplikation `Uebung_072c.SUB` berechnet den Weg durch zeitliche Integration der radarbasierten Geschwindigkeit[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_072c_network](./Uebung_072c_network.svg)
 

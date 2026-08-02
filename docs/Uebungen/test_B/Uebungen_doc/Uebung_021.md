@@ -1,14 +1,10 @@
 # Uebung_021: Spiegelabfolge (1)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_021`. Dies ist der Einstieg in die Ablaufsteuerung (Sequenzierung), simuliert am Beispiel eines Pneumatik-Zylinders.
 
 ## 🎧 Podcast
-
 
 ![Uebung_021_network](./Uebung_021_network.svg)
 
@@ -16,7 +12,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_021`. Dies ist der Einsti
 * [JBC Lötspitzen C470 vs. C245 vs. C210 vs. C115: Welche Spitze ist der Allrounder und wann brauchst du den Nano-Spezialisten?](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/JBC-Ltspitzen-C470-vs--C245-vs--C210-vs--C115-Welche-Spitze-ist-der-Allrounder-und-wann-brauchst-du-den-Nano-Spezialisten-e39ak58)
 
 ----
-
 
 ## Ziel der Übung
 

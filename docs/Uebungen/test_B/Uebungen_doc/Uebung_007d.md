@@ -1,6 +1,5 @@
 # Uebung_007d: Blinker mit E_CYCLE und E_T_FF
 
-
 ![Uebung_007d_network](./Uebung_007d_network.svg)
 
 * * * * * * * * * *
@@ -13,10 +12,12 @@ Diese Übung demonstriert die Realisierung eines Blinkers mithilfe der Funktions
 
 - **`E_CYCLE`** (Typ: `iec61499::events::E_CYCLE`)  
   Erzeugt zyklisch ein Ereignis am Ausgang `EO`.  
+
   - Parameter: `DT` = `T#1ms` (Zykluszeit 1 Millisekunde)
 
 - **`E_TMIN`** (Typ: `iec61499::events::E_TMIN`)  
   Gibt am Ausgang `EO` ein Ereignis aus, wenn seit dem letzten Eingangsereignis mindestens die Zeit `Tmin` vergangen ist.  
+
   - Parameter: `Tmin` = `T#10s`
 
 - **`E_T_FF`** (Typ: `iec61499::events::E_T_FF`)  
@@ -24,6 +25,7 @@ Diese Übung demonstriert die Realisierung eines Blinkers mithilfe der Funktions
 
 - **`DigitalOutput_Q1`** (Typ: `logiBUS::io::DQ::logiBUS_QX`)  
   Digitaler Ausgangsbaustein, der den Wert des Eingangs `OUT` an den physischen Ausgang `Output_Q1` weitergibt.  
+
   - Parameter: `QI` = `TRUE` (Aktivierung), `Output` = `Output_Q1` (Hardware-Adresse)  
   - Ereigniseingang `REQ`: Übernahme des Datenwertes
 

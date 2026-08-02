@@ -1,8 +1,5 @@
 # Uebung_014_AXb: Container (visible/invisible)
 
-
-
-
 ![Uebung_014_AXb_network](./Uebung_014_AXb_network.svg)
 
 * * * * * * * * * *
@@ -46,6 +43,7 @@ Die Verbindungen innerhalb der Subapplikation sind wie folgt realisiert:
 4. **Q_ObjHideShow** – Der Wert-Eingang `qVisible` ist mit dem Ausgang `Q1` des SR-Flipflops verbunden.
 
 Ablauf:
+
 - Ein Druck auf die Softkey-Taste **F1** setzt das SR-Flipflop, der Ausgang `Q1` wird = TRUE → der Container wird angezeigt.
 - Ein Druck auf die Softkey-Taste **F2** setzt das Flipflop zurück, `Q1` wird = FALSE → der Container wird ausgeblendet.
 

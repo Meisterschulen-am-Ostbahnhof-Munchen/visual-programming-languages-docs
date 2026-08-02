@@ -1,7 +1,5 @@
 # EBMaster
 
-
-
 <img width="1420" height="292" alt="image" src="https://github.com/user-attachments/assets/699321b3-f59e-49ad-8e4c-2d0a94a6fccc" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der EBMaster verwaltet die SPI-Kommunikation als Master-Komponente. Bei der Init
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Wartet auf INIT-Event
 2. **Initialisierung**: Konfiguriert SPI-Parameter bei INIT-Event
 3. **Betriebsbereit**: Sendet INITO bei erfolgreicher Initialisierung

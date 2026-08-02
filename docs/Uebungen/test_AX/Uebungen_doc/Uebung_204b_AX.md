@@ -1,8 +1,5 @@
 # Uebung_204b_AX: Interlock: ILOCK_CONFLICT_TRIP_AX (Motor-Sicherheitsabschaltung via Adapter)
 
-
-
-
 ![Uebung_204b_AX_network](./Uebung_204b_AX_network.svg)
 
 * * * * * * * * * *

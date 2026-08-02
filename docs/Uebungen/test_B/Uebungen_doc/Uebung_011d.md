@@ -1,6 +1,5 @@
 # Uebung_011d: Numeric Value Input I1 Durchschleifen auf N3 (Offset/Scale Effekt)
 
-
 ![Uebung_011d_network](./Uebung_011d_network.svg)
 
 * * * * * * * * * *
@@ -10,6 +9,7 @@
 In dieser Übung wird ein numerischer Wert von einem Eingabegerät (I1) gelesen und unverändert an ein Ausgabegerät (N3) weitergeleitet. Durch die Verwendung eines Konvertierungsbausteins wird der eingehende 32‑Bit‑Wert von `DWORD` in `UDINT` umgewandelt. Diese Typumwandlung führt zu einem Offset‑/Skalierungseffekt, der die Ausgabe gegenüber dem Rohwert verschiebt.
 
 Ein Beispiel verdeutlicht den Effekt:  
+
 - Eingabe 100 000 → N3 zeigt 0,00  
 - Eingabe 50 000 → N3 zeigt −500,00  
 

@@ -1,14 +1,10 @@
 # Uebung_002a6_AX: DigitalInput_I1-3 mit AND auf DigitalOutput_Q1, mit Plug and Socket
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002a6_AX`. In dieser Übung wird eine logische UND-Verknüpfung (AND) mit drei Eingängen implementiert. Der digitale Ausgang wird nur dann aktiviert, wenn alle drei überwachten Eingänge gleichzeitig den Zustand "Wahr" (HIGH) führen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Das Hauptziel dieser Übung ist die Umsetzung einer komplexeren Bedingungslogik.
 ### Funktionsbausteine (FBs)
 
 Folgende Bausteine werden verwendet:
-
-
-
 
 ![Uebung_002a6_AX_network](./Uebung_002a6_AX_network.svg)
 
@@ -55,6 +48,7 @@ Die Logik wird durch die Verschaltung der drei Eingangsbausteine mit dem UND-Log
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  Der Baustein `AX_AND_3` überwacht alle drei Adapter-Eingänge auf Zustandsänderungen.
 2.  Nur wenn alle drei Eingänge (`I1` AND `I2` AND `I3`) gleichzeitig den Datenwert `D1 = TRUE` führen, wird der Ausgang `OUT` ebenfalls auf `TRUE` gesetzt.
 3.  Sobald auch nur einer der drei Eingänge auf `FALSE` geht, wird der Ausgang sofort deaktiviert.

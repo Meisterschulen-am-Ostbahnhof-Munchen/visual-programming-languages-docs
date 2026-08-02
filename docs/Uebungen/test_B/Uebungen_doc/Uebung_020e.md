@@ -1,14 +1,10 @@
 # Uebung_020e: DigitalInput_I1 auf DigitalOutput_Q1; E_TOF; Ausschaltverzögert
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020e`.
 
 ## 🎧 Podcast
-
 
 ![Uebung_020e_network](./Uebung_020e_network.svg)
 
@@ -16,7 +12,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020e`.
 * [integrierten Vollbrücken-ICs MOTIX™ BTM9020EP](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/integrierten-Vollbrcken-ICs-MOTIX-BTM9020EP-e368kse)
 
 ----
-
 
 ## Übersicht
 

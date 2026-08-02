@@ -1,6 +1,5 @@
 # Uebung_219: Standard IEC 61131-3 FB_CTD_ULINT (Rückwärtszähler, ULINT) mit Terminal-Ausgabe
 
-
 ![Uebung_219_network](./Uebung_219_network.svg)
 
 * * * * * * * * * *

@@ -1,8 +1,5 @@
 # Uebung_074_AUI: RPTO auf UT ausgeben (Adapter Version) mit Fendt-Schaltung
 
-
-
-
 ![Uebung_074_AUI_network](./Uebung_074_AUI_network.svg)
 
 * * * * * * * * * *

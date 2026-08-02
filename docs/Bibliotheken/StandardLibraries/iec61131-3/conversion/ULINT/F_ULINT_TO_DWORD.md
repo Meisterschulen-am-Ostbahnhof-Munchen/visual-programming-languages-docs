@@ -1,7 +1,5 @@
 # F_ULINT_TO_DWORD
 
-
-
 <img width="1465" height="214" alt="F_ULINT_TO_DWORD" src="https://github.com/user-attachments/assets/a6ee56d4-2343-4d88-8833-ac9e66579ade" />
 
 * * * * * * * * * *

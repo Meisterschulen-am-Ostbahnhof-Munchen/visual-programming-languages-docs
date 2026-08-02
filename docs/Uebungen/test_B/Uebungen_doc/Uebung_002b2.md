@@ -1,14 +1,10 @@
 # Uebung_002b2: DigitalInput_I1/_I2/_I3 auf DigitalOutput_Q1; mit MOVE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002b2`. In dieser Übung wird eine kombinatorische Logikschaltung implementiert, die zwei Grundoperationen (UND und ODER) miteinander verknüpft, wobei ein `F_MOVE`-Baustein zur expliziten Datenweiterleitung genutzt wird.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Hauptziel dieser Übung ist die hierarchische Verknüpfung von Logikbaustein
 [cite_start]Die Subapplikation `Uebung_002b2.SUB` realisiert die logische Funktion `Q1 = (I1 AND I2) OR I3` unter Verwendung von Standard-Logikbausteinen[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_002b2_network](./Uebung_002b2_network.svg)
 
@@ -59,6 +54,7 @@ Die hierarchische Struktur der Logik wird durch die Verschaltung der Ereignisket
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  Ändert sich `I1` oder `I2`, berechnet `AND_2` das Teilergebnis.
 2.  Das Fertigstellungs-Event (`CNF`) von `AND_2` triggert den `F_MOVE`.
 3.  `F_MOVE` schiebt das Teilergebnis weiter zum ODER-Baustein und triggert diesen wiederum an (`CNF -> REQ`).

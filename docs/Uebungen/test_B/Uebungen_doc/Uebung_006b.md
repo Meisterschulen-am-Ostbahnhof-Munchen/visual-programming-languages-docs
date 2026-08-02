@@ -1,14 +1,10 @@
 # Uebung_006b: RS-Flip-Flop mit 2x IE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006b`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verständnis der Reset-Priorität.
 [cite_start]Die Subapplikation `Uebung_006b.SUB` nutzt einen `E_RS` Baustein[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_006b_network](./Uebung_006b_network.svg)
 

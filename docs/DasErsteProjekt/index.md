@@ -1,5 +1,2 @@
 # 🚀 Das erste Projekt
 
-
-
-

@@ -1,14 +1,10 @@
 # Uebung_006d_AX: SR-Flip-Flop mit 2x IE und Doppelklick.
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006d_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Kombination von Input-Events und Speichergliedern.
 [cite_start]Die Subapplikation `Uebung_006d_AX.SUB` definiert eine asymmetrische Bedienung[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_006d_AX_network](./Uebung_006d_AX_network.svg)
 

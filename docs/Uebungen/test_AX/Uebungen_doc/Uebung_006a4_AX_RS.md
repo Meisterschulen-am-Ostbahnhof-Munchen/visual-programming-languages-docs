@@ -1,8 +1,5 @@
 # Uebung_006a4_AX_RS: Exercise for AX_FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop with Adapter)
 
-
-
-
 ![Uebung_006a4_AX_RS_network](./Uebung_006a4_AX_RS_network.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # DualCAN hex-output ESP32
 
-
-
 ## CAN-BUS
 
 CAN-TX 21

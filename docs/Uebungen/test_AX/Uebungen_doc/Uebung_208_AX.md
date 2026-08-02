@@ -1,8 +1,5 @@
 # Uebung_208_AX: Interlock: ILOCK_FB_SR_AX (Zwei gegenseitig verriegelte Set-Dominante Latches via AX/AX2-Adapter)
 
-
-
-
 ![Uebung_208_AX_network](./Uebung_208_AX_network.svg)
 
 - **Titel**: Uebung_208_AX  

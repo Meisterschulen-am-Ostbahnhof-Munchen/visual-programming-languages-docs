@@ -1,7 +1,5 @@
 # Uebung_012e_AR: Numeric Value Input PHYS und Speichern INI mit Subapp (AR Adapter)
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

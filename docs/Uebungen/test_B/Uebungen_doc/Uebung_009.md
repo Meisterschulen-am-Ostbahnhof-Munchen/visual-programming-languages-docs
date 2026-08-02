@@ -1,14 +1,10 @@
 # Uebung_009: Ticker
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_009`. Hier verbinden wir die Zeitbasis mit einer Zählfunktion und einer numerischen Anzeige.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Erlernen der ereignisbasierten Zählung (`E_CTUD`) und der Darstellung von Werte
 [cite_start]In `Uebung_009.SUB` wird ein Taktgeber genutzt, um einen Aufwärtszähler anzusteuern, dessen Wert an ein ISOBUS-Terminal gesendet wird[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_009_network](./Uebung_009_network.svg)
 

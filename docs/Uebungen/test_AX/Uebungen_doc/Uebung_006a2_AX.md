@@ -1,14 +1,10 @@
 # Uebung_006a2_AX: 2x SR und T-Flip-Flop mit IE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006a2_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Demonstration einer Zentral-Aus-Funktion.
 [cite_start]Die Subapplikation `Uebung_006a2_AX.SUB` steuert zwei unabhängige Lampen, die gemeinsam gelöscht werden können[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_006a2_AX_network](./Uebung_006a2_AX_network.svg)
 

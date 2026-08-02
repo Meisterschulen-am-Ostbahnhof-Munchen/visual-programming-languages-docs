@@ -1,12 +1,12 @@
 # Uebung_213b: Standard IEC 61131-3 FB_CTU_UDINT (Vorwärtszähler, UDINT) mit Terminal-Ausgabe (PHYS_LREAL)
 
-
 ![Uebung_213b_network](./Uebung_213b_network.svg)
 
 * * * * * * * * * *
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärtszähler nach IEC 61131‑3 (FB_CTU_UDINT) mit einem Presetwert von 5. Die Zählimpulse werden über zwei digitale Eingänge bereitgestellt:  
+
 - **I1** dient als Zähleingang (CU – Count Up)  
 - **I2** dient als Rücksetzeingang (R – Reset)  
 
@@ -65,6 +65,7 @@ Die **Datenverbindungen** übertragen die Werte:
 ## Zusammenfassung
 
 Die Übung veranschaulicht den Einsatz eines standardisierten Vorwärtszählers (FB_CTU_UDINT) in der 4diac‑IDE. Sie zeigt:
+
 - Anbindung zweier digitaler Eingänge als Zähl‑ und Rücksetzsignal
 - Verwendung eines digitalen Ausgangs zur Anzeige des Erreichens des Presetwerts
 - Ausgabe des Zählerstands auf einem Terminal mithilfe eines physikalischen LREAL‑Ausgabebausteins

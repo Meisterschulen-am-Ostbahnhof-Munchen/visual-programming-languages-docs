@@ -1,6 +1,5 @@
 # Uebung_012e_sub: Numeric Value Input PHYS und Speichern INI mit Subapp
 
-
 ![Uebung_012e_sub_network](./Uebung_012e_sub_network.svg)
 
 * * * * * * * * * *

@@ -1,6 +1,5 @@
 # Uebung_000b_AX: AX_AND
 
-
 ![Uebung_000b_AX_network](./Uebung_000b_AX_network.svg)
 
 * * * * * * * * * *

@@ -1,14 +1,10 @@
 # Uebung_010b3: Toggle Flip-Flop mit IE AuxFunction2_X1
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010b3`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verwendung von `Aux_IE` (Event) zur Steuerung von Speichern.
 [cite_start]In `Uebung_010b3.SUB` wird eine AUX-Funktion genutzt, um ein Flip-Flop zu toggeln[cite: 1].
 
 ### Funktionsweise
-
 
 ![Uebung_010b3_network](./Uebung_010b3_network.svg)
 

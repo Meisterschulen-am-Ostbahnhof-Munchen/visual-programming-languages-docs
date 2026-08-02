@@ -1,8 +1,5 @@
 # Uebung_204_AX: Interlock: ILOCK_CONFLICT_TRIP_AX (Trip bei Konflikt via Adapter)
 
-
-
-
 ![Uebung_204_AX_network](./Uebung_204_AX_network.svg)
 
 * * * * * * * * * *

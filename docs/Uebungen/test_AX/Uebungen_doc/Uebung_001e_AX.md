@@ -1,8 +1,5 @@
 # Uebung_001e_AX: DigitalInput_I1 negiert auf DigitalOutput_Q1
 
-
-
-
 ![Uebung_001e_AX_network](./Uebung_001e_AX_network.svg)
 
 * * * * * * * * * *
@@ -44,6 +41,7 @@ Der Datenfluss erfolgt über drei **Adapter‑Verbindungen** (im XML als `<Adapt
    Der negierte Wert wird an den Ausgangsbaustein übergeben.
 
 Dadurch ergibt sich folgende Logik:  
+
 - Wenn **Input_I1** `TRUE` (z. B. Taster gedrückt) → `AX_NOT` liefert `FALSE` → **Output_Q1** wird `FALSE` (LED aus).  
 - Wenn **Input_I1** `FALSE` (Taster nicht gedrückt) → `AX_NOT` liefert `TRUE` → **Output_Q1** wird `TRUE` (LED an).
 

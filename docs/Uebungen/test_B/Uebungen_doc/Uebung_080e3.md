@@ -1,6 +1,5 @@
 # Uebung_080e3: Beispiel für E_CTU mit Eventbremse durch E_D_FF_ANY
 
-
 ![Uebung_080e3_network](./Uebung_080e3_network.svg)
 
 * * * * * * * * * *

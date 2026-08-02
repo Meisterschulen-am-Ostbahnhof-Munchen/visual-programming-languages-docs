@@ -1,8 +1,5 @@
 # Uebung_001_AX: DigitalInput_I1 auf DigitalOutput_Q1, mit Plug and Socket
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die grundlegende logiBUS®-Übung `Uebung_001_AX`, bei der ein digitaler Eingang direkt mit einem digitalen Ausgang verbunden wird, unter Verwendung des Adapters AX.
@@ -26,9 +23,6 @@ Das Hauptziel dieser Übung ist es, das grundlegende Prinzip der direkten Signal
 ### Funktionsbausteine (FBs)
 
 In der Subapplikation werden zwei zentrale Funktionsbausteine instanziiert:
-
-
-
 
 ![Uebung_001_AX_network](./Uebung_001_AX_network.svg)
 

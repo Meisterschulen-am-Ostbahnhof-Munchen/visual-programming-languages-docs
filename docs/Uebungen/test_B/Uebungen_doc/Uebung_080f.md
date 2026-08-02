@@ -1,6 +1,5 @@
 # Uebung_080f: Beispiel für E_CTU
 
-
 ![Uebung_080f_network](./Uebung_080f_network.svg)
 
 * * * * * * * * * *

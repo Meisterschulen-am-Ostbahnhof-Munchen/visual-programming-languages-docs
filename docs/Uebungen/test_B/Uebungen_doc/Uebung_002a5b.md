@@ -1,14 +1,10 @@
 # Uebung_002a5b: DigitalInput_I1-3 mit OR auf DigitalOutput_Q1-3
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002a5b`. In dieser Übung werden zwei Konzepte kombiniert: Eine logische ODER-Verknüpfung (OR) mit drei Eingängen und die gleichzeitige Verteilung (Fan-Out) des Ergebnisses auf drei digitale Ausgänge.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Ziel ist es, eine komplexe E/A-Struktur abzubilden. Es wird gezeigt, wie Inf
 [cite_start]In der Subapplikation `Uebung_002a5b.SUB` werden drei Eingangsbausteine über ein ODER-Gatter mit drei Ausgangsbausteinen verknüpft[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_002a5b_network](./Uebung_002a5b_network.svg)
 
@@ -57,6 +52,7 @@ Die Schaltung nutzt ein zentrales Logik-Element als Knotenpunkt für alle Signal
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  **Eingangs-Trigger**: Jede Änderung an einem der drei Taster (`I1`, `I2`, `I3`) löst eine Neuberechnung der Logik aus.
 2.  **Berechnung**: Der Baustein `OR_3_BOOL` setzt sein Ergebnis auf `TRUE`, wenn mindestens ein Eingang aktiv ist.
 3.  **Massen-Update**: Das resultierende Signal wird zeitgleich an alle drei Lampen (`Q1`, `Q2`, `Q3`) gesendet. Sobald die Logik fertig ist (`CNF`), werden alle drei Hardware-Ausgänge synchron aktualisiert.

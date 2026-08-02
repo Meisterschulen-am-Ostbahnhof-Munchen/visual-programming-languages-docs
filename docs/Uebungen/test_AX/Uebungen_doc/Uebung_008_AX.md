@@ -1,14 +1,10 @@
 # Uebung_008_AX: Blinker mit E_CYCLE, E_SWITCH und E_SR
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_008_AX`.
 
 ----
-
 
 ## Ziel der Übung
 

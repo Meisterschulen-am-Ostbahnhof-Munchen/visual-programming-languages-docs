@@ -1,7 +1,5 @@
 # FBRT_WINDOW
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

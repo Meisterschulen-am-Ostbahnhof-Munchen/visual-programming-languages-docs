@@ -1,6 +1,5 @@
 # Uebung_011b1_PHYS: Numeric Value Input ADD (PHYS)
 
-
 ![Uebung_011b1_PHYS_network](./Uebung_011b1_PHYS_network.svg)
 
 * * * * * * * * * *

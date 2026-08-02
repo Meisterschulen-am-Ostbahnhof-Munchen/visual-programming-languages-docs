@@ -1,8 +1,5 @@
 # Uebung_012b_AUDI: Numeric Value Input und Speichern
 
-
-
-
 ![Uebung_012b_AUDI_network](./Uebung_012b_AUDI_network.svg)
 
 * * * * * * * * * *
@@ -36,6 +33,7 @@ Die Übung besteht aus einem Subapplikationsnetzwerk, das vier Funktionsbaustein
 ### Compiler‑Importe
 
 Die Übung importiert folgende Konstanten aus der Bibliothek `Uebungen::const::NVS::NVS_Keys` und `Uebungen::const::UT::DefaultPool`:
+
 - `KEY_I1_STORE` – der Schlüssel für den INI‑Speicher
 - `SECTION_I1_STORE` – die Abschnittskennung für den INI‑Speicher
 - `InputNumber_I1` – die ISOBUS‑Objekt‑ID des Eingabewerts

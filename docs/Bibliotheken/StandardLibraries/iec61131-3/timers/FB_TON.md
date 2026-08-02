@@ -1,7 +1,5 @@
 # FB_TON
 
-
-
 <img width="1324" height="243" alt="image" src="https://github.com/user-attachments/assets/b55df574-a026-4d8a-b907-32a7779df532" />
 
 * * * * * * * * * *
@@ -55,11 +53,6 @@ Der FB_TON startet die Zeitmessung, wenn der Eingang IN von FALSE auf TRUE wechs
 - **FB_TOF**: Ausschaltverzögerung (Off-Delay) statt Einschaltverzögerung
 - **FB_TP**: Impulstimer mit fester Pulsdauer
 - **FB_TON_EXT**: Erweiterte Timer-Varianten mit zusätzlichen Funktionen
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

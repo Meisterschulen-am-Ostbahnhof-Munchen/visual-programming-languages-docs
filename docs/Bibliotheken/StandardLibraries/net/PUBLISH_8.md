@@ -1,7 +1,5 @@
 # PUBLISH_8
 
-
-
 <img width="1180" height="444" alt="image" src="https://github.com/user-attachments/assets/3ea0daaf-96d3-41f7-955f-9e7819185dd9" />
 
 * * * * * * * * * *
@@ -44,6 +42,7 @@ Der PUBLISH_8 Block ermöglicht die Verteilung von Daten über ein Publisher-Sub
 
 ## Zustandsübersicht
 Der Block verfügt über zwei Hauptzustände:
+
 1. **Nicht initialisiert**: Block ist betriebsbereit, aber nicht für Kommunikation konfiguriert
 2. **Initialisiert**: Block ist konfiguriert und kann Daten an Subscriber verteilen
 

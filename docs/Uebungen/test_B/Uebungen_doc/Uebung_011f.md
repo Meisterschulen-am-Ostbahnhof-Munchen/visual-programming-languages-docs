@@ -1,6 +1,5 @@
 # Uebung_011f: Numeric Value Input I3 Durchschleifen auf N3 (Input und Output PHYS via NumericObjectPool_S)
 
-
 ![Uebung_011f_network](./Uebung_011f_network.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Beispiel:
 - **Datenverbindung**: `NumericValue_PHYS.rPhys` → `Q_NumericValue_PHYS.rPhys`  
 
 Der Ablauf ist rein ereignisgesteuert:  
+
 1. Der Eingangsbaustein erkennt eine Änderung an I3 und feuert `IND`.  
 2. Der Ausgangsbaustein wird über `REQ` getriggert, den aktuellen `rPhys`‑Wert zu übernehmen und auf N3 auszugeben.  
 3. Da keine weiteren Verarbeitungsschritte erfolgen, wird der Wert eins zu eins übertragen.  

@@ -1,14 +1,10 @@
 # Uebung_019: Umschalten einer Maske
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_019`. Hier wird gezeigt, wie das Programm die aktive Anzeige (Data Mask) auf dem Terminal umschalten kann.
 
 ## 📺 Video
-
 
 ![Uebung_019_network](./Uebung_019_network.svg)
 
@@ -23,7 +19,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_019`. Hier wird gezeigt, 
 * [Smart Farming Vision 1991 Auernhammers Blaupausen](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Smart-Farming-Vision-1991-Auernhammers-Blaupausen-e3b09r2)
 
 ----
-
 
 ## Ziel der Übung
 

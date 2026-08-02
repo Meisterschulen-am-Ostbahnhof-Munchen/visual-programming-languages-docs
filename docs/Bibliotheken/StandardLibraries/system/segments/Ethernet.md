@@ -1,7 +1,5 @@
 # Ethernet
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

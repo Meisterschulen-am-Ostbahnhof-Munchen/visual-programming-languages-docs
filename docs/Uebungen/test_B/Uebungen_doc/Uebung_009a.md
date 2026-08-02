@@ -1,14 +1,10 @@
 # Uebung_009a: RampLimitFS
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_009a`. Hier wird die komplexe Steuerung eines Zahlenwertes über verschiedene Taster-Interaktionen demonstriert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Ansteuerung eines Rampen-Bausteins (`RampLimitFS`). Es wird gezeigt, wie verschi
 [cite_start]Die Subapplikation `Uebung_009a.SUB` nutzt einen Rampen-Baustein zur stufenlosen Steuerung eines numerischen Werts zwischen 0 und 100[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_009a_network](./Uebung_009a_network.svg)
 
@@ -39,6 +34,7 @@ Ansteuerung eines Rampen-Bausteins (`RampLimitFS`). Es wird gezeigt, wie verschi
 ## Funktionsweise
 
 Der Rampen-Baustein reagiert auf unterschiedliche Event-Eingänge:
+
 1.  **Statische Ziele**: Bei `ZERO` oder `FULL` springt die interne Berechnung sofort auf die Grenzwerte.
 2.  **Dynamische Änderung**:
     *   Ein Klick (`SINGLE_CLICK`) an `I2` triggert den `UP_SLOW` Eingang des Rampen-Bausteins. Der Wert steigt mit der im Parameter `SLOW` hinterlegten Rate.

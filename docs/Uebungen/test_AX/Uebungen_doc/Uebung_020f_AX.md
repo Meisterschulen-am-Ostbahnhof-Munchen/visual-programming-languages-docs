@@ -1,14 +1,10 @@
 # Uebung_020f_AX: DigitalInput_I1 auf DigitalOutput_Q1; AX_TP; Impulsformend
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020f_AX`. Hier wird ein Impuls-Timer (TP - Timer Pulse) verwendet, um eine definierte Einschaltdauer zu erzwingen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Das Ziel dieser Übung ist die Anwendung des `AX_TP` Bausteins. Ein Impulsglied 
 [cite_start]Die Subapplikation `Uebung_020f_AX.SUB` nutzt einen Adapter-Timer vom Typ `AX_TP`[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_020f_AX_network](./Uebung_020f_AX_network.svg)
 

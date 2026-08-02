@@ -1,8 +1,5 @@
 # Uebung_028c3_AR: Analog-Eingang Kalibrierung mit Adaptern INI und Hysterese-Regler am Ausgang und Display Anzeige
 
-
-
-
 ![Uebung_028c3_AR_network](./Uebung_028c3_AR_network.svg)
 
 * * * * * * * * * *

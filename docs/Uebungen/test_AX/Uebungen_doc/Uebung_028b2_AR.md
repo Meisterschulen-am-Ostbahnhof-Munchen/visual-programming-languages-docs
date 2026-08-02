@@ -1,8 +1,5 @@
 # Uebung_028b2_AR: Analog-Eingang Kalibrierung mit Adaptern NVS und Hysterese-Regler am Ausgang
 
-
-
-
 ![Uebung_028b2_AR_network](./Uebung_028b2_AR_network.svg)
 
 * * * * * * * * * *

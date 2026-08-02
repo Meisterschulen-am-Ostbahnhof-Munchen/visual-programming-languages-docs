@@ -1,8 +1,5 @@
 # Uebung_028a_AR: Analog-Eingang Kalibrierung mit Adaptern INI
 
-
-
-
 ![Uebung_028a_AR_network](./Uebung_028a_AR_network.svg)
 
 * * * * * * * * * *

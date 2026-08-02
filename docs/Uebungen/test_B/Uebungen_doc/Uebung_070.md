@@ -1,14 +1,10 @@
 # Uebung_070: WBSD auf UT ausgeben
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_070`. Hier wird gezeigt, wie man Daten von der Traktor-ECU (TECU) einliest und auf dem Terminal visualisiert.
 
 ## 🎧 Podcast
-
 
 ![Uebung_070_network](./Uebung_070_network.svg)
 
@@ -19,7 +15,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_070`. Hier wird gezeigt, 
 * [Verpolungsschutz in der Elektronik: Warum die ideale Diode (LM74700) MOSFETs und Schottky-Dioden in Effizienz und Kosten schlägt](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Verpolungsschutz-in-der-Elektronik-Warum-die-ideale-Diode-LM74700-MOSFETs-und-Schottky-Dioden-in-Effizienz-und-Kosten-schlgt-e3a2487)
 
 ----
-
 
 ## Ziel der Übung
 
@@ -41,6 +36,7 @@ Verwendung des Bausteins `I_WBSD` (Wheel Based Speed and Distance). Ziel ist es,
 ## Funktionsweise
 
 Die TECU sendet die Geschwindigkeitsdaten in festen Zeitintervallen (zyklisch) auf den ISOBUS.
+
 1.  Der Baustein `I_WBSD` empfängt eine neue Nachricht.
 2.  Er aktualisiert den Ausgang `WHEELBASEDMACHINESPEED` und feuert ein `IND`-Event.
 3.  Das Ereignis triggert die Anzeige am Terminal.

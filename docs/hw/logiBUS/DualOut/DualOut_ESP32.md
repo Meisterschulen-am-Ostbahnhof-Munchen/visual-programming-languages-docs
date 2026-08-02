@@ -1,6 +1,5 @@
 # DualOut ESP32
 
-
 ## 🔌 IO
 
 ### Digitale Ausgänge

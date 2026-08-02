@@ -1,7 +1,5 @@
 # F_UDINT_TO_DWORD
 
-
-
 <img width="1464" height="212" alt="F_UDINT_TO_DWORD" src="https://github.com/user-attachments/assets/2a17af0b-98a8-4d4b-ac10-de4278c1451a" />
 
 * * * * * * * * * *
@@ -52,9 +50,6 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Gegensatz zu arithmetischen Funktionsblöcken ändert `F_UDINT_TO_DWORD` nicht den Wert, sondern nur den Datentyp.
 - Ähnliche Konvertierungsblöcke existieren für andere Datentypen (z.B. `INT_TO_DINT`), jedoch mit unterschiedlichen Quell- und Zieltypen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

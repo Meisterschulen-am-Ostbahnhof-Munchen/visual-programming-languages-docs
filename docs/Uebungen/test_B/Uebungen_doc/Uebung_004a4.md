@@ -1,14 +1,10 @@
 # Uebung_004a4: Toggle Flip-Flop mit IE mit BUTTON_SINGLE_CLICK mit E_SPLIT
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a4`. Hier wird gezeigt, wie ein einzelnes Ereignis genutzt werden kann, um mehrere unabhängige Prozesse sequenziell anzustoßen, indem man einen `E_SPLIT` Baustein verwendet.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Ziel ist das Verständnis der sequenziellen Ereignis-Verarbeitung. Der `E_SP
 [cite_start]Die Subapplikation `Uebung_004a4.SUB` verwendet einen Taster, um zwei separate Toggle-Flip-Flops gleichzeitig zu schalten[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_004a4_network](./Uebung_004a4_network.svg)
 

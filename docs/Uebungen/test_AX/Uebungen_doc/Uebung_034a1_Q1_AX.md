@@ -1,8 +1,5 @@
 # Uebung_034a1_Q1_AX: Numeric Value Input auf PWM Ausgang (Adapter Version)
 
-
-
-
 ![Uebung_034a1_Q1_AX_network](./Uebung_034a1_Q1_AX_network.svg)
 
 * * * * * * * * * *
@@ -38,6 +35,7 @@ Die Übung ist als **SubAppType** realisiert und verwendet ausschließlich Adapt
    ```
    Verbindung: PWM_Value.IN → PWMOutput_Q1.OUT
    ```
+
 4. `PWMOutput_Q1` setzt den empfangenen Wert als PWM-Tastverhältnis auf dem logiBUS-Ausgang `Output_Q1` um.
 
 **Hinweis**: Wie im Kommentar im Netzwerk vermerkt, wird der aktualisierte Wert **nicht** bei jeder Tastatureingabe (z. B. beim Drehen eines Encoders) übertragen, sondern erst nach drücken der OK-Taste. Dieses Verhalten ist durch den FB `NumericValue_IDA` vorgegeben.

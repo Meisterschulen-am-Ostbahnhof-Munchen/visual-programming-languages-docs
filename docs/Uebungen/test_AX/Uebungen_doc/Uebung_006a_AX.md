@@ -1,14 +1,10 @@
 # Uebung_006a_AX: SR und T-Flip-Flop mit 3x IE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006a_AX`. Diese Übung zeigt einen "Alles-Könner"-Baustein.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Kennenlernen des `AX_T_FF_SR`.
 [cite_start]Die Subapplikation `Uebung_006a_AX.SUB` nutzt drei Taster[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_006a_AX_network](./Uebung_006a_AX_network.svg)
 

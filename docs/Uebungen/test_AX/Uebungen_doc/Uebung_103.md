@@ -1,14 +1,10 @@
 # Uebung_103: DigitalInput_I1 auf DigitalOutput_Q1, mit Plug and Socket und DEMUX
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_103`. Dies ist ein komplexes Beispiel, das zeigt, wie man den Signalpfad eines Tasters zur Laufzeit umschalten kann.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Dynamische Auswahl zwischen verschiedenen Verarbeitungslogiken (Tastend, Rastend
 [cite_start]Die Subapplikation `Uebung_103.SUB` nutzt ein ISOBUS-Zahlenfeld, um zwischen drei Logik-Zweigen zu wählen[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_103_network](./Uebung_103_network.svg)
 

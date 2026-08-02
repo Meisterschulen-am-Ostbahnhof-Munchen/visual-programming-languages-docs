@@ -1,14 +1,10 @@
 # Uebung_040_AX: Lauflicht 8 Event gesteuert
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_040_AX`. Im Gegensatz zu Übung 038 schaltet diese Schrittkette nicht automatisch weiter, sondern wartet auf Ereignisse.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,8 +19,6 @@ Manuelles Weiterschalten einer Schrittkette.
 ### Logik zum Weiterschalten
 
 Um nicht 8 Taster zu benötigen, wurde eine Logik mit Zählern (`E_CTU`) und Demultiplexern (`E_DEMUX`) gebaut:
-
-
 
 ![Uebung_040_AX_network](./Uebung_040_AX_network.svg)
 

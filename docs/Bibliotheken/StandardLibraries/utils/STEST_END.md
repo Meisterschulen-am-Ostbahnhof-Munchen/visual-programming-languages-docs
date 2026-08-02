@@ -1,7 +1,5 @@
 # STEST_END
 
-
-
 ![STEST_END](https://github.com/user-attachments/assets/1b3b48f8-4224-4d02-9c1c-d69e283b22a2)
 
 * * * * * * * * * *

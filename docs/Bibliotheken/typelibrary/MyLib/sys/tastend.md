@@ -1,7 +1,5 @@
 # Tastend
 
-
-
 <img width="662" height="233" alt="image" src="https://github.com/user-attachments/assets/26789397-647c-4c13-b28d-5752fd19880c" />
 
 * * * * * * * * * *
@@ -18,6 +16,7 @@ Diese Übung beschäftigt sich mit der Erstellung und Verwendung eines Sub-Appli
 
 ## Programmablauf und Verbindungen
 Der Sub-Baustein "tastend" verfügt über folgende Schnittstellen:
+
 - **Eingangsadapter**: IN (Typ: adapter::types::unidirectional::AX)
 - **Ausgangsadapter**: OUT (Typ: adapter::types::unidirectional::AX)
 
@@ -29,8 +28,6 @@ Die Verbindung erfolgt direkt vom Eingangsadapter IN zum Ausgangsadapter OUT. Di
 
 ## Zusammenfassung
 Die Übung "tastend" demonstriert die Erstellung eines einfachen Sub-Applikationstyps mit Adapterverbindungen. Sie zeigt die grundlegende Struktur von Sub-Bausteinen in 4diac-IDE und deren Integration in größere Steuerungsapplikationen durch standardisierte Adapterschnittstellen.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

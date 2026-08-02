@@ -1,14 +1,10 @@
 # Uebung_004a2_AX: Toggle Flip-Flop mit IE mit BUTTON_SINGLE_CLICK mit E_MERGE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a2_AX`. Hier wird die Stromstoßschaltung erweitert, sodass sie von zwei verschiedenen Tastern aus bedient werden kann. Dazu werden die Ereignisse der beiden Taster zusammengeführt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Das Ziel ist es zu lernen, wie man asynchrone Ereignisströme vereint. Wenn zwei
 [cite_start]Die Subapplikation `Uebung_004a2_AX.SUB` nutzt einen `E_MERGE` Baustein, um zwei Eingangs-Events auf einen Flip-Flop-Eingang zu leiten[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_004a2_AX_network](./Uebung_004a2_AX_network.svg)
 

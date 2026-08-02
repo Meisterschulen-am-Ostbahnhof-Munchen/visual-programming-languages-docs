@@ -1,8 +1,5 @@
 # Uebung_003e_AX: DigitalInput_I1-4 auf DigitalOutput_Q1-4 - flach mit Adapter mit Bypass (Druckumlaufventil)
 
-
-
-
 ![Uebung_003e_AX_network](./Uebung_003e_AX_network.svg)
 
 * * * * * * * * * *

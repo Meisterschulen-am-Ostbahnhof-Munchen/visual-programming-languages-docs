@@ -1,6 +1,5 @@
 # Uebung_004b4c_sub: Sub-Applikation für ein verriegelbares Toggle-Flip-Flop mit AE2-Adapter (identisch zu 004b3c_sub)
 
-
 ![Uebung_004b4c_sub_network](./Uebung_004b4c_sub_network.svg)
 
 * * * * * * * * * *

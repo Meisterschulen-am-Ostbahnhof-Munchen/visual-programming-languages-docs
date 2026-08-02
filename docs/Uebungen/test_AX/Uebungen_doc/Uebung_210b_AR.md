@@ -1,8 +1,5 @@
 # Uebung_210b_AR: Standard IEC 61131-3 AI_FB_CTU (Adapter Version, Vorwärtszähler, INT) mit Terminal-Ausgabe (PHYS)
 
-
-
-
 ![Uebung_210b_AR_network](./Uebung_210b_AR_network.svg)
 
 * * * * * * * * * *

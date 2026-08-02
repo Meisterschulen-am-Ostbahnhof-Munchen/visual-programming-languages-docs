@@ -1,8 +1,5 @@
 # Uebung_209_AX: Interlock: ILOCK_FB_RS_AX (Zwei gegenseitig verriegelte Reset-Dominante Latches via AX/AX2-Adapter)
 
-
-
-
 ![Uebung_209_AX_network](./Uebung_209_AX_network.svg)
 
 * * * * * * * * * *

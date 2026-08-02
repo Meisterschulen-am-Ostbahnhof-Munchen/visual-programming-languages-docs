@@ -1,7 +1,5 @@
 # FB_CTD_DINT
 
-
-
 <img width="1399" height="282" alt="FB_CTD_DINT" src="https://github.com/user-attachments/assets/a2d2a64a-c6b7-4d0e-9d5d-c1ab0452c96f" />
 
 * * * * * * * * * *
@@ -41,6 +39,7 @@ Der Funktionsblock `FB_CTD_DINT` ist ein Abwärtszähler (Down Counter) für 32-
 
 ## Zustandsübersicht
 Der Funktionsblock hat keine expliziten Zustände, sondern arbeitet ereignisgesteuert:
+
 1. Wartet auf `REQ`-Ereignis
 2. Führt Zähloperation durch
 3. Sendet `CNF`-Ereignis

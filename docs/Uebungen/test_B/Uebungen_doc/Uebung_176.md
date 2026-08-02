@@ -4,7 +4,6 @@ Hier ist die Dokumentation für die Übung basierend auf den bereitgestellten XM
 
 ![Bild der Übung, falls vorhanden]
 
-
 ![Uebung_176_network](./Uebung_176_network.svg)
 
 * * * * * * * * * *

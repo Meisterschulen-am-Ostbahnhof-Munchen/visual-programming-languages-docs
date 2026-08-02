@@ -2,8 +2,6 @@ Hier ist die Dokumentationsseite für die Übung `Uebung_171` basierend auf den 
 
 # Uebung_171: Exercise for E_D_FF_ANY
 
-
-
 ![Uebung_171_network](./Uebung_171_network.svg)
 
 * * * * * * * * * *
@@ -40,6 +38,7 @@ Das Netzwerk zeigt eine einfache Verbindung zwischen einer Standard-Funktion und
 
 ### Hinweise zur Durchführung
 Im Netzwerk befindet sich ein Kommentarbaustein mit dem Inhalt **"TODO"**. Dies deutet darauf hin, dass die Übung vom Anwender vervollständigt werden muss. Wahrscheinlich fehlen:
+
 1.  Eingangswerte für `F_MOVE`, um einen Wert zu definieren.
 2.  Eine Ereignis-Verbindung (Event Connection), um den `E_MOVE` Baustein zu triggern (Eingang `EI`), damit dieser den Datenwert übernimmt und weitergibt.
 

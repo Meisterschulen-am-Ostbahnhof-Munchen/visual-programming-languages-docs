@@ -1,6 +1,5 @@
 # Uebung_212b: Standard IEC 61131-3 FB_CTU_LINT (Vorwärtszähler, LINT) mit Terminal-Ausgabe (PHYS_LREAL)
 
-
 ![Uebung_212b_network](./Uebung_212b_network.svg)
 
 *Kein Bild verfügbar.*
@@ -48,24 +47,32 @@ Die Steuerung erfolgt über Ereignis- und Datenverbindungen:
 ### Ereignisverbindungen
 - `Input_CU.IND` → `FB_CTU_LINT.REQ`  
   Bei einer positiven Flanke des Digitaleingangs I1 wird der Zähler zum Hochzählen angestoßen.
+
 - `Input_R.IND` → `FB_CTU_LINT.REQ`  
   Bei einer positiven Flanke des Digitaleingangs I2 wird der Zähler zurückgesetzt.
+
 - `FB_CTU_LINT.CNF` → `Output_Q1.REQ`  
   Nach Abschluss einer Zähleroperation (egal ob Zählen oder Reset) wird der Ausgang aktualisiert.
+
 - `FB_CTU_LINT.CNF` → `F_LINT_TO_LREAL.REQ`  
   Gleichzeitig wird die Typkonvertierung des aktuellen Zählerwerts angestoßen.
+
 - `F_LINT_TO_LREAL.CNF` → `Q_NumericValue_PHYS_LREAL.REQ`  
   Nach der Konvertierung wird der Wert an das Terminal gesendet.
 
 ### Datenverbindungen
 - `Input_CU.IN` → `FB_CTU_LINT.CU`  
   Der Zustand von Eingang I1 steuert den Zählimpuls (positive Flanke).
+
 - `Input_R.IN` → `FB_CTU_LINT.R`  
   Der Zustand von Eingang I2 steuert den Reset (positive Flanke).
+
 - `FB_CTU_LINT.Q` → `Output_Q1.OUT`  
   Der Ausgang Q des Zählers (TRUE wenn CV >= PV) wird an den Digitalausgang Q1 weitergegeben.
+
 - `FB_CTU_LINT.CV` → `F_LINT_TO_LREAL.IN`  
   Der aktuelle Zählerwert (LINT) gelangt in den Konverter.
+
 - `F_LINT_TO_LREAL.OUT` → `Q_NumericValue_PHYS_LREAL.lrPhys`  
   Der konvertierte LREAL-Wert wird dem Terminal-Baustein übergeben.
 

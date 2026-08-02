@@ -1,8 +1,5 @@
 # Uebung_034b_AUDI: LONG_PRESS_HOLD-Eingang auf PWM Ausgang (Adapter Version) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_034b_AUDI_network](./Uebung_034b_AUDI_network.svg)
 
 * * * * * * * * * *

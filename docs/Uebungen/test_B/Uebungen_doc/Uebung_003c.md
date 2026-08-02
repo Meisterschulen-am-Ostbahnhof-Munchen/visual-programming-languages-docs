@@ -1,8 +1,5 @@
 # Uebung_003c: DigitalInput_I1-2-3-4 auf AUX
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003c`. Hier wird demonstriert, wie lokale Hardware-Eingänge an das ISOBUS-System als "Auxiliary Inputs" angebunden werden, wobei eine typisierte Sub-Applikation zur Strukturierung verwendet wird.
@@ -12,7 +9,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003c`. Hier wird demonstr
 * [Altbayerisch für Einsteiger: Von Gratler-Schnupfen und Stadthodern – Eine Laute-Reise durch Lektion 3C](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Altbayerisch-fr-Einsteiger-Von-Gratler-Schnupfen-und-Stadthodern--Eine-Laute-Reise-durch-Lektion-3C-e376jh4)
 
 ----
-
 
 ## Ziel der Übung
 
@@ -27,6 +23,7 @@ Das Ziel ist es, lokale physische Schalter (`I1` bis `I4`) für das ISOBUS-Netzw
 ### Typisierte Sub-Applikation: `Uebung_003c_sub`
 
 [cite_start]Dieser Baustein verbindet einen Standard-Digitaleingang mit einem ISOBUS-Auxiliary-Ausgang[cite: 2]. Er verfügt über folgende Parameter:
+
   * **`Input`**: Auswahl des lokalen Hardware-Pins (z.B. `Input_I1`).
   * **`iInpNr`**: Die fortlaufende Nummer des AUX-Eingangs im Objekt-Pool (Index 0 bis n).
 
@@ -35,6 +32,7 @@ Intern werden die Ereignisse (`IND -> REQ`) und Daten (`IN -> OUT`) vom `logiBUS
 ### Konfiguration der Kanäle
 
 In `Uebung_003c` erfolgt das Mapping wie folgt:
+
 *   `F1`: `Input_I1` ➡️ AUX Index 0
 *   `F2`: `Input_I2` ➡️ AUX Index 1
 *   `F3`: `Input_I3` ➡️ AUX Index 2

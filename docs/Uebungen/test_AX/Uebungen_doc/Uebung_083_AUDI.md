@@ -1,8 +1,5 @@
 # Uebung_083_AUDI: Beispiel für AUDI_CTUD_UDINT (Adapter-basiert)
 
-
-
-
 ![Uebung_083_AUDI_network](./Uebung_083_AUDI_network.svg)
 
 * * * * * * * * * *
@@ -61,6 +58,7 @@ Die Schaltung arbeitet ereignisgesteuert über die Tastereingänge:
 4. **Preset-Wert übernehmen (PV)**: Ein Tastendruck an **I4** triggert den FB `AUDI_UDINT_TO_UDI` (Ereigniseingang `REQ`), der den konstanten Wert **5** über seinen Adapterausgang `AUDI_OUT` an den PV-Eingang des Zählers sendet. Der Zähler übernimmt diesen Wert als neuen oberen Grenzwert.
 
 Die Ausgänge sind wie folgt verbunden:
+
 - Der Adapterausgang `QU` des Zählers ist mit dem Steuereingang `OUT` von `DigitalOutput_Q1` verbunden. Wird der Zählerstand ≥ PV (hier initial Standardwert, sofern nicht überschrieben), leuchtet die Lampe Q1.
 - Der Adapterausgang `QD` ist mit `DigitalOutput_Q2` verbunden. Bei Zählerstand = 0 leuchtet Q2.
 - Der aktuelle Zählerwert `CV` wird über eine Adapterverbindung an den Eingang `u32NewValue` des Anzeigebausteins `Q_NumericValue_AUDI` weitergeleitet und auf einer numerischen Anzeige dargestellt.

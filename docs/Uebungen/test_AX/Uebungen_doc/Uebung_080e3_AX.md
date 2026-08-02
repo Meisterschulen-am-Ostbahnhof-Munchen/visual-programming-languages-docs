@@ -1,8 +1,5 @@
 # Uebung_080e3_AX: Beispiel für E_CTU mit Eventbremse durch AX_D_FF / AUI_D_FF_HYS
 
-
-
-
 ![Uebung_080e3_AX_network](./Uebung_080e3_AX_network.svg)
 
 * * * * * * * * * *
@@ -56,6 +53,7 @@ Der Ablauf lässt sich in mehrere Schritte gliedern:
 
 Die Übung veranschaulicht die Kopplung eines zyklischen Taktgebers mit einem Aufwärtszähler, einer **Ereignisbremse** (zur Vermeidung von schnellen Zustandswechseln) sowie einer **Hysterese** zur Glättung des Zählerstands.  
 Nach Abschluss dieser Übung sind Sie in der Lage:  
+
 - den Baustein `E_CTU` zu parametrieren und in eine Steuerungslogik einzubinden,  
 - D-Flipflops zur Zustandsspeicherung zu verwenden,  
 - eine Hysterese zur Stabilisierung von Zählerwerten anzuwenden,  

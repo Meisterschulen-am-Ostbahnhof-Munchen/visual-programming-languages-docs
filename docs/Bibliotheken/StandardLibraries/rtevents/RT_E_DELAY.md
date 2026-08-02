@@ -1,7 +1,5 @@
 # RT_E_DELAY
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

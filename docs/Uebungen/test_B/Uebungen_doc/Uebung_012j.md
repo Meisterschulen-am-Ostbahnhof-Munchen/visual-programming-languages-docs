@@ -1,6 +1,5 @@
 # Uebung_012j: String Input und Speichern INI
 
-
 ![Uebung_012j_network](./Uebung_012j_network.svg)
 
 * * * * * * * * * *
@@ -58,8 +57,10 @@ Der Programmablauf gliedert sich in zwei Phasen: **Initialisierung** und **zykli
 ### Ereignisverbindungen
 1. **Initialisierung**:  
    Der FB `INI` erzeugt nach erfolgreicher Initialisierung das Ereignis `INITO`. Dieses wird direkt mit dem `GET`-Eingang von `INI` verbunden. Dadurch wird unmittelbar nach dem Start der gespeicherte Wert gelesen.
+
 2. **Lesen des gespeicherten Werts**:  
    Nach dem Lesevorgang gibt `INI` das Ereignis `GETO` aus. Dieses triggert den `REQ`-Eingang von `Q_StringValue`, sodass der ausgelesene String an das ISOBUS-Objekt übergeben wird.
+
 3. **Speichern eines neuen Werts**:  
    Wenn `StringValue_IS` einen neuen String vom ISOBUS-Objekt empfängt, sendet es das Ereignis `IND`. Dieses ist mit dem `SET`-Eingang von `INI` verbunden, sodass der neue Wert gespeichert wird.
 

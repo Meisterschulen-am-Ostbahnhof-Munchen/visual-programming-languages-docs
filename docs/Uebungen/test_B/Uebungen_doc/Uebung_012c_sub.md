@@ -1,6 +1,5 @@
 # Uebung_012c_sub: Numeric Value Input und Speichern INI mit Subapp
 
-
 ![Uebung_012c_sub_network](./Uebung_012c_sub_network.svg)
 
 * * * * * * * * * *

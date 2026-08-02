@@ -1,8 +1,5 @@
 # Uebung_080e4_AX: Beispiel für E_CTU mit Eventbremse durch AX_D_FF / AUI_D_FF_HYS
 
-
-
-
 ![Uebung_080e4_AX_network](./Uebung_080e4_AX_network.svg)
 
 * * * * * * * * * *
@@ -38,6 +35,7 @@ Die Subapplikation enthält keine eigenen Unterbausteine. Sie setzt sich aus vor
 
 - **AUI_D_FF_HYS** – `adapter::events::unidirectional::AUI_D_FF_HYS_TMIN`  
   D‑Flipflop mit Hysterese und Mindestzeit. Parameter:
+
   - `HYSTERESIS = UINT#25` – Hysteresebreite
   - `Tmin = T#1s` – minimale Verweildauer vor Zustandswechsel  
   Filtert den Zählerwert **CV**, sodass nur signifikante Änderungen (größer als die Hysterese) nach Ablauf der Mindestzeit weitergegeben werden.

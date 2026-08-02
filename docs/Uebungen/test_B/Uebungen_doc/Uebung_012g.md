@@ -1,6 +1,5 @@
 # Uebung_012g: Numeric Value Input PHYS und Speichern INI
 
-
 ![Uebung_012g_network](./Uebung_012g_network.svg)
 
 * * * * * * * * * *
@@ -28,6 +27,7 @@ Die verwendeten Bausteine stammen aus den Bibliotheken `isobus::UT` und `eclipse
     - `DEFAULT_VALUE` = `REAL#0.0`
 - **Funktionsweise**:  
   Der Baustein realisiert eine nichtflüchtige Speicherung mittels INI‑Datei. Mit dem Schlüssel `KEY_I1_STORE` kann ein Wert gespeichert und abgerufen werden.  
+
   - Beim Ereignis `INIT` sendet er `INITO` und führt anschließend automatisch `GET` aus.  
   - Bei `SET` wird der an `VALUE` anliegende Datenwert persistent gespeichert.  
   - Bei `GET` wird der gespeicherte Wert am Ausgang `VALUEO` ausgegeben (falls kein Wert gespeichert ist, wird `DEFAULT_VALUE` verwendet).
@@ -54,6 +54,7 @@ Die verwendeten Bausteine stammen aus den Bibliotheken `isobus::UT` und `eclipse
 ## Zusammenfassung
 
 Die Übung demonstriert eine vollständige Signalverarbeitungskette:
+
 - Erfassen eines numerischen Werts über einen physischen Eingang,
 - persistentes Speichern in einer INI‑Datei,
 - erneutes Ausgeben des gespeicherten Werts an einen physischen Ausgang.

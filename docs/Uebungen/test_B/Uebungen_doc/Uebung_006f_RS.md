@@ -1,6 +1,5 @@
 # Uebung_006f_RS: Exercise for FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop)
 
-
 ![Uebung_006f_RS_network](./Uebung_006f_RS_network.svg)
 
 * * * * * * * * * *

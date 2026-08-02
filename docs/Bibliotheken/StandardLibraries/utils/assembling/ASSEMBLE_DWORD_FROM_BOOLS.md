@@ -1,7 +1,5 @@
 # ASSEMBLE_DWORD_FROM_BOOLS
 
-
-
 ![ASSEMBLE_DWORD_FROM_BOOLS](https://github.com/user-attachments/assets/2c59a6bc-c069-4740-8371-474846a393ee)
 
 * * * * * * * * * *
@@ -18,6 +16,7 @@ Der Funktionsblock `ASSEMBLE_DWORD_FROM_BOOLS` kombiniert 32 einzelne BOOL-Werte
 
 ### **Daten-Eingänge**
 32 BOOL-Eingänge (`BIT_00` bis `BIT_31`), die jeweils ein Bit im resultierenden DWORD repräsentieren:
+
 - `BIT_00`: Bit 0 (niederwertigstes Bit)
 - `BIT_01`: Bit 1
 - ...
@@ -31,6 +30,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock setzt bei Auslösung des `REQ`-Ereignisses die 32 BOOL-Eingänge zu einem DWORD zusammen. Jeder BOOL-Eingang entspricht einem Bit im DWORD:
+
 - `BIT_00` wird zu Bit 0 (LSB)
 - `BIT_31` wird zu Bit 31 (MSB)
 
@@ -43,6 +43,7 @@ Nach der erfolgreichen Kombination wird das `CNF`-Ereignis ausgegeben.
 
 ## Zustandsübersicht
 Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt rein ereignisgesteuert:
+
 1. `REQ` empfangen → Verarbeitung starten.
 2. BOOL-Werte lesen und zu DWORD kombinieren.
 3. `CNF` ausgeben.

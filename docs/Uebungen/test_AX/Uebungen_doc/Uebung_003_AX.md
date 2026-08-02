@@ -1,14 +1,10 @@
 # Uebung_003_AX: DigitalInput_I1/_I2 auf DigitalOutput_Q1/_I2 - flach mit Adapter
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003_AX`. In dieser Übung werden zwei voneinander unabhängige Signalpfade realisiert, bei denen jeweils ein digitaler Eingang direkt einen zugeordneten digitalen Ausgang steuert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Das Hauptziel dieser Übung ist es, die parallele Verarbeitung von Signalen in d
 ### Funktionsbausteine (FBs)
 
 Es werden zwei Paare von Ein- und Ausgangsbausteinen verwendet:
-
-
-
 
 ![Uebung_003_AX_network](./Uebung_003_AX_network.svg)
 
@@ -52,6 +45,7 @@ Die Unabhängigkeit der beiden Kanäle wird durch die getrennten Adapter-Verbind
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  Ändert sich der Zustand von `I1`, sendet `DigitalInput_I1` ein Ereignis direkt an `DigitalOutput_Q1`. Der Ausgang `Q1` schaltet.
 2.  Ändert sich der Zustand von `I2`, sendet `DigitalInput_I2` ein Ereignis direkt an `DigitalOutput_Q2`. Der Ausgang `Q2` schaltet.
 

@@ -1,14 +1,10 @@
 # Uebung_071b: WBSD auf UT ausgeben, Q1 Schalten wenn Speed &gt;0
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_071b`. Hier steuern wir einen Ausgang nicht über die Geschwindigkeit, sondern über die zurückgelegte Wegstrecke.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verwendung des Bausteins `RangeBasedPulse`. Es wird gezeigt, wie man ein periodi
 [cite_start]Die Subapplikation `Uebung_071b.SUB` liest die kumulierte Wegstrecke vom Traktor ein und erzeugt daraus Impulse[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_071b_network](./Uebung_071b_network.svg)
 

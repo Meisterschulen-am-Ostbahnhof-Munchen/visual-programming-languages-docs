@@ -1,14 +1,10 @@
 # Uebung_004c6: Toggle Flip-Flop mit IE mit BUTTON_MULTIPLE_CLICK (3-fach Klick)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004c6`. Hier wird der erweiterte Baustein `logiBUS_IE2` genutzt, um eine spezifische Anzahl von Klicks auszuwerten.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,7 +19,6 @@ Konfiguration eines n-fach Klicks unter Verwendung von Argumenten.
 -----
 
 ## Funktionsweise
-
 
 ![Uebung_004c6_network](./Uebung_004c6_network.svg)
 

@@ -1,7 +1,5 @@
 # FB_CTD_UDINT
 
-
-
 <img width="1411" height="282" alt="FB_CTD_UDINT" src="https://github.com/user-attachments/assets/a8aab825-6766-4328-b0cb-4b841157bc33" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock verarbeitet die Eingabeereignisse und -daten wie folgt:
+
 1. Wenn `LD` aktiviert ist (`TRUE`), wird der vorgegebene Wert (`PV`) in den Zähler (`CV`) geladen.
 2. Wenn `CD` aktiviert ist (`TRUE`) und der Zählerwert (`CV`) größer als Null ist, wird der Zählerwert um eins verringert.
 3. Der Ausgang `Q` wird auf `TRUE` gesetzt, wenn der Zählerwert (`CV`) kleiner oder gleich Null ist.

@@ -1,14 +1,10 @@
 # Uebung_004a8_AX: mit E_SPLIT_2
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a8_AX`. Dies ist eine Variante von `Uebung_004a4_AX`, bei der ein spezifischer `E_SPLIT_2` Baustein verwendet wird, der explizit für 2 Ausgänge gedacht ist.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Kennenlernen der spezifischen Splitter-Bausteine. `E_SPLIT` ist oft der generisc
 [cite_start]Die Subapplikation `Uebung_004a8_AX.SUB` nutzt `E_SPLIT_2`, um einen Tasterklick auf zwei unabhängige Flip-Flops zu verteilen[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_004a8_AX_network](./Uebung_004a8_AX_network.svg)
 

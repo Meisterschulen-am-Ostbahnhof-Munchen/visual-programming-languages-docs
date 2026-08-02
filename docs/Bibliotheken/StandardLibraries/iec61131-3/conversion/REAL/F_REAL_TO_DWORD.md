@@ -1,7 +1,5 @@
 # F_REAL_TO_DWORD
 
-
-
 <img width="1453" height="216" alt="F_REAL_TO_DWORD" src="https://github.com/user-attachments/assets/e2620ce1-a635-402f-98c9-6597cf979c6a" />
 
 * * * * * * * * * *
@@ -44,9 +42,6 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_REAL_TO_INT**: Konvertiert REAL in INT (vorzeichenbehaftete Ganzzahl). Im Gegensatz dazu liefert `F_REAL_TO_DWORD` einen vorzeichenlosen Wert.
 - **F_REAL_TO_LREAL**: Konvertiert REAL in LREAL (höhere Genauigkeit), während `F_REAL_TO_DWORD` den Wert in einen Ganzzahltyp umwandelt.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

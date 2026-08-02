@@ -1,8 +1,5 @@
 # Uebung_004a11b_AX: Toggle Flip-Flop mit IE mit BUTTON_SINGLE_CLICK und STORE (NVS)
 
-
-
-
 ![Uebung_004a11b_AX_network](./Uebung_004a11b_AX_network.svg)
 
 * * * * * * * * * *
@@ -29,6 +26,7 @@ Die Übung besteht aus insgesamt vier Funktionsbausteinen, die in einem Subappli
     - Funktion: Ein T-Flip-Flop mit Set/Reset und Speicherfähigkeit.  
       Der Eingang `CLK` (Event) toggelt den internen Zustand bei jedem Ereignis.  
       Die Adapterausgänge:
+
         - `Q` – aktueller Ausgangszustand (an Digitalausgang weitergegeben)
         - `Q_INIT` – dient zur Initialisierung des Flip-Flops mit einem gespeicherten Wert (über NVS)
 

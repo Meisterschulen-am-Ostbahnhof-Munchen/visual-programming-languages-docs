@@ -1,7 +1,5 @@
 # EBSlave2181
 
-
-
 <img width="1232" height="438" alt="image" src="https://github.com/user-attachments/assets/c74605d8-26e7-4c52-9109-9f513c0e811a" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der EBSlave2181 dient als Vermittler zwischen der IEC 61499-Steuerungslogik und 
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über folgende Betriebszustände:
+
 - **Inaktiv**: QI = FALSE, Funktionsblock reagiert nicht auf Ereignisse
 - **Konfigurierend**: Verarbeitung des MAP-Ereignisses und Zuordnung der Pins
 - **Aktiv**: Erfolgreich konfiguriert, wartet auf IND-Ereignisse vom Slave

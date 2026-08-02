@@ -1,6 +1,5 @@
 # Uebung_201b: Interlock: ILOCK_BLOCK (Motor Rechts/Linkslauf mit Low-Side Treiber)
 
-
 ![Uebung_201b_network](./Uebung_201b_network.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Die SubApp verwendet folgende Funktionsbausteine:
 1. **Eingangssignale**  
    Die digitalen Eingänge `DigitalInput_I1` und `DigitalInput_I2` lesen die physikalischen Signale der Taster oder Sensoren.  
    Die Ereignisausgänge `.IND` lösen die entsprechenden Ereignisseingänge des Interlock-Bausteins aus:
+
    - `I1.IND` → `ILOCK.EI_UP`
    - `I2.IND` → `ILOCK.EI_DOWN`
 

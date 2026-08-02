@@ -1,7 +1,5 @@
 # FB_RANDOM
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

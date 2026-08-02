@@ -1,14 +1,10 @@
 # Uebung_011a: Numeric Value Output und BUTTON_PRESS_REPEAT_DONE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_011a`. Hier wird die Interaktion zwischen Taster-Ereignissen und numerischen Anzeigen auf dem Terminal vertieft.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,7 +18,6 @@ Nutzung des `BUTTON_PRESS_REPEAT_DONE` Ereignisses zur Aktualisierung eines Anze
 
 ### Funktionsbausteine (FBs)
 
-
 ![Uebung_011a_network](./Uebung_011a_network.svg)
 
   * **`logiBUS_IB`**: Eingangsbaustein für Byte-Werte. Er ist auf das Event `BUTTON_PRESS_REPEAT_DONE` konfiguriert.
@@ -33,6 +28,7 @@ Nutzung des `BUTTON_PRESS_REPEAT_DONE` Ereignisses zur Aktualisierung eines Anze
 ## Funktionsweise
 
 Das Besondere ist die Wahl des Eingangs-Ereignisses:
+
 *   **`BUTTON_PRESS_REPEAT`**: Würde während des Drückens ständig Ereignisse senden (Blinker-Effekt).
 *   **`BUTTON_PRESS_REPEAT_DONE`**: Feuert nur **ein einziges Mal**, nämlich dann, wenn der Nutzer den Taster nach einer (eventuell wiederholten) Betätigung endgültig loslässt.
 

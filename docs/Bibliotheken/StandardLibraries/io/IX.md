@@ -1,6 +1,5 @@
 # IX
 
-
 ## 🎧 Podcast
 
 * [Infineon MOTIX BTM9020/9021EP: Datenblatt-Analyse für Automotive – Robuster Motortreiber mit intelligenter Diagnose (HW vs. SPI)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-MOTIX-BTM90209021EP-Datenblatt-Analyse-fr-Automotive--Robuster-Motortreiber-mit-intelligenter-Diagnose-HW-vs--SPI-e39av51)
@@ -45,6 +44,7 @@ Der IX-Funktionsblock dient als Vermittler zwischen der Steuerungslogik und phys
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Hauptzustände:
+
 1. **Nicht initialisiert**: Block ist inaktiv
 2. **Initialisiert**: Block ist betriebsbereit nach erfolgreicher INIT-Verarbeitung
 3. **Abfrage aktiv**: Verarbeitung einer REQ-Anfrage
@@ -58,11 +58,6 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Eingabe-Bausteinen bietet IX eine erweiterte Service-Schnittstelle mit sowohl poll-basierten als auch ereignisgesteuerten Betriebsmodi. Während einfachere Eingabeblöcke oft nur direkte Werte liefern, bietet IX zusätzliche Statusinformationen und Fehlerbehandlung.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

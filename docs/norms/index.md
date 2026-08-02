@@ -1,7 +1,5 @@
 # 📏 Normen und Standards
 
-
-
 In der industriellen Automatisierung bilden Normen das Fundament für Interoperabilität, Sicherheit und Effizienz. Sie stellen sicher, dass Systeme verschiedener Hersteller zusammenarbeiten können und Software portabel bleibt.
 
 ## IEC 61499: Der Standard für verteilte Systeme
@@ -29,6 +27,7 @@ Normen sind in Deutschland klassischerweise über den **Beuth Verlag** (DIN) zu 
 ## IEC 61131-3: Die klassische SPS-Programmierung
 
 Bevor die IEC 61499 Einzug hielt, war (und ist) die IEC 61131-3 der weltweite Standard für Programmiersprachen von speicherprogrammierbaren Steuerungen (SPS). Sie definiert Sprachen wie:
+
 *   Anweisungsliste (AWL / IL)
 *   Strukturierter Text (ST)
 *   Kontaktplan (KOP / LD)

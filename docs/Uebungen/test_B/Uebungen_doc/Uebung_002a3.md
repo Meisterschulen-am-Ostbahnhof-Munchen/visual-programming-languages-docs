@@ -1,14 +1,10 @@
 # Uebung_002a3: DigitalInput_I1/_I2 mit OR auf DigitalOutput_Q1
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002a3`. In dieser Übung wird eine logische ODER-Verknüpfung (OR) implementiert, bei der ein digitaler Ausgang aktiviert wird, sobald mindestens einer von zwei digitalen Eingängen den Zustand "Wahr" (HIGH) einnimmt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Hauptziel dieser Übung ist es, die Funktionsweise einer ODER-Verknüpfung i
 [cite_start]Die Subapplikation `Uebung_002a3.SUB` führt zwei digitale Eingangssignale über einen ODER-Logik-Baustein zusammen[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_002a3_network](./Uebung_002a3_network.svg)
 
@@ -51,6 +46,7 @@ Die Logik wird durch die Verschaltung von Ereignis- und Datenverbindungen defini
 [cite_start][cite: 1]
 
 Der Prozess folgt dieser Logik:
+
 1.  Jede Änderung an den Tastern `I1` oder `I2` löst ein `IND`-Event aus.
 2.  Beide Events sind mit dem `REQ`-Port von `OR_2` verbunden. Das bedeutet: Egal welcher Taster betätigt wird, die Logik wird neu berechnet.
 3.  `OR_2` prüft die Zustände: Wenn mindestens ein Eingang den Wert `TRUE` führt, wird der Ausgang `OUT` ebenfalls `TRUE`.

@@ -2,10 +2,6 @@ Hier ist die Dokumentationsseite für die Übung **Uebung_122b** basierend auf d
 
 # Uebung_122b: Übung zu ISOBUS Name
 
-
-
-
-
 ![Uebung_122b_network](./Uebung_122b_network.svg)
 
 * * * * * * * * * *
@@ -23,6 +19,7 @@ In dieser Sub-Application werden verschiedene Funktionsbausteine instanziiert, u
 
 #### 1. NmGetCfInfo (`isobus::pgn::NmGetCfInfo`)
 Dieser Baustein ist der Einstiegspunkt der Übung. Er ruft Informationen über die Control Functions (CF) im Netzwerk ab.
+
 - **Parameter**:
     - `u8CanIdx` = `NODE1` (CAN-Knoten 1)
     - `member` = `intern`
@@ -32,10 +29,12 @@ Dieser Baustein ist der Einstiegspunkt der Übung. Er ruft Informationen über d
 
 #### 2. LOG_16 (`logiBUS::utils::logging::LOG_16`)
 Hier werden zwei Instanzen (`LOG_16` und `LOG_16B`) verwendet.
+
 - **Funktionsweise**: Diese Bausteine dienen in dieser Übung als "Splitter" oder De-Multiplexer für Arrays. Sie nehmen die Listen (Arrays mit bis zu 16 Einträgen) von `NmGetCfInfo` entgegen und geben die einzelnen Elemente an 16 separaten Ausgängen aus. Dies ermöglicht die parallele Verarbeitung der ersten 16 erkannten Geräte.
 
 #### 3. STRUCT_DEMUX (`eclipse4diac::convert::STRUCT_DEMUX`)
 Dieser generische Konvertierungsbaustein wird vielfach eingesetzt (`SD_A_x`, `SD_B_x`, `SD_C_x`), um komplexe Datentypen (Strukturen) in ihre Einzelteile zu zerlegen, damit diese visualisiert oder weiterverarbeitet werden können.
+
 - **Verwendete Typen**:
     - `isobus::pgn::ISONETEVENT_T` (bei `SD_A_x`): Extrahiert u.a. den rohen `cfName`.
     - `isobus::pgn::CF_INFO_T` (bei `SD_B_x`): Zeigt Statusinformationen der CF an.
@@ -43,6 +42,7 @@ Dieser generische Konvertierungsbaustein wird vielfach eingesetzt (`SD_A_x`, `SD
 
 #### 4. NmSetNameField (`isobus::pgn::NmSetNameField`)
 Dies ist der Kernbaustein für die Interpretation des Namens. Er kommt 16-mal vor (`NmSetNF_1` bis `NmSetNF_16`).
+
 - **Eingang**: `au8IsoName` (Der 64-Bit ISOBUS Name als Byte-Array).
 - **Funktionsweise**: Der Baustein analysiert den ISOBUS-Namen und schlüsselt ihn gemäß der Norm in eine Struktur (`NAMEFIELD_T`) auf. Diese enthält Informationen wie:
     - Identity Number

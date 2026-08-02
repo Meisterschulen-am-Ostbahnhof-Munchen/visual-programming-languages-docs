@@ -1,8 +1,5 @@
 # Uebung_002b3: DigitalInput_I1/_I2/_I3 auf DigitalOutput_Q1; ohne MOVE
 
-
-
-
 ![Uebung_002b3_network](./Uebung_002b3_network.svg)
 
 * * * * * * * * * *

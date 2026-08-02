@@ -1,6 +1,5 @@
 # Uebung_004b5: Toggle Flip-Flop mit IX / E_SWITCH + E_T_FF
 
-
 ![Uebung_004b5_network](./Uebung_004b5_network.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Die Subapplikation ist als ereignisgesteuerte Kette realisiert:
 1. **Eingangsänderung**: Der Baustein `DigitalInput_I1` überwacht den physikalischen Eingang. Sobald sich der Zustand ändert, wird das Ereignis `IND` ausgelöst.
 2. **Flankenerkennung**: Das Ereignis `IND` wird an den Ereigniseingang `EI` von `E_R_TRIG` weitergeleitet (**Event-Verbindung**: `DigitalInput_I1.IND → E_R_TRIG.EI`). Parallel dazu wird der aktuelle digitale Wert (`DigitalInput_I1.IN`) an den Dateneingang `QI` von `E_R_TRIG` übergeben (**Data-Verbindung**: `DigitalInput_I1.IN → E_R_TRIG.QI`).  
    `E_R_TRIG` prüft, ob der Wert von `QI` eine steigende Flanke (Wechsel von FALSE auf TRUE) aufweist. Ist dies der Fall, wird am Ausgang `EO` ein Ereignis erzeugt.
+
 3. **Toggle-Flipflop**: Das Ereignis `EO` von `E_R_TRIG` triggert den Takteingang `CLK` von `E_T_FF` (**Event-Verbindung**: `E_R_TRIG.EO → E_T_FF.CLK`). Bei jedem Takt wechselt der Zustand des Flipflops. Das Ergebnis steht am Datenausgang `Q` zur Verfügung. Gleichzeitig wird das Ausgangsereignis `EO` von `E_T_FF` ausgelöst.
 4. **Ausgang setzen**: Das Ereignis `EO` von `E_T_FF` wird an den `REQ`-Eingang von `DigitalOutput_Q1` weitergeleitet (**Event-Verbindung**: `E_T_FF.EO → DigitalOutput_Q1.REQ`). Der Flipflop-Zustand (`E_T_FF.Q`) wird als Sollwert an den Dateneingang `OUT` von `DigitalOutput_Q1` übergeben (**Data-Verbindung**: `E_T_FF.Q → DigitalOutput_Q1.OUT`). Dadurch wird der physikalische Ausgang entsprechend gesetzt.
 

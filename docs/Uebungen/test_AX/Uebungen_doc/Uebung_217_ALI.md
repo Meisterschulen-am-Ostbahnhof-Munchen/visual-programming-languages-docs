@@ -1,8 +1,5 @@
 # Uebung_217_ALI: Standard IEC 61131-3 ALI_FB_CTD (Adapter Version, Rückwärtszähler, LINT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_217_ALI_network](./Uebung_217_ALI_network.svg)
 
 * * * * * * * * * *

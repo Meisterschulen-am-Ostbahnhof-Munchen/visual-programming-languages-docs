@@ -1,7 +1,5 @@
 # QX
 
-
-
 ![](https://user-images.githubusercontent.com/69573151/210781265-4dabab2d-a9e3-4da6-a14b-8df0a8ed36e5.png)
 
 * * * * * * * * * *
@@ -44,6 +42,7 @@ Der QX-Block verarbeitet zwei Hauptoperationen: Initialisierung und Service-Anfr
 
 ## Zustandsübersicht
 Der Block wechselt zwischen folgenden Zuständen:
+
 1. **Nicht initialisiert**: Vor der ersten INIT-Operation
 2. **Initialisiert**: Nach erfolgreicher INIT-Operation, bereit für REQ-Operationen
 3. **Aktiv**: Während der Verarbeitung von REQ-Operationen
@@ -56,11 +55,6 @@ Der Block wechselt zwischen folgenden Zuständen:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Ausgabeblöcken bietet QX spezifische Service-Schnittstellenfunktionalität mit parametrisierbarer Konfiguration und detailliertem Status-Reporting. Andere Blöcke wie einfache BOOL-Ausgaben haben typischerweise weniger Konfigurationsmöglichkeiten und Statusinformationen.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

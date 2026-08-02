@@ -1,8 +1,5 @@
 # Uebung_215_AI: Standard IEC 61131-3 AI_FB_CTD (Adapter Version, Rückwärtszähler, INT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_215_AI_network](./Uebung_215_AI_network.svg)
 
 * * * * * * * * * *

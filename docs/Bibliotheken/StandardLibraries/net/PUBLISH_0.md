@@ -1,7 +1,5 @@
 # PUBLISH_0
 
-
-
 <img width="1376" height="275" alt="image" src="https://github.com/user-attachments/assets/f9770c1e-3c0e-439f-9f65-d01566aeb2a0" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der PUBLISH_0-Block ermöglicht die Veröffentlichung von Daten über ein Publis
 
 ## Zustandsübersicht
 Der Block durchläuft folgende Hauptzustände:
+
 1. **Nicht initialisiert**: Block ist betriebsbereit, aber nicht konfiguriert
 2. **Initialisiert**: Block ist konfiguriert und bereit zum Senden
 3. **Sendebereit**: Block kann Daten an Subscriber verteilen
@@ -55,6 +54,7 @@ Der Block durchläuft folgende Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu bestätigten Kommunikationsblöcken bietet PUBLISH_0:
+
 - Höhere Performance durch unbestätigte Übertragung
 - Geringere Latenzzeiten
 - Einfacherere Implementierung

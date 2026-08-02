@@ -1,6 +1,5 @@
 # Uebung_204b: Interlock: ILOCK_CONFLICT_TRIP (Motor-Sicherheitsabschaltung mit Reset)
 
-
 ![Uebung_204b_network](./Uebung_204b_network.svg)
 
 * * * * * * * * * *
@@ -10,11 +9,13 @@
 In dieser Übung wird eine **Motor-Sicherheitsabschaltung mit Reset** realisiert. Sie basiert auf dem Funktionsbaustein `ILOCK_CONFLICT_TRIP`, der eine Verriegelung (Interlock) für zwei gegenläufige Motorrichtungen (Rechts- und Linkslauf) implementiert. Tritt ein Konflikt auf (beide Richtungen gleichzeitig aktiv), wird der Motor gestoppt und ein Alarm (Trip) ausgelöst. Ein separater Reset-Eingang erlaubt das Zurücksetzen des Trip-Zustands.
 
 Die Steuerung erfolgt über drei digitale Eingänge:
+
 - I1 – Anforderung Rechtslauf
 - I2 – Anforderung Linkslauf
 - I3 – Reset
 
 Als Ausgänge stehen zur Verfügung:
+
 - Q5 – Rechtslauf
 - Q6 – Linkslauf
 - Q4 – Trip-Anzeige
@@ -66,6 +67,7 @@ Der Ablauf gliedert sich in folgende Schritte:
 
 1. **Eingangserfassung**:  
    Die drei digitalen Eingänge (I1, I2, I3) werden über die entsprechenden `logiBUS_IX`-Bausteine eingelesen.  
+
    - `DigitalInput_I1` liefert den Rechtslauf-Wunsch (BOOL) und ein Ereignis `IND`.  
    - `DigitalInput_I2` liefert den Linkslauf-Wunsch und ein Ereignis `IND`.  
    - `DigitalInput_Reset` liefert das Reset-Signal und ein Ereignis `IND`.

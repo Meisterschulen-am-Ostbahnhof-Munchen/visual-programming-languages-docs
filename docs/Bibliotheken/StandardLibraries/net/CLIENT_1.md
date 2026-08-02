@@ -1,7 +1,5 @@
 # CLIENT_1
 
-
-
 <img width="1355" height="161" alt="image" src="https://github.com/user-attachments/assets/add0b8a4-197b-4733-b9d8-45407aae8979" />
 
 * * * * * * * * * *
@@ -57,6 +55,7 @@ Der CLIENT_1 Block initialisiert eine Netzwerkverbindung zum SERVER_1 Block übe
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Kommunikationsblöcken bietet CLIENT_1:
+
 - Bidirektionalen Datenaustausch in einer Transaktion
 - Flexible Datentypen durch ANY-Typ
 - Explizite Verbindungssteuerung

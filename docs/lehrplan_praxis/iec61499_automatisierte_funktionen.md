@@ -7,7 +7,6 @@
 
 ---
 
-
 **Rahmenlehrplan-Kategorie:** Teil I LE 1.4 (40 UE) | Teil II LE 1.1 (160 UStd.)  
 **Kernbereich:** Grafische Funktionsentwicklung für vernetzte mechatronische Systeme.
 

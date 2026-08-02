@@ -1,14 +1,10 @@
 # Uebung_002a2_AX: DigitalInput_I1/_I2 mit F_AND (bitwise) auf DigitalOutput_Q1
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002a2_AX`. Hier wird gezeigt, wie Adapter-Signale in boolesche Werte gewandelt werden, um sie mit Standard-Logikbausteinen zu verarbeiten.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Das Hauptziel ist die Demonstration der Interoperabilität. Während spezialisie
 [cite_start]Die Subapplikation `Uebung_002a2_AX.SUB` nutzt Konvertierungsbausteine, um zwei Eingangs-Adapter für ein UND-Gatter aufzubereiten[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_002a2_AX_network](./Uebung_002a2_AX_network.svg)
 

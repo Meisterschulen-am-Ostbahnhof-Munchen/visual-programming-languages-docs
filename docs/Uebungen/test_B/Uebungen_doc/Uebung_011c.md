@@ -1,6 +1,5 @@
 # Uebung_011c: Numeric Value Input I3 Durchschleifen auf N3
 
-
 ![Uebung_011c_network](./Uebung_011c_network.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # FB_R_TRIG
 
-
-
 <img width="1366" height="212" alt="FB_R_TRIG" src="https://github.com/user-attachments/assets/b8af3b36-dc40-44c3-8692-198ed7f809a8" />
 
 * * * * * * * * * *
@@ -45,9 +43,6 @@ Der Funktionsblock hat keinen komplexen Zustandsautomaten. Der Zustand wird ledi
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **FB_F_TRIG**: Erkennung einer fallenden Flanke (von `TRUE` nach `FALSE`).
 - **FB_R_TRIG** ist spezifisch für steigende Flanken und daher komplementär zu `FB_F_TRIG`.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

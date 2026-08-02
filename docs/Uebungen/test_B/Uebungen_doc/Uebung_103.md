@@ -1,7 +1,5 @@
 # Uebung_103: DigitalInput_I1 auf DigitalOutput_Q1, mit Plug and Socket und DEMUX
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

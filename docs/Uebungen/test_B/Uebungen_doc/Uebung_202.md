@@ -1,6 +1,5 @@
 # Uebung_202: Interlock: ILOCK_BLOCK_PROTECT (Verriegelung mit Schutzzeit)
 
-
 ![Uebung_202_network](./Uebung_202_network.svg)
 
 * * * * * * * * * *

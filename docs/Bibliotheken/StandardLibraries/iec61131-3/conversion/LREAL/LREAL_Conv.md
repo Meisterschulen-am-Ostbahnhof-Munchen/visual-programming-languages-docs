@@ -1,13 +1,6 @@
 # LREAL Konvertierungen
 
-
-
-
-
-
 Hier finden Sie Funktionen zur Konvertierung des Datentyps LREAL.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

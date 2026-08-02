@@ -1,8 +1,5 @@
 # Uebung_206_AX: Interlock: ILOCK_T_FF_AX (Drei gegenseitig verriegelte Toggle-Flip-Flops via Adapter-Kette)
 
-
-
-
 ![Uebung_206_AX_network](./Uebung_206_AX_network.svg)
 
 *Bild der Übung nicht verfügbar*
@@ -58,6 +55,7 @@ Dadurch eignet sich die Schaltung für sicherheitskritische Anwendungen, z. B.
 
 2. **Interlock-Kette**  
    Die drei Flip-Flops werden über ihre Adapter-Schnittstellen in einer Kette verbunden:
+
    - `ILOCK_T_FF_1.ILOCK_OUT` → `ILOCK_T_FF_2.ILOCK_IN`
    - `ILOCK_T_FF_2.ILOCK_OUT` → `ILOCK_T_FF_3.ILOCK_IN`
    - (Der Ausgang von `ILOCK_T_FF_3.ILOCK_OUT` bleibt ungenutzt; die Kette ist an dieser Stelle offen.)

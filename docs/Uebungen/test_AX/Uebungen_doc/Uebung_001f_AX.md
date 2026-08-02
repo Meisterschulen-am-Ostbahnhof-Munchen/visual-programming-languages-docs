@@ -1,8 +1,5 @@
 # Uebung_001f_AX: DigitalInput_I1 negiert mit INIT auf DigitalOutput_Q1
 
-
-
-
 ![Uebung_001f_AX_network](./Uebung_001f_AX_network.svg)
 
 * * * * * * * * * *

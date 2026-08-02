@@ -1,14 +1,10 @@
 # Uebung_038_AX: Lauflicht 8 reine Zeitsteuerung
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_038_AX`. Wir bauen eine klassische Schrittkette (Sequencer).
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Realisierung einer automatischen Abfolge von 8 Schritten.
 [cite_start]Die Subapplikation `Uebung_038_AX.SUB` verwendet einen Sequenzer-Baustein, um 8 Ausgänge nacheinander zu schalten[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_038_AX_network](./Uebung_038_AX_network.svg)
 

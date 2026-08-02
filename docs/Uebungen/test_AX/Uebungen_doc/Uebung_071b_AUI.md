@@ -1,8 +1,5 @@
 # Uebung_071b_AUI: WBSD auf UT ausgeben, Wegabhängige Impulse (Adapter Version)
 
-
-
-
 ![Uebung_071b_AUI_network](./Uebung_071b_AUI_network.svg)
 
 * * * * * * * * * *
@@ -47,8 +44,10 @@ Diese Übung demonstriert die Ausgabe von Wheel‑Based Speed (WBSD) und Wheel�
 2. **Distanz**  
    `IA_WBSD.DISTANCE` → `AUDI_SPLIT_2.IN`  
    Die Distanzinformation wird in zwei parallele Pfade aufgeteilt:
+
    - **Pfad 1 (UT‑Anzeige)**: `AUDI_SPLIT_2.OUT1` → `Q_Distance.u32NewValue`  
      Die Distanz wird ebenfalls auf dem UT angezeigt.
+
    - **Pfad 2 (Impulserzeugung)**: `AUDI_SPLIT_2.OUT2` → `RangePulse.DIST_IN` → `RangePulse.OUT` → `DigitalOutput_Q1.OUT`  
      Der `RangePulse`‑Baustein überwacht die Distanzänderung und erzeugt bei Erreichen von 5 m HIGH‑ und 5 m LOW‑Schwellen einen Impuls. Dieser wird an den digitalen Ausgang Q1 weitergegeben, sodass Q1 periodisch mit 10 m‑Zyklus schaltet.
 

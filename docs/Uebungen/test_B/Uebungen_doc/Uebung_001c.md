@@ -1,14 +1,10 @@
 # Uebung_001c: DigitalInput_I1 auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot.
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_001c`. Hier wird demonstriert, wie ein digitaler Eingang unmittelbar nach dem Systemstart (Boot-Vorgang) abgefragt wird, um den initialen Zustand an einen digitalen Ausgang zu übertragen, unter Verwendung von Standard-Ereignis- und Datenverbindungen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Hauptziel dieser Übung ist das Verständnis des Initialisierungsvorgangs in
 [cite_start]Die Übung nutzt die Subapplikation `Uebung_001c.SUB`, um eine Verbindung zwischen einem digitalen Eingang und einem Ausgang herzustellen, ergänzt um eine Selbst-Triggerung für den Systemstart[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_001c_network](./Uebung_001c_network.svg)
 

@@ -1,14 +1,10 @@
 # Uebung_080b: Beispiel für E_CTU mit E_SPLIT für Event-Verdoppelung und Terminal-Ausgabe
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_080b`. Hier wird gezeigt, wie man die Anzahl der eintreffenden Ereignisse künstlich verdoppelt.
 
 ----
-
 
 ## Ziel der Übung
 

@@ -1,14 +1,10 @@
 # Uebung_055: DigitalInput_I1 auf DigitalOutput_Q1
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_055`. Hier wird ein zentrales logiBUS-Konzept zur Übertragung von erweiterten Status-Informationen eingeführt: Das "Quarter" (2-Bit Information).
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,7 +18,6 @@ Verständnis von erweiterten Signalzuständen. In professionellen Steuerungen re
 
 ### Funktionsbausteine (FBs)
 
-
 ![Uebung_055_network](./Uebung_055_network.svg)
 
   * **`BOOL_TO_Q`**: Wandelt ein Standard-Bit in ein 2-Bit Quartal um.
@@ -34,6 +29,7 @@ Verständnis von erweiterten Signalzuständen. In professionellen Steuerungen re
 ## Funktionsweise
 
 Das System reichert die Information an:
+
 1.  Der Taster `I1` liefert ein einfaches `TRUE/FALSE`.
 2.  `BOOL_TO_Q` macht daraus ein Quartal (z.B. FALSE ➡️ 00, TRUE ➡️ 01).
 3.  Dieses Paket (`QB`) kann nun durch das Programm geleitet werden.

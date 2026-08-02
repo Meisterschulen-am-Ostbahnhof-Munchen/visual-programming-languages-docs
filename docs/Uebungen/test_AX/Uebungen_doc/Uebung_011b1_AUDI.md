@@ -1,8 +1,5 @@
 # Uebung_011b1_AUDI: Numeric Value Input ADD
 
-
-
-
 ![Uebung_011b1_AUDI_network](./Uebung_011b1_AUDI_network.svg)
 
 * * * * * * * * * *
@@ -60,6 +57,7 @@ Die gesamte Datenverarbeitung erfolgt in einem Zyklus ohne zusätzliche Ereignis
 ## Zusammenfassung
 
 Die Übung zeigt eine vollständige Verarbeitungskette für zwei numerische ISOBUS‑Eingangswerte:  
+
 - Einlesen über standardisierte ISOBUS‑Bausteine (`NumericValue_IDA`),  
 - Typkonvertierung mittels Adapter‑Bausteinen (`AD_TO_AUDI`),  
 - arithmetische Addition (`AUDI_ADD_2`),  

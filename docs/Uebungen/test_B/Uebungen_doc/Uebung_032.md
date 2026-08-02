@@ -1,14 +1,10 @@
 # Uebung_032: LED Strip Blinkende LED
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_032`. Hier werden vorkonfigurierte Farbbausteine für LED-Streifen genutzt.
 
 ## 📺 Video
-
 
 ![Uebung_032_network](./Uebung_032_network.svg)
 
@@ -23,7 +19,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_032`. Hier werden vorkonf
 * [ESP32-S3 im Detail: Dual-Core, 32MB Power und CAN-Bus für Land- und Baumaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/ESP32-S3-im-Detail-Dual-Core--32MB-Power-und-CAN-Bus-fr-Land--und-Baumaschinen-Mechatronik-e39haf4)
 
 ----
-
 
 ## Ziel der Übung
 
@@ -47,6 +42,7 @@ Verwendung des Bausteins `logiBUS_LED_strip_QX`. Dies ist ein High-Level Baustei
 ## Funktionsweise
 
 Jeder Taster aktiviert "seine" Farbe auf dem Streifen. Da alle Bausteine auf den Parameter `Output_strip` (Kanal 0) konfiguriert sind, überschreiben sie sich gegenseitig.
+
 *   Druck auf **Grün** ➡️ Streifen blitzt schnell grün.
 *   Druck auf **Rot** ➡️ Streifen wechselt sofort auf schnelles rotes Blitzen.
 

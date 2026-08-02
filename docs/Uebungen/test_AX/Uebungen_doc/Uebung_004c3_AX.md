@@ -1,14 +1,10 @@
 # Uebung_004c3_AX: Toggle Flip-Flop mit IE mit BUTTON_LONG_PRESS_UP
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004c3_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -19,9 +15,6 @@ Nutzung des Ereignisses `BUTTON_LONG_PRESS_UP`.
 ## Funktionsweise
 
 [cite_start]Der Baustein `DigitalInput_CLK_I1` in `Uebung_004c3_AX.SUB` ist auf `BUTTON_LONG_PRESS_UP` konfiguriert[cite: 1].
-
-
-
 
 ![Uebung_004c3_AX_network](./Uebung_004c3_AX_network.svg)
 

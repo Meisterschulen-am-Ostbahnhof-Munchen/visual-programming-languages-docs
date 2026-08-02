@@ -1,8 +1,5 @@
 # Uebung_006a: SR und T-Flip-Flop mit 3x IE
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006a`. Hier wird ein hochflexibler Speicherbaustein verwendet, der drei verschiedene Bedienweisen kombiniert.
@@ -23,7 +20,6 @@ Einführung des `E_T_FF_SR` Bausteins. Dieser vereint die Funktionen eines Toggl
 
 ### Funktionsbausteine (FBs)
 
-
 ![Uebung_006a_network](./Uebung_006a_network.svg)
 
   * **`I1` (Set)**: Schaltet den Ausgang ein.
@@ -36,6 +32,7 @@ Einführung des `E_T_FF_SR` Bausteins. Dieser vereint die Funktionen eines Toggl
 ## Funktionsweise
 
 Der Baustein reagiert auf jedes der drei Eingangs-Events individuell:
+
 *   Ein Event an `S` setzt den Zustand fest auf `TRUE`.
 *   Ein Event an `R` setzt den Zustand fest auf `FALSE`.
 *   Ein Event an `CLK` invertiert den aktuellen Zustand (Toggle).

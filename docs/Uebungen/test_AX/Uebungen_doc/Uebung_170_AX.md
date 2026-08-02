@@ -2,10 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_170_AX`, basierend auf den be
 
 # Uebung_170_AX: Exercise for AX_D_FF
 
-
-
-
-
 ![Uebung_170_AX_network](./Uebung_170_AX_network.svg)
 
 * * * * * * * * * *
@@ -30,11 +26,13 @@ Dieser Baustein ist die zentrale Komponente dieser Sub-Applikation.
 
 ### 🌐 Netzwerkstruktur
 Das Netzwerk dieser Sub-Applikation ist minimalistisch aufgebaut:
+
 - Es enthält eine einzelne Instanz des Bausteins `AX_D_FF` (benannt als `AX_D_FF_1`).
 - Positioniert bei den Koordinaten x=-1700, y=0.
 
 ### Verbindungen
 In der vorliegenden Definition sind **keine expliziten Event- oder Datenverbindungen** innerhalb dieser Sub-Applikation definiert.
+
 - Dies deutet darauf hin, dass diese Übung entweder als Vorlage dient, in der der Lernende Verbindungen hinzufügen muss, oder dass der Baustein über Adapter-Schnittstellen (Plugs/Sockets) verfügt, die auf einer höheren Ebene verbunden werden.
 - Die Übung konzentriert sich auf die Bereitstellung der `AX_D_FF` Instanz.
 

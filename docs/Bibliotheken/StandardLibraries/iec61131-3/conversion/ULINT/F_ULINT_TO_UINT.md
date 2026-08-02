@@ -1,7 +1,5 @@
 # F_ULINT_TO_UINT
 
-
-
 <img width="1453" height="214" alt="F_ULINT_TO_UINT" src="https://github.com/user-attachments/assets/398715a7-1e03-490c-83c0-41f0f4d745ed" />
 
 * * * * * * * * * *

@@ -1,8 +1,5 @@
 # Uebung_080b_AUI: Beispiel für E_CTU mit AX_SPLIT_2 für Event-Verdoppelung und Terminal-Ausgabe
 
-
-
-
 ![Uebung_080b_AUI_network](./Uebung_080b_AUI_network.svg)
 
 * * * * * * * * * *

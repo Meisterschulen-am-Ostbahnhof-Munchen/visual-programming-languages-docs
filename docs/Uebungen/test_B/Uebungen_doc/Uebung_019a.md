@@ -1,14 +1,10 @@
 # Uebung_019a: Umschalten einer Maske
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_019a`. Hier wird die Maskenumschaltung um eine Sicherheitsfunktion erweitert: Den Alarm.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Erlernen des Umgangs mit Alarm-Masken. Im ISOBUS-Standard haben Alarme Vorrang v
 [cite_start]In `Uebung_019a.SUB` wird ein vierstufiger Selektor (`F_SEL_E_4`) zur Maskenwahl genutzt[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_019a_network](./Uebung_019a_network.svg)
 

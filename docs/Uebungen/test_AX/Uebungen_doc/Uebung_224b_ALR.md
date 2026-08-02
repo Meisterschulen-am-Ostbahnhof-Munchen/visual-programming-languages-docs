@@ -1,8 +1,5 @@
 # Uebung_224b_ALR: Standard IEC 61131-3 AULI_FB_CTUD (Adapter Version, Vorwärts-/Rückwärtszähler, ULINT) mit Terminal-Ausgabe (PHYSA_LREAL)
 
-
-
-
 ![Uebung_224b_ALR_network](./Uebung_224b_ALR_network.svg)
 
 * * * * * * * * * *

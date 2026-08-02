@@ -1,8 +1,5 @@
 # Uebung_071_AUI: WBSD auf UT ausgeben, Q1 Schalten wenn Speed &gt; 0 (Adapter Version)
 
-
-
-
 ![Uebung_071_AUI_network](./Uebung_071_AUI_network.svg)
 
 * * * * * * * * * *
@@ -14,12 +11,16 @@ Diese Übung demonstriert die Verwendung von Adaptern und einer benutzerdefinier
 ### Haupt-FBs (auf oberster Ebene)
 - **IA_WBSD**: `isobus::tecu::IA_WBSD`  
   ISOBUS-Adapter-Baustein für die Wheel Based Machine Speed. Parameter: `QI` = TRUE (aktiviert).
+
 - **Q_NumericValue_WBSD**: `isobus::UT::Q::Q_NumericValue_AUDI`  
   Baustein zum Senden eines numerischen Werts (Speed) an den UT. Parameter: `u16ObjId` = `NumberVariable_Wheel_based_machine_speed` (Objektreferenz aus konstantem Pool).
+
 - **DigitalOutput_Q1**: `logiBUS::io::DQ::logiBUS_QXA`  
   Digitalausgangsbaustein für den logiBUS. Parameter: `QI` = TRUE, `Output` = `Output_Q1` (definierte Konstante für den Ausgang).
+
 - **CONV_AUI_AUDI**: `adapter::conversion::unidirectional::AUI_TO_AUDI`  
   Konvertiert einen AUI-Adapter (unidirektional) in einen AUDI-Adapter (unidirektional) – vermutlich zur Anpassung der Schnittstelle.
+
 - **AUI_SPLIT_2**: `adapter::events::unidirectional::AUI_SPLIT_2`  
   Verteilt ein eingehendes AUI-Ereignis auf zwei Ausgänge (OUT1, OUT2) – hier für parallele Weiterleitung der Geschwindigkeitsdaten.
 

@@ -7,7 +7,6 @@
 
 ---
 
-
 **Rahmenlehrplan-Kategorie:** Teil I LE 2.6 (20 UE) | Teil II LE 1.3 (100 UStd.)  
 **Kernbereich:** Systematische Fehlersuche in visuellen Steuerungsarchitekturen.
 

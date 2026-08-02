@@ -1,6 +1,5 @@
 # Uebung_070c: WBSD auf UT ausgeben, PHYS
 
-
 ![Uebung_070c_network](./Uebung_070c_network.svg)
 
 * * * * * * * * * *

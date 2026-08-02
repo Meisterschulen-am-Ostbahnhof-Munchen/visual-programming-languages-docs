@@ -1,7 +1,5 @@
 # ASSEMBLE_DWORD_FROM_BYTES
 
-
-
 ![ASSEMBLE_DWORD_FROM_BYTES](https://github.com/user-attachments/assets/818dd9ca-040d-43e5-a631-b8206ec1ed5d)
 
 * * * * * * * * * *
@@ -30,6 +28,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock nimmt vier BYTE-Werte entgegen und kombiniert sie zu einem einzigen DWORD-Wert. Die Kombination erfolgt durch direkte Zuweisung der einzelnen Bytes zu den entsprechenden Positionen im DWORD:
+
 - `BYTE_00` wird dem niedrigstwertigen Byte (B0) des DWORD zugewiesen.
 - `BYTE_01` wird dem nächsten Byte (B1) zugewiesen.
 - `BYTE_02` wird dem nächsten Byte (B2) zugewiesen.

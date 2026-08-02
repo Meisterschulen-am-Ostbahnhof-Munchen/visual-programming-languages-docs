@@ -1,6 +1,5 @@
 # Uebung_004d_T: Exercise for FB_T_FF (Toggle Flip-Flop)
 
-
 ![Uebung_004d_T_network](./Uebung_004d_T_network.svg)
 
 * * * * * * * * * *
@@ -20,6 +19,7 @@ Die Übung besteht aus vier Funktionsbausteinen, die im SubApp-Netzwerk miteinan
 - **Parameter**:  
   `QI = TRUE` (Qualifier für Initialisierung aktiv)  
   `Input = Input_I1` (physischer Eingang der logiBUS-Klemme)
+
 - **Funktionsweise**: Liest den digitalen Eingang `Input_I1` aus. Das Ereignis `IND` wird bei Signaländerung ausgelöst. Der gelesene Wert wird am Datenausgang `IN` bereitgestellt. Dient als Reset-Signal für das T-FF.
 
 ### DigitalInput_CLK (logiBUS_IX)
@@ -27,6 +27,7 @@ Die Übung besteht aus vier Funktionsbausteinen, die im SubApp-Netzwerk miteinan
 - **Parameter**:  
   `QI = TRUE`  
   `Input = Input_I2`
+
 - **Funktionsweise**: Liest den digitalen Eingang `Input_I2` aus. Das Ereignis `IND` wird bei Signaländerung ausgelöst. Der gelesene Wert wird am Datenausgang `IN` bereitgestellt. Dient als Taktsignal für das T-FF.
 
 ### T_FF (FB_T_FF)
@@ -44,6 +45,7 @@ Die Übung besteht aus vier Funktionsbausteinen, die im SubApp-Netzwerk miteinan
 - **Parameter**:  
   `QI = TRUE`  
   `Output = Output_Q1`
+
 - **Funktionsweise**: Empfängt den Zustand des T-FF über den Dateneingang `OUT` und gibt diesen am physischen Ausgang `Output_Q1` aus. Der Ausgang wird durch das Ereignis `REQ` aktualisiert.
 
 ## Programmablauf und Verbindungen

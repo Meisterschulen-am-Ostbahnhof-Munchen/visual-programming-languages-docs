@@ -1,8 +1,5 @@
 # Uebung_004a11a_AX: Toggle Flip-Flop mit IE mit BUTTON_SINGLE_CLICK und STORE (INI)
 
-
-
-
 ![Uebung_004a11a_AX_network](./Uebung_004a11a_AX_network.svg)
 
 * * * * * * * * * *

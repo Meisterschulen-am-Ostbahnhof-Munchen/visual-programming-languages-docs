@@ -1,7 +1,5 @@
 # CLIENT_2_1
 
-
-
 <img width="1295" height="167" alt="image" src="https://github.com/user-attachments/assets/988495a6-1be4-41f0-9d85-c324b87e7290" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der CLIENT_2_1 Block verwaltet die gesamte Client-Seite einer Client-Server-Komm
 
 ## Zustandsübersicht
 Der Block kann folgende Zustände annehmen:
+
 - Nicht verbunden (initialer Zustand)
 - Verbindungsaufbau läuft
 - Verbunden und betriebsbereit

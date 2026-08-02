@@ -1,12 +1,8 @@
 # Uebung_011_AUDI: Numeric Value Input
 
-
-
-
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_011_AUDI`. Sie ist die adapterbasierte Variante der Übung 011 und zeigt, wie numerische Werte effizient und übersichtlich verarbeitet werden.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -19,9 +15,6 @@ Erlernen der modernen, adapterbasierten Verarbeitung von ISOBUS-Terminal-Eingabe
 Die Subapplikation `Uebung_011_AUDI.SUB` nutzt einen adapterbasierten Eingabe-Baustein.
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_011_AUDI_network](./Uebung_011_AUDI_network.svg)
 

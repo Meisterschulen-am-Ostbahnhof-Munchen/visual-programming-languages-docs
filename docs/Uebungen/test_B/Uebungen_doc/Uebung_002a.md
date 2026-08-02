@@ -1,14 +1,10 @@
 # Uebung_002a: DigitalInput_I1/_I2 mit AND auf DigitalOutput_Q1
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002a`. In dieser Übung wird eine klassische UND-Verknüpfung (AND) realisiert, bei der ein digitaler Ausgang nur dann aktiviert wird, wenn zwei digitale Eingänge gleichzeitig den Zustand "Wahr" (HIGH) führen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Hauptziel dieser Übung ist die Implementierung einer grundlegenden logische
 [cite_start]Die Subapplikation `Uebung_002a.SUB` verknüpft zwei digitale Eingänge über einen Logik-Baustein mit einem digitalen Ausgang[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_002a_network](./Uebung_002a_network.svg)
 
@@ -51,6 +46,7 @@ Die Logik wird durch die Verschaltung von Ereignis- und Datenverbindungen festge
 [cite_start][cite: 1]
 
 Der Prozess folgt dieser Logik:
+
 1.  Ändert sich einer der beiden Eingänge (`I1` oder `I2`), sendet der jeweilige Baustein ein `IND`-Ereignis an den `REQ`-Port des `AND_2`-Bausteins.
 2.  Der `AND_2`-Baustein liest daraufhin beide Daten-Eingänge (`IN1` und `IN2`) und berechnet das Ergebnis (`IN1 AND IN2`).
 3.  Nach Abschluss der Berechnung feuert der Logik-Baustein ein `CNF`-Ereignis (Confirmation) ab.

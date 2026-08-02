@@ -1,14 +1,10 @@
 # Uebung_007a3: Blinker mit E_CYCLE, E_SWITCH und E_SR
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_007a3`. Hier wird die "saubere" Lösung für einen schaltbaren Blinker präsentiert, der beim Ausschalten garantiert in den Zustand "AUS" geht.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Realisierung eines Blinkers mit definiertem Stopp-Verhalten. Es wird demonstrier
 [cite_start]In `Uebung_007a3.SUB` wird die Blinklogik manuell aus Weiche und Speicher aufgebaut, um die volle Kontrolle über den Reset-Vorgang zu haben[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_007a3_network](./Uebung_007a3_network.svg)
 

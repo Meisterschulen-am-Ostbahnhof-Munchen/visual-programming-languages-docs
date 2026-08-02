@@ -1,14 +1,10 @@
 # Uebung_004a7_AX: SR und T-Flip-Flop mit IE und E_REND (Rendezvous)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a7_AX`. Sie kombiniert das Rendezvous-Muster mit einem erweiterten Flip-Flop-Typ, der Set- und Reset-Funktionalität bietet.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Demonstration der Interaktion zwischen Ereignis-Logik (`E_REND`) und Zustands-Lo
 [cite_start]Die Subapplikation `Uebung_004a7_AX.SUB` verwendet zwei Taster zum "Scharfschalten" (Rendezvous) und einen dritten zum expliziten Rücksetzen[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_004a7_AX_network](./Uebung_004a7_AX_network.svg)
 

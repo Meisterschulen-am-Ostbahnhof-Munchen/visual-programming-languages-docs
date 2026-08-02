@@ -1,14 +1,10 @@
 # Uebung_018: Control Audio Signal und Delay
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_018`. Hier wird die Audio-Ausgabe erweitert, um zeitlich versetzte Tonfolgen zu erzeugen.
 
 ## 📺 Video
-
 
 ![Uebung_018_network](./Uebung_018_network.svg)
 
@@ -21,7 +17,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_018`. Hier wird die Audio
 * [Das Technologie-Panorama von 1863: Lanz & Comp. und die Revolution der deutschen Landwirtschaft durch Import, Innovation und Guano](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Technologie-Panorama-von-1863-Lanz--Comp--und-die-Revolution-der-deutschen-Landwirtschaft-durch-Import--Innovation-und-Guano-e39auqa)
 
 ----
-
 
 ## Ziel der Übung
 

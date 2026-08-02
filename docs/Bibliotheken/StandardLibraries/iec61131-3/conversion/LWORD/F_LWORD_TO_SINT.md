@@ -1,7 +1,5 @@
 # F_LWORD_TO_SINT
 
-
-
 <img width="1452" height="216" alt="F_LWORD_TO_SINT" src="https://github.com/user-attachments/assets/53060025-97b1-48c5-abbb-a61940c248b2" />
 
 * * * * * * * * * *

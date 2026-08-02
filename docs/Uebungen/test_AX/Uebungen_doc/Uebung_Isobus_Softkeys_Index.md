@@ -1,10 +1,5 @@
 # ISOBUS, Softkeys und Terminals
 
-
-
-
-
-
 Diese Übungen behandeln die Integration der Steuerung in das ISOBUS-Netzwerk, einschließlich der Bedienung über virtuelle Tasten (Softkeys/Buttons) und AUX-Eingaben (Joystick).
 
 ## 🎧 Podcast

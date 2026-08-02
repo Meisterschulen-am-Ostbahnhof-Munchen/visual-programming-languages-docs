@@ -1,7 +1,5 @@
 # RaspberryPI
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

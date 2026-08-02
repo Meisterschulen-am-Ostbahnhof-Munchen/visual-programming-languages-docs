@@ -1,7 +1,5 @@
 # F_SINT_TO_USINT
 
-
-
 <img width="1450" height="213" alt="F_SINT_TO_USINT" src="https://github.com/user-attachments/assets/e1008d5b-c1c4-4a42-8bfd-7d328b59eced" />
 
 * * * * * * * * * *
@@ -36,6 +34,7 @@ Bei Auslösung des Ereignisses `REQ` wird der Algorithmus ausgeführt, der den W
 
 ## Zustandsübersicht
 Der Funktionsblock hat einen einfachen Zustandsautomaten:
+
 1. **Idle**: Wartet auf das `REQ`-Ereignis.
 2. **Processing**: Führt die Konvertierung durch und löst `CNF` aus.
 3. Keine weiteren Zustände, da es sich um einen einfachen, nicht-zustandsbehafteten Block handelt.

@@ -1,14 +1,10 @@
 # Uebung_041: Lauflicht 8 mit einer Taste
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_041`. Hier wird die manuelle Steuerung einer 8-stufigen Schrittkette auf einen einzigen Taster reduziert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Optimierung der Bedienlogik aus Übung 040. Es wird gezeigt, wie man durch die K
 [cite_start]In `Uebung_041.SUB` wird ein zentraler Ereignispfad genutzt, um den Sequenzer `sequence_E_08_loop` anzusteuern[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_041_network](./Uebung_041_network.svg)
 
@@ -37,7 +32,8 @@ Optimierung der Bedienlogik aus Übung 040. Es wird gezeigt, wie man durch die K
 
 1.  **Initialisierung**: Ein Klick auf **I1** startet das Lauflicht bei `Q1`.
 2.  **Manueller Durchlauf**: Jeder Klick auf **I2** erhöht den internen Zähler. Der Demultiplexer sorgt dafür, dass das erste Event an `S1_S2` geht, das zweite an `S2_S3` und so weiter.
-3.  **Überlauf**: Nach dem 8. Schritt setzt sich die Logik automatisch zurück und beginnt (beim nächsten Klick) wieder von vorn.
+3.  **Überlauf**: Nach dem
+8. Schritt setzt sich die Logik automatisch zurück und beginnt (beim nächsten Klick) wieder von vorn.
 
 Dies ermöglicht eine vollständige Prozesskontrolle mit minimaler Hardware-Anforderung.
 

@@ -1,7 +1,5 @@
 # DualCAN octa-output ESP32S3
 
-
-
 ## CAN-BUS
 
 CAN-TX 4

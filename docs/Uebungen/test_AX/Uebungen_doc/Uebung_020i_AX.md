@@ -1,14 +1,10 @@
 # Uebung_020i_AX: DigitalInput_I1 auf DigitalOutput_Q1; AX_PULSE; Teach-In
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_020i_AX`. Diese Übung kombiniert Zeitmessung und Zeitsteuerung zu einer lernfähigen Puls-Funktion.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Das Ziel ist die Implementierung eines Teach-In-Verfahrens. Anstatt die Zeit `PT
 [cite_start]Die Subapplikation `Uebung_020i_AX.SUB` nutzt eine Stoppuhr, um die Zeitvorgabe für einen Puls-Baustein dynamisch zu ändern[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_020i_AX_network](./Uebung_020i_AX_network.svg)
 
@@ -42,10 +35,12 @@ Die Anwendung erfolgt in zwei Schritten:
 
 1.  **Anlernen (Teach-In)**:
     Der Nutzer hält Taster `I2` für die gewünschte Dauer gedrückt (z.B. 3,5 Sekunden).
+
     *   Beim Drücken startet `E_STOPWATCH`.
     *   Beim Loslassen stoppt die Messung. Der Wert (3,5s) liegt nun am Eingang `PT` von `AX_PULSE` an.
 2.  **Ausführen**:
     Der Nutzer klickt kurz auf Taster `I1`.
+
     *   `AX_PULSE` wird getriggert und schaltet die Lampe `Q1` für exakt die zuvor gelernten 3,5 Sekunden ein.
 
 Jedes neue Anlernen über `I2` überschreibt die gespeicherte Zeit für den nächsten Puls.

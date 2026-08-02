@@ -1,8 +1,5 @@
 # Uebung_080c_AUI: Beispiel für E_CTU mit AX_T_FF und AX_PERMIT (Event-Halbierung) und Terminal-Ausgabe
 
-
-
-
 ![Uebung_080c_AUI_network](./Uebung_080c_AUI_network.svg)
 
 * * * * * * * * * *

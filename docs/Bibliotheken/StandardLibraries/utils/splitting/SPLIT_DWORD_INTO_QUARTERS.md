@@ -6,7 +6,6 @@
 
 ---- 
 
-
 ![SPLIT_DWORD_INTO_QUARTERS](https://github.com/user-attachments/assets/140e8baa-2ae9-4977-91b3-1a7b608f9f12)
 
 * * * * * * * * * *
@@ -48,9 +47,6 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt bei jed
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Bitmanipulations-Blöcken bietet `SPLIT_DWORD_INTO_QUARTERS` eine spezialisierte Funktionalität für die Aufteilung eines DWORDs in 4-Bit-Blöcke.
 - Andere Blöcke wie `SPLIT_DWORD_INTO_BYTES` teilen ein DWORD in 8-Bit-Blöcke auf, während dieser Block eine feinere Granularität bietet.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

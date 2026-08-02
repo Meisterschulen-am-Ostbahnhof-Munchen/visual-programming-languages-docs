@@ -1,7 +1,5 @@
 # Uebung_012c_AUDI: Numeric Value Input und Speichern INI mit Subapp (Adapter Version)
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

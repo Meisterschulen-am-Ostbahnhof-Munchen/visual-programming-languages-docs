@@ -1,7 +1,5 @@
 # Scaling
 
-
-
 ## Grundlegendes
 
 Ja, im **ISOBUS-Standard ISO 11783-6** (Teil 6: **Virtual Terminal**) ist das **Skalieren der Anbaugerätemasken** tatsächlich dem **Anbaugerät (Implement) zugeordnet** und nicht dem virtuellen Terminal (VT).

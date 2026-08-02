@@ -1,14 +1,10 @@
 # Uebung_124: Übung zu ISOBUS Send Message
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_124`. Hier verlassen wir die Standard-Nachrichten und senden eigene Datenpakete (PGNs) an einen spezifischen Partner im Netzwerk.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verwendung des Bausteins `AlPgnTxNew8B`. Es wird gezeigt, wie man eine herstelle
 [cite_start]Die Subapplikation `Uebung_124.SUB` kombiniert die Teilnehmer-Suche mit einem Sende-Baustein[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_124_network](./Uebung_124_network.svg)
 

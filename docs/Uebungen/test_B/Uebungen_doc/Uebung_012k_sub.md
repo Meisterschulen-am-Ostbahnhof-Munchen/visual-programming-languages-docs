@@ -1,6 +1,5 @@
 # Uebung_012k_sub: String Input und Speichern INI mit Subapp
 
-
 ![Uebung_012k_sub_network](./Uebung_012k_sub_network.svg)
 
 * * * * * * * * * *

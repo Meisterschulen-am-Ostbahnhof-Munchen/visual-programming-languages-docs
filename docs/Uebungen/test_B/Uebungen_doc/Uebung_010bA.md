@@ -1,17 +1,12 @@
 # Uebung_010bA: Toggle Flip-Flop mit IE Button_A1 BT_STILL_HELD
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010bA`.
 
 ----
 
-
 ## Funktionsweise
-
 
 ![Uebung_010bA_network](./Uebung_010bA_network.svg)
 

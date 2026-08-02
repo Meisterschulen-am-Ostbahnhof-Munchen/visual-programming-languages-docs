@@ -2,8 +2,6 @@ Hier ist die Dokumentation für die Übung **Uebung_180**, basierend auf den ber
 
 # Uebung_180: Beispiel für E_REND_3 (Rendezvous von drei Events)
 
-
-
 ![Uebung_180_network](./Uebung_180_network.svg)
 
 * * * * * * * * * *

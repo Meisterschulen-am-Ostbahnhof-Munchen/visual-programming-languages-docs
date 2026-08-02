@@ -1,7 +1,5 @@
 # Uebung_039_AX: Spiegelabfolge V2 mit Schrittkette
 
-
-
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_039_AX`. Diese Übung ist speziell auf die Ansteuerung von hydraulischen oder pneumatischen Wegeventilen zugeschnitten und nutzt durchgängig die AX-Adaptertechnologie.
 
 ----
@@ -22,9 +20,6 @@ Die Ansteuerung der Hardware erfolgt über typisierte AX-Sub-Applikationen (`Ueb
 ## Funktionsweise
 
 Die Kette wird manuell durch physische Taster (`I1` bis `I4`) gesteuert, wobei ein zentraler Zeitschritt (5s bei `DT_S3_S4`) eine automatische Sicherheits- oder Wartephase einfügt. Dies zeigt die Kombination aus freier Bedienbarkeit und erzwungenen Prozesszeiten.
-
-
-
 
 ![Uebung_039_AX_network](./Uebung_039_AX_network.svg)
 

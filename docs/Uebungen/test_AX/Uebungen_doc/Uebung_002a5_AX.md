@@ -1,14 +1,10 @@
 # Uebung_002a5_AX: DigitalInput_I1-3 mit OR auf DigitalOutput_Q1, mit Plug and Socket
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002a5_AX`. In dieser Übung wird eine logische ODER-Verknüpfung (OR) mit drei Eingängen realisiert. Der digitale Ausgang wird aktiviert, sobald mindestens einer der drei überwachten Eingänge ein Signal führt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Das Hauptziel dieser Übung ist die Erweiterung der logischen Grundfunktionen au
 ### Funktionsbausteine (FBs)
 
 In dieser Konfiguration werden folgende Bausteine eingesetzt:
-
-
-
 
 ![Uebung_002a5_AX_network](./Uebung_002a5_AX_network.svg)
 
@@ -55,6 +48,7 @@ Die Logik wird durch die Verschaltung der drei Eingänge mit dem Logik-Baustein 
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  Der Baustein `AX_OR_3` überwacht kontinuierlich alle drei Adapter-Eingänge auf Zustandsänderungen.
 2.  Wenn mindestens ein Eingang den Zustand `TRUE` einnimmt, schaltet der Ausgang `OUT` auf `TRUE`.
 3.  Nur wenn alle drei Eingänge (`I1` UND `I2` UND `I3`) den Zustand `FALSE` haben, wird auch der Ausgang deaktiviert.

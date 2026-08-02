@@ -1,14 +1,10 @@
 # Uebung_040: Lauflicht 8
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_040`. Hier wird eine raffinierte Methode gezeigt, um eine 8-stufige Schrittkette mit nur wenigen Tastern manuell durchzuschalten.
 
 ## 📺 Video
-
 
 ![Uebung_040_network](./Uebung_040_network.svg)
 
@@ -21,7 +17,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_040`. Hier wird eine raff
 * [Schlüter 1500 Spezial: Turbo-Giftigkeit, 40 Jahre und die Seele eines Kraftprotzes](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Schlter-1500-Spezial-Turbo-Giftigkeit--40-Jahre-und-die-Seele-eines-Kraftprotzes-e39au2l)
 
 ----
-
 
 ## Ziel der Übung
 

@@ -1,7 +1,5 @@
 # F_LIMIT
 
-
-
 ![F_LIMIT](https://user-images.githubusercontent.com/113907647/227977194-5735bf57-4df7-4ffb-9457-25cf02c36fc7.png)
 
 * * * * * * * * * *
@@ -62,6 +60,7 @@ Bsp. individuelle Eingabe
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Selektionsfunktionsblöcken:
+
 - F_LIMIT speziell für Wertebegrenzung optimiert
 - Einfacher als komplexe Vergleichsblöcke mit mehreren Ausgängen
 - Universeller einsetzbar durch ANY_ELEMENTARY Datentyp

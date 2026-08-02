@@ -1,14 +1,10 @@
 # Uebung_014: Container (visible/invisible)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_014`. Hier wird gezeigt, wie man die Benutzeroberfläche des ISOBUS-Terminals dynamisch verändert, indem ganze Gruppen von Objekten (Container) sichtbar oder unsichtbar geschaltet werden.
 
 ## 🎧 Podcast
-
 
 ![Uebung_014_network](./Uebung_014_network.svg)
 
@@ -19,7 +15,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_014`. Hier wird gezeigt, 
 * [IEC 61499: Die Zukunft der industriellen Automatisierung und verteilten Systeme](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/IEC-61499-Die-Zukunft-der-industriellen-Automatisierung-und-verteilten-Systeme-e369739)
 
 ----
-
 
 ## Ziel der Übung
 

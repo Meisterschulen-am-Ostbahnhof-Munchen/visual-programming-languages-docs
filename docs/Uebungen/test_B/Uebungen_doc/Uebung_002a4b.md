@@ -1,6 +1,5 @@
 # Uebung_002a4b: DigitalInput_I1/_I2 mit AND_BOOL und Negate auf DigitalOutput_Q1
 
-
 ![Uebung_002a4b_network](./Uebung_002a4b_network.svg)
 
 * * * * * * * * * *

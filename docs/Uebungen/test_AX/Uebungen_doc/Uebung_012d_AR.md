@@ -1,8 +1,5 @@
 # Uebung_012d_AR: Numeric Value Input PHYS und Speichern NVS (AR Adapter, plain)
 
-
-
-
 ![Uebung_012d_AR_network](./Uebung_012d_AR_network.svg)
 
 * * * * * * * * * *

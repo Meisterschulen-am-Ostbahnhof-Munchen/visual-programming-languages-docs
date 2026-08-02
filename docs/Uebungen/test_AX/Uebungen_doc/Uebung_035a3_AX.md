@@ -2,10 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_035a3_AX` basierend auf den b
 
 # Uebung_035a3_AX: Ampelschaltung Österreich (AX) mit Blinker
 
-
-
-
-
 ![Uebung_035a3_AX_network](./Uebung_035a3_AX_network.svg)
 
 * * * * * * * * * *
@@ -22,6 +18,7 @@ In dieser SubApplikation werden verschiedene logische Bausteine, Zeitglieder und
 
 #### **Seq** (`logiBUS::utils::sequence::timed::sequence_T_05_loop_AX`)
 Dieser Baustein ist der Kern der Ablaufsteuerung. Er definiert 5 zeitgesteuerte Zustände (S1 bis S5), die in einer Schleife durchlaufen werden.
+
 - **Typ**: Sequenz-Controller (Timed Loop)
 - **Parameter**:
     - `DT_S1_S2` = `T#6s` (Dauer Phase 1: Rot)
@@ -33,6 +30,7 @@ Dieser Baustein ist der Kern der Ablaufsteuerung. Er definiert 5 zeitgesteuerte 
 
 #### **Blinker** (`adapter::events::unidirectional::signals::AX_BLINK_TRAIN`)
 Dieser Baustein erzeugt das Blinksignal für die Grün-Phase.
+
 - **Typ**: Signalgenerator / Blinker
 - **Parameter**:
     - `TIMELOW` = `T#500ms` (Aus-Zeit)

@@ -1,7 +1,5 @@
 # Sonstiges Englisch
 
-
-
 ## Communities und Portale
 
 * [LinkedIn Group: IEC 61499 Applications](https://www.linkedin.com/groups/4431365/)

@@ -1,7 +1,5 @@
 # FB_F_TRIG
 
-
-
 <img width="1366" height="219" alt="FB_F_TRIG" src="https://github.com/user-attachments/assets/9ea529ec-c4e2-4e3f-96f0-9a5ddd42ebf5" />
 
 * * * * * * * * * *
@@ -51,9 +49,6 @@ Der Funktionsblock speichert den vorherigen Zustand des `CLK`-Signals in einer i
 - **FB_R_TRIG**: Erkennung einer steigenden Flanke (von `FALSE` nach `TRUE`).
 - **FB_R_F_TRIG**: Kombinierte Erkennung von steigenden und fallenden Flanken.
 - **FB_F_TRIG** ist spezialisiert auf die Erkennung von fallenden Flanken und daher effizienter in dieser spezifischen Anwendung.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

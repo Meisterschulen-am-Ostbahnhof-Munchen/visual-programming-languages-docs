@@ -1,12 +1,8 @@
 # Uebung_009_AX: Ticker (AX-Adapter basiert)
 
-
-
-
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_009_AX`. Hier wird die Funktionsweise eines ereignisbasierten Zählers und einer numerischen Anzeige über AX-Adapter demonstriert, was zu einer kompakteren und übersichtlicheren Verdrahtung führt.
 
 ----
-
 
 ## Ziel der Übung
 

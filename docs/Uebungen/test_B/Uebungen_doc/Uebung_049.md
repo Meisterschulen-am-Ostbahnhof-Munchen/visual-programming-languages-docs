@@ -1,14 +1,10 @@
 # Uebung_049: DigitalInput_I1-_I4 auf DigitalOutput_Q1-_Q4
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_049`. Diese Übung dient der Übung von umfangreichen Punkt-zu-Punkt-Verbindungen.
 
 ## 🎧 Podcast
-
 
 ![Uebung_049_network](./Uebung_049_network.svg)
 
@@ -19,7 +15,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_049`. Diese Übung dient 
 * [4diac IDE: Dein Open-Source-Werkzeugkasten für verteilte Industrieautomatisierung nach IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Open-Source-Werkzeugkasten-fr-verteilte-Industrieautomatisierung-nach-IEC-61499-e36821e)
 
 ----
-
 
 ## Übersicht
 

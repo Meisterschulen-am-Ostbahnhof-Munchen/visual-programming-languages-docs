@@ -7,7 +7,6 @@
 
 ---
 
-
 **Rahmenlehrplan-Kategorie:** Teil II LE 1.1 (160 UStd.) & LE 1.4 (40 UStd.)  
 **Kernbereich:** Fachtheoretische Grundlagen der grafischen Steuerungstechnik.
 

@@ -1,7 +1,5 @@
 # ST_CREATE_FB
 
-
-
 ![ST_CREATE_FB](https://user-images.githubusercontent.com/116869307/214154744-19129832-9477-4d2a-a6e6-11e55744ad45.png)
 
 * * * * * * * * * *
@@ -52,6 +50,7 @@ Der ST_CREATE_FB Funktionsblock empfängt über das REQ-Ereignis eine Anforderun
 ## Zustandsübersicht
 
 Der Funktionsblock verfügt über mehrere Service-Sequenzen:
+
 - **normal_establishment**: Erfolgreiche Initialisierung
 - **unsuccessful_establishment**: Fehlgeschlagene Initialisierung
 - **request_confirm**: Erfolgreiche Anforderungsbearbeitung

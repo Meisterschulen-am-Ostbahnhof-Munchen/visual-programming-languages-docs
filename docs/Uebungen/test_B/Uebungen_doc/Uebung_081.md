@@ -1,14 +1,10 @@
 # Uebung_081: Beispiel für E_CTD
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_081`. Hier wird das Prinzip des Rückwärtszählens bis zum Erreichen der Nullgrenze gezeigt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,7 +18,6 @@ Verwendung des Bausteins `E_CTD` (Event Count Down). Es wird demonstriert, wie e
 
 ### Funktionsbausteine (FBs)
 
-
 ![Uebung_081_network](./Uebung_081_network.svg)
 
   * **`I1` (Count Down)**: Verringert den Zählerstand bei jedem Klick.
@@ -34,7 +29,8 @@ Verwendung des Bausteins `E_CTD` (Event Count Down). Es wird demonstriert, wie e
 
 ## Funktionsweise
 
-1.  **Laden**: Ein Klick auf **I2** triggert den Eingang `LD`. Der Zählerstand springt sofort auf 5. Der Ausgang `Q` wird `FALSE`.
+1.  **Laden**: Ein Klick auf **I2** triggert den Eingang `LD`. Der Zählerstand springt sofort auf
+5. Der Ausgang `Q` wird `FALSE`.
 2.  **Zählen**: Jeder Klick auf **I1** (`CD`) verringert den Zählerstand (4, 3, 2, 1, 0).
 3.  **Grenzwert**: Sobald der Stand Null erreicht (`CV <= 0`), wechselt der Ausgang `Q` auf `TRUE`.
 4.  Die Lampe an **Q1** leuchtet auf.

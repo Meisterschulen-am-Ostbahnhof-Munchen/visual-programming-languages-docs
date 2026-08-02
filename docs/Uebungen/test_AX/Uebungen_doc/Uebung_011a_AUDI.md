@@ -1,8 +1,5 @@
 # Uebung_011a_AUDI: Numeric Value Output und BUTTON_PRESS_REPEAT_DONE
 
-
-
-
 ![Uebung_011a_AUDI_network](./Uebung_011a_AUDI_network.svg)
 
 * * * * * * * * * *
@@ -49,10 +46,12 @@ Im SubApp `Uebung_011a_AUDI` kommen drei Funktionsbausteine zum Einsatz:
 
 3. **Formatkonvertierung**  
    Der Adapter `AB_TO_AUDI` wandelt das AB-Format in das AUDI-Format um. Die Verbindung erfolgt über eine Adapterverbindung (`AdapterConnections`):
+
    - `Source="logiBUS_IBA.IN"` → `Destination="AB_TO_AUDI.AB_IN"`
 
 4. **Ausgabe auf dem Virtual Terminal**  
    Der konvertierte Wert (AUDI-Format) wird am Ausgang `AUDI_OUT` von `AB_TO_AUDI` bereitgestellt und über eine weitere Adapterverbindung an den Baustein `Q_NumericValue_AUDI` übergeben:
+
    - `Source="AB_TO_AUDI.AUDI_OUT"` → `Destination="Q_NumericValue_AUDI.u32NewValue"`
 
    `Q_NumericValue_AUDI` aktualisiert daraufhin das auf dem ISOBUS-VT hinterlegte numerische Objekt mit der ID `OutputNumber_N1`.

@@ -1,7 +1,5 @@
 # F_MUX_3
 
-
-
 <img width="1366" height="254" alt="F_MUX_3" src="https://github.com/user-attachments/assets/2dbe8298-6066-469e-96d6-1a6850de8bd8" />
 
 * * * * * * * * * *
@@ -49,11 +47,6 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weiterleitung e
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - `F_MUX_2`: Ein einfacherer Multiplexer mit nur zwei Eingängen.
 - `F_SEL`: Ein allgemeinerer Selektor, der möglicherweise komplexere Auswahlkriterien unterstützt.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

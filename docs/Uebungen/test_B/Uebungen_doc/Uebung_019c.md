@@ -1,14 +1,10 @@
 # Uebung_019c: Umschalten einer Maske
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_019c`. Dies ist die komplexeste Navigations-Logik, bei der die Maskenumschaltung aktiv vom Hardware-Zustand blockiert werden kann.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,7 +18,6 @@ Implementierung einer bedingten Navigationssteuerung. Der Wechsel der Bildschirm
 
 ### Funktionsbausteine (FBs)
 
-
 ![Uebung_019c_network](./Uebung_019c_network.svg)
 
   * **`Alarmeingang`**: Ein physischer Sensor (`I3`). Solange dieser `TRUE` ist, herrscht Alarmzustand.
@@ -34,6 +29,7 @@ Implementierung einer bedingten Navigationssteuerung. Der Wechsel der Bildschirm
 ## Funktionsweise
 
 Die Weichen blockieren die normalen Navigations-Befehle:
+
 1.  Drückt der Nutzer `I1` (Maske 1), geht das Event zuerst an einen `E_SWITCH`.
 2.  Die Weiche prüft den `Alarmeingang`.
     *   Ist **kein** Alarm vorhanden (`G=FALSE`), wird das Event zu `EO0` ➡️ `F_SEL_E_4` durchgelassen. Die Seite wechselt.

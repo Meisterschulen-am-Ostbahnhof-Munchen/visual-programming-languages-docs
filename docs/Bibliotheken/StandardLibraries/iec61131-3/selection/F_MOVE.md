@@ -1,13 +1,10 @@
 # F_MOVE
 
-
-
 ![F_MOVE](https://github.com/user-attachments/assets/16aaf0c8-4559-4366-be56-14f0db433d33)
 
 * * * * * * * * * *
 
 ![F_MOVE](F_MOVE.svg)
-
 
 ## Einführung
 Der **F_MOVE** ist ein universeller Funktionsbaustein zur typsicheren Datenübertragung, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die Übertragung beliebiger Datentypen (ANY) zwischen Variablen in Steuerungsanwendungen.
@@ -72,11 +69,6 @@ Der **F_MOVE** ist ein universeller Funktionsbaustein zur typsicheren Datenüber
 | Funktionsumfang| Einzelwert | Speicherblock | Typkonvertierung |
 | Typunterstützung | ANY    | BYTE-Array   | ANY    |
 | Latenz         | 1 Zyklus | Variabel     | 1 Zyklus |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

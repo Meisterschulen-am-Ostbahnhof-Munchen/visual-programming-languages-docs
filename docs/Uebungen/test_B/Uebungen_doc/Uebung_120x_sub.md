@@ -1,6 +1,5 @@
 # Uebung_120x_sub: Subapplication Type
 
-
 ![Uebung_120x_sub_network](./Uebung_120x_sub_network.svg)
 
 * * * * * * * * * *

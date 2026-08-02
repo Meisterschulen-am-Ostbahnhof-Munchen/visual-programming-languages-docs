@@ -1,14 +1,10 @@
 # Uebung_110: Übung zum Integer Überlauf
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_110`. Hier wird ein wichtiges Phänomen der digitalen Datenverarbeitung demonstriert: Der Überlauf von Variablen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verständnis der Begrenzung von Datentypen. Es wird gezeigt, was passiert, wenn 
 [cite_start]Die Subapplikation `Uebung_110.SUB` nutzt den Datentyp `USINT` (Unsigned Short Integer)[cite: 1]. Dieser hat einen Wertebereich von 0 bis 255.
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_110_network](./Uebung_110_network.svg)
 

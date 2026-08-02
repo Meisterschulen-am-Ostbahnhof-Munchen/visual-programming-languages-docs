@@ -1,7 +1,5 @@
 # F_WSTRING_AS_UDINT
 
-
-
 <img width="1494" height="214" alt="F_WSTRING_AS_UDINT" src="https://github.com/user-attachments/assets/80526643-8f3a-4829-a9c8-7fec610340b8" />
 
 * * * * * * * * * *
@@ -36,6 +34,7 @@ Der Funktionsblock führt die Konvertierung durch, wenn das Ereignis `REQ` empfa
 
 ## Zustandsübersicht
 Der Funktionsblock hat einen einfachen Zustandsautomaten:
+
 1. **Idle**: Wartet auf das `REQ`-Ereignis.
 2. **Processing**: Führt die Konvertierung durch.
 3. **Complete**: Sendet das `CNF`-Ereignis und kehrt in den Idle-Zustand zurück.

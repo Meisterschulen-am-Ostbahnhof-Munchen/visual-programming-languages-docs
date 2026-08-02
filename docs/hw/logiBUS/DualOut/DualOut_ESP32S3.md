@@ -1,6 +1,5 @@
 # DualOut ESP32S3
 
-
 ## 🔌 IO
 
 ### Digitale Ausgänge

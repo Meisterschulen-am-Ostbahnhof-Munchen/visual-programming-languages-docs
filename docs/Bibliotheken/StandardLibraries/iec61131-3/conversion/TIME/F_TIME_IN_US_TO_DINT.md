@@ -1,7 +1,5 @@
 # F_TIME_IN_US_TO_DINT
 
-
-
 <img width="1520" height="212" alt="F_TIME_IN_US_TO_DINT" src="https://github.com/user-attachments/assets/f69e17a7-e3ae-4ca9-ac0d-e8c66d9c31ce" />
 
 * * * * * * * * * *
@@ -49,6 +47,7 @@ Der Funktionsblock führt die Konvertierung durch, indem der TIME-Wert in Mikros
 Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
 
 Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+
 *   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
 *   **Beispiel:** `500 * T#1ms = T#500ms`
 *   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).

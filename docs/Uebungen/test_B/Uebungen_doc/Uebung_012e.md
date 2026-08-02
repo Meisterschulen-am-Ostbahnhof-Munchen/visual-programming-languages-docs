@@ -65,6 +65,7 @@ Die Subapp arbeitet in zwei Hauptphasen:
 ## Zusammenfassung
 
 Die Übung vermittelt den Umgang mit physikalischen Werteingaben und persistenter Datenspeicherung in 4diac. Sie zeigt, wie man mit der Subapp-Technik eine wiederverwendbare Komponente erstellt, die:
+
 - einen numerischen Wert über ein Objekt einliest,
 - diesen Wert in einer INI-Datei speichert,
 - den gespeicherten Wert bei Systemstart wiederherstellt und

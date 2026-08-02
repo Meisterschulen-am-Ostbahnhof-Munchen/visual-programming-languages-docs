@@ -1,7 +1,5 @@
 # F_SEL
 
-
-
 ![image](https://user-images.githubusercontent.com/69573151/210802734-9caf89bd-f437-43d3-8ed5-294c89df8c3d.png)
 
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_sel.html>
@@ -34,6 +32,7 @@ Keine Adapter-Schnittstellen vorhanden.
 
 ## Funktionsweise
 Bei Eintreffen eines REQ-Ereignisses wertet der F_SEL-Block den Selektor-Eingang G aus:
+
 - Wenn G = FALSE (0): OUT wird auf den Wert von IN0 gesetzt
 - Wenn G = TRUE (1): OUT wird auf den Wert von IN1 gesetzt
 
@@ -58,14 +57,10 @@ Nach Abschluss der Auswahloperation wird das CNF-Ereignis mit dem berechneten Au
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Selektionsbausteinen bietet F_SEL:
+
 - Einfache binäre Auswahl (nur zwei Eingänge)
 - Flexible Typunterstützung durch ANY-Datentyp
 - Standardisierte Ereignissteuerung gemäß IEC 61131-3
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,14 +1,10 @@
 # Uebung_003a_AX: DigitalInput_I1/_I2 auf DigitalOutput_Q1/_I2 - mit typed Subapp
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003a_AX`. Die Übung demonstriert einen fortgeschrittenen Ansatz zur Strukturierung von IEC 61499-Anwendungen: die Verwendung von typisierten Sub-Applikationen ("Typed SubApps") zur Kapselung und Wiederverwendung von Logik.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -24,11 +20,11 @@ Das Hauptziel ist es zu zeigen, wie redundanter Code vermieden werden kann. Anst
 
 [cite_start]Dieser Baustein kapselt die grundlegende Logik: "Lies einen Eingang und schreibe auf einen Ausgang"[cite: 2]. Er verfügt über Schnittstellen zur Parametrierung:
 
-
   * **`Input`**: Bestimmt, welcher physische Eingang gelesen werden soll (z.B. `Input_I1`).
   * **`Output`**: Bestimmt, welcher physische Ausgang geschaltet werden soll (z.B. `Output_Q1`).
 
 Intern enthält dieser Sub-Typ:
+
   * Einen `logiBUS_IXA` Baustein zum Lesen des Eingangs.
   * Einen `logiBUS_QXA` Baustein zum Schreiben des Ausgangs.
   * Eine Adapter-Verbindung, die beide direkt verknüpft.
@@ -36,6 +32,7 @@ Intern enthält dieser Sub-Typ:
 ### Instanzen in der Hauptanwendung
 
 In `Uebung_003a_AX` werden zwei Instanzen dieses Typs erzeugt:
+
   * **`F1`**: [cite_start]Konfiguriert für `Input_I1` auf `Output_Q1`[cite: 1].
   * **`F2`**: [cite_start]Konfiguriert für `Input_I2` auf `Output_Q2`[cite: 1].
 

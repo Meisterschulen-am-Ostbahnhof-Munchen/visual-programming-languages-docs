@@ -1,6 +1,5 @@
 # Uebung_080e4: Beispiel für E_CTU mit Eventbremse durch E_D_FF_ANY
 
-
 ![Uebung_080e4_network](./Uebung_080e4_network.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Diese Übung demonstriert den Einsatz eines **E_CTU** (Event-Zählers) in Kombin
 
 3. **Zählerausgänge**  
    Der Zähler gibt zwei Ereignisse aus:
+
    - `CUO` (Counter Overflow) – wird aktiv, wenn der Zählerstand `CV` den Parameter `PV` (hier 5) erreicht.
    - `RO` (Reset Overflow) – wird aktiv, wenn der Zähler zurückgesetzt wird und dabei den Bereich übersteigt (hier nicht relevant, aber beide Ereignisse werden verwendet).
 

@@ -1,6 +1,5 @@
 # Uebung_212: Standard IEC 61131-3 FB_CTU_LINT (Vorwärtszähler, LINT) mit Terminal-Ausgabe
 
-
 ![Uebung_212_network](./Uebung_212_network.svg)
 
 * * * * * * * * * *

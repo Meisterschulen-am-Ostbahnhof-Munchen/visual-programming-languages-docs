@@ -1,8 +1,5 @@
 # Uebung_053_AB: DigitalInput_I1-_I4 auf DigitalOutput_Q1-_Q4
 
-
-
-
 ![Uebung_053_AB_network](./Uebung_053_AB_network.svg)
 
 * * * * * * * * * *

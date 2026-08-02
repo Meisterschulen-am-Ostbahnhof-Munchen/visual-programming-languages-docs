@@ -1,14 +1,10 @@
 # Uebung_002_AX: DigitalInput_I1 auf DigitalOutput_Q1/_Q2, mit Plug and Socket 
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002_AX`, bei der ein einzelnes digitales Eingangssignal auf zwei verschiedene digitale Ausgänge verteilt wird. Hierbei kommt das Konzept der Adapter-Verzweigung zum Einsatz.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Das Hauptziel dieser Übung ist es, zu zeigen, wie Adapterverbindungen in der IE
 ### Funktionsbausteine (FBs)
 
 Folgende Bausteine kommen zum Einsatz:
-
-
-
 
 ![Uebung_002_AX_network](./Uebung_002_AX_network.svg)
 
@@ -54,6 +47,7 @@ Die Signalverteilung wird durch die zentrale Position des `AX_SPLIT`-Bausteins i
 [cite_start][cite: 1]
 
 Der Signalweg verläuft dabei in folgenden Schritten:
+
 1.  Der Baustein `DigitalInput_I1` detektiert eine Änderung am physischen Eingang.
 2.  Ein Adapter-Ereignis wird an den `AX_SPLIT`-Baustein gesendet.
 3.  Der `AX_SPLIT`-Baustein repliziert dieses Ereignis und den dazugehörigen Datenwert (`D1`) unmittelbar an seine beiden Ausgänge `OUT1` und `OUT2`.

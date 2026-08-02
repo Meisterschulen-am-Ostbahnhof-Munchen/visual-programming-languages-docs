@@ -1,8 +1,5 @@
 # Uebung_011a2_AUDI: Numeric Value Output und BUTTON_PRESS_REPEAT_DONE
 
-
-
-
 ![Uebung_011a2_AUDI_network](./Uebung_011a2_AUDI_network.svg)
 
 * * * * * * * * * *

@@ -1,8 +1,5 @@
 # Uebung_014_AXa: Container (visible/invisible)
 
-
-
-
 ![Uebung_014_AXa_network](./Uebung_014_AXa_network.svg)
 
 * * * * * * * * * *
@@ -44,6 +41,7 @@ Diese Übung demonstriert die Steuerung der Sichtbarkeit eines Containers (Objek
 ## Programmablauf und Verbindungen
 
 Die Ereignisausgänge der Softkey-Bausteine sind wie folgt verbunden:
+
 - Das Ereignis `IND` von **SoftKey_UP_F1** ist mit dem Set-Eingang `S` von **AX_SR** verbunden.
 - Das Ereignis `IND` von **SoftKey_UP_F2** ist mit dem Reset-Eingang `R` von **AX_SR** verbunden.
 

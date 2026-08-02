@@ -1,14 +1,10 @@
 # Uebung_010: SoftKey_F1 auf DigitalOutput_Q1
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010`. Hier wird die Anbindung virtueller Bedienelemente eines ISOBUS-Terminals (Universal Terminal, UT) an physische Ausgänge demonstriert.
 
 ## 🎧 Podcast
-
 
 ![Uebung_010_network](./Uebung_010_network.svg)
 
@@ -19,7 +15,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010`. Hier wird die Anbin
 * [Zwei WLANs gleichzeitig in Windows 10: Die geniale USB-Stick-Lösung für IoT-Geräte ohne Internet-Unterbrechung](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Zwei-WLANs-gleichzeitig-in-Windows-10-Die-geniale-USB-Stick-Lsung-fr-IoT-Gerte-ohne-Internet-Unterbrechung-e375643)
 
 ----
-
 
 ## Ziel der Übung
 
@@ -58,6 +53,7 @@ Die Kommunikation erfolgt über die standardmäßige Trennung von Trigger und We
 [cite_start][cite: 1]
 
 Wenn der Bediener den Softkey am Terminal drückt:
+
 1.  Der Baustein `SoftKey_F1` erkennt die Betätigung über das CAN-Netzwerk.
 2.  Er setzt den Datenausgang `IN` auf `TRUE` und feuert ein `IND`-Event.
 3.  `DigitalOutput_Q1` empfängt den Trigger und schaltet den Hardware-Ausgang ein.

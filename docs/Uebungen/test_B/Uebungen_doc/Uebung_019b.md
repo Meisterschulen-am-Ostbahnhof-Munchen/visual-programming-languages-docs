@@ -1,14 +1,10 @@
 # Uebung_019b: Umschalten einer Maske
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_019b`. Hier wird der virtuelle Alarm am Terminal mit einem physischen Alarm-Ausgang synchronisiert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verknüpfung von UI-Zuständen mit Hardware-Speichern. Es soll sichergestellt we
 [cite_start]In `Uebung_019b.SUB` wird zusätzlich zur Maskenumschaltung ein SR-Flip-Flop für den Alarm-Status verwendet[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_019b_network](./Uebung_019b_network.svg)
 

@@ -1,14 +1,10 @@
 # Uebung_024: Spiegelabfolge (4)
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_024`. Hier wird eine zeitliche Pause in den automatischen Ablauf integriert.
 
 ## 🎧 Podcast
-
 
 ![Uebung_024_network](./Uebung_024_network.svg)
 
@@ -17,7 +13,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_024`. Hier wird eine zeit
 * [Strip-Till im Maisanbau: Wie Hochpräzision Wasser spart und den Boden schützt – Einblick in die Agrartechnik 2024](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Strip-Till-im-Maisanbau-Wie-Hochprzision-Wasser-spart-und-den-Boden-schtzt--Einblick-in-die-Agrartechnik-2024-e3ahcvp)
 
 ----
-
 
 ## Ziel der Übung
 

@@ -1,8 +1,5 @@
 # Uebung_207_AX: Interlock: ILOCK_2_E_AX (Event-gesteuertes bistabiles Relais mit gegenseitiger Verriegelung via Adapter)
 
-
-
-
 ![Uebung_207_AX_network](./Uebung_207_AX_network.svg)
 
 * * * * * * * * * *

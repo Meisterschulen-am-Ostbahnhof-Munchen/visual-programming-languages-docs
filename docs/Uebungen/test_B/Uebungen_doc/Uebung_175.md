@@ -1,7 +1,5 @@
 # Uebung_175: Exercise for E_TABLE_CTRL
 
-
-
 ![Uebung_175_network](./Uebung_175_network.svg)
 
 * * * * * * * * * *

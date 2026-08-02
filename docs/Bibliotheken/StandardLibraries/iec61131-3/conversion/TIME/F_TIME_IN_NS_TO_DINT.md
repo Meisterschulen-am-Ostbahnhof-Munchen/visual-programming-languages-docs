@@ -1,7 +1,5 @@
 # F_TIME_IN_NS_TO_DINT
 
-
-
 <img width="1528" height="212" alt="F_TIME_IN_NS_TO_DINT" src="https://github.com/user-attachments/assets/1bf1ef7f-a9cc-4407-a8c7-72c2401edce4" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der Funktionsblock führt bei einem eingehenden `REQ`-Ereignis die Konvertierung
 Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen Wert (z.B. 500) wieder in einen Zeitwert (z.B. 500ms) zurückzuwandeln. Einen solchen expliziten Konvertierungsbaustein gibt es in der Regel nicht, da dies elegant über eine Multiplikation gelöst wird.
 
 Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
+
 *   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
 *   **Beispiel:** `500 * T#1ms = T#500ms`
 *   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).

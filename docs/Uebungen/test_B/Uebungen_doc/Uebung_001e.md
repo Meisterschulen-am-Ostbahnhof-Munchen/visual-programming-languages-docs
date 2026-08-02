@@ -1,6 +1,5 @@
 # Uebung_001e: DigitalInput_I1 negiert auf DigitalOutput_Q1
 
-
 ![Uebung_001e_network](./Uebung_001e_network.svg)
 
 *Hinweis: Diese Übung verfügt über kein separates Bild.*
@@ -12,6 +11,7 @@
 Diese Übung demonstriert die grundlegende Negation eines digitalen Eingangssignals. Der digitale Eingang **Input_I1** (Pin I1) wird ausgelesen, logisch negiert und auf den digitalen Ausgang **Output_Q1** (Pin Q1) ausgegeben. Dadurch wird bei aktivem Eingang der Ausgang deaktiviert und umgekehrt.
 
 Die Übung eignet sich für Einsteiger in die industrielle Automatisierung mit IEC 61499 und dient dem Verständnis von:
+
 - Ein- und Ausgabe-Funktionsbausteinen der logiBUS-Bibliothek
 - Logischer Negation mittels IEC 61131-Bitoperatoren
 - Ereignisgesteuerter Datenverarbeitung

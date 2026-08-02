@@ -1,14 +1,10 @@
 # Uebung_007a1: Blinker mit E_CYCLE und E_T_FF
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_007a1`. Hier wird versucht, den Blinker aus Übung 007 über externe Taster ein- und auszuschalten.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Steuerung eines Taktgebers über Start- und Stopp-Ereignisse.
 [cite_start]In `Uebung_007a1.SUB` werden die Steuerungseingänge des `E_CYCLE` Bausteins genutzt[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_007a1_network](./Uebung_007a1_network.svg)
 

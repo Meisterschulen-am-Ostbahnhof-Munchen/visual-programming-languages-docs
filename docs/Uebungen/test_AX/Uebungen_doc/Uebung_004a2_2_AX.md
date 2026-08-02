@@ -1,8 +1,5 @@
 # Uebung_004a2_2_AX: Toggle Flip-Flop mit IE mit BUTTON_SINGLE_CLICK mit E_MERGE_2
 
-
-
-
 ![Uebung_004a2_2_AX_network](./Uebung_004a2_2_AX_network.svg)
 
 * * * * * * * * * *

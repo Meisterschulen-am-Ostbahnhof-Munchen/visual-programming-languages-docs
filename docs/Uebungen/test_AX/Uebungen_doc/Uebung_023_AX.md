@@ -1,8 +1,5 @@
 # Uebung_023_AX: Spiegelabfolge (3) - AX Variante
 
-
-
-
 ![Uebung_023_AX_network](./Uebung_023_AX_network.svg)
 
 * * * * * * * * * *
@@ -12,6 +9,7 @@
 Diese Übung realisiert eine **Spiegelabfolge** für zwei doppeltwirkende Zylinder. Ziel ist es, eine sequenzielle Steuerung für das Aus- und Einfahren zweier Zylinder mithilfe von AX-Funktionsbausteinen (SR-Bistabile) und Softkeys aufzubauen. Die Steuerung wird über Softkeys am Terminal bedient, die digitalen Ausgänge steuern die Stellglieder (z. B. Ventile) an.
 
 Die Abfolge ist in zwei Teilbereiche gegliedert:
+
 - **Ausfahren der Zylinder** (Zylinder 1 und 2)
 - **Einfahren der Zylinder** (Zylinder 2 und 1)
 
@@ -26,6 +24,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 - **SoftKey_F1 (UP)**  
   Typ: `isobus::UT::io::Softkey::Softkey_IXA`  
   Parameter:  
+
   - `QI` = TRUE  
   - `u16ObjId` = SoftKey_F1  
   Funktion: Starttaste **Ausfahren** für Zylinder 1.
@@ -33,6 +32,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 - **SoftKey_F2 (DOWN)**  
   Typ: `isobus::UT::io::Softkey::Softkey_IXA`  
   Parameter:  
+
   - `QI` = TRUE  
   - `u16ObjId` = SoftKey_F2  
   Funktion: Löst über `AX_SPLIT_2` das Zurücksetzen von Zylinder 1 Ausfahren und gleichzeitiges Setzen von Zylinder 2 Ausfahren aus (Spiegelung).
@@ -40,6 +40,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 - **SoftKey_F3 (DOWN)**  
   Typ: `isobus::UT::io::Softkey::Softkey_IXA`  
   Parameter:  
+
   - `QI` = TRUE  
   - `u16ObjId` = SoftKey_F3  
   Funktion: Reset (Einfahren) für **Ausfahren Zylinder 2**.
@@ -47,6 +48,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 - **SoftKey_F7 (UP)**  
   Typ: `isobus::UT::io::Softkey::Softkey_IXA`  
   Parameter:  
+
   - `QI` = TRUE  
   - `u16ObjId` = SoftKey_F7  
   Funktion: Starttaste **Einfahren** für Zylinder 2.
@@ -54,6 +56,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 - **SoftKey_F8 (DOWN)**  
   Typ: `isobus::UT::io::Softkey::Softkey_IXA`  
   Parameter:  
+
   - `QI` = TRUE  
   - `u16ObjId` = SoftKey_F8  
   Funktion: Löst über `AX_SPLIT_3` das Zurücksetzen von Zylinder 2 Einfahren und gleichzeitiges Setzen von Zylinder 1 Einfahren aus (Spiegelung).
@@ -61,6 +64,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 - **SoftKey_F9 (DOWN)**  
   Typ: `isobus::UT::io::Softkey::Softkey_IXA`  
   Parameter:  
+
   - `QI` = TRUE  
   - `u16ObjId` = SoftKey_F9  
   Funktion: Reset (Ausfahren) für **Einfahren Zylinder 1**.
@@ -97,6 +101,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
   Typ: `adapter::events::unidirectional::AX_SPLIT_2`  
   Parameter: keine  
   Funktion: Verteilt das Ereignis von SoftKey_F2 auf zwei Ausgänge:  
+
   - OUT1 → RESET von AX_FB_SR_Ausfahren_Cyl_1  
   - OUT2 → SET von AX_FB_SR_Ausfahren_Cyl_2
 
@@ -104,6 +109,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
   Typ: `adapter::events::unidirectional::AX_SPLIT_2`  
   Parameter: keine  
   Funktion: Verteilt das Ereignis von SoftKey_F8 auf zwei Ausgänge:  
+
   - OUT1 → RESET von AX_FB_SR_Einfahren_Cyl_2  
   - OUT2 → SET von AX_FB_SR_Einfahren_Cyl_1
 
@@ -112,6 +118,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 - **DigitalOutput_Q1**  
   Typ: `logiBUS::io::DQ::logiBUS_QXA`  
   Parameter:  
+
   - `QI` = TRUE  
   - `Output` = Output_Q1  
   Funktion: Gibt den Ausgang Q1 (Ausfahren Zylinder 1) aus. Gesteuert von `AX_FB_SR_Ausfahren_Cyl_1.Q1`.
@@ -119,6 +126,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 - **DigitalOutput_Q2**  
   Typ: `logiBUS::io::DQ::logiBUS_QXA`  
   Parameter:  
+
   - `QI` = TRUE  
   - `Output` = Output_Q2  
   Funktion: Gibt den Ausgang Q2 (Ausfahren Zylinder 2) aus. Gesteuert von `AX_FB_SR_Ausfahren_Cyl_2.Q1`.
@@ -126,6 +134,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 - **DigitalOutput_Q3**  
   Typ: `logiBUS::io::DQ::logiBUS_QXA`  
   Parameter:  
+
   - `QI` = TRUE  
   - `Output` = Output_Q3  
   Funktion: Gibt den Ausgang Q3 (Einfahren Zylinder 2) aus. Gesteuert von `AX_FB_SR_Einfahren_Cyl_2.Q1`.
@@ -133,6 +142,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 - **DigitalOutput_Q4**  
   Typ: `logiBUS::io::DQ::logiBUS_QXA`  
   Parameter:  
+
   - `QI` = TRUE  
   - `Output` = Output_Q4  
   Funktion: Gibt den Ausgang Q4 (Einfahren Zylinder 1) aus. Gesteuert von `AX_FB_SR_Einfahren_Cyl_1.Q1`.
@@ -146,6 +156,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 
 2. **Spiegelung auf Zylinder 2**  
    Durch Drücken von **SoftKey_F2** (DOWN) wird ein Ereignis an `AX_SPLIT_2` gesendet.  
+
    - Der Ausgang OUT1 von `AX_SPLIT_2` resettet das SR-Bistabil `AX_FB_SR_Ausfahren_Cyl_1` → Q1 wird inaktiv, Zylinder 1 fährt nicht mehr aus.  
    - Der Ausgang OUT2 setzt gleichzeitig `AX_FB_SR_Ausfahren_Cyl_2` → Q2 aktiv, Zylinder 2 fährt aus.
 
@@ -159,6 +170,7 @@ Es werden keine weiteren Sub-Bausteine (SubAppTypes) verwendet – alle Funktion
 
 2. **Spiegelung auf Zylinder 1**  
    Durch Drücken von **SoftKey_F8** (DOWN) wird `AX_SPLIT_3` angesteuert:  
+
    - OUT1 resettet `AX_FB_SR_Einfahren_Cyl_2` → Q3 inaktiv.  
    - OUT2 setzt `AX_FB_SR_Einfahren_Cyl_1` → Q4 aktiv.
 

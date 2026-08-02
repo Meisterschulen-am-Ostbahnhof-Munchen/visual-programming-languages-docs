@@ -1,6 +1,5 @@
 # Uebung_004b6: Toggle Flip-Flop mit IX / E_PERMIT + E_T_FF
 
-
 ![Uebung_004b6_network](./Uebung_004b6_network.svg)
 
 * * * * * * * * * *
@@ -58,6 +57,7 @@ Der digitale Eingang dient als Freigabesignal (PERMIT) für einen Takt, der den 
 
 **Ablauf**:  
 Sobald sich der Digitaleingang ändert, wird das Ereignis `IND` ausgelöst. Der aktuelle Zustand des Eingangs (`IN`) wird als `PERMIT` an den Baustein `E_PERMIT` übergeben.  
+
 - Ist `PERMIT = TRUE`, wird das Ereignis an den Takt-Eingang (`CLK`) des Toggle-Flip-Flops weitergeleitet.  
 - Der `E_T_FF` toggelt daraufhin seinen Ausgang `Q`.  
 - Gleichzeitig wird das Ereignis `EO` von `E_T_FF` an den Digitalausgang gesendet, der den neuen Wert von `Q` übernimmt.

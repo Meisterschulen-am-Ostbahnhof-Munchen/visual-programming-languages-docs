@@ -1,8 +1,5 @@
 # Uebung_001d_AX: DigitalInput_I1 auf DigitalOutput_Q1, mit Plug and Socket
 
-
-
-
 ![Uebung_001d_AX_network](./Uebung_001d_AX_network.svg)
 
 * * * * * * * * * *
@@ -48,6 +45,7 @@ Der Signalfluss in der Sub-Applikation erfolgt ausschließlich über **Adapterve
 2. Dieses Ereignis wird zum **AX_SPLIT_2**-Baustein geleitet, der es auf seine beiden Ausgänge `OUT1` und `OUT2` vervielfältigt.
 3. Beide Ausgänge sind mit den Eingängen des **AX_AND_2**-Bausteins verbunden (`IN1` und `IN2`).  
    Da beide Eingänge dasselbe Ereignis gleichzeitig erhalten, führt die UND-Verknüpfung immer zu einem Ereignis am Ausgang `OUT`.
+
 4. Das Ausgangsereignis von `AX_AND_2` wird an den Adaptereingang `OUT` des **DigitalOutput_Q1**-Bausteins übertragen, der daraufhin den physischen Ausgang **Output_Q1** setzt.
 
 Im Ergebnis wird der Digitaleingang **I1** direkt auf den Digitalausgang **Q1** abgebildet. Die Zwischenschaltung von `AX_SPLIT_2` und `AX_AND_2` dient lediglich der Demonstration von Adapterverknüpfungen und hat keine logische Auswirkung auf das Durchschaltverhalten.

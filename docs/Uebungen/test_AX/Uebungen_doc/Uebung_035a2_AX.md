@@ -2,10 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_035a2_AX` basierend auf den b
 
 # Uebung_035a2_AX: Ampelschaltung Österreich (AX) mit Sequence T05
 
-
-
-
-
 ![Uebung_035a2_AX_network](./Uebung_035a2_AX_network.svg)
 
 * * * * * * * * * *
@@ -20,6 +16,7 @@ Die Steuerung erfolgt über eine zeitgesteuerte Sequenz mit 5 Schritten (`sequen
 
 ### Haupt-Steuerungsbaustein: `Seq`
 Dieser Baustein steuert den zeitlichen Ablauf der Ampelphasen.
+
 - **Typ**: `logiBUS::utils::sequence::timed::sequence_T_05_loop_AX`
 - **Funktionsweise**: Er schaltet nacheinander durch 5 Zustände (S1 bis S5). Die Dauer der Zustände wird über Parameter definiert.
 - **Konfigurierte Parameter**:

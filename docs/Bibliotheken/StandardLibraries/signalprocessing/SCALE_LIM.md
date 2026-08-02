@@ -1,7 +1,5 @@
 # SCALE_LIM
 
-
-
 <img width="951" height="257" alt="SCALE_LIM" src="https://github.com/user-attachments/assets/9cc71e27-9ab8-454a-a6fc-01b86dfde68e" />
 
 * * * * * * * * * *
@@ -35,6 +33,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der FB führt folgende Operationen durch:
+
 1. Prüft, ob der Eingangswert IN die definierten Grenzen MIN_IN_LIM oder MAX_IN_LIM überschreitet
 2. Falls IN < MIN_IN_LIM: Ausgabe von MIN_OUT_FIX
 3. Falls IN > MAX_IN_LIM: Ausgabe von MAX_OUT_FIX
@@ -50,6 +49,7 @@ Der FB führt folgende Operationen durch:
 
 ## Zustandsübersicht
 Der FB hat einen einfachen Zustandsautomaten:
+
 1. Wartet auf REQ-Ereignis
 2. Führt Skalierung/Limitierung durch
 3. Sendet CNF-Ereignis
@@ -61,12 +61,10 @@ Der FB hat einen einfachen Zustandsautomaten:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Skalierungsbausteinen bietet SCALE_LIM zusätzlich:
+
 - Grenzwertüberwachung
 - Möglichkeit zur Ausgabe fixer Werte bei Grenzwertüberschreitung
 - Flexiblere Definition von Skalierungsbereichen
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

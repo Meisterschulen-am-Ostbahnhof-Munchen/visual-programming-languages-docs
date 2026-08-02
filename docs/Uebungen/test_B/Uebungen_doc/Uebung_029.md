@@ -1,14 +1,10 @@
 # Uebung_029: LED_DO Blinkende LED
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_029`. Hier wird ein spezialisierter Baustein zur Ansteuerung von Status-LEDs vorgestellt, der das Blinken hardwarenah übernimmt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Nutzung des Bausteins `logiBUS_LED_DO_QX`. Es wird gezeigt, wie man eine LED in 
 [cite_start]In `Uebung_029.SUB` werden drei Taster genutzt, um eine einzige LED (`Q1`) in drei verschiedenen Modi anzusteuern[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_029_network](./Uebung_029_network.svg)
 
@@ -36,6 +31,7 @@ Nutzung des Bausteins `logiBUS_LED_DO_QX`. Es wird gezeigt, wie man eine LED in 
 ## Funktionsweise
 
 Obwohl alle drei Bausteine im Diagramm auf denselben physischen Ausgang `Output_Q1` verweisen, unterscheiden sie sich in ihrer Konfiguration:
+
 *   Druck auf **Taster I1** ➡️ Triggert den 5Hz-Baustein. Die LED blitzt sehr schnell.
 *   Druck auf **Taster I2** ➡️ Triggert den 1Hz-Baustein. Die LED blinkt ruhig.
 *   Druck auf **Taster I3** ➡️ Triggert den ON-Baustein. Die LED leuchtet konstant.

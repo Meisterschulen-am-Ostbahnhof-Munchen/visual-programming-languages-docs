@@ -1,7 +1,5 @@
 # F_USINT_TO_BYTE
 
-
-
 <img width="1454" height="214" alt="F_USINT_TO_BYTE" src="https://github.com/user-attachments/assets/c086c1af-bc1b-492e-87cb-d7c3a52dd7a0" />
 
 * * * * * * * * * *
@@ -47,9 +45,6 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` emp
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_BYTE_TO_USINT**: Führt die umgekehrte Konvertierung durch (BYTE zu USINT).
 - **F_INT_TO_STRING**: Konvertiert einen Integer-Wert in einen String, ist jedoch komplexer in der Handhabung.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

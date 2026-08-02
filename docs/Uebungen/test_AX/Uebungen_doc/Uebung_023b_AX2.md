@@ -1,8 +1,5 @@
 # Uebung_023b_AX2: Spiegelabfolge (3) - AX Variante
 
-
-
-
 ![Uebung_023b_AX2_network](./Uebung_023b_AX2_network.svg)
 
 * * * * * * * * * *
@@ -40,11 +37,13 @@ Der SubAppType besitzt keine eigenen Ein-/Ausgangs-Schnittstellen, sondern kommu
 ### Parameter der Bausteine
 
 Alle `Softkey_IE`-Bausteine sind mit folgenden Parametern konfiguriert:
+
 - **QI** = TRUE
 - **u16ObjId** = jeweilige Softkey-Konstante (z.B. `SoftKey_F1`)
 - **InputEvent** = Auslöser (SK_RELEASED oder SK_PRESSED)
 
 Alle `logiBUS_QXA`-Bausteine sind mit folgenden Parametern konfiguriert:
+
 - **QI** = TRUE
 - **Output** = jeweiliger Ausgang (Output_Q1 … Output_Q4)
 

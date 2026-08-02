@@ -1,8 +1,5 @@
 # Uebung_001d2_AX: DigitalInput_I1/2 auf DigitalOutput_Q1/2, als Alternative(Verriegelt) mit Plug and Socket, ohne ECC
 
-
-
-
 ![Uebung_001d2_AX_network](./Uebung_001d2_AX_network.svg)
 
 * * * * * * * * * *
@@ -17,6 +14,7 @@ Die Schaltung verarbeitet die Eingänge so, dass immer nur einer der beiden Ausg
 - **DigitalInput_I1**, **DigitalInput_I2**:  
   Typ: `logiBUS::io::DI::logiBUS_IXA`  
   Parametrisierung:  
+
   - `QI` = TRUE (aktiviert)  
   - `Input` = `Input_I1` bzw. `Input_I2` (logiBUS-Kanal)  
   Diese Bausteine stellen die physikalischen Digitaleingänge (z. B. von einem Taster oder Sensor) als boolesche Signale im System bereit.
@@ -24,6 +22,7 @@ Die Schaltung verarbeitet die Eingänge so, dass immer nur einer der beiden Ausg
 - **DigitalOutput_Q1**, **DigitalOutput_Q2**:  
   Typ: `logiBUS::io::DQ::logiBUS_QXA`  
   Parametrisierung:  
+
   - `QI` = TRUE  
   - `Output` = `Output_Q1` bzw. `Output_Q2`  
   Sie steuern die physikalischen Digitalausgänge (z. B. Lampen oder Relais).
@@ -66,6 +65,7 @@ Die Schaltung arbeitet nach folgendem Prinzip:
      * Ein Pfad geht direkt zu den Digitalausgängen:  
        `AX_SPLIT_2_Q1.OUT1` → `DigitalOutput_Q1.OUT`  
        `AX_SPLIT_2_Q2.OUT2` → `DigitalOutput_Q2.OUT`  
+
      * Der andere Pfad geht über die Negation (`AX_NOT_INIT`) zu den D-Flip-Flops:  
        `AX_SPLIT_2_Q1.OUT2` → `AX_NOT_INIT_Q1.IN` → `AX_D_FF_Q1.I`  
        `AX_SPLIT_2_Q2.OUT1` → `AX_NOT_INIT_Q2.IN` → `AX_D_FF_Q2.I`  

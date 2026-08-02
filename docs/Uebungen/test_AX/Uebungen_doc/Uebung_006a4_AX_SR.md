@@ -1,8 +1,5 @@
 # Uebung_006a4_AX_SR: Exercise for AX_FB_SR_T_FF (Set-Dominant Toggle Flip-Flop with Adapter)
 
-
-
-
 ![Uebung_006a4_AX_SR_network](./Uebung_006a4_AX_SR_network.svg)
 
 * * * * * * * * * *

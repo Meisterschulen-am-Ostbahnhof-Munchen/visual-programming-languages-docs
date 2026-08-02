@@ -1,14 +1,10 @@
 # Uebung_152: Impulszähler &amp; PI Regler
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_152`. Hier wird eine geschlossene Regelschleife (Closed Loop) implementiert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,7 +18,6 @@ Implementierung eines PI-Reglers zur Konstanthaltung einer physikalischen Größ
 
 ### Regelkreis-Komponenten
 
-
 ![Uebung_152_network](./Uebung_152_network.svg)
 
   * **Sensor (Ist-Wert)**: Impulszähler `logiBUS_PI_ID` + Ableitung `FT_DERIV` (berechnet z.B. die aktuelle Drehzahl).
@@ -35,6 +30,7 @@ Implementierung eines PI-Reglers zur Konstanthaltung einer physikalischen Größ
 ## Funktionsweise
 
 Der Regler versucht ständig, die Stellgröße am PWM-Ausgang so anzupassen, dass die gemessene Impulsrate dem Sollwert entspricht.
+
 *   Wird das System belastet (Drehzahl sinkt), erhöht der Regler das PWM-Verhältnis.
 *   Wird es zu schnell, drosselt er.
 

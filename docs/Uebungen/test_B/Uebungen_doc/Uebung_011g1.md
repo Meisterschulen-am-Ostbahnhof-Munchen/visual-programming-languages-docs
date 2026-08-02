@@ -1,6 +1,5 @@
 # Uebung_011g1: Numeric Value Input -- multiple IOObservers
 
-
 ![Uebung_011g1_network](./Uebung_011g1_network.svg)
 
 * * * * * * * * * *

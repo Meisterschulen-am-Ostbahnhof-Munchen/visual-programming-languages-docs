@@ -1,7 +1,5 @@
 # RampLimitFS
 
-
-
 <img width="842" height="294" alt="RampLimitFS" src="https://github.com/user-attachments/assets/29d36f04-bd95-4ebf-ae98-807414c5e6b9" />
 
 * * * * * * * * * *
@@ -38,6 +36,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock ermöglicht eine schrittweise Anpassung des Ausgabewertes `OUT` durch verschiedene Ereignisse:
+
 - **Schrittweise Erhöhung/Verringerung**:
   - `UP_SLOW`/`DOWN_SLOW`: Ändert `OUT` um den `SLOW`-Wert.
   - `UP_FAST`/`DOWN_FAST`: Ändert `OUT` um den `FAST`-Wert.
@@ -51,6 +50,7 @@ Der Ausgabewert wird dabei immer auf die Grenzen `VAL_ZERO` (Minimum) und `VAL_F
 ## Technische Besonderheiten
 - **Begrenzung des Ausgabewertes**:
   Der Wert von `OUT` wird automatisch auf die definierten Grenzen (`VAL_ZERO`, `VAL_FULL`) begrenzt, falls die Schrittweiten (`SLOW`, `FAST`) diese überschreiten würden.
+
 - **Flexible Schrittweiten**:
   Unterschiedliche Geschwindigkeiten der Wertänderung durch `SLOW` und `FAST`.
 
@@ -65,11 +65,9 @@ Der Funktionsblock hat keinen internen Zustand. Jedes Ereignis führt sofort zur
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **Vergleich mit Standard-Rampenfunktionen**:
   `RampLimitFS` bietet zusätzlich die Möglichkeit, zwischen schnellen und langsamen Schrittweiten zu wechseln und direkte Werte (Min/Max) zuzuweisen.
+
 - **Flexibilität**:
   Im Gegensatz zu einfachen Zählern ermöglicht dieser Baustein eine dynamische Anpassung der Schrittweiten und Grenzwerte.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

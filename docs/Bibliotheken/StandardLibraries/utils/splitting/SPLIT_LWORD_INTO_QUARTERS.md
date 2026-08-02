@@ -6,7 +6,6 @@
 
 ---- 
 
-
 ![SPLIT_LWORD_INTO_QUARTERS](https://github.com/user-attachments/assets/673b8e11-a630-41ed-ab74-5c16e3fe349b)
 
 * * * * * * * * * *
@@ -26,6 +25,7 @@ Der Funktionsblock `SPLIT_LWORD_INTO_QUARTERS` dient zur Extraktion der 32 Quart
 
 ### **Daten-Ausgänge**
 32 Ausgänge vom Typ BYTE:
+
 - `QUARTER_BYTE_00` bis `QUARTER_BYTE_31`: Die extrahierten 8-Bit-Segmente des Eingangswortes.
 
 ### **Adapter**

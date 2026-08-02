@@ -2,10 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_060_sub_Outputs` basierend au
 
 # Uebung_060_sub_Outputs: für TC-SC also Task Controller Section Control
 
-
-
-
-
 ![Uebung_060_sub_Outputs_network](./Uebung_060_sub_Outputs_network.svg)
 
 * * * * * * * * * *
@@ -45,6 +41,7 @@ Der Ablauf innerhalb der Sub-Application ist rein ereignisgesteuert und dient de
 
 2.  **Datenmapping**:
     Die Eingangsvariablen werden mit einem Index-Versatz auf die Ausgänge gelegt:
+
     *   Eingang `Q_00` steuert `DigitalOutput_Q1` (Ausgang 1).
     *   Eingang `Q_01` steuert `DigitalOutput_Q2` (Ausgang 2).
     *   Eingang `Q_02` steuert `DigitalOutput_Q3` (Ausgang 3).
@@ -59,8 +56,6 @@ Der Ablauf innerhalb der Sub-Application ist rein ereignisgesteuert und dient de
 ## Zusammenfassung
 
 Die `Uebung_060_sub_Outputs` stellt eine Schnittstellen-Komponente dar, die eine saubere Trennung zwischen der Steuerungslogik und der Hardware-Anbindung ermöglicht. Sie nimmt 8 Steuersignale (`Q_00` - `Q_07`) entgegen und mappt diese auf die LogiBUS-Ausgänge 1 bis 8. Dies erleichtert die Wiederverwendbarkeit des Codes und die Übersichtlichkeit bei der Ansteuerung von Sektoren (Section Control).
-
-
 
 ## 🛠️ Zugehörige Übungen
 

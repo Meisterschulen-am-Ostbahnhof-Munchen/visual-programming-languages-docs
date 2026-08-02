@@ -1,7 +1,5 @@
 # FB_CTU_UDINT
 
-
-
 <img width="1411" height="277" alt="FB_CTU_UDINT" src="https://github.com/user-attachments/assets/f36dc7f5-bd23-4af7-8a8a-fc038435ca79" />
 
 * * * * * * * * * *
@@ -29,6 +27,7 @@ Der Funktionsblock `FB_CTU_UDINT` ist ein Aufwärtszähler (Counter Up) für den
 
 ## Funktionsweise
 Der Funktionsblock führt bei jedem `REQ`-Ereignis folgende Schritte aus:
+
 1. Wenn `R` aktiv ist (`TRUE`), wird der Zählerstand (`CV`) auf `0` zurückgesetzt.
 2. Wenn `CU` aktiv ist (`TRUE`) und der Zählerstand (`CV`) kleiner als der Maximalwert (`4294967295`) ist, wird der Zählerstand um `1` erhöht.
 3. Der Ausgang `Q` wird auf `TRUE` gesetzt, wenn der Zählerstand (`CV`) den Sollwert (`PV`) erreicht oder überschreitet.

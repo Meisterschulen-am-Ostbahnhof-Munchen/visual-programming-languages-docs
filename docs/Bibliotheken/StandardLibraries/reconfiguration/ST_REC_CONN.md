@@ -1,7 +1,5 @@
 # ST_REC_CONN
 
-
-
 ![ST_REC_CONN](https://user-images.githubusercontent.com/116869307/214155169-b982c961-19de-4e7e-876a-55ba47f27411.png)
 
 * * * * * * * * * *
@@ -66,6 +64,7 @@ Der QI-Eingang steuert dabei die Ausführung: Bei FALSE wird die Operation nicht
 ## Zustandsübersicht
 
 Der Funktionsblock arbeitet nach einem einfachen Anfrage-Bestätigungs-Prinzip:
+
 - Wartezustand: Keine aktive Operation
 - Ausführungszustand: Verarbeitung der REQ-Anfrage
 - Abschlusszustand: Senden der CNF-Bestätigung
@@ -81,6 +80,7 @@ Der Funktionsblock arbeitet nach einem einfachen Anfrage-Bestätigungs-Prinzip:
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Gegensatz zu statischen Verbindungen in 4diac ermöglicht ST_REC_CONN:
+
 - Dynamische Anpassung von Verbindungen zur Laufzeit
 - Höhere Flexibilität in adaptiven Systemen
 - Komplexere Rekonfigurationsszenarien im Vergleich zu einfachen Verbindungsblöcken

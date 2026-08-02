@@ -1,7 +1,5 @@
 # F_LOG
 
-
-
 ![F_LOG](https://user-images.githubusercontent.com/116869307/214145111-55825954-a2a0-4f08-91b0-7e3e30337b48.png)
 
 * * * * * * * * * *
@@ -47,6 +45,7 @@ Der Funktionsblock besitzt keine komplexen internen Zustände. Er verhält sich 
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen logarithmischen Funktionen:
+
 - F_LN: Berechnet den natürlichen Logarithmus (Basis e)
 - F_LOG: Berechnet spezifisch den dekadischen Logarithmus (Basis 10)
 - Beide Blöcke folgen demselben Ereignis-/Datenfluss-Paradigma

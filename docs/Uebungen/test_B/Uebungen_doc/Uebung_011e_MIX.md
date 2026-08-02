@@ -1,6 +1,5 @@
 # Uebung_011e_MIX: Numeric Value Input I1 Durchschleifen auf N3 (Software Scale via NumericObjectPool_S) falsch gemischt!
 
-
 ![Uebung_011e_MIX_network](./Uebung_011e_MIX_network.svg)
 
 * * * * * * * * * *

@@ -2,10 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_006e1_AX` basierend auf den b
 
 # Uebung_006e1_AX: SR-Flip-Flop mit 2x IXA
 
-
-
-
-
 ![Uebung_006e1_AX_network](./Uebung_006e1_AX_network.svg)
 
 * * * * * * * * * *
@@ -66,7 +62,10 @@ Das Netzwerk realisiert eine Speicherfunktion mittels eines SR-Flip-Flops. Der A
 Anstatt separate Ereignis- (Events) und Datenleitungen zu ziehen, werden hier Adapter-Verbindungen (dargestellt durch die Doppelpfeile/breiteren Linien in der IDE) genutzt. Dies reduziert die Anzahl der sichtbaren Leitungen drastisch.
 
 **Logikverhalten (SR-Dominanz):**
-Da es sich um einen SR-Baustein handelt, gilt typischerweise: Ist nur Setzen aktiv, ist der Ausgang 1. Ist nur Rücksetzen aktiv, ist der Ausgang 0. Sind beide Eingänge gleichzeitig aktiv, bestimmt der Bausteintyp die Dominanz (bei SR-Bausteinen nach IEC 61131 hat oft das Setzen Vorrang, dies ist jedoch implementationabhängig vom spezifischen `AX_FB_SR`).
+Da es sich um einen SR-Baustein handelt, gilt typischerweise: Ist nur Setzen aktiv, ist der Ausgang
+
+1. Ist nur Rücksetzen aktiv, ist der Ausgang
+0. Sind beide Eingänge gleichzeitig aktiv, bestimmt der Bausteintyp die Dominanz (bei SR-Bausteinen nach IEC 61131 hat oft das Setzen Vorrang, dies ist jedoch implementationabhängig vom spezifischen `AX_FB_SR`).
 
 ## Zusammenfassung
 

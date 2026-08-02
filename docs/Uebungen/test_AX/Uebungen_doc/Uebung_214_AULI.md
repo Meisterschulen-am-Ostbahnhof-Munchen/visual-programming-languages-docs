@@ -1,8 +1,5 @@
 # Uebung_214_AULI: Standard IEC 61131-3 AULI_FB_CTU (Adapter Version, Vorwärtszähler, ULINT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_214_AULI_network](./Uebung_214_AULI_network.svg)
 
 * * * * * * * * * *
@@ -71,6 +68,7 @@ Der Ablauf der Übung ist wie folgt:
 **Hinweis**: Ein Kommentar im Netzwerk schlägt vor, bei Bedarf einen **AX_D_FF** (Flip-Flop) einzufügen, um die Ereignisrate zu reduzieren.
 
 Die Verbindungen im Überblick:
+
 - **Event-Verbindung**: `Input_R.INITO` → `AULI_ULINT_TO_ULI.REQ`
 - **Adapterverbindungen**:
   - `Input_CU.IN` → `AULI_FB_CTU.CU`

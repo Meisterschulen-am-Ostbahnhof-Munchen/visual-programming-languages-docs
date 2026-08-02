@@ -1,7 +1,5 @@
 # SPLIT_DWORD_INTO_WORDS
 
-
-
 ![SPLIT_DWORD_INTO_WORDS](https://github.com/user-attachments/assets/393aad99-3222-4c5f-981b-4795868b5052)
 
 * * * * * * * * * *
@@ -28,6 +26,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 Der Funktionsblock nimmt ein DWORD als Eingabe und teilt es in zwei WORDS auf:
+
 - `WORD_00` enthält die unteren 16 Bits des DWORD (`IN.%W0`).
 - `WORD_01` enthält die oberen 16 Bits des DWORD (`IN.%X1`).
 

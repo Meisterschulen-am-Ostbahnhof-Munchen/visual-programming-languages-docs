@@ -1,7 +1,5 @@
 # BeagleBoneBlack
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

@@ -1,7 +1,5 @@
 # 4Diac neues Projekt anlegen
 
-
-
 **Grundverständnis von 4Diac**
 
 **4Diac besteht aus mehreren Teilen (3)**

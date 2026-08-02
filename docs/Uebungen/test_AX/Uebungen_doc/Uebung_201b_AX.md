@@ -1,8 +1,5 @@
 # Uebung_201b_AX: Interlock: ILOCK_BLOCK_AX (Motor Rechts/Linkslauf via Adapter)
 
-
-
-
 ![Uebung_201b_AX_network](./Uebung_201b_AX_network.svg)
 
 * * * * * * * * * *

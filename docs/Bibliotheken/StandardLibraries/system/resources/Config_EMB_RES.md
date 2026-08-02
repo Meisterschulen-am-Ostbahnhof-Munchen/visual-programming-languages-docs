@@ -1,7 +1,5 @@
 # Config_EMB_RES
 
-
-
 * * * * * * * * * *
 
 ## Einleitung

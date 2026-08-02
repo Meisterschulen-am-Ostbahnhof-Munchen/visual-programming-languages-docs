@@ -1,7 +1,5 @@
 # FB_CTD
 
-
-
 <img width="1325" height="282" alt="FB_CTD" src="https://github.com/user-attachments/assets/22cf142b-4252-487d-b0dc-2b3379946fbe" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der FB_CTD führt folgende Operationen aus:
+
 1. Wenn das **LD**-Signal aktiv ist, wird der **PV**-Wert in den Zähler (**CV**) geladen.
 2. Wenn das **CD**-Signal aktiv ist und der Zählerstand (**CV**) größer als -32768 ist, wird der Zähler um 1 verringert.
 3. Das Ausgangssignal **Q** wird auf `TRUE` gesetzt, wenn der Zählerstand (**CV**) ≤ 0 ist.

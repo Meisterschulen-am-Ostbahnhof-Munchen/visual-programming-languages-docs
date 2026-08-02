@@ -1,14 +1,10 @@
 # Uebung_007_AX: Blinker mit E_CYCLE und E_T_FF
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_007_AX`. Hier wird gezeigt, wie man zeitgesteuerte Ereignisse erzeugt.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Erzeugung eines periodischen Blinksignals.
 [cite_start]Die Subapplikation `Uebung_007_AX.SUB` nutzt einen `E_CYCLE` Baustein in Kombination mit einem Flip-Flop[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_007_AX_network](./Uebung_007_AX_network.svg)
 

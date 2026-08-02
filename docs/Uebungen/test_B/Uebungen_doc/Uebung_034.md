@@ -1,14 +1,10 @@
 # Uebung_034: Analog-Eingang auf PWM Ausgang
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_034`. Hier wird ein analoger Messwert genutzt, um die Leistung eines Aktors stufenlos zu regeln.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Verbindung eines Analog-Eingangs (`logiBUS_AI`) mit einem PWM-Ausgang (`logiBUS_
 [cite_start]Die Subapplikation `Uebung_034.SUB` liest ein Potentiometer ein und steuert damit die Helligkeit einer Lampe oder die Drehzahl eines Motors[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_034_network](./Uebung_034_network.svg)
 

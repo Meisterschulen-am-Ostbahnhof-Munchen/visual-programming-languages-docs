@@ -1,7 +1,5 @@
 # SPLIT_BYTE_INTO_BOOLS
 
-
-
 ![SPLIT_BYTE_INTO_BOOLS](https://github.com/user-attachments/assets/666a1be8-3ac9-4da7-b5ab-b11513e98c9c)
 
 * * * * * * * * * *
@@ -42,11 +40,6 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt direkt 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu generischen Bit-Manipulationsfunktionen bietet dieser Baustein eine spezialisierte und einfache Lösung für die Zerlegung eines Bytes in Bits.
 - Andere Bausteine könnten komplexere Operationen wie Bit-Shifts oder Masken erfordern, während dieser Baustein die direkte Extraktion der Bits ermöglicht.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

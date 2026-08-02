@@ -1,14 +1,10 @@
 # Uebung_003c_AX: DigitalInput_I1-2-3-4 auf AUX
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003c_AX`. Diese Übung demonstriert die Anbindung von lokalen digitalen Eingängen an das ISOBUS-System als "Auxiliary Inputs". Dies ermöglicht die Nutzung lokaler Schalter zur Steuerung von ISOBUS-Geräten.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -24,7 +20,6 @@ Das Ziel ist es, lokale Hardware-Eingänge (`I1` bis `I4`) für das ISOBUS-Netzw
 
 [cite_start]Dieser Sub-Baustein verbindet einen lokalen digitalen Eingang mit einem ISOBUS-Auxiliary-Ausgangsbaustein[cite: 2].
 
-
   * **Eingang**: `logiBUS_IXA` (Liest den lokalen Pin)
   * **Ausgang**: `Aux_QXA` (Sendet den Status als ISOBUS AUX Nachricht)
   * **Parameter**:
@@ -34,6 +29,7 @@ Das Ziel ist es, lokale Hardware-Eingänge (`I1` bis `I4`) für das ISOBUS-Netzw
 ### Konfiguration
 
 Die Übung mappt vier Eingänge:
+
 *   `F1`: `Input_I1` -> AUX Index 0
 *   `F2`: `Input_I2` -> AUX Index 1 (implizit, Parameter-Mapping in der .SUB prüfen)
 *   `F3`: `Input_I3` -> AUX Index 2

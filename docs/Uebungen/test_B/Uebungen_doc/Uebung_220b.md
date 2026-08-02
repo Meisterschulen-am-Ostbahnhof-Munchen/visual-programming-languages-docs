@@ -1,6 +1,5 @@
 # Uebung_220b: Standard IEC 61131-3 FB_CTUD (Vor-/Rückwärtszähler, INT) mit Terminal-Ausgabe (PHYS)
 
-
 ![Uebung_220b_network](./Uebung_220b_network.svg)
 
 * * * * * * * * * *

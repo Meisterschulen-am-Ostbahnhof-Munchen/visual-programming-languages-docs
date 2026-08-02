@@ -1,7 +1,5 @@
 # TEST_CONDITION
 
-
-
 ![TEST_CONDITION](https://github.com/user-attachments/assets/4dae2b3c-d1d5-4286-a466-46948ad2a767)
 
 * * * * * * * * * *
@@ -41,6 +39,7 @@ Der Funktionsblock `TEST_CONDITION` dient zur Überprüfung einer Bedingung und 
 
 ## Zustandsübersicht
 Der Funktionsblock hat einen einfachen Ablauf:
+
 1. **Idle-Zustand**: Wartet auf das `REQ`-Ereignis.
 2. **Auswertungszustand**: Wertet `check` aus und löst `CNF` aus.
 3. Rückkehr zum **Idle-Zustand**.

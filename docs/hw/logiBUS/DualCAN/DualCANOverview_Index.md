@@ -1,6 +1,2 @@
 # DualCAN Übersicht
 
-
-
-
-

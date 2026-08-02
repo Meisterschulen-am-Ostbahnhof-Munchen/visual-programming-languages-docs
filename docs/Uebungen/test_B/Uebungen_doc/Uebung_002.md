@@ -1,14 +1,10 @@
 # Uebung_002: DigitalInput_I1 auf DigitalOutput_Q1/_Q2
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_002`, bei der ein einzelnes digitales Eingangssignal auf zwei verschiedene digitale Ausgänge verteilt wird. Hierbei wird das Konzept des "Fan-Out" (Vervielfachung) von Verbindungen demonstriert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Das Hauptziel dieser Übung ist es, zu zeigen, wie Ereignis- und Datenverbindung
 [cite_start]In der Subapplikation `Uebung_002.SUB` wird ein digitaler Eingang eingelesen und direkt an zwei digitale Ausgänge weitergereicht[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_002_network](./Uebung_002_network.svg)
 
@@ -48,6 +43,7 @@ Die Signalverteilung wird durch das Ziehen von jeweils zwei Verbindungen von der
 [cite_start][cite: 1]
 
 Der Signalweg verläuft dabei in folgenden Schritten:
+
 1.  Der Baustein `DigitalInput_I1` detektiert eine Änderung am physischen Eingang.
 2.  Ein Ereignis wird am Port `IND` ausgelöst und an **beide** Zielbausteine (`Q1` und `Q2`) gesendet.
 3.  Zeitgleich steht der aktuelle Signalzustand am Port `IN` für beide Bausteine zur Verfügung.

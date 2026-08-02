@@ -1,14 +1,10 @@
 # Uebung_007a1_AX: Blinker mit E_CYCLE und E_T_FF
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_007a1_AX`.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Starten und Stoppen des Blinkers.
 [cite_start]Die Subapplikation `Uebung_007a1_AX.SUB` nutzt die Eingänge `START` und `STOP` des `E_CYCLE` Bausteins[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_007a1_AX_network](./Uebung_007a1_AX_network.svg)
 

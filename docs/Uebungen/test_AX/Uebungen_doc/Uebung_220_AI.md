@@ -1,8 +1,5 @@
 # Uebung_220_AI: Standard IEC 61131-3 AI_FB_CTUD (Adapter Version, Vorwärts-/Rückwärtszähler, INT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_220_AI_network](./Uebung_220_AI_network.svg)
 
 * * * * * * * * * *

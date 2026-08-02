@@ -1,8 +1,5 @@
 # Uebung_004b4c_sub_AE: Sub-Applikation für ein verriegelbares Toggle-Flip-Flop mit AE2-Adapter
 
-
-
-
 ![Uebung_004b4c_sub_AE_network](./Uebung_004b4c_sub_AE_network.svg)
 
 * * * * * * * * * *
@@ -34,6 +31,7 @@ Diese Sub-Applikation realisiert ein verriegelbares Toggle-Flip-Flop, das über 
 
 2. **Weichensteuerung durch Flip‑Flop‑Zustand**  
    Der Ausgang `Q` des Flip‑Flops `E_SR_I1` ist mit dem Steuereingang `G` der Weiche verbunden.  
+
    - Ist `Q = FALSE`, schaltet die Weiche das Ereignis auf ihren Ausgang `EO0`.  
    - Ist `Q = TRUE`, schaltet sie auf `EO1`.
 

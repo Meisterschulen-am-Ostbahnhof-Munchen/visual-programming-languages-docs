@@ -1,6 +1,5 @@
 # Uebung_217: Standard IEC 61131-3 FB_CTD_LINT (Rückwärtszähler, LINT) mit Terminal-Ausgabe
 
-
 ![Uebung_217_network](./Uebung_217_network.svg)
 
 * * * * * * * * * *

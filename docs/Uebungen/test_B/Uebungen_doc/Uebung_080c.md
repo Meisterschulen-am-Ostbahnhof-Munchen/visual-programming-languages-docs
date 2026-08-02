@@ -1,14 +1,10 @@
 # Uebung_080c: Beispiel für E_CTU mit Terminal-Ausgabe
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_080c`. Hier wird das Gegenteil der vorherigen Übung gezeigt: Die Reduzierung der Ereignisanzahl um die Hälfte.
 
 ----
-
 
 ## Ziel der Übung
 

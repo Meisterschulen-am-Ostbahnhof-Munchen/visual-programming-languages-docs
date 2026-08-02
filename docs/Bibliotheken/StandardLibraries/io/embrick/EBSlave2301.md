@@ -1,7 +1,5 @@
 # EBSlave2301
 
-
-
 <img width="1529" height="334" alt="image" src="https://github.com/user-attachments/assets/8995d004-b357-48c9-b1d3-cc1fdc00c9e3" />
 
 * * * * * * * * * *
@@ -44,6 +42,7 @@ Der EBSlave2301 ermöglicht die Konfiguration von bis zu sechs Relais-Ausgängen
 
 ## Zustandsübersicht
 Der Funktionsblock wechselt zwischen folgenden Zuständen:
+
 - Inaktiv: QI = FALSE
 - Konfigurationsmodus: Bei MAP-Ereignis mit QI = TRUE
 - Betriebsbereit: Nach erfolgreicher MAPO-Bestätigung
@@ -57,6 +56,7 @@ Der Funktionsblock wechselt zwischen folgenden Zuständen:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgangsbausteinen bietet der EBSlave2301:
+
 - Konfigurierbare Pin-Zuordnungen zur Laufzeit
 - Adapter-basierte Buskommunikation
 - Qualifizierte Ereignissteuerung

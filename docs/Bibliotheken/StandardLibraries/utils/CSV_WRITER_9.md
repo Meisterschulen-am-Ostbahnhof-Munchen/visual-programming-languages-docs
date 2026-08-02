@@ -1,7 +1,5 @@
 # CSV_WRITER_9
 
-
-
 ![CSV_WRITER_9](https://github.com/user-attachments/assets/472722ac-0bc8-40af-9d9b-a31346a5e041)
 
 * * * * * * * * * *

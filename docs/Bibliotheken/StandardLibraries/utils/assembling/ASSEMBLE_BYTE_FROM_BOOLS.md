@@ -1,7 +1,5 @@
 # ASSEMBLE_BYTE_FROM_BOOLS
 
-
-
 ![ASSEMBLE_BYTE_FROM_BOOLS](https://github.com/user-attachments/assets/4a70532a-aa28-4489-a8b6-5cf357a41460)
 
 * * * * * * * * * *
@@ -27,6 +25,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock setzt die 8 booleschen Eingänge (`BIT_00` bis `BIT_07`) zu einem Byte zusammen. Jeder boolesche Wert wird auf das entsprechende Bit des Bytes abgebildet:
+
 - `BIT_00` entspricht Bit 0 (LSB)
 - `BIT_01` entspricht Bit 1
 - ...
@@ -51,11 +50,6 @@ Bei Auslösung des Ereignisses `REQ` werden die aktuellen Werte der booleschen E
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu manuellen Bit-Operationen in ST oder anderen Sprachen bietet dieser Baustein eine vordefinierte und wartungsfreundliche Lösung.
 - Ähnliche Bausteine könnten weniger Eingänge haben oder zusätzliche Features wie invertierte Logik bieten, was hier nicht der Fall ist.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

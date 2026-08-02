@@ -1,6 +1,5 @@
 # Uebung_003e: DigitalInput_I1-4 auf DigitalOutput_Q1-4 - flach mit Bypass (Druckumlaufventil)
 
-
 ![Uebung_003e_network](./Uebung_003e_network.svg)
 
 * * * * * * * * * *

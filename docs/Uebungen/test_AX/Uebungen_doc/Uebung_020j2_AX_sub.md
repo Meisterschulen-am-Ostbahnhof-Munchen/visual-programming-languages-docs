@@ -1,8 +1,5 @@
 # Uebung_020j2_AX_sub: Subapplication Type
 
-
-
-
 ![Uebung_020j2_AX_sub_network](./Uebung_020j2_AX_sub_network.svg)
 
 * * * * * * * * * *

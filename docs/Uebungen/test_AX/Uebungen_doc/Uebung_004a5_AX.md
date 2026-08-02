@@ -1,14 +1,10 @@
 # Uebung_004a5_AX: wie Uebung_004a4 aber ohne E_SPLIT
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a5_AX`. Ähnlich wie bei `Uebung_004a3_AX` (Impliziter Merge) wird hier gezeigt, dass auch ein Event-Split oft ohne expliziten Baustein möglich ist.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,9 +17,6 @@ Demonstration der "Fan-Out"-Fähigkeit von Ereignisverbindungen in 4diac. Ein Qu
 [cite_start]Die Subapplikation `Uebung_004a5_AX.SUB` entfernt den `E_SPLIT` Baustein aus der vorherigen Übung und verbindet den Taster direkt mit beiden Flip-Flops[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
-
-
 
 ![Uebung_004a5_AX_network](./Uebung_004a5_AX_network.svg)
 

@@ -1,14 +1,10 @@
 # Uebung_072b: GBSD auf UT ausgeben, mit Impulsen.
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_072b`. Hier wird eine komplexe wegabhängige Steuerung für mehrere Ausgänge realisiert.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -22,10 +18,10 @@ Erzeugung von zeitversetzten Impulsen basierend auf dem GBSD-Distanzwert.
 
 ### Funktionsweise
 
-
 ![Uebung_072b_network](./Uebung_072b_network.svg)
 
 Alle Bausteine reagieren auf den gleichen Distanzwert vom Radar (`I_GBSD`). Sie unterscheiden sich jedoch im Parameter **`DIST_OFF`** (Offset):
+
 *   `Q1`: Offset 0 mm.
 *   `Q2`: Offset 1000 mm.
 *   `Q3`: Offset 2000 mm.

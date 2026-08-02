@@ -1,6 +1,5 @@
 # Uebung_004b2b: Zwei unabhängige Toggle-Flip-Flops unter Verwendung von Sub-Applikationen
 
-
 ![Uebung_004b2b_network](./Uebung_004b2b_network.svg)
 
 * * * * * * * * * *

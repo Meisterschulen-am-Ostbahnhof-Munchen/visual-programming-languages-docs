@@ -2,10 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_160b_AX` basierend auf den be
 
 # Uebung_160b_AX: Motor Links/Rechtslauf Automatisierung IE
 
-
-
-
-
 ![Uebung_160b_AX_network](./Uebung_160b_AX_network.svg)
 
 * * * * * * * * * *

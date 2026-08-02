@@ -1,8 +1,5 @@
 # Uebung_004a: Toggle Flip-Flop mit IE mit BUTTON_SINGLE_CLICK
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004a`. In dieser Übung verlassen wir die reine Datenweiterleitung und nutzen Ereignisse (Events), um eine Speicherfunktion zu realisieren: Einen klassischen Stromstoßschalter.
@@ -22,7 +19,6 @@ Das Ziel ist es, den Unterschied zwischen zustandsorientierter (Pegel) und ereig
 [cite_start]Die Subapplikation `Uebung_004a.SUB` verwendet einen speziellen Eingangsbaustein, der Klick-Ereignisse generiert, und ein Toggle-Flip-Flop[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_004a_network](./Uebung_004a_network.svg)
 

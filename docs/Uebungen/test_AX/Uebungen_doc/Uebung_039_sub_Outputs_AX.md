@@ -1,8 +1,5 @@
 # Uebung_039_sub_Outputs_AX: Spiegelabfolge V2 mit Schrittkette SUB Out
 
-
-
-
 ![Uebung_039_sub_Outputs_AX_network](./Uebung_039_sub_Outputs_AX_network.svg)
 
 * * * * * * * * * *

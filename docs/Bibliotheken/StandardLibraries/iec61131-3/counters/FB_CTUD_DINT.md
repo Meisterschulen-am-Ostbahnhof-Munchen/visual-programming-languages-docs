@@ -1,7 +1,5 @@
 # FB_CTUD_DINT
 
-
-
 <img width="1418" height="340" alt="FB_CTUD_DINT" src="https://github.com/user-attachments/assets/9e2492b2-42d8-4fe5-a22a-8cf85b070cef" />
 
 * * * * * * * * * *
@@ -35,6 +33,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock führt folgende Operationen aus, wenn das REQ-Ereignis eintritt:
+
 1. **Reset (R)**: Setzt den Zählwert (CV) auf 0, wenn R aktiv ist.
 2. **Load (LD)**: Lädt den Preset-Wert (PV) in den Zählwert (CV), wenn LD aktiv ist.
 3. **Zählen (CU/CD)**:

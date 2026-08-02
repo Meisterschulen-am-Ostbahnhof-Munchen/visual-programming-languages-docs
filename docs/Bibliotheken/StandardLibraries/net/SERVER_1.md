@@ -1,7 +1,5 @@
 # SERVER_1
 
-
-
 <img width="1394" height="159" alt="image" src="https://github.com/user-attachments/assets/1298c8cd-2696-4105-b2ea-370366175661" />
 
 * * * * * * * * * *
@@ -48,6 +46,7 @@ Der SERVER_1 Block verwaltet Server-Client-Verbindungen über zwei Hauptoperatio
 
 ## Zustandsübersicht
 Der Block kann folgende Zustände annehmen:
+
 - **Nicht initialisiert**: Server nicht betriebsbereit
 - **Initialisiert**: Server bereit für Client-Verbindungen
 - **Datenempfang**: Verarbeitung eingehender Daten
@@ -62,6 +61,7 @@ Der Block kann folgende Zustände annehmen:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Kommunikationsblöcken bietet SERVER_1:
+
 - Spezifische Server-Funktionalität für CLIENT_1-Blöcke
 - Flexible Datenübertragung durch ANY-Typ
 - Explizite Initialisierungs- und Deaktivierungssteuerung

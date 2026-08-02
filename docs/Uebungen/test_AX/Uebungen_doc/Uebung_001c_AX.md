@@ -1,14 +1,10 @@
 # Uebung_001c_AX: DigitalInput_I1 auf DigitalOutput_Q1 --&gt; Eingang abfragen bei Boot.
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_001c_AX`. Hier wird demonstriert, wie ein digitaler Eingang unmittelbar nach dem Systemstart (Boot-Vorgang) abgefragt wird, um den initialen Zustand an einen digitalen Ausgang zu übertragen.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -23,9 +19,6 @@ Das Hauptziel dieser Übung ist das Verständnis des Initialisierungsvorgangs in
 ### Funktionsbausteine (FBs)
 
 In der Subapplikation werden zwei zentrale Bausteine verwendet:
-
-
-
 
 ![Uebung_001c_AX_network](./Uebung_001c_AX_network.svg)
 
@@ -54,6 +47,7 @@ Die Besonderheit dieser Übung liegt in der Ereignisverbindung, die eine Rückko
 [cite_start][cite: 1]
 
 Der funktionale Ablauf ist wie folgt:
+
 1.  **Systemstart**: Beim Hochfahren der 4diac-Laufzeitumgebung wird der Baustein `DigitalInput_I1` initialisiert.
 2.  **Initialisierungs-Event**: Nach erfolgreicher Initialisierung sendet der Baustein ein `INITO`-Ereignis aus.
 3.  **Selbst-Triggerung**: Da `INITO` mit dem eigenen `REQ`-Eingang verbunden ist, wird der Baustein sofort aufgefordert, den physischen Zustand des Eingangs `Input_I1` zu lesen.

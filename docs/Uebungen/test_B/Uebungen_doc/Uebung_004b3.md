@@ -1,14 +1,10 @@
 # Uebung_004b3: Toggle Flip-Flop mit IE / Split / Verriegelt
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_004b3`. Diese Übung erweitert das zweikanalige System um eine gegenseitige Verriegelung: Es kann immer nur maximal eine Lampe gleichzeitig leuchten.
 
 ----
-
 
 ## Ziel der Übung
 
@@ -21,7 +17,6 @@ Implementierung einer exklusiven Auswahl-Logik. Das Einschalten eines Kanals mus
 [cite_start]Die Subapplikation `Uebung_004b3.SUB` basiert auf dem Aufbau von 004b2, führt jedoch zusätzliche Ereignisverbindungen zur Verriegelung ein[cite: 1].
 
 ### Funktionsbausteine (FBs)
-
 
 ![Uebung_004b3_network](./Uebung_004b3_network.svg)
 
@@ -50,6 +45,7 @@ Die Besonderheit liegt in der "Über-Kreuz-Verbindung" der Setz-Ereignisse:
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  Lampe 1 ist an, Lampe 2 ist aus.
 2.  Nutzer drückt Taster 2 (`I2`).
 3.  Die Weiche von Kanal 2 erkennt "Lampe 2 ist aus" und feuert das Ereignis zum Einschalten (`EO0`).

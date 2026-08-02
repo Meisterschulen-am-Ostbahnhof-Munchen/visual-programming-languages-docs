@@ -1,7 +1,5 @@
 # EC_START_ELEM
 
-
-
 ![EC_START_ELEM](https://user-images.githubusercontent.com/116869307/214154626-dbd925bc-19c1-4bbf-98f5-db588d7cefec.png)
 
 * * * * * * * * * *
@@ -51,6 +49,7 @@ Der Funktionsblock reagiert auf das REQ-Ereignis und versucht, das spezifizierte
 ## Zustandsübersicht
 
 Der Funktionsblock verfügt über mehrere Service-Sequenzen:
+
 - **normal_establishment**: Erfolgreiche Initialisierung
 - **unsuccessful_establishment**: Fehlgeschlagene Initialisierung
 - **request_confirm**: Erfolgreiche Anforderungsbearbeitung

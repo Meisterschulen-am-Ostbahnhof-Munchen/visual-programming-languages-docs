@@ -1,8 +1,5 @@
 # Uebung_011b3_PHYSA: Numeric Value Input ADD with Physical Values
 
-
-
-
 ![Uebung_011b3_PHYSA_network](./Uebung_011b3_PHYSA_network.svg)
 
 * * * * * * * * * *
@@ -29,6 +26,7 @@ Der Ablauf ist vollständig über Adapterverbindungen realisiert:
 3. **Wert ausgeben** – Der Ausgang `OUT` von `AR_ADD_2` ist mit dem Adaptereingang `rPhys` des Ausgabebausteins `OutputNumber_N3` verbunden. Dieser stellt das Ergebnis als physikalischen Wert dar.
 
 Die Verbindungen sind:
+
 - `InputNumber_I3.rPhys` → `AR_ADD_2.IN1`
 - `InputNumber_I4.rPhys` → `AR_ADD_2.IN2`
 - `AR_ADD_2.OUT` → `OutputNumber_N3.rPhys`

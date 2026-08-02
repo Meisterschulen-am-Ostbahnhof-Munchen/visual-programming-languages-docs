@@ -1,6 +1,5 @@
 # Uebung_004a2_3b: Toggle Flip-Flop mit IE mit BUTTON_SINGLE_CLICK mit E_MERGE_3 (3 Taster)
 
-
 ![Uebung_004a2_3b_network](./Uebung_004a2_3b_network.svg)
 
 * * * * * * * * * *
@@ -75,6 +74,7 @@ Die Übung besteht ausschließlich aus primitiven (vordefinierten) Funktionsbaus
 ## Zusammenfassung
 
 Diese Übung veranschaulicht die **Kombination von Ereignis- und Datenflüssen** in IEC 61499:  
+
 - Drei gleichberechtigte Taster werden über einen **E_MERGE_3** zu einem gemeinsamen Ereignis zusammengeführt.  
 - Ein **E_T_FF** (Toggle‑Flipflop) realisiert die eigentliche Umschaltlogik.  
 - Der Ausgangsbaustein setzt den physikalischen Ausgang entsprechend dem Flipflop‑Zustand.

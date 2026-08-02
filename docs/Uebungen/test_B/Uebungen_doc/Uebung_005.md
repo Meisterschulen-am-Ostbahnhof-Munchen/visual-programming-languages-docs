@@ -1,21 +1,16 @@
 # Uebung_005: Toggle Flip-Flop mit IX
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_005`. Hier wird demonstriert, wie ein zustandsbasierter Hardware-Eingang (`IX`) genutzt werden kann, um ein ereignisbasiertes Toggle-Flip-Flop zu steuern.
 
 ## 🎧 Podcast
 
-
 ![Uebung_005_network](./Uebung_005_network.svg)
 
 * [Automatisierung entschlüsselt: Leiten, Steuern, Regeln – Die unsichtbare Sprache der Technik (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
 
 ----
-
 
 ## Ziel der Übung
 
@@ -52,6 +47,7 @@ Die Schaltung nutzt die Datenverbindung vom Eingang zum Gate der Weiche:
 [cite_start][cite: 1]
 
 Der funktionale Ablauf:
+
 1.  **Drücken**: `I1` wechselt von FALSE auf TRUE. Ein `IND`-Event wird gesendet. Da am Eingang `G` der Weiche nun TRUE anliegt, wird das Event an `EO1` ➡️ `CLK` weitergeleitet. Das Licht toggelt.
 2.  **Loslassen**: `I1` wechselt zurück auf FALSE. Wieder wird ein `IND`-Event gesendet. Da am Eingang `G` nun aber FALSE anliegt, wird das Event an `EO0` (hier nicht verbunden) geleitet. Das Flip-Flop reagiert nicht.
 

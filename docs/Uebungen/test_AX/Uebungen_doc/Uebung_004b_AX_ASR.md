@@ -2,10 +2,6 @@ Hier ist die Dokumentation für die Übung `Uebung_004b_AX_ASR` basierend auf de
 
 # Uebung_004b_AX_ASR: Toggle Flip-Flop mit IE / E_SWITCH + E_SR
 
-
-
-
-
 ![Uebung_004b_AX_ASR_network](./Uebung_004b_AX_ASR_network.svg)
 
 * * * * * * * * * *

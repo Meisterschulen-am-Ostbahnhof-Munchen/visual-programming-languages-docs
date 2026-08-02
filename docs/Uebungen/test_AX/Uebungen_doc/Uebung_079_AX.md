@@ -1,8 +1,5 @@
 # Uebung_079_AX: Alle TECU FBs (Adapter Version)
 
-
-
-
 ![Uebung_079_AX_network](./Uebung_079_AX_network.svg)
 
 * * * * * * * * * *

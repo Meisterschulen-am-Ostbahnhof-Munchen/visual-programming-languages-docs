@@ -1,8 +1,5 @@
 # Uebung_218_AUDI: Standard IEC 61131-3 AUDI_FB_CTD (Adapter Version, Rückwärtszähler, UDINT) mit Terminal-Ausgabe
 
-
-
-
 ![Uebung_218_AUDI_network](./Uebung_218_AUDI_network.svg)
 
 * * * * * * * * * *

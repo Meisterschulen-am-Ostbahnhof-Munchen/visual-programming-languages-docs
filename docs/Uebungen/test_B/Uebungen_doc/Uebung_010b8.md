@@ -1,14 +1,10 @@
 # Uebung_010b8: Toggle Flip-Flop mit IE Button_A1 BT_PRESSED_LATCHED
 
-
-
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010b8`.
 
 ----
-
 
 ## Funktionsweise
 

@@ -14,7 +14,6 @@
 
 ---- 
 
-
 ![](https://user-images.githubusercontent.com/69573151/210780439-a6842673-058d-48f2-8cb7-135c6a960116.png)
 
 * * * * * * * * * *
@@ -58,6 +57,7 @@ Der IL-Block arbeitet als Eingabeservice-Interface für Long Word-Daten. Bei Emp
 
 ## Zustandsübersicht
 Der Block durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor der INIT-Operation
 2. **Initialisiert**: Nach erfolgreicher INIT-Operation, bereit für Datenabfragen
 3. **Aktiv**: Während der Datenabfrage oder bei empfangenen Indikationen

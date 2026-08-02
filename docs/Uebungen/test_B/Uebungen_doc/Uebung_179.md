@@ -2,8 +2,6 @@ Hier ist die Dokumentation für die Übung 179, basierend auf den bereitgestellt
 
 # Uebung_179: Beispiel für E_REND_2 (Rendezvous von zwei Events)
 
-
-
 ![Uebung_179_network](./Uebung_179_network.svg)
 
 * * * * * * * * * *

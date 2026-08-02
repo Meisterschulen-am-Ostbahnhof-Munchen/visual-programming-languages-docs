@@ -1,8 +1,5 @@
 # Uebung_004a6a_AX: Toggle Flip-Flop mit IE und E_REND (Rendezvous)
 
-
-
-
 ![Uebung_004a6a_AX_network](./Uebung_004a6a_AX_network.svg)
 
 * * * * * * * * * *
@@ -92,6 +89,7 @@ Die SubApp verwendet folgende (Sub-)Bausteine:
 
 ## Zusammenfassung
 Die Übung zeigt:  
+
 - Die Verwendung von **Ereignis-Eingängen** (`logiBUS_IE`) zur Erfassung von Tasterdrücken.  
 - Die **zeitgesteuerte Rendezvous-Synchronisation** (`RT_E_REND`) mit konfigurierbarer Deadline.  
 - Den Betrieb eines **Toggle-Flip-Flops** (`AX_T_FF`), der durch das Rendezvous-Ereignis getaktet wird.  

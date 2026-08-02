@@ -1,8 +1,6 @@
 # Uebung_010c4_sub: SoftKey_F1/_F2 auf DigitalOutput_Q1/_Q2 mit GreenWhiteBackground mit Typed Subapp
 
-
 ## 🎧 Podcast
-
 
 ![Uebung_010c4_sub_network](./Uebung_010c4_sub_network.svg)
 
@@ -11,8 +9,6 @@
 ## Übersicht
 
 [cite_start]Dieser Typ ist funktional identisch mit `Uebung_010c3_sub` und dient der sauberen Strukturierung von mehrkanaligen Feedback-Anwendungen[cite: 1]. Durch die Kapselung in einen Typ können beliebig viele Softkey-Ausgangs-Kombinationen mit integriertem Farbumschlag schnell und fehlerfrei erstellt werden.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

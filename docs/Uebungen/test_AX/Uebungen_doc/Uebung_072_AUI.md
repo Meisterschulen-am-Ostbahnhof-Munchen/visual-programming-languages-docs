@@ -1,8 +1,5 @@
 # Uebung_072_AUI: GBSD und WBSD auf UT ausgeben (Adapter Version)
 
-
-
-
 ![Uebung_072_AUI_network](./Uebung_072_AUI_network.svg)
 
 * * * * * * * * * *

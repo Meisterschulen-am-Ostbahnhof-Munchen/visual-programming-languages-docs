@@ -1,7 +1,5 @@
 # F_USINT_TO_UDINT
 
-
-
 <img width="1464" height="214" alt="F_USINT_TO_UDINT" src="https://github.com/user-attachments/assets/270403b0-17c3-4974-9d94-16d82c7ec576" />
 
 * * * * * * * * * *
@@ -44,9 +42,6 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung erfolgt u
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_USINT_TO_INT**: Konvertiert `USINT` zu `INT`, jedoch mit potenziellem Vorzeichenwechsel.
 - **F_USINT_TO_UINT**: Konvertiert `USINT` zu `UINT` (16-Bit), was einen kleineren Wertebereich als `UDINT` bietet.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

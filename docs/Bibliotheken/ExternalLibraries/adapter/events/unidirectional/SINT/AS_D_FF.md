@@ -81,3 +81,8 @@ Der **AS_D_FF** kombiniert die klare Logik eines D-Flipflops mit der Flexibilit�
 ## Fazit
 
 Der Funktionsbaustein **AS_D_FF** stellt eine praktische Kapselung eines D-Flipflops dar, die ausschließlich über Adapter kommuniziert. Sein internes Verhalten entspricht einem zuverlässigen Datenlatch, das auf jedes eingehende Ereignis reagiert. Die Verwendung von Adaptern erhöht die Modularität und Wiederverwendbarkeit, während die Implementation auf dem bewährten `E_D_FF_ANY` basiert. Der Baustein eignet sich ideal für alle Anwendungen, die eine einfache, ereignisgesteuerte Datenspeicherung mit standardisierter Schnittstelle erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

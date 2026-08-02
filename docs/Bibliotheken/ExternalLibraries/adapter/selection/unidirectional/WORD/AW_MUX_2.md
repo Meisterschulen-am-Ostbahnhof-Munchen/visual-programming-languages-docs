@@ -80,3 +80,8 @@ Der `AW_MUX_2` füllt die Lücke zwischen reinen Daten-Multiplexern und vollstä
 ## Fazit
 
 Der **AW_MUX_2** ist ein einfacher, aber leistungsfähiger Funktionsblock zur Adapterumschaltung in der 4diac-IDE. Durch die Verwendung des generischen Adaptertyps `AW` und die indexbasierte Auswahl eignet er sich für flexible Umschaltungen in modularen Automatisierungslösungen. Die fehlende Zustandsmaschine macht ihn ressourcenschonend und einfach einsetzbar, während die klare Ereignissteuerung eine zuverlässige Synchronisation ermöglicht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

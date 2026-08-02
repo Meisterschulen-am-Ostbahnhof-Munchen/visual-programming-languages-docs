@@ -48,3 +48,9 @@ Die TECU sendet die Geschwindigkeitsdaten in festen Zeitintervallen (zyklisch) a
 
 **Überwachung der Fahrgeschwindigkeit**:
 Bei der Ausbringung von Gülle oder Dünger ist die exakte Einhaltung der Geschwindigkeit entscheidend für die Dosierung. Die Anzeige am Terminal dient dem Fahrer als Kontrolle, ob er im optimalen Bereich fährt.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Interaktiver JBC-Lötspitzen Guide & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/werkzeug/lötkolben/jbc-lötspitzen-übersicht/)
+* [🌐 Diode & Halbleitergrundlagen auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)

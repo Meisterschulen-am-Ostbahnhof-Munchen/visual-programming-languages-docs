@@ -59,3 +59,8 @@ Im Vergleich zu einfacheren SUBSCRIBE-Blöcken bietet SUBSCRIBE_2 die Möglichke
 
 ## Fazit
 Der SUBSCRIBE_2-Block stellt eine erweiterte Lösung für Publish-Subscribe-Kommunikation in 4diac-Systemen dar, die durch die Unterstützung zweier Datenkanäle und generischer Datentypen besonders flexibel einsetzbar ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

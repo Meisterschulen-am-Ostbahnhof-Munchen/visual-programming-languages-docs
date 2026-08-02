@@ -58,3 +58,8 @@ Anschließend überwacht der Block kontinuierlich die Systemressource. Sobald si
 
 ## Fazit
 Der `SYS_ONTIME`-Funktionsblock ist ein essentielles Werkzeug für alle Anwendungen, die auf der Erfassung und Auswertung von Betriebszeiten basieren. Als standardisierte Service-Schnittstelle abstrahiert er die plattformspezifische Implementierung und bietet der Anwendungslogik einen einfachen, zuverlässigen Zugriff auf diese wichtige Systemkenngröße. Seine Verwendung ist besonders in den Bereichen Instandhaltung, Energieeffizienz und Betriebsdatenerfassung zu empfehlen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

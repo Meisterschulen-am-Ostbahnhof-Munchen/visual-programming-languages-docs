@@ -63,3 +63,8 @@ In dieser Übung wird das Verhalten der Funktionsbausteine `IA_GBSD` (Ground Bas
 ## Zusammenfassung
 
 Die Übung demonstriert den durchgängigen Datenfluss von der ISOBUS‑Applizierung (IA_GBSD / IA_WBSD) über eine lineare Skalierung (Faktor 0,001) bis zur visuellen Darstellung auf einem Universal Terminal. Die Verwendung von Adaptern vereinfacht die Verbindung unterschiedlicher Bausteinschnittstellen und ermöglicht eine modulare Struktur. Als Ergebnis werden die aktuellen geschwindigkeitsbasierten und radbasierten Maschinengeschwindigkeiten physikalisch korrekt auf dem UT ausgegeben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -59,3 +59,8 @@ Es gibt weitere Splitter-Bausteine wie `AIS_SPLIT_2`, `AIS_SPLIT_3` oder `AIS_SP
 ## Fazit
 
 Der `AIS_SPLIT_5` ist ein einfacher, aber wirkungsvoller generischer Funktionsbaustein zur Vervielfachung eines unidirektionalen AIS-Adapter-Signals. Er reduziert den Verkabelungsaufwand in der 4diac-IDE und ermöglicht eine saubere, modulare Strukturierung von Steuerungsanwendungen. Für Anwendungen, die eine Aufteilung eines Signals auf bis zu fünf Empfänger erfordern, stellt er eine optimale Lösung dar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

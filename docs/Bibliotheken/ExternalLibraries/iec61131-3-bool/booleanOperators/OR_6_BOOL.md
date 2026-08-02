@@ -56,3 +56,8 @@ Typische Anwendungen sind Überwachungs- und Sicherheitslogiken, bei denen eine 
 
 ## Fazit
 Der `OR_6_BOOL` Funktionsblock ist ein einfacher, robuster und standardkonformer Baustein zur logischen Signalverknüpfung. Seine Stärke liegt in der klaren, ereignisgesteuerten Schnittstelle und der festen Anzahl von sechs Eingängen, die ihn ideal für Anwendungen macht, die genau diese Anzahl an zu kombinierenden Bedingungen erfordern. Als generischer Baustein unterstützt er zudem die Wiederverwendung und Anpassung innerhalb der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

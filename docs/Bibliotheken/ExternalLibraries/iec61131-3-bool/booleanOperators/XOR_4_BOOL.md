@@ -50,3 +50,8 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei, kombinatorisch
 
 ## Fazit
 Der `XOR_4_BOOL` ist ein nützlicher und effizienter Standardbaustein für die Implementierung von Exklusiv-ODER-Logik mit bis zu vier Eingängen in 4diac-basierten Steuerungsapplikationen. Seine ereignisgesteuerte, zustandslose Architektur und die direkte Unterstützung mehrerer Eingänge machen ihn zu einer praktischen Wahl für Paritätschecks und spezielle kombinatorische Steuerungsaufgaben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

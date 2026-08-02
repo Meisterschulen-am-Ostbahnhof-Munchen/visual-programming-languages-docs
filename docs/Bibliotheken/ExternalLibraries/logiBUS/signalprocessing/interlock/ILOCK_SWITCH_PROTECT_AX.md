@@ -103,3 +103,8 @@ Die in der ECC definierten Transitionen sind:
 ## Fazit
 
 `ILOCK_SWITCH_PROTECT_AX` ist ein robuster und flexibler Baustein zur verriegelten Umschaltung mit einstellbarer Schutz-Totzeit. Die Adapter-basierte Schnittstelle ermöglicht eine saubere Integration in modulare 4diac-Architekturen. Die klare Zustandsmaschine gewährleistet deterministisches Verhalten und bietet Schutz vor Fehlschaltungen in zeitkritischen Anwendungen. Ideal für Anwendungen in der Agrartechnik, Automatisierung und Antriebstechnik, bei denen ein sicherer Richtungswechsel erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

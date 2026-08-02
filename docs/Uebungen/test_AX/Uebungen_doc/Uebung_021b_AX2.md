@@ -76,3 +76,8 @@ In dieser Übung wird ein AX‑SR‑Flipflop verwendet, um eine einfache Spiegel
 - Grundlegende Ereignisverdrahtung und Parameterkonfiguration in der 4diac‑IDE.
 
 Die Übung eignet sich für Einsteiger in die ereignisgesteuerte Programmierung mit 4diac und legt das Fundament für komplexere Ablaufsteuerungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

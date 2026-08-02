@@ -89,3 +89,8 @@ Im 4diac-Framework existieren weitere Filterbausteine für andere Datentypen, z.
 ## Fazit
 
 Der **FIELDBUS_ULINT_TO_SIGNAL** ist ein einfacher, aber zuverlässiger Funktionsblock zur Signalvalidierung im Feldbusumfeld. Durch die klare Trennung in gültige und ungültige Werte sowie die Bereitstellung eines BOOL‑Ausgangs für die Validität eignet er sich hervorragend für den Einsatz in modularen Automatisierungssystemen, bei denen Datenqualität und Fehlererkennung essenziell sind. Die Verwendung externer Konstanten erlaubt eine flexible Anpassung an unterschiedliche Signalbereiche ohne Änderung des Bausteins selbst.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

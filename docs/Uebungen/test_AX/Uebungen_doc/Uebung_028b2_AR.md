@@ -77,3 +77,8 @@ Diese Übung realisiert eine analoge Eingangskalibrierung mit Offset- und Skalie
 ## Zusammenfassung
 
 Die Übung zeigt eine vollständige analoge Messkette: vom Einlesen des rohen Analogwerts über die Kalibrierung mit persistenter Speicherung bis hin zur regelbasierten Ausgabe über einen Hysterese-Komparator. Die Verwendung von Adaptern zur Typkonvertierung und von Sub-Bausteinen zur Wiederverwendung von NVS-Zugriffen macht den Aufbau modular und erweiterbar. Die Kalibrierung kann jederzeit über digitale Taster angepasst werden, ohne dass der Programmcode geändert werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

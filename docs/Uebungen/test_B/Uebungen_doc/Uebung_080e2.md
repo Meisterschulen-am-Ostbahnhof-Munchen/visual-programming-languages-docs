@@ -54,3 +54,10 @@ Die Übung verwendet die folgenden vordefinierten Funktionsbausteine im Netzwerk
 ## Zusammenfassung
 
 Die Übung 080e2 veranschaulicht, wie ein Ereignisgesteuerter Zähler mit einer **temporalen Filterung** (Eventbremse) gekoppelt wird. Der Zähler wird durch einen Taster gestartet und durch einen zweiten Taster gestoppt bzw. zurückgesetzt. Der gefilterte Zählwert wird auf einem numerischen Display ausgegeben, während der binäre Überlaufstatus einen Digitalausgang ansteuert. Die Kombination von `E_SPLIT_4`, `E_MERGE_4` und `E_D_FF_ANY_TMIN` sorgt dafür, dass nur stabile Messwerte zur Anzeige gelangen. Dieses Muster eignet sich für robuste Zähleranwendungen in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

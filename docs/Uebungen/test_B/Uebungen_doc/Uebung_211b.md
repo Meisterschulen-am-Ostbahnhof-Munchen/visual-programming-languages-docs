@@ -96,3 +96,8 @@ Im SubApp-Netzwerk werden fünf Instanzen von vordefinierten Bausteintypen verwe
 ## Zusammenfassung
 
 Die Übung 211b demonstriert den praktischen Einsatz eines Vorwärtszählers (CTU) nach IEC 61131-3 in der 4diac-Umgebung. Zwei Taster steuern den Zähler (Zählen und Rücksetzen), der sowohl einen digitalen Ausgang als auch eine numerische Terminalanzeige ansteuert. Der Aufbau zeigt typische Verbindungsmuster für ereignisgesteuerte Automatisierungssoftware und erlaubt ein vertieftes Verständnis der Bausteinparameter, Ereignisverkettungen und Datenkonvertierungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

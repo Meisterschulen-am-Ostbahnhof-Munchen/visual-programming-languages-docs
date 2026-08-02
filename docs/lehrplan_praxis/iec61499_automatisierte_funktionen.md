@@ -32,3 +32,10 @@
 2. **Regler-Baustein (PID / Hysterese):** Grafisch im 4diac IDE verbunden.
 3. **Aktor-Baustein (PWM / CAN-Output):** Steuert das Proportionalventil an.
 4. **Visualisierung (ISOBUS VT / ISO-Designer):** Ereignisse und Werte werden direkt an die VT-Objekte übergeben.
+
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

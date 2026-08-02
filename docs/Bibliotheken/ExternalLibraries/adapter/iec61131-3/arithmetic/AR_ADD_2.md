@@ -62,3 +62,8 @@ Im Vergleich zu klassischen, Daten-eingabebasierten Additionsbausteinen (z. B.
 ## Fazit
 
 `AR_ADD_2` ist ein kompakter, generischer Funktionsbaustein für die Addition von zwei Werten mittels Adapter-Schnittstellen. Er eignet sich besonders für systemübergreifende Anwendungen, bei denen Typflexibilität und lose Kopplung durch Adapter gefragt sind. Die einfache, zustandslose Architektur macht ihn robust und leicht in bestehende Automatisierungsprojekte integrierbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

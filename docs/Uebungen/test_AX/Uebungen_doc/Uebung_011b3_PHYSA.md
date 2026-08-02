@@ -35,3 +35,8 @@ Die Übung setzt keine speziellen Vorkenntnisse voraus. Sie kann direkt in der 4
 
 ## Zusammenfassung
 Die SubApp **Uebung_011b3_PHYSA** realisiert eine einfache Addition zweier physikalischer Eingangswerte. Sie zeigt den typischen Aufbau einer Verarbeitungskette mit physikalischen Größen: Eingabe → Rechenoperation → Ausgabe. Dabei kommen ausschließlich Adapterverbindungen zum Einsatz, was eine flexible Kopplung der Bausteine ermöglicht. Dies ist die Grundlage für komplexere SPS-Programme mit Einheiten und physikalischen Messwerten in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -68,3 +68,8 @@ Der **AS_SPLIT_7** gehört zu einer Familie von Splitter‑Bausteinen, die sich 
 ## Fazit
 
 Der **AS_SPLIT_7** ist ein einfacher, aber nützlicher Funktionsblock zur passiven Verteilung eines unidirektionalen AS‑Signals auf sieben Ausgänge. Dank seiner generischen Implementierung und der Adapter‑Schnittstelle fügt er sich nahtlos in moderne, komponentenbasierte Automatisierungslösungen ein. Für Anwendungen, die eine reine Signalvervielfachung ohne Verarbeitung erfordern, stellt er eine zuverlässige und leicht verständliche Lösung dar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

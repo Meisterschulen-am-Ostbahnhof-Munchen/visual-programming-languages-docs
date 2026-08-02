@@ -33,3 +33,8 @@ Aktuell besteht das Netzwerk dieser Übung lediglich aus der Instanz `ARTimeOut_
 
 ## Zusammenfassung
 Die `Uebung_170` stellt eine minimale Konfiguration bereit, die ausschließlich den Funktionsbaustein `E_RTimeOut` enthält. Sie dient als grundlegende Vorlage oder Testumgebung, um die Logik von rücksetzbaren Timeouts in der 4diac-IDE zu erlernen oder zu überprüfen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

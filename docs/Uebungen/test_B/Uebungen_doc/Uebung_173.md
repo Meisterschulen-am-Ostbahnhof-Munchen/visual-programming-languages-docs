@@ -39,3 +39,8 @@ Aktuell befindet sich die Übung in einem initialen Zustand ("TODO").
 
 ## Zusammenfassung
 Die `Uebung_173` ist eine grundlegende Vorlage zur Erlernung der Ereignissteuerung mittels `E_MUX_8`. Sie stellt den notwendigen Baustein bereit, überlässt aber die Verschaltung und Integration in eine größere Logik dem Anwender als Teil der Lernaufgabe.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

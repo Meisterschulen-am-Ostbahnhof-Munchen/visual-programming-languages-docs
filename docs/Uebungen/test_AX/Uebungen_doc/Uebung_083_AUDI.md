@@ -68,3 +68,8 @@ Die Konstante `UDINT#5` am FB `AUDI_UDINT_TO_UDI` legt fest, dass bei Betätigun
 ## Zusammenfassung
 
 Die Übung veranschaulicht den Einsatz eines Adapter-basierten Aufwärts-/Abwärtszählers (`AUDI_CTUD_UDINT`) in 4diac. Vier Tastereingänge dienen als Steuersignale (Hochzählen, Runterzählen, Rücksetzen und Preset-Übernahme). Die Ausgangssignale QU (Grenzwert erreicht) und QD (Nullpunkt) werden auf digitale Ausgänge geführt, der aktuelle Zählerwert wird numerisch angezeigt. Durch die Adaptertechnologie werden Ereignis- und Datenflüsse entkoppelt, was eine flexible und wiederverwendbare Verschaltung ermöglicht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

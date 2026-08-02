@@ -58,3 +58,8 @@ Da der FB keine definierten Zustände besitzt, ist das Verhalten deterministisch
 
 ## Fazit
 Der **AR_DEMUX_5** ist ein einfacher, aber effektiver Funktionsblock zur selektiven Weiterleitung eines AR‑Datenstroms an fünf verschiedene Ausgänge. Dank seiner generischen Auslegung und der sauberen Ereignissteuerung eignet er sich ideal für modulare Automatisierungssysteme, insbesondere im Umfeld landwirtschaftlicher Maschinensteuerungen. Die klare Schnittstelle und die Vermeidung interner Zustände erleichtern die Integration und Wartung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

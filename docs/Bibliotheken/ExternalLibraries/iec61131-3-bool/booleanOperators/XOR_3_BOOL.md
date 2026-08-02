@@ -52,3 +52,8 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 
 ## Fazit
 Der `XOR_3_BOOL` Funktionsblock ist ein spezialisierter, normkonformer Baustein zur zuverlässigen Berechnung der dreifachen Exklusiv-ODER-Verknüpfung. Seine klare, ereignisgesteuerte Schnittstelle und die deterministische Funktionsweise machen ihn ideal für den Einsatz in Steuerungsanwendungen, die diese spezielle boolesche Logik erfordern. Als Instanz eines generischen Bausteins profitiert er zudem von den Wartungs- und Konsistenzvorteilen eines generischen Designs.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

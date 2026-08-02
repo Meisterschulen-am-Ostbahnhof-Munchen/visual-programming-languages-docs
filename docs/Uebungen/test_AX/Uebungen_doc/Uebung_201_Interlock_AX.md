@@ -68,3 +68,8 @@ Der Ablauf: Um Q2 zu aktivieren, muss zuerst Q1 aktiv sein (weil `ILOCK_IN` von 
 
 ## Zusammenfassung
 Die Übung `Uebung_201_Interlock_AX` demonstriert die praktische Anwendung verketteter Interlock-Bausteine (`ILOCK_IO_AX`) in einer 4diac-Umgebung. Vier unabhängige Eingangs-/Ausgangspaare werden seriell so verschaltet, dass jeder nachfolgende Ausgang nur freigegeben wird, wenn der vorherige Ausgang bereits aktiv ist. Dieses Prinzip wird häufig in der Automatisierungstechnik für Anlaufsequenzen, Schutzverriegelungen oder Maschinensicherheit eingesetzt. Der Lernende vertieft das Verständnis für die Verschaltung von Adaptern und die Erstellung von Abhängigkeitsketten in IEC 61499.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

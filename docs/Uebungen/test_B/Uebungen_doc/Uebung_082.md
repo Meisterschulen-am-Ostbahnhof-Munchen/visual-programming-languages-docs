@@ -37,3 +37,8 @@ Der Baustein überwacht zwei Schwellwerte gleichzeitig:
 *   Der Ausgang `QD` reagiert auf die Untergrenze (Null).
 
 Dies ermöglicht eine lückenlose Überwachung von Beständen oder Positionen innerhalb eines definierten Arbeitsbereichs.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

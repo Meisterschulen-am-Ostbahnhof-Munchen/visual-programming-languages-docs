@@ -87,3 +87,8 @@ Der Ablauf wird über Ereignisverbindungen gesteuert:
 ## Zusammenfassung
 
 Die Übung **Uebung_219** demonstriert einen IEC 61131-3 konformen Rückwärtszähler mit Terminalausgabe. Sie verbindet digitale Eingabe, Abwärtszählfunktion, Ausgabe auf einen digitalen Ausgang und numerische Anzeige auf einem Display. Dabei werden Typkonvertierung, Ereignisverkettung und Hardware-Schnittstellen trainiert. Die bereitgestellte Implementierung ist eine SubApp, die als wiederverwendbarer Baustein in der 4diac-IDE genutzt werden kann.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

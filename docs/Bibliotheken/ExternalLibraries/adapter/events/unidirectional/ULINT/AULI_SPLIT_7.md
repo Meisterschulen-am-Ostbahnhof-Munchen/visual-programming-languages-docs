@@ -66,3 +66,8 @@ Die 4diac-Bibliothek enthält Splitter-Bausteine für verschiedene Ausgangszahle
 ## Fazit
 
 Der `AULI_SPLIT_7` ist ein einfacher, aber essenzieller Baustein zur Signalverteilung innerhalb der AULI-Adapterlandschaft. Er erlaubt die saubere und typsichere Aufteilung eines unidirektionalen Signals auf bis zu sieben Pfade, ohne zusätzliche Logik oder Verzögerungen. Dank seiner generischen Auslegung lässt er sich flexibel in IEC 61499-basierten Automatisierungsprojekten einsetzen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

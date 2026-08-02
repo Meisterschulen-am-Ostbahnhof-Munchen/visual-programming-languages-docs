@@ -64,3 +64,8 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Er befindet sich stets
 ## Fazit
 
 Der **AULI_SPLIT_9** ist ein einfacher, aber effektiver Verteilerbaustein für den unidirektionalen AULI‑Adapter. Dank seiner generischen Natur und der vollständigen Signaldurchleitung ohne Latenz oder Verarbeitungsverzögerung eignet er sich ideal für Szenarien, in denen ein einzelner Datensatz an viele Empfänger gestreut werden muss. Die fehlende Ereignissteuerung und der reine Adapter‑Ansatz machen ihn besonders leichtgewichtig und performant.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

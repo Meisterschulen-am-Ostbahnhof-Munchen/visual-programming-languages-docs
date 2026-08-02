@@ -53,3 +53,8 @@ Im Vergleich zu anderen Konvertierungsbausteinen zeichnet sich `ST08B_TO_ARR08B`
 
 ## Fazit
 Der `ST08B_TO_ARR08B` ist ein einfacher, aber effektiver Funktionsblock zur Konvertierung einer 8-Byte-Struktur in ein 8-Byte-Array. Er bietet eine zuverlässige Lösung für Szenarien, in denen eine direkte und transparente Anpassung von strukturierten Daten an byteorientierte Schnittstellen oder Formate erforderlich ist. Seine klare Funktionalität und Implementierung machen ihn zu einem wertvollen Werkzeug in der 4diac-Entwicklungsumgebung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -80,3 +80,8 @@ Im Gegensatz zu einem zyklisch ablaufenden Sequenzer (z.B. `CYCLE_5`), der nach 
 
 ## Fazit
 Der `sequence_E_05` ist ein robuster und einfach zu konfigurierender Funktionsblock für ereignisgesteuerte Schrittketten mit fester Länge. Seine klare Trennung von Zustandslogik und Ausgangsaktionen sowie der integrierte Reset-Mechanismus machen ihn zu einer zuverlässigen Komponente für sequentielle Steuerungsaufgaben in 4diac-basierten Automatisierungssystemen. Die fehlende Flexibilität in der Anzahl der Schritte oder der Übergangsbedingungen ist für definierte, lineare Prozesse ein Vorteil in Bezug auf Übersichtlichkeit und Vorhersagbarkeit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

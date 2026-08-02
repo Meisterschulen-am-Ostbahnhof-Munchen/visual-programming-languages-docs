@@ -61,3 +61,8 @@ Die gesamte Logik ist ereignisgesteuert: Sobald ein neuer Messwert an einem der 
 ## Zusammenfassung
 
 Die Übung demonstriert den Umgang mit ISOBUS-NumericValue-FBs und IEC 61131-Konvertierungs- sowie Arithmetikbausteinen in einer 4diac-Subapplikation. Ziel ist die einfache Multiplikation zweier Buswerte. Durch die getrennte Ereignisverkettung wird sichergestellt, dass jeder neue Eingangswert sofort verarbeitet wird. Die Übung eignet sich als Grundlage für komplexere Berechnungen mit mehreren Eingängen und Ausgängen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

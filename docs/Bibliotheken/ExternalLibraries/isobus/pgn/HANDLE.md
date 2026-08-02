@@ -53,3 +53,8 @@ Da es sich um eine statische Konstantendefinition handelt, gibt es keine Zustand
 
 ## Fazit
 Die `HANDLE`-Globalkonstante ist ein einfaches aber wesentliches Hilfselement für die Entwicklung von ISOBUS-konformen Applikationen in 4diac. Sie erhöht die Codequalität, indem sie zwei häufig benötigte, spezielle Handle-Werte mit aussagekräftigen Namen versieht. Ihre Verwendung fördert lesbaren, wartbaren und fehlerrobusten Code in Funktionsblöcken, die mit ISOBUS-PGN-Adressierung arbeiten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

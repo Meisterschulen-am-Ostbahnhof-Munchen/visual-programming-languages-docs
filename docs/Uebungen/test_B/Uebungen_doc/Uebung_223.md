@@ -73,3 +73,8 @@ Die Übung ist als eine SubApp realisiert, die keine eigenen Ein-/Ausgangsschnit
 ## Zusammenfassung
 
 Die Übung 223 zeigt die praktische Anwendung eines IEC 61131-3 Vor-/Rückwärtszählers (FB_CTUD_UDINT) in einer 4diac-IDE-Umgebung. Durch die Kombination von logiBUS-Eingängen und -Ausgängen sowie einer Terminalausgabe wird ein vollständiger Zähler mit Anzeige realisiert. Die Übung verdeutlicht die Verbindung von Ereignis- und Datenflüssen zwischen Funktionsbausteinen unterschiedlicher Bibliotheken.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

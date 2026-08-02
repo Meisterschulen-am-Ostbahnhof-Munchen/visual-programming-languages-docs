@@ -77,3 +77,8 @@ Der Baustein besitzt keine eigene explizite Zustandsmaschine. Das Verhalten wird
 
 ## Fazit
 Der **IA_WBSD** ist ein praktischer Adapter‑Wrapper für den ISOBUS‑Baustein `I_WBSD`. Er reduziert die Einbindungskomplexität radbasierter Geschwindigkeits‑ und Distanzdaten in IEC‑61499‑Projekte und stellt die Funktionalität über standardisierte unidirektionale Adapter bereit. Dank der Lizenz unter EPL 2.0 kann er frei in eigenen Projekten verwendet und angepasst werden. Die Version 1.1 stellt sicher, dass alle internen Verbindungen korrekt auf die Adapter‑Plugs geführt sind.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

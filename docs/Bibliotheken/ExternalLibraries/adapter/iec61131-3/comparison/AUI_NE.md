@@ -93,3 +93,8 @@ Alle genannten Bausteine teilen sich die gleiche Adapter-Schnittstelle und lasse
 ## Fazit
 
 Der `AUI_NE` ist ein einfacher, aber zuverlässiger Funktionsblock für den Ungleich-Vergleich zweier Werte innerhalb einer adapterbasierten 4diac-Umgebung. Seine Stärken liegen in der sauberen Kapselung durch Adapter, der ereignisgesteuerten Ausführung und der hohen Wiederverwendbarkeit dank des zugrundeliegenden IEC-61131-3-Bausteins. Er eignet sich besonders für modulare, erweiterbare Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

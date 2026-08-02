@@ -76,3 +76,8 @@ Die Übung benötigt die Projekt‑Bibliotheken mit den verwendeten FPGA‑Baust
 
 ## Zusammenfassung
 Die Übung `Uebung_074_AUI` realisiert eine sichere Anzeige der Zapfwellendrehzahl auf einem User Terminal. Durch die Kombination eines Adapter‑Selektors mit einem konstanten Nullwert im Fehlerfall wird eine einfache, aber robuste Fendt‑Schaltung umgesetzt. Sie vermittelt grundlegende Konzepte des ISOBUS‑Protokolls, der Adapter‑Kommunikation und der ereignisbasierten Datenvorverarbeitung in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -108,3 +108,8 @@ Wird der erste Eingang aktiviert (z. B. Taste an `Input_I1`), so schaltet der 
   - Debugging und Testen in der 4diac‑IDE (z. B. durch Simulation mit Testtreibern).
 
 Nach Abschluss dieser Übung sind Sie in der Lage, einfache Interlock‑Logiken in Steuerungsanwendungen zu integrieren und zu erweitern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

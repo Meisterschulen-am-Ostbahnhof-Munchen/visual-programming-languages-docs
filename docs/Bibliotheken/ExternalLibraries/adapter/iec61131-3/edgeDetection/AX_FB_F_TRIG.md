@@ -81,3 +81,8 @@ Der **AX_FB_F_TRIG** eignet sich für diverse Steuerungsaufgaben, bei denen das 
 ## Fazit
 
 Der **AX_FB_F_TRIG** ist ein essenzieller Baustein für Entwickler, die innerhalb der 4diac IDE und IEC 61499 auf adapterbasierte Designs setzen. Er bietet die verlässliche Funktionalität der klassischen Flankenerkennung, verpackt in einer modernen, verbindungssparenden Schnittstelle.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

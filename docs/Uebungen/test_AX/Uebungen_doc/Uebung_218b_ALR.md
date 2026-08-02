@@ -151,3 +151,8 @@ Die **Uebung_218b_ALR** vermittelt den Umgang mit einem **IEC‑61131‑3 Rückw
 
 **Schwierigkeitsgrad:** Mittel  
 **Vorkenntnisse:** Grundlagen der 4diac‑IDE, Umgang mit IEC‑Bausteinen und Adapterverbindungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

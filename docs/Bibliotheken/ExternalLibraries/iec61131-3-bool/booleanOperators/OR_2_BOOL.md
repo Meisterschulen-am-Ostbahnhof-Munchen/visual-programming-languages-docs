@@ -72,3 +72,8 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Sein Verhalten 
 
 ## Fazit
 Der `OR_2_BOOL` ist ein fundamentaler, zuverlässiger und einfach zu verwendender Funktionsblock zur Realisierung der grundlegenden logischen ODER-Funktion in 4diac-IDE Applikationen. Seine ereignisgesteuerte, zustandslose Architektur macht ihn vorhersehbar und gut in den Datenfluss von IEC 61499-Systemen integrierbar. Er ist ein unverzichtbarer Baustein für die Implementierung von Steuerungslogik und Bedingungsauswertungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

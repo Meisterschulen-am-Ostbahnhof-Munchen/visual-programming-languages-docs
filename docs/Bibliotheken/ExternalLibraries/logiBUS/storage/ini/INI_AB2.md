@@ -87,3 +87,8 @@ Der `INI_AB2`-Baustein selbst besitzt keine expliziten Zustände (keine ECC-Zust
 ## Fazit
 
 Der `INI_AB2`-Funktionsblock ist eine praktische Erweiterung für IEC 61499-basierte Automatisierungslösungen. Er vereinfacht den Zugriff auf INI-Konfigurationsdateien durch eine standardisierte Adapterschnittstelle und ermöglicht sowohl Lese- als auch Schreibvorgänge. Die einfache Handhabung und die klare Trennung von Logik und Schnittstelle machen ihn zu einem nützlichen Werkzeug für modulare und wiederverwendbare Steuerungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

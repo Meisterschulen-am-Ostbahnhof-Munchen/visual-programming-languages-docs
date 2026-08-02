@@ -50,3 +50,8 @@ Der SubApp `Uebung_012a_AX` besteht aus einem einzelnen Netzwerk, das den FB `Ue
 ## Zusammenfassung
 
 Die Übung `Uebung_012a_AX` demonstriert die effiziente Nutzung von Adaptern zur numerischen Werteingabe und deren persistente Ablage im NVS. Durch die Kapselung in einem SubApp und die Verwendung von Konstanten wird eine hohe Wiederverwendbarkeit und Konfigurierbarkeit erreicht. Der Baustein eignet sich besonders für Szenarien, in denen flexible Eingabequellen (z. B. Tastatur, Busteilsysteme) an eine einheitliche Speicherlogik angebunden werden sollen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

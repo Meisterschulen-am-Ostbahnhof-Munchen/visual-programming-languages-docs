@@ -54,3 +54,8 @@ Der **AUDI_ADD_2** besitzt keine Zustände (kein ECC). Die Addition wird unverz�
 
 ## Fazit
 Der **AUDI_ADD_2** ist ein spezialisierter, generischer Additions-FB für adapterbasierte 4diac-IDE-Umgebungen. Durch den Verzicht auf klassische Ports und die Nutzung des `AUDI`-Adaptertyps eignet er sich besonders für datenflussorientierte und stark modularisierte Steuerungsanwendungen. Seine generische Ausführung erhöht die Wiederverwendbarkeit über verschiedene Datentypen hinweg.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

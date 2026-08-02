@@ -87,3 +87,8 @@ Der Baustein besitzt eine implizite Zustandslogik, die sich auf das Verhalten de
 ## Fazit
 
 Der Funktionsblock `AUDI_AX_SEL` ist ein modularer, ereignisgesteuerter binärer Selektor, der speziell für den Einsatz in IEC-61499-basierten Automatisierungslösungen konzipiert wurde. Durch die Kombination von Ereignisschnittstellen und einem standardisierten IEC-61131-3-Selektor bietet er eine flexible, robuste und normenkonforme Lösung für Umschaltaufgaben in industriellen und agrotechnischen Umgebungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

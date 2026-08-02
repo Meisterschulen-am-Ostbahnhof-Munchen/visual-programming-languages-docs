@@ -83,3 +83,8 @@ Die Übung `Uebung_012j` vermittelt den Umgang mit:
 - Rückgabe des gespeicherten Werts an ein ISOBUS-Objekt (`Q_StringValue`)
 
 Durch die Verwendung von Konstanten (`SECTION_S1_STORE`, `KEY_S1_STORE`, `InputString_S1`) wird eine klare Trennung zwischen Konfiguration und Logik erreicht. Der Ablauf zeigt eine typische Initialisierungs- und Update-Strategie für dezentrale Steuerungssysteme mit Speicherbedarf.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

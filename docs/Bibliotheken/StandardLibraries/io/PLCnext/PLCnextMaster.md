@@ -57,3 +57,8 @@ Im Vergleich zu generischen Bus-Master-Bausteinen bietet der PLCnextMaster spezi
 
 ## Fazit
 Der PLCnextMaster stellt einen spezialisierten Funktionsbaustein für die Integration von PLCnext-Systemen in 4diac-basierte Automatisierungslösungen dar. Durch seine konfigurierbaren Parameter und Adapter-Schnittstelle ermöglicht er eine flexible und zuverlässige Kommunikation in industriellen Steuerungsumgebungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

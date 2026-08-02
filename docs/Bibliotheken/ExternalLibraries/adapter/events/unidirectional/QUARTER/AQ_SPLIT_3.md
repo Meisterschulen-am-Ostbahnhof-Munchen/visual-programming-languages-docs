@@ -71,3 +71,8 @@ Der Baustein ist zustandslos. Er führt keine zeitabhängigen oder sequenziellen
 ## Fazit
 
 `AQ_SPLIT_3` ist ein einfacher, funktionaler Fan-Out-Baustein für unidirektionale AQ-Adapter. Dank seiner generischen Auslegung und der klaren 1-zu-3-Verteilung eignet er sich ideal für alle Anwendungen, die ein AQ-Signal mehrfach bereitstellen müssen. Die Abwesenheit von Ereignis- und Daten-E/A macht ihn leichtgewichtig und in beliebigen Ablaufkontexten einsetzbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

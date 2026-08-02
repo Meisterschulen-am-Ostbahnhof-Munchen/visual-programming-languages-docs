@@ -51,3 +51,8 @@ Die Skalierung mit `0.001` wandelt die typischerweise ganzzahligen CAN-Bus-Werte
 ## Zusammenfassung
 
 Die Übung **Uebung_073c_AUI** zeigt, wie zwei Geschwindigkeitssignale (GBSD und VDS) über ISOBUS-Adapter (IA) eingelesen, mit einem Faktor von 0.001 skaliert und über die physikalischen Adressen eines Object Pools auf einem Universal Terminal ausgegeben werden. Der Einsatz von Adaptern (AUI) ermöglicht eine flexible Signalverarbeitung ohne feste Punkt-zu-Punkt-Verdrahtung der Ereignisse. Die Übung ist ein typisches Beispiel für die Visualisierung von ISOBUS-Messwerten in landwirtschaftlichen Steuerungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

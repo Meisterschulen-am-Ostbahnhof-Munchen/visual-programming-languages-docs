@@ -91,3 +91,9 @@ Das Netzwerk realisiert eine verriegelte Steuerung mit folgendem Ablauf:
 
 ## Zusammenfassung
 Die Übung `Uebung_160b_AX` demonstriert die fortgeschrittene Nutzung von Adapter-Bausteinen zur Kapselung von Logik und Datenfluss. Durch den Einsatz von Splittern (`AX_SPLIT`) und logischen Operatoren (`AX_OR`) auf Adapter-Ebene wird der Schaltplan übersichtlich gehalten, während gleichzeitig komplexe Abhängigkeiten (gemeinsame Statusanzeige, Umschaltlogik) realisiert werden. Die Verzögerung (`E_DELAY`) sorgt für eine kurze Totzeit beim Umschalten der Drehrichtung über I2, was in realen Motoranwendungen wichtig für den Maschinenschutz ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

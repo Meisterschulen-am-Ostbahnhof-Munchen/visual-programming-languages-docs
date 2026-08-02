@@ -66,3 +66,8 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherlos). Das Ausgangssi
 
 ## Fazit
 Der `OR_10_BOOL` ist ein robuster und einfach zu verwendender Grundbaustein für die logische Signalverknüpfung in IEC 61131-3-basierten Steuerungsapplikationen. Seine Stärke liegt in der klaren Schnittstelle mit zehn Eingängen und der zuverlässigen, ereignisgesteuerten Berechnung der inklusiven ODER-Funktion. Für Anwendungen, die das Zusammenfassen mehrerer boolescher Quellen zu einem gemeinsamen Signal erfordern, stellt er eine optimale Lösung dar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

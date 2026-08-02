@@ -62,3 +62,8 @@ Im Vergleich zu anderen Rekonfigurations-Bausteinen spezialisiert sich ST_DEL_CO
 
 ## Fazit
 ST_DEL_CONN ist ein essentieller Baustein für Systeme, die dynamische Rekonfiguration erfordern. Seine klare Schnittstellendefinition und zuverlässige Statusrückmeldung machen ihn zu einem zuverlässigen Werkzeug für die Verwaltung von Verbindungen in IEC 61499-basierten Steuerungssystemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

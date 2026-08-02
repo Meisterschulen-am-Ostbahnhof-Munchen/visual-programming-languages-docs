@@ -42,3 +42,8 @@ Die Eingänge werden logisch ODER-verknüpft und ohne Verzögerung weitergeleite
 
 ## Fazit
 Der `E_MERGE_3` ist ein einfacher, aber nützlicher Baustein zur Verknüpfung von bis zu drei Ereignisquellen. Seine klare Funktionsweise und die effiziente Implementierung als generischer Baustein machen ihn zu einer zuverlässigen Komponente für grundlegende Steuerungslogik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

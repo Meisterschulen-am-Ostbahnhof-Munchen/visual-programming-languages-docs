@@ -61,3 +61,8 @@ Im Gegensatz zu klassischen Multiplexern, die auf einfachen Datentypen (INT, BOO
 
 ## Fazit
 Der **AX_MUX_4** ist ein einfacher, aber flexibler Multiplexer für AX-Adapter. Er eignet sich für alle Anwendungen, bei denen zur Laufzeit zwischen mehreren Adapterquellen umgeschaltet werden muss. Aufgrund seiner generischen Natur und der klaren Ereignissteuerung kann er in viele Automatisierungslösungen integriert werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

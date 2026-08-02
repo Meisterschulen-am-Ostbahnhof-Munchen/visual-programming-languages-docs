@@ -51,3 +51,8 @@ Der Baustein besitzt keine Zustandsmaschine (ECC), daher gibt es keine Zustände
 
 ## Fazit
 Der **AIWS_SPLIT_3** ist ein einfacher aber effektiver generischer Funktionsbaustein zur Vervielfältigung eines AIWS-Adapter-Signals auf drei parallele Ausgänge. Dank seiner generischen Natur lässt er sich flexibel in verschiedenen Automatisierungs- und Steuerungsanwendungen einsetzen, in denen ein Datenstrom mehrfach benötigt wird.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

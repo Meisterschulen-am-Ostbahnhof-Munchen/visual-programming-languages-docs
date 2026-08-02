@@ -63,3 +63,8 @@ Im Vergleich zu anderen logischen Bausteinen bietet XOR_2:
 
 ## Fazit
 Der XOR_2-Funktionsblock stellt eine effiziente und flexible Lösung für bitweise XOR-Operationen in 4diac-Systemen dar. Seine generische Natur ermöglicht den Einsatz in vielfältigen Anwendungsbereichen, während die ereignisgesteuerte Architektur eine zuverlässige Integration in komplexe Steuerungssysteme gewährleistet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

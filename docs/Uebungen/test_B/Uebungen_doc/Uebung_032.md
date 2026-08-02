@@ -47,3 +47,9 @@ Jeder Taster aktiviert "seine" Farbe auf dem Streifen. Da alle Bausteine auf den
 *   Druck auf **Rot** ➡️ Streifen wechselt sofort auf schnelles rotes Blitzen.
 
 Dies ermöglicht eine sehr schnelle Programmierung von farbigen Status-Signalen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

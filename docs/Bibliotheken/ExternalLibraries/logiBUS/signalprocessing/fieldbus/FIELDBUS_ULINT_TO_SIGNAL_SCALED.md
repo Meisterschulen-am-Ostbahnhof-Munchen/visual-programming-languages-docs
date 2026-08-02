@@ -96,3 +96,8 @@ Die Konstanten `NOT_AVAILABLE_LWM` und `VALID_SIGNAL_LW` stammen aus dem importi
 ## Fazit
 
 Der Funktionsblock **FIELDBUS_ULINT_TO_SIGNAL_SCALED** bietet eine kompakte, parametrierbare Lösung zur sicheren Umwandlung von Feldbus‑Rohdaten in physikalische Werte. Durch die Kombination von Gültigkeitsprüfung, Skalierung und Offset eignet er sich ideal für industrielle Automatisierungsaufgaben, bei denen Datenintegrität und einfache Kalibrierung gefordert sind.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -77,3 +77,8 @@ Einfachere Bausteine wie `MOVE` oder `REPEAT` geben eingehende Werte ungefiltert
 ## Fazit
 
 Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL` ist ein spezialisierter Composite-Baustein zur zuverlässigen Weitergabe von Feldbus-Signalen unter Berücksichtigung eines Gültigkeitskriteriums. Durch die Kombination aus Signalverarbeitung und Zustandshaltung eignet er sich ideal für sicherheitskritische oder qualitätsbewusste Anwendungen in der Automatisierungstechnik. Die klar definierten Adapter-Schnittstellen erleichtern die Integration in bestehende 4diac-IDE Projekte.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

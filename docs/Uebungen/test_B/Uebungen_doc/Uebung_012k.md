@@ -48,3 +48,8 @@ Diese Konstanten sind in den referenzierten Bibliotheken definiert und legen fes
 
 ## Zusammenfassung
 Die Übung zeigt den Umgang mit String-Eingaben, der persistierenden Speicherung in INI-Dateien sowie der gekapselten Wiederverwendung von Funktionalität durch eine Subapp. Der `INI`-FB übernimmt das Speichern und Laden, während `StringValue_IS` und `Q_StringValue` die Kommunikation mit der Hardware (Eingabe/Ausgabe) realisieren. Die Subapp `Uebung_012k_sub` kann in übergeordneten Projekten einfach per Parameterkonfiguration an unterschiedliche Objekt-IDs und Speicherorte angepasst werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

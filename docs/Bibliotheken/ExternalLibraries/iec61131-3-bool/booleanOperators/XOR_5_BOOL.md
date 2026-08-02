@@ -54,3 +54,8 @@ Der Baustein besitzt keinen internen Zustand (speicherfrei). Seine Ausgabe häng
 
 ## Fazit
 Der `XOR_5_BOOL` Funktionsblock ist ein spezialisierter und effizienter Baustein zur Berechnung der Exklusiv-ODER-Verknüpfung über genau fünf boolesche Signale. Seine ereignisgesteuerte, zustandslose Arbeitsweise und die klare Schnittstelle machen ihn zu einem zuverlässigen Werkzeug für Steuerungsanwendungen, die diese spezielle Logikfunktion benötigen, insbesondere im Bereich der Paritätskontrolle und komplexen Bedingungsverknüpfung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

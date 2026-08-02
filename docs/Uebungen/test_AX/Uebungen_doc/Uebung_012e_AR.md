@@ -33,3 +33,8 @@ Die Übung besteht aus einem einzigen SubApp, der in ein übergeordnetes System 
 ## Zusammenfassung
 
 Die Übung `Uebung_012e_AR` zeigt eine kompakte Lösung zur persistierenden Speicherung eines numerischen Wertes unter Verwendung eines SubApp mit AR-Adapter. Durch die Auslagerung der Speicherlogik in den wiederverwendbaren SubApp `INI_IN_AND_STORE_AR` und die zentrale Definition von Schlüsseln und Objekten wird eine klare Trennung von Konfiguration und Funktionslogik erreicht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

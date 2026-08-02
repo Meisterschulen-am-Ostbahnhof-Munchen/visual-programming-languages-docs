@@ -102,3 +102,9 @@ Diese Übung demonstriert den Einsatz eines Aufwärtszählers (`E_CTU`) in Verbi
 ## Zusammenfassung
 
 Die Übung zeigt eine typische Zähleranwendung mit zwei Tastern, bei der ein Aufwärtszähler durch Tipptaster erhöht und zurückgesetzt wird. Der Zählerstand wird auf einen digitalen Ausgang gegeben. Durch die Verwendung von `E_SPLIT_4`, `E_MERGE_4` und vor allem der `RT_E_REND`-Bausteine wird das Ereignisverarbeitung robust gegenüber schnellen Tippfolgen gemacht – die Ereignisbremse erzwingt eine Mindestzeit von 500 ms zwischen zwei Verarbeitungsschritten. Dies verhindert ungewollte Mehrfachausgaben und entkoppelt die Eingabe von der Ausgabe.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

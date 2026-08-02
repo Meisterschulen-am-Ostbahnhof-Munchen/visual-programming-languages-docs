@@ -82,3 +82,8 @@ Die Übung „Uebung_007d4“ demonstriert den Aufbau eines **Blinkers mit zufä
 Ein periodischer Takt löst eine Kette von Bausteinen aus: Zufallsgenerator, Hysterese-Filter, Wertweitergabe, Schwellwertvergleich und schließlich einen Digitalausgang.  
 Durch die Kombination von Hysterese und Mindestzeit entsteht ein Blinkmuster, das nicht rein zufällig ist, sondern gewisse Ein‑ und Ausschaltmindestzeiten einhält.  
 Dieses Beispiel vertieft das Verständnis von ereignisgesteuerten Funktionsbausteinen, Parameterkonfiguration und der Kopplung von Daten‑ und Ereignisverbindungen in der 4diac‑IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

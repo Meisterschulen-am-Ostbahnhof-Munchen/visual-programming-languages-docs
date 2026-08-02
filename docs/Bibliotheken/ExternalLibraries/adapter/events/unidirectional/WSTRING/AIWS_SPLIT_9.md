@@ -68,3 +68,8 @@ Der Funktionsblock besitzt keine internen Zustände. Er ist rein kombinatorisch 
 ## Fazit
 
 `AIWS_SPLIT_9` ist ein einfacher, aber nützlicher generischer Funktionsblock zur Vervielfachung eines unidirektionalen AIWS-Adapter-Signals auf neun Ausgänge. Er verzichtet auf überflüssige Komplexität, benötigt keine Ereignissteuerung und kann ohne zusätzliche Konfiguration direkt in IEC 61499-Applikationen eingesetzt werden. Dank seiner generischen Natur ist er flexibel an verschiedene Adapter-Typen anpassbar und eignet sich besonders für Signalverteilungen in modularen Automatisierungsarchitekturen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

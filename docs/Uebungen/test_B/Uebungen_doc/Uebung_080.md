@@ -44,3 +44,8 @@ Verwendung des Bausteins `E_CTU` (Event Count Up). Es wird gezeigt, wie man eine
 
 **Stückzähler**:
 An einer Verpackungsmaschine werden die Kartons gezählt. Sobald 5 Kartons auf der Palette sind, wird ein Signal (`Q1`) gegeben, um die Palette automatisch auszufahren. Der Fahrer drückt nach dem Holen einer neuen Palette "Reset" (`I2`), um den nächsten Vorgang zu starten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

@@ -44,3 +44,8 @@ Diese Übung demonstriert die grundlegende Verknüpfung eines digitalen Eingangs
 
 ## Zusammenfassung
 Die Übung führt in die Grundlagen der Ereignis- und Datenverbindungen in der 4diac-IDE ein. Obwohl die UND-Verknüpfung in diesem Fall funktional überflüssig ist, wird das Zusammenspiel zwischen Sensor (Eingang), Logik (UND-Gatter) und Aktor (Ausgang) veranschaulicht. Sie lernen, wie Sie einfache Steuerungsaufgaben durch Verschaltung von Funktionsbausteinen abbilden können.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -59,3 +59,8 @@ Damit realisiert die Sub-Applikation eine Toggle-Funktion: Jedes Ereignis an `IN
 ## Zusammenfassung
 
 In dieser Übung wurde eine Sub-Applikation zur Realisierung eines Toggle-Flip-Flops mit Reset-Möglichkeit erstellt. Die Funktionsweise basiert auf den standardisierten IEC‑61499-Bausteinen `E_SWITCH` und `E_SR`. Die Verknüpfung der Ereignis- und Datenverbindungen ermöglicht eine saubere Rückkopplung des aktuellen Zustands und eine gezielte Ausgabe eines Set-Impulses. Der Baustein kann als Grundlage für Zyklussteuerungen, Zähler oder einfache Zustandsautomaten dienen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

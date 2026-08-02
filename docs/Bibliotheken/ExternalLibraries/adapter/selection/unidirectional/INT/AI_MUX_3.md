@@ -66,3 +66,8 @@ Der Funktionsblock besitzt keinen expliziten Zustandsautomaten. Die Logik beschr
 
 ## Fazit
 Der **AI_MUX_3** ist ein kompakter, generischer Analog-Multiplexer für die 4diac-IDE. Durch den Einsatz von Adaptern und die Ereignissteuerung eignet er sich besonders für flexible, modulare Automatisierungslösungen, bei denen mehrere analoge Signalquellen ausgewählt und an einen einzigen Ausgang weitergeleitet werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

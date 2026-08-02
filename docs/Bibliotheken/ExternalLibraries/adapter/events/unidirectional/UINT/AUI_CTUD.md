@@ -117,3 +117,8 @@ Der AUI_CTUD ist daher flexibler in der Verschaltung und reduziert die Ereignisl
 ## Fazit
 
 Der Funktionsblock **AUI_CTUD** stellt eine moderne, adaptergestützte Variante eines Aufwärts-/Abwärtszählers dar. Besonders hervorzuheben sind die On-Change-Triggerung der Grenzwerte und die Rückmeldung über eigene Ereignisausgänge. Durch die Verwendung von Adapter‑Schnittstellen wird eine lose Kopplung und Wiederverwendbarkeit in unterschiedlichsten Steuerungsprojekten ermöglicht. Die integrierten Schutzmaßnahmen gegen Über‑/Unterlauf sowie die saubere Trennung von Zähl- und Auswerte-Logik machen ihn zu einem robusten Baustein für industrielle Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

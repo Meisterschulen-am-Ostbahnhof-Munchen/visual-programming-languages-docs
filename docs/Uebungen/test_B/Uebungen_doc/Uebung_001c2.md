@@ -67,3 +67,8 @@ Die drei Bausteine sind wie folgt miteinander verbunden:
 ## Zusammenfassung
 
 Die Übung demonstriert die grundlegende Verwendung von digitalen Ein- und Ausgangsbausteinen in Kombination mit einer logischen Negation. Der Fokus liegt auf dem Verständnis der ereignisgesteuerten Ablaufsteuerung (Ereigniskette) sowie auf dem Initialisierungsverhalten beim Systemstart. Durch die Rückkopplung des `INITO`-Ereignisses wird sichergestellt, dass der Ausgang bereits beim Booten einen korrekten (negierten) Wert erhält. Dies ist ein typisches Beispiel für die Anwendung von Initialisierungsereignissen in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

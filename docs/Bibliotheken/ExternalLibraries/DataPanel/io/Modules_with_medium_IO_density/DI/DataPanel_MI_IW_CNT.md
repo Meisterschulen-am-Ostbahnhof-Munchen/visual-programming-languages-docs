@@ -96,3 +96,8 @@ Nach einem Fehler kann nur ein erneutes INIT den FB zurück in den IDLE‑Zustan
 ## Fazit
 
 Der **DataPanel_MI_IW_CNT** ist ein leistungsfähiger Service-Interface-Funktionsblock für die flexible Erfassung von Impulszählerdaten in landtechnischen Steuerungen. Seine integrierte asynchrone Indikation auf Basis von Impuls‑ oder Zeitschwellen reduziert die Reaktionszeit und entlastet das Steuerungssystem. Dank der klar strukturierten Schnittstelle und der spezifischen Konfigurationsmöglichkeiten (SA‑Adresse, Eingangswahl) lässt er sich nahtlos in das DataPanel‑Ökosystem einbinden. Er stellt damit eine zuverlässige Komponente für Anwendungen dar, die eine präzise Impulsauswertung auf Systemebene erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

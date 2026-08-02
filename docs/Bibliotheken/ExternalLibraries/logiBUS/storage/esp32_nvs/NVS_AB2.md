@@ -79,3 +79,8 @@ Bausteine ohne Adapter erfordern hingegen separate Event‑Eingänge für Lesen 
 
 ## Fazit
 **NVS_AB2** ist ein praxisorientierter Funktionsblock für den zuverlässigen, asynchronen Zugriff auf den nichtflüchtigen Speicher eines ESP32. Durch die Kapselung der NVS‑Logik in einem Composite‑Baustein und die bereitgestellte AB2‑Adapter‑Schnittstelle lässt er sich flexibel in Automatisierungsprojekte einbinden, die persistente Datenhaltung erfordern. Die Kombination aus automatischer Erstinitialisierung, Lese‑/Schreibunterstützung und klarer Statusrückmeldung macht ihn zu einer effizienten Lösung für Embedded‑Steuerungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

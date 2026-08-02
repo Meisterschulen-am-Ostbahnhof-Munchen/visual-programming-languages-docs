@@ -100,3 +100,8 @@ Die Steuerung ist hardwarenah über die logiBUS-Digitalausgänge angebunden und 
 **Voraussetzungen:**  
 - Grundkenntnisse in 4diac und IEC 61499  
 - Verfügbarkeit der Bibliotheken `isobus`, `logiBUS` und `adapter::events::unidirectional`
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

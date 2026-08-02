@@ -44,3 +44,8 @@ Da es sich um einen einfachen Funktionsblock handelt, gibt es keine Zustandsübe
 
 ## Fazit
 Der `F_LWORD_TO_DINT`-Funktionsblock ist ein einfaches und effizientes Werkzeug zur Konvertierung von `LWORD`- in `DINT`-Daten. Seine Einfachheit und direkte Funktionsweise machen ihn zu einer zuverlässigen Lösung für Typumwandlungen in 4diac-IDE-basierten Systemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

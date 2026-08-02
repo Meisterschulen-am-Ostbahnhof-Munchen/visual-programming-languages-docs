@@ -49,3 +49,8 @@ Im Gegensatz zu Funktionsblöcken (FB) oder Basis-Funktionsblöcken (BFB) enthä
 
 ## Fazit
 Die `ISO_NETEVENT_e` ist eine essentielle Ressource für die strukturierte Entwicklung von ISOBUS-Anwendungen in der 4diac IDE. Sie standardisiert die Kodierung von Netzwerkmanagement-Ereignissen, fördert die Code-Klarheit und reduziert Fehler, die durch die Verwendung undifferenzierter numerischer Werte entstehen können. Ihre Integration ist besonders für komplexe, netzwerkbasierte Steuerungssysteme im landwirtschaftlichen und mobilen Maschinenbereich von Vorteil.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

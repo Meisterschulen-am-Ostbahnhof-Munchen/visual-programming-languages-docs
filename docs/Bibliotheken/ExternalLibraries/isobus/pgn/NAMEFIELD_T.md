@@ -57,3 +57,8 @@ Im Gegensatz zu Funktionsbausteinen (FBs) wie `E_SR` oder `E_CYCLE` ist `NAMEFIE
 
 ## Fazit
 Der Datentyp `NAMEFIELD_T` ist ein essentielles Hilfsmittel für die Entwicklung von ISOBUS-konformen Steuerungsapplikationen mit 4diac FORTE. Er abstrahiert die komplexe Bitstruktur des ISO-NAME-Feldes in eine leicht handhabbare, stark typisierte Datenstruktur. Dies fördert die Code-Wiederverwendbarkeit, verbessert die Lesbarkeit und reduziert Fehler bei der Handhabung von Geräteidentifikationsdaten. Seine Verwendung ist standardkonform und empfiehlt sich für alle Projekte, die ISOBUS-Kommunikation implementieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

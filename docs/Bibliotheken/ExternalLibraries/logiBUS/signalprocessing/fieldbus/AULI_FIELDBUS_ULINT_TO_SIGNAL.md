@@ -85,3 +85,8 @@ Ein Zustandsdiagramm für den gesamten FB ist nicht erforderlich, da das Verhalt
 
 ## Fazit
 `AULI_FIELDBUS_ULINT_TO_SIGNAL` ist ein robuster, adapterbasierter Funktionsblock zur sicheren Weitergabe eines ULINT-Feldbussignals mit Gültigkeitsanzeige. Die Kombination aus Konverter und Flipflop gewährleistet eine synchronisierte und zuverlässige Signalausgabe. Durch seine klare Schnittstellenstruktur eignet er sich besonders für modulare Automatisierungslösungen, die auf lose gekoppelte Adapter setzen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

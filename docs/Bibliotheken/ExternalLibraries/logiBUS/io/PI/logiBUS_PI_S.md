@@ -45,3 +45,8 @@ Dieser Strukturdatentyp wird verwendet, um die Konfiguration von digitalen Einga
 
 ## Fazit
 Der `logiBUS_PI_S`-Datentyp ist ein grundlegender, spezifischer Konfigurationsbaustein für die Anbindung digitaler Eingangssignale in logiBUS-basierten IEC 61499-Anwendungen. Durch seine einfache, auf einen Parameter reduzierte Struktur ermöglicht er eine klare und zentrale Hardware-Konfiguration und bildet die Basis für die entsprechende Funktionalität in den ausführenden IO-Funktionsblöcken.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

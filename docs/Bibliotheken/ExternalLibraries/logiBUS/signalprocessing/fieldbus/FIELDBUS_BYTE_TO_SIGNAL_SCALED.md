@@ -98,3 +98,8 @@ Es gibt keine automatischen Zustandsübergänge; jeder Zustand wird ausschließl
 
 ## Fazit
 Der Funktionsblock `FIELDBUS_BYTE_TO_SIGNAL_SCALED` ist ein praktisches Werkzeug für die Verarbeitung von Feldbus-Signalen im Byte-Format. Er kombiniert eine einfache Gültigkeitsprüfung mit einer frei konfigurierbaren linearen Skalierung. Durch die Verwendung importierter Konstanten ist er in einheitliche Signalverarbeitungspipelines integrierbar. Die klare Trennung von Initialisierung und Betrieb sowie die zwei Ereignisschnittstellen machen ihn zu einem robusten und leicht verständlichen Baustein für industrielle Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -79,3 +79,8 @@ Da es sich um einen Composite-Baustein handelt, besitzt er keine expliziten eige
 
 ## Fazit
 Der `logiBUS_LED_PWM_QXA` Funktionsblock kapselt die PWM-Ansteuerung einer LED über logiBUS in einem kompakten Composite-Baustein. Durch die klar definierte Schnittstelle mit Initialisierung, Adapterkommunikation und Statusrückmeldung ist er leicht in Automatisierungsprojekte integrierbar. Die Kombination aus Ausgangsauswahl, Frequenzvorgabe und Fehlerbehandlung macht ihn zu einem robusten Baustein für dimmbare Beleuchtungsaufgaben im industriellen Umfeld.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

@@ -70,3 +70,8 @@ Das Netzwerk verknüpft die physischen Ein- und Ausgänge mit der logischen SR-F
 ## Zusammenfassung
 
 Die Übung `Uebung_006e1` ist eine klassische Anwendung einer Speicherfunktion. Mit Hilfe von zwei Tastern (oder Schaltern) an den Eingängen `Input_I1` und `Input_I2` kann der Ausgang `Output_Q1` dauerhaft ein- bzw. ausgeschaltet werden. Dies bildet die Grundlage für viele Steuerungsaufgaben, wie z.B. Start/Stopp-Schaltungen für Motoren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

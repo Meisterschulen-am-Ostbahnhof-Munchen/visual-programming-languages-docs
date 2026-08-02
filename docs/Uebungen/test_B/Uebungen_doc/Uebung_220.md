@@ -58,3 +58,8 @@ Die Übung zeigt die typische Anwendung eines IEC 61131-3 Zählers mit Hardware-
 ## Zusammenfassung
 
 In dieser Übung wurde ein Vor-/Rückwärtszähler nach IEC 61131-3 implementiert. Der Zähler zählt bei jeder steigenden Flanke an den Eingängen `CU` (Aufwärts) und `CD` (Abwärts). Ein Reset (`R`) setzt den Zähler auf `0` zurück, Load (`LD`) lädt den Presetwert `PV`. Die Ausgänge `QU` und `QD` zeigen an, ob der Zählerstand den Presetwert erreicht (`QU`) bzw. `0` (`QD`). Zusätzlich wird der aktuelle Zählerwert auf einem Terminal ausgegeben, wobei die Konvertierung in `UDINT` für positive Werte funktioniert. Die Übung demonstriert die vollständige Integration von Standard-FBs mit logiBUS-Hardware und Terminalausgabe in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -65,3 +65,8 @@ Vorausgesetzt werden Basiskenntnisse in 4diac und im Umgang mit ISOBUS‑Datenob
 ## Zusammenfassung
 
 Die Übung `Uebung_011g1` zeigt ein Muster, bei dem ein einzelner numerischer Eingang (`InputNumber_I1`) von drei unabhängigen Observer‑Bausteinen gelesen wird. Jeder Observer löst einen eigenen Konvertierungs‑FB (`DWORD` → `UDINT`) aus, sodass drei identische, aber isolierte Signalpfade entstehen. Dies ist nützlich, wenn der Wert an mehreren Stellen in der Steuerung benötigt wird und jede Stelle eine eigene, störungsfreie Datenkopie erfordert. Die einfache Struktur eignet sich hervorragend für Einstiegsübungen zur parallelen Datenverarbeitung mit 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

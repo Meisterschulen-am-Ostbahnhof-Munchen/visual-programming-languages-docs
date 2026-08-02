@@ -44,3 +44,8 @@ Der Funktionsblock hat keine internen Zustände. Die Ausführung erfolgt direkt 
 
 ## Fazit
 Der `F_WORD_TO_SINT`-Funktionsblock bietet eine einfache und effiziente Möglichkeit, `WORD`-Daten in `SINT`-Daten umzuwandeln. Durch seine klare Schnittstellenstruktur und direkte Funktionsweise ist er ideal für Anwendungen, die eine schnelle und zuverlässige Typumwandlung erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -41,3 +41,8 @@ Die Konstanten werden beim Kompilieren des Projekts definiert. Jede Konstante er
 
 ## Fazit
 Die Globalkonstanten `Computers` sind ein einfaches, aber äußerst nützliches Werkzeug zur Strukturierung und Pflege von Netzwerkverbindungsdaten in 4diac-Projekten. Sie fördern saubere Programmierpraktiken, reduzieren Redundanz und machen den Code anpassungsfähiger gegenüber Änderungen in der Netzwerktopologie. Ihre Verwendung wird insbesondere in größeren oder verteilten Automatisierungsanlagen empfohlen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

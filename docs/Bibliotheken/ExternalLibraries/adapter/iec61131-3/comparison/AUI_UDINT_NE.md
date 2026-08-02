@@ -71,3 +71,8 @@ Es existieren weitere Vergleichsbausteine für `UDINT` wie **AUI_UDINT_EQ** (gle
 ## Fazit
 
 Der Funktionsblock **AUI_UDINT_NE** ist ein spezialisierter, adapterbasierter Vergleichsbaustein für den Ungleich-Test zweier UDINT-Werte. Dank der modularen Bauweise und der internen Nutzung eines Standardvergleichsblocks lässt er sich flexibel in IEC-61131-3-Projekte integrieren. Er eignet sich besonders für Anwendungen, die eine lose, ereignisgesteuerte Datenkopplung erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

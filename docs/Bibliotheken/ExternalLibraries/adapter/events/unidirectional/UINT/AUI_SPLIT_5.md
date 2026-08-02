@@ -52,3 +52,8 @@ Der Baustein besitzt keine eigenen Zustände oder Zustandsautomaten. Er verhält
 
 ## Fazit
 Der **AUI_SPLIT_5** ist ein einfacher, aber essenzieller Baustein zur Vervielfältigung von AUI-Signalen. Seine generische Auslegung und die vollständige Durchleitung des Adapters machen ihn flexibel einsetzbar. Für Anwendungen, die eine unidirektionale 1:5-Verteilung bei gleichzeitiger Minimierung von Latenz erfordern, stellt er eine optimale Lösung dar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

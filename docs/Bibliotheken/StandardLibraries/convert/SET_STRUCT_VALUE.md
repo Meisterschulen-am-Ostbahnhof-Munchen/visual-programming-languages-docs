@@ -69,3 +69,8 @@ Er ergänzt oft Bausteine, die Werte aus Strukturen auslesen (`GET_STRUCT_VALUE`
 ## Fazit
 
 Der `SET_STRUCT_VALUE`-Funktionsblock ist ein mächtiges Werkzeug für die dynamische Manipulation von Datenstrukturen innerhalb einer 4diac-Anwendung. Seine generische Natur und die Unterstützung für den Zugriff auf verschachtelte Mitglieder machen ihn äußerst vielseitig für Anwendungen, die eine flexible Konfiguration oder Datenverarbeitung zur Laufzeit erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

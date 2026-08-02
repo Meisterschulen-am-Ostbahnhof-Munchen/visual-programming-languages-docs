@@ -83,3 +83,8 @@ Es gibt keine weiteren Warte- oder Initialisierungszustände.
 
 ## Fazit
 **FIELDBUS_BYTE_TO_SIGNAL** ist ein kompakter, spezialisierter Filterbaustein zur Gültigkeitsprüfung von BYTE-Signalen. Er erfordert keine Konfiguration von Grenzen, da diese über die importierten Konstanten in der Bibliothek definiert sind. Durch die klare Trennung von Datenausgang und Gültigkeitssignal eignet er sich hervorragend für die Aufbereitung von Feldbusdaten in sicherheitskritischen oder fehlertoleranten Automatisierungssystemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -52,3 +52,8 @@ Als Datentyp ist `CAN_MSG` mit anderen strukturierten Typen in 4diac vergleichba
 
 ## Fazit
 Der `CAN_MSG`-Datentyp stellt eine essentielle und gut strukturierte Grundlage für die Implementierung von CAN-Bus-Kommunikation in 4diac-basierten Steuerungssystemen dar. Durch die Bündelung von Priorität, Länge und Daten in einem einzigen Typ wird die Handhabung von CAN-Nachrichten in Funktionsblock-Netzwerken deutlich vereinfacht und standardisiert. Seine Verwendung ist für alle Anwendungen empfohlen, die den direkten Zugriff auf CAN-Frames erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

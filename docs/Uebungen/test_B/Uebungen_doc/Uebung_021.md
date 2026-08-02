@@ -44,3 +44,8 @@ Realisierung einer einfachen Folgesteuerung: Ein Prozess wird gestartet und stop
 
 **Einfacher Ausstoßer**:
 In einer Fertigungslinie soll ein Paket per Knopfdruck vom Band geschoben werden. Der Bediener gibt den Startimpuls, der Zylinder fährt aus, schiebt das Paket weg und wird durch einen mechanischen Endschalter am Ende des Weges automatisch wieder abgeschaltet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Interaktiver JBC-Lötspitzen Guide & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/werkzeug/lötkolben/jbc-lötspitzen-übersicht/)

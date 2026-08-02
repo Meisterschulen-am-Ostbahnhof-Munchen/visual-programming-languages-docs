@@ -50,3 +50,8 @@ Diese Übung demonstriert die Verwendung von Adaptern und einer benutzerdefinier
 
 ## Zusammenfassung
 Die Übung `Uebung_071_AUI` zeigt eine typische landwirtschaftliche Automatisierungsaufgabe: die Ausgabe einer Maschinengeschwindigkeit auf einem Universal Terminal und die gleichzeitige Aktivierung eines digitalen Ausgangs bei Bewegung. Alle Kommunikationsverbindungen wurden durch Adaptertypen realisiert, was die Wiederverwendbarkeit und Austauschbarkeit der Bausteine erhöht. Der Einsatz der SubApp `AX_GT_0_UINT` verdeutlicht, wie eigene kleine Logikbausteine dezentral in das Gesamtsystem integriert werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -58,3 +58,8 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Er verhält sic
 
 ## Fazit
 Der `NmSetNameField`-Funktionsblock ist ein essenzielles Hilfsmittel für die Arbeit mit ISOBUS-Netzwerken in 4diac. Er abstrahiert die komplexe Bit-Manipulation, die zur Interpretation des ISO-NAME erforderlich ist, und stellt die Informationen in einer leicht verarbeitbaren strukturierten Form bereit. Seine Verwendung fördert korrekte, normkonforme Applikationen und verbessert die Lesbarkeit des Quellcodes erheblich.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

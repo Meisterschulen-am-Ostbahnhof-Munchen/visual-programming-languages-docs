@@ -50,3 +50,8 @@ Diese Übung zeigt, wie die arbeitsbreitenbezogene Maschinengeschwindigkeit (WBS
 
 ## Zusammenfassung  
 Die Übung demonstriert die Verknüpfung von ISOBUS‑Elementen (Geschwindigkeitssensor, UT‑Ausgabe) mit Logikbausteinen (T‑Flipflop, Digitalein‑/ausgänge) in 4diac‑IDE. Durch den Taster wird der Qualitätsindikator des Geschwindigkeitssignals gesteuert, sodass die Anzeige am UT nur bei aktiviertem QI aktualisiert wird. Ein digitaler Ausgang gibt den Zustand optisch wieder. Dies ermöglicht eine bedarfsgesteuerte Übertragung von Prozessdaten an das Terminal.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

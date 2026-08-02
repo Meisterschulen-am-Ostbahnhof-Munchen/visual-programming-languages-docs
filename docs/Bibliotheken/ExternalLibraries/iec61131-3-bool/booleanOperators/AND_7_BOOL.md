@@ -61,3 +61,8 @@ Der Block besitzt keinen internen Zustand im Sinne eines Speichers. Sein Verhalt
 
 ## Fazit
 Der `AND_7_BOOL` ist ein spezialisierter, zuverlässiger und einfach zu verwendender Funktionsblock für die logische UND-Verknüpfung von sieben booleschen Signalen. Seine ereignisgesteuerte Architektur macht ihn ideal für die Integration in steuerungstypische Ablaufstrukturen innerhalb der 4diac-IDE. Für Anwendungen mit einer anderen Anzahl von Eingängen sollte auf die entsprechende Variante der `AND_n_BOOL`-Familie zurückgegriffen werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

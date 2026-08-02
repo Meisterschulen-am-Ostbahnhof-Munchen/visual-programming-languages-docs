@@ -123,3 +123,8 @@ Die Übung ist als SubApp‑Typ vorgefertigt. Einbinden in ein geeignetes Projek
 ## Zusammenfassung
 
 Die Übung **Uebung_022b_AX2** demonstriert eine zweistufige Ablaufsteuerung für zwei Zylinder mithilfe von AX_SR‑Funktionsbausteinen. Durch die geschickte Verteilung der Ereignisse (F2 löst sowohl Rücksetzen des ersten als auch Setzen des zweiten Zylinders aus) wird eine „Spiegelabfolge“ realisiert. Der Aufbau ist einfach, erweiterbar und zeigt die Grundprinzipien der ereignisgesteuerten Automatisierung in 4diac. Die Verwendung von Adaptern statt direkter Datenverbindungen sorgt für eine saubere Trennung von Steuerlogik und Aktorik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

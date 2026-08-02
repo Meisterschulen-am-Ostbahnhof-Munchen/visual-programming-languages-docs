@@ -46,3 +46,8 @@ Mittel - Grundkenntnisse in 4diac und IEC 61499 werden vorausgesetzt
 
 ## Zusammenfassung
 Diese Übung vermittelt praktische Erfahrungen mit Ereignis-Multiplexing und -Demultiplexing in 4diac. Sie zeigt, wie komplexe Signalverteilungen mit den Standard-Bausteinen E_MUX_4 und E_DEMUX_4 realisiert werden können. Die direkte Verbindung zwischen digitalen Ein- und Ausgängen demonstriert gleichzeitig die grundlegende Signalverarbeitung in Automatisierungssystemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

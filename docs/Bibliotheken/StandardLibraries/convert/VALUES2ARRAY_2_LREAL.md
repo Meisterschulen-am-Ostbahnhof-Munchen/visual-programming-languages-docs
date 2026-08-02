@@ -74,3 +74,8 @@ Dieser Funktionsblock ist spezifisch für die Konvertierung von zwei LREAL-Werte
 ## Fazit
 
 Der `VALUES2ARRAY_2_LREAL` ist ein nützlicher und effizienter Funktionsblock für die spezifische Aufgabe, zwei LREAL-Werte in ein fest dimensioniertes LREAL-Array umzuwandeln. Seine Einfachheit und ereignisgesteuerte Arbeitsweise machen ihn zu einem klaren Bestandteil in Szenarien, wo eine solche Datenbündelung erforderlich ist, und tragen zur Modularität und Lesbarkeit der Applikation bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

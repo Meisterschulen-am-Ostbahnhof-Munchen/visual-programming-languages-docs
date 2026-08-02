@@ -66,3 +66,8 @@ Dieser FB enthält keine Zustandsmaschine. Er arbeitet datengetrieben und stellt
 ## Fazit
 
 Der **AR_SPLIT_6** ist ein einfacher, aber nützlicher generischer Baustein zur Vervielfachung eines AR-Adapter-Signals auf sechs parallele Ausgänge. Er zeichnet sich durch minimale Komplexität, klare Struktur und hohe Wiederverwendbarkeit in Automatisierungsprojekten aus, die auf der 4diac-IDE und dem IEC 61499-Standard basieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

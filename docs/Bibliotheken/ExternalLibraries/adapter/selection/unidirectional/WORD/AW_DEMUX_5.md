@@ -97,3 +97,8 @@ Der FB besitzt keine explizit modellierte Zustandsmaschine. Sein internes Verhal
 ## Fazit
 
 Der **AW_DEMUX_5** ist ein spezialisierter Demultiplexer für unidirektionale AW-Adapter in der 4diac-IDE. Durch die Verwendung von Adaptern eignet er sich besonders für modulare Automatisierungslösungen, bei denen Datenströme flexibel zwischen Komponenten umgeschaltet werden müssen. Seine einfache Schnittstelle (ein Ereignis, ein Index, fünf Ausgänge) macht ihn leicht einsetzbar, während die generische Natur eine breite Wiederverwendung erlaubt.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

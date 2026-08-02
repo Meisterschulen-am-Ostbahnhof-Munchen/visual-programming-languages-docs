@@ -70,3 +70,8 @@ Der FB besitzt keine expliziten Zustände (kein ECC). Es handelt sich um einen k
 ## Fazit
 
 Der **AUDI_NE** ist ein praxisnaher Baustein für den Ungleich-Vergleich in adapterbasierten IEC 61131-Systemen. Durch die Verwendung von Adaptern und die Einbettung des bewährten **F_NE**-Bausteins verbindet er Typensicherheit mit bewährter Funktionalität. Er eignet sich besonders für ereignisgesteuerte Automatisierungslösungen, bei denen modulare und wiederverwendbare Komponenten gefragt sind.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -96,3 +96,8 @@ Nach erfolgreicher Umwandlung löst `F_LINT_TO_UDINT.CNF` das Ereignis `Q_Numeri
 ## Zusammenfassung
 
 Die Übung 222 realisiert einen universellen Vor-/Rückwärtszähler (FB_CTUD_LINT) mit einem 64‑Bit-Zählbereich, gesteuert durch vier Tastereingänge. Zwei digitale Ausgänge zeigen die Zustände `QU` (Maximum erreicht) und `QD` (Minimum erreicht) an, während ein Terminal den aktuellen Zahlwert ausgibt. Die notwendige Typumwandlung von `LINT` nach `UDINT` ist bewusst als Problemfall dokumentiert, um auf die mögliche Fehlinterpretation negativer Werte hinzuweisen. Der Entwurf folgt dem IEC-61131-3-Standard und erlaubt eine einfache Erweiterung für andere Zählparameter.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

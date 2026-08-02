@@ -50,3 +50,8 @@ Nicht zutreffend, da es sich um eine statische Konstantendeklaration handelt.
 
 ## Fazit
 Die `PgnDef`-Konstantensammlung ist ein wesentliches Hilfsmittel für die Entwicklung von IEC 61499-basierten Applikationen in den Domänen der mobilen Arbeitsmaschinen (ISOBUS) und der maritimen Elektronik (NMEA 2000). Sie fördert die Standardisierung, verbessert die Codequalität durch verbesserte Lesbarkeit und reduziert Fehler durch die Verwendung zentral definierter und getesteter Werte. Für jeden Entwickler, der mit diesen Protokollen in 4diac arbeitet, stellt `PgnDef` eine wertvolle und wahrscheinlich unverzichtbare Ressource dar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

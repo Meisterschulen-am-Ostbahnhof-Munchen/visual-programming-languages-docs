@@ -89,3 +89,8 @@ Durch seine Hardwarenähe und Unabhängigkeit von Systemzeitänderungen eignet e
 Die Integration in Eclipse 4diac gewährleistet Kompatibilität mit modernen Automatisierungslösungen.
 
 *Hinweis:* Für absolute Zeitreferenzen sollte `NOW_SYSTEM()` verwendet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

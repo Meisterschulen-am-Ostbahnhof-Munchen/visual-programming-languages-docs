@@ -49,3 +49,8 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt bei jed
 
 ## Fazit
 Der `SPLIT_DWORD_INTO_WORDS`-Funktionsblock bietet eine einfache und effiziente Möglichkeit, DWORD-Daten in ihre WORD-Komponenten aufzuteilen. Seine spezialisierte Funktionalität macht ihn besonders nützlich für Anwendungen, die regelmäßig mit solchen Datenumwandlungen arbeiten müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

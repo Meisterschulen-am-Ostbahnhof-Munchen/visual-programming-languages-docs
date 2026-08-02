@@ -52,3 +52,9 @@ Der Funktionsblock verfügt über keine Zustandsmaschine. Er ist passiv und füh
 
 ## Fazit
 Der `AQ_SPLIT_4` ist ein einfacher, aber nützlicher Funktionsblock zur Signalverteilung in der industriellen Automatisierung mit 4diac. Durch seine generische Auslegung und das Fehlen interner Logik ist er leicht verständlich, robust und flexibel einsetzbar. Er trägt zur Strukturierung und Wiederverwendbarkeit von Funktionsblocknetzwerken bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

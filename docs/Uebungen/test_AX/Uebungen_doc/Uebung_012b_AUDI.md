@@ -63,3 +63,8 @@ Die Konstanten `SECTION_I1_STORE` und `KEY_I1_STORE` müssen im Projekt als NVS�
 ## Zusammenfassung
 
 Die Übung **Uebung_012b_AUDI** zeigt einen vollständigen Datenpfad von der ISOBUS‑Eingabe über eine Formatkonvertierung, persistente Speicherung in einer INI‑Struktur bis zur ISOBUS‑Ausgabe. Sie veranschaulicht den Einsatz von Adaptern zur Kopplung unterschiedlicher Bausteintypen und die Verwendung von Speicherbausteinen für dauerhafte Datenhaltung. Nach erfolgreicher Durchführung können die Teilnehmer selbstständig ähnliche Datenspeicher‑ und Weiterleitungsketten in eigenen Projekten umsetzen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

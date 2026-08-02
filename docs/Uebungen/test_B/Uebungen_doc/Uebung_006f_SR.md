@@ -80,3 +80,8 @@ Die folgenden Ereignis- und Datenverbindungen definieren den Ablauf der Übung:
 ## Zusammenfassung
 
 Die Übung *Uebung_006f_SR* vermittelt die praktische Anwendung eines set-dominanten Toggle-Flipflops (FB_SR_T_FF) in der 4diac-IDE. Durch die Verschaltung von drei digitalen Eingängen, dem Flipflop und einem digitalen Ausgang wird gezeigt, wie Ereignis- und Datenflüsse gesteuert werden können. Der Baustein verhält sich set-dominant: Bei gleichzeitig anliegenden Set- und Reset-Signalen hat der Set-Eingang Vorrang. Diese Übung ist ein grundlegender Baustein für das Verständnis sequenzieller Logik in der industriellen Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

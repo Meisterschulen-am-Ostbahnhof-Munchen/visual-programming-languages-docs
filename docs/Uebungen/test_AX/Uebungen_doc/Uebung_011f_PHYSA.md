@@ -46,3 +46,8 @@ Die Übung ist für Einsteiger geeignet, die die Grundlagen der ISO‑BUS‑Baus
 ## Zusammenfassung
 
 Die Übung **Uebung_011f_PHYSA** realisiert eine einfache Durchschleifung eines physikalischen Werts ohne Konvertierung. Der Baustein `NumericValue_PHYSA` liest den Wert von `InputNumber_I3`, gibt ihn über den Adapterausgang `rPhys` an `Q_NumericValue_PHYSA` weiter, welcher den Wert auf `OutputNumber_N3` ausgibt. Die Übung ist ein grundlegendes Beispiel für die Nutzung von physikalischen Werten und Adapterverbindungen in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

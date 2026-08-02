@@ -76,3 +76,8 @@ Die Übung „Uebung_216“ vermittelt den Einsatz eines IEC 61131-3 Rückwärts
 - Die Visualisierung von Zählerwerten auf einem Terminal.
 
 Die Übung ist für Einsteiger in die 4diac-IDE geeignet, die bereits grundlegende Kenntnisse über IEC 61131-3-Bausteine und digitale Ein-/Ausgänge besitzen. Sie kann direkt geladen und mit simulierten oder realen Eingängen getestet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

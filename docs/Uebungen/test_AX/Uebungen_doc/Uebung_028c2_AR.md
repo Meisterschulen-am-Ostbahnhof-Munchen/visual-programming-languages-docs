@@ -68,3 +68,10 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals unter 
 ## Zusammenfassung
 
 Die Übung zeigt, wie ein analoges Eingangssignal mit Offset- und Skalierungskorrektur kalibriert wird. Die Kalibrierparameter werden dauerhaft im NVS gespeichert und können über digitale Taster aktualisiert werden. Der kalibrierte Wert wird sowohl für eine Anzeige als auch für eine Hysterese-Schaltfunktion genutzt. Die Verschaltung verdeutlicht den Umgang mit Adapter-Konvertierungen, NVS-Speicherzugriffen und der Aufteilung von Datenflüssen in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

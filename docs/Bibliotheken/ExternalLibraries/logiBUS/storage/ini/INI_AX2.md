@@ -80,3 +80,8 @@ Der Baustein selbst besitzt keine expliziten Zustände, da er als reines Netzwer
 
 ## Fazit
 Der Funktionsblock INI_AX2 ist eine nützliche Komponente für IEC 61499-Anwendungen, die einen einfachen Zugriff auf Konfigurationsdateien über einen AX2-Adapter benötigen. Durch die Kapselung des INI-Bausteins und die Ereignissteuerung ermöglicht er sowohl Lese- als auch Schreibvorgänge in einer settings.ini-Datei. Die Verwendung eines bidirektionalen Adapters erlaubt eine flexible Einbindung in komplexe Netzwerke.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

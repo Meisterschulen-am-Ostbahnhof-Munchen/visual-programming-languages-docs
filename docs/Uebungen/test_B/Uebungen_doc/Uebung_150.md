@@ -45,3 +45,8 @@ Da es sich bei dieser Übung um eine reine Konfiguration eines Hardware-Treibers
 
 ## Zusammenfassung
 Die Übung **Uebung_150** stellt eine grundlegende Konfiguration für einen Impulszähler dar. Sie nutzt den Baustein `logiBUS_PI_ID`, um den Hardware-Eingang `PulseInput_I8` mit spezifischen Parametern für Impuls- und Zeitintervalle zu initialisieren. Diese Übung ist essenziell für das Verständnis der Hardware-Abstraktionsschicht in 4diac-Systemen, die logiBUS verwenden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

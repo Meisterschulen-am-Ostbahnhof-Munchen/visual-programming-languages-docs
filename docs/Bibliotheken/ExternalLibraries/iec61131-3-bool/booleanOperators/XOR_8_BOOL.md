@@ -65,3 +65,8 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 
 ## Fazit
 Der `XOR_8_BOOL` ist ein spezialisierter, zuverlässiger und einfach zu verwendender Funktionsblock für logische XOR-Operationen mit bis zu acht Eingängen. Seine ereignisgesteuerte Architektur macht ihn ideal für die Integration in steuerungstypische Ablaufstrukturen der 4diac-IDE. Er eignet sich besonders für Anwendungen, bei denen die Parität von Signalgruppen von Bedeutung ist, und bietet eine klar definierte Alternative zu den grundlegenden ODER- und UND-Verknüpfungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

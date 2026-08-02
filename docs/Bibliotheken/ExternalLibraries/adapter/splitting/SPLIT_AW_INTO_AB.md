@@ -67,3 +67,8 @@ Der FB besitzt keine explizite Zustandsmaschine. Er verarbeitet Impulse ereignis
 ## Fazit
 
 **SPLIT_AW_INTO_AB** ist ein spezialisierter Adapter‑Wrapper, der ein einkommendes WORD sauber in zwei getrennte BYTE‑Adapter aufteilt. Die Verwendung von Flip‑Flops gewährleistet einen stabilen Datenfluss und vermeidet zeitliche Inkonsistenzen. Der Baustein ist ideal für Systeme, die eine adapterbasierte Kommunikation nach IEC 61499-2 verwenden und eine einfache Transformation zwischen 16‑Bit und 8‑Bit Daten benötigen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -52,3 +52,8 @@ Alle genannten Bausteine verwenden das gleiche Adapter-Konzept und sind generisc
 
 ## Fazit
 Der `AUDI_ADD_3` ist ein flexibler, generischer Funktionsblock für die Addition von drei Werten. Seine reine Adapter-Schnittstelle und die Zustandslosigkeit machen ihn einfach in der Handhabung und ideal für modulare Automatisierungslösungen auf Basis von IEC 61499.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

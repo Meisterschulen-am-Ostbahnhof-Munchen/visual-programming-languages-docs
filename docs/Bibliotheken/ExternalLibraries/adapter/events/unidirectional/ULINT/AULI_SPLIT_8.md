@@ -47,3 +47,8 @@ In der 4diac‑IDE existieren häufig Bausteine wie `SPLIT_2`, `SPLIT_4` oder ge
 
 ## Fazit
 Der `AULI_SPLIT_8` ist ein einfacher, aber nützlicher Verteilerbaustein für unidirektionale AULI‑Adapter. Er ermöglicht eine saubere, generische Aufteilung eines Signals auf bis zu acht Ausgänge und eignet sich besonders für Broadcasting‑Szenarien, in denen mehrere Empfänger denselben Adapter‑Wert benötigen. Sein generischer Charakter macht ihn flexibel einsetzbar und erleichtert die Wiederverwendung in verschiedenen Projekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

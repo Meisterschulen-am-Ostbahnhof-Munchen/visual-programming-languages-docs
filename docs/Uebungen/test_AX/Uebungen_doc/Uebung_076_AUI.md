@@ -57,3 +57,8 @@ Lernziele sind unter anderem:
 - Arbeiten mit ISO-bus-Adapter-FBs und Object-Pool-Referenzen
 
 Die Übung erfordert Grundkenntnisse in der 4diac-IDE und im Umgang mit ISO-bus-Funktionsbausteinen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -51,3 +51,8 @@ Hinweise für den Nutzer:
 ## Zusammenfassung
 
 Die Übung **Uebung_011b1** veranschaulicht den gesamten Datenpfad von der ISOBUS-Eingabe über Datentypkonvertierung und arithmetische Verarbeitung bis zur ISOBUS-Ausgabe. Sie ist ein typisches Beispiel für die strukturierte, ereignisgesteuerte Programmierung mit 4diac und IEC 61499. Die klare Trennung von Ereignis- und Datenflüssen erleichtert das Verständnis und die Wiederverwendbarkeit der Bausteine.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -62,3 +62,8 @@ Damit werden die Zustände der Eingänge direkt auf die gleichnamigen Ausgänge 
 ## Zusammenfassung
 
 In dieser Übung wird der Datenfluss von vier digitalen Eingängen zu vier digitalen Ausgängen über eine Byte-Adapternetzwerk realisiert. Es werden die Bausteine `ASSEMBLE_AB_FROM_AX` und `SPLIT_AB_INTO_AX` verwendet, um mehrere Bool-Signale zu einem Byte zusammenzufassen und wieder aufzutrennen. Die Übung vermittelt grundlegende Kenntnisse im Umgang mit Adapter-Bausteinen und Datenbus-Strukturen in der IEC 61499-Programmierung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

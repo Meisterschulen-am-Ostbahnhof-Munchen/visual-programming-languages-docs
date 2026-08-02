@@ -48,3 +48,8 @@ Der Baustein implementiert keine Zustandsautomaten. Die Funktionalität beschrä
 
 ## Fazit
 Der **AR_SPLIT_2** ist ein einfacher, aber essenzieller Baustein zur Vervielfachung eines AR-Signals in IEC 61499-basierten Steuerungssystemen. Seine generische Auslegung und die klare Schnittstelle machen ihn zur ersten Wahl, wenn ein Signal an zwei unabhängige Zielbausteine weitergegeben werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -92,3 +92,8 @@ Die Übung kann direkt in der 4diac‑IDE geöffnet und auf die Zielhardware (z.
 ## Zusammenfassung
 
 In dieser Übung wurde eine gegenseitig verriegelte Steuerung mit zwei Toggle-Flip-Flops realisiert. Die Verriegelung erfolgt über einen einzigen bidirektionalen Adapter, der die Reset-Signale zwischen den beiden Sub-Applikationen überträgt. Die Übung verdeutlicht, wie Adapter zur effizienten Kommunikation zwischen Sub-Applikationen genutzt werden können, und festigt das Verständnis von Ereignissteuerung, Zustandsspeicherung und Verriegelungslogik im IEC 61499‑Modell.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

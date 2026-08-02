@@ -79,3 +79,9 @@ Die Ausgabe über AUDI_OUT erfolgt nach jedem Lese- oder Schreibvorgang.
 
 ## Fazit
 Der **NVS_AUDI**-Funktionsblock stellt eine elegante Lösung zur persistenten Speicherung von UDINT-Daten auf dem ESP32 dar. Durch die Integration des AUDI-Adapter-Interfaces wird die Anbindung an andere Bausteine vereinfacht und der Code klarer strukturiert. Er eignet sich besonders für Anwendungen, die einen standardisierten Datenaustausch zwischen Speicher- und Verarbeitungskomponenten erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)
+* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

@@ -89,3 +89,8 @@ Der Baustein besitzt keinen expliziten internen Zustandsautomaten. Das Verhalten
 ## Fazit
 
 Der `AUI_D_FF_HYS_TMIN` bietet eine kompakte und zuverlässige Lösung zur signalverarbeitenden Datenerfassung, die durch Hysterese und Zeitbegrenzung unerwünschte Störimpulse unterdrückt. Die Adapter‑Schnittstelle erleichtert die Integration in bestehende 4diac‑Projekte mittels standardisierter unidirektionaler AUI‑Verbindungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

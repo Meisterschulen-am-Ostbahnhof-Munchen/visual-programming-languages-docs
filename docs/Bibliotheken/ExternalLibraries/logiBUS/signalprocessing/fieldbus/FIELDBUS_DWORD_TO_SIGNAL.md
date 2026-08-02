@@ -81,3 +81,8 @@ Es gibt nur einen Zustand; nach dessen Abarbeitung kehrt der Baustein in den IDL
 ## Fazit
 
 `FIELDBUS_DWORD_TO_SIGNAL` ist ein kompakter, aber essenzieller Funktionsblock für die robuste Feldbus-Anbindung. Er kombiniert Signalweitergabe mit einer einfachen Gültigkeitsprüfung und stellt die Validität als separates Bool-Signal bereit. Dadurch können nachgeschaltete Bausteine schnell auf gültige Daten reagieren oder Fehlerbehandlungen einleiten. Der Einsatz der importierten Konstanten gewährleistet eine konsistente Definition der Gültigkeitsschwelle über mehrere Bausteine hinweg.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

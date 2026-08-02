@@ -52,3 +52,8 @@ Im Vergleich zu anderen logarithmischen Funktionen:
 
 ## Fazit
 Der F_LOG Funktionsblock bietet eine standardisierte, zuverlässige Implementierung für die Berechnung des dekadischen Logarithmus in 4diac-Steuerungssystemen. Seine einfache Schnittstelle und deterministische Funktionsweise machen ihn ideal für den Einsatz in Echtzeit-Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

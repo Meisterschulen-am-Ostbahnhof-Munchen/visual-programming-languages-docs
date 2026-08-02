@@ -62,3 +62,8 @@ Der `E_TRAIN` (Event Train) ist ein Funktionsbaustein nach IEC 61499, der eine e
 
 ## Fazit
 Der `E_TRAIN`-Baustein ist ideal für Anwendungen, die eine feste Anzahl von Ereignissen in einem konstanten Zeitintervall benötigen. Er kombiniert die Funktionalität eines Taktgebers (`E_CYCLE`) mit einem Zähler, um eine kontrollierte, endliche Impulsfolge zu erzeugen. Der `CV`-Ausgang bietet dabei eine nützliche Rückmeldung über den Fortschritt der Sequenz.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

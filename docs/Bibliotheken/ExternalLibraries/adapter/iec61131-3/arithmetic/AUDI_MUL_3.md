@@ -51,3 +51,8 @@ Der **AUDI_MUL_3** besitzt keinen expliziten Zustandsautomaten. Die Ausgabe **OU
 
 ## Fazit
 Der **AUDI_MUL_3** ist ein kompakter, generischer Funktionsblock zur Multiplikation von drei Werten. Durch die adaptergesteuerte Schnittstelle und die generische Typisierung eignet er sich hervorragend für modulare, wiederverwendbare Steuerungsapplikationen. Die einfache datenflussorientierte Arbeitsweise ohne Zustandsautomaten macht ihn intuitiv einsetzbar und erweiterbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

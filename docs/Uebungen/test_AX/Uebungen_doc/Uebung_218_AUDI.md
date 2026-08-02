@@ -52,3 +52,8 @@ Diese Übung realisiert einen IEC 61131-3 konformen Rückwärtszähler (AUDI_FB_
 ## Zusammenfassung
 
 Die Übung 218 demonstriert einen vollständigen IEC 61131-3 Abwärtszähler mit UDINT-Datentyp, der über Adapterverbindungen mit digitalen Ein- und Ausgängen sowie einer Terminalausgabe kommuniziert. Der Preset-Wert wird durch einen separaten Konvertierungsbaustein bereitgestellt. Die Implementierung zeigt typische Muster für die Verwendung von Zählern in der Automatisierungstechnik mit der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

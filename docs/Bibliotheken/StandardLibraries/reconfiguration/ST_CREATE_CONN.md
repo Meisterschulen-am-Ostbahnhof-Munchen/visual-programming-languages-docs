@@ -62,3 +62,8 @@ Im Gegensatz zu statisch konfigurierten Verbindungen ermöglicht ST_CREATE_CONN 
 
 ## Fazit
 ST_CREATE_CONN ist ein essentieller Baustein für Systeme, die dynamische Rekonfiguration erfordern. Seine Fähigkeit, Verbindungen zwischen Funktionsblöcken zur Laufzeit zu erstellen, macht ihn besonders wertvoll für adaptive und flexible Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -57,3 +57,8 @@ Im Vergleich zu anderen globalen Konstanten-Bausteinen bietet LO spezifische Adr
 
 ## Fazit
 Die LO-Konstanten bieten eine strukturierte und zentrale Möglichkeit zur Definition von Hardware-Adressen für I/O-Module mit geringer Dichte. Durch die Verwendung dieser globalen Konstanten wird die Wartbarkeit und Lesbarkeit von Steuerungsprogrammen verbessert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

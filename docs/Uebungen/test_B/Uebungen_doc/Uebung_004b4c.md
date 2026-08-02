@@ -54,3 +54,8 @@ Beim Drücken von Taster I1 wird Stufe 1 aktiviert (sofern keine andere aktiv is
 ## Zusammenfassung
 
 Die Übung **Uebung_004b4c** veranschaulicht die Realisierung einer gegenseitig verriegelten Toggle‑Flip‑Flop‑Kette unter Verwendung von bidirektionalen AE2‑Adaptern. Sie kombiniert digitale Ein‑/Ausgänge (logiBUS‑Bibliothek) mit einer eigens entwickelten SubApp, die das Toggle‑ und Verriegelungsverhalten kapselt. Die Kopplung über Adapter reduziert die Anzahl der benötigten Verbindungen auf eine pro Stufe und vereinfacht so die Verkabelung. Die Übung eignet sich zum Erlernen des Adapter‑Konzepts in 4diac sowie der Umsetzung von wechselseitiger Sperrlogik (Mutual Exclusion) in industriellen Steuerungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

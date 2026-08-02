@@ -85,3 +85,8 @@ Der **AI_FB_CTU** besticht durch seine einfache Adapter-Anbindung, erfordert abe
 
 ## Fazit
 Der **AI_FB_CTU** ist ein praktischer Zählerbaustein für die adapterbasierte Automatisierung mit 4diac. Er kombiniert die bewährte IEC 61131-3 Logik mit moderner, modularer Schnittstellentechnik. Seine einfache Struktur und klare Funktionsweise machen ihn zur ersten Wahl für alle Aufwärtszählaufgaben, bei denen eine lose Kopplung über Adapter gewünscht ist. Anwender sollten jedoch das Triggern auf jedes Ereignis beachten und bei Bedarf eine Differentialfilterung vorsehen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

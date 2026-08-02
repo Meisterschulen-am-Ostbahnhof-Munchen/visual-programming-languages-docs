@@ -98,3 +98,8 @@ Zusammenfassend ergibt sich folgender Ablauf:
 ## Zusammenfassung
 
 Die Übung ``Uebung_202b`` vermittelt den Einsatz des Interlock-Bausteins ``ILOCK_BLOCK_PROTECT`` zur sicheren Motorreversierung. Durch die Integration einer Schutzzeit wird ein zu schneller Richtungswechsel verhindert, was Bauteilschäden vorbeugt. Die Verknüpfung mit einem ODER-Gatter zur gemeinsamen Low-Side-Ansteuerung sowie die klare Trennung von Ereignis- und Datenflüssen verdeutlichen die typische Struktur einer 4diac-IDE-Steuerung für logiBUS-Hardware.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

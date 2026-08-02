@@ -68,3 +68,8 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten auf oberster Ebene. Der in
 ## Fazit
 
 `SPLIT_AW_INTO_AX` ist ein kompakter, aber leistungsfähiger Konverter, der ein 16‑Bit Wort zuverlässig und ereignissynchron auf 16 einzelne Binärausgänge aufteilt. Durch die Verwendung von Adaptern und Flipflops ist er besonders gut geeignet für den Einsatz in modularen IEC 61499‑Anwendungen, bei denen eine saubere Trennung von Wort‑ und Bitschnittstellen gefordert wird. Er vereinfacht die Schnittstellenanpassung und erhöht die Lesbarkeit und Wartbarkeit des Applikationsnetzwerks.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

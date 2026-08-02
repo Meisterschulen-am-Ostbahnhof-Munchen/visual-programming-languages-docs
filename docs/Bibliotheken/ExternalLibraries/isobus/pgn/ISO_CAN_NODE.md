@@ -44,3 +44,8 @@ Da es sich um statische Konstanten handelt, existiert kein Zustandsautomat.
 
 ## Fazit
 Die `ISO_CAN_NODE` Konstantendatei ist ein einfaches, aber wertvolles Hilfsmittel für die strukturierte Entwicklung von CAN-basierten Steuerungsapplikationen in 4diac. Sie fördert sauberen, selbsterklärenden Code und zentralisiert Konfigurationsdaten, was Fehler reduziert und Anpassungen erleichtert. Ihre Verwendung ist besonders in Projekten mit mehreren CAN-Knoten oder im ISOBUS-Umfeld empfehlenswert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

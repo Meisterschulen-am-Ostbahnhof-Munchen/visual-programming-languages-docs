@@ -59,3 +59,8 @@ Der Hauptvorteil von `BOOLS_TO_ST08X` liegt in der Verwendung eines spezifischen
 
 ## Fazit
 Der `BOOLS_TO_ST08X` Funktionsblock ist ein einfacher, aber äußerst nützlicher Baustein, um acht einzelne BOOL-Signale in eine standardisierte `ST08X`-Struktur zu überführen. Er fördert die Modularität und Lesbarkeit von 4diac-Applikationen, indem er eine saubere und typensichere Methode zur Bündelung von Bit-Informationen bereitstellt. Dies vereinfacht die Datenhandhabung und -weitergabe in komplexen Steuerungssystemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

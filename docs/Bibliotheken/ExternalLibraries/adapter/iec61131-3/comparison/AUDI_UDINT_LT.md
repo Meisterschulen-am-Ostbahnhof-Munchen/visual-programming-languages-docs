@@ -65,3 +65,8 @@ Der Baustein besitzt keine eigene Zustandsmaschine; die gesamte Logik ist ereign
 
 ## Fazit
 Der **AUDI_UDINT_LT** ist ein spezialisierter Vergleichsbaustein für den Datentyp UDINT, der sich durch seine adapterbasierte Ereignis‑ und Datenübertragung auszeichnet. Er eignet sich besonders für modulare Steuerungsanwendungen, die lose Kopplung und Wiederverwendbarkeit erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

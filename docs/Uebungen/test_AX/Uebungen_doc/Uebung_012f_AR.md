@@ -31,3 +31,8 @@ Die SubApp `Uebung_012f_AR` selbst besitzt keine eigenen Ein- oder Ausgangsschni
 ## Zusammenfassung
 
 Die Übung `Uebung_012f_AR` demonstriert das persistente Ablegen eines numerischen Werts mithilfe eines AR-Adapters. Der vorgefertigte Baustein `NVS_IN_AND_STORE_AR` wird parametriert und in einer SubApp gekapselt, wodurch eine klare und wiederverwendbare Lösung für das Einlesen und Speichern von Daten entsteht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -51,3 +51,8 @@ Da der Baustein keinerlei Zustandslogik besitzt, existiert keine Zustandsmaschin
 
 ## Fazit
 Der `AUS_SPLIT_2` ist ein minimalistischer, aber nützlicher Funktionsbaustein zur dezentralen Signalverteilung in 4diac-Anwendungen. Seine generische Natur und die reine Adapter-Schnittstelle machen ihn universell einsetzbar, insbesondere wenn nur eine unidirektionale Signalkopie benötigt wird. Für komplexere Aufgaben mit Steuer- oder Verarbeitungslogik sind erweiterte Varianten erforderlich.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

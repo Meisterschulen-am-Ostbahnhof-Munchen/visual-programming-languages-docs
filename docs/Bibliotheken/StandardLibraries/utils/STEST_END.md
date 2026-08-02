@@ -45,3 +45,8 @@ Im Vergleich zu anderen Service-Funktionsblöcken hat STEST_END keine Ausgänge 
 
 ## Fazit
 Der STEST_END Funktionsblock ist ein einfacher, aber essentieller Baustein für Service-orientierte Architekturen in 4diac-IDE. Seine Einfachheit macht ihn zu einem zuverlässigen Endpunkt für Service-Anfragen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

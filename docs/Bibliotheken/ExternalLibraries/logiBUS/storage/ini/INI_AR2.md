@@ -65,3 +65,8 @@ Da es sich um einen Composite-FB handelt, gibt es keinen expliziten internen Zus
 
 ## Fazit
 Der INI_AR2-Funktionsblock bietet eine kompakte und einfach zu integrierende Lösung zum persistenten Speichern und Laden von REAL-Konfigurationswerten. Durch die Verwendung eines AR2-Adapters wird die Anbindung an andere Komponenten standardisiert. Der Baustein eignet sich besonders für Embedded-Steuerungen mit geringen Anforderungen an die Datenhaltung, bei denen eine INI-Datei ausreichend ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

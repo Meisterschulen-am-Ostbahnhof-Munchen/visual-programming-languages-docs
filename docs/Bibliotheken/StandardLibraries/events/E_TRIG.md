@@ -47,3 +47,8 @@ Angenommen, mehrere Funktionsbausteine in einer Ressource haben einen unverbunde
 
 ## Fazit
 Der `E_TRIG`-Baustein ist ein Werkzeug für fortgeschrittene Anwendungsfälle und für Entwickler, die tiefere Kenntnisse der 4diac-Ausführungsumgebung haben. Er bietet eine leistungsstarke Methode, um die normale, grafisch definierte Ereignisfluss-Logik zu umgehen und direkt mit der Laufzeitumgebung zu interagieren. Er sollte mit Bedacht eingesetzt werden, da seine Wirkung nicht unmittelbar aus dem grafischen Netzwerk ersichtlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

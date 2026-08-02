@@ -74,3 +74,8 @@ In der bereitgestellten XML ist kein expliziter ECC (Execution Control Chart) de
 ## Fazit
 
 Der AQ_MUX_3 ist ein einfacher, aber wirksamer generischer Multiplexer für AQ-Adapter. Er erlaubt die flexible Umschaltung zwischen drei analogen Eingängen und eignet sich besonders für modulare Steuerungsarchitekturen, bei denen eine lose Kopplung über Adapter gewünscht ist. Seine deterministische Reaktion und die einfache Schnittstelle machen ihn zu einem zuverlässigen Baustein in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

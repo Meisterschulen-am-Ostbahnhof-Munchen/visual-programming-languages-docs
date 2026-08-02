@@ -105,3 +105,8 @@ In dieser Übung wird ein klassischer Rückwärtszähler (CTD) nach IEC 61131-3 
 - Die Verschaltung von Adaptern und Ereignissen in einem SubApp-Netzwerk.
 
 Der Schwierigkeitsgrad ist **mittel**. Vorkenntnisse in der 4diac-IDE und grundlegendes Verständnis von Ereignis-/Datenflüssen sowie Adaptern werden empfohlen. Die Übung kann direkt nach dem Import der Bibliothek und dem Anlegen eines passenden Systems gestartet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

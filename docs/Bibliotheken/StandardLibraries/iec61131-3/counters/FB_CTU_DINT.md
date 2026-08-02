@@ -58,3 +58,8 @@ Der Baustein hat keinen internen Zustandsautomaten. Die Logik wird bei jedem REQ
 
 ## Fazit
 Der FB_CTU_DINT ist ein robuster und einfach zu verwendender Aufwärtszähler für Anwendungen mit mittleren bis großen Zählbereichen. Durch seine klare Schnittstelle und einfache Funktionsweise eignet er sich besonders für Standard-Zählaufgaben in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -72,3 +72,9 @@ Der Ablauf der Übung gestaltet sich wie folgt:
 
 ## Zusammenfassung
 Die Übung `Uebung_020j_AX` zeigt eine Parallelschaltung von zwei Ausgängen, die durch einen gemeinsamen Eingang ausgelöst werden. Durch die Verwendung von Adapter-Timern werden unterschiedliche Impulsdauern für `Q1` und `Q2` realisiert, ohne dass klassische Event- und Data-Connections separat gezogen werden müssen. Besonderes Augenmerk liegt auf der korrekten Verwendung des Splitter-Bausteins und der Zeit-Syntax der Parameter.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

@@ -75,3 +75,8 @@ Der Ablauf wird durch Ereignisse gesteuert. Die Verbindungen sind wie folgt real
 ## Zusammenfassung
 
 Die Übung demonstriert den Einsatz eines IEC-61131-3-Zählers (CTUD) in einer 4diac-Adapterumgebung. Sie zeigt die Verknüpfung digitaler Ein-/Ausgänge, die Konvertierung von Datenformaten (`INT` ↔ Adapter ↔ AUDI) sowie die Ausgabe eines Zahlenwerts auf einem Terminal. Der Lerneffekt liegt im Verständnis ereignisgesteuerter Zähler, der Datenfluss-Konvertierung und der Fehlerbehandlung bei negativen Werten. Die Übung ist für Fortgeschrittene geeignet und setzt Grundkenntnisse in der 4diac-IDE und in IEC 61131-3 voraus.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

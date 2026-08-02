@@ -54,3 +54,8 @@ Die Bausteine unterscheiden sich lediglich in der Anzahl der Ausgänge; die Funk
 
 ## Fazit
 Der **AR_SPLIT_9** ist ein einfacher, aber hilfreicher Verteilerbaustein für unidirektionale AR‑Signale. Aufgrund seiner generischen Auslegung kann er flexibel in unterschiedlichen Steuerungsarchitekturen eingesetzt werden, ohne dass eine Typanpassung von Hand erforderlich ist. Er eignet sich besonders für Szenarien, in denen ein Signal auf viele Pfade gleichzeitig dupliziert werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

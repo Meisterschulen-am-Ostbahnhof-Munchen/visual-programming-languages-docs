@@ -81,3 +81,8 @@ Die Verdrahtung der Bausteine erfolgt über Adapterverbindungen. Initial wird de
 ## Zusammenfassung
 
 Diese Übung vermittelt den Umgang mit einem IEC 61131-3 Rückwärtszähler (CTD) in einer Adapter-basierten Implementierung unter 4diac. Sie zeigt die Einbindung digitaler Ein- und Ausgänge über logiBUS sowie die Visualisierung von Zählerwerten auf einem Terminal. Der Lernende versteht das Zusammenspiel von Ereignissen, Datenkonvertierung und die Grenzen der verwendeten Bausteine (keine negativen Zahlen). Die Übung eignet sich für Fortgeschrittene mit Grundkenntnissen in 4diac und logiBUS.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

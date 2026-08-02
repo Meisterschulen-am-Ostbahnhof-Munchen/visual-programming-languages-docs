@@ -85,3 +85,8 @@ Die Übung vermittelt die sichere Ansteuerung eines Reversiermotors mittels Inte
 **Schwierigkeitsgrad:** Mittel  
 **Vorkenntnisse:** Grundlagen der 4diac-IDE, Ereignis- und Datenverbindungen, einfache Logikgatter.  
 **Start der Übung:** Öffnen Sie die Subapplikation `Uebung_203b` und simulieren Sie die digitalen Eingänge `Input_I1` / `Input_I2`. Beobachten Sie die Ausgänge `Output_Q5` (Rechts), `Output_Q6` (Links) und `Output_Q56` (Low-Side).
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

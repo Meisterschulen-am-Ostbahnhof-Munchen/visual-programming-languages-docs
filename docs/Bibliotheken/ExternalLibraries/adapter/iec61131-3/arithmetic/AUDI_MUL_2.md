@@ -68,3 +68,8 @@ Der Baustein besitzt keine Zustände oder ECC‑Zustandsdiagramme. Die Ausführu
 ## Fazit
 
 `AUDI_MUL_2` ist ein generischer, adapterbasierter Multiplikationsbaustein für IEC 61499‑Anwendungen. Durch den Verzicht auf Ereignisse und die Nutzung typisierter Adapter eignet er sich besonders für datenflussorientierte und lose gekoppelte Systeme. Die generische Ausprägung erlaubt den Einsatz mit verschiedenen numerischen Datentypen, ohne dass der Baustein selbst angepasst werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

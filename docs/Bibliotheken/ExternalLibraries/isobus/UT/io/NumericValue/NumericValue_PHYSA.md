@@ -85,3 +85,8 @@ Da der FB keine eigene Zustandsmaschine besitzt, ergibt sich der Zustand vollst�
 ## Fazit
 
 Der Funktionsblock `NumericValue_PHYSA` bietet eine saubere, adapter‑basierte Schnittstelle zur Ausgabe physikalischer REAL‑Werte. Durch die Kapselung der gesamten Umrechnungslogik in `NumericValue_PHYS` bleibt er schlank und wartbar. Sein Einsatz empfiehlt sich überall dort, wo nach ISO 11783‑6 konforme, physikalische Messwerte in einem modularen Automatisierungssystem bereitgestellt werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

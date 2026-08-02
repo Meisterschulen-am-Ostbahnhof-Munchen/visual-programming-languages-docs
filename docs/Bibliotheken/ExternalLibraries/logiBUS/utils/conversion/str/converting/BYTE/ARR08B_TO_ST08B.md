@@ -60,3 +60,8 @@ Dieser Funktionsblock ist nützlich in Szenarien, in denen:
 
 ## Fazit
 Der `ARR08B_TO_ST08B`-Funktionsblock ist ein spezialisierter und effizienter Baustein zur Umwandlung eines 8-Byte-Arrays in eine vordefinierte 8-Byte-Struktur. Er trägt zur Verbesserung der Code-Struktur, Lesbarkeit und Wartbarkeit bei, indem er eine häufig benötigte Konvertierungsaufgabe in einer klaren und wiederverwendbaren Einheit kapselt. Seine zustandslose Natur gewährleistet eine vorhersehbare und zuverlässige Funktion.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

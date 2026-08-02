@@ -62,3 +62,8 @@ Diese Übung implementiert einen bidirektionalen Zähler (Vorwärts-/Rückwärts
 ## Zusammenfassung
 
 Die Übung demonstriert die Verwendung eines IEC‑61131 konformen Vorwärts-/Rückwärtszählers (CTUD) als Adapter in einer 4diac‑IDE. Eingangssignale werden über logiBUS‑Bausteine eingelesen, der Zählerwert wird über eine Adapterkonvertierung initialisiert, und die Ausgänge (QU, QD) sowie der aktuelle Zählerstand werden auf digitale Ausgänge bzw. ein Terminal ausgegeben. Die Übung vermittelt Grundlagen der Zählersteuerung, des Umgangs mit Adaptern und der Ein‑/Ausgabe über logiBUS‑Hardware.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

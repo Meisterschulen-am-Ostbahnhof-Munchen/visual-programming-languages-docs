@@ -83,3 +83,8 @@ Eine explizite Zustandsmaschine (ECC) ist in der vorliegenden XML nicht definier
 ## Fazit
 
 Der **AE_DEMUX_3** ist ein kompakter, generischer Demultiplexer für AE-Signale, der mit minimalem Aufwand eine gezielte Signalweiterleitung auf drei Ausgänge erlaubt. Durch die Verwendung von Adaptern und die generische Architektur eignet er sich gut für modulare und wiederverwendbare Automatisierungslösungen. Die klare Ereignisschnittstelle (REQ/CNF) erleichtert die Integration in ereignisgesteuerte Steuerungsabläufe.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

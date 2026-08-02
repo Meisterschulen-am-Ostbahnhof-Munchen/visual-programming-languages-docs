@@ -58,3 +58,8 @@ Der Baustein hat keinen explizit definierten Zustandsautomaten im XML, da er üb
 
 ## Fazit
 Der Funktionsbaustein NVS_AR2 bietet eine saubere, adapterbasierte Schnittstelle zum asynchronen Lesen und Schreiben von REAL-Daten im nichtflüchtigen Speicher. Durch die Kapselung des NVS-Bausteins und die Integration des AR2-Adapters eignet er sich hervorragend für modulare, ereignisgesteuerte Steuerungssysteme, die persistente Datenverwaltung benötigen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

@@ -80,3 +80,8 @@ Der AE_MUX_2 ist speziell für die Verwendung mit Analogwertadaptern optimiert u
 ## Fazit
 
 Der **AE_MUX_2** bietet eine kompakte und normgerechte Lösung zur Auswahl eines von zwei analogen Adaptersignalen. Dank seiner generischen Natur kann er in verschiedenen Automatisierungsprojekten eingesetzt werden, bei denen eine flexible und elegante Signalumschaltung auf Adapterebene erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

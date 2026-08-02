@@ -74,3 +74,8 @@ Es gibt keine Schleifen oder Verzweigungen in der Zustandsmaschine; jeder Aufruf
 
 ## Fazit
 Der Funktionsblock `FIELDBUS_WORD_TO_SIGNAL` bietet eine kompakte und zuverlässige Möglichkeit, Feldbussignale auf Gültigkeit zu prüfen und nur als gültig erkannte Werte weiterzuleiten. Durch die Verwendung von importierten Konstanten wird eine konsistente Definition von Gültigkeitsgrenzen und Unavailable‑Werten über das gesamte Projekt hinweg gewährleistet. Der Baustein eignet sich besonders für sicherheitskritische Anwendungen, in denen ungültige Daten erkannt und unterdrückt werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

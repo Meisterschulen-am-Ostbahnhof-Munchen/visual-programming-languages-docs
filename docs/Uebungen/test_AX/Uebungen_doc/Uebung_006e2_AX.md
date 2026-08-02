@@ -59,3 +59,8 @@ Der Programmablauf wird durch Adapter-Verbindungen (`AdapterConnections`) realis
 
 ## Zusammenfassung
 Die `Uebung_006e2_AX` demonstriert eine grundlegende Speicherfunktion in der Steuerungstechnik. Durch die Verwendung von Adaptern (`AX_FB_RS`, `logiBUS_IXA`, `logiBUS_QXA`) wird der Schaltplan übersichtlich gehalten, da Ereignis- und Datenflüsse in einer einzigen Verbindungslinie zusammengefasst sind. Das Verhalten entspricht einem klassischen RS-Flip-Flop, bei dem `Input_I1` als Set-Eingang und `Input_I2` als Reset-Eingang fungiert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

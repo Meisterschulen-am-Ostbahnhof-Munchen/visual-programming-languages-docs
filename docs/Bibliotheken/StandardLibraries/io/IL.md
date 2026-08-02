@@ -73,3 +73,8 @@ Im Vergleich zu anderen Eingabeblöcken wie IB (Byte), IW (Word) oder ID (Double
 
 ## Fazit
 Der IL-Funktionsblock bietet eine robuste und flexible Schnittstelle für die Verarbeitung von 64-Bit Eingabedaten in IEC 61499-Steuerungssystemen. Seine Unterstützung für verschiedene Betriebsmodi (polling und event-driven) macht ihn vielseitig einsetzbar in verschiedenen industriellen Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

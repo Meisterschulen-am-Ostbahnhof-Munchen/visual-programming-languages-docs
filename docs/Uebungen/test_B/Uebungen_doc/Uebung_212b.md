@@ -94,3 +94,8 @@ Die Steuerung erfolgt über Ereignis- und Datenverbindungen:
 ## Zusammenfassung
 
 Die Übung 212b zeigt die Kombination eines IEC 61131-3 Vorwärtszählers (FB_CTU_LINT) mit einer Terminalausgabe. Über zwei Digitaleingänge wird der Zähler gesteuert; der Ausgang Q schaltet bei Erreichen des Voreinstellwerts. Der aktuelle Zählerwert wird nach jeder Aktion über eine Typkonvertierung auf einem LogiBUS-Terminalbaustein ausgegeben. Dadurch wird die Verkettung von Ereignissen, die Datenflusslogik und die Nutzung von Utility-Bausteinen in 4diac demonstriert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

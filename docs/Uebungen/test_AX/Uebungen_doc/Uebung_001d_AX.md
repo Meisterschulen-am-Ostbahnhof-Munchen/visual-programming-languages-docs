@@ -54,3 +54,8 @@ Im Ergebnis wird der Digitaleingang **I1** direkt auf den Digitalausgang **Q1** 
 
 Die Übung `Uebung_001d_AX` zeigt, wie man mit **Plug-and-Socket-Verbindungen** (Adapterbausteine) Ereignisse zwischen Funktionsbausteinen koppelt, ohne direkte Datenleitungen zu verwenden.  
 Durch die Kombination von Splitter- (`AX_SPLIT_2`) und UND-Baustein (`AX_AND_2`) wird ein einfaches Durchschalten realisiert. Dies vermittelt ein grundlegendes Verständnis für die ereignisgesteuerte Kommunikation in der 4diac-IDE und die Verwendung von Adaptern in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -55,3 +55,8 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten. Die internen `E_D_FF_ANY`
 
 ## Fazit
 Der Baustein **SPLIT_AW_INTO_AQ** bietet eine kompakte und zuverlässige Möglichkeit, ein einkommendes Word in acht Quarter‑Signale aufzuteilen. Durch die integrierte Taktsynchronisation und die standardisierten Adapter‑Schnittstellen eignet er sich hervorragend für modulare IEC 61499‑Anwendungen, die eine gleichzeitige Datenaufbereitung für mehrere Teilnehmer erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

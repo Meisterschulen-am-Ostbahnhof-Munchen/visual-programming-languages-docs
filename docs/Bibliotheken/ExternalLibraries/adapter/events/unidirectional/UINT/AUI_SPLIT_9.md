@@ -70,3 +70,8 @@ Der FB besitzt keinen Zustandsautomaten. Es findet keine sequentielle Abarbeitun
 ## Fazit
 
 Der **AUI_SPLIT_9** ist ein einfacher, aber effektiver Funktionsbaustein zur Mehrfachverteilung unidirektionaler AUI-Signale. Seine generische Natur ermöglicht eine flexible Wiederverwendung in verschiedenen Projekten. Aufgrund der fehlenden Eigenlogik ist der Baustein ressourcenschonend und leicht verständlich. Er eignet sich besonders für die schnelle Realisierung von 1-zu-n-Verbindungen in adapterbasierten Automatisierungsarchitekturen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

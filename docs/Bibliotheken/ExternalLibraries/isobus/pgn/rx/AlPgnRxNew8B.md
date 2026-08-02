@@ -73,3 +73,8 @@ Der Block verfügt über implizite Zustände:
 
 ## Fazit
 Der `AlPgnRxNew8B` ist ein essentieller Baustein für die Entwicklung von ISOBUS-kompatiblen Empfangsanwendungen in der 4diac IDE. Er kapselt die Komplexität der PGN-Filterung und -Verwaltung und bietet der Anwendung eine saubere, ereignisgesteuerte Schnittstelle für den Empfang von CAN-Nachrichten nach dem ISO 11783-Standard. Seine klare Trennung von Konfiguration (`install`), Datentransfer (`IND`) und Fehlerbehandlung macht ihn robust und einfach in übergeordnete Steuerungslogiken zu integrieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

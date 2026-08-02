@@ -55,3 +55,8 @@ Der Funktionsblock ist zustandslos (stateless). Sein Verhalten ist bei jedem `RE
 
 ## Fazit
 Der `BYTE_TO_ARR08X` Funktionsblock ist ein einfacher, spezialisierter und äußerst praktischer Konvertierungsbaustein. Er löst ein häufiges Problem in der Automatisierungstechnik auf elegante Weise, indem er die Bit-Extraktion aus einem Byte abstrahiert und die Ergebnisse in einem gut handhabbaren Array bereitstellt. Seine deterministische und zustandslose Natur macht ihn zu einem zuverlässigen und performanten Bestandteil für Anwendungen, in denen digitale Bit-Informationen kompakt übertragen und dann dezentral verarbeitet werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

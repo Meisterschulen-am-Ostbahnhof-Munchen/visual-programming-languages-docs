@@ -98,3 +98,8 @@ Die Übung 222b demonstriert den Einsatz eines adaptierten IEC‑Zählers in der
 Der aktuelle Zählerstand wird sowohl auf digitale Ausgänge als auch – nach Konvertierung in eine physikalische Größe – auf ein Terminal ausgegeben.  
 Sie lernen die Verbindung von Ein‑/Ausgabebausteinen, die Konvertierung von Ganzzahl‑ in Gleitkommawerte sowie das Setzen eines konstanten Startwerts kennen.  
 Hinweise zu negativen Zählerständen und zur Ereignisreduzierung ergänzen die praktische Anwendung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

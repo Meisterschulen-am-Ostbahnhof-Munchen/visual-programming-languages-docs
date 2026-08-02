@@ -59,3 +59,8 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 
 ## Fazit
 Der `AND_4_BOOL` Funktionsblock ist ein einfacher, robuster und standardkonformer Baustein zur Verarbeitung von Logiksignalen. Seine klare ereignisgesteuerte Schnittstelle und die feste Anzahl von vier Eingängen machen ihn besonders geeignet für Steuerungsaufgaben, bei denen mehrere Bedingungen gleichzeitig erfüllt sein müssen. Als Teil der `iec61131::bitwiseOperators` Bibliothek ist er eine grundlegende Komponente für den Entwurf von Steuerungslogik in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

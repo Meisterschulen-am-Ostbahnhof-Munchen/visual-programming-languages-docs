@@ -30,3 +30,10 @@ Das Hutschienenmoped S3 ist ein deutliches Upgrade und richtet sich an Anwender 
 
 Wählen Sie das S3-Modell, wenn Sie anspruchsvolle Projekte planen, maximale Performance benötigen oder Ihr Projekt für zukünftige KI-Anwendungen rüsten wollen.
 
+
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)
+* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

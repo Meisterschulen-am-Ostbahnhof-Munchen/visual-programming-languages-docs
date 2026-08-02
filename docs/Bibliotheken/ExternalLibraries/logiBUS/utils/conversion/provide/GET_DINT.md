@@ -59,3 +59,8 @@ Im Gegensatz zu einem **MOVE**-Baustein, der einen Wert von einem Eingang zu ein
 
 ## Fazit
 **GET_DINT** ist ein einfacher, aber nützlicher Baustein zum ereignisgesteuerten Lesen und Puffern eines DINT-Werts aus einer InOut-Variable. Seine Stärke liegt in der Möglichkeit, auf gemeinsame Variablen zuzugreifen und den gelesenen Wert ohne weitere Seiteneffekte bereitzustellen. Die klare Struktur und die geringe Komplexität machen ihn zu einem zuverlässigen Werkzeug für viele Steuerungsaufgaben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -49,3 +49,8 @@ Im Gegensatz zu direkten I/O-Funktionsbausteinen (wie z.B. `E_SR` oder `E_D_FF`)
 
 ## Fazit
 Der `logiBUS_2_CAN_DI_S` Datentyp ist ein essentielles und schlankes Konfigurationselement für die Anbindung digitaler Eingänge an ein CAN-basiertes logiBUS-System innerhalb der 4diac IDE. Durch die Kapselung der Pinnummer in eine strukturierte Variable ermöglicht er eine klare, typgesicherte und wartbare Konfiguration der Hardware-Schnittstelle in übergeordneten Steuerungsalgorithmen. Die Verwendung eines eindeutigen Initialwerts hilft, Fehlkonfigurationen frühzeitig zu erkennen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

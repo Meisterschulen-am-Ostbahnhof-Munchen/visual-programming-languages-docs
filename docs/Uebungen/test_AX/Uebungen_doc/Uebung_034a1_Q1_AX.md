@@ -43,3 +43,9 @@ Die Übung ist als **SubAppType** realisiert und verwendet ausschließlich Adapt
 ## Zusammenfassung
 
 Die Übung zeigt eine **minimale Konfiguration zur Ansteuerung eines PWM-Ausgangs** mittels einer eingegebenen Zahl. Sie verdeutlicht die Verwendung von **Adapterverbindungen** zur Datenübertragung zwischen ISOBUS-Eingabe und Aktor. Der Aufbau ist einfach, erfordert jedoch das Verständnis der ISOBUS-Kommunikation und der PWM-Parametrierung. Die Übung eignet sich für Einsteiger in die 4diac-IDE und die logiBUS-Hardware.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

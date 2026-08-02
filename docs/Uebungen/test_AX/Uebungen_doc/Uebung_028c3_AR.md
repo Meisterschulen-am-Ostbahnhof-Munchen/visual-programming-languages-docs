@@ -73,3 +73,9 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangs (AnalogInput_
 ## Zusammenfassung
 
 Die Übung "Uebung_028c3_AR" realisiert eine vollständige Analog-Eingangskalibrierung mit persistenter Speicherung von Offset und Skalierung in einer INI-Datei. Der kalibrierte Wert wird auf einem Display visualisiert und gleichzeitig einem Hysterese-Regler zugeführt, der einen digitalen Ausgang schaltet. Die Steuerung erfolgt über drei digitale Eingänge: Freigabe (I1), Commit (I2) und Start (I3). Die Übung vermittelt den Umgang mit Adaptern, Signalumwandlungen und der Anbindung von INI-Speicherbausteinen in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

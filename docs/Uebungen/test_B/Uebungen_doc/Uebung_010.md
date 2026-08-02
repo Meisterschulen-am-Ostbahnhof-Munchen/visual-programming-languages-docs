@@ -65,3 +65,8 @@ Wenn der Bediener den Softkey am Terminal drückt:
 
 **Hydraulikventil manuell steuern**:
 Der Fahrer wählt auf seinem Terminal eine Service-Seite aus. Dort befindet sich ein Button "Ventil spülen". Solange er diesen Button gedrückt hält, wird das entsprechende Magnetventil (`Q1`) angesteuert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Interaktiver JBC-Lötspitzen Guide & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/werkzeug/lötkolben/jbc-lötspitzen-übersicht/)

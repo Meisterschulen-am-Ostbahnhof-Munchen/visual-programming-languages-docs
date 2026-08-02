@@ -70,3 +70,9 @@ Somit erfolgt die gesamte Datenübertragung adaptierbar und bidirektional über 
 
 ## Zusammenfassung
 Die Übung "Uebung_034_AD" zeigt eine einfache, aber praxisrelevante Anwendung: die Umsetzung eines analogen Messwerts in ein PWM-Signal unter Verwendung von Adapterverbindungen. Der Analogwert wird durch eine Linksverschiebung verstärkt und direkt an den PWM-Ausgang weitergeleitet. Die Adaptertechnik ermöglicht eine flexible und typsichere Datenübertragung ohne separate Datenverbindungen. Dieses Beispiel eignet sich für Anwendungen wie Helligkeitssteuerung, Drehzahlregelung oder Signalumformung in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

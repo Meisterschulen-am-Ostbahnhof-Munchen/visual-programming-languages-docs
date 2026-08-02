@@ -49,3 +49,8 @@ Der CLIENT_0_1 Block baut über INIT eine Verbindung auf. Mit dem REQ-Ereignis f
 | Lizenz | EPL-2.0 |
 | Version | 3.0 (2025-19-26, Alois Zoitl) |
 | 4diac-Paket | iec61499::net |
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

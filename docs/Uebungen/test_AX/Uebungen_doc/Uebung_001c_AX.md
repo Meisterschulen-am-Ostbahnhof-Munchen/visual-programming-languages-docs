@@ -62,3 +62,8 @@ Ohne diese `INITO -> REQ` Verbindung würde der Ausgang erst dann aktualisiert, 
 Ein praktisches Beispiel ist die **Zustandssynchronisation nach einem Stromausfall**:
 
 Stellen Sie sich vor, eine Steuerung steuert eine Lüftungsklappe basierend auf der Position eines Schalters. Wenn die Steuerung neu startet, muss sie sofort wissen, in welcher Position der Schalter steht, um die Klappe korrekt anzusteuern, noch bevor der Bediener den Schalter erneut betätigt. Die Boot-Abfrage stellt sicher, dass Software-Zustand und Hardware-Realität von der ersten Sekunde an synchron sind.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

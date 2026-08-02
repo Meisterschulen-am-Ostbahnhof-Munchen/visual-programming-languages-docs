@@ -58,3 +58,8 @@ Der Baustein besitzt keine expliziten Zustände im Sinne einer Zustandsmaschine.
 
 ## Fazit
 Der **AUDI_MUX_5** ist ein kompakter, generischer Multiplexer für fünf Adaptereingänge. Er ermöglicht eine saubere, typengeprüfte Umschaltung von Signalen in der Automatisierungstechnik und lässt sich aufgrund seiner generischen Natur flexibel in verschiedene Steuerungsumgebungen integrieren. Seine einfache Handhabung und klare Schnittstelle machen ihn zu einem nützlichen Werkzeug für die Signalauswahl in 4diac‑Projekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

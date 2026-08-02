@@ -62,3 +62,8 @@ Der Funktionsblock `ST08B_TO_BYTES` ist ein reiner Konverter ohne internen Zusta
 
 ## Fazit
 Der `ST08B_TO_BYTES`-Funktionsblock ist ein nützliches Hilfsmittel zur Zerlegung einer spezifischen 8-Byte-Struktur in ihre einzelnen Byte-Bestandteile. Seine Einfachheit, klare Schnittstelle und deterministische Funktionsweise machen ihn zu einem zuverlässigen Baustein für Anwendungen, die eine präzise Kontrolle und Analyse von 8-Byte-Daten erfordern. Er fördert die Modularität und Wiederverwendbarkeit in 4diac-Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

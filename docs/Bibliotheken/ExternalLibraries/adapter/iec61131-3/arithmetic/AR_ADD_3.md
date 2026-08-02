@@ -63,3 +63,8 @@ Der Baustein besitzt kein explizites Zustandsdiagramm (ECC). Es handelt sich um 
 ## Fazit
 
 `AR_ADD_3` ist ein übersichtlicher, generischer Funktionsblock für die Addition dreier Werte unter Verwendung von Adaptern. Durch die Abstraktion über generische Attribute und Adapter eignet er sich gut für IEC-61499-Anwendungen, die eine flexible und wiederverwendbare Signalverarbeitung erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

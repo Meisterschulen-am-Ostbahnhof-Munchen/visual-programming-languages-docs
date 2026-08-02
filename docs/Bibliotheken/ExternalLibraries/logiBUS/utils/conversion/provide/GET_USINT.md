@@ -84,3 +84,8 @@ Ein Startzustand ist nicht explizit definiert; nach dem Initialisieren wird der 
 ## Fazit
 
 Der `GET_USINT`-Funktionsblock bietet eine einfache und effiziente Möglichkeit, einen `USINT`-Wert aus einer InOut-Variable auszulesen und als gepufferten Ausgang bereitzustellen. Seine klare, ereignisgesteuerte Schnittstelle und der minimale Zustandsautomat machen ihn zu einem nützlichen Werkzeug für Entkopplungs- und Initialisierungsaufgaben in 4diac-Anwendungen. Er ist ideal geeignet, wenn der Wert einer Variablen nur auf Anforderung abgerufen werden soll und zwischenzeitliche Änderungen der Quelle ignoriert werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

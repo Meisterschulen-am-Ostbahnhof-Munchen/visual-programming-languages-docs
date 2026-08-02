@@ -76,3 +76,8 @@ Die Logik dieser Übung basiert auf einer Rückkopplung des aktuellen Zustands, 
 Die Übung **Uebung_004b_AX_ASR_X** demonstriert die Erstellung eines Toggle-Flip-Flops unter ausschließlicher Verwendung von Adapter-Event-Bausteinen und Konvertern.
 
 Obwohl die Funktionalität (Taster drücken -> Licht an, Taster drücken -> Licht aus) gegeben ist, zeigt der interne Kommentar ("nicht empfohlen !!! viel zu viel Bausteine"), dass dies eine akademische Übung ist. Sie verdeutlicht, wie man komplexe Adapter-Netzwerke mit Rückkopplungen und Signalweichen (`SWITCH` und `SPLIT`) aufbaut, stellt jedoch keine effiziente Lösung für eine einfache Stromstoßschaltung dar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -58,3 +58,8 @@ Alternative Zustände können je nach Implementierung des Kommunikationstreibers
 
 ## Fazit
 Der Funktionsblock `DataPanel_MI_IXn` bietet eine standardisierte Schnittstelle zum Auslesen eines Binäreingangs in DataPanel‑Systemen über das MI‑Protokoll. Durch die serviceorientierte Struktur (INIT/REQ/IND) lässt er sich flexibel in ereignisgesteuerte Automatisierungslösungen integrieren. Die Konfiguration über dedizierte Parameter sorgt für eine einfache und robuste Anbindung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

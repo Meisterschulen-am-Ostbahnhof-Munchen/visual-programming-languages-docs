@@ -69,3 +69,8 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DO_S` keinen int
 
 ## Fazit
 Der `logiBUS_DO_S`-Struct ist ein einfaches, aber wesentliches Hilfselement im logiBUS-Ökosystem der 4diac IDE. Er standardisiert und formalisiert die Adressierung von digitalen Ausgangspins, fördert die typsichere Programmierung und dient durch seinen definierten Initialwert als Grundlage für eine robuste Initialisierungslogik. Seine Verwendung ist empfohlen, wenn Funktionsblöcke der logiBUS-Bibliothek für digitale Ausgaben konfiguriert werden sollen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

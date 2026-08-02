@@ -92,3 +92,8 @@ Der `INI_ALR` kombiniert die bewährte INI‑Datei‑Funktionalität mit einer s
 ## Fazit
 
 Der `INI_ALR` ist ein praxisorientierter Funktionsblock, der den Zugriff auf `settings.ini` für LREAL‑Daten um eine flexible Adapter‑Schnittstelle erweitert. Er eignet sich besonders für Anwendungen, die eine einheitliche ALR‑basierte Kommunikation erfordern und gleichzeitig eine einfache, dateibasierte Persistenz benötigen. Durch die Kapselung des komplexen `INI`‑Bausteins und die automatische Verkettung von Ereignis‑ und Datenflüssen wird der Entwicklungsaufwand reduziert und die Wiederverwendbarkeit erhöht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

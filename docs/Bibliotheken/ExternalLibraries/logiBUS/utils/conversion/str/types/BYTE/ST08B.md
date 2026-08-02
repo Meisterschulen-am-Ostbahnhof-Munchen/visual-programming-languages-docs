@@ -46,3 +46,8 @@ Da es sich um einen passiven Datentyp und nicht um einen aktiven Funktionsblock 
 
 ## Fazit
 Der `ST08B` ist ein einfacher, aber äußerst nützlicher strukturierter Datentyp für die IEC 61499-Programmierung. Er bietet eine klare und strukturierte Methode, um acht Byte Daten zu gruppieren, und fördert damit die Lesbarkeit, Wartbarkeit und Typsicherheit in Anwendungen, die mit festen Datenblöcken oder parametrisierten Datensätzen arbeiten. Seine feste Größe und sequenzielle Anordnung machen ihn zu einem verlässlichen Baustein für Datenkommunikation und -konvertierung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

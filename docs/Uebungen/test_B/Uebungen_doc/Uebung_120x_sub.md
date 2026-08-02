@@ -78,3 +78,9 @@ Die SubApp arbeitet ereignisgesteuert. Der Ablauf startet, sobald der Baustein *
 ## Zusammenfassung
 
 Die Übung **Uebung_120x_sub** zeigt, wie aus einem einfachen Zählerwert eine vollständige ISOBUS‑CAN‑Nachricht aufgebaut und über einen standardisierten Adapter versendet werden kann. Sie vermittelt wichtige Konzepte der IEC 61499 wie ereignisgesteuerte Verarbeitungsketten, Datentypkonvertierung (UINT → BYTE → Array → Struktur) und die Nutzung von Adapter‑Schnittstellen für buskommunikative Funktionsbausteine. Die SubApp kann als Grundlage für eigene CAN‑Nachrichten‑Generatoren verwendet werden und erleichtert das Verständnis der ISOBUS‑PGN‑Übertragung mit 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

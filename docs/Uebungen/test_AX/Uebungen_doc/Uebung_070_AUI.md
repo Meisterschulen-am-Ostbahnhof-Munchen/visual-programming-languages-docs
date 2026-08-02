@@ -57,3 +57,8 @@ Die Übung **Uebung_070_AUI** vermittelt folgende Lerninhalte:
 - Verständnis des **Datenflusses** zwischen Sensor‑Interface (IA) und UT‑Ausgabe (Q)
 
 Der Schwierigkeitsgrad ist als **fortgeschritten** einzustufen, da grundlegende Kenntnisse über Adapter‑Schnittstellen und das UT‑System vorausgesetzt werden. Die Übung kann direkt in der 4diac‑IDE geladen und simuliert werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

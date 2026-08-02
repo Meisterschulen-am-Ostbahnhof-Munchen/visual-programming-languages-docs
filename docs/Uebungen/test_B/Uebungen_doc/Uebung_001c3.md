@@ -46,3 +46,8 @@ Der Ablauf wird durch die Ereignis- und Datenverbindungen im SubApp-Netzwerk def
 
 Die Übung zeigt die grundlegende Verknüpfung eines digitalen Eingangs mit einem Ausgang unter 4diac.  
 Durch die Verwendung von Negation und Initialisierungsereignissen wird das Verhalten beim Hochfahren gesteuert. Der Lernende versteht, wie Ereignis- und Datenflüsse in einer IEC 61499-Anwendung aufgebaut werden und wie man mit Negation auf Verbindungsebene arbeitet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -57,3 +57,8 @@ Der Funktionsblock besitzt **keine explizite Zustandsmaschine** (ECC). Er reagie
 
 ## Fazit
 Der **ADI_MUX_5** ist ein kompakter, generischer Multiplexer für ADI‑Adapter in der 4diac‑IDE. Seine adapterbasierte Schnittstelle und die einfache Indexsteuerung machen ihn zu einem praktischen Werkzeug für die flexible Signalauswahl in Steuerungsanwendungen. Die Möglichkeit der Generierung (GenericClassName) erlaubt eine typsichere Anpassung an konkrete Projekte.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

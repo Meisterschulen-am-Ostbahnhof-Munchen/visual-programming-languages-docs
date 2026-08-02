@@ -38,3 +38,8 @@ Die SubApp enthält **keine weiteren Funktionsbausteine oder Sub-Bausteine**. De
 ## Zusammenfassung
 
 Die Übung **Uebung_075** zeigt die grundlegende Integration des IMU-Sensors MM710 über den logiBUS. Der Funktionsbaustein `FB_MM710_IMU` wird mit den notwendigen Parametern konfiguriert und in einer SubApp gekapselt. Damit wird eine wiederverwendbare Komponente geschaffen, die in größere Automatisierungsprojekte eingebunden werden kann.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

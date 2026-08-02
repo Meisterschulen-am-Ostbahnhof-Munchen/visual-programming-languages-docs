@@ -56,3 +56,8 @@ Es sind keine verschachtelten Sub‑Bausteine (Unterapplikationen) vorhanden.
 ## Zusammenfassung
 
 Die Übung *Uebung_201_Interlock_BOOL* demonstriert den Aufbau einer einfachen Verriegelungskette mit vier Stufen. Jeder Eingang schaltet einen eigenen Interlock‑Baustein, der seinen Ausgang nur dann freigibt, wenn die gesamte Kette bis zu ihm durchgängig aktiv ist. Die Realisierung erfolgt mit den logiBUS‑Standardbausteinen für digitale Ein‑/Ausgabe und dem speziellen Interlock‑Funktionsbaustein `ILOCK_IO`. Dieses Grundprinzip lässt sich direkt auf sicherheitsrelevante Steuerungen (z. B. Shut‑down‑Systeme) übertragen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

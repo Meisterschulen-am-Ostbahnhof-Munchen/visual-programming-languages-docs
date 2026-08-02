@@ -49,3 +49,8 @@ Die gesamte Verarbeitung erfolgt ereignisgesteuert: Sobald ein neuer Wert am Ein
 ## Zusammenfassung
 
 In dieser Übung wird der gesamte Pfad eines numerischen Werts von der isobus‑Eingabe über eine Adapter‑Konvertierung und persistente Speicherung bis hin zur Netzwerkausgabe abgebildet. Die Verwendung der Adapter‑Schnittstellen ermöglicht eine lose Kopplung zwischen den Komponenten. Der Lernende erhält einen praktischen Einblick in die Datenverarbeitung mit isobus‑Bausteinen und die Integration eines nichtflüchtigen Speichers in eine 4diac‑Applikation.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

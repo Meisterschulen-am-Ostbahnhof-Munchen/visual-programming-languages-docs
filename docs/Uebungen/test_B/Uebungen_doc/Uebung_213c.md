@@ -96,3 +96,9 @@ Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_UDINT) m
 ## Zusammenfassung
 
 Die Übung `Uebung_213c` führt einen Vorwärtszähler mit automatischem Reset bei Erreichen der Grenze 31 aus. Ein zyklischer Timer (100 ms) erzeugt über ein T‑Flipflop einen 200‑ms‑Takt für die Zählimpulse. Der Zählerstand wird über einen Multiplexer in ein numerisches Terminalformat umgesetzt und angezeigt. Zusätzlich steuern zwei Taster den Start/Stopp der gesamten Animation. Die Übung zeigt anschaulich die Integration von IEC 61131‑3 Zählerlogik in ein ereignisgesteuertes 4diac‑System mit grafischer Ausgabe.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

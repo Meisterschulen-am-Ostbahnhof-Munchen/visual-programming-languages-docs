@@ -64,3 +64,8 @@ Der AIS_SPLIT_3 füllt die Lücke zwischen dem einfachen 2-Wege-Splitter und ein
 ## Fazit
 
 Der **AIS_SPLIT_3** ist ein einfacher, aber effektiver Baustein zur Vervielfachung eines AIS-Datenstroms. Dank seiner generischen Natur und der klaren adapterbasierten Schnittstelle lässt er sich leicht in größere 4diac-Projekte integrieren. Für Anwendungen, die eine mehrfache Verteilung ohne Datenänderung erfordern, bietet er eine robuste und wartbare Lösung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

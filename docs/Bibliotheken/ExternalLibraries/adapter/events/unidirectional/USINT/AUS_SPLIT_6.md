@@ -57,3 +57,8 @@ Der Baustein besitzt **keine expliziten Zustände**. Sein Verhalten ergibt sich 
 
 ## Fazit
 Der **AUS_SPLIT_6** ist ein einfacher, aber nützlicher generischer Funktionsbaustein zur Signalverteilung in IEC 61499‑Anwendungen. Er reduziert den Verdrahtungsaufwand, indem er ein einzelnes AUS‑Signal auf sechs parallele Ausgänge bringt. Seine generische Natur macht ihn flexibel einsetzbar, solange der verwendete AUS‑Adapter den unidirektionalen Vertrag einhält.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

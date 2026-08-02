@@ -118,3 +118,8 @@ Laden Sie die Übung `Uebung_215` aus dem Paket `Uebungen` in ein leeres Projekt
 ## Zusammenfassung
 
 In dieser Übung wurde ein vollständiger Rückwärtszähler gemäß IEC 61131‑3 aufgebaut. Der Zähler zählt bei Tastendruck an `I1` von 10 abwärts, setzt sich bei Tastendruck an `I2` zurück und aktiviert den Ausgang `Q1`, sobald der Wert 0 erreicht ist. Der aktuelle Zählerstand wird auf einem Terminal ausgegeben. Die Übung demonstriert die Integration von IEC‑Bausteinen mit logiBUS‑Hardware und isobus‑Visualisierung und vermittelt ein grundlegendes Verständnis für ereignisgesteuerte Automatisierungssysteme.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

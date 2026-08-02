@@ -47,3 +47,8 @@ Der Funktionsblock nimmt die beiden 16-Bit-Eingabewörter (`WORD_00` und `WORD_0
 
 ## Fazit
 Der `ASSEMBLE_DWORD_FROM_WORDS` Funktionsblock bietet eine einfache und effiziente Möglichkeit, zwei 16-Bit-Wörter zu einem 32-Bit-Doppelwort zu kombinieren. Seine klare Schnittstelle und direkte Integration in 4diac machen ihn besonders nützlich für Anwendungen, die mit der Kombination von Wortdaten arbeiten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

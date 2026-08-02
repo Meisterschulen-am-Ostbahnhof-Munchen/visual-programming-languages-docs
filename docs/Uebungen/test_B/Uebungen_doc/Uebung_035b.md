@@ -65,3 +65,8 @@ Der Ablauf der Übung wird durch die Interaktion der Taster mit dem Sequencer-Ba
 ## Zusammenfassung
 
 Die Übung **Uebung_035b** demonstriert die Implementierung einer komplexeren Schrittkettensteuerung (`sequence_ET_04`) innerhalb der 4diac-IDE. Sie verknüpft manuelle Benutzereingaben (Start, Reset, spezifische Übergangstrigger) mit zeitbasierten Parametern, um vier Ausgänge sequenziell zu schalten. Gleichzeitig wird der interne Zustand der Logik (die Schrittnummer) für den Benutzer auf einem Display visualisiert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

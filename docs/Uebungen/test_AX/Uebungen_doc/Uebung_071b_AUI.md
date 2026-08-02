@@ -63,3 +63,8 @@ Diese Übung demonstriert die Ausgabe von Wheel‑Based Speed (WBSD) und Wheel�
 ## Zusammenfassung
 
 Die Übung zeigt eine vollständige Kette von der ISOBUS‑Sensordatenaufnahme über Adapter‑Konvertierung und Signalaufteilung bis hin zur UT‑Anzeige und einer wegabhängigen digitalen Ausgabe. Die radbasierte Distanz wird genutzt, um alle 10 Meter einen Impuls auf einem logiBUS‑Ausgang zu erzeugen. Damit wird die typische Anwendung „WBSD auf UT ausgeben mit Wegimpulsen“ in einer adapter‑basierten Variante umgesetzt.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

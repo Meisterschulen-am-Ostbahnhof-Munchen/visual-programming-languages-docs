@@ -51,3 +51,8 @@ Der Multiplexer F_MUX_3 wählt basierend auf dem Steuersignal K (von F_BOOL_TO_U
 
 ## Zusammenfassung
 Diese Übung veranschaulicht die grundlegende Verwendung eines Multiplexers in 4diac. Sie zeigt, wie verschiedene Eingangssignale über ein Steuersignal selektiv an einen Ausgang weitergeleitet werden können. Die Übung kombiniert digitale Ein-/Ausgänge mit Signalverarbeitungsbausteinen und Typkonvertierungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

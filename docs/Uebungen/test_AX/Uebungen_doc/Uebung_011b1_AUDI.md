@@ -64,3 +64,8 @@ Die Übung zeigt eine vollständige Verarbeitungskette für zwei numerische ISOB
 - und Ausgabe über einen ISOBUS‑Ausgangsbaustein (`Q_NumericValue_AUDI`).
 
 Sie vermittelt grundlegende Kenntnisse im Umgang mit Adapterschnittstellen und der Datenflussprogrammierung in 4diac für industrielle ISOBUS‑Anwendungen (z. B. Landmaschinensteuerungen).
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

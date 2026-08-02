@@ -107,3 +107,8 @@ Im Vergleich zu einem allgemeinen analogen Eingangs‑FB (z. B. einem FB für 
 ## Fazit
 
 Der Funktionsblock **DataPanel_MI_IW_4_20mA** stellt eine robuste und kompakte Lösung für die Erfassung von 4‑20 mA‑Signalen in einem proprietären DataPanel‑System dar. Die klare Trennung von Initialisierung, Anforderung und spontaner Indikation sowie die integrierte Hysterese machen ihn für den praktischen Einsatz in der Agrartechnik geeignet. Durch die Parametrierbarkeit von Knotenadresse und Kanal ist er flexibel einsetzbar und in bestehende Automatisierungsnetzwerke integrierbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -81,3 +81,8 @@ Der `AL_DEMUX_5` schließt eine Lücke für die Demultiplexierung von Adapterdat
 ## Fazit
 
 Der **AL_DEMUX_5** ist ein einfacher, aber nützlicher generischer Demultiplexer für Adapter vom Typ `AL`. Seine klare Struktur mit einem Eingangs‑ und fünf Ausgangsadaptern macht ihn ideal für Routing‑Anwendungen in IEC 61499‑Systemen. Die EPL‑Lizenzierung und die generische Auslegung fördern die Wiederverwendbarkeit und Anpassbarkeit. Der Baustein ergänzt die vorhandenen Standard‑Demultiplexer um die wichtige Fähigkeit, strukturierte Datenadapter gezielt zu verteilen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

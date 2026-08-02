@@ -68,3 +68,8 @@ Die Schaltung arbeitet **ereignisgesteuert** und nutzt sowohl Ereignis- als auch
 ## Zusammenfassung
 
 Die Übung `Uebung_203` setzt einen `ILOCK_SWITCH`-Baustein ein, um zwei konkurrierende digitale Eingänge zu priorisieren. Die Last-Wins-Logik stellt sicher, dass stets nur der zuletzt aktivierte Kanal durchgeschaltet wird. Die Implementierung erfolgt vollständig ereignisgesteuert mit entsprechenden Datenverbindungen, was eine saubere und deterministische Steuerung ermöglicht. Diese Grundschaltung ist ein typischer Baustein für Sicherheits- und Verriegelungslogiken in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

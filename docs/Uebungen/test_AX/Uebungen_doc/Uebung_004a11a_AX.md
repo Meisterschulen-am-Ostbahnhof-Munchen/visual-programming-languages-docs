@@ -49,3 +49,8 @@ Die Übung demonstriert die Kombination eines entprellten Tastereingangs mit ein
 - Umgang mit Ereignis-gesteuerten Eingängen (BUTTON_SINGLE_CLICK)  
 - Initialisierung von Zuständen aus persistentem Speicher  
 - Adapterverbindungen zwischen Funktionsbausteinen in 4diac-IDE
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

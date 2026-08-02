@@ -127,3 +127,8 @@ Fortgeschritten – Grundkenntnisse in der 4diac-IDE und im Umgang mit Funktions
 ## Zusammenfassung
 
 Die Übung `Uebung_204b` demonstriert den Einsatz des Funktionsbausteins `ILOCK_CONFLICT_TRIP` für eine Motor-Sicherheitsabschaltung. Durch die Kombination von drei digitalen Eingängen (zwei Richtungswünsche und ein Reset) wird eine Verriegelung realisiert, die Konflikte erkennt und im Fehlerfall einen Trip auslöst. Die Ansteuerung der Ausgänge erfolgt über getrennte Kanäle für Rechtslauf, Linkslauf sowie eine gemeinsame Low-Side-Freigabe. Die Lösung zeigt exemplarisch, wie sicherheitsgerichtete Steuerungen mit der 4diac-IDE umgesetzt werden können.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

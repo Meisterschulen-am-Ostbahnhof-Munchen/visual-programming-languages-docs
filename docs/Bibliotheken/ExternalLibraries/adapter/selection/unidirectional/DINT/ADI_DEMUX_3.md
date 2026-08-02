@@ -75,3 +75,8 @@ Der **ADI_DEMUX_3** zeichnet sich durch die explizite Index‑Auswahl (UINT) aus
 
 ## Fazit
 Der Funktionsblock **ADI_DEMUX_3** ist ein einfacher, aber effektiver Demultiplexer für ADI‑Datenströme. Dank seiner generischen Struktur und der klaren ereignisgesteuerten Arbeitsweise eignet er sich hervorragend für den Einsatz in modularen, adapterbasierten Automatisierungsprojekten. Durch die Auswahl eines von drei Ausgängen über einen Index entsteht eine saubere Trennung von Signalquellen und Senken, ohne dass aufwändige eigene Multiplex‑Logik implementiert werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

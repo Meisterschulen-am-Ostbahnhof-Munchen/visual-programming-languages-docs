@@ -53,3 +53,8 @@ Der Ablauf ist rein ereignisgesteuert:
 Die Übung **Uebung_011f** realisiert eine einfache Durchschleifung eines numerischen Werts vom Eingang I3 zum Ausgang N3.  
 Durch die Kombination von `NumericValue_PHYS` (lesend) und `Q_NumericValue_PHYS` (schreibend) wird eine klare Trennung zwischen I/O‑Zugriff und Ereignissteuerung erreicht.  
 Die Subapplikation ist als wiederverwendbarer Baustein konzipiert und kann direkt in größere Applikationen eingebunden werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

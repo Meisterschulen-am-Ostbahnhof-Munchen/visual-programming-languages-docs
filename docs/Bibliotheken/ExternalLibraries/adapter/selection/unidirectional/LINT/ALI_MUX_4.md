@@ -62,3 +62,8 @@ Der Baustein besitzt im Wesentlichen einen einzigen operativen Zustand. Auf ein 
 
 ## Fazit
 `ALI_MUX_4` ist ein spezialisierter, ereignisgesteuerter Multiplexer für ALI-Adapter mit vier Eingängen. Er eignet sich ideal für Anwendungen, bei denen aus mehreren ALI-Datenquellen eine ausgewählt werden muss. Die einfache Schnittstelle (ein Index und ein Steuerereignis) macht ihn leicht integrierbar, erfordert aber die Einhaltung des gültigen Indexbereichs 0–3. Der Baustein ergänzt die ALI-Adapter-Familie um eine grundlegende Selektionsfunktion.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

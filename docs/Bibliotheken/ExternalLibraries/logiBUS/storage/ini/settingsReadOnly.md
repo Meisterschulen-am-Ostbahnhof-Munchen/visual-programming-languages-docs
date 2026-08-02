@@ -107,3 +107,9 @@ OperatorID = 42
 | **Werkseinstellungen sichern** | Legen Sie alle unveränderlichen Parameter (z. B. Bus-Adressen, Sicherheitsgrenzen) in `settingsReadOnly.ini` an und spielen Sie diese auf das Steuergerät auf. |
 | **Benutzereinstellungen erlauben** | Halten Sie Parameter, die vom Bediener angepasst werden dürfen (z. B. Sprache, Betriebsmodi, Zählerstände), ausschließlich in `settings.ini`. |
 | **Parameter freigeben** | Um einen Parameter wieder beschreibbar zu machen, entfernen Sie den betreffenden Schlüssel aus `settingsReadOnly.ini` und starten Sie das Steuergerät neu. |
+
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

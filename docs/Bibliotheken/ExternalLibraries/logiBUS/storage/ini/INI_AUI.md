@@ -89,3 +89,8 @@ Der Funktionsblock `INI_AUI` besitzt **keinen eigenen Zustandsautomaten**. Die g
 ## Fazit
 
 Der `INI_AUI`-Funktionsblock ist eine flexible Lösung zum Lesen und Speichern von Konfigurationswerten in einer `settings.ini`-Datei. Durch die Kombination von direkten Dateneingängen und einer unidirektionalen AUI-Adapter-Schnittstelle eignet er sich hervorragend sowohl für einfache Initialisierungsaufgaben als auch für modulare, adapterbasierte Systemarchitekturen. Die Integration eines Standardwerts und die klare Statusrückmeldung erhöhen die Robustheit und Wartbarkeit der Steuerungssoftware.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

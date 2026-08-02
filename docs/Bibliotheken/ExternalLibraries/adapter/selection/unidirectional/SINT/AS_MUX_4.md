@@ -88,3 +88,8 @@ Der Funktionsblock besitzt **keine explizite Zustandsmaschine**. Es gibt nur ein
 ## Fazit
 
 Der Funktionsblock **AS_MUX_4** bietet eine elegante und flexible Möglichkeit, aus vier AS-Datenquellen eine auszuwählen. Durch die adapterbasierte Schnittstelle fügt er sich nahtlos in die 4diac-IDE und in AS-Kommunikationsstrukturen ein. Seine einfache, ereignisgesteuerte Funktionsweise macht ihn zu einem Grundbaustein für Selektionsaufgaben in der Automatisierungstechnik. Die generische Auslegung erlaubt eine problemlose Integration in unterschiedlichste Projekte.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -55,3 +55,8 @@ Dank der Adaptertechnik entfällt eine aufwändige Parameterübergabe – die Si
 ## Zusammenfassung
 
 Die Übung „Uebung_075_AX“ zeigt, wie ein ISOBUS-Lichtadapter über Adapterverbindungen zwei digitale Ausgänge ansteuert. Rechts- und Linksblinksignale werden auf die logiBUS-Ausgänge Q1 und Q2 übertragen. Die SubApp ist ein kompaktes, prototypisches Element für einfache Lichtsteuerungen in landwirtschaftlichen Fahrzeugen. Sie verdeutlicht die Vorteile der adapterbasierten Kommunikation in der IEC 61499 und kann als Grundbaustein für komplexere Lichtfunktionen dienen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

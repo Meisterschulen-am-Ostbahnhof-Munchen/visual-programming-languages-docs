@@ -50,3 +50,8 @@ Da es sich um eine statische, konstante Definition handelt, gibt es keine Zustan
 
 ## Fazit
 Der globale Konstanten-Datensatz `CommunicationPartners` ist ein einfaches, aber nützliches Hilfskonstrukt für die Entwicklung von ISOBUS-fähigen Steuerungen in 4diac. Er fördert den Prinzipien des "Don't Repeat Yourself" (DRY) und der zentralen Konfigurationsverwaltung, indem er die häufig benötigte globale ISOBUS-Adresse an einer einzigen, gut sichtbaren Stelle definiert. Seine Verwendung reduziert potenzielle Fehlerquellen und erleichtert zukünftige Anpassungen der Netzwerkkonfiguration.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

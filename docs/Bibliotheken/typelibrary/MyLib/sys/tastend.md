@@ -35,3 +35,9 @@ Die Übung "tastend" demonstriert die Erstellung eines einfachen Sub-Applikation
 * [Uebung_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
 * [Uebung_103c2](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c2.md)
 
+
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -79,3 +79,8 @@ Danach kehrt er in den Ruhezustand zurück. Es gibt keine persistenten internen 
 
 ## Fazit
 Der **AE_MUX_3** ist ein einfacher, aber robuster Multiplexer für drei AE-Signale. Durch die Indexauswahl über REQ und K lässt er sich leicht in Steuerungslogiken einbinden. Die Generizität und die klare Trennung von Ereignis- und Datenpfaden machen ihn zu einem nützlichen Werkzeug für modulare, ereignisgesteuerte Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

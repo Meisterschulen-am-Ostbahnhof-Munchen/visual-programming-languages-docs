@@ -70,3 +70,8 @@ Da ST16X ein Datentyp ist, kann er nicht direkt mit einem 'Baustein' im Sinne ei
 
 ## Fazit
 Der Datentyp ST16X stellt eine effiziente und übersichtliche Methode dar, um eine Gruppe von 16 booleschen Werten zu strukturieren. Er verbessert die Lesbarkeit des Codes, vereinfacht die Handhabung komplexer binärer Zustände und fördert die Typsicherheit in 4diac-Anwendungen, insbesondere in Szenarien, wo viele individuelle binäre Informationen als eine zusammengehörige Einheit verwaltet werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

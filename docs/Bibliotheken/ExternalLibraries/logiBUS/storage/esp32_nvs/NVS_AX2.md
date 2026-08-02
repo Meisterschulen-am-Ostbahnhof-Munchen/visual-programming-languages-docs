@@ -77,3 +77,9 @@ Im Gegensatz zu einfachen Speicherbausteinen (z. B. `CTUO` oder generischen `R
 
 ## Fazit
 Der Funktionsblock `NVS_AX2` ist eine effiziente und standardkonforme Lösung zum persistenten Speichern eines REAL-Werts im NVS eines ESP32. Die klare Schnittstellenstruktur mit Ereignissteuerung und bidirektionalem Adapter erleichtert die Einbindung in komplexe Automatisierungsprojekte. Dank der integrierten Initialisierung und Fehlerprotokollierung ist der Baustein robust und für den industriellen Einsatz geeignet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)
+* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

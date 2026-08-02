@@ -86,3 +86,8 @@ Die Übung kann direkt in einer 4diac‑Laufzeitumgebung (z. B. FORTE) mit ent
 Die Übung „Uebung_006a2b_AX“ implementiert zwei unabhängige T‑Flipflops, die über einen gemeinsamen Rücksetzeingang verfügen.  
 Durch die Verwendung der Adapter‑FBs `AX_FB_RS_T_FF` und `AX_SPLIT_2` wird eine kompakte und leicht nachvollziehbare Steuerung realisiert.  
 Der Schwerpunkt liegt auf dem Verständnis bistabiler Schaltungen und der ereignisgesteuerten Kommunikation in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -67,3 +67,8 @@ Im Vergleich zu generischen IO-Funktionsblöcken bietet Wago459:
 
 ## Fazit
 Der Wago459-Funktionsblock stellt eine zuverlässige und spezialisierte Lösung für die Integration von Wago-750-459 Analog-Eingangsmodulen in 4diac-basierte Steuerungssysteme dar. Durch seine klare Schnittstellendefinition und umfassende Statusrückmeldungen ermöglicht er eine effiziente Implementierung analoger Messwertverarbeitung in industriellen Automatisierungsprojekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

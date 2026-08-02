@@ -56,3 +56,9 @@ Im Vergleich zu anderen Konstantendefinitionen bietet MI spezifische Adressen f�
 
 ## Fazit
 Die MI Global Constants bieten eine praktische und zentrale Möglichkeit, Adressinformationen für I/O-Module zu verwalten. Durch die Verwendung dieser Konstanten wird die Wartbarkeit und Lesbarkeit von Steuerungsprogrammen verbessert, da Änderungen an Moduladressen zentral vorgenommen werden können.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -82,3 +82,9 @@ In dieser Übung wird ein analoger Eingang kalibriert, die Kalibrierungswerte we
 **Vorkenntnisse**: Grundlagen der 4diac-IDE, Umgang mit Adaptern und logiBUS-Modulen, Verständnis von Signalverarbeitung und INI-Konfiguration.
 
 **Hinweis**: Vor dem Start müssen die INI-Bereiche `'Uebung_028a_AR'` und `'HYSTERESIS'` in der Konfigurationsdatei vorhanden sein. Die numerischen Pool-Objekte (z.B. `InputNumber_THRESHOLD`) müssen im Projekt entsprechend definiert sein.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

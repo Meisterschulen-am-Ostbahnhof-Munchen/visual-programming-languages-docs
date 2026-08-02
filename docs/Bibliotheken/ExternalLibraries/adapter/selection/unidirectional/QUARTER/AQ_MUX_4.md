@@ -94,3 +94,8 @@ Der `AQ_MUX_4` hebt sich durch die Verwendung von Adaptern ab, die es erlauben, 
 ## Fazit
 
 Der `AQ_MUX_4` ist ein praktischer Baustein zur dynamischen Auswahl eines analogen Ausgangssignals aus bis zu vier Quellen. Seine adapterbasierte Schnittstelle macht ihn besonders geeignet für modulare Steuerungsarchitekturen, in denen Signale nicht nur als einzelne Werte, sondern als strukturierte Datenpakete ausgetauscht werden. Die generische Deklaration erleichtert zudem die Anpassung an abweichende Anforderungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

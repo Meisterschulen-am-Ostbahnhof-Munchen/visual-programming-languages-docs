@@ -68,3 +68,8 @@ Der FB besitzt keine Zustandsautomaten. Das Verhalten ist zeitlos und gleichblei
 ## Fazit
 
 `AS_SPLIT_4` ist ein einfacher, aber essentieller Baustein zur strukturellen Vervielfältigung von unidirektionalen AS-Adapterverbindungen in 4diac-Anwendungen. Seine generische Auslegung und die reine Adapterschnittstelle machen ihn ideal für modulare und skalierbare Steuerungsarchitekturen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

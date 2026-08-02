@@ -52,3 +52,8 @@ Da **AUS_SPLIT_3** über keine Ablaufsteuerung oder explizite Zustände verfügt
 
 ## Fazit
 Der **AUS_SPLIT_3** ist ein einfacher aber nützlicher Funktionsblock zur Vervielfachung von AUS‑Adapter-Signalen. Aufgrund seiner generischen Auslegung und Zustandslosigkeit eignet er sich hervorragend für die modulare und wartungsfreundliche Strukturierung von 4diac-Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

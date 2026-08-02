@@ -55,3 +55,8 @@ Der Baustein besitzt **keine Zustände**. Er arbeitet kontinuierlich und ohne in
 
 ## Fazit
 Der **AUI_SPLIT_6** ist ein einfacher, aber effektiver Verteilerbaustein für AUI-Signale. Er ermöglicht die sternförmige Weiterleitung eines Eingangssignals an bis zu sechs unabhängige Ausgänge. Aufgrund seiner generischen Natur und fehlenden Logik eignet er sich hervorragend für flexible und erweiterbare Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

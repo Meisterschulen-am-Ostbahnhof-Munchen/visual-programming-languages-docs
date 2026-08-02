@@ -89,3 +89,8 @@ Die Übung wird auf einer Zielplattform mit logiBUS-Hardware ausgeführt. Die dr
 ## Zusammenfassung
 
 Die Übung zeigt, wie mit dem Baustein `RT_E_REND` ein echtzeitkritischer Rendezvous-Mechanismus realisiert wird. Durch die Kombination von digitalen Eingängen, einem Toggle-Flip-Flop und einem Ausgangsbaustein entsteht eine einfache aber praxisnahe Steuerung, bei der ein Ausgang nur dann umschaltet, wenn zwei Taster innerhalb einer kurzen Zeitspanne gleichzeitig gedrückt werden. Ein dritter Taster dient dem Zurücksetzen des Synchronisationszustands. Die Übung vertieft das Verständnis für zeitgesteuerte Ereignisverkettungen in IEC 61499.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

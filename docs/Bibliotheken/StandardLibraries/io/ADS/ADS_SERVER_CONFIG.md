@@ -57,3 +57,8 @@ Im Vergleich zu einfachen ADS-IO-Blöcken bietet ADS_SERVER_CONFIG eine zentrale
 
 ## Fazit
 ADS_SERVER_CONFIG ist ein essentieller Baustein für strukturierte ADS-Kommunikation in 4diac-Systemen. Durch die zentrale Konfigurationsverwaltung vereinfacht er die Wartung und Änderung von Netzwerkeinstellungen und fördert konsistente Verbindungsparameter über verschiedene IO-Funktionsblöcke hinweg.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

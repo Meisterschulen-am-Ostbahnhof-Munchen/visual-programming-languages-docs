@@ -84,3 +84,8 @@ Dies bedeutet, dass der Baustein immer bereit ist, Eingangssignale zu verarbeite
 ## Fazit
 
 Der **AX_FB_RS** ist eine moderne, adapterbasierte Implementierung des klassischen RS-Flip-Flops. Er eignet sich hervorragend für komplexe Steuerungsanwendungen in 4diac, bei denen Übersichtlichkeit und Kapselung von Signalen im Vordergrund stehen. Durch die integrierte Reset-Dominanz ist er besonders für Anwendungen geeignet, bei denen das sichere Abschalten Vorrang vor dem Einschalten haben muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

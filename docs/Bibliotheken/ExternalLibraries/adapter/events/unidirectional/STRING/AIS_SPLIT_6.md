@@ -67,3 +67,8 @@ Im 4diac-Framework existieren möglicherweise andere Split-Bausteine, die sich i
 ## Fazit
 
 Der `AIS_SPLIT_6` ist ein nützlicher und minimalistischer Baustein zur Signalfächerung in AIS-basierten Steuerungssystemen. Er erfüllt zuverlässig die Aufgabe, ein eingehendes Signal auf sechs Ausgänge zu verteilen, und zeichnet sich durch seine Einfachheit, generische Auslegung und klare Trennung der Schnittstellen aus. Dadurch eignet er sich besonders für modulare, transparente Steuerungsarchitekturen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

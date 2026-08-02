@@ -84,3 +84,8 @@ Der `GET_AT_INDEX`-Baustein ist ein spezialisierter Baustein für den Array-Zugr
 ## Fazit
 
 Der `GET_AT_INDEX`-Funktionsblock ist ein elementarer und flexibler Baustein, der den direkten und indizierten Zugriff auf Array-Elemente ermöglicht. Seine Einfachheit und die Unterstützung generischer Datentypen (`ANY`) machen ihn zu einem vielseitigen Werkzeug in zahlreichen Automatisierungs- und Steuerungsanwendungen, bei denen Daten in geordneten Listen oder Tabellen vorliegen. Die korrekte Anwendung erfordert lediglich die Beachtung der Datentyp-Kompatibilität und des gültigen Indexbereichs.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

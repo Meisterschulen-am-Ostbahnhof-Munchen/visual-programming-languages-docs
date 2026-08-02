@@ -63,3 +63,8 @@ Der **AULI_SPLIT_4** ist ein spezialisierter Split-Baustein ausschließlich für
 ## Fazit
 
 Der **AULI_SPLIT_4** ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfachung eines AULI-Adapters auf vier Ausgänge. Durch die generische Auslegung und den Verzicht auf überflüssige Logik fügt er sich nahtlos in modulare 4diac‑Projekte ein. Er eignet sich besonders für Anwendungen, in denen ein Signal an mehrere Empfänger weitergegeben werden muss, ohne dass eine Weiterverarbeitung oder Selektion gewünscht ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -57,3 +57,8 @@ Im Vergleich zu anderen I/O-Bausteinen bietet IORevPiDIO spezifische Unterstütz
 
 ## Fazit
 Der IORevPiDIO Funktionsblock stellt eine leistungsstarke Schnittstelle für digitale Ein-/Ausgänge in Revolution Pi Systemen dar und ermöglicht eine einfache Integration in 4diac-basierte Automatisierungslösungen. Die umfangreiche Konfigurationsmöglichkeit und zuverlässige Statusrückmeldung machen ihn zu einer robusten Lösung für industrielle Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

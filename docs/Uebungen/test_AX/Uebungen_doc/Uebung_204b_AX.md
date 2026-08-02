@@ -73,3 +73,8 @@ Diese Übung demonstriert die Verwendung des Funktionsbausteins **ILOCK_CONFLICT
 ## Zusammenfassung
 
 Die Übung vermittelt den Aufbau einer sicherheitsgerichteten Motorsteuerung unter Verwendung des Interlock-Bausteins `ILOCK_CONFLICT_TRIP_AX`. Durch die strukturierte Aufteilung der Signale mittels eines SubApp (`AX_2_TO_3`) werden die Ausgänge für Rechtslauf, Linkslauf, Low-Side-Treiber und Trip-Anzeige realisiert. Ein Reset-Eingang erlaubt das Zurücksetzen der Sicherheitsabschaltung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

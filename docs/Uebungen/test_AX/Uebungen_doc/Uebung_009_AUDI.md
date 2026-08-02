@@ -90,3 +90,8 @@ Der Ablauf der Übung lässt sich wie folgt beschreiben:
 Die Übung `Uebung_009_AUDI` implementiert einen tickergesteuerten Zähler mit Hilfe von AX-Adapter-Bausteinen.  
 Ein zyklischer Timer (`AE_CYCLE`) liefert den Takt, der über einen Schalter (`AX_SWITCH`) und ein Set-Reset-Glied (`AX_SR`) den Zähler freigibt. Der Zählerstand wird gleichzeitig als digitales Signal auf einem logiBUS-Ausgang und als numerischer Wert auf einem isobus-Netzwerk ausgegeben.  
 Die Verwendung von Adaptern erlaubt eine flexible, ereignisorientierte Verkettung und demonstriert die modulare Struktur der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

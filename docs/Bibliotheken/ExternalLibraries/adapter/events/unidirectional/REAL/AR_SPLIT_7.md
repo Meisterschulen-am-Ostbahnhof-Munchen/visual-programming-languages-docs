@@ -51,3 +51,8 @@ Der FB verfügt über keine Zustandsmaschine (ECC). Die Verteilung erfolgt stati
 
 ## Fazit
 Der **AR_SPLIT_7** ist ein schlanker, generischer Funktionsblock zur einfachen Verteilung eines AR‑Adapters auf bis zu sieben Zieladapter. Dank seiner generischen Natur ist er ohne Anpassung der Typinformationen sofort einsetzbar und eignet sich besonders für lose gekoppelte, datenflussorientierte Architekturen in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

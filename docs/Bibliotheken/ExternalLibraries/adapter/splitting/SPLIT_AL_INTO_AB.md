@@ -75,3 +75,8 @@ Der Baustein selbst besitzt keinen eigenen, sichtbaren Zustandsautomaten. Die in
 ## Fazit
 
 **SPLIT_AL_INTO_AB** ist ein nützlicher und effizienter Funktionsblock zum Aufteilen eines 64-Bit-Datenwortes in acht einzelne Bytes, der speziell für den Einsatz mit IEC 61499-Adaptern (AL/AB) entwickelt wurde. Die Kombination aus internem Splitter und Flipflops gewährleistet eine gleichzeitige, puffergestützte Ausgabe aller Bytes. Dank der adapterbasierten Schnittstelle lässt sich der Baustein nahtlos in modulare Steuerungsarchitekturen integrieren, bei denen eine saubere Trennung von Ereignis- und Datenkanälen gewünscht ist. Er eignet sich besonders für Anwendungen, die eine parallele, strukturierte Datenweitergabe erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

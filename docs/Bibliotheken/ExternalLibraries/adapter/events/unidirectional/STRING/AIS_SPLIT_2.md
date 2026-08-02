@@ -47,3 +47,8 @@ Der AIS_SPLIT_2 besitzt keine eigene Zustandsmaschine. Der Betriebszustand wird 
 
 ## Fazit
 Der AIS_SPLIT_2 ist ein minimalistischer, generisch einsetzbarer Adapter‑Splitter, der die flexible Verzweigung von AIS‑Schnittstellen in 4diac‑Projekten ermöglicht. Durch die Parametrierung über das GenericClassName‑Attribut kann er ohne Anpassung des Quellcodes für verschiedene AIS‑Typen verwendet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

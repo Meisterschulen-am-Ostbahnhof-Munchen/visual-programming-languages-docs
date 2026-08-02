@@ -65,3 +65,8 @@ Mit dieser Übung wird die Anwendung eines **Toggle-Flipflops** über Adapterver
 - Benötigte Vorkenntnisse: Grundlagen der IEC 61499, Verwendung von Adaptern, logiBUS-Einbindung.  
 
 Die Übung eignet sich zum Einstieg in die sequentielle Logik mit Speicherverhalten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

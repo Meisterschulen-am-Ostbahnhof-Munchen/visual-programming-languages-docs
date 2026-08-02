@@ -66,3 +66,8 @@ Die Übung **Uebung_209_AX** vermittelt das grundlegende Prinzip eines **Interlo
 - Erkennen von Sicherheitsanforderungen (gegenseitige Sperre)
 
 Diese Schaltung findet beispielsweise Anwendung bei der Ansteuerung von zwei gegenläufigen Motoren oder bei Zustandsmaschinen, bei denen nur ein Zustand gleichzeitig aktiv sein darf.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

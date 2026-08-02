@@ -81,3 +81,8 @@ Der Programmablauf besteht aus einem ereignisgesteuerten und einem datenflussges
 ## Zusammenfassung
 
 Die Übung zeigt die Realisierung eines Abwärtszählers nach IEC 61131-3 unter Verwendung von Adaptern zur Verbindung von logiBUS-Ein-/Ausgängen, Datentypkonvertierung und Terminalausgabe. Der Zähler wird über zwei digitale Eingänge gesteuert und gibt sowohl einen binären Ausgang als auch einen numerischen Wert aus. Die Lösung verdeutlicht den modularen Aufbau mit wiederverwendbaren Adapterbausteinen und die einfache Integration von Hardware-Schnittstellen in die 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

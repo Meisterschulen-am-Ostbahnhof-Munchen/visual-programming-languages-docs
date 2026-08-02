@@ -100,3 +100,8 @@ Der hier beschriebene Baustein unterscheidet sich vor allem durch die Verwendung
 ## Fazit
 
 Der `DataPanel_MI_IW_Ratio` ist ein spezialisierter Service-Interface-Funktionsblock für die zuverlässige Erfassung ratiometrischer Analogsignale. Mit seiner klar definierten Schnittstelle (INIT/REQ/IND) und den konfigurierbaren Parametern eignet er sich ideal für den Einsatz in agrar- und automatisierungstechnischen Anwendungen. Die Einbindung in die 4diac-IDE erfolgt über die Bibliothek `DataPanel::io::MI::AI`.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

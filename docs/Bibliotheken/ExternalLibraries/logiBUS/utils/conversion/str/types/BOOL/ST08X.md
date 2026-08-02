@@ -57,3 +57,8 @@ Der Datentyp **ST08X** bietet eine Alternative zu:
 
 ## Fazit
 Der Datentyp **ST08X** ist ein nützliches Konstrukt, um acht unabhängige boolesche Werte in einer strukturierten und gut benannten Weise zu gruppieren. Er fördert die Code-Lesbarkeit und -Wartbarkeit, indem er eine klare semantische Kapselung für Sammlungen von binären Flags bietet, die über einfache Bit-Operationen auf einem Byte hinausgehen soll.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

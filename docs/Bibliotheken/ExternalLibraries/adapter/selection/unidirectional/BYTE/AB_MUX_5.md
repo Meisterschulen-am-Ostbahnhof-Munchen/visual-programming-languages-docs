@@ -77,3 +77,8 @@ Der AB_MUX_5 ist speziell für Adapterverbindungen optimiert und bietet eine kla
 
 ## Fazit
 Der **AB_MUX_5** ist ein kompakter und wiederverwendbarer Funktionsbaustein zur Adapter-Multiplexierung. Er ermöglicht die Auswahl eines von fünf eingehenden Adapterkanälen über einen numerischen Index und eignet sich ideal für Systeme, die mehrere gleichartige Schnittstellen dynamisch umschalten müssen. Dank seiner generischen Implementierung und der Lizenz unter EPL 2.0 kann er in verschiedenen Automatisierungsumgebungen eingesetzt werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

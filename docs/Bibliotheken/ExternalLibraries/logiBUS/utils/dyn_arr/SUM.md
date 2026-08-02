@@ -69,3 +69,8 @@ Der FB besitzt keinen expliziten Zustandsautomaten. Das Verhalten lässt sich wi
 ## Fazit
 
 Der Funktionsblock `SUM` bietet eine einfache und performante Möglichkeit, die Summe aller Elemente eines dynamischen Arrays zu berechnen. Durch die ereignisgesteuerte Ausführung und die robuste Handhabung unterschiedlicher Array‑Größen eignet er sich besonders für industrielle Steuerungsaufgaben, bei denen Datenmengen aggregiert werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

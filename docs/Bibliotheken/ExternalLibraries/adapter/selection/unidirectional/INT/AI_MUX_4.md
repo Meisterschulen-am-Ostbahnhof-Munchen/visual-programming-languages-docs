@@ -83,3 +83,8 @@ Der Baustein besitzt keine explizit modellierten Zustände (keine ECC‑Beschrei
 ## Fazit
 
 Der **AI_MUX_4** ist ein kompakter, generischer Funktionsbaustein zur Auswahl eines von vier analogen Signalen über einen Index. Er vereinfacht die Umschaltung analoger Pfade in 4diac‑basierten Automatisierungslösungen und lässt sich durch seine Adapterschnittstellen nahtlos in bestehende Projekte einbinden. Die fehlende Zustandsautomaten-Beschreibung macht ihn besonders einfach und schnell ausführbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

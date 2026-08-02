@@ -81,3 +81,8 @@ Eine fehlerhafte Indexangabe (Werte außerhalb 0…3) wird nicht behandelt – d
 
 ## Fazit
 Der `ATM_MUX_4` ist ein kompakter, generischer Funktionsblock zur Auswahl eines von vier ATM‑Adapter-Eingängen. Er eignet sich besonders für ereignisgesteuerte Applikationen in der Agrarsteuerung, bei denen unidirektionale ATM‑Datenströme umgeschaltet werden müssen. Die Möglichkeit der generischen Umbenennung und die klare ereignisbasierte Schnittstelle machen ihn vielseitig einsetzbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

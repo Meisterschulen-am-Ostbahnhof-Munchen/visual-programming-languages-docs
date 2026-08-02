@@ -34,3 +34,8 @@
 *   [Modelling Control Systems Using IEC 61499 (Robert W. Lewis and Alois Zoitl)](http://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601/)
 *   [Real-Time Execution for IEC 61499 (Alois Zoitl)](http://www.amazon.de/Real-Time-Execution-61499-Alois-Zoitl/dp/1934394270/)
 *   [Distributed Control Applications (Alois Zoitl and Thomas Strasser)](https://www.crcpress.com/Distributed-Control-Applications-Guidelines-Design-Patterns-and-Application/Zoitl-Strasser/9781482259056)
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

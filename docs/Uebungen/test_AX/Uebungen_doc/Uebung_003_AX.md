@@ -58,3 +58,8 @@ Diese beiden Prozesse laufen völlig asynchron ab. Eine hohe Schaltfrequenz auf 
 Ein einfaches Anwendungsbeispiel ist die **Steuerung von zwei unabhängigen Pumpen**:
 
 In einem Pumpwerk gibt es zwei identische Pumpen, die jeweils über einen eigenen Vor-Ort-Schalter bedient werden. Schalter 1 (`I1`) startet Pumpe 1 (`Q1`), und Schalter 2 (`I2`) startet Pumpe 2 (`Q2`). Obwohl beide Steuerungen in demselben Steuerungsprogramm laufen, operieren sie logisch völlig getrennt voneinander. Fällt ein Sensor aus, bleibt der andere Kreis voll funktionsfähig.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

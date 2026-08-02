@@ -57,3 +57,8 @@ Diese Übung demonstriert die Steuerung eines Motors mit Rechts- und Linkslauf u
 ## Zusammenfassung
 
 Die Übung `Uebung_201b_AX` realisiert eine Interlock-gesteuerte Motorsteuerung mit Rechts- und Linkslauf. Kern ist der `ILOCK_BLOCK_AX`, der eine gleichzeitige Aktivierung beider Drehrichtungen verhindert. Die Adapter-basierten Ein- und Ausgänge werden über logiBUS-Bausteine an die Peripherie angebunden. Ein Sub-Applikationsbaustein (`AX_2_TO_3`) sorgt für die korrekte Verteilung der Signale auf drei Ausgänge (Rechtslauf, Linkslauf, Low-Side-Treiber). Die Schaltung ist ein einfaches, aber praxisnahes Beispiel für Verriegelungslogik in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

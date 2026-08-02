@@ -96,3 +96,8 @@ Die Sub-Applikation realisiert eine **verriegelbare Toggle-Funktion** mit folgen
 Die Übung **Uebung_004b3c_sub** demonstriert den Aufbau eines verriegelbaren Toggle-Flip-Flops unter Verwendung von Standard-Funktionsbausteinen (E_SR, E_SWITCH) und bidirektionaler AE2-Adapter-Konverter.  
 Die Schaltung toggelt bei jedem ankommenden Ereignis `IND` den Ausgang `Q` und erlaubt gleichzeitig eine externe Beeinflussung über die AE2-Schnittstelle.  
 Sie eignet sich als Grundbaustein für komplexere Steuerungen, die ein wechselndes Signal mit Rückmeldung an ein übergeordnetes System benötigen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

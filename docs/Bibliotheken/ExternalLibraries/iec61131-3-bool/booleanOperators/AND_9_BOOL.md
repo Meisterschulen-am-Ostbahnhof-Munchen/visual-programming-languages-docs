@@ -60,3 +60,8 @@ Der Block besitzt keinen internen Zustand im Sinne eines Speichers. Sein Verhalt
 
 ## Fazit
 Der `AND_9_BOOL` ist ein robuster und einfach zu verwendender Standardbaustein für Anwendungen, die eine logische UND-Verknüpfung über genau neun boolesche Signale erfordern. Seine ereignisgesteuerte Natur und die klare Schnittstelle machen ihn gut integrierbar in 4diac-basierte Steuerungsanwendungen. Für eine andere Anzahl von Eingängen sollten die entsprechenden spezialisierten (`AND_2_BOOL`, `AND_3_BOOL`, etc.) oder der generische `GEN_AND`-Block verwendet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

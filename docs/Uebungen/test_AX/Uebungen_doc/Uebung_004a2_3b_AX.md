@@ -81,3 +81,8 @@ Einfach – geeignet für Einsteiger in die IEC 61499‑Modellierung mit 4diac�
 ## Zusammenfassung
 
 Die Übung `Uebung_004a2_3b_AX` demonstriert den Aufbau eines Toggle‑Flip‑Flops, das über drei Taster gesteuert wird. Die Tasterereignisse werden mittels `E_MERGE_3` zu einem einzigen Taktsignal zusammengeführt und toggeln den Zustand eines Flip‑Flops, der über einen digitalen Ausgang ausgegeben wird. Dieses einfache Beispiel vermittelt grundlegende Konzepte der ereignisgesteuerten Programmierung mit Funktionsbausteinen unter Verwendung der logiBUS‑Hardware.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

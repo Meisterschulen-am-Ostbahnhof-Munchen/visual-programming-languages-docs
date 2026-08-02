@@ -63,3 +63,8 @@ Ein Kommentar im Netzwerk weist darauf hin, dass eine zusätzliche Ereignisreduz
 ## Zusammenfassung
 
 Die Übung demonstriert die Nachbildung eines standardisierten IEC 61131-3 Vorwärtszählers (FB_CTU_UDINT) in 4diac. Durch die Verknüpfung von logiBUS-IO-Bausteinen mit einem Zähler und einer numerischen Ausgabe wird ein praxisnahes Beispiel für ereignisgesteuerte Automatisierungslogik gezeigt. Die Schaltung verdeutlicht, wie sowohl digitale als auch numerische Ausgaben parallel zu einer Zähleraktion erfolgen können. Dieser Aufbau eignet sich gut, um das Zusammenspiel von Ereignis- und Datenverbindungen in der 4diac-IDE zu erlernen und zu vertiefen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

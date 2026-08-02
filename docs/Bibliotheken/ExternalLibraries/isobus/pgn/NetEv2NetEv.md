@@ -63,3 +63,8 @@ Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten
 
 ## Fazit
 Der `NetEv2NetEv`-Funktionsblock ist ein spezialisiertes, schlankes Werkzeug für ISOBUS-Anwendungen. Er erfüllt eine klare und notwendige Nischenaufgabe: das Überschreiben des Quell-Handles in Netzwerkereignis-Datensätzen. Seine einfache, zustandslose Implementierung macht ihn robust und vorhersehbar. Für Entwickler, die mit ISOBUS PGNs und Netzwerkereignissen arbeiten, stellt er ein nützliches Hilfselement dar, um Datenflüsse korrekt zu kennzeichnen und anzupassen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

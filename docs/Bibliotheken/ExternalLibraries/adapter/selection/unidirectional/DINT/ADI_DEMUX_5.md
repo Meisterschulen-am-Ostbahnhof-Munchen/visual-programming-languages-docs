@@ -65,3 +65,8 @@ Im Gegensatz zu diesen Bausteinen zeichnet sich der ADI_DEMUX_5 durch die direkt
 
 ## Fazit
 Der **ADI_DEMUX_5** ist ein spezialisierter Demultiplexer für ADI‑Adapter, der mit minimalem Aufwand eine saubere, indexbasierte Signalverteilung auf bis zu fünf Ausgänge ermöglicht. Seine generische Implementierung und die klare Ereignissteuerung machen ihn zu einem vielseitigen Werkzeug in modularen Automatisierungssystemen, die auf dem Eclipse 4diac‑Framework basieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -56,3 +56,8 @@ Im Vergleich zu statischen Parametrierungsmethoden bietet ST_SET_PARM die Mögli
 
 ## Fazit
 Der ST_SET_PARM Funktionsblock ist ein essentielles Werkzeug für die dynamische Rekonfiguration von 4diac-Systemen. Seine Fähigkeit, Parameter zur Laufzeit zu setzen, macht ihn besonders wertvoll für Anwendungen, die Anpassungsfähigkeit und Flexibilität erfordern. Die klare Schnittstellendefinition und detaillierte Statusrückmeldung gewährleisten eine zuverlässige Integration in komplexe Automatisierungssysteme.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

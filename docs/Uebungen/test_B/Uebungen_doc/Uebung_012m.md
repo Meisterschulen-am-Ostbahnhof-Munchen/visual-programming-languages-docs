@@ -85,3 +85,9 @@ In dieser Übung wird der Umgang mit String-Eingaben, nichtflüchtigem Speicher 
 **Schwierigkeitsgrad**: Mittel  
 **Benötigte Vorkenntnisse**: Grundlagen der 4diac-IDE, Ereignis- und Datenverbindungen, einfache FBs.  
 **Start der Übung**: Laden Sie die Haupt-SubApp `Uebung_012m` in ein Projekt und verbinden Sie die Eingänge `KEY` und `u16ObjId` mit entsprechenden Konstanten oder Variablen. Die Ausgabe `VALUEO` kann z. B. an eine Anzeige angeschlossen werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

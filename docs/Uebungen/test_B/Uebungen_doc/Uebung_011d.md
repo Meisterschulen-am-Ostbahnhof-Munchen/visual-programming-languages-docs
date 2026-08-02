@@ -59,3 +59,8 @@ Die Übung erfordert Grundkenntnisse der 4diac‑IDE und der isobus‑Bibliothek
 ## Zusammenfassung
 
 Die Übung **Uebung_011d** demonstriert das Durchschleifen eines numerischen Werts von einem Eingang (I1) zu einem Ausgang (N3) unter Verwendung eines Konvertierungsbausteins. Die Umwandlung von `DWORD` in `UDINT` bewirkt einen Offset‑/Skalierungseffekt, der die Ausgabe gegenüber dem Rohwert verschiebt. Durch die einfache Ereignis- und Datenverkettung wird das Grundprinzip der Datenverarbeitung mit den `NumericValue`-Bausteinen veranschaulicht und die Bedeutung der Datentypen hervorgehoben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

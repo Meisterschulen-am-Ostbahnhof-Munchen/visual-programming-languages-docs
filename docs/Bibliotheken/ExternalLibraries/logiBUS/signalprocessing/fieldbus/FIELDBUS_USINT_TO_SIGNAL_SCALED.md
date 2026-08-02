@@ -89,3 +89,8 @@ Es existieren keine weiteren Wartezustände – jeder eingehende Event führt so
 ## Fazit
 
 Der Funktionsblock `FIELDBUS_USINT_TO_SIGNAL_SCALED` ist ein kompakter, aber leistungsfähiger Baustein zur Verarbeitung von 8‑Bit‑Feldbussignalen. Er vereint Gültigkeitserkennung, Skalierung und Offset in einer logischen Einheit und eignet sich besonders für Anwendungen, bei denen Rohwerte in physikalische Größen umgerechnet und gleichzeitig auf ihre Plausibilität geprüft werden müssen. Die einfache Zustandsmaschine und die klar definierten Schnittstellen machen ihn robust und einfach einsetzbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

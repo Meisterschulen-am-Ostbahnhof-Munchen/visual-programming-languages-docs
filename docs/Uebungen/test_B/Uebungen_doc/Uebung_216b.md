@@ -58,3 +58,8 @@ Die Steuerung erfolgt rein ereignisgesteuert über die **IND**-Ereignisse der Ei
 ## Zusammenfassung
 
 Die Übung 216b demonstriert die Anwendung eines IEC 61131-3 Rückwärtszählers (`FB_CTD_DINT`) in der 4diac-IDE. Der Zähler wird über zwei digitale Eingänge gesteuert und gibt sowohl ein binäres Signal (Zähler erreicht Null) als auch eine numerische Anzeige des aktuellen Zählwerts auf einem Terminal aus. Die Ereignissteuerung stellt sicher, dass die Ausgangswerte nur nach einer vollständigen Zähleroperation aktualisiert werden. Dieses Beispiel zeigt grundlegende Konzepte der ereignisgesteuerten Applikationsentwicklung mit Standard-Funktionsbausteinen und Hardware-Schnittstellen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

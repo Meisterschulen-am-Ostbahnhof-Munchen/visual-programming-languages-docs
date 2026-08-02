@@ -65,3 +65,8 @@ Die SubApp verwendet folgende Funktionsbausteine:
 ## Zusammenfassung
 
 Die Übung demonstriert eine sichere Ansteuerung eines Motors mit Rechts-/Linkslauf durch einen Interlock-Baustein. Ein Low-Side Treiber wird automatisch aktiviert, sobald eine der beiden Richtungen gewählt wird. Die gesamte Schaltung ist als SubApp realisiert und kann in übergeordneten Projekten wiederverwendet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

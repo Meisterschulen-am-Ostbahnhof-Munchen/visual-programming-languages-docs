@@ -73,3 +73,8 @@ Der `AULI_SPLIT_5` ist im Gegensatz zu ereignisbasierten Splittern **ereignislos
 ## Fazit
 
 Der `AULI_SPLIT_5` ist ein minimalistischer, aber nützlicher Funktionsblock zur Vervielfachung eines unidirektionalen AULI-Signals auf fünf Ausgänge. Seine generische Natur erlaubt eine flexible Parametrisierung im Eclipse-4diac-Framework. Aufgrund des fehlenden Zustandsautomaten und der reinen Durchleitung ist er extrem ressourcenschonend und für Hochgeschwindigkeits-Datenverteilungen geeignet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

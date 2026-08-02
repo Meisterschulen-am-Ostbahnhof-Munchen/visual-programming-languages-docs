@@ -54,3 +54,8 @@ Diese Übung vermittelt Grundlagen der ereignisgesteuerten Zeitsteuerung in 4dia
 ## Zusammenfassung
 
 Die Übung **Uebung_007d** realisiert einen einfachen Blinker unter Verwendung der Bausteine `E_CYCLE`, `E_TMIN` und `E_T_FF`. Die Kaskadierung von Ereignisbausteinen ermöglicht eine flexible Zeitsteuerung, ohne auf herkömmliche Timer oder Zähler angewiesen zu sein. Der erstellte Subapplikationstyp kann direkt in übergeordnete Projekte eingebunden werden, um z. B. Signallampen oder optische Anzeigen zeitgesteuert zu betreiben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

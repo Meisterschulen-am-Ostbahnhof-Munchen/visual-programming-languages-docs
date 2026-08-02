@@ -50,3 +50,8 @@ Die Parameter `QI = TRUE` bei Ein‑ und Ausgangsbaustein aktivieren diese dauer
 ## Zusammenfassung
 
 Die Übung **Uebung_001e_AX** vermittelt die Grundlagen der Adapter‑basierten Kommunikation in 4diac. Sie zeigt, wie ein digitales Eingangssignal mit einem einfachen Logikbaustein (NOT) verarbeitet und auf einen physikalischen Ausgang gelegt wird. Dieses Verständnis ist die Basis für komplexere Verknüpfungen und Steuerungsaufgaben in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

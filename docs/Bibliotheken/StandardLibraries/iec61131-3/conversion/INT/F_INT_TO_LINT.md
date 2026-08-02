@@ -48,3 +48,8 @@ Der Funktionsblock besitzt keinen internen Zustand. Jeder Aufruf über `REQ` fü
 
 ## Fazit
 Der `F_INT_TO_LINT` Funktionsblock ist ein einfaches und effizientes Werkzeug zur Typkonvertierung in 4diac-IDE. Seine Stärke liegt in der direkten und verlustfreien Umwandlung, was ihn ideal für Anwendungen mit erweitertem Wertebedarf macht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

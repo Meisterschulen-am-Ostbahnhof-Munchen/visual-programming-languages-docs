@@ -81,3 +81,8 @@ Der Baustein besitzt keine expliziten Zustände. Das Verhalten kann als einfache
 ## Fazit
 
 Der `ADI_DEMUX_4` ist ein kompakter, generischer Demultiplexer für die ereignisgesteuerte Verteilung von Adapterdaten. Dank der unidirektionalen Adapter‑Schnittstelle und der generischen Auslegung eignet er sich hervorragend für modulare Automatisierungslösungen, bei denen Datenflüsse dynamisch umgeschaltet werden müssen. Die einfache Schnittstelle – ein Ereignis, ein Index und fünf Adapter – ermöglicht eine unkomplizierte Integration in größere Steuerungssysteme.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

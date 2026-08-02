@@ -75,3 +75,8 @@ Die Funktionsweise ist ereignisgesteuert (im Hintergrund durch die Adapter). Die
 ## Zusammenfassung
 
 Die Übung `Uebung_012g_AR` zeigt eine kompakte Realisierung eines numerischen Wertespeichers unter Verwendung des AR-Adapter-Konzepts. Der Wert wird von einem physikalischen Eingang gelesen, über den `INI_AR`-Baustein persistiert und anschließend über einen Ausgabebaustein sichtbar gemacht. Die Lösung besteht aus drei spezialisierten Funktionsbausteinen, die über Adapter verbunden sind und so eine saubere Trennung von Ein‑, Speicher‑ und Ausgabelogik ermöglichen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -70,3 +70,8 @@ Der Baustein verfügt über keinen expliziten Zustandsautomaten in der XML-Besch
 
 ## Fazit
 Der **AIS_DEMUX_2** ist ein spezialisierter, generischer Funktionsblock zur Demultiplexierung von AIS-Signalen. Er bietet eine klare, ereignisgesteuerte Schnittstelle mit Adaptern und eignet sich besonders für den Einsatz in der Agrartechnik und anderen Bereichen, in denen unidirektionale AIS-Daten verteilt werden müssen. Durch seine Lizenzierung als EPL 2.0 ist er offen und erweiterbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

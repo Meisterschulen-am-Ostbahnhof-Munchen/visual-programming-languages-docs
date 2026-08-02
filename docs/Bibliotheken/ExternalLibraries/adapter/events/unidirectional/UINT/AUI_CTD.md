@@ -96,3 +96,8 @@ Der **AUI_CTD** füllt die Lücke eines spezialisierten Abwärtszählers mit mod
 ## Fazit
 
 Der **AUI_CTD** ist ein leistungsfähiger Abwärtszähler für IEC 61499-konforme Steuerungen. Durch die Kombination von Adapter-Schnittstellen und On-Change-Triggerung eignet er sich besonders für modulare, ressourcenschonende Automatisierungslösungen. Sein Verhalten ist deterministisch und kann über die ECC einfach nachvollzogen werden. Damit ist er eine optimale Wahl für Applikationen, die eine zuverlässige und effiziente Zählerfunktion mit minimierter Ereigniskommunikation erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

@@ -41,3 +41,8 @@ Dies simuliert eine Maschine, bei der der Bediener jeden Schritt manuell freigeb
 ## Anwendungsbeispiel
 
 **Inbetriebnahme oder Wartung**: Der Techniker schaltet die Maschine Schritt für Schritt weiter, um zu prüfen, ob jeder Teilprozess korrekt funktioniert, bevor er auf Automatik umschaltet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

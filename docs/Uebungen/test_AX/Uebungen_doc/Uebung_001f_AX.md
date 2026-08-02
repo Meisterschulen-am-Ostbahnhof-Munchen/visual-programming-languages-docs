@@ -69,3 +69,8 @@ Die Verbindungen im SubApp-Netzwerk sind als Adapterverbindungen realisiert:
 ## Zusammenfassung
 
 Die Übung `Uebung_001f_AX` veranschaulicht die Negation eines digitalen Eingangssignals unter Verwendung des speziellen Bausteins `AX_NOT_INIT`. Die Besonderheit liegt im initialen Ausgangszustand beim Systemstart, der unabhängig vom Eingang `TRUE` ist. Die Übung wird mit dem Kommentar ergänzt: *„obwohl I1 nicht abgefragt wird beim BOOT, wird AX_NOT hier TRUE ausgeben.“* Damit wird der Lerneffekt zum Startverhalten initialisierter Bausteine unterstrichen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

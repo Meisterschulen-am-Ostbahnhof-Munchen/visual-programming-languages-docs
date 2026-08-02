@@ -71,3 +71,8 @@ Der Ablauf der Schaltung ist wie folgt definiert:
 
 ## Zusammenfassung
 Die Übung `Uebung_004a2_2` demonstriert effektiv, wie man in 4diac mehrere Eingangssignale auf eine gemeinsame Verarbeitungslogik führt. Durch die Verwendung des `E_MERGE_2` Bausteins können sowohl Taster 1 als auch Taster 2 denselben `E_T_FF` (Toggle Flip-Flop) ansteuern. Dies ermöglicht eine flexible Steuerung eines Ausgangs von mehreren Orten aus, ähnlich einer Stromstoßschaltung in der Elektrotechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

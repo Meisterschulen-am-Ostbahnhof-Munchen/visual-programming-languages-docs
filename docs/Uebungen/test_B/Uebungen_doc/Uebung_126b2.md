@@ -74,3 +74,8 @@ Die eigentliche Datenerzeugung findet in einem gekapselten Sub-Baustein statt.
 ## Zusammenfassung
 
 Diese Übung vermittelt, wie man in 4diac ISOBUS-Anwendungen erstellt, die Daten nicht nur statisch, sondern dynamisch zur Laufzeit berechnen. Durch die Nutzung des Callback-Musters wird eine effiziente Trennung zwischen dem Kommunikationsmanagement (zyklisches Senden) und der Anwendungslogik (Signalgenerierung) erreicht. Das Ergebnis ist eine auf dem CAN-Bus sichtbare Sinus-Schwingung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

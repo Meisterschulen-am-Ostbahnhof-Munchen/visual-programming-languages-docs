@@ -80,3 +80,8 @@ Dadurch eignet sich die Schaltung für sicherheitskritische Anwendungen, z. B.
 ## Zusammenfassung
 
 Die Übung „Uebung_206_AX“ zeigt einen eleganten Weg, drei Toggle-Flip-Flops gegenseitig zu verriegeln, sodass stets nur ein Ausgang aktiv ist. Die Verwendung einer Adapter-Kette vereinfacht die Verkabelung und macht die Logik modular erweiterbar auf mehrere Stufen. Der Bibliotheksbaustein `ILOCK_T_FF_AX` kapselt die komplexe Verriegelungslogik und erlaubt eine klare, übersichtliche Netzwerktopologie.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

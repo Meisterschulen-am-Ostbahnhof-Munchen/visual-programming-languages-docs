@@ -62,3 +62,8 @@ Im Vergleich zu bestätigten Kommunikationsblöcken bietet PUBLISH_0:
 
 ## Fazit
 Der PUBLISH_0-Block ist ein effizientes Werkzeug für unbestätigte Kommunikation in verteilten Steuerungssystemen. Seine einfache Schnittstelle und die Unterstützung für multiple Empfänger machen ihn ideal für Szenarien, in denen Performance wichtiger ist als garantierte Zustellung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

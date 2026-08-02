@@ -76,3 +76,8 @@ Im Unterschied zu einem allgemeinen ISOBUS-Empfänger (z. B. einem rohen PGN-P
 ## Fazit
 
 Der IA_RHS-Baustein ist eine praktische, standardkonforme Kapselung des Heckkraftheber-Status nach ISO 11783-7. Er vereinfacht die Integration von ISOBUS-Daten in ein 4diac-basiertes Steuerungssystem, indem er die komplexe Busschnittstelle hinter einfach nutzbaren Adaptern verbirgt. Die Aufteilung in mehrere Datenadapter sowie die Bereitstellung eines Timeout-Status machen ihn flexibel einsetzbar für verschiedene Anwendungen der Agrartechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

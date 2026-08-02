@@ -53,3 +53,8 @@ Im Vergleich zu generischen I/O-Blöcken bietet IORevPiCore spezifische Optimier
 
 ## Fazit
 Der IORevPiCore Funktionsblock stellt eine zuverlässige und einfach zu konfigurierende Schnittstelle für die Integration von Revolution Pi Hardware in 4diac-basierte Automatisierungslösungen dar. Durch die standardisierte Schnittstelle und flexible Konfigurationsmöglichkeiten ermöglicht er eine effiziente Anbindung industrieller I/O-Komponenten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

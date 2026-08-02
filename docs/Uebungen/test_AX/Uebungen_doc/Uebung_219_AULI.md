@@ -105,3 +105,8 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 - Die SubApp kann in ein 4diac‑Projekt eingefügt und auf eine entsprechende Steuerung (mit logiBUS‑Anbindung und Terminal) geladen werden.
 - Die Eingänge `Input_I1` (CD) und `Input_I2` (LD) müssen mit Tastern oder einem Signalgenerator verbunden sein.
 - Der Ausgang `Output_Q1` und das Terminalobjekt `OutputNumber_N1` zeigen die Ergebnisse an.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

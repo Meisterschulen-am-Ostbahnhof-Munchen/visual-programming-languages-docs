@@ -71,3 +71,8 @@ Im Vergleich zu einfachen digitalen Eingabeblöcken bietet Button_IX erweiterte 
 
 ## Fazit
 Der Button_IX-Funktionsblock stellt eine robuste und flexible Lösung für die Integration von Tasteneingaben in 4diac-basierten Steuerungssystemen dar. Seine umfangreiche Schnittstelle und Statusverwaltung machen ihn besonders geeignet für anspruchsvolle industrielle Anwendungen, die zuverlässige und überwachbare Eingabeverarbeitung erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -93,3 +93,9 @@ Die Sub-Applikation arbeitet nach folgendem Ablauf:
 Die Übung 004b4c_sub zeigt den Aufbau eines verriegelbaren Toggle-Flip-Flops, das seinen Zustand nur bei jedem zweiten Eingangsereignis wechselt (Toggle). Die Verriegelung wird durch die Rückkopplung des aktuellen Zustands auf den Eingang eines `E_SWITCH` realisiert. Über die AE2-Adapterplugs und -Sockets ist die Sub-Applikation in der Lage, mit anderen Komponenten Ereignisse auszutauschen, was sie ideal für verteilte Automatisierungssysteme macht.
 
 * * * * * * * * * *
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

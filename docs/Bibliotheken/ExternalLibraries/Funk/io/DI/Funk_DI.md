@@ -56,3 +56,8 @@ Im Vergleich zu anderen digitalen Eingangs-Konstantenpaketen bietet Funk_DI:
 
 ## Fazit
 Das Funk_DI GlobalConstants-Paket bietet eine praktische Sammlung vordefinierter Konstanten für digitale Eingänge in Funksystemen. Durch die standardisierten Pin-Zuordnungen und die klare Namensgebung ermöglicht es eine effiziente und wartungsfreundliche Konfiguration von Steuerungsanwendungen. Die speziellen Funktionen wie START, STOP und STATUS machen es besonders geeignet für industrielle Steuerungsanwendungen mit drahtlosen Komponenten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

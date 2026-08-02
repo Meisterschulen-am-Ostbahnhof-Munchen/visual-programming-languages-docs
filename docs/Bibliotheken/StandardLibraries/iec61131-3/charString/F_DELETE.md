@@ -53,3 +53,8 @@ Keine Adapter vorhanden.
 
 ## Fazit
 Der `F_DELETE` Funktionsblock ist ein nützliches Werkzeug zur Bearbeitung von Zeichenketten in der 4diac-IDE. Durch seine einfache und flexible Schnittstelle kann er in verschiedenen Anwendungen eingesetzt werden, um Zeichen aus Strings zu entfernen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

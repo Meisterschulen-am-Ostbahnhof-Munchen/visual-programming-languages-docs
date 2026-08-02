@@ -63,3 +63,8 @@ Die Hardware-Anbindung erfolgt über zwei digitale Eingänge (I1, I2) und einen 
 ## Zusammenfassung
 
 Die Übung 218 realisiert einen vollständigen Rückwärtszähler mit IEC 61131‑3 Standardbaustein. Durch die Kombination von zwei Tastern (Zählen und Laden) sowie einer Ausgabe auf das Terminal und eine Lampe wird das Verhalten des Zählers anschaulich demonstriert. Die Integration in 4diac erfolgt durch einfache Ereignis‑ und Datenverknüpfungen, die eine robuste und erweiterbare Steuerung ermöglichen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

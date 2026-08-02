@@ -79,3 +79,8 @@ Eine explizite Zustandsmaschine ist in der XML nicht hinterlegt. Der Baustein ar
 ## Fazit
 
 Der `AUS_MUX_2` ist ein kompakter, adapterbasierter Funktionsblock zur Auswahl eines von zwei AUS-Signalen. Durch den generischen Aufbau und die klare Ereignissteuerung eignet er sich besonders für modulare Automatisierungslösungen im Umfeld der IEC 61499, wo standardisierte Adapter für den Datenaustausch verwendet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

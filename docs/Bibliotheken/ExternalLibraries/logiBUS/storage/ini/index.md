@@ -68,3 +68,9 @@ Der Block besitzt keine explizite, komplexe Zustandsmaschine im nutzerzugänglic
 
 ## Fazit
 Der INI-Funktionsblock ist ein praktisches und unkompliziertes Werkzeug zur persistenten Speicherung von Konfigurations- und Parametrierdaten in 4diac FORTE Applikationen. Seine Stärken liegen in der einfachen Bedienung über Sektion und Schlüssel, der Flexibilität durch den `ANY_ELEMENTARY`-Typ und der menschlichen Lesbarkeit der gespeicherten INI-Datei. Für Anwendungen, die eine einfache, dauerhafte Schlüssel-Wert-Datenbank benötigen, ist er eine ausgezeichnete Wahl.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

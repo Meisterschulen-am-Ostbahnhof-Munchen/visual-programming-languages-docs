@@ -75,3 +75,9 @@ Der Ablauf wird über Ereignis- und Adapterverbindungen gesteuert:
 ## Zusammenfassung
 
 Die Übung `Uebung_080e2_AX` demonstriert, wie ein ereignisgesteuerter Zähler (`E_CTU`) mit einer **Eventbremse** aus zwei unterschiedlichen Flipflops (`AX_D_FF`, `AUI_D_FF_TMIN`) kombiniert wird. Durch die Mindestzeit des Flipflops wird eine ungewollt schnelle Aktualisierung des Ausgangswerts verhindert. Der Zähler wird von einem zyklischen Ereignisgeber getaktet, der über einen externen Eingang freigegeben und zurückgesetzt werden kann. Das Zusammenspiel der Bausteine vermittelt wichtige Konzepte der ereignisbasierten Steuerung in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

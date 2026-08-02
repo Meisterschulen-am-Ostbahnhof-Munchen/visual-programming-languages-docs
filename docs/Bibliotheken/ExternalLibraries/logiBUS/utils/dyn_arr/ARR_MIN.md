@@ -71,3 +71,8 @@ Es gibt keine mehrfachen Zustände, Warteschleifen oder zeitgesteuerte Abläufe.
 
 ## Fazit
 `ARR_MIN` bietet eine kompakte und effiziente Lösung zur Bestimmung des Minimums in dynamischen Integer-Arrays. Dank des einfachen Request/Confirm-Protokolls und der sauberen Paketstruktur lässt er sich leicht in vorhandene 4diac-Industrieanwendungen integrieren. Die Verwendung von `LOWER_BOUND`/`UPPER_BOUND` macht ihn unabhängig von der tatsächlichen Array-Größe und erlaubt flexible Anpassungen zur Laufzeit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

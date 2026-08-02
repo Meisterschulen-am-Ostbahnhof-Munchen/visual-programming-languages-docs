@@ -65,3 +65,9 @@ Der Baustein besitzt keine Zustandsmaschine. Es existieren keine internen Zustä
 ## Fazit
 
 Der **AUS_SPLIT_8** ist ein einfacher, aber nützlicher Funktionsbaustein zur Vervielfachung eines AUS-Signals. Durch den Verzicht auf Logik und Zustände ist er effizient und leicht verständlich. Er eignet sich besonders für Anwendungen, in denen ein Steuersignal auf mehrere Empfänger verteilt werden muss, ohne dass eine Auswahl oder Verarbeitung erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

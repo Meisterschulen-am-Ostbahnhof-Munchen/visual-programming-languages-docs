@@ -56,3 +56,8 @@ Ein Vergleich wäre eher mit anderen Datentypen möglich, z.B.:
 
 ## Fazit
 ST04X ist ein nützlicher strukturierter Datentyp in 4diac, der die Verwaltung und Organisation von vier booleschen Werten vereinfacht. Obwohl er selbst keine aktive Funktionalität bietet, ist er ein wichtiges Werkzeug zur Verbesserung der Code-Strukturierung und -Lesbarkeit in komplexeren Steuerungsprogrammen, indem er zusammengehörige Bits logisch bündelt und einen direkten, benannten Zugriff auf jedes Bit ermöglicht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

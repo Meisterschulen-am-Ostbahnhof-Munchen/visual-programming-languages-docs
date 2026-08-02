@@ -60,3 +60,8 @@ Der Baustein besitzt keinen persistenten internen Zustand im Sinne einer Zustand
 
 ## Fazit
 Der `LOG_16` ist ein nützlicher und generischer Funktionsblock für grundlegende Logging- und Pufferaufgaben in 4diac FORTE-Applikationen. Seine Stärken liegen in der Einfachheit, der generischen Typunterstützung und dem deterministischen Verhalten. Die feste Puffergröße von 16 ist für viele Überwachungsaufgaben ausreichend, für Anwendungen, die eine andere Puffertiefe oder ein selektives Lesen benötigen, sind jedoch angepasste oder erweiterte Bausteine erforderlich.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

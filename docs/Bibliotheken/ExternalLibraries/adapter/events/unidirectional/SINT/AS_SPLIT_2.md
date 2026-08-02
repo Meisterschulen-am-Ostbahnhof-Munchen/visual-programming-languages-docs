@@ -61,3 +61,8 @@ Im Gegensatz zu einem einfachen Verbindungsknoten (der nur eine 1:1-Leitung real
 ## Fazit
 
 Der **AS_SPLIT_2** ist ein einfacher, aber nützlicher Baustein zur Vervielfältigung von Adapter-Datenströmen. Durch seine generische Definition und den Verzicht auf komplexe Logik eignet er sich hervorragend als universelles Verteilerelement in 4diac-basierten Automatisierungssystemen, bei denen Signalaufteilung ohne Datenveränderung gefordert ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

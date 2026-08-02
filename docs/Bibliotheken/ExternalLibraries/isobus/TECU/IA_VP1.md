@@ -71,3 +71,8 @@ Der Baustein besitzt keine explizit dargestellte Zustandsmaschine. Das Verhalten
 
 ## Fazit
 Der Funktionsblock **IA_VP1** ist ein praktischer und normgerechter Baustein, um die Fahrzeugposition aus dem ISOBUS in die 4diac-Welt zu integrieren. Die Verwendung von unidirektionalen Adaptern ermöglicht eine saubere Trennung und einfache Einbindung in größere Automatisierungsnetzwerke. Dank der Standardkonformität und der einfachen Initialisierung eignet er sich hervorragend für landwirtschaftliche Steuerungen und IoT-Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

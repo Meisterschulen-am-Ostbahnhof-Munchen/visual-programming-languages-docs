@@ -42,3 +42,8 @@
 9\. Application Name mapping vergeben und mit Finish bestätigen. -> Application wurde angelegt.
 
 Es kann mit dem mapping begonnen werden. Weiteres Vorgehen in File Neue Steuerung erstellen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -58,3 +58,8 @@ Der Funktionsblock `ARR08X_TO_ST08X` ist ein zustandsloser (stateless) Baustein.
 
 ## Fazit
 Der `ARR08X_TO_ST08X` Funktionsblock ist ein nützlicher, spezialisierter Baustein zur effizienten und klaren Umwandlung von 8-elementigen BOOL-Arrays in eine 8-elementige BOOL-Struktur. Er trägt zur Verbesserung der Code-Lesbarkeit und der Modularen Architektur in 4diac-Anwendungen bei, insbesondere in Szenarien, die eine Anpassung von Datenformaten erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

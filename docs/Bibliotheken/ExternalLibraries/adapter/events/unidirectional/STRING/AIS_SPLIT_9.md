@@ -71,3 +71,8 @@ Der **AIS_SPLIT_9** besitzt keine internen Zustände oder Ablaufsteuerungen. Sei
 ## Fazit
 
 Der **AIS_SPLIT_9** ist ein einfacher, aber äußerst nützlicher Funktionsblock zur Vervielfältigung eines unidirektionalen AIS‑Signals auf neun Ausgänge. Seine generische Auslegung, der Verzicht auf Ereignis‑ oder Datenlogik und die klare Schnittstelle machen ihn zu einem verlässlichen Werkzeug für modulare Automatisierungslösungen. Er eignet sich besonders für Anwendungen, bei denen ein Signal ohne Verzögerung oder Änderung an mehrere Empfänger verteilt werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

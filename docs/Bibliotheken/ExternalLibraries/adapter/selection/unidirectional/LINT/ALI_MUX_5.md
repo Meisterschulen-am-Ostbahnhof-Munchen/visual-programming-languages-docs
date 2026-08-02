@@ -80,3 +80,8 @@ Der Baustein besitzt keine expliziten Zustandsautomaten (keine ECC‑Zustände d
 ## Fazit
 
 Der **ALI_MUX_5** ist ein kompakter, generischer Multiplexer für fünf ALI‑Adapterkanäle. Durch die rein adapterbasierte Kommunikation und die einfache Ereignissteuerung eignet er sich ideal für modulare Automatisierungslösungen mit wechselnden Datenquellen. Seine generische Natur erlaubt den Einsatz mit verschiedenen ALI‑Datentypen und erleichtert die Wiederverwendung in unterschiedlichen Projekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -55,3 +55,8 @@ Im Vergleich zu generischen IO-Bausteinen bietet PLCnextAXLSESC spezifische Anpa
 
 ## Fazit
 Der PLCnextAXLSESC-Funktionsblock stellt eine zuverlässige und spezialisierte Schnittstelle für die Integration von PLCnext-Hardware in 4diac-Steuerungssysteme dar. Durch seine klare Ereignisstruktur und flexible Adapter-Architektur ermöglicht er eine robuste Kommunikation in industriellen Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

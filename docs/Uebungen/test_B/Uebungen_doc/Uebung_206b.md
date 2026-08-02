@@ -71,3 +71,8 @@ In dieser Übung wird eine Anwendung mit drei gegenseitig verriegelten Toggle-Fl
 
 ## Zusammenfassung
 Diese Übung demonstriert die Verwendung des ILOCK_T_FF-Bausteins zur Realisierung einer gegenseitigen Verriegelung (Interlock) von drei Toggle-Flip-Flops. Durch die Adapter-Kette wird sichergestellt, dass stets nur ein Ausgang aktiv ist, was typischerweise für Anwendungen mit wechselnden Betriebsmodi oder exklusiven Zuständen benötigt wird. Die Ein-/Ausgabe erfolgt über die logiBUS-Hardware. **Lernziele**: Verständnis von Interlock-Mechanismen, Umgang mit Adapter-Schnittstellen und Ereignisgesteuerter Logik in 4diac. **Voraussetzungen**: Grundkenntnisse der 4diac-IDE und der logiBUS-Bibliothek.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

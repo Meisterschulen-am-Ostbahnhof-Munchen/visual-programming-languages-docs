@@ -112,3 +112,8 @@ Die beiden Kommentare im Netzwerk weisen darauf hin, dass alternativ auch der no
   4. Starten Sie die Übung durch Auslösen einer steigenden Flanke an einem der Eingänge.
 
 Die Übung demonstriert eine vollständige, praxisnahe Zähleranwendung mit sowohl digitaler als auch visualisierter Rückmeldung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

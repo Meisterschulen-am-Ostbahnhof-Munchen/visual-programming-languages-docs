@@ -60,3 +60,8 @@ Der **AUI_MUX_4** ist funktional identisch zu einem klassischen 4‑zu‑1‑Mul
 
 ## Fazit
 Der **AUI_MUX_4** bietet eine saubere, wiederverwendbare Lösung zur Auswahl zwischen vier AUI‑Signalen. Seine ereignisgesteuerte Arbeitsweise und die generische Typdefinition machen ihn flexibel einsetzbar, insbesondere in modularen Automatisierungslösungen auf Basis des 4diac‑Frameworks.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

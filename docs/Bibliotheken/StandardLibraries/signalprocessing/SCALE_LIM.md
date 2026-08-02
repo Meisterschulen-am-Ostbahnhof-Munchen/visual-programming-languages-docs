@@ -72,3 +72,8 @@ Im Vergleich zu einfachen Skalierungsbausteinen bietet SCALE_LIM zusätzlich:
 
 ## Fazit
 SCALE_LIM ist ein vielseitiger Funktionsblock für Anwendungen, die sowohl Skalierung als auch Limitierung von Werten erfordern. Die zusätzlichen Grenzwertfunktionen machen ihn besonders geeignet für sicherheitsrelevante Anwendungen, bei denen definierte Reaktionen auf Grenzwertüberschreitungen erforderlich sind.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

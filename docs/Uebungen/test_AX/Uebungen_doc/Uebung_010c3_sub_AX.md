@@ -69,3 +69,8 @@ Der Ablauf innerhalb dieser SubApp gestaltet sich wie folgt:
 
 ## Zusammenfassung
 Die Übung `Uebung_010c3_sub_AX` ist ein wiederverwendbares Modul, das eine SoftKey-Bedienung gleichzeitig auf einen Hardware-Ausgang und eine Display-Visualisierung abbildet. Durch den Einsatz des `AX_SPLIT_2` Bausteins wird demonstriert, wie ein einzelnes Adapter-Event parallel verarbeitet werden kann, um Hardware-Aktionen und UI-Updates synchron zu halten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

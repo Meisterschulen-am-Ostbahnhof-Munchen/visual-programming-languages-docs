@@ -51,3 +51,9 @@ Da der FB über keine Ereignis-Eingänge verfügt, besitzt er keinen expliziten 
 
 ## Fazit
 Der **AUDI_SPLIT_3** ist ein einfacher, aber nützlicher Funktionsblock zur Verteilung eines unidirektionalen AUDI-Adaptersignals auf drei Ausgänge. Durch seine generische Natur und die reine Adapterschnittstelle fügt er sich nahtlos in ereignisgesteuerte und datenstromorientierte IEC 61499‑Anwendungen ein. Er bietet eine saubere, wartbare Lösung für architektonische Signalfächerungen und reduziert die Notwendigkeit manueller Signalweiterschaltung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

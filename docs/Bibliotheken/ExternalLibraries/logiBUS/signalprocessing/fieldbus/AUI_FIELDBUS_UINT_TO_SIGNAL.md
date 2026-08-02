@@ -82,3 +82,8 @@ Der vorliegende FB kombiniert die Umsetzung mit einer **ereignisgesteuerten Gül
 ## Fazit
 
 Der Funktionsblock `AUI_FIELDBUS_UINT_TO_SIGNAL` ist ein kompakter, adapterbasierter Baustein zur geprüften Signalweiterleitung in Feldbussystemen. Durch die interne Kopplung von Datenumsetzung und flankengesteuerter Gültigkeitsanzeige bietet er eine robuste und nachvollziehbare Schnittstelle für die industrielle Automatisierung. Die Verwendung von Adaptern ermöglicht eine einfache Integration in bestehende 4diac‑Netzwerke.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

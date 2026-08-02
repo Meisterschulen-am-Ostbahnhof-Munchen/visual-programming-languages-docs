@@ -79,3 +79,8 @@ Diese Übung implementiert einen kombinierten Vor-/Rückwärtszähler nach IEC 6
 ## Zusammenfassung
 
 Die Übung 224 realisiert einen vollständigen Vor‑/Rückwärtszähler mit 64‑Bit‑Auflösung und Terminalanzeige. Vier digitale Eingänge steuern Zählen, Reset und Laden eines Vorwahlwerts. Die Ausgänge signalisieren das Erreichen der Vorwahl. Die optionalen `E_D_FF` dienen der Stabilisierung bei mehreren gleichzeitigen Ereignissen. Dieses Beispiel vermittelt den praktischen Einsatz von Zählern, E/A‑Anbindung und Datentypkonvertierung in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -91,3 +91,8 @@ Die Übung besteht aus einer flachen Netzwerkstruktur ohne weitere Sub‑Applika
 ## Zusammenfassung
 
 Die Übung `Uebung_221b_ALR` demonstriert den Einsatz eines industriellen Vorwärts-/Rückwärtszählers (`ADI_FB_CTUD`) in der 4diac‑IDE. Durch die Kombination von logiBUS‑Eingängen, Datenkonvertierung und Terminalausgabe wird ein vollständiger Signalpfad von der Hardware bis zur Visualisierung abgebildet. Der Zähler kann über vier digitale Eingänge gesteuert werden, wobei ein fester Preset‑Wert von 5 verwendet wird. Die Ausgabe des aktuellen Zählerstands als Gleitkommazahl auf das Terminal erleichtert die Überwachung und Fehlersuche. Die Übung vermittelt praxisnahe Kenntnisse über Adapter‑Schnittstellen, Ereignissteuerung und Datentypkonvertierung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

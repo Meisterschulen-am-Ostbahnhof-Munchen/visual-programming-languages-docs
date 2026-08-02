@@ -39,3 +39,8 @@ In der Kommentarspalte wird darauf hingewiesen, dass die beiden Namespaces (`iso
 ## Zusammenfassung
 
 Die Übung `Uebung_011e_MIX` zeigt, wie ein numerischer Wert vom Eingang `I1` über eine einfache Konvertierung (`DWORD → REAL`) zum Ausgang `N3` übertragen wird. Sie demonstriert jedoch bewusst eine **falsche Mischung** von Namespaces, die im produktiven Einsatz zu unerwarteten Ergebnissen führt. Ziel ist es, die Bedeutung der korrekten Auswahl von Pool-Objekten und den Umgang mit physikalischen vs. Rohdaten verständlich zu machen. Die Übung eignet sich für Einsteiger in die isobus-Konfiguration mit 4diac, die die Unterschiede zwischen verschiedenen Datentypen und Pools kennenlernen möchten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

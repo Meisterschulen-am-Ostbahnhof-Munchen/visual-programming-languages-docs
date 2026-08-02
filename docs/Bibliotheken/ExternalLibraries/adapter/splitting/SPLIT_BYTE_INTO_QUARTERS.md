@@ -55,3 +55,8 @@ Der Baustein besitzt **keinen expliziten Zustandsautomaten** (ECC). Seine Funkti
 
 ## Fazit
 Der Funktionsblock `SPLIT_BYTE_INTO_QUARTERS` stellt eine kompakte, adapterbasierte Lösung zur Zerlegung eines Bytes in vier Quarter‑Ausgänge dar. Durch die Kombination aus rekursiver Struktur und Flipflop‑Synchronisation wird eine zuverlässige, parallele Datenbereitstellung erreicht. Er eignet sich für Anwendungen, die eine feste Aufteilung eines 8‑Bit‑Werts in vier 2‑Bit‑Einheiten erfordern, und bietet durch die einheitliche Adapter‑Schnittstelle eine gute Integrationsfähigkeit in modulare 4diac‑Projekte.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

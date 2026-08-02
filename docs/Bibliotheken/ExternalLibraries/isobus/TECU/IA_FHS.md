@@ -81,3 +81,8 @@ Tritt während des Betriebs ein Fehler auf (z. B. Verbindungsabbruch), wird di
 ## Fazit
 
 Der Funktionsblock **IA_FHS** bietet einen fertig konfektionierten ISOBUS‑Adapter für den Front‑Hitch‑Status. Dank der internen Kapselung des `I_FHS`‑Kerns und der Ausgabe über unidirektionale Adapter kann der Anwender die Werte für Position, Kraft und Zugkraft schnell und zuverlässig in eigene Steuerungs‑ oder Überwachungsanwendungen einbinden. Die integrierte Timeout‑Überwachung erhöht die Betriebssicherheit der ISOBUS‑Kommunikation.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -68,3 +68,8 @@ Im Netzwerk-Diagramm ist ein Kommentar hinterlegt: *"nicht empfohlen !!! viel zu
 ## Zusammenfassung
 
 Die Übung `Uebung_004b_AX_ASR` demonstriert die Realisierung eines Toggle-Flip-Flops unter ausschließlicher Verwendung von Adapter-Bausteinen (`AX_`) und Konvertern. Sie zeigt anschaulich, wie Adapter-Verbindungen gesplittet und konvertiert werden können, dient aber gleichzeitig als Negativbeispiel für die Effizienz bei simplen Logikaufgaben. Das Lernziel liegt im Verständnis der Adapter-Technologie innerhalb der 4diac IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

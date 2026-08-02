@@ -47,3 +47,8 @@ Als reiner Datentyp ist `ButtonActivationCode_S` mit anderen strukturierten Date
 
 ## Fazit
 Der Datentyp `ButtonActivationCode_S` ist eine einfache, aber wesentliche Struktur zur standardisierten Konfiguration von Tasterverhalten in 4diac-basierten Steuerungsapplikationen. Durch die Kapselung des Codes und des Wiederholungsflags fördert er die Wiederverwendbarkeit und Lesbarkeit von Code. Die integrierten Initialwerte und der klare Kommentar tragen zur Robustheit und einfachen Handhabung bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

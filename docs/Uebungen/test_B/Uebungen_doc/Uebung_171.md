@@ -49,3 +49,8 @@ Im Netzwerk befindet sich ein Kommentarbaustein mit dem Inhalt **"TODO"**. Dies 
 ## Zusammenfassung
 
 Die `Uebung_171` stellt eine grundlegende Aufgabe dar, um die Datenübergabe in 4diac zu üben. Der Fokus liegt auf der korrekten Nutzung des `E_MOVE` Bausteins in Kombination mit vorangestellter IEC 61131 Logik (`F_MOVE`). Der Anwender muss die offenen Verbindungen im Sinne des "TODO"-Hinweises ergänzen, um die Funktionalität herzustellen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

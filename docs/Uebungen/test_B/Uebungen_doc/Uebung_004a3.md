@@ -48,3 +48,8 @@ Die Funktionsweise ist identisch zur Übung mit `E_MERGE`: Jedes eintreffende Ev
 ## Anwendungsbeispiel
 
 Gleiches Beispiel wie zuvor (Wechselschaltung), jedoch mit schlankerem Code (weniger Bausteine, höhere Übersichtlichkeit).
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

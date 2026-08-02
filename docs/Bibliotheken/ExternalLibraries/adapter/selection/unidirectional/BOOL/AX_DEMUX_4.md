@@ -59,3 +59,8 @@ Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)
 
 ## Fazit
 Der AX_DEMUX_4 ist ein robuster und einfach zu konfigurierender Demultiplexer für industrielle Automatisierungssysteme. Seine Adapter-basierte Architektur ermöglicht flexible Integration in bestehende Steuerungsstrukturen, während die Index-gesteuerte Auswahl eine präzise Datenverteilung gewährleistet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

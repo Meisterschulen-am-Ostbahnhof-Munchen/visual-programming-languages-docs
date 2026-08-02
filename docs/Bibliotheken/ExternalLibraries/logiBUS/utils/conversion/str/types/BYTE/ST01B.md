@@ -50,3 +50,8 @@ Dieser Datentyp kann in verschiedenen Szenarien nützlich sein, in denen ein ein
 
 ## Fazit
 `ST01B` ist ein einfacher, aber nützlicher strukturierter Datentyp in 4diac, der die Kapselung eines einzelnen Bytes ermöglicht. Obwohl es sich nicht um einen Funktionsblock handelt, kann er als grundlegender Baustein die Klarheit und Struktur von 4diac-Anwendungen verbessern, indem er spezifisch benannte Byte-Variablen definiert. Die bereitgestellte XML-Definition ermöglicht eine einfache Integration in 4diac-Projekte.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

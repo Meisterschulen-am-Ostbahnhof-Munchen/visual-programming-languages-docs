@@ -64,3 +64,8 @@ Der Funktionsblock besitzt keinen eigenen Zustandsautomaten (ECC). Er ist ein re
 ## Fazit
 
 Der **AW_SPLIT_3** ist ein grundlegender, aber flexibler Verteilerbaustein in Eclipse 4diac. Seine generische Auslegung macht ihn universell einsetzbar für alle unidirektionalen Adaptertypen. Die klare, passive Struktur ohne zusätzliche Logik erlaubt eine effiziente und zuverlässige Signalverteilung in Automatisierungslösungen. Besonders in Kombination mit der Typvariabilität und 4diac-Adaptermechanik stellt er ein wertvolles Werkzeug für modulare und wiederverwendbare Steuerungsarchitekturen dar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

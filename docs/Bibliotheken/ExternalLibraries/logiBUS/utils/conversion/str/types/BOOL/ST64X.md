@@ -118,3 +118,8 @@ Da `ST64X` ein Datentyp ist, vergleicht man ihn nicht direkt mit Funktionsblöck
 
 ## Fazit
 Der Datentyp `ST64X` ist ein nützliches Konstrukt in 4diac-ide zur Definition einer strukturierten Variable, die 64 individuelle BOOL-Werte enthält. Er bietet eine klare, benannte Schnittstelle zu jedem einzelnen Bit, was die Lesbarkeit und Wartbarkeit des Codes verbessert, insbesondere in Anwendungen, die eine feingranulare Steuerung oder Statusanzeige mit vielen binären Flags erfordern. Er ist eine gute Alternative zu `ARRAY OF BOOL` oder Bit-Manipulationen auf Integer-Typen, wenn die individuelle Bedeutung jedes Bits im Vordergrund steht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

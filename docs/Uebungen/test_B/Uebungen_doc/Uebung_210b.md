@@ -77,3 +77,8 @@ Daten:
 ## Zusammenfassung
 
 Die Übung **Uebung_210b** realisiert einen vollständigen IEC‑61131-3 Vorwärtszähler (`FB_CTU`) mit zwei digitalen Steuereingängen und einer Ausgabe des Zählerstands auf ein Terminal. Der Preset-Wert ist auf 5 gesetzt. Die Applikation verdeutlicht die Verbindung von Hardware‑E/A mit einem Standardfunktionsbaustein und die unkomplizierte Datenausgabe mittels Terminal‑Objekt. Sie eignet sich als Einstiegsübung in die industrielle Zählerprogrammierung mit 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

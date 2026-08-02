@@ -92,3 +92,8 @@ Im Gegensatz zu linearen Sequenzern (ohne Loop) ist dieser Baustein explizit fü
 ## Fazit
 
 Der **sequence_Pattern_08_08_loop_AX** ist ein leistungsfähiger und kompakter Baustein zur Realisierung komplexer, zyklischer Schrittketten. Durch die Parametrierung über Byte-Muster und Zeitwerte lassen sich vielfältige Steuerungsaufgaben ohne Änderung der internen Logik realisieren. Die integrierte Reset-Funktionalität und die Adapter-Schnittstelle sorgen für eine saubere Integration in moderne 4diac-Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

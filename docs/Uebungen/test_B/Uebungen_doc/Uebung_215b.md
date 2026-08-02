@@ -50,3 +50,8 @@ Die folgenden Ereignis- und Datenverbindungen definieren den Ablauf:
 
 ## Zusammenfassung
 Die Übung 215b demonstriert den Einsatz des IEC 61131-3 Rückwärtszählers `FB_CTD` in einer 4diac-IDE-Umgebung. Durch die Kombination von digitalen Eingängen (I1, I2), einem digitalen Ausgang (Q1) und einer Terminalausgabe lernen Sie die typische Nutzung eines Zählers in der Automatisierungstechnik kennen. Die direkte Verbindung des Integer-Zählerstands an eine Terminalausgabestelle zeigt die flexible Datenkonvertierung des Systems.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

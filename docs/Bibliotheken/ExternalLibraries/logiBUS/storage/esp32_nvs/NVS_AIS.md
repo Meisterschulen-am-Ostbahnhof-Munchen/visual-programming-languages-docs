@@ -74,3 +74,9 @@ Der Baustein `NVS_AIS` selbst besitzt keine explizite Zustandsmaschine. Sein Ver
 
 ## Fazit
 `NVS_AIS` ist ein praktischer Funktionsblock, der das Speichern und Laden von Zeichenketten im nichtflüchtigen Speicher des ESP32 kapselt und über eine saubere Adapter‑Schnittstelle bereitstellt. Durch die automatisierte Initialisierung und die Integration von Lese‑ und Schreibvorgängen eignet er sich besonders für Anwendungen, die eine einfache, zuverlässige Persistenz von Konfigurationsdaten benötigen. Die Adapter‑Anbindung ermöglicht eine lose Kopplung mit anderen Bausteinen und erhöht die Wiederverwendbarkeit in verschiedenen IEC‑61499‑Projekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)
+* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

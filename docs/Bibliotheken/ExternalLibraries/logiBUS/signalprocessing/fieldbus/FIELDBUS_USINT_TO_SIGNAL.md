@@ -68,3 +68,8 @@ Der Funktionsblock besitzt einen einzigen Zustand `REQ`. Sobald ein REQ-Ereignis
 ## Fazit
 
 Der `FIELDBUS_USINT_TO_SIGNAL`-Baustein bietet eine einfache und zuverlässige Möglichkeit, USINT-Feldbussignale auf ihre Gültigkeit zu prüfen und nur gültige Werte an die nachfolgende Verarbeitung weiterzugeben. Durch die Verwendung konfigurierbarer Grenzwerte (über die Paketkonstanten) ist er flexibel einsetzbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

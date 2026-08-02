@@ -92,3 +92,8 @@ Der Baustein ist zustandslos im Sinne eines kontinuierlichen Datenflusses; jede 
 
 ## Fazit
 Der `INI_AUDI`-Funktionsblock stellt eine kompakte und wiederverwendbare Lösung dar, um UDINT-Werte aus einer INI-Datei zu lesen und zu schreiben, wobei die Ankopplung an die Umgebung über standardisierte AUDI-Adapter erfolgt. Durch die klare Trennung von Initialisierung, Lesen und Schreiben sowie die Einbindung eines Fallback-Werts eignet er sich besonders für robuste Konfigurations- und Datenspeicherungsaufgaben in Automatisierungsumgebungen. Die einfache Struktur erleichtert die Integration in komplexe 4diac-Netzwerke.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -32,3 +32,8 @@ Innerhalb der logiBUS-Bibliothek existieren ähnliche strukturierte Datentypen f
 
 ## Fazit
 Der `logiBUS_AI_S`-Datentyp ist ein essentielles Konfigurationselement für die Nutzung analoger Eingänge mit logiBUS in 4diac. Als einfache, gut definierte Struktur ermöglicht er eine klare und zentrale Verwaltung der Hardware-Parameter und bildet die Grundlage für eine zuverlässige Anbindung von Analogsensoren an ein IEC 61499-Steuerungssystem.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

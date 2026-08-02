@@ -80,3 +80,8 @@ Der vorliegende FB zeichnet sich durch seine Einfachheit, klare Trennung von Ska
 
 ## Fazit
 **FIELDBUS_UINT_TO_SIGNAL_SCALED** ist ein kompakter, ereignisgesteuerter Funktionsblock zur Umrechnung eines UINT‑Feldbussignals in einen skalierten REAL‑Wert. Durch die integrierte Gültigkeitsprüfung wird eine einfache Fehlererkennung ermöglicht. Der Baustein eignet sich besonders für Anwendungen, in denen rohe Busdaten mit geringem Aufwand in physikalische Größen gewandelt werden müssen und gleichzeitig die Signalqualität überwacht werden soll. Die klare Schnittstelle und die Verwendung von importierten Konstanten erleichtern die Wiederverwendung in verschiedenen Projektkontexten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

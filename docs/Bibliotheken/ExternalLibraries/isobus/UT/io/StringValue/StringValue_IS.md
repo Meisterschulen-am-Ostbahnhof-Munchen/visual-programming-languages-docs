@@ -108,3 +108,8 @@ Der `StringValue_IS` ergänzt die Familie der Eingangs-SIFBs um den flexiblen Da
 ## Fazit
 
 Der **StringValue_IS** ist ein wesentlicher Baustein für die Integration zeichenkettenbasierter Daten in 4diac. Er bietet eine standardisierte Schnittstelle zur Ressource, ermöglicht sowohl aktive Abfragen als auch asynchrone Indikationen und lässt sich durch die Parameter `PARAMS` und `u16ObjId` flexibel konfigurieren. Seine Verwendung vereinfacht die Anbindung an Protokolle wie ISOBUS und erhöht die Wiederverwendbarkeit von Anwendungslogiken.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

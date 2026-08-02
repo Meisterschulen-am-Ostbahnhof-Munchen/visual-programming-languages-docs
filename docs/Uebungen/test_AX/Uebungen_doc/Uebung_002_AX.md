@@ -62,3 +62,8 @@ Im Ergebnis schalten beide Ausgänge synchron zum Zustand des Eingangs `I1`.
 Ein typisches Anwendungsbeispiel ist die **parallele Statusanzeige**:
 
 Ein Sensor an einer Maschine (`I1`) soll nicht nur die interne Logik steuern, sondern gleichzeitig eine lokale Kontrollleuchte (`Q1`) und eine Signallampe an einem entfernten Bedienpult (`Q2`) aktivieren. Durch den Einsatz des Splitters wird sichergestellt, dass beide Anzeigen immer den identischen Zustand des Sensors widerspiegeln, ohne dass die Logik für jeden Ausgang separat implementiert werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

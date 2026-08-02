@@ -73,3 +73,8 @@ Die SubApp ist wie folgt verschaltet:
 ## Zusammenfassung
 
 Die Übung `Uebung_202_AX` veranschaulicht eine industrietypische Verriegelungsschaltung mit Schutzzeit auf Basis des Funktionsbausteins `ILOCK_BLOCK_PROTECT_AX`. Durch den Einsatz von logiBUS-Adaptern werden digitale Ein- und Ausgänge angebunden, während ein zusätzlicher Timer das Timeout-Ereignis verarbeitet. Das Zusammenspiel der Bausteine wird über Adapterverbindungen hergestellt, was eine flexible und modulare Struktur ermöglicht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

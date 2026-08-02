@@ -62,3 +62,8 @@ Es existieren andere Split-Bausteine (z. B. `AUDI_SPLIT_2`, `AUDI_SPLIT_4`), d
 ## Fazit
 
 Der `AUDI_SPLIT_6` ist ein einfacher, aber flexibler Baustein zur Vervielfachung von Adapterverbindungen in einer 4diac-Umgebung. Seine generische Natur und die schlanke Implementierung ohne Ereignis-Overhead machen ihn ideal für Szenarien, in denen ein eingehender Datenstrom an mehrere unabhängige Empfänger verteilt werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

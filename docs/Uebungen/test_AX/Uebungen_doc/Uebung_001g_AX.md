@@ -67,3 +67,8 @@ Der Ablauf ist ereignisgesteuert und folgt dieser Reihenfolge:
 ## Zusammenfassung
 
 Die Übung `Uebung_001g_AX` zeigt, wie ein digitales Eingangssignal nach einer definierten Verzögerung von 3 Sekunden negiert auf einen digitalen Ausgang gegeben wird. Dabei wird das Initialisierungsereignis des Eingangs genutzt, um den Timer zu starten, und der spezielle Negationsbaustein `AX_NOT_INIT` stellt sicher, dass auch beim Fehlen eines initialen Eingangswertes ein definierter Ausgangszustand (`TRUE`) ausgegeben wird. Dies ist ein grundlegendes Beispiel für die ereignisgesteuerte Signalverarbeitung in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

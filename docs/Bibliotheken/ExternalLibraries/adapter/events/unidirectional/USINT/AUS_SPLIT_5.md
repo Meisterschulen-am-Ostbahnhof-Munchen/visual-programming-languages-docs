@@ -52,3 +52,8 @@ Der Baustein hat keinen internen Zustand. Er arbeitet deterministisch und durchg
 
 ## Fazit
 `AUS_SPLIT_5` ist ein einfacher, generischer Verteilerbaustein für unidirektionale AUS-Signale. Er vereinfacht die modulare Steuerungslogik, indem er eine 1:5‑Aufteilung ohne zusätzliche Logik realisiert. Dank der Adapter‑Schnittstelle kann er in unterschiedlichen Kontexten (z. B. Ereignis-, Daten- oder gemischten Strömen) eingesetzt werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

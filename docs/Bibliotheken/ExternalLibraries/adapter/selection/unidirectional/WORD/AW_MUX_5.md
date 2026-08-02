@@ -83,3 +83,8 @@ Diese Zustände sind rein internal und vom Anwender nicht direkt steuerbar.
 
 ## Fazit
 Der AW_MUX_5 ist ein kompakter, ereignisgesteuerter Multiplexer-Funktionsblock für unidirektionale Adapter vom Typ `AW`. Er ermöglicht die einfache Auswahl einer von fünf Signalquellen und eignet sich besonders für modulare, adapterbasierte Steuerungsarchitekturen. Die klare Index-Zuordnung, die generische Auslegung und die Integration als EPL-2.0‑Lizenz machen ihn zu einem nützlichen Baustein in der 4diac‑IDE‑Umgebung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

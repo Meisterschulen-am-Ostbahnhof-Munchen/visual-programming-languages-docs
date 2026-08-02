@@ -70,3 +70,8 @@ Diese Übung implementiert ein **Toggle-Flip-Flop** (auch bekannt als Umschaltgl
 ## Zusammenfassung
 
 Die Übung 004b2b demonstriert die einfache Realisierung eines Toggle-Flip-Flops durch die Kombination der Standardbausteine `E_SWITCH` und `E_SR`. Die Rückkopplung des Ausgangs auf den Gate-Eingang des `E_SWITCH` erzeugt das charakteristische Umschaltverhalten. Die Implementierung als Subapplikation ermöglicht eine saubere Kapselung und Wiederverwendung in komplexeren Steuerungsaufgaben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

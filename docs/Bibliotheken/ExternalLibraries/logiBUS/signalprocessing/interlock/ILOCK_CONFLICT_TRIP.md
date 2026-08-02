@@ -101,3 +101,8 @@ Der Funktionsblock besitzt vier Betriebszustände: **STOP**, **UP**, **DOWN** un
 ## Fazit
 
 Der **ILOCK_CONFLICT_TRIP** ist ein kompakter, sicherheitsorientierter Funktionsblock für die robuste Verriegelung zweier gegensätzlicher Stellsignale. Er bietet eine klare Priorisierung des ersten aktivierten Eingangs, erkennt Konflikte durch gleichzeitige Aktivität und erzwingt einen expliziten Reset nach einem Fehlerfall. Seine Zustandsmaschine ist einfach nachvollziehbar und eignet sich hervorragend für Anwendungen, in denen widersprüchliche Steuerbefehle zuverlässig abgefangen werden müssen – z. B. in der Maschinen- oder Fahrzeugsteuerung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

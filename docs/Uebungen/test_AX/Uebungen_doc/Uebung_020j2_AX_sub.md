@@ -61,3 +61,8 @@ Der Ablauf innerhalb der Subapplikation ist wie folgt:
 ## Zusammenfassung
 
 Die Subapplikation `Uebung_020j2_AX_sub` realisiert eine einfache, aber häufig benötigte Funktion: Aus einem eingehenden Ereignis werden zwei zeitlich unabhängige Ausgangsimpulse erzeugt. Die Impulsdauern können über die Eingänge `TQ1` und `TQ2` festgelegt werden. Die Kapselung in einer Subapplikation ermöglicht eine einfache Wiederverwendung und trägt zur Strukturierung komplexerer Automatisierungslösungen bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

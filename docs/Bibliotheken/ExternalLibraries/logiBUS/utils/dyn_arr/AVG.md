@@ -70,3 +70,8 @@ Der vorliegende Baustein kombiniert die IEC‑61499 Ereignissteuerung mit der ko
 
 ## Fazit
 Der FB **AVG** bietet eine einfache und effiziente Möglichkeit, den Durchschnitt eines ganzzahligen Arrays in Echtzeit zu berechnen. Seine dynamische Array-Unterstützung und die klare Ereignisschnittstelle machen ihn zu einem universellen Werkzeug für Mittelwertbildungen in industriellen Steuerungsanwendungen. Die saubere Integration in die 4diac-IDE und die transparente Berechnungslogik gewährleisten eine hohe Wiederverwendbarkeit und Verständlichkeit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

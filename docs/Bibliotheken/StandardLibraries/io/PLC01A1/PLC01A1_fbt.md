@@ -70,3 +70,8 @@ Im Vergleich zu generischen IO-Bausteinen bietet PLC01A1 eine spezifische Anpass
 ## Fazit
 
 Der PLC01A1 Funktionsblock stellt eine zuverlässige und konfigurierbare Schnittstelle für die PLC01A1-Hardware in 4diac-basierten Steuerungssystemen dar. Durch die klare Trennung von Initialisierungs- und Betriebsphase sowie die konfigurierbare Aktualisierungsrate eignet sich der Baustein sowohl für Echtzeit-Anwendungen als auch für allgemeine Automatisierungsaufgaben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

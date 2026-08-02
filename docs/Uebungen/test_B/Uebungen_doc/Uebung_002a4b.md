@@ -56,3 +56,8 @@ Die Logik der Übung ist wie folgt aufgebaut:
 ## Zusammenfassung
 
 Die Übung **Uebung_002a4b** realisiert eine einfache UND‑Verknüpfung mit negiertem zweiten Eingang. Sie vermittelt die Grundlagen der Verschaltung von Hardware‑Bausteinen (logiBUS) mit Logikbausteinen und die Anwendung von Negationsattributen auf Datenverbindungen. Das Verhalten ist deterministisch: Der Ausgang **Q1** ist genau dann aktiv, wenn Eingang **I1** aktiv und Eingang **I2** inaktiv ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

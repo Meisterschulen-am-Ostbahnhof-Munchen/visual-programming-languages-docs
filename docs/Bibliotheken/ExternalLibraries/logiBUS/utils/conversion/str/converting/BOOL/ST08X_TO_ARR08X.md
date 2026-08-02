@@ -52,3 +52,8 @@ Während 4diac-IDE und der IEC 61499-Standard generische Datenkonvertierungsmech
 
 ## Fazit
 Der Funktionsblock `ST08X_TO_ARR08X` ist ein präzises Werkzeug zur Umwandlung einer 8-BOOL-Struktur in ein 8-BOOL-Array. Seine Einfachheit und Spezialisierung machen ihn zu einer effizienten Lösung für die Schnittstellenanpassung und Datenformatierung in 4diac-basierten Automatisierungsanwendungen, die eine solche Umwandlung erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

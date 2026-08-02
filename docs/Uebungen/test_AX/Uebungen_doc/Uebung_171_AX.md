@@ -74,3 +74,8 @@ Der Ablauf der Übung gestaltet sich wie folgt:
 
 ## Zusammenfassung
 Die Übung `Uebung_171_AX` zeigt eine moderne Implementierung einer klassischen Speicherfunktion. Anstatt Signale direkt über Boolesche Verbindungen zu verknüpfen, werden hier Adapter verwendet, um die Kommunikation zwischen Eingabe-Konvertierung, Logik und Ausgabe zu kapseln. Dies reduziert die sichtbare Komplexität der Verbindungen und demonstriert die Flexibilität des Adapter-Konzepts für Standard-Automatisierungsaufgaben wie das Schalten eines Ausgangs über zwei Taster.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

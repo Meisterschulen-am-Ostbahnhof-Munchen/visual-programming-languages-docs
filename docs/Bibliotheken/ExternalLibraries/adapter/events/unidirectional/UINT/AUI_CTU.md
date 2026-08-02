@@ -108,3 +108,8 @@ Der `AUI_CTU` ist speziell für ereignisgesteuerte Systeme mit Adapterkonzept op
 ## Fazit
 
 Der `AUI_CTU` ist ein moderner, adapterbasierter Aufwärtszähler, der sich durch seine effiziente Ereignisbehandlung auszeichnet. Dank der On-Change-Triggerung für den Status `Q` werden unnötige Nachrichten im System vermieden. Die Unterstützung dynamischer Grenzwerte über den Adapter `PV` erhöht die Flexibilität in Steuerungsanwendungen. Der Baustein ist robust gegen Überläufe und bietet eine klare, zustandsgesteuerte Ablaufstruktur. Er eignet sich besonders für verteilte Automatisierungssysteme, bei denen lose Kopplung und ereignisgesteuerte Kommunikation im Vordergrund stehen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -57,3 +57,8 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 
 ## Fazit
 Der `XOR_10_BOOL` ist ein spezialisierter und nützlicher Funktionsblock für Anwendungen, die die XOR-Verknüpfung über mehr als zwei Signale erfordern. Seine feste, gut dokumentierte Schnittstelle mit zehn Eingängen und das ereignisgesteuerte IEC 61499-Modell machen ihn zu einem zuverlässigen Baustein für die Implementierung von Paritätsprüfungen und speziellen Steuerlogiken. Für einfachere Verknüpfungen mit weniger Eingängen oder für maximale Flexibilität sollten jedoch alternative Implementierungen in Betracht gezogen werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

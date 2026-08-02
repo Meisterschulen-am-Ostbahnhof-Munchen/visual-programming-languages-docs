@@ -56,3 +56,8 @@ Keine Adapter vorhanden.
 
 ## Fazit
 CSV_WRITER_4 ist ein vielseitiger Funktionsblock für die Datenerfassung, der sich besonders für Anwendungen eignet, bei denen strukturierte Daten protokolliert werden müssen. Seine Flexibilität und einfache Integration machen ihn zu einer praktischen Lösung für viele Automatisierungsaufgaben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

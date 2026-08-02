@@ -65,3 +65,8 @@ Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IX erweiterte Se
 
 ## Fazit
 Der Aux_IX Funktionsblock stellt eine robuste und flexible Lösung für die Integration von booleschen Eingangsdaten in IEC 61499-basierte Steuerungssysteme dar. Durch seine Service-orientierte Architektur und umfangreiche Statusrückmeldungen eignet er sich besonders für anspruchsvolle Industrieanwendungen mit hohen Anforderungen an Zuverlässigkeit und Diagnosefähigkeit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

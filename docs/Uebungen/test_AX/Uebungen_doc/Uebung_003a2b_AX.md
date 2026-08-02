@@ -88,3 +88,8 @@ Laden Sie die Datei `Uebung_003a2b_AX.fbt` in die 4diac-IDE. Die übrigen Bauste
 ## Zusammenfassung
 
 Die Übung zeigt eine robuste Schaltung zur Steuerung zweier Ausgänge mit einem gemeinsamen Rücksetzsignal. Der Vorteil des verwendeten `AX_FB_R_IO`-Bausteins liegt in seiner einfachen Handhabung: Ohne angeschlossenen Reset verhält er sich wie ein RS‑Flipflop, mit Reset als dominantem Rücksetzeingang. Die Aufteilung des Rücksetzsignals über `AX_SPLIT_2` macht die Schaltung übersichtlich und erweiterbar. Die „Hausmeister-Aus“-Funktion ist ein praxisnahes Beispiel für eine Sicherheitsabschaltung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

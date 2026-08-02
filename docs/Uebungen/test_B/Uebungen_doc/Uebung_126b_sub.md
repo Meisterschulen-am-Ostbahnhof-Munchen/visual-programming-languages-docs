@@ -58,3 +58,8 @@ Datenflüsse:
 ## Zusammenfassung
 
 Die Übung veranschaulicht den gesamten Pfad von der analogen Signalgenerierung bis zur Ausgabe einer CAN‑Nachricht. Schrittweise werden Datentypen umgewandelt, ein Byte‑Array aufgebaut und in eine standardisierte CAN‑Struktur verpackt. Durch die Kopplung von Ereignis- und Datenflüssen wird ein periodischer, zyklischer Ablauf erreicht, der sich direkt für die Visualisierung oder Steuerung über den PCAN Explorer eignet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

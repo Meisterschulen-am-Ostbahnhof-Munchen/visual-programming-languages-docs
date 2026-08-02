@@ -20,3 +20,8 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_083`.
 
 [cite_start]Diese Übung verwendet den Baustein `E_CTUD_UDINT`[cite: 1]. Im Gegensatz zum Standard-Zähler (der meist nur bis 65.535 zählt) nutzt dieser Typ den Datentyp `UDINT` (Unsigned Double Integer). Damit können Ereignisse bis zu einem Wert von über 4 Milliarden gezählt werden.
 Zusätzlich zur Ansteuerung der Lampen `Q1` und `Q2` wird der aktuelle Zählerstand (`CV`) direkt an eine numerische Anzeige am ISOBUS-Terminal gesendet. Dies ermöglicht eine genaue Beobachtung des Zählvorgangs in Echtzeit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

@@ -60,3 +60,8 @@ Die Übung demonstriert eine vollständige Signalverarbeitungskette:
 - erneutes Ausgeben des gespeicherten Werts an einen physischen Ausgang.
 
 Durch die Ereignis‑ und Datenverbindungen wird sichergestellt, dass nach dem Einschalten automatisch der letzte gespeicherte Wert angezeigt wird und neue Eingabewerte sofort gespeichert und ausgegeben werden. Dieses Muster eignet sich für Anwendungen wie das Speichern von Sollwerten oder Konfigurationsparametern mit einfacher persistenter Datenhaltung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

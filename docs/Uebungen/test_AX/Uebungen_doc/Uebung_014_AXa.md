@@ -63,3 +63,8 @@ Der Zustandsausgang `Q` von **AX_SR** wird über den Adapter `qVisible` an den B
 ## Zusammenfassung
 
 Die Übung zeigt eine typische Anwendung zur Ein-/Ausblendung eines Containers mithilfe zweier Softkeys. Der Set-Reset-Baustein speichert den gewünschten Sichtbarkeitszustand, der über einen Adapter an den Hide/Show-Baustein übergeben wird. Dies ist ein einfaches Beispiel für die Zustandssteuerung in der industriellen Automatisierung mit 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -60,3 +60,8 @@ Der Funktionsblock verfügt über keine Adapter.
 
 ## Fazit
 Der `CSV_WRITER_2` ist ein flexibler und zuverlässiger Funktionsblock für das Schreiben von Daten in CSV-Dateien. Seine Unterstützung für beliebige Datentypen und detaillierte Statusrückmeldungen machen ihn ideal für Anwendungen, bei denen Daten persistent gespeichert werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

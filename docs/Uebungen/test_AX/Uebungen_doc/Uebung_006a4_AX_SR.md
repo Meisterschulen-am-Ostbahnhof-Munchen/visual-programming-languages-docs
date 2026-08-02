@@ -54,3 +54,8 @@ Der logische Ablauf der Übung ist wie folgt:
 ## Zusammenfassung
 
 Die Übung `Uebung_006a4_AX_SR` demonstriert die Verwendung des setzdominanten Toggle-Flipflops `AX_FB_SR_T_FF` in einer 4diac-Umgebung. Durch die klare Trennung von Ein-/Ausgangsadaptern und dem eigentlichen Flipflop-Baustein wird eine hardwarenahe Steuerung realisiert, die sich direkt auf einer logiBUS-Plattform testen lässt. Der Schwerpunkt liegt auf dem Verständnis der Toggle-Funktion unter Berücksichtigung des dominanten Set- und Reset-Verhaltens.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

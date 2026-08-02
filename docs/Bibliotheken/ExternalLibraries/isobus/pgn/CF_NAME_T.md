@@ -36,3 +36,8 @@ Dieser Datentyp wird primär verwendet, um die Nutzdaten von ISOBUS PGN-Nachrich
 
 ## Fazit
 Der Datentyp `CF_NAME_T` ist ein spezialisiertes, wiederverwendbares Konstrukt für die 4diac-IDE, das die Handhabung von 8-Byte-Datenblöcken in ISOBUS-Anwendungen standardisiert und vereinfacht. Durch seine feste Größe und vordefinierte Initialisierung erhöht er die Zuverlässigkeit und Lesbarkeit von Applikationscode, der auf dem ISO 11783-Standard basiert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

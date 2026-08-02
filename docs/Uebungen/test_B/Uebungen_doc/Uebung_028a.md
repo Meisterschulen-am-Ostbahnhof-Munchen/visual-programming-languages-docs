@@ -51,3 +51,8 @@ Die Datenflüsse verbinden:
 ## Zusammenfassung
 
 Die Übung vermittelt den Umgang mit analogen Eingängen, deren Typkonvertierung sowie die Implementierung einer benutzergesteuerten Kalibrierung. Die Kalibrierungsparameter (Offset und Skalierung) werden in nichtflüchtigen Speichern gehalten und können über Taster angepasst werden. Der Beispielcode zeigt, wie Ereignis- und Datenflüsse in einer SubApp strukturiert werden können, um eine robuste und wiederholgenaue Analogwerterfassung zu realisieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

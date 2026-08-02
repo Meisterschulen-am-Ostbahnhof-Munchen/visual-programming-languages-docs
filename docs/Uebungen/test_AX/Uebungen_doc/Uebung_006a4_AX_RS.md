@@ -52,3 +52,8 @@ Die logiBUS-Eingänge werden über die Funktionsbausteine `DigitalInput_SET`, `D
 
 ## Zusammenfassung
 Die Übung `Uebung_006a4_AX_RS` realisiert ein reset-dominantes Toggle-Flipflop mit drei logiBUS-Eingängen und einem Ausgang. Durch die Adapter-Schnittstelle des Flipflops wird eine klare, funktionale Verbindung zwischen Hardware-Ein-/Ausgängen und der Logik des Bausteins erreicht. Die dominante RESET-Funktion sorgt für ein sicheres Grundverhalten in Steuerungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

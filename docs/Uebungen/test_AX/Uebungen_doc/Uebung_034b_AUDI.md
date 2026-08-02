@@ -125,3 +125,9 @@ Die Übung **Uebung_034b_AUDI** realisiert eine Geschwindigkeitssteuerung über 
 Long-Press-Hold erhöht oder verringert das PWM-Signal, Single-Click setzt zurück oder auf Maximum.  
 Die Architektur verwendet Adapter zur Aufteilung und Wandlung des Zählerwerts.  
 Die Terminalausgabe ermöglicht eine einfache Überwachung des aktuellen Werts – ideal für das Erlernen von Adapter-basierten Datenflüssen und der Kombination von Ereignis- und Datenverarbeitung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

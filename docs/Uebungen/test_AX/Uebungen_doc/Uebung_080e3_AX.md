@@ -62,3 +62,9 @@ Nach Abschluss dieser Übung sind Sie in der Lage:
 **Lernziele**: Ereignisgesteuerte Zähler, Zustandsautomaten, Hysteresefilter.  
 **Voraussetzungen**: Grundlegende Bedienung der 4diac-IDE, Verständnis von Ereignis- und Datenflüssen.  
 **Schwierigkeitsgrad**: Mittel
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

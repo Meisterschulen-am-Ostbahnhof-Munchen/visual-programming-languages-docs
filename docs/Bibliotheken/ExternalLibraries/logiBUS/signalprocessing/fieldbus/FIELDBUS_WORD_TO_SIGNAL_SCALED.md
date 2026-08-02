@@ -94,3 +94,8 @@ Die Stärke von `FIELDBUS_WORD_TO_SIGNAL_SCALED` liegt in der **Kombination aus 
 
 ## Fazit
 Der Funktionsblock bietet eine kompakte und robuste Lösung zur Aufbereitung von Feldbus‑Rohdaten. Er integriert die typische Aufgabenkette „Prüfen → Skalieren → Offsieten“ und sorgt durch die feste Gültigkeitsschwelle für eine klare Trennung zwischen normalen Messwerten und Fehlersignalen. Durch die Verwendung externer Konstanten bleibt er flexibel anpassbar, ohne die innere Logik zu verkomplizieren. Ideal für sicherheitskritische oder diagnostische Anwendungen in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

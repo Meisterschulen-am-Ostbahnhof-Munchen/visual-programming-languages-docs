@@ -78,3 +78,8 @@ Der Baustein **AR_ADD_4** hebt sich durch die reine Adapter-Kommunikation und di
 ## Fazit
 
 Der **AR_ADD_4** ist ein kompakter, generischer Funktionsblock zur Addition von vier Werten über Adapter-Schnittstellen. Seine einfache und robuste datengetriebene Funktionsweise macht ihn zu einem nützlichen Grundbaustein für modulare Automatisierungsanwendungen. Die Abwesenheit von Ereignissen und die generische Typisierung ermöglichen eine flexible Integration in heterogene Systeme. Für Anwendungen mit mehr oder weniger als vier Summanden muss auf angepasste Varianten oder erweiterte Bausteine zurückgegriffen werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

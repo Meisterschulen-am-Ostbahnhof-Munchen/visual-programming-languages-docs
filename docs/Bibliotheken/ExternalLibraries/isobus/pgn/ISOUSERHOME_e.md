@@ -57,3 +57,8 @@ Die Konstanten werden primär in ISOBUS-konformen Steuerungssystemen in der Land
 
 ## Fazit
 `ISOUSERHOME_e` ist ein essentielles Hilfskonstrukt für die Entwicklung klarer und wartbarer ISOBUS-Anwendungen in 4diac. Durch die Bereitstellung aussagekräftiger Konstantennamen abstrahiert es von den zugrundeliegenden numerischen Werten und verbessert so die Lesbarkeit und Robustheit des Systementwurfs. Es ist ein Baustein auf Datenebene, der die Kommunikationslogik in höheren Funktionsblöcken unterstützt.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

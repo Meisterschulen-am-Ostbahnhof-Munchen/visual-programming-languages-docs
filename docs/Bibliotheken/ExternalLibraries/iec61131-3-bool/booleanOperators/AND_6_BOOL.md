@@ -56,3 +56,8 @@ Typische Anwendungen sind Sicherheits- und Freigabeketten in Steuerungslogik, be
 
 ## Fazit
 Der `AND_6_BOOL`-Funktionsblock ist ein zuverlässiger und einfach anzuwendender Baustein für logische UND-Verknüpfungen mit sechs Eingängen. Seine ereignisgesteuerte, zustandslose Natur macht ihn vorhersehbar und gut in die 4diac-Architektur integrierbar. Er ist die optimale Wahl, wenn eine feste Anzahl von sechs Bedingungen gleichzeitig erfüllt sein muss, um eine Folgeaktion freizugeben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

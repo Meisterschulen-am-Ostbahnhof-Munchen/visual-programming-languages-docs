@@ -97,3 +97,8 @@ Der Baustein besitzt keine explizit programmierten Zustände. Der interne INI-Ba
 ## Fazit
 
 Der **INI_AIS**-Funktionsblock ist eine praktische Erweiterung des Basis-`INI`-Bausteins, der die Nutzung von Konfigurationsdateien in Automatisierungsprojekten deutlich vereinfacht. Durch die Integration von Lese- und Schreibvorgängen in einer einzigen Adapter-Schnittstelle wird der Systementwurf modularer und klarer. Der Baustein eignet sich besonders für Szenarien, in denen mehrere Komponenten auf denselben Datenspeicher zugreifen müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

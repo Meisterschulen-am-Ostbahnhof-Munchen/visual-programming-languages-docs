@@ -76,3 +76,8 @@ Der AL_MUX_5 zeichnet sich durch seine adressierbare Indexsteuerung (0 bis 4) un
 ## Fazit
 
 Der **AL_MUX_5** ist ein kompakter, generischer Multiplexer für bis zu fünf Eingangskanäle. Er eignet sich besonders für Anwendungen, bei denen eine ereignisgesteuerte Umschaltung von Adaptersignalen (z.B. analoge Messwerte) erforderlich ist. Durch die einfache Schnittstellenstruktur und die fehlende Zustandslogik lässt er sich leicht in bestehende IEC 61499-2 Projekte integrieren und anpassen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

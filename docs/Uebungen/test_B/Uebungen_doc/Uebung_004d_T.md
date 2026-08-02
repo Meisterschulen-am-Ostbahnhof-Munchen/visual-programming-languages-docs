@@ -81,3 +81,8 @@ Die Übung besteht aus vier Funktionsbausteinen, die im SubApp-Netzwerk miteinan
 ## Zusammenfassung
 
 Die Übung `Uebung_004d_T` zeigt den Einsatz des Funktionsbausteins `FB_T_FF` zur Realisierung eines Toggle-Flipflops. Durch die Kopplung von digitalen Eingängen, dem T-FF und einem digitalen Ausgang wird das grundlegende Schaltverhalten – Toggeln bei Taktflanke und asynchrones Rücksetzen – vermittelt. Die einfache Ereignis- und Datenverkettung macht diese Übung zu einem idealen Einstieg in die Arbeit mit bistabilen Elementen unter IEC 61499.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

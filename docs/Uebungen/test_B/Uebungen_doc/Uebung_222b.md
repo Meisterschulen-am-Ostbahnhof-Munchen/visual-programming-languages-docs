@@ -63,3 +63,8 @@ Diese Übung realisiert einen standardkonformen IEC 61131-3 Vor-/Rückwärtszäh
 ## Zusammenfassung
 
 Die Übung „Uebung_222b“ demonstriert einen vollständigen IEC 61131-3 konformen Vor-/Rückwärtszähler mit LINT-Datentyp. Durch die Kombination digitaler Ein-/Ausgänge, eines Standardzählers und einer Datentypkonvertierung wird ein einfacher, aber praxisnaher Zähleraufbau realisiert, dessen aktueller Wert über ein Terminal beobachtet werden kann. Dieses Beispiel eignet sich besonders zum Erlernen von Ereignisverknüpfungen und der Datenkonvertierung zwischen Ganzzahl- und Gleitkommatypen in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -97,3 +97,8 @@ Der AULI_MUX_5 zeichnet sich durch die Verwendung von AULI-Adaptern aus, was ein
 Der **AULI_MUX_5** ist ein flexibler und einfach einsetzbarer Funktionsblock zur Auswahl eines von fünf AULI-Signalen. Seine generische Definition erlaubt eine Wiederverwendung auch mit abweichender Eingangsanzahl. Die klare ereignisgesteuerte Schnittstelle und die Zustandslosigkeit machen ihn zu einem verlässlichen Baustein für modulare Automatisierungslösungen.
 
 *Copyright (c) 2026 HR Agrartechnik GmbH – Veröffentlicht unter der Eclipse Public License 2.0.*
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

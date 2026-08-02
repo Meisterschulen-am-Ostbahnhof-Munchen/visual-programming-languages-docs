@@ -80,3 +80,8 @@ Die Rückmeldung über INITO signalisiert den Abschluss der Initialisierung, wä
 
 ## Fazit
 Der **StringValue_AIS** ist ein spezialisierter Dienstschnittstellen-Baustein für den Empfang von String-Daten über einen unidirektionalen Adapter. Er vereinfacht die Einbindung externer Textquellen in Automatisierungssysteme und bietet eine saubere Trennung zwischen Kommunikationsdiensten und Applikationslogik. Dank der standardisierten Schnittstelle (Ereignis-/Datenanschlüsse) lässt er sich flexibel in 4diac-IDE-Projekte integrieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -54,3 +54,8 @@ Der Funktionsblock ist zustandslos (kombinatorisch). Er besitzt keinen internen 
 
 ## Fazit
 Der `XOR_6_BOOL` ist ein spezialisierter und einfach anzuwendender Funktionsblock für die exklusive ODER-Verknüpfung von bis zu sechs booleschen Signalen. Seine fest definierte Schnittstelle und die ereignisgesteuerte Abarbeitung machen ihn gut integrierbar in 4diac IDE-basierte Applikationen. Er ist besonders nützlich in Szenarien, die eine Paritätsprüfung oder die Auswertung exklusiver Bedingungen über eine kleine, feste Anzahl von Signalen erfordern. Für Anwendungen mit einer variablen oder deutlich höheren Anzahl an Eingängen sollten alternative Lösungen in Betracht gezogen werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -74,3 +74,8 @@ Die fünf Zustände decken einen vollständigen Lebenszyklus eines Schiebers ab:
 ## Fazit
 
 Der Baustein **iSTATES** ist ein einfaches, aber nützliches Hilfsmittel zur konsistenten Definition von Schieber-Zuständen. Durch die Verwendung globaler Konstanten wird der Code lesbarer, fehlerresistenter und wartbarer. Er eignet sich hervorragend für alle Applikationen, in denen ein Aktor die Zustandsfolge „Geschlossen → Öffnet → Geöffnet → Schließt → Geschlossen" durchläuft.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

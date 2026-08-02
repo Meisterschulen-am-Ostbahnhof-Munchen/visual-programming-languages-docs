@@ -135,3 +135,8 @@ Der **AULI_FB_CTD** bietet durch die Adapter-Kopplung eine flexiblere Einbindung
 ## Fazit
 
 Der **AULI_FB_CTD** ist ein leistungsfähiger Abwärtszähler für 64‑Bit-Werte, der über Adapter-Schnittstellen in 4diac-Projekte integriert wird. Er eignet sich besonders für große Zählbereiche und modulare Steuerungstopologien. Die ständige Ereignisausgabe erfordert eine sorgfältige Handhabung des nachfolgenden Netzwerks, kann aber durch geeignete Filterbausteine (z. B. `AX_D_FF`) gezähmt werden. Dank der Kapselung des bewährten `FB_CTD_ULINT` ist die Funktionsweise robust und standardkonform.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

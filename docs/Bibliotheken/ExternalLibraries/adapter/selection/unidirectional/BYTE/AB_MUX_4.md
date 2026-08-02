@@ -62,3 +62,8 @@ Der FB besitzt keine explizite Zustandsmaschine (ECC). Er führt nach jedem `REQ
 
 ## Fazit
 Der `AB_MUX_4` ist ein kompakter, generischer Multiplexer-Baustein für die Adapter-Schnittstelle `unidirectional::AB`. Aufgrund seiner generischen Natur und der einfachen Ereignissteuerung eignet er sich hervorragend für den Aufbau modularer Automatisierungslösungen mit einer begrenzten Anzahl wählbarer Signalquellen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

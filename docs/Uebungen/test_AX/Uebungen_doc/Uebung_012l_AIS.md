@@ -47,3 +47,8 @@ Der Ablauf ist zyklisch: Sobald ein neuer String eingegeben wird, aktualisiert d
 
 ## Zusammenfassung
 Die Übung **Uebung_012l_AIS** zeigt eine minimalistische Kette: Stringeingabe → NVS-Speicherung → Ausgabe über AIS. Sie verdeutlicht, wie Konfigurationsdaten mit geringem Aufwand dauerhaft gespeichert und wieder ausgelesen werden können. Die Implementierung nutzt das AIS-Adapterprotokoll, ohne dass zusätzliche Ereignisverbindungen nötig sind.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

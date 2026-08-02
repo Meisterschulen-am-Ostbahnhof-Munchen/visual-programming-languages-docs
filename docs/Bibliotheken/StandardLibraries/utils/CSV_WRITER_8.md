@@ -50,3 +50,8 @@ Im Vergleich zu einfacheren CSV-Writer-Blöcken bietet CSV_WRITER_8 die Möglich
 
 ## Fazit
 Der CSV_WRITER_8 ist ein leistungsfähiger Funktionsblock für die Datenerfassung und -protokollierung in CSV-Dateien. Seine Flexibilität bei der Datenverarbeitung und die detaillierten Statusmeldungen machen ihn zu einer guten Wahl für komplexe Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

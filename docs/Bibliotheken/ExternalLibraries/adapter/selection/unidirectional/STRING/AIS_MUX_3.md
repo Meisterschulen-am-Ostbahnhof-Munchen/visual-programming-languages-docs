@@ -75,3 +75,8 @@ Im Vergleich zu einem allgemeinen MUX-FB (z. B. MUX aus IEC‑61499‑Standard
 
 ## Fazit
 Der Funktionsbaustein **AIS_MUX_3** ermöglicht eine einfache und effiziente Umschaltung zwischen drei AIS-Datenquellen. Dank der generischen Definition und der Adapter-Schnittstelle ist er flexibel in AIS-Anwendungen der Agrartechnik sowie in anderen Industrien einsetzbar. Die klare Ereignissteuerung und die begrenzte Komplexität machen ihn zu einem robusten Baustein für Multiplex-Aufgaben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

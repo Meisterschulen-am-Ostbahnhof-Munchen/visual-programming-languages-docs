@@ -132,3 +132,8 @@ Mittel – Grundkenntnisse in 4diac und Schrittketten sind erforderlich.
 Die Übung **Uebung_104_AX** demonstriert eine **zustandsbasierte Schrittkette mit Power‑Fail Recovery** mithilfe des Sequenzbausteins `sequence_B_08_AX_AX` in Verbindung mit logiBUS I/O‑Adaptern.  
 Durch die adapterbasierte Verbindung werden Sensoren und Aktoren modular eingebunden.  
 Das Recovery‑Verhalten sorgt dafür, dass die Steuerung nach einem Spannungsausfall automatisch den zum aktuellen Sensorzustand passenden Schritt einnimmt – eine wichtige Eigenschaft für sicherheitskritische oder unterbrechungsempfindliche Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

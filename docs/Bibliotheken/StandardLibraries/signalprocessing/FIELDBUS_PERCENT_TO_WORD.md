@@ -58,3 +58,8 @@ FIELDBUS_PERCENT_TO_WORD = UDINT_TO_WORD(REAL_TO_UDINT(RI * UDINT_TO_REAL(WORD_T
 
 ## Fazit
 Der `FIELDBUS_PERCENT_TO_WORD`-Funktionsblock ist ein spezialisiertes Werkzeug für die präzise Konvertierung von Prozentwerten in feldbusspezifische WORD-Werte. Seine klare Schnittstelle und effiziente Implementierung machen ihn besonders geeignet für Anwendungen in der mobilen Arbeitsmaschinensteuerung und industriellen Automatisierung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

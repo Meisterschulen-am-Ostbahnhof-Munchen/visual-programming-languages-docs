@@ -78,3 +78,8 @@ Die Hardware-Eingänge (I1–I4) werden über die logiBUS-DI-Bausteine eingelese
 ## Zusammenfassung
 
 Die Übung demonstriert den Einsatz des standardisierten CTUD-Zählers (IEC 61131-3) in einer 4diac-Umgebung unter Verwendung des Adapter-Konzepts. Die Anbindung an die reale Hardware (logiBUS) sowie die Ausgabe eines Zählwertes auf ein Terminal werden gezeigt. Der Preset-Wert wird einmalig beim Start durch einen eigenen Konvertierungsbaustein gesetzt. Die Übung macht auch auf Einschränkungen der Konvertierungsbausteine aufmerksam (keine negativen Zahlen) und gibt einen Hinweis zur Optimierung der Eventverarbeitung bei schnellen Signalen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

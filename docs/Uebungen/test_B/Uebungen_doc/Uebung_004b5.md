@@ -59,3 +59,8 @@ Die Subapplikation ist als ereignisgesteuerte Kette realisiert:
 
 ## Zusammenfassung
 Mit dieser Übung wurde eine typische Taster‑Schalter‑Funktion (Toggle) umgesetzt. Durch die Kombination von `E_R_TRIG` und `E_T_FF` wird jede steigende Flanke am Eingang erkannt und der Ausgangszustand umgeschaltet. Die Bausteine sind lose gekoppelt – ein Vorteil der ereignisgesteuerten Programmierung. Die Subapplikation kann direkt in ein 4diac-Projekt eingebunden und auf einem entsprechenden Zielsystem (mit logiBUS‑Anbindung) ausgeführt werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

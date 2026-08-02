@@ -71,3 +71,8 @@ Die Übung demonstriert eine **wechselseitige Verriegelung** zweier reset-domina
 - Ereignisgesteuerter Ablauf in 4diac-FBS.
 
 Nach erfolgreicher Durchführung kann der Anwender solche Verriegelungen in eigenen Steuerungsprojekten einsetzen, z. B. für die Absicherung konkurrierender Aktoren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

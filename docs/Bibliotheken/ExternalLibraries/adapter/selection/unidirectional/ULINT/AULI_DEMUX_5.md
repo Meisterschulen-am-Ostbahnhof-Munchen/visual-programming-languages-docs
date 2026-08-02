@@ -73,3 +73,8 @@ Der FB ist nicht zustandsbehaftet; nach jedem REQ wird die Umschaltung sofort un
 
 ## Fazit
 Der **AULI_DEMUX_5** ist ein kompakter, ereignisgesteuerter Demultiplexer für unidirektionale AULI-Adapter. Er ermöglicht eine flexible Signalweiterleitung auf fünf Zieladapter und eignet sich besonders für modulare Automatisierungslösungen, bei denen Adapter als standardisierte Schnittstelle dienen. Durch die generische Basis kann der Baustein leicht an andere Kanalzahlen angepasst werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

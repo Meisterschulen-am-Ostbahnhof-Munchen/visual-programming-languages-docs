@@ -69,3 +69,8 @@ Die Steuerung erfolgt über vier digitale Eingänge (CU, CD, Reset, Laden des An
 ## Zusammenfassung
 
 Die Übung **Uebung_221** realisiert einen voll funktionsfähigen Vor-/Rückwärtszähler nach IEC 61131-3 mit vier digitalen Eingängen, zwei digitalen Ausgängen und einer numerischen Terminalanzeige. Der Aufbau demonstriert die saubere Trennung von Ereignis- und Datenflüssen sowie die Integration von Standardbibliotheken (IEC 61131-3, logiBUS, isobus) in einer 4diac-Subapplikation. Die Konvertierung von DINT nach UDINT ist ein bewusst gesetzter Hinweis auf mögliche Fallstricke bei der Darstellung negativer Zahlen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

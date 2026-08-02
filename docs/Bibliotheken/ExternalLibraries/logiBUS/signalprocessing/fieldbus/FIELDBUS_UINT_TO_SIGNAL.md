@@ -70,3 +70,8 @@ Im Gegensatz zu einfachen Durchleitbausteinen (z. B. `MOVE`) führt `FIELDBUS_UI
 
 ## Fazit
 Der Funktionsbaustein FIELDBUS_UINT_TO_SIGNAL bietet eine einfache und effiziente Möglichkeit, Feldbussignale auf Gültigkeit zu prüfen und entweder durchzureichen oder zu verwerfen. Die klare Schnittstelle und die Verwendung von konfigurierbaren Konstanten machen ihn flexibel einsetzbar in IEC-61499-Anwendungen der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

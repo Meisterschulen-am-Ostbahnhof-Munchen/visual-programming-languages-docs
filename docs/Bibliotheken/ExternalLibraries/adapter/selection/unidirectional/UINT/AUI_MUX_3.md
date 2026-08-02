@@ -69,3 +69,8 @@ Der Baustein besitzt keinen expliziten internen Zustandsautomaten. Die Funktions
 
 ## Fazit
 Der `AUI_MUX_3` ist ein spezialisierter, aber flexibler Multiplexer für den unidirektionalen AUI-Adapter. Er ermöglicht eine saubere Ereignis-gesteuerte Auswahl aus drei Quellen und eignet sich besonders für modulare Automatisierungslösungen, die auf dem Adapter-Konzept basieren. Die einfache Handhabung und die generische Parametrierbarkeit machen ihn zu einem nützlichen Werkzeug in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

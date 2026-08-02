@@ -42,3 +42,8 @@ Die Eingänge werden logisch ODER-verknüpft und ohne Priorisierung oder Verzög
 
 ## Fazit
 Der `E_MERGE_2` ist ein fundamentaler und häufig verwendeter Baustein für die einfachste Form der Ereignis-Verknüpfung. Seine klare Funktionsweise und die effiziente Implementierung als generischer Baustein machen ihn zu einer zuverlässigen Komponente für grundlegende Steuerungslogik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

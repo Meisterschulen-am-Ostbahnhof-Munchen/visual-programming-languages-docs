@@ -61,3 +61,8 @@ Der FB hat keine eigenen Zustandsdiagramme, da er keine ereignisgesteuerten Abl�
 ## Fazit
 
 Der **AUDI_SPLIT_2** ist ein kompakter, generischer Adapter-Splitter für die 4diac-IDE. Er erfüllt die einfache Aufgabe der Signalverzweigung auf zwei Ausgänge, ohne zusätzliche Latenz oder Logik zu verursachen. Durch die generische Auslegung eignet er sich für unterschiedlichste AUDI-Datentypen und ermöglicht eine flexible Wiederverwendung in modularen Automatisierungsprojekten. Seine Einfachheit und Typsicherheit machen ihn zu einem soliden Grundbaustein für verteilte Steuerungssysteme.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

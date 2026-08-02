@@ -57,3 +57,8 @@ Gegenüber einem allgemeinen `AUDI_MERGE` (der mehrere Eingänge zu einem Ausgan
 ## Fazit
 
 Der `AUDI_SPLIT_9` ist ein einfacher, aber nützlicher Funktionsbaustein zur Vervielfältigung von AUDI-Signalen. Seine Implementation als generischer Typ und die klare Trennung von Eingang und neun Ausgängen erleichtert den Aufbau modularer Automatisierungslösungen. Aufgrund seiner statischen Natur ist er besonders geeignet für datenflussorientierte Anwendungen, bei denen keine Ereignissteuerung erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -64,3 +64,8 @@ Die Übung arbeitet ereignisgesteuert:
 ## Zusammenfassung
 
 Die Übung **Uebung_217b** realisiert einen standardkonformen Rückwärtszähler (`FB_CTD_LINT`) mit Terminalausgabe. Sie verknüpft digitale Eingänge (logiBUS) als Zähl- und Ladeimpulse, einen Digitalausgang als Meldeausgang und eine LINT-zu-LREAL-Konvertierung für die Anzeige des aktuellen Zählerstands auf einem Terminal. Der Ablauf ist vollständig ereignisgesteuert und zeigt die Integration von IEC 61131-3-Bausteinen mit logiBUS-I/O und Terminalausgaben in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

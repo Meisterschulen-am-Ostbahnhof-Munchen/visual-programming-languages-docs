@@ -77,3 +77,8 @@ Der Daten- und Ereignisfluss innerhalb der Sub-Applikation gestaltet sich wie fo
 ## Zusammenfassung
 
 Die Übung bzw. der Baustein `Uebung_039_sub_Outputs` stellt ein robustes Modul zur Aktorsteuerung dar. Es demonstriert, wie man in 4diac eine logische Entkopplung von Automatik- und Handbetrieb realisiert und diese direkt mit physikalischer Hardware und einer Benutzeroberfläche verknüpft. Durch die Kapselung in einer Sub-Applikation kann dieser Baustein mehrfach instanziiert werden, um verschiedene Ausgänge einer Maschine (z.B. in einer Spiegelabfolge) identisch anzusteuern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

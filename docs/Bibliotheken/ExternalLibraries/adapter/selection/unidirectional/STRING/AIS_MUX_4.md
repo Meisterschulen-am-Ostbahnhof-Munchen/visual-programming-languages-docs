@@ -67,3 +67,8 @@ Im 4diac-Framework existieren generische Multiplexer (z. B. `MUX_2`, `MUX_8`).
 
 ## Fazit
 Der `AIS_MUX_4` ist ein einfacher, aber effektiver Baustein zur Auswahl eines von vier AIS-Eingängen. Seine generische Auslegung und die klare Ereignissteuerung machen ihn gut geeignet für modulare Automatisierungslösungen mit AIS-Kommunikation.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

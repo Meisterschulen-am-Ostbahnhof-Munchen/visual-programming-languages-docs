@@ -48,3 +48,8 @@ Der FB besitzt keine explizite Zustandsmaschine. Die Funktionalität lässt sich
 
 ## Fazit
 Der ALR_DEMUX_2 ist ein nützlicher, einfacher Demultiplexer für ALR‑Daten. Seine klare Schnittstelle und die ereignisgesteuerte Arbeitsweise machen ihn gut geeignet für Anwendungen, die eine gezielte Weiterschaltung von ALR‑Verbindungen erfordern. Durch die generische Deklaration ist eine problemlose Integration in bestehende 4diac‑Projekte möglich.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

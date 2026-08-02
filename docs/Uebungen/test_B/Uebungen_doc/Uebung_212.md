@@ -80,3 +80,8 @@ Es werden ausschließlich vordefinierte Bibliotheksbausteine eingesetzt; weitere
 ## Zusammenfassung
 
 Die Übung **Uebung_212** implementiert einen Vorwärtszähler (`FB_CTU_LINT`) mit einem Presetwert von 5. Über zwei digitale Eingänge wird gezählt und zurückgesetzt. Der Zählerstand wird mittels einer Datentypkonvertierung (`F_LINT_TO_UDINT`) auf einem Terminal ausgegeben, während der Ausgang `Output_Q1` aktiv wird, sobald der Zähler den Grenzwert erreicht. Die gezeigte Schaltung demonstriert die Interaktion zwischen industriellen Zählbausteinen, Ein‑/Ausgabe und Benutzeranzeige – eine typische Aufgabenstellung für Automatisierungslösungen. Der beigefügte Kommentar zur Konvertierung gibt einen Hinweis auf mögliche Verbesserungen (Reduzierung der Ereignisse, Vermeidung negativer Zahlen).
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -59,3 +59,8 @@ Während ein Array flexibler in der Dimensionierung sein kann, bietet `ST32B` ei
 
 ## Fazit
 Der Datentyp `ST32B` ist ein fundamentaler strukturierter Datentyp in 4diac, der eine einfache und effiziente Möglichkeit bietet, 32 Bytes als eine Einheit zu behandeln. Seine Stärke liegt in der Bereitstellung einer festen, gut definierten Struktur für Rohdaten, was ihn zu einem nützlichen Werkzeug in Anwendungen macht, die präzise Kontrolle über Byte-Sequenzen erfordern. Obwohl er selbst keine aktive Funktionalität besitzt, ist er eine wichtige Grundlage für datenorientierte Architekturen innerhalb von 4diac-Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

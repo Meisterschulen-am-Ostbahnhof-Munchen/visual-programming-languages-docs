@@ -47,3 +47,8 @@ Ein Datentyp besitzt keine eigene "Zustandsübersicht" im Sinne eines Zustandsau
 
 ## Fazit
 Der Datentyp `ST01X` ist ein grundlegender, aber nützlicher Baustein in der 4diac-IDE für die Strukturierung von Daten. Er ermöglicht die explizite Definition und Kapselung eines einzelnen Booleschen Wertes, was zur Verbesserung der Code-Lesbarkeit, Wartbarkeit und Standardisierung in komplexen Automatisierungsprojekten beiträgt. Er dient als Basis für einheitliche Datenstrukturen, insbesondere wenn ein Bit-Flag eine spezifische Bedeutung innerhalb einer breiteren Datenlandschaft hat.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

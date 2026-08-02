@@ -61,3 +61,8 @@ Im Gegensatz zu diesem Baustein mit fünf festen Eingängen existieren in 4diac 
 
 ## Fazit
 Der `OR_5_BOOL` ist ein einfacher, robuster und standardkonformer Funktionsblock zur Realisierung einer ODER-Verknüpfung mit fünf Eingängen. Seine ereignisgesteuerte Architektur integriert sich nahtlos in die Funktionsbaustein-Netzwerke von 4diac und eignet sich ideal für klare und übersichtliche Logikverknüpfungen in Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -85,3 +85,8 @@ Da kein detaillierter ECC vorliegt, wird die Implementierung als deterministisch
 ## Fazit
 
 Der **ALI_MUX_3** ist ein kompakter und flexibler Multiplexer für drei unidirektionale ALI-Datenströme. Er eignet sich besonders für Anwendungen, in denen mehrere ALI-Quellen über einen Index ausgewählt werden müssen. Die generische Definition erleichtert die Anpassung an spezifische Implementierungen, und die reine Adapter-Schnittstelle sorgt für eine saubere, typisierte Kommunikation. Der Baustein ist ein grundlegendes Element in ALI-basierten Steuerungssystemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

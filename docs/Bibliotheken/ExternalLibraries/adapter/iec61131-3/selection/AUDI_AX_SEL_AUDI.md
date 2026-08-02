@@ -87,3 +87,8 @@ Der **AUDI_AX_SEL_AUDI** bietet eine höhere Integration in adapterbasierte Arch
 
 ## Fazit
 Der **AUDI_AX_SEL_AUDI** ist ein spezialisierter binärer Selektor, der die Vorteile der adapterbasierten Kommunikation in 4diac nutzt. Durch die Kapselung von Ereignis- und Datenpfaden in einem Adapter wird die Signalverdrahtung im Gesamtsystem reduziert und die Typsicherheit erhöht. Die interne Delegation an den bewährten `F_SEL`-Baustein der IEC‑61131‑Bibliothek gewährleistet eine robuste, zustandslose Auswahl logik. Der Baustein eignet sich hervorragend für den Einsatz in modularen Steuerungsprojekten, bei denen klare Schnittstellen und einfache Wiederverwendbarkeit im Vordergrund stehen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

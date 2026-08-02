@@ -86,3 +86,8 @@ Der Baustein ist ready für den nächsten Vergleich, sobald das Ergebnis ausgege
 ## Fazit
 
 Der Funktionsbaustein **UDINT_AUI_NE** ist ein standardkonformer, ereignisgesteuerter Ungleichheitsvergleich für elementare Datentypen. Seine Besonderheit liegt in der Verwendung von Adapter-Schnittstellen für den zweiten Eingang und das Ergebnis, was eine flexible und typsichere Einbindung in modulare 4diac- Netzwerke ermöglicht. Er eignet sich ideal für Anwendungen, bei denen auf Ungleichheit zweier Werte reagiert werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -67,3 +67,8 @@ Die Verbindungen sind als **Adapterverbindungen** realisiert (Pfeile zwischen de
 ## Zusammenfassung
 
 Die Übung **Uebung_021_AX** demonstriert eine einfache Spiegelabfolge zur Steuerung eines digitalen Ausgangs über zwei Softkeys. Ein SR-Flipflop dient als speicherndes Element, das durch Taste F1 gesetzt und durch Taste F2 zurückgesetzt wird. Der Ausgang Q1 wird entsprechend geschaltet. Sie eignet sich als Einstieg in die Signalverarbeitung mit bistabilen Gliedern und in die Nutzung von Softkey-FBs zur Mensch-Maschine-Kommunikation.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

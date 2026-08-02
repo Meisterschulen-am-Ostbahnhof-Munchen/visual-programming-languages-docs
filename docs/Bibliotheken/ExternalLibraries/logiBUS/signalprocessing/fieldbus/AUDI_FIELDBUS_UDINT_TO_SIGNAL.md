@@ -92,3 +92,8 @@ Der Zustandswechsel erfolgt bei jeder steigenden Taktflanke (`CLK`) auf den aktu
 ## Fazit
 
 `AUDI_FIELDBUS_UDINT_TO_SIGNAL` ist ein spezialisierter Filterbaustein für Feldbus‑Signale, der eingehende `UDINT`‑Werte nur bei Gültigkeit an den Ausgang weiterleitet und den Status über einen synchronisierten Pfad ausgibt. Die Verwendung eines internen Flipflops vermeidet inkonsistente Zustände und eignet sich ideal für den Einsatz in zeitkritischen Automatisierungsumgebungen. Durch die adapterbasierte Schnittstelle ist er leicht in größere 4diac‑Projekte integrierbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

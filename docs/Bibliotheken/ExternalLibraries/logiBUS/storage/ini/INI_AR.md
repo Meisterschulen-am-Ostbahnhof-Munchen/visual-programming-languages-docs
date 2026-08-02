@@ -56,3 +56,8 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Logik wird vollst�
 
 ## Fazit
 Der Funktionsblock INI_AR kapselt den Zugriff auf eine INI-Datei für REAL-Werte und bietet gleichzeitig eine standardisierte Adapter-Schnittstelle zur Integration in verteilte Steuerungsnetzwerke. Er vereinfacht das Speichern und Laden von Konfigurationsdaten und erlaubt eine klare Trennung zwischen Speicherlogik und Datenflüssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

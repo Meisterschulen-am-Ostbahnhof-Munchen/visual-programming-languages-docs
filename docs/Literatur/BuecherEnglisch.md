@@ -35,3 +35,8 @@ Dieses Werk bietet einen tiefen Einblick in die Modellierungsaspekte industriell
 **Robert W. Lewis** ist ein Veteran auf dem Gebiet der SPS-Programmierung und industrieller Softwarestandards. Gemeinsam mit **Alois Zoitl** kombiniert er jahrzehntelange Industrieerfahrung mit akademischer Strenge, um einen umfassenden Blick darauf zu werfen, wie Modellierung komplexe technische Herausforderungen in der Automatisierung lösen kann.
 
 * [Amazon](https://www.amazon.de/Modelling-Control-Systems-Using-Engineering/dp/1849197601)
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

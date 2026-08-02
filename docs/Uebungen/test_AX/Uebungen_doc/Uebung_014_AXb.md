@@ -52,3 +52,8 @@ Die Übung erfordert keine weiteren Datentypen oder Parameter. Der Benutzer muss
 ## Zusammenfassung
 
 In dieser Übung wird ein einfaches, aber praxisnahes Steuerungsmuster für die Visualisierung in einem ISOBUS-Terminal umgesetzt. Durch die Kombination von Softkey-Ereignissen, einem SR-Flipflop und einem Sichtbarkeitsbaustein wird das Verhalten eines „Ein/Aus“-Schalters für ein grafisches Objekt realisiert. Die Übung verdeutlicht das Zusammenspiel von Ereignis- und Datenflüssen in einer 4diac-Subapplikation und die Nutzung vordefinierter Bibliotheksbausteine für die ISOBUS-Kommunikation.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

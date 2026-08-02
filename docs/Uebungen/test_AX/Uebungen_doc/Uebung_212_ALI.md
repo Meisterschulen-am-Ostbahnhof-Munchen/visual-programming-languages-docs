@@ -69,3 +69,8 @@ Der Ablauf wird durch Ereignis- und Adapterverbindungen gesteuert:
 ## Zusammenfassung
 
 Die Übung zeigt die praktische Anwendung eines IEC-61131-3-konformen Vorwärtszählers (Adapter-Version) mit Terminalausgabe. Der Zähler zählt Impulse auf einen einstellbaren Sollwert hoch, setzt einen Ausgang bei Erreichen des Sollwerts und gibt den Zählerstand auf einem Terminal aus. Die verwendeten Konvertierungsbausteine demonstrieren die Datenfluss- und Adapterkonzepte der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

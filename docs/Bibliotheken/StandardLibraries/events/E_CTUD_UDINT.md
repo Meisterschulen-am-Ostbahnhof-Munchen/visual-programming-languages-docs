@@ -67,3 +67,8 @@ Nach jeder dieser Aktionen werden die Status-Flags `QU` und `QD` basierend auf d
 
 ## Fazit
 Der `E_CTUD_UDINT` ist die `UDINT`-Variante des universellen `E_CTUD`-Zählers. Er bietet dieselbe Funktionalität, aber mit einem wesentlich größeren Zählbereich (32-Bit). Dies macht ihn zur idealen Wahl für Anwendungen, bei denen der Zählerstand über die Grenze eines 16-Bit-`UINT`-Zählers hinauswachsen kann. Seine robuste, ereignisgesteuerte Natur und die umfassenden Steuerungs- und Statusfunktionen bleiben dabei erhalten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

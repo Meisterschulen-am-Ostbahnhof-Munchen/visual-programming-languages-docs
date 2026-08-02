@@ -30,3 +30,8 @@ Als passiver Datentyp hat `ST02B` keine eigene "Funktionsweise". Seine Funktion 
 
 ## Fazit
 `ST02B` ist ein einfacher, nützlicher strukturierter Datentyp zur Verwaltung von zwei Bytes als kohärente Einheit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -62,3 +62,8 @@ Da alle Eingangswerte `TRUE` sind, liegt am Ausgang des `AX_X_TO_BOOL`-Bausteins
 ## Zusammenfassung
 
 Die Übung `Uebung_000b_AX` zeigt eine einfache UND-Logik, die ausschließlich mit Adapter-Funktionsbausteinen realisiert wird. Sie verdeutlicht die Notwendigkeit von Datentyp-Konvertierungen (`AX_BOOL_TO_X` und `AX_X_TO_BOOL`) und die direkte Verbindung von Adapterausgängen mit Adaptereingängen. Durch die Verwendung von konstanten Werten wird das prinzipielle Verhalten demonstriert, das später durch dynamische Signale erweitert werden kann.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

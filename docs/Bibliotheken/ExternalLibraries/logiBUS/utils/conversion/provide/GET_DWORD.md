@@ -71,3 +71,8 @@ Der Funktionsblock besitzt einen einzigen Zustand `REQ`:
 ## Fazit
 
 `GET_DWORD` ist ein einfacher, aber nützlicher Baustein zum kontrollierten Auslesen eines DWORD-Werts aus einer extern referenzierten Variable. Seine Stärke liegt in der Pufferung des Werts und der Trennung zwischen der Quelle (InOut) und dem Ausgang (OUT). Dank des einfachen Zustandsautomaten und des standardisierten `REQ`/`CNF`-Schnittstellenmusters lässt er sich leicht in bestehende 4diac-Applikationen integrieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

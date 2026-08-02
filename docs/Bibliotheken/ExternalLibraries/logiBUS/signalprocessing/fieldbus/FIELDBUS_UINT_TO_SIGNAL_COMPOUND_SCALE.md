@@ -97,3 +97,8 @@ Dieser FB kombiniert als einziger die Byte‑trennung mit einer zweifachen Skali
 
 ## Fazit
 Der `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` ist ein leistungsfähiger Funktionsblock zur Aufbereitung von 16‑Bit‑Feldbussignalen, die zwei unabhängige Messwerte in einem Register kodieren. Durch die getrennte Skalierung von High‑ und Low‑Byte sowie die integrierte Gültigkeitsprüfung lassen sich komplexe Sensor‑Register effizient und zuverlässig in physikalische Größen umrechnen. Die Parametrierung über das `INIT`-Ereignis und die klare Trennung von Initialisierung und Betrieb machen den FB wiederverwendbar und anpassbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

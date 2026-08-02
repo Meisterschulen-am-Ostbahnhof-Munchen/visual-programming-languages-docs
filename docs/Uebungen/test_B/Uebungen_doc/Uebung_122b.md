@@ -77,3 +77,8 @@ Der Ablauf der Übung lässt sich in drei parallele Verarbeitungsstränge untert
 ## Zusammenfassung
 
 Die Übung **Uebung_122b** demonstriert die Detailanalyse von ISOBUS-Teilnehmern. Durch die Kombination von Listenabruf, De-Multiplexing und spezifischen Parsing-Bausteinen (`NmSetNameField`) wird gezeigt, wie aus dem kryptischen 64-Bit-Namen eines Steuergerätes (ECU) menschenlesbare Informationen wie Hersteller, Geräteklasse und Funktion extrahiert werden können. Dies ist essenziell für Diagnoseanwendungen und die Interoperabilität im ISOBUS-Netzwerk.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

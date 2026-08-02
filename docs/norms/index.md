@@ -55,3 +55,8 @@ Für die Gestaltung von Benutzeroberflächen (HMIs) und die Kennzeichnung von Ha
 
 **Ressource:**
 Alle registrierten Symbole können in der [ISO Online Browsing Platform (OBP)](https://www.iso.org/obp) eingesehen werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

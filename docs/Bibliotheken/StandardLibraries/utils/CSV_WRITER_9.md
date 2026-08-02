@@ -55,3 +55,8 @@ Es sind keine Adapter definiert.
 
 ## Fazit
 Der CSV_WRITER_9 ist ein leistungsfähiger Funktionsblock für die Erstellung von CSV-Dateien in 4diac-IDE. Seine Flexibilität bei der Datenaufnahme und die klare Statusrückmeldung machen ihn zu einer guten Wahl für Anwendungen, die eine strukturierte Datenspeicherung erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

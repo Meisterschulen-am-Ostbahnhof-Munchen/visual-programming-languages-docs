@@ -74,3 +74,10 @@ Die Datentypen der Ein- und Ausgänge `VALUE`, `DEFAULT_VALUE` und `VALUEO` müs
 
 ## Fazit
 Der NVS-Funktionsblock stellt eine einfache und robuste Schnittstelle zum nichtflüchtigen Speicher des ESP32 bereit. Durch die klare Trennung von Lese- und Schreiboperationen sowie die typflexible Datenverarbeitung eignet er sich ideal für eine Vielzahl von Anwendungen, die persistente Daten auf eingebetteten ESP32-Systemen benötigen. Seine Integration in die 4diac-IDE ermöglicht eine plattformspezifische Funktionalität innerhalb des portablen IEC 61499-Modells.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)
+* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

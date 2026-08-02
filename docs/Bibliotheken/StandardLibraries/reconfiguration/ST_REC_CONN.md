@@ -88,3 +88,8 @@ Im Gegensatz zu statischen Verbindungen in 4diac ermöglicht ST_REC_CONN:
 ## Fazit
 
 ST_REC_CONN ist ein essentieller Baustein für flexible und adaptive Automatisierungssysteme, die dynamische Rekonfiguration während des Betriebs erfordern. Seine umfassende Parametrisierung ermöglicht präzise Steuerung von Verbindungsänderungen, während die Statusrückmeldungen zuverlässige Überwachung der Rekonfigurationsprozesse gewährleisten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -69,3 +69,8 @@ Diese einfache Zustandsmaschine garantiert eine schnelle und deterministische Re
 
 ## Fazit
 Der `AQ_MUX_5` ist ein spezialisierter, generischer Multiplexer für analoge Ausgangsanwendungen im 4diac-Framework. Seine einfache Handhabung, die klare Ereignissteuerung und die Nutzung unidirektionaler Adapter machen ihn zu einem effizienten Werkzeug für die Auswahl eines von fünf analogen Signalen in Echtzeitsystemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

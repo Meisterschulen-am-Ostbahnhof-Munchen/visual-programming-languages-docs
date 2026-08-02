@@ -83,3 +83,8 @@ Die Überlauf‑ und Unterlauf‑Signale des Zählers (`QU`, `QD`) werden auf di
 ## Zusammenfassung
 
 Die Übung 223b realisiert einen vollständigen Auf‑/Abwärtszähler mit festem Preset‑Wert (5). Digitale Eingänge steuern den Zähler, die Zählerausgänge (Überlauf/Unterlauf) werden auf digitale Ausgänge geschaltet, und der aktuelle Zählerstand wird als physikalischer Wert auf einem Terminal ausgegeben. Die Umsetzung nutzt durchgängig die Adaptertechnologie, bei der Ereignis‑ und Datenflüsse über standardisierte Schnittstellen verbunden werden. Durch den Einsatz von Konvertierungsbausteinen wird die Datenkompatibilität zwischen den verschiedenen Teilsystemen sichergestellt. Die Übung bietet eine solide Grundlage für erweiterte Zähleranwendungen in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

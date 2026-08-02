@@ -34,3 +34,8 @@ Der Baustein vereinfacht den Aufbau aus Übung 020b erheblich:
 *   Eingang `I1` wird FALSE ➡️ Timer bricht ab, Ausgang wird sofort FALSE.
 
 Dies ist der Standardweg, um Verzögerungen in 4diac zu realisieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

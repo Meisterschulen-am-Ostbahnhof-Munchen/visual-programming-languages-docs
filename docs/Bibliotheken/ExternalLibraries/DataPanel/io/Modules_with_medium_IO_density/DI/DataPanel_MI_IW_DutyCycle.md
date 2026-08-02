@@ -89,3 +89,9 @@ Eine explizite Zustandsmaschine ist im XML nicht definiert. Aus dem Verhalten de
 ## Fazit
 
 Der Funktionsblock `DataPanel_MI_IW_DutyCycle` bietet eine robuste und konfigurierbare Schnittstelle zur Erfassung von Tastverhältnissen aus Frequenzeingängen im Bereich 7A/8A. Durch die Parameter `FreqDelta` und `TimeDelta` kann das Meldeverhalten flexibel an die Anwendung angepasst werden. Er eignet sich besonders für den Einsatz in der Agrartechnik und industriellen Steuerungen, bei denen eine zuverlässige Duty-Cycle-Überwachung erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

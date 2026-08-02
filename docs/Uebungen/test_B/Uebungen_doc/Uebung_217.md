@@ -68,3 +68,8 @@ Ein Kommentar im Netzwerk weist darauf hin, dass die Konvertierung `F_LINT_TO_UD
 
 ## Zusammenfassung
 In dieser Übung wird ein IEC 61131‑3 Rückwärtszähler (`FB_CTD_LINT`) mit zwei digitalen Eingängen angesteuert. Der Zählerstand wird auf einem Terminal ausgegeben, wobei die Konvertierung von LINT nach UDINT bewusst eine Einschränkung für negative Werte darstellt. Die Aufgabe veranschaulicht die ereignisgesteuerte Verarbeitung in 4diac, die Kopplung von Hardwareeingängen und die Grenzen von Datentypkonvertierungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

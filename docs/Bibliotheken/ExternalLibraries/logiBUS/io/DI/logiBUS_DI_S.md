@@ -48,3 +48,8 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DI_S` keinen Zus
 
 ## Fazit
 Der `logiBUS_DI_S` ist ein grundlegender und spezifischer Konfigurationsbaustein für die logiBUS-I/O-Architektur. Als strukturierter Datentyp bietet er eine standardisierte und klare Methode, um die Zieladresse (Pin) für einen digitalen Eingang zu definieren. Seine Stärke liegt in der Einfachheit und der Vorbereitung auf mögliche Erweiterungen, was ihn zu einem nützlichen Bestandteil für die strukturierte Konfiguration von Feldbussystemen in 4diac FORTE macht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

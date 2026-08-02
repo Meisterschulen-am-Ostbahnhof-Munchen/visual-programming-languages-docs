@@ -76,3 +76,8 @@ Die Übung kann in 4diac durch Starten der Applikation (z. B. mit einem Simula
 ## Zusammenfassung
 
 Die Übung **Uebung_001e** realisiert eine einfache Negation eines digitalen Eingangs mithilfe einer Kaskade von drei Funktionsbausteinen. Sie vermittelt die Grundprinzipien der ereignisgesteuerten Datenverarbeitung nach IEC 61499 sowie den Umgang mit logiBUS-Ein-/Ausgabe-Bausteinen und IEC 61131-Bitoperatoren. Nach erfolgreicher Durchführung verstehen Sie, wie Eingangsdaten in Echtzeit verarbeitet und auf Ausgänge geschrieben werden. Dies bildet die Basis für komplexere Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

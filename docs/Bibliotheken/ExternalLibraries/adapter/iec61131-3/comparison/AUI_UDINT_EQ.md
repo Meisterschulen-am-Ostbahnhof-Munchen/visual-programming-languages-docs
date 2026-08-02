@@ -67,3 +67,8 @@ Der FB besitzt keinen eigenen ECC, sondern delegiert die Ausführung an den inte
 
 ## Fazit
 Der `AUI_UDINT_EQ` ist ein kompakter und flexibler Funktionsblock für Gleichheitsvergleiche in IEC 61499-Umgebungen. Die Kombination aus adapterbasiertem Zugriff auf den ersten Operanden und einem direkten Dateneingang für den zweiten Operanden, zusammen mit der doppelten Trigger-Möglichkeit, macht ihn vielseitig einsetzbar. Die Nutzung des Standardbausteins `F_EQ` gewährleistet dabei eine robuste und standardkonforme Funktionalität.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

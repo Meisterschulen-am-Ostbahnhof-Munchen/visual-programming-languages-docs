@@ -48,3 +48,8 @@ Das Ereignis wird erst dann über den Adapter gesendet, wenn die numerische Eing
 ## Zusammenfassung
 
 Die Übung `Uebung_034a1_Q4_AX` verbindet einen numerischen Eingabe-FB (`NumericValue_IDA`) mit einem PWM-Ausgangs-FB (`logiBUS_QDA_PWM`) über Adapter. Dadurch wird ein einfaches Zusammenspiel von Bedieneingabe und Hardware-Ausgabe realisiert. Die Besonderheit liegt in der ereignisgesteuerten Übernahme des Wertes erst nach Bestätigung, was eine saubere Trennung von Eingabeänderung und Aktualisierung des Ausgangs ermöglicht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

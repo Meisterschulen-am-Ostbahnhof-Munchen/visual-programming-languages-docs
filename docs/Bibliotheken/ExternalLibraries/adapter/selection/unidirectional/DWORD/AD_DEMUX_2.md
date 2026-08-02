@@ -64,3 +64,8 @@ Der FB besitzt keine explizite Zustandsmaschine (ECC). Die gesamte Logik beschr�
 
 ## Fazit
 Der `AD_DEMUX_2` ist ein kompakter, generischer Funktionsblock zur einfachen Demultiplexion von AD-Adaptern. Seine klare Schnittstelle, die rein ereignisgesteuerte Arbeitsweise und die Unterstützung generischer Typen machen ihn zu einem flexiblen Werkzeug für viele automatisierungstechnische Aufgaben, bei denen ein Signal wahlweise auf einen von zwei Wegen geschaltet werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

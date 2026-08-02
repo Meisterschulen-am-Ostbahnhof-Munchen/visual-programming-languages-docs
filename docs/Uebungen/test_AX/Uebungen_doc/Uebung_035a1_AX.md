@@ -77,3 +77,8 @@ Der Ablauf der Ampelsteuerung gestaltet sich wie folgt:
 
 ## Zusammenfassung
 Die Übung `Uebung_035a1_AX` demonstriert effizient, wie komplexe Zustandsautomaten wie eine Ampelsteuerung mit Hilfe eines **Pattern Sequencers** vereinfacht werden können. Anstatt jeden Zustandsübergang einzeln zu programmieren, werden Phasenzeiten und Ausgabemuster parametriert. Die Verwendung von `logiBUS` Adaptern (AX/QXA) zeigt zudem eine moderne Art der Baustein-Kommunikation in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

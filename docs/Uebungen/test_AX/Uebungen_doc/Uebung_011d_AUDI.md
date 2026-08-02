@@ -44,3 +44,8 @@ Die gesamte Logik ist als Subapplikation realisiert und verwendet keine weiteren
 ## Zusammenfassung
 
 Die Übung „Uebung_011d_AUDI“ veranschaulicht, wie ein numerischer ISOBUS-Eingangswert über einen Adapterbaustein mit Offset/Skalierung in einen Ausgangswert umgesetzt wird. Sie schult den Umgang mit Adapterverbindungen, der Parametrierung von ISOBUS-Objekten und dem Verständnis von Skalierungseffekten in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

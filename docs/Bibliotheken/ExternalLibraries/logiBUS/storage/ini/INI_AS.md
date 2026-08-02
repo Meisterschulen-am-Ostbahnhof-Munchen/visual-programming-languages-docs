@@ -76,3 +76,8 @@ Der Baustein besitzt keine explizite Zustandsmaschine (ECC). Das Verhalten wird 
 
 ## Fazit
 Der Funktionsblock `INI_AS` ist ein komfortabler Baustein zum persistenten Lesen und Schreiben von SINT‑Werten aus einer INI‑Datei. Durch die Adapter‑Schnittstelle lässt er sich leicht in bestehende Architekturen integrieren und reduziert den Verdrahtungsaufwand. Er eignet sich besonders für Konfigurationsaufgaben, bei denen ein einzelner ganzzahliger Wert zwischengespeichert werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

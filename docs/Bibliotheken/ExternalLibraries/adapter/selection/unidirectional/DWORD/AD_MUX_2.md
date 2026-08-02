@@ -81,3 +81,8 @@ Der Baustein besitzt keinen programmierten Ablaufzustand. Er kann als **ereignis
 ## Fazit
 
 Der **AD_MUX_2** ist ein kompakter, generischer Funktionsbaustein zur Adapter‑Auswahl in 4diac‑Umgebungen. Seine klare Ereignisschnittstelle und die Adapter‑basierte Arbeitsweise machen ihn ideal für Anwendungen, bei denen Signalpfade flexibel umgeschaltet werden müssen. Durch die generische Deklaration lässt er sich leicht in verschiedene Projekte integrieren oder an spezifische Adapter‑Typen anpassen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -66,3 +66,9 @@ Im Vergleich zu direkten GPIO-Bausteinen bietet der Port-FB eine höhere Abstrak
 
 ## Fazit
 Der Port-Funktionsblock stellt eine elegante Lösung für die konfigurationsbasierte Pin-Verwaltung in Eclipse 4diac-Systemen dar. Durch die Verwendung von Adaptern ermöglicht er eine klare Trennung zwischen Konfiguration und Hardware-Zugriff, was die Wartbarkeit und Portierbarkeit von Steuerungsapplikationen verbessert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

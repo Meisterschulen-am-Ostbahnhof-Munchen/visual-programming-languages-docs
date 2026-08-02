@@ -70,3 +70,8 @@ Im Vergleich zu standardmäßigen digitalen Eingangsblöcken bietet logiBUS_ID:
 
 ## Fazit
 Der logiBUS_ID Funktionsblock stellt eine spezialisierte Schnittstelle für logiBUS-Eingabegeräte in 4diac-Systemen dar. Durch seine flexible Konfiguration und Unterstützung verschiedener Betriebsmodi eignet er sich ideal für Anwendungen, die eine zuverlässige Verarbeitung digitaler Eingangssignale mit erweiterter Ereignisbehandlung erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

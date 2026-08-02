@@ -53,3 +53,8 @@ Hinweis: Da der Negationsbaustein `F_NOT_BOOL_INIT` einen INIT-Mechanismus besit
 ## Zusammenfassung
 
 Die Übung `Uebung_001f` realisiert eine einfache Negation eines digitalen Eingangssignals auf einen digitalen Ausgang. Sie zeigt die grundlegende Verbindung von Hardware-nahen Funktionsbausteinen mit einem logischen Negationsbaustein und verdeutlicht das initiale Verhalten des Negations-FBs beim Systemstart. Die Implementierung erfolgt ausschließlich über direkte FB-Verkettung ohne Sub-Bausteine und ist als Einstiegsübung für die ereignisgesteuerte Logik mit 4diac geeignet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

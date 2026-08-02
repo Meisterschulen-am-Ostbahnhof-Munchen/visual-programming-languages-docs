@@ -98,3 +98,8 @@ Weitere Zustände oder Verzweigungen sind nicht vorhanden.
 
 ## Fazit
 Der Baustein **FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE** ist ein spezialisiertes Werkzeug zur Aufbereitung von 16‑Bit‑Feldbussignalen, bei denen die beiden Bytes unterschiedliche physikalische Bedeutung oder Auflösung haben. Die klare Trennung von Gültigkeitsprüfung, Byte‑Extraktion und Compound‑Skalierung macht ihn zu einem verlässlichen und konfigurierbaren Element in der Signalverarbeitungskette. Durch die extern definierten Feldbus‑Konstanten ist er leicht an verschiedene Protokolle anpassbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

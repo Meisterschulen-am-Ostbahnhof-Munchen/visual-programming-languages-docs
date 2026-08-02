@@ -78,3 +78,9 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Fazit
 Der `AlPgnRxNew8Bcylc_REQ` ist ein essentieller Baustein für die Implementierung von ISOBUS-konformen Empfangsfunktionalitäten in 4diac. Er abstrahiert die Komplexität der CAN-Kommunikation und bietet eine saubere, ereignisgesteuerte Schnittstelle zur zuverlässigen, zyklischen Datenerfassung mit integrierter Fehler- und Timeout-Erkennung. Seine Verwendung erhöht die Wiederverwendbarkeit und Robustheit von Steuerungsapplikationen in der Landtechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

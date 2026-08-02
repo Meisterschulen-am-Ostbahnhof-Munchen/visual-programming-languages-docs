@@ -82,3 +82,9 @@ Das ECC (Execution Control Chart) besteht aus vier Zuständen:
 ## Fazit
 
 Der `AX_RangeBasedPulse`-Funktionsblock bietet eine robuste und flexible Lösung zur distanzbasierten Pulsgenerierung. Durch die Adapter-Schnittstelle, die getrennt konfigurierbaren Distanzschwellen und die Hystereselogik eignet er sich hervorragend für den modularen Einsatz in industriellen Steuerungssystemen, insbesondere in der Landtechnik und Automatisierung. Die Implementierung als BasicFB gewährleistet dabei ein deterministisches und nachvollziehbares Verhalten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

@@ -35,3 +35,8 @@ Live-Interview mit Dieter Hess (Geschäftsführer, 3S-Smart Software Solutions) 
 
 ### MS-MUC Eigenproduktionen
 * [Videos von MS-MUC](https://www.youtube.com/playlist?list=PLD-CHxmB4P7cGEqEQlC-rgRDKBVHfbcYW)
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -69,3 +69,9 @@ Durch diese Verkettung wird sichergestellt, dass die Ausgänge nur dann aktualis
 
 Die Übung veranschaulicht die Kopplung von Ereignis‑ und Datenflüssen in einer 4diac‑IDE Subapplikation.  
 Der Aufwärtszähler wird durch zwei Taster gesteuert. Seine aktuellen Werte (Zählerstand und Überlaufsignal) werden über eine Kombination aus Ereignis‑Splitter und ‑Merger auf Flip‑Flops gegeben, die als Speicher dienen. Die Flip‑Flops geben die gespeicherten Daten nur dann weiter, wenn ein Zähl‑ oder Reset‑Ereignis vorliegt. Dies verhindert unnötige Aktualisierungen und zeigt, wie mit einfachen Mitteln eine **Event‑Bremse** realisiert werden kann.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

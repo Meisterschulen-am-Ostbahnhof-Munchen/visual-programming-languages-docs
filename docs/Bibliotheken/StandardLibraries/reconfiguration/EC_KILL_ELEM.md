@@ -61,3 +61,8 @@ Im Vergleich zu anderen Execution-Control-Blöcken bietet EC_KILL_ELEM spezifisc
 
 ## Fazit
 EC_KILL_ELEM ist ein essentieller Baustein für Rekonfigurationsaufgaben in IEC 61499-basierten Systemen. Seine Fähigkeit, gezielt Elemente zu beenden, ermöglicht dynamische Systemanpassungen und robuste Fehlerbehandlungsstrategien in industriellen Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

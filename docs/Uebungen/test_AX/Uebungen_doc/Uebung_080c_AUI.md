@@ -85,3 +85,9 @@ Nach dem Laden der Subapplikation in die 4diac‑IDE und dem Verbinden mit einer
 Die Übung `Uebung_080c_AUI` veranschaulicht die Kombination eines T‑Flipflops mit einer Ereignisfreigabe zur Reduzierung der Ereignisfrequenz sowie die Verwendung eines Aufwärtszählers.  
 Durch die Kopplung mit einem Terminal‑Ausgabebaustein wird der Zählerstand visualisiert.  
 Das Zusammenspiel von Ereignis‑, Adapter‑ und Datenverbindungen zeigt typische Muster für modulare Automatisierungslösungen nach IEC 61499.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

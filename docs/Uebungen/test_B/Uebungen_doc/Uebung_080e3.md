@@ -93,3 +93,8 @@ Die Übung verfolgt folgenden Ablauf:
 ## Zusammenfassung
 
 Die Übung **Uebung_080e3** zeigt eine praxisnahe Kombination aus einem Ereignis‑gesteuerten Zähler (**E_CTU**), einer Hysterese‑basierten Wertglättung (**E_D_FF_ANY**) und einem booleschen Flipflop (**E_D_FF**). Durch das Zusammenspiel von **E_CYCLE**, **E_SPLIT_4** und **E_MERGE_4** wird ein robustes Ereignissystem aufgebaut, das den Zählerwert mit einer einstellbaren Hysterese überwacht und sowohl einen digitalen Ausgang als auch einen numerischen Wert ausgibt. Der Reset über einen zweiten Taster ermöglicht das Zurücksetzen und Stoppen der Zählung. Die Übung vermittelt grundlegende Konzepte der ereignisgesteuerten Steuerungstechnik, insbesondere die Verwendung von Ereignisverzweigungen, Zusammenführungen und die Bedeutung von Hysteresen bei der Signalverarbeitung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

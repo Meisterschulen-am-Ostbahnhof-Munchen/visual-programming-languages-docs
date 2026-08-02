@@ -103,3 +103,8 @@ Der Baustein durchläuft keine explizit modellierten Zustände, sondern ist erei
 ## Fazit
 
 Der **NVS_ALR**-Funktionsbaustein bietet eine kompakte und benutzerfreundliche Möglichkeit, LREAL-Werte persistent in einem NVS zu speichern und über einen unidirektionalen Adapter auszutauschen. Durch die Kombination von Initialisierung, automatischem Lesen und Adapter-basiertem Schreiben eignet er sich besonders für modulare und wiederverwendbare Steuerungsanwendungen auf ESP32-Basis. Sein Design folgt dem IEC 61499-Standard und ermöglicht eine saubere Trennung von Speicherlogik und Applikation.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

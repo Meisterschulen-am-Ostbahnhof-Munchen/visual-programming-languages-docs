@@ -76,3 +76,8 @@ Im Vergleich zu einfacheren Sequenzern (z.B. `E_SR` oder `E_CTU` in Reihe) biete
 
 ## Fazit
 Der `sequence_ET_08` ist ein robuster und einfach zu konfigurierender Sequenzer-Baustein für IEC 61499. Seine Stärke liegt in der kombinierten Ereignis- und Zeitsteuerung sowie der klaren, pro Schritt definierten Schnittstelle. Er eignet sich ideal für standardisierte Steuerungsabläufe mit bis zu acht Schritten, bei denen ein hohes Maß an Vorhersagbarkeit und einfache Parametrierung gewünscht ist. Für Prozesse mit variabler Schrittanzahl oder komplexeren Verzweigungen sind flexiblere Lösungen wie Composite-FBs oder eigene SFCs vorzuziehen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

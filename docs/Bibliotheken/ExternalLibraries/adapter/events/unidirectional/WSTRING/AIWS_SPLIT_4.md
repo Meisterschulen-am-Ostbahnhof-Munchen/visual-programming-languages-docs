@@ -55,3 +55,8 @@ Der FB besitzt keine eigenen Zustände oder Abläufe. Es liegt eine rein kombina
 
 ## Fazit
 Der `AIWS_SPLIT_4` ist ein einfacher, aber essenzieller Baustein zur Verteilung von unidirektionalen **AIWS**-Adapterverbindungen. Er reduziert den Verdrahtungsaufwand, sorgt für klare Strukturen und ermöglicht die parallele Nutzung eines Datenstroms durch mehrere Funktionsblöcke ohne zusätzliche Logik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

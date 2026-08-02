@@ -62,3 +62,8 @@ Da der Baustein keine explizite Zustandsmaschine besitzt (IEC 61499-Basis), kann
 
 ## Fazit
 Der **AL_MUX_3** ist ein einfacher, aber nützlicher Multiplexer-Baustein für Adapter-basierte AL-Daten. Er eignet sich besonders für Szenarien, in denen aus mehreren gleichartigen Datenquellen eine dynamisch ausgewählt werden muss. Durch die klare Ereignissteuerung und die generische Natur lässt er sich gut in Automatisierungslösungen integrieren, die auf IEC 61499 und dem 4diac-Framework basieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

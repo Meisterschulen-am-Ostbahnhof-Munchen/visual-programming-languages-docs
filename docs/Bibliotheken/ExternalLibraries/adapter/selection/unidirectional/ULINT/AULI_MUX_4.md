@@ -85,3 +85,8 @@ Nach dem Senden von **CNF** kehrt der Baustein in den Idle-Zustand zurück.
 ## Fazit
 
 Der **AULI_MUX_4** ist ein schlanker, aber effektiver Funktionsblock zur Auswahl eines von vier AULI-Signalen. Seine generische Deklaration erleichtert die Wiederverwendung in verschiedenen Automatisierungsprojekten. Durch die klare ereignisgesteuerte Schnittstelle fügt er sich nahtlos in IEC 61499 Anwendungen ein und eignet sich besonders für Anwendungen, die eine flexible Umschaltung zwischen Signalquellen erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

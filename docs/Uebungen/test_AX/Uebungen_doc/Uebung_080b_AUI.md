@@ -83,3 +83,9 @@ Folgende Funktionsbausteine werden im SubApp-Netzwerk eingesetzt:
 ## Zusammenfassung
 
 Die Übung **Uebung_080b_AUI** veranschaulicht die Kombination eines Aufwärtszählers mit einer Ereignisverdoppelung durch `E_SPLIT`. Der Zähler reagiert auf zwei Taster: einer zählt (mit verdoppelter Impulsrate), der andere setzt zurück. Die Ergebnisse werden sowohl auf einem digitalen Ausgang (Q1) als auch auf einem Terminal (OutputNumber_N1) ausgegeben. Sie lernen dabei den Umgang mit Adapter-basierten Daten- und Ereignisschnittstellen sowie die Konfiguration von logiBUS-Ein- und -Ausgängen in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

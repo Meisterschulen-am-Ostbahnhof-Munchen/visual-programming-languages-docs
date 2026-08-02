@@ -50,3 +50,8 @@ Der FB besitzt keine internen Zustände. Er ist zustandslos (kombinatorisch) und
 
 ## Fazit
 Der `AQ_SPLIT_2` ist ein einfacher, aber nützlicher Baustein zur Verteilung eines analogen Signals auf zwei identische Ausgänge. Dank seiner generischen Natur lässt er sich in verschiedenen 4diac-Projekten ohne Anpassungen einsetzen. Die zustandslose Funktionsweise minimiert die Komplexität und macht ihn ideal für Echtzeitanwendungen, bei denen eine sofortige Signalweitergabe erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

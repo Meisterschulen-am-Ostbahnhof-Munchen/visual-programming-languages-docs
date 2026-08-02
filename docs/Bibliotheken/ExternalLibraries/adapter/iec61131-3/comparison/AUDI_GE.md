@@ -66,3 +66,8 @@ Der Baustein selbst besitzt keinen expliziten Zustandsautomaten – die gesamte 
 
 ## Fazit
 `AUDI_GE` ist ein spezialisierter Vergleichsbaustein, der durch die Verwendung von Adaptern eine flexible und saubere Schnittstellendefinition ermöglicht. Er eignet sich besonders für modulare Automatisierungsprojekte, in denen Werte über standardisierte Schnittstellen ausgetauscht werden. Die interne Nutzung des bewährten `F_GE`‑Bausteins garantiert korrekte und performante Vergleichsoperationen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

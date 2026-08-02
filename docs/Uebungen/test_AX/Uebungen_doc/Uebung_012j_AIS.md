@@ -63,3 +63,8 @@ Hinweise:
 ## Zusammenfassung
 
 Die Übung **Uebung_012j_AIS** zeigt die grundlegende Handhabung von String-Daten in Kombination mit nichtflüchtigem Speicher (NVS) in der 4diac-IDE. Durch die Verwendung von Adapterverbindungen wird ein datenbankähnlicher Zugriff auf gespeicherte Werte realisiert. Die drei Funktionsbausteine – Eingabe, Speicher und Ausgabe – bilden eine wiederverwendbare Komponente, die in verschiedenen Applikationen zur persistenten Speicherung von Benutzereingaben eingesetzt werden kann. Die vorgegebenen Konstanten sorgen für eine klare Trennung der Speicherbereiche und erleichtern die Wartbarkeit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

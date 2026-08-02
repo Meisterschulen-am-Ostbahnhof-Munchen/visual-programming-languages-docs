@@ -76,3 +76,8 @@ Der `NVS_AR` vereinfacht die Integration, indem er die Adapter‑Anbindung stand
 ## Fazit
 
 Der `NVS_AR`-Funktionsblock bietet eine kompakte und adapterbasierte Lösung zum Laden und Speichern von REAL-Daten im nichtflüchtigen Speicher. Durch die Verwendung des AR-Adapters lässt er sich besonders leicht in bestehende IEC‑61499‑Netzwerke einfügen, ohne auf detaillierte Verbindungen achten zu müssen. Die automatische initiale Auslese nach der Initialisierung erleichtert die Anwendung in typischen Szenarien der Echtzeitsteuerung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

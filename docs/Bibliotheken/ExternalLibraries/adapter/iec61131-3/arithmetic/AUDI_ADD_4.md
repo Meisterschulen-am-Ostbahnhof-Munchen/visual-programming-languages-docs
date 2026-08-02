@@ -65,3 +65,8 @@ Der Baustein besitzt keine expliziten Zustände. Die Verarbeitung erfolgt dateng
 ## Fazit
 
 Der `AUDI_ADD_4` ist ein flexibler, reiner Adapterbaustein zur Addition von vier Werten. Dank seiner generischen Auslegung eignet er sich für verschiedene numerische Datentypen und kann in modularen Automatisierungsprojekten eingesetzt werden, die auf Adapter‑basierte Kommunikation setzen. Der Verzicht auf Ereignisse vereinfacht die Handhabung in datengetriebenen Systemen, erfordert jedoch eine korrekte Adapterverkabelung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

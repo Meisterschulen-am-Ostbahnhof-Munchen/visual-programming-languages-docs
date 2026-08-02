@@ -75,3 +75,8 @@ Der FB besitzt keinen expliziten Zustandsautomaten. Er verhält sich wie eine er
 Der Funktionsblock `AULI_MUX_2` stellt einen einfachen, aber robusten Multiplexer für den Einsatz in 4diac‑Umgebungen dar.  
 Dank seiner generischen Definition und der ereignisgesteuerten Schnittstelle ist er flexibel einsetzbar und fügt sich nahtlos in Adapter‑basierte Kommunikationsstrukturen ein.  
 Er eignet sich besonders für Anwendungen, in denen schnell und zuverlässig zwischen zwei Signalquellen umgeschaltet werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -89,3 +89,8 @@ Die Logik ist als Subapplikation aufgebaut und nutzt einen Adapter-basierten Dat
 In dieser Übung wird eine vollständige Motor-Reversiersteuerung mit **Umschaltverzögerung (Schutzzeit)** realisiert.  
 Der Baustein `ILOCK_BLOCK_PROTECT_AX` übernimmt die sichere Verriegelung der Drehrichtungen, während die SubApp `AX_2_TO_3` die Signalverteilung auf die einzelnen Ausgänge und den gemeinsamen Low-Side-Treiber übernimmt.  
 Die Übung vermittelt praxisnahe Kenntnisse zur sicheren Steuerung von Aktoren in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

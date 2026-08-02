@@ -83,3 +83,8 @@ Der **ATM_DEMUX_3** besitzt keine internen Zustände. Er reagiert auf jedes REQ-
 ## Fazit
 
 Der **ATM_DEMUX_3** ist ein kompakter und klar definierter Demultiplexer für unidirektionale ATM-Adapter. Seine generische Auslegung ermöglicht eine flexible Integration in verschiedene Automatisierungsprojekte, während die ereignisgesteuerte Arbeitsweise eine deterministische Datenverteilung gewährleistet. Durch die Festlegung auf drei Ausgänge eignet er sich besonders für typische 1‑aus‑3‑Schaltaufgaben in der Steuerungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

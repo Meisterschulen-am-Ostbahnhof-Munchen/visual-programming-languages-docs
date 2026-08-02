@@ -52,3 +52,8 @@ Dieser Funktionsblock ist speziell für die `ST08X`-Struktur konzipiert. Währen
 
 ## Fazit
 Der Funktionsblock `ST08X_TO_BOOLS` ist ein nützliches Werkzeug zur Zerlegung von `ST08X`-Strukturen in individuelle BOOL-Signale. Er besticht durch seine Einfachheit, Effizienz und die klare, typensichere Schnittstelle, was die Entwicklung und Wartung von 4diac-Anwendungen vereinfacht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

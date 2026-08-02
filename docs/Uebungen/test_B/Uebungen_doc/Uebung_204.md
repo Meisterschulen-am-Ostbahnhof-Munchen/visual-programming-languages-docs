@@ -57,3 +57,8 @@ Die Übung ist als SubAppType angelegt, in der die gesamte Logik abläuft. Die V
 
 ## Zusammenfassung
 Die Übung **Uebung_204** demonstriert die Verwendung des Interlock-Bausteins `ILOCK_CONFLICT_TRIP`. Sie zeigt, wie durch zwei gegensätzliche Stellsignale (z. B. Auf/Ab) ein Konflikt erkannt und durch einen Trip abgesichert wird. Der Baustein erfordert eine explizite Rücksetzung nach einem Konflikt. Dieses Verhalten ist typisch für Sicherheitsanwendungen in der Automatisierungstechnik. Die Übung eignet sich für Einsteiger, die grundlegende Verriegelungsmechanismen mit 4diac und logiBUS-Funktionsbausteinen erlernen möchten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

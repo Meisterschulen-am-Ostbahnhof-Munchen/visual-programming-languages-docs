@@ -58,3 +58,8 @@ Diese Übung verdeutlicht die Kapselung von Logik in Sub-Applikationen (`SubAppT
 
 ## Zusammenfassung
 Die `Uebung_003c_sub_AX` ist ein wiederverwendbares Modul (SubApp), das einen digitalen LogiBUS-Eingang auf einen ISOBUS-Auxiliary-Ausgang abbildet. Durch die Parametrierung der Eingangsnummer (`iInpNr`) lässt sich der Baustein flexibel für verschiedene Eingänge verwenden, was die Erstellung größerer Steuerungsanwendungen vereinfacht und übersichtlicher gestaltet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

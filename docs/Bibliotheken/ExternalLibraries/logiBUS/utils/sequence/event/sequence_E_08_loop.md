@@ -78,3 +78,8 @@ Im Vergleich zu Sequenzern mit zeitgesteuerten Übergängen (z.B. `sequence_T_08
 
 ## Fazit
 Der `sequence_E_08_loop` ist ein spezialisierter, zuverlässiger und einfach zu konfigurierender Funktionsblock für ereignisgesteuerte Sequenzabläufe. Seine klare Struktur, die konsistente Schnittstelle und die integrierte Reset-Funktionalität machen ihn besonders geeignet für Anwendungen, bei denen ein schrittweiser Prozess durch externe Signale (z.B. Taster, Sensoren, übergeordnete Steuerungen) vorangetrieben werden muss. Die Ausgabe der Zustandsnummer und die konfirmierenden Ereignisse ermöglichen eine einfache Anbindung an Visualisierungs- und Überwachungssysteme.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

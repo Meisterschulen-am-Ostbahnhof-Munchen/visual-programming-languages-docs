@@ -71,3 +71,8 @@ Der AB_DEMUX_4 hat **keine explizite Zustandsmaschine**. Er verhält sich wie ei
 ## Fazit
 
 Der AB_DEMUX_4 ist ein kompakter, generischer Demultiplexer für unidirektionale AB-Adapter. Er ermöglicht eine flexible und ressourcenschonende Verteilung von Adapterdaten auf bis zu vier Ausgänge und eignet sich besonders für Anwendungen, in denen ein Datenstrom wahlweise an verschiedene Verbraucher geschaltet werden muss. Die generische Auslegung erhöht die Wiederverwendbarkeit in unterschiedlichen 4diac-Projekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

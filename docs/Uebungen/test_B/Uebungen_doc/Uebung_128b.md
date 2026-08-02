@@ -83,3 +83,8 @@ Der Ablauf der Übung gestaltet sich wie folgt:
 ## Zusammenfassung
 
 In dieser Übung wird die Handhabung von ISOBUS-Transportprotokollen vertieft. Im Speziellen wird gezeigt, wie größere Datenmengen (> 8 Byte) mittels `AlPgnTxNew_TP` an alle Teilnehmer im Netzwerk (Broadcast) gesendet werden. Die Kombination aus der PGN-Konfiguration, der Datenquelle (`INIT_ARR`) und der Adressierung (`GLOBAL_A`) führt zur automatischen Aushandlung einer BAM-Übertragung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

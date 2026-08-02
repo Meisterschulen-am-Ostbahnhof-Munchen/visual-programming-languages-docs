@@ -76,3 +76,8 @@ Während sich der Baustein im Zustand `SELECT` befindet, wird kein weiteres `REQ
 
 ## Fazit
 Der AS_MUX_2 ist ein kompakter und generischer Baustein zur Umschaltung zwischen zwei Adaptern. Dank der Adaptertechnik lassen sich komplexe Signalpfade sauber modellieren und zur Laufzeit dynamisch umschalten. Die einfache Handhabung (ein Ereigniseingang, ein Index) macht ihn besonders geeignet für Anwendungen, die eine schnelle und zuverlässige Quellenauswahl erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

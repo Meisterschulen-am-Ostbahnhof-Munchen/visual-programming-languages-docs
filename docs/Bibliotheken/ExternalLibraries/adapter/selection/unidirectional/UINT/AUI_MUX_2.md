@@ -68,3 +68,8 @@ Der Funktionsblock besitzt keinen expliziten Zustandsautomaten. Die Verarbeitung
 
 ## Fazit
 Der **AUI_MUX_2** ist ein kompakter, generischer Multiplexer für unidirektionale AUI-Schnittstellen. Er ermöglicht eine saubere, ereignisgesteuerte Umschaltung zwischen zwei Eingangsadaptern und eignet sich ideal für alle Anwendungen, bei denen eine einfache 2-zu-1-Auswahl auf AUI-Ebene benötigt wird. Dank seiner generischen Auslegung kann er flexibel an verschiedene AUI-Datentypen angepasst werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

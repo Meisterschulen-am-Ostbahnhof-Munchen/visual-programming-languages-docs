@@ -109,3 +109,8 @@ Der `StringValue_IWS` ist speziell für die Verarbeitung von Unicode‑Text konz
 ## Fazit
 
 Der `StringValue_IWS` ist ein essenzieller Baustein für die Integration von Text‑Eingaben in IEC 61499‑basierten Steuerungssystemen, insbesondere im ISOBUS‑Umfeld. Seine Unterstützung von `WSTRING`, die saubere Trennung von Initialisierung, Anforderung und asynchroner Indikation sowie die flexible Objekt‑ID‑Adressierung machen ihn zu einer robusten Lösung für den Empfang breiter Zeichenketten aus verteilten Ressourcen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

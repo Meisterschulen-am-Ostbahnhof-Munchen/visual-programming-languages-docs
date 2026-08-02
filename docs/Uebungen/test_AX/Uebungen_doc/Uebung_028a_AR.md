@@ -111,3 +111,8 @@ Die Übung verwendet ausschließlich direkt instanziierte Funktionsbausteine (ke
 ## Zusammenfassung
 
 Die Übung `Uebung_028a_AR` implementiert eine vollständige Analog-Eingangs-Kalibrierung, bei der Offset und Skalierung über zwei digitale Eingänge eingelernt und in einer INI-Datei persistiert werden. Der Messablauf wird durch einen weiteren digitalen Eingang gestartet. Die verwendeten Adapterkonverter (`AD_TO_AUDI`, `AUDI_TO_AR`) demonstrieren die typkorrekte Weiterverarbeitung von analogen Signalen in der 4diac-IDE. Das Gesamtsystem bildet eine flexible Grundlage für industrielle Messaufgaben mit Speicherung von Kalibrierparametern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

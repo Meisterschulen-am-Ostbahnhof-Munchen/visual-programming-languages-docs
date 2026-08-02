@@ -62,3 +62,8 @@ Im Gegensatz zu einem einfachen TON (Timer On-Delay) oder TOF (Timer Off-Delay),
 
 ## Fazit
 Der `sequence_T_08` ist ein robuster und einfach zu konfigurierender Funktionsblock für alle Anwendungen, die eine feste, zeitgesteuerte Abfolge von Schritten erfordern. Durch die klare Trennung von Zustandslogik, Zeitparametern und Ausgangssignalen sowie die sofortige Reset-Funktionalität eignet er sich besonders für übersichtliche und wartungsfreundliche Steuerungsprogramme. Die Integration eines Standard-Timer-Adapters macht ihn zudem portabel und wiederverwendbar in verschiedenen 4diac-Projekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

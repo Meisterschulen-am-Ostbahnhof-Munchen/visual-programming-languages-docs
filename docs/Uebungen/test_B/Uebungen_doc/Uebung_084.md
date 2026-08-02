@@ -25,3 +25,8 @@ Kombination von Zeitbasis (`E_CYCLE`) und Ereignis-Zähler (`E_CTU`).
 *   Taster **I3** setzt den Zähler auf Null zurück.
 
 Dies ist die Basis für die Implementierung von Zeit-Grenzwerten oder verzögerten Abschaltungen über längere Zeiträume.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

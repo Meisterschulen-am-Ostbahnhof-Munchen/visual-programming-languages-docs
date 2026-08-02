@@ -55,3 +55,8 @@ Standard-Funktionsblöcke in 4diac bieten oft allgemeine Typumwandlungen (z.B. `
 
 ## Fazit
 Der `BYTE_TO_ST08X` Funktionsblock ist ein nützliches Werkzeug zur effizienten und übersichtlichen Zerlegung eines Byte-Wertes in acht individuelle Boolesche Zustände, die in einer `ST08X`-Struktur organisiert sind. Er vereinfacht die Handhabung bitweiser Informationen, insbesondere im Bereich der E/A-Verarbeitung und Protokollanalyse, indem er eine klare und ereignisgesteuerte Schnittstelle bietet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

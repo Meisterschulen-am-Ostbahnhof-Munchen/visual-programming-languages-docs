@@ -75,3 +75,8 @@ Der Ablauf wird durch die Ereignis- und Datenverbindungen im SubApp-Netzwerk bes
 ## Zusammenfassung
 
 Die Übung `Uebung_171_ASR` demonstriert die Realisierung eines asynchronen RS-Speichers mit zwei Tastern als Eingänge und einem digitalen Ausgang. Durch die Kombination von Hardware-Konfigurationsbausteinen (logiBUS), einem Ereignis-zu-Adapter-Konverter und einem ASR-Speichermodul wird eine einfache, aber typische Steuerungsaufgabe abgebildet. Der Nutzer lernt, wie diskrete Ereignisse über Adapter an einen Speicherbaustein weitergegeben und schließlich auf einen physischen Ausgang geschaltet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -89,3 +89,8 @@ Der interne `FB_CTUD_UDINT` durchläuft folgende Zustände, abhängig von den ei
 ## Fazit
 
 Der `AUDI_FB_CTUD` ist ein leistungsfähiger Aufwärts-/Abwärtszähler, der durch seine adapterbasierte Schnittstelle besonders für moderne, modulare Automatisierungslösungen geeignet ist. Er kombiniert die bewährte IEC‑61131‑Zähllogik mit der Flexibilität der 4diac‑Adaptertechnologie. Anwender sollten jedoch beachten, dass die Ausgangsereignisse bei jeder Verarbeitung und nicht nur bei Änderungen ausgelöst werden – gegebenenfalls ist ein nachgeschalteter Flankenfilter erforderlich. Mit seiner klaren Struktur und den standardisierten Datentypen stellt er eine robuste Komponente für Zählaufgaben in industriellen Steuerungssystemen dar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

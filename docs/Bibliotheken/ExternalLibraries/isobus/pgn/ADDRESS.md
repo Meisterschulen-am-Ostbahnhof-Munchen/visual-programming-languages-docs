@@ -56,3 +56,8 @@ Der Vorteil des `ADDRESS`-Blocks liegt in der zentralen, paketgebundenen Definit
 
 ## Fazit
 Der `ADDRESS`-Funktionsblock ist ein einfacher, aber essentieller Hilfsbaustein für die Entwicklung von ISOBUS-konformen Applikationen in der 4diac-IDE. Er erhöht die Codequalität, indem er numerische Spezialwerte durch selbsterklärende Bezeichner ersetzt und so Fehler vermeidet sowie die Wartung erleichtert. Seine Verwendung ist insbesondere bei der Implementierung von Netzwerkmanagement und Broadcast-Funktionalitäten empfohlen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

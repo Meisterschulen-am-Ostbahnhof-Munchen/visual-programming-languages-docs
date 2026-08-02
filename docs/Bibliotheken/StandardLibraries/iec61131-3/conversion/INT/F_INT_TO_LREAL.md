@@ -47,3 +47,8 @@ Der Funktionsblock führt die Konvertierung durch, indem der ganzzahlige Eingang
 
 ## Fazit
 Der `F_INT_TO_LREAL`-Funktionsblock ist ein einfacher und effizienter Baustein für die Konvertierung von ganzzahligen Werten in Gleitkommazahlen. Seine Einfachheit und direkte Funktionsweise machen ihn zu einer zuverlässigen Wahl für grundlegende Typumwandlungen in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

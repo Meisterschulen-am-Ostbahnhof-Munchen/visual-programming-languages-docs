@@ -50,3 +50,8 @@ Der Baustein besitzt keine Zustandsmaschine – er arbeitet kontinuierlich und z
 
 ## Fazit
 Der **AIS_SPLIT_4** ist ein einfacher, aber praktischer Funktionsblock zur zuverlässigen Verteilung eines AIS-Signals auf vier identische Ausgänge. Seine generische Auslegung und die reine Adapterlogik machen ihn flexibel einsetzbar und erfordern keine zusätzliche Ereignissteuerung. Er eignet sich ideal für Anwendungen, in denen ein Signal mehrfach benötigt wird, ohne Datenverarbeitung oder Synchronisation.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

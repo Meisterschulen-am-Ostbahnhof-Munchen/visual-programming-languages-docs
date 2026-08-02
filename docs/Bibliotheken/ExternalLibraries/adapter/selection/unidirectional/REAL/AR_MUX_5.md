@@ -87,3 +87,8 @@ Danach kehrt der Baustein in den Bereit‑Zustand zurück.
 ## Fazit
 
 Der `AR_MUX_5` ist ein übersichtlicher, generischer Funktionsblock zur Auswahl eines von fünf AR‑Adapter‑Eingängen. Dank der adapterbasierten Schnittstelle eignet er sich besonders für modulare Automatisierungslösungen, bei denen Daten in strukturierter Form weitergereicht werden. Die einfache Ereignissteuerung mit `REQ`/`CNF` ermöglicht eine unkomplizierte Integration in vorhandene Steuerungsabläufe. Für Anwendungen mit mehr oder weniger Kanälen stehen entsprechende Varianten zur Verfügung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

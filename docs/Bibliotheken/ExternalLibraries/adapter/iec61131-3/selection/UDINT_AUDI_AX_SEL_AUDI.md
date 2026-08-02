@@ -86,3 +86,8 @@ Der Baustein verfügt über keinen expliziten Zustandsautomaten. Er arbeitet rei
 ## Fazit
 
 Der FB `UDINT_AUDI_AX_SEL_AUDI` bietet eine zuverlässige und normgerechte binäre Auswahl für Automatisierungsanwendungen. Durch die Verwendung von IEC 61499-Adaptern und der Integration des standardisierten `F_SEL`-Bausteins ist er flexibel einsetzbar, leicht verständlich und nahtlos in bestehende 4diac-Projekte integrierbar. Seine klare Schnittstellenstruktur und ereignisgesteuerte Verarbeitung machen ihn zu einem grundlegenden Werkzeug für die Signalumschaltung in verteilten Systemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

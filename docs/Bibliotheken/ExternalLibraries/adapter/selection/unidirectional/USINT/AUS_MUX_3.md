@@ -77,3 +77,8 @@ Der Baustein besitzt **keine explizite Zustandsmaschine (ECC)**. Er verhält sic
 ## Fazit
 
 Der **AUS_MUX_3** ist ein kompakter, generischer Baustein zur Adapter-Multiplexierung mit drei Eingängen. Dank seiner Ereignissteuerung und der Verwendung des unidirektionalen AUS-Adapters eignet er sich ideal für die flexible Signalauswahl in Automatisierungslösungen, bei denen unterschiedliche Datenquellen auf eine gemeinsame Senke geschaltet werden müssen. Die generische Auslegung erleichtert die Wiederverwendung und Anpassung in verschiedenen Projekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

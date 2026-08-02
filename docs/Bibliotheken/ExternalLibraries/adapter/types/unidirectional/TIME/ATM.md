@@ -70,3 +70,8 @@ Gegenüber allgemeineren Adaptern beschränkt sich ATM auf das Nötigste – ide
 ## Fazit
 
 Der ATM-Adapter ist ein minimaler, aber praxisrelevanter Baustein zur unidirektionalen Übertragung von Zeitwerten in IEC 61499-Systemen. Seine klare Schnittstelle und einfache Handhabung machen ihn besonders geeignet für Anwendungen, die einen Fokus auf zeitbezogene Kommunikation legen. Durch die offene Lizenzierung kann der Adapter ohne Einschränkungen in eigene Projekte integriert oder erweitert werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

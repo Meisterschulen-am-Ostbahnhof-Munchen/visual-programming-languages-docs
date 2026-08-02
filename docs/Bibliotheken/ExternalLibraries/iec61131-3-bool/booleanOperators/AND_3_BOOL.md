@@ -60,3 +60,8 @@ Typische Anwendungen sind Steuerungslogiken, bei denen eine Aktion nur dann ausg
 
 ## Fazit
 Der `AND_3_BOOL` ist ein fundamentaler, zuverlässiger und einfach zu verwendender Baustein für die boolesche Logik in 4diac-basierten Steuerungsanwendungen. Seine strenge Ereignissteuerung gewährleistet deterministisches Verhalten, und die klare Schnittstelle ermöglicht eine intuitive Integration in Funktionsbaustein-Netzwerke. Für alle Steuerungsaufgaben, die eine dreifache UND-Verknüpfung erfordern, ist dieser Block die Standardlösung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

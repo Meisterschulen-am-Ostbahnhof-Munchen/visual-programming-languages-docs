@@ -68,3 +68,8 @@ Im Vergleich zu einfachen digitalen Eingabeblöcken bietet eIW:
 
 ## Fazit
 Der eIW-Funktionsblock stellt eine leistungsstarke und flexible Schnittstelle für die Verarbeitung von Wort-Eingabedaten in IEC 61499-Steuerungssystemen dar. Seine kombinierte Unterstützung für synchrone Abfragen und asynchrone Benachrichtigungen macht ihn besonders geeignet für Anwendungen, die sowohl deterministische Abfragen als auch zeitkritische Zustandsänderungen erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

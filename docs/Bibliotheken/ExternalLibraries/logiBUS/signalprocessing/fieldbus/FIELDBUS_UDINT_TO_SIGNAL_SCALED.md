@@ -89,3 +89,8 @@ Es gibt keine weiteren Zustände oder Schleifen.
 ## Fazit
 
 Der `FIELDBUS_UDINT_TO_SIGNAL_SCALED`-Funktionsblock bietet eine robuste und einfache Möglichkeit, Rohdaten aus einem Feldbus zu skalieren und gleichzeitig die Signalqualität zu bewerten. Durch die Kombination von Skalierungsfaktor und Offset sowie der integrierten Gültigkeitserkennung eignet er sich besonders für industrielle Automatisierungsanwendungen, bei denen sowohl die Umrechnung als auch die Plausibilitätsprüfung der Messwerte erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

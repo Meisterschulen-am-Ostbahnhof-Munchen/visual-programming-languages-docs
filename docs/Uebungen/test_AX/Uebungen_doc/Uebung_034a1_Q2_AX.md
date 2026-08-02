@@ -47,3 +47,8 @@ Das Ereignis zur Datenübergabe wird erst ausgelöst, wenn der eingegebene Zahle
 ## Zusammenfassung
 
 Die Übung zeigt, wie eine numerische Benutzereingabe aus einem iSoBUS‑Dienst über eine Adapterverbindung direkt in ein PWM‑Ausgangssignal umgesetzt wird. Die Verwendung von Adaptern vereinfacht die Verschaltung und erhöht die Wiederverwendbarkeit der Bausteine. Nach der Übung ist der Lernende in der Lage, iSoBUS‑Eingabefelder mit logiBUS‑PWM‑Ausgängen zu kombinieren und die Besonderheit der Ereignisauslösung (Bestätigung statt Tastendruck) zu berücksichtigen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

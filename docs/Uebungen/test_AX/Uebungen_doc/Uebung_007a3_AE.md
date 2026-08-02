@@ -63,3 +63,8 @@ In dieser Übung wird ein Blinker realisiert, der einen digitalen Ausgang (Outpu
 ## Zusammenfassung
 
 Die Übung **Uebung_007a3_AE** demonstriert einen robusten Blinker, der durch die Kombination von zyklischem Timer, Umschalter und Setz-/Rücksetz-Flipflop realisiert wird. Durch die spezielle Verschaltung wird sichergestellt, dass der Ausgang nach einem Stopp zuverlässig ausgeschaltet bleibt. Der Aufbau eignet sich hervorragend zur Einführung in ereignisgesteuerte Logik mit Adaptern und zeigt, wie aus einfachen Grundbausteinen ein funktionales Steuerungsprogramm entsteht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

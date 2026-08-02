@@ -62,3 +62,8 @@ Das System arbeitet ereignisgesteuert. Sobald der Benutzer den Taster an Eingang
 ## Zusammenfassung
 
 Die Übung demonstriert die Kombination von zwei Ereignisquellen (Taster) mit einem `E_MERGE_2`-Baustein zur Erzeugung eines gemeinsamen Taktsignals für ein Toggle-Flipflop. Der Ausgangszustand des Flipflops kann durch beliebiges Drücken der beiden Taster umgeschaltet werden. Dies ist ein grundlegendes Beispiel für die ereignisgesteuerte Logik in 4diac und die Verwendung adaptierbarer I/O-Bausteine aus der logiBUS-Bibliothek.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -79,3 +79,8 @@ Alle diese Bausteine lassen sich analog verwenden und bieten eine einheitliche S
 
 ## Fazit
 Der `GET_REAL`-Funktionsblock ist ein schlanker und zuverlässiger Baustein zum Lesen einer REAL-InOut-Variable. Er erfüllt eine grundlegende Aufgabe in der IEC‑61499‑Welt: das Weiterleiten eines Wertes aus einer bidirektionalen Schnittstelle in einen gepufferten Ausgang. Durch seine Einfachheit und klare Semantik eignet er sich sowohl für den Produktiveinsatz als auch für Testzwecke. Die Kombination mit den parallelen Bausteinen anderer Datentypen macht ihn zu einem flexiblen Werkzeug in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

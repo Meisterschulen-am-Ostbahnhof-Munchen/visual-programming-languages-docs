@@ -61,3 +61,8 @@ Als Composite-FB besitzt `SPLIT_AD_INTO_AQ` keinen eigenen Zustandsautomaten. Di
 
 ## Fazit
 `SPLIT_AD_INTO_AQ` ist ein nützlicher Baustein zur Aufteilung eines DWORDs (AD-Adapter) in 16 2-Bit-Quarter-Adapter (AQ). Seine composite Architektur mit interner Synchronisation sorgt für eine konsistente Datenweitergabe und erleichtert die modulare, adapterbasierte Programmierung in der 4diac-IDE. Besonders geeignet ist er für Anwendungen, die eine parallele Verarbeitung von Teilinformationen erfordern, ohne dass die Details der Aufteilung im übergeordneten Netzwerk sichtbar werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

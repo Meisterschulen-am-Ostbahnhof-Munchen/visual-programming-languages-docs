@@ -54,3 +54,8 @@ Im Vergleich zu generischen IO-Bausteinen bietet ZephyrIO spezifische Optimierun
 
 ## Fazit
 Der ZephyrIO Funktionsblock stellt eine spezialisierte Lösung für die Integration von Zephyr-basierten IO-Komponenten in IEC 61499-Systeme dar und bietet eine standardisierte Schnittstelle für modulare Hardware-Erweiterungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

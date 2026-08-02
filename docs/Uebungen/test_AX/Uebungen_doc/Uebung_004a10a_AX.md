@@ -57,3 +57,8 @@ Diese Übung realisiert ein Toggle-Flip-Flop (T-FF) mit einem Initialwert von `F
 ## Zusammenfassung
 
 Die Übung demonstriert die einfache Realisierung eines Toggle-Flip-Flops mit hardwarenahen Ein- und Ausgängen. Durch die Kombination eines digitalen Eingangsbausteins mit einem Standard-Flip-Flop und einem Ausgangsbaustein wird ein praktischer Anwendungsfall der Ereignissteuerung in 4diac umgesetzt. Der Schwerpunkt liegt auf dem Verständnis der Ereignisverbindungen und der Initialisierung von Zuständen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

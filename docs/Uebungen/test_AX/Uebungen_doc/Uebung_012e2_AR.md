@@ -80,3 +80,8 @@ Diese Übung demonstriert die Verwendung eines **AR-Adapters** zur Kombination e
 **Schwierigkeitsgrad**: Mittel  
 **Benötigte Vorkenntnisse**: Grundlegende Kenntnisse der 4diac-IDE, Umgang mit logiBUS-Bausteinen, AR-Adapter und NVS-Konstanten.  
 **Start der Übung**: Importieren Sie das SubApp-Template `Uebung_012e2_AR` in ein neues 4diac-Projekt, stellen Sie sicher, dass die benötigten Bibliotheken (`logiBUS`, `MyLib`, `Uebungen::const`) im Build-Pfad liegen, und verbinden Sie die physikalischen E/A-Punkte entsprechend der Hardware.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

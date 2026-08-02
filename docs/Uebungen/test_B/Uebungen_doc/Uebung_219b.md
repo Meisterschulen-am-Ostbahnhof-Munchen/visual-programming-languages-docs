@@ -69,3 +69,8 @@ Die Übung **Uebung_219b** setzt einen IEC 61131-3‑konformen Rückwärtszähle
 - die Ausgabe von Messwerten auf einem Terminal (PHYS_LREAL).
 
 Der Schwerpunkt liegt auf dem Verständnis von Ereignis‑ und Datenflüssen sowie der strukturierten Verschaltung von Funktionsbausteinen in einer Automatisierungsanwendung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

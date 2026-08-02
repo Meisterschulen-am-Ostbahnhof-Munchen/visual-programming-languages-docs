@@ -67,3 +67,8 @@ Der Programmablauf wird durch die Ereignisketten (Event Connections) und den Dat
 
 ## Zusammenfassung
 Diese Übung ist ein klassisches Beispiel für speicherprogrammierbare Steuerungslogik nach IEC 61131-3. Sie vermittelt das Verständnis für bistabile Elemente und die Ereignissteuerung in 4diac, bei der die Ausführung der Logikblöcke durch Trigger (Events) von den Eingangsbausteinen gesteuert wird. Das Ergebnis ist eine robuste Schaltung zum Ein- und Ausschalten eines Verbrauchers über zwei getrennte Signale.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

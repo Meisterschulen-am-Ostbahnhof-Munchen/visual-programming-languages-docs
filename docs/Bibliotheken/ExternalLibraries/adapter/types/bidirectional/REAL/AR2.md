@@ -66,3 +66,8 @@ Der AR2-Adapter implementiert keine explizite Zustandsmaschine. Der Datenfluss e
 
 ## Fazit
 Der AR2-Adapter ist ein eleganter Baustein für die bidirektionale Übertragung eines REAL-Werts mit zugehörigem Ereignis. Seine klare Schnittstelle und die einfache Handhabung machen ihn besonders geeignet für modulare Automatisierungslösungen, bei denen Messdaten oder Steuergrößen zwischen Funktionsblöcken ausgetauscht werden müssen. Durch die Einhaltung des 61499‑Standards und die Lizenz unter EPL 2.0 ist AR2 offen und erweiterbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

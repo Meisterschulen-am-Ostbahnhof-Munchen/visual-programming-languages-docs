@@ -143,3 +143,8 @@ Die folgende Beschreibung erläutert den Signalfluss innerhalb der Subapplikatio
 ## Zusammenfassung
 
 Die Übung 007b demonstriert den Einsatz von zyklischer Ereigniserzeugung (`E_CYCLE`), Ereignisverteilung und -zusammenführung (`E_SPLIT_4`, `E_MERGE_4`) sowie einem Toggle-Flipflop (`E_T_FF`) zur Erzeugung eines Blinksignals. Die Steuerung erfolgt über zwei logiBUS-Taster (Start/Stop). Der Aufbau ist als wiederverwendbare Subapplikation realisiert und kann direkt in eine 4diac-IDE-Umgebung importiert werden. Die Schaltung ist ein grundlegendes Beispiel für zeitgesteuerte Ausgänge mit einfacher Benutzerinteraktion.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

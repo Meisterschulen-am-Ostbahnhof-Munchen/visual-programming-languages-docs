@@ -52,3 +52,8 @@ Die Übung **Uebung_071a_AUI** zeigt eine typische Anwendung von Adapter-Interfa
 - **Integration von logiBUS-Ausgängen** in ein Steuerungsprogramm
 
 Nach erfolgreicher Bearbeitung versteht der Teilnehmer die Datenflussstruktur mit Adaptern und kann ähnliche Aufgaben selbstständig umsetzen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

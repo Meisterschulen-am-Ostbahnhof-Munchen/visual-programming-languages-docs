@@ -32,3 +32,8 @@ Die Übung enthält keine weiteren Verbindungen oder Ereignisverknüpfungen – 
 - die Parameterübergabe über die 4diac-IDE.
 
 Nach Abschluss der Übung kann der Entwickler dieses Muster auf eigene Anwendungen übertragen, bei denen Benutzereingaben oder Konfigurationsdaten dauerhaft gespeichert werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

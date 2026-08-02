@@ -88,3 +88,8 @@ Die folgende Wahrheitstabelle beschreibt das Verhalten des Bausteins (wobei `Q_n
 ## Fazit
 
 Der **AX_FB_SR** ist ein spezialisierter Baustein für die strukturierte, adapterbasierte Programmierung in 4diac. Er bietet die klassische Funktionalität eines setz-dominanten Speicherglieds, optimiert jedoch die grafische Darstellung und Handhabung durch die Kapselung von Signalen in Adaptern. Er ist unverzichtbar in Anwendungen, die auf modularen und übersichtlichen Schnittstellendefinitionen basieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

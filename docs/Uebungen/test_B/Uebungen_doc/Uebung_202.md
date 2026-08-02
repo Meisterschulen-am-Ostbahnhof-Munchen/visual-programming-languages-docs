@@ -72,3 +72,8 @@ Die logischen Eingangssignale werden über digitale Eingänge eingelesen und die
 
 ## Zusammenfassung  
 Die Übung **Uebung_202** veranschaulicht eine einfache Verriegelung mit Schutzzeit. Zwei Taster (Auf/Ab) steuern über einen Interlock-Baustein zwei Ausgänge. Der integrierte Zeitschutz verhindert ein sofortiges Umschalten und schützt damit mechanische Komponenten. Die Implementierung nutzt digitale Ein-/Ausgänge und einen externen Zeitgeber, der als Adapter an den Interlock angebunden wird. Dieses Grundprinzip ist in der Automatisierungstechnik (z. B. bei Hubwerken oder Schiebetoren) weit verbreitet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -75,3 +75,8 @@ Ein wirksamer Zustandsautomat ist nicht explizit im XML definiert, da die Logik 
 
 ## Fazit
 Der **ALI_MUX_2** ist ein einfacher, aber effektiver Multiplexer für ALI‑Adapter‑Signale. Durch seine generische Auslegung und die rein adapterbasierte Schnittstelle eignet er sich ideal für modulare Automatisierungsprojekte, bei denen zwischen zwei Quellen umgeschaltet werden muss. Die klare Zustandslogik und die Bestätigung per `CNF` erlauben eine zuverlässige Einbindung in übergeordnete Steuerungsabläufe.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -87,3 +87,8 @@ Andere Bausteine liefern oft nur eine einzelne Messgröße oder haben keine Time
 ## Fazit
 
 Der `IA_PosDeltaHighPrecRapidUpd` ist ein spezialisierter ISOBUS-Adapter für hochpräzise Positionsänderungen gemäß NMEA 2000 PGN 129027. Er bietet eine standardkonforme, adapterbasierte Schnittstelle, die sich nahtlos in 4diac-Systeme einfügt. Dank der integrierten Timeout-Erkennung und der expliziten Initialisierungsbestätigung eignet er sich besonders für sicherheitsrelevante Automatisierungslösungen in der Landwirtschaft und Fahrzeugtechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

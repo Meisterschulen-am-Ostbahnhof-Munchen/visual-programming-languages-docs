@@ -46,3 +46,8 @@ Die Verdrahtung arbeitet wie folgt:
 ## Zusammenfassung
 
 Die Übung zeigt, wie ein **Toggle Flip-Flop** mit Hilfe eines Adapterbausteins (`AX_T_FF`) und Ereignisverarbeitung aufgebaut wird. Zwei Taster werden über `BUTTON_SINGLE_CLICK` konfiguriert und ihre Ereignisse mit einem `E_MERGE_3` zusammengeführt, sodass jeder Tastendruck unabhängig vom anderen das Flip-Flop toggelt. Dies ist eine grundlegende Schaltung zur Ereignissteuerung und Zustandsspeicherung mit 4diac und logiBUS-Hardware.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -69,3 +69,8 @@ Alle Split‑Varianten basieren auf demselben Prinzip und unterscheiden sich led
 ## Fazit
 
 Der **AIWS_SPLIT_5** ist ein einfacher, aber essenzieller Funktionsblock zur Vervielfältigung von AIWS‑Adapter‑Signalen. Durch seine generische Auslegung und den Verzicht auf Events oder Datenportierung lässt er sich ohne zusätzliche Konfiguration in bestehende IEC 61499‑Applikationen integrieren. Ideal für Anwendungen, die eine punktgenaue Verteilung eines Adapters auf bis zu fünf unabhängige Pfade erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

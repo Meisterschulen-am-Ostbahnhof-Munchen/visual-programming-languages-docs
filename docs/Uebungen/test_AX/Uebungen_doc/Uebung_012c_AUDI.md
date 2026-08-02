@@ -34,3 +34,8 @@ Die Haupt-SubApp `Uebung_012c_AUDI` besitzt **keine eigenen Ein-/Ausgangsschnitt
 ## Zusammenfassung
 
 Die Übung *Uebung_012c_AUDI* zeigt, wie ein numerischer Wert über eine vordefinierte SubApp (Adapter-Version) eingelesen und in einem nichtflüchtigen Speicher abgelegt wird. Dabei kommen Konstanten für Schlüssel und Sektion sowie eine Objekt-ID aus dem DefaultPool zum Einsatz. Der Lernende erhält Einblick in die Kapselung von Funktionslogik durch SubApps und in die Handhabung der NVS-Bibliothek in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -75,3 +75,8 @@ Die Initialisierung (`INIT`) ist Voraussetzung für beide Betriebsarten. Dabei w
 
 ## Fazit
 Der `logiBUS_PI_ID`-Funktionsblock ist ein leistungsfähiges und flexibles Interface für 32-Bit-Digitaleingänge innerhalb des logiBUS-Ökosystems. Durch die Kombination von Polling (`REQ`/`CNF`) und ereignisgesteuerter Abfrage (`IND`) mit konfigurierbaren Auslösekriterien eignet er sich für eine Vielzahl von Anwendungen, von der einfachen Statusabfrage bis zur komplexen Impulsauswertung. Die strikte Trennung von Initialisierungs- und Betriebslogik sowie das umfangreiche Status-Reporting machen ihn zu einem robusten Baustein für industrielle Steuerungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

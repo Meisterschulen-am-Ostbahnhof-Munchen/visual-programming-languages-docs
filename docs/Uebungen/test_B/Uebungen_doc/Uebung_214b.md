@@ -89,3 +89,8 @@ Alle Datenverbindungen sind so verdrahtet, dass die Werte synchron mit den Ereig
 ## Zusammenfassung
 
 Die Übung 214b demonstriert die Implementierung eines industriellen Vorwärtszählers mit Terminal‑Ausgabe. Der Zähler wird über zwei digitale Eingänge gesteuert, sein Ausgang schaltet einen Digitalausgang, und der aktuelle Zählerstand wird nach Konvertierung auf einem Terminal ausgegeben. Das Zusammenspiel von Ereignis‑ und Datenverbindungen sowie die Verwendung von Standard‑IEC‑ und logiBUS‑Bausteinen bilden die Grundlage für komplexere Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

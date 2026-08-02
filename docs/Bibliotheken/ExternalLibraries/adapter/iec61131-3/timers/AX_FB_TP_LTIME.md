@@ -86,3 +86,8 @@ Der vorliegende Baustein kombiniert die Timerfunktion eines TP mit der Flexibili
 
 ## Fazit
 Der **AX_FB_TP_LTIME** ist ein robuster und präziser Puls‑Timer für die 4diac‑IDE, der durch die Adapter‑Schnittstelle und die Verwendung von `LTIME` besonders geeignet für hochauflösende, modulare Automatisierungslösungen ist. Die interne Flipflop‑Struktur sorgt für saubere Signalübergaben, und die doppelte Ereignisbeschaltung bietet Flexibilität in der Ansteuerung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

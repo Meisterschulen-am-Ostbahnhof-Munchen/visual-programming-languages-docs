@@ -61,3 +61,8 @@ Der Baustein **AI_FB_CTUD** arbeitet als Zähler: Bei jedem steigenden Flanke an
 
 ## Zusammenfassung
 Die Übung **Uebung_220b_AR** zeigt den Einsatz eines standardisierten IEC 61131-3 Zählers (CTUD) in einer Adapter-Architektur. Durch die Verbindung von digitalen Eingängen (Taster/Sensoren), Digitalausgängen und einer Terminalausgabe wird ein vollständiger Zählprozess mit Visualisierung abgebildet. Der Lernende versteht die Funktionsweise von Aufwärts-/Abwärtszählern, die Adapter-Kommunikation in 4diac sowie die Umwandlung von Datenformaten (INT über AI_TO_AR). Zusätzlich wird die Möglichkeit zur Ereignisreduzierung durch Flipflops thematisiert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

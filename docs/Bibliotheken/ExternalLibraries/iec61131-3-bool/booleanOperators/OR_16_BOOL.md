@@ -55,3 +55,8 @@ Der Baustein besitzt keinen internen Zustand im Sinne eines Speichers. Er verhä
 
 ## Fazit
 Der `OR_16_BOOL` ist ein robuster und einfach zu verwendender Standardbaustein für die logische ODER-Verknüpfung einer größeren Gruppe von booleschen Signalen. Seine feste Struktur mit 16 Eingängen macht ihn vorhersagbar und einfach in der Anwendung, insbesondere wenn die benötigte Anzahl an Signalen bekannt und konstant ist. Die ereignisgesteuerte Ausführung integriert ihn nahtlos in die Datenfluss-orientierte Architektur von 4diac. Er ist die erste Wahl, wenn bis zu 16 digitale Signale auf ein gemeinsames ODER-Ergebnis reduziert werden sollen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

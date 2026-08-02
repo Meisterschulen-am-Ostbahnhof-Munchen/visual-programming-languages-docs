@@ -41,3 +41,8 @@ Verwendung des Bausteins `I_RPTO` (Rear PTO). Es wird gezeigt, wie man mit einer
 
 **Gerätesteuerung mit Zapfwellen-Freigabe**:
 Ein Gülle-Rührwerk darf nur arbeiten, wenn die Zapfwelle mindestens 300 U/min erreicht hat. Die Logik nutzt den `RPTO`-Wert zur Freigabe. Durch den Timeout-Schutz wird sichergestellt, dass die Freigabe sofort entzogen wird, sobald die Zapfwelle (und damit die TECU-Nachricht) stoppt.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Diode & Halbleitergrundlagen auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)

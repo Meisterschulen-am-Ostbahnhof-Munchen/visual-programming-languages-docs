@@ -57,3 +57,8 @@ Der SERVER_0 Block verwaltet die Verbindung.
 | Lizenz | EPL-2.0 |
 | Version | 3.0 (2025-12-05, Monika Wenger) |
 | 4diac-Paket | iec61499::net |
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -52,3 +52,8 @@ Der Funktionsblock verfügt über keinen Zustandsautomaten. Das Ausgangssignal j
 
 ## Fazit
 Der **AUS_SPLIT_7** ist ein einfacher, aber effektiver generischer Funktionsblock zur unidirektionalen Verteilung eines AUS-Adapter-Signals auf sieben parallele Ausgänge. Durch seine reine Adapter-basierte Schnittstelle und die fehlende Ereignislogik eignet er sich für alle Anwendungen, bei denen ein Signal ohne Verzögerung oder Zustandsspeicherung vervielfacht werden muss. Er bietet eine saubere, modulare Lösung für die Signalverteilung in IEC 61499-basierten Automatisierungssystemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

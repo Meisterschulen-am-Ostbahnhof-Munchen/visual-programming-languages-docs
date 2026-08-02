@@ -85,3 +85,8 @@ Der Funktionsbaustein besitzt **keine** internen Zustände oder Speicher. Jeder 
 ## Fazit
 
 Der **F_RAW_TO_PHYS** Baustein ist eine nützliche und sauber implementierte Komponente für die ISOBUS‑Datenkonvertierung. Durch die Verwendung von 64‑Bit Zwischenwerten wird Überlauf vermieden, und die Kapselung der Parameter in eine Struktur erleichtert die Wiederverwendung in Projekten, die mit dem `NumericObjectPool`‑Konzept arbeiten. Er eignet sich sowohl für den produktiven Einsatz als auch für die schnelle Prototypenerstellung im Bereich landwirtschaftlicher Steuerungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

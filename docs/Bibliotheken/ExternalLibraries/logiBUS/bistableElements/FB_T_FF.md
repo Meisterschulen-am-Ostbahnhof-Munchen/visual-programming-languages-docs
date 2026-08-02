@@ -87,3 +87,8 @@ Der **FB_T_FF** ist damit ideal für einfache Umschaltaufgaben, bei denen kein S
 ## Fazit
 
 Der **FB_T_FF** realisiert ein robustes, flankengesteuertes Toggle-Flipflop mit asynchronem Reset. Durch die kompakte Implementierung eignet er sich für zeitkritische Steuerungen in der Automatisierungstechnik, bei denen zuverlässige Zustandswechsel erforderlich sind. Die Flankendetektion ist softwaremäßig sauber gelöst und benötigt keine zusätzliche Hardware.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

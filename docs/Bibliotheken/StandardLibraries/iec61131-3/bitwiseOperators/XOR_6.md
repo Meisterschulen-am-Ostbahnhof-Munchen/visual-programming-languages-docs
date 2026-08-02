@@ -63,3 +63,8 @@ Im Vergleich zu Standard-XOR-Blöcken mit zwei Eingängen bietet XOR_6:
 
 ## Fazit
 Der XOR_6 Funktionsblock stellt eine leistungsstarke und flexible Lösung für bitweise XOR-Operationen mit mehreren Eingängen dar. Seine generische Natur ermöglicht breite Anwendbarkeit in verschiedenen Automatisierungsprojekten, während die sechsfache Eingangsfunktionalität effiziente Implementierungen komplexer logischer Verknüpfungen unterstützt.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

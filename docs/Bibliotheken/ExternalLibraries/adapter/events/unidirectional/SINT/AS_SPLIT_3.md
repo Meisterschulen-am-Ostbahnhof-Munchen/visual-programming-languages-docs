@@ -52,3 +52,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten und kein ECC (Execution C
 
 ## Fazit
 AS_SPLIT_3 ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfältigung von Adapterdaten in der 4diac-IDE. Seine generische Auslegung und der fehlende Ereignisverkehr machen ihn besonders leichtgewichtig und in vielen Szenarien einsetzbar. Die dokumentierte Lizenz (EPL 2.0) stellt sicher, dass der Baustein rechtlich klar in eigene Projekte integriert werden kann.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

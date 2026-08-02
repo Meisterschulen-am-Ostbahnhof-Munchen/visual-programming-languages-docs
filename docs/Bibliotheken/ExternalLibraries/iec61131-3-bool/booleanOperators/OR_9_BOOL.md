@@ -61,3 +61,8 @@ Der Block besitzt keinen internen Zustand oder Speicher. Sein Verhalten ist rein
 
 ## Fazit
 Der `OR_9_BOOL` ist ein robuster und einfach zu verwendender Standardbaustein für die logische ODER-Verknüpfung von neun booleschen Signalen. Seine ereignisgesteuerte, zustandslose Architektur macht ihn zu einem zuverlässigen und effizienten Bestandteil für Steuerungs- und Überwachungslogik in 4diac-basierten Automatisierungssystemen. Die Verwendung dieses spezialisierten Blocks anstelle einer Kaskade von Grundgattern verbessert die Lesbarkeit und Wartbarkeit des Applikationscodes.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

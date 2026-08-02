@@ -84,3 +84,8 @@ Importieren Sie die SubApp in Ihr 4diac‑Projekt und binden Sie sie in eine gee
 ## Zusammenfassung
 
 Die Übung **Uebung_070c** demonstriert einen vollständigen Datenpfad von der Feldbuserfassung (WBSD) über die skalierte Umrechnung bis hin zur Anzeige auf einem Universal Terminal. Die Verwendung standardisierter ISOBUS‑Bausteine ermöglicht eine einfache Integration in landtechnische Steuerungssysteme und zeigt, wie physikalische Werte aus rohen Busdaten gewonnen werden können.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

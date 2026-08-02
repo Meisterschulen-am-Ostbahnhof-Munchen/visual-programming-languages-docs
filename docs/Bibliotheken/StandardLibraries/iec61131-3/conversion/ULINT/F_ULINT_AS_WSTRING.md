@@ -47,3 +47,8 @@ Der Funktionsblock führt die Konvertierung durch, wenn das Ereignis `REQ` ausge
 
 ## Fazit
 Der `F_ULINT_AS_WSTRING` Funktionsblock bietet eine einfache und effiziente Möglichkeit, große vorzeichenlose Integer-Werte in Unicode-Strings umzuwandeln. Seine klare Schnittstelle und zuverlässige Funktionsweise machen ihn zu einem wertvollen Baustein in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

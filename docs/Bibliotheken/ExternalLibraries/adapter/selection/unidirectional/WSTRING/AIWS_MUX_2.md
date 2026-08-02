@@ -71,3 +71,8 @@ Mehrere REQ-Ereignisse nacheinander sind möglich; eine laufende Verarbeitung wi
 
 ## Fazit
 Der AIWS_MUX_2 ist ein kompakter, generischer Multiplexer für AIWS-Adapter. Durch die einfache ereignisgesteuerte Selektion auf Basis eines Index eignet er sich ideal für die Umschaltung zwischen zwei analogen Signalen. Die Nutzung der Eclipse‑4diac‑Adaptertechnologie sorgt für eine saubere, wiederverwendbare Schnittstelle und erleichtert die Integration in komplexe Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

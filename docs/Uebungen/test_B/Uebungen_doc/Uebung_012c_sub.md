@@ -105,3 +105,8 @@ In dieser Übung wurde eine SubApp realisiert, die einen numerischen Wert über 
 - **Q_NumericValue** zur Weiterverarbeitung des gespeicherten Werts.
 
 Die SubApp demonstriert die typische Vorgehensweise für eine zyklische Datenaufnahme und ‑speicherung in der Automatisierungstechnik. Sie kann als Grundlage für komplexere Anwendungen wie das Speichern von Parametern oder das Loggen von Messwerten dienen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

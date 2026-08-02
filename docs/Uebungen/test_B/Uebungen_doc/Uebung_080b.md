@@ -27,3 +27,8 @@ Jeder einzelne Klick auf Taster **I1** erreicht den Eingang `E_SPLIT.EI`. Der Sp
 ## Anwendungsbeispiel
 
 Anpassung von Sensor-Impulsen: Ein Getriebesensor liefert einen Impuls pro Radumdrehung, die Logik benötigt aber zwei Impulse pro Umdrehung zur genaueren Berechnung. Der Splitter verdoppelt die eintreffende Frequenz rein softwareseitig.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

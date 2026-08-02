@@ -40,3 +40,8 @@ Die SubApp besitzt keine eigenen Ein‑/Ausgangsschnittstellen (InterfaceList is
 ## Zusammenfassung
 
 Die Übung `Uebung_012m_AIS` zeigt, wie ein String über einen AIS-Adapter eingelesen und mittels eines vordefinierten Bausteins sicher im nichtflüchtigen Speicher abgelegt wird. Durch die strikte Trennung von Konstanten und Logik bleibt die Konfiguration flexibel und wiederverwendbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

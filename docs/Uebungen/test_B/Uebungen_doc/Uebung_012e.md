@@ -72,3 +72,8 @@ Die Übung vermittelt den Umgang mit physikalischen Werteingaben und persistente
 - den Wert über einen Qualifier-Baustein prozessiert.
 
 Durch die Kombination der Bausteine `NumericValue_PHYS`, `INI` und `Q_NumericValue_PHYS` wird ein typisches Szenario aus der Automatisierungstechnik (Erfassen, Speichern und Wiederherstellen von Parametern) abgebildet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

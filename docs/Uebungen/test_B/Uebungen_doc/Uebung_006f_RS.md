@@ -69,3 +69,8 @@ Der Programmablauf wird durch die physischen Eingänge I1, I2 und I3 gesteuert. 
 ## Zusammenfassung
 
 Die Übung `Uebung_006f_RS` zeigt die Einbindung eines reset-dominanten Toggle-Flipflops in eine 4diac-Anwendung mit logiBUS-Hardware. Die drei Eingänge (Set, Reset, Takt) werden über digitale Eingangsbausteine eingelesen. Der Ausgang des Flipflops steuert einen digitalen Ausgang. Der Ablauf verdeutlicht die Verarbeitung von Ereignisketten und die Funktion eines priorisierten Resets. Als Lernziel steht das Verständnis der Toggle-Logik und der Dominanz des Reset-Signals im Vordergrund.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

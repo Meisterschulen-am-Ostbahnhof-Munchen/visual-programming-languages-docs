@@ -57,3 +57,8 @@ Im Vergleich zu IB (Input Byte) verarbeitet IW 16-Bit anstelle von 8-Bit Daten. 
 
 ## Fazit
 Der IW-Funktionsblock bietet eine robuste und flexible Schnittstelle für die Verarbeitung von 16-Bit Eingabedaten in 4diac-Systemen. Seine klare Ereignisstruktur und umfassende Statusrückmeldung machen ihn zu einer zuverlässigen Lösung für die Anbindung von Wort-basierten Eingabegeräten in industriellen Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -78,3 +78,8 @@ Der **AIWS_DEMUX_3** bietet eine auf die Agrartechnik zugeschnittene, sofort ein
 ## Fazit
 
 Der **AIWS_DEMUX_3** ist ein einfacher, aber wichtiger Funktionsblock für die gezielte Verteilung von AIWS-Informationen auf drei Ausgänge. Dank seiner klaren Schnittstelle und der generischen Auslegung lässt er sich nahtlos in landwirtschaftliche Automatisierungsprojekte integrieren. Er reduziert den Programmieraufwand und erhöht die Übersichtlichkeit von Datenflussdiagrammen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

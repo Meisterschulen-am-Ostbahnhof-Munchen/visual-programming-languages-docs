@@ -57,3 +57,8 @@ In dieser Übung werden keine benutzerdefinierten Sub-Bausteine verwendet – al
 ## Zusammenfassung
 
 Die Übung `Uebung_207_AX` vermittelt die praktische Anwendung eines event-gesteuerten Interlock-Bausteins. Sie zeigt, wie zwei Ausgänge wechselseitig gesperrt werden können und wie ein separater Reset-Eingang das System in einen definierten Grundzustand versetzt. Durch die Verwendung von Adapterverbindungen wird die lose Kopplung zwischen Signalverarbeitung und Peripherie deutlich – ein Kernkonzept der IEC 61499.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -96,3 +96,8 @@ Die folgende Beschreibung erläutert den Daten- und Ereignisfluss:
 ## Zusammenfassung
 
 Die Übung `Uebung_219b_ALR` realisiert einen IEC 61131-3 konformen Rückwärtszähler (CTD) in Adapter-Bauweise. Über digitale Eingänge wird der Zähler geladen und dekrementiert. Der aktuelle Zählwert wird auf einem Terminal ausgegeben, und ein digitaler Ausgang signalisiert das Erreichen des Nullwerts. Die Implementierung zeigt die Kombination von Standard-Zählerbausteinen, Konvertierungsadaptern und hardwarenaher Ein-/Ausgabe in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

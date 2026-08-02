@@ -45,3 +45,8 @@ Der Funktionsblock besitzt keine internen Zustände. Er reagiert ausschließlich
 
 ## Fazit
 Der `F_SINT_TO_LREAL`-Funktionsblock ist ein einfaches und effizientes Werkzeug für die Typumwandlung in 4diac-IDE. Seine klare Schnittstelle und direkte Funktionsweise machen ihn zu einer zuverlässigen Komponente in Steuerungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

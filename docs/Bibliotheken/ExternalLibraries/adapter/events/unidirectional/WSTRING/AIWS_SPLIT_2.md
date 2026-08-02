@@ -63,3 +63,8 @@ Der Funktionsblock ist zustandslos. Es existieren keine internen Zustände oder 
 ## Fazit
 
 Der **AIWS_SPLIT_2** ist ein einfacher, aber nützlicher generischer Funktionsblock zur Vervielfältigung eines AIWS‑Adaptersignals. Er reduziert den Verdrahtungsaufwand in Applikationen, die dasselbe analoge oder gemischte Signal mehrfach benötigen, und fügt sich durch seine passive, zustandslose Architektur transparent in bestehende Abläufe ein.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

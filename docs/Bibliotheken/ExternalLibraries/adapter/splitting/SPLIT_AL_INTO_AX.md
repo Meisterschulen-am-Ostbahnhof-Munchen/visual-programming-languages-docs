@@ -59,3 +59,8 @@ Der FB besitzt keinen eigenen expliziten Zustandsautomaten. Der innere Zustand w
 
 ## Fazit
 **SPLIT_AL_INTO_AX** ist ein leistungsfähiger, adapterbasierter Funktionsblock zur Aufteilung eines LWORD-Datensatzes in 64 diskrete BOOL-Signale. Durch die integrierten Flipflops bleibt der Ausgangszustand bis zur nächsten Aktualisierung erhalten. Die große Anzahl von Ausgängen und die synchrone Verarbeitung machen ihn ideal für Anwendungen, die eine parallele, zeitlich konsistente Signalerzeugung erfordern. Der Einsatz von unidirektionalen Adaptern sorgt für eine klare Schnittstellendefinition und erleichtert die Integration in bestehende 4diac‑Projekte.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

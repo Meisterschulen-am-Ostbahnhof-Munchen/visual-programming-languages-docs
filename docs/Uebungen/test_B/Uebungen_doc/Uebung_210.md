@@ -52,3 +52,8 @@ Diese Übung vermittelt den praktischen Umgang mit dem IEC‑61131-3 Zählerbaus
 **Schwierigkeitsgrad**: Mittel  
 **Vorkenntnisse**: Grundlegende Bedienung der 4diac‑IDE, Verständnis von Ereignissen und Datenverbindungen, Basiswissen über IEC‑61131-3 Funktionsbausteine.  
 **Start der Übung**: Importieren Sie die Datei `Uebung_210.fbt` (oder das entsprechende 4diac‑Projekt) und weisen Sie die logiBUS‑Hardware‑Kanäle entsprechend den Pool‑Bezeichnungen (`Input_I1`, `Input_I2`, `Output_Q1`, `OutputNumber_N1`) zu.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

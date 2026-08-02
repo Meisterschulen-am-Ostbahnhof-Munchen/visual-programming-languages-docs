@@ -85,3 +85,8 @@ Der **AB_DEMUX_2** zeichnet sich durch seine einfache Handhabung mit nur zwei Au
 ## Fazit
 
 Der **AB_DEMUX_2** ist ein kompakter, ereignisgesteuerter Demultiplexer für unidirektionale AB-Adapter. Durch die klare Trennung von Ereignissteuerung und Datenweiterleitung eignet er sich ideal für modulare Automatisierungslösungen, bei denen ein Datenstrom zwischen zwei Zielen umgeschaltet werden muss. Seine generische Auslegung ermöglicht den Einsatz in verschiedenen Kontexten, während die einfache Schnittstelle eine zuverlässige Integration in bestehende 4diac-Projekte gewährleistet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

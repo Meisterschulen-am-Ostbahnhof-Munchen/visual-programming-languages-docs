@@ -73,3 +73,8 @@ Dieser Baustein ist sehr spezifisch in seiner Funktion. Im Vergleich zu allgemei
 ## Fazit
 
 Der `ARRAY2ARRAY_2_LREAL` Funktionsblock bietet eine unkomplizierte und ereignisgesteuerte Methode, um `LREAL`-Arrays der Größe 2 zu kopieren. Seine Spezialisierung auf diesen Datentyp und diese Array-Größe macht ihn zu einem nützlichen Werkzeug für definierte Anwendungsfälle, bei denen diese genaue Datenstruktur erforderlich ist. Er trägt zur Modularität und Lesbarkeit von 4diac-Applikationen bei, indem er eine explizite Funktion für diese Art der Datenübertragung bereitstellt.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

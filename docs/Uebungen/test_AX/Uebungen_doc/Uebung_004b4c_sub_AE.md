@@ -57,3 +57,8 @@ Die Übung vertieft den Umgang mit **AE2‑Adaptern** zur bidirektionalen Ereign
 - Aufbau einer Toggle‑Logik mit `E_SR` und `E_SWITCH`  
 - Realisierung einer Verriegelung durch zyklische Ereignisverkettung  
 - Einbindung von Adapter‑Konvertierungsbausteinen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -12,3 +12,9 @@
 
 * [Automation der Zukunft](https://www.youtube.com/watch?v=gqdgimyAk60)
 * [The Dual Wi Fi Solution](https://www.youtube.com/watch?v=FLimeAu_dV4)
+
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

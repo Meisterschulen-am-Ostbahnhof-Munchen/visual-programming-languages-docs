@@ -55,3 +55,8 @@ Im Gegensatz zu Funktionsbausteinen (FBs) mit Algorithmen und Ereignissteuerung 
 
 ## Fazit
 Das globale Konstantenpaket `IDs` ist ein einfaches, aber nützliches Hilfswerkzeug für die strukturierte Programmierung in 4diac. Es erhöht die Code-Qualität, reduziert Fehler durch Tippfehler in numerischen Werten und macht die Absicht des Programmierers explizit. Seine Verwendung wird insbesondere in größeren Projekten oder bei der Arbeit mit Protokollen wie ISOBUS empfohlen, wo spezielle Bezeichnerwerte häufig vorkommen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -83,3 +83,10 @@ Diese Übung demonstriert den Einsatz eines **E_CTU** (Event-Zählers) in Kombin
 ## Zusammenfassung
 
 Die Übung veranschaulicht, wie ein **E_CTU** mit Hilfe von **E_D_FF_ANY** und **E_D_FF** sowohl einen **stabilisierten Zählwert** als auch einen **sofortigen Binärstatus** ausgeben kann. Die Ereignisverarbeitung über Split/Merge sorgt dafür, dass sowohl Überlauf- als auch Rücksetzereignisse gleichberechtigt behandelt werden. Dies ist typisch für Anwendungen, bei denen ein Zählerwert erst nach einer gewissen Beruhigungszeit weiterverarbeitet werden soll (z. B. Entprellung von Sensordaten).
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

@@ -81,3 +81,9 @@ Die Subapplikation besteht aus drei internen Funktionsbausteinen, die zusammen d
 
 ## Zusammenfassung
 Die Subapp `Uebung_012f_sub` realisiert eine kompakte Einheit zum Einlesen, Umrechnen, Speichern und Auslesen eines numerischen Wertes im nichtflüchtigen Speicher. Sie kombiniert die physikalische Konvertierung mit einer dauerhaften Speicherung und einer optionalen Qualitätsprüfung. Die Übung vermittelt praxisnahe Konzepte der industriellen Automatisierung mit 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

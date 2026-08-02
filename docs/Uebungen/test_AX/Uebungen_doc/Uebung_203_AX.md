@@ -57,3 +57,8 @@ Bei aktivem Signal an **Input_I1** wird **Output_Q1** gesetzt. Bei aktivem Signa
 
 ## Zusammenfassung
 Die Übung **Uebung_203_AX** vermittelt den Einsatz eines **prioritätsgesteuerten Interlocks** über Adapterschnittstellen. Zwei digitale Eingänge werden über den Baustein `ILOCK_SWITCH_AX` verarbeitet, der bei gleichzeitigen Signalen eine festgelegte Priorität (hier: UP vor DOWN) anwendet und die Ausgänge entsprechend schaltet. Die Implementierung erfolgt vollständig mit logiBUS-I/O-Bausteinen und zeigt eine typische Verriegelungsschaltung, wie sie in der Automatisierungstechnik häufig benötigt wird.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -81,3 +81,8 @@ Als passiver Datentyp hat `ST32X` keine eigene Zustandsmaschine. Sein "Zustand" 
 
 ## Fazit
 Der Datentyp `ST32X` bietet eine praktische Methode, um 32 einzelne boolesche Variablen zu einem kohärenten Ganzen zu verbinden. Er fördert die Code-Organisation und vereinfacht die Datenübergabe von umfangreichen Statusinformationen oder Flags. Obwohl er selbst keine aktive Logik implementiert, ist er ein nützliches Werkzeug in der Architektur komplexer Steuerungsprogramme, die auf der 4diac-IDE basieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

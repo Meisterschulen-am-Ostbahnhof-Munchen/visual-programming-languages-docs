@@ -38,3 +38,8 @@ Output service interface function block for Current Controlled PWM output data (
 | :--- | :--- | :--- |
 | QO | BOOL | Event Output Qualifier |
 | STATUS | STRING | Service Status |
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

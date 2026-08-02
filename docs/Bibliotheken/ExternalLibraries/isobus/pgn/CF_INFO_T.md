@@ -54,3 +54,8 @@ Da es sich um einen Datentyp und keinen aktiven Baustein handelt, existiert kein
 
 ## Fazit
 Der Datentyp `CF_INFO_T` ist ein grundlegender und wesentlicher Bestandteil für die Implementierung von ISOBUS-fähigen Steuerungsapplikationen in 4diac. Er bietet eine standardisierte, typsichere Methode, um alle relevanten Informationen eines Netzwerkteilnehmers zu gruppieren und zu transportieren. Durch seine Verwendung wird die Wiederverwendbarkeit von Code erhöht und die Konsistenz in der Netzwerkkommunikationslogik sichergestellt.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

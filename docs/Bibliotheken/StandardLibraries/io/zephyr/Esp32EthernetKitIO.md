@@ -59,3 +59,9 @@ Im Vergleich zu einfachen Ein-/Ausgabeblöcken bietet Esp32EthernetKitIO eine in
 
 ## Fazit
 Der Esp32EthernetKitIO-Funktionsblock stellt eine flexible und leistungsfähige Lösung für die Ansteuerung von Esp32EthernetKit-Boards in 4diac-basierten Steuerungssystemen dar. Durch die modulare Konfiguration über String-Parameter ermöglicht er eine vielseitige Nutzung in verschiedenen industriellen und IoT-Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

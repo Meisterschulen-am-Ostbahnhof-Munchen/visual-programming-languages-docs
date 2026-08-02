@@ -74,3 +74,8 @@ Der `AND_2_BOOL`-Block ist ein fundamentaler Baustein in der Steuerungs- und Aut
 
 ## Fazit
 Der `AND_2_BOOL`-Funktionsblock ist ein essentieller, zuverlässiger und einfach zu verwendender Grundbaustein für die Implementierung boolescher Logik in 4diac-basierten Steuerungsanwendungen. Seine klare, ereignisgesteuerte Schnittstelle und die deterministische Funktionsweise machen ihn zum idealen Baustein für Sicherheitsverknüpfungen, Steuerungsbedingungen und allgemeine logische Operationen. Für reine boolesche Zweier-Verknüpfungen ist er die erste Wahl.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

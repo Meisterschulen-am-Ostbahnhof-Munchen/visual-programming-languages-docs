@@ -97,3 +97,10 @@ Die Übung veranschaulicht den praktischen Einsatz eines ereignisgesteuerten Auf
 - Kombination von Hardware-Eingängen (Taster) und Ausgängen (digitaler Ausgang, Display).
 
 Voraussetzungen: Grundkenntnisse der IEC 61499 Ereignisverarbeitung und der 4diac-IDE. Die Übung kann direkt in einem Simulationsprojekt oder auf echter logiBUS-Hardware ausgeführt werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

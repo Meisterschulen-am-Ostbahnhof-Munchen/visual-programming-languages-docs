@@ -73,3 +73,8 @@ Der vorliegende Baustein ist speziell auf den Datentyp UDINT zugeschnitten und n
 
 ## Fazit
 **FIELDBUS_UDINT_TO_SIGNAL** ist ein kompakter und effizienter Funktionsblock zur Filterung von UDINT-Feldbussignalen. Durch die klare Trennung in gültige und ungültige Werte sowie die einfache Schnittstelle eignet er sich gut für robuste Automatisierungslösungen. Die Verwendung von importierten Konstanten erhöht die Wiederverwendbarkeit und Anpassbarkeit an verschiedene Feldbusprotokolle.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -82,3 +82,8 @@ Der `AR_MUX_2` ist speziell für den Einsatz mit unidirektionalen AR‑Adaptern 
 ## Fazit
 
 Der AR_MUX_2 ist ein kompakter, generischer Multiplexer für Adapter‑Signale, der eine zuverlässige und schnelle Umschaltung zwischen zwei Eingängen ermöglicht. Seine ereignisgesteuerte Arbeitsweise und die standardkonforme Schnittstelle machen ihn zu einem nützlichen Baustein in modularen Automatisierungslösungen, insbesondere in der Agrartechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

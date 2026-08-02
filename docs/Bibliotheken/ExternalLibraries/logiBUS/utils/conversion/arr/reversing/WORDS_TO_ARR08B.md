@@ -89,3 +89,9 @@ Die Implementierung ist deterministisch und benötigt nur einen Ausführungsschr
 ## Fazit
 
 Der Funktionsblock **WORDS_TO_ARR08B** ist ein kompakter, spezialisierter Baustein für die Umwandlung von vier 16‑Bit‑Wörtern in ein Little‑Endian‑Byte‑Array. Durch die klare ereignisgesteuerte Schnittstelle und die einfache Implementierung eignet er sich ideal für den Einsatz in Steuerungsanwendungen, bei denen Daten auf Byte‑Ebene für die Kommunikation oder Speicherung aufbereitet werden müssen. Er gehört zur Paketfamilie `logiBUS::utils::conversion::arr::reversing` und erweitert die 4diac‑Toolbox um eine nützliche Konvertierungsmöglichkeit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

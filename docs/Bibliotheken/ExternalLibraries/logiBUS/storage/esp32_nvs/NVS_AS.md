@@ -103,3 +103,8 @@ Ein erneutes INIT-Ereignis kann jederzeit eine Neuinitialisierung erzwingen.
 
 ## Fazit
 Der Funktionsblock **NVS_AS** stellt eine praktische, adapterbasierte Kapselung des nichtflüchtigen Speichers für SINT-Werte dar. Durch die Kombination von Initialisierungslogik, automatischer Wertrückmeldung und Adapterschnittstelle eignet er sich hervorragend für modulare IEC 61499-Projekte, die eine persistente Speicherung mit minimalem Verdrahtungsaufwand benötigen. Die Beschränkung auf den Typ SINT und die automatische GET-Nach-Initiierung sind zu beachten, erleichtern aber gleichzeitig die Handhabung in vielen Standardanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

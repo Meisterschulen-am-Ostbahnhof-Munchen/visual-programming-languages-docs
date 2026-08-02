@@ -76,3 +76,8 @@ Da der Baustein keine Zustandsmaschine definiert (ECC fehlt), existiert nur der 
 ## Fazit
 
 Der Funktionsbaustein **AB_MUX_2** stellt eine flexible und standardisierte Lösung zur Auswahl zwischen zwei Signalquellen dar. Die Verwendung von Adaptern erleichtert die Integration in komplexe 4diac‑Projekte und sorgt für eine saubere Trennung von Steuerlogik und Datenflüssen. Durch die generische Deklaration ist der Baustein wiederverwendbar und für eine Vielzahl industrieller Anwendungen geeignet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

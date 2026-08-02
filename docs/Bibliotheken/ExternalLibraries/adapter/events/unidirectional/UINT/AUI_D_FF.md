@@ -63,3 +63,8 @@ Der Zustand wechselt ausschließlich bei einer steigenden Flanke des Taktereigni
 
 ## Fazit
 Der `AUI_D_FF` stellt ein standardkonformes D‑Flipflop in der 4diac‑IDE dar, das durch die Verwendung von **Adaptern** eine modulare und wiederverwendbare Schnittstelle bietet. Er eignet sich besonders für Anwendungen, bei denen eine einheitliche, unidirektionale Verbindungsstruktur gewünscht ist, ohne auf die bewährte Flipflop‑Logik verzichten zu müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

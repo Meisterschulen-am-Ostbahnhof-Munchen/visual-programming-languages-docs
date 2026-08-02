@@ -48,3 +48,8 @@ Der FB besitzt keine interne Zustandsmaschine (ECC). Es gibt keine definierten Z
 
 ## Fazit
 Der `AW_SPLIT_5` ist ein einfacher, aber nützlicher Baustein zur Aufteilung eines AW‑Adapter‑Signals auf fünf parallele Pfade. Durch seinen generischen Aufbau kann er flexibel in unterschiedlichen Steuerungsprojekten der 4diac‑IDE eingesetzt werden. Die fehlende Ereignis- und Daten‑Schnittstelle reduziert die Komplexität auf das Wesentliche – die reine Signalvervielfältigung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

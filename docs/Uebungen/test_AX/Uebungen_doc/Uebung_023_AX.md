@@ -215,3 +215,8 @@ Die Adapterverbindungen sind im Netzwerk wie folgt verknüpft:
 ## Zusammenfassung
 
 Die Übung „Spiegelabfolge (3) – AX Variante“ demonstriert eine sequenzielle Steuerung für zwei Zylinder mit Hilfe von SR-Speicherbausteinen und Ereignisverteilern. Durch die AX_SPLIT-Adapter werden beim Drücken eines Softkeys gleichzeitig ein SR zurückgesetzt und ein weiteres SR gesetzt – dadurch wird die „Spiegelung“ der Bewegung realisiert. Das Programm besteht aus einer klaren Trennung von Ausfahr- und Einfahrsequenz und ermöglicht ein schrittweises Verständnis der Signalverkettung in der Automatisierungstechnik. Der Einsatz der logiBUS-Ausgänge verbindet die Steuerung direkt mit der Peripherie.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -72,3 +72,8 @@ Es gibt keine weiteren Zustände, keine Verzweigungen oder Zeitüberwachungen.
 
 ## Fazit
 `SET_ANY` ist ein einfacher, aber flexibler Funktionsblock zum gezielten Überschreiben von Variablen in IEC 61499. Die Verwendung des generischen Typs `ANY` und des InOut-Parameters macht ihn universell einsetzbar, insbesondere in Szenarien, in denen zur Laufzeit Werte in bestehende Speicherstellen geschrieben werden müssen. Dank seiner minimalen Zustandslogik eignet er sich für zeitkritische Anwendungen oder als Grundbaustein für komplexere Datenflussstrukturen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

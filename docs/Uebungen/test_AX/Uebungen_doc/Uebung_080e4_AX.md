@@ -78,3 +78,9 @@ Die Subapplikation enthält keine eigenen Unterbausteine. Sie setzt sich aus vor
 ## Zusammenfassung
 
 Die Übung `Uebung_080e4_AX` demonstriert einen Aufwärtszähler, dessen Ausgang durch ein D‑Flipflop (Ereignisbremse) entkoppelt und dessen Zählwert durch einen weiteren D‑Flipflop mit Hysterese und Mindestzeit gefiltert wird. Dadurch wird ein stabiler, geglätteter Zählerstand sowohl digital als auch numerisch ausgegeben. Die Schaltung eignet sich besonders für Anwendungen, in denen kurze Störungen oder schnelle Zählereignisse unterdrückt werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -76,3 +76,9 @@ Diese Übung demonstriert das Einlesen eines Strings von einer ISOBUS-Variablen 
 ## Zusammenfassung
 
 Die Übung `Uebung_012l` zeigt, wie ein ISOBUS‑String in den NVS‑Speicher des ESP32 geschrieben und beim Systemstart wieder ausgelesen wird. Der Wert bleibt dauerhaft erhalten, auch nach einem Neustart oder Spannungsausfall. Die Applikation besteht aus drei Funktionsbausteinen, die über Ereignis- und Datenverbindungen zusammenarbeiten und demonstriert einen typischen Anwendungsfall für persistenten Variablenzugriff in der Landtechnik‑Automatisierung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

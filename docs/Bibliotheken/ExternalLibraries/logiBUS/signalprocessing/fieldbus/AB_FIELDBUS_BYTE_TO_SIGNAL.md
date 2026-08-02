@@ -79,3 +79,8 @@ Einfachere **Mirror**-Bausteine leiten ein Signal ohne Gültigkeitsprüfung weit
 
 ## Fazit
 Der `AB_FIELDBUS_BYTE_TO_SIGNAL` ist ein spezialisierter Baustein für die sichere Weitergabe von Feldbus-Byte-Signalen. Durch die Kombination aus Spiegelung und Gültigkeitsprüfung eignet er sich ideal für Echtzeit-Anwendungen, bei denen nur valide Daten weiterverarbeitet werden dürfen. Die Adapter-basierte Schnittstelle erlaubt eine einfache Integration in bestehende 4diac-Projekte.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

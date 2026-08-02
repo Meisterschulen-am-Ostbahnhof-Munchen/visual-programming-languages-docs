@@ -54,3 +54,8 @@ Der Baustein besitzt keine definierten Zustände, da er keine ereignisgesteuerte
 
 ## Fazit
 Der AIWS_SPLIT_6 ist ein einfacher, aber nützlicher Baustein zur Vervielfachung von AIWS-Signalen in IEC 61499-basierten Steuerungen. Seine generische Natur und die klare Adapter-Schnittstelle erleichtern die Wiederverwendung und Integration in größere Projekte.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

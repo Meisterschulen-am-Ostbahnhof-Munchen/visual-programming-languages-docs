@@ -100,3 +100,8 @@ Im Netzwerk der SubApp werden folgende Bausteine eingesetzt:
 Die Übung **Uebung_213b_ALR** demonstriert den Aufbau eines adaptierten IEC‑Vorwärtszählers mit konfigurierbarem Sollwert und Ausgabe des Zählerstands auf einem Terminal.  
 Der Zähler wird über zwei digitale Eingänge (I1 = zählen, I2 = rücksetzen) gesteuert. Der Ausgang Q schaltet, sobald der Zählerstand 5 erreicht. Ein analoger Konverter wandelt den Zählerstand in einen LREAL‑Wert um, der auf einem Terminal‑Objekt visualisiert wird.  
 Die Übung eignet sich gut zum Verständnis von Adapter‑Verbindungen, Konvertierungsbausteinen und der Integration von logiBUS‑Hardware in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

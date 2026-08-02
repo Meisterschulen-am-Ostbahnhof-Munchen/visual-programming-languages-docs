@@ -80,3 +80,8 @@ Die Übung vermittelt den Umgang mit dem IEC 61131-3-Rückwärtszähler als Adap
 - die Einschränkungen der verwendeten Konvertierung (`ADI_TO_AUDI`) bei negativen Werten.
 
 Der Aufbau ist als Subapplikation realisiert und kann direkt in eine 4diac-IDE-Umgebung geladen und getestet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

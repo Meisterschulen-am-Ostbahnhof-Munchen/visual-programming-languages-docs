@@ -81,3 +81,8 @@ Die Verbindungen im Überblick:
 ## Zusammenfassung
 
 Die Übung **Uebung_214_AULI** vermittelt den Umgang mit dem IEC-61131-3-konformen Vorwärtszähler **AULI_FB_CTU** in einer Adapter-basierten Umgebung. Sie zeigt, wie ein Zähler über digitale Eingänge gesteuert, sein Wert über Konvertierungsbausteine aufbereitet und sowohl auf einem digitalen Ausgang als auch auf einem Terminal ausgegeben wird. Die Integration von Initialisierungslogik und die flexible Anbindung über Adapter machen diese Übung zu einer soliden Grundlage für komplexere Automatisierungsaufgaben mit 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -75,3 +75,8 @@ Fügen Sie die SubApp `Uebung_004b6` in ein 4diac-Projekt ein, verbinden Sie die
 
 ## Zusammenfassung
 Die Übung demonstriert einen Toggle-Flip-Flop, der nur bei aktivem digitalen Eingang seinen Zustand wechselt. Durch die Kombination von `E_PERMIT` und `E_T_FF` kann eine Freigabe für den Takt realisiert werden – nützlich für Anwendungen wie entprellte Taster oder Betriebsartenumschaltung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

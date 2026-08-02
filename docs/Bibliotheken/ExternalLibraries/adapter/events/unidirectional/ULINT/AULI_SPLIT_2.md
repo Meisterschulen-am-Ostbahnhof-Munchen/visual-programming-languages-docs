@@ -67,3 +67,8 @@ Während **AULI_SPLIT_2** eine feste 1‑zu‑2‑Aufteilung vornimmt, erlauben 
 ## Fazit
 
 Der **AULI_SPLIT_2** ist ein minimaler und effizienter Baustein zur Signalvervielfachung unidirektionaler AULI‑Adapter. Aufgrund seiner passiven, zustandslosen Natur eignet er sich ideal für Echtzeitanwendungen, in denen Kopien eines Datenstroms ohne zusätzliche Latenz oder Logik benötigt werden. Seine generische Implementierung erleichtert den Einsatz in unterschiedlichen Entwicklungswerkzeugen und Bibliotheken.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

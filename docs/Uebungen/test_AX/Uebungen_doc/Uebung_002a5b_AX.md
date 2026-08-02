@@ -78,3 +78,8 @@ Die Übung `Uebung_002a5b_AX` realisiert eine Steuerungslogik, bei der die Zust�
 
 ## Zusammenfassung
 Die Übung `Uebung_002a5b_AX` bietet eine praktische Einführung in die Verknüpfung von digitalen I/O-Signalen. Sie demonstriert, wie mithilfe einer logischen OR-Operation mehrere Eingänge zu einem einzigen Steuersignal zusammengefasst werden können. Dieses Signal wird anschließend gesplittet, um eine synchronisierte Ansteuerung von mehreren Ausgängen zu ermöglichen. Das Kernprinzip ist, dass alle drei Ausgänge (Q1, Q2, Q3) aktiv werden, sobald mindestens einer der drei Eingänge (I1, I2, I3) aktiv ist. Diese Art der Gruppensteuerung ist eine grundlegende Funktion in vielen Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

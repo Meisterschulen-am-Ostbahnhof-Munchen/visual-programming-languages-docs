@@ -68,3 +68,8 @@ Nicht zutreffend, da `ST16B` ein Datentyp ist und keine internen Zustände im Si
 
 ## Fazit
 Der Datentyp `ST16B` ist eine einfache, aber effektive Struktur zum Umgang mit Datenblöcken fester Größe von 16 Bytes. Er bietet eine klare und lesbare Möglichkeit, auf individuelle Bytes innerhalb eines solchen Blocks zuzugreifen. Obwohl er kein Funktionsblock ist und keine eigene Logik implementiert, ist er ein wertvolles Werkzeug in 4diac für Anwendungen, die eine genaue Kontrolle über die Byte-Ebene erfordern, insbesondere in der Kommunikation und Hardware-Interaktion.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

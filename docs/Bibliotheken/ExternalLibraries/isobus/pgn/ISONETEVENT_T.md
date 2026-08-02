@@ -43,3 +43,8 @@ Innerhalb der 4diac-Typbibliothek existieren verschiedene strukturierte Datentyp
 
 ## Fazit
 Der Datentyp `ISONETEVENT_T` ist ein essentielles Hilfsmittel für die Entwicklung von ISOBUS-fähigen Applikationen in 4diac, die auf Netzwerkereignisse reagieren müssen. Er bietet eine standardisierte, informationsreiche Schnittstelle, um Callback-basierte Ereignisbenachrichtigungen aus dem ISOBUS-Netzwerkstack zu empfangen und zu verarbeiten. Seine Verwendung fördert eine entkoppelte und ereignisgesteuerte Architektur in der Steuerungssoftware.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

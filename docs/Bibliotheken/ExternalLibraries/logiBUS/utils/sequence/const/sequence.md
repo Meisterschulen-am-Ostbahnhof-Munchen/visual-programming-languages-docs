@@ -40,3 +40,9 @@ Die Datei definiert Konstanten, die zur Kompilierzeit durch ihre Werte ersetzt w
 
 ## Fazit
 Die globale Konstantendatei `sequence` ist ein nützliches Hilfsmittel zur Strukturierung von Steuerungsanwendungen. Durch die Bereitstellung von sprechenden Namen für Zustände und einen speziellen Zeitwert trägt sie wesentlich zur Erzeugung von klarem, wartbarem und robustem Code bei. Ihre Verwendung wird insbesondere bei der Implementierung von Schrittketten und zustandsbasierten Steuerungen empfohlen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

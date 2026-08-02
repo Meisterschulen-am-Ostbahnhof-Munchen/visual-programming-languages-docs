@@ -67,3 +67,8 @@ Im Vergleich zu standardmäßigen digitalen Eingangsblöcken bietet `logiBUS_2_C
 
 ## Fazit
 Der `logiBUS_2_CAN_IX` Funktionsblock stellt eine robuste und zuverlässige Schnittstelle für die Integration von CAN-basierten digitalen Eingangssignalen in 4diac-Steuerungssysteme dar. Seine erweiterte Fehlerbehandlung und Statusrückmeldung machen ihn besonders geeignet für anspruchsvolle industrielle Anwendungen, wo zuverlässige Kommunikation mit verteilten I/O-Systemen erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

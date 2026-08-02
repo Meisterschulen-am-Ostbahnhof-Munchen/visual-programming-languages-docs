@@ -39,3 +39,8 @@ Als passiver Datentyp, der lediglich eine Datenstruktur definiert, besitzt `ST04
 
 ## Fazit
 `ST04B` ist ein grundlegender, aber nützlicher strukturierter Datentyp in 4diac, der die Verwaltung von vier Bytes als kohärente Einheit vereinfacht. Er verbessert die Code-Lesbarkeit und Modularität, insbesondere in Anwendungen, die den Austausch oder die Verarbeitung von Byte-sequenzierten Daten erfordern. Seine einfache Definition macht ihn zu einem flexiblen Baustein für vielfältige Datenmanagementaufgaben in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

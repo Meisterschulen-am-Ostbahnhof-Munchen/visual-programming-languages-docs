@@ -88,3 +88,8 @@ Der AD_MUX_4 zeichnet sich durch seine Adapter-basierte, unidirektionale Signalw
 ## Fazit
 
 Der **AD_MUX_4** ist ein kompakter und flexibler Adapter-Multiplexer, der vier Eingangskanäle über einen numerischen Index auf einen Ausgangs-Pfad schaltet. Seine ereignisgesteuerte Arbeitsweise und die Adapter‑Schnittstellen machen ihn ideal für modulare Automatisierungssysteme, die eine dynamische Signalauswahl erfordern. Durch die einfache Struktur lässt er sich leicht in übergeordnete Steuerungslogiken integrieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

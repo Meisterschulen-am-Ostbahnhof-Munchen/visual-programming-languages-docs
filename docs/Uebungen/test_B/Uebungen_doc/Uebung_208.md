@@ -72,3 +72,8 @@ Diese Übung demonstriert die Realisierung einer gegenseitigen Verriegelung (Int
 ## Zusammenfassung
 
 In dieser Übung wurde eine gegenseitige Verriegelung zweier Ausgänge mit dem Funktionsbaustein `ILOCK_FB_SR` realisiert. Die beiden ILOCK-Bausteine sind über einen Adapter so verbunden, dass nur einer der Ausgänge aktiv sein kann – ein typisches Anwendungsbeispiel für Verriegelungen in der Automatisierungstechnik. Die Übung vermittelt den Umgang mit digitalen Ein-/Ausgabemodulen und zeigt, wie sich komplexe Logiken wie Set-Dominanz und Interlocking in einem 4diac-Netzwerk abbilden lassen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

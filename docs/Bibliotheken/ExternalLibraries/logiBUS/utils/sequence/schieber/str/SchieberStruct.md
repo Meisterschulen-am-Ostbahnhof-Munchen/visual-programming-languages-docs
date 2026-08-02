@@ -45,3 +45,8 @@ Im Gegensatz zu Funktionsblöcken wie `E_SR` (Speicherglied) oder `E_CTUD` (Zäh
 
 ## Fazit
 Der `SchieberStruct` Datentyp ist ein nützliches Hilfskonstrukt für die strukturierte und typsichere Handhabung von Zustandsinformationen für Schieberaktoren. Durch die Kapselung der relevanten Objekt-IDs in einer einzigen Struktur wird die Konfiguration und Wartung von Anwendungen vereinfacht, die solche Aktoren steuern und visualisieren. Seine Verwendung fördert einen klaren und konsistenten Programmierstil.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

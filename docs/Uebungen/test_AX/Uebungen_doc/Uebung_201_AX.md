@@ -83,3 +83,8 @@ Der Ablauf der Übung ist wie folgt:
 ## Zusammenfassung
 
 In dieser Übung wird die gegenseitige Verriegelung zweier Ausgänge mithilfe des Funktionsbausteins `ILOCK_BLOCK_AX` umgesetzt. Die Struktur zeigt eine typische Anwendung von Adapterverbindungen zur Steuerung von Ein- und Ausgängen in der 4diac-IDE. Die Verriegelung verhindert, dass beide Ausgänge gleichzeitig aktiv werden – eine wichtige Sicherheitsfunktion für viele industrielle Steuerungsaufgaben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

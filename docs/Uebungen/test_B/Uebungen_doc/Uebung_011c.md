@@ -68,3 +68,8 @@ Die Übung **Uebung_011c** zeigt die grundlegende Datenflussverarbeitung mit 4di
 - Ereignisgesteuerte Verkettung von FB-Instanzen.
 
 Dieses einfache Durchschleifen kann als Basis für komplexere Signalverarbeitungsketten dienen, bei denen Werte zwischen verschiedenen Busteilnehmern ausgetauscht und gegebenenfalls skaliert oder umgewandelt werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

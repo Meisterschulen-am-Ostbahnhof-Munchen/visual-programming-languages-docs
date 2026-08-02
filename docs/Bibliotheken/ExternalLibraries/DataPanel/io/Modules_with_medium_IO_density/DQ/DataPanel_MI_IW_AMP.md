@@ -77,3 +77,8 @@ Im Vergleich zu einem reinen Digital-Eingangs-FB bietet dieser Baustein eine ana
 ## Fazit
 
 Der Funktionsblock `DataPanel_MI_IW_AMP` stellt eine standardisierte und flexible Schnittstelle zur Erfassung von Stromwerten in Automatisierungssystemen dar. Durch die klar definierten Ereignisse und Parameter lässt er sich einfach in 4diac-Projekte einbinden und bietet sowohl synchrone als auch asynchrone Benachrichtigungen über Messwertänderungen. Die detaillierte Konfiguration mittels Adresse, Kanal und Hysterese ermöglicht eine anpassungsfähige Nutzung in unterschiedlichen Hardware-Umgebungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

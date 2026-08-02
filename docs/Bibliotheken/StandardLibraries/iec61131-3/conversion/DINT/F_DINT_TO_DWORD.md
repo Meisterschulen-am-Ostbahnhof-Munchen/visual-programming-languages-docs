@@ -46,3 +46,8 @@ Der Funktionsblock führt die Konvertierung von DINT zu DWORD durch, wenn das Er
 
 ## Fazit
 Der Funktionsblock `F_DINT_TO_DWORD` ist ein effizientes und zuverlässiges Werkzeug für die Konvertierung von vorzeichenbehafteten zu vorzeichenlosen 32-Bit Werten. Seine einfache Handhabung und direkte Integration in 4diac-IDE machen ihn zu einer idealen Lösung für entsprechende Anwendungsfälle.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

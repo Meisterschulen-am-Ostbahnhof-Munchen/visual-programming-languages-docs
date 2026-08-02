@@ -95,3 +95,8 @@ Die Übung realisiert einen vorwärtszählenden Zähler mit Terminalausgabe. Die
 
 ## Zusammenfassung
 Die Übung `Uebung_212b_ALR` demonstriert einen vollständig konfigurierten Vorwärtszähler mit festem Preset-Wert und physikalischer Ausgabe. Sie kombiniert digitale Ein-/Ausgänge, einen Zählbaustein, Konvertierungsbausteine und eine Terminalausgabe zu einem funktionsfähigen Automatisierungsbeispiel. Die Kommentare geben praktische Hinweise zur Optimierung (Ereignisreduzierung) und weisen auf mögliche Randbedingungen (negative Werte) hin.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -56,3 +56,8 @@ Zusätzlich verarbeitet InputNumber_I1 numerische Werte über Konvertierungsbaus
 
 ## Zusammenfassung
 Diese Übung vermittelt praktische Erfahrungen mit Signalverteilung und -kombination unter Verwendung von DEMUX- und MUX-Bausteinen. Die Integration verschiedener Signalverarbeitungsmodi (rastend, tastend, verzögert) in Subapplikationen zeigt eine flexible und modulare Programmstruktur, die für komplexere Steuerungsaufgaben grundlegend ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

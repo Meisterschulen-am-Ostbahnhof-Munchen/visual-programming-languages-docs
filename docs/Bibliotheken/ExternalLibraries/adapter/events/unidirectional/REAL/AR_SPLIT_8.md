@@ -45,3 +45,8 @@ Der Funktionsblock besitzt kein explizites Zustandsdiagramm und arbeitet zustand
 
 ## Fazit
 Der AR_SPLIT_8 ist ein einfacher, aber äußerst nützlicher Baustein zum Verteilen von unidirektionalen AR-Adaptersignalen auf bis zu acht parallele Pfade. Seine generische Implementierung ermöglicht den flexiblen Einsatz in verschiedenen Automatisierungsprojekten, ohne dass zusätzliche Logik zur Signalvervielfachung implementiert werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -54,3 +54,8 @@ Im Gegensatz zu klassischen IEC‑61131-Multiplikationsbausteinen (z. B. `MUL`
 
 ## Fazit
 Der FB **AUDI_MUL_4** ist ein spezialisierter, generischer Multiplikationsbaustein für vier Eingangswerte. Durch die Nutzung von Adaptern und die generische Auslegung eignet er sich besonders für modulare, wiederverwendbare Automatisierungslösungen, bei denen Flexibilität und Skalierbarkeit im Vordergrund stehen. Die einfache Schnittstelle ohne Ereignisse macht die Integration in datenorientierte Architekturen unkompliziert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

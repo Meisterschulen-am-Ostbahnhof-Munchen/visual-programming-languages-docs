@@ -44,3 +44,8 @@ Der gesamte Ablauf wiederholt sich mit jedem Takt von `E_CYCLE` (alle 1 ms), s
 ## Zusammenfassung
 
 Die Übung demonstriert die Kombination von zyklischer Ereignissteuerung, Zufallswertgenerierung, Flip‑Flop mit Hysterese, Typkonvertierung und Vergleichslogik zur Erzeugung eines dynamischen Ausgangssignals. Lernziele sind das Verständnis von Ereignis‑Daten‑Verbindungen, die Parametrierung von Zeit‑ und Hysterese‑Bausteinen sowie die Zusammenschaltung mehrerer Funktionsbausteine zu einer funktionalen Einheit. Voraussetzung sind Grundkenntnisse in IEC 61499 und der 4diac‑IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

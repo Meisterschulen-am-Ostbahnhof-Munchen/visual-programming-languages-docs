@@ -108,3 +108,8 @@ Der **AI_FB_CTD** hebt sich durch die konsequente Adapter-Nutzung hervor, was ih
 ## Fazit
 
 Der `AI_FB_CTD` ist ein flexibler, adapterbasierter Abwärtszähler für Integer-Werte, der die bewährte Zähllogik aus IEC 61131 in eine moderne, modulare Schnittstellenlandschaft überführt. Er eignet sich hervorragend für den Einsatz in verteilten Steuerungssystemen nach IEC 61499, bei denen Kapselung und Wiederverwendbarkeit im Vordergrund stehen. Die einfache Handhabung (drei Eingangsereignisse, zwei Ausgangsadapter) und die klare Dokumentation machen ihn zu einem soliden Grundbaustein für Zähleranwendungen. Empfohlen wird bei Bedarf an Änderungsdetektion die Vorschaltung eines `AX_D_FF`.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

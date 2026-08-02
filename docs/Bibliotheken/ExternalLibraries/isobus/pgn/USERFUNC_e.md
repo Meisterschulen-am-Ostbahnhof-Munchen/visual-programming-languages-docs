@@ -43,3 +43,8 @@ Im Gegensatz zu Funktionsblöcken, die eine aktive Logik enthalten, ist `USERFUN
 
 ## Fazit
 Die globale Konstante `USERFUNC_e` ist ein essentielles Hilfsmittel für die Entwicklung lesbarer und wartbarer ISOBUS-Anwendungen in 4diac. Sie abstrahiert die rohen, im Standard definierten numerischen Werte für Gerätefunktionen durch aussagekräftige Bezeichner und trägt so maßgeblich zur Vermeidung von Fehlern und zur Verbesserung der Codequalität bei. Ihre Verwendung wird für alle Projekte empfohlen, die mit ISOBUS-Gerätekommunikation arbeiten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -50,3 +50,8 @@ Die Funktionsbausteine sind über Adapter-Schnittstellen verbunden:
 ## Zusammenfassung
 
 Die Übung `Uebung_012d_AR` realisiert eine einfache Pipeline: physikalischer Eingang → Speicherung im NVS → physikalischer Ausgang. Die Datenweitergabe erfolgt ausschließlich über AR-Adapter, sodass keine komplexen Verbindungen zwischen einzelnen Ein-/Ausgängen nötig sind. Der gespeicherte Wert bleibt auch nach einem Neustart erhalten. Die Übung vermittelt den Umgang mit NVS-Speicher und adapterbasierter Kommunikation in der 4diac-Entwicklungsumgebung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

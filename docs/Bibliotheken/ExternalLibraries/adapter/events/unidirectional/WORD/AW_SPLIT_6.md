@@ -61,3 +61,8 @@ Im Vergleich zu einem **AW_SPLIT_2** oder **AW_SPLIT_4** bietet der vorliegende 
 ## Fazit
 
 Der **AW_SPLIT_6** ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfältigung eines unidirektionalen AW‑Signals auf sechs Ausgänge. Durch seine generische Natur und die Adapter‑basierte Schnittstelle fügt er sich nahtlos in eine 4diac‑Umgebung ein. Er empfiehlt sich für alle Anwendungen, bei denen ein einzelnes Signal ohne Umwege mehrfach benötigt wird.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

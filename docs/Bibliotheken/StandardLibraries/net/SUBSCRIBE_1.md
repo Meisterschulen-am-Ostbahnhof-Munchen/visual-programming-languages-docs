@@ -56,3 +56,8 @@ Im Vergleich zu anderen Kommunikationsblöcken bietet SUBSCRIBE_1 eine spezialis
 
 ## Fazit
 Der SUBSCRIBE_1 Funktionsblock ist ein essentieller Baustein für verteilte Systeme in 4diac, der eine robuste und flexible Kommunikation zwischen verschiedenen Komponenten ermöglicht. Seine einfache Schnittstelle und die Unterstützung beliebiger Datentypen machen ihn vielseitig einsetzbar in verschiedenen Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

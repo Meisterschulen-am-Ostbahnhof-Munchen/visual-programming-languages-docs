@@ -85,3 +85,8 @@ Da es sich um einen Composite FB handelt, wird der Zustand primär durch die int
 ## Fazit
 
 Der **NumericValue_IDA** ist ein spezialisierter Schnittstellenbaustein für ISOBUS-Anwendungen in 4diac. Durch die Verwendung eines Adapters für die Datenausgabe ermöglicht er eine kompakte und übersichtliche Verschaltung von numerischen Eingabewerten im Funktionsplan. Er eignet sich ideal für Entwickler, die eine strukturierte und modulare Anwendungsarchitektur bevorzugen und numerische Eingaben vom Universal Terminal verarbeiten müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

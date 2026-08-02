@@ -78,3 +78,8 @@ Die Subapplikation realisiert somit einen geschlossenen Kreislauf: Jeder neu ein
 ## Zusammenfassung
 
 Die Übung `Uebung_012k_sub` zeigt, wie eine Subapplikation aus mehreren vordefinierten Funktionsbausteinen aufgebaut wird, um einen String-Eingang in einer INI-ähnlichen Struktur zu speichern und auszugeben. Durch die Kombination von Ereignis- und Datenverbindungen wird eine robuste Verarbeitungskette erzeugt, die Initialisierung, Speichern und Abrufen integriert. Dies ist ein typisches Muster für die persistente Datenverwaltung in Automatisierungssystemen auf Basis des IEC 61499 Standards.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -29,3 +29,8 @@ Manipulation von Ereignisströmen unter Verwendung von `E_T_FF` und `E_PERMIT`.
 ## Anwendungsbeispiel
 
 Unterdrückung von Prell-Effekten oder grobe Skalierung von schnellen Sensorsignalen, um die Rechenlast der nachfolgenden Logik zu verringern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

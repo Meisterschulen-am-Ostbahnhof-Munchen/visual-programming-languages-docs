@@ -40,3 +40,8 @@ Eine Eventverbindung zwischen dem Ereignisausgang `INITO` von `DigitalInput_I1` 
 ## Zusammenfassung
 
 Die Übung `Uebung_001c2_AX` zeigt eine grundlegende Schaltung zur Negation eines digitalen Eingangs auf einen Ausgang. Durch die geschickte Nutzung einer Ereignisrückkopplung wird der Ausgang bereits beim Start der Steuerung mit dem korrekten Wert belegt, was die Robustheit der Applikation erhöht. Die verwendeten Bausteine (digitaler Eingang, Negationsadapter, digitaler Ausgang) sind typische Komponenten der logiBUS-Bibliothek und lassen sich flexibel in komplexere Automatisierungslösungen einbetten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -77,3 +77,8 @@ Der wesentliche Unterschied ist der Einsatz von Adaptern, was eine losere Kopplu
 ## Fazit
 
 **UDINT_AUDI_GE** ist ein flexibler Vergleichsbaustein für „größer oder gleich“, der durch die Verwendung von unidirektionalen Adaptern besonders in modularen, adapterbasierten Architekturen (z. B. Eclipse 4diac) glänzt. Seine einfache Ereignissteuerung und die Unterstützung elementarer Datentypen machen ihn zu einem universellen Werkzeug für zahlreiche Vergleichsaufgaben in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

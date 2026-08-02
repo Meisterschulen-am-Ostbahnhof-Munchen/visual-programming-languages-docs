@@ -61,3 +61,8 @@ Da AS_SPLIT_5 für eine spezifische Adapterarchitektur (unidirectional AS) konzi
 ## Fazit
 
 Der AS_SPLIT_5 ist ein einfacher, aber effektiver Funktionsblock zur Vervielfachung eines AS-Adaptersignals auf fünf parallele Ausgänge. Durch seine generische Implementierung und klare Schnittstelle eignet er sich gut für modulare Automatisierungslösungen nach IEC 61499.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -37,3 +37,8 @@ Die Logik entspricht ansonsten der Übung 012:
 3.  **Refresh**: `CbVtStatus -> Q_NumericValue`.
 
 INI-Dateien sind besonders nützlich, wenn Parameter extern (z.B. über einen PC oder Web-Interface) ausgelesen oder editiert werden sollen, da sie in einem für Menschen lesbaren Textformat vorliegen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -85,3 +85,8 @@ Im Gegensatz zu einem `E_CYCLE`- oder `E_DELAY`-FB, die einfache periodische ode
 
 ## Fazit
 Der `sequence_T_08_loop` ist ein robuster und einfach zu konfigurierender Funktionsblock für zeitgesteuerte Sequenzen mit fester Schrittanzahl. Seine klare Struktur aus Zuständen, konfigurierbaren Verweilzeiten und dedizierten Ausgängen macht ihn besonders geeignet für standardisierte Steuerungsaufgaben in der Automatisierungstechnik, bei denen Zuverlässigkeit und leichte Parametrierung im Vordergrund stehen. Die Integration eines Timer-Adapters entkoppelt die Zeitmessung von der FB-Logik und fördert die Wiederverwendbarkeit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

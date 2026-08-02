@@ -96,3 +96,8 @@ Der vorliegende Baustein ist speziell für die DataPanel‑MI‑Hardware optimie
 ## Fazit
 
 Der **DataPanel_MI_IW_0_10V**‑Funktionsblock stellt eine robuste und flexibel konfigurierbare Schnittstelle zur Erfassung analoger 0‑10 V‑Signale im HR Agrartechnik DataPanel‑System dar. Durch die Möglichkeit der Kanalkonfiguration, Adressierung und Hysterese eignet er sich für präzise Messaufgaben in der landwirtschaftlichen Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

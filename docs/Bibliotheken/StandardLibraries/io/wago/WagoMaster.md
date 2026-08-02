@@ -60,3 +60,8 @@ Im Vergleich zu generischen Bus-Master-Bausteinen bietet der WagoMaster spezifis
 
 ## Fazit
 Der WagoMaster stellt einen zuverlässigen und spezialisierten Baustein für die Integration von Wago-Bussystemen in 4diac-basierte Steuerungssysteme dar. Durch seine konfigurierbaren Parameter und detaillierte Statusrückmeldung eignet er sich besonders für anspruchsvolle Industrieautomationsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

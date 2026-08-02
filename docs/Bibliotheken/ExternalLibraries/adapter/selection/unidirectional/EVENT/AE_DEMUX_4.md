@@ -64,3 +64,8 @@ Der FB verfügt über keine expliziten Zustände; die Funktionalität ist rein k
 
 ## Fazit
 Der `AE_DEMUX_4` stellt einen kompakten und generischen Demultiplexer für Adapter-basierte Kommunikation dar. Er ermöglicht die dynamische Weiterleitung eines gesamten Adapter-Interfaces an einen von vier Ausgängen und eignet sich besonders für modulare und wiederverwendbare Automatisierungslösungen in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

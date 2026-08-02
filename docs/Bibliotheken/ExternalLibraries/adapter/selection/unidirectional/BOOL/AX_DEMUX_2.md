@@ -53,3 +53,8 @@ Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)
 
 ## Fazit
 Der AX_DEMUX_2 stellt einen effizienten und standardkonformen Baustein für die Datenverteilung in IEC 61499-basierten Automatisierungssystemen dar. Seine generische Natur und Adapter-basierte Architektur machen ihn zu einer flexiblen Lösung für verschiedene Demultiplex-Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -85,3 +85,8 @@ Die Datenverbindungen übertragen die entsprechenden Werte:
 ## Zusammenfassung
 
 Die Übung realisiert eine zyklische Sinusgenerierung und sendet die Werte über CAN-Bus an einen PCAN Explorer. Durch die Verkettung mehrerer Funktionsbausteine wird der gesamte Weg vom analogen Signal bis zur seriellen CAN-Nachricht abgebildet. Der Subbaustein `Uebung_126b2_sub` kapselt diese Logik und kann in übergeordneten Anwendungen wiederverwendet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

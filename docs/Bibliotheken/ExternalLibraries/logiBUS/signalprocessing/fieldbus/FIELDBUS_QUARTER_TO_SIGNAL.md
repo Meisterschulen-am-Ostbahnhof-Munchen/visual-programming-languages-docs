@@ -85,3 +85,8 @@ Der vorliegende Baustein besticht durch seine einfache, auf Feldbustypen zugesch
 ## Fazit
 
 `FIELDBUS_QUARTER_TO_SIGNAL` ist ein kompakter, effizienter Funktionsblock zur Validierung von 8‑Bit‑Feldbussignalen. Er trennt zuverlässig gültige Messwerte von als ungültig markierten Werten und stellt die Gültigkeit als separates Boolesches Signal bereit. Dank seiner schlanken Zustandslogik und der Verwendung importierter Konstanten lässt er sich flexibel in unterschiedliche Signalverarbeitungsketten integrieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -66,3 +66,8 @@ Es gibt keine weiteren internen Zustände.
 
 ## Fazit
 `AX_AUDI_SEL_AUDI` ist ein kompakter, ereignisgesteuerter Selektionsbaustein, der die IEC‑Selektionslogik in eine adapterbasierte Umgebung einbettet. Durch die klare Trennung von Dateneingängen, Steueradapter und Ausgabeadapter eignet er sich besonders für modulare, wiederverwendbare Automatisierungslösungen im Umfeld der 4diac‑IDE. Die Beschränkung auf zwei Eingänge und die Verwendung von Standard‑Typen garantieren eine einfache Integration und vorhersagbares Laufzeitverhalten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

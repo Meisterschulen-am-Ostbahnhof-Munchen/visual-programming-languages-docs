@@ -53,3 +53,8 @@ Im Vergleich zu einfachen IO-Bausteinen bietet EliteBoard eine strukturierte Ver
 
 ## Fazit
 Der EliteBoard-Funktionsblock stellt eine flexible und skalierbare Lösung für die Anbindung von EliteBoard-Hardware in 4diac-basierten Steuerungssystemen dar. Durch die Verwendung standardisierter Adapter-Schnittstellen und die Unterstützung multipler Ports ermöglicht er eine modulare und wartbare Systemarchitektur für industrielle Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

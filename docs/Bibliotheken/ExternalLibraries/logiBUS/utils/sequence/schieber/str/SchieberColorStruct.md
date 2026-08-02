@@ -47,3 +47,8 @@ Im Gegensatz zu Funktionsblöcken (FBs) wie `E_SR` oder `E_D_FF`, die eine Logik
 
 ## Fazit
 Die `SchieberColorStruct` ist ein einfacher, aber nützlicher strukturierter Datentyp, der die Verwaltung und den Austausch von Farbwerten für die Zustandsdarstellung eines Schiebers standardisiert. Sie fördert saubere Schnittstellen, erleichtert die Wiederverwendung und trägt durch die Verwendung initialer Standardwerte und importierter Konstanten zur Konsistenz innerhalb eines Projekts bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

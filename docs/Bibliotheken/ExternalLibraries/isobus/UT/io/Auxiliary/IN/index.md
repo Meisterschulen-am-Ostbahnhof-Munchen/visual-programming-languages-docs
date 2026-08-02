@@ -14,3 +14,9 @@
 * [Löten wie ein Profi](https://www.youtube.com/watch?v=8ulMWcxaB-c)
 * [Via in Pad Plated Over](https://www.youtube.com/watch?v=E0vbluaWA8Y)
 
+
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -79,3 +79,8 @@ Eine detaillierte Zustandsgraphik ist nicht erforderlich, da der Baustein atomar
 
 ## Fazit
 Der **AULI_DEMUX_4** ist ein kompakter, generischer Demultiplexer für AULI‑Adapter, der sich ideal für die gezielte Verteilung von Datenströmen in der Agrartechnik eignet. Dank seiner einfachen Ereignissteuerung und Adapterschnittstelle lässt er sich leicht in bestehende 4diac‑Prozessketten integrieren. Die generische Natur erlaubt Anpassungen ohne Änderung der Bausteinlogik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

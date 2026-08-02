@@ -79,3 +79,8 @@ Im IEC‑61499‑Standard existieren verschiedene Multiplexer‑Funktionsblöcke
 
 ## Fazit
 Der **AQ_MUX_2** ist ein praktischer, generischer Multiplexer‑Baustein für analoge Ausgangswerte. Seine adapterbasierte Schnittstelle erleichtert die Integration in bestehende 4diac‑Applikationen und macht ihn besonders für modulare Steuerungslösungen geeignet. Dank der transparenten Umschaltlogik und der klaren Ereignissteuerung ist er zuverlässig und leicht verständlich.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

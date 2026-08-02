@@ -27,3 +27,8 @@ Anbindung von AUX-Eingabegeräten (z.B. ISOBUS-Joystick).
 ## Funktionsweise
 
 Im Gegensatz zu Softkeys, die ein festes Bildschirmelement sind, ist eine AUX-Funktion ein logisches Objekt. Der Bediener muss am Terminal (über das AUX-Menü) einmalig festlegen, welche physische Taste seines Joysticks er dieser "Funktion 2" zuweisen möchte. Sobald dieses "Teaching" abgeschlossen ist, triggert jeder Druck auf die Joystick-Taste den Baustein in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

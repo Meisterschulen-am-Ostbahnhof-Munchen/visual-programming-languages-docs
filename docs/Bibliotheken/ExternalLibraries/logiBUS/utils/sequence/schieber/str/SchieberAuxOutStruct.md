@@ -41,3 +41,8 @@ Im Gegensatz zu Funktionsblöcken, die eine aktive Logik enthalten, ist `Schiebe
 
 ## Fazit
 Die `SchieberAuxOutStruct` ist eine essentielle, wiederverwendbare Datenkomponente für Anzeigeanwendungen in der 4diac-IDE. Durch die Kapselung der relevanten Parameter in einem strukturierten Typ fördert sie klare Schnittstellen, verbessert die Lesbarkeit des Codes und reduziert Fehler bei der Parameterübergabe. Ihre Verwendung mit initialisierten Standardwerten und importierten Konstanten folgt bewährten Software-Engineering-Praktiken.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

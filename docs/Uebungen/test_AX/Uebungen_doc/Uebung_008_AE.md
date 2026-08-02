@@ -89,3 +89,8 @@ Der Kreislauf wiederholt sich mit jedem Takt von `AE_CYCLE`. Dadurch wechselt de
 ## Zusammenfassung
 
 Die Übung „Uebung_008_AE" zeigt den Aufbau eines Blinkers mit Hilfe von 4diac-Adaptern. Zentral sind die Bausteine `AE_CYCLE` (Takt), `AX_SWITCH` (Zustandsverarbeitung), `AX_SR` (Flipflop), `AX_SPLIT_2` (Signalverteilung) und `AX_AE_MERGE` (Kombination von Ereignis und Adapter). Die ereignisbasierte Rückkopplung erzeugt eine wechselnde Ein-/Aus-Logik, die auf einen physischen Ausgang gegeben wird. Die Übung vermittelt den Umgang mit Adapterverbindungen, Ereignisrückkopplungen und dem Entwurf sequenzieller Schaltungen in der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

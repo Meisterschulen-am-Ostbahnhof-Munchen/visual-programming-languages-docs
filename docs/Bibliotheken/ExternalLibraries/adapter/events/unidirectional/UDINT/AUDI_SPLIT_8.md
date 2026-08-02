@@ -57,3 +57,9 @@ Die Funktionalität ist rein kombinatorisch: Das Signal am Eingang wird permanen
 **AUDI_SPLIT_8** ist ein kompakter, generischer Spezialbaustein zur Signalverteilung auf Adapterebene.  
 Er reduziert den Modellierungsaufwand, erhöht die Lesbarkeit von Steuerungsprogrammen und lässt sich durch seine generische Natur flexibel in verschiedenen AUDI-basierten Umgebungen einsetzen.  
 Für Anwendungen, die eine 1:8-Aufteilung eines unidirektionalen AUDI-Adapters benötigen, stellt er eine ideale und saubere Lösung dar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

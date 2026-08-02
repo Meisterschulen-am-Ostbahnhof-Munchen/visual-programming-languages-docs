@@ -63,3 +63,8 @@ Die folgende Tabelle zeigt die wesentlichen Verbindungen im Netzwerk:
 ## Zusammenfassung
 
 Die Übung **Uebung_001c4** zeigt einen einfachen Anwendungsfall: Ein digitaler Eingang wird direkt auf einen digitalen Ausgang abgebildet. Durch die clever genutzte Selbsttriggerung der Initialisierung wird sichergestellt, dass der Ausgang bereits beim Booten den korrekten Zustand annimmt. Der NOOP-Baustein fungiert als universeller Verbindungsbaustein, der sowohl Ereignisse als auch Daten unverändert weiterleitet. Die Übung eignet sich für Einsteiger, die die Grundlagen der Ereignis- und Datenverknüpfung in 4diac kennenlernen möchten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

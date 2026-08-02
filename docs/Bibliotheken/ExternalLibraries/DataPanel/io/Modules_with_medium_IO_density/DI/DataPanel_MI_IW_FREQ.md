@@ -104,3 +104,8 @@ Der **DataPanel_MI_IW_FREQ** ist speziell für die Verarbeitung von Frequenzsign
 ## Fazit
 
 Der **DataPanel_MI_IW_FREQ** ist ein leistungsfähiger und flexibler Service-Interface-Funktionsblock für die Erfassung von Frequenzdaten über ein Datenpanel (Typ 7A/8A). Durch die Kombination aus schwellwertbasierter und zeitgesteuerter Indikation eignet er sich sowohl für einfache Messaufgaben als auch für sicherheitskritische Überwachungen. Die typsichere Konfiguration und die klare Ereignisschnittstelle erleichtern die Integration in Automatisierungslösungen der Landtechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

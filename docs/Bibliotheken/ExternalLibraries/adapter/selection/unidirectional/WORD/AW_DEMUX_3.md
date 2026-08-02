@@ -95,3 +95,8 @@ Der größte Unterschied zu reinen Daten‑ oder Ereignis‑Demultiplexern ist d
 ## Fazit
 
 Der **AW_DEMUX_3** ist ein kompakter, generischer Demultiplexer für den Adapter‑Typ `AW`. Mit einem Ereignis gesteuert, verteilt er auf Basis eines Indexes Eingangsdaten auf drei Ausgänge. Seine einfache, transaktionsorientierte Funktionsweise ohne Zustandsautomaten macht ihn zu einem verlässlichen Baustein für die gezielte Signalweiterleitung in industriellen Steuerungs‑ und Automatisierungslösungen. Der generische Charakter ermöglicht zudem eine flexible Wiederverwendung in unterschiedlichen Projekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

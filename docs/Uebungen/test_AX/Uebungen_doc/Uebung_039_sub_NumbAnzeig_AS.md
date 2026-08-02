@@ -50,3 +50,8 @@ Die SubApp `Uebung_039_sub_NumbAnzeig_AS` realisiert eine standardisierte Schnit
 - Basiswissen zu ISOBUS und dessen Objektpool-Konzept.
 
 Die Übung kann direkt in der 4diac-IDE geladen und mit einem entsprechenden übergeordneten Netzwerk (z. B. einer Schrittkette) getestet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -76,3 +76,8 @@ Das Programm ist darauf ausgelegt, eine geführte Sequenz von 8 Schritten abzubi
 
 ## Zusammenfassung
 Die Übung `Uebung_040_2` demonstriert ein komplexes, manuell getaktetes Lauflicht. Durch die Verwendung eines dedizierten Sequenz-Bausteins (`sequence_E_08_loop`) wird die Logik der Zustände sauber gekapselt, während die externe Beschaltung mit Zählern und Demultiplexern eine flexible Eingabesteuerung über mehrere Taster ermöglicht. Das Ergebnis ist eine robust steuerbare Lichtsequenz mit visueller Statusanzeige.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

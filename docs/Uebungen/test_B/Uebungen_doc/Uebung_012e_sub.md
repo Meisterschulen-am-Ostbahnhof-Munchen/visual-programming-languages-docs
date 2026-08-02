@@ -57,3 +57,8 @@ Die SubApp `Uebung_012e_sub` demonstriert den vollständigen Ablauf:
 - **Rücklesen** und **Qualitätsprüfung** des gespeicherten Werts mit `Q_NumericValue_PHYS`.
 
 Sie ist als wiederverwendbarer Baustein konzipiert, der über die Parameter `KEY`, `SECTION` und `stObj` konfiguriert wird und den verarbeiteten Wert am Ausgang `VALUEO` bereitstellt sowie über das Ereignis `IND` quittiert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

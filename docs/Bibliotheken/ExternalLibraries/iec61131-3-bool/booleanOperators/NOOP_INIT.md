@@ -72,3 +72,8 @@ Der FB besitzt keinen expliziten Zustandsautomaten, das Verhalten ist rein ereig
 
 ## Fazit
 Der Funktionsblock **NOOP_INIT** ist ein einfacher, aber flexibler Hilfsbaustein für den ereignisgesteuerten Datentransport. Durch die Kombination von INIT- und REQ-Ereignissen eignet er sich besonders für Initialisierungsabläufe und Testumgebungen. Seine interne Struktur macht ihn leicht verständlich und gut in bestehende 4diac-Netzwerke integrierbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

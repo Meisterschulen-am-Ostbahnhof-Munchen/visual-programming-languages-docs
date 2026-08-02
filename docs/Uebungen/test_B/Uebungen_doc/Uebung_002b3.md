@@ -63,3 +63,8 @@ Q1 = (I1 UND I2) ODER I3
 
 ## Zusammenfassung
 Diese Übung zeigt eine grundlegende kombinatorische Logikschaltung, die digitale Eingangssignale verarbeitet und über logische Verknüpfungen einen Ausgang steuert. Die Implementierung demonstriert die prinzipielle Arbeitsweise ereignisgesteuerter Systeme in der IEC 61499 mit direkter Anbindung an Hardware-Ein- und Ausgänge.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

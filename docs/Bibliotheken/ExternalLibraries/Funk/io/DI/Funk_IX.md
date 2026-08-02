@@ -70,3 +70,8 @@ Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet Funk_IX erweiterte
 
 ## Fazit
 Der Funk_IX Function Block stellt eine leistungsfähige und flexible Lösung für die Integration digitaler Eingänge in 4diac-basierte Automatisierungssysteme dar. Seine Service-orientierte Architektur mit Initialisierungs-, Abfrage- und Benachrichtigungsfunktionen macht ihn besonders geeignet für anspruchsvolle industrielle Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

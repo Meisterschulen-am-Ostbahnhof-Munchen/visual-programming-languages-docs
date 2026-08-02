@@ -38,3 +38,8 @@ Die Übung kann direkt nach dem Import in die 4diac-IDE gestartet werden. Es sin
 ## Zusammenfassung
 
 Die Übung Uebung_079_AX stellt eine vollständige Auflistung aller wesentlichen ISOBUS-Adapter-FBs für TECU zur Verfügung. Sie bietet einen idealen Einstieg in die Modellierung landwirtschaftlicher Steuerungen mit 4diac und bildet die Basis für weiterführende Übungen, in denen die Bausteine miteinander verbunden und mit eigenen Logiken ergänzt werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

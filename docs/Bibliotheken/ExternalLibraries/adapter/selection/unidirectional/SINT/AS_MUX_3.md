@@ -83,3 +83,8 @@ Der **AS_MUX_3** hebt sich durch seine Adapter-Schnittstelle von klassischen SEL
 ## Fazit
 
 Der **AS_MUX_3** ist ein kompakter und effizienter Multiplexer-Baustein für drei unidirektionale **AS**-Signale. Seine klare Ereignissteuerung und die generische Auslegung machen ihn zu einem wertvollen Werkzeug in IEC‑61499‑basierten Automatisierungslösungen, insbesondere in der Agrartechnik, wo eine flexible Signalumschaltung gefordert ist. Durch den Verzicht auf Datenausgänge zugunsten eines Adapter-Plugs wird eine saubere Trennung von Daten- und Ereignispfaden gewährleistet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

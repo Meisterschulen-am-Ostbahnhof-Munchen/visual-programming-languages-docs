@@ -65,3 +65,8 @@ Dieser Baustein ist komplementär zum `GET_AT_INDEX`-Baustein, der Werte aus ein
 ## Fazit
 
 Der `SET_AT_INDEX` Funktionsblock ist ein grundlegendes, aber mächtiges Werkzeug zur Manipulation von Array-Daten in 4diac-Applikationen. Seine Flexibilität durch die `ANY`-Datentypen und die klare ereignisgesteuerte Schnittstelle machen ihn zu einem wertvollen Baustein für viele Anwendungen, die dynamische Datenstrukturen erfordern. Die korrekte Handhabung von Datentypen und Indizes ist entscheidend für seine fehlerfreie Nutzung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

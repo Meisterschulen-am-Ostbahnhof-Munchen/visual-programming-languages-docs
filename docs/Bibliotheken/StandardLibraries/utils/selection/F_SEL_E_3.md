@@ -60,3 +60,8 @@ Der Funktionsblock wartet auf ein eingehendes Ereignis (`REQ0`, `REQ1` oder `REQ
 
 ## Fazit
 Der `F_SEL_E_3` ist ein effizienter und flexibler Baustein für Anwendungen, bei denen zwischen drei verschiedenen Datenquellen ereignisgesteuert gewechselt werden muss. Seine einfache Schnittstelle und Unterstützung für beliebige Datentypen machen ihn zu einem vielseitigen Werkzeug in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

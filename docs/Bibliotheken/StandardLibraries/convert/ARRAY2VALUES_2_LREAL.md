@@ -61,3 +61,8 @@ Dieser Funktionsblock ist zustandslos. Jede Auslösung des `REQ`-Ereignisses fü
 ## Fazit
 
 Der `ARRAY2VALUES_2_LREAL`-Funktionsblock ist ein nützliches Werkzeug für die gezielte Umwandlung eines `LREAL`-Arrays der Größe 2 in zwei separate `LREAL`-Ausgänge. Er bietet eine einfache und effiziente Lösung für die Datenaufbereitung und Schnittstellenanpassung in 4diac-Anwendungen, bei denen diese spezifische Konvertierung erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

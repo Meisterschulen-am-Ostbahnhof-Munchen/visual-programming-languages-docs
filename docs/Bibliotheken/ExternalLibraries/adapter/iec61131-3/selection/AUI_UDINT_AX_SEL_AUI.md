@@ -79,3 +79,8 @@ Im Vergleich zum einfachen IEC 61131-3 Baustein `SEL` (der mit binärem Eingang 
 ## Fazit
 
 Der Funktionsblock `AUI_UDINT_AX_SEL_AUI` stellt eine flexible, adapterbasierte Binärselektion bereit. Er kombiniert die bewährte IEC 61131-3 Logik mit modernen Schnittstellenkonzepten (Adapter, ANY_ELEMENTARY). Durch die klare Trennung von Ereignis- und Datenpfaden eignet er sich besonders für modulare, ereignisgesteuerte Automatisierungslösungen, die auf der 4diac-IDE-Plattform realisiert werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -88,3 +88,8 @@ Der logische Ablauf folgt einer klaren Kette:
 ## Zusammenfassung
 
 Die Übung `Uebung_203b_AX` demonstriert eine vollständige Motorreversierung mit Verriegelung unter Verwendung des `ILOCK_SWITCH_AX`-Bausteins und einer nachgeschalteten Signalverteilung (`AX_2_TO_3`). Durch die Verwendung von Adaptern wird eine klare, modulare Struktur erreicht. Die Schaltung verhindert zuverlässig Kurzschlüsse oder Fehlansteuerungen und eignet sich für den Einsatz in der industriellen Steuerungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

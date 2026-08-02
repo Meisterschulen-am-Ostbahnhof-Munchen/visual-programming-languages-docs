@@ -18,3 +18,8 @@
 * [Video: Future of Automation](https://www.youtube.com/watch?v=R58kH0JMd7o)
 * [Awite Bioenergie GmbH Case Study](https://www.youtube.com/watch?v=VqQVdPE6lm0)
 * [Video: Integration and Deployment](https://www.youtube.com/watch?v=U_ZMVoDH8oQ)
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

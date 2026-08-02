@@ -92,3 +92,8 @@ Die Schaltung realisiert eine klassische Wendeschützsteuerung mit einer Besonde
 ## Zusammenfassung
 
 Die `Uebung_160b2_AX` demonstriert eine fortgeschrittene Motorsteuerung unter Verwendung von Adapter-Bausteinen. Sie zeigt, wie man durch den Einsatz von Splittern (`AX_SPLIT_2`) Signale vervielfältigt, um gleichzeitige Aktionen (Reset der einen Seite, Starten des Timers für die andere Seite) auszuführen. Die integrierte Sicherheitslogik mittels `AX_TON` verhindert eine sofortige Richtungsumkehr und schützt somit die angeschlossene Hardware. Die Übung ist ideal, um das Verständnis für sequenzielle Steuerungen und Signalrouting in 4diac zu vertiefen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

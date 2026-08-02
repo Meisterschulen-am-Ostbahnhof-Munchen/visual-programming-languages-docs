@@ -51,3 +51,8 @@ Im Vergleich zu einfachen IO-Konfigurationsblöcken bietet eIWconfig eine erweit
 
 ## Fazit
 Der eIWconfig Funktionsblock stellt eine flexible und erweiterbare Lösung für die Konfiguration von eIO-Instanzen dar, die durch ihre Adapter-basierte Architektur und umfangreiche Parametrierungsmöglichkeiten besticht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

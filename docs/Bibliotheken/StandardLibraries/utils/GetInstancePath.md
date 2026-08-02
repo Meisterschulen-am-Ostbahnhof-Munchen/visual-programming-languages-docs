@@ -47,3 +47,8 @@ Keine Adapter vorhanden.
 
 ## Fazit
 Der `GetInstancePath`-FB ist ein nützliches Werkzeug zur dynamischen Ermittlung des eigenen Instanzpfads in 4diac-Anwendungen. Seine einfache Schnittstelle und flexible Konfiguration machen ihn ideal für Diagnose- und Konfigurationszwecke.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

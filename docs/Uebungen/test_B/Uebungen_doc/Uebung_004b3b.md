@@ -85,3 +85,8 @@ Die Verschaltung der Hauptapplikation (`Uebung_004b3b`) ist wie folgt aufgebaut:
 Die Übung `Uebung_004b3b` demonstriert eine elegante Realisierung einer Radio-Button-Logik durch zwei miteinander verriegelte Toggle-Flip-Flops.  
 Die Kernidee besteht darin, die `SET`-Ausgänge der Sub-Bausteine kreuzweise mit den `RESET`-Eingängen zu verbinden, sodass nur ein Ausgang gleichzeitig aktiv sein kann.  
 Dank der modularen Sub-Applikation lässt sich die Logik leicht auf mehrere Kanäle erweitern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

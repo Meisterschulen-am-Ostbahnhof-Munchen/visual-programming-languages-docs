@@ -99,3 +99,8 @@ Die Übung besteht aus einem Netzwerk von sechs internen Funktionsbausteinen, di
 ## Zusammenfassung
 
 Die Übung 214 zeigt den praktischen Einsatz des IEC 61131-3 Standard-Zählers **FB_CTU_ULINT** in einer 4diac-IDE Umgebung. Durch die Verknüpfung mit Hardware-Eingängen (logiBUS) und einem Terminalausgabebaustein wird deutlich, wie ein industrieller Zähler konfiguriert und visualisiert werden kann. Die Schüler lernen, Ereignis- und Datenflüsse zu verstehen, sowie die Bedeutung von Datentypkonvertierung und die Gefahr von Überläufen bei nicht-passenden Typen. Die Übung eignet sich für Fortgeschrittene, die bereits Grundlagen der IEC 61131-3 und der 4diac-IDE beherrschen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

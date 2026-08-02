@@ -77,3 +77,8 @@ Ein **MUX** (Multiplexer) führt die umgekehrte Funktion aus – mehrere Eingän
 ## Fazit
 
 Der **AI_DEMUX_5** ist ein kompakter, generischer Demultiplexer für analoge Eingangssignale in der 4diac-IDE. Mit seiner einfachen Ereignissteuerung, dem Index-K-Eingang und der Adapter-basierten Schnittstelle eignet er sich ideal für das Routing von AI-Werten in modularen Steuerungsanwendungen. Die feste Anzahl von fünf Ausgängen deckt viele praktische Anforderungen ab, während die generische Implementierung eine flexible Wiederverwendung ermöglicht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

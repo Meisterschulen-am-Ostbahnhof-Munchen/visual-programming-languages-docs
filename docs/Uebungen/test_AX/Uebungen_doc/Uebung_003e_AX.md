@@ -55,3 +55,8 @@ Die gesamte Verschaltung erfolgt über **Adapterverbindungen** (keine Daten‑ o
 ## Zusammenfassung
 
 Die Übung vermittelt den Umgang mit **Adapterverbindungen** und **Bypass‑Logik** in der 4diac‑IDE. Es wird gezeigt, wie vier digitale Eingänge über Bypass‑Blöcke auf Ausgänge geschaltet werden können und wie eine Kaskadierung der Bypass‑Signale ein gemeinsames Magnetventil steuert. Die Verwendung der logiBUS‑IO‑Bausteine stellt dabei die Verbindung zu realen oder simulierten Ein‑/Ausgängen her.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

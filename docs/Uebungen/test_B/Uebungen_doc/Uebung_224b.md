@@ -72,3 +72,8 @@ Die **Datenverbindungen** übertragen die Werte:
 ## Zusammenfassung
 
 Die Übung demonstriert die Verwendung eines IEC 61131-3 Vor-/Rückwärtszählers (`FB_CTUD_ULINT`) in 4diac. Die digitale Hardware (Eingänge I1–I4, Ausgänge Q1–Q2) wird über logiBUS-Bausteine angebunden. Der Zählerstand wird in einen physikalischen Messwert (`LREAL`) konvertiert und auf einem Terminal ausgegeben. Die Lernziele umfassen den Umgang mit Zählerbausteinen, Ereignisverkettung, Typkonvertierung und die Anbindung von Ein-/Ausgängen in einer ereignisgesteuerten Umgebung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

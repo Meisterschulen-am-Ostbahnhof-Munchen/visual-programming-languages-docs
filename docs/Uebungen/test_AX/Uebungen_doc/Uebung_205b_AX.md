@@ -94,3 +94,8 @@ Die gesamte Logik ist als wiederverwendbare SubApp gekapselt und kann in überge
 ## Zusammenfassung
 
 Die Übung **Uebung_205b_AX** vermittelt die Umsetzung einer motorischen Reversiersteuerung mit Interlock und Schutzzeit. Durch die Verwendung des spezialisierten Bausteins `ILOCK_SWITCH_PROTECT_AX` wird eine sichere Richtungsumkehr gewährleistet. Die Adapter-basierte Kommunikation zwischen den Bausteinen ermöglicht eine flexible und modulare Struktur. Die SubApp `AX_2_TO_3` übernimmt die Aufteilung der Richtungssignale und die Erzeugung eines gemeinsamen Low-Side-Signals. Diese Übung eignet sich zur Vertiefung des Verständnisses von Interlock-Logiken sowie der Arbeit mit Adaptern in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

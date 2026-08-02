@@ -94,3 +94,8 @@ Der **UDINT_AUDI_NE** ist speziell für den Ungleichheitsvergleich mit Adapter-S
 ## Fazit
 
 **UDINT_AUDI_NE** ist ein flexibler und wiederverwendbarer Funktionsbaustein für den Ungleichheitsvergleich. Durch die Verwendung von Adaptern für den zweiten Eingang und den Ausgang lässt er sich einfach in komplexe Automatisierungsnetzwerke integrieren. Die Unterstützung beliebiger elementarer Datentypen und die ereignisgesteuerte Ausführung machen ihn zu einem vielseitigen Werkzeug für unterschiedlichste Anwendungen. Seine Composite-Struktur erlaubt zudem eine einfache Anpassung der Vergleichslogik bei Bedarf.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

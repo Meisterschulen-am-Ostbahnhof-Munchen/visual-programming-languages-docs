@@ -73,3 +73,8 @@ In dieser Übung wird die grundlegende Interaktion zwischen physikalischen Taste
 - Wie ein numerischer Wert über `Q_NumericValue_AUDI` auf dem ISOBUS-VT ausgegeben wird.
 
 Die Übung eignet sich als Einstieg in die ISOBUS-Kommunikation mit der 4diac-IDE. Vorausgesetzt werden grundlegende Kenntnisse der IEC 61499 sowie die Installation der Bibliotheken `logiBUS` und `isobus`. Der SubApp kann direkt in ein Anwendungsprojekt eingebunden und getestet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

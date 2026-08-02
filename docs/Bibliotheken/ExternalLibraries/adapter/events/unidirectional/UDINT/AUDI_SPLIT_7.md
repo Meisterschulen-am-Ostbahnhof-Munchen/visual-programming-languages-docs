@@ -70,3 +70,8 @@ Während `AUDI_SPLIT_7` auf den spezifischen AUDI-Adaptertyp ausgelegt ist, exis
 ## Fazit
 
 `AUDI_SPLIT_7` ist ein einfacher, aber effektiver Baustein zum Verteilen eines AUDI-Signals auf sieben identische Pfade. Durch die generische Auslegung kann er in verschiedenen Kontexten wiederverwendet werden. Der Verzicht auf Ereignisse und interne Logik macht ihn leichtgewichtig und zuverlässig für reine Signalverteilungsaufgaben.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

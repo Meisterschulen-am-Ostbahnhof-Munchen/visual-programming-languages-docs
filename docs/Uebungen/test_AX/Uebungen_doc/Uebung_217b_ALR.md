@@ -78,3 +78,8 @@ Die Übung **217b_ALR** vermittelt den sicheren Umgang mit einem IEC 61131-3 Abw
 
 **Schwierigkeitsgrad:** Fortgeschritten  
 **Vorkenntnisse:** Grundlagen der 4diac‑IDE, Umgang mit logiBUS‑Bausteinen, Ereignisverkettung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

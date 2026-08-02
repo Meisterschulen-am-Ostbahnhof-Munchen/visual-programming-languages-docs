@@ -74,3 +74,8 @@ Die Übung besteht aus zwei identischen parallelen Zweigen, die über eine gegen
 ## Zusammenfassung
 
 Die Übung `Uebung_208_AX` demonstriert den Aufbau einer gegenseitigen Verriegelung zwischen zwei set-dominanten Latches mithilfe der speziellen Interlock-Bausteine `ILOCK_FB_SR_AX`. Durch die Adapterverbindungen `ILOCK_IN` und `ILOCK_OUT` wird sichergestellt, dass stets nur einer der beiden Ausgänge aktiv sein kann. Dies ist typisch für Anwendungen, bei denen sich zwei Zustände gegenseitig ausschließen müssen (z.B. Motorenrichtungen, Ventilsteuerungen). Die Übung festigt den Umgang mit Hardware-Adaptern und den Interlock-Mechanismen der logiBUS-Bibliothek.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

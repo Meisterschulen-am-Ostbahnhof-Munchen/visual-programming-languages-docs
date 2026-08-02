@@ -71,3 +71,8 @@ Die Schaltung arbeitet wie folgt zusammen:
 ## Zusammenfassung
 
 Die Übung demonstriert die Realisierung eines IEC 61131-3 Vorwärtszählers mit Adapterschnittstelle (CTU) in 4diac. Die Ein- und Ausgänge sind über logiBUS-Komponenten an die Hardware angebunden. Der Zählerstand wird kontinuierlich auf einem Terminal ausgegeben, während der Ausgang Q einen digitalen Ausgang ansteuert. Die Konfiguration zeigt den Umgang mit Adapter-basierten Funktionsbausteinen, Typkonvertierungen und Terminalausgabe.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

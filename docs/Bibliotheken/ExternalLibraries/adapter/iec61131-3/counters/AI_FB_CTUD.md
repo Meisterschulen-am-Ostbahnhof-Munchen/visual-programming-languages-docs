@@ -89,3 +89,8 @@ Eine detaillierte Zustandsmaschine des IEC‑61131‑3 Counters kann der entspre
 
 ## Fazit
 Der `AI_FB_CTUD` ist ein leistungsfähiger, adapterbasierter Aufwärts-/Abwärtszähler, der die etablierte IEC‑61131‑3 Funktionalität in die ereignisgesteuerte Welt von 4diac überführt. Durch die saubere Kapselung und die Verwendung unidirektionaler Adapter ist er flexibel einsetzbar und gut in modulare Automatisierungslösungen integrierbar. Die explizite Empfehlung zur Nutzung eines `AX_D_FF` für änderungsgesteuerte Ausgaben zeigt, dass der Baustein bewusst einfach gehalten wurde – eine Stärke für transparente und vorhersagbare Systeme.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

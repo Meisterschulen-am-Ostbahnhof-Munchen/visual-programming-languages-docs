@@ -80,3 +80,8 @@ Der IA_VDS besitzt keinen expliziten Zustandsautomaten, sein Verhalten wird durc
 ## Fazit
 
 Der **IA_VDS** ist ein praktischer Baustein, um die ISO‑11783‑7‑spezifischen Fahrzeugdaten (Richtung/Geschwindigkeit) einfach in eine 4diac‑Applikation einzubinden. Durch die adapterbasierte Ausgabe bleibt die Architektur modular und erweiterbar. Die Unterteilung in Daten‑ und Timeout‑Adapter erleichtert die robuste Fehlerbehandlung. Ideal für alle Anwendungen, die eine präzise, busbasierte Fahrzeugdynamik benötigen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -59,3 +59,8 @@ Im Gegensatz zu einem einfachen, monolithischen Funktionsblock, der Logik und Sc
 
 ## Fazit
 Der `SchieberVerriegelungComposite` ist ein gut strukturierter Wrapper-Baustein, der die Integration einer komplexen Schieber-Verriegelungslogik in ein größeres 4diac-Steuerungssystem vereinfacht. Durch die Verwendung standardisierter Adapter und die Kapselung der Kernfunktionalität fördert er Wiederverwendbarkeit, Wartbarkeit und klare Schnittstellendefinitionen. Er ist ideal für Anwendungen, bei denen eine zuverlässige und übersichtliche Koordination mehrerer Aktoren erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -55,3 +55,9 @@ Diese Eingänge haben einen Spannungsteiler im Controller: 47/13 --> und einen S
 | Output_Q06 | 19            |
 | Output_Q07 | 15            |
 | Output_Q08 |  8            |
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Belasteter & Unbelasteter Spannungsteiler auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/spannungsteiler/)
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)

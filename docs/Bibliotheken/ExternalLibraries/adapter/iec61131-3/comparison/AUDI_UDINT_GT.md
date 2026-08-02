@@ -83,3 +83,8 @@ Der Unterschied zu einer direkten Verwendung von `F_GT` liegt in der adapterbasi
 ## Fazit
 
 Der Funktionsbaustein `AUDI_UDINT_GT` bietet eine standardisierte und typensichere Möglichkeit, einen „Größer‑als“‑Vergleich für vorzeichenlose 32‑Bit‑Ganzzahlen zu realisieren. Durch seine Adapter‑Schnittstelle lässt er sich nahtlos in IEC 61131‑3‑konforme Automatisierungsprojekte einbinden und ist besonders für Schwellwertvergleiche und Überwachungsfunktionen geeignet. Die interne Nutzung des normierten Bausteins `F_GT` garantiert dabei ein deterministisches und portables Verhalten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

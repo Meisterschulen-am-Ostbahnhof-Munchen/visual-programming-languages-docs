@@ -77,3 +77,8 @@ Diese Bausteinserie bildet die vollständige Menge der sechs Vergleichsoperatore
 
 ## Fazit
 `AUI_UDINT_GT` ist ein spezialisierter, aber flexibler Vergleichsbaustein für den industriellen Einsatz. Die Verwendung von Adaptern vereinfacht die Integration in modulare Automatisierungssysteme und macht die Schnittstelle wiederverwendbar. Dank der IEC‑61131‑3‑Konformität und der einfachen internen Struktur eignet er sich besonders für klare, wartbare Steuerungslogiken.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

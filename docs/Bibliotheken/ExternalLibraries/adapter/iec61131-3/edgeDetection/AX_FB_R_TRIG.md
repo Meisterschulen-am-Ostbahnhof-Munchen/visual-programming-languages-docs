@@ -63,3 +63,8 @@ Der Baustein basiert auf einer sehr einfachen Execution Control Chart (ECC) mit 
 
 ## Fazit
 Der **AX_FB_R_TRIG** ist ein essenzieller Utility-Baustein für Entwickler, die innerhalb der 4diac-Umgebung mit AX-Adaptern arbeiten. Er bietet die robuste Funktionalität der Standard-Flankenerkennung, verpackt in einer modernen, adapterbasierten Schnittstelle, was zu aufgeräumteren und modulareren Steuerungsanwendungen führt.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

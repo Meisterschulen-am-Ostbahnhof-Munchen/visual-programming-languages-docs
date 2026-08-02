@@ -51,3 +51,8 @@ Die Übung verwendet keine weiteren Unterbausteine, alle FBs sind direkt auf der
 ## Zusammenfassung
 
 Die Übung 224b ALR demonstriert den Einsatz eines IEC 61131-3 konformen Vorwärts-/Rückwärtszählers (CTUD) in der 4diac-IDE mit Adaptertechnologie. Vier Digitaleingänge steuern den Zähler (Vorwärts, Rückwärts, Reset, Laden), zwei Digitalausgänge geben die Überlauf-/Unterlaufzustände aus, und über einen Terminalbaustein wird der aktuelle Zählerstand als LREAL-Wert visualisiert. Der feste Startwert von 5 wird über einen ULINT-zu-ULI-Konverter bereitgestellt. Die Übung eignet sich für Einsteiger in die IEC 61131-3-Zählerfunktionen und die Adapterkommunikation in 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

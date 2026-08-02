@@ -55,3 +55,8 @@ Diese Übung demonstriert den Einsatz des Funktionsbausteins `ILOCK_SWITCH_PROTE
 ## Zusammenfassung
 
 Die Übung **Uebung_205** zeigt die praktische Anwendung eines Interlocks mit Schutzzeit mithilfe des `ILOCK_SWITCH_PROTECT`-Bausteins. Zwei digitale Eingänge steuern zwei Ausgänge, wobei eine Umschaltung nur nach Ablauf einer konfigurierbaren Schutzzeit möglich ist. Der Aufbau verdeutlicht die Trennung von Ereignis- und Datenpfaden sowie die Integration von Zeitüberwachung über Adapter. Diese Schaltung eignet sich typischerweise für Anwendungen, bei denen zwei Aktoren nicht gleichzeitig aktiv sein dürfen und ein schnelles Umschalten vermieden werden muss (z.B. Motor-Richtungsumkehr, Ventilsteuerung).
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

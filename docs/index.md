@@ -10,13 +10,19 @@ myst:
 
 <img src="_static/logos/Meisterschulen_LogoG1_4c.gif" alt="Logo Meisterschulen am Ostbahnhof" width="400px" />
 
-# Wiki 4: Visuelle Programmiersprachen
-
-
-
-
+# Wiki 4: Visuelle Programmiersprachen (IEC 61499)
 
 ## Meisterschulen am Ostbahnhof, München
+
+---
+
+### 📋 [Das steht im Lehrplan (Rahmenlehrplan 2025)](./das_steht_im_lehrplan.md)
+> **Die visuelle Programmierung (IEC 61499 / 4diac) ist die zentrale Kernmethode des Rahmenlehrplans 2025** zur Erstellung und Diagnose automatisierter & autonomer Funktionen an Land- und Baumaschinen (LandBauMechMstrV vom 09.09.2024, in Kraft ab 01.08.2025).
+
+* 📋 **[Das steht im Lehrplan – Visuelle Sprachen als Lehrplan-Hauptthema](./das_steht_im_lehrplan.md)**
+  * ⚡ [Automatisierte Funktionen mit IEC 61499 (LE 1.4 / 40 UE)](./lehrplan_praxis/iec61499_automatisierte_funktionen.md)
+  * 🔍 [Fehlerdiagnose in automatisierten & autonomen Systemen (LE 2.6 / 20 UE)](./lehrplan_praxis/fehlerdiagnose_autonome_systeme.md)
+  * 🧩 [Systemtechnik, Signalfluss & Zustandsmaschinen (LE 1.1 / 160 UStd.)](./lehrplan_praxis/funktionsbausteine_systemtechnik.md)
 
 ---
 
@@ -25,9 +31,11 @@ myst:
 Diese Dokumentation ist Teil der Wissensdatenbank der Meisterschulen am Ostbahnhof München.
 
 **Nützliche Links:**
+* 📋 **[Das steht im Lehrplan (Lehrplan 2025)](./das_steht_im_lehrplan.md)**
 * [🏠 Hauptmenü](https://www.ms-muc-docs.de/)
 * [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/)
 * [📄 PDF-Handbuch herunterladen](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/pdf/visual-programming-languages-docs.pdf)
+
 
 ---
 

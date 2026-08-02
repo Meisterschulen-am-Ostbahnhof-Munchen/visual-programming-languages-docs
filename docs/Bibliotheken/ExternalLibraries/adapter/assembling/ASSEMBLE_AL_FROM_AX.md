@@ -101,3 +101,8 @@ Der wesentliche Unterschied liegt in der **Adapter‑Schnittstelle** und der **Z
 ## Fazit
 
 Der Funktionsblock **ASSEMBLE_AL_FROM_AX** ist ein leistungsfähiges Werkzeug, um aus 64 dezentralen booleschen Signalen ein kompaktes 64‑Bit‑LWORD zu erzeugen. Durch die adapterbasierte Anbindung und die interne Flip‑Flop‑Pufferung eignet er sich besonders für saubere, ereignisgesteuerte und modulare Automatisierungslösungen. Die vollständige Abdeckung aller Bits ohne Skalierungsprobleme macht ihn zu einer universellen Lösung für Anwendungen, die viele digitale Eingänge bündeln müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

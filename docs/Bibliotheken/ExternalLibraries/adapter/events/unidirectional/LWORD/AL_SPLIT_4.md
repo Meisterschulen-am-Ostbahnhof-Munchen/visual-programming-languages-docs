@@ -67,3 +67,8 @@ Im Gegensatz zu diesen Bausteinen arbeitet `AL_SPLIT_4` ausschließlich auf Adap
 ## Fazit
 
 Der Funktionsblock **AL_SPLIT_4** ist ein einfacher, effizienter Signalfächer für den Adaptertyp `AL`. Er eignet sich ideal für alle Anwendungen, in denen ein einzelner Adapterdatenstrom an mehrere Verbraucher weitergegeben werden muss, ohne zusätzliche Logik oder Verzögerungen. Seine generische Natur erlaubt den Einsatz in unterschiedlichen Kontexten der Automatisierungstechnik, insbesondere in der Landmaschinensteuerung, wie vom Hersteller vorgesehen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

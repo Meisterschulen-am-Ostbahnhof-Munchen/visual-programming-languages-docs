@@ -64,3 +64,8 @@ Der FB selbst besitzt keinen expliziten Zustandsautomaten. Das interne `E_D_FF_A
 
 ## Fazit
 Der `ASSEMBLE_AD_FROM_AX` ist ein nützlicher Baustein, um eine Vielzahl binärer Signale effizient in ein Datenwort zu bündeln. Die Verwendung von Adaptern erlaubt eine lose Kopplung und erleichtert die Integration in serviceorientierte Automatisierungsarchitekturen. Die integrierte Flipflop-Synchronisation vermeidet unnötige Ausgabeereignisse und sorgt für einen stabilen, aktualisierten Gesamtwert. Durch seine klare Struktur eignet er sich besonders für Anwendungen, in denen viele diskrete Signale zentral erfasst und weiterverarbeitet werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

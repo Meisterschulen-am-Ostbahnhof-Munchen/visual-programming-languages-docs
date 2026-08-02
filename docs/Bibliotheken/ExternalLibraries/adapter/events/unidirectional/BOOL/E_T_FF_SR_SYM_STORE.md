@@ -98,3 +98,9 @@ Der `E_T_FF_SR_SYM_STORE` vereint SR‑Funktion, Toggle und initialisierten Star
 ## Fazit
 
 Der **E_T_FF_SR_SYM_STORE** ist ein leistungsfähiger ereignisgesteuerter Flipflop‑Baustein für die 4diac‑IDE. Er bietet eine vollständige SR‑Funktion, eine Toggle‑Option und ein symmetrisches, über einen Adapter konfigurierbares Start‑Up‑Verhalten. Dies macht ihn besonders für Anwendungen geeignet, die deterministische Initialisierung und flexible Umschaltmechanismen erfordern. Die bidirektionale Adapter‑Schnittstelle erhöht die Integrationstiefe in komplexe Steuerungsarchitekturen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

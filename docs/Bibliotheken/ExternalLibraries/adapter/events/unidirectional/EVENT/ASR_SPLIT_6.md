@@ -64,3 +64,8 @@ Der `ASR_SPLIT_6` bietet eine feste Anzahl von sechs Ausgängen und ist damit sp
 ## Fazit
 
 Der `ASR_SPLIT_6` ist ein einfacher, aber nützlicher Funktionsblock zur Signalvervielfältigung auf Adapterebene. Durch seine generische Natur und die klare, ereignislose Funktionsweise eignet er sich ideal für modulare Steuerungsarchitekturen, die eine Mehrfachnutzung eines ASR-Signals erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

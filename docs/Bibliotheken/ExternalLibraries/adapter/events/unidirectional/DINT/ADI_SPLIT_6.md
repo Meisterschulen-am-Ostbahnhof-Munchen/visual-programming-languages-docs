@@ -52,3 +52,8 @@ Der Baustein verfügt über keinen Zustandsautomaten oder explizite Betriebszust
 
 ## Fazit
 Der `ADI_SPLIT_6` ist ein einfacher aber effektiver Baustein zur Vervielfachung unidirektionaler ADI-Adapter-Signale. Durch die generische Auslegung und die geringe Komplexität eignet er sich hervorragend für den modularen Aufbau von Steuerungsanwendungen im Eclipse 4diac Umfeld. Seine Einsatzmöglichkeiten reichen von der reinen Signalverteilung bis hin zu Test- und Redundanzszenarien.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

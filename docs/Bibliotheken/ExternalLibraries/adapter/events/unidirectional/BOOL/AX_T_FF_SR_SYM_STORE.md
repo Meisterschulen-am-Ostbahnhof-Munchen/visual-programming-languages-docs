@@ -103,3 +103,8 @@ Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-F
 
 ## Fazit
 Der `AX_T_FF_SR_SYM_STORE` ist ein leistungsfähiger und flexibler Funktionsblock für zustandsbehaftete Steuerungsaufgaben. Seine Kombination aus Set, Reset und Toggle, gepaart mit dem symmetrischen Startverhalten über Adapter, macht ihn ideal für Anwendungen, die ein definiertes Wiederanlaufverhalten erfordern. Durch die Verwendung von Adaptern fügt er sich nahtlos in modulare und verteilte Automatisierungssysteme ein.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

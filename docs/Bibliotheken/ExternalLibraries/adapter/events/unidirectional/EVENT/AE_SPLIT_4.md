@@ -52,3 +52,8 @@ Der **AE_SPLIT_4** ist ein rein kombinatorischer Baustein und besitzt keine inte
 
 ## Fazit
 Der **AE_SPLIT_4** ist ein einfacher, aber leistungsfähiger Funktionsblock, der die ereignisgesteuerte Verteilung von Adapterdaten auf bis zu vier gleichberechtigte Ausgänge ermöglicht. Dank seiner generischen Auslegung kann er ohne Anpassung für beliebige Datentypen verwendet werden und eignet sich hervorragend für modulare, parallele Steuerungsarchitekturen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

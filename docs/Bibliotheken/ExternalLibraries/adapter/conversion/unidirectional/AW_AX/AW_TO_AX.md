@@ -72,3 +72,8 @@ Der Baustein besitzt **keinen internen Zustandsautomaten** (kein ECC). Die Ablau
 ## Fazit
 
 Der **AW_TO_AX** ist ein kompakter, aber nützlicher Composite-Baustein zur Konvertierung von WORD-Adaptern in BOOL-Adapter. Dank seines einfachen Vergleichsprinzips eignet er sich hervorragend für die Integration in ereignisgesteuerte Automatisierungssysteme, die auf Adapter-Schnittstellen basieren. Die klare Trennung von Eingangs- und Ausgangsadaptern erleichtert den modularen Aufbau und die Wiederverwendbarkeit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

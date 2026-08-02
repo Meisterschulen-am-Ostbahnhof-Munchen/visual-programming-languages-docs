@@ -79,3 +79,8 @@ Der interne Timer **E_TONOF** durchläuft folgende Zustände:
 ## Fazit
 
 Der **ATM_AX_TONOF** ist ein leistungsfähiger Timer-Funktionsblock für verzögerte Ein-/Ausschaltvorgänge. Durch seine Adapter-basierte Schnittstelle passt er sich nahtlos in modulare Automatisierungslösungen ein und bleibt dennoch vollständig kompatibel zum IEC 61499-Standard. Die Kombination von ON-Delay und OFF-Delay in einem Baustein reduziert den Verdrahtungsaufwand und vereinfacht die Applikationserstellung. Dank des separaten Reset-Eingangs und der stabilen internen Implementierung eignet er sich für vielfältige industrielle Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -75,3 +75,8 @@ Der Baustein besitzt keine eigenen Zustände, da er keinerlei interne Logik oder
 ## Fazit
 
 Der **AUS_TO_AUI**-Baustein ist ein schlankes Werkzeug zur Anpassung von Adapterschnittstellen zwischen USINT und UINT. Seine einfache Durchleitungsstruktur macht ihn performant und leicht verständlich. Er eignet sich besonders für Integrationsaufgaben, bei denen bestehende Komponenten mit unterschiedlichen Datenbreiten verbunden werden müssen. Aufgrund fehlender interner Logik ist er robust und benötigt keine Parametrierung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

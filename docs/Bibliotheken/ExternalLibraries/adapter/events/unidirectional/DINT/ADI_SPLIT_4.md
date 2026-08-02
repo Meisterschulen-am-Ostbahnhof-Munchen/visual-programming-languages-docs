@@ -67,3 +67,8 @@ Der Funktionsblock besitzt keine explizite Zustandsmaschine (ECC). Da er ausschl
 ## Fazit
 
 Der **ADI_SPLIT_4** ist ein einfacher, aber nützlicher generischer Funktionsblock zur Vervielfachung eines ADI-Datenstroms. Er erfordert keine Konfiguration und fügt sich nahtlos in modulare Automatisierungsprojekte ein. Durch die Adapter-basierte Schnittstelle bleibt er flexibel und lässt sich ohne Änderungen an der internen Logik in unterschiedliche Umgebungen einbinden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

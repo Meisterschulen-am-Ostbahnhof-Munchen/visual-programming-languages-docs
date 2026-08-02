@@ -69,3 +69,8 @@ Es existieren analoge Konvertierungsbausteine für andere Datentypen (z. B. `A
 ## Fazit
 
 Der `AULI_TO_AB` ist ein kompakter, zuverlässiger Composite-Baustein zur Konvertierung zwischen zwei gängigen Adapter-Typen in der 4diac-IDE. Er reduziert den Verkabelungsaufwand und vereinfacht die Integration heterogener Komponenten. Durch die Verwendung des standardisierten IEC‑61131‑Konvertierungsbausteins bleibt die Umwandlung typsicher und effizient.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

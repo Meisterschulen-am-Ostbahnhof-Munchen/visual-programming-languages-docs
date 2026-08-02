@@ -73,3 +73,8 @@ Der FB durchläuft folgende Betriebszustände:
 
 ## Fazit
 Der `ATM_AX_TOF` bietet eine zuverlässige und flexible Ausschaltverzögerung für modulare Automatisierungsprojekte. Dank der Adapter-Schnittstelle lässt er sich leicht in verschiedene Systemlandschaften integrieren und erweitert die Funktionalität des Standard-Timers `E_TOF` um eine Reset-Möglichkeit sowie eine lose Kopplung über AX/AT-Adapter. Er ist ideal für Anwendungen, bei denen eine zeitverzögerte Abschaltung mit optionaler Sofortrücksetzung benötigt wird.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

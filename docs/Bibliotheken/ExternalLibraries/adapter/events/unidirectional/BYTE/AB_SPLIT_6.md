@@ -55,3 +55,8 @@ Der Baustein besitzt keinen internen Automaten oder diskrete Zustände. Die Funk
 
 ## Fazit
 Der `AB_SPLIT_6` ist ein einfacher, aber nützlicher generischer Funktionsbaustein zur Vervielfachung eines unidirektionalen Adaptersignals auf bis zu sechs Ausgänge. Er ist leicht verständlich, benötigt keine Konfiguration und eignet sich hervorragend für die schnelle Verteilung von Adapterdaten in industriellen Steuerungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

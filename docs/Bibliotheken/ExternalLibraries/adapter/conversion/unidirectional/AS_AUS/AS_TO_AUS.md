@@ -67,3 +67,8 @@ Der FB besitzt keinen internen Zustandsautomaten (ECC). Die gesamte Ablaufsteuer
 ## Fazit
 
 Der Funktionsblock `AS_TO_AUS` ist ein praktischer Helfer zur Typumwandlung in adapterbasierten 4diac-Anwendungen. Er vereinfacht die Integration von Komponenten, die unterschiedliche vorzeichenbehaftete und vorzeichenlose 8-Bit-Datentypen verwenden, und ermöglicht eine saubere Trennung der Adapter-Schnittstellen. Durch die Verwendung des etablierten IEC-Konverters ist die Funktionalität zuverlässig und standardkonform.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

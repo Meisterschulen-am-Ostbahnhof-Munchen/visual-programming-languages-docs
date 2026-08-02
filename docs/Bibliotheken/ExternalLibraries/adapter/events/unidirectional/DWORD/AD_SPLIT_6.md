@@ -53,3 +53,8 @@ Andere Splitt-Bausteine wie `AD_SPLIT_2`, `AD_SPLIT_4` oder `AD_SPLIT_8` untersc
 
 ## Fazit
 `AD_SPLIT_6` ist ein einfacher, aber nützlicher generischer Funktionsblock zur 1:6-Verteilung eines AD-Adapters. Seine klare Schnittstelle und das Fehlen von Zustandslogik machen ihn leicht verständlich und effizient für die Verteilungsaufgaben in IEC 61499-basierten Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

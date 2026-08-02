@@ -51,3 +51,8 @@ Diese Referenz listet die Standardfarben auf, die in Eclipse 4diac für verschie
 ---
 
 *Diese Informationen basieren auf der Standard-Konfiguration von Eclipse 4diac.*
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

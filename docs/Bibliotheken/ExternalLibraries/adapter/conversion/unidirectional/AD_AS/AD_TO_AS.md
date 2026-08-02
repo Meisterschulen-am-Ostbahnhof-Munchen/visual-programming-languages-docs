@@ -69,3 +69,8 @@ Damit kehrt der Baustein wieder in den Zustand **WARTEN** zurück.
 
 ## Fazit
 Der Funktionsblock **AD_TO_AS** stellt eine kompakte und standardisierte Lösung zur Konvertierung von DWORD- in SINT-Daten in einer ereignisgesteuerten Adapter-Umgebung dar. Durch die Verwendung der IEC‑61131-Bibliotheksfunktion und die klare ereignisbasierte Ausführung ist er zuverlässig und einfach in bestehende Steuerungsprojekte integrierbar. Die unidirektionale Struktur begrenzt die Anwendung auf einen einfachen Datenfluss, was für viele Anwendungsfälle ausreichend ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

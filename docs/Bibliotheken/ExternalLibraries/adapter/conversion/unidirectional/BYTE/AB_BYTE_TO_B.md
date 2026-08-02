@@ -52,3 +52,8 @@ Im Vergleich zu einfachen Konvertierungsblöcken bietet AB_BYTE_TO_B den Vorteil
 
 ## Fazit
 AB_BYTE_TO_B ist ein spezialisierter Konvertierungsbaustein, der durch seine Adapter-basierte Architektur eine flexible und standardkonforme Integration in 4diac-basierte Steuerungssysteme ermöglicht. Seine einfache und robuste Funktionsweise macht ihn zu einer zuverlässigen Lösung für Byte-zu-Adapter-Konvertierungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

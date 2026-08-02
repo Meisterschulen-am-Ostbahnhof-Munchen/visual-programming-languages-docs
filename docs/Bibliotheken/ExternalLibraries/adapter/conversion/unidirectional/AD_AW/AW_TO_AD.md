@@ -68,3 +68,8 @@ Im Gegensatz zu einem reinen Datenkonverter berücksichtigt `AW_TO_AD` auch die 
 ## Fazit
 
 `AW_TO_AD` ist ein einfacher, aber nützlicher Composite-Funktionsbaustein zur Adapter-Konvertierung von WORD nach DWORD. Er ermöglicht eine schnelle und saubere Anpassung von Schnittstellen in 4diac‑Projekten, ohne dass eigene Konvertierungslogik geschrieben werden muss. Aufgrund seiner Zustandslosigkeit und der direkten Durchleitung eignet er sich besonders für unidirektionale Verbindungen in bestehenden Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

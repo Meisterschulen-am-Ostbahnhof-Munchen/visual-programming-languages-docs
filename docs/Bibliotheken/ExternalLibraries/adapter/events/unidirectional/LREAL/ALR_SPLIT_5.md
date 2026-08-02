@@ -67,3 +67,8 @@ Der Funktionsblock besitzt keine explizite Zustandslogik oder Zustandsmaschine. 
 ## Fazit
 
 Der **ALR_SPLIT_5** ist ein einfacher, aber wertvoller Baustein zur Vervielfachung von ALR-Signalen in IEC-61499-Systemen. Seine generische und kombinatorische Implementierung macht ihn leicht integrierbar und ressourceneffizient. Er eignet sich besonders für Anwendungen, in denen ein Signal an mehrere Empfänger verteilt werden muss, ohne zusätzliche Logik oder zeitliche Steuerung zu benötigen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

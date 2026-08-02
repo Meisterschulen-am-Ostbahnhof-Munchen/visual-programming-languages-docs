@@ -60,3 +60,8 @@ Der FB **AL_TO_AD** besitzt keinen eigenen Zustandsautomaten, da er als Composit
 
 ## Fazit
 Der **AL_TO_AD**-Funktionsblock stellt eine schlanke und standardkonforme Lösung zur Umwandlung von LWORD- in DWORD-Adapterdaten dar. Durch die Kombination von Adapter- und Konvertierungslogik in einem Composite-FB wird die Wiederverwendbarkeit erhöht und die Netzwerkerstellung vereinfacht. Er eignet sich besonders für die Integration unterschiedlicher IEC 61499-Komponenten und trägt zur Modularität industrieller Automatisierungslösungen bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -67,3 +67,8 @@ Der vorliegende Baustein zeichnet sich durch seine **einfache Adapter‑orientie
 
 ## Fazit
 **ADI_TO_ALR** ist ein minimaler, aber nützlicher Konverter für die unidirektionale Übertragung von DINT‑Werten in das LREAL‑Format. Er ist robust, schnell und erfordert keinerlei Konfiguration. Dank seiner Composite‑Struktur lässt er sich leicht in bestehende Applikationen integrieren, die auf Adapter‑Schnittstellen basieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

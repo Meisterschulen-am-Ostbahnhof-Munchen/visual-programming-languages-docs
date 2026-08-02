@@ -51,3 +51,8 @@ Der FB besitzt keine Zustandsautomaten (ECC) und kein internes Verhalten, das ze
 
 ## Fazit
 Der **A2X_SPLIT_4** ist ein einfacher, aber nützlicher Baustein zur Vervielfältigung eines unidirektionalen A2X-Adaptersignals. Durch seine generische Auslegung und die klare Schnittstelle lässt er sich leicht in bestehende 4diac-IDE-Projekte integrieren und trägt zur Modularisierung von Steuerungsapplikationen bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

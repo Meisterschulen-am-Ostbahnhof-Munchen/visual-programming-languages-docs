@@ -71,3 +71,8 @@ Seine Funktionsweise ist rein datenfluss- und ereignisgesteuert durch die Vernet
 ## Fazit
 
 Der Funktionsblock `AUI_TO_AS` bietet eine einfache, gekapselte Lösung zur Umwandlung eines unidirektionalen UINT-Adapters in einen SINT-Adapter. Durch die Nutzung einer standardisierten IEC-61131-Konvertierungsfunktion und die klare Ereignissteuerung fügt er sich nahtlos in 4diac-IDE-Projekte ein. Er eignet sich besonders für Szenarien, in denen Adapter unterschiedlicher Datentypen verbunden werden müssen, ohne dass der Anwender die Konvertierungslogik selbst implementieren muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

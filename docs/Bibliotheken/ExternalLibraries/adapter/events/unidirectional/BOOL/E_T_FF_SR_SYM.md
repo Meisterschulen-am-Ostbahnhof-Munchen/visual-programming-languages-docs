@@ -102,3 +102,8 @@ Hinweis: Verbleiben S‑Ereignisse im SET‑Zustand oder R‑Ereignisse im RESET
 ## Fazit
 
 Der **E_T_FF_SR_SYM** ist ein vielseitiger ereignisgesteuerter Flipflop-Baustein, der sowohl Set‑/Reset‑ als auch Toggle‑Funktionen vereint. Das symmetrische Startverhalten macht ihn besonders für Anwendungen geeignet, bei denen direkt nach der Aktivierung ein definierter Zustand erreicht werden muss – unabhängig davon, welches Ereignis zuerst eintrifft. Dank der reinen Ereignissteuerung lässt er sich einfach in zeitkritische Steuerungsabläufe einbinden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)

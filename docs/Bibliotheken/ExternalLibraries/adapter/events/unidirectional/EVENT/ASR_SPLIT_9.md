@@ -73,3 +73,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten (ECC). Er arbeitet statis
 ## Fazit
 
 Der Funktionsbaustein **ASR_SPLIT_9** ist eine kompakte und effiziente Lösung zur Verteilung eines ASR-Signals auf neun identische Ausgänge. Durch den generischen Charakter und die klare, ereignislose Adapterkopplung eignet er sich besonders für modulare, wiederverwendbare Automatisierungssysteme auf Basis von IEC 61499.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

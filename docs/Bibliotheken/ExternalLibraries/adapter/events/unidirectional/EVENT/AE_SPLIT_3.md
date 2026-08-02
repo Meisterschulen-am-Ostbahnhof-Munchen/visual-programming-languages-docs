@@ -66,3 +66,8 @@ Gemeinsam ist allen Varianten, dass sie lediglich auf Adapterebene arbeiten und 
 ## Fazit
 
 Der **AE_SPLIT_3** ist ein einfacher und dennoch unverzichtbarer Funktionsblock zur Vervielfältigung von Adapterverbindungen in der 4diac-IDE. Seine generische Ausführung und die klare, unidirektionale Struktur machen ihn zu einem wartungsfreundlichen Werkzeug für die Signalverteilung ohne zusätzliche Logik. Durch die EPL-2.0-Lizenz kann er in eigenen Projekten ohne Einschränkungen eingesetzt werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -66,3 +66,8 @@ Der Baustein besitzt keine eigenen Zustände oder Steuerlogik. Das Verhalten ist
 ## Fazit
 
 Der **ALI_SPLIT_4** ist ein einfacher, aber nützlicher Funktionsbaustein zur passiven Verteilung eines unidirektionalen ALI-Signals auf vier identische Ausgänge. Durch die generische Bauweise und das Fehlen von Ereignis- oder Datenlogik eignet er sich besonders für schnelle Signalvervielfachungen in der Automatisierungstechnik, ohne zusätzliche Rechenlast zu verursachen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

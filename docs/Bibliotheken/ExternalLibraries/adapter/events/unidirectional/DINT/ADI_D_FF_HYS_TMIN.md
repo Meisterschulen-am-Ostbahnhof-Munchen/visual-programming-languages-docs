@@ -69,3 +69,8 @@ Ein herkömmliches D-Flipflop (z. B. `E_D_FF`) schaltet bei jedem Takt ohne Hy
 ## Fazit
 
 Der `ADI_D_FF_HYS_TMIN` ist ein robuster Funktionsblock für die zuverlässige Signalverarbeitung mit Hysterese und Zeitsteuerung. Er eignet sich besonders für Anwendungen, die eine entstörte, gefilterte und ratenbegrenzte Weitergabe von Ereignissen und Daten erfordern – typischerweise in industriellen Steuerungssystemen, die auf dem 4diac-Framework und unidirektionalen Adaptern basieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

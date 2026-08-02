@@ -58,3 +58,8 @@ Es existieren weitere Adapter‑Konvertierungsbausteine wie z. B. `ADI_TO_AI` 
 
 ## Fazit
 Der **ADI_TO_AS** ist ein kompakter, fertig vorgefertigter Composite‑Baustein, der die Umwandlung eines DINT‑Adapter‑Signals in ein SINT‑Adapter‑Signal zuverlässig und einfach ermöglicht. Er ist ideal für alle Anwendungen, die eine saubere Typkonvertierung im Rahmen des 4diac‑Adapterkonzepts benötigen, ohne dass separate Konvertierungslogik manuell implementiert werden muss. Dank der Lizenz unter EPL‑2.0 kann er in eigenen Projekten frei genutzt und angepasst werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

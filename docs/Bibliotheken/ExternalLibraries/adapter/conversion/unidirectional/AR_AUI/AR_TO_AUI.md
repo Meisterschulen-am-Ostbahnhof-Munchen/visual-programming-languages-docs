@@ -54,3 +54,8 @@ Der AR_TO_AUI ist ein reiner Funktionsbaustein ohne internen Zustandsautomaten (
 
 ## Fazit
 Der **AR_TO_AUI** ist ein praktischer und zuverlässiger Baustein zur einfachen Adapterkonvertierung von REAL auf UINT. Seine klare Schnittstelle, das rein funktionale Verhalten und die Wiederverwendbarkeit machen ihn zu einem nützlichen Werkzeug im 4diac-Ökosystem. Er eignet sich besonders für Anwendungen, in denen eine saubere Trennung von Adaptertypen und eine einfache Integration in bestehende Projekte gefordert ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

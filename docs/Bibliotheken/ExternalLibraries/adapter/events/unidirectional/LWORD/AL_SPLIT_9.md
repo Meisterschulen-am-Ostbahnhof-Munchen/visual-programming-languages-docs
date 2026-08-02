@@ -64,3 +64,8 @@ Der Baustein verfügt über keinen internen Zustandsautomaten. Er arbeitet zusta
 ## Fazit
 
 Der `AL_SPLIT_9` ist ein einfacher, aber leistungsfähiger generischer Verteilerbaustein für Adapterschnittstellen vom Typ `AL`. Er ermöglicht eine saubere, wartbare Aufteilung eines Datenflusses auf neun unabhängige Pfade. Dank seiner generischen Natur und der Zustandslosigkeit eignet er sich hervorragend für modulare und skalierbare Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -76,3 +76,8 @@ Die **8er-Version** ist die umfangreichste und erlaubt den Anschluss vieler Verb
 ## Fazit
 
 Der `ASR_SPLIT_8` ist ein einfacher, aber effizienter Baustein, um ein ASR-Signal auf acht unabhängige Pfade zu verteilen. Durch seine generische Auslegung und das Fehlen von Zuständen und Ereignissen ist er robust, ressourcenschonend und ideal für unidirektionale Datenweiterleitungen in landwirtschaftlichen und industriellen Automatisierungssystemen geeignet. Er ergänzt die Familie der ASR-Splitter und deckt den Bedarf an einer hohen Anzahl paralleler Ausgänge ab.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

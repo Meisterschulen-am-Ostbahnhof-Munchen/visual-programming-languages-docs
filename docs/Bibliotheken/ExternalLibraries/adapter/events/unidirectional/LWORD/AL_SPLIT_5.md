@@ -66,3 +66,8 @@ Im 4diac-Ökosystem existieren weitere Splitter-Bausteine, z. B. `SPLIT` für 
 ## Fazit
 
 Der **AL_SPLIT_5** ist ein einfacher, aber nützlicher generischer Funktionsblock zur Vervielfältigung eines unidirektionalen Adaptersignals auf fünf Ausgänge. Aufgrund seiner reinen Adapterschnittstelle und fehlenden Ereignis-/Datenlogik eignet er sich besonders für Anwendungen, die ein Signal ohne Verarbeitung an mehrere Empfänger verteilen müssen. Die generische Auslegung erhöht die Flexibilität bei der Wiederverwendung in verschiedenen Projekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

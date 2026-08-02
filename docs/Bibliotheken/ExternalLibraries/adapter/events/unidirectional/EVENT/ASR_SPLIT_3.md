@@ -62,3 +62,8 @@ Da der Baustein keine Ereignisse verarbeitet und zustandslos arbeitet, existiert
 ## Fazit
 
 Der `ASR_SPLIT_3` ist ein einfacher, aber effektiver Baustein zur Vervielfältigung eines ASR-Signals auf drei identische Ausgänge. Er eignet sich besonders für modulare Strukturen, in denen ein zentrales Signal mehrfach gebraucht wird. Die generische Auslegung erhöht die Wiederverwendbarkeit und reduziert den Konfigurationsaufwand.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

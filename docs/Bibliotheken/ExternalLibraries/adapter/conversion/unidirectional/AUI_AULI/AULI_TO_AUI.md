@@ -62,3 +62,8 @@ Der vorliegende Baustein bietet im Gegensatz zur nackten IEC‑Funktion eine ada
 
 ## Fazit
 Der **AULI_TO_AUI**-Baustein ist eine praktische Lösung, um 64‑Bit‑ULINT‑Daten über einen einheitlichen Adapter‑Mechanismus auf 16‑Bit‑UINT‑Daten abzubilden. Er kombiniert die Robustheit der IEC‑Konvertierungsfunktion mit der Flexibilität von 4diac-Adaptern und eignet sich besonders für heterogene Automatisierungssysteme, in denen unterschiedliche Datentypen aufeinandertreffen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

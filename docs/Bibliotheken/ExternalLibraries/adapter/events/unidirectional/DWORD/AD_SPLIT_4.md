@@ -51,3 +51,8 @@ Da der Baustein keine Ereignis-Ein-/Ausgänge besitzt, gibt es keine Zustandsmas
 
 ## Fazit
 Der **AD_SPLIT_4**-Funktionsblock ist ein kompaktes, generisches Werkzeug zur einfachen Vervielfältigung eines unidirektionalen AD-Signals. Seine klare Schnittstelle ohne Ereignisse macht ihn besonders geeignet für datenflussorientierte Applikationen in der Automatisierungstechnik, bei denen ein Signal an mehrere Empfänger verteilt werden muss. Durch die generische Auslegung kann er flexibel an verschiedene Adapter-Datentypen angepasst werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

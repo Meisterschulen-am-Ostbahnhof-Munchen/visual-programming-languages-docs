@@ -71,3 +71,8 @@ Während `SPLIT_2` nur zwei Ausgänge bietet, deckt `AB_SPLIT_3` den Bedarf für
 ## Fazit
 
 Der **AB_SPLIT_3** ist ein einfacher, aber nützlicher generischer Splitter-Baustein für unidirektionale Adapter. Er ermöglicht eine saubere Strukturierung von Automatisierungsanwendungen, indem ein eingehender Signalpfad auf drei parallele Pfade aufgeteilt wird. Dank seiner generischen Natur kann er für beliebige AB-Adapter-Typen eingesetzt werden und fügt sich nahtlos in die IEC 61499-2-konforme Entwicklungsumgebung 4diac ein.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

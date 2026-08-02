@@ -51,3 +51,8 @@ Der FB besitzt **keinen internen Zustand** und keine Zustandsmaschine. Er führt
 
 ## Fazit
 **AL_SPLIT_3** ist ein einfacher, aber nützlicher generischer Funktionsblock zur Vervielfältigung eines unidirektionalen Adapter-Signals auf drei unabhängige Ausgänge. Aufgrund seiner passiven Natur ist er ressourcenschonend und eignet sich ideal zur flexiblen Gestaltung von IEC 61499 Anwendungen, in denen ein Signal mehrfach benötigt wird, ohne die Quelllogik zu verändern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

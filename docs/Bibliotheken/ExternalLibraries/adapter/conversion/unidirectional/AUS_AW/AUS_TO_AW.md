@@ -57,3 +57,8 @@ Der Baustein besitzt keine eigene Zustandsmaschine. Der Ablauf ist ereignisgeste
 
 ## Fazit
 **AUS_TO_AW** ist ein kompakter, zuverlässiger Composite‑Baustein, der die Konvertierung von USINT‑ zu WORD‑Daten über unidirektionale Adapter standardisiert und in bestehende 4diac‑Projekte nahtlos integriert werden kann. Er reduziert Entwicklungsaufwand und erhöht die Wiederverwendbarkeit in modularen Automatisierungssystemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -73,3 +73,8 @@ Gegenüber einer manuellen Parallelschaltung mehrerer ADI_Split-Bausteine reduzi
 ## Fazit
 
 Der `ADI_SPLIT_7` ist ein einfacher, aber leistungsfähiger Baustein zur Verteilung eines unidirektionalen ADI-Signals auf sieben identische Ausgänge. Dank seiner generischen Implementierung und dem Verzicht auf Ereignissteuerung eignet er sich ideal für Reinverteilungen in Automatisierungs- und Steuerungsumgebungen, die auf dem ADI-Adapterprotokoll basieren.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

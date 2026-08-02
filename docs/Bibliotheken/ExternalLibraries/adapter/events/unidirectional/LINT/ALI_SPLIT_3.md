@@ -53,3 +53,8 @@ Der Baustein besitzt keine Zustandsautomaten oder Zustandsspeicher. Sein Verhalt
 
 ## Fazit
 ALI_SPLIT_3 ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfachung von ALI-Adapterverbindungen. Seine generische Natur und die reine Signalweitergabe machen ihn zu einem flexiblen Werkzeug in der Automatisierungs- und Steuerungstechnik, insbesondere wenn ein Signal mehrfach benötigt wird.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

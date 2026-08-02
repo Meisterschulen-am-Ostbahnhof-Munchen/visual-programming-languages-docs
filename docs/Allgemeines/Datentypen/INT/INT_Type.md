@@ -15,3 +15,9 @@
 * [Uebung_039a_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
 * [Uebung_060_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_060_sub_Outputs.md)
 
+
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

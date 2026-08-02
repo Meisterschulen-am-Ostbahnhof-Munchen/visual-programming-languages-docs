@@ -67,3 +67,8 @@ Da der Baustein keine Ereignis‑Eingänge/Ausgänge oder internen Zustände bes
 ## Fazit
 
 **ALI_SPLIT_2** ist ein einfacher, aber essenzieller Funktionsblock für die Verteilung unidirektionaler ALI‑Schnittstellen. Seine generische Natur und die schlanke Implementierung machen ihn zu einem universellen Werkzeug in der IEC 61499‑Komponentenentwicklung, wenn ein Signal oder Datenstrom an mehrere nachfolgende Blöcke weitergegeben werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

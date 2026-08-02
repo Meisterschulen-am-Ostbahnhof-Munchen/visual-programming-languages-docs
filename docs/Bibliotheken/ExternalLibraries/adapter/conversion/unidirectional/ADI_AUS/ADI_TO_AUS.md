@@ -46,3 +46,8 @@ Da der Baustein keinen eigenen Zustandsautomaten besitzt, ist sein Verhalten rei
 
 ## Fazit
 Der ADI_TO_AUS ist ein praktischer Hilfsbaustein für die nahtlose Integration von DINT- und USINT-Adaptern in der 4diac-IDE. Seine einfache, ereignisgesteuerte Funktionsweise und die Kapselung als Composite FB machen ihn flexibel einsetzbar und gut wartbar. Er eignet sich besonders für Projekte, die eine klare Trennung zwischen Adapter-Schnittstellen und Konvertierungslogik erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -62,3 +62,8 @@ Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Fazit
 Der AX_SPLIT_3 bietet eine einfache und effiziente Lösung zur Signalverteilung in 4diac-Systemen. Seine generische Implementierung und standardkonforme Adapter-Schnittstelle machen ihn zu einem vielseitig einsetzbaren Baustein für verschiedene Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

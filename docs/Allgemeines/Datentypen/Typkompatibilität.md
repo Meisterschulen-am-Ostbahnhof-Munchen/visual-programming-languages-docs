@@ -197,3 +197,9 @@ Dies betrifft insbesondere:
 - ULINT (64 Bit) Umwandlungen in LREAL (oder LWORD nach Umwandlung in ULINT; bei LREAL tritt der Präzisionsverlust erst ab 2^53 auf)
 
 **Faustregel:** Alle FIELDBUS Signal-Bausteine für DWORD, UDINT, LWORD und ULINT sollten `LREAL` als Ausgabetyp verwenden.
+
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

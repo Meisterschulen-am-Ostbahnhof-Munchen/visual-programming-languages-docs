@@ -65,3 +65,8 @@ Der FB besitzt keine Zustandsmaschine (kein ECC) und daher keinen definierten Zu
 ## Fazit
 
 Der **AL_SPLIT_6** ist ein kompakter und effizienter Funktionsblock zur Vervielfachung eines unidirektionalen AL‑Adapter‑Signals. Durch seinen generischen Charakter und die einfache Struktur eignet er sich hervorragend für alle Anwendungen, bei denen ein Eingangssignal auf mehrere Ausgänge verteilt werden muss, ohne zusätzliche Logik oder Ereignissteuerung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -55,3 +55,8 @@ Der Baustein besitzt keinen ECC (Execution Control Chart) und keine internen Zus
 
 ## Fazit
 ALR_SPLIT_6 ist ein minimalistischer und zuverlässiger Baustein zur Signalvervielfachung auf Adapterebene. Die generische Auslegung erleichtert die Wiederverwendung in verschiedenen Projekten, und der Verzicht auf komplexe Logik hält das Datenflussmodell klar und einfach.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

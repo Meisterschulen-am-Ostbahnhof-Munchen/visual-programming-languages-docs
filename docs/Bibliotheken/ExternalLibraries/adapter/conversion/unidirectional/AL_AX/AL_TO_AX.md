@@ -70,3 +70,8 @@ Der `AL_TO_AX`-Baustein besitzt keinen eigenen Zustandsautomaten. Sein Verhalten
 
 ## Fazit
 Der `AL_TO_AX`-Funktionsblock bietet eine einfache und zuverlässige Möglichkeit, einen unidirektionalen LWORD-basierten Adapter in einen BOOL-basierten Adapter zu konvertieren. Durch die Verwendung des Vergleichs mit Null ist die Interpretation eindeutig. Die Integration in bestehende 4diac-Netzwerke gestaltet sich dank der standardisierten Adapter-Schnittstellen unkompliziert. Der Baustein eignet sich besonders für schnelle, ereignisgesteuerte Umwandlungen ohne zusätzlichen Speicherbedarf und ist eine praktische Ergänzung für die Adapterkonvertierung in der industriellen Automatisierung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

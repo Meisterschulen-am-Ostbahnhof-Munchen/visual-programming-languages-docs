@@ -65,3 +65,8 @@ Vergleich mit [E_D_FF](../../../../../StandardLibraries/events/E_D_FF.md)
 
 ## Fazit
 Der AX_D_FF bietet eine einfache und effektive Lösung für grundlegende Datenspeicheraufgaben in 4diac-Steuerungssystemen. Seine klare Zustandslogik und die Verwendung standardisierter Adapter machen ihn zu einem zuverlässigen Baustein für verschiedene Anwendungsfälle.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

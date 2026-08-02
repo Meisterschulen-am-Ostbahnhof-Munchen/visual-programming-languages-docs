@@ -62,3 +62,8 @@ Im 4diac-Umfeld existieren weitere Konvertierungsadapter wie `AUI_TO_AB` (UINT n
 
 ## Fazit
 Der Funktionsblock **AUI_TO_AL** stellt eine saubere, standardisierte Lösung zur Umwandlung eines UINT-basierten Adapters (AUI) in einen LWORD-basierten Adapter (AL) dar. Er ist einfach zu handhaben, ereignisgesteuert und nutzt eine bewährte IEC 61131-Konvertierungsfunktion. Dank seines Composite-Charakters fügt er sich nahtlos in bestehende 4diac-Netzwerke ein und erleichtert die Integration unterschiedlicher Datenbreiten in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

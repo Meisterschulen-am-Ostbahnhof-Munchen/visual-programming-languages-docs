@@ -95,3 +95,8 @@ Keine weiteren Zustände oder Verweilzeiten.
 Der `AX_FB_T_FF` ist ein kompakter und flexibler Funktionsbaustein, der ein Toggle-Flipflop mit positiver Flankenerkennung und asynchronem Reset realisiert.  
 Durch die reine Adapter-Schnittstelle lässt er sich besonders gut in modularen, adapterbasierten Entwürfen einsetzen, bei denen Daten- und Ereignisübertragung über einen einheitlichen Kanal erfolgen.  
 Die einfache Logik und der minimale Zustandsautomat machen ihn zuverlässig und leicht verständlich.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

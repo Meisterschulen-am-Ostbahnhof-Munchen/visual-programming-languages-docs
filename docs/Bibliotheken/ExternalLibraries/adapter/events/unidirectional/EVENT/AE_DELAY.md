@@ -79,3 +79,8 @@ Der Baustein selbst besitzt keine explizite Zustandsmaschine (ECC), da es sich u
 ## Fazit
 
 Der **AE_DELAY** ist ein unverzichtbarer Hilfsbaustein für Entwickler, die die Vorteile von 4diac-Adaptern (reduzierte Verbindungskomplexität, klare Schnittstellendefinitionen) nutzen möchten, ohne auf grundlegende Zeitfunktionen wie Verzögerungen verzichten zu müssen. Er integriert den bewährten `E_DELAY` nahtlos in moderne, adapterbasierte Applikationsdesigns.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

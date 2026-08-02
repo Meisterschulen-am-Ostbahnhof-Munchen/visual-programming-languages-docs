@@ -50,3 +50,8 @@ Im Vergleich zu anderen Adapter-Konvertern zeichnet sich AE2_E_TO_EVENT durch se
 
 ## Fazit
 Der AE2_E_TO_EVENT Funktionsblock bietet eine zuverlässige und einfache Lösung zur Integration von AE2-Adaptern in ereignisgesteuerte 4diac-Systeme. Seine klare Schnittstellendefinition und direkte Funktionsweise machen ihn zu einem praktischen Werkzeug für Protokollkonvertierungen in industriellen Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

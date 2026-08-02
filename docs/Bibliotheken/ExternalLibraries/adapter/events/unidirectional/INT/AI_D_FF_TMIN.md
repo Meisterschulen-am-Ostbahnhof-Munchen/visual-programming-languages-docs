@@ -86,3 +86,8 @@ Der `AI_D_FF_TMIN` vereint die Funktionalität eines Adapter‑gekapselten Flip�
 ## Fazit
 
 `AI_D_FF_TMIN` bietet eine kompakte Lösung für das Zwischenspeichern und zeitlich kontrollierte Weitergeben von Daten über Adapterschnittstellen. Die integrierte Mindest‑Ausgabezeit schützt nachgelagerte Bausteine vor Überlastung und erlaubt eine robuste Signalverarbeitung in industriellen Steuerungssystemen. Durch die modulare Adapter‑Schnittstelle ist der Baustein flexibel in verschiedenste 4diac‑Netzwerke integrierbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

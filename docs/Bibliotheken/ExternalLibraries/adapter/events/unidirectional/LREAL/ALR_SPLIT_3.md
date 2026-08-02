@@ -55,3 +55,8 @@ Der Baustein definiert keine internen Zustände. Das Ausgangssignal entspricht s
 
 ## Fazit
 Der **ALR_SPLIT_3** ist ein einfacher, aber nützlicher generischer Baustein zur Vervielfachung eines ALR-Signals. Er erleichtert die strukturierte und wiederverwendbare Verschaltung in Automatisierungslösungen, bei denen ein Signal an mehrere Empfänger weitergegeben werden muss, ohne zusätzliche Logik oder Latenz.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

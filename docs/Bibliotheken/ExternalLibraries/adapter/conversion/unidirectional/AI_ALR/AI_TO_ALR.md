@@ -62,3 +62,8 @@ Während es in 4diac‑Bibliotheken oft separate Konverter‑Bausteine für Basi
 ## Fazit
 
 Der Baustein **AI_TO_ALR** ist ein minimalistischer, aber effektiver Composite‑FB zur Typanpassung zwischen INT‑ und LREAL‑Adapter. Er reduziert den Verdrahtungsaufwand in komplexen Steuerungsnetzwerken und ermöglicht eine saubere Trennung von Schnittstellen und Konvertierungslogik. Für Anwendungen, die eine reine Durchleitung ohne zusätzliche Verarbeitung benötigen, stellt er eine ideale Lösung dar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

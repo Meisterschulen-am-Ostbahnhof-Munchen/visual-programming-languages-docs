@@ -56,3 +56,8 @@ Der Baustein besitzt keine eigene Zustandsmaschine. Das Verhalten wird direkt du
 
 ## Fazit
 Der Composite‑Baustein `AUS_TO_ADI` bietet eine einfache und saubere Möglichkeit, einen `AUS`-Adapter (USINT‑basiert) in einen `ADI`-Adapter (DINT‑basiert) zu konvertieren. Durch die interne Nutzung des IEC 61131‑Konvertierungsbausteins ist die Umsetzung standardkonform und wiederverwendbar. Der Baustein eignet sich besonders für modulare Anwendungen, bei denen unterschiedliche Adaptertypen harmonisiert werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

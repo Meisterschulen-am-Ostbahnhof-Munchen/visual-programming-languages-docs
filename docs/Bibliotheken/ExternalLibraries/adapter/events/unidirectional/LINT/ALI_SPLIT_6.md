@@ -67,3 +67,8 @@ Der ALI_SPLIT_6 unterscheidet sich von anderen Split-Varianten lediglich durch d
 ## Fazit
 
 Der ALI_SPLIT_6 ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfachung eines unidirektionalen ALI-Adapter-Signals auf sechs identische Ausgänge. Dank seiner generischen Eigenschaften lässt er sich flexibel in verschiedene Steuerungssysteme einbinden. Aufgrund der fehlenden Verarbeitungslogik ist er besonders ressourcenschonend und leicht verständlich. Er eignet sich ideal für Anwendungen, bei denen ein Signal parallel mehreren Empfängern zur Verfügung gestellt werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

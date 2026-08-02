@@ -58,3 +58,8 @@ Im Gegensatz zu einem generischen `AR_TO_BOOL`-Baustein, der direkte Daten ohne 
 
 ## Fazit
 Der AR_TO_AX-Funktionsblock bietet eine kompakte Lösung zur Umwandlung eines REAL-Adapter-Werts in einen BOOL-Adapter-Wert mittels Nullvergleich. Durch die Verwendung von Adaptern und einem standardisierten Vergleichsbaustein ist er einfach in bestehende 4diac-Projekte integrierbar und eignet sich gut für schnelle, unidirektionale Signalkonvertierungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

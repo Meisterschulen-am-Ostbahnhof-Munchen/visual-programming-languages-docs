@@ -72,3 +72,8 @@ Im Gegensatz zu diesen Bausteinen erfolgt bei **AD_SPLIT_8** keine Auswahl – a
 ## Fazit
 
 **AD_SPLIT_8** ist ein einfacher, aber essenzieller Funktionsblock in IEC-61499-Systemen, der die Signalverteilung über Adapter-Schnittstellen ohne zusätzliche Logik oder Laufzeitkosten realisiert. Seine generische Natur macht ihn flexibel einsetzbar und erleichtert die modulare Strukturierung von Automatisierungsprojekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

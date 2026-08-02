@@ -55,3 +55,8 @@ Der Baustein besitzt keine eigenen Zustände oder Zustandsautomaten. Das Verhalt
 
 ## Fazit
 Der **AUI_TO_AUDI**-Baustein ist ein einfacher, aber nützlicher Composite-FB zur Konvertierung eines UINT-basierten AUI-Adapters in einen UDINT-basierten AUDI-Adapter. Er eignet sich besonders für Situationen, in denen eine unidirektionale Signalweiterleitung mit impliziter Datentypanpassung erforderlich ist, ohne dass eine eigene Verarbeitungslogik notwendig wird. Dank seiner klaren Struktur ist er leicht in bestehende 4diac-Projekte integrierbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

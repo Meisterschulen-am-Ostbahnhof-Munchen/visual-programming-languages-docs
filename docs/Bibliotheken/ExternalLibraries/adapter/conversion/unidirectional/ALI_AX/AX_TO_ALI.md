@@ -61,3 +61,8 @@ In der Bibliothek `iec61131::conversion` existieren zahlreiche Funktionsbaustein
 
 ## Fazit
 Der AX_TO_ALI ist ein kompakter, lizenzkonformer Composite‑FB zur zuverlässigen Umwandlung eines BOOL‑ in einen LINT‑Wert über unidirektionale Adapter. Durch seine einfache Ereignissteuerung und die Verwendung eines etablierten IEC‑Bausteins bietet er eine robuste Lösung für typische Konvertierungsaufgaben in IEC‑61499‑Systemen. Die saubere Trennung von Ein‑ und Ausgang über Adapter erleichtert die Integration in modulare Steuerungsarchitekturen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

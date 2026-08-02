@@ -54,3 +54,8 @@ Es existieren analoge Konverterbausteine wie `ALI_TO_UDI` (LINT → UDINT) oder 
 
 ## Fazit
 Der ALI_TO_AUI-Baustein ist eine praktische und leicht verständliche Komponente zur Umwandlung zwischen ALI- und AUI-Adaptern. Seine Composite-Struktur kapselt die notwendige Datenkonvertierung und Ereignisweitergabe, sodass er sich nahtlos in bestehende 4diac‑Projekte einfügt. Die einfache Handhabung und die klare Trennung der Schnittstellen machen ihn zu einem nützlichen Werkzeug bei der Adapter‑Integration.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

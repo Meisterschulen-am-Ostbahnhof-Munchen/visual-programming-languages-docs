@@ -53,3 +53,8 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten und keine internen Zust
 
 ## Fazit
 Der **AULI_TO_AS** ist ein schlanker, zweckgebundener Konverter für unidirektionale Adapter. Er ermöglicht die einfache Integration von Komponenten, die auf dem SINT‑Datentyp basieren, in ein ULINT‑dominiertes System. Aufgrund der großen Differenz der Wertebereiche muss der Anwender jedoch mögliche Überlauf‑ oder Sättigungseffekte berücksichtigen und gegebenenfalls auf breitere Datentypen ausweichen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

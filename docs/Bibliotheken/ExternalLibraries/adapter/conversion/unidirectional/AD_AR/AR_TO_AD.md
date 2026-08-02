@@ -65,3 +65,8 @@ Da es sich um einen kombinatorischen Composite-FB handelt, besitzt der Baustein 
 
 ## Fazit
 Der `AR_TO_AD`-Funktionsblock ist ein spezialisierter Composite-Baustein, der die Umwandlung eines REAL- auf einen DWORD-Wert auf Adapterebene ermöglicht. Er zeichnet sich durch seine einfache Handhabung, Standardkonformität und die nahtlose Integration in unidirektionale Adapter-Kommunikationen aus. Durch die Verwendung des bewährten IEC 61131-3-Bausteins `F_REAL_TO_DWORD` wird eine zuverlässige und portable Konvertierung gewährleistet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -58,3 +58,8 @@ Während `AB_SPLIT_9` eine Quelle auf viele Senken verteilt, realisiert `AB_MERG
 
 ## Fazit
 Der **AB_SPLIT_9** bietet eine einfache, aber leistungsfähige Möglichkeit, einen einzelnen Adapter‑basierten Datenstrom auf neun parallele Pfade aufzuteilen. Durch seine generische Natur ist er in beliebigen 4diac‑Projekten einsetzbar, erfordert keine Zustandsprogrammierung und ermöglicht eine saubere, modulare Architektur. Er ist ein grundlegender Baustein für die serielle oder parallele Verteilung von Adapter‑Signalen in der Automatisierungstechnik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

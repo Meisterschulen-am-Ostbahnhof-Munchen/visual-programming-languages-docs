@@ -65,3 +65,8 @@ Der FB AR_TO_AUS besitzt keinen eigenen Zustandsautomaten. Das Laufzeitverhalten
 ## Fazit
 
 Der Funktionsblock AR_TO_AUS bietet eine einfache, modulare Lösung zur Konvertierung eines REAL-Adapters in einen USINT-Adapter. Durch die Verwendung eines standardisierten Konvertierungsbausteins und die Kapselung als Composite-FB kann er leicht in bestehende 4diac-Projekte integriert werden. Er eignet sich besonders für Szenarien, in denen eine klare Trennung von Schnittstellen und eine unidirektionale Datenübertragung erforderlich sind.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

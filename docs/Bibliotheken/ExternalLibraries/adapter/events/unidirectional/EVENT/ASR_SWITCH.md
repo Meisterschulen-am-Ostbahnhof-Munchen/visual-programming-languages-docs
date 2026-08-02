@@ -91,3 +91,8 @@ Alle Zustände (außer `START`) kehren mit einer unbedingten Transition (`1`) zu
 ## Fazit
 
 Der **ASR_SWITCH** ist ein einfacher, aber effektiver Funktionsbaustein zur demultiplexierenden Verteilung von SET/RESET-Ereignissen. Durch die Adapter-Schnittstelle lässt er sich nahtlos in ereignisbasierte Automatisierungslösungen integrieren. Seine klare Zustandslogik und minimale Schnittstelle machen ihn zu einem zuverlässigen Baustein für die Umschaltung zwischen zwei Signalpfaden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

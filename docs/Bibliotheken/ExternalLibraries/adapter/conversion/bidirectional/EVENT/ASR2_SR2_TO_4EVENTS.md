@@ -51,3 +51,8 @@ Im Vergleich zu einfachen Konverter-Blöcken bietet ASR2_SR2_TO_4EVENTS die Beso
 
 ## Fazit
 Der ASR2_SR2_TO_4EVENTS Funktionsblock stellt eine effiziente Lösung für die Integration von ASR2-Schnittstellen in 4diac-basierte Steuerungssysteme dar. Durch seine einfache, aber effektive Durchreich-Architektur ermöglicht er eine nahtlose Kommunikation zwischen unterschiedlichen Schnittstellentypen ohne zusätzliche Verarbeitungslatenz.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

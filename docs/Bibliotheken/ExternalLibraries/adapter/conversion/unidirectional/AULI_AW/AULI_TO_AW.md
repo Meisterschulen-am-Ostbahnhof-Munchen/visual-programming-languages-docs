@@ -71,3 +71,8 @@ Vergleichbare Bausteine sind z.B. **ULINT_TO_INT** oder **ULINT_TO_DWORD**, die 
 ## Fazit
 
 **AULI_TO_AW** ist ein praktischer, kompakter Konvertierungsbaustein, der die Lücke zwischen ULINT‑ und WORD‑Adapter‑Schnittstellen schließt. Durch die Kapselung der IEC‑Funktion in einem Composite‑FB wird der Anwender von Adapter‑Details entlastet und erhält eine saubere, ereignisgesteuerte Transformationslösung. Der Baustein eignet sich besonders für Szenarien, in denen Datenbreiten reduziert und gleichzeitig die Adapter‑Struktur beibehalten werden soll.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

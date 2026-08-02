@@ -54,3 +54,8 @@ Der Funktionsblock besitzt keine Zustandsautomaten oder Algorithmen. Er ist rein
 ## Fazit
 
 `ADI_SPLIT_9` ist ein einfacher, generischer Funktionsblock zur 1-zu-9-Verteilung eines unidirektionalen ADI-Signals. Er eignet sich für Anwendungen, die ein mehrfaches, identisches Weiterleiten von Adaptersignalen ohne zusätzliche Logik erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -83,3 +83,8 @@ Vergleich mit [E_RS](../../../../../StandardLibraries/events/E_RS.md)
 
 ## Fazit
 Der AX_RS Funktionsblock bietet eine einfache und effiziente Implementierung eines RS-Flip-Flops für 4diac-basierte Steuerungssysteme. Durch die Verwendung von Adaptern ermöglicht er eine flexible Integration in verschiedene Systemarchitekturen und eignet sich besonders für Anwendungen, die zuverlässige Zustandsspeicherung mit ereignisgesteuerter Aktualisierung benötigen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

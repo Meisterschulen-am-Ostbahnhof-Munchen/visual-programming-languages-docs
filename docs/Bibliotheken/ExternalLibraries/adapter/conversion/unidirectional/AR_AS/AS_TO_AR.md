@@ -60,3 +60,8 @@ Der `AS_TO_AR`‑Baustein besitzt keinen Zustandsautomaten (ECC). Das Verhalten 
 
 ## Fazit  
 `AS_TO_AR` ist ein einfacher, aber nützlicher Composite‑Baustein zur Adapter‑Typkonvertierung von SINT auf REAL. Er ermöglicht die verlustfreie Integration von Komponenten mit unterschiedlichen Datentypen in durchgängigen Steuerungsabläufen und zeichnet sich durch geringe Komplexität und direkte Durchleitung aus.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

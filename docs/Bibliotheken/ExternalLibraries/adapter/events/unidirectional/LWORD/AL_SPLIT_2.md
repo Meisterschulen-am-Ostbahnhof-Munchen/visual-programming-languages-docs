@@ -65,3 +65,8 @@ Der `AL_SPLIT_2` ist speziell für Adapter-Schnittstellen optimiert und bietet d
 ## Fazit
 
 Der `AL_SPLIT_2` ist ein einfacher, aber nützlicher generischer Funktionsblock zur Aufteilung unidirektionaler Adapter-Signale. Er ermöglicht eine flexible und strukturierte Signalverteilung in modularen Automatisierungslösungen, ohne zusätzliche Logik oder Zustandsabhängigkeiten. Sein generischer Charakter macht ihn universell einsetzbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -70,3 +70,8 @@ Der `ADI_SPLIT_8` FB besitzt keine internen Zustände oder einen ECC (Execution 
 ## Fazit
 
 `ADI_SPLIT_8` ist ein leistungsfähiger, generischer Split-Baustein für unidirektionale ADI-Adapter in IEC 61499 Anwendungen. Er reduziert den Verdrahtungsaufwand erheblich, erhöht die Übersichtlichkeit und ermöglicht die einfache Vervielfachung eines Adapterpfades. Durch die generische Parametrierung und den ereignislosen Betrieb eignet er sich besonders für datengetriebene Automatisierungssysteme, die eine zuverlässige und latenzarme Signalverteilung erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

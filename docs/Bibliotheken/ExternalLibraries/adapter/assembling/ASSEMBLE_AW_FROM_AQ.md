@@ -85,3 +85,8 @@ Der FB besitzt kein eigenes ECC (Execution Control Chart) – die interne Logik 
 ## Fazit
 
 Der Funktionsblock `ASSEMBLE_AW_FROM_AQ` stellt eine robuste und flexible Lösung dar, um aus acht unabhängigen Quarter-Daten (je 4 Bit) ein konsistentes 32-Bit-Wort zu erzeugen. Dank der adapterbasierten Schnittstellen und des integrierten D-Flipflops eignet er sich besonders für Echtzeitanwendungen, in denen Datenpakete asynchron eintreffen und zuverlässig zu einem Gesamtwert vereint werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

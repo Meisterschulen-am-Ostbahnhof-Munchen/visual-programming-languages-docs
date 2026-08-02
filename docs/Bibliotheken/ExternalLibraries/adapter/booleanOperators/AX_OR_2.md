@@ -64,3 +64,8 @@ Vergleich mit [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2
 
 ## Fazit
 Der AX_OR_2 Funktionsblock bietet eine zuverlässige und einfach zu integrierende Lösung für boolesche ODER-Verknüpfungen in Automatisierungssystemen. Seine Adapter-basierte Architektur ermöglicht eine flexible Verwendung in verschiedenen Steuerungskontexten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

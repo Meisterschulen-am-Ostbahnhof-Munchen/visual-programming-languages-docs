@@ -84,3 +84,8 @@ Es gibt zahlreiche Konvertierungsbausteine für direkte Datentypumwandlungen (z.
 ## Fazit
 
 Der Funktionsblock `ADI_TO_AB` bietet eine sauber gekapselte, adaptergestützte Konvertierung von DINT‑ nach BYTE‑Werten. Er nutzt Standard‑IEC‑Bausteine und Ereignissteuerung, sodass er sich nahtlos in 4diac‑Projekte integrieren lässt. Durch die Adapter‑Schnittstellen ist er besonders für modulare und wiederverwendbare Steuerungsanwendungen geeignet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

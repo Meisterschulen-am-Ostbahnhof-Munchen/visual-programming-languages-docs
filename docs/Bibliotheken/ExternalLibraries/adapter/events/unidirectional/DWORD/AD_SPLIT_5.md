@@ -65,3 +65,8 @@ Der Funktionsblock hat keine internen Zustände oder Schritte. Es handelt sich u
 ## Fazit
 
 Der Funktionsblock `AD_SPLIT_5` ist ein einfaches, aber nützliches Werkzeug zur Vervielfachung von Adaptersignalen in der 4diac-Entwicklungsumgebung. Durch seine generische Auslegung und den Verzicht auf eine Zustandsmaschine bietet er eine effiziente Möglichkeit, ein Adaptersignal ohne Code-Änderungen auf fünf parallele Pfade zu verteilen. Er ist ideal für modulare und skalierbare Automatisierungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

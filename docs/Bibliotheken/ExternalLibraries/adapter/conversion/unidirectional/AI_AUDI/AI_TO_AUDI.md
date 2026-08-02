@@ -92,3 +92,8 @@ Der Baustein `AI_TO_AUDI` kapselt nicht nur die Typkonvertierung, sondern auch d
 ## Fazit
 
 Der Composite-Baustein `AI_TO_AUDI` bietet eine einfache, aber saubere Lösung zur Konvertierung eines INT-basierten Adapterprotokolls in ein UDINT-basiertes Protokoll. Durch die Verwendung des genormten IEC‑Bausteins sowie die ereignisgesteuerte Kopplung ist er zuverlässig und leicht in größere 4diac‑Projekte integrierbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

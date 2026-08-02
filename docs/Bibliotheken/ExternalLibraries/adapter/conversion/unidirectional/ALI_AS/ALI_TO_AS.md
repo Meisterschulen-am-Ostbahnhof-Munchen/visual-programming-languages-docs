@@ -55,3 +55,8 @@ Der **ALI_TO_AS** zeichnet sich durch seine spezifische Adapter‑Schnittstelle 
 
 ## Fazit
 Der **ALI_TO_AS** ist ein spezialisierter Komposit‑Baustein zur verlustbehafteten Konvertierung eines LINT‑ in einen SINT‑Wert, eingebettet in eine unidirektionale Adapter‑Struktur. Er bietet eine saubere, wiederverwendbare Kapselung der Wandlungslogik und erleichtert die Anbindung unterschiedlichster Datenquellen und ‑senken innerhalb der 4diac‑Entwicklungsumgebung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -63,3 +63,8 @@ Als Composite-Baustein besitzt **ADI_TO_AD** keine eigenen expliziten Zustände.
 
 ## Fazit
 Der **ADI_TO_AD**-Funktionsblock ist ein nützlicher und übersichtlicher Composite-Baustein zur einfachen Anpassung zwischen DINT- und DWORD-basierten Adaptern. Er reduziert den manuellen Verschaltungsaufwand, nutzt bewährte IEC-Konvertierungslogik und fügt sich nahtlos in unidirektionale Datenflüsse ein. Ideal für Entwickler, die schnell und sauber zwischen Adaptertypen wechseln müssen, ohne tief in die interne Signalverarbeitung eingreifen zu wollen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

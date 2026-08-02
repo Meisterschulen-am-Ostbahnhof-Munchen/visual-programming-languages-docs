@@ -51,3 +51,8 @@ Der Baustein definiert keine eigenen Zustände. Die Zustandslogik liegt vollstä
 
 ## Fazit
 `AQ_TO_AX` ist ein schlanker, aber essentieller Adapter-Konverter, der die Lücke zwischen AQ- und AX-Schnittstellen schließt. Er vereinfacht die Integration von Quarter-Byte-Signalen in BOOL-basierte Steuerungen und trägt zur Wiederverwendbarkeit von Funktionsbausteinen in verschiedenen Adapter-Umgebungen bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

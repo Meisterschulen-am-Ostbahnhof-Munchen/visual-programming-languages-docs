@@ -62,3 +62,8 @@ Ein alternatives Design könnte einen generischen Konvertierungsbaustein mit par
 
 ## Fazit
 Der Funktionsblock **ADI_TO_AUI** bietet eine saubere, wartbare und standardisierte Möglichkeit, DINT‑Daten über einen ADI‑Adapter in ein UINT‑Signal über einen AUI‑Adapter umzuwandeln. Durch die Verwendung eines IEC 61131‑Kernbausteins ist die Konvertierung normkonform und zuverlässig. Der Composite‑Ansatz erhöht die Wiederverwendbarkeit und vereinfacht das Engineering in verteilten Automatisierungssystemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -66,3 +66,8 @@ Da es sich um einen Composite‑FB handelt, existiert kein eigener Zustandsautom
 ## Fazit
 
 Der `AL_TO_ALI`-Funktionsblock ist ein einfacher, aber wichtiger Konverter, der die Lücke zwischen LWORD‑basierten und LINT‑basierten Adapter‑Schnittstellen schließt. Durch seine composite‑Struktur bleibt er übersichtlich und kann flexibel in bestehende 4diac‑Projekte integriert werden. Die Verwendung von Standard‑Konvertierungsbausteinen gewährleistet eine korrekte und effiziente Typumwandlung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

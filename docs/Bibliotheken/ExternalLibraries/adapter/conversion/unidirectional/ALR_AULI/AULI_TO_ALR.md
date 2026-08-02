@@ -79,3 +79,8 @@ Statt eines speziellen Adapterkonverters könnte man auch direkt den Baustein `F
 ## Fazit
 
 Der **AULI_TO_ALR** ist ein nützlicher, spezialisierter Funktionsbaustein für die Umwandlung von ULINT- in LREAL-Werte im Kontext von Adaptern. Er vereinfacht die Einbindung von Komponenten mit unterschiedlichen Datentypen in einheitliche Adapterstrukturen und erhöht die Wartbarkeit von IEC-61499-Systemen. Durch die Verwendung einer standardisierten Konvertierungsfunktion und seiner klaren, ereignisgesteuerten Arbeitsweise ist er zuverlässig und leicht verständlich.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -62,3 +62,8 @@ Der Baustein hat keine eigene Zustandsmaschine. Sein Verhalten ist rein reaktiv:
 
 ## Fazit
 Der `ADI_TO_AL`‑Baustein bietet eine saubere, auf wenige Elemente reduzierte Lösung zur Typumwandlung von DINT nach LWORD über unidirektionale Adapter. Er ist leicht in bestehende 4diac‑Projekte integrierbar, benötigt keine eigenen Zustandsmodellierungen und profitiert von der Wiederverwendbarkeit des internen Standard‑Konvertierungsbausteins. Damit eignet er sich hervorragend für alle Anwendungen, bei denen eine schnelle und zuverlässige Datenanpassung zwischen unterschiedlichen Adapter‑Typen erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

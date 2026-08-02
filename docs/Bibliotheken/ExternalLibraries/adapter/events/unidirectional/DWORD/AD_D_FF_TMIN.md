@@ -80,3 +80,8 @@ Der Baustein selbst besitzt keinen expliziten Zustandsautomaten (keine ECC‑Def
 ## Fazit
 
 Der **AD_D_FF_TMIN** erweitert das klassische D‑Flip‑Flop um eine zeitliche Filterfunktion, die über den Parameter `Tmin` konfiguriert wird. Seine Adapter‑Schnittstelle erlaubt eine saubere Kapselung von Ereignis und Daten in einem Stecker, was die Integration in komplexe Automatisierungssysteme vereinfacht. Der Baustein ist ideal für Anwendungen, bei denen eine minimale Ereignisdistanz sichergestellt werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

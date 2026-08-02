@@ -58,3 +58,8 @@ Der Vorteil von `AUDI_TO_AX` liegt in der nahtlosen Integration in eine Adapter-
 
 ## Fazit
 Der Funktionsblock `AUDI_TO_AX` ist ein spezialisierter, aber sehr nützlicher Konverter für die unidirektionale Übertragung eines UDINT-Wertes auf ein BOOL-Signal. Durch die klare Kapselung der Vergleichslogik und die Verwendung von Standard-Adaptern vereinfacht er die Signalkette in IEC‑61499-basierten Automatisierungssystemen. Er ist robust, einfach zu verstehen und benötigt keine aufwändige Konfiguration – ideal für häufige Aufgaben wie die binäre Auswertung von Zählerständen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

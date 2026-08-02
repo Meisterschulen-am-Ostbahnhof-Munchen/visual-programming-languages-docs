@@ -48,3 +48,8 @@ Der Baustein besitzt keine eigenen Zustände. Die Signalweitergabe erfolgt konti
 
 ## Fazit
 **ALR_SPLIT_4** ist ein einfacher, aber essentieller Baustein zur Vervielfachung von Adapterverbindungen. Seine generische Auslegung ermöglicht den Einsatz mit verschiedenen ALR‑Adaptertypen, ohne dass eine Anpassung der Bausteinlogik erforderlich ist. Er eignet sich besonders für modulare Architekturen, in denen ein Signal parallel an mehrere Empfänger verteilt werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

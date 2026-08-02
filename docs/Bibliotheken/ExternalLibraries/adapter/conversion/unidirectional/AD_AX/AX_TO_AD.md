@@ -51,3 +51,8 @@ Der `AX_TO_AD` FB besitzt keinen eigenen internen Zustand. Sein Verhalten ist re
 
 ## Fazit
 Der `AX_TO_AD` FB bietet eine einfache und saubere Möglichkeit, einen BOOL-Adapter in einen DWORD-Adapter umzuwandeln, ohne dass der Anwender selbst Konvertierungslogik schreiben muss. Er eignet sich ideal für die Kopplung unterschiedlicher Adapter-Welten in 4diac-Projekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

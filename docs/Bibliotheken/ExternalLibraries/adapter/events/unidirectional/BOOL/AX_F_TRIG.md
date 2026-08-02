@@ -64,3 +64,8 @@ Da es sich um einen Composite Function Block handelt, besitzt der **AX_F_TRIG** 
 ## Fazit
 
 Der **AX_F_TRIG** ist ein spezialisierter Utility-Baustein für die strukturierte Ereignisverarbeitung in 4diac. Er vereinfacht den Umgang mit `AX`-Adaptern erheblich, indem er die Logik zur Erkennung des "Low"-Zustands (fallende Flanke) abstrahiert und direkt als Ereignis `EO` zur Verfügung stellt, ohne dass der Anwender das Adapter-Signal manuell aufspalten und prüfen muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

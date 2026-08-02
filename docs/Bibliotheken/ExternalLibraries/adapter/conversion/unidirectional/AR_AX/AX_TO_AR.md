@@ -62,3 +62,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten. Er reagiert **ereignisge
 
 ## Fazit
 Der Baustein **AX_TO_AR** stellt eine kompakte und robuste Lösung zur Konvertierung boolescher Adapter‑Signale in REAL‑Werte dar. Durch die Nutzung von `F_SEL` und die Kapselung als Composite-FB ist er einfach zu integrieren, erweiterbar und ideal für adapterorientierte Automatisierungsarchitekturen geeignet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

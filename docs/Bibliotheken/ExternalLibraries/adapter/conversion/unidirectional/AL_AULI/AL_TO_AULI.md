@@ -73,3 +73,8 @@ Der FB **AL_TO_AULI** besitzt keine eigene Zustandsmaschine – er delegiert die
 ## Fazit
 
 Der **AL_TO_AULI**‑Funktionsblock bietet eine einfache und robuste Möglichkeit, LWORD‑Daten über Adapter in ULINT‑Daten umzuwandeln. Durch die Kapselung der Konvertierungslogik in einem Composite FB bleibt die Schnittstelle klar und wiederverwendbar. Er eignet sich besonders für modulare IEC‑61499‑Projekte, in denen Adapter als standardisierte Kommunikationsschnittstellen eingesetzt werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

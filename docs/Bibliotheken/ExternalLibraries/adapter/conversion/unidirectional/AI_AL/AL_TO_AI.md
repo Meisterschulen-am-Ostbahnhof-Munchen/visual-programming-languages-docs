@@ -50,3 +50,8 @@ Der Composite-Baustein besitzt keine eigenen Zustände. Das Verhalten wird volls
 
 ## Fazit
 Der **AL_TO_AI**-Funktionsblock ist ein nützlicher, schlanker Konverter für den Wechsel zwischen unidirektionalen LWORD- und INT-Adaptern. Er kapselt die bewährte IEC 61131-3-Konvertierung in eine adaptergerechte Form und erleichtert so die Wiederverwendung und den Austausch von Komponenten in IEC 61499-basierten Systemen. Durch seine Ereignissteuerung fügt er sich nahtlos in ereignisgesteuerte Abläufe ein und erfordert keine zusätzliche Konfiguration.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

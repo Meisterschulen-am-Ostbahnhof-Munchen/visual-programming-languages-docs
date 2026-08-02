@@ -68,3 +68,8 @@ Der Baustein besitzt keine eigene Zustandsmaschine. Der Ablauf wird vollständig
 ## Fazit
 
 `AW_TO_AUS` ist ein einfacher, aber nützlicher Composite FB zur Konvertierung von `WORD`-Adapter-Signalen in `USINT`-Adapter-Signale. Er nutzt eine bewährte IEC 61131-3 Standardfunktion und bietet eine saubere, adapterbasierte Schnittstelle. Der Baustein erfordert keine eigene Konfiguration und fügt sich nahtlos in ereignisgesteuerte Abläufe ein. Er eignet sich besonders für Anwendungen, bei denen eine schnelle und zuverlässige Datentypanpassung ohne zusätzliche Logik gewünscht ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

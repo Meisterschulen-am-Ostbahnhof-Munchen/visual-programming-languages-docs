@@ -54,3 +54,8 @@ Der FB besitzt kein explizites Zustandsdiagramm. Da keine Ereignisse verarbeitet
 
 ## Fazit
 Der AI_SPLIT_5 ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfältigung eines analogen Signals. Seine generische Natur und die klare Adapter-Schnittstelle machen ihn zu einem idealen Baustein für modulare Automatisierungslösungen, bei denen ein Analogwert mehrfach benötigt wird. Die fehlende Ereignissteuerung reduziert die Komplexität und ermöglicht eine direkte Signalweitergabe ohne zeitliche Verzögerungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

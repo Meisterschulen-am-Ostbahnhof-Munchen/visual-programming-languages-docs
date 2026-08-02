@@ -54,3 +54,8 @@ Der **AR_TO_AI** besitzt keine interne Zustandsmaschine. Die Funktionsweise ist 
 
 ## Fazit
 Der **AR_TO_AI** ist ein kompakter, adapterbasierter Konvertierungsbaustein, der die Umwandlung von REAL‑ nach INT‑Daten in ereignisgesteuerten 4diac‑Netzwerken ermöglicht. Durch die Kapselung des Standardbausteins `F_REAL_TO_INT` in eine Adapterschnittstelle wird die Integration in bestehende Adapter–Sockets‑Architekturen vereinfacht und die Lesbarkeit des Gesamtsystems erhöht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

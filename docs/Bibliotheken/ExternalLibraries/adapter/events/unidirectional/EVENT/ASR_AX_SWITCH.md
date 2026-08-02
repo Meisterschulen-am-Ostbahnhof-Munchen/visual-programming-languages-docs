@@ -98,3 +98,8 @@ Der ASR_AX_SWITCH ist speziell für asynchrone Set/Reset-Signale optimiert und i
 ## Fazit
 
 Der **ASR_AX_SWITCH** ist ein kompakter, effizienter Demultiplexer für die gerichtete Weiterleitung von ASR-Steuerereignissen. Durch die adapterbasierte Schnittstelle und die klare Entscheidungslogik eignet er sich hervorragend für modulare Automatisierungsprojekte, bei denen ein einzelnes Steuersignal wahlweise auf verschiedene Pfade geschaltet werden muss. Die einfache Zustandsmaschine garantiert schnelle, deterministische Reaktionszeiten ohne Seiteneffekte.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -79,3 +79,8 @@ Gegensätzlich zu einem Merge-Baustein dient `AD_SPLIT_7` ausschließlich der Ve
 
 ## Fazit
 `AD_SPLIT_7` ist ein einfacher, aber nützlicher Baustein zur passiven Signalvervielfachung in adapterbasierten 4diac-Anwendungen. Seine generische Natur und die Unabhängigkeit von Ereignissen machen ihn ideal für reine Datenflussarchitekturen. Für Anwendungen, die eine höhere Anzahl paralleler Ausgänge benötigen, kann der Baustein durch Anpassung des GenericClassName erweitert werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

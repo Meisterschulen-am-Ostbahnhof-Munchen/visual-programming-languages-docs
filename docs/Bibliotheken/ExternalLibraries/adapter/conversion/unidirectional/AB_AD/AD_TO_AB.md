@@ -63,3 +63,8 @@ Der **AD_TO_AB** unterscheidet sich durch die spezifische Ziel‑Datenbreite und
 
 ## Fazit
 Der Composite‑Baustein **AD_TO_AB** bietet eine einfache, ereignisgesteuerte Möglichkeit zur Konvertierung eines DWORD‑Adapters in einen BYTE‑Adapter. Er kapselt die Typumwandlung sauber und kann ohne eigene Zustandslogik in bestehende 4diac‑Netzwerke integriert werden. Die Wiederverwendung des standardisierten **F_DWORD_TO_BYTE**‑Bausteins garantiert korrektes Verhalten gemäß IEC 61131‑3.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

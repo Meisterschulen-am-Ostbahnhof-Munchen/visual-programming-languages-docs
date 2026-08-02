@@ -55,3 +55,8 @@ Im Vergleich zu einfachen Splitter-Blöcken bietet AE2_SPLIT_MERGE_FORWARD zusä
 
 ## Fazit
 Der AE2_SPLIT_MERGE_FORWARD ist ein vielseitiger Funktionsblock für komplexe Ereignisverteilungs- und Sammelaufgaben in 4diac-Systemen. Seine bidirektionale Natur und die Adapter-Schnittstellen machen ihn besonders geeignet für modulare und erweiterbare Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

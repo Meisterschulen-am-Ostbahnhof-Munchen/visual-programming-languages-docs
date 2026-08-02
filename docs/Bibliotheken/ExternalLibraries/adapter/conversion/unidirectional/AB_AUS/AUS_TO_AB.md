@@ -69,3 +69,8 @@ Da es sich um einen Composite‑FB ohne eigene ECC (Execution Control Chart) han
 
 ## Fazit
 Der **AUS_TO_AB** ist ein nützlicher und leichter Baustein zur Umwandlung eines **AUS-Adapters (USINT)** in einen **AB-Adapter (BYTE)**. Seine Composite‑Struktur minimiert Implementierungsaufwand, während die Verwendung eines standardisierten Konvertierungsblocks die Zuverlässigkeit sichert. Der Baustein eignet sich besonders für die schnelle Integration heterogener Adapter‑Schnittstellen in IEC 61499‑basierten Steuerungssystemen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -87,3 +87,8 @@ Der `ADI_TO_AW` ist speziell für Umgebungen optimiert, in denen Adapter als sta
 ## Fazit
 
 Der Funktionsblock `ADI_TO_AW` stellt eine wiederverwendbare, adapterbasierte Lösung zur Konvertierung von `DINT` nach `WORD` dar. Er kapselt die Konvertierungslogik sauber und ermöglicht eine einfache Integration in 4diac-Architekturen, die auf dem Adapter-Konzept basieren. Durch die Verwendung von Standardbibliotheken ist die Funktion zuverlässig und spezifikationstreu. Der Baustein eignet sich besonders für Szenarien, bei denen unterschiedliche Datenformate über Adapterbrücken verbunden werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

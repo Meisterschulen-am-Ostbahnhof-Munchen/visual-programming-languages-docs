@@ -67,3 +67,8 @@ Im 4diac‑Ökosystem existieren einfache Konvertierungsbausteine wie `INT_TO_RE
 ## Fazit
 
 `AUDI_TO_ALR` ist ein minimaler, aber nützlicher Composite‑Baustein, um zwei unidirektionale Adapter mit unterschiedlichen Datentypen zu koppeln. Er reduziert den Verdrahtungsaufwand und macht die Typanpassung explizit sichtbar. Der Baustein sollte immer dann eingesetzt werden, wenn eine saubere Trennung zwischen Adapter‑Typen und eine einfache Durchleitung von Ereignis und Daten gewünscht ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

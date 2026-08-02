@@ -93,3 +93,8 @@ Der vorliegende Baustein deckt die Konvertierung von einem 8‑Bit‑Vorzeichen�
 
 ## Fazit
 `AS_TO_AULI` ist ein einfacher, aber wichtiger zusammengesetzter Baustein zur Typanpassung zwischen SINT- und ULINT-Adaptern. Er kapselt die IEC 61131-Konvertierung und ermöglicht eine typsichere, ereignisgesteuerte Integration in Automatisierungssysteme. Durch seine klare Schnittstellenstruktur und die Verwendung von Standardbibliotheken ist er wartbar, wiederverwendbar und leicht in bestehende 4diac‑IDE‑Projekte einbindbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

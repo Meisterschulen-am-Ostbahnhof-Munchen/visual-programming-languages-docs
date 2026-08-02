@@ -88,3 +88,9 @@ Der `AX_D_FF_TMIN` vereint die latchende Datenübernahme eines Flip‑Flops mit 
 ## Fazit
 
 Der **AX_D_FF_TMIN** ist ein spezialisierter Funktionsblock für Anwendungen, die eine getaktete Datenübernahme mit garantierter Mindestzeit zwischen Ausgabeereignissen benötigen. Die Kapselung des Standardbausteins `E_D_FF_TMIN` und die Adapter‑Schnittstelle erleichtern die Integration in modulare 4diac‑Projekte. Der Baustein bietet eine saubere Trennung von Initialisierung und dynamischem Betrieb und eignet sich insbesondere für zeitkritische, ereignisgesteuerte Systeme.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -70,3 +70,8 @@ Vergleich mit [E_TOF](../../../../../../StandardLibraries/events/timers/E_TOF.md
 
 ## Fazit
 Der AX_TOF Funktionsblock bietet eine zuverlässige und standardisierte Lösung für Ausschaltverzögerungen in 4diac-basierten Steuerungssystemen. Durch die Verwendung von Adapter-Schnittstellen ermöglicht er eine flexible Integration in komplexere Funktionsbaustein-Netzwerke.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

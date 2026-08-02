@@ -49,3 +49,8 @@ Da der FB weder Ereigniseingänge noch einen Ausführungszustand besitzt, existi
 
 ## Fazit
 Der A2X_SPLIT_8 ist ein einfacher, aber nützlicher Baustein zur Vervielfältigung von A2X-Signalen in Automatisierungsprojekten. Durch seine generische Auslegung und die klare Trennung von Eingang und Ausgängen bietet er eine saubere und wiederverwendbare Lösung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

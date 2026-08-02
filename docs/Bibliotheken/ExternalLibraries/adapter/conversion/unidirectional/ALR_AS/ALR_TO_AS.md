@@ -67,3 +67,8 @@ Im Vergleich zu einer direkten Verdrahtung eines `F_LREAL_TO_SINT`‑Bausteins m
 ## Fazit
 
 Der `ALR_TO_AS`‑Funktionsblock ist eine saubere, adapterbasierte Lösung zur Umwandlung von LREAL‑ in SINT‑Werte in der 4diac‑IDE. Durch die Composite‑Struktur und die Verwendung standardisierter IEC‑Konvertierungsbausteine gewährleistet er eine zuverlässige, ereignisgesteuerte Datenkonvertierung und erleichtert die Integration in modulare Automatisierungssysteme.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

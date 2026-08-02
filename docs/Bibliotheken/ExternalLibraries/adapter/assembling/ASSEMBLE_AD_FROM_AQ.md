@@ -79,3 +79,8 @@ Der vorliegende Baustein zeichnet sich durch die Kapselung der Adapter‑Schnitt
 ## Fazit
 
 `ASSEMBLE_AD_FROM_AQ` ist ein spezialisierter Adapter‑Baustein zur Zusammenführung von 16 Byte‑breiten Quarter‑Daten in ein DWORD. Seine rein adapterbasierte Schnittstelle macht ihn flexibel einsetzbar, während die interne Synchronisation durch einen Flip‑Flop die Datenkonsistenz bei asynchronen Ereignissen gewährleistet. Er eignet sich hervorragend für den Einsatz in modularen IEC 61499‑Anwendungen, bei denen Daten in kleineren Einheiten ankommen und erst auf Empfängerseite zu einem vollständigen Wort zusammengesetzt werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

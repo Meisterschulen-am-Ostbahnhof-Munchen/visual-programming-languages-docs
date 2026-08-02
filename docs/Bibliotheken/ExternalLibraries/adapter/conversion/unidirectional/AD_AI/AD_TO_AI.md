@@ -77,3 +77,8 @@ Andere ähnliche Composite‑Bausteine unterscheiden sich hauptsächlich in der 
 ## Fazit
 
 Der Composite‑FB **AD_TO_AI** ist ein nützliches Werkzeug zur Typanpassung zwischen DWORD‑ und INT‑Adaptern. Er kapselt die Konvertierungslogik in einer sauberen, ereignisgesteuerten Schnittstelle und erleichtert so die Wiederverwendbarkeit und Integration in bestehende 4diac‑Projekte. Seine einfache Struktur und die Verwendung eines bewährten Standardbausteins machen ihn zuverlässig und leicht verständlich. Anwender sollten jedoch stets die Grenzen des INT‑Datentyps im Auge behalten, um unbeabsichtigte Datenverluste zu vermeiden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

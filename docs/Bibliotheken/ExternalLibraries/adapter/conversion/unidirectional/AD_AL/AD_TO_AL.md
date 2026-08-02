@@ -76,3 +76,8 @@ Im Gegensatz zu Bausteinen mit eigener Logik beschränkt sich `AD_TO_AL` auf das
 ## Fazit
 
 Der Funktionsblock `AD_TO_AL` ist ein schlanker, aber wertvoller Helfer zur Adapter-Konvertierung in der 4diac-IDE. Er reduziert manuellen Verdrahtungsaufwand und erhöht die Wiederverwendbarkeit von Komponenten, die auf unterschiedliche Adapterstandards setzen. Dank seiner einfachen Struktur ist er robust, performant und leicht verständlich – ideal für die typische Arbeit mit unidirektionalen Adapterflüssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -49,3 +49,8 @@ Der Baustein besitzt kein eigenes Zustandsdiagramm, da er rein passiv arbeitet. 
 
 ## Fazit
 Der **ASR_SPLIT_2** ist ein einfacher, aber nützlicher generischer Baustein zur Vervielfachung von ASR-Signalen. Durch die Verwendung von plattformunabhängigen Adaptern und die rein passive Funktionsweise eignet er sich für alle Szenarien, in denen ein Dienstsignal auf mehrere Pfade verteilt werden muss. Seine Integration erfolgt ohne Konfigurationsaufwand und ohne Seiteneffekte auf die übertragenen Daten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -76,3 +76,8 @@ Die Zustände `G0` und `G1` werden unmittelbar nach der Ausgabe wieder verlassen
 ## Fazit
 
 Der `AE_AX_SWITCH` ist ein kompakter, effizienter Demultiplexer für Ereignisse auf Basis eines booleschen Schaltsignals. Seine adapterbasierte Schnittstelle erlaubt eine flexible Integration in IEC 61499-Systeme, während das deterministische Verhalten eine zuverlässige Weiterleitung gewährleistet. Er eignet sich besonders für Anwendungen, in denen ein Ereignis je nach Zustand einer Bedingung an unterschiedliche Verarbeitungspfade gesendet werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -48,3 +48,8 @@ Der FB besitzt keine interne Zustandsmaschine (ECC). Es gibt keine definierten Z
 
 ## Fazit
 Der **AI_SPLIT_8** ist ein einfacher, generischer Funktionsblock zur Vervielfachung eines analogen Signals. Seine klare Struktur – ein Eingang, acht Ausgänge, keine Ereignisse – macht ihn ideal für die unkomplizierte Signalverteilung in Automatisierungsanwendungen. Der generische Charakter erlaubt eine flexible Anpassung an verschiedene analoge Datentypen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

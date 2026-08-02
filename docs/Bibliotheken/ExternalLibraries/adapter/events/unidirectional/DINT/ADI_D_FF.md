@@ -70,3 +70,8 @@ Der FB besitzt keine expliziten Zustände im Sinne einer Zustandsmaschine. Das V
 ## Fazit
 
 Der `ADI_D_FF` ist ein kompakter, adapterbasierter D‑Flipflop‑Baustein für die 4diac‑IDE. Er bietet eine saubere Trennung von Takt und Datum und ist ideal für den Einsatz in ereignisgesteuerten Automatisierungslösungen geeignet. Die Kapselung durch Adapter erhöht die Wiederverwendbarkeit und vereinfacht die Integration in bestehende Projekte.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

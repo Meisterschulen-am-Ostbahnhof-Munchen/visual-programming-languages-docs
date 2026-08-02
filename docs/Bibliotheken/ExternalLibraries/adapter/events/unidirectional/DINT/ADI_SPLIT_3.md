@@ -68,3 +68,8 @@ Der `ADI_SPLIT_3` ist speziell für den Fall optimiert, dass genau drei identisc
 ## Fazit
 
 Der **ADI_SPLIT_3** ist ein einfacher, aber nützlicher generischer Baustein zur Vervielfachung von ADI-Datenströmen auf drei Wege. Durch seine reine Adapter-Schnittstelle lässt er sich nahtlos in bestehende 4diac-Projekte integrieren, ohne zusätzliche Ereignis- oder Datenverarbeitung zu erfordern. Er eignet sich besonders für passive Signalverteilungen in modularen, adapterbasierten Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -52,3 +52,9 @@ Die Automatisierungspyramide zeigt, dass auf den unteren Ebenen (Feld- und Steue
 *   [Video: IEC 61131 vs. IEC 61499 (IEEE Webinar)](https://resourcecenter.ies.ieee.org/education/webinars/IESWEB0230.html)
 *   [Wikipedia: Visuelle Programmiersprache](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
 *   [M5Stack UIFlow Dokumentation](https://m5stack.github.io/UIFlow_doc/en/)
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)
+* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

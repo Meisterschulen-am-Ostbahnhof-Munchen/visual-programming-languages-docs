@@ -63,3 +63,8 @@ Andere Split‑ oder Fanout‑Bausteine bieten meist eine feste Anzahl von Ausg�
 ## Fazit
 
 Der `ALI_SPLIT_5` ist ein einfacher, aber essenzieller Baustein zur Vervielfachung eines ALI‑Signals. Aufgrund seiner generischen Natur lässt er sich problemlos in verschiedene 4diac‑Projekte integrieren und vereinfacht die Signalverteilung in komplexen Automatisierungsarchitekturen. Er ist wartungsarm, da er keine eigene Logik enthält, und trägt zur Modularisierung und Wiederverwendbarkeit von ALI‑Verbindungen bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

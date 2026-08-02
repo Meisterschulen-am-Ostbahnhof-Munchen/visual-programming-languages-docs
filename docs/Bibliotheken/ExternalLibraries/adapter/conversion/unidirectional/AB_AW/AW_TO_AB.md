@@ -61,3 +61,8 @@ Der Composite-Baustein besitzt keinen eigenen Zustandsautomaten. Die Funktionswe
 
 ## Fazit
 `AW_TO_AB` ist ein einfacher, aber nützlicher Composite-Baustein zur Umwandlung eines WORD-Adapters in einen BYTE-Adapter. Er reduziert den Verdrahtungsaufwand in 4diac‑Applikationen und gewährleistet eine konsistente Konvertierung durch Wiederverwendung des Standardbausteins `F_WORD_TO_BYTE`. Anwender sollten sich des möglichen Datenverlusts durch die Reduzierung der Bitbreite bewusst sein.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

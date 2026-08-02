@@ -67,3 +67,8 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten. Seine Funktionsweise ist 
 
 ## Fazit
 Der **AS_TO_AD**-Funktionsblock ist ein spezialisierter Adapter-Konverter, der eine nahtlose Integration eines SINT-basierten Datenpfades in eine DWORD-basierte Architektur ermöglicht. Durch die Nutzung des standardisierten Bausteins `F_SINT_TO_DWORD` und die Implementierung als Composite FB ist er zuverlässig, erweiterbar und einfach in bestehende 4diac-Projekte einzubinden. Seine unidirektionale Auslegung macht ihn ideal für Anwendungen, bei denen Daten nur in eine Richtung fließen müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

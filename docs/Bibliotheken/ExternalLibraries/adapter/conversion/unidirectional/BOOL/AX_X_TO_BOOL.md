@@ -61,3 +61,8 @@ Im Vergleich zu anderen Konvertierungsbausteinen zeichnet sich AX_X_TO_BOOL durc
 
 ## Fazit
 AX_X_TO_BOOL ist ein spezialisierter Konvertierungsbaustein, der eine effiziente und zuverlässige Umwandlung von AX-Daten in BOOL-Werte ermöglicht. Seine einfache Struktur und direkte Funktionsweise machen ihn besonders geeignet für Systeme, in denen performante Datentyp-Konvertierung erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

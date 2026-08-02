@@ -54,3 +54,8 @@ Da es sich um einen Composite Function Block handelt, besitzt dieser Baustein ke
 
 ## Fazit
 Der **AX_R_TRIG** ist ein spezialisierter Baustein für die 4diac-Umgebung, der die Logik einer steigenden Flankenerkennung oder eines High-Pass-Filters nahtlos in Designs integriert, die `AX`-Adapter verwenden. Er vereinfacht das Netzwerk, indem er das explizite Aufsplitten von Adapter-Signalen zur Prüfung unnötig macht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

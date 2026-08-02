@@ -72,3 +72,8 @@ Anschließend kehrt der interne Baustein in den IDLE-Zustand zurück.
 ## Fazit
 
 Der Funktionsblock `ALI_TO_AW` ist ein praktischer und wiederverwendbarer Baustein zur Konvertierung von LINT‑ auf WORD‑Adaptern. Er kapselt die typische IEC-61131-3‑Wandlung in einer adapterfreundlichen Hülle und vereinfacht so die Integration in bestehende oder neue 4diac‑Projekte. Seine klare unidirektionale Schnittstelle und die Einhaltung des Eclipse‑Public‑License‑Modells machen ihn zu einer soliden Komponente für Automatisierungslösungen, die unterschiedliche Datenbreiten verbinden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

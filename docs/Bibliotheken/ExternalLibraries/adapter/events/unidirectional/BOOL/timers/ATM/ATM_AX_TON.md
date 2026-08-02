@@ -94,3 +94,8 @@ Der **ATM_AX_TON** unterscheidet sich durch seine reine Adapterschnittstelle und
 ## Fazit
 
 Der **ATM_AX_TON** ist ein fertig konfektionierter On-Delay-Timer mit einer modernen, adapterbasierten Anbindung. Er vereinfacht die Einbindung von Zeitverzögerungen in größere Systeme, die bereits das AX/AT-Konzept verwenden. Der nicht angeschlossene **EIPT**-Eingang bietet Potenzial für zukünftige Erweiterungen oder kundenspezifische Anpassungen. Insgesamt ist der Baustein robust, gut dokumentiert und unter freier Lizenz verfügbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

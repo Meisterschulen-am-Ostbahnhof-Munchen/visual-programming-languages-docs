@@ -70,3 +70,8 @@ Es existieren vergleichbare Konvertierungsbausteine für andere Datentypen, z. B
 ## Fazit
 
 Der Baustein **AUI_TO_AD** bietet eine saubere, auf Adapter basierende Lösung zur Umwandlung von UINT- in DWORD-Werte. Er ist einfach zu verwenden, erfordert keine eigene Programmierung und fügt sich nahtlos in die 4diac-Welt mit Ereignis- und Adapternetzwerken ein. Durch die Kapselung des Standardkonverters bleibt die Funktionalität robust und normkonform. Der Baustein eignet sich besonders für Anwendungen, bei denen unterschiedliche Adaptertypen harmonisiert werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

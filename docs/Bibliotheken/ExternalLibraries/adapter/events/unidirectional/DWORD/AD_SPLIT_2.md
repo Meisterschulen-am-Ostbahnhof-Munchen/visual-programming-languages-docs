@@ -50,3 +50,8 @@ Der Funktionsblock hat keine expliziten Zustände. Er arbeitet kontinuierlich un
 
 ## Fazit
 Der AD_SPLIT_2 ist ein einfacher, aber effektiver Baustein zur Signalverteilung in Adapter-basierten Architekturen. Seine generische Natur und die fehlende Zustandslogik machen ihn leicht konfigurierbar und ressourcenschonend. Er eignet sich besonders für modulare Automatisierungsprojekte, in denen ein Adaptersignal auf mehrere nachgelagerte Komponenten verteilt werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

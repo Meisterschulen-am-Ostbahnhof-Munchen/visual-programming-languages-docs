@@ -60,3 +60,8 @@ Der Baustein hat keine expliziten Zustände. Die interne Logik (Flip‑Flop) ken
 
 ## Fazit
 Der `ALR_D_FF` ist ein schlanker, aber zuverlässiger D‑Flip‑Flop‑Baustein für den Einsatz in adapterorientierten 4diac‑Anwendungen. Er kombiniert die bewährte IEC‑61499‑Standardlogik mit einer klar strukturierten Adapter‑Schnittstelle und eignet sich besonders für modulare, wiederverwendbare Steuerungssysteme.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -104,3 +104,8 @@ Während der Basisbaustein `F_INT_TO_ULINT` nur die Datenkonvertierung vornimmt,
 ## Fazit
 
 Der Funktionsblock `AI_TO_AULI` bietet eine saubere, adapterbasierte Lösung zur Konvertierung von `INT`‑ nach `ULINT`‑Daten. Er reduziert den manuellen Aufwand und die Fehleranfälligkeit bei der Typanpassung und lässt sich nahtlos in bestehende 4diac‑Projekte integrieren. Dank seiner einfachen, ereignisgetriggerten Struktur ist er besonders für unidirektionale Datenflüsse geeignet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

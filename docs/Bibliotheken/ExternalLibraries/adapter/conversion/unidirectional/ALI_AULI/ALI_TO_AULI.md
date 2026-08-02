@@ -57,3 +57,8 @@ In der Bibliothek existieren analoge Konverter für andere Datentypen, z. B. `
 
 ## Fazit
 Der `ALI_TO_AULI`‑Baustein bietet eine einfache und zuverlässige Möglichkeit, LINT‑Adapter in ULINT‑Adapter umzuwandeln. Er kapselt die Standardkonvertierung sauber in einer adapterbasierten Architektur und trägt so zur Wiederverwendbarkeit und Interoperabilität von 4diac‑Anwendungen bei. Durch die Verwendung des bewährten IEC‑Bausteins ist die Konvertierung korrekt und plattformunabhängig.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

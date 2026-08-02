@@ -57,3 +57,8 @@ Der FB besitzt keine eigene Zustandsmaschine (ECC). Die Ausgangssignale sind ste
 ## Fazit
 
 Der **A2X_SPLIT_7** ist ein einfacher, aber nützlicher Funktionsbaustein zur Signalvervielfachung in A2X-basierten Adaptersystemen. Durch seinen generischen Charakter und die klare Schnittstelle eignet er sich hervorragend für modulare Automatisierungslösungen mit der 4diac-IDE.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -52,3 +52,8 @@ Typische Konvertierungsbausteine (z. B. `CONV` aus der Standardbibliothek) fü
 
 ## Fazit
 Der Funktionsblock `AUS_TO_AR` ist ein einfacher Adapter-zu-Adapter-Through-Pass-Baustein. Seine Nützlichkeit hängt stark davon ab, ob das Zielsystem automatische Typkonvertierungen zwischen USINT und REAL unterstützt. Ist dies nicht der Fall, muss der FB um eine explizite Konvertierungslogik erweitert werden. Er eignet sich daher als temporäre Lösung oder als Grundgerüst für eine vollständige Implementierung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

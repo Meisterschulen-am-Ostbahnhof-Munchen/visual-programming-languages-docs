@@ -72,3 +72,8 @@ Der Baustein besitzt keine eigenen Zustände, da er ausschließlich aus direkten
 ## Fazit
 
 `AUI_TO_AULI` ist ein schlanker, spezialisierter Composite-Baustein zur Umwandlung eines AUI-Adapters in einen AULI-Adapter. Er vereinfacht die Typanpassung zwischen 16-Bit- und 64-Bit-Adressierung in IEC 61499-Systemen, indem er sowohl Ereignis- als auch Datenpfade automatisch konvertiert und weiterleitet. Dank der impliziten Typkonvertierung von `UINT` nach `ULINT` entfällt die manuelle Implementierung von Konvertierungslogik, was den Entwurf modularer und wiederverwendbarer Steuerungsanwendungen erleichtert.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

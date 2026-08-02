@@ -54,3 +54,8 @@ Es existieren analoge Adapter-Konvertierungsbausteine für andere Datentypen (z.
 ## Fazit
 
 Der Composite FB AUI_TO_ALI bietet eine einfache und zuverlässige Möglichkeit, UINT-Daten über AUI-Adapter in LINT-Daten über ALI-Adapter zu konvertieren. Er ist gut gekapselt, nutzt Standardbausteine und kann leicht in 4diac-Projekte integriert werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

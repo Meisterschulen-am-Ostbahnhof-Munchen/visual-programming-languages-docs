@@ -71,3 +71,8 @@ Durch die generische Auslegung kann der Baustein in verschiedenen Kontexten eing
 ## Fazit
 
 Der **AB_SPLIT_7** ist ein einfacher, aber nützlicher Baustein zur Vervielfachung einer unidirektionalen Adapterverbindung. Seine generische Natur und die klare Trennung von Ein- und Ausgängen machen ihn zu einem wiederverwendbaren Werkzeug in der 4diac-IDE, insbesondere in Szenarien, die eine parallele Verteilung von Signalen erfordern. Er trägt zur Modularität und Übersichtlichkeit industrieller Steuerungsanwendungen bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

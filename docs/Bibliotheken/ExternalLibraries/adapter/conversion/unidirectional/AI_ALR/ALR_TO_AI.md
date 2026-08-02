@@ -89,3 +89,8 @@ Der **ALR_TO_AI** vereinfacht die Wiederverwendung durch Kapselung der Adapterlo
 ## Fazit
 
 Der **ALR_TO_AI** ist ein praktischer Composite-FB zur standardisierten Umwandlung von LREAL- auf INT-basierte Adapterschnittstellen. Er erlaubt eine saubere Trennung von Datenkonvertierung und Adapterlogik und erleichtert die Integration in größere Automatisierungsprojekte. Dank der klaren Ereignisweiterleitung und der Nutzung einer IEC 61131-Basisfunktion ist er zuverlässig und einfach handhabbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

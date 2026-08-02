@@ -64,3 +64,8 @@ Der Baustein besitzt keine Zustandsmaschine (ECC) und führt keine aktiven Opera
 ## Fazit
 
 Der **AI_SPLIT_6** ist ein minimaler, aber nützlicher Baustein zur Verteilung analoger Adaptersignale in der 4diac‑IDE. Seine generische Definition und die reine Adapter‑Schnittstelle machen ihn besonders geeignet für Architekturen, die eine lose Kopplung und einfache Erweiterbarkeit erfordern. Durch die Aufteilung auf sechs Ausgänge wird eine flexible Mehrfachnutzung eines analogen Eingangswerts ermöglicht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

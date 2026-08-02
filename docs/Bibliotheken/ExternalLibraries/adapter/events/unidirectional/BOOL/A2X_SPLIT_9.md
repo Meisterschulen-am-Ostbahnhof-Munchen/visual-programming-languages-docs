@@ -49,3 +49,8 @@ Eine Zustandsübersicht entfällt, da der Baustein keinen internen Zustand besit
 
 ## Fazit
 Der **A2X_SPLIT_9** ist ein einfacher, aber effektiver Funktionsblock zur Verteilung eines A2X-Signals auf neun identische Ausgänge. Durch seine generische Natur und das Fehlen interner Logik ist er leichtgewichtig und ideal für reine Verdrahtungsszenarien in der 4diac-IDE. Er eignet sich besonders für Anwendungen, bei denen ein Signal mehrfach benötigt wird, ohne zusätzliche Programmierarbeit.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

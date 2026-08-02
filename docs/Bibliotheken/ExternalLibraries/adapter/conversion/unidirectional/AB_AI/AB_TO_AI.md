@@ -74,3 +74,8 @@ Es existieren häufig direkte Konvertierungsbausteine wie `F_BYTE_TO_INT` (IEC�
 ## Fazit
 
 Der **AB_TO_AI** ist ein nützlicher und einfacher Funktionsblock, der die Lücke zwischen BYTE- und INT-basierten Adapter-Schnittstellen schließt. Er erleichtert die Integration von Komponenten mit unterschiedlichen Datentypschnittstellen in der 4diac-IDE und folgt bewährten Entwurfsmustern der IEC‑61499‑Norm. Dank seiner Composite-Struktur ist er leicht erweiterbar und kann als Vorlage für ähnliche Adapter-Konvertierungen dienen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

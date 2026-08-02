@@ -65,3 +65,8 @@ Der Baustein besitzt keine internen Zustände oder Zustandsautomaten. Er arbeite
 ## Fazit
 
 Der `A2X_SPLIT_5` ist ein einfacher, aber nützlicher Adapter-Splitter für A2X-Schnittstellen. Durch seine generische Natur und die reine Adapter-Kommunikation fügt er sich nahtlos in IEC 61499‑basierte Steuerungssysteme ein. Er eignet sich besonders für Anwendungen, bei denen ein A2X-Signal auf mehrere Pfade verteilt werden muss, ohne zusätzliche Logik oder Zustände zu erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

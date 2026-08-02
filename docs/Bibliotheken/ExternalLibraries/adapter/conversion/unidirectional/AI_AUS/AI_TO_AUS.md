@@ -66,3 +66,8 @@ Da der Baustein ausschließlich aus einer sequenziellen Datenverarbeitung besteh
 ## Fazit
 
 Der Funktionsblock **AI_TO_AUS** ist ein kompakter Composite-Baustein zur einfachen Adapter‑Konvertierung von `INT` nach `USINT`. Er kapselt den IEC‑61131‑Konverter und stellt die Daten- und Ereignisflüsse über standardisierte Adapter bereit. Dadurch wird die Integration von Komponenten mit unterschiedlichen analogen Schnittstellen in 4diac‑Applikationen erheblich erleichtert. Bei der Verwendung sollte der mögliche Datentypüberlauf beachtet werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -63,3 +63,8 @@ Details regelt dieser Vertrag:
 [https://www.eclipse.org/legal/epl-2.0/](https://www.eclipse.org/legal/epl-2.0/)
 
 [https://de.wikipedia.org/wiki/Eclipse_Public_License](https://de.wikipedia.org/wiki/Eclipse_Public_License)
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

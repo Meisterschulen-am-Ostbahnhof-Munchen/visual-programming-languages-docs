@@ -62,3 +62,8 @@ Der **AL_TO_AS** hebt sich durch seine Adapter‑zu‑Adapter‑Schnittstelle ab
 
 ## Fazit
 Der **AL_TO_AS**‑Funktionsblock ist ein praktischer, standardkonformer Konverterbaustein für unidirektionale Adapter. Er kapselt die notwendige Typumwandlung von LWORD nach SINT und vereinfacht die Integration in bestehende 4diac‑Projekte. Aufgrund seiner Composite‑Struktur und der Verwendung einer etablierten Konvertierungsfunktion ist er zuverlässig, leicht verständlich und erweiterbar. Er eignet sich besonders für Szenarien, in denen Datenbreiten reduziert oder Schnittstellen angepasst werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

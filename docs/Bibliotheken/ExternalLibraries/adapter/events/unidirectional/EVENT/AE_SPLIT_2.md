@@ -63,3 +63,8 @@ Der FB besitzt **keinen Zustandsautomaten**. Das Verhalten ist rein kombinatoris
 ## Fazit
 
 Der **AE_SPLIT_2** ist ein minimaler, aber nützlicher Funktionsblock zur einfachen Verteilung von Adapter-Ereignissen. Seine generische Natur macht ihn flexibel einsetzbar, während die fehlende Logik für geringe Latenz und hohe Zuverlässigkeit sorgt. Er eignet sich ideal für alle Szenarien, in denen ein Ereignis an mehrere Empfänger weitergegeben werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

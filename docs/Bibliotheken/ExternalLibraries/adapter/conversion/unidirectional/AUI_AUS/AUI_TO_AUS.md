@@ -71,3 +71,8 @@ Es existieren andere Konvertierungsbausteine in der 4diac‑Bibliothek, z. B. 
 ## Fazit
 
 Der **AUI_TO_AUS** ist ein kompakter und fokussierter Baustein zur Adapter‑Konvertierung von UINT nach USINT. Seine composite‑Struktur erleichtert die Integration in vorhandene 4diac‑Projekte, reduziert den Verdrahtungsaufwand und erhöht die Übersichtlichkeit. Die einfache Funktionsweise und die klare Schnittstelle machen ihn zu einem nützlichen Werkzeug für alle Anwendungen, bei denen eine Typumwandlung auf Adapterebene erforderlich ist.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

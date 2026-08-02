@@ -75,3 +75,8 @@ Fahrtrichtungsanzeiger: I3 soll zusätzlich der Warnblinker sein.
 #### Aufgabe Flip Flops und led_strip
 
 Bauen Sie ein Programm bei dem die LED rot leuchtet wenn Sie die rote Taste drücken, und blau wenn Sie die blaue Taste drücken.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -55,3 +55,8 @@ Vergleich mit [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR
 
 ## Fazit
 Der AX_XOR_2 Funktionsblock stellt eine effiziente und zuverlässige Lösung für XOR-Operationen in 4diac-basierten Steuerungssystemen dar. Durch die Verwendung von Adapter-Schnittstellen ermöglicht er eine flexible Integration in verschiedene Systemarchitekturen und eignet sich besonders für Anwendungen, bei denen Signalunterschiede erkannt werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

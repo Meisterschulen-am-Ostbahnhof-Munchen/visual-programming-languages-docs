@@ -57,3 +57,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten (kein ECC). Er verhält s
 
 ## Fazit
 Der **AI_SPLIT_9** ist ein einfacher, aber nützlicher Funktionsblock zur Signalvervielfachung von analogen Eingängen in IEC 61499‑Applikationen. Durch seinen generischen Aufbau und die Adapter‑Schnittstelle fügt er sich nahtlos in das 4diac‑Ökosystem ein und erleichtert die strukturierte Verschaltung von Signalen. Seine Verwendung empfiehlt sich überall dort, wo ein AI‑Signal gleichzeitig an mehrere Verarbeitungseinheiten übergeben werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

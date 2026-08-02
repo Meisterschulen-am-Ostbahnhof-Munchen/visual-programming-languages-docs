@@ -82,3 +82,8 @@ Der Baustein ist nicht zustandsbehaftet im Sinne eines eigenen Zustandsautomaten
 ## Fazit
 
 Der **AS_TO_AW** ist ein nützlicher, kompakter Konvertierungsbaustein, der die Umwandlung von einem SINT-Adapter (AS) zu einem WORD-Adapter (AW) nahtlos in die 4diac-IDE integriert. Durch die Verwendung des standardisierten IEC 61131-3 Konverters und die unidirektionale Adapter-Technologie ermöglicht er eine flexible und zuverlässige Signalumsetzung in Automatisierungsprojekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

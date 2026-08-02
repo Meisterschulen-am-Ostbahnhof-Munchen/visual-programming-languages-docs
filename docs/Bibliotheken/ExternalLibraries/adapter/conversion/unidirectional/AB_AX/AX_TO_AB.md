@@ -72,3 +72,8 @@ Es existieren spezielle Konvertierungs-FBs wie `BOOL_TO_BYTE` oder `BYTE_TO_BOOL
 ## Fazit
 
 Der Composite-FB `AX_TO_AB` bietet eine kompakte und elegante Lösung zur Umwandlung eines BOOL-Adapter in einen BYTE-Adapter. Durch die implizite Typkonvertierung und die direkte Ereignisdurchleitung reduziert er den manuellen Anpassungsaufwand und erhöht die Wiederverwendbarkeit in modularen Automatisierungsprojekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

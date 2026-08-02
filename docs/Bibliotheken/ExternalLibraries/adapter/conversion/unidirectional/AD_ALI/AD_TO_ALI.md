@@ -47,3 +47,8 @@ Es existieren analoge Konvertierungsbausteine wie `AD_TO_ALI` für andere Datent
 
 ## Fazit
 Der **AD_TO_ALI** bietet eine saubere, wiederverwendbare Lösung zur Konvertierung von DWORD-Adaptern auf LINT-Adapter. Durch die Composite-Struktur bleibt die Logik transparent und leicht in bestehende 4diac‑Projekte integrierbar. Er eignet sich besonders für Szenarien, in denen eine einheitliche Adapterschnittstelle gefordert ist, aber unterschiedliche Datentypen zusammengeführt werden müssen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

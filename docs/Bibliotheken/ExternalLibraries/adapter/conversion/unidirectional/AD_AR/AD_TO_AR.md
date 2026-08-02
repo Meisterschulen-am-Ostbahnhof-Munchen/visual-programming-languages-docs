@@ -62,3 +62,8 @@ Der Vorteil des `AD_TO_AR` liegt in der nahtlosen Integration in adapterbasierte
 
 ## Fazit
 Der **AD_TO_AR**-Baustein bietet eine kompakte und standardkonforme Lösung zur Umwandlung von DWORD- in REAL-Werte über Adapter-Schnittstellen. Durch die Kapselung als Composite erhöht er die Wiederverwendbarkeit und vereinfacht den Entwurf von adapterbasierten Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

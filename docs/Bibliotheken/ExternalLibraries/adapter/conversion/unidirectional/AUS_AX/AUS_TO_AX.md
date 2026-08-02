@@ -61,3 +61,8 @@ Das Verhalten ist rein kombinatorisch mit ereignisgesteuerter Ausführung.
 ## Fazit
 **AUS_TO_AX** ist ein einfacher, aber zweckmäßiger Adapter-Konverter, der einen USINT-Wert über den Vergleich mit Null in ein Boolesches Signal umsetzt.  
 Durch die Kapselung als Composite-FB mit Adapteranschlüssen lässt er sich sauber in modulare 4diac‑Projekte einbinden. Der FB bietet keine eigenen Zustände und ist aufgrund seiner geringen Komplexität zuverlässig und wartungsarm.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

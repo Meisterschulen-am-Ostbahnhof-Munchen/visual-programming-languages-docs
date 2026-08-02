@@ -60,3 +60,8 @@ Der Baustein besitzt keine internen Zustände. Es handelt sich um eine rein komb
 
 ## Fazit
 AL_TO_AW ist ein kompakter und klar strukturierter Composite‑Funktionsblock zur Umwandlung eines LWORD‑Adapters in einen WORD‑Adapter. Er nutzt die bewährte IEC‑Konvertierungsfunktion, bietet eine adapterkonforme Schnittstelle und eignet sich hervorragend für die Integration in 4diac‑Projekte, die eine saubere Trennung von Datenwortbreiten erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

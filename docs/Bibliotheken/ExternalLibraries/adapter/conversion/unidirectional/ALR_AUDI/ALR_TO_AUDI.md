@@ -64,3 +64,8 @@ Der ALR_TO_AUDI ist speziell auf die unidirektionale Adapter-Kopplung mit den ge
 ## Fazit
 
 Der ALR_TO_AUDI ist ein spezialisierter, aber dennoch einfacher Baustein zur Konvertierung von LREAL- in UDINT-Werte über Adapterschnittstellen. Dank seiner klaren Struktur und der Nutzung eines standardisierten IEC-Konverters lässt er sich leicht in bestehende 4diac-Projekte integrieren und trägt zur Interoperabilität unterschiedlicher Adapter-Typen bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

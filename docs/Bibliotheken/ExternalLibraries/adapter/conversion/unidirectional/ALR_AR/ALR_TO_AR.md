@@ -60,3 +60,8 @@ Die Latenz ist minimal und durch die Ausführungsreihenfolge des zugrunde liegen
 
 ## Fazit  
 Der **ALR_TO_AR** ist ein einfacher, aber effektiver Composite‑Baustein, der die Lücke zwischen LREAL‑ und REAL‑Adapter‑Schnittstellen schließt. Er bietet eine saubere, ereignisgesteuerte Konvertierung ohne zusätzlichen Ballast und lässt sich leicht in existierende 4diac‑Projekte einbinden. Dank der Verwendung von Standard‑Bibliotheksfunktionen bleibt die Umwandlung performant und zuverlässig.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

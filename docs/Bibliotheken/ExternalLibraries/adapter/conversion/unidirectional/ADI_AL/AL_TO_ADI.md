@@ -73,3 +73,8 @@ Der FB besitzt keine eigene Zustandsmaschine (ECC), da er als Composite ohne seq
 ## Fazit
 
 Der Composite-FB `AL_TO_ADI` stellt eine saubere und standardisierte Lösung zur Konvertierung eines unidirektionalen LWORD-Adapters auf einen DINT-Adapter dar. Durch die Nutzung der IEC‑61131‑Funktion und die Einbettung in das 4diac-Adapterkonzept erleichtert er die Integration heterogener Systemkomponenten erheblich. Er ist wartungsfreundlich, wiederverwendbar und folgt bewährten Entwurfsmustern der industriellen Automatisierung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

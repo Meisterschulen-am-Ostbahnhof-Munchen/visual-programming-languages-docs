@@ -57,3 +57,8 @@ Da es sich um einen Composite Function Block handelt, besitzt er keine eigene Zu
 
 ## Fazit
 Der **AE_CYCLE** ist ein nützlicher Utility-Baustein für Entwickler, die innerhalb der 4diac-Umgebung mit Event-Adaptern arbeiten. Er abstrahiert die notwendige Rückkopplungslogik zur Erzeugung periodischer Signale und integriert sich nahtlos in Adapter-basierte Softwarearchitekturen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

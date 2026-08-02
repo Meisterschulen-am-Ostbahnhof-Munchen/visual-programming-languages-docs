@@ -70,3 +70,8 @@ Es existieren weitere Adapter-Konvertierungsbausteine wie `WORD_TO_DWORD`, `ARRA
 ## Fazit
 
 `AB_TO_AL` ist ein einfacher, aber nützlicher Composite-Baustein zur Umwandlung eines BYTE-Adapters in einen LWORD‑Adapter. Er reduziert den Modellierungsaufwand bei Typkonvertierungen in Adapter-basierten Netzwerken und stellt sicher, dass Ereignisse synchron zu den Daten weitergegeben werden. Aufgrund seiner klar definierten Schnittstelle eignet er sich besonders für modulare und wiederverwendbare Automatisierungslösungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

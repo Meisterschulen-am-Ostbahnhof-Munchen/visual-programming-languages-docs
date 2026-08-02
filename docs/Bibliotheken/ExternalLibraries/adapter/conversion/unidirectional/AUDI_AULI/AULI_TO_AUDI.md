@@ -75,3 +75,8 @@ Der Composite-FB besitzt keine eigene Zustandsmaschine. Das Verhalten wird volls
 ## Fazit
 
 Der AULI_TO_AUDI ist ein kompakter, spezialisierter Composite-Baustein, der die Umwandlung eines AULI- (ULINT) in einen AUDI-Adapter (UDINT) sauber kapselt. Dank der Integration des standardisierten Konverters ist er zuverlässig und einfach in bestehende 4diac‑Projekte einbindbar. Er eignet sich ideal für Szenarien, in denen unterschiedliche Adapterdefinitionen aufeinandertreffen, und trägt zur Modularität und Wiederverwendbarkeit von Funktionsbausteinen bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

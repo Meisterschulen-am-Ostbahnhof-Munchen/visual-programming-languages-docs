@@ -42,3 +42,8 @@ Andere Konverterbausteine wie `BOOL_TO_BYTE` oder `BYTE_TO_BOOL` existieren als 
 
 ## Fazit
 Der **AB_TO_AX**-Baustein bietet eine saubere und einfache Methode, um ein BYTE-Signal aus einem AB-Adapter in ein BOOL-Signal für einen AX-Adapter zu wandeln. Durch die Nutzung des Standardvergleichs `Ungleich Null` ist er besonders für binäre Schwellwertentscheidungen geeignet und vereinfacht die Wiederverwendung in adapterorientierten Steuerungsprojekten.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

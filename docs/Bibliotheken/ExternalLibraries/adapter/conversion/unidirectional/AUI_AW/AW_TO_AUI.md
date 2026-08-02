@@ -69,3 +69,8 @@ Andere Konvertierungsbausteine (z. B. `F_WORD_TO_DWORD` oder `F_INT_TO_UINT`) 
 ## Fazit
 
 Der Funktionsblock `AW_TO_AUI` bietet eine kompakte und zuverlässige Lösung zur Adapterkonvertierung von `WORD` nach `UINT`. Durch die Verwendung eines standardisierten IEC‑61131‑Konvertierungsbausteins und der klaren Ereignissteuerung ist er leicht verständlich und wartbar. Er eignet sich besonders für Projekte, die eine saubere Trennung zwischen unterschiedlichen Datentypen auf Adapterebene erfordern.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

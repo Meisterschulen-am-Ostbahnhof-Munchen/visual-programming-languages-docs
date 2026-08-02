@@ -56,3 +56,8 @@ Der Baustein besitzt keine internen Zustände. Er ist vollständig zustandslos u
 ## Fazit
 
 Der `AL_SPLIT_8` ist ein schlichter, aber wichtiger Baustein zur Vervielfachung von AL‑Adapter‑Signalen. Durch seine passive, zustandslose Arbeitsweise fügt er sich nahtlos in datenflussorientierte 4diac‑Anwendungen ein und erleichtert die strukturierte Verteilung von Alarm‑ oder Steuersignalen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

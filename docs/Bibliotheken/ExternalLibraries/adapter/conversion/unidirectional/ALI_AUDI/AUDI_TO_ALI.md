@@ -82,3 +82,8 @@ Der **Hauptunterschied** zu einer direkten Verwendung von `F_UDINT_TO_LINT` ist 
 ## Fazit
 
 Der **AUDI_TO_ALI**-Funktionsblock ist ein praktischer Adapter-Konverter, der die Lücke zwischen einem UDINT-basierten AUDI-Adapter und einem LINT-basierten ALI-Adapter schließt. Durch die interne Verwendung des standardisierten IEC-61131-Konverters `F_UDINT_TO_LINT` ist die Umwandlung effizient und typsicher. Der Baustein eignet sich besonders für modulare Architekturen, bei denen unterschiedliche Adressbreiten aufeinander treffen, und vereinfacht die Wiederverwendung von Adapter-Schnittstellen in heterogenen Automatisierungsumgebungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

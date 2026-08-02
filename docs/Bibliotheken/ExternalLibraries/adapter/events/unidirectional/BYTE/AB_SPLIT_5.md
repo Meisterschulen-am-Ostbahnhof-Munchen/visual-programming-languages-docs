@@ -73,3 +73,8 @@ Gegenüber einem parametrierbaren Split-Baustein bietet `AB_SPLIT_5` eine feste,
 ## Fazit
 
 `AB_SPLIT_5` ist ein schlanker, spezialisierter Funktionsbaustein für die 1:5-Verteilung unidirektionaler AB-Adapter-Signale. Dank seiner generischen Implementierung und der klaren Schnittstellenstruktur eignet er sich ideal für den modularen Aufbau von Automatisierungssystemen, in denen ein Signal mehrfach benötigt wird.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -56,3 +56,8 @@ Der FB besitzt keine explizit modellierten Zustände. Das Verhalten ist rein ere
 
 ## Fazit
 Der `AX_TO_AS` ist ein einfacher, aber nützlicher Composite‑FB für die Umwandlung von BOOL‑Adapter‑Signalen in SINT‑Adapter‑Signale. Durch die Verwendung eines standardisierten Konvertierungsbausteins und der Adapter‑Technologie lässt er sich flexibel in bestehende 4diac‑Projekte einfügen und trägt zur sauberen Trennung von Signaltypen bei.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

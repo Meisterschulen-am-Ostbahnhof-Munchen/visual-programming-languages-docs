@@ -50,3 +50,8 @@ Da es sich um einen Composite-Funktionsblock handelt, besitzt `AS_TO_AI` keine e
 
 ## Fazit
 Der `AS_TO_AI`-Funktionsblock ist ein einfaches, aber effektives Werkzeug zur Sicherstellung der Adapter-Kompatibilität in 4diac‑Anwendungen. Er übernimmt die automatische Typkonvertierung von SINT nach INT und erleichtert so die Integration heterogener Komponenten ohne manuelle Anpassung des Datenpfades.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

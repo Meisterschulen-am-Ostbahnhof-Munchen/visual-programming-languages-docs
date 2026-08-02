@@ -58,3 +58,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten und ist vollständig **st
 ## Fazit
 
 Der `A2X_SPLIT_2` ist ein einfacher, aber nützlicher Baustein zur Signalverteilung in 4diac-Anwendungen. Seine generische Natur ermöglicht eine flexible Nutzung ohne zusätzliche Konfiguration. Er eignet sich besonders für Szenarien, in denen ein A2X-Signal an mehrere Empfänger weitergegeben werden muss, ohne dass die Signalintegrität beeinträchtigt wird.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -72,3 +72,9 @@ Der **AB_SPLIT_8** besitzt keine internen Zustände oder Zustandsautomaten. Die 
 ## Fazit
 
 Der **AB_SPLIT_8** ist ein einfacher, aber effektiver Funktionsblock zur Vervielfachung eines unidirektionalen AB-Adaptersignals. Durch seine generische Ausführung und die passive Arbeitsweise eignet er sich ideal für die Parallelisierung von Steuerungs- und Überwachungssignalen in der Automatisierungstechnik. Die fehlende Zustandslogik sorgt für geringe Laufzeitkomplexität und hohe Zuverlässigkeit. Der Baustein ist eine sinnvolle Ergänzung für jede 4diac-Bibliothek, die auf Adapterkommunikation setzt.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

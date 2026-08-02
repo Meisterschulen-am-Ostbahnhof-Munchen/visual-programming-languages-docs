@@ -70,3 +70,8 @@ Die interne Zustandsmaschine besteht aus folgenden Zuständen und Transitionen:
 
 ## Fazit
 Der **AX_RS_SYM** ist ein einfacher, aber flexibler ereignisgesteuerter RS‑Flip‑Flop‑Baustein. Seine Besonderheit liegt im symmetrischen Start‑Up‑Verhalten, das einen definierten Anfangszustand ohne feste Voreinstellung ermöglicht. Die Adapter‑Schnittstelle erleichtert die Einbindung in größere Systeme. Für Anwendungen, bei denen nach dem Hochlauf weder ein Setzen noch ein Zurücksetzen bevorzugt werden soll, ist dieser Baustein die ideale Wahl.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -65,3 +65,8 @@ Der ALI_TO_AL-Baustein hebt sich durch seine einfache Plug-and-Play-Fähigkeit i
 ## Fazit
 
 Der Composite-FB **ALI_TO_AL** ermöglicht eine saubere und standardkonforme Umwandlung von LINT- auf LWORD-Daten über unidirektionale Adapter. Er ist ideal für den Einsatz in modularen Automatisierungssystemen, die unterschiedliche Adapterdatentypen integrieren müssen. Durch die Nutzung der bewährten IEC-61131-Konvertierungsfunktion ist eine zuverlässige und performante Ausführung gewährleistet.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -52,3 +52,8 @@ Der **AD_TO_AUS** ist ein reiner Funktionsblock ohne eigenen Zustandsautomaten. 
 
 ## Fazit
 Der **AD_TO_AUS** ist ein einfacher, aber nützlicher Composite‑FB zur Typkonvertierung zwischen zwei unidirektionalen Adapter‑Schnittstellen. Er reduziert den Implementierungsaufwand, indem er die Standardkonvertierung kapselt und eine saubere, ereignisgesteuerte Adapter‑Kommunikation ermöglicht. Dank der klaren Struktur eignet er sich sowohl für den schnellen Entwurf als auch für den produktiven Einsatz in IEC‑61499‑basierten Steuerungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

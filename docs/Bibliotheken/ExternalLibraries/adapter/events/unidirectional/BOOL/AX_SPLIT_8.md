@@ -61,3 +61,8 @@ Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## Fazit
 Der AX_SPLIT_8 Funktionsblock stellt eine einfache und effiziente Lösung zur Verteilung von Adapter-Signalen in 4diac-Systemen dar. Seine feste Ausgangsanzahl von acht Ports macht ihn besonders geeignet für standardisierte Verteilungsaufgaben in industriellen Steuerungsanwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

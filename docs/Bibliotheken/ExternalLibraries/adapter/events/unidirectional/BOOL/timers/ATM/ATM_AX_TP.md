@@ -88,3 +88,8 @@ Nach Ablauf der Timer‑Zeit wechselt E_TP selbstständig von ACTIVE nach IDLE.
 ## Fazit
 
 Der **ATM_AX_TP** ist ein nützlicher Funktionsbaustein zur Erzeugung eines nicht‑nachtriggerbaren Impulses mit einstellbarer Dauer. Seine Besonderheit liegt in der Adapter‑basierten Schnittstelle, die eine flexible und lose Kopplung in IEC 61499‑Systemen ermöglicht. Durch den eingebetteten Standard‑Timer E_TP bleibt die Funktionsweise robust und bewährt. Ein praktischer Baustein für alle Anwendungen, bei denen ein definiertes Zeitfenster auf ein externes Signal hin geschaltet werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

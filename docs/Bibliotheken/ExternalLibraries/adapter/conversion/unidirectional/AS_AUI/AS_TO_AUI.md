@@ -76,3 +76,8 @@ Da es sich um einen zusammengesetzten Baustein ohne eigene Zustandsmaschine hand
 ## Fazit
 
 Der `AS_TO_AUI`‑Baustein bietet eine einfache, zuverlässige und standardisierte Methode, um SINT‑Adapter‑Daten in ein UINT‑Adapter‑Format zu konvertieren. Dank der Verwendung von IEC‑61131‑Bausteinen und unidirektionalen Adaptern ist er robust, leicht verständlich und gut in bestehende 4diac‑Projekte integrierbar.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

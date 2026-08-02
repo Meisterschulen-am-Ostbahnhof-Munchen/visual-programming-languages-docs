@@ -65,3 +65,8 @@ Der Baustein verfügt über keinen Zustandsautomaten – er ist ereignisfrei und
 ## Fazit
 
 Der Funktionsblock **AI_SPLIT_4** ist ein spezialisierter, aber einfach einsetzbarer Baustein zur Vervielfachung analoger Signale. Dank seiner reinen Adapterschnittstelle lässt er sich nahtlos in 4diac-Projekte einbinden, ohne zusätzliche Ereignislogik. Er eignet sich besonders für modulare und skalierbare Automatisierungslösungen, bei denen ein einzelner Messwert an mehrere Verbraucher verteilt werden muss.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

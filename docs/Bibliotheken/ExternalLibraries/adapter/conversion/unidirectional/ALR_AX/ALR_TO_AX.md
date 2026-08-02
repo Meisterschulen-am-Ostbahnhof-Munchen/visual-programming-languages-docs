@@ -53,3 +53,8 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Seine Logik ist rein k
 
 ## Fazit
 Der **ALR_TO_AX**‑Funktionsblock bietet eine schlanke, zuverlässige Möglichkeit, einen LREAL‑Adapterausgang in einen BOOL‑Adaptereingang umzusetzen. Dank seiner einfachen Struktur eignet er sich hervorragend für grundlegende Digitalisierungsaufgaben in IEC‑61499‑basierten Steuerungssystemen. Er ist leicht verständlich, gut erweiterbar und folgt den gängigen Entwurfsmustern für unidirektionale Adapterkonvertierung.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

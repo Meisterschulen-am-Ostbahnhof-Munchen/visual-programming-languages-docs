@@ -69,3 +69,8 @@ Vergleich mit [E_TP](../../../../../../StandardLibraries/events/timers/E_TP.md)
 
 ## Fazit
 Der AX_TP ist ein robuster und standardkonformer Timer-Funktionsblock, der sich ideal für zeitgesteuerte Anwendungen in verteilten Automatisierungssystemen eignet. Seine Adapter-basierte Architektur ermöglicht flexible Integration in komplexere Steuerungsstrukturen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

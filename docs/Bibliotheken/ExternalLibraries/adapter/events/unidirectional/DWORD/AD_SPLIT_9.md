@@ -55,3 +55,8 @@ Der FB besitzt keinen internen Zustandsautomaten und führt keinerlei sequentiel
 
 ## Fazit
 `AD_SPLIT_9` ist ein einfacher, aber nützlicher generischer Funktionsblock zur unidirektionalen Aufteilung eines Adaptersignals auf neun identische Ausgänge. Er hilft, Redundanz im Systemdesign zu vermeiden und erleichtert die modulare Strukturierung von IEC 61499-Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

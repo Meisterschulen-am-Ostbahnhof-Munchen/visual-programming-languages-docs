@@ -61,3 +61,8 @@ Der Baustein besitzt kein eigenständiges Zustandsdiagramm. Sein Verhalten ist a
 
 ## Fazit
 Der **AUS_TO_AL**-Funktionsblock ist ein praktischer Composite‑FB zur Umwandlung von USINT‑ in LWORD‑Daten, verpackt in ein adapterbasiertes Interface. Er nutzt die bewährte IEC‑61131‑Konvertierung und erlaubt eine saubere Integration in modulare 4diac‑Anwendungen. Durch die Adapter‑Kapselung bleibt die Schnittstelle klar definiert und der Baustein kann einfach in bestehende Kommunikationsstrukturen eingebunden werden.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

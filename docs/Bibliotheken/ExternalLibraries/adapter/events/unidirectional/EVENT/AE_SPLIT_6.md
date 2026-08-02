@@ -54,3 +54,8 @@ Der FB **AE_SPLIT_6** ist ein rein kombinatorischer Baustein ohne Zustandsautoma
 
 ## Fazit
 Der **AE_SPLIT_6** ist ein einfacher, aber nützlicher generischer Funktionsblock zur 1:6‑Verteilung eines unidirektionalen AE‑Adapters. Durch seine generische Auslegung kann er in unterschiedlichsten Automatisierungs‑ und Steuerungsumgebungen eingesetzt werden, in denen ein Signal mehrfach benötigt wird. Er arbeitet ohne Verzögerung und ohne eigene Logik, was ihn besonders effizient und zuverlässig macht.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

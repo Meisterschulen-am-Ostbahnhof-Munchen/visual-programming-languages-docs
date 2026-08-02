@@ -64,3 +64,8 @@ Der Baustein besitzt keine eigene Zustandsmaschine. Sein Verhalten ist statisch 
 
 ## Fazit
 Der **AX_NOOP** ist ein minimalistischer, aber nützlicher Baustein für die Arbeit mit Adapterschnittstellen. Dank seiner einfachen Durchleitungsfunktion eignet er sich hervorragend zum Testen, Debuggen und als Platzhalter in der 4diac-IDE. Trotz fehlender eigener Logik erfüllt er eine wichtige Rolle beim schrittweisen Aufbau und der Verifikation von verbindungsintensiven Anwendungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -82,3 +82,8 @@ Der Funktionsblock besitzt keine eigene Zustandsmaschine; er ist als reines Netz
 ## Fazit
 
 Der Funktionsblock **ASSEMBLE_AB_FROM_AX** ist ein praktischer, adapterbasierter Helfer, um acht boolesche Signale in ein Byte zu konvertieren. Durch die Integration eines D‑Flipflops arbeitet er zuverlässig und vermeidet inkonsistente Zwischenzustände. Sein modulares Design erleichtert die Wiederverwendung in größeren Projektstrukturen und macht ihn zu einer nützlichen Komponente in der Automatisierungstechnik mit 4diac.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

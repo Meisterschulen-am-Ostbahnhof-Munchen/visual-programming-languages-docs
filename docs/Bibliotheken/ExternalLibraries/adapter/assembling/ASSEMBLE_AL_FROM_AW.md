@@ -76,3 +76,9 @@ Alle diese Bausteine folgen dem gleichen Prinzip, unterscheiden sich jedoch in d
 ## Fazit
 
 `ASSEMBLE_AL_FROM_AW` ist ein spezialisierter Funktionsbaustein zum Zusammenfügen von vier 16‑Bit‑Wörtern zu einem 64‑Bit‑Wort. Die getaktete Ausgabe über ein D‑Flip‑Flop sorgt für konsistente Datenweitergabe. Dank der adapterbasierten Schnittstelle fügt er sich nahtlos in modulare 4diac‑Projekte ein und erleichtert die Handhabung von Wort‑zu‑Langwort‑Konvertierungen.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

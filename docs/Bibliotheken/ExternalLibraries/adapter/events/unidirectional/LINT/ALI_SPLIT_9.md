@@ -61,3 +61,8 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten. Sein Verhalten ist rein d
 
 ## Fazit
 Der **ALI_SPLIT_9** ist ein spezialisierter, generischer Adapter-FB, der in der industriellen Automatisierung mit 4diac-IDE die einfache und zuverlässige Verteilung eines unidirektionalen ALI-Signals auf bis zu neun separate Empfänger ermöglicht. Durch seine reine Adapterschnittstelle ist er besonders ressourcenschonend und eignet sich ideal für sternförmige Vernetzungstopologien in IEC 61499-basierten Systemen. Der generische Charakter erlaubt eine flexible Anpassung an spezifische Typanforderungen ohne Änderung der Bausteinstruktur.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -71,3 +71,8 @@ Der FB besitzt keinen expliziten Zustandsautomaten. Der interne Baustein `E_D_FF
 ## Fazit
 
 Der **AD_D_FF** ist ein schlanker, adapterbasierter D‑Flipflop‑Baustein für die 4diac‑IDE. Er übernimmt bei jedem Taktereignis einen Datenwert und gibt ihn aus. Durch die reinen Adapter‑Schnittstellen fügt er sich nahtlos in Architekturen ein, die auf standardisierte Verbindungen setzen. Seine einfache Funktionalität macht ihn zur idealen Wahl für Aufgaben der Datenpufferung und -synchronisation ohne zusätzliche Logik.
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

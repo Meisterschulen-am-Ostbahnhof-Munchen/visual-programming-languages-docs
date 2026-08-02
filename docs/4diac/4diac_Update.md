@@ -128,3 +128,8 @@ Nightly Builds sind tägliche automatisch erstellte Versionen einer Software, di
 
 #### Eclipse 4diac Nightly Download Seite
 [https://download.eclipse.org/4diac/updates/nightly/](https://download.eclipse.org/4diac/updates/nightly/)
+
+---
+
+### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
+* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -40,3 +40,17 @@ Moderne Land- und Baumaschinen sind hochgradig vernetzte, dezentrale mechatronis
 | **Teil I – LE 2.6 (Autonome Systeme)** | **20 UE** | Analyse & Diagnose von visuellen Ablaufsteuerungen autonomer Maschinen |
 | **Teil II – LE 1.1 (Systemtechnik)** | **160 UStd.** | Grundlagen Steuerungstechnik, IEC 61499 Modellierung, Signalfluss & ECC |
 | **Teil II – LE 1.3 (Diagnosetechnik)** | **100 UStd.** | Messtechnische Signalverfolgung & Online-Monitoring grafischer Bausteine |
+
+
+---
+
+## 🔗 Übersicht & Direktlinks zu den 6 Wikis
+
+| Wiki | Thema / Beschreibung | Link |
+| :--- | :--- | :---: |
+| **Wiki 0** | **Wiki der Meisterschulen**<br>Allgemeine Informationen, Lehrplan 2025 & Haupt-Wiki. | [📖 Öffnen](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/) |
+| **Wiki 1** | **C-Programmierung in ISOBUS**<br>Grundlagen der C-Programmierung und ISOBUS-Umgebung. | [🚜 Öffnen](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/install-isobus-environment-docs/de/latest/) |
+| **Wiki 2** | **ISOBUS Virtual Terminal**<br>Benutzeroberflächen, ISO-Designer & VT-Objekte. | [🖥️ Öffnen](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/de/latest/) |
+| **Wiki 3** | **ISOBUS Technik & Maschinensysteme**<br>Hydraulik, Pneumatik, Motoren, HV-Technik, Getriebe & Maschinensicherheit. | [📡 Öffnen](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-other-docs/de/latest/) |
+| **Wiki 4** | **Visuelle Programmiersprachen**<br>Low-Code Entwicklung, IEC 61499 & 4diac IDE (Lehrplan-Hauptthema). | [🧩 Öffnen](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/) |
+| **Wiki 5** | **Elektronik-Werkzeuge & Messgeräte**<br>Handbuch für Crimptechnik, Lötstationen, Oszilloskope & Mikroskope. | [🛠️ Öffnen](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/werkzeug-docs/de/latest/) |

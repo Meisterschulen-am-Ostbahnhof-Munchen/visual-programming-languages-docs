@@ -1,13 +1,10 @@
 # F_MULTIME
 
-
-
 ![F_MULTIME](https://github.com/user-attachments/assets/89982d6d-aa50-4897-b32c-6d280da63b1a)
 
 * * * * * * * * * *
 
 ![F_MULTIME](F_MULTIME.svg)
-
 
 ## Einführung
 Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation von Zeitwerten mit numerischen Faktoren, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Skalierung von Zeitintervallen gemäß IEC 61131-3 Standard.
@@ -73,11 +70,6 @@ Der **F_MULTIME** ist ein standardkonformer Funktionsbaustein zur Multiplikation
 | Operation     | Zeitmultiplikation | Numerische Multiplikation | Zeitdivision |
 | Eingänge      | TIME × ANY_NUM | ANY_NUM × ANY_NUM | TIME ÷ ANY_NUM |
 | Ausgangstyp   | TIME      | ANY_NUM | TIME      |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

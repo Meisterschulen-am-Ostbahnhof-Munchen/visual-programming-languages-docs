@@ -2,7 +2,6 @@
 
 ![ARR_MAX]( )
 
-
 ![ARR_MAX](./ARR_MAX.svg)
 
 * * * * * * * * * *

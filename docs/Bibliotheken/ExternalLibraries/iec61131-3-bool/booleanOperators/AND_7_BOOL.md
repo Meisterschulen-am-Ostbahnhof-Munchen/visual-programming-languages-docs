@@ -1,7 +1,5 @@
 # AND_7_BOOL
 
-
-
 <img width="1383" height="394" alt="image" src="https://github.com/user-attachments/assets/93623e45-061d-4783-b540-ca2907a5d8ed" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Unmittelbar nach der Berechnung des Ergebnisses wird das Bestätigungsereignis `
 
 ## Zustandsübersicht
 Der Block besitzt keinen internen Zustand im Sinne eines Speichers. Sein Verhalten ist rein kombinatorisch und ereignisgesteuert:
+
 1.  **Ruhezustand**: Wartet auf das Ereignis `REQ`.
 2.  **Ausführungszustand**: Bei `REQ` werden alle Eingänge gelesen, die UND-Operation berechnet und das Ergebnis `OUT` gesetzt.
 3.  **Bestätigungszustand**: Das Ereignis `CNF` wird sofort gesendet, danach kehrt der Block in den Ruhezustand zurück.

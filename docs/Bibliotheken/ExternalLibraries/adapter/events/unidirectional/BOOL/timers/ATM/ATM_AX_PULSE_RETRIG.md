@@ -1,6 +1,5 @@
 # ATM_AX_PULSE_RETRIG
 
-
 ![ATM_AX_PULSE_RETRIG](./ATM_AX_PULSE_RETRIG.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Der Baustein implementiert die interne Logik mittels des standardisierten IEC‑
 
 ## Zustandsübersicht
 Der Baustein kennt zwei Zustände:
+
 - **Inaktiv** (Q.D1 = FALSE): Kein Impuls aktiv, Timer läuft nicht.
 - **Aktiv** (Q.D1 = TRUE): Impuls läuft; bei Eintritt durch REQ wird der Timer mit PT gestartet. Jeder weitere REQ setzt den Timer zurück. Ein R-Ereignis führt sofort zurück in den inaktiven Zustand.
 

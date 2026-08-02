@@ -1,8 +1,5 @@
 # ISO_NETEVENT_e
 
-
-
-
 ![ISO_NETEVENT_e](./ISO_NETEVENT_e.svg)
 
 * * * * * * * * * *
@@ -41,6 +38,7 @@ Die Datei deklariert eine Reihe von Konstanten vom Typ `USINT` (Unsigned Short I
 
 ## Anwendungsszenarien
 Diese Konstanten werden typischerweise in Funktionsblöcken verwendet, die:
+
 1.  Das ISOBUS-Netzwerkmanagement (Address Claiming, Network Management) implementieren.
 2.  Netzwerkereignisse überwachen und auf diese reagieren (z.B. bei Adresskonflikten).
 3.  Den Zustand anderer Netzwerkteilnehmer (Controller Applications, ECUs) verwalten.

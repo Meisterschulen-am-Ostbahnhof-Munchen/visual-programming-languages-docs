@@ -1,7 +1,5 @@
 # AB_BYTE_TO_B
 
-
-
 <img width="1201" height="230" alt="image" src="https://github.com/user-attachments/assets/51ece190-d883-49b1-9fe3-c91b94247501" />
 
 * * * * * * * * * *
@@ -38,6 +36,7 @@ Der Funktionsblock empfängt über den REQ-Ereigniseingang eine Anforderung zur 
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
+
 1. **Wartezustand**: Keine aktive Verarbeitung
 2. **Aktivierungszustand**: Bei REQ-Ereignis werden Daten an den Adapter weitergeleitet
 3. **Rückkehr**: Automatische Rückkehr in Wartezustand nach Verarbeitung

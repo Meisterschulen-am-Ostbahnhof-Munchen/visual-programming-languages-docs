@@ -1,8 +1,6 @@
 # MI
 
-
 ## 🎧 Podcast
-
 
 ![MI](./MI.svg)
 

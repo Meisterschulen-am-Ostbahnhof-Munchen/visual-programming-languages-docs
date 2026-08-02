@@ -1,7 +1,5 @@
 # PKP_2200_LI_IXA
 
-
-
 <img width="1960" height="384" alt="image" src="https://github.com/user-attachments/assets/1b07f3e6-433e-4e24-be44-50268e3eb4f4" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der Funktionsblock initialisiert sich über das INIT-Ereignis und bestätigt die
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor INIT-Ereignis
 2. **Initialisierung**: Während INIT-Verarbeitung
 3. **Bereit**: Nach erfolgreicher Initialisierung (INITO)
@@ -56,6 +55,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet PKP_2200_LI_IXA erweiterte Funktionalität durch:
+
 - Parametrierbare SA-Member-Konfiguration
 - Detaillierte Statusrückmeldungen
 - Standardisierte Initialisierungsprozeduren

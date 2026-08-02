@@ -1,7 +1,5 @@
 # logiBUS_IXA
 
-
-
 <img width="1838" height="367" alt="image" src="https://github.com/user-attachments/assets/fcf18e0e-a542-4642-a00f-1438f4caf5fb" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der Composite-Funktionsblock logiBUS_IXA kapselt den Basisfunktionsblock logiBUS
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über zwei Hauptzustände:
+
 1. **Nicht initialisiert**: Vor dem INIT-Ereignis
 2. **Initialisiert und betriebsbereit**: Nach erfolgreicher INIT-Bestätigung
 
@@ -53,9 +52,6 @@ Der Funktionsblock verfügt über zwei Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet logiBUS_IXA erweiterte Service-Funktionalitäten mit Parametrierungsmöglichkeiten und Statusrückmeldungen. Die Composite-Struktur ermöglicht eine bessere Wiederverwendbarkeit und erweiterte Diagnosefähigkeiten.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

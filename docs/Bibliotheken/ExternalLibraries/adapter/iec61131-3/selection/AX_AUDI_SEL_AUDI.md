@@ -1,6 +1,5 @@
 # AX_AUDI_SEL_AUDI
 
-
 ![AX_AUDI_SEL_AUDI](./AX_AUDI_SEL_AUDI.svg)
 
 * * * * * * * * * *
@@ -50,6 +49,7 @@ Der Ausgangswert wird ausschließlich über den Adapter `OUT` als Datenelement `
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt keinen eigenen Zustandsautomaten. Sein Verhalten ergibt sich vollständig aus dem internen Sub‑Baustein `F_SEL`, der die IEC‑Normlogik abbildet.  
+
 - **Init** – Nach dem Einschalten sind keine Werte übernommen; `OUT.D1` enthält keinen definierten Wert, bis ein Selektionszyklus durchlaufen wurde.  
 - **Arbeitsphase** – Bei Auftreten von `EI0`/`EI1` werden die Eingangswerte gesetzt, bei `G.E1` wird die Auswahl durchgeführt und das Ergebnis über `OUT.E1` signalisiert.  
 Es gibt keine weiteren internen Zustände.

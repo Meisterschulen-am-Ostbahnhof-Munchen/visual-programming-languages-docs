@@ -1,9 +1,6 @@
 # E_TABLE_CTRL
 
-
-
 ![E_TABLE_CTRL](https://user-images.githubusercontent.com/116869307/214142693-35103bc3-d636-442c-b299-b4d6becb832d.png)
-
 
 ![E_TABLE_CTRL_ecc](./E_TABLE_CTRL_ecc.svg)
 
@@ -67,15 +64,13 @@ Der **E_TABLE_CTRL** ist ein Unterstützungsbaustein für E_TABLE nach IEC 61499
 Der `E_TABLE_CTRL`-Baustein ist nicht als eigenständiger Baustein für die direkte Anwendung gedacht, sondern als die **interne Steuerungslogik** des Composite-Funktionsbausteins `E_TABLE`.
 
 Innerhalb von `E_TABLE` arbeitet `E_TABLE_CTRL` mit einem `E_DELAY`-Baustein zusammen:
+
 1.  `E_TABLE_CTRL` empfängt den `START`-Befehl und berechnet die erste Verzögerungszeit `DTO`.
 2.  Er sendet `DTO` über `CLKO` an den `E_DELAY`-Baustein.
 3.  Nachdem `E_DELAY` abgelaufen ist, meldet er dies über seinen `EO`-Ausgang zurück an den `CLK`-Eingang von `E_TABLE_CTRL`.
 4.  `E_TABLE_CTRL` berechnet daraufhin die nächste Verzögerungszeit und der Zyklus wiederholt sich.
 
 Dieser Baustein kapselt also die reine Zustandslogik (welcher Schritt ist der nächste, wie lange dauert er), während der `E_DELAY` die eigentliche Zeitverzögerung ausführt.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

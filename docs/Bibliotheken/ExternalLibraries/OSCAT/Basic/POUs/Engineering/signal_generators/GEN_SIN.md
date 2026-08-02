@@ -2,8 +2,6 @@
 
 # GEN_SIN
 
-
-
 this signal generator generates a sine wave output
 
 this signal generator generates a sine wave output. The sine wave signal is defined by period time (PT),
@@ -45,8 +43,6 @@ in addition to a analog output Out there is a second boolean output Q with the c
 | :--- | :--- | :--- |
 | Q | BOOL | Binary Output |
 | Out | REAL | Analog Output |
-
-
 
 ## 🛠️ Zugehörige Übungen
 

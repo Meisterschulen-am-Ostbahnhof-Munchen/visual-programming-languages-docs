@@ -1,6 +1,5 @@
 # NVS_AUI
 
-
 ![NVS_AUI](./NVS_AUI.svg)
 
 * * * * * * * * * *
@@ -58,13 +57,16 @@ Der gesamte Daten‑ und Ereignisfluss wird durch den eingebetteten Funktionsblo
 ## Technische Besonderheiten
 - **AUI‑Adapter‑Schnittstelle**  
   Die unidirektionalen Adapter `AUI_IN` und `AUI_OUT` ermöglichen eine lose Kopplung zwischen dem NVS‑Baustein und anderen Komponenten, die standardisierte AUI‑Schnittstellen verwenden.
+
 - **Automatischer Lesevorgang nach INIT**  
   Direkt nach der Initialisierung wird der Wert gelesen und über `AUI_OUT` bereitgestellt – ohne ein separates „Get“‑Ereignis.
+
 - **Fehlerbehandlung**  
   Fehler während der Initialisierung oder bei Speicherzugriffen werden über `STATUS` signalisiert.
 
 ## Zustandsübersicht
 Der FB befindet sich nach dem Hochlaufen im **Ruhezustand**.  
+
 - **Initialisierung** (beim Eintreffen von `INIT`): Herstellen der NVS‑Verbindung, Lesen des vorhandenen Werts.  
 - **Bereit** (nach erfolgreichem `INITO`): Warten auf eingehende Daten über `AUI_IN` zum Speichern oder auf externe Anfragen über `AUI_OUT`.  
 - **Speichervorgang** (bei Ereignis an `AUI_IN`): Wert wird persistiert; danach Rückkehr in den Bereit‑Zustand.  

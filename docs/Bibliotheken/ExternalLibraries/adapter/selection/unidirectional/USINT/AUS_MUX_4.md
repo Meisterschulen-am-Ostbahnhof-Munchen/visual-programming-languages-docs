@@ -1,6 +1,5 @@
 # AUS_MUX_4
 
-
 ![AUS_MUX_4](./AUS_MUX_4.svg)
 
 * * * * * * * * * *

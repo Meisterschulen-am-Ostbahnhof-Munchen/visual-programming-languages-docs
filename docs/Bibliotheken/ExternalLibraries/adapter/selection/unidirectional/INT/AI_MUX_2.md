@@ -1,6 +1,5 @@
 # AI_MUX_2
 
-
 ![AI_MUX_2](./AI_MUX_2.svg)
 
 * * * * * * * * * *
@@ -49,6 +48,7 @@ Die verwendeten Adapter sind unidirektional (Sender/Empfänger) und spezifisch f
 3. Ist **K = 0**, wird der Adapter-Socket **IN1** auf den Adapter-Plug **OUT** durchgeschaltet.
    Ist **K = 1**, wird **IN2** auf **OUT** durchgeschaltet.
    Bei anderen Werten von **K** ist das Verhalten nicht spezifiziert (typischerweise werden nur die Werte 0 und 1 unterstützt).
+
 4. Nach erfolgreicher Durchschaltung wird das **CNF**-Ereignis ausgegeben.
 
 Die Schaltlogik erfolgt synchron zum REQ-Ereignis. Es gibt keine Verzögerung oder Pufferung.

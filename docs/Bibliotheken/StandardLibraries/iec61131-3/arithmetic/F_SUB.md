@@ -1,13 +1,10 @@
 # F_SUB
 
-
-
 ![F_SUB](https://user-images.githubusercontent.com/116869307/214143366-6c54d805-8807-48bd-b8fb-2ad08dd2f1b8.png)
 
 * * * * * * * * * *
 
 ![F_SUB](F_SUB.svg)
-
 
 ## Einführung
 Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numerischer Werte, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Differenzbildung verschiedener numerischer Datentypen gemäß IEC 61131-3 Standard.
@@ -76,11 +73,6 @@ Der **F_SUB** ist ein standardkonformer Funktionsbaustein zur Subtraktion numeri
 | Operation     | Subtraktion | Addition | Multiplikation |
 | Eingänge      | 2      | 2      | 2      |
 | Typunterstützung | ANY_MAGNITUDE | ANY_NUM | ANY_NUM |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

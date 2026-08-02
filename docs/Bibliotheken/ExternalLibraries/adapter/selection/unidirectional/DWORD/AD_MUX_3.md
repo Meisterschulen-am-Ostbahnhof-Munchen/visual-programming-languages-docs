@@ -1,6 +1,5 @@
 # AD_MUX_3
 
-
 ![AD_MUX_3](./AD_MUX_3.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Keine Datenausgänge definiert (die Datenweitergabe erfolgt über den Adapter `O
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Ein Ereignis am Eingang `REQ` triggert die Verarbeitung.
 2. Der aktuelle Wert des Dateneingangs `K` (0, 1 oder 2) bestimmt, welcher der drei Eingangsadapter auf den Ausgangsadapter `OUT` durchgeschaltet wird:
    - `K = 0` → `IN1` wird auf `OUT` verbunden.

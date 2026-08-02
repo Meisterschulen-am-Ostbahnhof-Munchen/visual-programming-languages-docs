@@ -1,6 +1,5 @@
 # AULI_TO_ADI
 
-
 ![AULI_TO_ADI](./AULI_TO_ADI.svg)
 
 * * * * * * * * * *
@@ -31,6 +30,7 @@ Keine (ausschließlich über Adapter).
 
 ## Funktionsweise
 Der Baustein arbeitet als reine Kaskade:
+
 1. Ein Ereignis am Socket `AULI_IN.E1` löst die Datenübergabe von `AULI_IN.D1` (ULINT) aus.
 2. Dieses Ereignis wird auf den Eingang `REQ` des internen Konvertierungsbausteins `F_ULINT_TO_DINT` (IEC‑61131‑Typumwandlung) übertragen.
 3. Der Konverter wandelt den ULINT‑Wert in einen DINT‑Wert um und legt ihn an seinem Ausgang `OUT` an.

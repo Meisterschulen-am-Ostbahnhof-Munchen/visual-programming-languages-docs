@@ -1,7 +1,5 @@
 # AX_AE_MERGE
 
-
-
 ## Einleitung
 Der AX_AE_MERGE Funktionsblock ermöglicht das Zusammenführen eines reinen Ereignis-Signals (**AE**) mit einem kombinierten Ereignis-Daten-Signal (**AX**). Das Ergebnis ist ein AX-Signalfluss, bei dem das Daten-Bit vom AX-Zweig erhalten bleibt, aber von beiden Quellen getriggert werden kann.
 
@@ -21,6 +19,7 @@ Trifft an `IN_AX` ein Ereignis ein, wird dieses zusammen mit dem aktuellen Wert 
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 In vielen Übungen (z. B. beim Blinker in `Uebung_007a3_AX`) wurde bisher fälschlicherweise ein `AX_OR_2` verwendet, um ein `AE`-Ereignis (vom `AE_CYCLE`) in einen `AX`-Datenstrom einzuspeisen.
+
 - **AX_OR_2**: Erwartet zwei vollwertige AX-Adapter. Das Anschließen eines AE-Adapters ist technisch unsauber, da der Datenwert für einen der Eingänge undefiniert bleibt.
 - **AX_AE_MERGE**: Ist exakt für diesen Mischbetrieb ausgelegt. Er stellt sicher, dass das Ereignis durchgereicht wird, während die Datenquelle (`IN_AX`) eindeutig definiert bleibt.
 
@@ -33,8 +32,6 @@ In vielen Übungen (z. B. beim Blinker in `Uebung_007a3_AX`) wurde bisher fälsc
 - **Blinker-Logik**: Ein `AE_CYCLE` triggert regelmäßig das Senden des aktuellen Zustands eines `AX_SR` Flip-Flops.
 - **Status-Auffrischung**: Ein Timer triggert regelmäßig das Senden des aktuellen AX-Zustands.
 - **Mehrfach-Trigger**: Ein AX-Signalfluss soll zusätzlich durch externe AE-Ereignisse (z.B. Taster-Clicks) angestoßen werden.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

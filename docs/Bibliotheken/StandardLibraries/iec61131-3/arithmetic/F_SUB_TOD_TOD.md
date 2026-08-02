@@ -1,13 +1,10 @@
 # F_SUB_TOD_TOD
 
-
-
 ![F_SUB_TOD_TOD](https://github.com/user-attachments/assets/24f90fce-ebfe-4c5f-9449-ddf8e41a6821)
 
 * * * * * * * * * *
 
 ![F_SUB_TOD_TOD](F_SUB_TOD_TOD.svg)
-
 
 ## Einführung
 Der **F_SUB_TOD_TOD** ist ein standardkonformer Funktionsbaustein zur Berechnung von Zeitdifferenzen zwischen zwei Tageszeiten (TIME_OF_DAY), entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht präzise Tageszeitberechnungen gemäß IEC 61131-3 Standard.

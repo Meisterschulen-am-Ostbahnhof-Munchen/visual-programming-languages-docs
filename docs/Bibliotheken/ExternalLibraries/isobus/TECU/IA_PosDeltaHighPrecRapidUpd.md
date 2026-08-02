@@ -1,6 +1,5 @@
 # IA_PosDeltaHighPrecRapidUpd
 
-
 ![IA_PosDeltaHighPrecRapidUpd](./IA_PosDeltaHighPrecRapidUpd.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # AX_SPLIT_2
 
-
-
 <img width="711" height="266" alt="image" src="https://github.com/user-attachments/assets/35bdbc21-637d-4e15-9327-20c28f43b4b5" />
 
 * * * * * * * * * *
@@ -53,11 +51,6 @@ Der Funktionsblock arbeitet zustandslos - bei jedem eingehenden Signal über den
 Im Vergleich zu anderen Verteilungsbausteinen bietet AX_SPLIT_2 eine spezifische 1:2-Aufteilung für AX-Signale. Andere Splitter-Bausteine könnten unterschiedliche Anzahlen von Ausgängen oder andere Signaltypen unterstützen.
 
 Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

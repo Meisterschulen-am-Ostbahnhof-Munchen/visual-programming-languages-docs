@@ -1,9 +1,6 @@
 # E_SELECT
 
-
-
 ![E_SELECT Logiksymbol](https://user-images.githubusercontent.com/69573151/210802464-116ee202-5bba-4394-bb08-38411823d000.png)
-
 
 ![E_SELECT_ecc](./E_SELECT_ecc.svg)
 
@@ -67,11 +64,6 @@ Der **E_SELECT** ist ein grundlegender Funktionsbaustein nach IEC 61499 (Annex A
 | Auswahlkriterium | Boolesch (`G`) | Boolesch (`G`) | Keines |
 | Richtung      | 2:1 (Multiplexer)      | 1:2 (Demultiplexer)     | n:1 (OR-Gatter)     |
 | Zustandsmodell | BasicFB  | BasicFB | BasicFB/Generic |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

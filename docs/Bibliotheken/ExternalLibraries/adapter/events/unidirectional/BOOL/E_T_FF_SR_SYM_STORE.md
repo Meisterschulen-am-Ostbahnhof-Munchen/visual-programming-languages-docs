@@ -1,6 +1,5 @@
 # E_T_FF_SR_SYM_STORE
 
-
 ![E_T_FF_SR_SYM_STORE](./E_T_FF_SR_SYM_STORE.svg)
 
 * * * * * * * * * *

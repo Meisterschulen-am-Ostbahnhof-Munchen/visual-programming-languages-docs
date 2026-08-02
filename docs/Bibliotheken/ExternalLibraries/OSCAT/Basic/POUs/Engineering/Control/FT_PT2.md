@@ -2,8 +2,6 @@
 
 # FT_PT2
 
-
-
 2nd grade filter with programmable times
 
 ## Interface

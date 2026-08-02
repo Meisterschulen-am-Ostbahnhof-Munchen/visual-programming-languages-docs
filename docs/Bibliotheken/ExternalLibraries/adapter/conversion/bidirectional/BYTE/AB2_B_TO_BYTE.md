@@ -1,7 +1,5 @@
 # AB2_B_TO_BYTE
 
-
-
 <img width="1224" height="196" alt="image" src="https://github.com/user-attachments/assets/b8d88980-eb0b-4d26-8400-a6af1b5cbe0b" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Der AB2_B_TO_BYTE ist ein Composite-Funktionsblock, der zur bidirektionalen Konv
 Der Funktionsblock arbeitet als bidirektionaler Konverter zwischen AB2- und BYTE-Datentypen. Bei Empfang eines REQ-Ereignisses werden die an OUT anliegenden BYTE-Daten über den AB2_IN-Adapter konvertiert. Nach erfolgreicher Konvertierung wird das CNF-Ereignis ausgelöst und die konvertierten Daten an IN ausgegeben.
 
 Die interne Vernetzung zeigt folgende Signalflüsse:
+
 - REQ → AB2_IN.EI1 (Adapter-Eingangsereignis)
 - AB2_IN.EO1 → CNF (Adapter-Ausgangsereignis)
 - OUT → AB2_IN.DI1 (Adapter-Dateneingang)
@@ -45,6 +44,7 @@ Die interne Vernetzung zeigt folgende Signalflüsse:
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Bereit**: Wartet auf REQ-Ereignis
 2. **Konvertierung aktiv**: Verarbeitet Daten über AB2-Adapter
 3. **Bestätigung**: Sendet CNF bei erfolgreichem Abschluss
@@ -57,6 +57,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konvertierungsbausteinen bietet AB2_B_TO_BYTE:
+
 - Bidirektionale Funktionalität in einem einzigen Baustein
 - Integrierte Adapter-Schnittstelle für AB2-Typen
 - Composite-Architektur mit erweiterter Funktionalität

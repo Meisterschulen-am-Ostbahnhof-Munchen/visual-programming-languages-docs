@@ -1,6 +1,5 @@
 # INIT
 
-
 ![INIT](./INIT.svg)
 
 * * * * * * * * * *
@@ -33,6 +32,7 @@ Keine.
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert und führt keine eigene Logik oder Zustandsänderung durch. Jedes ankommende Ereignis wird unverzögert und ohne Verarbeitung an den entsprechenden Ausgang weitergeleitet:
+
 - Ein Ereignis am Eingang `INIT` erzeugt sofort ein Ereignis am Ausgang `INITO`.
 - Ein Ereignis am Eingang `REQ` erzeugt sofort ein Ereignis am Ausgang `CNF`.
 

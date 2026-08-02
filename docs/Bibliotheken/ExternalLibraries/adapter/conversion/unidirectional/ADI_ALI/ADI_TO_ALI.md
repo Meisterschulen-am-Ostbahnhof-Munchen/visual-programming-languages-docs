@@ -1,6 +1,5 @@
 # ADI_TO_ALI
 
-
 ![ADI_TO_ALI](./ADI_TO_ALI.svg)
 
 * * * * * * * * * *
@@ -23,11 +22,13 @@ Keine
 ### **Adapter**
 - **ADI_IN** (Socket) – Typ: `adapter::types::unidirectional::ADI`  
   Nimmt einen DINT-Wert (32‑Bit) sowie ein zugehöriges Ereignis entgegen.
+
 - **ALI_OUT** (Plug) – Typ: `adapter::types::unidirectional::ALI`  
   Gibt den konvertierten LINT-Wert (64‑Bit) sowie das weitergeleitete Ereignis aus.
 
 ## Funktionsweise
 Der Baustein realisiert eine direkte Durchschleifung:  
+
 - Das Ereignis `E1` vom ADI_IN-Socket wird ohne Verzögerung an den ALI_OUT-Plug weitergegeben.  
 - Gleichzeitig wird der Datenwert `D1` (DINT) übertragen; dabei erfolgt eine implizite Typumwandlung von 32‑Bit Integer (DINT) auf 64‑Bit Integer (LINT).  
 - Es findet keine Zwischenspeicherung oder Verarbeitungslogik statt – jede ankommende Ereignis‑Daten‑Kombination wird sofort an die Ausgabeseite weitergeleitet.

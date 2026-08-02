@@ -2,13 +2,11 @@
 
 ## 🎧 Podcast
 
-
 ![QUARTER_TO_BOOL_ecc](./QUARTER_TO_BOOL_ecc.svg)
 
 * [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
 ---- 
-
 
 <img width="1424" height="183" alt="image" src="https://github.com/user-attachments/assets/81acd0ec-c837-49d1-9ed8-3000cb65786e" />
 
@@ -38,6 +36,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 Bei Auslösung durch ein `REQ`-Ereignis liest der Baustein den Wert am Daten-Eingang `IB`. Anschließend wird dieser Wert mit vordefinierten Konstanten verglichen, um den entsprechenden internen Zustand zu ermitteln. Je nach Zustand wird ein spezifischer Algorithmus ausgeführt, der den BOOL-Ausgang `Q` setzt oder seinen Wert beibehält. Nach Ausführung des Algorithmus wird das `CNF`-Ereignis ausgelöst, und der Baustein kehrt in seinen Startzustand zurück.
 
 Die konkrete Abbildung der Eingangswerte auf die Ausgangslogik ist wie folgt:
+
 *   `quarter::STATUS_ENABLED` → Algorithmus `SET` → `Q := TRUE`
 *   `quarter::STATUS_DISABLED` → Algorithmus `RESET` → `Q := FALSE`
 *   `quarter::STATUS_ERROR` → Algorithmus `ERROR` → `Q := FALSE`
@@ -50,6 +49,7 @@ Die konkrete Abbildung der Eingangswerte auf die Ausgangslogik ist wie folgt:
 
 ## Zustandsübersicht
 Die ECC (Execution Control Chart) besteht aus sechs Zuständen:
+
 1.  **START**: Initial- und Wartezustand. Bei eintreffendem `REQ` erfolgt je nach Wert von `IB` ein Übergang zu `SET`, `RESET`, `Error` oder `none`.
 2.  **SET**: Führt den Algorithmus `SET` aus (setzt `Q` auf TRUE).
 3.  **RESET**: Führt den Algorithmus `RESET` aus (setzt `Q` auf FALSE).
@@ -65,9 +65,6 @@ Die ECC (Execution Control Chart) besteht aus sechs Zuständen:
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Standardkonverter (z.B., `BYTE_TO_BOOL`)**: Ein einfacher `BYTE_TO_BOOL`-Konverter würde typischerweise einen Schwellwert verwenden (z.B., alles >0 wird zu TRUE). `QUARTER_TO_BOOL` hingegen interpretiert spezifische, benannte Zustände und bietet ein definiertes Verhalten für jeden einzelnen, einschließlich der Möglichkeit, den Ausgang bei einem Zustand unverändert zu lassen.
 *   **`E_SELECT`- oder `E_DEMUX`-Bausteine**: Diese könnten verwendet werden, um basierend auf einem Eingangswert unterschiedliche Ereignispfade zu aktivieren. `QUARTER_TO_BOOL` kapselt diese Logik speziell für die Konvertierung von 4-Zustands-Signalen und liefert direkt das boolesche Ergebnis.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

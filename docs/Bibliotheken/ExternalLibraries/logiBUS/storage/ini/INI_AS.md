@@ -1,6 +1,5 @@
 # INI_AS
 
-
 ![INI_AS](./INI_AS.svg)
 
 * * * * * * * * * *
@@ -62,6 +61,7 @@ Der Funktionsblock **INI_AS** dient dem Laden und Speichern von SINT‑Daten aus
 
 ## Zustandsübersicht
 Der Baustein besitzt keine explizite Zustandsmaschine (ECC). Das Verhalten wird rein über die Ereignisverkettung innerhalb des internen FBNetzwerks gesteuert:
+
 - Nach `INIT` läuft die Sequenz: INIT des `INI`‑Bausteins → INITO → GET (automatisch) → VALUO am Adapterausgang.
 - Nach einem SET‑Ereignis vom Adaptereingang: SET des `INI`‑Bausteins → SETO → Adapterausgang mit dem neuen Wert.
 

@@ -1,6 +1,5 @@
 # GET_INT
 
-
 ![GET_INT](./GET_INT.svg)
 
 * * * * * * * * * *
@@ -42,10 +41,12 @@ Der Eingabewert wird über den InOut-Parameter **IN** bereitgestellt (siehe näc
 
 ## Funktionsweise
 Der FB arbeitet als einfacher Lesepuffer:
+
 1. Beim Eintreffen des Ereignisses **REQ** wird die **ST**-Algorithmus `REQ` ausgeführt:
    ```structured text
    OUT := IN;
    ```
+
 2. Der aktuelle Wert der InOut-Variablen **IN** wird in den Ausgang **OUT** kopiert.
 3. Anschließend wird das Ereignis **CNF** ausgegeben, um den Abschluss der Operation zu signalisieren.
 
@@ -58,6 +59,7 @@ Da **IN** als InOut-Parameter deklariert ist, wird innerhalb des Bausteins direk
 
 ## Zustandsübersicht
 Der FB besitzt einen einzigen Zustand **REQ**:
+
 - **REQ**: Bei Aktivierung wird der Algorithmus `REQ` ausgeführt, danach das Ereignis **CNF** gesendet. Der Zustand bleibt bestehen (kein Übergang in einen anderen Zustand).
 
 | Zustand | Eintrittsbedingung | Aktion | Ausgangsereignis |

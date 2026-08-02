@@ -1,6 +1,5 @@
 # SPLIT_AD_INTO_AB
 
-
 ![SPLIT_AD_INTO_AB](./SPLIT_AD_INTO_AB.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Jeder AB‑Adapter besitzt mindestens einen Ereignisausgang (E1) und einen Daten
 
 ## Zustandsübersicht
 Der FB selbst besitzt keinen expliziten Zustandsautomaten – er ist ein Composite aus Standard‑Funktionsblöcken. Die interne Ablaufsteuerung erfolgt durch die Ereignis‑ und Datenflüsse:
+
 - **Warten**: Kein Eingangsereignis → Ausgabe bleibt unverändert.
 - **Aufteilen**: Bei einem Ereignis am IN‑Adapter wird einmalig der DWORD aufgeteilt und alle vier Bytes ausgegeben.
 

@@ -1,6 +1,5 @@
 # UDINT_AUDI_AX_SEL
 
-
 ![UDINT_AUDI_AX_SEL](./UDINT_AUDI_AX_SEL.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Der Funktionsblock **UDINT_AUDI_AX_SEL** realisiert eine binäre Auswahl zwische
 | `G`     | `adapter::types::unidirectional::AX`     | Selektionssteuerung |
 
 Der Adapter `G` liefert das Ereignis `E1` und den Datenwert `D1`, der als Selektionssignal dient.
+
 - Bei Zustand **0** des Selektionssignals wird `IN0` übernommen.
 - Bei Zustand **1** (oder ungleich 0) wird `IN1` übernommen.
 
@@ -50,6 +50,7 @@ Der Adapter `G` liefert das Ereignis `E1` und den Datenwert `D1`, der als Selekt
 Der Baustein besitzt zwei Eingangsereignisse `EI0` und `EI1`, die jeweils die Daten `IN0` bzw. `IN1` setzen – jedoch nicht direkt zur Auswahl führen. Die eigentliche Selektion wird durch ein externes Ereignis ausgelöst, das über den Adapter `G` an den internen Funktionsblock `F_SEL` (Typ `iec61131::selection::F_SEL`) übergeben wird.
 
 Wenn der Adapter sein Ereignis `E1` sendet, wird der `F_SEL`-Baustein gesteuert. Die Auswahl erfolgt anhand des vom Adapter übermittelten Datenwerts `D1`:
+
 - **D1 = 0** → Ausgang `OUT` erhält den Wert von `IN0`.
 - **D1 ≠ 0** → Ausgang `OUT` erhält den Wert von `IN1`.
 
@@ -62,6 +63,7 @@ Anschließend wird das Ereignis `CNF` ausgegeben, um die erfolgreiche Verarbeitu
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt keine explizite Zustandsmaschine. Die Verarbeitung erfolgt ereignisgesteuert:
+
 1. **Empfang von `EI0` oder `EI1`** → Setzen des jeweiligen Datenwerts (kein Ausgangsereignis).
 2. **Empfang des Adapter-Ereignisses `G.E1`** → Auswahl durchführen und `CNF` senden.
 

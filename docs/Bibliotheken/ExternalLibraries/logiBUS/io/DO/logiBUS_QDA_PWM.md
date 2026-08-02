@@ -1,6 +1,5 @@
 # logiBUS_QDA_PWM
 
-
 ![logiBUS_QDA_PWM](./logiBUS_QDA_PWM.svg)
 
 * * * * * * * * * *

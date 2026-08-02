@@ -1,6 +1,5 @@
 # AI_MUX_3
 
-
 ![AI_MUX_3](./AI_MUX_3.svg)
 
 * * * * * * * * * *
@@ -40,6 +39,7 @@ Keine eigenen Datenausgänge – die Ausgangsdaten werden über den Adapter OUT 
 
 ## Funktionsweise
 Der Baustein wartet auf ein REQ-Ereignis. Sobald es eintrifft, wird der aktuelle Wert des Index K ausgewertet:
+
 - **K = 0** → Der Adapter IN1 wird auf den Ausgang OUT durchgeschaltet.
 - **K = 1** → Der Adapter IN2 wird auf den Ausgang OUT durchgeschaltet.
 - **K = 2** → Der Adapter IN3 wird auf den Ausgang OUT durchgeschaltet.

@@ -1,6 +1,5 @@
 # AIWS_D_FF
 
-
 ![AIWS_D_FF](./AIWS_D_FF.svg)
 
 * * * * * * * * * *
@@ -54,6 +53,7 @@ Der AIWS_D_FF kapselt einen internen `E_D_FF_ANY`-Baustein. Der eingehende Adapt
 ## Zustandsübersicht
 
 Der AIWS_D_FF besitzt keine expliziten inneren Zustände auf der obersten Ebene. Der integrierte `E_D_FF_ANY` durchläuft zwei Phasen:
+
 1. **Warten:** Er wartet auf ein Ereignis am Clock‑Eingang.
 2. **Übernahme & Ausgabe:** Bei einem Clock‑Ereignis wird der Datenwert übernommen und ein Ausgangsereignis erzeugt.
 

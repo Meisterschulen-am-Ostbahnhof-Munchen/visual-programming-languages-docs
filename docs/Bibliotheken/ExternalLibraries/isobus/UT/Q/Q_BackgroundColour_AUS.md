@@ -1,6 +1,5 @@
 # Q_BackgroundColour_AUS
 
-
 ![Q_BackgroundColour_AUS](./Q_BackgroundColour_AUS.svg)
 
 * * * * * * * * * *
@@ -59,6 +58,7 @@ Der Baustein wird über einen Socket mit der neuen Farbe versorgt und gibt über
 
 3. **Rückmeldung**  
    Nach Abschluss des Kommandos sendet der interne Baustein ein `CNF`-Ereignis.  
+
    * Die Ausgänge `STATUS` und `s16result` werden entsprechend gesetzt und sind am Ereignisausgang `CNF` gültig.  
    * Gleichzeitig wird über den Plug `u8OldColour` der alte Farbwert (Daten `D1`) und ein Bestätigungsereignis (`E1`) ausgegeben.
 
@@ -90,8 +90,10 @@ Der FB besitzt keinen expliziten Zustandsautomaten auf der obersten Ebene, doch 
 
 * **ISOBUS Virtual Terminal**  
   Ändern der Hintergrundfarbe eines grafischen Objekts (z. B. Button, Gruppe, Softkey) auf dem VT-Bildschirm in einer landwirtschaftlichen Steuerung.
+
 * **HMI-Anpassung**  
   Reaktion auf Benutzereingaben oder Systemzustände, um die optische Darstellung dynamisch anzupassen (z. B. Alarmfarben, Markierung aktiver Elemente).
+
 * **Rücklesen der alten Farbe**  
   Der Plug `u8OldColour` ermöglicht es, den vorherigen Farbwert zu speichern oder für eine spätere Wiederherstellung zu nutzen.
 
@@ -99,8 +101,10 @@ Der FB besitzt keinen expliziten Zustandsautomaten auf der obersten Ebene, doch 
 
 * **`Q_BackgroundColour`** (ohne `_AUS`):  
   Bietet die gleiche Kernfunktion, jedoch meist mit einzelnen Ereignis-/Datenanschlüssen statt gekapselter Adapter. Der `_AUS`-Baustein vereinfacht die Verbindung zu anderen Bausteinen, die ebenfalls mit AUS-Adaptern arbeiten.
+
 * **`Q_Colour`** oder **`Q_ForegroundColour`**:  
   Ändern andere Farbeigenschaften (Vordergrund, Vollfarbe) und verwenden ähnliche Rückgabewerte und Statusmechanismen.
+
 * **`Command_ChangeColour`** (allgemeiner):  
   Könnte mehrere Farbparameter gleichzeitig ändern, während `Q_BackgroundColour_AUS` auf Hintergrundfarben spezialisiert ist.
 

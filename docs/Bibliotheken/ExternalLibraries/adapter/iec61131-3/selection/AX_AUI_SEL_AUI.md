@@ -1,6 +1,5 @@
 # AX_AUI_SEL_AUI
 
-
 ![AX_AUI_SEL_AUI](./AX_AUI_SEL_AUI.svg)
 
 * * * * * * * * * *
@@ -49,11 +48,13 @@ Keine direkten Datenausgänge. Das Ergebnis wird über den Ausgangsadapter **OUT
 
 - **Adapter G (Socket):**  
   Stellt ein Ereignis **E1** und ein Datum **D1** bereit.  
+
   - `G.D1` (BOOL) – Auswahlsignal: `TRUE` wählt **IN1**, `FALSE` wählt **IN0**.  
   - `G.E1` (Event) – Triggert die Auswahloperation.
 
 - **Adapter OUT (Plug):**  
   Liefert ein Ereignis **E1** und ein Datum **D1**.  
+
   - `OUT.D1` (UINT) – Der ausgewählte Wert (IN0 oder IN1).  
   - `OUT.E1` (Event) – Signalisiert, dass ein neuer Ausgabewert anliegt.
 

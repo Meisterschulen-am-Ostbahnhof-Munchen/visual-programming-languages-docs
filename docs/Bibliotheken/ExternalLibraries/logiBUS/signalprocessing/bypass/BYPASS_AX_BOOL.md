@@ -1,6 +1,5 @@
 # BYPASS_AX_BOOL
 
-
 ![BYPASS_AX_BOOL](./BYPASS_AX_BOOL.svg)
 
 * * * * * * * * * *

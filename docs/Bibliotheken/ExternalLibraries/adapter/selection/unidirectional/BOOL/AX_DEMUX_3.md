@@ -1,7 +1,5 @@
 # AX_DEMUX_3
 
-
-
 <img width="1220" height="246" alt="image" src="https://github.com/user-attachments/assets/d20cd567-e598-4dea-acd7-edb4d66605a5" />
 
 * * * * * * * * * *
@@ -54,17 +52,13 @@ Der Funktionsblock arbeitet zustandslos - jede REQ-Anfrage wird unabhängig vera
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Demultiplexern bietet AX_DEMUX_3:
+
 - Standardisierte Adapter-Schnittstellen für bessere Integration
 - Drei statt zwei Ausgangskanäle für erweiterte Flexibilität
 - Explizite Bestätigungsereignisse für zuverlässige Operationen
 - Generische Implementierung für Typunabhängigkeit
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

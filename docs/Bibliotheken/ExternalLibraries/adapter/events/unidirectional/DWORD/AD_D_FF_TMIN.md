@@ -1,6 +1,5 @@
 # AD_D_FF_TMIN
 
-
 ![AD_D_FF_TMIN](./AD_D_FF_TMIN.svg)
 
 * * * * * * * * * *
@@ -63,8 +62,10 @@ Der Baustein selbst besitzt keinen expliziten Zustandsautomaten (keine ECC‑Def
 
 - **Datenerfassung mit Mindestabstand**:
   Sensordaten sollen nur dann übernommen werden, wenn ein bestimmter zeitlicher Abstand zum vorherigen Wert eingehalten wird (z. B. Entprellung oder Abtastratenbegrenzung).
+
 - **Pulsformung / Triggermanagement**:
   Der Baustein kann als „entprellter“ Flip‑Flop in Steuerungen eingesetzt werden, um Signalflanken zu glätten und Störimpulse auszufiltern.
+
 - **Adapter‑orientierte Busarchitekturen**:
   Dank der Adapter‑Schnittstelle lässt sich der FB nahtlos in bestehende unidirektionale Datenflüsse einbinden, z. B. in Sensor‑Aktor‑Netzwerken.
 

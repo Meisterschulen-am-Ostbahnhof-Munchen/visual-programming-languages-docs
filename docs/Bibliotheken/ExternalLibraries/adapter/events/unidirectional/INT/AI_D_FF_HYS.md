@@ -1,6 +1,5 @@
 # AI_D_FF_HYS
 
-
 ![AI_D_FF_HYS](./AI_D_FF_HYS.svg)
 
 * * * * * * * * * *
@@ -50,6 +49,7 @@ Der verwendete Adaptertyp `adapter::types::unidirectional::AI` ist ein unidirekt
 2. **Datenverriegelung**  
    Nach der Initialisierung wartet der Baustein auf ein Taktsignal am Adapter **I** (Ereignis **I.E1**). Bei jedem Taktereignis wird der aktuelle Datenwert **I.D1** eingelesen.  
    Der interne Funktionsblock `E_D_FF_ANY_HYS` vergleicht den eingehenden Wert mit dem zuletzt verriegelten Wert unter Berücksichtigung der Hysterese:
+
    - Überschreitet der neue Wert den alten Wert um mehr als die Hälfte der Hysterese, wird der neue Wert übernommen (gesetzt).
    - Unterschreitet er den alten Wert um mehr als die Hälfte der Hysterese, wird der neue Wert übernommen (rückgesetzt).
    - Bei geringeren Differenzen bleibt der Ausgang unverändert.
@@ -60,10 +60,13 @@ Der verwendete Adaptertyp `adapter::types::unidirectional::AI` ist ein unidirekt
 
 - **Adapterbasierte Kommunikation**  
   Der gesamte Daten- und Ereignisaustausch erfolgt über Adapter. Dies ermöglicht eine lose Kopplung zwischen dem Flipflop und den angeschlossenen Komponenten und erleichtert die Wiederverwendung in verschiedenen Kontexten.
+
 - **Hysterese zur Störunterdrückung**  
   Die Hysterese verhindert ein Flip‑Flop‑Verhalten bei Rauschen oder prellenden Signalen. Die Bandbreite wird als Ganzzahl (INT) übergeben und kann zur Laufzeit über **INIT** neu gesetzt werden.
+
 - **Keine direkten Datenausgänge**  
   Der latched Wert ist nur über den Adapter **Q** zugänglich. Dies erzwingt eine strukturierte Signalweiterleitung im Gesamtsystem.
+
 - **Eingebetteter Funktionsblock**  
   Das eigentliche Flipflop mit Hysterese wird durch den internen FB `E_D_FF_ANY_HYS` realisiert, was die Komplexität kapselt und die Wartung erleichtert.
 
@@ -81,10 +84,13 @@ Der FB kennt keine expliziten Zustände im Sinne einer Endlichen Automaten. Er b
 
 - **Entprellung von Schaltern und Sensoren**  
   Ein mechanischer Kontakt liefert prellende Signale. Die Hysterese unterdrückt kurzzeitige Änderungen und gibt nur stabile Zustände weiter.
+
 - **Rauschunterdrückung bei analogen Signalen**  
   Ein Analog-Digital-Wandler liefert verrauschte Werte. Die Hysterese verhindert ständiges Umschalten zwischen benachbarten Quantisierungsstufen.
+
 - **Zustandsspeicher in Steuerungen**  
   Der Baustein kann als einfaches D‑Flipflop verwendet werden, um einen digitalen Wert taktgesteuert zu übernehmen und bis zum nächsten Takt zu halten.
+
 - **Schnittstelle zwischen asynchronen und synchronen Systemen**  
   Der Adapter erlaubt die Anbindung von Bausteinen mit unterschiedlichen Ereignistakten, indem das Flipflop als Puffer dient.
 

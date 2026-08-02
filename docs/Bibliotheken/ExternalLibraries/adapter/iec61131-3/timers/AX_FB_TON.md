@@ -1,7 +1,5 @@
 # AX_FB_TON
 
-
-
 <img width="962" height="243" alt="image" src="https://github.com/user-attachments/assets/d92dd0e6-fa14-499e-8a97-5c1432d0df3e" />
 
 * * * * * * * * * *
@@ -33,6 +31,7 @@ AX_FB_TON ist ein standardisierter Timer-Funktionsblock gemäß IEC 61131-3, der
 
 ## Funktionsweise
 Der AX_FB_TON-Block arbeitet als Einschaltverzögerungstimer. Bei Empfang eines Signals über den IN-Adapter startet der interne Timer.
+
 1. Wenn der Eingang am IN-Adapter TRUE wird, beginnt der Timer zu laufen.
 2. Nach Ablauf der eingestellten Prozesszeit (PT) wird der Ausgang am Q-Adapter TRUE.
 3. Der Datenausgang ET zeigt die Zeit an, die seit dem Start des Timers vergangen ist, bis PT erreicht ist.
@@ -57,11 +56,6 @@ Der AX_FB_TON-Block arbeitet als Einschaltverzögerungstimer. Bei Empfang eines 
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zum [AX_TON](../../events/unidirectional/BOOL/timers/AX_TON.md) bietet AX_FB_TON zusätzlich den Ausgang **ET** für die abgelaufene Zeit und folgt strikt dem Verhalten des IEC 61131-3 TON Blocks, während AX_TON eher auf den IEC 61499 E_TON optimiert ist.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

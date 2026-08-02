@@ -2,8 +2,6 @@
 
 # BaseMemberExternAdd
 
-
-
 Adds an external member to the network list manually.
 
 The use of this function is not ISO 11783 Part 5 conform.
@@ -42,8 +40,6 @@ The added CF will be set to announced in the next iso_DlCyclicGlobal() run.
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | s16Handle | INT | Handle of the added member |
-
-
 
 ## 🛠️ Zugehörige Übungen
 

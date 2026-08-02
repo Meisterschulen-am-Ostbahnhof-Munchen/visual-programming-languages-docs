@@ -1,6 +1,5 @@
 # ASR_SPLIT_8
 
-
 ![ASR_SPLIT_8](./ASR_SPLIT_8.svg)
 
 *(Bild des Funktionsblocks hier einfügen)*

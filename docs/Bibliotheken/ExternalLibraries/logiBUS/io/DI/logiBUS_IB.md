@@ -1,7 +1,5 @@
 # logiBUS_IB
 
-
-
 <img width="1903" height="313" alt="image" src="https://github.com/user-attachments/assets/56357e8e-ea36-427f-8c9a-3e990b8f634c" />
 
 * * * * * * * * * *
@@ -53,6 +51,7 @@ Der logiBUS_IB Function Block arbeitet als Eingabeservice-Interface für logiBUS
 
 ## Zustandsübersicht
 Der Baustein verfügt über folgende Betriebszustände:
+
 - **Nicht initialisiert**: Vor INIT-Event
 - **Initialisiert**: Nach erfolgreicher INIT-Operation
 - **Bereit**: Für REQ-Anfragen und IND-Ereignisse
@@ -66,13 +65,11 @@ Der Baustein verfügt über folgende Betriebszustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingabebausteinen bietet logiBUS_IB erweiterte Service-Funktionalität mit:
+
 - Parametrierbarer Konfiguration
 - Ereignisbasierter Kommunikation
 - Statusrückmeldungen
 - Spezieller Unterstützung für Tastendruck-Wiederholungen
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

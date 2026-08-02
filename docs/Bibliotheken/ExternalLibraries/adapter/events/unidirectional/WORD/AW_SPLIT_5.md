@@ -1,6 +1,5 @@
 # AW_SPLIT_5
 
-
 ![AW_SPLIT_5](./AW_SPLIT_5.svg)
 
 * * * * * * * * * *
@@ -23,6 +22,7 @@ Keine
 ### **Adapter**
 * **IN** (Socket) – Typ: `adapter::types::unidirectional::AW`  
   Eingangsschnittstelle für den ursprünglichen AW‑Datenstrom.
+
 * **OUT1** bis **OUT5** (Plugs) – Typ: `adapter::types::unidirectional::AW`  
   Fünf parallele Ausgangsschnittstellen, die jeweils das gleiche Signal wie am Eingang bereitstellen.
 

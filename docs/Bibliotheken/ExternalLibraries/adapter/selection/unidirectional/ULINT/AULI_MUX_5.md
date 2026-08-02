@@ -1,6 +1,5 @@
 # AULI_MUX_5
 
-
 ![AULI_MUX_5](./AULI_MUX_5.svg)
 
 * * * * * * * * * *
@@ -50,6 +49,7 @@ Der Baustein besitzt keine expliziten Datenausgänge. Die Ausgangsdaten werden �
 Sobald ein Ereignis am Eingang **REQ** eintrifft, wird der aktuelle Wert von **K** ausgewertet. Der Baustein leitet den an dem zugehörigen Socket (IN1…IN5) anliegenden Adapter an den Ausgangsadapter **OUT** weiter. Anschließend wird das Ereignis **CNF** ausgegeben, um die erfolgreiche Durchführung zu signalisieren.
 
 Die Zuordnung lautet:
+
 - K = 0 → IN1
 - K = 1 → IN2
 - K = 2 → IN3

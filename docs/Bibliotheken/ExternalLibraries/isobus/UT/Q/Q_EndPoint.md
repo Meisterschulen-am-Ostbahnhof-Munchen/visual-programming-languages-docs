@@ -1,7 +1,5 @@
 # Q_EndPoint
 
-
-
 ![Q_EndPoint](https://user-images.githubusercontent.com/116869307/214147340-866900ae-dc9c-4cbd-a9e8-c8755d833674.png)
 
 * * * * * * * * * *
@@ -98,6 +96,7 @@ Der Q_EndPoint-Baustein bietet die Referenzimplementierung für Linienendpunkt-S
 - **Standardkonform**: Volle ISO 11783-6 Kompatibilität
 
 Idealer Einsatz bei:
+
 - Dynamischen technischen Zeichnungen
 - Adaptiven Diagrammanzeigen
 - Konfigurierbaren Benutzeroberflächen

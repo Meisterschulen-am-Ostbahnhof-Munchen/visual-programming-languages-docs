@@ -1,6 +1,5 @@
 # AW_TO_AUDI
 
-
 ![AW_TO_AUDI](./AW_TO_AUDI.svg)
 
 * * * * * * * * * *
@@ -49,6 +48,7 @@ Datenfluss und Ereignissteuerung sind synchron: Jedes eingehende Ereignis erzeug
 
 ## Zustandsübersicht
 Der FB `AW_TO_AUDI` besitzt keinen eigenen Zustandsautomaten. Die Ablaufsteuerung wird durch den internen Baustein `F_WORD_TO_UDINT` realisiert, der ein einfaches REQ/CNF‑Verhalten aufweist:
+
 - **Warten** (vor REQ): Kein Ereignis an `AW_IN.E1` → keine Aktion.
 - **Verarbeitung** (nach REQ, vor CNF): Die Konvertierung läuft; der Ausgang wird nicht aktualisiert.
 - **Fertig** (nach CNF): Neuer Wert liegt an `AUDI_OUT.D1` an und ein Ereignis an `AUDI_OUT.E1` wird gesendet.

@@ -1,6 +1,5 @@
 # GET_BYTE
 
-
 ![GET_BYTE](./GET_BYTE.svg)
 
 * * * * * * * * * *

@@ -1,6 +1,5 @@
 # AE_SPLIT_8
 
-
 ![AE_SPLIT_8](./AE_SPLIT_8.svg)
 
 *Bild des Funktionsblocks: [Hier einfügen, sofern vorhanden]*

@@ -1,6 +1,5 @@
 # ILOCK_SWITCH
 
-
 ![ILOCK_SWITCH](./ILOCK_SWITCH.svg)
 
 * * * * * * * * * *
@@ -48,10 +47,13 @@ Der Baustein realisiert einen endlichen Automaten mit sechs Zuständen. Die grun
 - **STOP** (Ruhezustand): Beide Ausgänge sind **FALSE**.
 - **UP**: DO_UP = TRUE, DO_DOWN = FALSE.  
   Wird erreicht, wenn im STOP‑Zustand **EI_UP** mit **DI_UP = TRUE** eintritt.
+
 - **DOWN**: DO_UP = FALSE, DO_DOWN = TRUE.  
   Wird erreicht, wenn im STOP‑Zustand **EI_DOWN** mit **DI_DOWN = TRUE** eintritt.
+
 - **UP_STOP**: Zwischenzustand, der eingenommen wird, wenn während des UP‑Zustands ein **EI_UP** eintritt, aber **DI_UP = FALSE** (und auch **DI_DOWN = FALSE**).  
   In UP_STOP werden beide Ausgänge auf FALSE gesetzt und anschließend sofort nach STOP zurückgegangen.
+
 - **DOWN_STOP**: Analog zu UP_STOP für den DOWN‑Zustand bei **EI_DOWN** mit **DI_DOWN = FALSE**.
 - Direkte Umschaltungen sind möglich:  
   Von **UP** → **DOWN**, wenn **EI_DOWN** mit **DI_DOWN = TRUE** eintrifft oder **EI_UP** mit **DI_UP = FALSE** und **DI_DOWN = TRUE** (implizite Anforderung der Gegenrichtung).  

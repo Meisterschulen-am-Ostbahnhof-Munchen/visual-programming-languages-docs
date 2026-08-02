@@ -1,7 +1,5 @@
 # DataPanel_LO_QX
 
-
-
 <img width="1457" height="259" alt="image" src="https://github.com/user-attachments/assets/80fc4f29-178a-42f5-a007-1361dfa8834e" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der Funktionsblock arbeitet nach einem typischen Service-Interface-Muster. Bei d
 
 ## Zustandsübersicht
 Der Baustein verfügt über zwei Hauptzustände:
+
 1. **Nicht initialisiert**: Wartet auf INIT-Event
 2. **Initialisiert**: Bereit für REQ-Operationen
 

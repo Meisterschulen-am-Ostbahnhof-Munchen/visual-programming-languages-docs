@@ -1,7 +1,5 @@
 # F_MID
 
-
-
 <img width="1158" height="232" alt="F_MID" src="https://github.com/user-attachments/assets/0f4a4667-023e-4ada-8ea0-2df3b494c7db" />
 
 * * * * * * * * * *

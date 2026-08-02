@@ -1,6 +1,5 @@
 # AX_RangeBasedPulse
 
-
 ![AX_RangeBasedPulse](./AX_RangeBasedPulse.svg)
 
 * * * * * * * * * *

@@ -1,8 +1,5 @@
 # PgnDef
 
-
-
-
 ![PgnDef](./PgnDef.svg)
 
 * * * * * * * * * *

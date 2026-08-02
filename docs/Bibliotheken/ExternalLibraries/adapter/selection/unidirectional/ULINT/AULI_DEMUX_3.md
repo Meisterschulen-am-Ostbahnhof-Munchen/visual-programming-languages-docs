@@ -1,6 +1,5 @@
 # AULI_DEMUX_3
 
-
 ![AULI_DEMUX_3](./AULI_DEMUX_3.svg)
 
 * * * * * * * * * *
@@ -52,6 +51,7 @@ Keine eigenen Datenausgänge. Die Daten werden über die Adapter‑Plugs übertr
 
 ## Zustandsübersicht
 Da keine Zustandsmaschine im XML definiert ist, kann die interne Logik als einfacher Ablauf ohne mehrfache Zustände betrachtet werden:
+
 - **Warten**: Nach Initialisierung oder nach **CNF** wird auf das nächste **REQ** gewartet.
 - **Verarbeitung**: Bei Eintreffen von **REQ** wird die Weiterleitung durchgeführt und unmittelbar **CNF** erzeugt.
 

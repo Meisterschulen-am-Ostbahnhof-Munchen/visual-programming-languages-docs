@@ -1,6 +1,5 @@
 # ALR_DEMUX_4
 
-
 ![ALR_DEMUX_4](./ALR_DEMUX_4.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Keine direkten Daten-Ausgänge vorhanden. Die Datenweitergabe erfolgt ausschlie�
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt keine explizite Zustandsmaschine. Sein Verhalten kann als unmittelbare Reaktion auf das REQ-Ereignis beschrieben werden:
+
 - **Vor REQ**: Kein Datenpfad aktiv.
 - **Nach REQ mit gültigem K**: Der ausgewählte OUT-Pfad ist aktiv (solange, bis ein neuer REQ eintrifft).
 

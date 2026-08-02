@@ -1,6 +1,5 @@
 # GET_DATE_AND_TIME
 
-
 ![GET_DATE_AND_TIME](./GET_DATE_AND_TIME.svg)
 
 * * * * * * * * * *

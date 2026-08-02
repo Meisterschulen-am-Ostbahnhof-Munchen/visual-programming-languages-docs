@@ -1,5 +1,2 @@
 # Datentyp: DATE_AND_TIME
 
-
-
-

@@ -1,6 +1,5 @@
 # AUS_TO_AS
 
-
 ![AUS_TO_AS](./AUS_TO_AS.svg)
 
 * * * * * * * * * *
@@ -31,6 +30,7 @@ Keine direkt sichtbaren Datenausgänge. Die Daten werden über den Plug-Adapter 
 | `AS_OUT` | `adapter::types::unidirectional::AS` (Plug)  | Ausgang  | SINT-Adapter-Ausgang          |
 
 Die Schnittstelle der Adapter selbst enthält:
+
 - `AUS_IN.E1` (Event), `AUS_IN.D1` (USINT)
 - `AS_OUT.E1` (Event), `AS_OUT.D1` (SINT)
 
@@ -44,6 +44,7 @@ Der FB ist als Composite implementiert und enthält einen internen Funktionsbloc
 5. **Datenweitergabe:** Der konvertierte SINT-Wert wird über `AS_OUT.D1` an den angeschlossenen Plug ausgegeben.
 
 Die Verbindungen im FBNetzwerk sind:
+
 - Ereignis: `AUS_IN.E1` → `Convert.REQ`
 - Ereignis: `Convert.CNF` → `AS_OUT.E1`
 - Daten: `AUS_IN.D1` → `Convert.IN`

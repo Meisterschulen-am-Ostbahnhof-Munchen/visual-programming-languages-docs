@@ -1,6 +1,5 @@
 # SET_BOOL
 
-
 ![SET_BOOL](./SET_BOOL.svg)
 
 * * * * * * * * * *

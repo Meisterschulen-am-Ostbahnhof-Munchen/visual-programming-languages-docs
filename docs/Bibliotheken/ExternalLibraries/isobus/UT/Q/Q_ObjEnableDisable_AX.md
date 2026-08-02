@@ -1,6 +1,5 @@
 # Q_ObjEnableDisable_AX
 
-
 ![Q_ObjEnableDisable_AX](./Q_ObjEnableDisable_AX.svg)
 
 * * * * * * * * * *
@@ -58,6 +57,7 @@ Keine direkten Datenausgänge; der alte Zustand wird über den Adapter-Plug `qOl
 
 ## Zustandsübersicht
 Der FB `Q_ObjEnableDisable_AX` selbst besitzt keinen eigenen Zustandsautomaten. Die interne Zustandslogik wird vom enthaltenen Baustein `Q_ObjEnableDisable` realisiert. Dessen typische Zustände sind:
+
 - **IDLE** – Warten auf einen Befehl (REQ).  
 - **Processing** – Verarbeitung des Befehls (z. B. Senden einer CAN-Nachricht).  
 - **Done** – Befehl abgeschlossen, Ausgabe des alten Zustands und Rücksprung nach IDLE.

@@ -1,6 +1,5 @@
 # AX_TO_AS
 
-
 ![AX_TO_AS](./AX_TO_AS.svg)
 
 * * * * * * * * * *
@@ -24,12 +23,14 @@ Keine separaten Daten-Ausgänge; die Datenausgabe erfolgt über den AS_OUT-Adapt
 - **AX_IN** (Socket):  
   Typ `adapter::types::unidirectional::AX` (BOOL).  
   Stellt das binäre Eingangssignal über den Ereignis-Port `E1` und den Daten-Port `D1` bereit.
+
 - **AS_OUT** (Plug):  
   Typ `adapter::types::unidirectional::AS` (SINT).  
   Gibt das konvertierte SINT-Signal über den Ereignis-Port `E1` und den Daten-Port `D1` aus.
 
 ## Funktionsweise
 Der FB besitzt ein internes Netzwerk, das aus einer Instanz des Standardbausteins `F_BOOL_TO_SINT` besteht.  
+
 1. Ein eingehendes Ereignis am AX_IN‑Adapter (`E1`) triggert die Konvertierung.
 2. Der Datenwert von `AX_IN.D1` (BOOL) wird an den Eingang `IN` des Konvertierungsbausteins übergeben.
 3. Der Konvertierungsbaustein wandelt den BOOL-Wert in einen SINT-Wert um (`TRUE` → 1, `FALSE` → 0).

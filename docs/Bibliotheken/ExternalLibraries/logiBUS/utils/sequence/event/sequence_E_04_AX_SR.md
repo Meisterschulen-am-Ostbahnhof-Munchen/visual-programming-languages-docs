@@ -1,6 +1,5 @@
 # sequence_E_04_AX_SR
 
-
 ![sequence_E_04_AX_SR](./sequence_E_04_AX_SR.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Keine externen Dateneingänge.
 
 ## Funktionsweise
 Der Sequenzer arbeitet nach einem endlichen Automaten (ECC). Die fünf sequenziellen Zustände sind:
+
 - `State_00` (START)
 - `State_01`
 - `State_02`
@@ -92,6 +92,7 @@ Der `RESET`-Befehl bringt den Sequenzer unabhängig vom aktuellen Zustand in ein
 
 ## Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einfacheren Sequenzern (z. B. ohne STOP/RESUME) bietet `sequence_E_04_AX_SR`:
+
 - **Sicherheitsunterbrechung mit definiertem Ausschalten** aller Ausgänge.
 - **Pause- und Resume-Funktion**, die den aktuellen Zustand speichert.
 - **Zyklische Rücksprungmöglichkeit** von Schritt 4 zu Schritt 0.

@@ -1,6 +1,5 @@
 # AUDI_AX_SEL_AUDI
 
-
 ![AUDI_AX_SEL_AUDI](./AUDI_AX_SEL_AUDI.svg)
 
 * * * * * * * * * *
@@ -11,20 +10,24 @@ Der Funktionsblock **AUDI_AX_SEL_AUDI** realisiert eine binäre Auswahl (binary 
 
 ### **Ereignis-Eingänge**
 Der FB besitzt keine dedizierten Ereignis-Eingänge. Ereignisse werden jedoch über den **Selektor-Adapter G** bereitgestellt:
+
 - **G.E1**: Ereignissignal, das die Auswahl logik auslöst.
 
 ### **Ereignis-Ausgänge**
 Der FB besitzt keine dedizierten Ereignis-Ausgänge. Ereignisse werden jedoch über den **Ausgangs-Adapter OUT** ausgegeben:
+
 - **OUT.E1**: Quittierungssignal, das nach erfolgreicher Durchschaltung des gewählten Eingangs ausgelöst wird.
 
 ### **Daten-Eingänge**
 Der FB besitzt keine dedizierten Daten-Eingänge. Datenwerte werden über die folgenden Adapter bereitgestellt:
+
 - **IN0.D1** (Typ: AUDI) – erster auswählbarer Datenwert
 - **IN1.D1** (Typ: AUDI) – zweiter auswählbarer Datenwert
 - **G.D1** (Typ: AX) – Selektorfeld zur Bestimmung der aktiven Quelle
 
 ### **Daten-Ausgänge**
 Der FB besitzt keine dedizierten Daten-Ausgänge. Der ausgewählte Datenwert wird über den **Ausgangs-Adapter OUT** ausgegeben:
+
 - **OUT.D1** (Typ: AUDI) – ausgewählter Datenwert (entspricht IN0.D1 oder IN1.D1)
 
 ### **Adapter**

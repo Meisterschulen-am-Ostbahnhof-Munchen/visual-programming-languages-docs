@@ -1,7 +1,5 @@
 # ST32B
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `ST32B` ist ein strukturierter Datentyp (Structured Type) innerhalb der 4diac-IDE, der für die Aggregation von 32 einzelnen Bytes konzipiert ist. Er dient als Vorlage für Datenstrukturen, die eine feste Länge von 32 Byte benötigen und direkten Zugriff auf einzelne Bytes ermöglichen. Dieser Typ ist in der 4diac-IDE unter dem Paket `logiBUS::utils::conversion::types` registriert.
@@ -28,6 +26,7 @@ Für strukturierte Datentypen nicht zutreffend. `ST32B` besitzt keine Adapter.
 `ST32B` ist ein passiver Datentyp und implementiert keine aktive "Funktionsweise" oder Logik. Er dient lediglich als Bauplan (Schema) für die Organisation und Speicherung von 32 Byte-Werten unter einem einzigen logischen Namen. Instanzen dieses Datentyps können in anderen Funktionsbausteinen oder Datentypen deklariert und genutzt werden, um Daten strukturiert abzulegen oder zu übergeben.
 
 Die einzelnen Bytes sind wie folgt benannt und können direkt angesprochen werden:
+
 - `B_00`: Byte 00
 - `B_01`: Byte 01
 - ...
@@ -52,6 +51,7 @@ Als passiver Datentyp hat `ST32B` keine internen Zustände im Sinne eines Zustan
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Ein vergleichbarer Ansatz wäre die Verwendung eines Arrays vom Typ `ARRAY[0..31] OF BYTE`.
 Der Unterschied liegt hauptsächlich in der Art des Zugriffs und der Semantik:
+
 *   **`ST32B` (Struktur):** Ermöglicht den Zugriff auf Bytes über symbolische Namen (`B_00`, `B_01`, ...), was die Lesbarkeit und Wartbarkeit des Codes verbessern kann, insbesondere wenn die einzelnen Bytes eine spezifische Bedeutung haben.
 *   **`ARRAY[0..31] OF BYTE` (Array):** Ermöglicht den Zugriff über einen numerischen Index (`[0]`, `[1]`, ...), was für Schleifen und generische Operationen vorteilhaft ist.
 

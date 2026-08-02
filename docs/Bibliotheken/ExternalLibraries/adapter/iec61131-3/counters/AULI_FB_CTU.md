@@ -1,6 +1,5 @@
 # AULI_FB_CTU
 
-
 ![AULI_FB_CTU](./AULI_FB_CTU.svg)
 
 * * * * * * * * * *
@@ -35,11 +34,13 @@ Keine direkten Daten-Ausgänge. Die Ergebniswerte (aktueller Zählerstand CV und
 
 ## Funktionsweise
 Der Baustein kapselt einen IEC 61131-3-konformen CTU‑Zähler (`FB_CTU_ULINT`). Über die **Socket‑Adapter** werden sowohl Ereignisse als auch Daten empfangen:
+
 - **CU‑Aktualisierung**: Ein positiver Flanke an CU löst einen Zählschritt aus (CV = CV + 1).
 - **R‑Aktualisierung**: Ein Reset setzt den Zählerstand zurück (CV = 0).
 - **PV‑Aktualisierung**: Der Preset‑Wert wird übernommen; bei jedem Zählschritt wird CV mit PV verglichen.
 
 Das Ereignis an einem Socket wird intern auf den `REQ`‑Eingang des eingebetteten CTU‑Bausteins geführt. Nach der Verarbeitung wird das `CNF`‑Ereignis des CTU‑Blocks an alle drei Ausgänge weitergeleitet:
+
 - **Q‑Plug**: Gibt das Status‑Ereignis (Q.E1) aus – wird **bei jedem Update** gesendet, unabhängig davon, ob sich der boolsche Wert geändert hat.
 - **CV‑Plug**: Gibt das Ereignis (CV.E1) aus – ebenfalls **bei jedem Update**.
 - **CNF‑Ereignis**: Wird als äußeres Ereignis bereitgestellt.
@@ -55,6 +56,7 @@ Die Datenflüsse sind analog: Die Daten der Sockets (CU.D1, R.D1, PV.D1) werden 
 
 ## Zustandsübersicht
 Der FB besitzt keinen eigenen Zustandsautomaten. Der interne `FB_CTU_ULINT` kann folgende Zustände durchlaufen (vereinfacht):
+
 - **Idle**: Warten auf ein Ereignis.
 - **Zählen (Increment)**: Bei CU‑Ereignis wird der interne Zähler erhöht.
 - **Reset**: Bei R‑Ereignis wird der Zähler auf 0 gesetzt.

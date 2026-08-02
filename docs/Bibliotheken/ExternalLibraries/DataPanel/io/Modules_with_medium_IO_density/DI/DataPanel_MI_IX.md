@@ -1,7 +1,5 @@
 # DataPanel_MI_IX
 
-
-
 <img width="1444" height="264" alt="image" src="https://github.com/user-attachments/assets/72a89eba-1aec-4942-99dc-d2ed708c0850" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der Funktionsblock initialisiert über das INIT-Ereignis die Kommunikation mit e
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor INIT-Aufruf
 2. **Initialisiert**: Nach erfolgreicher INIT/INITO-Sequenz
 3. **Bereit**: Kann REQ/CNF-Zyklen verarbeiten
@@ -59,6 +58,7 @@ Der Funktionsblock durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Digital-Input-Blöcken bietet DataPanel_MI_IX:
+
 - Spezifische Adressierung für DataPanel-Systeme
 - Erweiterte Initialisierungsmöglichkeiten mit Parameter-Strings
 - Zusätzliche IND-Funktionalität für ereignisbasierte Kommunikation

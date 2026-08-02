@@ -1,8 +1,5 @@
 # logiBUS_DI_Events
 
-
-
-
 ![logiBUS_DI_Events](./logiBUS_DI_Events.svg)
 
 * * * * * * * * * *
@@ -56,6 +53,7 @@ Die Ereigniskonstanten decken folgende Zustände ab:
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Gegensatz zu einfachen digitalen Eingangsbausteinen, die nur binäre Zustände (EIN/AUS) erfassen, bietet `logiBUS_DI_Events` eine erweiterte Ereigniserkennung mit:
+
 - Zeitlich aufgelösten Ereignissen (Press/Release)
 - Komplexen Interaktionsmustern (Klicks, Doppelklicks)
 - Langzeit-Erkennung (Long Press)

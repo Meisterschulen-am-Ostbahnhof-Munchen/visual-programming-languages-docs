@@ -1,7 +1,5 @@
 # Q_ChangePolygonPoint
 
-
-
 ![Q_ChangePolygonPoint](https://user-images.githubusercontent.com/116869307/214147060-065896ae-60b6-4a01-a8d2-b2b95a424b74.png)
 
 * * * * * * * * * *
@@ -95,6 +93,7 @@ Der Q_ChangePolygonPoint-Baustein bietet die Referenzimplementierung für dynami
 - **Standardkonform**: Volle ISO 11783-6 Kompatibilität
 
 Essentiell für:
+
 - Adaptive Geometriedarstellungen
 - Technische Zeichnungen
 - Interaktive Kartenanwendungen

@@ -1,10 +1,5 @@
 # USINT Conversion
 
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_003b2_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b2_sub.md)

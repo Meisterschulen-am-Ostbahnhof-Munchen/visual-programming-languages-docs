@@ -1,6 +1,5 @@
 # AULI_TO_ALI
 
-
 ![AULI_TO_ALI](./AULI_TO_ALI.svg)
 
 * * * * * * * * * *
@@ -10,18 +9,22 @@ Der Funktionsblock **AULI_TO_ALI** ist ein Composite-Baustein, der eine Adapter-
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Ereignisse werden über den eingehenden Adapter **AULI_IN** empfangen:
+
 - `E1` – Startet die Konvertierung des anliegenden ULINT-Wertes.
 
 ### **Ereignis-Ausgänge**
 Ereignisse werden über den ausgehenden Adapter **ALI_OUT** gesendet:
+
 - `E1` – Quittiert die abgeschlossene Konvertierung und signalisiert, dass der LINT-Wert am Ausgang anliegt.
 
 ### **Daten-Eingänge**
 Daten werden über den eingehenden Adapter **AULI_IN** bereitgestellt:
+
 - `D1` (Datentyp: ULINT) – Der zu konvertierende vorzeichenlose 64‑Bit‑Wert.
 
 ### **Daten-Ausgänge**
 Daten werden über den ausgehenden Adapter **ALI_OUT** ausgegeben:
+
 - `D1` (Datentyp: LINT) – Der konvertierte vorzeichenbehaftete 64‑Bit‑Wert.
 
 ### **Adapter**
@@ -38,6 +41,7 @@ Der Baustein verwendet intern den IEC‑61131‑Konvertierungsbaustein `F_ULINT_
 
 ## Zustandsübersicht
 Der Baustein besitzt keine eigene Zustandsmaschine. Er reagiert ereignisgesteuert:
+
 - **Warten auf Ereignis `E1`**: Keine Aktivität.
 - **Während der Konvertierung**: Der interne FB `F_ULINT_TO_LINT` wird ausgeführt (die Dauer ist taktzyklenabhängig).
 - **Ausgabe nach `CNF`**: Das Ereignis `E1` am Ausgang wird gesendet.

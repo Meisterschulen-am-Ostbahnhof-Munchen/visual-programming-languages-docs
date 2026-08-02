@@ -1,6 +1,5 @@
 # AX_NOOP_INIT
 
-
 ![AX_NOOP_INIT](./AX_NOOP_INIT.svg)
 
 * * * * * * * * * *

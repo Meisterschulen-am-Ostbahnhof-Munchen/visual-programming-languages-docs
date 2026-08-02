@@ -1,8 +1,5 @@
 # ISO_CAN_NODE
 
-
-
-
 ![ISO_CAN_NODE](./ISO_CAN_NODE.svg)
 
 * * * * * * * * * *

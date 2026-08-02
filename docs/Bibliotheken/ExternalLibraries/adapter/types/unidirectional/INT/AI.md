@@ -2,7 +2,6 @@
 
 # AI (INT)
 
-
 ## 🎧 Podcast
 
 * [Von klickenden Relais zum intelligenten Code: Wie Software die Industriesteuerung revolutionierte](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Von-klickenden-Relais-zum-intelligenten-Code-Wie-Software-die-Industriesteuerung-revolutionierte-e375en3)

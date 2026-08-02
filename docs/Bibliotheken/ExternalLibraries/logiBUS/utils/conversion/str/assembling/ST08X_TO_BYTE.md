@@ -1,9 +1,6 @@
 # ST08X_TO_BYTE
 
-
-
 <img width="1075" height="213" alt="image" src="https://github.com/user-attachments/assets/006152fd-288f-460f-9c7b-723922245e8e" />
-
 
 ![ST08X_TO_BYTE](./ST08X_TO_BYTE.svg)
 
@@ -30,6 +27,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 
 ## Funktionsweise
 Bei Auslösung durch das `REQ`-Ereignis führt der Block eine bitweise Zuweisung durch. Jedes Bit des Ausgangsbytes `OUT` wird auf den Wert des entsprechenden booleschen Elements in der Eingangsstruktur `IN` gesetzt. Die Zuordnung erfolgt nach folgendem, fest definiertem Schema:
+
 *   `OUT`.0 (niederwertigstes Bit, LSB) = `IN`.`X_00`
 *   `OUT`.1 = `IN`.`X_01`
 *   `OUT`.2 = `IN`.`X_02`

@@ -1,7 +1,5 @@
 # F_CONCAT
 
-
-
 <img width="1436" height="240" alt="F_CONCAT" src="https://github.com/user-attachments/assets/5f43c8b8-b683-4d0d-83c8-16dc8e4e987d" />
 
 * * * * * * * * * *

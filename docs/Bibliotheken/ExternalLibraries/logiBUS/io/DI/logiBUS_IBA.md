@@ -1,6 +1,5 @@
 # logiBUS_IBA
 
-
 ![logiBUS_IBA](./logiBUS_IBA.svg)
 
 * * * * * * * * * *
@@ -59,6 +58,7 @@ Der Baustein **logiBUS_IBA** arbeitet intern mit einer Instanz des Bausteins **l
 
 ## Zustandsübersicht
 Der Baustein besitzt keine explizit dargestellte Zustandsmaschine, da es sich um einen Composite FB handelt. Das interne Verhalten wird durch den enthaltenen Baustein **logiBUS_IB** bestimmt, der typischerweise folgende Zustände implementiert:
+
 - **IDLE** – Warten auf INIT oder REQ
 - **INIT** – Initialisierung mit Parametern
 - **RUN** – Betriebsbereit, Datenverarbeitung aktiv

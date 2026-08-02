@@ -1,6 +1,5 @@
 # AS_DEMUX_3
 
-
 ![AS_DEMUX_3](./AS_DEMUX_3.svg)
 
 * * * * * * * * * *
@@ -51,6 +50,7 @@ Der Baustein wartet auf ein Ereignis an **REQ**. Bei dessen Eintreffen wird der 
 
 ## Zustandsübersicht
 Der Baustein besitzt im Wesentlichen einen impliziten Zustand:  
+
 - **IDLE** – Wartet auf REQ.  
 Bei Eingang von REQ wechselt er kurz in einen Verarbeitungszustand, kopiert den Eingangswert und sendet CNF, kehrt dann sofort zu IDLE zurück. Eine genaue Zustandsmaschine wird in der XML nicht definiert, da es sich um einen ECC‑gesteuerten FB handeln könnte; die Funktionslogik ist jedoch deterministisch und einfach.
 

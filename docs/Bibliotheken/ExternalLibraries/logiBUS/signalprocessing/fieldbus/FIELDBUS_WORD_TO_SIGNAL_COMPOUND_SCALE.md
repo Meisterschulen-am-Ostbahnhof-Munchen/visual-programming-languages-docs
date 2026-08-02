@@ -1,6 +1,5 @@
 # FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE
 
-
 ![FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE](./FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE.svg)
 
 * * * * * * * * * *
@@ -49,6 +48,7 @@ Der Baustein arbeitet in zwei Schritten, gesteuert durch die Ereignisse:
      2. Das untere Byte wird durch Maskierung mit `0x00FF` gewonnen.  
      3. Beide Bytes werden in `REAL` konvertiert, mit den zugehörigen Skalierungsfaktoren multipliziert und zum Offset addiert:  
         `OUT = (highByte * SCALE_HIGH) + (lowByte * SCALE_LOW) + OFFSET`  
+
      4. `VALID` wird auf `TRUE` gesetzt.  
    - **Ungültiges Signal** (sonst):  
      - `OUT` wird auf `0.0` gesetzt.  

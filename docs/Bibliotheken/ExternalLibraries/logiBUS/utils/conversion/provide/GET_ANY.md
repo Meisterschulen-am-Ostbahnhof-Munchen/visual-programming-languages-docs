@@ -1,6 +1,5 @@
 # GET_ANY
 
-
 ![GET_ANY](./GET_ANY.svg)
 
 * * * * * * * * * *

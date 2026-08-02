@@ -1,6 +1,5 @@
 # AX_TO_ADI
 
-
 ![AX_TO_ADI](./AX_TO_ADI.svg)
 
 * * * * * * * * * *
@@ -12,18 +11,22 @@ Da es sich um einen Composite FB handelt, werden alle Ein- und Ausgänge über d
 
 ### **Ereignis-Eingänge**
 Der Baustein besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung erfolgt über den **AX_IN** Adapter:
+
 - **E1** (BOOT): Ereigniseingang des AX-Adapter, der die Datenkonvertierung auslöst.
 
 ### **Ereignis-Ausgänge**
 Der Baustein besitzt keine direkten Ereignis-Ausgänge. Die Ereignisweiterleitung erfolgt über den **ADI_OUT** Adapter:
+
 - **E1** (CNF): Ereignisausgang des ADI-Adapter, signalisiert die Fertigstellung der Konvertierung.
 
 ### **Daten-Eingänge**
 Der Baustein besitzt keine direkten Daten-Eingänge. Die Datenaufnahme erfolgt über den **AX_IN** Adapter:
+
 - **D1** (BOOL): Boolescher Eingangswert, der in einen DINT-Wert umgewandelt wird.
 
 ### **Daten-Ausgänge**
 Der Baustein besitzt keine direkten Daten-Ausgänge. Die Datenausgabe erfolgt über den **ADI_OUT** Adapter:
+
 - **D1** (DINT): Konvertierter ganzzahliger Ausgangswert (0 bei FALSE, 1 bei TRUE).
 
 ### **Adapter**

@@ -1,6 +1,5 @@
 # ILOCK_SWITCH_AX
 
-
 ![ILOCK_SWITCH_AX](./ILOCK_SWITCH_AX.svg)
 
 *(Kein Bild verfügbar)*
@@ -48,6 +47,7 @@ Die Logik wird durch einen endlichen Zustandsautomaten (ECC) realisiert. Der FB 
 - Im Zustand `DOWN` wird `DOWN_OUT.D1` auf `TRUE` und `UP_OUT.D1` auf `FALSE` gesetzt.
 
 Ein Wechsel vom aktuellen Zustand in den jeweils anderen ist nur möglich, wenn der andere Socket aktiv wird (Priorisierung des letzten aktiven Eingangs). Dabei werden die Bedingungen differenziert:
+
 - **UP → DOWN**: entweder direkt durch `DOWN_IN.E1[DOWN_IN.D1]` oder wenn der eigene Eingang wegfällt und der andere aktiv ist (`UP_IN.E1[NOT UP_IN.D1 AND DOWN_IN.D1]`).
 - **DOWN → UP**: analog durch `UP_IN.E1[UP_IN.D1]` oder `DOWN_IN.E1[NOT DOWN_IN.D1 AND UP_IN.D1]`.
 

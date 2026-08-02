@@ -1,7 +1,5 @@
 # STATES
 
-
-
 States (Closed, Opened, Transitions)
 
 ## Global Constants

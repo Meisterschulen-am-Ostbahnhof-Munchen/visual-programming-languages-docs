@@ -1,9 +1,6 @@
 # SchieberVerriegelung
 
-
-
 <img width="1448" height="327" alt="image" src="https://github.com/user-attachments/assets/ce587957-0a58-4d7e-b8e0-cb14bd8c2ef0" />
-
 
 ![SchieberVerriegelung_ecc](./SchieberVerriegelung_ecc.svg)
 
@@ -50,6 +47,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 Der `SchieberVerriegelung`-FB ist als BasicFB implementiert und folgt einer definierten Zustandsmaschine (ECC). Nach der Initialisierung startet der Baustein im Zustand `AlleZu` (alle Schieber geschlossen). Von hier aus können je nach eintreffendem Ereignis und den aktuellen Sperrzuständen (`DI_LINKS_GESPERRT`, `DI_RECHTS_GESPERRT`) Übergänge in andere Zustände erfolgen.
 
 Die zentrale Logik liegt in der Interpretation des `EI_Hauptschieber_Open`-Ereignisses im Zustand `AlleZu`:
+
 1.  Wenn **kein** Seitenschieber gesperrt ist (`DI_LINKS_GESPERRT = FALSE` und `DI_RECHTS_GESPERRT = FALSE`), geht der FB in den Zustand `AlleAuf` über (alle Schieber öffnen).
 2.  Wenn **nur der rechte** Schieber gesperrt ist (`DI_RECHTS_GESPERRT = TRUE`), geht der FB in den Zustand `LinksAuf` über (Haupt- und linker Schieber öffnen, rechter bleibt geschlossen).
 3.  Wenn **nur der linke** Schieber gesperrt ist (`DI_LINKS_GESPERRT = TRUE`), geht der FB in den Zustand `rechtsAuf` über (Haupt- und rechter Schieber öffnen, linker bleibt geschlossen).
@@ -74,11 +72,13 @@ Der Algorithmus `normalOperation` kopiert bei aktiviertem Betrieb (`QI=TRUE`) di
 
 ## Anwendungsszenarien
 Typische Anwendungen finden sich in Verteil- und Förderanlagen, beispielsweise in der Landtechnik oder Materiallogistik:
+
 *   **Korn- oder Schüttgutförderer**: Der Hauptschieber leitet den Strom. Die Seitenschieber können je nach Bedarf geöffnet werden, um z.B. in verschiedene Silos zu verteilen. Die Verriegelung verhindert, dass beide Seiten gleichzeitig geöffnet sind, wenn dies mechanisch oder prozessbedingt unzulässig ist.
 *   **Weichensteuerung**: Analog zu einer mechanischen Weiche, bei der die Stellung eines Weichenschuhs die andere Position blockiert.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Schieber-Steuerungsbausteinen (z.B. einzelnen `E_SR`-FlipFlops pro Schieber) bietet der `SchieberVerriegelung`-FB:
+
 *   **Integrierte Kollisionsvermeidung**: Die Verriegelungslogik ist fest im Zustandsautomaten hinterlegt und muss nicht extern verdrahtet werden.
 *   **Zustandsbasierte Koordination**: Die Ausgangsbefehle sind immer konsistente Sets (`Open`/`Close`-Kombinationen für alle drei Schieber).
 *   **Explizite Sperreingänge**: Die Berücksichtigung externer Sperrsignale (`DI_*_GESPERRT`) ist integraler Bestandteil der Steuerlogik.

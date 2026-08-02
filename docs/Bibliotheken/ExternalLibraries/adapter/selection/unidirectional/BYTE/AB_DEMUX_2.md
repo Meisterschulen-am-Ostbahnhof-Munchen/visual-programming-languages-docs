@@ -1,6 +1,5 @@
 # AB_DEMUX_2
 
-
 ![AB_DEMUX_2](./AB_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Der Baustein arbeitet nach dem Prinzip eines 1‑zu‑2‑Demultiplexers:
 2. Der Wert des Daten-Eingangs **K** wird ausgelesen. Er muss den Wert **0** oder **1** annehmen.
 3. Bei **K = 0** wird der Datenstrom vom **IN**-Adapter auf den Adapter **OUT1** umgeleitet.  
    Bei **K = 1** erfolgt die Weiterleitung auf **OUT2**.
+
 4. Nach erfolgreicher Umschaltung wird das **CNF**-Ereignis gesendet.
 
 Während der Verarbeitung werden die Daten des **IN**-Adapters vollständig auf den ausgewählten Ausgangsadapter übertragen. Die nicht ausgewählte Ausgangsschnittstelle bleibt inaktiv (keine Datenweitergabe).

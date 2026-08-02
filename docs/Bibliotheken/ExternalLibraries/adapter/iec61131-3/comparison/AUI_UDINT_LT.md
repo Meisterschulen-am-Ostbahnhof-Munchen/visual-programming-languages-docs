@@ -1,6 +1,5 @@
 # AUI_UDINT_LT
 
-
 ![AUI_UDINT_LT](./AUI_UDINT_LT.svg)
 
 * * * * * * * * * *
@@ -49,6 +48,7 @@ Keine direkten Datenausgänge. Das Ergebnis wird über den **OUT-Adapter** (Date
 
 ## Zustandsübersicht
 Der Baustein besitzt keine explizite Zustandsmaschine (ECC). Er verhält sich wie ein **reiner Funktionsbaustein** ohne interne Zustände:  
+
 - Nach jedem **REQ**-Ereignis wird der Vergleich unverzögert durchgeführt und das Ergebnis am **OUT**-Adapter bereitgestellt.  
 - Es gibt keine Wartezustände oder zeitlichen Verzögerungen.  
 

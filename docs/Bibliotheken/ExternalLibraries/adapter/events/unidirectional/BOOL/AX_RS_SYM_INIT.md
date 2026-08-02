@@ -1,6 +1,5 @@
 # AX_RS_SYM_INIT
 
-
 ![AX_RS_SYM_INIT](./AX_RS_SYM_INIT.svg)
 
 * * * * * * * * * *

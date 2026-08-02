@@ -1,6 +1,5 @@
 # ASSEMBLE_AB_FROM_AQ
 
-
 ![ASSEMBLE_AB_FROM_AQ](./ASSEMBLE_AB_FROM_AQ.svg)
 
 * * * * * * * * * *
@@ -23,6 +22,7 @@ Alle eingehenden Ereignisse werden über die **Adapter-Sockets** übertragen. Je
 ### **Daten-Eingänge**
 
 Die Daten werden über die **Adapter-Sockets** in Form von 4-Bit-Werten (Nibbles) eingelesen:
+
 - **QUARTER_BYTE_00.D1**: Nibble für die niederwertigsten Bits (Bits 0..3)
 - **QUARTER_BYTE_01.D1**: Nibble für Bits 4..7
 - **QUARTER_BYTE_02.D1**: Nibble für Bits 8..11  

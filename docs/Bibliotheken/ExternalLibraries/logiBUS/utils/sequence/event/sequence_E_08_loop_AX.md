@@ -1,8 +1,5 @@
 # sequence_E_08_loop_AX
 
-
-
-
 ![sequence_E_08_loop_AX_ecc](./sequence_E_08_loop_AX_ecc.svg)
 
 * * * * * * * * * *
@@ -45,11 +42,6 @@ Für zyklische ereignisgesteuerte 8-stufige Sequenzen mit Adapteranbindung.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_E_08_loop**: Standardvariante ohne Adapter.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

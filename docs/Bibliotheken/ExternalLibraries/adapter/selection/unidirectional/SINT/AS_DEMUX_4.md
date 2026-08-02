@@ -1,6 +1,5 @@
 # AS_DEMUX_4
 
-
 ![AS_DEMUX_4](./AS_DEMUX_4.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Keine eigenständigen Datenausgänge – die Ausgabe erfolgt ausschließlich üb
 Der Baustein arbeitet als **1‑zu‑4‑Demultiplexer** auf Adapterebene. Sobald ein Ereignis am Eingang `REQ` eintrifft, wird der am Socket `IN` anliegende Adapter (einschließlich seiner gesamten Daten‑ und Ereignisschnittstelle) auf den durch die Variable `K` bestimmten Ausgangs-Port (`OUT1` … `OUT4`) geschaltet.
 
 Dabei gilt:
+
 - Der Wert von `K` bestimmt den Zielausgang (1‑basiert).
 - Nur der ausgewählte Ausgang erhält eine Verbindung zum Eingang; alle anderen Ausgänge bleiben inaktiv oder behalten ihren letzten Zustand (abhängig von der konkreten Adapter‑Implementierung).
 - Nach erfolgter Umschaltung wird das Bestätigungsereignis `CNF` ausgelöst.

@@ -1,7 +1,5 @@
 # Q_GetAttribute
 
-
-
 ![Q_GetAttribute](https://user-images.githubusercontent.com/116869307/214147879-2749e8c2-364e-4335-9c0e-0445694831e4.png)
 
 * * * * * * * * * *
@@ -96,6 +94,7 @@ Der Q_GetAttribute-Baustein bietet die Standardimplementierung für Attributabfr
 - **Flexibel**: Unterstützt alle Objekttypen
 
 Unverzichtbar für:
+
 - Diagnosesysteme
 - Automatisierungslösungen
 - Interaktive VT-Anwendungen

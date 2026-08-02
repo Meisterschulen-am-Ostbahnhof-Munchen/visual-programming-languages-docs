@@ -1,9 +1,6 @@
 # sequence_ET_05
 
-
-
 <img width="1654" height="399" alt="image" src="https://github.com/user-attachments/assets/244b09cc-9ec4-43b7-9157-fb82556ce8ef" />
-
 
 ![sequence_ET_05_ecc](./sequence_ET_05_ecc.svg)
 
@@ -52,6 +49,7 @@ Der Funktionsblock `sequence_ET_05` implementiert eine sequenzielle Steuerung mi
 
 ## Funktionsweise
 Der FB arbeitet als Basic-FB mit einer ECC (Execution Control Chart). Der initiale Zustand ist `xSTART`. Bei einem `START_S1`-Ereignis wechselt der FB in den Zustand `sState_01`. In jedem aktiven Zustand (sState_01 bis sState_05) werden folgende Aktionen ausgeführt:
+
 1.  Der `timeOut`-Adapter wird gestoppt.
 2.  Der Ausgang des vorherigen Zustands wird deaktiviert (Exit-Algorithmus `X`).
 3.  Die Zustandsnummer `STATE_NR` wird aktualisiert und die Verweilzeit für den *nächsten* Übergang an den Timer übergeben (Confirmation-Algorithmus `C`). Das `CNF`-Ereignis wird ausgelöst.
@@ -59,6 +57,7 @@ Der FB arbeitet als Basic-FB mit einer ECC (Execution Control Chart). Der initia
 5.  Der `timeOut`-Adapter mit der zuvor gesetzten Zeit wird gestartet.
 
 Ein Zustandswechsel kann nun auf zwei Arten erfolgen:
+
 1.  **Ereignisgesteuert:** Durch das entsprechende manuelle Ereignis (z.B. `S1_S2`).
 2.  **Zeitgesteuert:** Durch das `timeOut.TimeOut`-Ereignis des Adapters, sofern die Zeit (`DT_Sx_Sy`) nicht auf `NO_TIME` gesetzt ist.
 
@@ -72,6 +71,7 @@ Das `RESET`-Ereignis führt immer in den speziellen Zustand `sRESET`, in dem all
 
 ## Zustandsübersicht
 Die ECC umfasst folgende Zustände:
+
 *   **xSTART:** Initialer Idle-Zustand.
 *   **sState_01 ... sState_05:** Die fünf sequenziellen Arbeitszustände.
 *   **sState_00:** Repräsentiert den logischen START-Zustand nach Abschluss der Sequenz oder nach einem Reset. Hier ist kein Ausgang aktiv.
@@ -84,11 +84,6 @@ Die ECC umfasst folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Timer-Ketten oder Zählern bietet `sequence_ET_05` eine vollständig gekapselte Zustandsmaschine mit klaren Eingangs-/Ausgangsereignissen und der flexiblen Kombination aus Zeit- und Ereignissteuerung. Gegenüber einem generischen `E_SR`- oder `E_CTUD`-Baustein in einer Ad-hoc-Verknüpfung stellt er eine vordefinierte, getestete und leicht zu parametrierende Lösung für eine häufige Steuerungsaufgabe dar.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

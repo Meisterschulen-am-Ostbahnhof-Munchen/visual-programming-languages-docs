@@ -1,6 +1,5 @@
 # Q_Priority_AUS
 
-
 ![Q_Priority_AUS](./Q_Priority_AUS.svg)
 
 * * * * * * * * * *
@@ -62,6 +61,7 @@ Nach dem Auslösen von `INIT` mit der gültigen Objekt-ID der Alarmmaske initial
 
 ## Zustandsübersicht
 Der Baustein besitzt keine explizit dargestellte Zustandsmaschine. Ablauf:
+
 1. **INIT** → Initialisierung wartet auf gültige Objekt-ID.
 2. Nach erfolgreicher Initialisierung → **INITO** aktiv.
 3. Über den Adapter `u8Priority` wird die Anforderung (REQ) gestartet.

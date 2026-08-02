@@ -1,7 +1,5 @@
 # 🔌 io
 
-
-
 ## 📺 Video
 
 * [Automation der Zukunft](https://www.youtube.com/watch?v=gqdgimyAk60)

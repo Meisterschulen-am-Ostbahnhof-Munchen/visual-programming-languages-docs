@@ -1,9 +1,6 @@
 # AX_D_FF
 
-
-
 <img width="1087" height="229" alt="image" src="https://github.com/user-attachments/assets/05b9faba-dff2-41e8-86a4-1031ffe644af" />
-
 
 ![AX_D_FF_ecc](./AX_D_FF_ecc.svg)
 
@@ -34,6 +31,7 @@ Der AX_D_FF ist ein Daten-Latch-Flipflop, das als Basisbaustein in der digitalen
 
 ## Funktionsweise
 Das AX_D_FF arbeitet als D-Latch-Flipflop mit drei Zuständen:
+
 - **START**: Initialzustand
 - **SET**: Speichert den Eingangswert und gibt ihn aus
 - **RESET**: Setzt den Ausgang zurück
@@ -60,9 +58,6 @@ Der Algorithmus LATCH kopiert den Eingangswert `I.D1` auf den Ausgang `Q.D1`. Di
 Im Vergleich zu getakteten D-Flipflops arbeitet der AX_D_FF asynchron und speichert den Wert sofort bei Änderung der Eingangsbedingungen. Es handelt sich um ein level-getriggertes anstatt eines flanken-getriggerten Elements.
 
 Vergleich mit [E_D_FF](../../../../../StandardLibraries/events/E_D_FF.md)
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

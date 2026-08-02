@@ -1,6 +1,5 @@
 # AR_MULTIME
 
-
 ![AR_MULTIME](./AR_MULTIME.svg)
 
 * * * * * * * * * *
@@ -36,6 +35,7 @@ Sobald die Berechnung abgeschlossen ist, wird ein Ereignis an **OUT.E1** gesende
 
 ## Zustandsübersicht
 Der Baustein selbst besitzt keine explizite Zustandsmaschine. Die ereignisgesteuerte Abarbeitung erfolgt deterministisch:
+
 - Warten auf Ereignis an **REQ** oder **IN2.E1**
 - Ausführen der Multiplikation
 - Senden des Ergebnisses an **OUT.E1** und **OUT.D1**

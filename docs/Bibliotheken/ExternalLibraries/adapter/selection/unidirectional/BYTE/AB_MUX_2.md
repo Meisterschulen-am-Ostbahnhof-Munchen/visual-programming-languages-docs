@@ -4,7 +4,6 @@
 
 ## Einleitung
 
-
 ![AB_MUX_2](./AB_MUX_2.svg)
 
 Der Funktionsbaustein **AB_MUX_2** ist ein generischer Multiplexer, der zwei an Adapter-Schnittstellen anliegende Werte (IN1, IN2) über einen Index `K` auswählt und an den Ausgang `OUT` weiterleitet. Der Baustein arbeitet ereignisgesteuert und eignet sich für den Einsatz in industriellen Steuerungsanwendungen mit standardisierten Adaptern des Typs `AB`.

@@ -1,6 +1,5 @@
 # AR2_X_TO_REAL
 
-
 ![AR2_X_TO_REAL](./AR2_X_TO_REAL.svg)
 
 * * * * * * * * * *
@@ -40,6 +39,7 @@ Der Funktionsblock **AR2_X_TO_REAL** ist ein Composite-Baustein, der als Brücke
 
 ## Funktionsweise
 Der Baustein fungiert als reine Vermittlungsschicht:
+
 1. Ein eingehendes Ereignis `REQ` löst die Übergabe des Wertes `OUT` (REAL) an den verbundenen Adapter aus (über `AR2_IN.DI1`).
 2. Der Adapter führt die erforderliche Konvertierung durch (z. B. AR2 ↔ REAL) und sendet ein Bestätigungsereignis an seinen Ausgang `EO1`.
 3. Dieses Ereignis wird als `CNF` nach außen geleitet, und der konvertierte Wert wird über `AR2_IN.DO1` als `IN` (REAL) bereitgestellt.

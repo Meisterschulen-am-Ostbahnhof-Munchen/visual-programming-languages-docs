@@ -1,6 +1,5 @@
 # AQ_MUX_5
 
-
 ![AQ_MUX_5](./AQ_MUX_5.svg)
 
 * * * * * * * * * *
@@ -53,6 +52,7 @@ Der Funktionsblock arbeitet ereignisgesteuert. Ein gültiger Index `K` (Werteber
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt intern mindestens zwei Zustände:
+
 1. **Warten auf REQ** – Im Ruhezustand wird auf ein Ereignis am Eingang `REQ` gewartet.
 2. **Umschalten und Bestätigen** – Nach dem Empfang von `REQ` wird der Index `K` ausgelesen, der zugehörige Eingang auf den Ausgang durchgeschaltet und das Ereignis `CNF` gesendet. Danach kehrt der Baustein in den Wartezustand zurück.
 

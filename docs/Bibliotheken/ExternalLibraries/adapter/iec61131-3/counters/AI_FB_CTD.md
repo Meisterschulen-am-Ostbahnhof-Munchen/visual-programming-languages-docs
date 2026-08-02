@@ -1,6 +1,5 @@
 # AI_FB_CTD
 
-
 ![AI_FB_CTD](./AI_FB_CTD.svg)
 
 * * * * * * * * * *
@@ -29,12 +28,14 @@ Zusätzlich werden die Ausgangsereignisse auch über die **Plug-Adapter** Q und 
 
 ### **Daten-Eingänge**
 Es gibt keine direkten Daten-Eingänge. Alle Datenwerte werden über die Socket-Adapter übertragen:
+
 - **CD** liefert den Abwärtszählimpuls (D1) – logischer Wert, der den Zähler dekrementiert.
 - **LD** liefert das Ladesignal (D1) – logischer Wert, der den Zähler auf den aktuellen PV-Wert setzt.
 - **PV** liefert den Vorgabewert (D1) – Integer, der als neuer Zählerstand geladen wird.
 
 ### **Daten-Ausgänge**
 Es gibt keine direkten Daten-Ausgänge. Die Ausgangsdaten werden über die Plug-Adapter bereitgestellt:
+
 - **Q** liefert den Zählerstatus (D1) – BOOL, TRUE wenn Zählerstand ≤ 0.
 - **CV** liefert den aktuellen Zählerstand (D1) – INT.
 

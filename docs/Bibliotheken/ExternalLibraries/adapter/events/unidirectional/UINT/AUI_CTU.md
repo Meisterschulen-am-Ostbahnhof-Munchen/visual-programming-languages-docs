@@ -1,6 +1,5 @@
 # AUI_CTU
 
-
 ![AUI_CTU](./AUI_CTU.svg)
 
 *Bild des Funktionsblocks nicht verfügbar*
@@ -81,6 +80,7 @@ Ablauf:
 | `EMIT_Q` | Emission des Q-Ereignisses | `SAVE_Q`-Algorithmus, sende `Q.E1` | 1 → `START` |
 
 Die Transitionen sind durch Bedingungen ausgelöst:  
+
 - `CU[CV.D1 < 65535]`: Ereignis CU, wenn Zähler nicht am Maximum.  
 - `R`: Ereignis R, immer möglich.  
 - `PV.E1`: Ereignis vom Adapter PV.  

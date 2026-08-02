@@ -1,7 +1,5 @@
 # F_DINT_TO_UDINT
 
-
-
 <img width="1454" height="217" alt="F_DINT_TO_UDINT" src="https://github.com/user-attachments/assets/1f958f49-ab73-4ac0-a2dd-fd1379a3cc6e" />
 
 * * * * * * * * * *
@@ -45,9 +43,6 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 - **F_INT_TO_UINT**: Konvertiert 16-Bit vorzeichenbehaftete Integer in vorzeichenlose Integer.
 - **F_LINT_TO_ULINT**: Konvertiert 64-Bit vorzeichenbehaftete Integer in vorzeichenlose Integer.
 - **F_SINT_TO_USINT**: Konvertiert 8-Bit vorzeichenbehaftete Integer in vorzeichenlose Integer.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

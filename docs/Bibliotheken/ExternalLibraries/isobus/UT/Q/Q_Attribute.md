@@ -1,7 +1,5 @@
 # Q_Attribute
 
-
-
 ![Q_Attribute](https://user-images.githubusercontent.com/69573151/212329228-8c605296-7915-4def-a497-2860e14ae509.png)
 
 * * * * * * * * * *
@@ -85,6 +83,7 @@ Der Q_Attribute-Baustein bietet die Referenzimplementierung für ISOBUS-Attribut
 - **Zuverlässig**: Bewährte Technik in Feldgeräten
 
 Essentiell für:
+
 - VT-Objektsteuerungen
 - Dynamische Anzeigekonfigurationen
 - Maschinenparameter-Adapter

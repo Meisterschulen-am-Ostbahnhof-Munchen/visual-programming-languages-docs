@@ -1,7 +1,5 @@
 # ST02X
 
-
-
 *(Kein Bild verfügbar für diesen Datentyp.)*
 
 * * * * * * * * * *
@@ -19,6 +17,7 @@ Nicht zutreffend, da ST02X ein Datentyp und kein Funktionsblock ist und somit ke
 
 ### **Daten-Eingänge**
 Die internen Komponenten dieses Datentyps können als seine "Daten" betrachtet werden, die gesetzt oder gelesen werden können, wenn eine Variable dieses Typs verwendet wird.
+
 *   **X_00** (Typ: BOOL, Kommentar: BIT 00)
     *   Der erste boolesche Wert innerhalb der Struktur.
 *   **X_01** (Typ: BOOL, Kommentar: BIT 01)
@@ -40,6 +39,7 @@ Der Datentyp ST02X ist ein passiver Container für Daten. Er selbst führt keine
 
 ## Zustandsübersicht
 Da ST02X selbst keine aktive Logik besitzt, hat es keinen "Zustand" im Sinne eines Zustandsautomaten. Der "Zustand" einer Variablen vom Typ ST02X wird durch die Kombination der Werte ihrer beiden booleschen Komponenten (`X_00` und `X_01`) bestimmt. Es gibt vier mögliche Zustände für eine Instanz von ST02X:
+
 *   `X_00 = FALSE, X_01 = FALSE`
 *   `X_00 = TRUE, X_01 = FALSE`
 *   `X_00 = FALSE, X_01 = TRUE`

@@ -1,7 +1,5 @@
 # LOG_16
 
-
-
 <img width="971" height="474" alt="image" src="https://github.com/user-attachments/assets/768789e5-7784-41c2-9d5c-c9492d64a38b" />
 
 * * * * * * * * * *
@@ -29,6 +27,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 
 ## Funktionsweise
 Der `LOG_16` implementiert einen Ringpuffer (First-In-First-Out mit fester Größe) mit 16 Elementen. Bei jedem eintreffenden `REQ`-Ereignis wird der folgende Algorithmus ausgeführt:
+
 1.  Der aktuelle Wert am Eingang `IN` wird als neuester Eintrag gespeichert.
 2.  Alle bisher gespeicherten Werte werden um eine Position "nach hinten" (in Richtung `OUT16`) verschoben.
 3.  Der Wert, der sich zuvor an Position 16 (`OUT16`) befand, wird verworfen.
@@ -53,9 +52,6 @@ Der Baustein besitzt keinen persistenten internen Zustand im Sinne einer Zustand
 *   **`E_DELAY` / Verzögerungsbausteine**: Diese Bausteine geben einen Eingangswert erst nach einer definierten Zeit verzögert wieder aus. Der `LOG_16` hingegen speichert eine Historie mehrerer Werte und gibt sie sofort, aber geordnet nach Aktualität, aus.
 *   **`FIFO`-Bausteine**: Klassische FIFO-Speicher (First-In-First-Out) haben oft variable Längen und ein separates Lese-/Schreib-Interface. Der `LOG_16` ist ein spezieller FIFO mit fester Länge (16), der bei jedem Schreibvorgang automatisch den gesamten Inhalt ausgibt und überschreibt.
 *   **Einfache `LOG`-Bausteine**: Einfache Logger ohne Puffer schreiben typischerweise nur einen einzelnen Wert. Die Stärke des `LOG_16` liegt in der ringförmigen Historie.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,6 +1,5 @@
 # UDINT_AUI_AX_SEL_AUI
 
-
 ![UDINT_AUI_AX_SEL_AUI](./UDINT_AUI_AX_SEL_AUI.svg)
 
 * * * * * * * * * *
@@ -54,6 +53,7 @@ Keine eigenen Daten-Ausgänge. Der ausgewählte Wert wird über den Adapter `OUT
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt keinen expliziten Zustandsautomaten. Sein Verhalten ist ereignisgesteuert:
+
 - Nach jedem `EI0`- oder `EI1`-Ereignis liegen die aktualisierten Werte an.
 - Ein `G.E1`-Ereignis führt unmittelbar zur Auswahl und Ausgabe des Signals.
 - Es existiert keine implizite Initialisierung – die Eingänge müssen vor der ersten Selektion gesetzt werden.

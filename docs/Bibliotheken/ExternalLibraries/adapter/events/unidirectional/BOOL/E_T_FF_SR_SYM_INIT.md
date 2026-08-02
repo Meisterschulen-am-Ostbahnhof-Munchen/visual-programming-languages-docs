@@ -1,6 +1,5 @@
 # E_T_FF_SR_SYM_INIT
 
-
 ![E_T_FF_SR_SYM_INIT](./E_T_FF_SR_SYM_INIT.svg)
 
 **Bild des Funktionsblocks:** (nicht verfügbar)
@@ -49,6 +48,7 @@ Der Baustein durchläuft einen endlichen Automaten mit fünf Zuständen: `START`
 
 - **Initialisierung (`INIT`)**  
   Wenn am Ereigniseingang `INIT` ein Signal anliegt, wird abhängig vom Zustand des Qualifiers `QI` unterschieden:
+
   - Ist `QI = TRUE`, wechselt der Baustein in den Zustand `Init`. Dort wird der Ausgangsqualifier `QO` auf den Wert von `QI` gesetzt (also `TRUE`) und der Ausgang `INITO` wird ausgelöst. Anschließend geht der Automat – wiederum abhängig von `Q_INIT` – in den Zustand `SET` (falls `Q_INIT = TRUE`) oder in den Zustand `RESET` (falls `Q_INIT = FALSE`). Somit erhält `Q` den gewünschten Startwert.
   - Ist `QI = FALSE`, wechselt der Baustein in den Zustand `DeInit`. Dort wird `QO` auf `FALSE` gesetzt und `INITO` ausgelöst. Danach kehrt der Automat in den Startzustand zurück.
 
@@ -80,6 +80,7 @@ Der Baustein durchläuft einen endlichen Automaten mit fünf Zuständen: `START`
 | RESET   | Q ist zurückgesetzt (`FALSE`)                | `Q := FALSE` (nur wenn QI=true); Auslösen `EO` |
 
 Übergänge:
+
 - `START` → `Init` : bei `INIT` und `QI = TRUE`
 - `START` → `DeInit` : bei `INIT` und `QI = FALSE`
 - `Init` → `SET` : wenn `Q_INIT = TRUE`

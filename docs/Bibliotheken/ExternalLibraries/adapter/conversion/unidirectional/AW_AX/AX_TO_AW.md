@@ -2,7 +2,6 @@
 
 Kein Bild verfügbar.
 
-
 ![AX_TO_AW](./AX_TO_AW.svg)
 
 * * * * * * * * * *

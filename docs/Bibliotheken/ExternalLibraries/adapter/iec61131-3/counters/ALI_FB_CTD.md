@@ -1,6 +1,5 @@
 # ALI_FB_CTD
 
-
 ![ALI_FB_CTD](./ALI_FB_CTD.svg)
 
 * * * * * * * * * *
@@ -20,12 +19,14 @@ Keine – alle Ereignis‑ und Dateninformationen werden über Adapter‑Sockets
 
 ### **Daten-Eingänge**
 Es existieren keine separaten DataInputs. Die Eingabedaten werden über die folgenden Adapter‑Sockets bereitgestellt:
+
 - **CD** (Socket, Typ `adapter::types::unidirectional::AX`): Abwärtszählimpuls (aktiviert den Zählvorgang).
 - **LD** (Socket, Typ `adapter::types::unidirectional::AX`): Ladeimpuls (aktiviert das Laden des Preset‑Werts).
 - **PV** (Socket, Typ `adapter::types::unidirectional::ALI`): Preset‑Wert (LINT); der Wert wird beim Laden (LD) übernommen.
 
 ### **Daten-Ausgänge**
 Es existieren keine separaten DataOutputs. Die Ausgabedaten werden über die folgenden Adapter‑Plugs bereitgestellt:
+
 - **Q** (Plug, Typ `adapter::types::unidirectional::AX`): Ausgangssignal (Bool) – zeigt an, ob der Zählerstand **Null** erreicht hat.
 - **CV** (Plug, Typ `adapter::types::unidirectional::ALI`): Aktueller Zählerwert (LINT).
 

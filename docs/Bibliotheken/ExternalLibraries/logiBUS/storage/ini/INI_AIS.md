@@ -1,6 +1,5 @@
 # INI_AIS
 
-
 ![INI_AIS](./INI_AIS.svg)
 
 * * * * * * * * * *

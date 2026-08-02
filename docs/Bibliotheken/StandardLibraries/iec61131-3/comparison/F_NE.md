@@ -1,7 +1,5 @@
 # F_NE
 
-
-
 ![F_NE](https://user-images.githubusercontent.com/116869307/214144558-e676465a-a116-46b2-87e7-fd3b912c702a.png)
 
 <https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_ne.html>
@@ -11,7 +9,6 @@
 * * * * * * * * * *
 
 ![F_NE](F_NE.svg)
-
 
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 

@@ -1,7 +1,5 @@
 # SchieberVerriegelungComposite
 
-
-
 <img width="1389" height="295" alt="image" src="https://github.com/user-attachments/assets/18618829-225f-479f-a034-f9c8d20b8b0c" />
 
 * * * * * * * * * *
@@ -28,6 +26,7 @@ Der Funktionsblock `SchieberVerriegelungComposite` ist ein Composite-FB, der als
 
 ### **Adapter**
 Der Composite-FB stellt drei bidirektionale Adapter-Schnittstellen zur Verfügung, um mit den physikalischen oder logischen Schieber-Aktoren zu kommunizieren. Jeder Adapter folgt dem Typ `adapter::types::bidirectional::ASR2`, der typischerweise SET- und RESET-Kommandos sowie entsprechende Rückmeldungen unterstützt.
+
 1.  **`Hauptschieber`**: Adapter für die Ansteuerung und Statusrückmeldung des Hauptschiebers.
 2.  **`SchieberLinks`**: Adapter für die Ansteuerung und Statusrückmeldung des linken Schiebers.
 3.  **`SchieberRechts`**: Adapter für die Ansteuerung und Statusrückmeldung des rechten Schiebers.
@@ -44,11 +43,13 @@ Die zentrale Logik zur Steuerung der Schieber und zur Verriegelung liegt vollst�
 
 ## Zustandsübersicht
 Als Composite-FB besitzt `SchieberVerriegelungComposite` selbst keinen expliziten Zustandsautomaten. Der Systemzustand wird vollständig durch den internen `SchieberVerriegelung`-FB verwaltet. Der Composite-Block kann sich in einem der beiden folgenden Makrozustände befinden:
+
 *   **Nicht initialisiert**: Vor dem Eintreffen eines gültigen `INIT`-Ereignisses.
 *   **Initialisiert und betriebsbereit**: Nachdem der interne FB die Initialisierung via `INITO` quittiert hat. In diesem Zustand werden alle Adapter-Ereignisse durchgeleitet.
 
 ## Anwendungsszenarien
 Dieser Funktionsblock ist für Steuerungsanwendungen konzipiert, in denen mehrere mechanisch oder logisch verknüpfte Schieber oder Verschlüsse koordiniert werden müssen, z.B.:
+
 *   Verriegelungssysteme in Förderanlagen oder Silos.
 *   Sicherheitssteuerungen für Tore oder Klappen, die nur unter bestimmten Bedingungen geöffnet werden dürfen.
 *   Prozesssteuerungen, in denen die Reihenfolge von Schaltvorgängen eingehalten werden muss (z.B. Hauptschieber nur öffnen, wenn Seitenverschlüsse geschlossen sind).

@@ -1,6 +1,5 @@
 # ALR_SPLIT_9
 
-
 ![ALR_SPLIT_9](./ALR_SPLIT_9.svg)
 
 * * * * * * * * * *

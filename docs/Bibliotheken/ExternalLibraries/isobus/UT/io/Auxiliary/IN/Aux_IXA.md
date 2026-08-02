@@ -1,7 +1,5 @@
 # Aux_IXA
 
-
-
 <img width="1383" height="318" alt="image" src="https://github.com/user-attachments/assets/d064bd8f-6af0-4b04-9952-995892584e9a" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der Aux_IXA fungiert als Composite-Block, der den Basis-Funktionsblock Aux_IX ka
 
 ## Zustandsübersicht
 Der Block durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor INIT-Ereignis
 2. **Initialisierung**: Während INIT-Verarbeitung
 3. **Bereit**: Nach erfolgreicher Initialisierung (INITO)
@@ -56,13 +55,11 @@ Der Block durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen booleschen Eingangsblöcken bietet Aux_IXA:
+
 - Erweiterte Parametrisierungsmöglichkeiten
 - ISOBUS-Spezifikation
 - Adapter-basierte Schnittstelle
 - Composite-Struktur für bessere Wiederverwendbarkeit
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

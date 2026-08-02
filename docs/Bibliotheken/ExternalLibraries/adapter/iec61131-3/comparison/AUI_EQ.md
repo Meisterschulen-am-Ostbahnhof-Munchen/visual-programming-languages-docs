@@ -1,6 +1,5 @@
 # AUI_EQ
 
-
 ![AUI_EQ](./AUI_EQ.svg)
 
 * * * * * * * * * *

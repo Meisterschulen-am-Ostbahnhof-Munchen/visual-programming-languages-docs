@@ -1,7 +1,5 @@
 # STRUCT_DEMUX
 
-
-
 <img width="1196" height="182" alt="STRUCT_DEMUX" src="https://github.com/user-attachments/assets/2420186b-20ea-4920-85e4-746488942325" />
 
 * * * * * * * * * *
@@ -29,6 +27,7 @@ Die Daten-Ausgänge dieses Funktionsblocks sind nicht fest vordefiniert. Stattde
 
 **Beispiel:**
 Wenn eine Struktur vom Typ `MyStruct` mit den Membern `a` (Typ `INT`) and `b` (Typ `BOOL`) an den `IN`-Eingang angeschlossen wird, erzeugt der `STRUCT_DEMUX`-Baustein automatisch zwei Daten-Ausgänge:
+
 - `a` (Typ `INT`)
 - `b` (Typ `BOOL`)
 
@@ -44,6 +43,7 @@ Sobald ein `REQ`-Ereignis am Eingang des `STRUCT_DEMUX`-Funktionsblocks empfange
 
 ## Zustandsübersicht
 Der `STRUCT_DEMUX` ist ein zustandsloser Baustein, der nach einem einfachen Anforderungs-Bestätigungs-Zyklus arbeitet:
+
 1.  **Bereit**: Wartet auf ein `REQ`-Ereignis.
 2.  **Ausführend**: Liest die Eingangsstruktur, extrahiert die Member-Werte und setzt die entsprechenden Ausgänge.
 3.  **Abgeschlossen**: Löst das `CNF`-Ereignis aus und kehrt in den Bereitschaftszustand zurück.
@@ -70,9 +70,6 @@ Der `STRUCT_DEMUX` ist ein zustandsloser Baustein, der nach einem einfachen Anfo
 | Version | 3.0 (2025-04-14, Patrick Aigner) |
 
 | 4diac-Paket | eclipse4diac::convert |
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

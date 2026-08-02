@@ -1,8 +1,5 @@
 # I_GBSD
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -93,9 +90,6 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 | Richtungserkennung | ✔ Präzise | ✔ | ✖ Mehrdeutig |
 | Signalausfall | Robust | Anfällig | Störanfällig |
 
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_072](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
@@ -113,6 +107,7 @@ Der I_GBSD-Baustein bietet zuverlässige Bewegungsdaten für mobile Arbeitsmasch
 - **Flexibilität**: Universeller Einsatz in Landwirtschaft und Baumaschinen
 
 Idealer Einsatz bei:
+
 - Automatischen Lenksystemen
 - Arbeitsbreitenberechnungen
 - Maschinen mit hohen Genauigkeitsanforderungen

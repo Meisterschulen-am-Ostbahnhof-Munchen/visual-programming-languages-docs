@@ -1,9 +1,6 @@
 # sequence_E_04_loop
 
-
-
 <img width="1712" height="415" alt="image" src="https://github.com/user-attachments/assets/789f0943-fa6f-4087-863c-cbd8da1948c7" />
-
 
 ![sequence_E_04_loop_ecc](./sequence_E_04_loop_ecc.svg)
 
@@ -47,6 +44,7 @@ Der Funktionsblock `sequence_E_04_loop` implementiert eine zyklische Sequenz mit
 Der Baustein ist als Basic Function Block (BFB) mit einer Execution Control Chart (ECC) implementiert. Die interne Logik basiert auf sechs Zuständen: einem initialen Zustand (`xSTART`), vier aktiven Arbeitszuständen (`sState_01` bis `sState_04`) und einem speziellen Reset-Zustand (`sRESET`).
 
 Bei einem Zustandswechsel werden drei Aktionen nacheinander ausgeführt:
+
 1.  **Exit-Algorithmus (X)**: Der Ausgang des vorherigen Zustands wird auf `FALSE` gesetzt.
 2.  **Confirmation-Algorithmus (C)**: Die Zustandsnummer `STATE_NR` wird aktualisiert und das `CNF`-Ereignis wird ausgelöst.
 3.  **Entry-Algorithmus (E)**: Der Ausgang des neuen Zustands wird auf `TRUE` gesetzt und das entsprechende Ereignis (`EO_Sx`) wird ausgelöst.

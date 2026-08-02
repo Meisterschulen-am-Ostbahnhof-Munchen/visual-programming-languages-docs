@@ -1,7 +1,5 @@
 # Q_BackgroundColour
 
-
-
 ![Q_BackgroundColour](https://user-images.githubusercontent.com/113907471/204320542-f628c868-03d7-4d81-9ebb-5cf63d9ce541.png)
 
 ![Beispiel](https://user-images.githubusercontent.com/113907471/204320176-773a1f69-281c-4d83-873a-671f1680081a.png)
@@ -87,11 +85,6 @@ Der **Q_BackgroundColour** ist ein standardkonformer Funktionsbaustein zur Steue
 | Farbpalette   | Standard           | Erweitert       | Benutzerdef.   |
 | Objektbindung | Explizit           | Implizit        | Stylesheet     |
 
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_016](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
@@ -106,6 +99,7 @@ Der Q_BackgroundColour-Baustein bietet die Referenzimplementierung für ISOBUS-F
 - **Robust**: Bewährte Feldtauglichkeit
 
 Essentiell für:
+
 - Farbliche Statusanzeigen
 - Benutzeroberflächen-Design
 - Dynamische Visualisierungen

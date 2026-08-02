@@ -1,7 +1,5 @@
 # CallbackFB
 
-
-
 <img width="1298" height="232" alt="image" src="https://github.com/user-attachments/assets/3e1dbee0-183b-4d4f-a9e7-110505249cb4" />
 
 * * * * * * * * * *
@@ -29,6 +27,7 @@ Der `CallbackFB` ist ein Composite-Funktionsblock, der die Verwendung des Callba
 
 ## Funktionsweise
 Der `CallbackFB` fungiert als transparente Vermittlungsinstanz. Sein internes Netzwerk (FBNetwork) verbindet die öffentlichen Schnittstellen des Composite-FB direkt mit den Pins des integrierten `Callback`-Adapters (`PLUG1`).
+
 1.  Ein eingehendes `CNF`-Ereignis wird direkt an den `CNF`-Eingang des `PLUG1`-Adapters weitergeleitet.
 2.  Die mit `CNF` verbundenen Daten (`DI1` vom Typ `isobus::pgn::CAN_MSG`) werden parallel an den Dateneingang `DO1` des `PLUG1`-Adapters übergeben.
 3.  Wenn der interne Socket des `PLUG1`-Adapters ein `REQ`-Ereignis auslöst, wird dieses direkt an den öffentlichen `REQ`-Ereignisausgang des `CallbackFB` weitergeleitet.
@@ -52,9 +51,6 @@ Da es sich um einen rein durchschleifenden Composite-Baustein ohne interne Zusta
 *   **Direkte Adapterverbindung**: Anstatt einen `Callback`-Adapter direkt in ein Netzwerk einzubinden, bietet der `CallbackFB` eine gebündelte, benannte Schnittstelle (`CNF`/`REQ`/`DI1`), die in manchen Entwürfen lesbarer sein kann.
 *   **Einfache E_CLASS vs. CallbackFB**: Ein einfacher E_CLASS-Baustein (Event Splitter/Merger) könnte ähnliche Ereigniswegleitungen durchführen, jedoch nicht die typsichere Datenverbindung für `isobus::pgn::CAN_MSG` zusammen mit dem standardisierten Adapter-Interface bereitstellen.
 *   **Generische Wrapper-FBs**: Im Gegensatz zu generischen Wrapper-Bausteinen ist der `CallbackFB` auf einen spezifischen Datentyp und Adapter spezialisiert, was Typsicherheit und klare Semantik gewährleistet.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

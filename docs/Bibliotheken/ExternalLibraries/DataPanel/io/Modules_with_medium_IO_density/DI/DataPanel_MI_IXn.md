@@ -1,6 +1,5 @@
 # DataPanel_MI_IXn
 
-
 ![DataPanel_MI_IXn](./DataPanel_MI_IXn.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Der Baustein kommuniziert über das MI‑Protokoll mit einem DataPanel‑Modul. 
 
 ## Zustandsübersicht
 Eine explizite Zustandsmaschine ist im XML nicht hinterlegt. Typischerweise durchläuft der Baustein folgende Zustände:
+
 1. **IDLE** – nach dem Start, wartet auf INIT.
 2. **INIT** – Initialisierung wird durchgeführt, Konfiguration des Hardwarekanals.
 3. **OPERATE** – Bereit für REQ und Empfang von IND‑Ereignissen.

@@ -1,7 +1,5 @@
 # F_REPLACE
 
-
-
 <img width="1244" height="258" alt="F_REPLACE" src="https://github.com/user-attachments/assets/f5ad83d5-e863-468c-b5d8-5e1fcf3c2462" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock führt die folgende Operation durch:
+
 1. Beim Empfang des REQ-Ereignisses werden die Eingabewerte IN1, IN2, L und P gelesen.
 2. In der Zeichenkette IN1 werden ab Position P genau L Zeichen durch die Zeichenkette IN2 ersetzt.
 3. Das Ergebnis wird in OUT gespeichert und das CNF-Ereignis ausgelöst.

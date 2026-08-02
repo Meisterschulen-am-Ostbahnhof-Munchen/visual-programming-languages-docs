@@ -1,7 +1,5 @@
 # F_AND
 
-
-
 <img width="1336" height="244" alt="F_AND" src="https://github.com/user-attachments/assets/a65a419c-0126-4dd6-9ab3-6e40b32ddcac" />
 
 * * * * * * * * * *
@@ -49,9 +47,6 @@ Der `F_AND`-Block führt eine bitweise UND-Verknüpfung zwischen den Eingangsvar
 - **F_OR**: Führt eine bitweise ODER-Verknüpfung durch.
 - **F_XOR**: Führt eine bitweise exklusive ODER-Verknüpfung durch.
 - **F_NOT**: Führt eine bitweise Negation durch.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

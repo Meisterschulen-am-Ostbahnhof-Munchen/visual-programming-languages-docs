@@ -1,6 +1,5 @@
 # AULI_TO_AX
 
-
 ![AULI_TO_AX](./AULI_TO_AX.svg)
 
 * * * * * * * * * *
@@ -11,18 +10,22 @@ Der Funktionsblock **AULI_TO_AX** dient als Composite-Baustein zur Umwandlung ei
 
 ### **Ereignis-Eingänge**
 Der Funktionsblock besitzt keine direkten Ereignis-Eingänge. Das auslösende Ereignis wird über den Adapter **AULI_IN** bereitgestellt:
+
 - **AULI_IN.E1**: Ereignis zur Verarbeitung des ULINT-Werts und Auslösung der Ausgabe auf dem AX-Adapter.
 
 ### **Ereignis-Ausgänge**
 Auch die Ereignis-Ausgabe erfolgt über den Adapter:
+
 - **AX_OUT.E1**: Quittungsereignis, das nach erfolgreicher Umwandlung den neuen BOOL-Wert an den angeschlossenen Empfänger weitergibt.
 
 ### **Daten-Eingänge**
 Alle Dateneingänge sind Teil des Adapter-Sockets:
+
 - **AULI_IN.D1** (ULINT): Der umzuwandelnde Eingangswert.
 
 ### **Daten-Ausgänge**
 Die Datenausgabe wird über den Adapter-Plug realisiert:
+
 - **AX_OUT.D1** (BOOL): Ergebnis der Umwandlung – TRUE, wenn der Eingangswert ungleich 0 ist, sonst FALSE.
 
 ### **Adapter**
@@ -40,6 +43,7 @@ Der FB arbeitet rein ereignisgesteuert und nutzt intern den Vergleichsbaustein *
 
 ## Zustandsübersicht
 Als Composite-FB besitzt **AULI_TO_AX** keine eigenen Zustände im Sinne eines Zustandsautomaten. Der Ablauf wird rein durch die Ereignisverkettung gesteuert:
+
 1. **Warten** auf Ereignis an **AULI_IN.E1**.
 2. **Verarbeitung** durch **F_NE** (Vergleich) – quasistatisch, keine Verzögerung.
 3. **Ausgabe** des Ergebnisses auf **AX_OUT** (Ereignis und Daten).

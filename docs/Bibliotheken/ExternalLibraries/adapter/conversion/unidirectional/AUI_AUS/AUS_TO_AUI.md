@@ -1,6 +1,5 @@
 # AUS_TO_AUI
 
-
 ![AUS_TO_AUI](./AUS_TO_AUI.svg)
 
 * * * * * * * * * *
@@ -45,6 +44,7 @@ Der Funktionsblock **AUS_TO_AUI** ist ein Composite-Baustein, der eine Schnittst
 ## Funktionsweise
 
 Der Baustein arbeitet als reine Durchleitung:  
+
 - Ein eingehendes Ereignis an `AUS_IN.E1` wird direkt an `AUI_OUT.E1` weitergegeben.  
 - Der eingehende Datenwert von `AUS_IN.D1` (USINT) wird ohne zusätzliche Logik an `AUI_OUT.D1` weitergeleitet. Die Typkonvertierung von USINT nach UINT wird automatisch von der 4diac-IDE bzw. der Zielplattform ausgeführt.  
 

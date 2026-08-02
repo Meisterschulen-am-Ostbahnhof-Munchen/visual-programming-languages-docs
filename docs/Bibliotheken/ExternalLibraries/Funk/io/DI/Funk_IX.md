@@ -1,7 +1,5 @@
 # Funk_IX
 
-
-
 <img width="1912" height="337" alt="image" src="https://github.com/user-attachments/assets/7b367819-772a-47fa-a298-1324da5fda1a" />
 
 * * * * * * * * * *
@@ -51,6 +49,7 @@ Der Funk_IX Function Block implementiert ein Service Interface Pattern für digi
 
 ## Zustandsübersicht
 Der Function Block durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor INIT-Event
 2. **Initialisiert**: Nach erfolgreicher INIT/INITO-Sequenz
 3. **Abfragebereit**: Bereit für REQ/CNF-Zyklen
@@ -64,9 +63,6 @@ Der Function Block durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet Funk_IX erweiterte Service-Funktionalität mit Parametrierbarkeit, Statusrückmeldungen und asynchronen Benachrichtigungen. Die spezielle Eingangsidentifikation ermöglicht eine präzise Adressierung in komplexen Systemen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

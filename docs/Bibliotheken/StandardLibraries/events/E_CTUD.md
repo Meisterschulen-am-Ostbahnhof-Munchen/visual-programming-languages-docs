@@ -2,13 +2,11 @@
 
 ## 🎧 Podcast
 
-
 ![E_CTUD_ecc](./E_CTUD_ecc.svg)
 
 * [E_CTUD: Bidirektionaler Zähler in IEC 61499 Systemen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTUD-Bidirektionaler-Zhler-in-IEC-61499-Systemen-e368lmb)
 
 ---- 
-
 
 <img width="1139" height="259" alt="E_CTUD" src="https://user-images.githubusercontent.com/113907528/204895474-3f88876a-7ce5-406e-8f44-765c1b97226c.png">
 
@@ -74,11 +72,6 @@ Nach jeder dieser Aktionen werden die Status-Flags `QU` und `QD` basierend auf d
 | Laden (auf PV)| Ja (`LD`)        | Nein            | Ja (`LD`)        |
 | Status Oben  | `QU` (`CV >= PV`)| `Q` (`CV >= PV`)| Nein             |
 | Status Unten | `QD` (`CV = 0`)  | Nein            | `Q` (`CV = 0`)   |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

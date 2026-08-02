@@ -1,6 +1,5 @@
 # AX_E_SWITCH
 
-
 ![AX_E_SWITCH](./AX_E_SWITCH.svg)
 
 * * * * * * * * * *
@@ -40,6 +39,7 @@ Keine Datenausgänge vorhanden.
 
 ## Funktionsweise
 Der **AX_E_SWITCH** ist intern als Kapselung des Standardbausteins **E_SWITCH** realisiert. Ein eingehendes Ereignis an **EI** wird an den internen Baustein weitergeleitet. Der Adapter **G** liefert den booleschen Wert (über die Datenverbindung `G.D1` → `E_SWITCH.G`).  
+
 - Bei **G = 0** wird das Ereignis an **EO0** ausgegeben.  
 - Bei **G = 1** wird das Ereignis an **EO1** ausgegeben.  
 Der Baustein arbeitet deterministisch und ohne interne Zustandshaltung; die Umschaltung erfolgt in einem einzigen Ausführungsschritt.

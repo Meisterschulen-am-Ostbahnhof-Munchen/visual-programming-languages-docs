@@ -1,6 +1,5 @@
 # AUS_TO_AW
 
-
 ![AUS_TO_AW](./AUS_TO_AW.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Keine direkten Datenausgänge vorhanden. Der konvertierte WORD-Wert wird über d
 
 ## Zustandsübersicht
 Der Baustein besitzt keine eigene Zustandsmaschine. Der Ablauf ist ereignisgesteuert und erfolgt streng sequenziell:
+
 - **Idle**: Warten auf ein Ereignis am AUS_IN‑Adapter.
 - **Konvertierung aktiv**: Interner **F_USINT_TO_WORD** wird ausgeführt. Nach Abschluss wechselt der Baustein automatisch zurück in den Idle‑Zustand.
 - **Ausgabe**: Das Bestätigungsereignis wird am AW_OUT‑Adapter gesendet.

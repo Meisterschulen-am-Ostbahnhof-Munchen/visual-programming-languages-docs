@@ -1,6 +1,5 @@
 # SET_WORD
 
-
 ![SET_WORD](./SET_WORD.svg)
 
 * * * * * * * * * *

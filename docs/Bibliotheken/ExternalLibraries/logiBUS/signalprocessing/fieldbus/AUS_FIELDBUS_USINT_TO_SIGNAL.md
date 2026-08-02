@@ -1,6 +1,5 @@
 # AUS_FIELDBUS_USINT_TO_SIGNAL
 
-
 ![AUS_FIELDBUS_USINT_TO_SIGNAL](./AUS_FIELDBUS_USINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
@@ -45,6 +44,7 @@ Der Funktionsblock `AUS_FIELDBUS_USINT_TO_SIGNAL` dient der Weitergabe eines USI
 
 ## Funktionsweise
 Der FB reagiert auf ein eingehendes Ereignis `IN.E1`. Dieses triggert den internen Baustein `FIELDBUS_USINT_TO_SIGNAL`, der den Datenwert `IN.D1` verarbeitet und zwei Ergebnisse liefert:
+
 - Einen Ausgangswert (`OUT`)
 - Ein Gültigkeitssignal (`VALID`)
 

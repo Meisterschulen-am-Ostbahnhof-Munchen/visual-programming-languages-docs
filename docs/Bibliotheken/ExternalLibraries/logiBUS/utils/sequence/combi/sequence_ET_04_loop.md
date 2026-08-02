@@ -1,9 +1,6 @@
 # sequence_ET_04_loop
 
-
-
 <img width="1668" height="355" alt="image" src="https://github.com/user-attachments/assets/9b71d8ed-bd09-4337-ae95-611573db02af" />
-
 
 ![sequence_ET_04_loop_ecc](./sequence_ET_04_loop_ecc.svg)
 
@@ -47,11 +44,13 @@ Der Funktionsblock `sequence_ET_04_loop` implementiert eine zyklische Sequenz mi
 
 ## Funktionsweise
 Der FB arbeitet als Basic-FB mit einer endlichen Zustandsmaschine (ECC). Die Sequenz durchläuft die Zustände `State_01` -> `State_02` -> `State_03` -> `State_04` und springt dann wieder zurück zu `State_01`. Jeder Zustand hat drei Hauptaktionen:
+
 1.  **Exit-Aktion (X)**: Setzt den zugehörigen booleschen Ausgang (`DO_Sx`) auf `FALSE`.
 2.  **Confirmation-Aktion (C)**: Setzt die Zustandsnummer (`STATE_NR`) und konfiguriert den `timeOut`-Adapter mit der für den nächsten Übergang vorgesehenen Zeit (`DT_...`). Löst das `CNF`-Ereignis aus.
 3.  **Entry-Aktion (E)**: Setzt den zugehörigen booleschen Ausgang (`DO_Sx`) auf `TRUE` und löst das entsprechende Ausgangsereignis (`EO_Sx`) aus.
 
 Ein Zustandswechsel kann auf zwei Arten erfolgen:
+
 1.  **Durch Ereignis**: Durch das entsprechende Eingangsereignis (z.B. `S1_S2`).
 2.  **Durch Zeit**: Nach Ablauf der im aktuellen Zustand im `timeOut`-Adapter eingestellten Zeit, sofern diese nicht `NO_TIME` ist.
 
@@ -65,11 +64,16 @@ Der `RESET`-Eingang führt immer in den speziellen `sRESET`-Zustand, der alle ak
 
 ## Zustandsübersicht
 Die ECC besteht aus sechs Zuständen:
+
 1.  **xSTART**: Initialer, inaktiver Zustand. Wartet auf `START_S1`.
-2.  **sState_01**: Aktiver Zustand 1. Setzt `DO_S1`. Kann via `S1_S2`-Ereignis oder Timeout zu `sState_02` wechseln.
-3.  **sState_02**: Aktiver Zustand 2. Setzt `DO_S2`. Kann via `S2_S3`-Ereignis oder Timeout zu `sState_03` wechseln.
-4.  **sState_03**: Aktiver Zustand 3. Setzt `DO_S3`. Kann via `S3_S4`-Ereignis oder Timeout zu `sState_04` wechseln.
-5.  **sState_04**: Aktiver Zustand 4. Setzt `DO_S4`. Kann via `S4_S1`-Ereignis oder Timeout zurück zu `sState_01` wechseln (Schleife).
+2.  **sState_01**: Aktiver Zustand
+1. Setzt `DO_S1`. Kann via `S1_S2`-Ereignis oder Timeout zu `sState_02` wechseln.
+3.  **sState_02**: Aktiver Zustand
+2. Setzt `DO_S2`. Kann via `S2_S3`-Ereignis oder Timeout zu `sState_03` wechseln.
+4.  **sState_03**: Aktiver Zustand
+3. Setzt `DO_S3`. Kann via `S3_S4`-Ereignis oder Timeout zu `sState_04` wechseln.
+5.  **sState_04**: Aktiver Zustand
+4. Setzt `DO_S4`. Kann via `S4_S1`-Ereignis oder Timeout zurück zu `sState_01` wechseln (Schleife).
 6.  **sRESET**: Reset-Zustand. Schaltet alle Ausgänge aus, setzt `STATE_NR` auf 0 und wechselt automatisch zurück zu `xSTART`.
 
 ## Anwendungsszenarien
@@ -79,11 +83,6 @@ Die ECC besteht aus sechs Zuständen:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einfachen Timer-Blöcken oder Flip-Flops orchestriert dieser FB eine komplette, zustandsbasierte Sequenz. Im Vergleich zu einem `E_CYCLE`-Block bietet er eine explizite Zustandslogik mit klaren Übergangsbedingungen und der Möglichkeit, jeden Schritt individuell zu triggern. Er ist spezialisierter und strukturierter als eine selbst programmierte Sequenz aus `E_SR`- und `E_DELAY`-Blöcken.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

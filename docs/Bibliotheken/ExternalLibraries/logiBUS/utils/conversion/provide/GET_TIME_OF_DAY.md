@@ -1,6 +1,5 @@
 # GET_TIME_OF_DAY
 
-
 ![GET_TIME_OF_DAY](./GET_TIME_OF_DAY.svg)
 
 * * * * * * * * * *

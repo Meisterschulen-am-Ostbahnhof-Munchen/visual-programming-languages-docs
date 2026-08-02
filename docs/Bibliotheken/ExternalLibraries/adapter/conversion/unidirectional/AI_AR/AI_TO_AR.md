@@ -1,6 +1,5 @@
 # AI_TO_AR
 
-
 ![AI_TO_AR](./AI_TO_AR.svg)
 
 * * * * * * * * * *
@@ -35,6 +34,7 @@ Die Daten werden über den **AR_OUT**‑Adapter als Real-Wert ausgegeben.
 
 ## Funktionsweise
 Im FBNetzwerk des Composite-Bausteins sind die Ereignis- und Datenleitungen der beiden Adapter direkt miteinander verbunden:
+
 - Das Ereignis **E1** des AI_IN‑Adapters wird auf das Ereignis **E1** des AR_OUT‑Adapters geleitet.
 - Der Datenwert **D1** (Typ INT) des AI_IN‑Adapters wird auf den Datenwert **D1** (Typ REAL) des AR_OUT‑Adapters übertragen.
 

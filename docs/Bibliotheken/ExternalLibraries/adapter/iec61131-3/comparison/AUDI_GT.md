@@ -1,6 +1,5 @@
 # AUDI_GT
 
-
 ![AUDI_GT](./AUDI_GT.svg)
 
 * * * * * * * * * *

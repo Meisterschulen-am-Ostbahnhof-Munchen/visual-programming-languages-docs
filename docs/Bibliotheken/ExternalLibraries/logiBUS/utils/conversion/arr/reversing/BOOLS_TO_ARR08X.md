@@ -1,9 +1,6 @@
 # BOOLS_TO_ARR08X
 
-
-
 <img width="1090" height="362" alt="image" src="https://github.com/user-attachments/assets/61dbe877-33a2-4798-8137-868082aad02a" />
-
 
 ![BOOLS_TO_ARR08X](./BOOLS_TO_ARR08X.svg)
 
@@ -20,6 +17,7 @@ Der Funktionsblock `BOOLS_TO_ARR08X` dient der Konvertierung von acht einzelnen 
 
 ### **Daten-Eingänge**
 Acht einzelne boolesche Eingänge (`BOOL`), die jeweils einem Bit im resultierenden Array entsprechen:
+
 *   `IN_00`: Wert für Bit 00 / Array-Index 0.
 *   `IN_01`: Wert für Bit 01 / Array-Index 1.
 *   `IN_02`: Wert für Bit 02 / Array-Index 2.
@@ -61,9 +59,6 @@ Der Funktionsblock ist zustandslos (stateless). Er besitzt kein internes Gedäch
 *   **`BOOL_TO_xxx` Blöcke:** Blöcke wie `BOOL_TO_INT` oder `BOOL_TO_BYTE` konvertieren mehrere Bool-Werte ebenfalls in ein kompakteres Datum. `BOOLS_TO_ARR08X` erzeugt hingegen explizit ein Array, was den indizierten Zugriff auf jedes einzelne Bit erhält und die semantische Bedeutung der Position bewahrt.
 *   **Manuelle Verkabelung:** Die Alternative wäre die direkte Verkabelung jedes Einzelbits auf die Indizes eines Array-Variablenbausteins. `BOOLS_TO_ARR08X` kapselt diese Operation, verbessert die Übersichtlichkeit im FBD/LD-Editor und reduziert Verdrahtungsaufwand.
 *   **`MERGE`/`CONCAT`-Blöcke:** Allgemeine Zusammenführungsblöcke können verschiedene Datentypen verbinden. `BOOLS_TO_ARR08X` ist spezialisiert und typsicher für genau acht BOOL-Eingänge und ein BOOL-Array als Ausgang.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

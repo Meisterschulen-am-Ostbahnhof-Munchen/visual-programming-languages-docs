@@ -1,8 +1,5 @@
 # AX_FB_RS
 
-
-
-
 ![AX_FB_RS_ecc](./AX_FB_RS_ecc.svg)
 
 * * * * * * * * * *
@@ -45,6 +42,7 @@ Die logische Funktion lautet:
 `Q1 := (NOT RESET1) AND (SET OR Q1)`
 
 Das Verhalten lässt sich wie folgt zusammenfassen:
+
 1.  **Rücksetzen:** Wenn `RESET1.D1` TRUE ist, wird `Q1.D1` sofort FALSE, unabhängig vom Zustand von `SET.D1`.
 2.  **Setzen:** Wenn `SET.D1` TRUE ist und `RESET1.D1` FALSE ist, wird `Q1.D1` TRUE.
 3.  **Speichern:** Wenn sowohl `SET.D1` als auch `RESET1.D1` FALSE sind, behält `Q1.D1` seinen vorherigen Zustand bei.

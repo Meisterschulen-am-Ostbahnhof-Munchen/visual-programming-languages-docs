@@ -1,8 +1,5 @@
 # AE_DELAY
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung

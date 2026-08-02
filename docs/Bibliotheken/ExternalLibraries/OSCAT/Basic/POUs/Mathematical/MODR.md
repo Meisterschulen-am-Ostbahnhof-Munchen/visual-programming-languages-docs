@@ -1,7 +1,5 @@
 # MODR
 
-
-
 this is a modulo funtion for real numbers
 
 ## Interface

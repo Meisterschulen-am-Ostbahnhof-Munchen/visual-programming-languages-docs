@@ -1,6 +1,5 @@
 # INI_AX2
 
-
 ![INI_AX2](./INI_AX2.svg)
 
 * * * * * * * * * *
@@ -46,6 +45,7 @@ Der Funktionsblock INI_AX2 dient dem Lesen und Speichern von REAL-Daten aus eine
 
 ## Funktionsweise
 Der Baustein INI_AX2 beinhaltet einen internen INI-Funktionsblock (eclipse4diac::storage::INI), der die eigentliche Dateioperation durchführt. Die Verbindungen im Netzwerk realisieren folgende Abläufe:
+
 - Beim Eintreffen von INIT werden QI, SECTION, KEY und DEFAULT_VALUE an den INI-Baustein weitergeleitet.
 - Der INI-Baustein führt einen Lesevorgang aus und gibt das Ergebnis (über VALUE) an den Adapter-Ausgang (VAL.DI1) weiter.
 - Gleichzeitig wird nach erfolgreichem Lesen das Ereignis GET ausgelöst, das den Adapter-Eingang (VAL.EI1) aktiviert, um den Wert zu übermitteln.
@@ -63,6 +63,7 @@ Somit können über den AX2-Adapter Lese- und Schreibzugriffe auf die settings.i
 
 ## Zustandsübersicht
 Der Baustein selbst besitzt keine expliziten Zustände, da er als reines Netzwerk aus unterlagerten Bausteinen realisiert ist. Die Zustandslogik wird durch den internen INI-Baustein und den Adapter bestimmt. Typische Zustände sind:
+
 - **Initialisierung**: Warten auf INIT-Ereignis.
 - **Lesen**: Verarbeitung des Lesevorgangs durch INI-Baustein.
 - **Schreiben**: Verarbeitung eines Schreibbefehls über Adapter.

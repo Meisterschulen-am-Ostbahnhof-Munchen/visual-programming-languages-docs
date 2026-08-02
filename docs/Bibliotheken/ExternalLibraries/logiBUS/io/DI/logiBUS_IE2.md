@@ -1,7 +1,5 @@
 # logiBUS_IE2
 
-
-
 <img width="1746" height="283" alt="image" src="https://github.com/user-attachments/assets/ac2845b6-9709-446e-9377-bd61a000862d" />
 
 * * * * * * * * * *
@@ -72,9 +70,6 @@ Der Funktionsblock verfügt über einen Initialisierungszustand (INIT/INITO) und
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingabeblöcken bietet logiBUS_IE2 erweiterte Funktionalität für komplexe Ereigniserkennung und unterstützt verschiedene Eingabeereignistypen mit konfigurierbaren Parametern.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

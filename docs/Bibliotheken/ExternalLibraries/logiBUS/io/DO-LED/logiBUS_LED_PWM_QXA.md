@@ -1,6 +1,5 @@
 # logiBUS_LED_PWM_QXA
 
-
 ![logiBUS_LED_PWM_QXA](./logiBUS_LED_PWM_QXA.svg)
 
 * * * * * * * * * *

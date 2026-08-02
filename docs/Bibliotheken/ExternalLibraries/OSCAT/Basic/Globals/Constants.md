@@ -1,7 +1,5 @@
 # Constants
 
-
-
 Global constants
 
 ## Global Constants

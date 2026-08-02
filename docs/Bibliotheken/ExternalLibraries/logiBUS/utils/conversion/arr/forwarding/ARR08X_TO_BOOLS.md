@@ -1,9 +1,6 @@
 # ARR08X_TO_BOOLS
 
-
-
 <img width="1076" height="362" alt="image" src="https://github.com/user-attachments/assets/d607edb8-cbf2-4776-a5f2-cc8022ad9574" />
-
 
 ![ARR08X_TO_BOOLS](./ARR08X_TO_BOOLS.svg)
 
@@ -68,9 +65,6 @@ Der Funktionsblock besitzt keinen internen Zustand (zustandslos). Sein Verhalten
 *   **`SEL` / `MUX` Bausteine:** Diese wählen ein einzelnes Element aus einem Array basierend auf einem Index aus. `ARR08X_TO_BOOLS` hingegen extrahiert **alle** Elemente gleichzeitig und parallel.
 *   **`BYTE_TO_BOOLS` / `WORD_TO_BOOLS`:** Diese Bausteine zerlegen ein Byte- oder Wort-Datenelement in seine einzelnen Bits. `ARR08X_TO_BOOLS` arbeitet direkt auf einem Array von BOOLs, was semantisch klarer ist, wenn die Quelle bereits ein BOOL-Array ist. Die funktionale Wirkung auf die Bits ist jedoch äquivalent.
 *   **Manuelle Indexierung:** Statt dieses Bausteins zu verwenden, könnte man im umgebenden Algorithmus direkt auf `IN[0]`, `IN[1]` usw. zugreifen. Der Funktionsblock bietet jedoch eine klarere Schnittstellenbeschreibung, verbessert die Lesbarkeit des FBD-Netzwerks und kapselt die Funktionalität.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

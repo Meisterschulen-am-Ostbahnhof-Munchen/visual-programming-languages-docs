@@ -1,6 +1,5 @@
 # FIELDBUS_UINT_TO_SIGNAL
 
-
 ![FIELDBUS_UINT_TO_SIGNAL](./FIELDBUS_UINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Keine.
 
 ## Funktionsweise
 Bei jedem REQ-Ereignis wird der Algorithmus REQ ausgeführt:
+
 1. Der eingehende Wert IN wird mit der Konstanten `VALID_SIGNAL_W` verglichen.
 2. Ist `IN <= WORD_TO_UINT(VALID_SIGNAL_W)`, so gilt das Signal als gültig:
    - `OUT` erhält den Wert von `IN`.
@@ -57,6 +57,7 @@ Die Konstanten `NOT_AVAILABLE_WM` (für den Initialwert von IN) und `VALID_SIGNA
 
 ## Zustandsübersicht
 Der Baustein besteht aus einem einzigen Zustand **REQ**.  
+
 - **START** → **REQ**: Der Algorithmus wird ausgeführt, sobald das Ereignis REQ eintrifft. Nach Abarbeitung wird CNF ausgegeben und der Zustand bleibt in REQ (zyklische Verarbeitung).
 
 ## Anwendungsszenarien

@@ -1,6 +1,5 @@
 # AS_SPLIT_4
 
-
 ![AS_SPLIT_4](./AS_SPLIT_4.svg)
 
 *Kein Bild verfügbar.*

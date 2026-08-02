@@ -1,7 +1,5 @@
 # CONSTANTS_MATH
 
-
-
 CONSTANTS_MATH
 
 ## Structure

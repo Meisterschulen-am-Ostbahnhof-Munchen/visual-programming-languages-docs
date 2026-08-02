@@ -1,6 +1,5 @@
 # ILOCK_BLOCK_AX
 
-
 ![ILOCK_BLOCK_AX](./ILOCK_BLOCK_AX.svg)
 
 * * * * * * * * * *
@@ -12,11 +11,13 @@ Der Baustein verwendet Adapter-Schnittstellen vom Typ `adapter::types::unidirect
 
 ### **Ereignis-Eingänge**
 Keine diskreten Ereignis-Eingänge. Ereignisse werden über die Adapter-Schnittstellen empfangen:
+
 - `UP_IN.E1` – Ereignis für die Aufwärts-/Vorwärts-Richtung
 - `DOWN_IN.E1` – Ereignis für die Abwärts-/Rückwärts-Richtung
 
 ### **Ereignis-Ausgänge**
 Keine diskreten Ereignis-Ausgänge. Ausgaben erfolgen über die Adapterplugs:
+
 - `UP_OUT.E1` – Ereignis bei Aktivierung/Deaktivierung der Aufwärts-Richtung
 - `DOWN_OUT.E1` – Ereignis bei Aktivierung/Deaktivierung der Abwärts-Richtung
 
@@ -40,6 +41,7 @@ Keine diskreten Ereignis-Ausgänge. Ausgaben erfolgen über die Adapterplugs:
 Der Baustein arbeitet mit einem endlichen Automaten (ECC). Er startet im Zustand **STOP**. Sobald eines der beiden Ereignisse eintrifft und das zugehörige `D1`-Signal `TRUE` ist, wechselt er in den entsprechenden Richtungszustand. Solange `D1` des aktiven Eingangs `TRUE` bleibt, wird der Zustand gehalten. Wird das `D1`-Signal des aktiven Eingangs auf `FALSE` gesetzt (bei erneutem Ereignis), wechselt der Automat zuerst in einen **Stopp-Zwischenzustand** (UP_STOP oder DOWN_STOP) und dann automatisch zurück nach **STOP**. Der jeweils andere Eingang wird ignoriert, solange eine Richtung aktiv ist – der Baustein priorisiert den zuerst aktiven Eingang.
 
 Die Algorithmen setzen die Ausgangssignale:
+
 - **UP**: `UP_OUT.D1 := TRUE`, `DOWN_OUT.D1 := FALSE`
 - **DOWN**: `UP_OUT.D1 := FALSE`, `DOWN_OUT.D1 := TRUE`
 - **STOP**: Beide Ausgänge auf `FALSE`

@@ -1,9 +1,6 @@
 # LinksRechts
 
-
-
 <img width="1074" height="276" alt="image" src="https://github.com/user-attachments/assets/fc046311-1486-49c1-8932-8429e1dff4ed" />
-
 
 ![LinksRechts_ecc](./LinksRechts_ecc.svg)
 
@@ -48,6 +45,7 @@ Die Prioritätslogik ist wie folgt definiert: Wenn `EIN` aktiv ist (`TRUE`), wir
 
 ## Zustandsübersicht
 Die ECC (Execution Control Chart) des Bausteins umfasst fünf Zustände:
+
 1.  **`START`**: Initialzustand. Verlassen wird er mit dem ersten `EI_ON`-Ereignis.
 2.  **`Rechtslauf`**: Aktiver Zustand, in dem das Ausgangssignal `Rechts` auf `TRUE` gesetzt wird.
 3.  **`Linkslauf`**: Aktiver Zustand, in dem das Ausgangssignal `Links` auf `TRUE` gesetzt wird.
@@ -58,15 +56,13 @@ Die Übergänge zwischen den Zuständen werden ausschließlich durch das Ereigni
 
 ## Anwendungsszenarien
 Typische Anwendungen sind:
+
 *   Steuerung eines Wechselstrommotors mit zwei Drehrichtungen.
 *   Kontrolle einer horizontal verfahrbaren Einheit (z.B. Schlitten, Tor).
 *   Jede Applikation, bei der eine Vorwärts-/Rückwärtsbewegung mit einer allgemeinen Freigabe und individuellen Richtungsbefehlen gesteuert werden muss.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einem einfachen `SR`- oder `RS`-Flipflop bietet `LinksRechts` eine höhere Abstraktionsebene, da er die Priorisierungslogik und die Pause-Funktionalität bereits kapselt. Gegenüber einem reinen `E_SWITCH`-Block, der nur zwischen zwei Ausgängen umschaltet, verwaltet `LinksRechts` zusätzlich interne Zustände (Pause) und bietet eine definierte Priorisierung der Eingänge.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

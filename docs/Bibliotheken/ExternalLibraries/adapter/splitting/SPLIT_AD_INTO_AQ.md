@@ -1,6 +1,5 @@
 # SPLIT_AD_INTO_AQ
 
-
 ![SPLIT_AD_INTO_AQ](./SPLIT_AD_INTO_AQ.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Die Verarbeitung erfolgt streng synchron: alle 16 Quarter-Werte werden im selben
 
 ## Zustandsübersicht
 Als Composite-FB besitzt `SPLIT_AD_INTO_AQ` keinen eigenen Zustandsautomaten. Die interne Datenverarbeitung ist bestimmt durch:
+
 - **Warten auf Ereignis**: Im Leerlauf wird kein internes Ereignis erzeugt.
 - **Verarbeitung**: Beim Eintreffen von `IN.E1` werden Split und Aktualisierung der Flip-Flops durchgeführt.
 - **Ausgabe**: Unmittelbar nach dem Takt liegen alle AQ-Ausgänge an.

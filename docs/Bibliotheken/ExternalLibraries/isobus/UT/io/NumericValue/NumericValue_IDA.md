@@ -1,7 +1,5 @@
 # NumericValue_IDA
 
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -64,6 +62,7 @@ Dieser Mechanismus ermöglicht eine saubere Kapselung der Kommunikation, bei der
 ## Zustandsübersicht
 
 Da es sich um einen Composite FB handelt, wird der Zustand primär durch die internen Service-Bausteine bestimmt.
+
 *   **Nicht Initialisiert:** Nach dem Start oder bei `QI=FALSE` während `INIT`.
 *   **Initialisiert / Bereit:** Nach erfolgreichem `INIT` (`QO=TRUE`). Der Baustein lauscht auf Updates vom Terminal.
 *   **Fehler:** Wenn `QO=FALSE` und `STATUS` eine Fehlermeldung enthält (z. B. ungültige Objekt-ID).
@@ -78,9 +77,6 @@ Da es sich um einen Composite FB handelt, wird der Zustand primär durch die int
 
 *   **NumericValue_ID:** Dies ist der interne Basisbaustein. Er bietet dieselbe Funktionalität, stellt die Daten jedoch über klassische `IND`/`CNF` Ereignisse und einen `IN` Datenausgang bereit. **NumericValue_IDA** ist die Adapter-Variante dieses Bausteins.
 *   **Andere `_IDA` Bausteine:** Ähnlich wie `Button_IDA` (für Schaltflächen) oder `String_IDA` (für Texte), folgt dieser Baustein dem Entwurfsmuster, Terminal-Eingaben über Adapter bereitzustellen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,8 +1,6 @@
 # E\_CTD
 
-
 ## 🎧 Podcast
-
 
 ![E_CTD_ecc](./E_CTD_ecc.svg)
 
@@ -65,11 +63,6 @@ Der **E_CTD** (Event-Driven Down Counter) ist ein ereignisgesteuerter Abwärtsz�
 | Zählrichtung     | Abwärts           | Aufwärts           | Beides                   |
 | Ereignisgesteuert| Ja                | Ja                 | Ja                       |
 | Reset-Funktion   | LD (Neuladen)     | R (Reset)          | R (Reset)                |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

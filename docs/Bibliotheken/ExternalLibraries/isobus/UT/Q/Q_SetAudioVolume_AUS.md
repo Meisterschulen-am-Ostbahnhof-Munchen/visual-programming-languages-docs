@@ -1,6 +1,5 @@
 # Q_SetAudioVolume_AUS
 
-
 ![Q_SetAudioVolume_AUS](./Q_SetAudioVolume_AUS.svg)
 
 * * * * * * * * * *
@@ -46,6 +45,7 @@ Die möglichen Fehlercodes entsprechen den ISO 11783‑6‑Definitionen und de
 
 ## Zustandsübersicht
 Da es sich um einen zusammengesetzten Baustein mit internem FB handelt, ist keine explizite Zustandsmaschine auf oberster Ebene vorhanden. Der FB durchläuft folgende Phasen:
+
 1. Initialisierung (INIT empfangen → INITO senden)
 2. Bereit (wartet auf Lautstärkeänderung über u8Volume-Adapter)
 3. Verarbeitung (interner Befehl wird ausgeführt)

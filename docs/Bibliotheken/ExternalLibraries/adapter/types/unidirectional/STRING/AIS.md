@@ -1,6 +1,5 @@
 # AIS
 
-
 ![AIS](./AIS.svg)
 
 **Unidirektionaler Adapter für 1 Ereignis und 1 Zeichenkette**
@@ -33,6 +32,7 @@ Dieser Baustein ist selbst ein Adapter. Er besitzt keine weiteren internen Adapt
 
 ## Funktionsweise
 Der Adapter arbeitet nach dem Prinzip einer unidirektionalen „Plug‑&nbsp;Socket“‑Verbindung.  
+
 - Die **Plug**-Instanz sendet ein Ereignis an E1 und legt gleichzeitig die Daten auf D1 ab.  
 - Die **Socket**-Instanz empfängt dieses Ereignis und kann den Wert von D1 auslesen.  
 Eine Kommunikation in die Gegenrichtung ist nicht vorgesehen.

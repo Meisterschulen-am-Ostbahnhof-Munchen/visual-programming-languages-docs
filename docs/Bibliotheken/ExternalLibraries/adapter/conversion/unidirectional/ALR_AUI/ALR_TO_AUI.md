@@ -1,6 +1,5 @@
 # ALR_TO_AUI
 
-
 ![ALR_TO_AUI](./ALR_TO_AUI.svg)
 
 * * * * * * * * * *
@@ -12,18 +11,22 @@ Der Funktionsblock **ALR_TO_AUI** ist ein zusammengesetzter Baustein (Composite 
 
 ### **Ereignis-Eingänge**
 Der FB besitzt keine eigenen Ereignis-Eingänge. Ereignisse werden indirekt über den **ALR_IN**-Adapter empfangen:
+
 - **ALR_IN.E1** – Ereignis zur Auslösung der Konvertierung.
 
 ### **Ereignis-Ausgänge**
 Der FB besitzt keine eigenen Ereignis-Ausgänge. Ereignisse werden über den **AUI_OUT**-Adapter gesendet:
+
 - **AUI_OUT.E1** – Bestätigungsereignis nach erfolgter Konvertierung.
 
 ### **Daten-Eingänge**
 Die Daten werden ebenfalls über den **ALR_IN**-Adapter bereitgestellt:
+
 - **ALR_IN.D1** – Eingangswert vom Typ **LREAL** (gemäß ALR-Adapter).
 
 ### **Daten-Ausgänge**
 Die konvertierten Daten werden über den **AUI_OUT**-Adapter ausgegeben:
+
 - **AUI_OUT.D1** – Ausgangswert vom Typ **UINT** (gemäß AUI-Adapter).
 
 ### **Adapter**

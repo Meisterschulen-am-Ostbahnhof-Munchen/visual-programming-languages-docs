@@ -1,6 +1,5 @@
 # AR_CALIBRATE_3P
 
-
 ![AR_CALIBRATE_3P](./AR_CALIBRATE_3P.svg)
 
 * * * * * * * * * *
@@ -49,9 +48,11 @@ Die Kalibrierung basiert auf einer stückweisen linearen Interpolation zwischen 
 
 2. **Berechnung des kalibrierten Werts:**  
    Sobald ein Ereignis vom Rohwert‑Adapter (`X.E1`) eintrifft, wird der Funktionsblock aktiv und führt den Algorithmus **REQ** aus. Dabei wird der Rohwert `X.D1` linear abgebildet:
+
    - Liegt der Rohwert unterhalb des gespeicherten Mittelwerts `X_MID.DI1`, wird der untere Zweig der Kennlinie verwendet:  
      `Y.D1 = MIN_REF + (X.D1 – X_MIN.DI1) * (MID_REF – MIN_REF) / (X_MID.DI1 – X_MIN.DI1)`  
      Falls die Intervalle ungültig sind (Division durch Null oder negative Spannweite), wird auf `MIN_REF` zurückgegriffen.
+
    - Liegt der Rohwert oberhalb oder gleich `X_MID.DI1`, wird der obere Zweig berechnet:  
      `Y.D1 = MID_REF + (X.D1 – X_MID.DI1) * (MAX_REF – MID_REF) / (X_MAX.DI1 – X_MID.DI1)`  
      Auch hier wird bei ungültigen Intervallen `MID_REF` ausgegeben.

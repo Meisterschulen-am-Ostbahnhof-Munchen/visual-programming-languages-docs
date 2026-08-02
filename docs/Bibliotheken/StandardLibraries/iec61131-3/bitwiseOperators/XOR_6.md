@@ -1,7 +1,5 @@
 # XOR_6
 
-
-
 ![XOR_6](https://user-images.githubusercontent.com/116869307/214143825-a01dfad5-e15c-4869-bac8-379a175f01d9.png)
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ Die Berechnung erfolgt nach der Formel: OUT = IN1 ⊕ IN2 ⊕ IN3 ⊕ IN4 ⊕ IN
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
+
 1. **Wartezustand**: Block wartet auf REQ-Ereignis
 2. **Berechnungszustand**: Verarbeitet die Eingänge bei REQ-Aktivierung
 3. **Ausgabezustand**: Sendet CNF-Ereignis mit berechnetem Ergebnis
@@ -57,6 +56,7 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Blöcken mit zwei Eingängen bietet XOR_6:
+
 - Erweiterte Funktionalität mit sechs direkten Eingängen
 - Vermeidung von Kaskadierung mehrerer XOR-Blöcke
 - Kompaktere Implementierung für komplexe XOR-Operationen

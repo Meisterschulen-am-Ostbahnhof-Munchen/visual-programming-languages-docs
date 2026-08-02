@@ -1,6 +1,5 @@
 # ADI_MUX_2
 
-
 ![ADI_MUX_2](./ADI_MUX_2.svg)
 
 * * * * * * * * * *
@@ -52,6 +51,7 @@ Die Auswahl erfolgt rein ereignisgesteuert; jede Änderung von **K** erfordert e
 
 ## Zustandsübersicht
 Der FB besitzt keine explizite Zustandsmaschine. Der Arbeitsablauf lässt sich wie folgt beschreiben:
+
 1. **Warten** auf **REQ**.
 2. **Verarbeiten**: Einlesen von **K** und Durchschalten des entsprechenden Eingangs.
 3. **Bestätigen**: Senden von **CNF**.

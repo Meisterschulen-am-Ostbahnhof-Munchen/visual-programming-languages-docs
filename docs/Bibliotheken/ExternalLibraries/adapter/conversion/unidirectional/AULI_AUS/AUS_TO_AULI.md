@@ -1,6 +1,5 @@
 # AUS_TO_AULI
 
-
 ![AUS_TO_AULI](./AUS_TO_AULI.svg)
 
 * * * * * * * * * *
@@ -26,6 +25,7 @@ Der Funktionsblock `AUS_TO_AULI` ist ein Composite-Baustein zur Konvertierung ei
 
 ## Funktionsweise
 Der Baustein verbindet die Elemente des eingehenden AUS-Adapters direkt mit den korrespondierenden Elementen des ausgehenden AULI-Adapters:
+
 - Ein eingehendes Ereignis am `AUS_IN.E1` wird unverzögert an `AULI_OUT.E1` weitergegeben.
 - Der Datenwert `AUS_IN.D1` (USINT) wird ohne zusätzliche Logik auf `AULI_OUT.D1` (ULINT) abgebildet. Die Typkonvertierung erfolgt implizit durch die unterschiedlichen Adapterdefinitionen; ein USINT-Wert wird dabei in den entsprechenden ULINT-Wert erweitert.
 

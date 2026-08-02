@@ -1,6 +1,5 @@
 # IA_COGSOGRapidUpdate
 
-
 ![IA_COGSOGRapidUpdate](./IA_COGSOGRapidUpdate.svg)
 
 * * * * * * * * * *
@@ -49,6 +48,7 @@ Der Funktionsblock **IA_COGSOGRapidUpdate** dient als ISOBUS-Adapter für die NM
 
 2. **ISOBUS-Nachrichtenverarbeitung**  
    Der interne Kern (FB `I_CORE` vom Typ `isobus::tecu::I_COGSOGRapidUpdate`) empfängt kontinuierlich die NMEA 2000 PGN 129026-Nachrichten. Sobald neue Daten vorliegen, werden folgende Werte über die entsprechenden Adapter ausgegeben:
+
    - **COG**: Kurs über Grund (z. B. in 0,01°-Schritten)
    - **SOG**: Geschwindigkeit über Grund (z. B. in 0,01 km/h)
    - **SID**: Sequenz-ID zur Synchronisation

@@ -1,6 +1,5 @@
 # AB_DEMUX_3
 
-
 ![AB_DEMUX_3](./AB_DEMUX_3.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Keine Datenausgänge vorhanden – die Ausgabe erfolgt über die Adapter-Plugs.
 
 ## Funktionsweise
 Der Baustein wartet auf das Ereignis **REQ**. Sobald dieses eintritt, wird der Wert von **K** ausgewertet:
+
 - Bei **K = 1** wird der am Socket **IN** anliegende Wert auf den Plug **OUT1** übertragen.
 - Bei **K = 2** erfolgt die Übertragung auf **OUT2**.
 - Bei **K = 3** erfolgt die Übertragung auf **OUT3**.

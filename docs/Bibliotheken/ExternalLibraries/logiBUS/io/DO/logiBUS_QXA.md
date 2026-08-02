@@ -1,7 +1,5 @@
 # logiBUS_QXA
 
-
-
 <img width="2042" height="360" alt="image" src="https://github.com/user-attachments/assets/a209d37d-5012-4889-853b-e7a36dfc6644" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der logiBUS_QXA fungiert als Wrapper für den logiBUS_QX-Funktionsblock und biet
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor dem INIT-Ereignis
 2. **Initialisierung**: Während der Verarbeitung des INIT-Ereignis
 3. **Betriebsbereit**: Nach erfolgreicher Initialisierung (INITO-Bestätigung)
@@ -56,13 +55,11 @@ Der Funktionsblock durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_QXA:
+
 - Erweiterte Parametrierungsmöglichkeiten
 - Statusrückmeldungen für Fehlerdiagnose
 - Standardisierte Schnittstelle über Adapter
 - Unterstützung für multiple Ausgänge in einer Struktur
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

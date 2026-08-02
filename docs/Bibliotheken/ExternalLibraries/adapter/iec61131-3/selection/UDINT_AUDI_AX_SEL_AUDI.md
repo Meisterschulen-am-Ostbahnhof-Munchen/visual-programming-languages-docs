@@ -1,6 +1,5 @@
 # UDINT_AUDI_AX_SEL_AUDI
 
-
 ![UDINT_AUDI_AX_SEL_AUDI](./UDINT_AUDI_AX_SEL_AUDI.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Der FB besitzt keine direkten Datenausgänge am Interface. Der ausgewählte Date
 ## Funktionsweise
 
 Der FB führt eine binäre Selektion zwischen zwei Werten durch:  
+
 - **IN0** (direkter UDINT-Dateneingang)  
 - **IN1** (Wert aus dem Adapter, z. B. ein analoger oder digitaler Signalwert)  
 
@@ -51,6 +51,7 @@ Ein Ereignis an **EI0** startet die Verarbeitung mit dem Wert von **IN0**.
 Ereignisse an den Adaptern **IN1.E1** oder **G.E1** lösen ebenfalls eine Selektion aus (alle Ereignisse werden auf den internen Funktionsbaustein `F_SEL` geführt).  
 
 Der interne `F_SEL` entspricht dem IEC 61131-3 SELECT-Operator:  
+
 - Wenn G = FALSE → Ausgabe = IN0  
 - Wenn G = TRUE → Ausgabe = IN1  
 

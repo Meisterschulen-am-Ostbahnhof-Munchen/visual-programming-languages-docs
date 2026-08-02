@@ -1,6 +1,5 @@
 # SPLIT_MI_DO_S_Octal_SA
 
-
 ![SPLIT_MI_DO_S_Octal_SA](./SPLIT_MI_DO_S_Octal_SA.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Baustein implementiert einen einfachen, ereignisgesteuerten Ablauf:
+
 1. Ein eingehendes `REQ`-Ereignis löst die Ausführung des Algorithmus `REQ` aus.
 2. Der Algorithmus kopiert das Feld `u8SAMember` aus dem Eingang `IN` in jeden der acht Ausgänge (`OUT1` … `OUT8`).
 3. Jeder Ausgang erhält zusätzlich den zugehörigen Port-Wert aus dem oktalen Eingang:  
@@ -60,6 +60,7 @@ Der Baustein implementiert einen einfachen, ereignisgesteuerten Ablauf:
 
 ## Zustandsübersicht
 Der Baustein besitzt genau einen Zustand `REQ`:
+
 - **Eintritt** durch `REQ`-Ereignis.
 - **Aktion**: Ausführen des Algorithmus `REQ`.
 - **Ausgang**: Senden des `CNF`-Ereignisses (alle Ausgänge werden gleichzeitig mitgeführt).

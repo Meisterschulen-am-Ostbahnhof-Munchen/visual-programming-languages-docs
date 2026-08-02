@@ -1,7 +1,5 @@
 # Funk_IXA
 
-
-
 <img width="1725" height="316" alt="image" src="https://github.com/user-attachments/assets/18811a6e-8efc-454f-b9ec-ea728163a624" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der Funk_IXA-Block fungiert als Wrapper für den zugrundeliegenden Funk_IX-Block
 
 ## Zustandsübersicht
 Der Block durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor INIT-Aufruf
 2. **Initialisiert**: Nach erfolgreicher INIT-Verarbeitung
 3. **Bereit**: Kann REQ-Anfragen verarbeiten
@@ -56,13 +55,11 @@ Der Block durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Funk_IXA:
+
 - Erweiterte Parameterisierungsmöglichkeiten
 - Statusrückmeldungen
 - Adapter-Schnittstelle für erweiterte Kommunikation
 - Typisierte Eingangsidentifikation
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

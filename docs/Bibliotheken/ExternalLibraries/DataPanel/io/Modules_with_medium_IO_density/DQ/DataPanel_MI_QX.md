@@ -1,7 +1,5 @@
 # DataPanel_MI_QX
 
-
-
 <img width="1373" height="208" alt="image" src="https://github.com/user-attachments/assets/8a1255b9-89e3-4fc4-bcc6-e88ae8562622" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der DataPanel_MI_QX Function Block verwaltet die Kommunikation mit den digitalen
 
 ## Zustandsübersicht
 Der Function Block durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Wartet auf INIT-Ereignis
 2. **Initialisiert**: Bereit für Service-Anfragen
 3. **Service-Ausführung**: Verarbeitet REQ-Ereignisse
@@ -59,13 +58,11 @@ Der Function Block durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet DataPanel_MI_QX erweiterte Funktionalitäten wie:
+
 - Parametrierbare SA-Node-Konfiguration
 - Spezifische Hardware-Identifikation für DataPanel MI-Systeme
 - Detaillierte Statusrückmeldungen
 - Flexible Ausgangskonfiguration über den Output-Parameter
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

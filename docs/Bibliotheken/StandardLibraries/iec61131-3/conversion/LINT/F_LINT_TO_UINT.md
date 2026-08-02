@@ -1,7 +1,5 @@
 # F_LINT_TO_UINT
 
-
-
 <img width="1436" height="214" alt="F_LINT_TO_UINT" src="https://github.com/user-attachments/assets/da4ca59c-9a44-4c2e-ad16-0ae14c1ab1de" />
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # Aux_Val1_IW
 
-
-
 <img width="1351" height="292" alt="image" src="https://github.com/user-attachments/assets/c88e5ead-0835-4374-be47-397bd18dd315" />
 
 * * * * * * * * * *
@@ -52,6 +50,7 @@ Der Funktionsblock ermöglicht die Kommunikation mit externen Ressourcen zur Erf
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Hauptzustände:
+
 1. **Nicht initialisiert**: Wartet auf INIT-Ereignis
 2. **Initialisiert**: Bereit für REQ-Anfragen
 3. **Aktiv**: Verarbeitet Datenanfragen und -indikationen

@@ -1,7 +1,5 @@
 # STRUCT_MUX
 
-
-
 <img width="1174" height="182" alt="STRUCT_MUX" src="https://github.com/user-attachments/assets/f133152d-9c9e-4f60-83b9-425cf3f873dd" />
 
 * * * * * * * * * *
@@ -26,6 +24,7 @@ Die Daten-Eingänge dieses Funktionsblocks sind nicht fest vordefiniert. Stattde
 
 **Beispiel:**
 Wenn der `OUT`-Ausgang auf den Datentyp `MyStruct` mit den Membern `a` (Typ `INT`) and `b` (Typ `BOOL`) gesetzt wird, erzeugt der `STRUCT_MUX`-Baustein automatisch zwei Daten-Eingänge:
+
 - `a` (Typ `INT`)
 - `b` (Typ `BOOL`)
 
@@ -44,6 +43,7 @@ Sobald ein `REQ`-Ereignis am Eingang des `STRUCT_MUX`-Funktionsblocks empfangen 
 
 ## Zustandsübersicht
 Der `STRUCT_MUX` ist ein zustandsloser Baustein, der nach einem einfachen Anforderungs-Bestätigungs-Zyklus arbeitet:
+
 1.  **Bereit**: Wartet auf ein `REQ`-Ereignis.
 2.  **Ausführend**: Liest die Eingangswerte ein und baut die Ausgangsstruktur zusammen.
 3.  **Abgeschlossen**: Stellt die Struktur am `OUT`-Ausgang bereit, löst das `CNF`-Ereignis aus und kehrt in den Bereitschaftszustand zurück.
@@ -70,9 +70,6 @@ Der `STRUCT_MUX` ist ein zustandsloser Baustein, der nach einem einfachen Anford
 | Version | 3.0 (2025-04-14, Patrick Aigner) |
 
 | 4diac-Paket | eclipse4diac::convert |
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,6 +1,5 @@
 # AUS_TO_ALI
 
-
 ![AUS_TO_ALI](./AUS_TO_ALI.svg)
 
 * * * * * * * * * *
@@ -31,6 +30,7 @@ Keine eigenen Daten-Ausgänge. Die Datenausgabe erfolgt über den `ALI_OUT`-Adap
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Ein Ereignis am `E1`-Eingang des `AUS_IN`-Adapters initiiert die Verarbeitung.
 2. Der aktuelle Wert von `AUS_IN.D1` (USINT) wird an den internen Baustein `Convert` (`F_USINT_TO_LINT`) übergeben.
 3. Nach der Konvertierung wird das Ergebnis (LINT) über `ALI_OUT.D1` ausgegeben und gleichzeitig ein Ereignis am `E1`-Ausgang des `ALI_OUT`-Adapters gesendet.
@@ -46,6 +46,7 @@ Die Typkonvertierung erfolgt gemäß der IEC 61131-Definition von `F_USINT_TO_LI
 
 ## Zustandsübersicht
 Der `AUS_TO_ALI`-Baustein besitzt keine eigenen Zustandsautomaten. Der interne Ablauf ist rein ereignisgesteuert und zustandslos:
+
 - **Warte**: auf ein Ereignis vom `AUS_IN.E1`
 - **Konvertiere**: sofortige Umwandlung des USINT-Werts in LINT
 - **Ausgabe**: unverzögertes Senden des Ergebnisses über `ALI_OUT`

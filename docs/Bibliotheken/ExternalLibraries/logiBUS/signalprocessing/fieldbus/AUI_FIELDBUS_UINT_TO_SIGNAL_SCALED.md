@@ -1,6 +1,5 @@
 # AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED
 
-
 ![AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED](./AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Der Baustein besteht intern aus zwei Sub-FBs: dem skalierenden Kernbaustein `log
 Die Initialisierung erfolgt über den Ereignis-Eingang INIT, der direkt an den internen Kernbaustein weitergeleitet wird. Die Bestätigung INITO wird nach erfolgreicher Initialisierung zurückgegeben.
 
 Die eigentliche Signalverarbeitung wird durch ein eingehendes Ereignis (E1) des IN-Adapters ausgelöst. Dieses Ereignis triggert den Kernbaustein, der den über IN.D1 anliegenden UINT-Wert wie folgt verarbeitet:
+
 - **Skalierung**: `Wert_skaliert = (REAL)IN_D1 * SCALE`
 - **Offset**: `Wert_skaliert = Wert_skaliert + OFFSET`
 
@@ -59,6 +59,7 @@ Damit wird das VALID-Signal erst nach Abschluss der Skalierung aktualisiert und 
 
 ## Zustandsübersicht
 Der Funktionsblock selbst besitzt keinen eigenen Zustandsautomaten. Der interne Zustand wird durch das D-Flipflop repräsentiert:
+
 - **Zustand Q = FALSE**: Letzter verarbeiteter Wert war ungültig oder noch kein Wert eingetroffen.
 - **Zustand Q = TRUE**: Der letzte verarbeitete Wert war gültig und liegt skaliert am OUT-Ausgang an.
 

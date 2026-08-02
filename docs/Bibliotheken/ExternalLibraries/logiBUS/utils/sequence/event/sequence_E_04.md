@@ -1,9 +1,6 @@
 # sequence_E_04
 
-
-
 <img width="1649" height="413" alt="image" src="https://github.com/user-attachments/assets/acbf2b37-87d0-40cc-a3a4-8871d3001c20" />
-
 
 ![sequence_E_04_ecc](./sequence_E_04_ecc.svg)
 
@@ -44,6 +41,7 @@ Der Funktionsblock `sequence_E_04` ist ein Sequenzer, der eine lineare Abfolge v
 
 ## Funktionsweise
 Der `sequence_E_04` ist als Basic Function Block (BFB) implementiert und besitzt eine Execution Control Chart (ECC). Die ECC definiert die Zustände und die ereignisgesteuerten Übergänge zwischen ihnen. Bei jedem Zustandswechsel werden spezifische Algorithmen ausgeführt:
+
 1.  **Exit-Algorithmus (X)**: Wird beim Verlassen eines Zustands ausgeführt, um den zugehörigen Datenausgang (`DO_Sx`) auf FALSE zu setzen.
 2.  **Entry-Algorithmus (E)**: Wird beim Betreten eines Zustands ausgeführt, um den zugehörigen Datenausgang (`DO_Sx`) auf TRUE zu setzen und das entsprechende Ereignis (`EO_Sx`) auszulösen.
 3.  **Confirmation-Algorithmus (C)**: Wird in jedem Zustand (außer RESET) ausgeführt, um die Zustandsnummer `STATE_NR` zu aktualisieren und das Bestätigungsereignis `CNF` auszulösen.

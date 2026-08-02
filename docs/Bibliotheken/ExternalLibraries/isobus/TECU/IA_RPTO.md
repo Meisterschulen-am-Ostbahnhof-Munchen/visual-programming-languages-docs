@@ -1,6 +1,5 @@
 # IA_RPTO
 
-
 ![IA_RPTO](./IA_RPTO.svg)
 
 **********

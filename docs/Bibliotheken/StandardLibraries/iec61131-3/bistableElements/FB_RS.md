@@ -1,7 +1,5 @@
 # FB_RS
 
-
-
 <img width="1308" height="242" alt="FB_RS" src="https://github.com/user-attachments/assets/ff0ca1ab-bc02-459b-bbda-2ef4f8aa880b" />
 
 * * * * * * * * * *
@@ -30,6 +28,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der FB_RS verarbeitet die Eingänge S und R1 bei jedem REQ-Ereignis. Der Ausgang Q1 wird nach folgender Logik aktualisiert:
+
 - Wenn R1 TRUE ist, wird Q1 auf FALSE gesetzt (Reset hat Priorität).
 - Wenn S TRUE ist und R1 FALSE ist, wird Q1 auf TRUE gesetzt.
 - Wenn beide Eingänge FALSE sind, behält Q1 seinen vorherigen Zustand bei.
@@ -48,6 +47,7 @@ END_ALGORITHM
 
 ## Zustandsübersicht
 Der `FB_RS` wertet die Eingänge bei `REQ` aus:
+
 1.  **Q1 = FALSE**: Wenn `R1` TRUE ist (unabhängig von `S`). -> **Rücksetz-Dominanz**
 2.  **Q1 = TRUE**: Wenn `S` TRUE ist UND `R1` FALSE ist.
 3.  **Q1 unverändert**: Wenn beide FALSE sind.
@@ -59,9 +59,6 @@ Der `FB_RS` wertet die Eingänge bei `REQ` aus:
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **[E_RS](../../events/E_RS.md)**: Der `E_RS` ist rein ereignisgesteuert ("Last Event Wins"). Der `FB_RS` hingegen wertet statische Signale zum Zeitpunkt `REQ` aus und erzwingt die Rücksetz-Dominanz.
 - **[FB_SR](FB_SR.md)**: Das Gegenstück mit **Setz-Dominanz**.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

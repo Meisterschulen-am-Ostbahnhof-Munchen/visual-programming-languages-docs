@@ -1,6 +1,5 @@
 # INI_AB2
 
-
 ![INI_AB2](./INI_AB2.svg)
 
 * * * * * * * * * *

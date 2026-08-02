@@ -1,9 +1,6 @@
 # ST08B_TO_ARR08B
 
-
-
 <img width="1352" height="215" alt="image" src="https://github.com/user-attachments/assets/2ae15254-1c8f-40ed-9f4b-d611666ba335" />
-
 
 ![ST08B_TO_ARR08B](./ST08B_TO_ARR08B.svg)
 
@@ -30,6 +27,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 ## Funktionsweise
 Die Funktionsweise des `ST08B_TO_ARR08B` ist direkt und unkompliziert. Beim Empfang eines `REQ`-Ereignisses werden die einzelnen Byte-Elemente der Eingangsstruktur `IN` direkt den entsprechenden Elementen des Ausgangsarrays `OUT` zugewiesen. Jedes Element `B_xx` der Struktur `IN` wird dem Element `OUT[xx]` des Arrays zugewiesen.
 Konkret erfolgt die Zuweisung wie folgt:
+
 *   `OUT[0]` wird `IN.B_00` zugewiesen.
 *   `OUT[1]` wird `IN.B_01` zugewiesen.
 *   ...

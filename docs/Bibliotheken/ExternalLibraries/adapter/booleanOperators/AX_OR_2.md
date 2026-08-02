@@ -1,7 +1,5 @@
 # AX_OR_2
 
-
-
 <img width="963" height="265" alt="image" src="https://github.com/user-attachments/assets/3c1d3b81-2420-46cc-b7cf-fc6828db919c" />
 
 * * * * * * * * * *
@@ -53,11 +51,6 @@ Da es sich um einen kombinatorischen Logikbaustein handelt, besitzt AX_OR_2 kein
 Im Vergleich zu anderen ODER-Bausteinen zeichnet sich AX_OR_2 durch seine Adapter-basierte Schnittstelle aus, die eine flexible Integration in verschiedene Systemarchitekturen ermöglicht. Die unidirektionalen Adapter gewährleisten eine klare Signalflussrichtung.
 
 Vergleich mit [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

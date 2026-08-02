@@ -1,6 +1,5 @@
 # AE_DEMUX_3
 
-
 ![AE_DEMUX_3](./AE_DEMUX_3.svg)
 
 * * * * * * * * * *
@@ -65,6 +64,7 @@ Sollte `K` außerhalb des gültigen Bereichs liegen, bleibt die Weiterleitung au
 ## Zustandsübersicht
 
 Eine explizite Zustandsmaschine (ECC) ist in der vorliegenden XML nicht definiert. Daher wird das Verhalten als rein funktional ohne interne Zustände angenommen:  
+
 - Bei jedem `REQ`-Ereignis erfolgt unverzüglich die Indexauswertung und Weiterleitung.
 - Nach der Aktion wird sofort `CNF` gesendet.
 

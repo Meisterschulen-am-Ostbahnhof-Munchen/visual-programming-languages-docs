@@ -1,7 +1,5 @@
 # AE_E_TO_EVENT
 
-
-
 <img width="1231" height="221" alt="image" src="https://github.com/user-attachments/assets/2194d39b-b5e1-4ac1-a0ec-3cc874a94b26" />
 
 * * * * * * * * * *
@@ -39,6 +37,7 @@ Der Funktionsblock leitet das E1-Ereignis vom Adapter-Eingang AE_IN direkt an de
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen Zustand:
+
 - **Bereit**: Wartet auf E1-Ereignis vom Adapter
 - Bei Eintreffen von E1 wird sofort CNF ausgelöst
 

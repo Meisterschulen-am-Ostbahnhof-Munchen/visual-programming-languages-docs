@@ -1,6 +1,5 @@
 # SET_DATE_AND_TIME
 
-
 ![SET_DATE_AND_TIME](./SET_DATE_AND_TIME.svg)
 
 * * * * * * * * * *

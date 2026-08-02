@@ -1,6 +1,5 @@
 # AX_TO_AB
 
-
 ![AX_TO_AB](./AX_TO_AB.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Der Composite-Funktionsblock `AX_TO_AB` dient zur Umwandlung eines BOOL-Adapters
 ## Funktionsweise
 
 Der Funktionsblock besteht intern nur aus Verbindungen, die den Ereignis- und Datenpfad vom Socket `AX_IN` zum Plug `AB_OUT` durchschalten.  
+
 - Das Ereignis `E1` wird ohne Verzögerung oder Veränderung weitergereicht.  
 - Der Datenwert `D1` wird vom Typ `BOOL` in den Typ `BYTE` gewandelt. Dabei wird der boolesche Wert `TRUE` in das Byte `1` und `FALSE` in das Byte `0` umgesetzt. Die Konvertierung erfolgt implizit durch die Laufzeitumgebung von 4diac.
 

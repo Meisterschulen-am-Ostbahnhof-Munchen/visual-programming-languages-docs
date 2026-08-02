@@ -1,7 +1,5 @@
 # TC_ID
 
-
-
 <img width="1359" height="261" alt="image" src="https://github.com/user-attachments/assets/430341ae-f535-482b-b9f2-3bfad916e8e4" />
 
 * * * * * * * * * *
@@ -52,6 +50,7 @@ Der TC_ID-Block ermöglicht den Zugriff auf TC-Eingabedaten über standardisiert
 
 ## Zustandsübersicht
 Der Block durchläuft typische Service-Interface-Zustände:
+
 1. **Nicht initialisiert**: Vor INIT-Ereignis
 2. **Initialisiert**: Nach erfolgreicher INITO-Rückmeldung
 3. **Bereit**: Für REQ-Anfragen
@@ -65,13 +64,11 @@ Der Block durchläuft typische Service-Interface-Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Eingabeblöcken bietet TC_ID:
+
 - Standardisierte ISOBUS-Schnittstelle
 - DDI-basierte Datenidentifikation
 - Umfangreiches Status- und Fehlermanagement
 - Sowohl angeforderte als auch spontane Datenübertragung
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

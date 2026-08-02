@@ -1,7 +1,5 @@
 # F_BYTE_TO_UDINT
 
-
-
 <img width="1245" height="183" alt="F_BYTE_TO_UDINT" src="https://github.com/user-attachments/assets/34a2230f-154d-4bae-ac66-db0481be7d57" />
 
 * * * * * * * * * *
@@ -44,9 +42,6 @@ Der Funktionsblock besitzt keine internen Zustände. Die Ausführung erfolgt unm
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Im Vergleich zu anderen Konvertierungsbausteinen wie `F_WORD_TO_UDINT` oder `F_DWORD_TO_UDINT` ist dieser Baustein speziell für die Konvertierung von `BYTE` zu `UDINT` optimiert.
 - Ähnliche Bausteine können unterschiedliche Eingangsdatentypen verarbeiten, sind aber ansonsten in ihrer Funktionsweise vergleichbar.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

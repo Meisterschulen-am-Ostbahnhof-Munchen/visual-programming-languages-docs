@@ -1,7 +1,5 @@
 # Datentyp-Detail: TIME
 
-
-
 ## Beschreibung
 Der Datentyp **TIME** wird zur Darstellung von Zeitdauern (Relativzeit) verwendet.
 
@@ -18,6 +16,7 @@ TIME-Literale beginnen immer mit dem Präfix `T#` oder `TIME#`.
 
 ### Einheiten
 Folgende Einheiten können kombiniert werden (Reihenfolge absteigend):
+
 - `d`: Tage (days)
 - `h`: Stunden (hours)
 - `m`: Minuten (minutes)
@@ -36,8 +35,6 @@ Folgende Einheiten können kombiniert werden (Reihenfolge absteigend):
 - `TIME#14ms` (Alternative Schreibweise)
 - `T#-5s` (Negative Zeitdauer von 5 Sekunden)
 - `T#25h_15m` (Überlauf der Einheit ist erlaubt, entspricht 1 Tag, 1 Stunde, 15 Min)
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,6 +1,5 @@
 # AULI_TO_AI
 
-
 ![AULI_TO_AI](./AULI_TO_AI.svg)
 
 * * * * * * * * * *
@@ -52,6 +51,7 @@ Damit wird eine nahtlose, ereignisgesteuerte Umwandlung von AULI- auf AI-Adapter
 Da der Baustein rein ereignisgesteuert arbeitet und keine internen Zustände speichert, gibt es keine explizite Zustandsmaschine. Er verhält sich wie eine funktionale Transformation: Auf jedes Ereignis am Eingang erfolgt die Konvertierung und ein Ausgangsereignis.
 
 Interner Ablauf (vereinfacht):
+
 - **Idle:** Warten auf Ereignis von `AULI_IN`.
 - **Processing:** Konvertierung läuft (instantan, da synchroner FB).
 - **Done:** Ausgangsereignis wird gesendet, Rückkehr zu Idle.

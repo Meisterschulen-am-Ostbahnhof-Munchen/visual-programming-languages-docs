@@ -1,7 +1,5 @@
 # logiBUS_PI_ID
 
-
-
 <img width="1330" height="284" alt="image" src="https://github.com/user-attachments/assets/305f0854-9d3f-48c9-b61a-c134ab546dec" />
 
 * * * * * * * * * *
@@ -38,6 +36,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 
 ## Funktionsweise
 Der Baustein arbeitet in zwei grundlegenden Modi, die durch die Ereignisse `REQ` und `IND` gesteuert werden:
+
 1.  **Polling-Modus**: Durch ein `REQ`-Ereignis wird der aktuelle Eingangswert abgefragt und das Ergebnis mit einem `CNF`-Ereignis zurückgemeldet.
 2.  **Interrupt-Modus**: Nach erfolgreicher Initialisierung (`INIT`/`INITO`) überwacht der Baustein den Eingang kontinuierlich. Bei einer Zustandsänderung werden die Parameter `ImpulseDelta` und `TimeDelta` ausgewertet. Wird eines der Kriterien erfüllt (z.B. die definierte Anzahl an Impulsen erreicht oder das Zeitintervall überschritten *und* der Wert hat sich geändert), wird automatisch ein `IND`-Ereignis mit dem neuen Wert ausgelöst.
 
@@ -64,9 +63,6 @@ Die Initialisierung (`INIT`) ist Voraussetzung für beide Betriebsarten. Dabei w
 *   **Gegenüber `E_DEMUX` oder `E_SELECT`**: Diese Bausteine leiten Ereignisse weiter oder selektieren Daten. `logiBUS_PI_ID` ist spezifisch für die Hardware-Kommunikation und beinhaltet Treiberlogik sowie Initialisierung.
 *   **Gegenüber generischen I/O-FBs (z.B. `WAGO_750_5xx_DI`)**: Ähnliche Funktion, aber herstellerspezifisch (hier logiBUS). Die Konfiguration erfolgt über den strukturierten `Input`-Parameter und `PARAMS` anstelle fester Kanalnummern.
 *   **Gegenüber einfacheren Eingabeblöcken**: Bietet erweiterte Funktionen wie filternde Ereignisgenerierung (`IND`) über `ImpulseDelta`/`TimeDelta`, die in einfachen "Read"-Blöcken typischerweise nicht vorhanden sind.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

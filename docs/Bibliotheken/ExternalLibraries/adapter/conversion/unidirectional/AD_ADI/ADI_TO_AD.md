@@ -1,6 +1,5 @@
 # ADI_TO_AD
 
-
 ![ADI_TO_AD](./ADI_TO_AD.svg)
 
 * * * * * * * * * *
@@ -11,10 +10,12 @@ Der Funktionsblock **ADI_TO_AD** ist ein Composite-Baustein (zusammengesetzter F
 
 ### **Ereignis-Eingänge**
 Der FB besitzt keine eigenständigen Ereignis-Eingänge auf Ebene der Schnittstelle. Die Ereignissteuerung erfolgt ausschließlich über den angeschlossenen **Socket-Adapter ADI_IN**:
+
 - **ADI_IN.E1** – Ereignis, das die Datenkonvertierung anstößt.
 
 ### **Ereignis-Ausgänge**
 Auch auf dieser Ebene gibt es keine separaten Ereignis-Ausgänge. Der Ausgang wird über den **Plug-Adapter AD_OUT** bereitgestellt:
+
 - **AD_OUT.E1** – Ereignis, das nach erfolgreicher Konvertierung ausgelöst wird.
 
 ### **Daten-Eingänge**
@@ -31,6 +32,7 @@ Beide Adapter sind unidirektional ausgelegt (je ein Ereignis- und ein Datenkanal
 
 ## Funktionsweise
 Der FB enthält einen internen Baustein `F_DINT_TO_DWORD` aus der IEC 61131-Bibliothek, der die eigentliche Typumwandlung vornimmt. Die Ablaufsteuerung ist wie folgt:
+
 1. Ein eingehendes Ereignis am **ADI_IN.E1** triggert den **Convert.REQ**-Eingang des internen Konverters.
 2. Der Konverter wandelt den über **ADI_IN.D1** anliegenden DINT-Wert in einen DWORD-Wert um.
 3. Nach Abschluss der Konvertierung signalisiert **Convert.CNF** den erfolgreichen Abschluss und feuert das Ereignis am **AD_OUT.E1**, gleichzeitig wird der konvertierte Wert an **AD_OUT.D1** ausgegeben.
@@ -44,6 +46,7 @@ Damit wird eine transparente, ereignisgesteuerte Konvertierung zwischen den Adap
 
 ## Zustandsübersicht
 Als Composite-Baustein besitzt **ADI_TO_AD** keine eigenen expliziten Zustände. Sein Verhalten wird vollständig durch den inneren Konverter bestimmt:
+
 - **Idle**: Wartet auf ein Ereignis am ADI_IN.
 - **Umwandlung aktiv**: Wenn `Convert.REQ` gesetzt ist.
 - **Abschluss**: Nach `Convert.CNF` wird das Ergebnis am Ausgang bereitgestellt.

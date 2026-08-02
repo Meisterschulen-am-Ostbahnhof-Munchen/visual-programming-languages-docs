@@ -1,7 +1,5 @@
 # logiBUS_QW_SERVO
 
-
-
 <img width="1341" height="240" alt="image" src="https://github.com/user-attachments/assets/a0a3a085-d2e5-4393-893f-f377b4a3f346" />
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ Der Funktionsblock ermöglicht die Initialisierung und Steuerung von logiBUS-Ser
 
 ## Zustandsübersicht
 Der Baustein verfügt über zwei Hauptbetriebszustände:
+
 1. **Nicht initialisiert**: Vor der INIT-Initialisierung
 2. **Initialisiert und betriebsbereit**: Nach erfolgreicher INIT-Initialisierung, bereit für REQ-Anfragen
 
@@ -56,6 +55,7 @@ Der Baustein verfügt über zwei Hauptbetriebszustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_QW_SERVO erweiterte Funktionalität durch:
+
 - Wort-basierte Datenausgabe (16-Bit statt einzelner Bits)
 - Spezifische Servo-Steuerungsfunktionen
 - Detaillierte Statusrückmeldungen

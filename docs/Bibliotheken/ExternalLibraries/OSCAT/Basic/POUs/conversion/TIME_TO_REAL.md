@@ -1,7 +1,5 @@
 # TIME_TO_REAL
 
-
-
 Converts TIME to REAL
 
 ## Interface

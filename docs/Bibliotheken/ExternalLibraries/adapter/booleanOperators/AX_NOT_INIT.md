@@ -1,6 +1,5 @@
 # AX_NOT_INIT
 
-
 ![AX_NOT_INIT](./AX_NOT_INIT.svg)
 
 * * * * * * * * * *

@@ -1,6 +1,5 @@
 # ALR_TO_AULI
 
-
 ![ALR_TO_AULI](./ALR_TO_AULI.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Der FB besitzt **keine direkten** Ereignis‑ oder Datenein-/-ausgänge. Die Kom
 
 ## Funktionsweise
 Der FB arbeitet nach dem **Getriebe‑Prinzip** eines Composite-Bausteins:
+
 1. Ein eingehendes **Ereignis E1** am Socket `ALR_IN` aktiviert den internen FB `F_LREAL_TO_ULINT` (Typ `iec61131::conversion::F_LREAL_TO_ULINT`).
 2. Gleichzeitig wird der am Socket `ALR_IN` anliegende **Datenwert D1** (LREAL) an den Eingang `IN` des internen FBs weitergeleitet.
 3. Der interne FB führt sofort die Konvertierung von LREAL nach ULINT durch und gibt das Ergebnis an seinem Ausgang `OUT` aus.

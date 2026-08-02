@@ -1,6 +1,5 @@
 # AUS_FIELDBUS_USINT_TO_SIGNAL_SCALED
 
-
 ![AUS_FIELDBUS_USINT_TO_SIGNAL_SCALED](./AUS_FIELDBUS_USINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Keine direkten Datenausgänge – die Ausgabe erfolgt ausschließlich über die 
 
 ## Zustandsübersicht
 Der FB besitzt keine eigenen expliziten Zustände. Die Zustandslogik ergibt sich aus den Sub-Komponenten:
+
 - **Sub-FB `FIELDBUS_USINT_TO_SIGNAL_SCALED`**: Führt eine ablauforientierte Berechnung ohne Zustandsspeicher durch; es reagiert auf jedes `REQ`-Ereignis mit einem `CNF`.
 - **D-Flipflop `E_D_FF`**: Besitzt zwei Zustände (Q = 0 oder 1). Bei jedem positiven Takt (CLK) wird Q = D gesetzt. Der Zustand bleibt bis zum nächsten Takt erhalten.
 

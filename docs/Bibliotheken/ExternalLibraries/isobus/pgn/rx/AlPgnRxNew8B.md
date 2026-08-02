@@ -1,7 +1,5 @@
 # AlPgnRxNew8B
 
-
-
 <img width="1333" height="262" alt="image" src="https://github.com/user-attachments/assets/2e08c1e6-0b31-4bfb-8214-dfea572f4849" />
 
 * * * * * * * * * *
@@ -52,6 +50,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Zustandsübersicht
 Der Block verfügt über implizite Zustände:
+
 *   **Nicht initialisiert**: Vor dem ersten `INIT`-Ereignis.
 *   **Bereit**: Nach erfolgreicher Initialisierung (`INITO`). Kann `install`-Anfragen entgegennehmen.
 *   **Aktiv/Empfangend**: Nach erfolgreicher Installation mindestens einer PGN. Kann `IND`-Ereignisse für empfangene Daten auslösen.
@@ -66,9 +65,6 @@ Der Block verfügt über implizite Zustände:
 *   **Generische CAN-Empfangsblöcke**: Im Gegensatz zu generischen `CAN_RX`-Blöcken, die Roh-CAN-IDs und Daten verarbeiten, abstrahiert `AlPgnRxNew8B` die ISOBUS-spezifische PGN-Adressierung und -Verwaltung.
 *   **`E_SR` (Service Interface Function Block)**: Während `E_SR` ein generisches Server-Request-Muster für Dienste bereitstellt, ist `AlPgnRxNew8B` speziell auf den zyklischen oder ereignisgesteuerten Empfang von ISOBUS-Nachrichten ausgelegt.
 *   **Blöcke für andere Protokolle**: Ähnliche Blöcke existieren für andere höhere Protokolle (z.B. J1939), unterscheiden sich aber in den spezifischen Adressierungs- und Nachrichtenformaten.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

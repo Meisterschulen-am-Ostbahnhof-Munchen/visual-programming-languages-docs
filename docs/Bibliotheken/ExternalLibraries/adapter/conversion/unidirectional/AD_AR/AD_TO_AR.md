@@ -1,6 +1,5 @@
 # AD_TO_AR
 
-
 ![AD_TO_AR](./AD_TO_AR.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten. Die Verarbeitung erfolgt 
 
 ## Vergleich mit ähnlichen Bausteinen
 Ähnliche Konvertierungsbausteine existieren für andere Datentypen, z. B.:
+
 - `WORD_TO_REAL` oder `INT_TO_REAL` – direkt als Einzelfunktionsblöcke,
 - `AD_TO_AR` – als Composite mit Adapter-Schnittstelle.
 

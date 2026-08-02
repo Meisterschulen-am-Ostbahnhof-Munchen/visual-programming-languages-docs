@@ -1,6 +1,5 @@
 # AX_FB_SR_T_FF
 
-
 ![AX_FB_SR_T_FF](./AX_FB_SR_T_FF.svg)
 
 * * * * * * * * * *
@@ -12,6 +11,7 @@ Der Baustein besitzt keine direkten Ereignis- oder Dateneingänge/-ausgänge, so
 
 ### **Ereignis-Eingänge**
 Keine direkten Ereigniseingänge. Die folgenden Adapter stellen über ihr Ereignis `E1` den Triggermechanismus bereit:
+
 - **SET1** – Setzereignis
 - **RESET** – Rücksetzereignis
 - **CLK** – Taktereignis (für Toggle)
@@ -21,6 +21,7 @@ Keine direkten Ereignisausgänge. Der Adapter **Q1** stellt über sein Ereignis 
 
 ### **Daten-Eingänge**
 Die drei Eingangsadapter liefern jeweils einen Datenwert `D1` (BOOL):
+
 - **SET1.D1** – Setzsignal (aktiv bei TRUE)
 - **RESET.D1** – Rücksetzsignal (aktiv bei TRUE)
 - **CLK.D1** – Taktsignal (positive Flanke löst Toggle aus)
@@ -39,6 +40,7 @@ Der Ausgangsadapter **Q1** gibt über **Q1.D1** den aktuellen Zustand des Latch 
 
 ## Funktionsweise
 Der Baustein arbeitet nach folgendem prioritätsgesteuerten Algorithmus:
+
 1. **Setzdominanz**: Wenn `SET1.D1 = TRUE` ist, wird der Ausgang `Q1.D1` auf `TRUE` gesetzt.
 2. **Rücksetzen**: Sonst, wenn `RESET.D1 = TRUE` ist, wird `Q1.D1` auf `FALSE` gesetzt.
 3. **Toggle**: Falls weder Setzen noch Rücksetzen aktiv sind und am Takteingang `CLK.D1` eine **steigende Flanke** (Übergang von FALSE auf TRUE) erkannt wird, wird der aktuelle Ausgangswert umgeschaltet (`Q1.D1 := NOT Q1.D1`).
@@ -53,6 +55,7 @@ Die Flankenerkennung erfolgt durch die interne Variable `EDGE`: Sie speichert de
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt nur einen Zustand:
+
 - **REQ** – Wartet auf eingehende Ereignisse. Bei jedem Ereignis wird der Algorithmus `REQ` durchlaufen. Alle Transitionen führen zurück zu `REQ`.
 
 Intern wird die Variable `EDGE` zur Flankenerkennung verwendet; sie ist Teil des internen Zustands, aber nicht als ECC-Zustand sichtbar.

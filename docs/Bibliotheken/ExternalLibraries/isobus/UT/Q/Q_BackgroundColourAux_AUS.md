@@ -1,6 +1,5 @@
 # Q_BackgroundColourAux_AUS
 
-
 ![Q_BackgroundColourAux_AUS](./Q_BackgroundColourAux_AUS.svg)
 
 * * * * * * * * * *

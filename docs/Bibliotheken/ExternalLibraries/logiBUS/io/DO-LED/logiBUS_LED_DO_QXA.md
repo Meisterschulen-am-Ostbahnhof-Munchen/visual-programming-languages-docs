@@ -1,6 +1,5 @@
 # logiBUS_LED_DO_QXA
 
-
 ![logiBUS_LED_DO_QXA](./logiBUS_LED_DO_QXA.svg)
 
 * * * * * * * * * *
@@ -15,6 +14,7 @@ Der **logiBUS_LED_DO_QXA** ist ein zusammengesetzter Funktionsblock (Composite F
 ### **Ereignis-Ausgänge**
 - **INITO** (EInit): Bestätigung der erfolgreichen Initialisierung.  
   Mitverkabelte Daten: `QO`, `STATUS`
+
 - **CNF** (Event): Quittierung eines abgeschlossenen Service-Auftrags (z. B. nach einer Wertänderung).  
   Mitverkabelte Daten: `QO`, `STATUS`
 

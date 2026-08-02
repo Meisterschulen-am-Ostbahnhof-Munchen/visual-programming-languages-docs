@@ -1,6 +1,5 @@
 # AUI_MUX_4
 
-
 ![AUI_MUX_4](./AUI_MUX_4.svg)
 
 * * * * * * * * * *
@@ -13,7 +12,6 @@ Der Funktionsblock **AUI_MUX_4** ist ein generischer Multiplexer für AUI-Adapte
 | Ereignis | Beschreibung |
 |----------|--------------|
 | REQ      | Setzt den Index **K** und aktiviert die Durchschaltung. |
-
 
 ### **Ereignis-Ausgänge**
 

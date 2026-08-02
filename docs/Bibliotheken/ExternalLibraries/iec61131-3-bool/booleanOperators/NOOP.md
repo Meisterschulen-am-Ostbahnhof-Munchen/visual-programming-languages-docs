@@ -1,6 +1,5 @@
 # NOOP
 
-
 ![NOOP](./NOOP.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Keine.
 
 ## Funktionsweise
 Intern besteht der Baustein aus einer Instanz von `F_MOVE` (aus der Bibliothek `iec61131::selection::F_MOVE`), die auf den Datentyp `BOOL` konfiguriert ist.  
+
 - Bei einem Ereignis auf `REQ` wird der Wert von `IN` an `F_MOVE.IN` übergeben und eine Ausführung angestoßen.  
 - Nach erfolgreicher Verarbeitung gibt `F_MOVE.OUT` den Wert aus, welcher auf `OUT` gelegt wird. Gleichzeitig wird `F_MOVE.CNF` ausgelöst, das den Ereignisausgang `CNF` aktiviert.  
 
@@ -49,6 +49,7 @@ Somit entspricht das Verhalten genau einer Durchschaltung: `OUT := IN`.
 
 ## Zustandsübersicht
 Da der Baustein keine eigene Zustandsmaschine besitzt, kann der Ablauf als einfacher Zweischritt betrachtet werden:
+
 1. **Warten** – auf ein Ereignis `REQ`.
 2. **Weiterleiten** – sofortige Übernahme von `IN` nach `OUT` und Ausgabe von `CNF`.
 

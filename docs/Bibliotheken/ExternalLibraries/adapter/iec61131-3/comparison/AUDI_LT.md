@@ -1,6 +1,5 @@
 # AUDI_LT
 
-
 ![AUDI_LT](./AUDI_LT.svg)
 
 * * * * * * * * * *
@@ -10,6 +9,7 @@ Der Funktionsblock `AUDI_LT` realisiert einen „Kleiner-als“-Vergleich (less 
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Über die Adapter-Sockets werden Ereignisse von außen an den FB weitergeleitet:
+
 *   `IN1.E1` – Ereignis, das die Vergleichsoperation anstößt, sobald ein neuer Wert an `IN1` anliegt.
 *   `IN2.E1` – Ereignis, das ebenfalls die Vergleichsoperation anstößt, sobald ein neuer Wert an `IN2` anliegt.
 

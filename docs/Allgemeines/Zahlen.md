@@ -1,6 +1,5 @@
 # Zahlen und Zahlensysteme
 
-
 ## 🎧 Podcast
 
 * [ISOBUS-Terminals: Zahlen verstehen – NumberVariable, InputNumber & OutputNumber erklärt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)
@@ -29,6 +28,7 @@ Literale sind fest im Programmcode geschriebene Werte. Um der Steuerung mitzutei
 
 ### Ganzzahlen (Integer)
 Ganzzahlen können ohne Nachkommastelle angegeben werden.
+
 *   `1234` (Dezimal)
 *   `-567` (Negativ)
 *   `16#ABCD` (Hexadezimal)
@@ -36,12 +36,14 @@ Ganzzahlen können ohne Nachkommastelle angegeben werden.
 
 ### Gleitpunktzahlen (Real)
 Werte mit Nachkommastellen oder in wissenschaftlicher Notation.
+
 *   `1.234`
 *   `-0.5`
 *   `1.0E-3` (entspricht 0.001)
 
 ### Typisierte Literale
 Manchmal ist es wichtig, den Datentyp explizit anzugeben, um Mehrdeutigkeiten zu vermeiden.
+
 *   `INT#15`
 *   `UINT#15`
 *   `REAL#15.0`

@@ -1,8 +1,5 @@
 # Funk_DI
 
-
-
-
 ![Funk_DI](./Funk_DI.svg)
 
 * * * * * * * * * *
@@ -52,6 +49,7 @@ Da es sich um ein Konstanten-Paket handelt, gibt es keine Zustandsübergänge. A
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen digitalen Eingangs-Konstantenpaketen bietet Funk_DI:
+
 - Spezifische Pin-Zuordnungen für Funksysteme
 - Vordefinierte Konstanten für spezielle Funktionen (START, STOP, STATUS, COUNTER)
 - Strukturierte Organisation im IO-Bereich des Funk-Namespace

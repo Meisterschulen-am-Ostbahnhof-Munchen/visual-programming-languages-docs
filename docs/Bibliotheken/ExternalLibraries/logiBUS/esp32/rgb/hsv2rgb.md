@@ -1,7 +1,5 @@
 # hsv2rgb
 
-
-
 <img width="1412" height="272" alt="image" src="https://github.com/user-attachments/assets/d564035b-fcbb-4237-a4be-75da3e2fd29d" />
 
 * * * * * * * * * *
@@ -41,6 +39,7 @@ Der Baustein arbeitet ereignisgesteuert. Bei Eintreffen des `REQ`-Ereignisses st
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen, zustandslosen Ablauf:
+
 1.  **Warte-Zustand:** Der Baustein wartet auf das `REQ`-Ereignis.
 2.  **Berechnungs-Zustand:** Bei `REQ` werden die Eingabedaten gelesen und die Konvertierung durchgeführt. Dieser Zustand ist transient.
 3.  **Ausgabe-Zustand:** Die Ergebnisse werden an die Ausgänge geschrieben und das `CNF`-Ereignis wird generiert. Der Baustein kehrt unmittelbar danach in den Warte-Zustand zurück.
@@ -52,9 +51,6 @@ Der Funktionsblock besitzt einen einfachen, zustandslosen Ablauf:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu universellen Rechenbausteinen (wie `MUL`, `ADD`) oder Skalierern ist `hsv2rgb` ein anwendungsspezifischer Baustein, der einen komplexen, nicht-linearen Algorithmus kapselt. Er erspart dem Anwender die aufwändige und fehleranfällige Implementierung der Konvertierung in Structured Text oder anderen Sprachen. Ein direkter Gegenpart `rgb2hsv` für die umgekehrte Konvertierung wäre ein ähnlich spezialisierter Baustein.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

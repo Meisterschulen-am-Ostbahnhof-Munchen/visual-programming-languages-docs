@@ -2,9 +2,7 @@
 
 ---- 
 
-
 ![E_D_FF Diagram](https://user-images.githubusercontent.com/113907528/204898130-f9f31fd9-da42-4b29-a664-add0d91e8890.png)
-
 
 ![E_D_FF_ecc](./E_D_FF_ecc.svg)
 
@@ -65,11 +63,6 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 | Taktung       | Erforderlich | Keine | Keine |
 | Datenhaltung  | Ja | Ja | Nein |
 | Ereignisausgang | Bei Änderung | Bei Set/Reset | Bei Flanke |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

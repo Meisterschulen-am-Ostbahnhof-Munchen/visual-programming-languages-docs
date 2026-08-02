@@ -1,6 +1,5 @@
 # E_D_FF_ANY_HYS
 
-
 ![E_D_FF_ANY_HYS](./E_D_FF_ANY_HYS.svg)
 
 * * * * * * * * * *

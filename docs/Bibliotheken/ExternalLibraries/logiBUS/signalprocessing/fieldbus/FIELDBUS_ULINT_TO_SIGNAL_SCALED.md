@@ -1,6 +1,5 @@
 # FIELDBUS_ULINT_TO_SIGNAL_SCALED
 
-
 ![FIELDBUS_ULINT_TO_SIGNAL_SCALED](./FIELDBUS_ULINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
@@ -53,13 +52,16 @@ Der Funktionsblock besitzt zwei Betriebszustände, die durch die Ereignisse **IN
 
 2. **REQ‑Zustand**  
    Bei einem REQ-Ereignis wird der Algorithmus `REQ` ausgeführt:
+
    - Prüfung: `IN ≤ LWORD_TO_ULINT(VALID_SIGNAL_LW)`  
      - **Gültig** (Bedingung erfüllt):  
        `OUT := ULINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`  
        `VALID := TRUE`  
+
      - **Ungültig** (Bedingung nicht erfüllt):  
        `OUT := 0.0`  
        `VALID := FALSE`  
+
    - Anschließend wird das Ereignis **CNF** mit den neuen Werten von **OUT** und **VALID** ausgegeben.
 
 Die Konstanten `NOT_AVAILABLE_LWM` und `VALID_SIGNAL_LW` stammen aus dem importierten Paket `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL` und legen den Schwellwert für die Gültigkeitserkennung fest.

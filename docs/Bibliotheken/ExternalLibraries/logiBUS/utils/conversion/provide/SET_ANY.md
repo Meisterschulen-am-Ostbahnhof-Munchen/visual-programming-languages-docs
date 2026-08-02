@@ -1,6 +1,5 @@
 # SET_ANY
 
-
 ![SET_ANY](./SET_ANY.svg)
 
 * * * * * * * * * *

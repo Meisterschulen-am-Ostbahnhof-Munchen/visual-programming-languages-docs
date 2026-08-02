@@ -1,9 +1,6 @@
 # sequence_T_08_loop
 
-
-
 <img width="1180" height="403" alt="image" src="https://github.com/user-attachments/assets/fdba2b46-9871-47eb-8aca-97eb92de157a" />
-
 
 ![sequence_T_08_loop_ecc](./sequence_T_08_loop_ecc.svg)
 
@@ -24,6 +21,7 @@ Der Funktionsblock `sequence_T_08_loop` ist ein zeitgesteuerter Sequenzer mit ac
 
 ### **Daten-Eingänge**
 Acht Zeitdaten-Eingänge vom Typ `TIME`, die die Verweildauer in jedem Zustand definieren. Der Standardwert ist `NO_TIME` (keine Zeit, sofortiger Übergang).
+
 *   `DT_S1_S2`: Verweildauer in `State_01` vor Übergang zu `State_02`.
 *   `DT_S2_S3`: Verweildauer in `State_02` vor Übergang zu `State_03`.
 *   `DT_S3_S4`: Verweildauer in `State_03` vor Übergang zu `State_04`.
@@ -42,6 +40,7 @@ Acht Zeitdaten-Eingänge vom Typ `TIME`, die die Verweildauer in jedem Zustand d
 
 ## Funktionsweise
 Der FB arbeitet als Basic Function Block mit einem internen Execution Control Chart (ECC). Die Sequenz beginnt im initialen Zustand `xSTART`. Ein `START_S1`-Ereignis führt zum Zustand `sState_01`. Beim Eintritt in einen Zustand (z.B. `sState_01`) werden drei Aktionen ausgeführt:
+
 1.  Der Exit-Algorithmus des vorherigen Zustands (z.B. `State_08_X`) deaktiviert dessen Ausgang.
 2.  Der Confirmation-Algorithmus (z.B. `State_01_C`) setzt die `STATE_NR` und lädt die für diesen Zustand konfigurierte Zeit (`DT_S1_S2`) in den `timeOut`-Adapter.
 3.  Der Entry-Algorithmus (z.B. `State_01_E`) setzt den zugehörigen Datenausgang (`DO_S1`) auf `TRUE` und löst das entsprechende Ereignis (`EO_S1`) aus.
@@ -59,11 +58,13 @@ Ein `RESET`-Ereignis von jedem Zustand aus führt zum Zustand `sRESET`. Hier wer
 
 ## Zustandsübersicht
 Der ECC besteht aus 10 Zuständen:
+
 *   **`xSTART`**: Initialer, inaktiver Zustand. Wartet auf `START_S1`.
 *   **`sState_01` bis `sState_08`**: Die acht aktiven Sequenzzustände. Jeder verwaltet seinen eigenen Ausgang und die Zeit bis zum nächsten Zustand.
 *   **`sRESET`**: Reset-Zustand. Wird bei `RESET`-Ereignis von jedem Zustand aus angesprungen, deaktiviert alle Ausgänge und kehrt dann zu `xSTART` zurück.
 
 Die Übergangsbedingungen sind:
+
 *   `START_S1`: Von `xSTART` nach `sState_01`.
 *   `timeOut.TimeOut`: Von jedem Zustand `sState_XX` zum nächsten `sState_YY` (zyklisch von `sState_08` zu `sState_01`).
 *   `RESET`: Von jedem aktiven Zustand (`sState_01`-`sState_08`) nach `sRESET`.
@@ -77,11 +78,6 @@ Die Übergangsbedingungen sind:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einem `E_CYCLE`- oder `E_DELAY`-FB, die einfache periodische oder verzögerte Ereignisse erzeugen, bietet `sequence_T_08_loop` eine strukturierte Zustandsmaschine mit mehreren unabhängigen Ausgängen. Im Vergleich zu einem frei programmierbaren `E_CTU` (Zähler) in Kombination mit `SEL`-Blöcken ist dieser FB vorkonfiguriert und damit einfacher und schneller für Standard-Sequenzen mit bis zu acht Schritten einsetzbar. Für komplexere oder zustandsabhängige Sequenzen müsste auf einen Service Sequence Function Block (SFC) oder eine individuelle Basic FB-Programmierung zurückgegriffen werden.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

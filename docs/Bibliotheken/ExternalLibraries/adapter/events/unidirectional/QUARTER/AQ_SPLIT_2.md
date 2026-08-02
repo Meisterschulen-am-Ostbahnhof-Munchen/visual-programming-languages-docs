@@ -1,6 +1,5 @@
 # AQ_SPLIT_2
 
-
 ![AQ_SPLIT_2](./AQ_SPLIT_2.svg)
 
 * * * * * * * * * *

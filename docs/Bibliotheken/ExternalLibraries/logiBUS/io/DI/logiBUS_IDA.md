@@ -1,6 +1,5 @@
 # logiBUS_IDA
 
-
 ![logiBUS_IDA](./logiBUS_IDA.svg)
 
 * * * * * * * * * *

@@ -1,8 +1,5 @@
 # AlPgnTxNew_TP
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -62,6 +59,7 @@ Der Baustein arbeitet in zwei wesentlichen Phasen:
 
 ## Zustandsübersicht
 Der Baustein besitzt intern implizite Zustände, die durch die Verfügbarkeit eines gültigen `PGN_handle` definiert sind:
+
 *   **Nicht Initialisiert:** Vor `INIT`.
 *   **Initialisiert, nicht Installiert:** Nach `INIT`, aber vor erfolgreichem `install`. Sendeanforderungen (`REQ`) würden hier fehlschlagen.
 *   **Installiert / Betriebsbereit:** Ein gültiges Handle wurde erzeugt. Daten können via `REQ` gesendet werden.
@@ -74,9 +72,6 @@ Der Baustein besitzt intern implizite Zustände, die durch die Verfügbarkeit ei
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **AlPgnTx vs. AlPgnTxNew_TP:** Während ältere oder einfachere Versionen eventuell nur statische PGNs unterstützen, deutet der Zusatz "New_TP" auf eine überarbeitete Version hin, die möglicherweise Transportprotokolle (TP) besser unterstützt oder eine modernere Speicherverwaltung (via `InOut` Variablen) nutzt.
 *   **Standard CAN_WRITE:** Im Vergleich zu einem generischen `CAN_WRITE`-Baustein abstrahiert `AlPgnTxNew_TP` die Komplexität der PGN-Verwaltung (Priorität, Datenlänge, Handle-Management) und ist spezifischer auf das J1939/ISOBUS-Protokoll zugeschnitten.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

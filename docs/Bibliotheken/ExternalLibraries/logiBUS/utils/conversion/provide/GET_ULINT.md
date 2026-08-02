@@ -1,6 +1,5 @@
 # GET_ULINT
 
-
 ![GET_ULINT](./GET_ULINT.svg)
 
 * * * * * * * * * *
@@ -44,9 +43,11 @@ Zusätzlich zu den reinen Ein‑/Ausgängen besitzt der Baustein eine InOut‑Va
 
 ## Funktionsweise
 Der Baustein verarbeitet eine einzige Aktion:
+
 1. Ein eingehendes Ereignis am Eingang `REQ` löst die Ausführung des Algorithmus `REQ` aus.
 2. Im Algorithmus wird der aktuelle Wert der InOut‑Variablen `IN` direkt in den Ausgang `OUT` kopiert:  
    `OUT := IN;`
+
 3. Nach Abschluss der Zuweisung wird das Ereignis `CNF` ausgegeben. Die Ausgänge `OUT` und `IN` werden mit dem Ereignis `CNF` assoziiert, sodass aufrufende Bausteine den aktualisierten Wert verarbeiten können.
 
 Durch die Verwendung einer InOut‑Variablen kann der Baustein auf einen Speicherplatz außerhalb des eigenen Kontexts zugreifen, ohne diesen über einen herkömmlichen Eingang zu erhalten. Der Wert wird bei jeder Anfrage frisch gelesen, wodurch sich der Baustein als Lese‑Puffer eignet.

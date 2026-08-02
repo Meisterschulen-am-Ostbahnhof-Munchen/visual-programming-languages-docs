@@ -1,6 +1,5 @@
 # ALI_TO_AULI
 
-
 ![ALI_TO_AULI](./ALI_TO_AULI.svg)
 
 * * * * * * * * * *
@@ -31,6 +30,7 @@ Der Baustein besitzt keine eigenen Ereignis- oder Datenschnittstellen, sondern l
 
 ## Funktionsweise
 Der Baustein arbeitet als reine Durchreiche‑Konvertierung:
+
 1. Ein eingehendes Ereignis am Socket `ALI_IN.E1` triggert den internen Baustein `Convert` (`F_LINT_TO_ULINT`) über dessen Ereigniseingang `REQ`.
 2. Gleichzeitig wird der vom Socket bereitgestellte LINT‑Wert (`ALI_IN.D1`) an den Dateneingang `IN` von `Convert` übergeben.
 3. Nach erfolgreicher Konvertierung signalisiert `Convert` mit einem Ereignis an seinem Ausgang `CNF`, welches direkt an den Plug `AULI_OUT.E1` weitergeleitet wird.

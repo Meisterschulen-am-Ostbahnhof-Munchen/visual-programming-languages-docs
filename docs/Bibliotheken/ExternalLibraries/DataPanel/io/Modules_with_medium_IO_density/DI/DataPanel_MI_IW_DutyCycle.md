@@ -2,7 +2,6 @@
 
 Kein Bild verfügbar.
 
-
 ![DataPanel_MI_IW_DutyCycle](./DataPanel_MI_IW_DutyCycle.svg)
 
 * * * * * * * * * *

@@ -1,9 +1,5 @@
 # AX_FB_R_TRIG
 
-
-
-
-
 ![AX_FB_R_TRIG_ecc](./AX_FB_R_TRIG_ecc.svg)
 
 * * * * * * * * * *

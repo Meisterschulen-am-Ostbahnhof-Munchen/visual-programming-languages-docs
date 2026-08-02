@@ -1,6 +1,5 @@
 # AL_TO_AX
 
-
 ![AL_TO_AX](./AL_TO_AX.svg)
 
 * * * * * * * * * *
@@ -17,18 +16,22 @@ Die internen Verbindungen werden über die Adapter-Elemente abgewickelt:
 
 ### **Ereignis-Eingänge**
 (über den AL_IN-Adapter)
+
 *   **`AL_IN.E1`** – Ereigniseingang; löst die Konvertierung aus.
 
 ### **Ereignis-Ausgänge**
 (über den AX_OUT-Adapter)
+
 *   **`AX_OUT.E1`** – Ereignisausgang; signalisiert den Abschluss der Konvertierung.
 
 ### **Daten-Eingänge**
 (über den AL_IN-Adapter)
+
 *   **`AL_IN.D1`** (`LWORD`) – Der umzuwandelnde LWORD-Wert.
 
 ### **Daten-Ausgänge**
 (über den AX_OUT-Adapter)
+
 *   **`AX_OUT.D1`** (`BOOL`) – Das Ergebnis der Umwandlung: `TRUE`, wenn `AL_IN.D1 ≠ 0`; andernfalls `FALSE`.
 
 ### **Adapter**
@@ -39,6 +42,7 @@ Die internen Verbindungen werden über die Adapter-Elemente abgewickelt:
 Der Baustein arbeitet intern mit dem Funktionsblock `F_NE` („ungleich“) aus der IEC 61131-Bibliothek. Dieser vergleicht den eingehenden LWORD-Wert (`AL_IN.D1`) mit dem Konstantwert `LWORD#0`. Wenn die Werte ungleich sind, liefert `F_NE.OUT` den Wert `TRUE`, sonst `FALSE`.
 
 Die ereignisgesteuerte Abfolge ist:
+
 1. Ein Ereignis an `AL_IN.E1` triggert den Eingang `F_NE.REQ`.
 2. `F_NE` führt den Vergleich durch und legt das Ergebnis an `F_NE.OUT` an.
 3. Nach Abschluss sendet `F_NE` ein Ereignis an `F_NE.CNF`, das mit `AX_OUT.E1` verbunden ist.

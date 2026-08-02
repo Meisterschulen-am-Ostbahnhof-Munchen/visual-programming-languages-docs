@@ -1,6 +1,5 @@
 # AUDI_MUX_5
 
-
 ![AUDI_MUX_5](./AUDI_MUX_5.svg)
 
 * * * * * * * * * *
@@ -32,6 +31,7 @@ Keine.
 
 ## Funktionsweise
 Der Baustein arbeitet als **1‑aus‑5‑Multiplexer**. Sobald am Ereigniseingang REQ ein Signal anliegt, wird der aktuelle Wert des Daten-Eingangs K ausgelesen. Anschließend wird der Adapterausgang **OUT** mit dem Inhalt des Adapters verbunden, der dem Index K entspricht:
+
 - K = 0 → IN1
 - K = 1 → IN2
 - K = 2 → IN3

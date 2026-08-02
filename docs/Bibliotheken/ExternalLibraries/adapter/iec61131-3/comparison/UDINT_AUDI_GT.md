@@ -1,6 +1,5 @@
 # UDINT_AUDI_GT
 
-
 ![UDINT_AUDI_GT](./UDINT_AUDI_GT.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Der Adapter `AX` erwartet das Ergebnis (`D1`) und ein Ereignis (`E1`) zur Weiter
 4. Gleichzeitig wird ein **Bestätigungsereignis** am Plug `OUT.E1` erzeugt, das signalisiert, dass das Ergebnis gültig ist.
 
 Die Verbindung der inneren Logik ist im FBNetzwerk fest verdrahtet:  
+
 - `IN1` → `F_GT.IN1`  
 - `IN2.D1` → `F_GT.IN2`  
 - `F_GT.OUT` → `OUT.D1`  

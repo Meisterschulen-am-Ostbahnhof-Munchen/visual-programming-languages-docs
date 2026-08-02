@@ -1,6 +1,5 @@
 # SPLIT_AB_INTO_AX
 
-
 ![SPLIT_AB_INTO_AX](./SPLIT_AB_INTO_AX.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Der Baustein besitzt keine expliziten Ereignis-Ausgänge auf der obersten Ebene.
 
 ## Zustandsübersicht
 Der Baustein selbst besitzt keinen expliziten Zustandsautomaten. Das Verhalten ergibt sich aus der internen Kombination von:
+
 - **SPLIT_BYTE_INTO_BOOLS**: Einzelschritt – erzeugt aus einem BYTE acht BOOL‑Werte und ein Bestätigungsereignis.
 - **E_D_FF**: Jeder Flipflop speichert einen booleschen Wert bei steigender Taktflanke und hält ihn bis zum nächsten Takt.
 

@@ -1,6 +1,5 @@
 # GET_UDINT
 
-
 ![GET_UDINT](./GET_UDINT.svg)
 
 * * * * * * * * * *
@@ -52,6 +51,7 @@ Bei einem Ereignis am **REQ**-Eingang führt der Baustein den Algorithmus aus un
 
 ## Zustandsübersicht
 Der FB besitzt einen einzigen Zustand:
+
 - **REQ:** Der Algorithmus wird ausgeführt. Nach Kopieren des Wertes wird sofort der Ausgang **CNF** gesetzt.
 
 Es gibt keine weiteren Zustände, d. h. der FB ist immer bereit, eine Anforderung zu bearbeiten.

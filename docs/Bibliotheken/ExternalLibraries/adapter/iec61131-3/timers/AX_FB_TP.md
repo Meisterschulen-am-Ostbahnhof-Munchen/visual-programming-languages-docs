@@ -1,7 +1,5 @@
 # AX_FB_TP
 
-
-
 <img width="962" height="243" alt="image" src="https://github.com/user-attachments/assets/d92dd0e6-fa14-499e-8a97-5c1432d0df3e" />
 
 * * * * * * * * * *
@@ -33,6 +31,7 @@ AX_FB_TP ist ein standardisierter Timer-Funktionsblock gemäß IEC 61131-3, der 
 
 ## Funktionsweise
 Der AX_FB_TP-Block arbeitet als Impulsgeber:
+
 1. Bei einer steigenden Flanke (Wechsel von FALSE auf TRUE) am IN-Adapter wechselt der Ausgang am Q-Adapter sofort auf TRUE.
 2. Der interne Timer startet und läuft für die Dauer PT.
 3. Der Ausgang am Q-Adapter bleibt für die gesamte Zeit PT auf TRUE, unabhängig davon, ob das Eingangssignal am IN-Adapter zwischenzeitlich wieder auf FALSE wechselt.
@@ -59,11 +58,6 @@ Der AX_FB_TP-Block arbeitet als Impulsgeber:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zum [AX_PULSE](../../events/unidirectional/BOOL/timers/AX_PULSE.md) bietet AX_FB_TP die klassische IEC 61131-3 TP-Charakteristik inklusive dem ET-Statusausgang.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

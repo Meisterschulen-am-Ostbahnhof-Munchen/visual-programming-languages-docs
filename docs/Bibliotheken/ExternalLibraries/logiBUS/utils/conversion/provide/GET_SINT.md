@@ -1,6 +1,5 @@
 # GET_SINT
 
-
 ![GET_SINT](./GET_SINT.svg)
 
 * * * * * * * * * *

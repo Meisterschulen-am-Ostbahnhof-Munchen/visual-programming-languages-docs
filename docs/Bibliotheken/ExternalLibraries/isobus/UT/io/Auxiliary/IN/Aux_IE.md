@@ -1,7 +1,5 @@
 # Aux_IE
 
-
-
 <img width="1335" height="214" alt="image" src="https://github.com/user-attachments/assets/96c43b99-3ad6-4ea1-835a-f1ca01902622" />
 
 * * * * * * * * * *
@@ -60,9 +58,6 @@ Der Block verfügt über einen Initialisierungszustand (INIT/INITO) und operativ
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IE erweiterte Funktionalität für die Erkennung komplexerer Eingabeereignisse und ist speziell für ISOBUS-Umgebungen optimiert.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

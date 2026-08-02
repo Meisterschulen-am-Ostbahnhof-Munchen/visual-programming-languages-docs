@@ -1,8 +1,6 @@
 # E_SR
 
-
 ## 🎧 Podcast
-
 
 ![E_SR_ecc](./E_SR_ecc.svg)
 
@@ -29,6 +27,7 @@ Der `E_SR` (Event-driven SR Flip-Flop) ist ein ereignisgesteuerter, bistabiler F
 
 ## Funktionsweise
 Der `E_SR`-Baustein funktioniert als einfacher Speicher (Latch):
+
 1.  **Setzen**: Wenn ein Ereignis am Eingang `S` eintrifft, wird der Ausgang `Q` auf `TRUE` gesetzt. Wenn `Q` vorher `FALSE` war, wird das `EO`-Ereignis ausgelöst.
 2.  **Zurücksetzen**: Wenn ein Ereignis am Eingang `R` eintrifft, wird der Ausgang `Q` auf `FALSE` gesetzt. Wenn `Q` vorher `TRUE` war, wird das `EO`-Ereignis ausgelöst.
 3.  **Speichern**: Zwischen den Ereignissen behält `Q` seinen zuletzt gesetzten Zustand bei.
@@ -49,11 +48,6 @@ Laut **DIN EN 61499-1 (Tabelle A.1, Anmerkung 8)** ist die Implementierung diese
 ## Verwandte Bausteine
 - **[E_RS](E_RS.md)**: Funktional identisch zum `E_SR`. Der einzige Unterschied liegt in der grafischen Anordnung der `S`- und `R`-Anschlüsse am Symbol.
 - **`E_D_FF`**: Speichert ebenfalls einen Zustand, aber taktbasiert. `E_D_FF` übernimmt den Wert am `D`-Eingang bei einem `CLK`-Ereignis.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

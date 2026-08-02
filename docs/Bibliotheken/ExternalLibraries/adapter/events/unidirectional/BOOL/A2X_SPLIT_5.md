@@ -1,6 +1,5 @@
 # A2X_SPLIT_5
 
-
 ![A2X_SPLIT_5](./A2X_SPLIT_5.svg)
 
 * * * * * * * * * *

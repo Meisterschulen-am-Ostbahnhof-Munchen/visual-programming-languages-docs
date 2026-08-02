@@ -1,6 +1,5 @@
 # SPLIT_AL_INTO_AX
 
-
 ![SPLIT_AL_INTO_AX](./SPLIT_AL_INTO_AX.svg)
 
 * * * * * * * * * *
@@ -14,6 +13,7 @@ Der Funktionsblock **SPLIT_AL_INTO_AX** zerlegt einen als LWORD (64 Bit) kodiert
 
 ### **Ereignis-Ausgänge**
 Jeder AX-Adapter stellt einen Ereignisausgang bereit:
+
 - **BIT_00.E1** .. **BIT_63.E1** (in den entsprechenden Adaptern): Wird ausgelöst, sobald das zugehörige Bit im internen Flipflop aktualisiert wurde.
 
 ### **Daten-Eingänge**
@@ -42,6 +42,7 @@ Jeder AX-Adapter stellt einen Ereignisausgang bereit:
 
 ## Zustandsübersicht
 Der FB besitzt keinen eigenen expliziten Zustandsautomaten. Der innere Zustand wird durch die 64 **E_D_FF** repräsentiert:
+
 - **Initial**: Alle Flipflops stehen auf FALSE (0).
 - **Nach einer Verarbeitung**: Jedes Flipflop speichert den aktuellen Bitwert des zuletzt empfangenen LWORD. Die Zustandsänderung erfolgt nur bei einem neuen Ereignis auf **IN.E1**.
 

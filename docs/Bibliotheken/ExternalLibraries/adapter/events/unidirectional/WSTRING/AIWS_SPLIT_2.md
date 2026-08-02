@@ -1,6 +1,5 @@
 # AIWS_SPLIT_2
 
-
 ![AIWS_SPLIT_2](./AIWS_SPLIT_2.svg)
 
 * * * * * * * * * *

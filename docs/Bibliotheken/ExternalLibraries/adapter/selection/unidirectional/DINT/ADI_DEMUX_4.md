@@ -1,6 +1,5 @@
 # ADI_DEMUX_4
 
-
 ![ADI_DEMUX_4](./ADI_DEMUX_4.svg)
 
 * * * * * * * * * *

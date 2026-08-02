@@ -1,6 +1,5 @@
 # AI_FB_CTUD
 
-
 ![AI_FB_CTUD](./AI_FB_CTUD.svg)
 
 * * * * * * * * * *
@@ -10,6 +9,7 @@ Der Funktionsblock **AI_FB_CTUD** realisiert einen Aufwärts-/Abwärtszähler (U
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Der Baustein besitzt keine separaten Ereignis-Eingänge im klassischen Sinne. Stattdessen werden Ereignisse über die **Sockets** (Adapter) empfangen:
+
 - **CU** (AX) – Zählereignis aufwärts (Count Up)
 - **CD** (AX) – Zählereignis abwärts (Count Down)
 - **R** (AX) – Rücksetzen (Reset)
@@ -26,6 +26,7 @@ Jedes eingehende Ereignis löst eine Aktualisierung des internen Zählers aus.
 
 ### **Daten-Eingänge**
 Alle Daten werden über die **Sockets** bereitgestellt:
+
 - **CU.D** (BOOL) – Zählimpuls aufwärts
 - **CD.D** (BOOL) – Zählimpuls abwärts
 - **R.D** (BOOL) – Rücksetzsignal
@@ -53,6 +54,7 @@ Alle Daten werden über die **Sockets** bereitgestellt:
 Der Baustein arbeitet als reiner **Adapter-Wrapper** für den internen IEC 61131‑3 FB `FB_CTUD`. Die eingehenden Adapter-Ereignisse (über die Sockets) werden auf den Ereignis-Eingang `FB_CTUD.REQ` zusammengeführt, während die zugehörigen Datenwerte (z. B. `CU.D`, `PV.D`) an die entsprechenden Eingänge des internen Zählers weitergeleitet werden. Bei jeder Ausführung des internen FBs werden dessen Ausgänge (`CV`, `QU`, `QD`) gelesen und über die Adapter-Plugs ausgegeben. Gleichzeitig wird das Ereignis `CNF` erzeugt.
 
 Der interne Zähler verhält sich wie ein klassischer IEC‑61131‑3 Up-Down-Counter:
+
 - Ein positiver Flanke an `CU` erhöht den Zählwert um 1.
 - Ein positiver Flanke an `CD` verringert den Zählwert um 1.
 - Ein positiver Flanke an `R` setzt den Zählwert auf 0 zurück.
@@ -67,6 +69,7 @@ Der interne Zähler verhält sich wie ein klassischer IEC‑61131‑3 Up-Down-Co
 
 ## Zustandsübersicht
 Der Baustein selbst besitzt keinen expliziten Zustandsautomaten, sondern spiegelt den Zustand des internen `FB_CTUD` wider:
+
 - **Zählerstand (INT):** Initial 0, verändert sich durch CU, CD, R oder LD.
 - **Flags:** `QU` und `QD` werden basierend auf dem Vergleich von Zählerstand und Presetwert (bzw. 0) gesetzt.
 - **Presetwert:** Wird über den `PV`-Adapter gespeichert und bei jedem `LD`-Ereignis geladen.

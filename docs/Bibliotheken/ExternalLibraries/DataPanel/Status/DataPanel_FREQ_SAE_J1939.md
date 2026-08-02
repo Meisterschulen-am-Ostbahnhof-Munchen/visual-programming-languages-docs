@@ -1,7 +1,5 @@
 # DataPanel_FREQ_SAE_J1939
 
-
-
 Frequency/Counter Inputs 7A-8A Status
 
 ## Interface

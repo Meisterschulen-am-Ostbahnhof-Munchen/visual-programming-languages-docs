@@ -1,8 +1,5 @@
 # I_VDS
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -81,9 +78,6 @@ Der Baustein integriert Navigationsdaten für moderne Landmaschinen und Nutzfahr
 | Update-Rate | 10Hz | 1Hz | 20Hz |
 | ISO-Konformität | Voll | Teilweise | Voll |
 
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
@@ -98,6 +92,7 @@ Der I_VDS-Baustein bietet präzise Navigation für mobile Arbeitsmaschinen:
 - **Zukunftssicher**: Reservierte Parameter für Erweiterungen
 
 Idealer Einsatz bei:
+
 - Automatischen Lenksystemen
 - Präzisionslandwirtschaft
 - Flottenmanagementsystemen

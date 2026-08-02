@@ -1,6 +1,5 @@
 # AX_TO_AUDI
 
-
 ![AX_TO_AUDI](./AX_TO_AUDI.svg)
 
 * * * * * * * * * *
@@ -25,6 +24,7 @@ Der Funktionsblock **AX_TO_AUDI** ist ein zusammengesetzter Baustein (Composite 
 ### **Adapter**
 - **AX_IN** – Socket‑Adapter vom Typ `adapter::types::unidirectional::AX`  
   Nimmt einen Booleschen Wert (und ein zugehöriges Ereignis) entgegen.
+
 - **AUDI_OUT** – Plug‑Adapter vom Typ `adapter::types::unidirectional::AUDI`  
   Stellt den konvertierten UDINT‑Wert (und ein quittierendes Ereignis) bereit.
 
@@ -48,6 +48,7 @@ Der Baustein arbeitet ereignisgesteuert:
 ## Zustandsübersicht
 
 Der Baustein besitzt keine eigenen Zustandsautomaten. Das Verhalten wird vollständig durch die sequenzielle Abarbeitung des internen Konvertierungsbausteins bestimmt:
+
 - **Idle**: Warten auf ein Ereignis an **AX_IN.E1**.
 - **Konvertierung aktiv**: Nach Empfang des Ereignisses wird die Umwandlung durchgeführt; während dieser Zeit werden keine weiteren Ereignisse verarbeitet (Single‑Execution).
 - **Abschluss**: Das Ausgangsereignis wird gesendet, danach kehrt der Baustein in den Idle‑Zustand zurück.

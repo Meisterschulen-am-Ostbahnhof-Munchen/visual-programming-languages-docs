@@ -1,7 +1,5 @@
 # E_DEMUX_8
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -48,11 +46,6 @@ Der `E_DEMUX_8` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, 
 - **Zustandsmaschinen**: Auswahl des nächsten Zustandsübergangs aus bis zu acht Möglichkeiten.
 - **Modus-Umschaltung**: Aktivierung unterschiedlicher Anlagenteile je nach gewähltem Betriebsmodus.
 - **Kommunikations-Router**: Weiterleiten von Nachrichten oder Befehlen an einen von acht Kanälen.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

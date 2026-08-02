@@ -1,7 +1,5 @@
 # SchieberAuxOutStruct
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Datenbaustein `SchieberAuxOutStruct` definiert eine Struktur zur Konfiguration der visuellen Darstellung eines AUX-Ausgabeelements. Er wird verwendet, um sowohl das anzuzeigende Bild als auch dessen Hintergrundfarbe festzulegen. Dieser Baustein ist Teil einer Funktionalität zur Steuerung von Bildschirmanzeigen, typischerweise in landwirtschaftlichen oder mobilen Arbeitsmaschinen.
@@ -33,6 +31,7 @@ Da es sich um einen passiven Datentyp handelt, besitzt die `SchieberAuxOutStruct
 
 ## Anwendungsszenarien
 Primär dient dieser Baustein zur Parametrierung von Anzeigeelementen in ISOBUS-kompatiblen Terminals (UT). Konkrete Anwendungen sind:
+
 *   Konfiguration von Schiebereglern oder Statusanzeigen in einer Bedienoberfläche.
 *   Dynamische Änderung von Symbolen und deren Hintergrund in Abhängigkeit vom Maschinenzustand (z.B. Warnung, Aktivität, Fehler).
 *   Standardisierung des Datenaustauschs zwischen Steuerungslogik und Visualisierungs-Funktionsblöcken.

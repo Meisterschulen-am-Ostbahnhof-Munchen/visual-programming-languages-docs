@@ -1,6 +1,5 @@
 # Q_ObjEnableDisable_AB
 
-
 ![Q_ObjEnableDisable_AB](./Q_ObjEnableDisable_AB.svg)
 
 * * * * * * * * * *

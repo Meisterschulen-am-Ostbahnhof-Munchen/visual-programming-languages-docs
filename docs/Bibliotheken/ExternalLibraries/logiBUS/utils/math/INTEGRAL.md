@@ -1,7 +1,5 @@
 # INTEGRAL
 
-
-
 <img width="1755" height="158" alt="image" src="https://github.com/user-attachments/assets/4eac3645-d857-4c04-9bc3-7692be451a96" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 Der `INTEGRAL`-FB besitzt zwei primäre Betriebszustände, die durch die eintreffenden Ereignisse gesteuert werden:
+
 1.  **Integration (`REQ`)**: Bei einem `REQ`-Ereignis wird der Algorithmus `REQ` ausgeführt. Zunächst wird geprüft, ob kein vorheriger Überlauf (`OVERFLOW = FALSE`) vorliegt. Anschließend wird eine Überlaufprüfung durchgeführt: Falls die Addition des nächsten Teilintegrals (`IN * TM`) zum aktuellen `OUT`-Wert die Grenzen des `REAL`-Datentyps (ca. ±1.0E38) überschreiten würde, wird `OVERFLOW` auf `TRUE` gesetzt. Andernfalls, und nur wenn die Zeitdifferenz `TM` größer als 0 ist, wird das Teilintegral berechnet, in Sekunden umgerechnet (`/ 1000.0`) und zum Gesamtintegral `OUT` addiert.
 2.  **Reset (`RESET`)**: Bei einem `RESET`-Ereignis wird der Algorithmus `RESET` ausgeführt. Dieser setzt den Integralwert `OUT` auf `0.0` und das Überlauf-Flag `OVERFLOW` auf `FALSE` zurück.
 
@@ -44,6 +43,7 @@ Nach der Ausführung des jeweiligen Algorithmus wird stets ein `CNF`-Ausgangsere
 
 ## Zustandsübersicht
 Der Funktionsblock ist ein Simple FB und besitzt explizit definierte Ausführungszustände (ECStates) für die beiden möglichen Ereignisse:
+
 *   **Zustand REQ**: Wird bei Eintreffen des `REQ`-Ereignisses aktiviert. Führt den Integrationsalgorithmus aus.
 *   **Zustand RESET**: Wird bei Eintreffen des `RESET`-Ereignisses aktiviert. Führt den Reset-Algorithmus aus.
 Beide Zustände führen nach ihrer Ausführung zur Ausgabe des `CNF`-Ereignisses.
@@ -56,11 +56,6 @@ Beide Zustände führen nach ihrer Ausführung zur Ausgabe des `CNF`-Ereignisses
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Summierbausteinen (z.B. `ADD`) zeichnet sich `INTEGRAL` durch die explizite Berücksichtigung der Zeit als Integrationsvariable aus. Im Gegensatz zu komplexeren Regelbausteinen mit integrierten Timern (wie z.B. bestimmten PID-Implementierungen) ist `INTEGRAL` ein reiner, zeitdiskreter Integrator, der die Zeitdifferenz als Eingangsvariable erwartet und somit extern getaktet wird. Dies macht ihn flexibler in Systemen mit variabler oder nicht-periodischer Zykluszeit.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,7 +1,5 @@
 # ST08X
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp **ST08X** ist eine strukturierte Datenkomponente, die für die Verwaltung und Gruppierung von acht individuellen booleschen Werten konzipiert wurde. Sein Hauptzweck ist es, eine kompakte Darstellung für eine Sammlung von acht unabhängigen Bits bereitzustellen, die oft als Status-Flags, Steuersignale oder ähnliche binäre Zustände verwendet werden.
@@ -17,6 +15,7 @@ Nicht zutreffend für einen Datentyp.
 
 ### **Daten-Eingänge**
 Nicht zutreffend für einen Datentyp. Der Datentyp besteht aus folgenden internen Variablen:
+
 *   `X_00`: Typ `BOOL`, Kommentar: "BIT 00"
 *   `X_01`: Typ `BOOL`, Kommentar: "BIT 01"
 *   `X_02`: Typ `BOOL`, Kommentar: "BIT 02"
@@ -52,6 +51,7 @@ Als reiner Datentyp besitzt **ST08X** keine Zustände im Sinne einer Zustandsmas
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Der Datentyp **ST08X** bietet eine Alternative zu:
+
 *   **Einzelne BOOL-Variablen**: Reduziert die Anzahl der Deklarationen und vereinfacht die Parameterübergabe, wenn viele boolesche Werte zusammengehören.
 *   **BYTE-Datentyp**: Während ein `BYTE` ebenfalls 8 Bits speichert, werden diese als numerischer Wert behandelt. **ST08X** behält die separate, namentliche Adressierbarkeit jedes einzelnen Bits, was die Semantik und den direkten Zugriff auf logische Flags verbessert, ohne Bitmaskierungen oder Bitverschiebeoperationen verwenden zu müssen. Die explizite Benennung `X_00` bis `X_07` macht den Code selbsterklärender.
 

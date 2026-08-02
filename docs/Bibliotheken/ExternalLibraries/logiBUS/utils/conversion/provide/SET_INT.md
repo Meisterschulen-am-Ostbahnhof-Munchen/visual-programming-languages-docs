@@ -1,6 +1,5 @@
 # SET_INT
 
-
 ![SET_INT](./SET_INT.svg)
 
 * * * * * * * * * *
@@ -50,8 +49,10 @@ Die Ausführung erfolgt ohne Verzögerung oder Bedingungen – bei jedem `REQ` w
 ## Technische Besonderheiten
 - **InOut-Variable**  
   Der Baustein nutzt einen InOut-Parameter (`OUT`), der eine direkte Referenz auf eine externe Variable (z. B. einen globalen Datenbaustein oder eine Variable eines übergeordneten Funktionsblocks) darstellt. Dadurch entfällt die Notwendigkeit einer expliziten Rückverbindung des Ausgangs zu einem anderen Baustein. Der FB schreibt seinen Wert direkt an die referenzierte Speicherstelle.
+
 - **Keine Pufferung**  
   Der FB führt keine Zwischenspeicherung durch. Der Wert wird bei jedem `REQ-Ereignis` unmittelbar überschrieben.
+
 - **Initialwerte**  
   Die Daten-Eingänge und InOut-Variablen sind mit `0` initialisiert. Im Falle einer fehlenden Verbindung wird dieser Wert verwendet.
 
@@ -65,16 +66,20 @@ Der FB besitzt einen einzigen ECC-Zustand (`REQ`), der die Aktion ausführt und 
 ## Anwendungsszenarien
 - **Setzen eines Konstantenwerts**  
   Ein externer Sensor oder eine Logik liefert einen Sollwert (`IN`), der bei einem Takt (`REQ`) in eine globale Sollwertvariable (`OUT`) übernommen wird.
+
 - **Initialisierung von Variablen**  
   Beim Start einer Anwendung kann `SET_INT` verwendet werden, um mehrere InOut-Variablen auf definierte Startwerte zu setzen.
+
 - **Parameter-Override**  
   Ein übergeordneter Regler oder eine Bedienschnittstelle überschreibt bei einem speziellen Ereignis den aktuellen Wert eines anderen Bausteins, ohne den Baustein selbst ändern zu müssen (die InOut-Verbindung erlaubt den direkten Zugriff).
 
 ## Vergleich mit ähnlichen Bausteinen
 - **SET_BOOL / SET_REAL**  
   Analog zu `SET_INT`, jedoch für die Datentypen `BOOL` bzw. `REAL`. Die Funktionsweise ist identisch.
+
 - **MOVE**  
   Ein allgemeiner MOVE-Baustein kopiert einen Wert von einem Daten-Eingang zu einem Daten-Ausgang. Im Unterschied dazu arbeitet `SET_INT` mit einer InOut-Variablen und schreibt direkt an eine externe Stelle, was die Kopplung enger macht. `MOVE` benötigt eine separate Verbindung vom Ausgang zum Ziel.
+
 - **LATCH**  
   Ein Latch-FB kann einen Wert speichern und bei Bedarf ausgeben. `SET_INT` überschreibt dagegen ohne Haltefunktion – jeder Aufruf überschreibt den vorherigen Wert.
 

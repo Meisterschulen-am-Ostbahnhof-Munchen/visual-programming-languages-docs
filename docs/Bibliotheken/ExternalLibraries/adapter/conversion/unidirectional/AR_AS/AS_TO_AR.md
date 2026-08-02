@@ -1,6 +1,5 @@
 # AS_TO_AR
 
-
 ![AS_TO_AR](./AS_TO_AR.svg)
 
 * * * * * * * * * *
@@ -12,18 +11,22 @@ Der Funktionsblock `AS_TO_AR` ist ein Composite-Baustein, der einen unidirektion
 
 ### **Ereignis-Eingänge**  
 Der Baustein besitzt keine eigenständigen Ereignis-Eingänge. Ereignisse werden ausschließlich über den integrierten Adapter **AS_IN** empfangen.  
+
 - **AS_IN.E1** – Ereignis vom angeschlossenen SINT‑Adapter.
 
 ### **Ereignis-Ausgänge**  
 Ereignisse werden über den integrierten Adapter **AR_OUT** weitergegeben.  
+
 - **AR_OUT.E1** – Ereignis zum angeschlossenen REAL‑Adapter.
 
 ### **Daten-Eingänge**  
 Daten werden ausschließlich über den Adapter **AS_IN** bereitgestellt.  
+
 - **AS_IN.D1** – Datenwert vom Typ **SINT** (vorzeichenbehafteter 8‑Bit‑Integer).
 
 ### **Daten-Ausgänge**  
 Daten werden ausschließlich über den Adapter **AR_OUT** ausgegeben.  
+
 - **AR_OUT.D1** – Datenwert vom Typ **REAL** (Gleitkommazahl).
 
 ### **Adapter**  

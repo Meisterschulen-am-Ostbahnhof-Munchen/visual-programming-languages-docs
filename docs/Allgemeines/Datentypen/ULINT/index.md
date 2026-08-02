@@ -1,7 +1,5 @@
 # Datentyp-Detail: ULINT
 
-
-
 ## Beschreibung
 Vorzeichenlose lange ganze Zahl
 

@@ -2,7 +2,6 @@
 
 (Bild des Funktionsblocks – in der XML nicht enthalten, daher kein Bild)
 
-
 ![AW_D_FF_TMIN](./AW_D_FF_TMIN.svg)
 
 * * * * * * * * * *

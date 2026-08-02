@@ -1,6 +1,5 @@
 # Q_NumericValue_PHYS_LREAL
 
-
 ![Q_NumericValue_PHYS_LREAL](./Q_NumericValue_PHYS_LREAL.svg)
 
 * * * * * * * * * *

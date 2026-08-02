@@ -1,6 +1,5 @@
 # AD_TO_AX
 
-
 ![AD_TO_AX](./AD_TO_AX.svg)
 
 * * * * * * * * * *
@@ -28,6 +27,7 @@ Keine eigenständigen Daten-Ausgänge. Die Ausgangsdaten werden über den Plug-A
 | `AX_OUT` | Plug | `adapter::types::unidirectional::AX` | BOOL-Ausgangsadapter – gibt Ereignis und Boolesches Ergebnis aus. |
 
 Die Adapter folgen dem unidirektionalen Muster und stellen jeweils einen Ereignisausgang (`E1`) und einen Datenausgang (`D1`) zur Verfügung:
+
 - **AD_IN.E1** → initiiert die Verarbeitung.
 - **AD_IN.D1** → enthält den DWORD-Quellwert.
 - **AX_OUT.E1** → signalisiert das Ende der Verarbeitung.
@@ -43,6 +43,7 @@ Der FB `AD_TO_AX` ist als Composite FB realisiert. Er enthält eine Instanz des 
 5. Gleichzeitig signalisiert `F_NE.CNF` das Ende der Berechnung und triggert `AX_OUT.E1`.
 
 Somit wird aus einem DWORD-Wert ein BOOL-Wert abgeleitet:  
+
 - `DWORD = 0` → Ausgabe `FALSE`  
 - `DWORD ≠ 0` → Ausgabe `TRUE`
 
@@ -54,6 +55,7 @@ Somit wird aus einem DWORD-Wert ein BOOL-Wert abgeleitet:
 
 ## Zustandsübersicht
 Der FB besitzt keinen expliziten Zustandsautomaten, da er ausschließlich aus einer logischen Verknüpfung besteht. Der interne Ablauf ist ereignisgesteuert:
+
 - **Ruhezustand**: Warten auf ein Ereignis am Eingang `AD_IN.E1`.
 - **Ausführung**: Nach dem Ereignis erfolgt die Berechnung durch `F_NE` und die Weiterleitung des Ergebnisses – dies geschieht in einem Schritt ohne Zwischenzustände.
 

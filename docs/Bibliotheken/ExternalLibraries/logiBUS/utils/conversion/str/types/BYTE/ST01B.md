@@ -1,7 +1,5 @@
 # ST01B
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Die bereitgestellte XML-Datei beschreibt den 4diac **Datentyp** `ST01B` (Structure with 1 BYTE), nicht einen Funktionsblock (FB). Dieser Datentyp definiert eine einfache Datenstruktur, die ein einzelnes Byte-Feld enthält. Die folgende Dokumentation versucht, die angeforderte Struktur für einen Funktionsblock so weit wie möglich anzuwenden, obwohl viele Abschnitte für einen reinen Datentyp nicht zutreffend sind.
@@ -28,6 +26,7 @@ Nicht zutreffend, da `ST01B` ein Datentyp und kein Funktionsblock ist.
 `ST01B` selbst hat keine Funktionsweise im Sinne eines ausführbaren Bausteins. Es handelt sich um eine statische Definition einer Datenstruktur, die ein einzelnes Byte umfasst. Diese Struktur kann von Funktionsblöcken instanziiert und zur Speicherung oder zum Austausch von Byte-Werten verwendet werden.
 
 Die Struktur enthält die folgende Variable:
+
 *   **B_00**: Ein `BYTE`-Feld, das als "BYTE 00" kommentiert ist.
 
 ## Technische Besonderheiten
@@ -40,6 +39,7 @@ Nicht zutreffend, da `ST01B` ein Datentyp und kein ausführbarer Funktionsblock 
 
 ## Anwendungsszenarien
 Dieser Datentyp kann in verschiedenen Szenarien nützlich sein, in denen ein einzelnes Byte mit einem spezifischen semantischen Namen in einer strukturierten Weise gehandhabt werden muss, zum Beispiel:
+
 *   Als einheitlicher Typ für bestimmte Registerwerte.
 *   Zur Vereinheitlichung von Schnittstellen, die einzelne Byte-Werte übergeben.
 *   Als Baustein für komplexere Strukturen, die aus einer Reihe von Bytes bestehen.

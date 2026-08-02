@@ -1,6 +1,5 @@
 # AS_TO_AI
 
-
 ![AS_TO_AI](./AS_TO_AI.svg)
 
 * * * * * * * * * *
@@ -24,6 +23,7 @@ Der Funktionsblock `AS_TO_AI` ist ein Composite-Funktionsblock, der einen AS-Ada
 ### **Adapter**
 - **AS_IN** (Socket, Typ: `adapter::types::unidirectional::AS`)  
   Erwartet einen SINT-Wert und ein zugehöriges Ereignis E1.
+
 - **AI_OUT** (Plug, Typ: `adapter::types::unidirectional::AI`)  
   Stellt einen INT-Wert und ein Ereignis E1 bereit.
 

@@ -1,6 +1,5 @@
 # AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED
 
-
 ![AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED](./AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Der Ablauf ist rein ereignisgesteuert: Jedes eingehende Ereignis löst genau ein
 
 ## Zustandsübersicht
 Der Baustein definiert keinen expliziten Zustandsautomaten (ECC). Die Verarbeitung erfolgt ausschließlich ereignisgesteuert:
+
 - **Im Ruhezustand** wartet er auf ein Ereignis.
 - **Bei INIT** wird der interne Baustein initialisiert.
 - **Bei IN.E1** wird die Übersetzung ausgelöst und die Ergebnisse werden asynchron ausgegeben.

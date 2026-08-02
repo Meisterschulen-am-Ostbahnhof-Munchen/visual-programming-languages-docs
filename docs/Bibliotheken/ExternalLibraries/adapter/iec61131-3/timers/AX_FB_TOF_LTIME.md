@@ -1,6 +1,5 @@
 # AX_FB_TOF_LTIME
 
-
 ![AX_FB_TOF_LTIME](./AX_FB_TOF_LTIME.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Der Baustein verhält sich wie eine klassische Ausschaltverzögerung (TOF):
 - Wird `IN` vor Ablauf der Verzögerungszeit wieder **TRUE**, wird der Timer zurückgesetzt und `Q` bleibt **TRUE**.
 
 Die ereignisgesteuerte Verarbeitung erfolgt wie folgt:
+
 1. Das Ereignis `REQ` (entweder direkt oder vom Adaptereingang `IN.E1`) triggert den internen Timer `FB_TOF_LTIME`.
 2. Der Timer berechnet die verstrichene Zeit und gibt bei Abschluss das Ereignis `CNF` aus.
 3. Dieses `CNF` taktet das D‑Flipflop `E_D_FF`, das den aktuellen Timer‑Ausgang (`Q` des Timers) speichert und auf den Ausgangsadapter `Q.D1` durchschaltet.

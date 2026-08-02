@@ -1,7 +1,5 @@
 # I_COGSOGRapidUpdate
 
-
-
 <img width="1568" height="224" alt="image" src="https://github.com/user-attachments/assets/43b9d800-6165-47e8-a40b-37fe0288f95d" />
 
 * * * * * * * * * *
@@ -60,9 +58,6 @@ Der Baustein agiert als passiver Empfänger für das NMEA 2000 PGN 129026. Nach 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenüber generischen CAN-Empfangsblöcken**: `I_COGSOGRapidUpdate` ist spezialisiert auf PGN 129026. Er übernimmt die komplette Dekodierung der Rohdaten gemäß NMEA-Spezifikation und stellt die physikalischen Werte direkt bereit. Ein generischer Empfänger würde nur die Roh-Bytes liefern.
 *   **Gegenüber PGN 129025 (COG/SOG)**: PGN 129026 ist die "Rapid Update"-Variante, die für eine höhere Update-Rate und geringere Latenz optimiert ist, während PGN 129025 zusätzliche Felder wie Zeitstempel enthalten kann. Die Wahl des Bausteins hängt von den Anforderungen der Anwendung an Aktualität und Datenumfang ab.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

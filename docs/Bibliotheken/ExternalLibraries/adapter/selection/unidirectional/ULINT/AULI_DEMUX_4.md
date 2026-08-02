@@ -1,6 +1,5 @@
 # AULI_DEMUX_4
 
-
 ![AULI_DEMUX_4](./AULI_DEMUX_4.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Der **AULI_DEMUX_4** ist ein generischer Demultiplexer, der einen eingehenden AU
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Ein REQ‑Ereignis wird empfangen.
 2. Der aktuelle Wert des Daten‑Eingangs **K** wird gelesen.
 3. Der Zustand des Socket‑Adapters **IN** wird an den Plug‑Adapter **OUT1**, **OUT2**, **OUT3** oder **OUT4** kopiert, abhängig vom Wert von K (z.B. K=0 → OUT1, K=1 → OUT2, …).
@@ -57,6 +57,7 @@ Der Baustein ist generisch (GenericClassName `'GEN_AULI_DEMUX'`) und kann durch 
 
 ## Zustandsübersicht
 Der Baustein besitzt keine explizite Zustandsmaschine (ECC) im XML. Seine Funktionalität reduziert sich auf eine reine Ereignis‑Daten‑Transaktion:
+
 - **IDLE**: Warten auf REQ.
 - **ACTIVE**: Kopieren des IN‑Adapterwerts auf den durch K bestimmten OUT‑Adapter.
 - **DONE**: Ausgabe von CNF und Rückkehr nach IDLE.

@@ -1,8 +1,5 @@
 # AX_SELECT
 
-
-
-
 ![AX_SELECT_ecc](./AX_SELECT_ecc.svg)
 
 * * * * * * * * * *
@@ -39,9 +36,6 @@ Auswahl von Signalen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **E_SELECT**: Standard Ereignis-Select ohne Adapter.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,6 +1,5 @@
 # AULI_TO_AUDI
 
-
 ![AULI_TO_AUDI](./AULI_TO_AUDI.svg)
 
 * * * * * * * * * *
@@ -13,24 +12,29 @@ Der Funktionsblock **AULI_TO_AUDI** ist ein Composite-Baustein, der die Konverti
 
 ### **Ereignis-Eingänge**
 Der FB besitzt keine separaten Ereignis-Eingänge. Das erforderliche Ereignis wird über den Socket-Adapter empfangen:
+
 - **E1** (im Socket `AULI_IN`): Startet die Konvertierung eines ULINT-Wertes.
 
 ### **Ereignis-Ausgänge**
 Es sind keine direkten Ereignis-Ausgänge vorhanden. Das Ereignis wird über den Plug-Adapter ausgegeben:
+
 - **E1** (im Plug `AUDI_OUT`): Signalisiert den Abschluss der Konvertierung und die Bereitstellung des UDINT-Wertes.
 
 ### **Daten-Eingänge**
 Daten werden ausschließlich über den Socket-Adapter bereitgestellt:
+
 - **D1** (im Socket `AULI_IN`): ULINT-Eingabewert (64-Bit unsigned integer).
 
 ### **Daten-Ausgänge**
 Daten werden über den Plug-Adapter ausgegeben:
+
 - **D1** (im Plug `AUDI_OUT`): UDINT-Ausgabewert (32-Bit unsigned integer).
 
 ### **Adapter**
 - **Socket AULI_IN**  
   Typ: `adapter::types::unidirectional::AULI`  
   Empfängt den zu konvertierenden ULINT-Wert und das zugehörige Ereignis.
+
 - **Plug AUDI_OUT**  
   Typ: `adapter::types::unidirectional::AUDI`  
   Stellt den konvertierten UDINT-Wert und das Abschluss-Ereignis bereit.

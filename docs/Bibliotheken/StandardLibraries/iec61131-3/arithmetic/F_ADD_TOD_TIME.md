@@ -1,13 +1,10 @@
 # F_ADD_TOD_TIME
 
-
-
 ![F_ADD_TOD_TIME](https://github.com/user-attachments/assets/5fc8767d-17c3-4d6f-b876-569edafd7152)
 
 * * * * * * * * * *
 
 ![F_ADD_TOD_TIME](F_ADD_TOD_TIME.svg)
-
 
 ## Einführung
 Der **F_ADD_TOD_TIME** ist ein spezialisierter Funktionsbaustein zur Addition von Zeitwerten zu Tageszeiten, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht präzise Zeitberechnungen mit TIME_OF_DAY und TIME-Datentypen.

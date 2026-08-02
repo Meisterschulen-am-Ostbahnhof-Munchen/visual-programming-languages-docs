@@ -1,7 +1,5 @@
 # AlPgnTxNew8B
 
-
-
 <img width="1322" height="263" alt="image" src="https://github.com/user-attachments/assets/de245c1c-6ab5-401a-8e03-94267bb4c75f" />
 
 * * * * * * * * * *
@@ -52,6 +50,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Zustandsübersicht
 Der Block durchläuft implizit folgende Hauptzustände:
+
 1.  **Nicht initialisiert**: Nach dem Start. Nur der `INIT`-Eingang ist aktiv.
 2.  **Initialisiert / Bereit**: Nach `INITO`. Der Block kann nun PGNs installieren (`install`).
 3.  **PGN installiert**: Nach erfolgreichem `installO`. Der Block ist bereit, Daten zu senden (`REQ`).
@@ -65,9 +64,6 @@ Der Block durchläuft implizit folgende Hauptzustände:
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`E_SEND` (Standard 61499)**: Ein generischer Sende-Baustein. `AlPgnTxNew8B` ist spezialisiert auf ISOBUS/CAN mit PGN-Verwaltung, Priorisierung und Zieladressierung, während `E_SEND` protokollagnostisch ist und eine Adapterverbindung benötigt.
 *   **Bestätigte Sende-Bausteine**: `AlPgnTxNew8B` sendet unbestätigt (`CNF`). Für bestätigte Kommunikation (Request/Response) wären andere, spezifischere TX-PGN-Blöcke oder Protokollstapel erforderlich.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

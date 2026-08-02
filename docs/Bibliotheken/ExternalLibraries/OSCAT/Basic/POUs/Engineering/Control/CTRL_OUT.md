@@ -2,8 +2,6 @@
 
 # CTRL_OUT
 
-
-
 Control Output with Limit and Manual Override
 
 CTRL_OUT adds to the CI input the value of OFFSET and returns the result

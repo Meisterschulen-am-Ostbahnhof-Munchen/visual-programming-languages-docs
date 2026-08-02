@@ -1,6 +1,5 @@
 # SPLIT_AD_INTO_AX
 
-
 ![SPLIT_AD_INTO_AX](./SPLIT_AD_INTO_AX.svg)
 
 * * * * * * * * * *

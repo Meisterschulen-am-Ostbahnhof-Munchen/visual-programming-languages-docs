@@ -1,6 +1,5 @@
 # SET_UDINT
 
-
 ![SET_UDINT](./SET_UDINT.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock arbeitet sehr einfach:
+
 1. Ein Ereignis am Eingang `REQ` startet die Verarbeitung.
 2. Der im Algorithmus `REQ` implementierte ST-Code führt die Zuweisung `OUT := IN;` aus.
 3. Nach der Zuweisung wird das Ereignis am Ausgang `CNF` gesendet, um den erfolgreichen Abschluss zu signalisieren.

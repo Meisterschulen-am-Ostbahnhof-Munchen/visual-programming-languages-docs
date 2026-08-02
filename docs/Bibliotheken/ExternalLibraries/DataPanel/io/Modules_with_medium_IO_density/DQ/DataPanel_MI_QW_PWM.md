@@ -2,8 +2,6 @@
 
 # DataPanel_MI_QW_PWM
 
-
-
 Output service interface function block for PWM output data (Data Mode 2)
 
 ## Interface

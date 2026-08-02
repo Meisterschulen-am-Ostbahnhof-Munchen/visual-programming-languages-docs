@@ -1,7 +1,5 @@
 # Q_StringValue
 
-
-
 ![Q_StringValue](https://user-images.githubusercontent.com/69573151/212334298-f7c6215c-a80c-491c-ad3e-6ba0e539f0d0.png)
 
 * * * * * * * * * *
@@ -87,11 +85,6 @@ Der **Q_StringValue** ist ein standardkonformer Funktionsbaustein zur dynamische
 | Längenprüfung | ✔             | ✔            | ✖               |
 | Rückmeldung   | ✔             | ✖            | ✔               |
 
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
@@ -105,6 +98,7 @@ Der Q_StringValue-Baustein bietet effiziente Textverwaltung:
 - **Flexibel**: Für alle Textobjekttypen
 
 Essential für:
+
 - Dynamische Prozessvisualisierung
 - Mehrsprachige Anwendungen
 - Echtzeit-Datendarstellung

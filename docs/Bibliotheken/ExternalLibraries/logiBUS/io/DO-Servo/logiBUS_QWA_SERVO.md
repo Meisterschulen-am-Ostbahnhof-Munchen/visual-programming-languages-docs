@@ -1,6 +1,5 @@
 # logiBUS_QWA_SERVO
 
-
 ![logiBUS_QWA_SERVO](./logiBUS_QWA_SERVO.svg)
 
 * * * * * * * * * *
@@ -49,6 +48,7 @@ Der **logiBUS_QWA_SERVO** ist ein Composite-Funktionsblock (CFB) für die Ausgab
 ## Funktionsweise
 
 Der Baustein arbeitet als Composite:  
+
 1. **Initialisierung** (`INIT`):  
    - Qualifizierer `QI`, Parameterstring `PARAMS` und der gewünschte Ausgang (`Output`) werden übergeben.  
    - Der interne FB `logiBUS_QW_SERVO` wird initialisiert; nach erfolgreicher Initialisierung wird `INITO` gesendet.  

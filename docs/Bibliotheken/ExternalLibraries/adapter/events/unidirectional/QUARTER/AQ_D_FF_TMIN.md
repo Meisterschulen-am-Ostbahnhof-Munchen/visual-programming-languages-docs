@@ -1,6 +1,5 @@
 # AQ_D_FF_TMIN
 
-
 ![AQ_D_FF_TMIN](./AQ_D_FF_TMIN.svg)
 
 * * * * * * * * * *

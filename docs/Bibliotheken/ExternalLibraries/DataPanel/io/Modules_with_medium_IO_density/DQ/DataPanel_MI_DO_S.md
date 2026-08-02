@@ -1,7 +1,5 @@
 # DataPanel_MI_DO_S
 
-
-
 DataPanel Modules with medium IO density DO Struct
 
 ## Structure
@@ -9,8 +7,6 @@ DataPanel Modules with medium IO density DO Struct
 | Name | Type | Initial Value |
 | :--- | :--- | :--- |
 | Pin | USINT | 255 |
-
-
 
 ## 🛠️ Zugehörige Übungen
 

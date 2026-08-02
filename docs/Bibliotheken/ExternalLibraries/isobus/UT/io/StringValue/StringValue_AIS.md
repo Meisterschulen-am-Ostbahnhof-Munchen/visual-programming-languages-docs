@@ -1,6 +1,5 @@
 # StringValue_AIS
 
-
 ![StringValue_AIS](./StringValue_AIS.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Der Baustein **StringValue_AIS** kapselt einen internen Dienstbaustein **StringV
 Ein REQ-Ereignis löst eine weitere Abfrage aus – der interne Baustein sendet die Anforderung (z. B. Lesen eines String-Werts) über den Adapter **IN** an die externe Ressource. Die Antwort wird asynchron über den Adapter empfangen (Ereignis IND oder CNF) und als STATUS-/QO-Ausgang zurückgegeben.
 
 Die Verknüpfungen sind im FB-Netzwerk fest verdrahtet:
+
 - **INIT** und **REQ** werden auf den internen Baustein **StringValue_IS** geführt.
 - Die Antwortereignisse **IND** und **CNF** des internen Bausteins werden auf den Adapter-Ausgang **IN.E1** gelegt.
 - Die Datenleitungen **QI**, **PARAMS**, **u16ObjId** speisen den internen Baustein, während **IN.D1** (vom Adapter) und **STATUS**/ **QO** an die Ausgänge des Bausteins weitergegeben werden.
@@ -61,6 +61,7 @@ Die Verknüpfungen sind im FB-Netzwerk fest verdrahtet:
 
 ## Zustandsübersicht
 Eine explizite Zustandsmaschine ist im XML nicht dargestellt. Der Baustein arbeitet ereignisgesteuert:
+
 - **IDLE**: Warten auf INIT.
 - **INIT durchgeführt**: Initialisierung abgeschlossen, wartet auf REQ.
 - **IN Bearbeitung**: Nach REQ wird die Anfrage an den Adapter gesendet; die Antwort erfolgt asynchron.

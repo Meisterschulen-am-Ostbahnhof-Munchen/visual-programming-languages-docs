@@ -1,7 +1,5 @@
 # logiBUS_IX
 
-
-
 <img width="1789" height="343" alt="image" src="https://github.com/user-attachments/assets/8c558337-facf-438d-87ba-69a1b8e110a9" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der Funktionsblock initialisiert sich über das INIT-Ereignis und kann anschlie�
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft typischerweise folgende Zustände:
+
 1. **Nicht initialisiert**: Vor der INIT-Anforderung
 2. **Initialisiert**: Nach erfolgreicher INIT-Verarbeitung
 3. **Bereit**: Kann REQ-Anfragen verarbeiten
@@ -59,13 +58,11 @@ Der Funktionsblock durchläuft typischerweise folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet logiBUS_IX:
+
 - Erweiterte Statusinformationen
 - Parametrierbare Service-Parameter
 - Spezifische logiBUS-Hardware-Integration
 - Umfangreichere Initialisierungs- und Bestätigungsmechanismen
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

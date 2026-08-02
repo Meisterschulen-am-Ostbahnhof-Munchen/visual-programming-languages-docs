@@ -1,7 +1,5 @@
 # AuxiliaryState_S
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `AuxiliaryState_S` ist eine strukturierte Datenstruktur (Struct), die den Zustand eines Hilfseingangs (Auxiliary Input) repräsentiert. Er wird im Kontext der ISOBUS-Schnittstelle (ISO 11783) für die Kommunikation in landwirtschaftlichen und forstwirtschaftlichen Maschinen verwendet. Dieser Datentyp kapselt sowohl den eigentlichen Wert des Eingangs als auch eine Steuerinformation für dessen zyklische Übertragung.
@@ -35,6 +33,7 @@ Der Datentyp dient als Container für Informationen über einen Hilfseingang. Da
 
 ## Anwendungsszenarien
 Dieser Struct wird typischerweise als Dateneingang oder -ausgang in Funktionsbausteinen (FBs) verwendet, die ISOBUS-Hilfseingänge verarbeiten oder steuern. Beispiele sind:
+
 *   FBs zum Auslesen des Zustands von Schaltern, Potentiometern oder Sensoren, die als Hilfseingänge konfiguriert sind.
 *   FBs, die Hilfseingangswerte verarbeiten und an andere Systemkomponenten weiterleiten.
 *   FBs, die basierend auf dem `bCyclic`-Flag entscheiden, ob ein Wert aktualisiert und gesendet werden muss.

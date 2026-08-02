@@ -1,9 +1,6 @@
 # sequence_E_08
 
-
-
 <img width="1143" height="415" alt="image" src="https://github.com/user-attachments/assets/4a56f7f9-4f54-4812-883b-f99753f1fbd2" />
-
 
 ![sequence_E_08_ecc](./sequence_E_08_ecc.svg)
 
@@ -59,6 +56,7 @@ Der Funktionsblock `sequence_E_08` ist ein Sequenzer mit acht Ausgängen, der du
 Der `sequence_E_08` ist als Basic-FB mit einer ausführlichen Execution Control Chart (ECC) implementiert. Die Logik folgt einer linearen Kette von Zuständen (`sState_01` bis `sState_08`), einem Start-/Ruhezustand (`sState_00`) und einem expliziten Reset-Zustand (`sRESET`).
 
 Bei jedem Zustandswechsel werden drei Aktionen ausgeführt:
+
 1.  **Exit-Aktion des vorherigen Zustands**: Ein `State_XX_X`-Algorithmus setzt den zugehörigen Datenausgang (`DO_Sx`) auf `FALSE`.
 2.  **Confirmation-Aktion des neuen Zustands**: Ein `State_XX_C`-Algorithmus setzt die `STATE_NR` und löst das `CNF`-Ereignis aus.
 3.  **Entry-Aktion des neuen Zustands**: Ein `State_XX_E`-Algorithmus setzt den zugehörigen Datenausgang (`DO_Sx`) auf `TRUE` und löst das entsprechende `EO_Sx`-Ereignis aus.

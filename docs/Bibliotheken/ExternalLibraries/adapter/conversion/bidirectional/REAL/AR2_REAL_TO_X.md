@@ -1,6 +1,5 @@
 # AR2_REAL_TO_X
 
-
 ![AR2_REAL_TO_X](./AR2_REAL_TO_X.svg)
 
 * * * * * * * * * *
@@ -59,6 +58,7 @@ Die tatsächliche Umrechnung (REAL ↔ AR2) erfolgt ausschließlich im Adapter �
   - REAL-Wert → Adapter → AR2-Objekt (Hinrichtung)  
   - AR2-Objekt → Adapter → REAL-Wert (Rückrichtung)  
   Der FB stellt beide Richtungen über die Ereignissteuerung `REQ` / `CNF` bereit.
+
 - **Keine Zustandslogik**: Der FB besitzt keinen eigenen Zustandsautomaten – alle Abläufe sind ereignisgesteuert und direkt.
 
 ## Zustandsübersicht
@@ -80,8 +80,10 @@ Da der FB keine interne Zustandsmaschine besitzt, liegt keine klassische Zustand
 
 - **AR2_REAL_TO_X vs. einfache Typkonvertierung (REAL_TO_INT etc.)**:  
   Einfache Konverter arbeiten direkt auf elementaren Datentypen. `AR2_REAL_TO_X` hingegen verwendet einen Adapter, der eine komplexe Umwandlung (z. B. in ein Array oder eine Struktur) kapselt.
+
 - **AR2_REAL_TO_X vs. direkte Adapter-Nutzung**:  
   Der FB vereinfacht die Handhabung, indem er die Signalverdrahtung (Ereignis- und Datenverbindungen) vornimmt. Der Anwender muss nur noch den FB instanziieren und mit seinem Code verbinden.
+
 - **AR2_REAL_TO_X vs. CONVERT-Adapter-Bausteine**:  
   Ähnliche Bausteine (z. B. aus der IEC 61499-Bibliothek) bieten meist generische Konvertierung. Dieser FB ist spezifisch für die Kopplung von REAL und AR2.
 

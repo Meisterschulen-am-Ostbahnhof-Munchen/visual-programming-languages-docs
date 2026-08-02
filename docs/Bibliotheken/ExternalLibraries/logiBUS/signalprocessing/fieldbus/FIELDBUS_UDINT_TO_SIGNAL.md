@@ -1,6 +1,5 @@
 # FIELDBUS_UDINT_TO_SIGNAL
 
-
 ![FIELDBUS_UDINT_TO_SIGNAL](./FIELDBUS_UDINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
@@ -38,6 +37,7 @@ Keine.
 
 ## Funktionsweise
 Sobald ein Ereignis am Eingang **REQ** eintrifft, wird der Algorithmus ausgeführt:
+
 1. Der Wert von **IN** wird mit dem vordefinierten Grenzwert `VALID_SIGNAL_DW` verglichen.
 2. Falls **IN** kleiner oder gleich diesem Grenzwert ist, wird **OUT** auf **IN** gesetzt und **VALID** auf `TRUE`.
 3. Andernfalls wird **OUT** auf `0` (UDINT) gesetzt und **VALID** auf `FALSE`.

@@ -1,6 +1,5 @@
 # ALI_MUX_3
 
-
 ![ALI_MUX_3](./ALI_MUX_3.svg)
 
 * * * * * * * * * *
@@ -45,6 +44,7 @@ Der Funktionsblock **ALI_MUX_3** ist ein generischer Multiplexer für ALI-Datens
 ## Funktionsweise
 
 Der FB arbeitet ereignisgesteuert. Ein gültiges Ereignis am Eingang REQ löst folgende Schritte aus:
+
 1. Der aktuelle Wert des Daten-Eingangs K wird gelesen.
 2. Abhängig von K wird einer der drei Socket-Adapter (IN1 für K=0, IN2 für K=1, IN3 für K=2) auf den Plug-Adapter OUT geschaltet.
 3. Nach erfolgter Durchschaltung wird der Ereignisausgang CNF ausgegeben.

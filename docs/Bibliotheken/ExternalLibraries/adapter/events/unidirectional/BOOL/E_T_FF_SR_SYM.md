@@ -1,6 +1,5 @@
 # E_T_FF_SR_SYM
 
-
 ![E_T_FF_SR_SYM](./E_T_FF_SR_SYM.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Der Baustein arbeitet als endlicher Automat mit drei Zuständen: **START**, **SE
 - Im **RESET**-Zustand führt ein **S**-Ereignis oder ein **CLK**-Ereignis in den **SET**-Zustand. Ein **R**-Ereignis würde den Zustand halten.
 
 Bei jedem Zustandswechsel wird der entsprechende Algorithmus ausgeführt:
+
 - **SET**: `Q := TRUE;`
 - **RESET**: `Q := FALSE;`
 

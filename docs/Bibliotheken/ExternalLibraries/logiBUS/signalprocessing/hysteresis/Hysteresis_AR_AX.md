@@ -1,6 +1,5 @@
 # Hysteresis_AR_AX
 
-
 ![Hysteresis_AR_AX](./Hysteresis_AR_AX.svg)
 
 * * * * * * * * * *
@@ -63,6 +62,7 @@ Der FB arbeitet als endlicher Automat (ECC) mit folgenden Zuständen und Überg�
 3. **sOFF**  
    Aktion: Ausführen von `alOff` – setzt `OUTPUT.D1 := FALSE; QO := QI`.  
    Übergänge:
+
    - Bei erneutem `INIT` mit `QI = FALSE` → **DeInit** (Deinitialisierung).
    - Bei wiederholtem Ereignis `INPUT.E1` **und** der Bedingung  
      `INPUT.D1 >= THRESHOLD.D1 + (ABS(HYSTERESIS.D1) / 2.0)` → **sON** (Einschalten).
@@ -70,6 +70,7 @@ Der FB arbeitet als endlicher Automat (ECC) mit folgenden Zuständen und Überg�
 4. **sON**  
    Aktion: Ausführen von `alOn` – setzt `OUTPUT.D1 := TRUE`, sofern `QI = TRUE`; `QO` wird auf `QI` gesetzt.  
    Übergänge:
+
    - Bei erneutem `INIT` mit `QI = FALSE` → **DeInit**.
    - Bei wiederholtem Ereignis `INPUT.E1` **und** der Bedingung  
      `INPUT.D1 < THRESHOLD.D1 - (ABS(HYSTERESIS.D1) / 2.0)` → **sOFF** (Ausschalten).

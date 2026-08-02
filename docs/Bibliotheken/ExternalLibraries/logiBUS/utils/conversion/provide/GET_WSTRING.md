@@ -1,6 +1,5 @@
 # GET_WSTRING
 
-
 ![GET_WSTRING](./GET_WSTRING.svg)
 
 * * * * * * * * * *

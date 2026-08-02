@@ -1,6 +1,5 @@
 # AW_DEMUX_5
 
-
 ![AW_DEMUX_5](./AW_DEMUX_5.svg)
 
 * * * * * * * * * *
@@ -60,6 +59,7 @@ Keine.
 ## Funktionsweise
 
 Der Baustein arbeitet nach dem Demultiplex-Prinzip:
+
 1. Der Socket **IN** empfängt kontinuierlich Daten eines unidirektionalen AW-Adapters.
 2. Bei einem **REQ**-Ereignis wird der Wert von **K** ausgewertet.
 3. Abhängig vom Index (1..5) wird die Verbindung vom **IN**-Socket auf den entsprechenden **OUT**_n_-Plug geschaltet.

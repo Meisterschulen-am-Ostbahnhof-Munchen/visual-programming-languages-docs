@@ -1,6 +1,5 @@
 # NextVT
 
-
 ![NextVT](./NextVT.svg)
 
 * * * * * * * * * *

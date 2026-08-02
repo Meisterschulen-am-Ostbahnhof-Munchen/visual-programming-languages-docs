@@ -1,7 +1,5 @@
 # E_MUX_2
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -44,9 +42,6 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 - **Zusammenfassen von Befehlen**: Zwei verschiedene Taster (z.B. "Start Vorwärts" und "Start Rückwärts") lösen denselben Prozess aus, aber der Prozess muss wissen, welcher Taster gedrückt wurde.
 - **Kombinierte Alarme**: Zwei verschiedene Alarme werden zu einer zentralen Alarmroutine geleitet, die dann anhand von `K` den spezifischen Alarmtext anzeigt.
 - **Vereinfachung von Logik**: Statt zwei separate Pfade für ähnliche Logik zu haben, werden die auslösenden Ereignisse zusammengeführt und der Index `K` wird als Parameter für die nachfolgende Logik verwendet.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

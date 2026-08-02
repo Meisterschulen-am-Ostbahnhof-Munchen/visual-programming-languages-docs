@@ -1,6 +1,5 @@
 # SET_LINT
 
-
 ![SET_LINT](./SET_LINT.svg)
 
 * * * * * * * * * *
@@ -34,6 +33,7 @@ Keine.
 
 ## Funktionsweise
 Das Verhalten des Bausteins ist auf einen einzelnen Schritt reduziert:
+
 1. Ein Ereignis am Eingang **REQ** löst die interne Verarbeitung aus.
 2. Der Algorithmus führt die Zuweisung `OUT := IN` aus. Dadurch wird der Wert des Dateneingangs `IN` in die InOut‑Variable `OUT` kopiert.
 3. Nach Abschluss der Zuweisung wird das Ereignis **CNF** gesendet, um die erfolgreiche Ausführung zu signalisieren.

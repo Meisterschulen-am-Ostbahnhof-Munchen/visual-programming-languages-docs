@@ -1,7 +1,5 @@
 # logiBUS_LED_strip_QX
 
-
-
 <img width="1879" height="394" alt="image" src="https://github.com/user-attachments/assets/3a675690-c734-4d38-bc52-a9ff1d611d4f" />
 
 * * * * * * * * * *
@@ -48,6 +46,7 @@ Der Funktionsblock ermöglicht die Steuerung von LED-Streifen über eine standar
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über zwei Hauptzustände:
+
 1. **Initialisierungszustand**: Wird durch INIT-Ereignis aktiviert
 2. **Betriebszustand**: Verarbeitet REQ-Anfragen nach erfolgreicher Initialisierung
 
@@ -60,9 +59,6 @@ Der Funktionsblock verfügt über zwei Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_LED_strip_QX erweiterte Funktionalität für LED-spezifische Anwendungen, insbesondere durch die integrierte Farb- und Frequenzsteuerung sowie die Möglichkeit, mehrere LED-Streifen unabhängig zu adressieren.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

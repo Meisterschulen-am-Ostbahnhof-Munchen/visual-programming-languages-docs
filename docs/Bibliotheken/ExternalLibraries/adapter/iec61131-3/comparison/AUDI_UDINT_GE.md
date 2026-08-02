@@ -1,6 +1,5 @@
 # AUDI_UDINT_GE
 
-
 ![AUDI_UDINT_GE](./AUDI_UDINT_GE.svg)
 
 * * * * * * * * * *
@@ -41,10 +40,12 @@ Keine direkten Datenausgänge. Der Ergebniswert (BOOL) wird über den Ausgangsad
 ## Funktionsweise
 
 Der Baustein arbeitet ereignisgesteuert. Ein Vergleich wird ausgelöst durch:
+
 - ein Ereignis am Eingang `REQ` oder
 - ein Ereignis am Adaptereingang `IN1.E1`.
 
 Intern wird der Standard-Funktionsblock `F_GE` (IEC 61131‑3) für den Datentyp UDINT verwendet. Die Eingabedaten stammen von:
+
 - `IN1.D1` → erster Operand,
 - `IN2` → zweiter Operand.
 

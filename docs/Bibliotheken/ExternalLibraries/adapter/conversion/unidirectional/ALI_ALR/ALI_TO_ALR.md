@@ -1,6 +1,5 @@
 # ALI_TO_ALR
 
-
 ![ALI_TO_ALR](./ALI_TO_ALR.svg)
 
 *(Bild nicht verfügbar)*

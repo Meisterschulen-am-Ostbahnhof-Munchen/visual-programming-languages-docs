@@ -1,6 +1,5 @@
 # ADI_FB_CTU
 
-
 ![ADI_FB_CTU](./ADI_FB_CTU.svg)
 
 * * * * * * * * * *

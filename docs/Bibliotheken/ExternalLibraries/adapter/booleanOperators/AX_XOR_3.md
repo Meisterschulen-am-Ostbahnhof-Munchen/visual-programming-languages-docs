@@ -1,7 +1,5 @@
 # AX_XOR_3
 
-
-
 <img width="1009" height="299" alt="image" src="https://github.com/user-attachments/assets/716a2f15-e5b5-4f7f-b30c-42b13251bace" />
 
 * * * * * * * * * *
@@ -36,6 +34,7 @@ Der AX_XOR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der bool
 
 ## Funktionsweise
 Der Funktionsblock berechnet die XOR-Verknüpfung für drei Eingangssignale. Die XOR-Operation gibt genau dann ein "wahr"-Signal (true) aus, wenn eine ungerade Anzahl der Eingänge "wahr" ist. Bei drei Eingängen bedeutet dies:
+
 - Ergebnis ist true, wenn genau einer oder alle drei Eingänge true sind
 - Ergebnis ist false, wenn keine oder genau zwei Eingänge true sind
 
@@ -58,11 +57,6 @@ Der Baustein besitzt keine internen Zustände und arbeitet statisch. Die Ausgabe
 Im Vergleich zu Standard-XOR-Bausteinen mit zwei Eingängen bietet AX_XOR_3 die Erweiterung auf drei Eingänge. Während ein 2-Eingang-XOR nur bei ungleichen Eingängen true liefert, berücksichtigt der 3-Eingang-XOR die Parität aller drei Signale.
 
 Vergleich mit [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,6 +1,5 @@
 # StringValue_IWS
 
-
 ![StringValue_IWS](./StringValue_IWS.svg)
 
 * * * * * * * * * *

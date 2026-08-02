@@ -1,7 +1,5 @@
 # Datentyp-Detail: LWORD
 
-
-
 ## Beschreibung
 Bitfolge der Länge 64
 

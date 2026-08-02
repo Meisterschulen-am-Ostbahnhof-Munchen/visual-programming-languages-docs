@@ -1,7 +1,5 @@
 # SYS_ONTIME
 
-
-
 <img width="1639" height="206" alt="image" src="https://github.com/user-attachments/assets/08d09491-2560-44d8-be18-94d431bac08b" />
 
 * * * * * * * * * *
@@ -53,9 +51,6 @@ Anschließend überwacht der Block kontinuierlich die Systemressource. Sobald si
 *   **`E_CYCLE` / `E_DELAY`**: Diese Blöcke erzeugen selbst periodische Ereignisse oder Verzögerungen. `SYS_ONTIME` hingegen *liest* einen passiv vorhandenen, kumulativen Zeitwert aus dem System aus.
 *   **`E_SR` (Set-Reset) mit Zähler**: Ein manuell aufgebauter Zähler für Einschaltvorgänge könnte ähnliche Daten liefern, wäre aber anwendungsseitig implementiert und nicht systemseitig persistent. `SYS_ONTIME` bietet einen zuverlässigen, systemgeführten und meist auch nach einem Neustart persistenten Wert.
 *   **Andere SYS_*-Blöcke** (wie `SYS_TIME`): Während `SYS_TIME` die aktuelle Uhrzeit und das Datum liefert, stellt `SYS_ONTIME` spezifisch die reine Betriebsdauer einer Ressource bereit.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

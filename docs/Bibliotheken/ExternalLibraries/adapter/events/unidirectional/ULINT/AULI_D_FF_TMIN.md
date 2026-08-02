@@ -1,6 +1,5 @@
 # AULI_D_FF_TMIN
 
-
 ![AULI_D_FF_TMIN](./AULI_D_FF_TMIN.svg)
 
 * * * * * * * * * *

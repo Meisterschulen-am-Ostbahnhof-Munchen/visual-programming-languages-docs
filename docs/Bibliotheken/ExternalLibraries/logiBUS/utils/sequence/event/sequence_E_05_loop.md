@@ -1,9 +1,6 @@
 # sequence_E_05_loop
 
-
-
 <img width="1437" height="390" alt="image" src="https://github.com/user-attachments/assets/58d26053-5e20-4151-bbb6-8675bbc30ab6" />
-
 
 ![sequence_E_05_loop_ecc](./sequence_E_05_loop_ecc.svg)
 
@@ -49,6 +46,7 @@ Der Funktionsblock `sequence_E_05_loop` implementiert eine zyklische Sequenz mit
 Der FB ist als Basic Function Block (BFB) mit einer Execution Control Chart (ECC) implementiert. Die interne Logik basiert auf sieben Zuständen: einem initialen Startzustand (`xSTART`), fünf aktiven Zuständen (`sState_01` bis `sState_05`) und einem separaten Reset-Zustand (`sRESET`).
 
 Bei Eintritt in einen aktiven Zustand werden drei Aktionen nacheinander ausgeführt:
+
 1.  **Exit-Aktion des vorherigen Zustands:** Der entsprechende `State_XX_X`-Algorithmus setzt den zugehörigen Datenausgang (`DO_Sx`) auf `FALSE`.
 2.  **Confirmation-Aktion:** Der `State_XX_C`-Algorithmus setzt die Zustandsnummer `STATE_NR` und löst das `CNF`-Ereignis aus.
 3.  **Entry-Aktion des neuen Zustands:** Der `State_XX_E`-Algorithmus setzt den zugehörigen Datenausgang (`DO_Sx`) auf `TRUE` und löst das entsprechende Ereignis `EO_Sx` aus.
@@ -63,6 +61,7 @@ Ein `RESET`-Ereignis führt in den `sRESET`-Zustand. Hier werden alle potenziell
 
 ## Zustandsübersicht
 Die ECC besteht aus folgenden Zuständen und möglichen Übergängen:
+
 *   **xSTART:** Initialer, inaktiver Zustand. Übergang zu `sState_01` via `START_S1`.
 *   **sState_01:** Erster aktiver Zustand. Übergänge zu `sState_02` via `S1_S2` oder zu `sRESET` via `RESET`.
 *   **sState_02:** Zweiter aktiver Zustand. Übergänge zu `sState_03` via `S2_S3` oder zu `sRESET` via `RESET`.

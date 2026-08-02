@@ -1,7 +1,5 @@
 # Aux_QD
 
-
-
 <img width="1484" height="176" alt="image" src="https://github.com/user-attachments/assets/ddafadb6-6b79-43d3-9d30-dc888d6fca95" />
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ Der Aux_QD-Block verarbeitet Doppelwort-Daten (32-Bit) und gibt diese über Auxi
 
 ## Zustandsübersicht
 Der Block verfügt über zwei Hauptzustände:
+
 1. **Initialisierungszustand**: Verarbeitung der INIT-Anfrage mit Parameterkonfiguration
 2. **Betriebszustand**: Verarbeitung von REQ-Anfragen mit Datenausgabe
 

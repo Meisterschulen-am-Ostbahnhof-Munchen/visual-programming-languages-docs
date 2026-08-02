@@ -1,6 +1,5 @@
 # AS_D_FF_HYS_TMIN
 
-
 ![AS_D_FF_HYS_TMIN](./AS_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Keine direkten Datenausgänge – das Ausgangssignal wird über den Adapter **Q*
 
 ## Funktionsweise
 Der Baustein arbeitet intern mit einem vordefinierten Funktionsbaustein **E_D_FF_ANY_HYS_TMIN**. Beim Ereignis **INIT** werden die Parameter **HYSTERESIS** und **Tmin** übernommen. Das eingehende Ereignis (über den Adapter **I**, Leitung **E1**) triggert den Flipflop‑Clock, während der zugehörige Datenwert (über **I.D1**) übernommen wird. Der Ausgang **Q.D1** wird nur dann aktualisiert, wenn  
+
 - der neue Datenwert um mindestens die **Hysterese** vom aktuell gespeicherten Wert abweicht, und  
 - seit dem letzten Ereignis mindestens die Zeit **Tmin** vergangen ist.  
 

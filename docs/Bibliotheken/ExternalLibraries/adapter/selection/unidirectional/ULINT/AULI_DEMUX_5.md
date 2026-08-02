@@ -1,6 +1,5 @@
 # AULI_DEMUX_5
 
-
 ![AULI_DEMUX_5](./AULI_DEMUX_5.svg)
 
 * * * * * * * * * *
@@ -32,11 +31,13 @@ Keine (die Datenweitergabe erfolgt über die AULI-Adapter).
 ### **Adapter**
 - **Socket (Eingang):** `IN` – Typ `adapter::types::unidirectional::AULI`  
   Empfängt das zu verteilende Signal.
+
 - **Plugs (Ausgänge):** `OUT1`…`OUT5` – jeweils Typ `adapter::types::unidirectional::AULI`  
   Die fünf möglichen Zieladapter für das Eingangssignal.
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Ein ansteigende Flanke am Ereigniseingang **REQ** löst die Verarbeitung aus.
 2. Der Wert des Dateneingangs **K** wird ausgelesen. Dieser muss im Bereich 1 bis 5 liegen (das Verhalten bei Werten außerhalb ist nicht definiert).
 3. Das am **IN**-Adapter anliegende AULI-Signal wird auf den durch `K` bestimmten Adapter **OUT1**…**OUT5** durchverbunden.

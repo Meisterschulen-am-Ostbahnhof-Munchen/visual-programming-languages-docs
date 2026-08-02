@@ -1,6 +1,5 @@
 # SET_LREAL
 
-
 ![SET_LREAL](./SET_LREAL.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Bei einem Ereignis am Eingang **REQ** wird der Algorithmus ausgeführt, der den 
 
 ## Zustandsübersicht
 Der Baustein besteht aus einem einzigen Zustand **REQ**:
+
 - **REQ**: Wartet auf das Eintreffen des REQ-Ereignisses. Führt dann den Algorithmus aus und sendet CNF. Nach dem Senden kehrt er wieder in den Zustand REQ zurück (implizit, da keine weiteren Zustände definiert sind).
 
 Es gibt keine Verzweigungen oder Zeitsteuerungen.

@@ -1,6 +1,5 @@
 # ATM_MUX_4
 
-
 ![ATM_MUX_4](./ATM_MUX_4.svg)
 
 * * * * * * * * * *
@@ -65,6 +64,7 @@ Die Adapter sind als unidirektionale ATM‑Schnittstellen typisiert. Der Multipl
 
 ## Zustandsübersicht
 Der `ATM_MUX_4` besitzt keine explizit modellierte Zustandsmaschine. Das Verhalten beschränkt sich auf:
+
 - **Warten auf REQ**: Der Ausgang ist mit dem zuletzt gesetzten Eingang verbunden.
 - **Ausführung bei REQ**: Der Ausgang wird auf den durch `K` bestimmten Eingang umgeschaltet und `CNF` wird ausgegeben.
 

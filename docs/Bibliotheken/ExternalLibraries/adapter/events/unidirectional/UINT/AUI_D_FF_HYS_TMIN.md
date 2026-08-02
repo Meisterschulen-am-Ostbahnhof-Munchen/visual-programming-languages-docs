@@ -1,6 +1,5 @@
 # AUI_D_FF_HYS_TMIN
 
-
 ![AUI_D_FF_HYS_TMIN](./AUI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
@@ -49,6 +48,7 @@ Der Adapter `AUI` ist ein unidirektionaler Typ, der ein Ereignis und einen Daten
 
 2. **Betrieb**  
    Der interne FB `E_D_FF_ANY_HYS_TMIN` arbeitet als getaktetes D‑Flip‑Flop mit Hysterese und Zeitbegrenzung:
+
    - Ein Ereignis an `I.E1` (Clock) übernimmt den momentanen Datenwert von `I.D1`.
    - Der übernommene Wert wird nur dann als gültiger Ausgang `Q.D1` weitergegeben, wenn der Abstand zum letzten gültigen Ereignis größer oder gleich `Tmin` ist.
    - Zusätzlich wird der Wert mit einer Hysterese (band `HYSTERESIS`) geglättet: Kleine Änderungen unterhalb der Hystereseschwelle werden unterdrückt.

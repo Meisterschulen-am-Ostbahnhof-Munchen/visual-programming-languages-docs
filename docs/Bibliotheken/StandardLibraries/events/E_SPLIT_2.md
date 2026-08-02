@@ -1,7 +1,5 @@
 # E_SPLIT_2
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -22,6 +20,7 @@ Der `E_SPLIT_2` ist ein grundlegender Funktionsbaustein nach IEC 61499, der ein 
 
 ## Funktionsweise
 Wenn ein Ereignis am Eingang `EI` eintrifft, löst der Baustein sofort nacheinander die beiden Ausgangsereignisse aus. Die Reihenfolge ist dabei garantiert:
+
 1.  Zuerst wird `EO1` ausgelöst.
 2.  Unmittelbar danach wird `EO2` ausgelöst.
 
@@ -34,11 +33,6 @@ Wenn ein Ereignis am Eingang `EI` eintrifft, löst der Baustein sofort nacheinan
 - **Reset und Start**: Ein einzelnes `RESET`-Ereignis kann verwendet werden, um zuerst einen Wert zurückzusetzen (`EO1`) und dann einen Prozess neu zu starten (`EO2`).
 - **Lesen und Verarbeiten**: Ein `REQ`-Ereignis kann dazu führen, zuerst einen Sensorwert zu lesen (`EO1`) und dann die Berechnung mit dem neuen Wert anzustoßen (`EO2`).
 - **Ablaufsteuerung**: Anstoßen von zwei aufeinanderfolgenden Aktionen mit einem einzigen Trigger-Ereignis.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

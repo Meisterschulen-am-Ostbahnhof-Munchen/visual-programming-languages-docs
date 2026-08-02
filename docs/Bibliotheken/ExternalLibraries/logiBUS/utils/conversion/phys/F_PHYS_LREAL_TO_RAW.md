@@ -1,6 +1,5 @@
 # F_PHYS_LREAL_TO_RAW
 
-
 ![F_PHYS_LREAL_TO_RAW](./F_PHYS_LREAL_TO_RAW.svg)
 
 *Bild nicht verfügbar*
@@ -85,6 +84,7 @@ Der Funktionsblock besitzt keine explizite Zustandsmaschine. Die Berechnung wird
 
 Typische Alternativen sind selbstgeschriebene Rechenfunktionen oder generische Konvertierungsbausteine.  
 Der F_PHYS_LREAL_TO_RAW bietet folgende Vorteile:  
+
 - **Vorgegebene Parametrierung** über die Struktur `NumericObjectPool_S` (ObjID, Skalierung, Offset, Dezimalstellen).  
 - **Integrierte Sättigung** und Grenzwertüberwachung.  
 - **Wiederverwendbar** in allen logiBUS‑Projekten.  

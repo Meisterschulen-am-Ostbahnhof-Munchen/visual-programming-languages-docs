@@ -2,7 +2,6 @@
 
 Dieser Funktionsbaustein konvertiert ein Byte-Array der Länge 8 (8 Bytes) in zwei 32‑Bit-Datenwörter (DWORDs). Er dient zur Aufteilung eines zusammenhängenden 8‑Byte-Datenblocks in zwei 4‑Byte große Integer‑Werte.
 
-
 ![ARR08B_TO_DWORDS](./ARR08B_TO_DWORDS.svg)
 
 * * * * * * * * * *

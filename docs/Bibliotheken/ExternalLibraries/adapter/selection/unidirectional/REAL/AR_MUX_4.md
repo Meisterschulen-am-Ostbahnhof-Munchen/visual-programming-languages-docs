@@ -1,6 +1,5 @@
 # AR_MUX_4
 
-
 ![AR_MUX_4](./AR_MUX_4.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Keine Daten-Ausgänge vorhanden.
 
 ## Funktionsweise
 Beim Eintreffen eines **REQ**-Ereignisses wird der aktuelle Wert des Daten-Eingangs **K** ausgewertet. Der Baustein verbindet den Ausgangsadapter **OUT** mit demjenigen Eingangsadapter, dessen Index dem Wert von K entspricht:
+
 - K = 0 → **IN1** wird auf OUT durchgeschaltet.
 - K = 1 → **IN2** wird auf OUT durchgeschaltet.
 - K = 2 → **IN3** wird auf OUT durchgeschaltet.

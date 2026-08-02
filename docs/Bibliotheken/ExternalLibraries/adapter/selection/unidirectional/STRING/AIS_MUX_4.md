@@ -1,6 +1,5 @@
 # AIS_MUX_4
 
-
 ![AIS_MUX_4](./AIS_MUX_4.svg)
 
 * * * * * * * * * *
@@ -54,6 +53,7 @@ _Keine. Die Ausgabedaten werden über den Adapter–Plug `OUT` bereitgestellt._
 
 ## Zustandsübersicht
 Der Baustein besitzt keine explizite Zustandsmaschine. Das Verhalten ist rein funktional:
+
 - **Ruhezustand**: Es wird kein Ereignis bearbeitet; der Ausgang `OUT` behält den zuletzt gesetzten Wert.
 - **Auswahlausführung**: Nach Empfang von `REQ` wird der neue Index übernommen und `OUT` aktualisiert; anschließend wird `CNF` ausgegeben.
 

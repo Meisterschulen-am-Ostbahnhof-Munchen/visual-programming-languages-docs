@@ -1,6 +1,5 @@
 # AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE
 
-
 ![AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE](./AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE.svg)
 
 * * * * * * * * * *
@@ -49,10 +48,13 @@ Nach einer erfolgreichen Initialisierung (Ereignis INIT → INITO) beginnt der F
 
 1. **Byteweise Skalierung**  
    Das obere Byte (Bits 15…8) wird mit `SCALE_HIGH` multipliziert, das untere Byte (Bits 7…0) mit `SCALE_LOW`.
+
 2. **Offsetaddition**  
    Die Summe beider skalierten Bytewerte wird um den konfigurierten `OFFSET` erhöht.
+
 3. **Ausgabe**  
    Das Ergebnis wird an den **OUT**-Adapter übergeben (Ereignis **OUT.E1** mit Daten **OUT.D1**).
+
 4. **Gültigkeitshandling**  
    Parallel wird ein interner Flip‑Flop (`E_D_FF`) getaktet. Der Gültigkeitsstatus (Signal **VALID**) wird dabei aus dem internen **VALID**-Ausgang des Skalierungsmoduls übernommen und bleibt bis zum nächsten gültigen Signal erhalten.
 
@@ -62,10 +64,13 @@ Das interne Flip‑Flop sorgt dafür, dass das Gültigkeitssignal erst beim näc
 
 - **Compound Scaling**  
   Die getrennte Skalierung von oberem und unterem Byte erlaubt die Verarbeitung von Feldbussignalen, die in zwei unterschiedlich skalierten Bytehälften codiert sind (z. B. Temperatur- oder Druckwerte mit Spanne und Auflösung).
+
 - **Integrierter Flip‑Flop**  
   Der Gültigkeitsausgang wird über ein flankengesteuertes D‑Flip‑Flop realisiert. Dadurch wird das Gültigkeitssignal nur bei einem neuen Eingangsereignis aktualisiert, was eine stabile Ausgabe gewährleistet.
+
 - **Konfigurierbare Parameter**  
   Skalierung und Offset sind über die Daten‑Eingänge frei einstellbar und können zur Laufzeit geändert werden.
+
 - **Initialisierung**  
   Vor der ersten Nutzung muss der FB mit dem INIT‑Ereignis initialisiert werden. Dabei werden die internen Zustände zurückgesetzt.
 
@@ -84,8 +89,10 @@ Der Zustand wechselt mit jedem neuen Eingangsereignis (also mit jeder Übergabe 
 
 - **Analogwerterfassung über Feldbus**  
   Ein Feldbusgerät sendet einen 16‑Bit‑Rohwert, bei dem das obere Byte einen Grobwert (z. B. 0…255) und das untere Byte einen Feinwert (z. B. 0…1000) darstellt. Mit `SCALE_HIGH` und `SCALE_LOW` wird der physikalische Messwert berechnet.
+
 - **Prozessdatenaufbereitung**  
   In einer Steuerung werden mehrere skalierte Signale benötigt, deren Gültigkeit überwacht werden muss. Der FB vereint Skalierung und Validierung in einem Baustein.
+
 - **Gateway‑Funktion**  
   Der FB kann als Konverter zwischen einem Feldbusprotokoll (Wort‑basiert) und einem internen Signalprotokoll (mit Gültigkeitsflag) eingesetzt werden.
 
@@ -93,8 +100,10 @@ Der Zustand wechselt mit jedem neuen Eingangsereignis (also mit jeder Übergabe 
 
 - **FIELDBUS_WORD_TO_SIGNAL** (einfach)  
   Dieser Baustein skaliert das gesamte 16‑Bit‑Wort mit einem einzigen Faktor. Der Compound‑Baustein erlaubt dagegen eine byteweise angepasste Skalierung.
+
 - **SCALE** (allgemein)  
   Ein universeller Skalierungsbaustein ohne Feldbusschnittstelle. Der vorliegende FB integriert die Feldbus‑Adapter und das Gültigkeitsmanagement.
+
 - **BADAPTER_STATUS**  
   Liefert nur einen Status über die Gültigkeit, ohne Skalierung. Der Compound‑Baustein kombiniert beide Funktionen.
 

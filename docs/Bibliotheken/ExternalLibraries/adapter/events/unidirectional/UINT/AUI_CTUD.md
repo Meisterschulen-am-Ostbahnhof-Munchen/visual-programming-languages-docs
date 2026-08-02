@@ -1,6 +1,5 @@
 # AUI_CTUD
 
-
 ![AUI_CTUD](./AUI_CTUD.svg)
 
 * * * * * * * * * *

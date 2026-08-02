@@ -1,6 +1,5 @@
 # AUDI_TO_AUI
 
-
 ![AUDI_TO_AUI](./AUDI_TO_AUI.svg)
 
 *Kein Bild vorhanden.*
@@ -12,18 +11,22 @@ Der Funktionsblock `AUDI_TO_AUI` ist ein Composite‑Baustein, der einen AUDI‑
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Der FB besitzt keinen direkten Ereignis-Eingang auf der oberen Ebene. Ereignisse werden über den Socket `AUDI_IN` empfangen:
+
 - **E1** – Auslöser für die Konvertierung eines neuen Datenwerts.
 
 ### **Ereignis-Ausgänge**
 Der FB besitzt keinen direkten Ereignis-Ausgang auf der oberen Ebene. Ereignisse werden über den Plug `AUI_OUT` gesendet:
+
 - **E1** – Bestätigung, dass der konvertierte Wert am Ausgang anliegt.
 
 ### **Daten-Eingänge**
 Der FB besitzt keinen direkten Daten-Eingang auf der oberen Ebene. Daten werden über den Socket `AUDI_IN` empfangen:
+
 - **D1** (`UDINT`) – Der umzuwandelnde Eingangswert.
 
 ### **Daten-Ausgänge**
 Der FB besitzt keinen direkten Daten-Ausgang auf der oberen Ebene. Daten werden über den Plug `AUI_OUT` ausgegeben:
+
 - **D1** (`UINT`) – Der konvertierte Ausgangswert.
 
 ### **Adapter**

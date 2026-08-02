@@ -1,7 +1,5 @@
 # Datentyp-Detail: DATE_AND_TIME (DT)
 
-
-
 ## Beschreibung
 Der Datentyp **DATE_AND_TIME** (kurz **DT**) kombiniert Kalenderdatum und Tageszeit in einem einzigen Element.
 

@@ -1,9 +1,6 @@
 # ST08X_TO_ARR08X
 
-
-
 <img width="1352" height="215" alt="image" src="https://github.com/user-attachments/assets/d556a75a-b21c-4bf2-b1c3-909baea1e51e" />
-
 
 ![ST08X_TO_ARR08X](./ST08X_TO_ARR08X.svg)
 
@@ -29,6 +26,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 Der Funktionsblock `ST08X_TO_ARR08X` führt eine direkte und deterministische Umwandlung der Eingangsdaten durch. Wenn das `REQ`-Ereignis empfangen wird, werden die einzelnen BOOL-Felder der Eingangsstruktur `IN` dem entsprechenden Index des `OUT`-Arrays zugewiesen:
+
 *   `IN.X_00` wird `OUT[0]` zugewiesen.
 *   `IN.X_01` wird `OUT[1]` zugewiesen.
 *   ...

@@ -1,7 +1,5 @@
 # F_BOOL_TO_UINT
 
-
-
 <img width="1230" height="183" alt="F_BOOL_TO_UINT" src="https://github.com/user-attachments/assets/0ed51abc-df99-4646-bb36-6243ba00a996" />
 
 * * * * * * * * * *
@@ -29,6 +27,7 @@ Der Funktionsblock `F_BOOL_TO_UINT` dient der Konvertierung eines booleschen Wer
 
 ## Funktionsweise
 Der Funktionsblock führt die Konvertierung durch, indem er den booleschen Wert `IN` in einen vorzeichenlosen Integerwert `OUT` umwandelt. Die Konvertierung erfolgt gemäß der folgenden Regel:
+
 - `FALSE` wird zu `0`
 - `TRUE` wird zu `1`
 
@@ -47,9 +46,6 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung wird bei jede
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_BOOL_TO_INT` oder `F_BOOL_TO_REAL` bieten Konvertierungen in andere Datentypen, aber `F_BOOL_TO_UINT` ist speziell für vorzeichenlose Integerwerte optimiert.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

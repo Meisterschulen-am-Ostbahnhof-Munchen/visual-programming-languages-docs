@@ -1,7 +1,5 @@
 # Über Eclipse 4diac™
 
-
-
 ## Gedicht über 4diac im Stile Göthes
 
 Im 4diac fließen Ströme von Code,

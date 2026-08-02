@@ -1,7 +1,5 @@
 # E_RESTART
 
-
-
 ![IEC 61499 Service Interface Symbol](https://user-images.githubusercontent.com/113907528/204901925-d33114a6-a86a-4a53-854d-a3f499fc8802.png)
 
 * * * * * * * * * *
@@ -68,9 +66,6 @@ Der **E_RESTART** ist ein spezieller Service-Interface-Funktionsbaustein nach IE
 | Zweck         | Systemsteuerung | Zeitsteuerung | Ereignisverzögerung |
 | Ereignistyp   | Steuerbefehle | Periodisch | Einmalig |
 | Standard      | Annex A   | Core     | Core     |
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

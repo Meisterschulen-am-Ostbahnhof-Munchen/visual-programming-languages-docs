@@ -1,7 +1,5 @@
 # Q_SetAudioVolume
 
-
-
 ![Q_SetAudioVolume](https://user-images.githubusercontent.com/116869307/214153008-918f1900-9a0a-4ee0-8fdb-ef02818a91cd.png)
 
 * * * * * * * * * *
@@ -96,6 +94,7 @@ Der Q_SetAudioVolume-Baustein bietet präzise Audiosteuerung:
 - **Flexibel**: Für alle Audioausgaben
 
 Unverzichtbar für:
+
 - Professionelle Alarmysteme
 - Sprachgesteuerte Anwendungen
 - Komfortorientierte Bedienoberflächen

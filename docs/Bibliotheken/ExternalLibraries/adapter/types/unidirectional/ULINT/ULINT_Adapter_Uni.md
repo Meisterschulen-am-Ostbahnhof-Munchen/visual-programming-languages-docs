@@ -1,5 +1,2 @@
 # Unidirectional ULINT Adapter
 
-
-
-

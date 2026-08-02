@@ -1,6 +1,5 @@
 # AUI_TO_AUDI
 
-
 ![AUI_TO_AUDI](./AUI_TO_AUDI.svg)
 
 * * * * * * * * * *
@@ -29,6 +28,7 @@ Keine eigenen Daten-Ausgänge: Der Baustein besitzt keine direkten Daten-Ausgän
 
 ## Funktionsweise
 Der Baustein verbindet intern die Schnittstellen des eingehenden AUI-Adapters mit denen des ausgehenden AUDI-Adapters:
+
 - **Ereignisverbindung**: Das Ereignis `E1` des AUI-Adapters wird direkt an das Ereignis `E1` des AUDI-Adapters weitergeleitet.
 - **Datenverbindung**: Der Datenwert `D1` des AUI-Adapters (Typ UINT) wird direkt an den Datenwert `D1` des AUDI-Adapters (Typ UDINT) übergeben. Dabei erfolgt eine implizite Typkonvertierung von UINT (16 Bit) nach UDINT (32 Bit).
 

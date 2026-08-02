@@ -1,6 +1,5 @@
 # DataPanel_MI_ID_ENC
 
-
 ![DataPanel_MI_ID_ENC](./DataPanel_MI_ID_ENC.svg)
 
 * * * * * * * * * *
@@ -81,6 +80,7 @@ Die tatsächliche Zustandsmaschine ist im vorliegenden Code nicht explizit abgeb
 
 ## Vergleich mit ähnlichen Bausteinen
 Gegenüber einfachen Encoder-Zählern bietet der DataPanel_MI_ID_ENC:
+
 - **Flexible Auslösekriterien**: Statt nur auf Polling angewiesen zu sein, können Impuls- oder Zeit-Schwellwerte gesetzt werden.
 - **Strukturierte Initialisierung**: Die Verwendung eines benutzerdefinierten Typs (`DataPanel_MI_DI_S`) ermöglicht eine klare Zuordnung zu spezifischen Hardware-Eingängen.
 - **Ereignisbasierte Ausgabe**: Die Trennung von `CNF` (synchron zur Anfrage) und `IND` (asynchron) erlaubt eine entkoppelte Verarbeitung in höheren Steuerungsebenen.

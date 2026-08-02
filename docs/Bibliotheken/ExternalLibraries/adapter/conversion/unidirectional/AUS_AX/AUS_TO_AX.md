@@ -1,6 +1,5 @@
 # AUS_TO_AX
 
-
 ![AUS_TO_AX](./AUS_TO_AX.svg)
 
 * * * * * * * * * *
@@ -32,6 +31,7 @@ Keine direkten Datenausgänge. Das Datensignal (BOOL) wird über den Adapter **A
 
 ## Funktionsweise
 Der FB nutzt intern einen **F_NE**-Baustein (Vergleich auf Ungleichheit) aus der IEC‑61131‑Bibliothek.  
+
 - Ein ankommendes Ereignis **AUS\_IN.E1** triggert den **REQ**-Eingang von **F_NE**.  
 - **F_NE** vergleicht den Datenwert **AUS\_IN.D1** (USINT) mit dem konstanten Wert **USINT#0**.  
 - Das Vergleichsergebnis (BOOL: TRUE, wenn ungleich Null, sonst FALSE) wird an **AX\_OUT.D1** weitergeleitet.  

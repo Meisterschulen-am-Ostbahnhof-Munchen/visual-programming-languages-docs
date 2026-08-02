@@ -1,6 +1,5 @@
 # SET_LTIME
 
-
 ![SET_LTIME](./SET_LTIME.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Keine.
 
 ## Funktionsweise
 Bei einem Ereignis am Eingang **REQ** wird der Algorithmus `REQ` ausgeführt:
+
 - Der Wert des Dateneingangs `IN` wird direkt in die InOut-Variable `OUT` kopiert.
 - Anschließend wird das Ereignis **CNF** ausgegeben, um die erfolgreiche Zuweisung zu signalisieren.
 

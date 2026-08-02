@@ -1,7 +1,5 @@
 # PKP_2200_LI_IX
 
-
-
 <img width="1893" height="365" alt="image" src="https://github.com/user-attachments/assets/4ab8ed94-c625-4318-8cef-598f76879881" />
 
 * * * * * * * * * *
@@ -47,6 +45,7 @@ Der Funktionsblock initialisiert und verwaltet die Kommunikation mit digitalen E
 
 ## Zustandsübergänge
 Der Baustein durchläuft folgende Zustände:
+
 1. **Initialisierungsphase**: INIT-Event verarbeitet, INITO-Antwort generiert
 2. **Service-Betrieb**: REQ-Event verarbeitet, CNF-Antwort generiert
 3. **Ressourcen-Indikation**: Automatische IND-Ereignisse bei Statusänderungen

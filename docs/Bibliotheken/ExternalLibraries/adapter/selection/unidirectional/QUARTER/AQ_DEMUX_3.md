@@ -1,6 +1,5 @@
 # AQ_DEMUX_3
 
-
 ![AQ_DEMUX_3](./AQ_DEMUX_3.svg)
 
 * * * * * * * * * *

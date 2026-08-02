@@ -1,6 +1,5 @@
 # AB_TO_AW
 
-
 ![AB_TO_AW](./AB_TO_AW.svg)
 
 * * * * * * * * * *
@@ -31,6 +30,7 @@ Der Baustein besitzt keine klassischen Ereignis- oder Dateneingänge/-ausgänge 
 
 ## Funktionsweise
 Der Baustein leitet die eingehenden Signale des **AB_IN**-Adapters direkt an den **AW_OUT**-Adapter weiter:
+
 - Das Ereignis **E1** des **AB_IN** wird mit dem Ereignis **E1** des **AW_OUT** verbunden.
 - Das Datum **D1** (BYTE) des **AB_IN** wird mit dem Datum **D1** (WORD) des **AW_OUT** verbunden.
 

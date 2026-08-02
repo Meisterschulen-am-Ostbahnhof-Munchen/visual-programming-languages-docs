@@ -1,7 +1,5 @@
 # MULTIME
 
-
-
 multiplies a time by a real number and returns a time
 
 ## Interface
@@ -30,8 +28,6 @@ multiplies a time by a real number and returns a time
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | | TIME | |
-
-
 
 ## 🛠️ Zugehörige Übungen
 

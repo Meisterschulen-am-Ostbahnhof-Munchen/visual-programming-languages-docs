@@ -1,6 +1,5 @@
 # ILOCK_CONFLICT_TRIP
 
-
 ![ILOCK_CONFLICT_TRIP](./ILOCK_CONFLICT_TRIP.svg)
 
 * * * * * * * * * *

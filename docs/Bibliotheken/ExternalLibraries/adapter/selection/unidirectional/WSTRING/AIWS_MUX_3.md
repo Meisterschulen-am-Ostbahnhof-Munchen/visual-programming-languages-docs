@@ -1,6 +1,5 @@
 # AIWS_MUX_3
 
-
 ![AIWS_MUX_3](./AIWS_MUX_3.svg)
 
 * * * * * * * * * *

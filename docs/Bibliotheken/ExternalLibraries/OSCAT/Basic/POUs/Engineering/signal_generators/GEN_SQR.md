@@ -2,8 +2,6 @@
 
 # GEN_SQR
 
-
-
 this signal generator generates a square wave output
 
 this signal generator generates a square wave output. The square wave signal is defined by period time (PT),

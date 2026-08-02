@@ -1,6 +1,5 @@
 # AUDI_SPLIT_2
 
-
 ![AUDI_SPLIT_2](./AUDI_SPLIT_2.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # OFFSET
 
-
-
 <img width="1417" height="209" alt="image" src="https://github.com/user-attachments/assets/95399eba-9583-4cfe-af8d-3c4314a23cc2" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 Der OFFSET-Baustein ist ein einfacher Funktionsblock mit einem einzigen Zustand (`REQ`) und einem Algorithmus gleichen Namens.
 
 Bei jedem Eintreffen eines `REQ`-Ereignisses wird der Algorithmus `REQ` ausgeführt:
+
 1.  **Prüfung und Setzen des Referenzwerts:** Es wird geprüft, ob der Ausgang `FIRST` noch seinen Initialwert 0 hat. Falls ja **und** der aktuelle Eingangswert `IN` größer als 0 ist, wird `FIRST` auf den Wert von `IN` gesetzt. Diese Bedingung (`IN > 0`) ist im Algorithmus implizit durch die Logik enthalten, da `FIRST` nur bei der ersten Verarbeitung eines `IN > 0` von 0 auf einen anderen Wert geändert wird.
 2.  **Berechnung des Offsets:** Unabhängig vom vorherigen Schritt wird der Ausgang `OUT` als Differenz zwischen dem aktuellen Eingang `IN` und dem gespeicherten Referenzwert `FIRST` berechnet (`OUT := IN - FIRST`).
 3.  **Bestätigung:** Nach der Berechnung wird das `CNF`-Ereignis ausgelöst, wobei die aktuellen Werte von `OUT` und `FIRST` mitgegeben werden.
@@ -43,6 +42,7 @@ Bei jedem Eintreffen eines `REQ`-Ereignisses wird der Algorithmus `REQ` ausgefü
 
 ## Zustandsübersicht
 Der Baustein besitzt einen einzigen, namensgebenden Zustand:
+
 *   **REQ:** Dieser Zustand ist immer aktiv. Jedes eintreffende `REQ`-Ereignis führt zur Ausführung des zugehörigen Algorithmus und löst sofort das `CNF`-Ereignis aus. Es gibt keine internen Zustandsübergänge.
 
 ## Anwendungsszenarien

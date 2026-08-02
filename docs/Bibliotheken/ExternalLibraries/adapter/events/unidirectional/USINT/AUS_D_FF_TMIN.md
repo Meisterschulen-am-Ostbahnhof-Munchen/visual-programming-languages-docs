@@ -1,6 +1,5 @@
 # AUS_D_FF_TMIN
 
-
 ![AUS_D_FF_TMIN](./AUS_D_FF_TMIN.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # F_BYTE_TO_DWORD
 
-
-
 <img width="1243" height="183" alt="F_BYTE_TO_DWORD" src="https://github.com/user-attachments/assets/12ed4687-4afb-4a1c-8e33-7b03054d593d" />
 
 * * * * * * * * * *

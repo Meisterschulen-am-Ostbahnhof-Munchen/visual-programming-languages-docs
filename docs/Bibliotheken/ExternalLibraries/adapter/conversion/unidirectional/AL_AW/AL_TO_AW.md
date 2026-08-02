@@ -1,6 +1,5 @@
 # AL_TO_AW
 
-
 ![AL_TO_AW](./AL_TO_AW.svg)
 
 * * * * * * * * * *
@@ -25,11 +24,13 @@ Keine separaten Daten-Ausgänge. Die Daten werden über den AW_OUT‑Adapter aus
 ### **Adapter**
 - **AL_IN** (Socket) – Typ: `adapter::types::unidirectional::AL`  
   LWORD‑Eingangsadaper; enthält je ein Ereignis- und Datensignal (E1, D1).
+
 - **AW_OUT** (Plug) – Typ: `adapter::types::unidirectional::AW`  
   WORD‑Ausgangsadaper; enthält je ein Ereignis- und Datensignal (E1, D1).
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Ein Ereignis am Socket **AL_IN** (E1) triggert den internen Konvertierungs-FB `F_LWORD_TO_WORD`.
 2. Gleichzeitig wird das LWORD‑Datum (D1) vom Eingangsadaper an den `IN`‑Eingang des Konvertierungs-FB weitergeleitet.
 3. Der Konvertierungs-FB führt die Umwandlung von LWORD (64‑Bit) nach WORD (16‑Bit) durch.

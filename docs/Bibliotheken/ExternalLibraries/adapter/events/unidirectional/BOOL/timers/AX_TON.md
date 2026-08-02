@@ -1,7 +1,5 @@
 # AX_TON
 
-
-
 <img width="962" height="243" alt="image" src="https://github.com/user-attachments/assets/d92dd0e6-fa14-499e-8a97-5c1432d0df3e" />
 
 * * * * * * * * * *
@@ -56,11 +54,6 @@ Der AX_TON-Block arbeitet als Einschaltverzögerungstimer. Bei Empfang eines Ein
 Im Vergleich zu anderen Timer-Blöcken bietet AX_TON eine standardisierte Schnittstelle durch Adapter, was die Wiederverwendbarkeit und modulare Integration in größere Steuerungssysteme erleichtert.
 
 Vergleich mit [E_TON](../../../../../../StandardLibraries/events/timers/E_TON.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

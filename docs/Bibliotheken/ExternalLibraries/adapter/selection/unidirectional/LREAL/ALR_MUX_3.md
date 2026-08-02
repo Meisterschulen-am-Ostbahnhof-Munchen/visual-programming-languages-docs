@@ -1,6 +1,5 @@
 # ALR_MUX_3
 
-
 ![ALR_MUX_3](./ALR_MUX_3.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Die Ausgabe erfolgt ausschließlich über den Adapter `OUT`.
 
 ## Funktionsweise
 Der Baustein arbeitet streng ereignisgesteuert:
+
 1. Ein Impuls am Ereigniseingang `REQ` löst die Verarbeitung aus.
 2. Der aktuelle Wert des Daten‑Eingangs `K` wird ausgewertet.
 3. Abhängig von `K` wird der entsprechende Adapter‑Socket (`IN1`, `IN2` oder `IN3`) auf den Ausgangs‑Plug `OUT` durchgeschaltet.
@@ -55,6 +55,7 @@ Wird ein ungültiger Indexwert (z. B. größer als 2) angelegt, ist das Verhal
 
 ## Zustandsübersicht
 Der FB besitzt keine expliziten Zustandsautomaten im XML. Das Verhalten ist rein durch die Ereignissteuerung definiert:
+
 - **Warten** auf `REQ`
 - Nach `REQ`: Auswerten von `K`, Durchschalten des entsprechenden Eingangs
 - Ausgabe von `CNF`

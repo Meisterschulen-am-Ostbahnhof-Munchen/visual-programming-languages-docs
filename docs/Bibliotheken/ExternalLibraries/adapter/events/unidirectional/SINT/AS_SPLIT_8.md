@@ -1,6 +1,5 @@
 # AS_SPLIT_8
 
-
 ![AS_SPLIT_8](./AS_SPLIT_8.svg)
 
 * * * * * * * * * *

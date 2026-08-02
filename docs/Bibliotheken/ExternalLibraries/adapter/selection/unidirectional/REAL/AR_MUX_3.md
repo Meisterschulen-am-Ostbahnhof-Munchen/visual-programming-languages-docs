@@ -1,6 +1,5 @@
 # AR_MUX_3
 
-
 ![AR_MUX_3](./AR_MUX_3.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Keine (die Ausgangsdaten werden über den Adapter OUT bereitgestellt).
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Ein eingehendes Ereignis am Eingang `REQ` triggert die Verarbeitung.
 2. Der aktuelle Wert des Index `K` wird ausgelesen.
 3. Abhängig von `K` wird der entsprechende Eingang (IN1, IN2, IN3) auf den Adapter-Ausgang `OUT` durchgeschaltet.

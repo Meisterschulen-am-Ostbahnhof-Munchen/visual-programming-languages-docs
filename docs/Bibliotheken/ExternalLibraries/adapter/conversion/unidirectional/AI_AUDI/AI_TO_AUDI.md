@@ -1,6 +1,5 @@
 # AI_TO_AUDI
 
-
 ![AI_TO_AUDI](./AI_TO_AUDI.svg)
 
 * * * * * * * * * *
@@ -57,6 +56,7 @@ Der Baustein ist als Composite-FB realisiert. Intern nutzt er den Standard-Konve
 5. Dieses Ereignis wird an den Plug `AUDI_OUT` (Ereignisausgang `E1`) weitergegeben, gleichzeitig liegt der konvertierte UDINT-Wert am Datenausgang `D1` an.
 
 Die Verbindungen im FBNetwork sind:
+
 - `AI_IN.E1` → `Convert.REQ`
 - `Convert.CNF` → `AUDI_OUT.E1`
 - `AI_IN.D1` → `Convert.IN`
@@ -82,6 +82,7 @@ Der Baustein selbst besitzt keine eigene Zustandsmaschine, da er ausschließlich
 ## Vergleich mit ähnlichen Bausteinen
 
 Es existieren weitere Adapter-Konvertierungsbausteine in der Bibliothek, z. B.:
+
 - `AI_TO_AI` – weiterleiten ohne Konvertierung
 - `AUDI_TO_AI` – umgekehrte Richtung (UDINT → INT)
 - Direkte Nutzung des `F_INT_TO_UDINT`-Bausteins mit manueller Adapterverdrahtung

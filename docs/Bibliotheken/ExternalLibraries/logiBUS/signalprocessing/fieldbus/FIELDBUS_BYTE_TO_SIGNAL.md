@@ -1,6 +1,5 @@
 # FIELDBUS_BYTE_TO_SIGNAL
 
-
 ![FIELDBUS_BYTE_TO_SIGNAL](./FIELDBUS_BYTE_TO_SIGNAL.svg)
 
 * * * * * * * * * *

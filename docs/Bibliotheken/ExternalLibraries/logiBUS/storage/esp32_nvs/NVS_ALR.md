@@ -1,6 +1,5 @@
 # NVS_ALR
 
-
 ![NVS_ALR](./NVS_ALR.svg)
 
 * * * * * * * * * *
@@ -60,10 +59,13 @@ Der Funktionsbaustein **NVS_ALR** dient zum Laden und Speichern von Werten des T
 
 - **Adapterinterface**  
   Die Kommunikation mit der Außenwelt erfolgt ausschließlich über den unidirektionalen ALR-Adapter. Dadurch wird der Baustein besonders geeignet für modulare Architekturen, bei denen Datenflüsse über standardisierte Schnittstellen abgewickelt werden.
+
 - **Interner NVS-Baustein**  
   Im Netzwerk wird der FB `NVS` (aus der Bibliothek `logiBUS::storage::esp32_nvs`) verwendet. Dieser kapselt die eigentliche Lese- und Schreiblogik auf dem ESP32-NVS.
+
 - **Automatischer Lesevorgang**  
   Nach der Initialisierung wird sofort ein GET ausgeführt, sodass der Anwender unmittelbar den aktuellen Wert (Standardwert oder gespeicherten Wert) erhält.
+
 - **Fehlerbehandlung**  
   Die Ausgänge `QO` und `STATUS` erlauben eine einfache Prüfung des Initialisierungserfolgs. Fehler werden als String gemeldet.
 
@@ -80,8 +82,10 @@ Der Baustein durchläuft keine explizit modellierten Zustände, sondern ist erei
 
 - **ESP32-Konfigurationsparameter**  
   Speicherung von LREAL-Werten wie Kalibrierungsfaktoren, Schwellwerten oder PID-Parametern, die nach einem Neustart erhalten bleiben sollen. Der ALR-Adapter ermöglicht die einfache Integration mit anderen Bausteinen, die denselben Adaptertyp verwenden.
+
 - **Gekapselter Datenzugriff**  
   Wenn ein Baustein LREAL-Werte aus dem NVS lesen und schreiben muss, aber die direkte Verwendung des NVS-Bausteins zu komplex erscheint, bietet NVS_ALR eine abstrahierte Schnittstelle.
+
 - **Modulare Automatisierung**  
   Einsatz in Industrie 4.0-Anwendungen, bei denen Geräte über standardisierte Adapterdienste kommunizieren (z. B. über eine ALR-Konfigurationsschicht).
 
@@ -89,8 +93,10 @@ Der Baustein durchläuft keine explizit modellierten Zustände, sondern ist erei
 
 - **NVS (direkt)**  
   Der Baustein `NVS` bietet mehr Flexibilität (z. B. wahlfreier Zugriff, unterschiedliche Datentypen), erfordert aber eine aufwändigere Verkabelung und explizite GET/SET-Aufrufe. NVS_ALR reduziert die Komplexität auf eine Adapterschnittstelle.
+
 - **BOOL_NVS, INT_NVS (hypothetisch)**  
   Analoge Bausteine für andere Datentypen. NVS_ALR ist speziell auf LREAL zugeschnitten und nutzt den ALR-Adapter, der typischerweise für LREAL-Daten vorgesehen ist.
+
 - **Remanente Variablen**  
   In manchen Systemen können remanente Variablen direkt im FB-Modell verwendet werden. NVS_ALR ist jedoch explizit für den Einsatz mit einem externen Flash-Speicher (NVS) konzipiert und daher portabler.
 

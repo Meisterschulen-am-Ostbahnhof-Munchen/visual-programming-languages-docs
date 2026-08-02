@@ -1,6 +1,5 @@
 # AUDI_D_FF_HYS
 
-
 ![AUDI_D_FF_HYS](./AUDI_D_FF_HYS.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Keine direkten Datenausgänge – die Ausgabedaten werden über den Adapter `Q` 
 | Socket  | `I`  | `adapter::types::unidirectional::AUDI` | Value to latch    |
 
 Der Adapter `AUDI` enthält jeweils einen Ereignis‑ und einen Datenkanal:  
+
 - `I.E1`  – Ereignis, das den Latch‑Vorgang auslöst  
 - `I.D1`  – Datenwert, der gelatcht werden soll  
 - `Q.E1`  – Bestätigungsereignis nach erfolgreichem Latch  
@@ -55,6 +55,7 @@ Die Hysterese verhindert ein ständiges Umschalten bei geringen Signaländerunge
 
 ## Zustandsübersicht
 Da der FB eine reine Funktionsnetzwerk‑Verschaltung ist (kein eigenes ECC), ergibt sich der Zustand aus dem internen Baustein `E_D_FF_ANY_HYS`. Vereinfacht:
+
 - **Rückgesetzt**: Ausgang `Q.D1` ist 0 oder einem definierten Initialwert.
 - **Setzen**: Bei Überschreitung der oberen Hystereseschwelle wird der Ausgang auf 1 gesetzt.
 - **Halten**: Bei Werten innerhalb des Hysteresebands bleibt der Ausgang unverändert.

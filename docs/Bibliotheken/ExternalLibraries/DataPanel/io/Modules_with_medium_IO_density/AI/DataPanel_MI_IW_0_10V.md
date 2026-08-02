@@ -1,6 +1,5 @@
 # DataPanel_MI_IW_0_10V
 
-
 ![DataPanel_MI_IW_0_10V](./DataPanel_MI_IW_0_10V.svg)
 
 * * * * * * * * * *

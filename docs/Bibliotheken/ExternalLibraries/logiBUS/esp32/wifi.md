@@ -1,6 +1,5 @@
 # wifi
 
-
 ![wifi](./wifi.svg)
 
 * * * * * * * * * *
@@ -35,6 +34,7 @@ Der Baustein arbeitet nach dem Prinzip eines Service-Interface-Funktionsblocks. 
 
 ## Zustandsübersicht
 Der Baustein durchläuft folgende grundlegende Zustände:
+
 - **Uninitialisiert**: Nach dem Start, bevor INIT ausgeführt wird.
 - **Initialisiert**: Nach erfolgreichem INIT, bereit für START.
 - **Aktiv (verbunden)**: Nach erfolgreichem START.

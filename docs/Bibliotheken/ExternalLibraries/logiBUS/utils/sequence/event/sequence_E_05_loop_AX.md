@@ -1,8 +1,5 @@
 # sequence_E_05_loop_AX
 
-
-
-
 ![sequence_E_05_loop_AX_ecc](./sequence_E_05_loop_AX_ecc.svg)
 
 * * * * * * * * * *

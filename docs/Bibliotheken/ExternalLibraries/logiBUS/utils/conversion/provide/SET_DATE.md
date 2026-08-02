@@ -1,6 +1,5 @@
 # SET_DATE
 
-
 ![SET_DATE](./SET_DATE.svg)
 
 * * * * * * * * * *
@@ -38,6 +37,7 @@ Keine.
 
 ## Funktionsweise
 Wird das Ereignis **REQ** ausgelöst, führt der Baustein den Algorithmus `REQ` aus:
+
 - Der Wert des Eingangs `IN` wird der InOut-Variablen `OUT` zugewiesen (`OUT := IN;`).
 - Anschließend wird das Ereignis **CNF** gesendet, um den erfolgreichen Abschluss zu signalisieren.
 
@@ -63,6 +63,7 @@ Es existiert kein weiterer Zustand; der Baustein ist sofort ausführungsbereit.
 
 ## Vergleich mit ähnlichen Bausteinen
 Ähnliche Funktionsbausteine existieren für andere Datentypen:
+
 - **SET_TIME** (für `TIME`)
 - **SET_DT** (für `DATE_AND_TIME`)
 

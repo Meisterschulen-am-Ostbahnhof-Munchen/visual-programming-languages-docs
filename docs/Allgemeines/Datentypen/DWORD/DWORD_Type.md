@@ -1,11 +1,5 @@
 # Datentyp: DWORD
 
-
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_034b](../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)

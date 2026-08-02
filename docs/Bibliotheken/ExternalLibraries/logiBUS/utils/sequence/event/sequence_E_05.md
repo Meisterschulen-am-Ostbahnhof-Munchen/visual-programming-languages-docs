@@ -1,9 +1,6 @@
 # sequence_E_05
 
-
-
 <img width="1389" height="390" alt="image" src="https://github.com/user-attachments/assets/6251fda5-cb6c-43dd-b0bf-c6e5e43d5acc" />
-
 
 ![sequence_E_05_ecc](./sequence_E_05_ecc.svg)
 
@@ -51,6 +48,7 @@ Es sind keine Adapterschnittstellen vorhanden.
 Der FB ist als Basic Function Block (BFB) mit einem Execution Control Chart (ECC) implementiert. Das ECC besteht aus sieben Zuständen: einem initialen `xSTART`, fünf aktiven Zuständen (`sState_01` bis `sState_05`), einem inaktiven Endzustand (`sState_00`) und einem speziellen Reset-Zustand (`sRESET`).
 
 Bei Eintritt in einen aktiven Zustand (z.B. `sState_01`) werden zwei Algorithmen nacheinander ausgeführt:
+
 1.  Ein *Confirmation Step* (z.B. `State_01_C`), der die `STATE_NR` auf die entsprechende Konstante setzt und das `CNF`-Ereignis auslöst.
 2.  Ein *Entry Step* (z.B. `State_01_E`), der den zugehörigen binären Ausgang (z.B. `DO_S1`) auf `TRUE` setzt und das entsprechende Ereignis (z.B. `EO_S1`) auslöst.
 

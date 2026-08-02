@@ -1,9 +1,6 @@
 # sequence_E_08_loop
 
-
-
 <img width="1184" height="415" alt="image" src="https://github.com/user-attachments/assets/8fefe285-3912-48ee-a072-022516d5404e" />
-
 
 ![sequence_E_08_loop_ecc](./sequence_E_08_loop_ecc.svg)
 
@@ -44,6 +41,7 @@ Der Funktionsblock `sequence_E_08_loop` ist ein Sequenzer mit acht Ausgangszust�
 Der FB arbeitet als ereignisgesteuerte Zustandsmaschine (ECC). Der initiale Zustand ist `xSTART`. Ein eingehendes Ereignis an einem der benannten Ereigniseingänge (z.B. `START_S1`) bewirkt einen Übergang in den nächsten Zustand (z.B. `sState_01`).
 
 Bei jedem Zustandswechsel werden drei Aktionen ausgeführt:
+
 1.  **Exit-Aktion (X) des vorherigen Zustands**: Setzt den zugehörigen Datenausgang (`DO_Sx`) auf `FALSE`.
 2.  **Confirmation-Aktion (C) des neuen Zustands**: Setzt die Zustandsnummer `STATE_NR` und löst das `CNF`-Ereignis aus.
 3.  **Entry-Aktion (E) des neuen Zustands**: Setzt den zugehörigen Datenausgang (`DO_Sx`) auf `TRUE` und löst das entsprechende Ereignis `EO_Sx` aus.
@@ -58,6 +56,7 @@ Die Sequenz durchläuft die Zustände 1 bis 8 linear. Von `State_08` aus führt 
 
 ## Zustandsübersicht
 Die ECC (Execution Control Chart) umfasst folgende Zustände:
+
 *   `xSTART`: Initialer, inaktiver Wartezustand (Zustandsnummer 0).
 *   `sState_01` bis `sState_08`: Die acht aktiven Sequenzzustände (Zustandsnummern 1-8). Jeder aktiviert seinen spezifischen Ausgang.
 *   `sRESET`: Dedizierter Reset-Zustand. Beim Eintreten werden alle potenziell aktiven Ausgänge (`DO_S1` bis `DO_S8`) deaktiviert, die Zustandsnummer auf 0 gesetzt und ein Übergang zu `xSTART` ausgeführt.
@@ -70,11 +69,6 @@ Die ECC (Execution Control Chart) umfasst folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Sequenzern mit zeitgesteuerten Übergängen (z.B. `sequence_T_08_loop`) bietet dieser FB maximale Flexibilität, da die Verweildauer in jedem Zustand extern vorgegeben wird. Er ist einfacher aufgebaut als Bausteine mit integrierter Fehlerbehandlung oder komplexen Verzweigungen, stellt aber eine robuste Grundlage für ereignisgesteuerte Abläufe dar. Alternative Implementierungen mit `E_SR`- oder `E_CTUD`-Blöcken wären deutlich komplexer und weniger übersichtlich.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

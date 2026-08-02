@@ -1,6 +1,5 @@
 # GET_TIME
 
-
 ![GET_TIME](./GET_TIME.svg)
 
 * * * * * * * * * *

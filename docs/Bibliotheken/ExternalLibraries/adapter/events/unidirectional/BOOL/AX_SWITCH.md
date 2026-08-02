@@ -1,7 +1,5 @@
 # AX_SWITCH
 
-
-
 <img width="1215" height="181" alt="image" src="https://github.com/user-attachments/assets/e3a4235c-ef25-4396-b440-3929cea8731a" />
 
 * * * * * * * * * *
@@ -51,11 +49,6 @@ Der Block besitzt keine internen Zustände im klassischen Sinne. Er arbeitet rei
 Im Vergleich zum Standard-E_SWITCH Block bietet AX_SWITCH eine Adapter-basierte Schnittstelle, was eine bessere Integration in Adapter-basierte Architekturen ermöglicht. Während E_SWITCH direkte Ein- und Ausgänge besitzt, kommuniziert AX_SWITCH ausschließlich über Adapter.
 
 Vergleich mit [E_SWITCH](../../../../../StandardLibraries/events/E_SWITCH.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

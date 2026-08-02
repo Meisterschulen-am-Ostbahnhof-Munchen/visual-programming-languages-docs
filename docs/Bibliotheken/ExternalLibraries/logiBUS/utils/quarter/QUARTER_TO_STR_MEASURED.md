@@ -2,13 +2,11 @@
 
 ## 🎧 Podcast
 
-
 ![QUARTER_TO_STR_MEASURED_ecc](./QUARTER_TO_STR_MEASURED_ecc.svg)
 
 * [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
 ---- 
-
 
 <img width="1521" height="186" alt="image" src="https://github.com/user-attachments/assets/90319dba-980a-464e-aa11-c9c9729af26a" />
 
@@ -45,6 +43,7 @@ Der `QUARTER_TO_STR_MEASURED` ist ein Basic Function Block (BFB) mit einem inter
 
 ## Zustandsübersicht
 Der ECC des Funktionsblocks besteht aus sechs Zuständen:
+
 1.  **START:** Der initiale Wartezustand. Bei `REQ` erfolgt eine Verzweigung basierend auf dem Wert von `IB`.
 2.  **SET:** Wird bei `IB = quarter::STATUS_ENABLED` aktiviert. Führt den Algorithmus `SET` aus.
 3.  **RESET:** Wird bei `IB = quarter::STATUS_DISABLED` aktiviert. Führt den Algorithmus `RESET` aus.

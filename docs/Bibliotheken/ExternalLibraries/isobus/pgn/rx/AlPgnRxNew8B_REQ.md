@@ -1,7 +1,5 @@
 # AlPgnRxNew8B_REQ
 
-
-
 <img width="1324" height="281" alt="image" src="https://github.com/user-attachments/assets/692b1960-1bad-4a6d-89ca-c6daba8a85cd" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Funktionsweise
 Der Funktionsblock arbeitet in zwei Hauptphasen: Installation und Anforderung.
+
 1.  **Installation**: Durch das `install`-Ereignis werden die Parameter für einen zu empfangenden PGN (Nummer, Quelle, Größe, Priorität) konfiguriert. Der Block registriert diese Anforderung im zugrunde liegenden ISOBUS-Stack und gibt einen `PGN_handle` über `installO` zurück. Dieser Handle wird für spätere Referenzen benötigt.
 2.  **Anforderung**: Das `REQ`-Ereignis löst eine einmalige Anfrage für den zuletzt installierten PGN im Netzwerk aus. Nach erfolgreichem Versand der Anfrage wird `CNF` ausgelöst. Wenn die angeforderte Nachricht vom definierten `NmSource` eintrifft, wird sie im `Data`-Puffer abgelegt und zusammen mit einem Zeitstempel über das `IND`-Ereignis ausgegeben.
 
@@ -63,15 +62,13 @@ Fehler während der Installation (z.B. ungültige PGN) führen zum `pgnERR`-Ausg
 
 ## Anwendungsszenarien
 Typische Anwendungen liegen in der landwirtschaftlichen oder mobilen Arbeitsmaschinensteuerung (ISO 11783 / ISOBUS):
+
 *   Abfrage von Maschinenparametern (z.B. Drehzahl, Temperatur) von einem Anbaugerät.
 *   Einmaliges Anfordern von Konfigurationsdaten von einem Steuergerät im Netzwerk.
 *   Implementierung von Diagnose- oder Service-Tools, die spezifische PGNs abfragen müssen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen CAN-Empfangsblöcken ist `AlPgnRxNew8B_REQ` speziell auf das ISOBUS-Protokoll und dessen PGN-Konzept zugeschnitten. Er abstrahiert die niedrigleveligen CAN-Details (wie ID-Filterung) und bietet eine saubere Schnittstelle auf PGN-Ebene. Blöcke wie `E_CYCLE` oder `E_DELAY` könnten verwendet werden, um periodische Anfragen zu realisieren, während `AlPgnRxNew8B_REQ` selbst nur Einzelanfragen behandelt.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

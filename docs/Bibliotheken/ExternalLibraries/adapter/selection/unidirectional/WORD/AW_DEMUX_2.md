@@ -1,6 +1,5 @@
 # AW_DEMUX_2
 
-
 ![AW_DEMUX_2](./AW_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -49,6 +48,7 @@ Der Funktionsblock AW_DEMUX_2 realisiert einen generischen AW-Demultiplexer. Er 
 
 ## Funktionsweise
 Der Funktionsblock wartet auf ein Ereignis an `REQ`. Bei dessen Eintreten wird der aktuell am Daten-Eingang `K` anliegende Index ausgewertet.  
+
 - Ist `K = 0`, wird der über `IN` eingehende AW-Wert an den Adapter `OUT1` weitergeleitet.  
 - Ist `K = 1`, erfolgt die Weiterleitung an `OUT2`.  
 - Für Werte von `K` größer als 1 ist das Verhalten nicht definiert (implemenationsabhängig).  

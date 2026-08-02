@@ -1,6 +1,5 @@
 # AW_TO_AX
 
-
 ![AW_TO_AX](./AW_TO_AX.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Der Plug **AX_OUT** stellt die Ereignis- und Datenschnittstelle eines **BOOL**-w
 ## Funktionsweise
 
 Bei Eintreffen eines Ereignisses am **AW_IN.E1** wird der Wert von **AW_IN.D1** mit dem konstanten Wert **WORD#0** verglichen. Dazu wird intern der Baustein **F_NE** (ungleich-Vergleich aus IEC 61131) verwendet.  
+
 - Ist **AW_IN.D1 ≠ 0**, so wird ein Ereignis an **AX_OUT.E1** gesendet und der Datenwert **AX_OUT.D1** auf **TRUE** gesetzt.  
 - Andernfalls wird kein Ereignis am Ausgang generiert und der Datenwert bleibt auf **FALSE** (bzw. wird nicht geändert).
 

@@ -1,6 +1,5 @@
 # E_RS_SYM_INIT
 
-
 ![E_RS_SYM_INIT](./E_RS_SYM_INIT.svg)
 
 * * * * * * * * * *

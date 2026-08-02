@@ -1,6 +1,5 @@
 # AQ_TO_AB
 
-
 ![AQ_TO_AB](./AQ_TO_AB.svg)
 
 * * * * * * * * * *
@@ -29,6 +28,7 @@ Der FB besitzt keine expliziten Daten-Ausgänge auf oberster Ebene. Die Datenüb
 
 ## Funktionsweise
 Der Baustein verbindet intern die Ereignis- und Datenkanäle des Eingangsadapters `IN` direkt mit den entsprechenden Kanälen des Ausgangsadapters `OUT`. Konkret werden folgende Verbindungen hergestellt:
+
 - Ereignisverbindung: `IN.E1` → `OUT.E1`
 - Datenverbindung: `IN.D1` → `OUT.D1`
 

@@ -1,9 +1,6 @@
 # ARR08B_TO_ST08B
 
-
-
 <img width="1352" height="215" alt="image" src="https://github.com/user-attachments/assets/6f2c370a-b183-4202-8424-1b736a6424dd" />
-
 
 ![ARR08B_TO_ST08B](./ARR08B_TO_ST08B.svg)
 
@@ -33,6 +30,7 @@ Es sind keine Adapter für diesen Funktionsblock definiert.
 
 ## Funktionsweise
 Der Funktionsblock `ARR08B_TO_ST08B` führt eine direkte Byte-für-Byte-Zuweisung durch. Wenn ein `REQ`-Ereignis empfangen wird, werden die einzelnen Elemente des Eingangs-Arrays `IN` den entsprechenden Komponenten der Ausgangsstruktur `OUT` zugewiesen:
+
 *   `OUT.B_00` wird `IN[0]` zugewiesen.
 *   `OUT.B_01` wird `IN[1]` zugewiesen.
 *   ...
@@ -50,6 +48,7 @@ Der `ARR08B_TO_ST08B`-Funktionsblock ist **zustandslos**. Er führt eine rein fu
 
 ## Anwendungsszenarien
 Dieser Funktionsblock ist nützlich in Szenarien, in denen:
+
 *   Rohdaten, die als Byte-Array empfangen werden (z.B. über Kommunikationsschnittstellen wie CAN, SPI, UART), in ein strukturiertes Format umgewandelt werden müssen, um die Lesbarkeit und weitere Verarbeitung zu erleichtern.
 *   Daten zwischen Systemen ausgetauscht werden, die unterschiedliche Repräsentationen für denselben 8-Byte-Datensatz verwenden (Array vs. Struktur).
 *   Eine klare und explizite Typumwandlung von einer linearen in eine benannte Struktur erforderlich ist, um die Programmlogik zu verbessern.

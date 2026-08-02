@@ -1,10 +1,5 @@
 # LogiBUS BYTE Conversion
 
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_126b_sub](../../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)

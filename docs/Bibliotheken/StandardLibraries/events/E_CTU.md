@@ -2,7 +2,6 @@
 
 ## 📺 Video
 
-
 ![E_CTU_ecc](./E_CTU_ecc.svg)
 
 * [The E_CTU upcounter](https://www.youtube.com/watch?v=2v4Ib2wZLGM)
@@ -15,7 +14,6 @@
 * [Meisterwissen 61499: Der Ereignisgesteuerte Aufwärtszähler (E_CTU) – Robustes Zählen in Landmaschinen-Steuerungen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Meisterwissen-61499-Der-Ereignisgesteuerte-Aufwrtszhler-E_CTU--Robustes-Zhlen-in-Landmaschinen-Steuerungen-e3a9q5n)
 
 ---- 
-
 
 <img width="1139" height="202" alt="E_CTU" src="https://user-images.githubusercontent.com/113907528/204894537-54f1c9c9-de57-4beb-ad38-697fff012b4b.png">
 
@@ -69,11 +67,6 @@ Der `E_CTU`-Baustein hat zwei Hauptfunktionen: Zählen und Zurücksetzen.
 | Zählrichtung     | Aufwärts           | Abwärts              | Beides                   |
 | Ereignisgesteuert| Ja                 | Ja                   | Ja                       |
 | Reset-Funktion   | R (Reset auf 0)    | LD (Setzen auf PV)   | R (Reset auf 0)          |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

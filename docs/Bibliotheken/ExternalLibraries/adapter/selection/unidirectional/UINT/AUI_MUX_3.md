@@ -1,6 +1,5 @@
 # AUI_MUX_3
 
-
 ![AUI_MUX_3](./AUI_MUX_3.svg)
 
 * * * * * * * * * *
@@ -54,6 +53,7 @@ Der Baustein arbeitet ereignisgesteuert. Beim Eintreffen eines Ereignisses am Ei
 
 ## Zustandsübersicht
 Der Baustein besitzt keinen expliziten internen Zustandsautomaten. Die Funktionsweise lässt sich als einzelner stabiler Zustand beschreiben:
+
 1. **Warten auf `REQ`**: Der Baustein ist passiv, bis ein Ereignis am `REQ`-Eingang eintrifft.
 2. **Auswahl ausführen**: Nach Erhalt von `REQ` wird `K` gelesen, der entsprechende Eingang mit `OUT` verbunden und `CNF` gesendet. Danach kehrt der Baustein in den Wartezustand zurück.
 

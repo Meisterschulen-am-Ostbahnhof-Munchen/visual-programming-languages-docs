@@ -1,6 +1,5 @@
 # AX_FB_T_FF
 
-
 ![AX_FB_T_FF](./AX_FB_T_FF.svg)
 
 * * * * * * * * * *
@@ -36,6 +35,7 @@ Keine (Daten werden über den Adapter `Q1` gesendet).
 | **Plug** (Ausgang) | `Q1` | `adapter::types::unidirectional::AX` | Ausgang – bei jedem Taktwechsel oder Reset wird ein Ereignis (E1) ausgelöst und der aktuelle Bool‑Wert (D1) gesendet. |
 
 Die Adapter vom Typ `unidirectional::AX` besitzen intern:
+
 - Ein Ereignis (E1)
 - Ein Datum (D1) vom Typ `BOOL`
 

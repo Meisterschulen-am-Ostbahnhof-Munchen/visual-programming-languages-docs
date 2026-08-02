@@ -1,6 +1,5 @@
 # AQ_TO_AX
 
-
 ![AQ_TO_AX](./AQ_TO_AX.svg)
 
 * * * * * * * * * *
@@ -26,6 +25,7 @@ Der Funktionsblock `AQ_TO_AX` dient der Konvertierung eines AQ-Adapters (Quarter
 
 ## Funktionsweise
 Der `AQ_TO_AX` Baustein besitzt keine eigenen Event- oder Daten-Ein-/Ausgänge, sondern realisiert die Konvertierung ausschließlich über zwei Adapter-Schnittstellen. Intern wird eine Instanz des Bausteins `QUARTER_TO_BOOL` eingesetzt:
+
 1. **Ereignisweiterleitung**: Das Ereignis `E1` des eingehenden AQ-Adapters wird mit dem `REQ`-Eingang von `QUARTER_TO_BOOL` verbunden. Dessen `CNF`-Ereignis wird auf dem `E1`-Ausgang des AX-Adapters ausgegeben.
 2. **Datenweiterleitung**: Das Datenwort `D1` des AQ-Adapters (Quarter Byte) wird an den `IB`-Eingang von `QUARTER_TO_BOOL` geleitet. Der konvertierte BOOL-Wert aus dem Ausgang `Q` von `QUARTER_TO_BOOL` wird auf den `D1`-Ausgang des AX-Adapters gegeben.
 

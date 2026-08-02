@@ -6,7 +6,6 @@
 
 ---- 
 
-
 <img width="1211" height="473" alt="image" src="https://github.com/user-attachments/assets/3736c2d1-1312-41dd-8375-2cf4ab9c7c50" />
 
 * * * * * * * * * *
@@ -58,9 +57,6 @@ Als Composite Function Block besitzt `QUARTERS_TO_BOOLS` keinen eigenen komplexe
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`QUARTER_TO_BOOL`**: Dies ist der elementare Baustein, der einen einzelnen 2-Bit-Eingang konvertiert. `QUARTERS_TO_BOOLS` bündelt 16 Instanzen dieses Blocks zu einer Einheit. Die Verwendung des Composite-Blocks ist effizienter für die Handhabung mehrerer Kanäle, während der Einzelblock maximale Flexibilität bei der individuellen Platzierung und Verdrahtung bietet.
 *   **`BYTE_TO_BOOL`-Blöcke**: Konventionelle Blöcke, die ein ganzes Byte in 8 einzelne Bits aufspalten. `QUARTERS_TO_BOOLS` ist spezialisierter, da er davon ausgeht, dass jedes Byte bereits in vier unabhängige 2-Bit-Einheiten unterteilt ist, die separat interpretiert werden müssen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

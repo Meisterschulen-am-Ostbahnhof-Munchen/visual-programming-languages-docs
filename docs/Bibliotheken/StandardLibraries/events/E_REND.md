@@ -1,8 +1,6 @@
 # E_REND
 
-
 ## 🎧 Podcast
-
 
 ![E_REND_ecc](./E_REND_ecc.svg)
 
@@ -41,11 +39,6 @@ Der `E_REND` (Event Rendezvous) ist ein Funktionsbaustein nach IEC 61499, der al
 - **Prozess-Synchronisation**: Ein nächster Prozessschritt (`EO`) darf erst starten, wenn zwei voneinander unabhängige Vorbedingungen erfüllt sind (z.B. "Bauteil eingespannt" (`EI1`) und "Schutztür geschlossen" (`EI2`)).
 - **Quittierung**: Eine Aktion wird erst ausgeführt, wenn sowohl ein Befehl (`EI1`) als auch eine manuelle Quittierung durch einen Bediener (`EI2`) vorliegen.
 - **Materialfluss**: Ein Förderband stoppt (`EO`), wenn sowohl der vordere als auch der hintere Sensor ein langes Bauteil detektiert haben.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

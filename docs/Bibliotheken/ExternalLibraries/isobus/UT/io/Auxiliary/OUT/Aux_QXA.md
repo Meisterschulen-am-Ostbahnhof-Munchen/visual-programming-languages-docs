@@ -1,7 +1,5 @@
 # Aux_QXA
 
-
-
 <img width="1474" height="164" alt="image" src="https://github.com/user-attachments/assets/d340aff6-bc76-425a-b4a7-5e628255f4a6" />
 
 * * * * * * * * * *
@@ -47,6 +45,7 @@ Der Aux_QXA Funktionsblock fungiert als Wrapper für den internen Aux_QX Baustei
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor dem INIT-Ereignis
 2. **Initialisierung**: Während der INIT-Verarbeitung
 3. **Bereit**: Nach erfolgreicher Initialisierung (INITO)
@@ -60,13 +59,11 @@ Der Funktionsblock durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen booleschen Ausgabeblöcken bietet Aux_QXA:
+
 - Erweiterte Parametrierbarkeit über STRING-Parameter
 - ISOBUS-Kompatibilität
 - Standardisierte Initialisierungsprozeduren
 - Adapter-basierte Schnittstelle für erweiterte Kommunikation
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

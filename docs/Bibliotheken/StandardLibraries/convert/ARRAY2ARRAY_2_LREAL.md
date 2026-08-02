@@ -1,7 +1,5 @@
 # ARRAY2ARRAY_2_LREAL
 
-
-
 <img width="1219" height="160" alt="image" src="https://github.com/user-attachments/assets/57ce3ad0-2da9-4075-8d37-abf71840b469" />
 
 * * * * * * * * * *
@@ -48,6 +46,7 @@ Der Funktionsblock `ARRAY2ARRAY_2_LREAL` arbeitet ereignisgesteuert. Sobald das 
 ## Zustandsübersicht
 
 Der Funktionsblock befindet sich typischerweise in zwei Hauptzuständen:
+
 1.  **Warten auf Anfrage:** Der Block wartet auf das `REQ`-Ereignis. In diesem Zustand ist er passiv und führt keine Operationen aus.
 2.  **Verarbeitung der Anfrage:** Nach Empfang von `REQ` wechselt der Block in diesen Zustand, führt den Kopierprozess von `IN` nach `OUT` aus und emittiert anschließend `CNF`, bevor er in den Zustand "Warten auf Anfrage" zurückkehrt.
 

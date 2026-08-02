@@ -1,6 +1,5 @@
 # AD_SHL
 
-
 ![AD_SHL](./AD_SHL.svg)
 
 * * * * * * * * * *
@@ -52,10 +51,13 @@ Der Baustein ist ereignisgesteuert: Jedes Eintreffen eines gültigen Ereignisses
 ## Technische Besonderheiten
 - **Adapter-Schnittstelle**  
   Anstelle fester Ein- und Ausgänge verwendet der FB Adapter (`IN` als Socket, `OUT` als Plug), was eine flexible Anbindung in verschiedenen Architekturkontexten ermöglicht.
+
 - **Generischer Datentyp**  
   Der Parameter `N` ist als `ANY_INT` deklariert, sodass der Baustein mit unterschiedlichen ganzzahligen Typen (z. B. `INT`, `DINT`, `LINT`) arbeiten kann, solange der interne `F_SHL` diese unterstützt.
+
 - **Kombinierte Ereignissteuerung**  
   Sowohl das externe Ereignis `UPDATE` als auch das vom Socket-Adapter empfangene Ereignis `IN.E1` können die Berechnung anstoßen. Dies ermöglicht sowohl zyklische als auch datengetriebene Aktualisierungen.
+
 - **Lizenzierung**  
   Der Baustein ist unter der Eclipse Public License 2.0 lizenziert und als generischer FB konzipiert.
 
@@ -65,14 +67,17 @@ Der FB ist als **kompositives Netzwerk** realisiert und besitzt keinen eigenen i
 ## Anwendungsszenarien
 - **Bitmanipulation in der Steuerungstechnik**  
   Verschieben von Bitmustern zur Maskierung, Skalierung oder Kodierung von Signalen.
+
 - **Datenaufbereitung in Kommunikationsprotokollen**  
   Anpassung von Datenworten durch Linksverschiebung, z. B. für serielle Schnittstellen oder Bussysteme.
+
 - **Arithmetische Berechnungen**  
   Multiplikation mit Zweierpotenzen durch Linksverschiebung, insbesondere in rechenzeitkritischen Umgebungen.
 
 ## Vergleich mit ähnlichen Bausteinen
 - **Direkter `F_SHL`-Baustein**  
   Der interne `F_SHL` bietet die gleiche Funktionalität, jedoch ohne Adapter-Schnittstelle. `AD_SHL` kapselt diesen Baustein und erweitert ihn um eine adapterbasierte Anbindung, was die Wiederverwendung in modularen Systemen erleichtert.
+
 - **Adapterbasierte Rechenbausteine**  
   Ähnliche Konzepte existieren für andere bitweise Operationen (z. B. `AD_SHR`, `AD_AND`). `AD_SHL` spezifiziert die Linksverschiebung und kann in einer Bibliothek adaptergekoppelter Logikbausteine verwendet werden.
 

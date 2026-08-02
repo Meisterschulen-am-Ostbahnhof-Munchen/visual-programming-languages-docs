@@ -1,7 +1,5 @@
 # F_LINT_TO_DINT
 
-
-
 <img width="1435" height="214" alt="F_LINT_TO_DINT" src="https://github.com/user-attachments/assets/a682b68b-2ee9-48bc-ad3e-b7a8d15353a8" />
 
 * * * * * * * * * *

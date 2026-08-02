@@ -1,6 +1,5 @@
 # ILOCK_BLOCK_PROTECT
 
-
 ![ILOCK_BLOCK_PROTECT](./ILOCK_BLOCK_PROTECT.svg)
 
 * * * * * * * * * *
@@ -62,6 +61,7 @@ Der Baustein arbeitet nach dem Prinzip der **ersten Priorität**:
 
 4. **Auswertungszustand (`EVAL`)**  
    Nach Ablauf der Totzeit verlässt der Baustein die Schutzphase und geht in den `EVAL`-Zustand. Hier wird anhand der aktuellen Eingänge entschieden:
+
    - `DI_UP = TRUE` und `DI_DOWN = FALSE` → Übergang nach `UP`
    - `DI_DOWN = TRUE` und `DI_UP = FALSE` → Übergang nach `DOWN`
    - Beide `FALSE` oder beide `TRUE` → Rückkehr in `STOP`

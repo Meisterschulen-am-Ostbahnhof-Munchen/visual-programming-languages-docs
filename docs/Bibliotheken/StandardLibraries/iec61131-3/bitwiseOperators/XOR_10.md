@@ -1,7 +1,5 @@
 # XOR_10
 
-
-
 <img width="1133" height="411" alt="XOR_10" src="https://github.com/user-attachments/assets/fae74b7d-690a-4c2a-bd06-0c737cafc41d" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Dieser FB verwendet keine Adapter.
 Bei Empfang des REQ-Ereignisses berechnet der FB eine bitweise XOR-Verknüpfung aller aktiven Eingänge (IN1 bis IN10). Das Ergebnis wird am OUT-Ausgang ausgegeben und das CNF-Ereignis ausgelöst.
 
 Die XOR-Operation wird für jedes Bitposition separat durchgeführt:
+
 - Ergebnisbit = 1, wenn eine ungerade Anzahl von Eingangsbits an dieser Position 1 ist
 - Ergebnisbit = 0, wenn eine gerade Anzahl von Eingangsbits an dieser Position 1 ist
 

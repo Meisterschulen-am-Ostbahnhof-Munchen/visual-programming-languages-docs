@@ -1,7 +1,5 @@
 # logiBUS_2_CAN_IXA
 
-
-
 <img width="2031" height="363" alt="image" src="https://github.com/user-attachments/assets/d06a9404-82e0-4172-9321-7677d642f03f" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der Composite-Funktionsblock nutzt intern den logiBUS_2_CAN_IX-Baustein zur Vera
 
 ## Zustandsübersicht
 Der Baustein durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor INIT-Aufruf
 2. **Initialisierung**: Während INIT-Verarbeitung
 3. **Bereit**: Nach erfolgreicher Initialisierung (INITO bestätigt)
@@ -56,6 +55,7 @@ Der Baustein durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet logiBUS_2_CAN_IXA:
+
 - CAN-Bus-Kommunikationsfähigkeit
 - Erweiterte Parametrierungsmöglichkeiten
 - Integrierte Statusrückmeldungen

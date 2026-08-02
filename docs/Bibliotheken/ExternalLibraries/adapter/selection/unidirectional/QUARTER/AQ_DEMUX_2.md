@@ -1,6 +1,5 @@
 # AQ_DEMUX_2
 
-
 ![AQ_DEMUX_2](./AQ_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Der Baustein besitzt keine direkten Daten-Ausgänge. Die Ausgaben erfolgen über
 
 ## Funktionsweise
 Beim Eintreffen eines **REQ**-Ereignisses wird der Wert des Daten-Eingangs **K** ausgewertet:
+
 - Ist **K = 1**, so wird der aktuelle Wert des Adapter-Sockets **IN** auf den Adapter-Plug **OUT1** weitergeleitet.
 - Ist **K = 2**, erfolgt die Weiterleitung auf **OUT2**.
 - Für andere Werte von **K** bleibt der Baustein inaktiv oder der Wert wird ignoriert (je nach Implementierung). Anschließend wird das **CNF**-Ereignis ausgegeben, um den erfolgreichen Abschluss zu signalisieren.
@@ -53,6 +53,7 @@ Die Weiterleitung erfolgt ereignisgesteuert und ohne interne Zwischenspeicherung
 
 ## Zustandsübersicht
 Der Baustein besitzt keinen expliziten Zustandsautomaten. Die interne Logik lässt sich als einfache Folge beschreiben:
+
 1. **Warten auf REQ** (Idle-Zustand)
 2. **Auswerten von K** und **Weiterleiten des IN-Werts** an den entsprechenden Plug
 3. **Senden von CNF** und Rückkehr in den Idle-Zustand

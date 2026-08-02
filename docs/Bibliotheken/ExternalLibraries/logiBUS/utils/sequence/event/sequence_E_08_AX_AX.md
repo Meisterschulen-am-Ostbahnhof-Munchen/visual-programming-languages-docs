@@ -1,6 +1,5 @@
 # sequence_E_08_AX_AX
 
-
 ![sequence_E_08_AX_AX](./sequence_E_08_AX_AX.svg)
 
 * * * * * * * * * *

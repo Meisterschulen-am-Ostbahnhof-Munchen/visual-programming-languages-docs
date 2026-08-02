@@ -1,8 +1,5 @@
 # AE_CYCLE
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -43,6 +40,7 @@ Der **AE_CYCLE** ist als Composite Function Block (zusammengesetzter Funktionsba
 
 ## Zustandsübersicht
 Da es sich um einen Composite Function Block handelt, besitzt er keine eigene Zustandsmaschine (ECC). Der implizite Zustand wird durch den internen `E_DELAY` bestimmt:
+
 *   **Inaktiv**: Nach Initialisierung oder `STOP`.
 *   **Laufend**: Nach `START`, während der Timer läuft oder neu getriggert wird.
 

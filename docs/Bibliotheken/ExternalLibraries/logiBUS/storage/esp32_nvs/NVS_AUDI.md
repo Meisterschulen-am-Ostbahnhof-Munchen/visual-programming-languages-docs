@@ -1,6 +1,5 @@
 # NVS_AUDI
 
-
 ![NVS_AUDI](./NVS_AUDI.svg)
 
 * * * * * * * * * *
@@ -61,6 +60,7 @@ Da im XML keine explizite Zustandsmaschine definiert ist, ergibt sich der Ablauf
 
 1. **Initialisierungsphase** – INIT empfangen → NVS-INIT → NVS-GET ausgelöst.  
    Danach: Bereit (wartet auf SET oder erneuten GET durch erneutes INIT).
+
 2. **Speicherphase** – Ereignis über AUDI_IN (E1) → NVS-SET → Wert wird geschrieben.
 3. **Lesevorgang** – Automatisch nach INIT oder durch erneutes INIT.
 

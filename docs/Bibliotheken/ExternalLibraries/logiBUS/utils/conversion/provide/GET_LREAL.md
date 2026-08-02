@@ -1,6 +1,5 @@
 # GET_LREAL
 
-
 ![GET_LREAL](./GET_LREAL.svg)
 
 * * * * * * * * * *

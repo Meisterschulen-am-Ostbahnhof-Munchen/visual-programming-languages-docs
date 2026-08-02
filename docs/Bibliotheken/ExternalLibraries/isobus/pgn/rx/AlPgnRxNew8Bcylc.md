@@ -1,7 +1,5 @@
 # AlPgnRxNew8Bcylc
 
-
-
 <img width="1277" height="291" alt="image" src="https://github.com/user-attachments/assets/5d409e8c-eb17-45a5-a2af-fcaedc21d048" />
 
 * * * * * * * * * *
@@ -68,9 +66,6 @@ Dieser Funktionsblock verwendet keine Adapter.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu generischen CAN-Empfangsblöcken ist `AlPgnRxNew8Bcylc` speziell auf das ISOBUS-PGN-Protokoll zugeschnitten. Er bietet höhere Abstraktion durch direkte PGN-Adressierung, integrierte Partnererkennung (`NmSource`) und automatische Timeout-Verwaltung. Einfache Empfangsblöcke würden diese Protokollschicht und Verwaltungsfunktionen nicht bereitstellen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

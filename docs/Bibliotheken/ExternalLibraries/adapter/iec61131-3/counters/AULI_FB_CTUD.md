@@ -1,6 +1,5 @@
 # AULI_FB_CTUD
 
-
 ![AULI_FB_CTUD](./AULI_FB_CTUD.svg)
 
 * * * * * * * * * *
@@ -14,6 +13,7 @@ Der Funktionsblock **AULI_FB_CTUD** implementiert einen Aufwärts-/Abwärtszähl
 ### **Ereignis-Eingänge**
 
 Der Block verfügt über keine klassischen Ereigniseingänge. Stattdessen werden die Zählereignisse über die **Adapter-Sockets** übertragen:
+
 - **CU** (Count Up) – Ereignis über `CU.E1`
 - **CD** (Count Down) – Ereignis über `CD.E1`
 - **R** (Reset) – Ereignis über `R.E1`
@@ -25,6 +25,7 @@ Der Block verfügt über keine klassischen Ereigniseingänge. Stattdessen werden
 - **CNF** – Standard-Ereignisausgang, der bei jeder Zähleraktualisierung ausgelöst wird.
 
 Zusätzlich werden Ereignisse über die **Adapter-Plugs** ausgegeben:
+
 - **QU.E1** – Ereignis bei Zählerüberlauf (Maximalwert erreicht)
 - **QD.E1** – Ereignis bei Zählerunterlauf (Wert 0)
 - **CV.E1** – Ereignis zur Aktualisierung des aktuellen Zählerstands
@@ -32,6 +33,7 @@ Zusätzlich werden Ereignisse über die **Adapter-Plugs** ausgegeben:
 ### **Daten-Eingänge**
 
 Der Block besitzt keine separaten Dateneingänge. Alle Eingangsdaten werden über die Adapter-Sockets bereitgestellt:
+
 - **CU.D1** (BOOL) – Aktivierung Inkrement (TRUE steigert den Zähler bei CU.E1)
 - **CD.D1** (BOOL) – Aktivierung Dekrement
 - **R.D1** (BOOL) – Aktivierung Reset
@@ -41,6 +43,7 @@ Der Block besitzt keine separaten Dateneingänge. Alle Eingangsdaten werden übe
 ### **Daten-Ausgänge**
 
 Es gibt keine separaten Datenausgänge. Die Ausgangsdaten werden über die Adapter-Plugs ausgegeben:
+
 - **QU.D1** (BOOL) – Signalisiert Erreichen des Maximalwerts
 - **QD.D1** (BOOL) – Signalisiert Erreichen von 0
 - **CV.D1** (ULINT) – Aktueller Zählerstand
@@ -68,6 +71,7 @@ Der Baustein reagiert auf Ereignisse an den Eingangsadaptern (`CU.E1`, `CD.E1`, 
 - **LD**: Wenn `LD.E1` kommt und `LD.D1 = TRUE`, wird der Zähler auf den Wert von `PV.D1` gesetzt.
 
 Nach jeder Verarbeitung wird das Ereignis `CNF` ausgegeben. Gleichzeitig werden die Ausgangsadapter aktualisiert:
+
 - `QU.D1` wird `TRUE`, wenn der Zähler den Maximalwert (`2^64 - 1`) erreicht hat.
 - `QD.D1` wird `TRUE`, wenn der Zählerstand 0 ist.
 - `CV.D1` liefert den aktuellen Zählerstand.

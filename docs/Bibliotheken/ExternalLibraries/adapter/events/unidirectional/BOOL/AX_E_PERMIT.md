@@ -1,6 +1,5 @@
 # AX_E_PERMIT
 
-
 ![AX_E_PERMIT](./AX_E_PERMIT.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Der Adapter ist unidirektional ausgelegt und stellt einen booleschen Wert (`D1`)
 Der Baustein enthält intern einen Standard-Funktionsblock `E_PERMIT` aus der IEC-61499-Bibliothek. Das eingehende Ereignis `EI` wird direkt an den internen `E_PERMIT`-Eingang weitergeleitet. Dessen Ausgang `EO` ist nur dann aktiv, wenn der zugehörige Freigabeeingang (`PERMIT` des internen Blocks) den Wert `TRUE` annimmt. Dieses Freigabesignal wird aus dem Adapter `PERMIT` über die Verbindung `PERMIT.D1` gespeist.
 
 Somit gilt:
+
 - **Permit = TRUE:** Das Ereignis `EI` wird unverzögert an `EO` weitergegeben.
 - **Permit = FALSE:** Das Ereignis wird unterdrückt; `EO` bleibt inaktiv.
 

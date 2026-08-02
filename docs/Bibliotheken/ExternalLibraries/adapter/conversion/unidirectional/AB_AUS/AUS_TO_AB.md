@@ -1,6 +1,5 @@
 # AUS_TO_AB
 
-
 ![AUS_TO_AB](./AUS_TO_AB.svg)
 
 * * * * * * * * * *
@@ -12,18 +11,22 @@ Der **AUS_TO_AB** ist ein Composite-Funktionsblock zur Konvertierung eines unidi
 
 ### **Ereignis-Eingänge**
 Der Baustein besitzt keine eigenen Ereignis-Eingangsports. Ereignisse werden über den **AUS_IN**-Adapter (Socket) empfangen:
+
 - **AUS_IN.E1** – Auslöser für die Datenkonvertierung und Weitergabe an den Ausgang.
 
 ### **Ereignis-Ausgänge**
 Ereignisse werden über den **AB_OUT**-Adapter (Plug) ausgegeben:
+
 - **AB_OUT.E1** – Bestätigung, dass der konvertierte Wert am Ausgang anliegt.
 
 ### **Daten-Eingänge**
 Daten werden über den **AUS_IN**-Adapter bereitgestellt:
+
 - **AUS_IN.D1** (USINT) – Der zu konvertierende 8‑Bit‑vorzeichenlose Integerwert.
 
 ### **Daten-Ausgänge**
 Daten werden über den **AB_OUT**-Adapter weitergegeben:
+
 - **AB_OUT.D1** (BYTE) – Der konvertierte Byte‑Wert.
 
 ### **Adapter**

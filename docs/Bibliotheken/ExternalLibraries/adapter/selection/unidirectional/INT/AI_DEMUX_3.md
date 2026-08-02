@@ -1,6 +1,5 @@
 # AI_DEMUX_3
 
-
 ![AI_DEMUX_3](./AI_DEMUX_3.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Keine Datenausgänge vorhanden – die Ausgabe erfolgt ausschließlich über die
 
 ## Funktionsweise
 Wird ein **REQ**-Ereignis empfangen, liest der Baustein den Index **K** aus. Der aktuelle Wert des Adapter-Eingangs **IN** wird dann auf den durch **K** bestimmten Ausgangs-Adapter übertragen:
+
 - `K = 1` → Weiterleitung nach **OUT1**
 - `K = 2` → Weiterleitung nach **OUT2**
 - `K = 3` → Weiterleitung nach **OUT3**

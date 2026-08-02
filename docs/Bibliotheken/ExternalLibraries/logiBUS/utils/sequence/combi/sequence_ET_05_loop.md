@@ -1,9 +1,6 @@
 # sequence_ET_05_loop
 
-
-
 <img width="1683" height="398" alt="image" src="https://github.com/user-attachments/assets/caae5b56-a31e-4867-ae04-0be4eeb193b6" />
-
 
 ![sequence_ET_05_loop_ecc](./sequence_ET_05_loop_ecc.svg)
 
@@ -52,6 +49,7 @@ Der Funktionsblock `sequence_ET_05_loop` implementiert eine zyklische Sequenz mi
 
 ## Funktionsweise
 Der FB ist als Basic-FB mit einer Execution Control Chart (ECC) implementiert. Die Sequenz beginnt im Zustand `xSTART`. Mit dem Ereignis `START_S1` wird der erste Zustand `sState_01` aktiviert. Bei jedem Zustandseintritt werden folgende Aktionen ausgeführt:
+
 1.  Der Timer-Adapter wird gestoppt (`timeOut.STOP`).
 2.  Der Ausgang des vorherigen Zustands wird zurückgesetzt (z.B. `State_05_X` für `DO_S5`).
 3.  Die Zustandsnummer `STATE_NR` wird aktualisiert und der Timer für den nächsten Übergang konfiguriert (z.B. `State_01_C`).
@@ -59,6 +57,7 @@ Der FB ist als Basic-FB mit einer Execution Control Chart (ECC) implementiert. D
 5.  Der Timer-Adapter wird mit der für diesen Übergang konfigurierten Zeit gestartet (`timeOut.START`).
 
 Ein Zustandswechsel kann nun auf zwei Arten erfolgen:
+
 *   **Ereignisgesteuert:** Durch das entsprechende Eingangsereignis (z.B. `S1_S2`).
 *   **Zeitgesteuert:** Durch das `TimeOut`-Ereignis des Adapters, sofern die Zeit (`DT_...`) nicht auf `NO_TIME` gesetzt ist.
 
@@ -72,6 +71,7 @@ Die Sequenz durchläuft die Zustände 1 bis 5 und springt dann von `State_05` wi
 
 ## Zustandsübersicht
 Die ECC besteht aus sieben Zuständen:
+
 1.  **`xSTART`**: Inaktiver Anfangszustand.
 2.  **`sState_01`** bis **`sState_05`**: Die fünf aktiven Sequenzzustände.
 3.  **`sRESET`**: Zwischenzustand, der beim Reset alle Ausgänge zurücksetzt und die Bestätigung für den `xSTART`-Zustand sendet.

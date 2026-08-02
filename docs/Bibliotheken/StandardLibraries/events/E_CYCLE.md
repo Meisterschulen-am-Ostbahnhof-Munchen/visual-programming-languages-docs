@@ -1,6 +1,5 @@
 # E_CYCLE
 
-
 ## Einleitung
 Der `E_CYCLE` ist ein Funktionsbaustein nach IEC 61499, der als periodischer Ereignisgenerator dient. Nach dem Starten feuert der Baustein in einem festgelegten Zeitintervall (`DT`) wiederholt ein Ausgangsereignis (`EO`). Er ist das grundlegende Werkzeug zur Erstellung von Taktgebern und zyklischen Abläufen.
 
@@ -53,11 +52,6 @@ Die Funktionalität des `E_CYCLE` basiert intern auf einer Rückkopplungsschleif
 | Funktion     | Periodischer Taktgeber  | Einmalige Verzögerung        | Einmaliger Impuls fester Dauer|
 | Wiederholung | Kontinuierlich          | Einmalig pro `START`-Ereignis| Einmalig pro `REQ`-Ereignis |
 | Steuerung    | START/STOP              | START/STOP                   | REQ                          |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,7 +1,5 @@
 # E_SPLIT_4
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -24,6 +22,7 @@ Der `E_SPLIT_4` ist ein grundlegender Funktionsbaustein nach IEC 61499, der ein 
 
 ## Funktionsweise
 Wenn ein Ereignis am Eingang `EI` eintrifft, löst der Baustein sofort nacheinander die vier Ausgangsereignisse aus. Die Reihenfolge ist dabei garantiert:
+
 1.  Zuerst wird `EO1` ausgelöst.
 2.  Unmittelbar danach wird `EO2` ausgelöst.
 3.  Unmittelbar danach wird `EO3` ausgelöst.

@@ -1,7 +1,5 @@
 # Datentyp-Detail: STRING
 
-
-
 ## Beschreibung
 Der Datentyp **STRING** repräsentiert eine Zeichenfolge, die aus 8-Bit-Zeichen (üblicherweise ISO/IEC 10646-1 oder ASCII) besteht.
 
@@ -36,8 +34,6 @@ Sonderzeichen werden durch ein Dollar-Zeichen (`$`) eingeleitet:
 - `'Zeile 1$NZeile 2'` (Mit Zeilenumbruch)
 - `'Zahl: $R$L100'` (Wagenrücklauf und Zeilenvorschub)
 - `'STRING#''Abc'''` (Mit explizitem Typ-Präfix)
-
-
 
 ## 🛠️ Zugehörige Übungen
 

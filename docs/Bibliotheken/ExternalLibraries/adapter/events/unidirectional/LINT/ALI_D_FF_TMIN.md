@@ -1,6 +1,5 @@
 # ALI_D_FF_TMIN
 
-
 ![ALI_D_FF_TMIN](./ALI_D_FF_TMIN.svg)
 
 * * * * * * * * * *
@@ -38,6 +37,7 @@ Keine direkten Datenausgänge. Der latched Wert wird über den **Q-Adapter** ber
 
 ## Funktionsweise
 Der **ALI_D_FF_TMIN** kapselt einen internen FB vom Typ `E_D_FF_ANY_TMIN`. Dessen Funktionsweise:
+
 - Bei einem Ereignis am Eingangsadapter **I.E1** (steigende Flanke) wird der Datenwert **I.D1** übernommen.
 - Das Ausgangsereignis **EO** wird jedoch erst ausgelöst, wenn seit dem letzten **EO** mindestens die Zeit **Tmin** vergangen ist.
 - Die Initialisierung (INIT) setzt den internen Zeitgeber und bereitet den Baustein vor.
@@ -52,6 +52,7 @@ Der Baustein arbeitet asynchron, die Zeitsteuerung erfolgt über den internen FB
 
 ## Zustandsübersicht
 Da der FB intern `E_D_FF_ANY_TMIN` verwendet, besitzt er implizit folgende Zustände:
+
 1. **Initialisiert**: Nach INIT, bereit für erste Flanke.
 2. **Flanke empfangen**: Wert wurde gespeichert, EO wird nach **Tmin** gesendet.
 3. **Warten auf Mindestzeit**: Kein neues EO möglich, bis Tmin abgelaufen.

@@ -1,6 +1,5 @@
 # AUS_DEMUX_4
 
-
 ![AUS_DEMUX_4](./AUS_DEMUX_4.svg)
 
 * * * * * * * * * *
@@ -45,6 +44,7 @@ Alle Adapter sind vom unidirektionalen Typ `AUS` und übertragen Daten in die an
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Im Ruhezustand wartet er auf ein `REQ`‑Ereignis.
 2. Beim Eintreffen von `REQ` wird der Wert des Daten‑Eingangs `K` ausgelesen.
 3. Der aktuelle Wert des `IN`‑Adapters wird auf den durch `K` bestimmten Ausgangsadapter kopiert. Die übrigen drei Ausgänge behalten ihren bisherigen Zustand.

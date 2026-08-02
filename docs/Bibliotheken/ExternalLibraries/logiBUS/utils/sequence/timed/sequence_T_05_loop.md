@@ -1,9 +1,6 @@
 # sequence_T_05_loop
 
-
-
 <img width="1442" height="375" alt="image" src="https://github.com/user-attachments/assets/0c00023a-1184-4972-a6a3-69899cafe98b" />
-
 
 ![sequence_T_05_loop_ecc](./sequence_T_05_loop_ecc.svg)
 
@@ -39,6 +36,7 @@ Der Funktionsblock `sequence_T_05_loop` ist ein zeitgesteuerter Sequenzer, der e
 
 ## Funktionsweise
 Der FB ist als Basic Function Block (BFB) mit einer Execution Control Chart (ECC) implementiert. Nach dem Start (`START_S1`) durchläuft er die Zustände `State_01` bis `State_05` in einer festen Reihenfolge. In jedem aktiven Zustand werden folgende Aktionen ausgeführt:
+
 1.  **Exit-Aktion des vorherigen Zustands**: Setzt den zugehörigen booleschen Ausgang (`DO_Sx`) auf `FALSE`.
 2.  **Confirmation-Aktion**: Setzt die aktuelle `STATE_NR` und konfiguriert die Verweildauer für den *aktuellen* Zustand im `timeOut`-Adapter (z.B. wird in `State_01` der Wert von `DT_S1_S2` geladen).
 3.  **Entry-Aktion des neuen Zustands**: Setzt den zugehörigen booleschen Ausgang (`DO_Sx`) auf `TRUE`.
@@ -54,6 +52,7 @@ Der Übergang zum nächsten Zustand erfolgt ausschließlich, wenn der `timeOut`-
 
 ## Zustandsübersicht
 Die ECC umfasst sieben Zustände:
+
 *   **`xSTART`**: Inaktiver Initialzustand. Wartet auf `START_S1`.
 *   **`sState_01`** bis **`sState_05`**: Aktive Arbeitszustände. Jeder aktiviert seinen spezifischen Ausgang (`DO_Sx`) und startet den Timer für seinen eigenen Verbleib.
 *   **`sRESET`**: Reset-Zustand. Deaktiviert alle Ausgänge, stoppt den Timer und sendet eine Bestätigung (`CNF`) mit `STATE_NR=0`. Geht automatisch mit Condition `1` (immer wahr) zurück zu `xSTART`.
@@ -65,11 +64,6 @@ Die ECC umfasst sieben Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einem einfachen TON-Timer (Verzögerungseinschaltverzögerung) realisiert dieser FB eine vollständige Zustandsmaschine mit mehreren Schritten. Im Vergleich zu generischen Sequencer-FBs, die oft mit Schrittabfragen (z.B. über Steigungsflanken) arbeiten, ist dieser Baustein rein zeitgesteuert. Er ähnelt einer Kette von TON-Bausteinen, ist aber in einem einzigen, zustandsbasierten FB gekapselt, was die Anordnung und Parametrierung vereinfacht.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

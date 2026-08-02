@@ -1,9 +1,6 @@
 # E_SPLIT (Ereignis-Verteiler)
 
-
-
 ![E_SPLIT Funktionssymbol](https://user-images.githubusercontent.com/69573151/210802227-1615f35d-6ed5-459b-a796-a5ef5fb11452.png)
-
 
 ![E_SPLIT_ecc](./E_SPLIT_ecc.svg)
 
@@ -62,11 +59,6 @@ Der **E_SPLIT** ist ein standardkonformer Funktionsbaustein (IEC 61499-1 Annex A
 | Funktionsprinzip | 1:2 Sequenz | 1:n Verteilung | n:1 Kombination |
 | Ereignisreihenfolge | Fest | Adressabhängig | Beliebig |
 | Zustandsmodell | BasicFB | Variabel | Keins |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

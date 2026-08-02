@@ -1,8 +1,5 @@
 # logiBUS_DI
 
-
-
-
 ![logiBUS_DI](./logiBUS_DI.svg)
 
 * * * * * * * * * *
@@ -58,6 +55,7 @@ Da es sich um eine reine Konstantendefinition handelt, gibt es keine Zustandsüb
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Gegensatz zu Funktionsblöcken mit aktiver Logik handelt es sich hier um eine reine Konstantendefinition, die:
+
 - Keine aktive Verarbeitung durchführt
 - Keine Ereignisse verarbeitet
 - Ausschließlich Konfigurationsdaten bereitstellt

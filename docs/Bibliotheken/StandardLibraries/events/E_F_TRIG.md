@@ -1,7 +1,5 @@
 # E_F_TRIG
 
-
-
 ![E_F_TRIG Diagram](https://user-images.githubusercontent.com/113907528/204898671-3eb058ff-7481-4fc8-a2d4-8cf50f349cee.png)
 
 * * * * * * * * * *
@@ -51,11 +49,6 @@ Die interne Logik des Bausteins (Stand: `events-3.0.0`) ist fehlerhaft und imple
 | Erkannte Flanke | Fallend (benannt), Steigend (implementiert) | Steigend | - |
 | Ereignissteuerung | Ja     | Ja       | Ja       |
 | Prinzip | Flankendetektor | Flankendetektor | Ereignisweiche |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

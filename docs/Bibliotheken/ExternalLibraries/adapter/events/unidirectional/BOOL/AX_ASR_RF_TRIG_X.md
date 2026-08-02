@@ -1,6 +1,5 @@
 # AX_ASR_RF_TRIG_X
 
-
 ![AX_ASR_RF_TRIG_X](./AX_ASR_RF_TRIG_X.svg)
 
 * * * * * * * * * *
@@ -38,6 +37,7 @@ Im FBNetzwerk des Bausteins wird eine Instanz des Standard-FBs `E_RF_TRIG` verwe
 - Das Ausgangsereignis `E_RF_TRIG.ER` (steigende Flanke) wird auf den Adapterausgang `Q.RESET` gelegt.
 
 Durch diese Verschaltung ergibt sich das gewünschte „Crossed Mapping“:
+
 - **Steigende Flanke** am Eingangswert → **RESET**-Impuls am Ausgang.
 - **Fallende Flanke** am Eingangswert → **SET**-Impuls am Ausgang.
 

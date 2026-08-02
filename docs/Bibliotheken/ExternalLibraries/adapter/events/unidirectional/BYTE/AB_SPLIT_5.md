@@ -1,6 +1,5 @@
 # AB_SPLIT_5
 
-
 ![AB_SPLIT_5](./AB_SPLIT_5.svg)
 
 * * * * * * * * * *

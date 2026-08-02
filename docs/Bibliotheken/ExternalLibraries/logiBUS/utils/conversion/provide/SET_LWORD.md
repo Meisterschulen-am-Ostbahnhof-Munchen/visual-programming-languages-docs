@@ -1,6 +1,5 @@
 # SET_LWORD
 
-
 ![SET_LWORD](./SET_LWORD.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Der Baustein ist ein einfacher, zustandsloser Funktionsblock – es gibt keine V
 
 ## Zustandsübersicht
 Der Baustein besitzt nur einen einzigen EC‑Zustand:
+
 - **REQ:** Führt den Algorithmus aus und sendet anschließend das CNF-Ereignis.
 
 Es gibt keine Wartezustände oder Schleifen.

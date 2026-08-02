@@ -1,7 +1,5 @@
 # logiBUS_IE
 
-
-
 <img width="2037" height="313" alt="image" src="https://github.com/user-attachments/assets/3cb31c53-ac68-4483-bfc4-834776122b60" />
 
 * * * * * * * * * *
@@ -63,9 +61,6 @@ Der Baustein verfügt über einen initialisierten und einen Betriebszustand. Nac
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet logiBUS_IE erweiterte Ereigniserkennungsfunktionen und kann komplexe Eingabemuster wie Doppelklicks erkennen. Die parametrierbare Konfiguration ermöglicht eine flexible Anpassung an verschiedene Hardware-Schnittstellen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

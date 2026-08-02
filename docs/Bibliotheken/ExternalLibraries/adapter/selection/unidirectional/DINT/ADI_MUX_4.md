@@ -1,6 +1,5 @@
 # ADI_MUX_4
 
-
 ![ADI_MUX_4](./ADI_MUX_4.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Der Funktionsblock **ADI_MUX_4** ist ein generischer Multiplexer, der über den 
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Ein Ereignis am **REQ**-Eingang triggert die Verarbeitung.
 2. Der aktuelle Wert des Index **K** wird ausgewertet (gültige Werte 0 … 3).
 3. Entsprechend dem Index wird der Datenstrom des zugehörigen Socket-Adapters (IN1 für K=0, IN2 für K=1, usw.) auf den Plug-Adapter **OUT** durchverbunden.
@@ -57,6 +57,7 @@ Eine nicht definierte Index (K > 3) führt zu keinem gültigen Durchschaltvorgan
 
 ## Zustandsübersicht
 Da der FB keine explizite Zustandsmaschine in der XML‑Definition besitzt, ergibt sich ein implizites Verhalten:
+
 - **Inaktiv:** Wartet auf REQ-Ereignis.
 - **Verarbeitung:** Nach dem REQ wird der Index K ausgelesen, die Durchschaltung durchgeführt und unmittelbar das **CNF**‑Ereignis gesendet. Danach kehrt der FB in den inaktiven Zustand zurück.
 

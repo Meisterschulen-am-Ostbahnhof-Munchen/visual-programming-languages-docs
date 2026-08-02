@@ -1,6 +1,5 @@
 # DWORDS_TO_ARR08B
 
-
 ![DWORDS_TO_ARR08B](./DWORDS_TO_ARR08B.svg)
 
 * * * * * * * * * *
@@ -38,6 +37,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Bei einem positiven Flanke am Ereigniseingang `REQ` wird die folgende Logik ausgeführt:
+
 1. Die beiden Eingangs‑DWORDs `IN_00` und `IN_01` werden Byte für Byte ausgelesen.
 2. Dabei kommen die systeminternen Byte‑Zugriffe (z. B. `IN_00.%B0` für das niederwertigste Byte) zum Einsatz.
 3. Die Bytes werden in **Little‑Endian‑Reihenfolge** in das Ausgangsarray `OUT` kopiert:

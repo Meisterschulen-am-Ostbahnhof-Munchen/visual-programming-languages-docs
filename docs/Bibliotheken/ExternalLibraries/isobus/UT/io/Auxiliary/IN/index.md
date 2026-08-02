@@ -1,9 +1,5 @@
 # IN
 
-
-
-
-
 ## 🎧 Podcast
 
 * [4diac IDE: Dein "Hello World" der Automatisierung – Das Blinking Tutorial Lokal](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)
@@ -17,5 +13,4 @@
 * [Decoding the datasheet](https://www.youtube.com/watch?v=0Ed9I68F2tM)
 * [Löten wie ein Profi](https://www.youtube.com/watch?v=8ulMWcxaB-c)
 * [Via in Pad Plated Over](https://www.youtube.com/watch?v=E0vbluaWA8Y)
-
 

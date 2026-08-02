@@ -1,7 +1,5 @@
 # Q_ObjHideShow
 
-
-
 ![Q_ObjHideShow](https://user-images.githubusercontent.com/116869307/214148121-b8115f93-fc92-499d-ae8f-b207656d64c0.png)
 
 * * * * * * * * * *
@@ -86,11 +84,6 @@ Der **Q_ObjHideShow** ist ein standardkonformer Funktionsbaustein zur Sichtbarke
 | Kaskadierend  | ✔             | ✖                  | ✔                   |
 | Rückmeldung   | ✔             | ✖                  | ✔                   |
 
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_014](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_014.md)
@@ -104,6 +97,7 @@ Der Q_ObjHideShow-Baustein bietet zentrale Sichtbarkeitskontrolle:
 - **Zuverlässig**: ISO-konforme Implementierung
 
 Essential für:
+
 - Adaptive Benutzeroberflächen
 - Komplexe Maskenhierarchien
 - Zustandsgesteuerte Visualisierungen

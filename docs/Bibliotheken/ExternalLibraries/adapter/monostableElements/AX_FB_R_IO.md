@@ -1,6 +1,5 @@
 # AX_FB_R_IO
 
-
 ![AX_FB_R_IO](./AX_FB_R_IO.svg)
 
 * * * * * * * * * *
@@ -62,6 +61,7 @@ Der Funktionsblock besitzt genau einen Zustand:
 | REQ     | Start- und Endzustand. Wartet auf ein Ereignis von `IN` oder `RESET1`. Nach Ausführung des Algorithmus kehrt der Zustand immer zu `REQ` zurück (keine weiteren Zustände). |
 
 Es gibt zwei Transitionen:
+
 - Von `REQ` zu `REQ` bei Ereignis `IN.E1`
 - Von `REQ` zu `REQ` bei Ereignis `RESET1.E1`
 

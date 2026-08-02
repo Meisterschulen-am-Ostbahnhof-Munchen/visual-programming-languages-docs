@@ -1,8 +1,5 @@
 # HANDLE
 
-
-
-
 ![HANDLE](./HANDLE.svg)
 
 * * * * * * * * * *
@@ -29,6 +26,7 @@ Dies ist eine globale Konstantendefinition und besitzt daher keine Ereignis- ode
 
 ## Funktionsweise
 Die `HANDLE`-Konstante definiert zwei symbolische Namen für spezielle Integer-Werte:
+
 1.  `UNVALID`: Repräsentiert einen ungültigen oder nicht genutzten Handle mit dem Wert `-1` (dezimal) bzw. `0xFFFF` (hexadezimal). Dieser Wert kann verwendet werden, um anzuzeigen, dass ein Handle nicht initialisiert ist, eine Operation fehlgeschlagen ist oder eine Ressource nicht verfügbar ist.
 2.  `GLOBAL`: Repräsentiert einen Pseudo-Handle mit dem Wert `32767` (dezimal) bzw. `0x7FFF` (hexadezimal). Dieser Wert dient dazu, eine globale Zieladresse (Broadcast) innerhalb des ISOBUS-Netzwerks anzusprechen, anstatt ein spezifisches Einzelgerät.
 

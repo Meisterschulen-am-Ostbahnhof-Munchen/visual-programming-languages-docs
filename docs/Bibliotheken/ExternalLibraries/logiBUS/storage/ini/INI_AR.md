@@ -1,6 +1,5 @@
 # INI_AR
 
-
 ![INI_AR](./INI_AR.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Gleichzeitig kann über den Adapter-Eingang `AR_IN` ein neuer Wert (Ereignis E1,
 
 ## Zustandsübersicht
 Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Logik wird vollständig über die Ereignisverkettung des internen INI-Bausteins gesteuert:
+
 - Nach `INIT` wird der Wert gelesen (GET).
 - Jeder `SET`-Impuls über `AR_IN` schreibt einen neuen Wert in die INI-Datei.
 

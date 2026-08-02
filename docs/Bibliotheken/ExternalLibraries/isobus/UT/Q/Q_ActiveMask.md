@@ -1,7 +1,5 @@
 # Q_ActiveMask
 
-
-
 ![Q_ActiveMask](https://user-images.githubusercontent.com/69573151/212328886-4d5587f1-b2cd-4e8a-9cbe-0aa55ca1abcf.png)
 
 * * * * * * * * * *
@@ -82,12 +80,6 @@ Der **Q_ActiveMask** ist ein standardkonformer Funktionsbaustein zur Steuerung a
 | Fehlercodes   | Standard     | Hersteller    | Teilweise        |
 | Zustandsverwaltung | Voll | Basis       | Erweitert        |
 
-
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_019](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)
@@ -104,6 +96,7 @@ Der Q_ActiveMask-Baustein bietet die Referenzimplementierung für ISOBUS-Maskenw
 - **Flexibel**: Unterstützt komplexe Anzeigeszenarien
 
 Essentiell für:
+
 - Hersteller von ISOBUS-Terminals
 - Entwickler landwirtschaftlicher Steuergeräte
 - Systemintegratoren in der Agrartechnik

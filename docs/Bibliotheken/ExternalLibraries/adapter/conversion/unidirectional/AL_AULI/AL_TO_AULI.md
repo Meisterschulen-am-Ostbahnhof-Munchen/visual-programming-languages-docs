@@ -1,6 +1,5 @@
 # AL_TO_AULI
 
-
 ![AL_TO_AULI](./AL_TO_AULI.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Er dient als Brücke zwischen Komponenten, die mit unterschiedlichen Datentypen 
 ## Funktionsweise
 
 Der FB realisiert die Konvertierung durch einen internen Baustein `F_LWORD_TO_ULINT` aus der Bibliothek `iec61131::conversion`.  
+
 - Sobald am Eingangsadapter **AL_IN** ein Ereignis **E1** eintrifft, wird dieses an den Eingang **REQ** des internen Konvertierungsbausteins weitergeleitet.  
 - Gleichzeitig wird der Datenwert **D1** (LWORD) an den Eingang **IN** des Konverters übergeben.  
 - Nach erfolgreicher Konvertierung signalisiert der interne Baustein dies über seinen Ausgang **CNF**, welcher das Ereignis **E1** des Ausgangsadapters **AULI_OUT** auslöst.  

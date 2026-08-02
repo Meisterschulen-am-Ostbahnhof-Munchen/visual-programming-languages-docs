@@ -1,7 +1,5 @@
 # AE2_SPLIT_MERGE
 
-
-
 <img width="1100" height="217" alt="image" src="https://github.com/user-attachments/assets/2e9417e6-db5d-41ea-95a9-b176f5538af4" />
 
 * * * * * * * * * *
@@ -53,6 +51,7 @@ Der Funktionsblock besitzt keinen internen Zustand und arbeitet stateless. Alle 
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Splitter- oder Merger-Blöcken bietet AE2_SPLIT_MERGE:
+
 - Bidirektionale Funktionalität in einem einzigen Block
 - Adapter-basierte Schnittstellen für standardisierte Kommunikation
 - Isolierte Signalwege zwischen verschiedenen Adapterrichtungen

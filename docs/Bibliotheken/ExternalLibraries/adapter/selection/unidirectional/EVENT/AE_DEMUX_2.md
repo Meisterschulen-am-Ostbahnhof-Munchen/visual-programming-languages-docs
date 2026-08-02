@@ -1,6 +1,5 @@
 # AE_DEMUX_2
 
-
 ![AE_DEMUX_2](./AE_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Keine direkten Daten-Ausgänge, da die Ausgabe über die Adapter-Plugs erfolgt.
 
 ## Funktionsweise
 Bei Eintreffen eines Ereignisses auf `REQ` wird der aktuelle Wert von `K` ausgelesen. Der Demultiplexer kopiert den am Socket `IN` anliegenden Wert auf den Plug, der durch den Index bestimmt wird:
+
 - **K = 1** → Wert wird auf `OUT1` übertragen.
 - **K = 2** → Wert wird auf `OUT2` übertragen.
 

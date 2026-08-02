@@ -1,7 +1,5 @@
 # DataPanel_LO_QXA
 
-
-
 <img width="1457" height="251" alt="image" src="https://github.com/user-attachments/assets/418a1c22-0c23-44ee-91d2-bb0a93254c66" />
 
 * * * * * * * * * *
@@ -56,6 +54,7 @@ Der Funktionsblock initialisiert sich über das INIT-Ereignis und gibt über INI
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet DataPanel_LO_QXA erweiterte Funktionalität durch:
+
 - Parametrierbare Service-Schnittstelle
 - SA-Member-basierte Adressierung
 - Integrierte Statusrückmeldung

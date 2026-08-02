@@ -1,8 +1,7 @@
 # E_RDELAY
 
-
-
 ![E_RDELAY Symbol](https://user-images.githubusercontent.com/113907528/204900519-829582bd-d9f3-4bee-934a-15dc393b4c34.png)
+
 * * * * * * * * * *
 
 ## Einleitung
@@ -68,9 +67,6 @@ Der **E_RDELAY** (Reloadable Delay) ist ein erweiterter Verzögerungsbaustein na
 | Reset-Funktion | ✔️ (durch START) | ❌ |
 | Mehrfach-Trigger | Nur 1 EO | Nur 1 EO |
 | Service-Sequenzen | 3 definiert | 1 definiert |
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

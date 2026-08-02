@@ -2,9 +2,6 @@
 
 [Bild des Funktionsbausteins AX_FB_SR, falls vorhanden]
 
-
-
-
 ![AX_FB_SR_ecc](./AX_FB_SR_ecc.svg)
 
 * * * * * * * * * *
@@ -51,6 +48,7 @@ Q1.D1 := SET1.D1 OR ((NOT RESET.D1) AND Q1.D1);
 ```
 
 Dies bedeutet:
+
 1.  Ist der Dateneingang von **SET1** `TRUE`, wird der Ausgang **Q1** auf `TRUE` gesetzt (unabhängig von RESET).
 2.  Ist **SET1** `FALSE` und **RESET** `TRUE`, wird der Ausgang **Q1** auf `FALSE` gesetzt.
 3.  Sind beide Eingänge `FALSE`, behält **Q1** seinen vorherigen Zustand bei (Speicherfunktion).

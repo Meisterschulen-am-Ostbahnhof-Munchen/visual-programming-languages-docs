@@ -1,6 +1,5 @@
 # AUI_TO_AL
 
-
 ![AUI_TO_AL](./AUI_TO_AL.svg)
 
 * * * * * * * * * *
@@ -16,10 +15,12 @@ Der Baustein gibt das Ereignis **E1** über den Plug **AL_OUT** aus, nachdem die
 
 ### **Daten-Eingänge**
 Der Daten-Eingang wird ausschließlich über den Socket bereitgestellt:
+
 * **AUI_IN.D1** (Typ: UINT) – Der zu konvertierende Wert.
 
 ### **Daten-Ausgänge**
 Der Daten-Ausgang wird über den Plug bereitgestellt:
+
 * **AL_OUT.D1** (Typ: LWORD) – Der konvertierte Wert (LWORD).
 
 ### **Adapter**
@@ -31,6 +32,7 @@ Der Daten-Ausgang wird über den Plug bereitgestellt:
 
 ## Funktionsweise
 Der Funktionsblock arbeitet ereignisgesteuert:
+
 1. Ein eingehendes Ereignis am Socket **AUI_IN.E1** (ausgelöst durch den angeschlossenen Sender) aktiviert den internen Baustein `F_UINT_TO_LWORD` über dessen Ereigniseingang `REQ`.
 2. Der Wert von **AUI_IN.D1** (UINT) wird an den Dateneingang `IN` des Konvertierungsbausteins übergeben.
 3. Die Konvertierung erfolgt nach IEC 61131-Standard: Ein UINT-Wert wird in einen LWORD-Wert umgewandelt (die oberen 48 Bit werden mit Nullen aufgefüllt).
@@ -45,6 +47,7 @@ Der Funktionsblock arbeitet ereignisgesteuert:
 
 ## Zustandsübersicht
 Der Baustein **AUI_TO_AL** realisiert keine expliziten Zustände, da es sich um eine reine, ereignisgesteuerte Abbildung handelt. Es besteht folgender deterministischer Ablauf:
+
 - **Warten**: Der Baustein wartet auf ein Ereignis am Eingangssocket.
 - **Konvertieren**: Nach Ereigniseingang wird die Konvertierung ausgeführt.
 - **Ausgeben**: Nach Abschluss wird das Ergebnis ausgegeben und der Baustein kehrt in den Wartezustand zurück.

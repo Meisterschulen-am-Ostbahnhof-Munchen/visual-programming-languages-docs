@@ -1,6 +1,5 @@
 # GET_LINT
 
-
 ![GET_LINT](./GET_LINT.svg)
 
 * * * * * * * * * *

@@ -1,8 +1,5 @@
 # ISOUSERHOME_e
 
-
-
-
 ![ISOUSERHOME_e](./ISOUSERHOME_e.svg)
 
 * * * * * * * * * *
@@ -30,6 +27,7 @@ Nicht vorhanden.
 
 ## Funktionsweise
 Der Block definiert vier symbolische Konstanten vom Typ `SINT` (Short Integer):
+
 *   `intern` (Wert: 0): Kennzeichnet ein internes Control Function (CF) oder einen internen Benutzer innerhalb eines Geräts oder einer logischen Einheit.
 *   `network` (Wert: 1): Kennzeichnet ein externes CF oder einen externen Benutzer im Netzwerk.
 *   `thisMember` (Wert: 2): Spezifiziert, dass ein Ereignis oder eine Nachricht für dieses spezifische interne CF oder diesen Benutzer bestimmt ist.
@@ -47,6 +45,7 @@ Nicht anwendbar, da es sich um eine statische Konstantendefinition ohne Zustands
 
 ## Anwendungsszenarien
 Die Konstanten werden primär in ISOBUS-konformen Steuerungssystemen in der Landtechnik verwendet, beispielsweise in Traktoren und deren Anbaugeräten. Typische Anwendungen sind:
+
 *   **Nachrichtenfilterung:** Ein Empfängerblock kann anhand des `ISOUSERHOME_e`-Werts entscheiden, ob eine eingehende ISOBUS-Nachricht für das eigene Gerät (`thisMember`), ein anderes Gerät im Netzwerk (`network`) oder für eine interne Verarbeitung (`intern`) bestimmt ist.
 *   **Nachrichtenkonstruktion:** Ein Senderblock kann den Wert setzen, um den beabsichtigten Empfänger einer ausgesendeten Nachricht zu kennzeichnen.
 *   **Statusrückmeldung:** Ein Block kann den Status `notdef` zurückgeben, wenn die Herkunft oder das Ziel einer Nachricht nicht ermittelt werden kann.

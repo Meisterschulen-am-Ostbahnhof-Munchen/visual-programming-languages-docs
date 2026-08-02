@@ -1,6 +1,5 @@
 # AW_TO_AB
 
-
 ![AW_TO_AB](./AW_TO_AB.svg)
 
 * * * * * * * * * *
@@ -29,6 +28,7 @@ Der Baustein besitzt keine eigenen Daten-Ausgänge. Das konvertierte BYTE-Ergebn
 
 ## Funktionsweise
 Der Baustein realisiert eine reine Datenkonvertierung von WORD (16 Bit) zu BYTE (8 Bit). Der Ablauf ist:
+
 1. Ein Ereignis am Adapter-Eingang `AW_IN.E1` löst den internen Funktionsbaustein `F_WORD_TO_BYTE` aus.
 2. Der Datenwert `AW_IN.D1` (WORD) wird als Eingang an `F_WORD_TO_BYTE.IN` übergeben.
 3. Nach der Konvertierung wird das Ergebnis über `F_WORD_TO_BYTE.OUT` an den Adapter-Ausgang `AB_OUT.D1` weitergeleitet.
@@ -44,6 +44,7 @@ Die Konvertierung gemäß IEC 61131-3 liefert standardmäßig das niederwertigst
 
 ## Zustandsübersicht
 Der Composite-Baustein besitzt keinen eigenen Zustandsautomaten. Die Funktionsweise ist rein ereignisgesteuert:
+
 - **Idle**: Warten auf ein Ereignis am Socket `AW_IN`.
 - **Konvertierung aktiv**: Nach Empfang eines Ereignisses wird der interne FB `F_WORD_TO_BYTE` ausgeführt (kombinatorische Logik ohne Wartezyklen).
 - **Ausgabe**: Sobald die Konvertierung abgeschlossen ist, wird das Ereignis am Plug `AB_OUT` und der neue Datenwert ausgegeben.

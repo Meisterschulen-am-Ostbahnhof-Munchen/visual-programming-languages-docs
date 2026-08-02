@@ -1,6 +1,5 @@
 # ADI_D_FF_HYS
 
-
 ![ADI_D_FF_HYS](./ADI_D_FF_HYS.svg)
 
 * * * * * * * * * *
@@ -49,6 +48,7 @@ Der Baustein besitzt keine direkten Datenausgänge; der latched Wert wird über 
 2. **Datenübernahme**  
    Der Eingangsadapter `I` liefert mit jedem Event an `I.E1` den aktuellen Datenwert `I.D1`.  
    Der interne Funktionsblock `E_D_FF_ANY_HYS` übernimmt diesen Wert gemäß der konfigurierten Hysterese:  
+
    - Liegt der Eingangswert **über** dem oberen Schwellwert (gespeicherter Wert + Hysterese), wird der Ausgang auf `1` gesetzt.  
    - Liegt der Eingangswert **unter** dem unteren Schwellwert (gespeicherter Wert - Hysterese), wird der Ausgang auf `0` gesetzt.  
    - Bleibt der Wert innerhalb des Hysteresebandes, ändert sich der Ausgang nicht.

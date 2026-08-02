@@ -1,6 +1,5 @@
 # ILOCK_IO_AX
 
-
 ![ILOCK_IO_AX](./ILOCK_IO_AX.svg)
 
 * * * * * * * * * *
@@ -53,6 +52,7 @@ Der Baustein besitzt keine klassischen Ereignis- oder Datenein-/ausgänge auf FB
 
 ## Funktionsweise
 Der FB arbeitet als **Momentanschalter mit Interlock** (auch „exklusiver Latch“). Im Zustand `REQ` wird folgende Logik ausgeführt:
+
 - Der Ausgang `OUT.D1` wird nur dann **TRUE**, wenn der Eingang `IN.D1` aktiv ist **und** kein anderer FB in der Kette gerade aktiv ist (`ILOCK_IN.DO1` vom Vorgänger und `ILOCK_OUT.DI1` vom Nachfolger müssen FALSE sein).
 - Der eigene aktive Zustand (`OUT.D1`) wird über die Adapter `ILOCK_IN.DI1` (an den Vorgänger) und `ILOCK_OUT.DO1` (an den Nachfolger) weitergegeben.
 - Jeder auslösende Ereigniseingang (egal ob von `IN.E1`, `ILOCK_IN.EO1` oder `ILOCK_OUT.EI1`) führt zur erneuten Berechnung der Logik und zur Ausgabe aller Ereignisse (`OUT.E1`, `ILOCK_IN.EI1`, `ILOCK_OUT.EO1`).

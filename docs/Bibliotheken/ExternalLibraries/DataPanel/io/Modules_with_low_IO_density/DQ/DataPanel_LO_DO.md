@@ -1,8 +1,5 @@
 # DataPanel_LO_DO
 
-
-
-
 ![DataPanel_LO_DO](./DataPanel_LO_DO.svg)
 
 * * * * * * * * * *
@@ -45,6 +42,7 @@ Die globale Konstante DataPanel_LO_DO definiert eine Sammlung von strukturierten
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen I/O-Konstantendefinitionen bietet DataPanel_LO_DO:
+
 - Spezifische Anpassung für Module mit niedriger I/O-Dichte
 - Strukturierte Datentypen für bessere Typsicherheit
 - Klare Benennungskonvention für bessere Lesbarkeit

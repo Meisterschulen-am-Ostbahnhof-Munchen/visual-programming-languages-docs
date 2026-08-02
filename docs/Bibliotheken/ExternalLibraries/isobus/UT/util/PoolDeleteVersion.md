@@ -1,6 +1,5 @@
 # PoolDeleteVersion
 
-
 ![PoolDeleteVersion](./PoolDeleteVersion.svg)
 
 * * * * * * * * * *

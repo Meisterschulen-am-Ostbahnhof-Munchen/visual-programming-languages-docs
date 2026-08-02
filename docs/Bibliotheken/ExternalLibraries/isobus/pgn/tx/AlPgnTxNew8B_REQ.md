@@ -1,7 +1,5 @@
 # AlPgnTxNew8B_REQ
 
-
-
 <img width="1308" height="254" alt="image" src="https://github.com/user-attachments/assets/09f85519-8068-47fc-af54-0c2422fe947f" />
 
 * * * * * * * * * *
@@ -51,6 +49,7 @@ Der Funktionsblock `AlPgnTxNew8B_REQ` dient zur Konfiguration und Steuerung der 
 
 ## Zustandsübersicht
 Der Baustein durchläuft implizit folgende Hauptzustände:
+
 1.  **Nicht initialisiert**: Vor dem ersten `INIT`-Ereignis.
 2.  **Bereit**: Nach erfolgreicher Initialisierung (`INITO` empfangen). Der Baustein kann nun `install`-Anfragen entgegennehmen.
 3.  **Installation läuft**: Nach Auslösen von `install`. Der Baustein wartet auf die Antwort vom Protokoll-Stack.
@@ -64,9 +63,6 @@ Der Baustein durchläuft implizit folgende Hauptzustände:
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`E_SEND` / `E_RCV` (Standard 61499)**: Diese generischen Kommunikationsbausteine sind protokollunabhängig. `AlPgnTxNew8B_REQ` ist hingegen spezialisiert auf ISOBUS/J1939 und übernimmt die protokollspezifische Konfiguration (PGN, Priorität, Zieladresse), die bei den Standardbausteinen manuell in den Datenparametern abgebildet werden müsste.
 *   **Einfache TX-Bausteine**: Andere ISOBUS-Sendebausteine erwarten oft einen bereits konfigurierten `PGN_handle`. `AlPgnTxNew8B_REQ` ist der vorgelagerte Baustein, der genau diesen Handle durch die Installation einer neuen PGN bereitstellt.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

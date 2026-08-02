@@ -1,6 +1,5 @@
 # AR_D_FF_HYS_TMIN
 
-
 ![AR_D_FF_HYS_TMIN](./AR_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *

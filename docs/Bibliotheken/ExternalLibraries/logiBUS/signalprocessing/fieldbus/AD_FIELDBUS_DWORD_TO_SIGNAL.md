@@ -1,6 +1,5 @@
 # AD_FIELDBUS_DWORD_TO_SIGNAL
 
-
 ![AD_FIELDBUS_DWORD_TO_SIGNAL](./AD_FIELDBUS_DWORD_TO_SIGNAL.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Der FB besitzt ausschließlich Adapter-Schnittstellen, keine separaten Ereignis-
 ### **Adapter**
 
 Die Adapter sind vom Typ `unidirectional`, d.h. sie übertragen jeweils ein Ereignis und ein Datum in eine Richtung. Der FB verwendet zwei verschiedene Adaptertypen:
+
 - **AD**: Überträgt ein Ereignis und ein Datenwort (DWORD)
 - **AX**: Überträgt ein Ereignis und ein boolsches Signal
 

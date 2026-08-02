@@ -1,7 +1,5 @@
 # AX_F_TRIG
 
-
-
 * * * * * * * * * *
 ## Einleitung
 

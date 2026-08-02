@@ -1,6 +1,2 @@
 # Data_types
 
-
-
-
-

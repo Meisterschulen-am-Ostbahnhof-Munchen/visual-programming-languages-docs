@@ -1,7 +1,5 @@
 # logiBUS_QD_PWM
 
-
-
 <img width="1848" height="333" alt="image" src="https://github.com/user-attachments/assets/ea4b0496-56de-4eb9-a419-6cd8c9b095bb" />
 
 * * * * * * * * * *
@@ -50,6 +48,7 @@ Der Funktionsblock ermöglicht die PWM-Steuerung von Ausgängen über das logiBU
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über zwei Hauptzustände:
+
 1. **Nicht initialisiert**: Block wartet auf INIT-Ereignis
 2. **Initialisiert und betriebsbereit**: Block kann REQ-Anforderungen verarbeiten und PWM-Daten ausgeben
 
@@ -61,9 +60,6 @@ Der Funktionsblock verfügt über zwei Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet `logiBUS_QD_PWM` erweiterte PWM-Funktionalität mit 32-Bit-Auflösung (DWORD). Gegenüber analogen Ausgabeblöcken ermöglicht er die direkte PWM-Steuerung ohne zusätzliche Wandlung.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

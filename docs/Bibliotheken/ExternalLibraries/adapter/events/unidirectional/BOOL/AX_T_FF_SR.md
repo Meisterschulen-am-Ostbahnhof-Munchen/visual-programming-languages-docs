@@ -1,9 +1,6 @@
 # AX_T_FF_SR
 
-
-
 <img width="1218" height="240" alt="image" src="https://github.com/user-attachments/assets/92d95ec9-3cf5-48b7-b262-35e136f6371e" />
-
 
 ![AX_T_FF_SR_ecc](./AX_T_FF_SR_ecc.svg)
 
@@ -35,11 +32,13 @@ Der AX_T_FF_SR ist ein ereignisgesteuerter bistabiler Funktionsblock mit Toggle-
 
 ## Funktionsweise
 Der AX_T_FF_SR verfügt über drei Betriebszustände:
+
 - **START**: Initialzustand
 - **SET**: Ausgang Q ist TRUE
 - **RESET**: Ausgang Q ist FALSE
 
 Die Zustandsübergänge werden durch die Ereigniseingänge gesteuert:
+
 - S-Ereignis führt von jedem Zustand in den SET-Zustand
 - R-Ereignis führt von jedem Zustand in den RESET-Zustand
 - CLK-Ereignis toggelt den aktuellen Zustand (SET → RESET oder RESET → SET)
@@ -84,11 +83,6 @@ RESET (Q.D1 = FALSE)
 Im Vergleich zu einem einfachen E_SR-Flipflop bietet der AX_T_FF_SR zusätzliche Toggle-Funktionalität durch den CLK-Eingang. Während ein reines SR-Flipflop nur über Set- und Reset-Eingänge verfügt, ermöglicht dieser Baustein zusätzlich das taktgesteuerte Umschalten des Ausgangszustands.
 
 Vergleich mit [E_T_FF_SR](../../../../../StandardLibraries/events/E_T_FF_SR.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

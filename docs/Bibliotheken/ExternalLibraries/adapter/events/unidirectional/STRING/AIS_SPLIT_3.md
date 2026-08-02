@@ -1,6 +1,5 @@
 # AIS_SPLIT_3
 
-
 ![AIS_SPLIT_3](./AIS_SPLIT_3.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # E_DEMUX_2
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *

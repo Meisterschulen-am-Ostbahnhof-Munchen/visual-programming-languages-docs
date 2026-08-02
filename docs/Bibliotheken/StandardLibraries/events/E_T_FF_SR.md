@@ -1,8 +1,6 @@
 # E_T_FF_SR
 
-
 ## 🎧 Podcast
-
 
 ![E_T_FF_SR_ecc](./E_T_FF_SR_ecc.svg)
 
@@ -37,6 +35,7 @@ Der `E_T_FF_SR` ist ein zustandsbehafteter Baustein, dessen Ausgang `Q` durch dr
 
 ### Besonderheiten des Verhaltens aus dem `START`-Zustand
 Der Baustein startet im `START`-Zustand (impliziert `Q` ist undefiniert/`FALSE`).
+
 - Wenn das erste Ereignis ein `S` ist, wird `Q` auf `TRUE` gesetzt.
 - Wenn das erste Ereignis ein `R` ist, wird `Q` auf `FALSE` gesetzt.
 - **Wenn das erste Ereignis ein `CLK` ist, wird `Q` auf `TRUE` gesetzt** (nicht getoggelt von `FALSE` nach `TRUE`). Subsequent `CLK` events werden dann normal toggeln.
@@ -51,11 +50,6 @@ Der Baustein startet im `START`-Zustand (impliziert `Q` ist undefiniert/`FALSE`)
 - **Steuerung mit manueller Korrektur**: Ein Toggler (`CLK`) für eine Lampe, die aber bei Bedarf (z.B. Sicherheitsgründen) direkt Ein (`S`) oder Aus (`R`) geschaltet werden kann.
 - **Modus-Umschaltung**: Zwischen verschiedenen Modi hin- und herwechseln (`CLK`), mit der Möglichkeit, einen Grundmodus (`R`) oder einen Sondermodus (`S`) direkt anzusteuern.
 - **Fehler-Reset und Toggle**: Ein Fehlerzustand kann durch `S` gesetzt werden, durch `R` quittiert, und der Zustand des Fehler-Handlings kann durch `CLK` getoggelt werden.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

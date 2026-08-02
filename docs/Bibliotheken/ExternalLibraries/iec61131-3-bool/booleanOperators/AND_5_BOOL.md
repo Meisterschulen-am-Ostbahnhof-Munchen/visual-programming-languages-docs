@@ -1,7 +1,5 @@
 # AND_5_BOOL
 
-
-
 <img width="1383" height="334" alt="image" src="https://github.com/user-attachments/assets/26c969c4-f1f2-4142-9188-57cd244d9cd6" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 Die Funktionsweise ist deterministisch und ereignisgesteuert:
+
 1.  Das eingehende Ereignis `REQ` aktiviert den Block.
 2.  Die aktuellen Werte aller fünf booleschen Dateneingänge (`IN1` bis `IN5`) werden eingelesen.
 3.  Die logische UND-Operation wird berechnet: `OUT = IN1 AND IN2 AND IN3 AND IN4 AND IN5`.
@@ -48,6 +47,7 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Sein Verhalten 
 
 ## Anwendungsszenarien
 Typische Anwendungen sind Sicherheits- und Freigabeketten in der Automatisierungstechnik, bei denen mehrere Bedingungen gleichzeitig erfüllt sein müssen:
+
 *   Überwachung, ob alle Schutzgitter einer Maschine geschlossen sind.
 *   Prüfung, ob alle erforderlichen Medien (Druck, Vakuum, Kühlung) verfügbar sind, bevor ein Prozess gestartet wird.
 *   Verknüpfung mehrerer Sensor- oder Schalterzustände zu einer gemeinsamen Freigabelogik.

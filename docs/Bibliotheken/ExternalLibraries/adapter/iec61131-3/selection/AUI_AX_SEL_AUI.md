@@ -2,7 +2,6 @@
 
 binary selection
 
-
 ![AUI_AX_SEL_AUI](./AUI_AX_SEL_AUI.svg)
 
 * * * * * * * * * *
@@ -32,6 +31,7 @@ Der Funktionsblock **AUI_AX_SEL_AUI** realisiert eine binäre Auswahl zwischen z
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert über die Adapter-Schnittstellen. Sobald ein Ereignis am Selektor **G.E1** eintrifft, wird der interne Funktionsblock **F_SEL** aktiviert. **F_SEL** prüft den Wert **G.D1**:
+
 - Ist **G.D1** = `FALSE` (oder 0), wird der Wert von **IN0.D1** an den Ausgang **OUT.D1** weitergegeben.
 - Ist **G.D1** = `TRUE` (oder ungleich 0), wird **IN1.D1** ausgewählt.
 
@@ -44,6 +44,7 @@ Nach Abschluss der Selektion signalisiert **F_SEL.CNF** das Ereignis **OUT.E1**,
 
 ## Zustandsübersicht
 Da es sich um einen Composite-FB ohne eigenen Zustandsautomaten handelt, existieren keine expliziten Zustände. Die Logik ist rein ereignisgesteuert:
+
 1. **Warte auf Ereignis** – solange kein **G.E1** eintrifft, bleibt der Ausgang unverändert.
 2. **Auswahl durchführen** – nach **G.E1** wird der entsprechende Eingang ausgewählt und der Ausgang gesetzt.
 3. **Ausgang signalisieren** – **OUT.E1** wird nach erfolgreicher Auswahl generiert.

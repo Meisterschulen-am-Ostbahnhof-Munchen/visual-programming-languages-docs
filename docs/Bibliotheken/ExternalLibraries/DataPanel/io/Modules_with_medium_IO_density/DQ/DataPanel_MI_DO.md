@@ -1,8 +1,5 @@
 # DataPanel_MI_DO
 
-
-
-
 ![DataPanel_MI_DO](./DataPanel_MI_DO.svg)
 
 * * * * * * * * * *
@@ -47,6 +44,7 @@ Die globale Konstante DataPanel_MI_DO definiert feste Pin-Zuordnungen für ein D
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einzelnen Pin-Definitionen bietet diese globale Konstante:
+
 - Zentrale Verwaltung aller Pin-Zuordnungen
 - Typisierte Zugriffsmöglichkeiten durch strukturierte Datentypen
 - Bessere Wartbarkeit und Lesbarkeit des Codes

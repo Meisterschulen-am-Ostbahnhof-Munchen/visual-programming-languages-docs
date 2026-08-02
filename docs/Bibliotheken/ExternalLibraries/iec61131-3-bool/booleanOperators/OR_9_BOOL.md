@@ -1,7 +1,5 @@
 # OR_9_BOOL
 
-
-
 <img width="1370" height="457" alt="image" src="https://github.com/user-attachments/assets/8371b695-a421-40f0-9019-239b40fdc3ee" />
 
 * * * * * * * * * *
@@ -36,6 +34,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 
 ## Funktionsweise
 Der `OR_9_BOOL`-Block arbeitet nach folgendem Algorithmus:
+
 1.  **Auslösung**: Das eingehende Ereignis `REQ` aktiviert den Block.
 2.  **Eingabesammlung**: Die aktuellen Werte aller neun booleschen Eingänge (`IN1` bis `IN9`) werden eingelesen.
 3.  **Berechnung**: Die logische ODER-Funktion wird auf die Eingangswerte angewendet. Die Operation kann als `OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5 OR IN6 OR IN7 OR IN8 OR IN9` beschrieben werden.

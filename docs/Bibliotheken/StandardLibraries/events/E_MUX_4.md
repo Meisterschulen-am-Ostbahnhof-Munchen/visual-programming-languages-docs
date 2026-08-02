@@ -1,7 +1,5 @@
 # E_MUX_4
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -46,11 +44,6 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 - **Zusammenfassen von Befehlen**: Vier verschiedene Taster lösen denselben Prozess aus, aber der Prozess muss wissen, welcher der vier Taster gedrückt wurde.
 - **Kombinierte Alarme**: Vier verschiedene Alarme werden zu einer zentralen Alarmroutine geleitet, die dann anhand von `K` den spezifischen Alarmtext anzeigt.
 - **Modus-Auswahl**: Zusammenführen der Start-Ereignisse von vier verschiedenen Betriebsmodi.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

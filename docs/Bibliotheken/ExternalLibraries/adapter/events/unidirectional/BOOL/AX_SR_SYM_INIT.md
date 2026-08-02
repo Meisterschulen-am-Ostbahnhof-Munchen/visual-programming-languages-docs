@@ -1,6 +1,5 @@
 # AX_SR_SYM_INIT
 
-
 ![AX_SR_SYM_INIT](./AX_SR_SYM_INIT.svg)
 
 * * * * * * * * * *
@@ -68,6 +67,7 @@ Die Transitionen zwischen `SET` und `RESET` werden nur durch die Ereignisse `S` 
 - **RESET** → Stabiler Zustand, in dem `Q.D1 = FALSE` (sofern zuvor zurückgesetzt).
 
 Übergänge:
+
 - `START` → `Init` : wenn `INIT` & `QI=TRUE`
 - `Init` → `SET` : wenn `Q_INIT=TRUE`
 - `Init` → `RESET` : wenn `Q_INIT=FALSE`

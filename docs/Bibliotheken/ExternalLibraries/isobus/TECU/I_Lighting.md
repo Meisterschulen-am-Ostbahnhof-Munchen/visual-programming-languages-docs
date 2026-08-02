@@ -1,6 +1,5 @@
 # I_Lighting
 
-
 ![I_Lighting](./I_Lighting.svg)
 
 * * * * * * * * * *
@@ -54,6 +53,7 @@ Der **I_Lighting**-Baustein wird durch das Ereignis `INIT` aktiviert. Dabei wird
 
 ## Zustandsübersicht
 Der Baustein besitzt keinen expliziten, veröffentlichten Zustandsautomaten. Das logische Verhalten lässt sich jedoch wie folgt beschreiben:
+
 - **Initialisierung:** Nach `INIT` wechselt der Baustein in den aktiven Zustand, quittiert mit `INITO`.
 - **Empfangsbereit:** Er wartet auf eingehende Nachrichten. Bei Empfang → `IND` aktualisiert alle Ausgänge und setzt `Q_timeout` zurück.
 - **Timeout-Überwachung:** Läuft ein interner Timer ab, ohne dass neue Daten eintreffen, wechselt der Baustein kurz in den Timeout-Zustand und signalisiert dies über `TIMEOUT`. Danach kehrt er in den Empfangsbereit-Zustand zurück.
@@ -67,6 +67,7 @@ Der Baustein besitzt keinen expliziten, veröffentlichten Zustandsautomaten. Das
 
 ## Vergleich mit ähnlichen Bausteinen
 Ähnliche ISOBUS-Bausteine gibt es für andere Parametergruppen, z. B. **I_Engine** (Motordaten), **I_Steering** (Lenkung) oder **I_WorkState** (Arbeitszustand). Im Vergleich zu diesen:
+
 - **Spezialisierung:** **I_Lighting** ist auf die Beleuchtung fokussiert und bietet eine hohe Anzahl von 32 spezifischen Leuchtenausgängen.
 - **Datenbreite:** Die Ausgänge sind BYTE (2 Bit genutzt), während andere Bausteine oft WORD oder DWORD verwenden.
 - **Timeout-Behandlung:** Nicht alle Bausteine implementieren eine eigene Timeout-Erkennung – hier ist sie explizit vorgesehen.

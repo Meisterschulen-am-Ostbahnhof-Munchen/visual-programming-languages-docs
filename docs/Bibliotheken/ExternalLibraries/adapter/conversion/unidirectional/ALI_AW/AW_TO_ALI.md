@@ -1,6 +1,5 @@
 # AW_TO_ALI
 
-
 ![AW_TO_ALI](./AW_TO_ALI.svg)
 
 * * * * * * * * * *
@@ -21,11 +20,13 @@ Der Funktionsblock **AW_TO_ALI** ist ein zusammengesetzter (Composite) Baustein,
 ### **Daten-Eingänge**
 
 Eingehende Daten werden über den **Socket AW_IN** geführt:
+
 *   **D1** (Datentyp: WORD) – der zu konvertierende 16‑Bit‑Wert.
 
 ### **Daten-Ausgänge**
 
 Die konvertierten Daten werden über den **Plug ALI_OUT** ausgegeben:
+
 *   **D1** (Datentyp: LINT) – der konvertierte 64‑Bit‑Wert (Long Integer).
 
 ### **Adapter**

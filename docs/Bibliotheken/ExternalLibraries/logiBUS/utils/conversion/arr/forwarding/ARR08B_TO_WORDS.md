@@ -1,6 +1,5 @@
 # ARR08B_TO_WORDS
 
-
 ![ARR08B_TO_WORDS](./ARR08B_TO_WORDS.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Bei Aktivierung des Ereignisses `REQ` wird das 8‑Byte‑Array `IN` sequenziell
 
 ## Zustandsübersicht
 Der Baustein besitzt keinen internen Zustandsautomaten. Die Verarbeitung erfolgt streng ereignisgesteuert:
+
 1. Warten auf `REQ`.
 2. Bei `REQ`: Kopieren der Bytes in die Ausgangswörter.
 3. Senden von `CNF` und Rückkehr in den Wartezustand.

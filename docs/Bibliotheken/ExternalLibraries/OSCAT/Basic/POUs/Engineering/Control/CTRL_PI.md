@@ -2,8 +2,6 @@
 
 # CTRL_PI
 
-
-
 FT_PI is a PI controller with manual functionality.
 
 version 2.0	30. jun 2008
@@ -61,8 +59,6 @@ default values for KP = 1, TN = 1, TV = 1, LIMIT_L = -1000, LIMIT_H = +1000.
 | Y | REAL | Control Output |
 | DIFF | REAL | Difference (Error) |
 | LIM | BOOL | Limit Reached Flag |
-
-
 
 ## 🛠️ Zugehörige Übungen
 

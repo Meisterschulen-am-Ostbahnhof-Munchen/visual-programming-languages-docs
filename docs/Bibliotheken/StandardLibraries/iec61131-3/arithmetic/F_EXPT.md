@@ -1,13 +1,10 @@
 # F_EXPT
 
-
-
 ![F_EXPT](https://github.com/user-attachments/assets/0446a2d1-6283-400f-976d-18ac9c482b25)
 
 * * * * * * * * * *
 
 ![F_EXPT](F_EXPT.svg)
-
 
 ## Einführung
 Der **F_EXPT** ist ein mathematischer Funktionsbaustein zur Berechnung von Potenzwerten, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die Berechnung von Basis-Exponent-Kombinationen mit ANY_REAL-Datentypen.

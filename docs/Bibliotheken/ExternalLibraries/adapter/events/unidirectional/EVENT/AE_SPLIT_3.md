@@ -1,6 +1,5 @@
 # AE_SPLIT_3
 
-
 ![AE_SPLIT_3](./AE_SPLIT_3.svg)
 
 * * * * * * * * * *

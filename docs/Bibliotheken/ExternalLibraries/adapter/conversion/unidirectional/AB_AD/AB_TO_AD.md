@@ -1,8 +1,5 @@
 # AB_TO_AD
 
-
-
-
 ![AB_TO_AD](./AB_TO_AD.svg)
 
 * * * * * * * * * *

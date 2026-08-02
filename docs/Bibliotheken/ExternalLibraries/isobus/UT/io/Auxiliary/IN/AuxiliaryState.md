@@ -1,8 +1,5 @@
 # AuxiliaryState
 
-
-
-
 ![AuxiliaryState](./AuxiliaryState.svg)
 
 * * * * * * * * * *

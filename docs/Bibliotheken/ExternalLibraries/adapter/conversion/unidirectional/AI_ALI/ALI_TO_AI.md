@@ -1,6 +1,5 @@
 # ALI_TO_AI
 
-
 ![ALI_TO_AI](./ALI_TO_AI.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Der Funktionsblock **ALI_TO_AI** ist ein zusammengesetzter Baustein (Composite F
 
 ## Funktionsweise
 Der Baustein arbeitet als reine Kopplung eines ALI‑Sockets mit einem AI‑Plug. Im Inneren wird der intern verfügbare Konvertierungsbaustein **F_LINT_TO_INT** verwendet.  
+
 1. Ein eingehendes Ereignis am **ALI_IN.E1** triggert den Konvertierungsbaustein.  
 2. Gleichzeitig wird der aktuelle Wert von **ALI_IN.D1** an den Eingang des Konverters übergeben.  
 3. Nach Abschluss der Konvertierung wird das Ergebnis an **AI_OUT.D1** weitergeleitet.  
@@ -56,6 +56,7 @@ Der gesamte Ablauf erfolgt atomar innerhalb eines Zyklus – Verzögerungen ents
 
 ## Zustandsübersicht
 Als zusammengesetzter Baustein ohne eigenes Zustandsdiagramm hat **ALI_TO_AI** keinen eigenen Zustandsautomaten. Der interne Konvertierungsbaustein `F_LINT_TO_INT` arbeitet nach dem einfachen Muster:  
+
 - **IDLE**: Warten auf ein Ereignis.  
 - **CONVERT**: Ausführen der Konvertierung und Ausgabe des Ergebnisses.  
 

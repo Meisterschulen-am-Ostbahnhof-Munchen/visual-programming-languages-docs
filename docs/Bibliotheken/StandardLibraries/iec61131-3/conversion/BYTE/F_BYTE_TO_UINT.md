@@ -1,7 +1,5 @@
 # F_BYTE_TO_UINT
 
-
-
 <img width="1436" height="212" alt="F_BYTE_TO_UINT" src="https://github.com/user-attachments/assets/8cb462ae-eb4e-4fd2-8556-33ab2b4fa9f3" />
 
 * * * * * * * * * *
@@ -43,9 +41,6 @@ Der Funktionsblock hat keinen internen Zustand. Die Ausführung erfolgt unmittel
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_UINT` oder `F_DWORD_TO_UINT` führen ähnliche Konvertierungen durch, jedoch mit anderen Eingangstypen.
 - `F_BYTE_TO_UINT` ist spezialisiert auf die Konvertierung von `BYTE` zu `UINT` und daher effizienter für diesen spezifischen Anwendungsfall.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,9 +1,5 @@
 # PI
 
-
-
-
-
 ## 🎧 Podcast
 
 * [Decoding IEC 61499: The Industrial Revolution Reshaping Factories and Careers](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Decoding-IEC-61499-The-Industrial-Revolution-Reshaping-Factories-and-Careers-e376ob1)

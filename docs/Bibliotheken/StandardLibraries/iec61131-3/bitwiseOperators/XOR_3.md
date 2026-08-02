@@ -1,7 +1,5 @@
 # XOR_3
 
-
-
 ![XOR_3](https://user-images.githubusercontent.com/116869307/214143735-3c0a538b-d39a-47e0-9cd3-1602d3640896.png)
 
 * * * * * * * * * *
@@ -40,6 +38,7 @@ Bei Eintreffen des REQ-Ereignisses führt der Baustein eine bitweise XOR-Operati
 
 ## Zustandsübersicht
 Der Baustein arbeitet zustandslos:
+
 1. Wartezustand: Keine aktive Berechnung
 2. Berechnungszustand: Bei REQ-Ereignis wird die XOR-Operation ausgeführt
 3. Ausgabezustand: CNF-Ereignis mit Ergebnis wird ausgegeben
@@ -53,11 +52,6 @@ Der Baustein arbeitet zustandslos:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen mit zwei Eingängen bietet XOR_3 die Möglichkeit, drei Eingänge gleichzeitig zu verarbeiten. Gegenüber AND/OR-Operationen liefert XOR ein exklusives Ergebnis, bei dem das Ausgangsbit nur dann 1 ist, wenn eine ungerade Anzahl der Eingangsbits 1 ist.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

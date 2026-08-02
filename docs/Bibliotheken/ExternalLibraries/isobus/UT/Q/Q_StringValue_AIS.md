@@ -1,6 +1,5 @@
 # Q_StringValue_AIS
 
-
 ![Q_StringValue_AIS](./Q_StringValue_AIS.svg)
 
 * * * * * * * * * *

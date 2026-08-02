@@ -1,6 +1,5 @@
 # AULI_MUX_2
 
-
 ![AULI_MUX_2](./AULI_MUX_2.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Keine direkten Datenausgänge – der ausgegebene Wert wird über den Adapter `O
 
 ## Funktionsweise
 Der Funktionsblock arbeitet ereignisgesteuert:  
+
 1. Ein `REQ`-Ereignis übernimmt den aktuellen Wert des Daten-Eingangs **K**.  
 2. Der Baustein kopiert den Datenwert des Adapters `IN1` auf den Adapter `OUT`, falls **K = 0**, bzw. den Wert von `IN2` auf `OUT`, falls **K = 1**.  
 3. Nach erfolgter Übertragung wird das `CNF`-Ereignis ausgegeben.  
@@ -56,6 +56,7 @@ Der Index **K** wird nur bei einem `REQ`-Ereignis gelesen; eine Änderung des In
 
 ## Zustandsübersicht
 Der FB besitzt keinen expliziten Zustandsautomaten. Er verhält sich wie eine ereignisgesteuerte Übertragungsfunktion:
+
 - **Warten auf REQ** → Lesen von K, Weiterleiten des entsprechenden Eingangs, Ausgabe von CNF.  
 - Systembedingte Wartezeiten können entstehen, wenn die angeschlossenen Adapter keine Daten bereitstellen (blockierendes Verhalten des AULI‑Protokolls).
 

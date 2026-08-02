@@ -1,8 +1,5 @@
 # STATES
 
-
-
-
 ![STATES](./STATES.svg)
 
 * * * * * * * * * *
@@ -14,6 +11,7 @@ Bei globalen Konstanten handelt es sich nicht um einen Funktionsbaustein mit Ere
 
 ### **Daten-Deklarationen**
 Die folgenden Konstanten werden definiert:
+
 *   `Rechtslauf`: Zeichenkette mit dem Wert `'Rechtslauf'`
 *   `Linkslauf`: Zeichenkette mit dem Wert `'Linkslauf'`
 *   `Linkslauf_Pause`: Zeichenkette mit dem Wert `'Linkslauf_Pause'`
@@ -32,6 +30,7 @@ Nicht zutreffend, da es sich um eine statische Datendeklaration und nicht um ein
 
 ## Anwendungsszenarien
 Typische Anwendungen für diese Konstanten sind:
+
 *   **Zustandsautomaten (State Machines):** Die Konstanten können als eindeutige Bezeichner für die verschiedenen Zustände eines Automaten dienen, der einen Prozess mit Richtungswechsel und Pausen steuert (z. B. einen Verteilertisch).
 *   **Dokumentation und Logging:** Sie können verwendet werden, um den aktuellen Betriebszustand in Meldungen, Logdateien oder auf Bedienpanels anzuzeigen.
 *   **Vergleiche und Schaltlogik:** In der Programmlogik können Variablen oder Ausgänge mit diesen Konstanten verglichen werden, um Entscheidungen basierend auf dem aktuellen Zustand zu treffen.

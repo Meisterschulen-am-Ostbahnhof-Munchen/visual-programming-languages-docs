@@ -1,6 +1,5 @@
 # AW_DEMUX_3
 
-
 ![AW_DEMUX_3](./AW_DEMUX_3.svg)
 
 * * * * * * * * * *
@@ -69,6 +68,7 @@ Da der Adaptertyp `AW` unidirektional ist, erfolgt die Datenübertragung nur vom
 ## Zustandsübersicht
 
 Der Baustein **AW_DEMUX_3** besitzt keinen modellierten internen Zustandsautomaten. Sein Verhalten ist deterministisch und rein transaktionsbasiert:  
+
 - Im Ruhezustand wartet er auf `REQ`.  
 - Bei `REQ` wird die Verteilung ausgeführt, und es wird sofort `CNF` ausgegeben.  
 - Danach kehrt er in den Ruhezustand zurück.

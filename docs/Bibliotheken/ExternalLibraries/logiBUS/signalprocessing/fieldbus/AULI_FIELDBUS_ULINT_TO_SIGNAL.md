@@ -1,6 +1,5 @@
 # AULI_FIELDBUS_ULINT_TO_SIGNAL
 
-
 ![AULI_FIELDBUS_ULINT_TO_SIGNAL](./AULI_FIELDBUS_ULINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
@@ -68,6 +67,7 @@ Dadurch wird sichergestellt, dass der Ausgangswert und das Gültigkeitssignal st
 
 ## Zustandsübersicht
 Der Baustein selbst ist zustandslos (rein kombinatorisch mit getakteter Übernahme). Das interne Flipflop `E_D_FF` besitzt zwei Zustände:
+
 - **Q = FALSE**: Kein gültiges Signal (initial oder nach einem ungültigen Wert).
 - **Q = TRUE**: Gültiges Signal liegt an.
 

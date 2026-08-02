@@ -2,8 +2,6 @@
 
 # FT_DERIV
 
-
-
 Calculate derivative over signal 'in' with Factor 'K'
 
 ## Interface
@@ -38,8 +36,6 @@ Calculate derivative over signal 'in' with Factor 'K'
 | out | REAL | Calculated Derivative |
 | delta_t | UDINT | Time difference in microseconds |
 | delta_in | REAL | Input signal difference |
-
-
 
 ## 🛠️ Zugehörige Übungen
 

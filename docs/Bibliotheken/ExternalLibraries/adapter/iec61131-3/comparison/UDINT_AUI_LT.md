@@ -1,6 +1,5 @@
 # UDINT_AUI_LT
 
-
 ![UDINT_AUI_LT](./UDINT_AUI_LT.svg)
 
 * * * * * * * * * *
@@ -35,6 +34,7 @@ Der Funktionsbaustein **UDINT_AUI_LT** realisiert den Vergleich "less than". Er 
 
 ## Funktionsweise
 Der Baustein ist als internes Netzwerk aus dem Basisbaustein **F_LT** (Typ `iec61131::comparison::F_LT`) aufgebaut.  
+
 - Ein Ereignis an **REQ** oder am Adaptereingang **IN2.E1** triggert den internen F_LT über dessen Ereigniseingang **REQ**.  
 - Die Datenwerte **IN1** und **IN2.D1** werden an die entsprechenden Dateneingänge von F_LT weitergeleitet.  
 - F_LT führt den Vergleich `IN1 < IN2` durch und gibt das Ergebnis (BOOL) an **OUT.D1** aus.  
@@ -47,6 +47,7 @@ Der Baustein ist als internes Netzwerk aus dem Basisbaustein **F_LT** (Typ `iec6
 
 ## Zustandsübersicht
 Der Baustein besitzt keinen eigenen Zustandsautomaten. Die Abarbeitung erfolgt rein ereignisgesteuert:
+
 - **Warten auf Ereignis**: Kein Vergleich aktiv.
 - **Vergleich aktiv**: Nach Eintreffen von **REQ** oder **IN2.E1** wird der interne F_LT ausgeführt.
 - **Ausgabe**: Nach Abschluss des Vergleichs wird **OUT.E1** ausgelöst und das Ergebnis an **OUT.D1** bereitgestellt.

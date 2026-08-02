@@ -1,6 +1,5 @@
 # Q_NumericValueAux_AUDI
 
-
 ![Q_NumericValueAux_AUDI](./Q_NumericValueAux_AUDI.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Der Funktionsblock realisiert das Kommando **Change Numeric Value** gemäß ISO 
 Der FB erwartet über den INIT‑Eingang eine gültige Objekt‑ID (`u16ObjId`). Nach erfolgreicher Initialisierung kann über den Socket‑Adapter `u32NewValue` ein neuer Wert übergeben werden. Das Ereignis des Socket‑Adapters (E1) löst intern eine Verarbeitung aus, bei der der alte Wert über den Plug‑Adapter `u32OldValue` zurückgegeben wird. Das Ergebnis wird über den CNF‑Ausgang mit Status und Rückgabecode (`s16result`) signalisiert.
 
 Mögliche Rückgabecodes sind:
+
 - `VT_E_NO_ERR (0)` – Erfolg
 - `VT_E_OVERFLOW (-6)` – Pufferüberlauf
 - `VT_E_NOACT (-8)` – Kommando im aktuellen Zustand nicht möglich
@@ -66,6 +66,7 @@ Mögliche Rückgabecodes sind:
 ## Zustandsübersicht
 
 Der FB besitzt keine expliziten Zustandsautomaten in der XML‑Beschreibung. Die Arbeitsweise ist ereignisgesteuert:
+
 1. **INIT** – Setzt die Objekt‑ID und initialisiert die interne Logik.
 2. **Warten auf Wert** – Nach INIT wird auf ein Ereignis vom Socket‑Adapter (`u32NewValue.E1`) gewartet.
 3. **Verarbeitung** – Beim Eintreffen wird der Wert verarbeitet, der alte Wert über den Plug‑Adapter zurückgegeben und das Ergebnis über `CNF` gemeldet.

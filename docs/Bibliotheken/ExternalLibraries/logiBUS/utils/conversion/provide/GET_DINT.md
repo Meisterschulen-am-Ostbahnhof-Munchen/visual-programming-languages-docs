@@ -1,6 +1,5 @@
 # GET_DINT
 
-
 ![GET_DINT](./GET_DINT.svg)
 
 * * * * * * * * * *
@@ -27,6 +26,7 @@ Keine.
 
 ## Funktionsweise
 Wird der Ereigniseingang **REQ** aktiviert, führt der Baustein folgende Schritte aus:
+
 1. Der aktuelle Wert der InOut-Variable **IN** wird gelesen.
 2. Dieser Wert wird in den Datenausgang **OUT** kopiert (gepuffert).
 3. Anschließend wird der Ereignisausgang **CNF** gesendet, um die erfolgreiche Ausführung zu signalisieren.

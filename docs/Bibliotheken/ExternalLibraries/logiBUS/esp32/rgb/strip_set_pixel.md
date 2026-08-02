@@ -1,7 +1,5 @@
 # strip_set_pixel
 
-
-
 <img width="1478" height="315" alt="image" src="https://github.com/user-attachments/assets/1892e226-bd9b-4dfc-bda7-8458f0a53619" />
 
 * * * * * * * * * *
@@ -57,9 +55,6 @@ Das `clear`-Ereignis setzt alle Pixel der Leiste auf Schwarz (aus), was einem L�
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Bausteinen, die ganze Farbmuster oder Bilder auf eine LED-Matrix übertragen (z.B. `strip_show` oder `matrix_display`), arbeitet `strip_set_pixel` auf einer sehr granularen, pixelweisen Ebene. Er bietet maximale Kontrolle über jede einzelne LED, ist für die Übertragung komplexer Bilder jedoch weniger effizient. Bausteine wie `strip_fill` setzen typischerweise einen ganzen Bereich oder alle LEDs auf einmal auf eine Farbe, während `strip_set_pixel` individuell adressiert.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

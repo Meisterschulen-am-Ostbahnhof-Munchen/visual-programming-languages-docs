@@ -1,6 +1,5 @@
 # AR_TO_AS
 
-
 ![AR_TO_AS](./AR_TO_AS.svg)
 
 * * * * * * * * * *
@@ -31,6 +30,7 @@ Keine eigenen Daten-Ausgänge vorhanden. Daten werden über den **AR_IN‑Adapte
 
 ## Funktionsweise
 Der Baustein realisiert die Konvertierung wie folgt:
+
 1. Ein eingehendes Ereignis auf **AR_IN.E1** triggert den internen Konvertierungsbaustein **F_REAL_TO_SINT**.
 2. Der mit dem Ereignis verbundene REAL‑Wert von **AR_IN.D1** wird an den Eingang `IN` des Konvertierungsbausteins weitergeleitet.
 3. **F_REAL_TO_SINT** wandelt den REAL‑Wert in einen SINT‑Wert um und legt das Ergebnis an seinem Ausgang `OUT` an.
@@ -53,6 +53,7 @@ Der **AR_TO_AS** besitzt keinen eigenen Zustandsautomaten. Da es sich um einen r
 
 ## Vergleich mit ähnlichen Bausteinen
 Es existieren analoge Konvertierungs‑Adapter, z. B.:
+
 - **AR_TO_INT** – REAL → INT
 - **AR_TO_UDINT** – REAL → UDINT
 - **AR_TO_LREAL** – REAL → LREAL

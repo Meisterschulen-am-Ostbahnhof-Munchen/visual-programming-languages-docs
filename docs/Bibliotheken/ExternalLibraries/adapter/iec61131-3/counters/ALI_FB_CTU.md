@@ -1,6 +1,5 @@
 # ALI_FB_CTU
 
-
 ![ALI_FB_CTU](./ALI_FB_CTU.svg)
 
 * * * * * * * * * *
@@ -18,12 +17,14 @@ Der Baustein besitzt keine separaten, diskreten Ereignis‑Eingänge. Die auslö
 
 ### **Daten-Eingänge**
 Der Baustein besitzt keine separaten, diskreten Daten‑Eingänge. Alle Eingangsdaten werden über die Adapter‑Schnittstellen bereitgestellt:
+
 - **CU.D1** – Count‑Up‑Signal (BOOL)
 - **R.D1** – Reset‑Signal (BOOL)
 - **PV.D1** – Preset‑Wert (LINT)
 
 ### **Daten-Ausgänge**
 Der Baustein besitzt keine separaten, diskreten Daten‑Ausgänge. Die Ausgangsdaten werden über die Adapter‑Schnittstellen ausgegeben:
+
 - **Q.D1** – Zählerausgang (BOOL): wird TRUE, sobald der aktuelle Zählerstand ≥ PV ist.
 - **CV.D1** – Aktueller Zählerstand (LINT)
 

@@ -1,8 +1,5 @@
 # logiBUS_PI
 
-
-
-
 ![logiBUS_PI](./logiBUS_PI.svg)
 
 * * * * * * * * * *
@@ -16,6 +13,7 @@ Die Schnittstelle besteht ausschließlich aus den definierten globalen Konstante
 
 ### **Definierte Konstanten**
 Die folgenden Konstanten werden bereitgestellt:
+
 *   `PulseInput_I1` bis `PulseInput_I9`: Repräsentieren die physischen Puls-Eingänge 1 bis 9. Der Initialwert setzt das Strukturfeld `Pin` auf den entsprechenden Wert (1-9).
 *   `Invalid`: Stellt einen ungültigen oder nicht belegten Eingang dar. Der Initialwert setzt das Strukturfeld `Pin` auf den Wert 255.
 

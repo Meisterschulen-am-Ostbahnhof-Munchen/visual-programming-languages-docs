@@ -1,7 +1,5 @@
 # OR_8_BOOL
 
-
-
 <img width="1370" height="426" alt="image" src="https://github.com/user-attachments/assets/a2fa1484-476e-4e8f-b817-9aa20ff38361" />
 
 * * * * * * * * * *
@@ -35,6 +33,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Funktionsweise
 Die Funktionsweise ist ereignisgesteuert und folgt einem einfachen Request-Confirm-Zyklus:
+
 1.  Das Eintreffen des Ereignisses `REQ` startet die Ausführung.
 2.  Der Block liest die aktuellen Werte aller acht booleschen Eingänge (`IN1` bis `IN8`) ein.
 3.  Es wird die logische ODER-Verknüpfung über alle acht Eingänge berechnet: `OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5 OR IN6 OR IN7 OR IN8`.
@@ -50,6 +49,7 @@ Der Funktionsblock `OR_8_BOOL` ist zustandslos (kombinatorische Logik). Er besit
 
 ## Anwendungsszenarien
 Typische Anwendungen sind:
+
 *   **Überwachungslogik:** Zusammenfassen mehrerer Fehler- oder Warnsignale (z.B. von verschiedenen Sensoren oder Teilsystemen) zu einem gemeinsamen Alarmausgang.
 *   **Freigabelogik:** Prüfen, ob mindestens eine von mehreren möglichen Freigabebedingungen (z.B. "Manuell freigegeben" ODER "Automatik freigegeben") erfüllt ist.
 *   **Verknüpfung von Tastereingaben:** In Bedienpanels, um eine Aktion auszulösen, wenn einer von mehreren Tastern gedrückt wird.

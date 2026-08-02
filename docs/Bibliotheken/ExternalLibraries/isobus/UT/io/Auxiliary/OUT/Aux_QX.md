@@ -1,7 +1,5 @@
 # Aux_QX
 
-
-
 <img width="1481" height="173" alt="image" src="https://github.com/user-attachments/assets/3597540d-b375-4ca0-849a-c2a22e4c0732" />
 
 * * * * * * * * * *
@@ -51,9 +49,6 @@ Der Funktionsblock folgt einem typischen Service-Interface-Muster mit Initialisi
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen booleschen Ausgabeblöcken bietet Aux_QX erweiterte Service-Funktionalität mit Initialisierungssequenzen, Parameterkonfiguration und detailliertem Statusmanagement. Die spezifische Adressierung über iInpNr ermöglicht die Integration in komplexe Gerätepools.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

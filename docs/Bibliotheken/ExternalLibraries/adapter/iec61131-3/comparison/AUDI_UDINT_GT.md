@@ -1,6 +1,5 @@
 # AUDI_UDINT_GT
 
-
 ![AUDI_UDINT_GT](./AUDI_UDINT_GT.svg)
 
 * * * * * * * * * *
@@ -56,6 +55,7 @@ Der FB besitzt keine eigenen Daten‑Ausgänge. Der Ergebniswert wird über den 
 ## Zustandsübersicht
 
 Der FB besitzt keinen expliziten Zustandsautomaten. Er arbeitet ereignisgesteuert:
+
 - **Idle:** Warten auf das **REQ**‑Ereignis.
 - **Processing:** Nach REQ werden die Werte gelesen, der interne `F_GT` abgearbeitet und das Ergebnis über den OUT‑Adapter ausgegeben. Der Zustand wird nach Abschluss der Ausgabe sofort wieder verlassen.
 

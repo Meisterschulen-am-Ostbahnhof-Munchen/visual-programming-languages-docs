@@ -1,6 +1,5 @@
 # ALR_SPLIT_7
 
-
 ![ALR_SPLIT_7](./ALR_SPLIT_7.svg)
 
 *(Kein Bild verfügbar)*

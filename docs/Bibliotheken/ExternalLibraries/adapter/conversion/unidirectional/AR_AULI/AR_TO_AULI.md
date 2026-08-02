@@ -1,6 +1,5 @@
 # AR_TO_AULI
 
-
 ![AR_TO_AULI](./AR_TO_AULI.svg)
 
 * * * * * * * * * *
@@ -26,6 +25,7 @@ Der Funktionsblock **AR_TO_AULI** ist ein Composite-Baustein, der eine REAL-Eing
 
 ## Funktionsweise
 Der Baustein ist als Composite FB realisiert und enthält intern einen einzigen Funktionsblock **F_REAL_TO_ULINT** aus der IEC‑61131‑Bibliothek. Die Arbeitsweise ist wie folgt:
+
 1. Ein Ereignis am Socket **AR_IN.E1** löst die Ausführung des Konverters aus.
 2. Der Datenwert **AR_IN.D1** wird an den Eingang **Convert.IN** weitergeleitet.
 3. Der Konverter führt die Typumwandlung von REAL nach ULINT durch und stellt das Ergebnis am Ausgang **Convert.OUT** bereit.

@@ -1,7 +1,5 @@
 # ST32X
 
-
-
 *(Kein Bild vorhanden, da dies ein Datentyp und kein Funktionsblock ist.)*
 
 * * * * * * * * * *
@@ -19,6 +17,7 @@ Nicht zutreffend, da `ST32X` ein benutzerdefinierter Datentyp und kein Funktions
 
 ### **Daten-Eingänge**
 Die Struktur besteht aus den folgenden 32 BOOL-Elementen, die intern in der Struktur als "Eingänge" betrachtet werden können, da sie die Werte aufnehmen, aus denen die Struktur gebildet wird:
+
 *   `X_00` (Type: BOOL, Comment: BIT 00)
 *   `X_01` (Type: BOOL, Comment: BIT 01)
 *   `X_02` (Type: BOOL, Comment: BIT 02)

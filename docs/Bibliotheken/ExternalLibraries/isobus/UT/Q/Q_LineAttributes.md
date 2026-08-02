@@ -1,7 +1,5 @@
 # Q_LineAttributes
 
-
-
 ![Q_LineAttributes](https://user-images.githubusercontent.com/116869307/214147948-3b9f6d08-00a5-43c0-895b-f2a997773b97.png)
 
 * * * * * * * * * *
@@ -100,6 +98,7 @@ Der Q_LineAttributes-Baustein bietet präzise Kontrolle über Linienattribute:
 - **Rückverfolgbar**: Vorherige Zustandsspeicherung
 
 Unverzichtbar für:
+
 - Technische Zeichnungen
 - Prozessvisualisierungen
 - Interaktive Grafikanwendungen

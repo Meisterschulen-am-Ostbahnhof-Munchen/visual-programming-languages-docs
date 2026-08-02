@@ -1,6 +1,5 @@
 # AR_SPLIT_6
 
-
 ![AR_SPLIT_6](./AR_SPLIT_6.svg)
 
 * * * * * * * * * *

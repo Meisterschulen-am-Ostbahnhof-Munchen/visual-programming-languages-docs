@@ -1,6 +1,5 @@
 # AI_DEMUX_5
 
-
 ![AI_DEMUX_5](./AI_DEMUX_5.svg)
 
 * * * * * * * * * *

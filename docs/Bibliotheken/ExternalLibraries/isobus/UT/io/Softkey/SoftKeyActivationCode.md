@@ -1,8 +1,5 @@
 # SoftKeyActivationCode
 
-
-
-
 ![SoftKeyActivationCode](./SoftKeyActivationCode.svg)
 
 * * * * * * * * * *

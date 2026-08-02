@@ -1,7 +1,5 @@
 # OFFSET_UDINT
 
-
-
 <img width="1747" height="246" alt="image" src="https://github.com/user-attachments/assets/03bc479b-bcf2-4609-90d0-c235966f16a4" />
 
 * * * * * * * * * *
@@ -42,6 +40,7 @@ Der Algorithmus überprüft zunächst, ob der Ausgang `FIRST` noch den Initialwe
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einzigen, stabilen Zustand:
+
 *   **REQ:** Wartet auf das eingehende `REQ`-Ereignis. Bei Empfang wird der Algorithmus ausgeführt und unmittelbar danach wird das `CNF`-Ereignis ausgelöst. Der FB verbleibt im Zustand `REQ`.
 
 ## Anwendungsszenarien
@@ -53,9 +52,6 @@ Der Funktionsblock besitzt einen einzigen, stabilen Zustand:
 *   **SUB / DIF Bausteine:** Standard-Subtraktionsbausteine berechnen stets die Differenz zwischen zwei variablen Eingängen. `OFFSET_UDINT` hingegen friert einen der Operanden (`FIRST`) nach der ersten Operation ein und verwendet ihn fortan als festen Subtrahenden.
 *   **Schieberegister (FIFO) oder Verzögerungsbausteine:** Diese speichern eine Historie von Werten. `OFFSET_UDINT` speichert dagegen nur einen einzigen, initialen Wert dauerhaft.
 *   **Bausteine mit Merker (SR, RS):** Diese speichern einen binären Zustand. `OFFSET_UDINT` speichert einen spezifischen numerischen (`UDINT`) Startwert.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

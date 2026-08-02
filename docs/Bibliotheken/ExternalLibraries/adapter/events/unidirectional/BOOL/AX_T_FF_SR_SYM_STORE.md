@@ -1,6 +1,5 @@
 # AX_T_FF_SR_SYM_STORE
 
-
 ![AX_T_FF_SR_SYM_STORE](./AX_T_FF_SR_SYM_STORE.svg)
 
 * * * * * * * * * *
@@ -37,12 +36,14 @@ Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-F
 
 1. **Initialisierung (START → Init)**  
    Nach dem Systemstart befindet sich der FB im Zustand START. Sobald am Adapter `Q_INIT` das Ereignis `EI1` eintrifft, wechselt er in den Zustand Init. Dort wird der über `Q_INIT.DI1` bereitgestellte Initialwert ausgelesen.  
+
    - Ist der Initialwert FALSE, wird anschließend der Zustand RESET eingenommen.  
    - Ist der Initialwert TRUE, wird der Zustand SET eingenommen.  
    In beiden Fällen wird der entsprechende Ausgang `Q.D1` und der Ausgang `Q_INIT.DO1` auf den Initialwert gesetzt.
 
 2. **Betrieb (SET ↔ RESET)**  
    Ausgehend von SET oder RESET wird bei jedem Ereignis an den Eingängen S, R oder CLK umgeschaltet:  
+
    - **S** → wechselt in SET (setzt Q = TRUE)  
    - **R** → wechselt in RESET (setzt Q = FALSE)  
    - **CLK** → toggelt den Zustand (von SET nach RESET oder umgekehrt)  

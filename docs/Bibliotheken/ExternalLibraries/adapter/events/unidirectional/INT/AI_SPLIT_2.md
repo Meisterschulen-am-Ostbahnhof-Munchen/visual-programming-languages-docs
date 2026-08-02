@@ -1,6 +1,5 @@
 # AI_SPLIT_2
 
-
 ![AI_SPLIT_2](./AI_SPLIT_2.svg)
 
 * * * * * * * * * *

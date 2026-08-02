@@ -1,6 +1,5 @@
 # F_NOT_BOOL_INIT
 
-
 ![F_NOT_BOOL_INIT](./F_NOT_BOOL_INIT.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # logiBUS_LED_PWM_QX
 
-
-
 <img width="1905" height="366" alt="image" src="https://github.com/user-attachments/assets/ff509262-3aeb-48fd-88e2-74c2323ab225" />
 
 * * * * * * * * * *
@@ -47,6 +45,7 @@ Der Funktionsblock verwaltet die PWM-Ansteuerung von LED-Ausgängen über das lo
 
 ## Zustandsübersicht
 Der Baustein verfügt über folgende Betriebszustände:
+
 - **Nicht initialisiert**: Vor INIT-Event, Ausgänge inaktiv
 - **Initialisiert**: Nach erfolgreicher INIT-Verarbeitung, bereit für REQ-Operationen
 - **Aktiv**: Während der PWM-Signalgenerierung
@@ -60,9 +59,6 @@ Der Baustein verfügt über folgende Betriebszustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgangsbausteinen bietet logiBUS_LED_PWM_QX erweiterte PWM-Funktionalität mit Frequenzsteuerung und prioritätsbasierter Ansteuerung. Die Integration in das logiBUS-Ökosystem ermöglicht eine standardisierte Kommunikation mit I/O-Ressourcen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

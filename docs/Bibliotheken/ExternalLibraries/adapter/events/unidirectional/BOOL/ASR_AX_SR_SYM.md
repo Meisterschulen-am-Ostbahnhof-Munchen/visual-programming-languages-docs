@@ -1,6 +1,5 @@
 # ASR_AX_SR_SYM
 
-
 ![ASR_AX_SR_SYM](./ASR_AX_SR_SYM.svg)
 
 * * * * * * * * * *
@@ -12,11 +11,13 @@ Der Funktionsblock **ASR_AX_SR_SYM** realisiert ein ereignisgesteuertes, bistabi
 
 ### Ereignis-Eingänge  
 Der FB besitzt keine direkten Ereigniseingänge. Alle Ereignisse werden über den **Socket-Adapter `S_R`** (Typ `adapter::types::unidirectional::ASR`) empfangen. Dieser Adapter stellt die folgenden Ereignis-Eingänge bereit:  
+
 - `S_R.SET` – Setz-Ereignis  
 - `S_R.RESET` – Rücksetz-Ereignis
 
 ### Ereignis-Ausgänge  
 Der FB besitzt keine direkten Ereignisausgänge. Ausgehende Ereignisse werden über den **Plug-Adapter `Q`** (Typ `adapter::types::unidirectional::AX`) gesendet. Dieser Adapter bietet den Ereignis-Ausgang:  
+
 - `Q.E1` – Ausgangsereignis, ausgelöst bei Zustandsänderung
 
 ### Daten-Eingänge  
@@ -24,6 +25,7 @@ Keine direkten Dateneingänge.
 
 ### Daten-Ausgänge  
 Der Ausgangswert wird über den Plug-Adapter `Q` bereitgestellt:  
+
 - `Q.D1` (BOOL) – aktueller Zustand des Flipflops (`TRUE` = gesetzt, `FALSE` = rückgesetzt)
 
 ### Adapter  

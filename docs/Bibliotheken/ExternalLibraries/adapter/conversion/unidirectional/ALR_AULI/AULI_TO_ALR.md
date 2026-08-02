@@ -2,7 +2,6 @@
 
 Kein Bild vorhanden.
 
-
 ![AULI_TO_ALR](./AULI_TO_ALR.svg)
 
 * * * * * * * * * *

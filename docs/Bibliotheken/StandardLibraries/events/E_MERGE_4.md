@@ -1,7 +1,5 @@
 # E_MERGE_4
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -24,6 +22,7 @@ Der `E_MERGE_4` ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der 
 
 ## Funktionsweise
 Die Funktion ist einfach und direkt:
+
 - Ein Ereignis an einem der vier Eingänge (`EI1` bis `EI4`) löst sofort und ohne Priorisierung ein Ereignis am Ausgang `EO` aus.
 
 Die Eingänge werden logisch ODER-verknüpft und ohne Verzögerung weitergeleitet.

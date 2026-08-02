@@ -1,6 +1,5 @@
 # AUS_TO_AL
 
-
 ![AUS_TO_AL](./AUS_TO_AL.svg)
 
 * * * * * * * * * *
@@ -46,6 +45,7 @@ Die gesamte Abfolge ist streng kausal: Die Konvertierung wird nur dann ausgelös
 
 ## Zustandsübersicht
 Der Baustein besitzt kein eigenständiges Zustandsdiagramm. Sein Verhalten ist ausschließlich durch die Ereignis-/Datenflüsse des eingebetteten FBs `F_USINT_TO_LWORD` bestimmt:
+
 - **Idle**: Warten auf ein Ereignis am **AUS_IN**.
 - **Konvertierung aktiv**: Sobald ein Ereignis eintrifft, wird die Umwandlung durchgeführt. Nach Abschluss wird das Ausgangsereignis generiert und der Baustein kehrt in den Idle-Zustand zurück.
 

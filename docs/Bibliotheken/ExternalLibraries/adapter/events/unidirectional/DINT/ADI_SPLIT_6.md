@@ -1,6 +1,5 @@
 # ADI_SPLIT_6
 
-
 ![ADI_SPLIT_6](./ADI_SPLIT_6.svg)
 
 * * * * * * * * * *

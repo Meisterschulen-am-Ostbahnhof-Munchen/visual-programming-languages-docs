@@ -1,7 +1,5 @@
 # F_SHL
 
-
-
 <img width="1342" height="208" alt="F_SHL" src="https://github.com/user-attachments/assets/91a9f7fd-3552-4524-91ed-e888afe9acdd" />
 
 * * * * * * * * * *
@@ -49,9 +47,6 @@ Der Funktionsblock `F_SHL` führt eine bitweise Linksverschiebung des Eingabewer
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **F_SHR**: Führt eine Rechtsverschiebung durch, im Gegensatz zur Linksverschiebung von `F_SHL`.
 - **F_ROL** und **F_ROR**: Rotieren Bits statt sie zu verschieben, wobei überlaufende Bits auf der anderen Seite wieder eingefügt werden.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,8 +1,6 @@
 # E_T_FF
 
-
 ## 🎧 Podcast
-
 
 ![E_T_FF_ecc](./E_T_FF_ecc.svg)
 
@@ -29,6 +27,7 @@ Der `E_T_FF` (Event-driven Toggle Flip-Flop) ist ein ereignisgesteuerter Kippsch
 
 ## Funktionsweise
 Der `E_T_FF`-Baustein ist ein einfacher Toggle Flip-Flop:
+
 1.  **Zustandswechsel**: Bei jedem eingehenden `CLK`-Ereignis ändert der Ausgang `Q` seinen Zustand: War `Q` `TRUE`, wird es `FALSE`, und war `Q` `FALSE`, wird es `TRUE`.
 2.  **Ereignisauslösung**: Jede Zustandsänderung von `Q` löst das `EO`-Ereignis aus.
 
@@ -41,6 +40,7 @@ Der `E_T_FF`-Baustein ist ein einfacher Toggle Flip-Flop:
 
 ### Taster für eine Lampe
 Mit einem `E_T_FF` lässt sich eine Taster-Logik für eine Lampe realisieren:
+
 - **Konzept**: Ein Taster erzeugt ein `CLK`-Ereignis. Jedes Drücken schaltet die Lampe (`Q`) ein oder aus.
 - **Grafische Darstellung**:
     - Mapping: ![E_T_FF Anwendung Taster Mapping](https://user-images.githubusercontent.com/69573151/200582493-3b7830e9-6c99-48c8-8edb-3c51c2ec61f1.png)
@@ -49,16 +49,12 @@ Mit einem `E_T_FF` lässt sich eine Taster-Logik für eine Lampe realisieren:
 
 ### Blinker
 Durch Rückkopplung mit einem Zeitgeber lässt sich ein Blinker realisieren:
+
 - **Konzept**: Das `EO`-Ereignis des `E_T_FF` startet einen `E_DELAY`, dessen `EO` wiederum als `CLK` für den `E_T_FF` dient. Dies erzeugt einen periodischen Zustandswechsel.
 - **Grafische Darstellung**:
     - Mapping: ![E_T_FF Anwendung Blinker Mapping](https://user-images.githubusercontent.com/69573151/200581547-83f78279-e1a1-4748-8240-8755630638a9.png)
     - Applikation: ![E_T_FF Anwendung Blinker App](https://user-images.githubusercontent.com/69573151/200581603-62aadee2-2a3a-4562-994f-51475817da3b.png)
     - Embedded Ressource: ![E_T_FF Anwendung Blinker EMB_RES](https://user-images.githubusercontent.com/69573151/200581674-613cabbc-86a6-45b7-ad57-a9c16bd6262d.png)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

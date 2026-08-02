@@ -1,6 +1,5 @@
 # E_SR_SYM
 
-
 ![E_SR_SYM](./E_SR_SYM.svg)
 
 * * * * * * * * * *
@@ -59,6 +58,7 @@ Befindet sich der Baustein bereits in einem der aktiven Zustände (SET oder RESE
 | **RESET** | Ausgang \( Q \) ist `FALSE` | Führe Algorithmus RESET aus (\( Q := \text{FALSE} \)), sende EO | S → SET |
 
 Transitionen:
+
 - START → SET bei **S**
 - START → RESET bei **R**
 - SET → RESET bei **R**

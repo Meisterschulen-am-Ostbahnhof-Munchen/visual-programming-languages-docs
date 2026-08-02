@@ -1,6 +1,5 @@
 # AW_SPLIT_7
 
-
 ![AW_SPLIT_7](./AW_SPLIT_7.svg)
 
 * * * * * * * * * *

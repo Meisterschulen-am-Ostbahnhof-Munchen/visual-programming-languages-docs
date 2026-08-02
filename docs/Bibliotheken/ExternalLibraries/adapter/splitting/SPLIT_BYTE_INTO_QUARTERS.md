@@ -2,7 +2,6 @@
 
 Bild nicht verfügbar
 
-
 ![SPLIT_BYTE_INTO_QUARTERS](./SPLIT_BYTE_INTO_QUARTERS.svg)
 
 * * * * * * * * * *

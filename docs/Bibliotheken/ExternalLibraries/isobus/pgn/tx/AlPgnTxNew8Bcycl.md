@@ -1,7 +1,5 @@
 # AlPgnTxNew8Bcycl
 
-
-
 <img width="1423" height="294" alt="image" src="https://github.com/user-attachments/assets/6227eb0b-12b6-465a-b728-3774bc6847d3" />
 
 * * * * * * * * * *
@@ -68,9 +66,6 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenüber einfachen `E_CYC`-Blöcken**: `AlPgnTxNew8Bcycl` ist spezialisiert auf ISOBUS-PGNs und bietet integrierte Handhabung von Priorität, Zieladressierung und Fehlermanagement, während ein generischer zyklischer Event-Generator (`E_CYC`) nur Timing bereitstellt.
 *   **Gegenüber generischen CAN-Sendeblöcken**: Dieser Block abstrahiert die niedrigleveligen CAN-Details (Identifier-Berechnung, Datenrahmen) und arbeitet direkt auf der logischeren PGN-Ebene gemäß ISOBUS-Standard.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

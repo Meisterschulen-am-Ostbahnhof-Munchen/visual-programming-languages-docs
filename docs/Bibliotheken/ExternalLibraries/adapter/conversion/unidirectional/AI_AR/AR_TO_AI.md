@@ -1,6 +1,5 @@
 # AR_TO_AI
 
-
 ![AR_TO_AI](./AR_TO_AI.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Sobald am Socket **AR_IN.E1** ein Ereignis eintrifft, wird der Wert von **AR_IN.
 
 ## Zustandsübersicht
 Der **AR_TO_AI** besitzt keine interne Zustandsmaschine. Die Funktionsweise ist rein kombinatorisch in Abhängigkeit vom eingehenden Ereignis:
+
 - **Warten:** Es liegt kein Ereignis an AR_IN.E1 an.  
 - **Konvertieren:** Bei Ereignis wird der REAL‑Wert unverzögert konvertiert und das Ergebnis als INT ausgegeben.
 

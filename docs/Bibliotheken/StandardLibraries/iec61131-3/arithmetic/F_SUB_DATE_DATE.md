@@ -1,13 +1,10 @@
 # F_SUB_DATE_DATE
 
-
-
 ![F_SUB_DATE_DATE](https://github.com/user-attachments/assets/07c56b47-428f-4e2c-b365-402ef41717ba)
 
 * * * * * * * * * *
 
 ![F_SUB_DATE_DATE](F_SUB_DATE_DATE.svg)
-
 
 ## Einführung
 Der **F_SUB_DATE_DATE** ist ein standardkonformer Funktionsbaustein zur Berechnung von Zeitdifferenzen zwischen zwei Datumswerten, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die präzise Berechnung von Zeitintervallen gemäß IEC 61131-3 Standard.

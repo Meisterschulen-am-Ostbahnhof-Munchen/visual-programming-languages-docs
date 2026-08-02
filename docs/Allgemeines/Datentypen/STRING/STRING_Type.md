@@ -1,11 +1,5 @@
 # Datentyp: STRING
 
-
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_012a_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)

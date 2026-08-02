@@ -1,7 +1,5 @@
 # XOR_2
 
-
-
 ![XOR_2](https://user-images.githubusercontent.com/116869307/214143689-2a5c46a2-8706-400e-9fc7-fc74efa57eea.png)
 
 * * * * * * * * * *
@@ -31,6 +29,7 @@ Der Baustein verfügt über keine Adapter-Schnittstellen.
 
 ## Funktionsweise
 Bei Eintreffen des REQ-Ereignisses führt der XOR_2-Baustein eine bitweise XOR-Operation zwischen den beiden Eingabewerten IN1 und IN2 durch. Die Operation wird für jedes Bitpaar der Eingabewerte separat ausgeführt:
+
 - Wenn beide Bits gleich sind (beide 0 oder beide 1), wird das Ergebnisbit auf 0 gesetzt
 - Wenn die Bits unterschiedlich sind, wird das Ergebnisbit auf 1 gesetzt
 
@@ -57,6 +56,7 @@ Nach Abschluss der Berechnung wird das Ergebnis über den OUT-Ausgang ausgegeben
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen logischen Bausteinen bietet XOR_2:
+
 - **Flexibilität**: Unterstützung verschiedener Bit-Längen durch ANY_BIT-Typ
 - **Spezifische Logik**: Exklusive ODER-Operation im Gegensatz zu AND/OR-Operationen
 - **Generische Implementierung**: Wiederverwendbarkeit über verschiedene Datentypen hinweg

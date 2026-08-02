@@ -1,7 +1,5 @@
 # 📦 Installation Eclipse 4diac™
 
-
-
 Wie man 4 diac installiert
 
 [https://cloud.ms-muc.de/](https://cloud.ms-muc.de/)

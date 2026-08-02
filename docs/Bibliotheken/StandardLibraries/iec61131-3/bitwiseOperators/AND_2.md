@@ -1,7 +1,5 @@
 # AND_2
 
-
-
 ![AND_2](https://user-images.githubusercontent.com/116869307/214143461-f2104d1b-a147-4a9f-a118-f527fc245b5f.png)
 
 OUT wird nur geschalten wenn an IN1 und IN2 ein Bool (Signal anliegt) Z.b. von einem Schalter
@@ -39,6 +37,7 @@ Keine Adapter-Schnittstellen vorhanden.
 Bei Eintreffen des REQ-Ereignisses führt der Funktionsblock eine bitweise UND-Verknüpfung zwischen den beiden Eingangswerten IN1 und IN2 durch. Das Ergebnis wird am Datenausgang OUT ausgegeben und gleichzeitig wird das CNF-Ereignis zur Bestätigung der Ausführung generiert.
 
 Die Operation wird für jedes Bit der Eingangswerte separat durchgeführt:
+
 - Bit = 1, wenn beide entsprechenden Bits der Eingänge 1 sind
 - Bit = 0, wenn mindestens eines der entsprechenden Bits der Eingänge 0 ist
 
@@ -61,14 +60,10 @@ Die Operation wird für jedes Bit der Eingangswerte separat durchgeführt:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen logischen Verknüpfungsblöcken:
+
 - AND_2 ist generisch und unterstützt verschiedene Bit-Datentypen
 - Arbeitet bitweise im Gegensatz zu rein booleschen UND-Blöcken
 - Ereignisgesteuert im Gegensatz zu zyklusgesteuerten Blöcken
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,8 +1,5 @@
 # sequence_T_05_loop_AX
 
-
-
-
 ![sequence_T_05_loop_AX_ecc](./sequence_T_05_loop_AX_ecc.svg)
 
 * * * * * * * * * *
@@ -52,9 +49,6 @@ Für zeitgesteuerte zyklische 5-stufige Sequenzen mit Adapteranbindung.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_T_05_loop**: Standardvariante ohne Adapter.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

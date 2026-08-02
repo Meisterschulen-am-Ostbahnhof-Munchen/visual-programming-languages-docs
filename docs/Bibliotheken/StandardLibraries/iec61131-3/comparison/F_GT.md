@@ -1,7 +1,5 @@
 # F_GT
 
-
-
 ![F_GT](https://user-images.githubusercontent.com/116869307/214144462-1c7d92c0-429d-443e-a766-64c3e94c0a0b.png)
 
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_gt.html>
@@ -9,7 +7,6 @@
 * * * * * * * * * *
 
 ![F_GT](F_GT.svg)
-
 
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 
@@ -77,9 +74,6 @@ Hierbei sind `Eingang1` und `Eingang2` die beiden Werte, die verglichen werden s
 - **Robustheit:** Der GT-Operator trägt dazu bei, robuste Steuerungsalgorithmen zu entwickeln, die auf präzisen numerischen Vergleichen basieren.
 
 #
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

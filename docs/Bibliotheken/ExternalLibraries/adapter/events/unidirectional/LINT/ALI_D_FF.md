@@ -1,6 +1,5 @@
 # ALI_D_FF
 
-
 ![ALI_D_FF](./ALI_D_FF.svg)
 
 * * * * * * * * * *
@@ -29,6 +28,7 @@ Der Funktionsblock **ALI_D_FF** realisiert ein taktgesteuertes D-Flip-Flop (Data
 
 ## Funktionsweise
 Der Baustein verwendet intern die Standard-Funktion `E_D_FF_ANY` aus der IEC 61499 Bibliothek.  
+
 - Bei einer steigenden Flanke am Ereigniseingang **I.E1** wird der aktuelle Wert von **I.D1** in den internen Zustand übernommen.  
 - Anschließend wird am Ausgang **Q.E1** ein Ereignis erzeugt, das signalisiert, dass der neue Wert an **Q.D1** anliegt.  
 - Der Datenausgang **Q.D1** hält den gespeicherten Wert so lange, bis eine neue steigende Flanke auftritt.
@@ -40,6 +40,7 @@ Der Baustein verwendet intern die Standard-Funktion `E_D_FF_ANY` aus der IEC 614
 
 ## Zustandsübersicht
 Der FB kennt zwei logische Zustände:
+
 - **Zustand 0**: Ausgang `Q.D1` enthält den zuletzt gelatchten Wert, der z. B. logisch 0 sein kann.
 - **Zustand 1**: Ausgang `Q.D1` enthält einen gültigen Wert ungleich 0 (sofern der Datentyp dies zulässt).
 

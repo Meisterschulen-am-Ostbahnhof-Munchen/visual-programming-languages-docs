@@ -1,6 +1,5 @@
 # WORDS_TO_ARR08B
 
-
 ![WORDS_TO_ARR08B](./WORDS_TO_ARR08B.svg)
 
 * * * * * * * * * *

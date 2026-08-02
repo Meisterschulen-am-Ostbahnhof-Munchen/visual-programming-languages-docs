@@ -1,6 +1,5 @@
 # FIELDBUS_UDINT_TO_SIGNAL_SCALED
 
-
 ![FIELDBUS_UDINT_TO_SIGNAL_SCALED](./FIELDBUS_UDINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Der Baustein besitzt zwei Zustände: `INIT` und `REQ`.
   2. Wenn `IN <= DWORD_TO_UDINT(VALID_SIGNAL_DW)` gilt, wird der Eingang als gültig betrachtet. Dann wird `OUT` berechnet als:  
      `OUT := UDINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`  
      und `VALID` auf `TRUE` gesetzt.
+
   3. Andernfalls wird `OUT` auf `0.0` und `VALID` auf `FALSE` gesetzt. Dies signalisiert, dass der übergebene Feldbuswert ungültig ist (z. B. Fehlerwert oder Kommunikationsabbruch).
 
 Der Initialwert von `IN` ist voreingestellt auf `DWORD_TO_UDINT(NOT_AVAILABLE_DWM)`, einer Konstanten aus demselben Import, die einen speziellen „nicht verfügbar“-Wert repräsentiert.

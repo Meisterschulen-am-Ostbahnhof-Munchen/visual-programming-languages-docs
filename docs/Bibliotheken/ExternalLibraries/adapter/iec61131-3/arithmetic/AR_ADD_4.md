@@ -1,6 +1,5 @@
 # AR_ADD_4
 
-
 ![AR_ADD_4](./AR_ADD_4.svg)
 
 *Hinweis: Ein grafisches Symbol des Funktionsblocks liegt nicht vor.*

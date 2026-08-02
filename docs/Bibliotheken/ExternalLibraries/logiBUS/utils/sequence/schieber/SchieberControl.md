@@ -1,9 +1,6 @@
 # SchieberControl
 
-
-
 <img width="1509" height="338" alt="image" src="https://github.com/user-attachments/assets/ed91b9bc-3eed-4d26-8b19-06f71ea1f94d" />
-
 
 ![SchieberControl_ecc](./SchieberControl_ecc.svg)
 
@@ -63,6 +60,7 @@ Der `SchieberControl`-FB arbeitet als zustandsgesteuerte Sequenz. Der interne Ab
 
 ## Zustandsübersicht
 Die ECC umfasst folgende Hauptzustände:
+
 1.  **`START`**: Inaktiver Ausgangszustand.
 2.  **`Init`/`INIT3`**: Initialisierungssequenz.
 3.  **`Closed`**: Endzustand "geschlossen". Aktiviert `DO_CLOSE`.
@@ -80,6 +78,7 @@ Die ECC umfasst folgende Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren binären Aktor-Bausteinen (z. B. einem einfachen Zylinder-FB) bietet `SchieberControl` eine deutlich höhere Funktionalität:
+
 *   **Vollständige Zustandsmaschine** mit Bewegungs-, End- und Stopp-Zuständen.
 *   **Integrierte Zeitsteuerung** für die Bewegung.
 *   **Umfangreiche HMI-Schnittstelle** zur Konfiguration von Bedienelementen.

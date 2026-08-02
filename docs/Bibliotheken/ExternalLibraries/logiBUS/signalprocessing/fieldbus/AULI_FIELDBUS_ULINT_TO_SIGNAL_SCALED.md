@@ -1,6 +1,5 @@
 # AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED
 
-
 ![AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED](./AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
@@ -61,6 +60,7 @@ Der interne Skalierungsbaustein ist derselbe Typ wie der äußere, was bedeutet,
 
 ## Zustandsübersicht
 Der Baustein besitzt keine explizite Zustandsmaschine. Sein Verhalten wird durch die Ereignissteuerung bestimmt:
+
 - **Initialisiert:** Nach erfolgreichem `INIT` ist der interne Skalierungsblock bereit.
 - **Bereit:** Auf ein Ereignis auf `IN.E1` wird die Datenverarbeitung ausgelöst. Nach Abschluss werden `OUT.E1` und `VALID.E1` ausgelöst.
 - **Fehlerfall:** Ein fehlerhafter Skalierungsvorgang (z. B. Überlauf) wird durch den internen Block behandelt; das Gültigkeitssignal würde in diesem Fall `FALSE` werden.

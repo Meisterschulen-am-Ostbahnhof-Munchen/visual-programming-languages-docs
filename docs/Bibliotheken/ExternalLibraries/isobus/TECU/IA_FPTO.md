@@ -1,6 +1,5 @@
 # IA_FPTO
 
-
 ![IA_FPTO](./IA_FPTO.svg)
 
 *[Bild des Funktionsblocks, falls vorhanden]*

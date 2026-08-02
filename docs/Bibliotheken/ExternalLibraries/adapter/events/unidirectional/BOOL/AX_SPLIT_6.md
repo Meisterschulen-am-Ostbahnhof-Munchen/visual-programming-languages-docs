@@ -1,7 +1,5 @@
 # AX_SPLIT_6
 
-
-
 <img width="705" height="397" alt="image" src="https://github.com/user-attachments/assets/1b0e2281-e41d-47e1-bad4-9690070e18e8" />
 
 * * * * * * * * * *
@@ -48,6 +46,7 @@ Der AX_SPLIT_6 Baustein fungiert als Signalverteiler. Er empfängt Signale über
 
 ## Zustandsübersicht
 Der Baustein besitzt einen einfachen Zustand:
+
 - **Bereit**: Empfängt Signale von IN und verteilt sie an OUT1-OUT6
 
 ## Anwendungsszenarien

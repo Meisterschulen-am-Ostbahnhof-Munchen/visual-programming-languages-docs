@@ -1,6 +1,5 @@
 # logiBUS_IE2A
 
-
 ![logiBUS_IE2A](./logiBUS_IE2A.svg)
 
 * * * * * * * * * *
@@ -50,6 +49,7 @@ Der Funktionsblock `logiBUS_IE2A` ist ein Composite‑Baustein (Composite FB) zu
 ## Funktionsweise
 
 Der `logiBUS_IE2A` ist ein reiner Strukturbaustein, der die Logik des internen Bausteins `logiBUS_IE2` kapselt.  
+
 - Beim Eintreffen eines **INIT**‑Ereignisses werden die Daten‑Eingänge `QI`, `PARAMS`, `Input`, `InputEvent` und `arg` an den internen FB weitergeleitet und dort die Initialisierung durchgeführt. Nach erfolgreicher Verarbeitung wird über den Ausgang **INITO** eine Bestätigung mit den Ausgangsdaten `QO` und `STATUS` zurückgegeben.  
 - Ein **REQ**‑Ereignis löst eine erneute Anforderung (z. B. erneute Messung) aus, ohne die Parameter erneut zu setzen.  
 - Die eigentlichen Ereignismeldungen des Digitaleingangs werden vom internen FB über dessen Ausgänge `IND` und `CNF` auf den Adapter‑Ausgang **IN.E1** gelegt. Dadurch kann die übergeordnete Applikation auf eingehende Ereignisse reagieren, ohne die internen Details des Bausteins kennen zu müssen.

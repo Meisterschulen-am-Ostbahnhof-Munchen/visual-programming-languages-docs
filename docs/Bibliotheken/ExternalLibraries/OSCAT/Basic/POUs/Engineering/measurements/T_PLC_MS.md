@@ -1,7 +1,5 @@
 # T_PLC_MS
 
-
-
 T_PLC_MS reads the internal PLC timer and return the time
 
 ## Interface

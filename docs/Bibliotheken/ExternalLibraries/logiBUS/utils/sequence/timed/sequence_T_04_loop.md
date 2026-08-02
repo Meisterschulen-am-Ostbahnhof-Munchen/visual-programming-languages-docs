@@ -1,9 +1,6 @@
 # sequence_T_04_loop
 
-
-
 <img width="1430" height="335" alt="image" src="https://github.com/user-attachments/assets/d4ccd971-ec44-43d1-b586-d98d13bac896" />
-
 
 ![sequence_T_04_loop_ecc](./sequence_T_04_loop_ecc.svg)
 
@@ -76,11 +73,6 @@ Ein `RESET`-Ereignis von jedem Zustand aus führt in den `sRESET`-Zustand. Dort 
 *   **Einfache Timer (TON)**: Einzelne Timer bieten keine integrierte Sequenzlogik. `sequence_T_04_loop` kapselt die komplette Zustandsmaschine mit vier Schritten.
 *   **Ereignisgesteuerte Sequenzer**: Im Gegensatz zu ereignisgesteuerten Sequenzern (z.B. `sequence_E_04_loop`) erfolgen die Übergänge hier ausschließlich zeitbasiert, nicht durch externe Ereignisse.
 *   **SPS-Zyklus**: Die zeitgesteuerte Ablaufkontrolle ist präziser und unabhängig vom SPS-Zyklus, da sie auf dem `ATimeOut`-Adapter basiert.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

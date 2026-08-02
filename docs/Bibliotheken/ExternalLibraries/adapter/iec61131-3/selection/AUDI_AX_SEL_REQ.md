@@ -1,6 +1,5 @@
 # AUDI_AX_SEL_REQ
 
-
 ![AUDI_AX_SEL_REQ](./AUDI_AX_SEL_REQ.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Der Funktionsblock **AUDI_AX_SEL_REQ** realisiert eine binäre Auswahl zwischen 
 
 ## Funktionsweise
 Der FB enthält intern einen Baustein vom Typ `iec61131::selection::F_SEL`. Dieser führt die eigentliche Auswahl durch:  
+
 - Der Datenausgang `G.D1` des Adapters wird mit dem Selektor-Eingang von `F_SEL` verbunden.  
 - Der Wert von `F_SEL.OUT` ist gleich `IN0`, wenn `G.D1 = FALSE` ist, andernfalls gleich `IN1`.  
 
@@ -56,6 +56,7 @@ Die interne Verbindung stellt sicher, dass `OUT` stets den aktuell gültigen Wer
 
 ## Zustandsübersicht
 Der FB besitzt keine eigene Zustandsmaschine. Das Verhalten ergibt sich vollständig aus dem internen `F_SEL`-Baustein:  
+
 - **Warten**: Kein ausstehendes Ereignis – keine Ausgabe.  
 - **Auswahl**: Nach Eintreffen von `REQ` oder `G.E1` wird `OUT` gesetzt und `CNF` ausgegeben.
 

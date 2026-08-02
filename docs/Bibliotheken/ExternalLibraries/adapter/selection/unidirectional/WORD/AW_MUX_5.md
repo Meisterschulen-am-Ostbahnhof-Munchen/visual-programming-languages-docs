@@ -1,8 +1,6 @@
 # AW_MUX_5
 
-
 ![AW_MUX_5](./AW_MUX_5.svg)
-
 
 * * * * * * * * * *
 ## Einleitung
@@ -47,6 +45,7 @@ Keine Datenausgänge vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock arbeitet ereignisgesteuert:
+
 1. Ein Ereignis am Eingang **REQ** triggert die Verarbeitung.
 2. Der aktuelle Wert des Index **K** wird ausgewertet.
 3. Je nach K (0–4) wird der entsprechende Adaptersocket (IN1–IN5) auf den Adapterplug **OUT** durchgeschaltet.

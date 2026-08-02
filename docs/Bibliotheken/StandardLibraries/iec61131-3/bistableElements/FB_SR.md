@@ -1,7 +1,5 @@
 # FB_SR
 
-
-
 <img width="1312" height="242" alt="FB_SR" src="https://github.com/user-attachments/assets/97406c32-e30d-47c7-958c-cb76b2fcd83c" />
 
 * * * * * * * * * *
@@ -30,6 +28,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Funktionsblock `FB_SR` verarbeitet die Eingänge `S1` (Set) und `R` (Reset) gemäß der folgenden Logik:
+
 - Wenn `S1` `TRUE` ist, wird `Q1` auf `TRUE` gesetzt.
 - Wenn `R` `TRUE` ist, wird `Q1` auf `FALSE` gesetzt.
 - Wenn beide Eingänge `FALSE` sind, behält `Q1` seinen vorherigen Zustand bei.
@@ -48,6 +47,7 @@ END_ALGORITHM
 
 ## Zustandsübersicht
 Der Zustand des Flipflops (`Q1`) hängt von den aktuellen Werten von `S1` und `R` ab (zum Zeitpunkt des `REQ`):
+
 - `S1 = TRUE`: `Q1` wird auf `TRUE` gesetzt (unabhängig von `R`). -> **Setz-Dominanz**
 - `R = TRUE` UND `S1 = FALSE`: `Q1` wird auf `FALSE` gesetzt.
 - `S1 = FALSE` und `R = FALSE`: `Q1` bleibt unverändert.
@@ -59,9 +59,6 @@ Der Zustand des Flipflops (`Q1`) hängt von den aktuellen Werten von `S1` und `R
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **[E_SR](../../events/E_SR.md)**: Der `E_SR` ist rein ereignisgesteuert. Dort gibt es keine gleichzeitigen Signale und somit keine Dominanz in diesem Sinne (das letzte Ereignis gewinnt). Der `FB_SR` hingegen wertet statische Signale zum Zeitpunkt `REQ` aus und erzwingt die Setz-Dominanz.
 - **[FB_RS](FB_RS.md)**: Das Gegenstück mit **Rücksetz-Dominanz** (Reset Priority).
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,7 +1,5 @@
 # OR_2_BOOL
 
-
-
 <img width="1568" height="281" alt="image" src="https://github.com/user-attachments/assets/8ebdc4b4-c155-45d6-81bb-875ba03dc816" />
 
 * * * * * * * * * *
@@ -29,6 +27,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 
 ## Funktionsweise
 Die Funktionsweise ist ereignisgesteuert und folgt einem einfachen Anforderungs-Bestätigungs-Zyklus:
+
 1.  Das Eintreffen des Ereignisses `REQ` startet die Ausführung.
 2.  Die aktuellen Werte der Daten-Eingänge `IN1` und `IN2` werden abgefragt.
 3.  Die logische ODER-Verknüpfung `OUT := IN1 OR IN2` wird berechnet.
@@ -63,11 +62,6 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Sein Verhalten 
 *   **XOR_2_BOOL:** Führt eine exklusive ODER-Verknüpfung (Antivalenz) durch. Das Ergebnis ist `TRUE`, wenn genau **ein** Eingang `TRUE` ist.
 *   **NOT_BOOL:** Führt eine logische NICHT-Verknüpfung (Negation) auf einem einzelnen Eingang durch.
 *   **OR_n_BOOL:** Ein generischer ODER-Baustein, der eine variable Anzahl von Eingängen (n) verknüpfen kann, während `OR_2_BOOL` genau zwei feste Eingänge besitzt. Siehe: [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,6 +1,5 @@
 # IA_WBSD
 
-
 ![IA_WBSD](./IA_WBSD.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Der Funktionsblock **IA_WBSD** (ISOBUS Adapter for Wheel Based Speed and Distanc
 
 ## Funktionsweise
 Der Baustein **IA_WBSD** ist ein reiner Adapter‑Wrapper. Er verbindet die externen Ereignis‑ und Datenschnittstellen sowie die drei Adapter direkt mit dem internen Funktionsblock `I_WBSD` (vom Typ `isobus::tecu::I_WBSD`).  
+
 - Über den **INIT**‑Eingang und das Qualifier‑Signal **QI** wird die Initialisierung des ISOBUS‑Dienstes angestoßen.  
 - Nach erfolgreicher Initialisierung wird **INITO** ausgelöst und **QO** auf `TRUE` gesetzt. **STATUS** enthält eine textuelle Rückmeldung.  
 - Die Adapter **SPEED** und **DISTANCE** liefern die aktuellen Messwerte für radbasierte Geschwindigkeit bzw. Distanz.  
@@ -61,6 +61,7 @@ Die interne Logik (Berechnung, Timeout‑Überwachung, ISOBUS‑Frame‑Handling
 
 ## Zustandsübersicht
 Der Baustein besitzt keine eigene explizite Zustandsmaschine. Das Verhalten wird durch den inneren FB `I_WBSD` gesteuert:
+
 - **Ruhezustand:** Keine Initialisierung ausstehend.
 - **Initialisierungslauf:** Nach **INIT** mit **QI = TRUE** wird der interne Prozess gestartet. Bei **QI = FALSE** erfolgt keine Aktion.
 - **Initialisierung abgeschlossen:** **INITO** wird ausgelöst, **QO** zeigt Erfolg (`TRUE`) oder Misserfolg (`FALSE`). Danach können über die Adapter laufend Messwerte und Timeout‑Status empfangen werden.

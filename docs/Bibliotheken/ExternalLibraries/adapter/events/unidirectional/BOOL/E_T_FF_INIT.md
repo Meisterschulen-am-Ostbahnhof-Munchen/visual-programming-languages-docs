@@ -1,6 +1,5 @@
 # E_T_FF_INIT
 
-
 ![E_T_FF_INIT](./E_T_FF_INIT.svg)
 
 * * * * * * * * * *

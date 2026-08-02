@@ -2,7 +2,6 @@
 
 [[Bild des Funktionsbausteins – in der 4diac-IDE als Symbol mit einem Ereigniseingang REQ, Ausgang CNF, Dateneingängen CLK (BOOL) und RST (BOOL) sowie Datenausgang Q (BOOL) dargestellt]]
 
-
 ![FB_T_FF](./FB_T_FF.svg)
 
 * * * * * * * * * *

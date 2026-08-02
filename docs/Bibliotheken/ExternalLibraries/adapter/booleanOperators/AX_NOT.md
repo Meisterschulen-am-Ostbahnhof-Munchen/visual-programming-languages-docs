@@ -1,7 +1,5 @@
 # AX_NOT
 
-
-
 <img width="820" height="231" alt="image" src="https://github.com/user-attachments/assets/dc31ab7f-e7b2-434e-88d6-7cf13a88d725" />
 
 * * * * * * * * * *
@@ -51,11 +49,6 @@ Der Funktionsblock arbeitet zustandslos und führt die NOT-Operation direkt auf 
 Im Vergleich zu anderen booleschen Operatoren wie AND oder OR führt AX_NOT ausschließlich die Negationsoperation durch. Die Verwendung von Adaptern anstelle direkter Ein-/Ausgänge ermöglicht eine flexiblere Integration in komplexere Systemarchitekturen.
 
 Vergleich mit [F_NOT](../../../StandardLibraries/iec61131-3/bitwiseOperators/F_NOT.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

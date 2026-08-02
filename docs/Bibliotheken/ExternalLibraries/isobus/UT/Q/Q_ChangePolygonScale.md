@@ -1,7 +1,5 @@
 # Q_ChangePolygonScale
 
-
-
 ![Q_ChangePolygonScale](https://user-images.githubusercontent.com/116869307/214147096-01ad8095-df5d-4cab-82ee-7f97a5758ea0.png)
 
 * * * * * * * * * *
@@ -95,6 +93,7 @@ Der Q_ChangePolygonScale-Baustein bietet die Referenzimplementierung für Polygo
 - **Standardkonform**: Volle ISO 11783-6 Kompatibilität
 
 Idealer Einsatz bei:
+
 - Adaptiven Visualisierungen
 - Dynamischen Kartenansichten
 - Größenveränderbaren Bedienelementen

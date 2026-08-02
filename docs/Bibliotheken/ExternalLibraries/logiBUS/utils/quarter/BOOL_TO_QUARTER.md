@@ -2,13 +2,11 @@
 
 ## 🎧 Podcast
 
-
 ![BOOL_TO_QUARTER](./BOOL_TO_QUARTER.svg)
 
 * [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
 ---- 
-
 
 <img width="1677" height="214" alt="image" src="https://github.com/user-attachments/assets/78d7da91-c9c9-424a-a08b-2ac7b67c5662" />
 
@@ -35,6 +33,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 
 ## Funktionsweise
 Bei Auslösung durch das `REQ`-Ereignis wertet der Block den Wert am Eingang `I` aus. Die Verarbeitung erfolgt über eine `CASE`-Anweisung:
+
 *   Wenn `I` den Wert `BOOL#TRUE` hat, wird der Ausgang `QB` auf die Konstante `quarter::COMMAND_ENABLE` gesetzt.
 *   In allen anderen Fällen (standardmäßig also bei `FALSE`) wird der Ausgang `QB` auf die Konstante `quarter::COMMAND_DISABLE` gesetzt.
 
@@ -56,9 +55,6 @@ Der Block besitzt keinen internen Zustand im Sinne eines Speichers. Er verhält 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **`BOOL_TO_BYTE`**: Ein generischer Konverter, der `TRUE` typischerweise auf `1` und `FALSE` auf `0` abbildet. `BOOL_TO_QUARTER` ist spezialisierter und verwendet projektspezifische, semantische Konstanten anstelle numerischer Werte.
 *   **Direkte Zuweisung**: Die Funktionalität könnte auch durch direkte Zuweisung in ST-Code (`QB := I`) nachgebildet werden, dabei gingen jedoch die Vorteile der zentralen Konstantendefinition und der klaren Schnittstelle (Events) verloren.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

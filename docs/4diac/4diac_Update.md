@@ -1,7 +1,5 @@
 # Eclipse 4diac™ Update
 
-
-
 Zuordnung GIT Branch zu Download:
 
 | Git     | Git Link                                                        | Download  | Download Link                                                |

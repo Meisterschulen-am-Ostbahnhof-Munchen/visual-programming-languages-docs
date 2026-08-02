@@ -1,6 +1,5 @@
 # AUDI_MUX_2
 
-
 ![AUDI_MUX_2](./AUDI_MUX_2.svg)
 
 * * * * * * * * * *
@@ -34,6 +33,7 @@ Nach erfolgreicher Auswahl und Weiterleitung des Wertes wird das Ereignis `CNF` 
 | K | UINT | Index (0 oder 1) |
 
 Der Index `K` legt fest, welcher der beiden über die Adapter-Schnittstellen bereitgestellten Werte ausgewählt wird:
+
 - **K = 0** → Wert von `IN1`
 - **K = 1** → Wert von `IN2`
 

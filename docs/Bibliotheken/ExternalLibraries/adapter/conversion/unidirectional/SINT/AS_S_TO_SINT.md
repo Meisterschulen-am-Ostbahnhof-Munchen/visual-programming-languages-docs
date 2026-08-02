@@ -1,7 +1,5 @@
 # AS_S_TO_SINT
 
-
-
 ## Einleitung
 Der AS_S_TO_SINT Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung des AS-Adapterformats in einen SINT-Wert dient.
 

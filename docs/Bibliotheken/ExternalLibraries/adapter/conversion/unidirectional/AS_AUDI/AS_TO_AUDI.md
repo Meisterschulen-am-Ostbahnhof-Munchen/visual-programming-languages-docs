@@ -1,6 +1,5 @@
 # AS_TO_AUDI
 
-
 ![AS_TO_AUDI](./AS_TO_AUDI.svg)
 
 * * * * * * * * * *
@@ -28,6 +27,7 @@ Nicht vorhanden. Die Datenausgabe erfolgt über den Adapter-Plug **AUDI_OUT**.
 | **AUDI_OUT** | `adapter::types::unidirectional::AUDI` | Plug (Ausgang) | UDINT-Adapter, der den konvertierten Wert (UDINT) und ein Ereignis ausgibt. |
 
 Die Adapter enthalten jeweils ein Daten- und ein Ereigniselement:
+
 - **AS_IN**: Daten `D1` (SINT), Ereignis `E1`.
 - **AUDI_OUT**: Daten `D1` (UDINT), Ereignis `E1`.
 

@@ -1,7 +1,5 @@
 # Datentyp-Detail: DINT
 
-
-
 ## Beschreibung
 Doppelte ganze Zahl (Double Integer)
 

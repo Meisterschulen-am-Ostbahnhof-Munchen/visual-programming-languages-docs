@@ -1,7 +1,5 @@
 # AND_6_BOOL
 
-
-
 <img width="1383" height="362" alt="image" src="https://github.com/user-attachments/assets/c763f4fa-77f1-49b2-a946-396f41d8094f" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der Baustein besitzt keinen internen Zustand oder Speicher. Sein Verhalten ist r
 
 ## Anwendungsszenarien
 Typische Anwendungen sind Sicherheits- und Freigabeketten in Steuerungslogik, bei denen mehrere Bedingungen gleichzeitig erfüllt sein müssen, bevor eine Aktion ausgeführt wird.
+
 *   **Maschinenstart:** Starten einer Maschine nur, wenn alle Schutztüren geschlossen (`TRUE`) und alle Not-Aus-Taster nicht gedrückt (`TRUE`) sind.
 *   **Prozessfreigabe:** Freigabe eines Prozessschritts nur, wenn alle vorgelagerten Schritte erfolgreich abgeschlossen (`TRUE`) und alle erforderlichen Ressourcen verfügbar (`TRUE`) sind.
 *   **Mehrfachsensor-Abfrage:** Auswertung mehrerer Sensoren, die alle ein Signal geben müssen, um eine Position oder einen Zustand zu bestätigen.

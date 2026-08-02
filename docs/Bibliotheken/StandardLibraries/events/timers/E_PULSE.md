@@ -1,7 +1,5 @@
 # E_PULSE
 
-
-
 **Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
 
 ![image](https://github.com/user-attachments/assets/f5119723-ac8b-477f-afe1-795808faa1e2)
@@ -9,7 +7,6 @@
 * * * * * * * * * *
 
 ![E_PULSE](E_PULSE.svg)
-
 
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 
@@ -69,9 +66,6 @@ Der E_PULSE-Baustein kann in verschiedenen industriellen Steuerungsanwendungen e
 - **Ventilsteuerung**: Der Baustein kann verwendet werden, um ein Ventil für eine bestimmte Zeit zu öffnen, z.B. um eine bestimmte Menge an Flüssigkeit oder Gas freizugeben.
 
 ##
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

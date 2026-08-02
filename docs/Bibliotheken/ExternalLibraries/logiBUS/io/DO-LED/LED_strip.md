@@ -1,8 +1,5 @@
 # LED_strip
 
-
-
-
 ![LED_strip](./LED_strip.svg)
 
 * * * * * * * * * *

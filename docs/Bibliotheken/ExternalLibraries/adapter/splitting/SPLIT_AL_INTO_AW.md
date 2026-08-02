@@ -1,6 +1,5 @@
 # SPLIT_AL_INTO_AW
 
-
 ![SPLIT_AL_INTO_AW](./SPLIT_AL_INTO_AW.svg)
 
 * * * * * * * * * *

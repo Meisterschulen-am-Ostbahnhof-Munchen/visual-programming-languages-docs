@@ -1,6 +1,5 @@
 # AX_NOOP
 
-
 ![AX_NOOP](./AX_NOOP.svg)
 
 * * * * * * * * * *
@@ -33,6 +32,7 @@ Daten werden über den Adapter `OUT` weitergegeben.
 
 ## Funktionsweise
 Der Baustein stellt eine Punkt-zu-Punkt-Verbindung zwischen dem Eingangsadapter `IN` und dem Ausgangsadapter `OUT` her. Intern werden folgende Verbindungen realisiert:
+
 - **Ereignisverbindung**: `IN.E1` → `OUT.E1`
 - **Datenverbindung**: `IN.D1` → `OUT.D1`
 

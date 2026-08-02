@@ -1,6 +1,5 @@
 # ALR_MUX_5
 
-
 ![ALR_MUX_5](./ALR_MUX_5.svg)
 
 * * * * * * * * * *

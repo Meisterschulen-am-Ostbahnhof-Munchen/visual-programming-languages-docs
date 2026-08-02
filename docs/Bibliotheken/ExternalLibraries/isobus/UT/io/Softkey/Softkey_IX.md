@@ -1,6 +1,5 @@
 # Softkey_IX
 
-
 ## 🎧 Podcast
 
 * [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
@@ -50,6 +49,7 @@ Der Softkey_IX-Funktionsblock dient als Vermittler zwischen der Anwendungslogik 
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Hauptzustände:
+
 1. **Nicht initialisiert**: Vor der INIT-Verarbeitung
 2. **Initialisiert**: Nach erfolgreicher INIT-Verarbeitung
 3. **Bereit**: Kann Service-Anfragen verarbeiten
@@ -63,9 +63,6 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsbausteinen bietet Softkey_IX erweiterte Service-Funktionalitäten mit parametrierbaren Konfigurationen und ISOBUS-Kompatibilität. Die IND-Funktionalität ermöglicht asynchrone Ereignisbehandlung, was bei reinen Abfrage-basierten Bausteinen nicht verfügbar ist.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,6 +1,5 @@
 # ILOCK_FB_SR
 
-
 ![ILOCK_FB_SR](./ILOCK_FB_SR.svg)
 
 * * * * * * * * * *
@@ -50,6 +49,7 @@ Die Adapter ermöglichen eine bidirektionale Verkettung von Interlock-Bausteinen
 Der Kern des Bausteins ist ein internes SR-Latch (`FB_SR`), das **set-dominant** arbeitet: Wenn sowohl Set (`S1`) als auch Reset (`R`) gleichzeitig aktiv sind, setzt der Baustein den Ausgang `Q1` auf `TRUE`.
 
 Die Logik wird durch drei OR-Gatter ergänzt:
+
 - **OR_3_BOOL** vereint die Signale des Set-Eingangs (`S1`) mit den Rückmeldungen der benachbarten Interlock-Bausteine (`ILOCK_IN.DO1` und `ILOCK_OUT.DI1`). Das Ergebnis wird dem Set-Eingang des internen SR-Latches zugeführt.
 - **OR_2_BOOL_IN** verknüpft das Set-Signal (`S1`) und das Signal des nachgeschalteten Interlock-Bausteins (`ILOCK_OUT.DI1`). Das Ergebnis wird über den Adapter `ILOCK_IN.DI1` an den vorgelagerten Baustein gesendet.
 - **OR_2_BOOL_OUT** verknüpft das Set-Signal (`S1`) und das Signal des vorgelagerten Interlock-Bausteins (`ILOCK_IN.DO1`). Das Ergebnis wird über den Adapter `ILOCK_OUT.DO1` an den nachgelagerten Baustein gesendet.

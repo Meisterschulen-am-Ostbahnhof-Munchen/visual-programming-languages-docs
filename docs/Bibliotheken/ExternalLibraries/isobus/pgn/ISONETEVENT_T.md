@@ -1,7 +1,5 @@
 # ISONETEVENT_T
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `ISONETEVENT_T` ist eine Struktur (Structured Type), die zur Beschreibung eines Netzwerkereignisses innerhalb eines ISOBUS-Netzwerks dient. Er kapselt alle relevanten Informationen, die benötigt werden, um ein Ereignis im Zusammenhang mit der Verwaltung von Netzwerkteilnehmern (Control Functions) zu identifizieren und zu verarbeiten. Dieser Typ wird typischerweise in Callback-Funktionen verwendet, um über Zustandsänderungen im Netzwerk zu informieren.
@@ -34,6 +32,7 @@ Die Struktur `ISONETEVENT_T` fungiert als ein Container oder Nachrichtenobjekt. 
 
 ## Anwendungsszenarien
 Dieser Datentyp wird primär in Szenarien verwendet, in denen eine Applikation über dynamische Änderungen im ISOBUS-Netzwerk informiert werden muss. Beispiele sind:
+
 *   Überwachung des Erscheinens oder Verschwindens von Steuergeräten (ECUs) im Netzwerk.
 *   Reaktion auf Adressänderungen von Netzwerkteilnehmern.
 *   Implementierung von benutzerdefinierter Logik beim Verbindungsaufbau oder -abbau zu einer bestimmten CF.

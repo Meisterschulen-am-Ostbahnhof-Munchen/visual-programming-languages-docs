@@ -1,7 +1,5 @@
 # AX_OR_10
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der AX_OR_10 ist ein generischer Funktionsblock zur Berechnung der logischen ODER-Verknüpfung von 10 Eingängen.

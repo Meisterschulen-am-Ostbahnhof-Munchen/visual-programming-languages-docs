@@ -1,6 +1,5 @@
 # AR_TO_AX
 
-
 ![AR_TO_AX](./AR_TO_AX.svg)
 
 * * * * * * * * * *
@@ -29,6 +28,7 @@ Keine direkten Daten-Ausgänge auf FB-Ebene. Der Daten-Ausgang ist im AX-Adapter
 ## Funktionsweise
 
 Der Baustein verarbeitet eingehende REAL-Werte folgendermaßen:
+
 1. Ein Ereignis an `AR_IN.E1` triggert den internen Vergleichsbaustein `F_NE` (ungleich).
 2. Der über `AR_IN.D1` anliegende REAL-Wert wird mit dem konstanten Wert 0,0 verglichen.
 3. Das Ergebnis des Vergleichs (BOOL) wird über `F_NE.OUT` an `AX_OUT.D1` weitergeleitet.
@@ -44,6 +44,7 @@ Der interne Baustein `F_NE` ist ein IEC 61131-3-konformer Vergleichsbaustein und
 
 ## Zustandsübersicht
 Da der FB als Composition (Netzwerk aus Basisbausteinen) implementiert ist, besitzt er keine eigene Zustandsmaschine. Die Funktion wird durch die sequenzielle Verarbeitung der Ereignis- und Datenflüsse im internen Netzwerk bestimmt:
+
 - **Wartezustand**: Kein Ereignis an `AR_IN.E1`. Der Ausgangswert bleibt unverändert.
 - **Verarbeitungszustand**: Ein Ereignis an `AR_IN.E1` löst den Vergleich aus und erzeugt ein Ereignis an `AX_OUT.E1`, sobald der BOOL-Wert bereitsteht.
 

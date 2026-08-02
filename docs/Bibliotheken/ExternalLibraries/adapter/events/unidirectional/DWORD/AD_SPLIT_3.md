@@ -1,6 +1,5 @@
 # AD_SPLIT_3
 
-
 ![AD_SPLIT_3](./AD_SPLIT_3.svg)
 
 * * * * * * * * * *

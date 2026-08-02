@@ -1,6 +1,5 @@
 # E_D_FF_ANY_HYS_TMIN
 
-
 ![E_D_FF_ANY_HYS_TMIN](./E_D_FF_ANY_HYS_TMIN.svg)
 
 * * * * * * * * * *
@@ -51,6 +50,7 @@ Der Baustein setzt sich intern aus zwei Funktionsblöcken zusammen:
 2. **`E_TMIN`** – Ein Timer, der sicherstellt, dass zwischen zwei `EO`‑Ereignissen mindestens die Zeit `Tmin` vergangen ist.
 
 Ablauf:
+
 - `INIT` initialisiert den Timer von `E_TMIN` mit dem Parameter `Tmin`.
 - Ein `CLK` triggert das Hysterese‑Flip‑Flop.
 - Wenn das Flip‑Flop eine Zustandsänderung erkennt, erzeugt es ein internes Ereignis (`E_D_FF_ANY_HYS.EO`).

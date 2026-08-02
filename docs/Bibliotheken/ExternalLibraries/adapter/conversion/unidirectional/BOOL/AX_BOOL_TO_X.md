@@ -1,7 +1,5 @@
 # AX_BOOL_TO_X
 
-
-
 <img width="1151" height="231" alt="image" src="https://github.com/user-attachments/assets/d7e1acea-074c-48d3-afa2-37176d3d2d1f" />
 
 * * * * * * * * * *
@@ -39,6 +37,7 @@ Der Funktionsblock empfängt einen booleschen Wert am Daten-Eingang OUT und wand
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
+
 1. **Wartezustand**: Wartet auf REQ-Ereignis
 2. **Verarbeitungszustand**: Bei REQ-Ereignis wird der BOOL-Wert konvertiert und über den Adapter ausgegeben
 3. Rückkehr in Wartezustand nach Abschluss der Konvertierung
@@ -51,9 +50,6 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen zeichnet sich AX_BOOL_TO_X durch seine spezifische Ausrichtung auf das AX-Adapterformat aus. Während allgemeine Konvertierungsblöcke oft mehrere Ausgabeformate unterstützen, bietet dieser Block eine optimierte Lösung für die spezifische AX-Schnittstelle.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

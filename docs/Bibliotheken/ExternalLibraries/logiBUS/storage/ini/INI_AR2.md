@@ -1,6 +1,5 @@
 # INI_AR2
 
-
 ![INI_AR2](./INI_AR2.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Der FB INI_AR2 ist ein zusammengesetzter (Composite) Baustein, der intern einen 
 
 ## Zustandsübersicht
 Da es sich um einen Composite-FB handelt, gibt es keinen expliziten internen Zustandsautomaten. Der Ablauf ergibt sich aus dem Event-Netzwerk:
+
 - INIT empfangen → INI.INIT ausführen.
 - Nach INI.INITO: automatisch INI.GET ausführen.
 - Nach INI.GETO: VAL.EI1 auslösen (Wertausgabe) und INITO senden.

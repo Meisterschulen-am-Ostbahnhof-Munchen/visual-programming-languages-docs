@@ -1,6 +1,5 @@
 # GET_REAL
 
-
 ![GET_REAL](./GET_REAL.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Keine Adapter vorhanden.
    ```structuredtext
    OUT := IN;
    ```
+
 3. Anschließend wird das Bestätigungsereignis `CNF` gesendet. Die Ausgänge `OUT` und `IN` werden mit dem Ereignis assoziiert, sodass sie gleichzeitig gültig sind.
 4. Der Ausgangswert bleibt solange erhalten, bis ein weiteres `REQ`-Ereignis eintrifft und `OUT` neu geschrieben wird.
 
@@ -54,6 +54,7 @@ Keine Adapter vorhanden.
 
 ## Zustandsübersicht
 Der FB besitzt nur einen einzigen Zustand:
+
 - **Zustand `REQ`:**  
   Beim Eintritt wird der Algorithmus `REQ` ausgeführt (OUT := IN) und das Ereignis `CNF` gesendet. Der FB verbleibt in diesem Zustand und ist stets bereit für die nächste Anforderung.
 

@@ -1,6 +1,5 @@
 # AD_DEMUX_3
 
-
 ![AD_DEMUX_3](./AD_DEMUX_3.svg)
 
 * * * * * * * * * *
@@ -48,6 +47,7 @@ Sobald ein Ereignis am **REQ**-Eingang eintrifft, wird der aktuelle Wert des Ind
 
 ## Zustandsübersicht
 Der FB besitzt keine explizite Zustandsmaschine im XML-Modell. Das Verhalten ist rein sequenziell:
+
 1. Warten auf REQ-Ereignis.
 2. Lesen von K und Weiterleiten des IN-Adapters an den ausgewählten OUT-Adapter.
 3. Senden von CNF.

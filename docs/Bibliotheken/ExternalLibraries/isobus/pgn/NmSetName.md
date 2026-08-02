@@ -1,9 +1,6 @@
 # NmSetName
 
-
-
 <img width="1021" height="248" alt="image" src="https://github.com/user-attachments/assets/313bb66b-066d-4f13-adfb-b0d058074d2d" />
-
 
 ![NmSetName](./NmSetName.svg)
 
@@ -39,6 +36,7 @@ Der Baustein arbeitet als reiner Daten-Transformer. Bei Auslösung durch das `RE
 
 ## Zustandsübersicht
 Der Funktionsblock ist zustandslos. Sein Verhalten lässt sich als einfache, deterministische Funktion beschreiben:
+
 1.  **Warten:** Block wartet auf das `REQ`-Ereignis.
 2.  **Verarbeiten:** Bei `REQ` werden die Eingangsdaten verarbeitet und das Ausgangs-Array berechnet.
 3.  **Bestätigen:** Unmittelbar nach der Berechnung wird das `CNF`-Ereignis ausgegeben.
@@ -52,9 +50,6 @@ Der Block kehrt danach direkt wieder in den Wartezustand (1) zurück.
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenstück `NmGetName`:** Während `NmSetName` eine strukturierte Beschreibung in ein Byte-Array packt, würde ein hypothetischer `NmGetName`-Block die umgekehrte Operation durchführen: Er extrahiert aus einem gegebenen ISO-NAME-Byte-Array die einzelnen Felder und stellt sie in einer `NAMEFIELD_T`-Struktur bereit. `NmSetName` ist somit der "Encoder", sein Pendant wäre der "Decoder".
 *   **Generische Byte-Packer:** Im Gegensatz zu generischen Bausteinen, die beliebige Datenstrukturen serialisieren, ist `NmSetName` spezifisch auf die ISO 11783-NAME-Struktur optimiert und garantiert so Normkonformität ohne zusätzliche Konfiguration.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

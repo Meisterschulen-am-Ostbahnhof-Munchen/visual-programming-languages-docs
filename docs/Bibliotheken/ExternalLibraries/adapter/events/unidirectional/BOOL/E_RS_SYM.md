@@ -1,6 +1,5 @@
 # E_RS_SYM
 
-
 ![E_RS_SYM](./E_RS_SYM.svg)
 
 * * * * * * * * * *

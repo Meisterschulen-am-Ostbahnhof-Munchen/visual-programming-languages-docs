@@ -1,7 +1,5 @@
 # Q_CtrlAudioSignal
 
-
-
 ![Q_CtrlAudioSignal](https://user-images.githubusercontent.com/116869307/214147202-f060b872-d3d6-4c56-92c9-84961ce5127b.png)
 
 * * * * * * * * * *
@@ -90,11 +88,6 @@ Der **Q_CtrlAudioSignal** ist ein standardkonformer Funktionsbaustein zur Steuer
 | Parametrierung| Vollständig       | Teilweise      | Einfach      |
 | Frequenzkontrolle | Ja           | Nein           | Nein         |
 
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_017](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)
@@ -110,6 +103,7 @@ Der Q_CtrlAudioSignal-Baustein bietet die Referenzimplementierung für VT-Audios
 - **Robust**: Bewährte Technik in Feldgeräten
 
 Unverzichtbar für:
+
 - Sicherheitskritische Warnsignale
 - Benutzerfreundliche akustische Rückmeldungen
 - Maschinen mit komplexen Audiostatusmeldungen

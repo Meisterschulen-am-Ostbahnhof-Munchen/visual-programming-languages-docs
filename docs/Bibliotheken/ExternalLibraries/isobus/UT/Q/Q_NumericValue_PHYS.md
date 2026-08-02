@@ -2,12 +2,12 @@
 
 ## Einleitung
 
-
 ![Q_NumericValue_PHYS](./Q_NumericValue_PHYS.svg)
 
 Der Funktionsblock `Q_NumericValue_PHYS` ist ein zusammengesetzter Baustein nach dem Standard **ISO 11783-6 (ISOBUS)**. Er dient dazu, einen numerischen Wert eines ISOBUS-Objekts durch Angabe eines physikalischen Wertes zu ändern. Die Umrechnung von physikalischen in rohe Datenwerte (Raw‑Value) erfolgt automatisch anhand der in der Objektstruktur `NumericObjectPool_S` hinterlegten Skalierung, Offset und Dezimalstellen.
 
 Der Baustein kapselt drei Unterbausteine:
+
 - **`F_MOVE`** – Zwischenspeicherung der Objektparameter bei Initialisierung
 - **`F_PHYS_TO_RAW`** – Umrechnung physikalischer Werte in rohe Ganzzahlen (UDINT)
 - **`Q_NumericValue`** – eigentliche ISOBUS‑Schreiboperation auf das numerische Objekt

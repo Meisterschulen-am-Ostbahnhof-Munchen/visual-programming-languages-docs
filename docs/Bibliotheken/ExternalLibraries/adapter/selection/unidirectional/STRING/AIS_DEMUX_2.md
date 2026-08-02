@@ -1,6 +1,5 @@
 # AIS_DEMUX_2
 
-
 ![AIS_DEMUX_2](./AIS_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Der Funktionsblock besitzt keine Daten-Ausgänge. Die Ausgabe erfolgt ausschlie�
 
 ## Funktionsweise
 Der Baustein arbeitet als 1-zu-2-Demultiplexer für AIS-Datenströme. Bei Eintreffen des Ereignisses **REQ** wird der anliegende Wert des Index **K** ausgewertet:
+
 - Ist **K = 1**, wird das am Socket **IN** anliegende AIS-Signal an den Plug **OUT1** weitergeleitet.
 - Ist **K = 2**, erfolgt die Weiterleitung an **OUT2**.
 - Für andere Werte von **K** wird kein Ausgang aktiviert (das Signal verworfen).
@@ -53,6 +53,7 @@ Nach der Umschaltung wird das Ereignis **CNF** gesendet. Es wird davon ausgegang
 
 ## Zustandsübersicht
 Der Baustein verfügt über keinen expliziten Zustandsautomaten in der XML-Beschreibung. Das implizite Verhalten kann wie folgt beschrieben werden:
+
 1. **Idle**: Warten auf ein **REQ**-Ereignis.
 2. **Processing**: Nach Eintreffen von **REQ** wird der Index K ausgelesen und die entsprechende Weiterleitung gesetzt.
 3. **Done**: Ausgabe von **CNF** und Rückkehr in den Idle-Zustand.

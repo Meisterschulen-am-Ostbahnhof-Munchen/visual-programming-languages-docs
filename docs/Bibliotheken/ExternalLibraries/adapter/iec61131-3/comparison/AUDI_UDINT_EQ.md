@@ -1,6 +1,5 @@
 # AUDI_UDINT_EQ
 
-
 ![AUDI_UDINT_EQ](./AUDI_UDINT_EQ.svg)
 
 * * * * * * * * * *
@@ -52,6 +51,7 @@ Keine direkten Daten-Ausgänge. Das Vergleichsergebnis (BOOL) wird über den Plu
 
 ## Zustandsübersicht
 Der FB besitzt keine explizite Zustandsmaschine. Er arbeitet rein ereignisgesteuert:
+
 - **Idle**: Warten auf ein Ereignis (`REQ` oder `IN1.E1`).
 - **Berechnung**: Sobald ein Ereignis eintrifft, wird der Vergleich ausgeführt und das Ergebnis an `OUT` übergeben.
 - **Abschluss**: Nach Ausgabe des Ergebnisses und des Folge-Events kehrt der FB sofort in den Idle-Zustand zurück.

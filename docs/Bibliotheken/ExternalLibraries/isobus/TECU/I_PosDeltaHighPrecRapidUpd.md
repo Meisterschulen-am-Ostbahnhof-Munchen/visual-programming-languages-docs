@@ -1,7 +1,5 @@
 # I_PosDeltaHighPrecRapidUpd
 
-
-
 <img width="1602" height="224" alt="image" src="https://github.com/user-attachments/assets/d363a6f6-94da-4529-aecc-ff2e9fd7e3a9" />
 
 * * * * * * * * * *
@@ -52,6 +50,7 @@ Sollte über einen definierten Zeitraum hinweg keine neue Nachricht empfangen we
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt im Wesentlichen zwei Hauptzustände:
+
 1.  **Inaktiv / Initialisiert**: Der Baustein ist initialisiert, aber nicht aktiv (`QI` = FALSE). Es werden keine Daten verarbeitet.
 2.  **Aktiv / Lauschend**: Der Baustein ist aktiviert (`QI` = TRUE) und wartet auf eingehende PGN 129027 Nachrichten. Bei Empfang werden diese verarbeitet und über `IND` ausgegeben. Ein fehlendes Signal kann zum Übergang in einen Timeout-Zustand führen, was durch das `TIMEOUT`-Ereignis signalisiert wird.
 
@@ -63,6 +62,7 @@ Der Funktionsblock besitzt im Wesentlichen zwei Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-Positionsbausteinen (z.B. solchen, die PGN 129029 "Position, Rapid Update" verarbeiten) bietet `I_PosDeltaHighPrecRapidUpd`:
+
 *   **Delta-basierte Daten**: Statt absoluter Positionen werden Änderungen (Deltas) übertragen, was bei hohen Update-Raten bandbreiteneffizienter sein kann.
 *   **Höhere Präzision**: Spezifiziert für Anwendungen, die eine höhere Genauigkeit als die typischen Rapid-Update-PGNs benötigen.
 *   **Explizite Zeitdifferenz**: Das `TimeDelta`-Feld ist integraler Bestandteil der Nachricht, was eine präzisere Geschwindigkeits- und Beschleunigungsberechnung ermöglicht.

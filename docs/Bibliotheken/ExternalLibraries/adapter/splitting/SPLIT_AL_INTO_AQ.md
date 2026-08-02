@@ -1,6 +1,5 @@
 # SPLIT_AL_INTO_AQ
 
-
 ![SPLIT_AL_INTO_AQ](./SPLIT_AL_INTO_AQ.svg)
 
 * * * * * * * * * *
@@ -30,6 +29,7 @@ Keine direkten Daten-Ausgänge. Die 2‑Bit‑Datenwerte werden über die ausgeh
 | Plug (Ausgang) | `QUARTER_BYTE_00` … `QUARTER_BYTE_31` | `adapter::types::unidirectional::AQ` | 32 Ausgänge, jeder liefert einen 2‑Bit‑Wert (Quarter) |
 
 Jeder Adapter verfügt über je einen Ereignis‑ und einen Datenkanal (`E1`, `D1`).  
+
 - Der `AL`-Adapter stellt ein Ereignis (`E1`) und den LWORD-Datenwert (`D1`) bereit.  
 - Die `AQ`-Adapter empfangen ein Ereignis (`E1`) und den zugehörigen 2‑Bit‑Wert (`D1`).
 
@@ -53,6 +53,7 @@ Der gesamte Ablauf erfolgt streng ereignisgesteuert – ein neues Eingangsereign
 ## Zustandsübersicht
 
 Der Baustein enthält keinen eigenen Zustandsautomaten. Die interne Funktionalität ergibt sich aus der Kombination von:
+
 - **einem** `SPLIT_LWORD_INTO_QUARTERS` (kombinatorische Aufteilung)
 - **32** `E_D_FF_ANY` (speichernde Elemente mit den Zuständen gesetzt/rückgesetzt)
 

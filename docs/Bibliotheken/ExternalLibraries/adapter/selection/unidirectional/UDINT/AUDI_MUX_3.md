@@ -2,7 +2,6 @@
 
 (Kein Bild verfügbar)
 
-
 ![AUDI_MUX_3](./AUDI_MUX_3.svg)
 
 * * * * * * * * * *

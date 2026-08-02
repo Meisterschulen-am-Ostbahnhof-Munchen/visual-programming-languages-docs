@@ -1,7 +1,5 @@
 # CYCLE_TIME
 
-
-
 <img width="1186" height="212" alt="image" src="https://github.com/user-attachments/assets/9a52222d-13af-45a6-94bb-67de45036241" />
 
 * * * * * * * * * *
@@ -29,6 +27,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 
 ## Funktionsweise
 Bei jedem Eintreffen des `REQ`-Ereignisses wird der zugehörige Algorithmus `REQ` ausgeführt. Dieser Algorithmus führt zwei wesentliche Operationen durch:
+
 1.  **Berechnung der Zykluszeit**: Die Differenz zwischen dem neu eingehenden Zeitwert `TM` und dem gespeicherten Wert `LAST` (vom vorherigen Aufruf) wird berechnet und an den Ausgang `CYCLE` ausgegeben.
 2.  **Aktualisierung des Zeitstempels**: Der aktuelle Eingangswert `TM` wird im internen Speicher `LAST` für den nächsten Berechnungszyklus gesichert.
 
@@ -50,9 +49,6 @@ Der Baustein besitzt einen einzigen Execution Control State (EC-State) mit dem N
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Zeitmessbausteinen (wie `E_DELAY` oder `E_CYCLE`) ist `CYCLE_TIME` spezialisiert auf die **Differenzbildung zwischen aufeinanderfolgenden Zeitpunkten**. Er führt keinen eigenen Timer, sondern wertet extern bereitgestellte Zeitstempel aus. Bausteine wie `E_SR` oder `E_R_TRIG` dienen grundlegend anderen Zwecken (Speichern, Flankenerkennung) und bieten keine Zeitdifferenzberechnung.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,7 +1,5 @@
 # E_R_TRIG (Steigende Flankenerkennung)
 
-
-
 ![E_R_TRIG Funktionsbaustein](https://user-images.githubusercontent.com/113907528/204903134-9fbf33a3-4041-428e-9a9a-10a573c0b6f2.png)
 
 * * * * * * * * * *
@@ -25,6 +23,7 @@ Der **E_R_TRIG** (Rising Edge Trigger) ist ein grundlegender Funktionsbaustein n
 
 ### **Interne Struktur**
 Laut XML-Spezifikation besteht der Baustein aus:
+
 1. **E_D_FF**: D-Flip-Flop zur Signalzustandsspeicherung
 2. **E_SWITCH**: Schalter zur bedingten Ereignisweiterleitung
 
@@ -59,11 +58,6 @@ Laut XML-Spezifikation besteht der Baustein aus:
 | Erkannte Flanke | Steigend (benannt), Fallend (implementiert) | Fallend (benannt), Steigend (implementiert) | Taktflanke |
 | Ereignisausgang | Ja     | Ja       | Ja     |
 | Speicherverhalten | Ja  | Ja     | Ja     |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

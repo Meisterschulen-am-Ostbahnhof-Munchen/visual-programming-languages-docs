@@ -1,7 +1,5 @@
 # SPLIT_AW_INTO_AQ
 
-
-
 ![SPLIT_AW_INTO_AQ](./SPLIT_AW_INTO_AQ.svg)
 
 * * * * * * * * * *
@@ -41,6 +39,7 @@ Der Funktionsblock **SPLIT_AW_INTO_AQ** teilt die acht Quarter-Adapter (AQ) eine
 
 ## Zustandsübersicht
 Der Baustein besitzt keinen eigenen Zustandsautomaten. Die internen `E_D_FF_ANY`‑Flip‑Flops können sich in zwei Zuständen befinden:
+
 - **Speichert vorherigen Wert** – Bis ein neues Ereignis eintrifft.
 - **Aktualisierter Wert** – Nach einem Taktimpuls durch das CNF-Ereignis.
 

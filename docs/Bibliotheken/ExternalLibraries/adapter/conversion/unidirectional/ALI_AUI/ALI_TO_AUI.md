@@ -1,6 +1,5 @@
 # ALI_TO_AUI
 
-
 ![ALI_TO_AUI](./ALI_TO_AUI.svg)
 
 * * * * * * * * * *
@@ -30,6 +29,7 @@ Nicht vorhanden – die Datenübergabe erfolgt über die Adapter.
 
 ## Funktionsweise
 Der Baustein verbindet intern den Socket `ALI_IN` mit dem Eingang des Konvertierungsbausteins `F_LINT_TO_UINT`.  
+
 - Über den Ereignisausgang `E1` von `ALI_IN` wird der `REQ`-Eingang des Konverters angesteuert.  
 - Der Datenwert `D1` von `ALI_IN` (LINT) wird auf den `IN`-Eingang des Konverters gelegt.  
 - Nach erfolgreicher Konvertierung signalisiert der Konverter mit `CNF` das Ereignis an den Plug `AUI_OUT`, und der umgewandelte Wert (UINT) wird auf dessen `D1`-Ausgang geschrieben.

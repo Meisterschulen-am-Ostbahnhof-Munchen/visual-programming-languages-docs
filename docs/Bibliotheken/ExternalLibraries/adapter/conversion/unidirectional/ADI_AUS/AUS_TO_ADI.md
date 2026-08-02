@@ -1,6 +1,5 @@
 # AUS_TO_ADI
 
-
 ![AUS_TO_ADI](./AUS_TO_ADI.svg)
 
 * * * * * * * * * *
@@ -29,6 +28,7 @@ Keine separaten Daten-Ausgänge vorhanden. Die konvertierten Daten werden über 
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Ein eingehendes Ereignis am Socket `AUS_IN.E1` triggert den internen Konvertierungsbaustein `Convert` (Typ `F_USINT_TO_DINT`).
 2. Der Konvertierungsbaustein liest den Datenwert `AUS_IN.D1` (`USINT`) und wandelt ihn in einen `DINT`‑Wert um.
 3. Nach Abschluss der Konvertierung wird ein Ereignis am Ausgang `Convert.CNF` erzeugt.

@@ -1,6 +1,5 @@
 # AIWS_DEMUX_2
 
-
 ![AIWS_DEMUX_2](./AIWS_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Keine.
 
 ## Funktionsweise
 Der Baustein wartet auf ein **REQ**-Ereignis. Beim Eintreffen wird der Wert des Daten-Eingangs **K** ausgewertet:
+
 - Ist `K = 0`, werden die aktuellen Daten des **IN**-Adapters an den **OUT1**-Adapter weitergegeben.
 - Ist `K = 1`, werden die Daten an **OUT2** weitergegeben.
 - Für andere Werte von K (falls vorhanden) bleibt die Ausgabe unverändert (oder es wird ein Fehlerzustand angenommen – je nach Implementierung).
@@ -53,6 +53,7 @@ Nach erfolgreicher Weiterleitung wird das Ereignis **CNF** ausgegeben. Der Baust
 
 ## Zustandsübersicht
 Der FB besitzt eine einfache Zustandslogik (im ECC nicht explizit dargestellt, aber implizit):
+
 - **IDLE**: Warten auf ein REQ-Ereignis.
 - **PROCESS**: Auswerten von K und Weiterleiten der Daten an den entsprechenden OUT-Adapter.
 - **DONE**: Senden des CNF-Ereignisses und Rückkehr in den IDLE-Zustand.

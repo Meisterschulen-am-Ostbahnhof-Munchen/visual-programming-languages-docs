@@ -1,7 +1,5 @@
 # AX_SEL
 
-
-
 <img width="1242" height="224" alt="image" src="https://github.com/user-attachments/assets/70f03e26-14b2-40a3-9eff-056402fef00e" />
 
 * * * * * * * * * *
@@ -38,6 +36,7 @@ Der AX_SEL Funktionsblock wählt zwischen zwei Eingangswerten (IN0 und IN1) aus 
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen Zustand:
+
 - **Bereit**: Wartet auf Steuersignal vom Adapter G
 - Bei Empfang des Steuersignals wird der entsprechende Eingang ausgewählt und das CNF-Ereignis ausgelöst
 
@@ -49,6 +48,7 @@ Der Funktionsblock besitzt einen einfachen Zustand:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Selektionsbausteinen bietet AX_SEL:
+
 - Größere Flexibilität durch ANY-Datentyp
 - Einfache Integration durch unidirektionalen Adapter
 - Standardisierte Schnittstelle gemäß IEC 61131-3

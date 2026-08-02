@@ -1,6 +1,5 @@
 # ADI_TO_AI
 
-
 ![ADI_TO_AI](./ADI_TO_AI.svg)
 
 * * * * * * * * * *
@@ -10,18 +9,22 @@ Der Funktionsbaustein **ADI_TO_AI** ist ein Composite FB, der einen DINT-Adapter
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Der FB besitzt keine separaten Ereignis-Eingänge. Die ereignisgesteuerte Verarbeitung erfolgt über den **Socket ADI_IN**:
+
 - **ADI_IN.E1** – Ereignis zur Anforderung der Konvertierung (wird intern an den `Convert.REQ` weitergeleitet).
 
 ### **Ereignis-Ausgänge**
 Der FB besitzt keine separaten Ereignis-Ausgänge. Die Ergebnis-Rückmeldung erfolgt über den **Plug AI_OUT**:
+
 - **AI_OUT.E1** – Ereignis, das nach erfolgreicher Konvertierung ausgelöst wird (entspricht `Convert.CNF`).
 
 ### **Daten-Eingänge**
 Der FB besitzt keine separaten Daten-Eingänge. Die Eingangsdaten werden über den **Socket ADI_IN** bereitgestellt:
+
 - **ADI_IN.D1** – DINT-Wert (32-Bit-Ganzzahl), der in einen INT-Wert umgewandelt werden soll.
 
 ### **Daten-Ausgänge**
 Der FB besitzt keine separaten Daten-Ausgänge. Die Ergebnisdaten werden über den **Plug AI_OUT** ausgegeben:
+
 - **AI_OUT.D1** – INT-Wert (16-Bit-Ganzzahl), das Ergebnis der Konvertierung.
 
 ### **Adapter**
@@ -30,6 +33,7 @@ Der FB besitzt keine separaten Daten-Ausgänge. Die Ergebnisdaten werden über d
 
 ## Funktionsweise
 Der Baustein verbindet die Adapter-Schnittstellen direkt mit einer internen Instanz des Konvertierungsbausteins `F_DINT_TO_INT`:
+
 1. Ein Ereignis an `ADI_IN.E1` triggert den `Convert.REQ`.
 2. Der Wert von `ADI_IN.D1` wird an `Convert.IN` übergeben.
 3. Die Konvertierung `DINT → INT` wird durchgeführt.

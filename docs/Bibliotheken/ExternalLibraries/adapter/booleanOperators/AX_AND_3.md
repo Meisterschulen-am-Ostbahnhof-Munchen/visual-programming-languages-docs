@@ -1,7 +1,5 @@
 # AX_AND_3
 
-
-
 <img width="1009" height="296" alt="image" src="https://github.com/user-attachments/assets/42842c64-6ed6-4728-8d41-60a0c3f2ab31" />
 
 * * * * * * * * * *
@@ -55,17 +53,13 @@ Der Funktionsblock besitzt keinen internen Zustandsautomaten, da er als kombinat
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-AND-Blöcken bietet AX_AND_3:
+
 - Drei Eingänge statt der typischen zwei Eingänge
 - Adapter-basierte Schnittstelle statt direkter Daten-Ein-/Ausgänge
 - Spezifische AX-Typ-Kompatibilität
 - Unidirektionale Signalübertragung
 
 Vergleich mit [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_3.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

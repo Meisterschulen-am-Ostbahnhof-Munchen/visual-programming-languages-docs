@@ -2,8 +2,6 @@
 
 # AUI (UINT)
 
-
-
 unidirectional Adapter Interface for 1 Event and 1 Uint
 
 ## Interface

@@ -1,6 +1,5 @@
 # FIELDBUS_LWORD_TO_SIGNAL_SCALED
 
-
 ![FIELDBUS_LWORD_TO_SIGNAL_SCALED](./FIELDBUS_LWORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
@@ -62,6 +61,7 @@ Die Skalierung erfolgt also linear: `OUT = IN_als_LREAL * SCALE + OFFSET`. Der S
   - `NOT_AVAILABLE_LWM`: Initialwert für den Eingang `IN` (kennzeichnet „nicht verfügbar“).
   - `VALID_SIGNAL_LW`: Grenzwert, bis zu dem ein Signal als gültig gilt (inklusive).
   Der Vergleich erfolgt durch Umwandlung beider LWORD-Werte in ULINT, sodass auch negative Werte (als Bitmuster) korrekt interpretiert werden.
+
 - **Typkonvertierung**: Der Rohwert wird von LWORD über ULINT (64-Bit) in LREAL konvertiert, wobei potenzielle Präzisionsverluste bei sehr großen ULINT-Werten zu beachten sind.
 - **Skalierungsparameter**: `SCALE` (LREAL) und `OFFSET` (DINT) werden nur während des INIT-Ereignisses gesetzt, bleiben dann aber für alle folgenden REQ-Aufrufe unverändert.
 - **Ereignissteuerung**: Der Baustein hat eine einfache Zustandsmaschine mit zwei Zuständen und erfordert eine explizite Initialisierung vor der ersten Verarbeitung.

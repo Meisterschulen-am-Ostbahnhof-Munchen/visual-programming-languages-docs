@@ -1,6 +1,5 @@
 # AD_TO_AULI
 
-
 ![AD_TO_AULI](./AD_TO_AULI.svg)
 
 * * * * * * * * * *
@@ -30,6 +29,7 @@ Der Baustein nimmt ein DWORD über den AD_IN-Adapter entgegen. Ein Ereignis am E
 
 ## Zustandsübersicht
 Der Composite-Baustein selbst besitzt keine eigenen Zustände. Der integrierte Funktionsblock F_DWORD_TO_ULINT durchläuft folgende Zustände:
+
 - **IDLE**: Warten auf ein REQ-Ereignis.
 - **REQ**: Konvertierung wird durchgeführt.
 - **CNF**: Konvertierung abgeschlossen, Ausgangsdaten werden aktualisiert.

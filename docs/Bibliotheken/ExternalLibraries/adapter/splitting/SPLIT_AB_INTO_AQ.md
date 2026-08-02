@@ -1,6 +1,5 @@
 # SPLIT_AB_INTO_AQ
 
-
 ![SPLIT_AB_INTO_AQ](./SPLIT_AB_INTO_AQ.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Somit wird mit jeder Aktivierung des Sockets ein gesamtes Byte in vier Quartette
 
 ## Zustandsübersicht
 Da `SPLIT_AB_INTO_AQ` ein zusammengesetzter FB ohne eigene Zustandsmaschine ist, wird sein Verhalten durch die internen Bausteine bestimmt. Im Wesentlichen existieren zwei Phasen:
+
 1. **Idle:** Es liegt kein Ereignis am Socket an; die Ausgangs‑Adapter halten die zuletzt übernommenen Werte.
 2. **Verarbeitung:** Ein Ereignis am Socket löst das Zerlegen und Aktualisieren aller Ausgänge aus. Nach Abschluss geht der FB wieder in den Ruhezustand über.
 

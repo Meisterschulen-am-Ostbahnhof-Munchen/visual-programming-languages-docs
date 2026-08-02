@@ -1,8 +1,5 @@
 # I_MSS
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -98,9 +95,6 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 | Quellenflexibilität | 8 | 1-2 | 1 |
 | Niedriggeschwindigkeit | ✔ Optimal | ✖ Ungenau | ✖ Unbrauchbar |
 
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
@@ -114,6 +108,7 @@ Der I_MSS-Baustein bietet präzise Geschwindigkeitssteuerung für mobile Arbeits
 - **Robust**: Integrierte Fehlerdiagnose
 
 Idealer Einsatz bei:
+
 - Automatischen Lenksystemen
 - Präzisionslandwirtschaft
 - Maschinen mit hohen Geschwindigkeitsanforderungen

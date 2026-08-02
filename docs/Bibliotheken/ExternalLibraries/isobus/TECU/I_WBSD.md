@@ -1,8 +1,5 @@
 # I_WBSD
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -97,9 +94,6 @@ Der Baustein ermöglicht die präzise Überwachung von Fahrzeugbewegungen und Be
 | Signalstabilität | Hoch | Mittel | Niedrig |
 | ISO-Konformität | Voll | Teilweise | Voll |
 
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_070](../../../../Uebungen/test_B/Uebungen_doc/Uebung_070.md)
@@ -119,6 +113,7 @@ Der I_WBSD-Baustein bietet zuverlässige Bewegungsdaten für mobile Arbeitsmasch
 - **Umfassend**: Integrierte Zustandsüberwachung
 
 Idealer Einsatz bei:
+
 - Präzisionslandwirtschaft
 - Automatischen Lenksystemen
 - Maschinen mit häufigen Richtungswechseln

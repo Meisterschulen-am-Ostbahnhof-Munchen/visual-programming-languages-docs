@@ -1,6 +1,5 @@
 # AUDI_UDINT_AX_SEL
 
-
 ![AUDI_UDINT_AX_SEL](./AUDI_UDINT_AX_SEL.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Der Funktionsblock `AUDI_UDINT_AX_SEL` realisiert eine binäre Auswahl (binary s
 
 ## Funktionsweise
 Der Baustein arbeitet in zwei Schritten:
+
 1. **Aktualisierung der Eingänge:** Über die Ereignisse `EI0` und `EI1` können die Werte von `IN0` bzw. `IN1` im internen Kontext gespeichert werden. Diese Ereignisse sind nicht direkt mit der eigentlichen Auswahl verbunden, sondern dienen der zeitlichen Trennung von Datenerfassung und Auswahl.
 2. **Selektion:** Ein Ereignis auf `G.E1` (vom Adapter `G`) triggert den internen Funktionsbaustein `F_SEL` (Typ `iec61131::selection::F_SEL`). Der Adapter-Datenwert `G.D1` (vom Typ `AX`) bestimmt, welcher Eingang auf den Ausgang gelegt wird:
    - Bei `G.D1 = FALSE` (0) wird `IN0` auf `OUT` übernommen.
@@ -59,6 +59,7 @@ Der Daten‑Ausgang `OUT` ist stets vom Typ `UDINT`. Der Eingang `IN1` erlaubt b
 
 ## Zustandsübersicht
 Der Baustein enthält keine explizite Zustandsmaschine. Die Funktionalität ist rein ereignisgesteuert:
+
 - Nach dem Setzen von `IN0` oder `IN1` (über `EI0`/`EI1`) wartet der Baustein auf das Triggersignal des Adapters `G.E1`.
 - Mit Eintreffen von `G.E1` wird sofort `F_SEL` ausgeführt und `CNF` ausgegeben.
 - Zwischen den Schritten ist der Baustein in einem passiven Ruhezustand.

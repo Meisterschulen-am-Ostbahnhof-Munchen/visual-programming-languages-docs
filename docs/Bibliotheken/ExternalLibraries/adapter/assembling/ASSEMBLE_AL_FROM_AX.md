@@ -2,7 +2,6 @@
 
 (Bild des FB wird hier in der IDE dargestellt – zeigt einen Funktionsblock mit 64 Sockets (links) und einem Plug (rechts))
 
-
 ![ASSEMBLE_AL_FROM_AX](./ASSEMBLE_AL_FROM_AX.svg)
 
 * * * * * * * * * *
@@ -77,6 +76,7 @@ Der FB besitzt keinen expliziten Zustandsautomaten. Die interne Logik arbeitet a
 - **E_D_FF_ANY**: Besitzt zwei Zustände: gespeicherter Wert (Q) und aktueller Daten‑Eingang (D). Der Zustand wechselt bei jeder positiven Flanke am CLK‑Eingang.
 
 Ein ereignisgesteuertes Verhalten:
+
 - **Warten auf Ereignis**: Keine Berechnung, Ausgang bleibt unverändert.
 - **Ereignis eingetroffen**: Zusammenstellung + Takten des Flip‑Flops → Ausgang wird aktualisiert.
 

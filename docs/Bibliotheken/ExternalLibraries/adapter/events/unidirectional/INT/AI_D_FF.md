@@ -1,6 +1,5 @@
 # AI_D_FF
 
-
 ![AI_D_FF](./AI_D_FF.svg)
 
 * * * * * * * * * *
@@ -33,6 +32,7 @@ Der Adapter `AI` ist unidirektional, d.h. die Daten- und Ereignisflüsse verlauf
 
 ## Funktionsweise
 Interne Komponente ist ein `E_D_FF_ANY`-Funktionsblock (IEC 61499 D-Flipflop). Die Verdrahtung verbindet:
+
 - `I.E1` → `E_D_FF_ANY.CLK` (Taktflanke)
 - `I.D1` → `E_D_FF_ANY.D` (Dateneingang)
 - `E_D_FF_ANY.EO` → `Q.E1` (Ausgangsereignis)

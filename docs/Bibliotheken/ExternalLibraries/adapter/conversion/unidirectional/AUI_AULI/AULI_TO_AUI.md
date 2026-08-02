@@ -1,6 +1,5 @@
 # AULI_TO_AUI
 
-
 ![AULI_TO_AUI](./AULI_TO_AUI.svg)
 
 * * * * * * * * * *
@@ -29,6 +28,7 @@ Der Funktionsblock **AULI_TO_AUI** ist ein zusammengesetzter Baustein (Composite
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Ein Ereignis am Eingang `AULI_IN.E1` triggert den internen Funktionsblock `F_ULINT_TO_UINT` über dessen Eingang `REQ`.
 2. Der Datenwert `AULI_IN.D1` wird direkt als Eingang `IN` an den Konvertierungsbaustein übergeben.
 3. Der Konvertierungsbaustein wandelt den `ULINT`-Wert in einen `UINT`-Wert um.

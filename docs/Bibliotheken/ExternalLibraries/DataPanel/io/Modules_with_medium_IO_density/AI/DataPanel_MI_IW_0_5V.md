@@ -1,6 +1,5 @@
 # DataPanel_MI_IW_0_5V
 
-
 ![DataPanel_MI_IW_0_5V](./DataPanel_MI_IW_0_5V.svg)
 
 * * * * * * * * * *
@@ -66,8 +65,10 @@ Bei negativem `QI` oder Fehlersituationen werden `QO` auf `FALSE` und `STATUS` a
 
 - **Systemspezifische Typen**  
   Der FB verwendet die benutzerdefinierten Strukturen `DataPanel_MI_AI_S` (Kanalauswahl) und die Konstanten `MI::MI_00` (Adressvorgabe). Diese sind im Package `DataPanel::io::MI::AI` definiert.
+
 - **Hysterese**  
   Über den Eingang `AnalogInput_hysteresis` kann eine Hysterese als `WORD`‑Wert vorgegeben werden, um das Rauschen des analogen Signals zu unterdrücken.
+
 - **Kanaladressierung**  
   Die Auswahl des analogen Eingangskanals erfolgt über den `Input`‑Parameter. Gültige Werte sind z. B. `AnalogInput_1A` bis `AnalogInput_8B`; der Initialwert `Invalid` muss vor der ersten Nutzung durch einen gültigen Kanal ersetzt werden.
 

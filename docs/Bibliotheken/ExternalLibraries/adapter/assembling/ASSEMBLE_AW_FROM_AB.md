@@ -1,6 +1,5 @@
 # ASSEMBLE_AW_FROM_AB
 
-
 ![ASSEMBLE_AW_FROM_AB](./ASSEMBLE_AW_FROM_AB.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Der FB setzt intern auf zwei Subbausteinen auf:
 - Der Assembler kombiniert die aktuellen Daten beider BYTE‑Eingänge zu einem WORD.  
   Dabei gilt:  
   `OUT.WORD = (BYTE_01.D1 << 8) | BYTE_00.D1`
+
 - Nach erfolgreicher Kombination sendet der Assembler einen Bestätigungs‑Event (`CNF`).
 - Dieser Event taktet das D‑Flipflop (`CLK`), das den aktuellen WORD‑Wert übernimmt.
 - Der Flipflop‑Ausgang (`Q`) wird kontinuierlich an den OUT‑Adapter (`D1`) weitergegeben.

@@ -1,8 +1,5 @@
 # Q_BackgroundColourAux
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -90,6 +87,7 @@ Der Q_BackgroundColourAux-Baustein ergänzt die ISOBUS-Farbsteuerung für Hilfse
 - **Praxisbewährt**: Eingesetzt in modernen Traktor-Displays
 
 Idealer Einsatz bei:
+
 - Komplexen Anzeigelayouts
 - Mehrschichtigen Visualisierungen
 - Systemen mit erweitertem Farbmanagement

@@ -1,7 +1,5 @@
 # AE2_SPLIT_MERGE_FORWARD
 
-
-
 <img width="1208" height="217" alt="image" src="https://github.com/user-attachments/assets/68ee26f9-debb-44fc-8735-e765847cdb6f" />
 
 * * * * * * * * * *
@@ -49,6 +47,7 @@ Der Funktionsblock verfügt über keine internen Zustände und arbeitet rein kom
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Splitter-Blöcken bietet AE2_SPLIT_MERGE_FORWARD zusätzlich:
+
 - Bidirektionale Funktionalität
 - Adapter-basierte Schnittstellen
 - Ereignis-Zusammenführung

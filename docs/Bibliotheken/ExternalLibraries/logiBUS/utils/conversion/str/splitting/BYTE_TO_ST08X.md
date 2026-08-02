@@ -1,9 +1,6 @@
 # BYTE_TO_ST08X
 
-
-
 <img width="1225" height="244" alt="image" src="https://github.com/user-attachments/assets/aaadee66-4701-4548-a8a5-c07d4936e97d" />
-
 
 ![BYTE_TO_ST08X](./BYTE_TO_ST08X.svg)
 
@@ -31,6 +28,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 Der `BYTE_TO_ST08X` Funktionsblock konvertiert ein einzelnes 8-Bit-Byte in eine vordefinierte Struktur `ST08X`, die acht separate BOOL-Variablen enthält.
 
 Bei einem `REQ`-Ereignis wird der Wert des `IN`-Bytes gelesen. Anschließend wird jedes Bit des `IN`-Bytes dem entsprechenden BOOL-Feld in der `OUT`-Struktur zugewiesen:
+
 *   `OUT.X_00` wird Bit 0 von `IN` zugewiesen.
 *   `OUT.X_01` wird Bit 1 von `IN` zugewiesen.
 *   ...

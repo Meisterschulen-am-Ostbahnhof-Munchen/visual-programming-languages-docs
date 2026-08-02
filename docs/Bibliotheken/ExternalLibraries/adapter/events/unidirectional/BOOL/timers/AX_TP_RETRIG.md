@@ -1,6 +1,5 @@
 # AX_TP_RETRIG
 
-
 ![AX_TP_RETRIG](./AX_TP_RETRIG.svg)
 
 * * * * * * * * * *

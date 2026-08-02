@@ -1,7 +1,5 @@
 # OR_2
 
-
-
 ![OR_2](https://user-images.githubusercontent.com/116869307/214144026-378fb776-128a-41b0-ad4c-4d23d70d12d0.png)
 
 Ein häufiger Anwendungsfall ist ein Soft KI und ein AUX Button
@@ -59,11 +57,6 @@ Die ODER-Operation wird auf Bitebene durchgeführt, wobei jedes Bit der Eingabew
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen booleschen Operationen wie AND oder XOR bietet OR_2 die spezifische Eigenschaft, dass das Ergebnis wahr ist, wenn mindestens einer der Operanden wahr ist. Im Gegensatz zu einfachen booleschen ODER-Bausteinen unterstützt OR_2 generische Bit-Datentypen und ermöglicht somit die Verarbeitung verschiedener Datenbreiten.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

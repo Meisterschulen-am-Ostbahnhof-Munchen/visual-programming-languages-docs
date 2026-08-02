@@ -1,6 +1,5 @@
 # AUDI_TO_AS
 
-
 ![AUDI_TO_AS](./AUDI_TO_AS.svg)
 
 * * * * * * * * * *
@@ -17,10 +16,12 @@ Der FB besitzt keine eigenständigen Ereignis-Ausgänge. Das Ergebnisereignis wi
 
 ### **Daten-Eingänge**
 Daten-Eingänge sind ausschließlich über den **Socket-Adapter `AUDI_IN`** verfügbar:
+
 - **`D1`** (Datentyp `UDINT`): Der umzuwandelnde 32‑Bit‑Wert.
 
 ### **Daten-Ausgänge**
 Daten-Ausgänge werden über den **Plug-Adapter `AS_OUT`** bereitgestellt:
+
 - **`D1`** (Datentyp `SINT`): Der konvertierte 8‑Bit‑Wert (Wertebereich -128…127).  
 
 > Hinweis: Ein `UDINT`-Wert größer als 127 wird durch die Konvertierung abgeschnitten oder interpretiert (abhängig von der Implementierung von `F_UDINT_TO_SINT`).  

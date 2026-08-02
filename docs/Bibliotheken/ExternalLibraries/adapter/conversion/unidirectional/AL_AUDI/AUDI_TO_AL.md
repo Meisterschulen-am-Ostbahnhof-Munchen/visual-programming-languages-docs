@@ -1,6 +1,5 @@
 # AUDI_TO_AL
 
-
 ![AUDI_TO_AL](./AUDI_TO_AL.svg)
 
 * * * * * * * * * *
@@ -14,21 +13,25 @@ Der Funktionsblock **AUDI_TO_AL** ist ein zusammengesetzter (Composite) Baustein
 ### **Ereignis-Eingänge**
 
 Der Baustein besitzt keine eigenen Ereignis-Eingänge. Die ereignisgesteuerte Verarbeitung erfolgt über den **AUDI_IN**-Socket:  
+
 - **E1** : Ereignisseingang des AUDI-Adapters – löst die Konvertierung aus.
 
 ### **Ereignis-Ausgänge**
 
 Der Baustein besitzt keine eigenen Ereignis-Ausgänge. Die Ergebnisweitergabe erfolgt über den **AL_OUT**-Plug:  
+
 - **E1** : Ereignisausgang des AL-Adapters – signalisiert abgeschlossene Konvertierung.
 
 ### **Daten-Eingänge**
 
 Der Baustein besitzt keine eigenen Daten-Eingänge. Die zu konvertierenden Daten werden über den **AUDI_IN**-Socket bereitgestellt:  
+
 - **D1** : Dateneingang des AUDI-Adapters (Typ: UDINT) – der zu konvertierende Wert.
 
 ### **Daten-Ausgänge**
 
 Der Baustein besitzt keine eigenen Daten-Ausgänge. Das konvertierte Ergebnis wird über den **AL_OUT**-Plug bereitgestellt:  
+
 - **D1** : Datenausgang des AL-Adapters (Typ: LWORD) – der konvertierte Wert.
 
 ### **Adapter**
@@ -50,6 +53,7 @@ Der gesamte Ablauf ist ereignisgesteuert und ohne zusätzliche Laufzeitlogik inn
 - Der Baustein ist als **Composite-Funktionsblock** realisiert und verwendet ausschließlich die standardisierte IEC‑61131‑Konvertierungsfunktion `F_UDINT_TO_LWORD`.
 - Die Konvertierung erfolgt direkt: **UDINT** (32‑Bit unsigned integer) wird auf **LWORD** (64‑Bit logical word) abgebildet.  
   Hinweis: Bei der Umwandlung eines 32‑Bit‑Werts in ein 64‑Bit‑Wort werden die oberen 32 Bits auf Null gesetzt.
+
 - Der Baustein ist unter der **Eclipse Public License 2.0** lizenziert.
 - Die Schnittstellen (Adapter) sind unidirektional ausgelegt: Der Datenfluss erfolgt nur vom Socket zum Plug.
 

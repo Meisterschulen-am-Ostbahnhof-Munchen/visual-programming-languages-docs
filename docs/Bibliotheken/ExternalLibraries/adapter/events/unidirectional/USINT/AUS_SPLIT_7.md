@@ -1,6 +1,5 @@
 # AUS_SPLIT_7
 
-
 ![AUS_SPLIT_7](./AUS_SPLIT_7.svg)
 
 *(Kein Bild verfügbar)*

@@ -1,6 +1,5 @@
 # AUI_SPLIT_4
 
-
 ![AUI_SPLIT_4](./AUI_SPLIT_4.svg)
 
 * * * * * * * * * *

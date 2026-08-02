@@ -1,7 +1,5 @@
 # GET_STRUCT_VALUE
 
-
-
 <img width="1391" height="128" alt="image" src="https://github.com/user-attachments/assets/0abda300-6bff-4217-b40b-4f2cccc9fc49" />
 
 * * * * * * * * * *
@@ -74,9 +72,6 @@ Es gibt in der Standardbibliothek von 4diac keine direkt vergleichbaren Funktion
 | Version | 3.0 (2025-04-14, Patrick Aigner), 1.0 (2018-10-16, Jose Cabral) |
 
 | 4diac-Paket | eclipse4diac::convert |
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

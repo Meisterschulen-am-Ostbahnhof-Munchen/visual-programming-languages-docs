@@ -1,6 +1,5 @@
 # AUS_DEMUX_2
 
-
 ![AUS_DEMUX_2](./AUS_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -28,8 +27,10 @@ Keine direkten Datenausgänge – die Daten werden über Adapter weitergegeben.
 ### **Adapter**
 - **IN** (Socket, Typ `AUS`)  
   Eingangsadapter, über den der zu demultiplexende Wert anliegt.
+
 - **OUT1** (Plug, Typ `AUS`)  
   Erster Ausgangsadapter, der bei `K=1` den Wert von `IN` erhält.
+
 - **OUT2** (Plug, Typ `AUS`)  
   Zweiter Ausgangsadapter, der bei `K=2` den Wert von `IN` erhält.
 
@@ -46,8 +47,10 @@ Falls `K` einen anderen Wert als `1` oder `2` annimmt, bleibt die Zuordnung ohne
 ## Technische Besonderheiten
 - **Generischer Baustein**  
   Das Attribut `GenericClassName` gibt den generischen Namen `'GEN_AUS_DEMUX'` vor. Damit kann der FB für verschiedene AUS‑Datentypen wiederverwendet werden, ohne die Schnittstelle anzupassen.
+
 - **Emitter / Plug‑Adapter**  
   Die Ausgänge sind als Plugs definiert, sodass sie direkt mit entsprechenden Sockets verbunden werden können. Die Übertragung erfolgt unidirektional (nur vom FB zum angeschlossenen Socket).
+
 - **Keine Zustandsmaschine**  
   Die XML enthält kein internes ECC; die Verarbeitung erfolgt ereignisgesteuert in einem Schritt.
 

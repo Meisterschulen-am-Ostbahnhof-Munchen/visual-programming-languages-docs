@@ -1,7 +1,5 @@
 # F_LREAL_AS_STRING
 
-
-
 <img width="1267" height="182" alt="F_LREAL_AS_STRING" src="https://github.com/user-attachments/assets/88c6651f-c602-4b8e-b6cf-f3d9c6907ff0" />
 
 * * * * * * * * * *

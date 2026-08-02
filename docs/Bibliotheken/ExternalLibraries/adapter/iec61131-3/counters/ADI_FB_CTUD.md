@@ -1,6 +1,5 @@
 # ADI_FB_CTUD
 
-
 ![ADI_FB_CTUD](./ADI_FB_CTUD.svg)
 
 * * * * * * * * * *
@@ -10,6 +9,7 @@ Der **ADI_FB_CTUD** ist ein aufwärts/abwärts zählender Funktionsbaustein für
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Der Baustein besitzt keine direkten Ereigniseingänge. Die Ansteuerung erfolgt ausschließlich über die **Sockets**:
+
 - **CU (Count Up)** – Ereignis zum Inkrementieren des Zählwerts
 - **CD (Count Down)** – Ereignis zum Dekrementieren des Zählwerts
 - **R (Reset)** – Ereignis zum Zurücksetzen des Zählwerts auf Null
@@ -23,21 +23,25 @@ Diese Adapter liefern sowohl ein Ereignis als auch einen Datenwert (bei AX-Adapt
 
 ### **Daten-Eingänge**
 Die Datenwerte der Eingangsadapter werden über die Verbindungen des internen FB `FB_CTUD_DINT` verarbeitet. Die Adapter liefern folgende Daten:
+
 - **CU.D1** – Zählrichtung (Bool, 1 = Aufwärtszählen)
 - **CD.D1** – Zählrichtung (Bool, 1 = Abwärtszählen)  
   (Hinweis: Im Standard-CTUD-DINT wird üblicherweise nur ein Zählereignis mit Richtungsauswahl verwendet; hier werden CU/CD als separate Ereignisse behandelt.)
+
 - **R.D1** – Reset-Signal (Bool)
 - **LD.D1** – Load-Signal (Bool)
 - **PV.D1** – Presetwert (DINT)
 
 ### **Daten-Ausgänge**
 Die Ausgangsdaten werden über die Plug-Adapter bereitgestellt:
+
 - **QU.D1** – Zähler hat aufwärtsgeschaltet (Bool, nach CU-Ereignis)
 - **QD.D1** – Zähler hat abwärtsgeschaltet (Bool, nach CD-Ereignis)
 - **CV.D1** – Aktueller Zählwert (DINT)
 
 ### **Adapter**
 Der Baustein verwendet drei verschiedene Adaptertypen:
+
 - **unidirectional::AX** – für Ereignis- und Bool-Daten (CU, CD, R, LD als Sockets; QU, QD als Plugs)
 - **unidirectional::ADI** – für Wertübergabe (PV als Socket, CV als Plug)
 
@@ -45,6 +49,7 @@ Die Adapter sind so konzipiert, dass sie sowohl das Ereignis als auch den zugeh�
 
 ## Funktionsweise
 Der interne FB `FB_CTUD_DINT` realisiert die klassische Aufwärts-/Abwärtszählerlogik:
+
 - Bei einem Ereignis auf **CU** wird der Zählwert um 1 erhöht, sofern `CU.D1` = TRUE (oder das Ereignis allein als Aufwärtsimpuls gilt).
 - Bei einem Ereignis auf **CD** wird der Zählwert um 1 verringert, sofern `CD.D1` = TRUE.
 - Ein Ereignis auf **R** setzt den Zählwert auf 0 zurück.
@@ -61,6 +66,7 @@ Der interne FB `FB_CTUD_DINT` realisiert die klassische Aufwärts-/Abwärtszähl
 
 ## Zustandsübersicht
 Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Verarbeitung erfolgt strikt ereignisgesteuert:
+
 1. Warten auf ein Ereignis an einem der Sockets.
 2. Verarbeitung des zugehörigen Datenwerts (sofern vorhanden) und des internen Zählerzustands.
 3. Ausgabe von **CNF** sowie ggf. **QU.E1** und **QD.E1**.

@@ -1,6 +1,5 @@
 # AULI_MUX_3
 
-
 ![AULI_MUX_3](./AULI_MUX_3.svg)
 
 * * * * * * * * * *

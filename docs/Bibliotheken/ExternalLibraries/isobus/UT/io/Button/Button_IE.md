@@ -1,7 +1,5 @@
 # Button_IE
 
-
-
 <img width="1385" height="216" alt="image" src="https://github.com/user-attachments/assets/95422805-a0b9-47d0-9696-02c3ede5c9cf" />
 
 * * * * * * * * * *
@@ -55,9 +53,6 @@ Der Funktionsblock verfügt über einen Initialisierungszustand (INIT/INITO) und
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Button_IE erweiterte Funktionalität für Tasterspezifische Ereignisse wie Mehrfachklicks und unterscheidet zwischen verschiedenen Aktivierungszuständen. Die ISOBUS-Integration macht ihn speziell für landwirtschaftliche Anwendungen geeignet.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,6 +1,5 @@
 # ASR_SPLIT_9
 
-
 ![ASR_SPLIT_9](./ASR_SPLIT_9.svg)
 
 * * * * * * * * * *

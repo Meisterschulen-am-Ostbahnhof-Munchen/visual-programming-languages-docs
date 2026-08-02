@@ -1,6 +1,5 @@
 # AB_TO_ALI
 
-
 ![AB_TO_ALI](./AB_TO_ALI.svg)
 
 * * * * * * * * * *
@@ -24,11 +23,13 @@ Keine direkten Daten-Ausgänge des Funktionsblocks. Daten werden über den Plug-
 ### **Adapter**
 - **Socket `AB_IN`** (Typ: `adapter::types::unidirectional::AB`)  
   Empfängt ein BYTE-Signal (über den Datenport `D1`) sowie ein Ereignis (über den Ereignisport `E1`).
+
 - **Plug `ALI_OUT`** (Typ: `adapter::types::unidirectional::ALI`)  
   Sendet ein LINT-Signal (über den Datenport `D1`) sowie ein Ereignis (über den Ereignisport `E1`).
 
 ## Funktionsweise
 Der Funktionsblock arbeitet als reine Datenkonvertierungsschleife:
+
 1. Ein eingehendes Ereignis am Socket `AB_IN` (Port `E1`) triggert den internen Konvertierungsbaustein `F_BYTE_TO_LINT`.
 2. Der ebenfalls am Socket anliegende BYTE-Wert (`D1`) wird an den Eingang `IN` des Konverters übergeben.
 3. Der Konverter wandelt den BYTE-Wert in einen LINT-Wert um und stellt ihn an seinem Ausgang `OUT` bereit.

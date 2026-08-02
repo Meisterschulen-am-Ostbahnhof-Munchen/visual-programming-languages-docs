@@ -1,6 +1,5 @@
 # ALI_FB_CTUD
 
-
 ![ALI_FB_CTUD](./ALI_FB_CTUD.svg)
 
 * * * * * * * * * *
@@ -10,6 +9,7 @@ Der Funktionsblock **ALI_FB_CTUD** realisiert einen Auf-/Abwärtszähler (Up-Dow
 ## Schnittstellenstruktur
 ### **Ereignis-Eingänge**
 Der FB besitzt keine direkten Ereignis-Eingänge. Alle Steuerereignisse werden über die **Sockets** (Adapter) empfangen:
+
 - **CU.E1** – Ereignis zum Erhöhen des Zählerstands (Count Up)
 - **CD.E1** – Ereignis zum Verringern des Zählerstands (Count Down)
 - **R.E1**  – Ereignis zum Zurücksetzen des Zählerstands (Reset)
@@ -22,6 +22,7 @@ Der FB besitzt keine direkten Ereignis-Eingänge. Alle Steuerereignisse werden �
 - **CNF** (Event) – Bestätigung der Ausführung (Execution Confirmation)
 
 Zusätzlich werden über die **Plugs** (Ausgangsadapter) Ereignisse ausgegeben:
+
 - **QU.E1** – Ereignis bei steigendem Zählerstand (Output Up)
 - **QD.E1** – Ereignis bei fallendem Zählerstand (Output Down)
 - **CV.E1** – Ereignis bei jeder Änderung des Zählerwerts (Count Value)
@@ -30,6 +31,7 @@ Zusätzlich werden über die **Plugs** (Ausgangsadapter) Ereignisse ausgegeben:
 
 ### **Daten-Eingänge**
 Die Datenwerte werden über die **Sockets** bereitgestellt:
+
 - **CU.D1** (BOOL) – Freigabe zum Hochzählen (Count Up Enable)
 - **CD.D1** (BOOL) – Freigabe zum Runterzählen (Count Down Enable)
 - **R.D1**  (BOOL) – Rücksetzsignal (Reset)
@@ -38,6 +40,7 @@ Die Datenwerte werden über die **Sockets** bereitgestellt:
 
 ### **Daten-Ausgänge**
 Die Ergebnisdaten werden über die **Plugs** bereitgestellt:
+
 - **QU.D1** (BOOL) – Signal: Zählerstand > 0 (z. B. für „Up“‑Ausgang)
 - **QD.D1** (BOOL) – Signal: Zählerstand < 0 (für „Down“‑Ausgang, abhängig von interner Logik)
 - **CV.D1** (LINT) – aktueller Zählerwert
@@ -68,6 +71,7 @@ Die Verwendung von Adaptern ermöglicht eine lose Kopplung: Die eigentlichen Sig
 
 ## Zustandsübersicht
 Eine formale Zustandsmaschine ist nicht extern sichtbar. Der interne Zustand besteht aus dem aktuellen **Zählerwert** (CV) und den internen Flags **QU** (z. B. „Wert > 0“) und **QD** (z. B. „Wert < 0“). Der Zustand wird bei jedem Eingangsereignis gemäß folgender Priorität aktualisiert:
+
 1. **Reset (R)**: setzt CV auf 0.
 2. **Load (LD)**: übernimmt PV als neuen CV.
 3. **Count Up (CU)**: erhöht CV um 1, wenn CU.D1 = TRUE.
@@ -82,6 +86,7 @@ Die Flags QU und QD werden danach aus dem neuen CV berechnet.
 
 ## Vergleich mit ähnlichen Bausteinen
 Der Standard‑IEC‑61131‑3‑Baustein **CTUD** (z. B. `FB_CTUD_INT`) arbeitet meist mit kleineren Datentypen (INT, DINT) und bietet direkte Ereignis‑ und Dateneingänge. Der **ALI_FB_CTUD** erweitert dieses Konzept um:
+
 - **LINT‑Datentyp** für sehr große Zählerbereiche.
 - **Adapter‑Schnittstellen** (AX/ALI) statt freier Ein‑/Ausgänge.
 - **Immerwährende Ereignisausgabe** im Gegensatz zu einer rein änderungsgesteuerten Ausgabe.

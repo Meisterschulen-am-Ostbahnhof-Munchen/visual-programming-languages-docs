@@ -1,6 +1,5 @@
 # INI_ALR
 
-
 ![INI_ALR](./INI_ALR.svg)
 
 * * * * * * * * * *
@@ -68,6 +67,7 @@ Der Funktionsblock **INI_ALR** dient dem Lesen und Speichern von Gleitkommawerte
 ## Zustandsübersicht
 
 Der `INI_ALR` selbst besitzt keine eigenen Zustandsautomaten. Die Zustandsverwaltung wird vollständig durch den internen `INI`-Baustein realisiert. Typische Phasen sind:
+
 - **Idle** – Warten auf ein INIT-Ereignis.
 - **Initialize** – Verarbeitung von INIT, Datenweiterleitung an `INI`.
 - **Ready/Lese‑Bereit** – nach erfolgreicher INIT‑Quittierung ist ein Lese‑Ergebnis verfügbar.

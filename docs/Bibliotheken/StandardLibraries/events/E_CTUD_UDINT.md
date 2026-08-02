@@ -2,9 +2,7 @@
 
 ---- 
 
-
 <img width="1139" height="259" alt="E_CTUD_UDINT" src="https://user-images.githubusercontent.com/116869307/214142444-55a16971-caf0-4c6c-a1fa-c0294a26464a.png">
-
 
 ![E_CTUD_UDINT_ecc](./E_CTUD_UDINT_ecc.svg)
 
@@ -60,11 +58,6 @@ Nach jeder dieser Aktionen werden die Status-Flags `QU` und `QD` basierend auf d
 - **Gesamtzähler**: Erfassung von Gesamtstückzahlen oder Betriebsstunden über die gesamte Lebensdauer einer Maschine, wo ein 16-Bit-Zähler nicht ausreicht.
 - **Energiemessung**: Zählen von Impulsen eines Energiezählers (z.B. Wh oder kWh) über lange Zeiträume.
 - **Hochauflösende Positionserfassung**: Zählen von sehr vielen Inkrementen eines hochauflösenden Encoders.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

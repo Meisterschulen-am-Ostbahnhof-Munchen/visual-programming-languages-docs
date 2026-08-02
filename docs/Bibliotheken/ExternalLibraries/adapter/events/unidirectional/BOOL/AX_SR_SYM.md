@@ -1,6 +1,5 @@
 # AX_SR_SYM
 
-
 ![AX_SR_SYM](./AX_SR_SYM.svg)
 
 * * * * * * * * * *
@@ -33,6 +32,7 @@ Keine (der Ausgangswert wird über einen Adapter bereitgestellt).
 
 ## Funktionsweise
 Der Baustein basiert auf einem einfachen Zustandsautomaten mit drei Zuständen:
+
 - **START**: Initialzustand nach dem Start. Es wird kein Ausgangswert ausgegeben.
 - **SET**: Der Ausgang wird auf TRUE gesetzt. Bei Betreten dieses Zustands wird `Q.E1` ausgelöst und `Q.D1` auf `TRUE` gesetzt.
 - **RESET**: Der Ausgang wird auf FALSE gesetzt. Bei Betreten dieses Zustands wird `Q.E1` ausgelöst und `Q.D1` auf `FALSE` gesetzt.

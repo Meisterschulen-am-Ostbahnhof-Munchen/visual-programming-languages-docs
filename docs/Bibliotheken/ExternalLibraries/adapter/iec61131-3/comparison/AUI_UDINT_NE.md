@@ -1,6 +1,5 @@
 # AUI_UDINT_NE
 
-
 ![AUI_UDINT_NE](./AUI_UDINT_NE.svg)
 
 * * * * * * * * * *
@@ -54,6 +53,7 @@ Die Verwendung von Adaptern ermöglicht eine lose Kopplung und standardisierte K
 ## Zustandsübersicht
 
 Der Baustein besitzt keinen expliziten Zustandsautomaten im XML. Die interne Logik des FB `F_NE` arbeitet ereignisgesteuert:
+
 1. **Warten:** Der Baustein wartet auf ein Ereignis an `REQ` oder `IN1.E1`.
 2. **Verarbeitung:** Bei Auslösung werden die Werte `IN1.D1` und `IN2` gelesen und verglichen.
 3. **Ausgabe:** Das Ergebnis wird auf `OUT.D1` gesetzt und ein Ereignis auf `OUT.E1` ausgelöst.

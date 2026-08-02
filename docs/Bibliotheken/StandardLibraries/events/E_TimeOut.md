@@ -1,7 +1,5 @@
 # E_TimeOut
 
-
-
 ![E_TimeOut](https://user-images.githubusercontent.com/116869307/214142822-3b167702-112f-454a-a42f-62c5f7454561.png)
 
 * * * * * * * * * *
@@ -57,9 +55,6 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ATimeOut`. Da es sich 
 | Interner Baustein | E_DELAY | E_RDELAY |
 | `START` bei lfd. Timer | Ignoriert | Startet Timer neu |
 | Adaptertyp    | ATimeOut  | ARTimeOut |
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

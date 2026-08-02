@@ -1,6 +1,5 @@
 # ASSEMBLE_AD_FROM_AB
 
-
 ![ASSEMBLE_AD_FROM_AB](./ASSEMBLE_AD_FROM_AB.svg)
 
 * * * * * * * * * *
@@ -49,6 +48,7 @@ Auf diese Weise wird sichergestellt, dass der Ausgang nur dann aktualisiert wird
 
 ## Zustandsübersicht
 Der Baustein selbst besitzt keinen expliziten Zustandsautomaten. Das Verhalten wird durch die internen Bausteine bestimmt:
+
 - **Warten auf Ereignis**: Es liegt kein neues Ereignis an den Sockets an. Der Ausgangswert ist statisch.
 - **Summieren & Aktualisieren**: Ein Ereignis trifft ein → Zusammenführung wird ausgelöst → Flip‑Flop übernimmt neuen Wert → Ausgang wird aktualisiert.
 - **Warten auf nächstes Ereignis**: Nach erfolgter Aktualisierung bleibt der Zustand bis zum nächsten Socket‑Ereignis erhalten.

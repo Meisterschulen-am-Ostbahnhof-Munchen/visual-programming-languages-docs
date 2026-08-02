@@ -1,7 +1,5 @@
 # E_TRIG
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -42,9 +40,6 @@ Angenommen, mehrere Funktionsbausteine in einer Ressource haben einen unverbunde
 - **Manuelle Re-Initialisierung**: Zurücksetzen von Teilen einer Anwendung in einen definierten Anfangszustand, ohne die gesamte Ressource neu starten zu müssen.
 - **Dynamische Konfiguration**: Nach dem Laden einer neuen Konfiguration können relevante Bausteine über einen gezielten `E_TRIG`-Aufruf dazu gebracht werden, die neuen Parameter zu übernehmen.
 - **Test und Debugging**: Manuelles Auslösen von bestimmten Ereignissen in einer laufenden Anwendung zu Testzwecken.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

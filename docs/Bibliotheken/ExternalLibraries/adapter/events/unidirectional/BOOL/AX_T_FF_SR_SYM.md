@@ -1,6 +1,5 @@
 # AX_T_FF_SR_SYM
 
-
 ![AX_T_FF_SR_SYM](./AX_T_FF_SR_SYM.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Die Toggle-Funktion wird durch die `CLK`-Transitionen realisiert: unabhängig vo
 | RESET   | Ausgang wird auf FALSE gesetzt | FALSE | Q.E1 |
 
 Übergänge (Ereignis → Zielzustand):
+
 - START → SET: `S`, `CLK`
 - START → RESET: `R`
 - SET → RESET: `R`, `CLK`

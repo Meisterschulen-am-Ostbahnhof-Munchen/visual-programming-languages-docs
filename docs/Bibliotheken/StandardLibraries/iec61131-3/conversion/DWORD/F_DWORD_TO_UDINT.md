@@ -1,7 +1,5 @@
 # F_DWORD_TO_UDINT
 
-
-
 <img width="1253" height="181" alt="F_DWORD_TO_UDINT" src="https://github.com/user-attachments/assets/0b023d3e-49d2-41d3-a6b3-db4d5f1970f8" />
 
 * * * * * * * * * *
@@ -44,9 +42,6 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung wird bei jedem
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Ähnliche Funktionsblöcke wie `F_WORD_TO_UINT` oder `F_BYTE_TO_USINT` führen ähnliche Typumwandlungen durch, jedoch für andere Datentypen.
 - Im Gegensatz zu generischen Konvertierungsblöcken ist `F_DWORD_TO_UDINT` spezialisiert und optimiert für die Umwandlung von `DWORD` zu `UDINT`.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

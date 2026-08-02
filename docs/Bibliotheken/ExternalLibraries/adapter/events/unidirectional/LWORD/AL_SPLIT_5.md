@@ -1,6 +1,5 @@
 # AL_SPLIT_5
 
-
 ![AL_SPLIT_5](./AL_SPLIT_5.svg)
 
 * * * * * * * * * *

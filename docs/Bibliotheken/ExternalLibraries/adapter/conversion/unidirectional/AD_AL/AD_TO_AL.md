@@ -1,6 +1,5 @@
 # AD_TO_AL
 
-
 ![AD_TO_AL](./AD_TO_AL.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Der Baustein ist ein reiner Weiterleitungsbaustein. Innerhalb des Composite-FBs 
 
 - **Ereignisverbindung:** `AD_IN.E1` → `AL_OUT.E1`  
   Jedes eingehende Ereignis am AD-Adapter wird unverändert an den AL-Adapter weitergegeben.
+
 - **Datenverbindung:** `AD_IN.D1` → `AL_OUT.D1`  
   Der eingehende Datenwert (DWORD) wird ohne Transformation als LWORD an den Ausgang übergeben.
 

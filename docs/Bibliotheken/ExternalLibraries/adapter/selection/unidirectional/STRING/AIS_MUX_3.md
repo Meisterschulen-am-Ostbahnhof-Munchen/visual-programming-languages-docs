@@ -1,6 +1,5 @@
 # AIS_MUX_3
 
-
 ![AIS_MUX_3](./AIS_MUX_3.svg)
 
 * * * * * * * * * *

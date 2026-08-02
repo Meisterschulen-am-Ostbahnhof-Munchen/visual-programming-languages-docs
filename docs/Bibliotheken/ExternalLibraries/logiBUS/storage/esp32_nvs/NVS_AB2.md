@@ -1,6 +1,5 @@
 # NVS_AB2
 
-
 ![NVS_AB2](./NVS_AB2.svg)
 
 * * * * * * * * * *
@@ -45,6 +44,7 @@ Der Funktionsblock **NVS_AB2** ermöglicht das Laden und Speichern von `REAL`-Da
 Beim Eintreffen des **INIT**‑Ereignisses wird der interne NVS‑Baustein initialisiert. Unmittelbar nach erfolgreicher Initialisierung wird automatisch eine **Leseoperation** (`GET`) gestartet, die den zum Schlüssel `KEY` gehörenden Wert aus dem NVS ausliest. Falls kein Wert vorhanden ist, wird `DEFAULT_VALUE` verwendet. Der gelesene Wert wird über den Adapter (`VAL.DI1`) ausgegeben und das Ereignis `INITO` signalisiert den Abschluss.
 
 Nach der Initialisierung kann der Baustein über den Adapter asynchrone Lese‑ und Schreibanforderungen bearbeiten:
+
 - **Lesen**: Ein empfangenes Ereignis am Adapter‑Port `VAL.EO1` löst eine erneute Leseoperation (`GET`) im NVS aus. Der gelesene Wert wird wieder über `VAL.DI1` bereitgestellt, und die Bestätigung (`VAL.EI1`) wird gesendet.
 - **Schreiben**: Über den Adapter wird der zu speichernde Wert auf `VAL.DO1` bereitgestellt. Ein Ereignis an `VAL.EO1` triggert die **Schreiboperation** (`SET`) im NVS. Nach erfolgreichem Speichern wird über `VAL.EI1` quittiert.
 
@@ -58,6 +58,7 @@ Die Ausgänge `QO` und `STATUS` werden bei jedem der Ausgangsereignisse (`INITO`
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt keine expliziten Zustandsautomaten, da er als Composite‑Baustein das Verhalten des internen NVS‑FBs nutzt. Im Wesentlichen lassen sich folgende Phasen unterscheiden:
+
 1. **Initialisierung** – ausgelöst durch `INIT`
 2. **Bereit** – nach erfolgreicher Initialisierung wartet der Baustein auf Adapter‑Ereignisse
 3. **Lese‑/Schreiboperation** – kurzzeitiger Zugriff auf den NVS während der Verarbeitung eines Adapter‑Ereignisses
@@ -69,6 +70,7 @@ Der Funktionsblock besitzt keine expliziten Zustandsautomaten, da er als Composi
 
 ## Vergleich mit ähnlichen Bausteinen
 Gegenüber einfacheren Lese‑/Schreib‑Bausteinen (z. B. direkte NVS‑FBs ohne Adapter) bietet **NVS_AB2**:
+
 - **Asynchrone, ereignisgesteuerte Kommunikation** über den AB2‑Adapter – entkoppelt den Datenzugriff vom Hauptsteuerungsfluss.
 - **Automatische Initialisierung und Erstlese** reduziert den Programmieraufwand.
 - **Einheitliche Fehlersignalisierung** über `QO` und `STATUS`.

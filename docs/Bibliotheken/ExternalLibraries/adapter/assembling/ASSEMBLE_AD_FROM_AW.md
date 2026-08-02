@@ -1,6 +1,5 @@
 # ASSEMBLE_AD_FROM_AW
 
-
 ![ASSEMBLE_AD_FROM_AW](./ASSEMBLE_AD_FROM_AW.svg)
 
 * * * * * * * * * *
@@ -36,6 +35,7 @@ Der Adapter `OUT` besitzt einen Dateneingang (`D1`), der intern mit dem gespeich
 
 ### **Adapter**
 Der FB stellt zwei eingehende Adapter (Socket) und einen ausgehenden Adapter (Plug) zur Verfügung, die alle vom Typ *unidirectional* sind:
+
 - **WORD_00**, **WORD_01**: Liefern jeweils ein WORD und ein zugehöriges Ereignis.
 - **OUT**: Nimmt ein DWORD entgegen und gibt es mit einem Ereignis weiter.
 

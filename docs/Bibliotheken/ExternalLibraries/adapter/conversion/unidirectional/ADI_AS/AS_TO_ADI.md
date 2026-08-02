@@ -1,6 +1,5 @@
 # AS_TO_ADI
 
-
 ![AS_TO_ADI](./AS_TO_ADI.svg)
 
 * * * * * * * * * *
@@ -32,6 +31,7 @@ Keine
 ## Funktionsweise
 
 Der Baustein verknüpft intern die Ereignis- und Datenleitungen der beiden Adapter direkt miteinander:
+
 - Das eingehende Ereignis `E1` des Sockets `AS_IN` wird unverändert auf den Ausgangsplug `ADI_OUT` an dessen Ereignis `E1` übertragen.
 - Der Datenwert `D1` aus dem SINT-Adapter (`AS_IN.D1`) wird auf den Datenport `D1` des DINT-Adapters (`ADI_OUT.D1`) weitergeleitet.
 

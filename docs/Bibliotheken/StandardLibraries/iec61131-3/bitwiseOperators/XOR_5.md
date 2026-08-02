@@ -1,7 +1,5 @@
 # XOR_5
 
-
-
 ![XOR_5](https://user-images.githubusercontent.com/116869307/214144268-b188a2d3-cbc1-48b6-a90d-300b875efdc0.png)
 
 * * * * * * * * * *
@@ -36,6 +34,7 @@ Keine Adapter-Schnittstellen vorhanden.
 Bei Eintreffen des REQ-Ereignisses führt der Funktionsblock eine bitweise XOR-Operation über alle fünf Eingangswerte durch. Das Ergebnis wird an den OUT-Ausgang ausgegeben und gleichzeitig wird das CNF-Ereignis zur Bestätigung der abgeschlossenen Berechnung generiert.
 
 Die XOR-Operation wird nach folgendem Prinzip durchgeführt:
+
 - Jedes Bitposition wird einzeln verarbeitet
 - Das Ergebnisbit ist 1, wenn eine ungerade Anzahl der Eingangsbits an dieser Position 1 ist
 - Das Ergebnisbit ist 0, wenn eine gerade Anzahl der Eingangsbits an dieser Position 1 ist
@@ -48,6 +47,7 @@ Die XOR-Operation wird nach folgendem Prinzip durchgeführt:
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
+
 1. **Wartezustand**: Warten auf REQ-Ereignis
 2. **Berechnungszustand**: Verarbeitung der XOR-Operation
 3. **Ausgabezustand**: Setzen des OUT-Wertes und Auslösen des CNF-Ereignisses
@@ -61,6 +61,7 @@ Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen mit weniger Eingängen bietet XOR_5:
+
 - Erweiterte Funktionalität mit fünf statt zwei Eingängen
 - Höhere Flexibilität bei komplexeren logischen Verknüpfungen
 - Reduzierte Verkettungstiefe gegenüber seriellen XOR-Verknüpfungen

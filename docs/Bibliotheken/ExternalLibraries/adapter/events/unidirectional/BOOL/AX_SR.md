@@ -1,9 +1,6 @@
 # AX_SR
 
-
-
 <img width="1186" height="279" alt="image" src="https://github.com/user-attachments/assets/da4a5f8e-5e9f-45f9-be8f-ac02a9cdb0ca" />
-
 
 ![AX_SR_ecc](./AX_SR_ecc.svg)
 
@@ -34,6 +31,7 @@ Der AX_SR Funktionsblock ist ein ereignisgesteuertes bistabiles Element (Flip-Fl
 
 ## Funktionsweise
 Der AX_SR Funktionsblock arbeitet als Set-Reset-Flip-Flop mit folgenden Eigenschaften:
+
 - Bei einem S-Ereignis wird der interne Zustand auf SET gesetzt und der Ausgang Q auf TRUE
 - Bei einem R-Ereignis wird der interne Zustand auf RESET gesetzt und der Ausgang Q auf FALSE
 - Der Zustand bleibt erhalten, bis ein gegenteiliges Ereignis eintrifft
@@ -53,6 +51,7 @@ Wie bei allen ereignisgesteuerten bistabilen Elementen in der IEC 61499 (siehe a
 3. **RESET**: Zustand nach R-Ereignis, Ausgang Q.D1 = FALSE
 
 Zustandsübergänge:
+
 - START → SET: Bei S-Ereignis
 - SET → RESET: Bei R-Ereignis
 - RESET → SET: Bei S-Ereignis
@@ -69,17 +68,13 @@ Zustandsübergänge:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Speicherelementen bietet AX_SR:
+
 - Klare Trennung von Set- und Reset-Funktionalität
 - Adapter-basierte Schnittstelle für flexible Integration
 - Ereignisgesteuerte Zustandsänderungen
 - Einfache und robuste Zustandsverwaltung
 
 Vergleich mit [E_SR](../../../../../StandardLibraries/events/E_SR.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

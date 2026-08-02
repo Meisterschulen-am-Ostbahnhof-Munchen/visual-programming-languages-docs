@@ -1,7 +1,5 @@
 # Datentyp-Detail: WORD
 
-
-
 ## Beschreibung
 Bitfolge der Länge 16
 

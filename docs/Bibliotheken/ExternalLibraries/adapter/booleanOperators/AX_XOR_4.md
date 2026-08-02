@@ -1,7 +1,5 @@
 # AX_XOR_4
 
-
-
 <img width="1009" height="334" alt="image" src="https://github.com/user-attachments/assets/7d008034-d62e-4f60-b7e9-450014dd7e88" />
 
 * * * * * * * * * *
@@ -37,6 +35,7 @@ Der AX_XOR_4 Funktionsblock ist ein generischer Baustein zur Berechnung der bool
 
 ## Funktionsweise
 Der Funktionsblock berechnet die XOR-Verknüpfung über vier Eingänge. Die XOR-Operation liefert genau dann ein "wahr"-Signal, wenn eine ungerade Anzahl der Eingänge aktiv ist. Bei vier Eingängen bedeutet dies:
+
 - Ergebnis = 1, wenn 1 oder 3 Eingänge aktiv sind
 - Ergebnis = 0, wenn 0, 2 oder 4 Eingänge aktiv sind
 
@@ -59,6 +58,7 @@ Da es sich um einen kombinatorischen Logikbaustein handelt, besitzt der AX_XOR_4
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Standard-XOR-Bausteinen bietet AX_XOR_4:
+
 - Vier Eingänge statt der typischen zwei Eingänge
 - Rein adapterbasierte Schnittstelle
 - Spezialisierung auf unidirektionale AX-Adapter

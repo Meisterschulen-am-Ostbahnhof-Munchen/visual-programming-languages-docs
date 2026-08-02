@@ -1,8 +1,5 @@
 # NVS_AR
 
-
-
-
 ![NVS_AR](./NVS_AR.svg)
 
 * * * * * * * * * *

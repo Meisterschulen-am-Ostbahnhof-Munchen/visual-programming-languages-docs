@@ -1,8 +1,5 @@
 # USERFUNC_e
 
-
-
-
 ![USERFUNC_e](./USERFUNC_e.svg)
 
 * * * * * * * * * *

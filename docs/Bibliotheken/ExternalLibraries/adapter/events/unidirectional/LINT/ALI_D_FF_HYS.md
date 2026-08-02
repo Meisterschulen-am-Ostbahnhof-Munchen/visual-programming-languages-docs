@@ -1,6 +1,5 @@
 # ALI_D_FF_HYS
 
-
 ![ALI_D_FF_HYS](./ALI_D_FF_HYS.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Keine direkten Datenausgänge – die Ausgabe erfolgt über den Adapter `Q`.
 | Plug     | `Q`  | `adapter::types::unidirectional::ALI`      | Ausgangswert (gelatchter Wert) |
 
 Der Adapter `I` liefert zwei Signale:
+
 - **`I.E1`** – Taktsignal (Ereignis)  
 - **`I.D1`** – Dateneingang (z. B. BOOL oder numerisch)
 
@@ -50,6 +50,7 @@ Der Baustein arbeitet intern mit einem weiteren FB **E_D_FF_ANY_HYS** (aus der B
 
 2. **Datenverarbeitung**  
    Die Ereignis- und Datenverbindungen sind direkt zwischen den Adaptern und dem inneren Baustein geschaltet:
+
    - `I.E1` → **CLK** (Taktsignal)
    - `I.D1` → **D** (Eingangsdaten)
    - **Q** → `Q.D1` (gelatchtes Ausgangssignal)

@@ -1,7 +1,5 @@
 # logiBUS_DI_Events_S
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Strukturdatentyp `logiBUS_DI_Events_S` dient der Konfiguration von Ereignissen für digitale Eingänge (DI) innerhalb des logiBUS-Frameworks. Er definiert den Ereignistyp, der einem bestimmten digitalen Eingangskanal zugeordnet werden kann. Dieser Datentyp ist ein wesentlicher Bestandteil für die Parametrierung von logiBUS-E/A-Funktionsblöcken.
@@ -31,6 +29,7 @@ Da es sich um einen passiven Datentyp handelt, existiert keine Zustandsmaschine.
 
 ## Anwendungsszenarien
 Dieser Strukturdatentyp wird primär in Verbindung mit logiBUS-I/O-Funktionsblöcken verwendet, beispielsweise:
+
 *   Als Element in einem Array zur Konfiguration aller digitalen Eingänge eines Moduls.
 *   Als Parameter, um festzulegen, bei welchem physikalischen Ereignis (z.B. steigende Flanke) ein logisches Event im Steuerungsprogramm ausgelöst werden soll.
 

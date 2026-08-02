@@ -1,7 +1,5 @@
 # AX_X_TO_BOOL
 
-
-
 <img width="1243" height="236" alt="image" src="https://github.com/user-attachments/assets/4e98b420-508f-407b-bb14-cfeee976d357" />
 
 * * * * * * * * * *
@@ -39,6 +37,7 @@ Der Funktionsblock empfängt Daten über den AX_IN-Adapter und konvertiert diese
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen Zustand:
+
 - **Bereit**: Wartet auf eingehende Daten vom Adapter
 - Bei Empfang von Daten erfolgt sofortige Konvertierung und Ausgabe
 
@@ -50,9 +49,6 @@ Der Funktionsblock besitzt einen einfachen Zustand:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Konvertierungsbausteinen zeichnet sich AX_X_TO_BOOL durch seine spezifische Fokussierung auf die AX-zu-BOOL-Konvertierung aus. Während universelle Konverter häufig komplexere Parametrierung erfordern, bietet dieser Baustein eine optimierte Lösung für diesen speziellen Anwendungsfall.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

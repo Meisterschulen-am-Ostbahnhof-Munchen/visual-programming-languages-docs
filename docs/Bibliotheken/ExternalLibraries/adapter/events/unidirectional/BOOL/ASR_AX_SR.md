@@ -1,9 +1,6 @@
 # ASR_AX_SR
 
-
-
 <img width="1139" height="229" alt="image" src="https://github.com/user-attachments/assets/d4c4cfae-6044-477d-a62f-71e94d0d34a2" />
-
 
 ![ASR_AX_SR_ecc](./ASR_AX_SR_ecc.svg)
 
@@ -32,6 +29,7 @@ Keine direkten Datenausgänge vorhanden.
 
 ## Funktionsweise
 Der ASR_AX_SR arbeitet als Set-Reset-Flip-Flop mit drei Zuständen:
+
 - **START**: Initialzustand
 - **SET**: Gesetzter Zustand (Q = TRUE)
 - **RESET**: Rückgesetzter Zustand (Q = FALSE)
@@ -64,9 +62,6 @@ RESET → SET:    bei S_R.SET Ereignis
 - **[SR (IEC 61131-3)](../../../../../Vergleich/IEC61131_3/SR_ALT.md)**: Der klassische SR-Baustein hat eine definierte Setz-Dominanz bei gleichzeitigen Signalen. Der `ASR_AX_SR` verhält sich dagegen zeitabhängig (letztes Ereignis zählt).
 - **[E_SR](../../../../../StandardLibraries/events/E_SR.md)**: Funktional ähnlich (ereignisgesteuert), aber mit direkten Event-Pins statt Adaptern.
 - **Konventionelle Flip-Flops**: Im Vergleich zu Flip-Flops mit direkten Ein-/Ausgängen erleichtert das Adapter-Design die Integration in modulare Systemarchitekturen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

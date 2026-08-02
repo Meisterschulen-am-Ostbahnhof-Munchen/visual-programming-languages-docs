@@ -2,13 +2,11 @@
 
 ## 🎧 Podcast
 
-
 ![QUARTER_TO_STR_STATUS_ecc](./QUARTER_TO_STR_STATUS_ecc.svg)
 
 * [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
 ---- 
-
 
 <img width="1745" height="212" alt="image" src="https://github.com/user-attachments/assets/52b6d758-7780-49a2-98e0-8be5f868339f" />
 
@@ -39,6 +37,7 @@ Dieser Funktionsblock verfügt über keine Adapter-Schnittstellen.
 Der `QUARTER_TO_STR_STATUS` ist ein Basic Function Block (BFB) mit einem definierten Execution Control Chart (ECC). Bei einem eingehenden `REQ`-Ereignis wird der Wert an `IB` mit vordefinierten Konstanten verglichen. Abhängig von diesem Vergleich verzweigt die Steuerung in einen von vier möglichen Zuständen (`SET`, `RESET`, `Error`, `none`). In jedem dieser Zustände wird ein spezifischer Algorithmus ausgeführt, der den Ausgangs-`STR` auf einen entsprechenden Text-String setzt. Nach Ausführung des Algorithmus wechselt der Block in den Zustand `ok`, von dem aus das `CNF`-Ereignis ausgelöst wird. Anschließend kehrt der Block in den initialen `START`-Zustand zurück und ist bereit für die nächste Anfrage.
 
 Die konkreten String-Werte werden aus der `quarter`-Konstanten-Bibliothek (`logiBUS::utils::quarter::const::quarter`) geladen. Die erwarteten Eingangswerte und ihre zugehörigen Ausgangsstrings sind:
+
 *   `quarter::STATUS_ENABLED` → `quarter::COMMAND_ENABLE_msg`
 *   `quarter::STATUS_DISABLED` → `quarter::COMMAND_DISABLE_msg`
 *   `quarter::STATUS_ERROR` → `quarter::COMMAND_RESERVED_msg`
@@ -51,6 +50,7 @@ Die konkreten String-Werte werden aus der `quarter`-Konstanten-Bibliothek (`logi
 
 ## Zustandsübersicht
 Der ECC besteht aus sechs Zuständen:
+
 1.  **START:** Initialer, wartender Zustand. Hier wird auf das `REQ`-Ereignis gewartet.
 2.  **SET:** Wird bei `IB = quarter::STATUS_ENABLED` aktiviert. Führt Algorithmus `SET` aus.
 3.  **RESET:** Wird bei `IB = quarter::STATUS_DISABLED` aktiviert. Führt Algorithmus `RESET` aus.
@@ -67,9 +67,6 @@ Der ECC besteht aus sechs Zuständen:
 *   **`E_SR` oder `E_RS` (Flip-Flops):** Diese Blöcke speichern einen binären Zustand (SET/RESET). `QUARTER_TO_STR_STATUS` hingegen konvertiert einen vorhandenen 4-Zustands-Wert nur in einen String; er besitzt keinen eigenen Speicher.
 *   **`E_SELECT` oder `E_MUX`:** Können ebenfalls zwischen verschiedenen Pfaden/Werten wählen, sind aber generischer und nicht speziell auf die Konvertierung in Strings mit vordefinierten Quarter-Statuswerten ausgelegt.
 *   **Einfache `STRING`-Zuweisung:** Eine direkte Zuweisung im ST-Code könnte ähnliches leisten, aber der `QUARTER_TO_STR_STATUS`-Block kapselt die Logik, fördert die Wiederverwendbarkeit und erzwingt die Verwendung der standardisierten Konstanten, was die Konsistenz im gesamten Projekt erhöht.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

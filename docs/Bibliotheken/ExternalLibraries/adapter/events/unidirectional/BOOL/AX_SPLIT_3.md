@@ -1,7 +1,5 @@
 # AX_SPLIT_3
 
-
-
 <img width="711" height="299" alt="image" src="https://github.com/user-attachments/assets/79f5b696-e66f-481a-8642-b19ac2f35cb4" />
 
 * * * * * * * * * *
@@ -55,11 +53,6 @@ Der Funktionsblock besitzt einen einfachen Zustand: Im Betriebszustand leitet er
 Im Vergleich zu anderen Verteilungsbausteinen zeichnet sich AX_SPLIT_3 durch seine spezifische Ausrichtung auf AX-Adapter aus. Während allgemeine Verteilungsbausteine verschiedene Adaptertypen unterstützen können, ist dieser Baustein speziell für AX-Adapter optimiert.
 
 Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

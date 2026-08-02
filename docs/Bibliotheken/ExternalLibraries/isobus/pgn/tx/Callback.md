@@ -2,8 +2,6 @@
 
 # Callback
 
-
-
 Message Callback
 
 ## Interface
@@ -25,8 +23,6 @@ Message Callback
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | DO1 | isobus::pgn::CAN_MSG | |
-
-
 
 ## 🛠️ Zugehörige Übungen
 

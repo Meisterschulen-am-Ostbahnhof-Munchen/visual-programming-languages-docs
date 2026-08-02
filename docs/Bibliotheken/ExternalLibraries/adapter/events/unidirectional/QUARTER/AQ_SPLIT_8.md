@@ -1,6 +1,5 @@
 # AQ_SPLIT_8
 
-
 ![AQ_SPLIT_8](./AQ_SPLIT_8.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # OR_16_BOOL
 
-
-
 <img width="993" height="478" alt="image" src="https://github.com/user-attachments/assets/f25a88ac-7108-4946-bddf-753712006566" />
 
 * * * * * * * * * *
@@ -19,6 +17,7 @@ Der Funktionsblock `OR_16_BOOL` ist ein Standard-Baustein zur Berechnung der log
 
 ### **Daten-Eingänge**
 Der Baustein verfügt über 16 identische boolesche Dateneingänge:
+
 *   **IN1** bis **IN16 (BOOL):** Die zu verknüpfenden Eingangssignale. Jeder Eingang repräsentiert einen Operanden für die ODER-Operation.
 
 ### **Daten-Ausgänge**
@@ -29,6 +28,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Funktionsweise
 Die Funktionsweise ist deterministisch und ereignisgesteuert:
+
 1.  Bei Eintreffen eines Ereignisses am Eingang `REQ` wird der Baustein aktiviert.
 2.  Der Baustein liest die aktuellen Werte aller 16 Eingänge `IN1` bis `IN16`.
 3.  Es wird die logische ODER-Operation über alle gelesenen Werte berechnet: `OUT = IN1 OR IN2 OR ... OR IN16`.

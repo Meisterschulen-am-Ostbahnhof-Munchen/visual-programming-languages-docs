@@ -1,7 +1,5 @@
 # OR_5_BOOL
 
-
-
 <img width="1370" height="337" alt="image" src="https://github.com/user-attachments/assets/d3d2531f-35f3-4013-86ae-fbe3da61ed57" />
 
 * * * * * * * * * *
@@ -33,6 +31,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 
 ## Funktionsweise
 Die Funktionsweise ist deterministisch und ereignisgesteuert:
+
 1.  Das Eintreffen des Ereignisses `REQ` startet die Ausführung.
 2.  Der Block liest die aktuellen Werte der fünf booleschen Eingänge `IN1` bis `IN5`.
 3.  Es wird die logische ODER-Verknüpfung `OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5` berechnet.
@@ -48,12 +47,14 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 
 ## Anwendungsszenarien
 Typische Anwendungen sind in Steuerungslogik zu finden, wo eine Bedingung als erfüllt gilt, wenn eine von mehreren möglichen Teilbedingungen zutrifft:
+
 *   Überwachung: Alarmauslösung, wenn mindestens eines von mehreren Überwachungssensoren einen Grenzwert überschreitet.
 *   Freigabelogik: Start einer Maschine, wenn mindestens eine von mehreren Sicherheitseinrichtungen aktiviert ist.
 *   Auswahl- oder Priorisierungslogik in verbundenen Steuerungssystemen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu diesem Baustein mit fünf festen Eingängen existieren in 4diac oft auch:
+
 *   **OR_2_BOOL, OR_3_BOOL, etc.:** Gleiche Funktionalität, aber mit einer geringeren, festen Anzahl an Eingängen (z.B. 2, 3, 4). Siehe: [OR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_5.md)
 *   **GEN_OR (Generisches ODER):** Ein übergeordneter, konfigurierbarer Baustein, der je nach Instanziierung eine variable Anzahl von Eingängen besitzen kann. `OR_5_BOOL` ist eine spezifische Instanziierung dieses Prinzips.
 *   **AND_5_BOOL:** Führt eine logische UND-Verknüpfung über alle fünf Eingänge aus (Ergebnis ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind).

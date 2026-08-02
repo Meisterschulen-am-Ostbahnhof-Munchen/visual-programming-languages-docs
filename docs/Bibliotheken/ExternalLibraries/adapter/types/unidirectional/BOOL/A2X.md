@@ -2,8 +2,6 @@
 
 # A2X (BOOL)
 
-
-
 unidirectional Adapter Interface for 2 Events and 2 Bools
 
 ## Interface

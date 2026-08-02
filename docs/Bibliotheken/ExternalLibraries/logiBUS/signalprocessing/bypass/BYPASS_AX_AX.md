@@ -1,6 +1,5 @@
 # BYPASS_AX_AX
 
-
 ![BYPASS_AX_AX](./BYPASS_AX_AX.svg)
 
 * * * * * * * * * *
@@ -26,6 +25,7 @@ Der Funktionsblock **BYPASS_AX_AX** dient zur Weiterleitung und parallelen Bypas
 
 ### **Adapter**
 Der FB verwendet vier Adapter vom Typ `adapter::types::unidirectional::AX`:
+
 - **IN** (Socket) – Signal‑Eingang  
 - **BY_IN** (Socket) – Bypass‑Eingang  
 - **OUT** (Plug) – Signal‑Ausgang  
@@ -51,6 +51,7 @@ Der FB realisiert zwei parallele Pfade:
 
 ## Zustandsübersicht
 Der FB selbst besitzt keinen eigenen Zustandsautomaten, jedoch wird durch das interne D‑Flipflop ein binärer Zustand realisiert:
+
 - **Zustand 0:** Flipflop‑Ausgang Q = FALSE → BY_OUT.D1 = FALSE  
 - **Zustand 1:** Flipflop‑Ausgang Q = TRUE → BY_OUT.D1 = TRUE
 

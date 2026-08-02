@@ -1,6 +1,5 @@
 # ALR_D_FF
 
-
 ![ALR_D_FF](./ALR_D_FF.svg)
 
 * * * * * * * * * *
@@ -45,6 +44,7 @@ Der Vorgang wiederholt sich bei jedem weiteren Taktereignis. Zwischen den Takten
 
 ## Zustandsübersicht
 Der Baustein hat keine expliziten Zustände. Die interne Logik (Flip‑Flop) kennt lediglich zwei implizite Zustände:
+
 - **Warten auf Taktereignis**: Der Ausgang behält den zuletzt gelatchten Wert.
 - **Latch‑Moment**: Bei einem Taktereignis wird der Eingangswert übernommen und der Ausgang aktualisiert.
 

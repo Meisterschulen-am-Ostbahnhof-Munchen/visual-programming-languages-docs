@@ -1,6 +1,5 @@
 # ASSEMBLE_AL_FROM_AW
 
-
 ![ASSEMBLE_AL_FROM_AW](./ASSEMBLE_AL_FROM_AW.svg)
 
 * * * * * * * * * *

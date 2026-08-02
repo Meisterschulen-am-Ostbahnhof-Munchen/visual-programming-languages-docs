@@ -1,7 +1,5 @@
 # F_NOT
 
-
-
 ![F_NOT](https://user-images.githubusercontent.com/116869307/214144000-4586686b-f3a0-4caa-9896-3dfb75baa550.png)
 
 * * * * * * * * * *
@@ -51,11 +49,6 @@ Bei Empfang eines REQ-Ereignisses führt der F_NOT-Block eine bitweise logische 
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen logischen Operationen wie F_AND oder F_OR führt F_NOT ausschließlich eine unäre Operation (ein Operand) durch, während andere logische Bausteine typischerweise binäre Operationen (zwei Operanden) implementieren.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

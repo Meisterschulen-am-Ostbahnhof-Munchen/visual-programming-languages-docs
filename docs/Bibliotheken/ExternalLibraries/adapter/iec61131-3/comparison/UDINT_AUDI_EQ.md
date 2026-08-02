@@ -1,6 +1,5 @@
 # UDINT_AUDI_EQ
 
-
 ![UDINT_AUDI_EQ](./UDINT_AUDI_EQ.svg)
 
 * * * * * * * * * *

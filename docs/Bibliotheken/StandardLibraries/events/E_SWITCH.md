@@ -1,8 +1,6 @@
 # E_SWITCH
 
-
 ## 🎧 Podcast
-
 
 ![E_SWITCH_ecc](./E_SWITCH_ecc.svg)
 
@@ -52,11 +50,6 @@ Das Ereignis am Eingang `EI` wird also immer an genau einen der beiden Ausgänge
 | Auswahlkriterium | Boolesch (`G`) | Boolesch (`G`) | Index (`K`) |
 | Richtung      | 1:2 (Demultiplexer) | 2:1 (Multiplexer) | 1:n (Demultiplexer) |
 | Zustandsmodell | BasicFB | BasicFB | BasicFB/Generic |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

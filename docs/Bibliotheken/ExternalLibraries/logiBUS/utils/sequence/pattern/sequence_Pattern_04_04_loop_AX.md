@@ -1,9 +1,5 @@
 # sequence_Pattern_04_04_loop_AX
 
-
-
-
-
 ![sequence_Pattern_04_04_loop_AX_ecc](./sequence_Pattern_04_04_loop_AX_ecc.svg)
 
 * * * * * * * * * *

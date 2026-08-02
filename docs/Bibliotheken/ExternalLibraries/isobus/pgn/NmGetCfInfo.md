@@ -1,7 +1,5 @@
 # NmGetCfInfo
 
-
-
 <img width="1465" height="241" alt="image" src="https://github.com/user-attachments/assets/3ea313ab-46a3-4f18-9a72-53f679663551" />
 
 * * * * * * * * * *
@@ -57,9 +55,6 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einfachen Lese- oder Abfrage-Bausteinen ist `NmGetCfInfo` speziell auf die Abfrage von ISOBUS-spezifischen Netzwerkinformationen ausgelegt. Er bietet mehr Kontext (durch `member`, `address`, `mask`) und strukturierte Ergebnisdaten (`CF_INFO_T`) als ein generischer Kommunikationsbaustein. Bausteine wie `E_SWITCH` oder `E_DEMUX` leiten nur Ereignisse weiter, während `NmGetCfInfo` aktive Netzwerkkommunikation und Protokollhandlung durchführt.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

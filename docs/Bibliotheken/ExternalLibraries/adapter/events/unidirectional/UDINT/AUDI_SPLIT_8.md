@@ -1,6 +1,5 @@
 # AUDI_SPLIT_8
 
-
 ![AUDI_SPLIT_8](./AUDI_SPLIT_8.svg)
 
 * * * * * * * * * *
@@ -36,6 +35,7 @@ Durch die Verwendung eines generischen Typs (siehe Technische Besonderheiten) ka
 ## Technische Besonderheiten
 - **Generischer Baustein**: Der FB ist als generischer Typ deklariert (`eclipse4diac::core::GenericClassName = 'GEN_AUDI_SPLIT'`).  
   Dies erlaubt die Wiederverwendung für beliebige AUDI-Adapter-Spezialisierungen, ohne den FB selbst ändern zu müssen.
+
 - **Keine Zustandslogik**: Da ausschließlich Adapter verwendet werden, besitzt der Baustein weder Ereignisse noch eine eigene Zustandsmaschine.
 - **Platzersparnis**: Durch die Zusammenfassung von acht Ausgängen in einem einzigen FB wird das Netzwerkdiagramm übersichtlicher als bei Verwendung mehrerer einfacher Split-Blöcke.
 

@@ -1,9 +1,6 @@
 # SchieberControl_AX
 
-
-
 ![SchieberControl_AX](./SchieberControl_AX.svg)
-
 
 ![SchieberControl_AX_ecc](./SchieberControl_AX_ecc.svg)
 
@@ -72,6 +69,7 @@ Der Baustein arbeitet als Zustandsautomat (ECC), der Übergänge basierend auf d
 
 1.  **Initialisierung:**
     Beim Start (`INIT`) wird geprüft, in welchem Zustand der Schieber beginnen soll (definiert durch `START`). Möglich sind z.B. direkt „Closed“, „Opened“ oder „Unknown“.
+
 2.  **Bewegungsablauf:**
     *   Erfolgt der Befehl `Open`, wechselt der Baustein in den Zustand **Opening**. Dabei werden die Adapter `POWERED` und `OPEN` aktiviert und der Timer mit `DT_Opening` gestartet.
     *   Nach Ablauf der Zeit (`timeOut.TimeOut`) wechselt der Zustand automatisch zu **Opened**.
@@ -79,6 +77,7 @@ Der Baustein arbeitet als Zustandsautomat (ECC), der Übergänge basierend auf d
     *   Nach Ablauf der Zeit wechselt der Zustand zu **Closed**.
 3.  **Unterbrechung:**
     Wird während des Öffnens der Befehl `Close` (oder umgekehrt) gegeben, wird der Vorgang gestoppt (`STOP`-Zustände), die Ausgänge zurückgesetzt und der entgegengesetzte Vorgang eingeleitet.
+
 4.  **Visualisierung:**
     In jedem Zustand (Closed, Opening, Opened, Closing, Unknown) werden die Ausgänge `Button`, `Softkey` und `Auxiliary` mit den Werten aus den Eingangsstrukturen (`BT`, `SK`, `AUXC`) befüllt, die dem jeweiligen Zustand entsprechen. Dies ermöglicht eine dynamische Anpassung der Benutzeroberfläche.
 
@@ -109,6 +108,7 @@ Die wichtigsten Zustände im ECC (Execution Control Chart) sind:
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Gegensatz zu einem einfachen `SR`-Flipflop zur Ventilsteuerung bietet der **SchieberControl_AX**:
+
 1.  **Zeitüberwachung:** Integrierte Timer simulieren die Laufzeit.
 2.  **HMI-Mapping:** Eingebaute Logik zur Umschaltung von UI-Informationen.
 3.  **Hardware-Abstraktion:** Nutzung von Adaptern statt direkter boolescher Ausgänge für die Ventile.

@@ -6,7 +6,6 @@
 
 ---- 
 
-
 ## Beschreibung
 Der Datentyp **QUARTER** ist ein 2-Bit Datentyp, der vier Zustände repräsentiert. Er ist nicht normativ in der IEC 61131-3 oder IEC 61499 verankert, sondern lehnt sich an Definitionen aus der **SAE J1939** bzw. **ISO 11783-6** (ISOBUS) an.
 
@@ -31,8 +30,6 @@ Dieser Datentyp wird häufig zur effizienten Übertragung von Zustandsinformatio
 
 ## Hinweise
 Da **QUARTER** kein Standard-Datentyp der IEC-Normen ist, wird er in Programmierumgebungen oft als `BYTE` oder `USINT` abgebildet, wobei nur die unteren 2 Bits relevant sind oder mehrere QUARTER-Werte in ein Byte gepackt werden (Packing).
-
-
 
 ## 🛠️ Zugehörige Übungen
 

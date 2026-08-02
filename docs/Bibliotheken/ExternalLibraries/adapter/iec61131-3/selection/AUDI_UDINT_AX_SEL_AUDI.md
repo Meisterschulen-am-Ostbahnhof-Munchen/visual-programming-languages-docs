@@ -1,6 +1,5 @@
 # AUDI_UDINT_AX_SEL_AUDI
 
-
 ![AUDI_UDINT_AX_SEL_AUDI](./AUDI_UDINT_AX_SEL_AUDI.svg)
 
 * * * * * * * * * *
@@ -76,6 +75,7 @@ Der Baustein besitzt keinen internen Zustandsautomaten. Das Verhalten wird volls
 
 - **Einfacher SELECT-FB (IEC 61131-3)**: Realisiert die gleiche Logik ohne Adapter, benötigt separate Eingänge für Selektor, IN0 und IN1.  
   Der vorliegende Baustein kapselt diese Funktionalität in eine adapterorientierte Schnittstelle.
+
 - **MUX-Bausteine (z. B. 4-Kanal-Multiplexer)**: Bieten mehrere Eingänge, hier beschränkt auf zwei Quellen.
 - **Ereignisgesteuerte Selektion**: Im Gegensatz zu rein datengetriebenen Selektoren wird die Auswahl nur bei einem Ereignis auf dem Selektor-Kanal durchgeführt.
 

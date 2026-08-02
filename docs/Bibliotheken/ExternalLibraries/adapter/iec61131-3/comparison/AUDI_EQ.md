@@ -1,6 +1,5 @@
 # AUDI_EQ
 
-
 ![AUDI_EQ](./AUDI_EQ.svg)
 
 * * * * * * * * * *

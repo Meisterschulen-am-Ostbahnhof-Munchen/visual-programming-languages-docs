@@ -1,6 +1,5 @@
 # AL_DEMUX_2
 
-
 ![AL_DEMUX_2](./AL_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Keine eigenen Datenausgänge. Die Datenweitergabe erfolgt ausschließlich über 
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Im Ruhezustand wartet er auf das Ereignis `REQ`.
 2. Bei Eintreffen von `REQ` wird der an `K` anliegende Wert ausgelesen.
 3. Der aktuelle Wert des Eingangsadapter `IN` wird auf den durch `K` bestimmten Ausgangsadapter (`OUT1` bei K=0, `OUT2` bei K=1) kopiert.
@@ -53,6 +53,7 @@ Handelt es sich bei `K` um einen Wert außerhalb des gültigen Bereichs (≥2), 
 
 ## Zustandsübersicht
 Eine formale Zustandsmaschine ist nicht definiert. Der Baustein verhält sich wie folgt:
+
 - **Idle**: Warten auf `REQ`.
 - **Processing**: Nach Eintreffen von `REQ` wird die Weiterleitung durchgeführt.
 - **Done**: Nach erfolgreicher Weiterleitung wird `CNF` ausgegeben und der Baustein kehrt in den Idle-Zustand zurück.

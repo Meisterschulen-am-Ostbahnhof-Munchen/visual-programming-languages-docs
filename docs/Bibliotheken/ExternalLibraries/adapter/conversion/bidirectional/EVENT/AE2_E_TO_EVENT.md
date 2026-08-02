@@ -1,7 +1,5 @@
 # AE2_E_TO_EVENT
 
-
-
 <img width="1172" height="190" alt="image" src="https://github.com/user-attachments/assets/02b7c06e-111f-4166-ac20-aebdf89c9956" />
 
 * * * * * * * * * *
@@ -37,6 +35,7 @@ Der Funktionsblock arbeitet als einfacher Konverter zwischen dem AE2-Adapter-Pro
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über zwei Hauptzustände:
+
 1. **Wartezustand**: Keine aktive Konvertierung
 2. **Aktivzustand**: Konvertierung läuft (nach REQ-Eingang bis CNF-Ausgabe)
 

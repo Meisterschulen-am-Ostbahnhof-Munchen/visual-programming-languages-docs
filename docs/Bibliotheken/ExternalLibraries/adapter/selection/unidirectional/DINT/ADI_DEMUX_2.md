@@ -1,6 +1,5 @@
 # ADI_DEMUX_2
 
-
 ![ADI_DEMUX_2](./ADI_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Keine Datenausgänge – die Ausgabe erfolgt ausschließlich über die Adapter.
 
 ## Funktionsweise
 Der Baustein arbeitet nach folgendem Prinzip:
+
 1. Ein ankommendes REQ-Ereignis aktiviert die Verarbeitung.
 2. Der aktuelle Wert des Eingangs K (ganzzahlig, UINT) wird ausgelesen.
 3. Abhängig von K wird die Verbindung zwischen dem Eingangsadapter `IN` und einem der beiden Ausgangsadapter hergestellt:
@@ -57,6 +57,7 @@ Die Daten über den ADI-Adapter werden unidirektional übertragen – der Datenf
 
 ## Zustandsübersicht
 Da der Baustein kein explizites ECC (Execution Control Chart) aus der XML ableitet, wird das Verhalten ereignisgesteuert modelliert:
+
 - **Ruhezustand**: Der Baustein wartet auf ein `REQ`-Ereignis.
 - **Auswahlzustand**: Nach Empfang von `REQ` wird der Index K verarbeitet und die entsprechende Verbindung geschaltet.
 - **Bestätigungszustand**: Nach erfolgreicher Umschaltung wird `CNF` gesendet, und der Baustein kehrt in den Ruhezustand zurück.

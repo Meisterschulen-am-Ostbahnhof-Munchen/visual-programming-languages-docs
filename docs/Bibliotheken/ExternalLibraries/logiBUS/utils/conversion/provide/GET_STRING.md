@@ -1,6 +1,5 @@
 # GET_STRING
 
-
 ![GET_STRING](./GET_STRING.svg)
 
 * * * * * * * * * *

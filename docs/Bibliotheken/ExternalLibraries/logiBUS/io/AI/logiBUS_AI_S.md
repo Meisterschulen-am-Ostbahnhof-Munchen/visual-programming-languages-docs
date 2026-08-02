@@ -1,7 +1,5 @@
 # logiBUS_AI_S
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `logiBUS_AI_S` ist ein strukturierter Datentyp (Struct), der zur Konfiguration eines analogen Eingangskanals (AI - Analog Input) innerhalb der logiBUS-Bibliothek dient. Er definiert die grundlegende Parameterstruktur, die benötigt wird, um einen physischen Pin eines logiBUS-Hardwaremoduls für die Erfassung analoger Signale zu adressieren.
@@ -24,6 +22,7 @@ Der Datentyp `logiBUS_AI_S` ist eine reine Datenstruktur und besitzt keine aktiv
 
 ## Anwendungsszenarien
 Dieser Struct wird ausschließlich in Szenarien verwendet, in denen logiBUS-Hardware mit analogen Eingangsmodulen (z.B. für Spannungs- oder Strommessung) in eine 4diac FORTE-Applikation integriert wird. Typische Anwendungen sind:
+
 *   Prozessüberwachung (Temperatur, Druck, Füllstand via Sensoren)
 *   Erfassung von Steuerspannungen
 *   Konfiguration von Mehrkanal-Messsystemen, bei denen für jeden Kanal eine separate Instanz von `logiBUS_AI_S` angelegt wird.

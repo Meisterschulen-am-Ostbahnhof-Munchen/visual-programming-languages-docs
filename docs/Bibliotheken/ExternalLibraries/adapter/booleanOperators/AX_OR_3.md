@@ -1,7 +1,5 @@
 # AX_OR_3
 
-
-
 <img width="963" height="297" alt="image" src="https://github.com/user-attachments/assets/3f0679d7-bd35-40d5-92eb-f7f1122507de" />
 
 * * * * * * * * * *
@@ -57,11 +55,6 @@ Da es sich um einen kombinatorischen Baustein ohne Speicherfunktion handelt, bes
 Im Vergleich zu Standard-ODER-Bausteinen bietet AX_OR_3 den Vorteil von drei Eingängen in einem einzigen Baustein, was die Verdrahtung vereinfacht. Gegenüber Bausteinen mit variabler Eingangsanzahl ist AX_OR_3 spezifisch optimiert für den dreifachen ODER-Einsatz.
 
 Vergleich mit [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

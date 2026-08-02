@@ -1,6 +1,5 @@
 # BasicOne_AX
 
-
 ![BasicOne_AX](./BasicOne_AX.svg)
 
 * * * * * * * * * *

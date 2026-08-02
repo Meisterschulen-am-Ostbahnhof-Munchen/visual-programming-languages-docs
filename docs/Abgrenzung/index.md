@@ -1,7 +1,5 @@
 # Abgrenzung und Einordnung
 
-
-
 Um die Besonderheiten der IEC 61499 zu verstehen, ist es hilfreich, sie in die breitere Landschaft der Programmiersprachen einzuordnen. Grundsätzlich lassen sich Programmiersprachen nach der Art ihrer Notation in zwei Hauptgruppen unterteilen: **textuelle** und **visuelle** Sprachen.
 
 ## Abgrenzung visuelle/textuelle Programmiersprachen
@@ -20,6 +18,7 @@ In textuellen Sprachen wird der Algorithmus durch eine Abfolge von Zeichenfolgen
 ```
 
 Typische Vertreter sind:
+
 *   **C / C++:** Systemnahe Programmierung, hohe Performance.
 *   **Python:** Sehr beliebt für Data Science und Automatisierung durch einfache Syntax.
 *   **Java / C#:** Objektorientierte Sprachen, weit verbreitet in der Unternehmenssoftware.
@@ -32,6 +31,7 @@ Visuelle Programmiersprachen (VPL) nutzen grafische Symbole, Blöcke oder Icons,
 ```
 
 Man unterscheidet hierbei oft nach dem Einsatzzweck:
+
 1.  **Erziehungsorientierte Sprachen:** Diese dienen meist dem Erlernen von Programmierkonzepten ohne Syntax-Hürden. Bekannte Beispiele sind **Scratch** oder **Blockly**.
 2.  **Industrielle visuelle Sprachen:** Diese sind für den professionellen Einsatz in der Automatisierungstechnik konzipiert.
 
@@ -47,6 +47,7 @@ In der Industrie hat die visuelle Programmierung eine lange Tradition, da sie en
 
 ### IEC 61131-3 (Der klassische Standard)
 Die IEC 61131-3 ist der weltweit etablierte Standard für speicherprogrammierbare Steuerungen (SPS). Sie bietet sowohl textuelle als auch visuelle Sprachen an:
+
 *   **LD (Ladder Diagram / Kontaktplan):** Angelehnt an Stromlaufpläne.
 *   **FBD (Function Block Diagram / Funktionsbausteinsprache):** Darstellung von Logik als verknüpfte Blöcke.
 *   **SFC (Sequential Function Chart / Ablaufsprache):** Modellierung von Schrittketten.

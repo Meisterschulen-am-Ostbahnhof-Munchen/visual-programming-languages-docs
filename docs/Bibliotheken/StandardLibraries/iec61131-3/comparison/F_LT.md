@@ -1,7 +1,5 @@
 # F_LT
 
-
-
 ![F_LT](https://user-images.githubusercontent.com/116869307/214144532-b5430c89-2a21-4998-9685-34848ef4d5d1.png)
 
 <https://content.helpme-codesys.com/de/CODESYS%20Development%20System/_cds_operator_lt.html>
@@ -9,7 +7,6 @@
 * * * * * * * * * *
 
 ![F_LT](F_LT.svg)
-
 
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 

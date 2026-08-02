@@ -1,7 +1,5 @@
 # AX_TP
 
-
-
 <img width="915" height="258" alt="image" src="https://github.com/user-attachments/assets/650ebf90-0b85-464b-a6bb-79536b7a5119" />
 
 * * * * * * * * * *
@@ -41,6 +39,7 @@ Der AX_TP-Funktionsblock arbeitet als Impulsgeber (Pulse Timer). Bei Empfang ein
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über folgende Betriebszustände:
+
 - **Inaktiv**: Kein aktiver Timer
 - **Aktiv**: Timer läuft mit konfigurierter Pulszeit
 - **Reset**: Timer wurde zurückgesetzt
@@ -53,16 +52,12 @@ Der Funktionsblock verfügt über folgende Betriebszustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Timer-Bausteinen bietet AX_TP:
+
 - Adapter-basierte Schnittstelle für bessere Modularität
 - Explizite Reset-Funktionalität
 - Standardisierte Puls-Timer-Implementierung
 
 Vergleich mit [E_TP](../../../../../../StandardLibraries/events/timers/E_TP.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

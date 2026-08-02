@@ -1,6 +1,5 @@
 # AX_R_TRIG
 
-
 * * * * * * * * * *
 
 ## Einleitung

@@ -2,8 +2,6 @@
 
 # E_TONOF
 
-
-
 **Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
 
 ## Bild
@@ -87,10 +85,6 @@ Der Baustein **E_TONOF** ist ein standardisiertes Funktionsbaustein-Typ (FBType)
 
 ### Zusammenfassung:
 Der **E_TONOF**-Baustein ist ein leistungsstarkes Werkzeug in der IEC 61499, um zeitverzögerte Schaltvorgänge in industriellen Automatisierungssystemen zu realisieren. Er kombiniert die Funktionen eines Ein- und Ausschaltverzögerungstimers in einem einzigen Baustein und bietet zusätzlich die Möglichkeit, den Timer über ein Reset-Ereignis zurückzusetzen. Dies macht ihn besonders flexibel und vielseitig einsetzbar in komplexen Steuerungsaufgaben.
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

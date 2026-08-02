@@ -2,7 +2,6 @@
 
 Kein Bild vorhanden.
 
-
 ![AB_D_FF](./AB_D_FF.svg)
 
 * * * * * * * * * *
@@ -31,6 +30,7 @@ Der Funktionsblock **AB_D_FF** realisiert ein asynchrones Daten-Latch (D-Flipflo
 ## Funktionsweise
 
 Der Funktionsblock arbeitet ereignisgesteuert:
+
 1. Sobald am Eingangsadapter **I.E1** ein Ereignis eintrifft, wird der aktuelle Wert am Daten-Eingang **I.D1** in das interne D-Flipflop (`E_D_FF_ANY`) übernommen.
 2. Anschließend wird der gespeicherte Wert an **Q.D1** ausgegeben und gleichzeitig ein Ereignis am Ausgang **Q.E1** erzeugt.
 
@@ -45,6 +45,7 @@ Somit verhält sich der Baustein wie ein klassischer flankengesteuerter D-Latch,
 ## Zustandsübersicht
 
 Der Funktionsblock besitzt keinen expliziten internen Zustandsautomaten, sondern vertraut auf den impliziten Zustand des eingebetteten `E_D_FF_ANY`:
+
 - **Idle**: Warten auf ein Ereignis an `I.E1`.
 - **Latchen**: Nach Empfang des Ereignisses wird der Datenwert übernommen und ausgegeben.
 - Der interne gemerkte Wert bleibt bis zum nächsten Ereignis erhalten.

@@ -2,8 +2,6 @@
 
 # ASR2
 
-
-
 bidirectional Adapter Interface for 2 Events
 
 ## Interface

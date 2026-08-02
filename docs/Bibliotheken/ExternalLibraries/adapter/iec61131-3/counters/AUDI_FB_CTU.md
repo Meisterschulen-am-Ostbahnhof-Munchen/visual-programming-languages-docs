@@ -1,6 +1,5 @@
 # AUDI_FB_CTU
 
-
 ![AUDI_FB_CTU](./AUDI_FB_CTU.svg)
 
 * * * * * * * * * *
@@ -11,6 +10,7 @@ Der **AUDI_FB_CTU** ist ein Aufwärtszähler (Up Counter) für den Datentyp **UD
 
 ### **Ereignis-Eingänge**
 Der Baustein besitzt keine klassischen Event‑Eingänge (EventInputs). Stattdessen werden die auslösenden Ereignisse **über die Adapter‑Sockets** hereingeführt:
+
 * **CU.E1** – Ereignis vom *Count up*‑Adapter: ein ansteigender Impuls erhöht den Zählerstand um 1.
 * **R.E1** – Ereignis vom *Reset*‑Adapter: setzt den Zählerstand auf 0 zurück.
 * **PV.E1** – Ereignis vom *Preset value*‑Adapter: übernimmt den aktuell am Preset‑Eingang anliegenden Wert als neuen Vorwahlwert (wirkt sofort, ohne den Zähler zu ändern).
@@ -21,6 +21,7 @@ Alle drei Ereignisse werden intern auf den **REQ**‑Event des eingebetteten IEC
 * **CNF** – Bestätigungs‑Event (EventOutput): wird nach jeder Verarbeitung eines eingehenden Ereignisses ausgegeben. Ist mit den Ausgangsadaptern mitverbunden, sodass die angeschlossenen Komponenten über eine erfolgte Zähloperation informiert werden.
 
 Zusätzlich werden folgende **Adapter‑Events** ausgelöst (über interne Verdrahtung):
+
 * **Q.E1** – Event des *Output*‑Adapters (Typ AX): signalisiert die Verfügbarkeit eines neuen Ausgangswerts Q.
 * **CV.E1** – Event des *Count value*‑Adapters (Typ AUDI): signalisiert die Verfügbarkeit eines neuen Zählerstands CV.
 
@@ -28,6 +29,7 @@ Diese Adapter‑Events feuern **gleichzeitig mit CNF**, d. h. bei jedem zählr
 
 ### **Daten-Eingänge**
 Auch die Daten werden **über die Adapter‑Sockets** bereitgestellt:
+
 * **CU.D1** (UDINT, über Adapter CU) – Zählimpuls: Nur der Wert 0 oder 1 wird ausgewertet; ein positiver Flankenwechsel (0→1) führt zu einer Erhöhung. (Der Adapter liefert das Ereignis selbst, zusätzlich kann der Datenwert z. B. als flankenbewertetes Signal genutzt werden.)
 * **R.D1** (UDINT, über Adapter R) – Reset‑Signal: Ein Wert ≠0 setzt den Zähler zurück.
 * **PV.D1** (UDINT, über Adapter PV) – Preset‑Wert: Der hier anliegende Wert wird beim Eintreffen des PV.E1‑Ereignisses als neue Vorwahl übernommen. (Der Datenwert wird also nur bei einem expliziten PV‑Ereignis eingelesen.)
@@ -48,6 +50,7 @@ Auch die Daten werden **über die Adapter‑Sockets** bereitgestellt:
 
 ## Funktionsweise
 Der **AUDI_FB_CTU** delegiert seine gesamte Zähllogik an den inneren IEC‑Baustein `FB_CTU_UDINT`. Bei jedem eingehenden Ereignis (CU.E1, R.E1 oder PV.E1) wird dessen **REQ**‑Eingang aktiviert. Der innere Zähler führt dann die folgende Logik aus:
+
 1. **Reset zuerst**: Falls **R** ≠ 0, wird der Zähler auf 0 gesetzt.
 2. **Zählimpuls**: Falls **CU** ≠ 0 und ein positiver Flankenübergang seit dem letzten Aufruf vorliegt, wird CV um 1 erhöht.
 3. **Preset‑Übernahme**: Falls **PV.E1** ausgelöst wurde, wird der an PV anliegende Wert als neuer Schwellwert (PV) gespeichert.
@@ -64,6 +67,7 @@ Nach der Verarbeitung werden die Ereignisse **CNF**, **Q.E1** und **CV.E1** glei
 
 ## Zustandsübersicht
 Der Baustein verfügt über **keinen eigenen Zustandsautomaten** (ECC). Die Zustandslogik liegt vollständig im eingebetteten IEC‑Funktionsblock `FB_CTU_UDINT`. Dessen wesentliche Zustände sind:
+
 * **Idle**: Warten auf ein Ereignis (CU.E1, R.E1 oder PV.E1).
 * **Processing** (während des internen Durchlaufs): Auswerten der Eingangsdaten (CU, R, PV), Aktualisieren des Zählers und der Ausgänge Q und CV.
 * **Emitting**: Ausgabe der Ereignisse CNF, Q.E1, CV.E1.

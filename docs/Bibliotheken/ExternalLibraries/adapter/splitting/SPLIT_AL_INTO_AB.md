@@ -1,6 +1,5 @@
 # SPLIT_AL_INTO_AB
 
-
 ![SPLIT_AL_INTO_AB](./SPLIT_AL_INTO_AB.svg)
 
 * * * * * * * * * *
@@ -24,6 +23,7 @@ Die Ausgangsadapter **BYTE_00** bis **BYTE_07** (Plugs, Typ: `adapter::types::un
 ### Daten-Ausgänge
 - **BYTE_00** bis **BYTE_07** (Plugs, Typ: `adapter::types::unidirectional::AB`):  
   Jeder dieser Adapter stellt über seinen Daten-Ausgang **D1** ein einzelnes Byte (BYTE) zur Verfügung. Die Zuordnung ist:
+
   - BYTE_00: niederwertigstes Byte (Bit 0…7)
   - BYTE_01: nächstes Byte (Bit 8…15)
   - …

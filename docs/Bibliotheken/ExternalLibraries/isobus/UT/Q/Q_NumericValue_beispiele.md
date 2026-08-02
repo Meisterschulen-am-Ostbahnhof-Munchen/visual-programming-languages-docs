@@ -49,7 +49,6 @@ Aufgabe dieses Bausteins ist es eine der folgenden Objekte die auf einem VT darg
 
 Querverweise:
 
-
 BEISPIEL
 
 Zähler mit Rücksetzung

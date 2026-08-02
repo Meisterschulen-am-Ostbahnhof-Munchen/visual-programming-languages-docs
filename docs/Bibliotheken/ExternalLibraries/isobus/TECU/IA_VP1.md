@@ -1,6 +1,5 @@
 # IA_VP1
 
-
 ![IA_VP1](./IA_VP1.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ OUT-Adapter signalisiert, ob die Positionsdaten innerhalb einer erwarteten Zeit 
 
 ## Zustandsübersicht
 Der Baustein besitzt keine explizit dargestellte Zustandsmaschine. Das Verhalten ist ereignisgesteuert:
+
 - **Inaktiv:** Vor dem INIT-Ereignis liegt keine Initialisierung vor.
 - **Initialisierung:** Sobald INIT mit `QI=TRUE` eintrifft, wird die Initialisierungssequenz gestartet.
 - **Aktiv:** Nach erfolgreichem INITO stehen die Positions- und Timeout-Daten an den Adaptern zur Verfügung. Die Daten werden mit jedem neuen internen Ereignis (getriggert durch den Kern) aktualisiert.

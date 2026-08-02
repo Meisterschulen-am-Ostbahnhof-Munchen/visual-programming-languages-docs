@@ -1,8 +1,5 @@
 # logiBUS_2_CAN_DI
 
-
-
-
 ![logiBUS_2_CAN_DI](./logiBUS_2_CAN_DI.svg)
 
 * * * * * * * * * *
@@ -23,6 +20,7 @@ Die GlobalConstants definieren drei Hauptkonstanten für die digitale Eingangsko
 ### **Datentypen**
 
 Alle Konstanten verwenden den strukturierten Datentyp `logiBUS_2_CAN_DI_S`, der folgende Komponente enthält:
+
 - **Pin**: Ganzzahlwert zur Identifikation des physikalischen Eingangspins
 
 ## Funktionsweise
@@ -45,6 +43,7 @@ Die Konstanten werden zur Laufzeit nicht verändert und dienen ausschließlich d
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einfachen numerischen Konstanten bieten diese strukturierten Konstanten:
+
 - Höhere Typsicherheit durch strukturierte Datentypen
 - Bessere Wartbarkeit durch zentrale Konfiguration
 - Erweiterbarkeit für zusätzliche Parameter

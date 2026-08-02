@@ -1,7 +1,5 @@
 # Aux_Val1_QW
 
-
-
 <img width="1496" height="174" alt="image" src="https://github.com/user-attachments/assets/06793149-2165-45d1-91f2-b47c071b9248" />
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ Der Funktionsblock initialisiert und steuert Auxiliary-Ausgabegeräte über den 
 
 ## Zustandsübersicht
 Der Baustein verfügt über zwei Hauptbetriebszustände:
+
 1. **Initialisierungszustand**: Verarbeitung der INIT-Anforderung und Konfiguration des Auxiliary-Geräts
 2. **Service-Zustand**: Verarbeitung von REQ-Anforderungen und Datenausgabe an das konfigurierte Gerät
 

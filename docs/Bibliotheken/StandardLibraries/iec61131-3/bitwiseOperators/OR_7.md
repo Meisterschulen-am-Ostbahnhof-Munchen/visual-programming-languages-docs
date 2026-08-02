@@ -1,7 +1,5 @@
 # OR_7
 
-
-
 <img width="1295" height="391" alt="OR_7" src="https://github.com/user-attachments/assets/fb73db3a-416e-4f74-9f10-e46fc1e7714e" />
 
 * * * * * * * * * *

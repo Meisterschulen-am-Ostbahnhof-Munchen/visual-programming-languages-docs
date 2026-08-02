@@ -1,9 +1,6 @@
 # ARR08X_TO_ST08X
 
-
-
 <img width="1352" height="215" alt="image" src="https://github.com/user-attachments/assets/f6ca4174-d362-4551-a80d-487df811f414" />
-
 
 ![ARR08X_TO_ST08X](./ARR08X_TO_ST08X.svg)
 
@@ -31,6 +28,7 @@ Dieser Funktionsblock verfügt über keine Adapter.
 Der Funktionsblock `ARR08X_TO_ST08X` führt eine direkte elementweise Zuweisung der Werte aus dem Eingangs-Array `IN` auf die entsprechenden Felder der Ausgangsstruktur `OUT` durch. Bei jedem `REQ`-Ereignis wird der Wert des `IN`-Arrays gelesen und die einzelnen Elemente des Arrays `IN[0]` bis `IN[7]` den Feldern `X_00` bis `X_07` der `ST08X`-Struktur zugewiesen. Nach der Zuweisung wird das `CNF`-Ereignis ausgelöst.
 
 Die Zuweisungen erfolgen wie folgt:
+
 *   `OUT.X_00 := IN[0];`
 *   `OUT.X_01 := IN[1];`
 *   `OUT.X_02 := IN[2];`

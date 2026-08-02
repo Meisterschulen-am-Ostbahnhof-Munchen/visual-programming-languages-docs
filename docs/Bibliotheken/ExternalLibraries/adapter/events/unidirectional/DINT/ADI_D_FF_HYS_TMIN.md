@@ -1,6 +1,5 @@
 # ADI_D_FF_HYS_TMIN
 
-
 ![ADI_D_FF_HYS_TMIN](./ADI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
@@ -62,6 +61,7 @@ Wechsel zwischen den Zuständen erfolgen gemäß der Hysterese- und Zeitbedingun
 ## Vergleich mit ähnlichen Bausteinen
 
 Ein herkömmliches D-Flipflop (z. B. `E_D_FF`) schaltet bei jedem Takt ohne Hysterese und ohne Zeitverzögerung. Der `ADI_D_FF_HYS_TMIN` hingegen bietet:
+
 - **Hysterese:** Verhindert Oszillationen bei langsam ändernden oder verrauschten Signalen.
 - **Minimale Inter-Arrival-Zeit:** Reduziert die Ereignisrate und ermöglicht eine gezielte Zeitsteuerung.
 - **Adapter-Schnittstelle:** Speziell für den Einsatz in komplexen, adapterbasierten FB-Netzwerken ausgelegt.

@@ -1,6 +1,5 @@
 # FIELDBUS_QUARTER_TO_SIGNAL
 
-
 ![FIELDBUS_QUARTER_TO_SIGNAL](./FIELDBUS_QUARTER_TO_SIGNAL.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Keine Adapter vorhanden.
 ## Funktionsweise
 
 Bei einem Ereignis am Eingang `REQ` wird der Algorithmus `REQ` ausgeführt:
+
 1. Der eingehende Wert `IN` wird mit der importierten Konstanten `DONT_CARE_2bit` verglichen.
 2. Ist `IN` kleiner als `DONT_CARE_2bit`, wird der Wert als gültig betrachtet:
    - `OUT` erhält den Wert von `IN`.

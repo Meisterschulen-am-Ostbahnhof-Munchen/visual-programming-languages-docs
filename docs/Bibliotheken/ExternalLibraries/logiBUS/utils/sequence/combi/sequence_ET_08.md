@@ -1,9 +1,6 @@
 # sequence_ET_08
 
-
-
 <img width="1352" height="421" alt="image" src="https://github.com/user-attachments/assets/597e2c46-3888-4688-b81b-b23b010b500a" />
-
 
 ![sequence_ET_08_ecc](./sequence_ET_08_ecc.svg)
 
@@ -42,6 +39,7 @@ Der Funktionsblock `sequence_ET_08` ist ein Sequenzer mit acht Ausgängen. Er er
 
 ## Funktionsweise
 Der Baustein ist als Basic-FB mit einer Execution Control Chart (ECC) implementiert. Er startet im initialen Zustand `xSTART`. Ein `START_S1`-Ereignis führt in den ersten aktiven Zustand `sState_01`. Jeder aktive Zustand (`sState_01` bis `sState_08`) führt beim Eintritt folgende Aktionen aus:
+
 1.  Stoppt den laufenden Zeitgeber.
 2.  Führt den Exit-Algorithmus des vorherigen Zustands aus (schaltet den vorherigen Ausgang aus).
 3.  Führt den Confirmation-Algorithmus (`*_C`) aus, der die `STATE_NR` setzt und die Zeit für den nächsten möglichen automatischen Übergang im `timeOut`-Adapter konfiguriert.
@@ -49,6 +47,7 @@ Der Baustein ist als Basic-FB mit einer Execution Control Chart (ECC) implementi
 5.  Startet den Zeitgeber mit der für diesen Zustand eingestellten Dauer (`DT_*`).
 
 Der Übergang zum nächsten Zustand kann auf zwei Arten erfolgen:
+
 1.  **Ereignisgesteuert:** Durch das entsprechende Sprung-Ereignis (z.B. `S1_S2`).
 2.  **Zeitgesteuert:** Durch das `TimeOut`-Ereignis des Adapters, sofern die Zeitdauer (`DT_*`) nicht `NO_TIME` ist.
 

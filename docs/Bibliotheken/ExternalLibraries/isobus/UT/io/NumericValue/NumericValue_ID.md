@@ -1,7 +1,5 @@
 # NumericValue_ID
 
-
-
 <img width="1399" height="290" alt="image" src="https://github.com/user-attachments/assets/d47cfe0c-6224-4132-bb02-d186bc0e0c55" />
 
 * * * * * * * * * *
@@ -52,6 +50,7 @@ Der Funktionsblock initialisiert sich über das INIT-Ereignis und kann über REQ
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor INIT-Aufruf
 2. **Initialisiert**: Nach erfolgreicher INIT-Verarbeitung
 3. **Service-aktiv**: Bei aktiven REQ-Anfragen
@@ -65,9 +64,6 @@ Der Funktionsblock durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Eingabeblöcken bietet NumericValue_ID erweiterte Service-Funktionalität mit Initialisierungsprozeduren, Statusrückmeldungen und parametrierbaren Konfigurationsmöglichkeiten. Die spezielle Ausrichtung auf ISOBUS-Umgebungen unterscheidet ihn von generischen Eingabeblöcken.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

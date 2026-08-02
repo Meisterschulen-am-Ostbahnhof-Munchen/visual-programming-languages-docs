@@ -1,6 +1,5 @@
 # ADI_D_FF
 
-
 ![ADI_D_FF](./ADI_D_FF.svg)
 
 * * * * * * * * * *

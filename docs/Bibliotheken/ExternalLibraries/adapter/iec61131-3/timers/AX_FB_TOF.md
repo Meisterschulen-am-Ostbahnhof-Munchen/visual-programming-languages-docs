@@ -1,7 +1,5 @@
 # AX_FB_TOF
 
-
-
 <img width="962" height="243" alt="image" src="https://github.com/user-attachments/assets/d92dd0e6-fa14-499e-8a97-5c1432d0df3e" />
 
 * * * * * * * * * *
@@ -33,6 +31,7 @@ AX_FB_TOF ist ein standardisierter Timer-Funktionsblock gemäß IEC 61131-3, der
 
 ## Funktionsweise
 Der AX_FB_TOF-Block arbeitet als Ausschaltverzögerungstimer:
+
 1. Wenn der Eingang am IN-Adapter TRUE wird, schaltet der Ausgang am Q-Adapter sofort auf TRUE.
 2. Wenn der Eingang am IN-Adapter von TRUE auf FALSE wechselt, startet der interne Timer.
 3. Der Ausgang am Q-Adapter bleibt TRUE, solange der Timer läuft und PT noch nicht erreicht wurde.
@@ -59,11 +58,6 @@ Der AX_FB_TOF-Block arbeitet als Ausschaltverzögerungstimer:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu ereignisbasierten Timern wie [AX_TOF](../../events/unidirectional/BOOL/timers/AX_TOF.md) folgt dieser Baustein dem klassischen SPS-Verhalten nach IEC 61131-3 und bietet zusätzlich den ET-Statusausgang.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

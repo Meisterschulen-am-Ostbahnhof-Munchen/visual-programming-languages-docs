@@ -1,6 +1,5 @@
 # AIWS_MUX_5
 
-
 ![AIWS_MUX_5](./AIWS_MUX_5.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Keine direkten Datenausgänge; die ausgegebenen Daten werden über den Adapter *
 
 ## Funktionsweise
 Der FB arbeitet ereignisgesteuert:
+
 1. Ein positiver Flanke am **REQ**‑Ereignis übernimmt den aktuellen Wert von **K**.
 2. Abhängig von **K** (0…4) wird der entsprechende Socket **(IN1…IN5)** ausgewählt und dessen Daten an den Plug **OUT** weitergeleitet.
 3. Nach erfolgreicher Umschaltung wird das **CNF**‑Ereignis ausgegeben.
@@ -55,6 +55,7 @@ Liegt **K** außerhalb des gültigen Bereichs (0…4), bleibt das Verhalten unde
 
 ## Zustandsübersicht
 Der FB besitzt keinen expliziten Zustandsautomaten. Der Ablauf ist ereignisgesteuert und deterministisch:
+
 - **Warten auf REQ** → bei REQ: Auswahl durchführen, CNF senden.
 - Der Baustein bleibt nach der Ausführung aktiv und bereit für das nächste REQ‑Ereignis.
 

@@ -1,7 +1,5 @@
 # E_DEMUX_4
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -46,11 +44,6 @@ Der `E_DEMUX_4` (Event Demultiplexer) ist ein Funktionsbaustein nach IEC 61499, 
 - **Zustandsmaschinen**: Auswahl des nächsten Zustandsübergangs basierend auf einem berechneten Index.
 - **Modus-Umschaltung**: Aktivierung unterschiedlicher Anlagenteile je nach gewähltem Betriebsmodus (`K` = Modus-Nummer).
 - **Sequenzer/Schrittketten**: Aktivierung eines von vier möglichen nächsten Schritten.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

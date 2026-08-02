@@ -1,6 +1,5 @@
 # Q_Attribute_AUDI
 
-
 ![Q_Attribute_AUDI](./Q_Attribute_AUDI.svg)
 
 * * * * * * * * * *
@@ -62,6 +61,7 @@ Der Baustein delegiert die eigentliche ISOBUS-Kommunikation an den internen Funk
 
 ## Zustandsübersicht
 Der FB besitzt keine explizit dargestellte Zustandsmaschine. Die Ablaufsteuerung erfolgt ereignisgesteuert:
+
 - Nach **INIT** wechselt er in einen bereiten Zustand.
 - Ein weiteres Ereignis wird erst durch den angeschlossenen Adapter-Socket ausgelöst (E1 von u32ValueAttribute). Nach der Verarbeitung wird **CNF** gesendet.
 - Der Baustein ist **nicht zustandsbehaftet** im Sinne einer wiederverwendbaren Sequenz; jeder Request wird einzeln abgearbeitet.

@@ -1,7 +1,5 @@
 # Q_ObjEnableDisable
 
-
-
 ![Q_ObjEnableDisable](https://user-images.githubusercontent.com/116869307/214148082-167eae93-48d4-40cd-96e2-d0983e475187.png)
 
 * * * * * * * * * *
@@ -95,6 +93,7 @@ Der Q_ObjEnableDisable-Baustein bietet essentielle Eingabesteuerung:
 - **Flexibel**: Für alle Eingabeelementtypen
 
 Unverzichtbar für:
+
 - Interaktive Formulare
 - Sichere Bedienoberflächen
 - Zustandsgesteuerte Anwendungen

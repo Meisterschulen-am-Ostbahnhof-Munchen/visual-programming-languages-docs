@@ -1,6 +1,5 @@
 # AQ_MUX_2
 
-
 ![AQ_MUX_2](./AQ_MUX_2.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Alle Adapter sind vom gleichen Typ, einem unidirektionalen Analog‑Ausgangs‑A
 
 ## Funktionsweise
 Der **AQ_MUX_2** arbeitet ereignisgesteuert:
+
 1. Ein **REQ**‑Ereignis signalisiert eine neue Anforderung.
 2. Der aktuelle Wert von `K` wird ausgewertet:
    - Bei `K = 0` wird der Wert des Adapters **IN1** an **OUT** weitergegeben.
@@ -72,6 +72,7 @@ Nach der Verarbeitung kehrt der Baustein sofort in den Bereitschaftszustand zur�
 
 ## Vergleich mit ähnlichen Bausteinen
 Im IEC‑61499‑Standard existieren verschiedene Multiplexer‑Funktionsblöcke (z. B. `SEL`, `MUX`). Der **AQ_MUX_2** unterscheidet sich durch:
+
 - **Adapter‑Schnittstelle**: Statt einzelner Daten‑Ein‑/Ausgänge arbeitet er mit Adaptern, was die Kapselung komplexerer Datentypen ermöglicht.
 - **Spezialisierung auf analoge Ausgänge**: Der Adaptertyp `AQ` ist für analoge Ausgangssignale optimiert (z. B. 0‑10 V, 4‑20 mA).
 - **Einfachheit**: Nur zwei Kanäle (gegenüber `MUX` mit mehreren Eingängen), was die Übersichtlichkeit erhöht.

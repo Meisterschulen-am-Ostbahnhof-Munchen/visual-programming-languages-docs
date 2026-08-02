@@ -1,6 +1,5 @@
 # AB_TO_AUDI
 
-
 ![AB_TO_AUDI](./AB_TO_AUDI.svg)
 
 * * * * * * * * * *
@@ -26,6 +25,7 @@ Der Baustein besitzt keine direkten Ereignis- oder Datenein-/ausgänge auf der o
 ### **Adapter**
 - **`AB_IN`** (Socket) – Typ: `adapter::types::unidirectional::AB`  
   Nimmt ein BYTE-Signal entgegen. Der Adapter stellt ein Ereignis `E1` und einen Datenwert `D1` (BYTE) bereit.
+
 - **`AUDI_OUT`** (Plug) – Typ: `adapter::types::unidirectional::AUDI`  
   Gibt das konvertierte UDINT-Signal aus. Der Adapter erwartet ein Ereignis `E1` und einen Datenwert `D1` (UDINT).
 
@@ -47,6 +47,7 @@ Somit wird eine unidirektionale BYTE-zu-UDINT-Wandlung mit Ereignissteuerung rea
 
 ## Zustandsübersicht
 Da es sich um einen rein zusammengesetzten Baustein ohne eigenen Zustandsautomaten handelt, ergibt sich die Zustandslogik aus dem Zusammenspiel der internen Verbindungen:
+
 - **Bereit**: nach Initialisierung, warten auf Ereignis `AB_IN.E1`.
 - **Konvertierung aktiv**: nach Empfang von `AB_IN.E1`, während der interne Konverter arbeitet.
 - **Ausgabe bereit**: nach Bestätigung durch `Convert.CNF`, bis das Ereignis `AUDI_OUT.E1` und der zugehörige Datenwert übergeben werden.

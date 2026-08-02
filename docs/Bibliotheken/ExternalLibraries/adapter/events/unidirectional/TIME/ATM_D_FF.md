@@ -1,6 +1,5 @@
 # ATM_D_FF
 
-
 ![ATM_D_FF](./ATM_D_FF.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Der FB verwendet intern den Standard‑Baustein `iec61499::events::E_D_FF_ANY`. 
 
 ## Zustandsübersicht
 Der `ATM_D_FF` besitzt keine eigene Zustandsmaschine. Sein Verhalten ist rein datenflussgesteuert:
+
 - **Warten auf Ereignis** – der zuletzt gespeicherte Wert bleibt erhalten.
 - **Bei Ereignis an I.E1** – Wert von I.D1 wird übernommen und sofort an Q ausgegeben.
 

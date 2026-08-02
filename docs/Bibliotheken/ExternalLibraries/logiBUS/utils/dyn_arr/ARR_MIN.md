@@ -1,6 +1,5 @@
 # ARR_MIN
 
-
 ![ARR_MIN](./ARR_MIN.svg)
 
 * * * * * * * * * *
@@ -53,6 +52,7 @@ Die Berechnung erfolgt rein sequenziell innerhalb eines einzigen Ausführungssch
 
 ## Zustandsübersicht
 Der FB kennt nur zwei implizite Zustände:
+
 - **Idle**: Warten auf ein `REQ`-Ereignis.
 - **Processing**: Nach Eintreffen von `REQ` wird die Berechnung ausgeführt, unmittelbar danach wird `CNF` gesendet und der FB kehrt in den Idle-Zustand zurück.
 

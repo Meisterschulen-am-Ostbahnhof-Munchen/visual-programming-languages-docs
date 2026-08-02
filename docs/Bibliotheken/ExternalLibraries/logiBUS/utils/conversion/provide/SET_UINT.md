@@ -1,6 +1,5 @@
 # SET_UINT
 
-
 ![SET_UINT](./SET_UINT.svg)
 
 * * * * * * * * * *
@@ -34,6 +33,7 @@ Der Funktionsblock SET_UINT dient dazu, einen UINT-Wert, der an einem Dateneinga
 
 ## Funktionsweise
 Die Verarbeitung erfolgt in einem Schritt:
+
 1. Ein Ereignis am Eingang `REQ` triggert die Ausführung des Algorithmus.
 2. Der Algorithmus kopiert den Wert des Dateneingangs `IN` in die InOut‑Variable `OUT`.
 3. Nach Abschluss wird das Ereignis `CNF` ausgegeben.

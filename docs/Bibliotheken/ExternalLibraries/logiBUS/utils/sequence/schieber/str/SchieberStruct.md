@@ -1,7 +1,5 @@
 # SchieberStruct
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der `SchieberStruct` ist ein strukturierter Datentyp, der zur Abbildung aller möglichen Zustände eines Schiebers (z. B. eines Ventils, einer Klappe oder eines Verschlusses) innerhalb eines Steuerungssystems dient. Er dient als zentraler Container für die Objekt-Identifikatoren (IDs), die den verschiedenen Zuständen des Schiebers zugeordnet sind. Dieser Datentyp wird typischerweise in Verbindung mit Funktionsblöcken verwendet, die Zustandsmaschinen oder Sequenzen für Schiebersteuerungen implementieren.
@@ -30,6 +28,7 @@ Die Initialwerte aller Felder sind auf die Konstante `ID_NULL` gesetzt, was eine
 
 ## Zustandsübersicht
 Die Struktur bildet explizit folgende fünf Zustände eines Schiebers ab:
+
 1.  **`Unknown`:** Der Zustand des Schiebers ist unbekannt oder konnte nicht ermittelt werden.
 2.  **`Closed`:** Der Schieber befindet sich in der geschlossenen Endlage.
 3.  **`Opening`:** Der Schieber ist gerade dabei, sich zu öffnen (Bewegungszustand).

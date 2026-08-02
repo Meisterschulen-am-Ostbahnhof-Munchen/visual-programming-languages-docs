@@ -1,6 +1,5 @@
 # AI_TO_AUI
 
-
 ![AI_TO_AUI](./AI_TO_AUI.svg)
 
 * * * * * * * * * *
@@ -29,6 +28,7 @@ Keine separaten Daten-Ausgänge vorhanden. Der konvertierte Wert wird über den 
 
 ## Funktionsweise
 Der FB arbeitet als einfache Pipeline:
+
 1. Ein Ereignis wird über `AI_IN.E1` empfangen.
 2. Dieses Ereignis triggert den internen Konvertier-Baustein `F_INT_TO_UINT` über dessen `REQ`‑Eingang.
 3. Der Wert von `AI_IN.D1` (INT) wird an `Convert.IN` weitergeleitet.

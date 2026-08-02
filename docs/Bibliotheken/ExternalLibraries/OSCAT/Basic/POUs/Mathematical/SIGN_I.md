@@ -1,7 +1,5 @@
 # SIGN_I
 
-
-
 this function return true if the integer input is negative
 
 ## Interface

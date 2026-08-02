@@ -1,7 +1,5 @@
 # AX2_BOOL_TO_X
 
-
-
 <img width="1186" height="196" alt="image" src="https://github.com/user-attachments/assets/ed299069-4248-4942-bdcb-3615f0044660" />
 
 * * * * * * * * * *
@@ -48,6 +46,7 @@ Der Funktionsblock fungiert als Brücke zwischen BOOL-Daten und dem AX2-Adapter.
 
 ## Zustandsübersicht
 Der Funktionsblock arbeitet zustandslos und leitet Ereignisse und Daten direkt zwischen den Schnittstellen weiter:
+
 - REQ → AX2_OUT.EO1
 - AX2_OUT.EI1 → CNF
 - OUT → AX2_OUT.DO1
@@ -61,6 +60,7 @@ Der Funktionsblock arbeitet zustandslos und leitet Ereignisse und Daten direkt z
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen Konvertierungsbausteinen bietet AX2_BOOL_TO_X:
+
 - Bidirektionale Funktionalität
 - Integrierte Adapter-Schnittstelle
 - Komplette Ereignisbehandlung

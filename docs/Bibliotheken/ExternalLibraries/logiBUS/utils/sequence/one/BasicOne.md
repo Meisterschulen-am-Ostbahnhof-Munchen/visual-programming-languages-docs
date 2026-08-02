@@ -1,6 +1,5 @@
 # BasicOne
 
-
 ![BasicOne](./BasicOne.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Keine.
 
 ## Funktionsweise
 Der Baustein durchläuft einen klar definierten Lebenszyklus:
+
 1. **Startzustand (START)**: Nach dem Hochlauf wartet der Baustein auf ein `INIT`-Ereignis.
 2. **Initialisierung (Init)**: Wird `INIT` mit `QI = TRUE` empfangen, führt der Baustein den Algorithmus *initialize* aus. Dabei wird `QO := QI` gesetzt (also `TRUE`). Anschließend wird `INITO` gesendet und der Baustein wechselt in den Zustand **Initialized**.
 3. **Normalbetrieb (NormalOp)**: Im Zustand **Initialized** kann durch ein `REQ`-Ereignis die normale Operation gestartet. Der Algorithmus *normalOperation* setzt `QO := QI` (immer noch `TRUE`) und überträgt – wenn `QI = TRUE` ist – den Wert von `DI1` nach `DO1`. Danach wird `CNF` gesendet und der Baustein kehrt automatisch nach **Initialized** zurück.

@@ -1,7 +1,5 @@
 # Übersicht Visuelle Programmiersprachen
 
-
-
 Visuelle Programmiersprachen (VPL) ermöglichen die Erstellung von Programmen durch die grafische Manipulation von Elementen anstatt durch das Schreiben von Text. In der Welt der Technik und Informatik gibt es sehr unterschiedliche Ansätze, die je nach Zielgruppe und Anwendungsfall variieren.
 
 ## 1. Erziehungsorientierte und allgemeine Sprachen
@@ -15,12 +13,14 @@ Diese Sprachen dienen oft als Einstieg in die Logik der Programmierung. Sie abst
 
 ## 2. Visuelle Modellierung in der Informatik
 Bevor Code geschrieben wird, nutzen Informatiker oft grafische Modelle, um Architekturen zu planen.
+
 *   **UML (Unified Modeling Language):** Ein Standard zur Visualisierung von Softwaresystemen. Klassendiagramme oder Zustandsdiagramme sind hierbei die bekanntesten Werkzeuge.
 
 ---
 
 ## 3. Ingenieurswissenschaftliche Sprachen (Datenfluss)
 In der Mess- und Regelungstechnik haben visuelle Sprachen eine dominierende Rolle, da sie den Fluss von Signalen und Daten intuitiv abbilden.
+
 *   **LabVIEW (National Instruments):** Eine mächtige Umgebung, in der "Virtuelle Instrumente" (VIs) durch das Verdrahten von Funktionsblöcken erstellt werden. Sie wird weltweit in Laboren und Prüfständen eingesetzt.
 
 ---

@@ -1,6 +1,5 @@
 # AL_D_FF_TMIN
 
-
 ![AL_D_FF_TMIN](./AL_D_FF_TMIN.svg)
 
 * * * * * * * * * *
@@ -35,6 +34,7 @@ Sobald ein Ereignis am Eingangs‑Adapter (I.E1) eintrifft, wird der gleichzeiti
 
 ## Zustandsübersicht
 Der Baustein besitzt keinen explizit dargestellten Zustandsautomaten. Sein Verhalten ergibt sich aus dem internen D‑Flip‑Flop mit Zeitsteuerung:
+
 - Nach erfolgreicher Initialisierung (INIT → INITO) wartet der Baustein auf ein Ereignis am Eingangs‑Adapter I.
 - Bei einem Ereignis wird der anliegende Datenwert gelatcht. Sofort danach wird geprüft, ob die seit dem letzten Ausgangsereignis vergangene Zeit bereits Tmin überschreitet.
   - Falls ja: Das Ausgangsereignis wird sofort erzeugt.

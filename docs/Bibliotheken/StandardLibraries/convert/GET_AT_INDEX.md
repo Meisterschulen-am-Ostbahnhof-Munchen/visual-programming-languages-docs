@@ -1,7 +1,5 @@
 # GET_AT_INDEX
 
-
-
 <img width="1341" height="212" alt="image" src="https://github.com/user-attachments/assets/05b8aa7e-9c77-4a15-8787-2bd7d986a846" />
 
 * * * * * * * * * *
@@ -48,6 +46,7 @@ Wenn ein `REQ`-Ereignis am Eingang des Funktionsblocks empfangen wird, liest der
 
 ## Zustandsübersicht
 Der `GET_AT_INDEX`-Funktionsblock ist im Wesentlichen zustandslos in Bezug auf die Datenhaltung. Seine Zustände beschränken sich auf den Ausführungszyklus:
+
 1.  **Bereit**: Wartet auf ein `REQ`-Ereignis.
 2.  **Ausführend**: Liest Eingänge, führt den Array-Zugriff durch und setzt Ausgänge.
 3.  **Abgeschlossen**: Löst das `CNF`-Ereignis aus und kehrt in den Zustand "Bereit" zurück.
@@ -61,6 +60,7 @@ Der `GET_AT_INDEX`-Funktionsblock ist im Wesentlichen zustandslos in Bezug auf d
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Der `GET_AT_INDEX`-Baustein ist ein spezialisierter Baustein für den Array-Zugriff. Er unterscheidet sich von:
+
 *   **`SET_AT_INDEX`**: Einem komplementären Baustein, der Werte an einer bestimmten Array-Position setzt, anstatt sie abzurufen.
 *   **Array-Iteratoren**: Bausteinen, die typischerweise das gesamte Array durchlaufen, anstatt nur ein einzelnes Element über einen direkten Index abzurufen.
 *   **Allgemeinen Datenmanipulationsbausteinen**: Die nicht speziell für Array-Zugriffe konzipiert sind, sondern allgemeinere Operationen (z.B. Addition, Vergleich) durchführen.

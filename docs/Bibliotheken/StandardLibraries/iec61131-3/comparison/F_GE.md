@@ -1,7 +1,5 @@
 # F_GE
 
-
-
 ![F_GE](https://user-images.githubusercontent.com/116869307/214144421-cde348ba-0c9a-4bc9-b41f-5db5d97218b0.png)
 
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_ge.html>
@@ -9,7 +7,6 @@
 * * * * * * * * * *
 
 ![F_GE](F_GE.svg)
-
 
 Folgender Text wurde erzeugt von <https://chat.deepseek.com/> am 05.02.2025 und noch nicht korrekturgelesen (HF)
 

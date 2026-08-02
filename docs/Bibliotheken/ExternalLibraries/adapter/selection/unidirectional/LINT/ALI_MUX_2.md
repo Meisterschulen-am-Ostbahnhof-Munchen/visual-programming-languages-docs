@@ -1,6 +1,5 @@
 # ALI_MUX_2
 
-
 ![ALI_MUX_2](./ALI_MUX_2.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Keine eigenständigen Datenausgänge; die Ausgabe erfolgt über den Adapter `OUT
 3. Falls `K = 0` ist, wird der aktuelle Wert des Adapters `IN1` auf den Ausgangsadapter `OUT` übertragen.
    Falls `K = 1` ist, wird der Wert von `IN2` auf `OUT` übertragen.
    Für andere Werte von `K` (z. B. >1) ist das Verhalten nicht definiert – der Baustein kann keine gültige Auswahl treffen.
+
 4. Nach erfolgreicher Übergabe wird ein Ereignis am Ausgang `CNF` gesendet.
 5. Der Baustein verharrt im Leerlauf bis zum nächsten `REQ`.
 

@@ -1,7 +1,5 @@
 # ST64X
 
-
-
 *(Kein Bild vorhanden, da dies ein Datentyp und kein Funktionsblock ist.)*
 
 * * * * * * * * * *

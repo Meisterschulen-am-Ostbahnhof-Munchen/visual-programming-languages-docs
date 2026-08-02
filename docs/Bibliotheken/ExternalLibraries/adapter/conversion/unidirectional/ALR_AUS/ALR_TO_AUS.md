@@ -1,6 +1,5 @@
 # ALR_TO_AUS
 
-
 ![ALR_TO_AUS](./ALR_TO_AUS.svg)
 
 * * * * * * * * * *
@@ -35,6 +34,7 @@ Da es sich um einen Composite-Baustein handelt, werden alle Ein- und Ausgänge �
 
 ## Funktionsweise
 Der Funktionsblock arbeitet ereignisgesteuert:
+
 1. Ein eingehendes Ereignis am Adapter-Eingang `ALR_IN.E1` wird intern mit dem **REQ**-Eingang des Konvertierungsbausteins `F_LREAL_TO_USINT` verbunden.
 2. Gleichzeitig wird der Datenwert `ALR_IN.D1` an den Daten-Eingang `IN` des Konvertierungsbausteins übergeben.
 3. Der Konverter führt die Umwandlung von LREAL nach USINT durch. Hierbei wird der Gleitkommawert gemäß IEC 61131‑3 auf den nächstliegenden ganzzahligen USINT-Wert (0–255) gerundet oder abgeschnitten.

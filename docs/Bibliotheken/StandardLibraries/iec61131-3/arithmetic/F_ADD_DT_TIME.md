@@ -1,13 +1,10 @@
 # F_ADD_DT_TIME
 
-
-
 ![Zeitadditionssymbol](https://github.com/user-attachments/assets/1fda9baa-1d7c-4fa6-8c87-608436deefa8)
 
 * * * * * * * * * *
 
 ![F_ADD_DT_TIME](F_ADD_DT_TIME.svg)
-
 
 ## Einführung
 Der **F_ADD_DT_TIME** ist ein spezialisierter Funktionsbaustein zur Addition von Zeitwerten zu Datums-/Zeitangaben, entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht präzise Zeitberechnungen mit DATE_AND_TIME und TIME-Datentypen.

@@ -1,11 +1,5 @@
 # Datentyp: UINT
 
-
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)

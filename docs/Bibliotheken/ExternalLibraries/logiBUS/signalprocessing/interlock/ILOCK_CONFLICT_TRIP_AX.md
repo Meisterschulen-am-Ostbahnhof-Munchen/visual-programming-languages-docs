@@ -1,6 +1,5 @@
 # ILOCK_CONFLICT_TRIP_AX
 
-
 ![ILOCK_CONFLICT_TRIP_AX](./ILOCK_CONFLICT_TRIP_AX.svg)
 
 * * * * * * * * * *
@@ -13,17 +12,20 @@ Der Funktionsblock `ILOCK_CONFLICT_TRIP_AX` realisiert eine Verriegelungslogik f
 
 ### **Ereignis-Ausgänge**
 Der FB besitzt keine direkten Ereignisausgänge. Zustandsänderungen werden über die Ereignisausgänge der Ausgangs-Adapter (Plugs) signalisiert:
+
 - **UP_OUT.E1**
 - **DOWN_OUT.E1**
 - **TRIP_OUT.E1**
 
 ### **Daten-Eingänge**
 Der FB besitzt keine direkten Dateneingänge. Die Eingangsdaten werden über die Adapter-Sockets bereitgestellt:
+
 - **UP_IN.D1** (BOOL) – Aktivierung der Aufwärts-Richtung.
 - **DOWN_IN.D1** (BOOL) – Aktivierung der Abwärts-Richtung.
 
 ### **Daten-Ausgänge**
 Der FB besitzt keine direkten Datenausgänge. Die Ausgangsdaten werden über die Adapter-Plugs bereitgestellt:
+
 - **UP_OUT.D1** (BOOL) – Signal für Aufwärts-Richtung.
 - **DOWN_OUT.D1** (BOOL) – Signal für Abwärts-Richtung.
 - **TRIP_OUT.D1** (BOOL) – Signal für Trip-Zustand.

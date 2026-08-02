@@ -1,6 +1,5 @@
 # ILOCK_FB_RS
 
-
 ![ILOCK_FB_RS](./ILOCK_FB_RS.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Der Funktionsblock `ILOCK_FB_RS` realisiert ein bistabiles Reset-dominantes RS-L
 | `ILOCK_OUT` | Plug     | bidirektional::AX2  | Sendet Signale an den nächsten Baustein der Kette (Ereignis EI1, Daten DI1) |
 
 Die Adapter vom Typ `AX2` stellen jeweils zwei logische Kanäle bereit:
+
 - Ereigniskanal: `EI1` (Eingang) / `EO1` (Ausgang)
 - Datenkanal: `DI1` (Eingang) / `DO1` (Ausgang)
 

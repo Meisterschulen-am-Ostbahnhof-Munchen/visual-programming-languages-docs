@@ -1,9 +1,6 @@
 # AX_RS
 
-
-
 <img width="1188" height="282" alt="image" src="https://github.com/user-attachments/assets/96fcd1e8-c68a-4b6e-a8f0-f615322d30e2" />
-
 
 ![AX_RS_ecc](./AX_RS_ecc.svg)
 
@@ -33,6 +30,7 @@ Keine direkten Daten-Ausgänge vorhanden
 
 ## Funktionsweise
 Der AX_RS Funktionsblock arbeitet als RS-Flip-Flop mit folgenden Eigenschaften:
+
 - Bei Eintreffen eines S-Ereignis (Set) wird der Ausgang Q auf TRUE gesetzt
 - Bei Eintreffen eines R-Ereignis (Reset) wird der Ausgang Q auf FALSE gesetzt
 - Der Zustand bleibt erhalten, bis ein gegenteiliges Ereignis eintrifft
@@ -69,16 +67,12 @@ Der Funktionsblock verfügt über drei Zustände im ECC:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Flip-Flop-Implementierungen:
+
 - Verwendet Adapter-basierte Kommunikation statt direkter Datenausgänge
 - Ereignisgesteuerte Zustandsänderungen
 - Einfache RS-Logik ohne zusätzliche Takt- oder Enable-Signale
 
 Vergleich mit [E_RS](../../../../../StandardLibraries/events/E_RS.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

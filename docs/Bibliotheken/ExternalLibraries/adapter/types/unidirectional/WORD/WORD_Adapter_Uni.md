@@ -1,5 +1,2 @@
 # Unidirectional WORD Adapter
 
-
-
-

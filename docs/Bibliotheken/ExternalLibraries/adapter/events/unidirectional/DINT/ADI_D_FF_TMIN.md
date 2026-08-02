@@ -1,6 +1,5 @@
 # ADI_D_FF_TMIN
 
-
 ![ADI_D_FF_TMIN](./ADI_D_FF_TMIN.svg)
 
 * * * * * * * * * *
@@ -52,6 +51,7 @@ Der FB nutzt intern den Baustein `iec61499::events::E_D_FF_ANY_TMIN`, der die ei
 
 ## Zustandsübersicht
 Der FB besitzt eine implizite Zustandslogik, die durch den internen `E_D_FF_ANY_TMIN` abgebildet wird:
+
 - **Idle:** Warten auf das erste gültige Ereignis an I.E1 nach der Initialisierung.
 - **Latched:** Ein Wert wurde übernommen; die Zeitmessung für Tmin läuft. Neue Ereignisse an I.E1 werden solange ignoriert, bis Tmin abgelaufen ist.
 - **Ready:** Tmin ist abgelaufen; der Baustein ist bereit für die nächste Übernahme.

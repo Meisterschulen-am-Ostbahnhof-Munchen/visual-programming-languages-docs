@@ -2,7 +2,6 @@
 
 ## Einleitung
 
-
 ![AI_SPLIT_6](./AI_SPLIT_6.svg)
 
 Der Funktionsblock **AI_SPLIT_6** dient als generischer Splitter, der einen analogen Eingangswert (AI) auf sechs identische Ausgänge verteilt. Er realisiert eine 1:6-Verteilung eines AI-Adapters, ohne dass Daten oder Ereignisse modifiziert werden. Der Baustein ist als generischer FB (GenericClassName: `GEN_AI_SPLIT`) definiert und arbeitet rein adapterbasiert.

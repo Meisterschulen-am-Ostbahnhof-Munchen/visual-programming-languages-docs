@@ -1,7 +1,5 @@
 # OR_10_BOOL
 
-
-
 <img width="1189" height="416" alt="image" src="https://github.com/user-attachments/assets/fcefab43-d591-4163-96ce-61260ebfac5d" />
 
 * * * * * * * * * *
@@ -39,6 +37,7 @@ Dieser Funktionsblock verfügt über keine Adapter-Schnittstellen.
 
 ## Funktionsweise
 Die Funktionsweise ist deterministisch und ereignisgesteuert:
+
 1.  Das Eintreffen des Ereignisses `REQ` startet die Ausführung.
 2.  Die aktuellen Werte aller zehn booleschen Eingänge (`IN1` bis `IN10`) werden ausgelesen.
 3.  Es wird die logische ODER-Verknüpfung `OUT = IN1 OR IN2 OR IN3 OR ... OR IN10` berechnet.

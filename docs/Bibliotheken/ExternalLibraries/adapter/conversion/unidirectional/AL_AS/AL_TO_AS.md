@@ -1,6 +1,5 @@
 # AL_TO_AS
 
-
 ![AL_TO_AS](./AL_TO_AS.svg)
 
 * * * * * * * * * *
@@ -29,6 +28,7 @@ Der Funktionsblock **AL_TO_AS** ist ein Composite-Baustein, der einen unidirekti
 
 ## Funktionsweise
 Der FB empfängt über den Socket `AL_IN` Ereignisse und LWORD-Daten. Intern wird ein Baustein vom Typ `F_LWORD_TO_SINT` (aus der IEC-61131-Bibliothek) verwendet, um die Eingangsdaten (LWORD) in den Ausgangsdatentyp SINT zu konvertieren. Die Ereignissteuerung erfolgt wie folgt:
+
 - Ein eingehendes Ereignis am Socket `AL_IN.E1` löst den Eingang `REQ` des internen Konvertierungsbausteins aus.
 - Nach erfolgreicher Konvertierung signalisiert der Ausgang `CNF` des Konverters ein Ereignis, das an den Plug `AS_OUT.E1` weitergegeben wird.
 - Gleichzeitig wird der konvertierte Datenwert vom Ausgang `OUT` des Konverters an den Datenausgang `AS_OUT.D1` übergeben.

@@ -1,8 +1,5 @@
 # I_RPTO
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -92,9 +89,6 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65091) für die
 | Diagnoseumfang | 64 Codes | 8 Codes | 128 Codes |
 | Reaktionszeit | <100ms | 200ms | 50ms |
 
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
@@ -109,6 +103,7 @@ Der I_RPTO-Baustein bietet zuverlässige Zapfwellensteuerung für moderne Landte
 - **Robust**: Integrierte Fehlererkennung und -diagnose
 
 Idealer Einsatz bei:
+
 - Traktoren mit anspruchsvollen Anbaugeräten
 - Präzisionslandwirtschaft
 - Energieeffizienten Antriebssystemen

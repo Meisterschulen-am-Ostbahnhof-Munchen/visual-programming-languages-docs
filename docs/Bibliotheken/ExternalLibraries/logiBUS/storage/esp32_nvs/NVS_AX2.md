@@ -1,6 +1,5 @@
 # NVS_AX2
 
-
 ![NVS_AX2](./NVS_AX2.svg)
 
 * * * * * * * * * *

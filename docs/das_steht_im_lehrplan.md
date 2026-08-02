@@ -7,7 +7,6 @@
 
 ---
 
-
 ## 🎯 Hauptbedeutung im Rahmenlehrplan 2025
 
 Visuelle Programmiersprachen (insbesondere die **IEC 61499** mit Funktionsbausteinen, Event-Execution-Control und Low-Code-Entwicklungsumgebungen wie **Eclipse 4diac**) sind das **zentrale didaktische und technische Hauptwerkzeug** im neuen Rahmenlehrplan 2025 für Land- und Baumaschinenmechatroniker.
@@ -40,7 +39,6 @@ Moderne Land- und Baumaschinen sind hochgradig vernetzte, dezentrale mechatronis
 | **Teil I – LE 2.6 (Autonome Systeme)** | **20 UE** | Analyse & Diagnose von visuellen Ablaufsteuerungen autonomer Maschinen |
 | **Teil II – LE 1.1 (Systemtechnik)** | **160 UStd.** | Grundlagen Steuerungstechnik, IEC 61499 Modellierung, Signalfluss & ECC |
 | **Teil II – LE 1.3 (Diagnosetechnik)** | **100 UStd.** | Messtechnische Signalverfolgung & Online-Monitoring grafischer Bausteine |
-
 
 ---
 

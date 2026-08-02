@@ -1,6 +1,5 @@
 # Q_ObjHideShow_AB
 
-
 ![Q_ObjHideShow_AB](./Q_ObjHideShow_AB.svg)
 
 * * * * * * * * * *

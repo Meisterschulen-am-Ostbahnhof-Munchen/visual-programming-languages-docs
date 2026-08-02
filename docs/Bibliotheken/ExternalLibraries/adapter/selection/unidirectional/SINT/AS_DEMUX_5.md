@@ -1,6 +1,5 @@
 # AS_DEMUX_5
 
-
 ![AS_DEMUX_5](./AS_DEMUX_5.svg)
 
 * * * * * * * * * *
@@ -48,12 +47,14 @@ Der FB besitzt keine direkten Datenausgänge. Die Ausgaben erfolgen über die Ad
 
 ## Funktionsweise
 Der FB arbeitet nach dem Demultiplex-Prinzip:  
+
 1. Ein gültiger Wert (z. B. ein analoges Signal) liegt am Socket **IN** an.  
 2. Über den Ereigniseingang **REQ** wird der am Dateneingang **K** angelegte Index (0 … 4) übernommen.  
 3. Der FB verbindet daraufhin den eingehenden Adapter **IN** mit dem entsprechenden Ausgangsadapter **OUTx** (x = K+1).  
 4. Nach erfolgreicher Umschaltung wird das Ereignis **CNF** ausgegeben, um den Vorgang zu bestätigen.
 
 Der Wert von **K** bestimmt den aktiven Kanal:  
+
 - K=0 → OUT1  
 - K=1 → OUT2  
 - …  
@@ -68,6 +69,7 @@ Werte außerhalb des zulässigen Bereichs werden ignoriert oder führen zu keine
 
 ## Zustandsübersicht
 Der FB besitzt keine explizite Zustandsmaschine (kein ECC im XML). Das Verhalten ist streng ereignisgesteuert:
+
 - **Idle**: Warten auf REQ.
 - **Processing**: Bei REQ wird K ausgewertet und die Adapter-Verbindung geschaltet.
 - **Done**: Nach Abschluss wird CNF gesendet, danach Rückkehr in Idle.

@@ -1,7 +1,5 @@
 # logiBUS_ID
 
-
-
 <img width="1903" height="313" alt="image" src="https://github.com/user-attachments/assets/52ce1d6d-0a92-42d7-8fd0-ce51ed902a2b" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der logiBUS_ID Funktionsblock dient als Bridge zwischen dem 4diac-System und log
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über folgende Betriebszustände:
+
 - Nicht initialisiert (vor INIT)
 - Initialisiert und bereit (nach erfolgreichem INITO)
 - Abfrage-Modus (bei REQ/CNF-Zyklus)
@@ -59,13 +58,11 @@ Der Funktionsblock verfügt über folgende Betriebszustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu standardmäßigen digitalen Eingangsblöcken bietet logiBUS_ID:
+
 - Spezifische logiBUS-Integration
 - Erweiterte Ereignisbehandlung
 - Konfigurierbare Parameter über STRING-Params
 - Asynchrone Ereignisindikation
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

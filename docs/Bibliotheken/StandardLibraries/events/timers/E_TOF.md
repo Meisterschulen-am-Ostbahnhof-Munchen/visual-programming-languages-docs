@@ -2,7 +2,6 @@
 
 # E_TOF
 
-
 ## 🎧 Podcast
 
 * [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssysteme?](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
@@ -68,9 +67,6 @@ Der E_TOF-Baustein kann in verschiedenen industriellen Steuerungsanwendungen ein
 - **Ventilsteuerung**: Der Baustein kann verwendet werden, um ein Ventil nach dem Schließen noch für eine bestimmte Zeit offen zu halten, um z.B. Druck abzulassen.
 
 ##
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

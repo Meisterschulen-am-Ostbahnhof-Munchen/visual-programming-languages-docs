@@ -1,7 +1,5 @@
 # SchieberColorStruct
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `SchieberColorStruct` ist eine strukturierte Datenstruktur, die zur Verwaltung von Farbwerten für verschiedene Zustände eines Schiebers (z. B. eines Ventils, einer Klappe oder eines Verschlusses) dient. Er definiert eine konsistente Farbkodierung für die visuelle Darstellung der Zustände `Unbekannt`, `Geschlossen`, `Öffnend`, `Geöffnet` und `Schließend` in einer Benutzeroberfläche oder Anzeige.

@@ -1,6 +1,5 @@
 # SPLIT_AD_INTO_AW
 
-
 ![SPLIT_AD_INTO_AW](./SPLIT_AD_INTO_AW.svg)
 
 * * * * * * * * * *
@@ -40,6 +39,7 @@ Der Funktionsblock **SPLIT_AD_INTO_AW** dient dazu, einen 32‑Bit‑DWORD‑Wer
 ### **Adapter**
 
 Die Adapter sind als **unidirectional** ausgelegt:
+
 - **AD** (Eingang): Über einen Socket bereitgestellt, enthält je einen Ereignis‑ (E1) und Daten‑ (D1) Kanal.
 - **AW** (Ausgang): Über zwei Plugs bereitgestellt, jeweils mit einem Ereignis‑ (E1) und Daten‑ (D1) Kanal.
 
@@ -60,6 +60,7 @@ Die Adapter sind als **unidirectional** ausgelegt:
 ## Zustandsübersicht
 
 Der Baustein besitzt keinen expliziten Zustandsautomaten. Das Verhalten ist rein ereignisgesteuert:
+
 - **Idle:** Warten auf ein Ereignis an **IN.E1**.
 - **Verarbeitung:** Bei Eintreffen von **IN.E1** wird die Aufteilung durchgeführt und die Flip‑Flops gesetzt.
 - **Ausgabe:** Die Ereignisse an den Ausgängen werden genau einmal nach der Verarbeitung ausgelöst.

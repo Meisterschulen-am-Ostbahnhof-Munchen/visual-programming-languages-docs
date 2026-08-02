@@ -1,6 +1,5 @@
 # AQ_D_FF
 
-
 ![AQ_D_FF](./AQ_D_FF.svg)
 
 * * * * * * * * * *

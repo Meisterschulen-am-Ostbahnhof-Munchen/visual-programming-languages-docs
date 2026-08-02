@@ -1,6 +1,5 @@
 # AS_TO_AX
 
-
 ![AS_TO_AX](./AS_TO_AX.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Der Funktionsblock **AS_TO_AX** ist ein Composite-Baustein, der einen SINT-Adapt
 
 ## Funktionsweise
 Der Baustein nutzt intern den Funktionsblock `iec61131::comparison::F_NE` (Ungleich-Prüfung).  
+
 - Wird ein Ereignis am Eingang `AS_IN.E1` empfangen, wird die Verarbeitung von `F_NE` gestartet (Eingang `REQ`).  
 - `F_NE` vergleicht den über `AS_IN.D1` erhaltenen SINT-Wert mit dem konstanten Parameter `IN2` (fest auf `SINT#0` gesetzt).  
 - Das Ergebnis des Vergleichs (`OUT`) – `TRUE` bei Ungleichheit, `FALSE` bei Gleichheit – wird an den Datenausgang `AX_OUT.D1` weitergeleitet.  
@@ -53,6 +53,7 @@ Der Baustein nutzt intern den Funktionsblock `iec61131::comparison::F_NE` (Ungle
 
 ## Zustandsübersicht
 Da es sich um einen Composite-Baustein ohne eigene Zustandsmaschine handelt, beschränkt sich das Verhalten auf den Daten- und Ereignisfluss gemäß der internen Verschaltung. Die Zustände ergeben sich aus dem verarbeitenden FB `F_NE`:  
+
 - **Idle**: Es liegt kein Ereignis an.  
 - **Processing**: Ein Ereignis wird verarbeitet (Vergleich läuft).  
 - **Completed**: Der Vergleich ist abgeschlossen, das Ergebnis steht am Ausgang an.

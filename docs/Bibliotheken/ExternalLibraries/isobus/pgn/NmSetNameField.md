@@ -1,9 +1,6 @@
 # NmSetNameField
 
-
-
 <img width="1070" height="248" alt="image" src="https://github.com/user-attachments/assets/f7752178-ab95-47c7-9972-b0f2c8b49ec3" />
-
 
 ![NmSetNameField](./NmSetNameField.svg)
 
@@ -38,6 +35,7 @@ Bei Auslösung des `REQ`-Ereignisses verarbeitet der Baustein das anliegende Byt
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt keinen persistenten internen Zustand. Er verhält sich wie eine reine Funktion:
+
 1.  **Warte- bzw. Idle-Zustand:** Block wartet auf das `REQ`-Ereignis.
 2.  **Verarbeitungszustand:** Bei `REQ` werden die Eingangsdaten verarbeitet und die Ausgangsstruktur berechnet. Dieser Zustand ist instantan (keine Verzögerung).
 3.  **Ausgabe:** Unmittelbar nach der Berechnung wird das `CNF`-Ereignis ausgelöst und die berechnete `NAMEFIELD_T`-Struktur ausgegeben. Der Block kehrt danach in den Wartezustand zurück.
@@ -50,9 +48,6 @@ Der Funktionsblock besitzt keinen persistenten internen Zustand. Er verhält sic
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenstück `NmGetIsoName`:** Ein hypothetischer komplementärer Baustein würde die umgekehrte Operation durchführen: Er nähme eine `NAMEFIELD_T`-Struktur als Eingabe und erzeugte daraus das entsprechende 8-Byte-`CF_NAME_T`-Array. `NmSetNameField` ist der Dekodierer, sein Gegenstück wäre der Kodierer.
 *   **Generische Byte-Parser:** Im Gegensatz zu generischen Byte-zu-Struktur-Konvertern ist dieser Block spezifisch auf das ISO-NAME-Format zugeschnitten und enthält die exakte Bitlogik der Norm. Die Verwendung dieses spezialisierten Blocks reduziert Fehler und erhöht die Wartbarkeit im ISOBUS-Kontext.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

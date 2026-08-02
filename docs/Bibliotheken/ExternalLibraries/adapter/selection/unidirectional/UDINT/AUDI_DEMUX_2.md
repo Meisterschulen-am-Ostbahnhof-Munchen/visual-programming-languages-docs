@@ -1,6 +1,5 @@
 # AUDI_DEMUX_2
 
-
 ![AUDI_DEMUX_2](./AUDI_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Keine.
 
 ## Funktionsweise
 Der Baustein wartet in einem Grundzustand auf das Ereignis `REQ`. Beim Eintreffen von `REQ` wird der aktuelle Wert des Daten‑Eingangs `K` ausgewertet:
+
 - **K = 0**: Der am Socket `IN` anliegende AUDI‑Wert wird an den Plug `OUT1` weitergeleitet.
 - **K = 1**: Der Wert wird an den Plug `OUT2` weitergeleitet.
 - **K > 1**: Das Verhalten ist undefiniert; die Weiterleitung erfolgt nicht oder an einen nicht spezifizierten Ausgang.
@@ -52,6 +52,7 @@ Nach erfolgreicher Weiterleitung wird das Ereignis `CNF` ausgegeben, und der Bau
 
 ## Zustandsübersicht
 Der Baustein besitzt implizit einen internen Zustandsautomaten:
+
 - **START**: Baustein ist initialisiert und bereit.
 - **Warte auf REQ**: Grundzustand.
 - **Verarbeite**: Nach Eintreffen von `REQ` wird die Weiterleitung durchgeführt; in dieser Phase wird kein weiteres `REQ` akzeptiert.

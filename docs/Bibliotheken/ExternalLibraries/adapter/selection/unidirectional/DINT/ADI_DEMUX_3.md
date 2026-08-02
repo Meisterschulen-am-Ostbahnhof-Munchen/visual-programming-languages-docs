@@ -1,6 +1,5 @@
 # ADI_DEMUX_3
 
-
 ![ADI_DEMUX_3](./ADI_DEMUX_3.svg)
 
 * * * * * * * * * *
@@ -40,6 +39,7 @@ Keine Daten-Ausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über die A
 
 ## Funktionsweise
 Der Baustein arbeitet als 1‑zu‑3‑Demultiplexer über die ADI‑Adapter:
+
 1. Der Wert am Socket **IN** wird permanent empfangen.
 2. Beim Eintreffen eines Ereignisses **REQ** wird der aktuelle Wert des Index **K** ausgewertet.
 3. Abhängig von **K** wird der eingehende ADI‑Wert an den entsprechenden Plug weitergegeben:

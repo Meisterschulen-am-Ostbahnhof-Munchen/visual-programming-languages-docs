@@ -1,7 +1,5 @@
 # Q_INTERLOCK_2
 
-
-
 <img width="1630" height="363" alt="image" src="https://github.com/user-attachments/assets/16e11ed5-78f8-4474-8bd7-0c1cc9311808" />
 
 * * * * * * * * * *
@@ -57,6 +55,7 @@ Die **Toggle-Funktion** wird durch die Ereignisse `CLK1` und `CLK2` realisiert. 
 
 ## Zustandsübersicht
 Der ECC besteht aus vier Zuständen:
+
 1.  **START**: Wartezustand, Ausgänge entsprechen dem letzten gespeicherten Wert.
 2.  **SET1**: Aktiver Zustand, in dem Algorithmus `SET1` ausgeführt wird.
 3.  **SET2**: Aktiver Zustand, in dem Algorithmus `SET2` ausgeführt wird.

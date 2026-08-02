@@ -1,7 +1,5 @@
 # CAN_MSG
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `CAN_MSG` ist eine strukturierte Typdefinition (Struct) zur Repräsentation eines klassischen CAN-Nachrichtenrahmens (ohne Transportprotokoll, TP). Er dient als Container für die wesentlichen Attribute einer CAN-Nachricht, einschließlich Priorität, Nutzdatenlänge und dem eigentlichen Datenpuffer. Dieser Typ ist für den Einsatz in Funktionsblöcken vorgesehen, die CAN-Kommunikation in einem IEC 61499-System implementieren.
@@ -26,6 +24,7 @@ Da es sich bei `CAN_MSG` um einen Datentyp und nicht um einen Funktionsblock han
 
 ## Funktionsweise
 Der `CAN_MSG`-Typ ist eine passive Datenstruktur. Er kapselt die für eine CAN-Nachricht relevanten Informationen:
+
 1.  **Priorität (`u8Priority`)**: Definiert die Arbitrierungspriorität auf dem CAN-Bus. Ein niedrigerer numerischer Wert entspricht einer höheren Priorität.
 2.  **Datenlänge (`u16DaSize`)**: Gibt die tatsächliche Anzahl der genutzten Bytes im Datenpuffer an (0 bis 8).
 3.  **Datenpuffer (`data`)**: Ein Array von 8 Bytes, das die Nutzdaten der Nachricht speichert. Nicht genutzte Bytes sind mit einem Standardwert initialisiert.
@@ -42,6 +41,7 @@ Diese Struktur kann als Eingabe- oder Ausgabedatentyp für Funktionsblöcke verw
 
 ## Anwendungsszenarien
 Der `CAN_MSG`-Typ ist grundlegend für:
+
 *   **CAN-Sender-FBs**: Ein FB, der einen `CAN_MSG`-Typ als Eingang erhält und dessen Inhalt als physikalischen CAN-Frame auf den Bus sendet.
 *   **CAN-Empfänger-FBs**: Ein FB, der empfangene CAN-Frames in eine Variable vom Typ `CAN_MSG` packt und an nachgelagerte Logik weiterreicht.
 *   **Nachrichten-Konstruktion**: FBs, die aus einzelnen Werten (z.B. aus Sensor-FBs) eine gültige `CAN_MSG`-Struktur für die spätere Übertragung aufbauen.

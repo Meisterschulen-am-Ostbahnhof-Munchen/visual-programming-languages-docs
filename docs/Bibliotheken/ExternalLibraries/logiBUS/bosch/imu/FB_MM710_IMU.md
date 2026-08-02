@@ -1,6 +1,5 @@
 # FB_MM710_IMU
 
-
 ![FB_MM710_IMU](./FB_MM710_IMU.svg)
 
 * * * * * * * * * *
@@ -73,6 +72,7 @@ Die Signal‑Status (eStatus*) ermöglichen eine Einzelfehleranalyse für jede A
 
 ## Zustandsübersicht
 Der Baustein durchläuft folgende Zustände (nicht explizit als ECC, aber aus dem Verhalten ableitbar):
+
 1. **Inaktiv** – Nach dem Start, wartet auf INIT.
 2. **Initialisieren** – Nach INIT‑Ereignis; Aufbau der CAN‑Kommunikation.
 3. **Bereit** – Nach erfolgreichem INITO; auf REQ wartend.

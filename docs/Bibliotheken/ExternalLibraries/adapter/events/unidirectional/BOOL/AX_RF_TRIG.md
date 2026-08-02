@@ -1,6 +1,5 @@
 # AX_RF_TRIG
 
-
 ![AX_RF_TRIG](./AX_RF_TRIG.svg)
 
 * * * * * * * * * *
@@ -45,6 +44,7 @@ Ohne Flankenänderung werden keine Ausgangsereignisse gesendet.
 
 ## Zustandsübersicht
 Der Baustein besitzt keine explizit dargestellte Zustandsmaschine. Das Verhalten entspricht dem des internen **E_RF_TRIG**, der einen impliziten Zustand (letzter Wert) speichert. Im Wesentlichen lassen sich zwei Phasen unterscheiden:
+
 1. **Warten auf steigende Flanke:** der letzte Wert war *false*; bei *true* wird ER ausgelöst.
 2. **Warten auf fallende Flanke:** der letzte Wert war *true*; bei *false* wird EF ausgelöst.
 

@@ -1,7 +1,5 @@
 # OR_7_BOOL
 
-
-
 <img width="1370" height="397" alt="image" src="https://github.com/user-attachments/assets/2570e3d4-32b7-4284-a7b2-d4cf9e42d644" />
 
 * * * * * * * * * *
@@ -48,6 +46,7 @@ Das bedeutet, der Ausgang `OUT` ist `TRUE` (1), wenn mindestens einer der sieben
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten ist rein kombinatorisch und ereignisgesteuert:
+
 1.  **Ruhezustand:** Wartet auf das Ereignis `REQ`.
 2.  **Berechnungszustand:** Bei `REQ` werden die Eingänge gelesen und die ODER-Operation durchgeführt.
 3.  **Ausgabezustand:** Das Ergebnis wird an `OUT` ausgegeben und das Ereignis `CNF` wird generiert. Anschließend kehrt der Baustein in den Ruhezustand zurück.

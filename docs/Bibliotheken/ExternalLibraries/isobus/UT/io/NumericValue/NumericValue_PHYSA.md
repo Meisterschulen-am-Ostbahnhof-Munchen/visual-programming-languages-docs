@@ -1,6 +1,5 @@
 # NumericValue_PHYSA
 
-
 ![NumericValue_PHYSA](./NumericValue_PHYSA.svg)
 
 * * * * * * * * * *

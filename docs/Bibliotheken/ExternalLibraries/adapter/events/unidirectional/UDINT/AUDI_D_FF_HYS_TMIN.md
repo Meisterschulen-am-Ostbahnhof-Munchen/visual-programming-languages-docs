@@ -2,7 +2,6 @@
 
 Kein Bild vorhanden
 
-
 ![AUDI_D_FF_HYS_TMIN](./AUDI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *

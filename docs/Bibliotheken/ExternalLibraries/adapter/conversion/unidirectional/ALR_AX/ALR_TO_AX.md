@@ -1,6 +1,5 @@
 # ALR_TO_AX
 
-
 ![ALR_TO_AX](./ALR_TO_AX.svg)
 
 * * * * * * * * * *
@@ -37,6 +36,7 @@ Der gesamte Ablauf erfolgt innerhalb eines einzigen Zyklus, da es sich um einen 
 
 ## Zustandsübersicht
 Der Baustein besitzt keinen expliziten Zustandsautomaten. Seine Logik ist rein kombinatorisch und ereignisgesteuert:  
+
 1. Warten auf Ereignis an **ALR_IN.E1**.  
 2. Datenverarbeitung (Vergleich mit 0.0).  
 3. Ausgabe des BOOL-Ergebnisses an **AX_OUT.D1** und Senden des Bestätigungsereignisses an **AX_OUT.E1**.

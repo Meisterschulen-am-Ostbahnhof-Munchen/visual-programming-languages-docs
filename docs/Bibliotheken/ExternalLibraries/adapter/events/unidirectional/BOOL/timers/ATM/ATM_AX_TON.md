@@ -1,6 +1,5 @@
 # ATM_AX_TON
 
-
 ![ATM_AX_TON](./ATM_AX_TON.svg)
 
 * * * * * * * * * *

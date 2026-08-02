@@ -1,6 +1,5 @@
 # AD_D_FF
 
-
 ![AD_D_FF](./AD_D_FF.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Der FB verwendet intern den elementaren Baustein `E_D_FF_ANY` (aus der IEC‑614
 2. Der Ausgang `Q` bleibt so lange unverändert, bis ein neues Taktereignis eintrifft.
 
 Die Verschaltung im FBNetzwerk:
+
 - Das Ereignis `I.E1` wird mit `CLK` verbunden.
 - Das Datum `I.D1` wird mit `D` verbunden.
 - Der Ereignisausgang `EO` des internen Bausteins wird an `Q.E1` weitergeleitet.

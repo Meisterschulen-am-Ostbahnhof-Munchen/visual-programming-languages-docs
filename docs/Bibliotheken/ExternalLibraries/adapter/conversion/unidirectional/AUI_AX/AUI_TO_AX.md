@@ -1,6 +1,5 @@
 # AUI_TO_AX
 
-
 ![AUI_TO_AX](./AUI_TO_AX.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Der Baustein enthält intern eine Instanz des Vergleichsbausteins *iec61131::com
 5. Das BOOL-Ergebnis wird gleichzeitig über die Datenverbindung an **AX_OUT.D1** übergeben.
 
 Somit gilt:  
+
 - AUI_IN.D1 = 0 → AX_OUT.D1 = FALSE  
 - AUI_IN.D1 ≠ 0 → AX_OUT.D1 = TRUE
 

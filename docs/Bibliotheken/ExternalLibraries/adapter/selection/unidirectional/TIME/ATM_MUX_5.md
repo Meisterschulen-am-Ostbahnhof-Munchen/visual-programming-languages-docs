@@ -1,6 +1,5 @@
 # ATM_MUX_5
 
-
 ![ATM_MUX_5](./ATM_MUX_5.svg)
 
 * * * * * * * * * *
@@ -53,6 +52,7 @@ Keine Datenausgänge vorhanden. Die Ausgabe erfolgt ausschließlich über den Ad
 
 ## Zustandsübersicht
 Der FB besitzt keinen expliziten Zustandsautomaten. Er arbeitet als reaktiver Baustein:
+
 - **Ruhezustand**: Es liegt kein Ereignis an `REQ` an. Der zuletzt gewählte Eingang bleibt aktiv.
 - **Umschaltphase**: Nach Eintreffen von `REQ` wird der neue Index übernommen und `CNF` ausgegeben.
 

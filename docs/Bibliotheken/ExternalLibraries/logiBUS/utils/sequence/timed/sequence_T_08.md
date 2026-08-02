@@ -1,9 +1,6 @@
 # sequence_T_08
 
-
-
 <img width="1169" height="403" alt="image" src="https://github.com/user-attachments/assets/fc79f7bd-8f7c-4df6-891f-b05cfce0f952" />
-
 
 ![sequence_T_08_ecc](./sequence_T_08_ecc.svg)
 
@@ -34,6 +31,7 @@ Der Funktionsblock `sequence_T_08` ist ein zeitgesteuerter Sequenzer mit acht Au
 
 ## Funktionsweise
 Der FB arbeitet als Basic Function Block (BFB) mit einer definierten Execution Control Chart (ECC). Die Sequenz durchläuft die Zustände `State_01` bis `State_08` in fester Reihenfolge. Jeder aktive Zustand führt drei wesentliche Aktionen aus:
+
 1.  **Exit-Aktion des vorherigen Zustands**: Deaktiviert den zugehörigen Ausgang (Algorithmus `State_XX_X`).
 2.  **Confirmation-Aktion**: Setzt die Zustandsnummer `STATE_NR` und übergibt die für diesen Zustand konfigurierte Zeitdauer an den Timer-Adapter (Algorithmus `State_XX_C`). Löst das `CNF`-Ereignis aus.
 3.  **Entry-Aktion**: Aktiviert den zugehörigen Ausgang (Algorithmus `State_XX_E`). Löst das entsprechende `EO_Sx`-Ereignis aus. Startet den Timer.
@@ -48,6 +46,7 @@ Der Übergang zum nächsten Zustand erfolgt ausschließlich, wenn der Timer abge
 
 ## Zustandsübersicht
 Die ECC umfasst folgende Zustände:
+
 *   **xSTART / sState_00**: Inaktiver Start- und Endzustand. `STATE_NR = 0`, alle Ausgänge sind `FALSE`.
 *   **sState_01 bis sState_08**: Die acht aktiven Sequenzzustände. `STATE_NR = 1` bis `8`. Der entsprechende Ausgang `DO_Sx` ist `TRUE`.
 *   **sRESET**: Interner Reset-Zustand. Deaktiviert alle Ausgänge und führt zurück zu `sState_00`.

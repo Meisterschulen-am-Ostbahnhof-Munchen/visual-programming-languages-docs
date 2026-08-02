@@ -1,6 +1,5 @@
 # AUI_DEMUX_2
 
-
 ![AUI_DEMUX_2](./AUI_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -41,6 +40,7 @@ Keine Datenausgänge vorhanden.
 
 ## Funktionsweise
 Bei Anliegen eines Ereignisses am Eingang `REQ` wird der Wert des Dateneingangs `K` ausgewertet:
+
 - Ist `K = 1`, werden die Daten des Adaptereingangs `IN` auf den Adapterausgang `OUT1` weitergeleitet.
 - Ist `K = 2`, erfolgt die Weiterleitung auf `OUT2`.
 - Für andere Werte von `K` findet keine Weiterleitung statt.

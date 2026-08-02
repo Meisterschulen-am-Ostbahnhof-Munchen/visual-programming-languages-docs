@@ -1,6 +1,5 @@
 # GetVtcStatus
 
-
 ![GetVtcStatus](./GetVtcStatus.svg)
 
 * * * * * * * * * *
@@ -52,6 +51,7 @@ Keine Adapter vorhanden.
 
 2. **Auslesen einer Statusinformation**  
    Mit dem Ereignis `REQ` wird eine konkrete Abfrage gestartet. Dabei muss über `eVTInfo` der gewünschte Statuswert aus der Enumeration `ISOVT_STATUS_e` ausgewählt werden (siehe Liste in den technischen Besonderheiten). Der Baustein ruft intern die Funktion `IsoVtcGetStatusInfo()` auf und sendet nach Abschluss das Ereignis `CNF`. Die Ausgänge enthalten:
+
    - `QO` = TRUE bei erfolgreichem Lesevorgang,
    - `STATUS` = Beschreibung des Ergebnisses,
    - `wValue` = der ausgelesene Zahlenwert.

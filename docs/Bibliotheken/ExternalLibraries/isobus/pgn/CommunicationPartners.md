@@ -1,8 +1,5 @@
 # CommunicationPartners
 
-
-
-
 ![CommunicationPartners](./CommunicationPartners.svg)
 
 * * * * * * * * * *

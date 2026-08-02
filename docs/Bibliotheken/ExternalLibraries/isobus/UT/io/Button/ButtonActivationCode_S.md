@@ -1,7 +1,5 @@
 # ButtonActivationCode_S
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Datentyp `ButtonActivationCode_S` ist eine strukturierte Datenstruktur (Struct), die zur Konfiguration der Aktivierung eines Tasters (Buttons) in einem Steuerungssystem verwendet wird. Er definiert einen Aktivierungscode und ein Steuerungsflag für die Wiederholungslogik. Dieser Datentyp ist Teil des Pakets `isobus::UT::io::Button`.
@@ -25,6 +23,7 @@ Die folgenden Felder bilden die interne Struktur des Datentyps `ButtonActivation
 
 ## Funktionsweise
 Die Struktur `ButtonActivationCode_S` dient als Container für Konfigurationsdaten.
+
 *   Das Feld `code` identifiziert den Taster eindeutig innerhalb des Systems. Der Standardwert 255 kann als inaktiver oder undefinierter Zustand interpretiert werden.
 *   Das Feld `bCyclic` bestimmt das Zeitverhalten bei einer dauerhaften Betätigung des Tasters. Bei `TRUE` (Standard) wird das zugehörige Ereignis in einem festen Intervall (z.B. alle 200 ms) wiederholt ausgelöst. Bei `FALSE` wird das Ereignis nur einmalig beim Drücken (und ggf. beim Loslassen) ausgelöst, auch wenn der Taster gedrückt gehalten wird.
 
@@ -38,6 +37,7 @@ Die Struktur `ButtonActivationCode_S` dient als Container für Konfigurationsdat
 
 ## Anwendungsszenarien
 Dieser Struct wird typischerweise als Eingangs- oder Konfigurationsparameter für Funktionsblöcke verwendet, die Tastereingänge verarbeiten, z.B.:
+
 *   In einer Bedienoberfläche (HMI) zur Konfiguration von Softkeys.
 *   In Maschinensteuerungen zur Parametrierung von physischen Steuertastern.
 *   Überall dort, wo zwischen einmaliger und wiederholter Aktion bei Tastendruck unterschieden werden muss.

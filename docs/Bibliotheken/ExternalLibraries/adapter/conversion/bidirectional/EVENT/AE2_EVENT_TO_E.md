@@ -1,7 +1,5 @@
 # AE2_EVENT_TO_E
 
-
-
 <img width="1172" height="190" alt="image" src="https://github.com/user-attachments/assets/5d62029b-f8de-45fd-a75c-34b753c1edc3" />
 
 * * * * * * * * * *
@@ -39,6 +37,7 @@ Der Funktionsblock leitet eingehende REQ-Ereignisse direkt an den AE2_OUT-Adapte
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über einen einfachen Zustandsautomaten:
+
 1. **Idle-Zustand**: Wartet auf REQ-Ereignis
 2. **Request-Zustand**: Nach REQ-Eingabe, Sendung an AE2_OUT.EO1
 3. **Confirmation-Zustand**: Nach Empfang von AE2_OUT.EI1, Ausgabe von CNF

@@ -1,7 +1,5 @@
 # DataPanel_MI_AI_S
 
-
-
 DataPanel Modules with medium IO density AI Struct
 
 ## Structure

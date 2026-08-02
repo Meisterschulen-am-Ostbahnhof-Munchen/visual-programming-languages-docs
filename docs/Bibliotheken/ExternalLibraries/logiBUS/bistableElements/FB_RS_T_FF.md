@@ -1,6 +1,5 @@
 # FB_RS_T_FF
 
-
 ![FB_RS_T_FF](./FB_RS_T_FF.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Der Funktionsblock besitzt keine Adapter-Schnittstellen.
 
 ## Funktionsweise
 Bei jedem Ereignis `REQ` wird der Algorithmus abgearbeitet:
+
 - **Reset dominant**: Falls `R1 = TRUE`, wird `Q1` sofort auf `FALSE` gesetzt – unabhängig von allen anderen Eingängen.
 - **Set**: Falls `R1 = FALSE` und `S = TRUE`, wird `Q1` auf `TRUE` gesetzt.
 - **Toggle**: Falls weder Reset noch Set aktiv sind (`R1 = FALSE`, `S = FALSE`), wird der Toggle-Mechanismus ausgelöst: Wenn `CLK` den Wert `TRUE` annimmt und eine steigende Flanke erkannt wird (d.h. `CLK` war beim vorherigen Aufruf `FALSE`, gespeichert in der internen Variable `EDGE`), dann wird `Q1` invertiert (`Q1 := NOT Q1`).

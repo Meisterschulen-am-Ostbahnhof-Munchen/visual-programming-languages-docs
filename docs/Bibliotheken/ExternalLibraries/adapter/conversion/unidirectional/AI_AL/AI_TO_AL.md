@@ -1,6 +1,5 @@
 # AI_TO_AL
 
-
 ![AI_TO_AL](./AI_TO_AL.svg)
 
 * * * * * * * * * *
@@ -37,10 +36,12 @@ Keine eigenständigen Daten-Ausgänge am Baustein. Der konvertierte LWORD-Wert w
 4. Dieses Ereignis wird an den Adapter `AL_OUT` als Ereignis `E1` weitergeleitet und gibt gleichzeitig den konvertierten LWORD-Wert über `D1` aus.
 
 Die Datenpfade lauten:
+
 - `AI_IN.D1` → `Convert.IN`
 - `Convert.OUT` → `AL_OUT.D1`
 
 Die Ereignispfade lauten:
+
 - `AI_IN.E1` → `Convert.REQ`
 - `Convert.CNF` → `AL_OUT.E1`
 

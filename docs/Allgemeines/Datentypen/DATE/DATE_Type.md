@@ -1,9 +1,5 @@
 # Datentyp: DATE
 
-
-
-
-
 ## 🎧 Podcast
 
 * [Datenkommunikation in der Automatisierung: Die Geheimnisse der IEC 61499 Datentypen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Datenkommunikation-in-der-Automatisierung-Die-Geheimnisse-der-IEC-61499-Datentypen-e3672lj)

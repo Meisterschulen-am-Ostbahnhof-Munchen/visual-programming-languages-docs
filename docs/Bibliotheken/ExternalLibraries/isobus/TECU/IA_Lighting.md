@@ -1,6 +1,5 @@
 # IA_Lighting
 
-
 ![IA_Lighting](./IA_Lighting.svg)
 
 * * * * * * * * * *

@@ -1,6 +1,5 @@
 # AUI_UDINT_LE
 
-
 ![AUI_UDINT_LE](./AUI_UDINT_LE.svg)
 
 * * * * * * * * * *
@@ -36,6 +35,7 @@ Der Baustein besitzt keine direkten Datenausgänge. Das Vergleichsergebnis wird 
 
 ## Funktionsweise
 Der Baustein realisiert die Funktion `IN1 ≤ IN2`. Interne Verarbeitung:
+
 - Der Ereigniseingang `REQ` oder das eingehende Ereignis `IN1.E1` (über den Socket-Adapter) triggern den internen Funktionsblock `F_LE` (IEC 61131-3 Vergleich `LE`).
 - Die Datenwerte `IN1` (über Adapter) und `IN2` (direkt) werden dem internen Baustein zugeführt.
 - Das Ergebnis (BOOL) wird über den Ausgangsadapter `OUT` ausgegeben, sobald der interne Baustein seine Berechnung abgeschlossen hat (`F_LE.CNF` → `OUT.E1`).

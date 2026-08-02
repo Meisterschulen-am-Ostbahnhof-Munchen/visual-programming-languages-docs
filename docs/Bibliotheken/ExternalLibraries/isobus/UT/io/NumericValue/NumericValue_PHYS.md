@@ -2,7 +2,6 @@
 
 (Bild nicht vorhanden)
 
-
 ![NumericValue_PHYS](./NumericValue_PHYS.svg)
 
 * * * * * * * * * *

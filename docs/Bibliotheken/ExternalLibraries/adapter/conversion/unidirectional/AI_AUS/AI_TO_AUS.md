@@ -1,6 +1,5 @@
 # AI_TO_AUS
 
-
 ![AI_TO_AUS](./AI_TO_AUS.svg)
 
 *Bild des Funktionsblocks – nicht in der XML enthalten, daher kein automatisch generiertes Bild vorhanden.*
@@ -31,6 +30,7 @@ Der Baustein besitzt keine eigenen separaten Ereignis- oder Datenports, sondern 
 - **`AI_IN`** (Socket)  
   Typ: `adapter::types::unidirectional::AI`  
   Beschreibung: Nimmt einen `INT`-Wert und ein zugehöriges Ereignis auf.
+
 - **`AUS_OUT`** (Plug)  
   Typ: `adapter::types::unidirectional::AUS`  
   Beschreibung: Gibt den konvertierten `USINT`-Wert mit einem Ereignis aus.

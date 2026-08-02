@@ -1,7 +1,5 @@
 # AW_WORD_TO_W
 
-
-
 ## Einleitung
 Der AW_WORD_TO_W Funktionsblock ist ein Composite-Funktionsblock, der zur Konvertierung eines WORD-Werts in das AW-Adapterformat dient.
 

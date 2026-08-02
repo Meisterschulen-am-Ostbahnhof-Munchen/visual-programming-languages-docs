@@ -1,6 +1,5 @@
 # ALI_SPLIT_9
 
-
 ![ALI_SPLIT_9](./ALI_SPLIT_9.svg)
 
 * * * * * * * * * *

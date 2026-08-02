@@ -1,7 +1,5 @@
 # Q_ChildLocation
 
-
-
 ![Q_ChildLocation](https://user-images.githubusercontent.com/116869307/214147140-820ec964-b57a-499c-9e0d-1811b56a585c.png)
 
 * * * * * * * * * *
@@ -94,6 +92,7 @@ Der Q_ChildLocation-Baustein bietet die Referenzimplementierung für relative Po
 - **Standardkonform**: Volle ISO 11783-6 Kompatibilität
 
 Idealer Einsatz bei:
+
 - Dynamischen Oberflächen
 - Animierten Übergängen
 - Parent-Child-Objektbeziehungen

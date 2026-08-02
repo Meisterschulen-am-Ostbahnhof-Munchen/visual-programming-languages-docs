@@ -2,8 +2,6 @@
 
 # AUDI (UDINT)
 
-
-
 unidirectional Adapter Interface for 1 Event and 1 Udint
 
 ## Interface
@@ -19,10 +17,6 @@ unidirectional Adapter Interface for 1 Event and 1 Udint
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | D1 | UDINT | Indication (or Request) Data from Plug |
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -2,8 +2,6 @@
 
 # CTRL_PID
 
-
-
 FT_PI is a PI controller with manual functionality.
 
 version 2.0	30. jun. 2008
@@ -54,8 +52,6 @@ the output flags lim will signal that the output limits are active.
 | Y | REAL | Output |
 | DIFF | REAL | Difference |
 | LIM | BOOL | Limit Reached |
-
-
 
 ## 🛠️ Zugehörige Übungen
 

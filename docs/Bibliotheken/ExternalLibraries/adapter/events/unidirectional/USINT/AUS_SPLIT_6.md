@@ -1,6 +1,5 @@
 # AUS_SPLIT_6
 
-
 ![AUS_SPLIT_6](./AUS_SPLIT_6.svg)
 
 * * * * * * * * * *

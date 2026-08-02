@@ -1,7 +1,5 @@
 # AX_MUX_3
 
-
-
 <img width="1205" height="246" alt="image" src="https://github.com/user-attachments/assets/24731b76-9e70-4627-9c7d-a57b754d23f9" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Der AX_MUX_3 ist ein generischer Multiplexer-Funktionsblock, der drei Eingangssi
 
 ## Funktionsweise
 Der AX_MUX_3 arbeitet als 3:1-Multiplexer. Bei Empfang eines REQ-Ereignisses wird der Indexwert K ausgewertet und entsprechend einer der drei Eingänge (IN1, IN2 oder IN3) mit dem Ausgang OUT verbunden:
+
 - K=0: Verbindung IN1 → OUT
 - K=1: Verbindung IN2 → OUT
 - K=2: Verbindung IN3 → OUT
@@ -58,11 +57,6 @@ Nach erfolgreicher Umschaltung wird ein CNF-Ereignis ausgegeben.
 Im Vergleich zu einfacheren Multiplexern bietet AX_MUX_3 drei Eingänge statt der üblichen zwei und verwendet Adapter-basierte Schnittstellen für eine standardisierte Signalübertragung. Die unidirektionale AX-Adapter-Schnittstelle gewährleistet eine klare Signalflussrichtung.
 
 Vergleich mit [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_3.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

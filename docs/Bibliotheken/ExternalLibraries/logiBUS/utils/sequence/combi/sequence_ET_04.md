@@ -1,9 +1,6 @@
 # sequence_ET_04
 
-
-
 <img width="1642" height="359" alt="image" src="https://github.com/user-attachments/assets/832ed670-45d8-4465-b06b-c83d8d079f10" />
-
 
 ![sequence_ET_04_ecc](./sequence_ET_04_ecc.svg)
 
@@ -50,6 +47,7 @@ Der Funktionsblock `sequence_ET_04` ist ein Sequenzer mit vier Ausgabezuständen
 Der Baustein implementiert einen endlichen Automaten (ECC) mit den Zuständen `START`, `State_01` bis `State_04`, `State_00` und `RESET`. Der Zyklus beginnt im Zustand `START`. Ein `START_S1`-Ereignis startet die Sequenz und wechselt in `State_01`.
 
 In jedem aktiven Zustand (State_01 bis State_04) werden folgende Aktionen ausgeführt:
+
 1.  Der interne Timer (`timeOut`) wird gestoppt.
 2.  Der Ausgang des vorherigen Zustands wird deaktiviert (Exit-Algorithmus `State_XX_X`).
 3.  Die Bestätigung `CNF` mit der neuen Zustandsnummer wird gesendet und die Zeit für den nächsten möglichen automatischen Übergang wird an den Timer übergeben (Confirmation-Algorithmus `State_XX_C`).
@@ -57,6 +55,7 @@ In jedem aktiven Zustand (State_01 bis State_04) werden folgende Aktionen ausgef
 5.  Der interne Timer mit der für diesen Zustand konfigurierten Zeit (`DT_...`) wird gestartet.
 
 Ein Zustandswechsel kann auf zwei Arten erfolgen:
+
 *   **Ereignisgesteuert**: Durch das entsprechende Eingangsereignis (z.B. `S1_S2`).
 *   **Zeitgesteuert**: Durch ein `TimeOut`-Ereignis des Adapters, sofern die Zeit `DT_...` nicht auf `NO_TIME` gesetzt ist.
 
@@ -85,11 +84,6 @@ Nach `State_04` wechselt der Baustein in den Zustand `State_00` (von wo aus die 
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu einfachen Timer-Bausteinen (`TON`) oder reinen Zustandsmaschinen (`E_SR`) kombiniert `sequence_ET_04` beides in einem spezialisierten Baustein. Er bietet eine vordefinierte, vierstufige Struktur mit dedizierten Ausgängen für jeden Schritt, was die Programmierung im Vergleich zur manuellen Verknüpfung mehrerer Einzelbausteine vereinfacht und übersichtlicher macht. Bausteine wie `E_CYCLE` bieten zyklische Ereignisauslösung, aber keine individuellen, zustandsabhängigen Datenausgänge oder hybride Trigger.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

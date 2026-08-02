@@ -1,7 +1,5 @@
 # E_N_TABLE
 
-
-
 <img width="1139" height="202" alt="E_N_TABLE" src="https://user-images.githubusercontent.com/113907528/204900000-9780540c-1565-4ef7-8669-5ff19940274e.png">
 
 * * * * * * * * * *
@@ -53,11 +51,6 @@ Der `E_N_TABLE` (Event N-Table) ist ein Funktionsbaustein nach IEC 61499, der ei
 - **Steuerung von Schrittketten**: Jeder Ausgang (`EO0`, `EO1`, ...) kann einen nachfolgenden Schritt in einer Prozesskette anstoßen.
 - **Komplexe Ansteuerung**: Ansteuern verschiedener Aktoren in einer genau definierten zeitlichen Abfolge (z.B. Ventile in einem Spülprozess).
 - **Testautomatisierung**: Generieren einer komplexen, zeitlich definierten Stimulus-Sequenz für ein Testobjekt.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

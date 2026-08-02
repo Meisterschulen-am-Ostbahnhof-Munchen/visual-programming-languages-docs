@@ -1,6 +1,5 @@
 # AIS_MUX_2
 
-
 ![AIS_MUX_2](./AIS_MUX_2.svg)
 
 * * * * * * * * * *
@@ -40,6 +39,7 @@ Keine Daten-Ausgänge vorhanden. Die Weiterleitung der Adaptersignale erfolgt ü
 
 ## Funktionsweise
 Der Baustein arbeitet als einfacher 2‑zu‑1‑Multiplexer auf Adapterebene. Sobald das Ereignis `REQ` eintritt, wird der Wert von `K` ausgewertet:
+
 - Ist `K = 0`, werden die Signale des Adapters `IN1` auf den Ausgangsadapter `OUT` gelegt.
 - Ist `K = 1`, werden die Signale von `IN2` auf `OUT` gelegt.
 Nach erfolgreicher Umschaltung wird das Ereignis `CNF` ausgegeben.

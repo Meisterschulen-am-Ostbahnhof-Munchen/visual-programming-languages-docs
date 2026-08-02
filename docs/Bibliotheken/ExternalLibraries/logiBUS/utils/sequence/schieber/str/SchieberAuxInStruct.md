@@ -1,7 +1,5 @@
 # SchieberAuxInStruct
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der strukturierte Datentyp `SchieberAuxInStruct` dient der Bündelung von Informationen zur visuellen Darstellung eines Hilfselements (AUX) in einer Schieber-Steuerung. Er kombiniert die Angabe eines Bildes mit einer Hintergrundfarbe, um die grafische Repräsentation eines Hilfseingangs oder -elements zu definieren.
@@ -36,6 +34,7 @@ Als reiner Datentyp besitzt `SchieberAuxInStruct` keinen internen Zustand oder Z
 
 ## Anwendungsszenarien
 Dieser Datentyp wird typischerweise in SPS-Steuerungen (speicherprogrammierbare Steuerungen) für mobile Arbeitsmaschinen verwendet, insbesondere in:
+
 *   **HMI-Konfiguration:** Zur Definition des Erscheinungsbildes von Bedien- oder Anzeigeelementen (z.B. Schieber, Taster, Statusleuchten) auf einem Bedienpanel.
 *   **Sequenzsteuerungen:** Innerhalb von Ablaufsteuerungen, bei denen sich die Darstellung eines Elements (Farbe, Bild) in Abhängigkeit vom Prozesszustand ändern soll.
 *   **Datenkapselung:** Vereinfachung der Parametrisierung von Funktionsblöcken, die das Aussehen eines "AUX"-Elements steuern, indem alle visuellen Parameter in einer einzigen Variable übergeben werden können.

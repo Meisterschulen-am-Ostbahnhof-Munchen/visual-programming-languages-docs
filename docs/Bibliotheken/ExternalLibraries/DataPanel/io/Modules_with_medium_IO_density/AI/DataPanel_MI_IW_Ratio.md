@@ -1,6 +1,5 @@
 # DataPanel_MI_IW_Ratio
 
-
 ![DataPanel_MI_IW_Ratio](./DataPanel_MI_IW_Ratio.svg)
 
 * * * * * * * * * *

@@ -1,9 +1,5 @@
 # Funk
 
-
-
-
-
 ## 🎧 Podcast
 
 * [DIN EN 61499-1 Entmystifiziert: Funktionsbausteine, Objektorientierung und verteilte Systeme](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Entmystifiziert-Funktionsbausteine--Objektorientierung-und-verteilte-Systeme-e37229b)

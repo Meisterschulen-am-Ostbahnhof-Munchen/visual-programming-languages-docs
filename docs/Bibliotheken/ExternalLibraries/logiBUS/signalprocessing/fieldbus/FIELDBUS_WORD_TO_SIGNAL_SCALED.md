@@ -1,6 +1,5 @@
 # FIELDBUS_WORD_TO_SIGNAL_SCALED
 
-
 ![FIELDBUS_WORD_TO_SIGNAL_SCALED](./FIELDBUS_WORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
@@ -48,14 +47,17 @@ Der Baustein arbeitet zustandsgesteuert:
 
 2. **REQ‑Zustand** (Hauptlogik):  
    Bei jedem `REQ`-Ereignis wird folgender Algorithmus durchlaufen:
+
    - Der eingehende `IN` (WORD) wird zunächst in `UINT` konvertiert.
    - Liegt dieser Wert **kleiner oder gleich** dem in der globalen Konstanten `VALID_SIGNAL_W` definierten Grenzwert (ebenfalls als WORD/UINT), gilt das Signal als **gültig**.
    - Bei Gültigkeit:  
      `OUT = UINT_TO_REAL(IN) * SCALE + DINT_TO_REAL(OFFSET)`  
      `VALID = TRUE`
+
    - Bei Ungültigkeit:  
      `OUT = 0.0`  
      `VALID = FALSE`
+
    - Anschließend wird das `CNF`-Ereignis ausgelöst, das die aktualisierten Ausgänge `OUT` und `VALID` begleitet.
 
 Der Vergleichswert `VALID_SIGNAL_W` sowie der Standard‑Eingangswert `NOT_AVAILABLE_WM` sind als Konstanten im Namespace `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL` importiert.

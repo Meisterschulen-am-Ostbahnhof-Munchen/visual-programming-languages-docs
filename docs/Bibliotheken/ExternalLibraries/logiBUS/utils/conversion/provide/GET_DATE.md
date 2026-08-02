@@ -1,6 +1,5 @@
 # GET_DATE
 
-
 ![GET_DATE](./GET_DATE.svg)
 
 * * * * * * * * * *
@@ -38,6 +37,7 @@ Keine Adapter vorhanden.
 
 ## Funktionsweise
 Der Baustein besitzt einen einfachen Ausführungszustand **REQ**:
+
 1. Ein eingehendes Ereignis am Eingang **REQ** löst die Verarbeitung aus.
 2. Der interne Algorithmus kopiert den aktuellen Wert der InOut-Variable **IN** in das Ausgangssignal **OUT**.
 3. Anschließend wird das Ereignis **CNF** gesendet. Dabei werden sowohl der Wert von **OUT** als auch der (unveränderte) Wert von **IN** an den Ausgang übergeben.
@@ -51,6 +51,7 @@ Die Funktionalität entspricht einer einfachen Wertübernahme ohne weitere Verar
 
 ## Zustandsübersicht
 Der Funktionsblock besteht aus genau einem Zustand:
+
 - **REQ**: Beim Eintreten wird der Algorithmus ausgeführt, der **OUT** mit **IN** beschreibt, und das Ereignis **CNF** wird gesendet.
 
 Es gibt keine weiteren Zustände oder bedingten Übergänge.

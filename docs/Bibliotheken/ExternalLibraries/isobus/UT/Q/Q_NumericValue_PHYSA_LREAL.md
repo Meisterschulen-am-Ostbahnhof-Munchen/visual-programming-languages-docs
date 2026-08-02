@@ -1,6 +1,5 @@
 # Q_NumericValue_PHYSA_LREAL
 
-
 ![Q_NumericValue_PHYSA_LREAL](./Q_NumericValue_PHYSA_LREAL.svg)
 
 * * * * * * * * * *
@@ -62,6 +61,7 @@ Der Funktionsblock **Q_NumericValue_PHYSA_LREAL** dient als Kommando zum Ändern
 
 ## Zustandsübersicht
 Eine explizite Zustandsmaschine ist im XML nicht abgebildet, da der FB als reines Netzwerk aus einem inneren Baustein realisiert ist. Das typische Verhalten folgt jedoch einem einfachen Ablauf:
+
 - **Idle** – wartet auf INIT.
 - **Initialisiert** – nach INIT und vor ersten Wertänderungen.
 - **Verarbeitung** – nach E1-Trigger (REQ) bis zum Empfang des CNF-Events.
@@ -74,6 +74,7 @@ Eine explizite Zustandsmaschine ist im XML nicht abgebildet, da der FB als reine
 
 ## Vergleich mit ähnlichen Bausteinen
 Im direkten Vergleich zum inneren Baustein **Q_NumericValue_PHYS_LREAL** bietet der **Q_NumericValue_PHYSA_LREAL** eine höhere Abstraktionsebene:
+
 - Statt direkter Ein-/Ausgangssignale wird die Kommunikation über Adapter realisiert – dies erlaubt eine lose Kopplung in modularen Steuerungsarchitekturen.
 - Der äußere FB fügt keine eigenständige Logik hinzu, sondern vereinfacht die Einbindung durch die adapterbasierte Schnittstelle (z.B. `ALR`-Eingang).
 - Anders als reine Funktionsblöcke mit festen Datenports kann `Q_NumericValue_PHYSA_LREAL` flexibel an verschiedene Umgebungen angepasst werden, ohne die Signalwege im Netzwerk ändern zu müssen.

@@ -32,6 +32,7 @@ Das Auslesen von Parametern erfolgt transparent. Wenn ein Schlüssel in `setting
 
 ### Schreibzugriffe (`SET`)
 Wird versucht, einen schreibgeschützten Schlüssel zu ändern (egal ob durch Steuerungsfunktionen oder über 4diac IEC 61499 Funktionsblöcke), passiert Folgendes:
+
 * Der **Schreibversuch wird abgelehnt**.
 * Der in `settingsReadOnly.ini` festgelegte Wert **bleibt unverändert**.
 * Die Ablehnung des Schreibvorgangs wird protokolliert und an die aufrufende Baustein-Logik zurückgemeldet.

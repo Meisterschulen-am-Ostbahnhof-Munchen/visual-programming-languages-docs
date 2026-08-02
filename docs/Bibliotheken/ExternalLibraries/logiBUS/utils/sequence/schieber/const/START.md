@@ -1,8 +1,6 @@
 # START
 
-
 ## 🎧 Podcast
-
 
 ![START](./START.svg)
 
@@ -40,6 +38,7 @@ Die `START`-Konstantendeklaration weist den symbolischen Namen `STARTClosed`, `S
 
 ## Zustandsübersicht
 Die Konstanten selbst repräsentieren abstrakte Zustände:
+
 *   `STARTClosed` (Wert 5): Steht für den Zustand "geschlossen" oder "in Ausgangsposition".
 *   `STARTOpened` (Wert 6): Steht für den Zustand "geöffnet" oder "in Endposition".
 *   `STARTUnknown` (Wert 7): Steht für einen undefinierten, unbekannten oder Fehlerzustand.

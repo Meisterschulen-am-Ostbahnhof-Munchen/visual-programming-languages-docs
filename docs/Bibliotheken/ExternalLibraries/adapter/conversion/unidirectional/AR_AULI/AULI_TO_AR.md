@@ -1,6 +1,5 @@
 # AULI_TO_AR
 
-
 ![AULI_TO_AR](./AULI_TO_AR.svg)
 
 * * * * * * * * * *
@@ -35,6 +34,7 @@ Der FB besitzt keine direkten Ereignis- oder Datenein-/ausgänge, sondern kommun
 Der FB ist als Composite-Baustein realisiert und enthält eine Instanz des Konvertierungs-FBs `F_ULINT_TO_REAL` aus der IEC‑61131‑Bibliothek.  
 
 Ablauf:
+
 1. Ein Ereignis auf **AULI_IN.E1** triggert die Ausführung des internen Konvertierungsbausteins `Convert`.
 2. Der aktuelle ULINT-Wert von **AULI_IN.D1** wird an den Eingang `Convert.IN` übergeben.
 3. Der interne FB führt die Umwandlung von `ULINT` nach `REAL` durch und legt das Ergebnis an `Convert.OUT` ab.

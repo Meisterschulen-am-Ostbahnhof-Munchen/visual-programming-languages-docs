@@ -1,6 +1,5 @@
 # DataPanel_MI_IW_4_20mA
 
-
 ![DataPanel_MI_IW_4_20mA](./DataPanel_MI_IW_4_20mA.svg)
 
 * * * * * * * * * *

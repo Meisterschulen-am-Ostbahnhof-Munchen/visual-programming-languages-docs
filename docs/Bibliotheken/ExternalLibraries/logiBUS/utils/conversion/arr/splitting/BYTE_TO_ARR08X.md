@@ -1,9 +1,6 @@
 # BYTE_TO_ARR08X
 
-
-
 <img width="1315" height="219" alt="image" src="https://github.com/user-attachments/assets/9af3b849-ed33-437d-9688-1de0bee2a1f9" />
-
 
 ![BYTE_TO_ARR08X](./BYTE_TO_ARR08X.svg)
 
@@ -30,6 +27,7 @@ Dieser Funktionsblock verfügt über keine Adapterschnittstellen.
 
 ## Funktionsweise
 Bei Auslösung durch das `REQ`-Ereignis liest der Baustein den Wert am Eingang `IN`. Anschließend wird jedes einzelne Bit (0 bis 7) des BYTE-Datentyps extrahiert und dem entsprechenden Index im BOOL-Array `OUT` zugewiesen. Die Zuordnung erfolgt direkt:
+
 *   `OUT[0]` erhält den Wert von `IN.0` (Bit 0)
 *   `OUT[1]` erhält den Wert von `IN.1` (Bit 1)
 *   ...

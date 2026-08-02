@@ -1,8 +1,6 @@
 # AULI_FB_CTD
 
-
 ![AULI_FB_CTD](./AULI_FB_CTD.svg)
-
 
 * * * * * * * * * *
 

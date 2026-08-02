@@ -1,7 +1,5 @@
 # AND_3_BOOL
 
-
-
 <img width="1383" height="275" alt="image" src="https://github.com/user-attachments/assets/e4d9d0a5-5b7b-41c6-9187-4cb9a9380a03" />
 
 * * * * * * * * * *
@@ -32,6 +30,7 @@ Dieser Funktionsblock verfügt über keine Adapter-Schnittstellen.
 
 ## Funktionsweise
 Die Funktionsweise ist deterministisch und folgt einer einfachen Abfolge:
+
 1.  **Auslösung:** Das eingehende Ereignis `REQ` aktiviert den Block.
 2.  **Lesen der Eingänge:** Die aktuellen Werte der drei booleschen Dateneingänge (`IN1`, `IN2`, `IN3`) werden eingelesen.
 3.  **Berechnung:** Die logische UND-Operation wird ausgeführt: `OUT := IN1 AND IN2 AND IN3`.
@@ -48,6 +47,7 @@ Der `AND_3_BOOL`-Block ist ein **kombinatorischer** Funktionsblock ohne internen
 
 ## Anwendungsszenarien
 Typische Anwendungen sind Steuerungslogiken, bei denen eine Aktion nur dann ausgeführt werden darf, wenn mehrere Sicherheits- oder Freigabebedingungen gleichzeitig erfüllt sind:
+
 *   **Zweihand-Bedienung:** Eine Maschine startet nur, wenn drei separate Taster gleichzeitig gedrückt werden (`IN1`, `IN2`, `IN3`).
 *   **Sicherheitskreis:** Aktivierung eines Prozesses nur bei geschützter Schutztür (`IN1`), aktivierter Not-Aus-Umgehung (`IN2`) und vorhandener Materialzufuhr (`IN3`).
 *   **Verkettung von Bedingungen:** Als Teil einer komplexeren logischen Gleichung innerhalb eines Algorithmus.

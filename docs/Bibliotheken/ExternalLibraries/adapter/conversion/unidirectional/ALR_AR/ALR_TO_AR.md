@@ -1,6 +1,5 @@
 # ALR_TO_AR
 
-
 ![ALR_TO_AR](./ALR_TO_AR.svg)
 
 *Kein Bild verfügbar*
@@ -43,6 +42,7 @@ Die Übertragung erfolgt streng sequenziell: erst Ereignis, dann Datenfluss – 
 
 ## Zustandsübersicht  
 Da es sich um einen Composite‑Baustein ohne eigene Zustandsautomaten handelt, gibt es keine expliziten Zustände. Der interne Ablauf ist deterministisch:  
+
 - **Bereit / Idle** – wartet auf ein Eingangsereignis.  
 - **Konvertierung aktiv** – nach Ereigniseingang bis zum Erzeugen des Ausgangsereignisses (dauert i. d. R. einen Zyklus).  
 

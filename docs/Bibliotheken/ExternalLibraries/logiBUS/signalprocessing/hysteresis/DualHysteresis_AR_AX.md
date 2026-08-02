@@ -1,17 +1,18 @@
 # DualHysteresis_AR_AX
 
-
 ![DualHysteresis_AR_AX](./DualHysteresis_AR_AX.svg)
 
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock **DualHysteresis_AR_AX** führt eine zweiseitige Analog-Digital-Wandlung mit einstellbarer Hysterese durch.  
 Aus einem analogen Eingangswert werden zwei binäre Ausgangssignale (`DO_UP`, `DO_DOWN`) erzeugt, die abhängig von der Lage des Eingangssignals relativ zu drei Parametern geschaltet werden:  
+
 - **MI** – Mittelwert (Sollwertmitte)  
 - **DEAD** – Totband (Absolutwert)  
 - **HYSTERESIS** – Hysterese (Absolutwert)  
 
 Die Schaltpunkte berechnen sich wie folgt:  
+
 - **Einschalten UP**: `INPUT.D1 >= MI.D1 + ABS(DEAD.D1) + ABS(HYSTERESIS.D1)`  
 - **Ausschalten UP**: `INPUT.D1 < MI.D1 + ABS(DEAD.D1)`  
 - **Einschalten DOWN**: `INPUT.D1 <= MI.D1 - ABS(DEAD.D1) - ABS(HYSTERESIS.D1)`  
@@ -107,6 +108,7 @@ Ist `QI = FALSE` bei einem `INIT`-Ereignis, wird der FB deinitialisiert und beid
 
 ## Vergleich mit ähnlichen Bausteinen
 Der **DualHysteresis_AR_AX** erweitert eine einfache Hysterese (Einschaltpunkt = Ausschaltpunkt + Hysterese) um eine zweite, inverse Richtung.  
+
 - **Einfache Hysterese**: nur ein Ausgang, eine Schaltschwelle.  
 - **DualHysteresis**: zwei Ausgänge, zwei entgegengesetzte Schwellen mit gemeinsamem Totband. Dadurch lassen sich z. B. Heizung und Kühlung getrennt ansteuern, ohne Überlappungen.  
 

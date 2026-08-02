@@ -1,6 +1,5 @@
 # AUI_MUX_2
 
-
 ![AUI_MUX_2](./AUI_MUX_2.svg)
 
 * * * * * * * * * *
@@ -40,6 +39,7 @@ Der Funktionsblock **AUI_MUX_2** ist ein generischer Multiplexer für AUI-Adapte
 
 ## Funktionsweise
 Ein Ereignis am Eingang **REQ** übernimmt den aktuellen Wert des Daten-Eingangs **K** und wählt den entsprechenden Adapter-Eingang aus:
+
 - Bei **K = 0** wird der an **IN1** anliegende AUI-Datenstrom an den Ausgang **OUT** weitergeleitet.
 - Bei **K = 1** wird der an **IN2** anliegende AUI-Datenstrom an den Ausgang **OUT** weitergeleitet.
 - Für andere Werte von K ist das Verhalten undefiniert (es wird kein gültiger Ausgang gesetzt).

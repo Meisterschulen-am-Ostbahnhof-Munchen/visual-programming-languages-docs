@@ -1,9 +1,6 @@
 # BOOLS_TO_ST08X
 
-
-
 <img width="1032" height="423" alt="image" src="https://github.com/user-attachments/assets/6ba52e2e-b4e7-4f80-ac9f-c05e7c05956f" />
-
 
 ![BOOLS_TO_ST08X](./BOOLS_TO_ST08X.svg)
 
@@ -54,6 +51,7 @@ Der Funktionsblock `BOOLS_TO_ST08X` ist ein zustandsloser Baustein. Dies bedeute
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Dieser Funktionsblock ist spezialisiert auf die Umwandlung von acht BOOL-Werten in den benutzerdefinierten `ST08X`-Typ. Im Vergleich zu:
+
 *   **`BOOLS_TO_BYTE` oder `BOOL_TO_WORD`:** Diese Bausteine wandeln einzelne BOOLs in einen primitiven Integer-Typ (Byte, Word) um, bei dem die einzelnen Bits über bitweise Operationen angesprochen werden müssen. `BOOLS_TO_ST08X` bietet hingegen eine strukturierte Variable, deren Felder direkt über Namen (`OUT.X_00`, `OUT.X_01`, etc.) zugänglich sind, was die Lesbarkeit des Codes verbessert.
 *   **Logische Operatoren (AND, OR, XOR):** Diese Operatoren kombinieren Bool-Werte, aber nicht zu einer Struktur, sondern zu einem einzelnen Bool-Ergebnis. `BOOLS_TO_ST08X` dient der Aggregation, nicht der logischen Verknüpfung.
 

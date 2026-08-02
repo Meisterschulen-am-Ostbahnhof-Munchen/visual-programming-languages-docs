@@ -1,6 +1,5 @@
 # AX_FB_TP_LTIME
 
-
 ![AX_FB_TP_LTIME](./AX_FB_TP_LTIME.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Der **AX_FB_TP_LTIME** ist ein standardisierter Puls-Timer-Funktionsblock (Timer
 
 ## Funktionsweise
 Der Baustein besteht intern aus zwei Komponenten:
+
 1. **FB_TP_LTIME** – ein reiner Puls-Timer (IEC 61131‑3 TP) mit Zeitbasis LTIME.
 2. **E_D_FF** – ein flankengesteuertes D‑Flipflop (E‑D‑FF gemäß IEC 61499), das den Q‑Ausgang des Timers zwischenspeichert.
 

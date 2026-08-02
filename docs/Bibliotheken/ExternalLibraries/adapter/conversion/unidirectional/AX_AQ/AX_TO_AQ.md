@@ -1,6 +1,5 @@
 # AX_TO_AQ
 
-
 ![AX_TO_AQ](./AX_TO_AQ.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Der gesamte Prozess ist ereignisgesteuert und erfolgt ohne interne Zustandsspeic
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt keine explizite Zustandsmaschine. Er arbeitet als reine Kombinationslogik mit ereignisgesteuerter Auslösung:
+
 - **Ruhezustand**: Es liegt kein Ereignis an `IN.E1` an. Ausgänge bleiben unverändert.
 - **Aktiv**: Ein Ereignis an `IN.E1` startet die Umwandlung. Nach Abschluss wird `OUT.E1` ausgelöst und der neue Wert an `OUT.D1` ausgegeben. Danach kehrt der Baustein in den Ruhezustand zurück.
 

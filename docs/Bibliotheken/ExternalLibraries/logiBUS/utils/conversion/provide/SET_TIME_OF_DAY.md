@@ -1,6 +1,5 @@
 # SET_TIME_OF_DAY
 
-
 ![SET_TIME_OF_DAY](./SET_TIME_OF_DAY.svg)
 
 * * * * * * * * * *
@@ -34,6 +33,7 @@ Keine.
 
 ## Funktionsweise
 Beim Eintreffen eines Ereignisses am Eingang `REQ` wird der Algorithmus `REQ` ausgeführt:
+
 - Der Wert von `IN` wird der InOut-Variable `OUT` zugewiesen: `OUT := IN`.
 - Nach erfolgreicher Zuweisung wird das Ereignis `CNF` ausgegeben, um den Abschluss der Operation zu quittieren.
 
@@ -44,6 +44,7 @@ Beim Eintreffen eines Ereignisses am Eingang `REQ` wird der Algorithmus `REQ` au
 
 ## Zustandsübersicht
 Der Baustein besitzt einen einzigen Zustand:
+
 - **REQ**: Wird beim Event `REQ` aktiviert. Nach Ausführung des Algorithmus wird `CNF` gesendet und der Zustand bleibt aktiv (kein Zustandswechsel).
 
 | Zustand | Aktion | Ausgangsereignis |

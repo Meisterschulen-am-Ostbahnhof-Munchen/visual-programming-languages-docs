@@ -1,7 +1,5 @@
 # OR_3
 
-
-
 ![OR_3](https://user-images.githubusercontent.com/116869307/214144056-e850a789-92e3-46c0-ba3c-97960b404daa.png)
 
 * * * * * * * * * *
@@ -53,11 +51,6 @@ Die Operation wird für jeden Bit-Position separat durchgeführt: OUT[i] = IN1[i
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen ODER-Bausteinen mit nur zwei Eingängen bietet OR_3 die Möglichkeit, drei Eingänge direkt zu verknüpfen, was die Programmstruktur vereinfacht und zusätzliche Verkettungen vermeidet. Gegenüber arithmetischen Bausteinen arbeitet OR_3 ausschließlich auf Bitebene.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

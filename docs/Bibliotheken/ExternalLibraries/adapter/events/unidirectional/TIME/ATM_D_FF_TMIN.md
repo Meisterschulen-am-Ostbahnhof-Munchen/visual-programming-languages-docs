@@ -1,6 +1,5 @@
 # ATM_D_FF_TMIN
 
-
 ![ATM_D_FF_TMIN](./ATM_D_FF_TMIN.svg)
 
 * * * * * * * * * *
@@ -50,6 +49,7 @@ Der Adapter `ATM` bietet je einen Ereignis- und einen Datenkanal (`E1`, `D1` fü
 
 ## Zustandsübersicht
 Obwohl kein explizites Zustandsdiagramm vorliegt, lassen sich folgende logische Zustände ableiten:
+
 1. **Bereit**: Wartet auf ein Taktereignis, keine Sperre aktiv.
 2. **Gesetzt**: Wert wurde übernommen und ausgegeben, die Sperre `Tmin` läuft.
 3. **Gesperrt**: Während `Tmin` werden eingehende Taktereignisse ignoriert oder zurückgehalten.

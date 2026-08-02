@@ -1,6 +1,5 @@
 # ILOCK_FB_SR_AX
 
-
 ![ILOCK_FB_SR_AX](./ILOCK_FB_SR_AX.svg)
 
 * * * * * * * * * *
@@ -59,16 +58,19 @@ Der FB implementiert einen Algorithmus, der bei jedem eingehenden Ereignis die f
 
 1. **Q1.D1 (Latch-Ausgang):**  
    `Q1.D1 := SET1.D1 OR ILOCK_IN.DO1 OR ILOCK_OUT.DI1 OR ((NOT RESET.D1) AND Q1.D1)`  
+
    - Der Ausgang wird gesetzt, wenn **SET1.D1**, **ILOCK_IN.DO1** (von oben) oder **ILOCK_OUT.DI1** (von unten) den Wert `TRUE` haben.  
    - Ist kein Set-Signal aktiv und **RESET.D1 = FALSE**, bleibt der aktuelle Wert von Q1 erhalten (Speicherverhalten).  
    - Set ist dominant: Ein aktives Set überschreibt einen Reset.
 
 2. **ILOCK_IN.DI1 (Propagation nach oben):**  
    `ILOCK_IN.DI1 := SET1.D1 OR ILOCK_OUT.DI1`  
+
    - Das Set-Signal wird nach oben weitergegeben, wenn entweder der eigene Set-Eingang oder das Signal der unteren Stufe aktiv ist.
 
 3. **ILOCK_OUT.DO1 (Propagation nach unten):**  
    `ILOCK_OUT.DO1 := SET1.D1 OR ILOCK_IN.DO1`  
+
    - Das Set-Signal wird nach unten weitergegeben, wenn entweder der eigene Set-Eingang oder das Signal der oberen Stufe aktiv ist.
 
 Nach jeder Berechnung werden die Ereignisausgänge `Q1.E1`, `ILOCK_IN.EI1` und `ILOCK_OUT.EO1` aktiviert.

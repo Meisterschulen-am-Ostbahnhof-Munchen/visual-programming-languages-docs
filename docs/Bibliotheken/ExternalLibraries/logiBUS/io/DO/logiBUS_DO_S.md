@@ -1,7 +1,5 @@
 # logiBUS_DO_S
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `logiBUS_DO_S` ist ein strukturierter Datentyp (Struct), der zur Konfiguration eines digitalen Ausgangs (DO) innerhalb des logiBUS-Systems dient. Er definiert die notwendigen Parameter, um einen physischen Ausgangspin eines logiBUS I/O-Moduls eindeutig zu adressieren und zu steuern. Dieser Datentyp wird typischerweise als Eingabe für Funktionsblöcke verwendet, die die eigentliche Ausgabefunktionalität bereitstellen.
@@ -49,9 +47,6 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DO_S` keinen int
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Einfacher `USINT`:** Der direkte Einsatz eines `USINT`-Werts für die Pin-Nummer ist möglich, bietet aber weniger semantische Klarheit und Typsicherheit. Der `logiBUS_DO_S` macht die Absicht des Datenelements explizit.
 *   **`logiBUS_DI_S`:** Dies ist das strukturelle Gegenstück für digitale Eingänge (DI). Es hat eine identische Struktur (ein `USINT`-Feld `Pin`), gehört aber konzeptionell zur Eingabeseite. Die Trennung in DO- und DI-Structs verbessert die Lesbarkeit und Wartbarkeit des Codes.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

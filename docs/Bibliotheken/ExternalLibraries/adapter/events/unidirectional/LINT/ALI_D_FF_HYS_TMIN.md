@@ -1,6 +1,5 @@
 # ALI_D_FF_HYS_TMIN
 
-
 ![ALI_D_FF_HYS_TMIN](./ALI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *

@@ -1,7 +1,5 @@
 # AlPgnRxNew8Bcylc_REQ
 
-
-
 <img width="1437" height="299" alt="image" src="https://github.com/user-attachments/assets/fa8d676b-f21e-4acb-8213-43edacdc6166" />
 
 * * * * * * * * * *
@@ -73,9 +71,6 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **E_CTU vs. AlPgnRxNew8Bcylc_REQ**: Ein einfacher Zähler (`E_CTU`) hat keine Netzwerkfunktionalität. Dieser Baustein ist ein spezialisierter, anwendungsnaher Kommunikationsblock für ein bestimmtes Protokoll (ISOBUS).
 *   **Generische CAN-RX-Blöcke**: Im Gegensatz zu Blöcken, die rohe CAN-IDs und Daten empfangen, arbeitet dieser Block auf der höheren, standardisierten PGN-Ebene des ISOBUS und übernimmt die protokollspezifische Dekodierung und Parameterverwaltung.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

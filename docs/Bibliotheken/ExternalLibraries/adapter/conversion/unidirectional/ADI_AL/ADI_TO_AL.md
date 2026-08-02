@@ -1,6 +1,5 @@
 # ADI_TO_AL
 
-
 ![ADI_TO_AL](./ADI_TO_AL.svg)
 
 * * * * * * * * * *
@@ -35,6 +34,7 @@ Der Baustein besitzt keine direkten Ereignis- oder Datenein-/-ausgänge. Die ges
 
 ## Funktionsweise
 Der Baustein implementiert eine einfache Typumwandlungskette:
+
 1. Ein über den ADI‑Adapter `ADI_IN` eingehendes Ereignis ( `E1` ) startet die Konvertierung.
 2. Der interne Funktionsblock `F_DINT_TO_LWORD` wandelt den eingehenden DINT‑Wert (`ADI_IN.D1`) in einen LWORD‑Wert um.
 3. Nach erfolgreicher Konvertierung wird das Ergebnis als LWORD über den AL‑Adapter (`AL_OUT.D1`) ausgegeben und ein Ereignis (`E1`) gesendet.

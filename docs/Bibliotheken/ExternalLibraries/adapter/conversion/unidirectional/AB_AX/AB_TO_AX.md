@@ -1,6 +1,5 @@
 # AB_TO_AX
 
-
 ![AB_TO_AX](./AB_TO_AX.svg)
 
 * * * * * * * * * *
@@ -18,6 +17,7 @@ Der Funktionsblock **AB_TO_AX** ist ein zusammengesetzter Baustein (Composite FB
 
 ## Funktionsweise
 Der Baustein verwendet intern einen `F_NE`-Vergleichsbaustein (ungleich). Das eingehende BYTE-Signal (AB_IN.D1) wird mit dem konstanten Wert `BYTE#0` verglichen.  
+
 - Wenn der BYTE-Wert ungleich 0 ist, liefert der Vergleich `TRUE`.  
 - Wenn der BYTE-Wert gleich 0 ist, liefert der Vergleich `FALSE`.  
 

@@ -1,6 +1,5 @@
 # AX_ASR_RF_TRIG
 
-
 ![AX_ASR_RF_TRIG](./AX_ASR_RF_TRIG.svg)
 
 * * * * * * * * * *

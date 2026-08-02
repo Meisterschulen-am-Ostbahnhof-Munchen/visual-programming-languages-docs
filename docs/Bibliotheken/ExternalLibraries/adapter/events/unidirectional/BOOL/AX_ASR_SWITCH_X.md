@@ -1,7 +1,5 @@
 # AX_ASR_SWITCH_X
 
-
-
 * * * * * * * * * *
 ## Einleitung
 
@@ -43,6 +41,7 @@ Der **AX_ASR_SWITCH_X** nutzt intern einen Standard-`E_SWITCH`-Baustein (`iec614
     *   Ist **G.D1 = FALSE**: Der interne Switch leitet das Ereignis auf seinen Ausgang `EO0`. Dieser ist mit **Q.SET** verbunden.
 
 Zusammenfassend:
+
 *   Input `TRUE` $\rightarrow$ Output `RESET`
 *   Input `FALSE` $\rightarrow$ Output `SET`
 

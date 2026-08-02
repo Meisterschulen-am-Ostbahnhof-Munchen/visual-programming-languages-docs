@@ -1,7 +1,5 @@
 # Q_NumericValue
 
-
-
 ![Q_NumericValue](https://user-images.githubusercontent.com/113907471/204326982-47eea33a-9b9c-4107-8f96-97c85a945fbc.png)
 
 * * * * * * * * * *
@@ -86,11 +84,6 @@ Der **Q_NumericValue** ist ein standardkonformer Funktionsbaustein zur Änderung
 | Rückmeldung   | ✔              | ✖              | ✔             |
 | Objekttyp     | Numerisch      | Alle           | Alle          |
 
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_009](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
@@ -135,6 +128,7 @@ Der Q_NumericValue-Baustein bietet präzise numerische Steuerung:
 - **Flexibel**: Für alle numerischen Objekte
 
 Essential für:
+
 - Präzise Prozessvisualisierung
 - Echtzeit-Datenmonitoring
 - Industrielle Steuerungssysteme

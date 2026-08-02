@@ -1,7 +1,5 @@
 # SET_STRUCT_VALUE
 
-
-
 <img width="1393" height="152" alt="image" src="https://github.com/user-attachments/assets/06ce9694-a203-4982-895d-68c27425acd1" />
 
 * * * * * * * * * *
@@ -48,6 +46,7 @@ Der Funktionsblock operiert hauptsächlich in einem anforderungsbasierten (`REQ`
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu Bausteinen, die fest verdrahtete Strukturen oder nur das Auslesen von Werten unterstützen, bietet `SET_STRUCT_VALUE` eine einzigartige Flexibilität durch:
+
 *   **Schreibzugriff**: Ermöglicht das Setzen von Werten, nicht nur das Lesen.
 *   **Generischer Zugriff**: Arbeitet mit beliebigen `ANY`-Typen, was ihn universeller macht als Bausteine, die an spezifische Strukturtypen gebunden sind.
 *   **Dynamische Member-Auswahl**: Der Member-Name wird zur Laufzeit als String übergeben, was eine dynamischere Feldselektion als bei fest definierten Ein-/Ausgängen erlaubt.

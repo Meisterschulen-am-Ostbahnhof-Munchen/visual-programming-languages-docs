@@ -1,7 +1,5 @@
 # E_TABLE
 
-
-
 <img width="1139" height="202" alt="E_TABLE" src="https://user-images.githubusercontent.com/113907528/204904862-ebdcc4da-7a49-4931-b534-673c9449cf5e.png">
 
 * * * * * * * * * *
@@ -63,11 +61,6 @@ Der `E_TABLE` (Event Table) ist ein Funktionsbaustein nach IEC 61499, der eine e
 | Ereignisabstand | Variabel (Array `DT`) | Fix (`DT`) | Variabel (Array `DT`) |
 | Ausgänge | Ein `EO`-Kanal | Ein `EO`-Kanal | Mehrere (`EO0`..`EO3`) |
 | Zähler-Ausgang (`CV`) | Ja | Nein | Nein (intern) |
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,7 +1,5 @@
 # TC_QD
 
-
-
 <img width="1355" height="263" alt="image" src="https://github.com/user-attachments/assets/9eac6074-381e-43b4-a37b-11784ad4fd72" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der TC_QD Funktionsblock initialisiert und verwaltet die Kommunikation mit exter
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über zwei Hauptbetriebszustände:
+
 1. **Initialisierungszustand**: Wird durch INIT-Ereignis aktiviert und durch INITO bestätigt
 2. **Service-Betriebszustand**: Wird durch REQ-Ereignis aktiviert und durch CNF abgeschlossen
 
@@ -57,13 +56,11 @@ Der Funktionsblock verfügt über zwei Hauptbetriebszustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfacheren Ausgabeblöcken bietet TC_QD erweiterte Funktionalität durch:
+
 - DDI-basierte Datenidentifikation
 - Parametrierbare Geräteelementnummern
 - ISOBUS-Spezifikation-Kompatibilität
 - Umfangreiche Statusrückmeldungen
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

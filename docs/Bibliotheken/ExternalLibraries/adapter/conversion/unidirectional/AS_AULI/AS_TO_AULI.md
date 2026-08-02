@@ -14,18 +14,22 @@ Der zusammengesetzte Funktionsbaustein `AS_TO_AULI` dient der Umwandlung eines *
 
 ### **Ereignis-Eingänge**
 Der Baustein besitzt **keine direkten Ereignis-Eingänge**. Der Empfang von Ereignissen erfolgt über den **Socket-Adapter `AS_IN`**:
+
 - **`AS_IN.E1`** – Ereignis-Eingang über den AS-Adapter, der die Datenumwandlung anstößt.
 
 ### **Ereignis-Ausgänge**
 Der Baustein besitzt **keine direkten Ereignis-Ausgänge**. Die Ausgabe von Ereignissen erfolgt über den **Plug-Adapter `AULI_OUT`**:
+
 - **`AULI_OUT.E1`** – Ereignis-Ausgang über den AULI-Adapter, der nach abgeschlossener Konvertierung aktiviert wird.
 
 ### **Daten-Eingänge**
 Der Baustein besitzt **keine direkten Daten-Eingänge**. Die Dateneingabe erfolgt über den **Socket-Adapter `AS_IN`**:
+
 - **`AS_IN.D1`** – Daten-Eingang vom Typ **SINT**, der den umzuwandelnden Wert bereitstellt.
 
 ### **Daten-Ausgänge**
 Der Baustein besitzt **keine direkten Daten-Ausgänge**. Die Datenausgabe erfolgt über den **Plug-Adapter `AULI_OUT`**:
+
 - **`AULI_OUT.D1`** – Daten-Ausgang vom Typ **ULINT**, der den konvertierten Wert liefert.
 
 ### **Adapter**
@@ -59,6 +63,7 @@ Die Konvertierung erfolgt nach den Regeln der IEC 61131-3: Der SINT-Wert (8‑Bi
 
 ## Zustandsübersicht
 Der Baustein besitzt **keine eigene Zustandsmaschine**. Er fungiert als reine Verschaltung des inneren `F_SINT_TO_ULINT`-Bausteins. Das Verhalten ist strikt ereignisgesteuert:
+
 - **Warten** (Initialzustand) → Ereignis an `AS_IN.E1` → Übergang zu **Konvertierung**.
 - **Konvertierung** → interner Baustein arbeitet asynchron → nach Beendigung → Ereignis an `AULI_OUT.E1` → Rückkehr zu **Warten**.
 

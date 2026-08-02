@@ -1,6 +1,5 @@
 # Softkey_IXA
 
-
 ## 🎧 Podcast
 
 * [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
@@ -42,6 +41,7 @@ Der Composite-Funktionsblock Softkey_IXA kapselt den internen Funktionsblock Sof
 
 ## Zustandsübersicht
 Der Funktionsblock verfügt über zwei Hauptzustände:
+
 1. **Initialisierungszustand**: Verarbeitung der INIT-Ereignisse mit Parameterübergabe
 2. **Service-Zustand**: Bearbeitung von REQ-Anfragen und Rückgabe der Ergebnisse
 
@@ -53,9 +53,6 @@ Der Funktionsblock verfügt über zwei Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Softkey_IXA erweiterte ISOBUS-Kompatibilität, parametrierbare Service-Schnittstellen und Adapter-basierte Erweiterbarkeit. Die Composite-Struktur ermöglicht eine klare Trennung zwischen Schnittstellenlogik und Kernfunktionalität.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

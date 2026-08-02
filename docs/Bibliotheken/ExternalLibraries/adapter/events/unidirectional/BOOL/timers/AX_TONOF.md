@@ -1,7 +1,5 @@
 # AX_TONOF
 
-
-
 <img width="1154" height="290" alt="image" src="https://github.com/user-attachments/assets/eecdf987-773b-4d5a-9da7-7ba858235b94" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der AX_TONOF-Funktionsblock verarbeitet Eingangssignale über den IN-Adapter und
 
 ## Zustandsübersicht
 Der Funktionsblock kann folgende Zustände annehmen:
+
 - **Ruhezustand**: Keine aktive Zeitmessung
 - **Einschaltverzögerung**: Zeitmessung für PT_ON aktiv
 - **Ausschaltverzögerung**: Zeitmessung für PT_OFF aktiv
@@ -58,11 +57,6 @@ Der Funktionsblock kann folgende Zustände annehmen:
 Im Vergleich zu einfachen Timer-Bausteinen wie TON oder TOF bietet AX_TONOF die kombinierte Funktionalität beider Timer-Typen in einem Baustein. Die Verwendung von Adaptern anstelle direkter Ein-/Ausgänge ermöglicht eine flexiblere Integration in komplexere Steuerungsstrukturen.
 
 Vergleich mit [E_TONOF](../../../../../../StandardLibraries/events/timers/E_TONOF.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

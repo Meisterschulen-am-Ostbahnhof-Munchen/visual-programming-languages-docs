@@ -1,6 +1,5 @@
 # AI_DEMUX_4
 
-
 ![AI_DEMUX_4](./AI_DEMUX_4.svg)
 
 * * * * * * * * * *
@@ -38,6 +37,7 @@ Der Baustein arbeitet als 1‑zu‑4‑Demultiplexer. Beim Eintreffen eines REQ�
 
 ## Zustandsübersicht
 In der XML‑Deklaration ist keine Zustandsmaschine definiert. Der FB verhält sich wie ein einfacher Ein‑Zustands‑Automat:
+
 1. **Warten** auf REQ.
 2. Bei REQ: Index K auswerten, Wert von IN auf OUT[K] übertragen, CNF senden.
 3. Zurück in den Wartezustand.

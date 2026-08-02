@@ -1,6 +1,5 @@
 # ASR_SWITCH
 
-
 ![ASR_SWITCH](./ASR_SWITCH.svg)
 
 * * * * * * * * * *

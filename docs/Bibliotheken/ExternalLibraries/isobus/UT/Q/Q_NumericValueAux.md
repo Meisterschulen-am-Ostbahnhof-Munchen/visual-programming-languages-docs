@@ -1,8 +1,5 @@
 # Q_NumericValueAux
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -93,6 +90,7 @@ Der Q_NumericValueAux-Baustein bietet präzise numerische Steuerung:
 - **Flexibel**: Für alle numerischen Objekte
 
 Unverzichtbar für:
+
 - Präzise Messwertdarstellungen
 - Hochauflösende Steuerungen
 - Professionelle Prozessvisualisierung

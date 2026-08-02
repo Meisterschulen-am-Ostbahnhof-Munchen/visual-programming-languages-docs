@@ -1,7 +1,5 @@
 # logiBUS_PI_S
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der Funktionsblock `logiBUS_PI_S` ist ein Struktur-Datentyp (Structured Type), der für die Konfiguration eines digitalen Eingangs (PI - wahrscheinlich "Peripheral Input") innerhalb des logiBUS-Frameworks dient. Er definiert die notwendigen Parameter, um einen spezifischen physischen Pin eines I/O-Moduls oder Controllers anzusprechen. Dieser Datentyp wird typischerweise als Eingabeparameter für entsprechende IO-Funktionsblöcke verwendet.
@@ -17,6 +15,7 @@ Nicht zutreffend – dies ist ein Datentyp, kein ausführbarer Funktionsblock.
 
 ### **Interne Struktur (Variablen)**
 Die Struktur besteht aus einem einzigen Mitglied:
+
 *   **`Pin`** (USINT, Initialwert: 255): Diese Variable spezifiziert die Hardware-Pinnummer, die als digitaler Eingang genutzt werden soll. Der Datentyp `USINT` (Unsigned Short Integer) erlaubt Werte von 0 bis 255. Der voreingestellte Initialwert 255 dient häufig als inaktiver oder undefinierter Zustand.
 
 ### **Adapter**
@@ -35,6 +34,7 @@ Da es sich um einen passiven Datentyp handelt, gibt es keine Zustandsmaschine od
 
 ## Anwendungsszenarien
 Dieser Strukturdatentyp wird verwendet, um die Konfiguration von digitalen Eingangskanälen in Steuerungsapplikationen mit logiBUS-kompatibler Hardware zentral und typsicher zu halten. Typische Anwendungen sind:
+
 *   Konfiguration von Taster-, Schalter- oder Sensorsignalen (z.B. Endschalter, Lichtschranken).
 *   Parametrierung von Funktionsblöcken, die digitale Eingänge in einem verteilten I/O-System (wie logi.BUS) auslesen.
 *   Vereinfachung der Wiederverwendung und Lesbarkeit von Code, da die Pin-Konfiguration in einer benannten Struktur gebündelt ist.

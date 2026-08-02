@@ -1,6 +1,5 @@
 # AE_MUX_2
 
-
 ![AE_MUX_2](./AE_MUX_2.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Keine
 ## Funktionsweise
 
 Der Baustein arbeitet als 2‑zu‑1‑Multiplexer auf Adapterebene. Sobald ein **REQ**-Ereignis eintrifft, wird der aktuelle Wert des Index `K` ausgewertet:
+
 - Ist `K = 0`, wird der Adapter **IN1** auf den Ausgang **OUT** durchgeschaltet.
 - Ist `K = 1`, wird der Adapter **IN2** auf den Ausgang **OUT** durchgeschaltet.
 

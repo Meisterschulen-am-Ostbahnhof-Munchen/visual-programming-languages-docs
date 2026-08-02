@@ -1,7 +1,5 @@
 # OR_6_BOOL
 
-
-
 <img width="1370" height="361" alt="image" src="https://github.com/user-attachments/assets/2144a80e-12ae-4dc2-8412-36059eace342" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten
 
 ## Anwendungsszenarien
 Typische Anwendungen sind Überwachungs- und Sicherheitslogiken, bei denen eine Aktion ausgelöst werden soll, wenn eine von mehreren möglichen Bedingungen erfüllt ist.
+
 *   **Not-Aus Logik:** Der Block kann genutzt werden, um mehrere Not-Aus-Taster zu überwachen. Wenn irgendeiner der Taster gedrückt wird (`TRUE`), wird ein Abschaltsignal (`OUT = TRUE`) generiert.
 *   **Alarmaggregation:** Mehrere Sensoren, die jeweils einen Fehlerzustand detektieren können, werden zusammengeschaltet. Ein allgemeiner Alarm wird aktiviert, sobald mindestens ein Sensor einen Fehler meldet.
 *   **Mehrfachbedienung:** In einer Maschine können mehrere Bedienstationen einen Prozess starten. Der Block kombiniert alle Startbefehle zu einem gemeinsamen Startsignal.

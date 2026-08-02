@@ -2,7 +2,6 @@
 
 !Bild des FB (nicht verfügbar)
 
-
 ![AW_SPLIT_2](./AW_SPLIT_2.svg)
 
 * * * * * * * * * *

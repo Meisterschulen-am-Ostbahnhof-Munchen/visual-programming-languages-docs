@@ -1,9 +1,6 @@
 # NetEv2NetEv
 
-
-
 <img width="1476" height="216" alt="image" src="https://github.com/user-attachments/assets/9bc9ef5f-0a9d-4bd3-8f83-d60a1665ff9c" />
-
 
 ![NetEv2NetEv](./NetEv2NetEv.svg)
 
@@ -31,6 +28,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 Die Funktionsweise des `NetEv2NetEv`-Blocks ist deterministisch und einfach:
+
 1.  Bei Eintreffen eines `REQ`-Ereignisses wird die Funktion ausgeführt.
 2.  Der gesamte Inhalt der Eingangsdatenstruktur `IN` wird in die Ausgangsdatenstruktur kopiert.
 3.  Anschließend wird das Feld `.s16Handle` innerhalb dieser kopierten Ausgangsstruktur mit dem Wert des Eingangs `s16Handle` überschrieben.
@@ -56,9 +54,6 @@ Der Funktionsblock besitzt keinen internen Zustand oder Speicher. Sein Verhalten
 *   **E_SELECT / E_MUX**: Diese Blöchte wählen zwischen verschiedenen Datenquellen aus oder leiten sie durch. `NetEv2NetEv` verändert aktiv einen Teil der durchlaufenden Daten.
 *   **E_R_TRIG / E_F_TRIG**: Diese sind reine Ereignis-Trigger ohne Datenmanipulation. `NetEv2NetEv` ist ein datenverarbeitender Block.
 *   **Generische ASSIGN-Bausteine**: Ein einfacher `ASSIGN`-Block kopiert einen Eingangswert 1:1 auf den Ausgang. `NetEv2NetEv` ist ein spezialisierter `ASSIGN`-Block für den Typ `ISONETEVENT_T`, der eine gezielte Modifikation (Handle-Überschreibung) vornimmt.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

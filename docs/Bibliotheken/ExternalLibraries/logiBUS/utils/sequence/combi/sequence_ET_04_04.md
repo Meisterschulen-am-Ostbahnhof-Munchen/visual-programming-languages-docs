@@ -1,9 +1,6 @@
 # sequence_ET_04_04
 
-
-
 <img width="1369" height="422" alt="image" src="https://github.com/user-attachments/assets/5b5fc7b9-65cb-4c19-b1ee-bad5fd7b2d45" />
-
 
 ![sequence_ET_04_04_ecc](./sequence_ET_04_04_ecc.svg)
 
@@ -56,6 +53,7 @@ Das Ereignis `START_S1` dient nicht nur zum initialen Start, sondern auch zum "Z
 
 ## Zustandsübersicht
 Der ECC umfasst folgende Zustände:
+
 *   **`xSTART`**: Initialer, inaktiver Zustand.
 *   **`sState_01` bis `sState_08`**: Aktive Arbeitszustände der Sequenz.
 *   **`sState_00`**: Inaktiver Endzustand nach Abschluss der Sequenz.

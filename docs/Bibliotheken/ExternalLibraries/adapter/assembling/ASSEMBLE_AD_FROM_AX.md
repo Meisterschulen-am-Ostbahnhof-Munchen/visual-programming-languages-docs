@@ -1,6 +1,5 @@
 # ASSEMBLE_AD_FROM_AX
 
-
 ![ASSEMBLE_AD_FROM_AX](./ASSEMBLE_AD_FROM_AX.svg)
 
 * * * * * * * * * *
@@ -12,6 +11,7 @@ Der FB besitzt ausschließlich **Adapter-Schnittstellen** (Sockets und Plugs). D
 
 ### **Ereignis-Eingänge**
 Keine expliziten Ereignis-Eingänge. Die Ereignisse werden implizit über die AX-Adapter empfangen:
+
 - Jeder der 32 AX-Adapter (`BIT_00 … BIT_31`) stellt einen Ereignisausgang (`E1`) bereit, der bei einer Wertänderung des zugehörigen BOOL-Signals aktiviert wird.
 
 ### **Ereignis-Ausgänge**
@@ -19,10 +19,12 @@ Keine expliziten Ereignis-Ausgänge. Der AD-Ausgangsadapter (`OUT`) löst ein Er
 
 ### **Daten-Eingänge**
 Keine expliziten Daten-Eingänge. Die booleschen Eingangswerte werden über die Datenports (`D1`) der AX-Adapter bezogen:
+
 - `BIT_00.D1` … `BIT_31.D1`: jeweils ein **BOOL** (Bit 0 … Bit 31 des resultierenden DWORDs).
 
 ### **Daten-Ausgänge**
 Keine expliziten Daten-Ausgänge. Das zusammengesetzte DWORD wird über den Datenport (`D1`) des AD-Adapter ausgegeben:
+
 - `OUT.D1`: **DWORD** (das aus den 32 BOOL-Eingängen zusammengesetzte 32-Bit-Wort).
 
 ### **Adapter**
@@ -46,6 +48,7 @@ Keine expliziten Daten-Ausgänge. Das zusammengesetzte DWORD wird über den Date
 
 ## Zustandsübersicht
 Der FB selbst besitzt keinen expliziten Zustandsautomaten. Das interne `E_D_FF_ANY` realisiert einen einfachen Speicherzustand:
+
 - **Zustand 0**: Flipflop-Ausgang `Q` enthält den zuletzt geladenen DWORD-Wert.
 - **Zustandsübergang**: Bei einem Ereignis von `ASSEMBLE_DWORD_FROM_BOOLS.CNF` wird der neue DWORD-Wert in das Flipflop übernommen und der Ausgang aktualisiert.
 

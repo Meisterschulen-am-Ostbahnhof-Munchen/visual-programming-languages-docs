@@ -1,7 +1,5 @@
 # XOR_8_BOOL
 
-
-
 <img width="1381" height="423" alt="image" src="https://github.com/user-attachments/assets/6d43c16c-0360-452c-bd8f-8caac2a5b590" />
 
 * * * * * * * * * *
@@ -49,6 +47,7 @@ Ein XOR (Exklusiv-ODER) liefert genau dann `TRUE` (1) als Ergebnis, wenn eine un
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sein Verhalten ist rein kombinatorisch und ereignisgesteuert:
+
 1.  **Ruhezustand:** Wartet auf das Eintreffen des `REQ`-Ereignisses.
 2.  **Berechnungszustand:** Bei `REQ` werden alle Eingänge gelesen und die XOR-Operation durchgeführt.
 3.  **Ausgabezustand:** Das Ergebnis wird an `OUT` ausgegeben und das `CNF`-Ereignis wird generiert. Anschließend kehrt der Block in den Ruhezustand zurück.

@@ -1,8 +1,5 @@
 # LED_FREQ
 
-
-
-
 ![LED_FREQ](./LED_FREQ.svg)
 
 * * * * * * * * * *

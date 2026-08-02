@@ -1,6 +1,5 @@
 # AE_SWITCH
 
-
 ![AE_SWITCH](./AE_SWITCH.svg)
 
 * * * * * * * * * *

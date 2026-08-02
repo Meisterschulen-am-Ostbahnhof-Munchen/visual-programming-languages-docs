@@ -1,6 +1,5 @@
 # GET_LWORD
 
-
 ![GET_LWORD](./GET_LWORD.svg)
 
 * * * * * * * * * *

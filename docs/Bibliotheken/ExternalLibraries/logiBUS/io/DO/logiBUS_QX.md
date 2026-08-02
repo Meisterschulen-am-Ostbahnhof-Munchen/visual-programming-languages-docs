@@ -1,7 +1,5 @@
 # logiBUS_QX
 
-
-
 <img width="2048" height="379" alt="image" src="https://github.com/user-attachments/assets/be731935-05c6-402b-9703-aa2d97f347b6" />
 
 * * * * * * * * * *
@@ -45,6 +43,7 @@ Der logiBUS_QX-Block verwaltet die Kommunikation mit digitalen Ausgangskanälen 
 
 ## Zustandsübersicht
 Der Block durchläuft folgende Hauptzustände:
+
 1. **Nicht initialisiert**: Vor der ersten INIT-Operation
 2. **Initialisiert**: Nach erfolgreicher INIT-Operation, bereit für REQ-Operationen
 3. **Aktiv**: Während der Verarbeitung von REQ-Operationen
@@ -57,13 +56,11 @@ Der Block durchläuft folgende Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu standardmäßigen digitalen Ausgangsblöcken bietet logiBUS_QX:
+
 - Spezifische Integration in logiBUS-Systeme
 - Erweiterte Statusrückmeldungen
 - Parametrierbare Ausgangskonfiguration
 - Höhere Abstraktionsebene für Hardwarezugriffe
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -2,8 +2,6 @@
 
 # FT_PIDWL
 
-
-
 PI Controller with Anti-Windup
 
 version 1.3	13. nov. 2009

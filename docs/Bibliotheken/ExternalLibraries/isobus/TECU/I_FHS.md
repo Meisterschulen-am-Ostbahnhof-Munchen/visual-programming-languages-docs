@@ -1,8 +1,5 @@
 # I_FHS
 
-
-
-
 * * * * * * * * * *
 
 ## Einleitung
@@ -78,9 +75,6 @@ Entwickelt unter EPL-2.0 Lizenz,ermöglicht er die Überwachung und Steuerung vo
 | Kraftmessung  | ✔     | ✔                      | ✔                      |
 | Diagnosecodes | ✔     | ✖                      | ✔                      |
 
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
@@ -94,6 +88,7 @@ Der I_FHS-Baustein bietet umfassende Front-Anbaugerätesteuerung:
 - **Zuverlässig**: Integrierte Fehlererkennung
 
 Essential für:
+
 - Moderne Frontlader-Systeme
 - Präzisionslandwirtschaft
 - Sicherheitskritische Anwendungen

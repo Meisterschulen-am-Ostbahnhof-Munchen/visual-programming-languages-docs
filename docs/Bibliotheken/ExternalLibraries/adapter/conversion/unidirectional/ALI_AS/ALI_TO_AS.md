@@ -29,6 +29,7 @@ Keine. Das konvertierte SINT‑Signal wird über den AS‑Adapter ausgegeben.
 
 ## Funktionsweise
 Der Baustein arbeitet nach dem Prinzip eines reinen Datenflusses ohne eigenen Zustandsautomaten.  
+
 1. Über den **ALI_IN**‑Adapter wird das Ereignis **E1** empfangen und der zugehörige LINT‑Wert über das Datum **D1** bereitgestellt.  
 2. Dieses Ereignis triggert den internen Funktionsblock **F_LINT_TO_SINT**, der die Konvertierung durchführt.  
 3. Nach Abschluss der Konvertierung wird das Ereignis **CNF** des Konvertierungsbausteins aktiviert, welches wiederum das Ausgangsereignis **E1** des **AS_OUT**‑Adapters auslöst und den konvertierten SINT‑Wert über das Datum **D1** weitergibt.

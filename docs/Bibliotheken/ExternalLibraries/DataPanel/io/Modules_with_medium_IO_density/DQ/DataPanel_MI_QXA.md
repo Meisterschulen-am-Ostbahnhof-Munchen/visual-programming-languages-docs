@@ -1,7 +1,5 @@
 # DataPanel_MI_QXA
 
-
-
 <img width="1373" height="208" alt="image" src="https://github.com/user-attachments/assets/734858f5-fe59-47ff-9c4f-6ba7b19e3c85" />
 
 * * * * * * * * * *
@@ -44,6 +42,7 @@ Der Composite-Funktionsblock DataPanel_MI_QXA kapselt die Funktionalität des Da
 
 ## Zustandsübersicht
 Der Baustein durchläuft folgende Zustände:
+
 1. **Initialisierungsphase**: INIT-Ereignis verarbeitet Konfigurationsparameter
 2. **Bereitschaftszustand**: Wartet auf Steuerungsanforderungen über Adapter OUT
 3. **Aktiver Betrieb**: Verarbeitet Ausgabebefehle und generiert CNF-Bestätigungen
@@ -56,13 +55,11 @@ Der Baustein durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Ausgabebausteinen bietet DataPanel_MI_QXA:
+
 - Erweiterte Parametrierungsmöglichkeiten über STRING-Parameter
 - SA-Adressierungsunterstützung für Netzwerkintegration
 - Composite-Architektur mit Adapter-Schnittstelle
 - Umfassende Statusrückmeldungen
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

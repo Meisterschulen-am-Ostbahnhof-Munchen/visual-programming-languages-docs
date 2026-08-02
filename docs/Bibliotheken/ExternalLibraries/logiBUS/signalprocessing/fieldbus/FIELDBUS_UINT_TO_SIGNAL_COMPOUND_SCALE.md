@@ -1,6 +1,5 @@
 # FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE
 
-
 ![FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE](./FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE.svg)
 
 * * * * * * * * * *
@@ -50,13 +49,17 @@ Keine.
 2. **Normale Verarbeitung** (`REQ`):  
    - Der Eingangswert `IN` wird mit einer Konstanten `VALID_SIGNAL_W` (aus dem importierten Namen `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL::VALID_SIGNAL_W`) verglichen:  
      `IF (IN <= WORD_TO_UINT(VALID_SIGNAL_W)) THEN`  
+
    - Falls die Bedingung **wahr** ist (Signal gültig):
      - Das obere Byte wird durch Rechts-Shift um 8 Bit und Maskierung mit `0x00FF` extrahiert:  
        `highByte := (IN >> 8) & 0xFF`
+
      - Das untere Byte wird direkt durch Maskierung gewonnen:  
        `lowByte := IN & 0xFF`
+
      - Beide Bytes werden in `REAL` gewandelt, mit den jeweiligen Skalierungsfaktoren multipliziert und der Offset addiert:  
        `OUT := highByte * SCALE_HIGH + lowByte * SCALE_LOW + OFFSET`
+
      - `VALID` wird auf `TRUE` gesetzt.
    - Falls die Bedingung **falsch** ist (ungültiges Signal):
      - `OUT` wird auf `0.0` gesetzt.

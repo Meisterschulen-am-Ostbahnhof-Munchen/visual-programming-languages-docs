@@ -1,6 +1,5 @@
 # IA_GBSD
 
-
 ![IA_GBSD](./IA_GBSD.svg)
 
 * * * * * * * * * *
@@ -44,6 +43,7 @@ Der Funktionsblock **IA_GBSD** dient als Adapter-Wrapper für den ISOBUS-kompati
 
 ## Funktionsweise
 Der FB ist als reiner Adapter-Wrapper realisiert:  
+
 - Ein INIT-Ereignis am Eingang wird direkt an den internen Baustein **I_GBSD** weitergeleitet.  
 - Der Daten-Eingang **QI** aktiviert bzw. deaktiviert die Verarbeitung.  
 - Nach der Initialisierung wird das Ereignis **INITO** mit dem Qualifier **QO** und einem **STATUS** ausgegeben.  

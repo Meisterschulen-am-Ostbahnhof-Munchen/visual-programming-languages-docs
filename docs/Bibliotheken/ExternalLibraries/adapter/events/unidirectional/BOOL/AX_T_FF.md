@@ -1,9 +1,6 @@
 # AX_T_FF
 
-
-
 <img width="1181" height="187" alt="image" src="https://github.com/user-attachments/assets/fe3f05c1-c201-42ef-a5d8-874b826680de" />
-
 
 ![AX_T_FF_ecc](./AX_T_FF_ecc.svg)
 
@@ -46,6 +43,7 @@ Der Baustein verfügt über zwei Zustände:
 2. **SET**: Aktiver Zustand, in dem der TOGGLE-Algorithmus ausgeführt wird
 
 Zustandsübergänge:
+
 - START → SET: Bei CLK-Ereignis
 - SET → START: Immer (Condition "1" = wahr)
 
@@ -59,11 +57,6 @@ Zustandsübergänge:
 Im Vergleich zu anderen Flipflop-Typen wie RS- oder D-Flipflops bietet der Toggle-Flipflop eine spezialisierte Funktionalität für reine Umschaltoperationen. Er ist einfacher aufgebaut als universellere Flipflop-Typen und benötigt keine zusätzlichen Dateneingänge.
 
 Vergleich mit [E_T_FF](../../../../../StandardLibraries/events/E_T_FF.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

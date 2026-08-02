@@ -1,6 +1,5 @@
 # AI_FB_CTU
 
-
 ![AI_FB_CTU](./AI_FB_CTU.svg)
 
 * * * * * * * * * *
@@ -19,6 +18,7 @@ Der Baustein besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung er
 - **CNF** (Typ: Event) – Bestätigungsereignis, das nach jeder erfolgreichen Verarbeitung aller drei möglichen Ereignisse ausgelöst wird.
 
 Zusätzlich werden die Ausgabeadapter **Q** und **CV** mit demselben Ereignis bedient:
+
 - **Q.E1** – Ereignis für den Ausgangsadapter (Zählerstand erreicht oder übersteigt den Preset-Wert)
 - **CV.E1** – Ereignis für den aktuellen Zählwert
 
@@ -58,6 +58,7 @@ Nach der Verarbeitung wird das Ergebnis (aktueller Zählerstand CV und Ausgang Q
 
 ## Zustandsübersicht
 Der interne Zustand wird durch den IEC 61131-3 CTU bestimmt:
+
 - **CV** (aktueller Zählerstand) – Integer-Wert, der bei jedem CU-Ereignis inkrementiert wird (sofern kein Reset erfolgt).
 - **Q** (Ausgang) – Boolescher Wert, der TRUE wird, sobald CV >= PV.
 - Bei einem **Reset** (R) wird CV auf den Wert von R.D1 gesetzt (meist 0) und Q zurückgesetzt.

@@ -1,7 +1,5 @@
 # E_MUX_8
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -43,9 +41,6 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 - **Tastatur-Matrix**: Zusammenfassen der Signale von acht Tasten auf eine zentrale Auswertungslogik.
 - **Umfassende Alarmierung**: Bündeln von acht verschiedenen Alarmen zu einer zentralen Routine, die dann anhand von `K` die spezifische Alarmmeldung verarbeitet.
 - **Priorisierte Befehlsauswahl**: Acht Befehlsquellen werden zusammengeführt, und eine nachgeschaltete Logik entscheidet basierend auf dem Index `K` über die Priorität.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

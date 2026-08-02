@@ -1,6 +1,5 @@
 # AB_MUX_5
 
-
 ![AB_MUX_5](./AB_MUX_5.svg)
 
 * * * * * * * * * *
@@ -54,6 +53,7 @@ Werden Werte außerhalb des Bereichs 0..4 an `K` angelegt, ist das Verhalten und
 
 ## Zustandsübersicht
 Der FB besitzt keine explizite Zustandsmaschine (ECC). Sein Verhalten ist ereignisgesteuert:
+
 1. **Ruhezustand**: Es liegt kein Ereignis vor. Der Ausgangsadapter `OUT` zeigt die zuletzt ausgewählte Eingangsverbindung.
 2. **Umschaltphase**: Bei einem `REQ`-Ereignis wird der Index `K` ausgelesen, die Adapterverbindung umgeschaltet und anschließend `CNF` ausgegeben.
 

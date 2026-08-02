@@ -1,6 +1,5 @@
 # AD_TO_AS
 
-
 ![AD_TO_AS](./AD_TO_AS.svg)
 
 * * * * * * * * * *
@@ -31,6 +30,7 @@ Der Baustein sendet Daten ausschließlich über den Adapter-Plug **AS_OUT** (Dat
 - **Socket AD_IN**:  
   Typ: `adapter::types::unidirectional::AD`  
   Beschreibung: Empfängt einen DWORD-Wert sowie ein zugehöriges Ereignis.
+
 - **Plug AS_OUT**:  
   Typ: `adapter::types::unidirectional::AS`  
   Beschreibung: Sendet einen SINT-Wert sowie ein zugehöriges Ereignis.

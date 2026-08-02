@@ -1,6 +1,5 @@
 # ALR_DEMUX_3
 
-
 ![ALR_DEMUX_3](./ALR_DEMUX_3.svg)
 
 * * * * * * * * * *

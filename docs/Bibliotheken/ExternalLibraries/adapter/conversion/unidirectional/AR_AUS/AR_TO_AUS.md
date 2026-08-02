@@ -1,6 +1,5 @@
 # AR_TO_AUS
 
-
 ![AR_TO_AUS](./AR_TO_AUS.svg)
 
 * * * * * * * * * *
@@ -32,6 +31,7 @@ Der Funktionsblock AR_TO_AUS ist ein Composite-Baustein zur Umwandlung eines REA
 Der FB AR_TO_AUS arbeitet als reiner Datenkonverter ohne eigene Zustandslogik. Intern wird der vordefinierte Baustein `F_REAL_TO_USINT` aus der IEC-61131-Standardbibliothek verwendet.
 
 Ablauf:
+
 1. Ein eingehendes Ereignis an `AR_IN.E1` triggert die Verarbeitung.
 2. Der aktuelle Wert von `AR_IN.D1` (REAL) wird an den Eingang `IN` des internen Konverters übergeben.
 3. Nach Abschluss der Konvertierung wird der Ergebniswert (USINT) an `AUS_OUT.D1` weitergeleitet.

@@ -1,7 +1,5 @@
 # E_MOVE
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -49,9 +47,6 @@ Dieser Mechanismus reduziert die Anzahl der Ereignisse im System, indem er nur b
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **`E_D_FF`**: Funktional sehr ähnlich, aber `E_D_FF` ist spezifisch auf den Datentyp `BOOL` ausgelegt. `E_MOVE` ist die generische `ANY`-Variante davon.
 - **Direkte Verbindung**: Im Gegensatz zu einer direkten Verbindung von Daten und Ereignissen, die bei jeder Ausführung weitergeleitet werden, fügt `E_MOVE` eine "Änderungs-Firewall" ein.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

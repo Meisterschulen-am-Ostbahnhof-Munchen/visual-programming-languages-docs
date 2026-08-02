@@ -1,6 +1,5 @@
 # AUDI_MUL_2
 
-
 ![AUDI_MUL_2](./AUDI_MUL_2.svg)
 
 **Bild:** Kein Bild vorhanden.

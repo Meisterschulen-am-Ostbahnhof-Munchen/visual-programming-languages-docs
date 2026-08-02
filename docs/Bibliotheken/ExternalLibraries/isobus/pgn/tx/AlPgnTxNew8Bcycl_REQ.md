@@ -1,7 +1,5 @@
 # AlPgnTxNew8Bcycl_REQ
 
-
-
 <img width="1413" height="270" alt="image" src="https://github.com/user-attachments/assets/ec75d797-bd6e-4395-a60e-0a0677b04e1d" />
 
 * * * * * * * * * *
@@ -55,6 +53,7 @@ Der Funktionsblock `AlPgnTxNew8Bcycl_REQ` dient zur zyklischen Übertragung von 
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft implizit folgende Hauptzustände:
+
 1.  **Nicht initialisiert**: Der Block ist nach dem Start inaktiv.
 2.  **Initialisiert (Bereit)**: Nach erfolgreichem `INIT`/`INITO` wartet der Block auf eine Installationsanforderung.
 3.  **PGN installiert (Aktiv)**: Nach erfolgreichem `install`/`installO` ist die PGN konfiguriert. Bei `u16DefRepRate` > 0 sendet der Block zyklisch Daten und löst dabei `CNF` aus. Er reagiert weiterhin auf Fehlerbedingungen.
@@ -67,9 +66,6 @@ Der Funktionsblock durchläuft implizit folgende Hauptzustände:
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Vs. Einmal-Sende-Blöcke (z.B. `AlPgnTx_REQ`)**: Dieser Block ist für **wiederholtes, periodisches** Senden ausgelegt, während einfache TX-Blöcke typischerweise ein einmaliges Senden pro Auslöseereignis durchführen.
 *   **Vs. Blöcke mit interner Datenspeicherung**: Die Verwendung eines **Callback-Adapters** unterscheidet diesen Block von solchen, bei denen die Daten direkt an einem Eingang bereitgestellt werden. Dies macht ihn flexibler, wenn sich die Daten häufig ändern oder aus komplexen Quellen stammen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

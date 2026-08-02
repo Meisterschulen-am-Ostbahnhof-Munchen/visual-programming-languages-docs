@@ -1,6 +1,5 @@
 # ALI_MUX_5
 
-
 ![ALI_MUX_5](./ALI_MUX_5.svg)
 
 * * * * * * * * * *
@@ -62,6 +61,7 @@ Keine direkten Datenausgänge vorhanden. Die Ausgangsdaten werden über den Adap
 ## Zustandsübersicht
 
 Der Baustein besitzt keine expliziten Zustandsautomaten (keine ECC‑Zustände definiert). Die Ablaufsteuerung erfolgt rein ereignisgesteuert:
+
 - **IDLE**: Warten auf **REQ**.
 - **Busy**: Nach Empfang von **REQ** wird die Adapterverbindung umgeschaltet und **CNF** ausgelöst. Danach kehrt der FB sofort in den IDLE‑Zustand zurück.
 

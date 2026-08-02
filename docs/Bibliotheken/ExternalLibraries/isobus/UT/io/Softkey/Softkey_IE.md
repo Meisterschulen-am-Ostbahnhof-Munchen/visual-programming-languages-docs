@@ -1,6 +1,5 @@
 # Softkey_IE
 
-
 ## 🎧 Podcast
 
 * [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
@@ -54,9 +53,6 @@ Der Funktionsblock verfügt über einen initialisierten und einen Betriebszustan
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu generischen Eingabebausteinen bietet Softkey_IE spezifische ISO 11783-6-Konformität und ist optimiert für die Anforderungen landwirtschaftlicher und mobiler Arbeitsmaschinen. Die Integration von SoftKeyActivationCode ermöglicht eine standardisierte Ereignisbehandlung.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

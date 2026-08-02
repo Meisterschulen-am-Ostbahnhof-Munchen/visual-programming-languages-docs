@@ -1,7 +1,5 @@
 # Funk_DI_S
 
-
-
 Funk_DI Struct
 
 ## Structure
@@ -9,8 +7,6 @@ Funk_DI Struct
 | Name | Type | Initial Value |
 | :--- | :--- | :--- |
 | Pin | SINT | 127 |
-
-
 
 ## 🛠️ Zugehörige Übungen
 

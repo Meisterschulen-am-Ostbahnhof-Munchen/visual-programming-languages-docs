@@ -1,7 +1,5 @@
 # AX_DEMUX_4
 
-
-
 <img width="1220" height="274" alt="image" src="https://github.com/user-attachments/assets/b2301b38-e22d-4369-99f4-29de847e9d20" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der AX_DEMUX_4 arbeitet als 4-fach-Demultiplexer. Bei Empfang eines REQ-Ereignis
 
 ## Zustandsübersicht
 Der Funktionsblock besitzt einen einfachen Zustandsautomaten:
+
 1. **Wartezustand**: Bereit für REQ-Ereignis
 2. **Verarbeitungszustand**: Auswertung von K und Datenverteilung
 3. **Bestätigungszustand**: Auslösung von CNF nach erfolgreicher Operation

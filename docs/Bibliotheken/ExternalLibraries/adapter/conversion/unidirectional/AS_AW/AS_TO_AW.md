@@ -1,6 +1,5 @@
 # AS_TO_AW
 
-
 ![AS_TO_AW](./AS_TO_AW.svg)
 
 * * * * * * * * * *
@@ -13,11 +12,13 @@ Der Funktionsbaustein **AS_TO_AW** ist ein zusammengesetzter Baustein (Composite
 ### **Ereignis-Eingänge**
 *Keine direkten Ereignis-Eingänge.*  
 Der Baustein besitzt einen **Socket** vom Typ `AS`, der indirekt einen Ereignis-Eingang bereitstellt:
+
 - **AS_IN.E1** – Ereignis-Eingang über den Socket; ein eingehendes Ereignis löst die Konvertierung aus.
 
 ### **Ereignis-Ausgänge**
 *Keine direkten Ereignis-Ausgänge.*  
 Der Baustein besitzt einen **Plug** vom Typ `AW`, der indirekt einen Ereignis-Ausgang bereitstellt:
+
 - **AW_OUT.E1** – Ereignis-Ausgang über den Plug; nach erfolgreicher Konvertierung wird ein Ereignis gesendet.
 
 ### **Daten-Eingänge**

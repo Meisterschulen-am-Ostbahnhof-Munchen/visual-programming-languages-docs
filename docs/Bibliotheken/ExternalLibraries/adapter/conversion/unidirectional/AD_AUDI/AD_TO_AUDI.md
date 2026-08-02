@@ -1,7 +1,5 @@
 # AD_TO_AUDI
 
-
-
 ## Einleitung
 Der AD_TO_AUDI Funktionsblock ist ein spezialisierter Adapter-Konvertierungsbaustein. Er dient dazu, einen unidirektionalen **AD** (DWORD) Adapter-Socket in einen unidirektionalen **AUDI** (UDINT) Adapter-Plug umzuwandeln.
 
@@ -26,8 +24,6 @@ Sobald am `AD_IN` ein Ereignis (`E1`) zusammen mit Daten (`D1`) eintrifft, wird 
 ## Anwendungsszenarien
 - Anbindung von ISOBUS-Eingabebausteinen (die oft DWORD liefern) an numerische Verarbeitungslogik auf Adapter-Basis.
 - Protokoll- und Typanpassung in komplexen Baustein-Netzwerken.
-
-
 
 ## 🛠️ Zugehörige Übungen
 

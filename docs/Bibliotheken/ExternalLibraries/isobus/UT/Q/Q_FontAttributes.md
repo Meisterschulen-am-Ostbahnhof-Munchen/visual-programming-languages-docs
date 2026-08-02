@@ -1,7 +1,5 @@
 # Q_FontAttributes
 
-
-
 ![Q_FontAttributes](https://user-images.githubusercontent.com/116869307/214147610-3b768d9e-7d5f-4260-abb0-1393bea3f0ff.png)
 
 * * * * * * * * * *
@@ -103,6 +101,7 @@ Der Q_FontAttributes-Baustein bietet die Standardimplementierung für Schriftatt
 - **Robust**: ISO-konforme Fehlerbehandlung
 
 Unverzichtbar für:
+
 - Dynamische Textdarstellungen
 - Barrierefreie Anwendungen
 - Designflexible VT-Oberflächen

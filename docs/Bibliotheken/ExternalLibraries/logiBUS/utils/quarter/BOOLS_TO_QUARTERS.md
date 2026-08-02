@@ -6,7 +6,6 @@
 
 ---- 
 
-
 <img width="1372" height="473" alt="image" src="https://github.com/user-attachments/assets/29cc86f3-ca17-48a7-8143-0a020e5cabcb" />
 
 * * * * * * * * * *
@@ -36,6 +35,7 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 `BOOLS_TO_QUARTERS` ist ein Composite FB, der intern aus 16 Instanzen eines Basisfunktionsblocks `BOOL_TO_QUARTER` aufgebaut ist. Jede Instanz ist für die Konvertierung eines einzelnen booleschen Wertes zuständig.
 
 Die Funktionsweise folgt einem seriellen Kettenprinzip:
+
 1.  Das eingehende `REQ`-Ereignis triggert die erste interne Instanz `BOOL_TO_QUARTER_00`.
 2.  Diese Instanz liest ihren zugeordneten Daten-Eingang `I_00`, führt die Konvertierung durch und setzt ihren Ausgang `QB_00`.
 3.  Nach Abschluss ihrer Operation generiert `BOOL_TO_QUARTER_00` ein `CNF`-Ereignis, das direkt als `REQ`-Ereignis für die nächste Instanz (`BOOL_TO_QUARTER_01`) weitergeleitet wird.
@@ -51,6 +51,7 @@ Die Datenpfade sind parallel organisiert: Jeder boolesche Eingang `I_xx` ist dir
 
 ## Zustandsübersicht
 Als Composite FB ohne eigene, explizite Zustandsmaschine besitzt `BOOLS_TO_QUARTERS` keinen internen Zustand im engeren Sinne. Sein Verhalten wird vollständig durch die Kaskade der untergeordneten Blöcke und deren Zustände bestimmt. Der Block kann sich in einem von zwei makroskopischen Zuständen befinden:
+
 1.  **Idle:** Warten auf ein `REQ`-Ereignis. Alle Ausgänge behalten ihren letzten Wert.
 2.  **Verarbeitend (Processing):** Ein `REQ`-Ereignis läuft durch die Kaskade der 16 internen Blöcke. Während dieser Phase werden die Ausgänge nacheinander aktualisiert.
 
@@ -62,9 +63,6 @@ Als Composite FB ohne eigene, explizite Zustandsmaschine besitzt `BOOLS_TO_QUART
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **Gegenüber `BOOL_TO_QUARTER`:** `BOOLS_TO_QUARTERS` ist im Wesentlichen ein Array aus 16 `BOOL_TO_QUARTER`-Blöcken mit einer fest verdrahteten seriellen Ereigniskette. Während `BOOL_TO_QUARTER` eine einzelne Konvertierung durchführt, aggregiert `BOOLS_TO_QUARTERS` viele solcher Konvertierungen in einem wiederverwendbaren Baustein.
 *   **Gegenüber generischen Pack-Blöcken (z.B. `BOOLx_TO_BYTE`):** Blöcke wie `BOOL8_TO_BYTE` packen mehrere BOOL-Werte in die Bits eines einzelnen BYTEs. `BOOLS_TO_QUARTERS` hingegen erzeugt für jeden Eingang ein eigenes (wenn auch nur teilweise genutztes) BYTE. Es findet keine Bit-Packung in ein gemeinsames Byte statt, sondern eine 1:1-Abbildung auf ein spezielles Kodierungsformat.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

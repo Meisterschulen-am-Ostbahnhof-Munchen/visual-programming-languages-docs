@@ -1,9 +1,5 @@
 # BCD Konvertierungen
 
-
-
-
-
 ## 🎧 Podcast
 
 * [Das Ingenieurs-Datenblatt des VBCD Ventils entschlüsselt](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Ingenieurs-Datenblatt-des-VBCD-Ventils-entschlsselt-e3bgpd5)

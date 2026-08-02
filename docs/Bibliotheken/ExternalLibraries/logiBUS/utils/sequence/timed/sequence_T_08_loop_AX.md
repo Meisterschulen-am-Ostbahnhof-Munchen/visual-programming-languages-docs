@@ -1,8 +1,5 @@
 # sequence_T_08_loop_AX
 
-
-
-
 ![sequence_T_08_loop_AX_ecc](./sequence_T_08_loop_AX_ecc.svg)
 
 * * * * * * * * * *
@@ -44,11 +41,6 @@ Für zeitgesteuerte zyklische 8-stufige Sequenzen mit Adapteranbindung.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 *   **sequence_T_08_loop**: Standardvariante ohne Adapter.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

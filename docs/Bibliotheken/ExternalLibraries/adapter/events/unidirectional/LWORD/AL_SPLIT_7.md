@@ -1,6 +1,5 @@
 # AL_SPLIT_7
 
-
 ![AL_SPLIT_7](./AL_SPLIT_7.svg)
 
 *(Bild des Funktionsblocks nicht verfügbar)*

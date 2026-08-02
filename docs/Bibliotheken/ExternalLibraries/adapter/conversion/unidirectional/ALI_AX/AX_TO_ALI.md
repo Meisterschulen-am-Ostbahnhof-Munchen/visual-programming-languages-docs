@@ -1,6 +1,5 @@
 # AX_TO_ALI
 
-
 ![AX_TO_ALI](./AX_TO_ALI.svg)
 
 * * * * * * * * * *
@@ -43,6 +42,7 @@ Damit wird eine synchrone, ereignisgesteuerte Umsetzung von BOOL in LINT realisi
 ## Technische Besonderheiten
 - **Lizenz**: Der Baustein ist unter der **Eclipse Public License 2.0 (EPL‑2.0)** veröffentlicht.  
   Copyright © 2026 HR Agrartechnik GmbH.
+
 - **Autor & Version**: Entwickelt von Franz Höpfinger, Version 1.0, Stand 2026‑02‑17.
 - **Adapter‑Paket**: Verwendet Adapter aus dem Paket `adapter::types::unidirectional`, die für eine einseitige Daten‑ und Ereignisübertragung ausgelegt sind.
 - **Interne Realisierung**: Die Konvertierung erfolgt über den IEC‑61131‑Baustein `F_BOOL_TO_LINT` aus der Bibliothek `iec61131::conversion`. Dieser Baustein arbeitet deterministisch und benötigt keine Zwischenspeicher.

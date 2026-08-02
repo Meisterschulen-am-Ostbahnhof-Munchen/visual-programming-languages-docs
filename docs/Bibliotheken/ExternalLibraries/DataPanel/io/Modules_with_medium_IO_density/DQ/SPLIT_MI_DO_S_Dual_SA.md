@@ -1,6 +1,5 @@
 # SPLIT_MI_DO_S_Dual_SA
 
-
 ![SPLIT_MI_DO_S_Dual_SA](./SPLIT_MI_DO_S_Dual_SA.svg)
 
 * * * * * * * * * *

@@ -1,6 +1,5 @@
 # AIWS_D_FF_TMIN
 
-
 ![AIWS_D_FF_TMIN](./AIWS_D_FF_TMIN.svg)
 
 * * * * * * * * * *
@@ -55,6 +54,7 @@ Die Verbindung im FBNetzwerk stellt sicher, dass Ereignisse und Daten korrekt zw
 
 ## Zustandsübersicht
 Der FB besitzt im Wesentlichen zwei Betriebsmodi:
+
 - **Initialisierungsphase:** Nach Empfang von `INIT` wird der interne Timer und das Flip-Flop zurückgesetzt. Nach Abschluss wird `INITO` gesendet.
 - **Normalbetrieb:** Nach der Initialisierung wartet der Baustein auf CLK-Ereignisse (`I.E1`). Bei jedem CLK wird der Datenwert gelatcht. Ein EO-Ereignis (`Q.E1`) wird erst dann ausgelöst, wenn die seit dem letzten EO verstrichene Zeit **≥ Tmin** ist. Falls die Bedingung nicht erfüllt ist, wird das EO verzögert.
 

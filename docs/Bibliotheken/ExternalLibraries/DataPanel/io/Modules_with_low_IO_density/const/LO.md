@@ -1,8 +1,6 @@
 # LO
 
-
 ## 🎧 Podcast
-
 
 ![LO](./LO.svg)
 

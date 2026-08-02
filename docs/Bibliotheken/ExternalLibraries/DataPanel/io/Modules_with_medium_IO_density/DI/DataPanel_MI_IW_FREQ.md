@@ -1,6 +1,5 @@
 # DataPanel_MI_IW_FREQ
 
-
 ![DataPanel_MI_IW_FREQ](./DataPanel_MI_IW_FREQ.svg)
 
 *Kein Bild verfügbar.*

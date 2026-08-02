@@ -1,6 +1,5 @@
 # AD_DEMUX_2
 
-
 ![AD_DEMUX_2](./AD_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Keine Datenausgänge vorhanden.
 
 ## Funktionsweise
 Wird das Ereignis `REQ` ausgelöst, wird der im Socket `IN` anliegende AD-Adapter entsprechend des aktuellen Werts von `K` an einen der beiden Plugs weitergeleitet:
+
 - `K = 0` → Verbindung von `IN` nach `OUT1`
 - `K = 1` → Verbindung von `IN` nach `OUT2`
 

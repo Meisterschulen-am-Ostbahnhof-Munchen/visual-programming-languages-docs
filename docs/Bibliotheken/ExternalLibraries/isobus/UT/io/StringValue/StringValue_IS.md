@@ -1,6 +1,5 @@
 # StringValue_IS
 
-
 ![StringValue_IS](./StringValue_IS.svg)
 
 * * * * * * * * * *

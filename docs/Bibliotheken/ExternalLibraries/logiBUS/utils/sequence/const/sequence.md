@@ -1,8 +1,5 @@
 # sequence
 
-
-
-
 ![sequence](./sequence.svg)
 
 * * * * * * * * * *

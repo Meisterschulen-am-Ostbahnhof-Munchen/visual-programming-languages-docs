@@ -1,7 +1,5 @@
 # AX_TOF
 
-
-
 <img width="962" height="255" alt="image" src="https://github.com/user-attachments/assets/b86d8399-ca0b-492c-b20c-52dde7069371" />
 
 * * * * * * * * * *
@@ -58,17 +56,13 @@ Der AX_TOF Block implementiert eine Ausschaltverzögerung (Off-Delay). Bei einem
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu anderen Timer-Bausteinen bietet AX_TOF:
+
 - Spezialisiert auf Ausschaltverzögerungen
 - Adapter-basierte Schnittstelle für modularen Aufbau
 - Integrierte Reset-Funktionalität
 - Standardisierte TIME-Datentypen
 
 Vergleich mit [E_TOF](../../../../../../StandardLibraries/events/timers/E_TOF.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

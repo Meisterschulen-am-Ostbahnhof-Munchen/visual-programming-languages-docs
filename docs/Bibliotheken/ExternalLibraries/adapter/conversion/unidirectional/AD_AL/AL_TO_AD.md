@@ -1,6 +1,5 @@
 # AL_TO_AD
 
-
 ![AL_TO_AD](./AL_TO_AD.svg)
 
 * * * * * * * * * *
@@ -31,6 +30,7 @@ Der Funktionsblock **AL_TO_AD** ist ein Composite-FB, der einen unidirektionalen
 Der FB nimmt über den **AL_IN**-Socket ein LWORD-Datenwort (`D1`) zusammen mit einem Ereignis (`E1`) entgegen. Das Ereignis durchläuft den internen Funktionsblock **F_LWORD_TO_DWORD**, der die Konvertierung gemäß IEC 61131-Standard durchführt. Nach erfolgreicher Umwandlung wird das Ergebnis als DWORD (`AD_OUT.D1`) über den Plug ausgegeben, begleitet von einem Ereignis (`AD_OUT.E1`).
 
 Die interne Netzwerkstruktur besteht aus:
+
 - Einem **F_LWORD_TO_DWORD**-Baustein (aus der Bibliothek `iec61131::conversion`)
 - Ereignisverbindung: `AL_IN.E1` → `Convert.REQ` / `Convert.CNF` → `AD_OUT.E1`
 - Datenverbindung: `AL_IN.D1` → `Convert.IN` / `Convert.OUT` → `AD_OUT.D1`
@@ -43,6 +43,7 @@ Die interne Netzwerkstruktur besteht aus:
 
 ## Zustandsübersicht
 Der FB **AL_TO_AD** besitzt keinen eigenen Zustandsautomaten, da er als Composite-FB realisiert ist. Die Zustandslogik wird vollständig durch den internen FB **F_LWORD_TO_DWORD** abgebildet:
+
 1. **Warten** – Kein Ereignis am Eingang vorhanden.
 2. **Konvertieren** – Nach Empfang eines Ereignisses wird die Umwandlung der LWORD-Daten durchgeführt (ein Taktzyklus).
 3. **Ausgeben** – Das DWORD-Ergebnis und ein Bestätigungsereignis werden am Ausgangsadapter bereitgestellt.

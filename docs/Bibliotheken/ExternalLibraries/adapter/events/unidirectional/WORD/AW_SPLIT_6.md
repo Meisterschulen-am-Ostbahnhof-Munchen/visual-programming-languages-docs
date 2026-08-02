@@ -2,7 +2,6 @@
 
 Bild nicht verfügbar
 
-
 ![AW_SPLIT_6](./AW_SPLIT_6.svg)
 
 * * * * * * * * * *

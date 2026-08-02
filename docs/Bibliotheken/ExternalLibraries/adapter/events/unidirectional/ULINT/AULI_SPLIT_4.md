@@ -1,6 +1,5 @@
 # AULI_SPLIT_4
 
-
 ![AULI_SPLIT_4](./AULI_SPLIT_4.svg)
 
 * * * * * * * * * *

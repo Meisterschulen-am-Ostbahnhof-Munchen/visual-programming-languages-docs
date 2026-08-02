@@ -1,9 +1,6 @@
 # sequence_T_05
 
-
-
 <img width="1422" height="375" alt="image" src="https://github.com/user-attachments/assets/36968bc8-cd20-4156-b33e-56e693a8c7d8" />
-
 
 ![sequence_T_05_ecc](./sequence_T_05_ecc.svg)
 
@@ -28,6 +25,7 @@ Der Funktionsblock `sequence_T_05` ist ein zeitgesteuerter Sequenzer mit fünf A
 
 ### **Daten-Eingänge**
 Alle Zeitdaten-Eingänge sind vom Typ `TIME` und haben den Initialwert `NO_TIME`. Sie definieren die Verweildauer im jeweiligen Zustand, bevor der automatische Übergang zum nächsten Zustand erfolgt.
+
 *   **`DT_S1_S2`**: Verweildauer in `State_01` vor dem Übergang zu `State_02`.
 *   **`DT_S2_S3`**: Verweildauer in `State_02` vor dem Übergang zu `State_03`.
 *   **`DT_S3_S4`**: Verweildauer in `State_03` vor dem Übergang zu `State_04`.

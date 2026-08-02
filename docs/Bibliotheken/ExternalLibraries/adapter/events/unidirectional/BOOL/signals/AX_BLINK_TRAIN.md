@@ -1,7 +1,5 @@
 # AX_BLINK_TRAIN
 
-
-
 * * * * * * * * * *
 ## Einleitung
 Der AX_BLINK_TRAIN ist ein Funktionsblock, der ein Zug-Blinksignal (abwechselnd zwei Lampen) über AX-Adapter ausgibt.
@@ -32,9 +30,6 @@ Bahnübergänge, Warnsignale.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - Keine direkte Standard-Entsprechung.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -1,5 +1,2 @@
 # Datentyp: LDT
 
-
-
-

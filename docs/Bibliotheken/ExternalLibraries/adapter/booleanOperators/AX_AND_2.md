@@ -1,7 +1,5 @@
 # AX_AND_2
 
-
-
 <img width="1009" height="265" alt="image" src="https://github.com/user-attachments/assets/e9225b9f-ba25-427f-bf49-71f15c562b73" />
 
 * * * * * * * * * *
@@ -52,11 +50,6 @@ Da es sich um einen kombinatorischen Logikbaustein handelt, besitzt der AX_AND_2
 Im Vergleich zu standardmäßigen UND-Bausteinen verwendet AX_AND_2 Adapter-basierte Schnittstellen anstelle von direkten Daten- und Ereignisein-/ausgängen. Dies ermöglicht eine flexiblere Integration in Adapter-basierte Systemarchitekturen.
 
 Vergleich [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.md)
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

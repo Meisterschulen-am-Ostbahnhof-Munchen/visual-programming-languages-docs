@@ -1,6 +1,5 @@
 # AR2
 
-
 ![AR2](./AR2.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Keine definiert.
 
 ## Funktionsweise
 Der AR2-Adapter arbeitet ereignisgesteuert und bidirektional:
+
 - Wird der Ereigniseingang **EI1** ausgelöst, so wird der aktuell an **DI1** anliegende REAL-Wert zum gegenüberliegenden Adapterende übertragen. Dort erscheint das Ereignis **EO1** zusammen mit dem Wert auf **DO1**.
 - In der Gegenrichtung gilt das Gleiche: Triggert der verbundene Gegenadapter sein Ereignis, so empfängt dieser AR2 das Ereignis an **EI1** und stellt den empfangenen Wert an **DI1** bereit.
 

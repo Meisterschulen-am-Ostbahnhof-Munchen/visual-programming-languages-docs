@@ -1,6 +1,5 @@
 # IA_RHS
 
-
 ![IA_RHS](./IA_RHS.svg)
 
 * * * * * * * * * *
@@ -59,6 +58,7 @@ Der Baustein wird durch das Ereignis **INIT** aktiviert. Dabei wird das Qualifie
 ## Zustandsübersicht
 
 Der Baustein besitzt keine explizit modellierten Zustände. Sein Verhalten wird durch den internen Baustein I_RHS bestimmt:
+
 - **Initialisierung (INIT)**: Der Qualifier QI steuert die Aktivierung.
 - **Betrieb**: Nach erfolgreicher Initialisierung liefert I_RHS zyklisch oder ereignisgesteuert neue Daten an die Adapter.
 - **Fehler/Timeout**: Ein Timeout wird über den Adapter TIMEOUT signalisiert, der Status über den Ausgang **STATUS** als Text.

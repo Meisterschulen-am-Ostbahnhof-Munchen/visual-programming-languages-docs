@@ -1,6 +1,5 @@
 # GET_BOOL
 
-
 ![GET_BOOL](./GET_BOOL.svg)
 
 * * * * * * * * * *

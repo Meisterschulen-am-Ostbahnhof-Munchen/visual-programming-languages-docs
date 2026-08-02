@@ -1,6 +1,5 @@
 # AUDI_FIELDBUS_UDINT_TO_SIGNAL
 
-
 ![AUDI_FIELDBUS_UDINT_TO_SIGNAL](./AUDI_FIELDBUS_UDINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
@@ -47,6 +46,7 @@ Der Baustein enthält zwei interne Funktionsblöcke:
 2. **`E_D_FF`** – Ein flankengesteuertes D‑Flipflop, das das Gültigkeitssignal synchronisiert.
 
 Der Ablauf:
+
 - Ein Ereignis auf `IN.E1` triggert den Verarbeitungsblock `FIELDBUS_UDINT_TO_SIGNAL` (Eingang `REQ`).
 - Dieser block liest `IN.D1` und gibt nach Abschluss auf `CNF` ein Ereignis aus.
 - Das Ereignis `CNF` wird an drei Stellen weitergeleitet:

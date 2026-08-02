@@ -1,9 +1,6 @@
 # E_SREN
 
-
-
 <img width="1633" height="341" alt="image" src="https://github.com/user-attachments/assets/637ba12a-c1ae-4cc7-a7c5-06b2888347d5" />
-
 
 ![E_SREN_ecc](./E_SREN_ecc.svg)
 
@@ -46,6 +43,7 @@ Anschließend prüft eine Bedingung, ob sich der neue Wert von `Q` oder `QB` geg
 
 ## Zustandsübersicht
 Der ECC (Execution Control Chart) besteht aus sechs Zuständen:
+
 1.  **START:** Initialer und Ruhezustand.
 2.  **SET:** Wird bei Ereignis `S` aktiviert. Setzt `Q=TRUE`, `QB=COMMAND_ENABLE`.
 3.  **RESET:** Wird bei Ereignis `R` aktiviert. Setzt `Q=FALSE`, `QB=COMMAND_DISABLE`.

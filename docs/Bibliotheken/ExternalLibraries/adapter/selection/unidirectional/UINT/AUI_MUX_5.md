@@ -1,6 +1,5 @@
 # AUI_MUX_5
 
-
 ![AUI_MUX_5](./AUI_MUX_5.svg)
 
 * * * * * * * * * *

@@ -1,9 +1,6 @@
 # BYTES_TO_ARR08B
 
-
-
 <img width="1102" height="362" alt="image" src="https://github.com/user-attachments/assets/a1d78d97-bc58-4056-8fa5-6127a949d1fc" />
-
 
 ![BYTES_TO_ARR08B](./BYTES_TO_ARR08B.svg)
 
@@ -56,9 +53,6 @@ Der Funktionsblock ist zustandslos (stateless). Jeder `REQ`-Aufruf ist unabhäng
 *   **`CONCAT`-Blöcke:** Allgemeine Blöcke zum Verketten von Strings sind nicht direkt vergleichbar, da sie auf den Datentyp `STRING` ausgelegt sind.
 *   **Manuelle Zuweisung in ST:** Die Funktionalität könnte direkt in einem ST-Programm durch Zuweisungen realisiert werden. Der Funktionsblock kapselt diese Logik jedoch für eine bessere Wiederverwendbarkeit, Lesbarkeit und Wartbarkeit innerhalb von FBD-/LD-Diagrammen.
 *   **Individuelle Array-Bausteine:** Im Gegensatz zu universellen Array-Bausteinen, die über Indexeingänge verfügen, ist `BYTES_TO_ARR08B` für eine spezifische, feste Aufgabe optimiert und daher einfacher und schneller in der Anwendung.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

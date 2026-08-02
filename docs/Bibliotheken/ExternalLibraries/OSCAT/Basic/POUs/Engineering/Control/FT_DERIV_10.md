@@ -2,8 +2,6 @@
 
 # FT_DERIV_10
 
-
-
 Derivative with variable window size (0..9 periods)
 
 ## Interface
@@ -58,8 +56,6 @@ Derivative with variable window size (0..9 periods)
 | DI_8 | REAL | Delta In over 9 period |
 | DT_9 | UDINT | Delta T over 10 period |
 | DI_9 | REAL | Delta In over 10 period |
-
-
 
 ## 🛠️ Zugehörige Übungen
 

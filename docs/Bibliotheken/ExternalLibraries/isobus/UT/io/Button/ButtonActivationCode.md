@@ -1,8 +1,5 @@
 # ButtonActivationCode
 
-
-
-
 ![ButtonActivationCode](./ButtonActivationCode.svg)
 
 * * * * * * * * * *

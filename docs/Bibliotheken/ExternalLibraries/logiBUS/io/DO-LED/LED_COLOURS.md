@@ -1,8 +1,5 @@
 # LED_COLOURS
 
-
-
-
 ![LED_COLOURS](./LED_COLOURS.svg)
 
 * * * * * * * * * *
@@ -54,6 +51,7 @@ LED_COLOURS definiert eine Sammlung globaler Konstanten vom Typ UINT (16-Bit vor
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken mit dynamischem Verhalten handelt es sich hier um rein statische Konstantendefinitionen. Ähnliche Konstrukte wären:
+
 - ENUM-Datentypen für Farbdefinitionen
 - #define-Präprozessoranweisungen in C/C++
 - Konstanten-Blöcke in anderen IEC 61131-Sprachen

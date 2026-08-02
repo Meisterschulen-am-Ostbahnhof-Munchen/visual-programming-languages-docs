@@ -1,7 +1,5 @@
 # Q_Size
 
-
-
 ![Q_Size](https://user-images.githubusercontent.com/116869307/214153095-72c9e230-b193-4843-be85-33038f6bd44d.png)
 
 * * * * * * * * * *
@@ -96,6 +94,7 @@ Der Q_Size-Baustein bietet präzise Größensteuerung:
 - **Zuverlässig**: ISO-konforme Implementierung
 
 Unverzichtbar für:
+
 - Adaptive Benutzeroberflächen
 - Dynamische Visualisierungen
 - Professionelle VT-Anwendungen

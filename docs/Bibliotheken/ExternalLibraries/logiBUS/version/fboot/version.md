@@ -1,8 +1,6 @@
 # version
 
-
 ## 🎧 Podcast
-
 
 ![version](./version.svg)
 

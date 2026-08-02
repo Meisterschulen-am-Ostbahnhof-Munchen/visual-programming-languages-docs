@@ -1,6 +1,5 @@
 # AUDI_GE
 
-
 ![AUDI_GE](./AUDI_GE.svg)
 
 * * * * * * * * * *
@@ -18,6 +17,7 @@ Der Funktionsblock `AUDI_GE` führt einen Vergleich zweier Werte auf „größer
 
 ### **Daten‑Eingänge**
 Die Datenwerte, die verglichen werden sollen, werden über die Adapter bezogen:
+
 - **Adapter `IN1`** – liefert den ersten Vergleichswert (Typ entsprechend dem Adapter `AUDI`).
 - **Adapter `IN2`** – liefert den zweiten Vergleichswert (Typ entsprechend dem Adapter `AUDI`).
 
@@ -47,6 +47,7 @@ Die Datenwerte, die verglichen werden sollen, werden über die Adapter bezogen:
 
 ## Zustandsübersicht
 Der Baustein selbst besitzt keinen expliziten Zustandsautomaten – die gesamte Steuerlogik liegt im internen `F_GE`. Sein Verhalten ist deterministisch:
+
 - **Warten auf Trigger**: Solange kein Ereignis an `IN1` oder `IN2` eintrifft, bleibt der Ausgang `OUT` unverändert.
 - **Berechnung**: Bei Eintreffen eines Ereignisses wird der Vergleich ausgeführt.
 - **Ergebnisausgabe**: Das Ergebnis wird am Ausgang bereitgestellt und ein Ereignis am `OUT`‑Adapter gesendet.

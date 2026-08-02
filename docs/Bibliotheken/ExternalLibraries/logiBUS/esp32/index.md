@@ -1,8 +1,5 @@
 # esp32
 
-
-
-
 ## 📺 Video
 
 * [Das ESP32-S3-DevKitC-1](https://www.youtube.com/watch?v=fyQt3THIQEQ)

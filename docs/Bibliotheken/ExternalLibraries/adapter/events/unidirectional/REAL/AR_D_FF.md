@@ -1,6 +1,5 @@
 # AR_D_FF
 
-
 ![AR_D_FF](./AR_D_FF.svg)
 
 * * * * * * * * * *
@@ -36,6 +35,7 @@ Der AR_D_FF besitzt keine direkten Ereignis- oder Datenein-/ausgänge; die gesam
 
 ## Funktionsweise
 Der Baustein arbeitet nach dem Prinzip eines flankengesteuerten D‑Flipflops:
+
 1. Ein Ereignis am Takteingang **I.E1** aktiviert die Übernahme.
 2. Zum Zeitpunkt der positiven Flanke wird der aktuelle Datenwert **I.D1** intern gespeichert.
 3. Der gespeicherte Wert wird sofort an **Q.D1** ausgegeben.

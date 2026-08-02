@@ -1,8 +1,6 @@
 # E_PERMIT
 
-
 ## 🎧 Podcast
-
 
 ![E_PERMIT_ecc](./E_PERMIT_ecc.svg)
 
@@ -46,11 +44,6 @@ Der Baustein agiert somit als einfacher Wächter für den Ereignisfluss.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 - **`E_SWITCH`**: Während `E_PERMIT` ein Ereignis entweder durchlässt oder blockiert (1-zu-1 oder 1-zu-0), leitet `E_SWITCH` ein Ereignis an einen von zwei verschiedenen Ausgängen weiter (1-zu-2). `E_PERMIT` ist ein Tor, `E_SWITCH` ist eine Weiche.
-
-
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

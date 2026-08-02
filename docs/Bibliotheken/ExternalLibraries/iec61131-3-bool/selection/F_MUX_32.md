@@ -1,6 +1,5 @@
 # F_MUX_32
 
-
 ![F_MUX_32](./F_MUX_32.svg)
 
 * * * * * * * * * *
@@ -45,6 +44,7 @@ Keine Adapter vorhanden.
 ## Funktionsweise
 
 Der FB `F_MUX_32` arbeitet ereignisgesteuert:
+
 1. Ein Ereignis am Eingang **REQ** triggert die Verarbeitung.
 2. Der Selektor **K** (ganzzahliger Wert) wird ausgewertet.
 3. Abhängig vom Wert von K wird der entsprechende Daten-Eingang ausgewählt:

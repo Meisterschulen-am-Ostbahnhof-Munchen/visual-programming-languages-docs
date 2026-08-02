@@ -1,6 +1,5 @@
 # AX_RS_SYM
 
-
 ![AX_RS_SYM](./AX_RS_SYM.svg)
 
 * * * * * * * * * *
@@ -32,6 +31,7 @@ Der FB besitzt keine separaten Daten-Ausgänge. Der aktuelle Zustand wird über 
 
 ## Funktionsweise
 Der Funktionsblock realisiert ein klassisches RS‑Flip‑Flop:
+
 - Bei Eintreffen des Ereignisses `S` wird der Ausgangswert `Q.D1` auf `TRUE` gesetzt und anschließend das Ereignis `Q.E1` ausgelöst.
 - Bei Eintreffen des Ereignisses `R` wird der Ausgangswert `Q.D1` auf `FALSE` gesetzt und ebenfalls `Q.E1` ausgelöst.
 

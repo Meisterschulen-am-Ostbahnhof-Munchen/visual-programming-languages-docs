@@ -1,13 +1,10 @@
 # F_TRUNC
 
-
-
 ![F_TRUNC](https://github.com/user-attachments/assets/b944edcb-c90b-41d8-98e6-3c3b81e50e9f)
 
 * * * * * * * * * *
 
 ![F_TRUNC](F_TRUNC.svg)
-
 
 ## Einführung
 Der **F_TRUNC** ist ein standardkonformer Funktionsbaustein zur Abrundung von Fließkommazahlen in Richtung Null (truncation toward zero), entwickelt unter EPL-2.0 Lizenz. Version 1.0 ermöglicht die typsichere Konvertierung gemäß IEC 61131-3 Standard.

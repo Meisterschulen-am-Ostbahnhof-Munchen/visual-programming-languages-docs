@@ -1,7 +1,5 @@
 # E_MERGE_2
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -22,6 +20,7 @@ Der `E_MERGE_2` ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der 
 
 ## Funktionsweise
 Die Funktion ist einfach und direkt:
+
 - Ein Ereignis am Eingang `EI1` löst sofort ein Ereignis am Ausgang `EO` aus.
 - Ein Ereignis am Eingang `EI2` löst ebenfalls sofort ein Ereignis am Ausgang `EO` aus.
 
@@ -36,9 +35,6 @@ Die Eingänge werden logisch ODER-verknüpft und ohne Priorisierung oder Verzög
 - **Bedienkonzepte**: Zusammenführung von Steuersignalen von zwei Tastern auf eine gemeinsame Funktion.
 - **Sensorik**: Kombination der Trigger-Ereignisse von zwei verschiedenen Sensoren.
 - **Fehlermanagement**: Erstellen einer Sammel-Störmeldung aus zwei potenziellen Fehlerquellen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

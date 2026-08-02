@@ -1,6 +1,5 @@
 # NOOP_INIT
 
-
 ![NOOP_INIT](./NOOP_INIT.svg)
 
 * * * * * * * * * *
@@ -56,6 +55,7 @@ Im Ergebnis wird sowohl bei INIT als auch bei REQ eine Datenweitergabe durchgef�
 
 ## Zustandsübersicht
 Der FB besitzt keinen expliziten Zustandsautomaten, das Verhalten ist rein ereignisgesteuert:
+
 - Im Ruhezustand (kein Ereignis) warten die Eingänge.
 - Bei **INIT** oder **REQ** wird die Datenkopie gestartet; nach deren Abschluss wird `CNF` gesendet. Bei INIT wird zusätzlich sofort `INITO` emittiert.
 

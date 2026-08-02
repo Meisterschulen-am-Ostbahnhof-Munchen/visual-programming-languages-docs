@@ -1,6 +1,5 @@
 # Hysteresis
 
-
 ![Hysteresis](./Hysteresis.svg)
 
 * * * * * * * * * *
@@ -51,6 +50,7 @@ Der Baustein realisiert eine **Analog-Digital-Umwandlung mit Hysterese**. Die Sc
 
 - **Einschaltpunkt** (Switch-on): `THRESHOLD + ABS(HYSTERESIS) / 2.0`  
   (inklusiver Vergleich: `INPUT >= ...`)
+
 - **Ausschaltpunkt** (Switch-off): `THRESHOLD - ABS(HYSTERESIS) / 2.0`  
   (strikter Vergleich: `INPUT < ...`)
 

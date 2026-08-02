@@ -1,8 +1,5 @@
 # logiBUS_AI
 
-
-
-
 ![logiBUS_AI](./logiBUS_AI.svg)
 
 * * * * * * * * * *
@@ -45,6 +42,7 @@ Da es sich um Konstanten handelt, haben diese keine Zustandsänderungen. Die Wer
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Gegensatz zu Funktionsblöcken mit dynamischem Verhalten bieten GlobalConstants:
+
 - Keine Laufzeitberechnungen
 - Keine Ereignisbehandlung
 - Konstanten statt variabler Werte

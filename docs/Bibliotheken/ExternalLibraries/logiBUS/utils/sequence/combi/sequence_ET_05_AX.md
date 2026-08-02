@@ -1,8 +1,5 @@
 # sequence_ET_05_AX
 
-
-
-
 ![sequence_ET_05_AX_ecc](./sequence_ET_05_AX_ecc.svg)
 
 * * * * * * * * * *

@@ -1,6 +1,5 @@
 # AUS_MUX_5
 
-
 ![AUS_MUX_5](./AUS_MUX_5.svg)
 
 * * * * * * * * * *
@@ -53,6 +52,7 @@ Ein ausgehendes Ereignis am **REQ**-Eingang bewirkt, dass der Baustein den aktue
 
 ## Zustandsübersicht
 Der Baustein besitzt keine explizite Zustandsmaschine in der XML-Beschreibung. Das Verhalten ist rein ereignisgesteuert:
+
 - Im Ruhezustand wartet der FB auf ein **REQ**-Ereignis.
 - Nach Empfang von **REQ** wird sofort der Multiplex durchgeführt und **CNF** ausgegeben.
 

@@ -1,7 +1,5 @@
 # Button_IXA
 
-
-
 <img width="1388" height="321" alt="image" src="https://github.com/user-attachments/assets/8f014f19-717a-4392-9d65-ba1fe63e1a6e" />
 
 * * * * * * * * * *
@@ -43,6 +41,7 @@ Der Button_IXA Funktionsblock fungiert als Wrapper um den internen Button_IX Bau
 
 ## Zustandsübersicht
 Der Baustein verfügt über folgende Hauptzustände:
+
 - Nicht initialisiert: Wartet auf INIT-Ereignis
 - Initialisiert: Bereit für REQ-Anfragen
 - Aktiv: Verarbeitet Taster-Eingaben über den Adapter
@@ -55,13 +54,11 @@ Der Baustein verfügt über folgende Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Button_IXA:
+
 - ISOBUS-Kompatibilität
 - Erweiterte Parametrierungsmöglichkeiten
 - Standardisierte Statusrückmeldungen
 - Adapter-basierte Architektur für bessere Wiederverwendbarkeit
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

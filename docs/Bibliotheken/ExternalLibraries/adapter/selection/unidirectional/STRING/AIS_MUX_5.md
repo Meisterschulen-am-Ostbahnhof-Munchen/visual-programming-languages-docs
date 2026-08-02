@@ -1,6 +1,5 @@
 # AIS_MUX_5
 
-
 ![AIS_MUX_5](./AIS_MUX_5.svg)
 
 * * * * * * * * * *
@@ -63,6 +62,7 @@ Wird beispielsweise `K = 2` gesetzt, so werden die am Adapter **IN3** anliegende
 ## Zustandsübersicht
 
 Der Baustein besitzt keine explizite Zustandsmaschine (ECC). Das Verhalten ist rein ereignisgesteuert:  
+
 - Im Ruhezustand wartet er auf ein `REQ`‑Ereignis.  
 - Bei Eintreffen von `REQ` wird der Index ausgewertet, die Umschaltung vorgenommen und unmittelbar `CNF` ausgegeben.
 

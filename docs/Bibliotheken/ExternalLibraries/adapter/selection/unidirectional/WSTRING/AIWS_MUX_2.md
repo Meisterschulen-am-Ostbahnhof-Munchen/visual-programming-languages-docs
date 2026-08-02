@@ -1,6 +1,5 @@
 # AIWS_MUX_2
 
-
 ![AIWS_MUX_2](./AIWS_MUX_2.svg)
 
 * * * * * * * * * *
@@ -39,6 +38,7 @@ Keine (die Signalübergabe erfolgt ausschließlich über Adapter).
 
 ## Funktionsweise
 Bei einem Ereignis am **REQ**-Eingang wird der aktuelle Wert des Index **K** ausgewertet:
+
 - Ist **K = 0**, wird das Signal von **IN1** auf **OUT** durchgeschaltet.
 - Ist **K = 1**, wird das Signal von **IN2** auf **OUT** durchgeschaltet.
 
@@ -52,6 +52,7 @@ Nach erfolgreicher Selektion wird das Ereignis **CNF** ausgegeben. Der Baustein 
 
 ## Zustandsübersicht
 Der Baustein enthält keine explizite Zustandsmaschine (ECC) in der XML-Beschreibung. Das implizite Verhalten lässt sich wie folgt beschreiben:
+
 1. **Ruhezustand** (idle) – es liegt kein REQ-Ereignis an.
 2. Bei REQ erfolgt die Auswertung von K und die sofortige Umschaltung.
 3. Danach wird CNF gesendet und der Baustein kehrt in den Ruhezustand zurück.

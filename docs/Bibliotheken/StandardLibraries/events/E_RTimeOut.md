@@ -1,7 +1,5 @@
 # E_RTimeOut (Resettable Timeout Service)
 
-
-
 ![IEC 61499 Timeout Symbol](https://user-images.githubusercontent.com/113907528/204902807-7fadcd7d-d6e1-47c0-812e-f5c2d80f79e0.png)
 
 * * * * * * * * * *
@@ -64,9 +62,6 @@ Der Baustein verwendet einen **Socket** (Buchse) vom Typ `ARTimeOut`. Da es sich
 | Reset-Funktion | ✔️        | ❌      | ❌      |
 | Schnittstelle | Adapter    | Direkt  | Direkt  |
 | Standard      | 61499-2    | 61499-1 | 61499-1 |
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

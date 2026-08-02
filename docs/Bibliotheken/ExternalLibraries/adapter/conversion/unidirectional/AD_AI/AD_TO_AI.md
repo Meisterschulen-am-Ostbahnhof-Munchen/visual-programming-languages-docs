@@ -1,6 +1,5 @@
 # AD_TO_AI
 
-
 ![AD_TO_AI](./AD_TO_AI.svg)
 
 * * * * * * * * * *
@@ -13,10 +12,12 @@ Der Funktionsbaustein **AD_TO_AI** dient als Konverter zwischen zwei unterschied
 
 ### **Ereignis‑Eingänge**
 Der FB besitzt keine direkten Ereignis‑Eingänge auf oberster Ebene. Die Ereignissteuerung erfolgt über die angeschlossenen Adapter:
+
 - **AD_IN.E1** (Ereignis des Socket‑Adapters) – löst die Konvertierung aus.
 
 ### **Ereignis‑Ausgänge**
 Auch diese werden ausschließlich über die Adapter bereitgestellt:
+
 - **AI_OUT.E1** (Ereignis des Plug‑Adapters) – signalisiert die Fertigstellung der konvertierten Daten.
 
 ### **Daten‑Eingänge**
@@ -54,6 +55,7 @@ Somit wird nach jedem eingehenden Ereignis am Socket automatisch ein konvertiert
 ## Zustandsübersicht
 
 Da es sich um einen Composite‑FB ohne eigene Zustandsmaschine handelt, gibt es keine expliziten Zustände. Der Baustein verhält sich wie ein transparenter Konverter:  
+
 - **Idle:** Wartet auf ein Ereignis am Socket.  
 - **Processing:** Nach Ereigniseingang wird die Konvertierung gestartet; in dieser Phase sind keine weiteren Ereignisse aktiv.  
 - **Done:** Nach der Konvertierung wird das Ausgangsereignis ausgegeben; der Baustein kehrt in den Idle‑Zustand zurück.

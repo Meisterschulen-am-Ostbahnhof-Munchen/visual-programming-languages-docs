@@ -1,6 +1,5 @@
 # ADI_TO_ALR
 
-
 ![ADI_TO_ALR](./ADI_TO_ALR.svg)
 
 * * * * * * * * * *
@@ -36,6 +35,7 @@ Der Funktionsblock **ADI_TO_ALR** ist ein zusammengesetzter Baustein (Composite 
 
 ## Funktionsweise
 Der Baustein führt intern eine direkte Durchleitung durch:
+
 - **Ereignis:** Das eingehende Ereignis `ADI_IN.E1` wird unverzögert auf den Ausgang `ALR_OUT.E1` übertragen.
 - **Daten:** Der ganzzahlige Wert `ADI_IN.D1` (Datentyp DINT) wird ohne Skalierung oder Umrechnung in den Datentyp LREAL konvertiert und als `ALR_OUT.D1` ausgegeben. Die Typumwandlung erfolgt implizit durch die Laufzeitumgebung des IEC 61499‑Systems.
 

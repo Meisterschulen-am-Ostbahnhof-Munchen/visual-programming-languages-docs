@@ -1,7 +1,5 @@
 # F_BOOL_TO_USINT
 
-
-
 <img width="1450" height="212" alt="F_BOOL_TO_USINT" src="https://github.com/user-attachments/assets/72e9600a-837a-49a8-b423-6f5380816310" />
 
 * * * * * * * * * *
@@ -29,6 +27,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 Der Funktionsblock führt die Konvertierung durch, indem er den booleschen Wert `IN` in einen numerischen Wert umwandelt:
+
 - `FALSE` wird zu `0` konvertiert.
 - `TRUE` wird zu `1` konvertiert.
 

@@ -1,6 +1,5 @@
 # AUI_UDINT_GT
 
-
 ![AUI_UDINT_GT](./AUI_UDINT_GT.svg)
 
 * * * * * * * * * *
@@ -50,6 +49,7 @@ Der Baustein vergleicht die beiden Eingangswerte `IN1` und `IN2` nach der **grö
 
 ## Zustandsübersicht
 Der Baustein besitzt keine eigene explizite Zustandsmaschine. Das Verhalten ist rein ereignisgesteuert:
+
 - **Initial:** Warten auf ein Ereignis an `REQ` oder über `IN1.E1`.
 - **Verarbeitung:** Nach Eintreffen eines Ereignisses und gültiger Daten wird der Vergleich ausgeführt.
 - **Ausgabe:** Sofort nach Abschluss wird das Ergebnis über `OUT` zusammen mit einem Ereignis ausgegeben.

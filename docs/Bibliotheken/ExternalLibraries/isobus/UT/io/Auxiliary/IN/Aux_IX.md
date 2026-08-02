@@ -1,7 +1,5 @@
 # Aux_IX
 
-
-
 <img width="1351" height="286" alt="image" src="https://github.com/user-attachments/assets/490e8389-ce94-4dd0-b554-b7010a05fdde" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der Aux_IX Funktionsblock arbeitet als Eingabeservice-Schnittstelle für boolesc
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Zustände:
+
 1. **Nicht initialisiert**: Vor der INIT-Verarbeitung
 2. **Initialisiert**: Nach erfolgreicher INIT-Verarbeitung mit INITO-Bestätigung
 3. **Bereit**: Kann REQ-Anfragen verarbeiten
@@ -59,9 +58,6 @@ Der Funktionsblock durchläuft folgende Zustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IX erweiterte Service-Funktionalität mit parametrierbarer Konfiguration, Statusrückmeldungen und sowohl anforderungs- als auch ereignisgesteuerter Datenbereitstellung.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

@@ -29,6 +29,7 @@ Endziffern **55 → 99**. Zwei Bilder, die dafür helfen können:
 
 - **Rechnerisch:** 55 + 44 = 99 (die "44" kann man sich als PS-Aufrundung des
   Traktors vorstellen, wenn das hilft).
+
 - **Bildlich:** Die beiden Fünfen des Traktor-Typs "wachsen" im Kopf zu zwei
   Neunen heran – aus `1455` wird gedanklich `1499`.
 

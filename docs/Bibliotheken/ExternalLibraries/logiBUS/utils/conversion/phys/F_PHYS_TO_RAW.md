@@ -1,6 +1,5 @@
 # F_PHYS_TO_RAW
 
-
 ![F_PHYS_TO_RAW](./F_PHYS_TO_RAW.svg)
 
 * * * * * * * * * *
@@ -41,10 +40,12 @@ Keine.
 
 ## Funktionsweise
 Der FB berechnet zunächst die untere und obere Grenze:
+
 - Untere Grenze: `lrLower = Offset * Skalierung`
 - Obere Grenze: `lrUpper = (Offset + 4294967295) * Skalierung`
 
 Anschließend wird der physikalische Wert mit diesen Grenzen verglichen:
+
 1. **Überlauf (xOver = TRUE):** Wenn `rPhys > lrUpper`, wird der Rohwert auf den maximalen UDINT-Wert (4294967295) gesetzt.
 2. **Unterlauf (xUnder = TRUE):** Wenn `rPhys < lrLower`, wird der Rohwert auf 0 gesetzt.
 3. **Normalbereich:** Im gültigen Bereich wird der Rohwert nach der Formel `UDINT(DINT(rPhys / Skalierung) - Offset)` berechnet.

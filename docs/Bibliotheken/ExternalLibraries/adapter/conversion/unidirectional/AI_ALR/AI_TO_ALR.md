@@ -1,6 +1,5 @@
 # AI_TO_ALR
 
-
 ![AI_TO_ALR](./AI_TO_ALR.svg)
 
 * * * * * * * * * *
@@ -12,10 +11,12 @@ Der Funktionsblock **AI_TO_ALR** ist ein Composite-Baustein, der einen **AI (Ada
 
 ### **Ereignis-Eingänge**
 Der Baustein besitzt keine direkten Ereignis-Eingänge. Das Ereignis wird über den Socket‑Adapter `AI_IN` empfangen:
+
 - **AI_IN.E1** – Ereignis des INT-Adapters (Eingang).
 
 ### **Ereignis-Ausgänge**
 Auch hier gibt es keine direkten Ereignis-Ausgänge. Das Ereignis wird über den Plug‑Adapter `ALR_OUT` gesendet:
+
 - **ALR_OUT.E1** – Ereignis des LREAL-Adapters (Ausgang).
 
 ### **Daten-Eingänge**

@@ -2,8 +2,6 @@
 
 # dummy
 
-
-
 does nothing
 
 ## Interface

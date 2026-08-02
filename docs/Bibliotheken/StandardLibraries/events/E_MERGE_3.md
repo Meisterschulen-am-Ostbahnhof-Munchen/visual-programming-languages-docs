@@ -1,7 +1,5 @@
 # E_MERGE_3
 
-
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 
 * * * * * * * * * *
@@ -23,6 +21,7 @@ Der `E_MERGE_3` ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der 
 
 ## Funktionsweise
 Die Funktion ist einfach und direkt:
+
 - Ein Ereignis am Eingang `EI1`, `EI2` oder `EI3` löst sofort und ohne Priorisierung ein Ereignis am Ausgang `EO` aus.
 
 Die Eingänge werden logisch ODER-verknüpft und ohne Verzögerung weitergeleitet.
@@ -36,9 +35,6 @@ Die Eingänge werden logisch ODER-verknüpft und ohne Verzögerung weitergeleite
 - **Bedienkonzepte**: Zusammenführung von Steuersignalen von drei Tastern auf eine gemeinsame Funktion (z.B. "Hand", "Automatik", "Service" starten denselben Prozess).
 - **Sensorik**: Kombination der Trigger-Ereignisse von drei verschiedenen Sensoren zu einem Gesamtereignis.
 - **Fehlermanagement**: Erstellen einer Sammel-Störmeldung aus drei potenziellen Fehlerquellen.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

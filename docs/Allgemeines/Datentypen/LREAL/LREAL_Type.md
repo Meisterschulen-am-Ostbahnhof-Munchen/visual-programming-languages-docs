@@ -1,11 +1,5 @@
 # Datentyp: LREAL
 
-
-
-
-
-
-
 ## 🛠️ Zugehörige Übungen
 
 * [Uebung_003a0](../../../Uebungen/test_B/Uebungen_doc/Uebung_003a0.md)

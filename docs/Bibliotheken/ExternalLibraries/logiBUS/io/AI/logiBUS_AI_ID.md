@@ -1,7 +1,5 @@
 # logiBUS_AI_ID
 
-
-
 <img width="1998" height="363" alt="image" src="https://github.com/user-attachments/assets/c03aec55-c580-46c1-8d13-7cfd30b77783" />
 
 * * * * * * * * * *
@@ -47,6 +45,7 @@ Der Function Block ermöglicht die Kommunikation mit analogen Eingabegeräten ü
 
 ## Zustandsübersicht
 Der Baustein verfügt über folgende Betriebszustände:
+
 - Nicht initialisiert (vor INIT)
 - Initialisiert und bereit (nach INITO)
 - Datenabfrage aktiv (bei REQ/CNF)
@@ -60,9 +59,6 @@ Der Baustein verfügt über folgende Betriebszustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen analogen Eingangsbausteinen bietet logiBUS_AI_ID erweiterte Funktionen wie Hysterese-Steuerung, detaillierte Statusrückmeldungen und eine strukturierte Initialisierungsprozedur. Die Integration in das logiBUS-System ermöglicht eine standardisierte Kommunikation.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

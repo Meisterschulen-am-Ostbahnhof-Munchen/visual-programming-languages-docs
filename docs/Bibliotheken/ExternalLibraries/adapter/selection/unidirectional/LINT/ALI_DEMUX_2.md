@@ -1,6 +1,5 @@
 # ALI_DEMUX_2
 
-
 ![ALI_DEMUX_2](./ALI_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -46,6 +45,7 @@ Keine separaten Datenausgänge – die Ausgabe erfolgt über die Adapter.
 Ein Ereignis am Eingang `REQ` löst die Verarbeitung aus. Der Wert des Parameters `K` bestimmt, an welchen der beiden Ausgangsadapter (`OUT1` oder `OUT2`) der über `IN` anliegende Wert weitergeleitet wird. Nach der Weiterleitung wird am Ausgang `CNF` ein Ereignis gesendet.
 
 Die Zuordnung erfolgt wie folgt:
+
 - Ist `K = 1`, wird der Wert an `OUT1` übergeben.
 - Ist `K = 2`, wird der Wert an `OUT2` übergeben.
 - Für andere Werte von `K` ist das Verhalten undefiniert (keine Ausgabe).

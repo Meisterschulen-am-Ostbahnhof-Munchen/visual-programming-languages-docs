@@ -1,9 +1,6 @@
 # sequence_ET_08_loop
 
-
-
 <img width="1372" height="421" alt="image" src="https://github.com/user-attachments/assets/5c112dff-e214-4a52-9789-abcd411ac8cd" />
-
 
 ![sequence_ET_08_loop_ecc](./sequence_ET_08_loop_ecc.svg)
 
@@ -38,6 +35,7 @@ Der Funktionsblock `sequence_ET_08_loop` ist ein Sequenzer mit acht Ausgangszust
 Der FB ist als Basic Function Block (BFB) mit einer Execution Control Chart (ECC) implementiert. Die ECC besteht aus den Zuständen `xSTART` (Initialzustand), `sState_01` bis `sState_08` (aktive Sequenzzustände) und `sRESET` (Reset-Zustand).
 
 Beim Eintritt in einen aktiven Zustand (z.B. `sState_01`) werden nacheinander folgende Aktionen ausgeführt:
+
 1.  Der `timeOut`-Timer wird gestoppt.
 2.  Der Exit-Algorithmus (`X`) des vorherigen Zustands wird ausgeführt (setzt den vorherigen Ausgang `DO_Sx` auf `FALSE`).
 3.  Der Confirmation-Algorithmus (`C`) des neuen Zustands wird ausgeführt (setzt `STATE_NR` und konfiguriert den `timeOut`-Adapter mit der für diesen Zustand eingestellten Zeit `DT`).
@@ -45,6 +43,7 @@ Beim Eintritt in einen aktiven Zustand (z.B. `sState_01`) werden nacheinander fo
 5.  Der `timeOut`-Timer wird mit der eingestellten Zeit gestartet.
 
 Ein Zustandswechsel kann auf zwei Arten ausgelöst werden:
+
 1.  **Ereignisgesteuert:** Durch das entsprechende Ereignis `Sx_Sy`, sofern der Timer für diesen Übergang deaktiviert (`DT = NO_TIME`) ist.
 2.  **Zeitgesteuert:** Durch das `TimeOut`-Ereignis des Adapters, sofern eine gültige Zeit (`DT != NO_TIME`) eingestellt ist.
 
@@ -58,6 +57,7 @@ Das `RESET`-Ereignis führt in den `sRESET`-Zustand, deaktiviert alle Ausgänge 
 
 ## Zustandsübersicht
 Der FB durchläuft folgende Zustände in der ECC:
+
 *   **`xSTART`:** Inaktiver Initialzustand. Wartet auf `START_S1`.
 *   **`sState_01` bis `sState_08`:** Aktive Arbeitszustände. Jeder Zustand aktiviert seinen spezifischen Ausgang (`DO_Sx`) und wartet auf Trigger für den Übergang zum nächsten Zustand.
 *   **`sRESET`:** Reset-Zustand. Wird bei `RESET`-Ereignis aus jedem Zustand angesprungen, deaktiviert alle Ausgänge und führt zurück zu `xSTART`.

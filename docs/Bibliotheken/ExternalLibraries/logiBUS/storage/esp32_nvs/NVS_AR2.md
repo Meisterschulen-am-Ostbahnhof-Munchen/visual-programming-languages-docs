@@ -1,6 +1,5 @@
 # NVS_AR2
 
-
 ![NVS_AR2](./NVS_AR2.svg)
 
 * * * * * * * * * *
@@ -42,6 +41,7 @@ Ein Schreibzugriff erfolgt, wenn die externe Komponente über den Adapter (VAL.E
 
 ## Zustandsübersicht
 Der Baustein hat keinen explizit definierten Zustandsautomaten im XML, da er über den internen NVS-Baustein und die Ereignisverkettung gesteuert wird. Der Zustand ergibt sich aus der Abfolge der Ereignisse:
+
 1. Warten auf INIT → Initialisierung läuft → INITO und GET werden ausgelöst.
 2. Nach GET: Warten auf Leseergebnis → Wert an Adapter gesendet.
 3. Warten auf Schreibanforderung über Adapter → SET ausgeführt → Bestätigung zurück.

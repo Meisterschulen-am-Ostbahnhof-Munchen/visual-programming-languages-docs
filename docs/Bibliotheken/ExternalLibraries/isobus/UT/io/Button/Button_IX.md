@@ -1,7 +1,5 @@
 # Button_IX
 
-
-
 <img width="1352" height="285" alt="image" src="https://github.com/user-attachments/assets/6e6968e4-bc91-448b-abea-62a909edce06" />
 
 * * * * * * * * * *
@@ -46,6 +44,7 @@ Der Button_IX-Funktionsblock verwaltet den gesamten Lebenszyklus einer Tastenein
 
 ## Zustandsübersicht
 Der Funktionsblock durchläuft folgende Hauptzustände:
+
 1. **Nicht initialisiert**: Wartet auf INIT-Ereignis
 2. **Initialisiert**: Bereit für REQ- und IND-Ereignisse
 3. **Aktiv**: Verarbeitet Eingabeanfragen und -indikationen
@@ -59,13 +58,11 @@ Der Funktionsblock durchläuft folgende Hauptzustände:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 Im Vergleich zu einfachen digitalen Eingabeblöcken bietet Button_IX erweiterte Funktionalitäten wie:
+
 - Parametrierbare Service-Konfiguration
 - Detaillierte Statusrückmeldungen
 - ISOBUS-Integration
 - Asynchrone Ereignisbehandlung
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

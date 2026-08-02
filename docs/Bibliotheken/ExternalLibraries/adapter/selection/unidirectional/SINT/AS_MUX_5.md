@@ -1,6 +1,5 @@
 # AS_MUX_5
 
-
 ![AS_MUX_5](./AS_MUX_5.svg)
 
 * * * * * * * * * *
@@ -64,6 +63,7 @@ Der Baustein arbeitet als 1‑aus‑5‑Multiplexer auf Adapterebene. Ein intern
 ## Zustandsübersicht
 
 Der FB besitzt keinen expliziten Zustandsautomaten in der XML‑Darstellung. Das Verhalten ist ereignisgesteuert:
+
 - Im Ruhezustand bleibt die aktuelle Verbindung bestehen.
 - Bei `REQ` wird die neue Verbindung gemäß `K` aktiviert und anschließend `CNF` gesendet.
 

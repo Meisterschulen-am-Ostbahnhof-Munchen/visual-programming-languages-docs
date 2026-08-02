@@ -1,6 +1,5 @@
 # logiBUS_LED_strip_QXA
 
-
 ![logiBUS_LED_strip_QXA](./logiBUS_LED_strip_QXA.svg)
 
 * * * * * * * * * *
@@ -54,6 +53,7 @@ Der Baustein arbeitet als Composite-FB, der intern den Unterbaustein **logiBUS_L
 Sobald über den **OUT*-Adapter ein Ereignis (E1) eintrifft, wird im internen FB eine **REQ**-Anforderung ausgelöst. Die aktuellen Daten (Colour, FREQ) werden an den logiBUS-LED-Strip gesendet. Nach erfolgreicher Ausführung quittiert der interne FB mit **CNF**, was am äußeren Ausgang **CNF** erscheint.  
 
 Datenflüsse:  
+
 - **Out.D1** → interner FB.QX.OUT (Ausgangsdaten des Adapters)  
 - **Qi**, **PARAMS**, **Output**, **Colour**, **FREQ** → entsprechend an QX weitergeleitet.  
 

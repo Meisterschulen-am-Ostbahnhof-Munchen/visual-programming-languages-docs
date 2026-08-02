@@ -1,7 +1,5 @@
 # Q_ChangeObjectLabel
 
-
-
 ![Q_ChangeObjectLabel](https://user-images.githubusercontent.com/116869307/214146892-63ae12b3-94e1-400d-bbdc-57754ce825f2.png)
 
 * * * * * * * * * *
@@ -95,6 +93,7 @@ Der Q_ChangeObjectLabel-Baustein bietet die Referenzimplementierung für ISOBUS-
 - **Praxisbewährt**: Eingesetzt in modernen Agrarmaschinen
 
 Unverzichtbar für:
+
 - Adaptive Benutzeroberflächen
 - Mehrsprachige Systeme
 - Symbolgesteuerte Bedienkonzepte

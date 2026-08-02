@@ -1,6 +1,5 @@
 # AULI_DEMUX_2
 
-
 ![AULI_DEMUX_2](./AULI_DEMUX_2.svg)
 
 * * * * * * * * * *
@@ -46,6 +45,7 @@ Keine direkten Datenausgänge definiert.
 ## Funktionsweise
 
 Sobald am Ereigniseingang **REQ** ein Signal anliegt, wird der aktuelle Wert des Index **K** ausgewertet.  
+
 - Bei **K = 0** wird der über den Adapter **IN** eingehende Datenstrom mit allen seinen Attributen an den Ausgang **OUT1** durchgereicht.  
 - Bei **K = 1** erfolgt die Weiterleitung an **OUT2**.  
 

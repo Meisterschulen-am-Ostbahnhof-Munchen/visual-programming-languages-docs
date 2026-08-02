@@ -1,6 +1,5 @@
 # SET_STRING
 
-
 ![SET_STRING](./SET_STRING.svg)
 
 * * * * * * * * * *
@@ -46,6 +45,7 @@ Keine Adapter vorhanden.
 2. Der im Algorithmus `REQ` hinterlegte Code wird ausgeführt:
    - `OUT := IN;`  
    Der Wert der Eingangsvariablen `IN` wird in die In‑Out‑Variable `OUT` kopiert.
+
 3. Anschließend wird das Ereignis am Ausgang `CNF` gesendet, um die erfolgreiche Ausführung zu signalisieren.
 
 ## Technische Besonderheiten

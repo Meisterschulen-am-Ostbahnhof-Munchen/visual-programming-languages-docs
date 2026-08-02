@@ -1,6 +1,5 @@
 # ADI_MUX_3
 
-
 ![ADI_MUX_3](./ADI_MUX_3.svg)
 
 * * * * * * * * * *

@@ -1,6 +1,5 @@
 # ALR_SPLIT_3
 
-
 ![ALR_SPLIT_3](./ALR_SPLIT_3.svg)
 
 * * * * * * * * * *
@@ -23,10 +22,13 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 * **IN** – *Socket* (Eingang) vom Typ `adapter::types::unidirectional::ALR`  
   Nimmt das zu verteilende ALR-Signal entgegen.
+
 * **OUT1** – *Plug* (Ausgang 1) vom Typ `adapter::types::unidirectional::ALR`  
   Gibt das eingehende Signal unverändert weiter.
+
 * **OUT2** – *Plug* (Ausgang 2) vom Typ `adapter::types::unidirectional::ALR`  
   Gibt das eingehende Signal unverändert weiter.
+
 * **OUT3** – *Plug* (Ausgang 3) vom Typ `adapter::types::unidirectional::ALR`  
   Gibt das eingehende Signal unverändert weiter.
 

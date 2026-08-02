@@ -1,6 +1,5 @@
 # AUDI_TO_AULI
 
-
 ![AUDI_TO_AULI](./AUDI_TO_AULI.svg)
 
 *Bild nicht vorhanden*
@@ -28,6 +27,7 @@ Keine (Daten werden über den AULI_OUT-Adapter gesendet).
 
 ## Funktionsweise
 Der FB leitet eingehende Ereignisse und Daten vom AUDI_IN-Adapter direkt zum AULI_OUT-Adapter weiter:
+
 - Das Ereignis `E1` von `AUDI_IN` wird auf `E1` von `AULI_OUT` übertragen.
 - Der Datenwert `D1` (UDINT) von `AUDI_IN` wird auf `D1` (ULINT) von `AULI_OUT` übertragen. Dabei wird der 32‑Bit‑UDINT-Wert implizit in den 64‑Bit‑ULINT-Wert umgewandelt (null‑extension). Es findet keine zusätzliche Logik statt.
 

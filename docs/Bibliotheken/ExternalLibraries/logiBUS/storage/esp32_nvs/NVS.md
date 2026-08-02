@@ -1,7 +1,5 @@
 # NVS
 
-
-
 <img width="1739" height="315" alt="image" src="https://github.com/user-attachments/assets/58cbe71a-173a-41eb-848d-c641fafb502f" />
 
 * * * * * * * * * *
@@ -40,6 +38,7 @@ Dieser Funktionsblock verwendet keine Adapter.
 Der NVS-Block arbeitet zustandsbasiert. Bei der Initialisierung (INIT mit `QI=TRUE`) wird der angegebene `KEY` festgelegt. Anschließend wird automatisch versucht, den zugehörigen Wert aus dem NVS zu lesen. Das Ergebnis (gespeicherter Wert oder `DEFAULT_VALUE`) wird zusammen mit dem Status über `INITO` ausgegeben.
 
 Danach kann der Block zwei Hauptoperationen ausführen:
+
 1.  **Schreiben (SET)**: Der an `VALUE` anliegende Wert wird unter dem festgelegten Schlüssel (`KEY`) im NVS gespeichert. Die Bestätigung erfolgt über `SETO`.
 2.  **Lesen (GET)**: Der aktuell unter dem Schlüssel gespeicherte Wert wird aus dem NVS gelesen und über `VALUEO` am Ausgang `GETO` bereitgestellt.
 
@@ -66,9 +65,6 @@ Die Datentypen der Ein- und Ausgänge `VALUE`, `DEFAULT_VALUE` und `VALUEO` müs
 *   **E_R_TRIG / F_TRIG**: Diese sind reine Ereignis-Trigger und bieten keine persistente Datenspeicherung.
 *   **BLINK / DELAY**: Zeitbasierte Blöcke ohne Speicherfunktionalität.
 *   **E_EEPROM**: Ein generischer EEPROM-Baustein. Der NVS-Block ist spezifisch für die ESP32-Plattform und nutzt dessen optimiertes, wear-leveling-fähiges Dateisystem (NVS), während ein generischer E_EEPROM-Block hardwareabhängig und oft auf einfacherem Speicher operieren würde.
-
-
-
 
 ## 🛠️ Zugehörige Übungen
 

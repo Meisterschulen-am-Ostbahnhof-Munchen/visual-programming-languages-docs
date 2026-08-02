@@ -1,6 +1,5 @@
 # AE_MUX_3
 
-
 ![AE_MUX_3](./AE_MUX_3.svg)
 
 * * * * * * * * * *
@@ -63,6 +62,7 @@ Die Umschaltung erfolgt sofort – es gibt keine zusätzliche Verzögerung oder 
 
 ## Zustandsübersicht
 Der **AE_MUX_3** besitzt keinen expliziten Zustandsautomaten (ECA). Die Funktionsweise ist rein ereignisgetriggert:  
+
 - Im Ruhezustand wartet der Baustein auf ein REQ-Ereignis.  
 - Nach REQ erfolgt die Umschaltung, gefolgt von CNF.  
 Danach kehrt er in den Ruhezustand zurück. Es gibt keine persistenten internen Zustände.

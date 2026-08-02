@@ -1,7 +1,5 @@
 # ST04X
 
-
-
 * * * * * * * * * *
 ## Einleitung
 ST04X ist ein strukturierter Datentyp, der vier boolesche Werte gruppiert. Er dient dazu, eine Sammlung von vier einzelnen Bits in einer einzigen Struktur zu organisieren und zu handhaben.
@@ -26,6 +24,7 @@ Nicht zutreffend für einen Datentyp.
 
 **Struktur-Elemente:**
 Die Struktur ST04X besteht aus den folgenden vier booleschen Feldern:
+
 *   **X_00** (Typ: BOOL, Kommentar: BIT 00)
 *   **X_01** (Typ: BOOL, Kommentar: BIT 01)
 *   **X_02** (Typ: BOOL, Kommentar: BIT 02)
@@ -50,6 +49,7 @@ Nicht zutreffend für einen Datentyp. Ein Datentyp repräsentiert eine Datenstru
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 ST04X ist ein Datentyp und kann daher nicht direkt mit Funktionsblöcken (Bausteinen) verglichen werden.
 Ein Vergleich wäre eher mit anderen Datentypen möglich, z.B.:
+
 *   **BOOL**: Ein einzelner Boolescher Wert. ST04X bündelt vier davon.
 *   **BYTE**: Ein 8-Bit-Integer. ST04X bietet eine strukturierte Sicht auf 4 Bits, während ein BYTE in der Regel als eine unstrukturierte 8-Bit-Zahl behandelt wird. Die einzelnen Bits eines BYTE müssten über Bitmasken oder Bit-Operationen angesprochen werden, während bei ST04X jedes Bit direkt über seinen Namen zugänglich ist (z.B. `myST04X.X_00`).
 *   **Array von BOOL**: Ein Array von BOOLs (`ARRAY[0..3] OF BOOL`) bietet ebenfalls die Gruppierung, der Zugriff erfolgt jedoch über Indizes (`myArray[0]`), wohingegen ST04X den Zugriff über benannte Felder (`myST04X.X_00`) ermöglicht, was die Lesbarkeit verbessern kann.

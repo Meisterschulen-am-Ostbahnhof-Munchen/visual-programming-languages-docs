@@ -1,6 +1,5 @@
 # AX_TO_AR
 
-
 ![AX_TO_AR](./AX_TO_AR.svg)
 
 * * * * * * * * * *
@@ -16,10 +15,12 @@ Auf FB-Ebene sind keine Ereignis-Ausgänge vorhanden. Das Ausgangsereignis des F
 
 ### **Daten-Eingänge**
 Es existieren keine direkten Daten-Eingänge auf FB-Ebene. Der einzige Daten-Eingang wird über den AX_IN-Adapter bereitgestellt:  
+
 - **D1** (BOOL) – das zu konvertierende boolesche Signal.
 
 ### **Daten-Ausgänge**
 Es gibt keine direkten Daten-Ausgänge auf FB-Ebene. Der konvertierte Wert wird über den AR_OUT-Adapter ausgegeben:  
+
 - **D1** (REAL) – der resultierende REAL-Wert (0.0 oder 1.0).
 
 ### **Adapter**
@@ -32,6 +33,7 @@ Es gibt keine direkten Daten-Ausgänge auf FB-Ebene. Der konvertierte Wert wird 
 
 ## Funktionsweise
 Der Baustein arbeitet ereignisgesteuert:
+
 1. Ein eingehendes Ereignis am AX_IN-Adapter (E1) triggert den internen F_SEL-Baustein über dessen REQ-Eingang.
 2. Gleichzeitig wird das boolesche Signal (AX_IN.D1) an den G-Eingang des F_SEL angelegt.
 3. F_SEL wählt abhängig von G:

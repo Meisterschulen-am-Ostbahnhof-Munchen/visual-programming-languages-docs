@@ -1,6 +1,5 @@
 # AR_DEMUX_4
 
-
 ![AR_DEMUX_4](./AR_DEMUX_4.svg)
 
 * * * * * * * * * *

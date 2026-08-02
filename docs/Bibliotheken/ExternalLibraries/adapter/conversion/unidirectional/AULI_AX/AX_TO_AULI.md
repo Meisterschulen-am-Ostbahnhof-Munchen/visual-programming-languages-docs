@@ -1,6 +1,5 @@
 # AX_TO_AULI
 
-
 ![AX_TO_AULI](./AX_TO_AULI.svg)
 
 * * * * * * * * * *
@@ -67,6 +66,7 @@ Somit wird bei jeder steigenden Flanke des Eingangsereignisses der aktuelle BOOL
 
 Der Composite‑Baustein besitzt keine eigene Zustandsmaschine.  
 Die gesamte Ablaufsteuerung wird durch den internen Baustein `F_BOOL_TO_ULINT` realisiert, der einen einfachen ereignisgesteuerten Zustandsautomaten umsetzt:  
+
 - Im Ruhezustand wartet er auf ein `REQ`-Ereignis.  
 - Nach Eintreffen des Ereignisses wird die Konvertierung durchgeführt und unmittelbar der Ausgang mit `CNF` bestätigt.
 

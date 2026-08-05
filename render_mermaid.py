@@ -23,7 +23,16 @@ def render_language(language):
         image_path = output_dir / f"mermaid-{counter:04d}.svg"
         source_path.write_text(match.group(1).strip() + "\n", encoding="utf-8")
         subprocess.run(
-            ["mmdc", "-i", str(source_path), "-o", str(image_path), "--quiet"],
+            [
+                "mmdc",
+                "-i",
+                str(source_path),
+                "-o",
+                str(image_path),
+                "-p",
+                "puppeteer-config.json",
+                "--quiet",
+            ],
             check=True,
         )
         source_path.unlink()

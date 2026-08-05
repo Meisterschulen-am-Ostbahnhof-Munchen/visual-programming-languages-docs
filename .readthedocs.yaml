@@ -20,7 +20,7 @@ build:
     - libffi-dev
 
 mkdocs:
-  configuration: mkdocs.yml
+  configuration: docs/de/mkdocs.yml
 
 python:
   install:

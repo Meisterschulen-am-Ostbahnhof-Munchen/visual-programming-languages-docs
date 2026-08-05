@@ -54,4 +54,4 @@ Anstatt eines harten Blinkens wird ein sanftes Pulsieren der LED genutzt, um ein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 * [🌐 Diode & Halbleitergrundlagen auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)
-* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/)
+* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

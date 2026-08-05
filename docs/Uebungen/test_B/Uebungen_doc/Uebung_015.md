@@ -50,4 +50,4 @@ Ein zentraler Platz auf dem Terminal soll je nach Arbeitsmodus unterschiedliche 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
-* [🌐 Interaktiver JBC-Lötspitzen Guide & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/werkzeug/lötkolben/jbc-lötspitzen-übersicht/)
+* [🌐 Interaktiver JBC-Lötspitzen Guide & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/werkzeug/lötkolben/jbc-lötspitzen-übersicht/)

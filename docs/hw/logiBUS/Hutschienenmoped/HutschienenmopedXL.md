@@ -61,4 +61,4 @@ contains the Hutschienenmoped-XL, a Open Source ISOBUS ECU.
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 * [🌐 Belasteter & Unbelasteter Spannungsteiler auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/spannungsteiler/)
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

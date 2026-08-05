@@ -81,4 +81,4 @@ Die Übung `Uebung_012l` zeigt, wie ein ISOBUS‑String in den NVS‑Speicher de
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/)
+* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

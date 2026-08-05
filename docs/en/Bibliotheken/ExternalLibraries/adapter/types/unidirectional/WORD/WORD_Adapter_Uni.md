@@ -1,0 +1,2 @@
+# Unidirectional WORD adapter
+

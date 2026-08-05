@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1136" height="535" viewBox="-548 -20 1136 535">
+<defs>
+</defs>
+<rect x="3" y="3" width="274" height="485" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H274 V118 H268 V158 H274 V485 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L274,30" stroke="#000000" stroke-width="1" />
+<text x="137.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">I_WBSD</text>
+<text x="137.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M274,37 L274,47 L279,42 Z" fill="#63B31F" stroke="none" />
+<text x="262" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="313" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="383" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M274,63 L274,73 L279,68 Z" fill="#63B31F" stroke="none" />
+<text x="262" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="313" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="383" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
+<path d="M274,89 L274,99 L279,94 Z" fill="#63B31F" stroke="none" />
+<text x="262" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
+<text x="313" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M274,170 L274,180 L279,175 Z" fill="#9FA48A" stroke="none" />
+<text x="262" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="313" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="383" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M274,196 L274,206 L279,201 Z" fill="#BD8663" stroke="none" />
+<text x="262" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="313" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M274,222 L274,232 L279,227 Z" fill="#9FA48A" stroke="none" />
+<text x="262" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q_timeout</text>
+<text x="313" y="230" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M274,248 L274,258 L279,253 Z" fill="#18519E" stroke="none" />
+<text x="262" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_timeout</text>
+<text x="313" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M274,274 L274,284 L279,279 Z" fill="#18519E" stroke="none" />
+<text x="262" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_data</text>
+<text x="313" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M274,300 L274,310 L279,305 Z" fill="#18519E" stroke="none" />
+<text x="262" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">WHEELBASEDMACHINESPEED</text>
+<text x="313" y="308" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="383" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Wheel-based machine speed (see Attributes for Details)</text>
+<path d="M274,326 L274,336 L279,331 Z" fill="#18519E" stroke="none" />
+<text x="262" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">WHEELBASEDMACHINEDISTANCE</text>
+<text x="313" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="383" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Wheel-based machine distance (see Attributes for Details)</text>
+<path d="M274,352 L274,362 L279,357 Z" fill="#18519E" stroke="none" />
+<text x="262" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">MAXI_TIMEOFTRACPOWER</text>
+<text x="313" y="360" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="383" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Maximum Time of Tractor Power (see Attributes for Details)</text>
+<path d="M274,378 L274,388 L279,383 Z" fill="#82A3A9" stroke="none" />
+<text x="262" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">WHEELBASEDMACHINEDIRECTION</text>
+<text x="313" y="386" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="383" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Wheel-based machine direction (see Attributes for Details)</text>
+<path d="M274,404 L274,414 L279,409 Z" fill="#82A3A9" stroke="none" />
+<text x="262" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">KEYSWITCHSTATE</text>
+<text x="313" y="412" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="383" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Key switch state (see Attributes for Details)</text>
+<path d="M274,430 L274,440 L279,435 Z" fill="#82A3A9" stroke="none" />
+<text x="262" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">START_STOP_STATE</text>
+<text x="313" y="438" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="383" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement Start/Stop operations (see Attributes for Details)</text>
+<path d="M274,456 L274,466 L279,461 Z" fill="#82A3A9" stroke="none" />
+<text x="262" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">OPERATOR_DIREC_REVERSED</text>
+<text x="313" y="464" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
+<text x="383" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Operator direction reversed (see Attributes for Details)</text>
+<path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M286,42 L286,201" stroke="#404040" stroke-width="1" />
+<path d="M274,42 L286,42" stroke="#404040" />
+<rect x="284" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M286,175 L279,175" stroke="#404040" />
+<rect x="284" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M286,201 L279,201" stroke="#404040" />
+<rect x="284" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,68 L294,461" stroke="#404040" stroke-width="1" />
+<path d="M274,68 L294,68" stroke="#404040" />
+<rect x="292" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,175 L279,175" stroke="#404040" />
+<rect x="292" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,279 L279,279" stroke="#404040" />
+<rect x="292" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,305 L279,305" stroke="#404040" />
+<rect x="292" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,331 L279,331" stroke="#404040" />
+<rect x="292" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,357 L279,357" stroke="#404040" />
+<rect x="292" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,383 L279,383" stroke="#404040" />
+<rect x="292" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,409 L279,409" stroke="#404040" />
+<rect x="292" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,435 L279,435" stroke="#404040" />
+<rect x="292" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,461 L279,461" stroke="#404040" />
+<rect x="292" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,201 L279,201" stroke="#404040" />
+<rect x="292" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M294,227 L279,227" stroke="#404040" />
+<rect x="292" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M302,94 L302,253" stroke="#404040" stroke-width="1" />
+<path d="M274,94 L302,94" stroke="#404040" />
+<rect x="300" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M302,253 L279,253" stroke="#404040" />
+<rect x="300" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M302,201 L279,201" stroke="#404040" />
+<rect x="300" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M302,227 L279,227" stroke="#404040" />
+<rect x="300" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

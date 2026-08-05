@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: AX_FB_R_IO</text>
+<rect x="317.85442922630483" y="384.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="357.85442922630483" y="400.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+<rect x="407.85442922630483" y="384.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M397.85442922630483,400.0 L407.85442922630483,395.0" stroke="#000000" stroke-width="2" />
+<path d="M487.85442922630483,384.0 L487.85442922630483,406.0" stroke="#cccccc" stroke-width="1" />
+<rect x="407.85442922630483" y="388.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="447.85442922630483" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+<rect x="488.85442922630483" y="388.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="528.8544292263048" y="396.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">OUT.E1</text>
+<path d="M377.85442922630483,416.0 C437.85442922630483,472.0,277.85442922630483,472.0,337.85442922630483,416.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M337.85442922630483,416.0 L335.5188027567947,423.6514605791916 L330.0602567539146,417.80301843324867 L337.85442922630483,416.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(357.85442922630483,436.0)">
+<rect x="-33.25" y="-7.5" width="66.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">RESET1.E1</text>
+</g>
+<path d="M377.85442922630483,416.0 C437.85442922630483,497.0,277.85442922630483,497.0,337.85442922630483,416.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M337.85442922630483,416.0 L336.9448005606896,423.9481177451451 L330.51634301393165,419.1862973401392 L337.85442922630483,416.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(357.85442922630483,466.5)">
+<rect x="-20.25" y="-7.5" width="40.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">IN.E1</text>
+</g>
+</svg>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1279.0" height="800" viewBox="0 0 1279.0 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1279.0" height="800" fill="#ffffff" />
+<text x="639.0" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: BasicOne</text>
+<rect x="10.0" y="396.3157894736842" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="50.0" y="412.3157894736842" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="262.0" y="546.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="302.0" y="562.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">DeInit</text>
+<rect x="352.0" y="546.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M342.0,562.0 L352.0,557.0" stroke="#000000" stroke-width="2" />
+<path d="M432.0,546.0 L432.0,568.0" stroke="#cccccc" stroke-width="1" />
+<rect x="352.0" y="550.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="392.0" y="558.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">deInitialize</text>
+<rect x="433.0" y="550.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="473.0" y="558.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">INITO</text>
+<rect x="298.0" y="222.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="338.0" y="238.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Init</text>
+<rect x="388.0" y="222.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M378.0,238.0 L388.0,233.0" stroke="#000000" stroke-width="2" />
+<path d="M468.0,222.0 L468.0,244.0" stroke="#cccccc" stroke-width="1" />
+<rect x="388.0" y="226.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="428.0" y="234.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">initialize</text>
+<rect x="469.0" y="226.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="509.0" y="234.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">INITO</text>
+<rect x="540.4" y="402.0" width="99.2" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="590.0" y="418.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Initialized</text>
+<rect x="910.0" y="402.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="950.0" y="418.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">NormalOp</text>
+<rect x="1000.0" y="402.0" width="179.0" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M990.0,418.0 L1000.0,413.0" stroke="#000000" stroke-width="2" />
+<path d="M1098.0,402.0 L1098.0,424.0" stroke="#cccccc" stroke-width="1" />
+<rect x="1000.0" y="406.0" width="98.0" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="1049.0" y="414.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">normalOperation</text>
+<rect x="1099.0" y="406.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="1139.0" y="414.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CNF</text>
+<path d="M90.0,412.3157894736842 C207.6896863428064,412.3157894736842,338.0,371.6896863428064,338.0,254.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M338.0,254.0 L342.0,260.9282032302755 L334.0,260.9282032302755 L338.0,254.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(258.1336323785524,377.2915271153945)">
+<rect x="-52.75" y="-7.5" width="105.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">INIT[TRUE = QI]</text>
+</g>
+<path d="M378.0,238.0 C482.8551381669015,238.0,582.5,297.1448618330985,582.5,402.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M582.5,402.0 L578.5,395.0717967697245 L586.5,395.0717967697245 L582.5,402.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(519.5706768125881,280.6793231874119)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M639.6,410.5 C679.6,410.5,950.0,362.0,950.0,402.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M950.0,402.0 L946.0,395.0717967697245 L954.0,395.0717967697245 L950.0,402.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(809.8,391.25)">
+<rect x="-13.75" y="-7.5" width="27.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">REQ</text>
+</g>
+<path d="M910.0,425.5 C769.647058271455,425.5,597.5,261.64705827145497,597.5,402.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M597.5,402.0 L593.5,395.0717967697245 L601.5,395.0717967697245 L597.5,402.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(701.1176468517956,361.1176468517956)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M262.0,562.0 C161.74794314804763,562.0,50.0,528.5678463256365,50.0,428.3157894736842" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M50.0,428.3157894736842 L54.0,435.24399270395975 L46.0,435.24399270395975 L50.0,428.3157894736842" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(118.40547868051786,532.7524160563243)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M540.4,418.0 C432.16428685503104,418.0,302.0,437.76428685503106,302.0,546.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M302.0,546.0 L298.0,539.0717967697245 L306.0,539.0717967697245 L302.0,546.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(380.61160757063664,441.41160757063665)">
+<rect x="-56.0" y="-7.5" width="112.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">INIT[FALSE = QI]</text>
+</g>
+</svg>

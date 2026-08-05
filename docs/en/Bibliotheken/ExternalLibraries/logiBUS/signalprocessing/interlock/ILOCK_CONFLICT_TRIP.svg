@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1358" height="301" viewBox="-564 -20 1358 301">
+<defs>
+</defs>
+<rect x="3" y="3" width="230" height="251" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H230 V118 H224 V158 H230 V251 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L230,30" stroke="#000000" stroke-width="1" />
+<text x="115.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">ILOCK_CONFLICT_TRIP</text>
+<text x="115.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_UP</text>
+<text x="-39" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_DOWN</text>
+<text x="-39" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_RESET</text>
+<text x="-39" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">DI_UP</text>
+<text x="-39" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-160" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">TRUE = forward, up, right, clockwise</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">DI_DOWN</text>
+<text x="-39" y="204" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-160" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">TRUE = backward, down, left, counter-clockwise</text>
+<path d="M230,37 L230,47 L235,42 Z" fill="#63B31F" stroke="none" />
+<text x="218" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_UP</text>
+<text x="269" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M230,63 L230,73 L235,68 Z" fill="#63B31F" stroke="none" />
+<text x="218" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_DOWN</text>
+<text x="269" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M230,89 L230,99 L235,94 Z" fill="#63B31F" stroke="none" />
+<text x="218" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_TRIP</text>
+<text x="269" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M230,170 L230,180 L235,175 Z" fill="#9FA48A" stroke="none" />
+<text x="218" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_UP</text>
+<text x="269" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="339" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">TRUE = forward, up, right, clockwise</text>
+<path d="M230,196 L230,206 L235,201 Z" fill="#9FA48A" stroke="none" />
+<text x="218" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_DOWN</text>
+<text x="269" y="204" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="339" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">TRUE = backward, down, left, counter-clockwise</text>
+<path d="M230,222 L230,232 L235,227 Z" fill="#9FA48A" stroke="none" />
+<text x="218" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_TRIP</text>
+<text x="269" y="230" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="339" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">TRUE = Conflict/Trip state active</text>
+<path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,68 L-20,201" stroke="#404040" stroke-width="1" />
+<path d="M0,68 L-20,68" stroke="#404040" />
+<rect x="-22" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,201 L-5,201" stroke="#404040" />
+<rect x="-22" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-28,94 L-28,201" stroke="#404040" stroke-width="1" />
+<path d="M0,94 L-28,94" stroke="#404040" />
+<rect x="-30" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-28,175 L-5,175" stroke="#404040" />
+<rect x="-30" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-28,201 L-5,201" stroke="#404040" />
+<rect x="-30" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M242,42 L242,175" stroke="#404040" stroke-width="1" />
+<path d="M230,42 L242,42" stroke="#404040" />
+<rect x="240" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M242,175 L235,175" stroke="#404040" />
+<rect x="240" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,68 L250,201" stroke="#404040" stroke-width="1" />
+<path d="M230,68 L250,68" stroke="#404040" />
+<rect x="248" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M250,201 L235,201" stroke="#404040" />
+<rect x="248" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M258,94 L258,227" stroke="#404040" stroke-width="1" />
+<path d="M230,94 L258,94" stroke="#404040" />
+<rect x="256" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M258,227 L235,227" stroke="#404040" />
+<rect x="256" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

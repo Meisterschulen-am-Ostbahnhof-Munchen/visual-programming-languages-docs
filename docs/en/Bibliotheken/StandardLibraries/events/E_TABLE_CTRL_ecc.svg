@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: E_TABLE_CTRL</text>
+<rect x="10.0" y="393.2713973514254" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="50.0" y="409.2713973514254" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="158.32474394937702" y="122.11329832343921" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="198.32474394937702" y="138.1132983234392" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">INIT</text>
+<rect x="248.32474394937702" y="122.11329832343921" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M238.32474394937702,138.1132983234392 L248.32474394937702,133.1132983234392" stroke="#000000" stroke-width="2" />
+<path d="M328.324743949377,122.11329832343921 L328.324743949377,144.1132983234392" stroke="#cccccc" stroke-width="1" />
+<rect x="248.32474394937702" y="126.11329832343921" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="288.324743949377" y="134.1132983234392" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">INIT</text>
+<rect x="329.324743949377" y="126.11329832343921" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="369.324743949377" y="134.1132983234392" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="271.8051014417118" y="645.8867016765607" width="84.8" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="314.2051014417118" y="661.8867016765607" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">NEXT_STEP</text>
+<rect x="366.6051014417118" y="645.8867016765607" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M356.6051014417118,661.8867016765607 L366.6051014417118,656.8867016765607" stroke="#000000" stroke-width="2" />
+<path d="M446.6051014417118,645.8867016765607 L446.6051014417118,667.8867016765607" stroke="#cccccc" stroke-width="1" />
+<rect x="366.6051014417118" y="649.8867016765607" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="406.6051014417118" y="657.8867016765607" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">NEXT_STEP</text>
+<rect x="447.6051014417118" y="649.8867016765607" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="487.6051014417118" y="657.8867016765607" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CLKO</text>
+<rect x="399.35465457629334" y="286.6602355013373" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="439.35465457629334" y="302.6602355013373" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">INIT1</text>
+<rect x="489.35465457629334" y="286.6602355013373" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M479.35465457629334,302.6602355013373 L489.35465457629334,297.6602355013373" stroke="#000000" stroke-width="2" />
+<path d="M569.3546545762933,286.6602355013373 L569.3546545762933,308.6602355013373" stroke="#cccccc" stroke-width="1" />
+<rect x="489.35465457629334" y="290.6602355013373" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="529.3546545762933" y="298.6602355013373" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="570.3546545762933" y="290.6602355013373" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="610.3546545762933" y="298.6602355013373" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CLKO</text>
+<path d="M90.0,401.7713973514254 C198.1249530244366,401.7713973514254,198.32474394937702,277.9423478374323,198.32474394937702,154.1132983234392" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M198.32474394937702,154.1132983234392 L202.32474394937702,161.0415015537147 L194.32474394937702,161.0415015537147 L198.32474394937702,154.1132983234392" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(184.70922935885224,324.3782414051797)">
+<rect x="-17.0" y="-7.5" width="34.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">INIT</text>
+</g>
+<path d="M158.32474394937702,145.6132983234392 C32.65874087032101,145.6132983234392,35.0,267.6053942723694,35.0,393.2713973514254" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M35.0,393.2713973514254 L31.0,386.34319412114985 L39.0,386.34319412114985 L35.0,393.2713973514254" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(49.537620820042505,222.31759668278627)">
+<rect x="-26.75" y="-7.5" width="53.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[N = 0]</text>
+</g>
+<path d="M238.32474394937702,138.1132983234392 C338.30811657630966,138.1132983234392,439.35465457629334,186.67686287440466,439.35465457629334,286.6602355013373" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M439.35465457629334,286.6602355013373 L435.35465457629334,279.73203227106177 L443.35465457629334,279.73203227106177 L439.35465457629334,286.6602355013373" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(376.3334639979349,174.8930021772885)">
+<rect x="-26.75" y="-7.5" width="53.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">[N &gt; 0]</text>
+</g>
+<path d="M399.35465457629334,302.6602355013373 C254.98897592603015,302.6602355013373,50.0,248.9057187011622,50.0,393.2713973514254" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M50.0,393.2713973514254 L46.0,386.34319412114985 L54.0,386.34319412114985 L50.0,393.2713973514254" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(170.54019779429797,293.82868693253266)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M90.0,401.7713973514254 C222.58066786269663,401.7713973514254,314.2051014417118,513.3060338138641,314.2051014417118,645.8867016765607" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M314.2051014417118,645.8867016765607 L310.2051014417118,638.9584984462853 L318.2051014417118,638.9584984462853 L314.2051014417118,645.8867016765607" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(251.82030116936713,474.11129906548183)">
+<rect x="-72.25" y="-7.5" width="144.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CLK[CV &lt; MIN(3, N-1)]</text>
+</g>
+<path d="M271.8051014417118,669.3867016765607 C128.8297089395154,669.3867016765607,65.0,568.2467898536217,65.0,425.2713973514254" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M65.0,425.2713973514254 L69.0,432.1996005817009 L61.0,432.1996005817009 L65.0,425.2713973514254" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(114.78677853253225,600.9448217023167)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+</svg>

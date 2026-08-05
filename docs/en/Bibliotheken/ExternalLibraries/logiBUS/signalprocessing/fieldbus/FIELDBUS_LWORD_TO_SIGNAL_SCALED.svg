@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1454" height="275" viewBox="-556 -20 1454 275">
+<defs>
+</defs>
+<rect x="3" y="3" width="350" height="225" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H350 V92 H344 V132 H350 V225 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L350,30" stroke="#000000" stroke-width="1" />
+<text x="175.0" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">FIELDBUS_LWORD_TO_SIGNAL_SCALED</text>
+<text x="175.0" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-31" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-120" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Init Request</text>
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="-31" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-120" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Normal Execution Request</text>
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#82A3A9" stroke="none" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="-31" y="152" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">LWORD</text>
+<text x="-120" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#DBB418" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">SCALE</text>
+<text x="-31" y="178" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">LREAL</text>
+<text x="-120" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Scaling factor</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#18519E" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">OFFSET</text>
+<text x="-31" y="204" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<text x="-120" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Offset added after scaling</text>
+<path d="M350,37 L350,47 L355,42 Z" fill="#63B31F" stroke="none" />
+<text x="338" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="373" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="443" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Init Confirmation</text>
+<path d="M350,63 L350,73 L355,68 Z" fill="#63B31F" stroke="none" />
+<text x="338" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="373" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="443" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Execution Confirmation</text>
+<path d="M350,144 L350,154 L355,149 Z" fill="#DBB418" stroke="none" />
+<text x="338" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
+<text x="373" y="152" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">LREAL</text>
+<text x="443" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output Scaled</text>
+<path d="M350,170 L350,180 L355,175 Z" fill="#9FA48A" stroke="none" />
+<text x="338" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">VALID</text>
+<text x="373" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="443" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">TRUE if Signal is VALID</text>
+<path d="M-12,42 L-12,201" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,201 L-5,201" stroke="#404040" />
+<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,68 L-20,149" stroke="#404040" stroke-width="1" />
+<path d="M0,68 L-20,68" stroke="#404040" />
+<rect x="-22" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-20,149 L-5,149" stroke="#404040" />
+<rect x="-22" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M362,68 L362,175" stroke="#404040" stroke-width="1" />
+<path d="M350,68 L362,68" stroke="#404040" />
+<rect x="360" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M362,149 L355,149" stroke="#404040" />
+<rect x="360" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M362,175 L355,175" stroke="#404040" />
+<rect x="360" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

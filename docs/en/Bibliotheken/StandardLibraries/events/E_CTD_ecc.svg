@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: E_CTD</text>
+<rect x="10.0" y="124.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="50.0" y="140.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="220.0" y="644.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="260.0" y="660.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">LD</text>
+<rect x="310.0" y="644.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M300.0,660.0 L310.0,655.0" stroke="#000000" stroke-width="2" />
+<path d="M390.0,644.0 L390.0,666.0" stroke="#cccccc" stroke-width="1" />
+<rect x="310.0" y="648.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="350.0" y="656.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">LOAD</text>
+<rect x="391.0" y="648.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="431.0" y="656.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">LDO</text>
+<rect x="635.0" y="124.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="675.0" y="140.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">CD</text>
+<rect x="725.0" y="124.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M715.0,140.0 L725.0,135.0" stroke="#000000" stroke-width="2" />
+<path d="M805.0,124.0 L805.0,146.0" stroke="#cccccc" stroke-width="1" />
+<rect x="725.0" y="128.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="765.0" y="136.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CD</text>
+<rect x="806.0" y="128.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="846.0" y="136.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CDO</text>
+<path d="M90.0,132.5 C130.0,132.5,675.0,84.0,675.0,124.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M675.0,124.0 L671.0,117.07179676972449 L679.0,117.07179676972449 L675.0,124.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(397.5,113.25)">
+<rect x="-43.0" y="-7.5" width="86.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CD[(CV &gt; 0)]</text>
+</g>
+<path d="M635.0,147.5 C382.81365975250594,147.5,42.5,-128.18634024749406,42.5,124.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M42.5,124.0 L38.5,117.07179676972449 L46.5,117.07179676972449 L42.5,124.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(244.18012240718974,41.18012240718973)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+<path d="M90.0,132.5 C305.6041743566205,132.5,260.0,388.25,260.0,644.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M260.0,644.0 L256.0,637.0717967697245 L264.0,637.0717967697245 L260.0,644.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(255.8515653837327,292.34375)">
+<rect x="-10.5" y="-7.5" width="21.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">LD</text>
+</g>
+<path d="M220.0,667.5 C-9.676873463351882,667.5,57.5,411.75,57.5,156.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M57.5,156.0 L61.5,162.9282032302755 L53.5,162.9282032302755 L57.5,156.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(52.62117245124304,507.65625)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+</svg>

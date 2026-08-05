@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1406" height="327" viewBox="-548 -20 1406 327">
+<defs>
+</defs>
+<rect x="3" y="3" width="310" height="277" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H310 V66 H304 V106 H310 V277 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L310,30" stroke="#000000" stroke-width="1" />
+<text x="155.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">IA_PosDeltaHighPrecRapidUpd</text>
+<text x="155.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,118 L-5,128 L0,123 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="126" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-103" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M310,37 L310,47 L315,42 Z" fill="#63B31F" stroke="none" />
+<text x="298" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="333" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="403" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<rect x="305.0" y="118.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="298" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIME_DELTA</text>
+<text x="333" y="126" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AUI</text>
+<text x="403" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Time Delta</text>
+<rect x="305.0" y="144.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="298" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">LAT_DELTA</text>
+<text x="333" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AI</text>
+<text x="403" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Latitude Delta</text>
+<rect x="305.0" y="170.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="298" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">LON_DELTA</text>
+<text x="333" y="178" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AI</text>
+<text x="403" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Longitude Delta</text>
+<rect x="305.0" y="196.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="298" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
+<text x="333" y="204" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="403" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Timeout Status</text>
+<path d="M310,222 L310,232 L315,227 Z" fill="#9FA48A" stroke="none" />
+<text x="298" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="333" y="230" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="403" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M310,248 L310,258 L315,253 Z" fill="#BD8663" stroke="none" />
+<text x="298" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="333" y="256" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M-12,42 L-12,123" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,123 L-5,123" stroke="#404040" />
+<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M322,42 L322,253" stroke="#404040" stroke-width="1" />
+<path d="M310,42 L322,42" stroke="#404040" />
+<rect x="320" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M322,227 L315,227" stroke="#404040" />
+<rect x="320" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M322,253 L315,253" stroke="#404040" />
+<rect x="320" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

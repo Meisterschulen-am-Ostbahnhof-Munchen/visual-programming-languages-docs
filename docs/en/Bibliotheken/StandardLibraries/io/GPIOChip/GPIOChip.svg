@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1011" height="379" viewBox="-548 -20 1011 379">
+<defs>
+</defs>
+<rect x="3" y="3" width="157" height="329" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H157 V92 H151 V132 H157 V329 H0 V132 H6 V92 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L157,30" stroke="#000000" stroke-width="1" />
+<text x="78.5" y="110.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">GPIOChip</text>
+<text x="78.5" y="124.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">VALUE</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Receiver IX/QX block name</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#18519E" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">ChipNumber</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-93" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">ID of /dev/gpiochipX device</text>
+<path d="M-5,222 L-5,232 L0,227 Z" fill="#18519E" stroke="none" />
+<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">LineNumber</text>
+<text x="-23" y="230" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-93" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">ID of GPIO line within selected chip</text>
+<path d="M-5,248 L-5,258 L0,253 Z" fill="#18519E" stroke="none" />
+<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">ReadWriteMode</text>
+<text x="-23" y="256" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-162" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reading/Writing mode of line (0=read, 1=write push/pull, 2=open drain, 3=open source)</text>
+<path d="M-5,274 L-5,284 L0,279 Z" fill="#18519E" stroke="none" />
+<text x="12" y="283" font-size="12" text-anchor="start" font-family="Consolas, monospace">BiasMode</text>
+<text x="-23" y="282" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+<text x="-127" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Bias mode of line (0=none, 1=pull up, 2=pull down)</text>
+<path d="M-5,300 L-5,310 L0,305 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">ActiveLow</text>
+<text x="-23" y="308" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="308" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">True if a logic 1 corresponds to low voltage</text>
+<path d="M157,37 L157,47 L162,42 Z" fill="#63B31F" stroke="none" />
+<text x="145" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="188" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="258" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M157,63 L157,73 L162,68 Z" fill="#63B31F" stroke="none" />
+<text x="145" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="188" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="258" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
+<path d="M157,144 L157,154 L162,149 Z" fill="#9FA48A" stroke="none" />
+<text x="145" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="188" y="152" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="258" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M157,170 L157,180 L162,175 Z" fill="#BD8663" stroke="none" />
+<text x="145" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="188" y="178" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">WSTRING</text>
+<text x="258" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
+<path d="M-12,42 L-12,305" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,149 L-5,149" stroke="#404040" />
+<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,201 L-5,201" stroke="#404040" />
+<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,227 L-5,227" stroke="#404040" />
+<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,253 L-5,253" stroke="#404040" />
+<rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,279 L-5,279" stroke="#404040" />
+<rect x="-14" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,305 L-5,305" stroke="#404040" />
+<rect x="-14" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M169,42 L169,175" stroke="#404040" stroke-width="1" />
+<path d="M157,42 L169,42" stroke="#404040" />
+<rect x="167" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M169,149 L162,149" stroke="#404040" />
+<rect x="167" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M169,175 L162,175" stroke="#404040" />
+<rect x="167" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M177,68 L177,175" stroke="#404040" stroke-width="1" />
+<path d="M157,68 L177,68" stroke="#404040" />
+<rect x="175" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M177,149 L162,149" stroke="#404040" />
+<rect x="175" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M177,175 L162,175" stroke="#404040" />
+<rect x="175" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="437.0" height="382.0" viewBox="0 0 437.0 382.0">
+<defs>
+</defs>
+<rect x="0" y="0" width="437.0" height="382.0" fill="#ffffff" />
+<text x="218.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_176: Exercise for E_TRIG</text>
+<rect x="154.0" y="143.0" width="141" height="142" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M151.0,140.0 H292.0 V206.0 H286.0 V246.0 H292.0 V282.0 H151.0 V246.0 H157.0 V206.0 H151.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M151.0,170.0 L292.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="221.5" y="224.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">E_TRIG_1</text>
+<text x="221.5" y="238.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">E_TRIG</text>
+<path d="M146.0,177.0 L146.0,187.0 L151.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="163.0" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="136.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M146.0,258.0 L146.0,268.0 L151.0,263.0 Z" fill="#BD8663" stroke="none" />
+<text x="163.0" y="267.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">EVENTTYPE</text>
+<text x="136.0" y="266.0" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M297.0,177.0 L297.0,187.0 L292.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="280.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="307.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+</svg>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1162" height="847" viewBox="-548 -20 1162 847">
+<defs>
+</defs>
+<rect x="3" y="3" width="300" height="797" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H300 V118 H294 V158 H300 V797 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L300,30" stroke="#000000" stroke-width="1" />
+<text x="150.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">DataPanel_STATUS_SAE_J1939</text>
+<text x="150.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M-5,196 L-5,206 L0,201 Z" fill="#18519E" stroke="none" />
+<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">u8SAMember</text>
+<text x="-23" y="204" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<text x="-93" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Node SA 224..239</text>
+<path d="M300,37 L300,47 L305,42 Z" fill="#63B31F" stroke="none" />
+<text x="288" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="339" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="409" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M300,63 L300,73 L305,68 Z" fill="#63B31F" stroke="none" />
+<text x="288" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="339" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="409" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
+<path d="M300,89 L300,99 L305,94 Z" fill="#63B31F" stroke="none" />
+<text x="288" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
+<text x="339" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M300,170 L300,180 L305,175 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="339" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="409" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M300,196 L300,206 L305,201 Z" fill="#BD8663" stroke="none" />
+<text x="288" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="339" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="409" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
+<path d="M300,222 L300,232 L305,227 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">bTimeout</text>
+<text x="339" y="230" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="409" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Timeout occured TRUE = Timeout, FALSE = no Timeout</text>
+<path d="M300,248 L300,258 L305,253 Z" fill="#18519E" stroke="none" />
+<text x="288" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">s32TimeStamp_timeout</text>
+<text x="339" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<text x="409" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Time stamp of the Timeout in ms</text>
+<path d="M300,274 L300,284 L305,279 Z" fill="#18519E" stroke="none" />
+<text x="288" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">s32TimeStamp</text>
+<text x="339" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<text x="409" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Time stamp of the message in ms</text>
+<path d="M300,300 L300,310 L305,305 Z" fill="#18519E" stroke="none" />
+<text x="288" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">Version</text>
+<text x="339" y="308" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<path d="M300,326 L300,336 L305,331 Z" fill="#18519E" stroke="none" />
+<text x="288" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">Revision</text>
+<text x="339" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<path d="M300,352 L300,362 L305,357 Z" fill="#18519E" stroke="none" />
+<text x="288" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">Fault_Code</text>
+<text x="339" y="360" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<path d="M300,378 L300,388 L305,383 Z" fill="#18519E" stroke="none" />
+<text x="288" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">User_ID</text>
+<text x="339" y="386" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<path d="M300,404 L300,414 L305,409 Z" fill="#18519E" stroke="none" />
+<text x="288" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">Hardware_Version</text>
+<text x="339" y="412" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">USINT</text>
+<path d="M300,430 L300,440 L305,435 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_01</text>
+<text x="339" y="438" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,456 L300,466 L305,461 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_02</text>
+<text x="339" y="464" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,482 L300,492 L305,487 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="491" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_03</text>
+<text x="339" y="490" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,508 L300,518 L305,513 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="517" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_04</text>
+<text x="339" y="516" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,534 L300,544 L305,539 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="543" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_05</text>
+<text x="339" y="542" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,560 L300,570 L305,565 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="569" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_06</text>
+<text x="339" y="568" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,586 L300,596 L305,591 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="595" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_07</text>
+<text x="339" y="594" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,612 L300,622 L305,617 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="621" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_08</text>
+<text x="339" y="620" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,638 L300,648 L305,643 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="647" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_09</text>
+<text x="339" y="646" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,664 L300,674 L305,669 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="673" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_10</text>
+<text x="339" y="672" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,690 L300,700 L305,695 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="699" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_11</text>
+<text x="339" y="698" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,716 L300,726 L305,721 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="725" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_12</text>
+<text x="339" y="724" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,742 L300,752 L305,747 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="751" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_13</text>
+<text x="339" y="750" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M300,768 L300,778 L305,773 Z" fill="#9FA48A" stroke="none" />
+<text x="288" y="777" font-size="12" text-anchor="end" font-family="Consolas, monospace">Status_14</text>
+<text x="339" y="776" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M-12,42 L-12,201" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,201 L-5,201" stroke="#404040" />
+<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M312,42 L312,201" stroke="#404040" stroke-width="1" />
+<path d="M300,42 L312,42" stroke="#404040" />
+<rect x="310" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M312,175 L305,175" stroke="#404040" />
+<rect x="310" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M312,201 L305,201" stroke="#404040" />
+<rect x="310" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,68 L320,773" stroke="#404040" stroke-width="1" />
+<path d="M300,68 L320,68" stroke="#404040" />
+<rect x="318" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,175 L305,175" stroke="#404040" />
+<rect x="318" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,279 L305,279" stroke="#404040" />
+<rect x="318" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,201 L305,201" stroke="#404040" />
+<rect x="318" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,227 L305,227" stroke="#404040" />
+<rect x="318" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,305 L305,305" stroke="#404040" />
+<rect x="318" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,331 L305,331" stroke="#404040" />
+<rect x="318" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,357 L305,357" stroke="#404040" />
+<rect x="318" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,383 L305,383" stroke="#404040" />
+<rect x="318" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,409 L305,409" stroke="#404040" />
+<rect x="318" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,435 L305,435" stroke="#404040" />
+<rect x="318" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,461 L305,461" stroke="#404040" />
+<rect x="318" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,487 L305,487" stroke="#404040" />
+<rect x="318" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,513 L305,513" stroke="#404040" />
+<rect x="318" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,539 L305,539" stroke="#404040" />
+<rect x="318" y="537" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,565 L305,565" stroke="#404040" />
+<rect x="318" y="563" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,591 L305,591" stroke="#404040" />
+<rect x="318" y="589" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,617 L305,617" stroke="#404040" />
+<rect x="318" y="615" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,643 L305,643" stroke="#404040" />
+<rect x="318" y="641" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,669 L305,669" stroke="#404040" />
+<rect x="318" y="667" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,695 L305,695" stroke="#404040" />
+<rect x="318" y="693" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,721 L305,721" stroke="#404040" />
+<rect x="318" y="719" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,747 L305,747" stroke="#404040" />
+<rect x="318" y="745" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M320,773 L305,773" stroke="#404040" />
+<rect x="318" y="771" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M328,94 L328,253" stroke="#404040" stroke-width="1" />
+<path d="M300,94 L328,94" stroke="#404040" />
+<rect x="326" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M328,227 L305,227" stroke="#404040" />
+<rect x="326" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M328,253 L305,253" stroke="#404040" />
+<rect x="326" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M328,201 L305,201" stroke="#404040" />
+<rect x="326" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M328,227 L305,227" stroke="#404040" />
+<rect x="326" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

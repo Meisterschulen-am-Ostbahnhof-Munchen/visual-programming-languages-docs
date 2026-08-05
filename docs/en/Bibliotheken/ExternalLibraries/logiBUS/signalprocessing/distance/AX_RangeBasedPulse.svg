@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1300" height="213" viewBox="-540 -20 1300 213">
+<defs>
+</defs>
+<rect x="3" y="3" width="220" height="163" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H220 V30 H214 V70 H220 V163 H0 V70 H6 V30 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L220,30" stroke="#000000" stroke-width="1" />
+<text x="110.0" y="48.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AX_RangeBasedPulse</text>
+<text x="110.0" y="62.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<rect x="-5.0" y="82.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="12" y="91" font-size="12" text-anchor="start" font-family="Consolas, monospace">DIST_IN</text>
+<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AUDI</text>
+<text x="-116" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input Distance Adapter</text>
+<path d="M-5,108 L-5,118 L0,113 Z" fill="#18519E" stroke="none" />
+<text x="12" y="117" font-size="12" text-anchor="start" font-family="Consolas, monospace">DIST_HIGH</text>
+<text x="-15" y="116" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="-116" y="116" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Distance for HIGH pulse (mm)</text>
+<path d="M-5,134 L-5,144 L0,139 Z" fill="#18519E" stroke="none" />
+<text x="12" y="143" font-size="12" text-anchor="start" font-family="Consolas, monospace">DIST_LOW</text>
+<text x="-15" y="142" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UDINT</text>
+<text x="-116" y="142" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Distance for LOW pulse (mm)</text>
+<rect x="215.0" y="82.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="208" y="91" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
+<text x="235" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="305" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Pulse Output Adapter</text>
+</svg>

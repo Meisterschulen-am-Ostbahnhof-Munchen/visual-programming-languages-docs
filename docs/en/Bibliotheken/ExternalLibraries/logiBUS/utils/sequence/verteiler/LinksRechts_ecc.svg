@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1258.683301939288" height="800" viewBox="0 0 1258.683301939288 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1258.683301939288" height="800" fill="#ffffff" />
+<text x="629.0" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: LinksRechts</text>
+<rect x="49.815091952870915" y="174.96750111463263" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="89.81509195287092" y="190.96750111463263" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="85.5386630629759" y="339.2073216674213" width="128.0" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="149.5386630629759" y="355.2073216674213" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Linkslauf_Pause</text>
+<rect x="223.5386630629759" y="339.2073216674213" width="179.0" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M213.5386630629759,355.2073216674213 L223.5386630629759,350.2073216674213" stroke="#000000" stroke-width="2" />
+<path d="M321.5386630629759,339.2073216674213 L321.5386630629759,361.2073216674213" stroke="#cccccc" stroke-width="1" />
+<rect x="223.5386630629759" y="343.2073216674213" width="98.0" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="272.5386630629759" y="351.2073216674213" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">Linkslauf_Pause</text>
+<rect x="322.5386630629759" y="343.2073216674213" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="362.5386630629759" y="351.2073216674213" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO</text>
+<rect x="402.15651861350074" y="160.03660833710637" width="92.0" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="448.15651861350074" y="176.03660833710637" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Rechtslauf</text>
+<rect x="504.15651861350074" y="160.03660833710637" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M494.15651861350074,176.03660833710637 L504.15651861350074,171.03660833710637" stroke="#000000" stroke-width="2" />
+<path d="M584.1565186135008,160.03660833710637 L584.1565186135008,182.03660833710637" stroke="#cccccc" stroke-width="1" />
+<rect x="504.15651861350074" y="164.03660833710637" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="544.1565186135008" y="172.03660833710637" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">Rechtslauf</text>
+<rect x="585.1565186135008" y="164.03660833710637" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="625.1565186135008" y="172.03660833710637" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO</text>
+<rect x="405.75651861350076" y="607.9633916628936" width="84.8" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="448.15651861350074" y="623.9633916628936" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Linkslauf</text>
+<rect x="500.5565186135007" y="607.9633916628936" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M490.5565186135007,623.9633916628936 L500.5565186135007,618.9633916628936" stroke="#000000" stroke-width="2" />
+<path d="M580.5565186135007,607.9633916628936 L580.5565186135007,629.9633916628936" stroke="#cccccc" stroke-width="1" />
+<rect x="500.5565186135007" y="611.9633916628936" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="540.5565186135007" y="619.9633916628936" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">Linkslauf</text>
+<rect x="581.5565186135007" y="611.9633916628936" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="621.5565186135007" y="619.9633916628936" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO</text>
+<rect x="828.483301939288" y="339.2073216674213" width="135.2" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="896.083301939288" y="355.2073216674213" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Rechtslauf_Pause</text>
+<rect x="973.6833019392881" y="339.2073216674213" width="185.0" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M963.6833019392881,355.2073216674213 L973.6833019392881,350.2073216674213" stroke="#000000" stroke-width="2" />
+<path d="M1077.683301939288,339.2073216674213 L1077.683301939288,361.2073216674213" stroke="#cccccc" stroke-width="1" />
+<rect x="973.6833019392881" y="343.2073216674213" width="104.0" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="1025.683301939288" y="351.2073216674213" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">Rechtslauf_Pause</text>
+<rect x="1078.683301939288" y="343.2073216674213" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="1118.683301939288" y="351.2073216674213" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO</text>
+<path d="M129.81509195287092,190.96750111463263 C336.0776794912391,190.96750111463263,433.15651861350074,399.4654463887631,433.15651861350074,607.9633916628936" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M433.15651861350074,607.9633916628936 L429.15651861350074,601.0351884326182 L437.15651861350074,601.0351884326182 L433.15651861350074,607.9633916628936" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(358.8342756100739,321.27871691096414)">
+<rect x="-78.75" y="-7.5" width="157.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_ON[EIN AND DI_Links]</text>
+</g>
+<path d="M129.81509195287092,190.96750111463263 C169.81509195287092,190.96750111463263,433.15651861350074,232.03660833710637,433.15651861350074,192.03660833710637" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M433.15651861350074,192.03660833710637 L437.15651861350074,198.96481156738187 L429.15651861350074,198.96481156738187 L433.15651861350074,192.03660833710637" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(296.4858052831858,206.5020547258695)">
+<rect x="-36.5" y="-7.5" width="73.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_ON[EIN]</text>
+</g>
+<path d="M494.15651861350074,168.53660833710637 C668.8212862311484,168.53660833710637,896.083301939288,164.5425540497736,896.083301939288,339.2073216674213" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M896.083301939288,339.2073216674213 L892.083301939288,332.27911843714577 L900.083301939288,332.27911843714577 L896.083301939288,339.2073216674213" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(760.6191981330123,188.37267714564592)">
+<rect x="-49.5" y="-7.5" width="99.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_ON[NOT EIN]</text>
+</g>
+<path d="M828.483301939288,362.7073216674213 C646.7370494459291,362.7073216674213,448.15651861350074,373.7828608304653,448.15651861350074,192.03660833710637" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M448.15651861350074,192.03660833710637 L452.15651861350074,198.96481156738187 L444.15651861350074,198.96481156738187 L448.15651861350074,192.03660833710637" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(570.1650655913847,345.52680968727344)">
+<rect x="-82.0" y="-7.5" width="164.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_ON[EIN AND DI_Rechts]</text>
+</g>
+<path d="M828.483301939288,355.2073216674213 C645.8211687930898,355.2073216674213,448.15651861350074,425.30125851669544,448.15651861350074,607.9633916628936" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M448.15651861350074,607.9633916628936 L444.15651861350074,601.0351884326182 L452.15651861350074,601.0351884326182 L448.15651861350074,607.9633916628936" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(569.82161034657,413.08705673533314)">
+<rect x="-36.5" y="-7.5" width="73.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_ON[EIN]</text>
+</g>
+<path d="M405.75651861350076,616.4633916628936 C263.8843906263398,616.4633916628936,149.5386630629759,513.0794496545823,149.5386630629759,371.2073216674213" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M149.5386630629759,371.2073216674213 L153.5386630629759,378.1355248976968 L145.5386630629759,378.1355248976968 L149.5386630629759,371.2073216674213" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(224.44554284305295,547.0374046603429)">
+<rect x="-49.5" y="-7.5" width="99.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_ON[NOT EIN]</text>
+</g>
+<path d="M213.5386630629759,362.7073216674213 C368.51558326299556,362.7073216674213,463.15651861350074,452.98647146287396,463.15651861350074,607.9633916628936" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M463.15651861350074,607.9633916628936 L459.15651861350074,601.0351884326182 L467.15651861350074,601.0351884326182 L463.15651861350074,607.9633916628936" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(396.46393591324573,427.2190115901501)">
+<rect x="-78.75" y="-7.5" width="157.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_ON[EIN AND DI_Links]</text>
+</g>
+<path d="M213.5386630629759,355.2073216674213 C332.825715502621,355.2073216674213,463.15651861350074,311.32366077675147,463.15651861350074,192.03660833710637" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M463.15651861350074,192.03660833710637 L467.15651861350074,198.96481156738187 L459.15651861350074,198.96481156738187 L463.15651861350074,192.03660833710637" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(383.08023550310526,318.3546096671307)">
+<rect x="-36.5" y="-7.5" width="73.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EI_ON[EIN]</text>
+</g>
+</svg>

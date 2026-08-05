@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: E_D_FF_ANY_HYS</text>
+<rect x="10.0" y="398.23188484372037" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="50.0" y="414.23188484372037" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="689.0642196860852" y="369.7681151562797" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="729.0642196860852" y="385.7681151562797" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">SET</text>
+<rect x="779.0642196860852" y="369.7681151562797" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M769.0642196860852,385.7681151562797 L779.0642196860852,380.7681151562797" stroke="#000000" stroke-width="2" />
+<path d="M859.0642196860852,369.7681151562797 L859.0642196860852,391.7681151562797" stroke="#cccccc" stroke-width="1" />
+<rect x="779.0642196860852" y="373.7681151562797" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="819.0642196860852" y="381.7681151562797" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">LATCH</text>
+<rect x="860.0642196860852" y="373.7681151562797" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="900.0642196860852" y="381.7681151562797" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO</text>
+<path d="M749.0642196860852,401.7681151562797 C809.0642196860852,457.7681151562797,649.0642196860852,457.7681151562797,709.0642196860852,401.7681151562797" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M709.0642196860852,401.7681151562797 L706.7285932165751,409.4195757354713 L701.270047213695,403.57113358952836 L709.0642196860852,401.7681151562797" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(729.0642196860852,421.7681151562797)">
+<rect x="-153.5" y="-7.5" width="307.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CLK[GE(SUB(MAX(D, Q), MIN(D, Q)), HYSTERESIS)]</text>
+</g>
+<path d="M90.0,414.23188484372037 C130.0,414.23188484372037,736.5642196860852,441.7681151562797,736.5642196860852,401.7681151562797" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M736.5642196860852,401.7681151562797 L740.5642196860852,408.6963183865552 L732.5642196860852,408.6963183865552 L736.5642196860852,401.7681151562797" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(428.2821098430426,423.00000000000006)">
+<rect x="-13.75" y="-7.5" width="27.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CLK</text>
+</g>
+</svg>

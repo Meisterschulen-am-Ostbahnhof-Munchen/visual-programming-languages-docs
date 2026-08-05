@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: ASR_AX_SR</text>
+<rect x="10.0" y="238.61538461538464" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="50.0" y="254.61538461538464" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">START</text>
+<rect x="508.46153846153834" y="114.00000000000006" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="548.4615384615383" y="130.00000000000006" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">SET</text>
+<rect x="598.4615384615383" y="114.00000000000006" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M588.4615384615383,130.00000000000006 L598.4615384615383,125.00000000000006" stroke="#000000" stroke-width="2" />
+<path d="M678.4615384615383,114.00000000000006 L678.4615384615383,136.00000000000006" stroke="#cccccc" stroke-width="1" />
+<rect x="598.4615384615383" y="118.00000000000006" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="638.4615384615383" y="126.00000000000006" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">SET</text>
+<rect x="679.4615384615383" y="118.00000000000006" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="719.4615384615383" y="126.00000000000006" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">Q.E1</text>
+<rect x="508.46153846153834" y="654.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="548.4615384615383" y="670.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">RESET</text>
+<rect x="598.4615384615383" y="654.0" width="161" height="22" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M588.4615384615383,670.0 L598.4615384615383,665.0" stroke="#000000" stroke-width="2" />
+<path d="M678.4615384615383,654.0 L678.4615384615383,676.0" stroke="#cccccc" stroke-width="1" />
+<rect x="598.4615384615383" y="658.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="638.4615384615383" y="666.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">RESET</text>
+<rect x="679.4615384615383" y="658.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="719.4615384615383" y="666.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">Q.E1</text>
+<path d="M90.0,254.61538461538464 C275.54292697777316,254.61538461538464,540.9615384615383,331.5429269777733,540.9615384615383,146.00000000000006" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M540.9615384615383,146.00000000000006 L544.9615384615383,152.92820323027556 L536.9615384615383,152.92820323027556 L540.9615384615383,146.00000000000006" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(385.05936684743415,269.8862899243573)">
+<rect x="-26.75" y="-7.5" width="53.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">S_R.SET</text>
+</g>
+<path d="M540.9615384615383,146.00000000000006 C540.9615384615383,186.00000000000006,548.4615384615383,614.0,548.4615384615383,654.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M548.4615384615383,654.0 L544.4615384615383,647.0717967697245 L552.4615384615383,647.0717967697245 L548.4615384615383,654.0" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(544.7115384615383,400.0)">
+<rect x="-33.25" y="-7.5" width="66.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">S_R.RESET</text>
+</g>
+<path d="M555.9615384615383,654.0 C555.9615384615383,609.0,555.9615384615383,191.00000000000006,555.9615384615383,146.00000000000006" stroke="#404040" stroke-width="1.2" fill="none" />
+<path d="M555.9615384615383,146.00000000000006 L559.9615384615383,152.92820323027556 L551.9615384615383,152.92820323027556 L555.9615384615383,146.00000000000006" fill="#404040" stroke="#404040" stroke-width="1" />
+<g transform="translate(555.9615384615383,418.0)">
+<rect x="-26.75" y="-7.5" width="53.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">S_R.SET</text>
+</g>
+</svg>

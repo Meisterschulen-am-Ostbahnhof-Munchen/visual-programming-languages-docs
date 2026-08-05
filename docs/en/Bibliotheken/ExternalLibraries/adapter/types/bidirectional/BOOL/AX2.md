@@ -1,0 +1,31 @@
+![AX2](AX2.svg)
+
+#AX2
+
+bidirectional adapter interface for 1 event and 1 bool
+
+## Interface
+
+### Event inputs
+
+| Name | Comment | With |
+| :--- | :--- | :--- |
+| EI1 | Request (or Indication) | DI1 |
+
+### Event Outputs
+
+| Name | Comment | With |
+| :--- | :--- | :--- |
+| EO1 | Indication (or Request) | DO1 |
+
+### Input Vars
+
+| Name | Type | Comment |
+| :--- | :--- | :--- |
+| DI1 | BOOL | Request (or Indication) to Socket |
+
+### Output Vars
+
+| Name | Type | Comment |
+| :--- | :--- | :--- |
+| DO1 | BOOL | Indication (or Request) Data from Plug |

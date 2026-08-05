@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1260" height="213" viewBox="-540 -20 1260 213">
+<defs>
+</defs>
+<rect x="3" y="3" width="180" height="163" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H180 V30 H174 V70 H180 V163 H0 V70 H6 V30 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L180,30" stroke="#000000" stroke-width="1" />
+<text x="90.0" y="48.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">ILOCK_FB_SR_AX</text>
+<text x="90.0" y="62.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<rect x="-5.0" y="82.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="12" y="91" font-size="12" text-anchor="start" font-family="Consolas, monospace">SET1</text>
+<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="-98" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Set</text>
+<rect x="-5.0" y="108.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="12" y="117" font-size="12" text-anchor="start" font-family="Consolas, monospace">RESET</text>
+<text x="-15" y="116" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="-98" y="116" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset</text>
+<rect x="-5.0" y="134.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="12" y="143" font-size="12" text-anchor="start" font-family="Consolas, monospace">ILOCK_IN</text>
+<text x="-15" y="142" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX2</text>
+<text x="-98" y="142" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Interlock from above</text>
+<rect x="175.0" y="82.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="168" y="91" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q1</text>
+<text x="195" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="265" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output</text>
+<rect x="175.0" y="108.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="168" y="117" font-size="12" text-anchor="end" font-family="Consolas, monospace">ILOCK_OUT</text>
+<text x="195" y="116" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX2</text>
+<text x="265" y="116" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Interlock to below</text>
+</svg>

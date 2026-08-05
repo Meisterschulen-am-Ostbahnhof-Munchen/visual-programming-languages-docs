@@ -1,0 +1,69 @@
+.team-roster a img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 7px #fff, 0 0 0 8px #cecece;
+  margin: 9px 17px 9px 3px;
+}
+
+
+/* Center the RTD placement when not wide enough to float */
+#rtd-stickybox-container {
+  text-align: center;
+}
+
+/* Nav toggle wrapper */
+.nav-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+/* Icon-only toggle button */
+.nav-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  flex-shrink: 0;
+  color: var(--md-default-fg-color);
+  background: var(--md-default-bg-color);
+  border: 1.5px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.nav-toggle-btn:hover {
+  background: var(--md-default-fg-color--lightest);
+  border-color: var(--md-default-fg-color--lighter);
+}
+
+.nav-toggle-btn .md-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* Label beside the button */
+.nav-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  height: 2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color);
+  user-select: none;
+  cursor: default;
+}
+
+/* Collapsed state: collapse only the first sub-level under each section.
+   Deeper nesting is left visible. Material's checkbox CSS has higher
+   specificity, so individual section toggles still work. */
+[data-nav-collapsed="true"] .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item--nested > .md-nav > .md-nav__list {
+  display: none;
+}

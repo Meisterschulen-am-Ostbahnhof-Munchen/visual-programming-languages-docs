@@ -1,0 +1,27 @@
+flowchart TD
+    ANY_MAGNITUDE["ANY_MAGNITUDE (Größentypen)"] --> ANY_NUM["ANY_NUM (Numerische Typen)"]
+    ANY_MAG_DURATION["ANY_DURATION (Zeitdauer)"]
+    ANY_MAGNITUDE --> ANY_MAG_DURATION
+    
+    ANY_NUM --> ANY_REAL["ANY_REAL (Gleitpunktzahlen)"]
+    ANY_NUM --> ANY_INT["ANY_INT (Ganzzahlen)"]
+    
+    ANY_INT --> ANY_UNSIGNED["ANY_UNSIGNED (Vorzeichenlos)"]
+    ANY_INT --> ANY_SIGNED["ANY_SIGNED (Vorzeichenbehaftet)"]
+    
+    %% Zuordnung elementarer Typen
+    ANY_REAL --> REAL
+    ANY_REAL --> LREAL
+    
+    ANY_UNSIGNED --> USINT
+    ANY_UNSIGNED --> UINT
+    ANY_UNSIGNED --> UDINT
+    ANY_UNSIGNED --> ULINT
+    
+    ANY_SIGNED --> SINT
+    ANY_SIGNED --> INT
+    ANY_SIGNED --> DINT
+    ANY_SIGNED --> LINT
+    
+    ANY_MAG_DURATION --> TIME
+    ANY_MAG_DURATION --> LTIME

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+<marker markerWidth="20" markerHeight="15" viewBox="-10 -5 20 15" orient="auto" markerUnits="strokeWidth">
+<path d="M -10 -5 L 0 0 L -10 5 Z" fill="#404040" />
+</marker>
+</defs>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff" />
+<text x="600" y="25" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">ECC: sequence_T_04</text>
+<rect x="110.0" y="374.000625" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="150.0" y="390.000625" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">sRESET</text>
+<rect x="200.0" y="374.000625" width="161" height="78" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M190.0,390.000625 L200.0,385.000625" stroke="#000000" stroke-width="2" />
+<path d="M280.0,374.000625 L280.0,452.000625" stroke="#cccccc" stroke-width="1" />
+<rect x="200.0" y="378.000625" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="240.0" y="386.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="281.0" y="378.000625" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="321.0" y="386.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.STOP</text>
+<path d="M200.0,392.000625 L361.0,392.000625" stroke="#cccccc" stroke-width="0.5" />
+<rect x="200.0" y="392.000625" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="240.0" y="400.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_01_X</text>
+<rect x="281.0" y="392.000625" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="321.0" y="400.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S1</text>
+<path d="M200.0,406.000625 L361.0,406.000625" stroke="#cccccc" stroke-width="0.5" />
+<rect x="200.0" y="406.000625" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="240.0" y="414.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_02_X</text>
+<rect x="281.0" y="406.000625" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="321.0" y="414.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S2</text>
+<path d="M200.0,420.000625 L361.0,420.000625" stroke="#cccccc" stroke-width="0.5" />
+<rect x="200.0" y="420.000625" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="240.0" y="428.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_03_X</text>
+<rect x="281.0" y="420.000625" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="321.0" y="428.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S3</text>
+<path d="M200.0,434.000625 L361.0,434.000625" stroke="#cccccc" stroke-width="0.5" />
+<rect x="200.0" y="434.000625" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="240.0" y="442.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_04_X</text>
+<rect x="281.0" y="434.000625" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="321.0" y="442.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S4</text>
+<rect x="385.000625" y="24.0" width="80" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="425.000625" y="40.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">xSTART</text>
+<rect x="732.60125" y="123.99937499999999" width="84.8" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="775.00125" y="139.999375" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">sState_01</text>
+<rect x="827.40125" y="123.99937499999999" width="167.0" height="64" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M817.40125,139.999375 L827.40125,134.999375" stroke="#000000" stroke-width="2" />
+<path d="M907.40125,123.99937499999999 L907.40125,187.999375" stroke="#cccccc" stroke-width="1" />
+<rect x="827.40125" y="127.99937499999999" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="135.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="908.40125" y="127.99937499999999" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="135.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<path d="M827.40125,141.999375 L994.40125,141.999375" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="141.999375" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="149.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_01_C</text>
+<rect x="908.40125" y="141.999375" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="149.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CNF</text>
+<path d="M827.40125,155.999375 L994.40125,155.999375" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="155.999375" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="163.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_01_E</text>
+<rect x="908.40125" y="155.999375" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="163.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S1</text>
+<path d="M827.40125,169.999375 L994.40125,169.999375" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="169.999375" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="177.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="908.40125" y="169.999375" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="177.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.START</text>
+<rect x="732.60125" y="249.0" width="84.8" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="775.00125" y="265.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">sState_02</text>
+<rect x="827.40125" y="249.0" width="167.0" height="64" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M817.40125,265.0 L827.40125,260.0" stroke="#000000" stroke-width="2" />
+<path d="M907.40125,249.0 L907.40125,313.0" stroke="#cccccc" stroke-width="1" />
+<rect x="827.40125" y="253.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="261.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_01_X</text>
+<rect x="908.40125" y="253.0" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="261.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S1</text>
+<path d="M827.40125,267.0 L994.40125,267.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="267.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="275.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_02_C</text>
+<rect x="908.40125" y="267.0" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="275.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CNF</text>
+<path d="M827.40125,281.0 L994.40125,281.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="281.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="289.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_02_E</text>
+<rect x="908.40125" y="281.0" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="289.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S2</text>
+<path d="M827.40125,295.0 L994.40125,295.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="295.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="303.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="908.40125" y="295.0" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="303.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.START</text>
+<rect x="732.60125" y="374.000625" width="84.8" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="775.00125" y="390.000625" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">sState_03</text>
+<rect x="827.40125" y="374.000625" width="167.0" height="64" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M817.40125,390.000625 L827.40125,385.000625" stroke="#000000" stroke-width="2" />
+<path d="M907.40125,374.000625 L907.40125,438.000625" stroke="#cccccc" stroke-width="1" />
+<rect x="827.40125" y="378.000625" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="386.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_02_X</text>
+<rect x="908.40125" y="378.000625" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="386.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S2</text>
+<path d="M827.40125,392.000625 L994.40125,392.000625" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="392.000625" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="400.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_03_C</text>
+<rect x="908.40125" y="392.000625" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="400.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CNF</text>
+<path d="M827.40125,406.000625 L994.40125,406.000625" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="406.000625" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="414.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_03_E</text>
+<rect x="908.40125" y="406.000625" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="414.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S3</text>
+<path d="M827.40125,420.000625 L994.40125,420.000625" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="420.000625" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="428.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="908.40125" y="420.000625" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="428.000625" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.START</text>
+<rect x="732.60125" y="498.999375" width="84.8" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="775.00125" y="514.999375" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">sState_04</text>
+<rect x="827.40125" y="498.999375" width="167.0" height="64" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M817.40125,514.999375 L827.40125,509.999375" stroke="#000000" stroke-width="2" />
+<path d="M907.40125,498.999375 L907.40125,562.999375" stroke="#cccccc" stroke-width="1" />
+<rect x="827.40125" y="502.999375" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="510.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_03_X</text>
+<rect x="908.40125" y="502.999375" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="510.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S3</text>
+<path d="M827.40125,516.999375 L994.40125,516.999375" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="516.999375" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="524.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_04_C</text>
+<rect x="908.40125" y="516.999375" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="524.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CNF</text>
+<path d="M827.40125,530.999375 L994.40125,530.999375" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="530.999375" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="538.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_04_E</text>
+<rect x="908.40125" y="530.999375" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="538.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S4</text>
+<path d="M827.40125,544.999375 L994.40125,544.999375" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="544.999375" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="552.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="908.40125" y="544.999375" width="86.0" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="951.40125" y="552.999375" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.START</text>
+<rect x="732.60125" y="624.0" width="84.8" height="32" fill="#f5f5f5" stroke="#000000" stroke-width="2" rx="8" ry="8" />
+<text x="775.00125" y="640.0" font-size="12" fontWeight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">sState_00</text>
+<rect x="827.40125" y="624.0" width="161" height="64" fill="#ffffff" stroke="#cccccc" stroke-width="1" rx="4" ry="4" />
+<path d="M817.40125,640.0 L827.40125,635.0" stroke="#000000" stroke-width="2" />
+<path d="M907.40125,624.0 L907.40125,688.0" stroke="#cccccc" stroke-width="1" />
+<rect x="827.40125" y="628.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="636.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="908.40125" y="628.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="948.40125" y="636.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.STOP</text>
+<path d="M827.40125,642.0 L988.40125,642.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="642.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="650.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_04_X</text>
+<rect x="908.40125" y="642.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="948.40125" y="650.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">EO_S4</text>
+<path d="M827.40125,656.0 L988.40125,656.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="656.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="664.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">State_00_C</text>
+<rect x="908.40125" y="656.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="948.40125" y="664.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">CNF</text>
+<path d="M827.40125,670.0 L988.40125,670.0" stroke="#cccccc" stroke-width="0.5" />
+<rect x="827.40125" y="670.0" width="80" height="14" fill="#e6f7e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="867.40125" y="678.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<rect x="908.40125" y="670.0" width="80" height="14" fill="#ffe6e6" stroke="#cccccc" stroke-width="0.5" />
+<text x="948.40125" y="678.0" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central"></text>
+<path d="M775.00125,155.999375 C775.00125,174.59949999999998,775.00125,230.399875,775.00125,249.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(775.00125,202.4996875)">
+<rect x="-52.75" y="-7.5" width="105.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.TimeOut</text>
+</g>
+<path d="M775.00125,281.0 C775.00125,299.600125,775.00125,355.4005,775.00125,374.000625" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(775.00125,327.5003125)">
+<rect x="-52.75" y="-7.5" width="105.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.TimeOut</text>
+</g>
+<path d="M775.00125,406.000625 C775.00125,424.600375,775.00125,480.399625,775.00125,498.999375" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(775.00125,452.5)">
+<rect x="-52.75" y="-7.5" width="105.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.TimeOut</text>
+</g>
+<path d="M775.00125,624.0 C635.00125,584.0,627.50125,83.99937499999999,767.50125,123.99937499999999" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(666.25125,343.9996875)">
+<rect x="-30.0" y="-7.5" width="60.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">START_S1</text>
+</g>
+<path d="M775.00125,530.999375 C775.00125,549.6598854435979,767.50125,605.3394895564021,767.50125,624.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(771.25125,577.4996874999999)">
+<rect x="-52.75" y="-7.5" width="105.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">timeOut.TimeOut</text>
+</g>
+<path d="M465.000625,40.0 C596.3703578159154,40.0,782.50125,-7.370357815915412,782.50125,123.99937499999999" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(673.0145873059683,32.73603769403172)">
+<rect x="-30.0" y="-7.5" width="60.0" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">START_S1</text>
+</g>
+<path d="M732.60125,139.999375 C473.09275834606586,139.999375,127.5,114.49213334606583,127.5,374.000625" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(332.7349406297747,159.6843156297747)">
+<rect x="-20.25" y="-7.5" width="40.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">RESET</text>
+</g>
+<path d="M732.60125,514.999375 C489.91622524466,514.999375,142.5,131.31560024465995,142.5,374.000625" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(346.5437407167475,353.49311571674747)">
+<rect x="-20.25" y="-7.5" width="40.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">RESET</text>
+</g>
+<path d="M732.60125,265.0 C498.46536330103095,265.0,157.5,139.86473830103088,157.5,374.000625" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(357.2496674878866,231.69935498788658)">
+<rect x="-20.25" y="-7.5" width="40.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">RESET</text>
+</g>
+<path d="M732.60125,390.000625 C692.60125,390.000625,172.5,334.000625,172.5,374.000625" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(437.550625,367.000625)">
+<rect x="-20.25" y="-7.5" width="40.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">RESET</text>
+</g>
+<path d="M190.0,390.000625 C444.8139521303975,390.000625,782.50125,369.1860478696025,782.50125,624.0" stroke="#404040" stroke-width="1.2" fill="none" />
+<g transform="translate(581.805857048899,411.4450804511009)">
+<rect x="-7.25" y="-7.5" width="14.5" height="15" fill="#ffffff" opacity="0.9" rx="3" ry="3" />
+<text x="0" y="3.5" font-size="10" font-family="Consolas, monospace" fill="#000000" text-anchor="middle" dominant-baseline="central">1</text>
+</g>
+</svg>

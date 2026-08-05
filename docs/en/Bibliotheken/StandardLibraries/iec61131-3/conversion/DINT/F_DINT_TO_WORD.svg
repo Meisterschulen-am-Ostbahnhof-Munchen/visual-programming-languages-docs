@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1026" height="197" viewBox="-548 -20 1026 197">
+<defs>
+</defs>
+<rect x="3" y="3" width="180" height="147" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H180 V66 H174 V106 H180 V147 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L180,30" stroke="#000000" stroke-width="1" />
+<text x="90.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">F_DINT_TO_WORD</text>
+<text x="90.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Normal Execution Request</text>
+<path d="M-5,118 L-5,128 L0,123 Z" fill="#18519E" stroke="none" />
+<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="-23" y="126" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M180,37 L180,47 L185,42 Z" fill="#63B31F" stroke="none" />
+<text x="168" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="203" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="273" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Execution Confirmation</text>
+<path d="M180,118 L180,128 L185,123 Z" fill="#82A3A9" stroke="none" />
+<text x="168" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
+<text x="203" y="126" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">WORD</text>
+<path d="M-12,42 L-12,123" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,123 L-5,123" stroke="#404040" />
+<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M192,42 L192,123" stroke="#404040" stroke-width="1" />
+<path d="M180,42 L192,42" stroke="#404040" />
+<rect x="190" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M192,123 L185,123" stroke="#404040" />
+<rect x="190" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

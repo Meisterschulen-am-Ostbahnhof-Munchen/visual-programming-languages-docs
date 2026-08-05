@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1323" height="431" viewBox="-548 -20 1323 431">
+<defs>
+</defs>
+<rect x="3" y="3" width="211" height="381" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H211 V118 H205 V158 H211 V381 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L211,30" stroke="#000000" stroke-width="1" />
+<text x="105.5" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">I_TD_TD</text>
+<text x="105.5" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-103" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M211,37 L211,47 L216,42 Z" fill="#63B31F" stroke="none" />
+<text x="199" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="250" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="320" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<path d="M211,63 L211,73 L216,68 Z" fill="#63B31F" stroke="none" />
+<text x="199" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">IND</text>
+<text x="250" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="320" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Indication from Resource</text>
+<path d="M211,89 L211,99 L216,94 Z" fill="#63B31F" stroke="none" />
+<text x="199" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
+<text x="250" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M211,170 L211,180 L216,175 Z" fill="#9FA48A" stroke="none" />
+<text x="199" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="250" y="178" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="320" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M211,196 L211,206 L216,201 Z" fill="#BD8663" stroke="none" />
+<text x="199" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="250" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M211,222 L211,232 L216,227 Z" fill="#9FA48A" stroke="none" />
+<text x="199" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q_timeout</text>
+<text x="250" y="230" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M211,248 L211,258 L216,253 Z" fill="#18519E" stroke="none" />
+<text x="199" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_timeout</text>
+<text x="250" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M211,274 L211,284 L216,279 Z" fill="#18519E" stroke="none" />
+<text x="199" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">timestamp_data</text>
+<text x="250" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">DINT</text>
+<path d="M211,300 L211,310 L216,305 Z" fill="#000000" stroke="none" />
+<text x="199" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">TD</text>
+<text x="250" y="308" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">DT</text>
+<text x="320" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Time/Date as defined in IEC 61131-3</text>
+<path d="M211,326 L211,336 L216,331 Z" fill="#18519E" stroke="none" />
+<text x="199" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">LOCAL_MINUTE_OFFSET</text>
+<text x="250" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
+<text x="320" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Local minute offset (see Attributes for Details)</text>
+<path d="M211,352 L211,362 L216,357 Z" fill="#18519E" stroke="none" />
+<text x="199" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">LOCAL_HOUR_OFFSET</text>
+<text x="250" y="360" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
+<text x="320" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Local hour offset (see Attributes for Details)</text>
+<path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M223,42 L223,201" stroke="#404040" stroke-width="1" />
+<path d="M211,42 L223,42" stroke="#404040" />
+<rect x="221" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M223,175 L216,175" stroke="#404040" />
+<rect x="221" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M223,201 L216,201" stroke="#404040" />
+<rect x="221" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M231,68 L231,357" stroke="#404040" stroke-width="1" />
+<path d="M211,68 L231,68" stroke="#404040" />
+<rect x="229" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M231,175 L216,175" stroke="#404040" />
+<rect x="229" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M231,279 L216,279" stroke="#404040" />
+<rect x="229" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M231,201 L216,201" stroke="#404040" />
+<rect x="229" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M231,227 L216,227" stroke="#404040" />
+<rect x="229" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M231,331 L216,331" stroke="#404040" />
+<rect x="229" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M231,357 L216,357" stroke="#404040" />
+<rect x="229" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M239,94 L239,253" stroke="#404040" stroke-width="1" />
+<path d="M211,94 L239,94" stroke="#404040" />
+<rect x="237" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M239,253 L216,253" stroke="#404040" />
+<rect x="237" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M239,201 L216,201" stroke="#404040" />
+<rect x="237" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M239,227 L216,227" stroke="#404040" />
+<rect x="237" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1010" height="327" viewBox="-540 -20 1010 327">
+<defs>
+</defs>
+<rect x="3" y="3" width="180" height="277" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H180 V170 H174 V210 H180 V277 H0 V210 H6 V170 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L180,30" stroke="#000000" stroke-width="1" />
+<text x="90.0" y="188.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AX_INTERLOCK_2</text>
+<text x="90.0" y="202.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">SET1</text>
+<text x="-15" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-85" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Set output OUT1</text>
+<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">CLK1</text>
+<text x="-15" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-85" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Clock for triggering a output toggle on OUT1</text>
+<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">SET2</text>
+<text x="-15" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-85" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Set output OUT2</text>
+<path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="124" font-size="12" text-anchor="start" font-family="Consolas, monospace">CLK2</text>
+<text x="-15" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-85" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Clock for triggering a output toggle on OUT2</text>
+<path d="M-5,141 L-5,151 L0,146 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="150" font-size="12" text-anchor="start" font-family="Consolas, monospace">R</text>
+<text x="-15" y="149" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-85" y="149" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Reset all outputs</text>
+<rect x="175.0" y="222.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="168" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT1</text>
+<text x="195" y="230" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="265" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">value of flip flop</text>
+<rect x="175.0" y="248.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="168" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT2</text>
+<text x="195" y="256" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="265" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">value of flip flop</text>
+</svg>

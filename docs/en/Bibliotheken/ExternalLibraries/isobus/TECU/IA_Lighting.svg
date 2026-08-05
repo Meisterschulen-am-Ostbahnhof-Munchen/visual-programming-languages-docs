@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1478" height="1055" viewBox="-548 -20 1478 1055">
+<defs>
+</defs>
+<rect x="3" y="3" width="382" height="1005" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H382 V66 H376 V106 H382 V1005 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L382,30" stroke="#000000" stroke-width="1" />
+<text x="191.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">IA_Lighting</text>
+<text x="191.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
+<path d="M-5,118 L-5,128 L0,123 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="126" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-103" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M382,37 L382,47 L387,42 Z" fill="#63B31F" stroke="none" />
+<text x="370" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="405" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="475" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
+<rect x="377.0" y="118.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">DAYTIME_RUNNING_LIGHTS</text>
+<text x="405" y="126" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Daytime Running Lights</text>
+<rect x="377.0" y="144.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">ALTERNATE_HEADLIGHTS</text>
+<text x="405" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Alternate Headlights</text>
+<rect x="377.0" y="170.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">LOW_BEAM_HEADLIGHTS</text>
+<text x="405" y="178" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Low Beam Headlights</text>
+<rect x="377.0" y="196.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">HIGH_BEAM_HEADLIGHTS</text>
+<text x="405" y="204" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">High Beam Headlights</text>
+<rect x="377.0" y="222.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_FRONT_FOG_LIGHTS</text>
+<text x="405" y="230" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor Front Fog Lights</text>
+<rect x="377.0" y="248.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">ROTATING_BEACON_LIGHT</text>
+<text x="405" y="256" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Rotating Beacon Light</text>
+<rect x="377.0" y="274.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">RIGHT_TURN_SIGNAL_LIGHTS</text>
+<text x="405" y="282" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Right Turn Signal Lights</text>
+<rect x="377.0" y="300.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">LEFT_TURN_SIGNAL_LIGHTS</text>
+<text x="405" y="308" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Left Turn Signal Lights</text>
+<rect x="377.0" y="326.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">BACK_UP_LIGHTS_AND_ALARM_HORN</text>
+<text x="405" y="334" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Back Up Lights And Alarm Horn</text>
+<rect x="377.0" y="352.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">CENTER_STOP_LIGHTS</text>
+<text x="405" y="360" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Center Stop Lights</text>
+<rect x="377.0" y="378.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">RIGHT_STOP_LIGHTS</text>
+<text x="405" y="386" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Right Stop Lights</text>
+<rect x="377.0" y="404.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">LEFT_STOP_LIGHTS</text>
+<text x="405" y="412" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Left Stop Lights</text>
+<rect x="377.0" y="430.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_CLEARANCE_LIGHTS</text>
+<text x="405" y="438" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement Clearance Lights</text>
+<rect x="377.0" y="456.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_CLEARANCE_LIGHTS</text>
+<text x="405" y="464" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor Clearance Lights</text>
+<rect x="377.0" y="482.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="491" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_MARKER_LIGHTS</text>
+<text x="405" y="490" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement Marker Lights</text>
+<rect x="377.0" y="508.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="517" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_MARKER_LIGHTS</text>
+<text x="405" y="516" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor Marker Lights</text>
+<rect x="377.0" y="534.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="543" font-size="12" text-anchor="end" font-family="Consolas, monospace">REAR_FOG_LIGHTS</text>
+<text x="405" y="542" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="542" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Rear Fog Lights</text>
+<rect x="377.0" y="560.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="569" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_UNDERSIDE_MOUNTED_WORK_LIGHTS</text>
+<text x="405" y="568" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="568" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor Underside Mounted Work Lights</text>
+<rect x="377.0" y="586.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="595" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_REAR_LOW_MOUNTED_WORK_LIGHTS</text>
+<text x="405" y="594" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="594" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor Rear Low Mounted Work Lights</text>
+<rect x="377.0" y="612.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="621" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_REAR_HIGH_MOUNTED_WORK_LIGHTS</text>
+<text x="405" y="620" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="620" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor Rear High Mounted Work Lights</text>
+<rect x="377.0" y="638.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="647" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_SIDE_LOW_MOUNTED_WORK_LIGHTS</text>
+<text x="405" y="646" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="646" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor Side Low Mounted Work Lights</text>
+<rect x="377.0" y="664.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="673" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_SIDE_HIGH_MOUNTED_WORK_LIGHTS</text>
+<text x="405" y="672" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="672" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor Side High Mounted Work Lights</text>
+<rect x="377.0" y="690.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="699" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_FRONT_LOW_MOUNTED_WORK_LIGHTS</text>
+<text x="405" y="698" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="698" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor Front Low Mounted Work Lights</text>
+<rect x="377.0" y="716.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="725" font-size="12" text-anchor="end" font-family="Consolas, monospace">TRACTOR_FRONT_HIGH_MOUNTED_WORK_LIGHTS</text>
+<text x="405" y="724" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="724" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Tractor Front High Mounted Work Lights</text>
+<rect x="377.0" y="742.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="751" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_OEM_OPTION_2_LIGHT</text>
+<text x="405" y="750" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="750" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement Oem Option 2 Light</text>
+<rect x="377.0" y="768.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="777" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_OEM_OPTION_1_LIGHT</text>
+<text x="405" y="776" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="776" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement Oem Option 1 Light</text>
+<rect x="377.0" y="794.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="803" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_RIGHT_FORWARD_WORK_LIGHTS</text>
+<text x="405" y="802" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="802" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement Right Forward Work Lights</text>
+<rect x="377.0" y="820.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="829" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_LEFT_FORWARD_WORK_LIGHTS</text>
+<text x="405" y="828" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="828" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement Left Forward Work Lights</text>
+<rect x="377.0" y="846.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="855" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_RIGHT_FACING_WORK_LIGHTS</text>
+<text x="405" y="854" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="854" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement Right Facing Work Lights</text>
+<rect x="377.0" y="872.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="881" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_LEFT_FACING_WORK_LIGHTS</text>
+<text x="405" y="880" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="880" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement Left Facing Work Lights</text>
+<rect x="377.0" y="898.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="907" font-size="12" text-anchor="end" font-family="Consolas, monospace">IMPLEMENT_REAR_WORK_LIGHTS</text>
+<text x="405" y="906" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="906" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Implement Rear Work Lights</text>
+<rect x="377.0" y="924.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="370" y="933" font-size="12" text-anchor="end" font-family="Consolas, monospace">TIMEOUT</text>
+<text x="405" y="932" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<text x="475" y="932" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Timeout Status</text>
+<path d="M382,950 L382,960 L387,955 Z" fill="#9FA48A" stroke="none" />
+<text x="370" y="959" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="405" y="958" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="475" y="958" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M382,976 L382,986 L387,981 Z" fill="#BD8663" stroke="none" />
+<text x="370" y="985" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="405" y="984" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M-12,42 L-12,123" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,123 L-5,123" stroke="#404040" />
+<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M394,42 L394,981" stroke="#404040" stroke-width="1" />
+<path d="M382,42 L394,42" stroke="#404040" />
+<rect x="392" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M394,955 L387,955" stroke="#404040" />
+<rect x="392" y="953" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M394,981 L387,981" stroke="#404040" />
+<rect x="392" y="979" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

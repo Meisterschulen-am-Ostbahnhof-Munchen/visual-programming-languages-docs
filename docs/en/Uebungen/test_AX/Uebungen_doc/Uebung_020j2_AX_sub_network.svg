@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1594.0" height="1508.0" viewBox="0 0 1594.0 1508.0">
+<defs>
+</defs>
+<rect x="0" y="0" width="1594.0" height="1508.0" fill="#ffffff" />
+<text x="797.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_020j2_AX_sub: Subapplication Type</text>
+<path d="M287.0,953.0 C599.0,953.0,1015.0,1363.0,1327.0,1363.0" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<path d="M287.0,927.0 C599.0,927.0,1015.0,263.0,1327.0,263.0" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<rect x="1330.0" y="1243.0" width="140" height="168" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1327.0,1240.0 H1467.0 V1306.0 H1461.0 V1346.0 H1467.0 V1408.0 H1327.0 V1346.0 H1333.0 V1306.0 H1327.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1327.0,1270.0 L1467.0,1270.0" stroke="#000000" stroke-width="1" />
+<text x="1397.0" y="1324.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AX_TP_Q2</text>
+<text x="1397.0" y="1338.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AX_TP</text>
+<path d="M1322.0,1277.0 L1322.0,1287.0 L1327.0,1282.0 Z" fill="#63B31F" stroke="none" />
+<text x="1339.0" y="1286.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">R</text>
+<text x="1312.0" y="1285.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="1322.0" y="1358.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="1339.0" y="1367.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="1312.0" y="1366.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<path d="M1322.0,1384.0 L1322.0,1394.0 L1327.0,1389.0 Z" fill="#0000FF" stroke="none" />
+<text x="1339.0" y="1393.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">PT</text>
+<text x="1312.0" y="1392.0" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<rect x="1462.0" y="1358.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="1455.0" y="1367.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q</text>
+<text x="1482.0" y="1366.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<rect x="1330.0" y="143.0" width="140" height="168" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1327.0,140.0 H1467.0 V206.0 H1461.0 V246.0 H1467.0 V308.0 H1327.0 V246.0 H1333.0 V206.0 H1327.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1327.0,170.0 L1467.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="1397.0" y="224.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AX_TP_Q1</text>
+<text x="1397.0" y="238.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AX_TP</text>
+<path d="M1322.0,177.0 L1322.0,187.0 L1327.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="1339.0" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">R</text>
+<text x="1312.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="1322.0" y="258.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="1339.0" y="267.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="1312.0" y="266.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<path d="M1322.0,284.0 L1322.0,294.0 L1327.0,289.0 Z" fill="#0000FF" stroke="none" />
+<text x="1339.0" y="293.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">PT</text>
+<text x="1312.0" y="292.0" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
+<rect x="1462.0" y="258.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="1455.0" y="267.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">Q</text>
+<text x="1482.0" y="266.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<rect x="130.0" y="843.0" width="160" height="142" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M127.0,840.0 H287.0 V870.0 H281.0 V910.0 H287.0 V982.0 H127.0 V910.0 H133.0 V870.0 H127.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M127.0,870.0 L287.0,870.0" stroke="#000000" stroke-width="1" />
+<text x="207.0" y="888.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AX_SPLIT_2</text>
+<text x="207.0" y="902.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AX_SPLIT_2</text>
+<rect x="122.0" y="922.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="139.0" y="931.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="112.0" y="930.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<rect x="282.0" y="922.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="275.0" y="931.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT1</text>
+<text x="302.0" y="930.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<rect x="282.0" y="948.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="275.0" y="957.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT2</text>
+<text x="302.0" y="956.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+</svg>

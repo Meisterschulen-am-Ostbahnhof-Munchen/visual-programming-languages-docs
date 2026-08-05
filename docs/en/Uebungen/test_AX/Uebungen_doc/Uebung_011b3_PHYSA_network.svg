@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="2390.0" height="827.3333333333333" viewBox="0 0 2390.0 827.3333333333333">
+<defs>
+</defs>
+<rect x="0" y="0" width="2390.0" height="827.3333333333333" fill="#ffffff" />
+<text x="1195.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_011b3_PHYSA: Numeric Value Input ADD with Physical Values</text>
+<path d="M462.3333333333333,289.0 C752.3333333333333,289.0,1139.0,493.66666666666663,1429.0,493.66666666666663" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<path d="M429.0,622.3333333333333 C729.0,622.3333333333333,1129.0,519.6666666666666,1429.0,519.6666666666666" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<path d="M1569.0,493.66666666666663 C1707.0,493.66666666666663,1891.0,422.3333333333333,2029.0,422.3333333333333" stroke="#845DAF" stroke-width="1.5" fill="none" />
+<rect x="265.3333333333333" y="143.0" width="200" height="254" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M262.3333333333333,140.0 H462.3333333333333 V232.0 H456.3333333333333 V272.0 H462.3333333333333 V394.0 H262.3333333333333 V272.0 H268.3333333333333 V232.0 H262.3333333333333 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M262.3333333333333,170.0 L462.3333333333333,170.0" stroke="#000000" stroke-width="1" />
+<text x="362.3333333333333" y="250.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">InputNumber_I3</text>
+<text x="362.3333333333333" y="264.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">NumericValue_PHYSA</text>
+<text x="362.3333333333333" y="276.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="362.3333333333333" y="288.0" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">stObj=InputNumber_I3</text>
+<path d="M257.3333333333333,177.0 L257.3333333333333,187.0 L262.3333333333333,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="274.3333333333333" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="247.33333333333331" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M257.3333333333333,203.0 L257.3333333333333,213.0 L262.3333333333333,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="274.3333333333333" y="212.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="247.33333333333331" y="211.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M257.3333333333333,284.0 L257.3333333333333,294.0 L262.3333333333333,289.0 Z" fill="#9FA48A" stroke="none" />
+<text x="274.3333333333333" y="293.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="247.33333333333331" y="292.0" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M257.3333333333333,310.0 L257.3333333333333,320.0 L262.3333333333333,315.0 Z" fill="#BD8663" stroke="none" />
+<text x="274.3333333333333" y="319.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
+<text x="247.33333333333331" y="318.0" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M257.3333333333333,336.0 L257.3333333333333,346.0 L262.3333333333333,341.0 Z" fill="#000000" stroke="none" />
+<text x="274.3333333333333" y="345.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">stObj</text>
+<text x="247.33333333333331" y="344.0" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">NumericObjectPool_S</text>
+<path d="M467.3333333333333,177.0 L467.3333333333333,187.0 L462.3333333333333,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="450.3333333333333" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="477.3333333333333" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="457.3333333333333" y="284.0" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="450.3333333333333" y="293.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">rPhys</text>
+<text x="477.3333333333333" y="292.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AR</text>
+<path d="M467.3333333333333,310.0 L467.3333333333333,320.0 L462.3333333333333,315.0 Z" fill="#9FA48A" stroke="none" />
+<text x="450.3333333333333" y="319.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="477.3333333333333" y="318.0" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M467.3333333333333,336.0 L467.3333333333333,346.0 L462.3333333333333,341.0 Z" fill="#BD8663" stroke="none" />
+<text x="450.3333333333333" y="345.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="477.3333333333333" y="344.0" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<rect x="232.0" y="476.3333333333333" width="200" height="254" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M229.0,473.3333333333333 H429.0 V565.3333333333333 H423.0 V605.3333333333333 H429.0 V727.3333333333333 H229.0 V605.3333333333333 H235.0 V565.3333333333333 H229.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M229.0,503.3333333333333 L429.0,503.3333333333333" stroke="#000000" stroke-width="1" />
+<text x="329.0" y="583.3333333333333" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">InputNumber_I4</text>
+<text x="329.0" y="597.3333333333333" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">NumericValue_PHYSA</text>
+<text x="329.0" y="609.3333333333333" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">QI=TRUE</text>
+<text x="329.0" y="621.3333333333333" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">stObj=InputNumber_I4</text>
+<path d="M224.0,510.33333333333326 L224.0,520.3333333333333 L229.0,515.3333333333333 Z" fill="#63B31F" stroke="none" />
+<text x="241.0" y="519.3333333333333" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="214.0" y="518.3333333333333" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M224.0,536.3333333333333 L224.0,546.3333333333333 L229.0,541.3333333333333 Z" fill="#63B31F" stroke="none" />
+<text x="241.0" y="545.3333333333333" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="214.0" y="544.3333333333333" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M224.0,617.3333333333333 L224.0,627.3333333333333 L229.0,622.3333333333333 Z" fill="#9FA48A" stroke="none" />
+<text x="241.0" y="626.3333333333333" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="214.0" y="625.3333333333333" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M224.0,643.3333333333333 L224.0,653.3333333333333 L229.0,648.3333333333333 Z" fill="#BD8663" stroke="none" />
+<text x="241.0" y="652.3333333333333" font-size="12" text-anchor="start" font-family="Consolas, monospace">PARAMS</text>
+<text x="214.0" y="651.3333333333333" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M224.0,669.3333333333333 L224.0,679.3333333333333 L229.0,674.3333333333333 Z" fill="#000000" stroke="none" />
+<text x="241.0" y="678.3333333333333" font-size="12" text-anchor="start" font-family="Consolas, monospace">stObj</text>
+<text x="214.0" y="677.3333333333333" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">NumericObjectPool_S</text>
+<path d="M434.0,510.33333333333326 L434.0,520.3333333333333 L429.0,515.3333333333333 Z" fill="#63B31F" stroke="none" />
+<text x="417.0" y="519.3333333333333" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="444.0" y="518.3333333333333" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="424.0" y="617.3333333333333" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="417.0" y="626.3333333333333" font-size="12" text-anchor="end" font-family="Consolas, monospace">rPhys</text>
+<text x="444.0" y="625.3333333333333" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AR</text>
+<path d="M434.0,643.3333333333333 L434.0,653.3333333333333 L429.0,648.3333333333333 Z" fill="#9FA48A" stroke="none" />
+<text x="417.0" y="652.3333333333333" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="444.0" y="651.3333333333333" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<path d="M434.0,669.3333333333333 L434.0,679.3333333333333 L429.0,674.3333333333333 Z" fill="#BD8663" stroke="none" />
+<text x="417.0" y="678.3333333333333" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="444.0" y="677.3333333333333" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<rect x="1432.0" y="409.66666666666663" width="140" height="142" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M1429.0,406.66666666666663 H1569.0 V436.66666666666663 H1563.0 V476.66666666666663 H1569.0 V548.6666666666666 H1429.0 V476.66666666666663 H1435.0 V436.66666666666663 H1429.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M1429.0,436.66666666666663 L1569.0,436.66666666666663" stroke="#000000" stroke-width="1" />
+<text x="1499.0" y="454.66666666666663" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AR_ADD_2</text>
+<text x="1499.0" y="468.66666666666663" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">AR_ADD_2</text>
+<rect x="1424.0" y="488.66666666666663" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="1441.0" y="497.66666666666663" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN1</text>
+<text x="1414.0" y="496.66666666666663" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AR</text>
+<rect x="1424.0" y="514.6666666666666" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="1441.0" y="523.6666666666666" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN2</text>
+<text x="1414.0" y="522.6666666666666" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AR</text>
+<rect x="1564.0" y="488.66666666666663" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="1557.0" y="497.66666666666663" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
+<text x="1584.0" y="496.66666666666663" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AR</text>
+<rect x="2032.0" y="276.3333333333333" width="210" height="268" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M2029.0,273.3333333333333 H2239.0 V365.3333333333333 H2233.0 V405.3333333333333 H2239.0 V541.3333333333333 H2029.0 V405.3333333333333 H2035.0 V365.3333333333333 H2029.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M2029.0,303.3333333333333 L2239.0,303.3333333333333" stroke="#000000" stroke-width="1" />
+<text x="2134.0" y="383.3333333333333" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">OutputNumber_N3</text>
+<text x="2134.0" y="397.3333333333333" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">Q_NumericValue_PHYSA</text>
+<text x="2134.0" y="409.3333333333333" font-size="9" fill="#888" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">stObj=OutputNumber_N3</text>
+<path d="M2024.0,310.3333333333333 L2024.0,320.3333333333333 L2029.0,315.3333333333333 Z" fill="#63B31F" stroke="none" />
+<text x="2041.0" y="319.3333333333333" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
+<text x="2014.0" y="318.3333333333333" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="2024.0" y="417.3333333333333" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
+<text x="2041.0" y="426.3333333333333" font-size="12" text-anchor="start" font-family="Consolas, monospace">rPhys</text>
+<text x="2014.0" y="425.3333333333333" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AR</text>
+<path d="M2024.0,443.3333333333333 L2024.0,453.3333333333333 L2029.0,448.3333333333333 Z" fill="#000000" stroke="none" />
+<text x="2041.0" y="452.3333333333333" font-size="12" text-anchor="start" font-family="Consolas, monospace">stObj</text>
+<text x="2014.0" y="451.3333333333333" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">NumericObjectPool_S</text>
+<path d="M2244.0,310.3333333333333 L2244.0,320.3333333333333 L2239.0,315.3333333333333 Z" fill="#63B31F" stroke="none" />
+<text x="2227.0" y="319.3333333333333" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
+<text x="2254.0" y="318.3333333333333" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M2244.0,336.3333333333333 L2244.0,346.3333333333333 L2239.0,341.3333333333333 Z" fill="#63B31F" stroke="none" />
+<text x="2227.0" y="345.3333333333333" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="2254.0" y="344.3333333333333" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<rect x="2234.0" y="417.3333333333333" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="2227.0" y="426.3333333333333" font-size="12" text-anchor="end" font-family="Consolas, monospace">xOver</text>
+<text x="2254.0" y="425.3333333333333" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<rect x="2234.0" y="443.3333333333333" width="10" height="10" fill="#845DAF" stroke="none" />
+<text x="2227.0" y="452.3333333333333" font-size="12" text-anchor="end" font-family="Consolas, monospace">xUnder</text>
+<text x="2254.0" y="451.3333333333333" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="Verdana, sans-serif">AX</text>
+<path d="M2244.0,469.3333333333333 L2244.0,479.3333333333333 L2239.0,474.3333333333333 Z" fill="#BD8663" stroke="none" />
+<text x="2227.0" y="478.3333333333333" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
+<text x="2254.0" y="477.3333333333333" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<path d="M2244.0,495.3333333333333 L2244.0,505.3333333333333 L2239.0,500.3333333333333 Z" fill="#18519E" stroke="none" />
+<text x="2227.0" y="504.3333333333333" font-size="12" text-anchor="end" font-family="Consolas, monospace">s16result</text>
+<text x="2254.0" y="503.3333333333333" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">INT</text>
+</svg>

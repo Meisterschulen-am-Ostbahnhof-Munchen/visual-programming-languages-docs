@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="440.0" height="408.0" viewBox="0 0 440.0 408.0">
+<defs>
+</defs>
+<rect x="0" y="0" width="440.0" height="408.0" fill="#ffffff" />
+<text x="220.0" y="25" font-size="16" font-weight="bold" font-family="Verdana, sans-serif" fill="#000000" text-anchor="middle" dominant-baseline="central">Uebung_172: Exercise for E_MUX_2</text>
+<rect x="148.0" y="143.0" width="150" height="168" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M145.0,140.0 H295.0 V232.0 H289.0 V272.0 H295.0 V308.0 H145.0 V272.0 H151.0 V232.0 H145.0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M145.0,170.0 L295.0,170.0" stroke="#000000" stroke-width="1" />
+<text x="220.0" y="250.0" font-size="14" font-weight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">E_MUX_2_1</text>
+<text x="220.0" y="264.0" font-size="10" fill="#666" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">E_MUX_2</text>
+<path d="M140.0,177.0 L140.0,187.0 L145.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="157.0" y="186.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI1</text>
+<text x="130.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M140.0,203.0 L140.0,213.0 L145.0,208.0 Z" fill="#63B31F" stroke="none" />
+<text x="157.0" y="212.0" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI2</text>
+<text x="130.0" y="211.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M300.0,177.0 L300.0,187.0 L295.0,182.0 Z" fill="#63B31F" stroke="none" />
+<text x="283.0" y="186.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO</text>
+<text x="310.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<path d="M300.0,284.0 L300.0,294.0 L295.0,289.0 Z" fill="#18519E" stroke="none" />
+<text x="283.0" y="293.0" font-size="12" text-anchor="end" font-family="Consolas, monospace">K</text>
+<text x="310.0" y="292.0" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">UINT</text>
+</svg>

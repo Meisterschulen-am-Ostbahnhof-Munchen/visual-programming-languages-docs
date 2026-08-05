@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1036" height="249" viewBox="-548 -20 1036 249">
+<defs>
+</defs>
+<rect x="3" y="3" width="190" height="199" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
+<path d="M0,0 H190 V66 H184 V106 H190 V199 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
+<path d="M0,30 L190,30" stroke="#000000" stroke-width="1" />
+<text x="95.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">OUT_ANY_CONSOLE</text>
+<text x="95.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">3.0</text>
+<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
+<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
+<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="-93" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Request</text>
+<path d="M-5,118 L-5,128 L0,123 Z" fill="#9FA48A" stroke="none" />
+<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
+<text x="-23" y="126" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="-93" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
+<path d="M-5,144 L-5,154 L0,149 Z" fill="#BD8663" stroke="none" />
+<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">LABEL</text>
+<text x="-23" y="152" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
+<text x="-93" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Label for the output value</text>
+<path d="M-5,170 L-5,180 L0,175 Z" fill="#000000" stroke="none" />
+<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
+<text x="-23" y="178" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
+<text x="-93" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Output value to console</text>
+<path d="M190,37 L190,47 L195,42 Z" fill="#63B31F" stroke="none" />
+<text x="178" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
+<text x="213" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
+<text x="283" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
+<path d="M190,118 L190,128 L195,123 Z" fill="#9FA48A" stroke="none" />
+<text x="178" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
+<text x="213" y="126" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
+<text x="283" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
+<path d="M-12,42 L-12,175" stroke="#404040" stroke-width="1" />
+<path d="M0,42 L-12,42" stroke="#404040" />
+<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,123 L-5,123" stroke="#404040" />
+<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,175 L-5,175" stroke="#404040" />
+<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M-12,149 L-5,149" stroke="#404040" />
+<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M202,42 L202,123" stroke="#404040" stroke-width="1" />
+<path d="M190,42 L202,42" stroke="#404040" />
+<rect x="200" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<path d="M202,123 L195,123" stroke="#404040" />
+<rect x="200" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+</svg>

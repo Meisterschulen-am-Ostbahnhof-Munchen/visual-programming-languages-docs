@@ -23,7 +23,6 @@ LED_FREQ is a collection of global constants for controlling LED blinking patter
 ## Functionality
 The global constants provide numerical values for different LED operating modes. Each mode has a specific priority value, with higher numbers representing a higher priority. The constants can be used in function blocks to control LED behavior and resolve priority conflicts.
 
-```
 ## Technical Features
 - **Data Type**: All constants are of type UINT (unsigned integer)
 - **Priority Range**: Values from 0 to 6, where 6 represents the highest priority

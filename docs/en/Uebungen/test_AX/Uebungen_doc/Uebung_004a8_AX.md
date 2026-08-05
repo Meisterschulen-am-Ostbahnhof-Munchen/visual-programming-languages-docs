@@ -21,7 +21,6 @@ To become familiar with the specific splitter function blocks. `E_SPLIT` is ofte
 
 ## Functionality
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_SPLIT_2.EI"/>
 <Connection Source="E_SPLIT_2.EO1" Destination="AX_T_FF_Q1.CLK"/>

@@ -24,7 +24,6 @@ To deepen the understanding of parallel, feedback logic structures. Each channel
 
 The two channels operate on the same principle as in Exercise 004b: The initial state (`Q`) controls, via the gate input (`G`) of the switch, whether the next key press triggers a set or reset event.
 
-```xml
 <!-- Beispiel Kanal 1 -->
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_SWITCH_I1.EI"/>
 <Connection Source="E_SWITCH_I1.EO0" Destination="E_SR_I1.S"/>

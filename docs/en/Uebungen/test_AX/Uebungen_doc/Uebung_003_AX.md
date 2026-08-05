@@ -30,7 +30,6 @@ Both connections use the standardized adapter interface `AX` for communication[c
 
 The independence of the two channels is ensured by the separate adapter connections in the sub-application `Uebung_003_AX.SUB`:
 
-```xml
 <AdapterConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT"/>
 <Connection Source="DigitalInput_I2.IN" Destination="DigitalOutput_Q2.OUT"/>

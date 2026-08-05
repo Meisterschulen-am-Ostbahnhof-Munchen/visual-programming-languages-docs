@@ -60,7 +60,6 @@ All adapters are implemented as plugs (outgoing) – the IA_VDS sends the data t
 
 The module internally contains another function block, **I_VDS** (from the library `isobus::tecu`), which handles the actual ISOBUS communication. Upon arrival of the INIT event, the initialization of I_VDS is triggered. After successful initialization, I_VDS reports this via its INITO event, which is forwarded to the INITO output of IA_VDS. Simultaneously, I_VDS begins cyclically updating the values for NavigationBasedVehicleSpeed, CompassBearing, and Altitude. These values are output via the corresponding adapters (NAV_SPEED, BEARING, ALTITUDE) as soon as the IND event from I_VDS arrives. If a timeout occurs (e.g., a CAN bus error), this is reported via the TIMEOUT adapter.
 
-```
 ## Technical Features
 
 - The module is based on the **Eclipse Public License 2.0 (EPL-2.0)** and is designed as an ISOBUS adapter for PGN 65256.

@@ -28,7 +28,6 @@ This is the elementary block in which **algorithms** (code in ST, C, etc.) are e
 * A **state machine**, the so-called **ECC** (see below), controls *when* which algorithm is executed.
 * It has no internal parallel execution; it is always in exactly one state.
 
-```
 ### 2. Composite Function Block
 
 This block does not contain any algorithms or ECCs. Instead, its core consists of a **network** of other function blocks (basic or composite FBs) that are interconnected. It serves to structure and encapsulate complex logic.

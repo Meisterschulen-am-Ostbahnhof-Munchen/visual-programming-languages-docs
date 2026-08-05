@@ -78,7 +78,6 @@ Processing occurs in two separate steps:
 - The result data (`STATUS`, `u32OldValue`, `s16result`) are taken by `Q_NumericValue` and made available at the output.
 - The event `CNF` signals completion.
 
-```
 ## Technical Features
 
 - **Standard Compliance:** This module implements the ISO 11783-6 specification (Part 6, Annex F.22) – developed for agricultural ISOBUS applications.

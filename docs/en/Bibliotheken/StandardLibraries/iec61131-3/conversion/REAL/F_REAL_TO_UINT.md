@@ -26,7 +26,6 @@ When the `F_REAL_TO_UINT` event is triggered, the function block `F_REAL_TO_UINT
 
 The underlying algorithm is:
 
-```ST
 ALGORITHM REQ
 OUT := REAL_TO_UINT(IN);
 END_ALGORITHM

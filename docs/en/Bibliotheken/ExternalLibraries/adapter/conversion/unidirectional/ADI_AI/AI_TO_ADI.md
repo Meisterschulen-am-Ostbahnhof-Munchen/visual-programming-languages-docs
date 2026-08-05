@@ -73,7 +73,6 @@ CONV_ANY_TO_ANY | Generic | Flexible inputs/outputs | Universal conversion (ofte
 
 While function blocks like `INT_TO_DINT` offer direct data conversion with their own inputs and outputs, AI_TO_ADI seamlessly integrates the conversion into an adapter-based architecture, thus facilitating the reuse of existing adapter definitions.
 
-```
 ## Conclusion
 
 The AI_TO_ADI is a simple yet valuable function block for converting integer to double-integer adapter interfaces. Its composite structure and implicit type conversion allow it to be integrated into adapter-based control systems without additional programming logic, simplifying the integration of components with different data widths.

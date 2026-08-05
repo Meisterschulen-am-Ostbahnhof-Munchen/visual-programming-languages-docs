@@ -1,7 +1,6 @@
 # Exercise_031: LED Strip
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_031`. Here, we control addressable RGB LEDs (e.g., WS2812) using the convenient HSV color model.
-```
 ## 🎧 Podcast
 ![Uebung_031_network](./Uebung_031_network.svg)
 

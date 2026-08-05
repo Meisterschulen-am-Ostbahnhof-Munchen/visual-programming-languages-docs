@@ -33,7 +33,6 @@ The logic is described by the following truth table:
 
 In graphical representations (FBS), this is often depicted as an OR gate at the set input and a memory element, but logically, the state corresponds to:
 
-```text
 Q1 := S1 OR (Q1 AND NOT R);
 *(Taking into account the dominance of S1 during simultaneous activation)*
 More precisely according to the normative framework (Table 43, 1a):

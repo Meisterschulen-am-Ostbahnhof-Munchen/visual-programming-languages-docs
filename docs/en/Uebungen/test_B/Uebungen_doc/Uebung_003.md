@@ -24,7 +24,6 @@ Two pairs of input and output blocks are used:
 
 The independence of the two channels is ensured by the separate event and data connections in the sub-application `Uebung_003.SUB`:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="DigitalOutput_Q1.REQ"/>
 <Connection Source="DigitalInput_I2.IND" Destination="DigitalOutput_Q2.REQ"/>

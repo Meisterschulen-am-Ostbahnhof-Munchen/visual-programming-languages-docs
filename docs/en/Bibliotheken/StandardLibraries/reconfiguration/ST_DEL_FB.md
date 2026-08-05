@@ -32,7 +32,6 @@ No adapter interfaces are available.
 
 The ST_DEL_FB function block responds to the REQ event and attempts to delete the specified function block instance at the indicated destination. Upon successful execution, a CNF event with the corresponding status is output. The block supports various operating states and error handling.
 
-```
 ## Technical Features
 
 - Supports dynamic reconfiguration of function blocks

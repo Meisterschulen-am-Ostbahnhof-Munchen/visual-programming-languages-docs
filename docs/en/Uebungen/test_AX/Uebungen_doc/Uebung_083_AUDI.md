@@ -4,7 +4,6 @@
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an up/down counter based on the adapter function block `AUDI_CTUD_UDINT`. Four digital inputs (pushbuttons with single-click detection) control the counter: count up (CU), count down (CD), reset (R), and take over a new counter end value (PV). The current counter value (CV) is displayed on a numeric display, while the outputs QU and QD indicate whether the counter has reached its upper or lower limit.
-```
 ## Function Blocks (FBs) Used
 
 - **DigitalInput_CLK_I1** (Type: `logiBUS::io::DI::logiBUS_IE`)

@@ -6,7 +6,6 @@ Here is the documentation for exercise `Uebung_160b2_AX` based on the provided f
 ## Introduction
 Exercise **Exercise_160b2_AX** implements a control system for a motor with forward and reverse rotation functionality using adapter technology (AX/IXA/QXA). The focus is on a safe switching of the direction of rotation, with a dead time (delay) implemented to protect the motor and the mechanics during the change of direction. Additionally, the operating status is signaled via outputs.
 
-```
 ## Function Blocks (FBs) Used
 
 This sub-application uses various function blocks from the `logiBUS` and `adapter` libraries to process the input/output signals and establish the logical connections.

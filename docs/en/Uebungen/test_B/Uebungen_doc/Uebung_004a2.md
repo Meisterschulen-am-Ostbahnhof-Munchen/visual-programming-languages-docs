@@ -26,7 +26,6 @@ The objective is to learn how to combine asynchronous event streams. If two diff
 
 The circuit provides a logical OR for the trigger:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_MERGE.EI1"/>
 <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_MERGE.EI2"/>

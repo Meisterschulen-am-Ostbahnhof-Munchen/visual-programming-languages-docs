@@ -94,7 +94,6 @@ The internal RS flip-flop has the following state table (reset-dominant):
 
 The output `R1_eff` is the result of the OR operation on `R1`, `ILOCK_IN.DO1`, and `ILOCK_OUT.DI1`. The output `Q1` is only set if none of these three reset sources are active.
 
-```
 ## Application Scenarios
 
 - **Interlock Chains** in safety controllers: Several components are chained together. A fault or reset at one point resets all subsequent outputs.

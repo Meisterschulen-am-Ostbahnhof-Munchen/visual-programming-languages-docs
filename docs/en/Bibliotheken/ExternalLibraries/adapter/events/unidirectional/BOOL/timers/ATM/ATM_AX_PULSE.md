@@ -38,7 +38,6 @@ No direct data outputs. The pulse status is queried via the **Q** adapter.
 ## Functionality
 This function block implements the behavior of a non-retriggerable pulse generator (E_PULSE). Upon arrival of the **REQ** event, a pulse is initiated, the duration of which is determined by the value applied to the **PT** adapter. During the pulse, the output **Q.D1** = *TRUE*. After the pulse duration has elapsed, **Q.D1** becomes *FALSE* and the **Q.E1** event is triggered. A subsequent **REQ** during an ongoing pulse is ignored (non-retriggerable). The pulse can be prematurely terminated at any time via the **R** reset input; **Q.E1** is also triggered in this case.
 
-```
 ## Technical Features
 - **Adapter-based communication:** Instead of direct data/event ports, typed adapters (ATM for time, AX for output) are used. This simplifies reuse in modular systems.
 - **Non-retriggerable:** A second start pulse during an ongoing pulse has no effect.

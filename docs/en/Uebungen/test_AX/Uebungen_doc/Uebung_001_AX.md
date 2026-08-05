@@ -40,7 +40,6 @@ The connection between the two blocks is implemented using the adapter type `AX`
 
 The logic is implemented solely through the connection of the two components. In the subapplication `Uebung_001_AX.SUB`, the "plug" of the input component is connected to the "socket" of the output component:
 
-```xml
 <AdapterConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="DigitalOutput_Q1.OUT"/>
 </AdapterConnections>

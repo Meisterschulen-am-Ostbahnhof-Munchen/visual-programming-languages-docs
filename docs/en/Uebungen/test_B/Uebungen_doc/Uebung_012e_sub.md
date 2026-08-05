@@ -53,7 +53,6 @@ The `INI` block also has its own `INIT` event, which is directly linked to the `
 
 `` - The output `VALUEO` of the subapp receives its value from the quality-checked result of the `Q_NumericValue_PHYS` block (routed via `VALUEO` from `INI` -> `rPhys` to `Q_NumericValue_PHYS`).
 
-```
 ## Summary
 
 The subapp `Uebung_012e_sub` demonstrates the complete process:

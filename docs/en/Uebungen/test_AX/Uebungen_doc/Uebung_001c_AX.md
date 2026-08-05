@@ -30,7 +30,6 @@ Two central function blocks are used in the subapplication:
 
 The special feature of this exercise lies in the event connection, which provides feedback for the initialization process. The structure in the file `Uebung_001c_AX.SUB` is as follows:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.INITO" Destination="DigitalInput_I1.REQ"/>
 </EventConnections>

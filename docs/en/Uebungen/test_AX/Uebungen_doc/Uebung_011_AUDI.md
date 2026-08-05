@@ -22,7 +22,6 @@ The subapplication `Uebung_011_AUDI.SUB` uses an adapter-based input block.
 
 The connection between input and conversion is made exclusively via an adapter line:
 
-```xml
 <AdapterConnections>
 <Connection Source="InputNumber_I1.IN" Destination="F_DWORD_TO_UDINT.AD_IN"/>
 </AdapterConnections>

@@ -25,7 +25,6 @@ The main objective of this exercise is to demonstrate the functionality of an OR
 
 The logic is defined by the interconnection of event and data connections. The structure in `Uebung_002a3.SUB` is as follows:
 
-`````xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="OR_2.REQ"/>
 <Connection Source="DigitalInput_I2.IND" Destination="OR_2.REQ"/>

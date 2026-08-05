@@ -4,7 +4,6 @@
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an **AR adapter** to combine a logiBUS digital input, a configurable time base, and a timer value configured via a sub-app block, which is loaded from a non-volatile storage (NVS). A digital input signal starts a timer whose expiration time is set via a stored numeric value (INI). The timer output switches a digital output. The key feature is the AR adapter's connection between the storage block, the arithmetic unit, and the timer.
-```
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: Exercise_012e_sub_AR

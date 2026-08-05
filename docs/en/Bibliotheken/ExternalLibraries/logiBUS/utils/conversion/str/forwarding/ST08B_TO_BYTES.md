@@ -31,7 +31,6 @@ This function block has no adapter interfaces.
 ## Operation
 As soon as a `REQ` event is received, the function block reads the input structure `IN`. It extracts each individual byte of the structure (`IN.B_00` to `IN.B_07`) and assigns it to the corresponding output parameter (`OUT_00` to `OUT_07`). Upon completion of these assignments, the `CNF` event is triggered to signal the successful operation. The internal logic is direct and transparent:
 
-```iecst
 OUT_00 := IN.B_00;
 OUT_01 := IN.B_01;
 OUT_02 := IN.B_02;

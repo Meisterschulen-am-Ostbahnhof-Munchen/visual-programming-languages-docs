@@ -46,7 +46,6 @@ Output = Output_Q1`
 
 - **Functionality**: Receives the state of the T-FF via the data input `OUT` and outputs it at the physical output `Output_Q1`. The output is updated by the event `REQ`.
 
-```
 ## Program Flow and Connections
 
 1. **Event Chaining**:

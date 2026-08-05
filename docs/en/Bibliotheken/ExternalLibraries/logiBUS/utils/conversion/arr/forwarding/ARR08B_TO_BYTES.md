@@ -34,7 +34,6 @@ The operation is deterministic and simple: Upon each occurrence of the `REQ` eve
 
 The included ST (Structured Text) code shows the direct implementation:
 
-```iecst
 OUT_00 := IN[0];
 OUT_01 := IN[1];
 ...

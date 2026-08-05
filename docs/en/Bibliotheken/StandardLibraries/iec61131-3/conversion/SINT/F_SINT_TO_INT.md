@@ -26,7 +26,6 @@ This function block directly assigns the `SINT` input value to the `INT` output.
 
 The algorithm is defined as follows:
 
-```ST
 ALGORITHM REQ
 OUT := IN;
 END_ALGORITHM

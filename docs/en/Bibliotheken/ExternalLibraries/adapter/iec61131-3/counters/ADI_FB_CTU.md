@@ -55,7 +55,6 @@ The default value `PV` is updated when an event arrives at input `PV`.
 
 After each processing operation (regardless of whether it was triggered by `CU`, `R`, or `PV`), the acknowledgment event `CNF` is output. Simultaneously, output adapter `Q` is also updated with an event, and the current counter value is provided via adapter `CV`.
 
-``````````````````````````````````````````````` ` acknowledgment event `CNF` is output with an event `` `` `` Simultaneously, output adapter `Q`` is also updated with an event `` `` `` `` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` **Important:** This function block fires the output event `Q.E1` on **every** update – including resets and default value changes – not just on counter readings. If the output signal should only be triggered when the comparison result actually changes, the developers recommend using an AX_D_FF as a downstream filter.
 
 Internally, a standard function block `FB_CTU_DINT` is used, with its inputs and outputs wired via the adapters. The counter value is of type `DINT` (32-bit integer).
 

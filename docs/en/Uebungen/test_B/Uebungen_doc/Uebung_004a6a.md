@@ -48,7 +48,6 @@ Implements a real-time rendezvous. It waits for events at `EI1` and `EI2`. Only 
 
 Toggle flip-flop. The internal state is toggled on each event at the clock input (`CLK`). The output `Q` indicates the current state (TRUE/FALSE).
 
-```
 ### logiBUS_QX (DigitalOutput_Q1)
 
 - **Type**: logiBUS::io::DQ::logiBUS_QX

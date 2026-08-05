@@ -24,7 +24,6 @@ The main objective of this exercise is to understand the initialization process 
 
 The logic combines normal signal forwarding with an initialization loop. The structure in `Uebung_001c.SUB` is defined as follows:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="DigitalOutput_Q1.REQ"/>
 <Connection Source="DigitalInput_I1.INITO" Destination="DigitalInput_I1.REQ"/>

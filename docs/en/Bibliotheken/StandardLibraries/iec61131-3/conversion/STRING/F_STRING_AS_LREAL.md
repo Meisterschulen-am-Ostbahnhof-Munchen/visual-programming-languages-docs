@@ -26,7 +26,6 @@ When the `REQ` event is triggered, the value at the input `IN` is read as a stri
 
 The conversion algorithm is implemented as ST code:
 
-```ST
 ALGORITHM REQ
 OUT := STRING_AS_LREAL(IN);
 END_ALGORITHM

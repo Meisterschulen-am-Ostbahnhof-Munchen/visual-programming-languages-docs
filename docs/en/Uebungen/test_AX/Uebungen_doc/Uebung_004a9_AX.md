@@ -24,7 +24,6 @@ Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three pro
 
 ## How it works
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_SPLIT_3.EI"/>
 <Connection Source="E_SPLIT_3.EO1" Destination="AX_T_FF_Q1.CLK"/>

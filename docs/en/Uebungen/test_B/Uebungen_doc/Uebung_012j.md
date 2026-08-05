@@ -25,7 +25,6 @@ Reads the string value from the specified The ISOBUS object ID (`InputString_S1`
 
 The system outputs the ISOBUS object ID (`InputString_S1`) and the output `IN`, as well as an event `IND`.
 
-```
 ### FB: `INI`
 - **Type**: `eclipse4diac::storage::INI`
 - **Parameters**:

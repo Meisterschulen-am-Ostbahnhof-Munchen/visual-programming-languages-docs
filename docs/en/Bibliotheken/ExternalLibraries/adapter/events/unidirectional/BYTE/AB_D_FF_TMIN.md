@@ -62,7 +62,6 @@ An event at `INIT` passes the parameter `Tmin` (minimum time) to the inner funct
 - The latched value is passed out via plug `Q.D1`, and at the same time, the output event `EO` of the inner flip-flop is triggered.
 - This `EO` is forwarded to `Q.E1`, so that the receiving adapter is informed of the update.
 
-`````````````````````````````````) ``CLK``````````````````````````````````` `
 
 ` 3. **Time Control:**
 

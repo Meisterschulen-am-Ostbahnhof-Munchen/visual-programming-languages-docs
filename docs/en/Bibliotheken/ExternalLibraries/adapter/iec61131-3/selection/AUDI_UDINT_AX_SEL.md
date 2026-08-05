@@ -101,7 +101,6 @@ The function block does not contain an explicit state machine. Its functionality
 
 Compared to standard IEC function blocks, this function block offers decoupled communication via adapters and extracted events for data acquisition – advantageous in modular, event-driven systems.
 
-```
 ## Conclusion
 
 The function block `AUDI_UDINT_AX_SEL` represents a flexible, adapter-controlled binary selection. It is particularly suitable for applications where the selector signal originates from an external device (e.g., a PROFINET adapter) and the input values need to be updated asynchronously. Support for `ANY_ELEMENTARY` at the second input increases reusability, while the unified `UDINT` output simplifies further processing.

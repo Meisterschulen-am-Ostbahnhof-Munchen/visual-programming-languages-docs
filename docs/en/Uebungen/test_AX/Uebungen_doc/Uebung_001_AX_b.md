@@ -34,7 +34,6 @@ Four function blocks are instantiated in the sub-application:
 
 The logic is implemented through the combination of adapter, event, and data connections. The signal path is defined in the file `Uebung_001_AX_b.SUB` as follows:
 
-`````xml
 <EventConnections>
 <Connection Source="AX_X_TO_BOOL.CNF" Destination="AX_BOOL_TO_X.REQ"/>
 </EventConnections>

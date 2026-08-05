@@ -71,7 +71,6 @@ The `AQ_MUX_4` operates in an event-driven manner:
 
 If an index outside the valid range (0–3) is passed, the behavior is undefined – typically, no input is activated, or an unintended forwarding occurs.
 
-```
 ## Technical Features
 
 - **Generic Function Block**: The `AQ_MUX_4` is defined as a generic block (`GenericClassName = 'GEN_AQ_MUX'`). Therefore, in the 4diac IDE, it can be used as a template for multiplexers with a different number of inputs (e.g., 2, 8) without having to recreate the internal logic.

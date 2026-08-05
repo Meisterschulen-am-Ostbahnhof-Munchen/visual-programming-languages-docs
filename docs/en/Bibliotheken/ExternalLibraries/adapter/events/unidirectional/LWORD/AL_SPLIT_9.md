@@ -38,7 +38,6 @@ The function block acts as a passive distributor. As soon as the incoming adapte
 
 Since the function block is generic, a specific adapter type must be assigned to it before use. This is done in the development environment by specifying the adapter type, which defines the actual data fields and events.
 
-```
 ## Technical Features
 
 - **Generic Function Block:** The function block is declared as `GEN_AL_SPLIT` and requires binding to a specific `AL` adapter type (e.g., `SimpleData_AL`). The binding is controlled by the attribute `eclipse4diac::core::GenericClassName`.

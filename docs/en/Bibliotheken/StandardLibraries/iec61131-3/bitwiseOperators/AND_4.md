@@ -29,7 +29,6 @@ No adapter interfaces are available.
 ## Functionality
 Upon receiving the REQ event, the AND_4 block performs a bitwise AND operation on all four input values. The result is output at the OUT data output, and simultaneously, the CNF event is triggered to confirm successful calculation. The operation is performed separately for each bit of the input values.
 
-```
 ## Technical Features
 - Supports the generic data type ANY_BIT, enabling use with various bit data types such as BOOL, BYTE, WORD, DWORD, etc.
 - Four independent inputs for flexible linking options

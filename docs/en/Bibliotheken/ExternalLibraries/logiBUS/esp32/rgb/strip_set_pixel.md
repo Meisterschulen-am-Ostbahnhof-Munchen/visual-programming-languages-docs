@@ -35,7 +35,6 @@ The `set_pixel` event triggers the main command. The values present at the data 
 
 The `clear` event sets all pixels of the strip to black (off), which is equivalent to clearing the current pattern. The `clear_CNF` event is then output with a status code (`clear_return`).
 
-```
 ## Technical Features
 
 * The data inputs for the color values are of type `UDINT` (unsigned double integer), which allows for a large value range. The actual effective resolution (e.g., 8 bits = 0-255) depends on the connected hardware.

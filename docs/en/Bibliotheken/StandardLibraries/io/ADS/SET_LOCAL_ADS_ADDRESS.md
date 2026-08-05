@@ -25,7 +25,6 @@ The SET_LOCAL_ADS_ADDRESS function block is a Service Interface Function Block f
 ## Functionality
 The function block is accessed by The INIT event is activated. Upon activation, it reads the PARAMS input, which contains the desired local ADS address in string format. The function block then configures the local ADS interface with the specified address. After completion, the INITO event is triggered, and the resulting ADS address and status information are made available at the outputs.
 
-```
 ## Technical Features
 - Uses STRING data type for ADS addresses
 - Provides comprehensive status information in WSTRING format

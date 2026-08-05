@@ -72,7 +72,6 @@ The component has a finite state machine with five states: **START**, **INIT**, 
 
 The output `QO` is set to the current value of `QI` with each executed algorithm. It serves as an event qualifier for the INITO output.
 
-```
 ## Technical Features
 
 - **Symmetrical Start-up Behavior**: The initial value of the output is set via `Q_INIT`, allowing for both set and reset start states.

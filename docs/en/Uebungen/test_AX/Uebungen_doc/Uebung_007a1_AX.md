@@ -11,7 +11,6 @@ Starting and stopping the flasher.
 
 [cite_start]The subapplication `Uebung_007a1_AX.SUB` uses the inputs `START` and `STOP` of the `E_CYCLE` block[cite: 1].
 
-```
 ### Function Blocks (FBs)
 
 ![Uebung_007a1_AX_network](./Uebung_007a1_AX_network.svg)

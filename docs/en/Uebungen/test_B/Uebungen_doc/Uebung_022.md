@@ -28,7 +28,6 @@ Learning about event chaining. The end of a process (reaching the final position
 
 ## Functionality
 
-```xml
 <EventConnections>
 <Connection Source="SoftKey_UP_F1.IND" Destination="E_SR_Cyl_1.S"/>
 <Connection Source="SoftKey_F2_DOWN.IND" Destination="E_SR_Cyl_1.R"/>

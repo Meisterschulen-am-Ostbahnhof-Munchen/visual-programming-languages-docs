@@ -26,7 +26,6 @@ The function block performs a direct type conversion. When the ``REQ`` event is 
 
 The algorithm is implemented as follows:
 
-`````ST
 ALGORITHM REQ
 OUT := IN;
 END_ALGORITHM

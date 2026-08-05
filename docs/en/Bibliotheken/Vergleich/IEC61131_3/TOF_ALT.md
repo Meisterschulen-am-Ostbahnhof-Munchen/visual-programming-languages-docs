@@ -22,7 +22,6 @@ The behavior corresponds to **Table 46** (Standard Function Blocks Timers) and *
 
 ## Time Diagram (Principle)
 
-```text
 +--------+
 IN    |        |
 --+        +------------------------

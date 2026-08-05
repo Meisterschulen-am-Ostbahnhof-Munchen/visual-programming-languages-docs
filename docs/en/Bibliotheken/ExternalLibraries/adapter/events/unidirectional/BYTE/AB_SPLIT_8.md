@@ -52,7 +52,6 @@ The **AB_SPLIT_8** functions purely as a signal distributor without internal log
 
 The distribution is independent of the internal structure of the AB adapter (e.g., data and event connections). The function block itself has no execution state and does not require sequential control.
 
-```
 ## Technical Features
 
 - **Generic Type**: The function block (FB) is declared as a generic block (`GenericClassName = 'GEN_AB_SPLIT'`), enabling flexible use in various projects.

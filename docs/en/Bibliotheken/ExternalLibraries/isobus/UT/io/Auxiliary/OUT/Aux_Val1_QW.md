@@ -31,7 +31,6 @@ No adapter interfaces available.
 ## Functionality
 This function block initializes and controls auxiliary output devices via the ISOBUS UT protocol stack. During initialization (INIT event), the service parameters are configured and the auxiliary device is set up accordingly. Upon service requests (REQ event), the WORD data is sent to the configured output device. The block supports various auxiliary device types and provides status feedback on the success or failure of operations.
 
-```
 ## Technical Features
 - Supports Auxiliary Types: 0, 1, 2, 3, 4, 6, 11, 12, 13
 - Uses WORD data type (16-bit) for output data

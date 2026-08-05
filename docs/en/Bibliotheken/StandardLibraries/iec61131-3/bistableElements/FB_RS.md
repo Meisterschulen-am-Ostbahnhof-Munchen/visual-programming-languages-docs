@@ -31,7 +31,6 @@ The FB_RS processes inputs S and R1 on every REQ event. Output Q1 is updated acc
 
 The logic is implemented using the following algorithm:
 
-```ST
 ALGORITHM REQ
 Q1 := (NOT R1) AND (S OR Q1);
 END_ALGORITHM

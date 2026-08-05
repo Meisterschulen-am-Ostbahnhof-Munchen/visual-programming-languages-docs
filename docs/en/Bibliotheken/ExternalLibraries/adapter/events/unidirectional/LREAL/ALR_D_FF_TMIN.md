@@ -57,7 +57,6 @@ The function block **ALR_D_FF_TMIN** implements a clock-edge-triggered data latc
 
 The unidirectional adapter `ALR` has an event input `E1` and a data input `D1` (socket side) and an event output `E1` and a data output `D1` (plug side). The exact semantics of `E1` and `D1` are application-specific; here, `E1` serves as the clock signal and `D1` as the data value to be latched.
 
-```
 ## Functionality
 After initialization (INIT), the function block operates as follows:
 

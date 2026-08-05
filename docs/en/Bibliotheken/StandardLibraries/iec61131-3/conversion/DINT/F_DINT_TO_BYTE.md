@@ -26,7 +26,6 @@ When the event input `REQ` is triggered, the algorithm is executed, converting t
 
 The algorithm used is:
 
-```ST
 OUT := DINT_TO_BYTE(IN);
 ## Technical Features
 - Converting `DINT` to `BYTE` can result in data loss if the original value is outside the representable range of `BYTE` (0 to 255).

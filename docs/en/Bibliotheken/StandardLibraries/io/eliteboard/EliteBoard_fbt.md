@@ -27,7 +27,6 @@ These adapters enable connection to various port interfaces of the EliteBoard ha
 ## Functionality
 Upon receiving the MAP event, the EliteBoard function block initializes the configured port adapters. After successful initialization of all connected ports, the MAPO event is triggered. Each port adapter (Port A to Port K) can be individually configured for specific input/output functions.
 
-```
 ## Technical Features
 - Supports up to 11 independent port interfaces
 - Uses standardized port adapter interfaces

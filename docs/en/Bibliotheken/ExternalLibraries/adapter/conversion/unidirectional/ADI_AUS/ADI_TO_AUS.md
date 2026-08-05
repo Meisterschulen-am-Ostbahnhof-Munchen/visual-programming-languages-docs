@@ -31,7 +31,6 @@ The function block is implemented as a composite FB. Upon an event at event inpu
 - Communication takes place exclusively via adapter interfaces, which enables modular encapsulation.
 - During conversion, values outside the USINT range (0–255) can be truncated or limited to the maximum or minimum value (depending on the conversion block used).
 
-```
 ## State Overview
 Since the function block does not have its own state machine, its behavior is purely event-driven: It reacts to every incoming event with an immediate conversion and output. There are no internal states or delays.
 

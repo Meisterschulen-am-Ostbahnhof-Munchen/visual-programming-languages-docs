@@ -85,7 +85,6 @@ An event at `CLK` always causes a state change:
 
 If the automaton is in state `SET`, it switches to `RESET` and vice versa. The respective algorithm (`SET` or `RESET`) is executed with the current evaluation from `QI`. The output `Q` is therefore toggled at every clock cycle, provided `QI = TRUE` is in state.
 
-```
 ## Technical Features
 
 - **Symmetrical Start-up Behavior**: The initial value of `Q` is determined by the configurable input `Q_INIT` and is not set to a fixed default. This allows the system to start reproducibly in a defined state.

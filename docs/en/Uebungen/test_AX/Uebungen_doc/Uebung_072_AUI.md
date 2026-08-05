@@ -18,7 +18,6 @@ The speed data provided by the adapters is first converted into a numeric AUDI i
 
 This block reads the current vehicle-based speed (GBSD) from the TECU and provides it as an AUI object via the adapter output `SPEED`. The parameter `QI` must be set to `TRUE` to enable data querying.
 
-```
 ### Sub-Blocks: `IA_WBSD`
 
 - **Type**: `isobus::tecu::IA_WBSD`

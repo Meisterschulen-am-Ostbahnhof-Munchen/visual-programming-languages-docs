@@ -31,7 +31,6 @@ The following blocks are used:
 
 The logic is implemented by connecting the three input blocks with the AND logic block in the subapplication. The structure in `Uebung_002a6_AX.SUB` is defined as follows:
 
-```xml
 <AdapterConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="AX_AND_3.IN1"/>
 <Connection Source="DigitalInput_I2.IN" Destination="AX_AND_3.IN2"/>

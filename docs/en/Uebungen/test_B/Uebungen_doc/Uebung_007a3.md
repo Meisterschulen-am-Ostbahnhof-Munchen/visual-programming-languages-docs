@@ -26,7 +26,6 @@ Implementation of a flasher with defined stop behavior. It demonstrates how even
 
 Safety is achieved through a dual assignment of the stop signal:
 
-```xml
 <EventConnections>
 <Connection Source="START.IND" Destination="E_CYCLE.START"/>
 <Connection Source="STOP.IND" Destination="E_CYCLE.STOP"/>

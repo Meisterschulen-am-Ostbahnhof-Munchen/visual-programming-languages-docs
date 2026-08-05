@@ -31,7 +31,6 @@ No adapter interfaces are available.
 
 The function block responds to the REQ event and attempts to start the specified element (function block, connection, resource, or device) at the specified destination. The start process follows the IEC 61499 state machine. Upon successful startup, the CNF event is returned with the status "RDY". In case of errors, corresponding status messages such as "NO_SUCH_OBJECT" or "INVALID_STATE" are returned.
 
-```
 ## Technical Features
 
 - Supports wide-string data types for element names and destinations

@@ -22,7 +22,6 @@ The raw integer value (UINT) is converted into a real numerical value (e.g., m/s
 
 The block reads the current value of the wheel-based machine speed (WBSD) via the ISOBUS fieldbus. The event `IND` is triggered when a new, valid measurement is obtained.
 
-```
 ### Sub-Blocks: FIELDBUS_UINT_TO_SIGNAL_SCALED
 * **Type**: `logiBUS::signalprocessing::fieldbus::FIELDBUS_UINT_TO_SIGNAL_SCALED`
 * **Internal Function Blocks Used**: (none)

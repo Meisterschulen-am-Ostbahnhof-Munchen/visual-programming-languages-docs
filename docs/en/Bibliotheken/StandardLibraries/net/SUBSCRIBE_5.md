@@ -30,7 +30,6 @@ No adapter interfaces are available.
 ## Functionality
 The SUBSCRIBE_5 block initializes itself via the INIT event and then establishes a connection to the corresponding PUBLISH_5 block. Upon successful initialization, it confirms this via INITO. As soon as new data is available from the publisher, it is output via the IND event using the corresponding data outputs RD_1 to RD_5. The STATUS output provides information about the connection status and any errors.
 
-```
 ## Technical Features
 - Supports up to five different data points simultaneously
 - Uses WSTRING for ID and STATUS for international character set support

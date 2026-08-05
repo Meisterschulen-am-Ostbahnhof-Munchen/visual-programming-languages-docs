@@ -23,7 +23,6 @@ The exercise consists of a sub-application network containing four function bloc
 - Input: Data port `u32NewValue` (connected to the adapter output of `INI_AUDI`)
 - Function: Sets the passed 32-bit value as the new output value for the ISOBUS object ID `OutputNumber_N1`. The value is then output on the ISOBUS data field.
 
-```
 ### Compiler Imports
 
 This exercise imports the following constants from the libraries `Uebungen::const::NVS::NVS_Keys` and `Uebungen::const::UT::DefaultPool`:

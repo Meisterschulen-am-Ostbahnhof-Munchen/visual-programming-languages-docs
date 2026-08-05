@@ -90,7 +90,6 @@ Error Codes | Standard | Manufacturer | Partial |
 
 Condition Management | Full | Basic | Advanced |
 
-```
 ## 🛠️ Related Exercises
 
 * [Exercise_019](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)]

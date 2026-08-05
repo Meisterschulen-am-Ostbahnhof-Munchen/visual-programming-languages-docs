@@ -63,7 +63,6 @@ The **E_MERGE** is a fundamental function block of the IEC 61499 standard that c
 
 | Event flow | Combination | Splitting | Selection |
 
-```
 ## Similar Building Blocks
 For use cases requiring more than two event inputs, the library provides additional variants:
 

@@ -29,7 +29,6 @@ No adapter interfaces available.
 ## Functionality
 The ZephyrIO function block initializes I/O services for Zephyr-based hardware. Upon receiving the INIT event, the service is started with the configured update interval. After successful initialization, the INITO event is output with corresponding status information.
 
-```
 ## Technical Features
 - Specifically optimized for Zephyr RTOS
 - Configurable update interval for periodic operations

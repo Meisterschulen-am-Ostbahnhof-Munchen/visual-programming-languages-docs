@@ -26,7 +26,6 @@ The main objective of this exercise is to demonstrate the combination of event s
 
 The logic is implemented by linking the event outputs of the switch with the memory inputs:
 
-```xml
 <EventConnections>
 <Connection Source="AX_SWITCH.EO0" Destination="AX_RS.R"/>
 <Connection Source="AX_SWITCH.EO1" Destination="AX_RS.S"/>

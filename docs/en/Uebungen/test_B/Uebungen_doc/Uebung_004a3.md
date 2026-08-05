@@ -25,7 +25,6 @@ The function block `E_MERGE` from the previous exercise is intentionally omitted
 
 ## Functionality
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_T_FF.CLK"/>
 <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_T_FF.CLK"/>

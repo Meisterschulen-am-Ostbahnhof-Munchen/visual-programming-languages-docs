@@ -24,7 +24,6 @@ Demonstration of the interaction between event logic (`E_REND`) and state logic 
 
 ## Functionality
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_REND.EI1"/>
 <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_REND.EI2"/>

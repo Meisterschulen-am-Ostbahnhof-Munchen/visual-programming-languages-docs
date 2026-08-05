@@ -26,7 +26,6 @@ DigitalOutput_Q2 | `logiBUS::io::DQ::logiBUS_QX` | Digital Output – Controls *
 
 E\_TimeOut | `iec61499::events::E_TimeOut` | Event-driven timer – provides the time base for the protection time (connected as an adapter) |
 
-```
 ### Function Block Parameters
 
 - **DigitalInput\_I1**: `QI = TRUE`, `Input = Input_I1`

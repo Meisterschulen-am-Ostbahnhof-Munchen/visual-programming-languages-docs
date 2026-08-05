@@ -54,7 +54,6 @@ The block cycles through the following states:
 ## ⚖️ Comparison with Similar Blocks
 Compared to generic output blocks, QX offers specific service interface functionality with configurable settings and detailed status reporting. Other blocks, such as simple BOOL outputs, typically have fewer configuration options and less status information.
 
-```
 ## 🛠️ Related exercises
 
 * [Uebung_001](../../../Uebungen/test_B/Uebungen_doc/Uebung_001.md)

@@ -53,7 +53,6 @@ The function block waits for an event at **REQ**. Upon its arrival, the current 
 - If **K** is outside the valid range (0–2), the function remains undefined – typically, no output is written or no action is taken.
 - The adapters are unidirectional, meaning data flows only from the socket **IN** to the selected plug.
 
-```
 ## Technical Features
 
 - The function block (FB) is implemented as a **generic block** (GenericClassName `'GEN_AS_DEMUX'`), meaning it can be parameterized at runtime for any AS adapter type.

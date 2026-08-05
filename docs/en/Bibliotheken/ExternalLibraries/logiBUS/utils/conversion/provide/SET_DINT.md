@@ -44,7 +44,6 @@ When an event occurs at the input `REQ`, the algorithm `REQ` is executed. This c
 
 The logic in Structured Text is:
 
-```structuredtext
 OUT := IN;
 Execution is atomic: The value is applied immediately and without delay.
 

@@ -26,7 +26,6 @@ This exercise implements a toggle flip-flop (T-FF) with an initial value of `FAL
 - `Q_INIT` = `FALSE` (Initial state of the output)
 - **Functionality**: This is a toggle flip-flop. Each time an event is received at input `CLK` (connected to `IND` of the input block), the internal state `Q` is toggled. The output value is provided via the adapter output `Q`. The initial value is `FALSE`, so after the first key press, the state changes to `TRUE`.
 
-```
 #### Function Block `DigitalOutput_Q1`
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`

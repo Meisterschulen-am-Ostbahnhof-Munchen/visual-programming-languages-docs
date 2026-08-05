@@ -61,7 +61,6 @@ The function block goes through the following states:
 ## ⚖️ Comparison with Similar Blocks
 Compared to simple input blocks, NumericValue_ID offers extended service functionality with initialization procedures, Status feedback and configurable options. Its specific focus on ISOBUS environments distinguishes it from generic input blocks.
 
-```
 ## 🛠️ Related exercises
 
 * [Uebung_011](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011.md)

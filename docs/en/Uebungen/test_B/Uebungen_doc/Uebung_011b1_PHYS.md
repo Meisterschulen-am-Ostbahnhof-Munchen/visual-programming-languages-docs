@@ -5,7 +5,6 @@
 ## Introduction
 This exercise demonstrates the addition of two physical values (REAL) using the NumericValue pattern from the isobus library. The values are read in via the function blocks `InputNumber_I3` and `InputNumber_I4`, added together, and the result is output via the function block `Q_NumericValue_PHYS`.
 
-```
 ## Function Blocks (FBs) Used
 
 - **InputNumber_I3** (Type: `isobus::UT::io::NumericValue::NumericValue_PHYS`)

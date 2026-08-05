@@ -19,7 +19,6 @@ The exercise consists of three function blocks connected via adapters:
 - **Data output/input**: Output `IN` (Adapter output, returns the input string)
 - **Functionality**: This block reads a string value from a virtual input point (e.g., HMI or simulation) and outputs it via The adapter `IN` is available. Its value is identified by the object ID `InputNumber_I1`.
 
-```
 ### FB: INI\_AIS
 - **Type**: `eclipse4diac::storage::INI_AIS`
 - **Parameters**:

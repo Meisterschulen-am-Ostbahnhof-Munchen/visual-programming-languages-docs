@@ -26,7 +26,6 @@ When an event is received at input `REQ`, the algorithm is executed, converting 
 
 The algorithm is defined as follows:
 
-```ST
 ALGORITHM REQ
 OUT := INT_TO_BYTE(IN);
 END_ALGORITHM

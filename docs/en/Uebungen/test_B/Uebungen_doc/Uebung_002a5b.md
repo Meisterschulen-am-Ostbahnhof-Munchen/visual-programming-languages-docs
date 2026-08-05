@@ -23,7 +23,6 @@ The objective is to model a complex I/O structure. It demonstrates how informati
 
 The circuit uses a central logic element as a node for all signals. The structure in `Uebung_002a5b.SUB` is defined as follows:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="OR_3_BOOL.REQ"/>
 <Connection Source="DigitalInput_I2.IND" Destination="OR_3_BOOL.REQ"/>

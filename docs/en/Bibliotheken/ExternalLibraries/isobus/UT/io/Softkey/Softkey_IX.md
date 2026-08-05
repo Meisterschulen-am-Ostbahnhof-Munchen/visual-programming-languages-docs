@@ -61,7 +61,6 @@ The function block goes through the following main states:
 ## ⚖️ Comparison with Similar Blocks
 Compared to simple digital input blocks, Softkey_IX offers extended service functionalities with configurable settings and ISOBUS compatibility. The IND functionality enables asynchronous event handling, which is not available with purely query-based function blocks.
 
-```
 ## 🛠️ Related exercises
 
 * [Uebung_010](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010.md)

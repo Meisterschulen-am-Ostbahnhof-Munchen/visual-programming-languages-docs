@@ -91,7 +91,6 @@ The FB does not have an explicit state machine, but the following logical sequen
 ## Comparison with Similar Function Blocks
 Unlike simple memory function blocks (e.g., `CTUO` or generic `R_TRIG` blocks), `NVS_AX2` is specifically designed for persistent storage on ESP32 hardware. While other function blocks only process volatile data, this block ensures permanent data retention. Using an adapter offers more flexibility than a fixed input/output because the data type and communication direction are clearly defined. Compared to direct NVS API calls in IEC 61499, this function block simplifies integration through its fully declarative description.
 
-```
 ## Conclusion
 
 The function block `NVS_AX2` is an efficient and standards-compliant solution for persistently storing a REAL value in the NVS of an ESP32. Its clear interface structure with event control and bidirectional adapter facilitates integration into complex automation projects. Thanks to integrated initialization and error logging, the block is robust and suitable for industrial applications.

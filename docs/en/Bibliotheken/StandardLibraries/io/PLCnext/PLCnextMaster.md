@@ -30,7 +30,6 @@ The PLCnextMaster is a Service Interface Function Block that serves as the maste
 ## Functionality
 The PLCnextMaster initializes and manages communication with PLCnext systems. The service starts when the INIT event is enabled with QI=TRUE. The SlaveUpdateInterval defines the update interval for connected slave components. After successful initialization, INITO confirms the operating state, while IND events indicate asynchronous status changes.
 
-```
 ## Technical Features
 - Supports Unicode status messages (WSTRING)
 - Configurable slave update interval

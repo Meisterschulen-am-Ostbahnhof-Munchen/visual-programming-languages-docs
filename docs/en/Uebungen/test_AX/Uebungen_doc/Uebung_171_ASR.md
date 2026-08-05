@@ -34,7 +34,6 @@ This exercise demonstrates the application of an asynchronous set-reset flip-flo
 - **Data Output**: `Q` (Boolean value, flip-flop state)
 - **Functionality**: The module implements an asynchronous set-reset flip-flop. The internal state is controlled via the adapter input `S_R`: A set signal activates the output `Q` (TRUE), a reset signal deactivates it (FALSE). The output remains stable until the next signal.
 
-```
 ### Sub-Block: DigitalOutput_Q1
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`

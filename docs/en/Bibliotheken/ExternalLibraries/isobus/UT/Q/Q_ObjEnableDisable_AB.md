@@ -95,7 +95,6 @@ The function block does not have its own explicit state machine – the state lo
 
 Error states (e.g., invalid object ID, faulty INIT sequence) are handled by the internal FB and can be signaled via return values or special BYTE codes (`0xFF`).
 
-```
 ## Application Scenarios
 
 - **Remote Control of a Binary Output**

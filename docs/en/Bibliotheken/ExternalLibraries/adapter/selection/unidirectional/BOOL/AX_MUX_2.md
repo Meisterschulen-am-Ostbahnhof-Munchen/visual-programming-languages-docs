@@ -32,7 +32,6 @@ The AX_MUX_2 operates as a 2:1 multiplexer. Upon receiving a REQ event, the corr
 
 After successful processing, a CNF event is generated.
 
-```
 ## Technical Features
 - Uses unidirectional AX adapters for signal transmission
 - Supports the generic function block mechanism

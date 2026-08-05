@@ -33,7 +33,6 @@ The logic is described by the following truth table:
 
 According to the function block body in the standard (Table 43, 2a):
 
-```text
 Q1 := NOT R1 AND (S OR Q1);
 If ``R1`` is TRUE, the expression ``NOT R1`` becomes FALSE, and thus ``Q1`` inevitably becomes ``FALSE`` (0), regardless of the state of ``S``. This implements reset dominance.
 

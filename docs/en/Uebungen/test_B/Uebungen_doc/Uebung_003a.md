@@ -37,7 +37,6 @@ Two instances of this type are placed in `Uebung_003a`:
 
 The complexity of the individual connections is hidden within the sub-application ("information hiding"). The main application only defines the assignment of physical addresses. The structure in `Uebung_003a.SUB` is therefore extremely compact:
 
-```xml
 <SubApp Name="F1" Type="Uebungen::Uebung_003a_sub">
 <Parameter Name="Input" Value="Input_I1"/>
 <Parameter Name="Output" Value="Output_Q1"/>

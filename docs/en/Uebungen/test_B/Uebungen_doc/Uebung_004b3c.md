@@ -62,7 +62,6 @@ The internal toggle mechanism is implemented by the set-reset flip-flop `E_SR`. 
 
 The output `Q` is passed to the external system via the data output of the sub-application.
 
-```
 ## Program Flow and Connections
 
 The external wiring of the main sub-application is structured as follows:

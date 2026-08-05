@@ -31,7 +31,6 @@ The following function blocks are used:
 
 Signal distribution is achieved through the central position of the `AX_SPLIT` module in the network. The structure in `Uebung_002_AX.SUB` is defined as follows:
 
-```xml
 <AdapterConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="AX_SPLIT.IN"/>
 <Connection Source="AX_SPLIT.OUT1" Destination="DigitalOutput_Q1.OUT"/>

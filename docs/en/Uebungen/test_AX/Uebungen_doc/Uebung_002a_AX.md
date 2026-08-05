@@ -31,7 +31,6 @@ The following blocks are used:
 
 The logic is determined by the wiring of the adapter connections in the sub-application. The structure in `Uebung_002a_AX.SUB` is defined as follows:
 
-```xml
 <AdapterConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="AX_AND_2.IN1"/>
 <Connection Source="DigitalInput_I2.IN" Destination="AX_AND_2.IN2"/>

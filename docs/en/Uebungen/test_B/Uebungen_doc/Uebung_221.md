@@ -6,7 +6,6 @@
 This exercise implements a combined up/down counter based on the IEC 61131-3 standard function block `FB_CTUD_DINT`. The counted value is stored as an integer (DINT) and, after conversion, displayed on a numeric display (terminal). Additionally, two binary outputs are set to indicate whether the counter has reached the upper (QU) or lower (QD) limit.
 Control is achieved via four digital inputs (CU, CD, Reset, Load Initial Value) connected via the logiBUS.
 
-```
 ## Function Blocks (FBs) Used
 
 ### Core Function Block

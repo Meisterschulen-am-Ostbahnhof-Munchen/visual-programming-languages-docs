@@ -6,7 +6,6 @@ Exercise_019: Switching a Mask
 
 This article describes the logiBUS® exercise `Uebung_019`. It shows how the program can switch the active display (data mask) on the terminal.
 
-```
 ## 📺 Video
 
 ![Uebung_019_network](./Uebung_019_network.svg)

@@ -32,7 +32,6 @@ The following table lists the function blocks used in the network:
 
 Each sub-function operates as a toggle flip-flop: Upon each positive event at `IND`, the internal state (and thus `Q`) changes, provided the latching condition is met. The latching ensures that a flip-flop can only switch if all preceding flip-flops in the chain are in an inactive state (`Q=0`). The AE2 adapters enable unidirectional state transmission to the next link in the chain. The comment **"using a bidirectional adapter: 1 connection IS SUFFICIENT!"** indicates that only a single adapter connection (to the next link) is necessary for the entire locking logic per sub-app.
 
-```
 ## Program Flow and Connections
 
 The three sub-modules are arranged in a chain:

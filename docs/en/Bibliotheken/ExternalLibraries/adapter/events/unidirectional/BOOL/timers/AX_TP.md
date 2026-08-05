@@ -28,7 +28,6 @@ The AX_TP is a standardized timer function block of type "Pulse" used in 4diac I
 ## Functionality
 The AX_TP function block operates as a pulse timer. When an event is received via the IN adapter, a timed pulse is generated, the duration of which is defined by the PT input. The reset input (R) allows the timer to be reset prematurely. The internal E_TP function block handles the actual timer functionality.
 
-```
 ## Technical Features
 - Uses the standardized E_TP timer block as its core component
 - Implemented via adapter interfaces for modular connection

@@ -57,7 +57,6 @@ Internally, the function block consists only of connections that route the event
 
 Since this is a composite function block, all internal connections are defined at design time; there is no dynamic logic or state machines.
 
-```
 ## Technical Features
 
 - **Composite Type**: The function block is a pure network function block without its own algorithms. Conversion is achieved by connecting two different adapter types.

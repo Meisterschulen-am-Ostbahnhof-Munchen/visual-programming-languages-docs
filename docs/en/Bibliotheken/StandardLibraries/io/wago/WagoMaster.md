@@ -31,7 +31,6 @@ The WagoMaster is a Service Interface Function Block for controlling and monitor
 ## Functionality
 The WagoMaster initializes and manages communication with Wago bus systems. Upon activation via the INIT event, the service is started, and bus communication is performed periodically according to the defined UpdateInterval. The function block reports successful initialization via INITO and continuously provides status information via IND events.
 
-```
 ## Technical Features
 - Supports WSTRING for detailed status messages
 - Configurable update interval for flexible adaptation to various application requirements

@@ -32,7 +32,6 @@ The following components are instantiated in the subapplication:
 
 The hierarchical structure of the logic is clearly illustrated by the interconnection of the adapter connections in the subapplication `Uebung_002b3_AX.SUB`:
 
-```xml
 <AdapterConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="AND_2_BOOL.IN1"/>
 <Connection Source="DigitalInput_I2.IN" Destination="AND_2_BOOL.IN2"/>

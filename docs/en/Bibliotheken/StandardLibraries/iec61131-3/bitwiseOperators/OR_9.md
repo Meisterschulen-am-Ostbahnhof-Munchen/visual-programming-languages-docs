@@ -32,7 +32,6 @@ This module does not have any adapters.
 ## Functionality
 The OR_9 function block performs a bitwise logical OR operation on all active inputs (IN1 to IN9) when the REQ event is received. The result is output at the OUT output, and the CNF event is triggered simultaneously.
 
-```
 ## Technical Features
 - Supports the generic data type ANY_BIT for all inputs and the output
 - Can work with different bit lengths (e.g., BYTE, WORD, DWORD)

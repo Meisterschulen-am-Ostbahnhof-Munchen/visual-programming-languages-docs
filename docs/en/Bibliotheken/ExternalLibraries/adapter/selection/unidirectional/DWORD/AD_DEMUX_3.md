@@ -49,7 +49,6 @@ No data outputs available.
 ## Functionality
 As soon as an event arrives at the **REQ** input, the current value of the index `K` is read. The adapter connected to the **IN** socket (and thus the transmitted information) is then forwarded to the output adapter (OUT1, OUT2, or OUT3) determined by `K`. After successful switching, an event is sent at the **CNF** output to confirm the operation. If the index value is invalid (e.g., greater than 2), the function block has no effect or, depending on the implementation, may trigger an error.
 
-```
 ## Technical Features
 
 - **Generic Type:** The FB is declared as a generic function block (`GenericClassName = 'GEN_AD_DEMUX'`) and can be instantiated for various adapter types, as long as the basic `unidirectional::AD` adapter is used.

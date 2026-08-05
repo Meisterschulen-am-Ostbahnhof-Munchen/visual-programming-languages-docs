@@ -26,7 +26,6 @@ Understanding the internal logic of a memory block. Instead of using the pre-bui
 
 The key lies in the feedback of the output state to the input of the switch:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_SWITCH.EI"/>
 <Connection Source="E_SWITCH.EO0" Destination="E_SR.S"/>

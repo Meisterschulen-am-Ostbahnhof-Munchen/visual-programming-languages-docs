@@ -36,7 +36,6 @@ Plug (Output) | `OUT3` | `adapter::types::unidirectional::ALI` | Third output co
 ## Functionality
 The function block performs a pure 1:3 distribution of the ALI adapter connected to socket `IN`. All information received at the input (e.g., data values, events, or states) is forwarded in parallel to the three outputs `OUT1`, `OUT2`, and `OUT3` without delay or transformation. No buffering or logic takes place – the function block operates purely synchronously with the data flow.
 
-```
 ## Technical Features
 
 - **Generic Type:** The function block is declared as a generic function block (`eclipse4diac::core::GenericClassName = 'GEN_ALI_SPLIT'`). This allows the actual adapter type to be defined at configuration time, provided the underlying system supports this.

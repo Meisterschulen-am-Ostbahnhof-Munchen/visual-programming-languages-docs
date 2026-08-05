@@ -12,7 +12,6 @@ The sub-application `Uebung_003b2_sub_AX` serves as a generic building block to 
 
 This sub-application encapsulates the logic for signal forwarding. The internal components and their configuration are described below.
 
-```
 ### Sub-Blocks: Exercise_003b2_sub_AX
 
 - **Type**: SubAppType

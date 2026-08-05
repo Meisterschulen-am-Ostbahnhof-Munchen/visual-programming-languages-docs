@@ -29,7 +29,6 @@ No adapters available.
 ## Functionality
 Upon arrival of the REQ event, the OR_4 block performs a bitwise OR operation on all four inputs. The operation is executed separately for each bit position: OUT[i] = IN1[i] OR IN2[i] OR IN3[i] OR IN4[i]. After completion of the calculation, the CNF event is output along with the result.
 
-```
 ## Technical Features
 - Generic building block for ANY_BIT data types
 - Supports various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)

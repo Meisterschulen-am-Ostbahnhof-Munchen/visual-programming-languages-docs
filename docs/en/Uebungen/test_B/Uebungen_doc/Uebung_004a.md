@@ -27,7 +27,6 @@ The objective is to understand the difference between state-oriented (level) and
 
 The logic is based on converting a momentary key press into a persistent memory state:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_T_FF.CLK"/>
 <Connection Source="E_T_FF.EO" Destination="DigitalOutput_Q1.REQ"/>

@@ -29,7 +29,6 @@ Understanding edge detection using event switches. This section demonstrates how
 
 The circuit uses the data connection from the input to the gate of the switch:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="E_SWITCH.EI"/>
 <Connection Source="E_SWITCH.EO1" Destination="E_T_FF.CLK"/>

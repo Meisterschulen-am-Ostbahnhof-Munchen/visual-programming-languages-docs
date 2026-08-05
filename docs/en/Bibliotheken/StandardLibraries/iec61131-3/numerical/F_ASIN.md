@@ -28,7 +28,6 @@ The F_ASIN function block calculates the arcsine (inverse sine function) of the 
 
 The function operates according to the mathematical definition: OUT = arcsin(IN), where the result lies in the range [-π/2, π/2] radians.
 
-```
 ## Technical Features
 - Supports the ANY_REAL data type for maximum flexibility with various real number types
 - Compliant with the IEC 61131-3 standard for numeric functions

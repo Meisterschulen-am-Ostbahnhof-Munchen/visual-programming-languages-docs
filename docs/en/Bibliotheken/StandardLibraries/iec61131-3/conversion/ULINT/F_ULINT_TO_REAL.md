@@ -29,7 +29,6 @@ The function block performs the conversion as soon as the event `REQ` is trigger
 - Supports the conversion of 64-bit unsigned integers to 32-bit floating-point numbers.
 - Simple and direct implementation without additional parameters or complex logic.
 
-```
 ## State Overview
 
 The function block has a simple state machine:

@@ -37,7 +37,6 @@ The following familiar function blocks are used within the containers:
 
 The logic is identical to parallel control, however, the view is hierarchically structured. The structure in `Uebung_003a0_AX.SUB` illustrates the nesting:
 
-```xml
 <SubAppNetwork>
 <SubApp Name="SubApp">
 <SubAppNetwork>

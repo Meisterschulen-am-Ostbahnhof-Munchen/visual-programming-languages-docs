@@ -31,7 +31,6 @@ No adapter interfaces are available.
 ## Functionality
 The QB block initializes itself with the corresponding PARAMS via the INIT event. After successful initialization, it confirms this with INITO. Byte data (OUT) can be output to the connected resource via the REQ event. Processing is acknowledged with the CNF event and status information.
 
-```
 ## Technical Features
 - Specialized for byte data output
 - Supports configurable initialization

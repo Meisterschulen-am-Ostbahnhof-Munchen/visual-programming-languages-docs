@@ -26,7 +26,6 @@ This sub-application uses hardware driver blocks as well as logic and timing blo
 - **Type**: `adapter::iec61131::edgeDetection::AX_FB_R_TRIG`
 - **Function**: This block monitors the input signal. It only outputs a signal at output `Q` when the input signal `CLK` changes from `FALSE` (0) to `TRUE` (1) (rising edge). Continuous signals are ignored.
 
-```
 #### 3. Pulse Timer
 
 - **Name**: `AX_TP`

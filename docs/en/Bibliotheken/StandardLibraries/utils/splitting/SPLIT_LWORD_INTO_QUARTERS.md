@@ -33,7 +33,6 @@ No adapters available.
 
 The function block uses bitwise operations (AND and right shift) in combination with constants (`quarterconst::LWORD_QUARTER_xx` and `quarterconst::SHIFT_QUARTER_xx`) to isolate each of the 32 quarter bytes from the input LWORD. Each quarter byte is then written to a separate BYTE output.
 
-```
 ## Technical Features
 - Uses special bitmasks and shift constants for precise extraction
 - Works with the largest IEC data type, LWORD (64-bit)

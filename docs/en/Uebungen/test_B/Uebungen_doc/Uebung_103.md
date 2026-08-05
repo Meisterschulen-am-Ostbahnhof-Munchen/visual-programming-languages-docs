@@ -2,7 +2,6 @@
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the processing of a digital input signal into a digital output signal using plug-and-socket connections and DEMUX and MUX function blocks. The system allows for different signal processing modes for various applications.
-```
 ## Function Blocks (FBs) Used
 ### Main Function Blocks:
 - **DigitalInput_I1** (logiBUS_IXA): Reads digital input signals from Input_I1

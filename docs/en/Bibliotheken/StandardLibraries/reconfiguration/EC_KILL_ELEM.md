@@ -30,7 +30,6 @@ No adapter interfaces are available.
 
 The function block responds to the REQ event and attempts to terminate the specified element (function block, connection, resource, or device) at the specified target resource. Upon execution, the CNF event is output with the corresponding status.
 
-```
 ## Technical Features
 - Supports terminating various element types (FBs, connections, resources, devices)
 - Uses WSTRING data types for element names and targets

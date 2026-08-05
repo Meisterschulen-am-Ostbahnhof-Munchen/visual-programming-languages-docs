@@ -2,7 +2,6 @@
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the implementation of numeric value input followed by storage in non-volatile memory (NVS) using a SubApp. The unique aspect is the use of a SubApp in the **Adapter Version**, which allows the inputs and outputs to be encapsulated via an adapter mechanism. The SubApp **Exercise_012c_AUDI** contains a pre-built sub-module that handles the entire input and storage process.
-```
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: Exercise_012c_sub_AUDI

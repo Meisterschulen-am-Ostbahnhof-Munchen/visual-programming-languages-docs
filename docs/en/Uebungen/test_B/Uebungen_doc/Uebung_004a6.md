@@ -25,7 +25,6 @@ Learning how to use the `E_REND` function block. This functions like a "memory A
 
 The logic requires acknowledgment from both sources:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_REND.EI1"/>
 <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_REND.EI2"/>

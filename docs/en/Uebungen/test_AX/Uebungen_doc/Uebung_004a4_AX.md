@@ -24,7 +24,6 @@ The objective is to understand sequential event processing. In IEC 61499, an eve
 
 ## How it Works
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_SPLIT.EI"/>
 <Connection Source="E_SPLIT.EO1" Destination="E_T_FF_Q1.CLK"/>

@@ -77,7 +77,6 @@ The internal state machine consists of the following states and transitions:
 - **AX_SR (Set-dominant)** or **AX_RS (Reset-dominant)**: These function blocks have a dominant input order when S and R arrive simultaneously. However, the symmetry here only applies to the startup behavior; during operation, the order is determined by the event processing of the runtime environment in the case of simultaneous events – the function block itself cannot handle simultaneity.
 - **SR flip-flops in IEC 61131-3**: (e.g., `SR` or `RS`) usually operate with static signals. `AX_RS_SYM` is purely event-driven and therefore optimized for event-oriented controllers (e.g., 4diac IDE with FORTE).
 
-```
 ## Conclusion
 
 The **AX_RS_SYM** is a simple yet flexible event-driven RS flip-flop. Its unique feature lies in its symmetrical startup behavior, which allows for a defined initial state without a fixed preset. The adapter interface facilitates integration into larger systems. This component is the ideal choice for applications where neither setting nor resetting is preferred after startup.

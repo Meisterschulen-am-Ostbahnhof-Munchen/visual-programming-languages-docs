@@ -2,8 +2,12 @@
 To understand the specifics of IEC 61499, it is helpful to place it within the broader landscape of programming languages. Programming languages can generally be divided into two main groups based on their notation: **textual** and **visual** languages.
 ## Differentiation between Visual and Textual Programming Languages
 The key difference lies in how a program's logic is formulated. While textual languages are based on sequential code, visual languages use graphical elements to represent relationships and data flows.
-`````{eval-rst}
-.. mermaid:: Abgrenzung_Textuell_Visuell.mmd
+
+```mermaid
+flowchart TB
+A["Programming languages"] --> B["Textual programming languages"]
+A --> CL["Visual programming languages"]
+```
 Textual Programming Languages
 In textual languages, the algorithm is described by a sequence of strings (keywords, operators, variables). These languages are often very powerful and abstract, but require a precise knowledge of the syntax.
 
@@ -11,8 +15,15 @@ In textual languages, the algorithm is described by a sequence of strings (keywo
 
 In textual languages, the algorithm is described by a sequence of character strings (keywords, operators, variables). These languages are often very powerful and abstract, but require precise knowledge of the syntax.
 
-...```{eval-rst}
-.. mermaid:: Beispiele_Textuell.mmd
+```mermaid
+flowchart TB
+A["Programming languages"] --> B["Textual programming languages"]
+B --> Python
+B --> Java
+B --> C++
+B --> X["C -- IEC9899"]
+B --> C#
+```
 Typical examples are:
 
 * **C / C++:** Low-level programming, high performance.
@@ -22,8 +33,14 @@ Typical examples are:
 ### Visual Programming Languages
 Visual programming languages (VPLs) use graphical symbols, blocks, or icons that are linked together by lines (connections). This often makes it possible to represent complex relationships (such as signal flows in electrical engineering) more intuitively.
 
-* **Java / C#:** Object-oriented languages, widely used in enterprise software.```{eval-rst}
-.. mermaid:: Unterteilung_Visuell.mmd
+* **Java / C#:** Object-oriented languages, widely used in enterprise software.
+
+```mermaid
+flowchart TB
+A["Programming languages"] --> CL["Visual programming languages"]
+CL --> E["Industrial visual languages"]
+CL --> C["Educational visual languages"]
+```
 A common distinction is made between programming languages based on their intended use:
 
 1. **Educational Languages:** These are primarily used for learning programming concepts without syntax hurdles. Well-known examples include **Scratch** and **Blockly**.
@@ -36,8 +53,21 @@ A common distinction is made between programming languages based on their intend
 
 Visual programming has a long tradition in industry, as it is closely related to the representation of circuit diagrams and process flows.
 
-``{eval-rst}
-.. mermaid:: Industrielle_Standards.mmd
+```mermaid
+flowchart TB
+A["Programming languages"] --> CL["Visual programming languages"]
+CL --> E["Industrial visual languages"]
+E --> H["LabVIEW"]
+E --> F["IEC 61131-3"]
+E --> G["IEC 61499"]
+F --> IL
+F --> LD
+F --> FBD
+F --> SFC
+F --> ST
+G --> FB
+G --> EEC
+```
 
 ### IEC 61131-3 (The Classic Standard)
 IEC 61131-3 is the globally established standard for programmable logic controllers (PLCs). It offers both textual and visual languages:

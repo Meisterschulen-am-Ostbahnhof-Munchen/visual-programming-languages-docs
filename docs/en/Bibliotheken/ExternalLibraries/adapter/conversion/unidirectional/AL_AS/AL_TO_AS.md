@@ -36,7 +36,6 @@ The function block receives events and LWORD data via the `AL_IN` socket. Intern
 
 The entire process is event-driven: Only an event at `AL_IN` triggers the conversion and an event at `AS_OUT`.
 
-```
 ## Technical Features
 
 - The function block (FB) is implemented as a composite and uses the predefined conversion function `F_LWORD_TO_SINT`, ensuring high reusability and standards compliance.

@@ -24,7 +24,6 @@ The objective is to understand sequential event processing. The `E_SPLIT` functi
 
 ## Functionality
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_SPLIT.EI"/>
 <Connection Source="E_SPLIT.EO1" Destination="E_T_FF_Q1.CLK"/>

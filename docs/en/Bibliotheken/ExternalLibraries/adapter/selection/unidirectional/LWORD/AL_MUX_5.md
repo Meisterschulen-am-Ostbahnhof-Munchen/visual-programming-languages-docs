@@ -56,7 +56,6 @@ No data outputs available. Signal transmission is handled via the adapter.
 
 When an event arrives at the **REQ** input, the function block reads the current value of the data input **K** (data type UINT). The socket input corresponding to the index (IN1 for K=0, IN2 for K=1, …, IN5 for K=4) is then switched to the plug output **OUT**. The function block then outputs an acknowledgment event on **CNF**. If K is greater than 4, no input is activated (no defined response). The switching occurs asynchronously to the data flow and must be triggered by the REQ event.
 
-```
 ## Technical Features
 
 - **Generic Function Block**: The AL_MUX_5 is declared as a generic function block (GenericClassName `GEN_AL_MUX`). It can be reused and configured in different projects.

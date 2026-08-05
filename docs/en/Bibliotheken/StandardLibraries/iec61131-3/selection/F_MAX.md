@@ -27,7 +27,6 @@ No adapter interfaces are available.
 ## Functionality
 When a REQ event arrives, the F_MAX block compares the two input values IN1 and IN2. The larger of the two values is output at OUT. Simultaneously, a CNF event is generated to signal the completion of the operation. The block supports all elementary data types (ANY_ELEMENTARY), making it universally applicable for various numeric and non-numeric comparisons.
 
-```
 ## Technical Features
 - Use of the generic data type ANY_ELEMENTARY for maximum flexibility
 - Automatic type matching between inputs and output

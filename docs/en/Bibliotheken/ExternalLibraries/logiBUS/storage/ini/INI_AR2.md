@@ -38,7 +38,6 @@ The FB INI_AR2 is a composite function block that internally uses an INI functio
 
 5. **Completion**: After the initial read operation, the INITO event is output, along with the status information QO and STATUS. After write operations via the adapter, no INITO is sent, only an acknowledgment via VAL.EI1.
 
-```
 ## Technical Features
 
 - The function block uses the Eclipse 4diac infrastructure and imports types from `eclipse4diac::storage` and `adapter::types::bidirectional::AR2`.

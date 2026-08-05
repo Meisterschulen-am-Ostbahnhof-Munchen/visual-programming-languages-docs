@@ -16,7 +16,6 @@ This exercise implements an application using three mutually interlocked toggle 
 
 Each block detects a button and generates an event (IND) at its event output upon a single click.
 
-```
 ### Interlock Toggle Flip-Flop: ILOCK_T_FF
 
 - **Type**: logiBUS::signalprocessing::interlock::ILOCK_T_FF

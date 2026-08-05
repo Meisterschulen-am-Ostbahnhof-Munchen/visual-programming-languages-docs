@@ -64,7 +64,6 @@ Initialization (`INIT`) is a prerequisite for both operating modes. During initi
 * **Compared to generic I/O function blocks (e.g., `WAGO_750_5xx_DI`)**: Similar function, but manufacturer-specific (here, logiBUS). Configuration is done via the structured parameters `Input` and `PARAMS` instead of fixed channel numbers.
 * * **Compared to simpler input blocks**: Offers advanced features such as filtering event generation (`IND`) via `ImpulseDelta`/`TimeDelta`, which are typically not available in simple "Read" blocks.
 
-```
 ## 🛠️ Related exercises
 
 * [Uebung_150](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_150.md)

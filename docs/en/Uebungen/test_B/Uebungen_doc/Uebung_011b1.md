@@ -30,7 +30,6 @@ This exercise demonstrates the processing of two numeric input values via ISOBUS
 - `u16ObjId` = `"OutputNumber_N1"`
 - **Function**: Sends a numeric value via ISOBUS. The value to be sent is expected at data input `u32NewValue` (of type `UDINT`). An event at `REQ` triggers the output; output `CNF` confirms successful transmission.
 
-```
 ## Program Flow and Connections
 
 The flow is controlled by event and data connections in the network:

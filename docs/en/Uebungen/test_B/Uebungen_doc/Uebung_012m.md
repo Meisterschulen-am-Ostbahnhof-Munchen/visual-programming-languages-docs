@@ -2,7 +2,6 @@
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates processing a string input from an ISOBUS source and saving and retrieving the value to/from the non-volatile memory (NVS) of an ESP32. All the logic is organized in a self-contained subapp, promoting reusability and modularity. The goal is to implement robust storage of configuration data or user input that persists even after a reboot.
-```
 ## Function Blocks (FBs) Used
 
 ### Sub-Block: Uebung_012m_sub

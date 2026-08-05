@@ -18,7 +18,6 @@ SoftKeyActivationCode consists of global constants and not a function block. The
 ## Functionality
 The constants represent different activation states of softkeys in ISOBUS systems. They are used to indicate the status of user interactions with virtual terminals. The transmission repetition rate is 200 ms when a soft key is pressed/released and every 200 ms when a soft key is held.
 
-```
 ## Technical Features
 - All constants are of type `isobus::UT::io::Softkey::SoftKeyActivationCode_S`
 - The constants are defined as global constants and can be used system-wide

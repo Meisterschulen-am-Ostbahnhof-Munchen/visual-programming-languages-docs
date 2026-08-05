@@ -25,7 +25,6 @@ Implementation of a circuit with separate set and reset logic using event-based 
 
 ## Functionality
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_SR.S"/>
 <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_SR.R"/>

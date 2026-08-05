@@ -21,7 +21,6 @@ This exercise demonstrates the use of the AIS adapter protocol for communication
 - `DEFAULT_VALUE` = `STRING#'Test'` (Default value if the key does not exist)
 - **Functionality**: This function block implements non-volatile memory (NVS) with an AIS interface. A string is received via AIS_IN and stored under the specified key. The stored string (or the default value) is output via AIS_OUT.
 
-```
 ### Q_StringValue_AIS
 
 - **Type**: `isobus::UT::Q::Q_StringValue_AIS`

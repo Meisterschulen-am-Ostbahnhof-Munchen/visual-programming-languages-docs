@@ -18,7 +18,6 @@ The ``SchieberStruct`` is a data structure containing five fields of type ``UINT
 
 The initial values of all fields are set to the constant ``ID_NULL``, indicating an undefined or unassigned state. These must be populated with valid object IDs before using the structure.
 
-```
 ## Technical Features
 * **Initialization:** All member variables are initialized with the default value `ID_NULL`. This ensures that the structure starts in a defined, neutral state before specific IDs are assigned.
 * **Type Safety:** Using a structured data type instead of individual, loosely coupled variables improves code maintainability and readability.

@@ -30,7 +30,6 @@ None
 ## Functionality
 This function block has no internal logic or state machines. It functions purely as a "wiring aid" in the 4diac IDE: The A2X adapter connected to socket **IN** is passed unchanged and in parallel to all nine plugs **OUT1** to **OUT9**. Thus, all connected receivers receive identical signals to the input.
 
-```
 ## Technical Features
 
 - **Generic Function Block**: The function block is declared as generic (attribute `GenericClassName` = `'GEN_A2X_SPLIT'`). It can be parameterized for various specific A2X adapter types in the IDE.

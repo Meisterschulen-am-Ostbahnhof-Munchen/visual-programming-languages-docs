@@ -34,7 +34,6 @@ The entire circuit consists of a SubApp type named "Exercise_215". The following
 
 The function block decrements the internal counter by 1 on each rising edge at `CD`. A rising edge at `LD` resets the counter to the value of `PV`. The output `Q` is `TRUE` as long as the counter value is 0. The current counter value is output via `CV`.
 
-```
 #### `Input_CD` (Type: `logiBUS::io::DI::logiBUS_IX`)
 - **Type**: Digital input – physical input `Input_I1`
 - **Parameters**:

@@ -16,7 +16,6 @@ This exercise implements an up counter (CTU) according to IEC 61131-3 as an adap
 - **Outputs**: `Q` (target reached), `CV` (current counter value, type LINT)
 - **Functionality**: This module is a forward counter for LINT values. Each rising edge at the `CU` input increments the internal counter by 1. A signal at the `R` input resets the counter to 0. The output `Q` becomes TRUE as soon as the current counter reading reaches at least the value of `PV`. The current counter reading is available at output `CV`.
 
-```
 #### **ALI_LINT_TO_LI**
 - **Type**: `adapter::conversion::unidirectional::ALI_LINT_TO_LI`
 - **Parameters**:

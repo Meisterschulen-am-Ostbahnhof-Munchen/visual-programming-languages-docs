@@ -48,7 +48,6 @@ No adapters available.
 
 2. In the algorithm, the current value of the input variable `IN` is copied to the output variable `OUT`:
 
-```structuredtext
 OUT := IN;
 
 3. The confirmation event `CNF` is then sent. The outputs `OUT` and `IN` are associated with the event, so they are valid simultaneously.

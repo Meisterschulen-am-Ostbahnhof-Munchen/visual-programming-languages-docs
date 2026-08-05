@@ -5,7 +5,6 @@
 ## Introduction
 This exercise implements a forward/down counter according to IEC 61131-3 (type `FB_CTUD_LINT`) with a value range of type `LINT`. The counter readings are controlled via a logiBUS I/O connection to digital inputs (pushbuttons) and output to digital outputs (signal lights). Additionally, the current counter reading is displayed via a numeric terminal output (`Q_NumericValue`). This exercise demonstrates the use of a complex counter and the conversion of `LINT` to `UDINT` for output, with a comment indicating the limitation of the conversion (negative values cannot be represented).
 
-```
 ## Function Blocks (FBs) Used
 
 The exercise contains the following function blocks directly at the top level (no sub-blocks):

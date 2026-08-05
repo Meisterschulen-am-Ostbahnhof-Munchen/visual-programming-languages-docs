@@ -29,7 +29,6 @@ The following blocks are used in this configuration:
 
 The logic is implemented by connecting the three inputs to the logic block in the sub-application. The structure in `Uebung_002a5_AX.SUB` is defined as follows:
 
-```xml
 <AdapterConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="AX_OR_3.IN1"/>
 <Connection Source="DigitalInput_I2.IN" Destination="AX_OR_3.IN2"/>

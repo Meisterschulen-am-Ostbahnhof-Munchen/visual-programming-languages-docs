@@ -27,7 +27,6 @@ When the `REQ` event is triggered, the input value `IN` of type `UDINT` is conve
 
 The underlying algorithm is implemented in Structured Text (ST):
 
-```ST
 ALGORITHM REQ
 OUT := UDINT_TO_DWORD(IN);
 END_ALGORITHM

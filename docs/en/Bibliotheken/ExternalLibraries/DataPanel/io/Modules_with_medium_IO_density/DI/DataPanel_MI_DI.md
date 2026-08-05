@@ -23,7 +23,6 @@ DataPanel_MI_DI is a global constant definition for medium I/O density DataPanel
 ## Functionality
 DataPanel_MI_DI is a global constant definition that provides fixed values for the pin assignments of the digital inputs. The constant defines structured data of type `DataPanel_MI_DI_S` with PIN numbers for various digital input channels.
 
-```
 ## Technical Features
 - Defines pin assignments for 8 digital input channels (5A, 5B, 6A, 6B, 7A, 7B, 8A, 8B)
 - Pin numbers range from 9 to 16

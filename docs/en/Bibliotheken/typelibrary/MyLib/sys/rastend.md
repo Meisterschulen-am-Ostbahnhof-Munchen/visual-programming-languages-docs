@@ -3,7 +3,6 @@
 * * * * * * * * * *
 ## Introduction
 This exercise implements a latching switching function that is triggered when a signal is released. The sub-application uses adapters for signal processing and event control to achieve reliable latching functionality.
-```
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: Latching

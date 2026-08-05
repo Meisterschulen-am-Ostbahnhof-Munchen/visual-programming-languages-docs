@@ -93,7 +93,6 @@ After the command is completed, the internal module sends a `CNF` event.
 * `VT_E_NOT_ALIVE (-130)` – VT not reachable
 * The function block uses a unidirectional adapter (`AUS`) that combines the event and data channels – this reduces the number of interfaces.
 
-```
 ## State Overview
 
 The function block (FB) does not have an explicit state machine at the top level, but the interaction with `INIT`, `REQ` (via adapter), and `CNF` results in the following implicit states:

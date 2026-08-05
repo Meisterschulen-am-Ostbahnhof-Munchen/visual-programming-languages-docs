@@ -12,7 +12,6 @@ The function block `XOR_10_BOOL` is a generic function block for calculating the
 ### **Event Outputs**
 * **CNF (Execution Confirmation):** This event signals the completion of the calculation. It is output along with the calculated result at the data output `OUT`.
 
-```
 ### **Data Inputs**
 * **IN1 (XOR input 1):** Boolean input 1.
 * **IN2 (XOR input 2):** Boolean input 2.

@@ -33,7 +33,6 @@ When a REQ event arrives, the current value of index K is read. Depending on K (
 - Index K is expected as a UINT; valid values are 0–3. Values outside this range result in undefined behavior.
 - As a generic function block, it is identified with the attribute `GenericClassName = 'GEN_AUDI_MUX'` and can be further specified using type hashing mechanisms.
 
-```
 ## State Overview
 The function block (FB) does not have an explicit state machine. It operates in an implicit state: Waiting for REQ; upon REQ, the appropriate input is selected according to the index, and CNF is sent.
 

@@ -64,7 +64,6 @@ The preset value is initialized via the event connection `Input_LD.INITO -> AUDI
 
 The current counter reading is routed via the adapter connection `AUDI_FB_CTUD.CV → AUDI_TO_ALR.AUDI_IN`, converted there to the `ALR` type, and then passed to the physical input `lrPhys` of the terminal block (`AUDI_TO_ALR.ALR_OUT → Q_NumericValue_PHYSA_LREAL.lrPhys`).
 
-``````````````````````````````````)`````````) ` `AUDI_UDINT_TO_UDI`` ` `AUDI_UDINT_TO_UDI`` ` `AUDI_UDINT_TO_UDI`` ` qzmsdocs000042 ...` ` `AUDI_OUT`` ` `AUDI_OUT`` ` `AUDI_OUT`` ` `AUDI_OUT` The counter's overflow and underflow signals (`QU`, `QD`) are applied to the digital outputs `Output_QU` and `Output_QD`, which are connected to the physical outputs `Output_Q1` and `Output_Q2`.
 
 **Special Features**:
 

@@ -69,7 +69,6 @@ OUT = (highByte * SCALE_HIGH) + (lowByte * SCALE_LOW) + OFFSET`
 
 The following ST code illustrates the internal logic:
 
-```pascal
 IF (WORD_TO_UINT(IN) <= WORD_TO_UINT(VALID_SIGNAL_W)) THEN
 temp := SHR(IN, SINT#8);
 highByte := temp AND WORD#16#00FF;

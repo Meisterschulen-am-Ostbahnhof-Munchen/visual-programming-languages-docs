@@ -24,7 +24,6 @@ The main objective of this exercise is to demonstrate how event and data connect
 
 Signal distribution is achieved by drawing two connections from the source to each destination. The setup in `Uebung_002.SUB` is defined as follows:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="DigitalOutput_Q1.REQ"/>
 <Connection Source="DigitalInput_I1.IND" Destination="DigitalOutput_Q2.REQ"/>

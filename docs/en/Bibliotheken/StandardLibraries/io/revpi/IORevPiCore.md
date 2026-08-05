@@ -28,7 +28,6 @@ The IORevPiCore function block serves as the core module for the Revolution Pi h
 ## Functionality
 The The IORevPiCore block initiates communication with the Revolution Pi hardware upon receiving the INIT event. After successful initialization, INITO is output with the corresponding status. The block continuously monitors the hardware state and outputs IND events when changes occur. The UpdateInterval determines the sampling rate for hardware monitoring.
 
-```
 ## Technical Features
 - Standard update interval of 25 Hz
 - Unicode string output for status information

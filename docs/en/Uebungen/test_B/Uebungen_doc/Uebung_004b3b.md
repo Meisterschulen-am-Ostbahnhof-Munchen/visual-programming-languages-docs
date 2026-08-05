@@ -45,7 +45,6 @@ The sub-block is a **toggle flip-flop with an external RESET input and SET outpu
 - The external `RESET` input forces the flip-flop into the state `Q = FALSE`.
 ...`` If the event `Q = TRUE` is present, the event event is passed to the `EO1` output to the `E_SR` output to reset the other flip-flop.
 
-```
 ## Program Flow and Connections
 
 The main application (`Uebung_004b3b`) is wired as follows:

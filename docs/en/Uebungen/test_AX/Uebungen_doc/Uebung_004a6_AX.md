@@ -22,7 +22,6 @@ Understanding the `E_REND` function block. This function block acts like an "AND
 
 ## How it works
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_REND.EI1"/>
 <Connection Source="DigitalInput_CLK_I2.IND" Destination="E_REND.EI2"/>

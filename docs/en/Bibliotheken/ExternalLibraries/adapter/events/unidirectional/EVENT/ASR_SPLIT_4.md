@@ -32,7 +32,6 @@ The function block **ASR_SPLIT_4** is a generic block that distributes an incomi
 ## Functionality
 The ASR_SPLIT_4 function block operates as a pure signal distributor: All ASR connection elements (events and data) received via the `IN` socket are replicated **1:1** to all four output plugs (OUT1–OUT4). No signal amplification, filtering, or logical processing takes place. As soon as the input adapter establishes an active connection, it is immediately passed through to all outputs. The function block does not require its own state logic – it operates entirely combinationally.
 
-```
 ## Technical Features
 
 - **Generic Function Block:** The function block is declared as a generic type (`GEN_ASR_SPLIT`), which means that the interface definition of the ASR adapter is resolved at compile time. It can be used with various versions of the ASR adapter, as long as they conform to the unidirectional protocol.

@@ -36,7 +36,6 @@ Since it is a passive data type, `logiBUS_DI_S` does not have a state machine.
 * **Simple `USINT` Variable:** Instead of a struct, a `USINT` variable could be used directly. However, the struct offers semantic clarity (the name `logiBUS_DI_S` describes its purpose) and is easier to extend if further configuration parameters (such as filter time or inversion) need to be added in the future.
 * **Device-Specific Structs:** Within the logiBUS ecosystem, similar structs could exist for other functions (e.g., `logiBUS_DO_S` for digital outputs, `logiBUS_AI_S` for analog inputs). This would enable a uniform configuration philosophy across different I/O types.
 
-```
 ## 🛠️ Related exercises
 
 * [Uebung_003a_AX_sub](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)

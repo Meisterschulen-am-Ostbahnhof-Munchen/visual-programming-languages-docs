@@ -31,7 +31,6 @@ No adapter interfaces are available.
 ## Functionality
 The QL block processes two main operations: initialization and data output. During the INIT operation, the service parameters are configured and the connection to the resource is initialized. The REQ operation performs the actual data output of the LWORD value to the connected resource. Each operation is acknowledged by corresponding confirmation events.
 
-```
 ## Technical Features
 - Processing of 64-bit data values (LWORD)
 - String-based parameter configuration

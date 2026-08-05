@@ -27,7 +27,6 @@ The function block `F_REAL_AS_WSTRING` converts the `REAL` value at input `IN` t
 
 The conversion algorithm is implemented as a simple ST (Structured Text) statement:
 
-```ST
 ALGORITHM REQ
 OUT := REAL_AS_WSTRING(IN);
 END_ALGORITHM

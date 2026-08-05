@@ -26,7 +26,6 @@ No adapter interfaces are available.
 ## Functionality
 Upon receipt of a REQ event, the F_EXP block calculates the natural exponential function of the value passed to IN. The result is output to OUT and confirmed by a CNF event. The function is mathematically equivalent to calculating e^x, where x is the input value.
 
-```
 ## Technical Features
 - Supports the ANY_REAL data type for maximum flexibility with numerical inputs
 - Real-time calculation of the exponential function

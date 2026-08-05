@@ -32,7 +32,6 @@ The function block `FB_SR` processes the inputs `S1` (Set) and `R` (Reset) accor
 
 The logic is implemented using the following algorithm:
 
-```ST
 ALGORITHM REQ
 Q1 := S1 OR ((NOT R) AND Q1);
 END_ALGORITHM

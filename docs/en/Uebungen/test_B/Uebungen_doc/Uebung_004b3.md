@@ -23,7 +23,6 @@ Implementation of exclusive selection logic. Switching on one channel must neces
 
 The special feature lies in the "cross-connection" of the set events:
 
-```xml
 <EventConnections>
 <!-- Normale Toggle-Logik Kanal 1 -->
 <Connection Source="E_SWITCH_I1.EO0" Destination="E_SR_I1.S"/>

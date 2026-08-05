@@ -28,7 +28,6 @@ FB_R_TRIG` stores the previous state of the input signal `CLK` in an internal va
 - The function block is implemented according to the IEC 61499-1 standard.
 - It uses a simple edge detection algorithm that can be executed efficiently and quickly.
 
-```
 ## State Overview
 
 This function block does not have a complex state machine. The state is represented solely by the value of the internal variable `MEM`, which stores the previous state of `CLK`.

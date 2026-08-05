@@ -23,7 +23,6 @@ The main objective of this exercise is to implement a logical decision structure
 
 The logic is defined by the configuration of the event and data paths in the subapplication. The structure in `Uebung_002a4.SUB` is defined as follows:
 
-`````xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="AND_2_BOOL.REQ"/>
 <Connection Source="DigitalInput_I2.IND" Destination="AND_2_BOOL.REQ"/>

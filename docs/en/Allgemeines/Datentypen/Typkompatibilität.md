@@ -17,6 +17,7 @@ A connection from **Source** → **Target** is allowed if:
 
 ```java
 targetType.isAssignableFrom(sourceType)
+```
 This means: the target type must be equal to or greater than the source type.
 
 ## Integer Types

@@ -17,7 +17,6 @@ The function blocks used are from the libraries `isobus::UT` and `eclipse4diac::
 
 This function block represents a physical numeric input (e.g., an analog or digital input). When the input value changes, an event `IND` is triggered, and the current value is provided as a floating-point number at the output `rPhys`.
 
-```
 ### `NVS`
 - **Type**: `eclipse4diac::storage::INI`
 - **Parameters**:

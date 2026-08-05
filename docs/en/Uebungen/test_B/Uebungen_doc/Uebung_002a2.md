@@ -23,7 +23,6 @@ The objective is to understand the use of generic function blocks (F-FBs) in IEC
 
 The structure in `Uebung_002a2.SUB` follows the proven pattern of an event chain:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="F_AND.REQ"/>
 <Connection Source="DigitalInput_I2.IND" Destination="F_AND.REQ"/>

@@ -23,7 +23,6 @@ The behavior corresponds to **Table 46** (Standard Function Blocks Timers) and *
 
 ## Timing Diagram (Principle)
 
-```text
 +--------+
 IN    |        |
 --+        +--------------------------

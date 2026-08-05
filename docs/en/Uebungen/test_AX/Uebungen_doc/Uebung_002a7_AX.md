@@ -31,7 +31,6 @@ The following blocks are used:
 
 The logic is defined by connecting the input blocks with the XOR logic block in the subapplication. The structure in `Uebung_002a7_AX.SUB` is as follows:
 
-```xml
 <AdapterConnections>
 <Connection Source="DigitalInput_I1.IN" Destination="AX_XOR_3.IN1"/>
 <Connection Source="DigitalInput_I2.IN" Destination="AX_XOR_3.IN2"/>

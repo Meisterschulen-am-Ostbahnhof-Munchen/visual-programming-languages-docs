@@ -28,7 +28,6 @@ Upon receiving an incoming `REQ` event, the function block converts the `INT` va
 
 The algorithm is defined as follows:
 
-```ST
 ALGORITHM REQ
 OUT := INT_TO_LWORD(IN);
 END_ALGORITHM

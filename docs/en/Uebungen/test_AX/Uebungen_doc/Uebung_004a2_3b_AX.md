@@ -51,7 +51,6 @@ Combines three event inputs (`EI1`, `EI2`, `EI3`) into a single event output (`E
 
 Toggle flip-flop. With each event at input `CLK`, the output `Q` toggles between `TRUE` and `FALSE`.
 
-```
 ### Sub-module: DigitalOutput_Q1 (Type: `logiBUS_QXA`)
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:

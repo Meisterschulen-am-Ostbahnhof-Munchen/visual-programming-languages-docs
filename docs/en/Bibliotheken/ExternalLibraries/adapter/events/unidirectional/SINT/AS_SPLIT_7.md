@@ -48,7 +48,6 @@ OUT7 | `adapter::types::unidirectional::AS` | Plug | Seventh output – same sig
 
 The function block forwards the AS signal present at socket `IN` unchanged to all seven plug outputs. No signal conditioning, amplification, or processing takes place. The function block operates purely passively and without any time delay – as soon as a signal is present at the input, it is available at all outputs simultaneously.
 
-```
 ## Technical Features
 
 - **Generic Function Block:** The function block is implemented as a generic type (`GEN_AS_SPLIT`) and can be used in various contexts by configuring its parameters.

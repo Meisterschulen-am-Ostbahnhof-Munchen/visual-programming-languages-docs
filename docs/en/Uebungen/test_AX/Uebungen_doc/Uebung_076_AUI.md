@@ -6,7 +6,6 @@
 This exercise demonstrates the processing of the Machine Selected Speed (MSS) and its transmission as a physical quantity to the Universal Terminal (UT).
 Compound scaling is used to adapt the signal range to the requirements of the UT. Communication between the function blocks is via adapter connections.
 
-```
 ## Function Blocks (FBs) Used
 
 ### IA_MSS

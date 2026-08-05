@@ -43,7 +43,6 @@ The subapplication has no dedicated input/output interfaces; all connections are
 
 A comment on the network indicates that the last state must be loaded at the beginning.
 
-```
 ## Summary
 
 This exercise demonstrates the combination of a debounced push-button input with a memory toggle flip-flop. Of particular importance is the restoration of the last output state after a restart – achieved through the use of an INI memory chip. This makes the circuit suitable for applications where the switching state must be retained even after a power interruption, e.g., for ON/OFF push buttons in controllers.

@@ -15,7 +15,6 @@ This exercise implements a standard IEC 61131-3 up counter (Counter Up, CTU) as 
 - **Data Inputs**: PV (Final Value)
 - **Functionality**: The block increments the internal counter CV (DINT) on every rising edge at the event input CU. When CV reaches the value PV, Q is set. A signal at input R resets CV to 0 and Q.
 
-```
 ### Sub-Blocks: ADI_DINT_TO_DI
 - **Type**: adapter::conversion::unidirectional::ADI_DINT_TO_DI
 - **Internal Function Blocks Used**: None

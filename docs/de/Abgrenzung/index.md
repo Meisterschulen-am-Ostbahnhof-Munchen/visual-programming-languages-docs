@@ -6,15 +6,23 @@ Um die Besonderheiten der IEC 61499 zu verstehen, ist es hilfreich, sie in die b
 
 Der wesentliche Unterschied liegt in der Art und Weise, wie die Logik eines Programms formuliert wird. Während textuelle Sprachen auf sequenziellem Code basieren, nutzen visuelle Sprachen grafische Elemente, um Zusammenhänge und Datenflüsse darzustellen.
 
-```{eval-rst}
-.. mermaid:: Abgrenzung_Textuell_Visuell.mmd
+```mermaid
+flowchart TB
+A["Programmiersprachen"] --> B["textuelle Programmiersprachen"]
+A --> CL["visuelle Programmiersprachen"]
 ```
 
 ### Textuelle Programmiersprachen
 In textuellen Sprachen wird der Algorithmus durch eine Abfolge von Zeichenfolgen (Schlüsselwörter, Operatoren, Variablen) beschrieben. Diese Sprachen sind oft sehr mächtig und abstrakt, erfordern jedoch eine präzise Kenntnis der Syntax.
 
-```{eval-rst}
-.. mermaid:: Beispiele_Textuell.mmd
+```mermaid
+flowchart TB
+A["Programmiersprachen"] --> B["textuelle Programmiersprachen"]
+B --> Python
+B --> Java
+B --> C++
+B --> X["C -- IEC9899"]
+B --> C#
 ```
 
 Typische Vertreter sind:
@@ -26,8 +34,11 @@ Typische Vertreter sind:
 ### Visuelle Programmiersprachen
 Visuelle Programmiersprachen (VPL) nutzen grafische Symbole, Blöcke oder Icons, die durch Linien (Verbindungen) miteinander verknüpft werden. Dies ermöglicht es oft, komplexe Zusammenhänge (wie z. B. Signalflüsse in der Elektrotechnik) intuitiver darzustellen.
 
-```{eval-rst}
-.. mermaid:: Unterteilung_Visuell.mmd
+```mermaid
+flowchart TB
+A["Programmiersprachen"] --> CL["visuelle Programmiersprachen"]
+CL --> E["industrielle v. Programmiersprachen"]
+CL --> C["erziehungsorientierte visuelle Programmiersprache"]
 ```
 
 Man unterscheidet hierbei oft nach dem Einsatzzweck:
@@ -41,8 +52,20 @@ Man unterscheidet hierbei oft nach dem Einsatzzweck:
 
 In der Industrie hat die visuelle Programmierung eine lange Tradition, da sie eng an die Darstellung von Schaltplänen und Prozessabläufen angelehnt ist.
 
-```{eval-rst}
-.. mermaid:: Industrielle_Standards.mmd
+```mermaid
+flowchart TB
+A["Programmiersprachen"] --> CL["visuelle Programmiersprachen"]
+CL --> E["industrielle v. Programmiersprachen"]
+E --> H["LabVIEW"]
+E --> F["IEC 61131-3"]
+E --> G["IEC 61499"]
+F --> IL
+F --> LD
+F --> FBD
+F --> SFC
+F --> ST
+G --> FB
+G --> EEC
 ```
 
 ### IEC 61131-3 (Der klassische Standard)

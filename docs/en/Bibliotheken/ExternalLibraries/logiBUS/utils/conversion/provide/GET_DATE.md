@@ -58,7 +58,6 @@ The functionality corresponds to a simple value transfer without further process
 - Buffering occurs only during the execution of the algorithm; the current value of **IN** is read again with each new **REQ**.
 - The function block is implemented as a **SimpleFB** and has no internal state transitions – processing is purely combinatorial in a single step.
 
-```
 ## State Overview
 The function block consists of exactly one state:
 

@@ -64,7 +64,6 @@ The internal function block `E_D_FF_ANY_HYS` compares the incoming value with th
 
 The latched value determined in this way is provided at adapter **Q**: **Q.D1** contains the digital value, and event **Q.E1** signals the update.
 
-```
 ## Technical Features
 
 - **Adapter-Based Communication**

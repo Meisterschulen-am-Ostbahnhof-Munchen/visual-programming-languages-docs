@@ -25,7 +25,6 @@ The main objective of this exercise is to implement a basic logical decision str
 
 The logic is defined by the interconnection of event and data connections. The structure in `Uebung_002a.SUB` is defined as follows:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="AND_2.REQ"/>
 <Connection Source="DigitalInput_I2.IND" Destination="AND_2.REQ"/>

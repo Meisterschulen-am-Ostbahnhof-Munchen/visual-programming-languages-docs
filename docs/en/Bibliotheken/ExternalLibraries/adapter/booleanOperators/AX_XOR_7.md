@@ -37,7 +37,6 @@ No direct data outputs available.
 ## Functionality
 This function block performs the XOR operation across all seven inputs. The XOR operation returns a "TRUE" signal if and only if an odd number of inputs are set to "TRUE". An even number of "TRUE" inputs results in a "FALSE" output.
 
-```
 ## Technical Features
 - Generic function block with the generic class name `GEN_AX_XOR`
 - Uses unidirectional AX adapters for inputs and outputs

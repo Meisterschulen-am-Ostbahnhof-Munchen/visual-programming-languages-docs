@@ -38,7 +38,6 @@ The internal network structure connects the event `E1` and the data value `D1` o
 
 This functional block operates as a simple pass-through. As soon as the event `E1` occurs at socket `AUS_IN`, it is immediately forwarded to plug `AUDI_OUT` as the event `E1`. Simultaneously, the data value `D1` (USINT) of the input adapter is transferred to the data value `D1` (UDINT) of the output adapter. A type conversion from USINT to UDINT occurs implicitly through the data connection (expansion from 8 bits to 32 bits). No validation or range check is performed.
 
-```
 ## Technical Features
 
 - **Adapter-Based Interface**: The function block does not have traditional input/output variables, but uses only the standardized adapter types `AUS` and `AUDI` from the `adapter::types::unidirectional` package.

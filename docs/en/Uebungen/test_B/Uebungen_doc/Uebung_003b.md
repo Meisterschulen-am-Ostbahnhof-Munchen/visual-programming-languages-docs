@@ -33,7 +33,6 @@ In `Uebung_003b`, four instances (`F1` to `F4`) are used:
 
 The logic is completely encapsulated within the sub-applications. The main application serves only as a configuration layer. The structure shown in `Uebung_003b.SUB` illustrates the parameter assignment:
 
-```xml
 <SubApp Name="F1" Type="Uebungen::Uebung_003b_sub">
 <Parameter Name="Input" Value="Input_I1"/>
 <Parameter Name="Output" Value="Output_Q1"/>

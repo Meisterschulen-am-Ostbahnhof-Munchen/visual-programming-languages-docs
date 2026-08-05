@@ -74,7 +74,6 @@ Once the switchover is complete, the **CNF** confirmation event is sent.
 
 For example, if `K = 2` is set, the data present at the **IN3** adapter is made available via **OUT**.
 
-```
 ## Technical Features
 
 - **Generic Function Block**: The function block is declared as a generic function block (`GEN_AIS_MUX`). This allows its use in typed libraries and the creation of specialized instances.

@@ -66,7 +66,6 @@ The function block has three states in the ECC:
 - **[AX_SR](AX_SR.md)**: Functionally identical, inputs reversed in the symbol.
 - **[E_RS](../../../../../StandardLibraries/events/E_RS.md)**: The standard equivalent with direct data/event outputs instead of adapters.
 
-```
 ## ⚖️ Comparison with Similar Building Blocks
 Compared to other flip-flop implementations:
 

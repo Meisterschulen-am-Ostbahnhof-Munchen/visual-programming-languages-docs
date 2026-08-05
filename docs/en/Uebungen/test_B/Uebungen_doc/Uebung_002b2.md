@@ -27,7 +27,6 @@ The main objective of this exercise is the hierarchical linking of logic blocks.
 
 The hierarchical structure of the logic is clearly illustrated by the event chain shown in `Uebung_002b2.SUB`:
 
-```xml
 <EventConnections>
 <Connection Source="DigitalInput_I1.IND" Destination="AND_2.REQ"/>
 <Connection Source="DigitalInput_I2.IND" Destination="AND_2.REQ"/>

@@ -36,7 +36,6 @@ Read analog value as adapter
 - Adapter input `OUT` (receives the adapter with the PWM setpoint)
 - **Functionality**: Controls the digital output channel Q4 as a PWM output. The value received via the adapter input `OUT` determines the duty cycle (pulse width). The output is activated by the event `INIT`.
 
-```
 ### Sub-Blocks: AD\_SHL
 - **Type**: `adapter::iec61131::bitwise::AD_SHL`
 - **Internal Function Blocks Used**: None (pure logic)

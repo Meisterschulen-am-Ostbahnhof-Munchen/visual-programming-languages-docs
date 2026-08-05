@@ -14,7 +14,8 @@ None – event output is handled exclusively via the **Q** adapter.
 ### **Data Inputs**
 None – data transfer is handled exclusively via the **I** adapter.
 
-## ### **Data Outputs**
+#
+# ### **Data Outputs**
 
 None – data output is exclusively via the **Q** adapter.
 

@@ -43,7 +43,8 @@ The FB `SUM` accepts a one-dimensional array `A` of type `INT` with arbitrary le
 
 **Important Note:** Although `A` is declared as an **InOut** variable, its value is not modified during the calculation. It functions solely as an input in this function block.
 
-**Important Note:** ## Technical Features
+**Important Note:**
+## Technical Features
 
 - **Dynamic Array Size:** The function block supports variable-length arrays by using the functions `LOWER_BOUND` and `UPPER_BOUND`, as specified by IEC 61131-3.
 - **Type Extension:** The sum is returned as a `DINT` value (32-bit), allowing even larger sums of `INT` values (16-bit) to be represented without overflow.

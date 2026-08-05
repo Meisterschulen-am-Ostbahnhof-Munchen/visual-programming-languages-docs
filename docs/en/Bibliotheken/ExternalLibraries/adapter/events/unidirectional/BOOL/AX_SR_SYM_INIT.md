@@ -64,7 +64,8 @@ The function block has four main states: `START`, `Init`, `DeInit`, `SET`, and `
 - **`RESET`** – This is reached by the event `R` (from `SET` or after initialization with `Q_INIT=FALSE`). The algorithm ``RESET`` sets ``QO := QI`` and writes the value ``FALSE`` to ``Q.D1`` **only if ``QI = TRUE``**. A subsequent ``R`` has no effect.
 
 The transitions between ``SET`` and ``RESET`` are triggered only by the events ``S`` and ``R``, respectively. The INIT transitions can result from either stable state in ``DeInit`` if ``QI = FALSE`` is present.
-...``` ## Technical Features
+...```
+## Technical Features
 
 - **Qualifier-Dependent Actions**: The actual change to the flip-flop output (`Q.D1`) only occurs if `QI = TRUE` is present. Otherwise, only the output qualifiers (`QO`) are updated; the adapter remains unchanged.
 - **Symmetrical Startup**: The device can be initialized with either a "set" or a "reset" state, depending on the value of `Q_INIT`.

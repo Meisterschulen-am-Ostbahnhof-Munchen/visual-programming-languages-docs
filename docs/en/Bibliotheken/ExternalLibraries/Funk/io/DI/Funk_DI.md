@@ -24,7 +24,8 @@ Not available - GlobalConstants package
 ## Functionality
 The Funk_DI package defines a collection of global constants of type `Funk_DI_S`, representing digital input pins. Each constant contains a pin number that identifies the physical or logical input. The constants can be used in other function blocks to reference specific digital inputs.
 
-# ## Technical Features
+#
+## Technical Features
 - **Pin Assignments**: The pin numbers follow a specific scheme:
 - Standard Inputs: Pins 1-15
 - Special Functions: Pin 0 (STOP), Pin 25 (START)

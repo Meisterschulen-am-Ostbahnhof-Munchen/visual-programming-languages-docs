@@ -77,7 +77,8 @@ If errors occur during initialization or operation, the status is reported via t
 
 **Adapter-Based Communication**:** The unidirectional adapter `AX` transmits events and data between the FB and the higher-level logiBUS resource. The FB itself waits for external requests (`E1`) and returns data.
 
-** ## State Overview
+**
+## State Overview
 Since this is a composite function block, it does not have explicit states of its own. However, the internal sub-FB `logiBUS_LED_PWM_QX` can pass through states such as "Initialization," "Ready," or "Error." These are reflected indirectly via the event outputs and the status variable:
 
 - **After INIT**: The FB is in the initialized state (provided `QO = TRUE` and `STATUS = „OK“` are present).

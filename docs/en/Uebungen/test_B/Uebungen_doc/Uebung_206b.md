@@ -15,7 +15,8 @@ This exercise implements an application using three mutually interlocked toggle 
 
 Each block detects a button and generates an event (IND) at its event output upon a single click.
 
-``` ### Interlock Toggle Flip-Flop: ILOCK_T_FF
+```
+### Interlock Toggle Flip-Flop: ILOCK_T_FF
 
 - **Type**: logiBUS::signalprocessing::interlock::ILOCK_T_FF
 - **Instances Used**: ILOCK_T_FF_1, ILOCK_T_FF_2, ILOCK_T_FF_3
@@ -24,7 +25,8 @@ Each block detects a button and generates an event (IND) at its event output upo
 
 A toggle flip-flop that switches its output **Q** on every event at the input **CLK**. It has two adapter interfaces: **ILOCK_IN** and **ILOCK_OUT**. These adapters allow multiple ILOCK_T_FF flip-flops to be chained together, ensuring that only one flip-flop in the chain can set its output to TRUE at any given time (mutual interlocking). When another flip-flop is activated, the previously active one is automatically reset.
 
-A toggle flip-flop that switches its output **Q** on every event at its input **CLK**. ### Digital Output: logiBUS_QX
+A toggle flip-flop that switches its output **Q** on every event at its input **CLK**.
+### Digital Output: logiBUS_QX
 - **Type**: logiBUS::io::DQ::logiBUS_QX
 - **Instances Used**: DigitalOutput_Q1, DigitalOutput_Q2, DigitalOutput_Q3
 - **Parameters**:

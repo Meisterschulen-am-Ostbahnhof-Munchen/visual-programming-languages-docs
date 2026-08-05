@@ -49,7 +49,8 @@ Thus, after each incoming event at the socket, a converted data value is automat
 
 4. After the calculation is complete, `Convert` sends an event at its output **CNF**, which is connected to the plug event **AI_OUT.E1**.
 
-5. ## Technical Features
+5.
+## Technical Features
 
 - **Composition:** The FB is a pure composite function block – it contains no internal logic but delegates the conversion to the standard function block `F_DWORD_TO_INT` from the IEC 61131 library.
 - **Data Types:** DWORD is a 32-bit value, while INT is a 16-bit signed integer. Data loss can occur during conversion if the DWORD value is outside the INT range (−32768 … 32767) or does not fit within this range. The user must take this into account when using the function block.

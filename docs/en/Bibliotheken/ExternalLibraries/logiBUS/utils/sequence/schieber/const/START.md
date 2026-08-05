@@ -23,7 +23,8 @@ The `START` constant declaration defines a set of integer constants (of type `UI
 ### **Adapters**
 *Not applicable.* This declaration does not use adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 The `START` constant declaration assigns fixed, unchanging numerical values to the symbolic names `STARTClosed`, `STARTOpened`, and `STARTUnknown`. Once this declaration is included in a project, the defined names can be used throughout the application code instead of the raw numbers (5, 6, 7). During compilation, the compiler replaces any reference to, for example, `STARTClosed` with the value `UINT#5`.
 

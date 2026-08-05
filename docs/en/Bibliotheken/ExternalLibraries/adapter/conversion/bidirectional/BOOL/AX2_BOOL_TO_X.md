@@ -34,7 +34,8 @@ The AX2_BOOL_TO_X function block serves as a composite function block for conver
 ## Functionality
 This function block acts as a bridge between BOOL data and the AX2 adapter. Upon receiving a REQ event, the OUT value is sent via the AX2_OUT adapter. Simultaneously, incoming data can be received via the same adapter and made available as an IN output with a CNF event.
 
-``` ## Technical Features
+```
+## Technical Features
 - Implemented as a composite function block
 - Supports bidirectional data transmission
 - Uses a specific AX2 adapter interface

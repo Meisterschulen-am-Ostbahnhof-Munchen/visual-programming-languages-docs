@@ -53,7 +53,8 @@ Each output is provided by an edge-triggered memory (E_D_FF_ANY) and remains sta
 
 5. Simultaneously, the event outputs **WORD_00.E1** … **WORD_03.E1** are activated so that the downstream adapters can receive the new data together.
 
-4. This termination event is forwarded to all four edge-triggered flip-flops (**E_D_FF_ANY**). ## Technical Features
+4. This termination event is forwarded to all four edge-triggered flip-flops (**E_D_FF_ANY**).
+## Technical Features
 
 - **Use of E_D_FF_ANY**: Each partial value is temporarily stored in an edge-triggered flip-flop. This ensures that the output value is retained even if no new event is present at the input. The values are only updated during the next splitting operation.
 - **Parallel Output**: All four output events are triggered simultaneously – the data is available at all plugs at the same time.

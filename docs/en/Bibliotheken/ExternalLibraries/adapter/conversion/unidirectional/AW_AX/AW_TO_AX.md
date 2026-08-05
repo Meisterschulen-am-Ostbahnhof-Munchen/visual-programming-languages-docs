@@ -47,7 +47,8 @@ When an event arrives at **AW_IN.E1**, the value of **AW_IN.D1** is compared to 
 This behavior is event-driven and follows the IEC 61499 execution semantics: An event at the input triggers the comparison, the result of which is passed on to the output.
 
 - If **AW_IN.D1 ≠ 0**, an event is sent to **AX_OUT.E1** and the data value **AX_OUT.D1** is set to **TRUE**.
-- ## Technical Features
+-
+## Technical Features
 - The function block is implemented as a **composite function block**, meaning its functionality is represented by an internal network consisting of a single **F_NE** function block.
 - It uses a **unidirectional adapter** (AW and AX) according to the adapter definition of the 4diac IDE.
 - The comparison logic is taken from the IEC 61131 library (`iec61131::comparison::F_NE`).

@@ -46,7 +46,8 @@ The function block does not have an explicitly defined state machine in the XML,
 
 4. After each step, the function block is ready for new requests.
 
-``` ## Application Scenarios
+```
+## Application Scenarios
 
 - **Persistent Configuration Memory**: Saving and retrieving settings (e.g., setpoints, parameters) in an embedded system with NVS (such as ESP32 NVS).
 - **Data Logging**: Asynchronously storing measured values in NVS.

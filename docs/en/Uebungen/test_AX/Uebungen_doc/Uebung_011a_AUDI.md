@@ -6,7 +6,8 @@ This exercise demonstrates the use of a digital input (pushbutton) with repeat d
 The incoming button press is captured via a logiBUS IBA interface, converted into an ISOBUS-compatible format via an adapter, and finally sent to a `Q_NumericValue_AUDI` block, which displays the value on the terminal's screen.
 
 This exercise is based on the IEC 61499 standard and uses the predefined libraries `logiBUS` and `isobus`. It is suitable for beginners to the 4diac IDE who want to familiarize themselves with linking physical inputs and ISOBUS VT components.
-... ## Function Blocks Used (FBs)
+...
+## Function Blocks Used (FBs)
 
 Three function blocks are used in the subapp `Uebung_011a_AUDI`:
 

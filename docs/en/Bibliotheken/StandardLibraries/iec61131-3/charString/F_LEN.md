@@ -12,7 +12,8 @@ The function block `F_LEN` is used to determine the length of an input string. I
 ### **Event Outputs**
 - `CNF`: Acknowledgement of the service request. Triggered as soon as the calculation is complete.
 
-### ### **Data Inputs**
+#
+## ### **Data Inputs**
 - `IN` (ANY_STRING): The input string whose length is to be determined.
 
 ### **Data Outputs**

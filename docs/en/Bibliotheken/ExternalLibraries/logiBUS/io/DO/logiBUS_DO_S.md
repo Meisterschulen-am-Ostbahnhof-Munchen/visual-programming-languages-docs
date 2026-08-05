@@ -50,7 +50,8 @@ Since it is a passive data type, `logiBUS_DO_S` does not have an internal state 
 ## ⚖️ Comparison with Similar Building Blocks
 * **Simple `USINT`:** Directly using a `USINT` value for the pin number is possible, but offers less semantic clarity and type safety. The `logiBUS_DO_S` makes the purpose of the data element explicit.
 * **`logiBUS_DI_S`:** This is the structural counterpart for digital inputs (DIs). It has an identical structure (a `USINT` field `Pin`), but conceptually belongs to the input side. Separating DO and DI structs improves code readability and maintainability.
-* ## 🛠️ Related exercises
+*
+## 🛠️ Related exercises
 * [Uebung_003a_AX_sub](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
 * [Uebung_003a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003a_sub.md)
 * [Uebung_003b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b_sub.md)

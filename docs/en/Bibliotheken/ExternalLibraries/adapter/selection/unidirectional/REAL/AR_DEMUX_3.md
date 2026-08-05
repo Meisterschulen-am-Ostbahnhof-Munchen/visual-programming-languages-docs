@@ -50,7 +50,8 @@ None.
 
 The function block behaves like a 1-to-N demultiplexer at the adapter level. Upon receiving a `REQ` event, the current value of index `K` is read. Depending on `K`, the logical connection between socket `IN` and the corresponding plug (`OUT1`, `OUT2`, or `OUT3`) is activated. The output event `CNF` is then sent to acknowledge the successful switchover. The unselected outputs remain inactive.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Function Block**: The function block is declared as a generic type (`GEN_AR_DEMUX`) and can be reused for different output numbers (here, 3).
 - **Adapter-Based Communication**: Data exchange occurs exclusively via unidirectional adapters of type `AR`. This enables loose coupling and easy reuse of the interfaces.

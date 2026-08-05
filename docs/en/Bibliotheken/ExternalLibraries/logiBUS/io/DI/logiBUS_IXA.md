@@ -29,7 +29,8 @@ The logiBUS_IXA is a composite function block for processing Boolean input data.
 ## Functionality
 The logiBUS_IXA composite function block encapsulates the logiBUS_IX base function block and extends its functionality with additional adapter interfaces. Upon INIT events, parameters are forwarded to the internal IX block, which performs the initialization. IND events from the IX block are passed to the IN input adapter, while the data connections ensure the corresponding signal processing.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses the specific data type logiBUS_DI_S for input identification
 - Implements standardized service interfaces according to DIN 61499-2
 - Supports parameter passing via the STRING data type

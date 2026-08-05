@@ -39,7 +39,8 @@ As soon as an event is received at input `REQ`, the function block directly assi
 
 This function block is stateless. It does not store any internal data between calls, and its output depends solely on the current input values. Each execution is independent of previous executions.
 
-* ## Application Scenarios
+*
+## Application Scenarios
 * **Decomposition of Combined Signals:** Ideal for splitting a logically grouped 8-bit structure into its individual, independent BOOL signals.
 * **Interface Adaptation:** Enables connection to other function blocks or systems that expect individual BOOL inputs instead of a structure.
 * **Visualization and Diagnostics:** Simplifies the separate display or monitoring of each individual bit of a `ST08X` structure.

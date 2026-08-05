@@ -15,7 +15,8 @@ Data inputs are available exclusively via the **socket adapter `AUDI_IN`**:
 
 - **`D1`** (data type `UDINT`): The 32-bit value to be converted.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 Data outputs are provided via the **`AS_OUT`** plug adapter:
 
 - **`D1`** (data type `SINT`): The converted 8-bit value (value range -128…127).

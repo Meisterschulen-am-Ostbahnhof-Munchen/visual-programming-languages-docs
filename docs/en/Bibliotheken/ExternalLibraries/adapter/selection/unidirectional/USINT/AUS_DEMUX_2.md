@@ -24,7 +24,8 @@ Index for selecting the target output. Typical values: `1` → `OUT1`, `2` → `
 
 No direct data outputs – data is passed through adapters.
 
-### ### **Adapters**
+#
+## ### **Adapters**
 - **IN** (Socket, type `AUS`)
 
 Input adapter through which the value to be demultiplexed is received.

@@ -1,7 +1,8 @@
 # Exercise_035: Mirror Sequence V2 with Step Chain
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_035`. It demonstrates the control of complex processes using a sequencer (step chain).
-``` ## 🎧 Podcast
+```
+## 🎧 Podcast
 ![Uebung_035_network](./Uebung_035_network.svg)
 
 * [Automation Decoded: Guiding, Controlling, Regulating – The Invisible Language of Technology (DIN IEC 60050-351)]](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)

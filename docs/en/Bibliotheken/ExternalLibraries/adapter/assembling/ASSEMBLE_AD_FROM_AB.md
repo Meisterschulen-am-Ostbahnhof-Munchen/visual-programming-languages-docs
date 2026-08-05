@@ -33,7 +33,8 @@ There is no direct data output. The merged DWORD value is output via the **Plug 
 
 | OUT | `adapter::types::unidirectional::AD` | Plug | 32-bit DWORD output |
 
-``` ## Functionality
+```
+## Functionality
 
 The component operates entirely within a sub-application network:
 

@@ -1,7 +1,8 @@
 # Exercise_024: Mirror Sequence (4)
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_024`. Here, a time pause is integrated into the automatic sequence.
-``` ## 🎧 Podcast
+```
+## 🎧 Podcast
 ![Uebung_024_network](./Uebung_024_network.svg)
 
 * [Analysis of the amendment to the Master Craftsman Examination Regulations in the agricultural and construction machinery mechatronics trade: A detailed comparison of the 2024 and 2001 regulations ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Analyse-der-Novellierung-der-Meisterprfungsverordnung-im-Land--und-Baumaschinenmechatroniker-Handwerk-Ein-Detaillierter-Vergleich-der-Verordnungen-von-2024-und-2001-e37aejv)

@@ -21,7 +21,8 @@ The function block `F_STRING_AS_REAL` converts a `STRING` value to a `REAL` valu
 ### **Adapters**
 This function block does not use adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 When the `REQ` event is triggered, the function block converts the `STRING` value (`IN`) into a `REAL` value. The conversion is performed using the built-in function `STRING_AS_REAL`. After successful conversion, the `CNF` event is triggered, and the result is output via `OUT`.
 

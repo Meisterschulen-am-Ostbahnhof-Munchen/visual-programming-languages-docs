@@ -20,7 +20,8 @@ The function block `F_BYTE_TO_DINT` converts a `BYTE` value to a `DINT` value. I
 ### **Adapters**
 This function block does not have any adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs the conversion from `BYTE` to `DINT` as soon as the event `REQ` is received. The conversion is carried out using the function `BYTE_TO_DINT(IN)`, which converts the value of the input `IN` to the corresponding `DINT` value and outputs it as `OUT`. After successful conversion, the event `CNF` is triggered.
 

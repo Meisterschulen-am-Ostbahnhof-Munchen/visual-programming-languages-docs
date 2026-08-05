@@ -21,7 +21,8 @@ The function block `F_STRING_AS_USINT` converts a `STRING` value to a `USINT` va
 ### **Adapters**
 This function block does not have any adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When the `REQ` event is triggered, the algorithm is executed, converting the `STRING` value at the `IN` input into a `USINT` value. The result is output at `OUT`, and the `CNF` event signals the completion of the conversion.
 
 ## Technical Features

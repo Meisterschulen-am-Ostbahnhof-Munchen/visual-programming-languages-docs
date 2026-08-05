@@ -34,7 +34,8 @@ The AX_D_FF operates as a D-latch flip-flop with three states:
 
 The LATCH algorithm copies the input value `I.D1` to the output `Q.D1`. The state transitions are controlled by the value of `I.D1`.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses unidirectional adapters for inputs and outputs
 - Implemented as a Basic Function Block according to IEC 61499
 - Features simple latch functionality without clocking

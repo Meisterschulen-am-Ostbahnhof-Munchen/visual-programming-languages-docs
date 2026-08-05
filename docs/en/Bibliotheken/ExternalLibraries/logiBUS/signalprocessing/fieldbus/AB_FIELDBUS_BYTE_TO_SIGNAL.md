@@ -27,7 +27,8 @@ None (events are sent via the plug adapters `OUT` and `VALID`).
 ### **Data Inputs**
 None (data is received via the socket adapter `IN`).
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 
 None (data is sent via the plug adapters `OUT` and `VALID`).
 

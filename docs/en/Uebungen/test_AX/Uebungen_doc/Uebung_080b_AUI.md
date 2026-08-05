@@ -38,7 +38,8 @@ The following function blocks are used in the SubApp network:
 
 ### `E_CTU` (Type: `adapter::events::unidirectional::AUI_CTU`)
 
-### `adapter::events::unidirectional::AUI_CTU` ... ### `AUI_TO_AUDI` (Type: `adapter::conversion::unidirectional::AUI_TO_AUDI`)
+#
+## `adapter::events::unidirectional::AUI_CTU` ... ### `AUI_TO_AUDI` (Type: `adapter::conversion::unidirectional::AUI_TO_AUDI`)
 - **Parameters**: None
 - **Function**: Converts an AUI data adapter (here, the counter value CV) into an AUDI data adapter (u32), which can be processed by subsequent function blocks.
 

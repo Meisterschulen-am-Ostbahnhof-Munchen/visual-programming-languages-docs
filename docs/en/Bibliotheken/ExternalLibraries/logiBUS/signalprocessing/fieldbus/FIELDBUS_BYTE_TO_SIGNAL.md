@@ -64,7 +64,8 @@ After the calculation, the **CNF** event is output. The initial value of **IN**,
 
 After the calculation, the **CNF** event is output. The initial value of **IN** is already outside the valid range, so the block is set to "invalid" by default after the first iteration.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - The filter is based on **two external constants** from the `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL` library:
 - `NOT_AVAILABLE_B` – defines the value for "Signal not available" (initial value of IN).
@@ -93,7 +94,8 @@ There are no further wait or initialization states.
 - Unlike simple **threshold switches** (e.g., `HYSTERESIS` or `LIMIT_ALARM`), this block operates purely at the BYTE level and outputs the original value directly as long as it is within the valid range – no hysteresis or alarm function.
 - Compared to a **multiplexer** (`MUX`), it does not require a second control signal but makes the decision automatically based on the input value.
 - Similar blocks in IEC 61499 often exist as `RANGE_CHECK` or `VALIDATE`, but are usually designed for generic data types. This block is specifically tailored to the BYTE format commonly used in fieldbuses.
-- ## Conclusion
+-
+## Conclusion
 
 **FIELDBUS_BYTE_TO_SIGNAL** is a compact, specialized filter block for validating BYTE signals. It requires no boundary configuration, as these are defined via the imported constants in the library. Due to the clear separation of the data output and the validity signal, it is ideally suited for processing fieldbus data in safety-critical or fault-tolerant automation systems.
 

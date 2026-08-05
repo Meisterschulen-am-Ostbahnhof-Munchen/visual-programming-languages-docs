@@ -6,7 +6,8 @@ This exercise implements an up counter according to IEC 61131-3 (FB_CTU_ULINT). 
 
 The physical inputs and outputs are connected to the logiBUS terminals Input_I1, Input_I2, and Output_Q1.
 
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 ### FB_CTU_ULINT
 - **Type**: `iec61131::counters::FB_CTU_ULINT`

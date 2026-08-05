@@ -66,7 +66,8 @@ IEC 61131-3 is the globally established standard for programmable logic controll
 
 **Areas of Application** | Web, Desktop, System-level | Automation, Teaching, Workflow Design |
 
-**Learning Curve** ### Literature and Sources
+**Learning Curve**
+### Literature and Sources
 
 * [Wikipedia: Visual Programming Language ](https://de.wikipedia.org/wiki/Visuelle_Programmiersprache)
 * [YouTube: Visual vs. Textual Programming (Concise Summary) ](https://www.youtube.com/watch?v=MxJcdqOX9V0)

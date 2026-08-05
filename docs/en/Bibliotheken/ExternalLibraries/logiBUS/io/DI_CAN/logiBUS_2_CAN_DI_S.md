@@ -32,7 +32,8 @@ The data type `logiBUS_2_CAN_DI_S` functions as a configuration container. The v
 * **Data type `USINT`:** The use of `USINT` (0 to 255) for the pin suggests that the logiBUS hardware can theoretically address up to 256 digital inputs per configuration structure. The value 255 is reserved as the default initial value.
 * **Initial value 255:** This value serves as an indicator for an inactive or undefined configuration. It should be replaced with a valid pin number in the application.
 * **Package name:** The data type is organized in the package `logiBUS::io::DI_CAN`, which clearly indicates its association with logiBUS CAN input communication.
-* ## State Overview
+*
+## State Overview
 
 *(Not applicable for a structured data type. The "state" is simply the stored value of the `Pin` variable.)*
 
@@ -43,7 +44,8 @@ This structure type is used in scenarios where digital signals (e.g., switches, 
 * Machine controllers with decentralized, CAN-networked sensors.
 * Mobile applications (vehicles, robots) with a robust bus system.
 * Systems where digital input signals are distributed over long distances.
-* ## ⚖️ Comparison with Similar Function Blocks
+*
+## ⚖️ Comparison with Similar Function Blocks
 
 Unlike direct I/O function blocks (such as `E_SR` or `E_D_FF`), which process logical states, `logiBUS_2_CAN_DI_S` is a pure **configuration data type**. It is comparable to other structured hardware configuration types in 4diac (e.g., for serial interfaces or other fieldbuses) that encapsulate parameters for hardware connectivity. Its counterpart for digital outputs would be a corresponding struct type (e.g., `logiBUS_2_CAN_DO_S`).
 

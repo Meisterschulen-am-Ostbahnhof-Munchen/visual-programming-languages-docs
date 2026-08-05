@@ -46,7 +46,8 @@ No adapter interfaces are available.
 
 The IL block functions as an input service interface for long word data. Upon receiving the INIT event, the service is initialized and the configuration parameters are passed via PARAMS. The REQ event triggers a read operation, in which data is read from the connected resource. The block supports both requested reads (CNF) and spontaneous data updates (IND) from the resource.
 
-``` ## Technical Features
+```
+## Technical Features
 - Processes 64-bit Long Word (LWORD) data types
 - Supports both poll-based and event-based data queries
 - Flexible parameter configuration via STRING parameters

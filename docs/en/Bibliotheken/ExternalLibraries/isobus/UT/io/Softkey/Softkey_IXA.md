@@ -29,7 +29,8 @@ Softkey_IXA is a composite function block for processing Boolean input data. The
 ## Functionality
 The composite function block Softkey_IXA encapsulates the internal function block Softkey_IX and acts as an intermediary between external calls and the actual softkey functionality. During initialization (INIT), parameters are passed to the internal block, and during service requests (REQ), the corresponding queries are executed. The IN adapter enables communication with external components.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses ISOBUS-specific types and constants
 - Supports object identification via u16ObjId
 - Flexible parameter passing via STRING parameters

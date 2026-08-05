@@ -20,7 +20,8 @@ The function block `F_BYTE_TO_SINT` converts a data type `BYTE` to the data type
 ### **Adapters**
 This function block has no adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 Upon receiving an incoming `REQ` event, the function block converts the `BYTE` value at input `IN` to a `SINT` value and outputs the result via output `OUT`. Subsequently, the `CNF` event is triggered to signal the successful completion of the operation.
 

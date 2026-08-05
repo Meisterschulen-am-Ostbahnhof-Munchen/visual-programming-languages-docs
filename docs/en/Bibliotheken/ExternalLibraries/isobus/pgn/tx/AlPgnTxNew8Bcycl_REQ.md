@@ -72,7 +72,8 @@ The function block implicitly goes through the following main states:
 
 Vs. Blocks with Internal Data Storage: The use of a callback adapter distinguishes this block from those where the data is directly provided at an input. This makes it more flexible when the data changes frequently or originates from complex sources.
 
-* ## 🛠️ Related Exercises
+*
+## 🛠️ Related Exercises
 * [Exercise_126](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126.md)]
 * [Exercise_126b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b.md)]
 * [Exercise_126b2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2.md)]

@@ -11,7 +11,8 @@ Using libraries ("Don't reinvent the wheel").
 
 [cite_start]The subapplication `Uebung_006a4_AX.SUB` replaces the complex network of gates and subapplication from the previous exercise with the module `LinksRechts_AX`[cite: 1].
 
-``` ### Function Blocks (FBs)
+```
+### Function Blocks (FBs)
 
 ![Uebung_006a4_AX_network](./Uebung_006a4_AX_network.svg)
 

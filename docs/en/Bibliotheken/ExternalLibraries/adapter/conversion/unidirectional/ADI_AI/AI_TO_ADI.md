@@ -48,7 +48,8 @@ This function block operates as a simple forwarder: As soon as the event `E1` is
 - **Composite Implementation:** The function block is implemented as a composite FB, meaning it contains an internal network that directly connects the two adapters. It can be used in control projects like a primitive FB.
 - **Unidirectional Communication:** Both adapters are designed to be unidirectional – data flows only from input to output.
 - **No Latency or Buffering:** Data forwarding is event-driven and occurs without any additional delay.
-- **No Latency or Buffering:** ## State Overview
+- **No Latency or Buffering:**
+## State Overview
 
 The AI_TO_ADI has no internal state machine (ECC). It behaves passively and immediately forwards every incoming event and its associated data. There are no internal states, wait times, or value storage.
 
@@ -71,6 +72,7 @@ CONV_ANY_TO_ANY | Generic | Flexible inputs/outputs | Universal conversion (ofte
 
 While function blocks like `INT_TO_DINT` offer direct data conversion with their own inputs and outputs, AI_TO_ADI seamlessly integrates the conversion into an adapter-based architecture, thus facilitating the reuse of existing adapter definitions.
 
-``` ## Conclusion
+```
+## Conclusion
 
 The AI_TO_ADI is a simple yet valuable function block for converting integer to double-integer adapter interfaces. Its composite structure and implicit type conversion allow it to be integrated into adapter-based control systems without additional programming logic, simplifying the integration of components with different data widths.

@@ -46,7 +46,8 @@ The function block **AX_FB_TOF_LTIME** implements a standard timer for the off-d
 
 **Plug** `Q` | `adapter::types::unidirectional::AX` | Output adapter – forwards the time-delayed output signal (via event `E1` and data `D1`). |
 
-``` ## Functionality
+```
+## Functionality
 
 The module behaves like a classic time-of-flight (TOF) delay circuit:
 

@@ -21,7 +21,8 @@ The function block `XOR_2_BOOL` is a standard function block for calculating the
 ### **Adapters**
 This function block does not have any adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 The `XOR_2_BOOL` block operates in an event-driven manner. Upon the arrival of the event `REQ`, the current values at the data inputs `IN1` and `IN2` are read. The logical XOR operation (`OUT = (IN1 AND NOT IN2) OR (NOT IN1 AND IN2)`) is then performed. The calculated result is output at the data output `OUT`, and simultaneously, the confirmation event `CNF` is activated to signal the completion of the operation to subsequent blocks.
 
 The truth table of the operation is:
@@ -50,7 +51,8 @@ The function block does not have an internal state in the sense of a memory. Its
 * **Parity Check**: Simple check for an odd number of `TRUE` signals with two inputs.
 * **Control Logic**: Implementation of special branches in sequential control systems where a decision must be made when the inputs are different.
 * **Safety-Critical Circuits**: Generates signals that are only active when two monitored variables contradict each other (e.g., in emergency stop circuits).
-* ## ⚖️ Comparison with similar building blocks
+*
+## ⚖️ Comparison with similar building blocks
 
 Compared to other basic logic function blocks like `AND_2_BOOL` or `OR_2_BOOL`, `XOR_2_BOOL` is the only one that returns a `TRUE` result when the inputs are *different*. Blocks like `NOT` only invert a single input. `XOR_2_BOOL` can be considered a special case of an inequality comparison (`NE_BOOL`) for two Boolean values. See: [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md)]
 

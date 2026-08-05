@@ -71,7 +71,8 @@ The `AL_MUX_4` has no explicit states. Its behavior is purely functional: `REQ` 
 - **Configurable Data Paths**: In plant control systems where the signal source must be switched at runtime (e.g., via a higher-level index `K`).
 - **Source Switching**: Selection between different measured values or control signals available as AL adapters.
 - **Redundancy Switching**: Connection of multiple redundant sensors or actuators, from which the active one is selected based on an index.
-- **Configurable Data Paths**: In plant control systems where the signal source must be switched at runtime (e.g., via a higher-level index `K`). ## Comparison with Similar Function Blocks
+- **Configurable Data Paths**: In plant control systems where the signal source must be switched at runtime (e.g., via a higher-level index `K`).
+## Comparison with Similar Function Blocks
 - **`MUX` (Standard Data Multiplexer)**: Selects one data input from several and outputs it. The `AL_MUX_4`, on the other hand, uses adapters, meaning it passes through a complete bidirectional (or in this case, unidirectional) interface.
 - **`SELECT` or `CASE` (Function Blocks)**: More process-oriented, while the `AL_MUX_4` is specifically optimized for coupling adapters in an IEC 61499 environment.
 - **Adapter Bypass**: Other function blocks for adapter switching exist; the `AL_MUX_4` offers a fixed 4-to-1 structure and is generically configurable.

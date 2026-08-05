@@ -33,7 +33,8 @@ No adapter interfaces available.
 ## Functionality
 The function block initializes communication with a specific digital input via the INIT event. After successful initialization, the input state can be queried via the REQ event. The block returns the current state of the digital input and status information via the CNF and IND output events.
 
-# ## Technical Features
+#
+## Technical Features
 - Supports specific SA member addressing in the range 224-239
 - Uses structured input identification via the DataPanel_MI_DI_S data type
 - Provides both request-based (REQ/CNF) and indication-based (IND) communication

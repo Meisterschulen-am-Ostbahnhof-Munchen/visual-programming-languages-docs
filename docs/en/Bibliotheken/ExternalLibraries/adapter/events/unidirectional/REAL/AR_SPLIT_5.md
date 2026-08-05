@@ -16,7 +16,8 @@ None available.
 ### **Data Outputs**
 None available.
 
-### ### **Adapter**
+#
+## ### **Adapter**
 - **Socket (Input)**:
 - `IN`: Type `adapter::types::unidirectional::AR` – Receives a single AR adapter.
 

@@ -44,7 +44,8 @@ The event and data connections are wired directly without additional logic, so t
 ## State Overview
 As a composite function block, **AR_TO_AULI** has no states of its own. The internal state logic is determined solely by the embedded **F_REAL_TO_ULINT**, which typically implements a simple, event-driven sequence without state storage (REQ → Processing → CNF). The function block is therefore stateless and waits for a new input event after each conversion.
 
-# ## Application Scenarios
+#
+## Application Scenarios
 - **Interface Adaptation:** When a component (e.g., a control algorithm) delivers REAL values, but a downstream module (e.g., a counter or index logic) expects ULINT inputs.
 - **Adapter Bridge:** Use in a toolchain that connects different data types via adapters without requiring the developer to perform the conversion manually.
 - **Data Integration:** Integrating REAL-based sensors or parameters into a system that internally uses ULINT (e.g., for status codes or cumulative values).

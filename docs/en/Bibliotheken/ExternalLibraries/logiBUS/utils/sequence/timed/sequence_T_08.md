@@ -17,7 +17,8 @@ The function block `sequence_T_08` is a time-controlled sequencer with eight out
 
 ### **Data Inputs**
 * `DT_S1_S2` to `DT_S8_START` (Type `TIME`): Define the dwell time for each state. This value determines how long the function block remains in the respective state before the automatic transition to the next state occurs. The default value, `NO_TIME`, disables the timed transition, so the function block remains in the state until `RESET` occurs.
-* `DT_S1_S2` to `DT_S8_START` (Type `TIME`): Define the dwell time for each state. ### **Data Outputs**
+* `DT_S1_S2` to `DT_S8_START` (Type `TIME`): Define the dwell time for each state.
+### **Data Outputs**
 * `STATE_NR` (Type `SINT`): Outputs the current state number. `0` corresponds to state `START`, `1` to `8` correspond to the active states `State_01` to `State_08`.
 * `DO_S1` to `DO_S8` (Type `BOOL`): The physical output signals of the sequence. Each output is set to `TRUE` when the corresponding state is active; otherwise, it is `FALSE`.
 

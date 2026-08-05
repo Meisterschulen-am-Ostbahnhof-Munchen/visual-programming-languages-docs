@@ -37,7 +37,8 @@ The function block acts as a passive distributor. As soon as the incoming adapte
 
 Since the function block is generic, a specific adapter type must be assigned to it before use. This is done in the development environment by specifying the adapter type, which defines the actual data fields and events.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Function Block:** The function block is declared as `GEN_AL_SPLIT` and requires binding to a specific `AL` adapter type (e.g., `SimpleData_AL`). The binding is controlled by the attribute `eclipse4diac::core::GenericClassName`.
 - **Type Safety:** All nine outputs use the same adapter type as the input. This ensures that the data structure remains identical.
@@ -61,7 +62,8 @@ The function block has no internal state machine. It operates statelessly and is
 
 **Simple Coupling (e.g., Direct Connection):** Without the Split component, the sender would have to provide multiple adapter connections themselves. The Split component encapsulates this logic and simplifies the overall architecture.
 
-** ## Conclusion
+**
+## Conclusion
 
 The `AL_SPLIT_9` is a simple yet powerful generic distribution block for adapter interfaces of type `AL`. It enables clean, maintainable distribution of a data flow across nine independent paths. Thanks to its generic nature and stateless operation, it is ideally suited for modular and scalable automation solutions.
 

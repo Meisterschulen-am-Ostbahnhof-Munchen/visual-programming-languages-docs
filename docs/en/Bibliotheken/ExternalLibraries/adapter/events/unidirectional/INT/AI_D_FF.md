@@ -45,7 +45,8 @@ An event at `I.E1` triggers a rising edge at the clock input of the internal fli
 - **Adapter Encapsulation:** The function block (FB) has no direct inputs/outputs, but only adapter interfaces. This facilitates reuse in modular architectures where multiple signals are bundled and transmitted.
 - **Unidirectional Data Flow:** The adapters are designed as pure sources (plugs) or sinks (sockets), which clearly defines the signal direction.
 - **Edge-Triggered:** The transfer occurs only upon an event (rising edge), not upon level changes. Therefore, the function block is suitable for clocked systems.
-- ## State Overview
+-
+## State Overview
 The internal state of the flip-flop is determined by the stored value `Q`. Two stable states exist:
 
 | Clock (CLK) | D (Input) | Q (Output) before | Q (Output) after |

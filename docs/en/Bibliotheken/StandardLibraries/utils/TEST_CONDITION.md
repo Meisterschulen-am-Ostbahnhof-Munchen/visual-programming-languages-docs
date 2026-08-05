@@ -12,7 +12,8 @@ The function block `TEST_CONDITION` is used to check a condition and signals whe
 ### **Event Outputs**
 - **CNF**: Signals the completion of the check. This event is triggered after the condition has been evaluated.
 
-### ### **Data Inputs**
+#
+## ### **Data Inputs**
 - **Check**: A Boolean value (`BOOL`) representing the condition to be checked.
 - If `check == TRUE`, the condition is considered fulfilled (test passed).
 - If `check == FALSE`, the condition is considered not fulfilled (test failed).

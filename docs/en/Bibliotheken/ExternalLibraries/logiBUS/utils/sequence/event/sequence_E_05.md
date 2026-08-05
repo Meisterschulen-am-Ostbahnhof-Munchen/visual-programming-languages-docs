@@ -61,7 +61,8 @@ When exiting an active state, an *Exit Step* (e.g., `State_01_X`) is executed, w
 * **Explicit Reset Logic:** The reset process is modeled as a separate ECC state (`sRESET`), ensuring that all five outputs (`DO_S1` to `DO_S5`) are properly deactivated during a reset, regardless of their current state.
 * **Separate Entry/Exit Actions:** The logic for setting and resetting the outputs is divided into separate algorithms (E for Entry, X for Exit). This promotes a clear and maintainable structure.
 * **Constants for State Numbers:** The values for `STATE_NR` are retrieved from an imported library (`sequence::State_01`, etc.), facilitating reusability and centralized maintenance.
-* ## State Overview
+*
+## State Overview
 
 1. **xSTART:** Initial state after startup. Waiting for `START_S1`.
 

@@ -25,7 +25,8 @@ Data is output via the plug adapter:
 
 - **D1** (in plug `AUDI_OUT`): UDINT output value (32-bit unsigned integer).
 
-### ### **Adapter**
+#
+## ### **Adapter**
 - **Socket AULI_IN**
 
 Type: `adapter::types::unidirectional::AULI`

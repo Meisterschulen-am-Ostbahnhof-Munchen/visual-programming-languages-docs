@@ -52,7 +52,8 @@ The flow is controlled by event connections:
 
 **Notes from the design:**
 
-- The conversion of `INT` to `UDINT` is not optimal, as negative counter values cannot be represented. ## Summary
+- The conversion of `INT` to `UDINT` is not optimal, as negative counter values cannot be represented.
+## Summary
 
 This exercise provides practical experience with the IEC 61131-3 counter function block **FB_CTU** in the 4diac IDE. Learning objectives include:
 

@@ -32,7 +32,8 @@ No adapter interfaces are available.
 ## Functionality
 This function block acts as a service interface for word input data. During INIT initialization, the service parameters and object ID are configured. Service requests can be made via REQ events, which are acknowledged with CNF events. When data is received from the resource, an IND event is issued containing the received word data.
 
-# ## Technical Features
+#
+## Technical Features
 - Processes 16-bit Word data types (WORD)
 - Supports configurable object IDs for data identification
 - Provides comprehensive status feedback on the SERVICE status

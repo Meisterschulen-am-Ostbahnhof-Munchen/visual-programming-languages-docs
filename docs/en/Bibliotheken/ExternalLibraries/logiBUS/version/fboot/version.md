@@ -47,6 +47,7 @@ The function block `version` is stateless. It remains in a single, passive state
 * **`E_MERGE`**: This block merges events from multiple inputs. The `version` block has only a single event input and does not process any event streams.
 * **Simple data blocks (e.g., `E_R_TRIG`)**: These react to signal edges or perform timing operations. The `version` block performs only data copying.
 * **Generic blocks like `COPY`**: A `COPY` block would perform a similar function (copying data from A to B) but is typically a pure data block without event control. The `version` block follows the standard IEC 61499 event/data flow paradigm.
-* ## Conclusion
+*
+## Conclusion
 
 The `version` function block is a minimalist and specialized tool for passing string information within an event-driven control system. Its strength lies in the simplicity and clarity of its purpose. For simple data copying without event logic, alternative implementations might be suitable; however, it is well-suited for integration into a standards-compliant IEC 61499 application with a clearly defined event flow.

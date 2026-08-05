@@ -30,7 +30,8 @@ No adapters available.
 ## Functionality
 Based on the triggering event (REQ0 to REQ3), F_SEL_E_4 selects the corresponding input (IN0 to IN3) and passes the value to OUT. The CNF event confirms the successful selection and transmission.
 
-# ## Technical Features
+#
+## Technical Features
 - Supports the ANY data type, enabling flexible use with various data types.
 - Event-based selection, allowing for precise control.
 

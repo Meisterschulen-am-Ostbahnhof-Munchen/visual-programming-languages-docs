@@ -118,7 +118,8 @@ The following description explains the signal flow within the subapplication.
 - The flip-flop's event `EO` is connected to the event input `REQ` of the output block `DigitalOutput_Q1`.
 - The flip-flop's current value `Q` is assigned to the output block's data input `OUT`.
 - At each clock cycle, output Q1 is set to the current flip-flop state – this produces a blinking signal with a period of 20 ms (10 ms on, 10 ms off if the cycle time is 10 ms).
-... ### Data Connections
+...
+### Data Connections
 
 - `E_T_FF.Q` → `DigitalOutput_Q1.OUT`
 

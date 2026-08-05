@@ -20,7 +20,8 @@ The function block `F_DINT_TO_BYTE` converts a 32-bit integer value (DINT) to an
 ### **Adapters**
 This function block does not have any adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 When the event input `REQ` is triggered, the algorithm is executed, converting the value at input `IN` (of type `DINT`) into a value of `BYTE`. The result is output at `OUT`, and the event `CNF` signals the completion of the operation.
 
 The algorithm used is:

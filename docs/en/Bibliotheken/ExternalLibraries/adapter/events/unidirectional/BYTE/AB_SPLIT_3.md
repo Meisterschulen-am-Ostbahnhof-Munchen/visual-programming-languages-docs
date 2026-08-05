@@ -41,7 +41,8 @@ The module forwards the unidirectional adapter connected to socket `IN` **withou
 
 Since the adapter `AB` is unidirectional, data transmission occurs exclusively in one direction (from the socket to the plugs). The three outputs are independent of each other and always provide the current state of the input.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Block**: The function block is marked as generic by the attribute `eclipse4diac::core::GenericClassName` (`'GEN_AB_SPLIT'`). This means the actual adapter type can be specified at runtime or during instantiation, as long as it has the basic structure of a unidirectional AB adapter.
 - **Unidirectionality**: Both the input and output adapters are of type `unidirectional::AB`. Reverse communication is not supported.

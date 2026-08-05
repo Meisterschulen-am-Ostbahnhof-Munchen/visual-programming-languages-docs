@@ -4,7 +4,8 @@
 ## Introduction
 This exercise demonstrates reading a string from an ISOBUS variable (InputString_S1) and storing this value in the non-volatile memory (NVS) of an ESP32. When the application starts, the last stored string is automatically loaded from the NVS and written back to the corresponding ISOBUS variable. This ensures the value is retained even after a restart.
 
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 ### StringValue_IS
 - **Type**: `isobus::UT::io::StringValue::StringValue_IS`
@@ -56,7 +57,8 @@ The `NVS` block simultaneously generates an event at output `GETO`, which is con
 
 4. **Note:** After saving, ``Q_StringValue`` is **not** automatically updated. The value is only written back to the ISOBUS variable at startup. This is intentional, as the value is already visible in the terminal.
 
-``NVS``. ### Data Connections Overview
+``NVS``.
+### Data Connections Overview
 
 - **Events**:
 - `NVS.INITO` → `NVS.GET` (initial read operation)

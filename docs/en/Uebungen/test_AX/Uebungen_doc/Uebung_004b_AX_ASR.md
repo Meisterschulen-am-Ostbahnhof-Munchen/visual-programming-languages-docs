@@ -7,7 +7,8 @@ Exercise **Exercise_004b_AX_ASR** implements a toggle flip-flop logic circuit, b
 
 This exercise primarily serves demonstration purposes to show the functionality and chaining of adapter events and data. As noted in the source code, this implementation is **not recommended** for simple switching tasks in practice due to the high complexity and number of components.
 
-[Note: The original text contains a separate, unrelated comment and is omitted from the translation.] ## Function Blocks (FBs) Used
+[Note: The original text contains a separate, unrelated comment and is omitted from the translation.]
+## Function Blocks (FBs) Used
 
 This sub-application uses various function blocks from the `logiBUS` and `adapter` libraries to implement the logic.
 

@@ -39,7 +39,8 @@ This exercise demonstrates the use of adapter interfaces to connect various func
 - **Type**: `adapter::conversion::unidirectional::ADI_TO_AUDI`
 - **Parameters**: None
 - **Function**: Converts the ADI interface (DINT) to an AUDI interface (Analog Universal Data Interface). **Important:** This conversion does not support negative numbers – the counter value can only be displayed as a positive number or zero.
-... ### Q_NumericValue_AUDI
+...
+### Q_NumericValue_AUDI
 
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameter**: `u16ObjId = OutputNumber_N1`
@@ -71,7 +72,8 @@ The adapter output `ADI_FB_CTD.CV` (current counter reading) is converted via `A
 
 **Note**: The comment in the network indicates that the block `ADI_TO_AUDI` cannot process negative numbers. Since the down counter only counts to zero, this case does not occur in this exercise. For more advanced applications, a more suitable conversion would need to be chosen.
 
-**Note**:** ## Summary
+**Note**:**
+## Summary
 
 This exercise teaches how to use the IEC 61131-3 reverse counter as an adapter module. It demonstrates:
 

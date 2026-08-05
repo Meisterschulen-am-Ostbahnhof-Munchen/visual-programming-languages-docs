@@ -7,7 +7,8 @@
 
 This exercise demonstrates the implementation of a mutual interlock between two set-dominant SR latches. The two latches are interconnected in such a way that only one of the two outputs can be active at any given time. Control is via digital inputs, and the outputs are provided via digital outputs. The locking mechanism is implemented using the special adapters `ILOCK_IN` and `ILOCK_OUT` of the building blocks `ILOCK_FB_SR_AX`.
 
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 ### Sub-Blocks: DigitalInput_S1, DigitalInput_R1, DigitalInput_S2, DigitalInput_R2
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`

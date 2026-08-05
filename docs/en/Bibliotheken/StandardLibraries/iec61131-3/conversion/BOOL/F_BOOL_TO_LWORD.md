@@ -20,11 +20,13 @@ The function block `F_BOOL_TO_LWORD` converts a Boolean value (`BOOL`) into a 64
 ### **Adapters**
 This function block does not use adapters.
 
-### **Adapters** ... ## Functionality
+#
+## **Adapters** ... ## Functionality
 
 This function block converts `BOOL` to `LWORD` when the `REQ` event occurs. The Boolean value `IN` is converted to `LWORD`, while `FALSE` is converted to `0` and `TRUE` to `1`. The result is output at the data output `OUT`, and the `CNF` event is triggered to indicate successful execution.
 
-``` ## Technical Features
+```
+## Technical Features
 - The conversion is performed using the function ``BOOL_TO_LWORD``, which converts the Boolean value into a 64-bit value.
 - The function block is simple and deterministic because it does not store any internal states.
 

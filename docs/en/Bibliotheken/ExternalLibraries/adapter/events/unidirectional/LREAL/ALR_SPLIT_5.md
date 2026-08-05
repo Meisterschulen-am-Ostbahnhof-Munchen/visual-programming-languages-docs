@@ -47,7 +47,8 @@ This function block forwards the ALR signal received from socket `IN` unchanged 
 
 # Functionality
 
-This function block forwards the ALR signal received from socket `IN` unchanged to all five plugs `OUT1` to `OUT5`. ## Technical Features
+This function block forwards the ALR signal received from socket `IN` unchanged to all five plugs `OUT1` to `OUT5`.
+## Technical Features
 
 - **Generic Function Block:** The function block is defined as a Generic FB and uses the Eclipse 4diac Generics mechanisms (`eclipse4diac::core::GenericClassName`). This allows it to be used in various contexts without modifying the core logic.
 - **Pure Adapter Communication:** No traditional event or data inputs/outputs are used. All communication takes place via adapters of type `ALR`, which enable unidirectional data exchange.

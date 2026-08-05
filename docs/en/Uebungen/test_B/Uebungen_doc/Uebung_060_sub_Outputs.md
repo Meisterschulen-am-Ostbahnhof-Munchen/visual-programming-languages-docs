@@ -21,7 +21,8 @@ There are 8 instances of this driver type on the network that forward the signal
 
 ### Sub-Blocks: DigitalOutput_Q1 to DigitalOutput_Q8
 
-### Sub-Blocks: DigitalOutput_Q8 ... There are 8 instances of this driver type on the network that forward the signals to the hardware. ### Since the structure is identical for all instances (except for the assigned output), they are described together here.
+#
+## Sub-Blocks: DigitalOutput_Q8 ... There are 8 instances of this driver type on the network that forward the signals to the hardware. ### Since the structure is identical for all instances (except for the assigned output), they are described together here.
 
 ### Sub-Blocks: DigitalOutput_Q1 to DigitalOutput_Q8
 ### Sub-Blocks: DigitalOutput_Q8

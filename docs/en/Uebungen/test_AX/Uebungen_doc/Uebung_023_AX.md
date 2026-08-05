@@ -225,7 +225,8 @@ Pressing **SoftKey_F8** (DOWN) activates `AX_SPLIT_3`:
 
 Pressing **SoftKey_F9** (DOWN) resets `AX_FB_SR_Einfahren_Cyl_1` → Q4 is deactivated.
 
-Reset Cylinder 1 by pressing **SoftKey_F9** (DOWN). ### Connection Structure (Adapter Connections)
+Reset Cylinder 1 by pressing **SoftKey_F9** (DOWN).
+### Connection Structure (Adapter Connections)
 
 The adapter connections are linked in the network as follows:
 

@@ -22,7 +22,8 @@ The function block `F_ROR` (Rotate Right) performs a bitwise right rotation. It 
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 The function block performs a bitwise right rotation of the input value `IN` by `N` bits. The bits rotated out are then reinserted on the left side. This differs from a simple right shift, where the freed bits are padded with zeros.
 
 ## Technical Features

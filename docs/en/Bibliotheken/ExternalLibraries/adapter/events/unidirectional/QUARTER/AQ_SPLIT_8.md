@@ -13,7 +13,8 @@ None – the function block has no event outputs.
 ## **Data Inputs**
 None – all signal transmission occurs via AQ adapters.
 
-## ### **Data Outputs**
+#
+# ### **Data Outputs**
 
 None – see Data Inputs.
 

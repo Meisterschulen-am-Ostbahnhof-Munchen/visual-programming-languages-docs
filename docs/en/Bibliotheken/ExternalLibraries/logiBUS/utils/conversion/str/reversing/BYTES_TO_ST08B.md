@@ -11,7 +11,8 @@ This function block combines eight individual byte values into a single 8-byte s
 * Connects the activation of the function block to the data inputs: `IN_00`, `IN_01`, `IN_02`, `IN_03`, `IN_04`, `IN_05`, `IN_06`, `IN_07`.
 * Triggers the conversion of the input bytes to the `ST08B` structure.
 
-``` ### **Event Outputs**
+```
+### **Event Outputs**
 
 * **CNF** (Type: `Event`)
 * Triggered after successful conversion.

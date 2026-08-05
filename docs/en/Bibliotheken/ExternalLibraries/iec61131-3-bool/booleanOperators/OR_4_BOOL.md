@@ -23,7 +23,8 @@ The function block `OR_4_BOOL` is a standard function block for calculating the 
 ### **Adapters**
 This function block does not have any adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 When the event `REQ` occurs, the current values at the four Boolean inputs `IN1`, `IN2`, `IN3`, and `IN4` are read. The function block calculates the logical OR of these four values according to the following rule:
 
 The result `OUT` is `TRUE` (1) if at least one of the four inputs is `TRUE`. The result is `FALSE` (0) only if all four inputs are `FALSE`.
@@ -42,7 +43,8 @@ The function block has no internal state (memory-free). Its behavior is combinat
 * **Linking of Alarm Signals**: Combining multiple status or fault alarms where a single signal should trigger an action (e.g., "Stop machine if sensor A OR sensor B OR emergency stop is activated").
 * **Logic in Safety Controllers**: Implementing OR gates in safety circuits.
 * **Simplifying Control Logic**: As a clearly defined building block for structuring programs in function block diagrams (FBDs) or sequenced function charts (SFCs).
-* ## ⚖️ Comparison with similar function blocks
+*
+## ⚖️ Comparison with similar function blocks
 * **`OR_2_BOOL` / `OR_8_BOOL`**: These blocks perform the identical logical OR operation, but with a different number of inputs (2 and 8, respectively). The choice of function block depends on the required number of signals to be combined. See: [OR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_4.md)
 * **`AND_4_BOOL`**: Performs a logical AND operation. The result is only `TRUE` if *all* inputs are `TRUE`.
 * **`XOR_4_BOOL`**: Performs an exclusive OR (XOR) operation. The result is `TRUE` if there is an odd number of inputs, and `TRUE` if there is an odd number of inputs.

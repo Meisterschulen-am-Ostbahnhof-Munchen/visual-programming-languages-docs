@@ -25,7 +25,8 @@ No adapter interfaces are available.
 ## Functionality
 Upon receiving a REQ event, the F_LN block calculates the natural logarithm (ln) of the value passed to IN. The result is output to OUT, and simultaneously, a CNF event is generated to signal the successful completion of the operation.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports the ANY_REAL data type, which includes various numeric data types such as REAL, LREAL, etc.
 - Implemented according to the IEC 61131-3 standard for numeric functions
 - Real-time execution with event-driven control

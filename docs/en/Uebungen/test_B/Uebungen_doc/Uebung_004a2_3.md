@@ -74,6 +74,7 @@ The circuit flow is as follows:
 
 * The data signal `Q` (TRUE/FALSE) is sent to the data input `OUT` of the output block `DigitalOutput_Q1`.
 * Simultaneously, the event output `EO` of the flip-flop triggers the `REQ` input of the output block to update the physical output.
-* ## Summary
+*
+## Summary
 
 In the exercise `Uebung_004a2_3`, a classic push-button circuit with two operating points is implemented. Learning objectives include working with the `E_MERGE` function block for bundling event signals and using the `E_T_FF` (toggle flip-flop) for state storage. Furthermore, it is demonstrated how specific push-button events (here: single click) are processed in the LogiBUS library.

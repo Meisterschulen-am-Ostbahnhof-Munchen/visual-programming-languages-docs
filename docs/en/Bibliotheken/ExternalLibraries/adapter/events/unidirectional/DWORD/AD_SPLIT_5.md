@@ -43,7 +43,8 @@ None available. Outputs are exclusively via the adapter plugs.
 
 This component does not have event or data ports in the conventional sense. Instead, an incoming adapter `IN` is passed through to all five outgoing adapters `OUT1` to `OUT5`. This means that changes or events transmitted via the input adapter are passed to all five outputs simultaneously. This multiplication occurs without any logical processing or delay.
 
-# Functionality ## Technical Features
+# Functionality
+## Technical Features
 - **Generic Type**: The function block is implemented as a generic component (attribute `eclipse4diac::core::GenericClassName = 'GEN_AD_SPLIT'`). This allows it to be used in various contexts with the adapter type `adapter::types::unidirectional::AD`.
 - **No State Machine**: The block does not have an ECC (Execution Control Chart) and operates purely in a data flow-driven manner. It does not perform any data storage operations.
 - **Unidirectional Adapters**: All adapters are unidirectional, meaning data flows in only one direction – from the socket to the plugs.

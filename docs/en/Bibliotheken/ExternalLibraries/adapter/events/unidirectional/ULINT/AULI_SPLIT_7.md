@@ -47,7 +47,8 @@ Plug (Output) | OUT5 | `adapter::types::unidirectional::AULI` | Fifth Output |
 
 This module forwards the AULI signal present at socket **IN** unchanged to all seven plugs **OUT1** through **OUT7**. No signal processing, filtering, or delay takes place. Each output receives the same signal sequence simultaneously as the input. The distribution is handled purely by the circuitry and signal processing within the 4diac IDE; no calculations or state changes are required.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Function Block:** The function block is declared as a generic type (`GEN_AULI_SPLIT`) and uses the attribute `eclipse4diac::core::GenericClassName` for type-safe adapter assignment.
 - **Unidirectional Adapter:** Both input and output are based on the adapter type `adapter::types::unidirectional::AULI`, which supports only one direction of data flow.

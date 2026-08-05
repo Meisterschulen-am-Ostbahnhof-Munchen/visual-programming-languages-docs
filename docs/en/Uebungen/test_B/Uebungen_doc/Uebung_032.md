@@ -1,7 +1,8 @@
 # Exercise_032: LED Strip Flashing LED
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_032`. It uses pre-configured color blocks for LED strips.
-``` ## 📺 Video
+```
+## 📺 Video
 ![Uebung_032_network](./Uebung_032_network.svg)
 
 * [The ESP32-S3-DevKitC-1](https://www.youtube.com/watch?v=fyQt3THIQEQ)

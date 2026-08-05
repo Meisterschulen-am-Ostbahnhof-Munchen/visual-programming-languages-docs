@@ -20,7 +20,8 @@ This exercise implements a simple pass-through from four digital inputs (I1–I4
 - Bypass_Valve: QI = `TRUE`; Output = `Output_Q8`
 - **Function**: Outputs the digital signal to the corresponding logiBUS output.
 
-``` #### BYPASS_AX_x (x=1..4)
+```
+#### BYPASS_AX_x (x=1..4)
 - **Type**: `logiBUS::signalprocessing::bypass::BYPASS_AX_AX`
 - **Parameters**: none (pure adapter connections)
 - **Event output/input**: none
@@ -31,7 +32,8 @@ This exercise implements a simple pass-through from four digital inputs (I1–I4
 
 In this exercise, the bypass paths are cascaded, so the bypass of the first block feeds the bypass of the second, and so on. This allows the entire signal flow to be redirected through the bypass chain to the common valve (Bypass_Valve).
 
-``` ## Program Flow and Connections
+```
+## Program Flow and Connections
 
 All connections are made via **adapter connections** (no data or event connections):
 

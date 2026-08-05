@@ -39,7 +39,8 @@ Parameterized with `Output_Q56`. This output activates the common low-side switc
 
 The exact logic (e.g., edge processing or delay) is determined by the manufacturer of the sub-component.
 
-``` ## Program Flow and Connections
+```
+## Program Flow and Connections
 
 1. **Digital Inputs**: The sensors at `Input_I1` and `Input_I2` are provided as adapter signals via `DigitalInput_I1` and `DigitalInput_I2`.
 

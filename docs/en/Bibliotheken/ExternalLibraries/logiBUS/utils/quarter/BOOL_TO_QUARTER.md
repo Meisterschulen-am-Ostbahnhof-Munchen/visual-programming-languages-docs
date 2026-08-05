@@ -64,7 +64,8 @@ The block does not have an internal state in the sense of a memory. It behaves p
 * **Actuator Control**: Conversion of a simple enable signal (`BOOL`) into a device-specific enable/disable command, which is sent as a byte via a fieldbus protocol.
 * **Interface Adaptation**: Connection of logic blocks that work with BOOL values to control components that expect commands in quarter-byte format.
 * **Code Standardization**: Ensuring that the same centrally defined constants for enable/disable commands are always used in a project.
-* ## ⚖️ Comparison with similar building blocks
+*
+## ⚖️ Comparison with similar building blocks
 * **`BOOL_TO_BYTE`**: A generic converter that typically maps `TRUE` to `1` and `FALSE` to `0`. `BOOL_TO_QUARTER` is more specialized and uses project-specific, semantic constants instead of numeric values.
 * **Direct assignment**: The functionality could also be replicated by direct assignment in ST code (`QB := I`), but this would eliminate the advantages of centralized constant definition and a clear interface (events).
 

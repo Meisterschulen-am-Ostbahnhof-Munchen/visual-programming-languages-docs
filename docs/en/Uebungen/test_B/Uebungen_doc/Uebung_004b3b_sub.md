@@ -16,7 +16,8 @@ The sub-application contains two function blocks:
 - **Data Input**: `G` (BOOL – Control Signal)
 - **Functionality**: The This function block forwards an incoming event to `EO0` if the data value `G` is TRUE; otherwise, it forwards it to `EO1`. It functions as a conditional event gateway.
 
-``` ### E_SR (IEC 61499 Set-Reset Flip-Flop)
+```
+### E_SR (IEC 61499 Set-Reset Flip-Flop)
 
 - **Type**: `iec61499::events::E_SR`
 - **Internal Function Blocks Used** (no further sub-blocks present)

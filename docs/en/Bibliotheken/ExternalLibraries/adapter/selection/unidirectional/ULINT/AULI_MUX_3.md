@@ -49,7 +49,8 @@ If `K` assumes an invalid value outside the range 0 to 2, the behavior is unspec
 
 If `K` assumes an invalid value outside the range 0 to 2, the behavior is unspecified – this should be avoided by the application logic.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Type**: The function block (FB) is marked as generic (`GEN_AULI_MUX`), so it can be used for various AULI data types or structures, provided the adapter definition allows it.
 - **Unidirectional Adapter**: All adapters are unidirectional (`adapter::types::unidirectional::AULI`), meaning that data flows in only one direction (from the socket to the plug).

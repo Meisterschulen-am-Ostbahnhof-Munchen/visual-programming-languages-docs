@@ -53,7 +53,8 @@ Socket | `IN3`| `adapter::types::unidirectional::AUDI` | Third input adapter (sw
 
 The function block operates in an event-driven manner. As soon as the event `REQ` occurs, the current value of the data input `K` is evaluated. This value can be 0, 1, or 2. The function block then forwards the data and event interface of the corresponding socket adapter (`IN1`, `IN2`, or `IN3`) to the plug adapter `OUT`. The acknowledgment event `CNF` is then sent. The switchover occurs immediately, without traversing an internal state machine. The function block is implemented as a generic function block (`GenericClassName = 'GEN_AUDI_MUX'`), meaning it can be instantiated for any adapter type, as long as they use the `AUDI` type.
 
-The acknowledgment event `CNF` is then sent. The switchover occurs immediately, without passing through an internal state machine. ## Technical Features
+The acknowledgment event `CNF` is then sent. The switchover occurs immediately, without passing through an internal state machine.
+## Technical Features
 
 - **Generic Type**: The function block is declared as `generic FB`, which means that the specific adapter type can be determined at runtime. In the current configuration, the adapter type `adapter::types::unidirectional::AUDI` is used.
 - **Index Range**: The index `K` is defined as `UINT`; however, only the values 0, 1, and 2 are processed meaningfully. Values outside this range lead to undefined behavior.

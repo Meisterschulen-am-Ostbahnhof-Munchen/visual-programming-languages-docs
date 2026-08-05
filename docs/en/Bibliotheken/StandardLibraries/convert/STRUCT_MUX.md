@@ -32,7 +32,8 @@ The image above illustrates this exact case.
 
 The image above illustrates this exact case.
 
-... ### **Data Outputs**
+...
+### **Data Outputs**
 
 - **OUT** (Type: `ANY_STRUCT`): The output data structure, which is assembled from the values of the inputs.
 

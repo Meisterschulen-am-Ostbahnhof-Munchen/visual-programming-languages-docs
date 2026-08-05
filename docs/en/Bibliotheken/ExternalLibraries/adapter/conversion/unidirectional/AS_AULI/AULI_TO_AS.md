@@ -28,7 +28,8 @@ The module does not have separate event or data ports at the top level. All comm
 ### **Data Outputs (via adapter)**
 - `AS_OUT.D1` – Conversion result as a SINT value (value range −128 … 127).
 
-### ## Functionality
+#
+## ## Functionality
 The module internally uses the IEC 61131 conversion function `F_ULINT_TO_SINT`. When the input adapter receives the event `E1`, the current value of `AULI_IN.D1` is read and converted. The result is then passed to `AS_OUT.D1`, simultaneously triggering the event `AS_OUT.E1`.
 
 The processing is purely event-driven and occurs without intermediate storage of internal states.
@@ -46,7 +47,8 @@ The block does not have an explicit state machine or internal state registers. I
 - **Sensor Integration:** A sensor delivers data in ULINT format, but a downstream module expects SINT values (e.g., for a simple display or threshold logic).
 - **Protocol Adaptation:** Heterogeneous automation systems where adapters use different data types can be connected using this function block in a type-compatible manner.
 - **Data Reduction:** Targeted conversion of large numerical ranges into smaller formats to save memory or bus bandwidth (at the expense of accuracy).
-- **Sensor Integration:** ## Comparison with Similar Function Blocks
+- **Sensor Integration:**
+## Comparison with Similar Function Blocks
 - **`AULI_TO_INT`** – Converts to `INT` (16-bit, -32768 … 32767), larger value range than SINT, but still lossy with large numbers.
 - **`AULI_TO_DINT`** – Converts to `DINT` (32-bit, -2³¹ … 2³¹−1), covers a significantly larger portion of the ULINT range and is the better choice for many applications.
 - **`ULINT_TO_SINT` (direct)** – A simple function block without adapter encapsulation; `AULI_TO_AS` provides the same service in an adapter-based environment.

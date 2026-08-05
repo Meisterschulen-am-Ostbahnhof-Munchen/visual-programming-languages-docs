@@ -11,7 +11,8 @@ The function block `F_DT_TO_TOD` converts a date and time value (DT) into a pure
 ### **Event Outputs**
 - **CNF**: Signals the successful completion of the conversion.
 
-### ### **Data Inputs**
+#
+## ### **Data Inputs**
 - **IN**: The input of type `DT`, containing the date and time value to be converted.
 
 ### **Data Outputs**

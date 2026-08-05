@@ -56,7 +56,8 @@ This function block encapsulates the internal function block `E_D_FF_ANY_TMIN`, 
 - There must be at least `EO` time between two consecutive events. If another clock cycle occurs during this lock time, the data value is latched, but the output is only released after the lock time has expired.
 - The event `INITO` confirms the completion of the initialization process.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Adapter Interface:** Input and output are handled via unidirectional adapters of type `AI`. These enable loose coupling and easy reuse of the function block in different environments.
 - **Minimum Output Time:** The parameter `Tmin` allows for targeted limitation of the event rate at the output. This prevents downstream components from being overloaded by excessively rapid event sequences.

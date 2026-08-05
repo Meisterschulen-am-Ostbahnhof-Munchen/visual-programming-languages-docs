@@ -21,7 +21,8 @@ The `E_MOVE` block (Event-driven Move) is a data latch that filters the transmis
 ### **Data Outputs:**
 - **OUT**: The last changed value corresponding to the input value (Data type: `ANY`).
 
-### ## Functionality
+#
+## ## Functionality
 
 1. **Event Receipt**: The function block waits for an event at input `REQ`.
 

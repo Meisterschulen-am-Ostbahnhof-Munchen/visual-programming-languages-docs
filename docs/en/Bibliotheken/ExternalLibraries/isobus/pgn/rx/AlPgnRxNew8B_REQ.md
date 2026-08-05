@@ -73,7 +73,8 @@ Typical applications are in agricultural or mobile machinery control (ISO 11783 
 
 Compared to generic CAN receive blocks, `AlPgnRxNew8B_REQ` is specifically tailored to the ISOBUS protocol and its PGN concept. It abstracts the low-level CAN details (such as ID filtering) and provides a clean interface at the PGN level. Blocks like `E_CYCLE` or `E_DELAY` could be used to implement periodic requests, while `AlPgnRxNew8B_REQ` itself only handles single requests.
 
-``` ## 🛠️ Related Exercises
+```
+## 🛠️ Related Exercises
 
 * [Exercise_132](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
 

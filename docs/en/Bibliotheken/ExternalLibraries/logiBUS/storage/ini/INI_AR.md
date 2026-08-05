@@ -10,7 +10,8 @@ The INI_AR function block is used to load and save real data from a settings.ini
 ### **Event Outputs**
 - `INITO` (EInit): Initialization confirmation. Sent after a successful read or write operation.
 
-### ### **Data Inputs**
+#
+## ### **Data Inputs**
 - `QI` (BOOL): Qualifier for the event input.
 - `SECTION` (STRING): Name of the section in the INI file.
 - `KEY` (STRING): Name of the key within the section.

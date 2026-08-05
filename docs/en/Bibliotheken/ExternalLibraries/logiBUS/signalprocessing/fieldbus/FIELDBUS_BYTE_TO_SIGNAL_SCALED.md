@@ -79,7 +79,8 @@ The initial value of `IN` is `NOT_AVAILABLE_B` – another imported constant val
 - The input `IN` is first converted from `BYTE` to `USINT` (unsigned short integer) to obtain an integer range of 0…255.
 - The block has an explicit initialization mode (`INIT`) that allows the scaling and offset to be reset at runtime.
 
-``` ## State Overview
+```
+## State Overview
 
 The function block has two simple states, each activated by the corresponding event:
 

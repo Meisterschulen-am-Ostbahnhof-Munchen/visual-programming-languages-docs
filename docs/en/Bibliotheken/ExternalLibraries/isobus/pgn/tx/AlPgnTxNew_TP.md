@@ -33,7 +33,8 @@ The function block **AlPgnTxNew_TP** is used to transmit data over the ISOBUS/CA
 ### **Adapters**
 * This function block does not use any explicit adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 
 The module operates in two main phases:
 
@@ -71,7 +72,8 @@ The function block has internally implicit states defined by the availability of
 * **AlPgnTx vs. AlPgnTxNew_TP:** While older or simpler versions may only support static PGNs, the "New_TP" suffix indicates a revised version that may offer better support for transport protocols (TP) or utilize more modern memory management (via `InOut` variables).
 * **Standard CAN_WRITE:** Compared to a generic `CAN_WRITE` function block, `AlPgnTxNew_TP` abstracts the complexity of PGN management (priority, data length, handle management) and is more specifically tailored to the J1939/ISOBUS protocol.
 * **Standard CAN_WRITE:** Compared to a generic `CAN_WRITE` function block, `AlPgnTxNew_TP` abstracts the complexity of PGN management (priority, data length, handle management) and is more specifically tailored to the J1939/ISOBUS protocol.
-* ## 🛠️ Related Exercises
+*
+## 🛠️ Related Exercises
 * [Exercise_128b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)]
 
 ## Conclusion

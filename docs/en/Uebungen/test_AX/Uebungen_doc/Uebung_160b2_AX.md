@@ -5,7 +5,8 @@ Here is the documentation for exercise `Uebung_160b2_AX` based on the provided f
 ## Introduction
 Exercise **Exercise_160b2_AX** implements a control system for a motor with forward and reverse rotation functionality using adapter technology (AX/IXA/QXA). The focus is on a safe switching of the direction of rotation, with a dead time (delay) implemented to protect the motor and the mechanics during the change of direction. Additionally, the operating status is signaled via outputs.
 
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 This sub-application uses various function blocks from the `logiBUS` and `adapter` libraries to process the input/output signals and establish the logical connections.
 
@@ -85,7 +86,8 @@ The circuit implements a classic reversing contactor control with a special feat
 
 * The signals from both directions of rotation (coming from splitters A and B) are combined in the **AX_OR_2** function block.
 * As soon as either Q5 or Q6 is active, **Output_Q56** is activated. This serves as an indicator that the motor is running.
-* ## Summary
+*
+## Summary
 
 The `Uebung_160b2_AX` demonstrates advanced motor control using adapter blocks. It shows how to duplicate signals using splitters (`AX_SPLIT_2`) to perform simultaneous actions (resetting one side, starting the timer for the other). The integrated safety logic using `AX_TON` prevents an immediate reversal of direction, thus protecting the connected hardware. This exercise is ideal for deepening your understanding of sequential control and signal routing in 4diac.
 

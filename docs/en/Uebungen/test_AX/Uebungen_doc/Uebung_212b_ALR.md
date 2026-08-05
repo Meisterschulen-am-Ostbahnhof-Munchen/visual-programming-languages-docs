@@ -15,7 +15,8 @@ This exercise implements an up counter (CTU) according to IEC 61131-3 as an adap
 - **Outputs**: `Q` (target reached), `CV` (current counter value, type LINT)
 - **Functionality**: This module is a forward counter for LINT values. Each rising edge at the `CU` input increments the internal counter by 1. A signal at the `R` input resets the counter to 0. The output `Q` becomes TRUE as soon as the current counter reading reaches at least the value of `PV`. The current counter reading is available at output `CV`.
 
-``` #### **ALI_LINT_TO_LI**
+```
+#### **ALI_LINT_TO_LI**
 - **Type**: `adapter::conversion::unidirectional::ALI_LINT_TO_LI`
 - **Parameters**:
 - `OUT` = `LINT#5` (constant preset value)
@@ -25,7 +26,8 @@ This exercise implements an up counter (CTU) according to IEC 61131-3 as an adap
 - **Output**: `ALI_OUT` (supplies the constant value 5 as an ALI signal to the `PV` input of the counter)
 - **Functionality**: This function block Converts a constant LINT value to the ALI format, which the counter expects as a preset input. The output is updated when an event occurs at the `REQ` input (here, only once during initialization).
 
-Converts a constant LINT value to the ALI format, which the counter expects as a preset input. #### **Input_CU**
+Converts a constant LINT value to the ALI format, which the counter expects as a preset input.
+#### **Input_CU**
 
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**:
@@ -47,7 +49,8 @@ Converts a constant LINT value to the ALI format, which the counter expects as a
 - **Output**: `IN` (adapter, supplies the reset signal to the `R` input of the counter)
 - **Functionality**: Reads The state of the digital input `Input_I2` is monitored and provided as an adapter signal for the counter reset. The `INITO` event output is used for the one-time initialization of the preset value.
 
-The system monitors the state of the digital input `Input_I2` and provides it as an adapter signal for the counter reset. #### **Output_Q1**
+The system monitors the state of the digital input `Input_I2` and provides it as an adapter signal for the counter reset.
+#### **Output_Q1**
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
 - **Parameters**:

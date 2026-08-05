@@ -44,10 +44,12 @@ The function block has no persistent internal state. It behaves like a pure func
 * **ISOBUS Device Identification:** In an ISOBUS network manager that needs to decode incoming NAME data from connected ECUs to identify device type, manufacturer, and instance.
 * **Diagnostics and Logging:** For clear display and logging of device names in a human-readable, structured format instead of the raw 8-byte value.
 * **Filtering and Addressing:** As a preprocessing step to make decisions about further communication based on specific fields (such as device class or manufacturer code).
-* **ISOBUS Device Identification:** ## ⚖️ Comparison with Similar Components
+* **ISOBUS Device Identification:**
+## ⚖️ Comparison with Similar Components
 * **Counterpart `NmGetIsoName`:** A hypothetical complementary component would perform the reverse operation: It would take a `NAMEFIELD_T` structure as input and generate the corresponding 8-byte `CF_NAME_T` array. `NmSetNameField` is the decoder; its counterpart would be the encoder.
 * **Generic Byte Parsers:** Unlike generic byte-to-structure converters, this block is specifically tailored to the ISO NAME format and contains the exact bit logic of the standard. Using this specialized block reduces errors and increases maintainability in the ISOBUS context.
-* ## 🛠️ Related Exercises
+*
+## 🛠️ Related Exercises
 * [Exercise_120](../../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)]
 * [Exercise_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)]
 * [Exercise_122](../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)]

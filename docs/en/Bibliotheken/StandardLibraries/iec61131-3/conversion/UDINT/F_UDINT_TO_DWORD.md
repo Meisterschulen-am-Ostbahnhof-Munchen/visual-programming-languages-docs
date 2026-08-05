@@ -21,7 +21,8 @@ The function block `F_UDINT_TO_DWORD` converts a `UDINT` value (32-bit unsigned 
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 When the `REQ` event is triggered, the input value `IN` of type `UDINT` is converted to a `DWORD` value and output `OUT`. The `CNF` event signals the successful completion of the conversion.
 
 The underlying algorithm is implemented in Structured Text (ST):

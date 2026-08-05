@@ -26,7 +26,8 @@ The function block performs the conversion as soon as the event `REQ` is trigger
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The function block uses the function `DWORD_AS_STRING` for conversion.
 - The conversion occurs synchronously with the triggering of the `REQ` event.
 

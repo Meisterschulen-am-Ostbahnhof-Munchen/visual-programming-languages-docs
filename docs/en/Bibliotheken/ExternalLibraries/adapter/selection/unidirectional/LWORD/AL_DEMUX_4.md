@@ -65,7 +65,8 @@ The index `K` is interpreted as an integer value in the range 1 to 4. Values out
 
 The index `K` is interpreted as an integer value in the range 1 to 4. Values outside this range do not result in any signal transfer and do not trigger the event `CNF` (or the behavior is implementation-dependent).
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Adapter Type:** The function block is defined for the unidirectional adapter `AL`. The generic property (`GenericClassName`) allows the type to be extended to other unidirectional adapters.
 - **Fixed Number of Outputs:** The architecture provides exactly four output adapters. Scaling to other channel numbers requires adjusting the function block type.

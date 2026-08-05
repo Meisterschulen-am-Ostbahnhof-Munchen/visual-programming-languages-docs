@@ -28,7 +28,8 @@ No adapters included.
 
 The function block calculates the remainder (DIST_REMAINDER) of the sum of the distance traveled (DIST_IN) and the offset (DIST_OFF) modulo the sum of DIST_HIGH and DIST_LOW. The output Q is set to HIGH if DIST_REMAINDER is greater than or equal to DIST_HIGH; otherwise, it remains LOW.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses UDINT (unsigned double integer) for distance calculations
 - Implements a simple modulo operation for periodic pulse generation
 - Supports an offset value for flexible start positions

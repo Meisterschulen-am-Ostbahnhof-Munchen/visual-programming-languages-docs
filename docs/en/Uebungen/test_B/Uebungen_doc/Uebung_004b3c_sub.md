@@ -32,7 +32,8 @@ No other sub-applications or sub-blocks are included.
 
 The E_SR stores a Boolean state. An event at input `S` sets `Q = TRUE`, an event at input `R` sets `Q = FALSE`. An event is output at output `EO` after each change.
 
-An event is output at input `EO`. #### E_SWITCH_I1 (Event Switch)
+An event is output at input `EO`.
+#### E_SWITCH_I1 (Event Switch)
 - **Type**: `iec61499::events::E_SWITCH`
 - **Parameters**: None set
 - **Event Inputs**: `EI` (Input Event)
@@ -42,7 +43,8 @@ An event is output at input `EO`. #### E_SWITCH_I1 (Event Switch)
 
 An event at input `EI` is either... depending on the value of input `G`... forwarded to `EO0` (for `G = FALSE`) or to `EO1` (for `G = TRUE`).
 
-``` #### AE2_EVENT_TO_E (Adapter: AE2 event → 4diac event)
+```
+#### AE2_EVENT_TO_E (Adapter: AE2 event → 4diac event)
 - **Type**: `adapter::conversion::bidirectional::AE2_EVENT_TO_E`
 - **Parameters**: None set
 - **Event inputs**: `REQ` (Conversion request)
@@ -53,7 +55,8 @@ An event at input `EI` is either... depending on the value of input `G`... forwa
 
 Converts an incoming AE2 adapter event (from the socket) into an internal 4diac event. The `REQ` input must be activated for this to work; after successful conversion, a `CNF` event will be output.
 
-``` #### AE2_E_TO_EVENT (Adapter: 4diac event → AE2 event)
+```
+#### AE2_E_TO_EVENT (Adapter: 4diac event → AE2 event)
 - **Type**: `adapter::conversion::bidirectional::AE2_E_TO_EVENT`
 - **Parameters**: None set
 - **Event inputs**: `REQ` (Request for conversion)

@@ -99,7 +99,8 @@ All states (except `START`) return to `START` with an unconditional transition (
 - **`F_TRIG` / `R_TRIG` / `SR`:** These function blocks set or reset a memory function, but do not forward events. The **ASR_SWITCH** does not create states itself, but only channels existing events.
 - **Adapter-Based Solutions:** In the 4diac IDE, the use of adapters is typical for modular communication – the **ASR_SWITCH** is a prime example of the flexible coupling of function blocks.
 
-** ## Conclusion
+**
+## Conclusion
 
 The **ASR_SWITCH** is a simple yet effective function block for demultiplexing SET/RESET events. Its adapter interface allows for seamless integration into event-based automation solutions. Its clear state logic and minimal interface make it a reliable component for switching between two signal paths.
 

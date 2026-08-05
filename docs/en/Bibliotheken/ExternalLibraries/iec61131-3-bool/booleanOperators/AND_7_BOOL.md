@@ -38,7 +38,8 @@ Immediately after the result is calculated, the confirmation event `CNF` is outp
 
 This function block has no adapter interfaces.
 
-## Operation ## Technical Features
+#
+# Operation ## Technical Features
 * **Generic Block**: This block is marked as a generic block (`GEN_AND`). This means it can serve as a template for the automatic generation of similar blocks with a different number of inputs.
 * **Event-driven**: The operation is only executed when required by an event, which conserves resources and allows for clear control of the flow.
 * **Fixed Number of Inputs**: This specific block has a fixed number of seven inputs. For a different number of operands, a corresponding block (e.g., `AND_2_BOOL`, `AND_4_BOOL`) must be used, or a generic block must be instantiated.

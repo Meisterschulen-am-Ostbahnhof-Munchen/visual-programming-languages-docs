@@ -16,7 +16,8 @@ No data inputs are available. Data is provided via the input adapter.
 ### **Data Outputs**
 No data outputs are available. Data is output via the output adapters.
 
-### ### **Adapters**
+#
+## ### **Adapters**
 - **Socket (Input)**:
 - **IN**: Unidirectional ALR adapter (type `adapter::types::unidirectional::ALR`). Receives the incoming signal.
 - **Plugs (Outputs)**:

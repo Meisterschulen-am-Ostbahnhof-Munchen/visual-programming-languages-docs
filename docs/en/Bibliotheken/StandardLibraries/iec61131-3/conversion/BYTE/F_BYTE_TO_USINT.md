@@ -21,7 +21,8 @@ The function block `F_BYTE_TO_USINT` converts a `BYTE` value to a `USINT` value 
 ### **Adapters**
 No adapters are available.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs the conversion by transforming the `BYTE` value at input `IN` into a `USINT` value and providing the result at output `OUT`. The conversion occurs synchronously with the triggering of the `REQ` event and is confirmed by the `CNF` event.
 

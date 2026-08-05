@@ -133,7 +133,8 @@ If an assignment (in ST) or a connection (in the FB network) is not implicitly a
 
 * **In Structured Text (ST):** Use a conversion function of the form `[SOURCE_TYPE]_TO_[TARGET_TYPE]` (e.g., `DINT_TO_UDINT`).
 * **In the graphical FB network:** Insert the corresponding conversion function block (e.g., block `DINT_TO_UDINT`) between the output and input.
-* ### ⚠️ Important Special Case: Bit Strings to Numeric Types (reinterpret_cast)
+*
+### ⚠️ Important Special Case: Bit Strings to Numeric Types (reinterpret_cast)
 
 In FORTE / 4diac, conversions of bit strings (such as `DWORD`, `WORD`, `BYTE`) to numeric types (`REAL`, `INT`, `DINT`, etc.) are performed at the bit level **`reinterpret_cast`**. This means that the bit patterns are copied directly without adjusting the mathematical value. This applies equally to ST function calls and graphical conversion blocks.
 
@@ -163,7 +164,8 @@ If `DWORD` directly contains the raw bit pattern of a floating-point number (e.g
 * *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
 * *In the FB network:* Insert the conversion block `DWORD_TO_REAL`.
 * *Explanation:* Here, the direct cast via `reinterpret_cast` is exactly what's needed to interpret the raw bits directly as a floating-point number.
-* ## Type Conversions (Casting)
+*
+## Type Conversions (Casting)
 
 ### Direct Bit-String-to-Floating-Point Conversions
 

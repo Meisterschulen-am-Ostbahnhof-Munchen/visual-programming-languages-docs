@@ -22,7 +22,8 @@ This exercise demonstrates the use of an analog input to control a PWM output vi
 
 Read analog value as adapter
 
-**Functionality**: Reads the analog input value of the connected logiBUS module. The parameter `AnalogInput_hysteresis` reduces signal noise. ### Sub-Blocks: PWMOutput\_Q4
+**Functionality**: Reads the analog input value of the connected logiBUS module. The parameter `AnalogInput_hysteresis` reduces signal noise.
+### Sub-Blocks: PWMOutput\_Q4
 - **Type**: `logiBUS::io::DQ::logiBUS_QDA_PWM`
 - **Internal Function Blocks Used**: None (Hardware Driver Block)
 - **Parameters**:
@@ -34,7 +35,8 @@ Read analog value as adapter
 - Adapter input `OUT` (receives the adapter with the PWM setpoint)
 - **Functionality**: Controls the digital output channel Q4 as a PWM output. The value received via the adapter input `OUT` determines the duty cycle (pulse width). The output is activated by the event `INIT`.
 
-``` ### Sub-Blocks: AD\_SHL
+```
+### Sub-Blocks: AD\_SHL
 - **Type**: `adapter::iec61131::bitwise::AD_SHL`
 - **Internal Function Blocks Used**: None (pure logic)
 - **Parameters**:

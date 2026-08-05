@@ -5,7 +5,8 @@
 ## Introduction
 The **F_TRUNC** function block is a standards-compliant function block for rounding floating-point numbers toward zero, developed under the EPL-2.0 license. Version 1.0 enables type-safe conversion according to the IEC 61131-3 standard.
 
-* ## Interface Structure
+*
+## Interface Structure
 
 ### **Event Inputs**
 - `REQ`: Calculation request (with input value)

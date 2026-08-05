@@ -23,7 +23,8 @@ The data type `AuxiliaryState_S` is a structured data structure (struct) that re
 ## Functionality
 This data type serves as a container for information about an auxiliary input. The field `value` stores the actual, read value. The initial value of 255 can represent an invalid or undefined state. The field `bCyclic` is a control flag that influences the transmission behavior in an ISOBUS network. According to the comment, when `bCyclic = TRUE` is set, the corresponding message is sent cyclically every 200 milliseconds by default. If `bCyclic` is set to `FALSE`, this regular repetition is omitted, which can reduce network traffic if the value does not change frequently.
 
-``` ## Technical Features
+```
+## Technical Features
 * **ISOBUS Context:** This data type is specifically designed for ISOBUS communication (package `isobus::UT::io::Auxiliary::IN`).
 * **Cycle Control:** The integrated cyclic control (`bCyclic`) is a characteristic feature that takes bus communication efficiency into account.
 * **Initial Values:** Both fields have defined initial values (`value=255`, `bCyclic=TRUE`), ensuring deterministic initialization.

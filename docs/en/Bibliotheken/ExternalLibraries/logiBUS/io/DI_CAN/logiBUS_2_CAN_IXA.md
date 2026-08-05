@@ -30,7 +30,8 @@ The logiBUS_2_CAN_IXA is a composite function block for processing Boolean input
 
 The composite function block internally uses the logiBUS_2_CAN_IX module to process CAN-based input data. During INIT initialization, the service parameters are passed and the module is configured. Input data can be queried via the REQ event. Processing is performed via the IN adapter, which enables communication with CAN input devices.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses specific logiBUS data types for CAN communication
 - Supports up to 8 digital inputs (Input_Q1 to Input_Q8)
 - Initial value for input is "Invalid"

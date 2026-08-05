@@ -41,7 +41,8 @@ The goal is to understand the interaction of monostable elements (R_IO) with har
 - **Output `OUT`**: Controlled state (1 = set, 0 = reset)
 - **Functionality**: The output `OUT` is set as soon as a rising edge is present at the input `IN`. It remains set until a signal arrives at the `RESET1` input (active high). This is implemented using a simple RS flip-flop. The network comment indicates: "If nothing is connected to RESET1, the module is functional." This means that without a reset, the output remains permanently enabled after being set once.
 
-``` ### Sub-module: AX_SPLIT_2 (Signal Distributor)
+```
+### Sub-module: AX_SPLIT_2 (Signal Distributor)
 
 - **Type**: `adapter::events::unidirectional::AX_SPLIT_2`
 - **Used as**: `AX_SPLIT_2`

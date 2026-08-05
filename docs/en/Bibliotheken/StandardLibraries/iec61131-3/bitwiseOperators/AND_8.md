@@ -20,7 +20,8 @@ The function block `AND_8` performs a bitwise logical AND operation on up to eig
 ### **Adapters**
 The function block does not have any adapters.
 
-### **Adapters** ## Functionality
+#
+## **Adapters** ## Functionality
 
 The `AND_8` block performs a bitwise AND operation on the values of all active inputs (`IN1` to `IN8`). The result is output at `OUT`. The operation is initiated by the event `REQ` and acknowledged by `CNF`.
 

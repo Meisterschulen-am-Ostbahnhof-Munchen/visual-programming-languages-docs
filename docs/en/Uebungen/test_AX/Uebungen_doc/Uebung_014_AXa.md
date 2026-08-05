@@ -28,7 +28,8 @@ This exercise demonstrates controlling the visibility of a container (object) us
 - Output: `Q` (State)
 - **Functionality**: A set-reset flip-flop. An event on `S` sets the output `Q` to TRUE; an event on `R` resets it to FALSE. The state is retained until the next event occurs.
 
-``` ### Q_ObjHideShow (Type: isobus::UT::Q::Q_ObjHideShow_AX)
+```
+### Q_ObjHideShow (Type: isobus::UT::Q::Q_ObjHideShow_AX)
 - **Parameters**:
 - `u16ObjId` = Container_B
 - **Adapter Connection**: `qVisible` (Adapter input, expects a Boolean value)

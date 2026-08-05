@@ -2,7 +2,8 @@
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates processing a string input from an ISOBUS source and saving and retrieving the value to/from the non-volatile memory (NVS) of an ESP32. All the logic is organized in a self-contained subapp, promoting reusability and modularity. The goal is to implement robust storage of configuration data or user input that persists even after a reboot.
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 ### Sub-Block: Uebung_012m_sub
 - **Type**: `SubAppType` (custom SubApp)
@@ -47,7 +48,8 @@ The subapp `Uebung_012m_sub` encapsulates the entire process: reading a string v
 
 4. Simultaneously, with each read operation (`NVS.GETO`), the retrieved value is sent to the ISOBUS bus via `Q_StringValue.REQ`, enabling other devices to query the current value.
 
-4. Simultaneously, with each read operation (`NVS.GETO`), the retrieved value is sent to the ISOBUS bus, allowing other devices to query the current value. ## Program Flow and Connections
+4. Simultaneously, with each read operation (`NVS.GETO`), the retrieved value is sent to the ISOBUS bus, allowing other devices to query the current value.
+## Program Flow and Connections
 
 The main subapp `Uebung_012m` instantiates `Uebung_012m_sub` and provides it with two parameters:
 

@@ -15,7 +15,8 @@ The function block `F_LWORD_AS_WSTRING` is used to convert an LWORD data type to
 ### **Data Inputs**
 - **IN**: Input variable of type LWORD containing the value to be converted.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 - **OUT**: Output variable of type WSTRING containing the converted value.
 
 #### **Adapters**

@@ -31,7 +31,8 @@ The function block does not have direct event inputs. All control events are rec
 *Note: **CU.E1** – Count Down event
 *Note: **CU.E1** – Count Down event
 *Note: **CU.E1** – Count Down event
-*CT ... ### **Event Outputs**
+*CT ...
+### **Event Outputs**
 
 - **CNF** (Event) – Execution Confirmation
 

@@ -69,7 +69,8 @@ No data outputs. Values are forwarded exclusively via the adapter interfaces.
 
 **IN4** | Socket | `adapter::types::unidirectional::AE` | Input 4 (K = 3) |
 
-**IN1** | Socket | `adapter::types::unidirectional::AE` | ## Functionality
+**IN1** | Socket | `adapter::types::unidirectional::AE` |
+## Functionality
 
 The module operates in an event-driven manner:
 

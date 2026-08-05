@@ -21,7 +21,8 @@ The function block `F_DWORD_TO_SINT` converts a 32-bit DWORD value to an 8-bit S
 ### **Adapters**
 This function block does not have any adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 When the `REQ` event is triggered, the algorithm that converts the `IN` value of type DWORD into a SINT value is executed. The conversion is performed by the built-in function `DWORD_TO_SINT`. After the conversion is complete, the `CNF` event is triggered, and the converted value is available at the `OUT` output.
 
 ## Technical Features

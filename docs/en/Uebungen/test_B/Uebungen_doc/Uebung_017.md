@@ -1,7 +1,8 @@
 # Exercise_017: Control Audio Signal
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_017`. This exercise demonstrates how to control the internal buzzer of the ISOBUS terminal to provide audible feedback.
-``` ## 🎧 Podcast
+```
+## 🎧 Podcast
 ![Uebung_017_network](./Uebung_017_network.svg)
 
 * "Store Version" – Your Key to Managing Object Data Pools in Non-Volatile Virtual Terminal Memory (ISO 11783-6) ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/Store-Version--Dein-Schlssel-zur-Verwaltung-von-Objektdatenpools-im-nichtflchtigen-VT-Speicher-ISO-11783-6-e36vfh0)

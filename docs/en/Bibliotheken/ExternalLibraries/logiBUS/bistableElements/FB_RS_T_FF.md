@@ -42,7 +42,8 @@ The function block `FB_RS_T_FF` implements a bistable, reset-dominant latch with
 ### **Adapters**
 This function block has no adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 The following algorithm is executed for each event `REQ`:
 
 - **Reset dominant**: If `R1 = TRUE` occurs, `Q1` is immediately set to `FALSE` – regardless of any other inputs.

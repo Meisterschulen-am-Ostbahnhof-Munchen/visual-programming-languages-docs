@@ -18,7 +18,8 @@ The block has no direct event or data interfaces, but only adapter interfaces. T
 ### **Data Outputs**
 - **AUI_OUT.D1** (UINT): Integer output value (0 or 1) corresponding to the converted BOOL input.
 
-### ### **Adapter**
+#
+## ### **Adapter**
 - **AX_IN** (Socket) – Type: `adapter::types::unidirectional::AX` (BOOL)
 - **AUI_OUT** (Plug) – Type: `adapter::types::unidirectional::AUI` (UINT)
 

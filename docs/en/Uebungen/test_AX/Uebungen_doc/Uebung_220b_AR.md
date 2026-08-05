@@ -9,7 +9,8 @@ This exercise implements an up/down counter (CTUD) according to IEC 61131-3 in a
 
 ## Introduction
 
-This exercise implements an up/down counter (CTUD) according to IEC 61131-3 in an adapter version. ## Function Blocks (FBs) Used
+This exercise implements an up/down counter (CTUD) according to IEC 61131-3 in an adapter version.
+## Function Blocks (FBs) Used
 
 - **AI_FB_CTUD**
 - **Type**: `adapter::iec61131::counters::AI_FB_CTUD`

@@ -33,7 +33,8 @@ The function block **AUDI_SPLIT_3** is used to multiply an incoming **AUDI** ada
 ## Functionality
 This module forwards the AUDI signal present at the **IN** socket unchanged to all three **OUT** plugs. No conversion, filtering, or logical processing takes place – the distribution is transparent. The use of adapters of type `unidirectional::AUDI` ensures that the signal direction (input → outputs) is clearly defined.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Implementation**: The function block is implemented as a generic FB (`eclipse4diac::core::GenericClassName = 'GEN_AUDI_SPLIT'`). This allows for easy reuse in different contexts without requiring the specific AUDI type to be fully defined at development time.
 - **Type Hash**: The type hash can be set at runtime if needed to enable static type checking.

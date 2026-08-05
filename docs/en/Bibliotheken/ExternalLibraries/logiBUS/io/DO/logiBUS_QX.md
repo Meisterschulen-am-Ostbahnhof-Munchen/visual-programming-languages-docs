@@ -31,7 +31,8 @@ No adapter interfaces available.
 ## Functionality
 The logiBUS_QX block manages communication with the digital output channels of the logiBUS system. During initialization (INIT event), the service parameters are configured and the specific output channel is identified. Boolean values (OUT) can be sent to the configured output channel via the REQ event. The block acknowledges each operation via the corresponding output events INITO and CNF.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses specific logiBUS data types for output identification
 - Supports up to 8 digital output channels (Q1-Q8)
 - Provides detailed status feedback via the STATUS output

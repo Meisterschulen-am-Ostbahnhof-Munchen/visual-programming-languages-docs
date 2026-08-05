@@ -46,7 +46,8 @@ Because it is a static data type, ``SchieberColorStruct`` itself does not have a
 * **Visualization in HMIs:** Passing the color configuration to visualization components to correctly display the state of a slider using color (e.g., red for "Closed," green for "Open").
 * **Function Block Configuration:** A function block that controls a physical slider can have an instance of this type as a configurable input to enable user-defined colors for state feedback.
 * **Data Encapsulation:** Bundling all state-related color information into a single parameter that can be exchanged between different software modules (e.g., controller and visualization).
-* ## ⚖️ Comparison with Similar Building Blocks
+*
+## ⚖️ Comparison with Similar Building Blocks
 Unlike function blocks (FBs) such as `E_SR` or `E_D_FF`, which implement logic, `SchieberColorStruct` is a pure **data type** (STRUCT). Similar structured types could be, for example, `MotorConfigStruct` (for configuration data) or `AxisPositionStruct` (for multidimensional positions). Its specific function is to define a color scheme for a predefined set of states.
 
 ## Conclusion

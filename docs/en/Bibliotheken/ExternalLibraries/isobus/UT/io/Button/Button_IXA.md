@@ -29,7 +29,8 @@ Button_IXA is a composite function block for processing Boolean input data. The 
 ## Functionality
 The Button_IXA function block acts as a wrapper around the internal Button_IX block. During initialization (INIT), the configuration parameters are passed and the internal block is configured. Service requests (REQ) trigger the query of the button state. The IN adapter serves as the interface for the actual button input.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses ISOBUS-compliant types and adapters
 - Supports object identification via u16ObjId
 - Flexible parameterization via STRING parameters

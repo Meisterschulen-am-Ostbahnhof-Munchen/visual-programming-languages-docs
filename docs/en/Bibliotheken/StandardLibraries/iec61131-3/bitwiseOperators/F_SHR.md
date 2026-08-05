@@ -22,7 +22,8 @@ The function block `F_SHR` performs a bitwise right shift. It is part of the sta
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 1. Upon a `REQ` event, the value `IN` is shifted right by `N` bits.
 

@@ -63,7 +63,8 @@ Process:
 - **Flip-Flop Intermediate Storage**: The use of a D flip-flop prevents glitches or incomplete data transmission if multiple quarters are updated in rapid succession. The output only changes when the assembler has calculated a new, valid value.
 - **Adapter-Based Interface**: All inputs and outputs are handled via adapters, making the function block particularly suitable for modular, typed data flow architectures in 4diac.
 - **Synchronous Processing**: Processing is triggered by each incoming event of a quarter, but only generates an output event when the calculation is complete.
-- **Adapter-Based Interface**: ## Status Overview
+- **Adapter-Based Interface**:
+## Status Overview
 
 The function block (FB) does not have its own execution control chart (ECC) – the internal logic is implemented entirely by the included function blocks `ASSEMBLE_WORD_FROM_QUARTERS` and `E_D_FF_ANY`. The function block therefore behaves like a combinational circuit with an edge-triggered memory stage.
 

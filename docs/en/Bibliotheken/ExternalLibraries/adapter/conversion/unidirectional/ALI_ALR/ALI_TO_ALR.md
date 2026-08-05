@@ -49,7 +49,8 @@ The function block operates as a simple forwarder and converter:
 
 The entire process is event-driven and does not use its own state logic.
 
-... ## Technical Features
+...
+## Technical Features
 
 - **Composite Block**: The logic is implemented exclusively through the interconnection of the standardized conversion block `F_LINT_TO_LREAL` – no proprietary algorithm.
 - **Adapter-Oriented Interface**: The function block (FB) completely encapsulates the conversion within the adapter interfaces, allowing it to be used in environments with uniform adapter types (unidirectional).

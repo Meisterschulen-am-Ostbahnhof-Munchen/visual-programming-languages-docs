@@ -24,7 +24,8 @@ The AE2_E_TO_EVENT function block is a composite function block used to convert 
 ## Functionality
 This function block acts as a simple converter between the AE2 adapter protocol and the standard 4diac event system. Upon receiving a REQ event, a request is sent via the AE2 adapter. The adapter's response is received via the EO1 signal and output as a CNF event.
 
-``` ## Technical Features
+```
+## Technical Features
 - Implemented as a composite function block
 - Uses bidirectional AE2 adapter communication
 - Simple event forwarding without data manipulation

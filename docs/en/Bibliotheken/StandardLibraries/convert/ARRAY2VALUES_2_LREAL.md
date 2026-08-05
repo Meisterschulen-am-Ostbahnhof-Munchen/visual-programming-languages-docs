@@ -34,7 +34,8 @@ This function block is specifically designed to process exactly one array of two
 ## State Overview
 This function block is stateless. Each triggering of the `REQ` event results in direct processing of the current `IN` values and output via `OUT_1` and `OUT_2` without any internal state changes beyond the current transaction.
 
-# State Overview ## Application Scenarios
+# State Overview
+## Application Scenarios
 * **Data Preparation**: When sensors or other components deliver data as an array of two `LREAL` values (e.g., X/Y coordinates, minimum/maximum values), but subsequent components require individual variables.
 * **Interface Adaptation**: Adapting interfaces where a source component sends array data, but the target component expects discrete input variables.
 * **Logic Simplification**: Increasing readability and simplifying logic by converting array accesses into individual variables that can be more easily processed in subsequent steps.

@@ -21,7 +21,8 @@ The function block `AND_9` performs a bitwise logical AND operation on up to nin
 ### **Adapters**
 No adapters are available.
 
-### ## Functionality
+#
+## ## Functionality
 The function block `AND_9` performs a bitwise AND operation on the values of the input variables `IN1` through `IN9`. The result is output to `OUT`. The operation is initiated by the event `REQ` and confirmed upon completion by the event `CNF`.
 
 ## Technical Features

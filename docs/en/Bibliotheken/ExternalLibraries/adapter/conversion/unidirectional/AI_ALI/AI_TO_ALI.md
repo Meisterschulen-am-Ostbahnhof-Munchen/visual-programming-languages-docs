@@ -43,7 +43,8 @@ The function block operates as a simple pass-through: The event and data signal 
 
 The FB does not have its own state machine, as its functionality is limited to the pure transmission of events and data. The internal state is irrelevant; the behavior is deterministic and reacts instantaneously to incoming events.
 
-- ## Application Scenarios
+-
+## Application Scenarios
 - **Interface Adaptation:** One module returns an INT value via an AI adapter, while a subsequent module expects a LINT value via an ALI adapter.
 - **Extension of Value Ranges:** If an existing INT data path needs to be converted to a larger value range, this function block (FB) can be used as an intermediary.
 - **Adapter Protocol Conversion:** In heterogeneous systems where different adapter types are used, this FB serves as a simple converter.

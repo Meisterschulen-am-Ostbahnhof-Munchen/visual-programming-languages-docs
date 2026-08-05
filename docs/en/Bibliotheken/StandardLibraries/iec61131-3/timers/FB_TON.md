@@ -29,7 +29,8 @@ No adapter interfaces are available.
 ## Functionality
 The FB_TON starts the time measurement when the IN input changes from FALSE to TRUE. Once the specified time PT has elapsed, output Q is set to TRUE. Output ET continuously displays the elapsed time. If IN is set to FALSE during the time measurement, the timer is reset and Q remains FALSE.
 
-``` ## Technical Features
+```
+## Technical Features
 - Time values are processed in the TIME data type
 - The timer is immediately reset when IN=FALSE
 - ET always displays the current elapsed time, even if the timer is still running

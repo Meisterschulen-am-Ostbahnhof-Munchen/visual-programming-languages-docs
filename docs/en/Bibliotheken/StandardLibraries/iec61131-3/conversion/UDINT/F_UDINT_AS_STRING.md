@@ -26,7 +26,8 @@ When the event `REQ` is triggered, the algorithm is executed, converting the val
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The function block uses the function `UDINT_AS_STRING` for conversion.
 - The implementation is in Structured Text (ST).
 

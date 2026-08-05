@@ -73,6 +73,7 @@ The function block does not have its own state machine. The process can be descr
 - **ADI_TO_AR** in contrast to other conversion function blocks (e.g., REAL_TO_DINT): This function block is specifically designed for unidirectional adapter communication and does not offer any other conversion directions.
 - **Composite function blocks without adapters**: Other implementations use direct data and event ports, which limits flexibility when replacing components. The adapter interface allows for simple plug-and-play in predefined architectures.
 
-**F_DINT_TO_REAL**: ** ... ## Conclusion
+**F_DINT_TO_REAL**: ** ...
+## Conclusion
 
 The **ADI_TO_AR** function block represents an elegant and standards-compliant solution for converting DINT values to REAL values, fully embedded in the adapter-based communication structure of IEC 61499. By encapsulating the conversion process in a reusable composite component, it supports the development of modular, type-safe, and well-documented automation systems.

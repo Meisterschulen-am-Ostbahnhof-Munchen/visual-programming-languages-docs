@@ -35,7 +35,8 @@ The image above illustrates this exact case.
 
 The image above illustrates this exact case.
 
-... ## Functionality
+...
+## Functionality
 
 As soon as a `REQ` event is received at the input of the `STRUCT_DEMUX` function block, the block reads the data structure present at the `IN` input. It extracts the values of each individual member of the structure and forwards them to the corresponding, dynamically generated data outputs. After all output values have been updated, the `CNF` event is triggered to signal the completion of the process.
 

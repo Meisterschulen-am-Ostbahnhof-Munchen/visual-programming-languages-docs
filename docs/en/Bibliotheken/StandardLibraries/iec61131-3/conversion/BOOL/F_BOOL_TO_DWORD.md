@@ -23,7 +23,8 @@ The function block `F_BOOL_TO_DWORD` converts a Boolean value (`BOOL`) into a 32
 
 ### **Adapters**
 
-** ## Functionality
+**
+## Functionality
 
 The function block performs the conversion as soon as the event `REQ` is received. The Boolean value `IN` is converted to `DWORD`:
 

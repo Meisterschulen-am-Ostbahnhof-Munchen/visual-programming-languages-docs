@@ -78,6 +78,7 @@ Each flip-flop stores the last loaded 2-bit value. A new input event overwrites 
 
 This component is specifically optimized for the fine granularity of 2-bit segments and utilizes event-driven IEC 61499 adapter technology. The main difference compared to simpler split devices lies in the number of outputs (32 instead of the typical 4 or 8) and the use of flip-flops for stable output.
 
-This component is specifically optimized for the fine granularity of 2-bit segments and utilizes event-driven IEC 61499 adapter technology. ## Conclusion
+This component is specifically optimized for the fine granularity of 2-bit segments and utilizes event-driven IEC 61499 adapter technology.
+## Conclusion
 
 The `SPLIT_AL_INTO_AQ` function block offers efficient, parallelized partitioning of a 64-bit LWORD into 32 separate 2-bit channels. Thanks to strict event control and D flip-flop storage, deterministic and time-accurate output is guaranteed. The block is particularly suitable for applications where many narrow data streams need to be derived from a compact data word. Its adapter-based interface makes it flexible and easily integrated into existing IEC 61499 systems.

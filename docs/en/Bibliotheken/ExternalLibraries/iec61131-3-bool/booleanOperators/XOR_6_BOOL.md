@@ -28,14 +28,16 @@ The function block has an event-driven input/output mechanism with six Boolean d
 ### **Adapters**
 This function block does not have any adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 When triggered by the `REQ` event, the function block calculates the logical XOR value across all six inputs `IN1` to `IN6`. The XOR operation yields `TRUE` (1) if and only if an odd number of inputs have the value `TRUE`. If there are zero, two, four, or six inputs `TRUE`, the result is `FALSE` (0). Formally, this corresponds to the calculation: `OUT = IN1 XOR IN2 XOR IN3 XOR IN4 XOR IN5 XOR IN6`. After the calculation, the result is output at data output `OUT`, and the confirmation event `CNF` is simultaneously activated.
 
 ## Technical Features
 * **Generic Block:** The function block is marked as a generic block (`GEN_XOR`). This allows it to be reused in different contexts or used as a basis for specialized versions.
 * **Fixed Number of Inputs:** Unlike blocks with a variable number of inputs, `XOR_6_BOOL` has exactly six fixed inputs. Unused inputs should be set to a defined logic level (e.g., `FALSE`).
 * **Package Assignment:** The block is assigned to the package `iec61131::bitwiseOperators`, which underlines its classification as a bitwise/logical operation.
-* **Fixed Number of Inputs:** ## State Overview
+* **Fixed Number of Inputs:**
+## State Overview
 
 The function block is stateless (combinatory). It has no internal memory. The output `OUT` is a pure function of the current input values at the time of the `REQ` event. There is no dependency on previous calculations or states.
 

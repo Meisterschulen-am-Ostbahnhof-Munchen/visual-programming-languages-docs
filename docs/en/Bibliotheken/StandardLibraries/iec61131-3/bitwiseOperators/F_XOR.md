@@ -22,7 +22,8 @@ The function block `F_XOR` performs a bitwise XOR operation (exclusive OR) on tw
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 When the event input `REQ` is activated, the function block performs a bitwise XOR operation between the values `IN1` and `IN2`. The result is output via the data output `OUT`, and the event `CNF` is triggered to signal the completion of the operation.
 
 ## Technical Features

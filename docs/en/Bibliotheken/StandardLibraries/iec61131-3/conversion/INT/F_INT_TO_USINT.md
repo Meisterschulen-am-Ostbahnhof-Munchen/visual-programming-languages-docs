@@ -21,7 +21,8 @@ The function block `F_INT_TO_USINT` converts an integer value of data type `INT`
 ### **Adapters**
 This function block does not have any adapter interfaces.
 
-### **Adapters** ... ## Functionality
+#
+## **Adapters** ... ## Functionality
 When the event input `REQ` is triggered, the algorithm of the function block is executed. This converts the value at the data input `IN` from type `INT` to type `USINT` and stores the result in the data output `OUT`. The event `CNF` is then triggered to signal the successful completion of the operation.
 
 ## Technical Details

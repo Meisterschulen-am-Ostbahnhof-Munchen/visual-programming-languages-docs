@@ -46,7 +46,8 @@ Upon each positive event on `I.E1`, the current value of `I.D1` is transferred t
 
 The component thus behaves like a classic D flip-flop, but with a standardized adapter interface instead of direct inputs/outputs.
 
-... ## Technical Features
+...
+## Technical Features
 
 - **Adapter-based encapsulation**: All data exchange occurs exclusively via unidirectional adapters of type `adapter::types::unidirectional::AS`. This facilitates reuse in different contexts and ensures a clear separation between event and data flows.
 - **Internal use of `E_D_FF_ANY`**: The component utilizes the standard function block `iec61499::events::E_D_FF_ANY`, which offers a proven and efficient implementation of a D flip-flop.

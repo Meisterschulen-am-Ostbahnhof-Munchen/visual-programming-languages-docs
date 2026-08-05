@@ -26,7 +26,8 @@ When the event input `REQ` is triggered, the algorithm is executed, converting t
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The conversion truncates the upper 16 bits of the DINT value, as a WORD can only store 16 bits. It is therefore important to ensure that the original DINT value is within the representable range of a WORD (0 to 65535) to avoid data loss.
 - The function block is deterministic and has no internal states.
 

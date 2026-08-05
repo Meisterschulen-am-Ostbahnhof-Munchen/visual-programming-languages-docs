@@ -23,7 +23,8 @@ This function block does not use any adapters.
 ## Operation
 When the `REQ` event is triggered, the value of the `IN` input is copied to the `OUT` output. An automatic type conversion from DINT to LINT occurs, preserving the numeric value.
 
-# ## Technical Features
+#
+## Technical Features
 - The conversion is performed without data loss, as the LINT type supports a larger range of values than DINT.
 - The algorithm is implemented in Structured Text (ST) and consists of a simple assignment.
 

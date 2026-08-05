@@ -92,7 +92,8 @@ Not applicable for a data type. The elements listed above are the **internal com
 ### **Adapters**
 Not applicable for a data type.
 
-### ## Functionality
+#
+## ## Functionality
 
 `ST64X` itself has no "function" in the sense of an active component that performs calculations or changes states. Its "function" is to provide a defined structure that serves as a template for data objects. Once instantiated, a variable of type `ST64X` holds 64 individual BOOL values that can be read or written directly via their names (e.g., `MyVariable.X_00`, `MyVariable.B_63`). It is a passive data container.
 
@@ -110,7 +111,8 @@ Not applicable for a data type, as it has no internal logic or state machine. Th
 * **Hardware Interfaces:** Can be used to map registers or I/O ports where individual bits represent specific functions or states.
 * **Compact Data Transmission:** When a large number of BOOL values need to be transmitted efficiently, this type can provide a compact representation.
 * **Abstract States:** Represents complex states resulting from the combination of 64 binary features.
-* ## ⚖️ Comparison with Similar Building Blocks
+*
+## ⚖️ Comparison with Similar Building Blocks
 Since `ST64X` is a data type, it is not directly compared to function blocks, but rather to other ways of structuring BOOL values:
 
 * **`ARRAY OF BOOL`:** A `ARRAY[0..63] OF BOOL` would also store 64 BOOL values. The main difference lies in the access method: `ST64X` uses named arrays (e.g., `MyVar.X_00`), which is often more readable if each bit has a specific meaning. Arrays use indices (e.g., `MyArray[0]`), which is more flexible for loops and dynamic access, but less informative if the meaning of the individual indices is not obvious.

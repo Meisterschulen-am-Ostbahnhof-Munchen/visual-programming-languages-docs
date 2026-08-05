@@ -34,7 +34,8 @@ Upon arrival of the REQ event, the OR_2 block performs a bitwise OR operation be
 
 The OR operation is performed at the bit level, with each bit of the input values being processed separately. The result bit is 1 if at least one of the corresponding input bits is 1.
 
-``` ## Technical Features
+```
+## Technical Features
 - **Generic Type Support**: Uses the ANY_BIT data type, meaning the block can work with various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)
 - **Standard-Compliant Implementation**: Conforms to the IEC 61131-3 standard for bitwise Boolean functions
 - **Event-Driven Execution**: The calculation is only performed when a REQ event is active

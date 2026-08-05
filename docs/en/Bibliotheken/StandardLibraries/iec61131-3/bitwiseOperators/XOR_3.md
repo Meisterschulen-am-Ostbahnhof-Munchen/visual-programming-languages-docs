@@ -27,7 +27,8 @@ The function block does not use adapters.
 ## Functionality
 Upon arrival of the REQ event, the function block performs a bitwise XOR operation on the three input values IN1, IN2, and IN3. The operation is executed separately for each bit position and corresponds to the logical function: OUT = IN1 XOR IN2 XOR IN3. After completion of the calculation, the CNF event is output along with the result value.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses the generic data type ANY_BIT, which is compatible with various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)
 - Implemented as a generic function block with the class 'GEN_XOR'
 - Supports exactly three inputs for the XOR operation

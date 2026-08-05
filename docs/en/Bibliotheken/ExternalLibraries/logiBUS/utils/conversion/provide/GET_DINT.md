@@ -14,7 +14,8 @@ The function block **GET_DINT** reads a DINT value from an InOut variable and pr
 
 There are no traditional data inputs. The value source is provided via the InOut variable described below.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 - **OUT** (Type: DINT, Initial Value: 0) – Buffered output value containing the current value of the InOut variable.
 
 ### **Adapter**

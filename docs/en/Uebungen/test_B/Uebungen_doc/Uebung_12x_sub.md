@@ -65,7 +65,8 @@ This exercise demonstrates advanced data manipulation and event chains in 4diac,
 
 It is ideal for testing cyclic transmissions and the correct handling of data changes in a distributed control system.
 
-... ## 🛠️ Related exercises
+...
+## 🛠️ Related exercises
 
 * [Uebung_125](Uebung_125.md)
 * [Uebung_126](Uebung_126.md)

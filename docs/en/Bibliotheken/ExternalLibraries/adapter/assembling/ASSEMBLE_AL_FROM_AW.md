@@ -51,7 +51,8 @@ The module utilizes an internal network of two function blocks:
 
 The events from the four input adapters (`WORD_00.E1` … `WORD_03.E1`) are all connected to the `REQ` event input of `ASSEMBLE_LWORD_FROM_WORDS`. As soon as an event arrives at one of the input adapters, the combination is recalculated. Upon completion (`CNF`), `E_D_FF_ANY` is clocked, which then adopts the calculated value into its internal state and outputs it via `OUT.D1`. The event at the output adapter (`OUT.E1`) signals the availability of the new value.
 
-As soon as an event arrives at one of the input adapters, the combination is recalculated. ## Technical Features
+As soon as an event arrives at one of the input adapters, the combination is recalculated.
+## Technical Features
 
 - **Clock Edge Triggered Output** – The use of the `E_D_FF_ANY` prevents unwanted intermediate values and ensures that only fully composed LWORDs are output.
 - **Arbitrary Order of Input Events** – Since all four sockets are combined into the same `REQ` input, each incoming event triggers a recalculation. The function block therefore reacts to each partial word, but only updates the output after the complete composition.

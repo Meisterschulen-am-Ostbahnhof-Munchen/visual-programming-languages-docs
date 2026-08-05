@@ -4,7 +4,8 @@
 ## Introduction
 The **AE_MUX_5** function block is a generic 5-way multiplexer for AE adapters (unidirectional). It selects one of five inputs (`IN1` … `IN5`) based on an integer index `K` and passes its data to the output `OUT`. The block operates in an event-driven manner: Upon receiving a `REQ` signal, the current index is evaluated, the input is passed through, and an acknowledgment (`CNF`) is then sent.
 
-``` ## Interface Structure
+```
+## Interface Structure
 
 ### **Event Inputs**
 
@@ -71,7 +72,8 @@ No dedicated data outputs – data transmission is exclusively via the adapter `
 
 The function block (FB) does not have an explicit state machine. Its behavior is purely combinatorial (upon receipt of `REQ`, the selection is made immediately and `CNF` is sent). Its operation can be visualized as a single "active" state that exists only during the switching process.
 
-``` ## Application Scenarios
+```
+## Application Scenarios
 
 - **Sensor Multiplexing**: In an agricultural or industrial control system, multiple analog or digital AE interfaces (e.g., from sensors) are passed through a common output to a higher-level logic controller, with selection determined by an index.
 - **Mode Switching**: Depending on the operating mode (index), a different data stream is used – e.g., different measurement channels or configuration data.

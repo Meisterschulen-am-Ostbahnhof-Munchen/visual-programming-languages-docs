@@ -57,7 +57,8 @@ OUT4 | `adapter::types::unidirectional::AUI` | Plug | Destination Output 4 |
 
 All adapters are of the same type, `AUI` (unidirectional). The input adapter, `IN`, is a socket, and the four output adapters are plugs. This allows the module to be inserted into an adapter connection, typically established between an AUI transmitter and an AUI receiver.
 
-All adapters are of the same type, `AUI` (unidirectional). ## Functionality
+All adapters are of the same type, `AUI` (unidirectional).
+## Functionality
 
 1. The function block waits for an event at input `REQ`.
 

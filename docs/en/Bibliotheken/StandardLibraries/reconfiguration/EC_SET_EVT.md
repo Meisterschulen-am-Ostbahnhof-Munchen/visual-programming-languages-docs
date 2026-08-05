@@ -32,7 +32,8 @@ No adapter interfaces are available.
 
 The EC_SET_EVT function block receives a request via the REQ event to set a specific event in another function block instance. The input data specifies the target function block instance (FB_NAME), the event to be set (FB_EVENT_IO), and the destination (DST). After successful execution, the CNF event is returned with the corresponding status.
 
-... ## Technical Features
+...
+## Technical Features
 
 - Implementation in C++ for GCC compiler version 3.0 and later
 - Supports wide-string data types for international character sets

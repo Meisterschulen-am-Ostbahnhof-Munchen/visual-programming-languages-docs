@@ -27,7 +27,8 @@ This exercise is suitable for users who want to take their first steps with coun
 - `PV` = `UINT#5` (Limit)
 - Function: An event-driven up counter. Each event at input `CU` increments the internal counter CV by 1 and triggers `CUO`. An event at input `R` resets the counter to 0 and triggers `RO`. The output `Q` becomes `TRUE` once `CV >= PV` is reached.
 
-``` ### Sub-module: Event Merger
+```
+### Sub-module: Event Merger
 
 - **E_MERGE_2 (Type: `iec61499::events::E_MERGE_2`)**
 - Function: Combines two event inputs (`EI1`, `EI2`) into a single event output `EO`. As soon as one of the two events occurs, `EO` is triggered.

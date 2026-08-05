@@ -47,7 +47,8 @@ The function block does not have an internal state in the sense of a memory. Its
 * **Selection or Toggle Logic:** Control where an action is executed only when the state of an odd number of conditions has changed.
 * **Error Detection in Redundant Systems:** Simple plausibility check in systems with multiple redundant channels.
 * **Encryption and Coding Methods:** As a fundamental component in simple cryptographic or error-correcting codes.
-* ## ⚖️ Comparison with Similar Blocks
+*
+## ⚖️ Comparison with Similar Blocks
 * **Standard XOR blocks (e.g., XOR, E_XOR):** These typically have only two inputs. `XOR_9_BOOL` extends this functionality to up to nine inputs in a single block.
 * **OR blocks (OR) / AND blocks (AND):** Return a `TRUE` if at least one or all inputs are `TRUE`. The XOR logic is more specific (odd number).
 * **Parity blocks:** Specialized blocks for parity calculation, often working directly with data words (BYTE, WORD). `XOR_9_BOOL` works with individual Boolean bits and is more flexible in terms of the number of inputs.

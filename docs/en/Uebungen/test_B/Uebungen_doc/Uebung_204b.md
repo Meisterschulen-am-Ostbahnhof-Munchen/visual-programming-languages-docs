@@ -116,7 +116,8 @@ Advanced – Basic knowledge of the 4diac IDE and working with function blocks i
 Advanced – Basic knowledge of the 4diac IDE and working with function blocks is required.
 
 ### Learning Objectives
-...`` ### Prerequisites
+...``
+### Prerequisites
 - Fundamentals of IEC 61499
 - Sequence controls and interlocks
 - Input/output configuration with logiBUS function blocks

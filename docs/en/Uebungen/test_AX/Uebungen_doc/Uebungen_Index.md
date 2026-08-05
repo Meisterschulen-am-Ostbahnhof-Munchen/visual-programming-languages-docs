@@ -1,6 +1,7 @@
 # 🛠️ Exercises (Workspace test_AX)
 Here you will find the documentation for the exercises for logiBUS® with the **AX Adapter**. The exercises are grouped by topic to optimally support your learning progress.
-``` ## Topics
+```
+## Topics
 ## 🎧 Podcast
 * [DIN EN 61499-1 Decoded: The Blueprint for Modular, Distributed Control Systems ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Entschlsselt-Der-Bauplan-fr-modulare--verteilte-Steuerungssysteme-e367nmj)
 * [FNIRSI DWS-200 Soldering Station Review: 200 Watts of Power and the Truth from User Reviews ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/FNIRSI-DWS-200-Ltstation-im-Test-200-Watt-Power-und-die-Wahrheit-aus-den-Nutzer-Reviews-e39auoe)

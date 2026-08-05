@@ -37,7 +37,8 @@ No adapter interfaces are available.
 ## Functionality
 Upon receiving the INIT event, the SUBSCRIBE_4 block initializes a subscription connection to a PUBLISH_4 block using the specified ID. After successful initialization, it confirms this with INITO. When new data is available from the publisher, the IND event is triggered, and the received data is made available via the RD_1 to RD_4 outputs.
 
-### ## Technical Features
+#
+## ## Technical Features
 - Supports receiving up to four different data types (ANY type)
 - Uses WSTRING for status and identification information
 - Generic implementation via the GEN_SUBSCRIBE base class

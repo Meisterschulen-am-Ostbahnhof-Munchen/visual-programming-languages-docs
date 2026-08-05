@@ -55,7 +55,8 @@ A T flip-flop (toggle flip-flop). Each event at the clock input `CLK` changes th
 
 An enable block. It forwards an event from `EI` to `EO` only if the input is `PERMIT` or `TRUE`. Data output is only enabled when the counter reaches its end value (`Q=1`).
 
-``` ### Sub-modules: `F_MUX_32`
+```
+### Sub-modules: `F_MUX_32`
 - **Type**: `iec61131::selection::F_MUX_32`
 - **Parameters**:
 - `IN1` … `IN32` = `frame_00` … `frame_31` (32 predefined constants)

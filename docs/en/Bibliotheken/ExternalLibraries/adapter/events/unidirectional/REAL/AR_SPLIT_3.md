@@ -39,7 +39,8 @@ This function block implements a **1:3 distribution** at the adapter level. A `A
 
 Every event or data packet received at `IN` is simultaneously forwarded to all three outputs. The distribution occurs without delay and without data modification. The function block is generic and can be used with any `AR` adapter profile – its internal logic automatically adapts to the structure of the adapter type used.
 
-... ## Technical Features
+...
+## Technical Features
 
 - **Generic Type**: The function block (FB) is designed as a generic block (`GEN_AR_SPLIT`) and can be used with different `AR` adapter definitions (unidirectional), provided the interfaces are compatible.
 - **Unidirectional Adapters**: Both inputs and outputs are unidirectional, meaning the data/event direction is fixed (from sender to receiver). Feedback is not possible with this block.

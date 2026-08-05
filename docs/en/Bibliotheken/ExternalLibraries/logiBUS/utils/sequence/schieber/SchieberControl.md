@@ -49,7 +49,8 @@ The function block `SchieberControl` is a basic function block (FB) according to
 ## Functionality
 The `SchieberControl` FB operates as a state-controlled sequence. The internal control flow graph (ECC) defines the states `Closed` (Closed), `Opened` (Open), `Opening` (Opening), `Closing` (Closing), various STOP states, and `Unknown` (Unknown). Each state change triggers a corresponding algorithm that sets the data outputs (such as `DO_OPEN`, `STATE`, `Button`) and, if necessary, starts the timer adapter. The movement between `Closed` and `Opened` is time-controlled via the states `Opening` and `Closing`. During a movement, a stop can be initiated by the opposite event (`Open` during `Closing` or `Close` during `Opening`), which transitions to the corresponding STOP state. From any state, a `RESET` event can move the function block to the `Unknown` state.
 
-``` ## Technical Features
+```
+## Technical Features
 * **State Initialization**: The desired initial state (qzmsdocs000074, qzmsdocs000075, or qzmsdocs000076) can be specified via the `START` input after `INIT`. This requires the subsequent arrival of the `INPUT_DATA` event.
 * **Adapter Usage**: The timing control is completely outsourced to the `timeOut` adapter, enabling a clear separation of functionality and potential reusability.
 * * **Data Configuration**: The output values for user interfaces (`Button`, `Softkey`, `Auxiliary`) are not hard-coded, but configured via corresponding input structures (`BT`, `SK`, `AUXC`), allowing for flexible adaptation to various HMIs.

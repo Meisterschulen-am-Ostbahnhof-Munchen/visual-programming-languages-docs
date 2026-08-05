@@ -48,7 +48,8 @@ None.
 ## Functionality
 The module operates on the principle of a **1-out-of-3 multiplexer** for ATM adapters. An incoming **REQ** event takes the current value of the data input **K** and then switches the corresponding socket (IN1, IN2, or IN3) to the **OUT** plug. After a successful switch, the **CNF** event is output. The switch is event-driven, meaning that as long as no new REQ arrives, the current connection remains active.
 
-## Functionality ## Technical Features
+#
+# Functionality ## Technical Features
 - **Generic Implementation**: The function block (FB) is implemented as a generic block (`GEN_ATM_MUX`) and can be adapted to other adapter types by adjusting the type parameters.
 - **Unidirectional Adapters**: All involved ATM adapters are defined as unidirectional interfaces. The flow direction is from the input sockets to the output plug.
 - **No Data Outputs**: The function block only forwards the adapter communication – no additional data values are output.

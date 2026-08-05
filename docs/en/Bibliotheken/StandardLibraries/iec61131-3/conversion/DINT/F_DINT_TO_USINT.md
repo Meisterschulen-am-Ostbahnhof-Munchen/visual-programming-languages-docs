@@ -20,7 +20,8 @@ The function block `F_DINT_TO_USINT` converts a 32-bit integer value (DINT) to a
 ### **Adapters**
 This function block does not use any adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When the event input `REQ` is triggered, the algorithm is executed. This algorithm converts the value at input `IN` (of type `DINT`) into a value of type `USINT` and outputs the result at output `OUT`. The event output `CNF` is then activated to signal the successful completion of the conversion.
 
 ## Technical Features

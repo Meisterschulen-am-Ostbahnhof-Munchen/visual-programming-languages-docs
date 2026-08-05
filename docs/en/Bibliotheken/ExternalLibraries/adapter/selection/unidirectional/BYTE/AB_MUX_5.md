@@ -54,7 +54,8 @@ The function block operates as a **1-out-of-5 multiplexer** at the adapter level
 
 If values outside the range 0 to 4 are applied to `K`, the behavior is undefined – typically, no input is selected, or the last valid state is retained. The function block itself does not perform range checking.
 
-In the event of a switchover, the output `CNF` is sent. ## Technical Features
+In the event of a switchover, the output `CNF` is sent.
+## Technical Features
 
 - **Adapter-based**: The function block uses the unidirectional adapter `adapter::types::unidirectional::AB`, which is designed for data exchange in one direction (here: input → output).
 - **Generic Parameterization**: The function block is designed as a generic function block with the class name `GEN_AB_MUX`. This enables type checking and optimization of the runtime environment (e.g., Eclipse 4diac).

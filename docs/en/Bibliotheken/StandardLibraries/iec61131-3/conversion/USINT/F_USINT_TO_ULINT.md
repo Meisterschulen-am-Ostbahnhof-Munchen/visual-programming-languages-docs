@@ -21,7 +21,8 @@ The function block `F_USINT_TO_ULINT` converts a `USINT` value (8-bit unsigned i
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs a direct conversion of the input value `IN` of type `USINT` to the output value `OUT` of type `ULINT`. The conversion is lossless because the value range of `USINT` (0 to 255) can be fully mapped to `ULINT` (0 to 2^64-1).
 

@@ -46,7 +46,8 @@ DigitalOutput_Q3 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q3 (active wh
 
 DigitalOutput_Q4 | `logiBUS::io::DQ::logiBUS_QXA` | Digital output Q4 (active when AX_SR_Einfahren_Cyl_1.Q is set) |
 
-``` ### Block Parameters
+```
+### Block Parameters
 
 All `Softkey_IE` blocks are configured with the following parameters:
 

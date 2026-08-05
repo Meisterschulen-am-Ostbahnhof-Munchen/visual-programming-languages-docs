@@ -26,7 +26,8 @@ The function block performs the conversion as soon as the event `REQ` is receive
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The conversion is performed by the built-in function `UDINT_TO_USINT`.
 - No range check is performed. Values outside the USINT range (0 to 255) may produce unexpected results.
 

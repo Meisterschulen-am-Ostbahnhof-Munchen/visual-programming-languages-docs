@@ -47,7 +47,8 @@ The function block has a single Execution Control State (EC State) named `REQ`. 
 ## ⚖️ Comparison with similar modules
 Compared to generic timing modules (such as `E_DELAY` or `E_CYCLE`), `CYCLE_TIME` specializes in **calculating the difference between consecutive time points**. It does not use its own timer but evaluates externally provided timestamps. Modules such as `E_SR` or `E_R_TRIG` serve fundamentally different purposes (storage, edge detection) and do not offer time difference calculation.
 
-``` ## 🛠️ Related Exercises
+```
+## 🛠️ Related Exercises
 
 * [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 

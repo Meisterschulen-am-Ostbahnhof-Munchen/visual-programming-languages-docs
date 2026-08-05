@@ -56,7 +56,8 @@ Internally, the function block consists only of connections that route the event
 
 Since this is a composite function block, all internal connections are defined at design time; there is no dynamic logic or state machines.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Composite Type**: The function block is a pure network function block without its own algorithms. Conversion is achieved by connecting two different adapter types.
 - **Type Conversion**: The conversion from `BOOL` to `BYTE` is standards-compliant and uses the implicit cast function of the 4diac IDE. This eliminates the need for a separate conversion function block.

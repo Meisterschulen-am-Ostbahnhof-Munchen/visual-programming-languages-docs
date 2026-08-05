@@ -31,7 +31,8 @@ The F_MUX_2 operates as a 2:1 multiplexer. Upon receiving a REQ event, the funct
 - If K = 1, the value of IN2 is passed to OUT.
 
 After successful processing, the CNF event is triggered to signal the completion of the operation.
-... ## Technical Features
+...
+## Technical Features
 - Use of generic data types (ANY and ANY_INT) for maximum flexibility
 - Support for various data types for input values
 - Simple and deterministic processing

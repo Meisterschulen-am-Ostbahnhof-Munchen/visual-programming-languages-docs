@@ -25,7 +25,8 @@ When the event input `REQ` is triggered, the algorithm is executed, converting t
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The function block performs a direct type conversion, taking into account potential accuracy losses due to the different bit widths of the data types.
 - The conversion is performed using the built-in function `LREAL_TO_REAL`.
 

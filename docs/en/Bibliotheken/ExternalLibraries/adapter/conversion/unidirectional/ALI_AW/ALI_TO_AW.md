@@ -44,7 +44,8 @@ Thus, the function block makes the data provided by the input adapter available 
 
 4. This event is then passed to the plug plug `AW_OUT.E1`. The converted WORD value (output `OUT` of the converter) is simultaneously applied to the data input `AW_OUT.D1`.
 
-Thus, the function block makes the data provided by the input adapter available in converted form at the output adapter. ## Technical Features
+Thus, the function block makes the data provided by the input adapter available in converted form at the output adapter.
+## Technical Features
 
 - **IEC 61131-3 Conversion**: The actual conversion is performed using the standardized function block `F_LINT_TO_WORD`, which performs a lossy conversion from 64-bit (LINT) to 16-bit (WORD) (truncation or range checking depending on the implementation).
 - **Adapter-Based Interface**: The function block is fully embedded in 4diac's adapter technology and is suitable for unidirectional communication paths (package `adapter::conversion::unidirectional`).

@@ -6,7 +6,8 @@ This exercise implements an up counter according to IEC 61131-3 using the functi
 
 This exercise demonstrates the basic interconnection of industrial input/output modules (logiBUS) with a counter module and a numeric display. A comment in the circuit diagram indicates that the data type conversion used, `DINT_TO_UDINT`, is problematic because negative counter values cannot be displayed correctly.
 
-This exercise demonstrates the basic interconnection of industrial input/output modules (logiBUS) with a counter module and a numeric display. ## Function Blocks (FBs) Used
+This exercise demonstrates the basic interconnection of industrial input/output modules (logiBUS) with a counter module and a numeric display.
+## Function Blocks (FBs) Used
 
 - **FB_CTU_DINT**
 

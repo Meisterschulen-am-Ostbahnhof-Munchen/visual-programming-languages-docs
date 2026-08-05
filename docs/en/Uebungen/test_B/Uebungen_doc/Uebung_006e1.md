@@ -8,7 +8,8 @@ Exercise **Exercise_006e1** demonstrates the implementation of an SR flip-flop (
 ## Function Blocks (FBs) Used
 
 This exercise uses a network of standard function blocks to implement the desired logic. Since this is a `SubAppType` file, the instances it contains are described as internal function blocks.
-... ### Sub-Blocks: Exercise_006e1 (Network)
+...
+### Sub-Blocks: Exercise_006e1 (Network)
 
 * **Type**: SubAppType
 * **Internal Function Blocks Used**:
@@ -37,7 +38,8 @@ This exercise uses a network of standard function blocks to implement the desire
 
 The sub-app reads two hardware inputs. The first input serves as a "Set" signal, the second as a "Reset" signal for an SR memory chip. The resulting state is written to a hardware output.
 
-* ## Program Flow and Connections
+*
+## Program Flow and Connections
 
 The network links the physical inputs and outputs using the logical SR function:
 

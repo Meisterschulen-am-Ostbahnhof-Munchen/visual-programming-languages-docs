@@ -22,7 +22,8 @@ The function block `F_MID` is used to extract a substring from a given string. A
 ### **Adapters**
 - No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 The function block `F_MID` extracts a substring from the input string `IN`. The extraction begins at position `P` and includes `L` characters. The result is output via output `OUT` as soon as the event output `CNF` is triggered.
 
 ## Technical Features

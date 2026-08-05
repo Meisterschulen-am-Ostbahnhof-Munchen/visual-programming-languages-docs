@@ -41,7 +41,8 @@ The ALI_SPLIT_6 function block is used to distribute an incoming unidirectional 
 
 The ALI_SPLIT_6 implements a simple 1:6 distribution. The ALI adapter signal received via socket `IN` is forwarded unchanged and simultaneously to all six plugs (`OUT1` to `OUT6`). No signal processing, delay, or state changes occur. The distribution is purely structural via the adapter connections.
 
-## Functionality ## Technical Features
+#
+# Functionality ## Technical Features
 - **Generic Function Block:** The FB is defined as a generic function block. The specific class name (e.g., `eclipse4diac::core::GenericClassName`) can be defined via the attribute `'GEN_ALI_SPLIT'`. The attribute `eclipse4diac::core::TypeHash` can be used to identify the specific configuration.
 - **No State Machines:** The FB has no ECC (Execution Control Chart) and no internal logic. It operates purely passively.
 - **Unidirectional ALI Adapter Interface:** Both inputs and outputs use the type `adapter::types::unidirectional::ALI`, which enables simple and standardized communication.

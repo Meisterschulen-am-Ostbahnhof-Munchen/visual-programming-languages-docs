@@ -51,7 +51,8 @@ Thus, the behavior corresponds exactly to a passthrough: `OUT := IN`.
 - The function block uses a pre-built MOVE block internally, so no custom state logic is required.
 - The data paths are explicitly designed for `BOOL`. Extending it to other data types would be possible by modifying the `F_MOVE` attribute, but this is not included in the current design.
 - No side effects such as delays or state changes beyond pure signal transmission are implemented.
-...``` ## State Overview
+...```
+## State Overview
 Since the function block does not have its own state machine, the process can be viewed as a simple two-step operation:
 
 1. **Wait** – for an event `REQ`.

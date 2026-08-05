@@ -44,7 +44,8 @@ The `AX_TO_AD` function block does not have its own internal state. Its behavior
 
 The `AX_TO_AD` function block does not have its own internal state. Its behavior is purely reactive: An incoming event at the input is immediately passed on to the output, optionally accompanied by the updated data signature.
 
-- **Composite FB**:** ## Application Scenarios
+- **Composite FB**:**
+## Application Scenarios
 - Integration of a digital sensor (e.g., switch, light barrier) into a system that expects a DWORD adapter for data acquisition.
 - Gradual migration of an application from BOOL-based to DWORD-based adapter interfaces.
 - Prototypical connection between different libraries or components with incompatible adapter types.

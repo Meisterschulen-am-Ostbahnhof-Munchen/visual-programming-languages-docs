@@ -21,7 +21,8 @@ The function block `F_DWORD_TO_LINT` converts a `DWORD` value to a `LINT` value.
 ### **Adapters**
 This function block does not use any adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When an event is received at input `REQ`, the algorithm is executed. This algorithm converts the `DWORD` value at input `IN` into a `LINT` value and outputs the result at output `OUT`. The event `CNF` is then triggered to signal the completion of the conversion.
 
 ## Technical Features

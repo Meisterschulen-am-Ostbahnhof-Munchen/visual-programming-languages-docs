@@ -21,7 +21,8 @@ The function block `F_UINT_AS_STRING` converts an unsigned integer value (`UINT`
 ### **Adapters**
 This function block has no adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When the event input `REQ` is triggered, the algorithm is started, which converts the value of `IN` to `STRING` using the function `UINT_AS_STRING`. The result is output to `OUT`, and the event `CNF` signals successful conversion.
 
 ## Technical Features

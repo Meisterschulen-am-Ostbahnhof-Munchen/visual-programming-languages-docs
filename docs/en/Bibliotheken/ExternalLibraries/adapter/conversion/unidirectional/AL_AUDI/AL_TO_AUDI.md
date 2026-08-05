@@ -38,7 +38,8 @@ The FB does not have direct data outputs. The converted UDINT data is output via
 
 5. The converted UDINT value is passed from the output `OUT` of `Convert` to the data input `D1` of `AUDI_OUT` and is thus available at the output adapter.
 
-`` ... ## Technical Features
+`` ...
+## Technical Features
 
 - **Composite Architecture**: The function block consists solely of the internal use of the function block `F_LWORD_TO_UDINT` and the adapters. It has no independent state logic or additional control.
 - **Unidirectional Adapters**: Both `AL_IN` and `AUDI_OUT` are unidirectional adapters (input to output).
@@ -47,7 +48,8 @@ The FB does not have direct data outputs. The converted UDINT data is output via
 ## State Overview
 The function block has no states of its own. Its behavior is purely combinatorial and is entirely determined by the internal conversion function – the conversion occurs per event without internal storage.
 
-**Unidirectional Adapters**: ** ... ## Application Scenarios
+**Unidirectional Adapters**: ** ...
+## Application Scenarios
 
 - **System Integration**: Connecting components that use different data types for addresses, counters, or configuration values (e.g., LWORD for wide addresses, UDINT for embedded systems).
 - **Adapter Architectures**: Use in modular automation solutions where standardized interfaces are provided via adapters.

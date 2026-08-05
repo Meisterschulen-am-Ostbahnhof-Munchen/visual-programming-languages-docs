@@ -11,7 +11,8 @@ The function block `F_REAL_TO_UINT` converts a REAL value (floating-point number
 ### **Event Outputs**
 - **CNF**: Signals the completion of the conversion. This event is triggered as soon as the algorithm has been successfully executed.
 
-### ### **Data Inputs**
+#
+## ### **Data Inputs**
 - **IN**: The REAL input value to be converted to a UINT value.
 
 ### **Data Outputs**

@@ -47,7 +47,8 @@ The function block has a simple, stateless sequence:
 * **Color Control of RGB LEDs:** User-friendly color selection via HSV parameters (e.g., rotary encoder or touch interface) with subsequent conversion for LED control.
 * **Visualization Systems:** Conversion of alarm or status colors defined in HSV for display on RGB monitors or panels.
 * **Industrial Lighting:** Dynamic lighting control in production or logistics environments, where color transitions are intuitively defined via brightness and saturation.
-* ## ⚖️ Comparison with Similar Building Blocks
+*
+## ⚖️ Comparison with Similar Building Blocks
 
 Unlike general-purpose computing blocks (such as `MUL`, `ADD`) or scalers, `hsv2rgb` is an application-specific block that encapsulates a complex, non-linear algorithm. It saves the user the time-consuming and error-prone implementation of the conversion to Structured Text or other languages. A direct counterpart, `rgb2hsv`, for the reverse conversion would be a similarly specialized block.
 

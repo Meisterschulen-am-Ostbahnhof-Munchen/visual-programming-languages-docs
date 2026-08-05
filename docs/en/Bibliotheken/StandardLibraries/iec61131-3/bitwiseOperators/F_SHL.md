@@ -22,7 +22,8 @@ The function block `F_SHL` performs a left shift on any bit data type. The bits 
 ### **Adapters**
 No adapters are defined.
 
-### **Adapters** ## Functionality
+#
+## **Adapters** ## Functionality
 The function block `F_SHL` performs a bitwise left shift of the input value `IN` by `N` positions. The bits are shifted to the left, and the newly created positions on the right side are padded with zeros. The operation is triggered by the event `REQ` and acknowledged by `CNF`.
 
 ## Technical Features

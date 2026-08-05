@@ -64,7 +64,8 @@ A state change can occur in two ways:
 * **Time-controlled**: By a `TimeOut` event of the adapter, provided the time `DT_...` is not set to `NO_TIME`.
 
 After `State_04`, the block switches to the `State_00` state (from where the sequence can be restarted with `START_S1`) or directly back to the `START` state via `RESET`. A `RESET` event immediately deactivates all active outputs and returns the block to its initial state.
-... ## Technical Features
+...
+## Technical Features
 
 * **Hybrid Transitions**: Each state transition can be individually configured as purely event-driven, purely time-driven, or a combination of both. A time-driven transition takes precedence unless the time is `NO_TIME`.
 * **Initial Values**: All time inputs (`DT_...`) are pre-set to `NO_TIME` by default, meaning that the sequence initially runs purely event-driven after startup.

@@ -30,7 +30,8 @@ Upon arrival of the REQ event, the XOR_4 block performs a bitwise XOR operation 
 
 OUT = IN1 XOR IN2 XOR IN3 XOR IN4
 Once the calculation is complete, the CNF event, along with the result, is output to OUT.
-... ## Technical Features
+...
+## Technical Features
 - **Generic Data Type**: Uses ANY_BIT, enabling use with various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)
 - **Four-Input XOR Operation**: Processes four inputs in a single operation
 - **Event-Driven**: Execution is triggered by the REQ event

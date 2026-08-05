@@ -27,7 +27,8 @@ The function block `QUARTER_TO_BOOL` converts a quad-state signal, encoded in th
 ### **Adapters**
 This function block does not use adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When triggered by a `REQ` event, the function block reads the value at the data input `IB`. This value is then compared with predefined constants to determine the corresponding internal state. Depending on the state, a specific algorithm is executed, which either sets the BOOL output `Q` or leaves it unchanged. After the algorithm has finished executing, the `CNF` event is triggered, and the function block returns to its initial state.
 
 ``` The specific mapping of the input values to the output logic is as follows:
@@ -65,7 +66,8 @@ The ECC (Execution Control Chart) consists of six states:
 ## ⚖️ Comparison with Similar Building Blocks
 * **Standard Converters (e.g., `BYTE_TO_BOOL`)**: A simple `BYTE_TO_BOOL` converter would typically use a threshold (e.g., anything >0 becomes TRUE). `QUARTER_TO_BOOL`, on the other hand, interprets specific, named states and provides defined behavior for each one, including the option to leave the output unchanged for a given state.
 * **`E_SELECT` or `E_DEMUX` Building Blocks**: These could be used to activate different event paths based on an input value. `QUARTER_TO_BOOL` encapsulates this logic specifically for converting 4-state signals and directly returns the Boolean result.
-* ## 🛠️ Related Exercises
+*
+## 🛠️ Related Exercises
 * [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)]
 * [Exercise_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)]
 

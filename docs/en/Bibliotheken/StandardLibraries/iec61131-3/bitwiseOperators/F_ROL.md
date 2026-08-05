@@ -23,7 +23,8 @@ The function block `F_ROL` (Rotate Left) performs a bitwise left rotation. It ro
 ### **Adapters**
 - No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 The function block `F_ROL` performs a bitwise left rotation of the input value `IN` by `N` bits. Bits that fall outside the range on the left side are reinserted on the right side. This is a true rotation; no bits are padded with zeros.
 
 ## Technical Features

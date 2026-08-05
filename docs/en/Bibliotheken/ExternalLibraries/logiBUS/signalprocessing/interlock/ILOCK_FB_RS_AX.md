@@ -63,7 +63,8 @@ This creates a cascade in which a reset signal is passed on in both directions (
 - **Reset Dominance**: The reset signal always takes precedence over the set signal. This meets typical requirements for safety interlocks that demand a defined priority for the reset signal.
 - **Continuous Event Processing**: The function block reacts to every incoming event (set, reset, up/down interlock) and immediately updates all outputs. There are no state changes in the ECC (only one state, `REQ`); the logic is purely combinational with feedback via the stored latch value.
 
-**Reset Dominance**: ## State Overview
+**Reset Dominance**:
+## State Overview
 The component has only one state, `REQ`, in its ECC, which is always active. The internal latch state is represented by the boolean value `Q1.D1`.The state overview therefore describes the behavior of the internal memory cell:
 
 | Current Q | SET1.D1 | RESET.D1 | Interlock active? | Next Q | Description |

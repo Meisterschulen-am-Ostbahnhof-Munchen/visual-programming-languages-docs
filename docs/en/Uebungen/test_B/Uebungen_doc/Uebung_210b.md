@@ -32,7 +32,8 @@ The inputs `Input_I1` and `Input_I2`, as well as the output `Output_Q1`, are phy
 
 The inputs `Input_I1` and `Input_I2`, as well as the output `Output_Q1`, are physical logiBUS channels. The terminal object `OutputNumber_N3` is a predefined numeric display element that represents the counter value.
 
-** ## Program Flow and Connections
+**
+## Program Flow and Connections
 
 ### Event and Data Connections
 
@@ -64,7 +65,8 @@ After each counting operation, the counter's `CNF` event is forwarded to the dig
 
 - The `Q` value is written to the output `Output_Q1`.
 - The `CV` value is passed to the terminal as a physical quantity (`rPhys`) and displayed numerically there.
-... ### Notes from the Source Code
+...
+### Notes from the Source Code
 
 - The comment "**INT can be closed to REAL without conversion**" refers to the fact that the counter value of type `INT` can be directly connected to the `rPhys` input (type `REAL`) – automatic type conversion takes place.
 - The note "**if necessary, add an E_D_FF here to reduce the number of events**" recommends using an edge detector for fast pulses to prevent false triggers.

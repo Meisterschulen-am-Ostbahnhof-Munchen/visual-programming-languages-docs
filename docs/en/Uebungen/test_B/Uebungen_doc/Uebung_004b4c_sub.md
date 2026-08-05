@@ -19,7 +19,8 @@ The sub-application contains four internal function blocks that are interconnect
 - **Data Output**: `Q` (BOOL) – Current state of the flip-flop
 - **How it works**: The function block stores a Boolean state. When an event occurs at input `S`, `Q` is set to TRUE; when `R` is set to FALSE. After each change, `EO` is triggered.
 
-``` ### Sub-Blocks: `E_SWITCH_I1` (Type: `iec61499::events::E_SWITCH`)
+```
+### Sub-Blocks: `E_SWITCH_I1` (Type: `iec61499::events::E_SWITCH`)
 
 - **Type**: Event-driven switch
 - **Internal Function Blocks Used**: None (Primitive Function Block)

@@ -54,7 +54,8 @@ Plug (Output) | `OUT` | `adapter::types::unidirectional::AQ` | Output that provi
 ## Functionality
 The function block operates in an event-driven manner. A valid index `K` (value range 0 to 4) is obtained through an event at input `REQ`. Immediately afterward, the analog value of the input determined by `K` (IN1 for K=0, IN2 for K=1, …, IN5 for K=4) is passed through to the output adapter `OUT`. Finally, the event `CNF` is sent to confirm the successful update. If `K` has invalid values (e.g., >4), the output remains unchanged, and `CNF` is still triggered (depending on the implementation); the specification of the specific function block defines the exact behavior.
 
-`K` ... ## Technical Features
+`K` ...
+## Technical Features
 
 - **Generic Function Block**: The `AQ_MUX_5` is instantiated in the 4diac IDE as a generic function block (GenericClassName `'GEN_AQ_MUX'`). This allows for flexible customization of the types or parameters by the development tool.
 - **Unidirectional Adapters**: Both the input and output adapters are of type `unidirectional::AQ`. This means that the data flow is strictly directional (from the socket to the plug) and no feedback occurs.

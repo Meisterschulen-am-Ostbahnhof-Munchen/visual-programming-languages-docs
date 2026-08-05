@@ -49,7 +49,8 @@ The function block does not have a state machine. Its behavior is deterministic:
 - **Protocol Implementation:** Use in libraries to make different adapter types compatible.
 - **Test Environments:** Use as a simple adapter in test setups to adapt interfaces.
 
-## State Overview ## Comparison with Similar Function Blocks
+#
+# State Overview ## Comparison with Similar Function Blocks
 - **AB_TO_AQ:** Performs the reverse conversion (AB → AQ).
 - **AQ_TO_BYTE_EXT:** A hypothetical function block that additionally performs data conversions (e.g., scaling, formatting), while `AQ_TO_AB` only changes the interface.
 - **Generic Adapter Wrappers:** Other platforms often offer generic conversion blocks, but these require more complex configuration. `AQ_TO_AB` is specialized and therefore very lightweight.

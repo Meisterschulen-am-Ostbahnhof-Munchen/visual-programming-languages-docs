@@ -25,7 +25,8 @@ No data outputs available
 ## Functionality
 This function block forwards incoming REQ events directly to the AE2_OUT adapter (EO1 port). Simultaneously, incoming acknowledgments from the AE2 adapter (EI1 port) are output as CNF events. This enables transparent conversion between the standard EVENT format and the specific AE2 adapter protocol.
 
-``` ## Technical Features
+```
+## Technical Features
 - Implemented as a composite function block
 - Supports bidirectional communication
 - Uses the AE2 adapter type from the adapter::types::bidirectional package

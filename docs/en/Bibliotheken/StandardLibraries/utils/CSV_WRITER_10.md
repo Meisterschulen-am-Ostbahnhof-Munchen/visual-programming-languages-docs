@@ -27,7 +27,8 @@ The CSV_WRITER_10 function block is used to write data to a CSV file. It allows 
 ### **Adapter**
 No adapters available.
 
-``` ## Functionality
+```
+## Functionality
 1. **Initialization**: INIT with a valid FILE_NAME prepares the CSV file.
 
 2. **Write Data**: REQ writes the current values from SD_1 to SD_10 as a new line to the file.

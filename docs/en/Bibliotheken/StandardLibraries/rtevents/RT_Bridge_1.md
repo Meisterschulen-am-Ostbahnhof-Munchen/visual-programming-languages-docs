@@ -16,7 +16,8 @@ The RT_Bridge_1 function block serves as a decoupling bridge for a data connecti
 ### **Data Outputs**
 - **RD_1** (ANY): Data read from the bridge.
 
-### ## Functionality
+#
+## ## Functionality
 
 The module temporarily stores the data received via `WR` and makes it available at the output at `RD`. This decouples the write and read processes in terms of timing.
 

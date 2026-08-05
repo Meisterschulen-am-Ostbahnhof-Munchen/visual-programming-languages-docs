@@ -37,7 +37,8 @@ This exercise demonstrates the control of a simple mirror sequence using an AX f
 - **Event Outputs**: `IND`
 - **Function**: Like SoftKey_UP_F1, but responds to Softkey F2. Generates an event when F2 is pressed.
 
-``` ## Program Flow and Connections
+```
+## Program Flow and Connections
 
 The flow is divided into two comment fields:
 

@@ -26,7 +26,8 @@ The function block `BOOLS_TO_QUARTERS` is a composite function block (FB) that c
 ### **Adapters**
 This function block does not use any adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 `BOOLS_TO_QUARTERS` is a composite function block (FB) internally composed of 16 instances of a basic function block `BOOL_TO_QUARTER`. Each instance is responsible for converting a single Boolean value.
 
 The functionality follows a serial chain principle:
@@ -63,7 +64,8 @@ As a composite function block without its own explicit state machine, `BOOLS_TO_
 * **Control of compact value-added actuators:** For actuators or drivers that expect control commands not as simple on/off signals, but as 2-bit commands (e.g., on/off/error reset/emergency stop).
 * **Data compression for bus communication:** Before transmission via fieldbuses, where many binary signals must be packed into a space-saving byte- or word-oriented protocol.
 * **Interface to legacy systems:** As an adapter between modern IEC 61499 controllers and older systems that expect or deliver data in a special quarter-byte format.
-* ## ⚖️ Comparison with Similar Building Blocks
+*
+## ⚖️ Comparison with Similar Building Blocks
 * **Compared to `BOOL_TO_QUARTER`:** `BOOLS_TO_QUARTERS` is essentially an array of 16 `BOOL_TO_QUARTER` blocks with a hard-wired serial event chain. While `BOOL_TO_QUARTER` performs a single conversion, `BOOLS_TO_QUARTERS` aggregates many such conversions into a reusable building block.
 * **Compared to Generic Pack Blocks (e.g., `BOOLx_TO_BYTE`):** Blocks like `BOOL8_TO_BYTE` pack multiple BOOL values into the bits of a single byte. In contrast, `BOOLS_TO_QUARTERS` generates a separate (albeit only partially used) byte for each input. There is no bit packing into a shared byte, but rather a one-to-one mapping to a special encoding format.
 

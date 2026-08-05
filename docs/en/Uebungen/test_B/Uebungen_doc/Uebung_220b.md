@@ -4,7 +4,8 @@
 ## Introduction
 This exercise describes the implementation of an up/down counter (type CTUD) according to IEC 61131-3. The counter has an up count input (CU), a down count input (CD), a reset input (R), and a load input (LD). The current count value (CV) is output to a physical terminal (PHYS). Additionally, the two end-of-count values, QU (overflow when the maximum value is reached) and QD (underflow when the minimum value is reached), are output to digital outputs. Control is achieved via four digital inputs (I1 … I4).
 
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 This exercise does not use any additional sub-blocks, but instead uses the following predefined function blocks directly from the network:
 

@@ -32,7 +32,8 @@ No adapter interfaces available.
 ## Functionality
 The SUBSCRIBE_3 block initializes itself via the INIT event and establishes a connection to a corresponding PUBLISH_3 block. After successful initialization, it confirms this via INITO. When data is received from the publisher, the IND event is triggered, and the received data is output via RD_1, RD_2, and RD_3. The STATUS parameter provides information about the connection status.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports three independent data channels (RD_1, RD_2, RD_3) with ANY data type
 - Uses WSTRING for ID and STATUS for international character support
 - Implements a reliable initialization protocol with QI/QO handshake

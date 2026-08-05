@@ -71,7 +71,8 @@ Process:
 
 4. **State `EMIT_Q`**: Executes the algorithm `SAVE_Q` (stores the new `Q` value in `Q_OLD`) and sends the event `Q.E1`.
 
-The function block then always returns to `START`. ## Technical Features
+The function block then always returns to `START`.
+## Technical Features
 
 - **On-Change Triggering for Adapter `Q`**: The event `Q.E1` is only triggered when the logical value of `Q` (true/false) changes. This is achieved through the internal status variable `Q_OLD`. This prevents unnecessary event flooding in the application.
 - **Automatic Response to Threshold Change**: If the threshold value supplied via socket `PV` changes, `Q` is immediately recalculated and output upon change. The counter itself remains unaffected.

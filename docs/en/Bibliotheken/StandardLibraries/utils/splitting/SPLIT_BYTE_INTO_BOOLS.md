@@ -10,7 +10,8 @@ The function block `SPLIT_BYTE_INTO_BOOLS` is used to split a byte into its indi
 ### **Event Outputs**
 - **CNF**: Confirms the execution of the function block. This event is triggered after all bits have been evaluated and forwarded to the corresponding outputs.
 
-### ### **Data Inputs**
+#
+## ### **Data Inputs**
 - **IN**: The byte to be split into its individual bits. The data type is `BYTE`.
 
 ### **Data Outputs**

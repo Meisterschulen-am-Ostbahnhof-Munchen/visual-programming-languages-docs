@@ -30,7 +30,8 @@ No adapter interfaces are available.
 ## Functionality
 The QX block processes two main operations: initialization and service requests. The INIT event initializes the service with the specified parameters. The REQ event outputs the Boolean OUT value to the connected resource. Each operation generates a corresponding acknowledgment (INITO or CNF) containing status information.
 
-The INIT event initializes the service with the specified parameters. ## Technical Features
+The INIT event initializes the service with the specified parameters.
+## Technical Features
 - Specialized for Boolean output data
 - Supports configurable service configuration
 - Provides detailed status information via the STRING output STATUS
@@ -52,7 +53,8 @@ The block cycles through the following states:
 ## ⚖️ Comparison with Similar Blocks
 Compared to generic output blocks, QX offers specific service interface functionality with configurable settings and detailed status reporting. Other blocks, such as simple BOOL outputs, typically have fewer configuration options and less status information.
 
-``` ## 🛠️ Related exercises
+```
+## 🛠️ Related exercises
 
 * [Uebung_001](../../../Uebungen/test_B/Uebungen_doc/Uebung_001.md)
 * [Uebung_001c](../../../Uebungen/test_B/Uebungen_doc/Uebung_001c.md)

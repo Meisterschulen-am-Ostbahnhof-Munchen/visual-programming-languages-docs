@@ -1,7 +1,8 @@
 # Exercise_051: DigitalInput_I1-_I4 to DigitalOutput_Q1-_Q4
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_051`. It demonstrates how to combine many individual signals into a single packet (structure) to route them more efficiently through the program.
-``` ## 🎧 Podcast
+```
+## 🎧 Podcast
 ![Uebung_051_network](./Uebung_051_network.svg)
 
 * [Automation Decoded: Guiding, Controlling, Regulating – The Invisible Language of Technology (DIN IEC 60050-351)]](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)

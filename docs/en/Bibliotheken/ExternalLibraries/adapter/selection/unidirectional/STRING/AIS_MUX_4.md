@@ -57,7 +57,8 @@ _None. The output data is provided via the adapter plugin `OUT`.
 
 4. For values outside the range 0–3, the behavior is undefined (the function block relies on valid inputs).
 
-3. ## Technical Features
+3.
+## Technical Features
 
 - **Generic Type**: The function block is declared as a generic FB (`GenericClassName = 'GEN_AIS_MUX'`) and can be parameterized in various type instances.
 - **License**: Eclipse Public License 2.0 (EPL-2.0).

@@ -20,7 +20,8 @@ The function block `SPLIT_WORD_INTO_BYTES` is used to split a 16-bit word (WORD)
 ### **Adapters**
 No adapters available.
 
-### **Adapters** ## Functionality
+#
+## **Adapters** ## Functionality
 
 The function block extracts the two bytes from the input word `IN` and outputs them via the outputs `BYTE_00` (lower-order byte) and `BYTE_01` (higher-order byte). Extraction is performed by direct access to the bytes of the WORD data type (`IN.%B0` for the lower-order byte and `IN.%B1` for the higher-order byte).
 

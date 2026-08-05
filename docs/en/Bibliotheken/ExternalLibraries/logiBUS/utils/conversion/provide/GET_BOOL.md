@@ -49,7 +49,8 @@ The output `OUT` remains at the last read value until a new pulse `REQ` updates 
 - **Buffering**: The value is buffered locally in the output `OUT`. Changes to the source variable between two `REQ` calls are only applied with the next `REQ` call.
 - **Initial Values**: Both `IN` and `OUT` are pre-assigned to `FALSE`, so the function block exhibits defined behavior even without prior initialization.
 
-**Buffering**:** ## State Overview
+**Buffering**:**
+## State Overview
 
 The function block has a single state:
 

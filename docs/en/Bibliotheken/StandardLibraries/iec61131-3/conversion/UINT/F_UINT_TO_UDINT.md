@@ -21,7 +21,8 @@ The function block `F_UINT_TO_UDINT` converts a 16-bit unsigned integer value (`
 ### **Adapters**
 This function block does not use any adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When the event input `REQ` is triggered, the value of the data input `IN` is read and directly assigned to the data output `OUT`. Since `UDINT` has a larger bit width than `UINT`, the conversion occurs without data loss. The event `CNF` is then triggered to signal the completion of the operation.
 
 ## Technical Features

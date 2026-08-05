@@ -26,7 +26,8 @@ No data outputs available
 ## Functionality
 This function block forwards incoming SET and RESET events directly to the ASR adapter. A SET event activates the corresponding SET signal on the ASR adapter, while a RESET event activates the RESET signal.
 
-### ## Technical Features
+#
+## ## Technical Features
 - Composite function block without internal logic processing
 - Direct event pass-through to the adapter
 - Uses unidirectional ASR adapter technology

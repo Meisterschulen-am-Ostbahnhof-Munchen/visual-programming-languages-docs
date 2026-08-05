@@ -21,7 +21,8 @@ The function block `F_INT_TO_LWORD` converts an integer value (`INT`) into a 64-
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 Upon receiving an incoming `REQ` event, the function block converts the `INT` value at the input `IN` to a `LWORD` value. The result is output at `OUT`, and the `CNF` event signals successful execution.
 

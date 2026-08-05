@@ -25,7 +25,8 @@ This component is typically used to persistently store configuration data or mea
 - **Data outputs**: `OUT` (UDINT)
 - **Functionality**: Converts a DWORD value to a UDINT value. The converted value is provided at output `OUT` after the conversion is complete.
 
-``` ### FB: INI (eclipse4diac::storage::INI)
+```
+### FB: INI (eclipse4diac::storage::INI)
 
 - **Parameters**: `QI` = `TRUE`, `DEFAULT_VALUE` = `UDINT#0`
 - **Events**:
@@ -35,7 +36,8 @@ This component is typically used to persistently store configuration data or mea
 - **Data Outputs**: `VALUEO` (UDINT)
 - **Functionality**: Stores a value under a key (`KEY`) in a section (`SECTION`) in an INI-like structure. When `SET` is triggered, the current value is stored and `VALUE` is triggered, and `SETO` is triggered. When `GET` is triggered, the stored value is read and output to `VALUEO` and `GETO` is sent. During initialization (event `INI`), the value is loaded from memory or `DEFAULT_VALUE` is used.
 
-``` ### FB: Q_NumericValue (isobus::UT::Q::Q_NumericValue)
+```
+### FB: Q_NumericValue (isobus::UT::Q::Q_NumericValue)
 - **Parameters**: None
 - **Events**:
 - Event inputs: `REQ`

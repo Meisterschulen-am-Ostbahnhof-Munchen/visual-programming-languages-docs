@@ -23,7 +23,8 @@ The function block `XOR_4_BOOL` is a standard block for calculating the logical 
 ### **Adapters**
 This function block does not have any adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 When the event `REQ` occurs, the function block reads the values of all four Boolean inputs (`IN1`, `IN2`, `IN3`, `IN4`). It then calculates the logical exclusive OR over these values. The result `OUT` is `TRUE` (1) if and only if an odd number of the inputs have the value `TRUE`. If the number of `TRUE` inputs is even (0, 2, or 4), the result is `FALSE` (0). After the calculation, the confirmation event `CNF` is output along with the result value.
 
 ## Technical Features

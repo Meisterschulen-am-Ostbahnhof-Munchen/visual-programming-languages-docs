@@ -45,7 +45,8 @@ All adapters are of the unidirectional type `AUDI` and transmit data exclusively
 
 The module copies the AUDIO data received via socket `IN` unchanged to all seven plug outputs `OUT1` to `OUT7`. No processing or conversion of the data takes place – the function is limited to a simple 1-to-7 distribution (fan-out). Since there are no events or explicit data ports, the signal behavior is entirely defined by the connected adapters.
 
-## Functionality ## Technical Features
+#
+# Functionality ## Technical Features
 - **Generic Type**: The component is marked as generic via the attribute `eclipse4diac::core::GenericClassName` (`'GEN_AUDI_SPLIT'`). This allows it to be used for various specific implementations of the AUDI adapter without requiring a separate implementation.
 - **No Runtime Dependency**: The component has no algorithm and no state diagram; signal transmission occurs purely structurally through the adapter wiring.
 - **Type Hash**: The attribute `eclipse4diac::core::TypeHash` is empty, meaning that the type identity is not additionally secured at runtime.

@@ -1,7 +1,8 @@
 # Exercise_021: Mirror Sequence (1)
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_021`. This is an introduction to sequence control, simulated using the example of a pneumatic cylinder.
-``` ## 🎧 Podcast
+```
+## 🎧 Podcast
 ![Uebung_021_network](./Uebung_021_network.svg)
 
 * [Infineon MOTIX BTM9020/9021EP: Datasheet Analysis for Automotive – Robust Motor Driver with Intelligent Diagnostics (HW vs. SPI)]](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-MOTIX-BTM90209021EP-Datenblatt-Analyse-fr-Automotive--Robuster-Motortreiber-mit-intelligenter-Diagnose-HW-vs--SPI-e39av51)

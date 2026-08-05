@@ -66,7 +66,8 @@ The confirmation event **CNF** is then output. If K is outside the range 0–3, 
 ## State Overview
 The function block does not have an explicit state machine. Its behavior is purely event-driven: After each REQ, CNF is immediately output as soon as the adapter connection is established.
 
-- **Adapter-Based**: ## Application Scenarios
+- **Adapter-Based**:
+## Application Scenarios
 - **Signal Routing in Control Applications**: Selection of one of four actuator or reference signals, e.g., for controlling different loads.
 - **Flexible Configuration**: Dynamic switching between different signal sources depending on the operating mode.
 

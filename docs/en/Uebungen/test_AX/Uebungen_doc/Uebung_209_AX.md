@@ -42,7 +42,8 @@ The following function blocks are used in this exercise:
 
 This function block implements a reset-dominant RS latch. Its output, `Q1`, is set when `SET1` is active and no active RESET signal is present. The output remains set until `RESET` becomes active (reset dominance). Additionally, the state of the other latch is received via `ILOCK_IN`: If the other latch is active, setting the own latch is prevented. The own state is then passed to the other latch via `ILOCK_OUT`.
 
-``` ## Program Flow and Connections
+```
+## Program Flow and Connections
 
 The wiring in `SubAppNetwork` is done via adapter connections:
 

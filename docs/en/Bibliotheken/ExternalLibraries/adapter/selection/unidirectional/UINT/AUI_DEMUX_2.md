@@ -58,7 +58,8 @@ After processing, event `CNF` is output to acknowledge successful execution.
 
 After processing, event `CNF` is output to acknowledge successful execution.
 
-- ## Technical Features
+-
+## Technical Features
 - **Generic Function Block**: The function block can be parameterized for various AUI adapter variants via `GenericClassName = 'GEN_AUI_DEMUX'`.
 - **Unidirectional Adapters**: Both inputs and outputs use the AUI adapter type, which supports directional data transmission.
 - **No State Machine**: The function block operates in an event-driven manner without an internal state memory.

@@ -25,7 +25,8 @@ When an event is received at input `REQ`, the algorithm is executed, which conve
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The conversion is performed using the built-in function `REAL_TO_UDINT`.
 - The function block is deterministic and has no internal states.
 

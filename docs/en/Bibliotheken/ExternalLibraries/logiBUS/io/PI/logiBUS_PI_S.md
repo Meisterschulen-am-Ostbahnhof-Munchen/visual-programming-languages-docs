@@ -40,7 +40,8 @@ This structured data type is used to centralize and ensure type safety in the co
 ## ⚖️ Comparison with Similar Components
 * **Simple Data Types (e.g., USINT directly):** Using a structured `logiBUS_PI_S` variable is preferable to directly using a `USINT` variable for the pin number because it is semantically clearer and can be more easily extended when the configuration is expanded (e.g., to include filter time or inversion) without having to change all call points.
 * **logiBUS_PO_S (Digital Output):** A complementary data type `logiBUS_PO_S` for configuring digital outputs (PO - Peripheral Output) with an identical or very similar structure likely exists.
-* **logiBUS_PO_S (Digital Output):** ## Conclusion
+* **logiBUS_PO_S (Digital Output):**
+## Conclusion
 
 The `logiBUS_PI_S` data type is a fundamental, specific configuration block for connecting digital input signals in logiBUS-based IEC 61499 applications. Its simple, single-parameter structure enables clear and centralized hardware configuration and forms the basis for the corresponding functionality in the executing I/O function blocks.
 

@@ -49,7 +49,8 @@ Conversion adapter (type `adapter::conversion::unidirectional::AD_TO_AUDI` or `A
 - Converts the analog signal from adapter representation `AD` to `AUDI` and back to `AR`.
 - **Note**: A direct conversion of `AD_TO_AR` would result in the same output as `reinterpret_cast` – the separate use of both adapters is intended.
 
-``` ### Sub-modules
+```
+### Sub-modules
 
 - **THRESHOLD** (Type `MyLib::sys::INI_IN_AND_STORE_AR`)
 - **Parameters**:

@@ -47,7 +47,8 @@ A synchronous 1:1 conversion takes place – each incoming REAL request generate
 ## State Overview
 The **AR_TO_AS** does not have its own state machine. Since it is a pure composite function block that only establishes the connection between the incoming and outgoing adapters, there is no internal state behavior. The function block operates combinatorially at the event level.
 
-# State Overview ## Application Scenarios
+# State Overview
+## Application Scenarios
 - **Integration of REAL-based function blocks in SINT environments**: If a component provides a REAL adapter, but the subsequent function block expects a SINT adapter, **AR_TO_AS** can be used as an intermediary adapter.
 - **Type-safe conversion in modular controllers**: By using adapters, the typing is preserved, and the conversion is explicitly visible in the network.
 - **Library extension**: The function block can be used as part of an adapter conversion library to standardize data exchange between different numerical resolutions.

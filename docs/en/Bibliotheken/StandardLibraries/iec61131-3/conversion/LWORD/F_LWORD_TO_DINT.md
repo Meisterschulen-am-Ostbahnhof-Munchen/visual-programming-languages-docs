@@ -20,7 +20,8 @@ The function block `F_LWORD_TO_DINT` converts a `LWORD` data type to a `DINT` da
 ### **Adapters**
 This function block does not use any adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block converts the incoming `LWORD` value (`IN`) into a `DINT` value (`OUT`) as soon as the `REQ` event is triggered. The conversion is performed using the built-in function `LWORD_TO_DINT`. After successful conversion, the `CNF` event is triggered to indicate completion of the operation.
 

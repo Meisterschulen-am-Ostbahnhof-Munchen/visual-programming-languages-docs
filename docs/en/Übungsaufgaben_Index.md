@@ -55,7 +55,8 @@ A freight elevator has two functions: Up (Q1) and Down (Q2). Three buttons contr
 
 #### Task: Flip-Flops and E Functions
 
-Recreate the example "Step # - Use 4diac Locally (Blinking Tutorial)"
+Recreate the example "Step
+# - Use 4diac Locally (Blinking Tutorial)"
 
 #### Task: Turn Signals
 

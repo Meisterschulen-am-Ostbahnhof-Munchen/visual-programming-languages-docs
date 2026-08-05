@@ -27,7 +27,8 @@ The function block `XOR_7_BOOL` is a generic block for calculating the logical e
 ### **Adapters**
 This function block does not have any adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 When the event `REQ` occurs, the block performs the logical XOR operation on all seven Boolean inputs `IN1` to `IN7`. The result `OUT` is `TRUE` (1) if and only if an odd number of the inputs have the value `TRUE`. If the number of `TRUE` inputs is even (0, 2, 4, 6), the result is `FALSE` (0).
 
 Mathematically expressed: `OUT = IN1 XOR IN2 XOR IN3 XOR IN4 XOR IN5 XOR IN6 XOR IN7`

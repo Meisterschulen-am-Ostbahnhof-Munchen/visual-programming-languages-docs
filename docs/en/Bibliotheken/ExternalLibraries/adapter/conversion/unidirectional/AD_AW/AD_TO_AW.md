@@ -15,7 +15,8 @@ The block has no direct input/output events or data ports. All signals are route
 ### **Data Inputs**
 - **AD_IN.D1** (via socket `AD_IN`): Input data of type `DWORD`, which is converted into a WORD value.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 - **AW_OUT.D1** (via Plug `AW_OUT`): Output data of type `WORD`, containing the result of the conversion.
 
 ### **Adapters**
@@ -51,7 +52,8 @@ The entire process is event-driven and synchronous.
 ## State Overview
 As a composite block without its own ECC, **AD_TO_AW** has no internal states. Execution is purely event-driven and occurs atomically with each incoming event at the socket.
 
-**AD_TO_AW** ## Application Scenarios
+**AD_TO_AW**
+## Application Scenarios
 
 - **Adapter Adaptation**: When a control system provides data via a DWORD adapter, but a connected module or component expects a WORD adapter.
 - **Data Reduction**: Targeted truncation of a DWORD value to the lower 16 bits (WORD) for subsequent processing steps.

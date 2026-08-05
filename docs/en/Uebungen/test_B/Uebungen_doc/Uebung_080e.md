@@ -4,7 +4,8 @@
 ## Introduction
 This exercise demonstrates the use of an up counter (`E_CTU`) in conjunction with an event brake, implemented using `RT_E_REND` function blocks. The counter is controlled by two pushbuttons (single-click pushbuttons): one for counting (CU) and another for resetting (R). The count result is output to a digital output. The event brake provides time-based debouncing and decoupling of the events. No sub-application blocks are used; all function blocks are standard or device-specific library elements.
 
-``` ## Function Blocks Used (FBs)
+```
+## Function Blocks Used (FBs)
 
 - **DigitalInput_CLK_I1**
 - **Type**: `logiBUS::io::DI::logiBUS_IE`

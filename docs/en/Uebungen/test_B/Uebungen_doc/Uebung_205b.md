@@ -25,7 +25,8 @@ This exercise demonstrates the implementation of a **motor reversing interlock**
 - Adapter `timeOut` passes the timer status to the `E_TimeOut` block.
 
 `` internally, the protection timer qzms `qzms `qzms `qzms `000023qz
-``` ### Output Modules
+```
+### Output Modules
 
 - **Right-Hand Rotation** (Type `logiBUS::io::DQ::logiBUS_QX`)
 - Parameters: `QI = TRUE`, `Output = Output_Q5`

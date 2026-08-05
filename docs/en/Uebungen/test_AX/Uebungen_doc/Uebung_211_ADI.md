@@ -14,7 +14,8 @@ This exercise implements a standard IEC 61131-3 up counter (Counter Up, CTU) as 
 - **Data Inputs**: PV (Final Value)
 - **Functionality**: The block increments the internal counter CV (DINT) on every rising edge at the event input CU. When CV reaches the value PV, Q is set. A signal at input R resets CV to 0 and Q.
 
-``` ### Sub-Blocks: ADI_DINT_TO_DI
+```
+### Sub-Blocks: ADI_DINT_TO_DI
 - **Type**: adapter::conversion::unidirectional::ADI_DINT_TO_DI
 - **Internal Function Blocks Used**: None
 - **Parameters**: `OUT = DINT#5` (fixed end value)
@@ -44,7 +45,8 @@ This exercise implements a standard IEC 61131-3 up counter (Counter Up, CTU) as 
 - **Parameters**: `QI = TRUE`, `Input = Input_I2` (physical input)
 - **Functionality**: Reads the digital input I2 and makes it available as an adapter data output (IN) for the Reset R. Additionally, the event output INITO triggers a one-time initialization of the PV value.
 
-**Type**: Reads the digital input I2 and makes it available as an adapter data output (IN) for the Reset R. ### Sub-Blocks: Output_Q1
+**Type**: Reads the digital input I2 and makes it available as an adapter data output (IN) for the Reset R.
+### Sub-Blocks: Output_Q1
 
 - **Type**: logiBUS::io::DQ::logiBUS_QXA
 - **Internal Function Blocks Used**: None

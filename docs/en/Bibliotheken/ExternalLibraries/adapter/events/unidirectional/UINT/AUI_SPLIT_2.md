@@ -33,7 +33,8 @@ All three adapters are of type **AUI** and operate unidirectionally. Socket `IN`
 ## Functionality
 This component forwards every incoming AUI signal at socket `IN` simultaneously to both plugs `OUT1` and `OUT2`. No processing, filtering, or buffering of the data takes place—the data is copied and sent **1:1**. The distribution is strictly deterministic and without any additional delay (apart from the propagation time of the internal connection).
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Type**: The function block is identified by the attribute `GenericClassName` as `'GEN_AUI_SPLIT'` and can be instantiated at runtime using type-hash mechanisms (`TypeHash` is currently empty).
 - **No ECC (Execution Control Chart)**: Since there is no event-driven logic, the function block does not have a state machine. The routing is purely data-driven.

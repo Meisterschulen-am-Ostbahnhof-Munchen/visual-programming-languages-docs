@@ -11,7 +11,8 @@ The block stores a binary state. If both the set (SET) and reset (RESET) signals
 
 The block communicates exclusively via adapter interfaces. Traditional discrete inputs and outputs are not present, as these are encapsulated within the adapters.
 
-``` ### **Event Inputs**
+```
+### **Event Inputs**
 *No direct event inputs available (these are contained in sockets `SET1` and `RESET`).*
 
 ### **Event Outputs**
@@ -82,11 +83,13 @@ The following truth table describes the behavior of the function block (where `Q
 * **Adapter-Based Control Systems:** Ideal for projects that consistently utilize 4diac's adapter technology to avoid the "spaghetti code" of parallel event and data lines.
 * **Start/Stop Logic:** Implementing machine controls where the "on" signal (set) has priority or where continuous activation must be ensured as long as the button is pressed.
 * **Alarm Handling:** Storing alarm states that must be manually acknowledged (reset).
-* ## ⚖️ Comparison with similar components
+*
+## ⚖️ Comparison with similar components
 * **SR (Standard):** The `AX_FB_SR` is logically equivalent to the standard `SR` component of IEC 61131-3, but differs in that it uses `AX` adapters instead of discrete `BOOL` and `EVENT` pins.
 * **AX_FB_RS:** This is the counterpart with **reset dominance**. With the `AX_FB_RS`, if SET and RESET are applied simultaneously, the output would go to `FALSE`.
 * **E_SR:** An event-driven standard SR flip-flop without adapters.
-* ## Conclusion
+*
+## Conclusion
 
 The **AX_FB_SR** is a specialized component for structured, adapter-based programming in 4diac. It offers the classic functionality of a set-dominant memory element, but optimizes the graphical representation and handling by encapsulating signals in adapters. It is indispensable in applications based on modular and clearly structured interface definitions.
 

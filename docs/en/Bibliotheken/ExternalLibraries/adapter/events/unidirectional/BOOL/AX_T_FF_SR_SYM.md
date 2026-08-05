@@ -21,7 +21,8 @@ No direct data outputs. The current value is provided via adapter Q (Q.D1).
 ### **Adapters**
 - **Q**: Adapter of type `adapter::types::unidirectional::AX` (unidirectional). Provides the current state of the flip-flop as a Boolean value (TRUE/FALSE). The adapter triggers event Q.E1 after each state change.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block (FB) has three event inputs and a state machine with three states: `START`, `SET`, and `RESET`.
 

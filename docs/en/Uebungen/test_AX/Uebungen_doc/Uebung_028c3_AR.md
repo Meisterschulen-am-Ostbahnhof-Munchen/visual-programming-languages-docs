@@ -4,7 +4,8 @@
 ## Introduction
 This exercise demonstrates the calibration of an analog input (AnalogInput_I7) using a calibration adapter (AR_CALIBRATE) that loads an offset and a scaling factor from an INI file. The calibrated signal is passed to a hysteresis controller (Hysteresis_AR_AX), which switches a digital output (Output_Q2). Simultaneously, the calibrated value is displayed on a screen (Q_NumericValue_PHYSA). The exercise uses two inputs (I2, I3) to trigger the calibration and another input (I1) as an enable signal.
 
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 ### Sub-Blocks: None (all FBs are system-defined)
 - **AnalogInput_I7** (Type: `logiBUS::io::AI::logiBUS_AI_IDA`)

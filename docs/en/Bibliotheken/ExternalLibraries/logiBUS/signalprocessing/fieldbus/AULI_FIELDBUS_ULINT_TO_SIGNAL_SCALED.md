@@ -63,7 +63,8 @@ The function block operates in an event-driven manner. After an INIT event (at i
 
 The internal scaling block is of the same type as the outer one, meaning that the scaling logic could be recursive. However, in this design, the inner instance contains the actual computational logic. The outer shell adds the synchronization of the validity information and provides the adapter interfaces.
 
-The internal scaling block is of the same type as the outer one, meaning that the scaling logic could be recursive. ## Technical Features
+The internal scaling block is of the same type as the outer one, meaning that the scaling logic could be recursive.
+## Technical Features
 
 - **Adapted Inputs/Outputs:** The module uses adapters exclusively for data transmission. This enables loose coupling in fieldbus and component networks.
 - **Validity Synchronization:** The validation information is clocked via a D flip-flop so that it coincides with the output signal value.

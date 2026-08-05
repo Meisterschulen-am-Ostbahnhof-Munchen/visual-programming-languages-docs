@@ -16,7 +16,8 @@ The function block `NVS_AR` is used to load and store REAL data in non-volatile 
 - **KEY** (STRING) – Key name under which the value is stored/retrieved in the NVS.
 - **DEFAULT_VALUE** (REAL) – Default value that is returned if no entry with the specified key exists in the NVS.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 - **QO** (BOOL) – Output qualifier; indicates successful initialization.
 - **STATUS** (STRING) – Status message for error diagnosis or confirmation.
 

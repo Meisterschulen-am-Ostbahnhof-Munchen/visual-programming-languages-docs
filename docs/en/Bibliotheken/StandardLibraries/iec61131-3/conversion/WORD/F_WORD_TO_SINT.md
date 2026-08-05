@@ -21,7 +21,8 @@ The function block `F_WORD_TO_SINT` converts a `WORD` data type to a `SINT` data
 ### **Adapters**
 This function block has no adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When the `REQ` event is triggered, the algorithm is executed. This algorithm converts the `WORD` value at input `IN` into a `SINT` value and outputs the result at output `OUT`. Subsequently, the `CNF` event is triggered to signal the successful completion of the conversion.
 
 ## Technical Features

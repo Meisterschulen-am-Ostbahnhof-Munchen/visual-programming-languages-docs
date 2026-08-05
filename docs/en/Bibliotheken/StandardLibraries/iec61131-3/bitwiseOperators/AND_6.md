@@ -28,7 +28,8 @@ No adapter interfaces available.
 
 ## Functionality
 When the REQ event is triggered, the AND_6 block performs a bitwise AND operation on all six input values. The operation is performed separately for each bit position: The result bit at position i is only 1 if all six input bits at position i have the value 1. Once the calculation is complete, the CNF event is triggered and the result is made available at the OUT output.
-... ## Technical Features
+...
+## Technical Features
 - Uses the generic data type ANY_BIT, which supports various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)
 - All inputs must have the same data type
 - The result has the same data type as the inputs

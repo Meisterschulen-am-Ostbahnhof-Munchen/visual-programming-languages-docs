@@ -26,7 +26,8 @@ Upon receiving a `REQ` event, the DT value at input `IN` is converted to a DATE 
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The function block implements the conversion using the function `DT_TO_DATE`.
 - The conversion is atomic and occurs in a single execution step.
 

@@ -5,7 +5,8 @@
 This exercise implements a **toggle flip-flop** (changeover switch) using **event inputs** (IE) and a **rendezvous block** (`RT_E_REND`).
 The system expects two button events (inputs I1 and I2) that must arrive within a specific time limit (deadline). Only when both events have been synchronized is the flip-flop clocked and the digital output Q1 switched. A third button (I3) serves as a reset for the rendezvous mechanism.
 This exercise demonstrates how to handle time-critical event connections, rendezvous synchronization, and simple toggle functions in the 4diac IDE.
-... ## Function Blocks Used (FBs)
+...
+## Function Blocks Used (FBs)
 
 The SubApp uses the following (sub)blocks:
 

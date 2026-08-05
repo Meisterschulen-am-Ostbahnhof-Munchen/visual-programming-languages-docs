@@ -25,7 +25,8 @@ The PKP_2200_LI_DI defines global constants of type `PKP_2200_LI_DI_S`, which sp
 ### **Data Outputs**
 *No data outputs available - this is a global constant definition*
 
-## Functionality ## Technical Features
+#
+# Functionality ## Technical Features
 - **Data Type**: All constants use the structure type `PKP_2200_LI_DI_S`
 - **Pin Assignments**:
 - DigitalInput_Key_1: Pin 1

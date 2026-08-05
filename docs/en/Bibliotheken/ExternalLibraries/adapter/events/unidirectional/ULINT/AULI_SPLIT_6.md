@@ -43,7 +43,8 @@ This component functions as a pure signal distributor (splitter). An AULI signal
 
 Since there are no events or data inputs/outputs, communication is based entirely on the adapter interface. The component is event-free and is activated solely by connecting the adapters.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Type:** The function block is implemented as a generic function block (`GEN_AULI_SPLIT`), allowing it to be reused for various AULI variants.
 - **Unidirectional Adapters:** The adapters used are declared as unidirectional interfaces – they only support one direction of data flow (from the socket to the plugs).

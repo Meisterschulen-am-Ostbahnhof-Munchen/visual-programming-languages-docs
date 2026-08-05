@@ -55,7 +55,8 @@ OUT9 | `adapter::types::unidirectional::ASR` | Plug |
 
 The module receives an ASR signal via the socket adapter **IN**. This signal is internally routed to all nine output adapters (**OUT1** to **OUT9**). Thus, the identical ASR signal is present at each output. No delay or buffering occurs. The module is purely passive and does not perform any data transformation.
 
-## Functionality ## Technical Features
+#
+# Functionality ## Technical Features
 - **Generic Function Block:** This type is designed as a generic FB (GenericClassName `'GEN_ASR_SPLIT'`), allowing it to be parameterized with different ASR types depending on the project context.
 - **Unidirectional Adapters:** All adapters used are of type `unidirectional::ASR`, ensuring a clear data flow direction from the input to the outputs.
 - **No Events:** The function block has no event inputs or outputs. Data is transmitted solely via the adapter interfaces.

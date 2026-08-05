@@ -16,7 +16,8 @@ The function blocks used are from the libraries `isobus::UT` and `eclipse4diac::
 
 This function block represents a physical numeric input (e.g., an analog or digital input). When the input value changes, an event `IND` is triggered, and the current value is provided as a floating-point number at the output `rPhys`.
 
-``` ### `NVS`
+```
+### `NVS`
 - **Type**: `eclipse4diac::storage::INI`
 - **Parameters**:
 - `QI` = `TRUE`
@@ -30,7 +31,8 @@ This function block implements non-volatile storage using an INI file. A value c
 - On `SET`, the data value at `VALUE` is persistently stored.
 - On `GET`, the stored value is output at `VALUEO` (if no value is stored, `DEFAULT_VALUE` is used).
 
-... ### `Q_NumericValue`
+...
+### `Q_NumericValue`
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYS`
 - **Parameters**:
 - `stObj` = `InputNumber_I3`

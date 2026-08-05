@@ -13,7 +13,8 @@ The function block **OFF_SPLIT_6** is a generic block that distributes an incomi
 ### **Data Inputs**
 - No direct data inputs. Data transfer is implemented indirectly via the adapter socket.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 - No direct data outputs. The output data is provided via the adapter plugs.
 
 ### **Adapters**

@@ -64,7 +64,8 @@ This value is passed via an adapter connection to the initialization input `Q_IN
 
 *Note:* The storage of the current state back into the NVS is likely handled internally by the T-FF or another function block; in the network diagram shown, the storage is not visible as a separate function block.
 
-*Note:* ## Summary
+*Note:*
+## Summary
 
 This exercise illustrates:
 

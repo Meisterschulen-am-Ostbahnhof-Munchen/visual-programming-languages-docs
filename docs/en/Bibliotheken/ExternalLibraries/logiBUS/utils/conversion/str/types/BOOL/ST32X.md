@@ -55,7 +55,8 @@ Not applicable. The structure `ST32X` itself is the "output" because it represen
 ### **Adapters**
 Not applicable because `ST32X` is a user-defined data type and not a function block.
 
-### ## Functionality
+#
+## ## Functionality
 `ST32X` has no active "function" in the sense of logic or algorithms. It merely serves as a passive data container. Its function is to organize a group of 32 individual BOOL values into a single variable, which simplifies program structuring and the transfer of data between function blocks or program sections. The individual bits of the structure can be accessed, and their values can be set or read.
 
 ## Technical Specifications

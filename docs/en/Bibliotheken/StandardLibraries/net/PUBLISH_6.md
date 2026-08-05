@@ -30,7 +30,8 @@ No adapter interfaces are available.
 ## Functionality
 The PUBLISH_6 block initializes itself via the INIT event and confirms the initialization with INITO. Data can be sent via the REQ event, with up to six different data values (SD_1 to SD_6) being transmitted simultaneously. A CNF event is issued after successful data transmission. The block supports the publish-subscribe pattern, allowing multiple subscribers to receive the sent data.
 
-# ## Technical Features
+#
+## Technical Features
 - Support for up to six different data values of any type (ANY)
 - Use of WSTRING for status messages and channel identification
 - Unacknowledged send operations (REQ) with subsequent acknowledgment (CNF)

@@ -29,7 +29,8 @@ The following function blocks are used in the main network to initiate communica
 * `u16DefRepRate` = `500` (Cycle time in milliseconds)
 * **DataSupply** (`Uebungen::Uebung_126b_sub`):
 * A sub-application containing the logic for data generation (sine curve).
-* ### Sub-Blocks: DataSupply (Exercise_126b_sub)
+*
+### Sub-Blocks: DataSupply (Exercise_126b_sub)
 
 This sub-application encapsulates the logic for calculating sine values.
 

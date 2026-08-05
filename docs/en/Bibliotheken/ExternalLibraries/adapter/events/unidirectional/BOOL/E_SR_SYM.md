@@ -35,7 +35,8 @@ If an event arrives at **S** while the device is in the START state, it switches
 
 If the device is already in one of the active states (SET or RESET), it can be switched by the other event. This results in symmetrical behavior: Neither S nor R has a priority – the last received pulse determines the output.
 
-If the device is already in one of the active states (SET or RESET), it can be switched by the other event. ## Technical Features
+If the device is already in one of the active states (SET or RESET), it can be switched by the other event.
+## Technical Features
 
 - **Symmetrical Start Behavior:** Unlike classic SR flip-flops, which deliver a fixed initial value (usually `FALSE`) after startup, E_SR_SYM waits in the START state for the first event. Until then, the output \( Q \) remains in an undefined or unset state. This allows for flexible initialization by the environment.
 - **Three-State Machine:** The ECC uses the states START, SET, and RESET, as well as two algorithms (SET, RESET) in structured text.

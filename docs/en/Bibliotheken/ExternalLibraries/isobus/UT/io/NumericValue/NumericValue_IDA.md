@@ -68,7 +68,8 @@ Since this is a composite function block, its status is primarily determined by 
 ## ⚖️ Comparison with Similar Function Blocks
 * **NumericValue_ID:** This is the internal base function block. It offers the same functionality but provides the data via classic `IND`/`CNF` events and a `IN` data output. **NumericValue_IDA** is the adapter version of this function block.
 * **Other `_IDA` function blocks:** Similar to `Button_IDA` (for buttons) or `String_IDA` (for text), this function block follows the design pattern of providing terminal input via adapters.
-* ## 🛠️ Related Exercises
+*
+## 🛠️ Related Exercises
 * [Exercise_011_AUDI](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_011_AUDI.md)
 
 ## Conclusion

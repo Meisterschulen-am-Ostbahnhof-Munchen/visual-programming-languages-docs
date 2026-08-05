@@ -65,7 +65,8 @@ The previous color is output via the plug adapter `u8OldColour`.
 
 All the logic is encapsulated in a subordinate function block of the same family, so this block serves only as an outer shell for the adapter coupling.
 
-This function block executes the VT command and returns the status (`STATUS`) and the result (`s16result`) via the output `CNF`. ## Technical Features
+This function block executes the VT command and returns the status (`STATUS`) and the result (`s16result`) via the output `CNF`.
+## Technical Features
 
 - The initial value for `u16ObjId` is `ID_NULL`, meaning the function block must be initialized with a valid object ID before use.
 - Color values are transmitted as 8-bit values via the AUS adapter. The valid colors are defined in the VT standard color palette (ISO 11783-6 Annex A.3).

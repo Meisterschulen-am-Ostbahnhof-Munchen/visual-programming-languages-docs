@@ -3,7 +3,8 @@
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the functionality of the E_DEMUX_4 module in the 4diac IDE. The application shows how events can be distributed via a multiplexer and demultiplexer to control various digital outputs.
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 This exercise uses the following main function blocks:
 
@@ -27,7 +28,8 @@ This exercise uses the following main function blocks:
 
 The E_MUX_4 chip collects events from the four digital inputs and forwards them via a common output. The E_DEMUX_4 chip distributes these events to the corresponding digital outputs based on the K value. The direct data connections between inputs and outputs ensure a 1:1 signal transmission.
 
-``` ## Learning Objectives
+```
+## Learning Objectives
 
 - Understanding the functionality of multiplexers and demultiplexers
 - Working with event and data connections in 4diac

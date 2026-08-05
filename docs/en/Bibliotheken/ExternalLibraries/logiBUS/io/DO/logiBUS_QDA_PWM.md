@@ -95,7 +95,8 @@ The internal function block switches between these states depending on the event
 
 **ERROR:** Error state, indicated by *QO = FALSE* or *STATUS* with an error message.
 
-**The internal function block switches between these states depending on the events and data.** ## Application Scenarios
+**The internal function block switches between these states depending on the events and data.**
+## Application Scenarios
 
 - **Agricultural Machinery:** Control of PWM-driven actuators (e.g., hydraulic valves, engine speed) via a logiBUS network.
 - **Automation Systems:** Output of analog or pulse-width modulated signals with 32-bit resolution, controlled by a higher-level controller.

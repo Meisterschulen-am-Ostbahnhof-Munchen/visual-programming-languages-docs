@@ -36,7 +36,8 @@ The structure `ISONETEVENT_T` functions as a container or message object. When a
 * **Initial Values:** Two elements (`eNetEvent`, `eMemberRefer`) have defined initial values that reference enumerated types (`ISO_NETEVENT_e`, `ISOUSERHOME_e`). This ensures a defined initial state.
 * **ISOBUS Integration:** The structure is specifically designed for the ISOBUS context, as evidenced by the use of the type-specific `CF_NAME_T` and the parameter designations (SA, CF).
 * **Compiler Package:** The data type is assigned to the package `isobus::pgn`, indicating its association with ISOBUS Parameter Group Number (PGN) processing.
-* ## Application Scenarios
+*
+## Application Scenarios
 
 This data type is primarily used in scenarios where an application needs to be informed about dynamic changes in the ISOBUS network. Examples include:
 

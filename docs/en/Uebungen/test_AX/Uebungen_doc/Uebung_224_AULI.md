@@ -48,7 +48,8 @@ This exercise implements an up/down counter according to IEC 61131-3 (Type CTUD)
 
 **Functionality**: Receives the converted counter reading (AUDI) and outputs it as a numeric value to the configured terminal (ISOBUS).
 
-** ... ### Other Function Blocks Used (logiBUS I/O Connection)
+** ...
+### Other Function Blocks Used (logiBUS I/O Connection)
 
 - **Input_CU** (`logiBUS::io::DI::logiBUS_IXA`): Reads the digital input `Input_I1` (count up)
 - **Input_CD** (`logiBUS::io::DI::logiBUS_IXA`): Reads the digital input `Input_I2` (count down)

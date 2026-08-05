@@ -55,7 +55,8 @@ No standalone data outputs. The output data is provided via the adapter outputs.
 
 The module behaves like a 1-to-3 demultiplexer: The input signal is always routed to only one of the three outputs. The other two outputs do not provide a valid value (usually 0 or undefined).
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Function Block:** The function block is declared as a type with the generic class name `'GEN_AQ_DEMUX'`. This allows it to be used in various forms (e.g., with more outputs) by adapting the metadata.
 - **Adaptive Adapter Interface:** Using the type `adapter::types::unidirectional::AQ` enables loose coupling of signal sources and sinks. The exact AQ data structure may vary in the specific implementation.

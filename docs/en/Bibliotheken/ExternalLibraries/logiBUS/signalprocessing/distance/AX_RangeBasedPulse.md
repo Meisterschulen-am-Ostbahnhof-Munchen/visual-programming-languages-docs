@@ -70,7 +70,8 @@ The Execution Control Chart (ECC) consists of four states:
 - **Simple Edge Detectors:** Detect signal changes, but without hysteresis and without accumulating distance.
 - **Other Distance Adapter Function Blocks:** Function blocks exist that aggregate distance values, but this function block combines event processing with threshold logic and asymmetric configuration.
 
-** ## Conclusion
+**
+## Conclusion
 
 The `AX_RangeBasedPulse` function block offers a robust and flexible solution for distance-based pulse generation. Thanks to its adapter interface, separately configurable distance thresholds, and hysteresis logic, it is ideally suited for modular use in industrial control systems, particularly in agricultural technology and automation. Its implementation as a BasicFB ensures deterministic and predictable behavior.
 

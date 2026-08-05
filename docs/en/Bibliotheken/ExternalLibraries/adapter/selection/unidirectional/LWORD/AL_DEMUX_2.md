@@ -61,7 +61,8 @@ If `K` is a value outside the valid range (≥2), no forwarding occurs and no `C
 - **Generic Function Block**: The function block is declared as a generic type (`GEN_AL_DEMUX`) and can be reused for various AL adapter variants.
 - **Unidirectional Adapters**: All adapters used are of type `unidirectional::AL`, meaning that data flows only in one direction (from the socket to the plug). This simplifies the coupling and reduces potential side effects.
 - **No State Machine in the XML**: The logic is implemented implicitly through event handling; there is no explicit ECC, which keeps the implementation lean.
-- **No State Machine in the XML**: ## State Overview
+- **No State Machine in the XML**:
+## State Overview
 A formal state machine is not defined. The function block behaves as follows:
 
 - **Idle**: Waiting for `REQ`.

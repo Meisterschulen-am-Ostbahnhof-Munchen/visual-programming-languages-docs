@@ -1,7 +1,8 @@
 # Exercise_030: LED_PWM Flashing LED
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_030`. It demonstrates the advanced capabilities of LED control using pulse width modulation (PWM).
-``` ## 🎧 Podcast
+```
+## 🎧 Podcast
 ![Uebung_030_network](./Uebung_030_network.svg)
 
 * [3000 Watt Lie: The TVS Diode Decoded] ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/3000-Watt-Lge-Die-TVS-Diode-entschlsselt-e3aun8t)

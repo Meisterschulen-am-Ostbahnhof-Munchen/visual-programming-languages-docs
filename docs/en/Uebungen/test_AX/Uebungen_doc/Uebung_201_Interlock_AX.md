@@ -70,7 +70,8 @@ The sequence: To activate Q2, Q1 must first be active (because `ILOCK_IN` from b
 
 **Notes on operation**: The exercise can be tested in the 4diac IDE by loading the subapp type `Uebung_201_Interlock_AX` and then running it on a logiBUS hardware platform. The inputs should be activated alternately or sequentially to observe the sequential activation.
 
-** ## Summary
+**
+## Summary
 The exercise `Uebung_201_Interlock_AX` demonstrates the practical application of chained interlock devices (`ILOCK_IO_AX`) in a 4diac environment. Four independent input/output pairs are connected in series such that each subsequent output is only enabled if the preceding output is already active. This principle is frequently used in automation technology for startup sequences, safety interlocks, or machine safety. The learner deepens their understanding of adapter interconnection and the creation of dependency chains according to IEC 61499.
 
 ---

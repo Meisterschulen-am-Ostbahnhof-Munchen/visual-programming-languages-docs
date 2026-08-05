@@ -25,7 +25,8 @@ No adapters available
 ## Functionality
 Upon receiving a REQ event, the F_NOT block performs a bitwise logical NOT operation on the input value IN. Each bit of the input value is inverted (0 becomes 1, 1 becomes 0). The result is output at output OUT and confirmed by the CNF event.
 
-### ## Technical Features
+#
+## ## Technical Features
 - Supports the ANY_BIT data type, enabling use with various bit data types (BOOL, BYTE, WORD, DWORD, etc.)
 - Real-time capable execution
 - Standard-compliant implementation according to IEC 61131-3

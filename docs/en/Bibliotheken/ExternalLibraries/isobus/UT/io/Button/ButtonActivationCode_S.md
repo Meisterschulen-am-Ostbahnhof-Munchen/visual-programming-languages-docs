@@ -26,7 +26,8 @@ The structure `ButtonActivationCode_S` serves as a container for configuration d
 
 * The field `code` uniquely identifies the button within the system. The default value of 255 can be interpreted as an inactive or undefined state.
 * The field `bCyclic` determines the timing behavior when the button is continuously pressed. With `TRUE` (default), the corresponding event is repeatedly triggered at a fixed interval (e.g., every 200 ms). With `FALSE`, the event is triggered only once when the button is pressed (and possibly released), even if the button is held down.
-* ## Technical Features
+*
+## Technical Features
 * **Initial Values:** Both fields of the structure have predefined initial values, ensuring reliable initialization.
 * **Comment:** The field `bCyclic` contains a helpful comment that explains the specific effect (`do not repeat every 200ms`) directly in the declaration.
 * **Type Hash:** The data type contains an attribute (`eclipse4diac::core::TypeHash`) used for type checking and versioning within the 4diac environment.

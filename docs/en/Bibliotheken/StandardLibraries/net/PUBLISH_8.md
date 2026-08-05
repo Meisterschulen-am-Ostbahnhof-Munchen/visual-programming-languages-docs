@@ -30,7 +30,8 @@ No adapter interfaces are available.
 ## Functionality
 The PUBLISH_8 block enables data distribution via a publisher-subscriber model. Upon receiving a REQ event, all eight SD_x data values are sent to all subscribed SUBSCRIBE_8 blocks. The INIT initialization configures the block for communication, with the ID parameter serving to identify the publisher.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports up to eight different data values of any type (ANY)
 - Uses Wide-String (WSTRING) for ID and STATUS for international character support
 - Implements unacknowledged communication (REQ without direct acknowledgment)

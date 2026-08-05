@@ -11,7 +11,8 @@ The **TON** (Timer On-Delay) function block implements an on-delay. The output i
 
 **Output** | ET | TIME | Elapsed Time |
 
-**Output** ## Function
+**Output**
+## Function
 
 The behavior corresponds to **Table 46** (Standard Function Blocks Timers) and **Figure 15 b)** (Turn-on Delay (TON) Time Behavior) of the standard DIN EN 61131-3.
 

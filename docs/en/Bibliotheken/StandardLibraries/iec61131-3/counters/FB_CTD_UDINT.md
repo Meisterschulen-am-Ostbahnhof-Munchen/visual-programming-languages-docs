@@ -12,7 +12,8 @@ The function block `FB_CTD_UDINT` is a down counter for unsigned 32-bit integers
 ### **Event Outputs**
 - **CNF**: Execution confirmation. Triggered after the request has been processed and returns the current counter value and the output state.
 
-### ### **Data Inputs**
+#
+## ### **Data Inputs**
 - **CD** (BOOL): Counts down when `TRUE` is active and the counter value is greater than zero.
 - **LD** (BOOL): Loads the specified value (`PV`) into the counter when `TRUE` is active.
 - **PV** (UDINT): Specified value loaded into the counter when `LD` is active.

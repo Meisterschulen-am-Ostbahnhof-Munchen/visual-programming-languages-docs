@@ -38,7 +38,8 @@ No direct data outputs – the three identical AI signals are provided via the p
 | Plug | `OUT3` | `ADAPTER_AI` | Third output – identical to the input signal |
 
 The adapters are of type `adapter::types::unidirectional::AI`. The component is generic, meaning that the specific data structure of the AI signal (e.g., value, unit, status) is only defined during instantiation by the connected adapters.
-...` | `ADAPTER_AI` | qzmsdocs00009qz | ## Functionality
+...` | `ADAPTER_AI` | qzmsdocs00009qz |
+## Functionality
 
 The functional block forwards the analog signal received via socket `IN` unchanged and simultaneously to all three plug adapters `OUT1`, `OUT2`, and `OUT3`. No signal transformation, amplification, or delay takes place. The component functions purely as a **1-to-3 splitter**.
 

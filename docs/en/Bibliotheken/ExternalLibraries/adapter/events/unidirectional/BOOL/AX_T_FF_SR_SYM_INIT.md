@@ -71,7 +71,8 @@ The component has a finite state machine with five states: **START**, **INIT**, 
 
 The output `QO` is set to the current value of `QI` with each executed algorithm. It serves as an event qualifier for the INITO output.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Symmetrical Start-up Behavior**: The initial value of the output is set via `Q_INIT`, allowing for both set and reset start states.
 - **Event Qualifier QI**: The actual change to the adapter `Q.D1` (i.e., the flip-flop output) is only executed if `QI` = `TRUE`. With `QI = FALSE`, the events S, R, and CLK are processed (state change), but the adapter value remains unchanged.

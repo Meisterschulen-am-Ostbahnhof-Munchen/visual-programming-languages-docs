@@ -65,6 +65,7 @@ A graphical representation as a state machine is not required, as the logic is d
 - **SR Flip-Flop (Set-Reset)**: Has two data inputs (Set/Reset) and does not allow pure clock operation. The `AUDI_D_FF` is tailored to the simple D flip-flop application.
 - **AUDI Adapter-Based Function Blocks (e.g., `AUDI_D_FF_2`)**: Other implementations might include additional logic such as asynchronous reset. This function block implements the minimal D flip-flop without additional control functions.
 
-**SR Flip-Flop (Set-Reset)** ## Conclusion
+**SR Flip-Flop (Set-Reset)**
+## Conclusion
 
 The **AUDI_D_FF** represents a cleanly encapsulated, adapter-based implementation of a D flip-flop. By using the unidirectional `AUDI` adapter type, the interface is reduced to the essentials – one event and one data value per side. The internal use of the proven `E_D_FF_ANY` function block ensures robust, standards-compliant functionality. The function block is particularly suitable for modular architectures that rely on adapter connectivity and facilitates reuse in various control projects.

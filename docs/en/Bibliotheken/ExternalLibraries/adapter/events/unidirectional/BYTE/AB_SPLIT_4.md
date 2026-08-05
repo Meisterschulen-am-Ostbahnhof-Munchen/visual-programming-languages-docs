@@ -41,7 +41,8 @@ Plug | `OUT4` | `adapter::types::unidirectional::AB` | Fourth Outgoing Adapter C
 
 This component functions as a passive splitter at the adapter level. As soon as an adapter connection of type `AB` is established at socket `IN`, the component forwards the data or signals arriving via this connection unchanged to all four plugs `OUT1` to `OUT4`. The distribution occurs without data modification or buffering. The component has no events or data points of its own; all communication takes place exclusively via the adapter interfaces.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Design:** The function block is implemented as a generic FB (`GenericClassName = 'GEN_AB_SPLIT'`) and can therefore be used for various specific implementations of the adapter type `AB`.
 - **Unidirectionality:** The adapters are declared as unidirectional. This means that data flow occurs only in one direction (from the socket to the plugs). No return channels are provided.

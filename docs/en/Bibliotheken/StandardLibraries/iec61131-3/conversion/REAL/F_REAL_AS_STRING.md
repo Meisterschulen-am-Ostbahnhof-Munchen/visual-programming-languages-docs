@@ -25,7 +25,8 @@ When an event is present at input `REQ`, the algorithm is executed, converting t
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The function block uses the function `REAL_AS_STRING` for conversion.
 - It is a simple function block without a state machine.
 

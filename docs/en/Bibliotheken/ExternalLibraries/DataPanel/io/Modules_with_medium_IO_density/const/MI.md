@@ -13,7 +13,8 @@
 ## Introduction
 The MI Global Constants represent a collection of constants for medium I/O density modules. These constant definitions are used in the 4diac IDE to provide consistent and reusable addressing information for I/O modules.
 
-``` ## Interface Structure
+```
+## Interface Structure
 ### **Event Inputs**
 *No event inputs available*
 

@@ -21,7 +21,8 @@ The objective is to make local hardware inputs (`I1` to `I4`) available to the I
 * `Input`: The local input (e.g., `Input_I1`).
 * `iInpNr`: The number of the AUX input in the ISOBUS pool (index 0 to n).
 
-``` ### Configuration
+```
+### Configuration
 
 This exercise maps four inputs:
 

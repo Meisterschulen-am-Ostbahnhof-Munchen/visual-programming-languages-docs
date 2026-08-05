@@ -21,7 +21,8 @@ The function block `F_TIME_IN_NS_TO_UDINT` converts a time value in nanoseconds 
 ### **Adapters**
 This function block does not use any adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs the conversion by converting the nanosecond time value (`TIME`) received at `IN` into an unsigned 32-bit integer value (`UDINT`) using the function `TIME_IN_NS_TO_UDINT`. The conversion occurs synchronously with the triggering of the `REQ` event. After successful conversion, the `CNF` event is triggered, and the converted value is output to `OUT`.
 

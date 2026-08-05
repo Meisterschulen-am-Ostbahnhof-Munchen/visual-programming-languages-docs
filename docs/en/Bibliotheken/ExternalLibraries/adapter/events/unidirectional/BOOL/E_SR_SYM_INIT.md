@@ -60,7 +60,8 @@ Q ...8qz is then set to the value of `Q_INIT` (via the algorithms `SET` and `RES
 
 The qualification `QI` acts as an enable signal: Only if `QI = TRUE` is active do `S`, `R`, and the initialization affect the output `Q`. The output `QO` reflects the last valid value of `QI` (except after `DeInit`, in which case it is `QO = FALSE`).
 
-The qualification `QI` acts as an enable signal: `S`, `R`, and the initialization only affect the output `Q`. The output `QO` reflects the last valid value of `QI` (except after `DeInit`, in which case it is `QO = FALSE`). ## Technical Features
+The qualification `QI` acts as an enable signal: `S`, `R`, and the initialization only affect the output `Q`. The output `QO` reflects the last valid value of `QI` (except after `DeInit`, in which case it is `QO = FALSE`).
+## Technical Features
 
 - **Symmetrical Start-up**: After initialization, the value of `Q` is determined solely by `Q_INIT` – regardless of the previous state. This enables deterministic behavior after startup.
 - **Qualified Operations**: All actions (S, R, INIT) are only executed if `QI = TRUE` is active. This allows the function block to be switched on and off, for example, via a higher-level controller.

@@ -40,7 +40,8 @@ END_ALGORITHM
 - **Reset Dominance (Priority)**: The reset input (`R1`) takes precedence. If `S` and `R1` are simultaneously `TRUE`, the output `Q1` is set to `FALSE`.
 - **Storage Behavior**: The block retains its state as long as there is no change to `S` or `R1` (or no `REQ` event occurs).
 
-**Storage Behavior**: The block retains its state as long as there is no change to `S` or `R1` (or no `REQ` event occurs). ## State Overview
+**Storage Behavior**: The block retains its state as long as there is no change to `S` or `R1` (or no `REQ` event occurs).
+## State Overview
 The `FB_RS` evaluates the inputs at `REQ`:
 
 1. **Q1 = FALSE**: If `R1` is TRUE (regardless of `S`). -> **Reset Dominance**

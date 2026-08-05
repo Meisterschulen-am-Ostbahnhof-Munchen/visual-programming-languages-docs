@@ -71,7 +71,8 @@ After each state change, the event output `EO` is triggered.
 - **Conflict Handling:** If a set and a reset event occur simultaneously (e.g., `S` and `R`), the reset event takes precedence because the reset input of `E_SR` has multiple sources and is treated with priority. The exact priority is determined by the E_SR implementation (default: reset takes precedence over set).
 - **No Data Inputs:** The function block operates purely event-driven; its state is only changed by events.
 
-**No Data Inputs:** ## State Overview
+**No Data Inputs:**
+## State Overview
 
 The internal flip-flop `E_SR` has two states:
 

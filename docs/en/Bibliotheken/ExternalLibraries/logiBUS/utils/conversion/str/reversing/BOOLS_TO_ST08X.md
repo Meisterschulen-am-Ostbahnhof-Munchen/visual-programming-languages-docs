@@ -57,7 +57,8 @@ This function block specializes in converting eight BOOL values to the user-defi
 
 The main advantage of ``BOOLS_TO_ST08X`` lies in its use of a specific structure type, which offers higher type safety and better code organization compared to generic integer types.
 
-* **Logical Operators (AND, OR, XOR):** These operators combine Boolean values, but not into a structure; rather, they combine them into a single Boolean result. ## Conclusion
+* **Logical Operators (AND, OR, XOR):** These operators combine Boolean values, but not into a structure; rather, they combine them into a single Boolean result.
+## Conclusion
 
 The `BOOLS_TO_ST08X` function block is a simple yet extremely useful building block for converting eight individual BOOL signals into a standardized `ST08X` structure. It enhances the modularity and readability of 4diac applications by providing a clean and type-safe method for grouping bit information. This simplifies data handling and transmission in complex control systems.
 

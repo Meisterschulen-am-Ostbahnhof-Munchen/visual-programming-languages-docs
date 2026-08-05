@@ -38,7 +38,8 @@ The `AX_INTERLOCK_2` is implemented as a Basic Function Block (BFB) and has an E
 * **Dual Interlock**: The mutual exclusivity of the outputs is hard-coded at the state transition. In state `SET1`, `RESET2` is always called, and vice versa.
 * **Priority**: A global reset event (`R`) takes precedence and resets both outputs, regardless of other pending events or the current state.
 * **Adapter-Based Output**: The output values are not provided via classic data output pins, but via unidirectional adapters. This enables a clean, typed interface for connecting other components.
-* ## State Transition
+*
+## State Transition
 1. **START** (both outputs FALSE)
 
 * For `SET1` or `CLK1` -> **SET1** (OUT1=TRUE, OUT2=FALSE)

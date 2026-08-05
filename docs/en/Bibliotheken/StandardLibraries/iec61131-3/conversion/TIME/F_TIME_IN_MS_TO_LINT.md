@@ -24,7 +24,8 @@ This function block does not have any adapters.
 
 ### **Adapters**
 
-### **Data Inputs ... ## Functionality
+#
+## **Data Inputs ... ## Functionality
 When the event input `REQ` is triggered, the algorithm is executed, which converts the time value `IN` into milliseconds and outputs the result as `LINT` via the output `OUT`. The event `CNF` signals the successful completion of the conversion.
 
 ## Technical Features

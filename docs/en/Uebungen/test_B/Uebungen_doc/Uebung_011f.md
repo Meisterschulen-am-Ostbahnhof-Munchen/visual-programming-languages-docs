@@ -35,7 +35,8 @@ This event is directly connected to the event input `REQ` of the function block 
 The function block `Q_NumericValue_PHYS` then writes the received value to the physical output object N3.
 
 The entire subapplication thus functions as a transparent pass-through from I3 to N3.
-... ## Program Flow and Connections
+...
+## Program Flow and Connections
 
 - **Event Connection**: `NumericValue_PHYS.IND` → `Q_NumericValue_PHYS.REQ`
 - **Data Connection**: `NumericValue_PHYS.rPhys` → `Q_NumericValue_PHYS.rPhys`

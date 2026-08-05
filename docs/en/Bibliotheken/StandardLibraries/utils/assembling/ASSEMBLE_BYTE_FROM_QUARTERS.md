@@ -27,7 +27,8 @@ The function block `ASSEMBLE_BYTE_FROM_QUARTERS` combines four individual quarte
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block accepts four quarter bytes and combines them into a complete byte. The individual quarter bytes are shifted to the correct position in the resulting byte using bit shift operations (`SHL`) and joined together using logical OR operations (`OR`). The precise shifts are defined by constants (`quarterconst::SHIFT_QUARTER_00` to `quarterconst::SHIFT_QUARTER_03`).
 

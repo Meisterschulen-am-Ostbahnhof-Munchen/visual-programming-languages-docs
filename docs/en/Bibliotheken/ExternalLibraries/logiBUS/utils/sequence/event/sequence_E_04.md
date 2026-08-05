@@ -71,9 +71,11 @@ An event `RESET` executes all necessary exit algorithms for the active states an
 * **Step-by-Step Controls**: Control of machines or systems with a fixed, step-by-step workflow (e.g., pick-and-place, filling systems).
 * **Process Timing**: Synchronization of subprocesses where each step is triggered manually or by a sensor signal.
 * **Manual Operating Sequences**: Implementation of guided operating sequences where the operator must confirm each step.
-* ## ⚖️ Comparison with Similar Function Blocks
+*
+## ⚖️ Comparison with Similar Function Blocks
 Unlike a `E_CYCLE` or `E_DELAY` function block, `sequence_E_04` offers purely event-driven transitions, not time-controlled ones. Compared to a generic `E_SR` (flip-flop) or a combination of `E_D_FF` (D flip-flop), this function block implements a predefined state machine with multiple steps and clear reset logic. It is more specialized and structured than an ad-hoc implementation using multiple individual function blocks.
 
-... ## Conclusion
+...
+## Conclusion
 
 The `sequence_E_04` is a robust and easy-to-use sequencer for IEC 61499. Its clear, event-driven interface and explicit state management make it ideal for applications requiring deterministic, step-by-step execution. The integrated reset functionality and state feedback via `CNF` and `STATE_NR` support secure and well-monitored integration into higher-level controllers.

@@ -17,7 +17,8 @@ Two digital inputs (I1, I2) serve as control signals for the direction of rotati
 - `UP_OUT` → Clockwise rotation
 - `DOWN_OUT` → Counterclockwise rotation
 - `OR_OUT` → Low-side driver (active as soon as a direction is active)
-- The internal implementation is defined in the file `AX_2_TO_3.subapp` and is used as a black box in this exercise. ### Further Function Blocks
+- The internal implementation is defined in the file `AX_2_TO_3.subapp` and is used as a black box in this exercise.
+### Further Function Blocks
 - **DigitalInput_I1**, **DigitalInput_I2**
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
 - **Parameters**:

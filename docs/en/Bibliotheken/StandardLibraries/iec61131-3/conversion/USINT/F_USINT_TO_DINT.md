@@ -22,7 +22,8 @@ The function block `F_USINT_TO_DINT` converts a `USINT` value (8-bit unsigned in
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block directly assigns the input value `IN` (of type `USINT`) to the output `OUT` (of type `DINT`). Since `DINT` has a larger bit width than `USINT`, the value is extended without data loss.
 

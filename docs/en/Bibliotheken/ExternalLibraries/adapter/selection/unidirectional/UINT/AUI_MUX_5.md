@@ -51,7 +51,8 @@ The function block **AUI_MUX_5** is a generic multiplexer for five unidirectiona
 
 **Socket** | IN5 | adapter::types::unidirectional::AUI | Fifth input (activates when K=4). |
 
-**Socket** ## Functionality
+**Socket**
+## Functionality
 
 The **AUI_MUX_5** operates like a classic multiplexer: After an event at the **REQ** input, the current value of the **K** index is evaluated. Depending on **K** (0..4), the corresponding adapter socket (**IN1** to **IN5**) is switched to the **OUT** plug. The switching is unidirectional; the signal flows from the selected input to the output. After successful switching, the **CNF** event is output.
 

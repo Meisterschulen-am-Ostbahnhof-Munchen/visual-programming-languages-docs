@@ -70,7 +70,8 @@ The function block has a single state, `REQ`:
 ## Comparison with Similar Function Blocks
 - **GET_DWORD with Simple Input:** A hypothetical function block with a normal data input (`VarInput`) would not pass the value by reference, but would use the current input value with each event. In contrast, `GET_DWORD` with InOut offers a fixed binding to a specific variable, which is more consistent in scenarios with multiple accesses to the same variable.
 - **SET_DWORD:** The symmetric function block `SET_DWORD` would *set* the value of an InOut variable, while `GET_DWORD` only reads it. Both use the InOut concept, but with opposite actions.
-- ## Conclusion
+-
+## Conclusion
 
 `GET_DWORD` is a simple yet useful building block for the controlled retrieval of a DWORD value from an externally referenced variable. Its strength lies in buffering the value and separating the source (InOut) from the output (OUT). Thanks to its simple state machine and the standardized `REQ`/`CNF` interface pattern, it can be easily integrated into existing 4diac applications.
 

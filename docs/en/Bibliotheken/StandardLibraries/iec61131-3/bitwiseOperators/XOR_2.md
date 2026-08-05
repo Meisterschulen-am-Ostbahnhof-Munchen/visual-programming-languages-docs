@@ -31,7 +31,8 @@ Upon receiving the REQ event, the XOR_2 block performs a bitwise XOR operation b
 
 After the calculation is complete, the result is output via the OUT output, and the CNF event is sent to confirm execution.
 
-- If the bits are different, the result bit is set to 1. ## Technical Features
+- If the bits are different, the result bit is set to 1.
+## Technical Features
 - **Generic Implementation**: Supports all ANY_BIT data types (BOOL, BYTE, WORD, DWORD, LWORD)
 - **Bitwise Operation**: Performs the XOR operation at the bit level
 - **Event-Driven Execution**: Synchronization via REQ/CNF events

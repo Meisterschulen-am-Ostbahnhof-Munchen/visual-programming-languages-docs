@@ -20,7 +20,8 @@ The function block `F_STRING_AS_DWORD` converts a `STRING` value to a `DWORD` va
 ### **Adapters**
 - No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block converts the input value `STRING`, `IN`, into a value `DWORD` as soon as the event `REQ` is triggered. The conversion is performed using the function `STRING_AS_DWORD`. After successful conversion, the event `CNF` is triggered, and the result value is available at the output `OUT`.
 

@@ -21,7 +21,8 @@ The function block `F_TIME_IN_US_TO_LREAL` converts a time value in microseconds
 ### **Adapters**
 This function block does not use adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs the conversion by transforming the `TIME` input value `IN` into a `LREAL` value using the function `TIME_IN_US_TO_LREAL`. The result is passed to the output `OUT` and confirmed by the event `CNF`.
 

@@ -74,7 +74,8 @@ The data and event flow within the sub-application is as follows:
 
 * The result of the OR operation triggers the hardware output `QX`.
 * Simultaneously, the result is passed to the sub-application `GreenWhiteBackground`. As soon as the hardware output is active (confirmed by `QX.CNF`), the visualization is updated (the softkey will likely be highlighted in green).
-* ## Summary
+*
+## Summary
 
 The exercise/module `Uebung_039_sub_Outputs` presents a robust module for actuator control. It demonstrates how to implement logical decoupling of automatic and manual operation in 4diac and link this directly to physical hardware and a user interface. By encapsulating it in a sub-application, this module can be instantiated multiple times to control different outputs of a machine (e.g., in a mirror sequence) identically.
 

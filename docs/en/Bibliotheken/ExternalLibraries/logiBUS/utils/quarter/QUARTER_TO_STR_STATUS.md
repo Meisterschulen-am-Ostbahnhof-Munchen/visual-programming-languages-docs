@@ -69,7 +69,8 @@ The ECC consists of six states:
 * **`E_SELECT` or `E_MUX`:** These can also choose between different paths/values, but are more generic and not specifically designed for converting to strings with predefined quarter-state values.
 * **Simple `STRING` assignment:** A direct assignment in ST code could achieve something similar, but the `QUARTER_TO_STR_STATUS` block encapsulates the logic, promotes reusability, and enforces the use of standardized constants, thus increasing consistency across the entire project.
 
-**`STRING` assignment:** A direct assignment in ST code could accomplish something similar, but the `QUARTER_TO_STR_STATUS` block encapsulates the logic, promotes reusability, and enforces the use of standardized constants, increasing consistency throughout the project. ## 🛠️ Related Exercises
+**`STRING` assignment:** A direct assignment in ST code could accomplish something similar, but the `QUARTER_TO_STR_STATUS` block encapsulates the logic, promotes reusability, and enforces the use of standardized constants, increasing consistency throughout the project.
+## 🛠️ Related Exercises
 
 * [Exercise_055](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)]
 * [Exercise_056](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)]

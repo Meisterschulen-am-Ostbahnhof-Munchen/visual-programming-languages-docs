@@ -14,7 +14,8 @@ The function block does not have separate event outputs. The event is output via
 ### **Data Inputs**
 The function block does not have separate data inputs. The input data (BOOL) is provided via the socket adapter `AX_IN` (data point `D1`, type `BOOL`).
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 
 This function block does not have separate data outputs. The output data (WORD) is provided via the plug adapter `AW_OUT` (data point `D1`, type `WORD`).
 

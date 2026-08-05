@@ -17,7 +17,8 @@ This exercise demonstrates the output of a numeric value using a button press ev
 - **Functionality**: Receives a 32-bit value (here via the adapter) and outputs it via the ISOBUS object with the object ID `OutputNumber_N1`. This enables the display of a numeric value on an ISOBUS terminal.
 
 **Type**: u16ObjId = OutputNumber_N1
-**Function**: Receives a 32-bit value (here via the adapter) and outputs it via the ISOBUS object with the object ID `OutputNumber_N1`.** This allows the display of a numeric value on an ISOBUS terminal. ## Program Flow and Connections
+**Function**: Receives a 32-bit value (here via the adapter) and outputs it via the ISOBUS object with the object ID `OutputNumber_N1`.** This allows the display of a numeric value on an ISOBUS terminal.
+## Program Flow and Connections
 
 The function blocks are connected as follows:
 

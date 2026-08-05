@@ -20,7 +20,8 @@ The function block `F_TIME_IN_NS_TO_ULINT` converts a `TIME` value in nanosecond
 ### **Adapters**
 No adapters are available.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block converts the nanosecond value `TIME` (`IN`) to a nanosecond value `ULINT` (`OUT`) as soon as the event `REQ` is triggered. The conversion is performed using the function `TIME_IN_NS_TO_ULINT`. After the conversion is complete, the event `CNF` is triggered.
 

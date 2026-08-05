@@ -24,7 +24,8 @@ The AB2_BYTE_TO_B function block is a composite function block used for conversi
 
 ## Functionality
 The function block receives a conversion request via the REQ event and forwards the incoming BYTE data (OUT) to the AB2 adapter. The adapter performs the actual conversion and, upon successful completion, sends back a CNF event along with the converted BYTE data (IN).
-... ## Technical Features
+...
+## Technical Features
 - Composite function block with integrated adapter
 - Bidirectional data transmission
 - Uses BYTE as the primary data type

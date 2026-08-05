@@ -10,7 +10,8 @@ The function block `ASSEMBLE_WORD_FROM_BYTES` combines two byte values into a si
 ### **Event Outputs**
 - **CNF**: Signals successful merging of the bytes into a WORD.
 
-### ### **Data Inputs**
+#
+## ### **Data Inputs**
 - **BYTE_00**: The least significant byte (LSB) of the resulting WORD.
 - **BYTE_01**: The most significant byte (MSB) of the resulting WORD.
 

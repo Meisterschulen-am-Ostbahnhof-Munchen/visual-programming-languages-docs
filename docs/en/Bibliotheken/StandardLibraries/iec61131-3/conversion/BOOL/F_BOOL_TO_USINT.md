@@ -24,7 +24,8 @@ This function block does not use adapters.
 ### **Adapters**
 
 ### **Adapters**
-**** ## Functionality
+****
+## Functionality
 
 The function block performs the conversion by transforming the Boolean value `IN` into a numeric value:
 

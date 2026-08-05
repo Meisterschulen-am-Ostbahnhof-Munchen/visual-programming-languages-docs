@@ -43,7 +43,8 @@ The module operates **eventlessly** and **continuously**:
 
 As soon as socket `IN` is connected to an AUDI adapter, the data or signals transmitted via this adapter are forwarded unchanged to all four output adapters (`OUT1` to `OUT4`). No processing or conversion of the data takes place – the module functions solely as a passive distributor (splitter). Since no events or state changes are involved, the distribution occurs implicitly through the connection structure.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Function Block**: The function block is declared as a generic type with the class name `'GEN_AUDI_SPLIT'`. This allows the specific adapter type (e.g., a specialized AUDI subtype) to be adapted at design time or through code generation.
 - **Unidirectional Adapters**: All adapters used (`AUDI`) are unidirectional, meaning data flows only from the socket to the plugs.

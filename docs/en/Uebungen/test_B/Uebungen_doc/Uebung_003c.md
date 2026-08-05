@@ -1,7 +1,8 @@
 # Exercise_003c: DigitalInput_I1-2-3-4 on AUX
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003c`. It demonstrates how to connect local hardware inputs to the ISOBUS system as "Auxiliary Inputs," using a standardized sub-application for structuring.
-[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)] ## 🎧 Podcast
+[![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)]
+## 🎧 Podcast
 * [Old Bavarian for Beginners: From Gratler Colds to City Dwellers – A Sound Journey Through Lesson 3C](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Altbayerisch-fr-Einsteiger-Von-Gratler-Schnupfen-und-Stadthodern--Eine-Laute-Reise-durch-Lektion-3C-e376jh4)
 
 ----
@@ -23,7 +24,8 @@ The objective is to make local physical switches (`I1` to `I4`) available for th
 
 Internally, the events (`IND -> REQ`) and data (`IN -> OUT`) are passed from the `logiBUS_IX` to the `Aux_QX` module.
 
-... ### Channel Configuration
+...
+### Channel Configuration
 
 In `Uebung_003c`, the mapping is as follows:
 

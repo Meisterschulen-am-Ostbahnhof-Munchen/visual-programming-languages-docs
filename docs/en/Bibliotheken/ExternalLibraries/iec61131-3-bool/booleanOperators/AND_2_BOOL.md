@@ -24,7 +24,8 @@ The interface of the `AND_2_BOOL` function block is simple and clearly structure
 ### **Adapters**
 This function block has no adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 The `AND_2_BOOL` block functions deterministically and follows classic Boolean logic:
 
 1. **Trigger:** The occurrence of the event `REQ` starts the execution.
@@ -84,7 +85,8 @@ The `AND_2_BOOL` block is a fundamental building block in control and automation
 * **`AND_n` (generic):** The generic `GEN_AND` building block can be configured for more than two inputs and other data types (e.g., `WORD`, `DWORD`). `AND_2_BOOL` is a specific instance of this, fixed to two Boolean inputs, which can be used more easily and directly in Boolean logic circuits. See: [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.md)
 * **`OR_2_BOOL` / `XOR_2_BOOL`:** These blocks implement other basic Boolean operations (OR and exclusive OR, respectively). They have the same event-driven interface (`REQ`/`CNF`), but perform a different logical operation on the inputs `IN1` and `IN2`.
 * **Combinatorial Logic in SFC/ST:** The AND function could also be directly encoded in Structured Text (ST) using the `&` or `AND` operator. The advantage of the `AND_2_BOOL` function block lies in its standardized, reusable, and graphically linkable form within the 4diac function block network (FBN).
-* **Combinatorial Logic in SFC/ST:** The AND function could also be directly encoded in Structured Text (ST) using the `&` or `AND` operator. ## 🛠️ Related Exercises
+* **Combinatorial Logic in SFC/ST:** The AND function could also be directly encoded in Structured Text (ST) using the `&` or `AND` operator.
+## 🛠️ Related Exercises
 * [Exercise_002a4](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a4.md)]
 * [Exercise_002b3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b3.md)]
 * [Exercise_006a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006a3.md)]

@@ -32,7 +32,8 @@ These blocks convert an input value of adapter type `AD` (provided by the preced
 
 This block performs the addition of two `AUDI` input values. The inputs `IN1` and `IN2` are supplied with the converted values via adapter connections. The output `OUT` provides the result as a `AUDI` sum.
 
-``` ### Sub-module: `Q_NumericValue_AUDI`
+```
+### Sub-module: `Q_NumericValue_AUDI`
 
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameters**:

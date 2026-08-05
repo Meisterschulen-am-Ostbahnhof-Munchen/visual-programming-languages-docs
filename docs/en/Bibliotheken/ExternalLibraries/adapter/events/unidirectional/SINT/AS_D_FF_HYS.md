@@ -46,7 +46,8 @@ No direct data outputs – the output value is provided via the `Q` adapter.
 
 The `AS` (unidirectional) adapters typically have an event port `E1` and a data port `D1`. The socket `I` provides the clock signal via `I.E1` and the data value to be latched via `I.D1`. The plug `Q` outputs an event via `Q.E1` and the filtered output value via `Q.D1`.
 
-The socket `I` provides the clock signal via `I.E1` and the data value to be latched via `I.D1`. ## Functionality
+The socket `I` provides the clock signal via `I.E1` and the data value to be latched via `I.D1`.
+## Functionality
 
 The FB receives a clock signal (event `I.E1`) and a data value (`I.D1`) via the adapter `I`. With each clock cycle, the current data value is compared to the last output value, taking the hysteresis band into account. The output `Q.D1` only changes if the new input value is outside the interval `[letzter Ausgangswert - HYSTERESIS , letzter Ausgangswert + HYSTERESIS]`. This suppresses small fluctuations (noise) around the set operating point.
 

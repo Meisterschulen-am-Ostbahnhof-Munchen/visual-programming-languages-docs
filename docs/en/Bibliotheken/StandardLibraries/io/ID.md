@@ -41,7 +41,8 @@ No adapter interfaces available.
 ## Functionality
 The ID block functions as a service interface for double-word input. During initialization (INIT), the service parameters are configured. Subsequently, input data can be selectively queried from the connected resource via REQ events. The block returns the read data via the IN outputs along with status information.
 
-# ## Technical Features
+#
+## Technical Features
 - Processes 32-bit data (DWORD)
 - Supports both requested (REQ/CNF) and spontaneous (IND) data transmissions
 - Flexible parameter configuration via STRING parameters

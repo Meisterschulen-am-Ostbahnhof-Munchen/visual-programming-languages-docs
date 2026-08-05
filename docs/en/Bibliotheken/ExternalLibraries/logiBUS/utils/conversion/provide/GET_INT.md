@@ -63,7 +63,8 @@ Since **IN** is declared as an InOut parameter, the function block directly acce
 - **Buffering**: The output **OUT** retains its value until the next **REQ** call. This ensures that the output value is independent of any changes to the source between two read cycles.
 - **Initial Values**: Both **IN** and **OUT** start with 0, so defined values are available even without prior execution.
 
-## Technical Features** ## State Overview
+#
+# Technical Features** ## State Overview
 The function block (FB) has a single state: **REQ**
 
 - **REQ**: When activated, the algorithm `REQ` is executed, followed by the **CNF** event. The state persists (no transition to another state).

@@ -31,7 +31,8 @@ Plugs | OUT2 | OFF (unidirectional) | Second output adapter, identical to the in
 ## Functionality
 The module forwards the OFF signal present at socket **IN** unchanged to both plugs **OUT1** and **OUT2**. No processing or buffering takes place – the distribution is purely topological. The input signal is available at both outputs simultaneously and without delay. The connection is only activated when the socket is connected to a corresponding adapter.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Type**: The function block is declared as `GEN_AUS_SPLIT` with the attribute `eclipse4diac::core::GenericClassName`. This allows it to be reused in different projects without type modification.
 - **No State Dependency**: The function block operates statelessly – there is no internal behavior controlled by a state machine.

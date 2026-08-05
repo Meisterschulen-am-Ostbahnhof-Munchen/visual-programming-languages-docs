@@ -48,7 +48,8 @@ According to **DIN EN 61499-1 (Table A.1, Note 8)**, the implementation of this 
 - **[E_RS](E_RS.md)**: Functionally identical to `E_SR`. The only difference is the graphical arrangement of the `S` and `R` connections on the symbol.
 - **`E_D_FF`**: Also stores a state, but on a clock-based basis. `E_D_FF` takes the value from the `D` input when a `CLK` event occurs.
 
-`E_D_FF` ## 🛠️ Related exercises
+`E_D_FF`
+## 🛠️ Related exercises
 
 * [Uebung_004b](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b.md)
 * [Uebung_004b2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b2.md)

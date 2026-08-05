@@ -77,7 +77,8 @@ The function block is purely functional and does not have its own finite state m
 * **Parameterizable Operating Modes:** Selection between two parameter sets (e.g., IN0 = Normal Operation, IN1 = Test Mode) via a central selector signal.
 * **Error Value Substitution Circuit:** If a primary value (IN0) is invalid, the substitute value (IN1) can be activated via the adapter.
 * **Adapter-Mediated Control:** Connection to higher-level systems that send a selection criterion via an AX adapter (e.g., a digital output of a PLC).
-* ## Comparison with Similar Function Blocks
+*
+## Comparison with Similar Function Blocks
 
 Compared to the standard **F_SEL** (IEC 61131-3), **AUI_AX_SEL_REQ** offers event-driven encapsulation with adapter connectivity. While F_SEL operates in pure function block languages without events, AUI_AX_SEL_REQ is specifically optimized for event-driven execution in 61499 systems. In contrast to a **MUX block** (multiplexer with more than two inputs), this block is limited to two selection options and uses a dedicated adapter instead of an additional data input for selection.
 

@@ -58,7 +58,8 @@ The function block is activated either by an event at input `REQ` or by an event
 - **Internal Use of the Standard Block `F_EQ`:** The actual comparison logic is implemented by the IEC 61131 block `F_EQ`. This ensures standards compliance and reusability.
 - **Adapter-Based Input/Output:** The adapters `AUI` and `AX` enable a standardized, modular connection in 4diac architectures.
 
-**Internal Use of the Standard Block `F_EQ`:** ## State Overview
+**Internal Use of the Standard Block `F_EQ`:**
+## State Overview
 The FB does not have its own ECC, but delegates execution to the internal `F_EQ`. Its behavior is purely event-driven:
 
 - Upon the arrival of an event (REQ or IN1.E1), a comparison is performed once.

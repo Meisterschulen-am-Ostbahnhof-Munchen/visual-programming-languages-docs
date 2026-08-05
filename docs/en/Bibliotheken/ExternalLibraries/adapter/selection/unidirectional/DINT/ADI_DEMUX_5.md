@@ -52,7 +52,8 @@ Plug | `OUT5` | ADI (unidirectional) | Fifth output destination adapter. |
 ## Functionality
 When an event arrives at input `REQ`, the current value of index `K` is evaluated. The function block copies the ADI value present at socket `IN` to the plug whose number corresponds to the value of `K` (OUT1 for K=1, OUT2 for K=2, … OUT5 for K=5). After successful transmission, an acknowledgment event is sent at output `CNF`. For K values outside the range 1-5, no output is activated, but a `CNF` is still sent to complete the protocol.
 
-Function block ## Technical Features
+Function block
+## Technical Features
 
 - **Generic Base Block**: The function block is implemented as a generic type `GEN_ADI_DEMUX`, which is parameterized at runtime with the specific adapter interface.
 - **Unidirectional**: Both inputs and outputs use the unidirectional ADI adapter, meaning that data is only forwarded from the socket to a plug; no feedback is provided.

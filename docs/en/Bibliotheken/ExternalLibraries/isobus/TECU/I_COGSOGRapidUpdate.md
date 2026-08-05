@@ -33,7 +33,8 @@ This function block has no adapter interfaces.
 ## Functionality
 The block acts as a passive receiver for the NMEA 2000 PGN 129026. After initialization via `INIT` with `QI=TRUE`, it waits for incoming data frames. Upon receiving a valid frame, the contained data (COG, SOG, reference, SID) is decoded and made available via the `IND` output along with the associated data values. Simultaneously, `Q_timeout` is set to `FALSE`. If no new data frame occurs within a configured time window, a `TIMEOUT` event is generated, and `Q_timeout` is set to `TRUE`. The `STATUS` output can be used for diagnostic purposes.
 
-`STATUS` ## Technical Features
+`STATUS`
+## Technical Features
 * **NMEA 2000 Compliance**: Implements the specification for PGN 129026 exactly.
 * **Resolution**: The physical values for heading and speed are encoded in the fixed resolutions defined in the NMEA standard (COG: 0.0001 rad/LSB, SOG: 0.01 m/s/LSB). Conversion to more common units (degrees, knots) must be performed in subsequent blocks, if necessary.
 * **Sequencing**: The `SID` supports the correlation of data sent simultaneously in different PGNs.

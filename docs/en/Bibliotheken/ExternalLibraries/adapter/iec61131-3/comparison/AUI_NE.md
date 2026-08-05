@@ -19,7 +19,8 @@ The FB does not have direct event inputs. Events are received via the **socket a
 
 Both events trigger the activation of the internal `F_NE` module.
 
-`| ... ### **Event Outputs**
+`| ...
+### **Event Outputs**
 
 The FB has no direct event outputs. The result is output via the **Plug Adapter** `OUT`:
 

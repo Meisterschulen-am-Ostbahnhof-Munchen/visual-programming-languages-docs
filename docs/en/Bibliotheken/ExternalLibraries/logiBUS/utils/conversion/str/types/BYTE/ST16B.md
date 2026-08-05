@@ -16,7 +16,8 @@ Not applicable, as `ST16B` is a data type and not a function block, and therefor
 ### **Data Outputs**
 Not applicable, as `ST16B` is a data type and not a function block, and therefore does not have direct data outputs in the context of function block connections.
 
-### ### **Adapter**
+#
+## ### **Adapter**
 Not applicable, as `ST16B` is a data type and not a function block, and therefore does not implement any adapter interfaces.
 
 ### Component Data Structure

@@ -60,7 +60,8 @@ The normalOperation* algorithm sets `QO := QI` (still `TRUE`) and transfers the 
 
 Important: The normal operation is only executed if `QI = TRUE` is present. In the `REQ` event, the algorithm is executed, but `DO1` remains unchanged (it is not set to `DI1`; instead, the last value or the default value `FALSE` remains as defined by the algorithm – in `QI = FALSE`, the IF condition is not met, therefore `DO1` does not change).
 
-``QI = FALSE`` ## Technical Features
+``QI = FALSE``
+## Technical Features
 
 - **Event Dependency of QI**: The transitions `INIT[TRUE = QI]` and `INIT[FALSE = QI]` demonstrate that the same event, `INIT`, triggers different state transitions depending on the value of `QI`. This enables compact control of initialization and deinitialization via a single event.
 - **Automatic Fallback**: After a `REQ` event, the function block returns to the **Initialized** state without an external event (transition with condition `1`). This simplifies integration into cyclic processes.

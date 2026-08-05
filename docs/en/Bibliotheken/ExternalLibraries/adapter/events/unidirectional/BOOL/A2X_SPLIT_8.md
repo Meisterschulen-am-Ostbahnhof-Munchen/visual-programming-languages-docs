@@ -14,7 +14,8 @@ Not present.
 Not present.
 
 ### **Data Outputs**
-Not present. ### **Adapters**
+Not present.
+### **Adapters**
 
 The FB has the following adapter interfaces:
 

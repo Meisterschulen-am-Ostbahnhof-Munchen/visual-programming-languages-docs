@@ -3,7 +3,8 @@
 * * * * * * * * * *
 ## Introduction
 DataPanel_MI_DO is a global constant definition for medium I/O density DataPanel modules for digital outputs. This constant defines a structured mapping of pins for various digital output channels and power supply ports.
-``` ## Interface Structure
+```
+## Interface Structure
 ### **Event Inputs**
 *Not present - This is a global constant definition*
 

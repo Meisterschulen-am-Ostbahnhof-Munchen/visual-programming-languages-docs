@@ -44,7 +44,8 @@ Typical applications include monitoring and safety logic where an action should 
 * **Emergency Stop Logic:** The block can be used to monitor multiple emergency stop buttons. If any of the buttons is pressed (`TRUE`), a shutdown signal (`OUT = TRUE`) is generated.
 * **Alarm Aggregation:** Multiple sensors, each capable of detecting a fault condition, are interconnected. A general alarm is triggered as soon as at least one sensor reports a fault.
 * **Multiple Operator Control:** In a machine, multiple operator stations can start a process. The block combines all start commands into a single start signal.
-* ## ⚖️ Comparison with similar function blocks
+*
+## ⚖️ Comparison with similar function blocks
 * **AND_6_BOOL:** Performs a logical AND operation. The result is only `TRUE` if **all** inputs are `TRUE`. In contrast, `OR_6_BOOL` requires only **one** true input.
 * **XOR_BOOL:** Performs an exclusive OR (XOR) operation. The result is `TRUE` if there is an odd number of inputs, `TRUE`. `OR_6_BOOL` does not distinguish between one or more true conditions. See: [OR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_6.md)
 * **Blocks with Variable Number of Inputs:** OR blocks with two (`OR`) or other numbers of inputs exist. `OR_6_BOOL` offers a fixed interface with six inputs, optimized for specific applications.

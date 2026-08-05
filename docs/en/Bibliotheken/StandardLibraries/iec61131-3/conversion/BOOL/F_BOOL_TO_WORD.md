@@ -21,11 +21,13 @@ The function block `F_BOOL_TO_WORD` converts a Boolean value (`BOOL`) into a 16-
 ### **Adapters**
 - No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 This function block performs the conversion of `BOOL` to `WORD` when the event `REQ` is received. The Boolean value `IN` is converted into a 16-bit word, with `FALSE` being interpreted as `0` and `TRUE` as `1`. The result is output via `OUT`, and the event `CNF` is triggered to indicate successful conversion.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - The function block is a simple function block (`SimpleFB`) and uses an ST algorithm for conversion.
 - The conversion is performed directly by the function `BOOL_TO_WORD(IN)`.

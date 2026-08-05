@@ -3,7 +3,8 @@
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_TO_AUI** is a composite function block (FB) that converts an **AULI** adapter (based on the data type `ULINT`) into an **AUI** adapter (based on the data type `UINT`). It is used when a 64-bit unsigned integer interface (`ULINT`) needs to be mapped to a 16-bit unsigned integer interface (`UINT`), for example, when connecting different sensor or actuator components in automation technology.
-``` ## Interface Structure
+```
+## Interface Structure
 ### **Event Inputs**
 An event of type `AULI_IN` is provided via the adapter socket. This is forwarded internally to the conversion module.
 
@@ -13,7 +14,8 @@ An event of type `AUI_OUT` is output via the adapter plug as soon as the convers
 ### **Data Inputs**
 A data value of type `D1` (corresponding to `ULINT`) is received via the adapter socket `AULI_IN`.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 The adapter plug `AUI_OUT` outputs a data value of type `D1` (equivalent to `UINT`).
 
 ### **Adapter**

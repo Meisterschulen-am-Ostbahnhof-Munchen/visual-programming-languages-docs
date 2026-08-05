@@ -21,7 +21,8 @@ The function block `F_UINT_AS_WSTRING` converts an unsigned integer value (`UINT
 ### **Adapters**
 This function block does not use adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When the `REQ` event is triggered, the algorithm is executed, converting the `UINT` value at input `IN` into a `WSTRING` value. The result is provided at output `OUT`, and the `CNF` event signals successful conversion.
 
 ## Technical Features

@@ -52,7 +52,8 @@ When the event `REQ` is triggered, the AD adapter connected to socket `IN` is fo
 
 After the switchover is complete, the event `CNF` is output. The function block operates without internal states and executes the switchover within a single event cycle.
 
-... ## Technical Features
+...
+## Technical Features
 
 - **Generic Type:** The function block (FB) is declared as a generic AD demultiplexer (`GEN_AD_DEMUX`). It can be used for any `adapter::types::unidirectional::AD` adapter, as long as the specific type is passed at runtime.
 - **Eclipse 4diac Specific:** The attributes `GenericClassName` and `TypeHash` are used for type checking and the runtime environment of the Eclipse 4diac IDE.

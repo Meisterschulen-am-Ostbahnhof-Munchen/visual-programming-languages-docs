@@ -14,7 +14,8 @@ The function block `F_TIME_AS_WSTRING` converts a TIME value to a WSTRING value.
 ### **Data Inputs**
 - **IN**: Input for the TIME value to be converted.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 - **OUT**: Output for the converted WSTRING value.
 
 #### **Adapters**

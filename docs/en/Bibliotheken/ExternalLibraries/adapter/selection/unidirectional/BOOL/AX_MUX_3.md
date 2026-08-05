@@ -38,7 +38,8 @@ K=1: Connection IN2 → OUT
 
 K=2: Connection IN3 → OUT
 
-A CNF event is output after successful switching. ## Technical Features
+A CNF event is output after successful switching.
+## Technical Features
 - Uses unidirectional AX adapters for signal transmission
 - Supports the UINT data type for the index
 - Generic implementation for flexible reuse

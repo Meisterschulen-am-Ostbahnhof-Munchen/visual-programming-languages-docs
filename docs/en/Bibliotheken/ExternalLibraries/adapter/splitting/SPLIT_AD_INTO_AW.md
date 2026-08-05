@@ -61,7 +61,8 @@ The adapters are designed as **unidirectional**:
 
 5. Simultaneously, the output events **WORD_00.E1** and **WORD_01.E1** are triggered, indicating that the corresponding data (**WORD_00.D1** and **WORD_01.D1**) are valid.
 
-... ## Technical Features
+...
+## Technical Features
 
 - **Data Synchronization:** The flip-flops ensure that the output data remains stable, even if the input value changes between two events. Only a new event at the input updates both outputs.
 - **Simultaneous Output:** Both WORD outputs are updated by the same input event – there is no staggered timing.

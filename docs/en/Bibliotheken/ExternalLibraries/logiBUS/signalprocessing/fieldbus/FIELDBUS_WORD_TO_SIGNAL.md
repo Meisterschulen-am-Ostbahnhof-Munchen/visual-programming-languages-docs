@@ -64,7 +64,8 @@ The initial value of input `IN` is `NOT_AVAILABLE_WM`, so the function block sig
 - **Initial Values:** The output `OUT` starts with `16#0000`, and `VALID` with `FALSE`. The input `IN` starts with the invalid value `NOT_AVAILABLE_WM`.
 - **Simple State Machine:** There is only one execution state (REQ) – the function block is event-driven and does not remain in any other states.
 
-**Initial State Machine:** ## State Overview
+**Initial State Machine:**
+## State Overview
 The function block has exactly one state:
 
 | State | Description |

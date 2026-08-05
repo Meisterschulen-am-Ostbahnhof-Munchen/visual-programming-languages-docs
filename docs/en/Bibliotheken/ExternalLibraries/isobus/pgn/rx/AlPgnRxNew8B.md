@@ -23,7 +23,8 @@ The function block `AlPgnRxNew8B` is used to receive data via a CAN network acco
 * **`NmSource`** (isobus::pgn::ISONETEVENT_T): Defines the communication partner (e.g., a specific node address or a broadcast).
 * **`u16DaSize`** (UINT): The expected data length of the PGN in bytes (0-8).
 * **`u8Priority`** (USINT): The default priority of this PGN (0-7), where 0 represents the highest priority. The initial value is 7 (lowest priority).
-* ### **Data Outputs**
+*
+### **Data Outputs**
 * **`PGN_handle`** (INT): A handle (reference number) for the successfully installed PGN. In case of an error, it contains the value `HANDLE_UNVALID`.
 * **`dataERRC`** (INT): Error code set when the `dataERR` event is triggered.
 * **`pgnERRC`** (INT): Error code set when the `pgnERR` event is triggered.
@@ -68,7 +69,8 @@ The block has implicit states:
 * **Blocks for Other Protocols**: Similar blocks exist for other higher-level protocols (e.g., J1939), but they differ in their specific addressing and message formats.
 * **`E_SR` (Service Interface Function Block)**: While `E_SR` provides a generic server request pattern for services, `AlPgnRxNew8B` is specifically designed for the cyclic or event-driven reception of ISOBUS messages.
 * **Blocks for Other Protocols**: Similar blocks exist for other higher-level protocols (e.g., J1939), but they differ in their specific addressing and message formats.
-* ## 🛠️ Related Exercises
+*
+## 🛠️ Related Exercises
 * [Exercise_130](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_130.md)]
 * [Exercise_134](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)]
 

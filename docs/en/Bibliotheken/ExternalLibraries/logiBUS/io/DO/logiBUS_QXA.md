@@ -29,7 +29,8 @@ The logiBUS_QXA is a composite function block for outputting Boolean data. It se
 ## Functionality
 The logiBUS_QXA acts as a wrapper for the logiBUS_QX function block and provides a unified interface for digital output functions. During initialization (INIT event), the configuration parameters are passed and the outputs are configured accordingly. The block enables the control of up to 8 digital outputs via the output data structure.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses the logiBUS_QX core function block for the actual output logic
 - Supports up to 8 digital outputs (Q1 to Q8)
 - Initialization with specific parameters via PARAMS input

@@ -33,7 +33,8 @@ The function block **ALR_DEMUX_5** is a generic demultiplexer for ALR data (adap
 
 No direct data outputs are available. Data is transmitted via the adapters.
 
-### ### **Adapter**
+#
+## ### **Adapter**
 
 | Direction | Name | Type | Comment |
 

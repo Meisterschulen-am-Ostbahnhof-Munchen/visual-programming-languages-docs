@@ -75,7 +75,8 @@ The `PatternSeq` block controls the traffic light phases based on the configured
 
 * The logic uses **adapter connections** (recognizable by the `logiBUS_QXA` type and the nested connections), which makes the wiring in the diagram clearer, as data and events are transmitted in bundles.
 * The `E_TimeOut` block is connected to the sequencer via the `timeOut` adapter to process the timer events (`T#3s`, `T#1s`, etc.) internally.
-* ## Summary
+*
+## Summary
 The exercise `Uebung_035a1_AX` efficiently demonstrates how complex state machines, such as a traffic light controller, can be simplified using a **pattern sequencer**. Instead of programming each state transition individually, phase times and output patterns are parameterized. The use of `logiBUS` adapters (AX/QXA) also showcases a modern method of block communication in 4diac.
 
 ---

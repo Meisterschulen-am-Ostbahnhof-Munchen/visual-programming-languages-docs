@@ -41,7 +41,8 @@ The INI block acts as an interface between the IEC 61499 application and a persi
 
 A `SET` event writes the current value of the `VALUE` input under the configured key to the file. A `GET` event reads the value from the file. If the key does not exist, `DEFAULT_VALUE` is returned instead. Each operation (`INIT`, `SET`, `GET`) is acknowledged by a corresponding output event (`INITO`, `SETO`, `GETO`), with `QO`, `STATUS`, and `VALUEO` indicating the result status.
 
-... ## Technical Features
+...
+## Technical Features
 * **Type Flexibility**: The data inputs/outputs `VALUE`, `DEFAULT_VALUE`, and `VALUEO` use the generic data type `ANY_ELEMENTARY`. This allows the storage of various elementary data types (e.g., numbers, Boolean values, strings) using the same function block.
 * **Persistence**: The data is stored in text-based INI files (`settings.ini` for writable values, `settingsReadOnly.ini` for read-only factory settings).
 * **Write Protection & Factory Defaults**: Keys in `settingsReadOnly.ini` override values in `settings.ini` and reject write attempts (`SET`) (`STATUS = "Key is read-only"`). For details, see [Read-Only Settings (settingsReadOnly.ini) ](./settingsReadOnly.md)].
@@ -56,7 +57,8 @@ The block does not have an explicit, complex state machine in the user-accessibl
 * **Parameterization**: Saving plant- or product-specific parameters (e.g., setpoints, times) that should be retained between restarts.
 * **Operational Data Acquisition**: Persistently saving simple operating states or counter readings.
 * **User Settings**: Managing language settings or other user preferences.
-* ## ⚖️ Comparison with similar building blocks
+*
+## ⚖️ Comparison with similar building blocks
 * **`E_SR` (SR flip-flop) / `E_RS` (RS flip-flop)**: These blocks store a binary state (`BOOL`) in memory only during runtime. The INI block stores arbitrary data types permanently in non-volatile memory.
 * **`E_DEMUX` / `E_MUX`**: These are used for event and data distribution, not persistent storage.
 * **`FB_RETAIN` (from `eclipse4diac::core`)**: Stores data persistently, but typically uses device-specific, non-directly accessible retain memory. The INI block uses a standardized, readable text file.

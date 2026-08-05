@@ -12,7 +12,8 @@ The function block `XOR_10_BOOL` is a generic function block for calculating the
 ### **Event Outputs**
 * **CNF (Execution Confirmation):** This event signals the completion of the calculation. It is output along with the calculated result at the data output `OUT`.
 
-``` ### **Data Inputs**
+```
+### **Data Inputs**
 * **IN1 (XOR input 1):** Boolean input 1.
 * **IN2 (XOR input 2):** Boolean input 2.
 * **IN3 (XOR input 3):** Boolean input 3.
@@ -45,7 +46,8 @@ The function block does not have an internal state in the sense of a memory. Its
 * **Parity Check:** Detects whether an odd number of signals (e.g., error messages, switch positions) are active.
 * **Control Logic:** Implements special logic logic in sequence controls where a state change should only occur with an odd activation pattern.
 * **Encoding/Decoding:** Simple cryptographic or coding tasks based on the XOR operation.
-* ## ⚖️ Comparison with Similar Blocks
+*
+## ⚖️ Comparison with Similar Blocks
 * **Standard XOR Blocks (e.g., 2-Input XOR):** This block extends the classic 2-input XOR function to up to ten inputs in a single block, improving clarity when dealing with many signals. See: [XOR_10](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_10.md)]
 * **Blocks with Variable Input Count:** Some libraries offer XOR blocks to which inputs can be dynamically added. `XOR_10_BOOL` has a fixed, explicitly declared interface, which can simplify code analysis.
 * **Combinatorial Logic in SFC/ST:** The same functionality could also be implemented in Structured Text (ST) using an expression like `OUT := IN1 XOR IN2 XOR ... XOR IN10;`. The advantage of the FB lies in its clear encapsulation and event-driven interface, which integrates better into FB networks.

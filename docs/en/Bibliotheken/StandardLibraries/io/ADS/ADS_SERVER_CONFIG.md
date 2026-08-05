@@ -30,7 +30,8 @@ No adapter interfaces are available.
 ## Functionality
 The function block is activated by the INIT event and processes the provided configuration parameters. Upon successful processing, it outputs the INITO event and makes the configured parameters available to downstream ADS-IO function blocks. The STATUS output provides detailed information about the configuration process.
 
-## ## Technical Features
+#
+# ## Technical Features
 - Uses WSTRING data types for international character support
 - Supports both IPv4 addresses and hostnames for maximum flexibility
 - Separate parameters for ADS address and network address enable complex network configurations

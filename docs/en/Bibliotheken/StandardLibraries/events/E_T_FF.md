@@ -22,7 +22,8 @@ The `E_T_FF` (Event-driven Toggle Flip-Flop) is an event-driven toggle switch th
 ### **Data Outputs:**
 - **Q**: The current state of the flip-flop (data type: `BOOL`).
 
-### ## Functionality
+#
+## ## Functionality
 
 The `E_T_FF` component is a simple toggle flip-flop:
 

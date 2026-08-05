@@ -56,7 +56,8 @@ The exercise is event-driven:
 - The output `Q` is `TRUE` as long as the counter value is greater than 0; upon reaching 0, `Q` becomes `FALSE` (overflow is undefined and remains at 0).
 - The current counter value is output to the terminal as a physical LREAL value.
 
-``` ## Summary
+```
+## Summary
 
 Exercise **Exercise_217b** implements a standards-compliant reverse counter (`FB_CTD_LINT`) with terminal output. It combines digital inputs (logiBUS) as counting and charging pulses, a digital output as a signal output, and a LINT-to-LREAL conversion for displaying the current counter reading on a terminal. The process is fully event-driven and demonstrates the integration of IEC 61131-3 blocks with logiBUS I/O and terminal outputs in the 4diac IDE.
 

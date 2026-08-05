@@ -20,7 +20,8 @@ The RT_E_CYCLE function block implements periodic event generation (cycle) with 
 ### **Data Outputs**
 - **QO** (BOOL): Status indicator.
 
-### ## Functionality
+#
+## ## Functionality
 
 After the `START` event, the `EO` event is triggered periodically at time `DT`. The parameters `Deadline` and `WCET` are used for real-time scheduling and monitoring.
 

@@ -79,7 +79,8 @@ This block thus encapsulates the pure state logic (which step is next, how long 
 
 4. `E_TABLE_CTRL` then calculates the next delay time, and the cycle repeats.
 
-This block therefore encapsulates the pure state logic (which step is next, how long it takes), while `E_DELAY` performs the actual time delay. ## 🛠️ Related Exercises
+This block therefore encapsulates the pure state logic (which step is next, how long it takes), while `E_DELAY` performs the actual time delay.
+## 🛠️ Related Exercises
 
 * [Exercise_175](../../../Uebungen/test_B/Uebungen_doc/Uebung_175.md)
 

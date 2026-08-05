@@ -10,7 +10,8 @@ None – event control is handled exclusively via the adapters.
 #### **Event Outputs**
 None.
 
-### ### **Data Inputs**
+#
+## ### **Data Inputs**
 
 None – all data is provided via the socket adapter.
 

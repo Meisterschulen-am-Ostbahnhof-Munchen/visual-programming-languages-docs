@@ -63,7 +63,8 @@ The conversion is performed according to the IEC 61131-3 standard for the functi
 
 As a composite function block, **AUI_TO_AD** does not have its own state machine. The functional sequence is purely event-driven: An event at the input triggers the conversion, after which an event is generated at the output. There are no internal states between these events.
 
-- ## Application Scenarios
+-
+## Application Scenarios
 - **Data Integration**: An AUI adapter provides a UINT value (e.g., from a sensor module) that is required in a system that processes only DWORD addresses (e.g., via an AD adapter).
 - **Protocol Adaptation**: If existing components work with different data types, this function block can be used as a simple converter between the adapter interfaces.
 - **Modularization**: Within a 4diac application, standardized conversion function blocks can be grouped as adapters to increase reusability.

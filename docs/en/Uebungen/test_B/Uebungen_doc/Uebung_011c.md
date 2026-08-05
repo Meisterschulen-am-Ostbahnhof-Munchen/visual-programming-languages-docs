@@ -16,7 +16,8 @@ This exercise demonstrates the simple pass-through of a numeric value from an IS
 - **Data Outputs**: `IN` (outgoing value as DWORD)
 - **Functionality**: This FB reads the The current value of the ISOBUS object with ID `InputNumber_I3` is displayed. Whenever the value changes on the bus, the event `IND` is triggered, and the current value is provided as a DWORD at output `IN`.
 
-``` ### F_DWORD_TO_UDINT
+```
+### F_DWORD_TO_UDINT
 - **Type**: `iec61131::conversion::F_DWORD_TO_UDINT`
 - **Parameters**: none additional
 - **Event Inputs**: `REQ` (Request conversion)
@@ -35,7 +36,8 @@ This exercise demonstrates the simple pass-through of a numeric value from an IS
 - **Data Outputs**: None
 - **Functionality**: This function block writes a new value (UDINT) to the ISOBUS object with the ID `OutputNumber_N3`. When an event occurs at `REQ`, the corresponding value is transmitted to the bus.
 
-... ## Program Flow and Connections
+...
+## Program Flow and Connections
 
 The connections are made in a simple event and data chain:
 

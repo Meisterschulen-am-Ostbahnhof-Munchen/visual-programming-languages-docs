@@ -25,7 +25,8 @@ This function block does not use any adapters.
 
 ### **Adapters**
 
-### **Data Inputs ... ## Functionality
+#
+## **Data Inputs ... ## Functionality
 When the `REQ` event is triggered, the function `STRING_AS_SINT` is applied to the value of the `IN` input. The result is stored in the `OUT` output, and the `CNF` event signals the successful completion of the operation.
 
 ## Technical Features

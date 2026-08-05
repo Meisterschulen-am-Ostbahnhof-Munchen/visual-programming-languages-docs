@@ -47,7 +47,8 @@ The function block does not have an internal state in the sense of a state machi
 * **Communication with Byte-Oriented Interfaces**: Preparing data for transmission via serial bus systems (e.g., Modbus, Profibus), networks, or communication protocols that expect data in byte blocks.
 * **Compact Storage**: Bundling multiple digital switching states (e.g., from limit switches, machine states) into a single byte to optimize storage space.
 * **Data Preparation for Visualization or Logging**: Converting structured BOOL signals into a byte format that is easier for display systems or data storage to handle.
-* ## ⚖️ Comparison with Similar Blocks
+*
+## ⚖️ Comparison with Similar Blocks
 * **`BOOL_TO_BYTE` (or similar blocks from standard libraries)**: Many IEC 61499 or IEC 61131-3 libraries offer blocks that directly convert eight separate `BOOL` inputs into a single `BYTE`. `ST08X_TO_BYTE` differs in that the input values are already bundled into a structured variable (`ST08X`), which can simplify wiring in the application diagram.
 * **`PACK` / `UNPACK` blocks**: More general blocks for packing and unpacking data. `ST08X_TO_BYTE` is a specialized and type-safe implementation for precisely this one use case.
 * **Manual Bit Operations**: The function could also be implemented through direct assignments in Structured Text (ST). The function block encapsulates this logic and provides a standardized, reusable interface with clear event handling.

@@ -13,7 +13,8 @@ This exercise implements a down counter according to IEC 61131-3 with an adapter
 - **Data Output/Input**: CV (current counter value, INT), PV (preset value, INT as input via adapter)
 - **Functionality**: The down counter decrements the value of PV with each event at CD. With each event at LD, the counter is reset to the value of PV. Output Q becomes TRUE when the counter value reaches or falls below 0.
 
-``` ### Sub-Blocks: AI_INT_TO_I
+```
+### Sub-Blocks: AI_INT_TO_I
 - **Type**: adapter::conversion::unidirectional::AI_INT_TO_I
 - **Internal Function Blocks Used**: None
 - **Parameters**: OUT = INT#10
@@ -21,7 +22,8 @@ This exercise implements a down counter according to IEC 61131-3 with an adapter
 - **Data Output/Input**: AI_OUT (INT)
 - **Functionality**: This block provides a constant integer value (here 10) that is used as the preset value (PV) for the counter. It is triggered by the INITO event of the load input.
 
-``` ### Sub-Blocks: Input_CD (Count Down Input)
+```
+### Sub-Blocks: Input_CD (Count Down Input)
 
 - **Type**: logiBUS::io::DI::logiBUS_IXA
 - **Internal Function Blocks Used**: None
@@ -30,7 +32,8 @@ This exercise implements a down counter according to IEC 61131-3 with an adapter
 - **Data Output/Input**: None
 - **Functionality**: Reads the digital input I1 of the logiBUS system and outputs an event on the adapter output on a rising edge. This event triggers the CD input of the counter.
 
-``` ### Sub-Blocks: Input_LD (Load Input)
+```
+### Sub-Blocks: Input_LD (Load Input)
 - **Type**: logiBUS::io::DI::logiBUS_IXA
 - **Internal Function Blocks Used**: None
 - **Parameters**: QI = TRUE, Input = Input_I2
@@ -38,7 +41,8 @@ This exercise implements a down counter according to IEC 61131-3 with an adapter
 - **Data Output/Input**: None
 - **Functionality**: Reads the digital input I2 and outputs an event on a rising edge. This event triggers the LD event at the meter. Simultaneously, the initialization of the PV value is triggered via INITO.
 
-``` ### Sub-Blocks: Output_Q1
+```
+### Sub-Blocks: Output_Q1
 
 - **Type**: logiBUS::io::DQ::logiBUS_QXA
 - **Internal Function Blocks Used**: None
@@ -59,7 +63,8 @@ This exercise implements a down counter according to IEC 61131-3 with an adapter
 
 **Data Output/Input**: AI_IN (INT), AUDI_OUT (AUDI)
 
-**Functionality**: Converts the integer counter value (CV) to the AUDI format required by the terminal. ### Sub-Blocks: Q_NumericValue_AUDI
+**Functionality**: Converts the integer counter value (CV) to the AUDI format required by the terminal.
+### Sub-Blocks: Q_NumericValue_AUDI
 
 - **Type**: isobus::UT::Q::Q_NumericValue_AUDI
 - **Internal Function Blocks Used**: None

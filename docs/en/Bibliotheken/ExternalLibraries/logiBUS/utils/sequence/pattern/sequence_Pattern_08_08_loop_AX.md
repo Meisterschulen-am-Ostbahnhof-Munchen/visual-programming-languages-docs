@@ -13,7 +13,8 @@ This block allows the definition of bit patterns for each of the 8 steps, which 
 * **START_S1**: Initializes the sequence and jumps directly to state 1 (`State_01`). This event also inherits the parameterized time values (`DT_...`) and bit patterns (`P_...`).
 * **S1_S2** to **S8_S1**: Manual trigger events to immediately switch from the current state to the next (e.g., `S1_S2` jumps from state 1 to 2).
 * **RESET**: Resets the function block from any state to the initial state (`START`) and disables all outputs.
-* **S1_S2** to **S8_S1**: Manual trigger events to immediately switch from the current state to the next (e.g., `S1_S2` jumps from state 1 to 2). ### **Event Outputs**
+* **S1_S2** to **S8_S1**: Manual trigger events to immediately switch from the current state to the next (e.g., `S1_S2` jumps from state 1 to 2).
+### **Event Outputs**
 * **CNF**: Execution Confirmation event. It fires as soon as a new state is reached and the outputs are updated.
 
 ### **Data Inputs**
@@ -89,7 +90,8 @@ The component operates as a finite state machine with a cyclic structure:
 * **Cam Switches**: Control of mechanical processes where multiple actuators (cylinders, valves) must be activated in a fixed sequence.
 * **Traffic Light Controls**: Cyclic sequence of red-yellow-green phases.
 * **Cleaning Cycles**: Rinsing, washing, and drying at recurring intervals.
-* ## ⚖️ Comparison with Similar Function Blocks
+*
+## ⚖️ Comparison with Similar Function Blocks
 
 Unlike linear sequencers (without a loop), this function block is explicitly designed for recurring processes. It differs from simple counters in that an individual output pattern and time can be defined for each step. The use of AX adapters distinguishes it from standard IEC 61499 function blocks, which mostly use direct Boolean outputs, and makes it ideal for structured, object-oriented control designs.
 

@@ -78,7 +78,8 @@ The internal timer **E_TONOF** cycles through the following states:
 - **E_TOF (TOF)**: Implements only an off delay; the output is set to TRUE immediately when IN=TRUE and falls back to FALSE after the delay when IN=FALSE.
 - **E_TONOF**: Combines both delays in one function block. The **ATM_AX_TONOF** extends this concept with an adapter interface, thus simplifying integration with other adapter-based components. It offers the same functionality but with increased flexibility in system integration.
 
-**E_TONOF**: Combines both delays in one function block. ## Conclusion
+**E_TONOF**: Combines both delays in one function block.
+## Conclusion
 
 The **ATM_AX_TONOF** is a powerful timer function block for delayed on/off switching operations. Its adapter-based interface allows it to be seamlessly integrated into modular automation solutions while remaining fully compliant with the IEC 61499 standard. Combining ON delay and OFF delay in a single block reduces wiring effort and simplifies application development. Thanks to its separate reset input and robust internal implementation, it is suitable for a wide range of industrial applications.
 

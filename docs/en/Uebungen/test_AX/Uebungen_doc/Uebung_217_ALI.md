@@ -35,7 +35,8 @@ The preset value is obtained from a constant block (LINT#10) during initializati
 - Data Output: ALI_OUT (Adapter) – provides the LINT value
 - **Functionality:** Upon a request (REQ), provides the parameterized LINT value (here 10) at output ALI_OUT. Serves as the source for the preset value PV.
 
-``` ### Input_CD
+```
+### Input_CD
 - **Type:** `logiBUS::io::DI::logiBUS_IXA`
 - **Internal Function Blocks Used:** None
 - **Parameters:**

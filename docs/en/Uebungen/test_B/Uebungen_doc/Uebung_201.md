@@ -4,7 +4,8 @@
 ## Introduction
 This exercise demonstrates the implementation of a **mutual interlock** using the function block `ILOCK_BLOCK`. The goal is to link two digital inputs (`I1`, `I2`) in such a way that only one of the two corresponding outputs (`Q1`, `Q2`) can be active at any given time. As soon as an input signal is present, the corresponding output is set and the other output is disabled. This exercise uses the hardware modules `logiBUS_IX` (digital input) and `logiBUS_QX` (digital output), as well as the interlock module from the `logiBUS` library.
 
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 ### Sub-Blocks: `DigitalInput_I1`
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
@@ -46,7 +47,8 @@ The `ILOCK_BLOCK` evaluates both channels. When `DI_UP` is active (`1`) and the 
 
 `DI_UP` is active (`1`) and the event `EI_UP` occurs.
 
-`DO_UP` is set to `1` and `DO_DOWN` is reset to `0` (locking). ### Sub-Blocks: `DigitalOutput_Q1`
+`DO_UP` is set to `1` and `DO_DOWN` is reset to `0` (locking).
+### Sub-Blocks: `DigitalOutput_Q1`
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Internal Function Blocks Used**: None
 - **Parameters**:

@@ -33,7 +33,8 @@ The algorithm first checks whether the output `FIRST` still has the initial valu
 * **Data Type:** The block works exclusively with unsigned 32-bit integers (`UDINT`).
 * **Initialization:** Both `FIRST` and `OUT` are initialized with `0`. The block is ready for operation immediately after startup.
 * **One-Time Setting:** The variable `FIRST` is set exactly once (on the first `REQ` with `IN` > 0) and then remains constant for the lifetime of the function block instance, unless the function block is reinitialized.
-* ## State Overview
+*
+## State Overview
 
 The function block has a single, stable state:
 

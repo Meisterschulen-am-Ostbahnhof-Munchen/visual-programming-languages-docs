@@ -27,10 +27,12 @@ The ST_SET_PARM function block is used to set parameters for data inputs of func
 ### **Adapters**
 No adapters available.
 
-**Data Inputs** ## Functionality
+**Data Inputs**
+## Functionality
 Upon arrival of the REQ event, the ST_SET_PARM function block attempts to set the specified parameter value (PARM_VAL) for the specified data input (ELEM_DATA_IN) of the target instance (ELEM_NAME) at the specified destination (DST). Upon completion of the process, the CNF event is output with the corresponding status.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports wide-string data types for all text-based parameters
 - Provides detailed status feedback on the success or failure of the operation
 - Enables configuration across resource boundaries

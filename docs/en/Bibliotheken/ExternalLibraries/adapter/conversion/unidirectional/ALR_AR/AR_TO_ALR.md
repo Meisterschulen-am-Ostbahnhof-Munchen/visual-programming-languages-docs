@@ -45,7 +45,8 @@ Composite function block for converting an AR adapter (REAL) to an ALR adapter (
 
 This function block connects the adapter interfaces directly. An incoming event at `AR_IN.E1` is immediately forwarded to `ALR_OUT.E1`. Simultaneously, the data value `AR_IN.D1` (REAL) is copied to `ALR_OUT.D1` (LREAL), with the runtime environment performing an implicit type conversion. There is no state machine; the function is purely combinatorial.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - Composite function block without its own logic (no ECC)
 - Use of unidirectional adapters according to IEC 61499-2

@@ -54,7 +54,8 @@ The function block internally contains a sub-FB `E_D_FF_ANY_HYS` from the librar
 - The event `I.E1` is synchronously forwarded as `Q.E1` to inform the receiver of a new value.
 - Initialization (`INIT`) sets the hysteresis band and immediately confirms it with `INITO`. Changing `HYSTERESIS` during operation is not supported; the hysteresis is only applied during the INIT event.
 - Initialization (`INIT`) sets the hysteresis band and immediately confirms it with `INITO`. Modifying `HYSTERESIS` during operation is not supported; the hysteresis is only applied during the INIT event.
-- ## Technical Features
+-
+## Technical Features
 - **Adapter-Based Interface**: Both the input and output use the generic adapter `adapter::types::unidirectional::AR`, allowing the block to be flexibly integrated into existing adapter chains.
 - **Hysteresis Function**: Suppresses noise and oscillations at threshold values, ensuring a clean, stable output.
 - **EPL 2.0**: The block is licensed under the Eclipse Public License 2.0 and can be freely used and modified.

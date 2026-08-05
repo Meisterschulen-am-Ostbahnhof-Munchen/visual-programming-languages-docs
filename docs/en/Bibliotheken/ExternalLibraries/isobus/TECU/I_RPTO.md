@@ -64,7 +64,8 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise
 | 2 | Load Mode | Load-Dependent Control |
 
 | 3 | Reserved | Manufacturer-specific |
-... ## Functionality
+...
+## Functionality
 
 1. **Initialization**:
 

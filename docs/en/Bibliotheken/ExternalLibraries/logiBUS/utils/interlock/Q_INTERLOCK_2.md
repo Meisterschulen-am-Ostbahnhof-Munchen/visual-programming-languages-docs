@@ -26,7 +26,8 @@ The function block `Q_INTERLOCK_2` is an event-driven, bistable memory with togg
 ### **Adapters**
 * This function block does not use adapters.
 
-### ## Functionality
+#
+## ## Functionality
 The `Q_INTERLOCK_2` is implemented as a Basic Function Block (BFB) and has an Execution Control Chart (ECC) with four states: `START`, `SET1`, `SET2`, and `RESET`.
 
 1. **Initial State (`START`)**: Both outputs are `FALSE`.

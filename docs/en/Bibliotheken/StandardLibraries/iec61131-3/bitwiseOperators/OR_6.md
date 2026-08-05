@@ -32,7 +32,8 @@ Upon receiving the REQ event, the OR_6 block performs a bitwise OR operation on 
 
 OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5 OR IN6
 Once the calculation is complete, the CNF event is output along with the result value.
-... ## Technical Features
+...
+## Technical Features
 - **Generic Data Type**: Uses ANY_BIT, enabling use with various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)
 - **Six Inputs**: Processes up to six input values in a single operation
 - **Bitwise Operation**: Performs the OR operation at the bit level

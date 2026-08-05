@@ -21,7 +21,8 @@ The function block `SPLIT_WORD_INTO_BOOLS` is used to decompose a 16-bit word in
 
 ### **Adapters**
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block parses the input word `IN` into its 16 individual bits and assigns them to the corresponding BOOL outputs. The assignment is done directly via the bit addressing of the WORD data type (e.g., `IN.%X0` for the first bit). When the `REQ` event is triggered, all bits are extracted, and the `CNF` event confirms successful execution.
 

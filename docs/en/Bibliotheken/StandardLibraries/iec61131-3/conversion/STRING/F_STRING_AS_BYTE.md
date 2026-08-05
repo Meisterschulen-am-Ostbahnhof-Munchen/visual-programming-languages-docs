@@ -20,7 +20,8 @@ The function block `F_STRING_AS_BYTE` converts a `STRING` value to a `BYTE` valu
 ### **Adapters**
 No adapters are present.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block converts the `STRING` value `IN` to the `BYTE` value `OUT` as soon as the event `REQ` is received. The conversion is performed using the function `STRING_AS_BYTE`. After successful conversion, the event `CNF` is triggered.
 

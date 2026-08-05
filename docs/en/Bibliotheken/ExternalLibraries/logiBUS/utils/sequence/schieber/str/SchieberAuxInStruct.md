@@ -39,6 +39,7 @@ This data type is typically used in PLC (Programmable Logic Controller) controll
 ## ⚖️ Comparison with Similar Building Blocks
 Unlike function blocks (FBs), this building block has no algorithm or behavioral logic. It is comparable to a `STRUCT` in IEC 61131-3 or a `class`/`struct` in higher-level programming languages. Other similar elements would be simple data types (e.g., `ARRAY` of single values), but these do not offer the semantic grouping and type safety of this structured type.
 
-``` ## Conclusion
+```
+## Conclusion
 
 The ``SchieberAuxInStruct`` is a fundamental, reusable data type for modeling the visual properties of a helper element in a specific control environment. By encapsulating image and color information, it contributes to better structuring, readability, and maintainability of the application code. Its use is particularly advantageous in projects with complex user interfaces or state-dependent visualizations.

@@ -18,7 +18,8 @@ Detects a single click on a digital input and generates An event originating fro
 
 An event originating from the initial event `IND`.
 
-This event serves as the starting point for the event chain. ### RT_E_REND
+This event serves as the starting point for the event chain.
+### RT_E_REND
 - **Type**: eclipse4diac::rtevents::RT_E_REND
 - **Parameters**:
 - `QI` = `TRUE`
@@ -46,7 +47,8 @@ Implements a real-time rendezvous. It waits for events at `EI1` and `EI2`. Only 
 
 Toggle flip-flop. The internal state is toggled on each event at the clock input (`CLK`). The output `Q` indicates the current state (TRUE/FALSE).
 
-``` ### logiBUS_QX (DigitalOutput_Q1)
+```
+### logiBUS_QX (DigitalOutput_Q1)
 
 - **Type**: logiBUS::io::DQ::logiBUS_QX
 - **Parameters**:

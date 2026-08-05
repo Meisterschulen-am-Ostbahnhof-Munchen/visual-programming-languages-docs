@@ -20,7 +20,8 @@ The function block `F_BYTE_TO_DWORD` converts a `BYTE` value to a `DWORD` value.
 ### **Adapters**
 This function block does not use any adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When the event input `REQ` is triggered, the algorithm is executed. This algorithm converts the `BYTE` value at input `IN` into a `DWORD` value and outputs the result at output `OUT`. The event `CNF` is then triggered to signal the successful completion of the operation.
 
 ## Technical Features

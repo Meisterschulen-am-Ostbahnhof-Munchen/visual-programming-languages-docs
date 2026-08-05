@@ -16,7 +16,8 @@ The following table lists the function blocks used in the network:
 
 | `Uebung_004b4c_sub_AX1` … `AX3` | `Uebung_004b4c_sub_AE` (SubApp) | Sub-component, each containing a toggle flip-flop with latching logic. |
 
-`| `Uebung_004b4c_sub_AX1` … `AX3` | `Uebung_004b4c_sub_AE` | ... ### Sub-Blocks: `Uebung_004b4c_sub_AE`
+`| `Uebung_004b4c_sub_AX1` … `AX3` | `Uebung_004b4c_sub_AE` | ...
+### Sub-Blocks: `Uebung_004b4c_sub_AE`
 
 - **Type**: SubApp (reusable component)
 - **Internal Function Blocks Used**: The SubApp implements a toggle flip-flop (e.g., with an SR flip-flop or a memory element) and a latching circuit that evaluates the state of neighboring SubApps via the AE2 adapters.
@@ -30,7 +31,8 @@ The following table lists the function blocks used in the network:
 
 Each sub-function operates as a toggle flip-flop: Upon each positive event at `IND`, the internal state (and thus `Q`) changes, provided the latching condition is met. The latching ensures that a flip-flop can only switch if all preceding flip-flops in the chain are in an inactive state (`Q=0`). The AE2 adapters enable unidirectional state transmission to the next link in the chain. The comment **"using a bidirectional adapter: 1 connection IS SUFFICIENT!"** indicates that only a single adapter connection (to the next link) is necessary for the entire locking logic per sub-app.
 
-``` ## Program Flow and Connections
+```
+## Program Flow and Connections
 
 The three sub-modules are arranged in a chain:
 

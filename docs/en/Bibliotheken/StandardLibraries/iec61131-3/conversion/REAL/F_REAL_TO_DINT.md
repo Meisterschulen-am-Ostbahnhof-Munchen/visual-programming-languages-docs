@@ -15,7 +15,8 @@ The function block `F_REAL_TO_DINT` converts a REAL value (floating-point number
 ### **Data Inputs**
 - **IN**: Input for the REAL value to be converted.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 - **OUT**: Output for the converted DINT value.
 
 ## **Adapters**

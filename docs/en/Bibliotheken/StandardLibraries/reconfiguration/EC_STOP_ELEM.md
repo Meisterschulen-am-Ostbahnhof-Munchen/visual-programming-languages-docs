@@ -29,7 +29,8 @@ No adapter interfaces are available.
 
 The EC_STOP_ELEM function block processes stop requests for various elements within an IEC 61499 system. Upon receipt of a REQ event with an enabled QI input, the stop process for the specified element is initiated. After completion of the stop process, a CNF event is output with the corresponding status.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports stopping various element types: FBs, connections, resources, and devices
 - Uses WSTRING data types for element names and targets
 - Provides detailed status feedback on possible error states

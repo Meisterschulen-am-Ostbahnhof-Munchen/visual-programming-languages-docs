@@ -55,7 +55,8 @@ The outputs `Q` of the flip-flops are permanently connected to the data inputs `
 
 Thus, after each event at the input adapter, the entire 32-bit value is transferred in parallel to the 32 output adapters and held there until the next event.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Parallel Processing**: All 32 bits are processed simultaneously by the flip-flops, ensuring a consistent snapshot of the DWORD.
 - **Modular Design**: The function block (FB) utilizes existing standard components (`SPLIT_DWORD_INTO_BOOLS` and `E_D_FF`), facilitating maintainability and reuse.

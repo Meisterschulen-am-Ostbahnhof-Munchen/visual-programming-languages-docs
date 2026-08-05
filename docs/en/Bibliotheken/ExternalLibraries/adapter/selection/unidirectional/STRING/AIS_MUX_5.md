@@ -73,7 +73,8 @@ Once the switchover is complete, the **CNF** confirmation event is sent.
 
 For example, if `K = 2` is set, the data present at the **IN3** adapter is made available via **OUT**.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Function Block**: The function block is declared as a generic function block (`GEN_AIS_MUX`). This allows its use in typed libraries and the creation of specialized instances.
 - **Adapter-Based Communication**: Data transmission occurs via unidirectional adapters (`adapter::types::unidirectional::AIS`). This allows complex data structures to be encapsulated, and the function block remains flexible.

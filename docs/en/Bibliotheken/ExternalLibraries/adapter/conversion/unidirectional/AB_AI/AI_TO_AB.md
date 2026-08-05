@@ -57,7 +57,8 @@ Thus, every incoming INT value is synchronously converted into a BYTE value via 
 
 Since it is a composite function block, `AI_TO_AB` does not have its own state machine. The internal function block `F_INT_TO_BYTE` may have a simple state machine (IDLE, EXECUTING), depending on the implementation, but this is not visible within the scope of this function block. The data and event flows are deterministic and are controlled by the interaction of the connections.
 
-## State Overview ## Application Scenarios
+#
+# State Overview ## Application Scenarios
 - **Sensor Connection:** A sensor delivers INT values that must be processed as BYTE by a control unit (e.g., for simple I/O cards).
 - **Data Format Conversion:** in heterogeneous IEC 61499 systems to connect components with different adapter types.
 - **Adapter Translation:** in libraries designed for unidirectional communication, e.g., when using fieldbus protocols that expect BYTE-oriented data.

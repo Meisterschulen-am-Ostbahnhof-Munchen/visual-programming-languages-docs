@@ -40,7 +40,8 @@ Data is also received via the **socket adapter `IN`**:
 
 Note: Adapter types `AQ` and `AX` are unidirectional protocols that typically combine an event and a data field.
 
-``` ## Functionality
+```
+## Functionality
 
 The function block operates as follows:
 

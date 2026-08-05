@@ -60,7 +60,8 @@ The block uses a **socket** of type `ATimeOut`. Since this is a socket, the sign
 
 | Adapter Type | ATimeOut | ARTimeOut |
 
-``` ## 🛠️ Related exercises
+```
+## 🛠️ Related exercises
 
 * [Uebung_035](../../../Uebungen/test_B/Uebungen_doc/Uebung_035.md)
 * [Uebung_035a](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)

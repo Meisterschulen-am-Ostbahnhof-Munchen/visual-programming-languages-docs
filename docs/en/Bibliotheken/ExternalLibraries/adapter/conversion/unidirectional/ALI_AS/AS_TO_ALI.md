@@ -33,7 +33,8 @@ The AS_TO_ALI function block is implemented as a composite block. When an event 
 ## State Overview
 The function block (FB) has no states of its own. Its functionality is limited to event-driven data passing with type conversion.
 
-## ## Application Scenarios
+#
+# ## Application Scenarios
 - Connecting a SINT-based sensor to a LINT-based control system.
 - Migrating existing SINT components to a LINT infrastructure.
 - Heterogeneous systems where different integer data types need to be converted.

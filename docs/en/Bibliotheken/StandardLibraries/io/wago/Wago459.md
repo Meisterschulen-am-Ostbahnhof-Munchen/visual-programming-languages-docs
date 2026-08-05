@@ -32,7 +32,8 @@ The Wago459 is a Service Interface Function Block for connecting Wago-750-459 an
 ## Functionality
 The Wago459 function block serves as Interface between the 4diac controller and the Wago 750-459 analog input module. Upon receiving the MAP event, the configured pin assignments (AnalogInput_1 to AnalogInput_4) are transmitted to the bus system. The block confirms successful assignments via MAPO and continuously provides status information via IND events.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports up to four analog input channels
 - Uses STRING data types for flexible pin configuration
 - Provides comprehensive status feedback via WSTRING

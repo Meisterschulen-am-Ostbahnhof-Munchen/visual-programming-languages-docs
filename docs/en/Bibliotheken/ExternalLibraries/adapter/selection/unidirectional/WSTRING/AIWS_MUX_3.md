@@ -94,6 +94,7 @@ After each successful iteration, the system returns to the idle state `IDLE`.
 - **Standard MUX (e.g., IEC 61499 MUX)**: A conventional multiplexer typically works with basic data types (BOOL, INT, REAL) and has separate data inputs. In contrast, the `AIWS_MUX_3` uses adapters, which allows even complex, composite data objects (such as structures or entire measurement values with quality flags) to be passed through.
 - **Adapter-Based Selectors**: Other components, such as the `AIWS_SELECT`, select between two adapters. The `AIWS_MUX_3` extends this to three inputs and a fixed index parameter.
 - **Generic Multi-MUX**: Compared to a non-generic multiplexer, the generic definition allows the use of any number of instances with the same adapter type without having to redefine the component for each data type.
-- ## Conclusion
+-
+## Conclusion
 
 The **AIWS_MUX_3** is a flexible and generic multiplexer specifically designed for the unidirectional adapter type *AIWS*. It enables clean, event-driven selection from up to three sources and is particularly well-suited for modular automation solutions where data is encapsulated via adapters. Its simple interface (one index, one event) and clear state logic make it easy to integrate and test.

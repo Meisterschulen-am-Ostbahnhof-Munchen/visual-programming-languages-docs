@@ -31,7 +31,8 @@ The EBSlave2181 is a Service Interface Function Block for communication with Eth
 ## Functionality
 The The EBSlave2181 acts as an intermediary between the IEC 61499 control logic and an EtherBrick slave module. Upon receiving the MAP event, the configured digital inputs and outputs are assigned to the slave module. The MAPO event confirms the successful completion of this assignment. The IND event signals status changes or error states of the slave module.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports 8 digital inputs and 8 digital outputs
 - Uses WSTRING data type for pin configuration
 - Enables configurable update intervals

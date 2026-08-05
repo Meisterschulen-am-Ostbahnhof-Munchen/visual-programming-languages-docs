@@ -20,7 +20,8 @@ The function block `ASSEMBLE_DWORD_FROM_WORDS` combines two 16-bit words (WORD) 
 ### **Adapters**
 This function block does not use adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block receives the two 16-bit input words (`WORD_00` and `WORD_01`) and combines them into a single 32-bit double word (DWORD). `WORD_00` is placed in the lower 16 bits and `WORD_01` in the upper 16 bits of the resulting DWORD.
 

@@ -26,7 +26,8 @@ When the `REQ` event is triggered, the algorithm is executed that converts the `
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The conversion is performed by the built-in function `LREAL_TO_DINT`.
 - This is a simple function block without state management or complex logic.
 

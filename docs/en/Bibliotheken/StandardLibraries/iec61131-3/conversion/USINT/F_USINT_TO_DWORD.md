@@ -21,7 +21,8 @@ The function block `F_USINT_TO_DWORD` converts a `USINT` value (8-bit unsigned i
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs the conversion from `USINT` to `DWORD` as soon as the event `REQ` is triggered. The algorithm `REQ` uses the function `USINT_TO_DWORD` to convert the input value `IN` to the output value `OUT`. After successful conversion, the event `CNF` is triggered.
 

@@ -20,7 +20,8 @@ In many exercises (e.g., with the blinker in `Uebung_007a3_AX`), a `AX_OR_2` was
 - **AX_OR_2**: Expects two fully functional AX adapters. Connecting an AE adapter is technically incorrect, as the data value for one of the inputs remains undefined.
 - **AX_AE_MERGE**: Is designed precisely for this mixed operation. It ensures that the event is passed through while the data source (`IN_AX`) remains uniquely defined.
 
-**AX_OR_2**: Expects two fully functional AX adapters. Connecting an AE adapter is technically incorrect, as the data value for one of the inputs remains undefined. ## Technical Features
+**AX_OR_2**: Expects two fully functional AX adapters. Connecting an AE adapter is technically incorrect, as the data value for one of the inputs remains undefined.
+## Technical Features
 
 ✔ **Event Merge**: Internally uses a `E_MERGE`.
 

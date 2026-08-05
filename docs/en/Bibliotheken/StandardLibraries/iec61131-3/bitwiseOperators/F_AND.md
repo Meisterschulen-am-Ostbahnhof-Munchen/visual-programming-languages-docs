@@ -22,7 +22,8 @@ The function block `F_AND` is a standardized bitwise Boolean AND operator accord
 ### **Adapters**
 - No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 The `F_AND` block performs a bitwise AND operation between the input variables `IN1` and `IN2` when the event `REQ` is triggered. The result is passed to the output `OUT`, and the event `CNF` is triggered to confirm successful execution.
 

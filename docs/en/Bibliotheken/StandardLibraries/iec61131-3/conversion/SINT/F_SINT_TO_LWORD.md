@@ -21,7 +21,8 @@ The function block `F_SINT_TO_LWORD` converts a signed 8-bit integer value (`SIN
 ### **Adapters**
 This function block does not use adapters.
 
-### **Adapters** ## Functionality
+#
+## **Adapters** ## Functionality
 
 This function block performs the conversion from `SINT` to `LWORD` as soon as the event `REQ` is triggered. The conversion is carried out using the integrated function `SINT_TO_LWORD`. After successful conversion, the event `CNF` is triggered, and the converted value is available at output `OUT`.
 

@@ -63,7 +63,8 @@ Plug | OUT5 | adapter::types::unidirectional::AI | – | The **IN** socket recei
 
 With each REQ event, the current value of index K is read. The analog value present at the IN adapter is then passed unchanged to the OUT plug designated by K (e.g., K=1 → OUT1, K=2 → OUT2, etc.). The remaining four outputs either remain unchanged or are set to a defined default state (e.g., zero) – this depends on the specific implementation of the generic function block. After the transmission is complete, the CNF event is triggered. The function is purely combinatorial; there is no internal memory or state.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Block:** The function block is declared as a generic type (`eclipse4diac::core::GenericClassName = 'GEN_AI_DEMUX'`), which allows for easy parameterization and reuse in different projects.
 - **Unidirectional Adapters:** The IN and OUT1..OUT5 interfaces are implemented as unidirectional AI adapters, meaning they only allow data flow in one direction (from the socket to the plug). This simplifies wiring in hierarchical structures.
@@ -73,7 +74,8 @@ With each REQ event, the current value of index K is read. The analog value pres
 
 The function block does not have an internal state machine. The demultiplex function is executed directly with each REQ event. There are no dependencies on previous calls, except that the index K must be valid at the time of the REQ.
 
-**No Data Outputs:** ## Application Scenarios
+**No Data Outputs:**
+## Application Scenarios
 
 - **Signal Routing in Automation:** An analog sensor value (e.g., temperature, pressure) is to be forwarded to various other function blocks for processing or logging, depending on a selection (e.g., product type).
 - **Multi-Channel Measurement Systems:** Distribution of an incoming AI value to different paths (e.g., control, monitoring, archiving) without multiple wiring.

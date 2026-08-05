@@ -37,7 +37,8 @@ No adapter interfaces are available.
 ## Functionality
 The Funk_IX Function Block implements a Service Interface Pattern for digital inputs. During initialization (INIT event), the service parameters are configured and the specific digital input is identified. Input values can be queried via the REQ event, resulting in a CNF response with the current input value. Additionally, the block supports asynchronous IND events, which are triggered by changes in the input signal's state.
 
-# ## Technical Features
+#
+## Technical Features
 - Uses the special data type `Funk::io::DI::Funk_DI_S` to identify digital inputs
 - Initial value for input is set to "Invalid"
 - Supports both synchronous queries (REQ/CNF) and asynchronous notifications (IND)

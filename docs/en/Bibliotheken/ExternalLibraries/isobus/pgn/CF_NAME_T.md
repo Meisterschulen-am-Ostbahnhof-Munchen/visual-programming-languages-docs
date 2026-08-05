@@ -20,7 +20,8 @@ The data type `CF_NAME_T` encapsulates a byte array with a fixed length of 8 byt
 * **Fixed Array Size:** The array is limited to indices 0 through 7, corresponding to a fixed length of 8 bytes. This is a common size for many message blocks in fieldbus systems.
 * **Predefined Initialization:** All array elements are automatically initialized with the value `16#FF` when a variable of this type is declared, unless otherwise specified.
 * **ISOBUS Context:** This type is part of the `isobus::pgn` package, indicating its specific use in agricultural and mobile machine control systems (ISOBUS, ISO 11783).
-* ## Application Scenarios
+*
+## Application Scenarios
 
 This data type is primarily used to represent the payload of ISOBUS PGN messages within function blocks (FBs). Typical applications include:
 

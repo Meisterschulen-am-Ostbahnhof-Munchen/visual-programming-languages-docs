@@ -10,7 +10,8 @@ Not present, as it is a pure data type.
 ## **Data Outputs**
 Not present, as it is a pure data type.
 
-## ### **Data Elements (Structure)**
+#
+# ### **Data Elements (Structure)**
 
 The internal structure of type `CF_INFO_T` consists of the following elements:
 

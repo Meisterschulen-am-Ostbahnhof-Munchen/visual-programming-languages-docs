@@ -55,7 +55,8 @@ The data is converted into a physical value (`rPhys`). If the conversion is succ
 - To the subapp output `IND` (reconfirmation).
 - The read value (`NVS.VALUEO`) is passed directly to the subapp data output `VALUEO` and to the data input `Q_NumericValue_PHYS.rPhys`.
 
-``` ### Data Connections
+```
+### Data Connections
 
 - `stObj` (Subapp input) → `NumericValue_PHYS.stObj` and `Q_NumericValue_PHYS.stObj`
 - `KEY` (Subapp input) → `NVS.KEY`

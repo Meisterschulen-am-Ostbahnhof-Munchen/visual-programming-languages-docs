@@ -24,7 +24,8 @@ Reads the string value from the specified The ISOBUS object ID (`InputString_S1`
 
 The system outputs the ISOBUS object ID (`InputString_S1`) and the output `IN`, as well as an event `IND`.
 
-``` ### FB: `INI`
+```
+### FB: `INI`
 - **Type**: `eclipse4diac::storage::INI`
 - **Parameters**:
 - `QI` = `TRUE` (active)
@@ -41,7 +42,8 @@ The system outputs the ISOBUS object ID (`InputString_S1`) and the output `IN`, 
 
 The function block manages a persistent string value in INI format. Upon the event `SET`, the pending `VALUE` is stored under the specified key and section. The event `GET` outputs the stored value to `VALUEO` and sends the event `GETO`. Upon initialization (`INITO`), `GET` is automatically executed.
 
-The event `GET` is executed when the event occurs. ### FB: `Q_StringValue`
+The event `GET` is executed when the event occurs.
+### FB: `Q_StringValue`
 - **Type**: `isobus::UT::Q::Q_StringValue`
 - **Parameters**:
 - `u16ObjId` = `InputString_S1` (Object ID – not used directly here, but for context)

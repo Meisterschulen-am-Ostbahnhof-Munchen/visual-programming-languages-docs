@@ -30,7 +30,8 @@ No adapter interfaces available.
 
 ## Functionality
 Upon receiving the INIT event, the GPIOChip FB initializes a connection to a specific GPIO chip and a defined GPIO line. The configuration includes the operating mode (read/write), the bias mode, and the polarity setting (ActiveLow). After successful initialization, the block confirms with INITO+; in case of errors, it confirms with INITO- and a corresponding STATUS.
-... ## Technical Features
+...
+## Technical Features
 - Supports various GPIO operating modes: Read, Write (Push/Pull), Open Drain, and Open Source
 - Configurable bias settings: None, Pull-Up, Pull-Down
 - Active-Low mode for inverted logic

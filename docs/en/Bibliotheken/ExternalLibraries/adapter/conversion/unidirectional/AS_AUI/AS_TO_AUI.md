@@ -69,7 +69,8 @@ The entire process is atomic within an event cycle: event in, data conversion, e
 
 Since this is a composite function block without its own state machine, there is no internal state machine. The function block is completely event-driven and executes the conversion immediately upon each trigger.
 
-- ## Application Scenarios
+-
+## Application Scenarios
 - **Connecting Different Bus Systems**: If a sensor (e.g., AS-Interface) delivers SINT values, but the controller expects UINT values, this function block can handle the translation.
 - **Protocol or Adapter Compatibility**: Use in heterogeneous automation systems where different fieldbuses or components operate with different data types.
 - **Data Preparation**: Preparation of SINT data for further processing that only supports UINT.

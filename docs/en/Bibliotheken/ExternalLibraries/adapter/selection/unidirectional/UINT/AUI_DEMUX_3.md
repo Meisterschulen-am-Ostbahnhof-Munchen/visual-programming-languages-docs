@@ -50,7 +50,8 @@ The module operates as a 1-to-3 demultiplexer based on the AUI adapter interface
 
 As soon as the REQ event arrives, the value of K is read and the corresponding output (OUT1 for K=0, OUT2 for K=1, OUT3 for K=2) is activated. The acknowledgment event CNF is then sent. During the connection, all adapter data arriving via IN is forwarded to the active output. A subsequent REQ can change the index and thus switch the active output.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Structure** – The function block is implemented as a generic FB (`GEN\_AUI\_DEMUX`), allowing the number of outputs to be extended by modifying the generic type.
 - **Unidirectional Data Flow** – All adapters (IN, OUT1…OUT3) are of type `unidirectional::AUI`, meaning data flows only from the socket to the plug. Feedback from the output to the input is not supported.

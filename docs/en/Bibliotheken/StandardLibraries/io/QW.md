@@ -30,7 +30,8 @@ No adapter interfaces are present.
 ## Functionality
 Upon receiving the INIT event, the QW block initializes the hardware interface with the passed PARAMS. After successful initialization, it confirms this with INITO. A REQ request outputs the WORD data received by OUT to the configured resource. The operation is confirmed with CNF, where STATUS provides information about the success or failure of the operation.
 
-``` ## Technical Features
+```
+## Technical Features
 - Processes 16-bit WORD data
 - String-based parameter configuration via PARAMS
 - Status feedback via STRING variable

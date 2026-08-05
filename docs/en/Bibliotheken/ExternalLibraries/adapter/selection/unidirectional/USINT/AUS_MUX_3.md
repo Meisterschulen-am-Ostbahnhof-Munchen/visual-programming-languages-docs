@@ -68,7 +68,8 @@ The function block operates in an event-driven manner:
 
 The component **does not have an explicit state machine (ECC)**. It behaves purely event-driven and combinationally: The output `OUT` is directly determined by the current value of `K` as soon as a `REQ` arrives. Once an input is passed through, it remains active until the next `REQ` arrives.
 
-# State Overview ## Application Scenarios
+# State Overview
+## Application Scenarios
 - **Signal Switching**: Selection between three different sensors (e.g., temperature, pressure, humidity) for further processing.
 - **Configuration Switching**: Switching between three predefined adapter parameters depending on a control variable.
 - **Test and Simulation Environments**: Displaying various test signals on a common interface.
@@ -79,7 +80,8 @@ The component **does not have an explicit state machine (ECC)**. It behaves pure
 
 **SELECT / SWITCH**:** General selection function blocks typically work with simple data types; AUS_MUX_3, however, transmits entire adapter connections, which allows for a higher level of abstraction.
 
-**MUX_2 / MUX_4**:** ## Conclusion
+**MUX_2 / MUX_4**:**
+## Conclusion
 
 The **AUS_MUX_3** is a compact, generic module for adapter multiplexing with three inputs. Thanks to its event-driven control and the use of the unidirectional OFF adapter, it is ideally suited for flexible signal selection in automation solutions where different data sources need to be routed to a common sink. Its generic design facilitates reuse and adaptation in various projects.
 

@@ -27,7 +27,8 @@ The `SYS_ONTIME` block acts as a client for an internal system service. After re
 
 The block then continuously monitors the system resource. As soon as the uptime changes (typically due to a system tick or similar mechanism), the resource manager triggers an indication. The `SYS_ONTIME` block receives this, updates its internal `ONTIME` value, and forwards the `IND` event, along with the new value, to the connected application logic.
 
-The block then continuously monitors the system resource. As soon as the uptime changes (typically due to a system tick or similar mechanism), the resource manager triggers an indication. ## Technical Features
+The block then continuously monitors the system resource. As soon as the uptime changes (typically due to a system tick or similar mechanism), the resource manager triggers an indication.
+## Technical Features
 * **Service Interface FB**: As a SIFB, its implementation is specific to the respective 4diac runtime (FORTE) and the underlying hardware/platform. The exact method of time measurement (e.g., based on processor startup time or the runtime environment) is runtime-defined.
 * **Unit**: The operating time is provided in the unusual but practical unit for control tasks: the decimal minute (1/100 of an hour). This facilitates calculations in the decimal system, e.g., for maintenance intervals or energy consumption estimates.
 * **Read-Only Access**: The block provides read-only access to an internal system value. Resetting the operating time is not possible via this interface.

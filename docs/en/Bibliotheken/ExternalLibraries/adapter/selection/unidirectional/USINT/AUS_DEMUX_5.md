@@ -67,7 +67,8 @@ This function block has **no explicit state machine** (no ECC). All logic is eve
 - **Signal Distribution in Automation**: A sensor value (e.g., an OFF-encoded measurement signal) should be forwarded to different actuators or downstream functions depending on the operating mode.
 - **Multiplexing/Demultiplexing in Communication Structures**: In industrial networks where data streams are routed via adapter connections, this function block can serve as a demultiplexer for 1:5 distribution.
 - **Configurable Forwarding**: For machines with multiple parallel process lines, an index (e.g., from a higher-level control computer) can be used to specify which line receives data.
-- ## Comparison with Similar Components
+-
+## Comparison with Similar Components
 - **AUS_DEMUX_5 vs. AUS_DEMUX_2** (not shown): Both are structured similarly but differ in the number of outputs (5 vs. 2). The generic approach allows the number of outputs to be varied by changing the type.
 - **AUS_DEMUX_5 vs. Conventional DEMUX with Data Outputs**: While classic demultiplexers often have scalar data outputs, this function block uses adapter interfaces. This enables closer coupling to other adapter-based components and facilitates modular system design.
 - **AUS_DEMUX_5 vs. MUX Components**: The AUS_DEMUX performs the opposite function of a multiplexer (e.g., AUS_MUX), combining multiple inputs into a single output.

@@ -29,7 +29,8 @@ No adapter interfaces are available.
 ## Functionality
 The FB_TP functions as a monostable multivibrator (one-shot). On a rising edge at the IN input, the timer starts and sets the Q output to TRUE for the duration defined in PT. The elapsed time is continuously output at the ET output. After the set time PT has expired, Q is automatically reset to FALSE, regardless of the state of the IN input.
 
-When a rising edge is detected at the IN input, the timer starts and sets the Q output to TRUE for the duration defined in PT. ## Technical Features
+When a rising edge is detected at the IN input, the timer starts and sets the Q output to TRUE for the duration defined in PT.
+## Technical Features
 - Time measurement is independent of the input signal duration
 - ET output displays the current pulse propagation time
 - Immediate response to a rising edge at the IN input

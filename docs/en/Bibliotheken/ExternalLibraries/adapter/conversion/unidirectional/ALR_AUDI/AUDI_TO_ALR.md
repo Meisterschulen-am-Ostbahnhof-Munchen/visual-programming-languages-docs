@@ -50,7 +50,8 @@ The **AUDI_TO_ALR** function block is a composite module that converts a unidire
 
 The function block forwards the incoming event `E1` from socket `AUDI_IN` directly to plug `ALR_OUT`. Simultaneously, the data value `D1` (type `UDINT`) is transferred unchanged to the output data channel `D1` (type `LREAL`). The actual type conversion from `UDINT` to `LREAL` takes place within the adapter interfaces used; the composite block itself does not perform any arithmetic or logical transformation, but merely serves as a wiring aid.
 
-... ## Technical Features
+...
+## Technical Features
 
 - **Pure Adapter Passthrough:** The module contains no logic or state machines of its own – it simply connects the corresponding channels of the two adapters.
 - **Unidirectional Communication:** Both the AUDI and ALR adapters support only one direction of data flow, which simplifies their use in simple sensor/actuator interfaces or when coupling different protocols.

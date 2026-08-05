@@ -32,7 +32,8 @@ No adapter interfaces available.
 ## Functionality
 The CLIENT_2_1 block manages the entire client side of client-server communication. With INIT and QI=TRUE, a new connection to the specified server is established. With INIT and QI=FALSE, an existing connection is closed. The REQ event simultaneously triggers the sending of data SD_1 and SD_2 to the server and the request for data from the server. Upon successful operation, the received data is output via RD_1.
 
-# ## Technical Features
+#
+## Technical Features
 - Supports the ANY data type for flexible data transfer
 - Uses WSTRING for status messages and connection IDs
 - Provides bidirectional data exchange in a single operation

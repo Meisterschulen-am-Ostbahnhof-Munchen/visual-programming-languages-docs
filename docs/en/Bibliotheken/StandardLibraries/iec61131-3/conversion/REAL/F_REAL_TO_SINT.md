@@ -21,7 +21,8 @@ The function block `F_REAL_TO_SINT` converts a `REAL` value (floating-point numb
 ### **Adapters**
 - This function block does not have any adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs the conversion by transforming the `REAL` value at input `IN` into a `SINT` value using the function `REAL_TO_SINT`. The conversion occurs when the event `REQ` is triggered, and the result is output with the event `CNF`.
 

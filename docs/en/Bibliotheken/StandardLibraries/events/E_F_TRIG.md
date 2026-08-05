@@ -33,7 +33,8 @@ The internal logic of the function block (as of `events-3.0.0`) is incorrect and
 **Caution: Incorrect Implementation**
 **The internal logic of the function block (as of `events-3.0.0`)** is incorrect and actually implements a **rising edge detector (`E_R_TRIG`)** instead of a falling one.** The `EO` event is triggered when `QI` transitions from `FALSE` to `TRUE`.**
 
-** ## Technical Features
+**
+## Technical Features
 
 ✔ **Event-driven**: The check only occurs when a `EI` event occurs.
 

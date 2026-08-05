@@ -64,7 +64,8 @@ The function block has no internal state (memoryless). The output signal `OUT` i
 * **`XOR_10_BOOL`:** Performs the exclusive OR operation. The result is `TRUE` if an odd number of inputs are `TRUE`, which is fundamentally different from inclusive OR logic.
 * **Blocks with variable input count:** Some libraries offer OR blocks where the number of inputs is configurable. `OR_10_BOOL`, however, offers a fixed, explicit interface.
 
-**`OR_10_BOOL`:** ## Conclusion
+**`OR_10_BOOL`:**
+## Conclusion
 
 The `OR_10_BOOL` is a robust and easy-to-use basic building block for logical signal processing in IEC 61131-3-based control applications. Its strength lies in its clear interface with ten inputs and the reliable, event-driven calculation of the inclusive OR function. It represents an optimal solution for applications that require combining multiple Boolean sources into a single signal.
 

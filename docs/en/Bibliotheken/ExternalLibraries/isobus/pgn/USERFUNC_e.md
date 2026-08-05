@@ -9,7 +9,8 @@ The global constant `USERFUNC_e` defines an enumeration of numeric values that r
 ## **Data Inputs**
 *Not applicable.* This resource provides constants and has no inputs.
 
-## ### **Data Outputs**
+#
+# ### **Data Outputs**
 *Not applicable.* The constants are referenced directly in the application code.
 
 ### **Adapters**

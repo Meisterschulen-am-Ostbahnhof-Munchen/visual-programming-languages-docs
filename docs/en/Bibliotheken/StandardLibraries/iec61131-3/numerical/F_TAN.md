@@ -24,7 +24,8 @@ No adapter interfaces are available.
 ## Functionality
 Upon receiving a REQ event, the F_TAN block calculates the tangent of the angle passed to IN in radians. The result is output to OUT, and simultaneously, a CNF event is generated to signal the completion of the calculation.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports the ANY_REAL data type for maximum flexibility with numeric inputs
 - Calculations are performed in radians (not degrees)
 - Implemented according to the IEC 61131-3 standard for numeric functions

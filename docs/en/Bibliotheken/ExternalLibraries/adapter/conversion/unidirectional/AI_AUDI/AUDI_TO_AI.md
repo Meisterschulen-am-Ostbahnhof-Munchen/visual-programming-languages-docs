@@ -25,7 +25,8 @@ The function block is implemented as a composite block. Internally, socket `AUDI
 
 When an event is received via the adapter input `AUDI_IN.E1`, the corresponding data value `AUDI_IN.D1` is passed to the conversion block. After successful conversion of `UDINT` to `INT`, the event `Convert.CNF` is generated and output via `AI_OUT.E1`. Simultaneously, the converted value is available at `AI_OUT.D1`.
 
-... ## Technical Features
+...
+## Technical Features
 - Uses a standardized IEC 61131 conversion block that can be implemented platform-independently.
 - The conversion from `UDINT` (32 unsigned bits) to `INT` (16 signed bits) is potentially lossy. Depending on the implementation of the conversion block, an overflow or limit may occur if the value range is exceeded.
 - The use of unidirectional adapters ensures a clean data flow and facilitates integration into modular systems.

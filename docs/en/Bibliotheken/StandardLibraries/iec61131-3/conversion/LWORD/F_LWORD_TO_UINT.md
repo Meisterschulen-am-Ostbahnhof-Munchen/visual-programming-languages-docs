@@ -20,7 +20,8 @@ The function block `F_LWORD_TO_UINT` converts a `LWORD` data type to a `UINT` da
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs the conversion from `LWORD` to `UINT` when the event `REQ` is received. The conversion is performed using the function `LWORD_TO_UINT(IN)`, which converts the value of `IN` and passes the result to `OUT`. After successful conversion, the event `CNF` is triggered.
 

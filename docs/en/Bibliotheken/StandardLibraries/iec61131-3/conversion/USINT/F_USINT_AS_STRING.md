@@ -25,7 +25,8 @@ When the event input `REQ` is triggered, the algorithm is executed, converting t
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The function block uses the function `USINT_AS_STRING` for conversion.
 - It is a simple function block without a state machine or complex logic.
 

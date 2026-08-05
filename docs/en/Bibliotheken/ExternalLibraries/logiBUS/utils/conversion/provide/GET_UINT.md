@@ -87,6 +87,7 @@ There is no explicit start or end state; after execution, the function block rem
 
 Unlike a pure input function block, which uses a fixed data port, **GET_UINT** allows the use of an **InOut variable** as a source. This allows the variable to be both written to and read from external sources without requiring a separate connection to an input. Pure read function blocks (e.g., UINT input) do not offer this flexibility but have a clearer interface. Compared to a memory function block (e.g., `R_TRIG` or `SR`), **GET_UINT** does not store states, but only the last read value.
 
-# ## Conclusion
+#
+## Conclusion
 
 **GET_UINT** is a simple yet useful function block that buffers a UINT value from an InOut variable. Its minimalist design—one event, one action—makes it ideal for situations requiring clean, time-defined value transfer. It is particularly well-suited for applications that need a consistent data set within a flow without affecting the source.

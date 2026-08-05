@@ -4,7 +4,8 @@ This article describes the logiBUS® exercise `Uebung_040`. It demonstrates a so
 Exercise_040: Running Light 8
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
-This article describes the logiBUS® exercise `Uebung_040`. It shows a sophisticated method for manually switching through an 8-step sequence using only a few buttons.] ## 📺 Video
+This article describes the logiBUS® exercise `Uebung_040`. It shows a sophisticated method for manually switching through an 8-step sequence using only a few buttons.]
+## 📺 Video
 
 ![Uebung_040_network](./Uebung_040_network.svg)
 

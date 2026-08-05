@@ -14,7 +14,8 @@ The function block `F_NOT_BOOL` implements the logical NOT function (negation) f
 ### **Data Inputs**
 * **IN (Input)**: Data type `BOOL`. This is the binary input value to be negated. Valid values are `TRUE` (1) or `FALSE` (0).
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 * **OUT (Output)**: Data type `BOOL`. This is the result of the logical negation. The output value is the logical opposite of the input value `IN`.
 
 ### **Adapters**

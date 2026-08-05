@@ -32,7 +32,8 @@ Plug | Output | OUT2 | Second outgoing ASR signal adapter. |
 Plug | Output | OUT3 | Third outgoing ASR signal adapter. |
 
 All adapters are of type `adapter::types::unidirectional::ASR`.
-... ## Functionality
+...
+## Functionality
 
 This function block forwards all signals and events arriving via socket `IN` from the ASR adapter unchanged to the three plug channels `OUT1`, `OUT2`, and `OUT3`. No logical processing or buffering takes place – the distribution is passive and instantaneous. The function block acts as a simple splitter for ASR connections.
 

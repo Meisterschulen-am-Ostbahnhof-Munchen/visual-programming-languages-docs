@@ -76,7 +76,8 @@ After the command is completed, the internal module sends a `CNF` event.
 
 * The outputs `STATUS` and `s16result` are set accordingly and are valid at the event output `CNF`.
 * Simultaneously, the previous color value (data `D1`) and an acknowledgment event (`E1`) are output via the plug `u8OldColour`.
-* ## Technical Features
+*
+## Technical Features
 * The module implements the "Change Background Colour" command according to ISO 11783-6, section F.20.
 * The color values correspond to the VT standard color palette from Annex A.3 of the standard.
 
@@ -91,7 +92,8 @@ After the command is completed, the internal module sends a `CNF` event.
 * `VT_E_NOT_ALIVE (-130)` – VT not reachable
 * The function block uses a unidirectional adapter (`AUS`) that combines the event and data channels – this reduces the number of interfaces.
 
-``` ## State Overview
+```
+## State Overview
 
 The function block (FB) does not have an explicit state machine at the top level, but the interaction with `INIT`, `REQ` (via adapter), and `CNF` results in the following implicit states:
 
@@ -116,7 +118,8 @@ Responding to user input or system states to dynamically adjust the visual displ
 
 The `u8OldColour` plugin allows you to save the previous color value or use it for later restoration.
 
-* ## Comparison with Similar Function Blocks
+*
+## Comparison with Similar Function Blocks
 * **`Q_BackgroundColour`** (without `_AUS`):
 
 Offers the same core functionality, but usually with individual event/data ports instead of encapsulated adapters. The `_AUS` function block simplifies the connection to other function blocks that also use AUS adapters.

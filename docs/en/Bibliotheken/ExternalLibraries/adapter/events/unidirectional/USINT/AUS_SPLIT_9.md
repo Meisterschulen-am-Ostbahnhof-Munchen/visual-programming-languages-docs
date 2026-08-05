@@ -29,7 +29,8 @@ SOCKET | IN | `adapter::types::unidirectional::AUS` | Incoming OFF signal |
 ## Functionality
 This function block forwards the OFF signal arriving at the SOCKET *IN* unchanged to all nine PLUG outputs *OUT1* to *OUT9*. The forwarding occurs continuously without any additional logic or delay. Since this is a generic function block, the specific data format of the OFF adapter type is not defined – it can be Boolean values, scalars, or complex structures, depending on the adapter definition used.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Function Block**: The function block is declared as generic by the attribute `GenericClassName` (`GEN_AUS_SPLIT`) and can be parameterized for various OFF adapter instances.
 - **Adapter-Based**: Communication occurs exclusively via adapters (sockets/plugs) – no event or data inputs are required.

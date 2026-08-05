@@ -26,7 +26,8 @@ This function block performs the conversion from ULINT to WORD when the `REQ` ev
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The block does not support overflow error handling (since ULINT has a larger value range than WORD).
 - The conversion is instantaneous and without any additional delay.
 

@@ -45,7 +45,8 @@ These constants are primarily used in ISOBUS-compliant control systems in agricu
 * **Message Filtering:** A receiver block can use the `ISOUSERHOME_e` value to determine whether an incoming ISOBUS message is intended for its own device (`thisMember`), another device on the network (`network`), or for internal processing (`intern`).
 * **Message Construction:** A sender block can set this value to identify the intended recipient of a sent message.
 * **Status Feedback:** A block can return the status `notdef` if the origin or destination of a message cannot be determined.
-* **Message Construction:** ## ⚖️ Comparison with Similar Building Blocks
+* **Message Construction:**
+## ⚖️ Comparison with Similar Building Blocks
 * **`E_SR` or `E_RESTART`:** These are executable basic function blocks with event logic. `ISOUSERHOME_e`, on the other hand, is a pure data definition without logic.
 * **User-Defined Data Types (DT):** Similar to a structured data type (STRUCT) or an enumeration (ENUM), `ISOUSERHOME_e` is used to encode semantic meaning. The difference lies in the IEC 61499 specification: `GlobalConstants` are intended for immutable values that are valid project-wide.
 * **Direct Use of Numeric Values:** Using `ISOUSERHOME_e.intern` in the code is significantly more meaningful and less error-prone than directly using the number `0`.

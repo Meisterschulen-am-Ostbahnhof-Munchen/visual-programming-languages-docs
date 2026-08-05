@@ -49,7 +49,8 @@ No direct data outputs. Output is via the **adapter output** (plug).
 
 **IN4** | `adapter::types::unidirectional::AULI` | Fourth input (K=3). |
 
-**IN1** | `adapter::types::unidirectional::AULI` | Fourth input (K=3). ## Functionality
+**IN1** | `adapter::types::unidirectional::AULI` | Fourth input (K=3).
+## Functionality
 
 1. The function block waits for an event at the **REQ** input.
 

@@ -10,7 +10,8 @@ The SCALE_LIM function block is a scaling module with additional limiting functi
 ### **Event Outputs**
 - **CNF**: Signals the completion of the scaling operation.
 
-### ### **Data Inputs**
+#
+## ### **Data Inputs**
 - **IN** (REAL): Input value to be scaled
 - **MAX_IN** (REAL): Maximum input value for scaling
 - **MIN_IN** (REAL): Minimum input value for scaling

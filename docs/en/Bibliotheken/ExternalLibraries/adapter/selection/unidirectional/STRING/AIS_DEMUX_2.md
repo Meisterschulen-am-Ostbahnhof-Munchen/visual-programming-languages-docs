@@ -53,7 +53,8 @@ This module operates as a 1-to-2 demultiplexer for AIS data streams. Upon the ar
 
 After the switching, the **CNF** event is sent. It is assumed that the AIS data on the outputs remains valid until the next **REQ**.
 
-- ## Technical Features
+-
+## Technical Features
 - **Generic Function Block**: The function block is declared as a generic type (`GEN_AIS_DEMUX`), allowing it to be parameterized in different contexts.
 - **Unidirectional Adapters**: All AIS adapters are unidirectional, meaning data flows only from the socket to the plugs.
 - **License**: The function block is licensed under the **Eclipse Public License 2.0**.

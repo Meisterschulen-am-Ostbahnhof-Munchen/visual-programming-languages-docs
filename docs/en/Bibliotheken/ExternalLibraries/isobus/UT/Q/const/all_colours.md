@@ -24,7 +24,8 @@ The function block declares the constants at system startup. The values are pre-
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - **Type:** `USINT` (0–255)
 - **Standard Compliance:** Colors 0–231 are defined according to ISOBOBus; the remaining 24 entries (232–255) are manufacturer-specific and set to the same gray value (`#808080`).
 - **Naming:** The designations `COLOR_0` … `COLOR_255` enable simple numerical referencing in algorithms or visualizations.

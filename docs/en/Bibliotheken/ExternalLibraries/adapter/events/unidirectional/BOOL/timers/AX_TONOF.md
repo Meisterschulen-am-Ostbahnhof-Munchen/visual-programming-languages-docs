@@ -29,7 +29,8 @@ AX_TONOF is a standardized timer function block that implements both on and off 
 ## Functionality
 The AX_TONOF function block processes input signals via the IN adapter and applies the configured delay times depending on the signal state. When an input signal is active, the PT_ON delay is taken into account; when the signal is inactive, the PT_OFF delay is used. The result is output via the Q-adapter.
 
-` ...)````) ```) ```) ```) ``) ``) ``)`) is taken into account. The `PT_ON` delay is taken into account when an ## Technical Features
+` ...)````) ```) ```) ```) ``) ``) ``)`) is taken into account. The `PT_ON` delay is taken into account when an
+## Technical Features
 - Supports bidirectional time delays (on and off delay)
 - Integrated reset functionality
 - Uses adapters for inputs and outputs instead of direct interfaces

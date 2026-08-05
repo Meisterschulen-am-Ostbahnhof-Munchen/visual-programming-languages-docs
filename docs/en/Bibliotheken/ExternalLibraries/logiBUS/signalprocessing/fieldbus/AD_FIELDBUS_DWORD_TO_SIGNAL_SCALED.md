@@ -73,7 +73,8 @@ The device does not have its own explicit state diagram (ECC). All state logic r
 - **Fieldbus Data Acquisition**: A raw DWORD value (e.g., from an analog-to-digital converter or encoder) is converted using physical factors (scaling) and offset and transmitted as an analog value to a controller.
 - **Signal Validation with Storage**: When the fieldbus provides a validity flag (e.g., "Data Updated"), this can be evaluated via the validity adapter level. The flip-flop ensures that the validity signal remains stable until the next update.
 - **Configurable Scaling**: By externally specifying `SCALE` and `OFFSET`, the same function block can be used for different sensor ranges without modifying the function block itself.
-- ## Comparison with Similar Function Blocks
+-
+## Comparison with Similar Function Blocks
 
 Compared to a simple `MOVE` or `SCALE` function block, this FB offers integrated validation handling and a clean separation between data and event adapters. Similar function blocks (e.g., `FIELD_DWORD_TO_ANALOG`) often lack separate signal validity output or edge-synchronous storage. The combination of core function block and D flip-flop used here is a proven solution for safety-critical applications where the validity of a data value must be reliably maintained.
 

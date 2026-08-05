@@ -30,7 +30,8 @@ No adapter interfaces available.
 
 The PUBLISH_0 block enables the publication of data via a publish-subscribe pattern. Upon initialization (INIT), the block is configured with a specific ID. Upon a send request (REQ), the data is distributed to all registered subscribers. Communication is unacknowledged, meaning no response is expected from the recipients.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses WSTRING data types for ID and STATUS for international character support
 - Implements unconfirmed communication
 - Supports multiple subscribers via a single Publish instance

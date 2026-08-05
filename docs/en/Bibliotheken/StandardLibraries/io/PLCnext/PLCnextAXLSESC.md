@@ -28,7 +28,8 @@ The PLCnextAXLSESC is a Service Interface Function Block that serves as an inter
 ## Functionality
 The PLCnextAXLSESC function block acts as an intermediary between the 4diac controller and PLCnext hardware. Upon receiving an INIT event with QI enabled, the function block initializes communication via the bus adapters. Successful initialization is confirmed by the INITO event. During operation, status changes and indications from the hardware can be reported via the IND event.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses WSTRING for STATUS output, supporting international character sets
 - Implements a bidirectional adapter system for flexible bus communication
 - Separate events for initialization and ongoing indications

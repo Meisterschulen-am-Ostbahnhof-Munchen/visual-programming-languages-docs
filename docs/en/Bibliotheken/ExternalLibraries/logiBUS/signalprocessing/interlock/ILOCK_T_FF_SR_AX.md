@@ -64,7 +64,8 @@ The latch is implemented using the bidirectional AE2 protocol: The signals from 
 - **Bidirectional Interlocking**: The adapters `ILOCK_IN` and `ILOCK_OUT` are of type AE2, which enables bidirectional exchange of events and data. This allows for interlocking with other function blocks.
 - **Toggle Only on State Change**: The toggle mechanism evaluates the output Q, so a toggle only occurs if the flip-flop has not already been set by S or R.
 - **No Direct Data Inputs**: Control is achieved exclusively via events and adapters, which facilitates integration into event-driven systems.
-- ## State Overview
+-
+## State Overview
 
 The internal state of the flip-flop can take the values `false` (0) or `true` (1). The possible transitions are:
 

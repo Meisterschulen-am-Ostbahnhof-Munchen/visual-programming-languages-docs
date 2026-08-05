@@ -86,7 +86,8 @@ Outputs the numeric value (LREAL) to a terminal. The parameter `stObj` refers to
 - `QU` (Count Up Overflow): outputs to `TRUE` when the counter reaches or exceeds its maximum value → outputs to `Output_Q1`.
 - `QD` (Count Down Overflow): outputs to `TRUE` when the minimum value is undershot → outputs to `Output_Q2`.
 - `CV` (Current Value): converted to an LREAL signal via `ADI_TO_ALR` and passed to `Q_NumericValue_PHYSA_LREAL`. This outputs the current counter value as a numerical value on the terminal (physical output).
-...`` 4. **Output**:** ### Notes on the Setup
+...`` 4. **Output**:**
+### Notes on the Setup
 
 - **Network Comments**:
 

@@ -35,7 +35,8 @@ No data outputs available.
 ## Functionality
 The `AQ_SPLIT_4` forwards all data and events arriving via socket `IN` from the AQ adapter unchanged to the four plug adapters `OUT1` to `OUT4`. No processing, filtering, or delay of the signals takes place. Distribution occurs purely at the connection level, so all outputs always have the same state as the input.
 
-# Functionality ## Technical Features
+# Functionality
+## Technical Features
 - **Generic Typing**: The function block uses the attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AQ_SPLIT'`. This allows it to be addressed as a generic function block in the 4diac IDE, increasing its reusability in various application contexts.
 - **No State Logic**: The function block has no internal state machine (ECC) and no input/output events. It acts purely as a "wiring aid" for adapter connections.
 - **Unidirectional Adapter**: All adapters used are of type `unidirectional::AQ`, meaning data flows only in one direction (from the socket to the plugs).

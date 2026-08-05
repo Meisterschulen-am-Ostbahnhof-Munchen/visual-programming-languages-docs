@@ -21,7 +21,8 @@ The function block `sequence_ET_04_loop` implements a cyclic sequence with four 
 * `EO_S2`: Triggered upon entering `State_02`. Transmits the output value `DO_S2`.
 * `EO_S3`: Triggered upon entering `State_03`. Transmits the output value `DO_S3`.
 * `EO_S4`: Triggered upon entering `State_04`. Transmits the output value `DO_S4`.
-* * ... ### **Data Inputs**
+* * ...
+### **Data Inputs**
 * `DT_S1_S2` (TIME): Time for the automatic transition from `State_01` to `State_02`. A value of `NO_TIME` disables the time transition.
 * `DT_S2_S3` (TIME): Time for the automatic transition from `State_02` to `State_03`. A value of `NO_TIME` disables the time transition.
 * `DT_S3_S4` (TIME): Time for the automatic transition from `State_03` to `State_04`. The value `NO_TIME` disables the time transition.

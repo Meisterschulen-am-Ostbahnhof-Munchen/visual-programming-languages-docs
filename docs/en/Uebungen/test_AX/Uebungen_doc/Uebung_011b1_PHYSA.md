@@ -18,7 +18,8 @@ The exercise consists of four directly instantiated function blocks. No further 
 | `AR_ADD_2` | `adapter::iec61131::arithmetic::AR_ADD_2` | Performs an addition of two physical values (IN1 + IN2) and outputs the result as OUT. |
 
 | `Q_NumericValue_PHYSA` | `isobus::UT::Q::Q_NumericValue_PHYSA` | Writes the passed physical value to the hardware interface `OutputNumber_N3`.
-... ### Parameters of Individual Instances
+...
+### Parameters of Individual Instances
 
 **NumericValue_PHYSA_I3**
 

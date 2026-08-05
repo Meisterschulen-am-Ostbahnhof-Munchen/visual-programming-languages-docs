@@ -50,7 +50,8 @@ The event constants cover the following states:
 12 | BUTTON_NONE_PRESS | No key press |
 
 255 | Invalid | Invalid event |
-... ## Application Scenarios
+...
+## Application Scenarios
 
 - **User Interface Control**: Processing keystrokes on operator panels
 - **Machine Control**: Capturing manual inputs on industrial controllers

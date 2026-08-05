@@ -73,7 +73,8 @@ Sub-Applikation.Q   --> OUT des logiBUS_QX
 This structure allows the sub-application's logic to be used twice without having to redefine it. The toggle function is executed with each key press (single click).
 
 `Uebung_004b2b_sub1.Q` → `DigitalOutput_Q1.OUT`
-... ## Summary
+...
+## Summary
 
 - **Learning Objectives**:
 - Design and use of sub-applications for logic reuse

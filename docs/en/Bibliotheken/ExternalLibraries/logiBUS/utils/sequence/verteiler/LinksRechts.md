@@ -39,7 +39,8 @@ The priority logic is defined as follows: If `EIN` is active (`TRUE`), `DI_Recht
 * **Status Output**: The output `STATE` is of type `STRING` and is fed from an imported enumeration `STATES`, which facilitates diagnosis and visualization.
 * **Pause States**: There are two separate pause states (`Rechtslauf_Pause` and `Linkslauf_Pause`). These remember the last active direction. Upon reactivation (`EIN=TRUE`), the last active direction is resumed, unless a specific run command (`DI_Rechts`/`DI_Links`) is pending.
 
-**Pause States**: Two separate pause states exist (`Rechtslauf_Pause` and `Linkslauf_Pause`). These remember the last active direction. ## State Overview
+**Pause States**: Two separate pause states exist (`Rechtslauf_Pause` and `Linkslauf_Pause`). These remember the last active direction.
+## State Overview
 The ECC (Execution Control Chart) of the function block comprises five states:
 
 1. **`START`**: Initial state. This state is exited with the first `EI_ON` event.

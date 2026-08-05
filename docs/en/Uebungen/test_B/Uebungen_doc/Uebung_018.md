@@ -6,7 +6,8 @@ Exercise_018: Control Audio Signal and Delay
 
 This article describes the logiBUS® exercise `Uebung_018`. Here, the audio output is extended to create time-delayed tone sequences.]
 
-[qzmsdocs0000001qz] ## 📺 Video
+[qzmsdocs0000001qz]
+## 📺 Video
 
 ![Uebung_018_network](./Uebung_018_network.svg)
 

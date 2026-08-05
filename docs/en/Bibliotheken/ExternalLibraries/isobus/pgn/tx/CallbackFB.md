@@ -44,7 +44,8 @@ Since it is a purely pass-through composite function block without an internal s
 * **Structuring Subapplications**: In complex subapplications, the `CallbackFB` can be used to provide a clean and reusable interface for callback communication.
 * **Decoupling Components**: It enables loose coupling between a service provider (providing the socket) and a service user (using this function block), which improves maintainability and testability.
 * **ISOBUS Communication**: A specific application in control systems for agricultural machinery to asynchronously acknowledge or request the transmission of CAN messages (PGNs).
-* ## ⚖️ Comparison with Similar Building Blocks
+*
+## ⚖️ Comparison with Similar Building Blocks
 * **Direct Adapter Connection**: Instead of directly integrating a `Callback` adapter into a network, the `CallbackFB` offers a bundled, named interface (`CNF`/`REQ`/`DI1`) that may be more readable in some designs.
 * **Simple E_CLASS vs. CallbackFB**: A simple E_CLASS building block (Event Splitter/Merger) could perform similar event routing, but would not provide the type-safe data connection for `isobus::pgn::CAN_MSG` along with the standardized adapter interface.
 * **Simple E_CLASS vs. CallbackFB**: * **Generic Wrapper Function Blocks**: Unlike generic wrapper function blocks, `CallbackFB` is specialized for a specific data type and adapter, ensuring type safety and clear semantics.

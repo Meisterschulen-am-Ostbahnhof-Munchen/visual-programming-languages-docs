@@ -11,7 +11,8 @@ The sub-application `Uebung_003b2_sub_AX` serves as a generic building block to 
 
 This sub-application encapsulates the logic for signal forwarding. The internal components and their configuration are described below.
 
-``` ### Sub-Blocks: Exercise_003b2_sub_AX
+```
+### Sub-Blocks: Exercise_003b2_sub_AX
 
 - **Type**: SubAppType
 - **Internal Function Blocks Used**:
@@ -29,7 +30,8 @@ This sub-application encapsulates the logic for signal forwarding. The internal 
 
 The sub-block accepts configuration data for one input and one output. The internal function block `IXA` reads the state of the physical input (defined by the variable `Input`). This state is not passed on as a simple Boolean signal, but rather via an adapter connection (`Connection`) directly to the output function block `QXA`. The `QXA` function block then controls the physical output (defined by `Output` and `u8SAMember`) accordingly.
 
-This signal is not transmitted as a simple Boolean signal, but rather via an adapter connection (`Connection`). ## Program Flow and Connections
+This signal is not transmitted as a simple Boolean signal, but rather via an adapter connection (`Connection`).
+## Program Flow and Connections
 
 The flow within this module is purely signal-driven and serves for hardware abstraction:
 

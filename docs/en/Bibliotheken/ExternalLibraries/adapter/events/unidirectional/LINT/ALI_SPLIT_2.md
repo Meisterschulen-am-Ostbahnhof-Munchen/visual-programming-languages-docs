@@ -17,7 +17,8 @@ No event outputs are available. Event control is handled via the adapter connect
 
 No dedicated data inputs. All data is provided via the incoming adapter **IN**.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 
 No dedicated data outputs. The distributed data is provided via the two outgoing adapters **OUT1** and **OUT2**.
 

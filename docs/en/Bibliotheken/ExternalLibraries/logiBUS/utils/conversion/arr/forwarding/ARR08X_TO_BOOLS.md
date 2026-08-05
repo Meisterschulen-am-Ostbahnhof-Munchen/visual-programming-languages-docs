@@ -17,7 +17,8 @@ The block has a simple, unidirectional interface with a request/acknowledgment e
 ### **Data Inputs**
 * **IN** (ARRAY[0..7] OF BOOL): The input array containing the eight Boolean values to be extracted. Index 0 corresponds to the least significant bit (LSB) and is mapped to `OUT_00`.
 
-### ### **Data Outputs**
+#
+## ### **Data Outputs**
 * **OUT_00** (BOOL): Extracted bit 0 (LSB) of input array `IN`.
 * **OUT_01** (BOOL): Extracted bit 1 of input array `IN`.
 * **OUT_02** (BOOL): Extracted bit 2 of input array `IN`.

@@ -25,7 +25,8 @@ The function block performs the conversion when the event `REQ` is received. The
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The conversion is performed by the function `UDINT_TO_BYTE`, which maps the UDINT value to a BYTE value. Data loss can occur if the original value is outside the representable range of a BYTE (0 to 255).
 - The function block is implemented as a simple function block (SimpleFB) and uses an ST algorithm for the conversion.
 

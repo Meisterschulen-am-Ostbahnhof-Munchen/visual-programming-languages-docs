@@ -21,7 +21,8 @@ The function block `F_REAL_AS_WSTRING` converts a `REAL` value into a `WSTRING` 
 ### **Adapters**
 This function block does not have any adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 The function block `F_REAL_AS_WSTRING` converts the `REAL` value at input `IN` to a `WSTRING` value upon receiving an incoming `REQ` event. The result is provided at output `OUT` and confirmed by a `CNF` event.
 
 The conversion algorithm is implemented as a simple ST (Structured Text) statement:

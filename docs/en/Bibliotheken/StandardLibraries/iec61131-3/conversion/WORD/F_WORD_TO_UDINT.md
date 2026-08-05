@@ -20,7 +20,8 @@ The function block `F_WORD_TO_UDINT` converts a `WORD` data type to a `UDINT` da
 ### **Adapters**
 This function block has no adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When the `REQ` event is triggered, the algorithm is started, which converts the `WORD` value at the `IN` input into a `UDINT` value. The result is provided at the `OUT` output, and the `CNF` event signals successful execution.
 
 ## Technical Features

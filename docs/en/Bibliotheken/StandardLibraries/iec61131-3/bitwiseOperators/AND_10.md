@@ -20,7 +20,8 @@ The `AND_10` function block is a generic building block for calculating a bitwis
 ### **Adapters**
 - No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 The `AND_10` function block performs a bitwise logical AND operation on the values of all active inputs (`IN1` to `IN10`). The result is output at `OUT` as soon as the `REQ` event is received. The calculation is confirmed by the `CNF` event.
 
 ## Technical Features

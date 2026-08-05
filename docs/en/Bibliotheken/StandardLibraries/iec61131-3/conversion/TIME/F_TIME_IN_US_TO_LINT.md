@@ -21,7 +21,8 @@ The function block `F_TIME_IN_US_TO_LINT` converts a TIME value in microseconds 
 ### **Adapters**
 This function block does not use adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs the conversion by transforming the TIME input value (`IN`) in microseconds into a LINT value (`OUT`). The conversion occurs when the `REQ` event is triggered and is confirmed by the `CNF` event.
 

@@ -31,7 +31,8 @@ The internally used module `E_D_FF_ANY` expects an event (inherited from **I.E1*
 ## Functionality
 As soon as an event arrives at the adapter input **I** (pin **E1**), the simultaneously present data value (pin **D1**) is transferred to the internal memory. After successful transfer, an event is triggered at the adapter output **Q** (pin **E1**), and the stored value is available at **Q.D1**. The stored value is retained until a new event at **I.E1** transfers a new value.
 
-# Functionality ## Technical Features
+# Functionality
+## Technical Features
 - **Adapter-based interface:** The component uses only unidirectional adapters, enabling loose coupling and flexible interconnection.
 - **No dedicated event/data pins:** All input and output is handled via the **I** and **Q** adapters.
 - **Internal standard flip-flop:** The actual latch functionality is provided by the IEC 61499 component `E_D_FF_ANY`, which is specified to operate on any data type template.

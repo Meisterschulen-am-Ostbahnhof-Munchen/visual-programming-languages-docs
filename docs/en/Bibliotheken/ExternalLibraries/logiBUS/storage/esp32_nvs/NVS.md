@@ -21,7 +21,8 @@ The NVS (Non-Volatile Storage) function block enables persistent storage and loa
 * **KEY** (STRING): The unique key name under which the value is stored in the NVS or from which it is read. This value must be set during the INIT phase.
 * **VALUE** (ANY_ELEMENTARY): The data record to be stored. It can be any elementary data type (e.g., BOOL, INT, REAL, STRING).
 * **DEFAULT_VALUE** (ANY_ELEMENTARY): The default value returned during a read operation (INIT or GET) if no value is yet stored in the NVS under the specified key.
-* ### **Data Outputs**
+*
+### **Data Outputs**
 * **QO** (BOOL): Reflects the current operating state of the function block (`TRUE` = ready/successful, `FALSE` = not ready/error).
 * **STATUS** (STRING): Contains a status message describing the success or type of error of the last operation (e.g., "OK", "Key not found", "Storage full").
 * **VALUEO** (ANY_ELEMENTARY): The value actually read from the NVS or, if no value was present, the value from `DEFAULT_VALUE`.

@@ -24,7 +24,8 @@ The function block `F_INSERT` is used to manipulate character strings. It insert
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 When the event `REQ` is triggered, the string `IN2` is inserted into the string `IN1` at the position defined by `P`. The result of this operation is output via the data output `OUT`, and the event `CNF` is triggered to indicate successful processing.
 

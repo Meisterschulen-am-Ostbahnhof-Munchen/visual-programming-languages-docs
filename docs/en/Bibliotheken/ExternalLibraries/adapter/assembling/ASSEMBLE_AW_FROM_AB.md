@@ -54,7 +54,8 @@ The following applies:
 Since both BYTE events lead to the same `REQ` input in the assembler, assembly is re-executed with each event from either input. The output value is therefore always generated from the currently present byte values. The D flip-flop ensures a stable output until the next assembly event arrives.
 
 **Important feature:**
-**Since both BYTE events lead to the same `REQ` input in the assembler, the assembly is re-executed with each event from either input.** ## Technical Features
+**Since both BYTE events lead to the same `REQ` input in the assembler, the assembly is re-executed with each event from either input.**
+## Technical Features
 
 - **Pure Adapter Communication:** The function block (FB) has no conventional input/output variables; all data and event transmission occurs via unidirectional adapters.
 - **Event Synchronization:** The single-step assembly process avoids race situations, as the flip-flop only updates the output after successful computation.

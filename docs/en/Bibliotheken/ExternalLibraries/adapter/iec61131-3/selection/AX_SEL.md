@@ -25,7 +25,8 @@ The AX_SEL function block is a binary selector used to choose between two input 
 
 ## Functionality
 The AX_SEL function block selects between two input values (IN0 and IN1) and outputs the selected value at output OUT. The selection is controlled via the connected adapter G. When the CNF event is activated, the selected value is provided at output OUT.
-... ## Technical Features
+...
+## Technical Features
 - Uses the ANY data type for maximum flexibility in inputs and outputs
 - Implemented as a unidirectional adapter for easy control
 - Supports various data types through the use of ANY

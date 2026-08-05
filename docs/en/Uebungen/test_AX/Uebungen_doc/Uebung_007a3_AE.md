@@ -4,7 +4,8 @@
 ## Introduction
 This exercise describes the implementation of a flasher that periodically switches a digital output (Output_Q1) on and off. It is controlled by two pushbuttons (Start/Stop). The key components used are the function blocks `AE_CYCLE` (Timer), `AX_SWITCH` (Changeover Switch), `AX_SR` (Set-Reset Flip-Flop), and other adapter blocks. A special feature of this circuit is that the output remains permanently off when switched off – there is no unintended activation.
 
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 - **DigitalOutput_Q1** (Type: `logiBUS::io::DQ::logiBUS_QXA`)
 - Parameters: `QI` = TRUE, `Output` = "Output_Q1"

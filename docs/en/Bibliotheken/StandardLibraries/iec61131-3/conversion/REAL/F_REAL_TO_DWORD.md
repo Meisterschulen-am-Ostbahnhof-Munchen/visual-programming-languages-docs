@@ -25,7 +25,8 @@ When an event is received at input `REQ`, the algorithm is executed, converting 
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The conversion is performed by the function ``REAL_TO_DWORD``, which directly converts the REAL value into a DWORD value. The floating-point value is rounded to the nearest integer.
 - Note that data loss can occur with very large or small values, as the DWORD type offers only limited precision.
 

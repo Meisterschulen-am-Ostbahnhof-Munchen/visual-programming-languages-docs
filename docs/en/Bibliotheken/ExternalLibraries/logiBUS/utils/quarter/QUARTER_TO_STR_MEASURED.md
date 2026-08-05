@@ -31,7 +31,8 @@ This function block has no adapter interfaces.
 ## Operation
 The `QUARTER_TO_STR_MEASURED` is a Basic Function Block (BFB) with an internal Execution Control Graph (ECC). Upon the arrival of the `REQ` event, the value at the input `IB` is compared with predefined constants from the library `logiBUS::utils::quarter::const::quarter`. Depending on the matching value, the controller branches to one of four states (`SET`, `RESET`, `Error`, `none`). In each of these states, a specific algorithm is executed, assigning the corresponding text constant (e.g., `quarter::STATUS_ENABLED_msg`) to the output `STR`. The block then transitions to state `ok`, from which the output event `CNF` is triggered, before the block returns to its initial state `START` and waits for the next `REQ`.
 
-... ## Technical Features
+...
+## Technical Features
 * **Typed Constants:** The block uses strongly typed constants for both the input values (`quarter::STATUS_...`) and the output strings (`quarter::STATUS_..._msg`). This increases the type safety and maintainability of the code.
 * **Basic FB:** The implementation as a Basic FB with ECC enables clear and comprehensible state logic.
 * **Initial Values:** Both the data input `IB` and the data output `STR` are pre-populated with meaningful initial values (disabled state).

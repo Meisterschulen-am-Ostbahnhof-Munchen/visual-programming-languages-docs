@@ -25,7 +25,8 @@ The `SchieberAuxOutStruct` is purely a data storage structure. It encapsulates t
 * **Initialization:** The structure uses predefined constants (`ID_NULL`, `COLOR_WHITE`) from imported namespaces for the initial values. This ensures consistency and simplifies maintenance.
 * **Typing:** Explicit typing (`UINT` for the image ID, `USINT` for the color) enables rigorous checks by the compiler and increases reliability.
 * **Usage:** This STRUCT is typically used as a data type for inputs or outputs of function blocks (FBs) that interact with graphical user interfaces or display devices.
-* ## State Overview
+*
+## State Overview
 Since it is a passive data type, `SchieberAuxOutStruct` does not have an internal state machine. Its "state" is entirely defined by the currently stored values in `Picture` and `u8Colour`.
 
 ## Application Scenarios

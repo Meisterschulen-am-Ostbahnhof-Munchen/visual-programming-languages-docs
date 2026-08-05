@@ -78,6 +78,7 @@ The function block (FB) does not have its own state machine. Its behavior is ent
 - **BOOL SEL Function Blocks**: Simple selectors with BOOL input often only have one event input. This function block additionally allows triggering via the adapter, enabling flexible control.
 - **Adapter-Based Solutions**: Compared to hard-wired selectors, the adapter offers greater modularity – the triggering adapter can be exchanged depending on the context.
 
-**Adapter-Based Solutions**: ## Conclusion
+**Adapter-Based Solutions**:
+## Conclusion
 
 The `AUDI_AX_SEL_REQ` is a compact yet flexible binary selector that distinguishes itself from simple selectors through its combination of adapter connectivity and dual triggering. It is particularly well-suited for modular automation solutions where the selection signal is provided by an external component and reliable, immediate forwarding of the result is required. The use of standardized IEC types and clear interfaces facilitates integration into existing control architectures.

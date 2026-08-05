@@ -25,7 +25,8 @@ The function block `OR_5_BOOL` is a standard function block for calculating the 
 ### **Adapters**
 This function block does not have any adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 
 The functionality is deterministic and event-driven:
 

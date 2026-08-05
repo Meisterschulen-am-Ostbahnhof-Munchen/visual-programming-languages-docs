@@ -21,7 +21,8 @@ The function block `F_DINT_TO_INT` converts a 32-bit DINT value to a 16-bit INT 
 ### **Adapters**
 No adapters available.
 
-### ## Functionality
+#
+## ## Functionality
 
 This function block performs the conversion of a 32-bit DINT value (`IN`) to a 16-bit INT value (`OUT`) as soon as the event `REQ` is triggered. The conversion is carried out by the function `DINT_TO_INT`. After the conversion is complete, the event `CNF` is triggered.
 

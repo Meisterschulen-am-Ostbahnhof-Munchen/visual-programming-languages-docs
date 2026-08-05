@@ -16,7 +16,8 @@ The `E_RS` (Event-driven RS Flip-Flop) is an event-driven, bistable function blo
 ### **Data Outputs:**
 - **Q**: The current state of the flip-flop (data type: `BOOL`).
 
-### ## Functionality
+#
+## ## Functionality
 
 The `E_RS` block functions as a simple latch:
 

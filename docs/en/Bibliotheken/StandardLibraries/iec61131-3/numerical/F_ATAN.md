@@ -27,7 +27,8 @@ Upon receiving a REQ event, the F_ATAN function block calculates the arctangent 
 
 The function calculates the principal value of the arctangent, which lies in the range of -π/2 to π/2.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports the ANY_REAL data type, enabling various real data types (REAL, LREAL)
 - Compliant with the IEC 61131-3 standard
 - Deterministic computational behavior

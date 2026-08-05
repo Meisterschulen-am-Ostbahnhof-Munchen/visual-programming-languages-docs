@@ -64,7 +64,8 @@ After successful selection, the event `CNF` is sent.
 
 The data output `OUT` is always of type `UDINT`. The input `IN1` allows any elementary data types, which are implicitly converted to `UDINT` during selection. If this conversion is not possible, the function block may generate an error (depending on the runtime environment).
 
-The data output `OUT` is always of type `UDINT`. ## Technical Features
+The data output `OUT` is always of type `UDINT`.
+## Technical Features
 
 - **ANY_ELEMENTARY Support:** The second input, `IN1`, can accept values of different elementary types (e.g., SINT, INT, REAL, BOOL). Conversion to UDINT is automatic.
 - **Adapter-Based Control:** Selection is not implemented via a discrete data input, but rather via an adapter – this allows for clean encapsulation of the selector signal (e.g., from a sensor or control logic).
@@ -78,7 +79,8 @@ The function block does not contain an explicit state machine. Its functionality
 - Upon receiving `G.E1`, `F_SEL` is executed immediately, and `CNF` is output.
 - Between these steps, the function block is in a passive idle state.
 
-... ## Application Scenarios
+...
+## Application Scenarios
 
 - **Selection between two measured values:** A sensor provides the selection criterion (e.g., threshold exceedance) via the adapter `G`. `IN0` could represent a minimum value, and `IN1` a maximum value.
 - **Switching parameter sets:** Two different configuration values are loaded via `EI0` and `EI1`. An external controller activates the appropriate configuration via `G`.
@@ -98,6 +100,7 @@ The function block does not contain an explicit state machine. Its functionality
 
 Compared to standard IEC function blocks, this function block offers decoupled communication via adapters and extracted events for data acquisition – advantageous in modular, event-driven systems.
 
-``` ## Conclusion
+```
+## Conclusion
 
 The function block `AUDI_UDINT_AX_SEL` represents a flexible, adapter-controlled binary selection. It is particularly suitable for applications where the selector signal originates from an external device (e.g., a PROFINET adapter) and the input values need to be updated asynchronously. Support for `ANY_ELEMENTARY` at the second input increases reusability, while the unified `UDINT` output simplifies further processing.

@@ -5,7 +5,8 @@ This article describes the logiBUS® exercise `Uebung_012a`. Here, the persisten
 ## Overview
 [cite_start]The sub-application `Uebung_012a.SUB` uses the sub-app type `Uebung_012a_sub` to provide the storage logic modularly[cite: 1]. The block `CbVtStatus` remains at the top level to update the entire page as needed.
 
-[cite_start] ### Typed Sub-Application: `Uebung_012a_sub`
+[cite_start]
+### Typed Sub-Application: `Uebung_012a_sub`
 
 [cite_start]This module bundles the input via `NumericValue_ID`, the conversion, NVS access, and the display feedback.[cite: 2] It provides interfaces for the memory key (`KEY`) and the object ID (`u16ObjId`).
 

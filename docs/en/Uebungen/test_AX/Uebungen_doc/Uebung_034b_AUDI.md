@@ -82,7 +82,8 @@ The SubApp contains the following function blocks:
 - **Data input**: `OUT` (from the converter)
 - **Function**: Outputs a PWM signal proportional to the analog input value at output `Q1`.
 
-`` ### Sub-module: Q_NumericValue_AUDI
+``
+### Sub-module: Q_NumericValue_AUDI
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameters**:
 - `u16ObjId` = `OutputNumber_N1` (Target address for the terminal)

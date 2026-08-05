@@ -45,7 +45,8 @@ The following data values are received via the adapters:
 
 All adapters are of type `AX` (unidirectional) and each provides one event channel (`.E1`) and one data channel (`.D1`).
 
-| `Q1` | | | ] ... ## Functionality
+| `Q1` | | | ] ...
+## Functionality
 
 The module operates according to the following deterministic algorithm, which is executed upon each incoming event (SET, RESET1, or CLK):
 

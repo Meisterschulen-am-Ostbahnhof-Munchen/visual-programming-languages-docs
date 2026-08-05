@@ -49,7 +49,8 @@ This exercise uses the following predefined function blocks in the network:
 
 7. **Stop and Reset**: Pressing a key on `DigitalInput_CLK_I2` generates an event that simultaneously stops the cycle (`E_CYCLE.STOP`) and resets the counter (`E_CTU.R`).
 
-... ### Data Connections
+...
+### Data Connections
 
 - `E_CTU.CV` (Current Count Value) → `E_D_FF_ANY.D`
 - `E_D_FF_ANY.Q` → `Q_NumericValue.u32NewValue` (Output of Filtered Count Value)

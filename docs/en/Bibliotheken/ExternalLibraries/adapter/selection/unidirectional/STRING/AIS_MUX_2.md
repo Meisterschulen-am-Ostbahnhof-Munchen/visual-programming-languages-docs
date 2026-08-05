@@ -52,7 +52,8 @@ The component operates as a simple 2-to-1 multiplexer at the adapter level. As s
 After a successful switchover, the event `CNF` is output.
 
 The switchover process takes place within a single execution sequence, so no intermediate states occur.
-... ## Technical Features
+...
+## Technical Features
 
 - **Generic Function Block**: The function block is declared as a generic type (`GenericClassName = 'GEN_AIS_MUX'`) and can be used for any instance of the `AIS` adapter type.
 - **No Data Outputs**: All data is transmitted via the adapter interfaces; no separate values (e.g., as `ANY`) are output.

@@ -22,7 +22,8 @@ This exercise demonstrates the use of the function block `ILOCK_SWITCH_PROTECT` 
 | `DigitalOutput_Q2` | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q2` | Sets the second digital output (hardware address `Output_Q2`) to the value of the data input `OUT` when the event `REQ` occurs. |
 
 | `E_TimeOut` | `iec61499::events::E_TimeOut` | – | Timer module connected to `ILOCK` via adapter `timeOut`. It monitors compliance with the protection time. |
-... ## Program Flow and Connections
+...
+## Program Flow and Connections
 
 1. **Event Control:**
 

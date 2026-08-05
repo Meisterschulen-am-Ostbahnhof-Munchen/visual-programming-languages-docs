@@ -20,7 +20,8 @@ The function block `F_LINT_TO_SINT` converts a 64-bit integer value (`LINT`) int
 ### **Adapters**
 No adapters are available.
 
-### ## Functionality
+#
+## ## Functionality
 When the event `REQ` is triggered, the algorithm is executed, converting the value of `IN` (of type `LINT`) to a `SINT` value and outputting the result to `OUT`. The event `CNF` is then triggered to signal the completion of the conversion.
 
 ## Technical Features

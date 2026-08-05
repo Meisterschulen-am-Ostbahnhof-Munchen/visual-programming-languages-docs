@@ -16,7 +16,8 @@ No data inputs available. Data transmission occurs exclusively via the incoming 
 ### **Data Outputs**
 No data outputs available. Output occurs exclusively via the four outgoing AD adapters.
 
-### ### **Adapters**
+#
+## ### **Adapters**
 
 This component uses only adapters of type `adapter::types::unidirectional::AD`:
 

@@ -13,7 +13,8 @@ Not present – event control is handled by the adapters.
 #### **Data Inputs**
 Not present – data transfer is handled by the adapters.
 
-## ### **Data Outputs**
+#
+# ### **Data Outputs**
 Not present – data is transferred via the adapters.
 
 ### **Adapters**
@@ -51,7 +52,8 @@ The function block itself does not have its own state machine. The state logic i
 - **System Integration:** In heterogeneous automation systems where different adapter definitions are used, the function block serves as a simple converter without manual programming.
 - **Prototyping:** Quickly replace adapters during the development phase without having to change the underlying data flow logic.
 
-**Prototyping:** ## Comparison with Similar Components
+**Prototyping:**
+## Comparison with Similar Components
 Analog converter components exist, such as `ALI_TO_UDI` (LINT → UDINT) or `DINT_TO_UINT`. This component specializes in combining the unidirectional ALI and AUI adapters. Unlike directly connecting the adapters via data type conversion at the network layer, this composite function block offers a compact, reusable solution with clearly defined event signals.
 
 ## Conclusion

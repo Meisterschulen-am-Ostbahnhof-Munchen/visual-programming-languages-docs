@@ -71,6 +71,7 @@ The **AB_TO_AS** module does not have its own state machine. Processing is purel
 - **AB_TO_INT** or **AB_TO_USINT**: Similar adapter converters for other target data types. **AB_TO_AS** is specifically designed for SINT.
 - **Custom Implementation**: The composite design allows for easy extension, e.g., by adding plausibility checks or scaling, without changing the basic functionality.
 
-**Company Implementation** ## Conclusion
+**Company Implementation**
+## Conclusion
 
 The **AB_TO_AS** is a specialized yet simple composite function block that offers a clean and reusable solution for adapter-based data type conversion from BYTE to SINT. By utilizing a standardized converter block and clear event control, it integrates seamlessly into IEC 61499 networks. Its licensing under EPL 2.0 promotes open use and further development.

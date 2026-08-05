@@ -37,7 +37,8 @@ Plug (Output) | `OUT4` | `adapter::types::unidirectional::ALI` | Fourth Output A
 | Plug (Output) | `OUT6` | `adapter::types::unidirectional::ALI` | Sixth Output Adapter. |
 
 | Plug (Output) | `OUT7` | `adapter::types::unidirectional::ALI` | Seventh Output Adapter. |
-... ## Functionality
+...
+## Functionality
 
 The function block forwards all incoming ALI signals (both data and events) via socket `IN` unchanged to all seven output adapters `OUT1`…`OUT7`. This results in a strict 1:7 parallel distribution without delay or buffering. The function block behaves purely combinatorially; no processing or filtering of the contents takes place.
 

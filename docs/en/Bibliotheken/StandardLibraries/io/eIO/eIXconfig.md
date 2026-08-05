@@ -26,7 +26,8 @@ The eIXconfig function block serves as a Service Interface Function Block for co
 ## Functionality
 The eIXconfig block receives a Configuration request. Along with the data inputs FE and RE, the trigger settings for the eIO instance are configured. After successful configuration, the CNF event is output with the corresponding status. Actual communication with the hardware takes place via the eIX adapter.
 
-``` ## Technical Features
+```
+## Technical Features
 - Uses WSTRING for status outputs, enabling comprehensive status information
 - Supports separate configuration of rising and falling edge detection
 - Implemented as a Service Interface Function Block according to the IEC 61499-2 standard

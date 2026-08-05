@@ -16,7 +16,8 @@ Not present – the input values are provided via **Sockets IN1, IN2, and IN3** 
 ### **Data Outputs**
 Not present – the result is output via **Plug OUT** as an adapter.
 
-### ### **Adapter**
+#
+## ### **Adapter**
 
 | Name | Direction | Type | Description |
 

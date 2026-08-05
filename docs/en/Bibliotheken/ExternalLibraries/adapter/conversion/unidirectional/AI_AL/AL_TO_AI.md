@@ -29,7 +29,8 @@ The FB has no explicit data outputs. The converted data is output as an INT via 
 ## Functionality
 The FB acts as a transparent converter between the two adapters. As soon as the event **E1** arrives at socket **AL_IN**, the internal function block **F_LWORD_TO_INT** is triggered with the passed LWORD value (from **AL_IN.D1**). The conversion block converts the value to an INT and signals completion via the event **CNF**. This event is forwarded directly to plug **AI_OUT** (E1), and the converted INT (from **F_LWORD_TO_INT.OUT**) is output on **AI_OUT.D1**. The entire conversion occurs synchronously within a single event cycle.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Composite Architecture**: The function block (FB) internally uses a standardized IEC 61131-3 function block (`F_LWORD_TO_INT`), which can be implemented platform-independently.
 - **Unidirectional Adapters**: Both the input and output adapters are of type `unidirectional`, meaning they only support one data and event direction (from socket to plug).

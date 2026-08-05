@@ -10,7 +10,8 @@ None. The function block has no separate event inputs; event control is handled 
 ### **Event Outputs**
 None. Events are forwarded exclusively via the AS adapter.
 
-## ### **Data Inputs**
+#
+# ### **Data Inputs**
 None. The LINT signal to be converted is read in via the ALI adapter.
 
 ### **Data Outputs**

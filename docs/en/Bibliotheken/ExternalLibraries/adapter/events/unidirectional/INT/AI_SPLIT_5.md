@@ -16,7 +16,8 @@ No direct data inputs available. Signal transmission occurs exclusively via the 
 ### **Data Outputs**
 No direct data outputs available. Signal transmission occurs exclusively via the adapter outputs.
 
-### ### **Adapter**
+#
+## ### **Adapter**
 
 | Direction | Name | Type | Description |
 
@@ -56,7 +57,8 @@ The FB does not have an explicit state diagram. Since no events are processed, t
 - **Analog Splitters in Other Libraries**: Often, such functions are implemented using adapter coupling or data copiers. AI_SPLIT_5 offers a clean, reusable structure within the 4diac framework.
 - **Difference to Data-Event-Based Splitters**: Since the function block does not use events, it is purely signal-flow oriented and requires no synchronization or sequence control.
 
-**AI_SPLIT_5 is not a data-event-based splitter.** ## Conclusion
+**AI_SPLIT_5 is not a data-event-based splitter.**
+## Conclusion
 
 The AI_SPLIT_5 is a simple yet useful function block for duplicating an analog signal. Its generic nature and clear adapter interface make it an ideal building block for modular automation solutions where an analog value is needed multiple times. The lack of event-driven control reduces complexity and enables direct signal transmission without time delays.
 

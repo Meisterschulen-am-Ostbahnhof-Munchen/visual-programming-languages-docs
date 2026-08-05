@@ -31,7 +31,8 @@ No adapter interfaces are available.
 ## Functionality
 The Aux_QD block processes double-word data (32-bit) and outputs it via auxiliary interfaces. During initialization (INIT), the service parameters are configured. The output data is sent to the corresponding resource via the REQ event. The block supports multiple auxiliary types and allows the parallel output of both values in a single operation.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports Auxiliary Types: 0, 1, 2, 3, 4, 6, 11, 12, 13
 - Processes 32-bit DWORD data
 - Initial value for iInpNr is 0 (first auxiliary array in the pool)

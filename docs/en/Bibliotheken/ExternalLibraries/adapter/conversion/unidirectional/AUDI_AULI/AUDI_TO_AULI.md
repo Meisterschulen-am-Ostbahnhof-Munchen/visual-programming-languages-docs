@@ -14,7 +14,8 @@ None (events are sent via the AULI_OUT adapter).
 ## **Data Inputs**
 None (data is received via the AUDI_IN adapter).
 
-## ### **Data Outputs**
+#
+# ### **Data Outputs**
 
 None (data is sent via the AULI_OUT adapter).
 
@@ -28,7 +29,8 @@ The function block forwards incoming events and data from the AUDI_IN adapter di
 - The event `E1` from `AUDI_IN` is transferred to `E1` from `AULI_OUT`.
 - The data value `D1` (UDINT) from `AUDI_IN` is transferred to `D1` (ULINT) from `AULI_OUT`. The 32-bit UDINT value is implicitly converted to the 64-bit ULINT value (null extension). No additional logic is performed.
 
-... ## Technical Features
+...
+## Technical Features
 - **Composite FB**: Contains no function block logic or state machine, but merely wiring between two adapters.
 - **Package**: `adapter::conversion::unidirectional`
 - **Version**: 1.0, created on 2026-02-17.

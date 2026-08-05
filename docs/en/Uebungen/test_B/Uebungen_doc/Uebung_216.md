@@ -9,7 +9,8 @@ The counter is controlled by two digital inputs:
 - **Input I2** – loads the predefined starting value (PV = 10) into the counter.
 
 A digital output **Q1** is activated as soon as the counter reading reaches 0. Simultaneously, the current meter reading is displayed via a terminal module.
-... ## Function Blocks (FBs) Used
+...
+## Function Blocks (FBs) Used
 
 - **FB_CTD_DINT** – `iec61131::counters::FB_CTD_DINT`
 - Parameter: `PV` = `DINT#10` (Start value)

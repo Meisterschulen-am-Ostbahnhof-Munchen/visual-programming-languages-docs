@@ -42,7 +42,8 @@ The function block has no internal states. Execution occurs immediately upon rec
 - Type conversion in control applications where various integer formats need to be processed.
 - Integration into larger function block networks where uniform data type processing is required.
 
-## ## ⚖️ Comparison with Similar Function Blocks
+#
+# ## ⚖️ Comparison with Similar Function Blocks
 - Similar function blocks like `F_INT_TO_SINT` perform the reverse conversion, but with potential data loss.
 - Unlike generic conversion blocks, `F_SINT_TO_INT` is specialized and optimized for this specific conversion.
 

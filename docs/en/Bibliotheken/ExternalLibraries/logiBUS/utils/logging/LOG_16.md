@@ -38,7 +38,8 @@ This function block has no adapter interfaces.
 * **Generic Data Type**: The use of the `ANY` data type for inputs and outputs makes the function block extremely flexible. It can be instantiated and used with any data type (e.g., `BOOL`, `INT`, `REAL`, `STRING`, or even structured types).
 * **Fixed Buffer Size**: The buffer size is fixed at 16 entries and is not configurable.
 * **Immediate Output**: During each logging operation, the entire buffer content is updated at the outputs and confirmed with the `CNF` event.
-* ## State Overview
+*
+## State Overview
 The function block does not possess a persistent internal state in the sense of a state machine, apart from the ring buffer itself. Its behavior is purely reactive: A `REQ` event is always followed by a buffer update and the output of `CNF` with the current data.
 
 ## Application Scenarios
@@ -46,7 +47,8 @@ The function block does not possess a persistent internal state in the sense of 
 * **Error History**: Storage of the last 16 error codes or alarm messages.
 * **Data Preprocessing**: Provision of a sliding window of the last 16 values for subsequent calculations (e.g., in another function block).
 * **Debugging**: Easy monitoring of variable behavior during development and commissioning.
-* ## ⚖️ Comparison with similar modules
+*
+## ⚖️ Comparison with similar modules
 * **`E_DELAY` / Delay Modules**: These modules output an input value only after a defined delay. The `LOG_16`, on the other hand, stores a history of multiple values and outputs them immediately, but in order of recency.
 * **`FIFO` Modules**: Classic FIFO (First-In-First-Out) storage devices often have variable lengths and a separate read/write interface. The `LOG_16` is a special fixed-length FIFO (16) that automatically outputs and overwrites its entire contents with each write operation.
 * **Simple `LOG` Modules**: Simple loggers without a buffer typically write only a single value. The strength of `LOG_16` lies in its circular history.

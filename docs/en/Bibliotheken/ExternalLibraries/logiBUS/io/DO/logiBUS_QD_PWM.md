@@ -57,7 +57,8 @@ The function block has two main states:
 ## ⚖️ Comparison with Similar Blocks
 Compared to simple digital output blocks, `logiBUS_QD_PWM` offers extended PWM functionality with 32-bit resolution (DWORD). Compared to analog output blocks, it enables direct PWM control without additional conversion.
 
-``` ## 🛠️ Related exercises
+```
+## 🛠️ Related exercises
 
 * [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
 * [Uebung_034a1_Q1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)

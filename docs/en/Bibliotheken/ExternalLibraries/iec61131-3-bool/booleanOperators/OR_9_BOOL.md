@@ -54,7 +54,8 @@ The block has no internal state or memory. Its behavior is purely combinatorial 
 * **Monitoring Logic**: Combination of multiple error or status messages (e.g., from nine sensors), where even a single message (`TRUE`) triggers a collective alarm message (`OUT = TRUE`).
 * **Enable Logic**: In safety circuits, where one of several possible enable conditions is sufficient to start a process step.
 * **Simplification of Logic Networks**: Replaces multiple cascaded two-input OR gates, improving clarity in a function block diagram (FBD).
-* ## ⚖️ Comparison with similar building blocks
+*
+## ⚖️ Comparison with similar building blocks
 * **`OR_2_BOOL`, `OR_4_BOOL` etc.**: These blocks offer the same OR functionality, but for a smaller number of inputs (2, 4, ...). `OR_9_BOOL` is optimized for applications with nine signals to be combined. See: [OR_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_9.md)
 * **`AND_9_BOOL`**: Performs the logical AND operation. The result is only `TRUE` if *all* inputs are `TRUE`, unlike OR, where *at least one* input must be `TRUE`.
 * **`XOR_9_BOOL`**: Calculates the exclusive OR (antivalence). The result is `TRUE` if there is an odd number of inputs, resulting in `TRUE`.

@@ -5,7 +5,8 @@
 ## Introduction
 This exercise demonstrates the use of adapter interfaces (AUI/AUDI) in 4diac to read a wheel-based machine speed (WBSD), display it on a Universal Terminal (UT), and switch a digital output (Q1) when the speed is greater than zero. All the logic is implemented as a sub-application using adapter connections.
 
-* ## Function Blocks (FBs) Used
+*
+## Function Blocks (FBs) Used
 
 ### Sub-Block: `AX_GT_0`
 - **Type**: `MyLib::sys::AX_GT_0_UINT` (SubApp)

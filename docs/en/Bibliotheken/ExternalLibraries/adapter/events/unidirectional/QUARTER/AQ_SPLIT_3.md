@@ -47,7 +47,8 @@ None.
 
 The module forwards the AQ signal present at socket `IN` to all three plugs (`OUT1`, `OUT2`, `OUT3`) without delay or data manipulation. This is a pure signal distribution (fan-out) – the incoming adapter interface is mirrored to three identical output interfaces. Since no events or data outside the adapter are processed, the forwarding is passive and transparent.
 
-``` ## Technical Features
+```
+## Technical Features
 
 - **Generic Type**: The function block uses the attribute `eclipse4diac::core::GenericClassName` with the value `'GEN_AQ_SPLIT'`. This allows it to be used as a generic AQ splitter in various contexts.
 - **Unidirectional**: The adapters are defined as unidirectional AQ interfaces – data flows only from the input to the outputs.

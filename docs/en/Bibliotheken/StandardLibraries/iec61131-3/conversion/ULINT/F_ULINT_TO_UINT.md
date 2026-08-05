@@ -26,7 +26,8 @@ The function block performs the conversion from ULINT to UINT when the `REQ` eve
 
 ### **Adapters**
 
-# ## Technical Features
+#
+## Technical Features
 - The function block performs a direct type conversion, truncating the higher-order bits of the ULINT value if the value is outside the UINT range.
 - The function block is deterministic and has no internal states.
 

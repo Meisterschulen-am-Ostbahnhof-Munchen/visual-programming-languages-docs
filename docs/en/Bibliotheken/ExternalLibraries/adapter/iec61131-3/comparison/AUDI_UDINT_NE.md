@@ -49,7 +49,8 @@ The function block compares the two 32-bit integer values (UDINT) for inequality
 
 Internally, the comparison is performed by the embedded function block `F_NE` (type `iec61131::comparison::F_NE`). The result (`true` if there is no difference) is output via the **adapter output `OUT.D1`**, and the event `OUT.E1` is sent simultaneously.
 
-Internally, the comparison is performed by the embedded function block `F_NE` (type `iec61131::comparison::F_NE`). ## Technical Features
+Internally, the comparison is performed by the embedded function block `F_NE` (type `iec61131::comparison::F_NE`).
+## Technical Features
 
 - **Adapter-Based Communication:** Data and event connections are encapsulated in standardized adapters (`AUDI`, `AX`). This simplifies reuse and the modular design of function block networks.
 - **Dual Triggering Options:** Comparison can be initiated via the direct event input `REQ` or via the event of the adapter input `IN1`. This enables flexible control architectures.

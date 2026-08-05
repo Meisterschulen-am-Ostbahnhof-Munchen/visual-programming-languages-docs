@@ -29,7 +29,8 @@ No adapters available.
 ## Functionality
 The function block waits for an incoming event (`REQ0`, `REQ1`, or `REQ2`). Upon the occurrence of such an event, the corresponding input variable (`IN0`, `IN1`, or `IN2`) is selected and forwarded to the output `OUT`. Simultaneously, the acknowledgment event `CNF` is triggered.
 
-When such an event occurs, the corresponding input variable (`IN0`, `IN1`, or `IN2`) is selected and forwarded to the output `OUT`. ## Technical Features
+When such an event occurs, the corresponding input variable (`IN0`, `IN1`, or `IN2`) is selected and forwarded to the output `OUT`.
+## Technical Features
 - Supports the ANY data type for maximum flexibility
 - Event-based triggering for deterministic behavior
 - Simple and direct selection without additional logic

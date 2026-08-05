@@ -20,7 +20,8 @@ The function block `F_BYTE_TO_LINT` converts a `BYTE` value to a `LINT` value. T
 ### **Adapters**
 This function block has no adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When the `REQ` event is triggered, the value at input `IN` of type `BYTE` is converted to type `LINT` and output `OUT`. The `CNF` event signals the successful completion of the conversion.
 
 ## Technical Features

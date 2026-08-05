@@ -58,12 +58,14 @@ Initialization (`INIT`) is a prerequisite for both operating modes. During initi
 * **Reading Counter Signals**: Acquiring pulses from a rotary encoder or rotary switch, using `ImpulseDelta` for preprocessing (e.g., reporting every 10th revolution).
 * **Monitoring Status Groups**: Reading a 32-bit status word from a connected device, where changes only need to be reported at specific intervals (`TimeDelta`) to reduce CPU load.
 * **Cyclic Polling of Switch Banks**: Polling multiple digital inputs grouped into a DWORD via regular `REQ` events.
-* ## ⚖️ Comparison with similar function blocks
+*
+## ⚖️ Comparison with similar function blocks
 * **Compared to `E_DEMUX` or `E_SELECT`**: These function blocks forward events or select data. `logiBUS_PI_ID` is specific to hardware communication and includes driver logic and initialization.
 * **Compared to generic I/O function blocks (e.g., `WAGO_750_5xx_DI`)**: Similar function, but manufacturer-specific (here, logiBUS). Configuration is done via the structured parameters `Input` and `PARAMS` instead of fixed channel numbers.
 * * **Compared to simpler input blocks**: Offers advanced features such as filtering event generation (`IND`) via `ImpulseDelta`/`TimeDelta`, which are typically not available in simple "Read" blocks.
 
-``` ## 🛠️ Related exercises
+```
+## 🛠️ Related exercises
 
 * [Uebung_150](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_150.md)
 * [Uebung_150_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_150_AX.md)

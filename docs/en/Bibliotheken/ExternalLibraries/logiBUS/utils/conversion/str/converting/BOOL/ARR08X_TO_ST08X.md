@@ -20,7 +20,8 @@ This function block (FB) is used to convert an array of 8 BOOL values (ARR08X) i
 ### **Adapters**
 This function block has no adapters.
 
-### ## Functionality
+#
+## ## Functionality
 The function block `ARR08X_TO_ST08X` performs a direct, element-by-element assignment of values from the input array `IN` to the corresponding fields of the output structure `OUT`. On each `REQ` event, the value of the `IN` array is read, and the individual elements of the array `IN[0]` to `IN[7]` are assigned to the fields `X_00` to `X_07` of the `ST08X` structure. After the assignment, the `CNF` event is triggered.
 
 The assignments are made as follows:

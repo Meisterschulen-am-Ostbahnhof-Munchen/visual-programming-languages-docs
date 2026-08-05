@@ -28,7 +28,8 @@ This function block does not use any adapters.
 - The function block is implemented according to the IEC 61499-1 standard.
 - It uses a simple edge detection algorithm that can be executed efficiently and quickly.
 
-``` ## State Overview
+```
+## State Overview
 
 This function block does not have a complex state machine. The state is represented solely by the value of the internal variable `MEM`, which stores the previous state of `CLK`.
 

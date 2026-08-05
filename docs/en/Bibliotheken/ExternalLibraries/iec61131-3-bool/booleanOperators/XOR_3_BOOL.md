@@ -41,11 +41,13 @@ The function block does not have an internal state in the sense of a memory. Its
 * **Control Logic:** In specialized control algorithms that require "either-or" logic with more than two conditions.
 * **Encryption and Coding:** As a fundamental component in simple cryptographic or error-detecting circuits (e.g., for parity bits).
 * **Signal Comparison:** Determines whether a third signal differs from the combination of two other signals.
-* ## ⚖️ Comparison with Similar Blocks
+*
+## ⚖️ Comparison with Similar Blocks
 * **XOR (2 Inputs):** The standard XOR block with only two inputs. `XOR_3_BOOL` extends this function to three operands. See: [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.md)]
 * **OR / AND (3 Inputs):** These blocks calculate the logical OR or AND operation of all inputs. The XOR logic is more specialized and differs, in particular, when all three inputs are `TRUE` (OR=TRUE, AND=TRUE, XOR=TRUE).
 * **GEN_XOR:** This is the generic basis from which `XOR_3_BOOL` is derived as a specific instance for the data type `BOOL`.
-* ## Conclusion
+*
+## Conclusion
 
 The `XOR_3_BOOL` function block is a specialized, standards-compliant building block for reliably calculating triple exclusive OR operations. Its clear, event-driven interface and deterministic functionality make it ideal for use in control applications that require this specific Boolean logic. As an instance of a generic building block, it also benefits from the maintenance and consistency advantages of a generic design.
 

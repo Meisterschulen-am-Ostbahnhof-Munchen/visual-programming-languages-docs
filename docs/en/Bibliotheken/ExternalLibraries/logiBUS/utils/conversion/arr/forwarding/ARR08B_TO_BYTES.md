@@ -55,10 +55,12 @@ The function block has no internal states in the sense of a state machine. Its b
 * **Data Distribution:** Splitting a received data packet (e.g., from a communication interface) into its individual byte components for further processing in the application.
 * **Interface Adapter:** Connecting function blocks that work with array structures to blocks that expect individual byte inputs.
 * **Data Logging and Visualization:** Separating array data to selectively display or store individual bytes in HMIs or logging systems.
-* ## ⚖️ Comparison with Similar Blocks
+*
+## ⚖️ Comparison with Similar Blocks
 * **`SEL_n` / `MUX` blocks:** These blocks select an element from an array based on an index. `ARR08B_TO_BYTES`, on the other hand, extracts **all** elements simultaneously and in parallel.
 * **`BYTES_TO_ARR08B`:** This is the inverse block, which combines eight individual byte inputs into an 8-byte array.
 * **Generic Array Splitting Blocks:** More generic blocks might exist that take the array length as a parameter. `ARR08B_TO_BYTES`, due to its fixed size, is simpler, faster, and requires no configuration.
-* ## Conclusion
+*
+## Conclusion
 
 The `ARR08B_TO_BYTES` function block is a specialized, efficient, and reliable building block for the fundamental operation of array decomposition. Its strength lies in its simplicity and unambiguity for the specific use case of an 8-byte array. For control applications where this data structure is common, it offers an optimized and maintainable solution compared to manual indexing in more complex blocks.

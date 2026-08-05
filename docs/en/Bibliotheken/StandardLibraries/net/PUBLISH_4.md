@@ -33,7 +33,8 @@ No adapter interfaces are available.
 ## Functionality
 The PUBLISH_4 block initializes itself via the INIT event and confirms this with INITO. After successful initialization, up to four different data values (SD_1 to SD_4) can be sent simultaneously to all connected SUBSCRIBE_4 blocks via the REQ event. Data transmission is unacknowledged; the block only confirms that the data was sent (CNF), not that it was received.
 
-# ## Technical Features
+#
+## Technical Features
 - Supports any data type (ANY) for all four data channels
 - Uses wide strings (WSTRING) for ID and STATUS
 - Unacknowledged send mode (fire-and-forget)

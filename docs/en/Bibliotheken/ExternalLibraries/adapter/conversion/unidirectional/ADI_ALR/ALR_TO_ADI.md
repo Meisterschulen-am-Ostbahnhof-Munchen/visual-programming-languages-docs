@@ -61,7 +61,8 @@ There are no delays or error handling – the conversion is instantaneous and al
 - **System Integration**: One system component provides data as LREAL (e.g., floating-point measurements), while another requires integer DINT values (e.g., for counter registers or index calculations).
 - **Adapter Adaptation**: If one component only supports ALR adapters, but another component expects ADI adapters, this function block can act as an intermediary.
 - **Protocol Conversion**: In standalone subsystems connected via adapters, this function block enables clean type conversion without changing the original adapter definition.
-- ## Comparison with Similar Function Blocks
+-
+## Comparison with Similar Function Blocks
 - **F_LREAL_TO_DINT (Direct Function Block)**: This function block performs the conversion itself but requires its own event and data interfaces and no adapters. `ALR_TO_ADI` encapsulates this function block to make it compatible with adapter-based connections.
 - **ALR_TO_DINT (Hypothetical)**: A direct function block with its own input/output interface (event + data) would not use any adapters. This function block is specifically designed for use in an adapter framework.
 - **Reverse Conversion (ADI_TO_ALR)**: A function block for the reverse direction (DINT → LREAL) likely exists, based on the same conversion principle.

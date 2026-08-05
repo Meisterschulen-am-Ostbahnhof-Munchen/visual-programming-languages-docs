@@ -35,7 +35,8 @@ The `set_pixel` event triggers the main command. The values present at the data 
 
 The `clear` event sets all pixels of the strip to black (off), which is equivalent to clearing the current pattern. The `clear_CNF` event is then output with a status code (`clear_return`).
 
-``` ## Technical Features
+```
+## Technical Features
 
 * The data inputs for the color values are of type `UDINT` (unsigned double integer), which allows for a large value range. The actual effective resolution (e.g., 8 bits = 0-255) depends on the connected hardware.
 * The data outputs for feedback are of type signed `DINT` to represent positive and negative error codes.
@@ -51,11 +52,13 @@ The `clear` event sets all pixels of the strip to black (off), which is equivale
 * **Status Indicators**: Individual LEDs can be used as status or warning lights (e.g., machine in operation, fault at position X).
 * **Simple Lighting Effects**: By sequentially setting individual pixels, chasing or flashing effects can be implemented.
 * **Visualization of Process Data**: The color or brightness of a pixel can represent a process value (e.g., temperature, fill level).
-* ## ⚖️ Comparison with Similar Components
+*
+## ⚖️ Comparison with Similar Components
 
 Compared to components that transfer entire color patterns or images to an LED matrix (e.g., `strip_show` or `matrix_display`), `strip_set_pixel` operates at a very granular, pixel-by-pixel level. It offers maximum control over each individual LED but is less efficient for transferring complex images. Components like `strip_fill` typically set an entire area or all LEDs to a single color at once, while `strip_set_pixel` addresses each LED individually.
 
-Compared to components that transfer entire color patterns or images to an LED matrix (e.g., `strip_show` or `matrix_display`), `strip_set_pixel` operates at a very granular, pixel-by-pixel level. It offers maximum control over each individual LED but is less efficient for transferring complex images. Components like `strip_fill` typically set an entire area or all LEDs to a single color at once, while `strip_set_pixel` addresses LEDs individually. ## 🛠️ Related Exercises
+Compared to components that transfer entire color patterns or images to an LED matrix (e.g., `strip_show` or `matrix_display`), `strip_set_pixel` operates at a very granular, pixel-by-pixel level. It offers maximum control over each individual LED but is less efficient for transferring complex images. Components like `strip_fill` typically set an entire area or all LEDs to a single color at once, while `strip_set_pixel` addresses LEDs individually.
+## 🛠️ Related Exercises
 
 * [Exercise_031](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_031.md)
 

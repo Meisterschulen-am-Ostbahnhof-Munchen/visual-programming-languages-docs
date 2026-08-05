@@ -24,7 +24,8 @@ The interface of the `AND_3_BOOL` block is clear and simple, consisting of one e
 ### **Adapters**
 This function block has no adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 
 The functionality is deterministic and follows a simple sequence:
 

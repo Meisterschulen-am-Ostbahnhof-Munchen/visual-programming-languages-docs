@@ -65,7 +65,8 @@ No explicit data outputs. Output is handled entirely via the `OUT` adapter.
 
 Upon receiving a `REQ` event, the current value of the data input `K` is evaluated. The function block then switches the corresponding socket adapter (IN1 … IN5) to the plug adapter `OUT`. The output adapter `OUT` thus corresponds to the content of the input determined by K. After a successful switchover, the event `CNF` is sent. If K does not change between two calls, the connection remains unchanged, but a `CNF` event is still triggered.
 
-... ## Technical Features
+...
+## Technical Features
 
 - **Generic Type**: The function block is declared as a generic FB (`GEN_AR_MUX`) and can be instantiated for specific applications using the 4diac IDE.
 - **Adapter-Based Communication**: All inputs and outputs utilize the unidirectional AR adapter. This allows for the efficient transmission of complex data structures and continuous signals without the need to resolve individual data points.

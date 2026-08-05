@@ -117,7 +117,8 @@ The transitions between the states are defined as follows:
 * **Industrial Data Processing**: Calibration of pressure sensors, temperature sensors, or other analog encoders where offset and gain need to be readjusted.
 * **Measuring Chain Alignment**: After connecting a sensor, the entire chain can be linearized by applying a known zero point (offset) and a known measured value (scaling).
 * **Automatic Recalibration**: Drift effects can be compensated for by cyclically triggering the calibration adapters.
-* ## Comparison with Similar Function Blocks
+*
+## Comparison with Similar Function Blocks
 
 Simple scaling function blocks (e.g., `SCALE`) offer only fixed multiplication and addition, without automatic calibration. In contrast, `AR_CALIBRATE` integrates the entire calibration logic – including reference setting and event-driven activation – and is therefore suitable for dynamic environments where parameters need to be adjusted during operation.
 

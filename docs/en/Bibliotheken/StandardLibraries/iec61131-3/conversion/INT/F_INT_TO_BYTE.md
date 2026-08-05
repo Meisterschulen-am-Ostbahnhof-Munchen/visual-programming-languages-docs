@@ -20,7 +20,8 @@ The function block `F_INT_TO_BYTE` is used to convert an integer value (`INT`) t
 ### **Adapters**
 This function block does not use any adapters.
 
-### ## Functionality
+#
+## ## Functionality
 When an event is received at input `REQ`, the algorithm is executed, converting the value of `IN` from `INT` to `BYTE` and outputting the result to `OUT`. The event `CNF` is then triggered to signal the successful completion of the conversion.
 
 The algorithm is defined as follows:

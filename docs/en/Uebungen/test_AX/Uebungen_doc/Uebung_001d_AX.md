@@ -59,7 +59,8 @@ As a result, the digital input **I1** is directly mapped to the digital output *
 
 4. The output event of `AX_AND_2` is transferred to the adapter input `OUT` of the **DigitalOutput_Q1** module, which then sets the physical output **Output_Q1**.
 
-As a result, the digital input **I1** is directly mapped to the digital output **Q1**. The intermediate `AX_SPLIT_2` and `AX_AND_2` serves only to demonstrate adapter connections and has no logical effect on the switching behavior. ## Summary
+As a result, the digital input **I1** is directly mapped to the digital output **Q1**. The intermediate `AX_SPLIT_2` and `AX_AND_2` serves only to demonstrate adapter connections and has no logical effect on the switching behavior.
+## Summary
 
 Exercise `Uebung_001d_AX` demonstrates how to couple events between function blocks using **plug-and-socket connections** (adapter blocks) without using direct data lines.
 

@@ -57,7 +57,8 @@ The following function blocks are used in the SubApp network:
 - **Type**: `adapter::conversion::unidirectional::AUDI_TO_ALR`
 - **Function**: Converts the unidirectional counter reading (CV) into a physical analog signal (LREAL). This signal is then passed to the subsequent terminal block.
 
-### ### **Q_NumericValue_PHYSA_LREAL** (Terminal Output)
+#
+## ### **Q_NumericValue_PHYSA_LREAL** (Terminal Output)
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
 - **Parameter**: `stObj = OutputNumber_N3`
 - **Function**: Outputs the counter value, which is available as LREAL, to the terminal object `OutputNumber_N3`. The numerical value can be observed there in real time.

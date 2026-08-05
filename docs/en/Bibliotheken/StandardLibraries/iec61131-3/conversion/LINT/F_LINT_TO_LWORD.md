@@ -21,7 +21,8 @@ The function block `F_LINT_TO_LWORD` converts a LINT data type (64-bit signed in
 ### **Adapters**
 This function block has no adapter interfaces.
 
-### ## Functionality
+#
+## ## Functionality
 When the `REQ` event is triggered, the value at input `IN` is read and converted into a `LWORD` value using the function `LINT_TO_LWORD`. The result is provided at output `OUT`, and simultaneously, the `CNF` event is triggered.
 
 ## Technical Features

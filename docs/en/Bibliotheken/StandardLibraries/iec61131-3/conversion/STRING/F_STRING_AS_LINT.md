@@ -20,7 +20,8 @@ The function block `F_STRING_AS_LINT` converts a `STRING` value to a `LINT` valu
 ### **Adapters**
 No adapters are available.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block converts the `STRING` value to a `LINT` value as soon as the `REQ` event is triggered. The conversion is performed using the function `STRING_AS_LINT()`. After successful conversion, the `CNF` event is triggered, and the converted value is available at the `OUT` output.
 

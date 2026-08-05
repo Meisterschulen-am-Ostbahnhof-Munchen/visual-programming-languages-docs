@@ -30,7 +30,8 @@ The EBSlave2301 is a Service Interface Function Block for communication with an 
 ## Functionality
 The EBSlave2301 allows the configuration of up to six relay outputs via the MAP event. When activated by QI, the relay parameters are transmitted to the EtherBrick system via the bus adapters. The MAPO event confirms successful configuration, while IND events provide status information from the resource interface.
 
-``` ## Technical Features
+```
+## Technical Features
 - Supports WSTRING data types for relay configuration
 - Uses an adapter-based bus system for communication
 - UpdateInterval is inherited from the master system

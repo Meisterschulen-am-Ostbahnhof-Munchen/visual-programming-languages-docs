@@ -41,7 +41,8 @@ The module consists of an internal network with a single conversion module `F_LW
 
 This completes the entire conversion in a single, unidirectional pass.
 
-... ## Technical Features
+...
+## Technical Features
 
 - **Composite Structure**: The function block (FB) does not contain its own state machine but delegates all functionality to the embedded conversion block.
 - **Unidirectional Adapters**: Both the input and output adapters are of type `unidirectional`. Only forward conversion takes place; reverse conversion and status feedback are not supported.

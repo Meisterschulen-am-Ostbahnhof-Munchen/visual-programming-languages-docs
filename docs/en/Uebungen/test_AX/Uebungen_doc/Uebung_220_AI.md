@@ -4,7 +4,8 @@
 ## Introduction
 This exercise implements a **up/down counter according to IEC 61131-3 (CTUD)** as an adapter version for the data type `INT`. The current counter value is output via a terminal (numeric output). Control is achieved via four digital inputs (CU, CD, R, LD) and two digital outputs (QU, QD). A constant value (INT#5) is loaded as a preset value (PV).
 
-``` ## Function Blocks (FBs) Used
+```
+## Function Blocks (FBs) Used
 
 - **AI_FB_CTUD** (`adapter::iec61131::counters::AI_FB_CTUD`)
 

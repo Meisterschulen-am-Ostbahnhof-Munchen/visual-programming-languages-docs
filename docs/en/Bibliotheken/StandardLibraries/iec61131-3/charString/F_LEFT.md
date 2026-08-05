@@ -23,7 +23,8 @@ The function block `F_LEFT` extracts the leftmost characters `L` from the input 
 ### **Adapters**
 No adapters are available.
 
-### **Adapters** ## Functionality
+#
+## **Adapters** ## Functionality
 
 When the event `REQ` is triggered, the function block extracts the first characters `L` from the input string `IN` and outputs the result as `OUT`. The event `CNF` signals successful execution.
 

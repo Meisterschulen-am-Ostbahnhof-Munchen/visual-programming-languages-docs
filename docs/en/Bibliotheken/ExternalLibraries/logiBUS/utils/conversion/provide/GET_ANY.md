@@ -34,7 +34,8 @@ The function block has no separate data inputs. The source data is provided via 
 ### **Adapter**
 None.
 
-### ## Functionality
+#
+## ## Functionality
 1. An event at **REQ** triggers the internal algorithm `REQ`.
 
 2. The algorithm executes the assignment `OUT := IN`.

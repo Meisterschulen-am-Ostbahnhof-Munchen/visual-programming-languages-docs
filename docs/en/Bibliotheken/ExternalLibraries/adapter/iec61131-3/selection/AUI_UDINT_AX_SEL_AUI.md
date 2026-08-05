@@ -59,7 +59,8 @@ The control adapter `G` receives an external event (`G.E1`) and a Boolean/digita
 
 Thus, the function block functions as a unified, adapter-based interface for binary selection operations.
 
-4. ## Technical Features
+4.
+## Technical Features
 
 - **Adapters instead of individual signals:** Instead of individual event and data outputs, the FB uses adapters (`AUI` and `AX`). This enables modular encapsulation and simplifies integration into adapter-based architectures.
 - **Polymorphism:** The second input (`IN1`) is declared as `ANY_ELEMENTARY`, so it accepts values of various elementary data types (e.g., INT, BOOL, REAL). The output adopts this type, provided it is compatible with the first input.

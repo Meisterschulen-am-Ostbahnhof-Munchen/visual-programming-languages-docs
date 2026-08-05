@@ -69,7 +69,8 @@ The sequence cycles through states 1 to 5 and then jumps from `State_05` back to
 * **Safe State Outputs:** The Boolean outputs (`DO_Sx`) are explicitly reset via an exit algorithm (`State_XX_X`) when a state is exited. This prevents the unintentional persistence of the `TRUE` signal.
 * **Explicit Timer Control:** The timer is restarted and stopped with each state change, ensuring precise and deterministic timing.
 * **Constants:** The function block uses defined constants (`sequence::State_XX`, `NO_TIME`) from imported libraries, which improves the maintainability and readability of the code.
-* ## State Overview
+*
+## State Overview
 
 The ECC consists of seven states:
 

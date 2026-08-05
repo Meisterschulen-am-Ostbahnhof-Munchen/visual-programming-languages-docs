@@ -21,7 +21,8 @@ The function block `F_INT_TO_LINT` converts a 16-bit integer value (`INT`) into 
 ### **Adapters**
 No adapters are present.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs a direct assignment of the input value `IN` of type `INT` to the output value `OUT` of type `LINT`. The conversion is performed implicitly through type conversion, preserving the numeric value.
 

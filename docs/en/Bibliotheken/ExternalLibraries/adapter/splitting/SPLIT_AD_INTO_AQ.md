@@ -39,7 +39,8 @@ The flip-flops then receive the respective quarter data at their data input (`SP
 - **Synchronization**: All 16 AQ outputs are updated simultaneously by a common clock (from `SPLIT_DWORD_INTO_QUARTERS.CNF`). This ensures that the split data is consistently available at the same time.
 - **Scalability**: The FB is designed for 16 quarter values (corresponding to 32 bits). Adaptation to other bit widths would be possible by modifying the internal structure.
 
-**No Dedicated Inputs/Outputs**: ## State Overview
+**No Dedicated Inputs/Outputs**:
+## State Overview
 As a composite function block (FB), `SPLIT_AD_INTO_AQ` does not have its own state machine. Internal data processing is determined by:
 
 - **Waiting for Event**: No internal event is generated during idle time.

@@ -20,7 +20,8 @@ The function block `F_LWORD_TO_SINT` converts a `LWORD` value (64-bit unsigned i
 ### **Adapters**
 This function block does not use adapters.
 
-### ## Functionality
+#
+## ## Functionality
 
 The function block performs a direct type conversion of the input value `IN` from type `LWORD` to type `SINT`. The conversion is carried out by the function `LWORD_TO_SINT(IN)`, which is implemented in the algorithm `REQ`. Upon successful conversion, the event `CNF` is triggered.
 

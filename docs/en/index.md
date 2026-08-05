@@ -5,6 +5,8 @@ myst:
     "description lang=de": "Dokumentation für visuelle Programmiersprachen und IEC 61499"
     "keywords": "IEC 61499, 4diac, SPS, Automatisierung, Visuelle Programmierung"
     "property=og:locale": "de"
+* [PDF Handbook](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/en/pdf/visual-programming-languages-docs-en.pdf)
+
 ---
 
 
@@ -242,7 +244,7 @@ Visit our [Discussion Forum ](https://github.com/Meisterschulen-am-Ostbahnhof-Mu
 
 --
 
-[🏠 Main Menu ](https://www.ms-muc-docs.de/) | [🔍 Super Search (all wikis) ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/de/latest/) | [Quick Search (IEC 61499) ](https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen/abk%C3%BCrzungen-und-bedeutungen)
+[🏠 Main Menu ](https://www.ms-muc-docs.de/) | [🔍 Super Search (all wikis) ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/) | [Quick Search (IEC 61499) ](https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen/abk%C3%BCrzungen-und-bedeutungen)
 
 ---
 

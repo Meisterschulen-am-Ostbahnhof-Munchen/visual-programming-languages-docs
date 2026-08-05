@@ -1,5 +1,6 @@
 # Exercise_004b4c_AX: Three Interlocked Toggle Flip-Flops in a Chain via AE2 Adapter
 ![Uebung_004b4c_AX_network](./Uebung_004b4c_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise deals with the implementation of a chain of three interlocked toggle flip-flops. The interlocking is achieved via AE2 adapters (bidirectional interfaces), so that each sub-function can only change its state when the preceding flip-flops are inactive. This ensures that only one output can be active at any given time. The inputs are controlled via logiBUS pushbuttons (single-click event), and the outputs are indicated via logiBUS LEDs.

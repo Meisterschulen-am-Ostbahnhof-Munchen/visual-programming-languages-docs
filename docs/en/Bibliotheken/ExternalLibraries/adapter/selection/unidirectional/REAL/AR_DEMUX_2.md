@@ -1,5 +1,6 @@
 # AR_DEMUX_2
 ![AR_DEMUX_2](./AR_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_DEMUX_2** is a generic demultiplexer for unidirectional AR adapters. It forwards an incoming AR adapter value (via socket `IN`) to one of two possible output adapters (`OUT1` or `OUT2`). The target output is selected via an index `K`, which is set by an event `REQ`. This block is typically used to selectively route a data or signal path to different subsequent function blocks.

@@ -2,6 +2,7 @@ Here is the documentation for the sub-application `Uebung_003c_sub_AX` based on 
 # Exercise_003c_sub_AX: IX to QX (generic)
 <Bild der Übung, falls vorhanden>
 ![Uebung_003c_sub_AX_network](./Uebung_003c_sub_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 The sub-application **Exercise_003c_sub_AX** serves as a generic building block for connecting a digital input (IX) to an auxiliary output (QX). It functions as an interface to map signals from the LogiBUS system to the ISOBUS auxiliary system, taking into account a specific input number (`iInpNr`).

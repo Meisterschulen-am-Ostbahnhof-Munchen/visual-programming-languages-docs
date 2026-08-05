@@ -16,10 +16,12 @@ Der **E_MERGE** ist ein grundlegender Funktionsbaustein der IEC 61499 Norm, der 
 ### Schnittstelle (Interface)
 
 **Ereignis-Eingänge:**
+
 - `EI1` (Event Input 1): Erster Ereigniseingang
 - `EI2` (Event Input 2): Zweiter Ereigniseingang
 
 **Ereignis-Ausgänge:**
+
 - `EO` (Event Output): Zusammengeführter Ereignisausgang
 
 ## Funktionsweise

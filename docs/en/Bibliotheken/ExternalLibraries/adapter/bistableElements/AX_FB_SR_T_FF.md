@@ -1,5 +1,6 @@
 # AX_FB_SR_T_FF
 ![AX_FB_SR_T_FF](./AX_FB_SR_T_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_FB_SR_T_FF** implements a bistable, set-dominant latch (SR flip-flop) combined with a toggle function. All communication takes place via adapter interfaces that bundle both event and data signals.

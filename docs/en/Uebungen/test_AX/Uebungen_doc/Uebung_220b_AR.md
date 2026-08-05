@@ -1,6 +1,7 @@
 # Exercise_220b_AR: Standard IEC 61131-3 AI_FB_CTUD (Adapter Version, Up/Down Counter, INT) with Terminal Output (PHYS)
 ![Uebung_220b_AR_network](./Uebung_220b_AR_network.svg)
 *Image not available*
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an up/down counter (CTUD) according to IEC 61131-3 in an adapter version. The counter value (integer) is initialized via a digital preset value (PV) and can be controlled via four digital inputs. The current counter value is output to a terminal via an analog output (physical representation). The exercise demonstrates the use of adapter-based function blocks as well as the conversion and output of counter data.

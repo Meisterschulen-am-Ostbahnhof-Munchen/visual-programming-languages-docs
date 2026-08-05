@@ -1,5 +1,6 @@
 # AE_AX_SWITCH
 ![AE_AX_SWITCH](./AE_AX_SWITCH.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_AX_SWITCH** implements event-driven switching (demultiplexing). An incoming event is forwarded to one of two event outputs – depending on the Boolean value of a separate data input.

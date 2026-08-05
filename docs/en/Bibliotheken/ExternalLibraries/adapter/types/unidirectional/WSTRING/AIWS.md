@@ -1,5 +1,6 @@
 # AIWS
 ![AIWS](./AIWS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AIWS** adapter provides a unidirectional interface for transmitting exactly one event and its associated WSTRING data. It defines the communication direction from a source to a destination, with the event always accompanied by the data. The adapter serves as a basic building block for loosely coupled, event-driven data flows in IEC 61499 applications.

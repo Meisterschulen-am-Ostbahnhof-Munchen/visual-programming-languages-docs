@@ -1,5 +1,6 @@
 # OR_6
 ![OR_6](https://user-images.githubusercontent.com/116869307/214143660-1a2216f3-f723-4864-8a8a-8deeb4e0ea8c.png)
+
 * * * * * * * * * *
 ## Introduction
 The OR_6 function block is a generic bitwise OR function block that processes six input values. It performs a bitwise logical OR operation on the six input values and outputs the result. The function block is classified according to the IEC 61131-3 standard and can work with any bit data type (ANY_BIT).

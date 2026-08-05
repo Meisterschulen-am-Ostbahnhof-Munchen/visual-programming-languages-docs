@@ -1,6 +1,7 @@
 # Exercise_004b3c_sub: Sub-application for a lockable toggle flip-flop with an AE2 adapter interface
 ![Uebung_004b3c_sub_network](./Uebung_004b3c_sub_network.svg)
 *Image of the exercise not available*
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **sub-application for a lockable toggle flip-flop with an AE2 adapter interface**.

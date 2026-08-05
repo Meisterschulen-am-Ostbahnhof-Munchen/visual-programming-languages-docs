@@ -1,5 +1,6 @@
 # GET_DWORD
 ![GET_DWORD](./GET_DWORD.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `GET_DWORD` is used to read the current value of a variable of type `DWORD`, provided as an InOut parameter, and to provide this value as a buffered output. The read operation is controlled by an event.

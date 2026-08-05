@@ -80,6 +80,7 @@ Diese Übung veranschaulicht die **Kombination von Ereignis- und Datenflüssen**
 - Der Ausgangsbaustein setzt den physikalischen Ausgang entsprechend dem Flipflop‑Zustand.
 
 **Lernziele:**  
+
 - Verständnis des Zusammenspiels mehrerer ereignisgesteuerter Eingänge.  
 - Anwendung eines T‑Flipflops als einfachen Zustandsspeicher.  
 - Praxisnahe Nutzung von logiBUS‑Ein‑ und Ausgangsbausteinen mit BUTTON_SINGLE_CLICK‑Ereignissen.

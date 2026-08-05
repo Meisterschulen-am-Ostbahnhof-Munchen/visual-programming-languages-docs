@@ -66,6 +66,7 @@ Der FB arbeitet mit drei Basisalgorithmen, die in den Zuständen `REQ`, `CO` und
   Der Skalenfaktor ergibt sich aus dem Referenzwert `Y_Scale` geteilt durch den um den Offset korrigierten Eingangswert.
 
 **Ablauf der Kalibrierung:**  
+
 1. Im Zustand `REQ` wird der FB durch ein Ereignis auf dem Adapter `CO` (mit Daten) in den Zustand `CO` überführt. Dort wird der Offset berechnet und über den Adapter `OFFSET` ausgegeben. Anschließend kehrt der FB sofort nach `REQ` zurück.  
 2. Analog erfolgt die Skalenkalibrierung über den Adapter `CS` und den Zustand `CS`.  
 3. Das Ereignis `SET` aktualisiert die Referenzwerte `Y_Offset` und `Y_Scale`, ohne den Kalibrierungszustand zu verlassen.  

@@ -1,5 +1,6 @@
 # Exercise_215b_AR: Standard IEC 61131-3 AI_FB_CTD (Adapter Version, INT) with Terminal Output (PHYS)
 ![Uebung_215b_AR_network](./Uebung_215b_AR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a down counter (CTD) according to IEC 61131-3 as an adapter variant. The counter is controlled via two digital inputs (Count-Down and Load) and outputs a digital output (Q) as well as the current counter value (CV). The counter value is converted into a text representation via a converter and displayed on a terminal (PHYS). The preset value (PV) is permanently set to 10 and supplied to the counter via another adapter.

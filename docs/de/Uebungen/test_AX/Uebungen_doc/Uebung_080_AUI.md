@@ -56,15 +56,18 @@ Der Netzwerk-Editor der Subapplikation enthält sechs Funktionsbausteine. Nachfo
 Die Übung ist als Subapplikation (`Uebung_080_AUI`) angelegt und benötigt keine eigenen Schnittstellen – alle Ein- und Ausgänge sind interne Hardwarezuordnungen.
 
 **Ereignisverbindungen**:
+
 - Das Ereignis `IND` von `DigitalInput_CLK_I1` wird an den Ereigniseingang `CU` des AUI_CTU angeschlossen. Jeder Tastendruck an Input_I1 erhöht den Zähler um 1.
 - Das Ereignis `IND` von `DigitalInput_CLK_I2` wird an den Ereigniseingang `R` des AUI_CTU angeschlossen. Ein Tastendruck an Input_I2 setzt den Zähler zurück.
 
 **Adapterverbindungen**:
+
 - Der Adapterausgang `Q` von `AUI_CTU` (zeigt an, dass der Zählerstand die Schwelle erreicht hat) ist mit dem Ereigniseingang `OUT` von `DigitalOutput_Q1` verbunden. Bei Erreichen der Schwelle wird der Ausgang `Output_Q1` aktiviert.
 - Der Adapterausgang `CV` von `AUI_CTU` (aktueller Zählwert) ist mit dem Adapteingang `AUI_IN` des Konverters `AUI_TO_AUDI` verbunden.
 - Der Datenausgang `AUDI_OUT` von `AUI_TO_AUDI` liefert den Zählwert als Ganzzahl und wird mit dem Adaptereingang `u32NewValue` des Terminal-Bausteins `Q_NumericValue_AUDI` verbunden. Dadurch wird der aktuelle Zählerstand kontinuierlich auf dem Terminal ausgegeben.
 
 **Ablauf**:
+
 1. Nach dem Start der Applikation ist der Zählerstand 0.
 2. Jeder Druck auf `Input_I1` erhöht den Zähler um
 1. Der neue Wert wird sofort auf dem Terminal angezeigt.
@@ -76,6 +79,7 @@ Die Übung ist als Subapplikation (`Uebung_080_AUI`) angelegt und benötigt kein
 Die Übung zeigt, wie ein Adapter-basierter Zähler (AUI_CTU) in 4diac mit Hardware-Eingängen und -Ausgängen verknüpft wird. Durch die Verwendung des Konverters `AUI_TO_AUDI` wird der adapternative Wert in einen einfachen Datenwert umgewandelt, der anschließend auf einem Terminal ausgegeben werden kann. Die separate Ansteuerung von Zähleingang und Reset sowie die binäre Rückmeldung über einen digitalen Ausgang machen diese Übung zu einem grundlegenden Beispiel für zeit- und ereignisgesteuerte Zählfunktionen in der IEC 61499-Architektur.
 
 **Lernziele**:
+
 - Verständnis der Adapter-Schnittstellen (AUI) für Ereignisse und Daten.
 - Einbindung von Hardware-Eingängen (Taster) und -Ausgängen in ein Steuerungsprogramm.
 - Konvertierung zwischen Adapter- und Datenformaten.

@@ -25,9 +25,11 @@ Keine direkten Daten-Ausgänge vorhanden
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - **IN** - AX unidirektionaler Adapter (Socket)
 
 **Ausgangsadapter:**
+
 - **OUT1** - AX unidirektionaler Adapter (Plug)
 - **OUT2** - AX unidirektionaler Adapter (Plug)
 - **OUT3** - AX unidirektionaler Adapter (Plug)

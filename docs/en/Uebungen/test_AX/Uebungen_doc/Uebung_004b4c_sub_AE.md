@@ -1,5 +1,6 @@
 # Exercise_004b4c_sub_AE: Sub-application for a latching toggle flip-flop with AE2 adapter
 ![Uebung_004b4c_sub_AE_network](./Uebung_004b4c_sub_AE_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This sub-application implements a latching toggle flip-flop that can be controlled via an **AE2 adapter (socket)** and receive feedback via an **AE2 adapter (plug)** and an **AX adapter (Q)**. The flip-flop is toggled by an incoming event at input `IND`. It can also be reset via the AE2 adapter, which represents the **latching** function. The current state of the flip-flop is output via the AX adapter.

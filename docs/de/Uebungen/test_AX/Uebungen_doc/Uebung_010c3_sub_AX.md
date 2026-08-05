@@ -59,11 +59,13 @@ Der Ablauf innerhalb dieser SubApp gestaltet sich wie folgt:
     *   **Pfad 2 (Visualisierung)**: Geht an die SubApp `GreenWhiteBackground_AX`. Diese sorgt vermutlich dafür, dass sich die Hintergrundfarbe des zugehörigen Objekts ändert, um dem Benutzer eine visuelle Rückmeldung zu geben.
 
 **Lernziele:**
+
 *   Verständnis von Adapter-Verbindungen (Adapter Connections) und deren Splitting.
 *   Umgang mit verschachtelten SubApps (SubApp in SubApp).
 *   Verknüpfung von ISOBUS-UI-Elementen mit Hardware-I/Os.
 
 **Voraussetzungen:**
+
 *   Grundkenntnisse in IEC 61499.
 *   Verständnis des Adapter-Konzepts in 4diac.
 

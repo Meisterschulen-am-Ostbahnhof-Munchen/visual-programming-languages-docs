@@ -1,5 +1,6 @@
 # AR_SPLIT_7
 ![AR_SPLIT_7](./AR_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AR_SPLIT_7** is a generic function block that distributes an incoming AR adapter socket (of type `adapter::types::unidirectional::AR`) to seven separate AR adapter plugs. It serves to forward an AR signal to up to seven different receivers without requiring the data to be provided multiple times.

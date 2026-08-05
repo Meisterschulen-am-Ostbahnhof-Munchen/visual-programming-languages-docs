@@ -1,5 +1,6 @@
 # Q_ActiveMask
 ![Q_ActiveMask](https://user-images.githubusercontent.com/69573151/212328886-4d5587f1-b2cd-4e8a-9cbe-0aa55ca1abcf.png)
+
 * * * * * * * * * *
 ## Introduction
 The **Q_ActiveMask** is a standards-compliant function block for controlling active masks in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.34) specification for agricultural tax systems.

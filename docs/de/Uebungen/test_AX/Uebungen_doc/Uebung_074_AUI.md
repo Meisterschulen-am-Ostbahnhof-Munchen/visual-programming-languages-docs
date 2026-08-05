@@ -55,6 +55,7 @@ Die SubApp enthält folgende Funktionsbausteine, die im Netzwerk miteinander ver
 Die Übung wird als SubApp in einer größeren Anwendung eingesetzt, typischerweise in einem ISOBUS‑Steuergerät für Traktoren.
 
 **Signalfluss**:
+
 1. Nach der Initialisierung (Ereignis `INITO` von `IA_RPTO`) werden die Bausteine `Q_NumericValue_PTO` und `CONST_ZERO` aktiviert (`INIT` bzw. `REQ`).
 2. Der aktuelle Drehzahlwert der Zapfwelle wird als AUI‑Wert über `IA_RPTO.SPEED` an den Eingang `IN0` des Selektors `AUI_AX_SEL_AUI` gesendet.
 3. Gleichzeitig wird das Timeout‑Flag `IA_RPTO.TIMEOUT` an den Gate‑Eingang `G` des Selektors angelegt. Bei normalem Betrieb ist `TIMEOUT = FALSE`, sodass der Selektor den Wert von `IN0` (die gemessene Drehzahl) durchschaltet.
@@ -63,6 +64,7 @@ Die Übung wird als SubApp in einer größeren Anwendung eingesetzt, typischerwe
 6. `Q_NumericValue_PTO` stellt den Wert auf dem User Terminal dar – im Normalbetrieb die tatsächliche Drehzahl, bei Timeout eine 0.
 
 **Lernziele**:
+
 - Verständnis der Verwendung von Adaptern zur Kommunikation zwischen unterschiedlichen Protokollen (AUI, AUDI).
 - Implementierung einer einfachen Fallback‑Logik (Fendt‑Schaltung) mit einem 2‑Kanal‑Selektor.
 - Umgang mit ISOBUS‑TECU‑Befehlen und UT‑Anzeigebausteinen in 4diac.

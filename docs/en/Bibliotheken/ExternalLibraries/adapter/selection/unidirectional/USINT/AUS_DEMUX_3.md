@@ -1,5 +1,6 @@
 # AUS_DEMUX_3
 ![AUS_DEMUX_3](./AUS_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUS_DEMUX_3** implements a generic demultiplexer for OFF signals. It distributes an input value (of adapter type `AUS`) received via a socket to one of three outputs provided via plugs. The active output is selected using the index `K`. The adapters used are unidirectional and allow loose coupling between the components.

@@ -32,17 +32,20 @@ Ziel ist es, das Verhalten eines **reset-dominanten** Toggle-Flipflops zu verste
 Die logiBUS-Eingänge werden über die Funktionsbausteine `DigitalInput_SET`, `DigitalInput_RESET` und `DigitalInput_CLK` ausgelesen und als Adapter-Sockets an das Flipflop `RS_T_FF` weitergegeben.
 
 **Verbindungen (AdapterConnections):**
+
 - `DigitalInput_SET.IN` → `RS_T_FF.SET`
 - `DigitalInput_RESET.IN` → `RS_T_FF.RESET1`
 - `DigitalInput_CLK.IN` → `RS_T_FF.CLK`
 - `RS_T_FF.Q1` → `DigitalOutput_Q1.OUT`
 
 **Funktionsweise des Flipflops:**
+
 - Bei einer steigenden Flanke am CLK-Eingang toggelt der Ausgang Q1 (d. h. er wechselt seinen Zustand von FALSE zu TRUE oder umgekehrt).
 - Ist der RESET1-Eingang aktiv (TRUE), wird der Ausgang **sofort und dominant** auf FALSE gesetzt – unabhängig vom aktuellen Zustand und vom Taktsignal.
 - Der SET-Eingang setzt den Ausgang auf TRUE, sofern kein RESET anliegt und kein Taktimpuls ausgeführt wird. Da RESET dominant ist, hat RESET stets Vorrang.
 
 **Lernziele:**
+
 - Verständnis der Funktionsweise eines reset-dominanten Toggle-Flipflops.
 - Umgang mit Adapter-basierten Funktionsbausteinen in 4diac.
 - Einbindung logiBUS-Hardware-Eingänge/-Ausgänge in ein Automatisierungsprojekt.

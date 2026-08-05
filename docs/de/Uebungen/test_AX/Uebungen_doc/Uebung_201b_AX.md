@@ -47,6 +47,7 @@ Diese Übung demonstriert die Steuerung eines Motors mit Rechts- und Linkslauf u
 4. **Ausgangsbausteine**: Die drei logiBUS_QXA-Bausteine setzen die Adapter-Signale in physikalische Ausgänge an `Output_Q5`, `Output_Q56` und `Output_Q6` um.
 
 **Lernziele**:  
+
 - Verständnis des Interlock-Prinzips für Motordrehrichtungen  
 - Umgang mit logiBUS-Ein-/Ausgangsadaptern  
 - Signalaufbereitung durch Sub-Applikationen  

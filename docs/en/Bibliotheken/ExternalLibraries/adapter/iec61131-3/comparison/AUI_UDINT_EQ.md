@@ -1,5 +1,6 @@
 # AUI_UDINT_EQ
 ![AUI_UDINT_EQ](./AUI_UDINT_EQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_UDINT_EQ** performs an equality comparison between two values. The first operand is provided via an adapter input (IN1) of type `AUI`, the second via the data input `IN2` as `UDINT`. The comparison result is output as a Boolean value via an adapter output (OUT) of type `AX`. The block is designed for use in IEC 61499 systems and is based on the standard comparison block `F_EQ`.

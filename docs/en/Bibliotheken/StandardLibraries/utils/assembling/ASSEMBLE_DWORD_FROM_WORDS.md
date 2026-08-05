@@ -1,5 +1,6 @@
 # ASSEMBLE_DWORD_FROM_WORDS
 ![ASSEMBLE_DWORD_FROM_WORDS](https://github.com/user-attachments/assets/6e0070a6-ac74-4370-9657-7d0fdd5e02cf)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASSEMBLE_DWORD_FROM_WORDS` combines two 16-bit words (WORD) into a 32-bit double word (DWORD). This functionality is particularly useful when data from two separate sources needs to be merged.

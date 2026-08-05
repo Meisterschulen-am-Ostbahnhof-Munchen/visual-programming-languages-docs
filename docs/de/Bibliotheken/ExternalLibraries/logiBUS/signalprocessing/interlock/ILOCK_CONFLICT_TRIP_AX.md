@@ -85,6 +85,7 @@ Die Priorisierung erfolgt implizit: Solange kein Konflikt vorliegt, wird die zue
 | `TRIP` | FALSE | FALSE | TRUE | Konflikt / Trip, erfordert Reset |
 
 **Wichtige Übergänge:**
+
 - STOP → UP: wenn UP_IN aktiv und DOWN_IN inaktiv.
 - STOP → DOWN: wenn DOWN_IN aktiv und UP_IN inaktiv.
 - STOP → TRIP: wenn beide Eingänge gleichzeitig aktiv (Konflikt).

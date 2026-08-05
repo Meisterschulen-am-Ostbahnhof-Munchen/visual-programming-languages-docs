@@ -20,9 +20,11 @@ Nicht vorhanden.
 Der FB besitzt folgende Adapter-Schnittstellen:
 
 **Socket (Eingang):**
+
 - `IN` (Typ: `adapter::types::unidirectional::A2X`)
 
 **Plugs (Ausgänge):**
+
 - `OUT1` bis `OUT8` (jeweils Typ: `adapter::types::unidirectional::A2X`)
 
 ## Funktionsweise

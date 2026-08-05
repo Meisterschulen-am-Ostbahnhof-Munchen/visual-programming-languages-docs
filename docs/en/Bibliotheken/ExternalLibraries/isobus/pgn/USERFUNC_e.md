@@ -1,5 +1,6 @@
 # USERFUNC_e
 ![USERFUNC_e](./USERFUNC_e.svg)
+
 * * * * * * * * * *
 ## Introduction
 The global constant `USERFUNC_e` defines an enumeration of numeric values that represent specific device functions or roles within an ISOBUS network. It serves for the standardized and readable identification of various ISOBUS device types and functions in control applications.

@@ -1,5 +1,6 @@
 # E_D_FF_ANY_HYS
 ![E_D_FF_ANY_HYS](./E_D_FF_ANY_HYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **E_D_FF_ANY_HYS** implements a data latch flip-flop with adjustable hysteresis. It takes a numeric input value `D` and outputs `Q`, but only if the difference between the current output `Q` and the new input `D` exceeds a predefined threshold (`HYSTERESIS`). This effectively suppresses small, unwanted fluctuations (e.g., noise).

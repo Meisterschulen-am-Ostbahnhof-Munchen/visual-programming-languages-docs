@@ -1,5 +1,6 @@
 # AR_DEMUX_5
 ![AR_DEMUX_5](./AR_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AR_DEMUX_5 function block is a generic demultiplexer for the unidirectional AR adapter. It allows an incoming AR data stream to be routed to one of five output adapters. The target output is selected via an index input. The block is specified according to IEC 61499-2 and is provided as a generic FB with the class name `GEN_AR_DEMUX`.

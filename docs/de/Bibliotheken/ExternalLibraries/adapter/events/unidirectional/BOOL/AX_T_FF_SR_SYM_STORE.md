@@ -72,6 +72,7 @@ Der Baustein arbeitet als ein SR-Flipflop (Set-Reset) mit zusätzlicher Toggle-F
 | RESET   | Ausgang Q = FALSE                        | Verarbeitet S, R, CLK (siehe Übergänge)       |
 
 **Zustandsübergänge (vereinfacht)**
+
 - START → Init (Ereignis Q_INIT.EI1)
 - Init → SET (falls Q_INIT.DI1 = TRUE)
 - Init → RESET (falls Q_INIT.DI1 = FALSE)

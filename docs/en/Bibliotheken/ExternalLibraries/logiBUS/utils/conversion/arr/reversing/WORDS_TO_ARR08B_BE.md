@@ -1,6 +1,7 @@
 # WORDS_TO_ARR08B_BE
 <br>
 ![WORDS_TO_ARR08B_BE](./WORDS_TO_ARR08B_BE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **WORDS_TO_ARR08B_BE** combines four 16-bit words (WORD) into an 8-byte array. The conversion is performed in **Big-Endian format** (Network Byte Order), where the most significant byte is stored first in the output array. This corresponds to the standard representation in network protocols such as Modbus TCP, Siemens S7 communication, or Ethernet headers.

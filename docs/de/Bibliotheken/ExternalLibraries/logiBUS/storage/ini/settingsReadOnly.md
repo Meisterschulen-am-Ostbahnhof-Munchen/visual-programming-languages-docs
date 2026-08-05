@@ -94,6 +94,7 @@ OperatorID = 42
 ```
 
 **Ergebnis im Betrieb:**
+
 * `NODE1_SA` (`128`), `bootTimeVT` (`90`) und `DeviceName` (`"LOGIBUS-NODE-01"`) sind geschützt und können nicht verändert werden.
 * `UserLanguage` (`"DE"`) und `OperatorID` (`42`) können durch die Steuerung frei geändert und dauerhaft gespeichert werden.
 * Sollte in `settings.ini` versehentlich ein alter Wert `NODE1_SA = 130` vorhanden gewesen sein, löscht das Steuergerät diesen beim Booten automatisch, sodass stets die Vorgabe `128` gilt.

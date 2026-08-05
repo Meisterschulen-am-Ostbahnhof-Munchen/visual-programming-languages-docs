@@ -1,5 +1,6 @@
 # UDINT_AUDI_LT
 ![UDINT_AUDI_LT](./UDINT_AUDI_LT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **UDINT_AUDI_LT** performs a numerical less-than comparison according to IEC 61131-3. It compares two input values and returns the result (true/false) via an output adapter. The internal processes are implemented as a sub-application using a standardized comparison block (F_LT).

@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_088`. It demonstrates the targeted response to the end of a signal (falling edge).
 ## 🎧 Podcast
 ![Uebung_088_network](./Uebung_088_network.svg)
+
 * [Agricultural Revolution 1883: How Max Eyth Modernized England's Agriculture ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Agrar-Revolution-1883-Wie-Max-Eyth-Englands-Landwirtschaft-modernisierte-e36faae)
 
 ----

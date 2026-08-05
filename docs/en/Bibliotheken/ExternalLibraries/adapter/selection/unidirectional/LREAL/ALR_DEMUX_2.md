@@ -1,5 +1,6 @@
 # ALR_DEMUX_2
 ![ALR_DEMUX_2](./ALR_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The ALR_DEMUX_2 is a generic demultiplexer function block for ALR data. It forwards an incoming ALR value, provided via socket IN, to one of the two output adapters OUT1 or OUT2 based on an index K. Switching is triggered by the REQ event.

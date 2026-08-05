@@ -1,6 +1,7 @@
 # AX_RS
 <img width="1188" height="282" alt="image" src="https://github.com/user-attachments/assets/96fcd1e8-c68a-4b6e-a8f0-f615322d30e2" />
 ![AX_RS_ecc](./AX_RS_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AX_RS function block is an event-driven bistable element (flip-flop) based on the RS principle. It is a Basic Function Block that implements a set-reset mechanism and communicates via adapter interfaces.
@@ -50,6 +51,7 @@ The function block has three states in the ECC:
 3. **RESET**: State after a reset operation (Q.D1 = FALSE)
 
 **State Transitions:**
+
 - START → SET: on S event
 - SET → RESET: on R event
 - RESET → SET: on S event

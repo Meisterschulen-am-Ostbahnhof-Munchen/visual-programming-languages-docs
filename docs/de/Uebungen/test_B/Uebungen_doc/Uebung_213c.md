@@ -86,6 +86,7 @@ Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (FB_CTU_UDINT) m
 7. **Stopp**: Ein Druck auf Taster **I2** erzeugt `STOP.IND`, das den Timer `E_CYCLE` anhält. Zählung und Ausgabe werden gestoppt.
 
 **Lernziele**:  
+
 - Anwendung des IEC 61131‑3 Zählers `FB_CTU_UDINT` in einer 4diac-Umgebung.  
 - Kombination von ereignisgesteuerten Bausteinen (E_CYCLE, E_T_FF, E_PERMIT) mit datenflussorientierten Bausteinen (F_MUX_32, Q_NumericValue).  
 - Steuerung eines animierten Objekts über Taster, zyklischen Timer und Zähler.

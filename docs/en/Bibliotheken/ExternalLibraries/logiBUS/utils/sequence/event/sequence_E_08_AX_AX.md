@@ -1,5 +1,6 @@
 # sequence_E_08_AX_AX
 ![sequence_E_08_AX_AX](./sequence_E_08_AX_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **sequence_E_08_AX_AX** implements a sequential control loop with eight output stages. It enables the step-by-step switching of states, with each state being exited by an event via an AX adapter input. An AX adapter provides a unidirectional interface with a data value (`D1`) that is transferred from the input adapter to the corresponding output adapter upon entering a state. The block is designed for use in automation systems that require a clear, event-driven sequence of steps.

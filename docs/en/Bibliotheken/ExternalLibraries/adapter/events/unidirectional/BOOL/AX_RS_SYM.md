@@ -1,5 +1,6 @@
 # AX_RS_SYM
 ![AX_RS_SYM](./AX_RS_SYM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AX_RS_SYM** is an event-driven, bistable function block (RS flip-flop) with symmetrical start-up behavior. It has two event inputs, `R` (Reset) and `S` (Set), each of which sets the state of the output `Q`. The output is provided as a unidirectional adapter, through which both a data value (D1) and an event (E1) can be transmitted.

@@ -1,5 +1,6 @@
 # ASSEMBLE_AL_FROM_AQ
 ![ASSEMBLE_AL_FROM_AQ](./ASSEMBLE_AL_FROM_AQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASSEMBLE_AL_FROM_AQ` is used to combine 32 unidirectional AQ adapters ("quarters") into a single AL adapter (LWORD).

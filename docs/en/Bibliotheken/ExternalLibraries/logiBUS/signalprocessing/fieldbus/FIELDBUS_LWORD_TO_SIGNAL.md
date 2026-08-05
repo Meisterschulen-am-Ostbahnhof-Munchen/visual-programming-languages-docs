@@ -1,5 +1,6 @@
 # FIELDBUS_LWORD_TO_SIGNAL
 ![FIELDBUS_LWORD_TO_SIGNAL](./FIELDBUS_LWORD_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **FIELDBUS_LWORD_TO_SIGNAL** converts an LWORD value from a fieldbus system into a valid signal. It accepts an input value and passes it on unchanged only if its value lies within a defined valid range. Otherwise, a zero value is output, and the validity is signaled as `FALSE`.

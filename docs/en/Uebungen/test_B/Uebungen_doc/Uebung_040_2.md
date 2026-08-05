@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_040_2` based on the provided XML data.
 # Exercise_040_2: Running Light 8
 ![Uebung_040_2_network](./Uebung_040_2_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an **8-channel running light**, which is manually controlled via pushbuttons. Unlike an automatically running running light, the sequence progress here is determined by user interaction. The system is divided into two blocks, each controlling 4 steps, and includes visual feedback on the current status as well as a numerical display of the active step.

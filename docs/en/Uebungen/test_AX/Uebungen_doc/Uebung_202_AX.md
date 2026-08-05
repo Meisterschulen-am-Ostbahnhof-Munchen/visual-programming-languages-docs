@@ -1,5 +1,6 @@
 # Exercise_202_AX: Interlock: ILOCK_BLOCK_PROTECT_AX (Interlock with Protection Time via Adapter)
 ![Uebung_202_AX_network](./Uebung_202_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the implementation of an interlock with a protection time using adapters. The function block `ILOCK_BLOCK_PROTECT_AX` is used to interlock two input signals (e.g., switches or sensors) and monitor them over a configurable protection time. The outputs control corresponding actuators. An additional timer (`E_TimeOut`) indicates when the protection time expires.

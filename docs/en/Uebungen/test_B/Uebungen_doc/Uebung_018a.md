@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_018a` in the required format.
 # Exercise_018a: Control Audio Signal and Delay
 ![Uebung_018a_network](./Uebung_018a_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the control of audio signals in an ISOBUS Universal Terminal environment in combination with a time delay. The goal is to play a sequence of two different tones, separated by a short pause, when a softkey is released. This illustrates event processing and the use of delay blocks for sequencing actions.

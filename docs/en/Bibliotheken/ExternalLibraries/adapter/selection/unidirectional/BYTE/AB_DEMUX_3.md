@@ -1,5 +1,6 @@
 # AB_DEMUX_3
 ![AB_DEMUX_3](./AB_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AB_DEMUX_3** is a generic demultiplexer for the adapter type `unidirectional::AB`. It forwards a value present at socket **IN** to one of three adapter plugs, **OUT1**, **OUT2**, or **OUT3**, depending on the index **K**. The function block is controlled via the **REQ** event.

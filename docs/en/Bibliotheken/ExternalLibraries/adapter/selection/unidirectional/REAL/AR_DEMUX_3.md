@@ -1,5 +1,6 @@
 # AR_DEMUX_3
 ![AR_DEMUX_3](./AR_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_DEMUX_3** is a generic demultiplexer for unidirectional adapters of type `adapter::types::unidirectional::AR`. It distributes an incoming adapter data stream (via socket `IN`) to one of three output adapters (`OUT1`, `OUT2`, `OUT3`), depending on an index value `K`. The block is triggered by an event `REQ` and confirms the operation with `CNF`. This enables flexible and dynamic signal routing in adapter-based IEC 61499 applications.

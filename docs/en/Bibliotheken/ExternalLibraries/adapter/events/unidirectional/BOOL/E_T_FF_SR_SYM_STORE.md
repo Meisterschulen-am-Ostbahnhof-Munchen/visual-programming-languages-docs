@@ -1,5 +1,6 @@
 # E_T_FF_SR_SYM_STORE
 ![E_T_FF_SR_SYM_STORE](./E_T_FF_SR_SYM_STORE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `E_T_FF_SR_SYM_STORE` implements an event-driven bistable flip-flop with the functions **Set** (S), **Reset** (R), and **Toggle** (CLK). Its special feature is the **symmetrical start-up behavior**: The initial state of the output Q is set via an adapter (`Q_INIT`) during startup or after a `INIT` event. This ensures that the function block behaves deterministically and repeatably at every start time – an important property for safety-critical or predictable automation systems.

@@ -77,6 +77,7 @@ Der Ablauf der Übung lässt sich wie folgt beschreiben:
    Der aktuelle Zählerstand (`CV`) wird an den `Q_NumericValue_AUDI`-Block übergeben und als numerischer Wert auf dem isobus-Netzwerk (Objekt-ID `OutputNumber_N1`) ausgegeben.
 
 **Lernziele**:  
+
 - Verständnis von AX- und AE-Adaptern (Ereignis- und Adapter-Schnittstellen)  
 - Anwendung eines SR-Speichers, eines Schalters und eines Erlaubnisglieds  
 - Verknüpfung von zyklischen Ereignissen mit manueller Steuerung  

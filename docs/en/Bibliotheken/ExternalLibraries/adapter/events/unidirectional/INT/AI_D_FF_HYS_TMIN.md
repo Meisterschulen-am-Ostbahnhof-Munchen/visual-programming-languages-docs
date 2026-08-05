@@ -1,5 +1,6 @@
 # AI_D_FF_HYS_TMIN
 ![AI_D_FF_HYS_TMIN](./AI_D_FF_HYS_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_D_FF_HYS_TMIN** implements a data latch (D flip-flop) with a hysteresis band and a minimum time between successive event outputs. It serves as a robust signal processing component that suppresses noise and fast edge transitions and only passes on stable state changes.

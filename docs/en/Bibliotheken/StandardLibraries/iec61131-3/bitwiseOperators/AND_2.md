@@ -3,6 +3,7 @@
 OUT is only switched when a Boolean signal is present at IN1 and IN2, e.g., from a switch.
 ![](https://user-images.githubusercontent.com/113907580/227966597-94049ae9-429e-49d8-93ca-b46b31b27550.png)
 The same principle applies to all other "AND" blocks, except that all IN inputs must always be True.
+
 * * * * * * * * * *
 
 ## Introduction

@@ -1,5 +1,6 @@
 # AL_DEMUX_2
 ![AL_DEMUX_2](./AL_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AL_DEMUX_2** is a generic AL demultiplexer. It routes an incoming data stream via an adapter socket to either one of two adapter plugs. The output is selected via an index parameter, which is set and activated by an event. The block is designed for use in automated systems where data path switching based on discrete control signals is required.

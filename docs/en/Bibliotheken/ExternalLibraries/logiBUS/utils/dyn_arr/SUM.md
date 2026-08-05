@@ -1,5 +1,6 @@
 # SUM
 ![SUM](./SUM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **SUM** function block allows you to calculate the sum of all elements in a dynamic array. It is triggered by an event at the REQ input and, after successful calculation, outputs the result via the data output and a confirmation event via CNF.

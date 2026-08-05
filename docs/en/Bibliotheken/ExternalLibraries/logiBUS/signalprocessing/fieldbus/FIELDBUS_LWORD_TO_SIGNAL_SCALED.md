@@ -1,5 +1,6 @@
 # FIELDBUS_LWORD_TO_SIGNAL_SCALED
 ![FIELDBUS_LWORD_TO_SIGNAL_SCALED](./FIELDBUS_LWORD_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **FIELDBUS_LWORD_TO_SIGNAL_SCALED** converts a raw fieldbus signal in **LWORD** format into a scaled **LREAL** output value. It mirrors the input signal to the output, provided the signal is valid, and applies linear scaling. This function block is designed for use in industrial automation, particularly in the context of fieldbus systems.

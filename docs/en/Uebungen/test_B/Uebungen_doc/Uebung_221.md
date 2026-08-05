@@ -1,5 +1,6 @@
 # Exercise_221: Standard IEC 61131-3 FB_CTUD_DINT (Up/Down Counter, DINT) with Terminal Output
 ![Uebung_221_network](./Uebung_221_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a combined up/down counter based on the IEC 61131-3 standard function block `FB_CTUD_DINT`. The counted value is stored as an integer (DINT) and, after conversion, displayed on a numeric display (terminal). Additionally, two binary outputs are set to indicate whether the counter has reached the upper (QU) or lower (QD) limit.

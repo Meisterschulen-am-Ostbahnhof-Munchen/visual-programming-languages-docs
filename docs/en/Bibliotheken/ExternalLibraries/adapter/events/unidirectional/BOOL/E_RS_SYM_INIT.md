@@ -1,5 +1,6 @@
 # E_RS_SYM_INIT
 ![E_RS_SYM_INIT](./E_RS_SYM_INIT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **E_RS_SYM_INIT** is an event-driven, bistable toggle switch (flip-flop) with symmetrical startup behavior and explicit initialization. It implements the familiar RS flip-flop logic, where the output **Q** can be set to either TRUE or FALSE during initialization (event **INIT**) – depending on the value of the parameter **Q_INIT**. This enables defined behavior after a system startup or reinitialization.

@@ -1,5 +1,6 @@
 # AS_MUX_4
 ![AS_MUX_4](./AS_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_MUX_4** is a generic multiplexer for unidirectional AS data streams. It allows the selection of one of four AS inputs (IN1…IN4) and provides the selected data stream to the AS output (OUT). Selection is made via an index K, which is evaluated upon the arrival of the REQ event. The block is used in the 4diac IDE and is stored as a generic FB with the class name `GEN_AS_MUX`.

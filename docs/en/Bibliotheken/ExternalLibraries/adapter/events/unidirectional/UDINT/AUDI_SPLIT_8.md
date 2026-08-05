@@ -1,5 +1,6 @@
 # AUDI_SPLIT_8
 ![AUDI_SPLIT_8](./AUDI_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_SPLIT_8** is used to distribute an incoming unidirectional **AUDI** adapter signal to eight parallel outputs.

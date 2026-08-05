@@ -1,5 +1,6 @@
 # Exercise_126b2_sub: Plotting a Sine Wave Function on PCAN Explorer
 ![Uebung_126b2_sub_network](./Uebung_126b2_sub_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates how to generate a sine wave function using 4diac and CAN communication and send it to a PCAN Explorer via the CAN bus. The generated sine wave value is converted into a byte array, packaged into a CAN message, and sent via a callback mechanism. The goal is to display the sinusoidal output on the PCAN Explorer.

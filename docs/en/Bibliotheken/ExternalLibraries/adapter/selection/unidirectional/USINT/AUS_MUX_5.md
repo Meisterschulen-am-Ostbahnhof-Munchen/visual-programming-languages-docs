@@ -1,5 +1,6 @@
 # AUS_MUX_5
 ![AUS_MUX_5](./AUS_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUS_MUX_5** is a generic multiplexer that selects one of five OFF input signals (IN1 to IN5) and forwards it to the OFF output (OUT). Selection is made via an integer index K (value range 0 to 4). This function block is suitable for dynamically switching output values in automation systems.

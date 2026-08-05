@@ -1,5 +1,6 @@
 # AQ_MUX_4
 ![AQ_MUX_4](./AQ_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AQ_MUX_4` acts as a multiplexer for adapters of type `AQ`. It selects one of four available adapter inputs (IN1–IN4) and forwards its signal to the adapter output OUT. The selection is made using a numerical index `K`, which is set via the event input `REQ`. The block is declared as a generic function block and can be adapted to the number of inputs in the development environment if necessary.

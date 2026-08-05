@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_000`. This is the perfect introductory example for mathematical data processing.
 ## 🎧 Podcast
 ![Uebung_000_network](./Uebung_000_network.svg)
+
 * [3000 Watt Lie: The TVS Diode Decoded ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/3000-Watt-Lge-Die-TVS-Diode-entschlsselt-e3aun8t)
 * [Hannes' Turbo Corn: How a Farmer Processes 15,000 Tons of Grain Corn with a Wood Chip Recycling System and Tower Dryer ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Hannes-Turbo-Mais-Wie-ein-Landwirt-mit-Hackschnitzel-Kreislauf-und-Turmtrockner-15-000-Tonnen-Krnermais-verarbeitet-e3a5e0o)
 

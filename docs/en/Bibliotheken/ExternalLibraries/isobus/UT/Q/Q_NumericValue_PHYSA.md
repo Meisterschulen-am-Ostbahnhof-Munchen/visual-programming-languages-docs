@@ -1,5 +1,6 @@
 # Q_NumericValue_PHYSA
 ![Q_NumericValue_PHYSA](./Q_NumericValue_PHYSA.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `Q_NumericValue_PHYSA` serves as a wrapper for the function block `Q_NumericValue_PHYS`. It allows setting a numeric value, which is received as a physical value (`REAL`) via an AR adapter (socket `rPhys`). The function block is designed according to the ISO 11783-6 standard and is suitable for ISOBUS applications that require a physical value input.

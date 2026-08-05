@@ -1,5 +1,6 @@
 # ALR_MUX_4
 ![ALR_MUX_4](./ALR_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ALR_MUX_4` implements a 4-channel multiplexer for data of type `ALR`. It selects one of four adapter inputs (`IN1` … `IN4`) and forwards its signal to the adapter output `OUT`. The selection is made using the integer index `K` (0-based). The block is implemented as a generic FB (`GEN_ALR_MUX`) and connected to the environment via adapter interfaces.

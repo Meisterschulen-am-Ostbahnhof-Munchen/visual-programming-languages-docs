@@ -1,6 +1,7 @@
 # AW_D_FF_TMIN
 (Image of the function block – not included in the XML, therefore no image)
 ![AW_D_FF_TMIN](./AW_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AW_D_FF_TMIN** is a composed IEC 61499 function block (a type of data latch flip-flop) that receives an incoming data value on an adapter, takes over upon an event, and passes it on to an output adapter with a minimal delay between two consecutive output events. It serves as a reliable buffer, extending the output events to a minimum time defined by the parameter `Tmin`.

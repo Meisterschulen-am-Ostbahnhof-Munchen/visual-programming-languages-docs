@@ -1,5 +1,6 @@
 # AX_TO_ADI
 ![AX_TO_ADI](./AX_TO_ADI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AX_TO_ADI** function block is a composite function block (FB) that converts an AX adapter with a Boolean interface (BOOL) into an ADI adapter with an integer interface (DINT). It serves as a converter between unidirectional adapters and enables the seamless integration of binary signals into systems that use integer-based adapters.

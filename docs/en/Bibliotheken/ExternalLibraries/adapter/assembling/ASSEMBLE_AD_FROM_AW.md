@@ -1,5 +1,6 @@
 # ASSEMBLE_AD_FROM_AW
 ![ASSEMBLE_AD_FROM_AW](./ASSEMBLE_AD_FROM_AW.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ASSEMBLE_AD_FROM_AW** combines two word values (WORD) from a single unidirectional AW adapter into a double word (DWORD), which is output via a unidirectional AD adapter. The block encapsulates the logical combination of two 16-bit inputs into a 32-bit output and stores the result using an edge-triggered D flip-flop.

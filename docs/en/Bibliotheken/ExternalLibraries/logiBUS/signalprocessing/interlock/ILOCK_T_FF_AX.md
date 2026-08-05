@@ -1,5 +1,6 @@
 # ILOCK_T_FF_AX
 ![ILOCK_T_FF_AX](./ILOCK_T_FF_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ILOCK_T_FF_AX` is a composite function block that implements a lockable toggle flip-flop. It features an AE2 adapter interface for connecting to a higher-level interlocking logic and outputs the current switching state via a unidirectional AX adapter. The function block is designed for use in safety-related or interlocked control applications where the switching of an output must be influenced by external conditions.

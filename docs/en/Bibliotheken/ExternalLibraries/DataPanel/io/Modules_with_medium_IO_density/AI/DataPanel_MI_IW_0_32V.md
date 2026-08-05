@@ -1,5 +1,6 @@
 # DataPanel_MI_IW_0_32V
 ![DataPanel_MI_IW_0_32V](./DataPanel_MI_IW_0_32V.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **DataPanel_MI_IW_0_32V** is a Service Interface Function Block (SIFB) according to IEC 61499. It is used to read an analog voltage signal in the range of 0–32V via a DataPanel MI module. The block handles the initialization of the communication channel, the configuration of an analog input (e.g., AnalogInput_1A to 8B), and the cyclical querying or reception of measured values. The output is as a **WORD** value; the status is signaled via **STATUS** and the **CNF** or **IND** event.

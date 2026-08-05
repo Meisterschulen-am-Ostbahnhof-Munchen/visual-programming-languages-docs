@@ -47,6 +47,7 @@ Der Baustein besteht intern aus zwei Komponenten:
 2. **E_D_FF** – ein flankengesteuertes D‑Flipflop (E‑D‑FF gemäß IEC 61499), das den Q‑Ausgang des Timers zwischenspeichert.
 
 **Ablauf:**
+
 - Ein Ereignis über den Adaptereingang `IN.E1` oder den Standard‑Eventeingang `REQ` startet den Timer `FB_TP_LTIME` (die Ereignisse sind intern zusammengeführt – beide lösen denselben Start aus).
 - Der Timer zählt die verstrichene Zeit `ET` hoch und setzt seinen internen boolschen Ausgang `Q` auf TRUE, sobald `PT` erreicht ist. Nach Ablauf der Pulszeit wird `Q` wieder FALSE und ein `CNF`-Ereignis ausgegeben.
 - Das `CNF`-Ereignis taktet das D‑Flipflop `E_D_FF`, welches den aktuellen Zustand von `Q` (also TRUE während der Pulsdauer, FALSE danach) übernimmt und am Ausgang `Q.D1` des Adapters bereitstellt.

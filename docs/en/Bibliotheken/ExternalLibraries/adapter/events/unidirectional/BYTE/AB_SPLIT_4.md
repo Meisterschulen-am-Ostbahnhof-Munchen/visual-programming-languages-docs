@@ -1,5 +1,6 @@
 # AB_SPLIT_4
 ![AB_SPLIT_4](./AB_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_SPLIT_4** is used to distribute a single incoming unidirectional adapter connection of type `AB` to four parallel outgoing adapter connections of the same type. It is designed as a generic block and enables the distribution of a data or signal flow across multiple downstream components.

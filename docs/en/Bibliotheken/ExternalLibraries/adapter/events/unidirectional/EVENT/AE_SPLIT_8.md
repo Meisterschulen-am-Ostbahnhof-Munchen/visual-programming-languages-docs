@@ -1,6 +1,7 @@
 # AE_SPLIT_8
 ![AE_SPLIT_8](./AE_SPLIT_8.svg)
 *Image of the function block: [Insert here if available]*
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_SPLIT_8** serves as a generic distributor for one unidirectional adapter input (AE) to eight identical adapter outputs. It allows the multiple use of an incoming signal without modifying it.

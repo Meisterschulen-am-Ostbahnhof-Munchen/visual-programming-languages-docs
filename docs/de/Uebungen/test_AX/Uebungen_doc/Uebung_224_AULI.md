@@ -56,6 +56,7 @@ Alle logiBUS-Blöcke sind standardmäßig mit `QI = TRUE` aktiv geschaltet.
    - Der aktuelle Zählerstand `CV` wird über die Konvertierungsbausteine `AULI_TO_AUDI` und `Q_NumericValue_AUDI` auf dem Terminal (Objekt `OutputNumber_N1`) dargestellt. Diese Konvertierung und Ausgabe erfolgt ebenfalls zyklisch parallel zum Zählbetrieb.
 
 **Hinweise**:
+
 - Ein Kommentar im Netzwerk schlägt vor, optional AX_D_FF (D-Flipflops) einzubauen, um die Ereignisrate zu reduzieren.
 - Der Zähler arbeitet mit dem Datentyp ULINT, daher sind große Zählbereiche möglich.
 

@@ -1,5 +1,6 @@
 # Exercise_028c2_AR: Analog Input Calibration with Adapters, NVS and Hysteresis Controller at Output, and Display
 ![Uebung_028c2_AR_network](./Uebung_028c2_AR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the calibration of an analog input signal using NVS (Non-Volatile Storage) for offset and scaling. The calibrated signal is split into two paths: one for displaying a physical value (e.g., on a display), and the other for a hysteresis controller that drives a digital output. Calibration can be initiated via digital inputs (offset and scaling commands). The hysteresis thresholds are loaded from the NVS using two sub-applications.

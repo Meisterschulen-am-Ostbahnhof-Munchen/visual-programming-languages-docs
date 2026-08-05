@@ -1,5 +1,6 @@
 # CommunicationPartners
 ![CommunicationPartners](./CommunicationPartners.svg)
+
 * * * * * * * * * *
 ## Introduction
 CommunicationPartners` is a global constant data set used in the context of ISOBUS PGN (Parameter Group Number) communication. It serves to provide a predefined communication partner, in this case the global address, as a constant configuration for other function blocks. This simplifies the configuration of ISOBUS network components by defining frequently used addresses centrally and for reuse.

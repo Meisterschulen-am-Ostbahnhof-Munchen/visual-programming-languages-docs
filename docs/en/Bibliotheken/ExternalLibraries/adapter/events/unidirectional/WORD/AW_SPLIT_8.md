@@ -1,5 +1,6 @@
 # AW_SPLIT_8
 ![AW_SPLIT_8](./AW_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_SPLIT_8** is a generic block that splits an incoming unidirectional AW adapter signal into eight identical output signals. The block is implemented as a generic FB and can be assigned a specific type name and type check code at runtime. It serves as a 1:8 distributor for AW data streams and is typically used in automation technology when a signal needs to be forwarded to multiple sinks simultaneously.

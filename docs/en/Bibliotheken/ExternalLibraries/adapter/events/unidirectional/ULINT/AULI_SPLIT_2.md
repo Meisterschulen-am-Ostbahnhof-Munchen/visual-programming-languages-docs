@@ -1,5 +1,6 @@
 # AULI_SPLIT_2
 ![AULI_SPLIT_2](./AULI_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_SPLIT_2** is used to distribute an incoming AULI adapter (unidirectional) to two identical outputs. It is implemented as a generic function block and enables simple signal multiplication in IEC 61499-based systems.

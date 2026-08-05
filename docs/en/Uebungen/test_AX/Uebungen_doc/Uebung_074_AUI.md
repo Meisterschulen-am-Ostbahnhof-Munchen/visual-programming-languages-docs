@@ -1,5 +1,6 @@
 # Exercise_074_AUI: Outputting RPTO to UT (Adapter Version) with Fendt Circuit
 ![Uebung_074_AUI_network](./Uebung_074_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the output of the rear PTO speed to a user terminal (UT) using adapters. It implements a so-called "Fendt circuit" that displays the value 0 on the UT if the PTO signal times out. This ensures reliable operation in case of sensor failure or communication problems.

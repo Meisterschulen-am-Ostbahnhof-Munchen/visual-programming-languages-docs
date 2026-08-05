@@ -1,5 +1,6 @@
 # AULI_DEMUX_4
 ![AULI_DEMUX_4](./AULI_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AULI_DEMUX_4** is a generic demultiplexer that forwards an incoming AULI adapter data stream to one of four possible output adapters. Selection is made via a numeric index (K), which is evaluated when the REQ event is set. The function block is designed for use in agricultural automation (AULI) and allows for flexible signal distribution.

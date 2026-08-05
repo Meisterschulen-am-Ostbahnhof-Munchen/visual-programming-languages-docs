@@ -10,9 +10,11 @@ Der AX_OR_10 ist ein generischer Funktionsblock zur Berechnung der logischen ODE
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - **IN1** bis **IN10** (adapter::types::unidirectional::AX)
 
 **Ausgangsadapter:**
+
 - **OUT** (adapter::types::unidirectional::AX)
 
 ## Funktionsweise

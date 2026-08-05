@@ -1,5 +1,6 @@
 # FIELDBUS_UINT_TO_SIGNAL_SCALED
 ![FIELDBUS_UINT_TO_SIGNAL_SCALED](./FIELDBUS_UINT_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **FIELDBUS_UINT_TO_SIGNAL_SCALED** processes a UINT value received via a fieldbus. It checks the validity of the input signal and, if valid, scales it to a REAL output using a multiplication constant (SCALE) and an additive offset (OFFSET). If the signal is invalid, the output is set to zero and a validity flag is set to FALSE. A typical application is the conversion of raw fieldbus data into physical quantities while simultaneously detecting exceptional conditions such as wire breaks or sensor errors.

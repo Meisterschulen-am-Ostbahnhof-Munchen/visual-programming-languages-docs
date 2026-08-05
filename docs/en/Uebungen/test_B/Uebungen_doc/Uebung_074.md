@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_074`. Here, the speed of the rear PTO (Power Take-Off) is read in.
 ## 🎧 Podcast
 ![Uebung_074_network](./Uebung_074_network.svg)
+
 * [Reverse Polarity Protection in Electronics: Why the Ideal Diode (LM74700) Beats MOSFETs and Schottky Diodes in Efficiency and Cost ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Verpolungsschutz-in-der-Elektronik-Warum-die-ideale-Diode-LM74700-MOSFETs-und-Schottky-Dioden-in-Effizienz-und-Kosten-schlgt-e3a2487)
 
 ----

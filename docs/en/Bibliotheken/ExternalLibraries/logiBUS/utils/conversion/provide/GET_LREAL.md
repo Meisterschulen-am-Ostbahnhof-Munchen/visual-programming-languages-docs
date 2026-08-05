@@ -1,5 +1,6 @@
 # GET_LREAL
 ![GET_LREAL](./GET_LREAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `GET_LREAL` provides read access to a `LREAL` variable (64-bit floating-point number) which is passed as an InOut parameter. The read value is buffered internally and made available at the output `OUT`. Execution is triggered by an event.

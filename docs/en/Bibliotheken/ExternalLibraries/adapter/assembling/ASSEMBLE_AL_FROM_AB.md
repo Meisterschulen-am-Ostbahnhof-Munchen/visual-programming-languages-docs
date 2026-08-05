@@ -1,5 +1,6 @@
 # ASSEMBLE_AL_FROM_AB
 ![ASSEMBLE_AL_FROM_AB](./ASSEMBLE_AL_FROM_AB.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASSEMBLE_AL_FROM_AB` combines eight individual byte pieces of information from adapters of type `AB` (unidirectional) into a single, contiguous 64-bit data word (LWORD). The result is output via an output adapter of type `AL`. This function block serves as a central repository for byte-oriented data and enables modular and clear data structuring.

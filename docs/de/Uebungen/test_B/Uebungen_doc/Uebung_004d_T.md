@@ -66,6 +66,7 @@ Die Übung besteht aus vier Funktionsbausteinen, die im SubApp-Netzwerk miteinan
    - Der aktuelle Zustand von `Q` erscheint am Ausgang `Output_Q1`.
 
 **Lernziele:**  
+
 - Funktionsweise eines Toggle-Flipflops (T-FF) verstehen.  
 - Ereignisgesteuerte Datenflussmodellierung in 4diac (IEC 61499).  
 - Einfache Verbindung von Hardware-Eingängen/Ausgängen mit logischen Bausteinen.
@@ -74,6 +75,7 @@ Die Übung besteht aus vier Funktionsbausteinen, die im SubApp-Netzwerk miteinan
 **Vorkenntnisse:** Grundlagen der Digitaltechnik, Einführung in die 4diac-IDE.
 
 **Start der Übung:**  
+
 1. Laden Sie das Projekt in die 4diac-IDE (die SubApp `Uebung_004d_T` ist in der Klasse `Uebungen` enthalten).  
 2. Weisen Sie die Eingänge `Input_I1` und `Input_I2` sowie den Ausgang `Output_Q1` den entsprechenden logiBUS-Klemmen Ihrer Hardware zu.  
 3. Starten Sie die Anwendung und beobachten Sie das Verhalten durch Anlegen von Signalen an die Eingänge.

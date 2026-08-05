@@ -51,6 +51,7 @@ Der Ablauf innerhalb dieses Bausteins ist rein signalgetrieben und dient der Har
     - Der `QXA`-Baustein nutzt diese Informationen, um das via Adapter empfangene Signal auf die Hardware zu schreiben.
 
 **Schnittstellen:**
+
 - **Input**: Identifiziert den digitalen Eingang.
 - **u8SAMember**: Identifiziert die Knotenadresse.
 - **Output**: Identifiziert den digitalen Ausgang.

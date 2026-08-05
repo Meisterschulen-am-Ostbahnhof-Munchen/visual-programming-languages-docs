@@ -1,5 +1,6 @@
 # AR_SPLIT_8
 ![AR_SPLIT_8](./AR_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AR_SPLIT_8 function block is used to split a single unidirectional AR adapter signal into eight identical AR outputs. It is implemented as a generic function block and enables simple signal distribution without additional logic.

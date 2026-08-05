@@ -1,5 +1,6 @@
 # UDINT_AUI_EQ
 ![UDINT_AUI_EQ](./UDINT_AUI_EQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **UDINT_AUI_EQ** is used to compare two values for equality. It is designed as a generic comparison block that accepts two input values via a socket adapter (IN2) and a direct data input (IN1) and outputs the result via a plug adapter (OUT). The name suggests an original use with integer data types (UDINT), but the actual implementation works with the generic type `ANY_ELEMENTARY`.

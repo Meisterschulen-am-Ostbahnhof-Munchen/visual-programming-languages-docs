@@ -1,8 +1,10 @@
 # DataPanel_MI_IW_4_20mA
 ![DataPanel_MI_IW_4_20mA](./DataPanel_MI_IW_4_20mA.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **DataPanel_MI_IW_4_20mA** is a service interface function block (SIFB) for acquiring analog input data in the 4-20mA range. It serves as an interface between the automation system and a hardware-level analog input module. The block handles the initialization of communication (e.g., bus connection), the cyclic request for measured values, and the provision of the measured raw data via output events.
+
 * * * * * * * * * *
 ## Interface Structure
 

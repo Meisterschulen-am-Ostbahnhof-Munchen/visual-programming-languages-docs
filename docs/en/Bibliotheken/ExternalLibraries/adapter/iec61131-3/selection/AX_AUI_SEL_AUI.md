@@ -1,5 +1,6 @@
 # AX_AUI_SEL_AUI
 ![AX_AUI_SEL_AUI](./AX_AUI_SEL_AUI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_AUI_SEL_AUI** implements binary selection. It selects between two 16-bit input values (**IN0** and **IN1**) and outputs the selected value via a standardized output adapter. The selection is controlled by a Boolean signal provided via an input adapter. The block combines the functionality of the IEC 61131-3 block `F_SEL` with modular adapter interfaces and is particularly suitable for control applications with reusable, encapsulated connections.

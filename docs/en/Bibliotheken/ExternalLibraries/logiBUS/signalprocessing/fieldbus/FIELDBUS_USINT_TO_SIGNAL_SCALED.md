@@ -1,5 +1,6 @@
 # FIELDBUS_USINT_TO_SIGNAL_SCALED
 ![FIELDBUS_USINT_TO_SIGNAL_SCALED](./FIELDBUS_USINT_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **FIELDBUS_USINT_TO_SIGNAL_SCALED** converts an incoming USINT signal into a scaled REAL value, taking a validity check into account. It is typically used in fieldbus signal processing to apply a scaling factor and an offset to raw fieldbus values (e.g., sensor data) and simultaneously evaluate the validity of the input signal. The block is structured according to the IEC 61499-1 standard.

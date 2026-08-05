@@ -65,6 +65,7 @@ Damit wird eine einfache Pipeline realisiert:
 Die Funktionsweise ist ereignisgesteuert (im Hintergrund durch die Adapter). Die Parameter `QI` beider Bausteine sind dauerhaft auf `TRUE` gesetzt, sodass der Datenfluss kontinuierlich erfolgt.
 
 **Lernziele:**
+
 - Verständnis des AR-Adapter-Interfaces für die Kommunikation zwischen Bausteinen
 - Einrichtung eines persistenten Speichers mit dem `INI_AR`-Baustein
 - Zusammenspiel von physikalischem Eingang, Speicher und Ausgabe

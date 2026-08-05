@@ -1,5 +1,6 @@
 # AULI_D_FF
 ![AULI_D_FF](./AULI_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AULI_D_FF function block implements a clock-edge-triggered D flip-flop (data latch). Upon receiving an event, it accepts the incoming data value and holds it until the next clock cycle. Input and output are handled via standardized unidirectional adapters, allowing for easy integration of the block into modular control architectures.

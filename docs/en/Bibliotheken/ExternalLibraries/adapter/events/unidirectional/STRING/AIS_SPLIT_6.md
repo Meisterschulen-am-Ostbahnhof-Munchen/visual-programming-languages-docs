@@ -1,5 +1,6 @@
 # AIS_SPLIT_6
 ![AIS_SPLIT_6](./AIS_SPLIT_6.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_SPLIT_6** is used to distribute an incoming AIS (Automation Interface Signal) signal to six separate AIS outputs. It acts as a generic splitter, forwarding the incoming signal to all connected outputs without delay or manipulation.

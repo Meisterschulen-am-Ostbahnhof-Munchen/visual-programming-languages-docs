@@ -1,5 +1,6 @@
 # ILOCK_SWITCH
 ![ILOCK_SWITCH](./ILOCK_SWITCH.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ILOCK_SWITCH** serves as a priority-controlled switch with an interlock function. It evaluates two event signals (**EI_UP** and **EI_DOWN**) in combination with associated Boolean data values and sets the outputs **DO_UP** and **DO_DOWN** accordingly. The last active input is always prioritized – simultaneous activation of both outputs is impossible. The logic prevents oscillations and ensures a defined state even with invalid or conflicting input assignments.

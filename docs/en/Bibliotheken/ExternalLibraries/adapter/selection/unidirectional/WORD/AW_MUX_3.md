@@ -1,5 +1,6 @@
 # AW_MUX_3
 ![AW_MUX_3](./AW_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AW_MUX_3` is a generic multiplexer (MUX) with three inputs. It selects one of the three adapter inputs based on an index parameter and forwards its value to the output. The block is used for dynamic switching between different data sources in industrial control applications.

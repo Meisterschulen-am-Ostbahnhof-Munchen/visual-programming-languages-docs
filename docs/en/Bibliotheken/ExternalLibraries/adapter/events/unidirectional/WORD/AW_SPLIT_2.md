@@ -1,6 +1,7 @@
 # AW_SPLIT_2
 !Image of the function block (not available)
 ![AW_SPLIT_2](./AW_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_SPLIT_2** splits an incoming unidirectional **adapter (AW)** into two identical outgoing adapters. It is implemented as a generic block and is suitable for applications where a signal path or adapter connection needs to be split between two subsequent components.

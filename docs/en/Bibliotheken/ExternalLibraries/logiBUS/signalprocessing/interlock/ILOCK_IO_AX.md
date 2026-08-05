@@ -1,5 +1,6 @@
 # ILOCK_IO_AX
 ![ILOCK_IO_AX](./ILOCK_IO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ILOCK_IO_AX** implements a chainable momentary latch with interlock functionality. It ensures that only one element in a chain is active at any given time – as soon as another function block in the chain becomes active, it is reset. The function block is specifically designed for use with AX/AX2 adapter interfaces.

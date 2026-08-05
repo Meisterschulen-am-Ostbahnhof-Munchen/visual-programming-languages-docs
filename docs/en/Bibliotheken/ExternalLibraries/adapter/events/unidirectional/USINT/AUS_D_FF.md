@@ -1,5 +1,6 @@
 # AUS_D_FF
 ![AUS_D_FF](./AUS_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUS_D_FF** implements a data latch (D flip-flop) for the data type `AUS`. Upon receiving an event, it stores the incoming data value and outputs this stored value via an adapter output. Communication occurs exclusively via unidirectional adapters.

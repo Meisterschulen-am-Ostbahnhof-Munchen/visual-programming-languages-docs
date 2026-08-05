@@ -2,6 +2,7 @@
 ----
 ![E_D_FF Diagram](https://user-images.githubusercontent.com/113907528/204898130-f9f31fd9-da42-4b29-a664-add0d91e8890.png)
 ![E_D_FF_ecc](./E_D_FF_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 IEC 61499 is an international standard for modeling distributed industrial control systems. The **E_D_FF** (Data Flip-Flop) is a fundamental memory element in this standard that stores digital signals synchronously with a clock signal. This functional block plays a central role in state machines and memory applications in industrial automation solutions.

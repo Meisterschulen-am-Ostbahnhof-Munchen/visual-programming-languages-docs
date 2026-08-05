@@ -56,6 +56,7 @@ Der Programmablauf ist ereignisgesteuert:
 5. **Zählerstand**: Der aktuelle Zählerwert (CV) wird über `ADI_FB_CTU.CV` an `ADI_TO_ALR.ADI_IN` übergeben. Der Baustein ADI_TO_ALR wandelt das Format in ALR um und leitet es an `Q_NumericValue_1.lrPhys` weiter. Dies ermöglicht die Ausgabe des Zählerstandes auf dem Terminal (PHYS).
 
 **Hinweise aus der Implementierung**:  
+
 - Negative Zählerwerte sind möglich.  
 - Bei hohen Ereignisraten kann ein AX_D_FF (Event-Filter) zwischengeschaltet werden, um die Eventlast zu reduzieren.
 

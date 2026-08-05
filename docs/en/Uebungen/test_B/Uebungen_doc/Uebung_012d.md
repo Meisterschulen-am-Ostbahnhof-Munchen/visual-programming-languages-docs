@@ -1,5 +1,6 @@
 # Exercise_012d: Numeric Value Input PHYS and Storage NVS
 ![Uebung_012d_network](./Uebung_012d_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the acquisition of a numeric value (physical value) via an input block, the storage of the value in non-volatile memory (NVS), and the retrieval and provision of the stored value via an output block. The goal is to understand the process of data acquisition, persistent storage, and return.

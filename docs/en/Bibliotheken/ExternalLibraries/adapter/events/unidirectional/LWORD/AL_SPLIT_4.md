@@ -1,5 +1,6 @@
 # AL_SPLIT_4
 ![AL_SPLIT_4](./AL_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AL_SPLIT_4** is a generic function block that splits a single adapter input (socket) of type `adapter::types::unidirectional::AL` into four separate outputs (plugs) of the same type. It serves to distribute an incoming adapter data stream to multiple parallel consumers without modifying the data itself.

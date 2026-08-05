@@ -1,5 +1,6 @@
 # AD_MUX_2
 ![AD_MUX_2](./AD_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AD_MUX_2** implements a generic multiplexer for adapter interfaces of type `adapter::types::unidirectional::AD`. It selects between two input adapters (IN1, IN2) based on an integer index K and forwards the selected adapter signal to the output adapter OUT. The selection is initiated by an event pulse at the REQ input; after successful switching, the block acknowledges this with an event at the CNF output.

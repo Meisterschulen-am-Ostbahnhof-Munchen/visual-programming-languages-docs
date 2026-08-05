@@ -1,5 +1,6 @@
 # Exercise_034a1_Q4_AX: Numeric Value Input to PWM Output (Adapter Version)
 ![Uebung_034a1_Q4_AX_network](./Uebung_034a1_Q4_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates controlling a PWM output (logiBUS Output Q4) using a numeric input value. Communication between the input block and the output block is via adapter connections ("Adapter Version"). An integrated comment indicates that the value transfer event is only triggered when the entered numeric value is confirmed with "OK"—not simply by pressing a key.

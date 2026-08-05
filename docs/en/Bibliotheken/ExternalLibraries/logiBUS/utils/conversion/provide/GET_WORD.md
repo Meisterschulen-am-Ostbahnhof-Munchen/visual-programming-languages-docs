@@ -1,5 +1,6 @@
 # GET_WORD
 ![GET_WORD](./GET_WORD.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **GET_WORD** function block is used to read a WORD value from an InOut variable and make it available as a buffered output. It is typically used to capture a current value from a hardware peripheral or a shared memory location and make it available for further processing in the control program.

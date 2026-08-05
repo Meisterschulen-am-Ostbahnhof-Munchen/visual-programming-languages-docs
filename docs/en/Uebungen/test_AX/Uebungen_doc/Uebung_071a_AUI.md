@@ -1,6 +1,7 @@
 # Exercise_071a_AUI: Output WBSD to UT, Switch Q1 when Speed > 0 (Adapter Version)
 (Output WBSD to UT, Switch Q1 when Speed > 0 – Adapter Version)
 ![Uebung_071a_AUI_network](./Uebung_071a_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of adapter interfaces (AUI/AUDI) in 4diac to read a wheel-based machine speed (WBSD), display it on a Universal Terminal (UT), and switch a digital output (Q1) when the speed is greater than zero. All the logic is implemented as a sub-application using adapter connections.

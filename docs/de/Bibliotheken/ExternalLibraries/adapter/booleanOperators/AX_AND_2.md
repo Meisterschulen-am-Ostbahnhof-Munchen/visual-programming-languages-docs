@@ -23,10 +23,12 @@ Keine direkten Daten-Ausgänge vorhanden
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - **IN1** - UND-Eingang 1 (Adapter-Typ: adapter::types::unidirectional::AX)
 - **IN2** - UND-Eingang 2 (Adapter-Typ: adapter::types::unidirectional::AX)
 
 **Ausgangsadapter:**
+
 - **OUT** - UND-Ergebnis (Adapter-Typ: adapter::types::unidirectional::AX)
 
 ## Funktionsweise

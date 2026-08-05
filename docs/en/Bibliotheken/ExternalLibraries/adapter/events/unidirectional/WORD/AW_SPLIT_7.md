@@ -1,5 +1,6 @@
 # AW_SPLIT_7
 ![AW_SPLIT_7](./AW_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AW_SPLIT_7` is used to distribute a single incoming AW adapter (unidirectional) to seven identical AW adapter outputs. It is designed as a generic function block and enables the simple distribution of adapter connections without data processing.

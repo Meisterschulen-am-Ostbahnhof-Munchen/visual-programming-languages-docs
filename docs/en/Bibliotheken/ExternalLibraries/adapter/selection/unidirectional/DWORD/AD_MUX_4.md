@@ -1,5 +1,6 @@
 # AD_MUX_4
 ![AD_MUX_4](./AD_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AD_MUX_4** is a generic, event-driven adapter multiplexer for unidirectional analog/data signals. Using the index *K*, a channel is selected from four input adapters (IN1 … IN4) and routed to the output adapter (OUT). This component is suitable for flexible signal routing tasks in automation and control systems.

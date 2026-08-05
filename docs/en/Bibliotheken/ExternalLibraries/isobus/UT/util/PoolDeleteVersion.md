@@ -1,5 +1,6 @@
 # PoolDeleteVersion
 ![PoolDeleteVersion](./PoolDeleteVersion.svg)
+
 * * * * * * * * * *
 ## Introduction
 The service interface block `PoolDeleteVersion` deletes a stored object pool version from the non-volatile memory of a Virtual Terminal (VT). It encapsulates the function `VTC_PoolDeleteVersion()` from the ISOBUS driver. The block calls `IsoVtcCmd_DeleteVersion()` to remove the specified pool version.

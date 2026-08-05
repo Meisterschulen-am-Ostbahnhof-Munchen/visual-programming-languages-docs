@@ -1,5 +1,6 @@
 # Exercise_011g1: Numeric Value Input -- Multiple IOObservers
 ![Uebung_011g1_network](./Uebung_011g1_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the parallel use of multiple `IOObserver` for a common numeric input value. Three instances of the function block `NumericValue_ID` monitor the same object identifier (`InputNumber_I1`). The returned `DWORD` values are each converted to the type `UDINT` using a conversion block. The exercise shows how multiple observers can be connected to a common data source without the values affecting each other.

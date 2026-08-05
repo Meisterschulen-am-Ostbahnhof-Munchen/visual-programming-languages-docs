@@ -49,6 +49,7 @@ Die SubApp besitzt keine eigenen externen Schnittstellen (keine Ein-/Ausgänge a
 Da alle Eingangswerte `TRUE` sind, liegt am Ausgang des `AX_X_TO_BOOL`-Bausteins stets **TRUE** an. In einer erweiterten Anwendung könnten die konstanten Werte durch externe Signale ersetzt werden, indem die SubApp mit entsprechenden Adapter-Schnittstellen ergänzt wird.
 
 **Lernziele**:
+
 - Verständnis des Zusammenspiels von Adaptern in 4diac.
 - Unterschied zwischen Datenflüssen und Adapterverbindungen.
 - Grundlagen der Booleschen Logik mit `AX_AND_2`.

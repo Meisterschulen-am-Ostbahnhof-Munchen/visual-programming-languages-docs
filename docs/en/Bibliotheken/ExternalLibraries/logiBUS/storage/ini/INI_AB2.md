@@ -1,5 +1,6 @@
 # INI_AB2
 ![INI_AB2](./INI_AB2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `INI_AB2` is used to read and write REAL values to or from a `settings.ini` file. Access is via a combination of section name and key name. Communication with external systems is via a bidirectional **AB2 adapter**, which allows values from the INI file to be passed to other function blocks or values from other function blocks to be received and stored in the file. The function block was developed according to the IEC 61499-2 standard.

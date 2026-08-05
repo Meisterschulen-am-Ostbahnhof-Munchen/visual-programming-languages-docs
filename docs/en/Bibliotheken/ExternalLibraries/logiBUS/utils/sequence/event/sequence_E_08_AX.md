@@ -1,5 +1,6 @@
 # sequence_E_08_AX
 ![sequence_E_08_AX_ecc](./sequence_E_08_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 sequence_E_08_AX` is a variant of `sequence_E_08` that additionally uses adapters (`AX`) for the outputs. It controls a purely event-driven sequence with 8 output states.

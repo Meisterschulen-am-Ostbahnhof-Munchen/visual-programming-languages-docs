@@ -40,6 +40,7 @@ Dies bietet maximale Flexibilität für die Bedienung.
 ## Anwendungsbeispiel
 
 **Smart Home Lichtsteuerung**:
+
 *   Taster an der Wand: Toggle (`I3`).
 *   Zentral "Alles Aus" beim Verlassen des Hauses: Reset (`I2`).
 *   "Panik-Licht" (Alarmanlage): Set (`I1`).

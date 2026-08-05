@@ -1,5 +1,6 @@
 # Exercise_034b_AUDI: LONG_PRESS_HOLD Input to PWM Output (Adapter Version) with Terminal Output
 ![Uebung_034b_AUDI_network](./Uebung_034b_AUDI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of **LONG_PRESS_HOLD** inputs to control a PWM output.

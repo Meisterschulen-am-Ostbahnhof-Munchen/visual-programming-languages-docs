@@ -1,5 +1,6 @@
 # AQ_FIELDBUS_QUARTER_TO_SIGNAL
 ![AQ_FIELDBUS_QUARTER_TO_SIGNAL](./AQ_FIELDBUS_QUARTER_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AQ_FIELDBUS_QUARTER_TO_SIGNAL** is used to mirror a signal (of type `AQ`) received via a fieldbus adapter to an output adapter – but only if the signal is marked as valid. It combines a fieldbus-specific processing block with an edge-triggered D flip-flop to buffer the validity status and provide it as a separate output signal.

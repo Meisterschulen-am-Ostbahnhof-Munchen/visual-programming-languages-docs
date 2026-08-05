@@ -1,5 +1,6 @@
 # AS_SPLIT_5
 ![AS_SPLIT_5](./AS_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AS_SPLIT_5 function block is a generic function block that distributes one incoming adapter of type "AS" (unidirectional) to five separate output adapters of the same type. It is used for signal multiplication in control and automation systems, based on the IEC 61499-2 standard.

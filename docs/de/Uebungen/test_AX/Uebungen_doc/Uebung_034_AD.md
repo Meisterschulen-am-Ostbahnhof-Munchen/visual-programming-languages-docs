@@ -60,6 +60,7 @@ Parallel dazu werden die Daten über Adapterverbindungen übertragen:
 Somit erfolgt die gesamte Datenübertragung adaptierbar und bidirektional über Adapterschnittstellen, ohne separate Datenleitungen. Die Bitverschiebung verstärkt den analogen Eingangswert um den Faktor 2 (entspricht einer Verdopplung), bevor er als PWM-Tastverhältnis ausgegeben wird.
 
 **Lernziele**:
+
 - Verständnis der Adapterkommunikation in 4diac-IDE
 - Einbindung von Analog-Eingängen (logiBUS) und PWM-Ausgängen
 - Anwendung bitweiser Operationen (Shift Left) in der Signalverarbeitung

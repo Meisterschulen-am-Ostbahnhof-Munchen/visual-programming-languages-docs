@@ -13,6 +13,7 @@ Der AX_BLINK ist ein Funktionsblock, der ein blinkendes Signal über einen AX-Ad
 
 ### **Adapter**
 **Plugs (Ausgänge):**
+
 - **OUT** (adapter::types::unidirectional::AX)
 
 ## Funktionsweise

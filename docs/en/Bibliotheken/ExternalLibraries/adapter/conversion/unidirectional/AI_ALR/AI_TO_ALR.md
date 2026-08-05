@@ -1,5 +1,6 @@
 # AI_TO_ALR
 ![AI_TO_ALR](./AI_TO_ALR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_TO_ALR** is a composite function block that converts an **AI (INT adapter)** to an **ALR (LREAL adapter)**. It serves as a pure conversion interface by directly routing the event and data channels of the input adapter to the output adapter. The actual type conversion from Integer (INT) to Long Real (LREAL) is handled by the underlying adapter definitions.

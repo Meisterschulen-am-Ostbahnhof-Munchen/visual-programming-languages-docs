@@ -15,10 +15,12 @@ Der AX_SELECT ist ein Funktionsblock, der basierend auf einem booleschen Eingang
 
 ### **Adapter**
 **Sockets (Eingänge):**
+
 - **IN0** (adapter::types::unidirectional::AX)
 - **IN1** (adapter::types::unidirectional::AX)
 
 **Plugs (Ausgänge):**
+
 - **OUT** (adapter::types::unidirectional::AX)
 
 ## Funktionsweise

@@ -1,5 +1,6 @@
 # AI_SPLIT_2
 ![AI_SPLIT_2](./AI_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AI_SPLIT_2 function block is used to distribute an analog input signal (AI) to two identical analog outputs. It is designed as a generic function block and allows for flexible further processing of the signal in two independent paths.

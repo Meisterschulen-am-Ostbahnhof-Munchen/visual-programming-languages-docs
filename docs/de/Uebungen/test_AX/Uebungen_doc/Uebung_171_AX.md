@@ -68,6 +68,7 @@ Der Ablauf der Übung gestaltet sich wie folgt:
     *   Dies bewirkt, dass der physische Ausgang `Q1` aktiviert wird, wenn `I1` gedrückt wurde, und deaktiviert wird, wenn `I2` gedrückt wurde.
 
 **Lernziele:**
+
 *   Verständnis des Adapter-Konzepts in IEC 61499 / 4diac.
 *   Umwandlung von Event-basierter Logik in Adapter-basierte Logik.
 *   Realisierung einer Speicherfunktion (SR) mittels Adapter-Bausteinen.

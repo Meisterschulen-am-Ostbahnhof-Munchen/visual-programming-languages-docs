@@ -46,6 +46,7 @@ Der Ablauf innerhalb dieses Sub-Bausteins ist streng linear und ereignisgesteuer
     *   Der Parameter `u16ObjId` ist fest auf `OutputNumber_N1` eingestellt, was bedeutet, dass genau dieses Feld auf der Benutzeroberfläche aktualisiert wird.
 
 **Verbindungsübersicht:**
+
 *   **Event**: `CNF` (Input) &rarr; `F_SINT_TO_UINT.REQ` &rarr; `F_SINT_TO_UINT.CNF` &rarr; `Q_NumericValue.REQ`.
 *   **Daten**: `STATE_NR` (Input) &rarr; `F_SINT_TO_UINT.IN` &rarr; `F_SINT_TO_UINT.OUT` &rarr; `Q_NumericValue.u32NewValue`.
 

@@ -1,5 +1,6 @@
 # ATM_DEMUX_4
 ![ATM_DEMUX_4](./ATM_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ATM_DEMUX_4** is a generic ATM demultiplexer. It distributes a data stream arriving via an incoming adapter (socket) to one of four outgoing adapters (plugs). The output channel is selected via an index `K`, which is evaluated upon the arrival of an event.

@@ -1,5 +1,6 @@
 # AL_DEMUX_4
 ![AL_DEMUX_4](./AL_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AL_DEMUX_4** implements a generic demultiplexer for the adapter type `AL` (analog/logic). It distributes an incoming adapter signal to one of four outputs, with the selection controlled by the index value `K`. The block is suitable for applications where a single signal needs to be routed to different outputs.

@@ -1,5 +1,6 @@
 # AI_SPLIT_8
 ![AI_SPLIT_8](./AI_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_SPLIT_8** is used to distribute an analog input signal (type *AI*) to eight identical analog output signals. The block is implemented as a generic FB (GenericClassName: `GEN_AI_SPLIT`) and is used in the 4diac IDE to make a single analog signal usable multiple times.

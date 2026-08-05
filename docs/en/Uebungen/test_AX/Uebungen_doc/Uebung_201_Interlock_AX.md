@@ -1,5 +1,6 @@
 # Exercise_201_Interlock_AX: Interlock Advanced Exercise (AX)
 ![Uebung_201_Interlock_AX_network](./Uebung_201_Interlock_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise extends the basic interlock circuit to a more complex application (Advanced eXercise). The goal is to connect four digital inputs (I1–I4) to four digital outputs (Q1–Q4) via a chained interlock logic. The special feature lies in the serial connection of the interlock components: The enable output of one component is connected to the enable input of the next, creating a dependency chain. This allows for time-based or logical blocking between successive outputs and is suitable for applications such as sequential machine controls or safety circuits.

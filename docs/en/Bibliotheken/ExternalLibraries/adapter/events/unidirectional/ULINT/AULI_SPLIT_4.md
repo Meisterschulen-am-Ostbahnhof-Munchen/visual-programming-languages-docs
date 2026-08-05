@@ -1,5 +1,6 @@
 # AULI_SPLIT_4
 ![AULI_SPLIT_4](./AULI_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_SPLIT_4** is used to split an incoming **AULI** adapter into four separate, identical outputs. It is designed as a generic function block (Generic FB) and is distributed under the Eclipse Public License 2.0. It was developed for use in automation technology, particularly within the HR Agrartechnik GmbH environment.

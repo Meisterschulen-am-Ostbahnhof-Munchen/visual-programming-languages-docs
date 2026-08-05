@@ -20,6 +20,7 @@ No direct data outputs available
 
 ### **Adapters**
 **Input Adapters:**
+
 - **IN**: AX adapter (unidirectional) - Receives the incoming AX signal
 
 **Output Adapters:**

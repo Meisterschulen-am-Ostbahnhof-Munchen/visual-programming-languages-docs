@@ -1,5 +1,6 @@
 # Exercise_028a: Analog Input
 ![Uebung_028a_network](./Uebung_028a_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the processing of an analog input signal with calibration. Digital pushbuttons are used to calibrate the offset and scaling, and the determined calibration parameters are stored non-volatilely. The exercise shows how to work with analog input blocks, type conversion, calibration functions, and memory blocks in the 4diac IDE.

@@ -31,11 +31,13 @@ Der Baustein selbst besitzt keine sichtbaren Ein‑/Ausgangsschnittstellen – d
 Der SubApp `Uebung_012a_AX` besteht aus einem einzelnen Netzwerk, das den FB `Uebung_012a_sub_AUDI` enthält. Es sind keine weiteren Verbindungen oder Ereignisverkettungen sichtbar, da alle Interaktionen über den Adapter und die parametrierten Konstanten gesteuert werden.
 
 **Ablauf**:
+
 1. Die übergeordnete Applikation aktiviert den SubApp (z. B. durch ein Ereignis).
 2. Der FB `Uebung_012a_sub_AUDI` liest den aktuellen Wert vom Adapter ein.
 3. Der eingelesene Wert wird unter dem Schlüssel `KEY_I1_STORE` im NVS gespeichert.
 
 **Lernziele**:
+
 - Verständnis der Adapter‑Schnittstelle für Eingabewerte.
 - Kennenlernen der persistenten Speicherung mit NVS.
 - Umgang mit konstanten Schlüsseln und Objekt‑IDs aus getrennten Const‑Quellen.
@@ -44,6 +46,7 @@ Der SubApp `Uebung_012a_AX` besteht aus einem einzelnen Netzwerk, das den FB `Ue
 **Vorkenntnisse**: Grundlagen der 4diac‑IDE, Umgang mit SubApps und Konstanten, Adapter‑Konzept.
 
 **Hinweise zur Einbindung**:
+
 - Die Konstanten `KEY_I1_STORE` und `InputNumber_I1` müssen in den entsprechenden `const`‑Ressourcen des Projekts definiert sein.
 - Der Adapter muss von der aufrufenden Umgebung bereitgestellt werden (z. B. über eine HMI‑Komponente).
 

@@ -1,5 +1,6 @@
 # Exercise_071_AUI: Output WBSD to UT, Switch Q1 when Speed > 0 (Adapter Version)
 ![Uebung_071_AUI_network](./Uebung_071_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of adapters and a custom sub-app to output the **Wheel Based Machine Speed (WBSD)** from an ISOBUS IA WBSD block via the **Universal Task (UT)** and simultaneously switch a digital output Q1 as soon as the speed is greater than 0. All communication takes place via adapter interfaces, which enables a modular and type-safe connection of the function blocks.

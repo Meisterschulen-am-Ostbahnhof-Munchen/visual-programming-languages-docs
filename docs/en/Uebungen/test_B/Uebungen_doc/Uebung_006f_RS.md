@@ -1,5 +1,6 @@
 # Exercise_006f_RS: Exercise for FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop)
 ![Uebung_006f_RS_network](./Uebung_006f_RS_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of a **reset-dominant toggle flip-flop** (FB_RS_T_FF) in the 4diac IDE. The goal is to understand the behavior of a prioritized reset input in combination with a clock-controlled toggle mechanism. The inputs are connected via logiBUS hardware components, and the output is provided via a digital output.

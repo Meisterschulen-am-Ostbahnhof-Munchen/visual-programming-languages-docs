@@ -102,6 +102,7 @@ Der Ablauf der Übung wird durch die Ereignis‑ und Datenverbindungen im FBNetz
    - Nach der Konvertierung feuert `F_INT_TO_UDINT.CNF` und aktualisiert die numerische Anzeige auf dem Terminal.
 
 **Lernziele dieser Übung**:
+
 - Einsatz des IEC‑Rückwärtszählers `FB_CTD` (Abwärtszähler) in 4diac.
 - Kopplung von Hardwareeingängen und -ausgängen über logiBUS‑Bausteine.
 - Ausgabe eines Zählerwerts auf einem Terminal mithilfe eines isobus‑Bausteins.

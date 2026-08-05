@@ -52,6 +52,7 @@ Die Verschaltung erfolgt in einer einfachen Ereignis- und Datenkette:
    - `F_DWORD_TO_UDINT.OUT` → `Q_NumericValue.u32NewValue`
 
 **Ablauf**:
+
 - Sobald das ISOBUS-Objekt `InputNumber_I3` einen neuen Wert vom Bus erhält (z. B. durch ein externes Steuergerät), wird das Ereignis `IND` am FB `InputNumber_I3` ausgelöst.
 - Dieses Ereignis triggert die Konvertierung im FB `F_DWORD_TO_UDINT` (über dessen `REQ`-Eingang).
 - Nach Abschluss der Konvertierung gibt `F_DWORD_TO_UDINT` das Ereignis `CNF` aus, welches den FB `Q_NumericValue` anstößt, den konvertierten Wert auf das Ausgangsobjekt `OutputNumber_N3` zu schreiben.

@@ -1,5 +1,6 @@
 # FIELDBUS_DWORD_TO_SIGNAL
 ![FIELDBUS_DWORD_TO_SIGNAL](./FIELDBUS_DWORD_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `FIELDBUS_DWORD_TO_SIGNAL` mirrors and validates a DWORD input signal. If the input value is valid, it is passed unchanged to the output, and the `VALID` signal is set. Otherwise, the block returns a zero value, indicating invalidity.

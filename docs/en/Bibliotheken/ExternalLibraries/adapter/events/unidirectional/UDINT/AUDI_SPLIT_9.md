@@ -1,5 +1,6 @@
 # AUDI_SPLIT_9
 ![AUDI_SPLIT_9](./AUDI_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUDI_SPLIT_9` is used to distribute an incoming AUDI signal via a socket to nine identical AUDI plugs. It implements a 1-to-9 split functionality, where all outputs always carry the same value as the input. The block is defined as a generic FB (GenericClassName `GEN_AUDI_SPLIT`) and enables the easy duplication of AUDI data streams within a 4diac IDE application.

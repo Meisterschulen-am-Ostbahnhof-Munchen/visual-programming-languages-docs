@@ -1,5 +1,6 @@
 # AW_DEMUX_2
 ![AW_DEMUX_2](./AW_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AW_DEMUX_2 function block implements a generic AW demultiplexer. It forwards an incoming AW value (via socket `IN`) to either one of the two output adapters (`OUT1` or `OUT2`). The selection of the target output is event-driven via the data input `K`.

@@ -61,6 +61,7 @@ Somit lässt sich der Baustein als **reiner kombinatorischer Splitter mit nachge
 ## Vergleich mit ähnlichen Bausteinen
 - **SPLIT_BYTE_INTO_BOOLS**: Zerlegt ein Byte ebenfalls in boolesche Werte, gibt diese aber direkt als Datenausgänge weiter und erzeugt ein einziges Ereignis.  
   **SPLIT_AB_INTO_AX** erweitert dies um eine taktgesteuerte Zwischenspeicherung und die Ausgabe über AX‑Adapter, was eine saubere Ereignis‑Synchronisation mit nachfolgenden Bausteinen erlaubt.
+
 - **Einfache Data‑Array‑Splitter**: Manche Bibliotheken bieten Bausteine, die Arrays in Einzelelemente aufteilen, jedoch ohne die zusätzliche Speicherung und Adapter‑Schnittstelle.
 
 ## Fazit

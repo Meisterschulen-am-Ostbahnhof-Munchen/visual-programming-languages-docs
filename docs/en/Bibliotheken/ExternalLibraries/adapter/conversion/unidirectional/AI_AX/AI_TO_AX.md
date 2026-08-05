@@ -1,5 +1,6 @@
 # AI_TO_AX
 ![AI_TO_AX](./AI_TO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AI_TO_AX` is a composite function block (type adapter) that converts a unidirectional interface of an INT adapter (`AI`) into a corresponding BOOL interface of an adapter (`AX`). It is used to convert analog integer signals (e.g., from sensors) into binary Boolean values, which can be used, for example, for switching signals or alarm messages.

@@ -1,5 +1,6 @@
 # colours
 ![colours](./colours.svg)
+
 * * * * * * * * * *
 ## Introduction
 The global constant package `colours` defines a set of named constants for color values. These constants represent a set of 16 predefined colors, encoded by numeric values of type `USINT` (Unsigned Short Integer). Using such constants improves the readability and maintainability of IEC 61499 applications because meaningful identifiers like `COLOR_RED` or `COLOR_BLUE` can be used instead of magic numbers.

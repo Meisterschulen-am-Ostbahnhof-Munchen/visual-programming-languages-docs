@@ -1,5 +1,6 @@
 # AUI_EQ
 ![AUI_EQ](./AUI_EQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AUI_EQ function block performs an equality comparison between two analog values. It is classified as a standard comparison function according to IEC 61131-3 and uses adapters for type-safe communication with the environment. The result is output as a Boolean value, which is `true` if and only if both input values are equal.

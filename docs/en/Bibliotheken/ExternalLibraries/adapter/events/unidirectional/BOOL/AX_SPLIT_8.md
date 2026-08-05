@@ -21,6 +21,7 @@ The AX_SPLIT_8 function block is a generic function block that splits a single A
 
 ### **Adapters**
 **Input Adapter:**
+
 - **IN** (Socket): AX adapter input type `adapter::types::unidirectional::AX`
 
 **Output Adapter:**

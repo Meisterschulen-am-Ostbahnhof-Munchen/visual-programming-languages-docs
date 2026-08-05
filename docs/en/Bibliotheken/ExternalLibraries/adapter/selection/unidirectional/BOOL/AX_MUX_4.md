@@ -1,5 +1,6 @@
 # AX_MUX_4
 ![AX_MUX_4](./AX_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_MUX_4** is a generic multiplexer for adapters of type `adapter::types::unidirectional::AX`. It allows one of four adapter inputs (IN1 … IN4) to be switched to an output (OUT). The active input is selected via the index **K**, which is evaluated upon an event at the **REQ** input.

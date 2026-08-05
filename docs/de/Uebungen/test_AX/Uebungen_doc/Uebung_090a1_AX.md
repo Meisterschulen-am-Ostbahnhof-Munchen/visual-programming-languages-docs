@@ -42,6 +42,7 @@ Der Ausgang `Q1` folgt also entweder `I1` oder `I2`, abhängig von der Stellung 
 ## Anwendungsbeispiel
 
 **Hand/Automatik-Umschaltung**:
+
 *   `I1`: Signal aus der Automatik-Steuerung.
 *   `I2`: Signal vom Hand-Taster.
 *   `I4`: Schlüsselschalter "Hand/Auto".

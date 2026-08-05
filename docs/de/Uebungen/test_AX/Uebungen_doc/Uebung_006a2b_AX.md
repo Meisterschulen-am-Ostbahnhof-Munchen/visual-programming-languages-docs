@@ -71,11 +71,13 @@ Die Schaltung arbeitet nach folgendem Prinzip:
    Die internen Zustände von `Q1` und `Q2` werden über die Digitalausgänge `Output_Q1` und `Output_Q2` nach außen geführt.
 
 **Lernziele**:  
+
 - Verständnis des Verhaltens von T‑Flipflops und RS‑Flipflops.  
 - Ereignisbasierte Programmierung und Weiterleitung mit `AX_SPLIT_2`.  
 - Einfaches Zusammenspiel von digitalen Ein‑ und Ausgängen.
 
 **Voraussetzungen**:  
+
 - Grundlegende Kenntnisse der 4diac‑IDE und der Ereignissteuerung nach IEC 61499.
 
 **Ausführung**:  

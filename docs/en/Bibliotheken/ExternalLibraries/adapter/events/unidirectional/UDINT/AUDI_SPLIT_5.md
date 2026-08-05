@@ -1,5 +1,6 @@
 # AUDI_SPLIT_5
 ![AUDI_SPLIT_5](./AUDI_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_SPLIT_5** is used to distribute a single incoming AUDI signal to five identical AUDI outputs. It is designed as a generic adapter module and allows for flexible further processing of the signal along multiple paths.

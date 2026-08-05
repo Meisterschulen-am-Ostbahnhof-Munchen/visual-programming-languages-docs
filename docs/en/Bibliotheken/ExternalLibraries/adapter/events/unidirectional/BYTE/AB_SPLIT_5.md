@@ -1,5 +1,6 @@
 # AB_SPLIT_5
 ![AB_SPLIT_5](./AB_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AB_SPLIT_5` is used to distribute one unidirectional AB adapter input (socket) to five identical AB adapter outputs (plugs). It is a generic function block designed for signal distribution in automation systems.

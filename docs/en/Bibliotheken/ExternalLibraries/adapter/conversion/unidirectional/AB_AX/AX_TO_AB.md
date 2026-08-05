@@ -1,5 +1,6 @@
 # AX_TO_AB
 ![AX_TO_AB](./AX_TO_AB.svg)
+
 * * * * * * * * * *
 ## Introduction
 The composite function block `AX_TO_AB` converts a BOOL adapter signal of type `AX` into a BYTE adapter signal of type `AB`. It encapsulates the type conversion and event passing in a reusable unit.

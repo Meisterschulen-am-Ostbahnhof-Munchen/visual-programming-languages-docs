@@ -1,5 +1,6 @@
 # AD_TO_AX
 ![AD_TO_AX](./AD_TO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AD_TO_AX` serves as a composite function block for converting an AD adapter (data word – DWORD) into an AX adapter (Boolean value – BOOL). It encapsulates a comparison mechanism that checks whether the incoming DWORD value is non-zero and forwards the result as a BOOL to the output adapter. This block simplifies adapter communication in control systems by converting signal types between different components.

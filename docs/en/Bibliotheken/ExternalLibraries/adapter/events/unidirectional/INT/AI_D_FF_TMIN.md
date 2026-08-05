@@ -1,5 +1,6 @@
 # AI_D_FF_TMIN
 ![AI_D_FF_TMIN](./AI_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_D_FF_TMIN** implements a D flip-flop (data latch) with a minimum inter-disposal time between successive output events. It serves as an adapter-encapsulated component that receives an asynchronously incoming data value via a socket, temporarily stores it during an active event, and passes it on via a plug. Output is only released again when the configured minimum time \( T_{\text{min}} \) has elapsed since the last output.

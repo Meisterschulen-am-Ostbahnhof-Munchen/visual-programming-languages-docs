@@ -1,5 +1,6 @@
 # AS_D_FF_HYS
 ![AS_D_FF_HYS](./AS_D_FF_HYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_D_FF_HYS** implements a data-triggered flip-flop (D-latch) with **hysteresis** (switching hysteresis). This component is typically used in signal processing to smooth noisy or fluctuating input signals and create defined switching points. It features an event input `INIT` to set the hysteresis value, as well as two adapter interfaces: an input adapter `I` for the signal to be latched and an output adapter `Q` for the latched and hysteresis-filtered output signal.

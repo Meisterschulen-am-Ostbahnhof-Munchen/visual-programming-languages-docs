@@ -42,6 +42,7 @@ Der Programmablauf folgt dieser Signalverarbeitungskette:
 5. **Ausgangssignalgenerierung**: AX_BOOL_TO_X wandelt den booleschen Ausgangswert zurück in ein AX-Signal
 
 **Verbindungen im Detail**:
+
 - Ereignisverbindungen: E_SWITCH.EO0 → E_T_FF.CLK, E_T_FF.EO → AX_BOOL_TO_X.REQ, AX_X_TO_BOOL.CNF → E_SWITCH.EI
 - Datenverbindungen: E_T_FF.Q → AX_BOOL_TO_X.OUT, AX_X_TO_BOOL.IN → E_SWITCH.G
 - Adapterverbindungen: IN → AX_X_TO_BOOL.AX_IN, AX_BOOL_TO_X.AX_OUT → OUT

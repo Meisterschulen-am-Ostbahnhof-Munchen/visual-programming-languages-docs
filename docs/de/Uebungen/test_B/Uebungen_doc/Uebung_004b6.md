@@ -47,11 +47,13 @@ Der digitale Eingang dient als Freigabesignal (PERMIT) für einen Takt, der den 
 ## Programmablauf und Verbindungen
 
 **Event-Verbindungen**:
+
 - `DigitalInput_I1.IND` → `E_PERMIT.EI`
 - `E_PERMIT.EO` → `E_T_FF.CLK`
 - `E_T_FF.EO` → `DigitalOutput_Q1.REQ`
 
 **Datenverbindungen**:
+
 - `DigitalInput_I1.IN` → `E_PERMIT.PERMIT`
 - `E_T_FF.Q` → `DigitalOutput_Q1.OUT`
 
@@ -63,6 +65,7 @@ Sobald sich der Digitaleingang ändert, wird das Ereignis `IND` ausgelöst. Der 
 - Gleichzeitig wird das Ereignis `EO` von `E_T_FF` an den Digitalausgang gesendet, der den neuen Wert von `Q` übernimmt.
 
 **Lernziele**:
+
 - Verständnis des Toggle-Flip-Flop (T-FF)
 - Anwendung des Freigabebausteins `E_PERMIT`
 - Zusammenspiel von Ereignis- und Datenflüssen in IEC 61499

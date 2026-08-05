@@ -1,6 +1,7 @@
 # AUI_CTU
 ![AUI_CTU](./AUI_CTU.svg)
 *Image of function block not available*
+
 * * * * * * * * * *
 ## Introduction
 The AUI_CTU is an event-driven up counter with an adapter interface. It increments the counter on every positive edge event at input `CU` and outputs the count via adapter `CV`. The output `Q` indicates whether the counter value (`CV`) has reached or exceeded the set limit (`PV`). The special feature of this implementation is the "On-Change" triggering: The event on the adapter `Q.E1` is only triggered if the logical state of `Q` actually changes. This reduces unnecessary events in subsequent processing.

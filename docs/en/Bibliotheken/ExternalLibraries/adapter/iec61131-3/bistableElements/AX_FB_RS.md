@@ -1,5 +1,6 @@
 # AX_FB_RS
 ![AX_FB_RS_ecc](./AX_FB_RS_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_FB_RS** implements a bistable flip-flop with reset dominance, based on the IEC 61131-3 standard. Unlike the standard `RS` block, this function block uses adapter interfaces (`AX`) to transmit events and data in a bundled manner. This allows for a more compact representation in control diagrams, as data and event connections are combined in a single line.

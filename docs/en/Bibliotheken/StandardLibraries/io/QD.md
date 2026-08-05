@@ -1,5 +1,6 @@
 # QD
 ![](https://user-images.githubusercontent.com/69573151/210781704-73d6a020-e7c0-430e-9797-2d0ef1cc6cc3.png)
+
 * * * * * * * * * *
 ## Introduction
 The QD function block is an output service interface component for outputting double-word (DWORD) data. It serves as an interface between the application logic and the physical output devices of a resource manager.

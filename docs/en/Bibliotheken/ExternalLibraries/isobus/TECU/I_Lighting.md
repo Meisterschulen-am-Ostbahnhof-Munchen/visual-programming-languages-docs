@@ -1,5 +1,6 @@
 # I_Lighting
 ![I_Lighting](./I_Lighting.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **I_Lighting** function block processes the lighting data of an agricultural vehicle according to ISO 11783-7 (ISOBUS). It receives and decodes the parameter group number (PGN) 65088, which transmits the status of all lighting functions of a tractor and connected implements. The block serves as an interface between the ISOBUS network and the application logic for monitoring and controlling the lighting.

@@ -1,5 +1,6 @@
 # AR2_REAL_TO_X
 ![AR2_REAL_TO_X](./AR2_REAL_TO_X.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AR2_REAL_TO_X` is a composite function block (FB) for converting a REAL value into an AR2 format. It encapsulates a bidirectional adapter of type `adapter::types::bidirectional::AR2` and acts as a transparent interface between a simple REAL variable and the more complex AR2 data type. The conversion logic resides entirely within the adapter, while the FB only handles signal and data transmission.

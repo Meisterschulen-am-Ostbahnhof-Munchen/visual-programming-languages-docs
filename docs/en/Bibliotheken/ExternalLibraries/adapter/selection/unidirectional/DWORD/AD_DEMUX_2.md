@@ -1,5 +1,6 @@
 # AD_DEMUX_2
 ![AD_DEMUX_2](./AD_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AD_DEMUX_2` is a generic AD demultiplexer. It distributes an incoming AD adapter data stream to one of two possible output adapters, controlled by an index value. The block operates in an event-driven manner, thus enabling flexible channel selection in industrial automation.

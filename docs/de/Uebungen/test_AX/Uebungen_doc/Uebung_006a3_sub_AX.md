@@ -51,6 +51,7 @@ Der Ablauf innerhalb der Subapplikation ist rein ereignis- und signalgesteuert √
     *   **Pfad B (Links)**: Der Ausgang `OUT2` des Splitters leitet das Signal an den Inverter `AX_NOT`. Das invertierte Signal wird dann an den Plug `Links` ausgegeben.
 
 **Schnittstellen:**
+
 *   `IN` (Socket): Eingang f√ºr das Steuersignal.
 *   `Rechts` (Plug): Ausgang, der dem aktuellen Zustand des Flip-Flops entspricht.
 *   `Links` (Plug): Ausgang, der dem invertierten Zustand des Flip-Flops entspricht.

@@ -34,6 +34,7 @@ Der Programmablauf ist über Adapter- und Ereignisverbindungen im Netzwerk festg
    Der aktuelle Ausgangszustand des Toggle-Flipflops wird auf den Ausgangsadapter übertragen.
 
 **Ablauf:**  
+
 - Der digitale Eingang (z. B. ein Taster) liefert ein Signal.  
 - Jede steigende Flanke (Signalwechsel von 0→1) am Eingang wird von `AX_R_TRIG` erkannt.  
 - Daraufhin wird ein Ereignis an `AX_T_FF` gesendet, dessen Ausgang seinen Zustand umkehrt (toggle).  

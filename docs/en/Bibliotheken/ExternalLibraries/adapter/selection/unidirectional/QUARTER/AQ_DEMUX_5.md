@@ -1,5 +1,6 @@
 # AQ_DEMUX_5
 ![AQ_DEMUX_5](./AQ_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AQ_DEMUX_5** implements a 1-to-5 demultiplexer for adapters of type `AQ` (unidirectional). It forwards incoming data from a central adapter input to one of five outputs. The target output is selected via the index `K`. The block is defined as a generic type (`GEN_AQ_DEMUX`) and can therefore be reused in different environments.

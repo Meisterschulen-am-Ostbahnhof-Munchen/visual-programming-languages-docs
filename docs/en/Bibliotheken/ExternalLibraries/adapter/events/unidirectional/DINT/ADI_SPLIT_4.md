@@ -1,5 +1,6 @@
 # ADI_SPLIT_4
 ![ADI_SPLIT_4](./ADI_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_SPLIT_4** serves as a generic splitter for a single ADI data stream. It receives one ADI input via the socket interface `IN` and makes it available to four identical ADI outputs via the plug interfaces `OUT1`, `OUT2`, `OUT3`, and `OUT4`. This block is ideal when an ADI signal needs to be forwarded in parallel to several subsequent components.

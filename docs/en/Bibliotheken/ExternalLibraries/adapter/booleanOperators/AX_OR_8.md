@@ -20,6 +20,7 @@ No direct data outputs available
 
 ### **Adapters**
 **Input Adapters:**
+
 - **IN1** - OR input 1 (unidirectional AX adapter)
 - **IN2** - OR input 2 (unidirectional AX adapter)
 - **IN3** - OR input 3 (unidirectional AX adapter)

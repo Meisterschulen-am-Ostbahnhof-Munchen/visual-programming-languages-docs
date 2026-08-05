@@ -1,5 +1,6 @@
 # INI_AR
 ![INI_AR](./INI_AR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The INI_AR function block is used to load and save real data from a settings.ini file. It accesses the configuration file via a section and key name and provides the read or saved values via a unidirectional adapter. This allows for flexible integration into modular storage and control architectures.

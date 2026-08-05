@@ -8,6 +8,7 @@
 Diese Übung demonstriert den Einsatz eines aufwärtszählenden Zählers (E_CTU) mit Ereignisverdoppelung durch einen E_SPLIT-Funktionsbaustein. Zwei Hardware-Taster (an Input_I1 und Input_I2) dienen als Zählimpulsgeber und Rücksetzsignal. Der aktuelle Zählerstand wird über einen Adapter-Ausgang (CV) ausgegeben und auf einem numerischen Terminal (OutputNumber_N1) dargestellt. Ein zusätzlicher digitaler Ausgang (Output_Q1) signalisiert den Q-Zustand des Zählers.
 
 **Lernziele**:
+
 - Anwendung des E_CTU-Zählers (Aufwärtszähler)  
 - Nutzung des E_SPLIT zur Verdoppelung eines Ereignissignals  
 - Verwendung von AUI-Adapter-Schnittstellen für Daten- und Ereignisübertragung  

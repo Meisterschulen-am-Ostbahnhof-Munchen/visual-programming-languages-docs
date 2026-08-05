@@ -1,5 +1,6 @@
 # AUI_TO_ALR
 ![AUI_TO_ALR](./AUI_TO_ALR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AUI_TO_ALR function block is a composite module that enables interface conversion between an AUI adapter (data type UINT) and an ALR adapter (data type LREAL). It acts as a simple pass-through, transmitting both event and data signals from the input to the output adapter.

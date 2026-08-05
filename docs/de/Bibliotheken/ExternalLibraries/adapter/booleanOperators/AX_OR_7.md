@@ -24,6 +24,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - **IN1** - ODER Eingang 1
 - **IN2** - ODER Eingang 2
 - **IN3** - ODER Eingang 3
@@ -33,6 +34,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 - **IN7** - ODER Eingang 7
 
 **Ausgangsadapter:**
+
 - **OUT** - ODER Ergebnis
 
 Alle Adapter verwenden den Typ `adapter::types::unidirectional::AX`.

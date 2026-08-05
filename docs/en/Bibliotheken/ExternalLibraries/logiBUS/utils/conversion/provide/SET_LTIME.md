@@ -1,5 +1,6 @@
 # SET_LTIME
 ![SET_LTIME](./SET_LTIME.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **SET_LTIME** is used to write an input value of type `LTIME` to a variable declared as InOut. This allows you to directly set the value of an external reference (e.g., an instance variable or another function block). Using an InOut variable allows for efficient data transfer without requiring a separate data output.

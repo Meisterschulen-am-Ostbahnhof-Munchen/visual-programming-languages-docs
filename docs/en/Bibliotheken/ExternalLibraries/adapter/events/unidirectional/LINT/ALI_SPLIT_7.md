@@ -1,5 +1,6 @@
 # ALI_SPLIT_7
 ![ALI_SPLIT_7](./ALI_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_SPLIT_7** is a generic splitter that distributes one incoming ALI adapter (socket `IN`) to seven outgoing ALI adapters (plugs `OUT1`…`OUT7`). It is used for a 1:7 distribution of data and events within a unidirectional ALI communication path.

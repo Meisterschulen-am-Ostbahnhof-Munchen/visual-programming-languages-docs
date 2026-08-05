@@ -1,5 +1,6 @@
 # AUS_DEMUX_5
 ![AUS_DEMUX_5](./AUS_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUS_DEMUX_5** is a generic OFF demultiplexer. It distributes an OFF signal (adapter interface) applied to its input to one of five outputs. The active output is selected via an index that is set by an event. The block is designed for use in distributed automation systems according to IEC 61499.

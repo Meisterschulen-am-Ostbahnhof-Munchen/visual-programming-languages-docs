@@ -1,5 +1,6 @@
 # SET_DATE_AND_TIME
 ![SET_DATE_AND_TIME](./SET_DATE_AND_TIME.svg)
+
 * * * * * * * * * *
 ## Introduction
 The SET_DATE_AND_TIME function block is used to write an incoming DATE_AND_TIME value to a target variable. The target variable is passed as an InOut parameter, allowing it to be both read and written. The function block implements a simple assignment operation triggered by an event.

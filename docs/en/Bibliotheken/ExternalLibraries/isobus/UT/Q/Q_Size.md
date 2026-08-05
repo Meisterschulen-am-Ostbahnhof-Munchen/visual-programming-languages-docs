@@ -1,5 +1,6 @@
 # Q_Size
 ![Q_Size](https://user-images.githubusercontent.com/116869307/214153095-72c9e230-b193-4843-be85-33038f6bd44d.png)
+
 * * * * * * * * * *
 ## Introduction
 The **Q_Size** is a standards-compliant function block for resizing objects in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.18) specification for VT objects.

@@ -1,5 +1,6 @@
 # Exercise_012f_sub: Numeric Value Input PHYS and Storage in Non-Volatile Memory (NVS) with Subapp
 ![Uebung_012f_sub_network](./Uebung_012f_sub_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the processing of a numeric input value (raw value) into a physical value, its permanent storage in non-volatile memory (NVS), and the subsequent reading and output of the stored value. The functionality is encapsulated in a subapplication (SubApp).

@@ -1,5 +1,6 @@
 # AL_SPLIT_8
 ![AL_SPLIT_8](./AL_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AL_SPLIT_8` distributes an incoming unidirectional AL signal (socket `IN`) to eight identical outputs (plugs `OUT1` to `OUT8`). It is declared as a generic block and serves for simple signal multiplication in 4diac applications.

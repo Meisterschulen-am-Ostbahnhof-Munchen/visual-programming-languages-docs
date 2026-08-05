@@ -1,5 +1,6 @@
 # Exercise_201b_AX: Interlock: ILOCK_BLOCK_AX (Motor clockwise/counterclockwise rotation via adapter)
 ![Uebung_201b_AX_network](./Uebung_201b_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the control of a motor with clockwise and counterclockwise rotation using an interlock circuit. The function block `ILOCK_BLOCK_AX` prevents both directions of rotation from being active simultaneously. The input signals come from two digital sensors (I1 and I2) via logiBUS digital signal adapters. The outputs control the motor (clockwise rotation Q5, counterclockwise rotation Q6) and a common low-side driver (Q56) via logiBUS output blocks. Signal adaptation is implemented by the sub-application block `AX_2_TO_3`.

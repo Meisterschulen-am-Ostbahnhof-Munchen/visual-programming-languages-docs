@@ -1,5 +1,6 @@
 # ALI_D_FF_HYS_TMIN
 ![ALI_D_FF_HYS_TMIN](./ALI_D_FF_HYS_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_D_FF_HYS_TMIN** implements a data-driven D flip-flop with an adjustable hysteresis width (threshold band) and a minimum waiting time between two consecutive output events. It is used for debouncing and stabilizing signal transitions in industrial automation, particularly when a signal should only be considered valid after it has left a defined tolerance range and a minimum time has elapsed since the last valid edge.

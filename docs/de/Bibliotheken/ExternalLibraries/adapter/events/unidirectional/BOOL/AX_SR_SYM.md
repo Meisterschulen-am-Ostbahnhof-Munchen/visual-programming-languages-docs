@@ -52,6 +52,7 @@ Die Transitionen erfolgen ausschließlich durch die Ereignisse `S` und `R`. Aus 
 | RESET   | Ausgangswert FALSE; zurückgesetzt durch Ereignis `R`. |
 
 **Transitionen:**
+
 - START → SET bei Ereignis `S`
 - START → RESET bei Ereignis `R`
 - SET → RESET bei Ereignis `R`

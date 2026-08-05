@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_060_sub_Outputs` based on the provided XML data.
 # Exercise_060_sub_Outputs: for TC-SC, i.e., Task Controller Section Control
 ![Uebung_060_sub_Outputs_network](./Uebung_060_sub_Outputs_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 The sub-application **Exercise_060_sub_Outputs** serves as an abstraction layer for the hardware outputs. According to the internal comment, this function block is intended for "TC-SC" (Task Controller Section Control). It receives logical Boolean signals and forwards them to physical or logical LogiBUS outputs (Digital Outputs).

@@ -1,5 +1,6 @@
 # SPLIT_WORD_INTO_BOOLS
 ![SPLIT_WORD_INTO_BOOLS](https://github.com/user-attachments/assets/dc1abe89-3f91-409f-815b-858dcd48d035)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SPLIT_WORD_INTO_BOOLS` is used to decompose a 16-bit word into its individual bits. Each bit of the input word is mapped to a separate BOOL output. This is particularly useful when individual bits of a word need to be further processed or monitored.

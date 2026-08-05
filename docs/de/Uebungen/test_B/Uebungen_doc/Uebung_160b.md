@@ -89,6 +89,7 @@ Das Netzwerk realisiert eine Motorsteuerung mit folgenden Eigenschaften:
     *   Sobald einer der beiden SR-Speicher aktiv ist (Motor läuft links oder rechts), schaltet `OR_2_BOOL` den `DigitalOutput_Q56` ein.
 
 **Lernziele:**
+
 *   Verwendung von bistabilen Kippgliedern (SR-Latch) zur Zustandsspeicherung.
 *   Implementierung einer Umschaltlogik mit Zeitverzögerung (E_DELAY) zur Vermeidung von abrupten Lastwechseln oder Kurzschlüssen.
 *   Verarbeitung verschiedener Taster-Events (Single Click vs. Press Down).

@@ -21,9 +21,11 @@ Keine direkten Datenausgänge – die Ausgabe erfolgt ausschließlich über die 
 
 ### **Adapter**
 **Socket (Eingang)**
+
 - **IN**: Adapter vom Typ `adapter::types::unidirectional::AI` für das eingehende analoge Signal.
 
 **Plugs (Ausgänge)**
+
 - **OUT1, OUT2, OUT3, OUT4**: Vier Adapter desselben Typs (`adapter::types::unidirectional::AI`). Nur der durch K ausgewählte Ausgang erhält den Wert von IN; die übrigen Ausgänge bleiben unverändert.
 
 ## Funktionsweise

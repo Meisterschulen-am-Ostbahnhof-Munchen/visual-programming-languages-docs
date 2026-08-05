@@ -1,5 +1,6 @@
 # ILOCK_CONFLICT_TRIP_AX
 ![ILOCK_CONFLICT_TRIP_AX](./ILOCK_CONFLICT_TRIP_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ILOCK_CONFLICT_TRIP_AX` implements interlock logic for two opposing directions (UP and DOWN). It prioritizes the first active input signal and immediately switches to a trip state when both inputs are activated simultaneously. Resetting from the trip state is only possible via the event `EI_RESET` when both inputs are inactive. All communication takes place via adapters of type `unidirectional::AX`, enabling flexible and modular integration.

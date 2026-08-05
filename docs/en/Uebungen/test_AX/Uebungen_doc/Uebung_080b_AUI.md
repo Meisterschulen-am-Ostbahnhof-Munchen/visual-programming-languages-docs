@@ -1,5 +1,6 @@
 # Exercise_080b_AUI: Example for E_CTU with AX_SPLIT_2 for Event Doubling and Terminal Output
 ![Uebung_080b_AUI_network](./Uebung_080b_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an up-counting counter (E_CTU) with event doubling via an E_SPLIT function block. Two hardware pushbuttons (connected to Input_I1 and Input_I2) serve as the counter pulse generator and reset signal. The current counter value is output via an adapter output (CV) and displayed on a numeric terminal (OutputNumber_N1). An additional digital output (Output_Q1) indicates the counter's Q state.

@@ -1,5 +1,6 @@
 # AULI_SPLIT_9
 ![AULI_SPLIT_9](./AULI_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_SPLIT_9** serves as a distributor for the unidirectional AULI adapter. It receives an incoming AULI data set via the **IN** socket and forwards it unchanged to all nine output adapters (**OUT1** to **OUT9**). The block is designed as a generic splitter and is suitable for applications where an AULI signal needs to be split among multiple devices.

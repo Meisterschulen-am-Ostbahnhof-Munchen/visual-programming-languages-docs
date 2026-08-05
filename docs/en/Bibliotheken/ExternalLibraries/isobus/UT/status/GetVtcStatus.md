@@ -1,5 +1,6 @@
 # GetVtcStatus
 ![GetVtcStatus](./GetVtcStatus.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **GetVtcStatus** is a Service Interface Block (SIFB) that encapsulates the function `IsoVtcGetStatusInfo()` from the ISOBUS driver. It enables the reading of various status information from a VT client and the connected Virtual Terminal (VT). The block was developed according to the ISO 11783-6 standard and is suitable for integration into ISOBUS applications.

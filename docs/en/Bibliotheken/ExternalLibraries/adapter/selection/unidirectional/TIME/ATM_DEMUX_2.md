@@ -1,5 +1,6 @@
 # ATM_DEMUX_2
 ![ATM_DEMUX_2](./ATM_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ATM_DEMUX_2` implements a generic demultiplexer for ATM signals. It distributes an ATM signal present at its input to either one of two outputs. The target output is selected via an integer index, which is passed when the function is called.

@@ -1,5 +1,6 @@
 # Exercise_213: Standard IEC 61131-3 FB_CTU_UDINT (Upward Counter, UDINT) with Terminal Output
 ![Uebung_213_network](./Uebung_213_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an upward counter according to IEC 61131-3 (type FB_CTU_UDINT) as a sub-application. The counter has two digital inputs (count-up and reset), one digital output (Q), and a terminal output for the current counter value. The inputs are provided via logiBUS I/O blocks, while the output and the numeric value are output to configured logiBUS channels.

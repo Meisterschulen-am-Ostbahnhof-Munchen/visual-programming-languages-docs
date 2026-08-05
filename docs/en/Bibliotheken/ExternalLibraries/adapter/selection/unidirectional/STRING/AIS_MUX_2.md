@@ -1,5 +1,6 @@
 # AIS_MUX_2
 ![AIS_MUX_2](./AIS_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AIS_MUX_2` implements a generic multiplexer for the adapter type `adapter::types::unidirectional::AIS`. It selects one of two input adapters (IN1, IN2) based on an index (K) and forwards its signals to the output adapter (OUT). The block is designed for use in IEC 61499.

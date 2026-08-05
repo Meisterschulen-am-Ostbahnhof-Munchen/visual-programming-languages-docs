@@ -1,5 +1,6 @@
 # AX_ASR_RF_TRIG_X
 ![AX_ASR_RF_TRIG_X](./AX_ASR_RF_TRIG_X.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_ASR_RF_TRIG_X** detects the rising and falling edges of a Boolean signal. It maps the detected edges to a set/reset output signal using crossed mapping: The rising edge triggers a reset operation, and the falling edge triggers a set operation. The block is implemented as a pure adapter block and internally uses the standard function block `E_RF_TRIG`.

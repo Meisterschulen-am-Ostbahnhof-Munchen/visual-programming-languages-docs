@@ -70,11 +70,13 @@ Diese Übung implementiert einen Rückwärtszähler (Down-Counter) nach IEC 6113
 Die Verdrahtung der Bausteine erfolgt über Adapterverbindungen. Initial wird der Preset-Wert 10 über AI_INT_TO_I bereitgestellt, sobald der Load-Eingang (Input_LD) ein INITO-Ereignis auslöst. Der Zähler startet mit PV=10.
 
 **Ablauf**:
+
 1. **Zählen**: Eine positive Flanke am Eingang I1 (Input_CD) sendet ein Ereignis über die Adapterverbindung an den CD-Eingang von AI_FB_CTD. Der Zähler dekrementiert um 1.
 2. **Laden**: Eine positive Flanke am Eingang I2 (Input_LD) löst das LD-Ereignis aus und setzt den Zähler zurück auf den Wert von PV (10). Gleichzeitig wird über INITO der Konverter AI_INT_TO_I getriggert, um den PV-Wert erneut zu setzen.
 3. **Ausgabe**: Der aktuelle Zählerwert (CV) wird über AI_TO_AUDI in ein Terminal-Format gewandelt und auf der Visualisierung (Q_NumericValue_AUDI) ausgegeben. Der Ausgang Q des Zählers wird auf den digitalen Ausgang Q1 geschaltet.
 
 **Hinweise aus dem Quelltext**:
+
 - Der Baustein AI_TO_AUDI kann keine negativen Werte verarbeiten. Da ein Rückwärtszähler unter Null zählen kann, ist dies eine Einschränkung.
 - Es wird empfohlen, einen AX_D_FF (Ereignis-Flipflop) einzubauen, um die Anzahl der Ereignisse am Terminal zu reduzieren.
 

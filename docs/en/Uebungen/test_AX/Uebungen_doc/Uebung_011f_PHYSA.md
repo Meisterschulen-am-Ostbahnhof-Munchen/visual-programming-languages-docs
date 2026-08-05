@@ -1,5 +1,6 @@
 # Exercise_011f_PHYSA: Passing Through Numeric Value Input I1 to N3 with PHYSA (Physical Values)
 ![Uebung_011f_PHYSA_network](./Uebung_011f_PHYSA_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the direct pass-through of a physical value (PHYSA) without conversion. An incoming numeric value from interface `InputNumber_I3` is passed unchanged to output interface `OutputNumber_N3`. The exercise illustrates how to handle physical values in an ISOBUS context and the simple connection of input and output modules.

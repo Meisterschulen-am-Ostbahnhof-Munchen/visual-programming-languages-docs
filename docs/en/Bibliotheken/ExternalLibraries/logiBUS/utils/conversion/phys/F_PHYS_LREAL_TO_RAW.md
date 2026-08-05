@@ -1,6 +1,7 @@
 # F_PHYS_LREAL_TO_RAW
 ![F_PHYS_LREAL_TO_RAW](./F_PHYS_LREAL_TO_RAW.svg)
 *Image not available*
+
 * * * * * * * * * *
 ## Introduction
 The function block F_PHYS_LREAL_TO_RAW converts a physical measured value in the LREAL data type into an ISOBUS-compliant raw value as a UDINT. Saturation limits are observed, and overflow and underflow states are signaled as Boolean outputs. The conversion follows the ISOBUS formula:

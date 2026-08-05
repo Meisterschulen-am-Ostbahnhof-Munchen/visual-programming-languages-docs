@@ -1,5 +1,6 @@
 # Q_ESC
 ![Q_ESC](https://user-images.githubusercontent.com/116869307/214147236-7b0ba071-871f-4b5c-8d15-5089ae7f07fc.png)
+
 * * * * * * * * * *
 ## Introduction
 The **Q_ESC** is a standards-compliant function block for termination control in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.8) specification for agricultural tax systems.

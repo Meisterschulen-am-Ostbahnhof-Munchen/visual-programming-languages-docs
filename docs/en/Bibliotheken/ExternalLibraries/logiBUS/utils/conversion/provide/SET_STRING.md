@@ -1,5 +1,6 @@
 # SET_STRING
 ![SET_STRING](./SET_STRING.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SET_STRING` is used to write a string value (STRING) provided via the data input `IN` to an input-output variable `OUT`. Execution is triggered by an event at the input `REQ`. After writing, an acknowledgment event is sent at the output `CNF`.

@@ -1,5 +1,6 @@
 # Exercise_076_AUI: Outputting MSS to UT with Compound Scaling (Adapter Version)
 ![Uebung_076_AUI_network](./Uebung_076_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the processing of the Machine Selected Speed (MSS) and its transmission as a physical quantity to the Universal Terminal (UT).

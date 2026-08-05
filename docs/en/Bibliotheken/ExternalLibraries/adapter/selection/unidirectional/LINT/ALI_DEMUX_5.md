@@ -1,5 +1,6 @@
 # ALI_DEMUX_5
 ![ALI_DEMUX_5](./ALI_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_DEMUX_5** is a generic demultiplexer for ALI (Application Level Interface) interfaces. It distributes an incoming ALI data stream to one of five unidirectional output adapters, controlled by an integer index. This block is particularly suitable for applications where a single data source needs to be selectively forwarded to multiple receivers.

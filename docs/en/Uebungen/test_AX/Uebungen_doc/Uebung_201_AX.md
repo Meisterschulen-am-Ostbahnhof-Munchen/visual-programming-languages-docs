@@ -1,5 +1,6 @@
 # Exercise_201_AX: Interlock: ILOCK_BLOCK_AX (Mutual Interlock via Adapter)
 ![Uebung_201_AX_network](./Uebung_201_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the implementation of a mutual interlock using the function block `ILOCK_BLOCK_AX`. Two digital inputs are connected to the interlock block via adapters. The outputs are configured so that only one of the two outputs can be active at any given time – simultaneous switching is prevented. This is a typical safety function in automation technology, for example, to protect opposing drives.

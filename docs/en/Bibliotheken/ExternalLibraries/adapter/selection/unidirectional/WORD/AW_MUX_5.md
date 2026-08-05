@@ -1,5 +1,6 @@
 # AW_MUX_5
 ![AW_MUX_5](./AW_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AW_MUX_5 is a generic multiplexer function block that, based on an integer index (K), switches one of five unidirectional adapter inputs (IN1–IN5) to a common adapter output (OUT). It serves for flexible source selection in automation solutions where signals are transported via adapters instead of direct data ports.

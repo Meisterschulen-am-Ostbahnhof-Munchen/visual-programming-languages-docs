@@ -1,5 +1,6 @@
 # Exercise_004b6: Toggle Flip-Flop with IX / E_PERMIT + E_T_FF
 ![Uebung_004b6_network](./Uebung_004b6_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a toggle flip-flop (T-FF) using a digital input (logiBUS_IX) and the function blocks **E_PERMIT** and **E_T_FF**.

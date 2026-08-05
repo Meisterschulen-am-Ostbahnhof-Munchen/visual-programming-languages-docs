@@ -1,5 +1,6 @@
 # INI_AR2
 ![INI_AR2](./INI_AR2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The INI_AR2 function block is used to read and write real values to and from a settings.ini file using a section and key name. It encapsulates an INI function block and provides a bidirectional AR2 adapter interface. Upon initialization, the value for the specified section and key name is read and output via the adapter. Simultaneously, new values can be received via the adapter and written back to the file.

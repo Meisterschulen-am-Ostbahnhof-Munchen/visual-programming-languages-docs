@@ -1,5 +1,6 @@
 # AUS_MUX_2
 ![AUS_MUX_2](./AUS_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUS_MUX_2** implements a generic multiplexer for the AUS adapter type (unidirectional). It selects between two input adapters (`IN1` and `IN2`) and forwards their signal to the output adapter (`OUT`). The selection is made using the index `K`. The block is triggered by the event `REQ` and acknowledged with `CNF`.

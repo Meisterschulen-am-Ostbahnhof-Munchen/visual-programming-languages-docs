@@ -1,5 +1,6 @@
 # AX_NOOP_INIT
 ![AX_NOOP_INIT](./AX_NOOP_INIT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AX_NOOP_INIT` is a no-operation block that forwards incoming events and data from an adapter interface unchanged to an output interface. It also has an initialization function that, upon arrival of the INIT event, triggers both the INITO acknowledgment and the adapter's output event. It serves as a simple pass-through or placeholder block in automation technology.

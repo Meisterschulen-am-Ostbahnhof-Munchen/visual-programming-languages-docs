@@ -1,5 +1,6 @@
 # Q_NumericValue
 ![Q_NumericValue](https://user-images.githubusercontent.com/113907471/204326982-47eea33a-9b9c-4107-8f96-97c85a945fbc.png)
+
 * * * * * * * * * *
 ## Introduction
 The **Q_NumericValue** is a standards-compliant function block for changing numeric values in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.22) specification for numeric VT objects.

@@ -1,5 +1,6 @@
 # ALI_FB_CTUD
 ![ALI_FB_CTUD](./ALI_FB_CTUD.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_FB_CTUD** implements an up/down counter with a value range of type **LINT** (64-bit integer). It is specifically designed for use with **ALI adapters** and encapsulates a standard-compliant counter according to IEC 61131-3 (FB_CTUD_LINT). Control and output are exclusively via adapter interfaces, allowing for flexible integration into adapter-based architectures.

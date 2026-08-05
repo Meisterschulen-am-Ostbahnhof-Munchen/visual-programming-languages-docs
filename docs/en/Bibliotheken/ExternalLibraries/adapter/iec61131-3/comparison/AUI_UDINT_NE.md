@@ -1,5 +1,6 @@
 # AUI_UDINT_NE
 ![AUI_UDINT_NE](./AUI_UDINT_NE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_UDINT_NE** performs a not equal comparison between two values of type **UDINT**. It is implemented as a composite function block and uses standardized adapter interfaces for connection to other function blocks. The function block complies with IEC 61131-3 and is classified as a standard comparison function.

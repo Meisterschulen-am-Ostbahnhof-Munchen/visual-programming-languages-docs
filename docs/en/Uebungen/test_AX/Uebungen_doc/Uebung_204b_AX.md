@@ -1,5 +1,6 @@
 # Exercise_204b_AX: Interlock: ILOCK_CONFLICT_TRIP_AX (Motor Safety Shutdown via Adapter)
 ![Uebung_204b_AX_network](./Uebung_204b_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of the function block **ILOCK_CONFLICT_TRIP_AX** for safety-related motor shutdown. An interlock logic is implemented, in which two opposing requirements (e.g., clockwise and counterclockwise rotation) are monitored, and a trip is triggered in the event of a conflict. The entire control is achieved via adapter connections and an intermediate sub-app (AX_2_TO_3), which distributes the signals to the outputs.

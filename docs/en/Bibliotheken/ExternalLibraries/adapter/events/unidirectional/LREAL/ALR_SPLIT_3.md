@@ -1,5 +1,6 @@
 # ALR_SPLIT_3
 ![ALR_SPLIT_3](./ALR_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_SPLIT_3** serves as a generic SPLIT function block that splits an incoming ALR signal (alarm or event signal) into three identical outputs. It is primarily used in automation systems where a single signal needs to be distributed in parallel to multiple downstream components without altering the signal quality or logic.

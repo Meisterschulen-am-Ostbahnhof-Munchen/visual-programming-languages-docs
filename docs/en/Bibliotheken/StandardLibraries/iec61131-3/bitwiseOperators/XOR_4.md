@@ -1,5 +1,6 @@
 # XOR_4
 ![XOR_4](https://user-images.githubusercontent.com/116869307/214143769-c8306099-6b4d-4e74-ad33-3cd11198e36d.png)
+
 * * * * * * * * * *
 ## Introduction
 The XOR_4 function block is a generic function block for calculating bitwise XOR operations with four inputs. It implements the exclusive OR operation at the bit level according to the IEC 61131-3 standard and can work with various bit data types.

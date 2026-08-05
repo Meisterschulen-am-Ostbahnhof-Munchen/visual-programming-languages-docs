@@ -1,5 +1,6 @@
 # SPLIT_AD_INTO_AQ
 ![SPLIT_AD_INTO_AQ](./SPLIT_AD_INTO_AQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SPLIT_AD_INTO_AQ` splits an incoming AD adapter (DWORD) into 16 individual AQ adapters (QUARTER). It serves as an interface to divide a wide data value (32 bits) into its 2-bit quarter components and forward these to separate output adapters. The block is implemented as a composite function block and internally uses a `SPLIT_DWORD_INTO_QUARTERS` block and 16 flip-flops (`E_D_FF_ANY`) for synchronous transmission.

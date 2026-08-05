@@ -1,5 +1,6 @@
 # Exercise_080_AUI: Example for E_CTU (Adapter Version) with Terminal Output
 ![Uebung_080_AUI_network](./Uebung_080_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an **adapter-based up counter (AUI_CTU)** in 4diac. The counter is incremented via an event input from a push button (Input_I1) and reset via a second push button (Input_I2). The current counter value is output both on a digital output (Output_Q1) and as a numeric value via a terminal output. This exercise teaches how to use the adapter interface for events and convert them into data values.

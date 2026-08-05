@@ -1,5 +1,6 @@
 # AULI_DEMUX_2
 ![AULI_DEMUX_2](./AULI_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_DEMUX_2** is a generic demultiplexer that receives an incoming data stream via an **AULI** adapter and forwards it to one of two outputs (**OUT1** or **OUT2**). The output is selected via the input parameter **K**.

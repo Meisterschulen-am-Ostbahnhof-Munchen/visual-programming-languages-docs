@@ -1,5 +1,6 @@
 # Exercise_204b: Interlock: ILOCK_CONFLICT_TRIP (Motor Safety Shutdown with Reset)
 ![Uebung_204b_network](./Uebung_204b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **motor safety shutdown with reset**. It is based on the function block `ILOCK_CONFLICT_TRIP`, which implements an interlock for two opposing motor directions (clockwise and counterclockwise). If a conflict occurs (both directions active simultaneously), the motor is stopped and an alarm (trip) is triggered. A separate reset input allows the trip state to be reset.

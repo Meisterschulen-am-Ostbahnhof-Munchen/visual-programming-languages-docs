@@ -1,5 +1,6 @@
 # ILOCK_BLOCK
 ![ILOCK_BLOCK](./ILOCK_BLOCK.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ILOCK_BLOCK** implements an interlock between two opposing signals. It prioritizes the first arriving active signal and ignores all subsequent conflicting signals until the initial signal is released. This ensures that two opposing actions (e.g., Up/Down, Right/Left) are never activated simultaneously.

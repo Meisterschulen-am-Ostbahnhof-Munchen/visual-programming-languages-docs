@@ -1,5 +1,6 @@
 # SPLIT_AB_INTO_AX
 ![SPLIT_AB_INTO_AX](./SPLIT_AB_INTO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **SPLIT_AB_INTO_AX** splits a byte received via a unidirectional AB adapter into its eight individual bits and provides these via separate AX adapters. The bits are transferred using clock-controlled D flip-flops, ensuring that the output values remain stable until a new byte is processed.

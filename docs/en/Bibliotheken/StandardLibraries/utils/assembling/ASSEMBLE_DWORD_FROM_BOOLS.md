@@ -1,5 +1,6 @@
 # ASSEMBLE_DWORD_FROM_BOOLS
 ![ASSEMBLE_DWORD_FROM_BOOLS](https://github.com/user-attachments/assets/2c59a6bc-c069-4740-8371-474846a393ee)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASSEMBLE_DWORD_FROM_BOOLS` combines 32 individual BOOL values into a single DWORD value. This is particularly useful when multiple binary states need to be processed or transmitted in a compact form.

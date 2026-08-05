@@ -1,5 +1,6 @@
 # AL_DEMUX_5
 ![AL_DEMUX_5](./AL_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AL_DEMUX_5** is a generic demultiplexer for the universal data type `AL` (adapter of type `adapter::types::unidirectional::AL`). It forwards an incoming data value from its input adapter **IN** to any one of five output adapters (**OUT1…OUT5**). The destination output is selected via the index **K**, which is evaluated on a rising edge at the event input **REQ**. After successful forwarding, the event **CNF** is output.

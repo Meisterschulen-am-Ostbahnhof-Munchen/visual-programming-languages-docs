@@ -94,6 +94,7 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangssignals mit Hi
    - Der Ausgang `OUTPUT` des Hysterese-Reglers steuert den digitalen Ausgang **DigitalOutput_Q2**.
 
 **Lernziele**:  
+
 - Verständnis der Adapter-Konvertierung zwischen analogen Signaltypen (`AD`, `AUDI`, `AR`)  
 - Umgang mit **INI**-Bausteinen zum persistenten Speichern und Laden von Kalibrierparametern  
 - Einsatz eines Kalibrierungsadapters (Offset/Skalierung)  

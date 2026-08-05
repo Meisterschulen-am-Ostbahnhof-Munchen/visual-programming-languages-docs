@@ -1,5 +1,6 @@
 # FIELDBUS_DWORD_TO_SIGNAL_SCALED
 ![FIELDBUS_DWORD_TO_SIGNAL_SCALED](./FIELDBUS_DWORD_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **FIELDBUS_DWORD_TO_SIGNAL_SCALED** converts a fieldbus DWORD signal into a scaled LREAL value. It checks the validity of the input signal against a predefined range and, if the signal is valid, calculates the output value by multiplying it by a scaling factor and adding an offset. If the signal is invalid, the output is set to 0 and the validity flag is set to FALSE.

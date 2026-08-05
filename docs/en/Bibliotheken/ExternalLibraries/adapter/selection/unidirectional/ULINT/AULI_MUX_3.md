@@ -1,5 +1,6 @@
 # AULI_MUX_3
 ![AULI_MUX_3](./AULI_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AULI_MUX_3` is a generic multiplexer that allows the selection of one of three data streams connected via adapters. It operates within the AULI adapter specification (unidirectional) and is suitable for flexible switching between different data sources in an IEC 61499-based control environment. Selection is made via an index `K`, which is evaluated upon a query (`REQ`).

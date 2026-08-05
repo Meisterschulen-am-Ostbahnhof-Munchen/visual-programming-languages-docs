@@ -77,6 +77,7 @@ Die physikalischen Ein‑ und Ausgänge sind mit den logiBUS‑Klemmen Input_I1,
 Alle Datenverbindungen sind so verdrahtet, dass die Werte synchron mit den Ereignissen weitergegeben werden.
 
 **Lernziele**:
+
 - Verständnis des IEC 61131-3 Zählers FB_CTU_ULINT (Vorwärtszähler)
 - Umgang mit Datentypkonvertierung (ULINT → LREAL)
 - Einbindung von physikalischen Ein‑/Ausgängen und Terminalausgabe in einer 4diac‑Subapplikation

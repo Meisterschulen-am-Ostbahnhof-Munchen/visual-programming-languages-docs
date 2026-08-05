@@ -63,12 +63,14 @@ Die SubApp arbeitet ereignisgesteuert. Der Ablauf startet, sobald der Baustein *
    Die erzeugte `CAN_MSG`‑Struktur wird in den Dateneingang `DI1` des **CallbackFB** geschrieben. Die Bestätigung des Multiplex (`STRUCT_MUX.CNF`) triggert den Bestätigungseingang `CallbackFB.CNF`. Der CallbackFB kann nun die Nachricht über den Adapter `PLUG1` an die ISOBUS‑Schnittstelle weiterleiten.
 
 **Datenflüsse** (vereinfacht):
+
 - `E_CTU.CV` → `F_UINT_TO_BYTE.IN`
 - `F_UINT_TO_BYTE.OUT` → `BYTES_TO_ARR08B.IN_00`
 - `BYTES_TO_ARR08B.OUT` → `STRUCT_MUX.data`
 - `STRUCT_MUX.OUT` → `CallbackFB.DI1`
 
 **Ereignisflüsse**:
+
 - `CallbackFB.REQ` → `E_CTU.CU`
 - `E_CTU.CUO` → `F_UINT_TO_BYTE.REQ`
 - `F_UINT_TO_BYTE.CNF` → `BYTES_TO_ARR08B.REQ`

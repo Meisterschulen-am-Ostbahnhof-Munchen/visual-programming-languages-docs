@@ -1,5 +1,6 @@
 # ALR_SPLIT_9
 ![ALR_SPLIT_9](./ALR_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ALR_SPLIT_9** is a generic function block that splits an incoming ALR signal (unidirectional adapter) into exactly nine identical outputs. It functions as a 1:9 splitter for the adapter type `ALR` from the package `adapter::types::unidirectional`.

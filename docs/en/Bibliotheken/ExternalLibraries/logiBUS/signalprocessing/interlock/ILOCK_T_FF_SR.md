@@ -1,5 +1,6 @@
 # ILOCK_T_FF_SR
 ![ILOCK_T_FF_SR](./ILOCK_T_FF_SR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ILOCK_T_FF_SR` is a composite function block (FB) that implements a latchable toggle flip-flop with set and reset functionality. It has an adapter interface (AE2) that enables bidirectional communication with other instances and serves for interlock chaining. The flip-flop toggles its output `Q` on every rising edge of the clock input `CLK`, provided no reset or set event is present. Latching is achieved via the adapters, which can be set by external function blocks.

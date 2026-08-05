@@ -1,5 +1,6 @@
 # AUS_TO_ADI
 ![AUS_TO_ADI](./AUS_TO_ADI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block AUS_TO_ADI is a composite function block that performs a unidirectional adapter conversion from `AUS` (data of type `USINT`) to `ADI` (data of type `DINT`). It encapsulates an IEC 61131 conversion block, thus enabling a clean separation of adapter types in the 4diac IDE.

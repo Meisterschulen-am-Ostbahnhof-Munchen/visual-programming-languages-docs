@@ -1,5 +1,6 @@
 # ALR_TO_ALI
 ![ALR_TO_ALI](./ALR_TO_ALI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_TO_ALI** is a composite block that performs an adapter conversion from **ALR (LREAL)** to **ALI (LINT)**. It enables the simple and structured integration of an LREAL-based adapter interface into a LINT-based environment without requiring the implementation of the conversion logic itself. The block is designed for use in IEC 61499-based industrial controllers and utilizes the internal function block `F_LREAL_TO_LINT` according to IEC 61131-3.

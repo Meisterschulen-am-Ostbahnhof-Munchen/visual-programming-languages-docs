@@ -1,5 +1,6 @@
 # AUDI_UDINT_EQ
 ![AUDI_UDINT_EQ](./AUDI_UDINT_EQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_UDINT_EQ** compares two values of type `UDINT` for equality. The first value is obtained via a socket adapter (`IN1`), the second via the direct data input `IN2`. The result is output as a Boolean value via a plug adapter (`OUT`). The comparison is triggered by an event – either by the external event `REQ` or by an event from the socket adapter `IN1`.

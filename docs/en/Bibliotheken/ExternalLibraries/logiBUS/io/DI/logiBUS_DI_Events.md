@@ -1,5 +1,6 @@
 # logiBUS_DI_Events
 ![logiBUS_DI_Events](./logiBUS_DI_Events.svg)
+
 * * * * * * * * * *
 ## Introduction
 The GlobalConstants definition `logiBUS_DI_Events` provides a comprehensive collection of event constants for digital inputs (DI) in the logiBUS system. These constants define various button press events and their unique identifiers, which are used in the control logic for processing user input via pushbuttons.

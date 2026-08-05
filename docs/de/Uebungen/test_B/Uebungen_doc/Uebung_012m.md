@@ -41,6 +41,7 @@ Diese Übung demonstriert die Verarbeitung eines Zeichenketten-Inputs (String) a
   Die SubApp `Uebung_012m_sub` kapselt den gesamten Ablauf: Einlesen eines Strings über `StringValue_IS`, Speichern im NVS über den FB `NVS`, und optionales Senden des gespeicherten Wertes über den isobus-Bus mit `Q_StringValue`. Die Parameter `KEY` und `u16ObjId` werden von außen übergeben und bestimmen den NVS-Speicherplatz bzw. die isobus-Objekt-ID.
 
   **Ablauf**:
+
   1. Nach der Initialisierung (`NVS.INITO`) wird automatisch ein Lesevorgang (`NVS.GET`) ausgelöst. Der ausgelesene Wert liegt dann an `NVS.VALUEO`.
   2. Bei einem Event von außen (nicht gezeigt, aber logisch) wird `StringValue_IS` aktiviert. Dessen Ausgang `IND` triggert `NVS.SET`, wodurch der aktuelle String im NVS gespeichert wird.
   3. Nach erfolgreichem Schreiben (`NVS.SETO`) oder Lesen (`NVS.GETO`) wird ein Event an den Ausgang `IND` der SubApp gesendet.
@@ -69,6 +70,7 @@ Die Verbindungen innerhalb von `Uebung_012m_sub` sind wie folgt (aus der XML-Dat
   - `u16ObjId` (extern) → `StringValue_IS.u16ObjId` und `Q_StringValue.u16ObjId`
 
 **Hinweise**:
+
 - Die Übung setzt voraus, dass die isobus-Bibliothek und der NVS-Treiber für den ESP32 in der Laufzeitumgebung vorhanden sind.
 - Der Parameter `DEFAULT_VALUE = STRING#''` definiert einen leeren String als Standard, falls im NVS noch kein Wert hinterlegt ist.
 - Die Verbindungen sind als sichtbar markiert (außer einige mit `Visible = false` – diese dienen lediglich der internen Verschaltung und sind in der grafischen Darstellung der IDE standardmäßig ausgeblendet).

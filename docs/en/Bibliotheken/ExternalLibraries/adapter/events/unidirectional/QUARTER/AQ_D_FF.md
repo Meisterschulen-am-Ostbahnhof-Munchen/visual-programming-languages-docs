@@ -1,5 +1,6 @@
 # AQ_D_FF
 ![AQ_D_FF](./AQ_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AQ_D_FF` implements a data storage element (D-latch) based on the adapter concept of IEC 61499. It receives an incoming data value upon an event and makes it available at the output until the next event. The block fully encapsulates the latch functionality in an adapter interface, thus enabling modular integration into system-wide data and event paths.

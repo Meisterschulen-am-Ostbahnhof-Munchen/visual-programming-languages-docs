@@ -39,6 +39,7 @@ Die drei Funktionsbausteine sind über AIS-Adapter verbunden:
 Der Ablauf ist zyklisch: Sobald ein neuer String eingegeben wird, aktualisiert der NVS den gespeicherten Wert und gibt diesen über den Ausgang weiter. Die Übung erfordert keine zusätzlichen Ereignisse, da die AIS-Adapter die Datenflüsse selbst steuern.
 
 **Lernziele**:
+
 - Verständnis des AIS-Adapterkonzepts für den Datenaustausch zwischen Funktionsbausteinen.
 - Einfache persistente Speicherung von Strings im NVS.
 - Konfiguration von Objekt-IDs und Speicherschlüsseln.

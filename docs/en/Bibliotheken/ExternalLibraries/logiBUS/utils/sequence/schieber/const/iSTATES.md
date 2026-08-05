@@ -1,5 +1,6 @@
 # iSTATES
 ![iSTATES](./iSTATES.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **iSTATES** block is a special GlobalConstants block in the 4diac IDE. It defines a set of named constants that represent the possible states of a (slider) actuator. The constants are stored as `USINT` values and enable a uniform, human-readable reference to the states in the control logic.

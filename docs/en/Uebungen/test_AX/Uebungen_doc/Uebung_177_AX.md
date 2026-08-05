@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_177_AX`, based on the provided data.
 # Exercise_177_AX: Example for AX_FB_R_TRIG (Rising Edge Detection)
 ![Uebung_177_AX_network](./Uebung_177_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of **rising edge detection** in combination with a **pulse timer**. The goal is to evaluate a signal at the physical input only at the moment of power-on (change from 0 to 1) and then activate an output for a defined duration.

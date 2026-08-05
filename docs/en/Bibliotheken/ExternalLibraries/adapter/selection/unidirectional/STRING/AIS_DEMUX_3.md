@@ -1,5 +1,6 @@
 # AIS_DEMUX_3
 ![AIS_DEMUX_3](./AIS_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_DEMUX_3** is a generic demultiplexer for AIS adapter data. It forwards the AIS value present at socket `IN` to one of three output adapters, `OUT1`, `OUT2`, or `OUT3`, depending on an index `OUT1`, `OUT2`, or `OUT3`. This function block is suitable for distributing AIS signals in control systems.

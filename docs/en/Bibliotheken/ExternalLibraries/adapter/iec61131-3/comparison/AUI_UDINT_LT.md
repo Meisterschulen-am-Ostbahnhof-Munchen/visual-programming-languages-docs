@@ -1,5 +1,6 @@
 # AUI_UDINT_LT
 ![AUI_UDINT_LT](./AUI_UDINT_LT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_UDINT_LT** performs a less-than comparison between two values. The first value is provided as an input via an **AUI adapter**, the second value via a scalar **UDINT** data input. The result of the comparison (Boolean value) is output via an **AX adapter**. The function block is triggered by a **REQ** event.

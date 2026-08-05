@@ -66,6 +66,7 @@ Diese Übung demonstriert die Verwendung des Funktionsbausteins **ILOCK_CONFLICT
 5. **Reset-Funktion**: Der digitale Eingang **I3** (über `DigitalInput_Reset`) wird mit einem Tastendruck-Ereignis (`BUTTON_SINGLE_CLICK`) an den Ereigniseingang **EI_RESET** von `ILOCK_AX` angeschlossen, um einen ausgelösten Trip zurückzusetzen.
 
 **Hinweise zur Übung**:
+
 - Schwierigkeitsgrad: Mittel
 - Lernziele: Verständnis von Interlock-Mechanismen, Adapter-basierter Kommunikation, Signalweiterleitung über SubApp
 - Voraussetzung: Grundkenntnisse in 4diac-IDE und IEC 61499

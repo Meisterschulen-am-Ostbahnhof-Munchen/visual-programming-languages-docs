@@ -1,6 +1,7 @@
 # Exercise_212b: Standard IEC 61131-3 FB_CTU_LINT (Upward Counter, LINT) with Terminal Output (PHYS_LREAL)
 ![Uebung_212b_network](./Uebung_212b_network.svg)
 *No image available.*
+
 * * * * * * * * *
 ## Introduction
 This exercise implements an upward counter according to IEC 61131-3 (FB_CTU_LINT) with terminal output of the current counter value. The counter is incremented via a digital input (CU) and reset via another digital input (R). After each increment, the counter value is output to a terminal block (LogiBUS Utility) via a type conversion (LINT → LREAL). Simultaneously, a digital output is set as soon as the counter reaches the preset value (PV = 5).

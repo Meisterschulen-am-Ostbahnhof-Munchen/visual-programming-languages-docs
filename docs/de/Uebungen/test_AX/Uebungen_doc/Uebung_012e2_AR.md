@@ -64,6 +64,7 @@ Diese Übung demonstriert die Verwendung eines **AR-Adapters** zur Kombination e
    Der Timerausgang `Q` von `AX_TON` schaltet den `OUT`-Adapter des Ausgangsbausteins `DigitalOutput_Q1`. Somit wird der physikalische Ausgang `Output_Q1` aktiviert, solange der Timer läuft bzw. nach Ablauf der eingestellten Zeit.
 
 **Erläuterung der Verbindungen im Netzwerk**:
+
 - `DigitalInput_I1.IN` → `AX_TON.IN`
 - `AX_TON.Q` → `DigitalOutput_Q1.OUT`
 - `Uebung_012e_sub_AR.VALUEO` → `AR_MULTIME.IN2`
@@ -72,6 +73,7 @@ Diese Übung demonstriert die Verwendung eines **AR-Adapters** zur Kombination e
 ## Zusammenfassung
 
 **Lernziele**:
+
 - Einbindung eines AR-Adapter-basierten Sub-App-Bausteins zur persistenten Speicherung von Konfigurationswerten (NVS).
 - Arithmetische Verknüpfung von Konstanten und gespeicherten Werten über AR-Adapter.
 - Realisierung einer einstellbaren Timer-Funktion mit einem digitalen Eingang und Ausgang.

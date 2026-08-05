@@ -24,9 +24,11 @@ Der AX_SPLIT_8 Funktionsblock ist ein generischer Baustein, der einen einzelnen 
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - **IN** (Socket): AX-Adapter-Eingang vom Typ `adapter::types::unidirectional::AX`
 
 **Ausgangsadapter:**
+
 - **OUT1** (Plug): AX-Adapter-Ausgang 1 vom Typ `adapter::types::unidirectional::AX`
 - **OUT2** (Plug): AX-Adapter-Ausgang 2 vom Typ `adapter::types::unidirectional::AX`
 - **OUT3** (Plug): AX-Adapter-Ausgang 3 vom Typ `adapter::types::unidirectional::AX`

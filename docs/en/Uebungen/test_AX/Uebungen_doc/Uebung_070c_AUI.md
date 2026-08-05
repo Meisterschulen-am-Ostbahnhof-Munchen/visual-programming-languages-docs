@@ -1,6 +1,7 @@
 # Exercise_070c_AUI: Outputting WBSD to UT (Adapter Version)
 ![Uebung_070c_AUI_network](./Uebung_070c_AUI_network.svg)
 *No image available.*
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates how to acquire a wheel-based machine speed (WBSD) via ISOBUS and output it to a UT (Universal Terminal). The implementation is a sub-application (SubApp) and uses adapter connections for communication between the function blocks. The goal is to scale the input value using an adapter and output it as a numerical value to the UT.

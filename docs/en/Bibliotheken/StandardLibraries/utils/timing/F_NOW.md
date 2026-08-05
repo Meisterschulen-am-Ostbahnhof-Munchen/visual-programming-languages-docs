@@ -1,5 +1,6 @@
 # F_NOW
 ![F_NOW](https://github.com/user-attachments/assets/3a8b2855-6d9a-49b3-ae77-6050fb2763d9)
+
 * * * * * * * * * *
 ## Introduction
 The **F_NOW** function is an IEC 61499-1 compliant helper function for querying the current local date and time, developed under the EPL-2.0 license (version 3.0).

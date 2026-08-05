@@ -1,5 +1,6 @@
 # AI_SPLIT_5
 ![AI_SPLIT_5](./AI_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_SPLIT_5** is used to distribute an incoming analog signal (AI) to five identical outputs. It is a generic function block specifically designed for splitting an analog value into multiple parallel paths. It is implemented using unidirectional adapters of type `AI`.

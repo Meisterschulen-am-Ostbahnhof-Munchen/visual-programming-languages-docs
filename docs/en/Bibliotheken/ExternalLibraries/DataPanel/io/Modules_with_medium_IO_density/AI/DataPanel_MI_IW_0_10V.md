@@ -1,5 +1,6 @@
 # DataPanel_MI_IW_0_10V
 ![DataPanel_MI_IW_0_10V](./DataPanel_MI_IW_0_10V.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **DataPanel_MI_IW_0_10V** function block is a service-oriented interface module (SIFB) for acquiring an analog 0-10V input signal. It is designed as part of the **HR Agrartechnik DataPanel MI** system and enables parameterizable initialization as well as cyclical or event-driven retrieval of measured values.

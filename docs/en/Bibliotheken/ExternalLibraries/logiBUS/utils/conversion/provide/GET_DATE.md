@@ -1,5 +1,6 @@
 # GET_DATE
 ![GET_DATE](./GET_DATE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **GET_DATE** function block reads a DATE value from an InOut variable and provides it as a buffered output. When requested by an event, the current value of the source is copied into an internal buffer and then output to the output as well as to the InOut variable itself.

@@ -1,5 +1,6 @@
 # ALR_DEMUX_4
 ![ALR_DEMUX_4](./ALR_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_DEMUX_4** acts as a demultiplexer for data stream-oriented ALR (Agricultural Logic Router) signals. It distributes an incoming ALR data stream to one of four identical outputs. The destination output is selected dynamically via the index K, which is evaluated upon an event at the REQ input. The output is acknowledged via the event output CNF. The block is designed generically and can be parameterized for various ALR types.

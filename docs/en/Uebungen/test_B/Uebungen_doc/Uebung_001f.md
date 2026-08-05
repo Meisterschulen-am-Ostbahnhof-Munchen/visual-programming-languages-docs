@@ -1,5 +1,6 @@
 # Exercise_001f: DigitalInput_I1 negated with INIT to DigitalOutput_Q1
 ![Uebung_001f_network](./Uebung_001f_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the negation of a digital input signal using the function block `F_NOT_BOOL_INIT`. The digital input `Input_I1` is read, inverted, and written to the digital output `Output_Q1`. It becomes clear that the negation block outputs a defined value even at system startup (BOOT), even if the input is not yet being read at that time.

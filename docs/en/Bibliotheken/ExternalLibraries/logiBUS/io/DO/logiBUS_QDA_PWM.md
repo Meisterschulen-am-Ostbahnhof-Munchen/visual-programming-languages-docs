@@ -1,5 +1,6 @@
 # logiBUS_QDA_PWM
 ![logiBUS_QDA_PWM](./logiBUS_QDA_PWM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **logiBUS_QDA_PWM** function block is a composite block for controlling a PWM (Double Word) output via a logiBUS system. It encapsulates the initialization and triggering of an internal PWM output block and provides an adapter interface for receiving commands (events and data) from external sources. The block was developed for use in agricultural technology and is licensed under EPL 2.0.

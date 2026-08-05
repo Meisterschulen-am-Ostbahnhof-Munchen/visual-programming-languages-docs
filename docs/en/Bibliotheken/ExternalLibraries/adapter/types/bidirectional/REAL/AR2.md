@@ -1,5 +1,6 @@
 # AR2
 ![AR2](./AR2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AR2** adapter type provides a bidirectional interface between two function blocks. It transmits exactly one event along with a REAL value in both directions. The designation "AR2" stands for "Adapter Real 2-Way". The component is designed as a generic connector (plug/socket) within the 4diac IDE and enables clean, type-safe coupling of components.

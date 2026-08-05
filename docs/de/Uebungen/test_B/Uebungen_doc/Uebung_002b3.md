@@ -34,6 +34,7 @@ Diese Übung demonstriert die Verarbeitung digitaler Eingangssignale und deren l
 ## Programmablauf und Verbindungen
 
 **Ereignisverbindungen:**
+
 - DigitalInput_I1.IND → AND_2_BOOL.REQ
 - DigitalInput_I2.IND → AND_2_BOOL.REQ
 - DigitalInput_I3.IND → OR_2_BOOL.REQ
@@ -41,6 +42,7 @@ Diese Übung demonstriert die Verarbeitung digitaler Eingangssignale und deren l
 - OR_2_BOOL.CNF → DigitalOutput_Q1.REQ
 
 **Datenverbindungen:**
+
 - DigitalInput_I1.IN → AND_2_BOOL.IN1
 - DigitalInput_I2.IN → AND_2_BOOL.IN2
 - DigitalInput_I3.IN → OR_2_BOOL.IN2
@@ -51,6 +53,7 @@ Diese Übung demonstriert die Verarbeitung digitaler Eingangssignale und deren l
 Q1 = (I1 UND I2) ODER I3
 
 **Lernziele:**
+
 - Verständnis der logischen Verknüpfungen UND und ODER
 - Umgang mit digitalen Ein- und Ausgängen in 4diac
 - Aufbau von kombinatorischen Schaltungen

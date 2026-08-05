@@ -1,5 +1,6 @@
 # AIS_SPLIT_3
 ![AIS_SPLIT_3](./AIS_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_SPLIT_3** is used to distribute an incoming AIS data stream to three identical outputs. It is implemented as a generic function block and enables the simple duplication of AIS information in control systems according to IEC 61499.

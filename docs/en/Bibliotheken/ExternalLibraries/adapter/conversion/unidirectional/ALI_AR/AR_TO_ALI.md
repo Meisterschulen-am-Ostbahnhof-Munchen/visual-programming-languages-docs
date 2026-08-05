@@ -1,5 +1,6 @@
 # AR_TO_ALI
 ![AR_TO_ALI](./AR_TO_ALI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The composite function block `AR_TO_ALI` converts a REAL adapter (`AR-IN`) into a LINT adapter (`ALI-OUT`). It enables the seamless integration of floating-point values from adapter `AR` into applications that expect 64-bit integer values via adapter `ALI`. The conversion is performed via an internal function block `F_REAL_TO_LINT` according to IEC 61131.

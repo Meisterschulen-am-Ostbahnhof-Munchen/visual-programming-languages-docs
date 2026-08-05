@@ -84,6 +84,7 @@ Das Netzwerk realisiert eine verriegelte Steuerung mit folgendem Ablauf:
     *   Das Event `BUTTON_PRESS_DOWN` an **Input_I3** setzt **AX_SR_B** zurück (Reset). Der Motor an Q6 stoppt und Q56 erlischt (sofern Q5 nicht aktiv ist).
 
 **Zusammenfassend:**
+
 *   **I1**: Startet Q5.
 *   **I2**: Stoppt Q5 und startet (nach 50ms) Q6.
 *   **I3**: Stoppt Q6.

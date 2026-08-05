@@ -1,5 +1,6 @@
 # ST02X
 *(No image available for this data type.)*
+
 * * * * * * * * * *
 ## Introduction
 The **ST02X** data type is a structured data type designed to encapsulate two Boolean values. It serves as a simple data structure for organizing and transporting two individual bits, or Boolean states, in a single unit. The name "ST02X" suggests a "structure with 2 [Boolean values]".

@@ -1,5 +1,6 @@
 # Exercise_206b: Interlock: ILOCK_T_FF (Three mutually interlocked toggle flip-flops via an adapter chain)
 ![Uebung_206b_network](./Uebung_206b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an application using three mutually interlocked toggle flip-flops. Three pushbuttons (digital inputs) each control an ILOCK_T_FF, which toggles its output with each button press. The three flip-flops are bidirectionally connected via an adapter chain, ensuring that only one output can be active at a time (interlock). The outputs are routed to three digital outputs (e.g., LEDs).

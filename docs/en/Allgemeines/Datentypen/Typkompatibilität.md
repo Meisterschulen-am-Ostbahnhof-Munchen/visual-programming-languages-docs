@@ -150,6 +150,7 @@ If a numeric integer value (e.g., 123) is stored in a `DWORD` and this value is 
 * *In ST:*
 *    ```pascal
 real_var := UDINT_TO_REAL(DWORD_TO_UDINT(dword_var));
+
 * *In the FB network:* Sequential insertion of two conversion modules:
 
 [DWORD-Ausgang]` $\rightarrow$ `[DWORD_TO_UDINT]` $\rightarrow$ `[UDINT_TO_REAL]` $\rightarrow$ `[REAL-Eingang]`.

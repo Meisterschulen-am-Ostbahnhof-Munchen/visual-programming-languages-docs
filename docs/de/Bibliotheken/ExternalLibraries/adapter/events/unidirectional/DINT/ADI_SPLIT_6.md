@@ -23,9 +23,11 @@ Keine Daten-Ausgänge vorhanden.
 Der Baustein kommuniziert ausschließlich über Adapter-Schnittstellen:
 
 **Socket (Eingang):**
+
 - `IN`: Typ `adapter::types::unidirectional::ADI` – nimmt ein unidirektionales ADI-Signal entgegen.
 
 **Plugs (Ausgänge):**
+
 - `OUT1` bis `OUT6`: jeweils Typ `adapter::types::unidirectional::ADI` – geben das eingehende Signal identisch auf sechs parallele Ausgänge weiter.
 
 ## Funktionsweise

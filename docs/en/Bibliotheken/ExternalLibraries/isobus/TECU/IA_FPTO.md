@@ -1,6 +1,7 @@
 # IA_FPTO
 ![IA_FPTO](./IA_FPTO.svg)
 *[Image of the function block, if available]*
+
 * * * * * * * * * *
 ## Introduction
 The **IA_FPTO** function block serves as an ISOBUS adapter for the front power take-off (FPTO) according to ISO 11783-7 (PGN 65092). It encapsulates the internal logic of the **I_FPTO** block and provides the relevant signals via standardized adapter interfaces. This enables seamless integration into ISOBUS-based control systems.

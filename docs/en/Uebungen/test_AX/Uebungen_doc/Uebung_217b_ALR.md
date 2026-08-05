@@ -1,5 +1,6 @@
 # Exercise_217b_ALR: Standard IEC 61131-3 ALI_FB_CTD (Adapter Version, LINT) with Terminal Output (PHYSA_LREAL)
 ![Uebung_217b_ALR_network](./Uebung_217b_ALR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an IEC 61131-3 compliant down counter (CTD) in adapter format (ALI) with the LINT data type. The counter value is decremented via an input button, and another button loads a predefined preset value. The current counter value is output to a terminal via a conversion chain (LINT → LREAL). The counter output (Q) switches a digital output.

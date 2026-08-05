@@ -1,6 +1,7 @@
 # sequence_T_04
 <img width="1413" height="335" alt="image" src="https://github.com/user-attachments/assets/ced5ea4d-0691-41fb-8bd3-f75398d849e8" />
 ![sequence_T_04_ecc](./sequence_T_04_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_T_04` is a time-controlled sequencer with four defined states (State_01 to State_04) and a start state (START). It enables the cyclical or one-time execution of a fixed sequence, with the dwell time in each state controlled by configurable time values. The transition between states occurs automatically after the set time has elapsed. This function block is ideally suited for time-controlled sequences, such as those found in conveyor systems, packaging machines, or washing processes.

@@ -1,5 +1,6 @@
 # SPLIT_AL_INTO_AQ
 ![SPLIT_AL_INTO_AQ](./SPLIT_AL_INTO_AQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **SPLIT_AL_INTO_AQ** is a composite function block (FB) that splits an incoming LWORD value (via a `AL` adapter) into 32 separate 2-bit values and outputs each of these via its own `AQ` adapter (quarter byte). The splitting occurs synchronously with an event provided by the input adapter. The function block serves as an interface between a wide data word and several narrow, event-driven sub-segments.

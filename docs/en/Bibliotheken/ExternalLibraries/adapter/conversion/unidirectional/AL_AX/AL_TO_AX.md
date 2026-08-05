@@ -1,5 +1,6 @@
 # AL_TO_AX
 ![AL_TO_AX](./AL_TO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AL_TO_AX` is a composite function block that performs a unidirectional adapter conversion from a `AL` adapter (data type `LWORD`) to a `AX` adapter (data type `BOOL`). It enables the simple conversion of an LWORD signal into a Boolean signal, which is then typically passed to subsequent BOOL-based adapters or function blocks. The function block checks whether the incoming LWORD value is non-zero and returns `TRUE` if so.

@@ -20,10 +20,12 @@ No direct data outputs available
 
 ### **Adapters**
 **Input Adapter:**
+
 - **IN1** - OR Input 1 (Adapter Type: adapter::types::unidirectional::AX)
 - **IN2** - OR Input 2 (Adapter Type: adapter::types::unidirectional::AX)
 
 **Output Adapter:**
+
 - **OUT** - OR Result (Adapter Type: adapter::types::unidirectional::AX)
 
 ## Functionality

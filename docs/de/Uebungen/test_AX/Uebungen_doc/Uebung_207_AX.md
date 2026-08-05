@@ -44,6 +44,7 @@ In dieser Übung werden keine benutzerdefinierten Sub-Bausteine verwendet – al
    - Der Interlock-Baustein arbeitet flankengesteuert: Nur bei eintreffenden Ereignissen ändern sich die Ausgangszustände.
 
 **Lernziele**:
+
 - Verständnis des Prinzips der gegenseitigen Verriegelung (Interlock) in der Automatisierungstechnik
 - Umgang mit ereignisgesteuerten Funktionsbausteinen (event-gesteuert)
 - Kommunikation über Adapterschnittstellen zwischen Signalverarbeitung und Ein-/Ausgabe

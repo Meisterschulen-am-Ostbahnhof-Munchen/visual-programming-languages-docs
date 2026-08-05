@@ -1,5 +1,6 @@
 # ADI_SPLIT_3
 ![ADI_SPLIT_3](./ADI_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_SPLIT_3** is used to distribute an incoming ADI data stream (adapter interface) to three identical outputs. It is designed as a generic function block and enables simple signal multiplication in adapter-based 4diac applications.

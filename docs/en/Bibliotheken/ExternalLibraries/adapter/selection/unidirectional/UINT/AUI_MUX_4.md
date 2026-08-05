@@ -1,5 +1,6 @@
 # AUI_MUX_4
 ![AUI_MUX_4](./AUI_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_MUX_4** is a generic multiplexer for AUI (Unidirectional Application Interface) adapters. It enables dynamic switching between four AUI inputs (IN1 to IN4) to a common AUI output (OUT) using an integer index.

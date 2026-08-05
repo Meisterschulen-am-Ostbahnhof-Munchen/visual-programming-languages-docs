@@ -1,6 +1,7 @@
 # sequence_ET_08_loop
 <img width="1372" height="421" alt="image" src="https://github.com/user-attachments/assets/5c112dff-e214-4a52-9789-abcd411ac8cd" />
 ![sequence_ET_08_loop_ecc](./sequence_ET_08_loop_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_ET_08_loop` is a sequencer with eight output states that operates in a loop. It allows transitions between states either triggered by an external event or timed after an adjustable time interval. This block is designed for control tasks where a defined sequence of actions (represented by outputs `DO_S1` to `DO_S8`) must be executed. A key feature is the ability to individually configure each state transition as either event-driven or time-controlled.

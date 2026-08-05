@@ -1,6 +1,7 @@
 # FB_T_FF
 [[Image of the function block – shown in the 4diac IDE as a symbol with an event input REQ, output CNF, data inputs CLK (BOOL) and RST (BOOL), and data output Q (BOOL)]]
 ![FB_T_FF](./FB_T_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **FB_T_FF** (Toggle Flip-Flop) implements an edge-triggered, asynchronously resettable frequency divider or toggle switch. On each rising clock edge at the **CLK** input, the output **Q** is inverted (toggled). A high level at the **RST** input immediately resets **Q** to `FALSE`. This function block is particularly suitable for binary state transitions in control sequences.

@@ -90,6 +90,7 @@ Die folgende Beschreibung erläutert den Daten- und Ereignisfluss:
    Der aktuelle Zählwert `CV` wird über die Konvertierungskette `AULI_FB_CTD.CV` → `AULI_TO_ALR.AULI_IN` → `AULI_TO_ALR.ALR_OUT` → `Q_NumericValue_PHYSA_LREAL.lrPhys` auf dem Terminal (Objekt `OutputNumber_N3`) angezeigt. Hierbei wird der ULINT-Wert in LREAL umgewandelt, sodass auch negative Werte (z.B. durch Überlauf) dargestellt werden können (siehe Hinweis-Kommentar in der Grafik).
 
 **Hinweise aus den Kommentaren:**
+
 - Im Bereich der Terminalausgabe sind negative Werte möglich (z.B. wenn der Zähler unter Null gezählt wird).
 - Bei hohen Ereignisraten kann ein AX_D_FF (Verzögerungsglied) zwischengeschaltet werden, um die Anzahl der Terminalaktualisierungen zu reduzieren.
 

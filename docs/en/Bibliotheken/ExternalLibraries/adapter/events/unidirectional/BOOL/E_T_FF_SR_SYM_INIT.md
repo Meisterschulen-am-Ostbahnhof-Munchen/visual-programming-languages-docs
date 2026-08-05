@@ -1,6 +1,7 @@
 # E_T_FF_SR_SYM_INIT
 ![E_T_FF_SR_SYM_INIT](./E_T_FF_SR_SYM_INIT.svg)
 **Image of the function block:** (not available)
+
 * * * * * * * * * *
 ## Introduction
 The function block `E_T_FF_SR_SYM_INIT` implements an event-driven, bistable flip-flop with set, reset, and toggle functionality. It features symmetrical startup behavior: Upon the initialization event (`INIT`), the output `Q` is set to the value specified at the input `Q_INIT`, provided the qualifier `QI` is active. The block combines the properties of an SR flip-flop and a toggle flip-flop in a single unit.

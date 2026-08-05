@@ -1,5 +1,6 @@
 # Exercise_004a2_3b: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_MERGE_3 (3 Buttons)
 ![Uebung_004a2_3b_network](./Uebung_004a2_3b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **Toggle Flip-Flop** (also known as a **T-Flip-Flop**).

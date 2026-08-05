@@ -1,5 +1,6 @@
 # A2X_SPLIT_7
 ![A2X_SPLIT_7](./A2X_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **A2X_SPLIT_7** is used to distribute an incoming A2X adapter signal to seven identical outputs. It is provided as a generic FB and enables efficient signal multiplication within 4diac IDE projects.

@@ -1,5 +1,6 @@
 # ALI_SPLIT_5
 ![ALI_SPLIT_5](./ALI_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ALI_SPLIT_5` is a generic adapter split block. It accepts a single incoming ALI adapter (`adapter::types::unidirectional::ALI`) and provides the same ALI signals at five outgoing ALI adapter interfaces. This allows an ALI connection to be distributed to multiple subsequent blocks or devices without interrupting the logical signal chain.

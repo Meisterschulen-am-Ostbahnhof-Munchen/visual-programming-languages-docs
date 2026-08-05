@@ -66,6 +66,7 @@ Diese Übung realisiert eine analoge Eingangskalibrierung mit Offset- und Skalie
    - Der Ausgang `Hysteresis_AR_AX.OUTPUT` steuert den digitalen Ausgang `DigitalOutput_Q2`.
 
 **Lernziele**:  
+
 - Verständnis der Analogwertaufbereitung mit Adaptern und Konvertierungen in 4diac.
 - Implementierung einer persistenten Kalibrierung (Offset und Skalierung) im NVS.
 - Anwendung eines Hysterese-Reglers mit extern vorgebbaren Parametern.

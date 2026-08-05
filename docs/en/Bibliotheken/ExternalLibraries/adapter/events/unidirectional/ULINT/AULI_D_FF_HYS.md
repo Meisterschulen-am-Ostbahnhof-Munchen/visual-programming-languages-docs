@@ -1,5 +1,6 @@
 # AULI_D_FF_HYS
 ![AULI_D_FF_HYS](./AULI_D_FF_HYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AULI_D_FF_HYS` implements a data latch (D flip-flop) with adjustable hysteresis. It encapsulates the logic of such a flip-flop in an adapter-based interface and allows the transmission of data and events via unidirectional adapters of type `AULI`.

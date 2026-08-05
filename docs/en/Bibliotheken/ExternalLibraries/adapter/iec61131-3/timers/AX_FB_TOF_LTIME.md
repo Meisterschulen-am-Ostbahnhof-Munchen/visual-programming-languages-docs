@@ -1,5 +1,6 @@
 # AX_FB_TOF_LTIME
 ![AX_FB_TOF_LTIME](./AX_FB_TOF_LTIME.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_FB_TOF_LTIME** implements a standard timer for the off-delay according to IEC 61131-3. It is specifically designed for use with an AX adapter and uses an internal timer module and a D flip-flop to precisely represent the timing behavior. The time base uses the data type `LTIME`, resulting in high temporal resolution.

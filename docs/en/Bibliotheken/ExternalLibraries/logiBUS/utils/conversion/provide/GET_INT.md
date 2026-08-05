@@ -1,5 +1,6 @@
 # GET_INT
 ![GET_INT](./GET_INT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **GET_INT** function block is used to read the current value of an INT variable (defined as an InOut parameter) and provide it as a buffered value at the output. Buffering occurs with each execution cycle, ensuring the output value remains stable until the next request.
@@ -52,6 +53,7 @@ The FB operates as a simple read buffer:
 
 ``structured text
 OUT := IN;
+
 2. The current value of the InOut variable **IN** is copied to the output **OUT**.
 
 3. The **CNF** event is then issued to signal the completion of the operation.

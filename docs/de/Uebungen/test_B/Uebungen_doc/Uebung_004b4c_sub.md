@@ -76,10 +76,12 @@ Die Sub-Applikation arbeitet nach folgendem Ablauf:
 6. Der aktuelle Zustand `Q` wird direkt als Ausgang `Q` der Sub-Applikation ausgegeben.
 
 **Adapterverbindungen:**
+
 - Der Socket `SOCKET` der Sub-Applikation ist mit `AE2_E_TO_EVENT.AE2_IN` verbunden – externe Ereignisse können so empfangen werden.
 - Der Plug `PLUG` ist mit `AE2_EVENT_TO_E.AE2_OUT` verbunden – interne Ereignisse werden nach außen gesendet.
 
 **Lernziele:**
+
 - Verständnis von verriegelbaren Toggle-Flip-Flops (Set/Reset mit Zustandsrückkopplung).
 - Einsatz von Ereignisumschaltern (`E_SWITCH`) in Abhängigkeit von Zuständen.
 - Verwendung von Adapter-Konvertern zur bidirektionalen Ereigniskommunikation über AE2-Schnittstellen.

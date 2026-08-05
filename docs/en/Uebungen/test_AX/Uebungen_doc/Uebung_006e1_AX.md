@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_006e1_AX` based on the provided data.
 # Exercise_006e1_AX: SR Flip-Flop with 2x IXA
 ![Uebung_006e1_AX_network](./Uebung_006e1_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an **SR flip-flop** (bistable flip-flop) using **adapter technology** (AX/IX/QX). The logic is used to set a digital output via one input and reset it via a second input. Using adapters bundles data and event flows into individual connections, improving clarity in the schematic.

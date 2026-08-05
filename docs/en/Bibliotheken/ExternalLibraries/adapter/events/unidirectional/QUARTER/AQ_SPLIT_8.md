@@ -1,5 +1,6 @@
 # AQ_SPLIT_8
 ![AQ_SPLIT_8](./AQ_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AQ_SPLIT_8** is a fan-out function block that distributes a single AQ adapter input to eight identical AQ adapter outputs. It serves to multiply signals in analog output paths, thus enabling the parallel control of multiple identical actuators or subsystems. The implementation is based on the generic mechanism `GEN_AQ_SPLIT` and is designed for unidirectional AQ interfaces.

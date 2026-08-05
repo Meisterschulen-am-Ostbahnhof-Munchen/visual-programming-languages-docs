@@ -1,5 +1,6 @@
 # AB_FIELDBUS_BYTE_TO_SIGNAL
 ![AB_FIELDBUS_BYTE_TO_SIGNAL](./AB_FIELDBUS_BYTE_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_FIELDBUS_BYTE_TO_SIGNAL** mirrors an incoming byte signal (via the adapter *IN*) to the output (*OUT*) if the signal is recognized as valid. Validity is indicated by a separate output (*VALID*). The block encapsulates the processing of a fieldbus byte signal and ensures that only valid data is passed on to the subsequent logic. It is based on an internal `FIELDBUS_BYTE_TO_SIGNAL` block, supplemented by a D flip-flop for stable output of the validity signal.

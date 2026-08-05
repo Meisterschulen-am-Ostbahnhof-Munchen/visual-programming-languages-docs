@@ -34,6 +34,7 @@ Die Logik der Übung ist wie folgt aufgebaut:
 1. Die digitalen Eingänge **I1** und **I2** werden über die Bausteine `DigitalInput_I1` und `DigitalInput_I2` gelesen.
 2. Das Signal von **I2** wird **negiert** (invertiert). Dies geschieht über eine **Negate Connection** (Attribut `Negated = "true"`) auf der Datenverbindung zwischen `DigitalInput_I2.IN` und `AND_2_BOOL.IN2`.  
    *(Die Negation ist nur bei booleschen Datentypen möglich.)*
+
 3. Der Baustein `AND_2_BOOL` verknüpft das Signal von **I1** (an `IN1`) mit dem negierten Signal von **I2** (an `IN2`) mittels einer UND‑Operation.
 4. Das Ergebnis (`AND_2_BOOL.OUT`) wird an den Dateneingang `OUT` des Ausgangsbausteins `DigitalOutput_Q1` übergeben.
 5. Die Ereignissteuerung:
@@ -45,6 +46,7 @@ Die Logik der Übung ist wie folgt aufgebaut:
 `Q1 = I1 AND (NOT I2)`
 
 **Lernziele:**
+
 - Konfiguration von logiBUS‑Ein‑/Ausgangsbausteinen.
 - Verwendung des IEC‑61131‑Bausteins `AND_2_BOOL`.
 - Anwendung einer Datennegation (Not‑Verbindung) in 4diac.

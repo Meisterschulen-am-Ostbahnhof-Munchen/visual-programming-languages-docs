@@ -1,5 +1,6 @@
 # AE_MUX_4
 ![AE_MUX_4](./AE_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_MUX_4** implements a 4-way multiplexer for AE adapters ("Analog Events"). Depending on an index **K**, it selects exactly one of the four input adapters (IN1..IN4) and forwards its signal to the output adapter **OUT**. The function block is designed as a generic (template-based) block and is instantiated as `GEN_AE_MUX`.

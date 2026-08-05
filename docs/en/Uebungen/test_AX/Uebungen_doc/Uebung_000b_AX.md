@@ -1,5 +1,6 @@
 # Exercise_000b_AX: AX_AND
 ![Uebung_000b_AX_network](./Uebung_000b_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of **adapter function blocks** to implement a logical AND operation. Within the sub-app, Boolean values are exchanged between conversion blocks and a logical AND block via adapter connections. You will learn the basic structure of adapters and how they interact within a sub-app.

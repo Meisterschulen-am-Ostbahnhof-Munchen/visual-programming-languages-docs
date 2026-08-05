@@ -1,5 +1,6 @@
 # logiBUS_IE2A
 ![logiBUS_IE2A](./logiBUS_IE2A.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `logiBUS_IE2A` is a composite block (FB) for processing events at digital inputs of the logiBUS system. It extends the functionality of the underlying block `logiBUS_IE2` by adding a dedicated adapter output for event messages and allows the transfer of parameters such as long press times or multi-click counters. The block serves as a standardized interface between the logiBUS hardware and a higher-level control logic.

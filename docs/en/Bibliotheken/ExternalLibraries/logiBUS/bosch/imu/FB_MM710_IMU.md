@@ -1,5 +1,6 @@
 # FB_MM710_IMU
 ![FB_MM710_IMU](./FB_MM710_IMU.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **FB_MM710_IMU** is a service-oriented module (SIFB) for connecting the Bosch MM7.10 IMU sensor via CAN/J1939. It enables the reading of acceleration, yaw rate, and tilt values, as well as the monitoring of system and error states. The FB encapsulates all CAN communication and signal processing and provides the data in a standardized format via event and data outputs.

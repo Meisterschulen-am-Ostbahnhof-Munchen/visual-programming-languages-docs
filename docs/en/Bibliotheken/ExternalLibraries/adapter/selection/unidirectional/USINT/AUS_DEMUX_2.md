@@ -1,5 +1,6 @@
 # AUS_DEMUX_2
 ![AUS_DEMUX_2](./AUS_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUS_DEMUX_2** is a generic demultiplexer for unidirectional AUS adapters. It distributes a value received via socket `IN` to either one of the two output adapters, `OUT1` or `OUT2`. The selection is made via the index `K`, which is set by a REQ event. The function block is implemented as a generic type (`GEN_AUS_DEMUX`) and can be used for various AUS data structures.

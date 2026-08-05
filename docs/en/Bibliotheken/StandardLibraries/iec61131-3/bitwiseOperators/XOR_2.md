@@ -1,5 +1,6 @@
 # XOR_2
 ![XOR_2](https://user-images.githubusercontent.com/116869307/214143689-2a5c46a2-8706-400e-9fc7-fc74efa57eea.png)
+
 * * * * * * * * * *
 ## Introduction
 The XOR_2 function block is a generic function block for calculating the bitwise Boolean XOR operation. It performs an exclusive OR operation between two input values and outputs the result. The function block is suitable for all ANY_BIT data types, thus enabling flexible use with different bit lengths.

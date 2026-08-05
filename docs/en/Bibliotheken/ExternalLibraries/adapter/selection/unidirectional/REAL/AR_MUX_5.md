@@ -1,5 +1,6 @@
 # AR_MUX_5
 ![AR_MUX_5](./AR_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AR_MUX_5** function block is a generic 5-channel multiplexer based on the adapter type `adapter::types::unidirectional::AR`. It allows the selection of one of five AR adapter inputs (IN1 … IN5) and routes this input to the single output adapter (OUT). Selection is made via the integer index K, which is set via the event input `REQ`. The function block is specified according to IEC 61499-2 and is used as a generic function block (`GEN_AR_MUX`).

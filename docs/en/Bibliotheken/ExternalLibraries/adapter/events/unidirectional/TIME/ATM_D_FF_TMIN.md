@@ -1,5 +1,6 @@
 # ATM_D_FF_TMIN
 ![ATM_D_FF_TMIN](./ATM_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ATM_D_FF_TMIN` implements a clock-controlled D flip-flop (data latch) that takes the incoming data value at a clock event and outputs it as a stored value. A special feature is the adjustable minimum time (`Tmin`) between two consecutive output events, which guarantees a defined dead time.

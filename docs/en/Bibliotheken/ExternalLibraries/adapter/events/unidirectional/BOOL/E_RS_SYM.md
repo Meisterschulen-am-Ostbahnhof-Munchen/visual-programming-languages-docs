@@ -1,5 +1,6 @@
 # E_RS_SYM
 ![E_RS_SYM](./E_RS_SYM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **E_RS_SYM** is an event-driven, bistable flip-flop with symmetrical start behavior. It implements set-reset functionality, where the output Q is defined by both a set and a reset event. Unlike a classic RS flip-flop, this component has an explicit start state that reacts to both events equally.

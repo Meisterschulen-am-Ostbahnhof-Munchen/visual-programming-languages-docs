@@ -1,5 +1,6 @@
 # DataPanel_MI_ID_ENC
 ![DataPanel_MI_ID_ENC](./DataPanel_MI_ID_ENC.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **DataPanel_MI_ID_ENC** function block is an input service interface function block for acquiring encoder pulse data. It is designed to process a 7A+8A encoder pair and outputs the current counter reading and status information. Initialization is performed via parameters such as the node address (SA member), the input configuration, and thresholds for pulse- and time-based event triggering.

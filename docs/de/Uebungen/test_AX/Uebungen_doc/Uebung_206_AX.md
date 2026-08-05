@@ -66,6 +66,7 @@ Dadurch eignet sich die Schaltung für sicherheitskritische Anwendungen, z. B.
    Die Ausgänge `Q` der drei Flip-Flops sind mit den Digitalausgängen (`DigitalOutput_Q1` … `DigitalOutput_Q3`) verbunden. Diese geben den Zustand an die Hardware‑Kanäle Q1, Q2 und Q3 weiter.
 
 **Lernziele**:
+
 - Verständnis des Interlock-Prinzips (gegenseitige Verriegelung) in der Automatisierungstechnik.
 - Kennenlernen des Bibliotheksbausteins `ILOCK_T_FF_AX` und seiner Adapter-Schnittstelle.
 - Anwendung von Ereignis- und Adapter-Verbindungen in 4diac.
@@ -73,6 +74,7 @@ Dadurch eignet sich die Schaltung für sicherheitskritische Anwendungen, z. B.
 **Schwierigkeitsgrad**: Mittel – Vorkenntnisse in IEC 61499, Grundlagen der Ereignissteuerung und Adapter-Handhabung werden empfohlen.
 
 **Hinweise zur Ausführung**:
+
 - Die Übung ist für den Einsatz mit einem logiBUS‑System (z. B. Raspberry Pi mit I/O‑Erweiterung) ausgelegt.
 - Vor dem Start müssen die Hardware‑Kanäle (Input_I1 … Input_I3, Output_Q1 … Output_Q3) korrekt an die realen Taster und Aktoren angeschlossen sein.
 - Der Baustein `logiBUS_DI_Events::BUTTON_SINGLE_CLICK` wird als Ereignisquelle genutzt – ein einfacher Tastendruck erzeugt ein einzelnes Takt-Ereignis (Entprellung ist im Treiber integriert).

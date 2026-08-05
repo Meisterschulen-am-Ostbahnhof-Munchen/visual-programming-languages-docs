@@ -1,5 +1,6 @@
 # ALR_SPLIT_5
 ![ALR_SPLIT_5](./ALR_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_SPLIT_5** is used to distribute an incoming ALR signal to five identical outputs. It is implemented as a generic function block (Generic FB) and enables simple signal multiplication in control systems based on the adapter concept of IEC 61499.

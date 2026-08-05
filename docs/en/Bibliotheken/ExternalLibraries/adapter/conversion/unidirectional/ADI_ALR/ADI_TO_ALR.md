@@ -1,5 +1,6 @@
 # ADI_TO_ALR
 ![ADI_TO_ALR](./ADI_TO_ALR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_TO_ALR** is a composite function block (FB) that converts an ADI adapter (data type DINT) into an ALR adapter (data type LREAL). It serves as a unidirectional converter between two standardized adapter interfaces and enables the seamless integration of integer values into systems that require floating-point numbers.

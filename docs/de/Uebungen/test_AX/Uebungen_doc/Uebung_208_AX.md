@@ -58,12 +58,14 @@ Die Übung besteht aus zwei identischen parallelen Zweigen, die über eine gegen
   Der Ausgang `ILOCK_SR_1.ILOCK_OUT` ist mit dem Eingang `ILOCK_SR_2.ILOCK_IN` verbunden. Dadurch wird erreicht, dass wenn `ILOCK_SR_1` gesetzt ist (Q1 = TRUE), das Setzen von `ILOCK_SR_2` blockiert wird. Umgekehrt (Symmetrie) – in dieser Konfiguration ist nur eine Richtung explizit verdrahtet, die andere wird implizit durch die interne Logik des Bausteins realisiert. Tatsächlich besitzt `ILOCK_FB_SR_AX` eine bidirektionale Verriegelung: beide Latches blockieren sich gegenseitig. Die zusätzliche Verbindung des `ILOCK_OUT` des einen zum `ILOCK_IN` des anderen stellt sicher, dass immer nur einer aktiv ist.
 
 **Ablauf**:
+
 1. Liegt an `S1` ein TRUE-Signal an (und `ILOCK_SR_1` ist nicht durch `ILOCK_SR_2` blockiert), so wird `Q1` gesetzt.
 2. Liegt an `S2` ein TRUE-Signal an (und `ILOCK_SR_2` ist nicht durch `ILOCK_SR_1` blockiert), so wird `Q2` gesetzt.
 3. Ein Reset über `R1` bzw. `R2` setzt das jeweilige Latch zurück.
 4. Durch die Verriegelung kann nie gleichzeitig `Q1` und `Q2` TRUE sein. Ein Setzversuch am blockierten Latch bleibt wirkungslos.
 
 **Lernziele**:
+
 - Verständnis von gegenseitigen Verriegelungen (Interlocks) in der Steuerungstechnik.
 - Anwendung set-dominanter SR-Latches.
 - Umgang mit Adapterverbindungen in 4diac-IDE (AX/AX2-Konzept).

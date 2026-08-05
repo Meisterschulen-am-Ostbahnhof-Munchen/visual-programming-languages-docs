@@ -1,5 +1,6 @@
 # Exercise_011c: Passing Through Numeric Value Input I3 to N3
 ![Uebung_011c_network](./Uebung_011c_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the simple pass-through of a numeric value from an ISOBUS input object (InputNumber_I3) to an output object (OutputNumber_N3). The DWORD value coming from the bus is converted to a UDINT before being passed to the output object. This exercise is a basic example of using the **4diac-IDE** in the context of ISOBUS (ISO 11783) and shows how function blocks are interconnected for data processing and forwarding.

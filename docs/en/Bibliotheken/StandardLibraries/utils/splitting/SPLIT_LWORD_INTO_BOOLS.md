@@ -1,5 +1,6 @@
 # SPLIT_LWORD_INTO_BOOLS
 ![SPLIT_LWORD_INTO_BOOLS](https://github.com/user-attachments/assets/1049fa17-3495-4ca5-8e03-ae09e81b47d5)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SPLIT_LWORD_INTO_BOOLS` is used to decompose a 64-bit LWORD data type into its individual bits. Each bit is provided as a separate BOOL output. This block is particularly useful when individual bits of a long word need to be evaluated or processed.

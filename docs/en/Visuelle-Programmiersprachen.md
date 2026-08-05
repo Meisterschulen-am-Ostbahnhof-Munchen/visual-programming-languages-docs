@@ -2,6 +2,7 @@
 Visual programming languages (VPLs) allow programs to be created by graphically manipulating elements instead of writing text. In the world of technology and computer science, there are many different approaches, which vary depending on the target group and use case.
 ## 1. Educational and General Languages
 These languages often serve as an introduction to the logic of programming. They abstract complex syntax rules into colored blocks that are assembled like puzzle pieces.
+
 * **Scratch:** Probably the best-known language for children and teenagers. It playfully teaches concepts such as loops, conditions, and variables.
 * **Blockly (Google):** A library that translates visual blocks into textual code (e.g., Python or JavaScript).
 * **M5Stack / UIFlow:** An industrial application of Blockly. Here, microcontrollers (ESP32) are programmed visually, which greatly accelerates prototyping.

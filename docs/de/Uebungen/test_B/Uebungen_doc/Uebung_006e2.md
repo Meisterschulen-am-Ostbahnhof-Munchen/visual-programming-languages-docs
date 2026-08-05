@@ -61,6 +61,7 @@ Der Programmablauf wird durch die Ereignisketten (Event Connections) und den Dat
     - **Datenverbindung**: Der Ergebnisausgang `Q1` des Flip-Flops wird an den Eingang `OUT` des `DigitalOutput_Q1` übergeben.
 
 **Zusammengefasstes Verhalten:**
+
 - Taste/Schalter an **Input_I1** aktiviert den Ausgang **Output_Q1**.
 - Taste/Schalter an **Input_I2** deaktiviert den Ausgang **Output_Q1**.
 - Werden beide Eingänge gleichzeitig betätigt, bleibt der Ausgang aus (Reset ist dominant).

@@ -1,5 +1,6 @@
 # AB_SPLIT_6
 ![AB_SPLIT_6](./AB_SPLIT_6.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_SPLIT_6** is a generic adapter splitter. It serves to distribute an incoming unidirectional adapter data stream (type `AB`) simultaneously to six separate outputs. This allows the data from a single adapter to be made available to multiple downstream blocks without data loss.

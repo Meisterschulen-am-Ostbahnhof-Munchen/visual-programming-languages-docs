@@ -1,5 +1,6 @@
 # UDINT_AUDI_GE
 ![UDINT_AUDI_GE](./UDINT_AUDI_GE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **UDINT_AUDI_GE** performs a greater-or-equals (>=) comparison for two input values. It complies with the IEC 61131-3 classification for standard comparison functions. The result is output via a directed adapter (plugs/sockets), allowing the block to be flexibly integrated into standardized adapter structures.

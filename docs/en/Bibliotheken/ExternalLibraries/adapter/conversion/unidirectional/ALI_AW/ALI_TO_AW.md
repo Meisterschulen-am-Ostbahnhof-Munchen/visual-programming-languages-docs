@@ -1,5 +1,6 @@
 # ALI_TO_AW
 ![ALI_TO_AW](./ALI_TO_AW.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_TO_AW** is a composite function block (FB) that converts a LINT value (ALI adapter) into a WORD value (AW adapter). It encapsulates the conversion logic of the IEC 61131-3 function block `F_LINT_TO_WORD` in an adapter-based interface. The block is designed for use in unidirectional adapter communication paths and enables a clean separation of data format and application.

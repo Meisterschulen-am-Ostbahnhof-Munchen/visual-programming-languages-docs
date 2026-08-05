@@ -1,5 +1,6 @@
 # AUDI_NE
 ![AUDI_NE](./AUDI_NE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_NE** performs a not equal check. It compares two input values provided via adapters and outputs the comparison result as a Boolean value via an output adapter. This block is primarily used in automation systems that support adapter-based, event-driven communication.

@@ -23,9 +23,11 @@ Keine direkten Daten-Ausgänge vorhanden
 
 ### **Adapter**
 **Plug-Adapter:**
+
 - **OUT**: Unidirektionaler Adapter für das XOR-Ergebnis
 
 **Socket-Adapter:**
+
 - **IN1**: Unidirektionaler Adapter für XOR-Eingang 1
 - **IN2**: Unidirektionaler Adapter für XOR-Eingang 2
 - **IN3**: Unidirektionaler Adapter für XOR-Eingang 3

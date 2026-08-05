@@ -1,5 +1,6 @@
 # Exercise_217: Standard IEC 61131-3 FB_CTD_LINT (Countdown Counter, LINT) with Terminal Output
 ![Uebung_217_network](./Uebung_217_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a countdown counter (CTD) according to IEC 61131-3 with the LINT data type (64-bit integer). The counter is controlled by two digital inputs: a countdown pulse (CD) and a load pulse (LD). The current counter value (CV) is converted to the UDINT (unsigned 32-bit) type and sent to a numeric terminal output. The Q output signals when the counter value is ≤ 0.
@@ -47,6 +48,7 @@ A comment on the network points out that the conversion ``F_LINT_TO_UDINT`` is u
 - **Data Outputs**: `OUT` (UDINT) – Note: Negative input values are not displayed correctly.
 
 **Q_NumericValue** (Terminal output numeric value)
+
 - **Type**: `isobus::UT::Q::Q_NumericValue`
 - **Parameter**: `u16ObjId = OutputNumber_N1` (Object identifier in the terminal)
 - **Event Inputs**: `REQ`

@@ -1,5 +1,6 @@
 # ATM_MUX_3
 ![ATM_MUX_3](./ATM_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ATM_MUX_3** is a generic multiplexer for ATM adapters (Automation Transfer Modules). It enables the selective routing of one of three incoming ATM adapters (IN1, IN2, IN3) to an outgoing ATM adapter (OUT). The active input is selected via the index parameter K, which is set by the REQ event.

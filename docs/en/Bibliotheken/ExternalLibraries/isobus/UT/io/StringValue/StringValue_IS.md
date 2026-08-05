@@ -1,5 +1,6 @@
 # StringValue_IS
 ![StringValue_IS](./StringValue_IS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **StringValue_IS** function block is an input service interface function block (Input SIFB) for receiving string data from a resource. It serves as a standardized interface for integrating external string information into the 4diac environment. Typical applications include connecting to ISOBUS systems, where strings such as names, status messages, or identifiers are received.

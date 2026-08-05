@@ -1,5 +1,6 @@
 # ST_DEL_CONN
 ![ST_DEL_CONN](https://user-images.githubusercontent.com/116869307/214154770-816b11aa-c17e-4fad-93d5-e43f10015347.png)
+
 * * * * * * * * * *
 ## Introduction
 The ST_DEL_CONN function block is used to delete event or data connections between two function block instances within a 4diac system. It enables the dynamic reconfiguration of connections at runtime and belongs to the category of structural services according to IEC 61499-1.

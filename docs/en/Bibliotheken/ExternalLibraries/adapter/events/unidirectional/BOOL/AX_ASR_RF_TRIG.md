@@ -1,5 +1,6 @@
 # AX_ASR_RF_TRIG
 ![AX_ASR_RF_TRIG](./AX_ASR_RF_TRIG.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_ASR_RF_TRIG** is used for bidirectional edge detection (rising and falling) of a Boolean input signal. It is designed as an adapter-based envelope of the IEC 61499 standard function block `E_RF_TRIG`. The signal to be monitored is read via two unidirectional adapters, and the result is provided as a set/reset output.

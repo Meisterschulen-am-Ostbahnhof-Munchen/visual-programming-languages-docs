@@ -1,5 +1,6 @@
 # Exercise_215b: Standard IEC 61131-3 FB_CTD (Down Counter, INT) with Terminal Output (PHYS)
 ![Uebung_215b_network](./Uebung_215b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **down counter** according to IEC 61131-3 (function block `FB_CTD`) with a preset value of **10**. The counter is controlled via two digital inputs (CD – Count Down, LD – Load). The current counter value is output to a terminal (PHYS), and the output Q indicates whether the counter value has reached zero.

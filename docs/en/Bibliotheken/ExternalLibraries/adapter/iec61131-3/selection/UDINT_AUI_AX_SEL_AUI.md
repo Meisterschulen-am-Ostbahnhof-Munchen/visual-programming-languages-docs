@@ -1,5 +1,6 @@
 # UDINT_AUI_AX_SEL_AUI
 ![UDINT_AUI_AX_SEL_AUI](./UDINT_AUI_AX_SEL_AUI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `UDINT_AUI_AX_SEL_AUI` implements a binary selection between two input signals. The selection is controlled via an external selector (adapter `G`), and the selected signal is provided via an output adapter (`OUT`). The input values can be updated separately via two events.

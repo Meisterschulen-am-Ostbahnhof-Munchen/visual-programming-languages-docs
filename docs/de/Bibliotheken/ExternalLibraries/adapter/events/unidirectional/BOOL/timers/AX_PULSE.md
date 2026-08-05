@@ -12,9 +12,11 @@ Der AX_PULSE ist ein Funktionsblock, der einen Impuls über einen AX-Adapter aus
 
 ### **Adapter**
 **Sockets (Eingänge):**
+
 - **REQ** (adapter::types::unidirectional::AX): Trigger.
 
 **Plugs (Ausgänge):**
+
 - **PULSE** (adapter::types::unidirectional::AX): Impulsausgang.
 
 ## Funktionsweise

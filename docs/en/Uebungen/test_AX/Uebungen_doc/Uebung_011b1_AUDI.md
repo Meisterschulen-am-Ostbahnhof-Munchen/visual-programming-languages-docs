@@ -1,5 +1,6 @@
 # Exercise_011b1_AUDI: Numeric Value Input ADD
 ![Uebung_011b1_AUDI_network](./Uebung_011b1_AUDI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the processing of two ISOBUS numeric input values and their addition using special adapter blocks. The two incoming values (integers) are converted into an "AUDI"-compatible type via an adapter (`AD_TO_AUDI`), then summed in an addition block (`AUDI_ADD_2`), and the result is provided as an ISOBUS output object via an output block (`Q_NumericValue_AUDI`).

@@ -1,6 +1,7 @@
 # Exercise_022_AX: Mirror Sequence (2) - AX Variant
 No image available.
 ![Uebung_022_AX_network](./Uebung_022_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **mirror sequence** for two cylinders using the **AX variant** (adapter-based function blocks). Control is via three softkeys (F1, F2, F3). The operation is as follows:

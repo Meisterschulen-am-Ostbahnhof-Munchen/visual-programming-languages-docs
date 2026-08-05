@@ -70,6 +70,7 @@ Die Übung veranschaulicht den Umgang mit Adapter‑Schnittstellen, die Signalum
 Die Übung **217b_ALR** vermittelt den sicheren Umgang mit einem IEC 61131-3 Abwärtszähler im Adapter‑Format, der Signalumwandlung zwischen Ganzzahl‑ und Gleitkommatypen sowie der Anbindung einer Terminalausgabe. Sie zeigt die typische Verschaltung von logiBUS‑Ein‑/Ausgängen mit Funktionsbausteinen und bereitet auf die Realisierung zählerbasierter Steuerungsaufgaben vor.
 
 **Lernziele:**
+
 - Verständnis des IEC 61131-3 Zählers CTD (Abwärtszähler) mit LINT‑Datentyp
 - Umgang mit Adapter‑Schnittstellen (ALI, LI, ALR)
 - Konvertierung zwischen Datentypen (LINT → LREAL)

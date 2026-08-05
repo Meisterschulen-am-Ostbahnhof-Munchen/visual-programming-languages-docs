@@ -1,5 +1,6 @@
 # E_SR_SYM
 ![E_SR_SYM](./E_SR_SYM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The E_SR_SYM function block is an event-driven bistable element with symmetric start behavior. It implements a flip-flop that responds to set and reset events and whose initial state is not predetermined but is determined by the first arriving event.

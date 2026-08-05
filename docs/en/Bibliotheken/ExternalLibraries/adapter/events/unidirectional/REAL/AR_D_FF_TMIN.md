@@ -1,5 +1,6 @@
 # AR_D_FF_TMIN
 ![AR_D_FF_TMIN](./AR_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_D_FF_TMIN** implements a data latch (D flip-flop) with one input and one output adapter. It is characterized by the optional specification of a minimum time (`Tmin`) between successive event outputs. The core of the function block is based on the standard function block `E_D_FF_ANY_TMIN`, which handles the actual flip-flop logic and the timing.

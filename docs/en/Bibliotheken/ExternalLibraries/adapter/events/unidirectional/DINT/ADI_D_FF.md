@@ -1,5 +1,6 @@
 # ADI_D_FF
 ![ADI_D_FF](./ADI_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ADI_D_FF` implements a data latch (D flip-flop) based on adapters. It serves to store and output a Boolean value when an event occurs. The block encapsulates the industrial standard function block `E_D_FF_ANY` and communicates exclusively via the unidirectional adapters `ADI`.

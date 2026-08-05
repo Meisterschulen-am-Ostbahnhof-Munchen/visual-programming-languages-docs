@@ -1,5 +1,6 @@
 # Q_CtrlAudioSignal
 ![Q_CtrlAudioSignal](https://user-images.githubusercontent.com/116869307/214147202-f060b872-d3d6-4c56-92c9-84961ce5127b.png)
+
 * * * * * * * * * *
 ## Introduction
 The **Q_CtrlAudioSignal** is a standards-compliant function block for controlling audio devices in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.10) specification for agricultural tax systems.

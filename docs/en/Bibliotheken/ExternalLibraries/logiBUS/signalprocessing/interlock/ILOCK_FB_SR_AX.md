@@ -1,5 +1,6 @@
 # ILOCK_FB_SR_AX
 ![ILOCK_FB_SR_AX](./ILOCK_FB_SR_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ILOCK_FB_SR_AX** implements a set-dominant (set-priority) bistable flip-flop (RS latch) with interlock functionality. It is designed for use in safety and interlocking chains where a set signal can be propagated and fed back through multiple stages. The interface consists of two unidirectional AX adapters (SET1, RESET) and one AX2 bidirectional adapter pair (ILOCK_IN / ILOCK_OUT), as well as an output adapter Q1. The block operates in an event-driven manner and recalculates the output values with each incoming event.

@@ -48,17 +48,21 @@ Die Übung besteht aus fünf Funktionsbausteinen, die im logiBUS-Netzwerk mitein
 Die folgenden Ereignis- und Datenverbindungen definieren den Ablauf der Übung:
 
 **Ereignisverbindungen:**
+
 - Die Ereignisausgänge der drei digitalen Eingänge (DigitalInput_S.IND, DigitalInput_R.IND, DigitalInput_CLK.IND) sind alle mit dem Ereigniseingang des Flipflops (SR_T_FF.REQ) verbunden.  
   *Hinweis:* Dies bedeutet, dass jede Änderung an einem der Eingänge (S, R oder CLK) die Verarbeitung des Flipflops auslöst. In der Praxis sollte der Takt (CLK) den Hauptauslöser darstellen; die gleichzeitige Verknüpfung aller drei Eingänge ist hier als vereinfachte Übung gewählt.
+
 - Das Bestätigungsereignis des Flipflops (SR_T_FF.CNF) ist mit dem Ereigniseingang des Ausgangsbausteins (DigitalOutput_Q1.REQ) verbunden, sodass nach jeder Flipflop-Berechnung der Ausgang aktualisiert wird.
 
 **Datenverbindungen:**
+
 - DigitalInput_S.IN → SR_T_FF.S1 (Set-Eingang)
 - DigitalInput_R.IN → SR_T_FF.R (Reset-Eingang)
 - DigitalInput_CLK.IN → SR_T_FF.CLK (Taktsignal)
 - SR_T_FF.Q1 → DigitalOutput_Q1.OUT (Ausgangswert)
 
 **Ablauf:**
+
 1. Ein Signal an einem der digitalen Eingänge (I1, I2 oder I3) erzeugt ein Ereignis (IND).
 2. Dieses Ereignis triggert den Flipflop-Baustein (REQ).
 3. Der Flipflop wertet die aktuellen Datenwerte an S1, R und CLK aus und berechnet den neuen Zustand Q1 gemäß der set-dominanten Toggle-Logik.
@@ -66,6 +70,7 @@ Die folgenden Ereignis- und Datenverbindungen definieren den Ablauf der Übung:
 5. Der Ausgangsbaustein übernimmt den Wert (OUT) und setzt den physischen Ausgang Q1 entsprechend.
 
 **Lernziele:**
+
 - Verständnis der Funktionsweise eines set-dominanten Toggle-Flipflops (SR_T_FF).
 - Umgang mit logiBUS-Eingangs- und Ausgangsbausteinen.
 - Verknüpfung von Ereignis- und Datenflüssen in der 4diac-IDE.

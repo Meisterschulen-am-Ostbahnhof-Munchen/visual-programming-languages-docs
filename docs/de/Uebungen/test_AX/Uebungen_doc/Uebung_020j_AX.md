@@ -66,6 +66,7 @@ Der Ablauf der Übung gestaltet sich wie folgt:
     - Der Ausgang dieses Timers (`Q`) steuert den `DigitalOutput_Q2` an.
 
 **Lernziele:**
+
 - Verständnis von Adapter-Konzepten in 4diac (`AX`-Bausteine).
 - Verwendung von `AX_SPLIT`-Bausteinen zur Verzweigung von Daten- und Ereignisflüssen, die in Adaptern gekapselt sind.
 - Parametrierung von Adapter-Timern (`AX_TP`).

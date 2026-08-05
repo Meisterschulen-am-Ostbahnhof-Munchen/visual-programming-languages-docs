@@ -33,6 +33,7 @@ Die Funktionsbausteine sind wie folgt miteinander verbunden:
 Durch diese Kette wird bei jedem langen Tastendruck der festgelegte numerische Wert (hier das ISOBUS-Objekt `OutputNumber_N1`) ausgegeben.
 
 **Lernziele**:  
+
 - Verwendung von digitalen Eingangsbausteinen mit Ereignisauslösung (Long Press).  
 - Einsatz von Adaptern zur Konvertierung zwischen verschiedenen Protokoll‑/Datenformaten.  
 - Ausgabe numerischer Werte über ISOBUS‑Objekte.  

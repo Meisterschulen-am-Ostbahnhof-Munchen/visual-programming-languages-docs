@@ -63,6 +63,7 @@ Die Algorithmen setzen die Ausgangssignale:
 | **DOWN_STOP** | Deaktivierung von DOWN (wird sofort verlassen) | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = FALSE` |
 
 **Übergänge:**
+
 - `STOP → UP` bei Ereignis von `UP_IN` mit `UP_IN.D1 = TRUE`
 - `STOP → DOWN` bei Ereignis von `DOWN_IN` mit `DOWN_IN.D1 = TRUE`
 - `UP → UP_STOP` bei Ereignis von `UP_IN` mit `UP_IN.D1 = FALSE`

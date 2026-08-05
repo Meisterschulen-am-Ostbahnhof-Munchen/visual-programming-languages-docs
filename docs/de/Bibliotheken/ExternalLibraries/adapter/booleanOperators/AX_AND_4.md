@@ -26,9 +26,11 @@ Keine direkten Daten-Ausgänge vorhanden
 ### **Adapter**
 
 **Plug-Adapter:**
+
 - **OUT**: AND-Ergebnis (Adapter-Typ: adapter::types::unidirectional::AX)
 
 **Socket-Adapter:**
+
 - **IN1**: UND-Eingang 1 (Adapter-Typ: adapter::types::unidirectional::AX)
 - **IN2**: UND-Eingang 2 (Adapter-Typ: adapter::types::unidirectional::AX)
 - **IN3**: UND-Eingang 3 (Adapter-Typ: adapter::types::unidirectional::AX)

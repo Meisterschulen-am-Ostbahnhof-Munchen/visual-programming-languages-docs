@@ -26,9 +26,11 @@ Der AX_SPLIT_9 Funktionsblock ist ein generischer Baustein, der einen einzelnen 
 ### **Adapter**
 
 **Eingangsadapter:**
+
 - `IN` - Unidirektionaler AX-Adapter (Socket)
 
 **Ausgangsadapter:**
+
 - `OUT1` bis `OUT9` - Neun unidirektionale AX-Adapter (Plugs)
 
 ## Funktionsweise

@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_004a2_2`, based on the provided data.
 # Exercise_004a2_2: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_MERGE
 ![Uebung_004a2_2_network](./Uebung_004a2_2_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a circuit where an output (Q1) can be toggled by two different inputs (I1 and I2). It specifically responds to the "single click" event of the pushbuttons. The logic uses an event toggle flip-flop (`E_T_FF`) in combination with an event merge block (`E_MERGE_2`) to combine the signals from the two pushbuttons.

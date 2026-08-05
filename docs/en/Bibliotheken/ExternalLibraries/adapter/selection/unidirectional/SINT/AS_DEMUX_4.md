@@ -1,5 +1,6 @@
 # AS_DEMUX_4
 ![AS_DEMUX_4](./AS_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_DEMUX_4** serves as a demultiplexer for a unidirectional adapter of type `AS`. It routes the adapter input at a single input to one of four possible outputs. The target output is selected via a numeric index, which is specified when an event is requested. The block is implemented as a generic type (`GEN_AS_DEMUX`) and is suitable for use in modular control architectures where data flows need to be switched dynamically.

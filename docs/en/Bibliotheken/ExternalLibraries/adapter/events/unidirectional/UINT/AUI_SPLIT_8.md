@@ -1,5 +1,6 @@
 # AUI_SPLIT_8
 ![AUI_SPLIT_8](./AUI_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUI_SPLIT_8` is used to distribute an incoming AUI adapter signal (unidirectional) to eight identical output adapters. It functions as a passive splitter and enables the simple distribution of a signal path to multiple downstream components. The function block is generic and uses the adapter pattern of IEC 61499.

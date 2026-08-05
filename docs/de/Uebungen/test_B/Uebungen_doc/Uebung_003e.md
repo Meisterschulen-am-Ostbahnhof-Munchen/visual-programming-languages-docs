@@ -28,16 +28,19 @@ Die Übung besteht aus folgenden FB-Instanzen:
   Parameter: QI = TRUE, Output = Output_Q8 (Bypass-Ventil)
 
 **Ereignisverbindungen:**  
+
 - `DigitalInput_I1.IND` → `BYPASS_1.REQ`  
 - `BYPASS_1.CNF` → `DigitalOutput_Q1.REQ`  
 - (Analog für I2–I4)
 
 **Datenverbindungen:**  
+
 - `DigitalInput_I1.IN` → `BYPASS_1.IN`  
 - `BYPASS_1.OUT` → `DigitalOutput_Q1.OUT`  
 - (Analog für I2–I4)
 
 **Adapterverbindungen (Bypass-Kette):**  
+
 - `BYPASS_1.BY_OUT` → `BYPASS_2.BY_IN`  
 - `BYPASS_2.BY_OUT` → `BYPASS_3.BY_IN`  
 - `BYPASS_3.BY_OUT` → `BYPASS_4.BY_IN`  

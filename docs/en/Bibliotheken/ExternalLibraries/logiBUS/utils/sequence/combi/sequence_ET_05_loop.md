@@ -1,6 +1,7 @@
 # sequence_ET_05_loop
 <img width="1683" height="398" alt="image" src="https://github.com/user-attachments/assets/caae5b56-a31e-4867-ae04-0be4eeb193b6" />
 ![sequence_ET_05_loop_ecc](./sequence_ET_05_loop_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_ET_05_loop` implements a cyclic sequence with five states. The transition between the individual states can occur either through an external event or after a configurable time has elapsed. This block is designed for applications where a process must be executed step by step, triggering various actions in a fixed sequence, such as in packaging machines, assembly processes, or washing programs.

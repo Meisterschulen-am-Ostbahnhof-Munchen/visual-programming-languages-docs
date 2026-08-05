@@ -1,6 +1,7 @@
 # ALR_TO_AR
 ![ALR_TO_AR](./ALR_TO_AR.svg)
 *No image available*
+
 * * * * * * * * * *
 ## Introduction
 The **ALR_TO_AR** function block is a composite block that converts an LREAL adapter (ALR) into a REAL adapter (AR). It serves as a link between control components operating with different floating-point accuracies and enables clean, event-driven data conversion within an IEC 61499 network.

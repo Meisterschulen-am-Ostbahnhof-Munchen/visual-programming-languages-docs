@@ -1,5 +1,6 @@
 # AL_TO_AUS
 ![AL_TO_AUS](./AL_TO_AUS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block AL_TO_AUS converts an AL adapter (LWORD) into an AUS adapter (USINT). It is implemented as a composite function block and encapsulates the conversion logic using the function block F_LWORD_TO_USINT. Input and output are handled via unidirectional adapter interfaces.

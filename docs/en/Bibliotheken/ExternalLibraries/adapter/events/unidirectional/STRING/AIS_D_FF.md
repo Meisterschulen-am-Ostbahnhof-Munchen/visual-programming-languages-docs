@@ -1,5 +1,6 @@
 # AIS_D_FF
 ![AIS_D_FF](./AIS_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The `AIS_D_FF` function block implements a clock-edge-triggered D flip-flop (data latch). It is used to store and output a data value upon receiving a clock event. Communication is exclusively via AIS adapters (unidirectional), allowing the function block to be integrated into adapter-based component architectures.

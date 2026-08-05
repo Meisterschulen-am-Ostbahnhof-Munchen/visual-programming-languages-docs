@@ -1,5 +1,6 @@
 # AB_MUX_3
 ![AB_MUX_3](./AB_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AB_MUX_3` is a generic multiplexer for adapters of type `adapter::types::unidirectional::AB`. Depending on the value of the index `K` (0, 1, or 2), it selects one of three inputs (`IN1`, `IN2`, `IN3`) and passes it to the output `OUT`. The switching is triggered by the event `REQ` and acknowledged upon completion with `CNF`.

@@ -1,5 +1,6 @@
 # AE_SPLIT_7
 ![AE_SPLIT_7](./AE_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_SPLIT_7** is used to distribute a single incoming adapter event (AE) to seven identical output adapters. It is a generic function block designed for unidirectional adapters of type `adapter::types::unidirectional::AE`. The function block enables star-shaped routing of an event signal to multiple downstream function blocks without modifying or delaying the events.

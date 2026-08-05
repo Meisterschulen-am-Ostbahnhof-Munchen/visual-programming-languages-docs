@@ -1,5 +1,6 @@
 # ADI_MUX_2
 ![ADI_MUX_2](./ADI_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_MUX_2** is a generic multiplexer for ADI (Agricultural Data Interface) adapters. It allows selection between two ADI inputs (IN1 and IN2) and routes the selected input to the output OUT. Selection is made via the index K, which is set by an event.

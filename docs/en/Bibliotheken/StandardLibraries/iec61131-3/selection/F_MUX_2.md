@@ -1,5 +1,6 @@
 # F_MUX_2
 ![F_MUX_2](https://user-images.githubusercontent.com/116869307/214145411-87b2a7e5-fd56-4491-aaca-385941a399ab.png)
+
 * * * * * * * * * *
 ## Introduction
 The F_MUX_2 is a multiplexer function block according to IEC 61131-3, classified as a standard selection function. This block allows selection between two input signals based on a control signal.

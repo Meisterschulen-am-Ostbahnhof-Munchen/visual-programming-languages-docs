@@ -1,6 +1,7 @@
 # E_SREN
 <img width="1633" height="341" alt="image" src="https://github.com/user-attachments/assets/637ba12a-c1ae-4cc7-a7c5-06b2888347d5" />
 ![E_SREN_ecc](./E_SREN_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The E_SREN (Event-driven quad-state) is an event-driven function block that controls an output with four defined states. It reacts to various input events and sets its output accordingly to one of the four states: Enabled (`SET`), Disabled (`RESET`), Error (`ERROR`), or No Action (`NONE`). This function block is particularly suitable for applications where a signal must represent multiple operating states, such as in monitoring or control systems.

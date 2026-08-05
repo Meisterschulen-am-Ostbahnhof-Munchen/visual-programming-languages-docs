@@ -1,5 +1,6 @@
 # AR_ADD_2
 ![AR_ADD_2](./AR_ADD_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_ADD_2** is used to calculate the arithmetic addition of two values. It is designed as a generic function block and implements the basic arithmetic operation via adapter interfaces. The block is platform-independent and complies with the IEC 61499 standard.

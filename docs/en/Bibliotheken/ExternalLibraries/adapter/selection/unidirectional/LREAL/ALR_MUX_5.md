@@ -1,5 +1,6 @@
 # ALR_MUX_5
 ![ALR_MUX_5](./ALR_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_MUX_5** is a generic multiplexer for the adapter type `adapter::types::unidirectional::ALR`. It selects one of five input adapters (IN1 to IN5) and forwards its values via the output adapter OUT. The selection is made using the index K (an integer value from 0 to 4). The function block is controlled via the event input REQ and confirms execution with the output CNF.

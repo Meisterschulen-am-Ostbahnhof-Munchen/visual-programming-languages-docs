@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_020j_AX` based on the provided XML data.
 # Exercise_020j_AX: DigitalInput_I1 to DigitalOutput_Q1/2; 2xAX_TP; Pulse Shaping
 ![Uebung_020j_AX_network](./Uebung_020j_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 Exercise **Exercise_020j_AX** demonstrates the use of adapter connections for signal processing. A digital input signal (`Input_I1`) is read, split, and used to control two digital outputs (`Output_Q1` and `Output_Q2`). Pulse-shaping timers are used, communicating via adapter interfaces.

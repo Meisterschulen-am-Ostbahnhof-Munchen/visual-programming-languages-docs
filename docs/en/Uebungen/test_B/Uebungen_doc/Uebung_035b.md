@@ -1,6 +1,7 @@
 Here is the documentation for exercise **Exercise_035b** based on the provided XML data.
 # Exercise_035b: Mirror Sequence V2 with Step Chain
 ![Uebung_035b_network](./Uebung_035b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a step chain controller (sequencer) called "Mirror Sequence V2." The goal is the sequential control of four digital outputs (Q1 to Q4). Additionally, the current status of the step chain is visualized as a numerical value on a user interface. Control is achieved via digital inputs, which can start, modify, or reset the sequence.

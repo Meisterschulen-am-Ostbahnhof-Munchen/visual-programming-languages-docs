@@ -1,5 +1,6 @@
 # AUI_TO_AR
 ![AUI_TO_AR](./AUI_TO_AR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AUI_TO_AR** function block is a composite component that converts an AUI adapter (UINT) into an AR adapter (REAL). It enables the seamless integration of an unsigned integer signal into systems that expect a REAL value by passing the event and data value through one-to-one.

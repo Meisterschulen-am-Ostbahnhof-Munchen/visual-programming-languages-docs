@@ -1,5 +1,6 @@
 # SET_LREAL
 ![SET_LREAL](./SET_LREAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **SET_LREAL** is used to pass a value of type LREAL to an InOut variable. The input value is written to the target variable on a rising edge of the REQ event, and the operation is acknowledged via the CNF event.

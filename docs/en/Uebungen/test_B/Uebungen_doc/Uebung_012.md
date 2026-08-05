@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_012`. It demonstrates how numeric values are not only displayed but also stored in the controller (NVS - Non-Volatile Storage) in a power-failure-proof manner.
 ## 🎧 Podcast
 ![Uebung_012_network](./Uebung_012_network.svg)
+
 * [Amazon Pizza Rule to IKEA Effect: 12 Amazingly Simple Ideas Behind Huge Business Success ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Amazon-Pizza-Regel-bis-IKEA-Effekt-12-verblffend-einfache-Ideen-hinter-riesigem-Geschftserfolg-e39kmmc)
 
 ----

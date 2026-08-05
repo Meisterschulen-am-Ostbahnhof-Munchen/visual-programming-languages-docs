@@ -1,5 +1,6 @@
 # AR_MUX_2
 ![AR_MUX_2](./AR_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AR_MUX_2** is a generic 2-to-1 multiplexer (MUX) that operates via adapter interfaces (type `AR`, unidirectional). It selects one of two adapter inputs (`IN1`, `IN2`) based on an index value `K` and forwards its signal to the adapter output `OUT`. The function block is controlled by the event `REQ` and acknowledges the selection with `CNF`.

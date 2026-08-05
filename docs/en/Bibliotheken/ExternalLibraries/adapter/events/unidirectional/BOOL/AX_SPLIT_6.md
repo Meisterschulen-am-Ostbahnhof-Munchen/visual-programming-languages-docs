@@ -20,6 +20,7 @@ The AX_SPLIT_6 function block is a generic component used to split a single AX a
 
 ### **Adapters**
 **Input Adapter:**
+
 - **IN** (Socket): Receives incoming AX signals from the source system
 
 **Output Adapter:**

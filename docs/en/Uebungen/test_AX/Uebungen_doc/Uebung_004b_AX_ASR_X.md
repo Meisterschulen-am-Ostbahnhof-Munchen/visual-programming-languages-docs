@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_004b_AX_ASR_X`.
 # Exercise_004b_AX_ASR_X: Toggle Flip-Flop with IE / E_SWITCH + E_SR
 ![Uebung_004b_AX_ASR_X_network](./Uebung_004b_AX_ASR_X_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **toggle flip-flop**, but using a very specific approach with adapter components (`AX`). The circuit's goal is to change the output state (On -> Off -> On) upon receiving an input signal (button press).

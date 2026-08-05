@@ -1,5 +1,6 @@
 # AUI_D_FF_HYS_TMIN
 ![AUI_D_FF_HYS_TMIN](./AUI_D_FF_HYS_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_D_FF_HYS_TMIN** is a data storage device (D flip-flop) with adjustable hysteresis and a minimum intermediate event time (`Tmin`). It is connected to other function blocks via adapter interfaces (socket `I` and plug `Q`). The internal core corresponds to function block `E_D_FF_ANY_HYS_TMIN` from the library `logiBUS::signalprocessing::hysteresis`. The initialization defines the parameters. Afterward, for each incoming event at input `I.E1`, the current value from `I.D1` is taken, filtered, and output via `Q.D1`.

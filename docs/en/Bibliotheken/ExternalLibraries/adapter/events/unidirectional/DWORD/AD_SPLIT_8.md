@@ -1,5 +1,6 @@
 # AD_SPLIT_8
 ![AD_SPLIT_8](./AD_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AD_SPLIT_8** is a generic function block for splitting an incoming unidirectional AD adapter signal into eight separate outputs. It enables the distribution of an analog or digital signal to multiple downstream components without altering the signal.

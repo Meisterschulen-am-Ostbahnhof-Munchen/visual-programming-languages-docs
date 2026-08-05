@@ -1,5 +1,6 @@
 # AE_SWITCH
 ![AE_SWITCH](./AE_SWITCH.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AE_SWITCH** function block acts as an event demultiplexer. It forwards an incoming event to one of two unidirectional event adapter outputs, depending on the value of a Boolean input `G`.

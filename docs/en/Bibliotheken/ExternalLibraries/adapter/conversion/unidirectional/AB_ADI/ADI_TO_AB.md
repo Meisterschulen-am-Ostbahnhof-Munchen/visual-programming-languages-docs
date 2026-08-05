@@ -1,5 +1,6 @@
 # ADI_TO_AB
 ![ADI_TO_AB](./ADI_TO_AB.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ADI_TO_AB` serves as a composite module for converting a 32-bit integer value (DINT) into a byte value (BYTE). It encapsulates the conversion between two unidirectional adapters: the **ADI adapter** (input) and the **AB adapter** (output). The module is used to transfer data from a DINT adapter to a BYTE adapter without requiring the user to implement the actual conversion logic.

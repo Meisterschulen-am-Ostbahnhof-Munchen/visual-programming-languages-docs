@@ -44,6 +44,7 @@ Alle Ereignisse führen zu einer Aktualisierung des Ausgangs `Q` und feuern das 
 ## Anwendungsbeispiel
 
 **Gebäude-Lichtsteuerung**:
+
 *   **Vor Ort**: Ein Taster im Zimmer toggelt das Licht (`I3`).
 *   **Zentrale**: Am Hauseingang gibt es einen Taster "Gute Nacht", der alle Lichter per Reset (`I2`) ausschaltet.
 *   **Alarmanlage**: Im Falle eines Einbruchs setzt die Zentrale alle Lichter per Set (`I1`) dauerhaft ein.

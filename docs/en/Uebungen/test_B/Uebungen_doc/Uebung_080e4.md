@@ -1,5 +1,6 @@
 # Exercise_080e4: Example of an E_CTU with Event Brake using E_D_FF_ANY
 ![Uebung_080e4_network](./Uebung_080e4_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an **E_CTU** (event counter) in combination with an **event brake**, implemented using an **E_D_FF_ANY** (E_D flip-flop with hysteresis and minimum time). The goal is to only forward the counter result to a numerical output if the counter value remains stable for a specific period. This suppresses bounce or short-term fluctuations.

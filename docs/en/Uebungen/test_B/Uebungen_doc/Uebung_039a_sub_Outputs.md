@@ -2,6 +2,7 @@ Here is the documentation for the exercise based on the provided XML data.
 # Exercise_039a_sub_Outputs: Subapplication Type
 ![Image of the exercise, if available]
 ![Uebung_039a_sub_Outputs_network](./Uebung_039a_sub_Outputs_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 

@@ -1,5 +1,6 @@
 # AS_SPLIT_9
 ![AS_SPLIT_9](./AS_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_SPLIT_9** is used to split an incoming **AS adapter** (unidirectional) into nine separate output adapters. It is implemented as a generic function block and distributes the AS signal present at socket `IN` identically to all nine plug outputs (`OUT1` … `OUT9`). This makes it ideal for routing a single AS signal multiple times to different downstream components.

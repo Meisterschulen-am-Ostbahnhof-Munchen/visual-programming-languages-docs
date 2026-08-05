@@ -42,6 +42,7 @@ Der Ablauf ist rein ereignisgesteuert:
 3. Da keine weiteren Verarbeitungsschritte erfolgen, wird der Wert eins zu eins übertragen.  
 
 **Lernziele**:  
+
 - Verständnis der direkten Verknüpfung von physikalischen Ein‑/Ausgängen mittels `NumericValue_PHYS` und `Q_NumericValue_PHYS`.  
 - Kennenlernen der ereignisgesteuerten Datenweitergabe (ohne zusätzliche Logik).  
 - Anwendung des `NumericObjectPool_S` zur Konfiguration von I/O‑Objekten.  

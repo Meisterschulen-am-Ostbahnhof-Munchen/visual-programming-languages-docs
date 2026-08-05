@@ -1,5 +1,6 @@
 # Q_SoftKeyMask
 ![Q_SoftKeyMask](https://user-images.githubusercontent.com/116869307/214153149-6b211119-6c29-4154-bfa3-d1dd61a435bb.png)
+
 * * * * * * * * * *
 ## Introduction
 The **Q_SoftKeyMask** is a standards-compliant function block for managing softkey masks in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.36) specification for VT systems.

@@ -1,5 +1,6 @@
 # AW_MUX_4
 ![AW_MUX_4](./AW_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AW_MUX_4** function block is a generic multiplexer (MUX) for the unidirectional adapter type *AW*. It allows the selection of one of four adapter inputs (IN1–IN4) and forwards its data to the adapter output (OUT). The selection is triggered by an event-driven index specification. The function block is particularly suitable for systems that require flexible switching between different signals or data sources of type *AW*.

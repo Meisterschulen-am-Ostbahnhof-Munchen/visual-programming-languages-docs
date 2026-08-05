@@ -1,5 +1,6 @@
 # AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED
 ![AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED](./AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED` processes a digital fieldbus signal (DWORD) into a scaled analog output value. It mirrors the input value to the output, provided the signal is valid, and applies linear scaling with an offset. The valid signal state information is synchronized via an edge-triggered flip-flop and provided as a separate output signal.

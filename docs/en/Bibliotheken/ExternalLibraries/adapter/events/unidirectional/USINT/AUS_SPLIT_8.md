@@ -1,5 +1,6 @@
 # OFF_SPLIT_8
 ![AUS_SPLIT_8](./AUS_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **OFF_SPLIT_8** is a generic function block for distributing an incoming OFF signal to up to eight separate outputs. It serves as a simple "splitter" for signals of the type **adapter::types::unidirectional::OFF** and enables the parallel control of multiple devices or subsequent function blocks.

@@ -1,5 +1,6 @@
 # ASR_SPLIT_4
 ![ASR_SPLIT_4](./ASR_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ASR_SPLIT_4** is a generic block that distributes an incoming unidirectional ASR adapter (actuator-control adapter) signal to four separate, identical ASR outputs. It enables the simultaneous control of up to four independent actuators or subsystems with the same signal without compromising signal integrity. The block is designed for use in distributed automation systems according to IEC 61499.

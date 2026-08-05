@@ -1,5 +1,6 @@
 # AQ_SPLIT_3
 ![AQ_SPLIT_3](./AQ_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AQ_SPLIT_3` implements a 1-to-3 split (fan-out) of a unidirectional AQ adapter signal. An incoming AQ adapter signal is copied to three identical output adapters and made available in parallel.

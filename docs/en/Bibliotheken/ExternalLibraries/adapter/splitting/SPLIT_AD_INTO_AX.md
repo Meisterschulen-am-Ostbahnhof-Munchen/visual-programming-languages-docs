@@ -1,5 +1,6 @@
 # SPLIT_AD_INTO_AX
 ![SPLIT_AD_INTO_AX](./SPLIT_AD_INTO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The SPLIT_AD_INTO_AX function block splits a 32-bit data word received via an AD adapter (DWORD) into 32 separate AX adapters (BOOL). Each AX adapter represents a single bit of the original DWORD value. The block encapsulates the necessary event control and data storage in a modular, easy-to-use function block.

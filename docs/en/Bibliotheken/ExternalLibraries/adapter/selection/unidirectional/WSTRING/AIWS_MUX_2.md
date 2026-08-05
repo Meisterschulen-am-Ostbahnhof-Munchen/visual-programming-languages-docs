@@ -1,5 +1,6 @@
 # AIWS_MUX_2
 ![AIWS_MUX_2](./AIWS_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AIWS_MUX_2 is a generic multiplexer for the AIWS adapter. It allows selection between two AIWS input signals (IN1, IN2) and forwards the selected signal to the output (OUT). The selection is triggered by an event using an index K.

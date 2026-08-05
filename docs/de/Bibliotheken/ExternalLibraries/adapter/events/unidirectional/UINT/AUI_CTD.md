@@ -73,6 +73,7 @@ Der Ablauf wird durch folgende ECC-Zustände gesteuert:
 | **EMIT_Q**    | Speichert den aktuellen **Q**-Wert und löst **Q.E1** aus.    | `SAVE_Q (Q_OLD:=Q)`, `Q.E1`      |
 
 **Transitionen**:  
+
 - Nach **CD**, **LD** oder **UPDATE_PV** wird nur dann zu **EMIT_Q** gewechselt, wenn `Q.D1 ≠ Q_OLD`.  
 - Bei Gleichheit (`Q.D1 = Q_OLD`) erfolgt sofort die Rückkehr zu **START**, ohne **Q.E1** auszulösen.  
 - Von **EMIT_Q** wird stets zurück zu **START** gewechselt.

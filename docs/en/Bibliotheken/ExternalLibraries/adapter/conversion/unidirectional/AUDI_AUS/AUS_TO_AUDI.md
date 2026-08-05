@@ -1,5 +1,6 @@
 # AUS_TO_AUDI
 ![AUS_TO_AUDI](./AUS_TO_AUDI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The composite function block **AUS_TO_AUDI** converts a unidirectional adapter of type **AUS** (based on USINT values) into an adapter of type **AUDI** (based on UDINT values). It is used to translate data between two different adapter interfaces without altering the underlying data logic. The block is implemented as a pure pass-through component, forwarding events and data directly from the input to the output side.

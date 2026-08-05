@@ -1,5 +1,6 @@
 # ADI_DEMUX_3
 ![ADI_DEMUX_3](./ADI_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_DEMUX_3** is a generic demultiplexer for adapter data (ADI). It forwards an incoming ADI value via the adapter socket **IN** to one of three output adapters, **OUT1**, **OUT2**, or **OUT3**, depending on the index **K**.

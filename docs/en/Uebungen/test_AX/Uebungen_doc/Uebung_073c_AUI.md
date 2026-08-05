@@ -1,5 +1,6 @@
 # Exercise_073c_AUI: Outputting VDS and GBSD to a Universal Terminal (UT) using PHYS (Adapter Version)
 ![Uebung_073c_AUI_network](./Uebung_073c_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the output of the speed signals **Ground Based Speed (GBSD)** and **Vehicle/Drive Speed (VDS)** to a Universal Terminal (UT) using physical addresses (PHYS). The signals are received via ISOBUS adapters (IA), scaled, and displayed on the UT using the `Q_NumericValue_PHYSA` blocks.

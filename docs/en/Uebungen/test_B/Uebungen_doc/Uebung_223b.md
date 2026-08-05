@@ -1,5 +1,6 @@
 # Exercise_223b: Standard IEC 61131-3 FB_CTUD_UDINT (Forward/Backward Counter, UDINT) with Terminal Output (PHYS)
 ![Uebung_223b_network](./Uebung_223b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a forward/backward counting function block according to IEC 61131-3 (type `FB_CTUD_UDINT`) with a value range of type `UDINT`. The current counter reading is also output to a terminal (PHYS). The counter functions are controlled via four digital inputs, and two digital outputs signal the counter direction.

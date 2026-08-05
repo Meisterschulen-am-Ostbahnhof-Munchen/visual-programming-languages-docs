@@ -1,5 +1,6 @@
 # AIWS_MUX_3
 ![AIWS_MUX_3](./AIWS_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIWS_MUX_3** is a generic multiplexer for the unidirectional data type *AIWS*. It selects one of three input adapters (`IN1`, `IN2`, `IN3`) according to a passed index `K` and makes this adapter available at the output adapter `OUT`. The selection is initiated by an event `REQ` and acknowledged by `CNF`.

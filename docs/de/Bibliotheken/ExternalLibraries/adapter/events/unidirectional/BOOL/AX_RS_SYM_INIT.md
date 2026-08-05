@@ -81,6 +81,7 @@ Die `QI`-Variable fungiert als Qualifier: Nur wenn `QI = TRUE`, werden die Opera
 | RESET   | Aktiver Reset-Zustand (Q.D1 = FALSE)              |
 
 **Wichtige Transitionen:**
+
 - START → Init bei INIT mit QI = TRUE
 - Init → SET bei Q_INIT = TRUE
 - Init → RESET bei Q_INIT = FALSE

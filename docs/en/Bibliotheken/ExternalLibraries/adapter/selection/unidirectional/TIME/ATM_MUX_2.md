@@ -1,5 +1,6 @@
 # ATM_MUX_2
 ![ATM_MUX_2](./ATM_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ATM_MUX_2** is a generic multiplexer for two ATM data channels. It selects one of the two input adapters (`IN1` or `IN2`) based on a numerical index (`K`) and forwards its data via the output adapter (`OUT`). This block is used for dynamic switching between two unidirectional data sources and is suitable for systems that need to switch between different ATM-like data streams.

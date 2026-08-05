@@ -1,6 +1,7 @@
 # sequence_ET_04_loop
 <img width="1668" height="355" alt="image" src="https://github.com/user-attachments/assets/9b71d8ed-bd09-4337-ae95-611573db02af" />
 ![sequence_ET_04_loop_ecc](./sequence_ET_04_loop_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_ET_04_loop` implements a cyclic sequence with four states. The transition between states can occur either through an external event or after a configurable time has elapsed. The block is designed to implement recurring processes in control applications where actions must be executed sequentially in a loop.

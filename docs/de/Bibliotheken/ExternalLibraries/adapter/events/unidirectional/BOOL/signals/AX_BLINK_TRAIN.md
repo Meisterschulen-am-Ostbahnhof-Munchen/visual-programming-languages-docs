@@ -13,6 +13,7 @@ Der AX_BLINK_TRAIN ist ein Funktionsblock, der ein Zug-Blinksignal (abwechselnd 
 
 ### **Adapter**
 **Plugs (Ausgänge):**
+
 - **OUT1** (adapter::types::unidirectional::AX)
 - **OUT2** (adapter::types::unidirectional::AX)
 

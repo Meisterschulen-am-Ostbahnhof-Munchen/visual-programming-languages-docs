@@ -1,5 +1,6 @@
 # Radio_DI
 ![Funk_DI](./Funk_DI.svg)
+
 * * * * * * * * * *
 ## Introduction
 Radio_DI is a GlobalConstants package for the 4diac IDE that defines constants for digital inputs in radio systems. The package provides predefined pin configurations for various digital input signals that can be used in control applications.

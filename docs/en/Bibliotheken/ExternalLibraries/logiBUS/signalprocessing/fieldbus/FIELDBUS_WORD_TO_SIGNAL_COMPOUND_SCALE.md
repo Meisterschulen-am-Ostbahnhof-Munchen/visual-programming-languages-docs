@@ -1,5 +1,6 @@
 # FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE
 ![FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE](./FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE.svg)
+
 * * * * * * * * * *
 ## Introduction
 This function block maps a 16-bit word input to a scaled real value. The incoming word is first checked for validity. If the signal is valid, the upper and lower bytes are multiplied by their respective scaling factors and added with an offset. The result is output as the scale of the original fieldbus signal.
@@ -74,6 +75,7 @@ temp := SHR(IN, SINT#8);
 highByte := temp AND WORD#16#00FF;
 lowByte := IN AND WORD#16#00FF;
 OUT := UINT_TO_REAL(WORD_TO_UINT(highByte)) * SCALE_HIGH
+
 + UINT_TO_REAL(WORD_TO_UINT(lowByte)) * SCALE_LOW
 + DINT_TO_REAL(OFFSET);
 VALID := BOOL#TRUE;

@@ -1,5 +1,6 @@
 # Exercise_217b: Standard IEC 61131-3 FB_CTD_LINT (Down Counter, LINT) with Terminal Output (PHYS_LREAL)
 ![Uebung_217b_network](./Uebung_217b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a down counter according to IEC 61131-3 (type `FB_CTD_LINT`) that uses a LINT data type. The current counter value is displayed on a terminal via a physical LREAL output. The exercise demonstrates the use of a standard IEC counter, its connection to real inputs/outputs (logiBUS), and the data type conversion from LINT to LREAL for terminal output.

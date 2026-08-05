@@ -27,6 +27,7 @@ Die Übung enthält keine weiteren Verbindungen oder Ereignisverknüpfungen – 
 
 ## Zusammenfassung
 *Uebung_012k_AIS* zeigt, wie man einen sicheren, persistenten Speichervorgang für einen String mithilfe eines AIS-Adapters realisiert. Der Lernende erhält Einblicke in:
+
 - die Verwendung von NVS-Konstanten (`KEY`, `SECTION`),
 - die Einbindung eines Adapter-basierten Subbausteins,
 - die Parameterübergabe über die 4diac-IDE.

@@ -1,5 +1,6 @@
 # AVG
 ![AVG](./AVG.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AVG** (Array Average) function block calculates the arithmetic mean (average) of all elements in an integer array. It is designed for use in control engineering and enables rapid statistical analysis of measured values or process data.

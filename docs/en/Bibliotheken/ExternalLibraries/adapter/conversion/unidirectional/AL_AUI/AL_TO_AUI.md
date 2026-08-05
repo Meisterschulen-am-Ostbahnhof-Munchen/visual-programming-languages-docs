@@ -1,5 +1,6 @@
 # AL_TO_AUI
 ![AL_TO_AUI](./AL_TO_AUI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AL_TO_AUI** function block is a composite component that converts an LWORD adapter (AL) into a UINT adapter (AUI). It enables the seamless integration of LWORD-based interfaces into systems that expect UINT data by encapsulating the conversion within a standardized adapter structure.

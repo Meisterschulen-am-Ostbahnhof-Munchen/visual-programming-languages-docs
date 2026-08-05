@@ -1,5 +1,6 @@
 # AX_NOOP
 ![AX_NOOP](./AX_NOOP.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_NOOP** (No Operation) serves as a pure pass-through function. It connects an incoming adapter (`IN`) directly to an outgoing adapter (`OUT`) without modifying data or processing events. This function block is designed as a basic block for testing, debugging, and placeholder purposes.

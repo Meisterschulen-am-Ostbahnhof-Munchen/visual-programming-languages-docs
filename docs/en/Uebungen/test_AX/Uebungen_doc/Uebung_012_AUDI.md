@@ -1,5 +1,6 @@
 # Exercise_012_AUDI: Numeric Value Input and Storage
 ![Uebung_012_AUDI_network](./Uebung_012_AUDI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the acquisition of a numeric value via the isobus I/O stack, its conversion into a format compatible with the audio control system, and its persistent storage in non-volatile memory (NVS). The stored value is then output via another isobus output module. The goal is to understand the data flow between input, conversion, storage, and output.

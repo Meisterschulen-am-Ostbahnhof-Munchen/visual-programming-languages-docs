@@ -1,5 +1,6 @@
 # AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED
 ![AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED](./AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED` is used to receive an incoming byte-shaped signal via an adapter, process it with a configurable scaling factor and offset, and provide the result via an output adapter. Simultaneously, the validity of the signal is indicated via a separate adapter. This function block is specifically designed for use in fieldbus environments where raw data needs to be converted into physical or standardized values.

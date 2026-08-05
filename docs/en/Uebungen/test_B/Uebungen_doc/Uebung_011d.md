@@ -1,5 +1,6 @@
 # Exercise_011d: Passing Numeric Value Input I1 to N3 (Offset/Scale Effect)
 ![Uebung_011d_network](./Uebung_011d_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 In this exercise, a numeric value is read from an input device (I1) and passed unchanged to an output device (N3). Using a conversion block, the incoming 32-bit value of `DWORD` is converted to `UDINT`. This type conversion results in an offset/scaling effect, which shifts the output relative to the raw value.

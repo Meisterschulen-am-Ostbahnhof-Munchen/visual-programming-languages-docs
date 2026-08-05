@@ -37,6 +37,7 @@ Der `E_TABLE` (Event Table) ist ein Funktionsbaustein nach IEC 61499, der eine e
 4.  **Stopp**: Ein `STOP`-Ereignis bricht die Sequenz an jeder Stelle sofort ab.
 
 **Beispiel:**
+
 - `N` = 3
 - `DT` = `[T#2s, T#5s, T#1s]`
 - Nach einem `START`-Ereignis:

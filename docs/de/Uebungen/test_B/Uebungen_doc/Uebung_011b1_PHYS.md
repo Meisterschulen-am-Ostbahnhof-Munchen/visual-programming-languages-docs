@@ -50,11 +50,13 @@ Der Ablauf ist ereignisgesteuert:
 4. Nach der Addition sendet `ADD_2` das `CNF`-Ereignis, welches den Baustein `Q_NumericValue_PHYS` triggert, den Ausgangswert zu setzen.
 
 **Datenverbindungen**:
+
 - `InputNumber_I3.rPhys` → `ADD_2.IN1`
 - `InputNumber_I4.rPhys` → `ADD_2.IN2`
 - `ADD_2.OUT` → `Q_NumericValue_PHYS.rPhys`
 
 **Ereignisverbindungen**:
+
 - `InputNumber_I3.IND` → `ADD_2.REQ`
 - `InputNumber_I4.IND` → `ADD_2.REQ`
 - `ADD_2.CNF` → `Q_NumericValue_PHYS.REQ`

@@ -1,5 +1,6 @@
 # NVS_AB2
 ![NVS_AB2](./NVS_AB2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **NVS_AB2** enables the loading and saving of `REAL` data in non-volatile storage (NVS) using a string key. It encapsulates NVS access in a convenient, asynchronous interface and communicates with the environment via a bidirectional **AB2** adapter. This makes the block particularly suitable for scenarios where configuration values or status data need to be permanently stored on an ESP32.

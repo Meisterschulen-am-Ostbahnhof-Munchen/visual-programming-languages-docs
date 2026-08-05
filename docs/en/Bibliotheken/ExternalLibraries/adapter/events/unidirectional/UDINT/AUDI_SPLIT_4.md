@@ -1,5 +1,6 @@
 # AUDI_SPLIT_4
 ![AUDI_SPLIT_4](./AUDI_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_SPLIT_4** is used to distribute an incoming unidirectional **AUDI** adapter signal to four identical outputs. It functions as a simple signal distributor (fan-out) for the generic adapter type **AUDI**. The block is implemented as a generic function block (Generic FB) and can be adapted to different adapter types via the class `GEN_AUDI_SPLIT`.

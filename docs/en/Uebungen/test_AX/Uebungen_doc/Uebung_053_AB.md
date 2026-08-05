@@ -1,5 +1,6 @@
 # Exercise_053_AB: DigitalInput_I1-_I4 to DigitalOutput_Q1-_Q4
 ![Uebung_053_AB_network](./Uebung_053_AB_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates how four digital inputs (I1 to I4) are combined into a single byte using an adapter and then split back into four digital outputs (Q1 to Q4). It demonstrates how parallel binary signals can be converted into a data bus and recovered using the function blocks `ASSEMBLE_AB_FROM_AX` and `SPLIT_AB_INTO_AX`.

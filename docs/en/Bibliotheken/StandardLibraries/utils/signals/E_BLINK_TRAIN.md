@@ -1,5 +1,6 @@
 # E_BLINK_TRAIN
 ![E_BLINK_TRAIN](https://github.com/user-attachments/assets/41c5817d-1229-455b-b5c9-e7ad4003e0c5)
+
 * * * * * * * * * *
 ## Introduction
 The function block `E_BLINK_TRAIN` simulates a flashing signal that is switched on and off for specific time intervals. The number of flash cycles can be limited. Unlike similar flashing function blocks, this FB always returns to the state `FALSE` when stopped.

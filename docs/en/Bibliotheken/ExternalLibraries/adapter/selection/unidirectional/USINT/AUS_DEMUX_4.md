@@ -1,5 +1,6 @@
 # AUS_DEMUX_4
 ![AUS_DEMUX_4](./AUS_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUS_DEMUX_4** implements a demultiplexer for the adapter type `AUS`. It forwards the incoming value from adapter `IN` to one of four output adapters (`OUT1`–`OUT4`). The target output is selected via the index `K`, which is evaluated upon an event at input `REQ`. The block is designed for use in IEC 61499 applications and is particularly suitable for the dynamic distribution of a data stream to multiple devices.

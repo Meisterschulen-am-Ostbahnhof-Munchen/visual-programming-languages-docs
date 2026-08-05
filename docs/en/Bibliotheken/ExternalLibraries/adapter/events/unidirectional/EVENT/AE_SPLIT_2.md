@@ -1,5 +1,6 @@
 # AE_SPLIT_2
 ![AE_SPLIT_2](./AE_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_SPLIT_2** serves as a generic distributor for an incoming adapter event (AE). It receives a unidirectional event via socket `IN` and forwards it without delay or modification to the two output plugs `OUT1` and `OUT2`. The block is implemented as a generic FB (GenericClassName: `'GEN_AE_SPLIT'`), so it can theoretically be used for various adapter types – provided they conform to the unidirectional AE protocol.

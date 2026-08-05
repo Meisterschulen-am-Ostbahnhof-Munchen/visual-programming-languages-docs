@@ -1,6 +1,7 @@
 # Exercise_206_AX: Interlock: ILOCK_T_FF_AX (Three mutually interlocked toggle flip-flops via an adapter chain)
 ![Uebung_206_AX_network](./Uebung_206_AX_network.svg)
 *Image of the exercise not available*
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the implementation of an **interlock** (mutual interlock) using three toggle flip-flops (T-FF). Each flip-flop is toggled by a push button (single-click). The special feature: A bidirectional adapter chain ensures that only one output can be active at any given time – as soon as one flip-flop is set, the others are automatically reset.

@@ -1,5 +1,6 @@
 # FIELDBUS_BYTE_TO_SIGNAL_SCALED
 ![FIELDBUS_BYTE_TO_SIGNAL_SCALED](./FIELDBUS_BYTE_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **FIELDBUS_BYTE_TO_SIGNAL_SCALED** converts an incoming byte value into a scaled real value. It checks whether the incoming signal is valid. If so, the input value is multiplied by a scaling factor and an offset is added. Otherwise, the output is set to zero and the validity signal is reset. This block is designed for use in fieldbus systems where sensor or actuator data is transmitted as bytes and needs to be linearized or normalized.

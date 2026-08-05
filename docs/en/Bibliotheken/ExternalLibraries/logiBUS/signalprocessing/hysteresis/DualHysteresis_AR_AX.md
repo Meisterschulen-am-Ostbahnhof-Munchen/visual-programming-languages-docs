@@ -1,9 +1,11 @@
 # DualHysteresis_AR_AX
 ![DualHysteresis_AR_AX](./DualHysteresis_AR_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **DualHysteresis_AR_AX** performs a two-way analog-to-digital conversion with adjustable hysteresis.
 Two binary output signals (`DO_UP`, `DO_DOWN`) are generated from an analog input value. These signals are switched depending on the position of the input signal relative to three parameters:
+
 - **MI** – Average (setpoint center)
 - **DEAD** – Deadband (absolute value)
 - **HYSTERESIS** – Hysteresis (absolute value)

@@ -1,5 +1,6 @@
 # ADI_FB_CTU
 ![ADI_FB_CTU](./ADI_FB_CTU.svg)
+
 * * * * * * * * * *
 ## Introduction
 The ADI_FB_CTU is an up-counter for DINT integers, whose inputs and outputs are provided via standardized adapters (AX and ADI). It encapsulates the standard function block `FB_CTU_DINT` and enables its integration into modular, adapter-based systems. This function block is suitable for general counting tasks in automation technology.

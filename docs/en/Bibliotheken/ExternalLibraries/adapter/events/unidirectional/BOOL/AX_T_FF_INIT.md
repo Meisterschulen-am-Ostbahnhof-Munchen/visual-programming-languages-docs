@@ -1,5 +1,6 @@
 # AX_T_FF_INIT
 ![AX_T_FF_INIT](./AX_T_FF_INIT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_T_FF_INIT** implements a triggered toggle flip-flop with an initialization function. It can be set to a defined start state via an INIT event and subsequently toggles between the SET and RESET states with each CLK event. The current state is provided via an adapter output. This block is particularly suitable for applications where an output signal needs to be switched at each clock cycle, with the initial state defined by initialization.

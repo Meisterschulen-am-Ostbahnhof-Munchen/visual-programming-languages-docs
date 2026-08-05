@@ -70,10 +70,12 @@ Der aktuelle Zählerstand wird über die Adapterverbindung `AUDI_FB_CTUD.CV → 
 Die Überlauf‑ und Unterlauf‑Signale des Zählers (`QU`, `QD`) werden auf die digitalen Ausgänge `Output_QU` und `Output_QD` gelegt, die an den physikalischen Ausgängen `Output_Q1` und `Output_Q2` anliegen.
 
 **Besonderheiten**:
+
 - Negative Zählerstände sind möglich, da der Baustein vorzeichenlos arbeitet, der Zähler jedoch bei Unterlauf unter Null gehen kann.
 - Es wird empfohlen, bei häufigen Ereignissen **AX_D_FF**‑Bausteine (Ereignisreduzierer) zwischen den Eingängen und dem Zähler einzufügen, um die Eventlast zu verringern (siehe Kommentar im Netzwerk).
 
 **Lernziele**:
+
 - Verwendung des IEC‑61131‑3‑Auf‑/Abwärtszählers in der Adapterversion
 - Verständnis der Adapter‑Schnittstellentechnik in der 4diac‑IDE
 - Konvertierung zwischen unterschiedlichen Datentypen (UDINT → UDI, AUDI → ALR → LREAL)

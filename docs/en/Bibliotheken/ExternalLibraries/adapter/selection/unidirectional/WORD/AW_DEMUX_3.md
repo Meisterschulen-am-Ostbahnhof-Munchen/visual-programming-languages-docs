@@ -1,5 +1,6 @@
 # AW_DEMUX_3
 ![AW_DEMUX_3](./AW_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_DEMUX_3** is a generic demultiplexer for the unidirectional adapter type `AW`. It distributes an incoming data value, provided via the socket adapter `IN`, to one of three output adapters (`OUT1`, `OUT2`, `OUT3`), depending on an integer index `K`. The function block is controlled by the event `REQ` and acknowledges the distribution with `CNF`.

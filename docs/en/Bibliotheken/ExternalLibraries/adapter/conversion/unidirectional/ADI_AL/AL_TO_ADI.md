@@ -1,5 +1,6 @@
 # AL_TO_ADI
 ![AL_TO_ADI](./AL_TO_ADI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The composite function block `AL_TO_ADI` serves to standardize the conversion of a unidirectional LWORD adapter (`AL`) into a unidirectional DINT adapter (`ADI`). It enables the seamless integration of components that work with different data types in a 4diac adapter landscape.

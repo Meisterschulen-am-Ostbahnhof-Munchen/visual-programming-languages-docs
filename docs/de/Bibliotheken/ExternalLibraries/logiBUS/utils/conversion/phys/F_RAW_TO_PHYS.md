@@ -53,6 +53,7 @@ Der Baustein führt bei einem Ereignis am **REQ**‑Eingang folgende Berechnung 
 Ergebnis: `REAL := (LINT(UDINT(u32Raw)) + LINT(stObj.i32Offset)) * stObj.r32Scale`
 
 **Beispiel (aus der Quelltext‐Dokumentation):**  
+
 - Rohwert = 50000  
 - Skalierung = 0,01  
 - Offset = -100000  

@@ -1,5 +1,6 @@
 # Exercise_204_AX: Interlock: ILOCK_CONFLICT_TRIP_AX (Trip on conflict via adapter)
 ![Uebung_204_AX_network](./Uebung_204_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements interlock logic with conflict detection and trip triggering using the function block **ILOCK_CONFLICT_TRIP_AX**.

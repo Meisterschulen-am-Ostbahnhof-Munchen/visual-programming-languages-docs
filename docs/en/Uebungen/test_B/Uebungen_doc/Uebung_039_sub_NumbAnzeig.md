@@ -1,6 +1,7 @@
 Here is the generated documentation based on the provided XML code:
 # Exercise_039_sub_NumbDisplay: Mirror Sequence V2 with Step Chain SUB Num
 ![Uebung_039_sub_NumbAnzeig_network](./Uebung_039_sub_NumbAnzeig_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 The sub-application **Exercise_039_sub_NumbDisplay** is a utility component designed to display numeric values within the context of a step chain (mirror sequence V2). Its main task is to receive a status number (`STATE_NR`), convert it into a suitable data format, and then send it to an output element (ISOBUS Universal Terminal).

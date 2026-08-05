@@ -1,6 +1,7 @@
 Here is the documentation for Exercise 160b, based on the provided XML data.
 # Exercise_160b: Motor Reverse/Forward Rotation Automation via IE
 ![Uebung_160b_network](./Uebung_160b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a control system for a motor with reverse and forward rotation (reversing operation) using logiBUS blocks for input and output via Industrial Ethernet (IE). The circuit features a direct switching function with a safety delay and a collective indicator for the operating status.

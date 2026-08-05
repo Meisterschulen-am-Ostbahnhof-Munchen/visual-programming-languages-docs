@@ -1,5 +1,6 @@
 # AI_TO_AR
 ![AI_TO_AR](./AI_TO_AR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AI_TO_AR** function block is a composite module that enables interface conversion from an **AI** adapter (integer type) to an **AR** adapter (real type). It serves purely as a pass-through and adaptation unit between different adapter protocols in an industrial control system.

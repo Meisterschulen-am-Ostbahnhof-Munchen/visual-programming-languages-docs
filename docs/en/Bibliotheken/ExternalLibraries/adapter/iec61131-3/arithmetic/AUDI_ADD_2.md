@@ -1,5 +1,6 @@
 # AUDI_ADD_2
 ![AUDI_ADD_2](./AUDI_ADD_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_ADD_2** performs an arithmetic addition of two input values and outputs the result. The block is generic and uses a standardized adapter interface of type `AUDI`. This allows it to be used for different data types (e.g., integers, floating-point numbers) without requiring modification of the function block itself.

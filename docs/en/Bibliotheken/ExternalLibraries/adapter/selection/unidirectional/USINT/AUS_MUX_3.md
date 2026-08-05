@@ -1,5 +1,6 @@
 # AUS_MUX_3
 ![AUS_MUX_3](./AUS_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUS_MUX_3** is a generic multiplexer for the unidirectional OFF adapter. It selects one of three identical adapter inputs (`IN1`, `IN2`, `IN3`) based on an index `OUT` and forwards its value to the adapter output `OUT`. The selection is event-driven via the event `REQ`.

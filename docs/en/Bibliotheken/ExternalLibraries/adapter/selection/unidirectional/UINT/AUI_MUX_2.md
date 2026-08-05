@@ -1,5 +1,6 @@
 # AUI_MUX_2
 ![AUI_MUX_2](./AUI_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_MUX_2** is a generic multiplexer for AUI adapters (unidirectional interface). It selects one of two inputs based on an index parameter and forwards it to the output. The block implements a 2-to-1 selection for AUI data streams.

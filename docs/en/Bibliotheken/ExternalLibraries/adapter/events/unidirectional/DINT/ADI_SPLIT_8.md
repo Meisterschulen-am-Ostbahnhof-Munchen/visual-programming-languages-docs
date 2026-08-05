@@ -1,5 +1,6 @@
 # ADI_SPLIT_8
 ![ADI_SPLIT_8](./ADI_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ADI_SPLIT_8` is used to split a single unidirectional ADI (Application Data Interface) adapter into eight identical output adapters. It is implemented as a generic block that can be adapted to different ADI contexts by specifying a `GenericClassName` attribute. The function block simplifies signal distribution in control applications by distributing an incoming adapter path to multiple receivers without data loss.

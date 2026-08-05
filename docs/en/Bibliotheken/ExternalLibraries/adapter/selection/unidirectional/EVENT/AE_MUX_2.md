@@ -1,5 +1,6 @@
 # AE_MUX_2
 ![AE_MUX_2](./AE_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AE_MUX_2** is a generic multiplexer function block for analog value adapters (AEs). It selects one of two analog signal inputs based on an index input and routes it to the output. The block is built according to the IEC 61499-2 standard and is suitable for flexible signal switching in distributed automation systems.

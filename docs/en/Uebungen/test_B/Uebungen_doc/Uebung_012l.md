@@ -1,5 +1,6 @@
 # Exercise_012l: String Input and Storage in NVS
 ![Uebung_012l_network](./Uebung_012l_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates reading a string from an ISOBUS variable (InputString_S1) and storing this value in the non-volatile memory (NVS) of an ESP32. When the application starts, the last stored string is automatically loaded from the NVS and written back to the corresponding ISOBUS variable. This ensures the value is retained even after a restart.

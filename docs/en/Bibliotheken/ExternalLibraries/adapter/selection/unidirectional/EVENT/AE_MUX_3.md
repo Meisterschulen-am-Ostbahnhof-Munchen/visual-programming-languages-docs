@@ -1,5 +1,6 @@
 # AE_MUX_3
 ![AE_MUX_3](./AE_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_MUX_3** is a generic multiplexer for the AE adapter type (unidirectional). It selects one of three analog or other AE signal inputs and routes it to a common output. The selection is made via a numeric index (K). This block is particularly suitable for applications where different signal sources need to be switched to a subsequent processing unit depending on a condition.

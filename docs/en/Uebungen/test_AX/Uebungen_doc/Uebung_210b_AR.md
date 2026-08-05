@@ -1,5 +1,6 @@
 # Exercise_210b_AR: Standard IEC 61131-3 AI_FB_CTU (Adapter Version, Up Counter, INT) with Terminal Output (PHYS)
 ![Uebung_210b_AR_network](./Uebung_210b_AR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an IEC 61131-3 up counter (CTU) in an adapter version. The counter is controlled via two digital inputs (CU for counting pulses, R for reset). The current counter value is output to a terminal (PHYS) via an analog output. A preset value (PV) is set to 5 at startup. The counter's output Q is routed to a digital output.

@@ -1,5 +1,6 @@
 # SPLIT_AW_INTO_AB
 ![SPLIT_AW_INTO_AB](./SPLIT_AW_INTO_AB.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **SPLIT_AW_INTO_AB** is used to split a word data packet (type AW, 16 bits) into two separate byte data packets (type AB, 8 bits each). The input data is received via a socket and output via two separate plugs. This function block is typically used in environments that rely on adapter-based communication, e.g., in automation technology when decomposing word-based protocols.

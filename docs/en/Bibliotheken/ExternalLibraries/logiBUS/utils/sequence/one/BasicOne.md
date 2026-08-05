@@ -1,5 +1,6 @@
 # BasicOne
 ![BasicOne](./BasicOne.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **BasicOne** function block is a basic, event-driven block according to IEC 61499. It serves as a simple sequence element for initialization, execution of a main operation, and proper deinitialization. The block is particularly suitable for control sequences where a resource state (e.g., device ready) needs to be monitored and reset. The block is included in the package `logiBUS::utils::sequence::one`.

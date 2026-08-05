@@ -1,5 +1,6 @@
 # Exercise_012g_AR: Numeric Value Input PHYS and Storage INI (AR Adapter, plain)
 ![Uebung_012g_AR_network](./Uebung_012g_AR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 In this exercise, a numeric value (REAL) is read via a physical input and permanently stored using the INI_AR adapter. The stored value can then be visualized via another output block. The exercise demonstrates the use of the AR adapter interface (adapter resource) for communication between a physical input block and a memory block, as well as a numeric output.

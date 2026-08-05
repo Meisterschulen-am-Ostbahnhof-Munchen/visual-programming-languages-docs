@@ -1,5 +1,6 @@
 # AIS_MUX_5
 ![AIS_MUX_5](./AIS_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_MUX_5** implements a 5-channel multiplexer for adapters of type `adapter::types::unidirectional::AIS`.

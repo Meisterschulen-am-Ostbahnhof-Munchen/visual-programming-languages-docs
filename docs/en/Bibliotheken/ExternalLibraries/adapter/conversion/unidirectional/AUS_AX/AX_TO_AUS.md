@@ -1,5 +1,6 @@
 # AX_TO_OFF
 ![AX_TO_AUS](./AX_TO_AUS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AX_TO_OFF** function block is a composite function block that converts a Boolean input adapter (type `AX`) into an integer output adapter (type `AUS`). It serves as a bridge between components that operate with different data types and enables seamless integration into control applications according to IEC 61499.

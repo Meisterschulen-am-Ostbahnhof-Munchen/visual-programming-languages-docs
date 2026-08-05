@@ -1,5 +1,6 @@
 # Exercise_211b_ALR: Standard IEC 61131-3 ADI_FB_CTU (Adapter Version, Up Counter, DINT) with Terminal Output (PHYS)
 ![Uebung_211b_ALR_network](./Uebung_211b_ALR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an up counter according to IEC 61131-3 (ADI_FB_CTU) in adapter format. The counter value is output to a terminal (PHYS). The configuration allows for pulse counting, resetting the counter, and displaying the current counter value, including negative values.

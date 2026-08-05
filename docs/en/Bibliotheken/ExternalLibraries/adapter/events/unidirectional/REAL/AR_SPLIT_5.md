@@ -1,5 +1,6 @@
 # AR_SPLIT_5
 ![AR_SPLIT_5](./AR_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AR_SPLIT_5 function block is used to split an incoming AR adapter into five identical AR adapter outputs. It is a generic function block specifically designed for distributing unidirectional adapters (type: `adapter::types::unidirectional::AR`).

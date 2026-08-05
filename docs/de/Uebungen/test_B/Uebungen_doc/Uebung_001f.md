@@ -41,6 +41,7 @@ Das Netzwerk der Übung arbeitet ereignisgesteuert:
    - Der Datenausgang `OUT` von F_NOT_BOOL_INIT ist mit dem Dateneingang `OUT` von DigitalOutput_Q1 verbunden.
 
 **Ablauf:**  
+
 - Sobald sich der Zustand des digitalen Eingangs `Input_I1` ändert (steigende oder fallende Flanke), erzeugt DigitalInput_I1 das entsprechende Ereignis.  
 - Dieses Ereignis triggert den Negationsbaustein, der den aktuellen Eingangswert invertiert und nach Abschluss der Berechnung das Ereignis `CNF` ausgibt.  
 - Dadurch wird der Ausgangsbaustein getriggert, den negierten Wert auf `Output_Q1` zu schreiben.  

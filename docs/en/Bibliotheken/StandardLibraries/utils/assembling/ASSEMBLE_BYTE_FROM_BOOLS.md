@@ -1,5 +1,6 @@
 # ASSEMBLE_BYTE_FROM_BOOLS
 ![ASSEMBLE_BYTE_FROM_BOOLS](https://github.com/user-attachments/assets/4a70532a-aa28-4489-a8b6-5cf357a41460)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASSEMBLE_BYTE_FROM_BOOLS` combines eight Boolean input values into a single byte. Each Boolean input represents one bit of the resulting byte. This block is particularly useful when individual Boolean signals need to be combined into a compact byte value.

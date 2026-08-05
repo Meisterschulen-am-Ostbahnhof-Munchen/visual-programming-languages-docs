@@ -1,5 +1,6 @@
 # Exercise_104_AX: State-Based Step Sequence with Power Fail Recovery (AX Version)
 ![Uebung_104_AX_network](./Uebung_104_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **state-based step sequence with power fail recovery** for the AX variant (adapter-based).

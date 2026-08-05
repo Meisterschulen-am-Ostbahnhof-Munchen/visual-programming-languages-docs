@@ -1,5 +1,6 @@
 # AX_PULSE_RETRIG
 ![AX_PULSE_RETRIG](./AX_PULSE_RETRIG.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AX_PULSE_RETRIG** function block is a retriggerable pulse shaper with an AX adapter interface. It generates a pulse with a predefined duration (PT) at its output. A restart command within the pulse duration resets the timer and extends the pulse. This block is typically used to generate precisely timed, extendable output signals in automation systems.

@@ -1,5 +1,6 @@
 # logiBUS_IEA
 ![logiBUS_IEA](./logiBUS_IEA.svg)
+
 * * * * * * * * * *
 ## Introduction
 The composite function block `logiBUS_IEA` is used for event-driven processing of digital input data in a logiBUS fieldbus system. It encapsulates an internal `logiBUS_IE` block and makes its functionality available via a standardized interface. The function block enables the initialization and querying of events at a digital input and forwards the resulting indications to the resource via an adapter.

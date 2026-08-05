@@ -1,5 +1,6 @@
 # ASSEMBLE_AD_FROM_AX
 ![ASSEMBLE_AD_FROM_AX](./ASSEMBLE_AD_FROM_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ASSEMBLE_AD_FROM_AX** is used to combine up to 32 Boolean signals, provided via AX adapters (type: `adapter::types::unidirectional::AX`), into a 32-bit double word (DWORD) and output it via an AD adapter (type: `adapter::types::unidirectional::AD`). This enables the compact transmission of multiple discrete binary signals over a single data connection.

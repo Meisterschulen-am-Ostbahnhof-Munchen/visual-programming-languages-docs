@@ -54,6 +54,7 @@ Der Ablauf ist ereignisgesteuert und folgt dieser Reihenfolge:
 **Hinweis aus dem Kommentar**: Da der Eingang `I1` beim Bootvorgang nicht sofort abgefragt wird, gibt der Baustein `AX_NOT_INIT` in der Zwischenzeit den Wert `TRUE` aus, bis der erste gültige Eingangswert verarbeitet wurde.
 
 **Lernziele und Vorkenntnisse**:
+
 - **Schwierigkeitsgrad**: Einsteiger
 - **Vorkenntnisse**: Grundlegendes Verständnis der 4diac-IDE, Ereignis‑ und Datenverbindungen.
 - **Lernziele**: 

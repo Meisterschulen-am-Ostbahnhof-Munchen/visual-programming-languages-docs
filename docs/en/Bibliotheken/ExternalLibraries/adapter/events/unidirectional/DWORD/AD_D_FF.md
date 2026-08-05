@@ -1,5 +1,6 @@
 # AD_D_FF
 ![AD_D_FF](./AD_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AD_D_FF** implements a **data latch (D flip-flop)**. It receives a data value upon an incoming event and holds this value until the next data transfer. The interface is defined exclusively via standardized **adapters**, which allows for flexible wiring in complex automation systems.

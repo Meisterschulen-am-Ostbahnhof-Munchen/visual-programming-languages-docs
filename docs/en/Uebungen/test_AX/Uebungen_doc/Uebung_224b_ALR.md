@@ -1,5 +1,6 @@
 # Exercise_224b_ALR: Standard IEC 61131-3 AULI_FB_CTUD (Adapter Version, Up/Down Counter, ULINT) with Terminal Output (PHYSA_LREAL)
 ![Uebung_224b_ALR_network](./Uebung_224b_ALR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a standard IEC 61131-3 up/down counter (CTUD) as an adapter version with the ULINT data type. The current counter value is output via a terminal output as the physical value (PHYSA_LREAL). Control is achieved via four digital inputs, two digital outputs, and a start value set using a ULINT-to-ULI converter.

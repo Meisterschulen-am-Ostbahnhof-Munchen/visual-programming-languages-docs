@@ -1,5 +1,6 @@
 # ASR_SPLIT_3
 ![ASR_SPLIT_3](./ASR_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASR_SPLIT_3` is used to distribute an incoming ASR (Application-Specific Resource) adapter to three identical outgoing ASR adapters. It is designed as a generic block and enables simple signal distribution within an adapter-based communication structure.

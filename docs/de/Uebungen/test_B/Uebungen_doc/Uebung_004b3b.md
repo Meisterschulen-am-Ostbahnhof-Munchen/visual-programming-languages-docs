@@ -67,11 +67,13 @@ Die Verschaltung der Hauptapplikation (`Uebung_004b3b`) ist wie folgt aufgebaut:
    - Die Ausgangsimpulse (`EO`) der Sub-Bausteine triggern die zugehörigen Ausgangsbausteine über die `REQ`-Eingänge.
 
 **Ablauf Beispiel**:  
+
 - Drückt man die Taste an `I1`, wird `sub1` getoggelt: Ist `Q1` aus, wird es eingeschaltet; der `SET`-Ausgang setzt `sub2` zurück.  
 - Ist `Q1` bereits an, schaltet es aus, ohne das andere zu beeinflussen.  
 - Ein Tastendruck auf `I2` verhält sich analog.
 
 **Lernziele**:  
+
 - Verständnis von Ereignisverdrahtung in IEC 61499  
 - Aufbau einer gegenseitigen Verriegelung (Radio-Button)  
 - Verwendung von Toggle-Flip-Flops mit externem Reset  

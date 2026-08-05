@@ -53,6 +53,7 @@ Das Netzwerk innerhalb der Sub-Applikation ist minimal gehalten und verlässt si
     *   Die Verbindung zwischen Eingabe und Ausgabe erfolgt nicht über klassische `AND`/`OR` Logik oder Event-Trigger (`INIT`, `REQ`, `CNF`), sondern über die **Adapter-Verbindung** (`Connection Source="IXA.IN" Destination="QXA.OUT"`). Dies abstrahiert den Signalfluss und sorgt dafür, dass der Ausgang dem logischen Zustand des Eingangsadapters folgt.
 
 **Anwendungshinweise:**
+
 *   Dieser Baustein ist als generisches Modul gedacht. Er kann mehrfach im Hauptprogramm instanziiert werden, um verschiedene Tasten auf verschiedene Ausgänge zu legen, ohne die interne Logik neu programmieren zu müssen.
 *   Es werden keine expliziten Events nach außen geführt; die Steuerung erfolgt rein intern über die Bus-Treiber.
 

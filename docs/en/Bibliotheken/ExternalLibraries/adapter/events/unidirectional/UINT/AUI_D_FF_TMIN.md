@@ -1,5 +1,6 @@
 # AUI_D_FF_TMIN
 ![AUI_D_FF_TMIN](./AUI_D_FF_TMIN.svg)
+
 * * * * * * * * * * *
 ## Introduction
 The function block **AUI_D_FF_TMIN** implements a data-locking D flip-flop (data latch) with a minimum inter-disposal time between two consecutive output events. It serves to receive values via the unidirectional **AUI** adapter and pass them on with a defined minimum delay to prevent an excessively rapid sequence of events at the output.

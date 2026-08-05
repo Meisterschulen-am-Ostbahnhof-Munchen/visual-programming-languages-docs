@@ -1,5 +1,6 @@
 # AUS_TO_AUI
 ![AUS_TO_AUI](./AUS_TO_AUI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AUS_TO_AUI** function block is a composite component that performs an interface conversion from an AUS adapter (USINT data type) to an AUI adapter (UINT data type). It serves as a simple passthrough, where both the event and the data value are transferred directly from the input to the output adapter. The implicit type conversion from USINT (8-bit unsigned) to UINT (16-bit unsigned) is performed automatically by the runtime environment.

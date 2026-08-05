@@ -1,5 +1,6 @@
 # AUI_SPLIT_2
 ![AUI_SPLIT_2](./AUI_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_SPLIT_2** distributes a signal received from one AUI adapter (socket) unchanged to two identical AUI adapters (plugs). It is delivered as a generic function block (GenericClassName = `'GEN_AUI_SPLIT'`) and enables the simple splitting of a unidirectional AUI data stream to two independent sinks.

@@ -1,5 +1,6 @@
 # Q_StringValue
 ![Q_StringValue](https://user-images.githubusercontent.com/69573151/212334298-f7c6215c-a80c-491c-ad3e-6ba0e539f0d0.png)
+
 * * * * * * * * * *
 ## Introduction
 The **Q_StringValue** is a standards-compliant function block for dynamic text updates in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.24) specification for VT text objects.

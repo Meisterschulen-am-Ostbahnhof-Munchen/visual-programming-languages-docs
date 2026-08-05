@@ -1,6 +1,7 @@
 # sequence_T_08
 <img width="1169" height="403" alt="image" src="https://github.com/user-attachments/assets/fc79f7bd-8f7c-4df6-891f-b05cfce0f952" />
 ![sequence_T_08_ecc](./sequence_T_08_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_T_08` is a time-controlled sequencer with eight outputs. It implements a fixed sequence of states, with the transition between individual states controlled by adjustable time delays. This block is designed for applications where process steps or machine states need to be activated sequentially for a defined duration, such as in packaging machines, conveyor systems, or washing systems.

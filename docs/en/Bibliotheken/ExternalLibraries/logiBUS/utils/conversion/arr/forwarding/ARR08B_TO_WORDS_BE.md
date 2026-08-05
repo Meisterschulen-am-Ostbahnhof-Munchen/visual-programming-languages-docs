@@ -1,5 +1,6 @@
 # ARR08B_TO_WORDS_BE
 ![ARR08B_TO_WORDS_BE](./ARR08B_TO_WORDS_BE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ARR08B_TO_WORDS_BE` extracts four 16-bit words (WORD) from an 8-byte array (big-endian). It is primarily used to convert binary data streams stored in an ascending byte array and interpret them as an ordered word sequence. This block belongs to the package group `logiBUS::utils::conversion::arr::forwarding`.

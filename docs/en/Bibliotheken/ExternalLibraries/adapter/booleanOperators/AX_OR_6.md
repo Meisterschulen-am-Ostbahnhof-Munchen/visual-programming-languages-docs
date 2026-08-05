@@ -20,6 +20,7 @@ No data outputs available
 
 ### **Adapters**
 **Input Adapters:**
+
 - **IN1** - OR Input 1 (Type: adapter::types::unidirectional::AX)
 - **IN2** - OR Input 2 (Type: adapter::types::unidirectional::AX)
 - **IN3** - OR Input 3 (Type: adapter::types::unidirectional::AX)

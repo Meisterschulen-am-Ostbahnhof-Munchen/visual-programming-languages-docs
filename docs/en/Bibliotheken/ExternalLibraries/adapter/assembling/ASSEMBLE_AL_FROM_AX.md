@@ -1,6 +1,7 @@
 # ASSEMBLE_AL_FROM_AX
 (Image of the function block is displayed here in the IDE – shows a function block with 64 sockets (left) and one plug (right))
 ![ASSEMBLE_AL_FROM_AX](./ASSEMBLE_AL_FROM_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ASSEMBLE_AL_FROM_AX** is used to combine up to 64 Boolean signals from **AX adapters** (type: `adapter::types::unidirectional::AX`) into a single **LWORD** value and output it via an **AL adapter** (type: `adapter::types::unidirectional::AL`). The block encapsulates the logic for bit combination and provides the result stably as soon as one of the input bits returns an event.

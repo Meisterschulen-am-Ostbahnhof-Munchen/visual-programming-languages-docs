@@ -34,6 +34,7 @@ Diese Übung demonstriert die gegenseitige Verriegelung (Interlock) zweier Toggl
    Die Ausgangsereignisse `EO` der Flip-Flops triggern die `REQ`-Eingänge der Ausgangsbausteine. Gleichzeitig werden die Datenwerte `Q` an die `OUT`-Eingänge der Ausgangsbausteine weitergeleitet. Damit werden die Hardware-Ausgänge Q1 und Q2 entsprechend dem Zustand der Flip-Flops gesetzt.
 
 **Lernziele dieser Übung:**
+
 - Verständnis der Funktionsweise eines Toggle-Flip-Flops (Toggle bei jedem Takt).
 - Anwendung einer Adapterverbindung zur Realisierung einer gegenseitigen Verriegelung (Interlock).
 - Einlesen von Tastern mit Single-Click-Ereignissen und Ausgabe an digitale Ausgänge.

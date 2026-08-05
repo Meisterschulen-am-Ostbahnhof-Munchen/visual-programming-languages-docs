@@ -1,5 +1,6 @@
 # AUI\_DEMUX\_3
 ![AUI_DEMUX_3](./AUI_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AUI\_DEMUX\_3 function block implements a generic demultiplexer for the AUI adapter protocol. It distributes an incoming, unidirectional data stream to one of three output channels. The active output is selected via an index parameter, which is set by an event.

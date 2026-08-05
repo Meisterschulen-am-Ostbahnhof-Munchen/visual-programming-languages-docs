@@ -1,5 +1,6 @@
 # AB_MUX_4
 ![AB_MUX_4](./AB_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_MUX_4** is a generic multiplexer for four adapter inputs of type `adapter::types::unidirectional::AB`. Based on the index value `K` (0 to 3), it selects one of the four inputs (`IN1` … `IN4`) and forwards its signal to the output `OUT`. The block is implemented as a generic FB (GenericClassName: `GEN_AB_MUX`) and can therefore be used in various contexts, provided the adapter interface is compatible.

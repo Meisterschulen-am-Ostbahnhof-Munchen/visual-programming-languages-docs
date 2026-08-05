@@ -1,5 +1,6 @@
 # Exercise_003e: Digital Input_I1-4 to Digital Output_Q1-4 - Flat with Bypass (Pressure Relief Valve)
 ![Uebung_003e_network](./Uebung_003e_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 In this exercise, four digital input signals (I1–I4) are directly connected to four digital outputs (Q1–Q4). A bypass block is inserted between each output, providing additional functionality: The bypass blocks are cascaded and routed through a common bypass valve (output Q8). The circuit implements a simple pass-through with the option of influencing the signal flow via a pressure relief valve.
@@ -33,11 +34,13 @@ Type: `logiBUS::io::DQ::logiBUS_QXA`
 Parameters: QI = TRUE, Output = Output_Q8 (Bypass Valve)
 
 **Event Connections:**
+
 - `DigitalInput_I1.IND` → `BYPASS_1.REQ`
 - `BYPASS_1.CNF` → `DigitalOutput_Q1.REQ`
 - (Analog for I2–I4)
 
 **Data Connections:**
+
 - `DigitalInput_I1.IN` → `BYPASS_1.IN`
 - `BYPASS_1.OUT` → `DigitalOutput_Q1.OUT`
 - (Analog for I2–I4)

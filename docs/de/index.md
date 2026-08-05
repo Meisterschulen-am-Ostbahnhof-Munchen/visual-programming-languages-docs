@@ -30,6 +30,7 @@ myst:
 Diese Dokumentation ist Teil der Wissensdatenbank der Meisterschulen am Ostbahnhof München.
 
 **Nützliche Links:**
+
 * 📋 **[Das steht im Lehrplan (Lehrplan 2025)](./das_steht_im_lehrplan.md)**
 * [🏠 Hauptmenü](https://www.ms-muc-docs.de/)
 * [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/)

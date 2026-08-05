@@ -1,6 +1,7 @@
 # Slide Lock
 <img width="1448" height="327" alt="image" src="https://github.com/user-attachments/assets/ce587957-0a58-4d7e-b8e0-cb14bd8c2ef0" />
 ![SchieberVerriegelung_ecc](./SchieberVerriegelung_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SchieberVerriegelung` is used for the coordinated control and locking of three slides: a main slide, a left slide, and a right side slide. Its primary purpose is to ensure valid and collision-free slide combinations based on external requests (events) and locking states. This block is particularly suitable for applications where the movement of one slide must prevent or force the movement of another.

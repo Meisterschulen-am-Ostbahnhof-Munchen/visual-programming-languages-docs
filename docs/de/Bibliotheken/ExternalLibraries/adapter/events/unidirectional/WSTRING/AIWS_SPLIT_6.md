@@ -21,9 +21,11 @@ Keine.
 
 ### **Adapter**
 **Socket (Eingang):**
+
 - `IN` (Typ: `adapter::types::unidirectional::AIWS`): Eingangsadapter für das zu verteilende AIWS-Signal.
 
 **Plugs (Ausgänge):**
+
 - `OUT1` (Typ: `adapter::types::unidirectional::AIWS`): Erster Ausgang mit dem gesplitteten Signal.
 - `OUT2` (Typ: `adapter::types::unidirectional::AIWS`): Zweiter Ausgang.
 - `OUT3` (Typ: `adapter::types::unidirectional::AIWS`): Dritter Ausgang.

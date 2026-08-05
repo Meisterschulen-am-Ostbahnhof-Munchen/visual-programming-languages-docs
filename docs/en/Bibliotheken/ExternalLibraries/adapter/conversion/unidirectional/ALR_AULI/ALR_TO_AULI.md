@@ -1,5 +1,6 @@
 # ALR_TO_AULI
 ![ALR_TO_AULI](./ALR_TO_AULI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_TO_AULI** is a **composite FB** for the unidirectional conversion of an **LREAL adapter signal** (type `ALR`) into a **ULINT adapter signal** (type `AULI`). By internally using the IEC 61131 standard FB `F_LREAL_TO_ULINT`, the floating-point number (LREAL) is converted into an unsigned integer (ULINT) and provided via an output adapter. This block is particularly suitable for integrating floating-point data sources into systems that expect an integer adapter interface.

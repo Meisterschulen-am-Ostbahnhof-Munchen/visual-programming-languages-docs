@@ -1,5 +1,6 @@
 # AULI_SPLIT_8
 ![AULI_SPLIT_8](./AULI_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AULI_SPLIT_8` is used to split an incoming unidirectional AULI adapter (socket `IN`) into eight identical AULI output adapters (`OUT1` to `OUT8`). It operates as a simple distributor – the incoming signal is passed on to all outputs without delay or logic modification. The block is designed generically and can be used with various AULI types (see attribute `GenericClassName`).

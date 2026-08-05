@@ -1,5 +1,6 @@
 # Exercise_022b_AX2: Mirror Sequence (2) - AX Variant
 ![Uebung_022b_AX2_network](./Uebung_022b_AX2_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **mirror sequence** for two pneumatic cylinders (Cyl_1 and Cyl_2) using softkeys as controls and AX_SR function blocks to control the digital outputs. The sequence is controlled by three keys (F1, F2, F3): F1 extends cylinder 1, F2 retracts cylinder 1 and simultaneously extends cylinder 2, and F3 retracts cylinder 2. This exercise teaches the use of set-reset adapter blocks and their integration with events and data outputs.

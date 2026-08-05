@@ -58,6 +58,7 @@ Die Steuerung erfolgt über vier digitale Eingänge (CU, CD, Reset, Laden des An
    - Sobald der Zählerstand den Vergleichswert `PV` erreicht oder überschreitet, wird `QU` auf TRUE gesetzt; bei Unterschreiten von 0 wird `QD` auf TRUE gesetzt.
 
 **Lernziele**:  
+
 - Verständnis und Anwendung des IEC 61131-3 Standardzählers `CTUD`.  
 - Einbindung von logiBUS-I/O-Modulen in eine 4diac-Applikation.  
 - Ausgabe numerischer Werte auf einem Terminal.  

@@ -62,6 +62,7 @@ Die SubApp ist wie folgt verschaltet:
 4. **Timer**: Das Timeout-Ereignis des Interlock-Blocks (`ILOCK_AX.timeOut`) ist mit dem Socket `E_TimeOut.TimeOutSocket` verbunden. Der Timer kann in einer übergeordneten Applikation genutzt werden, um eine Fehler- oder Quittierungsmeldung zu generieren.
 
 **Lernziele der Übung**:
+
 - Verständnis des Interlock-Konzepts mit Schutzzeit  
 - Einsatz von logiBUS-IO-Adaptern in 4diac  
 - Verwendung von Ereignis-Timern (`E_TimeOut`)  

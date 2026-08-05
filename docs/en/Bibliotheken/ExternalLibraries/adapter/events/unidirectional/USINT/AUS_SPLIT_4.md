@@ -1,5 +1,6 @@
 # OFF_SPLIT_4
 ![AUS_SPLIT_4](./AUS_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUS_SPLIT_4` distributes an incoming **OFF** signal (typically a binary control signal for "Off") to four identical output signals. It serves as a generic splitter and allows a single command or state to be forwarded to multiple downstream components without requiring separate branching logic.

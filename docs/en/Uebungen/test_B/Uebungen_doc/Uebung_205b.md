@@ -1,5 +1,6 @@
 # Exercise_205b: Interlock: ILOCK_SWITCH_PROTECT (Motor Reversing Priority with Protection Time)
 ![Uebung_205b_network](./Uebung_205b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the implementation of a **motor reversing interlock** with priority protection and a protection time. The function block `ILOCK_SWITCH_PROTECT` ensures that a motor cannot be switched to both directions of rotation (clockwise and counterclockwise) simultaneously. An additional low-side driver switches the common power supply. The protection time `DT_PROTECT` of 1 second prevents excessively rapid switching and protects the power electronics.

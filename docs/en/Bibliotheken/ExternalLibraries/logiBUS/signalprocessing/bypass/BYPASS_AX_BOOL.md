@@ -1,5 +1,6 @@
 # BYPASS_AX_BOOL
 ![BYPASS_AX_BOOL](./BYPASS_AX_BOOL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `BYPASS_AX_BOOL` implements a bypass function for a Boolean signal. It passes the value of the input `IN` directly to the output `OUT` and simultaneously creates a bypass path connected via an adapter. This path allows an external signal (`BY_IN.D1`) to be inserted into the internal logic and outputs the result via the output adapter `BY_OUT`.

@@ -1,5 +1,6 @@
 # A2X_SPLIT_4
 ![A2X_SPLIT_4](./A2X_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **A2X_SPLIT_4** is used to split an incoming A2X adapter signal into four identical A2X outputs. It is designed as a generic block, enabling flexible use in a wide variety of automation environments where an A2X signal is required multiple times.

@@ -1,5 +1,6 @@
 # Exercise_202b: Interlock: ILOCK_BLOCK_PROTECT (Motor Reversing with Protection Time)
 ![Uebung_202b_network](./Uebung_202b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements motor reversing with an interlock and protection time (ILOCK_BLOCK_PROTECT). The direction of rotation (clockwise or counterclockwise) is controlled via two digital inputs, with the interlock block preventing both outputs from being active simultaneously. A low-side driver is switched in both cases via an OR gate. Additionally, a protection time (DT_PROTECT = 1 s) is integrated, which only allows a change of direction after this time has elapsed.

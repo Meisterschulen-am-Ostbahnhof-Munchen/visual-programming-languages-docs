@@ -1,5 +1,6 @@
 # FIELDBUS_UDINT_TO_SIGNAL_SCALED
 ![FIELDBUS_UDINT_TO_SIGNAL_SCALED](./FIELDBUS_UDINT_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `FIELDBUS_UDINT_TO_SIGNAL_SCALED` processes a UDINT value received via the fieldbus. It mirrors the input `IN` to the output `OUT`, but only if the incoming signal is recognized as valid. Additionally, the value is scaled by a factor and an offset is applied. This function block is typically used in the signal processing chain of fieldbus protocols to convert raw integer values into physical quantities (e.g., as LREAL).

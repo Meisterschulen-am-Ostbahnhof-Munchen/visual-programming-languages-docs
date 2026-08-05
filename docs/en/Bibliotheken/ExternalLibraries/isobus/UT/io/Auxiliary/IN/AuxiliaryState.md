@@ -1,5 +1,6 @@
 # AuxiliaryState
 ![AuxiliaryState](./AuxiliaryState.svg)
+
 * * * * * * * * * *
 ## Introduction
 AuxiliaryState is a collection of global constants for auxiliary inputs in ISOBUS systems. These constants define various states of auxiliary inputs, typically used for control functions in agricultural and mobile machinery.

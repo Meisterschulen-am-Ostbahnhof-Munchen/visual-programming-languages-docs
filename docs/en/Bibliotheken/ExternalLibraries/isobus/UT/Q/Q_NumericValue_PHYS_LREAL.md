@@ -1,5 +1,6 @@
 # Q_NumericValue_PHYS_LREAL
 ![Q_NumericValue_PHYS_LREAL](./Q_NumericValue_PHYS_LREAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **Q_NumericValue_PHYS_LREAL** is used to set a numeric value as a physical quantity via ISOBUS (ISO 11783-6). It receives a physical value of type `LREAL`, automatically converts it into the required raw value, and sends the corresponding command to the connected device. This complies with the specification in Part 6, Annex F.22.

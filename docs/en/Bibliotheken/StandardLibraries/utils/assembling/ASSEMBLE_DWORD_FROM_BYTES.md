@@ -1,5 +1,6 @@
 # ASSEMBLE_DWORD_FROM_BYTES
 ![ASSEMBLE_DWORD_FROM_BYTES](https://github.com/user-attachments/assets/818dd9ca-040d-43e5-a631-b8206ec1ed5d)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASSEMBLE_DWORD_FROM_BYTES` combines four BYTE values into a single DWORD value. This is particularly useful when data from multiple sources needs to be merged for processing or storage as a single unit.

@@ -50,6 +50,7 @@ Die Übung importiert folgende Konstanten aus der Bibliothek `Uebungen::const::N
 Die gesamte Datenkette ist unidirektional und arbeitet ohne explizite Ereignissteuerung – die Ausführung erfolgt zyklisch durch die Laufzeitumgebung.
 
 **Lernziele:**
+
 - Verständnis der Adapter‑basierte Datenübergabe zwischen unterschiedlichen Funktionsbausteinen.
 - Kennenlernen des INI‑Speicher‑Bausteins (`INI_AUDI`) zur persistenten Speicherung von Werten.
 - Anwendung von ISOBUS‑Ein‑/Ausgabe‑Bausteinen mit konfigurierbaren Objekt‑IDs.

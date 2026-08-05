@@ -1,5 +1,6 @@
 # AB_DEMUX_4
 ![AB_DEMUX_4](./AB_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block AB_DEMUX_4 is a generic demultiplexer for the adapter type `adapter::types::unidirectional::AB`. It distributes incoming adapter data (IN) to one of four output adapters (OUT1–OUT4), controlled by an index K. The block is designed as a generic FB (GenericClassName `'GEN_AB_DEMUX'`) and can be parameterized for various specific adapter versions.

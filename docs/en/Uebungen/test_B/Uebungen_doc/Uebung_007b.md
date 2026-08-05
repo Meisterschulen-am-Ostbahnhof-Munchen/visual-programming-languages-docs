@@ -1,5 +1,6 @@
 # Exercise_007b: Flasher with E_CYCLE and E_T_FF
 ![Uebung_007b_network](./Uebung_007b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a simple flasher controlled by two pushbuttons. An E_CYCLE function block generates periodic events, which are distributed to multiple paths via an E_SPLIT_4. All four outputs of the splitter are merged in an E_MERGE_4, so that each period sends a single event to the toggle flip-flop (E_T_FF). The flip-flop's output switches a digital output (logiBUS Q1). The clock generator can be started via one pushbutton (I1) and stopped via a second pushbutton (I2).

@@ -1,5 +1,6 @@
 # sequence_ET_04_04_AX
 ![sequence_ET_04_04_AX_ecc](./sequence_ET_04_04_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_ET_04_04_AX` is the adapter-based version of `sequence_ET_04_04`. It implements an 8-stage sequence control, where the outputs are controlled via `AX` adapters (event + data) instead of simple BOOL variables. Transitions can be event-driven or time-controlled.

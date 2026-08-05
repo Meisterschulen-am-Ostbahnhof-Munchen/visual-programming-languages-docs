@@ -34,6 +34,7 @@ Der interne Ablauf ist in drei Schritte gegliedert:
 3. **Ergebnisausgabe:** Das Ergebnis des Vergleichs (`F_NE.OUT`) – ein BOOL – wird auf den Ausgangsdaten-Port `AX_OUT.D1` gelegt. Gleichzeitig wird das Ereignis `F_NE.CNF` an den Ereigniseingang `AX_OUT.E1` weitergeleitet, sodass der Ausgangsadapter das Ergebnis signalisiert.
 
 **Zusammenhang:**
+
 - Ist der Eingangswert ungleich 0 → Ausgabe `TRUE`
 - Ist der Eingangswert gleich 0 → Ausgabe `FALSE`
 

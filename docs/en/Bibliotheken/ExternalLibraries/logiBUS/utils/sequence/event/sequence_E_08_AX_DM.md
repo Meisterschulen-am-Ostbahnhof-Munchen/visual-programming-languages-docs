@@ -1,5 +1,6 @@
 # sequence_E_08_AX_DM
 ![sequence_E_08_AX_DM](./sequence_E_08_AX_DM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_E_08_AX_DM` implements an event-driven sequence control with eight sequentially switchable outputs. It is based on a finite state machine with nine states and allows switching between states via explicit events. An integrated deadman switch (DM) allows monitoring and controlled reset of the outputs. The function block is specifically designed for use in safety-critical or monitored control sequences in agricultural technology.

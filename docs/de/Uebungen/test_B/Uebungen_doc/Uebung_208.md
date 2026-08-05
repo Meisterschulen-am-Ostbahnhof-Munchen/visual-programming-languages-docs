@@ -58,6 +58,7 @@ Diese Übung demonstriert die Realisierung einer gegenseitigen Verriegelung (Int
      * `ILOCK_SR_2.Q1` → `DigitalOutput_Q2.OUT`  
 
 **Lernziele:**  
+
 - Verständnis der Arbeitsweise eines Set-dominanten Latches mit Interlock-Funktion.  
 - Umsetzung einer gegenseitigen Verriegelung (z. B. für Schutzfunktionen oder Richtungssteuerungen) mittels Adapterverbindung.  
 - Einbindung von digitalen Ein-/Ausgabebausteinen in ein logisches Steuerungsnetzwerk.  
@@ -65,6 +66,7 @@ Diese Übung demonstriert die Realisierung einer gegenseitigen Verriegelung (Int
 **Schwierigkeitsgrad:** Mittel – erfordert Grundkenntnisse in der Signalverarbeitung und der Arbeit mit Funktionsbausteinen in 4diac.  
 
 **Vorgehen zur Inbetriebnahme:**  
+
 - Laden Sie die Übung in die 4diac-IDE.  
 - Stellen Sie sicher, dass die Hardware-Anschlüsse `Input_I1`…`Input_I4` den Tastern/Sensoren für S1, R1, S2, R2 entsprechen und `Output_Q1`/`Q2` die zu steuernden Aktoren ansteuern.  
 - Starten Sie die Ausführung und testen Sie durch Betätigen der Taster das Setzen und Zurücksetzen der Ausgänge. Dabei sollte nie gleichzeitig `Q1` und `Q2` TRUE sein.

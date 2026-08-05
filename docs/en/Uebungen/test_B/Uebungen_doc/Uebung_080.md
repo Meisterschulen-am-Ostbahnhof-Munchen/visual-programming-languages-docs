@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_080`. It introduces the basic principle of event counting.
 ## 🎧 Podcast
 ![Uebung_080_network](./Uebung_080_network.svg)
+
 * [800 HP High-Tech Giant: What the ROPA Tiger 6S Operating Manual Reveals About Modern Agriculture and Extreme Safety ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/800-PS-Hightech-Riese-Was-die-Betriebsanleitung-des-ROPA-Tiger-6S-ber-moderne-Landwirtschaft-und-extreme-Sicherheit-verrt-e3aub4t)
 
 ----

@@ -1,5 +1,6 @@
 # ASSEMBLE_AD_FROM_AQ
 ![ASSEMBLE_AD_FROM_AQ](./ASSEMBLE_AD_FROM_AQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASSEMBLE_AD_FROM_AQ` is used to combine sixteen separate `AQ` adapters (quarters) into a single `AD` output adapter (DWORD). The term "quarter" indicates that each `AQ` adapter represents part of a 32-bit word—specifically, one byte (8 bits). The block combines these 16 bytes into a complete DWORD and makes it available via a `AD` plug. It is particularly suitable for applications where data arrives in smaller units and only needs to be combined into a larger data type at the receiving end.

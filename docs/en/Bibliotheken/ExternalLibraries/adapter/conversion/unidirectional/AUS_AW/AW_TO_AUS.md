@@ -1,5 +1,6 @@
 # AW_TO_AUS
 ![AW_TO_AUS](./AW_TO_AUS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The composite function block `AW_TO_AUS` converts a `WORD` adapter signal into a `USINT` adapter signal. It encapsulates the IEC 61131-3 standard function `F_WORD_TO_USINT` in an adapter-coupled environment, thus enabling seamless integration between different adapter types.

@@ -107,6 +107,7 @@ F3 (drücken)    → Rücksetze SR2 (Zyl2 ein)
 ```
 
 **Lernziele:**
+
 - Verwendung von Set‑Reset‑Funktionsbausteinen (AX_SR) in 4diac.
 - Verknüpfung mehrerer Ereignisquellen mit einem Ziel (Fan‑Out).
 - Steuerung von Digitalausgängen über Adapter.

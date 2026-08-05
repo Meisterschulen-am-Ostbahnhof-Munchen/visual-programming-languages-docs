@@ -1,6 +1,7 @@
 # SPLIT_BYTE_INTO_QUARTERS
 Image not available
 ![SPLIT_BYTE_INTO_QUARTERS](./SPLIT_BYTE_INTO_QUARTERS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SPLIT_BYTE_INTO_QUARTERS` is used to split an incoming byte data value into four separate quarter outputs. It implements a logical decomposition of a byte (8 bits) into four 2-bit groups, which are routed externally via unidirectional adapters. The internal implementation uses a combination of flip-flops and a recursive instance of the same function block to control the split synchronously and data-driven.

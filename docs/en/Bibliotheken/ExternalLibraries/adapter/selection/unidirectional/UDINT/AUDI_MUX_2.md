@@ -1,5 +1,6 @@
 # AUDI_MUX_2
 ![AUDI_MUX_2](./AUDI_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AUDI_MUX_2** is a generic multiplexer function block (FB) according to IEC 61499. It allows the selection of one of two input values via an index (K) and forwards the selected value to the output. The FB is implemented as a generic block, so the specific data type of the values can be flexibly defined using adapters.

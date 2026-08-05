@@ -21,14 +21,17 @@ Die Übung besteht aus vier direkt instanziierten Funktionsbausteinen. Es sind k
 ### Parameter der einzelnen Instanzen
 
 **NumericValue_PHYSA_I3**
+
 - `QI` = TRUE (Aktivierung)
 - `stObj` = `InputNumber_I3` (Objektname der Hardwareschnittstelle)
 
 **NumericValue_PHYSA_I4**
+
 - `QI` = TRUE
 - `stObj` = `InputNumber_I4`
 
 **Q_NumericValue_PHYSA**
+
 - `stObj` = `OutputNumber_N3` (Objektname der Ausgangsschnittstelle)
 
 **AR_ADD_2** – keine Parameter gesetzt, alle Werte werden über Adapterverbindungen übergeben.

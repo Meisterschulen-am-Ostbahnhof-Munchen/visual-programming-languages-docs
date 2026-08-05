@@ -1,5 +1,6 @@
 # AR_SPLIT_6
 ![AR_SPLIT_6](./AR_SPLIT_6.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_SPLIT_6** is used to distribute a single AR adapter input to six separate AR adapter outputs. It is designed as a generic function block (Generic FB) and allows for the simple duplication of an AR interface without data loss or protocol-specific conversion.

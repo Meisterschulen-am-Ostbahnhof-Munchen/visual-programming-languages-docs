@@ -43,6 +43,7 @@ Der Baustein überwacht den logischen Zustand des Dateneingangs im Adapter `CLK`
 4.  Der Speicher wird aktualisiert: `MEM := NOT CLK.D1`.
 
 **Verhalten:**
+
 *   Wenn das Eingangssignal von 1 auf 0 wechselt, wird der Ausgang `Q.D1` für genau einen Zyklus auf TRUE gesetzt.
 *   In allen anderen Fällen (0->0, 0->1, 1->1) bleibt der Ausgang FALSE.
 *   Das Ergebnis wird über das Ereignis `Q.E1` signalisiert.

@@ -1,6 +1,7 @@
 # Exercise_010b4_sub: IX to QX (generic)
 ## 🎧 Podcast
 ![Uebung_010b4_sub_network](./Uebung_010b4_sub_network.svg)
+
 * [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 ## Overview
 [cite_start]This sub-app type is used for the structured connection of ISOBUS softkeys to hardware outputs[cite: 1].

@@ -1,5 +1,6 @@
 # AX_TO_AL
 ![AX_TO_AL](./AX_TO_AL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_TO_AL** is a composite block for bidirectional coupling of an AX adapter (BOOL) with an AL adapter (LWORD). It enables the forwarding of events and data between these two adapter interfaces without requiring the implementation of custom logic. The function block serves as a simple conversion bridge and is typically used in automation systems to connect components with different adapter formats.

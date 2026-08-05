@@ -53,6 +53,7 @@ Die Verbindungen im SubApp-Netzwerk sind als Adapterverbindungen realisiert:
 2. Der Adapterausgang `OUT` von `AX_NOT_INIT` wird mit dem Adaptereingang `OUT` von `DigitalOutput_Q1` verbunden.
 
 **Ablauf**:
+
 - Der digitale Eingangswert wird ständig aktualisiert und an `AX_NOT_INIT` weitergegeben.
 - `AX_NOT_INIT` negiert den Wert und gibt das Ergebnis an `DigitalOutput_Q1` weiter.
 - Der Ausgangsbaustein setzt den physikalischen Ausgang entsprechend.
@@ -60,6 +61,7 @@ Die Verbindungen im SubApp-Netzwerk sind als Adapterverbindungen realisiert:
 **Besonderheit beim Start**: Während der Initialisierungsphase (BOOT) hat `AX_NOT_INIT` noch keinen gültigen Eingangswert empfangen. Daher gibt er seinen vordefinierten Startwert `TRUE` aus. Dies führt dazu, dass der Ausgang kurzzeitig `TRUE` wird, auch wenn der Eingang eigentlich `FALSE` ist.
 
 **Lernziele**:
+
 - Verständnis der Negation boolescher Signale in 4diac.
 - Kennenlernen des Startverhaltens initialisierter Funktionsbausteine (`INIT`-Bausteine).
 - Umgang mit Adapterverbindungen zwischen einzelnen Funktionsbausteinen.

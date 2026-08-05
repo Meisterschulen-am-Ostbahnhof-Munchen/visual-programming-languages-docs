@@ -1,5 +1,6 @@
 # ALR_SPLIT_8
 ![ALR_SPLIT_8](./ALR_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_SPLIT_8** is used to split a single ALR signal (via a socket) into eight identical ALR outputs (plugs). This block is designed as a generic function block and enables signal distribution within an IEC 61499-based controller.

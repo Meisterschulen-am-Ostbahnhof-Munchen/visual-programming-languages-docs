@@ -1,5 +1,6 @@
 # FB_RS_T_FF
 ![FB_RS_T_FF](./FB_RS_T_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `FB_RS_T_FF` implements a bistable, reset-dominant latch with an additional toggle function. It combines the properties of an RS flip-flop (set and reset) with the ability to toggle the output on each rising edge of the clock signal. The reset input has priority, followed by the set input, and then the toggle function.

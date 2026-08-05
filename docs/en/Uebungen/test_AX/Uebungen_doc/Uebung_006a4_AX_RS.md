@@ -1,5 +1,6 @@
 # Exercise_006a4_AX_RS: Exercise for AX_FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop with Adapter)
 ![Uebung_006a4_AX_RS_network](./Uebung_006a4_AX_RS_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of the **Reset-Dominant Toggle Flip-Flop (AX_FB_RS_T_FF)** with an adapter interface in the 4diac IDE.
@@ -43,6 +44,7 @@ The logiBUS inputs are read via the function blocks `DigitalInput_SET`, `Digital
 - `RS_T_FF.Q1` → `DigitalOutput_Q1.OUT`
 
 **Flip-Flop Functionality:**
+
 - On a rising edge at the CLK input, output Q1 toggles (i.e., it changes its state from FALSE to TRUE or vice versa).
 - If the RESET1 input is active (TRUE), the output is **immediately and dominantly** set to FALSE – regardless of the current state and the clock signal.
 

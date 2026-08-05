@@ -1,5 +1,6 @@
 # ALI_SPLIT_2
 ![ALI_SPLIT_2](./ALI_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ALI_SPLIT_2** function block serves as a generic distributor for a unidirectional ALI (Application Layer Interface) adapter. It copies all incoming data and events from a single input socket to two output plugs. This allows a signal or data source to be passed on to two independent receivers.

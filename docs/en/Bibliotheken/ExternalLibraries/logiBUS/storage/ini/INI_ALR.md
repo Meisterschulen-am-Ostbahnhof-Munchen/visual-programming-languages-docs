@@ -1,5 +1,6 @@
 # INI_ALR
 ![INI_ALR](./INI_ALR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **INI_ALR** is used to read and write floating-point values of type LREAL to and from a `settings.ini` file. It accesses a configuration file that is parameterized via a section name and a key. The block encapsulates the use of the internal `INI` function block and additionally provides a standardized **ALR** adapter interface (unidirectional) through which values can be both set and read.

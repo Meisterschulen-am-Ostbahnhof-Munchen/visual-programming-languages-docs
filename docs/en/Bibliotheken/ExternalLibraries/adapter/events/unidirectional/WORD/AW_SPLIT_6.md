@@ -1,6 +1,7 @@
 # AW_SPLIT_6
 Image not available
 ![AW_SPLIT_6](./AW_SPLIT_6.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AW_SPLIT_6** function block is used to split an incoming unidirectional **AW** adapter into six identical output adapters. It is designed as a generic function block used in the 4diac IDE for distributing AW signals. The function block is intended for applications where a signal value—e.g., an analog or digital value—is required multiple times in parallel without the need for manual duplication of the connections.

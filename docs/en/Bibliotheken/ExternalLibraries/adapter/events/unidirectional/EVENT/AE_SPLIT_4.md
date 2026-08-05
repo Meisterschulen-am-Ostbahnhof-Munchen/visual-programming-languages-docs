@@ -1,5 +1,6 @@
 # AE_SPLIT_4
 ![AE_SPLIT_4](./AE_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_SPLIT_4** distributes an incoming event from a unidirectional **AE adapter** to four identical output adapters. It is executed as a generic function block (Generic FB) and can therefore be used for any data type of the adapter. The distribution occurs without delay or state change – the incoming event is forwarded to all four outputs simultaneously.

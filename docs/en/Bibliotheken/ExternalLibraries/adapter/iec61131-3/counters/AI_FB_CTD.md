@@ -1,5 +1,6 @@
 # AI_FB_CTD
 ![AI_FB_CTD](./AI_FB_CTD.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_FB_CTD** is a down counter for integer values, standardized according to IEC 61499-2. It consistently uses adapter interfaces (AX, AI) to transport events and data. The block is implemented as a wrapper around the classic IEC 61131 function block `FB_CTD` and enables a modular, adapter-based connection in 4diac IDE networks. Every incoming event via the counter controllers (CD, LD, PV) updates the internal counter and triggers an output event.

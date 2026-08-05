@@ -1,5 +1,6 @@
 # ALR_SPLIT_2
 ![ALR_SPLIT_2](./ALR_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The ALR_SPLIT_2 function block splits an incoming ALR adapter signal into two identical output signals. It is designed generically (`GEN_ALR_SPLIT`) and is suitable for distributing alarm or lifecycle signals.

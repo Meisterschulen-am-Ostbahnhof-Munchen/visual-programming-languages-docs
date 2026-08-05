@@ -48,6 +48,7 @@ Die Subapplikation ist als ereignisgesteuerte Kette realisiert:
 4. **Ausgang setzen**: Das Ereignis `EO` von `E_T_FF` wird an den `REQ`-Eingang von `DigitalOutput_Q1` weitergeleitet (**Event-Verbindung**: `E_T_FF.EO → DigitalOutput_Q1.REQ`). Der Flipflop-Zustand (`E_T_FF.Q`) wird als Sollwert an den Dateneingang `OUT` von `DigitalOutput_Q1` übergeben (**Data-Verbindung**: `E_T_FF.Q → DigitalOutput_Q1.OUT`). Dadurch wird der physikalische Ausgang entsprechend gesetzt.
 
 **Lernziele**:  
+
 - Verständnis ereignisgesteuerter Abläufe in 4diac.  
 - Einsatz eines Flankenerkennungsbausteins (`E_R_TRIG`).  
 - Realisierung eines Toggle-Flipflops mit `E_T_FF`.  

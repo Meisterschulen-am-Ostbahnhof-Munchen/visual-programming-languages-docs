@@ -1,6 +1,7 @@
 Here is the documentation for exercise **Exercise_126b2** based on the provided data.
 # Exercise_126b2: ISOBUS Send Message Cyclic (with CB) Sine Function Plotting
 ![Uebung_126b2_network](./Uebung_126b2_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the cyclic sending of an ISOBUS message whose data content is dynamically generated at runtime. Specifically, a sine function is generated, its values are packaged into a CAN message, and sent over the network. This is suitable, for example, for plotting signals in PCAN Explorer.

@@ -1,5 +1,6 @@
 # E_D_FF_ANY_HYS_TMIN
 ![E_D_FF_ANY_HYS_TMIN](./E_D_FF_ANY_HYS_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **E_D_FF_ANY_HYS_TMIN** is a D flip-flop (data latch) with hysteresis that additionally enforces a minimum inter-disposal time between successive output events. It serves to stably transfer an analog or discrete value while simultaneously suppressing fast noise and excessively frequent state transitions.

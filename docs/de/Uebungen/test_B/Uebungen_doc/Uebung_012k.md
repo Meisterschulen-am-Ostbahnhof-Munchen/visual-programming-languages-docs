@@ -32,6 +32,7 @@ Der oberste Baustein `Uebung_012k` besitzt keine eigene Schnittstelle (leere `Su
 Diese Konstanten sind in den referenzierten Bibliotheken definiert und legen fest, unter welchem Schlüssel und Bereich der String in der INI-Datei abgelegt wird, sowie welche Eingabe-/Ausgabekomponente verwendet wird.
 
 **Verbindungen im Sub-Baustein**:
+
 - Ereignisfluss:
     - `StringValue_IS.IND` → `INI.SET`
     - `INI.SETO` → `IND` (Ausgang der SubApp)

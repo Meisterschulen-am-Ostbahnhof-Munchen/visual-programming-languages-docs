@@ -1,5 +1,6 @@
 # AD_MUX_3
 ![AD_MUX_3](./AD_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AD_MUX_3** serves as a generic 3-channel multiplexer for analog data transmission via adapters of type `adapter::types::unidirectional::AD`. Based on an index value `K`, it selects one of the three input adapters (`IN1`/`IN2`/`IN3`) and forwards its data to the output adapter `OUT`. The block is suitable for dynamic switching between different analog signal sources in automation systems.

@@ -1,5 +1,6 @@
 # AIS_SPLIT_8
 ![AIS_SPLIT_8](./AIS_SPLIT_8.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_SPLIT_8** distributes an incoming AIS (Application Interface Socket) signal to eight identical output adapters. It is designed as a generic block and allows the simultaneous transmission of an AIS signal to multiple subsequent function blocks without data loss or delay.

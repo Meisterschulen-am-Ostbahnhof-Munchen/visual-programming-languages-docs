@@ -1,6 +1,7 @@
 # Slide Control
 <img width="1509" height="338" alt="image" src="https://github.com/user-attachments/assets/ed91b9bc-3eed-4d26-8b19-06f71ea1f94d" />
 ![SchieberControl_ecc](./SchieberControl_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SchieberControl` is a basic function block (FB) according to IEC 61499 for controlling a slide actuator (e.g., pneumatic). It implements a complete state control (ECC) that manages the movement (open/close), holding states, and fault states of a slide. The block offers a comprehensive interface for parameterization, operation via pushbuttons, softkeys, and auxiliary controls, as well as for outputting control signals to the actuators.

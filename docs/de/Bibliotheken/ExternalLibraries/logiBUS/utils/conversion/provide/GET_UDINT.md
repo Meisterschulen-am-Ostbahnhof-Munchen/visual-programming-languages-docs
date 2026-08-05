@@ -14,6 +14,7 @@ Der Funktionsblock **GET_UDINT** dient dazu, den aktuellen Wert einer als InOut 
 | REQ | Event | Normaler Ausführungsanforderung |
 
 *Assoziierte Daten:*
+
 - **IN** (InOut-Variable) wird bei REQ gelesen.
 
 ### **Ereignis-Ausgänge**
@@ -23,6 +24,7 @@ Der Funktionsblock **GET_UDINT** dient dazu, den aktuellen Wert einer als InOut 
 | CNF | Event | Bestätigung der Ausführung |
 
 *Assoziierte Daten:*
+
 - **OUT** (Ausgangswert) wird nach erfolgreichem Lesen bereitgestellt.
 - **IN** (InOut-Variable) wird ebenfalls assoziiert, d. h. ihr Wert kann nach dem Event am Ausgang gelesen werden.
 

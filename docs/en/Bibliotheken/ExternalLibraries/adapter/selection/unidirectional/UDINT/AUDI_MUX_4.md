@@ -1,5 +1,6 @@
 # AUDI_MUX_4
 ![AUDI_MUX_4](./AUDI_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AUDI_MUX_4 is a generic multiplexer function block according to IEC 61499-2. It selects one of four inputs (IN1 to IN4) based on an index K and forwards this value to the output OUT. The block is designed for use in adapter-based systems.

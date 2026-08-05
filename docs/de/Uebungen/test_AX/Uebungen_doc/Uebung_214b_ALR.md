@@ -88,6 +88,7 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Ada
    - Diese wird an den Funktionsbaustein `Q_NumericValue_PHYSA_LREAL` übergeben, der den Wert auf dem Terminal (Objekt `OutputNumber_N3`) anzeigt.
 
 **Hinweise:**  
+
 - Negative Werte sind durch den verwendeten Datentyp `LREAL` möglich (siehe Kommentar im Netzwerk).  
 - Zur Reduzierung der Ereignisrate kann bei hohen Zählfrequenzen ein AX_D_FF (Abfrageverzögerung) vorgeschaltet werden (siehe Kommentar).
 

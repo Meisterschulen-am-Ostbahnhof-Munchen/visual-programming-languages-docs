@@ -1,5 +1,6 @@
 # Exercise_223_AUDI: Standard IEC 61131-3 AUDI_FB_CTUD (Adapter Version, Up/Down Counter, UDINT) with Terminal Output
 ![Uebung_223_AUDI_network](./Uebung_223_AUDI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a bidirectional counter (up/down counter) according to IEC 61131-3 (type CTUD) as an adapter version. The counter value is processed as a UDINT (unsigned double integer) and output via a terminal module to a numeric display. The counter functions are controlled via four digital inputs (CU, CD, R, LD) connected via logiBUS modules. The outputs (QU, QD) are also routed to digital outputs via logiBUS modules.

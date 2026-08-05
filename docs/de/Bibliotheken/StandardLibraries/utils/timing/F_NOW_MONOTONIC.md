@@ -51,6 +51,7 @@ Die Funktion dient als Wrapper für die ST-Funktion `NOW_MONOTONIC()`.
 - **Monotone Zeit**:
   Garantiert stetig steigende Werte, selbst bei Systemzeitänderungen.
   *Hinweis:* Der Referenzpunkt ist hardwareabhängig (z. B. Systemstart).
+
 - **Lizenz**: Eclipse Public License 2.0 (EPL-2.0).
 
 ---

@@ -1,5 +1,6 @@
 # AUDI_D_FF
 ![AUDI_D_FF](./AUDI_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_D_FF** implements a clock-controlled D flip-flop (data latch) based on IEC 61499 adapters. Upon an event at the input adapter, it receives the incoming data value, stores it, and outputs it via the output adapter. The block encapsulates all control logic in a compact, adapter-based interface, thus allowing for a clean separation of event and data communication.

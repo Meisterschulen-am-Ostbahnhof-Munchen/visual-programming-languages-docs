@@ -1,5 +1,6 @@
 # AUI_DEMUX_2
 ![AUI_DEMUX_2](./AUI_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUI_DEMUX_2` implements a generic demultiplexer for two output adapters. It selectively forwards incoming AUI data (unidirectional) to one of two outputs via an index. The block is designed as a generic function block and can be instantiated for various AUI types.

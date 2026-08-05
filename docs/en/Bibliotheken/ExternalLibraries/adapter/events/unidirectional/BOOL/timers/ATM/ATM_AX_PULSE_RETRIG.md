@@ -1,5 +1,6 @@
 # ATM_AX_PULSE_RETRIG
 ![ATM_AX_PULSE_RETRIG](./ATM_AX_PULSE_RETRIG.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ATM_AX_PULSE_RETRIG** generates a pulse of defined duration at its output. It is designed as a retriggerable version, meaning that a new start command during a running pulse resets the pulse duration. Control and parameter transfer are handled exclusively via two standardized adapter interfaces (ATM / AX), so the block does not require direct data inputs/outputs.

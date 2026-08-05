@@ -1,5 +1,6 @@
 # AIWS_SPLIT_3
 ![AIWS_SPLIT_3](./AIWS_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIWS_SPLIT_3** is used to split a single incoming AIWS adapter (type `adapter::types::unidirectional::AIWS`) into three identical output adapters. All data received via the input adapter is forwarded unchanged to all three outputs. The block is designed to be generic and can be used with various AIWS types.

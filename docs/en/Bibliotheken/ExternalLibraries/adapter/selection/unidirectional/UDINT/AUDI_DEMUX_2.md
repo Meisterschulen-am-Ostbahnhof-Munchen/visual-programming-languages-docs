@@ -1,5 +1,6 @@
 # AUDI_DEMUX_2
 ![AUDI_DEMUX_2](./AUDI_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUDI_DEMUX_2` is a generic 1-to-2 demultiplexer for the unidirectional adapter type `AUDI`. It forwards an incoming AUDI value to one of two output plugs, controlled by a numeric index.

@@ -1,5 +1,6 @@
 # AUS_FIELDBUS_USINT_TO_SIGNAL_SCALED
 ![AUS_FIELDBUS_USINT_TO_SIGNAL_SCALED](./AUS_FIELDBUS_USINT_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block AUS_FIELDBUS_USINT_TO_SIGNAL_SCALED mirrors an incoming fieldbus signal value (USINT) to the output, provided the signal is recognized as valid. The input value is multiplied by a configurable scaling factor, and an offset is added. The function block is implemented as a composite block and consists of a sub-function block for scaling and an edge-triggered D flip-flop for synchronizing the validity signal. It is typically used in fieldbus signal processing to convert raw USINT values into physical quantities and pass on the data validity information.

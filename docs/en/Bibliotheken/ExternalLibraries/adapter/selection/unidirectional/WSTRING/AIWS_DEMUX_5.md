@@ -1,5 +1,6 @@
 # AIWS_DEMUX_5
 ![AIWS_DEMUX_5](./AIWS_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AIWS_DEMUX_5 function block is a generic demultiplexer for the **AIWS** data type. It distributes an incoming data stream, provided via a unidirectional adapter, to one of five possible output adapters. The target output is selected via an index `K`, which is evaluated upon an event at input `REQ`. Confirmation of successful routing is provided via the event output `CNF`.

@@ -1,5 +1,6 @@
 # sequence_Pattern_04_04_loop_AX
 ![sequence_Pattern_04_04_loop_AX_ecc](./sequence_Pattern_04_04_loop_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **sequence_Pattern_04_04_loop_AX** is a sequencer (step switch) that controls a sequence of four states in an endless loop. It functions similarly to an electronic cam switch. A specific output pattern can be defined for each of the four steps, controlling four outputs (Q1 to Q4).

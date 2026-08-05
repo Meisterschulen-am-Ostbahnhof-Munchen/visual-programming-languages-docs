@@ -1,5 +1,6 @@
 # Exercise_201: Interlock: ILOCK_BLOCK (Mutual Interlock)
 ![Uebung_201_network](./Uebung_201_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the implementation of a **mutual interlock** using the function block `ILOCK_BLOCK`. The goal is to link two digital inputs (`I1`, `I2`) in such a way that only one of the two corresponding outputs (`Q1`, `Q2`) can be active at any given time. As soon as an input signal is present, the corresponding output is set and the other output is disabled. This exercise uses the hardware modules `logiBUS_IX` (digital input) and `logiBUS_QX` (digital output), as well as the interlock module from the `logiBUS` library.

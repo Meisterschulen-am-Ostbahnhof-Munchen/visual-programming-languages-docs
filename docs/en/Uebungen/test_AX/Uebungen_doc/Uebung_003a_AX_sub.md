@@ -1,6 +1,7 @@
 Here is the documentation for the exercise based on the provided XML data:
 # Exercise_003a_AX_sub: IX to QX (generic)
 ![Uebung_003a_AX_sub_network](./Uebung_003a_AX_sub_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise covers a sub-application (`SubAppType`) that establishes a generic connection between a logiBUS input and a logiBUS output. The function block is used to route a signal from a defined hardware input directly to a defined hardware output (mapping from IX to QX).

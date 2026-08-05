@@ -1,5 +1,6 @@
 # AX_SR_SYM
 ![AX_SR_SYM](./AX_SR_SYM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_SR_SYM** is an event-driven, bistable flip-flop with symmetrical turn-on behavior. It implements a set/reset memory, which is accessed via the events `S` (Set) and `R` (Reset). Unlike similar function blocks, the start state is not predefined; the block reacts to the first arriving event – regardless of whether it is `S` or `R`.

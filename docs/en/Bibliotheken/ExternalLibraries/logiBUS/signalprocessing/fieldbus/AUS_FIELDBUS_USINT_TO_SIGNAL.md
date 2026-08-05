@@ -1,5 +1,6 @@
 # AUS_FIELDBUS_USINT_TO_SIGNAL
 ![AUS_FIELDBUS_USINT_TO_SIGNAL](./AUS_FIELDBUS_USINT_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUS_FIELDBUS_USINT_TO_SIGNAL` is used to pass a USINT signal from a fieldbus adapter, taking a validity check into account. It mirrors the input value to the output if the signal is recognized as valid. An additional adapter outputs the validity status. The internal logic uses a dedicated fieldbus conversion block and an edge-triggered D flip-flop for synchronization.

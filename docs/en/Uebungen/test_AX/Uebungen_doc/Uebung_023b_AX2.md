@@ -1,5 +1,6 @@
 # Exercise_023b_AX2: Mirror Sequence (3) - AX Variant
 ![Uebung_023b_AX2_network](./Uebung_023b_AX2_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **mirror sequence** for two double-acting cylinders (cylinder 1 and cylinder 2) using AX-SR modules (unidirectional adapters).

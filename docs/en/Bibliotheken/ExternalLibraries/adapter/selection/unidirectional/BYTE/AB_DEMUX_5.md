@@ -1,5 +1,6 @@
 # AB_DEMUX_5
 ![AB_DEMUX_5](./AB_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_DEMUX_5** is a generic AB demultiplexer with five outputs. It receives a data value via a single AB adapter socket and forwards it to one of the five AB adapter plugs. The target output is selected via an index, which is set via the event input **REQ** together with the data value **K**.

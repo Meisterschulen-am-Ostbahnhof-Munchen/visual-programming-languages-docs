@@ -1,5 +1,6 @@
 # ADD_3
 ![ADD_3](https://user-images.githubusercontent.com/116869307/214143012-431cb6ed-2e5c-4316-a5b8-ab7a341eeb37.png)
+
 * * * * * * * * * *
 ## Introduction
 The **ADD_3** is an enhanced version of the adder for calculating the sum of three values, developed under the EPL-2.0 license. Version 1.0 offers type-safe addition for various numeric data types according to the IEC 61131-3 standard.

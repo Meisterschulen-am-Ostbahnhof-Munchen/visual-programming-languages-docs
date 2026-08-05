@@ -1,5 +1,6 @@
 # AULI_SPLIT_6
 ![AULI_SPLIT_6](./AULI_SPLIT_6.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_SPLIT_6** is used to distribute a single AULI adapter input (unidirectional) to six identical AULI outputs. It provides a generic solution for forwarding an AULI signal to multiple subsequent blocks without compromising signal integrity.

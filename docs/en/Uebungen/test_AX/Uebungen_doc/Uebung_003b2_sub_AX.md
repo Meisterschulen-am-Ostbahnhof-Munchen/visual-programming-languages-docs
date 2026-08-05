@@ -2,6 +2,7 @@ Here is the documentation for exercise `Uebung_003b2_sub_AX`, based on the provi
 # Exercise_003b2_sub_AX: IX to QX (generic)
 ![Uebung_003b2_sub_AX_network](./Uebung_003b2_sub_AX_network.svg)
 *(Placeholder for exercise image, if available)*
+
 * * * * * * * * * *
 ## Introduction
 

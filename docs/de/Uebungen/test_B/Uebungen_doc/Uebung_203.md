@@ -60,6 +60,7 @@ Die Schaltung arbeitet **ereignisgesteuert** und nutzt sowohl Ereignis- als auch
    - Sobald beide Eingänge auf `FALSE` zurückgehen, werden auch die Ausgänge zurückgesetzt (sofern der Baustein entsprechend konfiguriert ist).
 
 **Lernziele dieser Übung**:
+
 - Verständnis des Interlock-Prinzips und der Last-Wins-Priorität.
 - Umgang mit ereignisgesteuerten Funktionsbausteinen in 4diac IDE.
 - Verknüpfung von digitalen Ein-/Ausgängen mit einem Interlock-Baustein.

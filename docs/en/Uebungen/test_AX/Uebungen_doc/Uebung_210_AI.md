@@ -1,5 +1,6 @@
 # Exercise_210_AI: Standard IEC 61131-3 AI_FB_CTU (Adapter Version, Up Counter, INT) with Terminal Output
 ![Uebung_210_AI_network](./Uebung_210_AI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an up counter (CTU) according to IEC 61131-3 in an adapter-based version. The counted value is output via a terminal. The circuit demonstrates the interaction between logiBUS inputs, a counter block, conversion blocks, and a terminal output.

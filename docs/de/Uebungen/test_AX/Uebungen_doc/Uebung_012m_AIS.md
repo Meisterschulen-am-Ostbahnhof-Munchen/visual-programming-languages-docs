@@ -30,6 +30,7 @@ Die SubApp besitzt keine eigenen Ein‑/Ausgangsschnittstellen (InterfaceList is
 - Die Ausführung startet, sobald der AIS-Adapter einen neuen String liefert. Der FB speichert diesen Wert dann persistent.
 
 **Lernziele**:
+
 - Verständnis des AIS-Adapter-Konzepts für asynchrone Datenaufnahme
 - Persistente Speicherung von Stringdaten im NVS
 - Einsatz von importierten Konstanten zur Parametrierung von Funktionsbausteinen

@@ -1,6 +1,7 @@
 # sequence_ET_05
 <img width="1654" height="399" alt="image" src="https://github.com/user-attachments/assets/244b09cc-9ec4-43b7-9157-fb82556ce8ef" />
 ![sequence_ET_05_ecc](./sequence_ET_05_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_ET_05` implements sequential control with five defined states (State_01 to State_05) and a start state (START). The transition between states can occur either through an external event or after an adjustable time. The block is designed for applications that require a step-by-step sequence of actions with flexible transition conditions.

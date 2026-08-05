@@ -53,6 +53,7 @@ Diese Sub-Applikation realisiert ein verriegelbares Toggle-Flip-Flop, das über 
 ## Zusammenfassung  
 Die Übung vertieft den Umgang mit **AE2‑Adaptern** zur bidirektionalen Ereigniskommunikation und demonstriert die Realisierung eines **verriegelbaren Toggle‑Flip‑Flops**. Der kombinierte Einsatz von Set‑Reset‑Flipflop, Ereignisweiche und Adapter‑Konvertern zeigt, wie ereignisgesteuerte Rückkopplungen und externe Steuereingriffe modular in 4diac‑IDE umgesetzt werden können.  
 **Lernziele:**  
+
 - Verständnis der AE2‑Adapter‑Kommunikation (Socket/Plug)  
 - Aufbau einer Toggle‑Logik mit `E_SR` und `E_SWITCH`  
 - Realisierung einer Verriegelung durch zyklische Ereignisverkettung  

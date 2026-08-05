@@ -1,5 +1,6 @@
 # FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE
 ![FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE](./FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` is used to process a 16-bit fieldbus signal (type `UINT`) into a scaled real value. The incoming word is split into an upper and a lower byte, each byte is multiplied by its own scaling factor, and an offset is added. Additionally, a validity signal (`VALID`) is output, based on a predefined threshold. This function block is particularly suitable for protocols that encode two measured variables (e.g., temperature and pressure) in a single register.

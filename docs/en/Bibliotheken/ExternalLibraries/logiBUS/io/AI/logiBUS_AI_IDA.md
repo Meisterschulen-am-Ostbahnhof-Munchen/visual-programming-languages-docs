@@ -1,5 +1,6 @@
 # logiBUS_AI_IDA
 ![logiBUS_AI_IDA](./logiBUS_AI_IDA.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `logiBUS_AI_IDA` is a composite function block (FB) for processing analog double-word input data. It serves as an interface between a logiBUS resource and the application by providing uniform analog input values via an adapter and returning status information (QO, STATUS) to the calling instance. The function block supports both initialization-driven and event-driven processing.

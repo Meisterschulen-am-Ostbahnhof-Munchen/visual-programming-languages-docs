@@ -1,5 +1,6 @@
 # ALI_D_FF_HYS
 ![ALI_D_FF_HYS](./ALI_D_FF_HYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ALI_D_FF_HYS** function block implements a data latch (D flip-flop) with a hysteresis function. It serves for the stable and debounced transmission of a binary signal: An incoming data signal is received and output on a rising clock edge, with configurable hysteresis preventing small signal changes (noise) from causing unwanted output changes. The component is specifically designed for use with the unidirectional **ALI** adapter structure in IEC 61499 environments.

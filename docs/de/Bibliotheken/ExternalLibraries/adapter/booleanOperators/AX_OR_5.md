@@ -25,9 +25,11 @@ Keine direkten Daten-Ausgänge vorhanden.
 
 ### **Adapter**
 **Plug-Adapter:**
+
 - **OUT**: Unidirektionaler Adapter für das ODER-Ergebnis
 
 **Socket-Adapter:**
+
 - **IN1**: Unidirektionaler Adapter für ODER-Eingang 1
 - **IN2**: Unidirektionaler Adapter für ODER-Eingang 2
 - **IN3**: Unidirektionaler Adapter für ODER-Eingang 3

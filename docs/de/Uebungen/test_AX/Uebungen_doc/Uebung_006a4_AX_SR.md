@@ -39,11 +39,13 @@ Der logische Ablauf der Übung ist wie folgt:
 3. **Ausgang**: Der Ausgang `SR_T_FF.Q1` wird auf den Digitalausgang `DigitalOutput_Q1.OUT` übertragen und an `Output_Q1` ausgegeben.
 
 **Funktionsweise des SR_T_FF**:
+
 - Bei einem aktiven **Reset** (`RESET = 1`) wird der Ausgang sofort auf `FALSE` gesetzt.
 - Ist **Reset** inaktiv und **SET** aktiv, toggelt der Ausgang bei jeder positiven Flanke an `CLK`. (Set-dominant bedeutet, dass ein gleichzeitig aktiver Set die Toggle-Funktion zulässt; bei inaktivem Set wird der Ausgang nicht getoggelt.)
 - Sind beide, Set und Reset, inaktiv, bleibt der Ausgang unverändert.
 
 **Lernziele**:
+
 - Verständnis des setzdominanten Toggle-Flipflops und seiner Adapter-Schnittstelle.
 - Einbindung von Hardware-Ein-/Ausgängen über logiBUS-Adapter.
 - Analyse des zeitlichen Verhaltens bei unterschiedlichen Eingangskombinationen.

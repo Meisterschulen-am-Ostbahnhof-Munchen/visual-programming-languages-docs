@@ -1,5 +1,6 @@
 # AIS_D_FF_TMIN
 ![AIS_D_FF_TMIN](./AIS_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_D_FF_TMIN** implements a data-dependent flip-flop (D flip-flop) with a minimum inter-disposal time (MIT) between two consecutive output events (EOs). It latches an incoming data value via an AIS adapter and outputs it only when the minimum time specified by the parameter `Tmin` has elapsed since the last EO. This suppresses excessively rapid signal changes and ensures a defined signal delay.

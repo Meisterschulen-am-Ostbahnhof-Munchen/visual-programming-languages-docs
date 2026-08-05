@@ -1,5 +1,6 @@
 # AX_D_FF_TMIN
 ![AX_D_FF_TMIN](./AX_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_D_FF_TMIN** implements a data-latch D flip-flop that additionally enforces a minimum time between successive event outputs (e.g., EO). It serves as a modular wrapper around the IEC 61499 standard function block `E_D_FF_TMIN` and uses a unidirectional adapter (`adapter::types::unidirectional::AX`) for event-driven data transfer. This function block is particularly suitable for applications requiring reliable data transfer with an adjustable minimum interval between output pulses.

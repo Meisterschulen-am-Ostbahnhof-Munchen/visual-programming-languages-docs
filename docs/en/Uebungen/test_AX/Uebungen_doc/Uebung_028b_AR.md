@@ -1,5 +1,6 @@
 # Exercise_028b_AR: Analog Input Calibration with Adapters, INI, and Hysteresis Controller at the Output
 ![Uebung_028b_AR_network](./Uebung_028b_AR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the calibration of an analog input signal using adapters and INI-based storage of the calibration parameters. The calibrated signal is then passed through a hysteresis controller, whose threshold values are also read from an INI file. The exercise demonstrates the integration of analog and digital inputs/outputs, adapter conversions, and the persistent storage of parameters.

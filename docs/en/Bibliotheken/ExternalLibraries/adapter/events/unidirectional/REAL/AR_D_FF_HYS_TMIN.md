@@ -1,5 +1,6 @@
 # AR_D_FF_HYS_TMIN
 ![AR_D_FF_HYS_TMIN](./AR_D_FF_HYS_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AR_D_FF_HYS_TMIN** function block implements a data latch (D flip-flop) with a hysteresis function and a minimal delay between successive output events at the output adapter. It serves for the stable acquisition and transmission of analog values via unidirectional AR adapters, suppressing edge noise and limiting the output frequency.

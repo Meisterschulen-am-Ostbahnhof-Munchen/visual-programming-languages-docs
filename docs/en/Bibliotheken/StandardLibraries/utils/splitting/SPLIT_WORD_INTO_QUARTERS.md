@@ -3,6 +3,7 @@
 * [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 ----
 ![SPLIT_WORD_INTO_QUARTERS](https://github.com/user-attachments/assets/f26e7474-c9bf-4fb4-923f-d8c2ad4ac48e)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SPLIT_WORD_INTO_QUARTERS` is used to split a 16-bit word into eight 2-bit quarter bytes. This is particularly useful when processing compressed data or extracting specific bit patterns.

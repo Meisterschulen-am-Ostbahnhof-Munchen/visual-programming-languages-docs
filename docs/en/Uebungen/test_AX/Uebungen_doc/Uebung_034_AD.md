@@ -1,6 +1,7 @@
 # Exercise_034_AD: Analog Input to PWM Output (Adapter Version)
 Analog Input to PWM Output (Adapter Version)
 ![Uebung_034_AD_network](./Uebung_034_AD_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an analog input to control a PWM output via an adapter connection. The analog input signal is first processed by a bit shift (left shift) before being passed to the PWM output. The PWM output is initialized by an event triggered by the analog input.

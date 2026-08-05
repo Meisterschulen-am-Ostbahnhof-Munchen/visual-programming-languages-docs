@@ -1,5 +1,6 @@
 # AIS_DEMUX_5
 ![AIS_DEMUX_5](./AIS_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_DEMUX_5** is a generic AIS demultiplexer (Generic FB) according to IEC 61499. It serves to forward an AIS signal arriving via the adapter input **IN** to one of five adapter outputs (**OUT1** … **OUT5**) according to the set index **K**. The selection and forwarding are triggered by an event **REQ** and acknowledged with **CNF** after successful transmission.
@@ -77,6 +78,7 @@ The internal state machine is kept simple:
 [IDLE] → REQ (mit gültigem K) → [WRITE] → CNF → [IDLE]
 ↑
 Bei ungültigem K: sofort CNF, kein Schreiben
+
 - **IDLE:** Waiting for a REQ event.
 - **WRITE:** Value transfer from **IN** to the selected **OUTx**.
 - Upon completion (or in case of an error), **CNF** is sent and the machine returns to the IDLE state.

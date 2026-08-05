@@ -1,5 +1,6 @@
 # ASSEMBLE_AB_FROM_AQ
 ![ASSEMBLE_AB_FROM_AQ](./ASSEMBLE_AB_FROM_AQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ASSEMBLE_AB_FROM_AQ** combines four **AQ** quarter adapters (quarter bytes) into a single **AB** byte adapter. It encapsulates the logic for assembling a complete byte from four incoming 4-bit values and providing it via a standardized adapter interface. The block is specifically designed for use in distributed automation systems according to IEC 61499.

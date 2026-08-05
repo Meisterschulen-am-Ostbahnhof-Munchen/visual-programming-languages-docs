@@ -1,5 +1,6 @@
 # ILOCK_2_E
 ![ILOCK_2_E](./ILOCK_2_E.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ILOCK_2_E** is an event-driven bistable toggle block with dual interlock. It is used to control two mutually exclusive outputs (OUT1, OUT2). In addition to explicit set and reset functions, the block offers an edge-triggered toggle function that allows a single toggle per activation. The block is particularly suitable for control logics where both outputs must never be TRUE simultaneously and a repeated toggle command only takes effect after being released again (e.g., by setting the other channel or resetting).

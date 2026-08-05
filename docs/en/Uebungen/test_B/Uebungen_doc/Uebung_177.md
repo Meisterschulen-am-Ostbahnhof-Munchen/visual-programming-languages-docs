@@ -1,6 +1,7 @@
 Here is the documentation for Exercise 177, based on the provided data.
 # Exercise_177: Example for FB_R_TRIG (Rising Edge Detection)
 ![Uebung_177_network](./Uebung_177_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 Exercise_177 demonstrates the use of the `FB_R_TRIG` function block for rising edge detection. The goal of the exercise is to process an input signal so that only the moment of activation (change from FALSE to TRUE) triggers an action. This short-duration signal is then used to start a timer that activates an output for a defined period.

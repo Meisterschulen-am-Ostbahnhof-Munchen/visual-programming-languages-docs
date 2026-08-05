@@ -1,5 +1,6 @@
 # ADI_DEMUX_4
 ![ADI_DEMUX_4](./ADI_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ADI_DEMUX_4` is a generic demultiplexer that distributes an incoming data value via a unidirectional adapter (socket) to one of four output adapters (plugs). The destination output is selected via an index input. This block is typically used in industrial automation to dynamically switch signal paths or route data to different consumers.

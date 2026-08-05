@@ -1,5 +1,6 @@
 # Exercise_218: Standard IEC 61131-3 FB_CTD_UDINT (Countdown Counter, UDINT) with Terminal Output
 ![Uebung_218_network](./Uebung_218_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a downcounter according to IEC 61131-3 (type `FB_CTD_UDINT`). The function block counts down on each falling edge at the input `CD` (Count Down), starting from the preset value `PV` (Preset Value). The counter can be reset to the starting value via a load input (`LD`). The current counter reading (`CV`) is output to a terminal, and the output `Q` is set as soon as the counter reading reaches zero.

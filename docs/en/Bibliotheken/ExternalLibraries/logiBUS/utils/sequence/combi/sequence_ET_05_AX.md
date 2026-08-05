@@ -1,5 +1,6 @@
 # sequence_ET_05_AX
 ![sequence_ET_05_AX_ecc](./sequence_ET_05_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 sequence_ET_05_AX` is a variant of `sequence_ET_05` that additionally uses adapters (`AX`) for the outputs. It controls a sequence with 5 output states.

@@ -1,6 +1,7 @@
 # ST08B_TO_ARR08B
 <img width="1352" height="215" alt="image" src="https://github.com/user-attachments/assets/2ae15254-1c8f-40ed-9f4b-d611666ba335" />
 ![ST08B_TO_ARR08B](./ST08B_TO_ARR08B.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ST08B_TO_ARR08B` converts an 8-byte structured data type (`ST08B`) into an 8-byte array. This conversion allows for the easy adaptation of structured data to interfaces or protocols that require a sequential arrangement of bytes.

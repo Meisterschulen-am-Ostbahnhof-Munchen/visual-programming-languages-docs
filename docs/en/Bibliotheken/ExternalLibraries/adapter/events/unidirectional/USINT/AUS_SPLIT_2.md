@@ -1,5 +1,6 @@
 # OFF_SPLIT_2
 ![AUS_SPLIT_2](./AUS_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **OFF_SPLIT_2** is used to distribute an incoming OFF signal to two identical outputs. It is implemented as a generic function block (FB) and is suitable for applications where a universal control signal is required multiple times. The block operates purely on an adapter basis and has no event or data inputs of its own.

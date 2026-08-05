@@ -1,5 +1,6 @@
 # Exercise_028a2_AR: Analog Input Calibration with NVS Adapters
 ![Uebung_028a2_AR_network](./Uebung_028a2_AR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements the calibration of an analog input. An analog value is read, transferred to a calibration block via two adapter conversions, and the determined offset and scale values are permanently stored in the NVS (Non-Volatile Storage) memory. Two digital inputs control the calibration mode (offset and scale). Another digital input serves as a trigger for the analog sampling and is simultaneously routed to a digital output.

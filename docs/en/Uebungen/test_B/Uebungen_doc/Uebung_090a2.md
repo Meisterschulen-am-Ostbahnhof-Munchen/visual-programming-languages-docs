@@ -1,5 +1,6 @@
 # Exercise_090a2: Example for F_MUX_3
 ![Uebung_090a2_network](./Uebung_090a2_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of the F_MUX_3 multiplexer function block in conjunction with digital inputs and outputs. The exercise shows how a multiplexer can be used to control outputs based on various input signals.

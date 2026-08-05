@@ -1,6 +1,7 @@
 # UDINT_AUDI_NE
 ![UDINT_AUDI_NE](./UDINT_AUDI_NE.svg)
 *(No image available)*
+
 * * * * * * * * * *
 ## Introduction
 The function block **UDINT_AUDI_NE** compares two values for inequality ("not equal"). It is implemented as a composite block and uses adapters for the second input and output to enable flexible integration with other components. The block is designed for use in automation systems based on the 4diac IDE.

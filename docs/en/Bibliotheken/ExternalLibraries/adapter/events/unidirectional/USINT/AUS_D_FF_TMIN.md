@@ -1,5 +1,6 @@
 # AUS_D_FF_TMIN
 ![AUS_D_FF_TMIN](./AUS_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUS_D_FF_TMIN** implements a clock-controlled D-latch (data flip-flop) with a minimum inter-disposal time between two consecutive output events (EO). It is particularly suitable for applications where an incoming value (via an adapter socket) is received and may only be output again after a configurable minimum time has elapsed. Initialization is performed via the standard event input **INIT**.

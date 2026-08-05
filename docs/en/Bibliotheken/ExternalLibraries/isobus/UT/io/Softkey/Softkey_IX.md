@@ -3,6 +3,7 @@
 * [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics]
 ## Introduction
 The Softkey_IX is a service interface function block for Boolean input data, serving as an input interface for softkey functionalities. This block enables communication with resources and the processing of keyboard input in control systems.
+
 * ![Softkey_IX](Softkey_IX.svg)
 
 ## Interface Structure

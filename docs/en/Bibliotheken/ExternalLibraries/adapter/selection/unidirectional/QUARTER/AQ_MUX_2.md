@@ -1,5 +1,6 @@
 # AQ_MUX_2
 ![AQ_MUX_2](./AQ_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AQ_MUX_2** is a generic 2-channel multiplexer for analog outputs, implemented as an IEC 61499 function block. Based on an index `K`, it selects one of the two analog input adapters (`IN1`, `IN2`) and forwards its signal to the output adapter (`OUT`). This function block is suitable for applications requiring switching between two signal sources, such as controlling an actuator with different setpoints.

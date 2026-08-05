@@ -1,5 +1,6 @@
 # AUDI_FB_CTUD
 ![AUDI_FB_CTUD](./AUDI_FB_CTUD.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AUDI_FB_CTUD** is an up/down counter with a value range for unsigned 32-bit integers (UDINT). It is implemented as a pure adapter version, meaning all inputs and outputs are provided via adapter interfaces. The function block encapsulates the standardized IEC 61131 function block `FB_CTUD_UDINT` and extends its functionality with an adapter-based interface. All output adapters are cyclically updated upon each triggering event (CU, CD, R, LD, or PV). If change-triggered (edge-sensitive) triggering is required, the use of a `AX_D_FF` as a filter block is recommended.

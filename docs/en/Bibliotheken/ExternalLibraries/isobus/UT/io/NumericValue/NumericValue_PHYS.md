@@ -1,6 +1,7 @@
 # NumericValue_PHYS
 (Image not available)
 ![NumericValue_PHYS](./NumericValue_PHYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **NumericValue_PHYS** is an input service interface block according to ISO 11783-6. It returns a physical REAL value by reading a raw digital value (DWORD) from the ISOBUS object pool and converting it into a physical value, taking into account a predefined scaling and offset. The conversion is performed entirely in software (within the function block).

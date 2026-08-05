@@ -1,5 +1,6 @@
 # Exercise_001d: DigitalInput_I1 to DigitalOutput_Q1
 ![Uebung_001d_network](./Uebung_001d_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the basic connection of a digital input (Input_I1) to a digital output (Output_Q1) using a logic AND gate. The goal is to switch the input signal directly to the output – using the AND gate to learn how event and data flows work within the 4diac IDE.

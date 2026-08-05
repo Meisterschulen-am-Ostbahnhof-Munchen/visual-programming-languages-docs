@@ -71,6 +71,7 @@ Die drei Funktionsbausteine sind über Ereignis‑ und Datenverbindungen zu eine
    - Das skalierte Ergebnis (REAL) wird dem UT‑Baustein als physikalischer Wert übergeben.
 
 **Lernziele**:
+
 - Verständnis der ISOBUS‑Datenschnittstellen für Geschwindigkeitssignale.
 - Nutzung eines Skalierungsbausteins zur Umrechnung von Ganzzahl‑ auf physikalische Werte.
 - Darstellung von Prozesswerten auf einem Universal Terminal.

@@ -1,5 +1,6 @@
 # AR_D_FF
 ![AR_D_FF](./AR_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_D_FF** implements a data-controlled flip-flop (D-latch) according to the IEC 61499-1 Annex A specification. It serves as an encapsulation for the standard function block `iec61499::events::E_D_FF_ANY` and provides its functionality via two unidirectional adapters. The block accepts a data value on a rising edge of the clock signal and holds it until the next rising edge.

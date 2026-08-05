@@ -1,5 +1,6 @@
 # AL_MUX_4
 ![AL_MUX_4](./AL_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AL_MUX_4` is a generic multiplexer for adapter interfaces of type `adapter::types::unidirectional::AL`. It selects one of four adapter inputs (`IN1` to `IN4`) based on an index `K` and forwards it to a single adapter output (`OUT`). The selection is triggered by an event.

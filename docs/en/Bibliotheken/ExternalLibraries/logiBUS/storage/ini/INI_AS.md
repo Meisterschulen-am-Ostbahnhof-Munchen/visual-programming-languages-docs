@@ -1,5 +1,6 @@
 # INI_AS
 ![INI_AS](./INI_AS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **INI_AS** is used to load and save SINT data from a `settings.ini` file. It accesses a configuration value via a section name (`SECTION`) and a key (`KEY`). The value can be both read and written via the adapter interface `AS`. The block encapsulates the internal `INI` function block and extends it with a standardized adapter interface.

@@ -1,5 +1,6 @@
 # AUI_D_FF
 ![AUI_D_FF](./AUI_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_D_FF** implements a clock-controlled D flip-flop (data latch). It takes the value of a data input when an event occurs and outputs the stored value. The input and output interfaces are implemented as unidirectional **adapters**, enabling a flexible and standardized connection in the 4diac IDE.

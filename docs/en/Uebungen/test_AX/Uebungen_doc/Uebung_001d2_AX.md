@@ -1,5 +1,6 @@
 # Exercise_001d2_AX: DigitalInput_I1/2 to DigitalOutput_Q1/2, as an alternative (interlocked) connection using plug and socket, without ECC
 ![Uebung_001d2_AX_network](./Uebung_001d2_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an alternative, interconnected control of two digital outputs (Q1, Q2) using two digital inputs (I1, I2). The circuit uses an interlocked (mutually exclusive) connection with logic gates and flip-flops, but without an explicit ECC (Execution Control Chart). It serves as an example of a more complex coupling of input and output signals based on the logiBUS IO system.

@@ -1,5 +1,6 @@
 # Exercise_003e_AX: DigitalInput_I1-4 to DigitalOutput_Q1-4 - Flat with Adapter and Bypass (Pressure Relief Valve)
 ![Uebung_003e_AX_network](./Uebung_003e_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a simple pass-through from four digital inputs (I1–I4) to four digital outputs (Q1–Q4). Additionally, a bypass function (pressure relief valve) is integrated, controlled by a common solenoid valve (Output_Q8). The signals are routed through bypass adapters (BYPASS_AX_AX), which provide a main and a bypass path. By cascading the bypass paths, the entire signal flow can be rerouted.

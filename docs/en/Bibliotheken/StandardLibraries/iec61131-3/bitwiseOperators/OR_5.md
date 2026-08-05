@@ -1,5 +1,6 @@
 # OR_5
 ![OR_5](https://user-images.githubusercontent.com/116869307/214143625-4af69974-60f8-424f-a81f-1dbeafacb707.png)
+
 * * * * * * * * * *
 ## Introduction
 The OR_5 function block is a generic function block for performing a bitwise OR operation with five inputs. It implements a standard bit function according to IEC 61131-3 and can work with any bit data type.

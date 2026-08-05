@@ -1,5 +1,6 @@
 # AR_MUX_4
 ![AR_MUX_4](./AR_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AR_MUX_4** is a generic AR multiplexer that switches one of four input adapters (IN1 to IN4) to one output adapter (OUT). Selection is made via an index value K (0–3). The function block is implemented as a generic type (`GEN_AR_MUX`) and is based on unidirectional AR adapters.

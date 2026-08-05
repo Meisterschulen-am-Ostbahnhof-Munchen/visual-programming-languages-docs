@@ -1,5 +1,6 @@
 # Exercise_223: Standard IEC 61131-3 FB_CTUD_UDINT (Up/Down Counter, UDINT) with Terminal Output
 ![Uebung_223_network](./Uebung_223_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an up/down counter (FB_CTUD_UDINT) according to IEC 61131-3 with data type UDINT. The counter is controlled via digital inputs and outputs the current counter value as well as two output signals (QU, QD) to digital outputs. Additionally, the counter value is displayed on a terminal (Q_NumericValue).

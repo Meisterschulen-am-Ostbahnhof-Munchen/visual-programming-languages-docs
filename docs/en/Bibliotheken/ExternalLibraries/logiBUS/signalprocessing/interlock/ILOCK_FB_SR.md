@@ -1,5 +1,6 @@
 # ILOCK_FB_SR
 ![ILOCK_FB_SR](./ILOCK_FB_SR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The ILOCK_FB_SR function block implements a bistable set-dominant SR latch, specifically designed for use in interlock circuits. It extends a simple SR latch with bidirectional adapters for coupling with other function blocks, enabling the implementation of complex interconnections and priority logic.

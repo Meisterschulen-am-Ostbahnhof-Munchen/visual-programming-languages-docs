@@ -1,5 +1,6 @@
 # sequence_B_08_AX_AX
 ![sequence_B_08_AX_AX](./sequence_B_08_AX_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **sequence_B_08_AX_AX** implements a sequential control system with eight outputs. State transitions are level-controlled via BOOL signals provided by an AX adapter. The block is designed for fail-safe applications and allows for the restoration of the current state after a power failure. It is particularly suitable for sequence control systems in automation technology where multiple switching operations must be executed sequentially.

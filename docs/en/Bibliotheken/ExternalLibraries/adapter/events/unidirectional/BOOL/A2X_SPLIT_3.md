@@ -1,5 +1,6 @@
 # A2X_SPLIT_3
 ![A2X_SPLIT_3](./A2X_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **A2X_SPLIT_3** is used to split an incoming A2X adapter data stream into three identical outputs. It is implemented as a generic function block (FB) and is suitable for applications where a signal is required multiple times.

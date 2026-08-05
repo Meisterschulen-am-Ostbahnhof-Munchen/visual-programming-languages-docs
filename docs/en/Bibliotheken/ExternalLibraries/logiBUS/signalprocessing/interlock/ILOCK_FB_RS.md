@@ -1,5 +1,6 @@
 # ILOCK_FB_RS
 ![ILOCK_FB_RS](./ILOCK_FB_RS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ILOCK_FB_RS` implements a bistable reset-dominant RS latch (reset-dominant flip-flop). It extends a simple RS flip-flop with a bidirectional coupling interface, enabling multiple such blocks to be chained together in an interlock chain. The output state is set by the Set input (S) and reset by the Reset input (R1) – also taking into account signals from adjacent blocks.

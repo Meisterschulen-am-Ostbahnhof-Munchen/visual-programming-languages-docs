@@ -1,5 +1,6 @@
 # AB_SPLIT_3
 ![AB_SPLIT_3](./AB_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_SPLIT_3** is used to split an incoming unidirectional data/signal adapter (type `AB`) into three identical output adapters. It is implemented as a generic function block and represents a simple 1-to-3 distribution without additional logic or delay.

@@ -53,6 +53,7 @@ In dieser Übung wird das Verhalten der Funktionsbausteine `IA_GBSD` (Ground Bas
    - Diese Bausteine sind mit den entsprechenden UT‑Objekten (`NumberVariable_Ground_based_machine_speed` bzw. `NumberVariable_Wheel_based_machine_speed`) konfiguriert und stellen die Werte auf dem Universal Terminal dar.
 
 **Lernziele:**  
+
 - Verständnis des Einsatzes von Adapterverbindungen in 4diac.  
 - Umsetzung einer physikalischen Skalierung von Feldbus‑Rohdaten.  
 - Integration von ISOBUS‑Applizierungsbausteinen mit UT‑Ausgabebausteinen.

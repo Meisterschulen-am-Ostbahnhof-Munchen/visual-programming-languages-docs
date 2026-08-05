@@ -1,5 +1,6 @@
 # Exercise_213c: Standard IEC 61131-3 FB_CTU_UDINT (Upward Counter, UDINT) with Terminal Output (PHYS_LREAL)
 ![Uebung_213c_network](./Uebung_213c_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an upward counter according to IEC 61131-3 (FB_CTU_UDINT) with a count limit of 31. The counter value is updated cyclically and transmitted to a numeric terminal output (PHYS_LREAL) via a multiplexer. Additionally, an animated object ("horse") is controlled by showing/hiding it. The exercise illustrates the combination of IEC 61131-3 function blocks with event-driven 4diac logic and terminal output.

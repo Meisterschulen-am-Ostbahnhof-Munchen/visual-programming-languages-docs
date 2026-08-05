@@ -1,6 +1,7 @@
 # sequence_T_04_loop
 <img width="1430" height="335" alt="image" src="https://github.com/user-attachments/assets/d4ccd971-ec44-43d1-b586-d98d13bac896" />
 ![sequence_T_04_loop_ecc](./sequence_T_04_loop_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_T_04_loop` is a time-controlled sequencer with four outputs that operates in a loop. It cycles through four states (State_01 to State_04) sequentially. The transition from one state to the next occurs automatically after an adjustable time delay. The block can be reset from any state and then restarts the sequence.

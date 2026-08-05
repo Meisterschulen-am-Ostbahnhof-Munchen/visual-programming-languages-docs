@@ -1,5 +1,6 @@
 # AE_DEMUX_5
 ![AE_DEMUX_5](./AE_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AE_DEMUX_5** function block is a generic AE demultiplexer that routes an incoming AE signal via socket **IN** to one of five output adapters (OUT1 … OUT5) based on a selected index. This allows for the targeted distribution of a data stream to different paths.

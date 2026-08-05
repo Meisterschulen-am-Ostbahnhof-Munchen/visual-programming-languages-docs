@@ -40,6 +40,7 @@ Die Funktionsbausteine sind über Adapter-Schnittstellen verbunden:
 3. **Ausgabe**: Der Adapterausgang `NVS_AR.AR_OUT` ist mit dem Adaptereingang `Q_NumericValue.rPhys` verbunden. Der Baustein `Q_NumericValue` gibt den erhaltenen Wert auf dem physischen Ausgang `OutputNumber_N3` aus (z. B. Anzeige oder analoges Signal).
 
 **Lernziele der Übung:**
+
 - Verwendung von AR-Adaptern zur Datenübertragung zwischen Funktionsbausteinen.
 - Kombination von physischer Ein-/Ausgabe mit nichtflüchtiger Speicherung.
 - Parametrierung von Speicherbausteinen (NVS) mit Schlüsseln und Standardwerten.

@@ -1,5 +1,6 @@
 # Exercise_011b3_PHYSA: Numeric Value Input ADD with Physical Values
 ![Uebung_011b3_PHYSA_network](./Uebung_011b3_PHYSA_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of physical values in a simple addition circuit. Two numeric inputs provide physical quantities, which are calculated using an addition block. The result is output as a physical value. The goal is to learn how to use adapter connections between **NumericValue_PHYSA** blocks and the standardized **AR_ADD_2** block.

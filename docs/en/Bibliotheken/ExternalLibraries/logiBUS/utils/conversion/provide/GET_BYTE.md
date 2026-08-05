@@ -1,5 +1,6 @@
 # GET_BYTE
 ![GET_BYTE](./GET_BYTE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **GET_BYTE** function block is used to read a variable `BYTE`, which is provided via an **InOut** parameter. The read value is buffered at the output `OUT` and is available after execution. This function block is typically used to retrieve a current `BYTE` value from an external source (e.g., a shared data area) without modifying the source itself.

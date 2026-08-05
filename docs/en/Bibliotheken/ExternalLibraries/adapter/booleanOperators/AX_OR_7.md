@@ -20,6 +20,7 @@ No direct data outputs available.
 
 ### **Adapters**
 **Input Adapter:**
+
 - **IN1** - OR Input 1
 - **IN2** - OR Input 2
 - **IN3** - OR Input 3
@@ -29,6 +30,7 @@ No direct data outputs available.
 - **IN7** - OR Input 7
 
 **Output Adapter:**
+
 - **OUT** - OR Result
 
 All adapters use the type `adapter::types::unidirectional::AX`.

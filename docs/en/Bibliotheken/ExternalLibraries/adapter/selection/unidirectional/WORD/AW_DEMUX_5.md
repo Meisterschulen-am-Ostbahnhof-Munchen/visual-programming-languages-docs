@@ -1,5 +1,6 @@
 # AW_DEMUX_5
 ![AW_DEMUX_5](./AW_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_DEMUX_5** is a generic demultiplexer for unidirectional AW adapters. It distributes the signal present at an input adapter to one of five output adapters, depending on a numerical index. This block is used when data from a source needs to be selectively routed to multiple sinks.

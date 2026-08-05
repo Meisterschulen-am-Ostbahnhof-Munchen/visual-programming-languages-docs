@@ -49,6 +49,7 @@ Die Übung ist als SubAppType angelegt, in der die gesamte Logik abläuft. Die V
 | EO_TRIP → REQ | ILOCK | Trip_Anzeige | DO_TRIP → OUT | ILOCK | Trip_Anzeige |
 
 **Ablauf:**  
+
 1. Ein steigende Flanke auf einem der Eingänge (I1 für AUF, I2 für AB) erzeugt ein Ereignis, das den ILOCK-Baustein an seinem entsprechenden Ereigniseingang aktiviert.  
 2. Der ILOCK prüft, ob ein Konflikt vorliegt (beide Eingänge gleichzeitig aktiv).  
    - **Kein Konflikt:** Der gewünschte Ausgang (DO_UP oder DO_DOWN) wird gesetzt und der zugehörige Ausgangstreiber (Q1 oder Q2) geschaltet.  

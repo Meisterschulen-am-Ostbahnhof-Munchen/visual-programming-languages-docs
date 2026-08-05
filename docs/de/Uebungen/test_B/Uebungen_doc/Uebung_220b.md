@@ -33,15 +33,18 @@ Die Übung verwendet keine weiteren Sub-Bausteine, sondern setzt direkt aus dem 
 Der Ablauf wird über Ereignis- und Datenverbindungen gesteuert.
 
 **Ereignisverbindungen**  
+
 - Die `IND`-Ereignisse aller vier digitalen Eingänge (Input_CU, Input_CD, Input_R, Input_LD) sind auf den `REQ`-Eingang des Zählers FB_CTUD geschaltet. Jede steigende Flanke an einem der Eingänge löst somit eine Neuberechnung des Zählers aus.  
 - Nach erfolgreicher Berechnung sendet der Zähler das `CNF`-Ereignis. Dieses wird auf die `REQ`-Eingänge der drei Ausgabebausteine (Output_QU, Output_QD, Q_NumericValue_PHYS) verteilt, sodass die Ausgangswerte parallel aktualisiert werden.
 
 **Datenverbindungen**  
+
 - Die digitalen Eingangswerte (`IN`) von Input_CU, Input_CD, Input_R und Input_LD werden auf die entsprechenden Dateneingänge des Zählers geführt (`CU`, `CD`, `R`, `LD`).  
 - Vom Zähler werden die binären Ausgangssignale `QU` und `QD` auf die Dateneingänge `OUT` der Ausgangsbausteine Output_QU und Output_QD übertragen.  
 - Der aktuelle Zählwert `CV` (Datentyp `INT`) wird auf den Eingang `rPhys` des Terminal-Ausgabebausteins gelegt. Ein Kommentar im Netzwerk erklärt, dass `INT` ohne explizite Konvertierung auf `REAL` geschlossen werden kann (implizite Typumwandlung ist erlaubt).
 
 **Besonderheiten**  
+
 - Der Zähler arbeitet nach der CTUD-Spezifikation: Ein positiver Impuls an `CU` erhöht den Zählwert, an `CD` verringert ihn. Ein Signal an `R` setzt den Zählwert auf Null, ein Signal an `LD` lädt den in `PV` hinterlegten Vorwahlwert.  
 - Die Übung vermittelt das Verständnis eines kombinierten Vor-/Rückwärtszählers mit Hardware-Anbindung und visueller Terminalausgabe. Vorkenntnisse zu IEC 61131-3 Zählern und grundlegenden Ereignis-/Datenverbindungen sind hilfreich.
 

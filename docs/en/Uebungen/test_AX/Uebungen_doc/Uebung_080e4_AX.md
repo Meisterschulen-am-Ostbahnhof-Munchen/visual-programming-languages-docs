@@ -1,5 +1,6 @@
 # Exercise_080e4_AX: Example for E_CTU with Event Damping via AX_D_FF / AUI_D_FF_HYS
 ![Uebung_080e4_AX_network](./Uebung_080e4_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an **E_CTU** counter in combination with event damping, implemented using the function blocks **AX_D_FF** (D flip-flop) and **AUI_D_FF_HYS** (D flip-flop with hysteresis and minimum time). The counter value is output via a digital output (Q1) and numerically via a bus object (N1). The circuit dampens abrupt changes in the counter value and enables targeted event filtering.

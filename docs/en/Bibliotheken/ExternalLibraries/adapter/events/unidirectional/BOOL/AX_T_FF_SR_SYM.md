@@ -1,5 +1,6 @@
 # AX_T_FF_SR_SYM
 ![AX_T_FF_SR_SYM](./AX_T_FF_SR_SYM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AX_T_FF_SR_SYM function block is an event-driven bistable toggle switch with an additional toggle function and symmetrical start behavior. It combines the characteristics of an SR flip-flop (set and reset) with those of a T flip-flop (toggling on every clock signal). The behavior after power-on is symmetrical, meaning the block is initially in a neutral start state and only transitions to a defined state upon an event.

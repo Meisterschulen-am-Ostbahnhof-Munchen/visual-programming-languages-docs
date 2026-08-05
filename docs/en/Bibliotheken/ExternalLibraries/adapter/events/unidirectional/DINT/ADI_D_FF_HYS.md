@@ -1,5 +1,6 @@
 # ADI_D_FF_HYS
 ![ADI_D_FF_HYS](./ADI_D_FF_HYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_D_FF_HYS** implements a data-timed (D) flip-flop with adjustable hysteresis. It receives values via a unidirectional adapter input `I` and outputs the state, including hysteresis, via the adapter output `Q`. The hysteresis bandwidth is set during the initialization event `INIT`.

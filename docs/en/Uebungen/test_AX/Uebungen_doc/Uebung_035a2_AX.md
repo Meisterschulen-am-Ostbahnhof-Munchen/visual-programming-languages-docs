@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_035a2_AX` based on the provided data.
 # Exercise_035a2_AX: Traffic Light System Austria (AX) with Sequence T05
 ![Uebung_035a2_AX_network](./Uebung_035a2_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **traffic light system based on the Austrian model (AX)** using the IEC 61499 standard. Unlike the German traffic light system (red -> red/yellow -> green -> yellow -> red), the Austrian sequence includes a **flashing green phase** before switching to yellow.

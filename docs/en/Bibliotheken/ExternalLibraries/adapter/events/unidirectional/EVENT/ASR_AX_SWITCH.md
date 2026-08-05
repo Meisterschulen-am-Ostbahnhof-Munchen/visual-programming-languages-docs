@@ -1,5 +1,6 @@
 # ASR_AX_SWITCH
 ![ASR_AX_SWITCH](./ASR_AX_SWITCH.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ASR_AX_SWITCH** serves as a demultiplexer for asynchronous set/reset events (ASR). It forwards an incoming SET or RESET event, based on the state of a binary control input **G**, to either one of two outputs (**EO0** or **EO1**). This block enables demand-based distribution of control signals in automation applications.

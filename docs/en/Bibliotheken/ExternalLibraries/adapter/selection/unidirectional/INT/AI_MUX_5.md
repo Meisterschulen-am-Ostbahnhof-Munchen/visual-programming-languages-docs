@@ -1,5 +1,6 @@
 # AI_MUX_5
 ![AI_MUX_5](./AI_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AI_MUX_5** is a generic analog input multiplexer that allows you to select a single output signal (OUT) from five analog input signals (IN1 to IN5). Selection is made via an index value **K**, which is set by the **REQ** event. The function block is implemented as an adapter-based function block according to IEC 61499-2 and represents a flexible, reusable component for selecting analog signals in automation systems.

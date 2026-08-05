@@ -1,5 +1,6 @@
 # AI_TO_ALI
 ![AI_TO_ALI](./AI_TO_ALI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AI_TO_ALI function block is a composite function block that converts an AI (INT) input adapter into an ALI (LINT) output adapter. It serves as a simple conversion interface between different adapter types for unidirectional communication.

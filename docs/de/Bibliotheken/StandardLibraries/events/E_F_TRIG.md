@@ -14,13 +14,16 @@ Der **E_F_TRIG** (Falling Edge Trigger) ist ein grundlegender Funktionsbaustein 
 ### Schnittstelle (Interface)
 
 **Ereignis-Eingänge:**
+
 - **EI (Event Input)**: Löst die Prüfung auf eine Flanke aus.
     - **Verbundene Daten**: `QI`
 
 **Ereignis-Ausgänge:**
+
 - **EO (Event Output)**: Wird ausgelöst, wenn eine Flanke erkannt wurde.
 
 **Daten-Eingänge:**
+
 - **QI (Qualifier Input)**: Das zu überwachende boolesche Signal (Datentyp: `BOOL`).
 
 ## Funktionsweise

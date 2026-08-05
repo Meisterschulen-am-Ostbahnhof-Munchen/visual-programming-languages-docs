@@ -1,5 +1,6 @@
 # AD_DEMUX_5
 ![AD_DEMUX_5](./AD_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AD_DEMUX_5** is a generic demultiplexer for adapter connections. It distributes an incoming unidirectional adapter data stream to one of five output channels, controlled by an index value. This block is used for dynamically switching signals in distributed automation systems and increases the flexibility in connecting communication adapters.

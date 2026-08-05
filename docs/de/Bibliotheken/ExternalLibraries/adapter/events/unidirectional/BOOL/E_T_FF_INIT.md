@@ -78,6 +78,7 @@ Der Baustein arbeitet als **zustandsgesteuerte Maschine (ECC)** mit fünf Zustä
 | RESET    | Normaler Toggle‑Zustand: *Q* = FALSE.                                 | Init → RESET (bei Q_INIT = FALSE)<br>SET → RESET (bei CLK) | `RESET`                         | EO                   |
 
 **Transitionsbedingungen** (vereinfacht):  
+
 - `START → Init` : `INIT & (QI = TRUE)`  
 - `Init → SET`   : `(Q_INIT = TRUE)`  
 - `Init → RESET` : `(Q_INIT = FALSE)`  

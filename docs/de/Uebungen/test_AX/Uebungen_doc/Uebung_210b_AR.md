@@ -59,6 +59,7 @@ Diese Übung zeigt die Verwendung eines IEC 61131-3 Vorwärtszählers (CTU) in e
    Der aktuelle Zählerstand (CV) wird über `AI_TO_AR` in einen AR‑Wert gewandelt und an die Terminalausgabe `Q_NumericValue_1` gesendet. Dadurch kann der Wert auf einem physischen Display oder einer Visualisierung angezeigt werden.
 
 **Hinweise aus der Konfiguration:**
+
 - Im Kommentar wird darauf hingewiesen, dass negative Werte möglich sind.
 - Für eine Reduzierung der Ereignisrate könnte ggf. ein `AX_D_FF`‑Baustein eingefügt werden.
 
@@ -68,6 +69,7 @@ Diese Übung zeigt die Verwendung eines IEC 61131-3 Vorwärtszählers (CTU) in e
 
 Die Übung vermittelt den Umgang mit einem IEC 61131-3‑Zähler (CTU) in einer adapterbasierten Umgebung.  
 **Lernziele:**
+
 - Aufbau eines Vorwärtszählers mit Preset und Reset.
 - Initialisierung eines Voreinstellwerts über einen Konstanten‑Baustein.
 - Anbindung digitaler Ein‑ und Ausgänge über logiBUS.

@@ -91,6 +91,7 @@ Diese Übung demonstriert den Einsatz eines Aufwärtszählers (`E_CTU`) in Verbi
    - Der aktuelle Zählerstand `E_CTU.Q` ist direkt mit dem Dateneingang `DigitalOutput_Q1.OUT` verbunden. Bei jedem Ereignis an `REQ` wird dieser Wert auf den physischen Ausgang `Output_Q1` übernommen.  
 
 **Lernziele dieser Übung**:  
+
 - Verständnis des Aufwärtszählers `E_CTU` in IEC 61499.  
 - Einsatz von Ereignis-Split und -Merge zur Parallelverarbeitung.  
 - Nutzung von `RT_E_REND` als zeitliche Entprellung (Ereignisbremse) zur Stabilisierung der Signalverarbeitung.  

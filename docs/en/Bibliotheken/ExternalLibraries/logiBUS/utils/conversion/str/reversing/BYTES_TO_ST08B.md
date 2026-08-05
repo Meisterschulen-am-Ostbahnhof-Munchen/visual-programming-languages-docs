@@ -1,6 +1,7 @@
 # BYTES_TO_ST08B
 <img width="1047" height="423" alt="image" src="https://github.com/user-attachments/assets/d2c1b827-1e6e-4e74-b89f-c8b60ae0824f" />
 ![BYTES_TO_ST08B](./BYTES_TO_ST08B.svg)
+
 * * * * * * * * * *
 ## Introduction
 This function block combines eight individual byte values into a single 8-byte structure of type `ST08B`. It enables the orderly conversion of discrete byte values into a structured data format.

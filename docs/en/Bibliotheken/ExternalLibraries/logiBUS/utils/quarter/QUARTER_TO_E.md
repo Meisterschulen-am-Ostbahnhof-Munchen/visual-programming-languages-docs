@@ -1,6 +1,7 @@
 # QUARTER_TO_E
 ## 🎧 Podcast
 ![QUARTER_TO_E_ecc](./QUARTER_TO_E_ecc.svg)
+
 * [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 ----
 <img width="1487" height="288" alt="image" src="https://github.com/user-attachments/assets/b4e62664-7544-420c-a039-36905d34d735" />

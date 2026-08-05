@@ -23,9 +23,11 @@ Der AX_SPLIT_6 Funktionsblock ist ein generischer Baustein, der dazu dient, eine
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - **IN** (Socket): Empfängt die eingehenden AX-Signale vom Quellsystem
 
 **Ausgangsadapter:**
+
 - **OUT1** (Plug): Erster Ausgangskanal
 - **OUT2** (Plug): Zweiter Ausgangskanal
 - **OUT3** (Plug): Dritter Ausgangskanal

@@ -1,8 +1,10 @@
 # Hysteresis_AR_AX
 ![Hysteresis_AR_AX](./Hysteresis_AR_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `Hysteresis_AR_AX` implements an analog-to-digital threshold circuit with hysteresis. It converts an analog input value (via an AR adapter) into a Boolean output (via an AX adapter), applying a defined hysteresis band around a mean value (threshold). The switching behavior is defined as follows:
+
 - **Switch-on**: occurs when the input value reaches or exceeds the value `THRESHOLD + (HYSTERESIS / 2.0)` (inclusive).
 - **Switch-off**: occurs when the input value falls below the value `THRESHOLD - (HYSTERESIS / 2.0)` (strict, i.e., only when <).
 

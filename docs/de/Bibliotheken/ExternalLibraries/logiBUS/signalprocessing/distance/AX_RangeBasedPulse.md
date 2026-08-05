@@ -60,6 +60,7 @@ Das ECC (Execution Control Chart) besteht aus vier Zuständen:
 - **EMIT:** Führt den `SAVE`-Algorithmus aus (speichert den aktuellen Ausgangszustand) und sendet das Ereignis `OUT.E1`.
 
 **Übergänge:**
+
 - `START → INIT`: Wenn `DIST_IN.E1` eintrifft und `FirstRun = TRUE`.
 - `START → CHECK`: Wenn `DIST_IN.E1` eintrifft und `FirstRun = FALSE`.
 - `INIT → CHECK`: Sofort nach `INIT` (Bedingung 1).

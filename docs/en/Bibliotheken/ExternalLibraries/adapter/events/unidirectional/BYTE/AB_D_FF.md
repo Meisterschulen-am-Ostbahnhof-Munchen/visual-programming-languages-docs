@@ -1,6 +1,7 @@
 # AB_D_FF
 No image available.
 ![AB_D_FF](./AB_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_D_FF** implements an asynchronous data latch (D flip-flop) based on an adapter concept according to IEC 61499. It receives a data value via the input adapter **I** as soon as an event occurs and outputs this value via the output adapter **Q**. The internal state of the flip-flop is represented by a standardized `E_D_FF_ANY` function block.

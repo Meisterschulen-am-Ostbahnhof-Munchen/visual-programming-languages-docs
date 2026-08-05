@@ -1,5 +1,6 @@
 # Exercise_011a_AUDI: Numeric Value Output and BUTTON_PRESS_REPEAT_DONE
 ![Uebung_011a_AUDI_network](./Uebung_011a_AUDI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of a digital input (pushbutton) with repeat detection (`BUTTON_PRESS_REPEAT_DONE`) to output a numeric value to an ISOBUS Virtual Terminal.

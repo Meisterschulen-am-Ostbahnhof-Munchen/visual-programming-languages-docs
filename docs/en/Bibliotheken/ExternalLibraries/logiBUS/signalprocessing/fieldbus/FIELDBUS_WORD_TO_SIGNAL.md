@@ -1,5 +1,6 @@
 # FIELDBUS_WORD_TO_SIGNAL
 ![FIELDBUS_WORD_TO_SIGNAL](./FIELDBUS_WORD_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The FIELDBUS_WORD_TO_SIGNAL function block is used for simple signal filtering in fieldbus applications. It reflects an incoming WORD value at the output, provided the signal is classified as valid. A Boolean output indicates the validity status. Implementation is based on a comparison with an externally defined limit constant.

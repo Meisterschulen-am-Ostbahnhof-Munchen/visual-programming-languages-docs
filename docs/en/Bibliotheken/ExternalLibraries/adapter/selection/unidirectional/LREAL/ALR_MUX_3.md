@@ -1,5 +1,6 @@
 # ALR_MUX_3
 ![ALR_MUX_3](./ALR_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_MUX_3** is a generic multiplexer for ALR adapter connections. Based on an index value `K`, it selects one of three ALR inputs (`IN1`, `IN2`, `IN3`) and forwards its data to the output `OUT`. The block is controlled by the event `REQ` and acknowledges processing with `CNF`.

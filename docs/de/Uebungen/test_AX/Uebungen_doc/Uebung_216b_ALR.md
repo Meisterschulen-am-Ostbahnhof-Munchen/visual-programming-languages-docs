@@ -74,6 +74,7 @@ Die Übung **Uebung_216b_ALR** realisiert einen Abwärtszähler (Counter Down) g
 | `ADI_DINT_TO_DI.ADI_OUT` | `ADI_FB_CTD.PV` | Preset-Wert |
 
 **Ereignisverbindung**:
+
 - `Input_LD.INITO` → `ADI_DINT_TO_DI.REQ`
 
 ## Zusammenfassung

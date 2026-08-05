@@ -1,6 +1,7 @@
 # sequence_ET_04
 <img width="1642" height="359" alt="image" src="https://github.com/user-attachments/assets/832ed670-45d8-4465-b06b-c83d8d079f10" />
 ![sequence_ET_04_ecc](./sequence_ET_04_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_ET_04` is a sequencer with four output states. It enables the control of a cyclic sequence of four steps (State_01 to State_04), where the transition between states can occur either through an external event or after an adjustable time. This function block is designed for applications where process steps must be executed sequentially with time-based or event-driven flexibility.

@@ -86,6 +86,7 @@ Der aktuelle Zählerstand (`CV`) wird über die Umwandlung `F_LINT_TO_UDINT` gel
 Nach erfolgreicher Umwandlung löst `F_LINT_TO_UDINT.CNF` das Ereignis `Q_NumericValue.REQ` aus, wodurch der Wert auf dem Terminal angezeigt wird.
 
 **Lernziele**: 
+
 - Einführung in IEC 61131-3 Zählerbausteine (CTUD) mit großer Datenbreite
 - Verwendung von logiBUS-Ein-/Ausgabebaugruppen
 - Typkonvertierung und deren Fallstricke (keine negativen Zahlen bei UDINT)

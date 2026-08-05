@@ -1,5 +1,6 @@
 # AUDI_D_FF_TMIN
 ![AUDI_D_FF_TMIN](./AUDI_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_D_FF_TMIN** implements a D flip-flop (data latch) with a minimum lock time between successive output events. It serves to receive a value received via one adapter and output it via a second adapter, with the propagation of the output event being time-controlled.

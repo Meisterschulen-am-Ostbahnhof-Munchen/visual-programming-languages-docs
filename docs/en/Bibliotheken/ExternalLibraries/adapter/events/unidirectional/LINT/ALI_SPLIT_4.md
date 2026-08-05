@@ -1,5 +1,6 @@
 # ALI_SPLIT_4
 ![ALI_SPLIT_4](./ALI_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_SPLIT_4** is used to distribute a single ALI adapter input (type: `adapter::types::unidirectional::ALI`) to four separate ALI adapter outputs. It is designed as a generic function block (FB) and enables unidirectional signal transmission from one source to up to four destinations.

@@ -1,5 +1,6 @@
 # AUI_TO_AUS
 ![AUI_TO_AUS](./AUI_TO_AUS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_TO_AUS** serves as a composite module for converting an AUI adapter (data type UINT) into an AUS adapter (data type USINT). It is typically used to mediate between different adapter types in the 4diac IDE when a reduction in the value range or a type conversion is required. The module encapsulates the conversion logic and enables seamless integration into existing runtime environments.

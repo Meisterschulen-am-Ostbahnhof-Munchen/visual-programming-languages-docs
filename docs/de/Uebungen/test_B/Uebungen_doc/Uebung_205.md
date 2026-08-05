@@ -44,6 +44,7 @@ Diese Übung demonstriert den Einsatz des Funktionsbausteins `ILOCK_SWITCH_PROTE
    - Dies verhindert ein schnelles Hin- und Herschalten zwischen den beiden Ausgängen (z.B. bei mechanischen Prellern oder schnellen Tastern).
 
 **Lernziele:**
+
 - Verwendung des Interlock-Bausteins `ILOCK_SWITCH_PROTECT` mit Schutzzeit.
 - Verständnis für ereignisgesteuerte Kommunikation (IND → EI, EO → REQ).
 - Einbindung eines Zeitgeber-Adapters zur Überwachung der Schutzzeit.

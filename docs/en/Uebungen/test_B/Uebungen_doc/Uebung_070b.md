@@ -1,5 +1,6 @@
 # Exercise_070b: Outputting WBSD to UT with QI
 ![Uebung_070b_network](./Uebung_070b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the output of the wheel-based machine speed (WBSD) to an ISOBUS Universal Terminal (UT). The qualifier input **QI** of the WBSD block is controlled by a T flip-flop, which is toggled by a digital input (button I2). The current speed value is output via the UT block **Q_NumericValue**.

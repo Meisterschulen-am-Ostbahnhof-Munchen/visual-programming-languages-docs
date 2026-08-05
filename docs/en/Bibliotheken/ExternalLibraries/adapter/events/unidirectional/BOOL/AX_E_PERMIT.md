@@ -1,5 +1,6 @@
 # AX_E_PERMIT
 ![AX_E_PERMIT](./AX_E_PERMIT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AX_E_PERMIT** function block implements conditional event propagation (permissive propagation). An incoming event is only forwarded to the output if a permit signal provided via an adapter has the value `TRUE`. The function block acts as a gate that can interrupt or enable the processing chain depending on external conditions.

@@ -1,5 +1,6 @@
 # AE_DEMUX_2
 ![AE_DEMUX_2](./AE_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_DEMUX_2** is a generic adapter demultiplexer. It distributes an incoming value via an adapter socket to either one of two adapter plugs, controlled by a numeric index.

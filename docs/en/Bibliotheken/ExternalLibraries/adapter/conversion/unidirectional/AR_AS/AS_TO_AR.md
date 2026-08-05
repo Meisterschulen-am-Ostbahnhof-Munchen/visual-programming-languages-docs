@@ -1,5 +1,6 @@
 # AS_TO_AR
 ![AS_TO_AR](./AS_TO_AR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AS_TO_AR` is a composite function block that converts a unidirectional adapter of type **AS** (SINT) to an adapter of type **AR** (REAL). It is used to establish a logical connection between components based on different data types – specifically, from a signed 8-bit integer (SINT) to a floating-point number (REAL).

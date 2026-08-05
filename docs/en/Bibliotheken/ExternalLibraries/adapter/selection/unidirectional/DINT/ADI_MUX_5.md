@@ -1,5 +1,6 @@
 # ADI_MUX_5
 ![ADI_MUX_5](./ADI_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ADI_MUX_5** is a generic multiplexer function block that selects a single ADI adapter output (OUT) from five ADI adapter inputs (IN1 to IN5). Selection is event-driven via the parameter `K` (index). This function block is particularly suitable for the flexible switching of analog or digital signal sources in automation applications.

@@ -1,5 +1,6 @@
 # ATM_DEMUX_5
 ![ATM_DEMUX_5](./ATM_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ATM_DEMUX_5** is a generic demultiplexer IC for five output channels. It forwards data received via a unidirectional ATM adapter to one of the five outputs, which is selected by an index **K**. The IC thus implements a 1-to-N distribution (N=5) based on the ATM adapter type.

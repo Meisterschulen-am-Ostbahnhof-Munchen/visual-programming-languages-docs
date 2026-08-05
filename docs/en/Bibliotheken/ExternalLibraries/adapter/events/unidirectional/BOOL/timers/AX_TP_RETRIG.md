@@ -1,5 +1,6 @@
 # AX_TP_RETRIG
 ![AX_TP_RETRIG](./AX_TP_RETRIG.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AX_TP_RETRIG** function block is a standardized timer function block (pulse) in a retriggerable configuration. It generates a pulse of duration **PT** on the adapter output **Q** as soon as the input signal **IN** receives a rising edge (event REQ). The pulse is restarted (retriggered) with each new REQ event. A reset via the event input **R** advances the pulse duration **PT** and resets the timer.

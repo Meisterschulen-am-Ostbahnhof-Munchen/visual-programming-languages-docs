@@ -1,5 +1,6 @@
 # AR_SPLIT_3
 ![AR_SPLIT_3](./AR_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_SPLIT_3** serves as a generic splitter for adapter connections. It distributes an incoming data and event stream (via a `AR` adapter) to three separate, identically structured output adapters. This enables efficient reuse of information in automation processes without duplicating the logic.

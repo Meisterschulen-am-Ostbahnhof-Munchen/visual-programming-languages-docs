@@ -23,6 +23,7 @@ Keine direkten Daten-Ausgänge vorhanden
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - **IN1** - OR input 1 (unidirektionaler AX-Adapter)
 - **IN2** - OR input 2 (unidirektionaler AX-Adapter)
 - **IN3** - OR input 3 (unidirektionaler AX-Adapter)
@@ -33,6 +34,7 @@ Keine direkten Daten-Ausgänge vorhanden
 - **IN8** - OR input 8 (unidirektionaler AX-Adapter)
 
 **Ausgangsadapter:**
+
 - **OUT** - OR result (unidirektionaler AX-Adapter)
 
 ## Funktionsweise

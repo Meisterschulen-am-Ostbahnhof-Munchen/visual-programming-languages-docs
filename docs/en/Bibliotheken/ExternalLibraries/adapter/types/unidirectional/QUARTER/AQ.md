@@ -1,5 +1,6 @@
 # AQ
 ![AQ](./AQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The `AQ` adapter provides a unidirectional interface (plug side) for transmitting an event and a byte value (used for 2 bits). It serves as a standard definition for communication between function blocks according to IEC 61499-1 and enables simple, directed data transfer.

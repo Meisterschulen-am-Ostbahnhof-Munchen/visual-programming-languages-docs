@@ -1,5 +1,6 @@
 # AX_RangeBasedPulse
 ![AX_RangeBasedPulse](./AX_RangeBasedPulse.svg)
+
 * * * * * * * * * *
 ## Introduction
 This function block generates a pulse on an AX adapter based on a distance traveled (adapter version). It is licensed under the Eclipse Public License 2.0 and designed for use in signal processing of distance data.

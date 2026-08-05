@@ -1,5 +1,6 @@
 # EC_KILL_ELEM
 ![EC_KILL_ELEM](https://user-images.githubusercontent.com/116869307/214154585-0a3f092a-270e-47aa-ad82-6f643b65be11.png)
+
 * * * * * * * * * *
 ## Introduction
 The EC_KILL_ELEM function block is used to terminate instances according to the state machine of IEC 61499 function blocks. It enables the targeted termination of function block instances, connections (event/data), resources, or devices within a 4diac system.

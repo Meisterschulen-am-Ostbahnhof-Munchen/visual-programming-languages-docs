@@ -1,5 +1,6 @@
 # ILOCK_BLOCK_AX
 ![ILOCK_BLOCK_AX](./ILOCK_BLOCK_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ILOCK_BLOCK_AX** implements an interlock for two opposing directions (up/down or forward/backward). It prioritizes the first active input and ensures that only one direction can be active at a time. The block is implemented as a basic function block (FB) according to IEC 61499-2.

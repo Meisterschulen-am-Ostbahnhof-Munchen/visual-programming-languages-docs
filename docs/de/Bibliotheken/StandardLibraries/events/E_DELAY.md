@@ -14,13 +14,16 @@ Der **E_DELAY** ist ein zentraler Funktionsbaustein der IEC 61499 Norm für indu
 ### Schnittstelle (Interface)
 
 **Ereignis-Eingänge:**
+
 - `START`: Initialisiert die Verzögerung
 - `STOP`: Bricht die aktive Verzögerung ab
 
 **Ereignis-Ausgänge:**
+
 - `EO` (Event Output): Wird nach Ablauf der Verzögerung ausgelöst
 
 **Daten-Eingänge:**
+
 - `DT` (Delay Time): TIME-Wert für die Verzögerungsdauer
 
 ## Funktionsweise

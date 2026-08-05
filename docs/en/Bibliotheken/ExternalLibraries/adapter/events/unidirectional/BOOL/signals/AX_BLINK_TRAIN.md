@@ -9,6 +9,7 @@ The AX_BLINK_TRAIN is a function block that outputs a train flashing signal (alt
 
 ### **Adapters**
 **Plugs (Outputs):**
+
 - **OUT1** (adapter::types::unidirectional::AX)
 - **OUT2** (adapter::types::unidirectional::AX)
 

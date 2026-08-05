@@ -56,6 +56,7 @@ Der Ablauf der Schaltung gestaltet sich wie folgt:
 4.  **Ausgabe**: Der Timer aktiviert seinen Ausgang `Q` für genau **1 Sekunde** (`PT=T#1s`). Dieses Signal steuert den `DigitalOutput_Q1` an.
 
 **Zusammenhang der Verbindungen:**
+
 *   `DigitalInput_I1.IN` → `AX_FB_R_TRIG.CLK`
 *   `AX_FB_R_TRIG.Q` → `AX_TP.IN`
 *   `AX_TP.Q` → `DigitalOutput_Q1.OUT`

@@ -26,12 +26,14 @@ Keine direkten Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 **Eingehende Adapter (Sockets):**
+
 - **IN1**: ODER-Eingang 1 (Typ: adapter::types::unidirectional::AX)
 - **IN2**: ODER-Eingang 2 (Typ: adapter::types::unidirectional::AX)
 - **IN3**: ODER-Eingang 3 (Typ: adapter::types::unidirectional::AX)
 - **IN4**: ODER-Eingang 4 (Typ: adapter::types::unidirectional::AX)
 
 **Ausgehende Adapter (Plugs):**
+
 - **OUT**: ODER-Ergebnis (Typ: adapter::types::unidirectional::AX)
 
 ## Funktionsweise

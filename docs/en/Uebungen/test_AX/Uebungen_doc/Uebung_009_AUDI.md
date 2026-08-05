@@ -1,5 +1,6 @@
 # Exercise_009_AUDI: Ticker (AX-Adapter Based)
 ![Uebung_009_AUDI_network](./Uebung_009_AUDI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the implementation of a **ticker** based on **AX adapters** (adapter event interfaces) in the 4diac IDE.

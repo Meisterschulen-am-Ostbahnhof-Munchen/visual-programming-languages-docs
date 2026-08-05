@@ -1,5 +1,6 @@
 # AULI_MUX_2
 ![AULI_MUX_2](./AULI_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_MUX_2** implements a digital multiplexer (MUX) with two inputs and one output, configured as unidirectional AULI adapters.

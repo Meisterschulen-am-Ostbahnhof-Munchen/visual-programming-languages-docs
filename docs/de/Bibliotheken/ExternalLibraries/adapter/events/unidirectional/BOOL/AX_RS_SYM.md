@@ -52,6 +52,7 @@ Die interne Zustandsmaschine besteht aus folgenden Zuständen und Transitionen:
 | RESET | Ausgang `Q.D1` ist `FALSE` | Führt Algorithmus `RESET` aus: `Q.D1 := FALSE` und feuert `Q.E1` |
 
 **Transitionen:**
+
 - `START` → `SET` bei Bedingung `S`
 - `START` → `RESET` bei Bedingung `R`
 - `SET` → `RESET` bei Bedingung `R`

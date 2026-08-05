@@ -1,5 +1,6 @@
 # AUDI_GE
 ![AUDI_GE](./AUDI_GE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUDI_GE` performs a "greater than or equal to" comparison of two values. It provides the result as a Boolean value. The block is implemented as a composition and internally uses the standard comparison block `F_GE` from the IEC 61131-3 library. Input and output are exclusively via unidirectional adapters.

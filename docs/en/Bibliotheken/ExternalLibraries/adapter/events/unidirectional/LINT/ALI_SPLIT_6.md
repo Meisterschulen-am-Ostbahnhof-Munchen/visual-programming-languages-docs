@@ -1,5 +1,6 @@
 # ALI_SPLIT_6
 ![ALI_SPLIT_6](./ALI_SPLIT_6.svg)
+
 * * * * * * * * * *
 ## Introduction
 The ALI_SPLIT_6 function block is used to distribute an incoming unidirectional ALI (Application Layer Interface) adapter signal to six identical outputs. It is designed as a generic function block and enables simple signal multiplication without additional logic.

@@ -1,5 +1,6 @@
 # AIWS_DEMUX_2
 ![AIWS_DEMUX_2](./AIWS_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AIWS_DEMUX_2** is a generic demultiplexer function block for the AIWS protocol. It forwards an incoming AIWS data stream to one of two outputs, controlled by an index. The block is event-driven and operates unidirectionally.

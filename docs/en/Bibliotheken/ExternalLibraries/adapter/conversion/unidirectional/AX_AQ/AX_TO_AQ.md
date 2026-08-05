@@ -1,5 +1,6 @@
 # AX_TO_AQ
 ![AX_TO_AQ](./AX_TO_AQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AX_TO_AQ** function block converts a Boolean signal (AX adapter) into a quarter-byte signal (AQ adapter). The conversion is based on event-driven COMMAND logic, where an incoming event triggers the conversion and the result is acknowledged via an output event. The function block encapsulates the conversion logic in an internal sub-function block, thus enabling a clean separation between adapter types.

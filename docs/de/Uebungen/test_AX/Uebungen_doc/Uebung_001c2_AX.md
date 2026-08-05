@@ -33,6 +33,7 @@ Der Datenfluss ist auf Adapterebene realisiert:
 Eine Eventverbindung zwischen dem Ereignisausgang `INITO` von `DigitalInput_I1` und dem Ereigniseingang `REQ` desselben Bausteins sorgt dafür, dass der Eingang sofort nach der Initialisierung (beim Booten) einmal abgefragt wird. Ohne diese Verbindung wäre der Ausgang nach dem Start zunächst `FALSE`, da die Ereigniskette erst durch ein externes Ereignis ausgelöst werden müsste. Mit der Rückkopplung wird der aktuelle Eingangswert gelesen und der Ausgang korrekt gesetzt.
 
 **Lernziele:**  
+
 - Verständnis der Ereignissteuerung in 4diac (Ereignisrückkopplung zur Initialisierung).  
 - Anwendung von Adapterbausteinen zur Signalverarbeitung (Negation).  
 - Einfaches Zusammenspiel von digitalen Ein- und Ausgängen.

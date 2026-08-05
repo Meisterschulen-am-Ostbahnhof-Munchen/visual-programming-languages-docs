@@ -1,5 +1,6 @@
 # AUDI_MUL_4
 ![AUDI_MUL_4](./AUDI_MUL_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_MUL_4** performs an arithmetic multiplication based on four input values. It is a generic function block (FB) that operates via adapter interfaces with a unidirectional data structure of type `adapter::types::unidirectional::AUDI`. The block is specified according to IEC 61499-2 and is used particularly in automation solutions where scalable multiplication of multiple input variables is required.

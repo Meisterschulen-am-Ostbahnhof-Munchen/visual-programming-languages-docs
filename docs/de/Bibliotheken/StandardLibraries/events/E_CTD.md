@@ -16,19 +16,23 @@ Der **E_CTD** (Event-Driven Down Counter) ist ein ereignisgesteuerter Abwärtsz�
 ### Schnittstelle (Interface)
 
 **Eingangsereignisse (Event Inputs):**
+
 - **CD (Count Down):** Löst einen Zählschritt aus, der den Zählerstand dekrementiert.
 - **LD (Load):** Lädt den Startwert `PV` in den Zähler.
 
 **Ausgangsereignisse (Event Outputs):**
+
 - **CDO (Count Down Output):** Bestätigt einen Zählschritt. Wird nach jedem `CD`-Ereignis ausgelöst, solange der Zählerstand größer als 0 war.
     - **Verbundene Daten**: `Q`, `CV`
 - **LDO (Load Output):** Bestätigt das erfolgreiche Laden eines neuen Zählerwerts.
     - **Verbundene Daten**: `Q`, `CV`
 
 **Eingangsvariablen (Input Variables):**
+
 - **PV (Preset Value):** Der Startwert, der bei einem LD-Ereignis geladen wird (Datentyp: `UINT`).
 
 **Ausgangsvariablen (Output Variables):**
+
 - **Q (Status):** Ausgangs-Flag, das `TRUE` wird, wenn der Zählerstand `CV` den Wert 0 erreicht (Datentyp: `BOOL`).
 - **CV (Counter Value):** Der aktuelle Zählerstand (Datentyp: `UINT`).
 

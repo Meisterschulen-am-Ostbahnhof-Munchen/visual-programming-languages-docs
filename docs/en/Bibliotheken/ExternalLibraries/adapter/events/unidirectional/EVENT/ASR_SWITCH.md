@@ -1,5 +1,6 @@
 # ASR_SWITCH
 ![ASR_SWITCH](./ASR_SWITCH.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ASR_SWITCH** function block acts as a demultiplexer for **ASR events** (SET/RESET). It forwards events received via the adapter socket `EI` to either the adapter plug `EO0` or `EO1`, depending on the Boolean value of the input `G`. This allows switching between two different signal paths in an automation application.

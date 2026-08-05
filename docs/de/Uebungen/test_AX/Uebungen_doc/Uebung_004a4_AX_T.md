@@ -51,6 +51,7 @@ Die Funktionsbausteine sind über **Adapterverbindungen** (keine klassischen Eve
    *Der aktuelle Zustand des Flipflops wird auf den physischen Ausgang Output_Q1 ausgegeben.*
 
 **Ablauf:**  
+
 - Solange kein Reset anliegt, wechselt der Ausgang bei jedem Taktimpuls seinen Zustand.  
 - Ein aktiver Reset (TRue) setzt den Ausgang sofort auf `FALSE` und hält ihn dort, bis der Reset wieder wegfällt und ein neuer Takt kommt.
 

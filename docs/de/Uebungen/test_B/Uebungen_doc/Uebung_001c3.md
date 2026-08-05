@@ -39,6 +39,7 @@ Der Ablauf wird durch die Ereignis- und Datenverbindungen im SubApp-Netzwerk def
    - Durch die erste Initialisierung (`INITO -> REQ`) ist der Ausgang nach dem Boot sofort aktiv (TRUE) – ohne diese Verbindung wäre er FALSE.
 
 **Besonderheiten:**  
+
 - Die Kombination aus Negation auf der Datenverbindung und dem NOT-Baustein führt zu einer doppelten Negation, wodurch der Eingangswert unverändert am Ausgang anliegt.  
 - Die Verbindung `INITO -> REQ` stellt sicher, dass der Ausgang beim Start einen definierten Zustand (TRUE) annimmt, auch wenn noch kein gültiger Eingangswert vorliegt.
 

@@ -1,5 +1,6 @@
 # AX_TO_ALR
 ![AX_TO_ALR](./AX_TO_ALR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_TO_ALR** is used to convert a BOOL adapter signal (AX) into an LREAL adapter signal (ALR). Internally, it uses the IEC 61131 standard function `F_SEL` (Selection) to generate a discrete LREAL value from a Boolean input. The block is implemented as a composite function block and is suitable for the simple, adapter-based conversion of digital states into numerical values.

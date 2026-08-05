@@ -1,5 +1,6 @@
 # GetInstancePath
 ![GetInstancePath](https://github.com/user-attachments/assets/325783e2-0c06-4d8f-bdf5-56508a4e6f25)
+
 * * * * * * * * * *
 ## Introduction
 The function block `GetInstancePath` is used to determine the instance path of the function block within the 4diac IDE. This path can be used, for example, for diagnostic purposes or for dynamic configuration. The function block is particularly useful in complex applications where precise identification of the instance location is required.

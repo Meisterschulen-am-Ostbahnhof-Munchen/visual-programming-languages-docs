@@ -1,5 +1,6 @@
 # AW_FIELDBUS_WORD_TO_SIGNAL
 ![AW_FIELDBUS_WORD_TO_SIGNAL](./AW_FIELDBUS_WORD_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_FIELDBUS_WORD_TO_SIGNAL** acts as a filter for fieldbus words. It mirrors the incoming signal (via the **IN** adapter) to the output (**OUT** adapter) if the signal is recognized as valid. Validity is indicated via a separate output adapter (**VALID**). This block is typically used in fieldbus environments to ensure that only valid data values are forwarded to subsequent components.

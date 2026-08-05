@@ -1,5 +1,6 @@
 # Exercise_034a1_Q2_AX: Numeric Value Input to PWM Output (Adapter Version)
 ![Uebung_034a1_Q2_AX_network](./Uebung_034a1_Q2_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the coupling of a numeric input value (via an iSoBUS numeric value service) with a PWM output (logiBUS). The numeric value entered by the user is directly converted into a PWM signal and output at output `Output_Q2`. Communication between the two function blocks takes place via an adapter connection, which allows for modular and flexible wiring.

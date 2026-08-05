@@ -1,5 +1,6 @@
 # AI_DEMUX_4
 ![AI_DEMUX_4](./AI_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 AI_DEMUX_4 is a generic function block (FB) for demultiplexing an analog input signal (AI) to one of four outputs. It is typically used in IEC 61499-based automation systems to selectively route an incoming data stream to one of several outputs.
@@ -19,9 +20,11 @@ No direct data outputs – output is exclusively via the adapters.
 
 ### **Adapters**
 **Socket (Input)**
+
 - **IN**: Adapter type `adapter::types::unidirectional::AI` for the incoming analog signal.
 
 **Plugs (Outputs)**
+
 - **OUT1, OUT2, OUT3, OUT4**: Four adapters of the same type (`adapter::types::unidirectional::AI`). Only the output selected by K receives the value from IN; the other outputs remain unchanged.
 
 ## Functionality

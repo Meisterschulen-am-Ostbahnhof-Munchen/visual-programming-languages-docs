@@ -1,5 +1,6 @@
 # AX_SEL_AUDI
 ![AX_SEL_AUDI](./AX_SEL_AUDI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_SEL_AUDI** implements a binary selection function according to IEC 61131-3. It selects one of two input values (IN0, IN1) and outputs it via an adapter. The selection is controlled by an adapter input that provides an event and a selection signal. The block is designed for modular, adapter-based architectures.

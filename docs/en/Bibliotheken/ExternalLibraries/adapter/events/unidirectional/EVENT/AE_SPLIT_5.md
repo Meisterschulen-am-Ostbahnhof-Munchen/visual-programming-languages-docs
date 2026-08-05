@@ -1,5 +1,6 @@
 # AE_SPLIT_5
 ![AE_SPLIT_5](./AE_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_SPLIT_5** is used to duplicate an incoming adapter event. It receives an adapter event (AE) at its socket `IN` and forwards it identically to five separate output plugs (`OUT1` … `OUT5`). The block is implemented as a generic FB (GenericClassName `'GEN_AE_SPLIT'`), thus enabling easy reuse in different contexts.

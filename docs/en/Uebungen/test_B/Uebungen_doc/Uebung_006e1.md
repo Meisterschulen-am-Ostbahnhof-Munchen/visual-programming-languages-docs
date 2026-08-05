@@ -1,6 +1,7 @@
 Here is the documentation page for exercise `Uebung_006e1` based on the provided data.
 # Exercise_006e1: SR Flip-Flop with 2x IX
 ![Uebung_006e1_network](./Uebung_006e1_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 Exercise **Exercise_006e1** demonstrates the implementation of an SR flip-flop (set-reset memory element) within a sub-application. Two digital inputs are used to control one digital output. This circuit illustrates the fundamental memory behavior in control engineering, where a pulse sets a state that is retained until reset.

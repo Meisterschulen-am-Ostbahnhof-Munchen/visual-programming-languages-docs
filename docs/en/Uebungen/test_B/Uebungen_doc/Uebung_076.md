@@ -1,5 +1,6 @@
 # Exercise_076: Outputting MSS to a UT using Compound Scaling
 ![Uebung_076_network](./Uebung_076_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a function for processing machine selected speed (MSS). The value is scaled using a compound scale function block and then output as a numeric value to a Universal Terminal (UT). The scaling is performed using upper and lower factors (0.256 and 0.001). A note indicates that the object pool entry used (NumberVariable_Wheel_based_machine_speed) is currently a placeholder and should later be replaced with the correct entry (NumberVariable_Machine_selected_speed).

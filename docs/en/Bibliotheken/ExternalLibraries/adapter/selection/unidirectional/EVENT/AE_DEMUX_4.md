@@ -1,5 +1,6 @@
 # AE_DEMUX_4
 ![AE_DEMUX_4](./AE_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_DEMUX_4** is a generic demultiplexer for adapters of type `AE`. It forwards an adapter value present at its input to one of four outputs. The target output is selected via an index parameter.

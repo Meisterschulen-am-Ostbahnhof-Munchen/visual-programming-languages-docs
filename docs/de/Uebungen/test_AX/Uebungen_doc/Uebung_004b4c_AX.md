@@ -41,6 +41,7 @@ Die drei Sub-Bausteine sind in einer Kette angeordnet:
   Der Ausgang `Q` jedes Sub-Bausteins ist über eine Adapterverbindung (z. B. `Uebung_004b4c_sub_AX1.Q → DigitalOutput_Q1.OUT`) mit dem entsprechenden Digitalausgang `OUT` des `logiBUS_QXA`-Bausteins verbunden. Die Ausgänge `Q1`, `Q2`, `Q3` werden an die physikalischen LEDs ausgegeben.
 
 **Ablauf**:
+
 1. Kein Taster betätigt: Alle Ausgänge sind aus (inaktiv).
 2. Wird Taster I1 betätigt, toggelt SubApp AX1 auf aktiv (Q1 an). Die Verriegelung erlaubt dies, da alle vorherigen Glieder inaktiv sind.
 3. Wird nun Taster I2 betätigt, toggelt SubApp AX2 nur dann, wenn AX1 inaktiv ist. Da AX1 aktuell aktiv ist, erfolgt kein Umschalten (Verriegelung).

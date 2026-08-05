@@ -44,6 +44,7 @@ Das System arbeitet ereignisgesteuert:
    - `Q_NumericValue_PHYS_LREAL` erhält den aktuellen Zählerstand `CV`
 
 **Datenverbindungen**:
+
 - `Input_CU.IN` → `FB_CTUD_DINT.CU`
 - `Input_CD.IN` → `FB_CTUD_DINT.CD`
 - `Input_R.IN` → `FB_CTUD_DINT.R`
@@ -53,6 +54,7 @@ Das System arbeitet ereignisgesteuert:
 - `FB_CTUD_DINT.CV` → `Q_NumericValue_PHYS_LREAL.lrPhys`
 
 **Verhalten des Zählers**:
+
 - Bei einer positiven Flanke an `CU` wird der Zähler um 1 erhöht.
 - Bei einer positiven Flanke an `CD` wird der Zähler um 1 verringert.
 - Bei einer positiven Flanke an `R` wird der Zähler auf 0 gesetzt.

@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_086`.
 ## 📺 Video
 ![Uebung_086_network](./Uebung_086_network.svg)
+
 * [The 1863 Catalog ](https://www.youtube.com/watch?v=fk7tIjl2pTk)
 
 ## 🎧 Podcast

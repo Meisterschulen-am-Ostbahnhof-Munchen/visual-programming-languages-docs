@@ -1,5 +1,6 @@
 # GET_TIME_OF_DAY
 ![GET_TIME_OF_DAY](./GET_TIME_OF_DAY.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `GET_TIME_OF_DAY` is used to read a time of day value (type `TIME_OF_DAY`) from an InOut variable. The read value is buffered internally and made available via a data output. In this way, a consistent, uniquely read time of day is passed on – even if the source variable changes in the meantime.

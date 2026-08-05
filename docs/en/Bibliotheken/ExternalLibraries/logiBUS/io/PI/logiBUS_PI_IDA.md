@@ -1,5 +1,6 @@
 # logiBUS_PI_IDA
 ![logiBUS_PI_IDA](./logiBUS_PI_IDA.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **logiBUS_PI_IDA** is a composite function block (FB) for processing double-word input data (DWORD). It serves as an interface between a logiBUS fieldbus and the control logic. The FB enables parameterizable monitoring of pulse and time changes at a digital input. By configuring pulse delta, time delta, and a rate limit, the signaling behavior can be precisely tailored to the application. The block initializes the internal sub-block `logiBUS_PI_ID` and provides its results via a unidirectional adapter.

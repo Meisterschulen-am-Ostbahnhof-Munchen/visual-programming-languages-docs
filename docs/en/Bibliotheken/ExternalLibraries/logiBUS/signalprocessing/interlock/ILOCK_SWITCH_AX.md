@@ -1,6 +1,7 @@
 # ILOCK_SWITCH_AX
 ![ILOCK_SWITCH_AX](./ILOCK_SWITCH_AX.svg)
 *(No image available)*
+
 * * * * * * * * * *
 ## Introduction
 The function block **ILOCK_SWITCH_AX** implements interlocking switch control for bidirectional axes. It prioritizes the last active input and ensures that both directions are never activated simultaneously. Communication occurs exclusively via adapter interfaces of type `adapter::types::unidirectional::AX`. This version is specifically designed for use in modular control systems with standardized adapters.

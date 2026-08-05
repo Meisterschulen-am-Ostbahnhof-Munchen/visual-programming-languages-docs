@@ -69,6 +69,7 @@ Das Programm ist darauf ausgelegt, eine geführte Sequenz von 8 Schritten abzubi
     - Gleichzeitig wird die aktuelle Zustandsnummer (`STATE_NR`) über den Konverter `F_SINT_TO_UINT` an das Display-Element `OutputNumber_N1` gesendet, um dem Benutzer den aktuellen Schritt anzuzeigen.
 
 **Lernziele**:
+
 - Verständnis von Zustandsautomaten (Sequencern).
 - Nutzung von Zählern und Demultiplexern zur Ereignissteuerung.
 - Aufteilung von Steuerungsaufgaben auf verschiedene Eingänge.

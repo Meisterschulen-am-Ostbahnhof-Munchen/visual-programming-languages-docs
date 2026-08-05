@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_072`. In agricultural engineering, there are various sources for speed; here, the two most important ones are compared.
 ## 🎧 Podcast
 ![Uebung_072_network](./Uebung_072_network.svg)
+
 * [Eclipse 4diac 3.0: ST Interpreter, FBE, and 7200 Commits – The Turbo for Distributed Automation ](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-3-0-ST-Interpreter--FBE-und-7200-Commits--Der-Turbo-fr-verteilte-Automatisierung-e3a5cpl)
 
 ----

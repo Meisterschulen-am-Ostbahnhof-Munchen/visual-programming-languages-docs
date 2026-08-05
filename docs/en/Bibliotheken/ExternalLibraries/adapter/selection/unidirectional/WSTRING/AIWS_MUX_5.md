@@ -1,5 +1,6 @@
 # AIWS_MUX_5
 ![AIWS_MUX_5](./AIWS_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIWS_MUX_5** is a generic multiplexer for AIWS adapter data. It selects one of five AIWS inputs (IN1…IN5) connected to the **Socket** and forwards the value to the **Plug** output OUT. The selection is made using the integer index **K** (0-4), which is inherited from an event at the **REQ** input. The block confirms the executed selection with a **CNF** event.

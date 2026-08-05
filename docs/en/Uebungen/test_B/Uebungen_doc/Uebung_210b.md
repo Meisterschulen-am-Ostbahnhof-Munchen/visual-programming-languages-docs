@@ -1,5 +1,6 @@
 # Exercise_210b: Standard IEC 61131-3 FB_CTU (Counter Up, INT) with Terminal Output
 ![Uebung_210b_network](./Uebung_210b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **Counter Up** according to IEC 61131-3 (FB_CTU) with the data type `INT`. The counter is controlled via two digital inputs: a count pulse input (`CU`) and a reset input (`R`). The current counter value is output both to a digital output (limit reached) and via a terminal object for numerical display.

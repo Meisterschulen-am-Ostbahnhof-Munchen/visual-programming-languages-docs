@@ -1,5 +1,6 @@
 # AS_D_FF_TMIN
 ![AS_D_FF_TMIN](./AS_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_D_FF_TMIN** implements a data-locking D flip-flop that takes over a data value supplied via an adapter upon the arrival of an event and outputs it via another adapter. Its special feature is a configurable minimum time (`Tmin`) between two consecutive take-over events. This suppresses excessively rapid event sequences, which can be used, for example, for debouncing or to enforce process constraints.

@@ -1,6 +1,7 @@
 Here is the documentation for the exercise based on the provided XML file:
 # Exercise_003b3_sub_AX: IX to QX (generic)
 ![Uebung_003b3_sub_AX_network](./Uebung_003b3_sub_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise describes a sub-application (`SubAppType`) that establishes a generic connection between a digital input (IX) and a digital output (QX). The function block acts as a bridge to forward signals from an input module (e.g., a wireless switch) directly to an output module (e.g., a data panel).

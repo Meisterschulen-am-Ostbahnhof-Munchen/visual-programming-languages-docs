@@ -17,6 +17,7 @@ Die Übung zeigt die grundlegende Verschaltung von industriellen Ein‑/Ausgangs
   *Parameter:* `PV` = `DINT#5` (Voreinstellungswert – der Zähler gibt Q aus, wenn CV >= PV)  
   *Ereignisseingang:* `REQ` – aktiviert die Zählerlogik  
   *Datenverbindungen:*  
+
   - `CU` (Count Up) vom Baustein `Input_CU.IN`  
   - `R` (Reset) vom Baustein `Input_R.IN`  
   - `Q` (Ausgang) geht an `Output_Q1.OUT`  

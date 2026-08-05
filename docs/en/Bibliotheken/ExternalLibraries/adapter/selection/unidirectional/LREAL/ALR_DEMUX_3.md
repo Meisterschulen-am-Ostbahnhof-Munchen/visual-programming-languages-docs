@@ -1,5 +1,6 @@
 # ALR_DEMUX_3
 ![ALR_DEMUX_3](./ALR_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ALR_DEMUX_3` is a generic demultiplexer for ALR adapter interfaces (unidirectional). It forwards the ALR data stream present at socket `IN` to one of three output adapters (`OUT1`, `OUT2`, `OUT3`). The target output is selected via the index `K`. This function block is suitable for use in applications where a signal path needs to be dynamically switched to different downstream components.

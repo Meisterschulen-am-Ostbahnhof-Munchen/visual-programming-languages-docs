@@ -1,5 +1,6 @@
 # AD_D_FF_TMIN
 ![AD_D_FF_TMIN](./AD_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AD_D_FF_TMIN** implements a data-retaining flip-flop (D-latch) based on adapters with a unidirectional interface. It features a configurable minimum inter-disposal time (MDR) between two consecutive events, making it suitable for time-critical signal processing.

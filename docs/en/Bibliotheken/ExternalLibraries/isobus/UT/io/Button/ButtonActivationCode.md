@@ -1,5 +1,6 @@
 # ButtonActivationCode
 ![ButtonActivationCode](./ButtonActivationCode.svg)
+
 * * * * * * * * * *
 ## Introduction
 ButtonActivationCode is a collection of global constants for processing button activations in ISOBUS-compatible systems. These constants define various states and events that can occur when buttons are pressed and are primarily used in agricultural applications.

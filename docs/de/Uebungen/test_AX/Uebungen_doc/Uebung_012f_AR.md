@@ -21,6 +21,7 @@ Diese Übung befasst sich mit dem Einlesen eines numerischen Werts (physikalisch
 Die SubApp `Uebung_012f_AR` selbst besitzt keine eigenen Ein- oder Ausgangsschnittstellen. Sie instanziiert den fertigen Subbaustein `Uebung_012f_sub_AR` und versorgt ihn mit den beiden Parametern `KEY` und `stObj`. Diese Parameter werden aus den importierten Bibliotheken mit den entsprechenden Konstanten belegt. Der Baustein führt dann die gesamte Logik zum Empfang des Werts über den AR-Adapter und zum Speichern im NVS aus.
 
 **Lernziele dieser Übung:**
+
 - Verstehen, wie ein AR-Adapter für die Werteingabe verwendet wird.
 - Speichern von Werten im nichtflüchtigen Speicher mit vordefinierten Schlüsseln.
 - Verwaltung von Konstanten aus externen Bibliotheken.

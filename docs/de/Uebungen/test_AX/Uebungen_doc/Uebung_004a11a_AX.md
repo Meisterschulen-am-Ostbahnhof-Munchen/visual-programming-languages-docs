@@ -45,6 +45,7 @@ Ein Kommentar im Netzwerk weist darauf hin, dass der letzte Zustand zu Beginn ge
 Die Übung demonstriert die Kombination eines entprellten Tastereingangs mit einem speichernden Toggle-Flip-Flop. Besonders wichtig ist die Wiederherstellung des letzten Ausgangszustands nach einem Neustart – erreicht durch den Einsatz eines INI-Speicherbausteins. Dadurch eignet sich die Schaltung für Anwendungen, bei denen der Schaltzustand auch nach Spannungsunterbrechung erhalten bleiben muss, z. B. für EIN/AUS-Taster in Steuerungen.
 
 **Lernziele:**  
+
 - Verständnis des Toggle-Flip-Flop-Verhaltens  
 - Umgang mit Ereignis-gesteuerten Eingängen (BUTTON_SINGLE_CLICK)  
 - Initialisierung von Zuständen aus persistentem Speicher  

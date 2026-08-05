@@ -1,5 +1,6 @@
 # AX_RF_TRIG
 ![AX_RF_TRIG](./AX_RF_TRIG.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_RF_TRIG** is used to detect rising and falling edges of a Boolean signal. It receives the signal value via an adapter and outputs corresponding events when an edge changes. The block encapsulates the standard logic of IEC 61499 edge detection (E_RF_TRIG) and provides it via a uniform adapter interface.

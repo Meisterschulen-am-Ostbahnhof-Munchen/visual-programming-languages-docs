@@ -1,5 +1,6 @@
 # AUDI_DEMUX_4
 ![AUDI_DEMUX_4](./AUDI_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_DEMUX_4** implements a generic 1:4 demultiplexer for the unidirectional **AUDI** adapter type. It routes a signal present at its input (socket) to one of four outputs (plugs). The active output is selected via an index parameter and is triggered by an event at input `REQ`. After successful switching, an acknowledgment event is sent at output `CNF`.

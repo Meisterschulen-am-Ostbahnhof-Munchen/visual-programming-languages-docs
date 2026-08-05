@@ -59,6 +59,7 @@ Der Ablauf der Übung wird durch die Ereignis- und Datenkette definiert:
     *   Der `FT_DERIV` Baustein berechnet die Änderung des Eingangssignals pro Zeiteinheit. Da der Eingang ein akkumulierter Zählerstand (Impulse) ist, entspricht die Ableitung der aktuellen Impulsfrequenz (Impulse pro Sekunde/Minute, abhängig von der Zeitbasis).
 
 **Lernziele:**
+
 *   Einbindung von Hardware-Eingängen (LogiBUS).
 *   Umgang mit Datentyp-Konvertierungen in IEC 61499 / IEC 61131.
 *   Anwendung mathematischer Funktionen aus der OSCAT-Bibliothek zur Signalverarbeitung.

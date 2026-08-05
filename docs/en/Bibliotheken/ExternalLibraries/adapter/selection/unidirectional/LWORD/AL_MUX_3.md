@@ -1,5 +1,6 @@
 # AL_MUX_3
 ![AL_MUX_3](./AL_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AL_MUX_3** is a generic multiplexer (signal switch) for AL data adapters. Depending on the index **K**, it selects one of three inputs (IN1, IN2, IN3) and forwards its data to the output **OUT**. The module operates in an event-driven manner: A **REQ** event triggers the selection, and the result is acknowledged via **CNF**.

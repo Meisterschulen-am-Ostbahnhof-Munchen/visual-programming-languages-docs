@@ -1,5 +1,6 @@
 # GET_REAL
 ![GET_REAL](./GET_REAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **GET_REAL** function block is used to read a REAL value from an **InOut variable** and make it available in a buffered output. The read value is obtained from the InOut variable `IN` when an event is received at input `REQ` and output at output `OUT`. After execution, the acknowledgment event `CNF` is sent.
@@ -49,6 +50,7 @@ No adapters available.
 
 ```structuredtext
 OUT := IN;
+
 3. The confirmation event `CNF` is then sent. The outputs `OUT` and `IN` are associated with the event, so they are valid simultaneously.
 
 4. The output value is retained until another `REQ` event arrives and `OUT` is rewritten.

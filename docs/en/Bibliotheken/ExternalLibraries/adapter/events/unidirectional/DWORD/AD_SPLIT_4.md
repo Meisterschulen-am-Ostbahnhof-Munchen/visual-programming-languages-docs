@@ -1,5 +1,6 @@
 # AD_SPLIT_4
 ![AD_SPLIT_4](./AD_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AD_SPLIT_4** is used to distribute an incoming unidirectional AD adapter (adapter definition) to four identical outputs. It is a generic function block specifically designed for splitting a single AD signal into up to four separate paths.

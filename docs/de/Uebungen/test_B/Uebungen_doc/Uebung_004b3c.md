@@ -81,6 +81,7 @@ Die äußere Verschaltung der Haupt-Sub-Applikation ist wie folgt aufgebaut:
 - Der bidirektionale Adapter verbindet **Uebung_004b3b_sub1.PLUG** mit **Uebung_004b3b_sub2.SOCKET**. Diese einzige Verbindung reicht aus, um die gegenseitige Verriegelung zu realisieren: Immer wenn eine Sub-Applikation gesetzt wird, sendet sie ein Reset-Signal über den Adapter an die andere.
 
 **Lernziele der Übung:**
+
 - Verständnis des Einsatzes von bidirektionalen Adaptern zur Kopplung von Sub-Applikationen.
 - Realisierung einer verriegelten Toggle-Flip-Flop-Struktur.
 - Zusammenspiel von Ereignis- und Datenflüssen in IEC 61499.

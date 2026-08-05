@@ -1,5 +1,6 @@
 # F_NOT_BOOL_INIT
 ![F_NOT_BOOL_INIT](./F_NOT_BOOL_INIT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `F_NOT_BOOL_INIT` implements the logical negation (NOT) of a Boolean input signal and extends the basic NOT function with an initialization mechanism. It is designed as a standardized block according to IEC 61131-3 for use in programmable logic controllers (PLCs). During initialization, the function block allows a first negation to be triggered and the resulting value to be provided at the output before normal cyclic operation begins.

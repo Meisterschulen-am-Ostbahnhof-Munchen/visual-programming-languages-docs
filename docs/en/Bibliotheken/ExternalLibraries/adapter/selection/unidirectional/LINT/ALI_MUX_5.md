@@ -1,5 +1,6 @@
 # ALI_MUX_5
 ![ALI_MUX_5](./ALI_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_MUX_5** implements a generic multiplexer for five ALI adapter interfaces. It selects one of the five inputs **IN1** to **IN5** based on an index value **K** (0…4) and forwards its data to the output **OUT**. The selection is triggered by the **REQ** event and acknowledged with **CNF**.

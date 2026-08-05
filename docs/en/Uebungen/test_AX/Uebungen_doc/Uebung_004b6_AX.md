@@ -1,5 +1,6 @@
 # Exercise_004b6_AX: Toggle Flip-Flop with IXA / AX_PERMIT + AX_T_FF
 ![Uebung_004b6_AX_network](./Uebung_004b6_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of a toggle flip-flop (T-FF) in combination with an enable mechanism. A digital input (logiBUS_IXA) is routed via an **AX_PERMIT** adapter to the clock input of an **AX_T_FF** adapter. The output of the T-FF controls a digital output (logiBUS_QXA). This allows the output state to be toggled on every rising edge at the input – but only if the input has been previously enabled by **AX_PERMIT**.

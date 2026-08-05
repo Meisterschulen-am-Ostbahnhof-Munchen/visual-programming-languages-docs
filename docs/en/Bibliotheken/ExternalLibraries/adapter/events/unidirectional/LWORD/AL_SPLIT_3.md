@@ -1,5 +1,6 @@
 # AL_SPLIT_3
 ![AL_SPLIT_3](./AL_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AL_SPLIT_3** is used to split an incoming unidirectional adapter signal (AL – Adapter Label) into three identical output adapters. It is designed as a generic building block and enables the multiple forwarding of an adapter-based data or event flow within an IEC 61499 application.

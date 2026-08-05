@@ -1,5 +1,6 @@
 # AUI_AX_SEL
 ![AUI_AX_SEL](./AUI_AX_SEL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AUI_AX_SEL is a binary selection block controlled via an adapter connection. It selects between two data input values (IN0 and IN1) based on a selection signal and outputs the selected value at the data output OUT. Processing is event-driven via the adapter.

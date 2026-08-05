@@ -1,5 +1,6 @@
 # ADI_MUX_3
 ![ADI_MUX_3](./ADI_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_MUX_3** is a generic multiplexer (MUX) for three input signals. It was developed for use in automation systems and selects one of the three connected adapter inputs based on an index value and forwards its signal via the output. The block is implemented as a generic FB and is particularly suitable for flexible signal switching in control applications. Copyright HR Agrartechnik GmbH (2026).

@@ -92,6 +92,7 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 ## Zusammenfassung
 
 **Lernziele** dieser Übung:
+
 - Aufbau und Funktionsweise eines IEC 61131-3 Rückwärtszählers (CTD) im Adapter‑Format verstehen.
 - Einbindung digitaler Ein‑ und Ausgänge über logiBUS.
 - Konvertierung von Datentypen für die Kommunikation zwischen Bausteinen.
@@ -102,6 +103,7 @@ Die SubApp enthält folgende interne Funktionsbausteine:
 **Vorkenntnisse**: Grundlagen der 4diac‑IDE, Umgang mit logiBUS‑I/O‑Bausteinen, einfache Datenkonvertierung.
 
 **Starten der Übung**:
+
 - Die SubApp kann in ein 4diac‑Projekt eingefügt und auf eine entsprechende Steuerung (mit logiBUS‑Anbindung und Terminal) geladen werden.
 - Die Eingänge `Input_I1` (CD) und `Input_I2` (LD) müssen mit Tastern oder einem Signalgenerator verbunden sein.
 - Der Ausgang `Output_Q1` und das Terminalobjekt `OutputNumber_N1` zeigen die Ergebnisse an.

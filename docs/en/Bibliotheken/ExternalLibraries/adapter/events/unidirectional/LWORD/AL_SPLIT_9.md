@@ -1,5 +1,6 @@
 # AL_SPLIT_9
 ![AL_SPLIT_9](./AL_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AL_SPLIT_9** is a generic function block that splits an incoming adapter of type `AL` into nine identical outgoing adapters. It is used to distribute a signal or data flow arriving via a single adapter to multiple downstream components. The function block is defined as a generic type (`GEN_AL_SPLIT`) and must be bound to the specific adapter type before use.

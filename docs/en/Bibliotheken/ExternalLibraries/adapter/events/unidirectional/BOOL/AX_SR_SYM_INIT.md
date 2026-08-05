@@ -1,5 +1,6 @@
 # AX_SR_SYM_INIT
 ![AX_SR_SYM_INIT](./AX_SR_SYM_INIT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_SR_SYM_INIT** implements an event-driven, bistable flip-flop (set-reset) with symmetrical start-up behavior and special initialization logic. It extends the classic SR flip-flop with a qualified initialization and deinitialization sequence, where the output state is specified via the input `Q_INIT`, and the entire logic is only active if the qualifier `QI` has the value `TRUE`.

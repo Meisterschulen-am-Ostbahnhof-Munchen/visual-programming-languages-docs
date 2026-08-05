@@ -1,5 +1,6 @@
 # ASR_SPLIT_6
 ![ASR_SPLIT_6](./ASR_SPLIT_6.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASR_SPLIT_6` distributes an incoming ASR signal (Generic Adapter Type) to six identical ASR outputs. It serves as a pure signal splitter and is provided as a generic function block in the 4diac IDE.

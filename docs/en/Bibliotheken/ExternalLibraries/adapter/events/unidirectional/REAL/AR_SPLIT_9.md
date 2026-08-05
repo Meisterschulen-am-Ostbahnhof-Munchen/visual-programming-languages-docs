@@ -1,5 +1,6 @@
 # AR_SPLIT_9
 ![AR_SPLIT_9](./AR_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_SPLIT_9** splits an incoming AR adapter (type `unidirectional`) into nine separate AR outputs. It serves as a distributor for an AR signal to multiple downstream components. The block is designed to be completely generic.

@@ -1,5 +1,6 @@
 # AIWS_DEMUX_3
 ![AIWS_DEMUX_3](./AIWS_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIWS_DEMUX_3** is a generic demultiplexer for data of the type **AIWS** (Agricultural Information and Workflow System). It distributes an incoming AIWS value to one of three outputs, depending on a passed index. Designed for use in agricultural technology, it enables the targeted routing of information within a control system.

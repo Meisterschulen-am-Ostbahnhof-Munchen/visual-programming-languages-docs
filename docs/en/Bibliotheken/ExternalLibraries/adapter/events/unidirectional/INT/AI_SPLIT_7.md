@@ -1,5 +1,6 @@
 # AI_SPLIT_7
 ![AI_SPLIT_7](./AI_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_SPLIT_7** is used to distribute a single analog input (AI) to seven identical analog outputs. It is a generic function block that passes the incoming analog value unchanged to all seven output adapters. This allows multiple devices to be powered from a single signal source without having to acquire or duplicate the signal multiple times.

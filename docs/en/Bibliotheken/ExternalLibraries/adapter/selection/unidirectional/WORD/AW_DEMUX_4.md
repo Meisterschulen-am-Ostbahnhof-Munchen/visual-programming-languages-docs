@@ -1,5 +1,6 @@
 # AW_DEMUX_4
 ![AW_DEMUX_4](./AW_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_DEMUX_4** is a generic demultiplexer for adapters of type `adapter::types::unidirectional::AW`. It distributes an incoming adapter signal (via socket `IN`) to one of four output adapters (`OUT1` to `OUT4`). The target output is selected via the integer index `K`, which is set via the event input `REQ`. This function block is suitable for the dynamic routing of data streams in automation applications.

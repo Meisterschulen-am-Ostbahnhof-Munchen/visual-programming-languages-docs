@@ -1,5 +1,6 @@
 # Exercise_205: Interlock: ILOCK_SWITCH_PROTECT (Switching Priority with Protection Time)
 ![Uebung_205_network](./Uebung_205_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of the function block `ILOCK_SWITCH_PROTECT` to implement a switching priority with protection time (interlock). Two digital inputs (I1, I2) control two digital outputs (Q1, Q2) via interlocked logic. The `ILOCK_SWITCH_PROTECT` ensures that a configurable protection time (`DT_PROTECT`) is observed after a switching operation before another switching operation is possible. This prevents rapid, unwanted switching back and forth (oscillation). The outputs are controlled via event-driven output blocks. A function block `E_TimeOut` is connected to `ILOCK` via an adapter and enables time monitoring of the protection period.

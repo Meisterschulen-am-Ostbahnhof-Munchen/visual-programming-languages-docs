@@ -1,5 +1,6 @@
 # AL_SPLIT_2
 ![AL_SPLIT_2](./AL_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AL_SPLIT_2** is used to split an incoming unidirectional adapter signal into two identical outputs. It is designed as a generic function block, so the specific adapter type is only determined during use.

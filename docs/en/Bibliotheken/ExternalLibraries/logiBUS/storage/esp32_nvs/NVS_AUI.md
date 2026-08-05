@@ -1,5 +1,6 @@
 # NVS_AUI
 ![NVS_AUI](./NVS_AUI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **NVS_AUI** is used to load and store UINT data in non-volatile memory (NVS) using a key. It encapsulates access to the NVS and provides a standardized AUI adapter interface for outputting read values and receiving values to be stored. Typical applications include embedded systems that need to persistently store configuration or status data.

@@ -1,5 +1,6 @@
 # Exercise_215_AI: Standard IEC 61131-3 AI_FB_CTD (Adapter Version, Down Counter, INT) with Terminal Output
 ![Uebung_215_AI_network](./Uebung_215_AI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a down counter according to IEC 61131-3 with an adapter interface (AI_FB_CTD) and outputs the current counter value to a terminal. The counter is decremented and loaded via digital inputs.

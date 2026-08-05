@@ -1,5 +1,6 @@
 # Exercise_072_AUI: Outputting GBSD and WBSD to a UT (Adapter Version)
 ![Uebung_072_AUI_network](./Uebung_072_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates how to read the vehicle-based speed (Ground-Based Machine Speed – GBSD) and the wheel-based speed (Wheel-Based Machine Speed – WBSD) of an ISOBUS TECU (Tractor Electronic Control Unit) via an interface adapter (AUI) and display it on a Universal Terminal (UT).

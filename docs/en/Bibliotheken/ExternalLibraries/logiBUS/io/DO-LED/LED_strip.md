@@ -1,5 +1,6 @@
 # LED_strip
 ![LED_strip](./LED_strip.svg)
+
 * * * * * * * * * *
 ## Introduction
 LED_strip is a GlobalConstants function block that provides global constants for controlling LED strips. The block defines an output variable for controlling LED strips and is part of the logiBUS system.

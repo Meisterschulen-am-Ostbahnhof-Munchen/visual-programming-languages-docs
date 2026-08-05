@@ -1,5 +1,6 @@
 # IA_COGSOGRapidUpdate
 ![IA_COGSOGRapidUpdate](./IA_COGSOGRapidUpdate.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **IA_COGSOGRapidUpdate** serves as an ISOBUS adapter for the NMEA 2000 PGN 129026 messages "Course Over Ground (COG)" and "Speed Over Ground (SOG)" with support for rapid updates. It decouples the ISOBUS communication and provides the received navigation data and a timeout status via standardized adapter interfaces. The block was developed under the Eclipse Public License 2.0 and is optimized for use in agricultural control systems (TECU).

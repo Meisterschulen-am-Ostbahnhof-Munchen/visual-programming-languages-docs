@@ -53,6 +53,7 @@ Der Programmablauf wird durch Adapter-Verbindungen (`AdapterConnections`) realis
     -   Der aktuelle Zustand des Flip-Flops wird somit direkt an den physischen Ausgang `Output_Q1` weitergeleitet.
 
 **Lernziele:**
+
 -   Verständnis von bistabilen Elementen (RS-Flip-Flop).
 -   Umgang mit Adapter-Verbindungen (AX/IXA/QXA) in 4diac zur Vereinfachung des Signalflusses.
 -   Verknüpfung von Hardware-IOs mit logischen Funktionen.

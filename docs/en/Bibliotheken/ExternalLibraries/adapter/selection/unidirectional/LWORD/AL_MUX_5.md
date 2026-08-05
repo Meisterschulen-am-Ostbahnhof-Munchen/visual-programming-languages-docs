@@ -1,5 +1,6 @@
 # AL_MUX_5
 ![AL_MUX_5](./AL_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AL_MUX_5** is a generic multiplexer function block that allows one of five analog or logic adapter inputs (IN1 to IN5) to be switched to a common output (OUT). The active channel is selected via the index parameter K. The block is designed for use in industrial control systems and is based on the IEC 61499-2 standard.

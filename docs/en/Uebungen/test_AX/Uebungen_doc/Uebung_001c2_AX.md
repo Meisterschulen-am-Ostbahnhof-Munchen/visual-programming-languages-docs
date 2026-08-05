@@ -1,5 +1,6 @@
 # Exercise_001c2_AX: DigitalInput_I1 negated to DigitalOutput_Q1 --> Input query on boot.
 ![Uebung_001c2_AX_network](./Uebung_001c2_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the negation of a digital input signal to a digital output using a logic negation adapter. Particular emphasis is placed on the initial behavior after the controller boots: event feedback ensures that the output immediately assumes the correct negated state of the input.

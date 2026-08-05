@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_060`. This is a high-level exercise for professional ISOBUS applications in the field of precision farming.
 ## 🎧 Podcast
 ![Uebung_060_network](./Uebung_060_network.svg)
+
 * [Automation Decoded: Controlling, Steering, Regulating – The Invisible Language of Technology (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
 
 ----

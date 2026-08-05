@@ -1,5 +1,6 @@
 # UDINT_AUDI_AX_SEL
 ![UDINT_AUDI_AX_SEL](./UDINT_AUDI_AX_SEL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **UDINT_AUDI_AX_SEL** implements a binary selection between two input values. The selection is performed via an adapter (type `AX`), which provides an external control signal. Depending on the adapter's state, either the value at input `IN0` or `IN1` is passed to output `OUT`.

@@ -1,6 +1,7 @@
 # E_MERGE
 ![E_MERGE](https://user-images.githubusercontent.com/69573151/210802574-4e7f467e-3b86-4cfe-9a43-715417adb081.png)
 ![E_MERGE_ecc](./E_MERGE_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **E_MERGE** is a fundamental function block of the IEC 61499 standard that combines multiple event streams into a single output. This logical OR operation of events is essential for control logic in industrial automation systems.

@@ -1,5 +1,6 @@
 # GET_UDINT
 ![GET_UDINT](./GET_UDINT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **GET_UDINT** function block reads the current value of a variable of type **UDINT** declared as InOut and provides it as a buffered output. Buffering ensures that the output value remains stable during a cycle, even if the source data changes later.

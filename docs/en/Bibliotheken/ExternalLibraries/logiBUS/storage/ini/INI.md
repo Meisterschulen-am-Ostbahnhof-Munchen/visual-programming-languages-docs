@@ -1,5 +1,6 @@
 # INI
 ![INI](./INI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **INI** function block is used for the secure reading and writing of configuration data in a `settings.ini` file. It allows access to values via a section and key name and provides both initialization and read/write operations as separate events. Its use of generic data types (`ANY`) makes it flexible.

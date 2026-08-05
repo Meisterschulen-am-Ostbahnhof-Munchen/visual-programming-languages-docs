@@ -38,6 +38,7 @@ Die Übung vermittelt den Umgang mit zyklischen Ereignissen, Ereignis‑Splittin
 7. **Ausgabe**: Das Ereignis `EO` von `E_T_FF` wird zum `REQ`‑Eingang von `DigitalOutput_Q1` geführt. Gleichzeitig wird der Datenwert `Q` (0 oder 1) an den `OUT`‑Eingang der Ausgangsbaugruppe übergeben. Bei jedem Takt wird der Ausgang Q1 entsprechend gesetzt.
 
 **Lernziele**:  
+
 - Verständnis von zyklischen Ereignissen (`E_CYCLE`)  
 - Nutzung eines Toggle‑Flipflops (`E_T_FF`)  
 - Ereignis‑Vervielfachung und Zusammenführung (`E_SPLIT_3`, `E_MERGE_3`)  
@@ -47,6 +48,7 @@ Die Übung vermittelt den Umgang mit zyklischen Ereignissen, Ereignis‑Splittin
 **Vorkenntnisse**: Grundlagen der IEC‑61499‑Ereigniskette, einfache Verbindungen zwischen Funktionsbausteinen  
 
 **Hinweise zum Start**:  
+
 - Die Übung verwendet die logiBUS‑Hardware‑Schnittstelle – stellen Sie sicher, dass die Eingänge I1 und I2 sowie der Ausgang Q1 korrekt angeschlossen sind.  
 - Die Taster müssen im **Single‑Click**‑Modus konfiguriert sein.  
 - Nach dem Aktivieren von E_CYCLE (Start) blinkt Q1 solange, bis der Stopp‑Taster betätigt wird.

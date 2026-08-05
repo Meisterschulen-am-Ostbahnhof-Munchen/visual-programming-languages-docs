@@ -1,5 +1,6 @@
 # AIS_DEMUX_2
 ![AIS_DEMUX_2](./AIS_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AIS_DEMUX_2** function block is a generic AIS demultiplexer for the 4diac IDE. It allows an incoming AIS signal to be routed to one of two outputs, controlled by an index. The block is designed for use with the unidirectional AIS adapter and is used in agricultural technology.

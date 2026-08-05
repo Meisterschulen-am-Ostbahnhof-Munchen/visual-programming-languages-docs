@@ -32,14 +32,17 @@ Keine (die Daten werden über die Plug-Adapter `OUT` und `VALID` gesendet).
 ### **Adapter**
 
 **IN (Socket)**
+
 - **E1**: Ereigniseingang – löst die Verarbeitung eines neuen Byte-Wertes aus.
 - **D1**: Dateneingang – das zu verarbeitende Byte (z.B. ein Feldbus-Datagramm).
 
 **OUT (Plug)**
+
 - **E1**: Ereignisausgang – wird nach erfolgreicher Spiegelung eines gültigen Signals aktiviert.
 - **D1**: Datenausgang – das gespiegelte Byte-Signal (nur bei gültigem Wert).
 
 **VALID (Plug)**
+
 - **E1**: Ereignisausgang – wird bei jedem Verarbeitungsdurchlauf aktiviert, unabhängig von der Gültigkeit.
 - **D1**: Datenausgang (BOOL) – `TRUE`, wenn das aktuell verarbeitete Signal gültig ist; sonst `FALSE`.
 

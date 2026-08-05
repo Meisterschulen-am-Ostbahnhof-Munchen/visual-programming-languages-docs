@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_035a3_AX` based on the provided data.
 # Exercise_035a3_AX: Traffic Light System Austria (AX) with Flashing Indicators
 ![Uebung_035a3_AX_network](./Uebung_035a3_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a traffic light system based on the Austrian model ("Traffic Light System Austria (AX) with Flashing Indicators"). Unlike standard traffic light systems, this sequence includes the "green-flashing" phase before changing to yellow, as well as the "red-yellow" phase before changing to green. Control is achieved via a sequential function block, which is triggered by a push button.

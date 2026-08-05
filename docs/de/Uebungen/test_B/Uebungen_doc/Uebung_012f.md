@@ -41,6 +41,7 @@ Der Ablauf ist ereignisgesteuert:
 4. **Signalweitergabe**: Die Ereignisausgänge `SETO` und `GETO` des NVS werden zum äußeren Ausgang `IND` durchgereicht, sodass die übergeordnete Ebene über Änderungen informiert wird.
 
 **Datenverbindungen**:
+
 - `stObj` (extern) → `NumericValue_PHYS.stObj` (Konfiguration des physikalischen Objekts)
 - `KEY` (extern) → `NVS.KEY` (Speicherschlüssel)
 - `NumericValue_PHYS.rPhys` → `NVS.VALUE` (zu speichernder Wert)

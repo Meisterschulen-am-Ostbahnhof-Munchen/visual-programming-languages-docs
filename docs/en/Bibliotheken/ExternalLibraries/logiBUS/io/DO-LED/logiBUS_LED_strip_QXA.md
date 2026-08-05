@@ -1,5 +1,6 @@
 # logiBUS_LED_strip_QXA
 ![logiBUS_LED_strip_QXA](./logiBUS_LED_strip_QXA.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **logiBUS_LED_strip_QXA** is a composite function block for controlling an LED strip via the logiBUS protocol. It encapsulates the communication with the hardware and enables color- and frequency-dependent control of individual outputs. This block is particularly suitable for use in agricultural technology, where flexible LED signaling is required.

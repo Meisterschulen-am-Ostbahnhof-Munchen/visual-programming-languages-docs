@@ -2,6 +2,7 @@
 The IEC 61499 standard defines a model for distributed industrial control systems. The central component of this model is the function block (FB). Unlike IEC 61131-3, an FB in IEC 61499 encapsulates not only data and algorithms, but also the **control of its execution**.
 ## Structure of a Function Block
 A function block always consists of two parts:
+
 1. **Interface:** The "shell" of the block.
 2. **Body:** The interior of the block (the implementation).
 

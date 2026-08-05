@@ -1,5 +1,6 @@
 # AUDI_AX_SEL
 ![AUDI_AX_SEL](./AUDI_AX_SEL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_AX_SEL** implements a binary selection between two data values. It accepts two input values, each set via separate events, and outputs the corresponding value upon a selection event controlled by an adapter. The block integrates a standardized IEC 61131-3 selector (F_SEL) and extends it with event-driven interfaces.

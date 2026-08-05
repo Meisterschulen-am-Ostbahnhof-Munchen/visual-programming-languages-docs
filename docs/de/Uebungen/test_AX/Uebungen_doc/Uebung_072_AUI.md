@@ -86,6 +86,7 @@ Die von den Adaptern bereitgestellten Geschwindigkeitsdaten werden zunächst mit
    Auf dem UT erscheinen zwei numerische Werte: die fahrzeugbasierte Geschwindigkeit (GBSD) und die radbasierte Geschwindigkeit (WBSD). Die Werte werden über die konfigurierten Objekt‑IDs im Variablenpool des TECU bereitgestellt.
 
 **Lernziele**:
+
 - Verständnis des AUI‑ und AUDI‑Interfacekonzepts in ISOBUS‑Applikationen.
 - Einsatz von unidirektionalen Adaptern zur Interface‑Konvertierung.
 - Verbindung von TECU‑Ausgängen mit UT‑Anzeigebausteinen.

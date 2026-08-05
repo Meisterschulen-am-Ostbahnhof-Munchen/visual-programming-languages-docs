@@ -1,5 +1,6 @@
 # Exercise_002a4b: DigitalInput_I1/_I2 with AND_BOOL and Negate on DigitalOutput_Q1
 ![Uebung_002a4b_network](./Uebung_002a4b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the basic linking of digital inputs with an **AND** function block, as well as the negation of an input signal. The result is routed to a digital output.

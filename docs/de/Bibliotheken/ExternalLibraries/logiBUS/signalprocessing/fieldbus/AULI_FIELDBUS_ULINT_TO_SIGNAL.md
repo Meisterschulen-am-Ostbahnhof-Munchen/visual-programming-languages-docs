@@ -50,6 +50,7 @@ Der Baustein arbeitet intern mit zwei Subbausteinen:
 2. **E_D_FF** – Ein flankengesteuertes D-Flipflop, das das Gültigkeitssignal synchron zum Ereignis des Konverters übernimmt.
 
 **Ablauf:**
+
 1. Ein Ereignis am Eingang `IN.E1` startet die Verarbeitung.
 2. Der Eingangswert `IN.D1` wird an den internen Konverter übergeben.
 3. Der Konverter berechnet den Ausgangswert `OUT` und das `VALID`-Signal.

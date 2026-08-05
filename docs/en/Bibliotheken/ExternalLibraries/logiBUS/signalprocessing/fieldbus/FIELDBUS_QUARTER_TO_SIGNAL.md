@@ -1,5 +1,6 @@
 # FIELDBUS_QUARTER_TO_SIGNAL
 ![FIELDBUS_QUARTER_TO_SIGNAL](./FIELDBUS_QUARTER_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `FIELDBUS_QUARTER_TO_SIGNAL` serves as a signal validation and pass-through block. It checks whether an incoming BYTE value `IN` is within a valid range and, if so, passes it unchanged to `OUT`. Additionally, a Boolean signal `VALID` is set, indicating the validity status of the output. This block is suitable for filtering fieldbus signals where certain values are marked as invalid or "don't care".

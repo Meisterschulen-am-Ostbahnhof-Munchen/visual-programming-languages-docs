@@ -1,5 +1,6 @@
 # AD_SHL
 ![AD_SHL](./AD_SHL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AD_SHL** performs a bitwise left shift of an input value. It is designed as a generic function block that communicates via adapter interfaces and supports any integer data type (ANY_INT). The actual shift operation is implemented internally by a predefined function block `F_SHL`.

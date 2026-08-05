@@ -1,5 +1,6 @@
 # Exercise_001c3: DigitalInput_I1 to DigitalOutput_Q1 --> Query input on boot.
 ![Uebung_001c3_network](./Uebung_001c3_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates reading a digital input (Input I1) and directly outputting it to a digital output (Output Q1) during the controller's startup.

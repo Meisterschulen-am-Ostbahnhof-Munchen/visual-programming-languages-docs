@@ -1,5 +1,6 @@
 # Q_GetAttribute
 ![Q_GetAttribute](https://user-images.githubusercontent.com/116869307/214147879-2749e8c2-364e-4335-9c0e-0445694831e4.png)
+
 * * * * * * * * * *
 ## Introduction
 The **Q_GetAttribute** is a standards-compliant function module for querying object attributes in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.58) specification for VT systems from version 4 onwards.

@@ -93,6 +93,7 @@ Ist `QI = FALSE` bei einem `INIT`-Ereignis, wird der FB deinitialisiert und beid
 | `DeInit`  | Deinitialisierung bei `INIT` mit `QI = FALSE`. Setzt alle Ausgänge auf `FALSE` und gibt `INITO`. |
 
 **Transitionen:**  
+
 - `START` → `Init` (bei `INIT` mit `QI = TRUE`)  
 - `Init` → `Neutral` (nach erstem `INPUT.E1`)  
 - `Neutral` → `UP` / `DOWN` (abhängig vom Eingangswert)  

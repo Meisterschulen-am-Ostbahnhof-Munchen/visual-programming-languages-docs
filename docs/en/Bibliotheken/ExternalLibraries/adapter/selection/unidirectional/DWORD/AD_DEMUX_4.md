@@ -1,6 +1,7 @@
 # AD_DEMUX_4
 No image available.
 ![AD_DEMUX_4](./AD_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AD_DEMUX_4` is a generic AD demultiplexer. It distributes an input received via a socket adapter to one of four output adapters. The selection of the active output is event-driven via an index.

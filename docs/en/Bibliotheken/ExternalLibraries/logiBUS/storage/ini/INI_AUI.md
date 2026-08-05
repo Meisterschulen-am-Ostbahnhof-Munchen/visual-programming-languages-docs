@@ -1,5 +1,6 @@
 # INI_AUI
 ![INI_AUI](./INI_AUI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `INI_AUI` is used to read and store **UINT data** (more precisely: `UDINT` values) from a `settings.ini` file. The parameters **Section** and **Key** determine which value is read. Additionally, a **Default Value** can be specified if no entry exists in the INI file. The function block offers both direct access via its inputs and an **Adapter Interface (AUI)** for unidirectional communication with other function blocks.

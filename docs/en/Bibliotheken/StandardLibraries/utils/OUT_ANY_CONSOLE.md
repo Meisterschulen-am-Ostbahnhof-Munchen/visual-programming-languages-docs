@@ -1,5 +1,6 @@
 # OUT_ANY_CONSOLE
 ![OUT_ANY_CONSOLE](https://user-images.githubusercontent.com/116869307/214155060-5060da47-97f7-475f-9a49-036c24119346.png)
+
 * * * * * * * * * *
 ## Introduction
 The **OUT_ANY_CONSOLE** function block is a universal debugging tool for outputting variable values to the system console, developed under the EPL 2.0 license (version 3.0).

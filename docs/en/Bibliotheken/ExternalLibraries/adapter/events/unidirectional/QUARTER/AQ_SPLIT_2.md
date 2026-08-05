@@ -1,5 +1,6 @@
 # AQ_SPLIT_2
 ![AQ_SPLIT_2](./AQ_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AQ_SPLIT_2` serves as a fan-out block. It distributes an incoming AQ (Analog Quantity) signal unidirectionally to two identical outputs. It thus implements a simple 1:2 signal multiplication for analog quantities.

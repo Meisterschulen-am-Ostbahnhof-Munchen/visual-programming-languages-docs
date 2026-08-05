@@ -1,5 +1,6 @@
 # SPLIT_AD_INTO_AW
 ![SPLIT_AD_INTO_AW](./SPLIT_AD_INTO_AW.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **SPLIT_AD_INTO_AW** is used to split a 32-bit DWORD value, received via a **AD** adapter (unidirectional), into two 16-bit WORD values and output them via two separate **AW** adapters (unidirectional). The splitting is event-driven, and the output data is stabilized by flip-flops until a new trigger arrives. The function block is implemented as a composite function block and internally uses the **SPLIT_DWORD_INTO_WORDS** function block as well as two **E_D_FF_ANY** flip-flops.

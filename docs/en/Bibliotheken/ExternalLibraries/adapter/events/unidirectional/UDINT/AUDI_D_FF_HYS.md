@@ -1,5 +1,6 @@
 # AUDI_D_FF_HYS
 ![AUDI_D_FF_HYS](./AUDI_D_FF_HYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUDI_D_FF_HYS` implements a data-triggered flip-flop (D-latch) with a hysteresis function. It serves to accept an incoming data value upon an event, with the hysteresis enabling switching behavior with a defined deadband. The block encapsulates the logic of the internal block `E_D_FF_ANY_HYS` and provides the interfaces via two unidirectional adapters of type `AUDI`.

@@ -74,6 +74,7 @@ Die Logik ist als Subapplikation aufgebaut und nutzt einen Adapter-basierten Dat
    - `LowSide_Treiber` wird über das ODER-Signal aktiviert und steuert den gemeinsamen Ausgang `Output_Q56`.
 
 **Lernziele**  
+
 - Verständnis des Interlock-Konzepts für Motor-Reversierung  
 - Anwendung eines Schutzzeit-Bausteins (`ILOCK_BLOCK_PROTECT_AX`)  
 - Arbeiten mit Adapterverbindungen und Subapplikationen in 4diac  

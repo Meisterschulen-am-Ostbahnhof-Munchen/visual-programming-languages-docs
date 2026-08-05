@@ -83,6 +83,7 @@ Die Steuerung erfolgt über Ereignis- und Datenverbindungen:
 4. Nach jedem Zähl- oder Reset-Vorgang wird der aktuelle CV-Wert auf dem Terminal (LogiBUS Utility) in physikalischer LREAL-Darstellung ausgegeben.
 
 **Lernziele:**  
+
 - Verwendung eines IEC 61131-3 Zählers (FB_CTU_LINT)  
 - Parametrierung von Voreinstellwerten  
 - Ereignis- und Datenfluss zwischen Funktionsbausteinen  

@@ -1,5 +1,6 @@
 # AUS_MUX_4
 ![AUS_MUX_4](./AUS_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AUS_MUX_4 is a generic function block (FB) according to IEC 61499, which serves as a multiplexer for four AUS adapter signals. An integer index K switches one of the four inputs (IN1..IN4) to the output (OUT). The block is suitable for modular control applications where signal selection is event-driven.

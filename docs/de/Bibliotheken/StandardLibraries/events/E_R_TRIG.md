@@ -13,12 +13,15 @@ Der **E_R_TRIG** (Rising Edge Trigger) ist ein grundlegender Funktionsbaustein n
 
 ### **Schnittstelle (Interface)**
 **Ereignis-Eingänge:**
+
 - `EI` (Event Input): Aktiviert die Flankenerkennung (mit `QI`-Wert verknüpft)
 
 **Ereignis-Ausgänge:**
+
 - `EO` (Event Output): Bestätigt eine erkannte steigende Flanke
 
 **Daten-Eingänge:**
+
 - `QI` (Query Input): Zu überwachendes Eingangssignal (BOOL)
 
 ### **Interne Struktur**

@@ -1,5 +1,6 @@
 # ADI_TO_AR
 ![ADI_TO_AR](./ADI_TO_AR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ADI_TO_AR** function block is a composite module that converts a DINT adapter (ADI) into a REAL adapter (AR). It acts as an intermediary between components that communicate via unidirectional adapters, performing a data type conversion from integer (DINT) to floating-point number (REAL).

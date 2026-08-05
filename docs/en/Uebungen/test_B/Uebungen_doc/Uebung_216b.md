@@ -1,5 +1,6 @@
 # Exercise_216b: Standard IEC 61131-3 FB_CTD_DINT (Down Counter, DINT) with Terminal Output (PHYS_LREAL)
 ![Uebung_216b_network](./Uebung_216b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **down counter (CTD)** according to IEC 61131-3 with the data type `DINT` and a terminal output of the current count value as a physical quantity (`PHYS_LREAL`). The counter is controlled via two digital inputs (**CD** = Count Down, **LD** = Load) and outputs the counter signal (`Q`) to a digital output. Simultaneously, the current counter value is visualized on a terminal via a numeric output block.

@@ -1,5 +1,6 @@
 # AIS_MUX_4
 ![AIS_MUX_4](./AIS_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_MUX_4** is a generic AIS multiplexer with four inputs. It selects one of the four AIS adapter inputs (`IN1`–`IN4`) based on an index value `K` (0–3) and forwards its data via the adapter output `OUT`. The block is controlled by the event `REQ`.

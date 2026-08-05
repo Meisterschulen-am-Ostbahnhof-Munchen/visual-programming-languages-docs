@@ -1,6 +1,7 @@
 # AR_ADD_4
 ![AR_ADD_4](./AR_ADD_4.svg)
 *Note: A graphical symbol for the function block is not available.*
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_ADD_4** is a generic function block for the arithmetic addition of multiple values. It is designed according to the IEC 61499-2 standard and allows the flexible processing of up to four additive operands via adapter interfaces. The function block is typically used in automation systems where numerical summation of multiple signals is required.

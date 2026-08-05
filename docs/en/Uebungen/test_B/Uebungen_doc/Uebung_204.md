@@ -1,5 +1,6 @@
 # Exercise_204: Interlock: ILOCK_CONFLICT_TRIP (Trip on conflict with reset)
 ![Uebung_204_network](./Uebung_204_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an interlock function with conflict detection and trip triggering, which can be reset. It demonstrates the typical use of an interlock function block to prevent simultaneous, conflicting control signals (e.g., up/down movement). In the event of a conflict, the ILOCK_CONFLICT_TRIP generates a trip (fault output) and blocks the outputs until an explicit reset signal is received.

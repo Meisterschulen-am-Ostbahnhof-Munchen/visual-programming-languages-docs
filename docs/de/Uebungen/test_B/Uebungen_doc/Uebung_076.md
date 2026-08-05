@@ -41,6 +41,7 @@ Diese Übung implementiert eine Funktion zur Verarbeitung einer Maschinengeschwi
 Der Ablauf erfolgt rein intern innerhalb des Subapplikationstyps (keine äußeren Schnittstellen). Die Verbindungen zwischen den Funktionsbausteinen sind wie folgt:
 
 **Ereignisverbindungen**:
+
 1. `I_MSS.IND` → `COMPOUND_SCALE.REQ`  
    Sobald ein neuer MSS-Wert anliegt, wird die Skalierung angestoßen.
 
@@ -48,6 +49,7 @@ Der Ablauf erfolgt rein intern innerhalb des Subapplikationstyps (keine äußere
    Nach abgeschlossener Skalierung wird der ausgegebene Wert zum UT gesendet.
 
 **Datenverbindungen**:
+
 1. `I_MSS.SELECTEDMACHINESPEED` → `COMPOUND_SCALE.IN`  
    Der rohe Maschinengeschwindigkeitswert (UINT) wird an den Skalierungsbaustein weitergeleitet.
 

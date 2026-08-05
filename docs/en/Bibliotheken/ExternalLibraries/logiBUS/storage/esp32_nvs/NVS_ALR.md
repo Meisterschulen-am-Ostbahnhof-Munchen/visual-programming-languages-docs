@@ -1,5 +1,6 @@
 # NVS_ALR
 ![NVS_ALR](./NVS_ALR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **NVS_ALR** is used to load and store values of type `LREAL` in non-volatile storage (NVS) using a key. It is specifically designed for connection via the unidirectional **ALR adapter**. The block combines an initialization phase, in which the memory contents are read, with a subsequent read and write operation via the adapter.

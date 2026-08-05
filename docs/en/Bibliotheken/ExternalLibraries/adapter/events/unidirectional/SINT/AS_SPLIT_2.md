@@ -1,5 +1,6 @@
 # AS_SPLIT_2
 ![AS_SPLIT_2](./AS_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_SPLIT_2** splits an incoming adapter signal of type `adapter::types::unidirectional::AS` into two identical output adapters. It is designed as a generic function block and is suitable for applications where an adapter data stream needs to be distributed to multiple downstream components without altering the original signal.

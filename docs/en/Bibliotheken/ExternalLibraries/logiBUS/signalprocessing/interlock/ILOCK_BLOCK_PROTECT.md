@@ -1,5 +1,6 @@
 # ILOCK_BLOCK_PROTECT
 ![ILOCK_BLOCK_PROTECT](./ILOCK_BLOCK_PROTECT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ILOCK_BLOCK_PROTECT` implements an interlock-protected direction control with an adjustable dead time. As soon as an active input (e.g., `EI_UP` with `DI_UP = TRUE`) is detected, it is prioritized, and all conflicting signals are ignored until the active input is reset. After resetting, a configurable protection time (`DT_PROTECT`) elapses before a new direction can be activated. This reliably prevents unwanted direction changes or short circuits.

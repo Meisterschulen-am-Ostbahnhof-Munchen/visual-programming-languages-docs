@@ -81,6 +81,7 @@ Der Ablauf wird über Ereignisverbindungen gesteuert:
    - Nach der Konvertierung löst `F_ULINT_TO_UDINT.CNF` die **Q_NumericValue**-Ausgabe aus, sodass der Zählerwert auf dem Terminal (Objekt `OutputNumber_N1`) erscheint.
 
 **Hinweise aus den Kommentaren**:
+
 - Es wird empfohlen, einen **E_D_FF** (Edge-Detection-Flipflop) zwischen den Eingängen und dem Zähler einzufügen, um die Anzahl der Ereignisaufrufe zu reduzieren (z. B. bei schnellen Signaländerungen).
 - Bei der Konvertierung `F_ULINT_TO_UDINT` kann es zu einem **Überlauf** kommen, da ULINT (64 Bit) in UDINT (32 Bit) umgewandelt wird. Der Wertebereich von ULINT ist größer; es werden nur die unteren 32 Bit übernommen. Dies ist bei der Wahl der Zählerwerte zu beachten.
 

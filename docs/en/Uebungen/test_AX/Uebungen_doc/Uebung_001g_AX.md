@@ -1,5 +1,6 @@
 # Exercise_001g_AX: DigitalInput_I1 negated with INIT and Delay to DigitalOutput_Q1
 ![Uebung_001g_AX_network](./Uebung_001g_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the processing of a digital input signal (I1) using negation and a time delay. After an initial event and a defined delay, the input value is negated and output to a digital output (Q1). Particular emphasis is placed on the behavior of the negation block, which returns a valid value (TRUE) even if the input has not yet been queried at system startup.

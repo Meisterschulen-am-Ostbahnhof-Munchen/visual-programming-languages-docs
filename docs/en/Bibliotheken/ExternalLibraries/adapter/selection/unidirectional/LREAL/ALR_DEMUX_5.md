@@ -1,5 +1,6 @@
 # ALR_DEMUX_5
 ![ALR_DEMUX_5](./ALR_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_DEMUX_5** is a generic demultiplexer for ALR data (adapter type `unidirectional`). It distributes the data present at its input `IN` to one of five outputs (`OUT1`...`OUT5`). The active output is selected via the index `K`.

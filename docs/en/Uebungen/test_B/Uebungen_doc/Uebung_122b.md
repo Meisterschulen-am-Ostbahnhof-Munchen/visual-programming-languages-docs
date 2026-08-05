@@ -1,6 +1,7 @@
 Here is the documentation page for exercise **Exercise_122b** based on the provided XML data.
 # Exercise_122b: ISOBUS Name Exercise
 ![Uebung_122b_network](./Uebung_122b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise ("ISOBUS Name Exercise") deals with the analysis and decoding of the **ISOBUS NAME** field according to ISO 11783. The goal is to retrieve information about participants (Control Functions - CFs) on the bus, extract their 64-bit names, and decompose these names into their individual components (such as manufacturer, device class, function, etc.).

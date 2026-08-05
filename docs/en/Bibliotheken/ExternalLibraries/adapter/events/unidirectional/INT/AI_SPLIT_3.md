@@ -1,5 +1,6 @@
 # AI_SPLIT_3
 ![AI_SPLIT_3](./AI_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_SPLIT_3** is a generic function block for duplicating an analog input signal (AI). It splits an incoming AI signal into three separate, identical output signals. The function block is entirely defined via adapters of type `AI` and operates purely in a data flow-oriented manner without its own event or data point interfaces.

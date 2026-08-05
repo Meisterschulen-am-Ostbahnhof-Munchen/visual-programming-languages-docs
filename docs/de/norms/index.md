@@ -17,6 +17,7 @@ Die Norm ist in mehrere Teile gegliedert, die unterschiedliche Aspekte abdecken:
 Normen sind in Deutschland klassischerweise über den **Beuth Verlag** (DIN) zu beziehen. Ein hilfreicher Tipp aus der Praxis ist der Bezug über die **EVS (Estonian Centre for Standardisation and Accreditation)**. Dort sind die identischen europäischen Normen oft deutlich kostengünstiger erhältlich (besonders die "3 User Licence").
 
 **Links:**
+
 * [Wikipedia (DE): EN 61499](https://de.wikipedia.org/wiki/EN_61499)
 * [Wikipedia (EN): IEC 61499](https://en.wikipedia.org/wiki/IEC_61499)
 * [Beuth Verlag: DIN EN 61499](https://www.beuth.de/de/norm/din-en-61499-1/209152944)

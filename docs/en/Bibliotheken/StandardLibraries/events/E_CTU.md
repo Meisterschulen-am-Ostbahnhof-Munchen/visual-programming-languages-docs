@@ -1,6 +1,7 @@
 # E_CTU
 ## 📺 Video
 ![E_CTU_ecc](./E_CTU_ecc.svg)
+
 * [The E_CTU upcounter](https://www.youtube.com/watch?v=2v4Ib2wZLGM)
 ## 🎧 Podcast
 * [The E_CTU in IEC 61499: Event-driven counting and why the minimalist solution is convincing in mechanical engineering](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-in-der-IEC-61499-Ereignisgesteuertes-Zhlen-und-warum-der-Minimalist-im-Maschinenbau-berzeugt-e3a9qnq)

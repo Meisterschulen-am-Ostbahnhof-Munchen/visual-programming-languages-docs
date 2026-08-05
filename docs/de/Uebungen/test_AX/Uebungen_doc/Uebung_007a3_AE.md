@@ -53,6 +53,7 @@ In dieser Übung wird ein Blinker realisiert, der einen digitalen Ausgang (Outpu
    - `OUT2` wird zum Eingang `OUT` von `DigitalOutput_Q1` geführt und schaltet den physischen Ausgang (Output_Q1).
 
 **Lernziele**  
+
 - Verständnis ereignisgesteuerter Ablaufsteuerung mit Timer, Flipflop und Umschalter.  
 - Umgang mit Adapter-Bausteinen in der 4diac-IDE.  
 

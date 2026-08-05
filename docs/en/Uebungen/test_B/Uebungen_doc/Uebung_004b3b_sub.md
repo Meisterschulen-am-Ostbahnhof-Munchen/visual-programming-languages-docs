@@ -1,5 +1,6 @@
 # Exercise_004b3b_sub: Sub-application for a toggle flip-flop with an external RESET input and a SET output for latching
 ![Uebung_004b3b_sub_network](./Uebung_004b3b_sub_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This sub-application implements a toggle flip-flop with an external RESET input and a SET output for latching. It serves as a reusable component for applications where an output state is toggled with each event and can be reset as needed.

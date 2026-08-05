@@ -1,6 +1,7 @@
 # BYTE_TO_ARR08X
 <img width="1315" height="219" alt="image" src="https://github.com/user-attachments/assets/9af3b849-ed33-437d-9688-1de0bee2a1f9" />
 ![BYTE_TO_ARR08X](./BYTE_TO_ARR08X.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `BYTE_TO_ARR08X` converts a single byte value into an array of eight Boolean values (BOOL). Each bit of the input byte is assigned to a separate element in the output array. This block is particularly useful for breaking down compact digital information stored in a byte for individual processing or visualization.

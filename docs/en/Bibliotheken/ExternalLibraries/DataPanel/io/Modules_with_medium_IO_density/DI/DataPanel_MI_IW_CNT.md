@@ -1,5 +1,6 @@
 # DataPanel_MI_IW_CNT
 ![DataPanel_MI_IW_CNT](./DataPanel_MI_IW_CNT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **DataPanel_MI_IW_CNT** is a service interface function block from the DataPanel family of HR Agrartechnik GmbH. It is used to acquire **pulse counter data** via the dedicated hardware inputs 7A and 8A of the underlying bus system. The block encapsulates the initialization, cyclic querying, and event-driven output of the counter values. Typical applications include agricultural machinery where pulse generators (e.g., speed, flow, or position sensors) need to be evaluated. The function block is designed for the IEC 61499-compliant 4diac IDE and uses the service interface patterns defined therein.

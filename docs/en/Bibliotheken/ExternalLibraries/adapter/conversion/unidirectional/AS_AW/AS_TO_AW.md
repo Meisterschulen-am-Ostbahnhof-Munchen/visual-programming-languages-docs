@@ -1,5 +1,6 @@
 # AS_TO_AW
 ![AS_TO_AW](./AS_TO_AW.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_TO_AW** is a composite block that converts a unidirectional **SINT** adapter (AS) into a unidirectional **WORD** adapter (AW). It serves as a bridge between different adapter types and enables the further processing of SINT signals as WORD data in a 4diac environment.

@@ -43,6 +43,7 @@ Die Blink-Frequenz wird dabei direkt vom Hardware-Treiber der Steuerung generier
 ## Anwendungsbeispiel
 
 **Zustands-Signalisierung einer Maschine**:
+
 *   **LED An**: Maschine ist bereit.
 *   **LED 1Hz**: Maschine arbeitet (Automatikbetrieb).
 *   **LED 5Hz**: Warnung oder Störung (Aufmerksamkeit erforderlich).

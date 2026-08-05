@@ -1,5 +1,6 @@
 # sequence_T_08_AX
 ![sequence_T_08_AX_ecc](./sequence_T_08_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 sequence_T_08_AX` is a variant of `sequence_T_08` that additionally uses adapters (`AX`) for the outputs. It controls a purely time-based sequence with 8 output states.

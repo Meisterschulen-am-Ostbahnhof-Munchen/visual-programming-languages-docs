@@ -1,6 +1,7 @@
 # LeftRight_AX
 ![LinksRechts_AX_ecc](./LinksRechts_AX_ecc.svg)
 *Note: An image of the function block is not available here.*
+
 * * * * * * * * * *
 ## Introduction
 The function block **LeftRight_AX** (from the package `logiBUS::utils::sequence::verteiler`) controls an alternating process with two directions (clockwise and counterclockwise rotation). It is designed to switch back and forth between two outputs, taking pause states into account.

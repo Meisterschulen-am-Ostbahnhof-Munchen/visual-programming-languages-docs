@@ -1,5 +1,6 @@
 # AW_TO_AD
 ![AW_TO_AD](./AW_TO_AD.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_TO_AD** is a composite function block (FB) that converts a unidirectional WORD adapter (AW) into a unidirectional DWORD adapter (AD). It serves as an interface converter and enables the connection of components that use different adapter types. The FB forwards events and data directly from the input to the output adapter, implicitly performing a type conversion from 16-bit WORD to 32-bit DWORD.

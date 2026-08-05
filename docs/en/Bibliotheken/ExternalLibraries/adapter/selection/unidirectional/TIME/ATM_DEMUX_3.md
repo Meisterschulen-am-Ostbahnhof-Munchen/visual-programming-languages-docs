@@ -1,5 +1,6 @@
 # ATM_DEMUX_3
 ![ATM_DEMUX_3](./ATM_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ATM_DEMUX_3** is a generic demultiplexer for unidirectional ATM data streams. It routes an incoming data stream to one of three outputs based on its index. The block is event-driven and suitable for on-demand data distribution in automation or communication systems.

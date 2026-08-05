@@ -1,6 +1,7 @@
 # DataPanel_MI_IW_FREQ
 ![DataPanel_MI_IW_FREQ](./DataPanel_MI_IW_FREQ.svg)
 *No image available.*
+
 * * * * * * * * * *
 ## Introduction
 The function block **DataPanel_MI_IW_FREQ** is a service interface function block (SIFB) that encapsulates access to a frequency input of a data panel (type 7A/8A). It is used for initialization, cyclic or event-driven querying, and asynchronous notification of frequency changes. The FB is part of a modular control environment for agricultural machinery (MI – machine interface).

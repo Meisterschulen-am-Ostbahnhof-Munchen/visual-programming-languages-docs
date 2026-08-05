@@ -1,5 +1,6 @@
 # AULI_SPLIT_5
 ![AULI_SPLIT_5](./AULI_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_SPLIT_5** serves as a generic splitter for the unidirectional AULI adapter type. It generates five identical output signals from a single incoming AULI signal, which can then be distributed to separate devices. The block is implemented as a generic FB and is parameterized for the Eclipse 4diac Core Framework using the attributes `GenericClassName` and `TypeHash`.

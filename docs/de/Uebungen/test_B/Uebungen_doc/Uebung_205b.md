@@ -83,6 +83,7 @@ Diese Übung zeigt die Realisierung einer **Motor-Umkehrverriegelung** mit Prior
 Die Übung 205b demonstriert eine industriegerechte Motor‑Umkehrschaltung mit **Prioritätsverriegelung** (`ILOCK_SWITCH_PROTECT`). Durch die integrierte **Schutzzeit** wird ein zu schnelles Umschalten zwischen Rechts‑ und Linkslauf unterbunden. Ein Low‑Side‑Treiber sorgt für die saubere Trennung der Versorgung. Der Einsatz von logiBUS‑ und IEC‑61131‑Bausteinen macht die Lösung hardwarenah und in SPS‑Projekten wiederverwendbar.
 
 **Lernziele:**  
+
 - Verriegelungskonzepte für Motorsteuerungen verstehen  
 - Umgang mit dem Funktionsbaustein `ILOCK_SWITCH_PROTECT`  
 - Anwendung von ODER‑Verknüpfungen zur Freigabe von Gemeinschaftsausgängen  

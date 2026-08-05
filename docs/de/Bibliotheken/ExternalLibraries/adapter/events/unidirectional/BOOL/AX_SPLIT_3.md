@@ -24,9 +24,11 @@ Der AX_SPLIT_3 ist ein generischer Funktionsblock, der einen AX-Adapter-Eingang 
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - **IN** - AX-Adapter (Socket) - Empfängt das eingehende AX-Signal
 
 **Ausgangsadapter:**
+
 - **OUT1** - AX-Adapter (Plug) - Erster Ausgangskanal
 - **OUT2** - AX-Adapter (Plug) - Zweiter Ausgangskanal
 - **OUT3** - AX-Adapter (Plug) - Dritter Ausgangskanal

@@ -1,5 +1,6 @@
 # AW_SPLIT_4
 ![AW_SPLIT_4](./AW_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AW_SPLIT_4` distributes an incoming AW adapter (unidirectional) to four identical AW output adapters. The block is designed generically and can be used with different AW types.

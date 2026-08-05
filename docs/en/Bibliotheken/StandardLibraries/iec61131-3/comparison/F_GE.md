@@ -29,6 +29,7 @@ In industrial processes, it is often necessary to monitor limit values. The GE o
 IF GE(Messwert, Schwellenwert) THEN
 // Alarm auslösen oder Korrekturmaßnahmen einleiten
 END_IF
+
 2. **Controlling Production Processes:**
 
 In a production process, the GE operator can be used to determine whether a specific quantity of material has been produced. If the produced quantity is greater than or equal to the target quantity, the process can be stopped:
@@ -36,6 +37,7 @@ In a production process, the GE operator can be used to determine whether a spec
 IF GE(ProduzierteMenge, ZielMenge) THEN
 // Produktionsprozess stoppen
 END_IF
+
 3. **Temperature Control:**
 
 In a heating system, the GE operator can be used to check whether the current temperature has reached or exceeded the setpoint. If so, the heating can be switched off:
@@ -43,6 +45,7 @@ In a heating system, the GE operator can be used to check whether the current te
 IF GE(AktuelleTemperatur, SollTemperatur) THEN
 // Heizung abschalten
 END_IF
+
 4. **Energy Consumption Monitoring:**
 
 The GE Operator can also be used to monitor energy consumption. If consumption exceeds a certain threshold, energy-saving measures can be initiated:

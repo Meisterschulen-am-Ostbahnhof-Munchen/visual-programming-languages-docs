@@ -1,5 +1,6 @@
 # ALR_D_FF_HYS_TMIN
 ![ALR_D_FF_HYS_TMIN](./ALR_D_FF_HYS_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_D_FF_HYS_TMIN** implements a clock-controlled D-latch (flip-flop) with adjustable hysteresis for data acquisition and a minimal time delay between successive output events. It processes an analog or Boolean value via an adapter input and outputs the buffered value via an adapter output. The hysteresis prevents unintended switching due to fluctuating input values, while the minimum time (Tmin) limits the event frequency at the output.

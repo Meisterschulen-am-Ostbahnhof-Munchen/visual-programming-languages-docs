@@ -30,6 +30,7 @@ Keine Datenausgänge vorhanden.
 
 ### **Adapter**
 **Plug (Ausgang):**
+
 - **OUT** – Typ: `AW` (unidirektionaler Adapter)  
   Liefert den Wert des durch K ausgewählten Eingangs.
 

@@ -43,6 +43,7 @@ Im Netzwerk befindet sich ein Kommentarbaustein mit dem Inhalt **"TODO"**. Dies 
 2.  Eine Ereignis-Verbindung (Event Connection), um den `E_MOVE` Baustein zu triggern (Eingang `EI`), damit dieser den Datenwert übernimmt und weitergibt.
 
 **Lernziele:**
+
 *   Verständnis des Unterschieds zwischen reinen Datenfunktionen (`F_MOVE`) und ereignisgesteuerten Bausteinen (`E_MOVE`).
 *   Korrekte Verdrahtung von Datentypen (hier `INT`).
 

@@ -1,5 +1,6 @@
 # ADI_DEMUX_2
 ![ADI_DEMUX_2](./ADI_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The ADI_DEMUX_2 is a generic demultiplexer function block that switches a data signal arriving via an ADI adapter (unidirectional) to one of two output adapters. The target output is selected using an index.

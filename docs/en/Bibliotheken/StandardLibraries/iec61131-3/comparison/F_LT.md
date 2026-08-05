@@ -29,6 +29,7 @@ In industrial processes, it is often necessary to monitor limit values. The LT o
 IF LT(Messwert, Schwellenwert) THEN
 // Aktion ausführen, wenn der Messwert den Schwellenwert unterschreitet
 END_IF
+
 2. **Controlling Production Processes:**
 
 In a production process, the LT operator can be used to determine whether a specific quantity of material has been produced. If the produced quantity is less than the target quantity, the process can continue:
@@ -36,6 +37,7 @@ In a production process, the LT operator can be used to determine whether a spec
 IF LT(ProduzierteMenge, ZielMenge) THEN
 // Produktionsprozess fortsetzen
 END_IF
+
 3. **Temperature Control:**
 
 In a cooling system, the LT operator can be used to check if the current temperature is lower than the setpoint temperature. If so, cooling can remain active:
@@ -43,6 +45,7 @@ In a cooling system, the LT operator can be used to check if the current tempera
 IF LT(AktuelleTemperatur, SollTemperatur) THEN
 // Kühlung weiter aktivieren
 END_IF
+
 4. **Energy Consumption Monitoring:**
 
 The LT operator can also be used to monitor energy consumption. If consumption falls below a certain threshold, energy-saving measures can be deactivated:

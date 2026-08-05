@@ -1,5 +1,6 @@
 # AUI_AX_SEL_REQ
 ![AUI_AX_SEL_REQ](./AUI_AX_SEL_REQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_AX_SEL_REQ** is a binary selector block controlled by an event input (REQ). Based on a selection criterion provided by an **adapter** (G), it selects between two input values (IN0, IN1) and outputs the result at output OUT. The block serves as a compact, reusable component for signal selection in automation applications and extends the functionality of a simple toggle switch with event-driven operation.

@@ -1,5 +1,6 @@
 # AUI_DEMUX_5
 ![AUI_DEMUX_5](./AUI_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_DEMUX_5** is a generic demultiplexer for the AUI adapter protocol (unidirectional). It forwards an incoming AUI data stream to one of five output adapters. The destination output is selected via the index `K` after a request at the event input `REQ`.

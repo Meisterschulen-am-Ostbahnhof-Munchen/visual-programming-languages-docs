@@ -1,5 +1,6 @@
 # AR_MUX_3
 ![AR_MUX_3](./AR_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AR_MUX_3` is a generic 3-way multiplexer for the adapter type `adapter::types::unidirectional::AR`. Based on an index `K`, it selects one of three inputs (IN1, IN2, IN3) and forwards its signal to the output OUT. The block is event-controlled and is suitable for dynamically switching data sources in IEC 61499-based controllers.

@@ -1,5 +1,6 @@
 # ALI_MUX_3
 ![ALI_MUX_3](./ALI_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_MUX_3** is a generic multiplexer for ALI data streams. It selects one of three unidirectional ALI inputs (IN1, IN2, IN3) and outputs it via the ALI output (OUT). The selection is made using the index K, which is set via the event input REQ. The block is provided as a generic FB and can be used in Eclipse 4diac.

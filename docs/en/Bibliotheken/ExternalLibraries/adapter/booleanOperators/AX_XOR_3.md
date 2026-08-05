@@ -21,11 +21,13 @@ The AX_XOR_3 function block is a generic function block for calculating the Bool
 
 ### **Adapters**
 **Sockets (Inputs):**
+
 - **IN1**: XOR input 1 (Adapter type: unidirectional::AX)
 - **IN2**: XOR input 2 (Adapter type: unidirectional::AX)
 - **IN3**: XOR input 3 (Adapter type: unidirectional::AX)
 
 **Plugs (Outputs):**
+
 - **OUT**: XOR result (Adapter type: unidirectional::AX)
 
 ## Functionality

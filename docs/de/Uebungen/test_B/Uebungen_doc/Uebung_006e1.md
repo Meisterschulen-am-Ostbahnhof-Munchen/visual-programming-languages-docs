@@ -63,6 +63,7 @@ Das Netzwerk verknüpft die physischen Ein- und Ausgänge mit der logischen SR-F
     *   Nach erfolgter Berechnung im Flip-Flop (Event `CNF`) wird der Ausgangsbaustein getriggert (`REQ`), um den physischen Ausgang zu aktualisieren.
 
 **Lernziele:**
+
 *   Verständnis von bistabilen Kippstufen (Flip-Flops).
 *   Unterscheidung zwischen Setzen und Rücksetzen.
 *   Verknüpfung von Event- und Datenflüssen zwischen IO-Bausteinen und Logik-Bausteinen.

@@ -1,5 +1,6 @@
 # AUDI_DEMUX_3
 ![AUDI_DEMUX_3](./AUDI_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_DEMUX_3** is a generic demultiplexer for the unidirectional adapter type `AUDI`. It distributes an incoming adapter signal to one of three possible outputs, based on an index specified via the data input `K`. The block is controlled by an event at `REQ`.

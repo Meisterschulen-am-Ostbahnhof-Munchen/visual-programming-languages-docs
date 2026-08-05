@@ -1,5 +1,6 @@
 # A2X_SPLIT_9
 ![A2X_SPLIT_9](./A2X_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **A2X_SPLIT_9** is a generic function block that splits one incoming A2X adapter (socket) into nine separate A2X output adapters (plugs). It enables the star topology distribution of an A2X signal to up to nine independent receivers without requiring any dedicated logic or state machines.

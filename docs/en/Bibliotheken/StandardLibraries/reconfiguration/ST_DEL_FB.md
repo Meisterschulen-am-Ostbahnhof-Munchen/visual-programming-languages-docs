@@ -1,5 +1,6 @@
 # ST_DEL_FB
 ![ST_DEL_FB](https://user-images.githubusercontent.com/116869307/214154809-ea8eaf7b-a851-4b0e-9cc9-2d7cdd14fcbd.png)
+
 * * * * * * * * * *
 ## Introduction
 The ST_DEL_FB function block is used to delete a function block instance of a specific function block type. This function block belongs to the category of reconfiguration services and enables the dynamic management of function block instances at runtime.

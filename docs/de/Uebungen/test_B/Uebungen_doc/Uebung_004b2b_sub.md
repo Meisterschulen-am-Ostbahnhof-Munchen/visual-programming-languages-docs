@@ -57,6 +57,7 @@ Diese Übung implementiert ein **Toggle-Flip-Flop** (auch bekannt als Umschaltgl
   `E_SR.Q` → `Q` (äußerer Ausgang)
 
 **Lernziele**:
+
 - Verständnis des Toggle-Flip-Flop-Verhaltens.
 - Kennenlernen der Funktionsbausteine `E_SWITCH` (ereignisgesteuerter Multiplexer) und `E_SR` (Set/Reset-Speicher).
 - Erstellung und Nutzung einer Subapplikation in 4diac-IDE.

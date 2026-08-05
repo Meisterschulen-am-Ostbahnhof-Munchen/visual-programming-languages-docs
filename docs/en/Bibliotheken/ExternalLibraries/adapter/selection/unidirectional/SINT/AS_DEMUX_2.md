@@ -1,5 +1,6 @@
 # AS_DEMUX_2
 ![AS_DEMUX_2](./AS_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AS_DEMUX_2** (Generic FB) is an application-neutral, event-driven demultiplexer for adapters of type `adapter::types::unidirectional::AS`. It distributes an incoming data value (via the **IN** socket) to one of two possible output adapters (**OUT1** or **OUT2**). The destination is selected via the data input **K**.

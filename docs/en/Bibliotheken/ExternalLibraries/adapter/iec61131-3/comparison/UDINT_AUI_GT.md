@@ -1,5 +1,6 @@
 # UDINT_AUI_GT
 ![UDINT_AUI_GT](./UDINT_AUI_GT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **UDINT_AUI_GT** implements a greater-than comparison function. It compares a directly passed input value (`IN1`) with a second value provided via an adapter (`IN2`). The result of the comparison is output via an output adapter (`OUT`). The function block is classified as a standard comparison function according to IEC 61131-3.

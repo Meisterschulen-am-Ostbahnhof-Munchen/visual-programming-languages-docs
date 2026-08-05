@@ -1,5 +1,6 @@
 # ILOCK_T_FF
 ![ILOCK_T_FF](./ILOCK_T_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ILOCK_T_FF** is a composite function block (FB) that implements a lockable toggle flip-flop (T flip-flop). It extends a simple T flip-flop with a bidirectional interlock interface, allowing multiple blocks to be chained together in an interlock chain. This block is particularly suitable for safety-related control systems where states that have been switched must be blocked and passed on to subsequent elements.

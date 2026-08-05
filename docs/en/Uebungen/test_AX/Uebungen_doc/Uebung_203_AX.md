@@ -1,5 +1,6 @@
 # Exercise_203_AX: Interlock: ILOCK_SWITCH_AX (Switching Priority via Adapter)
 ![Uebung_203_AX_network](./Uebung_203_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an **interlock function block with priority switching** (ILOCK_SWITCH_AX). Two digital inputs (Input_I1, Input_I2) control two digital outputs (Output_Q1, Output_Q2) via an adapter-based interlock block. The interlock ensures that only one output can be active at a time – in the event of simultaneous input signals, a defined priority mechanism takes effect. Communication with the peripherals is via logiBUS adapter interfaces.

@@ -1,5 +1,6 @@
 # AI_MUX_3
 ![AI_MUX_3](./AI_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_MUX_3** is a generic analog multiplexer with three adapter inputs (IN1, IN2, IN3). Depending on the index K, one of these inputs is routed to the adapter output OUT. The block operates in an event-driven manner: A REQ event triggers the selection and is confirmed with CNF.

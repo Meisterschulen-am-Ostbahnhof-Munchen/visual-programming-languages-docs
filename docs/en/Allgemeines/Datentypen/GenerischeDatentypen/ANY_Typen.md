@@ -14,6 +14,7 @@ Types that represent a size and are suitable for arithmetic operations. A furthe
 
 ``{eval-rst}
 .. mermaid:: Diagramm_ANY_MAGNITUDE.mmd
+
 * **ANY_NUM**: Numeric types (integers and floating-point numbers).
 * **ANY_DURATION**: Duration types (`TIME`, `LTIME`).
 

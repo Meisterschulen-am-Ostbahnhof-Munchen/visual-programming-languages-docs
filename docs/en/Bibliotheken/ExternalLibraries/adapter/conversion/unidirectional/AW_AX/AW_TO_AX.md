@@ -1,5 +1,6 @@
 # AW_TO_AX
 ![AW_TO_AX](./AW_TO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The composite function block **AW_TO_AX** converts an **AW adapter** (WORD) into an **AX adapter** (BOOL). It checks whether the 16-bit value received via the AW adapter is non-zero and outputs the result as a Boolean signal via the AX adapter.

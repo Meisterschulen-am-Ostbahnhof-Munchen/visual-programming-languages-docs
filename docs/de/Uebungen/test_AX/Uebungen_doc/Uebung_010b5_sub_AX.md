@@ -50,6 +50,7 @@ Der Ablauf innerhalb dieser Sub-Applikation wird durch direkte Verbindungen und 
     - Diese Verbindung sorgt dafür, dass der Status oder die Befehle des Softkey-Bausteins (`IXA`) direkt an den Ausgangs-Baustein (`QXA`) übermittelt werden, ohne dass eine komplexe Einzelverdrahtung von Event- oder Datenleitungen notwendig ist.
 
 **Lernziele:**
+
 - Verständnis von Sub-Applikationen zur Kapselung von Logik.
 - Nutzung von Adapter-Verbindungen zur Vereinfachung von Signalflüssen zwischen kompatiblen Bausteinen (hier zwischen ISOBUS-Input und logiBUS-Output).
 - Parametrierung von generischen Bausteinen über SubApp-Schnittstellen.

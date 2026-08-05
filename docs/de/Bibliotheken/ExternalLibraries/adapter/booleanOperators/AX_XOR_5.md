@@ -26,6 +26,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 **Eingangsadapter:**
+
 - **IN1**: XOR-Eingang 1 (unidirektionaler AX-Adapter)
 - **IN2**: XOR-Eingang 2 (unidirektionaler AX-Adapter)
 - **IN3**: XOR-Eingang 3 (unidirektionaler AX-Adapter)
@@ -33,6 +34,7 @@ Keine direkten Daten-Ausgänge vorhanden.
 - **IN5**: XOR-Eingang 5 (unidirektionaler AX-Adapter)
 
 **Ausgangsadapter:**
+
 - **OUT**: XOR-Ergebnis (unidirektionaler AX-Adapter)
 
 ## Funktionsweise

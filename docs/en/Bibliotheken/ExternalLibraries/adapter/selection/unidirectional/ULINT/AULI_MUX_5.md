@@ -1,5 +1,6 @@
 # AULI_MUX_5
 ![AULI_MUX_5](./AULI_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_MUX_5** is a generic multiplexer that allows one of five AULI adapters (IN1 to IN5) to be selectively switched to the output adapter (OUT). The active channel is selected via the input parameter K (index). The block is triggered by an event at the REQ input and acknowledges the switchover with an event at the CNF output.

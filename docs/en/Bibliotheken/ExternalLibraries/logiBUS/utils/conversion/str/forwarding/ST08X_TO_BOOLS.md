@@ -1,6 +1,7 @@
 # ST08X_TO_BOOLS
 <img width="1020" height="423" alt="image" src="https://github.com/user-attachments/assets/4fc3f598-930f-475b-b552-aefad4b5bb28" />
 ![ST08X_TO_BOOLS](./ST08X_TO_BOOLS.svg)
+
 * * * * * * * * * *
 ## Introduction
 This function block extracts eight individual BOOL values from a single input structure of type `ST08X`. It allows for the easy decomposition of a bundled 8-BOOL structure into its individual components.

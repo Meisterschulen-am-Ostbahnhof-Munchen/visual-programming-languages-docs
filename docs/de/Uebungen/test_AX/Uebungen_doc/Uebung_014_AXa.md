@@ -48,11 +48,13 @@ Die Ereignisausgänge der Softkey-Bausteine sind wie folgt verbunden:
 Der Zustandsausgang `Q` von **AX_SR** wird über den Adapter `qVisible` an den Baustein **Q_ObjHideShow** weitergeleitet.
 
 **Ablauf**:
+
 1. Wenn der Bediener Softkey F1 loslässt, wird ein Set-Ereignis an AX_SR gesendet. Dadurch wird der Ausgang `Q` auf TRUE gesetzt.
 2. Der TRUE-Wert aktiviert den Baustein **Q_ObjHideShow**, wodurch der Container `Container_B` sichtbar wird.
 3. Beim Loslassen von Softkey F2 wird ein Reset-Ereignis an AX_SR gesendet. `Q` wird auf FALSE gesetzt, der Container wird unsichtbar.
 
 **Lernziele**:
+
 - Steuerung der Sichtbarkeit eines Objekts über zwei Softkeys.
 - Verwendung eines Set-Reset-Flipflops (AX_SR) zur Zustandspeicherung.
 - Verbindung von Ereignis- und Datenadaptern in einer Subapplikation.

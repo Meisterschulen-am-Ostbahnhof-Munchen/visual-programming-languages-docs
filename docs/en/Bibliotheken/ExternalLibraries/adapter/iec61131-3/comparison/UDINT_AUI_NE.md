@@ -1,5 +1,6 @@
 # UDINT_AUI_NE
 ![UDINT_AUI_NE](./UDINT_AUI_NE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **UDINT_AUI_NE** compares two values for inequality ("not equal"). It is classified as a standardized comparison function according to IEC 61131-3 and uses adapter interfaces for the second input and the result. The block is asynchronously event-driven: An event at the **REQ** input triggers the comparison, and the result is output via the output adapter.

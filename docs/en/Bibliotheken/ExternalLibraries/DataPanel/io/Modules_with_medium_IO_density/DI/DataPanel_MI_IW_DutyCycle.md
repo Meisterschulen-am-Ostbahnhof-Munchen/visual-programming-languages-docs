@@ -1,6 +1,7 @@
 # DataPanel_MI_IW_DutyCycle
 No image available.
 ![DataPanel_MI_IW_DutyCycle](./DataPanel_MI_IW_DutyCycle.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `DataPanel_MI_IW_DutyCycle` is a service interface function block (FB) for acquiring and processing frequency input signals (type 7A/8A) in the hardware system. It calculates the duty cycle from the incoming frequency signal and outputs it as a percentage. The block supports initial parameterization as well as event-driven outputs upon significant value changes or time-controlled queries.

@@ -1,5 +1,6 @@
 # AR_TO_AUI
 ![AR_TO_AUI](./AR_TO_AUI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_TO_AUI** is a composite function block (FB) that implements a uniform and bidirectional conversion from an AR adapter (REAL) to an AUI adapter (UINT). It encapsulates the type conversion and simplifies communication between components that use different data types via adapters.

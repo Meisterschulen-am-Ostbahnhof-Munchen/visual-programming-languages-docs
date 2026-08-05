@@ -1,5 +1,6 @@
 # AIWS_SPLIT_2
 ![AIWS_SPLIT_2](./AIWS_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIWS_SPLIT_2** is used to split an incoming AIWS adapter signal into two identical outputs. It is designed as a generic function block and allows multiple uses of an AIWS signal within the same application without requiring separate signal distribution programming.

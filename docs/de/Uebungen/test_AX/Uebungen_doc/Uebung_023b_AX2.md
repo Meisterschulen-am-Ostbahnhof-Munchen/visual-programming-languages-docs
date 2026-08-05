@@ -93,11 +93,13 @@ Durch die getrennte Set-Reset-Logik für Aus- und Einfahren jedes Zylinders wird
 Die Steuerung ist hardwarenah über die logiBUS-Digitalausgänge angebunden und kann direkt in einer 4diac-IDE-Umgebung getestet werden.  
 
 **Lernziele:**  
+
 - Verständnis von AX-SR-Bausteinen (Set-Reset mit unidirektionalen Adaptern)  
 - Ereignisgesteuerte Verknüpfung von Softkeys mit Aktoren  
 - Strukturierte Programmierung von Zylindersteuerungen in 4diac  
 
 **Voraussetzungen:**  
+
 - Grundkenntnisse in 4diac und IEC 61499  
 - Verfügbarkeit der Bibliotheken `isobus`, `logiBUS` und `adapter::events::unidirectional`
 

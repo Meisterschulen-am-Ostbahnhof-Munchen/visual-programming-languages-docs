@@ -1,5 +1,6 @@
 # AUS_D_FF_HYS_TMIN
 ![AUS_D_FF_HYS_TMIN](./AUS_D_FF_HYS_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUS_D_FF_HYS_TMIN** implements a data-triggered flip-flop (D flip-flop) with hysteresis and a minimum inter-event time. It is structured as a sub-application (FB network) that delegates the actual logic to the inner block `logiBUS::signalprocessing::hysteresis::E_D_FF_ANY_HYS_TMIN`. This block serves to latch an analog or discrete value with a predefined hysteresis band and simultaneously limit the event rate (via the adapter input) to a configurable minimum interval.

@@ -1,5 +1,6 @@
 # StringValue_AIWS
 ![StringValue_AIWS](./StringValue_AIWS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **StringValue_AIWS** is an input-service interface block for processing wide-string data (UTF-16) in an ISOBUS context. It provides an adapter-based interface through which external resources can input strings. The block acts as a wrapper for the internal block *StringValue_IWS* and offers a standardized initialization and request interface.

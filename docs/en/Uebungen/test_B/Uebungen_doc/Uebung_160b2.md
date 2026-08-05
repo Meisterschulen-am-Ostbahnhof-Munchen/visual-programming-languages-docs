@@ -2,6 +2,7 @@ Here is the documentation for exercise `Uebung_160b2` in the requested format.
 # Exercise_160b2: Motor Forward/Reverse Rotation Automation IX
 ![Uebung_160b2_network](./Uebung_160b2_network.svg)
 *(If a network view image is available, please insert it here)*
+
 * * * * * * * * * *
 ## Introduction
 
@@ -48,6 +49,7 @@ The circuit implements interlocked control of two outputs (e.g., motor left/righ
 * Output **Q56** is active as soon as either Q5 **OR** Q6 is active. This serves as an "operating indicator."
 
 **Summary Logic:**
+
 * **I1** starts Q5.
 * **I2** stops Q5 and starts (with a 50ms delay) Q6.
 * **I3** stops Q6.

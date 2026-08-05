@@ -111,6 +111,7 @@ Die Ereignis- und Datenflüsse sind wie folgt verknüpft:
 Durch Long-Press-Hold an den Tastern für Geschwindigkeit hoch/runter wird der Aufwärts-/Abwärtszähler inkrementiert bzw. dekrementiert. Ein Single-Click auf *Stop* setzt den Zähler zurück, *Full* lädt einen vollen Wert. Der Zählerstand wird über einen Splitter zum einen in ein PWM-Signal umgewandelt und ausgegeben, zum anderen auf dem Terminal angezeigt.
 
 **Lernziele**:  
+
 - Verständnis für die Kopplung von Ereignis- und Datenflüssen in 4diac  
 - Nutzung von Long-Press-Hold- und Single-Click-Ereignissen  
 - Adapterbasierte Datenwandlung und Signalverteilung  

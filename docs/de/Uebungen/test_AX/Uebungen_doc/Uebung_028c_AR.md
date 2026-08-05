@@ -72,6 +72,7 @@ Diese Übung demonstriert die Kalibrierung eines analogen Eingangs (AnalogInput_
 In dieser Übung wird ein analoger Eingang kalibriert, die Kalibrierungswerte werden persistent in INI-Dateien gespeichert und bei Wiederinbetriebnahme wieder geladen. Ein Hysterese-Regler wertet den kalibrierten Wert aus und schaltet einen digitalen Ausgang. Gleichzeitig wird der Wert auf einem Display angezeigt.
 
 **Lernziele**:
+
 - Kalibrierung eines analogen Sensors mittels Offset und Skalierung
 - Persistente Speicherung von Konfigurationswerten mit INI-Bausteinen
 - Anwendung eines Hysterese-Reglers

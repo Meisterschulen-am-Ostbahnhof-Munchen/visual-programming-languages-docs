@@ -1,5 +1,6 @@
 # SPLIT_AB_INTO_AQ
 ![SPLIT_AB_INTO_AQ](./SPLIT_AB_INTO_AQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SPLIT_AB_INTO_AQ` is used to split a data byte received via a `AB` adapter (byte) into four individual 2-bit quartets and output each of these via a `AQ` adapter (quarter). It encapsulates the decomposition of a byte into manageable partial values and makes them available for further processing via standardized unidirectional adapter interfaces.

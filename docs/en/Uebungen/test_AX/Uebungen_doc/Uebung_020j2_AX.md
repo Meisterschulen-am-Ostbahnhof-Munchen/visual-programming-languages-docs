@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_020j2_AX`, based on the provided XML data.
 # Exercise_020j2_AX: DigitalInput_I1 to DigitalOutput_Q1/2; 2xAX_TP; Pulse Shaping with SUB
 ![Uebung_020j2_AX_network](./Uebung_020j2_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the processing of signals using adapter connections (AX) within an IEC 61499 application. A digital input signal (`DigitalInput_I1`) is used to drive two separate digital outputs (`DigitalOutput_Q1` and `DigitalOutput_Q2`). The unique aspect of this exercise lies in the use of an encapsulated sub-application (`Uebung_020j2_AX_sub`) that splits the input signal and controls two independent pulse timers.

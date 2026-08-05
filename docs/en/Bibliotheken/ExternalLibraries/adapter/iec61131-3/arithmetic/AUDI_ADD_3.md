@@ -1,5 +1,6 @@
 # AUDI_ADD_3
 ![AUDI_ADD_3](./AUDI_ADD_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUDI_ADD_3` performs an arithmetic addition of three input values. It is a generic block that receives the values via adapter interfaces and outputs the result via another adapter. The function block is designed as part of the 4diac IDE for IEC 61499-2.

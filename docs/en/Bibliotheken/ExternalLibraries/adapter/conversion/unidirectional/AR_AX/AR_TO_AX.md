@@ -1,5 +1,6 @@
 # AR_TO_AX
 ![AR_TO_AX](./AR_TO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AR_TO_AX function block converts a REAL value received via an AR adapter into a BOOL value and outputs it via an AX adapter. The conversion is performed by comparing the REAL value with 0.0. If the value is not zero, TRUE is output; otherwise, FALSE. The block serves as a bridge between analog and digital adapter interfaces.

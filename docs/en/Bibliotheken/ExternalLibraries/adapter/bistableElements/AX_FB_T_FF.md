@@ -1,5 +1,6 @@
 # AX_FB_T_FF
 ![AX_FB_T_FF](./AX_FB_T_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_FB_T_FF** implements a clock-edge-triggered toggle flip-flop (T-FF).

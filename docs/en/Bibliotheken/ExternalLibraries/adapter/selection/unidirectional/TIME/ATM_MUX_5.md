@@ -1,5 +1,6 @@
 # ATM_MUX_5
 ![ATM_MUX_5](./ATM_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ATM_MUX_5** serves as a universal multiplexer for five unidirectional ATM data streams. Based on an index specified via the data input `K`, it selects one of the five inputs (`IN1` … `IN5`) and forwards its data to the output `OUT`. The selection is triggered by an event at the input `REQ` and acknowledged by an event at the output `CNF`.

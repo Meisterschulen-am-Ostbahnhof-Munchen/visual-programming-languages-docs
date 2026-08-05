@@ -1,5 +1,6 @@
 # AW_MUX_2
 ![AW_MUX_2](./AW_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_MUX_2** is a generic multiplexer for two adapter inputs. Based on an index value (`K`), it selects one of the two adapters (`IN1`, `IN2`) and forwards it to the output adapter (`OUT`). The block operates in an event-driven manner and is suitable for switching between two unidirectional adapter connections of type "AW".

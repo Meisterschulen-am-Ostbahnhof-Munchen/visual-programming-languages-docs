@@ -1,5 +1,6 @@
 # AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED
 ![AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED](./AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED** is used for the scalable mirroring of an unsigned integer value (ULINT) into a scaled signal value (LREAL), taking validity information into account. It is implemented as a composite block and combines the actual scaling logic with a synchronized valid output. The block is designed for use in fieldbus environments where raw data (e.g., sensor values) must be converted using a linear factor and offset, and the signal's validity must be reliably transmitted.

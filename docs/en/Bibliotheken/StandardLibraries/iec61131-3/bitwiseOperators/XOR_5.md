@@ -1,5 +1,6 @@
 # XOR_5
 ![XOR_5](https://user-images.githubusercontent.com/116869307/214144268-b188a2d3-cbc1-48b6-a90d-300b875efdc0.png)
+
 * * * * * * * * * *
 ## Introduction
 The XOR_5 function block is a generic function block for calculating the bitwise Boolean XOR operation with five inputs. It implements the exclusive OR operation for arbitrary bit data types according to the IEC 61131-3 standard.

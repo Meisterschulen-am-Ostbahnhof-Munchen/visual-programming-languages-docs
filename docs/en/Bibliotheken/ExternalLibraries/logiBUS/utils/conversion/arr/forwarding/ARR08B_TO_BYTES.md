@@ -1,6 +1,7 @@
 # ARR08B_TO_BYTES
 <img width="1089" height="362" alt="image" src="https://github.com/user-attachments/assets/35768584-80d4-464c-b258-e26d1456fd4f" />
 ![ARR08B_TO_BYTES](./ARR08B_TO_BYTES.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ARR08B_TO_BYTES` is used to decompose an 8-element byte array (`ARR08B`) into eight individual byte outputs. It is a utility block for data conversion and forwarding within control applications, especially when structured data from an array needs to be split into discrete signals.

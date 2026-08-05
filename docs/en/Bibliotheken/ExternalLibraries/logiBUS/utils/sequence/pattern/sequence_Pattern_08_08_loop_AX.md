@@ -1,6 +1,7 @@
 # sequence_Pattern_08_08_loop_AX
 [Image of sequence_Pattern_08_08_loop_AX, if available]
 ![sequence_Pattern_08_08_loop_AX_ecc](./sequence_Pattern_08_08_loop_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **sequence_Pattern_08_08_loop_AX** is a sequencer (step chain) that implements a configurable cam switch with 8 states (steps) and 8 outputs. It is designed to operate cyclically (loop behavior), transitioning from step 8 back to step 1.

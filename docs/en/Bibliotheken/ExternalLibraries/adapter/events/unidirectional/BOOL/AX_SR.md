@@ -1,6 +1,7 @@
 # AX_SR
 <img width="1186" height="279" alt="image" src="https://github.com/user-attachments/assets/da4a5f8e-5e9f-45f9-be8f-ac02a9cdb0ca" />
 ![AX_SR_ecc](./AX_SR_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AX_SR function block is an event-driven bistable element (flip-flop) that functions as a set-reset memory. It allows setting and resetting a logical state and makes this state available via an adapter interface.

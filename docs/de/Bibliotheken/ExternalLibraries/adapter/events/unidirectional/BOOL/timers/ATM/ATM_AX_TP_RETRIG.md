@@ -43,6 +43,7 @@ Der Baustein kennt zwei Hauptzustände:
 | **TIMING** | TRUE  | Impuls läuft, Timer zählt die Dauer PT herab.                    |
 
 **Übergänge:**
+
 - IDLE → TIMING: Trigger (IN.E1 mit IN.D1 = TRUE)
 - TIMING → TIMING (Retrigger): Erneuter Trigger startet Timer neu.
 - TIMING → IDLE: Timer abgelaufen oder Reset (R)

@@ -1,5 +1,6 @@
 # AB_SPLIT_7
 ![AB_SPLIT_7](./AB_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_SPLIT_7** is used to split a single incoming adapter of type `adapter::types::unidirectional::AB` into seven identical output adapters. It is implemented as a generic block (`GEN_AB_SPLIT`) and can therefore be instantiated for various specific adapter types that conform to the unidirectional AB protocol. It was developed under the Eclipse Public License 2.0.

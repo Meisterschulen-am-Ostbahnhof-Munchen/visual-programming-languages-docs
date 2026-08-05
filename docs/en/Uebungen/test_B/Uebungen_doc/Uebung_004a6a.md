@@ -1,5 +1,6 @@
 # Exercise_004a6a: Toggle Flip-Flop with IE and RT_E_REND (Real-Time Rendezvous)
 ![Uebung_004a6a_network](./Uebung_004a6a_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a toggle flip-flop controlled by real-time events. It serves to familiarize you with the interaction of digital inputs (IE), a real-time rendezvous function block (RT_E_REND), and a toggle flip-flop (E_T_FF). The output is provided on a digital output (QX). The goal is to deepen your understanding of time-controlled event chains in 4diac.

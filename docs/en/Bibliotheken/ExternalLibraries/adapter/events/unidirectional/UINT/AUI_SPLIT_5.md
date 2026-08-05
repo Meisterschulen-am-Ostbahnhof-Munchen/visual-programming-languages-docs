@@ -1,5 +1,6 @@
 # AUI_SPLIT_5
 ![AUI_SPLIT_5](./AUI_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_SPLIT_5** is a generic building block for splitting an incoming AUI adapter (Automation Unit Interface) into five separate, identical AUI outputs. It implements a 1:5 distribution in a unidirectional data direction. Designed for use in automation technology, it enables the redundant or distributed forwarding of AUI signals.

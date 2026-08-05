@@ -77,6 +77,7 @@ Durch diese Verschaltung wird sichergestellt:
 
 Die Übung vermittelt die sichere Ansteuerung eines Reversiermotors mittels Interlock-Baustein und Last-Wins-Logik.  
 **Lernziele:**
+
 - Verständnis von Interlock-Mechanismen zur Vermeidung von Kurzschlüssen.
 - Umgang mit dem ILOCK_SWITCH-Funktionsbaustein (Ereignis-/Datenschnittstelle).
 - Kombination von Ereignis- und Datenflüssen in 4diac-IDE.

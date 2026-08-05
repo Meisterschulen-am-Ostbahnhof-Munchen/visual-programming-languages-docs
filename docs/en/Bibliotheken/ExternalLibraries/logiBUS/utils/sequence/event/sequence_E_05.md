@@ -1,6 +1,7 @@
 # sequence_E_05
 <img width="1389" height="390" alt="image" src="https://github.com/user-attachments/assets/6251fda5-cb6c-43dd-b0bf-c6e5e43d5acc" />
 ![sequence_E_05_ecc](./sequence_E_05_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_E_05` is a sequential state machine that cycles through a fixed sequence of five states. The transition between individual states occurs exclusively through external events. This block is designed for control tasks requiring the step-by-step execution of a process sequence, such as in handling or packaging systems. Each active state sets its own binary output and confirms execution.

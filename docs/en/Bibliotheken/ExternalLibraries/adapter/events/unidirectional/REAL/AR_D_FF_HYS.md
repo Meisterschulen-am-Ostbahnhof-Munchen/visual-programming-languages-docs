@@ -1,5 +1,6 @@
 # AR_D_FF_HYS
 ![AR_D_FF_HYS](./AR_D_FF_HYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AR_D_FF_HYS** implements a data latch (D) flip-flop with hysteresis. It serves for the stable acquisition and transmission of an analog (real) value, with a hysteresis band suppressing unwanted fluctuations at the output. The block is designed for use in industrial signal processing.

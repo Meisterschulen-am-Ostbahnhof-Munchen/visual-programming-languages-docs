@@ -1,5 +1,6 @@
 # AI_MUX_4
 ![AI_MUX_4](./AI_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_MUX_4** implements a generic multiplexer for analog input signals (adapter type `AI`). It selects one of four analog inputs based on an integer index `K` and outputs its value via the output adapter `OUT`. The block is used for the flexible switching of analog measurement or control signals in automation systems.

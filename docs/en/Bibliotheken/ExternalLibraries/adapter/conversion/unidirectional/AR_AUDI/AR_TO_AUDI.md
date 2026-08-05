@@ -1,5 +1,6 @@
 # AR_TO_AUDI
 ![AR_TO_AUDI](./AR_TO_AUDI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AR_TO_AUDI` is a composite function block (FB) that receives a REAL value from a unidirectional **AR** adapter, converts it to a **UDINT** value, and outputs it via an **AUDI** adapter. It encapsulates the type conversion `REAL_TO_UDINT` and simplifies integration into adapter-based communication structures.

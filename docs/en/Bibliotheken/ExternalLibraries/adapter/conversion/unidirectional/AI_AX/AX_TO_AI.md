@@ -1,5 +1,6 @@
 # AX_TO_AI
 ![AX_TO_AI](./AX_TO_AI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_TO_AI** is a composite function block that converts a BOOL adapter (AX) into an INT adapter (AI). It serves as a bridge between interfaces that process Boolean signals (TRUE / FALSE) and those that expect integer values. The conversion is performed via an internal call to the function block `F_BOOL_TO_INT` from the IEC 61131 library.

@@ -1,5 +1,6 @@
 # ALI_DEMUX_2
 ![ALI_DEMUX_2](./ALI_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_DEMUX_2** is a generic demultiplexer for the ALI adapter type. It routes the value present at an input adapter to either one of two output adapters. The active output is selected via an index, which is set by an event input.

@@ -1,5 +1,6 @@
 # AW_TO_AUDI
 ![AW_TO_AUDI](./AW_TO_AUDI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AW_TO_AUDI` is a composite block that converts a data value received via a WORD adapter (`AW`) into a UDINT value and outputs it via a UDINT adapter (`AUDI`). The conversion is performed using the internally used block `F_WORD_TO_UDINT` from the IEC 61131 library. The function block encapsulates the adapter interfaces and enables a clean separation between different data formats within a system.

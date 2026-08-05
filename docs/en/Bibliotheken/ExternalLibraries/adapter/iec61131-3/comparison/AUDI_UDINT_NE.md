@@ -1,5 +1,6 @@
 # AUDI_UDINT_NE
 ![AUDI_UDINT_NE](./AUDI_UDINT_NE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_UDINT_NE** performs a not-equal comparison between a value (type UDINT) provided via an adapter and a second direct data input. It is part of the IEC 61131-3 comparison functions and encapsulates the comparison logic in an addressable component with event control. This block is particularly suitable for use in industrial control systems where values from different sources need to be checked for inequality.

@@ -1,5 +1,6 @@
 # AD_MUX_5
 ![AD_MUX_5](./AD_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AD_MUX_5** is a generic multiplexer IC for adapter interfaces. It allows the selection of one of five adapter inputs (IN1 to IN5) and forwards its data via the adapter output OUT. Selection is made using the index K, which is read upon a REQ event.

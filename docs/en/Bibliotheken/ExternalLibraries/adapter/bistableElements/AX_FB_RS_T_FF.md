@@ -1,5 +1,6 @@
 # AX_FB_RS_T_FF
 ![AX_FB_RS_T_FF](./AX_FB_RS_T_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_FB_RS_T_FF** implements a reset-dominant bistable latch with an additional toggle function. The block communicates via standardized adapter interfaces and enables flexible integration with other components.

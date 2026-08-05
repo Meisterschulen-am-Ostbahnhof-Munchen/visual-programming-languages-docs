@@ -1,5 +1,6 @@
 # SPLIT_AW_INTO_AX
 ![SPLIT_AW_INTO_AX](./SPLIT_AW_INTO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SPLIT_AW_INTO_AX` is used to split a 16-bit word (type `AW`) into 16 individual binary signals (type `AX`). Each of the 16 outputs represents one bit of the incoming word and is provided as an independent adapter with event and data lines. The splitting occurs synchronously upon the arrival of an event at the input adapter.

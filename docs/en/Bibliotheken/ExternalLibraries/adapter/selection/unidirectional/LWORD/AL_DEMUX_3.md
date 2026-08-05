@@ -1,5 +1,6 @@
 # AL_DEMUX_3
 ![AL_DEMUX_3](./AL_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AL_DEMUX_3** is a generic demultiplexer for unidirectional AL adapter data. It routes an incoming adapter data stream (via socket **IN**) to one of three output adapters (**OUT1**, **OUT2**, **OUT3**). Switching is performed via a data input **K** and is triggered by an event **REQ**. This block is particularly suitable for applications where a signal needs to be distributed to different paths depending on its index.

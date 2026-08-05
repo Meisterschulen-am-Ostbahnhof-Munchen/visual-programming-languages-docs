@@ -80,6 +80,7 @@ Die Kalibrierung basiert auf einer stückweisen linearen Interpolation zwischen 
 | **CAL_MAX** | Speichert den aktuellen Rohwert als Maximum. Geht automatisch nach IDLE. |
 
 **Übergangsbedingungen:**
+
 - `X.E1` → Start der Berechnung
 - `C_MIN.E1[C_MIN.D1]` → Kalibrierung des Minimalpunkts (nur wenn das Data‑Signal wahr ist)
 - `C_MID.E1[C_MID.D1]` → Kalibrierung des Mittelpunkts

@@ -1,5 +1,6 @@
 # Exercise_223b_ALR: Standard IEC 61131-3 AUDI_FB_CTUD (Adapter Version, Up/Down Counter, UDINT) with Terminal Output (PHYSA_LREAL)
 ![Uebung_223b_ALR_network](./Uebung_223b_ALR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a standards-compliant up/down counter based on the IEC 61131-3 block **AUDI_FB_CTUD** in its adapter version. The counter processes four digital input signals (up count, down count, reset, and loading a preset value) and outputs the current counter value as well as overflow/underflow signals. The preset value is provided via a conversion block, and the counter value is converted into a physical LREAL value for terminal output.

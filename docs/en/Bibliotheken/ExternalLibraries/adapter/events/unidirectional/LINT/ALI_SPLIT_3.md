@@ -1,5 +1,6 @@
 # ALI_SPLIT_3
 ![ALI_SPLIT_3](./ALI_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_SPLIT_3** is used to distribute an incoming unidirectional adapter of type **ALI** (Application Layer Interface) to three identical output adapters of the same type. It is designed as a generic component and enables signal multiplication without data modification.

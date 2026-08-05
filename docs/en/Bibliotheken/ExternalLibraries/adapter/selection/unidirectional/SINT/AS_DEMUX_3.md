@@ -1,5 +1,6 @@
 # AS_DEMUX_3
 ![AS_DEMUX_3](./AS_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_DEMUX_3** is a generic demultiplexer for the AS (adapter socket/plug) data type. It forwards an AS value received via the **IN** socket to one of three possible adapter outputs (**OUT1**, **OUT2**, **OUT3**). The target output is selected via the **K** index at the **REQ** event input.

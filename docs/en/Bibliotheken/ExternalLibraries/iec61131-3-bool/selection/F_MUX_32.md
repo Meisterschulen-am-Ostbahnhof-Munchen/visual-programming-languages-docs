@@ -1,5 +1,6 @@
 # F_MUX_32
 ![F_MUX_32](./F_MUX_32.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **F_MUX_32** is a generic multiplexer (selection function) according to IEC 61131-3. It allows the selection of one of 32 input values (IN1 … IN32) and outputs it at output OUT. The selection is made using the integer selector K. The block is event-driven: When an event occurs at the REQ input, the current value of K is evaluated and the corresponding input value is applied.

@@ -1,6 +1,7 @@
 Here is the documentation for the exercise based on the provided XML data.
 # Exercise_035a1b_AX: Traffic Light Control with Pattern Sequencer (AX) and Bit Assembler
 ![Uebung_035a1b_AX_network](./Uebung_035a1b_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 Exercise **Exercise_035a1b_AX** implements a classic traffic light control system. It uses a **Pattern Sequencer** in loop mode. The unique aspect of this exercise lies in the definition of the traffic light phases: Instead of hard-coding the outputs directly in the sequencer, the bit patterns for the individual phases (red, red-yellow, green, yellow) are dynamically generated using **bit assemblers** (`ASSEMBLE_BYTE_FROM_BOOLS`) and passed to the sequencer as parameters.

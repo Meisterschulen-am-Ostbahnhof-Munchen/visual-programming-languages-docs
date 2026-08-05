@@ -1,5 +1,6 @@
 # Exercise_209_AX: Interlock: ILOCK_FB_RS_AX (Two mutually interlocked reset-dominant latches via AX/AX2 adapter)
 ![Uebung_209_AX_network](./Uebung_209_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the construction of a **mutual interlock** between two reset-dominant RS latches. The circuit prevents both outputs from being active simultaneously – a typical safety feature in control engineering. This is implemented using two **ILOCK_FB_RS_AX** blocks connected via an AX/AX2 adapter. A set input and a reset input each control the latches, while the outputs drive the digital outputs Q1 and Q2.

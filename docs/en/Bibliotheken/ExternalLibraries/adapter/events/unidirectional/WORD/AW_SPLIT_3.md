@@ -1,5 +1,6 @@
 # AW_SPLIT_3
 ![AW_SPLIT_3](./AW_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_SPLIT_3** serves as a generic distributor for a unidirectional adapter of type `AW`. It accepts a single adapter connection (socket `IN`) and provides it identically to three outputs (plugs `OUT1`, `OUT2`, `OUT3`). The block is designed as a generic function block (Generic FB), so the specific data type of the adapter `AW` can be defined at runtime. Its application lies in signal coupling or command forwarding to multiple downstream components.

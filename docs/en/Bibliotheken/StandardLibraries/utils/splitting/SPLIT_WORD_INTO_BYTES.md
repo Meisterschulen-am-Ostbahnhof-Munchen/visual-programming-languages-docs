@@ -1,5 +1,6 @@
 # SPLIT_WORD_INTO_BYTES
 ![SPLIT_WORD_INTO_BYTES](https://github.com/user-attachments/assets/5c99635d-3f7d-4266-a108-12d075d58313)
+
 * * * * * * * * * *
 ## Introduction
 The function block `SPLIT_WORD_INTO_BYTES` is used to split a 16-bit word (WORD) into its two 8-bit bytes. This is particularly useful when working with data that is transmitted as a WORD but needs to be processed byte by byte.

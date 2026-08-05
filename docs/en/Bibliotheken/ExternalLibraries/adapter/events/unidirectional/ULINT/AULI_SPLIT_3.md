@@ -1,5 +1,6 @@
 # AULI_SPLIT_3
 ![AULI_SPLIT_3](./AULI_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_SPLIT_3** is used to distribute a single AULI adapter signal to three identical outputs. It acts as a simple splitter for unidirectional AULI connections and enables the broadcast of a signal to multiple downstream components. The block is designed generically and can be instantiated for various AULI types.

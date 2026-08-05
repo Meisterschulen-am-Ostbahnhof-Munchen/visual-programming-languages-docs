@@ -1,5 +1,6 @@
 # AQ_MUX_3
 ![AQ_MUX_3](./AQ_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AQ_MUX_3** is a generic multiplexer for AQ adapters. It allows the selection of one of three analog inputs (IN1, IN2, IN3) and routes the selected input to the output OUT. Selection is made via the index K, which is set by an event. The function block is implemented as a generic function block (FB) and is suitable for applications requiring switching between different signal sources.

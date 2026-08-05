@@ -1,5 +1,6 @@
 # AUDI_SPLIT_3
 ![AUDI_SPLIT_3](./AUDI_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_SPLIT_3** is used to multiply an incoming **AUDI** adapter signal to three separate outputs. It is designed as a generic function block (Generic FB) and is particularly suitable for architectures where a signal (e.g., a control or data stream) needs to be distributed to multiple downstream components.

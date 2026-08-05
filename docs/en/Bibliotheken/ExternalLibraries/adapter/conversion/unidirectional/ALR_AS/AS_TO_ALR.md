@@ -1,6 +1,7 @@
 # AS_TO_ALR
 ![AS_TO_ALR](./AS_TO_ALR.svg)
 *No image available.*
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_TO_ALR** is a composite function block (FB) that converts an **AS adapter** (data type SINT) into an **ALR adapter** (data type LREAL). It serves as a simple interface conversion between these two unidirectional adapter types and is located in the package `adapter::conversion::unidirectional`.

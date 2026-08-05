@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_160b_AX` based on the provided XML data.
 # Exercise_160b_AX: Motor Forward/Reverse Automation IE
 ![Uebung_160b_AX_network](./Uebung_160b_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a control system for a motor with forward and reverse rotation using the adapter concept (AX) in 4diac. The goal of the exercise is to control two outputs (Q5 and Q6) via separate input events (set/reset) and activate a common status output (Q56) as soon as one of the two motor outputs is active. Additionally, a delay during the switching process is implemented using push button I2.

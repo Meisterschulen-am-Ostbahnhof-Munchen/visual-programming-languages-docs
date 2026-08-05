@@ -1,5 +1,6 @@
 # ILOCK_SWITCH_PROTECT
 ![ILOCK_SWITCH_PROTECT](./ILOCK_SWITCH_PROTECT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ILOCK_SWITCH_PROTECT** function block implements a prioritized interlock between two switching directions – e.g., up/down, forward/backward, or right/left. It features a configurable dead-time delay that prevents immediate re-switching after a change of direction. The block evaluates the two binary inputs and outputs a switching signal only if the last active input is still active after the dead-time has expired. This prevents momentary oscillations and protects connected actuators.

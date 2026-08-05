@@ -1,5 +1,6 @@
 # Q_ChangePolygonPoint
 ![Q_ChangePolygonPoint](https://user-images.githubusercontent.com/116869307/214147060-065896ae-60b6-4a01-a8d2-b2b95a424b74.png)
+
 * * * * * * * * * *
 ## Introduction
 The **Q_ChangePolygonPoint** is a standards-compliant function block for modifying polygon points in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.52) specification for agricultural tax systems.

@@ -1,5 +1,6 @@
 # AX_RS_SYM_INIT
 ![AX_RS_SYM_INIT](./AX_RS_SYM_INIT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_RS_SYM_INIT** implements an event-driven, bistable flip-flop (RS flip-flop) with symmetrical startup behavior and an explicit initialization mechanism. It extends a simple RS flip-flop by adding the ability to assume a predefined state at startup (INIT) and to control both initialization and deinitialization via the INIT event input. The actual state of the flip-flop is provided via an adapter, while the data outputs QO and the adapter output Q.D1 are synchronized.

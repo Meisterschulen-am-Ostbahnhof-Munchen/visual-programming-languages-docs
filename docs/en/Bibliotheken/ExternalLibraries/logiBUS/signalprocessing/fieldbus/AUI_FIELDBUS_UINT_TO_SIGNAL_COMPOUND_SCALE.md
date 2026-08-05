@@ -1,5 +1,6 @@
 # AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE
 ![AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE](./AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` is used to convert and scale a 16-bit value received via an AUI fieldbus adapter into a scalable signal. The block mirrors the input value to the output, provided the validity signal is active, and performs compound scaling on the upper and lower bytes of the input value. An offset can be added after scaling. The output is provided via a unidirectional AR adapter, while the validity is signaled via an AX adapter. The block is specifically designed for industrial fieldbus protocols where user data consists of two separately scalable byte ranges.

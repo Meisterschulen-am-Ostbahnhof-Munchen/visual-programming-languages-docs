@@ -1,5 +1,6 @@
 # ADI_SPLIT_2
 ![ADI_SPLIT_2](./ADI_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ADI_SPLIT_2` is used to distribute an incoming ADI adapter (socket) to two identical ADI output adapters (plugs). It is designed as a generic building block and enables simple signal bundling in adapter-based architectures.

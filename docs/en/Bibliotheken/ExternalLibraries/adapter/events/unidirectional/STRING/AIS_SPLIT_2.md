@@ -1,5 +1,6 @@
 # AIS_SPLIT_2
 ![AIS_SPLIT_2](./AIS_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_SPLIT_2** is a generic adapter module that splits an incoming unidirectional AIS adapter (Application Interface Socket) into two identical outgoing AIS adapters. It serves as a passive splitter without its own logic or event processing.

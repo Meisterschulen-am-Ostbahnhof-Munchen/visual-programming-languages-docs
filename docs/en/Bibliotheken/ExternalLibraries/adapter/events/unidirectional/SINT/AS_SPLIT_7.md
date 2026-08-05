@@ -1,5 +1,6 @@
 # AS_SPLIT_7
 ![AS_SPLIT_7](./AS_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_SPLIT_7** is used to distribute an incoming unidirectional AS signal (e.g., an analog or binary automation signal) to seven identical outputs. The block is implemented as a generic FB and is frequently used in automation technology to provide a signal to multiple subsequent consumers or process steps.

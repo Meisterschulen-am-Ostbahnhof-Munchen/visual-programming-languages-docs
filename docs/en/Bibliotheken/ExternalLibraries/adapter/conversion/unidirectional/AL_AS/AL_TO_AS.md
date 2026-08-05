@@ -1,5 +1,6 @@
 # AL_TO_AS
 ![AL_TO_AS](./AL_TO_AS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AL_TO_AS** function block is a composite function block that converts a unidirectional AL adapter (LWORD data) into a unidirectional AS adapter (SINT data). It enables the seamless integration of components that work with different data types by converting the signals and passing them on via the respective adapter interfaces.

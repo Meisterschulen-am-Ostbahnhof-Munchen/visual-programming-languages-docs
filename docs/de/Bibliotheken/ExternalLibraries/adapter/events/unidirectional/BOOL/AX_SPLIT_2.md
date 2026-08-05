@@ -23,9 +23,11 @@ Keine direkten Daten-Ausgänge vorhanden
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - **IN**: AX-Adapter (unidirectional) - Empfängt das eingehende AX-Signal
 
 **Ausgangsadapter:**
+
 - **OUT1**: AX-Adapter (unidirectional) - Erster Ausgangskanal für das verteilte Signal
 - **OUT2**: AX-Adapter (unidirectional) - Zweiter Ausgangskanal für das verteilte Signal
 

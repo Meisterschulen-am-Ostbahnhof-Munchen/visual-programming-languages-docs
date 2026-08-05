@@ -1,5 +1,6 @@
 # ALI_MUX_4
 ![ALI_MUX_4](./ALI_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_MUX_4** is a generic multiplexer for ALI adapters. Depending on an index value *K*, it selects one of four ALI inputs (IN1, IN2, IN3, IN4) and forwards its data via the ALI output OUT. The block is controlled by the REQ event and acknowledges the switching with CNF.

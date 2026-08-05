@@ -1,5 +1,6 @@
 # ADI_DEMUX_5
 ![ADI_DEMUX_5](./ADI_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_DEMUX_5** is a generic demultiplexer for adapter-based data transport (ADI). It forwards a value present at its socket IN to one of five output adapters (OUT1 to OUT5). The destination port is selected using the integer index K.

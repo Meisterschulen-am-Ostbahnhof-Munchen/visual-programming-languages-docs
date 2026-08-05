@@ -1,5 +1,6 @@
 # ASSEMBLE_AB_FROM_AX
 ![ASSEMBLE_AB_FROM_AX](./ASSEMBLE_AB_FROM_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ASSEMBLE_AB_FROM_AX** function block combines eight Boolean signals, provided via AX adapters (unidirectional, Bool), into a single byte and outputs it via an AB adapter (unidirectional, BYTE). It encapsulates the logic for byte generation and provides a modular, adapter-based interface for processing 8 bits.

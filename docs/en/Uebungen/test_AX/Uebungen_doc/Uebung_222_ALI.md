@@ -1,6 +1,7 @@
 # Exercise_222_ALI: Standard IEC 61131-3 ALI_FB_CTUD (Adapter Version, Up/Down Counter, LINT) with Terminal Output
 ![Uebung_222_ALI_network](./Uebung_222_ALI_network.svg)
 *Image not available*
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an up/down counter according to IEC 61131-3 (CTUD) in adapter format. The counter is controlled via digital inputs (logiBUS) and outputs its current count via a terminal. The preset value (PV) is set to LINT#5 and loaded when the LD input is set. The outputs QU (overflow) and QD (underflow) are connected to digital outputs.

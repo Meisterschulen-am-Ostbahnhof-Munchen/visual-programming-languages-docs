@@ -65,6 +65,7 @@ Der Baustein bleibt nach dem ersten Übergang in einem der beiden stabilen Zust�
 | RESET   | Gespeicherter Zustand „rückgesetzt“| `Q.D1 := FALSE`       | Auslösen von `Q.E1`                             |
 
 **Übergänge:**  
+
 - START → SET : wenn `S_R.SET` eintrifft  
 - START → RESET : wenn `S_R.RESET` eintrifft  
 - SET → RESET : wenn `S_R.RESET` eintrifft (nach erstem Set)  

@@ -1,5 +1,6 @@
 # A2X_SPLIT_6
 ![A2X_SPLIT_6](./A2X_SPLIT_6.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `A2X_SPLIT_6` is used to distribute an incoming A2X adapter to six identical A2X outputs. It is implemented as a generic function block (GFB) and enables the forwarding of adapter data without delay or state change. Typical applications include the parallel power supply of multiple devices or signal cascading in industrial control systems.

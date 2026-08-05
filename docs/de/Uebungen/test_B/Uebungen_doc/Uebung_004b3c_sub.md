@@ -81,14 +81,17 @@ Die Sub-Applikation realisiert eine **verriegelbare Toggle-Funktion** mit folgen
    - Der konkrete Effekt hängt davon ab, welche Geräte oder Logiken über den Plug (Ausgang) bzw. Socket (Eingang) angeschlossen sind.
 
 **Lernziele:**  
+
 - Verständnis diskreter Zustandsautomaten (Set-Reset Flip-Flop) und deren Ereignissteuerung.  
 - Einsatz von Adapter-Konvertern für die Kommunikation zwischen 4diac und externen Systemen (AE2).  
 - Verriegelung eines Toggle-Vorgangs durch Kombination von E_SWITCH und Rückkopplung.
 
 **Voraussetzungen:**  
+
 - Grundlegende Kenntnisse der 4diac-IDE, Ereignis-/Datenflüsse und des AE2-Protokolls.
 
 **Start der Übung:**  
+
 - Die Sub-Applikation kann in ein 4diac-Projekt integriert und mit einer passenden Applikation (mit IND-Ereignisquelle und Q-Auswertung) getestet werden.
 
 ## Zusammenfassung

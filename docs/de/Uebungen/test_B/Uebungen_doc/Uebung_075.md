@@ -22,16 +22,19 @@ Diese Übung demonstriert die Einbindung des Funktionsbausteins **FB_MM710_IMU**
 Die SubApp enthält **keine weiteren Funktionsbausteine oder Sub-Bausteine**. Der gesamte Funktionsumfang wird durch den einzelnen FB `FB_MM710_IMU` realisiert. Die SubApp besitzt keine eigenen Ein- oder Ausgänge – sie dient als gekapselte Einheit für die Integration des IMU-Sensors.
 
 **Ablauf**:
+
 1. Nach Aktivierung der SPS wird der FB mit `QI = TRUE` initialisiert.
 2. Der Baustein versucht, über den CAN-Bus mit dem Sensor unter der Adresse `0xD8` zu kommunizieren.
 3. Nach erfolgreicher Verbindung können Sensordaten (z. B. Beschleunigung, Drehrate) ausgelesen werden (abhängig von der Implementierung des FB).
 
 **Lernziele**:
+
 - Verstehen der Parametrierung eines CAN-basierten IMU-Sensors.
 - Kennenlernen des logiBUS-Konzepts und der Verbindung zu 4diac.
 - Einblick in die Verwendung von Funktionsbausteinen aus der `logiBUS::bosch::imu`-Bibliothek.
 
 **Voraussetzungen**:
+
 - Grundkenntnisse der 4diac-IDE und des Editors für SubApplikationen.
 - Verständnis der CAN-Bus-Kommunikation (ISO 11783, PGN).
 

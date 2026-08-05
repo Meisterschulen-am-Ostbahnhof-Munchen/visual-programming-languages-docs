@@ -1,5 +1,6 @@
 # AIWS_DEMUX_4
 ![AIWS_DEMUX_4](./AIWS_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIWS_DEMUX_4** is a generic demultiplexer for AIWS data. It distributes an incoming AIWS data stream (via socket `IN`) to one of four AIWS outputs (`OUT1`–`OUT4`), which is selected by the index `K`. This block is used for the targeted routing of data in structured control systems and is typically employed in agricultural automation technology.

@@ -1,5 +1,6 @@
 # OFF_SPLIT_5
 ![AUS_SPLIT_5](./AUS_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUS_SPLIT_5` distributes an incoming OFF event (e.g., a signal or a message) to five identical outputs. It is a generic function block that serves as a placeholder for an application-specific type (`GEN_AUS_SPLIT`) in the 4diac IDE.

@@ -1,5 +1,6 @@
 # AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE
 ![AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE](./AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE** converts a 16-bit word received via a fieldbus into a scaled signal value. The word is multiplied byte by byte by different scaling factors, an offset is added, and the result is output as a normalized signal. Additionally, a validity signal is provided to indicate whether the incoming value is valid.

@@ -37,6 +37,7 @@ Der Ablauf wird durch Ereignisverbindungen gesteuert:
    - Der aktuelle Zählwert *CV* wird über `FB_CTU.CV` → `F_INT_TO_UDINT.IN` gewandelt. Der gewandelte `UDINT`-Wert (`F_INT_TO_UDINT.OUT`) wird an `Q_NumericValue.u32NewValue` übergeben. Ein weiteres Ereignis (`F_INT_TO_UDINT.CNF`) aktiviert `Q_NumericValue.REQ` zur Aktualisierung der Terminalanzeige.
 
 **Hinweise aus dem Entwurf**:
+
 - Die Umwandlung von `INT` nach `UDINT` ist nicht optimal, da negative Zählwerte nicht abgebildet werden können. Eine Alternative könnte die Verwendung eines vorzeichenbehafteten Datentyps oder eines anderen Ausgabebausteins sein.
 - Da beide Eingänge (`Input_CU` und `Input_R`) dasselbe Ereignis an `FB_CTU.REQ` senden, kann es zu einer hohen Ereignisfrequenz kommen. In der Praxis sollte hier ein **E_D_FF** (Ereignis-D-Flipflop) oder ein ähnlicher Entprellmechanismus zwischengeschaltet werden, um unnötige Verarbeitungen zu vermeiden.
 

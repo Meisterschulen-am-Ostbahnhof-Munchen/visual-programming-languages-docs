@@ -1,5 +1,6 @@
 # UDINT_AUI_AX_SEL
 ![UDINT_AUI_AX_SEL](./UDINT_AUI_AX_SEL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **UDINT_AUI_AX_SEL** implements a binary selection between two input values. The selection is controlled via an adapter of type `AX`, which typically provides an axis position or a digital state. This block is used for flexible switching of signal sources in automation solutions.

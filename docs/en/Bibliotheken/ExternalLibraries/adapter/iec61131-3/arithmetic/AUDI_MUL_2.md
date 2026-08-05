@@ -1,6 +1,7 @@
 # AUDI_MUL_2
 ![AUDI_MUL_2](./AUDI_MUL_2.svg)
 **Image:** No image available.
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUDI_MUL_2` is a generic function block for calculating the arithmetic product of two numeric values. It receives its operands via two input adapters and outputs the result via one output adapter. Its generic design allows the use of different data types (e.g., integers, floating-point numbers), which are defined by the specific adapter type.

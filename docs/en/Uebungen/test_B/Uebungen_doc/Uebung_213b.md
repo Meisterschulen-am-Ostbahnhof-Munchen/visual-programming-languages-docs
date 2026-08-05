@@ -1,8 +1,10 @@
 # Exercise_213b: Standard IEC 61131-3 FB_CTU_UDINT (Up Counter, UDINT) with Terminal Output (PHYS_LREAL)
 ![Uebung_213b_network](./Uebung_213b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an up counter according to IEC 61131-3 (FB_CTU_UDINT) with a preset value of 5. The counting pulses are provided via two digital inputs:
+
 - **I1** serves as the count input (CU – Count Up)
 - **I2** serves as the reset input (R – Reset)
 

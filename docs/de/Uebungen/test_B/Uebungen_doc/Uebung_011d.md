@@ -47,6 +47,7 @@ Die Verarbeitung erfolgt ereignisgesteuert:
    - Der Ausgang `OUT` von `F_DWORD_TO_UDINT` (Datentyp `UDINT`) ist mit dem Dateneingang `u32NewValue` von `Q_NumericValue` verbunden.
 
 **Lernziele dieser Übung:**  
+
 - Verständnis der Funktionsweise der `NumericValue`-Ein‑ und Ausgabebausteine.  
 - Erkennen des Einflusses von Datentypkonvertierungen (DWORD → UDINT) auf numerische Werte.  
 - Praktischer Umgang mit Ereignis- und Datenverbindungen in 4diac.  

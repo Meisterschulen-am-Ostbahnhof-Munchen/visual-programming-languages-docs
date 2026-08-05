@@ -1,5 +1,6 @@
 # AL_TO_AUDI
 ![AL_TO_AUDI](./AL_TO_AUDI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AL_TO_AUDI** is a composite block that converts an LWORD adapter input (type `AL`) into a UDINT adapter output (type `AUDI`). It encapsulates the IEC 61131-3 conversion function `F_LWORD_TO_UDINT` and provides a clean, adapter-based interface for unidirectional data flows.

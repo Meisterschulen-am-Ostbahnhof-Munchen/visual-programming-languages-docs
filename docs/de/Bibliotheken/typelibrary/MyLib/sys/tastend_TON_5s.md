@@ -29,18 +29,22 @@ Diese Übung demonstriert die Verwendung eines Zeitrelais (Timer On-Delay) mit e
 ## Programmablauf und Verbindungen
 
 **Adapterverbindungen:**
+
 - Eingang: IN → AX_X_TO_BOOL.AX_IN
 - Ausgang: AX_BOOL_TO_X.AX_OUT → OUT
 
 **Ereignisverbindungen:**
+
 - AX_X_TO_BOOL.CNF → E_TON.REQ
 - E_TON.CNF → AX_BOOL_TO_X.REQ
 
 **Datenverbindungen:**
+
 - AX_X_TO_BOOL.IN → E_TON.IN
 - E_TON.Q → AX_BOOL_TO_X.OUT
 
 **Lernziele:**
+
 - Verständnis von Timer-Funktionsbausteinen (E_TON)
 - Umgang mit Adapter-Konvertierungsbausteinen
 - Aufbau von wiederverwendbaren Subapplikationen

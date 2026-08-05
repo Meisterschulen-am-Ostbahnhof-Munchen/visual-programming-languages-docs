@@ -78,6 +78,7 @@ Der Ausgang `QO` wird bei jedem ausgeführten Algorithmus auf den aktuellen Wert
 | **RESET** | `RESET` | Q.E1 | Setzt `Q.D1 := FALSE` (falls QI = TRUE) und `QO := QI`. |
 
 **Transitionen** (auszugsweise):
+
 - START → Init: `INIT[QI = TRUE]`
 - Init → SET: `Q_INIT = TRUE`
 - Init → RESET: `Q_INIT = FALSE`

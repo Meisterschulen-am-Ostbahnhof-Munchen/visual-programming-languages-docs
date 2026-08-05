@@ -1,5 +1,6 @@
 # AS_MUX_2
 ![AS_MUX_2](./AS_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AS_MUX_2 is a generic multiplexer function block that allows you to select between two input adapters (IN1 and IN2) and switch the selected adapter to the output adapter (OUT). The selection is made using an integer index variable K. This function block is typically used to dynamically switch between different signal sources or data paths without having to reconfigure the connections at runtime.

@@ -1,5 +1,6 @@
 # AQ_DEMUX_4
 ![AQ_DEMUX_4](./AQ_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AQ_DEMUX_4** is a generic demultiplexer for the adapter type `AQ` (Analog Quantity). It distributes an incoming analog value to one of four output adapters, selected by an index `K`. The device is activated by an event via the input `REQ` and confirms the switchover via the output `CNF`.

@@ -1,6 +1,7 @@
 Here is the documentation page for exercise `Uebung_006e2_AX`, based on the provided XML data.
 # Exercise_006e2_AX: RS Flip-Flop with 2x IXA
 ![Uebung_006e2_AX_network](./Uebung_006e2_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 Exercise **Exercise_006e2_AX** implements an RS flip-flop (reset dominant) using adapter connections (AX). The goal of the exercise is to use two digital inputs to set or reset a digital output. The logic block library for bistable elements is used and abstracted from the hardware via the logiBUS system.

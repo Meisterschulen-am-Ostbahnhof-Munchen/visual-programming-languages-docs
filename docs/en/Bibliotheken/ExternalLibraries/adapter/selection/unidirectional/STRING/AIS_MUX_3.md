@@ -1,5 +1,6 @@
 # AIS_MUX_3
 ![AIS_MUX_3](./AIS_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_MUX_3** is a generic multiplexer for AIS data. It selects one of three AIS input adapters (`IN1`, `IN2`, `IN3`) based on an index `K` and connects its signals to the output adapter `OUT`. An event `REQ` triggers the selection and is acknowledged with `CNF` after successful switching.

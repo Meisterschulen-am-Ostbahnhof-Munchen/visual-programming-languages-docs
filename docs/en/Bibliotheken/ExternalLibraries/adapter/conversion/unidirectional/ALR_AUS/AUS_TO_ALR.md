@@ -1,5 +1,6 @@
 # OFF_TO_ALR
 ![AUS_TO_ALR](./AUS_TO_ALR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **OFF_TO_ALR** function block is a composite function block that converts an **OFF adapter** (with USINT data) into an **ALR adapter** (with LREAL data). It serves purely as a forwarding interface and does not perform any complex logic or conversion calculations.

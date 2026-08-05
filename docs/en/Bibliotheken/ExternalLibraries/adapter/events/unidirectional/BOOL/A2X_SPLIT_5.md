@@ -1,5 +1,6 @@
 # A2X_SPLIT_5
 ![A2X_SPLIT_5](./A2X_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **A2X_SPLIT_5** is used to split an incoming A2X adapter into five identical A2X outputs. It is provided as a generic block that can be configured via attributes.

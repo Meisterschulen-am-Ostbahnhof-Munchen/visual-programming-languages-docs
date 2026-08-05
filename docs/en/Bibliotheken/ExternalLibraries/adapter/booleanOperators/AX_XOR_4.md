@@ -21,9 +21,11 @@ The AX_XOR_4 function block is a generic function block for calculating the Bool
 
 ### **Adapters**
 **Plug Adapter:**
+
 - **OUT**: Unidirectional adapter for the XOR result
 
 **Socket Adapter:**
+
 - **IN1**: Unidirectional adapter for XOR input 1
 - **IN2**: Unidirectional adapter for XOR input 2
 - **IN3**: Unidirectional adapter for XOR input 3

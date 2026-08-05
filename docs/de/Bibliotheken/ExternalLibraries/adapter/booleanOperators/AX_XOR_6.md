@@ -26,9 +26,11 @@ Keine direkten Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 **Plug-Adapter:**
+
 - **OUT** (Typ: adapter::types::unidirectional::AX) - XOR-Ergebnis
 
 **Socket-Adapter:**
+
 - **IN1** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 1
 - **IN2** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 2
 - **IN3** (Typ: adapter::types::unidirectional::AX) - XOR-Eingang 3

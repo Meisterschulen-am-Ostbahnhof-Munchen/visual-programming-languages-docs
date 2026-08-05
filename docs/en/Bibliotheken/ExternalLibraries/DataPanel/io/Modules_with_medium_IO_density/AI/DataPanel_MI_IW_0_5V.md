@@ -1,5 +1,6 @@
 # DataPanel_MI_IW_0_5V
 ![DataPanel_MI_IW_0_5V](./DataPanel_MI_IW_0_5V.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **DataPanel_MI_IW_0_5V** is a service interface function block (SIFB) for acquiring analog input signals in the voltage range **0 ... 5 V**. It provides the interface to an analog input channel of the DataPanel-MI-IW series and enables initialization, cyclic querying, and asynchronous reception of measured values via a bus system. The block is implemented as an IEC 61499-compliant FB and uses system-specific data types from the package `DataPanel::io::MI::AI`.

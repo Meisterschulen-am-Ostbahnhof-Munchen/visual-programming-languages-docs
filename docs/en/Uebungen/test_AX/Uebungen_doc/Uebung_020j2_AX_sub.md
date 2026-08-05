@@ -1,5 +1,6 @@
 # Exercise_020j2_AX_sub: Subapplication Type
 ![Uebung_020j2_AX_sub_network](./Uebung_020j2_AX_sub_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This subapplication serves as a building block for controlling two outputs (`Q1`, `Q2`) with time-delayed pulses. It is controlled via a single input (`IN`) and allows individual adjustment of the pulse durations for each output (via the parameters `TQ1` and `TQ2`). The subapplication encapsulates the logic for splitting an input event and timing two independent output signals.

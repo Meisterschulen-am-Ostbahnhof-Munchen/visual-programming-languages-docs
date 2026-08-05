@@ -1,5 +1,6 @@
 # ALI_MUX_2
 ![ALI_MUX_2](./ALI_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_MUX_2** is a generic multiplexer for two ALI adapter signals. Depending on an index value `K`, it selects one of the two inputs (`IN1` or `IN2`) and forwards its value via the output adapter `OUT`. The block operates in an event-driven manner and acknowledges each selection operation with a confirmation event.

@@ -1,5 +1,6 @@
 # ALR_MUX_2
 ![ALR_MUX_2](./ALR_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ALR_MUX_2** is a generic multiplexer function block that allows selection between two unidirectional ALR adapter inputs and forwarding the selected data stream to a single ALR adapter output. Selection is event-driven via an integer index.

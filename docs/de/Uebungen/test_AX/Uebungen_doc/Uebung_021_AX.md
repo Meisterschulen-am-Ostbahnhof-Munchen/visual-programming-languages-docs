@@ -57,6 +57,7 @@ Die Verbindungen sind als **Adapterverbindungen** realisiert (Pfeile zwischen de
 - `AX_FB_SR.Q1` → `DigitalOutput_Q1.OUT`
 
 **Lernziele**:
+
 - Einrichtung und Parametrierung von Softkeys in 4diac
 - Verwendung eines SR-Flipflops zur speichernden Logik
 - Ansteuerung eines digitalen Ausgangs

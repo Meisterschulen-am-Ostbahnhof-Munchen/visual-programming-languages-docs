@@ -69,6 +69,7 @@ Die Schaltung realisiert eine logische UND-Verknüpfung auf zeitlicher Ebene (Sy
     *   Gleichzeitig wird das Flip-Flop zurückgesetzt, wodurch der Ausgang Q1 sofort auf `FALSE` (Aus) schaltet.
 
 **Lernziele:**
+
 *   Verständnis des `E_REND`-Musters (Warten auf mehrere Ereignisse).
 *   Kombination von Ereignissteuerung und Zustandsspeicherung (Flip-Flop).
 *   Implementierung einer zentralen Reset-Logik.

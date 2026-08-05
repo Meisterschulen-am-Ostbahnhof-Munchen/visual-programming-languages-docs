@@ -1,5 +1,6 @@
 # GET_BOOL
 ![GET_BOOL](./GET_BOOL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **GET_BOOL** function block reads a BOOL value from a variable declared as `InOut` and provides it as a buffered output value. This simple encapsulation allows a Boolean signal to be passed from any context without requiring direct read/write access to the source in the calling function block.

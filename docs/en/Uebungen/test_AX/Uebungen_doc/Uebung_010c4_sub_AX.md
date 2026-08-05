@@ -2,6 +2,7 @@ Here is the documentation for exercise `Uebung_010c4_sub_AX` based on the provid
 # Exercise_010c4_sub_AX: SoftKey_F1/_F2 on DigitalOutput_Q1/_Q2 with GreenWhiteBackground using a Typed Subapp
 ![Uebung_010c4_sub_AX_network](./Uebung_010c4_sub_AX_network.svg)
 *(Placeholder for an image of the exercise, if available)*
+
 * * * * * * * * * *
 ## Introduction
 This exercise covers the creation of a typed sub-application (`SubAppType`). The goal of this function block is to link an ISOBUS soft key (SoftKey) to a digital output (DigitalOutput) and simultaneously implement visual feedback via a background controller. The function block encapsulates this logic to make it reusable (e.g., for F1/Q1, F2/Q2, etc.).

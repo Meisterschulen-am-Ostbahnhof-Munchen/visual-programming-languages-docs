@@ -1,6 +1,7 @@
 Here is the documentation for Exercise 178, based on the provided XML data.
 # Exercise_178: Example for FB_F_TRIG (Falling Edge Detection)
 ![Uebung_178_network](./Uebung_178_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 Exercise_178 deals with the detection of falling edges in signal processing. The goal is to trigger an event precisely when an input signal changes from `TRUE` (High) to `FALSE` (Low). This event is also used to generate a time-limited pulse.

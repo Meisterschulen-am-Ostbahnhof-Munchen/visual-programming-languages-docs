@@ -1,5 +1,6 @@
 # Exercise_011a2_AUDI: Numeric Value Output and BUTTON_PRESS_REPEAT_DONE
 ![Uebung_011a2_AUDI_network](./Uebung_011a2_AUDI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the output of a numeric value using a button press event (BUTTON_LONG_PRESS_UP). A digital input block (logiBUS_IDA) is used, which triggers an event when the button is pressed and held. This event is converted via an adapter into a format that the output block Q_NumericValue_AUDI can process – this then outputs the predefined numeric value on the ISOBUS.

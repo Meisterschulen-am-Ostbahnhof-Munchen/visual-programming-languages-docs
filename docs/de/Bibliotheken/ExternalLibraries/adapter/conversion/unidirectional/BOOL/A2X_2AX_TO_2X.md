@@ -24,10 +24,12 @@ Keine direkten Daten-Ausgänge vorhanden
 
 ### **Adapter**
 **Sockets (Eingänge):**
+
 - **UP**: AX-Adapter für positive Bewegungsrichtung (TRUE = vorwärts, oben, rechts, im Uhrzeigersinn)
 - **DOWN**: AX-Adapter für negative Bewegungsrichtung (TRUE = rückwärts, unten, links, gegen den Uhrzeigersinn)
 
 **Plugs (Ausgänge):**
+
 - **A2X_OUT**: A2X-Adapter-Ausgang für die kombinierten Signale
 
 ## Funktionsweise

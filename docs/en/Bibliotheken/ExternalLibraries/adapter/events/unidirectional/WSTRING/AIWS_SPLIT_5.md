@@ -1,5 +1,6 @@
 # AIWS_SPLIT_5
 ![AIWS_SPLIT_5](./AIWS_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIWS_SPLIT_5** is a generic block for splitting a single **AIWS** adapter into five identical **AIWS** adapters. It allows an AIWS signal provided by a socket to be forwarded to multiple independent adapter plugs without requiring event or data processing logic. This function block is particularly suitable for signal distribution in industrial automation architectures based on the **IEC 61499** standard.

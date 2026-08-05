@@ -2,6 +2,7 @@ Here is the documentation for the exercise based on the provided XML data:
 # Exercise_176: Exercise for E_TRIG
 ![Image of the exercise, if available]
 ![Uebung_176_network](./Uebung_176_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 The `Uebung_176` exercise focuses on generating events on rising edges. The emphasis is on understanding and applying the `E_TRIG` (Edge Trigger) function block within an IEC 61499 application. The exercise provides a basic framework that must be completed by the user.

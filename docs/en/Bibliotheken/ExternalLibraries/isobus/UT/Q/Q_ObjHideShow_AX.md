@@ -1,5 +1,6 @@
 # Q_ObjHideShow_AX
 ![Q_ObjHideShow_AX](./Q_ObjHideShow_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **Q_ObjHideShow_AX** serves as an adapter wrapper for the existing function block `Q_ObjHideShow`. It allows the consistent hiding and showing of an object (Hide/Show) via a unidirectional AX adapter. The visibility value is passed as a Boolean state (`0` = hidden, `1` = shown).

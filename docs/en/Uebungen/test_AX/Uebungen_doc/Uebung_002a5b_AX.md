@@ -1,5 +1,6 @@
 # Exercise_002a5b_AX: DigitalInput_I1-3 with OR to DigitalOutput_Q1-3, using Plug and Socket
 ![Uebung_002a5b_AX_network](./Uebung_002a5b_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the basic interconnection of multiple digital inputs with multiple digital outputs. A logical OR operation is used to combine the states of the inputs. The result of this operation is then distributed to various digital outputs via a signal distributor. The implementation utilizes the concept of adapter function blocks to realize the Boolean logic and signal distribution.

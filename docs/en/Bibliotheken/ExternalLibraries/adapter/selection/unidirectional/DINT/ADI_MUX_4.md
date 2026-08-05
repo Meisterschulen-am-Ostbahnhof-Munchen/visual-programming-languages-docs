@@ -1,5 +1,6 @@
 # ADI_MUX_4
 ![ADI_MUX_4](./ADI_MUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_MUX_4** is a generic multiplexer that selects one of four identical ADI input adapters (IN1…IN4) via the index **K** and routes it to the output adapter **OUT**. It enables dynamic signal routing without requiring data to flow through traditional variable inputs/outputs.

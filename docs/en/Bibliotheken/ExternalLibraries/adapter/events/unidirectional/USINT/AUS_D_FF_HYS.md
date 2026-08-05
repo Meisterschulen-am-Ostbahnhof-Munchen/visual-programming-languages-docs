@@ -1,5 +1,6 @@
 # AUS_D_FF_HYS
 ![AUS_D_FF_HYS](./AUS_D_FF_HYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUS_D_FF_HYS` implements a data latch (D flip-flop) with hysteresis (threshold band). It serves to receive an incoming data value on an edge-triggered basis and make it available at the output. The hysteresis ensures stable switching behavior even with noisy or fluctuating input signals. The block uses generic adapters (`AUS`) that enable unidirectional data transmission with event-driven control, making it usable with any data type.

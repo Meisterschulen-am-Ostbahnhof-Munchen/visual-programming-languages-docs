@@ -1,5 +1,6 @@
 # AE_SPLIT_3
 ![AE_SPLIT_3](./AE_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_SPLIT_3** is used to distribute an incoming adapter data stream (of type `AE`) to three identical outputs. It is implemented as a generic function block and allows for the flexible use of different adapter types through design-time configuration.

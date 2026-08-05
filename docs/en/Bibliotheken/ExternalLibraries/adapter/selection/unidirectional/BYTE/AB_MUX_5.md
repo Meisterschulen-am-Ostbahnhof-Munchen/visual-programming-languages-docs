@@ -1,5 +1,6 @@
 # AB_MUX_5
 ![AB_MUX_5](./AB_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_MUX_5** implements a generic multiplexer for adapter interfaces of type `adapter::types::unidirectional::AB`. It selects one of five incoming adapter connections (IN1–IN5) and forwards it to the output adapter (OUT). The selection is made using an integer index `K`, which is evaluated on a rising edge at the event input `REQ`.

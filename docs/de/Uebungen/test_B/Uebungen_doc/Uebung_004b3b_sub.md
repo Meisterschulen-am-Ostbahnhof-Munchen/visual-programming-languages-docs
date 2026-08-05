@@ -36,6 +36,7 @@ Die Sub-Applikation enthält zwei Funktionsbausteine:
 Die Sub-Applikation besitzt zwei Ereigniseingänge (`IND` und `RESET`) sowie zwei Ereignisausgänge (`EO` und `SET`) und einen Datenausgang (`Q`).
 
 **Ereignisverbindungen**:
+
 - Der Eingang `IND` ist mit dem Ereigniseingang `EI` des `E_SWITCH` verbunden.
 - Der Ausgang `EO0` von `E_SWITCH` führt zum Setz-Eingang `S` des `E_SR` und gleichzeitig zum Sub-Applikationsausgang `SET`.
 - Der Ausgang `EO1` von `E_SWITCH` ist mit dem Rücksetz-Eingang `R` des `E_SR` verbunden.
@@ -43,10 +44,12 @@ Die Sub-Applikation besitzt zwei Ereigniseingänge (`IND` und `RESET`) sowie zwe
 - Der Sub-Applikationseingang `RESET` ist ebenfalls mit dem Rücksetz-Eingang `R` des `E_SR` verbunden.
 
 **Datenverbindungen**:
+
 - Der Ausgang `Q` von `E_SR` ist mit dem Steuereingang `G` von `E_SWITCH` verbunden.
 - Der Ausgang `Q` von `E_SR` wird auch als Sub-Applikationsausgang `Q` herausgeführt.
 
 **Ablauf**:
+
 1. Ein Ereignis am Eingang `IND` startet die Verarbeitung.
 2. Der `E_SWITCH` prüft den aktuellen Zustand von `Q` (über das Steuersignal `G`):
    - Ist `Q` = FALSE, wird das Ereignis an `EO0` weitergegeben, sodass `E_SR` gesetzt wird (Q wird TRUE) und gleichzeitig der Ausgang `SET` aktiviert wird.

@@ -1,5 +1,6 @@
 # FIELDBUS_ULINT_TO_SIGNAL_SCALED
 ![FIELDBUS_ULINT_TO_SIGNAL_SCALED](./FIELDBUS_ULINT_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **FIELDBUS_ULINT_TO_SIGNAL_SCALED** is used to convert a raw ULINT value (e.g., from a fieldbus) into a scaled LREAL value. The validity of the input signal is checked against a constant threshold (`VALID_SIGNAL_LW`). If the input is valid, linear scaling is performed (multiplication by a factor and addition of an offset); otherwise, the output is set to 0,0 and the validity is negated.

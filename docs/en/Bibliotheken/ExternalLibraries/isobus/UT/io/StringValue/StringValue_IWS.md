@@ -1,5 +1,6 @@
 # StringValue_IWS
 ![StringValue_IWS](./StringValue_IWS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **StringValue_IWS** is a service interface function block (SIFB) responsible for receiving wide strings (*Wide String*, `WSTRING`) as input data from a resource-side source (e.g., hardware interface, bus system). It provides a standardized interface for managing initialization, cyclic/demand-driven data retrieval, and asynchronous indications. This function block is typically found in ISOBUS-based control environments or other fieldbus systems that process Unicode-encoded text data.

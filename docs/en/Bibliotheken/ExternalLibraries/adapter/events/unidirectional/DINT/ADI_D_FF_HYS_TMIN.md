@@ -1,5 +1,6 @@
 # ADI_D_FF_HYS_TMIN
 ![ADI_D_FF_HYS_TMIN](./ADI_D_FF_HYS_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_D_FF_HYS_TMIN** implements a data latch (D flip-flop) with hysteresis and a minimal time delay between successive output events. It serves for stable and interference-free signal transmission in industrial control applications based on unidirectional adapters.

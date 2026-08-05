@@ -1,5 +1,6 @@
 # AIS_SPLIT_9
 ![AIS_SPLIT_9](./AIS_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AIS_SPLIT_9** function block is used to distribute an incoming unidirectional **AIS** adapter (Application Interface Socket) to nine identical outgoing **AIS** adapters (plugs). It is designed as a generic building block and enables the simple duplication of an AIS signal for up to nine downstream function blocks.

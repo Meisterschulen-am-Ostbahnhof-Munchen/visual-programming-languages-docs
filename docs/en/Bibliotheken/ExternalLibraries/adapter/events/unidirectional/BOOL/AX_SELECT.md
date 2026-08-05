@@ -1,5 +1,6 @@
 # AX_SELECT
 ![AX_SELECT_ecc](./AX_SELECT_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AX_SELECT function block, based on a Boolean input, switches one of two AX adapter inputs to the output.

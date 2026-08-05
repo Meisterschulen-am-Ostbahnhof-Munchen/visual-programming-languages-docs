@@ -1,5 +1,6 @@
 # Exercise_212_ALI: Standard IEC 61131-3 ALI_FB_CTU (Adapter Version, Up Counter, LINT) with Terminal Output
 ![Uebung_212_ALI_network](./Uebung_212_ALI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an up counter (CTU) according to IEC 61131-3 in the adapter version (ALI_FB_CTU). The counter counts input pulses (CU) upwards, can be reset via a reset input (R), and outputs the current counter value via a terminal output. Additionally, an output signal (Q) is set as soon as the counter value reaches or exceeds the predefined setpoint (PV).

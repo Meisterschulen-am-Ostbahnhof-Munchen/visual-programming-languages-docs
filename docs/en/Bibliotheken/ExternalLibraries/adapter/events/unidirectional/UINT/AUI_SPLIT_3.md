@@ -1,5 +1,6 @@
 # AUI_SPLIT_3
 ![AUI_SPLIT_3](./AUI_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_SPLIT_3** serves as a generic splitter that distributes a single incoming AUI interface to three identical outgoing AUI interfaces. It allows for the simple duplication of a unidirectional adapter (of type `adapter::types::unidirectional::AUI`) without altering the events or data it carries.

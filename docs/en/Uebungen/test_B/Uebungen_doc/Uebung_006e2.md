@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_006e2`, based on the provided data.
 # Exercise_006e2: RS Flip-Flop with 2x IX
 ![Uebung_006e2_network](./Uebung_006e2_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 Exercise **Exercise_006e2** demonstrates the implementation of an RS flip-flop (reset dominant) using two digital inputs (IX) and one digital output. The goal is to implement a basic memory function where one input sets the output and the other resets it. This exercise uses the `logiBUS` library for the hardware abstraction of the inputs and outputs.
@@ -65,6 +66,7 @@ The program flow is determined by the event connections and the data connection:
 - This event is connected to the `REQ` input of `DigitalOutput_Q1` to update the output. - **Data Connection**: The result output `Q1` of the flip-flop is passed to the input `OUT` of `DigitalOutput_Q1`.
 
 **Summary of Behavior:**
+
 - A button/switch connected to **Input_I1** activates the output **Output_Q1**.
 - A button/switch connected to **Input_I2** deactivates the output **Output_Q1**.
 - If both inputs are activated simultaneously, the output remains off (reset is dominant).

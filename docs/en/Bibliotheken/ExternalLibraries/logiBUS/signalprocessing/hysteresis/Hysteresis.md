@@ -1,5 +1,6 @@
 # Hysteresis
 ![Hysteresis](./Hysteresis.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **Hysteresis** function block converts an analog input signal (REAL) into a digital output signal (BOOL). It operates with an adjustable hysteresis threshold to ensure stable switching behavior and prevent oscillations at the threshold. The switching points are arranged symmetrically around a mean value (THRESHOLD).

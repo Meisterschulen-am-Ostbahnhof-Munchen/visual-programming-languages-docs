@@ -1,5 +1,6 @@
 # ADI_TO_AW
 ![ADI_TO_AW](./ADI_TO_AW.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_TO_AW** is a composite module that converts a DINT value into a WORD value. It acts as a unidirectional converter between an **ADI** adapter (DINT input) and an **AW** adapter (WORD output). The function block encapsulates the conversion logic and provides a standardized interface for data exchange at the adapter level.

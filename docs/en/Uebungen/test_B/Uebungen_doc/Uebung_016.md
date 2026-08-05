@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_016`. It demonstrates how to change the background color of objects (e.g., softkeys) at runtime to visualize their states.
 ## 🎧 Podcast
 ![Uebung_016_network](./Uebung_016_network.svg)
+
 * [ESP32-S3-DevKitC-1 Document Analysis: The Memory Monster (32MB Flash/16MB PSRAM) and the Power of Dual USB Ports ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/ESP32-S3-DevKitC-1-Doku-Analyse-Das-Speicher-Monster-32MB-Flash16MB-PSRAM-und-die-Macht-der-Dual-USB-Ports-e39hamt)
 
 ----

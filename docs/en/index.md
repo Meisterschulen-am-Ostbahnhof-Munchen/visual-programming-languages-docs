@@ -30,6 +30,7 @@ myst:
 This documentation is part of the knowledge base of the Meisterschulen at Munich East Station.
 
 **Useful Links:**
+
 * 📋 **[This is in the curriculum (Curriculum 2025)](./das_steht_im_lehrplan.md)**
 * [🏠 Main Menu](https://www.ms-muc-docs.de/)
 * [🔍 Super Search (all wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/)

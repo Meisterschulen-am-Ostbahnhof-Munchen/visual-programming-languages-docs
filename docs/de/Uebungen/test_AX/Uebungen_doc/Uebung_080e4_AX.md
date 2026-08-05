@@ -67,6 +67,7 @@ Die Subapplikation enthält keine eigenen Unterbausteine. Sie setzt sich aus vor
    Der gefilterte Wert wird über `UI_TO_UDI_N1` und `Q_NumericValue` als numerisches Signal auf **OutputNumber_N1** ausgegeben. Der Digitalausgang **Q1** zeigt den Zustand des D‑Flipflops an.
 
 **Lernziele:**
+
 - Verständnis des Zusammenspiels von Ereigniszyklen (`E_CYCLE`) und Zählern (`E_CTU`)
 - Einsatz von D‑Flipflops als Ereignisbremse
 - Filterung von Zählerwerten mittels Hysterese und Mindestzeit

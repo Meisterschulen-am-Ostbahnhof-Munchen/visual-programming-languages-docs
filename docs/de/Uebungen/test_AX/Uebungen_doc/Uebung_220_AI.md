@@ -69,6 +69,7 @@ Der Ablauf wird durch Ereignisse gesteuert. Die Verbindungen sind wie folgt real
    Der aktuelle Zählerwert `CV` wird über `AI_TO_AUDI` konvertiert und an den Ausgabebaustein `Q_NumericValue_AUDI.u32NewValue` gesendet. Dieser zeigt den Wert auf einer konfigurierten Terminalnummer (`u16ObjId = OutputNumber_N1`) an.
 
 **Hinweise aus dem Quelltext**:  
+
 - Der Baustein `AI_TO_AUDI` unterstützt keine negativen Zahlen – daher können nur Zählwerte ≥ 0 korrekt angezeigt werden.  
 - Es wurde angemerkt, dass zur Reduktion der Ereignisrate ggf. flankengetriggerte D-Flipflops (z.B. `AX_D_FF`) zwischengeschaltet werden sollten, was jedoch in dieser Version nicht umgesetzt ist.
 

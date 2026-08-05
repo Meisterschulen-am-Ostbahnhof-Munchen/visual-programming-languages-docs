@@ -1,5 +1,6 @@
 # AUI_MUX_3
 ![AUI_MUX_3](./AUI_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUI_MUX_3` is a generic multiplexer for the AUI data type (unidirectional adapter). It selects one of three adapter inputs (`IN1`, `IN2`, `IN3`) based on an integer index `K` and forwards it to the adapter output `OUT`. The selection process is triggered by an event at input `REQ`.

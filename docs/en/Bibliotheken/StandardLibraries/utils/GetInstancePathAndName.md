@@ -1,5 +1,6 @@
 # GetInstancePathAndName
 ![GetInstancePathAndName](https://github.com/user-attachments/assets/818b4609-9a6a-4ec7-b8d8-dfd54f003751)
+
 * * * * * * * * * *
 ## Introduction
 The function block `GetInstancePathAndName` is used to retrieve the instance path and instance name from the runtime environment. This is particularly useful for debugging purposes or for dynamic configurations where the exact path of an instance is required.

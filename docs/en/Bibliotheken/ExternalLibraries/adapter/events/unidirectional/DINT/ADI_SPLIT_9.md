@@ -1,5 +1,6 @@
 # ADI_SPLIT_9
 ![ADI_SPLIT_9](./ADI_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ADI_SPLIT_9` is a generic component that splits an incoming ADI signal (adapter) into nine identical output signals. It functions purely as a splitter at the adapter level.

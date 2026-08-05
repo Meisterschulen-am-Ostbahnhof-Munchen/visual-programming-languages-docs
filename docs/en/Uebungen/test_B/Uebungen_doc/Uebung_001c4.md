@@ -1,5 +1,6 @@
 # Exercise_001c4: DigitalInput_I1 to DigitalOutput_Q1 --> Query input at boot.
 ![Uebung_001c4_network](./Uebung_001c4_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the basic use of a digital input and a digital output on a logiBUS system. The input **Input_I1** is queried at system startup (boot), and its state is directly transferred to the output **Output_Q1**. The exercise shows how the initialization event connection (INITO → REQ) ensures that the output assumes the correct value during startup. Additionally, the **NOOP** block is used as a simple pass-through block to connect the event and data paths.

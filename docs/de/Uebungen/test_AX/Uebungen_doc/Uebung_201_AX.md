@@ -74,6 +74,7 @@ Der Ablauf der Übung ist wie folgt:
 5. Die Ausgangsbausteine geben die Signale an die physikalischen Ausgänge `Output_Q1` und `Output_Q2` weiter.
 
 **Lernziele:**
+
 - Kennenlernen des Interlock-Konzepts (gegenseitige Verriegelung)
 - Arbeiten mit Adapter-basierten Funktionsbausteinen in 4diac
 - Verständnis für Sicherheitslogik in der Automatisierung

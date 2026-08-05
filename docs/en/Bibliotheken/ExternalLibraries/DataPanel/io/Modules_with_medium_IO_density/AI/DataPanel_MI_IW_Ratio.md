@@ -1,5 +1,6 @@
 # DataPanel_MI_IW_Ratio
 ![DataPanel_MI_IW_Ratio](./DataPanel_MI_IW_Ratio.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **DataPanel_MI_IW_Ratio** is a service interface function block (SIFB) for acquiring analog input data with ratiometric conversion. It provides the interface to a sensor connected to a node (SA 224..239) whose measured value is output as a 16-bit word (WORD). This block is part of the library `DataPanel::io::MI::AI` and is typically used in automation technology, particularly in agricultural engineering.

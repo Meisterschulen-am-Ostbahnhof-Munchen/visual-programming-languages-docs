@@ -1,5 +1,6 @@
 # AQ_SPLIT_4
 ![AQ_SPLIT_4](./AQ_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AQ_SPLIT_4` serves as a fan-out component for distributing an incoming AQ adapter to four identical output adapters. It is used to forward an analog signal or control variable (AQ – Analog Quantity) from a sender to multiple independent receivers without compromising signal integrity.

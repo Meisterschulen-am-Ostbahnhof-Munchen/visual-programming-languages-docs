@@ -1,5 +1,6 @@
 # ASSEMBLE_AW_FROM_AQ
 ![ASSEMBLE_AW_FROM_AQ](./ASSEMBLE_AW_FROM_AQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASSEMBLE_AW_FROM_AQ` combines eight individual **AQ (Quarter)** adapters into a single **AW (Word)** adapter. Each quarter represents a 4-bit data packet (half a byte). The block assembles these eight quarter data packets—a total of 32 bits—into a complete word (WORD, 32 bits) and makes it available via a single AW output adapter. Typical applications include the reconstruction of wide data buses from serially or partially arriving fragments.

@@ -83,6 +83,7 @@ Diese Sub-Application kapselt die Logik zur Berechnung der Sinuswerte.
     *   Der Baustein sendet die PGN 61184 mit den aktuellen Daten auf den CAN-Bus.
 
 **Lernziele:**
+
 *   Verständnis des Adapter-Konzepts (Plugs/Sockets) in 4diac.
 *   Nutzung von Callback-Mechanismen für "Just-in-Time" Datenerzeugung bei zyklischen Sendern.
 *   Verwendung von OSCAT-Bibliotheksbausteinen (`GEN_SIN`) zur Signalsimulation.

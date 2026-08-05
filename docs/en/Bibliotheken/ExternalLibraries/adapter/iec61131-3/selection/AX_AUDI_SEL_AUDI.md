@@ -1,5 +1,6 @@
 # AX_AUDI_SEL_AUDI
 ![AX_AUDI_SEL_AUDI](./AX_AUDI_SEL_AUDI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AX_AUDI_SEL_AUDI` implements a binary selection between two input values. It is controlled by two events, each of which can take one of the two data inputs. The actual selection is performed via a connected **Adapter G** (type `AX`), which provides the selection value. The selected result is passed to the environment via the **Adapter OUT** (type `AUDI`). The block encapsulates the logic of the IEC 61131 standard block `F_SEL` in an adapter-based form.

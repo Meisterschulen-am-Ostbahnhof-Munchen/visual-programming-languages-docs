@@ -2,6 +2,7 @@ Here is the documentation for the exercise based on the provided XML content.
 # Exercise_010c3_sub_AX: SoftKey_F1 on DigitalOutput_Q1 with GreenWhiteBackground using a Typed Subapp
 ![Uebung_010c3_sub_AX_network](./Uebung_010c3_sub_AX_network.svg)
 *(Insert placeholder for an image of the exercise here)*
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the creation and use of a "Typed SubApp". The logic connects a softkey input (F1) on an ISOBUS terminal to a physical digital output (Q1) and visual feedback (background color). Encapsulating the code in a subapp makes it modular and reusable.

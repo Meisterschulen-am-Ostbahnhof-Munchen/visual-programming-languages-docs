@@ -3,6 +3,7 @@ The standards **IEC 61131-3** and **IEC 61499** both define standards for progra
 ## 1. Architectural Model
 ### IEC 61131-3: Centralized Control
 IEC 61131-3 was primarily developed for **programmable logic controllers (PLCs)**. The model assumes a central processing unit that executes a program.
+
 * **Structure:** Configuration -> Resource -> Task -> Program -> Function blocks/functions.
 * **Focus:** A single device controls a process.
 

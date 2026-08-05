@@ -1,6 +1,7 @@
 # E_PERMIT
 ## 🎧 Podcast
 ![E_PERMIT_ecc](./E_PERMIT_ecc.svg)
+
 * [The E_PERMIT block: The "gatekeeper" for events in IEC 61499 systems decoded]
 * [Decoding E_PERMIT: The Unsung Hero of Industrial Automation's Safety and Reliability]
 ## Introduction

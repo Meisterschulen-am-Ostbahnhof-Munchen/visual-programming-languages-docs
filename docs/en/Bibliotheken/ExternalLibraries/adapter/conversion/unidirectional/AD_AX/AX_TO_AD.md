@@ -1,5 +1,6 @@
 # AX_TO_AD
 ![AX_TO_AD](./AX_TO_AD.svg)
+
 * * * * * * * * * *
 ## Introduction
 The composite function block `AX_TO_AD` converts a Boolean adapter (AX) to a DWORD adapter (AD). It forwards event and data signals from the input adapter directly to the output adapter and implicitly converts the data type from Boolean to DWORD.

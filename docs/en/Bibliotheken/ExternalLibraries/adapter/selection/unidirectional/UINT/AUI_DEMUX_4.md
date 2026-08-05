@@ -1,5 +1,6 @@
 # AUI_DEMUX_4
 ![AUI_DEMUX_4](./AUI_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUI_DEMUX_4` is a generic AUI demultiplexer for four output paths. It forwards the AUI signals arriving via the input adapter `IN` to one of the four output adapters (`OUT1`–`OUT4`), which is selected by the index `K`. The block operates on the principle of event-driven switching and is suitable for flexible data distribution in industrial control systems.

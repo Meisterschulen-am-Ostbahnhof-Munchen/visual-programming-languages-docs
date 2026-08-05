@@ -54,11 +54,13 @@ Die SubApp verwendet folgende Funktionsbausteine:
    Der Low-Side Treiber wird nur dann eingeschaltet, wenn entweder Rechts- oder Linkslauf aktiv ist. Dadurch wird die Stromversorgung des Motors nur in diesen Zuständen freigegeben.
 
 **Lernziele:**
+
 - Verständnis einer Interlock-Schaltung für Motoren mit zwei Drehrichtungen.
 - Ansteuerung eines Low-Side Treibers in Abhängigkeit einer ODER-Verknüpfung.
 - Umgang mit den speziellen logiBUS-Funktionsbausteinen.
 
 **Benötigte Vorkenntnisse:**
+
 - Grundlagen der 4diac-IDE und des IEC 61499-Modells.
 - Kenntnis über digitale Ein-/Ausgänge und boolesche Verknüpfungen.
 

@@ -1,8 +1,10 @@
 # IA_Lighting
 ![IA_Lighting](./IA_Lighting.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **IA_Lighting** function block serves as an ISOBUS adapter for lighting data (LD) according to ISO 11783-7 (PGN 65088). It encapsulates an internal `I_Lighting` core and converts its 32-bit integer outputs for each lighting function into individual Boolean signals. A variety of adapter plugs transmit the individual lighting functions, such as daytime running lights, low beams, turn signals, work lights, etc., as separate logical signals to the application.
+
 * * * * * * * * * *
 ## Interface Structure
 ### **Event Inputs**

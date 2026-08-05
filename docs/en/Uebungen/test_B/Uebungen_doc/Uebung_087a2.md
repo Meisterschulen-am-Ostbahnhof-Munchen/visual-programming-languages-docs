@@ -1,5 +1,6 @@
 # Exercise_087a2: Example for E_DEMUX_4
 ![Uebung_087a2_network](./Uebung_087a2_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the functionality of the E_DEMUX_4 module in the 4diac IDE. The application shows how events can be distributed via a multiplexer and demultiplexer to control various digital outputs.

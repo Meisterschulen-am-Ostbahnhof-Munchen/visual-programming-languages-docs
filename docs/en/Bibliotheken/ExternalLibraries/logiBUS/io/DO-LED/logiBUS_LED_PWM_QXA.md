@@ -1,5 +1,6 @@
 # logiBUS_LED_PWM_QXA
 ![logiBUS_LED_PWM_QXA](./logiBUS_LED_PWM_QXA.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `logiBUS_LED_PWM_QXA` is a composite block for controlling a PWM-controlled LED via the logiBUS. It combines the configuration and output of an LED PWM signal and provides a uniform interface for initialization, parameterization, and operation.

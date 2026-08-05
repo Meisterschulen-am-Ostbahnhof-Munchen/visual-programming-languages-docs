@@ -1,5 +1,6 @@
 # AS_SPLIT_3
 ![AS_SPLIT_3](./AS_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AS_SPLIT_3 function block distributes an incoming adapter data stream to three identical outputs. It is implemented as a generic function block and designed for use with the `adapter::types::unidirectional::AS` adapter type.

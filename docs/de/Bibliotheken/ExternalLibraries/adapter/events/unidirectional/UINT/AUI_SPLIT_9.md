@@ -30,10 +30,12 @@ Nicht vorhanden.
 ### **Adapter**
 
 **Socket (Eingang):**
+
 - `IN` – Typ: `adapter::types::unidirectional::AUI`  
   Empfängt das zu verteilende AUI-Signal.
 
 **Plugs (Ausgänge):**
+
 - `OUT1` bis `OUT9` – jeweils Typ: `adapter::types::unidirectional::AUI`  
   Neun identische Ausgänge, die das eingehende AUI-Signal unverändert weiterleiten.
 

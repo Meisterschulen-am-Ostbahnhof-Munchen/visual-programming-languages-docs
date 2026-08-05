@@ -14,6 +14,7 @@ Im Netzwerk der Subapplikation werden zwei Funktionsbausteine eingesetzt:
   *Typ*: `isobus::UT::io::NumericValue::NumericValue_IDA`  
   *Aufgabe*: Empfängt einen numerischen Wert aus dem iSoBUS‑Netzwerk über die Objekt-ID `InputNumber_PWM_Value`. Die Daten stehen nach Bestätigung durch den Benutzer (z. B. Drücken der OK‑Taste) am Ausgang zur Verfügung.  
   *Parameter*:  
+
   - `QI` (Einschaltsignal) = `TRUE` (dauerhaft aktiv)  
   - `u16ObjId` = `InputNumber_PWM_Value` (iSoBUS‑Objekt‑ID des Eingabewerts)
 
@@ -21,6 +22,7 @@ Im Netzwerk der Subapplikation werden zwei Funktionsbausteine eingesetzt:
   *Typ*: `logiBUS::io::DQ::logiBUS_QDA_PWM`  
   *Aufgabe*: Wandelt den eingehenden Zahlenwert in ein PWM‑Signal um und gibt es über den logiBUS‑Ausgang `Output_Q2` aus.  
   *Parameter*:  
+
   - `QI` (Einschaltsignal) = `TRUE` (dauerhaft aktiv)  
   - `Output` = `Output_Q2` (logiBUS‑Ausgangsadresse)
 
@@ -40,6 +42,7 @@ Das Ereignis zur Datenübergabe wird erst ausgelöst, wenn der eingegebene Zahle
 4. `PWMOutput_Q2` setzt den empfangenen Wert in ein PWM‑Signal mit entsprechender Pulsweite um und steuert den angeschlossenen logiBUS‑Ausgang `Output_Q2`.
 
 **Wichtige Vorbedingungen:**  
+
 - Die beiden Funktionsbausteine sind über ihre Adapterschnittstellen starr verbunden (keine dynamischen Verbindungen).  
 - Das zugrundeliegende iSoBUS‑Objekt (`InputNumber_PWM_Value`) muss im System konfiguriert sein.  
 - Das logiBUS‑Ausgangsmodul (`Output_Q2`) muss vorhanden und adressiert sein.

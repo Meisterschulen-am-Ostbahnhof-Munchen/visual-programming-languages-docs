@@ -1,5 +1,6 @@
 # AUI_SPLIT_7
 ![AUI_SPLIT_7](./AUI_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUI_SPLIT_7` is used to distribute an incoming AUI (Application User Interface) signal to up to seven identical outputs. It is designed as a generic block and operates exclusively via adapter interfaces – without event or data inputs/outputs in the traditional sense. This makes it particularly suitable for pure signal distribution in adapter-based architectures.

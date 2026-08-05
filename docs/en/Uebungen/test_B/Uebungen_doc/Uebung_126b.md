@@ -1,6 +1,7 @@
 Here is the documentation page for Exercise 126b.
 # Exercise_126b: Exercise on ISOBUS Send Message Cyclic (with CB) Plotting a Sine Wave Function
 ![Uebung_126b_network](./Uebung_126b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 Exercise **Exercise_126b** demonstrates the cyclic sending of an ISOBUS message, where the data payload is dynamically generated via a callback mechanism. Specifically, a sine wave function is generated, and its values are written to the first byte of the CAN message. This can be used, for example, to simulate signal waveforms and then plot them in diagnostic tools such as PCAN Explorer.

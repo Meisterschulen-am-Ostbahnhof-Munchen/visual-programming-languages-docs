@@ -1,5 +1,6 @@
 # StringValue_AIS
 ![StringValue_AIS](./StringValue_AIS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **StringValue_AIS** function block is a service interface function block for providing string input data. It serves as an interface between an external resource (e.g., ISOBUS Universal Terminal) and the control logic. The block initializes communication, processes requests, and passes status information to the application.

@@ -1,5 +1,6 @@
 # AL_TO_ALI
 ![AL_TO_ALI](./AL_TO_ALI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AL_TO_ALI` is a composite function block (FB) for converting an AL adapter (LWORD) to an ALI adapter (LINT). It serves as an interface between LWORD-based and LINT-based data communication within the control logic. Internally, the block uses the conversion block `F_LWORD_TO_LINT` to perform the actual type conversion.

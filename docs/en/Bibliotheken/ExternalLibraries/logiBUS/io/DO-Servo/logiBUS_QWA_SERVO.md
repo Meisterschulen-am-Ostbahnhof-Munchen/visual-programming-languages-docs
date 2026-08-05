@@ -1,5 +1,6 @@
 # logiBUS_QWA_SERVO
 ![logiBUS_QWA_SERVO](./logiBUS_QWA_SERVO.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **logiBUS_QWA_SERVO** is a composite function block (CFB) for outputting servo control words via a logiBUS. It encapsulates the initialization, parameterization, and output based on an internal function block (`logiBUS_QW_SERVO`) and provides a standardized interface. Developed under the Eclipse Public License 2.0 (Copyright 2026 HR Agrartechnik GmbH).

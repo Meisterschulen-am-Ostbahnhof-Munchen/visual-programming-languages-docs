@@ -1,5 +1,6 @@
 # AD_TO_AW
 ![AD_TO_AW](./AD_TO_AW.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AD_TO_AW** is a composite function block that converts a DWORD adapter (type `AD`) into a WORD adapter (type `AW`). It encapsulates the conversion of a DWORD value to a WORD value and provides the corresponding event and data forwarding. The implementation is based on an internal call to the standard conversion block `F_DWORD_TO_WORD` from the IEC 61131 library.

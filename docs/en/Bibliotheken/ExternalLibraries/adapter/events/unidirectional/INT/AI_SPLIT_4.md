@@ -1,5 +1,6 @@
 # AI_SPLIT_4
 ![AI_SPLIT_4](./AI_SPLIT_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_SPLIT_4** is a generic block that splits a unidirectional analog input (AI) into four separate analog outputs. It serves as a signal distributor for analog signals and allows a single AI signal to be passed on to various subsequent blocks. The block is entirely adapter-based and has no built-in event or data interfaces. It is available under the Eclipse Public License 2.0.

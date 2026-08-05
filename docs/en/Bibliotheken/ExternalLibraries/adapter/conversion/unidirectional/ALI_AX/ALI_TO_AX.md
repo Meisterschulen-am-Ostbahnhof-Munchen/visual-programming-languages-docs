@@ -1,5 +1,6 @@
 # ALI_TO_AX
 ![ALI_TO_AX](./ALI_TO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_TO_AX** is a composite function block that converts an adapter of type **ALI** (containing a LINT value) into an adapter of type **AX** (containing a BOOL value).

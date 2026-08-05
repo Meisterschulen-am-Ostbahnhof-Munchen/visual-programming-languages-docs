@@ -1,5 +1,6 @@
 # AUI_FIELDBUS_UINT_TO_SIGNAL
 ![AUI_FIELDBUS_UINT_TO_SIGNAL](./AUI_FIELDBUS_UINT_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_FIELDBUS_UINT_TO_SIGNAL** forwards a fieldbus signal encoded as `UINT` to a downstream AUI adapter, provided the signal is recognized as valid. It also provides a separate validity indicator (`VALID`). The block encapsulates a data converter and an edge-triggered D flip-flop, which buffers the validity signal until the next event.

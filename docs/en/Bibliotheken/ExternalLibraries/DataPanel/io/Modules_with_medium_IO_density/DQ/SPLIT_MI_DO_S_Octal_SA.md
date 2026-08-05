@@ -1,5 +1,6 @@
 # SPLIT_MI_DO_S_Octal_SA
 ![SPLIT_MI_DO_S_Octal_SA](./SPLIT_MI_DO_S_Octal_SA.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **SPLIT_MI_DO_S_Octal_SA** is used to split a single data value of type `DataPanel_MI_DO_S_Octal_SA` into eight separate outputs of type `DataPanel_MI_DO_S_Single_SA`. The common portion (`u8SAMember`) is retained unchanged, and the respective port information from the octal input is distributed to the individual outputs.

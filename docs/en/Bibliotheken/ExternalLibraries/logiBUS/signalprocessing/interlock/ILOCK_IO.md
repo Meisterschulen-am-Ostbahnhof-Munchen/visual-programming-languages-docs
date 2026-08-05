@@ -1,5 +1,6 @@
 # ILOCK_IO
 ![ILOCK_IO](./ILOCK_IO.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ILOCK_IO** implements a cascadable, momentary (non-resettable) interlock with a BOOL interface. It is used to ensure that, in a chain of multiple function blocks, only one block sets its output to TRUE at a time, as long as its input is active and no other block in the chain is already active. This function block is particularly suitable for controllers where competing requirements must be handled exclusively.

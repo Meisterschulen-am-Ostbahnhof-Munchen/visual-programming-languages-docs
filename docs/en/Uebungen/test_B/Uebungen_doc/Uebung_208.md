@@ -1,5 +1,6 @@
 # Exercise_208: Interlock: ILOCK_FB_SR (Two mutually interlocked set-dominant latches via AX2 adapter)
 ![Uebung_208_network](./Uebung_208_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the implementation of a mutual interlock between two outputs using the function block `ILOCK_FB_SR`. Each set-dominant latch controls one output, with an adapter connection ensuring that only one of the two outputs can be active at any given time. The inputs (set and reset) are read via digital input modules (logiBUS_IX), and the outputs are output via digital output modules (logiBUS_QX). The interlock prevents both outputs from being set simultaneously – even if both set signals are present at the same time.

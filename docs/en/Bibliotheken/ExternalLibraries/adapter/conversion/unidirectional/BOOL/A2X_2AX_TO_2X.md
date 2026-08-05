@@ -21,6 +21,7 @@ No direct data outputs available
 
 ### **Adapters**
 **Sockets (Inputs):**
+
 - **UP**: AX adapter for positive direction of movement (TRUE = forward, up, right, clockwise)
 - **DOWN**: AX adapter for negative direction of movement (TRUE = backward, down, left, counterclockwise)
 

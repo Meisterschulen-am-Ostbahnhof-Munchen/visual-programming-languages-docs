@@ -101,6 +101,7 @@ Die Übung verwendet ausschließlich direkt instanziierte Funktionsbausteine (ke
 **Wichtige Anmerkung**: Die doppelte Konvertierung von `AD_TO_AUDI` und `AUDI_TO_AR` ist bewusst so implementiert, um Typkompatibilität zu gewährleisten. Ein direkter Konverter würde die Daten nur uminterpretieren, was in der Praxis zu Fehlfunktionen führen kann.
 
 **Lernziele dieser Übung**:
+
 - Umgang mit analogen Eingangsadaptern und deren Parametrierung.
 - Einsatz von Adapterkonvertern zur Typanpassung.
 - Verwendung von INI-Speicherbausteinen zum dauerhaften Ablegen von Konfigurationsparametern.

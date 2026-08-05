@@ -1,6 +1,7 @@
 # AS_SPLIT_4
 ![AS_SPLIT_4](./AS_SPLIT_4.svg)
 *No image available.*
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_SPLIT_4** splits an incoming unidirectional AS adapter into four identical outputs. It acts as a generic splitter, forwarding the signal received via socket `IN` unchanged to the four plugs `OUT1` to `OUT4`.

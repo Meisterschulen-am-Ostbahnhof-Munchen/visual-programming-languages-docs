@@ -1,5 +1,6 @@
 # AS_MUX_3
 ![AS_MUX_3](./AS_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AS_MUX_3** is a generic multiplexer IC according to IEC 61499-2. It allows one of three input signals to be forwarded to a common output via a unidirectional **AS** adapter. The active input is selected using an integer index `K` (UINT). The IC is particularly suitable for flexible switching between different signal sources in automation systems, such as those found in agricultural technology.

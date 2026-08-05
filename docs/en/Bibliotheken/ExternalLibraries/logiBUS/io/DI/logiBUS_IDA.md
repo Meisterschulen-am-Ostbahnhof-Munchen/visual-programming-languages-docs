@@ -1,5 +1,6 @@
 # logiBUS_IDA
 ![logiBUS_IDA](./logiBUS_IDA.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **logiBUS_IDA** is a composite function block (CFB) for digital double-word input processing. It encapsulates an internal **logiBUS_ID** block and provides a uniform interface for initialization, parameterization, and event-driven data querying. The block is designed for use in logiBUS-based automation systems and supports the selection of an input channel as well as the configuration of the repeat event.

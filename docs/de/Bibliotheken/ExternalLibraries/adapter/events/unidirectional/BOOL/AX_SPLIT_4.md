@@ -24,9 +24,11 @@ Keine direkten Daten-Ausgänge vorhanden (Datenverarbeitung erfolgt über Adapte
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - `IN` - AX-Adapter (Socket) - Empfängt unidirektionale AX-Daten und Ereignisse
 
 **Ausgangsadapter:**
+
 - `OUT1` - AX-Adapter (Plug) - Erster Ausgangskanal
 - `OUT2` - AX-Adapter (Plug) - Zweiter Ausgangskanal
 - `OUT3` - AX-Adapter (Plug) - Dritter Ausgangskanal

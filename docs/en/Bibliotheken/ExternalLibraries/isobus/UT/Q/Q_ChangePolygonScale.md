@@ -1,5 +1,6 @@
 # Q_ChangePolygonScale
 ![Q_ChangePolygonScale](https://user-images.githubusercontent.com/116869307/214147096-01ad8095-df5d-4cab-82ee-7f97a5758ea0.png)
+
 * * * * * * * * * *
 ## Introduction
 The **Q_ChangePolygonScale** is a standards-compliant function block for scaling polygon objects in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.54) specification for agricultural tax systems.

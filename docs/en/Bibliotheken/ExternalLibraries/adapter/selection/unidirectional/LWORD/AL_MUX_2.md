@@ -1,5 +1,6 @@
 # AL_MUX_2
 ![AL_MUX_2](./AL_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AL_MUX_2** is a generic multiplexer for unidirectional AL (Action-Link) adapter interfaces. It selects one of two incoming adapters (`IN1` or `IN2`) based on an integer index `K` and forwards its data via the output adapter `OUT`. The switchover occurs synchronously with the event `REQ`. The block is implemented as a generic type (`GEN_AL_MUX`) and can therefore be used for various AL adapter implementations.

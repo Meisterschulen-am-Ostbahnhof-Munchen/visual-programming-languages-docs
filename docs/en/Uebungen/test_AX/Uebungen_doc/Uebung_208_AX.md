@@ -1,7 +1,9 @@
 # Exercise_208_AX: Interlock: ILOCK_FB_SR_AX (Two mutually interlocked set-dominant latches via AX/AX2 adapter)
 ![Uebung_208_AX_network](./Uebung_208_AX_network.svg)
+
 - **Title**: Exercise_208_AX
 *Interlock: ILOCK_FB_SR_AX (Two mutually interlocked set-dominant latches via AX/AX2 adapter)*
+
 * * * * * * * * * *
 ## Introduction
 

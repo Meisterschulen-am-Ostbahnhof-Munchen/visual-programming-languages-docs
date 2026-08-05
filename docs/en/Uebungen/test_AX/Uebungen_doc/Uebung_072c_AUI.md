@@ -1,5 +1,6 @@
 # Exercise_072c_AUI: Outputting GBSD and WBSD to a UT using PHYS (Adapter Version)
 ![Uebung_072c_AUI_network](./Uebung_072c_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the behavior of the function blocks `IA_GBSD` (Ground Based Machine Speed) and `IA_WBSD` (Wheel Based Machine Speed) on an ISOBUS Universal Terminal (UT). The digital speed values (UINT) supplied by the respective ISOBUS applications are converted into physical values using a scaling function block and then displayed on the terminal via a UT adapter (`Q_NumericValue_PHYSA`). The scaling is performed with a decimal accuracy of 0.001 (e.g., conversion from mm/s to m/s).

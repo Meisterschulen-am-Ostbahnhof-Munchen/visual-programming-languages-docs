@@ -1,5 +1,6 @@
 # UDINT_AUI_LT
 ![UDINT_AUI_LT](./UDINT_AUI_LT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **UDINT_AUI_LT** performs the "less than" comparison. It checks whether the value at input **IN1** is less than the value at adapter input **IN2**. The result (BOOL) is provided via the output adapter **OUT**. The use of IEC 61131-3 adapters enables flexible and modular integration with the environment.

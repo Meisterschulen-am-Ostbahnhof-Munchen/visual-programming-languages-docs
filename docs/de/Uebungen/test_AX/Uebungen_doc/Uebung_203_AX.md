@@ -50,6 +50,7 @@ Die folgende Adapter-Verbindungsstruktur liegt dem Ablauf zugrunde:
 Bei aktivem Signal an **Input_I1** wird **Output_Q1** gesetzt. Bei aktivem Signal an **Input_I2** wird **Output_Q2** gesetzt. Sind beide Eingänge gleichzeitig aktiv, erhält **Output_Q1** den Vorrang („UP priorisiert“). Dieses Verhalten ist typisch für sicherheitsrelevante Anwendungen, in denen eine gegenseitige Verriegelung von Aktoren (z. B. Richtungswechsel eines Motors) erforderlich ist.
 
 **Hinweise für die Durchführung:**  
+
 - Die Übung richtet sich an Teilnehmer mit Grundkenntnissen der 4diac-IDE und des logiBUS-Adaptersystems.  
 - Lernziel ist das Verständnis von Interlock-Mechanismen über Adapter und die Prioritätssteuerung.  
 - Voraussetzung: Ein funktionierendes logiBUS-Projekt mit freien Ein-/Ausgangskanälen (Input_I1, Input_I2, Output_Q1, Output_Q2).  

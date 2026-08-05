@@ -58,6 +58,7 @@ Die Subapp arbeitet in zwei Hauptphasen:
    - Nach erfolgreichem Speichern wird `SETO` ausgelöst, das als `IND` der Subapp nach außen gegeben wird.
 
 **Datenverbindungen**:
+
 - Die Objektkonfiguration (`stObj`) wird von außen an `NumericValue_PHYS` und an `Q_NumericValue_PHYS` übergeben.
 - Die Schlüssel- und Abschnittsnamen (`KEY`, `SECTION`) werden von außen an den `INI`-Baustein übergeben.
 - Der gespeicherte Wert (`VALUEO`) wird sowohl an `Q_NumericValue_PHYS` als auch direkt an den Ausgang `VALUEO` der Subapp geführt.

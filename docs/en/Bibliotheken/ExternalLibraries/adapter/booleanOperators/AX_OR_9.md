@@ -21,6 +21,7 @@ The AX_OR_9 is a generic function block for calculating the Boolean OR operation
 
 ### **Adapters**
 **Sockets (Inputs):**
+
 - **IN1** - OR Input 1
 - **IN2** - OR Input 2
 - **IN3** - OR Input 3
@@ -32,6 +33,7 @@ The AX_OR_9 is a generic function block for calculating the Boolean OR operation
 - **IN9** - OR Input 9
 
 **Plugs (Outputs):**
+
 - **OUT** - OR Result
 
 ## Functionality

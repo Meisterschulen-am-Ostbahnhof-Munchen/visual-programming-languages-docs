@@ -1,5 +1,6 @@
 # ILOCK_CONFLICT_TRIP
 ![ILOCK_CONFLICT_TRIP](./ILOCK_CONFLICT_TRIP.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ILOCK_CONFLICT_TRIP** function block is used for **prioritized interlocking** with **conflict detection**. It evaluates two opposing binary signals (e.g., "Forward" and "Reverse") and only actively passes on one of the two commands as long as they are not present simultaneously. If both inputs are active at the same time, a **trip state** (error/lock) is triggered, which can only be cleared by an explicit reset (with inactive inputs). This function block is specifically designed for safety-critical applications where conflicting control commands must be reliably detected.

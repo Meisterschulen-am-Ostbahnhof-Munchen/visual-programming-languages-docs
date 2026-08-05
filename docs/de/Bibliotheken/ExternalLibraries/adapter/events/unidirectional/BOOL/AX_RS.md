@@ -51,6 +51,7 @@ Der Funktionsblock verfügt über drei Zustände im ECC:
 3. **RESET**: Zustand nach Reset-Operation (Q.D1 = FALSE)
 
 **Zustandsübergänge:**
+
 - START → SET: bei S-Ereignis
 - SET → RESET: bei R-Ereignis
 - RESET → SET: bei S-Ereignis

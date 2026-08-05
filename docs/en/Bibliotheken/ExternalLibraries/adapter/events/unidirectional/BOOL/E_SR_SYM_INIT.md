@@ -1,5 +1,6 @@
 # E_SR_SYM_INIT
 ![E_SR_SYM_INIT](./E_SR_SYM_INIT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `E_SR_SYM_INIT` implements an event-driven, bistable flip-flop with symmetric startup behavior and an INIT interface. It extends a simple SR flip-flop by adding the ability to set the output `Q` to a predefined value (`Q_INIT`) and perform deinitialization during the INIT event. The input qualification `QI` controls whether the operations (S, R, INIT) actually affect `Q`.

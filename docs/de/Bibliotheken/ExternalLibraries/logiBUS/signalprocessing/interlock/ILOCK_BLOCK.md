@@ -65,6 +65,7 @@ Der Baustein besitzt zwei Aktivierungszustände (UP, DOWN) und zwei Zwischenzust
 | **DOWN_STOP**| Zwischenzustand nach Freigabe von DOWN. Führt sofort den STOP-Algorithmus aus, sendet `EO_DOWN` und wechselt zurück zu STOP.                  |
 
 **Übergangsmatrix (vereinfacht):**
+
 - `STOP → UP` : `EI_UP` & `DI_UP = TRUE`
 - `STOP → DOWN` : `EI_DOWN` & `DI_DOWN = TRUE`
 - `UP → UP_STOP` : `EI_UP` & `DI_UP = FALSE`

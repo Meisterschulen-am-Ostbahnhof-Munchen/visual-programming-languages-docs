@@ -67,6 +67,7 @@ Diese Übung implementiert einen Standard IEC 61131-3 Vorwärtszähler (Counter 
 5. **Terminalausgabe**: Der aktuelle Zählerstand CV wird über ADI_TO_AUDI in ein AUDI-Format gewandelt und an Q_NumericValue_AUDI übergeben. Der Baustein gibt den Wert auf dem Terminal aus (Objekt OutputNumber_N1).
 
 **Hinweise**:
+
 - Der Kommentar im Netzwerk weist darauf hin, dass ADI_TO_AUDI keine negativen Zahlen verarbeiten kann – hier jedoch nicht relevant, da CV ≥ 0 ist.
 - Ein möglicher AX_D_FF könnte die Ereignisrate reduzieren, falls die Zählimpulse zu schnell kommen.
 

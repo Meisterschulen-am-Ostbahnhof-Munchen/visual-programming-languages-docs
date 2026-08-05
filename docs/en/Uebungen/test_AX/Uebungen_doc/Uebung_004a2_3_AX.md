@@ -1,5 +1,6 @@
 # Exercise_004a2_3_AX: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_MERGE_3
 ![Uebung_004a2_3_AX_network](./Uebung_004a2_3_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **Toggle Flip-Flop** (T-FF) controlled by two separate pushbuttons (inputs I1 and I2). The pushbuttons are configured as **BUTTON_SINGLE_CLICK**, meaning each button press generates exactly one event. The events from both pushbuttons are combined using an **E_MERGE_3** block and sent to the clock input (CLK) of the T-FF. The output Q of the T-FF switches a digital output (Q1). The switching behavior: Each button press (regardless of which button) toggles the output state.

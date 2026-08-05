@@ -1,6 +1,7 @@
 # sequence_T_05
 <img width="1422" height="375" alt="image" src="https://github.com/user-attachments/assets/36968bc8-cd20-4156-b33e-56e693a8c7d8" />
 ![sequence_T_05_ecc](./sequence_T_05_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_T_05` is a time-controlled sequencer with five output states. It cycles through a fixed sequence of states (State_01 to State_05), with the transition between each state controlled by adjustable time delays. The block is designed for applications where process steps or actions need to be activated sequentially for a defined duration.

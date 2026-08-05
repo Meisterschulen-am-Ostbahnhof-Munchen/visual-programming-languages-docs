@@ -1,5 +1,6 @@
 # AE_SPLIT_6
 ![AE_SPLIT_6](./AE_SPLIT_6.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AE_SPLIT_6** distributes an incoming AE adapter (type `adapter::types::unidirectional::AE`) to six identical outputs. It is a generic function block that can be reused for various AE types. The name derives from the 1:6 split: one input is split into six outputs.

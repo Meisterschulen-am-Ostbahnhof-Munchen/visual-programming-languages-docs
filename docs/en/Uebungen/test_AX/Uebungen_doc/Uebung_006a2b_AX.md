@@ -1,6 +1,7 @@
 # Exercise_006a2b_AX: 2x SR and T Flip-Flop with IXA
 <!-- Hier könnte ein Bild eingefügt werden, falls vorhanden. -->
 ![Uebung_006a2b_AX_network](./Uebung_006a2b_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the application of SR and T flip-flops in combination with a common reset signal ("janitor off").

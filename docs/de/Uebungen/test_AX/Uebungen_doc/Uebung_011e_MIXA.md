@@ -40,6 +40,7 @@ Das SubApp-Netzwerk verbindet die drei FB in einer Kette:
 3. **Q_NumericValue_PHYS** → erhält den UDINT-Wert an `rPhys` und schreibt ihn auf das Ausgangsobjekt `OutputNumber_N3`.
 
 **Hinweis**: Die Namespaces der beiden Objekte sind inkompatibel:  
+
 - `InputNumber_I1` stammt aus `Uebungen::const::UT::DefaultPool`.  
 - `OutputNumber_N3` stammt aus `Uebungen::const::UT::DefaultPool_Numeric`.  
 

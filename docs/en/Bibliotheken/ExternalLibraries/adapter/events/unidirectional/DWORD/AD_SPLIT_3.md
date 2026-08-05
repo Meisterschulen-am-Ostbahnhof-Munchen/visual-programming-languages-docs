@@ -1,5 +1,6 @@
 # AD_SPLIT_3
 ![AD_SPLIT_3](./AD_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AD_SPLIT_3` serves as a generic splitter for a unidirectional adapter (AD). It receives an incoming AD and forwards it to three separate outputs. This allows multiple uses of the same data or signal path.

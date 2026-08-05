@@ -53,6 +53,7 @@ Der Ablauf innerhalb der Subapplikation ist wie folgt:
    - `AX_TP_Q2.Q` → verbunden mit Adapterausgang `Q2`
 
 **Lernziele dieser Übung**:
+
 - Verstehen und Erstellen einer Subapplikation in 4diac IDE.
 - Arbeiten mit Adaptern für unidirektionale Ereignis- und Datenkommunikation.
 - Einsatz von Standardbausteinen wie Splitter (`AX_SPLIT_2`) und Timer (`AX_TP`).

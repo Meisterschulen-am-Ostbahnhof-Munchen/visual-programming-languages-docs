@@ -2,6 +2,7 @@ Here is the documentation for exercise **Exercise_035c** in the requested format
 # Exercise_035c: Mirror Sequence V2 with Step Chain
 ![Uebung_035c_network](./Uebung_035c_network.svg)
 *(Insert image of the exercise here, if available)*
+
 * * * * * * * * * *
 ## Introduction
 Exercise **Exercise_035c** ("Mirror Sequence V2 with Step Chain") demonstrates the control of a sequential sequence (step chain) with four states. Both time-controlled and event-driven transitions are used. The current status of the step chain is visualized via digital outputs (LEDs), and the number of the active step is displayed on a numeric display.

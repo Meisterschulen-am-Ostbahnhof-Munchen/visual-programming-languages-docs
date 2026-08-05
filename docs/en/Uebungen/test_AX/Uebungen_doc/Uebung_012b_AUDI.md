@@ -1,5 +1,6 @@
 # Exercise_012b_AUDI: Numeric Value Input and Storage
 ![Uebung_012b_AUDI_network](./Uebung_012b_AUDI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the acquisition of a numeric value via an ISOBUS input, its conversion into a storable format, and its persistent storage using an INI-based storage mechanism. The stored value is then read back and provided as an ISOBUS output value. The function blocks communicate via adapter interfaces (AUDI), which enable standardized data transfer.

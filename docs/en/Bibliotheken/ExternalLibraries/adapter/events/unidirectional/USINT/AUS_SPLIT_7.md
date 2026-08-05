@@ -1,6 +1,7 @@
 # OFF_SPLIT_7
 ![AUS_SPLIT_7](./AUS_SPLIT_7.svg)
 *(No image available)*
+
 * * * * * * * * * *
 ## Introduction
 The function block **OFF_SPLIT_7** is a generic block for distributing a single OFF adapter signal to seven identical OFF outputs. It serves as a signal multiplier in control applications based on the IEC 61499 standard. The block has no event- or data-based interfaces, but communicates exclusively via adapters of type `adapter::types::unidirectional::AUS`. The actual signal type is only determined at runtime via the generic attribute `GenericClassName`.

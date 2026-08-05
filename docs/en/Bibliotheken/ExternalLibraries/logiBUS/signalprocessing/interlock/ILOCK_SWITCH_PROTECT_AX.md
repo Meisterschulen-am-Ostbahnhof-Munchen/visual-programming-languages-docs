@@ -1,5 +1,6 @@
 # ILOCK_SWITCH_PROTECT_AX
 ![ILOCK_SWITCH_PROTECT_AX](./ILOCK_SWITCH_PROTECT_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ILOCK_SWITCH_PROTECT_AX` is used for interlocked switching between two input channels (UP/DOWN) with an adjustable protection dead time. It prioritizes the last active input and, through the dead time, prevents uncontrolled switching back and forth (bouncing) in the case of simultaneous or rapidly changing demands. The interface is provided via standardized unidirectional adapters (type `AX`) and a timer adapter.

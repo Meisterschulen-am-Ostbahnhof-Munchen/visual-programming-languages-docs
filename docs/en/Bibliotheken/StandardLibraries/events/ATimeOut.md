@@ -1,5 +1,6 @@
 # ATimeOut
 ![ATimeOut](https://user-images.githubusercontent.com/116869307/214142228-09857ba5-6164-4597-bb66-8a99e74f4d14.png)
+
 * * * * * * * * * *
 ## Introduction
 The **ATimeOut** adapter is a standardized interface (AdapterType) according to IEC 61499 for implementing timeout services. It defines the communication between a service user (PLUG) and a time service provider (SOCKET). Unlike `ARTimeOut`, this adapter is designed for simple, non-retriggerable timeouts.

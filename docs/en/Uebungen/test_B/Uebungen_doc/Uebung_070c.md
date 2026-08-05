@@ -1,5 +1,6 @@
 # Exercise_070c: Outputting WBSD to UT, PHYS
 ![Uebung_070c_network](./Uebung_070c_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates how to read the wheel-based machine speed (WBSD) from a fieldbus, convert it into a physical value, and display it as a numerical value on a Universal Terminal (UT).

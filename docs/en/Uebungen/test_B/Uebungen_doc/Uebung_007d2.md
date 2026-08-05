@@ -1,5 +1,6 @@
 # Exercise_007d2: Blinker with E_CYCLE and E_T_FF
 ![Uebung_007d2_network](./Uebung_007d2_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a blinker using `E_CYCLE` and `E_D_FF_TMIN`. The blinker generates a random on/off cycle, and a flip-flop with a minimum on-time of 3 seconds ensures that the output does not turn off too soon after being switched on.

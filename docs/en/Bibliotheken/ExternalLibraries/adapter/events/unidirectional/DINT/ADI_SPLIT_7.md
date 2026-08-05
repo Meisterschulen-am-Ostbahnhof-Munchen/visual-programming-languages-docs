@@ -1,5 +1,6 @@
 # ADI_SPLIT_7
 ![ADI_SPLIT_7](./ADI_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_SPLIT_7** is used to split an incoming **ADI** adapter signal into seven identical outputs. It is implemented as a generic function block (Generic FB) and enables the unidirectional distribution of data via one adapter socket to seven adapter plugs.

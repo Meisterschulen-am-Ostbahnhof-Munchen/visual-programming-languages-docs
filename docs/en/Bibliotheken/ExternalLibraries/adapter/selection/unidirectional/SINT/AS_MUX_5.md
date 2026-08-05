@@ -1,5 +1,6 @@
 # AS_MUX_5
 ![AS_MUX_5](./AS_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_MUX_5** implements a generic multiplexer for the adapter interface `adapter::types::unidirectional::AS`. It selects one of the five input adapters (`IN1` to `IN5`) based on an integer index `K` (values 0–4) and forwards its data connection to the output adapter `OUT`. The block is controlled by the event `REQ` and acknowledges the switchover with `CNF`.

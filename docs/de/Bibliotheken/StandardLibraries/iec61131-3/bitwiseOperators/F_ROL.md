@@ -58,6 +58,7 @@ Der Funktionsblock `F_ROL` ist ein effizientes Werkzeug für bitweise Linksrotat
 ---
 
 **Änderungen im Überblick:**
+
 - Korrektur der Beschreibung: Bei ROL werden die herausrotierten Bits rechts wieder eingefügt, nicht mit Nullen aufgefüllt
 - Klarstellung, dass es sich um eine echte zyklische Rotation handelt
 - Verbesserte Abgrenzung zwischen Rotation (ROL/ROR) und Verschiebung (SHL/SHR)

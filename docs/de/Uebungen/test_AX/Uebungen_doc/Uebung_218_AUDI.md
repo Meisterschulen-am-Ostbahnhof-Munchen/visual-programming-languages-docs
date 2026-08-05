@@ -35,6 +35,7 @@ Diese Übung realisiert einen IEC 61131-3 konformen Rückwärtszähler (AUDI_FB_
 6. Der aktuelle Zählerstand (`CV`) wird über eine Adapterverbindung an den numerischen Terminalausgang `Q_NumericValue_AUDI.u32NewValue` gesendet und auf dem Terminal angezeigt.
 
 **Lernziele:**
+
 - Verständnis des IEC 61131-3 Abwärtszählers (CTD) als Adapterbaustein.
 - Umgang mit Ereignis- und Adapterverbindungen in 4diac.
 - Initialisierung von Zählerwerten über Konvertierungsbausteine.
@@ -45,6 +46,7 @@ Diese Übung realisiert einen IEC 61131-3 konformen Rückwärtszähler (AUDI_FB_
 **Benötigte Vorkenntnisse:** Grundlagen der SPS-Programmierung, Umgang mit 4diac-IDE, Verständnis von Ereignis- und Datenflüssen.
 
 **Durchführung:**
+
 - Importieren Sie die Übung in die 4diac-IDE.
 - Weisen Sie die Ein-/Ausgänge den entsprechenden realen oder simulierten Hardware-Pins zu.
 - Starten Sie die Anwendung und beobachten Sie das Verhalten: Drücken von `I2` setzt den Zähler auf 10 zurück. Drücken von `I1` zählt herunter, bis 0 erreicht ist – dann leuchtet `Q1`. Der aktuelle Zählerstand wird im Terminal angezeigt.

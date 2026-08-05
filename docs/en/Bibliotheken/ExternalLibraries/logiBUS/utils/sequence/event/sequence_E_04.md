@@ -1,6 +1,7 @@
 # sequence_E_04
 <img width="1649" height="413" alt="image" src="https://github.com/user-attachments/assets/acbf2b37-87d0-40cc-a3a4-8871d3001c20" />
 ![sequence_E_04_ecc](./sequence_E_04_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_E_04` is a sequencer that implements a linear sequence of four states (State_01 to State_04) with a defined start state (START) and an end state (State_00). The transition between the individual states occurs exclusively through external events. The block is designed for control tasks where step-by-step, event-driven execution is required, such as in simple process or assembly sequences.

@@ -11,6 +11,7 @@ Ein Kommentar im Netzwerk weist darauf hin, dass die Konvertierung `F_LINT_TO_UD
 ## Verwendete Funktionsbausteine (FBs)
 
 **FB_CTD_LINT** (Rückwärtszähler LINT)
+
 - **Typ**: `iec61131::counters::FB_CTD_LINT`
 - **Parameter**: `PV = LINT#10` (Presetwert, Anfangswert für den Zähler)
 - **Ereigniseingänge**: `REQ` (wird sowohl von `Input_CD` als auch von `Input_LD` getriggert)
@@ -19,24 +20,28 @@ Ein Kommentar im Netzwerk weist darauf hin, dass die Konvertierung `F_LINT_TO_UD
 - **Datenausgänge**: `CV` (aktueller Zählerstand, LINT), `Q` (Ausgang, wenn CV ≤ 0)
 
 **Input_CD** (Digitaler Eingang für Count-Down)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameter**: `QI = TRUE`, `Input = Input_I1` (Hardware-Adresse)
 - **Ereignisausgänge**: `IND` (Ereignis bei Signalwechsel)
 - **Datenausgänge**: `IN` (aktueller Eingangswert, BOOL)
 
 **Input_LD** (Digitaler Eingang für Load)
+
 - **Typ**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameter**: `QI = TRUE`, `Input = Input_I2`
 - **Ereignisausgänge**: `IND`
 - **Datenausgänge**: `IN`
 
 **Output_Q1** (Digitaler Ausgang)
+
 - **Typ**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameter**: `QI = TRUE`, `Output = Output_Q1`
 - **Ereigniseingänge**: `REQ`
 - **Dateneingänge**: `OUT` (setzt den Ausgang)
 
 **F_LINT_TO_UDINT** (Konvertierung LINT → UDINT)
+
 - **Typ**: `iec61131::conversion::F_LINT_TO_UDINT`
 - **Ereigniseingänge**: `REQ`
 - **Ereignisausgänge**: `CNF`
@@ -44,6 +49,7 @@ Ein Kommentar im Netzwerk weist darauf hin, dass die Konvertierung `F_LINT_TO_UD
 - **Datenausgänge**: `OUT` (UDINT) – Achtung: Negative Eingangswerte werden nicht korrekt abgebildet.
 
 **Q_NumericValue** (Terminal-Ausgabe numerischer Wert)
+
 - **Typ**: `isobus::UT::Q::Q_NumericValue`
 - **Parameter**: `u16ObjId = OutputNumber_N1` (Objektkennung im Terminal)
 - **Ereigniseingänge**: `REQ`

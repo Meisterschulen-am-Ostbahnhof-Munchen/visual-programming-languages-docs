@@ -63,6 +63,7 @@ Der Programmablauf wird durch die physischen Eingänge I1, I2 und I3 gesteuert. 
 4. **Ausgabe**: Nach der Verarbeitung sendet `RS_T_FF` ein `CNF`-Ereignis an den Ausgangsbaustein `DigitalOutput_Q1`. Der neue Zustand `Q1` wird auf den physischen Ausgang Q1 übertragen.
 
 **Wichtige Hinweise**:
+
 - Durch die Ereignisverbindung aller drei `IND`-Ereignisse auf den gleichen `REQ`-Eingang wird das Flipflop bei jeder Eingangsänderung neu berechnet, auch wenn der Auslöser kein Taktwechsel ist. Dies kann zu unerwartetem Verhalten führen, wenn die Logik nicht berücksichtigt, dass das Flipflop eigentlich taktgesteuert arbeitet. In der Praxis sollte der Takt separat behandelt werden.
 - Die Übung dient dem Verständnis der Priorisierung von Reset vor Toggle in einem reset-dominanten Flipflop.
 

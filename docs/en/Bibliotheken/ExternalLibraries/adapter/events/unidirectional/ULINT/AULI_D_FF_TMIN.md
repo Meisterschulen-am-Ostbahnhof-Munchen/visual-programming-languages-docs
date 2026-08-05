@@ -1,5 +1,6 @@
 # AULI_D_FF_TMIN
 ![AULI_D_FF_TMIN](./AULI_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_D_FF_TMIN** implements a data latch (D flip-flop) with an adjustable minimum delay time between successive event outputs. It serves as a memory element for asynchronous event/data interfaces and ensures that a defined time interval elapses after a data transfer before another event is triggered. The block operates exclusively via adapter interfaces of type `AULI` (unidirectional) and is therefore particularly suitable for modular and distributed control architectures.

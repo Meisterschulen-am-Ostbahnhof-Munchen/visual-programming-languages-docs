@@ -1,5 +1,6 @@
 # AX_TO_AR
 ![AX_TO_AR](./AX_TO_AR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AX_TO_AR** function block is a composite function block that converts a Boolean signal from an AX adapter (type `adapter::types::unidirectional::AX`) into a REAL value (0.0 or 1.0) and outputs it via an AR adapter (type `adapter::types::unidirectional::AR`). The conversion is performed using the IEC 61131 function block **F_SEL**.

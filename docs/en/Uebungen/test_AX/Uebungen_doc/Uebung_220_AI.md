@@ -1,5 +1,6 @@
 # Exercise_220_AI: Standard IEC 61131-3 AI_FB_CTUD (Adapter Version, Up/Down Counter, INT) with Terminal Output
 ![Uebung_220_AI_network](./Uebung_220_AI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **up/down counter according to IEC 61131-3 (CTUD)** as an adapter version for the data type `INT`. The current counter value is output via a terminal (numeric output). Control is achieved via four digital inputs (CU, CD, R, LD) and two digital outputs (QU, QD). A constant value (INT#5) is loaded as a preset value (PV).

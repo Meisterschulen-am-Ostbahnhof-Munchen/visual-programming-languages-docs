@@ -1,5 +1,6 @@
 # sequence_E_04_AX
 ![sequence_E_04_AX_ecc](./sequence_E_04_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The `sequence_E_04_AX` is a variant of the `sequence_E_04`, which additionally uses adapters (`AX`) for the outputs. It controls a purely event-driven sequence with 4 output states.

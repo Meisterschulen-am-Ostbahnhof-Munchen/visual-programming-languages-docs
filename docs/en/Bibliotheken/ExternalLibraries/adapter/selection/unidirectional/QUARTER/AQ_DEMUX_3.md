@@ -1,5 +1,6 @@
 # AQ_DEMUX_3
 ![AQ_DEMUX_3](./AQ_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AQ_DEMUX_3** implements a generic demultiplexer for analog signals (AQ – Analog Quantity). It routes the signal present at its input adapter to one of three output adapters. The active output is selected via the index parameter K, which is set by an event at the **REQ** input. The block is designed as a **generic FB** and can be used in IEC 61499-based control systems for flexible signal distribution.

@@ -1,5 +1,6 @@
 # ALR_TO_AX
 ![ALR_TO_AX](./ALR_TO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ALR_TO_AX** function block is a composite function block for converting an LREAL value (via the unidirectional ALR adapter) into a BOOL value (via the unidirectional AX adapter). It is typically used to convert an analog input signal into a digital output signal – for example, to detect a threshold being exceeded. The function block is based on a simple zero comparison and triggers the output event as soon as a valid value is present at the input.

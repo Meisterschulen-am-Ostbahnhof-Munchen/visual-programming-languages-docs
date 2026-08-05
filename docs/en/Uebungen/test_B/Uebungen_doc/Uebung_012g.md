@@ -1,5 +1,6 @@
 # Exercise_012g: Numeric Value Input PHYS and Storage via INI
 ![Uebung_012g_network](./Uebung_012g_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of a physical numeric input (`NumericValue_PHYS`) in conjunction with persistent storage via the INI file format. The goal is to store an entered numeric value (e.g., from a sensor or user input) once and read it back as needed. The exercise introduces fundamental concepts of event handling, data flow chaining, and non-volatile data storage in 4diac.

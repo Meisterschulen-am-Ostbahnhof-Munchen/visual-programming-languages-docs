@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_085`. It introduces the principle of the D flip-flop (delay or data flip-flop).
 ## 🎧 Podcast
 ![Uebung_085_network](./Uebung_085_network.svg)
+
 * [The relay in detail: switching amplifiers, protection, and the secrets of A1/A2, 85/86, and hysteresis ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Relais-im-Detail-Schaltverstrker--Schutz-und-die-Geheimnisse-von-A1A2--8586-und-der-Hysterese-e3audsc)
 
 ----

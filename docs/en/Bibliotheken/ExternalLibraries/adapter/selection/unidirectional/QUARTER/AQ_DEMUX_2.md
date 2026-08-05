@@ -1,5 +1,6 @@
 # AQ_DEMUX_2
 ![AQ_DEMUX_2](./AQ_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AQ_DEMUX_2** is a generic function block that acts as a demultiplexer for analog values (AQ – Analog Quantity). It distributes an incoming AQ value to one of two possible output adapters, controlled by an index. The block is designed as a generic FB (Generic FB) and allows for flexible reuse in various application contexts.

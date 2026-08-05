@@ -35,6 +35,7 @@ Keine eigenen Daten-Ausgänge. Der ausgewählte Wert wird über den Adapter `OUT
 | `OUT`   | `adapter::types::unidirectional::AUI`| Plug (Ausgang) | Gibt das ausgewählte Signal und ein Bestätigungsereignis aus |
 
 **Adapter-Details:**
+
 - **Socket `G`**: Stellt einen Ereignisausgang (`E1`) und einen Datenausgang (`D1`) bereit. `G.E1` löst die Selektion aus, `G.D1` dient als Selektor (0 → wähle `IN0`, ≠0 → wähle `IN1`).
 - **Plug `OUT`**: Besitzt einen Ereigniseingang (`E1`) und einen Dateneingang (`D1`). Der FB sendet nach abgeschlossener Selektion ein Ereignis an `OUT.E1` und legt den ausgewählten Wert an `OUT.D1` an.
 

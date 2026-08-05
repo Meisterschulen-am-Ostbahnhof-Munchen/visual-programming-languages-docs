@@ -46,6 +46,7 @@ Der Funktionsblock Q_Priority_AUS dient zur Änderung der Priorität einer Alarm
 Nach dem Auslösen von `INIT` mit der gültigen Objekt-ID der Alarmmaske initialisiert der Baustein die interne Kommunikation. Sobald über den Adapter `u8Priority` ein Ereignis eintrifft, wird der Dienst zur Prioritätsänderung ausgeführt. Der Baustein sendet die neue Priorität an den virtuellen Terminal und gibt nach Abschluss die Bestätigung über `CNF` mit dem Status und dem Ergebniswert aus. Gleichzeitig wird über den Adapter `u8OldPriority` die bisherige Priorität (sofern verfügbar) zurückgegeben.
 
 **Rückgabewerte (s16result):**
+
 - **VT_E_NO_ERR (0)** – Erfolgreich
 - **VT_E_OVERFLOW (-6)** – Pufferüberlauf
 - **VT_E_NOACT (-8)** – Befehl im aktuellen Zustand nicht möglich

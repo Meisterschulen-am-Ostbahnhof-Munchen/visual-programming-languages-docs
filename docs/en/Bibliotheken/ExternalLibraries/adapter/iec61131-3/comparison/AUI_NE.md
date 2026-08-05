@@ -1,5 +1,6 @@
 # AUI_NE
 ![AUI_NE](./AUI_NE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUI_NE` performs a not equal comparison for two input values. It is built as a composite function block (FB) from the IEC 61131-3 comparison block `F_NE`. Communication with the environment is via standardized adapter interfaces (`AUI` for the inputs, `AX` for the output). This allows it to be seamlessly integrated into adapter-based architectures of the 4diac IDE.

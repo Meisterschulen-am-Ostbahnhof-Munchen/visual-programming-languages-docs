@@ -1,5 +1,6 @@
 # AB_SPLIT_2
 ![AB_SPLIT_2](./AB_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_SPLIT_2** splits a unidirectional adapter of type `AB` into two separate adapter outputs. It is implemented as a generic function block (Generic FB) and allows the simultaneous forwarding of the incoming adapter to two independent target addresses. This simplifies the topology in control applications when a signal is needed multiple times without affecting the original data flow.

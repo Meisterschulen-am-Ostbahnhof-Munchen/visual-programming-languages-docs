@@ -1,5 +1,6 @@
 # AD_DEMUX_3
 ![AD_DEMUX_3](./AD_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AD_DEMUX_3 is a generic demultiplexer function block that redirects an input value provided via an adapter (type `unidirectional::AD`) to one of three output adapters. The target output is selected using a numerical index. This function block is primarily used in control and automation technology to route signals to specific components.

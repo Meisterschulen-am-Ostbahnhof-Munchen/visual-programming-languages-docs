@@ -31,6 +31,7 @@ In industrial processes, it is often necessary to monitor sensor values. The NE 
 IF NE(Sensor1, Sensor2) THEN
 // Alarm auslösen oder Korrekturmaßnahmen einleiten
 END_IF
+
 2. **Control of Production Processes:**
 
 In a production process, the NE operator can be used to determine whether a specific process step is not yet complete. If the current step is not the target step, the process can continue:
@@ -38,6 +39,7 @@ In a production process, the NE operator can be used to determine whether a spec
 IF NE(AktuellerSchritt, ZielSchritt) THEN
 // Prozess fortsetzen
 END_IF
+
 3. **Temperature Control:**
 
 In a heating system, the NE operator can be used to check if the current temperature is not equal to the set temperature. If this is the case, the heating can remain activated:
@@ -45,6 +47,7 @@ In a heating system, the NE operator can be used to check if the current tempera
 IF NE(AktuelleTemperatur, SollTemperatur) THEN
 // Heizung weiter aktivieren
 END_IF
+
 4. **Error Detection:**
 
 The NE operator can also be used for error detection. For example, if a setpoint and an actual value are compared and they do not match, an error signal can be generated:

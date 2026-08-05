@@ -1,5 +1,6 @@
 # AR_SPLIT_2
 ![AR_SPLIT_2](./AR_SPLIT_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AR_SPLIT_2** is a generic function block that splits an incoming adapter of type `adapter::types::unidirectional::AR` into two separate outputs (OUT1, OUT2). It serves to forward a signal to two subsequent function blocks without modifying the data. The function block is implemented as a generic type (`GEN_AR_SPLIT`) and is parameterized at runtime.

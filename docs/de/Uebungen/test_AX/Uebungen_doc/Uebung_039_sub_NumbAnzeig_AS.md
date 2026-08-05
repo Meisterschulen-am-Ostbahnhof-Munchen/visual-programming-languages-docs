@@ -41,11 +41,13 @@ Die gesamte Verarbeitung erfolgt ereignisgesteuert: Sobald sich der AS-Adatper-E
 Die SubApp `Uebung_039_sub_NumbAnzeig_AS` realisiert eine standardisierte Schnittstelle zur Anzeige eines numerischen Werts auf einem ISOBUS-Terminal. Durch die Verwendung der Adapterkonvertierung `AS_TO_AUDI` und des Anzeigebausteins `Q_NumericValue_AUDI` kann sie in übergeordnete Steuerungen eingebunden werden, die einen AS-Schnittstellenstandard nutzen.
 
 **Lernziele dieser Übung:**
+
 - Verständnis der Adapter-Konvertierung zwischen AS und AUDI.
 - Einbindung von vordefinierten ISOBUS-Objekten (`OutputNumber_N1`) in eigene SubApplikationen.
 - Aufbau einer einfachen Signalverarbeitungskette zur Terminalanzeige.
 
 **Benötigte Vorkenntnisse:**
+
 - Grundlagen der 4diac-IDE und der IEC 61499-Modellierung.
 - Basiswissen zu ISOBUS und dessen Objektpool-Konzept.
 

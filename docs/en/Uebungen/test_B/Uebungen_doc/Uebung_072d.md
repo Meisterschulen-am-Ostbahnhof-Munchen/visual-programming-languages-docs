@@ -1,5 +1,6 @@
 # Exercise_072d: Outputting WBSD to UT with QI
 ![Uebung_072d_network](./Uebung_072d_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates how to output the working width-based ground speed (WBSD) to a Universal Terminal (UT). The output is controlled by a quality indicator (QI), which is switched on and off via a push button. The QI determines whether the current speed is sent to the UT. The push button (digital input) controls both the QI and a digital output (Q2) for status indication via a T-flip-flop.

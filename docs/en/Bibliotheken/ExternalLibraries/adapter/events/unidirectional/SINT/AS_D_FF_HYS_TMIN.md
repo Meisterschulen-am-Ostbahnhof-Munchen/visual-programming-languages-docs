@@ -1,5 +1,6 @@
 # AS_D_FF_HYS_TMIN
 ![AS_D_FF_HYS_TMIN](./AS_D_FF_HYS_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_D_FF_HYS_TMIN** implements a data-triggered flip-flop (D flip-flop) with hysteresis and a minimal time delay between successive events. It serves for stable, debounced signal transmission in time-critical control sequences. The block uses adapters for unidirectional communication, with an input signal received via socket **I** and the latching output signal provided via plug **Q**.

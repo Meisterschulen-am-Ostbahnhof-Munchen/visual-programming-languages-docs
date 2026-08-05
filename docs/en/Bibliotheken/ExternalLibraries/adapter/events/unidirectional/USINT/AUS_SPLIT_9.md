@@ -1,5 +1,6 @@
 # OFF_SPLIT_9
 ![AUS_SPLIT_9](./AUS_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **OFF_SPLIT_9** function block is a generic component that distributes an incoming OFF signal to nine separate outputs. It serves as a fan-out for unidirectional adapter connections and is particularly suitable for applications where a signal needs to be forwarded to multiple receivers in parallel.

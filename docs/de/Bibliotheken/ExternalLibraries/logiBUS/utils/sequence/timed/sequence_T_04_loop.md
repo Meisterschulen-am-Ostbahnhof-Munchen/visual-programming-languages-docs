@@ -42,6 +42,7 @@ Der Funktionsblock `sequence_T_04_loop` ist ein zeitgesteuerter Sequenzer mit vi
 Der FB ist als BasicFB mit einer ECC (Execution Control Chart) implementiert. Die Sequenz beginnt im initialen Zustand `xSTART`. Ein `START_S1`-Ereignis führt in den ersten aktiven Zustand `sState_01`.
 
 **In jedem aktiven Zustand (`sState_01` bis `sState_04`) werden nacheinander folgende Aktionen ausgeführt:**
+
 1.  **Exit-Step des vorherigen Zustands**: Der zugehörige Datenausgang (`DO_Sx`) wird auf `FALSE` gesetzt (außer beim ersten Eintritt von `xSTART`).
 2.  **Confirmation-Step**: Die Zustandsnummer `STATE_NR` wird aktualisiert und die Verzögerungszeit für den *nächsten* Übergang wird an den `timeOut`-Adapter übergeben (`timeOut.DT`).
 3.  **Entry-Step des neuen Zustands**: Der zugehörige Datenausgang (`DO_Sx`) wird auf `TRUE` gesetzt und das entsprechende Ereignis (`EO_Sx`) wird ausgelöst.

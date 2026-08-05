@@ -1,5 +1,6 @@
 # ISO_NETEVENT_e
 ![ISO_NETEVENT_e](./ISO_NETEVENT_e.svg)
+
 * * * * * * * * * *
 ## Introduction
 The global constant file `ISO_NETEVENT_e` defines an enumeration of event types for network management in an ISOBUS-compatible system. It provides named, integer constants that represent various state changes and events in the network, such as adding or removing devices or address conflicts. Using these constants improves the readability and maintainability of the source code.

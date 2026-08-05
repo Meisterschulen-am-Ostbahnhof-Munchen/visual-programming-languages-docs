@@ -1,5 +1,6 @@
 # WORDS_TO_ARR08B
 ![WORDS_TO_ARR08B](./WORDS_TO_ARR08B.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **WORDS_TO_ARR08B** is used to concatenate four 16-bit words (type `WORD`) into a byte array of length 8 (type `ARRAY[0..7] OF BYTE`). It uses the little-endian format (Intel standard), which stores the least significant bytes first. The block is controlled via an event input and is particularly suitable for PC-based controllers (e.g., Beckhoff, Wago, B&R, Raspberry Pi).

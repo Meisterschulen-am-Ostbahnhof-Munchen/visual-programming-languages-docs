@@ -1,5 +1,6 @@
 # Exercise_221b: Standard IEC 61131-3 FB_CTUD_DINT (Forward/Backward Counter, DINT) with Terminal Output (PHYS)
 ![Uebung_221b_network](./Uebung_221b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a combined forward/backward counter according to IEC 61131-3 (type `FB_CTUD_DINT`) and outputs the current counter value as well as the counter status (overflow/underflow) via digital outputs and a terminal output (PHYS). The counter can be controlled via four digital inputs: count up (CU), count down (CD), reset (R), and load the initial value (LD).

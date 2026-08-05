@@ -1,5 +1,6 @@
 # Exercise_004b2b_sub: Sub-application for a Toggle Flip-Flop (E_SWITCH + E_SR)
 ![Uebung_004b2b_sub_network](./Uebung_004b2b_sub_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **toggle flip-flop** (also known as a switching element) using the function blocks `E_SWITCH` and `E_SR`. The goal is to toggle the Boolean output `Q` on each incoming event `IND`. The implementation is a sub-application that can be integrated as a reusable component into higher-level applications.

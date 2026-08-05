@@ -1,5 +1,6 @@
 # Exercise_011b1_PHYSA: Numeric Value Input ADD with Physical Values
 ![Uebung_011b1_PHYSA_network](./Uebung_011b1_PHYSA_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the processing of physical measured values (e.g., voltage, current, speed) using an arithmetic operation. Two input values from defined physical sources are combined using an addition block, and the result is passed to a physical output. The focus is on the correct wiring of the adapter interfaces between the function blocks (FBs) for signal coupling with real I/O channels.

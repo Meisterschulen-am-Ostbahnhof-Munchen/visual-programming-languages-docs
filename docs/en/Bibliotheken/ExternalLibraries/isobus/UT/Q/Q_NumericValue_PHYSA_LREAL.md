@@ -1,5 +1,6 @@
 # Q_NumericValue_PHYSA_LREAL
 ![Q_NumericValue_PHYSA_LREAL](./Q_NumericValue_PHYSA_LREAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **Q_NumericValue_PHYSA_LREAL** serves as a command for changing a numeric value in the ISOBUS context (ISO 11783-6). It receives a physical LREAL value via the **ALR** adapter and handles the actual processing via the embedded function block **Q_NumericValue_PHYS_LREAL**. The function block uses adapter interfaces for physical value input as well as for signaling when the permissible range limits are exceeded or fallen below.

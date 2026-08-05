@@ -46,6 +46,7 @@ Die SubApp besitzt keine eigenen Ein-/Ausgangsschnittstellen (SubAppInterfaceLis
 5. Der Baustein `Q_NumericValue` setzt den empfangenen physikalischen Wert auf die UT-Variable `NumberVariable_Wheel_based_machine_speed`, sodass die Geschwindigkeit am Terminal angezeigt wird.
 
 **Besonderheiten**:
+
 - Die Übung arbeitet **ohne externe Events** – die Blöcke sind rein datengetrieben (keine sichtbaren Ereignisverbindungen).
 - Die verwendeten Adapter erlauben eine flexible Kopplung der Funktionen, ohne dass alle Bausteine im selben Netzwerk liegen müssen.
 - Die UT‑Variable muss im Zielsystem als `NumberVariable_Wheel_based_machine_speed` vorhanden sein (Import aus dem Pool `DefaultPool_TECU_Numeric`).

@@ -1,5 +1,6 @@
 # Exercise_221b_ALR: Standard IEC 61131-3 ADI_FB_CTUD (Adapter Version, Up/Down Counter, DINT) with Terminal Output (PHYS)
 ![Uebung_221b_ALR_network](./Uebung_221b_ALR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an up/down counter according to IEC 61131-3 (type `ADI_FB_CTUD`). The counter is controlled via digital inputs and outputs the current counter value via both digital outputs (as limit signals) and a terminal output (physical value). The counting range uses 32-bit integers (DINT), and negative values are also possible.

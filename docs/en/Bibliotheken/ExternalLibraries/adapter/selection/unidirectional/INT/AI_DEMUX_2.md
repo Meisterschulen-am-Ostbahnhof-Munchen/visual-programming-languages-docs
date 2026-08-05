@@ -1,5 +1,6 @@
 # AI_DEMUX_2
 ![AI_DEMUX_2](./AI_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_DEMUX_2** is a generic demultiplexer for unidirectional analog input (AI) adapters. It distributes an AI value arriving via socket **IN** to either one of the two output adapters **OUT1** or **OUT2**, based on an index **K** passed at event input **REQ**. The block is implemented as a generic FB (`GEN_AI_DEMUX`), thus enabling flexible adaptation to different AI data types.

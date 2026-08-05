@@ -1,5 +1,6 @@
 # AX_MUX_5
 ![AX_MUX_5](./AX_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AX_MUX_5` is a generic multiplexer for adapters of type `AX`. It selects one of five unidirectional input adapters (`IN1`–`IN5`) based on the index `K` and forwards its data to the output adapter `OUT`. The block is controlled by the event `REQ`.

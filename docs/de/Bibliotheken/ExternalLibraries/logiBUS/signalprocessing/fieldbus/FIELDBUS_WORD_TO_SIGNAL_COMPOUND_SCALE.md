@@ -61,6 +61,7 @@ IF (WORD_TO_UINT(IN) <= WORD_TO_UINT(VALID_SIGNAL_W)) THEN
     highByte := temp AND WORD#16#00FF;
     lowByte := IN AND WORD#16#00FF;
     OUT := UINT_TO_REAL(WORD_TO_UINT(highByte)) * SCALE_HIGH
+
          + UINT_TO_REAL(WORD_TO_UINT(lowByte)) * SCALE_LOW
          + DINT_TO_REAL(OFFSET);
     VALID := BOOL#TRUE;

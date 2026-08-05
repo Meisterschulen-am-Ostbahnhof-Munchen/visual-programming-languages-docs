@@ -1,5 +1,6 @@
 # ATM_AX_TP_RETRIG
 ![ATM_AX_TP_RETRIG](./ATM_AX_TP_RETRIG.svg)
+
 * * * * * * * * * *
 ## Introduction
 The `ATM_AX_TP_RETRIG` is a retriggerable pulse timer function block. It generates a pulse of defined duration at the output when the input switches to TRUE. During the pulse's execution, additional triggers can restart the timer (retrigger function). A reset input immediately terminates the pulse. The block uses standardized adapters for input and output, enabling flexible integration into modular control systems.

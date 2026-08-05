@@ -3,6 +3,7 @@
 A common use case is a soft AI and an AUX button.
 TRUE dominates, so as soon as an input is TRUE, the output is set to TRUE.
 ![](https://user-images.githubusercontent.com/113907580/227976949-e73303db-993f-431e-b679-477dd9ad877e.png)
+
 * * * * * * * * * *
 
 ## Introduction

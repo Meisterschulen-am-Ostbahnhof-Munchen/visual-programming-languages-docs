@@ -1,5 +1,6 @@
 # Exercise_008_AE: Flasher with E_CYCLE, E_SWITCH, and E_SR
 ![Uebung_008_AE_network](./Uebung_008_AE_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a simple flasher (alternating flasher) using adapter function blocks (FBs) for event-driven logic. The core consists of a cycle generator (AE_CYCLE), a toggle switch (AX_SWITCH), and an SR flip-flop (AX_SR). Feedback and output to a digital output are implemented via a split (AX_SPLIT_2) and a merger (AX_AE_MERGE). This exercise demonstrates the use of event and adapter connections in the 4diac IDE.

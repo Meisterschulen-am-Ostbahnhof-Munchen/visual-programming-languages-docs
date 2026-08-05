@@ -1,6 +1,7 @@
 # sequence_E_05_loop
 <img width="1437" height="390" alt="image" src="https://github.com/user-attachments/assets/58d26053-5e20-4151-bbb6-8675bbc30ab6" />
 ![sequence_E_05_loop_ecc](./sequence_E_05_loop_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_E_05_loop` implements a cyclic sequence with five states. The transition between the individual states occurs exclusively via external events. The block is designed for applications in which a process step may only begin after the completion of a previous step and the arrival of a specific enable signal. The sequence can be reset to the initial start state from any state.

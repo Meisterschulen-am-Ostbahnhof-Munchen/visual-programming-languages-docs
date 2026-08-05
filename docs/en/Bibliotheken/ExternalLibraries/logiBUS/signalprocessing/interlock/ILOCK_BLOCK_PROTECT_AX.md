@@ -1,5 +1,6 @@
 # ILOCK_BLOCK_PROTECT_AX
 ![ILOCK_BLOCK_PROTECT_AX](./ILOCK_BLOCK_PROTECT_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ILOCK_BLOCK_PROTECT_AX` implements a prioritized interlock for two opposing directions (UP/DOWN) while taking into account a configurable protection dead time. The block is implemented as an adapter version, meaning that the inputs and outputs are provided via IEC 61499 adapters. The goal is the safe control of actuators where only one direction may be active at a time, for example, during lifting or swiveling movements. The first activated input takes precedence; a change in direction only occurs after the protection time has elapsed and a new evaluation has been performed.

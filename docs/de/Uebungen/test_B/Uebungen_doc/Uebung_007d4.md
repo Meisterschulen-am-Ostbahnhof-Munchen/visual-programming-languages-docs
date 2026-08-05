@@ -71,6 +71,7 @@ Das Ergebnis schaltet einen digitalen Ausgang (logiBUS QX) – es entsteht ein u
 `E_CYCLE` → `FB_RANDOM` → `E_D_FF_ANY_HYS` → `F_MOVE` → `F_GT` → `DigitalOutput_Q1`
 
 **Lernziele dieser Übung:**
+
 - Verständnis des Zusammenspiels von Ereignis- und Datenflüssen in 4diac.
 - Einsatz eines zyklischen Taktes (E_CYCLE) zur Steuerung einer wiederholten Berechnung.
 - Anwendung von Zufallsgeneratoren und Hysterese‑Funktionen zur Erzeugung eines unregelmäßigen Signals.

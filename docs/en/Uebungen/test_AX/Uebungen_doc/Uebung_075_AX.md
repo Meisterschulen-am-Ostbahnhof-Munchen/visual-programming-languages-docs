@@ -1,5 +1,6 @@
 # Exercise_075_AX: LD to Q
 ![Uebung_075_AX_network](./Uebung_075_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the control of digital outputs via an ISOBUS lighting adapter. The sub-app element "Exercise_075_AX" processes the turn signal signals (right/left) of a vehicle and forwards them to corresponding digital outputs (e.g., logiBUS outputs). The comment "LD to Q" indicates the transmission of lighting data (LD) to the outputs (Q).

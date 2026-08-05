@@ -1,5 +1,6 @@
 # AUDI_SPLIT_7
 ![AUDI_SPLIT_7](./AUDI_SPLIT_7.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUDI_SPLIT_7` is used to distribute a single AUDI input signal to seven identical AUDI output signals. It is designed as a generic building block and is suitable for all unidirectional AUDI adapter types.

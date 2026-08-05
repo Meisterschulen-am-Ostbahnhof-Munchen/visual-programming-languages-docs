@@ -1,5 +1,6 @@
 # NVS_AR
 ![NVS_AR](./NVS_AR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `NVS_AR` is used to load and store REAL data in non-volatile storage (NVS) using a key. It provides unidirectional communication with other IEC 61499 function blocks via two AR adapter interfaces. The block encapsulates the internal `NVS` function block and extends its functionality with a standardized adapter connection.

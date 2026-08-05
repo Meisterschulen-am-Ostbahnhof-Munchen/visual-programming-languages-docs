@@ -39,6 +39,7 @@ Diese Übung demonstriert die Verwendung von Adaptern und einer benutzerdefinier
 4. Der Adapterausgang `AX_OUT` speist den Eingang `OUT` des Digitalausgangsbausteins `DigitalOutput_Q1`, sodass Q1 (z. B. ein Relais oder eine Lampe) eingeschaltet wird, solange die Geschwindigkeit größer als 0 ist.
 
 **Lernziele**:  
+
 - Verwendung von ISOBUS- und logiBUS-Bausteinen in 4diac.  
 - Arbeiten mit Adaptern (AUI/AUDI) und Adapter-Splittern.  
 - Einbindung einer selbst erstellten SubApp (AX_GT_0_UINT) in ein größeres Netzwerk.  

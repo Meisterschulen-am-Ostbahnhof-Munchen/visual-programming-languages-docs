@@ -1,6 +1,7 @@
 # AUDI_MUX_3
 (No image available)
 ![AUDI_MUX_3](./AUDI_MUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUDI_MUX_3` is a generic multiplexer (MUX) that allows you to select one of three adapter inputs (IN1, IN2, IN3) of type `adapter::types::unidirectional::AUDI` and connect it to the adapter output `OUT`. The selection is made via the index (0, 1, or 2) applied to the data input `K` and is triggered by an event at the input `REQ`. This function block is designed for use in automation systems that utilize the AUDI adapter standard.

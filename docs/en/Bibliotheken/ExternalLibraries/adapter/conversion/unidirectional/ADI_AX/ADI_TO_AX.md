@@ -1,5 +1,6 @@
 # ADI_TO_AX
 ![ADI_TO_AX](./ADI_TO_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ADI_TO_AX** function block is a composite module that performs a simple signal conversion between two adapter types. It converts a DINT value (type: *adapter::types::unidirectional::ADI*) received via the **ADI_IN** socket into a BOOL value and outputs it via the **AX_OUT** plug (type: *adapter::types::unidirectional::AX*). The conversion is performed by comparing the received DINT value with the constant value 0. If the value is not equal to 0, the BOOL output is set to TRUE; if they are equal, it is set to FALSE. This module is particularly suitable for connecting digital signal sources encoded as integers to Boolean interfaces.

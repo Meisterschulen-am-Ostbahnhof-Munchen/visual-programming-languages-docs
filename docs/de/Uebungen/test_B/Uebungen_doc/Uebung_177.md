@@ -41,6 +41,7 @@ Der Ablauf der Steuerung gestaltet sich wie folgt:
     *   Dies bewirkt, dass der physikalische Ausgang `Output_Q1` (z.B. eine Lampe) für genau 1 Sekunde leuchtet, jedes Mal wenn der Eingangstaster neu gedrückt wird.
 
 **Verbindungsübersicht:**
+
 *   `DigitalInput_I1.IND` -> `FB_R_TRIG.REQ`
 *   `DigitalInput_I1.IN` -> `FB_R_TRIG.CLK`
 *   `FB_R_TRIG.CNF` -> `E_TP.REQ`

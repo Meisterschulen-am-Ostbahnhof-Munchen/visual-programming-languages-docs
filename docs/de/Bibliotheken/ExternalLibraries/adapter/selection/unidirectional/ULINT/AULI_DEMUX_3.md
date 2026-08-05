@@ -30,11 +30,13 @@ Keine eigenen Datenausgänge. Die Daten werden über die Adapter‑Plugs übertr
 
 ### **Adapter**
 **Plugs** (Ausgänge):
+
 - `OUT1`: Typ `adapter::types::unidirectional::AULI`
 - `OUT2`: Typ `adapter::types::unidirectional::AULI`
 - `OUT3`: Typ `adapter::types::unidirectional::AULI`
 
 **Socket** (Eingang):
+
 - `IN`: Typ `adapter::types::unidirectional::AULI` – Eingangswert, der demultiplext werden soll.
 
 ## Funktionsweise

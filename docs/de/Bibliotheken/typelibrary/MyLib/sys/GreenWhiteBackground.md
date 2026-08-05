@@ -28,11 +28,13 @@ Die Übung "GreenWhiteBackground" demonstriert die Verwendung von Hintergrundfar
 ## Programmablauf und Verbindungen
 
 **Ereignisverbindungen:**
+
 - REQ → F_SEL_I.REQ
 - F_SEL_I.CNF → Q_BackgroundColour.REQ
 - Q_BackgroundColour.CNF → CNF
 
 **Datenverbindungen:**
+
 - DI1 → F_SEL_I.G (Selektor-Eingang)
 - u16ObjId → Q_BackgroundColour.u16ObjId (Objekt-ID)
 - F_SEL_I.OUT → Q_BackgroundColour.u8Colour (ausgewählte Farbe)
@@ -41,6 +43,7 @@ Die Übung "GreenWhiteBackground" demonstriert die Verwendung von Hintergrundfar
 - Q_BackgroundColour.STATUS → STATUS_1 (Statusinformation)
 
 **Lernziele:**
+
 - Verwendung von Selektions-Funktionsbausteinen
 - Implementierung von Farbwechsel-Funktionalität
 - Umgang mit ISOBUS-konformen Funktionsbausteinen

@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_049`. This exercise is designed to practice creating extensive point-to-point connections.
 ## 🎧 Podcast
 ![Uebung_049_network](./Uebung_049_network.svg)
+
 * [4diac IDE: How the IEC 61499 Standard is Revolutionizing Industrial Automation ](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Wie-der-IEC-61499-Standard-die-Industrieautomatisierung-revolutioniert-e36756a)
 * [IEC 61499 vs. 61131: Do We Need a New Standard for IIoT? Analysis of a heated debate about distributed intelligence
 * [IEC 61499: Does the new standard liberate industrial automation?] A comparison with IEC 61499 and the bridge between OT & IT.

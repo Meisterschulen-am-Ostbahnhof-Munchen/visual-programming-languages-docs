@@ -1,5 +1,6 @@
 # F_TRUNC
 ![F_TRUNC](https://github.com/user-attachments/assets/b944edcb-c90b-41d8-98e6-3c3b81e50e9f)
+
 * * * * * * * * * *
 ![F_TRUNC](F_TRUNC.svg)
 ## Introduction

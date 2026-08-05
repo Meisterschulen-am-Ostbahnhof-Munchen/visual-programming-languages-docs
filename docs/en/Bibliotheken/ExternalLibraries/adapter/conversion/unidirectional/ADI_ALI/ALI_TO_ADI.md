@@ -1,5 +1,6 @@
 # ALI_TO_ADI
 ![ALI_TO_ADI](./ALI_TO_ADI.svg)
+
 * * * * * * * * * *
 ## Introduction
 This composite function block converts an **ALI** adapter type (LINT, 64-bit integer) to an **ADI** adapter type (DINT, 32-bit integer). It enables seamless integration of components using different adapter formats by encapsulating data conversion and synchronizing it via event control.

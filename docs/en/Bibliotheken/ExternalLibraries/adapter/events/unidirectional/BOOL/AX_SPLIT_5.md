@@ -21,9 +21,11 @@ No direct data outputs available
 
 ### **Adapters**
 **Input Adapters:**
+
 - **IN** - AX unidirectional adapter (socket)
 
 **Output Adapters:**
+
 - **OUT1** - AX unidirectional adapter (plug)
 - **OUT2** - AX unidirectional adapter (plug)
 - **OUT3** - AX unidirectional adapter (plug)

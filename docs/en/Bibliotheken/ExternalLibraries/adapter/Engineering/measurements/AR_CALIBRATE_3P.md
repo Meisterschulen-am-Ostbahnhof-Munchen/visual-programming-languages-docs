@@ -1,5 +1,6 @@
 # AR_CALIBRATE_3P
 ![AR_CALIBRATE_3P](./AR_CALIBRATE_3P.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AR_CALIBRATE_3P** function block enables 3-point calibration of an analog input signal using adapters. It is specifically designed for joysticks that exhibit center drift and corrects this drift by linearizing between three reference points: minimum, mean, and maximum. The calibration points are saved and can be reset as needed.

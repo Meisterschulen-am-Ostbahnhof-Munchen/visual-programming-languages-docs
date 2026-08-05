@@ -10,6 +10,7 @@ Diese Übung implementiert einen Vorwärts-/Rückwärtszähler (Up/Down Counter)
 **Schwierigkeitsgrad**: Fortgeschritten  
 **Vorkenntnisse**: Grundlegende Kenntnisse der 4diac‑IDE und des IEC 61131‑3‑Funktionsbausteinsystems, Verständnis von Adapter‑Schnittstellen.  
 **Lernziele**:
+
 - Arbeiten mit dem Zähler‑Baustein `ADI_FB_CTUD`
 - Konfiguration von digitalen Ein‑/Ausgängen über logiBUS‑Adapter
 - Umwandlung von Datentypen (DINT → Digitaleingang, DINT → LREAL) für die Terminalausgabe

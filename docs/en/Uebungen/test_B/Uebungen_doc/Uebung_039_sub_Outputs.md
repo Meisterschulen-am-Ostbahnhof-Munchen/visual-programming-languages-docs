@@ -2,6 +2,7 @@ Here is the documentation page for the provided exercise file.
 # Exercise_039_sub_Outputs: Mirror Sequence V2 with Step Chain SUB Out
 ![Uebung_039_sub_Outputs_network](./Uebung_039_sub_Outputs_network.svg)
 *(Placeholder for exercise image)*
+
 * * * * * * * * * *
 ## Introduction
 

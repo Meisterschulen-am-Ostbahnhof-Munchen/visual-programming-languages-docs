@@ -1,5 +1,6 @@
 # AUDI_UDINT_AX_SEL_AUDI
 ![AUDI_UDINT_AX_SEL_AUDI](./AUDI_UDINT_AX_SEL_AUDI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_UDINT_AX_SEL_AUDI** implements a binary selection between two data sources. An internal IEC 61131 selection block (F_SEL) selects either the value from an adapter input or a direct data input based on a Boolean selector signal and outputs the result via an adapter output. The function block is modeled as a composite function block and uses adapters for flexible and type-safe coupling.

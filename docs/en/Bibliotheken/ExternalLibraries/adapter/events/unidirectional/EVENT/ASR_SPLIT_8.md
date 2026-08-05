@@ -1,6 +1,7 @@
 # ASR_SPLIT_8
 ![ASR_SPLIT_8](./ASR_SPLIT_8.svg)
 *(Insert image of function block here)*
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASR_SPLIT_8` is used to distribute a single incoming **ASR** adapter signal unchanged to eight identical outputs. It is defined as a generic function block and is particularly suitable for applications where a sensor or control signal is required multiple times – for example, in agricultural automation technology.

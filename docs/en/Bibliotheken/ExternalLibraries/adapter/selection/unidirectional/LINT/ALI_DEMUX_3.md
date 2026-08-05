@@ -1,5 +1,6 @@
 # ALI_DEMUX_3
 ![ALI_DEMUX_3](./ALI_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_DEMUX_3** is a generic demultiplexer for the ALI (Application Layer Interface) data type. It distributes an incoming ALI data stream to three separate output adapters, with the selection of the active output controlled by an index `K`. This block is suitable for applications where a data source needs to be sequentially routed to different sinks.

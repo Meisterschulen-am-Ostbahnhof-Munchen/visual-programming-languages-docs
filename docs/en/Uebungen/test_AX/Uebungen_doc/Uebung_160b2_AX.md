@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_160b2_AX` based on the provided file contents.
 # Exercise_160b2_AX: Motor Forward/Reverse Rotation Automation IXA
 ![Uebung_160b2_AX_network](./Uebung_160b2_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 Exercise **Exercise_160b2_AX** implements a control system for a motor with forward and reverse rotation functionality using adapter technology (AX/IXA/QXA). The focus is on a safe switching of the direction of rotation, with a dead time (delay) implemented to protect the motor and the mechanics during the change of direction. Additionally, the operating status is signaled via outputs.

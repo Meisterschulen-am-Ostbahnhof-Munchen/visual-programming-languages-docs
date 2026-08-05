@@ -1,5 +1,6 @@
 # Exercise_080c_AUI: Example of E_CTU with AX_T_FF and AX_PERMIT (Event Halving) and Terminal Output
 ![Uebung_080c_AUI_network](./Uebung_080c_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an up counter (E_CTU) in combination with a T flip-flop (AX_T_FF) and an event enable block (AX_PERMIT).

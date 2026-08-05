@@ -1,5 +1,6 @@
 # AUDI_EQ
 ![AUDI_EQ](./AUDI_EQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_EQ** compares two analog values for equality. It is implemented as a composite function block (FB) and uses adapters to communicate with the environment. The result is a Boolean value, which is output via another adapter. The function block complies with the IEC 61131-3 classification "Standard comparison function".

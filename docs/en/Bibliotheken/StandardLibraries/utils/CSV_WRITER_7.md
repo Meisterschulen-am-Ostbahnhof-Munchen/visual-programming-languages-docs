@@ -1,5 +1,6 @@
 # CSV_WRITER_7
 ![CSV_WRITER_7](https://github.com/user-attachments/assets/7ae443fb-c96d-4894-a2ac-9103f6e76007)
+
 * * * * * * * * * *
 ## Introduction
 The CSV_WRITER_7 is a function block that writes data to a CSV file. It supports writing up to seven different data fields to a specified file. This function block is particularly useful for logging and data storage in automation applications.

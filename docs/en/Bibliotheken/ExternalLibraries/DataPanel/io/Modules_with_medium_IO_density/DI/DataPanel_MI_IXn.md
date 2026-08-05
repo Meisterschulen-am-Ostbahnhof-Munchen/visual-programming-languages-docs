@@ -1,5 +1,6 @@
 # DataPanel_MI_IXn
 ![DataPanel_MI_IXn](./DataPanel_MI_IXn.svg)
+
 * * * * * * * * * *
 ## Introduction
 The DataPanel_MI_IXn function block is a service-oriented input block for digital binary inputs (ground switching / NPN). It is used to read a single Boolean input signal from a DataPanel system via the MI (Module Interface) protocol. The block is typically used in the 4diac IDE to connect field devices such as switches or sensors.

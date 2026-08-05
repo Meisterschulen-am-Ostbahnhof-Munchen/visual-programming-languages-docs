@@ -45,6 +45,7 @@ Die Verdrahtung innerhalb des SubApp-Netzwerks erfolgt ausschließlich über **A
 Dank der Adaptertechnik entfällt eine aufwändige Parameterübergabe – die Signalpropagation erfolgt typisiert und automatisch.
 
 **Lernziele**:  
+
 - Verständnis von Adapterverbindungen (Socket/Plug) in 4diac IDE  
 - Einbindung eines ISOBUS-Lichtadapters und logiBUS-Digitalausgängen  
 - Erstellen wiederverwendbarer SubApp-Komponenten für Fahrzeuglichtsteuerungen  

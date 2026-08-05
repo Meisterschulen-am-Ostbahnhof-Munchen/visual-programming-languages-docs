@@ -52,6 +52,7 @@ Diese Übung demonstriert die Ausgabe von Wheel‑Based Speed (WBSD) und Wheel�
      Der `RangePulse`‑Baustein überwacht die Distanzänderung und erzeugt bei Erreichen von 5 m HIGH‑ und 5 m LOW‑Schwellen einen Impuls. Dieser wird an den digitalen Ausgang Q1 weitergegeben, sodass Q1 periodisch mit 10 m‑Zyklus schaltet.
 
 **Lernziele**  
+
 - Adapter‑basierte Signalverarbeitung zwischen ISOBUS, UT und logiBUS verstehen.  
 - Aufteilung eines Datensignals auf zwei getrennte Verarbeitungspfade anwenden.  
 - Wegabhängige Impulse mittels eines Distanz‑Pulsgebers realisieren.  

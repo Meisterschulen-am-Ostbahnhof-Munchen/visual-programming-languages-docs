@@ -1,5 +1,6 @@
 # AR_CALIBRATE
 ![AR_CALIBRATE](./AR_CALIBRATE.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AR_CALIBRATE` is used for offset and scale calibration of an analog input signal provided via an adapter. It enables two-stage calibration: First, the offset is determined by comparison with a reference value during active calibration (CO), and then the scale is determined using a second reference (CS). The calibrated output signal is calculated continuously.

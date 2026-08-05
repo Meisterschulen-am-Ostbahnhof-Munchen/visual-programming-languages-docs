@@ -1,5 +1,6 @@
 # AE_MUX_5
 ![AE_MUX_5](./AE_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AE_MUX_5** function block is a generic 5-way multiplexer for AE adapters (unidirectional). It selects one of five inputs (`IN1` … `IN5`) based on an integer index `K` and passes its data to the output `OUT`. The block operates in an event-driven manner: Upon receiving a `REQ` signal, the current index is evaluated, the input is passed through, and an acknowledgment (`CNF`) is then sent.

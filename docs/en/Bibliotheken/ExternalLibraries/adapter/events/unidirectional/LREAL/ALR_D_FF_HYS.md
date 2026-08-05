@@ -1,5 +1,6 @@
 # ALR_D_FF_HYS
 ![ALR_D_FF_HYS](./ALR_D_FF_HYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ALR_D_FF_HYS** function block implements a data latch (D flip-flop) with adjustable hysteresis. It receives a data value via an adapter socket and outputs the latched value via an adapter plug. The hysteresis is set during the initialization event and serves to suppress noise or small fluctuations in the input signal.

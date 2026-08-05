@@ -26,9 +26,11 @@ Der A2X_2X_TO_2AX ist ein Composite-Funktionsblock, der zur Konvertierung von A2
 ### **Adapter**
 
 **Eingangsadapter:**
+
 - `A2X_IN` (Socket) - Adapter-Eingang vom Typ `adapter::types::unidirectional::A2X`
 
 **Ausgangsadapter:**
+
 - `UP` (Plug) - Ausgang für positive Bewegungsrichtung (TRUE = vorwärts, oben, rechts, im Uhrzeigersinn)
 - `DOWN` (Plug) - Ausgang für negative Bewegungsrichtung (TRUE = rückwärts, unten, links, gegen den Uhrzeigersinn)
 

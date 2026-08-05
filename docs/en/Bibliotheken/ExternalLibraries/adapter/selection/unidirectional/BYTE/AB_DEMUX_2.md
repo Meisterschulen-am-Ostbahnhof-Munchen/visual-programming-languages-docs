@@ -1,5 +1,6 @@
 # AB_DEMUX_2
 ![AB_DEMUX_2](./AB_DEMUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AB_DEMUX_2** is a generic demultiplexer (branch) for a unidirectional AB adapter. It allows an incoming data stream (via socket **IN**) to be selectively routed to one of two output adapters (**OUT1** or **OUT2**). The destination output is selected via the parameter **K** for each REQ event. This function block is specifically designed for control applications where signal distribution to different paths is required.

@@ -1,5 +1,6 @@
 # ILOCK_2_E_AX
 ![ILOCK_2_E_AX](./ILOCK_2_E_AX.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ILOCK_2_E_AX** provides two bistable outputs with mutual interlock and a toggle function. It is event-driven and outputs its states via two adapters (type `AX`). This block is suitable for applications requiring two mutually exclusive signals, such as controlling switches, valves, or motors.

@@ -2,6 +2,7 @@ Here is the documentation for Exercise 151 based on the provided data.
 # Exercise_151: Pulse Counter
 ![Uebung_151_network](./Uebung_151_network.svg)
 *(Insert image of the exercise here, if available)*
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a sub-application (`SubAppType`) named **Exercise_151**. The goal of the exercise is to acquire and process pulse signals via a hardware interface. The incoming raw data is converted, and then the derivative (rate of change) is calculated using a mathematical function block. This is typically used to determine a speed or frequency from a counter reading.

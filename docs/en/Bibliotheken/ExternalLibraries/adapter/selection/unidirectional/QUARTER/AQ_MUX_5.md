@@ -1,5 +1,6 @@
 # AQ_MUX_5
 ![AQ_MUX_5](./AQ_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AQ_MUX_5` is a generic multiplexer for analog outputs (AQ). It allows the selection of one of five analog input signals (via adapters) and routes it to a common analog output. The selection is made via the index `K`, which is inherited on a rising edge at the event input `REQ`.

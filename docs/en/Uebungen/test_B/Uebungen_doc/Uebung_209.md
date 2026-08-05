@@ -1,5 +1,6 @@
 # Exercise_209: Interlock: ILOCK_FB_RS (Two mutually interlocked reset-dominant latches via AX2 adapter)
 ![Uebung_209_network](./Uebung_209_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **mutual interlock** between two reset-dominant RS latches. The function blocks `ILOCK_FB_RS` are connected via an AX2 adapter, ensuring that only one of the two outputs can be active at any given time. As soon as one latch is set, the other is forcibly reset. The inputs and outputs are connected to digital logiBUS hardware (inputs I1–I4, outputs Q1 and Q2).

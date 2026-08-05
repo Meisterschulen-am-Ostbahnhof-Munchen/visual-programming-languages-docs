@@ -1,5 +1,6 @@
 # Exercise_203b_AX: Interlock: ILOCK_SWITCH_AX (Motor Reversing Priority via Adapter)
 ![Uebung_203b_AX_network](./Uebung_203b_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements **motor reversing with interlock** using the function block `ILOCK_SWITCH_AX`. The circuit prevents both directions of rotation from being activated simultaneously and passes the prioritized signals via an adapter to a downstream logic module `AX_2_TO_3`. This logic module converts the two direction signals into three outputs – one for clockwise rotation, one for counterclockwise rotation, and a common low-side driver, as is typical for H-bridge control circuits.

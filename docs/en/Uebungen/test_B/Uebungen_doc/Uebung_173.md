@@ -1,6 +1,7 @@
 Here is the documentation page for exercise `Uebung_173`, based on the provided data.
 # Exercise_173: Exercise for E_MUX_8
 ![Uebung_173_network](./Uebung_173_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 The sub-application **Exercise_173** serves as a training environment for working with the function block `E_MUX_8`. The goal of this exercise is to understand and apply the concept of event multiplexing (merging multiple event paths) within the IEC 61499 standard.

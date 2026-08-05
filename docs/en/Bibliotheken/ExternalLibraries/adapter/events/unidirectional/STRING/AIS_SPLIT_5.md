@@ -1,5 +1,6 @@
 # AIS_SPLIT_5
 ![AIS_SPLIT_5](./AIS_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_SPLIT_5** serves as a generic splitter for adapters of type `AIS` (unidirectional). It receives an incoming AIS signal via a socket and forwards it to five separate AIS plugs. This allows a single adapter signal to be distributed to multiple target blocks.

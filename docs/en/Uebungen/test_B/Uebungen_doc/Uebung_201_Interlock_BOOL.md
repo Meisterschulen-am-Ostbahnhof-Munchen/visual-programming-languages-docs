@@ -1,5 +1,6 @@
 # Exercise_201_Interlock_BOOL: Interlock basic exercise (BOOL)
 ![Uebung_201_Interlock_BOOL_network](./Uebung_201_Interlock_BOOL_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise teaches the basic functionality of an **interlock circuit** (interlock) using Boolean signals. Four digital inputs (`I1` to `I4`) control four digital outputs (`Q1` to `Q4`) via special interlock blocks. The interlock blocks are arranged in a chain, so that a subsequent output can only be enabled once the previous interlock block has been activated. This allows for the implementation of a safe, sequential control system.

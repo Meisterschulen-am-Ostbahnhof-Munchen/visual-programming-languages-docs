@@ -1,5 +1,6 @@
 # Exercise_011e_MIX: Passing through Numeric Value Input I1 to N3 (Software Scale via NumericObjectPool_S) incorrectly mixed!
 ![Uebung_011e_MIX_network](./Uebung_011e_MIX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates an **incompatible interaction** between two different namespaces in the isobus context. The goal is to pass a numeric value from an input (I1) to an output (N3), deliberately using software scaling via `NumericObjectPool_S` – but with **incorrectly mixed** types. The exercise highlights the problems that can arise from using different data representations (raw values vs. physical values).

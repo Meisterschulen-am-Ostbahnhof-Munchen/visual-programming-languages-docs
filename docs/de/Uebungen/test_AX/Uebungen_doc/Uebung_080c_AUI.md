@@ -71,6 +71,7 @@ Der aktuelle Zählerstand wird über einen Konverter an eine numerische Ausgabe 
    - Gleichzeitig liefert der Zähler einen binären Ausgang `Q`, der immer dann aktiv ist, wenn der Zählerstand > 0 ist. Dieser wird an den digitalen Ausgang `DigitalOutput_Q1` (an `Output_Q1`) weitergeleitet.
 
 **Lernziele & Voraussetzungen:**  
+
 - Grundlegendes Verständnis von IEC 61499‑Ereignissteuerung  
 - Umgang mit Zählern, Flipflops und Ereignis‑Freigabe  
 - Einfache Terminalausgabe über numerische IDs  

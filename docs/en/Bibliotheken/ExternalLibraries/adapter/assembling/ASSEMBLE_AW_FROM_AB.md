@@ -1,5 +1,6 @@
 # ASSEMBLE_AW_FROM_AB
 ![ASSEMBLE_AW_FROM_AB](./ASSEMBLE_AW_FROM_AB.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ASSEMBLE_AW_FROM_AB** is used to combine two unidirectional byte adapters (type `AB`) into a unidirectional word adapter (type `AW`). It combines the data from two byte inputs into a word output, with event logic ensuring that output occurs only when the information is updated.

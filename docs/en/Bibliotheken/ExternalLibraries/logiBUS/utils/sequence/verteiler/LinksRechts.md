@@ -1,6 +1,7 @@
 # Left/Right
 <img width="1074" height="276" alt="image" src="https://github.com/user-attachments/assets/fc046311-1486-49c1-8932-8429e1dff4ed" />
 ![LinksRechts_ecc](./LinksRechts_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `LinksRechts` is a fundamental building block for controlling bidirectional motion, such as a drive that can operate in both clockwise and counterclockwise directions. It implements a simple prioritization logic where clockwise rotation takes precedence over counterclockwise rotation unless a specific counterclockwise command is active. The block also allows pausing the motion.

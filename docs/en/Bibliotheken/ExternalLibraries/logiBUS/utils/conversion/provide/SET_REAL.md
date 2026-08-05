@@ -1,5 +1,6 @@
 # SET_REAL
 ![SET_REAL](./SET_REAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **SET_REAL** is used to write a REAL value from a data input to an InOut variable. It is a simple, event-driven function block that, upon receiving a request (REQ), passes the current input value IN to the referenced variable OUT and acknowledges the operation with a confirmation event (CNF).

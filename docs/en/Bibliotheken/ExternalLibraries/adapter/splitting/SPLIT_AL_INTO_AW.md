@@ -1,5 +1,6 @@
 # SPLIT_AL_INTO_AW
 ![SPLIT_AL_INTO_AW](./SPLIT_AL_INTO_AW.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **SPLIT_AL_INTO_AW** is used to split a 64-bit integer received via an AL adapter (LWORD) into four separate 16-bit values and output them via four individual AW adapters. It implements a hard-coded split that is triggered by an incoming event.

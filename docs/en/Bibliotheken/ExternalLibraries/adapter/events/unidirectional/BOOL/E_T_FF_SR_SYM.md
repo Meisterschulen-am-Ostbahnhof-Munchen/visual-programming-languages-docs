@@ -1,5 +1,6 @@
 # E_T_FF_SR_SYM
 ![E_T_FF_SR_SYM](./E_T_FF_SR_SYM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **E_T_FF_SR_SYM** is an event-driven, bistable toggle switch with an integrated toggle function. It combines the properties of an SR flip-flop (set-reset) and a toggle flip-flop (toggles on clock). Its unique feature is its symmetrical startup behavior: In the initial state, both set and clock events result in the set state, while a reset event directly results in the reset state. This enables defined and predictable behavior immediately after commissioning.

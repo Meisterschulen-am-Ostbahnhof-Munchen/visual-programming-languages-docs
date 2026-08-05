@@ -65,6 +65,7 @@ Die Übung `Uebung_002a5b_AX` realisiert eine Steuerungslogik, bei der die Zust�
     Dies bedeutet, dass alle drei digitalen Ausgänge `Output_Q1`, `Output_Q2` und `Output_Q3` den gleichen Zustand annehmen, der dem Ergebnis der OR-Verknüpfung der drei Eingänge entspricht.
 
 **Lernziele**:
+
 *   Verständnis und Anwendung von digitalen Eingangs- und Ausgangsbausteinen.
 *   Implementierung grundlegender logischer Operationen (OR) in 4diac-IDE.
 *   Nutzung von Signalverteilern (Splittern) zur effizienten Ansteuerung mehrerer Komponenten von einem einzigen Steuersignal.

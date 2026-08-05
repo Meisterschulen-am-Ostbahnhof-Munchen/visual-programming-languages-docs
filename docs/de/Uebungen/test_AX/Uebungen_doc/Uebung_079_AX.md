@@ -29,6 +29,7 @@ Alle Bausteine sind vom Typ `isobus::tecu::<Name>` und werden im Netzwerk ohne w
 In dieser Übung werden die ISOBUS-Adapter-FBs **nicht** miteinander verbunden oder in einen Ablauf integriert. Ziel ist es, die einzelnen Bausteine und ihre jeweiligen Funktionsbereiche kennenzulernen. Die Bausteine sind als reine Adapter-Versionen ausgeführt und können später in eigenen Anwendungen als Verbindungspunkte zu realen TECU-Geräten oder Simulationen eingesetzt werden.
 
 **Mögliche Lernziele:**
+
 - Erkennen der ISOBUS-Adapter-Struktur (QI-Eingang, Ereignis-, Datenports)
 - Verstehen der Aufgabenbereiche der gängigen TECU-Funktionen (Zapfwelle, Kraftheber, Anzeige etc.)
 - Vorbereitung für die Zusammenschaltung mehrerer Adapter zu einer funktionalen Steuerung

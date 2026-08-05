@@ -1,5 +1,6 @@
 # AUI_MUX_5
 ![AUI_MUX_5](./AUI_MUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_MUX_5** is a generic multiplexer for five unidirectional AUI adapter interfaces. Depending on an index value **K**, it selects one of the five inputs (**IN1** to **IN5**) and forwards its signal to the output **OUT**. Switching is event-driven via the input **REQ**.

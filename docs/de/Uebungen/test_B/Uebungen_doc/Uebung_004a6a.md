@@ -76,6 +76,7 @@ Die Übung verwendet drei digitale Eingänge (`I1`, `I2`, `I3`) und einen digita
    - Der Ausgang `Q1` wechselt mit jedem Rendezvous-Ereignis seinen Wert.
 
 **Lernziele**:  
+
 - Verständnis für Real-Time Rendezvous-Mechanismen in 4diac.  
 - Anwendung von Toggle-Flip-Flop und Ausgangsansteuerung.  
 - Erstellen von Ereignis- und Datenverbindungen über SubApp-Netzwerke.

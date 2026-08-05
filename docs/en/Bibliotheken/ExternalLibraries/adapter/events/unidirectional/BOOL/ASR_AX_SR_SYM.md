@@ -1,5 +1,6 @@
 # ASR_AX_SR_SYM
 ![ASR_AX_SR_SYM](./ASR_AX_SR_SYM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ASR_AX_SR_SYM** implements an event-driven, bistable flip-flop (SR flip-flop) with symmetric start behavior. It is implemented as a Basic FB according to IEC 61499-1 (Annex A) and operates exclusively via adapter interfaces – without direct event or data inputs. The block is suitable for applications where the initial state is determined by the first arriving event and neither input has priority.

@@ -1,5 +1,6 @@
 # sequence_ET_04_loop_AX
 ![sequence_ET_04_loop_AX_ecc](./sequence_ET_04_loop_AX_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 sequence_ET_04_loop_AX` is a variant of `sequence_ET_04_loop` that additionally uses adapters (`AX`) for the outputs. It controls a cyclic sequence with 4 output states.

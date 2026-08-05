@@ -1,5 +1,6 @@
 # ALR_TO_AI
 ![ALR_TO_AI](./ALR_TO_AI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ALR_TO_AI** function block is a composite block that converts an ALR (LREAL data) adapter to an AI (INT data) adapter. It is used to convert signals from agricultural technology (e.g., sensor values) to a standardized integer-based adapter interface. The block encapsulates the conversion and event forwarding, thus simplifying integration into existing 4diac applications.

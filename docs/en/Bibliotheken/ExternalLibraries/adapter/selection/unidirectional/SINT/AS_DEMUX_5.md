@@ -1,5 +1,6 @@
 # AS_DEMUX_5
 ![AS_DEMUX_5](./AS_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_DEMUX_5** is a generic demultiplexer for the unidirectional adapter interface `adapter::types::unidirectional::AS`. It forwards a signal (e.g., an analog measurement signal) present at its socket **IN** to one of five output adapters, **OUT1** to **OUT5**, depending on an index **K**. The block is specifically designed for use in automation technology, particularly in agricultural engineering, and can be adapted to specific applications via the attributes `GenericClassName` and `TypeHash`.

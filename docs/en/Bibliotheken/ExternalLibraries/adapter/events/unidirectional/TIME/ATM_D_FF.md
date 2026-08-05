@@ -1,5 +1,6 @@
 # ATM_D_FF
 ![ATM_D_FF](./ATM_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ATM_D_FF` implements a data latch (D flip-flop) for storing a single data value. Communication occurs exclusively via adapters of type `adapter::types::unidirectional::ATM`, so events and data are transmitted as a bundled interface. The function block is implemented according to IEC 61499-1 Annex A and is licensed under the Eclipse Public License 2.0.

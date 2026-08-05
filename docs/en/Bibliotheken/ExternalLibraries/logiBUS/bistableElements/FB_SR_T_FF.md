@@ -1,5 +1,6 @@
 # FB_SR_T_FF
 ![FB_SR_T_FF](./FB_SR_T_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `FB_SR_T_FF` implements a bistable, set-dominant RS flip-flop with an additional toggle function. The circuit combines the behavior of an SR latch (set-dominant) with an edge-triggered T flip-flop, which toggles its output state on each clock cycle when neither set nor reset is active.

@@ -1,5 +1,6 @@
 # Exercise_218b_ALR: Standard IEC 61131-3 AUDI_FB_CTD (Adapter Version, Down Counter, UDINT) with Terminal Output (PHYSA_LREAL)
 ![Uebung_218b_ALR_network](./Uebung_218b_ALR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **down counter (CTD)** according to IEC 61131-3 using an **AUDI_FB_CTD** (adapter version, data type **UDINT**). The current counter value is output to **PHYSA_LREAL** via a terminal. Additionally, a digital output (**Output_Q1**) is provided, indicating the counter's status (Q).

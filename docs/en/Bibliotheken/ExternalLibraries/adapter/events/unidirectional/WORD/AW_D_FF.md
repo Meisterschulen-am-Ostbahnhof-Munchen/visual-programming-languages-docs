@@ -1,5 +1,6 @@
 # AW_D_FF
 ![AW_D_FF](./AW_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AW_D_FF** implements a data-controlled flip-flop (D-latch) according to IEC 61499. It accepts a binary data value at its input and outputs it in a clock-controlled manner. The interface is exclusively via adapters, which enables modular and flexible integration into existing components.

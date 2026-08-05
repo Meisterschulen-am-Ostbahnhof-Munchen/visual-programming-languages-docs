@@ -45,6 +45,7 @@ Der Ablauf innerhalb der Sub-Application gestaltet sich wie folgt:
     - Beide internen Bausteine (`IX` und `QX`) sind dauerhaft aktiviert, da ihre `QI`-Eingänge fest auf `TRUE` gesetzt sind.
 
 **Lernziele:**
+
 - Verständnis von Sub-Applications zur Kapselung von Logik.
 - Verwendung von generischen logiBUS-Bausteinen (`_IXA`, `_QXA`).
 - Einsatz von Adapterverbindungen zur direkten Kopplung von Hardware-Abstraktionsschichten.

@@ -1,5 +1,6 @@
 # AI_DEMUX_3
 ![AI_DEMUX_3](./AI_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_DEMUX_3** implements a generic demultiplexer for an analog input value. Based on an index parameter, the value present at the adapter input is redirected to one of three adapter outputs. The block operates unidirectionally and is event-driven.

@@ -1,6 +1,7 @@
 # Exercise_011b2: Numeric Value Input MUL
 ![Uebung_011b2_network](./Uebung_011b2_network.svg)
 *Image to follow (if available)*
+
 * * * * * * * * * *
 ## Introduction
 Exercise **Exercise_011b2** performs a simple multiplication of two numeric values. Two inputs (InputNumber\_I1 and InputNumber\_I2) each read a DWORD value from the ISOBUS network, convert it to the UDINT data type, and multiply the results together. The product is written back to the bus via an output (OutputNumber\_N1). This exercise demonstrates the use of input/output function blocks for numeric values and arithmetic operations using IEC 61131 function blocks.

@@ -21,9 +21,11 @@ The AX_SPLIT_3 is a generic function block that splits one AX adapter input into
 
 ### **Adapters**
 **Input Adapters:**
+
 - **IN** - AX adapter (socket) - Receives the incoming AX signal
 
 **Output Adapters:**
+
 - **OUT1** - AX adapter (plug) - First output channel
 - **OUT2** - AX adapter (plug) - Second output channel
 - **OUT3** - AX adapter (plug) - Third output channel

@@ -1,5 +1,6 @@
 # AB_D_FF_TMIN
 ![AB_D_FF_TMIN](./AB_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AB_D_FF_TMIN** is an adapter-based function block (FB) according to IEC 61499 that implements the functionality of a data latch (D flip-flop) with a minimum time condition between successive output events. It serves to transfer a digital data value from an adapter socket (input) to an adapter plug (output), ensuring that the output events (EO) do not occur faster than permitted by a configured time parameter `Tmin`. The block abstracts the pure D flip-flop logic by using an internal flip-flop block and encapsulates data and events in adapter interfaces.

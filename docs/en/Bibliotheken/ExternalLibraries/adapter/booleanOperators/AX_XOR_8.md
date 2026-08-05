@@ -20,6 +20,7 @@ No direct data outputs available
 
 ### **Adapters**
 **Plug Adapter:**
+
 - **OUT**: Unidirectional adapter for the XOR result
 
 **Socket Adapter:**

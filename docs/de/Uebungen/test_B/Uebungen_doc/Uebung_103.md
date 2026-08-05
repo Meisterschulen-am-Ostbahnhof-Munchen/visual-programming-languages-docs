@@ -43,6 +43,7 @@ Der AX_MUX_3 kombiniert die verarbeiteten Signale und leitet sie an DigitalOutpu
 Zusätzlich verarbeitet InputNumber_I1 numerische Werte über Konvertierungsbausteine (C1, C2), die sowohl DEMUX als auch MUX mit Steuersignalen versorgen.
 
 **Lernziele:**
+
 - Verständnis von Plug-and-Socket-Verbindungen
 - Umgang mit DEMUX/MUX-Bausteinen
 - Signalverteilung und -kombination

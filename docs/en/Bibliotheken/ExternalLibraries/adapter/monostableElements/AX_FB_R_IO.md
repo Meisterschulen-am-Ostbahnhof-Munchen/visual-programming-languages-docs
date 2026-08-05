@@ -1,5 +1,6 @@
 # AX_FB_R_IO
 ![AX_FB_R_IO](./AX_FB_R_IO.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AX_FB_R_IO** implements monostable, reset-dominant behavior. It has three adapter interfaces through which it forwards an input signal (IN) to the output (OUT) if no active reset signal (RESET1) is present. The block operates on the principle: **Reset has priority**.

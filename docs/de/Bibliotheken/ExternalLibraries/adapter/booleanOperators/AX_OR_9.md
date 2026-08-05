@@ -25,6 +25,7 @@ Der AX_OR_9 ist ein generischer Funktionsblock zur Berechnung der booleschen ODE
 
 ### **Adapter**
 **Sockets (Eingänge):**
+
 - **IN1** - ODER Eingang 1
 - **IN2** - ODER Eingang 2
 - **IN3** - ODER Eingang 3
@@ -36,6 +37,7 @@ Der AX_OR_9 ist ein generischer Funktionsblock zur Berechnung der booleschen ODE
 - **IN9** - ODER Eingang 9
 
 **Plugs (Ausgang):**
+
 - **OUT** - ODER Ergebnis
 
 ## Funktionsweise

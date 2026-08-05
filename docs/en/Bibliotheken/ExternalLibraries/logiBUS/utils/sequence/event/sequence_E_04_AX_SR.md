@@ -1,5 +1,6 @@
 # sequence_E_04_AX_SR
 ![sequence_E_04_AX_SR](./sequence_E_04_AX_SR.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `sequence_E_04_AX_SR` implements an event-driven sequencer with four outputs via an AX adapter. It also offers a safety stop (STOP), a resume (RESUME), and a reset (RESET). The sequence cycles through the states State_00, State_01, State_02, State_03, and State_04 and can be operated cyclically.

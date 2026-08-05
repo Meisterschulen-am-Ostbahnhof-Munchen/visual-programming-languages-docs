@@ -1,5 +1,6 @@
 # Exercise_212b_ALR: Standard IEC 61131-3 ALI_FB_CTU (Adapter Version, Up Counter, LINT) with Terminal Output (PHYS)
 ![Uebung_212b_ALR_network](./Uebung_212b_ALR_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an up counter (CTU) according to IEC 61131-3 as an adapter version. The counter uses type `ALI_FB_CTU` and can be preset to a predefined value (here 5). The current counter value is output via a physical terminal output (`Q_NumericValue_PHYSA_LREAL`) on an output channel. Additionally, a digital output (`Output_Q1`) is set as soon as the counter value reaches or exceeds the preset value. The inputs for the counter signal (CU) and the reset (R) are fed by digital inputs of the logiBUS platform. A comment indicates that negative counter readings are possible and recommends installing an AX_D_FF to reduce the number of events.

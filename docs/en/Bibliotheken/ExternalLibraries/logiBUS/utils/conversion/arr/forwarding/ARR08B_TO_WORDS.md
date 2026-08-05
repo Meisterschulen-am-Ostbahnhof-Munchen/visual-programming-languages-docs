@@ -1,5 +1,6 @@
 # ARR08B_TO_WORDS
 ![ARR08B_TO_WORDS](./ARR08B_TO_WORDS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ARR08B_TO_WORDS** is used to divide an 8-byte array into four 16-bit words (WORDs). It is typically used in data preprocessing when raw byte data from sensors or communication interfaces needs to be converted into integer values. The conversion is performed byte-wise, taking the little-endian byte order into account.

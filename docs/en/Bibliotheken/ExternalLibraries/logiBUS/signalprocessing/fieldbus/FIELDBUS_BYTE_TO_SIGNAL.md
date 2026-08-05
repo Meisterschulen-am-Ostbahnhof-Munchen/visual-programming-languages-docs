@@ -1,5 +1,6 @@
 # FIELDBUS_BYTE_TO_SIGNAL
 ![FIELDBUS_BYTE_TO_SIGNAL](./FIELDBUS_BYTE_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **FIELDBUS_BYTE_TO_SIGNAL** is used for the simple validation of a BYTE signal from a fieldbus. It only passes the input value unchanged to the output if it lies within a defined valid range. The result of the validation is signaled via a separate Boolean output.

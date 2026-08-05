@@ -1,5 +1,6 @@
 # Exercise_080e2: Example of E_CTU with Event Brake via E_D_FF_ANY
 ![Uebung_080e2_network](./Uebung_080e2_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of an up counter (E_CTU) in combination with an **event brake**, implemented by the function block `E_D_FF_ANY_TMIN`. The counter is incremented via a cyclic event generator (E_CYCLE) as soon as a key is pressed at `DigitalInput_CLK_I1`. A second key press at `DigitalInput_CLK_I2` resets the counter and stops the cycle. The output counter values are only passed to a numeric output if the minimum dwell time (`Tmin`) of the signal state is exceeded – this prevents unwanted or noisy values. An additional D flip-flop block (`E_D_FF`) outputs the counter status (Q) as a binary signal to a digital output.

@@ -1,5 +1,6 @@
 # AW_TO_AL
 ![AW_TO_AL](./AW_TO_AL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AW_TO_AL function block is a composite block for converting a WORD adapter (AW) to an LWORD adapter (AL). It is used to convert data from a 16-bit format to a 64-bit format, typically in control and automation systems. The block forwards events and data directly from the input side to the output side, ensuring the data type conversion.

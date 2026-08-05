@@ -74,6 +74,7 @@ Die Datenverbindungen übertragen die entsprechenden Werte:
 - `STRUCT_MUX.OUT` → `CallbackFB.DI1`
 
 **Lernziele**:  
+
 - Verständnis der Signalgenerierung mit `GEN_SIN`.  
 - Umgang mit Typkonvertierungen (REAL → DWORD → Byte-Array).  
 - Aufbau einer CAN-Nachricht mit `STRUCT_MUX`.  

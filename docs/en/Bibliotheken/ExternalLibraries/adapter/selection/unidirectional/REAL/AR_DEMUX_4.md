@@ -1,5 +1,6 @@
 # AR_DEMUX_4
 ![AR_DEMUX_4](./AR_DEMUX_4.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AR_DEMUX_4` is a generic demultiplexer for the AR adapter type. It receives a data value via a single AR adapter socket (input) and forwards it to one of four AR adapter plugs (outputs). The target output is selected via the index K, which is evaluated upon the arrival of the event `REQ`. This function block is typically used in automation technology, particularly in agriculture, to distribute a data stream to various downstream consumers.

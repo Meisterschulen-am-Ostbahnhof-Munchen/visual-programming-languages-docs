@@ -1,5 +1,6 @@
 # AUI_GT
 ![AUI_GT](./AUI_GT.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_GT** compares two values and checks whether the first value (IN1) is greater than the second value (IN2). The result is provided as a Boolean value via the output adapter. The function block is event-driven and operates asynchronously.

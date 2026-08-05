@@ -1,5 +1,6 @@
 # ASSEMBLE_AL_FROM_AW
 ![ASSEMBLE_AL_FROM_AW](./ASSEMBLE_AL_FROM_AW.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `ASSEMBLE_AL_FROM_AW` combines the data from four **AW (WORD)** adapter interfaces into one **AL (LWORD)** output value. It is used to combine multiple 16-bit words into a 64-bit word and output it via a clocked signal.

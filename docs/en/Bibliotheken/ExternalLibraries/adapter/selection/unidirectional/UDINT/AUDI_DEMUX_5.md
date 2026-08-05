@@ -1,5 +1,6 @@
 # AUDI_DEMUX_5
 ![AUDI_DEMUX_5](./AUDI_DEMUX_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AUDI_DEMUX_5` is a generic demultiplexer for the unidirectional `AUDI` adapter. It forwards an adapter value present at its input adapter `IN` to one of five output adapters (`OUT1` to `OUT5`). The target adapter is selected via the data input `K`.

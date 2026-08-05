@@ -1,5 +1,6 @@
 # Exercise_002b3: DigitalInput_I1/_I2/_I3 to DigitalOutput_Q1; without MOVE
 ![Uebung_002b3_network](./Uebung_002b3_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the processing of digital input signals and their logical combination to control a digital output. The circuit combines AND and OR logic gates to implement specific logic between three inputs and one output.

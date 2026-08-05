@@ -1,5 +1,6 @@
 # AS_D_FF
 ![AS_D_FF](./AS_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AS_D_FF** implements a simple data latch (D flip-flop) based on adapters. It stores an incoming data value with each incoming event and outputs the stored value as a signal. The block encapsulates the logic of the 4diac standard block `E_D_FF_ANY` and provides its interfaces exclusively via unidirectional adapters of type `adapter::types::unidirectional::AS`. This enables modular and standardized integration into more complex systems.

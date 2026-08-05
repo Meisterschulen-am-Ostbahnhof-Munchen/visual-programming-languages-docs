@@ -1,6 +1,7 @@
 Here is the documentation for exercise `Uebung_035a1_AX` based on the provided data.
 # Exercise_035a1_AX: Traffic Light Control with Pattern Sequencer (AX)
 ![Uebung_035a1_AX_network](./Uebung_035a1_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements **traffic light control** using a **pattern sequencer**. The goal is to control a classic traffic light sequence (red -> red/yellow -> green -> yellow -> red) using defined time intervals and bit patterns. The exercise utilizes adapter technology (AX) for connecting the outputs and timing.

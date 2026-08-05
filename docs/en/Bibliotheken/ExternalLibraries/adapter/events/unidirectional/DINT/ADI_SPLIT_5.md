@@ -1,5 +1,6 @@
 # ADI_SPLIT_5
 ![ADI_SPLIT_5](./ADI_SPLIT_5.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_SPLIT_5** is used to split an incoming ADI adapter (unidirectional) into five identical output adapters. It is designed as a generic function block (Generic FB) and can be used in IEC 61499-based systems to forward a signal or data stream to multiple subsequent function blocks.

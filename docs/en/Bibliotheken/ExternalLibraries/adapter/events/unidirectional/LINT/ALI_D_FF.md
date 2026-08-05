@@ -1,5 +1,6 @@
 # ALI_D_FF
 ![ALI_D_FF](./ALI_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ALI_D_FF** function block implements a clock-controlled D flip-flop (data latch) via adapter interfaces. It stores a data value on the rising edge of a clock signal and outputs it until the next clock edge. This function block is suitable for synchronous data storage in event-driven automation environments.

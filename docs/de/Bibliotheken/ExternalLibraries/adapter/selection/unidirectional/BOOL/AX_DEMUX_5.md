@@ -25,9 +25,11 @@ Der AX_DEMUX_5 ist ein generischer Demultiplexer-Funktionsblock, der eingehende 
 ### **Adapter**
 
 **Sockets:**
+
 - **IN**: AX-Eingangsadapter für den zu demultiplexierenden Wert
 
 **Plugs:**
+
 - **OUT1**: AX-Ausgangsadapter 1
 - **OUT2**: AX-Ausgangsadapter 2
 - **OUT3**: AX-Ausgangsadapter 3

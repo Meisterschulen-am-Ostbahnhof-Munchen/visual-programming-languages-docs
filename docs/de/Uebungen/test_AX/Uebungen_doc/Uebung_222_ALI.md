@@ -72,6 +72,7 @@ Die Hardware-Eingänge (I1–I4) werden über die logiBUS-DI-Bausteine eingelese
    - Der aktuelle Zählwert (CV) wird umgewandelt und im Terminal mit der Objekt-ID `OutputNumber_N1` ausgegeben.
 
 **Hinweise aus den Kommentaren**:
+
 - Der Baustein `ALI_TO_AUDI` unterstützt keine negativen Zahlen – der ausgegebene Wert kann daher bei Unterschreiten von 0 nicht korrekt dargestellt werden.
 - Zur Reduzierung der Eventanzahl (z. B. bei schnellen Zählimpulsen) könnte man vor den Ausgängen jeweils einen `AX_D_FF` einfügen.
 

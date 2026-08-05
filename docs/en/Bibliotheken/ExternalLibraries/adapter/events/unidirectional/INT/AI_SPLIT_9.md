@@ -1,5 +1,6 @@
 # AI_SPLIT_9
 ![AI_SPLIT_9](./AI_SPLIT_9.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_SPLIT_9** is a generic component that distributes a single analog input signal (adapter type `AI`) to nine identical outputs (OUT1 to OUT9). It serves as a signal distributor, allowing an AI signal to be used multiple times in a control application without having to link the source multiple times.

@@ -56,6 +56,7 @@ Die Übung arbeitet ereignisgesteuert:
    - Der konvertierte Wert (LREAL) wird an den Terminalbaustein `Q_NumericValue_PHYS_LREAL.lrPhys` gesendet.
 
 **Funktionsweise des Zählers**:
+
 - Solange kein Ladesignal (`LD` = FALSE) anliegt, zählt der Baustein bei jedem steigenden Impuls an `CD` von 10 rückwärts (Presetwert = `PV` = 10).
 - Ein Ladesignal setzt den aktuellen Zählerstand auf den Wert von `PV` zurück.
 - Der Ausgang `Q` ist `TRUE`, solange der Zählerstand größer als 0 ist; bei Erreichen von 0 wird `Q` = `FALSE` (Überlauf ist nicht definiert, bleibt bei 0).

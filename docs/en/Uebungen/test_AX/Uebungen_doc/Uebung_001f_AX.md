@@ -1,5 +1,6 @@
 # Exercise_001f_AX: DigitalInput_I1 negated with INIT to DigitalOutput_Q1
 ![Uebung_001f_AX_network](./Uebung_001f_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the negation of a digital input signal using the function block `AX_NOT_INIT`. The negated signal is output to a digital output. A special effect occurs during startup (BOOT): Since input I1 is not polled during system startup, `AX_NOT_INIT` initially returns a value of `TRUE`, regardless of the actual input state.

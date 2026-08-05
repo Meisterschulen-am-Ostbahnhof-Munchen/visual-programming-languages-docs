@@ -1,6 +1,7 @@
 # E_SPLIT (Event Distributor)
 ![E_SPLIT Funktionssymbol](https://user-images.githubusercontent.com/69573151/210802227-1615f35d-6ed5-459b-a796-a5ef5fb11452.png)
 ![E_SPLIT_ecc](./E_SPLIT_ecc.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **E_SPLIT** is a standards-compliant function block (IEC 61499-1 Annex A) for event distribution, developed under the EPL 2.0 license. Version 1.0 splits an incoming event sequentially into two output events.

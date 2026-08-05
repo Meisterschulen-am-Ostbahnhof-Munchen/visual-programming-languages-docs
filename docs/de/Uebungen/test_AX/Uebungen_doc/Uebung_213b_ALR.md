@@ -11,6 +11,7 @@ Das Zählergebnis wird über einen **Analog‑Ausgang (LREAL)** auf einem **Term
 Zusätzlich wird der **Sollwert (PV) des Zählers** über einen **UDINT‑to‑Unidirectional‑Konverter** initial auf **5** gesetzt, sodass der Zähler beim Erreichen von 5 ein Ausgangssignal (Q) liefert.
 
 **Lernziele**  
+
 - Verständnis des Zusammenspiels von IEC‑Zählern mit Adapter‑Schnittstellen  
 - Umgang mit Konvertierungsbausteinen (UDINT → Unidirectional → LREAL)  
 - Parametrierung und Einbindung von logiBUS‑Ein‑/Ausgängen  
@@ -86,6 +87,7 @@ Im Netzwerk der SubApp werden folgende Bausteine eingesetzt:
    - Anschließend wird dieser LREAL‑Wert an **Q_NumericValue_PHYSA_LREAL** übergeben und auf dem konfigurierten Terminal‑Objekt `OutputNumber_N3` angezeigt.
 
 **Adapterverbindungen im Detail:**  
+
 - `Input_CU.IN` → `AUDI_FB_CTU.CU` (Zählimpulse)  
 - `Input_R.IN` → `AUDI_FB_CTU.R` (Rücksetzen)  
 - `AUDI_FB_CTU.Q` → `Output_Q1.OUT` (Ausgang Q1)  

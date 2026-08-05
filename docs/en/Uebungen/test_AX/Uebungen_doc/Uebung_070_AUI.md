@@ -1,5 +1,6 @@
 # Exercise_070_AUI: Outputting WBSD to a UT (Adapter Version)
 ![Uebung_070_AUI_network](./Uebung_070_AUI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the output of wheel-based machine speed (WBSD) to a Universal Terminal (UT) using adapters. Unlike the basic exercise (Exercise_070), this exercise uses an adapter-based connection between the sensor interface and the output module. Communication is via the proprietary AUI protocol, which must be converted to an AUDI protocol for connection to the UT module.

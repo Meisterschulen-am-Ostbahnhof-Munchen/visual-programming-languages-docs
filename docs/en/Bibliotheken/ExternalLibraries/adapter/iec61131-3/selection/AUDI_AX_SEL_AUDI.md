@@ -1,5 +1,6 @@
 # AUDI_AX_SEL_AUDI
 ![AUDI_AX_SEL_AUDI](./AUDI_AX_SEL_AUDI.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_AX_SEL_AUDI** implements a binary selection between two input values. It acts as a multiplexer, switching one of the two inputs to the output depending on a selector signal. Communication occurs exclusively via unidirectional adapters that encapsulate both event and data signals. This allows for flexible and type-specific integration into existing signal paths.

@@ -131,6 +131,7 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
    - *„Hier gegebenenfalls einen AX_D_FF einbauen, damit die Events reduziert werden.“* – Bei sehr schnellen Impulsen kann ein vorgeschalteter Flip‑Flop‑Baustein die Ereignisrate dämpfen und unerwünschte Zählungen verhindern.
 
 **Verbindungsübersicht (Auszug aus dem Netzwerk):**
+
 - `Input_CD.IN` → `AUDI_FB_CTD.CD`
 - `Input_LD.IN` → `AUDI_FB_CTD.LD`
 - `AUDI_FB_CTD.Q` → `Output_Q1.OUT`
@@ -144,6 +145,7 @@ Die Implementierung erlaubt auch **negative Zählwerte** – ein entsprechender 
 Die **Uebung_218b_ALR** vermittelt den Umgang mit einem **IEC‑61131‑3 Rückwärtszähler** in der **4diac‑IDE**. Der Zähler wird über zwei digitale Eingänge gesteuert (Zählen und Laden) und gibt seinen Status sowie den aktuellen Wert aus. Die Besonderheit liegt in der Umwandlung des UDINT‑Zählwertes in eine LREAL‑Terminalausgabe, sodass auch negative Zahlen dargestellt werden können.
 
 **Lernziele:**
+
 - Aufbau und Parametrierung eines Adapter‑basierten CTD‑Funktionsbausteins
 - Einbindung digitaler Ein‑/Ausgänge über logiBUS‑Adapter
 - Datenkonvertierung (UDINT → LREAL) für Ausgabezwecke

@@ -1,5 +1,6 @@
 # Exercise_023_AX: Mirror Sequence (3) - AX Variant
 ![Uebung_023_AX_network](./Uebung_023_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a **mirror sequence** for two double-acting cylinders. The goal is to build a sequential control for extending and retracting two cylinders using AX function blocks (SR bistables) and softkeys. The control is operated via softkeys on the terminal, and the digital outputs control the actuators (e.g., valves).

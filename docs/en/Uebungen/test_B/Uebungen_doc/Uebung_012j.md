@@ -1,5 +1,6 @@
 # Exercise_012j: String Input and Storage in INI
 ![Uebung_012j_network](./Uebung_012j_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the processing and storage of a string value using an **INI function block**.

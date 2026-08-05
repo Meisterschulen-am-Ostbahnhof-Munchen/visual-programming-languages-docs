@@ -1,5 +1,6 @@
 # Exercise_003a2b_AX: 2x R_IO with IXA
 ![Uebung_003a2b_AX_network](./Uebung_003a2b_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the control of two digital outputs (Q1 and Q2) using a reset-set function block (AX_FB_R_IO) for each output. The reset inputs of both blocks are controlled jointly via a third digital input (I3), which acts as a "maintenance off" switch. An AX_SPLIT_2 distributes the reset signal to both channels.

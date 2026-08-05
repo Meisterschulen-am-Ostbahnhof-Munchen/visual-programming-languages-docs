@@ -1,5 +1,6 @@
 # AULI_DEMUX_3
 ![AULI_DEMUX_3](./AULI_DEMUX_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_DEMUX_3** implements a generic demultiplexer for unidirectional AULI adapters. It forwards an incoming value (via socket `IN`) to one of three output adapters (`OUT1`, `OUT2`, `OUT3`), with the selection controlled by the index `K`.

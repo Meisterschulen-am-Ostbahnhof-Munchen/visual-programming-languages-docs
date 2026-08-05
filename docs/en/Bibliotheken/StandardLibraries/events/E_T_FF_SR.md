@@ -1,6 +1,7 @@
 # E_T_FF_SR
 ## 🎧 Podcast
 ![E_T_FF_SR_ecc](./E_T_FF_SR_ecc.svg)
+
 * [The E_T_FF_SR Block: The Heart of IEC 61499 – Storing, Switching, Responding ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_T_FF_SR-Baustein-Herzstck-der-IEC-61499--Speichern--Umschalten--Reagieren-e3682dm)
 * [Unpacking E_T_FF_SR: The Secret Toggle Switch of Industrial Control Systems ](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Unpacking-E_T_FF_SR-The-Secret-Toggle-Switch-of-Industrial-Control-Systems-e367ntv)
 ## Introduction

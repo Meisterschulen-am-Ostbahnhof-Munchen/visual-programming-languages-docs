@@ -1,5 +1,6 @@
 # Exercise_221_ADI: Standard IEC 61131-3 ADI_FB_CTUD (Adapter Version, Up/Down Counter, DINT) with Terminal Output
 ![Uebung_221_ADI_network](./Uebung_221_ADI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an up/down counter (CTUD) according to IEC 61131-3 in an adapter version (ADI_FB_CTUD). The counter uses 32-bit integers (DINT) and outputs the current count via a terminal output. Inputs are read via logiBUS adapters, and outputs are controlled via logiBUS adapters. A fixed preset value of 5 is loaded during initialization.

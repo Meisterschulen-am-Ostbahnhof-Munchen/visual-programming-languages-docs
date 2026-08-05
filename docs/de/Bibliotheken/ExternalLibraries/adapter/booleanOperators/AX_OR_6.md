@@ -23,6 +23,7 @@ Keine Datenausgänge vorhanden
 
 ### **Adapter**
 **Eingangsadapter:**
+
 - **IN1** - ODER-Eingang 1 (Typ: adapter::types::unidirectional::AX)
 - **IN2** - ODER-Eingang 2 (Typ: adapter::types::unidirectional::AX)
 - **IN3** - ODER-Eingang 3 (Typ: adapter::types::unidirectional::AX)
@@ -31,6 +32,7 @@ Keine Datenausgänge vorhanden
 - **IN6** - ODER-Eingang 6 (Typ: adapter::types::unidirectional::AX)
 
 **Ausgangsadapter:**
+
 - **OUT** - ODER-Ergebnis (Typ: adapter::types::unidirectional::AX)
 
 ## Funktionsweise

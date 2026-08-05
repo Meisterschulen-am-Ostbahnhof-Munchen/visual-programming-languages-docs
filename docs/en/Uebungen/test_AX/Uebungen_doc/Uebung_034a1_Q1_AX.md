@@ -1,5 +1,6 @@
 # Exercise_034a1_Q1_AX: Numeric Value Input to PWM Output (Adapter Version)
 ![Uebung_034a1_Q1_AX_network](./Uebung_034a1_Q1_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the simple connection of a **numeric value input** (ISOBUS NumericValue) to a **PWM output** via a direct adapter connection. After confirmation (OK button), the entered numeric value is output to the PWM output of the logiBUS module (channel Q1).
@@ -30,6 +31,7 @@ This exercise is implemented as a **SubAppType** and uses only adapters for sign
 3. The adapter output is directly connected to the adapter input `OUT` of the function block `PWMOutput_Q1`:
 
 Verbindung: PWM_Value.IN → PWMOutput_Q1.OUT
+
 4. `PWMOutput_Q1` converts the received value into a PWM duty cycle on the logiBUS output `Output_Q1`.
 
 **Note**: As noted in the network comment, the updated value is **not** transmitted with every keystroke (e.g., when turning an encoder), but only after pressing the OK button. This behavior is defined by the function block `NumericValue_IDA`.

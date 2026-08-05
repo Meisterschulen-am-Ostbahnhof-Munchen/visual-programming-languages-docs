@@ -1,5 +1,6 @@
 # OFF_TO_AL
 ![AUS_TO_AL](./AUS_TO_AL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **OFF_TO_AL** function block is a composite function block (FB) that converts a unidirectional **OFF** adapter (USINT data type) into a unidirectional **AL** adapter (LWORD data type). It serves as a bridge between different data formats in a 4diac IDE environment, with the conversion being performed internally by the IEC 61131 FB `F_USINT_TO_LWORD`. The function block facilitates the integration of components based on different adapter types.

@@ -51,6 +51,7 @@ Die Subapplikation besteht aus einer direkten Verschaltung der genannten Funktio
 Ein Kommentar im Netzwerk weist darauf hin, dass eine zusätzliche Ereignisreduzierung (z.B. durch einen E_D_FF) zwischengeschaltet werden könnte, um die Ausgabe nur bei bestimmten Ereignissen zu aktualisieren.
 
 **Lernziele**: 
+
 - Verständnis der IEC 61131-3 Zählerfunktionsbausteine.
 - Zusammenspiel von Ereignis- und Datenflüssen in 4diac.
 - Einbindung von digitalen Ein-/Ausgängen über logiBUS-IO-Bausteine.

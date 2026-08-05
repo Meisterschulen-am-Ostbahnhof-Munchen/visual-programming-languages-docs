@@ -1,5 +1,6 @@
 # Exercise_001e_AX: DigitalInput_I1 negated to DigitalOutput_Q1
 ![Uebung_001e_AX_network](./Uebung_001e_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a simple Boolean negation: The state of the digital input **Input_I1** is negated and output to the digital output **Output_Q1**. It serves as an introduction to signal processing with 4diac and demonstrates the basic interconnection of an input module, a logic negation block, and an output module via adapter connections.

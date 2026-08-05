@@ -1,6 +1,7 @@
 # ALR_SPLIT_7
 ![ALR_SPLIT_7](./ALR_SPLIT_7.svg)
 *(No image available)*
+
 * * * * * * * * * *
 ## Introduction
 The function block `ALR_SPLIT_7` is used to split an incoming ALR (Agricultural Logic Resource) signal into seven identical output signals. It is designed as a generic block and enables the parallel distribution of an alarm or control signal to up to seven downstream components or subsystems.

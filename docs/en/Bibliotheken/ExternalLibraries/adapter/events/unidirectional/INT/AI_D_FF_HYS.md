@@ -1,5 +1,6 @@
 # AI_D_FF_HYS
 ![AI_D_FF_HYS](./AI_D_FF_HYS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_D_FF_HYS** implements a clock-controlled D flip-flop (data latch) with configurable hysteresis. It serves to stably lock a binary or analog input signal and filter out disturbances in the signal waveform. The hysteresis prevents constant switching due to minor signal changes (bouncing, noise), thus ensuring a clean, latency-free output state.

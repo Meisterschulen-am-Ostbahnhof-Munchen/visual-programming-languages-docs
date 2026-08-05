@@ -1,5 +1,6 @@
 # AX_TLIM
 ![AX_TLIM](./AX_TLIM.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AX_TLIM** function block is a time-limiting timer according to IEC 61499-2. It monitors a Boolean input signal provided via a unidirectional **AX adapter**. As long as the signal is active (TRUE), the output remains active – but only for a predefined time. If the activation duration exceeds the limit, the output is reset (timeout). A separate event input allows the time limit to be preset without triggering a new execution.

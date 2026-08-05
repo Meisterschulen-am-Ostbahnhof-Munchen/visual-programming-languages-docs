@@ -1,5 +1,6 @@
 # sequence
 ![sequence](./sequence.svg)
+
 * * * * * * * * * *
 ## Introduction
 The global constants file `sequence` defines a set of predefined constants that can be used in conjunction with sequence function blocks. It provides symbolic names for states and a special time value to improve the readability and maintainability of IEC 61499 applications. The constants are organized in the package `logiBUS::utils::sequence::const`.

@@ -1,5 +1,6 @@
 # AD_FIELDBUS_DWORD_TO_SIGNAL
 ![AD_FIELDBUS_DWORD_TO_SIGNAL](./AD_FIELDBUS_DWORD_TO_SIGNAL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `AD_FIELDBUS_DWORD_TO_SIGNAL` is used to forward an incoming data word (DWORD) to the output – but only if the signal is classified as valid. It combines a specialized fieldbus function block with an edge-triggered D flip-flop to implement reliable, data-driven validation and forwarding.

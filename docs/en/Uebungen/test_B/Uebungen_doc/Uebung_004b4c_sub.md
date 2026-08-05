@@ -1,5 +1,6 @@
 # Exercise_004b4c_sub: Sub-application for a latching toggle flip-flop with AE2 adapter (identical to 004b3c_sub)
 ![Uebung_004b4c_sub_network](./Uebung_004b4c_sub_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a sub-application for a latching toggle flip-flop that can communicate with other components via an AE2 adapter. The circuit is identical to that in Exercise 004b3c_sub and serves as a basis for understanding event-driven state changes with feedback and adapter-based input/output.

@@ -1,5 +1,6 @@
 # OFF_SPLIT_3
 ![AUS_SPLIT_3](./AUS_SPLIT_3.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **OFF_SPLIT_3** serves as a universal distributor for incoming adapter signals of type `adapter::types::unidirectional::AUS`. It receives such a signal and forwards it unchanged to three identical output adapters. This allows control, alarm, or status information to be easily distributed across multiple subsequent blocks.

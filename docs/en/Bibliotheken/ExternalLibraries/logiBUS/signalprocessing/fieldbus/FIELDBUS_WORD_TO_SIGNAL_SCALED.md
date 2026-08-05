@@ -1,5 +1,6 @@
 # FIELDBUS_WORD_TO_SIGNAL_SCALED
 ![FIELDBUS_WORD_TO_SIGNAL_SCALED](./FIELDBUS_WORD_TO_SIGNAL_SCALED.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **FIELDBUS_WORD_TO_SIGNAL_SCALED** is used to convert a digital fieldbus raw value (16-bit WORD) into a scaled physical signal value (REAL). A valid output is only provided if the incoming value is recognized as a valid signal. The block checks the validity against a predefined constant (`VALID_SIGNAL_W`) and can reliably suppress unsafe or "unavailable" values.

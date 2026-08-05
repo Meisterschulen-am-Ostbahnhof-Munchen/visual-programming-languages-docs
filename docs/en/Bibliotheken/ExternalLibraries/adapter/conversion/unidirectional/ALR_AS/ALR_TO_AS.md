@@ -1,5 +1,6 @@
 # ALR_TO_AS
 ![ALR_TO_AS](./ALR_TO_AS.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ALR_TO_AS** function block is a composite function block that converts an **LREAL adapter** (ALR) into a **SINT adapter** (AS). It encapsulates the conversion of a floating-point value (LREAL) into a signed 8-bit integer value (SINT) and provides the result data via the SINT adapter. This function block is typically used in automation technology when data needs to be transferred between different adapter interfaces.

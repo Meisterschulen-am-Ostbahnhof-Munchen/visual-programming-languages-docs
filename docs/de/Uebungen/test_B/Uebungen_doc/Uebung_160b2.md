@@ -52,6 +52,7 @@ Die Schaltung realisiert eine verriegelte Steuerung zweier Ausgänge (z.B. Motor
     *   Der Ausgang **Q56** ist aktiv, sobald entweder Q5 **ODER** Q6 aktiv ist. Dies dient als "Betriebsanzeige".
 
 **Zusammenfassende Logik:**
+
 *   **I1** startet Q5.
 *   **I2** stoppt Q5 und startet (verzögert um 50ms) Q6.
 *   **I3** stoppt Q6.

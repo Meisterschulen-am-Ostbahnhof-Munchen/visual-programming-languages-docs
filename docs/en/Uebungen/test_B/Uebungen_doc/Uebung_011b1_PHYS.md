@@ -1,5 +1,6 @@
 # Exercise_011b1_PHYS: Numeric Value Input ADD (PHYS)
 ![Uebung_011b1_PHYS_network](./Uebung_011b1_PHYS_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the addition of two physical values (REAL) using the NumericValue pattern from the isobus library. The values are read in via the function blocks `InputNumber_I3` and `InputNumber_I4`, added together, and the result is output via the function block `Q_NumericValue_PHYS`.

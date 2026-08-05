@@ -1,5 +1,6 @@
 # AIWS_D_FF
 ![AIWS_D_FF](./AIWS_D_FF.svg)
+
 * * * * * * * * * *
 ## Introduction
 The AIWS_D_FF function block implements a data latch (D) flip-flop that stores an incoming data value and passes it to the output upon an event. Communication occurs exclusively via adapters, allowing the block to be seamlessly integrated into modular systems.

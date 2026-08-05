@@ -1,5 +1,6 @@
 # UDINT_AUDI_EQ
 ![UDINT_AUDI_EQ](./UDINT_AUDI_EQ.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block `UDINT_AUDI_EQ` performs a comparison of two values for equality. The first value is provided via the data input `IN1`, and the second value is received via an adapter socket (`IN2`). The result of the comparison (true if both values are equal) is output via an adapter plug (`OUT`). The block triggers the comparison operation as soon as an event occurs at the input `REQ` or at the adapter socket `IN2`.

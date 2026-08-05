@@ -1,5 +1,6 @@
 # Exercise_217_ALI: Standard IEC 61131-3 ALI_FB_CTD (Adapter Version, Down Counter, LINT) with Terminal Output
 ![Uebung_217_ALI_network](./Uebung_217_ALI_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements an **IEC 61131-3 compliant down counter (CTD) in adapter version** for the LINT (Long Integer) data type. The current counter value is displayed on a terminal. The counter is decremented via a digital input signal **CD** (Count Down). Another digital signal **LD** (Load) loads the counter with a predefined preset value. Once the counter value reaches 0, the output **Q** is set.

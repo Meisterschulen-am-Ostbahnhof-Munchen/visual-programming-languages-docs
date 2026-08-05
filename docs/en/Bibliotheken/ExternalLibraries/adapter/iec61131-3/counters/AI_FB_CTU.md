@@ -1,5 +1,6 @@
 # AI_FB_CTU
 ![AI_FB_CTU](./AI_FB_CTU.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **AI_FB_CTU** is an up counter for integers (INT) that encapsulates the IEC 61131-3 functionality of a CTU (Counter Up) in an adapter-based form factor. It is specifically designed for use in the 4diac IDE and allows for modular connection via unidirectional adapter interfaces. The block fires an acknowledgment event with each update of its inputs (CU, R, PV), making it suitable for time-controlled or event-driven counting tasks.

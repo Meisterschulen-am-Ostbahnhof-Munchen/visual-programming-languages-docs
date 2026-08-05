@@ -1,5 +1,6 @@
 # Exercise_205b_AX: Interlock: ILOCK_SWITCH_PROTECT_AX (Motor Reversing with Protection Time via Adapter)
 ![Uebung_205b_AX_network](./Uebung_205b_AX_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise covers motor reversing with a protection time using an interlock function block (ILOCK_SWITCH_PROTECT_AX). The goal is to control a motor via two inputs (up/down), where a defined protection time (here, 1 second) prevents both directions from being switched on simultaneously and blocks excessively rapid direction changes. Control is achieved via adapter interfaces, which increases the reusability of this sub-application type.

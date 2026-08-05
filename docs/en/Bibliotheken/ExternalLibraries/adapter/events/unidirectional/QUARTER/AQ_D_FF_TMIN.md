@@ -1,5 +1,6 @@
 # AQ_D_FF_TMIN
 ![AQ_D_FF_TMIN](./AQ_D_FF_TMIN.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AQ_D_FF_TMIN** implements a data-locking D flip-flop with a minimum inter-disposal time (MIT) between two consecutive output events (EOs). It serves as an extension of a simple D flip-flop, adding time-based debouncing or minimum-distance control, and is connected to the signal transmitter and receiver via adapters.

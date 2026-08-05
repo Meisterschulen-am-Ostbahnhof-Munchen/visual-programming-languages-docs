@@ -1,5 +1,6 @@
 # Exercise_222b: Standard IEC 61131-3 FB_CTUD_LINT (Up/Down Counter, LINT) with Terminal Output (PHYS_LREAL)
 ![Uebung_222b_network](./Uebung_222b_network.svg)
+
 * * * * * * * * * *
 ## Introduction
 This exercise implements a standard-compliant IEC 61131-3 up/down counter with the data type **LINT** (64-bit integer). The counter is controlled via four digital inputs: count up (CU), count down (CD), reset (R), and load preset value (LD). The current counter value is output to two digital outputs (QU and QD) and, via a data type converter, as a physical floating-point value (LREAL) on a terminal. This allows the counter value to be monitored directly in the development environment during operation.

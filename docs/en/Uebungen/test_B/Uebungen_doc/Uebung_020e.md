@@ -3,6 +3,7 @@
 This article describes the logiBUS® exercise `Uebung_020e`.
 ## 🎧 Podcast
 ![Uebung_020e_network](./Uebung_020e_network.svg)
+
 * Understanding the Infineon BTM9020EP full bridge ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Infineon-BTM9020EP-Vollbrcke-verstehen-e3b8n24)
 * Integrated full bridge ICs MOTIX™ BTM9020EP ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/integrierten-Vollbrcken-ICs-MOTIX-BTM9020EP-e368kse)
 

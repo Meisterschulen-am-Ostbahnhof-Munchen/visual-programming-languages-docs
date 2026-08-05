@@ -75,6 +75,7 @@ Ziel ist es, das Zusammenspiel von monostabilen Elementen (R_IO) mit Hardware-Ei
    - Der `AX_FB_R_IO` kann auch ohne angeschlossenen Reset betrieben werden – dann bleibt der Ausgang nach einmaligem Setzen dauerhaft an (wie ein RS‑Flipflop ohne Reset).
 
 **Lernziele**:  
+
 - Verständnis von Rücksetz‑Set‑Funktionsbausteinen (`AX_FB_R_IO`)  
 - Umgang mit Hardware‑Ein‑/Ausgangsbausteinen (logiBUS)  
 - Signalverteilung mit `AX_SPLIT_2`  

@@ -1,5 +1,6 @@
 # AI_MUX_2
 ![AI_MUX_2](./AI_MUX_2.svg)
+
 * * * * * * * * * *
 ## Introduction
 The function block **AI_MUX_2** is a generic analog input multiplexer. It selects one of two analog signal inputs (IN1 and IN2) based on an index **K** and makes the selected signal available at its output **OUT**. The block is event-controlled and operates according to the 61499-2 standard.

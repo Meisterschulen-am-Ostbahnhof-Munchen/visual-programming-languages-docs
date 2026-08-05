@@ -1,5 +1,6 @@
 # logiBUS_IBA
 ![logiBUS_IBA](./logiBUS_IBA.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **logiBUS_IBA** function block is a composite block for processing byte input data via the logiBUS protocol. It encapsulates the initialization, configuration, and event control of a logiBUS input block and provides the data via an adapter. The block is designed for use in agricultural control systems.

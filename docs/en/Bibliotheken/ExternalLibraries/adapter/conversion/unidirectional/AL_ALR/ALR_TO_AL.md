@@ -1,5 +1,6 @@
 # ALR_TO_AL
 ![ALR_TO_AL](./ALR_TO_AL.svg)
+
 * * * * * * * * * *
 ## Introduction
 The **ALR_TO_AL** function block is a composite function block according to IEC 61499-2. It is used to convert an **ALR adapter** (LREAL data type) into an **AL adapter** (LWORD data type). The conversion is implemented via the internal function block `F_LREAL_TO_LWORD` from the IEC 61131-3 library.

@@ -1,6 +1,7 @@
 # 💾 Data Types (Overview)
 ### Summary of Categories
 According to DIN EN 61131-3, data types are divided into the following groups:
+
 - **Bit Data Types**: BOOL, BYTE, WORD, DWORD, LWORD
 - **Signed Integers**: SINT, INT, DINT, LINT
 - **Unsigned Integers**: USINT, UINT, UDINT, ULINT

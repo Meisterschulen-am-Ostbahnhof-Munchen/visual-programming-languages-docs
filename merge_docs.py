@@ -411,7 +411,7 @@ def shift_headings(markdown_text, shift, page_id):
         
     # If no heading was found in the file, we prepend a target anchor
     if not attached_id:
-        new_lines.insert(0, f"\n# {page_id.replace('-', ' ').title()} {{#{page_id}}}\n")
+        new_lines.insert(0, f"\n# {page_id.replace('-', ' ').title()}\n")
         
     return '\n'.join(new_lines)
 

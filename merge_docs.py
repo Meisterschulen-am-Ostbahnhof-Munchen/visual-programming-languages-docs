@@ -235,7 +235,7 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
             url_part = match.group(5)
             return rewrite_single_link(prefix, text, url_part)
             
-    pattern = r'(?:\[(!\[[^]]*\]\([^)]*\))\]\(([^)]*)\))|(?:(!?\[)([^]]*)\]\(([^)]*)\))'
+    pattern = r'(?:\[(!\[[^]]*\]\((?:[^()]+|\([^()]*\))*\))\]\(((?:[^()]+|\([^()]*\))*)\))|(?:(!?\[)([^]]*)\]\(((?:[^()]+|\([^()]*\))*)\))'
     content = re.sub(pattern, replace_any_link, content)
     
     # 2. HTML image sources <img src="path" ...> to Markdown image syntax
@@ -279,87 +279,6 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
     # Match any <img ...> tag
     content = re.sub(r'<img\s+[^>]*>', replace_html_img, content)
     
-    # 3. Convert admonitions (!!! note, ??? note, ::: admonition) into Markdown blockquotes for Pandoc/Typst PDF compilation
-    def rewrite_admonitions(text):
-        lines = text.splitlines()
-        new_lines = []
-        i = 0
-        in_code = False
-        code_char = None
-        while i < len(lines):
-            line = lines[i]
-            stripped = line.strip()
-            if stripped.startswith('```') or stripped.startswith('~~~'):
-                if not in_code:
-                    in_code = True
-                    code_char = stripped[:3]
-                elif stripped.startswith(code_char):
-                    in_code = False
-                    code_char = None
-                new_lines.append(line)
-                i += 1
-                continue
-
-            if in_code:
-                new_lines.append(line)
-                i += 1
-                continue
-
-            m_pymdown = re.match(r'^(?:!|\?){3}\s+([a-zA-Z0-9_-]+)(?:\s+"([^"]+)")?', stripped)
-            m_myst = re.match(r'^:::\s*\{?([a-zA-Z0-9_-]+)\}?(?:\s+(.*))?$', stripped)
-
-            if m_pymdown or m_myst:
-                if m_pymdown:
-                    adm_type = m_pymdown.group(1).capitalize()
-                    adm_title = m_pymdown.group(2) or adm_type
-                    is_myst = False
-                else:
-                    raw_type = m_myst.group(1)
-                    adm_title = m_myst.group(2) or raw_type.capitalize()
-                    adm_type = raw_type.capitalize()
-                    is_myst = True
-
-                adm_title = re.sub(r':class:.*', '', adm_title).strip()
-                if not adm_title:
-                    adm_title = adm_type
-
-                new_lines.append(f"> **{adm_title}**")
-                new_lines.append(">")
-
-                i += 1
-                while i < len(lines):
-                    curr = lines[i]
-                    if is_myst:
-                        if curr.strip() == ':::':
-                            i += 1
-                            break
-                        if curr.strip().startswith(':class:') or curr.strip().startswith(':gutter:'):
-                            i += 1
-                            continue
-                        new_lines.append(f"> {curr}")
-                        i += 1
-                    else:
-                        if curr.startswith('    ') or curr.startswith('\t'):
-                            unindented = curr[4:] if curr.startswith('    ') else curr[1:]
-                            new_lines.append(f"> {unindented}")
-                            i += 1
-                        elif curr.strip() == '':
-                            if i + 1 < len(lines) and (lines[i+1].startswith('    ') or lines[i+1].startswith('\t')):
-                                new_lines.append(">")
-                                i += 1
-                            else:
-                                break
-                        else:
-                            break
-                new_lines.append("")
-            else:
-                new_lines.append(line)
-                i += 1
-
-        return '\n'.join(new_lines)
-
-    content = rewrite_admonitions(content)
-    
     return content
 
 def shift_headings(markdown_text, shift, page_id):
@@ -401,17 +320,16 @@ def shift_headings(markdown_text, shift, page_id):
                     attached_id = True
                     
                 if shift > 0:
-                    new_hashes = '#' * min(6, len(hashes) + shift)
+                    new_hashes = '#' * (len(hashes) + shift)
                     line = f"{new_hashes} {title}{id_suffix}"
                 else:
-                    new_hashes = '#' * min(6, len(hashes))
-                    line = f"{new_hashes} {title}{id_suffix}"
+                    line = f"{hashes} {title}{id_suffix}"
                     
         new_lines.append(line)
         
     # If no heading was found in the file, we prepend a target anchor
     if not attached_id:
-        new_lines.insert(0, f"\n# {page_id.replace('-', ' ').title()}\n")
+        new_lines.insert(0, f"\n# {page_id.replace('-', ' ').title()} {{#{page_id}}}\n")
         
     return '\n'.join(new_lines)
 
@@ -428,7 +346,7 @@ def process_nav(items, path_to_id, docs_dir, output_file, depth=0):
             
             if not has_index:
                 # If there's no index page, output a heading for the section
-                header_level = min(6, depth + 1)
+                header_level = depth + 1
                 hashes = '#' * header_level
                 section_id = clean_id(item.title)
                 output_file.write(f"\n\n{hashes} {item.title} {{#{section_id}}}\n\n")

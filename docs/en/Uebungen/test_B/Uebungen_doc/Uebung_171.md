@@ -44,7 +44,7 @@ The network contains a comment block with the content **"TODO"**. This indicates
 
 ## Summary
 
-`Uebung_171` represents a basic exercise for practicing data transfer in 4diac. The focus is on the correct use of the `E_MOVE` block in combination with the preceding IEC 61131 logic (`F_MOVE`). The user must complete the open connections as described in the "TODO" note to enable functionality.
+Uebung_171` represents a basic exercise for practicing data transfer in 4diac. The focus is on the correct use of the `E_MOVE` block in combination with the preceding IEC 61131 logic (`F_MOVE`). The user must complete the open connections as described in the "TODO" note to enable functionality.
 
 ---
 

@@ -76,7 +76,7 @@ The module does not have its own states, as it consists exclusively of direct co
 
 ## Conclusion
 
-`AUI_TO_AULI` is a lean, specialized composite block for converting an AUI adapter to an AULI adapter. It simplifies type conversion between 16-bit and 64-bit addressing in IEC 61499 systems by automatically converting and forwarding both event and data paths. Thanks to the implicit type conversion from `UINT` to `ULINT`, manual implementation of conversion logic is eliminated, facilitating the design of modular and reusable control applications.
+AUI_TO_AULI` is a lean, specialized composite block for converting an AUI adapter to an AULI adapter. It simplifies type conversion between 16-bit and 64-bit addressing in IEC 61499 systems by automatically converting and forwarding both event and data paths. Thanks to the implicit type conversion from `UINT` to `ULINT`, manual implementation of conversion logic is eliminated, facilitating the design of modular and reusable control applications.
 
 ---
 

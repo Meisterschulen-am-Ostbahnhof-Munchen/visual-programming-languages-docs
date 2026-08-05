@@ -63,7 +63,7 @@ The FB has no internal state machine and executes no sequential logic. Its behav
 
 ## Conclusion
 
-`AD_SPLIT_9` is a simple yet useful generic function block for unidirectionally splitting an adapter signal into nine identical outputs. It helps avoid redundancy in system design and facilitates the modular structuring of IEC 61499 applications.
+AD_SPLIT_9` is a simple yet useful generic function block for unidirectionally splitting an adapter signal into nine identical outputs. It helps avoid redundancy in system design and facilitates the modular structuring of IEC 61499 applications.
 
 ---
 

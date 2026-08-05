@@ -92,7 +92,7 @@ The block then returns to the wait state.
 
 --------------------|--------------------------------|-----------------------------------------------------------------|
 
-`F_EQ` | Equality Comparison | Checks for equality, not inequality |
+F_EQ` | Equality Comparison | Checks for equality, not inequality |
 
 | `F_LT`, `F_GT` | Less Than/Greater Than Comparison | Perform order comparisons, not inequality checks |
 

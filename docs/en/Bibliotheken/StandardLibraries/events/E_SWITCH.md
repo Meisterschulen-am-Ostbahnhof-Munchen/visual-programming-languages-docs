@@ -6,7 +6,7 @@
 ## Introduction
 The `E_SWITCH` (Event Switch) is a basic function block according to IEC 61499 that functions as a conditional event switch or 1-to-2 demultiplexer. It forwards a single input event (`EI`) to one of two outputs based on the state of a Boolean control variable (`G`).
 
-``` ![E_SWITCH](E_SWITCH.svg)
+`` ![E_SWITCH](E_SWITCH.svg)
 
 ## Interface Structure
 

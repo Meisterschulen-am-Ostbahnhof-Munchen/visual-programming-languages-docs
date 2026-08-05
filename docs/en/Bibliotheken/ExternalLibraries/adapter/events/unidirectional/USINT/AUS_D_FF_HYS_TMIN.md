@@ -94,12 +94,12 @@ Since the function block does not have its own state diagram (the logic resides 
 
 | `E_D_FF_HYS` (without Tmin) | Hysteresis only, no time debouncing. |
 
-`E_D_FF_TMIN` (without Hys) | Minimum time only, no hysteresis. |
+E_D_FF_TMIN` (without Hys) | Minimum time only, no hysteresis. |
 
-`AUS_D_FF_HYS_TMIN` | Combines hysteresis **and** minimum time – more robust against noise and bursts. |
+AUS_D_FF_HYS_TMIN` | Combines hysteresis **and** minimum time – more robust against noise and bursts. |
 
 This component is therefore particularly suitable when both effects (signal tolerance and time limiting) are required simultaneously.
 
 ## Conclusion
 
-`AUS_D_FF_HYS_TMIN`This is a specialized D-flip-flop wrapper that offers reliable, debounced data latching through a combination of hysteresis and minimal event interval time. Its encapsulation as a sub-application with adapter interfaces makes it easy to integrate into larger control networks. Initialization via `INIT` ensures a defined startup configuration. This component is an ideal solution for applications requiring robust threshold detection with noise suppression and frequency limiting.
+AUS_D_FF_HYS_TMIN`This is a specialized D-flip-flop wrapper that offers reliable, debounced data latching through a combination of hysteresis and minimal event interval time. Its encapsulation as a sub-application with adapter interfaces makes it easy to integrate into larger control networks. Initialization via `INIT` ensures a defined startup configuration. This component is an ideal solution for applications requiring robust threshold detection with noise suppression and frequency limiting.

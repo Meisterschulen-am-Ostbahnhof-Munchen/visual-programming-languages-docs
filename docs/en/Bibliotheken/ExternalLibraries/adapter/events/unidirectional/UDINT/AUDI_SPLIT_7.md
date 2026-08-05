@@ -25,17 +25,17 @@ None
 
 | `IN` | `adapter::types::unidirectional::AUDI` | Socket (Input) |
 
-`OUT1` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+OUT1` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 
-`OUT2` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+OUT2` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 
-`OUT3` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+OUT3` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 
-`OUT4` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+OUT4` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 
-`OUT5` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+OUT5` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 
-`OUT6` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+OUT6` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 
 | `OUT7` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 
@@ -76,7 +76,7 @@ While `AUDI_SPLIT_7` is designed for the specific AUDI adapter type, generic spl
 
 ## Conclusion
 
-`AUDI_SPLIT_7` is a simple yet effective module for distributing an AUDI signal to seven identical paths. Its generic design allows it to be reused in various contexts. The absence of events and internal logic makes it lightweight and reliable for pure signal distribution tasks.
+AUDI_SPLIT_7` is a simple yet effective module for distributing an AUDI signal to seven identical paths. Its generic design allows it to be reused in various contexts. The absence of events and internal logic makes it lightweight and reliable for pure signal distribution tasks.
 
 ## Conclusion ---
 

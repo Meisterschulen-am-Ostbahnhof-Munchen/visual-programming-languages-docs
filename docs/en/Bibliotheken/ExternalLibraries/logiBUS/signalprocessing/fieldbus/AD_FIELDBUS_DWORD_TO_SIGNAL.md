@@ -115,4 +115,4 @@ The state changes only on a rising edge at `CLK` (corresponds to the `CNF` event
 
 ## Conclusion
 
-`AD_FIELDBUS_DWORD_TO_SIGNAL` offers a compact and standardized solution for forwarding fieldbus data words to the application only when validity has been established. The combination of a specific fieldbus function block and a flip-flop ensures a timely and stable output of the validation status. Due to its adapter-based interface, the function block can be flexibly integrated into existing IEC 61499 systems.
+AD_FIELDBUS_DWORD_TO_SIGNAL` offers a compact and standardized solution for forwarding fieldbus data words to the application only when validity has been established. The combination of a specific fieldbus function block and a flip-flop ensures a timely and stable output of the validation status. Due to its adapter-based interface, the function block can be flexibly integrated into existing IEC 61499 systems.

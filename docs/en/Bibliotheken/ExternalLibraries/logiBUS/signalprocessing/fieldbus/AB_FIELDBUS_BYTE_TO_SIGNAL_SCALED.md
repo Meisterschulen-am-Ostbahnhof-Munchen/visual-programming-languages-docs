@@ -87,4 +87,4 @@ This module combines BYTE-to-REAL conversion with compact, configurable scaling 
 
 ## Conclusion
 
-`AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED` is a specialized function block for the flexible conversion of raw BYTE data into scaled values with integrated validity signaling. Its adapter-based interface allows for easy integration into IEC 61499 systems and makes it particularly suitable for fieldbus applications where raw values need to be transformed into physical quantities.
+AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED` is a specialized function block for the flexible conversion of raw BYTE data into scaled values with integrated validity signaling. Its adapter-based interface allows for easy integration into IEC 61499 systems and makes it particularly suitable for fieldbus applications where raw values need to be transformed into physical quantities.

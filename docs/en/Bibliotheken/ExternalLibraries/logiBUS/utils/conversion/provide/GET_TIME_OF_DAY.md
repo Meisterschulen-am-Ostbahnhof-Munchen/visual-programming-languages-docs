@@ -57,4 +57,4 @@ The simple function block has only the state `REQ`. As soon as the event `REQ` i
 
 ## Conclusion
 
-`GET_TIME_OF_DAY` is a compact yet useful function block that reads a time of day from an InOut variable, buffers it, and passes it on as a controlled output value. Its clear, low-state logic and buffering make it particularly suitable for tasks where a recorded time must be available in the same format at a later time.
+GET_TIME_OF_DAY` is a compact yet useful function block that reads a time of day from an InOut variable, buffers it, and passes it on as a controlled output value. Its clear, low-state logic and buffering make it particularly suitable for tasks where a recorded time must be available in the same format at a later time.

@@ -131,7 +131,7 @@ After the system starts, the function block `Input_LD` is initialized. This gene
 - *“Negative values are possible here!”* – The counter can go below zero with continued CD events. The terminal output also displays negative LREAL values.
 - *“If necessary, add an AX_D_FF here to reduce the number of events.”* – For very fast pulses, a preceding flip-flop can dampen the event rate and prevent unwanted counts.
 
-``` **Connection Overview (Excerpt from the Network):**
+`` **Connection Overview (Excerpt from the Network):**
 
 - `Input_CD.IN` → `AUDI_FB_CTD.CD`
 - `Input_LD.IN` → `AUDI_FB_CTD.LD`
@@ -146,7 +146,7 @@ After the system starts, the function block `Input_LD` is initialized. This gene
 
 # SummaryExercise 218b of the ALR (**Exercise_218b_ALR**) teaches how to use an IEC 61131-3 down counter in the 4diac IDE. The counter is controlled via two digital inputs (counting and loading) and outputs its status and current value. A key feature is the conversion of the UDINT counter value into an LREAL terminal output, allowing negative numbers to be displayed.
 
-``` **Learning Objectives:**
+`` **Learning Objectives:**
 
 - Design and parameterization of an adapter-based CTD function block
 - Integration of digital inputs/outputs via logiBUS adapters

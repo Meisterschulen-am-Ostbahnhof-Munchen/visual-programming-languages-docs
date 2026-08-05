@@ -64,7 +64,7 @@ The FB has no state machines. Its behavior is timeless and constant: The input s
 
 ## Conclusion
 
-`AS_SPLIT_4` is a simple yet essential building block for structurally replicating unidirectional AS adapter connections in 4diac applications. Its generic design and pure adapter interface make it ideal for modular and scalable control architectures.
+AS_SPLIT_4` is a simple yet essential building block for structurally replicating unidirectional AS adapter connections in 4diac applications. Its generic design and pure adapter interface make it ideal for modular and scalable control architectures.
 
 ---
 

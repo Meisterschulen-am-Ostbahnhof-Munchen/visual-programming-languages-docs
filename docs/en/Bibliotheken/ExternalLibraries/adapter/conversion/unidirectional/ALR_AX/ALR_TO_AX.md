@@ -28,7 +28,7 @@ The entire process takes place within a single cycle, as this is a composite blo
 ## Technical Details
 - **License & Origin**: The block is licensed under the Eclipse Public License 2.0 and was provided with version information 1.0.
 
-``` - **Libraries Used**: The comparison block *F_NE* is from the IEC 61131 library (*iec61131::comparison*).
+`` - **Libraries Used**: The comparison block *F_NE* is from the IEC 61131 library (*iec61131::comparison*).
 
 - **Package Name**: The function block belongs to the package *adapter::conversion::unidirectional*.
 - **Compatibility**: It requires the adapter specification of the 4diac framework and is designed for unidirectional adapter types.

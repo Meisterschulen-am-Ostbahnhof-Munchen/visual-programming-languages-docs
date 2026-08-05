@@ -51,7 +51,7 @@ No standalone data outputs; output is via the adapter `OUT`.
 
 3. If `K = 0` is present, the current value of adapter `IN1` is transferred to output adapter `OUT`.
 
-``` If `K = 1` is , the value of `IN2` is transferred to `OUT`.
+`` If `K = 1` is , the value of `IN2` is transferred to `OUT`.
 
 For other values of `K` (e.g., >1), the behavior is undefined – the function block cannot make a valid selection.
 

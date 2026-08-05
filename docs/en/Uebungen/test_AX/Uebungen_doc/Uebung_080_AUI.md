@@ -60,7 +60,7 @@ This exercise is set up as a subapplication (`Uebung_080_AUI`) and does not requ
 - The adapter output `Q` of `AUI_CTU` (indicating that the counter reading has reached the threshold) is connected to the event input `OUT` of `DigitalOutput_Q1`. When the threshold is reached, the output `Output_Q1` is activated.
 - The adapter output `CV` of `AUI_CTU` (current counter value) is connected to the adapter input `AUI_IN` of the converter `AUI_TO_AUDI`.
 
-``` - The data output `AUDI_OUT` from `AUI_TO_AUDI` provides the counter value as an integer and is connected to the adapter input `u32NewValue` of the terminal module `Q_NumericValue_AUDI`. This ensures that the current counter value is continuously displayed on the terminal.
+`` - The data output `AUDI_OUT` from `AUI_TO_AUDI` provides the counter value as an integer and is connected to the adapter input `u32NewValue` of the terminal module `Q_NumericValue_AUDI`. This ensures that the current counter value is continuously displayed on the terminal.
 
 **Process**:
 

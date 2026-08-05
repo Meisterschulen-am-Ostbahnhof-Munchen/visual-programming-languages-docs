@@ -58,7 +58,7 @@ Thus, both `INIT` and `REQ` result in the same core functionality (negation), bu
 - The function block does not contain its own algorithmic logic, but uses an internal sub-function (`F_NOT`). This promotes reuse and consistency.
 - The initialization mechanism allows the output to be set to the negated input even before the first "normal" call – useful in PLC programs where start values need to be defined.
 
-``` - The simultaneous use of `INIT` and `REQ` enables a clear separation between startup behavior and cyclic operation.
+`` - The simultaneous use of `INIT` and `REQ` enables a clear separation between startup behavior and cyclic operation.
 
 - By including the input variables in the events (WITH), it is ensured that the data is always up-to-date.
 
@@ -91,4 +91,4 @@ A repeated triggering of `INIT` (e.g., after a reset) leads to re-initialization
 The standard `F_NOT` is sufficient if the start behavior is controlled by the higher-level control sequence. The initializable function block is advantageous when the function block itself should have control over its first execution.
 
 ## Conclusion
-`F_NOT_BOOL_INIT` is a useful function block that extends the simple NOT operation with an initialization facility. It is particularly suitable for PLC applications where a defined start value for the negated output is required. Thanks to the clear event control and the internal use of the proven `F_NOT` function block, the implementation remains robust and well-organized. The function block represents a useful extension of the IEC 61131 bit operators.
+F_NOT_BOOL_INIT` is a useful function block that extends the simple NOT operation with an initialization facility. It is particularly suitable for PLC applications where a defined start value for the negated output is required. Thanks to the clear event control and the internal use of the proven `F_NOT` function block, the implementation remains robust and well-organized. The function block represents a useful extension of the IEC 61131 bit operators.

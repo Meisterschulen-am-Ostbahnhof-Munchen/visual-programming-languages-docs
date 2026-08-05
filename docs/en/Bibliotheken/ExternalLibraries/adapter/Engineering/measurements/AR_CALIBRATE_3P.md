@@ -67,13 +67,13 @@ As soon as an event arrives from the raw value adapter (`X.E1`), the function bl
 
 - If the raw value is below the stored mean `X_MID.DI1`, the lower branch of the characteristic curve is used:
 
-`Y.D1 = MIN_REF + (X.D1 – X_MIN.DI1) * (MID_REF – MIN_REF) / (X_MID.DI1 – X_MIN.DI1)`
+Y.D1 = MIN_REF + (X.D1 – X_MIN.DI1) * (MID_REF – MIN_REF) / (X_MID.DI1 – X_MIN.DI1)`
 
 If the intervals are invalid (division by zero or negative range), `MIN_REF` is used.
 
 ... - If the raw value is above or equal to `X_MID.DI1`, the upper branch is calculated:
 
-`Y.D1 = MID_REF + (X.D1 – X_MID.DI1) * (MAX_REF – MID_REF) / (X_MAX.DI1 – X_MID.DI1)`
+Y.D1 = MID_REF + (X.D1 – X_MID.DI1) * (MAX_REF – MID_REF) / (X_MAX.DI1 – X_MID.DI1)`
 
 Here too, invalid intervals result in `MID_REF` being output.
 
@@ -137,4 +137,4 @@ The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`
 The key advantage lies in the explicit handling of the center point, which is neglected in many simple scaling methods.
 
 ## Conclusion
-`AR_CALIBRATE_3P` is a practical function block for the precise correction of analog sensors with three distinct reference points. Thanks to its adapter-based interface, it integrates seamlessly into IEC-61499 systems and enables a flexible and reusable calibration solution, especially for joysticks and similar input devices.
+AR_CALIBRATE_3P` is a practical function block for the precise correction of analog sensors with three distinct reference points. Thanks to its adapter-based interface, it integrates seamlessly into IEC-61499 systems and enables a flexible and reusable calibration solution, especially for joysticks and similar input devices.

@@ -63,7 +63,7 @@ When an event occurs at input `REQ`, the algorithm `REQ` is executed:
 
 The comparison uses the semantics of the imported constants:
 
-`DONT_CARE_2bit` defines the threshold above which values are considered "irrelevant" or invalid. The initial value of `IN` is set to `NOT_AVAILABLE_2bit`, which is typically above this threshold, so the function block outputs a defined invalid state upon startup.
+DONT_CARE_2bit` defines the threshold above which values are considered "irrelevant" or invalid. The initial value of `IN` is set to `NOT_AVAILABLE_2bit`, which is typically above this threshold, so the function block outputs a defined invalid state upon startup.
 
 ## Technical Features
 - **Constant Import**: The values `DONT_CARE_2bit` and `NOT_AVAILABLE_2bit` are imported from a higher-level signal processing package. They must be defined in the target system and represent meaningful threshold values (e.g., `16#FC` for "don't care").
@@ -94,7 +94,7 @@ This function block impresses with its simple logic, tailored to fieldbus types.
 
 ## Conclusion
 
-`FIELDBUS_QUARTER_TO_SIGNAL` is a compact, efficient function block for validating 8-bit fieldbus signals. It reliably separates valid measured values from those marked as invalid and provides the validity as a separate Boolean signal. Thanks to its streamlined state logic and the use of imported constants, it can be flexibly integrated into various signal processing chains.
+FIELDBUS_QUARTER_TO_SIGNAL` is a compact, efficient function block for validating 8-bit fieldbus signals. It reliably separates valid measured values from those marked as invalid and provides the validity as a separate Boolean signal. Thanks to its streamlined state logic and the use of imported constants, it can be flexibly integrated into various signal processing chains.
 
 ---
 

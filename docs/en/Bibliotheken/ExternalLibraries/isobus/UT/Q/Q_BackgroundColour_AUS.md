@@ -81,7 +81,7 @@ After the command is completed, the internal module sends a `CNF` event.
 * The module implements the "Change Background Colour" command according to ISO 11783-6, section F.20.
 * The color values correspond to the VT standard color palette from Annex A.3 of the standard.
 
-``` * Possible return values (`s16result`) are:
+`` * Possible return values (`s16result`) are:
 
 * `VT_E_NO_ERR (0)` – Success
 * `VT_E_OVERFLOW (-6)` – Buffer overflow

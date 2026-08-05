@@ -32,11 +32,11 @@ Special characters are introduced by a dollar sign (`$`):
 
 | `$P` or `$p` | Page feed |
 
-`$R` or `$r` | Carriage Return |
+$R` or `$r` | Carriage Return |
 
-`$T` or `$t` | Tab |
+$T` or `$t` | Tab |
 
-`$hh` | Character with Hex Code `hh` (e.g., `$41` for 'A') |
+$hh` | Character with Hex Code `hh` (e.g., `$41` for 'A') |
 
 ### Examples
 - `'Hallo Welt'` (Plain Text)

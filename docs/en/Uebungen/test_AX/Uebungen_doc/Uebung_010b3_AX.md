@@ -27,4 +27,4 @@ The event naming scheme for AUX is somewhat special:
 * `AuxEnabled`: Means the switch is "On" (Closed).
 * `_START`: Means edge (transition to this state).
 
-`AuxDisabled_START` therefore means: The transition from "Enabled" to "Disabled". This corresponds to **releasing** a button (`Falling Edge`). The flip-flop thus switches when the joystick button is released.
+AuxDisabled_START` therefore means: The transition from "Enabled" to "Disabled". This corresponds to **releasing** a button (`Falling Edge`). The flip-flop thus switches when the joystick button is released.

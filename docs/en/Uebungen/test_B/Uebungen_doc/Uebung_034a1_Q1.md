@@ -4,7 +4,7 @@
 [cite_start]In this exercise, a numeric value is read directly from the ISOBUS terminal to control the duty cycle of a PWM output (`Q1`)[cite: 1].
 The operator can enter a number on the screen using the object `InputNumber_PWM_Value`. Only after confirmation with "OK" is the event `IND` triggered and the new value transmitted to the PWM hardware. This allows for precise manual setting of parameters (e.g., fan speed or lamp brightness) directly via the display.
 
-``` ![Uebung_034a1_Q1_network](./Uebung_034a1_Q1_network.svg)
+`` ![Uebung_034a1_Q1_network](./Uebung_034a1_Q1_network.svg)
 
 ---
 

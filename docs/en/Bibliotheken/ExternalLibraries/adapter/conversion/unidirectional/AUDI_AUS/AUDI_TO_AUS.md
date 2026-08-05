@@ -44,4 +44,4 @@ The composite chip has no states of its own; it is entirely event-driven. The in
 
 ## Conclusion
 
-`AUDI_TO_AUS` is a simple yet useful strip-down function block for unidirectional UDINT-to-USINT conversion via adapters. It reduces complexity in the FB network by combining adapter coupling and conversion logic into a single block. Due to the lack of error handling, it is only suitable for applications where values > 255 do not occur or where their loss can be tolerated.
+AUDI_TO_AUS` is a simple yet useful strip-down function block for unidirectional UDINT-to-USINT conversion via adapters. It reduces complexity in the FB network by combining adapter coupling and conversion logic into a single block. Due to the lack of error handling, it is only suitable for applications where values > 255 do not occur or where their loss can be tolerated.

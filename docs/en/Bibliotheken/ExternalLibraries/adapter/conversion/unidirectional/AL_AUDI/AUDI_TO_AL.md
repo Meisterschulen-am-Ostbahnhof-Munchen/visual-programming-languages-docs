@@ -51,7 +51,7 @@ The entire process is event-driven and requires no additional runtime logic with
 - The function block is implemented as a **composite function block** and uses only the standardized IEC 61131 conversion function `F_UDINT_TO_LWORD`.
 - The conversion is performed directly: **UDINT** (32-bit unsigned integer) is mapped to **LWORD** (64-bit logical word).
 
-``` Note: When converting a 32-bit value to a 64-bit word, the upper 32 bits are set to zero.
+`` Note: When converting a 32-bit value to a 64-bit word, the upper 32 bits are set to zero.
 
 - This function block is licensed under the **Eclipse Public License 2.0**.
 - The interfaces (adapters) are unidirectional: Data flows only from the socket to the plug.

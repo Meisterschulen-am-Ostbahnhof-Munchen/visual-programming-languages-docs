@@ -68,4 +68,4 @@ The function block has only one active state. After execution, it waits for the 
 
 ## Conclusion
 
-`SET_BOOL` is a simple yet practical function block for directly assigning a Boolean value to a variable using an InOut interface. It is ideally suited for control tasks where a Boolean state needs to be set and integrates seamlessly into the event-driven paradigm of IEC 61499.
+SET_BOOL` is a simple yet practical function block for directly assigning a Boolean value to a variable using an InOut interface. It is ideally suited for control tasks where a Boolean state needs to be set and integrates seamlessly into the event-driven paradigm of IEC 61499.

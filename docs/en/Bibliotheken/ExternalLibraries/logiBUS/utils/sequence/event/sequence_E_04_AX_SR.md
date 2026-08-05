@@ -14,17 +14,17 @@ The function block `sequence_E_04_AX_SR` implements an event-driven sequencer wi
 
 | `S1_S2` | Transition from State_01 to State_02 |
 
-`S2_S3` | Transition from State_02 to State_03 |
+S2_S3` | Transition from State_02 to State_03 |
 
-`S3_S4` | Transition from State_03 to State_04 |
+S3_S4` | Transition from State_03 to State_04 |
 
-`S4_START` | Transition from State_04 back to State_00 |
+S4_START` | Transition from State_04 back to State_00 |
 
-`STOP` | Immediately interrupts the current state – all outputs are switched off (dead man stop) |
+STOP` | Immediately interrupts the current state – all outputs are switched off (dead man stop) |
 
-`RESUME` | Resumes the sequence from the paused state (outputs are reactivated) |
+RESUME` | Resumes the sequence from the paused state (outputs are reactivated) |
 
-`RESET` | Resets the sequence from any state back to the START state (State_00) |
+RESET` | Resets the sequence from any state back to the START state (State_00) |
 
 ### **Event Outputs**
 
@@ -60,7 +60,7 @@ No external data inputs.
 
 | `DO_S3` | `adapter::types::unidirectional::AX` | Output active in State_03 |
 
-`DO_S4` | `adapter::types::unidirectional::AX` | Output active in State_04 |
+DO_S4` | `adapter::types::unidirectional::AX` | Output active in State_04 |
 
 ## Functionality
 The sequencer operates according to a finite state machine (ECM). The five sequential states are:

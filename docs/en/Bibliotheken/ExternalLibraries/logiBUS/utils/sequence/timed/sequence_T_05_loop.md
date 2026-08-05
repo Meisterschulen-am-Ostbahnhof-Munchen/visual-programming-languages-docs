@@ -27,7 +27,7 @@ The function block `sequence_T_05_loop` is a time-controlled sequencer that impl
 ### **Data Outputs**
 * **`STATE_NR`** (Type: `SINT`): Outputs the number of the currently active state. `0` = START, `1` = State_01, ..., `5` = State_05.
 
-``` * **`DO_S1`** to **`DO_S5`** (Type: `BOOL`): Logical outputs that are `TRUE` while the FB is in the corresponding state (State_01 to State_05).
+`` * **`DO_S1`** to **`DO_S5`** (Type: `BOOL`): Logical outputs that are `TRUE` while the FB is in the corresponding state (State_01 to State_05).
 
 ### **Adapter**
 * **`timeOut`** (Type: `iec61499::events::ATimeOut`, Plug): A timer adapter used for timed state transitions. The FB starts the timer upon entering a state and transitions to the next state upon receiving the `TimeOut` event.

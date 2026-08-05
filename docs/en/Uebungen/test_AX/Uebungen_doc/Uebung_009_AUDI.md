@@ -48,7 +48,7 @@ The exercise flow can be described as follows:
 
 1. **Clock Generation**
 
-`AE_CYCLE` generates an event (EO) every 1 second.
+AE_CYCLE` generates an event (EO) every 1 second.
 
 2. **Event Combining**
 
@@ -56,11 +56,11 @@ This event is combined with the signal from `AX_SPLIT_3.OUT1` (see step 4) via `
 
 3. **Switching Operation**
 
-`AX_SWITCH` reacts to the incoming event and switches between its two outputs, `EO0` and `EO1`. This simulates a manual or logical switching operation.
+AX_SWITCH` reacts to the incoming event and switches between its two outputs, `EO0` and `EO1`. This simulates a manual or logical switching operation.
 
 4. **Set-Reset Circuit**
 
-`EO0` goes to `AX_SR.S` (Set), `EO1` to `AX_SR.R` (Reset). The output `Q` of the SR circuit is active while set and deactivated upon reset.
+EO0` goes to `AX_SR.S` (Set), `EO1` to `AX_SR.R` (Reset). The output `Q` of the SR circuit is active while set and deactivated upon reset.
 
 5. **Signal Distribution**
 
@@ -68,13 +68,13 @@ The signal from `AX_SR.Q` is sent to `AX_SPLIT_3.IN` and distributed to three ou
 
 - `OUT1` → back to the event junction `AX_AE_MERGE.IN_AX`.
 
-``` - `OUT2` → to the **digital output** `DigitalOutput_Q1.OUT`. This sets the output `Output_Q1` as long as the SR element is set.
+`` - `OUT2` → to the **digital output** `DigitalOutput_Q1.OUT`. This sets the output `Output_Q1` as long as the SR element is set.
 
 - `OUT3` → to `AX_PERMIT.PERMIT`.
 
 6. **Allowance and Counter**
 
-`AX_PERMIT` only forwards the event to `EO` if an event is present at the `PERMIT` input. This event is then sent to the counter `AUDI_CTUD_UDINT.CU`. The counter increments its value with each event.
+AX_PERMIT` only forwards the event to `EO` if an event is present at the `PERMIT` input. This event is then sent to the counter `AUDI_CTUD_UDINT.CU`. The counter increments its value with each event.
 
 7. **Numerical Output**
 

@@ -63,7 +63,7 @@ Upon arrival of `REQ`, the value of `IN` is compared to a fixed threshold value 
 
 - **Signal valid:** If `IN <= VALID_SIGNAL_B` is valid, the output value is calculated according to the formula
 
-`OUT := IN * SCALE + OFFSET`
+OUT := IN * SCALE + OFFSET`
 
 and `VALID` is set to `TRUE`.
 

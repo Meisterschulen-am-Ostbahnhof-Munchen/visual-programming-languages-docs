@@ -29,7 +29,7 @@ The logic reacts to each speed message from the TECU:
 
 2. If the speed is > 0, `F_GT.OUT` returns `TRUE`.
 
-``` 3. The confirmation event `CNF` requests an update from output `Q1`.
+`` 3. The confirmation event `CNF` requests an update from output `Q1`.
 
 Result: As soon as the tractor starts moving, output `Q1` is activated. If it comes to a stop (Speed = 0), the output is immediately deactivated.
 

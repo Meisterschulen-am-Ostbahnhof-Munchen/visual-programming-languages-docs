@@ -3,7 +3,7 @@
 ## Introduction
 The data type `NAMEFIELD_T` represents a structured data component for mapping the ISO 11783 (ISOBUS) NAME field according to Part 5 of the standard and the Implemented Function Module (IFM) conventions. This structured data type serves for the unique identification and addressing of electronic control units (ECUs) in an ISOBUS network. It combines all parameters required for device identification into a single data structure.
 ## Interface Structure
-`NAMEFIELD_T` is a structured data type (STRUCT) consisting of ten individual variables. Each variable corresponds to a defined part of the 64-bit NAME field in the ISOBUS protocol.
+NAMEFIELD_T` is a structured data type (STRUCT) consisting of ten individual variables. Each variable corresponds to a defined part of the 64-bit NAME field in the ISOBUS protocol.
 
 ### **Data Inputs**
 
@@ -19,19 +19,19 @@ The data type `NAMEFIELD_T` represents a structured data component for mapping t
 
 | `bDevClassInst` | `BYTE` | `16#FF` | Identifier if a device class occurs multiple times on the network (0..15). |
 
-`bDevClass` | `BYTE` | `16#FF` | ISO-defined device class (0..127). |
+bDevClass` | `BYTE` | `16#FF` | ISO-defined device class (0..127). |
 
-`bReserved` | `BOOL` | `TRUE` | Reserved bit (not used). |
+bReserved` | `BOOL` | `TRUE` | Reserved bit (not used). |
 
-`bFunction` | `BYTE` | `16#FF` | ISO-defined function, corresponds to the Source Address (SA) (0..255). |
+bFunction` | `BYTE` | `16#FF` | ISO-defined function, corresponds to the Source Address (SA) (0..255). |
 
-`bFunctionInst` | `BYTE` | `16#FF` | Subgroup of a function (0..31). |
+bFunctionInst` | `BYTE` | `16#FF` | Subgroup of a function (0..31). |
 
-`bEcuInstance` | `BYTE` | `16#FF` | Indicates which control unit is assigned to a specific function (0..7). |
+bEcuInstance` | `BYTE` | `16#FF` | Indicates which control unit is assigned to a specific function (0..7). |
 
-`wManufCode` | `WORD` | `16#FFFF` | ISO-defined manufacturer code (0..2047). |
+wManufCode` | `WORD` | `16#FFFF` | ISO-defined manufacturer code (0..2047). |
 
-`dwIdentNumb` | `DWORD` | `16#FFFFFFFF` | Unique serial number; used when the NAME is not unique within the same network (0 to 2,097,151).
+dwIdentNumb` | `DWORD` | `16#FFFFFFFF` | Unique serial number; used when the NAME is not unique within the same network (0 to 2,097,151).
 
 ### **Data Outputs**
 

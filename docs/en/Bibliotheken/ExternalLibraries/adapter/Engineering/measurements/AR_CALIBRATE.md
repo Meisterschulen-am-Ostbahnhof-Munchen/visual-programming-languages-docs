@@ -63,17 +63,17 @@ The function block operates with three basic algorithms, which are executed in t
 
 * **REQ** (Normal Operation):
 
-`Y.D1 := (X.D1 + OFFSET.DI1) * SCALE.DI1`
+Y.D1 := (X.D1 + OFFSET.DI1) * SCALE.DI1`
 The output value is calculated from the input, the current offset, and the scale factor.
 
 * **CO** (Offset Calibration):
 
-`OFFSET.DO1 := Y_Offset - X.D1`
+OFFSET.DO1 := Y_Offset - X.D1`
 The offset is determined as the difference between the reference value `Y_Offset` and the current input value.
 
 * * **CS** (Scale Calibration):
 
-`SCALE.DO1 := Y_Scale / (X.D1 + OFFSET.DI1)`
+SCALE.DO1 := Y_Scale / (X.D1 + OFFSET.DI1)`
 
 The scale factor is calculated by dividing the reference value `Y_Scale` by the input value corrected by the offset.
 
@@ -81,7 +81,7 @@ The scale factor is calculated by dividing the reference value `Y_Scale` by the 
 
 1. In state `REQ`, the function block (FB) is transitioned to state `CO` by an event on adapter `CO` (containing data). There, the offset is calculated and output via adapter `OFFSET`. The FB then immediately returns to state `REQ`.
 
-``` 2. Scale calibration is performed analogously via the adapter `CS` and the state `CS`.
+`` 2. Scale calibration is performed analogously via the adapter `CS` and the state `CS`.
 
 3. The event `SET` updates the reference values `Y_Offset` and `Y_Scale` without exiting the calibration state.
 

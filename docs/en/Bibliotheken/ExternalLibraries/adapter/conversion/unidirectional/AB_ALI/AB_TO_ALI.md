@@ -32,7 +32,7 @@ The function block operates as a pure data conversion loop:
 
 2. The BYTE value (`D1`), also present at the socket, is passed to the input `IN` of the converter.
 
-``` 3. The converter transforms the BYTE value into a LINT value and makes it available at its output `OUT`.
+`` 3. The converter transforms the BYTE value into a LINT value and makes it available at its output `OUT`.
 
 4. The converter's acknowledgment event (`CNF`) is forwarded to the plug `ALI_OUT` (port `E1`), and the converted LINT value is output on the plug's data port `D1`.
 
@@ -41,7 +41,7 @@ The function block operates as a pure data conversion loop:
 - The conversion is **event-driven** – any change at the input triggers processing.
 - The function block is designed for unidirectional adapters and does not support reverse conversion.
 
-``` - The adapter type information (`AB` and `ALI`) is defined as unidirectional interfaces and each contains one event port and one data port.
+`` - The adapter type information (`AB` and `ALI`) is defined as unidirectional interfaces and each contains one event port and one data port.
 
 ## State Overview
 The function block does not have its own state machine. The conversion is **stateless** – with each incoming event, the current value is immediately converted and output. There is no delay, buffering, or internal state.

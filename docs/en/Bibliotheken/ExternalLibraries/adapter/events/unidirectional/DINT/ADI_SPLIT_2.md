@@ -57,4 +57,4 @@ This functional block does not have an internal state machine. The routing is st
 
 ## Conclusion
 
-`ADI_SPLIT_2` is a simple yet useful function block for distributing an ADI adapter to two identical outputs. It simplifies the design of adapter-based controllers and avoids redundant source blocks. Its generic nature and lack of internal logic make it a flexible component in IEC 61499 applications.
+ADI_SPLIT_2` is a simple yet useful function block for distributing an ADI adapter to two identical outputs. It simplifies the design of adapter-based controllers and avoids redundant source blocks. Its generic nature and lack of internal logic make it a flexible component in IEC 61499 applications.

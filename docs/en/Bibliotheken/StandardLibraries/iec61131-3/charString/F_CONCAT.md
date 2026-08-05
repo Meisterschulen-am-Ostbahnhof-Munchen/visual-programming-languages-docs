@@ -42,4 +42,4 @@ The function block has no internal state. The operation is re-executed with each
 - Simpler than blocks with additional formatting options like `F_STRING_FORMAT`.
 
 ## Conclusion
-`F_CONCAT` is a basic and efficient building block for string processing in IEC 61131-3 environments. Its simplicity and direct functionality make it ideal for basic concatenation tasks.
+F_CONCAT` is a basic and efficient building block for string processing in IEC 61131-3 environments. Its simplicity and direct functionality make it ideal for basic concatenation tasks.

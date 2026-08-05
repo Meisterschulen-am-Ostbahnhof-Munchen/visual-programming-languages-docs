@@ -58,7 +58,7 @@ The function block operates in two steps, controlled by events:
 
 3. Both bytes are converted to `REAL`, multiplied by the corresponding scaling factors, and added to the offset:
 
-`OUT = (highByte * SCALE_HIGH) + (lowByte * SCALE_LOW) + OFFSET`
+OUT = (highByte * SCALE_HIGH) + (lowByte * SCALE_LOW) + OFFSET`
 
 4. `VALID` is set to `TRUE`.
 

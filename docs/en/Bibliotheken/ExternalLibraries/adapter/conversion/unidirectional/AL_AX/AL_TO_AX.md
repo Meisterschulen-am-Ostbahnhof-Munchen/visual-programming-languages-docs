@@ -43,7 +43,7 @@ Internal connections are handled via the adapter elements:
 ## Functionality
 The function block internally uses the function block `F_NE` ("not equal") from the IEC 61131 library. This compares the incoming LWORD value (`AL_IN.D1`) with the constant value `LWORD#0`. If the values are not equal, `F_NE.OUT` returns the value `TRUE`; otherwise, it returns `FALSE`.
 
-``` The event-driven sequence is as follows:
+`` The event-driven sequence is as follows:
 
 1. An event at `AL_IN.E1` triggers the input `F_NE.REQ`.
 

@@ -77,7 +77,7 @@ An event `REQ` triggers a query of the input value. The internal function block 
 
 - **Pulse-Dependent:** If `ImpulseDelta > 0` occurs, an internal pulse counter is incremented after each change in the input signal. When the counter reaches the value of `ImpulseDelta`, an indication (`IND`) is triggered and the counter is reset.
 
-``` - **Time-dependent:** Additionally or alternatively, a periodic indication is generated after `TimeDelta` milliseconds.
+`` - **Time-dependent:** Additionally or alternatively, a periodic indication is generated after `TimeDelta` milliseconds.
 
 - **Lock logic:** If `ImpulseDelta = 0` is set, `TimeDelta` must not be 0 (error prevention). If `TimeDelta = 0xFFFFFFFF` is set, cyclic processing is deactivated – only pure value changes are reported.
 - **Rate limit:** `TimeRateLimit` prevents excessively frequent indications; it ensures that at least the specified time in milliseconds elapses between two consecutive `IND` events.

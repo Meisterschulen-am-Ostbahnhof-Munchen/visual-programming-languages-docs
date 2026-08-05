@@ -16,7 +16,7 @@ This exercise consists of a linear chain of three function blocks (no sub-blocks
 
 | `F_DWORD_TO_REAL` | `iec61131::conversion::F_DWORD_TO_REAL` | Converts a `DWORD` value to a `REAL` value (according to IEC 61131-3). The input `REQ` starts the conversion, and upon completion, the output `CNF` is triggered. |
 
-`Q_NumericValue_PHYS` | `isobus::UT::Q::Q_NumericValue_PHYS` | Writes a physical `REAL` value to the output object `OutputNumber_N3` (taken from the pool `OutputNumber_N3`). The parameter `stObj` is set to the corresponding string. The function block expects a physical value at input `rPhys` and outputs it to the pool. |
+Q_NumericValue_PHYS` | `isobus::UT::Q::Q_NumericValue_PHYS` | Writes a physical `REAL` value to the output object `OutputNumber_N3` (taken from the pool `OutputNumber_N3`). The parameter `stObj` is set to the corresponding string. The function block expects a physical value at input `rPhys` and outputs it to the pool. |
 
 ## Program Flow and Connections
 
@@ -28,11 +28,11 @@ When `InputNumber_I1` receives a new value (e.g., `10`), it sends an event via `
 
 2. **Conversion:**
 
-`F_DWORD_TO_REAL` converts the DWORD value into a REAL value (e.g., `10` → `10.0`). Upon completion, it sends an event via `CNF` to the output block `Q_NumericValue_PHYS.REQ`. The converted REAL value is then passed on via the data connection `F_DWORD_TO_REAL.OUT` → `Q_NumericValue_PHYS.rPhys`.
+F_DWORD_TO_REAL` converts the DWORD value into a REAL value (e.g., `10` → `10.0`). Upon completion, it sends an event via `CNF` to the output block `Q_NumericValue_PHYS.REQ`. The converted REAL value is then passed on via the data connection `F_DWORD_TO_REAL.OUT` → `Q_NumericValue_PHYS.rPhys`.
 
 3. **Write Output:**
 
-`Q_NumericValue_PHYS` receives the event and writes the physical REAL value to the pool object `OutputNumber_N3`. The control panel will then display, for example, `10.00`.
+Q_NumericValue_PHYS` receives the event and writes the physical REAL value to the pool object `OutputNumber_N3`. The control panel will then display, for example, `10.00`.
 
 **Special Note:**
 

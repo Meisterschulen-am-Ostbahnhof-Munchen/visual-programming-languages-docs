@@ -56,9 +56,9 @@ No separate data outputs – data is transferred via the `OUT` adapter.
 - `K = 1`: The data stream from `IN2` is passed through to output `OUT`.
 - `K = 2`: The data stream from `IN3` is passed through to output `OUT`.
 
-`K = 2`: The data stream from `IN3` is passed through to output `OUT`.
+K = 2`: The data stream from `IN3` is passed through to output `OUT`.
 
-`OUT`:
+OUT`:
 ... - Values outside the range (e.g., > 2) are undefined – in a concrete implementation, the function block could either do nothing or enter a predefined error state.
 
 3. After successful switching, the event `CNF` is sent.

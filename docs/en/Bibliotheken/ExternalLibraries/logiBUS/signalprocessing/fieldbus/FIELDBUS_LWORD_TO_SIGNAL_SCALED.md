@@ -60,7 +60,7 @@ The module has two algorithms that are triggered by the **INIT** and **REQ** eve
 
 2. This value is compared to an internally defined valid threshold value, **VALID_SIGNAL_LW** (also an LWORD, imported constant). The comparison is performed at the ULINT level.
 
-``` 3. **Validity**: If `IN` ≤ `VALID_SIGNAL_LW`, the signal is considered valid:
+`` 3. **Validity**: If `IN` ≤ `VALID_SIGNAL_LW`, the signal is considered valid:
 
 - `OUT` = `(ULINT_TO_LREAL(IN)) * SCALE + DINT_TO_LREAL(OFFSET)`
 - `VALID` = `TRUE`
@@ -81,7 +81,7 @@ The scaling is linear: `OUT = IN_als_LREAL * SCALE + OFFSET`. The default value 
 
 The comparison is performed by converting both LWORD values to ULINT, so that negative values (as bit patterns) are also correctly interpreted.
 
-``` - **Type Conversion**: The raw value is converted from LWORD to LREAL via ULINT (64-bit). Potential precision losses should be noted for very large ULINT values.
+`` - **Type Conversion**: The raw value is converted from LWORD to LREAL via ULINT (64-bit). Potential precision losses should be noted for very large ULINT values.
 
 - **Scaling Parameters**: `SCALE` (LREAL) and `OFFSET` (DINT) are set only during the INIT event and remain unchanged for all subsequent REQ calls.
 - **Event Control**: The function block has a simple state machine with two states and requires explicit initialization before first processing.

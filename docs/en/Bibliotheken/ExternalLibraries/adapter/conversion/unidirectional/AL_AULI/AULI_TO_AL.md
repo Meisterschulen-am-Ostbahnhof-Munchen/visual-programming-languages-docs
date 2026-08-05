@@ -71,4 +71,4 @@ Unlike generic converter function blocks (e.g., `ULINT_TO_LWORD`), `AULI_TO_AL` 
 
 ## Conclusion
 
-`AULI_TO_AL` is a simple yet reliable composite function block for converting between AULI and AL adapters. Direct use of the standardized IEC 61131 function ensures high compatibility and accuracy of the conversion. The adapter interfaces enable modular integration into complex automation systems.
+AULI_TO_AL` is a simple yet reliable composite function block for converting between AULI and AL adapters. Direct use of the standardized IEC 61131 function ensures high compatibility and accuracy of the conversion. The adapter interfaces enable modular integration into complex automation systems.

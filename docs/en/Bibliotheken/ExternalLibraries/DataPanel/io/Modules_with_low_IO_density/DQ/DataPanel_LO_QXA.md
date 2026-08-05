@@ -3,7 +3,7 @@
 * * * * * * * * * *
 ## Introduction
 The DataPanel_LO_QXA is a composite function block for outputting Boolean data in automation systems. It serves as an interface for digital output functions and enables the control of outputs via defined service parameters.
-``` ![DataPanel_LO_QXA](DataPanel_LO_QXA.svg)
+`` ![DataPanel_LO_QXA](DataPanel_LO_QXA.svg)
 
 ## Interface Structure
 

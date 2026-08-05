@@ -58,7 +58,7 @@ The network links the physical inputs and outputs using the logical SR function:
 
 * The result `Q1` of the flip-flop is routed to the data input `OUT` of `DigitalOutput_Q1`.
 
-``` * After the calculation in the flip-flop (event `CNF`) is complete, the output device is triggered (`REQ`) to update the physical output.
+`` * After the calculation in the flip-flop (event `CNF`) is complete, the output device is triggered (`REQ`) to update the physical output.
 
 **Learning Objectives:**
 

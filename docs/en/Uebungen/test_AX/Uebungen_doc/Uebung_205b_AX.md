@@ -59,15 +59,15 @@ The digital inputs `Input_I1` and `Input_I2` are read via the function blocks `D
 
 2. **Interlock Logic**
 
-`ILOCK_AX` evaluates the two requests.
+ILOCK_AX` evaluates the two requests.
 
 - When a request is active (e.g., `UP_IN`), the corresponding output (`UP_OUT`) is activated, unless the opposite direction is simultaneously present.
 - The protection time `DT_PROTECT = 1s` prevents the other direction from being switched immediately after a direction change.
 - If the protection time is active and a request for the opposite direction is received, the output is blocked, and the `timeOut` event output is triggered.
 
-`` If a request for the opposite direction is active, the output `ILOCK_AX` evaluates the two requests, the corresponding output (`UP_OUT`) is activated, unless the opposite direction is also present.
+` If a request for the opposite direction is active, the output `ILOCK_AX` evaluates the two requests, the corresponding output (`UP_OUT`) is activated, unless the opposite direction is also present.
 
-`` ``ILOCK_AX`` evaluates the two requests.
+` ``ILOCK_AX`` evaluates the two requests.
 ... 3. **Time Monitoring**
 
 The event output `timeOut` from `ILOCK_AX` is connected to the `E_TimeOut` function block. This can be used, for example, for further processing or visualization (not discussed further here).

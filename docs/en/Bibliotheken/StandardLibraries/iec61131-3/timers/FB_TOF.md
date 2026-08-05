@@ -59,7 +59,7 @@ The FB_TOF function block can be used in various industrial control applications
 
 - **Machine Control**: The function block can be used to ensure that a machine continues to run for a specific period of time after being switched off, for example, to complete processes or to implement safety precautions.
 
-``` - **Lighting Control**: This function block can be used in lighting systems to keep the light on for a specific period of time after the switch is turned off.
+`` - **Lighting Control**: This function block can be used in lighting systems to keep the light on for a specific period of time after the switch is turned off.
 
 - **Valve Control**: This function block can be used to keep a valve open for a specific period of time after it has closed, for example, to release pressure.
 
@@ -83,7 +83,7 @@ The provided source code demonstrates how the FB_TOF function block can be imple
 
 The **FB_TOF** (Off-Delay Timer) is a standardized function block according to IEC 61131-3 that implements a delayed shutdown function. A key feature of this function block is the **ET** (Elapsed Time) output, which displays the elapsed time since the delay started. This output is particularly useful for monitoring the delay time progress and for use in control logic.
 
-```A critical aspect of the FB_TOF block, however, is that it **must be called cyclically** to function correctly. This means that the block must be executed in every cycle of the PLC program to correctly calculate the elapsed time **ET** and adhere to the delay time **PT**. If the block is not called regularly, the timer cannot operate correctly, and the delay time may not be adhered to. This dependency on cyclic calling makes the FB_TOF block ideal for traditional PLC systems that operate in fixed cycles.
+``A critical aspect of the FB_TOF block, however, is that it **must be called cyclically** to function correctly. This means that the block must be executed in every cycle of the PLC program to correctly calculate the elapsed time **ET** and adhere to the delay time **PT**. If the block is not called regularly, the timer cannot operate correctly, and the delay time may not be adhered to. This dependency on cyclic calling makes the FB_TOF block ideal for traditional PLC systems that operate in fixed cycles.
 
 ### Chapter 2: The E_TOF Block
 

@@ -2,7 +2,7 @@
 ![sequence_E_05_AX_ecc](./sequence_E_05_AX_ecc.svg)
 * * * * * * * * * *
 ## Introduction
-`sequence_E_05_AX` is a variant of `sequence_E_05` that additionally uses adapters (`AX`) for the outputs. It controls a purely event-driven sequence with 5 output states.
+sequence_E_05_AX` is a variant of `sequence_E_05` that additionally uses adapters (`AX`) for the outputs. It controls a purely event-driven sequence with 5 output states.
 ![sequence_E_05_AX](sequence_E_05_AX.svg)
 ## Interface Structure
 

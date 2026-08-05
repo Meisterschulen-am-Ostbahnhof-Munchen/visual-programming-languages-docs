@@ -31,7 +31,7 @@ The function block `sequence_ET_08_loop` is a sequencer with eight output states
 ## Functionality
 The FB is implemented as a Basic Function Block (BFB) with an Execution Control Chart (ECC). The ECC consists of the states `xSTART` (initial state), `sState_01` to `sState_08` (active sequence states), and `sRESET` (reset state).
 
-``` Upon entering an active state (e.g., `sState_01`), the following actions are executed sequentially:
+`` Upon entering an active state (e.g., `sState_01`), the following actions are executed sequentially:
 
 1. The `timeOut` timer is stopped.
 

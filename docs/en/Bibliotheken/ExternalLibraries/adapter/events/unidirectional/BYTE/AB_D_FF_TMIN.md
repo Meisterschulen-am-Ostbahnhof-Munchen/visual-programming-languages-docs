@@ -55,15 +55,15 @@ An event at `INIT` passes the parameter `Tmin` (minimum time) to the inner funct
 
 - An event `E1` occurs at socket `I`, which carries the data value `D1` (the signal to be latched).
 
-``` - This event is forwarded as `CLK` to the inner flip-flop, which simultaneously receives the data value `D1` from `I.D1`.
+`` - This event is forwarded as `CLK` to the inner flip-flop, which simultaneously receives the data value `D1` from `I.D1`.
 
 - The inner flip-flop stores the value `D1` and outputs it at its output `Q`.
 - The latched value is passed out via plug `Q.D1`, and at the same time, the output event `EO` of the inner flip-flop is triggered.
 - This `EO` is forwarded to `Q.E1`, so that the receiving adapter is informed of the update.
 
-``````````````````````````````````) ``CLK``````````````````````````````````` `
+`````````````````````````````````) ``CLK``````````````````````````````````` `
 
-`` 3. **Time Control:**
+` 3. **Time Control:**
 
 The internal function block `E_D_FF_ANY_TMIN` ensures that after an output event `EO`, no further output events can be generated for the duration of `Tmin` – regardless of how quickly input events arrive. If the time between two `E1` inputs exceeds the `Tmin` threshold, the value is immediately adopted; otherwise, it is blocked until the minimum time has elapsed.
 

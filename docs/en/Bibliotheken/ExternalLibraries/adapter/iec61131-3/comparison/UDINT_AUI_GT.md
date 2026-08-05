@@ -47,7 +47,7 @@ The function block performs a "greater than" comparison between two values:
 - The second value is received dynamically via the socket adapter `IN2` (its data output `D1`).
 - The comparison is triggered either by an event at the input `REQ` or by an incoming event at the adapter `IN2` (via `IN2.E1`).
 
-``` - Internally, the IEC 61131-3 function block `F_GT` (from the library `iec61131::comparison`) is used.
+`` - Internally, the IEC 61131-3 function block `F_GT` (from the library `iec61131::comparison`) is used.
 
 - The result (true/false) is output via the plug adapter `OUT`: The data output of the internal `F_GT.OUT` is set to `OUT.D1`, and the completion event `F_GT.CNF` triggers `OUT.E1`.
 

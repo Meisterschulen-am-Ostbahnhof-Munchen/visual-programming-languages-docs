@@ -14,16 +14,16 @@ This exercise consists of four function blocks connected in the SubApp network:
 ### DigitalInput_RST (logiBUS_IX)
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameters**: 
-`QI = TRUE` (Qualifier for initialization active) 
-`Input = Input_I1` (Physical input of the logiBUS terminal)
+QI = TRUE` (Qualifier for initialization active) 
+Input = Input_I1` (Physical input of the logiBUS terminal)
 
 - **Functionality**: Reads the digital input `Input_I1`. The event `IND` is triggered upon signal change. The read value is provided at the data output `IN`. Serves as a reset signal for the T-FF.
 
 ### DigitalInput_CLK (logiBUS_IX)
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameters**: 
-`QI = TRUE` 
-`Input = Input_I2`
+QI = TRUE` 
+Input = Input_I2`
 
 - **Functionality**: Reads the digital input `Input_I2`. The event `IND` is triggered upon a signal change. The read value is provided at the data output `IN`. Serves as a clock signal for the T-FF.
 
@@ -40,8 +40,8 @@ This exercise consists of four function blocks connected in the SubApp network:
 ### DigitalOutput_Q1 (logiBUS_QX)
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**: 
-`QI = TRUE` 
-`Output = Output_Q1`
+QI = TRUE` 
+Output = Output_Q1`
 
 - **Functionality**: Receives the state of the T-FF via the data input `OUT` and outputs it at the physical output `Output_Q1`. The output is updated by the event `REQ`.
 
@@ -54,7 +54,7 @@ This exercise consists of four function blocks connected in the SubApp network:
 - This means: Any change to either input triggers processing of the T-FF.
 - After processing of the T-FF, the event output `CNF` is connected to the `REQ` input of `DigitalOutput_Q1`, so that the output value is immediately passed on to the hardware.
 
-``` 2. **Data Chaining**:
+`` 2. **Data Chaining**:
 
 - The value read from the reset input (`DigitalInput_RST.IN`) is connected to the `RST` input of the T-FF.
 - The value read from the clock input (`DigitalInput_CLK.IN`) is connected to the `CLK` input of the T-FF.
@@ -65,7 +65,7 @@ This exercise consists of four function blocks connected in the SubApp network:
 - If `Input_I1` (reset) is set to `TRUE` simultaneously or later, `Q` immediately becomes `FALSE` (asynchronous reset).
 - The current state of `Q` appears at the output `Output_Q1`.
 
-`` ``` ``Input_I2` (clock) changes from `FALSE` to `TRUE` (rising edge), the output `Q` toggles the output `Q` to ... **Learning Objectives:**
+` ``` ``Input_I2` (clock) changes from `FALSE` to `TRUE` (rising edge), the output `Q` toggles the output `Q` to ... **Learning Objectives:**
 
 - Understand the functionality of a toggle flip-flop (T-FF).
 - Event-driven data flow modeling in 4diac (IEC 61499).

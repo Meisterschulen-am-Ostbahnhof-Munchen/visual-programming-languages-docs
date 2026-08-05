@@ -13,7 +13,7 @@ The SUBSCRIBE_9 function block is used to subscribe to data from a PUBLISH_9 blo
 
 The SUBSCRIBE_9 function block is used to subscribe to data from a PUBLISH_9 block. It enables the reception of up to 9 different data points via a network connection and makes them available for further processing in the control system.
 
-``` ![SUBSCRIBE_9](SUBSCRIBE_9.svg)
+`` ![SUBSCRIBE_9](SUBSCRIBE_9.svg)
 
 ## Interface Structure
 

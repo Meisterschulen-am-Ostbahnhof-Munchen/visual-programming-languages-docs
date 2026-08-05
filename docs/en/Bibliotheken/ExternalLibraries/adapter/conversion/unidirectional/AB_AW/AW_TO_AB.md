@@ -63,7 +63,7 @@ The composite function block does not have its own state machine. Its operation 
 - **Manual Conversion**: Without this component, the developer would have to manually insert `F_WORD_TO_BYTE` into the network and wire the adapter connections themselves – this composite component simplifies this process.
 
 ## Conclusion
-`AW_TO_AB` is a simple yet useful composite component for converting a WORD adapter to a BYTE adapter. It reduces the wiring effort in 4diac applications and ensures consistent conversion by reusing the standard component `F_WORD_TO_BYTE`. Users should be aware of the potential data loss due to the reduced bit width.
+AW_TO_AB` is a simple yet useful composite component for converting a WORD adapter to a BYTE adapter. It reduces the wiring effort in 4diac applications and ensures consistent conversion by reusing the standard component `F_WORD_TO_BYTE`. Users should be aware of the potential data loss due to the reduced bit width.
 
 ---
 

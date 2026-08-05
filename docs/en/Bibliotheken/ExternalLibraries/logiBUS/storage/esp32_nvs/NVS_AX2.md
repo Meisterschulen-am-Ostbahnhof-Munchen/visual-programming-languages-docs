@@ -56,7 +56,7 @@ The **VAL** adapter establishes a bidirectional connection to an external compon
 
 1. **Initialization**: An event at input `INIT` triggers the initialization of the internal NVS component. The values `QI`, `KEY`, and `DEFAULT_VALUE` are passed. After successful initialization, the event `INITO` is sent at the output. Simultaneously, a read operation (GET) for the specified key is automatically initiated.
 
-``` 2. **Read Value**: The read value is output via the adapter `VAL` as `DI1` (data output of the adapter), and an event `EI1` is triggered on the adapter. The outputs `QO` and `STATUS` reflect the result of the read operation.
+`` 2. **Read Value**: The read value is output via the adapter `VAL` as `DI1` (data output of the adapter), and an event `EI1` is triggered on the adapter. The outputs `QO` and `STATUS` reflect the result of the read operation.
 
 3. **Save Value**: An external function block can send an event `EO1` via the adapter `VAL` to write a new value (provided as `DO1`) to the NVS. The internal NVS function block then performs a SET operation and confirms it via `SETO`. The event `EI1` is then triggered on the adapter to signal completion to the sender.
 

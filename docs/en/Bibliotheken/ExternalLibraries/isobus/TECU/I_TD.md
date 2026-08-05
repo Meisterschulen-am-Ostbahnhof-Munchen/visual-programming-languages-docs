@@ -73,7 +73,7 @@ None.
 
 The function block is initialized via the event input `INIT` with `QI` set. After successful initialization, the event `INITO` is triggered and the output `QO` is set to TRUE. The function block then waits for incoming ISOBUS telegrams (PGN 65254). When such a telegram arrives, the event `IND` is generated and all corresponding data outputs are updated with the decoded values. The scaling and offsets defined in the attributes are applied automatically.
 
-``` If no valid telegram is received within an unspecified timeframe, the event `TIMEOUT` is triggered and the output `Q_timeout` is set to TRUE. The timeout timestamp is stored in `timestamp_timeout`.
+`` If no valid telegram is received within an unspecified timeframe, the event `TIMEOUT` is triggered and the output `Q_timeout` is set to TRUE. The timeout timestamp is stored in `timestamp_timeout`.
 
 ## Technical Features
 - **ISOBUS Compliance:** The FB implements exactly PGN 65254 of the ISO 11783-7 standard, part "Time/Date TD".
@@ -88,7 +88,7 @@ An explicit state machine is not defined in the XML. The FB operates as a reacti
 
 1. **Idle State** – waits for INIT.
 
-``` 2. **Initialization Phase** – After `INIT`, if TRUE `QI`, `INITO` is triggered.
+`` 2. **Initialization Phase** – After `INIT`, if TRUE `QI`, `INITO` is triggered.
 
 3. **Operational Ready** – Receiving telegrams → `IND`; if no telegrams are received → `TIMEOUT`.
 

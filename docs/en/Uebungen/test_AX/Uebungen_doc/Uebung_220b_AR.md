@@ -41,33 +41,33 @@ Event control is handled via a single event path:
 
 - The function block **Input_LD** triggers the function block **AI_INT_TO_I** (`REQ`) upon the initialization event (`INITO`), causing it to output the constant preset value (INT#5).
 
-``` The logical data connections (adapter connections) link the components as follows:
+`` The logical data connections (adapter connections) link the components as follows:
 
 - **Digital inputs to counters:**
 
-`Input_CU.IN` → `AI_FB_CTUD.CU` (forward count pulse)
+Input_CU.IN` → `AI_FB_CTUD.CU` (forward count pulse)
 
-`Input_CD.IN` → `AI_FB_CTUD.CD` (backward count pulse)
+Input_CD.IN` → `AI_FB_CTUD.CD` (backward count pulse)
 
-`Input_R.IN` → `AI_FB_CTUD.R` (reset)
+Input_R.IN` → `AI_FB_CTUD.R` (reset)
 
-`Input_LD.IN` → `AI_FB_CTUD.LD` (load preset value)
+Input_LD.IN` → `AI_FB_CTUD.LD` (load preset value)
 
 - **Counter outputs to digital outputs:**
 
-`AI_FB_CTUD.QU` → `Output_QU.OUT` (forward counter reached)
+AI_FB_CTUD.QU` → `Output_QU.OUT` (forward counter reached)
 
-`AI_FB_CTUD.QD` → `Output_QD.OUT` (Counter down reached)
+AI_FB_CTUD.QD` → `Output_QD.OUT` (Counter down reached)
 
 - **Counter value to terminal output:**
 
-`AI_FB_CTUD.CV` → `AI_TO_AR.AI_IN` (Current counter value)
+AI_FB_CTUD.CV` → `AI_TO_AR.AI_IN` (Current counter value)
 
-`AI_TO_AR.AR_OUT` → `Q_NumericValue_PHYSA.rPhys` (Analog value for terminal display)
+AI_TO_AR.AR_OUT` → `Q_NumericValue_PHYSA.rPhys` (Analog value for terminal display)
 
 - **Preset value:**
 
-`AI_INT_TO_I.AI_OUT` → `AI_FB_CTUD.PV` (Sets the preset value to INT#5)
+AI_INT_TO_I.AI_OUT` → `AI_FB_CTUD.PV` (Sets the preset value to INT#5)
 
 A comment indicates that negative values are also possible with the counter and that, if necessary, an AX_D_FF (D flip-flop) can be implemented per output to reduce the event rate.
 

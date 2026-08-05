@@ -36,7 +36,7 @@ After these assignments are complete, a `CNF` event is triggered to indicate tha
 ## Technical Details
 * **Data Types:** The input array is of type `BYTE`, and the output structure `ST08B` is a user-defined type consisting of 8 individual `BYTE` components (e.g., `B_00` to `B_07`).
 
-``` * **Direct Assignment:** No data manipulation or conversion takes place; the bytes are copied directly from the array position to the structure component.
+`` * **Direct Assignment:** No data manipulation or conversion takes place; the bytes are copied directly from the array position to the structure component.
 
 * **Stateless:** The function block has no internal state and always produces the same result for the same input.
 

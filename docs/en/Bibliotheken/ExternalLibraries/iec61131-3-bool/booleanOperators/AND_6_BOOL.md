@@ -28,7 +28,7 @@ This function block has no adapter interfaces.
 
 ## Functionality
 The functionality is deterministic and simple: Upon each occurrence of the event `REQ`, the logical state of all six inputs is evaluated. The result of the AND operation is provided at the data output `OUT`, and simultaneously, the acknowledgment event `CNF` is triggered. The logical operation corresponds to the formula:
-`OUT = IN1 AND IN2 AND IN3 AND IN4 AND IN5 AND IN6`
+OUT = IN1 AND IN2 AND IN3 AND IN4 AND IN5 AND IN6`
 
 ## Technical Features
 * **Generic Block:** The block is implemented as a generic block (`GEN_AND`), meaning it is a specific instance of a more general AND function block family.

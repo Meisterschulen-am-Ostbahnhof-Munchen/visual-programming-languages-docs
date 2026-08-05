@@ -27,7 +27,7 @@ No adapters available.
 ## Functionality
 Upon arrival of the REQ event, the AND_3 block performs a bitwise AND operation on the three input values IN1, IN2, and IN3. The result is output at the OUT data output, and simultaneously a CNF event is generated to signal successful computation.
 
-``` The operation follows the formula: OUT = IN1 ∧ IN2 ∧ IN3
+`` The operation follows the formula: OUT = IN1 ∧ IN2 ∧ IN3
 
 ## Technical Features
 - Generic function block that works with all ANY_BIT data types (BOOL, BYTE, WORD, DWORD, LWORD)

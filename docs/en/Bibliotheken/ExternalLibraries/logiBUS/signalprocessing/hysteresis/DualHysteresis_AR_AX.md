@@ -135,7 +135,7 @@ The **DualHysteresis_AR_AX** extends simple hysteresis (switch-on point = switch
 
 - **Simple Hysteresis**: only one output, one switching threshold.
 
-``` - **DualHysteresis**: two outputs, two opposing thresholds with a shared deadband. This allows, for example, heating and cooling to be controlled separately without overlap.
+`` - **DualHysteresis**: two outputs, two opposing thresholds with a shared deadband. This allows, for example, heating and cooling to be controlled separately without overlap.
 
 Compared to a PID controller, this function block is purely switching – it does not generate continuous control signals, but is ideally suited for simple two-point control applications.
 

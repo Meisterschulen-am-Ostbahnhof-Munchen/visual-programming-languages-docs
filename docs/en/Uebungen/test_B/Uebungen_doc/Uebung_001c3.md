@@ -30,7 +30,7 @@ The flow is defined by the event and data connections in the SubApp network:
 - The event `IND` (as well as `CNF`) is connected to the `REQ` input of `F_NOT_BOOL`.
 - Simultaneously, the data value `IN` (from the input) is transferred to the `IN` input of `F_NOT_BOOL`. **Important:** This data connection has the property `Negated = true`, which performs a negation at the connection level. This inverts the input value before the NOT operation.
 
-``` 3. **Output**
+`` 3. **Output**
 
 - After the calculation, `F_NOT_BOOL` sends the event `CNF` to the `REQ` input of `DigitalOutput_Q1`.
 - The negated data value `OUT` from `F_NOT_BOOL` is placed on the data input `OUT` of the output block.

@@ -28,7 +28,7 @@ None.
 
 When an event occurs at the **REQ** input, the following algorithm is executed:
 
-`OUT := IN;`
+OUT := IN;`
 Subsequently, an acknowledgment event is sent at the **CNF** output. The function block overwrites the current value of `OUT` with the value of `IN`.
 
 ## Technical Features

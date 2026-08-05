@@ -55,4 +55,4 @@ Internally, edge-triggered takeover is implemented by `E_D_FF_ANY` (rising edge 
 
 ## Conclusion
 
-`ATM_D_FF` is a compact, reliable functional block for implementing a D flip-flop in IEC 61499 environments. The use of adapters ensures a clean separation of event and data paths, which is particularly advantageous in modular, reusable automation solutions. The component is easy to integrate and fulfills the basic requirement for an edge-triggered data storage device.
+ATM_D_FF` is a compact, reliable functional block for implementing a D flip-flop in IEC 61499 environments. The use of adapters ensures a clean separation of event and data paths, which is particularly advantageous in modular, reusable automation solutions. The component is easy to integrate and fulfills the basic requirement for an edge-triggered data storage device.

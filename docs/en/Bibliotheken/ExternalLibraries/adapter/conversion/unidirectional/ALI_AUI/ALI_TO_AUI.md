@@ -34,9 +34,9 @@ Internally, this function block connects socket `ALI_IN` to the input of the con
 - The data value `D1` from `ALI_IN` (LINT) is placed on the converter's `IN` input.
 - After successful conversion, the converter signals the event to the plug `AUI_OUT` with `CNF`, and the converted value (UINT) is written to its `D1` output.
 
-`` The event output `E1` from `ALI_IN` is controlled via the converter's `REQ` input.
+` The event output `E1` from `ALI_IN` is controlled via the converter's `REQ` input.
 
-`` The data value `D1` from `ALI_IN` (LINT) is placed on the `IN` input. ... The entire process is event-driven: An incoming event at the ALI adapter triggers the conversion and generates a corresponding output event at the AUI adapter.
+` The data value `D1` from `ALI_IN` (LINT) is placed on the `IN` input. ... The entire process is event-driven: An incoming event at the ALI adapter triggers the conversion and generates a corresponding output event at the AUI adapter.
 
 ## Technical Features
 - **Data Type Conversion:** The internal module converts a 64-bit signed integer (LINT) to a 16-bit unsigned integer (UINT). Since the value range of UINT (0…65535) is significantly smaller than that of LINT, values outside this range result in an overflow/loss.

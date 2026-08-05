@@ -17,7 +17,7 @@ This section describes the specific function blocks responsible for logic and ha
 * **Type**: `logiBUS::io::DI::logiBUS_IE`
 * **Description**: Used to capture button inputs.
 
-``` * **Parameters**:
+`` * **Parameters**:
 
 * `QI` = `TRUE`
 * `Input` = `Input_I1` (or I2, I3)

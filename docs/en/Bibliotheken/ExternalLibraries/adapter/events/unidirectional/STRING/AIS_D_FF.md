@@ -62,4 +62,4 @@ The flip-flop is edge-triggered (rising edge) and not level-triggered.
 
 ## Conclusion
 
-`AIS_D_FF` is a useful component for implementing an edge-triggered D flip-flop in adapter-based architectures. By encapsulating the proven `E_D_FF_ANY` functional block, it offers reliable memory functionality and can be seamlessly integrated into existing AIS communication structures.
+AIS_D_FF` is a useful component for implementing an edge-triggered D flip-flop in adapter-based architectures. By encapsulating the proven `E_D_FF_ANY` functional block, it offers reliable memory functionality and can be seamlessly integrated into existing AIS communication structures.

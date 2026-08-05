@@ -110,7 +110,7 @@ Calculation of intervals from arbitrary reference points.
 ---
 
 ## Conclusion
-`TIMESTAMP_NS` is an essential component for applications requiring highly precise and flexible timestamps. Its support for user-defined start dates and nanosecond precision makes it ideal for:
+TIMESTAMP_NS` is an essential component for applications requiring highly precise and flexible timestamps. Its support for user-defined start dates and nanosecond precision makes it ideal for:
 
 - **Industrial Data Recording**
 - **Real-Time Controls**

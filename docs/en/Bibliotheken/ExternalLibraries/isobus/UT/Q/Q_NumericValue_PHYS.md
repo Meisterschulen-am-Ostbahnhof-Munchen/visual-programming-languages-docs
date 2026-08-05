@@ -92,11 +92,11 @@ The function block does not have an explicit entry state machine, but implements
 
 - **Initialization Phase:**
 
-`INIT` → `F_MOVE.REQ` → `F_MOVE.CNF` → `Q_NumericValue.INIT` → `Q_NumericValue.INITO` → `INITO`
+INIT` → `F_MOVE.REQ` → `F_MOVE.CNF` → `Q_NumericValue.INIT` → `Q_NumericValue.INITO` → `INITO`
 
 - **Operational Phase (Write):**
 
-`REQ` → `F_PHYS_TO_RAW.REQ` → `F_PHYS_TO_RAW.CNF` → `Q_NumericValue.REQ` → `Q_NumericValue.CNF` → `CNF`
+REQ` → `F_PHYS_TO_RAW.REQ` → `F_PHYS_TO_RAW.CNF` → `Q_NumericValue.REQ` → `Q_NumericValue.CNF` → `CNF`
 
 During the execution of a run, the function block is not prepared for new events. The respective confirmation signal (`INITO` or `CNF`) must be awaited.
 
@@ -121,4 +121,4 @@ This function block simplifies application, as the user does not need to program
 
 ## Conclusion
 
-`Q_NumericValue_PHYS` is a practical, standards-compliant function block for ISOBUS communication. It combines the conversion of physical values with write access to numerical objects, thus reducing development effort in agricultural automation. The clear separation of tasks (storage, conversion, bus access) ensures the function block remains maintainable and testable. Outputting limit violation flags enables robust error handling in the application code.
+Q_NumericValue_PHYS` is a practical, standards-compliant function block for ISOBUS communication. It combines the conversion of physical values with write access to numerical objects, thus reducing development effort in agricultural automation. The clear separation of tasks (storage, conversion, bus access) ensures the function block remains maintainable and testable. Outputting limit violation flags enables robust error handling in the application code.

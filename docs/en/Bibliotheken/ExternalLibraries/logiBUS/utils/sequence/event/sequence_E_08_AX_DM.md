@@ -12,19 +12,19 @@ The function block `sequence_E_08_AX_DM` implements an event-driven sequence con
 
 | `START_S1` | Transition from start state to state 1 (State_01) |
 
-`S1_S2` | Transition from state 1 to state 2 (State_02) |
+S1_S2` | Transition from state 1 to state 2 (State_02) |
 
-`S2_S3` | Transition from state 2 to state 3 (State_03) |
+S2_S3` | Transition from state 2 to state 3 (State_03) |
 
-`S3_S4` | Transition from state 3 to state 4 (State_04) |
+S3_S4` | Transition from state 3 to state 4 (State_04) |
 
-`S4_S5` | Transition from state 4 to state 5 (State_05) |
+S4_S5` | Transition from state 4 to state 5 (State_05) |
 
-`S5_S6` | Transition from state 5 to state 6 (State_06) |
+S5_S6` | Transition from state 5 to state 6 (State_06) |
 
-`S6_S7` | Transition from state 6 to state 7 (State_07) |
+S6_S7` | Transition from state 6 to state 7 (State_07) |
 
-`S7_S8` | Change from state 7 to state 8 (State_08) |
+S7_S8` | Change from state 7 to state 8 (State_08) |
 
 | `S8_START` | Change from state 8 to the start state (State_00) |
 

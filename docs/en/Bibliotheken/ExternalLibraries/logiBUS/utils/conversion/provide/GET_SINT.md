@@ -94,4 +94,4 @@ All `GET_*` function blocks have in common that they read a value from an InOut 
 
 ## Conclusion
 
-`GET_SINT` is a minimalist and reliable function block for reading a `SINT` value from an InOut variable. Its simplicity makes it an ideal function block for reading peripheral or shared data in IEC 61499 applications. The use of the InOut interface reduces wiring complexity and promotes a clean separation between data access and processing logic.
+GET_SINT` is a minimalist and reliable function block for reading a `SINT` value from an InOut variable. Its simplicity makes it an ideal function block for reading peripheral or shared data in IEC 61499 applications. The use of the InOut interface reduces wiring complexity and promotes a clean separation between data access and processing logic.

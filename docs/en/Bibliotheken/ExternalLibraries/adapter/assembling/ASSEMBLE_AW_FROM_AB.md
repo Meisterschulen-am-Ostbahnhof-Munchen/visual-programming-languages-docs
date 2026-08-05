@@ -42,7 +42,7 @@ The function block (FB) is based internally on two sub-components:
 
 The following applies:
 
-`OUT.WORD = (BYTE_01.D1 << 8) | BYTE_00.D1`
+OUT.WORD = (BYTE_01.D1 << 8) | BYTE_00.D1`
 
 - After successful combination, the assembler sends an acknowledgment event (`CNF`).
 - This event clocks the D flip-flop (`CLK`), which takes the current WORD value.

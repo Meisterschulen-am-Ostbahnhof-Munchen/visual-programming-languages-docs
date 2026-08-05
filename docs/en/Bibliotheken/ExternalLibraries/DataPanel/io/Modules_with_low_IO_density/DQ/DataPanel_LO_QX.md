@@ -3,7 +3,7 @@
 * * * * * * * * * *
 ## Introduction
 The DataPanel_LO_QX is an output service interface function block for Boolean output data, specifically designed for communication with digital outputs in automation systems. This block enables the safe and controlled output of binary signals to connected hardware resources.
-``` ![DataPanel_LO_QX](DataPanel_LO_QX.svg)
+`` ![DataPanel_LO_QX](DataPanel_LO_QX.svg)
 
 ## Interface Structure
 

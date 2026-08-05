@@ -98,7 +98,7 @@ The `STRUCT_DEMUX` is a stateless function block that operates according to a si
 
 ## Conclusion
 
-`STRUCT_DEMUX` is a fundamental and extremely useful building block for working with data structures in 4diac. Its ability to automatically decompose any structure into its constituent parts significantly simplifies application logic and promotes clear, readable wiring. It is the standard tool for accessing the contents of structures.
+STRUCT_DEMUX` is a fundamental and extremely useful building block for working with data structures in 4diac. Its ability to automatically decompose any structure into its constituent parts significantly simplifies application logic and promotes clear, readable wiring. It is the standard tool for accessing the contents of structures.
 
 ---
 

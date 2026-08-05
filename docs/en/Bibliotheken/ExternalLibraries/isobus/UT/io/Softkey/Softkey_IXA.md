@@ -3,7 +3,7 @@
 * [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics]
 ## Introduction
 Softkey_IXA is a composite function block for processing Boolean input data. The block serves as an interface for softkey operations and enables the initialization and querying of input states via standardized ISOBUS communication protocols.
-``` ![Softkey_IXA](Softkey_IXA.svg)
+`` ![Softkey_IXA](Softkey_IXA.svg)
 
 ## Interface Structure
 

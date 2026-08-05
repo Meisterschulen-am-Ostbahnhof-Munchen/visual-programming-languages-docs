@@ -59,7 +59,7 @@ The function block operates in an event-driven manner:
 
 2. Simultaneously, the data value from `ADI_IN.D1` is transferred as `DINT` to the `IN` input of the conversion function.
 
-``` 3. The function block `F_DINT_TO_WORD` converts the `DINT` value to a `WORD` value (according to IEC 61131-3).
+`` 3. The function block `F_DINT_TO_WORD` converts the `DINT` value to a `WORD` value (according to IEC 61131-3).
 
 4. After the conversion is complete, the converter's output event (`CNF`) is sent.
 
@@ -90,9 +90,9 @@ Since this is a purely structured composite FB without its own Execution Control
 
 | `F_DINT_TO_WORD` | Direct DINT to Word conversion | No adapter encapsulation; must be manually integrated into a network |
 
-`ADI_TO_AW` | Adapter-based encapsulation of the same conversion | Provides ready-to-use adapter interfaces; simplifies reuse |
+ADI_TO_AW` | Adapter-based encapsulation of the same conversion | Provides ready-to-use adapter interfaces; simplifies reuse |
 
-`WORD_TO_DINT` | Reverse conversion | Other direction; requires a custom adapter type |
+WORD_TO_DINT` | Reverse conversion | Other direction; requires a custom adapter type |
 
 The `ADI_TO_AW` is specifically optimized for environments where adapters are required as standardized interfaces.
 

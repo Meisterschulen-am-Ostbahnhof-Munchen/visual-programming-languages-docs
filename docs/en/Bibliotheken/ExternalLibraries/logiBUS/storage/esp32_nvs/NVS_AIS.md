@@ -88,7 +88,7 @@ The function block `NVS_AIS` itself does not have an explicit state machine. Its
 - **Additional memory modules (e.g., for SD cards)**: These usually operate with different protocols (SPI, I²C) and offer different memory schemes. `NVS_AIS` is optimized for the specific characteristics of the ESP32-NVS (key-value pairs, low latency).
 
 ## Conclusion
-`NVS_AIS`is a practical function block that encapsulates the saving and loading of strings in the ESP32's non-volatile memory and provides it via a clean adapter interface. With its automated initialization and integrated read and write operations, it is particularly well-suited for applications requiring simple, reliable persistence of configuration data. The adapter interface enables loose coupling with other components and increases reusability across various IEC 61499 projects.
+NVS_AIS`is a practical function block that encapsulates the saving and loading of strings in the ESP32's non-volatile memory and provides it via a clean adapter interface. With its automated initialization and integrated read and write operations, it is particularly well-suited for applications requiring simple, reliable persistence of configuration data. The adapter interface enables loose coupling with other components and increases reusability across various IEC 61499 projects.
 
 ---
 

@@ -58,7 +58,7 @@ The internal state machine consists of the following states and transitions:
 
 | RESET | Output `Q.D1` is `FALSE` | Executes algorithm `RESET`: `Q.D1 := FALSE` and fires `Q.E1` |
 
-`` **Transitions:**
+` **Transitions:**
 
 - `START` → `SET` on condition `S`
 - `START` → `RESET` on condition `R`

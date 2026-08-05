@@ -39,7 +39,7 @@ The control process is as follows:
 * The state of the timer (`E_TP.Q`) is passed to `DigitalOutput_Q1.OUT`.
 * This causes the physical output `Output_Q1` (e.g., a lamp) to light up for exactly 1 second each time the input button is pressed again.
 
-``` **Connection Overview:**
+`` **Connection Overview:**
 
 * `DigitalInput_I1.IND` -> `FB_R_TRIG.REQ`
 * `DigitalInput_I1.IN` -> `FB_R_TRIG.CLK`

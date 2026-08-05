@@ -50,7 +50,7 @@ Process:
 - To the clock input `CLK` of the flip-flop (`E_D_FF`).
 - Simultaneously, the validity status (`FIELDBUS_UDINT_TO_SIGNAL.VALID`) is set to the data input `D` of the flip-flop.
 
-``` - On the rising edge of `CLK`, the flip-flop inherits the value from `D` to `Q` and outputs an event on `EO`.
+`` - On the rising edge of `CLK`, the flip-flop inherits the value from `D` to `Q` and outputs an event on `EO`.
 
 - The flip-flop output `Q` feeds `VALID.D1`, and the event `EO` triggers `VALID.E1`.
 
@@ -94,7 +94,7 @@ The state changes on each rising clock edge (`CLK`) to the current value of `D`.
 
 ## Conclusion
 
-`AUDI_FIELDBUS_UDINT_TO_SIGNAL` is a specialized filter module for fieldbus signals that only forwards valid incoming `UDINT` values to the output and outputs the status via a synchronized path. The use of an internal flip-flop prevents inconsistent states and makes it ideal for use in time-critical automation environments. Its adapter-based interface allows for easy integration into larger 4diac projects.
+AUDI_FIELDBUS_UDINT_TO_SIGNAL` is a specialized filter module for fieldbus signals that only forwards valid incoming `UDINT` values to the output and outputs the status via a synchronized path. The use of an internal flip-flop prevents inconsistent states and makes it ideal for use in time-critical automation environments. Its adapter-based interface allows for easy integration into larger 4diac projects.
 
 --
 

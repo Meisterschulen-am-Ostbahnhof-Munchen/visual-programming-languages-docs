@@ -69,7 +69,7 @@ After successful initialization, the function block `INI` generates the event `I
 
 After the read operation, `INI` outputs the event `GETO`. This triggers the `REQ` input of `Q_StringValue`, so that the read string is passed to the ISOBUS object.
 
-``` 3. **Saving a New Value**:
+`` 3. **Saving a New Value**:
 
 When `StringValue_IS` receives a new string from the ISOBUS object, it sends the event `IND`. This event is connected to the `SET` input of `INI`, so the new value is saved.
 

@@ -82,4 +82,4 @@ Since the FB is a pure function block network (no dedicated ECC), the state is d
 
 ## Conclusion
 
-`AUDI_D_FF_HYS` combines the properties of a data-triggered flip-flop with adjustable hysteresis. By being encapsulated as an adapter module, it can be easily integrated into modular automation networks and offers a robust solution for signal processing with debouncing or threshold logic.
+AUDI_D_FF_HYS` combines the properties of a data-triggered flip-flop with adjustable hysteresis. By being encapsulated as an adapter module, it can be easily integrated into modular automation networks and offers a robust solution for signal processing with debouncing or threshold logic.

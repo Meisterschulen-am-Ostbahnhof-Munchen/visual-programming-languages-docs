@@ -42,12 +42,12 @@ The flow is controlled via event and data connections.
 - The `IND` events of all four digital inputs (Input_CU, Input_CD, Input_R, Input_LD) are connected to the `REQ` input of the counter FB_CTUD. Each rising edge at any of the inputs triggers a recalculation of the counter.
 - After successful recalculation, the counter sends the `CNF` event. This is distributed to the `REQ` inputs of the three output blocks (Output_QU, Output_QD, Q_NumericValue_PHYS), so that the output values are updated in parallel.
 
-``` **Data Connections**
+`` **Data Connections**
 
 - The digital input values (`IN`) from Input_CU, Input_CD, Input_R, and Input_LD are routed to the corresponding data inputs of the counter (`CU`, `CD`, `R`, `LD`).
 - The binary output signals `QU` and `QD` from the counter are transferred to the data inputs `OUT` of the output blocks Output_QU and Output_QD.
 
-``` - The current counter value `CV` (data type `INT`) is assigned to input `rPhys` of the terminal output block. A network comment explains that `INT` can be interpreted as `REAL` without explicit conversion (implicit type conversion is permitted).
+`` - The current counter value `CV` (data type `INT`) is assigned to input `rPhys` of the terminal output block. A network comment explains that `INT` can be interpreted as `REAL` without explicit conversion (implicit type conversion is permitted).
 
 **Special Features**
 

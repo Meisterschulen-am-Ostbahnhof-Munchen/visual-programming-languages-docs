@@ -34,7 +34,7 @@ Learning event delay (`E_DELAY`) for creating sequences. This section demonstrat
 * **`Q_CtrlAudioSignal_0`**: First tone (440 Hz).
 * **`E_DELAY`**: A delay function block.[cite_start]After an event at input `START`, it waits for `DT` (here 250 ms) before passing the event on to output `EO`.[cite: 1]
 
-``` * **`Q_CtrlAudioSignal_1`**: Second tone (880 Hz - one octave higher).
+`` * **`Q_CtrlAudioSignal_1`**: Second tone (880 Hz - one octave higher).
 
 -----
 

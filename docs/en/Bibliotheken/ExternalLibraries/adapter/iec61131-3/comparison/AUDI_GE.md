@@ -40,7 +40,7 @@ The data values to be compared are obtained via the following adapters:
 
 1. The events from `IN1.E1` and `IN2.E1` are routed to the internal `F_GE` module (via an OR operator – both events trigger the same `REQ` input).
 
-``` 2. Simultaneously, the data `IN1.D1` and `IN2.D1` are transferred to the corresponding inputs `F_GE.IN1` and `F_GE.IN2`.
+`` 2. Simultaneously, the data `IN1.D1` and `IN2.D1` are transferred to the corresponding inputs `F_GE.IN1` and `F_GE.IN2`.
 
 3. The internal function block `F_GE` calculates `IN1 ≥ IN2`.
 
@@ -76,7 +76,7 @@ The function block itself does not have an explicit state machine – all contro
 
 ## Conclusion
 
-`AUDI_GE` is a specialized comparison block that enables flexible and clean interface definition through the use of adapters. It is particularly suitable for modular automation projects where values are exchanged via standardized interfaces. Internal use of the proven `F_GE` block guarantees correct and efficient comparison operations.
+AUDI_GE` is a specialized comparison block that enables flexible and clean interface definition through the use of adapters. It is particularly suitable for modular automation projects where values are exchanged via standardized interfaces. Internal use of the proven `F_GE` block guarantees correct and efficient comparison operations.
 
 --
 

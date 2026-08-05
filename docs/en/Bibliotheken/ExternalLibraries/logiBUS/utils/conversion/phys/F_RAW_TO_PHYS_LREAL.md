@@ -4,7 +4,7 @@
 ## Introduction
 The function block `F_RAW_TO_PHYS_LREAL` converts a raw ISOBUS integer value (UDINT) into a physical floating-point value (LREAL).
 The conversion follows the standardized ISOBUS formula:
-`display = (raw + offset) * scale`
+display = (raw + offset) * scale`
 
 The block is optimized for use in agricultural control systems (ISOBUS) and uses the provided parameters from a pool of numeric objects.
 
@@ -105,6 +105,6 @@ This function block offers the highest precision and is recommended for applicat
 
 ## Conclusion
 
-`F_RAW_TO_PHYS_LREAL` is a reliable and accurate converter for ISOBUS raw data processing.
+F_RAW_TO_PHYS_LREAL` is a reliable and accurate converter for ISOBUS raw data processing.
 
 By using LINT as the buffer and LREAL as the output type, rounding errors are minimized and large value ranges are covered. The module is particularly suitable for safety-critical or precision agricultural applications and can be flexibly adapted to various measured variables via its configurable structure.

@@ -66,7 +66,7 @@ The flow within the sub-application is greatly simplified by the AX adapter conn
 
 ## Summary
 
-`Uebung_039_sub_Outputs_AX` is the AX-optimized version of the output control. The use of adapters reduces internal complexity and increases reusability in systems that rely entirely on AX adapters.
+Uebung_039_sub_Outputs_AX` is the AX-optimized version of the output control. The use of adapters reduces internal complexity and increases reusability in systems that rely entirely on AX adapters.
 
 ## 🛠️ Related Exercises
 * [Exercise_039_AX](Uebung_039_AX.md)]

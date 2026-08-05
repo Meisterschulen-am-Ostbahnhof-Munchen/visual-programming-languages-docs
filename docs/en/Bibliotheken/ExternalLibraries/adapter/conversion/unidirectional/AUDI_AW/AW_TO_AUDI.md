@@ -32,7 +32,7 @@ The function block `AW_TO_AUDI` is a composite block that converts a data value 
 
 3. `F_WORD_TO_UDINT` performs the conversion and places the result (UDINT) at its output `OUT`.
 
-``` 4. Once the conversion is complete, an event is sent via `Convert.CNF` to **AUDI_OUT.E1**, and the converted value is output via **AUDI_OUT.D1**.
+`` 4. Once the conversion is complete, an event is sent via `Convert.CNF` to **AUDI_OUT.E1**, and the converted value is output via **AUDI_OUT.D1**.
 
 Data flow and event control are synchronous: Each incoming event generates exactly one outgoing event with the updated data value.
 

@@ -25,7 +25,7 @@ This function block has no adapters.
 When the `REQ` event is triggered, the function block calculates the XOR operation of all passed input values (`IN1` to `IN9`). The result is output to `OUT`, and the `CNF` event signals that the result is ready.
 
 **Example (for BOOL inputs):**
-`OUT = IN1 XOR IN2 XOR ... XOR IN9`
+OUT = IN1 XOR IN2 XOR ... XOR IN9`
 
 ## Technical Features
 - **Generic Implementation:** Supports all `ANY_BIT` data types by using the generic class `GEN_XOR`.

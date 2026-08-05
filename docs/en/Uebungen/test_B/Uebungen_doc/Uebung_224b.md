@@ -12,7 +12,7 @@ This exercise implements an up/down counter according to IEC 61131-3 (function b
 - Data Outputs: `QU` (upper limit) `QD` (lower limit), `CV` (current counter reading)
 - Functionality: Implements a forward/downward counter. The counter is incremented on each rising event at `CU` and decremented on `CD`. The counter is reset to 0 on `R` and loaded with the value from `PV` on `LD`. Outputs `QU` and `QD` are set when the counter reading reaches the programmed limit.
 
-``` - **`Input_CU`** (Type: `logiBUS::io::DI::logiBUS_IX`)
+`` - **`Input_CU`** (Type: `logiBUS::io::DI::logiBUS_IX`)
 
 - Parameters: `QI` = `TRUE`, `Input` = `Input_I1`
 - Function: Digital input that reads the physical input `I1` of the logiBUS module.
@@ -49,17 +49,17 @@ The flow is event-driven via **event connections**:
 - `F_ULINT_TO_LREAL.REQ` – starts the counter reading conversion
 - After the conversion is complete, `F_ULINT_TO_LREAL` generates a `CNF` event, which is passed on to `Q_NumericValue_PHYS_LREAL.REQ` to update the display.
 
-` `Output_QU.REQ` – updates the digital output `Output_QD.REQ` – updates the digital output `QD`
+`Output_QU.REQ` – updates the digital output `Output_QD.REQ` – updates the digital output `QD`
 
-` `Output_QD.REQ` – updates the digital output `QD`
+`Output_QD.REQ` – updates the digital output `QD`
 
-` `Output_QD.REQ` – updates the digital output `QD`
+`Output_QD.REQ` – updates the digital output `QD`
 
-` `Output_QD.REQ` – updates the digital output `QD`
+`Output_QD.REQ` – updates the digital output `QD`
 
-` `Output_QD.REQ` – updates the digital output `QD`
+`Output_QD.REQ` – updates the digital output `QD`
 
-` `Output_QD.REQ` – updates The **data connections** transmit the following values:
+`Output_QD.REQ` – updates The **data connections** transmit the following values:
 
 - The digital input signals (`Input_*.IN`) are routed directly to the corresponding data inputs of the meter: `CU`, `CD`, `R`, `LD`.
 - The output signals of the meter (`QU`, `QD`) are connected to the digital outputs `Output_QU.OUT` and `Output_QD.OUT`.

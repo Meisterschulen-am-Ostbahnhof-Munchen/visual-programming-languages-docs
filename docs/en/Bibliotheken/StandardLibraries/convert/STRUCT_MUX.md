@@ -86,7 +86,7 @@ The `STRUCT_MUX` is a stateless block that operates according to a simple reques
 
 ## Conclusion
 
-`STRUCT_MUX` is a fundamental and very practical building block for working with data structures in 4diac. Its ability to generate any structure from individual values simplifies application logic and promotes clean, structured data management. It is the standard tool for bundling data and generating structured information.
+STRUCT_MUX` is a fundamental and very practical building block for working with data structures in 4diac. Its ability to generate any structure from individual values simplifies application logic and promotes clean, structured data management. It is the standard tool for bundling data and generating structured information.
 
 ---
 

@@ -19,12 +19,12 @@ No data outputs available.
 ### **Adapter**
 - **Socket (Input):**
 
-`IN` – of type `adapter::types::unidirectional::ALI`
+IN` – of type `adapter::types::unidirectional::ALI`
 Receives the incoming ALI signal.
 
 - **Plugs (Outputs):**
 
-`OUT1` … `OUT8` – each of type `adapter::types::unidirectional::ALI`
+OUT1` … `OUT8` – each of type `adapter::types::unidirectional::ALI`
 Provide the eight identical copies of the input signal.
 
 ## Functionality

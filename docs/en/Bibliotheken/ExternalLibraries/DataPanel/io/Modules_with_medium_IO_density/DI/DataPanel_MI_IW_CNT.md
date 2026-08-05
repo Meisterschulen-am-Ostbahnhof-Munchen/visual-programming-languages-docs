@@ -113,7 +113,7 @@ After an error, only a new INIT can return the FB to the IDLE state.
 - **DataPanel_MI_AI:** An analog input function block for voltage or current signals. In contrast, the IW_CNT processes only pulses (discrete) and not a continuous value.
 - **CTUD** (IEC 61499 standard counter): This standard function block can count forwards/backwards but does not require low-level initialization. The DataPanel_MI_IW_CNT is specifically connected to the DataPanel hardware and offers the IND function, which is often missing in standard function blocks.
 
-```## Conclusion
+``## Conclusion
 
 The **DataPanel_MI_IW_CNT** is a powerful service interface function block for the flexible acquisition of pulse counter data in agricultural control systems. Its integrated asynchronous indication based on pulse or time thresholds reduces response time and relieves the load on the control system. Thanks to its clearly structured interface and specific configuration options (SA address, input selection), it can be seamlessly integrated into the DataPanel ecosystem. It thus represents a reliable component for applications that require precise pulse evaluation at the system level.
 

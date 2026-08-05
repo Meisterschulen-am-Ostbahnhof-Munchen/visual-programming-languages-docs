@@ -33,7 +33,7 @@ Upon the occurrence of the event `REQ`, the function block reads the values of a
 
 The logical function can be described as follows:
 
-`OUT = IN1 XOR IN2 XOR IN3 XOR IN4 XOR IN5 XOR IN6 XOR IN7 XOR IN8`
+OUT = IN1 XOR IN2 XOR IN3 XOR IN4 XOR IN5 XOR IN6 XOR IN7 XOR IN8`
 
 An XOR (exclusive OR) operation returns `TRUE` (1) as the result if and only if there is an odd number of inputs connected, and `TRUE` (1) is the result. If there is an even number of inputs, the result is `FALSE` (0).
 
@@ -43,7 +43,7 @@ An XOR (exclusive OR) operation returns `TRUE` (1) as the result if and only if 
 # Technical Features
 * **Generic Block:** The block is marked as a generic block (`GEN_XOR`), which indicates its reusability and possible parameterization for other data types. In this specific instance, however, it is fixed to the data type `BOOL`.
 
-``` * **Event-driven execution:** The operation is only performed upon an incoming `REQ` event, enabling efficient and deterministic control.
+`` * **Event-driven execution:** The operation is only performed upon an incoming `REQ` event, enabling efficient and deterministic control.
 
 * **Fixed number of inputs:** The block provides exactly eight inputs. Unused inputs should be set to a defined logical value (e.g., `FALSE`).
 

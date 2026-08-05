@@ -5,7 +5,7 @@
 ## Introduction
 This exercise demonstrates the calibration of an analog input (AnalogInput_I7) using offset and scaling adapters (AR_CALIBRATE). The calibration values are persistently stored via INI function blocks (INI_AR2). Additionally, a hysteresis controller is applied to the calibrated analog signal, with the threshold and hysteresis also loaded via INI (SubApp THRESHOLD and HYSTERESIS). The hysteresis result is output to a digital output (Output_Q2), while the calibrated value is simultaneously displayed on a screen (Q_NumericValue_PHYSA). Digital inputs control the calibration (Calibrate On/Off and Calibrate Set) as well as an additional digital output (Output_Q1).
 
-` ...)``````) ```) ``) ``) ``) ``) ` control the calibration (`Calibrate On/Off (Calibrate On/Off, (Calibrate Set)) as well as an additional digital output
+...)``````) ```) ``) ``) ``) ``) ` control the calibration (`Calibrate On/Off (Calibrate On/Off, (Calibrate Set)) as well as an additional digital output
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: `THRESHOLD` and `HYSTERESIS`
@@ -58,7 +58,7 @@ Reads the data under [missing information] for initialization. The function bloc
 
 1. **Analog Input**:
 
-`AnalogInput_I7` continuously provides the raw value of the analog input on adapter `IN`. This raw value is converted into an AR adapter (real value) via `AD_TO_AUDI` and `AUDI_TO_AR` and passed to input `X` of the calibration adapter `CALIBRATE`.
+AnalogInput_I7` continuously provides the raw value of the analog input on adapter `IN`. This raw value is converted into an AR adapter (real value) via `AD_TO_AUDI` and `AUDI_TO_AR` and passed to input `X` of the calibration adapter `CALIBRATE`.
 
 2. **Calibration**:
 

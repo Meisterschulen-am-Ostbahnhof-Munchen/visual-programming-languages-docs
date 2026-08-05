@@ -22,19 +22,19 @@ None.
 
 |---|---|---|---|
 
-`adapter::types::unidirectional::AS` | IN | Socket (Input) | Receives the AS data stream to be distributed. |
+adapter::types::unidirectional::AS` | IN | Socket (Input) | Receives the AS data stream to be distributed. |
 
-`adapter::types::unidirectional::AS` | OUT1 | Plug (Output) | First copy of the incoming AS data stream. |
+adapter::types::unidirectional::AS` | OUT1 | Plug (Output) | First copy of the incoming AS data stream. |
 
-`adapter::types::unidirectional::AS` | OUT2 | Plug (Output) | Second copy of the incoming AS data stream. |
+adapter::types::unidirectional::AS` | OUT2 | Plug (Output) | Second copy of the incoming AS data stream. |
 
-`adapter::types::unidirectional::AS` | OUT3 | Plug (Output) | Third copy. |
+adapter::types::unidirectional::AS` | OUT3 | Plug (Output) | Third copy. |
 
-`adapter::types::unidirectional::AS` | OUT4 | Plug (Output) | Fourth copy. |
+adapter::types::unidirectional::AS` | OUT4 | Plug (Output) | Fourth copy. |
 
-`adapter::types::unidirectional::AS` | OUT5 | Plug (Output) | Fifth copy. |
+adapter::types::unidirectional::AS` | OUT5 | Plug (Output) | Fifth copy. |
 
-`adapter::types::unidirectional::AS` | OUT6 | Plug (Output) | Sixth Copy. |
+adapter::types::unidirectional::AS` | OUT6 | Plug (Output) | Sixth Copy. |
 
 | `adapter::types::unidirectional::AS` | OUT7 | Plug (Output) | Seventh Copy. |
 

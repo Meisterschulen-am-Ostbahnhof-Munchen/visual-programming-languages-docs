@@ -29,7 +29,7 @@ The function block operates according to a hysteresis principle with two thresho
 
 1. **Initialization:** During the first iteration (`FirstRun = TRUE`), the current distance is stored as the start value `LastDist`, the output `OUT.D1` is set to FALSE, and `FirstRun` is reset.
 
-``` 2. **State Check:** On each incoming event via `DIST_IN.E1`, the block executes the `CHECK` algorithm:
+`` 2. **State Check:** On each incoming event via `DIST_IN.E1`, the block executes the `CHECK` algorithm:
 
 - If the current output is LOW (FALSE) and the new distance `DIST_IN.D1` reaches or exceeds the value `LastDist + DIST_LOW`, `OUT.D1` is set to TRUE and `LastDist` is updated to the current distance value.
 - If the output is HIGH (TRUE) and the new distance reaches or exceeds the value `LastDist + DIST_HIGH`, `OUT.D1` is set to FALSE and `LastDist` is updated.

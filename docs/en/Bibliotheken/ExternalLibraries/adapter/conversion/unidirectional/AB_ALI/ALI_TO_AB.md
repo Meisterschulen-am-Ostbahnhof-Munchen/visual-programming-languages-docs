@@ -63,7 +63,7 @@ The FB has no direct data outputs. Data is output exclusively via the **AB_OUT**
 
 2. As soon as the event arrives, the data value D1 (LINT) is passed to the internal conversion block `F_LINT_TO_BYTE` and converted into a BYTE value.
 
-``` 3. After the conversion is complete, the BYTE value is output via the **AB_OUT** adapter (D1) and the acknowledgment event (E1) is sent.
+`` 3. After the conversion is complete, the BYTE value is output via the **AB_OUT** adapter (D1) and the acknowledgment event (E1) is sent.
 
 The conversion from LINT (64 bits) to BYTE (8 bits) is performed by truncating the 8 least significant bits. Higher-order bits are lost in the process.
 

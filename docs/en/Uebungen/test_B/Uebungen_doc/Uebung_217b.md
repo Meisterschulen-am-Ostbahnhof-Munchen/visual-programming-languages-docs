@@ -49,7 +49,7 @@ The exercise is event-driven:
 - The converted value (LREAL) is sent to the terminal block `Q_NumericValue_PHYS_LREAL.lrPhys`.
 ...``
 
-`````````` **Counter Functionality**:
+````````` **Counter Functionality**:
 
 - As long as no load signal (`LD` = FALSE) is present, the function block counts down from 10 with each increasing pulse at `CD` (preset value = `PV` = 10).
 - A load signal resets the current counter value to the value of `PV`.

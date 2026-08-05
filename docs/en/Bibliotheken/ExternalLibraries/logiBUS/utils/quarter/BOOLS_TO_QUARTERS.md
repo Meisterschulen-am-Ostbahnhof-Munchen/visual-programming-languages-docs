@@ -28,7 +28,7 @@ This function block does not use any adapter interfaces.
 
 #
 ## ## Functionality
-`BOOLS_TO_QUARTERS` is a composite function block (FB) internally composed of 16 instances of a basic function block `BOOL_TO_QUARTER`. Each instance is responsible for converting a single Boolean value.
+BOOLS_TO_QUARTERS` is a composite function block (FB) internally composed of 16 instances of a basic function block `BOOL_TO_QUARTER`. Each instance is responsible for converting a single Boolean value.
 
 The functionality follows a serial chain principle:
 

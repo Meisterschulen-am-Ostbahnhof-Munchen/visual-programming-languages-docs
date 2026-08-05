@@ -68,7 +68,7 @@ The module sends the new priority to the virtual terminal and, upon completion, 
 - Initialization expects a valid object ID; an invalid value (ID_NULL) results in no service.
 - The error codes are standardized and enable easy diagnostics at the VT level.
 
-``` - The internal logic delegates the actual priority change to the embedded function block `Q_Priority`.
+`` - The internal logic delegates the actual priority change to the embedded function block `Q_Priority`.
 
 ## State Overview
 The function block does not have an explicitly displayed state machine. Sequence:

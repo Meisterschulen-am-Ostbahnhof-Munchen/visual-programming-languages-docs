@@ -38,7 +38,7 @@ The block reads the current value of the wheel-based machine speed (WBSD) via th
 
 This module converts an unsigned 16-bit integer (UINT) into a real number. The conversion formula is:
 
-`OUT = IN * SCALE + OFFSET`.
+OUT = IN * SCALE + OFFSET`.
 
 For example, mm/s is converted to m/s using `SCALE = 0.001` and `OFFSET = 0`.
 
@@ -62,16 +62,16 @@ The three function blocks are linked in a cascade via event and data connections
 
 1. **Event Chain**
 
-`I_WBSD.IND` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.REQ` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.CNF` → `Q_NumericValue.REQ`
+I_WBSD.IND` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.REQ` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.CNF` → `Q_NumericValue.REQ`
 
 - The fieldbus block generates the event `IND` when a new wheel speed value is received, which triggers the conversion.
 - After successful conversion, `CNF` signals the UT block to display the updated value.
 
 2. **Data Flow**
 
-`I_WBSD.WHEELBASEDMACHINESPEED` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.IN`
+I_WBSD.WHEELBASEDMACHINESPEED` → `FIELDBUS_UINT_TO_SIGNAL_SCALED.IN`
 
-`FIELDBUS_UINT_TO_SIGNAL_SCALED.OUT` → `Q_NumericValue.rPhys`
+FIELDBUS_UINT_TO_SIGNAL_SCALED.OUT` → `Q_NumericValue.rPhys`
 
 - The raw value (UINT) is passed directly to the converter.
 - The scaled result (REAL) is passed to the UT block as a physical value.

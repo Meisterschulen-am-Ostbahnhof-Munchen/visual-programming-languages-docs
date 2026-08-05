@@ -44,7 +44,7 @@ The FB is a composite function block that internally uses the IEC 61131 standard
 
 2. The converter reads the LWORD value from `AL_IN.D1`, converts it to a DINT, and places the result at `Convert.OUT`.
 
-``` 3. After successful conversion, an event from `Convert.CNF` is forwarded to the plug `ADI_OUT.E1`.
+`` 3. After successful conversion, an event from `Convert.CNF` is forwarded to the plug `ADI_OUT.E1`.
 
 4. Simultaneously, the converted DINT value from `Convert.OUT` is transferred to `ADI_OUT.D1`.
 

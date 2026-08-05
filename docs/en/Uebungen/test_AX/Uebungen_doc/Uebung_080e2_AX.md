@@ -78,9 +78,9 @@ The flow is controlled via event and adapter connections:
 - When the counter reaches its end value, `E_CTU.Q` sets an event. This is stored by `AX_D_FF` and passed to the digital output `DigitalOutput_Q1`.
 - The output remains set until a new event (e.g., a reset) changes its state.
 
-`E_CTU.Q` sets an event. This event is stored by `AX_D_FF` and passed to the digital output `DigitalOutput_Q1`.
+E_CTU.Q` sets an event. This event is stored by `AX_D_FF` and passed to the digital output `DigitalOutput_Q1`.
 
-``` - **Learning Objectives**: Understanding event-driven counters, controlling cycles with external inputs, and using flip-flops for debouncing or minimum hold time (event brakes).
+`` - **Learning Objectives**: Understanding event-driven counters, controlling cycles with external inputs, and using flip-flops for debouncing or minimum hold time (event brakes).
 
 - **Difficulty Level**: Advanced
 - **Prerequisites**: Basic knowledge of event processing in 4diac, working with input/output blocks, and concepts of counters and flip-flops.

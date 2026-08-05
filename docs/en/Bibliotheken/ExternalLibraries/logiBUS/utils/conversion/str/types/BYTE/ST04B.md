@@ -1,7 +1,7 @@
 # ST04B
 * * * * * * * * * *
 ## Introduction
-`ST04B` is a user-defined, structured data type within the 4diac IDE. Unlike a function block (FB), which implements specific functionality, a data type defines a data structure that can be used by function blocks or other data types. This data type groups four individual bytes into a logical unit to simplify their interaction.
+ST04B` is a user-defined, structured data type within the 4diac IDE. Unlike a function block (FB), which implements specific functionality, a data type defines a data structure that can be used by function blocks or other data types. This data type groups four individual bytes into a logical unit to simplify their interaction.
 ## Structure Definition
 Since `ST04B` is a data type and not a function block, it does not have interfaces in the sense of event inputs/outputs, data inputs/outputs, or adapters. The following sections adapt the original requirement of an interface structure to represent the internal components of the data type.
 ### **Components of the Structure**
@@ -16,7 +16,7 @@ The structure `ST04B` consists of the following four byte variables:
 As a passive data type, `ST04B` has no inherent "function" in the sense of logic or algorithm. Its function is to provide a defined template for data. Instances of this data type can be declared and used in function blocks to store, organize, and exchange data as a coherent unit between different function blocks. The internal components (B_00 to B_03) are directly addressable.
 
 ## Technical Details
-`ST04B` is defined as `StructuredType` and consists of four consecutive `BYTE` variables. The total size of an instance of this data type is therefore 4 bytes. In the context of the 4diac runtime environment, this data type is stored in memory according to its definition. The internal structure allows direct access to each individual byte via its name (e.g., `myST04B.B_00`).
+ST04B` is defined as `StructuredType` and consists of four consecutive `BYTE` variables. The total size of an instance of this data type is therefore 4 bytes. In the context of the 4diac runtime environment, this data type is stored in memory according to its definition. The internal structure allows direct access to each individual byte via its name (e.g., `myST04B.B_00`).
 
 The 4diac compiler assigns this data type to the package `logiBUS::utils::conversion::types`.
 
@@ -35,7 +35,7 @@ As a passive data type that merely defines a data structure, `ST04B` has no inte
 * * **`WORD`, `DWORD`**: These standard data types also represent a specific number of bytes (2 and 4, respectively). However, `ST04B` is more flexible when individual bytes need to be manipulated independently or when byte order (endianness) is important and needs to be explicitly controlled.
 
 ## Conclusion
-`ST04B` is a basic yet useful structured data type in 4diac that simplifies the management of four bytes as a coherent unit. It improves code readability and modularity, especially in applications that require the exchange or processing of byte-sequenced data. Its simple definition makes it a flexible building block for a wide range of data management tasks in automation technology.
+ST04B` is a basic yet useful structured data type in 4diac that simplifies the management of four bytes as a coherent unit. It improves code readability and modularity, especially in applications that require the exchange or processing of byte-sequenced data. Its simple definition makes it a flexible building block for a wide range of data management tasks in automation technology.
 
 ---
 

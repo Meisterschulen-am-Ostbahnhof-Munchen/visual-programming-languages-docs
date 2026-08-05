@@ -66,7 +66,7 @@ The exercise proceeds as follows:
 
 - When `UP_IN` is activated, `UP_OUT` is set to TRUE and `DOWN_OUT` is set to FALSE.
 
-``` - When `DOWN_IN` is activated, `DOWN_OUT` is set to TRUE and `UP_OUT` to FALSE.
+`` - When `DOWN_IN` is activated, `DOWN_OUT` is set to TRUE and `UP_OUT` to FALSE.
 
 - If both inputs are active simultaneously, the internal logic ensures a defined priority (usually the one detected first).
 

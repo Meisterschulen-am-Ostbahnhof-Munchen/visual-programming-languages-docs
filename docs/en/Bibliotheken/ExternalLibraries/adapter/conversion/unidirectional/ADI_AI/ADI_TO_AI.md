@@ -35,7 +35,7 @@ This function block connects the adapter interfaces directly to an internal inst
 
 2. The value of `ADI_IN.D1` is passed to `Convert.IN`.
 
-``` 3. The conversion `DINT → INT` is performed.
+`` 3. The conversion `DINT → INT` is performed.
 
 4. Upon completion, `Convert.CNF` signals the event to `AI_OUT.E1`, and the converted value from `Convert.OUT` is forwarded to `AI_OUT.D1`.
 

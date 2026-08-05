@@ -152,7 +152,7 @@ If a numeric integer value (e.g., 123) is stored in a `DWORD` and this value is 
 real_var := UDINT_TO_REAL(DWORD_TO_UDINT(dword_var));
 * *In the FB network:* Sequential insertion of two conversion modules:
 
-`[DWORD-Ausgang]` $\rightarrow$ `[DWORD_TO_UDINT]` $\rightarrow$ `[UDINT_TO_REAL]` $\rightarrow$ `[REAL-Eingang]`.
+[DWORD-Ausgang]` $\rightarrow$ `[DWORD_TO_UDINT]` $\rightarrow$ `[UDINT_TO_REAL]` $\rightarrow$ `[REAL-Eingang]`.
 
 * *Explanation:* `DWORD_TO_UDINT` copies the bit pattern (123 remains 123 as a UDINT). `UDINT_TO_REAL` then performs the actual mathematical conversion to the floating-point number `123.0`.
 
@@ -202,7 +202,7 @@ REAL only has 32 bits and can therefore only represent **7 decimal places** prec
 
 When converting large unsigned values, accuracy is lost starting at **16,777,216** (2^24):
 
-``````iecst
+`````iecst
 UDINT#16777216  →  UDINT_TO_REAL()  →  REAL#16777216.0  →  Korrekt (2^24)
 UDINT#16777217  →  UDINT_TO_REAL()  →  REAL#16777216.0  →  Präzisionsverlust (Rundung)
 **Solution:** For values ≥ 16,777,216, use `LREAL` instead of `REAL`:

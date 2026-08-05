@@ -38,7 +38,7 @@ This exercise is implemented as a sub-app that does not have its own input/outpu
 
 1. All four digital input blocks (Input_CU, Input_CD, Input_R, Input_LD) trigger the event `REQ` of the counter FB_CTUD_UDINT on a rising edge (IND event).
 
-``` 2. After the counter is processed, its confirmation event `CNF` is forwarded to the output blocks Output_QU, Output_QD, and Q_NumericValue, causing them to update their values.
+`` 2. After the counter is processed, its confirmation event `CNF` is forwarded to the output blocks Output_QU, Output_QD, and Q_NumericValue, causing them to update their values.
 ... **Data Connections:**
 
 - `Input_CU.IN` → `FB_CTUD_UDINT.CU`

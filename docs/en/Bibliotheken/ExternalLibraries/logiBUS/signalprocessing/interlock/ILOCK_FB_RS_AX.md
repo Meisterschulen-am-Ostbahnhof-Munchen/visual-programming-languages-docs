@@ -47,7 +47,7 @@ The block does not have separate event or data ports, but rather encapsulates al
 
 The function block executes the algorithm `REQ` upon each incoming event (via `SET1.E1`, `RESET.E1`, `ILOCK_IN.EO1`, or `ILOCK_OUT.EI1`). The internal logic calculates the new output value `Q1.D1` using the reset-dominant formula:
 
-`Q1.D1 := (SET1.D1 OR Q1.D1) AND NOT (RESET.D1 OR ILOCK_IN.DO1 OR ILOCK_OUT.DI1);`
+Q1.D1 := (SET1.D1 OR Q1.D1) AND NOT (RESET.D1 OR ILOCK_IN.DO1 OR ILOCK_OUT.DI1);`
 
 - If the reset signal (`RESET.D1`) or one of the interlock inputs (`ILOCK_IN.DO1` or `ILOCK_OUT.DI1`) is TRUE, the latch is immediately reset (Q = FALSE), regardless of the set signal.
 - If no reset or interlock block is present, the latch is set by a set signal (`SET1.D1` = TRUE) and remains self-latching.

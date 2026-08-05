@@ -77,4 +77,4 @@ The function block implicitly has an internal state machine:
 Compared to a multiplexer (`AUDI_MUX`), the data flow direction is reversed – here, a signal is distributed to multiple outputs, while a multiplexer combines multiple inputs into a single output.
 
 ## Conclusion
-`AUDI_DEMUX_2` is a specialized, generic demultiplexer for unidirectional AUDI interfaces. It enables clean and event-driven signal distribution in automation systems, especially in environments that use the AUDI adapter standard. Its simple interface (one index, two outputs) makes it intuitive to use and easy to integrate into existing control logic.
+AUDI_DEMUX_2` is a specialized, generic demultiplexer for unidirectional AUDI interfaces. It enables clean and event-driven signal distribution in automation systems, especially in environments that use the AUDI adapter standard. Its simple interface (one index, two outputs) makes it intuitive to use and easy to integrate into existing control logic.

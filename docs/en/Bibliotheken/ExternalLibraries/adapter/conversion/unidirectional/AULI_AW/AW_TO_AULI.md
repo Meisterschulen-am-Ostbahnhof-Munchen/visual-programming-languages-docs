@@ -46,4 +46,4 @@ The FB does not contain any explicit states. Processing is linear: Event → Con
 
 ## Conclusion
 
-`AW_TO_AULI` is a practical and easy-to-use component for converting WORD to ULINT data. The use of standardized adapter interfaces and the IEC conversion function ensures compatibility and reliability. The function block is particularly suitable for modular, adapter-based automation solutions.
+AW_TO_AULI` is a practical and easy-to-use component for converting WORD to ULINT data. The use of standardized adapter interfaces and the IEC conversion function ensures compatibility and reliability. The function block is particularly suitable for modular, adapter-based automation solutions.

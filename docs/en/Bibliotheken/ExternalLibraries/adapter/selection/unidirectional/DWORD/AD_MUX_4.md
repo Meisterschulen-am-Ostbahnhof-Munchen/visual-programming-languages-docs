@@ -55,7 +55,7 @@ The function block does not have direct data outputs; output is provided via the
 
 2. Upon receiving the **REQ** event, the current value of the **K** data input is read.
 
-``` 3. Depending on the value of *K* (0, 1, 2, or 3), the corresponding socket adapter (**IN1** to **IN4**) is connected to the plug adapter **OUT**.
+`` 3. Depending on the value of *K* (0, 1, 2, or 3), the corresponding socket adapter (**IN1** to **IN4**) is connected to the plug adapter **OUT**.
 
 4. Once the connection is established, an acknowledgment event is output at **CNF**.
 

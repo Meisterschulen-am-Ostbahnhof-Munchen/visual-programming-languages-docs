@@ -52,7 +52,7 @@ The entire conversion process is event-driven: An incoming event triggers the co
 - The internal converter `F_LINT_TO_DWORD` is an IEC 61131-3 module that performs a bit-perfect conversion of a 64-bit integer value (LINT) to a 32-bit double-word value (DWORD).
 - The adapters are defined as unidirectional, meaning that data flows exclusively from the input to the output adapter.
 
-``` - This function block is designed for use in automation systems that utilize adapter interfaces according to the IEC 61499 standard.
+`` - This function block is designed for use in automation systems that utilize adapter interfaces according to the IEC 61499 standard.
 
 ## State Overview
 
@@ -70,4 +70,4 @@ The function block does not have its own explicit state machine. Its behavior is
 
 ## Conclusion
 
-`ALI_TO_AD` is a simple yet useful composite component that enables the unidirectional conversion of a LINT adapter to a DWORD adapter. It allows for a clean separation of data types at the adapter level and simplifies the integration of different systems in an IEC 61499 environment. The use of a standardized IEC 61131 converter ensures defined and reproducible data conversion.
+ALI_TO_AD` is a simple yet useful composite component that enables the unidirectional conversion of a LINT adapter to a DWORD adapter. It allows for a clean separation of data types at the adapter level and simplifies the integration of different systems in an IEC 61499 environment. The use of a standardized IEC 61131 converter ensures defined and reproducible data conversion.

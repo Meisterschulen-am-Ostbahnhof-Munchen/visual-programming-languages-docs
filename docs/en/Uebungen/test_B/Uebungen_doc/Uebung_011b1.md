@@ -16,13 +16,13 @@ This exercise demonstrates the processing of two numeric input values via ISOBUS
 - **Parameters**: none
 - **Function**: Converts a `DWORD` value to a `UDINT` value. The converted value is output at `OUT`. The conversion is started by an event at input `REQ`; upon completion, output `CNF` is activated.
 
-``` - **ADD_2**
+`` - **ADD_2**
 
 - **Type**: `iec61131::arithmetic::ADD_2`
 - **Parameters**: none
 - **Function**: Adds two `UDINT` values at inputs `IN1` and `IN2`. The result is output at `OUT` (also `UDINT`). An event at `REQ` starts the calculation; upon completion, `CNF` is activated.
 
-``` - **Q_NumericValue**
+`` - **Q_NumericValue**
 
 - **Type**: `isobus::UT::Q::Q_NumericValue`
 - **Parameters**:

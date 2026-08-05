@@ -36,13 +36,13 @@ This exercise imports the following constants from the libraries `Uebungen::cons
 
 1. The function block **InputNumber_I1** receives a numeric value from the ISOBUS interface and outputs it via its adapter output `IN`.
 
-``` 2. This adapter output is connected to the adapter input `AD_IN` of **AD_TO_AUDI**. This function block converts the data format and makes the value available at its output `AUDI_OUT`.
+`` 2. This adapter output is connected to the adapter input `AD_IN` of **AD_TO_AUDI**. This function block converts the data format and makes the value available at its output `AUDI_OUT`.
 
 3. The output `AD_TO_AUDI.AUDI_OUT` is connected to the adapter input `AUDI_IN` of **INI_AUDI**. This persistently stores the value in an INI section.
 
 4. The stored value is passed from the adapter output `INI_AUDI.AUDI_OUT` to the data port `u32NewValue` of **Q_NumericValue_AUDI**.
 
-` 5. **Q_NumericValue_AUDI** then sets the ISOBUS output value with object ID `OutputNumber_N1` to this value.
+5. **Q_NumericValue_AUDI** then sets the ISOBUS output value with object ID `OutputNumber_N1` to this value.
 
 The entire data chain is unidirectional and operates without explicit event control – execution is performed cyclically by the runtime environment.
 

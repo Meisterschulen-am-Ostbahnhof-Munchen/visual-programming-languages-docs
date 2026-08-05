@@ -83,7 +83,7 @@ State transitions occur exclusively on each rising edge of the clock signal (eve
 ## Application Scenarios
 - **Fieldbus Signal Conditioning:** A sensor sends USINT values via a fieldbus; the function block filters out invalid values and only forwards valid data and a clear validity status.
 
-``` - **Safety-Oriented Data Transmission:** In control systems that rely on valid signals (e.g., in agricultural technology), this function block (FB) can be used as a simple validation stage.
+`` - **Safety-Oriented Data Transmission:** In control systems that rely on valid signals (e.g., in agricultural technology), this function block (FB) can be used as a simple validation stage.
 
 - **Interface Adaptation:** The function block connects a fieldbus-specific adapter (e.g., CANopen, PROFIBUS) to a standardized logic adapter that only triggers events when the data is valid.
 

@@ -61,7 +61,7 @@ The function block has two states: `INIT` and `REQ`.
 
 2. If `IN <= DWORD_TO_UDINT(VALID_SIGNAL_DW)` is true, the input is considered valid. Then `OUT` is calculated as:
 
-`OUT := UDINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`
+OUT := UDINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`
 
 and `VALID` is set to `TRUE`.
 

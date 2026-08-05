@@ -63,7 +63,7 @@ The subapp operates in several steps, linked together via event and data connect
 - The converted value is passed from `F_DWORD_TO_UDINT.OUT` to `INI.VALUE` via the data connection.
 - The key (`KEY`) and section (`SECTION`) are passed directly from the SubApp inputs to the INI block.
 
-``` - After saving, `INI` sends the event `SETO`, which is forwarded to the subapp output `IND` (there, it appears as the visible output of the subapp).
+`` - After saving, `INI` sends the event `SETO`, which is forwarded to the subapp output `IND` (there, it appears as the visible output of the subapp).
 
 3. **Output/Update Saved Value**
 

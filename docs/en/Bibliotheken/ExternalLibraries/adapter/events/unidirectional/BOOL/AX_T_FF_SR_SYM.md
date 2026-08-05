@@ -33,7 +33,7 @@ The function block (FB) has three event inputs and a state machine with three st
 - At `R` or `CLK`, the function block transitions to the state `RESET`.
 - In the **RESET** state, the algorithm `RESET` is executed: `Q.D1 := FALSE`. Then, `Q.E1` is triggered.
 
-``` - At `S` or `CLK`, the function block (FB) switches back to state `SET`.
+`` - At `S` or `CLK`, the function block (FB) switches back to state `SET`.
 
 The toggle function is implemented by the `CLK` transitions: regardless of the current state, `CLK` leads to the other state.
 

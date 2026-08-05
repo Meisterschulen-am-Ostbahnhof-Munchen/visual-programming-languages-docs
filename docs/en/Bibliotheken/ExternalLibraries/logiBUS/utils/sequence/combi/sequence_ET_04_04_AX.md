@@ -43,4 +43,4 @@ See `sequence_ET_04_04`.
 
 ## Conclusion
 
-`sequence_ET_04_04_AX` is the ideal choice for complex 8-step controls in systems that consistently rely on adapter-based communication.
+sequence_ET_04_04_AX` is the ideal choice for complex 8-step controls in systems that consistently rely on adapter-based communication.

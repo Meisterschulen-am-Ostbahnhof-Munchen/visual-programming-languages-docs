@@ -32,11 +32,11 @@ The exercise flow is determined by the event and data connections in the network
 
 1. **Event Generation**:
 
-`E_CYCLE` sends an event every 1 ms to the input `EI` of `E_TMIN`.
+E_CYCLE` sends an event every 1 ms to the input `EI` of `E_TMIN`.
 
 2. **Time Delay**:
 
-`E_TMIN` waits until at least 10 seconds have passed since its last event. Only then does it itself output an event at its output `EO`. This "slows down" the original 1 ms event to a period of 10 seconds.
+E_TMIN` waits until at least 10 seconds have passed since its last event. Only then does it itself output an event at its output `EO`. This "slows down" the original 1 ms event to a period of 10 seconds.
 
 3. **Toggle Flip-Flop**:
 

@@ -53,7 +53,7 @@ After an event at the **REQ** input, the following algorithm is executed:
 
 1. Check: **IN** ≤ `LWORD_TO_ULINT(VALID_SIGNAL_LW)`
 
-`VALID_SIGNAL_LW` is an imported constant from the `FIELDBUS_SIGNAL` library and defines the upper limit of the valid value range.
+VALID_SIGNAL_LW` is an imported constant from the `FIELDBUS_SIGNAL` library and defines the upper limit of the valid value range.
 
 2. **Case – Valid Input** (Condition met):
 

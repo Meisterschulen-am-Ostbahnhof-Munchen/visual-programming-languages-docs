@@ -66,7 +66,7 @@ As a composite function block (FB), `SPLIT_AD_INTO_AQ` does not have its own sta
 
 ## Conclusion
 
-`SPLIT_AD_INTO_AQ` is a useful building block for partitioning a DWORD (AD adapter) into 16 2-bit quarter-intercept adapters (AQ). Its composite architecture with internal synchronization ensures consistent data transmission and facilitates modular, adapter-based programming in the 4diac IDE. It is particularly suitable for applications that require parallel processing of partial information without the partitioning details needing to be visible in the higher-level network.
+SPLIT_AD_INTO_AQ` is a useful building block for partitioning a DWORD (AD adapter) into 16 2-bit quarter-intercept adapters (AQ). Its composite architecture with internal synchronization ensures consistent data transmission and facilitates modular, adapter-based programming in the 4diac IDE. It is particularly suitable for applications that require parallel processing of partial information without the partitioning details needing to be visible in the higher-level network.
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

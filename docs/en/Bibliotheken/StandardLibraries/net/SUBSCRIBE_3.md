@@ -3,7 +3,7 @@
 * * * * * * * * * *
 ## Introduction
 The SUBSCRIBE_3 function block is used to subscribe to data from a PUBLISH_3 block. It enables the reception of three different data streams over a network connection and provides a standardized mechanism for communication between distributed system components.
-``` ![SUBSCRIBE_3](SUBSCRIBE_3.svg)
+`` ![SUBSCRIBE_3](SUBSCRIBE_3.svg)
 
 ## Interface Structure
 

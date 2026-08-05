@@ -70,15 +70,15 @@ If `QI = FALSE`, the function block transitions to state `DeInit`. There, `QO` i
 
 When an event occurs at `S`, the algorithm `SET` is executed:
 
-`QO` receives the value of `QI`. If `QI = TRUE` is present, `Q` is set to `TRUE`. The output `EO` is triggered to signal a change in `Q`.
+QO` receives the value of `QI`. If `QI = TRUE` is present, `Q` is set to `TRUE`. The output `EO` is triggered to signal a change in `Q`.
 
 - **Reset (`R`)**
 
 When an event occurs at `R`, the algorithm `RESET` is executed:
 
-`QO` receives the value of `QI`. If `QI = TRUE` is present, `Q` is set to `FALSE`. In this case, `EO` is also triggered.
+QO` receives the value of `QI`. If `QI = TRUE` is present, `Q` is set to `FALSE`. In this case, `EO` is also triggered.
 
-`QI = TRUE` is set to `Q`. `EO` is also triggered in this case. - **Toggle (`CLK`)**
+QI = TRUE` is set to `Q`. `EO` is also triggered in this case. - **Toggle (`CLK`)**
 
 An event at `CLK` always causes a state change:
 
@@ -137,4 +137,4 @@ Q is reset (q Transitions:
 This function block combines all three functions (Set, Reset, Toggle) with flexible initialization behavior – a comprehensive solution for many event-driven control tasks.
 
 ## Conclusion
-`E_T_FF_SR_SYM_INIT` is a versatile function block for IEC 61499-based event-driven automation. By combining Set, Reset, and Toggle functions with configurable initialization, it covers a wide range of requirements. Using the qualifier `QI` increases flexibility and enables secure integration into complex sequence control systems.
+E_T_FF_SR_SYM_INIT` is a versatile function block for IEC 61499-based event-driven automation. By combining Set, Reset, and Toggle functions with configurable initialization, it covers a wide range of requirements. Using the qualifier `QI` increases flexibility and enables secure integration into complex sequence control systems.

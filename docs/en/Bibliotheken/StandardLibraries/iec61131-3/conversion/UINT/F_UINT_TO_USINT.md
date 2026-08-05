@@ -42,4 +42,4 @@ The function block is stateless and re-executes the conversion with each ``REQ``
 - **F_UINT_TO_INT**: Retains the 16-bit size but converts to a signed type.
 
 ## Conclusion
-`F_UINT_TO_USINT` is a simple and efficient function block for converting 16-bit to unsigned 8-bit data. Its use is ideal in scenarios where a space-saving representation is required; however, the possibility of data loss with large input values should be considered.
+F_UINT_TO_USINT` is a simple and efficient function block for converting 16-bit to unsigned 8-bit data. Its use is ideal in scenarios where a space-saving representation is required; however, the possibility of data loss with large input values should be considered.

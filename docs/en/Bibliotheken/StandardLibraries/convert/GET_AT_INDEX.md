@@ -67,7 +67,7 @@ The `GET_AT_INDEX` block is a specialized block for array access. It differs fro
 * **Array Iterators**: Building blocks that typically iterate through the entire array instead of retrieving a single element via a direct index.
 * **General Data Manipulation Building Blocks**: These are not specifically designed for array access but perform more general operations (e.g., addition, comparison).
 
-`GET_AT_INDEX` thus fills a fundamental gap for direct, indexed read access to array data structures.
+GET_AT_INDEX` thus fills a fundamental gap for direct, indexed read access to array data structures.
 
 ## Metadata
 

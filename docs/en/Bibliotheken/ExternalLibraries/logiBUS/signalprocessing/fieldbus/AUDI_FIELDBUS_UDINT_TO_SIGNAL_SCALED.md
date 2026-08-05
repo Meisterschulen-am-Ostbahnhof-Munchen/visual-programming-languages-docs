@@ -56,7 +56,7 @@ The function block operates internally as a composite block. It consists of a su
 - A UDINT value (via `IN.D1`) and an event (`IN.E1`) are received via the adapter `IN`.
 - The incoming value is forwarded to the internal function block `FIELDBUS_UDINT_TO_SIGNAL_SCALED`, which multiplies the value by `SCALE` and then adds `OFFSET`. The result is available at the output `OUT.D1`.
 
-``` - Simultaneously, the internal function block generates a validity signal (`VALID`) indicating whether the received raw value is considered valid.
+`` - Simultaneously, the internal function block generates a validity signal (`VALID`) indicating whether the received raw value is considered valid.
 
 - This validity signal is fed to the D flip-flop at its data input (`D`). The rising edge of the processing event (`CNF`) clocks the flip-flop (`CLK`).
 - The instantaneous, synchronized validity signal is present at the flip-flop's output (`Q`) and is output via the adapter (`VALID.D1`).
@@ -68,7 +68,7 @@ The function block operates internally as a composite block. It consists of a su
 - The scaling factors `SCALE` and `OFFSET` are set during initialization and cannot be changed at runtime, as they are not updated via separate events.
 - The use of a D flip-flop ensures that the validity state remains stable until the next valid data value is processed.
 
-``` - This function block is designed for use in the LogiBUS environment (package `logiBUS::signalprocessing::fieldbus`).
+`` - This function block is designed for use in the LogiBUS environment (package `logiBUS::signalprocessing::fieldbus`).
 
 ## State Overview
 

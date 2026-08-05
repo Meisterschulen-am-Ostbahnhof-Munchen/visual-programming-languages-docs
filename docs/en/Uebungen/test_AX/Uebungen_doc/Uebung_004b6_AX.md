@@ -51,7 +51,7 @@ The diagram shows the following connections (from the SubAppNetwork configuratio
 - This event reaches the clock input of the **AX_T_FF**, which then toggles its output state.
 - The new state is output at `Output_Q1`.
 
-``` This combination allows an output to be switched on and off toggled using a single digital input – but only as long as the input is active (enabled). As soon as the input goes to FALSE, no further clock pulses are allowed through, and the output retains its last state.
+`` This combination allows an output to be switched on and off toggled using a single digital input – but only as long as the input is active (enabled). As soon as the input goes to FALSE, no further clock pulses are allowed through, and the output retains its last state.
 
 ## Summary
 

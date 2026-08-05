@@ -45,7 +45,7 @@ The data output `Q.D1` is set to `TRUE`, and the event `Q.E1` is triggered.
 
 Upon a subsequent `S_R.RESET` event, the module transitions to the RESET state.
 
-` ... - **RESET State**:
+... - **RESET State**:
 
 The data output `Q.D1` is set to `FALSE`, triggering the event `Q.E1`.
 

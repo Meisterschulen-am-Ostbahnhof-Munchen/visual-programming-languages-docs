@@ -82,7 +82,7 @@ The internal element `F_SINT_TO_BYTE` is also stateless.
 ## Comparison with Similar Function Blocks
 - **AS_TO_WORD / AS_TO_INT**: Convert SINT to WORD or INT; AS_TO_AB specializes in BYTE.
 
-``` - **Direct use of `F_SINT_TO_BYTE`**: The composite function block offers the advantage that the conversion is performed via adapter ports, eliminating the need for manual wiring of event and data flows.
+`` - **Direct use of `F_SINT_TO_BYTE`**: The composite function block offers the advantage that the conversion is performed via adapter ports, eliminating the need for manual wiring of event and data flows.
 
 - **Other adapter converters**: If similar adapter converters exist in the library (e.g., `AB_TO_AS`), this function block complements the unidirectional conversion in the opposite direction.
 

@@ -37,7 +37,7 @@ Two instances of this type are created in `Uebung_003a_AX`:
 
 The logic is hidden within the sub-application ("information hiding"). The main application only defines the parameter connections. The structure in `Uebung_003a_AX.SUB` is therefore extremely compact:
 
-``````xml
+`````xml
 <SubApp Name="F1" Type="Uebungen::Uebung_003a_AX_sub">
 <Parameter Name="Input" Value="Input_I1"/>
 <Parameter Name="Output" Value="Output_Q1"/>

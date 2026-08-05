@@ -34,7 +34,7 @@ The logic of the exercise is structured as follows:
 
 2. The signal from **I2** is **negated** (inverted). This is done via a **Negate Connection** (attribute `Negated = "true"`) on the data connection between `DigitalInput_I2.IN` and `AND_2_BOOL.IN2`.
 
-``` *(Negation is only possible with Boolean data types.)*
+`` *(Negation is only possible with Boolean data types.)*
 
 3. The function block `AND_2_BOOL` combines the signal from **I1** (to `IN1`) with the negated signal from **I2** (to `IN2`) using an AND operation.
 
@@ -48,7 +48,7 @@ Each of the two input function blocks triggers the event `IND` when a new value 
 - The output block `DigitalOutput_Q1` receives a command to update its output from the `CNF` output of the **AND_2_BOOL** via its `REQ` event.
 
 **Logic Summary:**
-`Q1 = I1 AND (NOT I2)`
+Q1 = I1 AND (NOT I2)`
 
 **Learning Objectives:**
 

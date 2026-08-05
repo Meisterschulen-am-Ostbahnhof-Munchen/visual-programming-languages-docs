@@ -20,7 +20,7 @@ Not applicable to structured data types. `ST32B` has no data outputs; its elemen
 Not applicable to structured data types. `ST32B` has no adapters.
 
 ## Functionality
-`ST32B` is a passive data type and does not implement any active functionality or logic. It serves merely as a blueprint (schema) for organizing and storing 32-byte values under a single logical name. Instances of this data type can be declared and used in other function blocks or data types to store or transfer data in a structured manner.
+ST32B` is a passive data type and does not implement any active functionality or logic. It serves merely as a blueprint (schema) for organizing and storing 32-byte values under a single logical name. Instances of this data type can be declared and used in other function blocks or data types to store or transfer data in a structured manner.
 
 The individual bytes are named as follows and can be accessed directly:
 

@@ -29,7 +29,7 @@ No adapter interfaces are available.
 ## Functionality
 Upon arrival of the REQ event, the function block performs a bitwise AND operation on all five inputs. The result is output at the OUT data output, and simultaneously, the CNF event is sent to confirm the completion of the calculation.
 
-``` The operation is performed separately for each bit position:
+`` The operation is performed separately for each bit position:
 
 OUT[i] = IN1[i] ∧ IN2[i] ∧ IN3[i] ∧ IN4[i] ∧ IN5[i]
 

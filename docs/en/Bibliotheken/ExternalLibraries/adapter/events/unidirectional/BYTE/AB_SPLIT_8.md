@@ -33,17 +33,17 @@ No direct data outputs. Outgoing information is provided via the plug adapters.
 
 | `OUT2` | `adapter::types::unidirectional::AB` | Plug | Second output adapter. |
 
-`OUT3` | `adapter::types::unidirectional::AB` | Plug | Third output adapter. |
+OUT3` | `adapter::types::unidirectional::AB` | Plug | Third output adapter. |
 
-`OUT4` | `adapter::types::unidirectional::AB` | Plug | Fourth output adapter. |
+OUT4` | `adapter::types::unidirectional::AB` | Plug | Fourth output adapter. |
 
-`OUT5` | `adapter::types::unidirectional::AB` | Plug | Fifth output adapter. |
+OUT5` | `adapter::types::unidirectional::AB` | Plug | Fifth output adapter. |
 
-`OUT6` | `adapter::types::unidirectional::AB` | Plug | Sixth output adapter. |
+OUT6` | `adapter::types::unidirectional::AB` | Plug | Sixth output adapter. |
 
-`OUT7` | `adapter::types::unidirectional::AB` | Plug | Seventh output adapter. |
+OUT7` | `adapter::types::unidirectional::AB` | Plug | Seventh output adapter. |
 
-`OUT8` | `adapter::types::unidirectional::AB` | Plug | Eighth Output Adapter. |
+OUT8` | `adapter::types::unidirectional::AB` | Plug | Eighth Output Adapter. |
 
 ## Functionality
 

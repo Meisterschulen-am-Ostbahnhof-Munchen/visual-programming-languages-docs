@@ -33,7 +33,7 @@ This function block has no adapter interfaces.
 ## Operation
 The operation is deterministic and event-driven. Upon each occurrence of the event `REQ`, the following logical operation is performed:
 
-`OUT = IN1 AND IN2 AND IN3 AND IN4 AND IN5 AND IN6 AND IN7 AND IN8 AND IN9 AND IN10`
+OUT = IN1 AND IN2 AND IN3 AND IN4 AND IN5 AND IN6 AND IN7 AND IN8 AND IN9 AND IN10`
 
 The result is then made available at the data output `OUT`, and the acknowledgment event `CNF` is triggered to inform subsequent blocks of the availability of the new result.
 

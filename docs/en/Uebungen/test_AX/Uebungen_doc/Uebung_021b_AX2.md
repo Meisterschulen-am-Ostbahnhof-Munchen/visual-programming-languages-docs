@@ -27,7 +27,7 @@ This exercise demonstrates the control of a simple mirror sequence using an AX f
 - **Adapter Output**: `Q`
 - **Function**: An asynchronous SR flip-flop adapter. An event on `S` sets the output `Q` to TRUE; an event on `R` resets it to FALSE. The output remains in this state until the next event.
 
-``` - **SoftKey_F2_DOWN**
+`` - **SoftKey_F2_DOWN**
 
 - **Type**: `isobus::UT::io::Softkey::Softkey_IE`
 - **Parameters**:

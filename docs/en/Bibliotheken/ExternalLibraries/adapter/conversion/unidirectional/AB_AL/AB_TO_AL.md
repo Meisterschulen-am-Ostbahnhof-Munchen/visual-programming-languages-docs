@@ -69,7 +69,7 @@ Other adapter conversion components exist, such as `WORD_TO_DWORD`, `ARRAY_TO_ST
 
 ## Conclusion
 
-`AB_TO_AL` is a simple yet useful composite building block for converting a BYTE adapter to an LWORD adapter. It reduces the modeling effort for type conversions in adapter-based networks and ensures that events are passed on synchronously with the data. Due to its clearly defined interface, it is particularly well-suited for modular and reusable automation solutions.
+AB_TO_AL` is a simple yet useful composite building block for converting a BYTE adapter to an LWORD adapter. It reduces the modeling effort for type conversions in adapter-based networks and ensures that events are passed on synchronously with the data. Due to its clearly defined interface, it is particularly well-suited for modular and reusable automation solutions.
 
 --
 

@@ -32,7 +32,7 @@ No adapter interfaces are available.
 
 Upon arrival of the REQ event, the function block performs a bitwise AND operation between the two input values IN1 and IN2. The result is output at the data output OUT, and simultaneously, the CNF event is generated to confirm execution.
 
-``` The operation is performed separately for each bit of the input values:
+`` The operation is performed separately for each bit of the input values:
 
 - Bit = 1 if both corresponding bits of the inputs are 1
 - Bit = 0 if at least one of the corresponding bits of the inputs is 0

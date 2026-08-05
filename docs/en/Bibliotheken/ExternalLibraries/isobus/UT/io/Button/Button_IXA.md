@@ -3,7 +3,7 @@
 * * * * * * * * * *
 ## Introduction
 Button_IXA is a composite function block for processing Boolean input data. The block serves as an interface for button inputs and provides standardized processing of switching states in automation systems.
-``` ![Button_IXA](Button_IXA.svg)
+`` ![Button_IXA](Button_IXA.svg)
 
 ## Interface Structure
 

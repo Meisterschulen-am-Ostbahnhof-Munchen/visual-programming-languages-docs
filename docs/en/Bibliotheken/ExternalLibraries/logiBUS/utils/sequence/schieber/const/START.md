@@ -6,7 +6,7 @@
 The `START` constant declaration defines a set of integer constants (of type `UINT`) for use in control programs. These constants represent specific states typically used in sequence controls, such as for sliders. They improve code readability and maintainability by replacing numeric values with meaningful names.
 
 ## Interface Structure
-`START` is a **GlobalConstants** declaration and not a function block. Therefore, it does not have event- or data-flow-based interfaces such as inputs or outputs. Instead, it defines global, constant values that can be referenced within other function blocks or programs.
+START` is a **GlobalConstants** declaration and not a function block. Therefore, it does not have event- or data-flow-based interfaces such as inputs or outputs. Instead, it defines global, constant values that can be referenced within other function blocks or programs.
 
 ### **Event Inputs**
 *Not applicable.* This declaration does not contain any event inputs.

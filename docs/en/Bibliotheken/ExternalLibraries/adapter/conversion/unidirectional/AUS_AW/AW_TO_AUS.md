@@ -39,7 +39,7 @@ None.
 
 2. Simultaneously, the data value from `AW_IN.D1` (type `WORD`) is forwarded to the data input `Convert.IN`.
 
-``` 3. After conversion, the result (`USINT`) is provided at data output `Convert.OUT` and transferred to data port `AUS_OUT.D1`.
+`` 3. After conversion, the result (`USINT`) is provided at data output `Convert.OUT` and transferred to data port `AUS_OUT.D1`.
 
 4. The conversion block signals completion via its event `CNF`, which directly activates the event output `AUS_OUT.E1`.
 
@@ -65,7 +65,7 @@ The function block does not have its own state machine. The sequence is entirely
 
 ## Conclusion
 
-`AW_TO_AUS` is a simple yet useful composite function block for converting `WORD` adapter signals to `USINT` adapter signals. It utilizes a proven IEC 61131-3 standard function and offers a clean, adapter-based interface. The function block requires no configuration and integrates seamlessly into event-driven processes. It is particularly suitable for applications where fast and reliable data type conversion without additional logic is desired.
+AW_TO_AUS` is a simple yet useful composite function block for converting `WORD` adapter signals to `USINT` adapter signals. It utilizes a proven IEC 61131-3 standard function and offers a clean, adapter-based interface. The function block requires no configuration and integrates seamlessly into event-driven processes. It is particularly suitable for applications where fast and reliable data type conversion without additional logic is desired.
 
 ---
 

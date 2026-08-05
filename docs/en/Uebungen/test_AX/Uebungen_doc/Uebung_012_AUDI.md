@@ -22,7 +22,7 @@ This exercise demonstrates the acquisition of a numeric value via the isobus I/O
 - `DEFAULT_VALUE` = `UDINT#0`
 - **Functionality**: Stores the value present at its adapter input persistently in non-volatile memory under the key `KEY_I1_STORE`. If no value is stored, the default value `0` is used. The stored value is made available via the adapter output.
 
-``` - **Q_NumericValue_AUDI**
+`` - **Q_NumericValue_AUDI**
 
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
 - **Parameters**:

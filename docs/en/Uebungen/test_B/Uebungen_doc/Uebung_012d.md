@@ -43,7 +43,7 @@ The flow is as follows:
 - Simultaneously, the data value from `InputNumber_I3.rPhys` is transferred via a data connection to the NVS data input `VALUE`.
 - The NVS stores the value under the key `KEY_I1_STORE` in non-volatile memory.
 
-`` `\` ` ... 2. **Initialization and Data Reading**
+` `\` ` ... 2. **Initialization and Data Reading**
 
 - After starting (or after initialization), the NVS block generates an event at output `INITO`.
 - This event is fed back to input `GET` of the NVS via an event connection (self-triggering).

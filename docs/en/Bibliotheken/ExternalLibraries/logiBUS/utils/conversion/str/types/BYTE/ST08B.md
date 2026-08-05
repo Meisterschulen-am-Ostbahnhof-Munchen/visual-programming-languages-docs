@@ -3,7 +3,7 @@
 ## Introduction
 The data type `ST08B` is a structured data structure that sequentially groups exactly eight bytes (BYTE). It primarily serves as a container for the efficient grouping and transport of eight individual byte values within an IEC 61499-based control system. This data type is particularly useful for handling raw data, protocol frames, or for the structured transfer of parameterized data blocks between function blocks.
 ## Interface Structure
-`ST08B` is a data type and, as such, does not have event-driven inputs or outputs in the sense of a function block. Its structure is defined exclusively by its data members.
+ST08B` is a data type and, as such, does not have event-driven inputs or outputs in the sense of a function block. Its structure is defined exclusively by its data members.
 ## **Data Inputs**
 Not applicable. This section is intended for function blocks.
 

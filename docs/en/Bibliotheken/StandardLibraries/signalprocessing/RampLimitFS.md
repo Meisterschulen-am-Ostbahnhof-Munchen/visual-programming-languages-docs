@@ -72,7 +72,7 @@ The function block has no internal state. Each event immediately triggers the co
 ## ⚖️ Comparison with Similar Function Blocks
 - **Comparison with Standard Ramp Functions**:
 
-`RampLimitFS` additionally offers the option to switch between fast and slow step sizes and assign direct values (min/max).
+RampLimitFS` additionally offers the option to switch between fast and slow step sizes and assign direct values (min/max).
 
 - **Flexibility**:
 

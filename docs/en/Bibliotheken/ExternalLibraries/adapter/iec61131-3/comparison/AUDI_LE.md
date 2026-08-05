@@ -95,4 +95,4 @@ The FB does not have its own directed state machine, as it operates purely combi
 
 ## Conclusion
 
-`AUDI_LE` is a specialized comparison block that, thanks to its adapter interfaces, is particularly well-suited for modular, event-driven automation solutions. It offers clear, standardized logic for the "less than or equal to" condition and, due to its composite structure, can be easily integrated into custom applications.
+AUDI_LE` is a specialized comparison block that, thanks to its adapter interfaces, is particularly well-suited for modular, event-driven automation solutions. It offers clear, standardized logic for the "less than or equal to" condition and, due to its composite structure, can be easily integrated into custom applications.

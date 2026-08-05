@@ -75,7 +75,7 @@ The function block operates internally with two sub-functions:
 
 6. The flip-flop output `Q` is output to the adapter `VALID.D1`, generating an event `VALID.E1`.
 
-`` `` ``VALID`` ``Q` ``VALID.D1` ``VALID.E1` ... This ensures that the output value and the validity signal are always updated consistently and synchronously.
+` `` ``VALID`` ``Q` ``VALID.D1` ``VALID.E1` ... This ensures that the output value and the validity signal are always updated consistently and synchronously.
 
 ## Technical Features
 - **Adapter-Based Interface**: The function block uses standardized unidirectional adapters (`AULI`, `AX`), enabling loose coupling and reusability.
@@ -102,7 +102,7 @@ A state diagram for the entire function block is not required, as the behavior i
 - **Adapter-Based Function Blocks**: Specifically designed for use in 4diac environments that rely on adapter communication; other function blocks with direct ports are less flexible.
 
 ## Conclusion
-`AULI_FIELDBUS_ULINT_TO_SIGNAL` is a robust, adapter-based function block for the reliable transmission of a ULINT fieldbus signal with validity indication. The combination of converter and flip-flop ensures synchronized and reliable signal output. Its clear interface structure makes it particularly suitable for modular automation solutions that rely on loosely coupled adapters.
+AULI_FIELDBUS_ULINT_TO_SIGNAL` is a robust, adapter-based function block for the reliable transmission of a ULINT fieldbus signal with validity indication. The combination of converter and flip-flop ensures synchronized and reliable signal output. Its clear interface structure makes it particularly suitable for modular automation solutions that rely on loosely coupled adapters.
 
 ---
 

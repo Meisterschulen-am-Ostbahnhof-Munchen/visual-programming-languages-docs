@@ -23,9 +23,9 @@ None.
 
 |-----|----------|------|--------------|
 
-`adapter::types::unidirectional::AUDI` | Socket (Input) | `IN` | Input adapter that receives the signal to be distributed. |
+adapter::types::unidirectional::AUDI` | Socket (Input) | `IN` | Input adapter that receives the signal to be distributed. |
 
-`adapter::types::unidirectional::AUDI` | Plug (Output) | `OUT1` .. `OUT8` | Eight output adapters, each providing the identical signal of the input. |
+adapter::types::unidirectional::AUDI` | Plug (Output) | `OUT1` .. `OUT8` | Eight output adapters, each providing the identical signal of the input. |
 
 ## Functionality
 The module forwards the **AUDI** adapter signal present at socket `IN` unchanged to all eight plugs (`OUT1` to `OUT8`).

@@ -47,13 +47,13 @@ None (state transitions are controlled exclusively via events).
 
 | `DO_S2` | adapter::types::unidirectional::AX | Output active when `State_02` is active |
 
-`DO_S3` | adapter::types::unidirectional::AX | Output active when `State_03` is active |
+DO_S3` | adapter::types::unidirectional::AX | Output active when `State_03` is active |
 
-`DO_S4` | adapter::types::unidirectional::AX | Output active when `State_04` is active |
+DO_S4` | adapter::types::unidirectional::AX | Output active when `State_04` is active |
 
-`DO_S5` | adapter::types::unidirectional::AX | Output active when `State_05` is active |
+DO_S5` | adapter::types::unidirectional::AX | Output active when `State_05` is active |
 
-`DO_S6` | adapter::types::unidirectional::AX | Output active when `State_06` is active |
+DO_S6` | adapter::types::unidirectional::AX | Output active when `State_06` is active |
 
 | `DO_S7` | adapter::types::unidirectional::AX | Output active when `State_07` is active |
 
@@ -108,7 +108,7 @@ The function block operates on the principle of an event-driven step sequence. A
 
 | `sState_06` | Sixth Step | Sets `DO_S6.D1` to `DI_S6.D1`; `STATE_NR=6` |
 
-`sState_07` | Seventh Step | Sets `DO_S7.D1` to `DI_S7.D1`; `STATE_NR=7` |
+sState_07` | Seventh Step | Sets `DO_S7.D1` to `DI_S7.D1`; `STATE_NR=7` |
 
 | `sState_08` | Eighth Step | Sets `DO_S8.D1` to `DI_S8.D1`; `STATE_NR=8` |
 

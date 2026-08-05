@@ -36,7 +36,7 @@ The function block internally uses the IEC 61131-3 converter `F_BOOL_TO_DINT`. A
 
 The event chain is thus fully looped:
 
-`AX_IN.E1` → Conversion → `ADI_OUT.E1`.
+AX_IN.E1` → Conversion → `ADI_OUT.E1`.
 
 ## Technical Features
 - **Pure Data Conversion:** The function block does not perform any state logic or time delay – every event activation at the input immediately generates an output.

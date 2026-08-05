@@ -17,7 +17,7 @@ This exercise implements a **down counter** according to IEC 61131-3 (function b
 - Parameters: `QI` = `TRUE`, `Input` = `Input_I2` (physical input I2)
 - Function: Digital input for the load command.
 
-``` - **Output_Q1** (Type: `logiBUS::io::DQ::logiBUS_QX`)
+`` - **Output_Q1** (Type: `logiBUS::io::DQ::logiBUS_QX`)
 
 - Parameters: `QI` = `TRUE`, `Output` = `Output_Q1` (physical output Q1)
 - Function: Digital output that outputs the `Q` value of the counter to a physical line.

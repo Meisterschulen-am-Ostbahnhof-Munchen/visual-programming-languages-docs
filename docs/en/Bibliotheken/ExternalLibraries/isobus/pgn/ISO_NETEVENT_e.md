@@ -4,7 +4,7 @@
 ## Introduction
 The global constant file `ISO_NETEVENT_e` defines an enumeration of event types for network management in an ISOBUS-compatible system. It provides named, integer constants that represent various state changes and events in the network, such as adding or removing devices or address conflicts. Using these constants improves the readability and maintainability of the source code.
 ## Interface Structure
-`ISO_NETEVENT_e` is a **global constant file** and not a function block. Therefore, it does not have event or data interfaces in the conventional sense. Instead, it provides a collection of constants (`VAR_GLOBAL CONSTANT`) that can be used system-wide.
+ISO_NETEVENT_e` is a **global constant file** and not a function block. Therefore, it does not have event or data interfaces in the conventional sense. Instead, it provides a collection of constants (`VAR_GLOBAL CONSTANT`) that can be used system-wide.
 
 ### **Data Inputs**
 *Not applicable.* This resource defines constants, not inputs.

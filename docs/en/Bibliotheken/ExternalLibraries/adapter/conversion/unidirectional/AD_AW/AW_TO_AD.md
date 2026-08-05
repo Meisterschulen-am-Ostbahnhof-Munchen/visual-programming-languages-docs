@@ -68,7 +68,7 @@ Unlike a pure data converter, `AW_TO_AD` also considers event forwarding and can
 
 ## Conclusion
 
-`AW_TO_AD` is a simple yet useful composite function block for converting adapters from WORD to DWORD. It enables quick and clean adaptation of interfaces in 4diac projects without requiring the writing of custom conversion logic. Due to its statelessness and direct passthrough, it is particularly suitable for unidirectional connections in existing automation solutions.
+AW_TO_AD` is a simple yet useful composite function block for converting adapters from WORD to DWORD. It enables quick and clean adaptation of interfaces in 4diac projects without requiring the writing of custom conversion logic. Due to its statelessness and direct passthrough, it is particularly suitable for unidirectional connections in existing automation solutions.
 
 ---
 

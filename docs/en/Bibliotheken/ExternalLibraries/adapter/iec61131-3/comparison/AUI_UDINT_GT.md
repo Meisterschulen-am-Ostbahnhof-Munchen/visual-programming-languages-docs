@@ -87,7 +87,7 @@ Input and output data are not cached; the function block operates in pure combin
 This block series represents the complete set of six comparison operators and differs only in the selected comparison function. The interface is identical, allowing for interchangeability without changing the connections.
 
 ## Conclusion
-`AUI_UDINT_GT` is a specialized yet flexible comparison block for industrial applications. The use of adapters simplifies integration into modular automation systems and makes the interface reusable. Thanks to its IEC 61131-3 compliance and simple internal structure, it is particularly well-suited for clear, maintainable control logic.
+AUI_UDINT_GT` is a specialized yet flexible comparison block for industrial applications. The use of adapters simplifies integration into modular automation systems and makes the interface reusable. Thanks to its IEC 61131-3 compliance and simple internal structure, it is particularly well-suited for clear, maintainable control logic.
 
 ---
 

@@ -48,7 +48,7 @@ When triggered by the `REQ` event, the block evaluates the value at the input `I
 ### **Operating**
 
 ### **Operating**
-`#** ... * In all other cases (i.e., by default with `FALSE`), the output `QB` is set to the constant `quarter::COMMAND_DISABLE`.
+#** ... * In all other cases (i.e., by default with `FALSE`), the output `QB` is set to the constant `quarter::COMMAND_DISABLE`.
 
 Immediately after the assignment, the `CNF` event is output along with the new value of `QB`.
 

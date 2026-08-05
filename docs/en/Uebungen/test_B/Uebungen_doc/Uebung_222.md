@@ -17,7 +17,7 @@ The exercise contains the following function blocks directly at the top level (n
 - Data outputs: `QU` (up counter reaches PV), `QD` (down counter reaches 0), `CV` (current counter value)
 - **Functionality**: The function block operates as a forward/backward counting timer with a 64-bit counter (`LINT`). The counter is incremented on each rising edge at `CU` and decremented on `CD`. The counter is reset to 0 via `R` and loaded to the value of `PV` via `LD`. `QU` is active when `CV >= PV` is active, and `QD` is active when `CV <= 0` is active.
 
-`QU` is active when `CV >= PV` is active. - **Input_CU** (Type: `logiBUS::io::DI::logiBUS_IX`)
+QU` is active when `CV >= PV` is active. - **Input_CU** (Type: `logiBUS::io::DI::logiBUS_IX`)
 
 - Parameters: `QI` = `TRUE`, `Input` = `Input_I1`
 - Output: `IN` (digital value), `IND` (event on edge)
@@ -52,7 +52,7 @@ Control is achieved via four digital inputs (logiBUS) that function as pushbutto
 
 Each input block generates an event (`IND`) on a rising edge. These events are switched to the event input `REQ` of the counter block `FB_CTUD_LINT`. The counter then responds to the corresponding data input (`CU`, `CD`, `R`, `LD`).
 
-``` The data connections transmit the logical states of the buttons:
+`` The data connections transmit the logical states of the buttons:
 
 - `Input_CU.IN` → `FB_CTUD_LINT.CU`
 - `Input_CD.IN` → `FB_CTUD_LINT.CD`

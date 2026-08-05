@@ -58,7 +58,7 @@ This exercise is used as a sub-app within a larger application, typically an ISO
 
 2. The current PTO speed is sent as an AUI value via `IA_RPTO.SPEED` to the input `IN0` of the selector `AUI_AX_SEL_AUI`.
 
-``` 3. Simultaneously, the timeout flag `IA_RPTO.TIMEOUT` is applied to the selector's gate input `G`. Under normal operation, `TIMEOUT = FALSE` is present, causing the selector to pass through the value of `IN0` (the measured rotational speed).
+`` 3. Simultaneously, the timeout flag `IA_RPTO.TIMEOUT` is applied to the selector's gate input `G`. Under normal operation, `TIMEOUT = FALSE` is present, causing the selector to pass through the value of `IN0` (the measured rotational speed).
 
 4. In the event of a timeout (e.g., due to sensor failure), `TIMEOUT = TRUE` is present. The selector then switches to the second input, `IN1`, which is set to the constant value 0 via `CONST_ZERO`.
 

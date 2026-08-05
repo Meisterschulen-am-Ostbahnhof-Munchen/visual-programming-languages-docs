@@ -80,7 +80,7 @@ The flow within this sub-application can be described as follows:
 
 ## Summary
 
-`Uebung_039a_sub_Outputs` represents a complete function block that links a softkey to a digital output. It offers integrated toggle functionality as well as automatic visual updates of the button on the display. The additional `SET` and `RESET` inputs allow for flexible integration into higher-level control logic.
+Uebung_039a_sub_Outputs` represents a complete function block that links a softkey to a digital output. It offers integrated toggle functionality as well as automatic visual updates of the button on the display. The additional `SET` and `RESET` inputs allow for flexible integration into higher-level control logic.
 
 ## 🛠️ Related Exercises
 * [Exercise_039a](Uebung_039a.md)]

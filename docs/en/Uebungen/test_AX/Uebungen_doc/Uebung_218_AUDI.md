@@ -9,7 +9,7 @@ This exercise implements an IEC 61131-3 compliant down counter (AUDI_FB_CTD) wit
 - **AUDI_UDINT_TO_UDI** – Type: `adapter::conversion::unidirectional::AUDI_UDINT_TO_UDI`
 - Converts a UDINT value (here fixed to `UDINT#10`) and outputs it at its output `AUDI_OUT`. This value is used as the counter's preset value (`PV`).
 
-``` - **Input_CD** – Type: `logiBUS::io::DI::logiBUS_IXA`
+`` - **Input_CD** – Type: `logiBUS::io::DI::logiBUS_IXA`
 
 - Digital input connected to `Input_I1`. When TRUE, an event is generated at output `IN`, which decrements the counter.
 - **Input_LD** – Type: `logiBUS::io::DI::logiBUS_IXA`
@@ -35,7 +35,7 @@ This exercise implements an IEC 61131-3 compliant down counter (AUDI_FB_CTD) wit
 
 6. The current counter reading (`CV`) is sent via an adapter to the numeric terminal output `Q_NumericValue_AUDI.u32NewValue` and displayed on the terminal.
 
-``` **Learning Objectives:**
+`` **Learning Objectives:**
 
 - Understanding the IEC 61131-3 Down Counter (CTD) as an adapter block.
 - Working with event and adapter connections in 4diac.

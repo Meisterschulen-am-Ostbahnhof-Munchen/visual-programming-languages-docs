@@ -41,9 +41,9 @@ The function block **ILOCK_FB_SR_AX** implements a set-dominant (set-priority) b
 
 | `RESET.D1` | BOOL | Reset input (active when SET1=0) |
 
-`ILOCK_IN.DO1` | BOOL | Data from the parent interlock stage (propagation signal) |
+ILOCK_IN.DO1` | BOOL | Data from the parent interlock stage (propagation signal) |
 
-`ILOCK_OUT.DI1` | BOOL | Data from the child interlock stage (feedback) |
+ILOCK_OUT.DI1` | BOOL | Data from the child interlock stage (feedback) |
 
 ### **Data Outputs**
 
@@ -51,9 +51,9 @@ The function block **ILOCK_FB_SR_AX** implements a set-dominant (set-priority) b
 
 |-------|-----|--------------|
 
-`Q1.D1` | BOOL | Latch output (set by Set or Interlock) |
+Q1.D1` | BOOL | Latch output (set by Set or Interlock) |
 
-`ILOCK_IN.DI1` | BOOL | Propagated Set signal to the parent stage |
+ILOCK_IN.DI1` | BOOL | Propagated Set signal to the parent stage |
 
 | `ILOCK_OUT.DO1` | BOOL | Propagated Set signal to the subordinate stage |
 
@@ -78,7 +78,7 @@ The function block implements an algorithm that performs the following calculati
 
 1. **Q1.D1 (Latch Output):**
 
-`Q1.D1 := SET1.D1 OR ILOCK_IN.DO1 OR ILOCK_OUT.DI1 OR ((NOT RESET.D1) AND Q1.D1)`
+Q1.D1 := SET1.D1 OR ILOCK_IN.DO1 OR ILOCK_OUT.DI1 OR ((NOT RESET.D1) AND Q1.D1)`
 
 - The output is set if **SET1.D1**, **ILOCK_IN.DO1** (from above), or **ILOCK_OUT.DI1** (from below) has the value `TRUE`.
 - If no set signal is active and **RESET.D1 = FALSE**, the current value of Q1 is retained (memory behavior).
@@ -86,13 +86,13 @@ The function block implements an algorithm that performs the following calculati
 
 2. **ILOCK_IN.DI1 (Propagation Upwards):**
 
-`ILOCK_IN.DI1 := SET1.D1 OR ILOCK_OUT.DI1`
+ILOCK_IN.DI1 := SET1.D1 OR ILOCK_OUT.DI1`
 
 - The set signal is propagated upwards when either its own set input or the signal of the lower stage is active.
 
 3. **ILOCK_OUT.DO1 (Propagation Downwards):**
 
-`ILOCK_OUT.DO1 := SET1.D1 OR ILOCK_IN.DO1`
+ILOCK_OUT.DO1 := SET1.D1 OR ILOCK_IN.DO1`
 
 - The set signal is propagated downwards when either its own set input or the signal of the upper stage is active.
 

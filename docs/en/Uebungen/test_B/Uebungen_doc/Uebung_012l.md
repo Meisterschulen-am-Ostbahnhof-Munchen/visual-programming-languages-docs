@@ -57,7 +57,7 @@ The `NVS` block simultaneously generates an event at output `GETO`, which is con
 
 4. **Note:** After saving, ``Q_StringValue`` is **not** automatically updated. The value is only written back to the ISOBUS variable at startup. This is intentional, as the value is already visible in the terminal.
 
-``NVS``.
+`NVS``.
 ### Data Connections Overview
 
 - **Events**:

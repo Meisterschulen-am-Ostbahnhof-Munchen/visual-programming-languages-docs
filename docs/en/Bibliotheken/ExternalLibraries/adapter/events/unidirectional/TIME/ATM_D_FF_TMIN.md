@@ -80,4 +80,4 @@ After the lock expires, the function block returns to the **Ready** state.
 This component combines the properties of a flip-flop with an adjustable minimum delay time and is therefore particularly suitable for time-critical control tasks.
 
 ## Conclusion
-`ATM_D_FF_TMIN` is a specialized D-type flip-flop component that guarantees the minimum dwell time between two output events. The use of adapters simplifies integration into modular control applications, while the adjustable delay time offers high flexibility for different physical constraints. It is a valuable addition to the IEC 61499 library for discrete-time signal processing.
+ATM_D_FF_TMIN` is a specialized D-type flip-flop component that guarantees the minimum dwell time between two output events. The use of adapters simplifies integration into modular control applications, while the adjustable delay time offers high flexibility for different physical constraints. It is a valuable addition to the IEC 61499 library for discrete-time signal processing.

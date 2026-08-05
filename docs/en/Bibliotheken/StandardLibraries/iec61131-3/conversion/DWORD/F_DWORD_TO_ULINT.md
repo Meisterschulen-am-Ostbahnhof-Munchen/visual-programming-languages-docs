@@ -45,7 +45,7 @@ This function block has no internal state. Execution occurs exclusively upon the
 ## ⚖️ Comparison with Similar Function Blocks
 - Similar function blocks such as `F_WORD_TO_UINT` or `F_BYTE_TO_USINT` perform similar conversions, but for different data types.
 
-``` - `F_DWORD_TO_ULINT` specializes in converting `DWORD` to `ULINT` and offers no additional functionality.
+`` - `F_DWORD_TO_ULINT` specializes in converting `DWORD` to `ULINT` and offers no additional functionality.
 
 ## Conclusion
 The `F_DWORD_TO_ULINT` function block is a simple and efficient tool for type conversion in IEC 61131-3-based control systems. Its clear interface and direct operation make it a reliable component in automation projects.

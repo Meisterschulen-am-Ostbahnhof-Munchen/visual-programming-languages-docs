@@ -38,7 +38,7 @@ Pressing the button (defined as `Input_I1`) with repeat detection generates the 
 
 2. **Input Reading**
 
-`logiBUS_IBA` reads the current state of the digital input and provides it as AB format via the adapter output `IN`.
+logiBUS_IBA` reads the current state of the digital input and provides it as AB format via the adapter output `IN`.
 
 3. **Format Conversion**
 
@@ -52,7 +52,7 @@ The converted value (AUDI format) is provided at output `AUDI_OUT` by `AB_TO_AUD
 
 - `Source="AB_TO_AUDI.AUDI_OUT"` → `Destination="Q_NumericValue_AUDI.u32NewValue"`
 
-`Q_NumericValue_AUDI` then updates the numeric object stored on the ISOBUS VT with the ID `OutputNumber_N1`.
+Q_NumericValue_AUDI` then updates the numeric object stored on the ISOBUS VT with the ID `OutputNumber_N1`.
 
 **Summary Data Flow**:
 

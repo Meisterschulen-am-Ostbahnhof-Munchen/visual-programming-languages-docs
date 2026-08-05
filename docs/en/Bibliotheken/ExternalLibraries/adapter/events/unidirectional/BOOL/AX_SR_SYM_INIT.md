@@ -58,7 +58,7 @@ The function block has four main states: `START`, `Init`, `DeInit`, `SET`, and `
 - If `Q_INIT = TRUE` is present, the system switches to the `SET` state (the flip-flop is set).
 - If `Q_INIT = FALSE` is present, the system switches to the `RESET` state (the flip-flop is reset).
 
-``` - **`DeInit`** – Activated when `INIT` and `QI = FALSE` occur (from states `SET` or `RESET`). The algorithm `deInitialize` sets `QO := FALSE`. Afterwards, the state reverts to `START`.
+`` - **`DeInit`** – Activated when `INIT` and `QI = FALSE` occur (from states `SET` or `RESET`). The algorithm `deInitialize` sets `QO := FALSE`. Afterwards, the state reverts to `START`.
 
 - **`SET`** – Reached by the event `S` (from `RESET` or after initialization with `Q_INIT=TRUE`). The algorithm `SET` sets `QO := QI` and writes the value `TRUE` to the adapter output `Q.D1` **only if `QI = TRUE`**. A subsequent `S` has no effect as long as the state `SET` is active.
 - **`RESET`** – This is reached by the event `R` (from `SET` or after initialization with `Q_INIT=FALSE`). The algorithm ``RESET`` sets ``QO := QI`` and writes the value ``FALSE`` to ``Q.D1`` **only if ``QI = TRUE``**. A subsequent ``R`` has no effect.

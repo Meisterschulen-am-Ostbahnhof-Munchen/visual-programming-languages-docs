@@ -51,4 +51,4 @@ This function block does not have a state machine. Its functionality is limited 
 Simple type converters (e.g., `DINT_TO_LINT`) usually operate at the data level without event forwarding. The `ADI_TO_ALI` block, on the other hand, encapsulates events and data in an adapter interface and is therefore particularly suitable for modular, event-driven architectures. Compared to manual conversion over the network, it reduces complexity and increases system readability.
 
 ## Conclusion
-`ADI_TO_ALI` is a minimal yet effective block for adapting the data width between DINT and LINT adapters. Its simple pass-through logic and automatic type conversion make it a useful tool for bridging integer types in IEC 61499 systems. Compliance with the standard and licensing under EPL 2.0 ensure open usability and interoperability.
+ADI_TO_ALI` is a minimal yet effective block for adapting the data width between DINT and LINT adapters. Its simple pass-through logic and automatic type conversion make it a useful tool for bridging integer types in IEC 61499 systems. Compliance with the standard and licensing under EPL 2.0 ensure open usability and interoperability.

@@ -36,9 +36,9 @@ All FBs used are described below.
 
 This function block implements an edge-triggered down counter. A positive pulse on CD decrements CV by 1; a low pulse sets CV to the value in PV. Output Q becomes TRUE as soon as CV reaches 0.
 
-`Q` (BOOL) – TRUE when counter reading = 0
+Q` (BOOL) – TRUE when counter reading = 0
 
-`CV` (UDINT) – current counter reading
+CV` (UDINT) – current counter reading
 ... 2. **Input_CD** (Digital Input I1)
 
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
@@ -53,7 +53,7 @@ This function block implements an edge-triggered down counter. A positive pulse 
 
 Provides the physical digital input I1 (e.g., push button or sensor) in the system. The IND event is triggered when the state changes.
 
-``` 3. **Input_LD** (Digital Input I2)
+`` 3. **Input_LD** (Digital Input I2)
 
 - **Type**: `logiBUS::io::DI::logiBUS_IX`
 - **Parameters**:
@@ -67,7 +67,7 @@ Provides the physical digital input I1 (e.g., push button or sensor) in the syst
 
 Identical to Input_CD, but connected to physical input I2 – serves as a load pulse for the counter.
 
-``` 4. **Output_Q1** (Digital Output Q1)
+`` 4. **Output_Q1** (Digital Output Q1)
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**:
@@ -111,9 +111,9 @@ The flow is controlled by the event and data connections in the SubAppNetwork:
 - The counter output `Q` (BOOL) is connected to the data input `OUT` of `Output_Q1`.
 - The counter output `CV` (UDINT) is connected to the data input `lrPhys` of `Q_NumericValue_PHYS_LREAL`.
 
-`` ``Input_CD.IN`` is connected to the data input `lrPhys` of `Q_NumericValue_PHYS_LREAL`.
+` ``Input_CD.IN`` is connected to the data input `lrPhys` of `Q_NumericValue_PHYS_LREAL`.
 
-`` ``Input_LD.IN`` is connected to the data input qzmsdocs000058 ... The two comments in the network indicate that the normal output (Q) could also be used as an alternative, and that UDINT can be interpreted as LREAL without explicit conversion (an implicit type conversion occurs internally).
+` ``Input_LD.IN`` is connected to the data input qzmsdocs000058 ... The two comments in the network indicate that the normal output (Q) could also be used as an alternative, and that UDINT can be interpreted as LREAL without explicit conversion (an implicit type conversion occurs internally).
 
 ## Summary
 - **Learning Objectives**: To learn and apply the IEC 61131-3 down counter (CTD) with UDINT counter values, as well as the integration of digital inputs/outputs and a physical terminal output.

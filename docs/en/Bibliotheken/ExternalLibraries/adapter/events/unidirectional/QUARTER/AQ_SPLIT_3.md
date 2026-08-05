@@ -70,7 +70,7 @@ The function block is stateless. It does not execute any time-dependent or seque
 
 ## Conclusion
 
-`AQ_SPLIT_3` is a simple, functional fan-out component for unidirectional AQ adapters. Thanks to its generic design and clear 1:3 distribution, it is ideally suited for all applications that need to provide an AQ signal multiple times. The absence of event and data I/O makes it lightweight and usable in any process context.
+AQ_SPLIT_3` is a simple, functional fan-out component for unidirectional AQ adapters. Thanks to its generic design and clear 1:3 distribution, it is ideally suited for all applications that need to provide an AQ signal multiple times. The absence of event and data I/O makes it lightweight and usable in any process context.
 
 ---
 

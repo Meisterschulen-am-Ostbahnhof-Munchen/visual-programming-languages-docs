@@ -19,7 +19,7 @@ This exercise demonstrates the use of the function block **ILOCK_CONFLICT_TRIP_A
 - Parameters: None
 - Function: Central interlock module. Monitors the two adapter inputs **UP_IN** and **DOWN_IN** for conflicting states. In case of a conflict, the output **TRIP_OUT** is activated. In conflict-free states, **UP_OUT** and **DOWN_OUT** are switched accordingly.
 
-``` - **Right Rotation** (Type: `logiBUS::io::DQ::logiBUS_QXA`)
+`` - **Right Rotation** (Type: `logiBUS::io::DQ::logiBUS_QXA`)
 
 - Parameters: `QI` = `TRUE`, `Output` = `Output_Q5`
 - Function: Digital output for right rotation control
@@ -44,7 +44,7 @@ This exercise demonstrates the use of the function block **ILOCK_CONFLICT_TRIP_A
 
 2. **Interlock Logic**: `ILOCK_AX` checks for conflicting requests. If both inputs are active simultaneously, the trip output **TRIP_OUT** is set. In conflict-free states, the signals are passed through to **UP_OUT** and **DOWN_OUT**.
 
-``` 3. **Signal Distribution**: The outputs of `ILOCK_AX` are forwarded to the sub-app `AX_2_TO_3`:
+`` 3. **Signal Distribution**: The outputs of `ILOCK_AX` are forwarded to the sub-app `AX_2_TO_3`:
 
 - `ILOCK_AX.UP_OUT` → `AX_2_TO_3.UP_IN`
 - `ILOCK_AX.DOWN_OUT` → `AX_2_TO_3.DOWN_IN`

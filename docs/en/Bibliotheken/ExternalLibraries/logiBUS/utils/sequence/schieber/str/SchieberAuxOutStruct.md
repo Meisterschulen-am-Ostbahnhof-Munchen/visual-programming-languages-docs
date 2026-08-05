@@ -40,7 +40,7 @@ This function block primarily serves to parameterize display elements in ISOBUS-
 Unlike function blocks, which contain active logic, `SchieberAuxOutStruct` is a pure data type. Similar STRUCTs in the same context could be, for example, `SchieberAuxInStruct` for input parameters or more general `DisplayElementStruct` blocks, which may contain additional properties such as position or size. This block is specifically tailored to the combination of image and background color.
 
 ## Conclusion
-`SchieberAuxOutStruct` is an essential, reusable data component for display applications in the 4diac IDE. By encapsulating the relevant parameters in a structured type, it promotes clear interfaces, improves code readability, and reduces parameter passing errors. Its use with initialized default values and imported constants follows established software engineering practices.
+SchieberAuxOutStruct` is an essential, reusable data component for display applications in the 4diac IDE. By encapsulating the relevant parameters in a structured type, it promotes clear interfaces, improves code readability, and reduces parameter passing errors. Its use with initialized default values and imported constants follows established software engineering practices.
 
 ---
 

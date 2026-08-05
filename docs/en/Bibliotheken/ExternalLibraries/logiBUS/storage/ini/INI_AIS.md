@@ -65,7 +65,7 @@ The function block internally contains an instance of the function block `INI` (
 - The INIT event pulse starts the INI block.
 - Upon completion, INI returns the event `INITO`, which is output externally as `INITO` of the INI_AIS. Simultaneously, the outputs `QO` and `STATUS` are also received.
 
-``` - Immediately after initialization, the `GET` service is automatically triggered in the INI block to read the value from `settings.ini`.
+`` - Immediately after initialization, the `GET` service is automatically triggered in the INI block to read the value from `settings.ini`.
 
 2. **Reading a Value (via AIS_OUT)**
 
@@ -118,4 +118,4 @@ The **INI_AIS** function block is a practical extension of the basic `INI` funct
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-```* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+``* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

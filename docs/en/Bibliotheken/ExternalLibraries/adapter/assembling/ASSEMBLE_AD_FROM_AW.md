@@ -19,7 +19,7 @@ Data is read in via the two socket adapters:
 
 | `WORD_00` | `adapter::types::unidirectional::AW` | First 16-bit word (lower-order part of the double word) |
 
-`WORD_01` | `adapter::types::unidirectional::AW` | Second 16-bit word (higher-order part of the double word) |
+WORD_01` | `adapter::types::unidirectional::AW` | Second 16-bit word (higher-order part of the double word) |
 
 Each of these adapters provides a data output (`D1`) containing the actual WORD value.
 
@@ -30,7 +30,7 @@ The output is via a plug adapter:
 
 |---------|-----|---------------|
 
-`OUT` | `adapter::types::unidirectional::AD` | Composite 32-bit Double Word (DWORD) |
+OUT` | `adapter::types::unidirectional::AD` | Composite 32-bit Double Word (DWORD) |
 
 The adapter `OUT` has one data input (`D1`) that is internally connected to the stored result.
 
@@ -85,4 +85,4 @@ The state transitions occur strictly according to the event chain.
 - **MUX_WORDS_TO_DWORD**: An alternative function block for word combination that typically operates without an adapter or edge-triggered storage.
 
 ## Conclusion
-`ASSEMBLE_AD_FROM_AW` is a specialized function block for cleanly encapsulating word-to-double-word conversion in an adapter-based environment. The combination of a pure arithmetic unit and edge-triggered storage ensures stable output values despite changing input events. This function block is particularly suitable for modular automation solutions that rely on unidirectional adapter interfaces.
+ASSEMBLE_AD_FROM_AW` is a specialized function block for cleanly encapsulating word-to-double-word conversion in an adapter-based environment. The combination of a pure arithmetic unit and edge-triggered storage ensures stable output values despite changing input events. This function block is particularly suitable for modular automation solutions that rely on unidirectional adapter interfaces.

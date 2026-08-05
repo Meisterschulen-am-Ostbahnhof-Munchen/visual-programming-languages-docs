@@ -61,4 +61,4 @@ The function block has no internal states. The output signal is always a direct 
 Unlike modules such as `AIS_MERGE_2` or `AIS_SELECT`, `AIS_SPLIT_8` does not have any selection or prioritization logic. Related variants differ only in the number of outputs (e.g., `AIS_SPLIT_2` or `AIS_SPLIT_4`). `AIS_SPLIT_8` is the maximum standard version for eight channels.
 
 ## Conclusion
-`AIS_SPLIT_8` is a simple and efficient module for replicating an AIS interface. Due to its generic nature and purely adapter-based implementation, it is ideally suited for building modular automation architectures that require distributed signal forwarding.
+AIS_SPLIT_8` is a simple and efficient module for replicating an AIS interface. Due to its generic nature and purely adapter-based implementation, it is ideally suited for building modular automation architectures that require distributed signal forwarding.

@@ -2,7 +2,7 @@
 The DIN EN 61131-3 standard uses generic data types (also called "generic" data types) to define functions and function blocks that can work with different but related data types (overloading). These types are identified by the prefix `ANY`.
 ## Hierarchy of ANY Types
 The following graphic illustrates the top-level inheritance hierarchy of generic data types according to the standard.
-```{eval-rst}
+``{eval-rst}
 .. mermaid:: Diagramm_ANY_Typen.mmd
 ## Group Descriptions
 
@@ -12,7 +12,7 @@ This group includes all predefined standard data types of the standard.
 #### ANY_MAGNITUDE (Size Types)
 Types that represent a size and are suitable for arithmetic operations. A further distinction is made between numeric types and time durations.
 
-```{eval-rst}
+``{eval-rst}
 .. mermaid:: Diagramm_ANY_MAGNITUDE.mmd
 * **ANY_NUM**: Numeric types (integers and floating-point numbers).
 * **ANY_DURATION**: Duration types (`TIME`, `LTIME`).
@@ -36,12 +36,12 @@ Types for representing bit sequences.
 #### ANY_CHARS (Character Types)
 Types for characters and strings.
 
-```{eval-rst}
+``{eval-rst}
 .. mermaid:: Diagramm_ANY_CHARS.mmd
 #### ANY_DATE (Date Types)
 Types for date and time values.
 
-```{eval-rst}
+``{eval-rst}
 .. mermaid:: Diagramm_ANY_DATE.mmd
 ### ANY_DERIVED
 

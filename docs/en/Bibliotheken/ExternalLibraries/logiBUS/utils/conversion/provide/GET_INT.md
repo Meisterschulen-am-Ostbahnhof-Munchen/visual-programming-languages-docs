@@ -50,7 +50,7 @@ The FB operates as a simple read buffer:
 
 1. Upon arrival of the **REQ** event, the **ST** algorithm `REQ` is executed:
 
-```structured text
+``structured text
 OUT := IN;
 2. The current value of the InOut variable **IN** is copied to the output **OUT**.
 

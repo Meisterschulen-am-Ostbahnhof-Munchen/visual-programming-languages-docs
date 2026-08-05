@@ -82,4 +82,4 @@ The function block does not have an explicit state machine. Its behavior is even
 
 ## Conclusion
 
-`UDINT_AUI_AX_SEL_AUI` is a specialized function block for the binary selection of two signals. The combination of adapter-based connectivity, separate value updates, and external triggering makes it particularly suitable for modular automation projects where flexible and time-decoupled signal switching is required. Despite the mixed data types, the functionality remains clear and easy to use.
+UDINT_AUI_AX_SEL_AUI` is a specialized function block for the binary selection of two signals. The combination of adapter-based connectivity, separate value updates, and external triggering makes it particularly suitable for modular automation projects where flexible and time-decoupled signal switching is required. Despite the mixed data types, the functionality remains clear and easy to use.

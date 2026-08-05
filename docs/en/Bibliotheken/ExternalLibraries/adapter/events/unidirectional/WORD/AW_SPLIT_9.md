@@ -35,13 +35,13 @@ None.
 
 | `adapter::types::unidirectional::AW` | `OUT3` | Plug (Output) | Third outgoing AW adapter. |
 
-`adapter::types::unidirectional::AW` | `OUT4` | Plug (Output) | Fourth outgoing AW adapter. |
+adapter::types::unidirectional::AW` | `OUT4` | Plug (Output) | Fourth outgoing AW adapter. |
 
-`adapter::types::unidirectional::AW` | `OUT5` | Plug (Output) | Fifth outgoing AW adapter. |
+adapter::types::unidirectional::AW` | `OUT5` | Plug (Output) | Fifth outgoing AW adapter. |
 
-`adapter::types::unidirectional::AW` | `OUT6` | Plug (Output) | Sixth outgoing AW adapter. |
+adapter::types::unidirectional::AW` | `OUT6` | Plug (Output) | Sixth outgoing AW adapter. |
 
-`adapter::types::unidirectional::AW` | `OUT7` | Plug (Output) | Seventh outgoing AW adapter. |
+adapter::types::unidirectional::AW` | `OUT7` | Plug (Output) | Seventh outgoing AW adapter. |
 
 | `adapter::types::unidirectional::AW` | `OUT8` | Plug (Output) | Eighth outgoing AW adapter. |
 

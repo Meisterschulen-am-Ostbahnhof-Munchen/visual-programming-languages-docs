@@ -26,7 +26,7 @@ This exercise teaches the use of special interlock blocks, which are used in con
 
 **Explanation of the Interlock Blocks**
 
-`ILOCK_FB_RS` is a reset-dominant RS latch with an additional adapter interface (`ILOCK_IN`, `ILOCK_OUT`). Multiple such blocks can be coupled via this adapter connection: When one latch is set, it sends a signal on the `ILOCK_OUT` adapter, which forces the other block, via `ILOCK_IN`, into the reset state. Thus, at any given time, at most one of the two outputs, `Q1`, is active.
+ILOCK_FB_RS` is a reset-dominant RS latch with an additional adapter interface (`ILOCK_IN`, `ILOCK_OUT`). Multiple such blocks can be coupled via this adapter connection: When one latch is set, it sends a signal on the `ILOCK_OUT` adapter, which forces the other block, via `ILOCK_IN`, into the reset state. Thus, at any given time, at most one of the two outputs, `Q1`, is active.
 
 ## Program Flow and Connections
 
@@ -40,7 +40,7 @@ A signal on a digital input (e.g., `Input_I1` for setting Latch 1) generates an 
 
 This event is forwarded to the `REQ` input of the associated `ILOCK_RS` function block. Simultaneously, the data values (`S` and `R1`) from the digital input are transferred to the latch.
 
-``` The block processes the signals (reset dominant) and outputs a `CNF` event upon completion.
+`` The block processes the signals (reset dominant) and outputs a `CNF` event upon completion.
 
 3. **Output**
 

@@ -37,18 +37,18 @@ The function blocks are linked via **adapter connections** (not classic event/da
 
 1. **Reset Signal (RST):**
 
-`DigitalInput_RST.IN` → `T_FF.RST`
+DigitalInput_RST.IN` → `T_FF.RST`
 
 *A signal on input Input_I1 resets the flip-flop (Q1 = FALSE).*
 
 2. **Clock Signal (CLK):**
 
-`DigitalInput_CLK.IN` → `T_FF.CLK`
+DigitalInput_CLK.IN` → `T_FF.CLK`
 *Each rising edge on Input_I2 toggles output Q1 (from TRUE to FALSE or vice versa).*
 
 3. **Output (Q1):**
 
-`T_FF.Q1` → `DigitalOutput_Q1.OUT`
+T_FF.Q1` → `DigitalOutput_Q1.OUT`
 *The current state of the flip-flop is displayed on the physical output Output_Q1 Output.*
 
 **Procedure:**

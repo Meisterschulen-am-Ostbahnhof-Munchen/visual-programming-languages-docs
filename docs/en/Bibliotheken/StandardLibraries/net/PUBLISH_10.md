@@ -3,7 +3,7 @@
 * * * * * * * * * *
 ## Introduction
 The PUBLISH_10 function block is used to distribute data to one or more SUBSCRIBE_10 blocks. It enables the unacknowledged transmission of up to 10 different data values using a publish-subscribe communication pattern.
-``` ![PUBLISH_10](PUBLISH_10.svg)
+`` ![PUBLISH_10](PUBLISH_10.svg)
 
 ## Interface Structure
 

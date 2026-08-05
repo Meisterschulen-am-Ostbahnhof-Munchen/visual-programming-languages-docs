@@ -59,11 +59,11 @@ An additional **low-side driver** is activated for each active direction of rota
 - Upon an event at `EI_DOWN`, `DO_DOWN = DI_DOWN` is set and `DO_UP` is reset.
 - The corresponding event outputs (`EO_UP`, `EO_DOWN`) trigger the subsequent function blocks.
 
-``` 4. The output `DO_UP` is fed to the data output **Right Rotation** (`OUT`), and its `REQ` event is activated via `EO_UP`. The same applies to `DO_DOWN` and **Left Rotation**.
+`` 4. The output `DO_UP` is fed to the data output **Right Rotation** (`OUT`), and its `REQ` event is activated via `EO_UP`. The same applies to `DO_DOWN` and **Left Rotation**.
 
 The output `DO_UP` is fed to the data output **Right Rotation** (`OUT`), and its event `REQ` is activated via `EO_UP`. The same applies to `DO_DOWN` and **Left Rotation**.
 
-``` 5. The signals `DO_UP` and `DO_DOWN` are simultaneously fed to the OR gate **OR_2_BOOL**:
+`` 5. The signals `DO_UP` and `DO_DOWN` are simultaneously fed to the OR gate **OR_2_BOOL**:
 
 - `ILOCK.DO_UP` → `OR_2_BOOL.IN1`
 - `ILOCK.DO_DOWN` → `OR_2_BOOL.IN2`

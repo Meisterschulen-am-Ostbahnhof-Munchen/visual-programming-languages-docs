@@ -27,7 +27,7 @@ No adapters available.
 ## Functionality
 The OR_3 function block performs a bitwise OR operation on the three input values IN1, IN2, and IN3 upon each REQ event. The result is output at the OUT data output, and simultaneously a CNF event is generated to signal the completion of the operation.
 
-``` The operation is performed separately for each bit position: OUT[i] = IN1[i] OR IN2[i] OR IN3[i]
+`` The operation is performed separately for each bit position: OUT[i] = IN1[i] OR IN2[i] OR IN3[i]
 
 ## Technical Features
 - Supports the generic ANY_BIT data type, enabling its use with various bit data types such as BOOL, BYTE, WORD, DWORD, etc.

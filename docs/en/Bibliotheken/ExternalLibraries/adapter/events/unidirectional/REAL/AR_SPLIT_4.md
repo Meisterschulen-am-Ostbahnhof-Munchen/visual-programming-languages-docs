@@ -52,7 +52,7 @@ The function block receives an AR adapter signal via socket **IN** and forwards 
 ## Technical Features
 - **Generic Type**: The function block is defined as a generic function block (`GenericClassName`), which means that the specific AR adapter type is determined at compile time. This increases reusability in various applications.
 
-``` - **No State Machine**: The function block (FB) has no Execution Control Chart (ECC) and no internal states. All operations are purely combinatorial or event-driven.
+`` - **No State Machine**: The function block (FB) has no Execution Control Chart (ECC) and no internal states. All operations are purely combinatorial or event-driven.
 
 - **Unidirectional**: The adapter type is specified as unidirectional; feedback from the target block is not provided.
 

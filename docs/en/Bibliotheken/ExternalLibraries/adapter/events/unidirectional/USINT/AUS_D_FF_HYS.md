@@ -102,4 +102,4 @@ The thresholds are offset by the hysteresis value relative to a mean or referenc
 
 ## Conclusion
 
-`AUS_D_FF_HYS` is a versatile function block for applications requiring robust, edge-triggered data acquisition with hysteresis. The use of generic adapters makes it independent of the specific data type and facilitates reuse in different contexts. Particularly in automation technology, signal processing, and sensor evaluation, it offers reliable signal conditioning through noise and bounce suppression. Initialization via `INIT` and direct event pass-through simplify integration into existing control networks.
+AUS_D_FF_HYS` is a versatile function block for applications requiring robust, edge-triggered data acquisition with hysteresis. The use of generic adapters makes it independent of the specific data type and facilitates reuse in different contexts. Particularly in automation technology, signal processing, and sensor evaluation, it offers reliable signal conditioning through noise and bounce suppression. Initialization via `INIT` and direct event pass-through simplify integration into existing control networks.

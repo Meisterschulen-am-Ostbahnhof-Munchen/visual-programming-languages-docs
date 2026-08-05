@@ -43,7 +43,7 @@ The function block internally uses an **F_NE** block (comparison for inequality)
 - The function block (FB) is implemented as a **Composite FB**, meaning its logic is represented by an internal network of standard function blocks.
 - It uses the **F_NE** comparison block, which is from the **iec61131::comparison** library.
 
-``` - The package organization is **adapter::conversion::unidirectional**, indicating its use as an adapter converter.
+`` - The package organization is **adapter::conversion::unidirectional**, indicating its use as an adapter converter.
 
 - The function block (FB) does not have its own state machines; processing is exclusively event-driven via internal connections.
 

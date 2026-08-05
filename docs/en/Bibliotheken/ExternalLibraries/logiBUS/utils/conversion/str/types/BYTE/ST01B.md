@@ -20,7 +20,7 @@ Not applicable, as `ST01B` is a data type and not a function block. It defines a
 Not applicable, as `ST01B` is a data type and not a function block.
 
 ## Functionality
-`ST01B` itself has no functionality in the sense of an executable function block. This is a static definition of a data structure that comprises a single byte. This structure can be instantiated by function blocks and used to store or exchange byte values.
+ST01B` itself has no functionality in the sense of an executable function block. This is a static definition of a data structure that comprises a single byte. This structure can be instantiated by function blocks and used to store or exchange byte values.
 
 The structure contains the following variable:
 
@@ -47,7 +47,7 @@ This data type can be useful in various scenarios where a single byte with a spe
 * **Other Structured Data Types**: Compared to more complex structured data types, ``ST01B`` is very simple and serves as a basic building block.
 
 ## Conclusion
-``ST01B`` is a simple yet useful structured data type in 4diac that allows for the encapsulation of a single byte. Although not a function block, it can improve the clarity and structure of 4diac applications by defining specifically named byte variables. The provided XML definition facilitates easy integration into 4diac projects.
+`ST01B`` is a simple yet useful structured data type in 4diac that allows for the encapsulation of a single byte. Although not a function block, it can improve the clarity and structure of 4diac applications by defining specifically named byte variables. The provided XML definition facilitates easy integration into 4diac projects.
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

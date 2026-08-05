@@ -27,15 +27,15 @@ There are no explicit data outputs. The distributed data is provided via the ada
 
 | `adapter::types::unidirectional::AB` | `OUT1` | Plug | First output adapter – receives a copy of the input data. |
 
-`adapter::types::unidirectional::AB` | `OUT2` | Plug | Second output adapter. |
+adapter::types::unidirectional::AB` | `OUT2` | Plug | Second output adapter. |
 
-`adapter::types::unidirectional::AB` | `OUT3` | Plug | Third output adapter. |
+adapter::types::unidirectional::AB` | `OUT3` | Plug | Third output adapter. |
 
-`adapter::types::unidirectional::AB` | `OUT4` | Plug | Fourth output adapter. |
+adapter::types::unidirectional::AB` | `OUT4` | Plug | Fourth output adapter. |
 
-`adapter::types::unidirectional::AB` | `OUT5` | Plug | Fifth output adapter. |
+adapter::types::unidirectional::AB` | `OUT5` | Plug | Fifth output adapter. |
 
-`adapter::types::unidirectional::AB` | `OUT6` | Plug | Sixth output adapter. |
+adapter::types::unidirectional::AB` | `OUT6` | Plug | Sixth output adapter. |
 
 ## Functionality
 The function block reads the data arriving from adapter `IN` and forwards it identically to all six output adapters `OUT1` to `OUT6`. This is a pure 1:6 distribution without buffering or data processing. As soon as data is present at the input, it is immediately and simultaneously transferred to all outputs. The number of outputs is fixed at six.

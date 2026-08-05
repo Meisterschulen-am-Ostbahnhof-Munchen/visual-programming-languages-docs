@@ -58,7 +58,7 @@ Compared to classic, data-input-based addition blocks (e.g., `ADD`), `AR_ADD_2` 
 
 ## Conclusion
 
-`AR_ADD_2` is a compact, generic function block for adding two values using adapter interfaces. It is particularly suitable for cross-system applications where type flexibility and loose coupling via adapters are required. Its simple, stateless architecture makes it robust and easy to integrate into existing automation projects.
+AR_ADD_2` is a compact, generic function block for adding two values using adapter interfaces. It is particularly suitable for cross-system applications where type flexibility and loose coupling via adapters are required. Its simple, stateless architecture makes it robust and easy to integrate into existing automation projects.
 
 ---
 

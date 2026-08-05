@@ -3,7 +3,7 @@
 * * * * * * * * * *
 ## Introduction
 The PUBLISH_1 function block is used to send data to one or more SUBSCRIBE_1 blocks. It implements a publish-subscribe communication pattern, in which data is distributed to all subscribed recipients without acknowledgment.
-``` ![PUBLISH_1](PUBLISH_1.svg)
+`` ![PUBLISH_1](PUBLISH_1.svg)
 
 ## Interface Structure
 

@@ -48,4 +48,4 @@ This exercise implements an asynchronous toggle flip-flop (T-FF) using a logiBUS
 
 This exercise demonstrates the construction of a toggle flip-flop with an initial state (`TRUE`). The input component responds only to a single key press (`BUTTON_SINGLE_CLICK`), thus preventing bounce or multiple triggering. The toggle flip-flop is used as a pre-built adapter component (`AX_T_FF_INIT`), which combines both the switching mechanism and the initialization. The adapter connection between the toggle flip-flop and the output simplifies the coupling of event and data flows.
 
-``` After startup, the output lamp `Q1` lights up immediately. Each button press toggles it – a simple and robust on/off function.
+`` After startup, the output lamp `Q1` lights up immediately. Each button press toggles it – a simple and robust on/off function.

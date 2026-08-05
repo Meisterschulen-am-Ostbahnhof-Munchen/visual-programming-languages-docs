@@ -55,7 +55,7 @@ The subapp operates in two main phases:
 - The `IND` event of `NumericValue_PHYS` triggers the `SET` input of `INI`, thus saving the value.
 - After successful saving, `SETO` is triggered, which is then passed to the subapp as `IND`.
 
-``` **Data Connections**:
+`` **Data Connections**:
 
 - The object configuration (`stObj`) is passed externally to `NumericValue_PHYS` and `Q_NumericValue_PHYS`.
 - The key and section names (`KEY`, `SECTION`) are passed externally to the `INI` block.

@@ -35,7 +35,7 @@ The goal is to understand the behavior of a **reset-dominant** toggle flip-flop 
 
 The logiBUS inputs are read via the function blocks `DigitalInput_SET`, `DigitalInput_RESET`, and `DigitalInput_CLK` and passed on as adapter sockets to the flip-flop `RS_T_FF`.
 
-``` **Connections (Adapter Connections):**
+`` **Connections (Adapter Connections):**
 
 - `DigitalInput_SET.IN` → `RS_T_FF.SET`
 - `DigitalInput_RESET.IN` → `RS_T_FF.RESET1`

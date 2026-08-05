@@ -60,7 +60,7 @@ Internally, the function block uses the predefined IEC 61131-3 function block `F
 
 1. An event at **ADI_IN.E1** triggers the conversion.
 
-``` 2. The data value from **ADI_IN.D1** is forwarded to the input `IN` of the internal `F_DINT_TO_BYTE` function block.
+`` 2. The data value from **ADI_IN.D1** is forwarded to the input `IN` of the internal `F_DINT_TO_BYTE` function block.
 
 3. After the conversion is complete, the internal function block generates the event **CNF**.
 

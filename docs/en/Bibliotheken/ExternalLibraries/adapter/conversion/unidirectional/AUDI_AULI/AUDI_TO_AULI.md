@@ -49,4 +49,4 @@ The FB has no internal state or algorithm. It operates strictly in a flow-orient
 
 ## Conclusion
 
-`AUDI_TO_AULI` is a practical composite function block for lossless conversion from UDINT to ULINT at the adapter level. It is simple, easy to understand, and ideal for clean interface separation in modular systems.
+AUDI_TO_AULI` is a practical composite function block for lossless conversion from UDINT to ULINT at the adapter level. It is simple, easy to understand, and ideal for clean interface separation in modular systems.

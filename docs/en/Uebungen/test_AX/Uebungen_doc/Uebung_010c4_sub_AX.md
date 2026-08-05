@@ -44,7 +44,7 @@ The flow within `Uebung_010c4_sub_AX` is controlled by adapter and data connecti
 
 * The object ID (`u16ObjId`) is passed from the sub-application's interface to `SoftKey_F1` and `GreenWhiteBackground_AX`. This defines which GUI object is addressed.
 
-``` * The variable `Output` is passed to `DigitalOutput_Q1` to address the correct physical output.
+`` * The variable `Output` is passed to `DigitalOutput_Q1` to address the correct physical output.
 
 2. **Signal Flow (Runtime):**
 

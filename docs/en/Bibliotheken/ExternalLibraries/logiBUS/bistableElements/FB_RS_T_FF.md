@@ -54,7 +54,7 @@ If `CLK` assumes the value `TRUE` and a rising edge is detected (i.e., `CLK` was
 
 The algorithm is implemented in ST code as follows:
 
-```structured text
+``structured text
 IF R1 THEN
 Q1 := BOOL#FALSE;
 ELSIF S THEN
@@ -96,4 +96,4 @@ x | FALSE| FALSE| FALSE or no edge | unchanged |
 
 ## Conclusion
 
-`FB_RS_T_FF` is a versatile function block that combines a reset-dominant latch with an edge-triggered toggle function. It is suitable for applications requiring both fixed set and reset signals as well as switchable state transitions. Its clear prioritization (Reset > Set > Toggle) and built-in edge detection make it robust and easy to integrate into control logic.
+FB_RS_T_FF` is a versatile function block that combines a reset-dominant latch with an edge-triggered toggle function. It is suitable for applications requiring both fixed set and reset signals as well as switchable state transitions. Its clear prioritization (Reset > Set > Toggle) and built-in edge detection make it robust and easy to integrate into control logic.

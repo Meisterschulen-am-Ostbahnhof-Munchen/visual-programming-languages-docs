@@ -59,7 +59,7 @@ This module implements a **latched two-channel circuit with dead time**:
 - The two inputs `UP_IN` and `DOWN_IN` can never be active simultaneously.
 - As soon as an input becomes active (i.e., its event `E1` occurs and the corresponding data `D1` is `TRUE`), the module switches to the corresponding state (`UP` or `DOWN`) after a short dead time.
 
-``` - If a direction change occurs, the **protection state `PROTECT`** is first entered, in which all outputs are set to `FALSE` and the timer is started with `DT_PROTECT`. After the dead time has elapsed, the system switches to state `EVAL`, which determines the final state based on the current input signals.
+`` - If a direction change occurs, the **protection state `PROTECT`** is first entered, in which all outputs are set to `FALSE` and the timer is started with `DT_PROTECT`. After the dead time has elapsed, the system switches to state `EVAL`, which determines the final state based on the current input signals.
 
 - The dead time prevents crosstalk or signal bounce, e.g., with mechanical switches or overlapping requirements.
 
@@ -112,7 +112,7 @@ The transitions defined in the ECC are:
 
 ## Conclusion
 
-`ILOCK_SWITCH_PROTECT_AX`This robust and flexible component for interlocked switching with adjustable protection dead time. The adapter-based interface enables seamless integration into modular 4diac architectures. The clear state machine ensures deterministic behavior and provides protection against faulty switching in time-critical applications. Ideal for applications in agricultural technology, automation, and drive technology where reliable direction changes are required.
+ILOCK_SWITCH_PROTECT_AX`This robust and flexible component for interlocked switching with adjustable protection dead time. The adapter-based interface enables seamless integration into modular 4diac architectures. The clear state machine ensures deterministic behavior and provides protection against faulty switching in time-critical applications. Ideal for applications in agricultural technology, automation, and drive technology where reliable direction changes are required.
 
 ---
 

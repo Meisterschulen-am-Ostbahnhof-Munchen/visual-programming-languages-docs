@@ -3,7 +3,7 @@
 * * * * * * * * * *
 ## Introduction
 The PKP_2200_LI_IXA is a composite function block for processing Boolean input data. It serves as an interface for digital inputs and provides standardized initialization and query functions for input signals.
-``` ![PKP_2200_LI_IXA](PKP_2200_LI_IXA.svg)
+`` ![PKP_2200_LI_IXA](PKP_2200_LI_IXA.svg)
 
 ## Interface Structure
 

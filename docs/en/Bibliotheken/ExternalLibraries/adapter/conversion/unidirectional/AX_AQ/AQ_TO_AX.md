@@ -49,7 +49,7 @@ This function block does not define its own states. The state logic is entirely 
 - **Direct coupling of AQ and AX**: A connection would not be possible without conversion, as the adapter types are incompatible.
 
 ## Conclusion
-`AQ_TO_AX` is a lean yet essential adapter converter that bridges the gap between AQ and AX interfaces. It simplifies the integration of quarter-byte signals into BOOL-based controllers and contributes to the reusability of function blocks in different adapter environments.
+AQ_TO_AX` is a lean yet essential adapter converter that bridges the gap between AQ and AX interfaces. It simplifies the integration of quarter-byte signals into BOOL-based controllers and contributes to the reusability of function blocks in different adapter environments.
 
 ---
 

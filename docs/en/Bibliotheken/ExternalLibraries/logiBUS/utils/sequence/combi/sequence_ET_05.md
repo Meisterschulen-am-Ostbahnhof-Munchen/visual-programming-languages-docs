@@ -92,7 +92,7 @@ Compared to simple timer chains or counters, `sequence_ET_05` offers a fully enc
 * [Exercise_039](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039.md)]
 * [Exercise_039a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a.md)]
 
-````````````````## Conclusion
+```````````````## Conclusion
 
 The `sequence_ET_05` is a well-structured and flexible function block for implementing 5-step sequences. The clear separation of control flow (events) and parameters (times), as well as the option to configure each transition either manually or automatically, makes it suitable for a wide variety of control tasks in automation technology. The use of standardized adapters and comprehensive interface documentation facilitate integration into larger applications.
 

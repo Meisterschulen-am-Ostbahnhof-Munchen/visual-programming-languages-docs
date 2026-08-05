@@ -27,7 +27,7 @@ The function block `QUARTERS_TO_BOOLS` is a composite function block that conver
 This function block does not use any adapter interfaces.
 
 ## Functionality
-`QUARTERS_TO_BOOLS` is a composite function block that internally consists of 16 instances of the base function block `QUARTER_TO_BOOL`. Each of these instances is responsible for converting a specific input (`IB_xx`).
+QUARTERS_TO_BOOLS` is a composite function block that internally consists of 16 instances of the base function block `QUARTER_TO_BOOL`. Each of these instances is responsible for converting a specific input (`IB_xx`).
 
 1. **Triggering**: The arrival of the event `REQ` triggers the processing chain.
 

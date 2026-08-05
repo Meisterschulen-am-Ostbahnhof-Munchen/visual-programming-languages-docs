@@ -48,7 +48,7 @@ No adapters available.
 
 3. In each iteration, the current value is compared to `currentMin`, and the minimum is updated using the function `MIN()`.
 
-``` 4. After the loop completes, the final minimum value is output via the unnamed data output, and the event `CNF` is sent.
+`` 4. After the loop completes, the final minimum value is output via the unnamed data output, and the event `CNF` is sent.
 
 The calculation is performed sequentially within a single execution step; the runtime increases linearly with the array size.
 
@@ -78,7 +78,7 @@ There are no multiple states, wait loops, or time-controlled processes.
 - **Statistical Building Blocks**: `ARR_MIN` is a special case of general aggregation functions (e.g., SUM, MEAN). Its focus is on finding the minimum, enabling simple and fast implementation.
 
 ## Conclusion
-`ARR_MIN` offers a compact and efficient solution for determining the minimum in dynamic integer arrays. Thanks to its simple request/confirm protocol and clean package structure, it can be easily integrated into existing 4diac industrial applications. Using `LOWER_BOUND`/`UPPER_BOUND` makes it independent of the actual array size and allows for flexible adjustments at runtime.
+ARR_MIN` offers a compact and efficient solution for determining the minimum in dynamic integer arrays. Thanks to its simple request/confirm protocol and clean package structure, it can be easily integrated into existing 4diac industrial applications. Using `LOWER_BOUND`/`UPPER_BOUND` makes it independent of the actual array size and allows for flexible adjustments at runtime.
 
 ---
 

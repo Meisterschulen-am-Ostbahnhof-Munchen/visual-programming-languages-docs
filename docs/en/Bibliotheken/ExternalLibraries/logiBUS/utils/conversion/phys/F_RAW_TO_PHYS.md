@@ -3,7 +3,7 @@
 * * * * * * * * * *
 ## Introduction
 The function block **F_RAW_TO_PHYS** converts an ISOBUS raw value of type `UDINT` into a physical value of type `REAL`. The conversion is performed according to the standardized ISOBUS formula:
-`display = (raw + offset) * scale`
+display = (raw + offset) * scale`
 
 It is typically used in agricultural control systems to convert sensor data or actuator values between the CAN-based ISOBUS signal layer and the application.
 

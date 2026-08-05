@@ -77,7 +77,7 @@ Compared to a configurable split block, `AB_SPLIT_5` offers a fixed, yet simple 
 
 ## Conclusion
 
-`AB_SPLIT_5` is a lean, specialized function block for the 1:5 distribution of unidirectional AB adapter signals. Thanks to its generic implementation and clear interface structure, it is ideally suited for the modular design of automation systems where a signal is required multiple times.
+AB_SPLIT_5` is a lean, specialized function block for the 1:5 distribution of unidirectional AB adapter signals. Thanks to its generic implementation and clear interface structure, it is ideally suited for the modular design of automation systems where a signal is required multiple times.
 
 ---
 

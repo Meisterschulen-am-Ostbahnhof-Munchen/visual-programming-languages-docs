@@ -30,7 +30,7 @@ This function block has no adapter interfaces.
 ## Operation
 The operation is deterministic and follows Boolean algebra. Upon each occurrence of the event `REQ`, the following operation is performed:
 
-`OUT := IN1 AND IN2 AND IN3 AND IN4 AND IN5 AND IN6 AND IN7`
+OUT := IN1 AND IN2 AND IN3 AND IN4 AND IN5 AND IN6 AND IN7`
 
 Immediately after the result is calculated, the confirmation event `CNF` is output along with the current value of `OUT`.
 

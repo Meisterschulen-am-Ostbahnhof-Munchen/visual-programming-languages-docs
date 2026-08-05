@@ -70,9 +70,9 @@ The module internally uses the IEC 61131 comparison module `F_NE` (Not Equal). A
 
 The result is passed to the data output `AX_OUT.D1`, and simultaneously the event `AX_OUT.E1` is triggered to notify downstream components.
 
-`` If the input value is **equal to 0**, then `F_NE.OUT` returns the value `FALSE`.
+` If the input value is **equal to 0**, then `F_NE.OUT` returns the value `FALSE`.
 
-`` If the input value is **equal to 0**, then `F_NE.OUT` returns the value `FALSE`.
+` If the input value is **equal to 0**, then `F_NE.OUT` returns the value `FALSE`.
 
 ## Technical Features
 

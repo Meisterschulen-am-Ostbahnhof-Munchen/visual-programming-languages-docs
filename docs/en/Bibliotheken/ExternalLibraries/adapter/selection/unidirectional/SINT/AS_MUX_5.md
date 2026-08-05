@@ -82,7 +82,7 @@ The function block does not have an explicit state machine in its XML representa
 
 ## Conclusion
 
-`AS_MUX_5` is a specialized multiplexer for unidirectional adapter connections of type `AS`. It enables flexible and clean switching between five sources without data conversion. Due to its generic nature and simple event control, it is particularly suitable for modular automation solutions where the selection of different sensor or actuator connections at runtime is required.
+AS_MUX_5` is a specialized multiplexer for unidirectional adapter connections of type `AS`. It enables flexible and clean switching between five sources without data conversion. Due to its generic nature and simple event control, it is particularly suitable for modular automation solutions where the selection of different sensor or actuator connections at runtime is required.
 
 ---
 

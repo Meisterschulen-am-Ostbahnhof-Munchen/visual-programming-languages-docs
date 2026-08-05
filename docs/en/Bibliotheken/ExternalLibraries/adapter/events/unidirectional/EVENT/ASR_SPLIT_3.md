@@ -41,7 +41,7 @@ This function block forwards all signals and events arriving via socket `IN` fro
 - The function block is generic (attribute `eclipse4diac::core::GenericClassName` = `'GEN_ASR_SPLIT'`), allowing it to be reused for different instances of the ASR type.
 - No Execution Control Chart (ECC) is required, as the forwarding occurs directly through the adapter coupling.
 
-``` - All three outputs are separately addressable, allowing different target modules to be connected independently.
+`` - All three outputs are separately addressable, allowing different target modules to be connected independently.
 
 ## State Overview
 

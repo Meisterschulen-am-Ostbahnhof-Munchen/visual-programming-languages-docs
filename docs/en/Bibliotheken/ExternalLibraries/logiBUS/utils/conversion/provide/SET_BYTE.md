@@ -58,4 +58,4 @@ The function block (FB) has no explicit states. Action is initiated immediately 
 - **SET_BOOL** (if available): Analogous for BOOL – both function blocks follow the same simple principle but are limited to their respective data types.
 
 ## Conclusion
-`SET_BYTE` is a minimalist, clearly defined function block for writing to a BYTE variable once. Its strength lies in its simplicity and the use of an InOut interface, which allows for direct value assignment without additional wiring of a data output. It is particularly suitable for applications where a predefined value needs to be written to a persistent variable at a specific time.
+SET_BYTE` is a minimalist, clearly defined function block for writing to a BYTE variable once. Its strength lies in its simplicity and the use of an InOut interface, which allows for direct value assignment without additional wiring of a data output. It is particularly suitable for applications where a predefined value needs to be written to a persistent variable at a specific time.

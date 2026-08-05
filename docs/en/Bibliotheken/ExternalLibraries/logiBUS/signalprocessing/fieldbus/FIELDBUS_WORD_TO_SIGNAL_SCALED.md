@@ -64,15 +64,15 @@ For each `REQ` event, the following algorithm is executed:
 - If this value is **less than or equal to** the threshold defined in the global constant `VALID_SIGNAL_W` (also as WORD/UINT), the signal is considered **valid**.
 - If valid:
 
-`OUT = UINT_TO_REAL(IN) * SCALE + DINT_TO_REAL(OFFSET)`
+OUT = UINT_TO_REAL(IN) * SCALE + DINT_TO_REAL(OFFSET)`
 
-`VALID = TRUE`
+VALID = TRUE`
 
 - If invalid:
 
-`OUT = 0.0`
+OUT = 0.0`
 
-`VALID = FALSE`
+VALID = FALSE`
 
 - Subsequently, the `CNF` event is triggered, which accompanies the updated outputs `OUT` and `VALID`.
 

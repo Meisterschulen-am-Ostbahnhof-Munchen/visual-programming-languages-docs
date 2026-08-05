@@ -39,7 +39,7 @@ The **AX_FB_RS** implements the logic of an RS flip-flop with reset dominance. T
 
 The logical function is:
 
-`Q1 := (NOT RESET1) AND (SET OR Q1)`
+Q1 := (NOT RESET1) AND (SET OR Q1)`
 
 The behavior can be summarized as follows:
 

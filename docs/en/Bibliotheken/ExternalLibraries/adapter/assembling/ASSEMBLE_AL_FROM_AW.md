@@ -83,7 +83,7 @@ All these building blocks follow the same principle but differ in the word width
 
 ## Conclusion
 
-`ASSEMBLE_AL_FROM_AW` is a specialized function block for concatenating four 16-bit words into a single 64-bit word. Clocked output via a D flip-flop ensures consistent data transmission. Thanks to its adapter-based interface, it integrates seamlessly into modular 4diac projects and simplifies word-to-long-word conversions.
+ASSEMBLE_AL_FROM_AW` is a specialized function block for concatenating four 16-bit words into a single 64-bit word. Clocked output via a D flip-flop ensures consistent data transmission. Thanks to its adapter-based interface, it integrates seamlessly into modular 4diac projects and simplifies word-to-long-word conversions.
 
 ---
 

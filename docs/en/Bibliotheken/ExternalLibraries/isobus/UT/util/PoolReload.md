@@ -98,11 +98,11 @@ The function block can go through the following basic states:
 
 |----------|--------------|
 
-`PoolLoader` | Loads the pool only at system startup; no reloading at runtime. |
+PoolLoader` | Loads the pool only at system startup; no reloading at runtime. |
 
-`PoolActivate` | Switches between already loaded pools, but requires prior loading. |
+PoolActivate` | Switches between already loaded pools, but requires prior loading. |
 
-`PoolReload` | Combines loading and updating in one step and enables dynamic reloading during runtime. |
+PoolReload` | Combines loading and updating in one step and enables dynamic reloading during runtime. |
 
 ## Conclusion
 The `PoolReload` function block is a specialized service interface module for ISOBUS virtual terminals that enables flexible reloading and updating of object pools at runtime. It simplifies language switching, dynamic updates, and facilitates the maintenance of VT applications. Its clear event interface and detailed error feedback make it well-suited for use in agricultural control systems.

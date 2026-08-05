@@ -61,4 +61,4 @@ The function block has no internal state machine. The routing is static and occu
 
 ## Conclusion
 
-`AW_SPLIT_2` is a simple yet essential generic function block for adapter distribution. It enables clean, reusable splitting of a unidirectional AW path without additional logic or runtime costs. Especially in modular, adapter-based control systems, it simplifies signal distribution and promotes component reusability.
+AW_SPLIT_2` is a simple yet essential generic function block for adapter distribution. It enables clean, reusable splitting of a unidirectional AW path without additional logic or runtime costs. Especially in modular, adapter-based control systems, it simplifies signal distribution and promotes component reusability.

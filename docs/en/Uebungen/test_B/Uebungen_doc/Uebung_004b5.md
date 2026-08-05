@@ -39,7 +39,7 @@ The subapplication is implemented as an event-driven chain:
 
 2. **Edge Detection**: The event `IND` is forwarded to the event input `EI` from `E_R_TRIG` (**Event Connection**: `DigitalInput_I1.IND → E_R_TRIG.EI`). In parallel, the current digital value (`DigitalInput_I1.IN`) is passed to the data input `QI` from `E_R_TRIG` (**Data connection**: `DigitalInput_I1.IN → E_R_TRIG.QI`).
 
-`E_R_TRIG` checks whether the value of `QI` has a rising edge (change from FALSE to TRUE). If this is the case, an event is generated at the output `EO`.
+E_R_TRIG` checks whether the value of `QI` has a rising edge (change from FALSE to TRUE). If this is the case, an event is generated at the output `EO`.
 
 3. **Toggle Flip-Flop**: The event `EO` from `E_R_TRIG` triggers the clock input `CLK` from `E_T_FF` (**Event Connection**: `E_R_TRIG.EO → E_T_FF.CLK`). The flip-flop's state toggles with each clock cycle. The result is available at the data output `Q`. Simultaneously, the output event `EO` is triggered by `E_T_FF`.
 

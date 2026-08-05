@@ -90,7 +90,7 @@ Unlike a merge function block, `AD_SPLIT_7` is used exclusively for duplicating 
 
 ## Conclusion
 
-`AD_SPLIT_7` is a simple yet useful function block for passive signal duplication in adapter-based 4diac applications. Its generic nature and independence from events make it ideal for pure dataflow architectures. For applications requiring a higher number of parallel outputs, the function block can be extended by adjusting the GenericClassName.
+AD_SPLIT_7` is a simple yet useful function block for passive signal duplication in adapter-based 4diac applications. Its generic nature and independence from events make it ideal for pure dataflow architectures. For applications requiring a higher number of parallel outputs, the function block can be extended by adjusting the GenericClassName.
 
 ---
 

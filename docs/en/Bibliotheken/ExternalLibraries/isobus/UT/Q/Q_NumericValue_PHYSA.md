@@ -55,7 +55,7 @@ The function block `Q_NumericValue_PHYSA` serves as a wrapper for the function b
 
 1. After the **INIT** event, the function block is initialized with the object pool properties defined in `stObj`.
 
-``` 2. As soon as a new physical value arrives via the **rPhys** adapter (socket event `E1`), it is internally forwarded to the bound **Q_NumericValue_PHYS** block.
+`` 2. As soon as a new physical value arrives via the **rPhys** adapter (socket event `E1`), it is internally forwarded to the bound **Q_NumericValue_PHYS** block.
 
 3. The `Q_NumericValue_PHYS` processes the value (taking scaling, offset, and decimal places into account) and triggers the **CNF** event.
 

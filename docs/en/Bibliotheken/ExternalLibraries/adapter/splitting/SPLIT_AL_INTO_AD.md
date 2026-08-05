@@ -67,4 +67,4 @@ The function block does not have an explicit state machine. Its behavior is pure
 
 ## Conclusion
 
-`SPLIT_AL_INTO_AD` is a specialized yet elegant adapter module that enables seamless connectivity between an LWORD source and two DWORD sinks. Due to the clean separation of data splitting and event synchronization, it is particularly well-suited for modular, adapter-based control architectures.
+SPLIT_AL_INTO_AD` is a specialized yet elegant adapter module that enables seamless connectivity between an LWORD source and two DWORD sinks. Due to the clean separation of data splitting and event synchronization, it is particularly well-suited for modular, adapter-based control architectures.

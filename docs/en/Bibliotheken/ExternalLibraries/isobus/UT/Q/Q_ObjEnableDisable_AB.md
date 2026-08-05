@@ -68,7 +68,7 @@ The FB uses the standardized unidirectional AB adapter, which allows for easy in
 
 - **Typical BYTE Encoding**
 
-`0` → disable, `1` → enable, `0xFF` → undefined (error or no change). This convention is used for both input and output.
+0` → disable, `1` → enable, `0xFF` → undefined (error or no change). This convention is used for both input and output.
 
 - **Initialization with Object ID Only**
 

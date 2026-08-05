@@ -39,7 +39,7 @@ The function block operates in a simple event-driven sequence:
 
 2. Simultaneously, the data value from **AL_IN.D1** (LWORD) is passed to the `IN` input of the converter.
 
-``` 3. The internal function block (FB) performs the conversion `LWORD → LREAL`.
+`` 3. The internal function block (FB) performs the conversion `LWORD → LREAL`.
 
 4. After the conversion is complete, the event `CNF` is sent to the plug **ALR_OUT.E1**.
 
@@ -74,4 +74,4 @@ Since the internal function block operates in a single execution step, the state
 
 ## Conclusion
 
-`AL_TO_ALR` is a specialized composite module for the formal conversion of LWORD to LREAL data via unidirectional adapters. It simplifies the integration of integer-based components into floating-point environments and, through its adapter interface, promotes a modular, reusable system architecture. Its simple, event-driven operation makes it reliable and easy to understand.
+AL_TO_ALR` is a specialized composite module for the formal conversion of LWORD to LREAL data via unidirectional adapters. It simplifies the integration of integer-based components into floating-point environments and, through its adapter interface, promotes a modular, reusable system architecture. Its simple, event-driven operation makes it reliable and easy to understand.

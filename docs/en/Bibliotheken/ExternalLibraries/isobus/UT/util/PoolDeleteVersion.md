@@ -59,7 +59,7 @@ The block is initialized via the event input `INIT`, passing the version number 
 - ``versionString`` must be null-terminated or exactly 32 bytes long (ISO V11+).
 - If a string consisting of spaces (``'       '``) is passed, the function deletes the last stored pool version.
 
-``` - Maximum version entry length: 32 bytes.
+`` - Maximum version entry length: 32 bytes.
 
 - The block is designed as a Service Interface Block (SIB) for ISOBUS communication (ISO 11783-6).
 
@@ -85,4 +85,4 @@ There is no direct comparison to other function blocks. This block is specifical
 
 ## Conclusion
 
-`PoolDeleteVersion` provides a standardized and reliable way to delete stored object pool versions from the flash memory of a virtual terminal. Its simple event-driven interface makes it easy to integrate into automation and control applications. Adherence to ISO specifications (version string length, spaces for the last version) makes the block particularly robust for use in agricultural machinery according to ISO 11783.
+PoolDeleteVersion` provides a standardized and reliable way to delete stored object pool versions from the flash memory of a virtual terminal. Its simple event-driven interface makes it easy to integrate into automation and control applications. Adherence to ISO specifications (version string length, spaces for the last version) makes the block particularly robust for use in agricultural machinery according to ISO 11783.

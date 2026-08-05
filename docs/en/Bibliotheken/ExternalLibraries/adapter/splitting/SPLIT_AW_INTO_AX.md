@@ -68,7 +68,7 @@ The module does not have its own top-level state machine. The internal state is 
 
 ## Conclusion
 
-`SPLIT_AW_INTO_AX` is a compact yet powerful converter that reliably and event-synchronously divides a 16-bit word into 16 individual binary outputs. Thanks to the use of adapters and flip-flops, it is particularly well-suited for use in modular IEC 61499 applications where a clean separation of word and bit interfaces is required. It simplifies interface adaptation and improves the readability and maintainability of the application network.
+SPLIT_AW_INTO_AX` is a compact yet powerful converter that reliably and event-synchronously divides a 16-bit word into 16 individual binary outputs. Thanks to the use of adapters and flip-flops, it is particularly well-suited for use in modular IEC 61499 applications where a clean separation of word and bit interfaces is required. It simplifies interface adaptation and improves the readability and maintainability of the application network.
 
 ---
 

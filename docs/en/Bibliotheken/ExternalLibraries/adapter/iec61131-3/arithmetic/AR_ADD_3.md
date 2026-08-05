@@ -60,7 +60,7 @@ The block does not have an explicit state diagram (ECC). It is a purely combinat
 
 ## Conclusion
 
-`AR_ADD_3` is a clear, generic function block for adding three values using adapters. Its abstraction via generic attributes and adapters makes it well-suited for IEC 61499 applications that require flexible and reusable signal processing.
+AR_ADD_3` is a clear, generic function block for adding three values using adapters. Its abstraction via generic attributes and adapters makes it well-suited for IEC 61499 applications that require flexible and reusable signal processing.
 
 ---
 

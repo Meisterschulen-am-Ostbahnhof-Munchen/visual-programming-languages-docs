@@ -48,7 +48,7 @@ This exercise teaches how to work with cyclic events, event splitting/merging, a
 
 7. **Output**: The event `EO` from `E_T_FF` is routed to the `REQ` input of `DigitalOutput_Q1`. Simultaneously, the data value `Q` (0 or 1) is passed to the `OUT` input of the output module. Output Q1 is set accordingly at each clock cycle.
 
-``` **Learning Objectives**:
+`` **Learning Objectives**:
 
 - Understanding cyclic events (`E_CYCLE`)
 - Using a toggle flip-flop (`E_T_FF`)

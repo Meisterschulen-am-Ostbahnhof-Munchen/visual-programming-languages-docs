@@ -17,9 +17,9 @@ This function block does not have direct event inputs. All events are supplied v
 
 | `CD` | `AX` | Countdown Event |
 
-`LD` | `AX` | Load Event |
+LD` | `AX` | Load Event |
 
-`PV` | `AUDI` | Preset Value Event |
+PV` | `AUDI` | Preset Value Event |
 
 ### **Event Outputs**
 
@@ -27,7 +27,7 @@ This function block does not have direct event inputs. All events are supplied v
 
 |------|--------|----------------------------------------------------|
 
-`CNF` | Event | Acknowledge event after each processing step |
+CNF` | Event | Acknowledge event after each processing step |
 
 ### **Data Inputs**
 

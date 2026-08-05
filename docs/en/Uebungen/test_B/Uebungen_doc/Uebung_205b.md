@@ -24,7 +24,7 @@ This exercise demonstrates the implementation of a **motor reversing interlock**
 - Internally, when a direction changes, the protection time `DT_PROTECT` is started before the other direction can be enabled.
 - Adapter `timeOut` passes the timer status to the `E_TimeOut` block.
 
-`` internally, the protection timer qzms `qzms `qzms `qzms `000023qz
+` internally, the protection timer qzms `qzms `qzms `qzms `000023qz
 ```
 ### Output Modules
 

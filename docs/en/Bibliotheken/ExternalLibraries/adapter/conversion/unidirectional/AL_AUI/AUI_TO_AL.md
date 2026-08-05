@@ -39,7 +39,7 @@ The function block operates in an event-driven manner:
 
 2. The value of **AUI_IN.D1** (UINT) is passed to the data input `IN` of the conversion block.
 
-``` 3. The conversion is performed according to the IEC 61131 standard: A UINT value is converted into an LWORD value (the upper 48 bits are padded with zeros).
+`` 3. The conversion is performed according to the IEC 61131 standard: A UINT value is converted into an LWORD value (the upper 48 bits are padded with zeros).
 
 4. After the conversion is complete, the result is passed to **AL_OUT.D1** (LWORD).
 

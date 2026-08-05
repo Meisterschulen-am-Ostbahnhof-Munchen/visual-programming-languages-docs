@@ -55,7 +55,7 @@ Terminal output block. Parameter: `u16ObjId = OutputNumber_N1`. Displays the rec
 
 - The counter's adapter inputs `CU`, `CD`, `R`, and `LD` are directly connected to the corresponding logiBUS inputs.
 
-``` - The adapter outputs `QU` and `QD` of the counter are connected to the logiBUS outputs.
+`` - The adapter outputs `QU` and `QD` of the counter are connected to the logiBUS outputs.
 
 - The adapter output `CV` (count value) is connected to `ADI_TO_AUDI.ADI_IN`.
 - The AUDI output of `ADI_TO_AUDI` is connected to `Q_NumericValue_AUDI.u32NewValue`.

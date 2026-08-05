@@ -72,7 +72,7 @@ In the 4diac ecosystem, simple conversion function blocks such as `INT_TO_REAL` 
 
 ## Conclusion
 
-`AUDI_TO_ALR` is a minimal yet useful composite block for connecting two unidirectional adapters with different data types. It reduces wiring complexity and makes the type conversion explicitly visible. This block should always be used when a clean separation between adapter types and simple event and data transmission are required.
+AUDI_TO_ALR` is a minimal yet useful composite block for connecting two unidirectional adapters with different data types. It reduces wiring complexity and makes the type conversion explicitly visible. This block should always be used when a clean separation between adapter types and simple event and data transmission are required.
 
 ---
 

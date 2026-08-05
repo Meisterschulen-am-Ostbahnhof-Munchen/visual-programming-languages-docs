@@ -35,7 +35,7 @@ When an event occurs at input `REQ`, the block reads the current values of all n
 
 The logical function can be described as follows:
 
-`OUT = IN1 AND IN2 AND IN3 AND IN4 AND IN5 AND IN6 AND IN7 AND IN8 AND IN9`
+OUT = IN1 AND IN2 AND IN3 AND IN4 AND IN5 AND IN6 AND IN7 AND IN8 AND IN9`
 
 ## Technical Features
 * **Generic Block:** The block is implemented as an instance of a generic AND block (`GEN_AND`) that has been specialized for a fixed number of inputs (here, 9).

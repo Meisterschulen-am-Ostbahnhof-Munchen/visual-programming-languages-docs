@@ -3,7 +3,7 @@
 ## Introduction
 The data type `CF_NAME_T` is a structured data type used in the 4diac IDE to model ISO CF (Communication Function) or user information data arrays. It serves as a type definition for a fixed-length byte array and is typically used in the context of ISOBUS PGN (Parameter Group Number) communication.
 ## Interface Structure
-`CF_NAME_T` is a structured data type (STRUCT) and has no event or adapter interfaces. Its structure consists of a single data field.
+CF_NAME_T` is a structured data type (STRUCT) and has no event or adapter interfaces. Its structure consists of a single data field.
 ## **Data Inputs**
 This data type itself has no inputs. It defines the structure for data.
 
@@ -31,7 +31,7 @@ This data type is primarily used to represent the payload of ISOBUS PGN messages
 
 ## ⚖️ Comparison with Similar Blocks
 
-`CF_NAME_T` is a data type, not a function block. It can be compared to other structured data types (STRUCT) in 4diac that define arrays. Its distinguishing features are its fixed 8-byte length and its ISOBUS-specific semantics. A generic ``ARRAY [0..7] OF BYTE`` would be functionally similar, but it lacks the type-safe reusability and contextual reference.
+CF_NAME_T` is a data type, not a function block. It can be compared to other structured data types (STRUCT) in 4diac that define arrays. Its distinguishing features are its fixed 8-byte length and its ISOBUS-specific semantics. A generic ``ARRAY [0..7] OF BYTE`` would be functionally similar, but it lacks the type-safe reusability and contextual reference.
 
 ## Conclusion
 The ``CF_NAME_T`` data type is a specialized, reusable construct for the 4diac IDE that standardizes and simplifies the handling of 8-byte data blocks in ISOBUS applications. Its fixed size and predefined initialization increase the reliability and readability of application code based on the ISO 11783 standard.

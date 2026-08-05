@@ -25,7 +25,7 @@ This exercise demonstrates the calibration of an analog input (AnalogInput_I7) u
 - **Internal Parameters Used**: `Y_Offset = 0.0`, `Y_Scale = 100.0`
 - **Functionality**: Performs a calibration of the analog input value. Calculates an offset and scaling factor, which is written to the INI file. Inputs: X (raw value), CO (commit trigger), CS (read trigger). Outputs: Y (calibrated value), OFFSET, SCALE.
 
-``` - **INI_OFFSET** (Type: `eclipse4diac::storage::INI_AR2`)
+`` - **INI_OFFSET** (Type: `eclipse4diac::storage::INI_AR2`)
 
 - **Internal Parameters Used**: `SECTION = 'Uebung_028a_AR'`, `KEY = 'OFFSET'`, `DEFAULT_VALUE = 0.0`
 - **Functionality**: Reads the offset value from an INI file and provides it as an analogous value.
@@ -75,7 +75,7 @@ This exercise demonstrates the calibration of an analog input (AnalogInput_I7) u
 
 **Note**: Comments on the network indicate that the double conversion (AD_TO_AUDI → AUDI_TO_AR) is necessary to ensure correct signal representation. A direct AD_TO_AR would perform the bit interpretation of the analog-to-digital converter without going through the audio bus, which can lead to incorrect values.
 
-```## Summary
+``## Summary
 
 The exercise "Exercise_028c3_AR" implements a complete analog input calibration with persistent storage of offset and scaling in an INI file. The calibrated value is visualized on a display and simultaneously fed to a hysteresis controller, which switches a digital output. Control is achieved via three digital inputs: Enable (I1), Commit (I2), and Start (I3). This exercise teaches the use of adapters, signal conversions, and the integration of INI memory modules in 4diac.
 

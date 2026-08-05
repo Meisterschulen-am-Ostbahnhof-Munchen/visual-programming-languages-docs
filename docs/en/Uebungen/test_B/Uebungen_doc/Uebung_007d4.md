@@ -81,7 +81,7 @@ The output of the function block (e.g., an LED) lights up when the current rando
 
 **Summary of Signal Processing:**
 
-`E_CYCLE` → `FB_RANDOM` → `E_D_FF_ANY_HYS` → `F_MOVE` → `F_GT` → `DigitalOutput_Q1`
+E_CYCLE` → `FB_RANDOM` → `E_D_FF_ANY_HYS` → `F_MOVE` → `F_GT` → `DigitalOutput_Q1`
 
 **Learning Objectives of this Exercise:**
 

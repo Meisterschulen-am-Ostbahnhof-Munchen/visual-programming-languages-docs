@@ -21,7 +21,7 @@ Converts an event received via the **AE2 socket** into an internal event. An eve
 
 Converts an event received via the **AE2 socket** into an internal event. An event is output at `CNF` as soon as an event is present at the adapter.
 
-``` - **`AE2_E_TO_EVENT`** – Type: `adapter::conversion::bidirectional::AE2_E_TO_EVENT`
+`` - **`AE2_E_TO_EVENT`** – Type: `adapter::conversion::bidirectional::AE2_E_TO_EVENT`
 
 Converts an internal event (input `REQ`) into an event that can be sent via the **AE2 plug**. The acknowledgment event appears at output `CNF`.
 
@@ -68,7 +68,7 @@ The Boolean value `Q` of the flip-flop is converted into an AX adapter signal vi
 
 This exercise deepens the understanding of using **AE2 adapters** for bidirectional event communication and demonstrates the implementation of a **lockable toggle flip-flop**. The combined use of a set-reset flip-flop, an event switch, and adapter converters shows how event-driven feedback and external control interventions can be implemented modularly in the 4diac IDE.
 
-``` **Learning Objectives:**
+`` **Learning Objectives:**
 
 - Understanding AE2 adapter communication (socket/plug)
 - Building a toggle logic using `E_SR` and `E_SWITCH`

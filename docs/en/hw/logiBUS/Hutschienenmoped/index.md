@@ -9,7 +9,7 @@
 
 | AnalogInput_I2 | 32 | white | Potentiometer |
 
-`ADC1_CHANNEL_4,     /*!< ADC1 channel 4 is GPIO32 */`
+ADC1_CHANNEL_4,     /*!< ADC1 channel 4 is GPIO32 */`
 
 <https://docs.m5stack.com/en/unit/angle>
 

@@ -8,7 +8,7 @@ The DataPanel_MI_IW_AMP function block is an input interface function block (Ser
 ### **Event Inputs**
 - `INIT (EInit)` – Service initialization. Triggered to configure the function block and establish the connection to the hardware. This event transfers the parameters QI, PARAMS, u8SAMember, Input, and AnalogInput_hysteresis.
 
-``` - `REQ (Event)` – Service request. Triggers a new measurement query. The function block responds with the CNF event and provides the current amperage value on the IN output.
+`` - `REQ (Event)` – Service request. Triggers a new measurement query. The function block responds with the CNF event and provides the current amperage value on the IN output.
 
 ### **Event Outputs**
 - `INITO (EInit)` – Initialization confirmation. Sent after successful initialization. Outputs the QO and STATUS status.
@@ -35,7 +35,7 @@ No adapters defined.
 
 The function block acts as a service interface between the application and the hardware level. When `INIT` is triggered, the configuration parameters (address, channel assignment, hysteresis) are passed to the hardware. After successful initialization, `INITO` is sent. A `REQ` event triggers an immediate query of the current measurement value, which is provided on the output `IN` and acknowledged with `CNF`. Additionally, the hardware can generate a `IND` event upon changes to asynchronously inform the application.
 
-``IND`` The values of `QI` and `QO` control the activity state: The function block (FB) can only deliver data if `QI`=TRUE and `QO`=TRUE. In case of an error, `QO` is set to FALSE and an error message is stored in `STATUS`.
+`IND`` The values of `QI` and `QO` control the activity state: The function block (FB) can only deliver data if `QI`=TRUE and `QO`=TRUE. In case of an error, `QO` is set to FALSE and an error message is stored in `STATUS`.
 
 ## Technical Features
 - The FB is designed as a generic service interface block and requires a hardware-dependent implementation of the service functions.

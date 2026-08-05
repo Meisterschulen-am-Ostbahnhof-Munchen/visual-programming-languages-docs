@@ -59,7 +59,7 @@ The two digital inputs `Input_CU` and `Input_R` are connected to the `REQ` input
 
 The `FB_CTU` increments on every rising edge at `CU`. The current counter value is available at the data output `CV`. If the counter value is greater than or equal to the preset value `PV` (here `INT#5`), the output `Q` is set to `TRUE`. A `TRUE` signal at `R` resets the counter (CV = 0, Q = FALSE).
 
-``` - **Output**:
+`` - **Output**:
 
 After each counting operation, the counter's `CNF` event is forwarded to the digital output `Output_Q1` and to the terminal output `Q_NumericValue_PHYS`.
 

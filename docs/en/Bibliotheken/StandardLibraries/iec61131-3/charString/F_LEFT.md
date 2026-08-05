@@ -48,4 +48,4 @@ When the event `REQ` is triggered, the function block extracts the first charact
 - **F_MID**: Extracts characters from the middle of a string.
 
 ## Conclusion
-`F_LEFT` is a simple and efficient function block for extracting substrings from the beginning of a string. Its use is intuitive and it meets the requirements of IEC 61131-3.
+F_LEFT` is a simple and efficient function block for extracting substrings from the beginning of a string. Its use is intuitive and it meets the requirements of IEC 61131-3.

@@ -25,7 +25,7 @@ The AB2_B_TO_BYTE is a composite function block used for bidirectional conversio
 ## Functionality
 This function block operates as a bidirectional converter between AB2 and BYTE data types. Upon receiving a REQ event, the BYTE data at OUT is converted via the AB2_IN adapter. After successful conversion, the CNF event is triggered, and the converted data is output to IN.
 
-``` The internal networking shows the following signal flows:
+`` The internal networking shows the following signal flows:
 
 - REQ → AB2_IN.EI1 (Adapter input event)
 - AB2_IN.EO1 → CNF (Adapter output event)

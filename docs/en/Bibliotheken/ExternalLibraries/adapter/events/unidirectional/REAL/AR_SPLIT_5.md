@@ -21,7 +21,7 @@ None available.
 - **Socket (Input)**:
 - `IN`: Type `adapter::types::unidirectional::AR` – Receives a single AR adapter.
 
-``` - **Plugs (Outputs)**:
+`` - **Plugs (Outputs)**:
 
 - `OUT1`: Type `adapter::types::unidirectional::AR`
 - `OUT2`: Type `adapter::types::unidirectional::AR`

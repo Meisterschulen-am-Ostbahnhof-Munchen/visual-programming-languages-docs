@@ -37,7 +37,7 @@ Afterward, the block can perform two main operations:
 
 1. **Write (SET)**: The value assigned to `VALUE` is stored in the NVS under the specified key (`KEY`). Confirmation is provided via `SETO`.
 
-``` 2. **Read (GET)**: The value currently stored under the key is read from the NVS and made available via `VALUEO` at output `GETO`.
+`` 2. **Read (GET)**: The value currently stored under the key is read from the NVS and made available via `VALUEO` at output `GETO`.
 
 The data types of the inputs and outputs `VALUE`, `DEFAULT_VALUE`, and `VALUEO` must be consistent. The block is designed for repeated access to the same key.
 

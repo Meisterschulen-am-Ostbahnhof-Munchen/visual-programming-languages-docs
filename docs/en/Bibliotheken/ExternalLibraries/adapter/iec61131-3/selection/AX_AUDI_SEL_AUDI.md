@@ -44,7 +44,7 @@ The output value is provided exclusively via the adapter `OUT` as data element `
 
 1. **Providing Input Values** – The current values from `IN0` and `IN1`, respectively, are transferred to the function block via the event inputs `EI0` and `EI1`.
 
-``` 2. **Trigger Selection** – The external adapter `G` sends a selection signal via its event `E1`.
+`` 2. **Trigger Selection** – The external adapter `G` sends a selection signal via its event `E1`.
 
 3. **Internal Selection** – The event `E1` and the data input `G.D1` (as a selection criterion) are forwarded to the internal function block `F_SEL`. `F_SEL` selects according to IEC 61131 logic: If `G.D1` = FALSE (0), `IN0` is output; if `G.D1` = TRUE (not equal to 0), `IN1` is output. 4. **Output Result** – The confirming event (`CNF`) from `F_SEL` is passed to the adapter `OUT.E1`. Simultaneously, the output value `F_SEL.OUT` is transferred to `OUT.D1`.
 
@@ -60,7 +60,7 @@ The function block does not have its own state machine. Its behavior is entirely
 
 - **Init** – After power-up, no values are applied; `OUT.D1` contains no defined value until a selection cycle has been completed.
 
-``` - **Operating Phase** – When `EI0`/`EI1` occurs, the input values are set. When `G.E1` occurs, the selection is performed and the result is signaled via `OUT.E1`.
+`` - **Operating Phase** – When `EI0`/`EI1` occurs, the input values are set. When `G.E1` occurs, the selection is performed and the result is signaled via `OUT.E1`.
 
 There are no other internal states.
 
@@ -75,7 +75,7 @@ There are no other internal states.
 - **Adapter-based converters** – Other adapter blocks convert or scale values; this block does not perform an arithmetic operation, but only selects.
 
 ## Conclusion
-`AX_AUDI_SEL_AUDI` is a compact, event-driven selection block that embeds IEC selection logic in an adapter-based environment. Due to the clear separation of data inputs, control adapter, and output adapter, it is particularly suitable for modular, reusable automation solutions within the 4diac IDE environment. The limitation to two inputs and the use of standard types guarantee easy integration and predictable runtime behavior.
+AX_AUDI_SEL_AUDI` is a compact, event-driven selection block that embeds IEC selection logic in an adapter-based environment. Due to the clear separation of data inputs, control adapter, and output adapter, it is particularly suitable for modular, reusable automation solutions within the 4diac IDE environment. The limitation to two inputs and the use of standard types guarantee easy integration and predictable runtime behavior.
 
 ---
 

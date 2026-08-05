@@ -34,7 +34,7 @@ This function block does not use any adapters.
 ## Operation
 The operation is deterministic and stateless. Upon each occurrence of the `REQ` event, the function block performs a direct assignment. Each element of the input array `IN` is assigned to its corresponding, individually named output variable. The logic corresponds to the following ST assignment:
 
-```iec61131-3
+``iec61131-3
 OUT_00 := IN[0];
 OUT_01 := IN[1];
 OUT_02 := IN[2];

@@ -52,7 +52,7 @@ These constants are primarily used in ISOBUS-compliant control systems in agricu
 * **Direct Use of Numeric Values:** Using `ISOUSERHOME_e.intern` in the code is significantly more meaningful and less error-prone than directly using the number `0`.
 
 ## Conclusion
-`ISOUSERHOME_e` is an essential auxiliary construct for developing clear and maintainable ISOBUS applications in 4diac. By providing meaningful constant names, it abstracts from the underlying numeric values, thus improving the readability and robustness of the system design. It is a data-level component that supports the communication logic in higher-level function blocks.
+ISOUSERHOME_e` is an essential auxiliary construct for developing clear and maintainable ISOBUS applications in 4diac. By providing meaningful constant names, it abstracts from the underlying numeric values, thus improving the readability and robustness of the system design. It is a data-level component that supports the communication logic in higher-level function blocks.
 
 ---
 

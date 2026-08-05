@@ -5,7 +5,7 @@
 ## Introduction
 The Port Function Block serves as a Service Interface Function Block for configuring and managing digital inputs/outputs on an EliteBoard system. It enables the mapping of pin names to physical ports via an adapter mechanism.
 
-``` ![Port](Port.svg)
+`` ![Port](Port.svg)
 
 ## Interface Structure
 

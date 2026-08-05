@@ -61,7 +61,7 @@ Aktion: Ausführen von `alOff` – setzt `OUTPUT.D1 := FALSE; QO := QI`.
 
 - Bei erneutem `INIT` mit `QI = FALSE` → **DeInit** (Deinitialisierung).
 - Bei wiederholtem Ereignis `INPUT.E1` **und** der Bedingung  
-`INPUT.D1 > = THRESHOLD.D1 + (ABS(HYSTERESIS.D1) / 2.0)) → **sON** (switch on).
+INPUT.D1 > = THRESHOLD.D1 + (ABS(HYSTERESIS.D1) / 2.0)) → **sON** (switch on).
 
 4. **sON**
 
@@ -72,7 +72,7 @@ Transitions:
 - On subsequent `INIT` with `QI = FALSE` → **DeInit**
 - On repeated event `INPUT.E1` **and** the condition
 
-`INPUT.D1 < THRESHOLD.D1 - (ABS(HYSTERESIS.D1) / 2.0)` → **sOFF** (Shutdown).
+INPUT.D1 < THRESHOLD.D1 - (ABS(HYSTERESIS.D1) / 2.0)` → **sOFF** (Shutdown).
 
 5. **DeInit**
 
@@ -124,4 +124,4 @@ Compared to simple threshold switches (e.g., `GT`, `LT`), `Hysteresis_AR_AX`, th
 
 ## Conclusion
 
-`Hysteresis_AR_AX` is a reliable and clearly structured functional block for implementing an analog hysteresis circuit in the digital realm. The use of adapters (AR/AX) allows for easy integration into existing signal processing chains. The consistent magnitude calculation and strict turn-off ensure stable operation. Oscillation-free operation. This makes the module ideal for demanding automation tasks where precise switching points are required.
+Hysteresis_AR_AX` is a reliable and clearly structured functional block for implementing an analog hysteresis circuit in the digital realm. The use of adapters (AR/AX) allows for easy integration into existing signal processing chains. The consistent magnitude calculation and strict turn-off ensure stable operation. Oscillation-free operation. This makes the module ideal for demanding automation tasks where precise switching points are required.

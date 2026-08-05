@@ -59,4 +59,4 @@ Unlike function blocks such as `AUDI_MERGE_5` (combining multiple signals) or `A
 
 ## Conclusion
 
-`AUDI_SPLIT_5` is a simple and efficient adapter function block for signal distribution. Its generic design and the absence of event/data logic make it lightweight and versatile. It is ideally suited for all applications where an audio signal needs to be split across five parallel paths.
+AUDI_SPLIT_5` is a simple and efficient adapter function block for signal distribution. Its generic design and the absence of event/data logic make it lightweight and versatile. It is ideally suited for all applications where an audio signal needs to be split across five parallel paths.

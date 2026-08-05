@@ -48,7 +48,7 @@ The function block encapsulates the necessary steps of the physical conversion a
 
 | `xOver` | `BOOL` | `TRUE` if the physical value exceeds the upper ISOBUS limit. |
 
-`xUnder` | `BOOL` | `TRUE` if the physical value falls below the lower ISOBUS limit. |
+xUnder` | `BOOL` | `TRUE` if the physical value falls below the lower ISOBUS limit. |
 
 ### **Adapter**
 None.
@@ -96,4 +96,4 @@ The function block does not have an explicit state machine in the sense of an EC
 
 ## Conclusion
 
-`Q_NumericValue_PHYS_LREAL` is a practical and standards-compliant function block that simplifies integration with the ISOBUS system. The integration of physical conversion eliminates manual conversion logic, reducing the potential for errors and increasing reusability. This module is particularly suitable for control applications where physical values must be transmitted with high accuracy.
+Q_NumericValue_PHYS_LREAL` is a practical and standards-compliant function block that simplifies integration with the ISOBUS system. The integration of physical conversion eliminates manual conversion logic, reducing the potential for errors and increasing reusability. This module is particularly suitable for control applications where physical values must be transmitted with high accuracy.

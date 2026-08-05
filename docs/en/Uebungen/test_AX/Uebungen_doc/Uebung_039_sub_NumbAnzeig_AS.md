@@ -32,7 +32,7 @@ The sub-app has an adapter socket `STATE_NR` of type `unidirectional::AS`. This 
 
 4. `Q_NumericValue` then updates the display on the ISOBUS terminal under the predefined object ID `OutputNumber_N1`.
 
-` ... The entire processing is event-driven: As soon as the AS adapter input changes, the value is converted and the terminal display is updated.
+... The entire processing is event-driven: As soon as the AS adapter input changes, the value is converted and the terminal display is updated.
 
 ## Summary
 

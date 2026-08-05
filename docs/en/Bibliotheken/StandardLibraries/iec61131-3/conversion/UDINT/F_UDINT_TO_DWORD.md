@@ -55,4 +55,4 @@ Similar conversion blocks exist for other data types (e.g., `INT_TO_DINT`), but 
 * [Exercise_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)]
 
 ## Conclusion
-`F_UDINT_TO_DWORD` is a simple yet essential function block for type conversions in IEC 61499-based control systems. Its deterministic operation and clear interface make it a reliable tool for data transformations.
+F_UDINT_TO_DWORD` is a simple yet essential function block for type conversions in IEC 61499-based control systems. Its deterministic operation and clear interface make it a reliable tool for data transformations.

@@ -59,7 +59,7 @@ By evaluating the output event `SETOE` or the status string `"Key is read-only"`
 
 The file `settingsReadOnly.ini` is located on the ECU's memory under:
 
-`/data/settingsReadOnly.ini`
+/data/settingsReadOnly.ini`
 
 ### Transferring to the ECU
 Importing or updating the factory settings is easily done via the ECU's integrated **Web Interface** (File Server):

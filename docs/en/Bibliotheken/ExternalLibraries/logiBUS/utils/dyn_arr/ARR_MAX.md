@@ -89,7 +89,7 @@ Therefore, an explicit state graph is not required.
 
 | `MAX` (IEC 61131-3) | Maximum of two values | Works only with scalars, not arrays. `ARR_MAX` extends this to entire arrays. |
 
-`ARR_MAX` combines array traversal capability with simple maximum determination and is therefore a specialized, yet reusable function block for dynamic arrays.
+ARR_MAX` combines array traversal capability with simple maximum determination and is therefore a specialized, yet reusable function block for dynamic arrays.
 
 ## Conclusion
 

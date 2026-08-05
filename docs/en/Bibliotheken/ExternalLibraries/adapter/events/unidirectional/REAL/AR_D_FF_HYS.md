@@ -49,7 +49,7 @@ The function block internally contains a sub-FB `E_D_FF_ANY_HYS` from the librar
 
 - On each rising edge at the event input `I.E1`, the current data value from `I.D1` is taken.
 
-``` - The received value is only passed on to `Q.D1` if it differs from the last issued value by more than the configured hysteresis (`HYSTERESIS`).
+`` - The received value is only passed on to `Q.D1` if it differs from the last issued value by more than the configured hysteresis (`HYSTERESIS`).
 
 - The event `I.E1` is synchronously forwarded as `Q.E1` to inform the receiver of a new value.
 - Initialization (`INIT`) sets the hysteresis band and immediately confirms it with `INITO`. Changing `HYSTERESIS` during operation is not supported; the hysteresis is only applied during the INIT event.

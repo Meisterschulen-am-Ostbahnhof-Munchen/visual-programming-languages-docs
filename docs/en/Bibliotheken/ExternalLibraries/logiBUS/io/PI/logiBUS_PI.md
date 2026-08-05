@@ -4,7 +4,7 @@
 ## Introduction
 The function block `logiBUS_PI` is a collection of global constants for configuring pulse inputs in logiBUS systems. It defines preconfigured structures that represent the physical input pins of a logiBUS I/O module. These constants facilitate the simple and error-free assignment of hardware pins in higher-level function blocks or applications.
 ## Interface Structure
-`logiBUS_PI` is a GlobalConstants block, not a traditional function block with event or data interfaces. Therefore, it has no event inputs, outputs, data inputs, outputs, or adapters.
+logiBUS_PI` is a GlobalConstants block, not a traditional function block with event or data interfaces. Therefore, it has no event inputs, outputs, data inputs, outputs, or adapters.
 
 The interface consists solely of the defined global constants. Each constant is of data type `logiBUS::io::PI::logiBUS_PI_S` and is instantiated with a specific initial value.
 

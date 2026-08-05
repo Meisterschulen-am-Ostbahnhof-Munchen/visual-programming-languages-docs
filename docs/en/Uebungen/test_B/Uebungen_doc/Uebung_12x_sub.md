@@ -61,7 +61,7 @@ The flow within the sub-application forms a feedback loop that updates the data 
 This exercise demonstrates advanced data manipulation and event chains in 4diac, specifically how adapter callbacks can be used to send dynamically changing data (in this case, an incrementing value).
 
 ## Summary
-`Uebung_12x_sub` represents a sub-application that operates an ISOBUS callback mechanism. It uses an internal counter to increment the first byte of the 8-byte payload of a CAN message with each callback. This is ideal for testing cyclic transmissions and the correct handling of data changes in a distributed control system.
+Uebung_12x_sub` represents a sub-application that operates an ISOBUS callback mechanism. It uses an internal counter to increment the first byte of the 8-byte payload of a CAN message with each callback. This is ideal for testing cyclic transmissions and the correct handling of data changes in a distributed control system.
 
 It is ideal for testing cyclic transmissions and the correct handling of data changes in a distributed control system.
 

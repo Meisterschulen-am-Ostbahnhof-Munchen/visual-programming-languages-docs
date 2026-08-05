@@ -79,4 +79,4 @@ The function block itself does not have an explicit state machine in the XML. It
 Unlike simple word-to-signal converters (e.g., `FIELDBUS_WORD_TO_SIGNAL`), `AW_FIELDBUS_WORD_TO_SIGNAL_SCALED` features integrated validity storage and separate adapters for output and validity. This reduces wiring in the application and simplifies the handling of temporary errors. Function blocks without offset/scaling logic would require external computation blocks.
 
 ## Conclusion
-`AW_FIELDBUS_WORD_TO_SIGNAL_SCALED` is a compact, functional function block for conditioning fieldbus signals. It combines scaling, offset, and validity monitoring in a reusable module. The adapter-based interface and stored validity make it particularly suitable for industrial controls where signal quality and simple parameterization are paramount.
+AW_FIELDBUS_WORD_TO_SIGNAL_SCALED` is a compact, functional function block for conditioning fieldbus signals. It combines scaling, offset, and validity monitoring in a reusable module. The adapter-based interface and stored validity make it particularly suitable for industrial controls where signal quality and simple parameterization are paramount.

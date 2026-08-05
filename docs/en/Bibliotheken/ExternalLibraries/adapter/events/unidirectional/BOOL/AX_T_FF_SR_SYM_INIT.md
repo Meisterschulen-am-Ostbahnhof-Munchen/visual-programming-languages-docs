@@ -62,7 +62,7 @@ The component has a finite state machine with five states: **START**, **INIT**, 
 - When `QI = TRUE` occurs, the system switches to the **Init** state. The algorithms `initialize` set `QO := QI`.
 - Subsequently, based on `Q_INIT`, a decision is made whether to transition to the **SET** state (`Q_INIT = TRUE`) or the **RESET** state (`Q_INIT = FALSE`).
 
-``` - During operation, **S**, **R**, or **CLK** can be processed:
+`` - During operation, **S**, **R**, or **CLK** can be processed:
 
 - With **S** (Set), the adapter output `Q.D1` is set to `TRUE` in the algorithm `QI = TRUE`. `QO` receives the value of `QI`.
 - With **R** (Reset), `Q.D1` is set to `FALSE`, also only if `QI` is active.

@@ -81,7 +81,7 @@ This component is characterized by the encapsulation of the adapter interfaces a
 
 ## Conclusion
 
-`ASSEMBLE_AD_FROM_AQ` is a specialized adapter component for concatenating 16-byte-wide quarter data into a DWORD. Its purely adapter-based interface makes it flexible in its application, while internal synchronization via a flip-flop ensures data consistency during asynchronous events. It is ideally suited for use in modular IEC 61499 applications where data arrives in smaller units and must be assembled into a complete word at the receiving end.
+ASSEMBLE_AD_FROM_AQ` is a specialized adapter component for concatenating 16-byte-wide quarter data into a DWORD. Its purely adapter-based interface makes it flexible in its application, while internal synchronization via a flip-flop ensures data consistency during asynchronous events. It is ideally suited for use in modular IEC 61499 applications where data arrives in smaller units and must be assembled into a complete word at the receiving end.
 
 ---
 

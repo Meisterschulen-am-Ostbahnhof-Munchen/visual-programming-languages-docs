@@ -65,7 +65,7 @@ As soon as the digital input changes, the event `IND` is triggered. The current 
 - The `E_T_FF` then toggles its output `Q`.
 - Simultaneously, the event `EO` is sent from `E_T_FF` to the digital output, which receives the new value from `Q`.
 
-``` ... **Learning Objectives**:
+`` ... **Learning Objectives**:
 
 - Understanding the toggle flip-flop (T-FF)
 - Application of the enable block `E_PERMIT`

@@ -2,7 +2,7 @@
 ![sequence_T_04_loop_AX_ecc](./sequence_T_04_loop_AX_ecc.svg)
 * * * * * * * * * *
 ## Introduction
-`sequence_T_04_loop_AX` is a variant of `sequence_T_04_loop` that additionally uses adapters (`AX`) for the outputs. It controls a purely time-controlled, cyclic sequence with 4 output states.
+sequence_T_04_loop_AX` is a variant of `sequence_T_04_loop` that additionally uses adapters (`AX`) for the outputs. It controls a purely time-controlled, cyclic sequence with 4 output states.
 ![sequence_T_04_loop_AX](sequence_T_04_loop_AX.svg)
 ## Interface Structure
 

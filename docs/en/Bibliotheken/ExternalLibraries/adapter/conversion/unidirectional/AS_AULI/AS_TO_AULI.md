@@ -89,11 +89,11 @@ Error handling is not explicitly modeled; the inner function block outputs a def
 
 | `AS_TO_AULI` | ULINT | SINT | SINT to ULINT conversion |
 
-`AS_TO_AUDI` | UDINT | SINT | SINT to UDINT conversion (32-bit) |
+AS_TO_AUDI` | UDINT | SINT | SINT to UDINT conversion (32-bit) |
 
-`AS_TO_AWORD` | WORD | SINT | SINT to WORD conversion (16-bit) |
+AS_TO_AWORD` | WORD | SINT | SINT to WORD conversion (16-bit) |
 
-`AULI_TO_AS` | SINT | ULINT | ULINT to SINT conversion (with overflow limitation) |
+AULI_TO_AS` | SINT | ULINT | ULINT to SINT conversion (with overflow limitation) |
 
 This function block covers the conversion from an 8-bit signed type to a 64-bit unsigned type and is particularly suitable for applications requiring a large output range.
 
@@ -101,7 +101,7 @@ This function block covers the conversion from an 8-bit signed type to a 64-bit 
 
 ## Conclusion
 
-`AS_TO_AULI` is a simple yet important composite module for type conversion between SINT and ULINT adapters. It encapsulates the IEC 61131 conversion and enables type-safe, event-driven integration into automation systems. Its clear interface structure and use of standard libraries make it maintainable, reusable, and easily integrated into existing 4diac IDE projects.
+AS_TO_AULI` is a simple yet important composite module for type conversion between SINT and ULINT adapters. It encapsulates the IEC 61131 conversion and enables type-safe, event-driven integration into automation systems. Its clear interface structure and use of standard libraries make it maintainable, reusable, and easily integrated into existing 4diac IDE projects.
 
 --
 

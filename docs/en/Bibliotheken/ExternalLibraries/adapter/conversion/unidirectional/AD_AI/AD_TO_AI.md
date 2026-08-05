@@ -37,7 +37,7 @@ The function block operates in an event-driven manner:
 
 1. An event at socket **AD_IN.E1** triggers the internal instance `Convert` (type `F_DWORD_TO_INT`) via its event input **REQ**.
 
-``` 2. Simultaneously, the data value **AD_IN.D1** (DWORD) is passed to the data input **IN** of `Convert`.
+`` 2. Simultaneously, the data value **AD_IN.D1** (DWORD) is passed to the data input **IN** of `Convert`.
 
 3. The function `F_DWORD_TO_INT` performs the type conversion from DWORD to INT.
 

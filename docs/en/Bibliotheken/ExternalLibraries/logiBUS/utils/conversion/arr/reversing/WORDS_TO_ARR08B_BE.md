@@ -93,4 +93,4 @@ This function block is specifically optimized for big-endian applications and is
 
 ## Conclusion
 
-`WORDS_TO_ARR08B_BE` is a precise, event-driven function block for the big-endian conversion of four WORDS into an 8-byte array. It is ideally suited for all applications that require byte-wise representation in Network Byte Order and simplifies the interface between control logic and communication protocols.
+WORDS_TO_ARR08B_BE` is a precise, event-driven function block for the big-endian conversion of four WORDS into an 8-byte array. It is ideally suited for all applications that require byte-wise representation in Network Byte Order and simplifies the interface between control logic and communication protocols.

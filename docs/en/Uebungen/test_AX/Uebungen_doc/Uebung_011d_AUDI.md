@@ -3,7 +3,7 @@
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates passing a numeric input value (I1) to an output (N3) using an offset/scale effect. The incoming value is converted via an adapter and passed to an output function block.
-``` Example:
+`` Example:
 
 - Input of 100000 on I1 → N3 displays 0.00
 - Input of 50000 on I1 → N3 displays -500.00

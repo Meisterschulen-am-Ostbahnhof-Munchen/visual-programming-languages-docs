@@ -37,7 +37,7 @@ The function block `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` is used to process a
 
 | `SCALE_LOW` | REAL | `0.001` | Scaling factor for the lower byte |
 
-`OFFSET` | DINT | `0` | Offset added after scaling (in REAL) |
+OFFSET` | DINT | `0` | Offset added after scaling (in REAL) |
 
 ### **Data Outputs**
 
@@ -57,24 +57,24 @@ None.
 
 The algorithm `INIT` is empty, but the parameters `SCALE_HIGH`, `SCALE_LOW`, and `OFFSET` are linked to the event via the `With` relationship and can thus be set when `INIT` is called.
 
-``` 2. **Normal Processing** (`REQ`):
+`` 2. **Normal Processing** (`REQ`):
 
 - The input value `IN` is compared to a constant `VALID_SIGNAL_W` (from the imported name `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL::VALID_SIGNAL_W`):
 
-`IF (IN <= WORD_TO_UINT(VALID_SIGNAL_W)) THEN`
+IF (IN <= WORD_TO_UINT(VALID_SIGNAL_W)) THEN`
 
 - If the condition is **true** (signal valid):
 - The upper byte is extracted by right-shifting 8 bits and masking with `0x00FF`:
 
-`highByte := (IN >> 8) & 0xFF`
+highByte := (IN >> 8) & 0xFF`
 
 - The lower byte is obtained directly by masking:
 
-`lowByte := IN & 0xFF`
+lowByte := IN & 0xFF`
 
 - Both bytes are converted to `REAL` and multiplied by the respective scaling factors. and the offset is added:
 
-`OUT := highByte * SCALE_HIGH + lowByte * SCALE_LOW + OFFSET`
+OUT := highByte * SCALE_HIGH + lowByte * SCALE_LOW + OFFSET`
 
 - `VALID` is set to `TRUE`.
 - If the condition is **false** (invalid signal):

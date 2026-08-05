@@ -60,4 +60,4 @@ The function block does not have an internal state machine. The functionality is
 
 ## Conclusion
 
-`AUS_TO_AUDI` is a compact, specialized composite function block for lossless conversion between the unidirectional adapters OFF (USINT) and AUDI (UDINT). Thanks to the direct pass-through of events and data without additional logic, it is ideally suited as a building block in adapter-based control networks where simple type conversion at the communication layer is required.
+AUS_TO_AUDI` is a compact, specialized composite function block for lossless conversion between the unidirectional adapters OFF (USINT) and AUDI (UDINT). Thanks to the direct pass-through of events and data without additional logic, it is ideally suited as a building block in adapter-based control networks where simple type conversion at the communication layer is required.

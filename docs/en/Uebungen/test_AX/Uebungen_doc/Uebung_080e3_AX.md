@@ -45,7 +45,7 @@ The two digital inputs `DigitalInput_CLK_I1` and `DigitalInput_RST_I2` convert t
 
 - The clock signal `CLK_I1` (via `X_TO_B_I1.CNF`) starts the cyclic clock generator `E_CYCLE` (`START` event).
 
-``` - The reset signal `RST_I2` (via `X_TO_B_I2.CNF`) terminates the clock (`STOP` event) and simultaneously resets the counter `E_CTU` (`R` event).
+`` - The reset signal `RST_I2` (via `X_TO_B_I2.CNF`) terminates the clock (`STOP` event) and simultaneously resets the counter `E_CTU` (`R` event).
 
 3. **Incrementing the Counter**
 
@@ -76,7 +76,7 @@ After completing this exercise, you will be able to:
 
 **Learning Objectives**: Event-driven counters, state machines, hysteresis filters.
 
-``` **Prerequisites**: Basic knowledge of the 4diac IDE and an understanding of event and data flows.
+`` **Prerequisites**: Basic knowledge of the 4diac IDE and an understanding of event and data flows.
 
 **Difficulty Level**: Medium
 

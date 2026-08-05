@@ -25,7 +25,7 @@ The function block implements a simple passthrough function: The event (E1) rece
 - The type conversion from WORD to LWORD occurs automatically through the concatenation of the data lines (implicit type conversion).
 - The event and data paths are synchronized: Each incoming event triggers an outgoing event, accompanied by the current data value.
 
-``` - The function block is unidirectional and does not support reverse communication.
+`` - The function block is unidirectional and does not support reverse communication.
 
 ## State Overview
 Since the function block does not have its own state logic but only implements pass-through, there are no explicit states. Its function is purely combinatorial or event-driven without memory behavior.

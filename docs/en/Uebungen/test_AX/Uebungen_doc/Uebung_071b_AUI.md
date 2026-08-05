@@ -28,13 +28,13 @@ This exercise demonstrates the output of Wheel-Based Speed (WBSD) and Wheel-Base
 
 1. **Speed**
 
-`IA_WBSD.SPEED` → `CONV_SPEED.AUI_IN` → `CONV_SPEED.AUDI_OUT` → `Q_Speed.u32NewValue`
+IA_WBSD.SPEED` → `CONV_SPEED.AUI_IN` → `CONV_SPEED.AUDI_OUT` → `Q_Speed.u32NewValue`
 
 The wheel-based speed is converted into an audio signal via an adapter converter and displayed directly on the UT (Universal Display).
 
 2. **Distance**
 
-`IA_WBSD.DISTANCE` → `AUDI_SPLIT_2.IN`
+IA_WBSD.DISTANCE` → `AUDI_SPLIT_2.IN`
 
 The distance information is split into two parallel paths:
 

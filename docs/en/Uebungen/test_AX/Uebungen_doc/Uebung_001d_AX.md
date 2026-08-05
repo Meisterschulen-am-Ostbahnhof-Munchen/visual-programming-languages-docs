@@ -49,7 +49,7 @@ The signal flow in the sub-application occurs exclusively via **adapter connecti
 
 3. Both outputs are connected to the inputs of the **AX_AND_2** block (`IN1` and `IN2`).
 
-``` Since both inputs receive the same event simultaneously, the AND gate always results in an event at output `OUT`.
+`` Since both inputs receive the same event simultaneously, the AND gate always results in an event at output `OUT`.
 
 4. The output event of `AX_AND_2` is transferred to the adapter input `OUT` of the **DigitalOutput_Q1** module, which then sets the physical output **Output_Q1**.
 

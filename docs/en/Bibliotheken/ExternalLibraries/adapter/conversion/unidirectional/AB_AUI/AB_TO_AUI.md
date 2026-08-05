@@ -33,7 +33,7 @@ The FB has no direct data outputs at the top level. Data is output via the conne
 
 The module functions as a pure converter: As soon as an event occurs at socket `AB_IN` (typically via the adapter's event input), it is forwarded to the internal function block `F_BYTE_TO_UINT`. Simultaneously, the BYTE value provided by the adapter (via the AB adapter's data input `D1`) is passed to the conversion function block. The conversion function block converts the BYTE value into an equivalent UINT value. After successful conversion, an event is triggered via the event output of the internal function block, which is then passed to plug `AUI_OUT`. The converted UINT value is transferred via the conversion function block's data output to the AUI adapter's data input.
 
-``` The following diagram shows the internal wiring:
+`` The following diagram shows the internal wiring:
 
 - Event connection: `AB_IN.E1` → `Convert.REQ` → `Convert.CNF` → `AUI_OUT.E1`
 - Data connection: `AB_IN.D1` → `Convert.IN` → `Convert.OUT` → `AUI_OUT.D1`

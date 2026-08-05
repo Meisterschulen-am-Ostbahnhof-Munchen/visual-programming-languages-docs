@@ -51,9 +51,9 @@ The **DataPanel_MI_IW_0_10V** function block is a service-oriented interface mod
 
 | `QO` | `BOOL` | Output Qualifier (indicates valid processing) |
 
-`STATUS` | `STRING` | Service Status (Error/Success Message) |
+STATUS` | `STRING` | Service Status (Error/Success Message) |
 
-`IN` | `WORD` | Digitized Analog Value (0…10V, raw WORD value) |
+IN` | `WORD` | Digitized Analog Value (0…10V, raw WORD value) |
 
 ### **Adapter**
 

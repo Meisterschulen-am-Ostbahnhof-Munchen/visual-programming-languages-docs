@@ -33,10 +33,10 @@ This function block has no adapter interfaces.
 
 The functionality is deterministic and simple. Whenever an event arrives at the `REQ` input, the contained ST code is executed. This code directly assigns the value of the corresponding individual `IN_xx` input to each element of the output array `OUT`. The mapping is hardwired:
 
-`OUT[0] := IN_00;`
-`OUT[1] := IN_01;`
+OUT[0] := IN_00;`
+OUT[1] := IN_01;`
 ...
-`OUT[7] := IN_07;`
+OUT[7] := IN_07;`
 Immediately after this assignment, the `CNF` event is generated to signal the successful completion of the operation. There is no buffering, delay, or logical combination of the input values.
 
 ## Technical Features

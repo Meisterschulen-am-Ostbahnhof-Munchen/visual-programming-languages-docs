@@ -64,4 +64,4 @@ The circuit flow is as follows:
 
 ## Summary
 
-`Uebung_177_AX` demonstrates a classic application in automation technology: decoupling a mechanical button press from the execution time of an action. By using `AX_FB_R_TRIG`, it doesn't matter how long the button is held down; the process is only started once when the button is pressed. The timer `AX_TP` ensures that the output (e.g. a lamp or a motor) runs for an exact period of time (here 1 second).
+Uebung_177_AX` demonstrates a classic application in automation technology: decoupling a mechanical button press from the execution time of an action. By using `AX_FB_R_TRIG`, it doesn't matter how long the button is held down; the process is only started once when the button is pressed. The timer `AX_TP` ensures that the output (e.g. a lamp or a motor) runs for an exact period of time (here 1 second).

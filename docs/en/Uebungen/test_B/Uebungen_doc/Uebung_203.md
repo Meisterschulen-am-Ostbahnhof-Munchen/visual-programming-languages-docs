@@ -56,7 +56,7 @@ The circuit operates **event-driven** and utilizes both event and data connectio
 - The interlock block determines which channel is enabled based on priority (last wins) and triggers either `EO_UP` or `EO_DOWN`.
 - The event `EO_UP` triggers the digital output `Q1` via `REQ`, while `EO_DOWN` triggers the output `Q2`.
 
-` ... 2. **Data Flow**:
+... 2. **Data Flow**:
 
 - The current value of `I1` (via `IN` from `DigitalInput_I1`) is passed to the data input `DI_UP` of the interlock.
 - The value of `I2` is passed to `DI_DOWN`.

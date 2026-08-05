@@ -2,7 +2,7 @@
 ![F_NOW_MONOTONIC](https://github.com/user-attachments/assets/ae1652e1-fcca-44f4-aa16-c1cfa5a794cd)
 * * * * * * * * * *
 ## Introduction
-`F_NOW_MONOTONIC` is an IEC 61499-compliant function that returns a monotonic timestamp.
+F_NOW_MONOTONIC` is an IEC 61499-compliant function that returns a monotonic timestamp.
 Unlike the system time (`NOW`), this time is independent of external changes (e.g., time zones or NTP updates) and is therefore ideally suited for time-critical control applications or performance measurements.
 
 The function serves as a wrapper for the ST function `NOW_MONOTONIC()`.
@@ -97,7 +97,7 @@ Reliable timers for critical processes.
 ---
 
 ## Conclusion
-`F_NOW_MONOTONIC` is a lean yet essential component for applications requiring a reliable and monotonous time source.
+F_NOW_MONOTONIC` is a lean yet essential component for applications requiring a reliable and monotonous time source.
 
 Its close connection to the hardware and its independence from system time changes make it particularly suitable for industrial real-time applications.
 

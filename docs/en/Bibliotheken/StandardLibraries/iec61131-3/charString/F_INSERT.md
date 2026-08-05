@@ -47,4 +47,4 @@ The function block has no internal state. The operation is re-executed with each
 Unlike ``F_MID``, which extracts parts of a string, ``F_INSERT`` inserts one string into another.
 
 ## Conclusion
-``F_INSERT`` is a useful function block for applications that require precise string manipulation. Its simple yet effective functionality makes it a valuable tool in automation engineering.
+`F_INSERT`` is a useful function block for applications that require precise string manipulation. Its simple yet effective functionality makes it a valuable tool in automation engineering.

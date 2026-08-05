@@ -17,7 +17,7 @@ This exercise implements a **down counter (CTD)** according to IEC 61131-3 with 
 - Parameters: `QI` = `TRUE`, `Output` = `Output_Q1` (Hardware output Q1)
 - Outputs the logical state of the counter output `Q`.
 
-``` - **Q_NumericValue_PHYS_LREAL** – Type: `isobus::UT::Q::Q_NumericValue_PHYS_LREAL`
+`` - **Q_NumericValue_PHYS_LREAL** – Type: `isobus::UT::Q::Q_NumericValue_PHYS_LREAL`
 
 - Parameters: `stObj` = `OutputNumber_N3` (Terminal object for display)
 - Converts the current counter value (`CV`) into a physical quantity (`LREAL`) and displays it on the terminal.
@@ -42,7 +42,7 @@ After the counter processing is complete, the `CNF` event is triggered. This is 
 
 - The output value `FB_CTD_DINT.Q` (logical if the counter reading is ≤ 0) is sent via the data connection to `Output_Q1.OUT` and thus displayed at hardware output Q1.
 
-``` - The current counter reading `FB_CTD_DINT.CV` (type `DINT`) is passed to `Q_NumericValue_PHYS_LREAL.lrPhys` and displayed as the physical value `LREAL` on the terminal.
+`` - The current counter reading `FB_CTD_DINT.CV` (type `DINT`) is passed to `Q_NumericValue_PHYS_LREAL.lrPhys` and displayed as the physical value `LREAL` on the terminal.
 
 **Summary of Connections:**
 

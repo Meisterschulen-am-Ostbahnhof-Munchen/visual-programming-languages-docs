@@ -73,7 +73,7 @@ The function block has a single state, `REQ`:
 -
 ## Conclusion
 
-`GET_DWORD` is a simple yet useful building block for the controlled retrieval of a DWORD value from an externally referenced variable. Its strength lies in buffering the value and separating the source (InOut) from the output (OUT). Thanks to its simple state machine and the standardized `REQ`/`CNF` interface pattern, it can be easily integrated into existing 4diac applications.
+GET_DWORD` is a simple yet useful building block for the controlled retrieval of a DWORD value from an externally referenced variable. Its strength lies in buffering the value and separating the source (InOut) from the output (OUT). Thanks to its simple state machine and the standardized `REQ`/`CNF` interface pattern, it can be easily integrated into existing 4diac applications.
 
 --
 

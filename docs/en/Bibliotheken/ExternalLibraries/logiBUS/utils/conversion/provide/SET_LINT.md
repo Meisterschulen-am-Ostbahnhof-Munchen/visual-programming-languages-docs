@@ -67,4 +67,4 @@ The function block has only one state, `REQ`. After the algorithm executes, it a
 - **WRITE_LINT (hypothetical)**: A function block that explicitly writes an address via a pointer. `SET_LINT` operates without addressing and expects a directly linked variable.
 
 ## Conclusion
-`SET_LINT` is a minimalist function block that reliably performs a single task: assigning a `LINT` value to an InOut variable. Due to its simplicity, it is particularly suitable for performance-critical or manageable control tasks where no complex logic is required. The absence of error handling makes it transparent and predictable, but requires the user to correctly link the InOut variable.
+SET_LINT` is a minimalist function block that reliably performs a single task: assigning a `LINT` value to an InOut variable. Due to its simplicity, it is particularly suitable for performance-critical or manageable control tasks where no complex logic is required. The absence of error handling makes it transparent and predictable, but requires the user to correctly link the InOut variable.

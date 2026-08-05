@@ -7,7 +7,7 @@ This exercise introduces the most important ISOBUS-compliant function blocks (FB
 
 This exercise contains only the following predefined ISOBUS adapter function blocks from the library `isobus::tecu`. Each function block has a Boolean input `QI` (Quality/Enable), which is set to `TRUE` for activation. No additional connections are established between the function blocks.
 
-``` - **IA_GBSD** – Transmission/Brake Control (Generic Brake System Device)
+`` - **IA_GBSD** – Transmission/Brake Control (Generic Brake System Device)
 
 - **IA_VDS** – Virtual Display Server (Display and Operation)
 - **IA_WBSD** – Working Body Set Device (Implements)

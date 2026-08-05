@@ -26,7 +26,7 @@ The entire processing chain is started by the event `CallbackFB.REQ`. The data t
 
 1. **Signal Generation**
 
-`GEN_SIN` calculates a new sine wave value and outputs it via the data output `Out`. Simultaneously, the event `CNF` is sent.
+GEN_SIN` calculates a new sine wave value and outputs it via the data output `Out`. Simultaneously, the event `CNF` is sent.
 
 2. **Type Conversion LREAL → USINT**
 
@@ -34,7 +34,7 @@ The output `GEN_SIN.Out` is connected to `F_LREAL_TO_USINT.IN`. The function blo
 
 3. **Type Conversion USINT → BYTE**
 
-`F_USINT_TO_BYTE` receives the value `USINT` and outputs a value `BYTE`. The event sequence is: `GEN_SIN.CNF` → `F_LREAL_TO_USINT.REQ` → `F_LREAL_TO_USINT.CNF` → `F_USINT_TO_BYTE.REQ`.
+F_USINT_TO_BYTE` receives the value `USINT` and outputs a value `BYTE`. The event sequence is: `GEN_SIN.CNF` → `F_LREAL_TO_USINT.REQ` → `F_LREAL_TO_USINT.CNF` → `F_USINT_TO_BYTE.REQ`.
 
 4. **Byte Array Assembly**
 
@@ -42,11 +42,11 @@ The value `BYTE` is connected to `BYTES_TO_ARR08B.IN_00`. The remaining inputs (
 
 5. **Structuring for the CAN Message**
 
-`STRUCT_MUX` is triggered by the event of `BYTES_TO_ARR08B.CNF`. It constructs a CAN message of type `isobus::pgn::CAN_MSG` from the received data array (input `data`) and the predefined parameters (`u8Priority = 7`, `u16DaSize = 0`). The structured output `OUT` is forwarded to `CallbackFB.DI1`.
+STRUCT_MUX` is triggered by the event of `BYTES_TO_ARR08B.CNF`. It constructs a CAN message of type `isobus::pgn::CAN_MSG` from the received data array (input `data`) and the predefined parameters (`u8Priority = 7`, `u16DaSize = 0`). The structured output `OUT` is forwarded to `CallbackFB.DI1`.
 
 6. **Sending via CAN**
 
-`CallbackFB` receives the event `CNF` from `STRUCT_MUX` and sends the message via the adapter `PLUG1` to the PCAN Explorer. The next event is then triggered via `CallbackFB.REQ`, and the cycle begins again.
+CallbackFB` receives the event `CNF` from `STRUCT_MUX` and sends the message via the adapter `PLUG1` to the PCAN Explorer. The next event is then triggered via `CallbackFB.REQ`, and the cycle begins again.
 
 The event and data connections are implemented in the subapp diagram as follows (simplified representation):
 
@@ -58,7 +58,7 @@ BYTES_TO_ARR08B.CNF   →  STRUCT_MUX.REQ
 STRUCT_MUX.CNF        →  CallbackFB.CNF
 Data Flows:
 
-`GEN_SIN.Out` → `F_LREAL_TO_USINT.IN` → `OUT` → `F_USINT_TO_BYTE.IN` → `OUT` → `BYTES_TO_ARR08B.IN_00` → `OUT` → `STRUCT_MUX.data` → `OUT` → `CallbackFB.DI1`
+GEN_SIN.Out` → `F_LREAL_TO_USINT.IN` → `OUT` → `F_USINT_TO_BYTE.IN` → `OUT` → `BYTES_TO_ARR08B.IN_00` → `OUT` → `STRUCT_MUX.data` → `OUT` → `CallbackFB.DI1`
 
 ## Summary
 

@@ -23,11 +23,11 @@ This component uses only adapters of type `adapter::types::unidirectional::AD`:
 
 * **Socket (Input)**
 
-`IN` – A unidirectional analog-to-digital input that receives the signal to be split.
+IN` – A unidirectional analog-to-digital input that receives the signal to be split.
 
 * **Plugs (Outputs)**
 
-`OUT1`, `OUT2`, `OUT3`, `OUT4` – Four unidirectional analog-to-digital outputs that pass the signal received from the input onward identically.
+OUT1`, `OUT2`, `OUT3`, `OUT4` – Four unidirectional analog-to-digital outputs that pass the signal received from the input onward identically.
 
 ## Functionality
 

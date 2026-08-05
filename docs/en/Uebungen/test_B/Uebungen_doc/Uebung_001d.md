@@ -33,7 +33,7 @@ This exercise demonstrates the basic connection of a digital input (Input_I1) to
 
 4. The **AND_2** block calculates the logical AND operation of the two identical signals:
 
-`OUT = IN1 AND IN2 = IN (da beide Eingänge gleich sind)`.
+OUT = IN1 AND IN2 = IN (da beide Eingänge gleich sind)`.
 
 5. After the calculation, the event `CNF` is triggered and forwarded to the **DigitalOutput_Q1** block (event input `REQ`).
 

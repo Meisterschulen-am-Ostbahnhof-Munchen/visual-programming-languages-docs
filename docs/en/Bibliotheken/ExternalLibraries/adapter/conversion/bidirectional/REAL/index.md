@@ -1,4 +1,4 @@
 # Numeric Index (bidirectional)
-``````{index} single: Numerischer Index (bidirectional)
+`````{index} single: Numerischer Index (bidirectional)
 Here you will find all exercises from the `bidirectional` workspace, listed in ascending order.
 ...

@@ -67,7 +67,7 @@ The following applies:
 - Only the selected output receives a connection to the input; all other outputs remain inactive or retain their last state (depending on the specific adapter implementation).
 - After the switchover, the acknowledgment event `CNF` is triggered.
 
-``` The link between the event and data paths is ensured via the ``With`` attribute of ``REQ``: ``K`` is evaluated together with the event.
+`` The link between the event and data paths is ensured via the ``With`` attribute of ``REQ``: ``K`` is evaluated together with the event.
 
 ## Technical Features
 - **Generic Design**: The function block is defined as a generic type (``GEN_AS_DEMUX``). This allows it to be reused for any adapter instance of the unidirectional ``AS`` type without requiring any modifications to the source code.

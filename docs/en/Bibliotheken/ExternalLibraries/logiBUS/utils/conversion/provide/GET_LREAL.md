@@ -66,4 +66,4 @@ Components such as `GET_REAL` or `GET_INT` operate on the same principle, but wi
 
 ## Conclusion
 
-`GET_LREAL` is a simple, reliable block for buffered reading of a `LREAL` source. It is particularly suitable for decoupling read and processing logic and ensures that the provided value remains constant throughout a complete execution cycle.
+GET_LREAL` is a simple, reliable block for buffered reading of a `LREAL` source. It is particularly suitable for decoupling read and processing logic and ensures that the provided value remains constant throughout a complete execution cycle.

@@ -132,4 +132,4 @@ Some implementations use direct system time functions. `I_TD_TD` is specifically
 
 ## Conclusion
 
-`I_TD_TD` extends the standardized ISOBUS time block `I_TD` by adding a direct output of the IEC 61131-3 date-time type `DT`. This simplifies integration into control applications that do not want to perform a separate date conversion. The transparent transmission of raw data and timeout information, as well as the consistent event handling, make this block a practical and standards-compliant component for ISOBUS-based systems.
+I_TD_TD` extends the standardized ISOBUS time block `I_TD` by adding a direct output of the IEC 61131-3 date-time type `DT`. This simplifies integration into control applications that do not want to perform a separate date conversion. The transparent transmission of raw data and timeout information, as well as the consistent event handling, make this block a practical and standards-compliant component for ISOBUS-based systems.

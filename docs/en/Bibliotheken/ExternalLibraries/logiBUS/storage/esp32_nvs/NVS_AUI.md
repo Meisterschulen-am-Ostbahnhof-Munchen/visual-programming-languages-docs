@@ -66,7 +66,7 @@ After initialization, the stored value for the specified key is automatically re
 
 A new value can be received via the input adapter `AUI_IN`. An incoming event (E1) with the associated data (D1) is forwarded to the internal NVS function block, which persistently stores the value under the initialized key.
 
-``` The entire data and event flow is implemented by the embedded function block `NVS` (from the library `logiBUS::storage::esp32_nvs`).
+`` The entire data and event flow is implemented by the embedded function block `NVS` (from the library `logiBUS::storage::esp32_nvs`).
 
 ## Technical Features
 - **AUI Adapter Interface**
@@ -98,4 +98,4 @@ The FB is in **idle state** after startup.
 Compared to the direct **NVS** function block, `NVS_AUI` offers a higher level of abstraction through its adapter interface. While the basic function block requires separate events for reading (`GET`) and writing (`SET`), `NVS_AUI` simplifies data flow through unidirectional adapters and automatic read operation after INIT. Other memory modules (e.g., `F_MMAP`, `F_FILE`) typically use file-based or memory-mapping methods; `NVS_AUI` is specifically optimized for non-volatile memory with key-value pairs.
 
 ## Conclusion
-`NVS_AUI` is a practical functional block for persistent data storage in automation systems. The combination of NVS memory and an AUI adapter allows for easy integration into existing IEC 61499 applications, reduces wiring effort, and ensures a clear separation between memory logic and communication.
+NVS_AUI` is a practical functional block for persistent data storage in automation systems. The combination of NVS memory and an AUI adapter allows for easy integration into existing IEC 61499 applications, reduces wiring effort, and ensures a clear separation between memory logic and communication.

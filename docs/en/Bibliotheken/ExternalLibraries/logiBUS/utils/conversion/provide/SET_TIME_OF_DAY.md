@@ -67,4 +67,4 @@ The function block has a single state:
 - **Standard MOVE Blocks**: Many IEC 61499 libraries contain generic function blocks such as `MOVE` or `ASSIGN`. The block presented here is a dedicated and type-safe implementation for `TIME_OF_DAY`.
 
 ## Conclusion
-`SET_TIME_OF_DAY` is a minimal yet useful function block for overriding a `TIME_OF_DAY` InOut variable. Its simple structure makes it reliable and easy to understand. It can be effectively used in combination with other function blocks in timing and configuration applications.
+SET_TIME_OF_DAY` is a minimal yet useful function block for overriding a `TIME_OF_DAY` InOut variable. Its simple structure makes it reliable and easy to understand. It can be effectively used in combination with other function blocks in timing and configuration applications.

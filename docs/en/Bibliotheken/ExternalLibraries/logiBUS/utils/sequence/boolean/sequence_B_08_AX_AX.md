@@ -51,13 +51,13 @@ The FB has no direct data inputs. The transition conditions are read exclusively
 
 | `DO_S4` | Output active when state 4 is active. |
 
-`DO_S5` | Output active when state 5 is active. |
+DO_S5` | Output active when state 5 is active. |
 
-`DO_S6` | Output active when state 6 is active. |
+DO_S6` | Output active when state 6 is active. |
 
-`DO_S7` | Output active when state 7 is active. |
+DO_S7` | Output active when state 7 is active. |
 
-`DO_S8` | Output active when state 8 is active. |
+DO_S8` | Output active when state 8 is active. |
 
 **Sockets (Inputs – Type `adapter::types::unidirectional::AX`)**
 
@@ -65,21 +65,21 @@ The FB has no direct data inputs. The transition conditions are read exclusively
 
 |------|--------------|
 
-`DI_S1` | Signal for transition from start state to state 1. |
+DI_S1` | Signal for transition from start state to state 1. |
 
-`DI_S2` | Signal for transition from state 1 to state 2. |
+DI_S2` | Signal for transition from state 1 to state 2. |
 
 | `DI_S3` | Signal for transition from state 2 to state 3. |
 
-`DI_S4` | Signal for transition from state 3 to state 4. |
+DI_S4` | Signal for transition from state 3 to state 4. |
 
-`DI_S5` | Signal for transition from state 4 to state 5. |
+DI_S5` | Signal for transition from state 4 to state 5. |
 
-`DI_S6` | Signal for transition from state 5 to state 6. |
+DI_S6` | Signal for transition from state 5 to state 6. |
 
-`DI_S7` | Signal for transition from state 6 to state 7. |
+DI_S7` | Signal for transition from state 6 to state 7. |
 
-`DI_S8` | Signal for transition from state 7 to state 8. |
+DI_S8` | Signal for transition from state 7 to state 8. |
 
 ## Functionality
 

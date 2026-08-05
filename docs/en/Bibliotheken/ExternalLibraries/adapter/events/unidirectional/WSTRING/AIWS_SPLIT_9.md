@@ -71,7 +71,7 @@ The function block has no internal states. It is purely combinatorial and does n
 
 ## Conclusion
 
-`AIWS_SPLIT_9` is a simple yet useful generic function block for multiplying a unidirectional AIWS adapter signal to nine outputs. It avoids unnecessary complexity, requires no event control, and can be used directly in IEC 61499 applications without additional configuration. Thanks to its generic nature, it is flexibly adaptable to various adapter types and is particularly suitable for signal distribution in modular automation architectures.
+AIWS_SPLIT_9` is a simple yet useful generic function block for multiplying a unidirectional AIWS adapter signal to nine outputs. It avoids unnecessary complexity, requires no event control, and can be used directly in IEC 61499 applications without additional configuration. Thanks to its generic nature, it is flexibly adaptable to various adapter types and is particularly suitable for signal distribution in modular automation architectures.
 
 ---
 

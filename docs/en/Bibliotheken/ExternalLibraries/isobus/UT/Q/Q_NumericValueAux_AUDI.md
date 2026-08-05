@@ -55,7 +55,7 @@ This function block implements the **Change Numeric Value** command according to
 
 The function block (FB) expects a valid object ID (`u16ObjId`) via the INIT input. After successful initialization, a new value can be passed via the socket adapter (`u32NewValue`). The socket adapter event (E1) triggers internal processing, in which the old value is returned via the plug adapter (`u32OldValue`). The result is signaled via the CNF output with status and return code (`s16result`).
 
-``` Possible return codes are:
+`` Possible return codes are:
 
 - `VT_E_NO_ERR (0)` – Success
 - `VT_E_OVERFLOW (-6)` – Buffer overflow

@@ -95,7 +95,7 @@ Not applicable for a data type.
 #
 ## ## Functionality
 
-`ST64X` itself has no "function" in the sense of an active component that performs calculations or changes states. Its "function" is to provide a defined structure that serves as a template for data objects. Once instantiated, a variable of type `ST64X` holds 64 individual BOOL values that can be read or written directly via their names (e.g., `MyVariable.X_00`, `MyVariable.B_63`). It is a passive data container.
+ST64X` itself has no "function" in the sense of an active component that performs calculations or changes states. Its "function" is to provide a defined structure that serves as a template for data objects. Once instantiated, a variable of type `ST64X` holds 64 individual BOOL values that can be read or written directly via their names (e.g., `MyVariable.X_00`, `MyVariable.B_63`). It is a passive data container.
 
 ## Technical Features
 * **Structured Data:** Defines a fixed arrangement of 64 BOOL variables.
@@ -123,9 +123,9 @@ Since `ST64X` is a data type, it is not directly compared to function blocks, bu
 
 The data type ``ST64X`` is a useful construct in 4diac-ide for defining a structured variable containing 64 individual BOOL values. It provides a clear, named interface to each individual bit, improving code readability and maintainability, especially in applications requiring fine-grained control or status indication with many binary flags. It is a good alternative to ``ARRAY OF BOOL`` or bit manipulations on integer types when the individual meaning of each bit is paramount.
 
-``ST64X`` or bit manipulations on integer types when the individual meaning of each bit is crucial.
+`ST64X`` or bit manipulations on integer types when the individual meaning of each bit is crucial.
 
-``ST64X`` is a useful construct in 4diac-ide for defining a structured variable containing 64 individual BOOL values.
+`ST64X`` is a useful construct in 4diac-ide for defining a structured variable containing 64 individual BOOL values.
 
 ---
 

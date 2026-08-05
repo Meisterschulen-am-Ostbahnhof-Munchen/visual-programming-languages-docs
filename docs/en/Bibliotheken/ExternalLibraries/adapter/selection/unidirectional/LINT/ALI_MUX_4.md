@@ -72,7 +72,7 @@ The function block essentially has a single operational state. Upon a REQ event,
 
 ## Conclusion
 
-`ALI_MUX_4` is a specialized, event-driven multiplexer for ALI adapters with four inputs. It is ideally suited for applications where one ALI data source needs to be selected from multiple sources. Its simple interface (one index and one control event) makes it easy to integrate, but requires adherence to the valid index range of 0–3. This component adds a basic selection function to the ALI adapter family.
+ALI_MUX_4` is a specialized, event-driven multiplexer for ALI adapters with four inputs. It is ideally suited for applications where one ALI data source needs to be selected from multiple sources. Its simple interface (one index and one control event) makes it easy to integrate, but requires adherence to the valid index range of 0–3. This component adds a basic selection function to the ALI adapter family.
 
 ---
 

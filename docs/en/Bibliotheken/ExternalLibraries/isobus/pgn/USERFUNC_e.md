@@ -4,7 +4,7 @@
 ## Introduction
 The global constant `USERFUNC_e` defines an enumeration of numeric values that represent specific device functions or roles within an ISOBUS network. It serves for the standardized and readable identification of various ISOBUS device types and functions in control applications.
 ## Interface Structure
-`USERFUNC_e` is a collection of global constants and not a function block. Therefore, there are no event or data interfaces in the conventional sense. The structure consists exclusively of named constants of type `SINT` (short integer).
+USERFUNC_e` is a collection of global constants and not a function block. Therefore, there are no event or data interfaces in the conventional sense. The structure consists exclusively of named constants of type `SINT` (short integer).
 
 ## **Data Inputs**
 *Not applicable.* This resource provides constants and has no inputs.
@@ -17,7 +17,7 @@ The global constant `USERFUNC_e` defines an enumeration of numeric values that r
 *Not applicable.*
 
 ## Functionality
-`USERFUNC_e` is a collection of predefined constant values. Each name (e.g., `task_controller`) is associated with a fixed numeric value (e.g., `1`). These constants can be used throughout the application to identify device roles, perform comparisons, or set parameters, significantly improving code maintainability and readability compared to directly using "magic numbers."
+USERFUNC_e` is a collection of predefined constant values. Each name (e.g., `task_controller`) is associated with a fixed numeric value (e.g., `1`). These constants can be used throughout the application to identify device roles, perform comparisons, or set parameters, significantly improving code maintainability and readability compared to directly using "magic numbers."
 
 ## Technical Specifications
 * **Data Type:** All constants are of type `SINT` (8-bit signed integer).

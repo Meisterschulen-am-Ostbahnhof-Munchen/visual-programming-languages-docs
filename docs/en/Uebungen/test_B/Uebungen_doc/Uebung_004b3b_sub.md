@@ -31,13 +31,13 @@ The sub-application contains two function blocks:
 
 The sub-application has two event inputs (`IND` and `RESET`), two event outputs (`EO` and `SET`), and one data output (`Q`).
 
-``` **Event Connections**:
+`` **Event Connections**:
 
 - The input `IND` is connected to the event input `EI` of `E_SWITCH`.
 - The output `EO0` of `E_SWITCH` leads to the set input `S` of `E_SR` and simultaneously to the sub-application output `SET`.
 - The output `EO1` of `E_SWITCH` is connected to the reset input `R` of `E_SR`.
 
-``` - The event output `EO` of `E_SR` is directly forwarded to the sub-application output `EO`.
+`` - The event output `EO` of `E_SR` is directly forwarded to the sub-application output `EO`.
 
 - The sub-application input `RESET` is also connected to the reset input `R` of `E_SR`.
 

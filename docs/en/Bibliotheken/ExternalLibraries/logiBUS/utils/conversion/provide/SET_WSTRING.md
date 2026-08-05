@@ -43,7 +43,7 @@ The value `WSTRING`, which is present at input `IN`, is copied unchanged to the 
 ## Technical Features
 - **InOut Variable**: `OUT` is declared as an InOut parameter. This means that the variable can be both read and written, and its lifetime is outside the function block. The function block overwrites the current content of `OUT` with the value of `IN`.
 
-``` - **Data type `WSTRING`**: This is a string type that supports wide characters (Unicode). The function block does not perform any length checks or conversions – the assignment is direct.
+`` - **Data type `WSTRING`**: This is a string type that supports wide characters (Unicode). The function block does not perform any length checks or conversions – the assignment is direct.
 
 - **Simplest State Machine**: The state machine consists of a single state (`REQ`) that covers all functionality. There are no branches or time delays.
 

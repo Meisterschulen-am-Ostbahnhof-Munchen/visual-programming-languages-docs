@@ -43,4 +43,4 @@ This function block has no state machines. Its behavior is determined solely by 
 - Variants with more outputs may exist (e.g., `ALR_SPLIT_4`), allowing for a higher number of distributions.
 
 ## Conclusion
-`ALR_SPLIT_2` is a simple and effective component for splitting an incoming ALR adapter signal to two outputs. Due to its generic nature and lack of logic, it is ideally suited for clean signal distribution in IEC 61499 systems.
+ALR_SPLIT_2` is a simple and effective component for splitting an incoming ALR adapter signal to two outputs. Due to its generic nature and lack of logic, it is ideally suited for clean signal distribution in IEC 61499 systems.

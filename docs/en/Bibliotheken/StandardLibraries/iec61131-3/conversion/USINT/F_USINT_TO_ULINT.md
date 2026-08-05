@@ -32,7 +32,7 @@ The function block performs a direct conversion of the input value `IN` of type 
 # Technical Features
 - The conversion is performed using a single algorithm (`REQ`), which is executed when the `REQ` event is triggered.
 
-``` - The algorithm is implemented in ST (Structured Text) and consists of a simple assignment: `OUT := IN;`.
+`` - The algorithm is implemented in ST (Structured Text) and consists of a simple assignment: `OUT := IN;`.
 
 ## State Overview
 The function block has no internal states. The conversion occurs immediately upon triggering the `REQ` event.

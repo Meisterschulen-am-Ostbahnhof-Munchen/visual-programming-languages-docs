@@ -68,9 +68,9 @@ This function block does **not have a state machine (ECC)**, as it does not proc
 
 | `AUDI_SPLIT_2` | Distributes an audio signal to two outputs. | Similar principle, but with two outputs. |
 
-`AUDI_SPLIT_4` | Distributes an audio signal to four outputs. | This is a simple 1:4 splitter. |
+AUDI_SPLIT_4` | Distributes an audio signal to four outputs. | This is a simple 1:4 splitter. |
 
-`AUDI_MERGE` | Combines multiple audio inputs into one output. | Inverted splitter (1:1 mapping, but reversed). |
+AUDI_MERGE` | Combines multiple audio inputs into one output. | Inverted splitter (1:1 mapping, but reversed). |
 
 Generic splitters | Can be applied to other adapters via type parameters. | Offer more flexibility than hardwired versions. |
 

@@ -41,13 +41,13 @@ No direct data outputs – the values are provided via the adapter outputs.
 
 | `IN` | Input | `adapter::types::unidirectional::AUS` | Value to be demultiplexed. |
 
-`OUT1` | Output | `adapter::types::unidirectional::AUS` | First output channel. |
+OUT1` | Output | `adapter::types::unidirectional::AUS` | First output channel. |
 
-`OUT2` | Output | `adapter::types::unidirectional::AUS` | Second output channel. |
+OUT2` | Output | `adapter::types::unidirectional::AUS` | Second output channel. |
 
-`OUT3` | Output | `adapter::types::unidirectional::AUS` | Third output channel. |
+OUT3` | Output | `adapter::types::unidirectional::AUS` | Third output channel. |
 
-`OUT4` | Output | `adapter::types::unidirectional::AUS` | Fourth output channel. |
+OUT4` | Output | `adapter::types::unidirectional::AUS` | Fourth output channel. |
 
 All adapters are unidirectional type `AUS` and transmit data in the specified direction.
 

@@ -72,7 +72,7 @@ The `ADI_SPLIT_8` FB has no internal states or an ECC (Execution Control Chart).
 
 ## Conclusion
 
-`ADI_SPLIT_8` is a powerful, generic split block for unidirectional ADI adapters in IEC 61499 applications. It significantly reduces wiring effort, improves clarity, and allows for the easy duplication of an adapter path. Thanks to its generic parameterization and event-free operation, it is particularly well-suited for data-driven automation systems that require reliable, low-latency signal distribution.
+ADI_SPLIT_8` is a powerful, generic split block for unidirectional ADI adapters in IEC 61499 applications. It significantly reduces wiring effort, improves clarity, and allows for the easy duplication of an adapter path. Thanks to its generic parameterization and event-free operation, it is particularly well-suited for data-driven automation systems that require reliable, low-latency signal distribution.
 
 ---
 

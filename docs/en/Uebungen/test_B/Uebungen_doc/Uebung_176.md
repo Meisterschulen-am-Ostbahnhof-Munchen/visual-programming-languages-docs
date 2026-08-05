@@ -42,7 +42,7 @@ This exercise is designed as a template. Currently, no connections are defined i
 3. Complete the circuit according to the instructions (connecting input events and Boolean signals).
 
 ## Summary
-`Uebung_176` provides a compact environment for learning the `E_TRIG` block. Manually completing the connections deepens the understanding of event-driven edge detection in control systems.
+Uebung_176` provides a compact environment for learning the `E_TRIG` block. Manually completing the connections deepens the understanding of event-driven edge detection in control systems.
 
 ---
 

@@ -22,7 +22,7 @@ The function block `LOG_16` is a ring logger designed for the cyclic recording o
 This function block has no adapter interfaces.
 
 ## Functionality
-`LOG_16` implements a fixed-size, first-in-first-out (FIFO) ring buffer with 16 elements. Upon each incoming `REQ` event, the following algorithm is executed:
+LOG_16` implements a fixed-size, first-in-first-out (FIFO) ring buffer with 16 elements. Upon each incoming `REQ` event, the following algorithm is executed:
 
 1. The current value at input `IN` is stored as the newest entry.
 
@@ -58,7 +58,7 @@ The function block does not possess a persistent internal state in the sense of 
 * [Exercise_122b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)]
 
 ## Conclusion
-`LOG_16` is a useful and generic function block for basic logging and buffering tasks in 4diac FORTE applications. Its strengths lie in its simplicity, generic type support, and deterministic behavior. The fixed buffer size of 16 is sufficient for many monitoring tasks; however, applications requiring a different buffer depth or selective reading will need adapted or extended blocks.
+LOG_16` is a useful and generic function block for basic logging and buffering tasks in 4diac FORTE applications. Its strengths lie in its simplicity, generic type support, and deterministic behavior. The fixed buffer size of 16 is sufficient for many monitoring tasks; however, applications requiring a different buffer depth or selective reading will need adapted or extended blocks.
 
 ---
 

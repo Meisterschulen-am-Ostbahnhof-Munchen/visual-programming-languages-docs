@@ -22,7 +22,7 @@ This exercise implements a toggle flip-flop (T-FF) that is switched by two indep
 - `InputEvent` = `BUTTON_SINGLE_CLICK`
 - **Description**: Reads the digital input I1 and generates an event `IND` on a short key press (single click).
 
-``` - **DigitalInput_CLK_I2**
+`` - **DigitalInput_CLK_I2**
 
 - **Type**: `logiBUS::io::DI::logiBUS_IE`
 - **Parameters**:
@@ -32,7 +32,7 @@ This exercise implements a toggle flip-flop (T-FF) that is switched by two indep
 - `InputEvent` = `BUTTON_SINGLE_CLICK`
 - **Description**: Reads the digital input I2 and generates an event `IND` when a key is briefly pressed.
 
-``` - **E_MERGE_2**
+`` - **E_MERGE_2**
 
 - **Type**: `iec61499::events::E_MERGE_2`
 - **Parameters**: None
@@ -46,7 +46,7 @@ This exercise implements a toggle flip-flop (T-FF) that is switched by two indep
 
 The system operates in an event-driven manner. As soon as the user briefly presses the button at input I1 or I2, the corresponding `DigitalInput` block generates an event `IND`. These two events are combined via the `E_MERGE_2` block – regardless of which button was pressed, the `E_MERGE_2` triggers an event at its output `EO`. This event is then directly forwarded to the clock input `CLK` of the T-FF (`AX_T_FF`). The T-FF toggles its output state with each incoming event. The current state `Q` of the T-FF is transferred via an adapter connection to the digital output `DigitalOutput_Q1`, which controls the physical output Q1.
 
-``` **Connection Overview**:
+`` **Connection Overview**:
 
 - Event Connections:
 - `DigitalInput_CLK_I1.IND` → `E_MERGE_2.EI1`

@@ -49,7 +49,7 @@ The exercise `Uebung_002a5b_AX` implements a control logic in which the states o
 
 1. **Input Acquisition**: The function blocks `DigitalInput_I1`, `DigitalInput_I2`, and `DigitalInput_I3` continuously read the states of the physical inputs `Input_I1`, `Input_I2`, and `Input_I3`, respectively. Their respective data outputs (`DigitalInput_I1.IN`, `DigitalInput_I2.IN`, `DigitalInput_I3.IN`) provide these states.
 
-``` 2. **Logical OR operation**: The data outputs of the three input blocks are directly connected to the data inputs of the OR block `AX_OR_3`:
+`` 2. **Logical OR operation**: The data outputs of the three input blocks are directly connected to the data inputs of the OR block `AX_OR_3`:
 
 * `DigitalInput_I1.IN` is connected to `AX_OR_3.IN1`.
 * `DigitalInput_I2.IN` is connected to `AX_OR_3.IN2`.
@@ -80,7 +80,7 @@ This means that all three digital outputs `Output_Q1`, `Output_Q2`, and `Output_
 
 **Starting the Exercise**: Load the application `Uebung_002a5b_AX` onto a 4diac-compatible controller (PLC or runtime environment). Observe the behavior of outputs Q1, Q2, and Q3 when you manually switch digital inputs I1, I2, or I3.
 
-```## Summary
+``## Summary
 The exercise `Uebung_002a5b_AX` provides a practical introduction to combining digital I/O signals. It demonstrates how to combine multiple inputs into a single control signal using a logical OR operation. This signal is then split to enable synchronized control of multiple outputs. The core principle is that all three outputs (Q1, Q2, Q3) become active as soon as at least one of the three inputs (I1, I2, I3) is active. This type of group control is a fundamental function in many automation applications.
 
 ---

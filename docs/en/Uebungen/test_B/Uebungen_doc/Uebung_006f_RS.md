@@ -13,13 +13,13 @@ The exercise consists of five function blocks that are directly connected in the
 
 | `DigitalInput_S` | logiBUS::io::DI::logiBUS_IX | Digital input for the set input (S) |
 
-`DigitalInput_R` | logiBUS::io::DI::logiBUS_IX | Digital input for the reset input (R1) |
+DigitalInput_R` | logiBUS::io::DI::logiBUS_IX | Digital input for the reset input (R1) |
 
-`DigitalInput_CLK` | logiBUS::io::DI::logiBUS_IX | Digital input for the clock input (CLK) |
+DigitalInput_CLK` | logiBUS::io::DI::logiBUS_IX | Digital input for the clock input (CLK) |
 
-`RS_T_FF` | logiBUS::bistableElements::FB_RS_T_FF | Reset-dominant toggle flip-flop |
+RS_T_FF` | logiBUS::bistableElements::FB_RS_T_FF | Reset-dominant toggle flip-flop |
 
-`DigitalOutput_Q1` | logiBUS::io::DQ::logiBUS_QX | Digital output for the flip-flop signal (Q1) |
+DigitalOutput_Q1` | logiBUS::io::DQ::logiBUS_QX | Digital output for the flip-flop signal (Q1) |
 
 ### Details of the Function Blocks
 
@@ -68,7 +68,7 @@ The program flow is controlled by the physical inputs I1, I2, and I3. Any change
 
 4. **Output**: After processing, `RS_T_FF` sends a `CNF` event to the output chip `DigitalOutput_Q1`. The new state `Q1` is then transferred to the physical output Q1.
 
-`Q1` **Important Notes**:
+Q1` **Important Notes**:
 
 - By linking all three `IND` events to the same `REQ` input, the flip-flop is recalculated with every input change, even if the trigger is not a clock change. This can lead to unexpected behavior if the logic does not account for the fact that the flip-flop is actually clock-driven. In practice, the clock should be handled separately.
 - This exercise is designed to help you understand the prioritization of Reset over Toggle in a reset-dominant flip-flop.

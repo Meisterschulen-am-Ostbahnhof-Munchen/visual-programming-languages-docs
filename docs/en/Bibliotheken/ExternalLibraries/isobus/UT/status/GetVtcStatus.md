@@ -67,7 +67,7 @@ The event `REQ` initiates a specific query. The desired status value must be sel
 - `STATUS` = description of the result,
 - `wValue` = the retrieved numerical value.
 
-``` If `QI` is FALSE during the REQ call, the service is not executed and a corresponding error status is returned.
+`` If `QI` is FALSE during the REQ call, the service is not executed and a corresponding error status is returned.
 
 ## Technical Features
 - The function block is implemented as a **Service Interface Block** (SIFB) and accesses the system-level ISOBUS driver library.

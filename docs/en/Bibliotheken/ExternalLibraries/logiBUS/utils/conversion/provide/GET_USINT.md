@@ -75,7 +75,7 @@ A start state is not explicitly defined; after initialization, the function bloc
 ## Application Scenarios
 - **One-Time Query of a Configuration Variable** – A `USINT` value defined in a parent resource should be read exactly once at the beginning of the process and then used as a local constant.
 
-``` - **Decoupling of Read and Write Access** – If a variable is both written to and read from multiple function blocks, `GET_USINT` prevents the read side from being constantly updated, as buffering only occurs on demand.
+`` - **Decoupling of Read and Write Access** – If a variable is both written to and read from multiple function blocks, `GET_USINT` prevents the read side from being constantly updated, as buffering only occurs on demand.
 
 - **Testing Tool** – This function block can be used to display the current value of an InOut variable in a diagnostic branch.
 
@@ -91,7 +91,7 @@ A start state is not explicitly defined; after initialization, the function bloc
 
 | Direct data access | No function block | A value can be read over data connections without buffering, but without decoupling and without event control. |
 
-`GET_USINT` is specialized for reading InOut variables with explicit buffering and event control – a task that cannot be accomplished with standard converters or direct connections.
+GET_USINT` is specialized for reading InOut variables with explicit buffering and event control – a task that cannot be accomplished with standard converters or direct connections.
 
 ## Conclusion
 

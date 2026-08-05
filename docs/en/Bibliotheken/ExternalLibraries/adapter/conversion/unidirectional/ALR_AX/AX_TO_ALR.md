@@ -62,7 +62,7 @@ The function block operates according to the following scheme:
 
 4. The result is passed to ``ALR_OUT.D1``, and the acknowledgment event ``ALR_OUT.E1`` is simultaneously output.
 
-``ALR_OUT.D1`` is passed to the gate input (G) of the embedded function ``ALR_OUT.E1``. The conversion is event-driven: Each incoming event causes exactly one conversion of the current BOOL value.
+`ALR_OUT.D1`` is passed to the gate input (G) of the embedded function ``ALR_OUT.E1``. The conversion is event-driven: Each incoming event causes exactly one conversion of the current BOOL value.
 
 ## Technical Features
 - **Adapter Interface**: The function block uses only unidirectional adapters (socket/plug), allowing it to integrate seamlessly into adapter-based architectures.

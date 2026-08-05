@@ -1,7 +1,7 @@
 # ST02B
 * * * * * * * * * *
 ## Introduction
-`ST02B` is a user-defined, structured data type within the 4diac IDE. It defines a data structure that combines two individual bytes into a logical unit. This simplifies the handling of byte pairs.
+ST02B` is a user-defined, structured data type within the 4diac IDE. It defines a data structure that combines two individual bytes into a logical unit. This simplifies the handling of byte pairs.
 ## Structure Definition
 Since `ST02B` is a data type and not a function block, it has no interfaces in the sense of event inputs/outputs, data inputs/outputs, or adapters. Instead, the internal components of the data type are described here.
 ## **Components of the Structure**
@@ -14,7 +14,7 @@ The structure `ST02B` consists of the following two byte variables:
 As a passive data type, `ST02B` has no inherent "function." Its function is to provide a defined template for data. Instances of this data type can be used to store, organize, and exchange data as a unit between different functional blocks.
 
 ## Technical Details
-`ST02B` is defined as `StructuredType` and consists of two consecutive `BYTE` variables. Therefore, the total size of an instance of this data type is 2 bytes.
+ST02B` is defined as `StructuredType` and consists of two consecutive `BYTE` variables. Therefore, the total size of an instance of this data type is 2 bytes.
 
 ## Application Scenarios
 * **Data Transfer**: Bundling 2 bytes that should be treated as a single unit.
@@ -27,7 +27,7 @@ As a passive data type, `ST02B` has no inherent "function." Its function is to p
 
 ## Conclusion
 
-`ST02B` is a simple, useful structured data type for managing two bytes as a coherent unit.
+ST02B` is a simple, useful structured data type for managing two bytes as a coherent unit.
 
 ---
 

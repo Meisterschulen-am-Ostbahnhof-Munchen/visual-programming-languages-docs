@@ -57,7 +57,7 @@ This function block processes a single action:
 
 2. In the algorithm, the current value of the InOut variable `IN` is copied directly to the output `OUT`:
 
-`OUT := IN;`
+OUT := IN;`
 
 3. After the assignment is complete, the event `CNF` is output. The outputs `OUT` and `IN` are associated with the event `CNF`, allowing calling blocks to process the updated value.
 

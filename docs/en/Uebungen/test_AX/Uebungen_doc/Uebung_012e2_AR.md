@@ -57,7 +57,7 @@ The sub-block `Uebung_012e_sub_AR` outputs the numeric value loaded from the NVS
 - This value is passed via the AR adapter to the `IN2` input of the arithmetic block `AR_MULTIME`.
 - The block `AR_MULTIME` multiplies the fixed value `T#100ms` (IN1) by the variable value (IN2) and outputs the result (Time) at its `OUT` adapter.
 
-``` - The output `OUT` is connected to the `PT` adapter of the timer `AX_TON`. This allows the timer's expiration time to be calculated dynamically from the stored value.
+`` - The output `OUT` is connected to the `PT` adapter of the timer `AX_TON`. This allows the timer's expiration time to be calculated dynamically from the stored value.
 
 4. **Digital Output**
 

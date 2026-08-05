@@ -95,7 +95,7 @@ The module operates as a **state-controlled machine (ECC)** with five states: `S
 
 | RESET | Normal toggle state: *Q* = FALSE. | Init → RESET (when Q_INIT = FALSE) <br>SET → RESET (when CLK) | `RESET` | EO |
 
-``` **Transition conditions** (simplified):  
+`` **Transition conditions** (simplified):  
 - `START → Init` : `INIT & (QI = TRUE)`  
 - `Init → SET` : `(Q_INIT = TRUE)`  
 - `Init → RESET` : `(Q_INIT = FALSE)`  
@@ -117,7 +117,7 @@ A safety signal *QI* enables the block. Toggle operations may only be performed 
 
 In a sequence control, *E_T_FF_INIT* is used as a flip-flop for a step. Initialization allows the step to be set to either active or inactive immediately after starting, without a separate set or reset pulse.
 
-```## Comparison with Similar Components
+``## Comparison with Similar Components
 
 | Component | Special Feature |
 

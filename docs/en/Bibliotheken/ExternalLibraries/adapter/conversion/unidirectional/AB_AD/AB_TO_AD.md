@@ -42,4 +42,4 @@ The block has no state logic of its own, as it functions solely as a connection 
 Analog converter modules exist for other data widths, e.g., `AB_TO_WORD` (BYTE to WORD) or `WORD_TO_DWORD`. This module specializes in the combination `AB` → `AD` and is therefore ideal for directly replacing or coupling corresponding adapters. Unlike more complex converters with data manipulation or buffers, it operates without delay and without additional logic.
 
 ## Conclusion
-`AB_TO_AD` is a lean, clearly structured converter module that enables the unidirectional conversion of a BYTE adapter to a DWORD adapter. Its simple pass-through makes it ideal for the rapid integration of different interfaces into IEC 61499-based control systems without introducing additional functional complexity.
+AB_TO_AD` is a lean, clearly structured converter module that enables the unidirectional conversion of a BYTE adapter to a DWORD adapter. Its simple pass-through makes it ideal for the rapid integration of different interfaces into IEC 61499-based control systems without introducing additional functional complexity.

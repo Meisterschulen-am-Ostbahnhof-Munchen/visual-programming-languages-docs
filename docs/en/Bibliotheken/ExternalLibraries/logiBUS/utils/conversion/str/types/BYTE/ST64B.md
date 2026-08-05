@@ -105,7 +105,7 @@ As a pure data type, `ST64B` has no states in the sense of a state machine or a 
 
 ## Application Scenarios
 
-`ST64B` is ideally suited for the following application scenarios:
+ST64B` is ideally suited for the following application scenarios:
 
 * **Communication Buffer:** As a standard buffer for messages or packets with a fixed size of 64 bytes, e.g., in CAN bus messages (when multiple frames are needed), serial communication, or other protocols.
 * **Hardware Register Map:** Mapping of a 64-byte range of hardware registers, where each byte variable corresponds to a specific register.
@@ -114,10 +114,10 @@ As a pure data type, `ST64B` has no states in the sense of a state machine or a 
 
 ## ⚖️ Comparison with Similar Building Blocks
 
-`ST64B` is a basic data type and cannot be directly compared to function blocks. Within the data types, it is comparable to:
+ST64B` is a basic data type and cannot be directly compared to function blocks. Within the data types, it is comparable to:
 
 * **Other structured data types:** `ST64B` is a specific instance of `StructuredType`. There are similar structures with different numbers or types of elements (e.g., structures with 8, 16, or 32 bytes, or those containing integers, booleans, etc.). `ST64B` is characterized by its purely byte-wise division.
 * **Arrays of BYTE:** An array of type `ARRAY[0..63] OF BYTE` would also store 64 bytes. The difference lies in the access method: `ST64B` uses named members (e.g., `myST64B.B_10`), while an array uses an index (e.g., `myArray[10]`). Named members can be advantageous in certain contexts for improved code readability or for directly addressing specific byte positions.
 
 ## Conclusion
-`ST64B` is a simple yet powerful structured data type that provides a fixed data set of 64 bytes. Its strength lies in the clear definition and direct accessibility of each individual byte, making it an excellent choice for applications requiring precise control and interpretation of raw data blocks, particularly in communication and hardware interaction.
+ST64B` is a simple yet powerful structured data type that provides a fixed data set of 64 bytes. Its strength lies in the clear definition and direct accessibility of each individual byte, making it an excellent choice for applications requiring precise control and interpretation of raw data blocks, particularly in communication and hardware interaction.

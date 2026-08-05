@@ -63,11 +63,11 @@ This function block has no states or ECC state diagrams. Execution is determined
 
 ## Conclusion
 
-`AUDI_MUL_2` is a generic, adapter-based multiplication function block for IEC 61499 applications. By eliminating events and using typed adapters, it is particularly well-suited for dataflow-oriented and loosely coupled systems. Its generic design allows it to be used with various numeric data types without requiring modification of the function block itself.
+AUDI_MUL_2` is a generic, adapter-based multiplication function block for IEC 61499 applications. By eliminating events and using typed adapters, it is particularly well-suited for dataflow-oriented and loosely coupled systems. Its generic design allows it to be used with various numeric data types without requiring modification of the function block itself.
 
 # Conclusion
 
-`AUDI_MUL_2` is a generic, adapter-based multiplication function block for IEC 61499 applications. ---
+AUDI_MUL_2` is a generic, adapter-based multiplication function block for IEC 61499 applications. ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

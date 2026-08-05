@@ -71,4 +71,4 @@ There are no start or end states; the block returns to state `REQ` after each it
 
 ## Conclusion
 
-`GET_STRING` is a simple yet specialized function block for buffering a string value from an InOut variable. Its event-driven approach allows for precise use in time-critical processes. Using an InOut interface saves memory and processing time, as no value copy is required on the caller side. For most applications that need to sample strings, this function block offers a clean and resource-efficient solution.
+GET_STRING` is a simple yet specialized function block for buffering a string value from an InOut variable. Its event-driven approach allows for precise use in time-critical processes. Using an InOut interface saves memory and processing time, as no value copy is required on the caller side. For most applications that need to sample strings, this function block offers a clean and resource-efficient solution.

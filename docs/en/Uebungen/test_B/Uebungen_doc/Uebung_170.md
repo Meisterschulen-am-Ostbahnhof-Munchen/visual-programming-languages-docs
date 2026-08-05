@@ -3,7 +3,7 @@ Here is the documentation for exercise `Uebung_170` based on the provided XML da
 ![Uebung_170_network](./Uebung_170_network.svg)
 * * * * * * * * * *
 ## Introduction
-`Uebung_170` is a sub-application that deals with handling timeouts. It serves as a practice environment for the function block `E_RTimeOut` (Event Resettable TimeOut) to test or demonstrate its behavior within an IEC 61499 network.
+Uebung_170` is a sub-application that deals with handling timeouts. It serves as a practice environment for the function block `E_RTimeOut` (Event Resettable TimeOut) to test or demonstrate its behavior within an IEC 61499 network.
 
 ## Function Blocks Used
 

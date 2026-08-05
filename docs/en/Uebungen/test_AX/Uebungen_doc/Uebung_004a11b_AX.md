@@ -21,7 +21,7 @@ This exercise consists of a total of four function blocks connected in a sub-app
 
 The input `CLK` (Event) toggles the internal state on each event.
 
-``` Adapter outputs:
+`` Adapter outputs:
 
 - `Q` – current output state (passed on to digital output)
 - `Q_INIT` – used to initialize the flip-flop with a stored value (via NVS)

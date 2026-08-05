@@ -21,7 +21,7 @@ Not applicable, as `ST16B` is a data type and not a function block, and therefor
 Not applicable, as `ST16B` is a data type and not a function block, and therefore does not implement any adapter interfaces.
 
 ### Component Data Structure
-`ST16B` consists of 16 individual variables of type `BYTE`, arranged sequentially:
+ST16B` consists of 16 individual variables of type `BYTE`, arranged sequentially:
 
 | Name | Type | Description |
 
@@ -60,7 +60,7 @@ B_14 | BYTE | BYTE 14 |
 B_15 | BYTE | BYTE 15 |
 
 ## Functionality
-`ST16B` itself has no active functionality. It is a passive data container. Its function is to provide a defined memory template for 16 bytes. Each byte (`B_00` to `B_15`) can be read and written individually. This structured access to individual bytes enables granular data manipulation and easy assignment to communication fields or memory areas.
+ST16B` itself has no active functionality. It is a passive data container. Its function is to provide a defined memory template for 16 bytes. Each byte (`B_00` to `B_15`) can be read and written individually. This structured access to individual bytes enables granular data manipulation and easy assignment to communication fields or memory areas.
 
 ## Technical Features
 * **Fixed Size:** The data type `ST16B` has a fixed size of exactly 16 bytes. This is advantageous for predictable memory usage and compatibility with protocols that expect fixed lengths.

@@ -33,7 +33,7 @@ Upon receiving the event `REQ`, the function block reads the values of all seven
 
 The logical function can be described as follows:
 
-`OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5 OR IN6 OR IN7`
+OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5 OR IN6 OR IN7`
 
 This means that the output `OUT` is `TRUE` (1) if at least one of the seven inputs is `TRUE`. The output is `FALSE` (0) only if all seven inputs are `FALSE`.
 

@@ -68,15 +68,15 @@ When a REQ event occurs, the algorithm `REQ` is executed:
 - Check: `IN ≤ LWORD_TO_ULINT(VALID_SIGNAL_LW)`
 - **Valid** (condition met):
 
-`OUT := ULINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`
+OUT := ULINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`
 
-`VALID := TRUE`
+VALID := TRUE`
 
 - **Invalid** (condition not met):
 
-`OUT := 0.0`
+OUT := 0.0`
 
-`VALID := FALSE`
+VALID := FALSE`
 
 - Subsequently, the **CNF** event is output with the new values of **OUT** and **VALID**.
 

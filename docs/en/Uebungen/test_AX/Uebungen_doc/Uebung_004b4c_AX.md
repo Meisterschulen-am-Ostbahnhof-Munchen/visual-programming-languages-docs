@@ -16,13 +16,13 @@ The following table lists the function blocks used in the network:
 
 | `Uebung_004b4c_sub_AX1` … `AX3` | `Uebung_004b4c_sub_AE` (SubApp) | Sub-component, each containing a toggle flip-flop with latching logic. |
 
-`| `Uebung_004b4c_sub_AX1` … `AX3` | `Uebung_004b4c_sub_AE` | ...
+| `Uebung_004b4c_sub_AX1` … `AX3` | `Uebung_004b4c_sub_AE` | ...
 ### Sub-Blocks: `Uebung_004b4c_sub_AE`
 
 - **Type**: SubApp (reusable component)
 - **Internal Function Blocks Used**: The SubApp implements a toggle flip-flop (e.g., with an SR flip-flop or a memory element) and a latching circuit that evaluates the state of neighboring SubApps via the AE2 adapters.
 
-``` - **Interfaces**:
+`` - **Interfaces**:
 
 - Event input `IND` (from the button)
 - Adapter socket and adapter plug (type AE2) for bidirectional communication with neighboring devices
@@ -36,7 +36,7 @@ Each sub-function operates as a toggle flip-flop: Upon each positive event at `I
 
 The three sub-modules are arranged in a chain:
 
-`Uebung_004b4c_sub_AX1` (first link) → `Uebung_004b4c_sub_AX2` (second link) → `Uebung_004b4c_sub_AX3` (third link)
+Uebung_004b4c_sub_AX1` (first link) → `Uebung_004b4c_sub_AX2` (second link) → `Uebung_004b4c_sub_AX3` (third link)
 
 - **Event Connections**:
 

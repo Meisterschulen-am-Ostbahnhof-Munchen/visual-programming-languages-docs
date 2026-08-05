@@ -78,4 +78,4 @@ The function block does not have an explicit state machine. Its behavior is pure
 
 ## Conclusion
 
-`AUDI_UDINT_LE` is a clear and efficient function block for comparing "less than or equal to" two `UDINT` values. By using standardized adapters and a proven core block, it is robust, expandable, and easily integrated into industrial control environments. Its simple interface and stateless behavior make it particularly suitable for safety-related and modular automation solutions.
+AUDI_UDINT_LE` is a clear and efficient function block for comparing "less than or equal to" two `UDINT` values. By using standardized adapters and a proven core block, it is robust, expandable, and easily integrated into industrial control environments. Its simple interface and stateless behavior make it particularly suitable for safety-related and modular automation solutions.

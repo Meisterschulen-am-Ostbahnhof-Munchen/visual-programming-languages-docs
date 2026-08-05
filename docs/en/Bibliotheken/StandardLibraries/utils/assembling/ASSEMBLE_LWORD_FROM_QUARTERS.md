@@ -30,7 +30,7 @@ The function block receives the 32 byte inputs and combines them into a 64-bit L
 - Uses bitwise operations (``SHL``, ``OR``) for efficient byte combination.
 - The combination order ranges from ``QUARTER_BYTE_31`` (most significant byte) to ``QUARTER_BYTE_00`` (least significant byte).
 
-``` - The function block is implemented in ST (Structured Text) and uses a library (`quarterconst`) for the shift constants.
+`` - The function block is implemented in ST (Structured Text) and uses a library (`quarterconst`) for the shift constants.
 
 ## State Overview
 The function block has no internal states. Processing occurs directly upon receiving the `REQ` event, and the result is immediately output via `CNF`.

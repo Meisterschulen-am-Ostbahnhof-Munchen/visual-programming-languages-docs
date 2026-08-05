@@ -83,7 +83,7 @@ There are no other states, no branches, and no time monitoring.
 
 ## Conclusion
 
-`SET_ANY` is a simple yet flexible function block for selectively overwriting variables in IEC 61499. The use of the generic type `ANY` and the InOut parameter makes it universally applicable, especially in scenarios where values need to be written to existing memory locations at runtime. Thanks to its minimal state logic, it is suitable for time-critical applications or as a basic building block for more complex data flow structures.
+SET_ANY` is a simple yet flexible function block for selectively overwriting variables in IEC 61499. The use of the generic type `ANY` and the InOut parameter makes it universally applicable, especially in scenarios where values need to be written to existing memory locations at runtime. Thanks to its minimal state logic, it is suitable for time-critical applications or as a basic building block for more complex data flow structures.
 
 ---
 

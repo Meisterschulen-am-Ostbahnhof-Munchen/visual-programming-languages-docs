@@ -69,15 +69,15 @@ This exercise illustrates the use of adapter interfaces, signal conversion betwe
 
 | `Input_LD.IN` | `ALI_FB_CTD.LD` | Adapter (IN) |
 
-`ALI_FB_CTD.Q` | `Output_Q1.OUT` | Adapter (OUT) |
+ALI_FB_CTD.Q` | `Output_Q1.OUT` | Adapter (OUT) |
 
-`ALI_FB_CTD.CV` | `ALI_TO_ALR.ALI_IN` | Adapter |
+ALI_FB_CTD.CV` | `ALI_TO_ALR.ALI_IN` | Adapter |
 
-`ALI_TO_ALR.ALR_OUT` | `Q_NumericValue_PHYSA_LREAL.lrPhys` | Adapter |
+ALI_TO_ALR.ALR_OUT` | `Q_NumericValue_PHYSA_LREAL.lrPhys` | Adapter |
 
-`ALI_LINT_TO_LI.ALI_OUT` | `ALI_FB_CTD.PV` | Adapter |
+ALI_LINT_TO_LI.ALI_OUT` | `ALI_FB_CTD.PV` | Adapter |
 
-`Input_LD.INITO` (Event) | `ALI_LINT_TO_LI.REQ` | Event |
+Input_LD.INITO` (Event) | `ALI_LINT_TO_LI.REQ` | Event |
 
 ## Summary
 
@@ -85,7 +85,7 @@ Exercise **217b_ALR** teaches the safe handling of an IEC 61131-3 down counter i
 
 Exercise **217b_ALR** teaches the safe handling of an IEC 61131-3 down counter in adapter format, signal conversion between integer and floating-point types, and the connection of a terminal output. It demonstrates the typical wiring of logiBUS inputs/outputs with function blocks and prepares the user for the implementation of counter-based control tasks.
 
-``` **Learning Objectives:**
+`` **Learning Objectives:**
 
 - Understanding the IEC 61131-3 CTD counter (down counter) with LINT data type
 - Working with adapter interfaces (ALI, LI, ALR)

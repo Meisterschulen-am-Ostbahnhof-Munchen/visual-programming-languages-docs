@@ -47,11 +47,11 @@ The function block `IA_PosDeltaHighPrecRapidUpd` is an ISOBUS adapter module for
 
 | `TIME_DELTA` | `adapter::types::unidirectional::AUI` | Returns the time delta (unsigned integer). |
 
-`LAT_DELTA` | `adapter::types::unidirectional::AI` | Returns the latitude delta (signed integer). |
+LAT_DELTA` | `adapter::types::unidirectional::AI` | Returns the latitude delta (signed integer). |
 
-`LON_DELTA` | `adapter::types::unidirectional::AI` | Returns the longitude delta (signed integer). |
+LON_DELTA` | `adapter::types::unidirectional::AI` | Returns the longitude delta (signed integer). |
 
-`TIMEOUT` | `adapter::types::unidirectional::AX` | Indicates whether a timeout occurred (Bool). |
+TIMEOUT` | `adapter::types::unidirectional::AX` | Indicates whether a timeout occurred (Bool). |
 
 ## Functionality
 

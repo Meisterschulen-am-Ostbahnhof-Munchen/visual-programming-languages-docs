@@ -44,7 +44,7 @@ The FB operates as a composite function block that delegates the actual operatio
 - An incoming event from `UPDATE` or from the adapter `IN.E1` triggers the input `REQ` of the internal block `F_SHL`.
 - The value of `N` is directly passed to the input `F_SHL.N`.
 
-``` - The data value provided via the adapter `IN` (`IN.D1`) is forwarded to the `F_SHL.IN` input.
+`` - The data value provided via the adapter `IN` (`IN.D1`) is forwarded to the `F_SHL.IN` input.
 
 2. **Calculation**
 

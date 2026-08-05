@@ -113,11 +113,11 @@ After a reset (`R`) or load (`LD`), the counter can immediately jump to one of t
 
 | `FB_CTUD_ULINT` | Same counter logic, but with separate event and data inputs/outputs (no adapters). |
 
-`AULI_FB_CTU` | Up counter only, as an adapter version. |
+AULI_FB_CTU` | Up counter only, as an adapter version. |
 
-`AULI_FB_CTD` | Down counter only, as an adapter version. |
+AULI_FB_CTD` | Down counter only, as an adapter version. |
 
-`CTUD` (Standard IEC 61499) | Similar functionality, but usually with different data types (e.g., INT) and without an adapter. |
+CTUD` (Standard IEC 61499) | Similar functionality, but usually with different data types (e.g., INT) and without an adapter. |
 
 The `AULI_FB_CTUD` combines up and down counting in one block and offers particularly flexible integration with other adapter-based components via its adapter interfaces.
 

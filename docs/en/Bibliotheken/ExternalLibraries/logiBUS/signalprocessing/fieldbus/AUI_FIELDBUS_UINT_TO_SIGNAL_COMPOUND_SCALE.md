@@ -56,7 +56,7 @@ The function block operates as a composite function block that uses an internal 
 
 3. **Validity Signal**: In parallel, the internal component generates a logic signal `VALID`, indicating whether the calculated value is valid. This signal is clocked by the D flip-flop with the completion event `CNF` and forwarded to the `VALID.D1` adapter. This ensures that the validity signal is only activated if the value has actually been recalculated.
 
-``` 4. **Output Event**: The internal block's `CNF` event is used to control both the output adapter `OUT` (event `E1`) and the `VALID` adapter (event `E1`).
+`` 4. **Output Event**: The internal block's `CNF` event is used to control both the output adapter `OUT` (event `E1`) and the `VALID` adapter (event `E1`).
 
 5. **Initialization**: The `INIT` event is forwarded directly to the internal block; the initialization confirmation `INITO` is returned accordingly.
 

@@ -49,7 +49,7 @@ No separate data outputs – output is handled via the adapters.
 
 An event at input `REQ` triggers the processing. The value of parameter `K` determines which of the two output adapters (`OUT1` or `OUT2`) receives the value from `IN`. After forwarding, an event is sent at output `CNF`.
 
-``` The mapping is as follows:
+`` The mapping is as follows:
 
 - If `K = 1`, the value is passed to `OUT1`.
 - If `K = 2`, the value is passed to `OUT2`.

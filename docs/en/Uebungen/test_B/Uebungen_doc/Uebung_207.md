@@ -38,7 +38,7 @@ ILOCK.OUT2 → DigitalOutput_Q2.OUT
 
 2. **Setting Q2**: Similarly, pressing a button at input I2, via `DigitalInput_I2` and the event input `CLK2`, sets `OUT2` (and resets `OUT1`).
 
-``` 3. **Reset**: Pressing a button at input I3 sends a signal to the event input `R` of the interlock function block. This resets both outputs `OUT1` and `OUT2` to `FALSE`. Both output blocks are then updated again via `EO`.
+`` 3. **Reset**: Pressing a button at input I3 sends a signal to the event input `R` of the interlock function block. This resets both outputs `OUT1` and `OUT2` to `FALSE`. Both output blocks are then updated again via `EO`.
 
 **Special Feature:** The output blocks are triggered together by every event (whether setting or resetting), so that both outputs always reflect the interlock state synchronously.
 

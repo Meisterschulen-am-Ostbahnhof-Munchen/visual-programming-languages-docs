@@ -57,7 +57,7 @@ Other split components such as `AD_SPLIT_2`, `AD_SPLIT_4`, or `AD_SPLIT_8` diffe
 
 ## Conclusion
 
-`AD_SPLIT_6` is a simple yet useful generic function block for 1:6 distribution of an AD adapter. Its clear interface and lack of state logic make it easy to understand and efficient for distribution tasks in IEC 61499-based applications.
+AD_SPLIT_6` is a simple yet useful generic function block for 1:6 distribution of an AD adapter. Its clear interface and lack of state logic make it easy to understand and efficient for distribution tasks in IEC 61499-based applications.
 
 ---
 

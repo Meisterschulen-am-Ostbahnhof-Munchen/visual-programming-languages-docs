@@ -79,7 +79,7 @@ The device does not have its own state machine. Its behavior is purely data flow
 ## Comparison with Similar Function Blocks
 - **F_USINT_TO_DWORD:** The underlying conversion block is a pure data converter without an adapter interface. It requires direct data and event connections.
 
-`AUS_TO_AD`, on the other hand, encapsulates this function and offers a standardized adapter interface.
+AUS_TO_AD`, on the other hand, encapsulates this function and offers a standardized adapter interface.
 
 - **Other adapter converters (e.g., BYTE_TO_DWORD, WORD_TO_DWORD):** Similar function blocks exist for other data types, but usually require different adapter types. `AUS_TO_AD` is specifically optimized for the combination of the adapters `AUS` (USINT) and `AD` (DWORD).
 

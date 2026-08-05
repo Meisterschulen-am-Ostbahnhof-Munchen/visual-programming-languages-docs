@@ -84,7 +84,7 @@ This string input is used to pass configuration-specific parameters (e.g., bus a
 
 - **Typical Event Sequence:**
 
-`INIT` → `INITO` → (possibly repeated `REQ` ↔ `CNF` or asynchronous `IND`).
+INIT` → `INITO` → (possibly repeated `REQ` ↔ `CNF` or asynchronous `IND`).
 
 - **Error Handling:**
 
@@ -122,11 +122,11 @@ Retrieving string parameters from a central configuration service.
 
 | `INT_IS` | INT | Integer inputs (e.g., counter readings) |
 
-`REAL_IS` | REAL | Floating-point inputs (e.g., measured values) |
+REAL_IS` | REAL | Floating-point inputs (e.g., measured values) |
 
-`StringValue_IS` | STRING | Strings – for names, descriptions, irregularly formatted data |
+StringValue_IS` | STRING | Strings – for names, descriptions, irregularly formatted data |
 
-`StringValue_IS` expands the family of input SIFBs with the flexible data type `STRING`, which is characterized by variable length and content.
+StringValue_IS` expands the family of input SIFBs with the flexible data type `STRING`, which is characterized by variable length and content.
 
 ## Conclusion
 

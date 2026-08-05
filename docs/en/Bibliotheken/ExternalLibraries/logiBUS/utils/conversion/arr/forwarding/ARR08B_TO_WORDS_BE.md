@@ -100,7 +100,7 @@ The function block does not have its own state machine. It is triggered by the *
 
 | `BYTE_TO_WORD` | Converts two individual bytes into one WORD; requires separate concatenation. |
 
-`ARR08B_TO_WORDS_BE` focuses on the efficient, predefined partitioning of an 8-byte array into four words in big-endian order – ideal for standardized protocols.
+ARR08B_TO_WORDS_BE` focuses on the efficient, predefined partitioning of an 8-byte array into four words in big-endian order – ideal for standardized protocols.
 
 ## Conclusion
 

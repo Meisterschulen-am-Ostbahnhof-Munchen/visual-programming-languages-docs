@@ -34,7 +34,7 @@ The `INTEGRAL` function block has two primary operating states, which are contro
 
 If the value of the partial integral would exceed the limits of the `REAL` data type (approximately ±1.0E38), then `OVERFLOW` is set to `TRUE`. Otherwise, and only if the time difference `TM` is greater than 0, the partial integral is calculated, converted to seconds (`/ 1000.0`), and added to the total integral `OUT`.
 
-``` 2. **Reset (`RESET`)**: Upon a `RESET` event, the algorithm `RESET` is executed. This resets the integral value `OUT` to `0.0` and the overflow flag `OVERFLOW` to `FALSE`.
+`` 2. **Reset (`RESET`)**: Upon a `RESET` event, the algorithm `RESET` is executed. This resets the integral value `OUT` to `0.0` and the overflow flag `OVERFLOW` to `FALSE`.
 
 After the execution of each algorithm, an output event `CNF` containing the current values is always generated.
 

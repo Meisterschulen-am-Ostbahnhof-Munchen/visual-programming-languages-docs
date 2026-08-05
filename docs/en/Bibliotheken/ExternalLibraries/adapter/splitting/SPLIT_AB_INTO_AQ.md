@@ -52,7 +52,7 @@ No direct data outputs; the quartets are provided via the data interfaces of the
 
 3. The four quartets are fed in parallel to the data inputs of `E_D_FF_ANY` flip-flops.
 
-``` 4. Simultaneously, the splitter's acknowledgment event (`CNF`) is distributed to the clock inputs (`CLK`) of all four flip-flops.
+`` 4. Simultaneously, the splitter's acknowledgment event (`CNF`) is distributed to the clock inputs (`CLK`) of all four flip-flops.
 
 5. On the rising edge of this event, the flip-flops take over the quartets and pass them on to their respective outputs (`Q`).
 
@@ -85,4 +85,4 @@ Since `SPLIT_AB_INTO_AQ` is a composite function block without its own state mac
 
 ## Conclusion
 
-`SPLIT_AB_INTO_AQ` is a specialized composite function block for splitting a byte adapter input into four separate quarter adapter outputs. It simplifies the design of adapter networks by hiding the complex bit manipulation and ensuring reliable, event-driven output of the quartets. The use of flip-flops ensures stable data storage between events. This component is particularly suitable for modular automation solutions that work with unidirectional adapters.
+SPLIT_AB_INTO_AQ` is a specialized composite function block for splitting a byte adapter input into four separate quarter adapter outputs. It simplifies the design of adapter networks by hiding the complex bit manipulation and ensuring reliable, event-driven output of the quartets. The use of flip-flops ensures stable data storage between events. This component is particularly suitable for modular automation solutions that work with unidirectional adapters.

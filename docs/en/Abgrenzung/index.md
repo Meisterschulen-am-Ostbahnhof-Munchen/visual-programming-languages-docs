@@ -2,7 +2,7 @@
 To understand the specifics of IEC 61499, it is helpful to place it within the broader landscape of programming languages. Programming languages can generally be divided into two main groups based on their notation: **textual** and **visual** languages.
 ## Differentiation between Visual and Textual Programming Languages
 The key difference lies in how a program's logic is formulated. While textual languages are based on sequential code, visual languages use graphical elements to represent relationships and data flows.
-``````{eval-rst}
+`````{eval-rst}
 .. mermaid:: Abgrenzung_Textuell_Visuell.mmd
 Textual Programming Languages
 In textual languages, the algorithm is described by a sequence of strings (keywords, operators, variables). These languages are often very powerful and abstract, but require a precise knowledge of the syntax.
@@ -36,7 +36,7 @@ A common distinction is made between programming languages based on their intend
 
 Visual programming has a long tradition in industry, as it is closely related to the representation of circuit diagrams and process flows.
 
-```{eval-rst}
+``{eval-rst}
 .. mermaid:: Industrielle_Standards.mmd
 
 ### IEC 61131-3 (The Classic Standard)

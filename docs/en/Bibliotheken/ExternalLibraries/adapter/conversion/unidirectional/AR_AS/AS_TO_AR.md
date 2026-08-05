@@ -61,7 +61,7 @@ The `AS_TO_AR` block does not have a state machine (ECC). Its behavior is purely
 
 ## Conclusion
 
-`AS_TO_AR` is a simple yet useful composite block for adapter type conversion from SINT to REAL. It enables the lossless integration of components with different data types in continuous control sequences and is characterized by its low complexity and direct passthrough.
+AS_TO_AR` is a simple yet useful composite block for adapter type conversion from SINT to REAL. It enables the lossless integration of components with different data types in continuous control sequences and is characterized by its low complexity and direct passthrough.
 
 ---
 

@@ -51,7 +51,7 @@ Each DigitalInput FB (logiBUS_IX) waits for a signal change at its associated ha
 * `DigitalInput_R2.IN` → `ILOCK_SR_2.R`
 - The two ILOCK modules are interlocked via their adapter connections:
 
-`ILOCK_SR_1.ILOCK_OUT` → `ILOCK_SR_2.ILOCK_IN`
+ILOCK_SR_1.ILOCK_OUT` → `ILOCK_SR_2.ILOCK_IN`
 
 This means that `ILOCK_SR_2` can only set its output `Q1` to TRUE if `ILOCK_SR_1.Q1` is FALSE (and vice versa).
 

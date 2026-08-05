@@ -85,4 +85,4 @@ Compared to a simple RS flip-flop, `ILOCK_BLOCK_AX` offers explicit interlocking
 
 ## Conclusion
 
-`ILOCK_BLOCK_AX` is a compact, safety-oriented functional block for interlocking two opposing directions. Its adapter-based interface and clearly defined mechanism make it easy to integrate and reliable in applications requiring exclusive directional control.
+ILOCK_BLOCK_AX` is a compact, safety-oriented functional block for interlocking two opposing directions. Its adapter-based interface and clearly defined mechanism make it easy to integrate and reliable in applications requiring exclusive directional control.

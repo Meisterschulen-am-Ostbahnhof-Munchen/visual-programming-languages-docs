@@ -47,7 +47,7 @@ Plug | Q | adapter::types::unidirectional::OFF | Transferred output value (conta
 ## Functionality
 The function block internally contains a pre-built FB **E_D_FF_ANY_TMIN** (from the library `iec61499::events`). This function block takes the current data value from the Clock input upon each incoming event and passes it on to the output – but only if the time elapsed since the last output event is at least **Tmin**.
 
-``` - During the **INIT** event, the parameter *Tmin* is passed to the internal function block.
+`` - During the **INIT** event, the parameter *Tmin* is passed to the internal function block.
 
 - An event on **I.E1** (adapter socket) acts as the clock for the internal flip-flop.
 - The latched data value appears on **Q.D1** (adapter plug) and is simultaneously acknowledged with an event on **Q.E1** – provided the timing condition is met.

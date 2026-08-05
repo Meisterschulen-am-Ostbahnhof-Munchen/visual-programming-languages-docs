@@ -48,7 +48,7 @@ No adapters available.
 ## Functionality
 The function block has a single action that is executed when the event `REQ` occurs:
 
-```structured text
+``structured text
 OUT := IN;
 
 The event `CNF` is then sent. The function block is stateless and executes the assignment on every `REQ` event, regardless of the current value.
@@ -83,4 +83,4 @@ There are no wait states or branches.
 
 ## Conclusion
 
-`SET_DWORD` is a minimal but very useful function block for directly assigning values to a DWORD InOut variable. Its simplicity makes it error-resistant, and the absence of state logic ensures predictable real-time behavior. It is particularly suitable for configuration and initialization tasks where fast, straightforward value assignment is required.
+SET_DWORD` is a minimal but very useful function block for directly assigning values to a DWORD InOut variable. Its simplicity makes it error-resistant, and the absence of state logic ensures predictable real-time behavior. It is particularly suitable for configuration and initialization tasks where fast, straightforward value assignment is required.

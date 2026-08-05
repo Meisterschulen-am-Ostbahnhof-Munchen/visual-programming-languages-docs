@@ -41,7 +41,7 @@ The entire exercise is set up as a standalone sub-application. All FBs are used 
 - The digital inputs *Input_I1* (via function block "DigitalInput_I1") and *Input_I2* (via function block "DigitalInput_I2") provide the adapter interfaces `UP_IN` and `DOWN_IN`, respectively, for the ILOCK module.
 - The reset input *Input_I3* is evaluated as an event (single edge, parameter `BUTTON_SINGLE_CLICK`) via the function block "DigitalInput_Reset". The event `IND` triggers the reset input `EI_RESET` of the ILOCK module.
 
-``` 2. **Interlock Logic**:
+`` 2. **Interlock Logic**:
 
 - The function block **ILOCK_CONFLICT_TRIP_AX** monitors the two inputs and detects a conflict (e.g., simultaneous requests in both directions).
 - Under normal operation, it passes the signals unchanged to outputs `UP_OUT` and `DOWN_OUT`.

@@ -43,7 +43,7 @@ This function block operates as a so-called *Composite FB*, meaning it internall
 - An incoming event at `AX_IN.E1` triggers the internal function block `Convert` (type: `F_BOOL_TO_INT`) via its input `REQ`.
 - The function block `F_BOOL_TO_INT` converts the BOOL value at input `IN` into an INT value (0 for `FALSE`, 1 for `TRUE`).
 
-``` - The result is provided at output `OUT` and forwarded to plug `AI_OUT.D1`.
+`` - The result is provided at output `OUT` and forwarded to plug `AI_OUT.D1`.
 
 - After the conversion is complete, the internal block sends an acknowledgment event (`CNF`), which is output via `AI_OUT.E1`.
 

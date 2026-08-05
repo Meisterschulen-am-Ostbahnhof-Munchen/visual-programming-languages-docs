@@ -61,7 +61,7 @@ The function block consists of two internal components:
 - The `CNF` event clocks the D flip-flop `E_D_FF`, which takes over the current state of `Q` (i.e., TRUE during the pulse duration, FALSE afterward) and makes it available at the output `Q.D1` of the adapter.
 - Simultaneously, the `CNF` event is also directly forwarded to the output `CNF` of the overall module, thus informing the application about the end of the pulse.
 
-``` - The output `ET` indicates the current elapsed time and is directly connected to the output of the internal timer.
+`` - The output `ET` indicates the current elapsed time and is directly connected to the output of the internal timer.
 
 ## Technical Features
 - **Adapter Interface:** The function block encapsulates the timer logic in an adapter interface, allowing for easy integration into modular, adapter-based architectures.

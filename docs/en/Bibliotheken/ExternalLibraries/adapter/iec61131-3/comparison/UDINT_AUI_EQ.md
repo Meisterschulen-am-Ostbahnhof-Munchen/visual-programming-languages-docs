@@ -43,7 +43,7 @@ The function block performs an equality comparison between the values supplied t
 
 1. An event can be received either directly at the **REQ** input or via the **IN2** adapter (its event input "E1"). Both events are internally routed to the input of the comparison function block **F_EQ**.
 
-``` 2. Simultaneously, the data values from **IN1** and **IN2.D1** are passed to the corresponding inputs of **F_EQ**.
+`` 2. Simultaneously, the data values from **IN1** and **IN2.D1** are passed to the corresponding inputs of **F_EQ**.
 
 3. The internal function block **F_EQ** (type *iec61131::comparison::F_EQ*) performs the actual comparison and outputs the Boolean result at its output **OUT**.
 

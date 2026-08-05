@@ -77,4 +77,4 @@ There are no branches or timers. The function block is essentially combinatorial
 
 ## Conclusion
 
-`SET_LTIME` is a minimalist yet useful function block for precisely setting an LTIME variable. Its clear interface and the use of an InOut reference make it an efficient tool in timing and configuration scenarios. The component is easy to understand and straightforward to use.
+SET_LTIME` is a minimalist yet useful function block for precisely setting an LTIME variable. Its clear interface and the use of an InOut reference make it an efficient tool in timing and configuration scenarios. The component is easy to understand and straightforward to use.

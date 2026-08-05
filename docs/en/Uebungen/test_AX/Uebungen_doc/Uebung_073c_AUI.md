@@ -42,7 +42,7 @@ The connections between the function blocks are made via **adapters (AUI)**. The
 - This module scales the value using `SCALE = 0.001` and outputs the result as REAL at output `OUT`.
 - The scaled value is passed to the input `rPhys` of `Q_NumericValue_GBSD` and displayed on the UT.
 
-``` 2. **VDS**
+`` 2. **VDS**
 
 - `IA_VDS` outputs the navigation speed as a UINT signal at output `NAV_SPEED`.
 - This value is passed via an adapter connection to the scaling module `FIELDBUS_UINT_TO_SIGNAL_SCALED_VDS`.

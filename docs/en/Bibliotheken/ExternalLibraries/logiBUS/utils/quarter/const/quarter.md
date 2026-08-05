@@ -10,7 +10,7 @@
 The `quarter` library is a collection of global constants designed for working with SAE J1939-compliant status and command values in logiBUS applications. It defines standardized 2-bit values (represented as `BYTE`) and associated plaintext descriptions (`STRING`) for states and control commands. These constants serve to standardize and improve the readability of code that works with binary status information and control commands.
 
 ## Interface Structure
-`quarter` is a collection of global constants (`GLOBALCONSTANTS`). Therefore, it is not a function block (FB) in the traditional sense with event or data interfaces. The interface consists solely of the defined constants, which can be referenced directly in the code.
+quarter` is a collection of global constants (`GLOBALCONSTANTS`). Therefore, it is not a function block (FB) in the traditional sense with event or data interfaces. The interface consists solely of the defined constants, which can be referenced directly in the code.
 
 ### **Data Inputs**
 Not present (constant collection).

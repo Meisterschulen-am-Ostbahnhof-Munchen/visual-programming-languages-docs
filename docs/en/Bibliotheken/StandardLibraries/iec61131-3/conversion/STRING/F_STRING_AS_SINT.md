@@ -51,4 +51,4 @@ When the `REQ` event is triggered, the function `STRING_AS_SINT` is applied to t
 
 ## Conclusion
 
-`F_STRING_AS_SINT` is an efficient and specialized function block for converting strings to 8-bit integers. Its simple interface and clear functionality make it ideal for control applications that work with text-based input.
+F_STRING_AS_SINT` is an efficient and specialized function block for converting strings to 8-bit integers. Its simple interface and clear functionality make it ideal for control applications that work with text-based input.

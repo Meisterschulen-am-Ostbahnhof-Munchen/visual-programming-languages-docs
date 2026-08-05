@@ -62,7 +62,7 @@ Other split function blocks exist (e.g., `AUDI_SPLIT_2`, `AUDI_SPLIT_4`) that di
 
 ## Conclusion
 
-`AUDI_SPLIT_6` is a simple yet flexible function block for multiplying adapter connections in a 4diac environment. Its generic nature and lean implementation without event overhead make it ideal for scenarios where an incoming data stream needs to be distributed to multiple independent receivers.
+AUDI_SPLIT_6` is a simple yet flexible function block for multiplying adapter connections in a 4diac environment. Its generic nature and lean implementation without event overhead make it ideal for scenarios where an incoming data stream needs to be distributed to multiple independent receivers.
 
 ---
 

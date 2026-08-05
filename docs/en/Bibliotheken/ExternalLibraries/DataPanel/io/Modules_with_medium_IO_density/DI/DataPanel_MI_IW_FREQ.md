@@ -81,7 +81,7 @@ The events `INIT` and `REQ` are only executed if the corresponding qualifier `QI
 ## Technical Features
 - **Type Dependency**: The function block uses special types from the package `DataPanel::io::MI::DI`, which enable type-safe configuration of the input (e.g., `DataPanel_MI_DI_S`) as well as constants (`MI::MI_00`).
 
-``` - **Input Initialization**: The data input `Input` is set to `Invalid` by default. Before the first `INIT`, this must be set to a valid value (`7A` or `8A`), otherwise initialization will fail.
+`` - **Input Initialization**: The data input `Input` is set to `Invalid` by default. Before the first `INIT`, this must be set to a valid value (`7A` or `8A`), otherwise initialization will fail.
 
 - **Frequency Display**: The measured frequency is output as a 16-bit value (`WORD`) in Hz.
 - **Event-Driven Retrieval**: The `INIT` service must be successfully executed once before using `REQ` or receiving `IND`.

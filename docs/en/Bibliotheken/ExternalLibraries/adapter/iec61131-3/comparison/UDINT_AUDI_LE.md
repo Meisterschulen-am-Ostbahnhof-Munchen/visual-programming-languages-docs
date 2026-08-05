@@ -54,7 +54,7 @@ Both events are routed to the internal function block `F_LE` (less or equal). Th
 
 - `IN1` is assigned to the first input of `F_LE`.
 
-``` - The value from adapter `IN2` (via its data output `IN2.D1`) is assigned to the second input of `F_LE`.
+`` - The value from adapter `IN2` (via its data output `IN2.D1`) is assigned to the second input of `F_LE`.
 
 The internal block `F_LE` performs the comparison and passes the result (`TRUE` or `FALSE`) via its output `OUT` to the adapter plug `OUT`. Upon completion, the event `OUT.E1` is triggered.
 

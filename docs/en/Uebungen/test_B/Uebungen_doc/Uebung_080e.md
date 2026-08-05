@@ -46,7 +46,7 @@ This exercise demonstrates the use of an up counter (`E_CTU`) in conjunction wit
 - **Type**: `iec61499::events::E_MERGE_4`
 - **Function**: Combines up to four incoming events (at `EI1`–`EI4`) into a single output (`EO`). Then, it merges the parallel branches back into a single event stream.
 
-``` - **RT_E_EC_COUPLER** (three instances)
+`` - **RT_E_EC_COUPLER** (three instances)
 
 - **Type**: `eclipse4diac::rtevents::RT_E_REND`
 - **Parameters** (for all three):
@@ -58,7 +58,7 @@ This exercise demonstrates the use of an up counter (`E_CTU`) in conjunction wit
 - **Event Outputs**: `EO`
 - **Function**: Ensures a time-based decoupling and a minimum interval of 500 ms between events. It acts as an "event brake" to smooth out rapid typing sequences.
 
-``` - **DigitalOutput_Q1**
+`` - **DigitalOutput_Q1**
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**:
@@ -92,7 +92,7 @@ This exercise demonstrates the use of an up counter (`E_CTU`) in conjunction wit
 - The output `EO` of the first `RT_E_REND` triggers the `REQ` input of the digital output function block `DigitalOutput_Q1`.
 - The other two `RT_E_REND` are also present in the network (possibly prepared for additional outputs or redundancy), but are not directly connected to a subsequent function block in the current data flow.
 ...`` `` `` `**Event Brake (RT_E_REND) (Return to the input `RT_E_REND`)
-``` ``EI1` and `EI2`` ``RT_E_REND`` `qzmsdocs000 5. **Data Flow**:
+`` ``EI1` and `EI2`` ``RT_E_REND`` `qzmsdocs000 5. **Data Flow**:
 
 - The current counter value `E_CTU.Q` is directly connected to the data input `DigitalOutput_Q1.OUT`. With each event at `REQ`, this value is transferred to the physical output `Output_Q1`.
 

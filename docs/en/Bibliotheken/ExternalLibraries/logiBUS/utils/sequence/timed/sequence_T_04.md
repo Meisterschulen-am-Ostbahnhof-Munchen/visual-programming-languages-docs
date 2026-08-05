@@ -86,7 +86,7 @@ The FB operates as a Basic Function Block (BFB) with a defined Execution Control
 * **Control of Cycle Machines**: Automatic sequencing of machining steps such as drilling, milling, and deburring with adjustable processing times.
 * **Packaging Systems**: Control of the timing sequence: product feeding -> packaging closure -> label application -> palletizing.
 
-```* **Cleaning Processes**: Control of a spray booth: Pre-rinse (State_01) -> Main cleaning (State_02) -> Rinse (State_03) -> Dry (State_04).
+``* **Cleaning Processes**: Control of a spray booth: Pre-rinse (State_01) -> Main cleaning (State_02) -> Rinse (State_03) -> Dry (State_04).
 
 * **Test Stands**: Automated test sequence where each test step has a fixed duration.
 

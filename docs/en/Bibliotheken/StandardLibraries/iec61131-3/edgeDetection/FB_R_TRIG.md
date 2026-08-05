@@ -22,7 +22,7 @@ The function block `FB_R_TRIG` is used to detect the rising edge of a Boolean si
 This function block does not use any adapters.
 
 ## Functionality
-`FB_R_TRIG` stores the previous state of the input signal `CLK` in an internal variable `MEM`. Each time the algorithm is called via the event `REQ`, it checks whether the current state was `CLK` or `TRUE` and the previous state was `FALSE`. If so, the output `Q` is set to `TRUE`; otherwise, it is set to `FALSE`. The current state of `CLK` is then stored in `MEM` for the next iteration.
+FB_R_TRIG` stores the previous state of the input signal `CLK` in an internal variable `MEM`. Each time the algorithm is called via the event `REQ`, it checks whether the current state was `CLK` or `TRUE` and the previous state was `FALSE`. If so, the output `Q` is set to `TRUE`; otherwise, it is set to `FALSE`. The current state of `CLK` is then stored in `MEM` for the next iteration.
 
 ## Technical Features
 - The function block is implemented according to the IEC 61499-1 standard.

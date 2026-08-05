@@ -80,7 +80,7 @@ The function block internally contains a function block `iec61131::counters::FB_
 - `FB_CTD.Q` (BOOL) → `Q.D1`
 - `FB_CTD.CV` (INT) → `CV.D1`
 
-`` Note: The output event is triggered **with every update** (i.e., on CD, LD, or PV). A simple value change without an event (On-Change) is not implemented.
+` Note: The output event is triggered **with every update** (i.e., on CD, LD, or PV). A simple value change without an event (On-Change) is not implemented.
 
 ## Technical Features
 - **License and Origin**: This function block is licensed under the **Eclipse Public License 2.0** (EPL 2.0). It was developed as teaching material for the master craftsman schools at Ostbahnhof.
@@ -102,7 +102,7 @@ Therefore, a graphical state machine is not required.
 ## Application Scenarios
 - **Inventory Counter**: Decrementing an inventory level upon removal (CD), resetting via LD after replenishment.
 
-``` - **Event Counter with Threshold**: Counts events until 0 is reached, then triggers a signal (Q).
+`` - **Event Counter with Threshold**: Counts events until 0 is reached, then triggers a signal (Q).
 
 - **Time/Pulse Control**: Used as a pulse counter in conjunction with a clock (CD) and specifying the desired number of events (PV).
 - **Adapter Integration**: In modular control systems where events and data are to be encapsulated via standardized adapter interfaces.

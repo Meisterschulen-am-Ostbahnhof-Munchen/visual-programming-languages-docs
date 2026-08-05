@@ -75,4 +75,4 @@ The function block has no other states (no wait loops, no branches). After the a
 
 ## Conclusion
 
-`SET_DINT` is a simple yet useful function block for the targeted assignment of DINT values. By using an InOut variable, the interface remains streamlined, and the block can be directly integrated into existing data flows. Its clear, stateless logic makes it reliable and easy to understand – ideal for basic transfer operations in automation projects.
+SET_DINT` is a simple yet useful function block for the targeted assignment of DINT values. By using an InOut variable, the interface remains streamlined, and the block can be directly integrated into existing data flows. Its clear, stateless logic makes it reliable and easy to understand – ideal for basic transfer operations in automation projects.

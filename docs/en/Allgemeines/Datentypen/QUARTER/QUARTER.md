@@ -21,13 +21,13 @@ The **QUARTER** data type is a 2-bit data type that represents four states. It i
 
 | :--- | :--- | :--- |
 
-`00` | 0 | **Off** |
+00` | 0 | **Off** |
 
-`01` | 1 | **On** |
+01` | 1 | **On** |
 
-`10` | 2 | **Error** (or Reserved) |
+10` | 2 | **Error** (or Reserved) |
 
-`11` | 3 | **Not Available** (or Don't Care) |
+11` | 3 | **Not Available** (or Don't Care) |
 
 ## Usage
 This data type is frequently used for the efficient transmission of status information where, in addition to the pure switching state (On/Off), diagnostic information (Error, Not Available) is also relevant.

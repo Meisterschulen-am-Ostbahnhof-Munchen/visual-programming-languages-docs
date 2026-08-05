@@ -50,7 +50,7 @@ The function block is activated by an event at `REQ`. The associated algorithm c
 - `OUT` receives the value of `IN`.
 - `VALID` is set to `TRUE`.
 
-``` - Otherwise (signal invalid):
+`` - Otherwise (signal invalid):
 
 - `OUT` is set to `DWORD#0`.
 - `VALID` is set to `FALSE`.
@@ -85,7 +85,7 @@ There is only one state; after its processing, the function block returns to the
 
 ## Conclusion
 
-`FIELDBUS_DWORD_TO_SIGNAL` is a compact yet essential function block for robust fieldbus connectivity. It combines signal transmission with simple validity checking and provides the validity as a separate Boolean signal. This allows downstream functions to quickly react to valid data or initiate error handling. The use of imported constants ensures a consistent definition of the validity threshold across multiple functions.
+FIELDBUS_DWORD_TO_SIGNAL` is a compact yet essential function block for robust fieldbus connectivity. It combines signal transmission with simple validity checking and provides the validity as a separate Boolean signal. This allows downstream functions to quickly react to valid data or initiate error handling. The use of imported constants ensures a consistent definition of the validity threshold across multiple functions.
 
 ---
 

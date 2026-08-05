@@ -12,7 +12,7 @@ This exercise implements a combined forward/down counter according to IEC 61131-
 - Events: `REQ` (call), `CNF` (acknowledgment)
 - Functionality: The function block increments on each rising edge at `CU` (forward) or `CD` (backward). At `R=TRUE`, the counter is reset to 0, and at `LD=TRUE`, the value from `PV` is loaded. When the preset value is reached, the outputs `QU`/`QD` are set.
 
-``` - **Input_CU** – Type: `logiBUS::io::DI::logiBUS_IX`
+`` - **Input_CU** – Type: `logiBUS::io::DI::logiBUS_IX`
 
 - Parameters: `QI = TRUE`, `Input = Input_I1`
 - Inputs: `IND` (event on change), `IN` (data value)
@@ -37,7 +37,7 @@ This exercise implements a combined forward/down counter according to IEC 61131-
 - Events: `REQ`, `CNF`
 - Function: Converts the 64-bit counter value (`CV`) to a 32-bit value. **Caution:** Values > 2³² may result in an overflow (see comment).
 
-``` - **Q_NumericValue** – Type: `isobus::UT::Q::Q_NumericValue`
+`` - **Q_NumericValue** – Type: `isobus::UT::Q::Q_NumericValue`
 
 - Parameters: `u16ObjId = OutputNumber_N1`
 - Inputs: `REQ`, `u32NewValue`
@@ -49,7 +49,7 @@ This exercise implements a combined forward/down counter according to IEC 61131-
 
 Each digital input (Input_CU…Input_LD) generates an event (`IND`) upon a state change. All these events are connected to the `REQ` input of the counter `FB_CTUD_ULINT`. This increments the counter every time a key is pressed at one of the four inputs.
 
-``` *Note:* Since simultaneous events from multiple inputs are (or may not be) combined into a single call, undesirable behavior may occur. The comment therefore recommends including one or two `E_D_FF` (Event DFlipFlops) to reduce the number of events.
+`` *Note:* Since simultaneous events from multiple inputs are (or may not be) combined into a single call, undesirable behavior may occur. The comment therefore recommends including one or two `E_D_FF` (Event DFlipFlops) to reduce the number of events.
 
 2. **Data Connections**
 
@@ -58,7 +58,7 @@ Each digital input (Input_CU…Input_LD) generates an event (`IND`) upon a state
 - The current counter value `CV` is reduced to 32 bits via the conversion block `F_ULINT_TO_UDINT` and passed to the terminal block `Q_NumericValue`.
 - The event chain `FB_CTUD_ULINT.CNF` simultaneously triggers the output function blocks and the conversion. After the conversion, `Q_NumericValue` is updated.
 
-``` 3. **Parameters**
+`` 3. **Parameters**
 
 The preset value `PV` is set to `ULINT#10` – a comparison with this value sets the outputs `QU`/`QD`.
 

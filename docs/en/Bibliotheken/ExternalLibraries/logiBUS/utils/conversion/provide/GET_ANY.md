@@ -73,4 +73,4 @@ No other states (e.g., Wait, Error) are defined.
 - **`MOVE`-FB**: A `MOVE` function block typically copies from an input to an output but does not use an InOut variable. `GET_ANY`, on the other hand, reads directly from an existing variable without requiring a separate input connection.
 
 ## Conclusion
-`GET_ANY` is a simple yet powerful function block for **caching any value** from an InOut source. Its generic type design and direct connection to existing variables reduce wiring complexity and increase flexibility in the control logic. It is particularly suitable for applications where a value needs to be frozen at a specific event time.
+GET_ANY` is a simple yet powerful function block for **caching any value** from an InOut source. Its generic type design and direct connection to existing variables reduce wiring complexity and increase flexibility in the control logic. It is particularly suitable for applications where a value needs to be frozen at a specific event time.

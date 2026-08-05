@@ -28,7 +28,7 @@ The `E_SWITCH` forwards the input event `IND` to one of its two event outputs, d
 
 If `G = FALSE` is the input, the event is output to `EO0` (Set). - If `G = TRUE` is present, the event is passed to `EO1` (Reset).
 
-`E_SR` responds to events at its Set and Reset inputs:
+E_SR` responds to events at its Set and Reset inputs:
 
 - An event at `S` sets the output `Q = TRUE`.
 - An event at `R` sets `Q = FALSE`.
@@ -49,19 +49,19 @@ This process repeats with each subsequent event. **Connections at a Glance** (in
 
 - Event Connections:
 
-`IND` → `E_SWITCH.EI`
+IND` → `E_SWITCH.EI`
 
-`E_SWITCH.EO0` → `E_SR.S`
+E_SWITCH.EO0` → `E_SR.S`
 
-`E_SWITCH.EO1` → `E_SR.R`
+E_SWITCH.EO1` → `E_SR.R`
 
-`E_SR.EO` → `EO` (external output)
+E_SR.EO` → `EO` (external output)
 
 - Data Connections:
 
-`E_SR.Q` → `E_SWITCH.G` (feedback)
+E_SR.Q` → `E_SWITCH.G` (feedback)
 
-`E_SR.Q` → `Q` (external output)
+E_SR.Q` → `Q` (external output)
 
 **Learning Objectives**:
 

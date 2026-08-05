@@ -50,12 +50,12 @@ The **ATM_AX_TP** operates based on the standardized IEC 61499 function block **
 
 Internal wiring:
 
-`IN.E1 → E_TP.REQ`
-`IN.D1 → E_TP.IN`
-`PT.D1 → E_TP.PT`
-`E_TP.CNF → Q.E1` (Event output at pulse end)
-`E_TP.Q   → Q.D1` (Output data value)
-`R       → E_TP.R`
+IN.E1 → E_TP.REQ`
+IN.D1 → E_TP.IN`
+PT.D1 → E_TP.PT`
+E_TP.CNF → Q.E1` (Event output at pulse end)
+E_TP.Q   → Q.D1` (Output data value)
+R       → E_TP.R`
 
 ## Technical Features
 - **Adapter-based connection:** Unlike a direct E_TP, ATM_AX_TP operates exclusively via adapters (AX and ATM). This allows for loose coupling in distributed systems and simplifies the exchange of signal types.

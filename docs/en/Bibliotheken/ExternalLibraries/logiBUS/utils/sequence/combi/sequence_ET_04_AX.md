@@ -49,4 +49,4 @@ Similar to `sequence_ET_04`, but preferred when adapter connections are to be us
 * **sequence_ET_04**: The standard version with simple BOOL outputs.
 
 ## Conclusion
-`sequence_ET_04_AX` offers the functionality of `sequence_ET_04` with a more modern adapter interface.
+sequence_ET_04_AX` offers the functionality of `sequence_ET_04` with a more modern adapter interface.

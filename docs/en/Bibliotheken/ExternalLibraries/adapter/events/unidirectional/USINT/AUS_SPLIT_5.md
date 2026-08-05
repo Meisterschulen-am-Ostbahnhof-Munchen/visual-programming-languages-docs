@@ -55,7 +55,7 @@ The component has no internal state. It operates deterministically and entirely 
 - **E_SPLIT** – A standard event split function block that uses event inputs and outputs instead of adapters. `AUS_SPLIT_5` is adapter-based and therefore more flexible in its reuse with different protocols.
 
 ## Conclusion
-`AUS_SPLIT_5` is a simple, generic distribution function block for unidirectional OFF signals. It simplifies modular control logic by implementing a 1:5 split without additional logic. Thanks to the adapter interface, it can be used in different contexts (e.g., event, data, or mixed streams).
+AUS_SPLIT_5` is a simple, generic distribution function block for unidirectional OFF signals. It simplifies modular control logic by implementing a 1:5 split without additional logic. Thanks to the adapter interface, it can be used in different contexts (e.g., event, data, or mixed streams).
 
 ---
 

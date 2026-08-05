@@ -2,9 +2,9 @@
 ![PgnDef](./PgnDef.svg)
 * * * * * * * * * *
 ## Introduction
-`PgnDef` is a collection of global constants for the 4diac IDE that defines Parameter Group Numbers (PGNs) for ISOBUS and NMEA 2000 communication protocols. These constants represent numeric identifiers for specific message types used in agricultural and maritime vehicle networking. The collection serves as a central reference library for accessing standardized PGNs in IEC 61499 applications, thus improving code readability and maintainability.
+PgnDef` is a collection of global constants for the 4diac IDE that defines Parameter Group Numbers (PGNs) for ISOBUS and NMEA 2000 communication protocols. These constants represent numeric identifiers for specific message types used in agricultural and maritime vehicle networking. The collection serves as a central reference library for accessing standardized PGNs in IEC 61499 applications, thus improving code readability and maintainability.
 ## Interface Structure
-`PgnDef` is a `GlobalConstants` element and therefore does not have event- or data-flow-based interfaces in the conventional sense of a function block. Instead, it provides a collection of constants that can be declared and used in other function blocks or programs.
+PgnDef` is a `GlobalConstants` element and therefore does not have event- or data-flow-based interfaces in the conventional sense of a function block. Instead, it provides a collection of constants that can be declared and used in other function blocks or programs.
 
 ### **Event Inputs**
 Not present. This is a constant definition.
@@ -22,7 +22,7 @@ Not present. This is a constant definition.
 Not present. This is a constant definition.
 
 ## How it Works
-`PgnDef` itself has no executable logic. It simply defines an extensive list of constants of the data type `UDINT` (Unsigned Double Integer). Each constant is a PGN value initialized in hexadecimal notation (`UDINT#16#XXXX`) and contains a human-readable comment with the PGN name and often a reference to the corresponding standard (e.g., ISO 11783-7). Other function blocks can import these constants via their fully qualified names (e.g., `isobus::pgn::PGN_HEARTBEAT`) and use them in their logic to identify or generate messages.
+PgnDef` itself has no executable logic. It simply defines an extensive list of constants of the data type `UDINT` (Unsigned Double Integer). Each constant is a PGN value initialized in hexadecimal notation (`UDINT#16#XXXX`) and contains a human-readable comment with the PGN name and often a reference to the corresponding standard (e.g., ISO 11783-7). Other function blocks can import these constants via their fully qualified names (e.g., `isobus::pgn::PGN_HEARTBEAT`) and use them in their logic to identify or generate messages.
 
 ## Technical Features
 * **Extensive Coverage:** The collection contains PGNs from a variety of standards, including ISO 11783 (ISOBUS, Parts 3-7, 12, 13), SAE J1939 (71, 73, 75), and NMEA 2000.

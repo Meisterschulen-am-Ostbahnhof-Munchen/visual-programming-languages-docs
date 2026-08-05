@@ -50,11 +50,11 @@ The output `Q` of the timer controls the input `OUT` of the timer `DigitalOutput
 
 This causes the hardware output `Output_Q1` (e.g., a lamp) to be activated for exactly 1 second after the input signal has dropped. **Summary Data Flow:**
 
-`DigitalInput_I1.IN` -> `FB_F_TRIG.CLK` -> `FB_F_TRIG.Q` -> `E_TP.IN` -> `E_TP.Q` -> `DigitalOutput_Q1.OUT`
+DigitalInput_I1.IN` -> `FB_F_TRIG.CLK` -> `FB_F_TRIG.Q` -> `E_TP.IN` -> `E_TP.Q` -> `DigitalOutput_Q1.OUT`
 
 **Summary Event Flow:**
 
-`DigitalInput_I1.IND` -> `FB_F_TRIG.REQ` -> `FB_F_TRIG.CNF` -> `E_TP.REQ` -> `E_TP.CNF` -> `DigitalOutput_Q1.REQ`
+DigitalInput_I1.IND` -> `FB_F_TRIG.REQ` -> `FB_F_TRIG.CNF` -> `E_TP.REQ` -> `E_TP.CNF` -> `DigitalOutput_Q1.REQ`
 
 ## Summary
 Exercise_178 demonstrates the classic application of a "run-on control" or shutdown delay based on a negative signal change. The user learns how to combine digital signal acquisition, logical edge detection using `FB_F_TRIG`, and time-controlled output using `E_TP`. A practical example would be a light that illuminates for one second as soon as a button is *released*.

@@ -71,7 +71,7 @@ The flow is controlled by events. The connections are implemented as follows:
 
 At startup, the event `Input_LD.INITO` is forwarded to `AI_INT_TO_I.REQ`. This transfers the constant value `INT#5` to the PV input of the meter `AI_FB_CTUD.PV` via the adapter `AI_INT_TO_I`.
 
-``` 2. **Counter Inputs**
+`` 2. **Counter Inputs**
 
 - `Input_CU.IN` → `AI_FB_CTUD.CU` (Count up on edge)
 - `Input_CD.IN` → `AI_FB_CTUD.CD` (Count down on edge)

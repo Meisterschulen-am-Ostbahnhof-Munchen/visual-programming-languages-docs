@@ -33,8 +33,10 @@ def clean_id(path):
 def build_path_to_id_map(pages):
     path_to_id = {}
     for page in pages:
-        src = page.file.src_path # relative to docs/ e.g. "4diac/index.md"
-        path_to_id[src.replace('\\', '/')] = clean_id(src)
+        src = page.file.src_path.replace('\\', '/') # relative to docs/ e.g. "4diac/index.md"
+        cid = clean_id(src)
+        path_to_id[src] = cid
+        path_to_id[src.lower()] = cid
     return path_to_id
 
 def _detect_image_ext(data):
@@ -137,12 +139,13 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
     # 1. Markdown syntax: ![alt](path) or [text](path)
     def rewrite_single_link(prefix, text, url_part):
         url_part = url_part.strip()
+        url_part_clean = urllib.parse.unquote(url_part).strip('<>')
         
         # Split anchor
-        if '#' in url_part:
-            url_path, anchor = url_part.split('#', 1)
+        if '#' in url_part_clean:
+            url_path, anchor = url_part_clean.split('#', 1)
         else:
-            url_path, anchor = url_part, ''
+            url_path, anchor = url_part_clean, ''
             
         # Safeguard: demote image prefix if target does not look like an image
         if prefix == '![':
@@ -196,8 +199,9 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
         no_ext = target_src[:-3] if target_src.endswith('.md') else target_src
         target_src_md = no_ext + '.md'
         
-        if target_src_md in path_to_id:
-            target_id = path_to_id[target_src_md]
+        target_key = target_src_md if target_src_md in path_to_id else target_src_md.lower()
+        if target_key in path_to_id:
+            target_id = path_to_id[target_key]
             anchor_str = f"-{clean_id(anchor)}" if anchor else ""
             return f"{prefix}{text}](#{target_id}{anchor_str})"
             

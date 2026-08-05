@@ -35,7 +35,6 @@ The function block **SPLIT_AW_INTO_AQ** divides the eight quarter adapters (AQ) 
 6. Simultaneously, the event `QUARTER_BYTE_xx.E1` is triggered to signal the data transfer to downstream components.
 ...``
 
-````````
 ## Technical Features
 
 - **Synchronization via Flip-Flops:** All eight quarter values are taken from the internal splitter in sync with the clock.

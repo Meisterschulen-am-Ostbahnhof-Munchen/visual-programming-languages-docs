@@ -25,7 +25,6 @@ LowSide_Driver | `logiBUS::io::DQ::logiBUS_QX` | Digital output for the low-side
 
 OR_2_BOOL | `iec61131::bitwiseOperators::OR_2_BOOL` | Logical OR: activates the low-side driver for clockwise or counterclockwise rotation. |
 
-``````````````````````
 ### Instance Parameters
 
 - **DigitalInput_I1**: `QI = TRUE`, `Input = Input_I1`

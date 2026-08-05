@@ -38,7 +38,6 @@ The FB does not have direct data outputs. The converted UDINT data is output via
 
 5. The converted UDINT value is passed from the output `OUT` of `Convert` to the data input `D1` of `AUDI_OUT` and is thus available at the output adapter.
 
-`` ...
 ## Technical Features
 
 - **Composite Architecture**: The function block consists solely of the internal use of the function block `F_LWORD_TO_UDINT` and the adapters. It has no independent state logic or additional control.

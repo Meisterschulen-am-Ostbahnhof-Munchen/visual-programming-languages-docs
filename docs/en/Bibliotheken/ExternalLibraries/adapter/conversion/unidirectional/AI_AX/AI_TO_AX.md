@@ -74,7 +74,6 @@ The result is passed to the data output `AX_OUT.D1`, and simultaneously the even
 
 `` If the input value is **equal to 0**, then `F_NE.OUT` returns the value `FALSE`.
 
-`` ...
 ## Technical Features
 
 - **Composite Block:** The `AI_TO_AX` consists of interconnected basic blocks, allowing it to be used as a reusable component in various projects.

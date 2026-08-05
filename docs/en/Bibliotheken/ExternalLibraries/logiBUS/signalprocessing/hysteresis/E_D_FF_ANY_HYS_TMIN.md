@@ -1,13 +1,8 @@
 # E_D_FF_ANY_HYS_TMIN
-
 ![E_D_FF_ANY_HYS_TMIN](./E_D_FF_ANY_HYS_TMIN.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **E_D_FF_ANY_HYS_TMIN** is a D flip-flop (data latch) with hysteresis that additionally enforces a minimum inter-disposal time between successive output events. It serves to stably transfer an analog or discrete value while simultaneously suppressing fast noise and excessively frequent state transitions.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -46,7 +41,6 @@ The function block **E_D_FF_ANY_HYS_TMIN** is a D flip-flop (data latch) with hy
 
 | Name | Type | Description |
 
-
 | Name | Type | Description |
 
 | |------|----------|-----------------------------------------------------|
@@ -68,24 +62,15 @@ The function block consists internally of two functional blocks:
 Procedure:
 
 - `INIT` initializes the timer of `E_TMIN` with the parameter `Tmin`.
-
 - A `CLK` triggers the hysteresis flip-flop.
-
 - When the flip-flop detects a state change, it generates an internal event (`E_D_FF_ANY_HYS.EO`).
-
 - This event is forwarded to `E_TMIN.EI`. `E_TMIN` checks whether the required minimum time (`Tmin`) has elapsed since the last output (`EO`). If so, `EO` is set at the output; otherwise, the event is discarded.
-
 - The output value (`Q`) is passed directly from the flip-flop to the data output.
 
-
 ## Technical Features
-
 - **Generic Data Type** `ANY_NUM`: The function block can work with various numeric data types (INT, REAL, LREAL, …).
-
 - **Hysteresis** suppresses small fluctuations (e.g., sensor noise) and prevents unwanted oscillation.
-
 - **Minimum Event Interval `Tmin`** limits the maximum output frequency and protects subsequent processing steps from overload.
-
 - **No State Machine Visible**: The functionality is fully implemented through the internal network structure of blocks `E_D_FF_ANY_HYS` and `E_TMIN`.
 
 ## State Overview
@@ -93,21 +78,14 @@ Procedure:
 Since the function block consists of two sub-blocks internally, no separate state diagram is defined in the XML. The key behaviors are:
 
 - Initialized (`INIT` → `INITO`)
-
 - Clocking (`CLK`) → Takeover of `D` with hysteresis
-
 - Change in `Q` triggers timer check
-
 - Timer allows or blocks the output of `EO`
 
 ## Application Scenarios
-
 - **Signal conditioning** for slow measured variables (e.g., temperature, fill level) where small fluctuations should be ignored and a minimum update rate must be maintained.
-
 - **Debouncing** of digital or analog switching contacts that must be transmitted with a delay.
-
 - **Control engineering** with a limited switching frequency to protect actuators.
-
 - **Data preprocessing** in IoT edge devices that shouldn't send every small event.
 
 ## Comparison with similar modules

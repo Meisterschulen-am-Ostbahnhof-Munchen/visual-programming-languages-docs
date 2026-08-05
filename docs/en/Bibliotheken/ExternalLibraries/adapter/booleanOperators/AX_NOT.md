@@ -1,12 +1,8 @@
 # AX_NOT
-
 <img width="820" height="231" alt="image" src="https://github.com/user-attachments/assets/dc31ab7f-e7b2-434e-88d6-7cf13a88d725" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_NOT function block is a standardized Boolean NOT operator implemented according to the IEC 61131-3 standard. This block performs a logical negation (NOT operation) on the input values and outputs the inverted result.
-
 ![AX_NOT](AX_NOT.svg)
 
 ## Interface Structure
@@ -24,14 +20,11 @@ The function block has no direct data inputs.
 The function block has no direct data outputs.
 
 ### **Adapters**
-
 - **IN** (Socket): Input adapter of type `adapter::types::unidirectional::AX` - used to transmit input data
-
 - **OUT** (Plug): Output adapter of type `adapter::types::unidirectional::AX` - used to output the processed data
 
 ## Functionality
 The AX_NOT function block performs a logical negation on the Boolean values received via the IN adapter. The result of the NOT operation is output via the OUT adapter. Processing is bidirectional between the application and resource layers.
-
 
 ## Technical Features
 - Implemented according to the IEC 61131-3 standard for Boolean functions
@@ -51,11 +44,9 @@ The function block operates statelessly and performs the NOT operation directly 
 ## ⚖️ Comparison with Similar Function Blocks
 Compared to other Boolean operators such as AND or OR, AX_NOT performs only the negation operation. The use of adapters instead of direct inputs/outputs allows for more flexible integration into more complex system architectures.
 
-
 Comparison with [F_NOT](../../../StandardLibraries/iec61131-3/bitwiseOperators/F_NOT.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_006a3_sub_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)]
 
 ## Conclusion

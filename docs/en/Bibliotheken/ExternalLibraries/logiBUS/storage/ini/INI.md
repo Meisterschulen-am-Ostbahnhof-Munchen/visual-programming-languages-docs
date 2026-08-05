@@ -1,13 +1,8 @@
 # INI
-
 ![INI](./INI.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **INI** function block is used for the secure reading and writing of configuration data in a `settings.ini` file. It allows access to values via a section and key name and provides both initialization and read/write operations as separate events. Its use of generic data types (`ANY`) makes it flexible.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -66,7 +61,6 @@ GET | Event | Reads the value of the current key |
 
 No adapters defined.
 
-
 ## Functionality
 
 The function block operates on a file `settings.ini`, which contains a simple key-value structure in sections (`[Section]`). Its use involves three steps:
@@ -80,13 +74,9 @@ The function block operates on a file `settings.ini`, which contains a simple ke
 The execution of each event is acknowledged by the respective output (INITO, SETO/SETOE, GETO). The function block `QO` indicates whether the operation was successful, and `STATUS` provides textual feedback.
 
 ## Technical Features
-
 - **Generic Data Types** – `VALUE` and `DEFAULT_VALUE` are declared as `ANY`. The function block can therefore work with various data types (e.g., BOOL, INT, REAL, STRING), provided the runtime environment supports them.
-
 - **Write Protection (Factory Default)** – In addition to `settings.ini`, the system also supports the write-protected default file `settingsReadOnly.ini`. Parameters from this file override modifiable values and reject write attempts using `STATUS = "Key is read-only"`. See also [Read-only settings (`settingsReadOnly.ini`)](./settingsReadOnly.md)].
-
 - **Event-based control** – All actions are triggered by events. The function block can therefore be fully integrated into an event-driven system (e.g., IEC 61499).
-
 - **Error handling** – The output qualifier `QO` and the `STATUS` string enable easy error diagnosis (e.g., for read-only keys, missing file, or invalid section).
 
 ## State overview
@@ -94,19 +84,14 @@ The execution of each event is acknowledged by the respective output (INITO, SET
 The function block goes through the following main states:
 
 - **Idle** – Waiting for INIT.
-
 - **Initialized** – After successful INIT; ready for SET or GET.
-
 - **Error** – In case of failed initialization or operation; only a new INIT can exit this state.
 
 State transitions are controlled by the INIT, SET, and GET events and their corresponding acknowledgment outputs.
 
 ## Application Scenarios
-
 - **Machine Configuration** – Saving and retrieving parameters such as speed, temperature limits, or operating modes in a central INI file.
-
 - **Plant Initialization** – Loading settings once when the controller starts via the INIT event.
-
 - **Online Parameterization** – Dynamically changing values during operation using SET and immediately retrieving them with GET.
 
 ## Comparison with Similar Function Blocks

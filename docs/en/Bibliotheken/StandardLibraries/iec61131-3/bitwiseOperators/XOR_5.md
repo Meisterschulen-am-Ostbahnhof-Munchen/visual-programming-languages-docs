@@ -1,13 +1,8 @@
 # XOR_5
-
 ![XOR_5](https://user-images.githubusercontent.com/116869307/214144268-b188a2d3-cbc1-48b6-a90d-300b875efdc0.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The XOR_5 function block is a generic function block for calculating the bitwise Boolean XOR operation with five inputs. It implements the exclusive OR operation for arbitrary bit data types according to the IEC 61131-3 standard.
-
-
 ![XOR_5](XOR_5.svg)
 
 ## Interface Structure
@@ -31,17 +26,13 @@ The XOR_5 function block is a generic function block for calculating the bitwise
 ### **Adapters**
 No adapter interfaces are available.
 
-
 ## Functionality
 Upon arrival of the REQ event, the function block performs a bitwise XOR operation on all five input values. The result is output to the OUT output, and simultaneously, the CNF event is generated to confirm the completion of the calculation.
-
 
 ``` The XOR operation is performed according to the following principle:
 
 - Each bit position is processed individually.
-
 - The result bit is 1 if an odd number of input bits at that position are 1.
-
 - The result bit is 0 if an even number of input bits at that position are 1.
 
 ## Technical Features

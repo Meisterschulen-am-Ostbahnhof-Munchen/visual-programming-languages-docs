@@ -1,13 +1,8 @@
 # Q_SetAudioVolume
-
 ![Q_SetAudioVolume](https://user-images.githubusercontent.com/116869307/214153008-918f1900-9a0a-4ee0-8fdb-ef02818a91cd.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_SetAudioVolume** is a standards-compliant function block for volume control in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.12) specification for VT audio control.
-
-
 ![Q_SetAudioVolume](Q_SetAudioVolume.svg)
 
 ## Interface Structure
@@ -33,21 +28,17 @@ The **Q_SetAudioVolume** is a standards-compliant function block for volume cont
 1. **Initialization**:
 
 - `INIT` without parameters
-
 - `INITO` confirms operational readiness
 
 2. **Volume Control**:
 
 - `REQ` with desired volume level
-
 - Changes the global VT volume
-
 - `CNF` returns operating status and previous value
 
 3. **Value Range**:
 
 - 0%: Muted
-
 - 100%: Maximum volume
 
 ## Technical Features
@@ -90,7 +81,6 @@ The **Q_SetAudioVolume** is a standards-compliant function block for volume cont
 -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
-
 - **Alarm Management**: Adjustable warning signals
 - **Voice Output**: Volume adjustment
 - **Ease of Use**: User-defined audio settings

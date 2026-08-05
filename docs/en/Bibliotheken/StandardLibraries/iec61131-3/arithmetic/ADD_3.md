@@ -1,13 +1,8 @@
 # ADD_3
-
 ![ADD_3](https://user-images.githubusercontent.com/116869307/214143012-431cb6ed-2e5c-4316-a5b8-ab7a341eeb37.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **ADD_3** is an enhanced version of the adder for calculating the sum of three values, developed under the EPL-2.0 license. Version 1.0 offers type-safe addition for various numeric data types according to the IEC 61131-3 standard.
-
-
 ![ADD_3](ADD_3.svg)
 
 ## Interface Structure
@@ -24,7 +19,6 @@ The **ADD_3** is an enhanced version of the adder for calculating the sum of thr
 - `IN3` (ANY_MAGNITUDE): Third addend
 
 ### **Data Outputs**
-
 - `OUT` (ANY_MAGNITUDE): Result of addition (IN1 + IN2) + IN3)
 
 ## Operating Principle
@@ -32,25 +26,19 @@ The **ADD_3** is an enhanced version of the adder for calculating the sum of thr
 1. **Requirement**:
 
 - The `REQ` event triggers the calculation
-
 - All three input values are evaluated simultaneously
 
 2. **Calculation**:
 
 - Type-preserving summation
-
 - Supports all ANY_MAGNITUDE types:
-
 - Integers (INT, DINT)
-
 - Floating-point numbers (REAL, LREAL)
-
 - Time values (TIME, LTIME)
 
 3. **Result Output**:
 
 - The `CNF` event with the calculated OUT value
-
 - Automatic type conversion for mixed inputs
 
 ## Technical Features
@@ -62,7 +50,6 @@ The **ADD_3** is an enhanced version of the adder for calculating the sum of thr
 ✔ **Deterministic execution**
 
 ## Typical Use Cases
-
 - **Measurement Aggregation**: Summing data from multiple sensors
 - **Energy Balancing**: Calculating total energy consumption
 - **Positioning Technology**: Multidimensional coordinates
@@ -80,21 +67,14 @@ The **ADD_3** is an enhanced version of the adder for calculating the sum of thr
 
 | Performance | Higher efficiency with 3 inputs | Lightweight |
 
-
 ## Error Handling
-
 - In case of type incompatibility:
-
 - OUT = 0 (numeric types)
-
 - Empty value (non-numeric types)
-
 - Execution is not aborted
 
 ## 🛠️ Related Exercises
-
 * [Exercise_087](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)]
-
 * [Exercise_087a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)]
 
 ## Conclusion

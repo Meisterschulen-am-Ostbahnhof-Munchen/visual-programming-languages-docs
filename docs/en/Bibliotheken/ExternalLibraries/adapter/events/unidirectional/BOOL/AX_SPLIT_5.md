@@ -1,13 +1,8 @@
 # AX_SPLIT_5
-
 <img width="705" height="370" alt="image" src="https://github.com/user-attachments/assets/cccee27c-e0ef-4c16-8e20-6ba612d866e5" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_SPLIT_5 function block is a generic function block used to split an AX adapter into five separate AX outputs. The block enables the distribution of an input signal to multiple output channels and is particularly useful in control applications where signals need to be distributed to different components.
-
-
 ![AX_SPLIT_5](AX_SPLIT_5.svg)
 
 ## Interface Structure
@@ -47,9 +42,7 @@ The AX_SPLIT_5 function block receives signals via the input adapter IN and simu
 ## State Overview
 The block has a simple state: In its idle state, it waits for incoming events at the IN adapter. Upon receiving an event, all five output adapters are immediately activated.
 
-
 ## Application Scenarios
-
 - Distribution of control signals to multiple actuators
 - Distribution of sensor values to different processing units
 - Parallel activation of multiple subsystems

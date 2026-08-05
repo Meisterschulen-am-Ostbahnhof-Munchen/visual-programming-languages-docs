@@ -1,12 +1,8 @@
 # Q_ExecuteMacro
-
 ![Q_ExecuteMacro](https://user-images.githubusercontent.com/116869307/214147465-1e5432e3-d3d3-4eee-a8a5-8aec4ee82198.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_ExecuteMacro** is a standards-compliant function block for executing macros in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.48) specification for VT from version 4 onwards.
-
 ![Q_ExecuteMacro](Q_ExecuteMacro.svg)
 
 ## Interface Structure
@@ -24,7 +20,6 @@ The **Q_ExecuteMacro** is a standards-compliant function block for executing mac
 
 ### **Data Outputs**
 - `STATUS` (STRING): Operational status message
-
 - `s16result` (INT): ISO-compliant result code
 
 ## Functionality
@@ -32,21 +27,17 @@ The **Q_ExecuteMacro** is a standards-compliant function block for executing mac
 1. **Initialization**:
 
 - `INIT` with macro object ID (8-bit compatible)
-
 - `INITO` confirms operational readiness
 
 2. **Macro Execution**:
 
 - `REQ` without additional parameters
-
 - Executes stored macro sequence
-
 - `CNF` returns result status
 
 3. **Error Handling**:
 
 - ISO-standardized error codes
-
 - Detailed status messages
 
 ## Technical Features
@@ -85,11 +76,8 @@ The **Q_ExecuteMacro** is a standards-compliant function block for executing mac
 -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
 
 ## Application Scenarios
-
 - **Standard Flows**: Frequently Used Command Chains
-
 - **System Startup**: Basic Initializations
-
 - **Operating Sequences**: Automated Menu Navigation
 - **Diagnostics**: Predefined Test Routines
 

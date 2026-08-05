@@ -1,43 +1,28 @@
 # I_FPTO
-
 * * * * * * * * * *
-
 ## Introduction
 The **I_FPTO** is a standards-compliant function block for controlling and monitoring the front power take-off (FPTO) output shaft, developed under the EPL 2.0 license.
-
 Version 1.0 implements the ISO 11783-7 specification (PGN 65092) for measuring and controlling FPTO parameters.
-
-
 ![I_FPTO](I_FPTO.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT`: Initialization Request (with qualifier `QI`)
 
 ### **Event Outputs**
-
 - `INITO`: Initialization Confirmation (with status)
-
 - `IND`: Indication Event with all FPTO parameters
-
 - `TIMEOUT`: Timeout Event
 
 ### **Data Inputs**
-
 - `QI` (BOOL): Qualifier for Initialization
 
 ### **Data Outputs**
-
 - `QO` (BOOL): Qualifier for Output Events
-
 - `STATUS` (STRING): Operating status message
-
 - `Q_timeout` (BOOL): Timeout indicator
-
 - `timestamp_timeout` (DINT): Timeout timestamp
-
 - `timestamp_data` (DINT): Data timestamp
 
 ## FPTO Parameters
@@ -66,25 +51,21 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65092) for measuring a
 
 `FRONT_PTO_EXIT_REASON_CODE` | BYTE | FPTO Failure Base Code | 5817 | 6 | 64 states/6 bits |
 
-
 ## Functionality
 
 1. **Initialization**:
 
 - `INIT` with `QI`=TRUE starts initialization
-
 - `INITO` confirms operational readiness with `QO` and `STATUS`
 
 2. **Data Provision**:
 
 - `IND` provides all FPTO parameters with timestamps
-
 - Automatic updates upon state changes
 
 3. **Error Handling**:
 
 - `TIMEOUT` in case of communication problems
-
 - Detailed status messages in the `STATUS` field
 
 ## Technical Features
@@ -97,9 +78,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65092) for measuring a
 ✔ **Diagnostic functions** with basic codes
 
 ## Application scenarios
-
 - **Agricultural machinery**: Control of front PTOs on tractors
-
 - **Speed control**: Precise speed control
 - **Condition monitoring**: Real-time diagnostics of the FPTO system
 - **Energy efficiency**: Economy mode control
@@ -119,7 +98,6 @@ Economy Mode | ✔ | ✖ | ✔ |
 Diagnostic Codes | ✔ | ✖ | ✔ |
 
 ## 🛠️ Related Exercises
-
 * [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)]
 
 ## Conclusion

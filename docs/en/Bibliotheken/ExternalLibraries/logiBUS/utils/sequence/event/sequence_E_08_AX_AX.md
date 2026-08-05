@@ -1,13 +1,8 @@
 # sequence_E_08_AX_AX
-
 ![sequence_E_08_AX_AX](./sequence_E_08_AX_AX.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **sequence_E_08_AX_AX** implements a sequential control loop with eight output stages. It enables the step-by-step switching of states, with each state being exited by an event via an AX adapter input. An AX adapter provides a unidirectional interface with a data value (`D1`) that is transferred from the input adapter to the corresponding output adapter upon entering a state. The block is designed for use in automation systems that require a clear, event-driven sequence of steps.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -88,13 +83,9 @@ None (state transitions are controlled exclusively via events).
 The function block operates on the principle of an event-driven step sequence. After starting, it is in state `xSTART`. As soon as an event arrives at socket `DI_S1`, it switches to state `sState_01`. Upon entering a state, the current data value of the associated input adapter (`DI_Sx.D1`) is transferred to the corresponding output adapter (`DO_Sx.D1`), and simultaneously, the event `CNF` with the current state number (`STATE_NR`) is triggered. When the component exits a state (e.g., due to an event at the next `DI_Sx`), the corresponding output adapter is set to `FALSE` (exit algorithm). The transition occurs stepwise: `State_01` → `State_02` → … → `State_08`. After `State_08`, the event `S8_START` returns the component to the idle state `sState_00`. From there, a new sequence can be started with `DI_S1`. The event `RESET` interrupts the sequence at any time, sets all output adapters to `FALSE`, and returns to the idle state `sState_00`.
 
 ## Technical Features
-
 - **Use of AX Adapters**: All inputs and outputs are implemented as unidirectional AX adapters, which transmit a data value (`D1`) in addition to the event channel. This allows not only the event but also an associated value (e.g., a setpoint for an actuator) to be transmitted during a state change.
-
 - **Entry/Exit Logic**: Deterministic state changes are ensured by the strict separation of entry (`State_xx_E`) and exit (`State_xx_X`) actions. The output of a state is always deactivated upon exiting to prevent looping.
-
 - **Configurable Start Condition**: The input `DI_S1` serves as the start condition both on the initial startup and after each sequence iteration. The separate event input `S8_START` allows for a manual or externally triggered return from the last state.
-
 - **State Numbering**: The output `STATE_NR` always outputs the current state number, with `0` corresponding to the idle state.
 
 ## State Overview
@@ -126,25 +117,17 @@ The function block operates on the principle of an event-driven step sequence. A
 | `sRESET` | Intermediate State on Reset | Sets **all** `DO_Sx.D1` to`FALSE`; then transition to `sState_00` |
 
 ## Application Scenarios
-
 - **Multi-stage Conveyor Control**: Each step activates a different conveyor section or a different diverter. The data value `D1` can contain the speed or the direction of travel.
-
 - **Program Flow in Machine Tools**: E.g., sequential approach to tools or stations, where each step receives a configurable parameter (e.g., pressure, temperature) via the AX adapter.
-
 - **Lighting Control with Scenes**: Eight steps can activate different lighting scenes, where the data value of a scene (e.g., brightness values) is transferred from the input adapter to the output.
-
 - **Test and Inspection Sequences**: Automated test sequences with eight consecutive test steps, where the measured values of the previous step serve as the target value for the next.
 
 ## Comparison with Similar Function Blocks
-
 - **sequence_E_08 (without AX)**: A simple sequential function block that only controls Boolean signals. The function block described here extends this functionality with AX adapters, enabling the additional transfer of data values.
-
 - **sequence_E_08_AX (with fewer adapters)**: Versions with fewer than eight stages offer a smaller number of steps, which may be sufficient or too restrictive depending on the application.
-
 - **SFC Function Blocks (Step Function Chart)**: High-level language function blocks such as `SFC` allow parallel branching, which this simple sequencer does not support. However, it is significantly more resource-efficient and deterministic in its execution.
 
 The function block presented here represents an optimized compromise between flexibility (through AX adapters) and clarity – ideal for standard step sequences with data transfer.
-
 
 ## Conclusion
 

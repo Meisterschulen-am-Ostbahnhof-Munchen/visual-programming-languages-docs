@@ -1,16 +1,10 @@
 # Exercise_013: SR Flip-Flop (Softkey)
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_013`. It demonstrates the implementation of a memory function that is fully controlled via the ISOBUS terminal.
-
-
 Exercise_013: SR Flip-Flop (Softkey)
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 This article describes the logiBUS® exercise `Uebung_013`. It demonstrates the implementation of a memory function that is operated entirely via the ISOBUS terminal.
-
 
 ``` ## 🎧 Podcast
 
@@ -35,21 +29,15 @@ Implementation of an on/off switch with separate virtual buttons.
 [cite_start]The subapplication `Uebung_013.SUB` uses two softkeys to control an SR flip-flop[cite: 1].
 
 ### Function Blocks (FBs)
-
 * **`SoftKey_UP_F1`**: Triggers the set input (`S`) on release.
-
 * **`SoftKey_UP_F2`**: Triggers the reset input (`R`) on release.
-
 * **`E_SR`**: The memory module.
-
 * **`DigitalOutput_Q1`**: The hardware output.
 
 ----
 
 ## Functionality
-
 * A click on **F1** activates the function.
-
 * A click on **F2** deactivates the function.
 
 The use of `SK_RELEASED` ensures a stable user experience on the touchscreen. Since two separate buttons are used, the system status is always clearly controllable for the operator.

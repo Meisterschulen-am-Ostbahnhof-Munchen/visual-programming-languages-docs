@@ -1,12 +1,8 @@
 # UDINT_AUDI_GE
-
 ![UDINT_AUDI_GE](./UDINT_AUDI_GE.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **UDINT_AUDI_GE** performs a greater-or-equals (>=) comparison for two input values. It complies with the IEC 61131-3 classification for standard comparison functions. The result is output via a directed adapter (plugs/sockets), allowing the block to be flexibly integrated into standardized adapter structures.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -55,15 +51,10 @@ This function block performs a "greater than or equal to" comparison of the two 
 
 Since the second input is implemented via an adapter (socket), the source value can be dynamically provided by another function block or interface.
 
-
 ## Technical Features
-
 - **Use of Unidirectional Adapters:** The function block does not rely on fixed inputs – the second operand is received via a socket (IN2). The output is via a plug (OUT), allowing the function block to be integrated into adapter-based architectures.
-
 - **Flexible Data Types:** IN1 is declared as *ANY_ELEMENTARY*, which allows for high reusability with various numeric or elementary data types.
-
 - **Internal Encapsulation:** The comparison logic is implemented as a sub-function (F_GE), which promotes maintainability and reusability.
-
 - **Two Trigger Sources:** The REQ event and the event from the IN2 adapter can trigger the comparison. This enables asynchronous data provisioning.
 
 ## State Overview
@@ -71,11 +62,8 @@ Since the second input is implemented via an adapter (socket), the source value 
 The function block does not have an explicit state machine. Its functionality is purely event-driven: With each incoming event (REQ or IN2.E1), the comparison is re-executed, and the result is output via OUT.
 
 ## Application Scenarios
-
 - **Limit Monitoring:** Comparison of measured values from various sources (e.g., sensors, databases) against a threshold value.
-
 - **Adapter-Based Data Flows:** Integration into a component architecture where data is exchanged via standardized adapters (e.g., in automation technology or the IoT sector).
-
 - **Configurable Comparison Function:** Thanks to the ANY_ELEMENTARY type, the function block can be used for integers, floating-point numbers, or other elementary data types.
 
 ## Comparison with Similar Function Blocks
@@ -101,8 +89,4 @@ The key difference is the use of adapters, which allows for looser coupling and 
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

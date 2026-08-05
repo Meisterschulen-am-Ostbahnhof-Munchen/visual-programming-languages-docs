@@ -1,13 +1,8 @@
 # iSTATES
-
 ![iSTATES](./iSTATES.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **iSTATES** block is a special GlobalConstants block in the 4diac IDE. It defines a set of named constants that represent the possible states of a (slider) actuator. The constants are stored as `USINT` values and enable a uniform, human-readable reference to the states in the control logic.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -51,13 +46,9 @@ The **iSTATES** function block provides five symbolic constants that can be used
 These values can be used directly in FB networks for initializing variables or for comparison with status feedback.
 
 ## Technical Features
-
 - **Type: GlobalConstants** – The function block is not instantiated but integrated into the project as a global constant definition.
-
 - **Value Range**: All states are declared as `USINT`, which guarantees low memory usage and compatibility with many fieldbus protocols.
-
 - **Extensibility**: The scheme can easily be extended with additional states if the application requires it.
-
 - **Package**: The function block is organized in the package `logiBUS::utils::sequence::schieber::const`, which allows for clear structuring within the project.
 
 ## State Overview
@@ -75,13 +66,9 @@ The five states cover a complete lifecycle of a slider:
 5. **Closing** (4) – Slide is in the closing phase.
 
 ## Application Scenarios
-
 - **State Function Blocks for Slides, Valves, or Gates** – This function block provides the basis for state management in sequential controllers.
-
 - **Visualization** – The symbolic names can be used in HMI or SCADA systems to display the current state.
-
 - **Fault Detection** – The `Unknown` state allows for the unambiguous identification of invalid or initial states.
-
 
 ## Comparison with Similar Blocks
 
@@ -94,7 +81,6 @@ The **iSTATES** block is a simple yet useful tool for the consistent definition 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

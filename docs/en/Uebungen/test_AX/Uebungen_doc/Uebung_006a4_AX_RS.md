@@ -1,26 +1,16 @@
 # Exercise_006a4_AX_RS: Exercise for AX_FB_RS_T_FF (Reset-Dominant Toggle Flip-Flop with Adapter)
-
 ![Uebung_006a4_AX_RS_network](./Uebung_006a4_AX_RS_network.svg)
-
 * * * * * * * * * *
 ## Introduction
 This exercise demonstrates the use of the **Reset-Dominant Toggle Flip-Flop (AX_FB_RS_T_FF)** with an adapter interface in the 4diac IDE.
-
 The flip-flop has three inputs (SET, RESET1, CLK) and one output (Q1). The circuit is controlled via digital logiBUS inputs (Input_I1 as SET, Input_I2 as RESET, Input_I3 as clock). The output signal is connected to the logiBUS output Output_Q1.
-
 The goal is to understand the behavior of a **reset-dominant** toggle flip-flop and to replicate the wiring with adapter FBs.
 
-
 ## Function Blocks (FBs) Used
-
 - **DigitalInput_SET** (Type: `logiBUS_IXA`): Reads the logiBUS input `Input_I1` (SET signal).
-
 - **DigitalInput_RESET** (Type: `logiBUS_IXA`): Reads the logiBUS input `Input_I2` (RESET signal).
-
 - **DigitalInput_CLK** (Type: `logiBUS_IXA`): Reads the logiBUS input `Input_I3` (Clock signal).
-
 - **RS_T_FF** (Type: `AX_FB_RS_T_FF`): Reset-dominant toggle flip-flop with adapter interface.
-
 - **DigitalOutput_Q1** (Type: `logiBUS_QXA`): Outputs the flip-flop state to the logiBUS output `Output_Q1`.
 
 ### Parameter
@@ -45,8 +35,6 @@ The goal is to understand the behavior of a **reset-dominant** toggle flip-flop 
 
 The logiBUS inputs are read via the function blocks `DigitalInput_SET`, `DigitalInput_RESET`, and `DigitalInput_CLK` and passed on as adapter sockets to the flip-flop `RS_T_FF`.
 
-
-
 ``` **Connections (Adapter Connections):**
 
 - `DigitalInput_SET.IN` → `RS_T_FF.SET`
@@ -56,9 +44,7 @@ The logiBUS inputs are read via the function blocks `DigitalInput_SET`, `Digital
 
 **Flip-Flop Functionality:**
 - On a rising edge at the CLK input, output Q1 toggles (i.e., it changes its state from FALSE to TRUE or vice versa).
-
 - If the RESET1 input is active (TRUE), the output is **immediately and dominantly** set to FALSE – regardless of the current state and the clock signal.
-
 
 **Flip-Flop Functionality:**
 
@@ -67,9 +53,7 @@ The logiBUS inputs are read via the function blocks `DigitalInput_SET`, `Digital
 **Learning Objectives:**
 
 - Understanding the functionality of a reset-dominant toggle flip-flop.
-
 - Working with adapter-based function blocks in 4diac.
-
 - Integrating logiBUS hardware inputs/outputs into an automation project.
 
 **Difficulty Level:** Medium
@@ -81,7 +65,6 @@ Exercise `Uebung_006a4_AX_RS` implements a reset-dominant toggle flip-flop with 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

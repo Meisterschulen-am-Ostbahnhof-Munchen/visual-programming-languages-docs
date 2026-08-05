@@ -1,15 +1,9 @@
 # Exercise_020f_AX: DigitalInput_I1 to DigitalOutput_Q1; AX_TP; Pulse Shaping
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-
 This article describes the logiBUS® exercise `Uebung_020f_AX`. Here, a pulse timer (TP - Timer Pulse) is used to enforce a defined on-time.
-
 ----
-
 ## Objective of the Exercise
-
 The objective of this exercise is to use the `AX_TP` function block. A pulse element is ideal when an action needs to be executed for a precise duration, regardless of how long the triggering button remains pressed.
-
 
 -----
 
@@ -22,10 +16,7 @@ The objective of this exercise is to use the `AX_TP` function block. A pulse ele
 ![Uebung_020f_AX_network](./Uebung_020f_AX_network.svg)
 
 * **`DigitalInput_I1`**: Type `logiBUS_IXA`. The trigger.
-
 * **`AX_TP`**: [cite_start]Generates a pulse of length `PT` (here 5 seconds) at the output `Q`[cite: 1] on a rising edge at the input.
-
-
 * **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. The actuator.
 
 -----

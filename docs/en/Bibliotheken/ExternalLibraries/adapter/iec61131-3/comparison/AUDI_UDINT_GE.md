@@ -1,13 +1,8 @@
 # AUDI_UDINT_GE
-
 ![AUDI_UDINT_GE](./AUDI_UDINT_GE.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AUDI_UDINT_GE** performs a greater-than-or-equal-to (≥) comparison between two values of type UDINT. It encapsulates the comparison logic in an adapter-based interface that enables type-safe and event-driven communication with the environment.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -59,11 +54,8 @@ Internally, the standard function block `F_GE` (IEC 61131-3) for the UDINT data 
 The comparison `IN1.D1 ≥ IN2` returns a BOOL result, which is output as the data value `OUT.D1` via the output adapter `OUT`. Simultaneously, an event is generated on `OUT.E1`, signaling the availability of the result.
 
 ## Technical Features
-
 - **Adapter-Based Interface:** Instead of direct inputs/outputs, adapters (`AUDI`, `AX`) are used. This enables modular and type-safe cabling in larger networks.
-
 - **Reuse of Standard Function Blocks:** The internal comparison is implemented using a certified IEC 61131-3 function block (`F_GE`), ensuring correctness and portability.
-
 - **No Internal State:** The function is purely combinatorial; the result is recalculated immediately after each event.
 
 ## State Overview
@@ -71,19 +63,13 @@ The comparison `IN1.D1 ≥ IN2` returns a BOOL result, which is output as the da
 The function block does not have an explicit state machine. It behaves like a pure function block without memory. Every input event triggers immediate evaluation and output.
 
 ## Application Scenarios
-
 - **Threshold Monitoring:** Checks whether a measured value (via `IN1`) reaches or exceeds a set threshold (`IN2`).
-
 - **Enable Logic:** Triggers an action when a counter variable (e.g., quantity) reaches at least a target value.
-
 - **Sequence Controls:** Linking time or count values with comparison conditions in an adapter-based control architecture.
 
 ## Comparison with Similar Function Blocks
-
 - **`AUDI_UDINT_GT`**: Performs a "greater than" comparison (>); if equal, it returns `FALSE`.
-
 - **`AUDI_UDINT_EQ`**: Checks for equality (=).
-
 - **`F_GE` (direct)**: Offers the same logic, but without an adapter interface. The `AUDI_UDINT_GE` facilitates integration into adapter-based component models.
 
 ## Conclusion

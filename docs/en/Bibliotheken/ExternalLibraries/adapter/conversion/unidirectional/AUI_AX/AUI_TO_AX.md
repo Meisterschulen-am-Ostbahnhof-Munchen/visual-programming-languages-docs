@@ -1,13 +1,9 @@
 # AUI_TO_AX
-
 ![AUI_TO_AX](./AUI_TO_AX.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **AUI_TO_AX** function block is a composite block that converts an AUI adapter (type *AUI* with a UINT value) into an AX adapter (type *AX* with a BOOL value). It serves as a bidirectional conversion interface between two different adapter types and is typically used to provide digital comparison results for further processing in BOOL-based adapters.
-
 ## Interface Structure
-
 ### **Event Inputs**
 No direct event inputs. Event control is handled exclusively via the **AUI_IN** socket adapter.
 
@@ -20,19 +16,12 @@ No direct data inputs. The UINT value to be processed is provided via the socket
 ### **Data Outputs**
 No direct data outputs. The BOOL result is output via the plug adapter **AX_OUT**.
 
-
 ### **Adapter**
-
 - **AUX_IN (Socket)** – Type: *adapter::types::unidirectional::AUI*
-
 - Event: E1 (triggering event for the comparison)
-
 - Data: D1 (UINT value compared to 0)
-
 - **AX_OUT (Plug)** – Type: *adapter::types::unidirectional::AX*
-
 - Event: E1 (confirmation event after successful comparison)
-
 - Data: D1 (BOOL result: TRUE if D1 ≠ 0, otherwise FALSE)
 
 ## Functionality
@@ -48,7 +37,6 @@ The function block internally contains an instance of the comparison function bl
 
 5. The BOOL result is simultaneously transmitted to **AX_OUT.D1** via the data connection.
 
-
 Therefore:
 
 - AUI_IN.D1 = 0 → AX_OUT.D1 = FALSE
@@ -56,24 +44,17 @@ Therefore:
 
 ## Technical Specifications
 - **License:** Eclipse Public License 2.0 (EPL-2.0)
-
 - **Author:** Franz Höpfinger, HR Agrartechnik GmbH
-
 - **Package:** `adapter::conversion::unidirectional`
-
 - **Internal Block:** `iec61131::comparison::F_NE` with parameter `IN2 = UINT#0`
-
 - The block is a pure composite and does not contain its own state machine. All logic is implemented by the embedded F_NE.
 
 ## State Overview
 Since this is a composite block without its own ECC (Execution Control Chart), there is no explicit state machine. The behavior is entirely determined by the internal F_NE block, which performs a simple comparison without intermediate storage. The block is therefore stateless.
 
 ## Application Scenarios
-
 - **Threshold Detection:** Converting an analog (UINT) sensor value into a digital signal (BOOL), e.g., "non-zero value" as an alarm or control signal.
-
 - **Adapter Conversion:** Use in systems that employ different adapter standards (AUI ↔ AX) to ensure compatibility between components.
-
 - **Simple Logic Chaining:** Use as a binary decision stage in larger composite function blocks.
 
 ## Comparison with Similar Blocks

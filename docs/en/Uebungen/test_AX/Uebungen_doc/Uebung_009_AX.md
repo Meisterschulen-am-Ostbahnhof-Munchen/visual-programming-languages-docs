@@ -1,13 +1,8 @@
 # Exercise_009_AX: Ticker (AX Adapter Based)
-
 This article describes the logiBUS® exercise `Uebung_009_AX`. It demonstrates the functionality of an event-based counter and a numerical display using an AX adapter, resulting in more compact and organized wiring.
-
 ----
-
 ## Exercise Objective
-
 To learn adapter-based counting (`AUDI_CTUD_UDINT`) and how to display values on an ISOBUS terminal (`Q_NumericValue_AUDI`). The focus is on using adapters to bundle event and data flows.
-
 
 -----
 
@@ -16,15 +11,10 @@ To learn adapter-based counting (`AUDI_CTUD_UDINT`) and how to display values on
 The subapplication `Uebung_009_AX.SUB` uses adapter-based function blocks for the clock, counter, and numeric display:
 
 ### Function Blocks (FBs)
-
 * **`AE_CYCLE` & `AX_SR`**: Generate a continuous clock and control the blinker status via adapters. `AX_SR` has a `AX` adapter output.
-
 * **`AX_SWITCH`**: An adapter-based switch that toggles the `AX` signal flow based on the internal blinker status.
-
 * **`AX_PERMIT`**: An adapter-based event gate. It only allows events at input `PERMIT.E1` to pass to output `EO` if the data input `PERMIT.D1` is set to `TRUE`.
-
 * **`AUDI_CTUD_UDINT`**: An adapter-based up/down counter. It receives `CU` events and outputs the counter value via a `AUDI` adapter (`CV`).
-
 * **`Q_NumericValue_AUDI`**: An ISOBUS output module for displaying a number on the screen. It receives the value via a `AUDI` adapter (`u32NewValue`).
 
 ------

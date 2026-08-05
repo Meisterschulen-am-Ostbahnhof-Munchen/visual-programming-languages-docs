@@ -1,13 +1,8 @@
 ![ASR2](ASR2.svg)
-
 #ASR2
-
 bidirectional adapter interface for 2 events
-
 ## Interface
-
 ### Event inputs
-
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | EI_SET | Set/Switch on | |

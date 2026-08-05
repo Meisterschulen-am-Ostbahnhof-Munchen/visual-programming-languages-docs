@@ -1,13 +1,8 @@
 # ADD_4
-
 ![ADD_4](https://user-images.githubusercontent.com/116869307/214143055-ad68b786-ea59-490e-9e7b-c43c007e0ae7.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **ADD_4** is a powerful function block for summing four values, developed under the EPL-2.0 license. As part of the GEN_ADD class, version 1.0 offers a type-safe implementation according to the IEC 61131-3 standard.
-
-
 ![ADD_4](ADD_4.svg)
 
 ## Interface Structure
@@ -32,19 +27,16 @@ The **ADD_4** is a powerful function block for summing four values, developed un
 1. **Calculation Triggering**:
 
 - A single `REQ` event processes all four inputs
-
 - Parallel value acquisition
 
 2. **Type Handling**:
 
 - Automatic type conversion for mixed inputs
-
 - Result in the "largest" input type
 
 3. **Calculation Order**:
 
 - Mathematically associative (IN1+(IN2+(IN3+IN4)))
-
 - Guaranteed reproducible results
 
 ## Technical Specifications
@@ -70,7 +62,6 @@ Time Values | TIME, LTIME |
 Special Types | DATE_AND_TIME |
 
 ## Application Scenarios
-
 - **Energy Monitoring**: Summing of Consumers
 - **Production Control**: Quantity Measurement of Multiple Lines
 - **Measurement Data Analysis**: Aggregation of Sensor Values
@@ -89,11 +80,8 @@ Special Types | DATE_AND_TIME |
 | ADD_4 | 4 | Maximum Integration |
 
 ## Error Management
-
 - **Type Conflicts**: Result 0 in case of incompatibility
-
 - **Overflow**: Wrap-around depending on data type
-
 - **Status Feedback**: Via accompanying logic
 
 ## Conclusion

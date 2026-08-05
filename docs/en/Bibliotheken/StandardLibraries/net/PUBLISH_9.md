@@ -1,41 +1,27 @@
 # PUBLISH_9
-
 <img width="1180" height="464" alt="image" src="https://github.com/user-attachments/assets/c5b7e507-1bcf-405c-b068-72840502bb8f" />
-
 * * * * * * * * * *
-
 ## Introduction
 The PUBLISH_9 function block is used to publish data to one or more SUBSCRIBE_9 blocks. It enables the unacknowledged transmission of up to nine different data values over a communication network.
-
-
 ![PUBLISH_9](PUBLISH_9.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Initialization event with associated data QI and ID
-
 - **REQ**: Send request for unacknowledged data transmission with nine data values
 
 ### **Event Outputs**
-
 - **INITO**: Initialization acknowledgment with QO and STATUS
-
 - **CNF**: Acknowledgement that data has been sent, with QO and STATUS
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Qualifier for initialization (TRUE = enable, FALSE = disable)
-
 - **ID** (WSTRING): Identifier for the communication channel
-
 - **SD_1** to **SD_9** (ANY): Nine different data values of any type to be sent
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Qualifier for output state
-
 - **STATUS** (WSTRING): Status information about the operating state
 
 ### **Adapter**

@@ -1,11 +1,8 @@
 # ATM_MUX_5
-
 ![ATM_MUX_5](./ATM_MUX_5.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **ATM_MUX_5** serves as a universal multiplexer for five unidirectional ATM data streams. Based on an index specified via the data input `K`, it selects one of the five inputs (`IN1` … `IN5`) and forwards its data to the output `OUT`. The selection is triggered by an event at the input `REQ` and acknowledged by an event at the output `CNF`.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -39,23 +36,19 @@ No data outputs are available. Output is exclusively via the adapter plugin `OUT
 
 | Direction | Name | Type | Comment |
 
-
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
 
-
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-
 
 ### **Adapter**
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-
 
 ### **Data Inputs**
 
@@ -83,32 +76,23 @@ No data outputs are available. Output is exclusively via the adapter plugin `OUT
 4. After successful switching, the event `CNF` is sent to signal completion to the calling function block.
 
 ## Technical Features
-
 - **Generic Function Block**: The XML definition contains an attribute `GenericClassName` that references `'GEN_ATM_MUX'`. Therefore, the function block can be used in development environments as a template for multiplexers with any number of inputs.
-
 - **Adapter Coupling**: All data transmission occurs via the standardized adapter `adapter::types::unidirectional::ATM`. This avoids tight coupling between sender and receiver – the implementation of the adapter logic is the user's responsibility.
-
 - **Event-Driven**: Switching does not occur without a trigger event at the `REQ` input. The function block remains static until a new `REQ` input arrives.
 
 ## State Overview
 The function block does not have an explicit state machine. It operates as a reactive function block:
 
 - **Idle State**: No event is present at `REQ`. The last selected input remains active.
-
 - **Switching Phase**: After `REQ` arrives, the new index is applied and `CNF` is output.
 
 ## Application Scenarios
-
 - **Channel Switching** in a communication system that manages multiple ATM sources (e.g., in agricultural technology for data stream selection).
-
 - **Test Environments** where different data sources are to be sequentially connected to a common consumer.
-
 - **Redundancy solutions**, where a switch to a backup memory is performed manually or automatically in the event of a data stream failure.
 
 ## Comparison with similar components
-
 - **ATM_MUX_2 / ATM_MUX_4**: Components with the same functionality, but only two or four inputs. The ATM_MUX_5 offers the maximum of five channels.
-
 - **General MUX components (e.g., data MUX)**: These often work with scalar data (e.g., INT, REAL) and not with adapters. The ATM_MUX_5 is specifically designed for exchanging complex data types defined via adapters.
 
 ## Conclusion

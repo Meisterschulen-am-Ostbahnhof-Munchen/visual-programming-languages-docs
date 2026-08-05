@@ -1,41 +1,27 @@
 # PUBLISH_6
-
 <img width="1180" height="392" alt="image" src="https://github.com/user-attachments/assets/325420e2-652c-436d-8864-13d30e983684" />
-
 * * * * * * * * * *
-
 ## Introduction
 The PUBLISH_6 function block is used to publish data to one or more SUBSCRIBE_6 blocks. It allows the transmission of up to six different data values via a publish-subscribe communication pattern and offers both acknowledged and unacknowledged send operations.
-
-
 ![PUBLISH_6](PUBLISH_6.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Initialization event with associated data QI and ID
-
 - **REQ**: Data transmission request (unacknowledged) with associated data QI and SD_1 to SD_6
 
 ### **Event Outputs**
-
 - **INITO**: Initialization acknowledgment with associated data QO and STATUS
-
 - **CNF**: Acknowledgement that data has been sent, with associated data QO and STATUS
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Quality indicator for initialization and transmission operations
-
 - **ID** (WSTRING): Identifier for the communication channel
-
 - **SD_1** to **SD_6** (ANY): Six different data values of any type to be sent
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Quality indicator for Output Operations
-
 - **STATUS** (WSTRING): Status information about the executed operation
 
 ### **Adapter**
@@ -43,7 +29,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The PUBLISH_6 block initializes itself via the INIT event and confirms the initialization with INITO. Data can be sent via the REQ event, with up to six different data values (SD_1 to SD_6) being transmitted simultaneously. A CNF event is issued after successful data transmission. The block supports the publish-subscribe pattern, allowing multiple subscribers to receive the sent data.
-
 
 # ## Technical Features
 - Support for up to six different data values of any type (ANY)

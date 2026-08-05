@@ -1,13 +1,8 @@
 # AB_SPLIT_5
-
 ![AB_SPLIT_5](./AB_SPLIT_5.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `AB_SPLIT_5` is used to distribute one unidirectional AB adapter input (socket) to five identical AB adapter outputs (plugs). It is a generic function block designed for signal distribution in automation systems.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -51,11 +46,8 @@ The module receives a unidirectional AB signal via socket `IN`. This signal is f
 Since the component has no event or data inputs, all communication takes place exclusively via the adapter interfaces. Distribution is static and without delay or buffering.
 
 ## Technical Features
-
 - **Generic Component**: `AB_SPLIT_5` uses the generic class name `GEN_AB_SPLIT` and enables type-safe instantiation in the 4diac IDE.
-
 - **Unidirectional**: All participating adapters are of type `unidirectional::AB`, meaning data flows only in one direction (from the socket to the plugs).
-
 - **No State Logic**: The function block has no internal state diagram or event processing – it is purely structural and does not perform any data transformation.
 
 ## State Overview
@@ -63,11 +55,8 @@ Since the component has no event or data inputs, all communication takes place e
 There is no state machine. The function block operates continuously and permanently passes the received signal to all five outputs.
 
 ## Application Scenarios
-
 - **Signal Distribution in Fieldbus Systems**: When a sensor value or control signal (as an AB adapter) needs to be sent to multiple actuators or controllers.
-
 - **Multiplexing in Modular Machines**: Distribution of a central AB signal to different modules of a system.
-
 - **Testing and Simulation**: Simultaneously connecting multiple monitoring or logging units to a data source.
 
 ## Comparison with Similar Function Blocks
@@ -93,7 +82,6 @@ Compared to a configurable split block, `AB_SPLIT_5` offers a fixed, yet simple 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

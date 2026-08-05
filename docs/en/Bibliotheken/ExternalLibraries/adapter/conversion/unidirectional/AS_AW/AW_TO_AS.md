@@ -1,19 +1,14 @@
 # AW_TO_AS
-
 ![AW_TO_AS](./AW_TO_AS.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `AW_TO_AS` is a composite block that converts a WORD-based adapter (AW) into a SINT-based adapter (AS). It encapsulates the necessary type conversion, thus enabling the easy integration of different adapter interfaces in automation technology.
-
 ## Interface Structure
-
 ### **Event Inputs**
 - `AW_IN.E1` – Starts the conversion of the incoming data value.
 
 ### **Event Outputs**
 - `AS_OUT.E1` – Signals that the converted value is available at the data output.
-
 
 ### **Data Inputs**
 - `AW_IN.D1` (WORD) – The 16-bit value to be converted to a SINT value.
@@ -21,11 +16,8 @@ The function block `AW_TO_AS` is a composite block that converts a WORD-based ad
 ### **Data Outputs**
 - `AS_OUT.D1` (SINT) – The converted 8-bit value (signed, range -128 … 127).
 
-
 ### **Adapter**
-
 - **Socket (Input)**: `AW_IN` of type `adapter::types::unidirectional::AW`
-
 - **Plug (Output)**: `AS_OUT` of type `adapter::types::unidirectional::AS`
 
 ## Functionality
@@ -34,20 +26,15 @@ The module is implemented as a composite and internally uses the IEC 61131 funct
 
 ## Technical Features
 - The conversion follows the IEC 61131 function `WORD_TO_SINT`. An overflow occurs if the incoming WORD value is outside the valid SINT range (-128 … 127) – this must be taken into account in the application.
-
 - The function block operates purely event-driven: Conversion only occurs when an event is present at the input.
-
 - The adapters are unidirectional; conversion back from SINT to WORD is not supported.
 
 ## State Overview
 Since this is a simple composite function block (FB) without its own state machine, there is no explicit state machine. The FB waits for an event, performs the conversion, and outputs the result synchronously. A state table is not required.
 
 ## Application Scenarios
-
 - Adapting sensor data supplied as WORD (e.g., via an analog input) to a system that processes SINT values.
-
 - Converting fieldbus data formats when coupling different automation components.
-
 - Use in heterogeneous control environments where adapters use different data types.
 
 ## Comparison with Similar Function Blocks

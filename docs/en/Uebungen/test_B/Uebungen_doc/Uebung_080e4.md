@@ -1,13 +1,8 @@
 # Exercise_080e4: Example of an E_CTU with Event Brake using E_D_FF_ANY
-
 ![Uebung_080e4_network](./Uebung_080e4_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise demonstrates the use of an **E_CTU** (event counter) in combination with an **event brake**, implemented using an **E_D_FF_ANY** (E_D flip-flop with hysteresis and minimum time). The goal is to only forward the counter result to a numerical output if the counter value remains stable for a specific period. This suppresses bounce or short-term fluctuations.
-
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Parameter / Remark |
@@ -42,7 +37,6 @@ This exercise demonstrates the use of an **E_CTU** (event counter) in combinatio
 
 The clock generator `E_CYCLE` is started as soon as `DigitalInput_CLK_I1` sends an event (`IND`). It is stopped by an event from `DigitalInput_CLK_I2`.
 
-
 # Program Flow and Connections
 
 ### Event and Data Flow
@@ -60,7 +54,6 @@ An event from `DigitalInput_CLK_I2` is additionally routed to the **Reset Input 
 The counter outputs two events:
 
 - `CUO` (Counter Overflow) – becomes active when the counter value `CV` reaches the parameter `PV` (here 5).
-
 - `RO` (Reset Overflow) – is activated when the counter is reset and exceeds its range (not relevant here, but both events are used).
 
 4. **Event Distribution and Merging**
@@ -71,14 +64,11 @@ The counter outputs two events:
 
 **Effect:** Every event from `E_CTU` (whether `CUO` or `RO`) is immediately passed to the output `EO` of `E_MERGE_4` – creating a **logical OR** connection between the two events.
 
-
 5. **Event Brake via `E_D_FF_ANY`**
 
 The combined event feeds the **clock input `CLK`** from `E_D_FF_ANY`. This function block only passes the **data value `D`** (the current counter reading `CV`) to the output `Q` if the value remains stable for at least `Tmin = 1s` (hysteresis of `25` units).
 
 This filters out short spikes in the counter reading.
-
-
 
 ``` 6. **Numerical Output**
 
@@ -91,13 +81,9 @@ Simultaneously, the same combined event from `E_MERGE_4` is also routed to the *
 The output `DigitalOutput_Q1` is therefore always activated when the counter reaches its end value or is reset.
 
 ### Learning Objectives
-
 - Understanding **E_CTU (Event Counter)** and its event outputs `CUO` and `RO`.
-
 - Using **E_SPLIT_4** and **E_MERGE_4** for event control.
-
 - Applying an **E_D_FF_ANY with hysteresis and minimum time** to suppress short-term changes (event dampening).
-
 - Interaction of **numeric and digital outputs** based on counter events.
 
 ### Difficulty Level
@@ -105,11 +91,8 @@ The output `DigitalOutput_Q1` is therefore always activated when the counter rea
 **Advanced** – Basic knowledge of the 4diac IDE and IEC 61499 event/data flows is required.
 
 ### Required Prior Knowledge
-
 - Fundamentals of the 4diac IDE: Creating sub-applications, connecting function blocks.
-
 - Understanding of event and data edges.
-
 - Experience with logiBUS and isobus libraries (when using hardware simulation).
 
 ### Starting the Exercise
@@ -129,10 +112,7 @@ This exercise demonstrates how an **E_CTU** can output both a **stabilized count
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
 * [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
 

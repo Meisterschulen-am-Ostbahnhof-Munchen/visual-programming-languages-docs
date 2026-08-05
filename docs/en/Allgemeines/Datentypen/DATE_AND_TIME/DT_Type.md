@@ -1,4 +1,1 @@
 # Data type: DATE_AND_TIME
-
-
-` ...

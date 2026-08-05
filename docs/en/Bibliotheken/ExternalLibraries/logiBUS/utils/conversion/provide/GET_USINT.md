@@ -1,13 +1,8 @@
 # GET_USINT
-
 ![GET_USINT](./GET_USINT.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `GET_USINT` is used to read a `USINT` value from an InOut variable. It buffers the read value and makes it available via an output. This function block is particularly suitable when the value of a variable from a higher-level context (e.g., a group) needs to be queried once and then used as a constant intermediate value in subsequent processes.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -60,13 +55,9 @@ None.
 
 Since this is a simple function block, there are no branches or timed sequences – the action is executed in a single step.
 
-
 ## Technical Features
-
 - **InOut Variable `IN`** – The interface uses a variable `InOut`, which functions as both an input and an output. This is typical for 4diac function blocks that access variables of a parent group. The block does **not** modify the value of `IN`; it only reads it.
-
 - **Buffering** – Without re-reading `REQ`, the output value remains stable, even if the source variable changes later. This decouples the value from the time it is read.
-
 - **No State Machines** – The block consists of only one state, `REQ`, making the implementation trivial and resource-efficient.
 
 ## State Overview
@@ -82,9 +73,7 @@ The block has exactly one state:
 A start state is not explicitly defined; after initialization, the function block is activated by the first `REQ`.
 
 ## Application Scenarios
-
 - **One-Time Query of a Configuration Variable** – A `USINT` value defined in a parent resource should be read exactly once at the beginning of the process and then used as a local constant.
-
 
 ``` - **Decoupling of Read and Write Access** – If a variable is both written to and read from multiple function blocks, `GET_USINT` prevents the read side from being constantly updated, as buffering only occurs on demand.
 
@@ -111,7 +100,6 @@ The `GET_USINT` function block offers a simple and efficient way to read a `USIN
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

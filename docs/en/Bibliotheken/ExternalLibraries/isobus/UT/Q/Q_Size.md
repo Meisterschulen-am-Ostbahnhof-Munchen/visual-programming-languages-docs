@@ -1,13 +1,8 @@
 # Q_Size
-
 ![Q_Size](https://user-images.githubusercontent.com/116869307/214153095-72c9e230-b193-4843-be85-33038f6bd44d.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_Size** is a standards-compliant function block for resizing objects in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.18) specification for VT objects.
-
-
 ![Q_Size](Q_Size.svg)
 
 ## Interface Structure
@@ -27,7 +22,6 @@ The **Q_Size** is a standards-compliant function block for resizing objects in V
 
 ### **Data Outputs**
 - `STATUS` (STRING): Operational status message
-
 - `u16OldWidth` (UINT): Previous width
 - `u16OldHeight` (UINT): Previous height
 - `s16result` (INT): ISO-compliant result code
@@ -37,15 +31,12 @@ The **Q_Size** is a standards-compliant function block for resizing objects in V
 1. **Initialization**:
 
 - `INIT` with target object ID
-
 - `INITO` confirms operational readiness
 
 2. **Resize**:
 
 - `REQ` with new dimensions
-
 - Dynamically adjusts the object geometry
-
 - `CNF` provides operational status and previous dimensions
 
 3. **Unit of measurement**:
@@ -88,13 +79,9 @@ The **Q_Size** is a standards-compliant function block for resizing objects in V
 -130 | VT_E_NOT_ALIVE | VT Not Active |
 
 ## Application Scenarios
-
 - **Responsive Designs**: Adapting to Display Sizes
-
 - **Zoom Functions**: Dynamic Scaling
-
 - **Layout Manager**: Automatic Size Optimization
-
 - **Animation Control**: Size Change Effects
 
 ## ⚖️ Comparison with Similar Building Blocks

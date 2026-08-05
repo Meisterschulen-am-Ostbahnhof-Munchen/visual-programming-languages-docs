@@ -1,13 +1,9 @@
 # AX_OR_10
-
 * * * * * * * * * *
 ## Introduction
 The AX_OR_10 is a generic function block for calculating the logical OR operation of 10 inputs.
-
 ![AX_OR_10](AX_OR_10.svg)
-
 ## Interface Structure
-
 ### **Adapters**
 **Input Adapters:**
 
@@ -27,12 +23,10 @@ The function block performs a logical OR operation on the 10 input signals.
 ## State Overview
 Combinatory logic block without states.
 
-
 ## Application Scenarios
 Logical logic gates with many inputs.
 
 ## ⚖️ Comparison with similar building blocks
-
 - **AX_OR_2...9**: Variants with fewer inputs.
 
 ## Conclusion

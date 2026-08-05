@@ -1,13 +1,8 @@
 # ALI_DEMUX_2
-
 ![ALI_DEMUX_2](./ALI_DEMUX_2.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **ALI_DEMUX_2** is a generic demultiplexer for the ALI adapter type. It routes the value present at an input adapter to either one of two output adapters. The active output is selected via an index, which is set by an event input.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -54,26 +49,18 @@ No separate data outputs – output is handled via the adapters.
 
 An event at input `REQ` triggers the processing. The value of parameter `K` determines which of the two output adapters (`OUT1` or `OUT2`) receives the value from `IN`. After forwarding, an event is sent at output `CNF`.
 
-
-
 ``` The mapping is as follows:
 
 - If `K = 1`, the value is passed to `OUT1`.
-
 - If `K = 2`, the value is passed to `OUT2`.
-
 - For other values of `K`, the behavior is undefined (no output).
 
 The function block operates purely on a signal-based basis – no permanent connection is established, but only a one-time forwarding occurs per REQ event.
 
 ## Technical Features
-
 - **Generic Adapter Type** – The function block uses the standardized unidirectional ALI adapter, which is available in many IEC 61499 libraries.
-
 - **Indexing via UINT** – The index `K` is defined as an unsigned 16-bit value, theoretically allowing for expansion to more than two outputs (though limited to two here).
-
 - **Event-driven processing** – Forwarding occurs only upon an explicit `REQ` event, not cyclically.
-
 - **No data validation** – It is not checked whether `K` is within the allowed range; the application must ensure this.
 
 ## State overview
@@ -81,11 +68,8 @@ The function block operates purely on a signal-based basis – no permanent conn
 The ALI_DEMUX_2 does not have explicit states in the sense of a state machine. After receiving `REQ`, the operation is executed immediately and the `CNF` event is sent. The module is always ready for the next task.
 
 ## Application Scenarios
-
 - **Signal Distribution** – An ALI signal acquired by a sensor unit can be sent to one of two downstream processing components.
-
 - **Switching Between Operating Modes** – Depending on the operating mode (indices 1 or 2), the data stream is routed to different actuator or control modules.
-
 - **Test or Simulation Environments** – A generated test signal can be dynamically switched between different test paths.
 
 ## Comparison with Similar Modules

@@ -1,13 +1,9 @@
 # AX_OR_3
-
 <img width="963" height="297" alt="image" src="https://github.com/user-attachments/assets/3f0679d7-bd35-40d5-92eb-f7f1122507de" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_OR_3 function block is a generic function block for calculating the logical OR operation with three inputs. It is used to process Boolean signals in control applications and allows the flexible combination of multiple input signals into a single output signal.
-
 ![AX_OR_3](AX_OR_3.svg)
-
 ## Interface Structure
 ### **Event Inputs**
 No event inputs available.
@@ -25,9 +21,7 @@ No direct data outputs available.
 **Input Adapter:**
 
 - **IN1**: OR Input 1 (Type: adapter::types::unidirectional::AX)
-
 - **IN2**: OR Input 2 (Type: adapter::types::unidirectional::AX)
-
 - **IN3**: OR Input 3 (Type: adapter::types::unidirectional::AX)
 
 **Output Adapter:**
@@ -36,7 +30,6 @@ No direct data outputs available.
 
 ## Functionality
 The function block continuously calculates the logical OR operation of the three input signals. The output signal is true (TRUE) if at least one of the three inputs is true. Only if all three inputs are false (FALSE) will the output also be false.
-
 
 The logical function can be represented as follows:
 
@@ -63,9 +56,7 @@ Compared to standard OR blocks, AX_OR_3 offers the advantage of three inputs in 
 Comparison with [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)]
-
 * [Exercise_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)]
 
 ## Conclusion

@@ -1,7 +1,5 @@
 # Data type: STRING
-
 ## 🛠️ Related exercises
-
 * [Uebung_012a_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
 * [Uebung_020c2_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
 * [Uebung_051](../../../Uebungen/test_B/Uebungen_doc/Uebung_051.md)

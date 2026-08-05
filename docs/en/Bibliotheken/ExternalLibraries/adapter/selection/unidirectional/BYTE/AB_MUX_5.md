@@ -1,13 +1,9 @@
 # AB_MUX_5
-
 ![AB_MUX_5](./AB_MUX_5.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AB_MUX_5** implements a generic multiplexer for adapter interfaces of type `adapter::types::unidirectional::AB`. It selects one of five incoming adapter connections (IN1–IN5) and forwards it to the output adapter (OUT). The selection is made using an integer index `K`, which is evaluated on a rising edge at the event input `REQ`.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Event | Comment |
@@ -40,9 +36,6 @@ The function block **AB_MUX_5** implements a generic multiplexer for adapter int
 
 | Direction | Adapter | Type | Comment |
 
-
-``` |----------|---------|---------------------------------------|-----------|
-
 | Plug | OUT | adapter::types::unidirectional::AB | Output adapter that provides the values of the selected input |
 
 | Socket | IN1 | adapter::types::unidirectional::AB | First input (Index 0) |
@@ -61,16 +54,11 @@ The function block operates as a **1-out-of-5 multiplexer** at the adapter level
 
 If values outside the range 0 to 4 are applied to `K`, the behavior is undefined – typically, no input is selected, or the last valid state is retained. The function block itself does not perform range checking.
 
-
-
 In the event of a switchover, the output `CNF` is sent. ## Technical Features
 
 - **Adapter-based**: The function block uses the unidirectional adapter `adapter::types::unidirectional::AB`, which is designed for data exchange in one direction (here: input → output).
-
 - **Generic Parameterization**: The function block is designed as a generic function block with the class name `GEN_AB_MUX`. This enables type checking and optimization of the runtime environment (e.g., Eclipse 4diac).
-
 - **No Data Mapping Logic**: Data is transferred implicitly via the adapter connection; the function block itself contains no additional data inputs or outputs.
-
 - **Copyright and License**: The function block is subject to the Eclipse Public License 2.0, which permits free use, modification, and distribution.
 
 ## State Overview
@@ -83,11 +71,8 @@ The function block does not have an explicit state machine (ECC). Its behavior i
 This makes the function block deterministic and allows it to operate without delays other than the internal propagation time.
 
 ## Application Scenarios
-
 - **Signal Selection in Agricultural Engineering**: (Depending on the function block's origin) Selection between different sensor values (e.g., five different measuring points for temperature or pressure).
-
 - **Data Selection in Automation Systems**: Switching between multiple data sources (e.g., five conveyor belts or five machine states).
-
 - **Test and Simulation Environments**: Targeted selection of an input adapter signal for testing purposes.
 
 ## Comparison with Similar Function Blocks
@@ -112,7 +97,6 @@ The **AB_MUX_5** is a compact and reusable function block for adapter multiplexi
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

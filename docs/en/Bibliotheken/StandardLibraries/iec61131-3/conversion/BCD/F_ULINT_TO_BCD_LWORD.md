@@ -1,30 +1,21 @@
 # F_ULINT_TO_BCD_LWORD
-
 <img width="1302" height="181" alt="F_ULINT_TO_BCD_LWORD" src="https://github.com/user-attachments/assets/e52c2e4c-a8aa-4dc5-bb01-ce013aadd734" />
-
 * * * * * * * * * *
 ## Introduction
 The function block `F_ULINT_TO_BCD_LWORD` converts a `ULINT` value (64-bit unsigned integer) to a `LWORD` value type in BCD (Binary Coded Decimal) format. This block is particularly useful in applications where numeric values need to be converted into a format compatible with BCD systems.
-
 ![F_ULINT_TO_BCD_LWORD](F_ULINT_TO_BCD_LWORD.svg)
-
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **REQ**: Starts the conversion. The value to be converted is passed via the data input `IN`.
 
-
 ### **Event Outputs**
-
 - **CNF**: Signals the completion of the conversion. The converted value is output via the data output `OUT`.
 
 ### **Data Inputs**
-
 - **IN**: The input for the `ULINT` value to be converted.
 
 ### **Data Outputs**
-
 - **OUT**: The output for the converted `LWORD` value type in BCD format.
 
 ### **Adapters**
@@ -35,7 +26,6 @@ The function block performs the conversion from `ULINT` to `LWORD` in BCD format
 
 ## Technical Features
 - Supports the conversion of 64-bit unsigned integer (`ULINT`) to 64-bit BCD (`LWORD`).
-
 - No additional parameters or settings are required.
 
 ## State Overview
@@ -46,18 +36,13 @@ The function block performs the conversion from `ULINT` to `LWORD` in BCD format
 3. **Completion**: Sends the `CNF` event and outputs the converted value.
 
 ## Application Scenarios
-
 - Industrial control systems that process BCD-encoded data.
-
 - Communication with peripheral devices that expect BCD data.
-
 - Data conversion in automation applications.
 
 ## ⚖️ Comparison with Similar Blocks
 - Compared to generic conversion blocks, `F_ULINT_TO_BCD_LWORD` offers a specialized solution for conversion to the BCD format.
-
 - Other blocks might offer additional conversion options, but they may be less efficient for this specific use case.
-
 
 ## Conclusion
 

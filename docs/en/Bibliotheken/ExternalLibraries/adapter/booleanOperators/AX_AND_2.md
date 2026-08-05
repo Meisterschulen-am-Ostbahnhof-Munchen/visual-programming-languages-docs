@@ -1,12 +1,8 @@
 # AX_AND_2
-
 <img width="1009" height="265" alt="image" src="https://github.com/user-attachments/assets/e9225b9f-ba25-427f-bf49-71f15c562b73" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_AND_2 is a generic function block for calculating the logical AND operation. The block processes two Boolean input signals and outputs the logical AND result.
-
-
 ![AX_AND_2](AX_AND_2.svg)
 
 ## Interface Structure
@@ -42,7 +38,6 @@ The function block performs a logical AND operation on the two input signals IN1
 Since it is a combinational logic block, the AX_AND_2 has no internal states. The output is calculated directly from the current input values.
 
 ## Application Scenarios
-
 - Safety-critical controllers where two conditions must be met simultaneously
 - Linking sensor signals in industrial automation systems
 - Logical operations in control systems
@@ -54,11 +49,8 @@ Compared to standard AND blocks, the AX_AND_2 uses adapter-based interfaces inst
 Comparison [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)]
-
 * [Exercise_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)]
-
 * [Exercise_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)]
 
 ## Conclusion

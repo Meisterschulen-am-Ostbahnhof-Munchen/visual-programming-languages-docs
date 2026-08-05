@@ -1,15 +1,9 @@
 # Dual Wi-Fi
-
 ## ChatGPT
-
 All text on this page was created with [https://chat.openai.com/chat](https://chat.openai.com/chat)
-
 Amazing
-
 ## **Working with 2 Wi-Fi Connections in Windows 10**
-
 This video shows you how to work with two Wi-Fi connections in Windows 10. Whether you're at work or at home, you might need to connect to both a public and a private Wi-Fi network. Or perhaps you want to switch your internet connection between two different networks without interrupting the connection. This video will teach you how to set up and manage multiple Wi-Fi connections in Windows 10 to make your work more efficient and productive.
-
 
 **Working with 2 Wi-Fi Connections in Windows 10** Video: [Working with 2 Wi-Fi connections under Windows 10 ](https://www.youtube.com/watch?v=a5Re1vOtmww)
 
@@ -44,7 +38,6 @@ These adapters are tested under both Windows 10 and Ubuntu 22.04 LTS to evaluate
 ---
 
 ### Table
-
 * Works under Windows 10 without driver installation
 * Works under Ubuntu 22.04 LTS without driver installation
 
@@ -88,27 +81,13 @@ The Edimax EW-7811Un V2 Wi-Fi 4 Nano adapter is a Wi-Fi adapter based on the 802
 
 The Edimax EW-7811UN Super Mini Wi-Fi USB Adapter is a small and lightweight Wi-Fi adapter that can be connected to a computer's USB port. With a data transfer rate of 150 Mbps, it is capable of establishing a fast and stable connection to a Wi-Fi network. This USB adapter is version 1 and supports the 802.11b/g/n Wi-Fi standards. It is easy to install and use and is perfect for use at home or in the office.
 
-
 The Edimax EW-7811UN Super Mini Wi-Fi USB Adapter is a small and lightweight Wi-Fi adapter that can be connected to a computer's USB port. ### Cudy WU650S AC 650 Mbps Wireless USB WiFi Adapter
 
 ![IMG20230123115748](https://user-images.githubusercontent.com/69573151/214024848-cc44983d-076c-4ea8-8d9a-a5e207298d80.jpg)
 
 The Cudy WU650S AC 650 Mbps Wireless USB WiFi Adapter is a WiFi adapter that plugs into a computer's USB port. With a data transfer rate of 650 Mbps, it provides a fast and stable connection to wireless networks. It supports the 802.11ac WiFi standard, enabling high data rates and long range. The adapter is small, lightweight, and easy to install and use. It's perfect for use at home, in the office, or on the go. Additionally, it offers strong signal strength and good coverage, making it a great choice for online gaming, video streaming, or other data-intensive applications.
 
-
 ```The Cudy WU650S AC 650 Mbps wireless USB Wi-Fi adapter is a Wi-Fi adapter that does not work under Linux (Ubuntu 22.04 LTS) without driver installation. This means that additional software or drivers must be installed for the adapter to be recognized and used by the system. This can be done either by using proprietary drivers or open-source drivers. It is important to select the correct drivers for the specific system and hardware to avoid problems and achieve optimal performance. It is also advisable to read the manufacturer's instructions or the product documentation before installing the drivers to ensure that you follow the correct steps.
-
-
-
-
-
-
-
-
-
-
-
-
 
 ... ### ALL-WA1200AC
 
@@ -118,7 +97,6 @@ The Cudy WU650S AC 650 Mbps Wireless USB WiFi Adapter is a WiFi adapter that plu
 
 The ALL-WA1200AC is a Wi-Fi USB adapter based on the latest Wireless-AC standard. It supports the latest Wi-Fi technologies, such as MU-MIMO and beamforming, for faster speeds and greater range. With a data transfer rate of up to 1200 Mbps, the ALL-WA1200AC is capable of transmitting high-definition video and data in real time. It also supports dual-band functionality, meaning it operates on both 2.4 GHz and 5 GHz frequencies. This allows the adapter to avoid interference and achieve higher speed and reliability. Its small and lightweight design makes it easy to carry and use.
 
-
 ### ALL-WA0300AC
 
 ![IMG20230123115918](https://user-images.githubusercontent.com/69573151/214024735-63292f05-4782-4d63-8fb5-edaad25e54b4.jpg)
@@ -126,7 +104,6 @@ The ALL-WA1200AC is a Wi-Fi USB adapter based on the latest Wireless-AC standard
 The ALL-WA0300AC is a USB Wi-Fi adapter based on the Wireless-AC standard, supporting a maximum data transfer rate of 300 Mbps. It supports both 2.4 GHz and 5 GHz frequency bands and features advanced technologies such as MU-MIMO and beamforming, enabling higher speeds and greater range. This adapter also supports the latest security standards, including WPA3, WPA2, WPA, and WEP, to protect your connection. Its small and lightweight design makes it easy to carry and use. It is compatible with Windows, macOS, and Linux and can be easily connected to a USB port.
 
 The ALL-WA0300AC is a wireless USB Wi-Fi adapter that does not function under Linux (Ubuntu 22.04 LTS) without driver installation. This means that you need to install additional software or drivers for the USB adapter to be recognized and used by your system. This can be done either by using proprietary or open-source drivers. It's important to select the correct drivers for your specific system and hardware to avoid problems and achieve optimal performance. It's also advisable to read the manufacturer's instructions or the product documentation before installing the drivers to ensure you follow the correct steps. The ALL-WA0300AC supports dual-band Wi-Fi (2.4 and 5 GHz) and offers a high data transfer rate of up to 300 Mbps. It is compatible with most Wi-Fi routers and provides strong signal strength and good coverage.
-
 
 All-WA0300AC ### ALL-WA0150N (MTK7601)
 

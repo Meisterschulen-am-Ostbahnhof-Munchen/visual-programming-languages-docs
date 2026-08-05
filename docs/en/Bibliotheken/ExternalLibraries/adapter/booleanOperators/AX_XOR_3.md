@@ -1,13 +1,8 @@
 # AX_XOR_3
-
 <img width="1009" height="299" alt="image" src="https://github.com/user-attachments/assets/716a2f15-e5b5-4f7f-b30c-42b13251bace" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_XOR_3 function block is a generic function block for calculating the Boolean XOR operation with three inputs. It implements the exclusive OR operation for three binary input signals and outputs the corresponding result.
-
-
 ![AX_XOR_3](AX_XOR_3.svg)
 
 ## Interface Structure
@@ -38,7 +33,6 @@ The AX_XOR_3 function block is a generic function block for calculating the Bool
 This function block calculates the XOR operation for three input signals. The XOR operation outputs a "true" signal if and only if an odd number of the inputs are "true". With three inputs, this means:
 
 - The result is true if exactly one or all three inputs are true.
-
 - The result is false if none or exactly two inputs are true.
 
 ## Technical Features
@@ -62,7 +56,6 @@ Compared to standard two-input XOR blocks, AX_XOR_3 offers the extension to thre
 Comparison with [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)]
 
 ## Conclusion

@@ -1,13 +1,9 @@
 # AX_FB_TOF_LTIME
-
 ![AX_FB_TOF_LTIME](./AX_FB_TOF_LTIME.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AX_FB_TOF_LTIME** implements a standard timer for the off-delay according to IEC 61131-3. It is specifically designed for use with an AX adapter and uses an internal timer module and a D flip-flop to precisely represent the timing behavior. The time base uses the data type `LTIME`, resulting in high temporal resolution.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Event | Comment |
@@ -50,19 +46,13 @@ The function block **AX_FB_TOF_LTIME** implements a standard timer for the off-d
 
 **Plug** `Q` | `adapter::types::unidirectional::AX` | Output adapter – forwards the time-delayed output signal (via event `E1` and data `D1`). |
 
-
 ``` ## Functionality
 
 The module behaves like a classic time-of-flight (TOF) delay circuit:
 
 - As long as the input `IN` (via the adapter) is **TRUE**, the output `Q` is also **TRUE**, and the elapsed time `ET` is set to zero.
-
 - As soon as `IN` changes from **TRUE** to **FALSE**, the timing starts. The output `Q` remains **TRUE** for the duration of the specified time `PT` and only then falls to **FALSE**.
-
-
 - As soon as `IN` changes from **TRUE** to **FALSE**, the timing measurement starts. The output `Q` remains **TRUE** for the duration of the specified time `PT` and only then falls to **FALSE**.
-
-
 - As long as the input `Q` (via the adapter) is **TRUE**, the output `PT` remains **TRUE**. If `IN` becomes **TRUE** again before the delay time expires, the timer is reset and `Q` remains **TRUE**.
 
 Event-driven processing occurs as follows:
@@ -78,13 +68,9 @@ Event-driven processing occurs as follows:
 The variable `ET` is taken directly from the timer and displays the currently elapsed delay time at all times.
 
 ## Technical Features
-
 - **High time resolution** through the use of `LTIME` (Long Time) according to IEC 61131-3.
-
 - **Adapter-based I/O** via the unidirectional `AX` adapter enables loose coupling between different resources (e.g., between the application and the I/O driver).
-
 - **Standard compliance** according to IEC 61131-3 – the behavior corresponds exactly to that of a TOF timer.
-
 - **Internal structure**: The component combines a pure timer (`FB_TOF_LTIME`) with an edge-triggered D flip-flop to implement the turn-off delay behavior.
 
 ## State overview
@@ -102,21 +88,14 @@ The variable `ET` is taken directly from the timer and displays the currently el
 A change from `IN` to **TRUE** resets the timer and immediately returns it to the "Inactive / Ready" state. A change to **FALSE** restarts the delay.
 
 ## Application Scenarios
-
 - **Run-on control** of fans, pumps, or conveyor belts after a signal is switched off.
-
 - **Debouncing** of signals: a brief level change is filtered out by the delay.
-
 - **Protection times** when switching inductive loads: the switch-off is delayed by a defined time.
-
 - **Time-controlled logic** in production plants, where an output should remain active for a specific duration after the input event.
 
 ## Comparison with similar function blocks
-
 - **TON (Switch-on delay)**: The output only becomes active after a delay following the switch-on. – TOF delays the switch-off.
-
 - **TP (Pulse)**: The output provides a pulse of a predefined length, independent of the duration of the input signal. – TOF only reacts to the falling edge.
-
 - **RTRIG / FTRIG (Edge detection)**: Detect signal changes without a time component. – TOF combines edge detection with time control.
 
 ## Conclusion

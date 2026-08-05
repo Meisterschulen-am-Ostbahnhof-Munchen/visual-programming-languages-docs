@@ -1,13 +1,8 @@
 # F_MUX_2
-
 ![F_MUX_2](https://user-images.githubusercontent.com/116869307/214145411-87b2a7e5-fd56-4491-aaca-385941a399ab.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The F_MUX_2 is a multiplexer function block according to IEC 61131-3, classified as a standard selection function. This block allows selection between two input signals based on a control signal.
-
-
 ![F_MUX_2](F_MUX_2.svg)
 
 ## Interface Structure
@@ -19,15 +14,11 @@ The F_MUX_2 is a multiplexer function block according to IEC 61131-3, classified
 - **CNF**: Confirmation of requested service - signals completion of processing
 
 ### **Data Inputs**
-
 - **K**: Control input for selecting one of n inputs (ANY_INT type)
-
 - **IN1**: Input value 1 (ANY type)
-
 - **IN2**: Input value 2 (ANY type)
 
 ### **Data Outputs**
-
 - **OUT**: Output value - returns IN1 for K = 0, IN2 for K = 1 (ANY type)
 
 ### **Adapters**
@@ -37,7 +28,6 @@ No adapter interfaces are available.
 The F_MUX_2 operates as a 2:1 multiplexer. Upon receiving a REQ event, the function block evaluates the control input K:
 
 - If K = 0, the value of IN1 is passed to OUT.
-
 - If K = 1, the value of IN2 is passed to OUT.
 
 After successful processing, the CNF event is triggered to signal the completion of the operation.
@@ -67,7 +57,6 @@ Compared to other multiplexers, F_MUX_2 offers:
 - Lower resource consumption with 2-way selection
 
 ## 🛠️ Related Exercises
-
 * [Exercise_090a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
 
 ## Conclusion

@@ -1,13 +1,8 @@
 # AL_DEMUX_3
-
 ![AL_DEMUX_3](./AL_DEMUX_3.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AL_DEMUX_3** is a generic demultiplexer for unidirectional AL adapter data. It routes an incoming adapter data stream (via socket **IN**) to one of three output adapters (**OUT1**, **OUT2**, **OUT3**). Switching is performed via a data input **K** and is triggered by an event **REQ**. This block is particularly suitable for applications where a signal needs to be distributed to different paths depending on its index.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -62,9 +57,7 @@ The function block **AL_DEMUX_3** is a generic demultiplexer for unidirectional 
 4. Depending on **K**, the input adapter **IN** is connected to the corresponding output adapter (**OUT1**, **OUT2**, or **OUT3**).
 
 - For **K=1**, the data is forwarded to **OUT1**.
-
 - For **K=2**, the data is forwarded to **OUT2**.
-
 - For **K=3**, the data is forwarded to **OUT3**.
 
 5. After a successful switchover, the **CNF** event is output.
@@ -72,13 +65,9 @@ The function block **AL_DEMUX_3** is a generic demultiplexer for unidirectional 
 > **Note:** The value of **K** is only evaluated during a **REQ** event. A change in the data input between two events has no immediate effect.
 
 ## Technical Features
-
 - **Generic Function Block:** The FB is defined as a generic type (GenericClassName `GEN_AL_DEMUX`) and can be used in various projects with the adapter type **AL**.
-
 - **No Data Outputs:** The output data is transported exclusively via the adapter plugs. This allows for flexible further processing in downstream function blocks.
-
 - **Unidirectional Adapters:** Both the input and outputs use the adapter type `adapter::types::unidirectional::AL`. This assumes that data flow is unidirectional.
-
 - **Index Limit:** The function block expects values between 1 and 3 for **K**. Values outside this range result in no defined behavior (or may be ignored).
 
 ## State Overview
@@ -93,15 +82,10 @@ The **AL_DEMUX_3** has a simple internal flow without a persistent state machine
 
 After sending **CNF**, the function block immediately returns to the Ready state.
 
-
 ## Application Scenarios
-
 - **Sensor Multiplexing:** A single sensor (e.g., temperature, pressure) is alternately routed to different evaluation units.
-
 - **Control Routing:** In a machine control system, control signals are distributed to different actuators depending on the operating mode.
-
 - **Test and Verification Benches:** A test signal can be selectively routed to different measuring points.
-
 - **Agricultural Technology:** In agricultural electronics (e.g., ISOBUS applications), a data signal can be split to different implements.
 
 ## Comparison with Similar Function Blocks

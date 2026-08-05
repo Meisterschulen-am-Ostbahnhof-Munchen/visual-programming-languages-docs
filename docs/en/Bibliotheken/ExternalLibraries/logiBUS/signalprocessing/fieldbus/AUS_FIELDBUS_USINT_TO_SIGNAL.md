@@ -1,13 +1,9 @@
 # AUS_FIELDBUS_USINT_TO_SIGNAL
-
 ![AUS_FIELDBUS_USINT_TO_SIGNAL](./AUS_FIELDBUS_USINT_TO_SIGNAL.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `AUS_FIELDBUS_USINT_TO_SIGNAL` is used to pass a USINT signal from a fieldbus adapter, taking a validity check into account. It mirrors the input value to the output if the signal is recognized as valid. An additional adapter outputs the validity status. The internal logic uses a dedicated fieldbus conversion block and an edge-triggered D flip-flop for synchronization.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Name | Description |
@@ -56,12 +52,10 @@ The function block `AUS_FIELDBUS_USINT_TO_SIGNAL` is used to pass a USINT signal
 
 | `VALID` | `adapter::types::unidirectional::AX` | Plug | Provides the validity status (event + BOOL). |
 
-
 ## Functionality
 The function block (FB) reacts to an incoming event `IN.E1`. This triggers the internal function block `FIELDBUS_USINT_TO_SIGNAL`, which processes the data value `IN.D1` and delivers two results:
 
 - An output value (`OUT`)
-
 - A validation signal (`VALID`)
 
 The output value is passed directly to `OUT.D1` and acknowledged via `OUT.E1`. Simultaneously, the validation signal is fed to the data input `D` of the D flip-flop `E_D_FF`. The flip-flop is clocked by the same event (via `CFN`), so the validity status is held stably at `Q` and output at `VALID.D1`. Only after the clock pulse is `VALID.E1` triggered.
@@ -69,11 +63,8 @@ The output value is passed directly to `OUT.D1` and acknowledged via `OUT.E1`. S
 In summary: The output `OUT` mirrors the input `IN`, provided the signal is recognized as valid in the fieldbus module. The validity status is stored using edge triggering.
 
 ## Technical Features
-
 - **Adapter-based communication:** All inputs and outputs are implemented via standardized unidirectional adapters (`AUS`, `AX`), which enable a clear separation between event and data paths.
-
 - **Edge-Triggered Validation:** A D flip-flop ensures that the validity state is only updated upon an event (rising edge) – this prevents glitches and asynchronous state transitions.
-
 - **Reused Internal Function Block:** The function block `FIELDBUS_USINT_TO_SIGNAL` handles the actual fieldbus-specific conversion and validity check; the outer function block serves purely as wrapper and synchronization logic.
 
 ## State Overview
@@ -90,20 +81,15 @@ The internal state is defined by the D flip-flop `E_D_FF`. It has two states:
 State transitions occur exclusively on each rising edge of the clock signal (event `CNF` of the fieldbus function block).
 
 ## Application Scenarios
-
 - **Fieldbus Signal Conditioning:** A sensor sends USINT values via a fieldbus; the function block filters out invalid values and only forwards valid data and a clear validity status.
-
 
 ``` - **Safety-Oriented Data Transmission:** In control systems that rely on valid signals (e.g., in agricultural technology), this function block (FB) can be used as a simple validation stage.
 
 - **Interface Adaptation:** The function block connects a fieldbus-specific adapter (e.g., CANopen, PROFIBUS) to a standardized logic adapter that only triggers events when the data is valid.
 
 ## Comparison with Similar Function Blocks
-
 - **Simple Mirror Function Blocks** (e.g., `MOVE` or `AUS_MIRROR`): These pass the signal without validation. This FB additionally offers validation logic and a separate validity output.
-
 - **Fieldbus Converters Without Memory:** Some function blocks output the validity signal directly and without a clock signal. Using a flip-flop here avoids metastable states and ensures deterministic output.
-
 
 ## Conclusion
 

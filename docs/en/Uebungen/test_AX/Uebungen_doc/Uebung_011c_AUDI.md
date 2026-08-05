@@ -1,44 +1,23 @@
 # Exercise_011c_AUDI: Passing Through Numeric Value Input I3 to N3
-
 ![Uebung_011c_AUDI_network](./Uebung_011c_AUDI_network.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 This exercise demonstrates passing through a numeric value from an input block (`InputNumber_I3`) to an output block (`Q_NumericValue_AUDI`) using an adapter block (`AD_TO_AUDI`). The value is transmitted unchanged ("pass-through"). The sub-application is designed as a reusable component for ISOBUS applications.
-
-
 ## Function Blocks (FBs) Used
-
 - **InputNumber_I3**
-
 - **Type**: `isobus::UT::io::NumericValue::NumericValue_IDA`
-
 - **Parameters**:
-
 - `QI` = `TRUE`
-
 - `u16ObjId` = `InputNumber_I3`
-
 - **Function**: Provides a numeric input value (e.g., from a control element) via an adapter output (`IN`).
-
-
 - **AD_TO_AUDI**
-
 - **Type**: `adapter::conversion::unidirectional::AD_TO_AUDI`
-
 - **Parameters**: None
-
 - **Function**: Converts the input adapter signal (`AD_IN`) into a signal suitable for the output module (`AUDI_OUT`). In this exercise, the value is passed through unchanged.
-
 - **Q_NumericValue_AUDI**
-
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
-
 - **Parameters**:
-
 - `u16ObjId` = `OutputNumber_N3`
-
 - **Function**: Receives the numeric value via the data input `u32NewValue` and makes it available as an ISOBUS output object (e.g., for display).
 
 ## Program Flow and Connections

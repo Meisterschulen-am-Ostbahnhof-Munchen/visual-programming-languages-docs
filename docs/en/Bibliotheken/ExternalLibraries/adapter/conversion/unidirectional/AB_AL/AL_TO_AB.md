@@ -1,11 +1,8 @@
 # AL_TO_AB
-
 ![AL_TO_AB](./AL_TO_AB.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AL_TO_AB** is a composite function block that enables unidirectional conversion from an LWORD adapter (AL) to a BYTE adapter (AB). It is used to convert data from an LWORD-based adapter to the format of a BYTE adapter, with the conversion being performed internally by the IEC 61131-3 block `F_LWORD_TO_BYTE`.
-
 ## Interface Structure
 ### **Adapter (Input)**
 
@@ -23,7 +20,6 @@ The function block **AL_TO_AB** is a composite function block that enables unidi
 
 | AB_OUT | `adapter::types::unidirectional::AB` | BYTE adapter plug. This adapter outputs the converted BYTE data. The adapter has an event input `E1` and a data input `D1` (data type BYTE). |
 
-
 **Note:** The function block (FB) has no separate event or data inputs/outputs; all communication takes place via the two adapter interfaces.
 
 ## Functionality
@@ -37,26 +33,19 @@ The function block **AL_TO_AB** is a composite function block that enables unidi
 
 5. The connected receiver on plug `AB_OUT` thus receives the event and the converted data value.
 
-
 4. ## Technical Features
 
 - **Integration of IEC 61131-3**: The conversion uses the standardized function block `F_LWORD_TO_BYTE` from the IEC 61131-3 library. This ensures that the conversion logic is standards-compliant and portable.
-
 - **Composite Structure**: The function block consists exclusively of an internal network, has no independent state (ECC), and therefore operates in an event-driven manner without delay.
-
 - **Unidirectional Adapters**: The unidirectional adapters `AL` and `AB` are used, which define a clear direction for data and event flows.
-
 - **Package Structure**: The function block is organized in the package `adapter::conversion::unidirectional`, which facilitates reuse in modular projects.
 
 ## State Overview
 The function block does not have its own state machine. The entire process control is managed via the event chain of the internal network. Therefore, status monitoring is not required.
 
 ## Application Scenarios
-
 - **Protocol Adaptation**: When an adapter in a distributed system that delivers LWORD data needs to be replaced by an adapter that only processes BYTE data.
-
 - **System Integration**: Coupling components that use different adapter formats (e.g., AL and AB adapters) without modifying the original components.
-
 - **Data Reduction**: Targeted conversion of 64-bit LWORD to 8-bit BYTE when the higher bytes are not needed or a narrower interface is required.
 
 ## Comparison with Similar Components
@@ -72,7 +61,6 @@ The function block does not have its own state machine. The entire process contr
 `WORD_TO_BYTE` | Conversion from WORD (16-bit) to BYTE | Different data type; similar structure, but different adapter types |
 
 The **AL_TO_AB** is specifically designed for use with the unidirectional adapters `AL` and `AB` and offers clean, reusable encapsulation.
-
 
 ## Conclusion
 

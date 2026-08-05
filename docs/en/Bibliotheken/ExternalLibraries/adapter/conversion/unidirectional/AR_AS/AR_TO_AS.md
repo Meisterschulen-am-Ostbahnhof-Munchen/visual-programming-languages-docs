@@ -1,11 +1,8 @@
 # AR_TO_AS
-
 ![AR_TO_AS](./AR_TO_AS.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AR_TO_AS** is a composite block that converts a **REAL adapter** (AR) into a **SINT adapter** (AS). It enables simple and standardized conversion between the adapter types and encapsulates the necessary logic in a reusable block.
-
 ## Interface Structure
 The function block does not have separate event or data ports at the IEC 61499 level. All communication takes place via the integrated adapters. The following table describes the available adapters.
 
@@ -43,23 +40,16 @@ The function block performs the conversion as follows:
 A synchronous 1:1 conversion takes place – each incoming REAL request generates exactly one outgoing SINT response.
 
 ## Technical Features
-
 - **Reusability**: The function block is based on the standard FB `F_REAL_TO_SINT` from the IEC 61131 library. This ensures that the conversion logic is standards-compliant and available on many platforms.
-
 - **Adapter Interface**: The use of adapters allows for loose coupling between function blocks and facilitates the exchange or extension of the interface.
-
 - **Value Range**: When converting from REAL (approx. ±3.4 × 10³⁸) to SINT (−128 … 127), value range exceedances can occur. The internal function block `F_REAL_TO_SINT` behaves according to the IEC 61131 definition (overflow or use of saturation behavior). The user should limit the input values accordingly.
 
 ## State Overview
 The **AR_TO_AS** does not have its own state machine. Since it is a pure composite function block that only establishes the connection between the incoming and outgoing adapters, there is no internal state behavior. The function block operates combinatorially at the event level.
 
-
 # State Overview ## Application Scenarios
-
 - **Integration of REAL-based function blocks in SINT environments**: If a component provides a REAL adapter, but the subsequent function block expects a SINT adapter, **AR_TO_AS** can be used as an intermediary adapter.
-
 - **Type-safe conversion in modular controllers**: By using adapters, the typing is preserved, and the conversion is explicitly visible in the network.
-
 - **Library extension**: The function block can be used as part of an adapter conversion library to standardize data exchange between different numerical resolutions.
 
 ## Comparison with similar function blocks

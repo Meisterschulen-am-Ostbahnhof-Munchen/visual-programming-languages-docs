@@ -1,15 +1,11 @@
 # AULI_SPLIT_8
-
 ![AULI_SPLIT_8](./AULI_SPLIT_8.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `AULI_SPLIT_8` is used to split an incoming unidirectional AULI adapter (socket `IN`) into eight identical AULI output adapters (`OUT1` to `OUT8`). It operates as a simple distributor – the incoming signal is passed on to all outputs without delay or logic modification. The block is designed generically and can be used with various AULI types (see attribute `GenericClassName`).
-
 ## Interface Structure
 ### **Event Inputs**
 No event inputs are available.
-
 
 ### **Event Outputs**
 No event outputs available.
@@ -35,20 +31,15 @@ The function block has no integrated control logic (no ECC) and no data processi
 
 ## Technical Features
 - **Generic Structure:** The function block is declared as a generic function block with `eclipse4diac::core::GenericClassName = 'GEN_AULI_SPLIT'`. This allows it to be parameterized for different AULI adapter types (e.g., with different data types).
-
 - **Pure Adapter Connection:** Neither event inputs/outputs nor data elements are required at the FB level – all communication takes place via the AULI adapters.
-
 - **No State Logic:** The FB has no ECC; its behavior is entirely determined by the adapter wiring.
 
 ## State Overview
 The function block does not contain an internal state machine. There are no distinguishable operating modes or state changes – the behavior is purely combinatorial.
 
 ## Application Scenarios
-
 - **Signal Distribution:** An AULI sensor (e.g., temperature, pressure) should forward its signal to several independent devices (controllers, displays, data loggers) simultaneously.
-
 - **Redundancy / Broadcasting:** A command or configuration is distributed from a central instance to up to eight actuators or subsystems.
-
 - **Test Environments:** A simulated AULI value is sent in parallel to several FB instances for validation.
 
 ## Comparison with Similar Blocks
@@ -60,7 +51,6 @@ The `AULI_SPLIT_8` is a simple yet useful distribution block for unidirectional 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,12 +1,8 @@
 # ILOCK_BLOCK_PROTECT_AX
-
 ![ILOCK_BLOCK_PROTECT_AX](./ILOCK_BLOCK_PROTECT_AX.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block `ILOCK_BLOCK_PROTECT_AX` implements a prioritized interlock for two opposing directions (UP/DOWN) while taking into account a configurable protection dead time. The block is implemented as an adapter version, meaning that the inputs and outputs are provided via IEC 61499 adapters. The goal is the safe control of actuators where only one direction may be active at a time, for example, during lifting or swiveling movements. The first activated input takes precedence; a change in direction only occurs after the protection time has elapsed and a new evaluation has been performed.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -75,33 +71,23 @@ The function block operates as a state-controlled interlock with two priority in
 
 1. **Initial state** (`STOP`): No direction is active. An incoming event at `UP_IN.E1` or `DOWN_IN.E1` is processed only if the corresponding data signal `D1` has the value `TRUE`. The first input that meets this condition changes to the corresponding state (`UP` or `DOWN`). If both are `TRUE` simultaneously, neither is accepted – the function block remains in `STOP`.
 
-
-
 The first input that meets this condition changes to the corresponding state (`UP` or `DOWN`). 2. **Active State** (`UP` or `DOWN`): The output adapter (`UP_OUT` or `DOWN_OUT`) signals the active direction via `D1 = TRUE` and triggers the event `E1`. The protection time is stored in the timer, but it is not yet active.
 
 3. **Deactivation and Protection Time**: When the active input resets its data signal to `FALSE` (or the event without `TRUE`), the FB switches to the corresponding stop state (`UP_STOP` or `DOWN_STOP`). The output is set to `FALSE`, and the timer is started via the event `timeOut.START`. After the set protection time has elapsed (`timeOut.TimeOut`), the function block switches to the evaluation state (`EVAL`).
 
-
 The function block is set to `FALSE`, and the timer is started via the event `timeOut.START`. 4. **Evaluation** (`EVAL`): In the evaluation state, the current data signals of both inputs are evaluated:
 
 - Only `UP_IN.D1 = TRUE` → Switch to `UP`
-
 - Only `DOWN_IN.D1 = TRUE` → Switch to `DOWN`
-
 - Neither or both `TRUE` → Switch back to `STOP`
 
 5. **Dynamic Update**: The event `UPDATE` allows the protection time `DT_PROTECT` to be changed during operation. The updated time takes effect the next time the timer is used (the timer is only started in the stop states). The event can be received in any state without changing the current control state.
 
 ## Technical Features
-
 - **Adapter Interface**: All data exchange takes place via adapters. This ensures a clean separation between control logic and peripherals, increases reusability, and improves encapsulation.
-
 - **Dynamic Protection Time**: The dead time can be changed at runtime via the `UPDATE` event without restarting the function block. This is particularly useful in applications with variable switching times (e.g., temperature-dependent delays).
-
 - **Dead Time Principle**: After an input is deactivated, the function block does not immediately switch to the other state, but enforces a minimal delay (`DT_PROTECT`). This prevents bounce or unwanted rapid switching.
-
 - **Prioritization after first activation**: The logic only reacts to the first `TRUE` signal of an input event. Simultaneous activation of both inputs does not result in a change of direction.
-
 - **Self-holding without external event**: As long as an active input maintains its `D1` at `TRUE`, the corresponding output state is retained, even without further events.
 
 ## State Overview
@@ -122,8 +108,6 @@ The function block is set to `FALSE`, and the timer is started via the event `ti
 
 | `EVAL` | Evaluation after the protection period expires. | No algorithm; the transitions determine the next state based on the current input data. |
 
-
-
 ``` **Transitions (Simplified):**
 
 - `STOP → UP` if `UP_IN.E1` and `UP_IN.D1 = TRUE`
@@ -132,25 +116,15 @@ The function block is set to `FALSE`, and the timer is started via the event `ti
 - `DOWN → DOWN_STOP` if `DOWN_IN.E1` and `DOWN_IN.D1 = FALSE`
 - `UP_STOP → EVAL` if `timeOut.TimeOut`
 - `DOWN_STOP → EVAL` if `timeOut.TimeOut`
-
 - `EVAL → UP` if `UP_IN.D1 = TRUE` and `DOWN_IN.D1 = FALSE`
-
 - `EVAL → DOWN` if `DOWN_IN.D1 = TRUE` and `UP_IN.D1 = FALSE`
-
 - `EVAL → STOP` if both `FALSE` or both `TRUE`
-
 - In any state, the event `UPDATE` can return to the same state (only used to update `DT_PROTECT`).
 
-
-
 ## Application Scenarios
-
 - **Lifting Platform Control**: Interlocking of lifting and lowering; after releasing the lifting command, a dead time of, for example, 100 ms is observed before lowering is possible.
-
 - **Valve Control**: Switching between two media (e.g., heating/cooling) with a protection time to prevent pressure surges.
-
 - **Robot Axes**: Collision prevention through simultaneous control of opposing movements.
-
 - **Door Control**: Opening/closing with a delay when changing direction to protect end stops.
 
 ## Comparison with Similar Function Blocks

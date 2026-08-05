@@ -1,12 +1,8 @@
 # AI_D_FF_HYS_TMIN
-
 ![AI_D_FF_HYS_TMIN](./AI_D_FF_HYS_TMIN.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The function block **AI_D_FF_HYS_TMIN** implements a data latch (D flip-flop) with a hysteresis band and a minimum time between successive event outputs. It serves as a robust signal processing component that suppresses noise and fast edge transitions and only passes on stable state changes.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -59,11 +55,8 @@ The parameters `HYSTERESIS` and `Tmin` are received via the **INIT** event input
 2. **Signal Processing**
 
 - A new value is received via the **I** adapter (event **E1** with the corresponding data value **D1**).
-
 - The function block compares the new value with the currently stored (latched) value, taking the hysteresis band into account:
-
 - A change is only accepted if the difference between the new value and the old value is greater than `HYSTERESIS`.
-
 - Additionally, the time elapsed since the last event output must be at least `Tmin`. Only when both conditions are met is the new value accepted and output via the **Q** adapter (event **E1** and data **D1**).
 
 3. **Output**
@@ -71,24 +64,17 @@ The parameters `HYSTERESIS` and `Tmin` are received via the **INIT** event input
 The currently valid latched value is provided via the **Q** adapter. An event is sent to **Q.E1** for every valid state change.
 
 ## Technical Features
-
 - **Hysteresis** – Suppresses noise and rapid fluctuations by only accepting a change if it exceeds the hysteresis band.
-
 - **Minimum Time Between Events (Tmin)** – Prevents overly frequent outputs (e.g., due to high-frequency signals or bouncing). Events are only released after a period of `Tmin` has elapsed since the last event.
-
 - **Adapter-Based Interface** – Input and output are handled via unidirectional adapters, allowing for flexible integration with other components.
 
 ## State Overview
 The component does not have explicitly named states. The internal flip-flop operates as a bistable element with two stable states (high/low or the last valid value). State transitions are controlled by the hysteresis and timing conditions.
 
 ## Application Scenarios
-
 - **Sensor Value Debouncing** – Smoothing of analog or digital input signals (e.g., temperature, pressure, level) when thresholds are exceeded.
-
 - **Noise Peak Filtering** – Prevention of false triggers caused by short-term disturbances.
-
 - **Time-controlled signal monitoring** – When changes should only be reported at specific intervals (e.g., for logging or update rates).
-
 - **Interface decoupling** – Used as a stabilized intermediate between a fast signal transmitter and a slow-moving actuator.
 
 ## Comparison with similar components

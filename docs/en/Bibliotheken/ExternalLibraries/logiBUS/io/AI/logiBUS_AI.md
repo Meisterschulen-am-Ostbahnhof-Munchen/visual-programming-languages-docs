@@ -1,11 +1,8 @@
 # logiBUS_AI
-
 ![logiBUS_AI](./logiBUS_AI.svg)
-
 * * * * * * * * * *
 ## Introduction
 The logiBUS_AI GlobalConstants define a collection of constants for configuring analog inputs in the logiBUS system. These constants are used for simple and consistent referencing of the analog input channels.
-
 ## Interface Structure
 ### **Event Inputs**
 *No event inputs available*
@@ -27,21 +24,15 @@ The logiBUS_AI GlobalConstants provide predefined constants of type `logiBUS_AI_
 
 ## Technical Specifications
 - **Constant Type**: All constants are of the structured data type `logiBUS_AI_S`
-
 - **Pin Assignment**: The constants `AnalogInput_I1` to `AnalogInput_I9` correspond to analog inputs 1 to 9
-
 - **Invalid Reference**: The constant `Invalid` with pin value 255 serves as a marker for invalid or non-existent inputs
-
 - **Initialization**: All constants are initialized with their corresponding pin values upon declaration
 
 ## State Overview
 Since these are constants, they do not undergo state changes. Their values remain unchanged throughout runtime.
 
-
 ## Application Scenarios
-
 - Configuration of analog inputs in logiBUS systems
-
 - Parameterization of function blocks that require analog inputs
 - Type-safe referencing of analog channels in programming
 - Error handling through the use of the Invalid constant

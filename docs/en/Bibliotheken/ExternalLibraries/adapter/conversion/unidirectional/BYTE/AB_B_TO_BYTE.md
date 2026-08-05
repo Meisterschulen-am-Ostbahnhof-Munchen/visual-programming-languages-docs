@@ -1,12 +1,8 @@
 # AB_B_TO_BYTE
-
 <img width="1243" height="236" alt="image" src="https://github.com/user-attachments/assets/e8004a47-56e9-447b-a228-03b20792af4a" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AB_B_TO_BYTE function block is a composite function block used to convert AB data to the BYTE format. It acts as an adapter converter and enables the seamless integration of AB data sources into systems that expect BYTE data.
-
 ![AB_B_TO_BYTE](AB_B_TO_BYTE.svg)
 
 ## Interface Structure
@@ -16,20 +12,16 @@ The AB_B_TO_BYTE function block is a composite function block used to convert AB
 No direct event inputs are available – events are received via the adapter.
 
 ### **Event Outputs**
-
 - **CNF** (Confirmation): Confirmation event received by the adapter
 
 ### **Data Inputs**
 
 No direct data inputs are available – data is received via the adapter.
 
-
 ### **Data Outputs**
-
 - **IN** (BYTE): Input data converted by the adapter
 
 ### **Adapter**
-
 - **AB_IN**: Adapter input of type `adapter::types::unidirectional::AB` for receiving AB data
 
 ## Functionality
@@ -39,7 +31,6 @@ The function block receives AB data via the adapter input AB_IN and converts it 
 - Implemented as a composite function block with an internal network structure
 - Uses unidirectional adapter communication
 - Automatic event forwarding from the adapter to the CNF output
-
 - Direct data forwarding from the adapter to the IN output
 
 ## State Overview

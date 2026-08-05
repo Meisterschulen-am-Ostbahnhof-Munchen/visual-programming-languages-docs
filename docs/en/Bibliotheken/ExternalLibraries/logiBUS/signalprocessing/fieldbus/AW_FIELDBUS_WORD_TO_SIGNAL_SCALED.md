@@ -1,12 +1,8 @@
 # AW_FIELDBUS_WORD_TO_SIGNAL_SCALED
-
 ![AW_FIELDBUS_WORD_TO_SIGNAL_SCALED](./AW_FIELDBUS_WORD_TO_SIGNAL_SCALED.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The function block `AW_FIELDBUS_WORD_TO_SIGNAL_SCALED` is used to convert an incoming fieldbus word (16-bit) to a physical output value, taking into account a scaling factor and offsets. Additionally, the validity of the signal is monitored and stored via a dedicated output. The block encapsulates the typical processing chain from digital transmission to the standardized analog or signal value.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -63,28 +59,20 @@ The function block operates with an internal sub-FB `FIELDBUS_WORD_TO_SIGNAL_SCA
 4. **Signal Validity:** If the incoming word is recognized as invalid (e.g., due to error bits or plausibility checks in the sub-FB), the sub-FB sets the `VALID` signal to FALSE. The flip-flop freezes this state until the next valid cycle occurs.
 
 ## Technical Features
-
 - **Scaling with Offset:** Processing occurs in the sequence `(Wort * SCALE) + OFFSET`. This allows for linear conversions, e.g., raw values to physical units.
-
 - **Validity Storage:** The D flip-flop decouples the dynamic validity from the output signal. A signal marked as invalid remains invalid until a valid cycle is completed – this prevents momentary misinterpretations.
-
 - **Adapter-based interface:** The function block uses unidirectional adapters of a type system designed for fieldbus communication (`AW`, `AR`, `AX`). The exact data types of the adapters (e.g., Word, Real, Boolean) are provided by the adapter definitions.
 
 ## State overview
 The function block itself does not have an explicit state machine in the XML. Its behavior results from the sequence of its internal elements:
 
 - **Waiting for INIT:** No operation occurs before INIT is executed.
-
 - **Operation:** After INIT, the function block listens for events at the `IN` socket. Each incoming event triggers a processing step.
-
 - **Output:** The output event `OUT.E1` is sent immediately after the internal scaling is complete. The validity signal `VALID` is updated simultaneously.
 
 ## Application Scenarios
-
 - **Fieldbus Analog Value Processing:** A 16-bit signal transmitted from a fieldbus (e.g., 0…65535) is converted into a physical range such as 0…10V or 4…20mA using scaling.
-
 - **Sensor Value with Validity Flag:** Sensors that deliver data via a fieldbus protocol can also send a validity status (e.g., "Data valid" bit). This is transmitted via the `VALID` output.
-
 - **Safety-Oriented Transmission:** If the fieldbus word contains an error bit, the sub-FB `VALID` can set it to FALSE, causing downstream logic to recognize the signal as invalid.
 
 ## Comparison with Similar Function Blocks

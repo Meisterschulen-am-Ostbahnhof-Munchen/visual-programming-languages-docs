@@ -1,12 +1,8 @@
 # PKP_2200_LI_IXA
-
 <img width="1960" height="384" alt="image" src="https://github.com/user-attachments/assets/1b07f3e6-433e-4e24-be44-50268e3eb4f4" />
-
 * * * * * * * * * *
 ## Introduction
 The PKP_2200_LI_IXA is a composite function block for processing Boolean input data. It serves as an interface for digital inputs and provides standardized initialization and query functions for input signals.
-
-
 ``` ![PKP_2200_LI_IXA](PKP_2200_LI_IXA.svg)
 
 ## Interface Structure
@@ -25,18 +21,14 @@ The PKP_2200_LI_IXA is a composite function block for processing Boolean input d
 - **Input**: Input Identifier (BlinkMarine::io::DI::PKP_2200_LI_DI_S) - Default Value: Invalid
 
 ### **Data Outputs**
-
 - **QO**: Event Output Qualifier (BOOL)
-
 - **STATUS**: Service Status (STRING)
 
 ### **Adapters**
-
 - **IN**: Unidirectional Adapter of Type AX
 
 ## Functionality
 The function block initializes itself via the INIT event and confirms successful initialization with INITO. Service requests can be made via the REQ event. The input data is processed via the IN adapter, and the results are provided via the corresponding outputs.
-
 
 ## Technical Features
 - Uses standardized initialization procedures according to EInit type
@@ -63,7 +55,6 @@ The function block goes through the following states:
 Compared to simple digital input blocks, PKP_2200_LI_IXA offers extended functionality through:
 
 - Parameterizable SA Member Configuration
-
 - Detailed status feedback
 - Standardized initialization procedures
 - Adapter-based interface

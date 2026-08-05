@@ -1,12 +1,9 @@
 # logiBUS_DI_Events_S
-
 * * * * * * * * * *
 ## Introduction
 The structured data type `logiBUS_DI_Events_S` is used to configure events for digital inputs (DI) within the logiBUS framework. It defines the event type that can be assigned to a specific digital input channel. This data type is an essential component for parameterizing logiBUS I/O function blocks.
-
 ## Interface Structure
 This block is a pure structured type and does not have any event or adapter interfaces in the conventional sense of a function block. Its structure is used as an input or output data parameter in other function blocks.
-
 ### **Data Inputs**
 Not applicable – This is a data type.
 
@@ -22,9 +19,7 @@ The data type `logiBUS_DI_Events_S` encapsulates a single variable (`EType`) tha
 
 ## Technical Features
 * **Data Type:** This is a structured data type (`STRUCT`) that is used as a complex data parameter in other function blocks.
-
 * **Initial Value:** The contained variable `EType` is pre-initialized with the value `255`. This value likely serves as a placeholder or "invalid" indicator.
-
 * **Base Type:** The variable `EType` is of type `USINT` (Unsigned Short Integer, 0-255), which provides a limited and efficient range of values for event codes.
 
 ## State Overview
@@ -34,9 +29,7 @@ Since this is a passive data type, there is no state machine. The "state" is the
 This structured data type is primarily used in conjunction with logiBUS I/O function blocks, for example:
 
 * As an element in an array for configuring all digital inputs of a module.
-
 * As a parameter to specify which physical event (e.g., rising edge) should trigger a logical event in the control program.
-
 
 ## ⚖️ Comparison with Similar Function Blocks
 

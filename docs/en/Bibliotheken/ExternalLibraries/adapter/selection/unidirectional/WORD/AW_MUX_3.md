@@ -1,11 +1,8 @@
 # AW_MUX_3
-
 ![AW_MUX_3](./AW_MUX_3.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `AW_MUX_3` is a generic multiplexer (MUX) with three inputs. It selects one of the three adapter inputs based on an index parameter and forwards its value to the output. The block is used for dynamic switching between different data sources in industrial control applications.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -38,7 +35,6 @@ No direct data outputs are available. Output is provided via the adapter `OUT`.
 
 | Name | Type | Direction | Comment |
 
-
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
@@ -57,48 +53,32 @@ No direct data outputs are available. Output is provided via the adapter `OUT`.
 The function block operates in an event-driven manner:
 
 - An event at `REQ` reads the current value of the data input `K` (type UINT).
-
 - Depending on the value of `K`, the corresponding socket input (`IN1`, `IN2`, `IN3`) is switched to the plug `OUT`.
-
 - After a successful switchover, an event is sent to `CNF`.
-
 
 Valid values for `K` are 0, 1, and 2. Values outside this range result in undefined behavior; the function block cannot select a valid input.
 
 ## Technical Features
-
 - **Generic Type**: The function block is declared as a generic FB (`GEN_AW_MUX`). The actual implementation can be parameterized for various data formats of the adapter `AW`.
-
 - **Adapter-Based**: The inputs and outputs use the adapter type `adapter::types::unidirectional::AW`, which supports unidirectional data flows (e.g., analog measured values or simple structures).
-
 - **Event-Driven Processing**: No cyclical updates – switching occurs only upon request via `REQ`.
-
 
 ## State Overview
 
 The function block does not have an explicit state machine in its XML definition. Its behavior corresponds to a simple, event-driven selection mechanism:
 
 - **IDLE**: Waits for a `REQ` event.
-
 - **SELECT**: Evaluates `K` and connects the corresponding input to the output.
-
 - **CONFIRM**: Sends `CNF` and returns to the IDLE state.
 
 ## Application Scenarios
-
 - **Switching Between Multiple Sensors**: Selects one of three analog sensors (e.g., temperature, pressure) for further processing.
-
 - **Routing Control Signals**: Selects between different control algorithms or sources for a control signal.
-
 - **Multiplexing in Visualizations**: If required, different display values can be switched to a display device via the index.
 
-
 ## Comparison with Similar Components
-
 - **AW_MUX_2**: Two inputs, index range 0…1. `AW_MUX_3` offers an additional third input.
-
 - **Standard MUX (e.g., E_MUX)**: Often uses simple data types (INT, REAL) instead of adapters. The adapter-based approach allows for more complex data structures and loose coupling between components.
-
 - **AW_SELECT** (hypothetical): Can select one of several adapter inputs, but without index control (e.g., via Boolean selection). `AW_MUX_3` allows numerical, extensible selection.
 
 ## Conclusion

@@ -1,17 +1,11 @@
 # AX_FB_RS
-
 ![AX_FB_RS_ecc](./AX_FB_RS_ecc.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AX_FB_RS** implements a bistable flip-flop with reset dominance, based on the IEC 61131-3 standard. Unlike the standard `RS` block, this function block uses adapter interfaces (`AX`) to transmit events and data in a bundled manner. This allows for a more compact representation in control diagrams, as data and event connections are combined in a single line.
-
 ## Interface Structure
 
 Since this block is based exclusively on adapters, the classic event and data inputs/outputs are empty. Communication takes place entirely via the defined plugs and sockets.
-
 
 ### **Event Inputs**
 *No direct event inputs available.*
@@ -43,7 +37,6 @@ This component uses the adapter type `adapter::types::unidirectional::AX`. This 
 
 The **AX_FB_RS** implements the logic of an RS flip-flop with reset dominance. The internal state and the output `Q1` are calculated based on the input values of the adapters `SET` and `RESET1`.
 
-
 The logical function is:
 
 `Q1 := (NOT RESET1) AND (SET OR Q1)`
@@ -56,16 +49,11 @@ The behavior can be summarized as follows:
 
 3. **Save:** If both `SET.D1` and `RESET1.D1` are FALSE, `Q1.D1` retains its previous state.
 
-
 As soon as an event (`E1`) is received at one of the input adapters (`SET` or `RESET1`), the module executes the algorithm and then fires an event at the output adapter `Q1.E1`.
 
 ## Technical Features
-
 * **Adapter Technology:** By using `AX` adapters, the module reduces visual complexity in 4diac applications, as only one connecting line needs to be drawn for the event-boolean value pair.
-
 * **Event-Driven:** The algorithm is triggered when an event arrives via the `SET` or `RESET1` adapter.
-
-
 * **Reset Dominance:** This is a safety-relevant feature. In case of a conflict (both inputs TRUE), the output safely shuts down (FALSE).
 
 ## State Overview
@@ -74,22 +62,15 @@ The function block is based on a simple ECC (Execution Control Chart) with a sin
 
 * **State Name:** `REQ`
 * **Action:** Executes the algorithm `REQ` and sends an event via `Q1.E1`.
-
 * **Transitions:**
-
 * The state `REQ` has self-transitions (self-loops) that are triggered by the arrival of events at the adapters `SET.E1` or `RESET1.E1`.
-
 
 This means that the function block is always ready to process input signals and respond to them immediately.
 
 ## Application Scenarios
-
 * **Motor Controls (Start/Stop):** Typical application for start (Set) and stop (Reset) buttons, where the stop button takes precedence for safety reasons (emergency stop logic).
-
 * **Alarm Memory:** An alarm is set and remains active until it is explicitly reset (acknowledged).
-
 * **State Markers:** Storing binary states within an adapter-based control logic.
-
 * **Modular Systems:** Used in systems that consistently rely on adapter interfaces to avoid "spaghetti code" in the graphical representation.
 
 ## ⚖️ Comparison with Similar Function Blocks
@@ -108,7 +89,6 @@ This means that the function block is always ready to process input signals and 
 
 The **AX_FB_RS** is a modern, adapter-based implementation of the classic RS flip-flop. It is ideally suited for complex control applications in 4diac where clarity and signal encapsulation are paramount. Thanks to its integrated reset dominance, it is particularly well-suited for applications where safe shutdown takes precedence over shutdown.
 
-
 **Wiring** | Minimalist (bundled) | Classic (separate lines) |
 
 ## Conclusion
@@ -118,8 +98,4 @@ The **AX_FB_RS** is a modern, adapter-based implementation of the classic RS fli
 ** ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

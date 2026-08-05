@@ -1,13 +1,9 @@
 # AIS_MUX_3
-
 ![AIS_MUX_3](./AIS_MUX_3.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_MUX_3** is a generic multiplexer for AIS data. It selects one of three AIS input adapters (`IN1`, `IN2`, `IN3`) based on an index `K` and connects its signals to the output adapter `OUT`. An event `REQ` triggers the selection and is acknowledged with `CNF` after successful switching.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Event | Description |
@@ -31,7 +27,6 @@ The function block **AIS_MUX_3** is a generic multiplexer for AIS data. It selec
 |------|------|---------------|
 
 | K | UINT | Index for selecting the input (0 = IN1, 1 = IN2, 2 = IN3). |
-
 
 ### **Data Outputs**
 No direct data outputs are available. Output data is provided via the adapter `OUT`.
@@ -60,15 +55,11 @@ No direct data outputs are available. Output data is provided via the adapter `O
 
 4. After the switchover, the event `CNF` is sent to confirm processing.
 
-
 Note: For invalid values of `K` (e.g., greater than 2), the behavior may vary depending on the implementation; typically, the last valid state or an undefined state is returned.
 
 ## Technical Features
-
 - **Generic Type**: The function block uses the attribute `eclipse4diac::core::GenericClassName = 'GEN_AIS_MUX'`, indicating that it was created as a generic function block in the 4diac IDE and can be used with any AIS adapter with the same interface.
-
 - **No State Engine**: The function block does not have an explicit Execution Control Chart (ECC) in its XML definition; the multiplexing functionality is likely implemented through the underlying adapter architecture or simple event propagation.
-
 - **Adapter-Based Communication**: Both inputs and outputs are defined as adapters of type `adapter::types::unidirectional::AIS`. This enables loose coupling and flexible reuse in AIS-based data streams.
 
 ## State Overview
@@ -81,11 +72,8 @@ The function block (FB) does not have documented state machine control. Only a b
 3. Upon completion, **CNF** is output, and the function block returns to the **IDLE** state.
 
 ## Application Scenarios
-
 - **Agricultural Sensors**: Selection of one of three AIS-compatible sensors (e.g., soil moisture, temperature, GPS) for uniform processing.
-
 - **Data Source Switching**: In a controller that uses different AIS data sources depending on the operating mode or schedule.
-
 - **Redundancy and Testing**: Switching between multiple AIS signal sources for validation or error detection.
 
 ## Comparison with Similar Function Blocks
@@ -102,7 +90,6 @@ The function block (FB) does not have documented state machine control. Only a b
 
 Compared to a general-purpose MUX function block (e.g., MUX from IEC 61499 standard libraries), AIS_MUX_3 uses only AIS adapters, providing a clear data structure and type safety within an AIS-based framework.
 
-
 ## Conclusion
 
 The function block **AIS_MUX_3** enables simple and efficient switching between three AIS data sources. Thanks to its generic definition and adapter interface, it can be flexibly used in AIS applications in agricultural technology as well as in other industries. Its clear event control and limited complexity make it a robust building block for multiplexing tasks.
@@ -110,8 +97,4 @@ The function block **AIS_MUX_3** enables simple and efficient switching between 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

@@ -1,13 +1,8 @@
 ![FT_DERIV_10](FT_DERIV_10.svg)
-
 # FT_DERIV_10
-
 Derivative with variable window size (0..9 periods)
-
 ## Interface
-
 ### Event inputs
-
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | INIT | InitRequest | |
@@ -58,7 +53,6 @@ Derivative with variable window size (0..9 periods)
 | DI_9 | REAL | Delta In over 10 period |
 
 ## 🛠️ Related exercises
-
 * [Uebung_152](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
 * [Uebung_153](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 

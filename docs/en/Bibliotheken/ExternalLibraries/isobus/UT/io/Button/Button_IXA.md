@@ -1,13 +1,8 @@
 # Button_IXA
-
 <img width="1388" height="321" alt="image" src="https://github.com/user-attachments/assets/8f014f19-717a-4392-9d65-ba1fe63e1a6e" />
-
 * * * * * * * * * *
-
 ## Introduction
 Button_IXA is a composite function block for processing Boolean input data. The block serves as an interface for button inputs and provides standardized processing of switching states in automation systems.
-
-
 ``` ![Button_IXA](Button_IXA.svg)
 
 ## Interface Structure
@@ -33,7 +28,6 @@ Button_IXA is a composite function block for processing Boolean input data. The 
 
 ## Functionality
 The Button_IXA function block acts as a wrapper around the internal Button_IX block. During initialization (INIT), the configuration parameters are passed and the internal block is configured. Service requests (REQ) trigger the query of the button state. The IN adapter serves as the interface for the actual button input.
-
 
 ``` ## Technical Features
 - Uses ISOBUS-compliant types and adapters
@@ -63,9 +57,7 @@ Compared to simple Boolean input blocks, Button_IXA offers:
 - Adapter-based architecture for improved reusability
 
 ## 🛠️ Related Exercises
-
 * [Exercise_010a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a2_AX.md)]
-
 * [Exercise_010a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a3_AX.md)]
 
 ## Conclusion

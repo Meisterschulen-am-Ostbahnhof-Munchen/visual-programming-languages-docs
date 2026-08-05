@@ -1,13 +1,8 @@
 # AX_BOOL_TO_X
-
 <img width="1151" height="231" alt="image" src="https://github.com/user-attachments/assets/d7e1acea-074c-48d3-afa2-37176d3d2d1f" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_BOOL_TO_X function block is a composite function block used to convert a BOOL value into the AX adapter format. It enables the easy conversion of Boolean values into a standardized output format for further processing in automation systems.
-
-
 ![AX_BOOL_TO_X](AX_BOOL_TO_X.svg)
 
 ## Interface Structure
@@ -55,7 +50,6 @@ The function block has a simple state machine:
 Compared to other conversion blocks, AX_BOOL_TO_X stands out due to its specific focus on the AX adapter format. While general conversion blocks often support multiple output formats, this block offers an optimized solution for the specific AX interface.
 
 ## 🛠️ Related Exercises
-
 * [Exercise_001_AX_b](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX_b.md)]
 * [Exercise_002a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)]
 * [Exercise_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)]

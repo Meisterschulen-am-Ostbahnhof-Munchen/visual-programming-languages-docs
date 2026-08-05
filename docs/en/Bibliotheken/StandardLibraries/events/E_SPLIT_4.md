@@ -1,12 +1,8 @@
 # E_SPLIT_4
-
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
-
 * * * * * * * * * *
-
 ## Introduction
 The `E_SPLIT_4` is a basic function block according to IEC 61499 that splits a single input event (`EI`) into a sequence of four output events (`EO1` to `EO4`).
-
 ![E_SPLIT_4](E_SPLIT_4.svg)
 
 ## Interface Structure
@@ -16,11 +12,8 @@ The `E_SPLIT_4` is a basic function block according to IEC 61499 that splits a s
 
 ### **Event Outputs**
 - **EO1**: The first output event of the sequence.
-
 - **EO2**: The second output event of the sequence.
-
 - **EO3**: The third output event of the sequence.
-
 - **EO4**: The fourth output event of the sequence.
 
 ## Functionality
@@ -35,17 +28,12 @@ When an event arrives at input `EI`, the function block immediately triggers the
 4. Immediately afterward, `EO4` is triggered.
 
 ## Technical Features
-
 - **1-to-4 Sequence**: Splits an event into a guaranteed sequence of four events.
-
 - **Stateless**: The function block has no internal memory beyond a single transaction.
-
 - **Generic Block**: The functionality is provided by the generic class `GEN_E_SPLIT`.
 
 ## Application Scenarios
-
 - **Complex Initialization**: A `INIT` event can be used to initialize four different system components sequentially.
-
 - **Sequence Control**: Triggering four consecutive actions with a single trigger event.
 
 ## Conclusion

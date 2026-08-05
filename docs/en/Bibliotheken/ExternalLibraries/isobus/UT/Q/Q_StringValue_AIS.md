@@ -1,13 +1,8 @@
 # Q_StringValue_AIS
-
 ![Q_StringValue_AIS](./Q_StringValue_AIS.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **Q_StringValue_AIS** implements the "Command Change String Value" service according to ISO 11783-6 (Part 6, Section F.24). It is used to send a new string value to a connected device via an ISOBUS network. The block encapsulates all the logic for initialization, sending the command, and returning the result. The new string value is input via a unidirectional adapter (AIS), which provides the actual data.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -64,17 +59,12 @@ The function block internally contains an instance of the function block `Q_Stri
 
 3. **Feedback**: After processing is complete, the internal block outputs the events `INITO` and `CNF`, whose output data (`STATUS`, `s16result`) are directly passed to the corresponding outputs of the overall block.
 
-
 All the logic is implemented in the included `Q_StringValue` block; the `Q_StringValue_AIS` serves as a specialized package with an adapter input.
 
 ## Technical Features
-
 - The block complies with the **ISO 11783-6** (ISOBUS) specification, Part 6, "Command Change String Value" service.
-
 - The implementation uses a **unidirectional adapter** (`adapter::types::unidirectional::AIS`) that only transmits data from the host to the block. This simplifies integration into control systems where the new string value is provided asynchronously.
-
 - The initial value of `u16ObjId` is `ID_NULL` – this must be set to a valid object ID before first use.
-
 - The outputs `STATUS` and `s16result` provide the status and return value of the service as soon as the `CNF` event is triggered. The exact values are defined in the underlying service description.
 
 ## State Overview
@@ -82,19 +72,13 @@ All the logic is implemented in the included `Q_StringValue` block; the `Q_Strin
 The function block itself does not have an explicit internal state machine, as the state logic is entirely contained within `Q_StringValue`. Essentially, the following phases can be distinguished:
 
 - **Idle**: After starting or after a successful/failed execution – the function block waits for an INIT or an event on the adapter.
-
 - **Initialization**: Active through INIT until the INITO event is sent.
-
 - **Service Active**: After being triggered by the adapter, until the CNF event arrives.
-
 - **Errors**: In case of invalid parameters or communication errors, a corresponding status/return value is provided.
 
 ## Application Scenarios
-
 - **ISOBUS Command:** Changing a string parameter on an agricultural device (e.g., machine name, task, variable name) via the ISOBUS network.
-
 - **Control Systems:** Connection to a PLC or HMI that provides the new string value via an adapter (e.g., from a text box, a database field, or a communication channel).
-
 - **Test Environments:** Simulating the service for development and testing purposes.
 
 ## Comparison with Similar Function Blocks

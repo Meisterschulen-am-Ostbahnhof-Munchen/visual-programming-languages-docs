@@ -1,12 +1,8 @@
 # AUI_TO_AD
-
 ![AUI_TO_AD](./AUI_TO_AD.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AUI_TO_AD** is a composite function block (FB) that converts an AUI adapter (UINT data type) into an AD adapter (DWORD data type). It serves as a unidirectional conversion interface within an IEC 61499-based control application. The block is implemented as an encapsulation of the standard converter `F_UINT_TO_DWORD` from the library `iec61131::conversion` and enables adapter-based data transfer.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -58,26 +54,18 @@ The function block **AUI_TO_AD** operates as an encapsulation of the function bl
 The conversion is performed according to the IEC 61131-3 standard for the function `UINT_TO_DWORD`. The value range of the UINT input (0 to 65535) is mapped to the lower 16 bits of the DWORD output; the upper 16 bits are padded with zeros.
 
 ## Technical Features
-
 - The function block is implemented as a composite function block (FB) and does not contain its own state machines (ECCs). Its behavior is entirely determined by the integrated converter `F_UINT_TO_DWORD`.
-
 - The connection between the adapters and the internal converter is established via event and data connections.
-
 - The function block is designed for unidirectional data transfer – there is no reverse conversion from AD to AUI.
-
 - The package name (`packageName`) is `adapter::conversion::unidirectional`, indicating a clear structure of the conversion adapters.
 
 ## State Overview
 
 As a composite function block, **AUI_TO_AD** does not have its own state machine. The functional sequence is purely event-driven: An event at the input triggers the conversion, after which an event is generated at the output. There are no internal states between these events.
 
-
 - ## Application Scenarios
-
 - **Data Integration**: An AUI adapter provides a UINT value (e.g., from a sensor module) that is required in a system that processes only DWORD addresses (e.g., via an AD adapter).
-
 - **Protocol Adaptation**: If existing components work with different data types, this function block can be used as a simple converter between the adapter interfaces.
-
 - **Modularization**: Within a 4diac application, standardized conversion function blocks can be grouped as adapters to increase reusability.
 
 ## Comparison with Similar Function Blocks
@@ -91,7 +79,6 @@ The **AUI_TO_AD** function block provides a clean, adapter-based solution for co
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,14 +1,9 @@
 # AX_TOF
-
 <img width="962" height="255" alt="image" src="https://github.com/user-attachments/assets/b86d8399-ca0b-492c-b20c-52dde7069371" />
-
 * * * * * * * * * *
-
 ## Introduction
 **Important note: This function block requires only one event and no cyclic calls. It has no output ET and does not display the elapsed time.**
-
 The AX_TOF function block is a standard timer function block for off-delay timing. It implements a time delay when a signal is switched off and is controlled via adapter interfaces.
-
 
 ![AX_TOF](AX_TOF.svg)
 
@@ -28,14 +23,10 @@ The AX_TOF function block is a standard timer function block for off-delay timin
 
 ### **Adapters**
 - **IN** (Socket): Input adapter of type `adapter::types::unidirectional::AX`
-
 - Event: E1
-
 - Data: D1
 - **Q** (Plug): Output adapter of type `adapter::types::unidirectional::AX`
-
 - Event: E1
-
 - Data: D1
 
 ## Functionality
@@ -69,7 +60,6 @@ Compared to other timer blocks, AX_TOF offers:
 Comparison with [E_TOF](../../../../../../StandardLibraries/events/timers/E_TOF.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_020e_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e_AX.md)]
 
 ## Conclusion
@@ -78,8 +68,4 @@ The AX_TOF function block offers a reliable and standardized solution for turn-o
 ---
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]
-
-
-```

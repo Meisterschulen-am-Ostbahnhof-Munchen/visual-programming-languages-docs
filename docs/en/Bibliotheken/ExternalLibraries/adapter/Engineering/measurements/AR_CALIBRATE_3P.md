@@ -1,11 +1,8 @@
 # AR_CALIBRATE_3P
-
 ![AR_CALIBRATE_3P](./AR_CALIBRATE_3P.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **AR_CALIBRATE_3P** function block enables 3-point calibration of an analog input signal using adapters. It is specifically designed for joysticks that exhibit center drift and corrects this drift by linearizing between three reference points: minimum, mean, and maximum. The calibration points are saved and can be reset as needed.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -56,16 +53,13 @@ No direct data outputs – all outputs are provided via **plugs** (output adapte
 
 **Socket** (Input) | C_MAX | `adapter::types::unidirectional::AX` | Event for calibrating the maximum point. |
 
-
 ## Functionality
 
 The calibration is based on piecewise linear interpolation between three stored raw values (`X_MIN`, `X_MID`, `X_MAX`) and the corresponding reference values (`MIN_REF`, `MID_REF`, `MAX_REF`).
 
-
 1. **Calibration of the Points:**
 
 An event at one of the calibration inputs (`C_MIN.E1`, `C_MID.E1`, `C_MAX.E1`) saves the currently applied raw value (`X.D1`) to the corresponding stored value (`X_MIN.DO1`, `X_MID.DO1`, `X_MAX.DO1`). This requires that the supplied data signal (`C_MIN.D1`, etc.) is true.
-
 
 2. **Calculation of the Calibrated Value:**
 
@@ -77,56 +71,6 @@ As soon as an event arrives from the raw value adapter (`X.E1`), the function bl
 
 If the intervals are invalid (division by zero or negative range), `MIN_REF` is used.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-``
-
-```
-`````````````````````````````````````````````````````````````````````````````
 ... - If the raw value is above or equal to `X_MID.DI1`, the upper branch is calculated:
 
 `Y.D1 = MID_REF + (X.D1 – X_MID.DI1) * (MAX_REF – MID_REF) / (X_MAX.DI1 – X_MID.DI1)`
@@ -141,15 +85,10 @@ The calculated output value is clipped to the interval `[MIN_REF, MAX_REF]` to e
 
 The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`).
 
-
 ## Technical Features
-
 - **Bidirectional Adapters for Calibration Points:** The stored raw values (`X_MIN`, `X_MID`, `X_MAX`) are bidirectional adapters of type `AR2`. They can be both written to (during calibration) and read from (during calculation). This ensures that the calibration points are permanently retained as long as the connection to the parent resource exists.
-
 - **Event-Driven Calibration:** The calibration of the three points is not automatic but is triggered by specific events (`C_MIN`, `C_MID`, `C_MAX`). This allows for the time-separated acquisition of the reference points.
-
 - **Protection against invalid intervals:** The algorithms check whether the ranges of the stored raw values are positive. If not (e.g., if the system is not yet calibrated), safe default values are output.
-
 - **No self-calibration:** The function block does not store a history – the system must explicitly set the calibration points.
 
 ## State overview
@@ -168,7 +107,6 @@ The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`
 
 | **CAL_MAX** | Stores the current raw value as the maximum. Returns to IDLE automatically. |
 
-
 **Transition Conditions:**
 
 - `X.E1` → Start of calculation
@@ -178,11 +116,8 @@ The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`
 - `SET`, `X_MIN.EI1`, `X_MID.EI1`, `X_MAX.EI1` → No change of state (remains in IDLE)
 
 ## Application Scenarios
-
 - **Joystick Calibration:** A joystick with an analog output (e.g., 0-10V) exhibits component-related deviations in the center and at the End stops. The operator moves the joystick to the three positions (Min, Center, Max) and triggers the calibration events via pushbuttons. Afterwards, `Y` delivers a linearized value normalized to the desired target values.
-
 - **Analog Potentiometer:** A sliding potentiometer showing signs of wear can be corrected by 3-point calibration.
-
 - **Sensors with Offset and Scaling Error:** For example, a pressure sensor with non-linear behavior between 0%, 50%, and 100% of its range.
 
 ## Comparison with Similar Function Blocks

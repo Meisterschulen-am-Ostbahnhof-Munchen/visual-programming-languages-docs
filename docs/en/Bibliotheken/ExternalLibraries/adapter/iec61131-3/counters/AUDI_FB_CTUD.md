@@ -1,12 +1,8 @@
 # AUDI_FB_CTUD
-
 ![AUDI_FB_CTUD](./AUDI_FB_CTUD.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **AUDI_FB_CTUD** is an up/down counter with a value range for unsigned 32-bit integers (UDINT). It is implemented as a pure adapter version, meaning all inputs and outputs are provided via adapter interfaces. The function block encapsulates the standardized IEC 61131 function block `FB_CTUD_UDINT` and extends its functionality with an adapter-based interface. All output adapters are cyclically updated upon each triggering event (CU, CD, R, LD, or PV). If change-triggered (edge-sensitive) triggering is required, the use of a `AX_D_FF` as a filter block is recommended.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -57,17 +53,12 @@ There are no direct data outputs at the top level. The result data is output via
 
 The `AUDI_FB_CTUD` internally uses the `FB_CTUD_UDINT` function block from the IEC 61131 library. All events received via the sockets (from `CU`, `CD`, `R`, `LD`, and `PV`) are routed to the `REQ` input of the internal function block. The corresponding data is routed to the appropriate inputs (`CU`, `CD`, `R`, `LD`, `PV`). The internal function block processes the request and updates its outputs. Upon successful processing, the event `CNF` is triggered, and simultaneously, the output adapters `QU`, `QD`, and `CV` are supplied with their new data and events.
 
-
 The internal function block processes the request and updates its outputs. **Important:** This function block fires the output events (`QU.E1`, `QD.E1`, `CV.E1`) during **every** processing of an incoming event. No edge detection is performed.
 
 ## Technical Features
-
 - **Pure Adapter Interface:** This function block has no traditional inputs/outputs, but only adapters (sockets and plugs). This enables flexible integration into adapter-based automation architectures.
-
 - **Use of Unidirectional Adapters:** The adapters `AX` and `AUDI` are defined as unidirectional. This ensures a clear direction for data and event flows.
-
 - **Encapsulation of the IEC 61131 standard:** The counting logic conforms to the standardized `CTUD` function block, which increases portability and maintainability.
-
 - **Range:** The counter value is implemented as `UDINT` (unsigned, 0…2³²−1).
 
 ## State Overview
@@ -93,13 +84,9 @@ The internal `FB_CTUD_UDINT` cycles through the following states, depending on t
 | `QD` = TRUE | Current value ≥ `PV` |
 
 ## Application Scenarios
-
 - **Piece Counter in Production Plants:** Recording of products on a conveyor line, using `CU` and `CD` for accurate counting during forward and reverse movements.
-
 - **Inventory Management:** Counting inbound and outbound shipments, with reset during inventory and load for target values.
-
 - **Event Counter in Building Automation:** Recording of passenger flows (e.g., in elevators) with an additional reset function.
-
 - **Adapter-based systems:** Integration into distributed control environments based on the adapter concept of the 4diac IDE (e.g., AUTOSAR-like communication).
 
 ## Comparison with similar components
@@ -125,8 +112,4 @@ The `AUDI_FB_CTUD`is a high-performance up/down counter whose adapter-based inte
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

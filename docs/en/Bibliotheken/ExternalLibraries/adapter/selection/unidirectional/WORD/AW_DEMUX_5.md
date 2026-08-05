@@ -1,13 +1,8 @@
 # AW_DEMUX_5
-
 ![AW_DEMUX_5](./AW_DEMUX_5.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AW_DEMUX_5** is a generic demultiplexer for unidirectional AW adapters. It distributes the signal present at an input adapter to one of five output adapters, depending on a numerical index. This block is used when data from a source needs to be selectively routed to multiple sinks.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -19,7 +14,6 @@ The function block **AW_DEMUX_5** is a generic demultiplexer for unidirectional 
 | REQ | Event | Set Index K |
 
 The event input **REQ** triggers the demultiplex operation and uses the current value of the data input `K`.
-
 
 ### **Event Outputs**
 
@@ -86,13 +80,9 @@ The function block operates according to the demultiplex principle:
 The data connection remains open until a new REQ with a different index arrives. For invalid indices, no action is performed, or an undefined state occurs (depending on the implementation).
 
 ## Technical Features
-
 - **Generic Type**: The function block is declared as a generic FB (`GEN_AW_DEMUX`), allowing it to be reused for different AW adapter configurations.
-
 - **Unidirectional Adapter**: The adapters used are unidirectional, meaning data flows in only one direction (Socket → Plug).
-
 - **Index Limits**: The index `K` is of type `UINT`; values from 1 to 5 are recommended. Values outside this range do not result in any defined behavior.
-
 - **No Data Outputs**: The function block does not output any data itself but merely forwards the adapter connections.
 
 ## State Overview
@@ -100,25 +90,17 @@ The data connection remains open until a new REQ with a different index arrives.
 The function block does not have an explicitly modeled state machine. Its internal behavior can be described by the following implicit state machine:
 
 - **IDLE**: Waiting for a **REQ** event.
-
 - **SELECT**: Upon **REQ**, the index `K` is evaluated, and the corresponding connection is established.
-
 - **DONE**: After successful switching, **CNF** is sent, and the function block returns to the IDLE state.
 
 ## Application Scenarios
-
 - **Signal Distribution**: A sensor signal (e.g., an adapter for an analog value) can be selectively sent to different control units.
-
 - **Routing**: In a networked automation environment, a data stream can be selectively routed to five different downstream function blocks.
-
 - **Test Environments**: Switching between different test paths without changing the wiring.
 
 ## Comparison with Similar Function Blocks
-
 - **Standard Demultiplexers**: Conventional demultiplexers usually work with data lines and have separate output events. This function block uses adapters, which enables the encapsulation of complex data structures.
-
 - **AW_SELECT**: An analog multiplexer that switches multiple inputs to one output. AW_DEMUX_5 is the inverse function.
-
 - **MUX/DEMUX with Event Control**: Many demultiplexers have separate enable inputs; here, activation occurs via the **REQ** event, enabling synchronous processing.
 
 ## Conclusion
@@ -128,7 +110,6 @@ The **AW_DEMUX_5** is a specialized demultiplexer for unidirectional AW adapters
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

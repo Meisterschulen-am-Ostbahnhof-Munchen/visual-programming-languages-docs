@@ -1,11 +1,8 @@
 # SET_INT
-
 ![SET_INT](./SET_INT.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **SET_INT** is used to write a value of data type `INT` from an input directly into an InOut variable. This block is a simple, event-driven function block and is typically used to set global parameters or variables of other function blocks via a defined event pulse. Its functionality is reduced to the minimal task of value assignment.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -80,7 +77,6 @@ The FB has a single ECC state (`REQ`) that executes the action and immediately t
 | `REQ` | Execution of the algorithm `REQ` (OUT := IN) and sending of `CNF` | Event `REQ` |
 
 ## Application Scenarios
-
 - **Setting a Constant Value**
 
 An external sensor or logic provides a setpoint (`IN`), which is transferred to a global setpoint variable (`OUT`) at a clock signal (`REQ`).
@@ -89,13 +85,11 @@ An external sensor or logic provides a setpoint (`IN`), which is transferred to 
 
 When an application starts, `SET_INT` can be used to set multiple InOut variables to defined initial values.
 
-
 - **Parameter Override**
 
 A higher-level controller or user interface overrides the current value of another function block upon a specific event, without having to modify the function block itself (the InOut connection allows direct access).
 
 ## Comparison with Similar Function Blocks
-
 - **SET_BOOL / SET_REAL**
 
 Similar to `SET_INT`, but for the data types `BOOL` and `REAL`, respectively. The functionality is identical.

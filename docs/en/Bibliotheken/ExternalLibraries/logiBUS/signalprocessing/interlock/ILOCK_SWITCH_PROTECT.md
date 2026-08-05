@@ -1,12 +1,8 @@
 # ILOCK_SWITCH_PROTECT
-
 ![ILOCK_SWITCH_PROTECT](./ILOCK_SWITCH_PROTECT.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **ILOCK_SWITCH_PROTECT** function block implements a prioritized interlock between two switching directions – e.g., up/down, forward/backward, or right/left. It features a configurable dead-time delay that prevents immediate re-switching after a change of direction. The block evaluates the two binary inputs and outputs a switching signal only if the last active input is still active after the dead-time has expired. This prevents momentary oscillations and protects connected actuators.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -82,24 +78,16 @@ Similarly: `EI_DOWN[NOT DI_DOWN]` or `EI_UP[DI_UP]` initiates the protection sta
 5. **EVAL** – Evaluation after the protection time.
 
 - Based on the current inputs, the following is determined:
-
 - `DI_UP AND NOT DI_DOWN` → **UP**
-
 - `DI_DOWN AND NOT DI_UP` → **DOWN**
-
 - `NOT DI_UP AND NOT DI_DOWN` → **STOP**
-
 - `DI_UP AND DI_DOWN` (both active simultaneously) → **PROTECT** again (invalidation case)
 
 The event outputs are triggered along with the respective executed algorithm. In the UP, DOWN, and PROTECT states, **both** event outputs (EO_UP and EO_DOWN) are sent sequentially – this is a specific behavior of this function block.
 
-
 ## Technical Features
-
 - **Adapter-Based Timer Implementation**: The protection delay is implemented using the standardized IEC61499 adapter `ATimeOut`. This makes the time control platform-independent and allows it to be used in various runtime environments.
-
 - **Dead Time Preset**: The time `DT_PROTECT` is set in the algorithms for the UP, DOWN, and STOP states before the timer is started, if applicable. This ensures that the current time configuration always applies, even if the protection state is repeatedly entered.
-
 - **Lockout for Simultaneous Requests**: If both inputs (`DI_UP` and `DI_DOWN`) are simultaneously requested, the timer is locked.If both conditions are TRUE, the function block remains in the protection state until the request is resolved.
 
 ## State Overview
@@ -119,11 +107,8 @@ The event outputs are triggered along with the respective executed algorithm. In
 | **EVAL** | After the protection time has elapsed, the inputs are evaluated | – | – | – (state change) |
 
 ## Application Scenarios
-
 - **Drive Control**: Prevents rapid changes of direction in motors that require a mechanical or electrical dead time (e.g., fans, conveyor belts, sliding gates).
-
 - **Valve or Damper Control**: Ensures that a defined pause is observed before a change of direction (opening/closing) to prevent pressure surges or cavitation.
-
 - **Safety-Oriented Interlock**: The function block can be used to debounce competing control signals and only accept the last pending command after a defined hold time.
 
 ## Comparison with Similar Function Blocks
@@ -139,7 +124,6 @@ The event outputs are triggered along with the respective executed algorithm. In
 | **ILOCK_SWITCH_PROTECT** | Configurable protection delay, evaluation after the delay, handling of simultaneous requests |
 
 Compared to simple latches, **ILOCK_SWITCH_PROTECT** offers controlled switching, which is particularly advantageous with inductive loads or mechanically slow systems.
-
 
 ## Conclusion
 

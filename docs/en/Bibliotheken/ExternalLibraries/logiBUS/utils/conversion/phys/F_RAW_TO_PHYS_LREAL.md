@@ -1,13 +1,9 @@
 # F_RAW_TO_PHYS_LREAL
-
 ![F_RAW_TO_PHYS_LREAL](./F_RAW_TO_PHYS_LREAL.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `F_RAW_TO_PHYS_LREAL` converts a raw ISOBUS integer value (UDINT) into a physical floating-point value (LREAL).
-
 The conversion follows the standardized ISOBUS formula:
-
 `display = (raw + offset) * scale`
 
 The block is optimized for use in agricultural control systems (ISOBUS) and uses the provided parameters from a pool of numeric objects.
@@ -74,13 +70,9 @@ The function block is activated via the event `REQ`. The input data is read in, 
 Type conversion ensures that large UDINT values (e.g., 4,000,000,000) can be processed without information loss.
 
 ## Technical Features
-
 - **Enhanced Accuracy**: The intermediate step via LINT prevents overflows during addition with large raw values and negative offsets.
-
 - **ISOBUS Compliance**: The formula `display = (raw + offset) · scale` complies with the ISOBUS standard ISO 11783.
-
 - **Parameterization via Structure**: All conversion coefficients are provided via the structure `NumericObjectPool_S`, making the function block universally applicable to various sensors and devices.
-
 - **Single-Cycle Processing**: The calculation is performed without state storage within a single cycle.
 
 ## State Overview
@@ -91,11 +83,8 @@ The function block does not have an internal state machine, as it is a pure tran
 2. At `REQ` → calculation → output of the result → trigger `CNF` → return to idle state
 
 ## Application Scenarios
-
 - **Agricultural Engineering**: Conversion of ISOBUS raw values (e.g., speeds, pressures, flow rates) into physical units such as °/s, bar, or l/min.
-
 - **Vehicle Control**: Processing of CAN data from tractors, harvesters, or application systems.
-
 - **Simulation**: Replication of ISOBUS sensor data in test environments where raw values from a database with different scales are processed.
 
 ## Comparison with Similar Function Blocks
@@ -113,7 +102,6 @@ The function block does not have an internal state machine, as it is a pure tran
 | `F_RAW_TO_PHYS_INT` | UINT | REAL | Only positive raw values, smaller range |
 
 This function block offers the highest precision and is recommended for applications requiring large ranges or fine increments.
-
 
 ## Conclusion
 

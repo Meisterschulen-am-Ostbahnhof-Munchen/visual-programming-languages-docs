@@ -1,4 +1,3 @@
 # Numerical Index (UT)
-
 Here you will find all exercises from the `UT` workspace in ascending order.
 ...

@@ -1,35 +1,24 @@
 # E_SR
-
 ## 🎧 Podcast
-
 ![E_SR_ecc](./E_SR_ecc.svg)
-
 * [IEC 61499: The E_SR Function Block Decoded – Simplicity Meets Event Control ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-Der-E_SR-Baustein-entschlsselt--Einfachheit-trifft-Ereignissteuerung-e3682bo)
-
 * [Decoding the E_SR Function Block: The Unsung Hero of Industrial Automation ](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Decoding-the-E_SR-Function-Block-The-Unsung-Hero-of-Industrial-Automation-e3681qo)
-
 ## Introduction
 The `E_SR` (Event-driven SR Flip-Flop) is an event-driven, bistable function block according to IEC 61499. It serves as a basic memory element controlled by separate "Set" and "Reset" events. Its output, `Q`, retains its state until an opposing event occurs.
-
 
 ![E_SR](E_SR.svg)
 
 ## Interface Structure
 
 ### **Event Inputs:**
-
 - **S (Set)**: Sets the output `Q` to `TRUE`.
-
 - **R (Reset)**: Sets the output `Q` to `FALSE`.
 
 ### **Event Outputs:**
-
 - **EO (Event Output)**: Triggered when the state of `Q` changes.
-
 - **Associated Data**: `Q`
 
 ### **Data Outputs:**
-
 - **Q**: The current state of the flip-flop (data type: `BOOL`).
 
 ## Functionality
@@ -46,29 +35,18 @@ The `E_SR` block functions as a simple latch:
 According to **DIN EN 61499-1 (Table A.1, Note 8)**, the implementation of this function block is identical to [E_RS](E_RS.md)]. Both function blocks (`E_SR` and `E_RS`) exist to maintain consistency with the types in IEC 61131-3, even though IEC 61499 does not have an inherent "dominance" of events, as is the case with level-controlled inputs in classic PLC programming.
 
 - **Comparison to IEC 61131-3**: See [SR (Bistable, set first)](../../Vergleich/IEC61131_3/SR_ALT.md). While in IEC 61131-3 the `SR` function block has a defined "set dominance" (if S and R are TRUE simultaneously, S wins), in IEC 61499 the behavior with closely spaced events depends on the processing order of the runtime environment (ECC). Since events are transient, there is no permanent conflict between two static signals.
-
 - **Functional Identity**: `E_SR` and `E_RS` are technically identical. Their graphical representation and naming conventions simply follow established naming conventions to aid developers.
-
 - **Change Detection**: The `EO` output is only triggered by an actual state change.
 
 ## Application Scenarios
-
 - **Start/Stop Logic**: A "Start" button is connected to `S`, and a "Stop" button to `R`, to control the state of a machine.
-
-
 - **Start/Stop Logic**: A "Start" button is connected to `S`, and a "Stop" button to `R`, to control the state of a machine.
-
-
 - **Start/Stop Logic**: - **Error Storage**: An error event sets the function block (`S`), which stores the error state until it is explicitly acknowledged by an operator or another process (`R`).
-
 - **Mode Storage**: Stores the current operating mode of a system (e.g., "Manual" vs. "Automatic").
 
 ## Related Function Blocks
-
 - **[E_RS](E_RS.md)**: Functionally identical to `E_SR`. The only difference is the graphical arrangement of the `S` and `R` connections on the symbol.
-
 - **`E_D_FF`**: Also stores a state, but on a clock-based basis. `E_D_FF` takes the value from the `D` input when a `CLK` event occurs.
-
 
 `E_D_FF` ## 🛠️ Related exercises
 

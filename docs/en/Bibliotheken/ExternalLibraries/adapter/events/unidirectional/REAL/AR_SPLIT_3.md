@@ -1,19 +1,13 @@
 # AR_SPLIT_3
-
 ![AR_SPLIT_3](./AR_SPLIT_3.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AR_SPLIT_3** serves as a generic splitter for adapter connections. It distributes an incoming data and event stream (via a `AR` adapter) to three separate, identically structured output adapters. This enables efficient reuse of information in automation processes without duplicating the logic.
-
 ## Interface Structure
 
 ### **Event Inputs**
 
 None – the block has only adapter interfaces. Events are transmitted implicitly via the socket `IN` (of type `AR`).
-
 
 ### **Event Outputs**
 
@@ -39,42 +33,27 @@ Plug | `OUT2`| `adapter::types::unidirectional::AR` | Second outgoing adapter (D
 
 Plug | `OUT3`| `adapter::types::unidirectional::AR` | Third outgoing adapter (Destination 3). |
 
-
 ## Functionality
 
 This function block implements a **1:3 distribution** at the adapter level. A `AR` adapter (unidirectional) connected to `IN` is internally routed to the three output adapters `OUT1`, `OUT2`, and `OUT3`.
 
 Every event or data packet received at `IN` is simultaneously forwarded to all three outputs. The distribution occurs without delay and without data modification. The function block is generic and can be used with any `AR` adapter profile – its internal logic automatically adapts to the structure of the adapter type used.
 
-
-
-
-
-
-
 ... ## Technical Features
 
 - **Generic Type**: The function block (FB) is designed as a generic block (`GEN_AR_SPLIT`) and can be used with different `AR` adapter definitions (unidirectional), provided the interfaces are compatible.
-
 - **Unidirectional Adapters**: Both inputs and outputs are unidirectional, meaning the data/event direction is fixed (from sender to receiver). Feedback is not possible with this block.
-
 - **Easy Scaling**: The outputs are split without additional configuration. For different numbers of outputs, variants such as `AR_SPLIT_2` or a configurable splitter (`AR_SPLIT_N`) can be used.
-
 - **No State Change**: The block has no internal memory and no state machine – every event is replicated immediately and completely.
-
 
 ## State Overview
 
 The function block is **stateless** (combinatorial). There are no internal states or sequential processes. Distribution occurs purely through the connection of the adapter signals.
 
 ## Application Scenarios
-
 - **Distributing sensor data** to multiple parallel processing logics (e.g., evaluation, visualization, logging).
-
 - **Controlling multiple actuator groups** with an identical control signal (e.g., parallel valve or motor control).
-
 - **Splitting a control event** into different function blocks without copying the source logic.
-
 - **Debugging and Monitoring**: A signal can be routed to a physical receiver and, in parallel, to a monitoring component.
 
 ## Comparison with Similar Function Blocks

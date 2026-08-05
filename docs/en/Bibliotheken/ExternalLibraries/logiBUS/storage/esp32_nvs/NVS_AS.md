@@ -1,12 +1,8 @@
 # NVS_AS
-
 ![NVS_AS](./NVS_AS.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The function block **NVS_AS** serves as an interface for reading and writing SINT (signed integer) data in non-volatile storage (NVS). Storage is performed using a user-defined key (KEY). The block extends access to the NVS with an adapter interface (unidirectional AS type), allowing values to be received and sent via standardized adapter connections. This enables modular and reusable connectivity to storage functions in IEC 61499 applications.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -67,9 +63,7 @@ After an INIT event, the internal NVS block is initialized. Immediately afterwar
 2. **Writing and Reading via Adapters**
 
 - An event (`E1`) with an associated data value (`D1`) received via the **AS_IN** adapter triggers a **SET** operation in the NVS. The value is stored under the KEY specified during INIT.
-
 - After a successful SET, the stored value is automatically output via **AS_OUT** (through the connection between `NVS.SETO` and `AS_OUT.E1`).
-
 - Similarly, a reread can be triggered by an INIT event or by the internal process after a successful SET. A separate external read event is not provided; the value is always updated after a change or during initialization.
 
 The function block therefore operates as a **read and write memory access with automatic feedback of the current value**.
@@ -86,7 +80,6 @@ After the INIT event, a GET request is executed immediately, so the function blo
 - **Type Restriction to SINT**
 
 The function block stores and loads only SINT values. Separate versions are required for other data types (e.g., INT, REAL, STRING).
-
 
 - **Error Handling**
 
@@ -109,9 +102,7 @@ The internal NVS module has its own state machine. The following processes are r
 
 A new INIT event can force a re-initialization at any time.
 
-
 ## Application Scenarios
-
 - **Persistent Device Parameters**
 
 Storing configuration values (e.g., brightness, delay time) in the non-volatile memory of an ESP32, automatically loading them on restart.
@@ -125,7 +116,6 @@ Remembering the last state (e.g., counter reading, production parameters) even a
 Integration into a chain of adapters where one module sets values and another reads them.
 
 ## Comparison with Similar Modules
-
 - **NVS (Direct)**
 
 The `NVS` module offers the same functionality, but without an adapter interface. It requires separate event and data lines. `NVS_AS` simplifies integration into adapter-oriented architectures.
@@ -141,12 +131,7 @@ In some systems, retain variables are also persistent. `NVS_AS` relies on low-le
 ## Conclusion
 The **NVS_AS** function block provides a practical, adapter-based encapsulation of non-volatile memory for SINT values. By combining initialization logic, automatic value feedback, and an adapter interface, it is ideally suited for modular IEC 61499 projects that require persistent storage with minimal wiring. The limitation to the SINT type and the automatic GET post-initialization should be noted, but simultaneously simplify handling in many standard applications.
 
-
 # Conclusion ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-
-
-```

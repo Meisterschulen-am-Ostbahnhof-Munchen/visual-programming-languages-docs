@@ -1,12 +1,8 @@
 # SPLIT_AL_INTO_AQ
-
 ![SPLIT_AL_INTO_AQ](./SPLIT_AL_INTO_AQ.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **SPLIT_AL_INTO_AQ** is a composite function block (FB) that splits an incoming LWORD value (via a `AL` adapter) into 32 separate 2-bit values and outputs each of these via its own `AQ` adapter (quarter byte). The splitting occurs synchronously with an event provided by the input adapter. The function block serves as an interface between a wide data word and several narrow, event-driven sub-segments.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,9 +29,7 @@ No direct data outputs. The 2-bit data values are output via the outgoing adapte
 
 Each adapter has one event channel and one data channel (`E1`, `D1`).
 
-
 - The `AL` adapter provides an event (`E1`) and the LWORD data value (`D1`).
-
 - The `AQ` adapters receive an event (`E1`) and the associated 2-bit value (`D1`).
 
 ## Functionality
@@ -51,13 +45,9 @@ The module operates in the following steps:
 The entire process is strictly event-driven – a new input event updates all outputs at once.
 
 ## Technical Features
-
 - **Use of D flip-flops**: The `E_D_FF_ANY` function blocks ensure that the output data is stable only after the clock event and is not affected by intermediate values.
-
 - **Parallelization**: All 32 partial values are calculated and output in a single step. The function block is therefore deterministic and requires no loops or sequential processing.
-
 - **Adapter-based interface**: The function block communicates exclusively via IEC 61499 adapter interfaces. This enables a clean separation of event and data flows and facilitates reuse in different contexts.
-
 - **Use of 32-way chaining**: The vertical arrangement of the flip-flops and adapters in the network shows a systematic but very extensive structure – sufficient performance (e.g., propagation delay of the common clock signal) must be ensured during implementation.
 
 ## State Overview
@@ -65,18 +55,13 @@ The entire process is strictly event-driven – a new input event updates all ou
 The component does not contain its own state machine. The internal functionality results from the combination of:
 
 - **one** `SPLIT_LWORD_INTO_QUARTERS` (combinational partitioning)
-
 - **32** `E_D_FF_ANY` (storage elements with set/reset states)
 
 Each flip-flop stores the last loaded 2-bit value. A new input event overwrites all 32 values simultaneously.
 
-
 ## Application Scenarios
-
 - **Decomposition of a Fieldbus Data Telegram**: An LWORD contains multiple status or control bits that need to be distributed to separate actuators or sensors.
-
 - **Parallelization of 2-Bit Signals**: When connecting BCD or quadrature encoders, multiple 2-bit pieces of information can be transmitted compactly and then processed separately.
-
 - **Bridge between Wide and Narrow Data Buses**: If a system uses 64-bit words, but the target components only have 2-bit interfaces, this function block offers a simple way to split the data.
 
 ## Comparison with Similar Function Blocks
@@ -92,8 +77,6 @@ Each flip-flop stores the last loaded 2-bit value. A new input event overwrites 
 | `SPLIT_LWORD_INTO_WORDS` (hypothetical) | 16-bit adapter | 4 | Event |
 
 This component is specifically optimized for the fine granularity of 2-bit segments and utilizes event-driven IEC 61499 adapter technology. The main difference compared to simpler split devices lies in the number of outputs (32 instead of the typical 4 or 8) and the use of flip-flops for stable output.
-
-
 
 This component is specifically optimized for the fine granularity of 2-bit segments and utilizes event-driven IEC 61499 adapter technology. ## Conclusion
 

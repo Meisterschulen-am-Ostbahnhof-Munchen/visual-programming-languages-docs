@@ -1,11 +1,8 @@
 # ButtonActivationCode
-
 ![ButtonActivationCode](./ButtonActivationCode.svg)
-
 * * * * * * * * * *
 ## Introduction
 ButtonActivationCode is a collection of global constants for processing button activations in ISOBUS-compatible systems. These constants define various states and events that can occur when buttons are pressed and are primarily used in agricultural applications.
-
 ## Interface Structure
 ### **Event Inputs**
 *No event inputs available*
@@ -29,7 +26,6 @@ The ButtonActivationCode constants define various button activation states as st
 - **Transmission Repetition Rate**: On key press/release and every 200 ms while the key is held
 - **Lockable Keys**: Do not repeat while the key is held
 - **ISOBUS Compatibility**: Specifically designed for ISOBUS Virtual Terminal (VT) systems
-
 - **Structured Constants**: Uses a structured data type with code values and additional flags
 
 ## State Overview

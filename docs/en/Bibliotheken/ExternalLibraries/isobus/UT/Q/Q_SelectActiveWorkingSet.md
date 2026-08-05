@@ -1,12 +1,8 @@
 # Q_SelectActiveWorkingSet
-
 ![Q_SelectActiveWorkingSet](https://user-images.githubusercontent.com/116869307/214148333-97dd868b-07dc-4e3c-9dcf-aa68d76603f2.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_SelectActiveWorkingSet** is a standards-compliant function block for controlling active workspaces in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.64) specification for VT systems from version 6 onwards.
-
 ![Q_SelectActiveWorkingSet](Q_SelectActiveWorkingSet.svg)
 
 ## Interface Structure
@@ -24,9 +20,7 @@ The **Q_SelectActiveWorkingSet** is a standards-compliant function block for con
 
 ### **Data Outputs**
 - `STATUS` (STRING): Operational status message
-
 - `pau8OldName` (USINT[8]): ISO NAME of the previous workspace
-
 - `s16result` (INT): ISO-compliant result code
 
 ## Functionality
@@ -34,15 +28,12 @@ The **Q_SelectActiveWorkingSet** is a standards-compliant function block for con
 1. **Initialization**:
 
 - `INIT` without parameters
-
 - `INITO` confirms operational readiness
 
 2. **Workspace change**:
 
 - `REQ` with 8-byte ISO NAME of the target workspace
-
 - Performs context change
-
 - `CNF` returns operational status and previous workspace
 
 3. **ISO NAME format**:
@@ -89,10 +80,8 @@ The **Q_SelectActiveWorkingSet** is a standards-compliant function block for con
 -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
-
 - **Multi-Client Systems**: Device switching
 - **User Profiles**: Individual work environments
-
 - **Process Phases**: Operating mode switching
 - **Diagnostic Management**: Service/Normal mode
 

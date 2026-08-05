@@ -1,12 +1,8 @@
 # AX_OR_6
-
 <img width="963" height="403" alt="image" src="https://github.com/user-attachments/assets/69d7eff1-3373-49b6-877a-d54f351451e1" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_OR_6 is a generic function block for calculating a logical OR operation with six inputs. This block is used to process Boolean signals in automation systems and outputs the result of the OR operation via an adapter output.
-
-
 ![AX_OR_6](AX_OR_6.svg)
 
 ## Interface Structure
@@ -29,7 +25,6 @@ No data outputs available
 - **IN3** - OR Input 3 (Type: adapter::types::unidirectional::AX)
 - **IN4** - OR Input 4 (Type: adapter::types::unidirectional::AX)
 - **IN5** - OR Input 5 (Type: adapter::types::unidirectional::AX)
-
 - **IN6** - OR input 6 (Type: adapter::types::unidirectional::AX)
 
 **Output adapter:**
@@ -42,17 +37,13 @@ The function block continuously calculates the logical OR operation of all six i
 ## Technical Features
 - Generic function block with the class 'GEN_AX_OR'
 - Uses unidirectional AX adapters for signal transmission
-
 - Six independent inputs for flexible applications
-
 - Real-time processing without event control
 
 ## State Overview
 The function block has no internal state and operates stateless. The output is continuously calculated based on the current input values.
 
-
 ## Application Scenarios
-
 - Safety circuits with multiple emergency stop buttons
 - Monitoring systems with multiple sensors
 - Control logic with alternative activation conditions

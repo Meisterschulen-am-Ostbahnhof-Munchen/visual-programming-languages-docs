@@ -1,12 +1,8 @@
 # AX_FB_TP
-
 <img width="962" height="243" alt="image" src="https://github.com/user-attachments/assets/d92dd0e6-fa14-499e-8a97-5c1432d0df3e" />
-
 * * * * * * * * * *
-
 ## Introduction
 **Important note: This function block only functions correctly if it is called cyclically.**
-
 AX_FB_TP is a standardized timer function block according to IEC 61131-3 that generates a pulse of defined length. A rising edge at the input generates an output pulse for the specified duration.
 
 ![AX_FB_TP](AX_FB_TP.svg)
@@ -14,7 +10,6 @@ AX_FB_TP is a standardized timer function block according to IEC 61131-3 that ge
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **REQ** (Event): Normal Execution Request (takes the value from PT); Calls the function block (must be called cyclically)
 
 ### **Event Outputs**
@@ -48,7 +43,6 @@ The AX_FB_TP block functions as a pulse generator:
 ## Technical Features
 - Implemented based on the IEC 61131-3 TP standard
 - Uses unidirectional adapters for clean encapsulation in adapter-based architectures
-
 - Not retriggerable during the active pulse phase
 - Precise timing control through the use of the TIME data type
 
@@ -62,13 +56,9 @@ The AX_FB_TP block functions as a pulse generator:
 
 4. **Waiting for Reset**: If IN is still TRUE, Q remains FALSE and ET remains at PT until IN becomes FALSE again.
 
-
 ## Application Scenarios
-
 - Generation of time-limited control signals (e.g., start pulse for a motor)
-
 - Time-limiting of operating processes
-
 - Generation of defined signal pulses in process automation
 
 ## ⚖️ Comparison with similar function blocks
@@ -76,7 +66,6 @@ The AX_FB_TP block functions as a pulse generator:
 Compared to [AX_PULSE](../../events/unidirectional/BOOL/timers/AX_PULSE.md)], AX_FB_TP offers the classic IEC 61131-3 TP characteristic, including the ET status output.
 
 ## 🛠️ Related Exercises
-
 * [Exercise_020f2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)]
 
 ## Conclusion

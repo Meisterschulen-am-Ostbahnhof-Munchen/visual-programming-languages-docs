@@ -1,13 +1,8 @@
 # Q_ObjHideShow_AX
-
 ![Q_ObjHideShow_AX](./Q_ObjHideShow_AX.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **Q_ObjHideShow_AX** serves as an adapter wrapper for the existing function block `Q_ObjHideShow`. It allows the consistent hiding and showing of an object (Hide/Show) via a unidirectional AX adapter. The visibility value is passed as a Boolean state (`0` = hidden, `1` = shown).
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -48,7 +43,6 @@ This function block does not have its own data outputs. The old visibility value
 
 | Plug | `qOldVisible` | `unidirectional::AB` | Output of the previous visibility value (0/1/0xFF) |
 
-
 ## Functionality
 
 1. The function block is initialized via the event `INIT`, and the object ID (`u16ObjId`) is passed to the internal function block `Q_ObjHideShow`.
@@ -60,11 +54,8 @@ This function block does not have its own data outputs. The old visibility value
 4. The output `INITO` signals the successful completion of the initialization.
 
 ## Technical Features
-
 - **Adapter Encapsulation:** The function block uses the standardized adapter types `AX` (for input) and `AB` (for output), allowing seamless integration into adapter-based ISOBUS networks.
-
 - **Reuse:** The actual logic is implemented by the proven FB `Q_ObjHideShow` – the wrapper simply adds the adapter interface.
-
 - **Boolean Control:** The visibility value is transmitted as a simple Boolean value (via the `AX` adapter), which simplifies its use in typical on/off scenarios.
 
 ## State Overview
@@ -72,11 +63,8 @@ This function block does not have its own data outputs. The old visibility value
 The function block does not have an explicitly visible state machine. It undergoes an initialization step (INIT → INITO) and then reacts cyclically to incoming events at socket `qVisible` (REQ → CNF). However, the internal function block `Q_ObjHideShow` can maintain an implicit state (e.g., the currently displayed visibility).
 
 ## Application Scenarios
-
 - Showing/hiding controls on an ISOBUS terminal.
-
 - Controlling the display of symbols or text fields depending on user input or system states.
-
 - A unified interface for all objects that are to be connected via adapters.
 
 ## Comparison with similar function blocks

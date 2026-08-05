@@ -1,13 +1,8 @@
 # AX_TP_RETRIG
-
 ![AX_TP_RETRIG](./AX_TP_RETRIG.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **AX_TP_RETRIG** function block is a standardized timer function block (pulse) in a retriggerable configuration. It generates a pulse of duration **PT** on the adapter output **Q** as soon as the input signal **IN** receives a rising edge (event REQ). The pulse is restarted (retriggered) with each new REQ event. A reset via the event input **R** advances the pulse duration **PT** and resets the timer.
-
 The function block is designed for use in IEC 61499-based automation systems and utilizes the AX adapter interface for efficient, unidirectional signal transmission.
 
 ## Interface Structure
@@ -59,13 +54,9 @@ No dedicated data outputs – pulse status is output via the **Q** adapter (data
 5. **Reset** – The **R** event immediately terminates a running pulse and sets **Q.D1** to `FALSE`. Simultaneously, **PT** is prepended with the current value at input **PT** (this can be used for a new pulse duration).
 
 ## Technical Features
-
 - **Retriggerability** – Unlike simple timer blocks, a running pulse is not interrupted by a new start pulse, but rather extended (timer restart).
-
 - **Adapter Interface** – Instead of individual event/data ports, the AX adapter interface is used, which enables a standardized, unidirectional connection. This simplifies integration in adapter-based architectures.
-
 - **License** – The block is released under the **Eclipse Public License 2.0** (see copyright information).
-
 - **Implementation** – Internally, the IEC 61499 standard function block **E_TP_RETRIG** is used, which is integrated via the network.
 
 ## State Overview
@@ -85,13 +76,9 @@ The function block goes through the following states (based on the internal time
 Note: The reset (event **R**) always immediately returns to the IDLE state.
 
 ## Application Scenarios
-
 - **Control of output signals with fixed pulse duration** – e.g., controlling a relay that is switched for a defined time.
-
 - **Clock generator with retriggering** – If a new start signal arrives during a pulse, the pulse duration should be extended (e.g., for a manual push button that is pressed for a longer time).
-
 - **Safety interlocks** – An alarm or action should remain active for a minimum duration, even if the triggering state disappears briefly.
-
 - **Time-controlled enables** – e.g., a machine movement that is executed for the duration **PT** after a start signal, but restarts upon a new start pulse.
 
 ## Comparison with similar function blocks

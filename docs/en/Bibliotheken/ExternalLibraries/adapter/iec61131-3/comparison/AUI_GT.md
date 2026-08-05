@@ -1,36 +1,24 @@
 # AUI_GT
-
 ![AUI_GT](./AUI_GT.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AUI_GT** compares two values and checks whether the first value (IN1) is greater than the second value (IN2). The result is provided as a Boolean value via the output adapter. The function block is event-driven and operates asynchronously.
-
 ## Interface Structure
 
 The function block has no direct event or data inputs and outputs, but communicates exclusively via adapters.
 
 ### **Event Inputs**
-
 * **IN1.E1**: Event input of socket adapter IN1 – triggers the comparison.
-
 * **IN2.E1**: Event input of socket adapter IN2 – also triggers the comparison.
 
-
 ### **Event Outputs**
-
 * **OUT.E1**: Event output of the plug adapter OUT – indicates that the comparison result is available at the data output.
 
 ### **Data Inputs**
-
 * **IN1.D1**: First value to be compared (data type depends on the adapter type `AUI`, usually a numeric value).
-
 * **IN2.D1**: Second value to be compared (data type same as IN1).
 
 ### **Data Outputs**
-
 * **OUT.D1**: Boolean result of the comparison – `TRUE` if `IN1 > IN2`, otherwise `FALSE`.
 
 ### **Adapters**
@@ -47,7 +35,6 @@ The function block has no direct event or data inputs and outputs, but communica
 
 The adapters `AUI` and `AX` are unidirectional interfaces, each providing one event channel and one data channel.
 
-
 ## Functionality
 
 1. The function block waits for an event at one of the socket adapters **IN1.E1** or **IN2.E1**.
@@ -61,13 +48,9 @@ The adapters `AUI` and `AX` are unidirectional interfaces, each providing one ev
 5. Output occurs only when the input values change or when another event occurs.
 
 ## Technical Features
-
 - **Adapter-based interface**: The function block uses only adapters, allowing for flexible integration into various communication contexts.
-
 - **Asynchronous processing**: The comparison operation is triggered by an event at one of the input adapters; the output signal is delivered in response to the event.
-
 - **Standard compliance**: The function block implements the comparison function from IEC 61131-3 ("greater than").
-
 - **No state machines**: The function block is purely combinational – the result is generated immediately after the event; there is no internal state.
 
 ## State Overview
@@ -75,19 +58,13 @@ The adapters `AUI` and `AX` are unidirectional interfaces, each providing one ev
 This function block does not have an explicit state machine (ECC). Its internal logic consists of a direct connection between the adapters and a standardized comparison function block. Output occurs immediately upon event input.
 
 ## Application Scenarios
-
 - **Limit Monitoring**: Checks whether a measured value (e.g., temperature, pressure) exceeds a predefined threshold.
-
 - **Control Logic**: Activates an action (e.g., open a valve) when a setpoint is greater than the actual value.
-
 - **Data Filtering**: Selects data records or signals that meet a specific condition.
 
 ## Comparison with Similar Function Blocks
-
 - **AUI_LT**: Checks for "less than" values – the inverse function of AUI_GT.
-
 - **AUI_EQ**: Checks for equality of values.
-
 - **AUI_GE** / **AUI_LE**: Perform "greater than or equal to" and "less than or equal to" comparisons, respectively – they are extended versions of AUI_GT and AUI_LT.
 
 AUI_GT is the basic "greater than" component, enabling easy integration into adapter-based networks via the two socket adapters.

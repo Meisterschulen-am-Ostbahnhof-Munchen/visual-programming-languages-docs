@@ -1,12 +1,8 @@
 # AX_SPLIT_4
-
 <img width="705" height="331" alt="image" src="https://github.com/user-attachments/assets/66b5a8a2-0227-4af4-8d00-17e48bfbe98c" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_SPLIT_4 function block is a generic function block that splits one AX adapter input into four separate AX adapter outputs. The block acts as a distributor for unidirectional AX adapters and enables the transmission of data and events to multiple receivers.
-
-
 ![AX_SPLIT_4](AX_SPLIT_4.svg)
 
 ## Interface Structure
@@ -31,14 +27,12 @@ No direct data outputs available (data processing is handled via adapters)
 **Output Adapter:**
 
 - `OUT1` - AX Adapter (Plug) - First output channel
-
 - `OUT2` - AX Adapter (Plug) - Second Output Channel
 - `OUT3` - AX Adapter (Plug) - Third Output Channel
 - `OUT4` - AX Adapter (Plug) - Fourth Output Channel
 
 ## Functionality
 The AX_SPLIT_4 block receives data and events via the input adapter `IN` and distributes them in parallel to all four output adapters (`OUT1` to `OUT4`). All incoming information is forwarded to all outputs simultaneously, thus achieving a 1:4 distribution.
-
 
 ## Technical Features
 - Generic implementation for maximum reusability
@@ -50,7 +44,6 @@ The AX_SPLIT_4 block receives data and events via the input adapter `IN` and dis
 The function block operates statelessly – incoming data and events are immediately forwarded to all outputs without storing any internal state.
 
 ## Application Scenarios
-
 - Distribution of control commands to multiple actuators
 - Broadcasting of sensor data to various processing units
 - Distribution of control information in distributed systems
@@ -58,7 +51,6 @@ The function block operates statelessly – incoming data and events are immedia
 
 ## ⚖️ Comparison with Similar Function Blocks
 Compared to simple split function blocks, AX_SPLIT_4 offers a specific 1:4 split for AX adapters. Other split variants may support different numbers of outputs or other adapter types.
-
 
 Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
 

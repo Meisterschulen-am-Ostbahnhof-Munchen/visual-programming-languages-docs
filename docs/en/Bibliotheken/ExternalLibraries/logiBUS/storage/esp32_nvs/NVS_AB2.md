@@ -1,11 +1,8 @@
 # NVS_AB2
-
 ![NVS_AB2](./NVS_AB2.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **NVS_AB2** enables the loading and saving of `REAL` data in non-volatile storage (NVS) using a string key. It encapsulates NVS access in a convenient, asynchronous interface and communicates with the environment via a bidirectional **AB2** adapter. This makes the block particularly suitable for scenarios where configuration values or status data need to be permanently stored on an ESP32.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -59,18 +56,14 @@ Upon arrival of the **INIT** event, the internal NVS module is initialized. Imme
 After initialization, the function block can process asynchronous read and write requests via the adapter:
 
 - **Read**: An event received at the adapter port `VAL.EO1` triggers another read operation (`GET`) in the NVS. The read value is again made available via `VAL.DI1`, and the acknowledgment (`VAL.EI1`) is sent.
-
 - **Write**: The value to be saved is made available via the adapter on `VAL.DO1`. An event at `VAL.EO1` triggers the **write operation** (`SET`) in the NVS. Acknowledgement is sent via `VAL.EI1` after successful saving.
 
 The outputs `QO` and `STATUS` are set to the current status of the NVS module upon each of the output events (`INITO`, as well as the internal adapter acknowledgments).
 
 ## Technical Features
 - **NVS Access on the ESP32**: The module utilizes the function block defined at `logiBUS::storage::esp32_nvs::NVS`, which encapsulates the ESP32's flash memory management.
-
 - **Bidirectional Adapter Interface**: The AB2 adapter allows the function block to process both read and write requests from the environment without requiring separate trigger events on the function block itself.
-
 - **Automatic First Read Access**: After initialization, the stored value is read immediately, so that the current data value is available via the adapter after `INITO`.
-
 - **Error Handling**: The status (`STATUS`) and the qualifier (`QO`) indicate the success or failure of each NVS operation.
 
 ## State Overview
@@ -83,21 +76,15 @@ The function block does not have explicit state machines, as it uses the behavio
 3. **Read/Write Operation** – brief access to the NVS during the processing of an adapter event
 
 ## Application Scenarios
-
 - **Configuration storage** for device parameters (e.g., setpoints, calibration data) on ESP32-based controllers.
-
 - **Persistent state maintenance**, e.g., last operating mode or counter readings across a restart.
-
 - **Data exchange via AB2 protocol** with other modules that support the AB2 adapter interface – easy integration into existing automation solutions.
-
 
 ## Comparison with Similar Function Blocks
 Compared to simpler read/write function blocks (e.g., direct NVS FBs without an adapter), **NVS_AB2** offers:
 
 - **Asynchronous, event-driven communication** via the AB2 adapter – decouples data access from the main control flow.
-
 - **Automatic initialization and first read** reduces programming effort.
-
 - **Uniform error signaling** via `QO` and `STATUS`.
 
 In contrast, function blocks without an adapter require separate event inputs for reading and writing and do not offer a standardized bidirectional interface.
@@ -109,8 +96,4 @@ In contrast, function blocks without an adapter require separate event inputs fo
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-
-
-```

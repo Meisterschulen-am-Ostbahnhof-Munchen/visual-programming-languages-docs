@@ -1,15 +1,9 @@
 # Exercise_209: Interlock: ILOCK_FB_RS (Two mutually interlocked reset-dominant latches via AX2 adapter)
-
 ![Uebung_209_network](./Uebung_209_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise implements a **mutual interlock** between two reset-dominant RS latches. The function blocks `ILOCK_FB_RS` are connected via an AX2 adapter, ensuring that only one of the two outputs can be active at any given time. As soon as one latch is set, the other is forcibly reset. The inputs and outputs are connected to digital logiBUS hardware (inputs I1–I4, outputs Q1 and Q2).
-
 This exercise teaches the use of special interlock blocks, which are used in control engineering for mutual protection (e.g., in motors or valves).
-
 
 ## Function Blocks Used (FBs)
 
@@ -34,7 +28,6 @@ This exercise teaches the use of special interlock blocks, which are used in con
 
 `ILOCK_FB_RS` is a reset-dominant RS latch with an additional adapter interface (`ILOCK_IN`, `ILOCK_OUT`). Multiple such blocks can be coupled via this adapter connection: When one latch is set, it sends a signal on the `ILOCK_OUT` adapter, which forces the other block, via `ILOCK_IN`, into the reset state. Thus, at any given time, at most one of the two outputs, `Q1`, is active.
 
-
 ## Program Flow and Connections
 
 The system is **event-driven**:
@@ -46,7 +39,6 @@ A signal on a digital input (e.g., `Input_I1` for setting Latch 1) generates an 
 2. **Process in the Latch**
 
 This event is forwarded to the `REQ` input of the associated `ILOCK_RS` function block. Simultaneously, the data values (`S` and `R1`) from the digital input are transferred to the latch.
-
 
 ``` The block processes the signals (reset dominant) and outputs a `CNF` event upon completion.
 
@@ -95,20 +87,15 @@ The adapter output `ILOCK_RS_1.ILOCK_OUT` is connected to the adapter input `ILO
 This exercise demonstrates a **mutual interlock** between two reset-dominant RS latches using the special `ILOCK_FB_RS` function blocks and their adapter coupling. Key learning objectives:
 
 - Understanding the interlock principle (mutual exclusivity).
-
 - Using adapter connections for cross-communication between function blocks.
-
 - Integrating digital input/output hardware (logiBUS).
-
 - Event-driven execution in 4diac FBS.
 
 After successful completion, the user can implement such interlocks in their own control projects, e.g., for safeguarding competing actuators.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

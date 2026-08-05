@@ -1,13 +1,8 @@
 # ASSEMBLE_AB_FROM_AX
-
 ![ASSEMBLE_AB_FROM_AX](./ASSEMBLE_AB_FROM_AX.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **ASSEMBLE_AB_FROM_AX** function block combines eight Boolean signals, provided via AX adapters (unidirectional, Bool), into a single byte and outputs it via an AB adapter (unidirectional, BYTE). It encapsulates the logic for byte generation and provides a modular, adapter-based interface for processing 8 bits.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -49,7 +44,6 @@ None. All data is output via the adapter plug.
 
 Each AX adapter provides the Boolean value via its data input `D1` and the corresponding event via its event input `E1`. The AB adapter provides the byte via its data output `D1` and the acknowledgment event via its event output `E1`.
 
-
 ## Functionality
 
 The function block is implemented as a composite module and consists internally of:
@@ -61,26 +55,16 @@ The function block is implemented as a composite module and consists internally 
 Procedure:
 
 - As soon as an event arrives at **one** of the AX adapters (e.g., `BIT_00`), it is forwarded to the `REQ` input of the internal module **ASSEMBLE_BYTE_FROM_BOOLS**.
-
 - The internal component calculates the byte from the current Boolean values of all eight adapters and places it at its data output.
-
 - After the calculation is complete, `ASSEMBLE_BYTE_FROM_BOOLS` sends a `CNF` event, which triggers the clock input (`CLK`) of the D flip-flop **E_D_FF_ANY**.
-
 - The flip-flop receives the current byte value and outputs it at its output `Q`.
-
 - Simultaneously, the flip-flop's event `EO` is passed to the AB adapter's event output `OUT.E1`.
-
-
-
 
 ``` This ensures that the output byte is only updated when an input bit changes, and that the output is stable and synchronized.
 
 ## Technical Features
-
 - **Adapter-Based Interface** – The component uses only adapters (`AX`/`AB`) instead of individual event and data ports. This allows for easy encapsulation and reuse in modular designs.
-
 - **Internal D Flip-Flop** – The flip-flop prevents intermediate states and only releases the completed byte after the calculation is finished. It also acts as a buffer if multiple input events arrive in quick succession.
-
 - **Efficient Event Control** – Every event at one of the eight AX sockets triggers a recalculation. Unnecessary updates are avoided because the output only occurs after a clock cycle.
 
 ## State Overview
@@ -88,11 +72,8 @@ Procedure:
 The functional block does not have its own state machine; It is structured as a pure network consisting of two sub-modules. Its behavior is entirely determined by the internal logic of **ASSEMBLE_BYTE_FROM_BOOLS** and **E_D_FF_ANY**.
 
 ## Application Scenarios
-
 - **Combining 8 digital sensors** – e.g., limit switches, light barriers, or binary inputs of a PLC, whose states are to be transmitted as bytes.
-
 - **Bit-parallel data transmission** – Conversion of an 8-bit parallel signal into a serial byte for another module (e.g., via adapter coupling).
-
 - **Modular automation functions** – Integration into hierarchies where multiple `ASSEMBLE_AB_FROM_AX` blocks are used to assemble larger data words (e.g., WORD, DWORD).
 
 ## Comparison with similar modules
@@ -114,8 +95,4 @@ The function block **ASSEMBLE_AB_FROM_AX** is a practical, adapter-based tool fo
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

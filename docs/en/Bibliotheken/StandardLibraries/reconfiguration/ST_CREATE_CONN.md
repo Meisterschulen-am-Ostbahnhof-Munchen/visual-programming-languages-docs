@@ -1,13 +1,8 @@
 # ST_CREATE_CONN
-
 ![ST_CREATE_CONN](https://user-images.githubusercontent.com/116869307/214154724-8b937f3d-9158-4a65-8267-347c9eeaf763.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The ST_CREATE_CONN function block is used to create event or data connections between two function block instances at runtime. This component enables the dynamic reconfiguration of connections in a 4diac system and is classified as a structural service.
-
-
 ![ST_CREATE_CONN](ST_CREATE_CONN.svg)
 
 ## Interface Structure
@@ -23,14 +18,11 @@ The ST_CREATE_CONN function block is used to create event or data connections be
 - **SRC_FB** (WSTRING): Reference to the source FB instance
 - **SRC_FB_OUT** (WSTRING): Reference to the event/data output of the source FB instance
 - **DST_FB** (WSTRING): Reference to the target FB instance
-
 - **DST_FB_IN** (WSTRING): Reference to the event/data input of the target FB instance
-
 - **DST** (WSTRING): Destination where the connection must be created (Syntax: ResourceName)
 
 ### **Data Outputs**
 - **QO** (BOOL): Event output qualifier
-
 - **STATUS** (WSTRING): Service status (RDY, NO_SUCH_OBJECT, INVALID_STATE)
 
 ### **Adapter**
@@ -38,7 +30,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The function block establishes a connection between a source and a target function block instance upon request (REQ event). The connection can be used for both events and data streams. After successful processing, an acknowledgment (CNF event) is issued with the corresponding status.
-
 
 ## Technical Features
 - Supports dynamic reconfiguration at runtime
@@ -72,8 +63,4 @@ ST_CREATE_CONN is an essential building block for systems requiring dynamic reco
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

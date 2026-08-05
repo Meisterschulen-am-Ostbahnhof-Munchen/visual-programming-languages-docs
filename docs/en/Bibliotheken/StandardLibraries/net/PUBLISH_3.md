@@ -1,45 +1,29 @@
 # PUBLISH_3
-
 <img width="1372" height="365" alt="image" src="https://github.com/user-attachments/assets/d6ecaaa9-15ed-4f40-a1ce-43631c28c135" />
-
 * * * * * * * * * *
-
 ## Introduction
 The PUBLISH_3 function block is used to distribute data to one or more SUBSCRIBE_3 blocks. It enables the unacknowledged transmission of up to three different data values to subscribers in a distributed system.
-
-
 ![PUBLISH_3](PUBLISH_3.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Initialization event with the associated data QI and ID
-
 - **REQ**: Send request for data (unacknowledged) with the associated data QI, SD_1, SD_2, and SD_3
 
 ### **Event Outputs**
-
 - **INITO**: Acknowledgement of initialization with the associated data QO and STATUS
-
 - **CNF**: Acknowledgement that data has been sent, with the associated data QO and STATUS
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Qualifier for initialization and send operations
-
 - **ID** (WSTRING): Publisher identifier
-
 - **SD_1** (ANY): First data value to be sent (any data type)
-
 - **SD_2** (ANY): Second data value to be sent (Any data type)
-
 - **SD_3** (ANY): Third data value to be sent (any data type)
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Qualifier for output events
-
 - **STATUS** (WSTRING): Status information about the executed operation
 
 ### **Adapters**
@@ -47,7 +31,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The PUBLISH_3 block is first initialized via the INIT event, where the ID parameter defines the unique identifier for this publisher. After successful initialization, the block acknowledges with INITO. Data can then be sent via the REQ event, with up to three different data values (SD_1, SD_2, SD_3) being transmitted simultaneously. The transmission is unacknowledged, but the block issues a CNF event after sending.
-
 
 ## Technical Features
 - Supports the ANY data type for all three data channels, offering maximum flexibility in the types of data to be transmitted

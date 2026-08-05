@@ -1,12 +1,7 @@
 # Exercise_031: LED Strip
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_031`. Here, we control addressable RGB LEDs (e.g., WS2812) using the convenient HSV color model.
-
-
 ``` ## 🎧 Podcast
-
 ![Uebung_031_network](./Uebung_031_network.svg)
 
 * [The three timers of DIN EN 61131-3 decoded – TP, TON & TOF explained precisely]
@@ -28,14 +23,10 @@ Using the RGB library for the ESP32. This demonstrates how to define colors not 
 [cite_start]The subapplication `Uebung_031.SUB` uses a conversion module and a strip driver[cite: 1].
 
 ### Function Blocks (FBs)
-
 * **`hsv2rgb`**: Converts the intuitive HSV values into the RGB values required by the hardware.
 
-
 # * **`strip_set_pixel`**: Transfers the color values to a specific LED in the strip.
-
 * **`I1` (Set)**: Clicking this triggers the setting of the color.
-
 * **`I2` (Clear)**: Clicking this clears the display (LED off).
 
 -----
@@ -61,8 +52,4 @@ The ambient lighting in a cabin should be adjustable. A rotary knob (potentiomet
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de ](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-
-
-```

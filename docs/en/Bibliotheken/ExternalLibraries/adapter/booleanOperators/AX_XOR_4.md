@@ -1,13 +1,8 @@
 # AX_XOR_4
-
 <img width="1009" height="334" alt="image" src="https://github.com/user-attachments/assets/7d008034-d62e-4f60-b7e9-450014dd7e88" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_XOR_4 function block is a generic function block for calculating the Boolean XOR operation with four inputs. It implements the exclusive OR operation for up to four different input signals.
-
-
 ![AX_XOR_4](AX_XOR_4.svg)
 
 ## Interface Structure
@@ -38,7 +33,6 @@ The AX_XOR_4 function block is a generic function block for calculating the Bool
 The function block calculates the XOR operation across four inputs. The XOR operation returns a "true" signal if and only if an odd number of inputs are active. With four inputs, this means:
 
 - Result = 1 if 1 or 3 inputs are active
-
 - Result = 0 if 0, 2, or 4 inputs are active
 
 Communication occurs exclusively via the defined adapter interfaces.

@@ -1,13 +1,8 @@
 # CLIENT_0
-
 * * * * * * * * * *
-
 ## Introduction
 The CLIENT_0 function block is used to communicate with a SERVER_0 block via a network connection. It enables the establishment and closure of connections. Unlike CLIENT_1, there is no explicit data exchange via data inputs/outputs; synchronization occurs primarily through events.
-
-
 * ![CLIENT_0](CLIENT_0.svg)
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +18,6 @@ The CLIENT_0 function block is used to communicate with a SERVER_0 block via a n
 - **ID** (WSTRING): Identifier for the connection
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Connection status (TRUE = connected, FALSE = disconnected)
 - **STATUS** (WSTRING): Status information about The Connection
 
@@ -32,7 +26,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The CLIENT_0 block initializes a network connection to the SERVER_0 block via the INIT event. Upon successful connection, the INITO event is triggered with QO=TRUE. Interaction with the server can be initiated via the REQ event, the completion of which is confirmed by CNF.
-
 
 ## Technical Features
 - No data inputs/outputs (SD_x, RD_x) available
@@ -72,7 +65,6 @@ Version | 3.0 (December 5, 2025, Monika Wenger) |
 --
 
 ### 🌐 Related subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,11 +1,8 @@
 # ALI_FB_CTUD
-
 ![ALI_FB_CTUD](./ALI_FB_CTUD.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_FB_CTUD** implements an up/down counter with a value range of type **LINT** (64-bit integer). It is specifically designed for use with **ALI adapters** and encapsulates a standard-compliant counter according to IEC 61131-3 (FB_CTUD_LINT). Control and output are exclusively via adapter interfaces, allowing for flexible integration into adapter-based architectures.
-
 ## Interface Structure
 ### **Event Inputs**
 The function block does not have direct event inputs. All control events are received via the **sockets** (adapters):
@@ -14,12 +11,9 @@ The function block does not have direct event inputs. All control events are rec
 - **CD.E1** – Count Down event
 - **R.E1** – Reset event
 - **LD.E1** – Load preset value event
-
 - **PV.E1** – Apply preset value event
 
 *Note*: All five events trigger a common internal processing cycle.
-
-
 
 *Note*: All five events trigger a common internal processing cycle.
 
@@ -44,13 +38,10 @@ The function block does not have direct event inputs. All control events are rec
 Additionally, the following events are output via the **Plugs** (Output Adapters):
 
 - **QU.E1** – Event when the counter value increases (Output Up)
-
 - **QD.E1** – Event when the counter value decreases (Output Down)
-
 - **CV.E1** – Event when the counter value changes (Count Value)
 
 *Special Note*: These events are triggered with **every** update (regardless of the input event). For change-triggered triggering, it is recommended to use an AX_D_FF block beforehand.
-
 
 ### **Data Inputs**
 The data values are provided via the **sockets**:
@@ -65,7 +56,6 @@ The data values are provided via the **sockets**:
 The results data are provided via the **plugs**:
 
 - **QU.D1** (BOOL) – Signal: Counter value > 0 (e.g., for the "Up" output)
-
 - **QD.D1** (BOOL) – Signal: Counter value < 0 (für „Down“‑Ausgang, abhängig von interner Logik)
 - **CV.D1** (LINT) – aktueller Zählerwert
 
@@ -107,13 +97,9 @@ Eine formale Zustandsmaschine ist nicht extern sichtbar. Der interne Zustand bes
 The flags QU and QD are then calculated from the new CV.
 
 ## Application Scenarios
-
 - **Production Counting**: Recording workpieces or cycles – counting up on entry, counting down on exit.
-
 - **Position Monitoring**: Counting up/down steps in a linear drive.
-
 - **Inventory Management**: Counting storage units with manual correction via Load/Reset.
-
 - **Adapter-based control systems**: Integration into architectures that rely on unidirectional adapters (AX/ALI), e.g., distributed automation nodes.
 
 ## Comparison with similar function blocks
@@ -121,11 +107,8 @@ The flags QU and QD are then calculated from the new CV.
 The standard IEC 61131-3 function block **CTUD** (e.g., `FB_CTUD_INT`) typically works with smaller data types (INT, DINT) and offers direct event and data inputs. The **ALI_FB_CTUD** extends this concept with:
 
 - **LINT data type** for very large counter ranges.
-
 - **Adapter interfaces** (AX/ALI) instead of free inputs/outputs.
-
 - **Continuous event output** as opposed to purely change-driven output.
-
 
 ## Conclusion
 

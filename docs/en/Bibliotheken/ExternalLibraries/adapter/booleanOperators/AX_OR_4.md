@@ -1,12 +1,8 @@
 # AX_OR_4
-
 <img width="963" height="330" alt="image" src="https://github.com/user-attachments/assets/43146cab-a88c-4303-9eac-39ab7ca69c80" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_OR_4 is a generic function block for calculating a four-input logical OR operation. The block processes Boolean signals and outputs the result of the OR operation via an adapter output.
-
 ![AX_OR_4](AX_OR_4.svg)
 
 ## Interface Structure
@@ -28,11 +24,8 @@ No direct data outputs available.
 **Incoming Adapters (Sockets):**
 
 - **IN1**: OR Input 1 (Type: adapter::types::unidirectional::AX)
-
 - **IN2**: OR Input 2 (Type: adapter::types::unidirectional::AX)
-
 - **IN3**: OR Input 3 (Type: adapter::types::unidirectional::AX)
-
 - **IN4**: OR Input 4 (Type: adapter::types::unidirectional::AX)
 
 **Outgoing Adapters (Plugs):**

@@ -1,13 +1,8 @@
 # AND_5
-
 ![AND_5](https://user-images.githubusercontent.com/116869307/214143938-1327eafa-96be-4137-8e06-2ba9a8d6c92e.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The AND_5 function block is a generic function block for calculating bitwise logical AND operations with five inputs. It implements a standard bitwise operation according to IEC 61131-3 and can work with any bit data type.
-
-
 ![AND_5](AND_5.svg)
 
 ## Interface Structure
@@ -34,16 +29,13 @@ No adapter interfaces are available.
 ## Functionality
 Upon arrival of the REQ event, the function block performs a bitwise AND operation on all five inputs. The result is output at the OUT data output, and simultaneously, the CNF event is sent to confirm the completion of the calculation.
 
-
 ``` The operation is performed separately for each bit position:
 
 OUT[i] = IN1[i] ∧ IN2[i] ∧ IN3[i] ∧ IN4[i] ∧ IN5[i]
 
 ## Technical Features
 - **Generic Data Type**: Uses ANY_BIT, making the block compatible with various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)
-
 - **Five Inputs**: Allows the combination of up to five different bit values
-
 - **Event-Driven**: The calculation is only performed when requested by the REQ event
 
 ## State Transitions
@@ -56,18 +48,14 @@ OUT[i] = IN1[i] ∧ IN2[i] ∧ IN3[i] ∧ IN4[i] ∧ IN5[i]
 4. Returns to Wait State
 
 ## Application Scenarios
-
 - Bitmask operations in control applications
 - Multiple condition checks in safety systems
 - Signal processing with multiple input signals
 - Filter operations in data processing systems
 
 ## ⚖️ Comparison with similar function blocks
-
 - **AND_2**: Provides only two inputs for AND operation
-
 - **OR_5**: Performs bitwise OR operations with five inputs
-
 - **XOR_5**: Performs bitwise exclusive OR operations
 
 ## Conclusion

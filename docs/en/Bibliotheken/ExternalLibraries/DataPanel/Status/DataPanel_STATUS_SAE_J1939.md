@@ -1,13 +1,8 @@
 ![DataPanel_STATUS_SAE_J1939](DataPanel_STATUS_SAE_J1939.svg)
-
 # DataPanel_STATUS_SAE_J1939
-
 Status Output of 1 DataPanel Node
-
 ## Interface
-
 ### Event inputs
-
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | INIT | Service Initialization | QI, u8SAMember |

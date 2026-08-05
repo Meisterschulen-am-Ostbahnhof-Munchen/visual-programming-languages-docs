@@ -1,18 +1,13 @@
 # A2X_BOOL_TO_2X
-
 <img width="1145" height="205" alt="image" src="https://github.com/user-attachments/assets/8248af7a-7ffe-41f8-af30-bd33f4e69bed" />
-
 * * * * * * * * * *
 ## Introduction
 The A2X_BOOL_TO_2X is a compound function block that converts two BOOL values into an A2X output format. This block serves as a bridge between simple Boolean control signals and the standardized A2X adapter interface.
-
-
 ![A2X_BOOL_TO_2X](A2X_BOOL_TO_2X.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **E_UP**: Event input for up/forward movement
 - **E_DOWN**: Event input for down/backward movement
 
@@ -20,16 +15,13 @@ The A2X_BOOL_TO_2X is a compound function block that converts two BOOL values in
 *No direct event outputs available*
 
 ### **Data Inputs**
-
 - **UP**: BOOL input for up/forward direction (TRUE = forward, up, right, clockwise)
-
 - **DOWN**: BOOL input for down/backward direction (TRUE = backward, down, left, counterclockwise)
 
 ### **Data Outputs**
 *No direct data outputs available*
 
 ### **Adapters**
-
 - **A2X_OUT**: Unidirectional A2X output adapter for forwarding the converted signals
 
 ## Functionality
@@ -44,14 +36,10 @@ The function block receives two independent Boolean input signals (UP and DOWN) 
 ## State Overview
 The function block has no internal states and operates stateless. Every incoming event is immediately passed to the corresponding adapter output.
 
-
 ## Application Scenarios
-
 - Control of bidirectional actuators (e.g., motors, cylinders)
-
 - Interface between simple switching logic and more complex control systems
 - Conversion of push-button/switch signals into standardized motion signals
-
 - Drive controls with forward/reverse functionality
 
 ## ⚖️ Comparison with similar components

@@ -1,13 +1,8 @@
 # StringValue_IWS
-
 ![StringValue_IWS](./StringValue_IWS.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **StringValue_IWS** is a service interface function block (SIFB) responsible for receiving wide strings (*Wide String*, `WSTRING`) as input data from a resource-side source (e.g., hardware interface, bus system). It provides a standardized interface for managing initialization, cyclic/demand-driven data retrieval, and asynchronous indications. This function block is typically found in ISOBUS-based control environments or other fieldbus systems that process Unicode-encoded text data.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -60,7 +55,6 @@ The function block **StringValue_IWS** is a service interface function block (SI
 
 None.
 
-
 ## Functionality
 
 The `StringValue_IWS` follows the typical behavior of a service interface function block:
@@ -77,15 +71,12 @@ The `REQ` event triggers an explicit data query. The function block retrieves a 
 
 If the resource provides new data without being prompted (e.g., when an input is changed), the `IND` event is triggered. `IN` then contains the current data, and `STATUS` the corresponding status. This output can be used in parallel with the `CNF` event.
 
-
 The event outputs `QO` always return the current qualifier value (usually `QI` upon successful operation, otherwise `FALSE`). The status `STATUS` contains human-readable error or success messages.
 
 ## Technical Features
-
 - **Wide Strings (`WSTRING`)**
 
 This function block uses `WSTRING` (UTF-16 encoded) to correctly transmit international character sets, special characters, and emojis. This is particularly important in ISOBUS agricultural technology, for example, when operator terminals display Unicode text.
-
 
 - **Object ID `u16ObjId`**
 
@@ -98,7 +89,6 @@ The function block is implemented as a SIFB and expects a resource-side implemen
 - **Use of `eclipse4diac::core::TypeHash`**
 
 This attribute serves for runtime identification of the type and is used for dynamic function block instances.
-
 
 ## State Overview
 
@@ -115,7 +105,6 @@ An explicit state engine is not defined in the XML; however, the following impli
 5. **ERROR** – In case of errors (e.g., communication interruption), `STATUS` is set and the block remains in place until `INIT` is sent again (with `QI=FALSE` as a possible reset).
 
 ## Application Scenarios
-
 - **ISOBUS Terminal (UT) – Unicode Text Input**
 
 Receiving user input such as machine names, addresses, or diagnostic texts from an operator terminal via ISOBUS.
@@ -123,7 +112,6 @@ Receiving user input such as machine names, addresses, or diagnostic texts from 
 - **Universal Interface for Character Input**
 
 Connecting external sensors or input devices that deliver character strings in UTF-16 format (e.g., barcode scanners, RFID readers with text output).
-
 
 - **Diagnostics and Logging Interface**
 
@@ -152,7 +140,6 @@ The `StringValue_IWS` is an essential component for integrating text input into 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

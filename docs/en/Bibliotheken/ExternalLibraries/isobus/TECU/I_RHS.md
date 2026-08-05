@@ -1,43 +1,28 @@
 # I_RHS
-
 * * * * * * * * * *
-
 ## Introduction
 The **I_RHS** (Rear Hitch Status) is a standards-compliant function block for monitoring rear hitch parameters, developed under the EPL-2.0 license.
-
 Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise acquisition of the position, force, and status of the rear hitch in agricultural machinery.
-
-
 ![I_RHS](I_RHS.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT`: Initialization Request (with qualifier `QI`)
 
 ### **Event Outputs**
-
 - `INITO`: Initialization Confirmation (with status)
-
 - `IND`: Indication Event with all coupling parameters
-
 - `TIMEOUT`: Timeout Event
 
 ### **Data Inputs**
-
 - `QI` (BOOL): Qualifier for Initialization
 
 ### **Data Outputs**
-
 - `QO` (BOOL): Qualifier for Output Events
-
 - `STATUS` (STRING): Operating status message
-
 - `Q_timeout` (BOOL): Timeout indicator
-
 - `timestamp_timeout` (DINT): Timeout timestamp
-
 - `timestamp_data` (DINT): Coupling data timestamp
 
 ## Coupling parameters
@@ -58,25 +43,21 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 
 `REAR_HITCH_EXIT_REASON_CODE` | BYTE | Fault Reason Code | 5819 | 6 | 64 states/6 bits |
 
-
 ## Functionality
 
 1. **Initialization**:
 
 - `INIT` with `QI`=TRUE starts system calibration
-
 - `INITO` confirms operational readiness with `QO` and `STATUS`
 
 2. **Data Provision**:
 
 - `IND` provides all coupling parameters with timestamps
-
 - Automatic updates upon state changes
 
 3. **Error Handling**:
 
 - `TIMEOUT` in case of communication problems
-
 - Detailed error codes in `REAR_HITCH_EXIT_REASON_CODE`
 
 ## Technical Features
@@ -118,7 +99,6 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 | 48-63 | Reserved |
 
 ## Application Scenarios
-
 - **Plow Control**: Automatic Depth Control
 - **Load Management**: Traction Force Adjustment
 - **Diagnostics**: Early Detection of Hydraulic Problems
@@ -139,7 +119,6 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65093) for the precise
 | ISO Compliance | Full | Partial | Full |
 
 ## 🛠️ Related Exercises
-
 * [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)]
 
 ## Conclusion

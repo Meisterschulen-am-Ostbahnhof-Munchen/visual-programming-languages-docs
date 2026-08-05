@@ -1,12 +1,8 @@
 # UDINT_AUDI_EQ
-
 ![UDINT_AUDI_EQ](./UDINT_AUDI_EQ.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block `UDINT_AUDI_EQ` performs a comparison of two values for equality. The first value is provided via the data input `IN1`, and the second value is received via an adapter socket (`IN2`). The result of the comparison (true if both values are equal) is output via an adapter plug (`OUT`). The block triggers the comparison operation as soon as an event occurs at the input `REQ` or at the adapter socket `IN2`.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -44,7 +40,6 @@ No direct data outputs. The result is provided as data via the adapter plugin `O
 | OUT | adapter::types::unidirectional::AX | Plug | value 1 = value2 = true |
 
 - **IN2** (Socket): This adapter passes the second comparison value (both event and date) to the function block from an external source. The event `IN2.E1` triggers the comparison, and the date `IN2.D1` contains the value.
-
 - **OUT** (Plug): This adapter outputs the comparison result. The event `OUT.E1` signals completion, and the date `OUT.D1` contains the result (of type BOOL).
 
 ## Functionality
@@ -60,13 +55,9 @@ This function block performs an equality comparison. Internally, it uses the sta
 The function block operates asynchronously: As soon as a corresponding event occurs, the comparison is performed and the result is output via the plug.
 
 ## Technical Features
-
 - **Adapter-Based Input/Output**: Both the second input value and the result are communicated via adapter interfaces, enabling flexible integration with other components or systems.
-
 - **Generic Data Type**: `IN1` is declared as `ANY_ELEMENTARY`, allowing the function block to work with various elementary data types (e.g., INT, REAL, BOOL). The adapter `IN2` must provide the same data type.
-
 - **Internal Standard Function Block**: The comparison function is implemented using the standardized IEC 61131 function block `F_EQ`, ensuring correctness and reusability.
-
 - **No State Machines**: The function block is purely functional and does not have its own state model – the logic is implemented exclusively via the internal FB network.
 
 ## State Overview
@@ -74,18 +65,12 @@ The function block operates asynchronously: As soon as a corresponding event occ
 The function block has no explicit states or a state diagram. Its behavior is determined solely by the event and data flows in the internal network. Each incoming event is processed immediately.
 
 ## Application Scenarios
-
 - **Measurement Value Comparison**: A sensor value (`IN1`) is compared to a reference value provided by another system via an adapter connection.
-
 - **Threshold Feedback**: The function block can be used in control applications to check whether a process value has reached a setpoint and to pass the result as a Boolean signal to downstream logic.
-
 - **Distributed Systems**: Thanks to the adapters, the function block is suitable for use in systems that require loose coupling between components, e.g., in manufacturing automation or building control.
 
-
 ## Comparison with Similar Components
-
 - **Standard Comparison Components** (e.g., `F_EQ`, `F_NE`, `F_GT`): These have direct data inputs and outputs. The `UDINT_AUDI_EQ`, on the other hand, uses adapters for the second input and output. This increases flexibility for modular and networked architectures.
-
 - **Adapter-Based Components**: Unlike simple comparison components with fixed interfaces, this component allows for dynamic connection of the second comparison value via a socket, which is advantageous in hierarchical or reusable components.
 
 ## Conclusion

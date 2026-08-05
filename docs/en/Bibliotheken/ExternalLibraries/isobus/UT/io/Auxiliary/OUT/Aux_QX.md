@@ -1,13 +1,8 @@
 # Aux_QX
-
 <img width="1481" height="173" alt="image" src="https://github.com/user-attachments/assets/3597540d-b375-4ca0-849a-c2a22e4c0732" />
-
 * * * * * * * * * *
-
 ## Introduction
 The Aux_QX function block is an output service interface function block for Boolean output data. It serves as an interface to auxiliary output devices and enables the control of Boolean output signals via a defined service mechanism.
-
-
 ![Aux_QX](Aux_QX.svg)
 
 ## Interface Structure
@@ -35,24 +30,17 @@ The The Aux_QX function block implements a standardized service interface for Bo
 
 ## Technical Features
 - Supports addressing auxiliary outputs via the iInpNr parameter
-
 - Flexible parameter configuration via STRING parameters
-
 - Complete status feedback via the STATUS output
-
 - Qualified event handling via QI/QO signals
 
 ## State Overview
 The function block follows a typical service interface pattern with initialization and operating states. After successful initialization (INIT → INITO), service requests (REQ → CNF) can be processed.
 
-
 ## Application Scenarios
-
 - Control of auxiliary output devices in ISOBUS environments
-
 - Connection of Boolean actuators in agricultural machinery
 - Integration into control systems for auxiliary functions
-
 - Universal Boolean output interface in distributed automation systems
 
 ## ⚖️ Comparison with similar blocks

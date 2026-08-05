@@ -1,13 +1,8 @@
 # ATM_DEMUX_3
-
 ![ATM_DEMUX_3](./ATM_DEMUX_3.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **ATM_DEMUX_3** is a generic demultiplexer for unidirectional ATM data streams. It routes an incoming data stream to one of three outputs based on its index. The block is event-driven and suitable for on-demand data distribution in automation or communication systems.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -69,11 +64,8 @@ This function block operates in an event-driven manner. When an event occurs at 
 After successful forwarding, the **CNF** event is triggered. No behavior is specified for other values of **K**; in practice, the index should be limited to the valid range (1–3).
 
 ## Technical Features
-
 - **Generic Function Block**: The function block is defined as a generic type (`GEN_ATM_DEMUX`) and can be configured for different target platforms using `eclipse4diac::core::GenericClassName` and `TypeHash`.
-
 - **Unidirectional Adapters**: All adapters are of type `adapter::types::unidirectional::ATM`, which defines a clear direction of data flow.
-
 - **No State Storage**: The module is stateless – its behavior is determined solely by the REQ event and the current index K.
 
 ## State Overview
@@ -81,11 +73,8 @@ After successful forwarding, the **CNF** event is triggered. No behavior is spec
 The **ATM_DEMUX_3** has no internal states. It reacts directly to each REQ event by forwarding the data and logging a CNF event (provided the index is valid). There are no time dependencies or sequential processes.
 
 ## Application Scenarios
-
 - **Data Distribution in Fieldbus Systems**: An incoming data stream (e.g., from a sensor) is forwarded to different actuators depending on the addressing.
-
 - **Control of Multiple Outputs**: In a machine controller, a signal can be selectively routed to three different output channels.
-
 - **Prototype for n-way demultiplexer**: This component can be used as a basis for extended demultiplexers with more outputs (by adjusting the number of adapters).
 
 ## Comparison with similar components
@@ -107,7 +96,6 @@ The **ATM_DEMUX_3** is a compact and clearly defined demultiplexer for unidirect
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

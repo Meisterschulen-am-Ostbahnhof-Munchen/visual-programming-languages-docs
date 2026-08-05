@@ -1,13 +1,8 @@
 # AS_TO_AULI
-
 ---
-
 ## Introduction
-
 ![AS_TO_AULI](./AS_TO_AULI.svg)
-
 The composite function block `AS_TO_AULI` converts an **AS (SINT) adapter** to an **AULI (ULINT) adapter**. Internally, it uses the IEC 61131 conversion block `F_SINT_TO_ULINT` to perform the actual type conversion from SINT to ULINT. The block is designed as part of a unidirectional adapter library for communication between different data types.
-
 ---
 
 ## Interface Structure
@@ -62,13 +57,9 @@ The conversion is performed according to the IEC 61131-3 standard: The SINT valu
 
 ## Technical Specifications
 - **Standard Compliance**: The component is specified according to IEC 61499-2.
-
 - **License**: Eclipse Public License 2.0 (EPL-2.0).
-
 - **Dependency**: Imports the IEC 61131 component `F_SINT_TO_ULINT` from the package `iec61131::conversion`.
-
 - **Type Safety**: The adapters `AS` and `AULI` ensure type-safe connections; direct cabling from SINT to ULINT without conversion is not possible.
-
 - **Unidirectional Data Flow**: The function block operates purely unidirectionally – it receives data and events and outputs converted data and acknowledgments.
 
 ---
@@ -77,20 +68,15 @@ The conversion is performed according to the IEC 61131-3 standard: The SINT valu
 The function block does **not have its own state machine**. It functions purely as an interconnect for the inner `F_SINT_TO_ULINT` function block. Its behavior is strictly event-driven:
 
 - **Waiting** (Initial State) → Event sent to `AS_IN.E1` → Transition to **Conversion**.
-
 - **Conversion** → Internal function block operates asynchronously → After completion → Event sent to `AULI_OUT.E1` → Return to **Waiting**.
 
 Error handling is not explicitly modeled; the inner function block outputs a defined result (e.g., 0) for invalid inputs (e.g., outside the value range).
 
-
 ---
 
 ## Application Scenarios
-
 - **Integration into Adapter Chains**: If an upstream function block provides a SINT value, but subsequent components only process ULINT, `AS_TO_AULI` can be used as an intermediate adapter.
-
 - **Sensor Connection**: Sensors with 8-bit output (e.g., rotary encoders, simple switches) can be connected to a 64-bit bus.
-
 - **Legacy Systems**: This adapter makes legacy systems with SINT interfaces compatible with modern ULINT-based controllers.
 
 --
@@ -111,7 +97,6 @@ Error handling is not explicitly modeled; the inner function block outputs a def
 
 This function block covers the conversion from an 8-bit signed type to a 64-bit unsigned type and is particularly suitable for applications requiring a large output range.
 
-
 ---
 
 ## Conclusion
@@ -121,8 +106,4 @@ This function block covers the conversion from an 8-bit signed type to a 64-bit 
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

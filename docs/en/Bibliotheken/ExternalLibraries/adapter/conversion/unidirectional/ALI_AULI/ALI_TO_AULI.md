@@ -1,11 +1,8 @@
 # ALI_TO_AULI
-
 ![ALI_TO_AULI](./ALI_TO_AULI.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `ALI_TO_AULI` is a composite block that implements bidirectional adapter conversion between the LINT adapter (ALI) and the ULINT adapter (AULI). It serves as a standardized interface for converting a signed 64-bit integer value (LINT) into an unsigned 64-bit integer value (ULINT). The block encapsulates the IEC 61131-3 conversion block `F_LINT_TO_ULINT` and simplifies integration into adapter-based architectures.
-
 ## Interface Structure
 The block does not have its own event or data interfaces, but only two adapter connections (socket and plug). The internal logic is handled by the embedded sub-module and the direct connection of the adapter signals.
 
@@ -44,26 +41,18 @@ The module operates as a simple pass-through conversion:
 
 Thus, a complete, event-driven, and data-synchronous conversion is achieved without any additional delay or logic.
 
-
 ## Technical Features
-
 - **Sub-block used**: `iec61131::conversion::F_LINT_TO_ULINT` – standard-compliant type conversion according to IEC 61131-3.
-
 - **Adapter coupling**: The block utilizes 4diac's unidirectional adapter concept and enables loose coupling between different data type interfaces.
-
 - **No state management**: As a composite block, `ALI_TO_AULI` does not have its own internal state; all decisions are made by the sub-block.
-
 - **Platform independence**: The block can be used in any 4diac environment that provides the IEC 61131 conversion blocks.
 
 ## State overview
 The block itself does not contain a state machine. All state transitions are controlled by the internal `F_LINT_TO_ULINT`, which switches to the "convert" state after an event at input `REQ` and outputs a confirmation event upon completion. Since these states are not externally visible, a detailed description is omitted.
 
 ## Application Scenarios
-
 - **System Integration**: Connecting an older control system that uses signed LINT values to a modern component that can only process unsigned ULINT values.
-
 - **Data Conversion in Adapter Chains**: Embedding between two adapters, e.g., in a data preprocessing chain that requires a uniform ULINT interface.
-
 - **Migration**: Replacing LINT-based components with ULINT equivalents without having to change the entire adapter infrastructure.
 
 ## Comparison with Similar Components
@@ -75,7 +64,6 @@ The `ALI_TO_AULI` component offers a simple and reliable way to convert LINT ada
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,14 +1,9 @@
 # F_ADD
-
 ![Additionsbaustein](https://github.com/user-attachments/assets/3173760a-3b67-48dc-b078-43bcfc56423a)
-
 * * * * * * * * * *
-
 ![F_ADD](F_ADD.svg)
-
 ## Introduction
 The **F_ADD** is a standards-compliant arithmetic function block according to IEC 61131-3, developed by TU Wien ACIN under the EPL-2.0 license. Version 1.0 enables type-safe addition of values (ANY_MAGNITUDE) for industrial control applications.
-
 
 ## Interface Structure
 
@@ -30,29 +25,23 @@ The **F_ADD** is a standards-compliant arithmetic function block according to IE
 1. **Activation**:
 
 - Triggered by the `REQ` event
-
 - Processes both input values simultaneously
 
 2. **Type Handling**:
 
 - Supports all ANY_MAGNITUDE types:
-
 - Numeric types (INT, DINT, REAL, LREAL)
-
 - Time types (TIME, LTIME)
-
 - Automatic type conversion
 
 3. **Computation**:
 
 - Executes IN1 + IN2
-
 - Maintains the highest input accuracy
 
 4. **Result Output**:
 
 - `CNF` event with computation result
-
 - Latency: One execution cycle
 
 ## Technical Specifications
@@ -76,7 +65,6 @@ The **F_ADD** is a standards-compliant arithmetic function block according to IE
 | Mixed | INT + REAL → REAL |
 
 ## Application Examples
-
 - **Process Control**: Signal Conditioning
 - **Measurement Systems**: Sensor Value Aggregation
 - **Motion Control**: Position Calculations
@@ -94,19 +82,14 @@ The **F_ADD** is a standards-compliant arithmetic function block according to IE
 
 | Output Type | Equals Input Type | Equals | Equals |
 
-
 ## Error Handling
-
 - **Overflow**: Wrap-around for integers, ±INF for floating-point numbers
 - **Type Mismatch**: Automatic type matching
 - **Invalid Input**: Returns 0/default value
 
 ## Special Notes
-
 - For time calculations: TIME + TIME → TIME
-
 - Mixed operations use the "higher" type
-
 - No implicit scaling (e.g., 100ms + 1s = 1100ms)
 
 ## Conclusion

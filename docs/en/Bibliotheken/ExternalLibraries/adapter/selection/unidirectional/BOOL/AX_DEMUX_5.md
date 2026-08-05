@@ -1,26 +1,19 @@
 # AX_DEMUX_5
-
 <img width="1220" height="301" alt="image" src="https://github.com/user-attachments/assets/8dd714c2-442d-4dc9-8935-4adc6eee0cd4" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_DEMUX_5 is a generic demultiplexer function block that distributes incoming AX signals to one of five outputs. The block is used for the targeted routing of data streams based on an index value.
-
-
 ![AX_DEMUX_5](AX_DEMUX_5.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **REQ**: Sets the index K and initiates the demultiplexing process
 
 ### **Event Outputs**
-
 - **CNF**: Confirms successful setting of index K
 
 ### **Data Inputs**
-
 - **K** (UINT): Index value for selecting the desired output
 
 ### **Data Outputs**
@@ -52,9 +45,7 @@ The AX_DEMUX_5 selectively distributes incoming AX signals via the IN adapter to
 ## State Overview
 The function block operates statelessly—each REQ pulse results in immediate processing and output of the CNF signal after successful configuration.
 
-
 ## Application Scenarios
-
 - Distribution of control signals in automation systems
 - Selection of actuator channels in mechanical systems
 - Routing of data streams in distributed control architectures

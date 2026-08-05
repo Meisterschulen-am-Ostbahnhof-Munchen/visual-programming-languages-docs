@@ -1,13 +1,8 @@
 # Exercise_080e2: Example of E_CTU with Event Brake via E_D_FF_ANY
-
 ![Uebung_080e2_network](./Uebung_080e2_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise demonstrates the use of an up counter (E_CTU) in combination with an **event brake**, implemented by the function block `E_D_FF_ANY_TMIN`. The counter is incremented via a cyclic event generator (E_CYCLE) as soon as a key is pressed at `DigitalInput_CLK_I1`. A second key press at `DigitalInput_CLK_I2` resets the counter and stops the cycle. The output counter values are only passed to a numeric output if the minimum dwell time (`Tmin`) of the signal state is exceeded – this prevents unwanted or noisy values. An additional D flip-flop block (`E_D_FF`) outputs the counter status (Q) as a binary signal to a digital output.
-
 ## Function Blocks Used
 
 This exercise uses the following predefined function blocks in the network:
@@ -44,7 +39,6 @@ This exercise uses the following predefined function blocks in the network:
 
 2. **Counter Clock**: `E_CYCLE` generates an event (`EO`) every 1 ms, which is directly connected to the counter input `CU` of `E_CTU`.
 
-
 3. **Counter Evaluation**: The `E_CTU` outputs an event to `CUO` or `RO` on each increment (or overflow). Both events are split across four parallel paths via `E_SPLIT_4`.
 
 4. **Combination**: All four outputs of `E_SPLIT_4` are combined into a single event in `E_MERGE_4`. This results in an event for every counter event (regardless of the cause).
@@ -55,30 +49,17 @@ This exercise uses the following predefined function blocks in the network:
 
 7. **Stop and Reset**: Pressing a key on `DigitalInput_CLK_I2` generates an event that simultaneously stops the cycle (`E_CYCLE.STOP`) and resets the counter (`E_CTU.R`).
 
-
-
-
-
-
-
-
-
 ... ### Data Connections
 
 - `E_CTU.CV` (Current Count Value) → `E_D_FF_ANY.D`
 - `E_D_FF_ANY.Q` → `Q_NumericValue.u32NewValue` (Output of Filtered Count Value)
-
 - `E_CTU.Q` (Overflow/Status) → `E_D_FF.D`
 - `E_D_FF.Q` → `DigitalOutput_Q1.OUT` (Binary Output State)
 
 ### Exercise Notes
-
 - **Learning Objectives**: Understanding the combination of upcounters, event flows, and time-delayed value acquisition (event braking). Typical application: Debouncing of count pulses or smoothing of measured values.
-
 - **Difficulty Level**: Advanced – Knowledge of IEC 61499 event control and the use of `E_D_FF_ANY` is required.
-
 - **Prerequisites**: Basic knowledge of function blocks, event connections, and the 4diac IDE workflow.
-
 - **Starting the Exercise**: The SubApp object `Uebung_080e2` must be integrated into a 4diac project. The hardware inputs (I1, I2) and outputs (Q1, OutputNumber_N1) must be connected according to the logiBUS configuration.
 
 ## Summary
@@ -88,11 +69,8 @@ Exercise 080e2 illustrates how an event-driven counter is coupled with **tempora
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
 * [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
 
 ]

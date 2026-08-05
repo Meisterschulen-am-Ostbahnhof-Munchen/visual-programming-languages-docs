@@ -1,12 +1,8 @@
 # AX_FB_TOF
-
 <img width="962" height="243" alt="image" src="https://github.com/user-attachments/assets/d92dd0e6-fa14-499e-8a97-5c1432d0df3e" />
-
 * * * * * * * * * *
-
 ## Introduction
 **Important note: This function block only functions correctly if it is called cyclically.**
-
 AX_FB_TOF is a standardized timer function block according to IEC 61131-3 that implements off-delay timing. The block maintains the output signal for a defined duration after the input signal is switched off.
 
 ![AX_FB_TOF](AX_FB_TOF.svg)
@@ -14,7 +10,6 @@ AX_FB_TOF is a standardized timer function block according to IEC 61131-3 that i
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **REQ** (Event): Normal Execution Request (takes the value from PT); Calls the function block (must be called cyclically)
 
 ### **Event Outputs**
@@ -45,7 +40,6 @@ The AX_FB_TOF block functions as a turn-off delay timer:
 
 6. If the input at the IN adapter becomes TRUE again while the timer is running, the timer is reset and Q remains TRUE.
 
-
 ## Technical Features
 - Implemented based on the IEC 61131-3 TOF standard
 - Uses unidirectional adapters for integration into modern control concepts
@@ -62,11 +56,8 @@ The AX_FB_TOF block functions as a turn-off delay timer:
 
 4. **Expired**: ET reaches PT, Q changes to FALSE.
 
-
 ## Application Scenarios
-
 - Debouncing controls (e.g., fan control after a device is switched off)
-
 - Debouncing of signals that might drop briefly
 - Ensuring minimum runtimes after a stop command
 
@@ -74,7 +65,6 @@ The AX_FB_TOF block functions as a turn-off delay timer:
 Compared to event-based timers such as [AX_TOF](../../events/unidirectional/BOOL/timers/AX_TOF.md)], this function block follows classic PLC behavior according to IEC 61131-3 and additionally offers the ET status output.
 
 ## 🛠️ Related Exercises
-
 * [Exercise_020e2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)]
 
 ## Conclusion

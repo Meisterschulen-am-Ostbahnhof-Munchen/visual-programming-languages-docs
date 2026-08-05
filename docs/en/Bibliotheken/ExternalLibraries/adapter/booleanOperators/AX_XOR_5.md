@@ -1,12 +1,8 @@
 # AX_XOR_5
-
 <img width="1009" height="366" alt="image" src="https://github.com/user-attachments/assets/cb5ecc68-f421-4466-a82b-f877edbb13f0" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_XOR_5 is a generic function block for calculating the Boolean XOR operation with five inputs. The block implements the exclusive OR operation for up to five input signals and outputs the result via an adapter output.
-
 ![AX_XOR_5](AX_XOR_5.svg)
 
 ## Interface Structure
@@ -40,12 +36,9 @@ No direct data outputs available.
 ## Functionality
 This function block calculates the XOR operation across all five inputs. The XOR operation (exclusive OR) returns a "true" signal if and only if an odd number of inputs are active. With an even number of active inputs, it returns "false".
 
-
 The mathematical formula is:
 
-```
 OUT = IN1 XOR IN2 XOR IN3 XOR IN4 XOR IN5
-```
 ## Technical Features
 - Uses unidirectional AX adapters for all interfaces
 - Implemented as a generic function block named 'GEN_AX_XOR'

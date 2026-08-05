@@ -1,50 +1,32 @@
 # logiBUS_QD_PWM
-
 <img width="1848" height="333" alt="image" src="https://github.com/user-attachments/assets/ea4b0496-56de-4eb9-a419-6cd8c9b095bb" />
-
 * * * * * * * * * *
-
 ## Introduction
 The function block `logiBUS_QD_PWM` is an output service interface function block for double-word output data. It serves as an interface for controlling PWM (pulse-width modulation) outputs via the logiBUS system and enables the control of outputs Q1 to Q8.
-
-
 ![logiBUS_QD_PWM](logiBUS_QD_PWM.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Service Initialization
-
 - Linked to: QI, PARAMS, Output
-
 - **REQ**: Service Request
-
 - Linked to: QI, OUT
 
 ### **Event Outputs**
-
 - **INITO**: Initialization Acknowledgement
-
 - Linked to: QO, STATUS
-
 - **CNF**: Acknowledgement of Requested Service Operation
-
 - Linked to: QO, STATUS
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Event Input Qualifier
 - **PARAMS** (STRING): Service Parameters
-
 - **OUT** (DWORD): Output Data for the Resource
-
 - **Output** (logiBUS_DO_S): Identifies the output Output_Q1..Q8
-
 - Initial Value: `logiBUS_DO::Invalid`
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Event Output Qualifier
 - **STATUS** (STRING): Service Status
 
@@ -53,7 +35,6 @@ No adapter interfaces available.
 
 ## Functionality
 This function block enables PWM control of outputs via the logiBUS system. During initialization (INIT), the service parameters are configured and the specific output is identified. PWM data (DWORD) can be sent to the configured output via a REQ request. The block acknowledges both initialization and service requests via the corresponding output events.
-
 
 ## Technical Features
 - Uses DWORD data type for PWM output data
@@ -76,7 +57,6 @@ The function block has two main states:
 ## ⚖️ Comparison with Similar Blocks
 Compared to simple digital output blocks, `logiBUS_QD_PWM` offers extended PWM functionality with 32-bit resolution (DWORD). Compared to analog output blocks, it enables direct PWM control without additional conversion.
 
-
 ``` ## 🛠️ Related exercises
 
 * [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
@@ -93,7 +73,6 @@ The `logiBUS_QD_PWM` function block provides a powerful interface for PWM output
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]

@@ -1,67 +1,47 @@
 # E_CYCLE
-
 ## Introduction
 The `E_CYCLE` is a function block according to IEC 61499 that serves as a periodic event generator. After starting, the block repeatedly fires an output event (`EO`) at a defined time interval (`DT`). It is the fundamental tool for creating clocks and cyclic sequences.
-
 ![E_CYCLE](E_CYCLE.svg)
-
 ## Interface Structure
-
 ### **Event Inputs**
-
 - **START**: Starts the periodic generation of `EO` events.
-
 - **Related Data**: `DT`
 - **STOP**: Stops the generation of `EO` events.
 
 ### **Event Outputs**
-
 - **EO (Event Output)**: The cyclically triggered output event.
 
 ### **Data Inputs**
-
 - **DT (Delay Time)**: The time interval between individual `EO` events (data type: `TIME`).
 
 ## Functionality
 The functionality of `E_CYCLE` is internally based on a feedback loop with a `E_DELAY` block.
 
-
 1. **Starting the Cycle**:
 
 - A `START` event at the input triggers the internal timer with the duration specified at the `DT` input.
-
 - After this time `DT` has elapsed, the first `EO` event is triggered at the output.
 
 2. **Cyclic Operation**:
 
 - The triggered `EO` event is immediately fed back internally to the timer's start input.
-
 - This immediately restarts the timer, and after another time interval `DT`, the next `EO` event is triggered.
-
 - This process repeats continuously, generating a periodic sequence of `EO` events at intervals of `DT`.
 
 3. **Stopping the Cycle**:
 
 - A `STOP` event at the input breaks the internal feedback loop.
-
 - The timer stops, and no further `EO` events are generated until another `START` event occurs.
 
 ## Technical Features
-
 - **Event Generator**: The module generates a chain of events, not a continuous state (such as a square wave). To implement blinking, the `EO` event would, for example, trigger a `E_T_FF` (toggle flip-flop).
-
 - **Precise timing control**: Enables precise definition of the cycle time via the `TIME` data type.
-
 - **Event-driven architecture**: All control (start/stop) is purely event-based.
 
 ## Application scenarios
-
 - **Clock generator**: Periodically triggers other function blocks at a fixed clock rate (e.g., for sampling or calculations).
-
 - **Blinker/warning lights**: As a pulse generator for a downstream flip-flop to produce a visual signal.
-
 - **Watchdog**: Periodically sends a "life sign." If the signal is absent, an error can be detected.
-
 - **Test Automation**: Generation of periodic stimuli for systems under test.
 
 ## ⚖️ Comparison with similar components
@@ -77,7 +57,6 @@ The functionality of `E_CYCLE` is internally based on a feedback loop with a `E_
 | Control | START/STOP | START/STOP | REQ |
 
 ## 🛠️ Related exercises
-
 * [Uebung_007](../../../Uebungen/test_B/Uebungen_doc/Uebung_007.md)
 * [Uebung_007_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_007_AX.md)
 * [Uebung_007a1](../../../Uebungen/test_B/Uebungen_doc/Uebung_007a1.md)

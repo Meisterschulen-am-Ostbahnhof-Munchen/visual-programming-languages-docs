@@ -1,37 +1,26 @@
 # AB_D_FF
-
 No image available.
-
 ![AB_D_FF](./AB_D_FF.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AB_D_FF** implements an asynchronous data latch (D flip-flop) based on an adapter concept according to IEC 61499. It receives a data value via the input adapter **I** as soon as an event occurs and outputs this value via the output adapter **Q**. The internal state of the flip-flop is represented by a standardized `E_D_FF_ANY` function block.
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **I.E1** (via adapter `I`): Initiates the data value acquisition.
 
-
 ### **Event Outputs**
-
 - **Q.E1** (via adapter `Q`): Signals the output of the latched data value.
 
 ### **Data Inputs**
-
 - **I.D1** (via adapter `I`): The data value to be latched (any type, depending on the adapter type used, `adapter::types::unidirectional::AB`).
 
 ### **Data Outputs**
-
 - **Q.D1** (via adapter `Q`): The latched and output data value.
 
 ### **Adapters**
-
 - **I** (Socket): Input adapter of type `adapter::types::unidirectional::AB` – receives the value to be latched and the control event.
-
 - **Q** (Plug): Output adapter of the same type – outputs the stored value and the associated event.
 
 ## Functionality
@@ -45,11 +34,8 @@ The function block operates in an event-driven manner:
 Thus, the component behaves like a classic edge-triggered D latch, where the transfer and output occur synchronously with the input event.
 
 ## Technical Features
-
 - **Adapter Interface**: The component uses only adapters (`adapter::types::unidirectional::AB`) for input and output, which allows for flexible typing and loose coupling with other components.
-
 - **Internal Implementation**: The latching core is implemented using the standardized function block `E_D_FF_ANY` from the IEC 61499 library `iec61499::events`. This stores the data value and generates the output event.
-
 - **Event and data paths** are strictly separated: The event triggers the data transfer; data flows independently.
 
 ## State Overview
@@ -57,18 +43,12 @@ Thus, the component behaves like a classic edge-triggered D latch, where the tra
 The function block does not have an explicit internal state machine but relies on the implicit state of the embedded `E_D_FF_ANY`:
 
 - **Idle**: Waiting for an event on `I.E1`.
-
 - **Latching**: After receiving the event, the data value is transferred and output.
-
 - The internally stored value is retained until the next event.
 
-
 ## Application Scenarios
-
 - **Data Synchronization**: Reliable transfer of measured values or control data at defined times (e.g., clock pulse).
-
 - **Buffering**: Intermediate storage of values in sequence control systems between different function blocks.
-
 - **Register Creation**: Construction of shift registers or memory cells in modular automation systems.
 
 ## Comparison with Similar Function Blocks

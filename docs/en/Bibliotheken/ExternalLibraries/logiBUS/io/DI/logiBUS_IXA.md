@@ -1,35 +1,25 @@
 # logiBUS_IXA
-
 <img width="1838" height="367" alt="image" src="https://github.com/user-attachments/assets/fcf18e0e-a542-4642-a00f-1438f4caf5fb" />
-
 * * * * * * * * * *
-
 ## Introduction
 The logiBUS_IXA is a composite function block for processing Boolean input data. It serves as an interface for digital inputs and enables the initialization and querying of input signals via standardized service interfaces.
-
-
 ![logiBUS_IXA](logiBUS_IXA.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Service initialization event with the associated data QI, PARAMS, and Input
-
 - **REQ**: Service request event with the associated data value QI
 
 ### **Event Outputs**
-
 - **INITO**: Initialization confirmation with the associated data values QO and STATUS
 
 ### **Data Inputs**
-
 - **QI**: Boolean event input qualifier
 - **PARAMS**: Service parameters as a string
 - **Input**: Identifies inputs Q1 to Q8 with type logiBUS_DI_S and initial value "Invalid"
 
 ### **Data Outputs**
-
 - **QO**: Boolean event output qualifier
 - **STATUS**: Service status as a string
 
@@ -38,7 +28,6 @@ The logiBUS_IXA is a composite function block for processing Boolean input data.
 
 ## Functionality
 The logiBUS_IXA composite function block encapsulates the logiBUS_IX base function block and extends its functionality with additional adapter interfaces. Upon INIT events, parameters are forwarded to the internal IX block, which performs the initialization. IND events from the IX block are passed to the IN input adapter, while the data connections ensure the corresponding signal processing.
-
 
 ``` ## Technical Features
 - Uses the specific data type logiBUS_DI_S for input identification
@@ -54,7 +43,6 @@ The function block has two main states:
 2. **Initialized and ready for operation**: After successful INIT confirmation
 
 ## Application Scenarios
-
 - Connecting digital inputs in automation systems
 - Integration into logiBUS-based control architectures
 - Use in PLC systems with Boolean signal processing requirements
@@ -63,7 +51,6 @@ The function block has two main states:
 Compared to simple digital input blocks, logiBUS_IXA offers extended service functionalities with parameterization options and status feedback. The composite structure enables better reusability and enhanced diagnostic capabilities.
 
 ## 🛠️ Related exercises
-
 * [Uebung_001_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX.md)
 * [Uebung_001_AX_b](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
 * [Uebung_001c_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001c_AX.md)
@@ -107,7 +94,6 @@ Compared to simple digital input blocks, logiBUS_IXA offers extended service fun
 * [Uebung_160_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160_AX.md)
 * [Uebung_160b2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
 * [Exercise_177_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_177_AX.md)
-
 * [Exercise_178_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_178_AX.md)
 
 ## Conclusion
@@ -116,8 +102,4 @@ The logiBUS_IXA function block represents a robust and flexible solution for pro
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

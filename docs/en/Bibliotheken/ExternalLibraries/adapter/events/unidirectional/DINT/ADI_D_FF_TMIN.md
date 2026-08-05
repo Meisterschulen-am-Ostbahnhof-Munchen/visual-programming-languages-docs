@@ -1,12 +1,8 @@
 # ADI_D_FF_TMIN
-
 ![ADI_D_FF_TMIN](./ADI_D_FF_TMIN.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The function block **ADI_D_FF_TMIN** implements a data latch (D flip-flop) with a configurable minimum dwell time between two consecutive transfer events. It serves to save a data value at a specific event time and only update it again when a predefined time interval (Tmin) has elapsed since the last transfer.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -54,41 +50,29 @@ However, at least the time specified in **Tmin** must elapse between two consecu
 
 The INIT input sets the parameter Tmin and confirms this via INITO, without affecting the flip-flop itself.
 
-
 The function block (FB) internally uses the block `iec61499::events::E_D_FF_ANY_TMIN`, which encapsulates the actual logic (a D flip-flop with time control).
 
 ## Technical Features
-
 - **Adapter-based interface:** Instead of directly connected event and data ports, the inputs and outputs are implemented via unidirectional adapters (type `ADI`). This simplifies the reuse and separation of control and data flows.
-
 - **Minimum time guarantee:** The Tmin time is measured from the moment of the last valid output event. If an input event occurs too early, the output remains unchanged – the old value is retained.
-
 - **Initialization required:** The function block must first be initialized with a Tmin value via INIT before it responds to incoming adapter events.
-
 
 ## State Overview
 The function block (FB) has implicit state logic, which is represented by the internal `E_D_FF_ANY_TMIN`:
 
 - **Idle:** Waiting for the first valid event at I.E1 after initialization.
-
 - **Latched:** A value has been transferred; the timer for Tmin is running. New events at I.E1 are ignored until Tmin has expired.
-
 - **Ready:** Tmin has expired; the function block is ready for the next transfer.
 
 The state transitions are controlled by the events at I.E1 and the internal timer. Initialization returns the function block to the idle state.
 
 ## Application Scenarios
-
 - **Clock Decoupling in Industrial Applications:** Ensuring that data is transferred only at defined minimum intervals (e.g., for sensor queries with a fixed interval).
-
 - **Event Debouncing:** Prevents duplicate evaluations for closely spaced events (e.g., push-button or switching signals with bounce time).
-
 - **Data Storage in Safety-Critical Systems:** Once latched, values remain valid until the minimum time has elapsed – protecting against noise or transient disturbances.
 
 ## Comparison with Similar Function Blocks
-
 - **Standard D Flip-Flop (without Tmin):** A simple D flip-flop, such as `E_D_FF`, immediately adopts any value upon each event. This function block extends this functionality with a time lock.
-
 - **E_D_FF_ANY_TMIN:** This is the direct internal base function block. `ADI_D_FF_TMIN` encapsulates its functionality and offers an adapter interface instead of separate event/data ports – this increases flexibility when connecting to other adapter-based components.
 
 ## Conclusion

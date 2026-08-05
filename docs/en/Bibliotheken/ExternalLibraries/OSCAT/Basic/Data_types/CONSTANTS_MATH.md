@@ -1,9 +1,6 @@
 # CONSTANTS_MATH
-
 CONSTANTS_MATH
-
 ##Structure
-
 | Name | Type | Initial Value | Comment |
 | :--- | :--- | :--- | :--- |
 | PI | REAL | 3.14159265358979323846264338327950288 | Circle number PI |

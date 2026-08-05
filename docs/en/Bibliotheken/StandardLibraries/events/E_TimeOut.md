@@ -1,12 +1,8 @@
 # E_TimeOut
-
 ![E_TimeOut](https://user-images.githubusercontent.com/116869307/214142822-3b167702-112f-454a-a42f-62c5f7454561.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **E_TimeOut** is a standards-compliant function block (IEC 61499-1) for implementing timeout services. Version 1.0 offers simple yet effective timeout functionality through internal use of an E_DELAY block. The **E_TimeOut** is a composite function block. Within the network of a composite function block, each adapter added to its interface is represented by an adapter block, which looks like a function block. The interface elements of this adapter block are connected like a function block.
-
 ![E_TimeOut](E_TimeOut.svg)
 
 ## Interface Structure
@@ -15,20 +11,13 @@ The **E_TimeOut** is a standards-compliant function block (IEC 61499-1) for impl
 The block uses a **socket** of type `ATimeOut`. Since this is a socket, the signal directions are inverted compared to the adapter definition (plug):
 
 - **Inputs (received from the socket)**:
-
 - `START`: Starts the internal timer.
-
 - `STOP`: Stops the internal timer.
-
 - `DT` (TIME): The delay time to be used.
-
 - **Output (sent to the socket)**:
-
 - `TimeOut`: Signaled to the connected plug after the specified time has elapsed.
 
-
 ### **Internal Components**
-
 - `DLY` (E_DELAY): Core component for time control
 
 ## Functionality
@@ -36,13 +25,11 @@ The block uses a **socket** of type `ATimeOut`. Since this is a socket, the sign
 1. **Timeout Initialization**:
 
 - Upon a `START` event at the socket, the timer starts with the configured `DT` value.
-
 - Any further `START` event while the timer is running is ignored.
 
 2. **Timeout Termination**:
 
 - A `STOP` event immediately terminates the active timer. No `TimeOut` event is generated.
-
 
 3. **Timeout Trigger**:
 
@@ -57,11 +44,8 @@ The block uses a **socket** of type `ATimeOut`. Since this is a socket, the sign
 ✔ **Deterministic** timing behavior.
 
 ## Application Scenarios
-
 - **Network Communication**: Monitoring for a response within a fixed timeframe. When the response arrives, the timer is canceled via `STOP`.
-
 - **Device Control**: Simple watchdog functions that do not require resetting.
-
 - **Process Monitoring**: Ensuring that a process step does not exceed a maximum duration.
 
 ## ⚖️ Comparison with E_RTimeOut
@@ -75,8 +59,6 @@ The block uses a **socket** of type `ATimeOut`. Since this is a socket, the sign
 | `START` on running timer | Ignored | Restarts timer |
 
 | Adapter Type | ATimeOut | ARTimeOut |
-
-
 
 ``` ## 🛠️ Related exercises
 

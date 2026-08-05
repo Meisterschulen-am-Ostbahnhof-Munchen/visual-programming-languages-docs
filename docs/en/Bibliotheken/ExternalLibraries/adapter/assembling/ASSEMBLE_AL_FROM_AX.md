@@ -1,13 +1,8 @@
 # ASSEMBLE_AL_FROM_AX
-
 (Image of the function block is displayed here in the IDE – shows a function block with 64 sockets (left) and one plug (right))
-
 ![ASSEMBLE_AL_FROM_AX](./ASSEMBLE_AL_FROM_AX.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **ASSEMBLE_AL_FROM_AX** is used to combine up to 64 Boolean signals from **AX adapters** (type: `adapter::types::unidirectional::AX`) into a single **LWORD** value and output it via an **AL adapter** (type: `adapter::types::unidirectional::AL`). The block encapsulates the logic for bit combination and provides the result stably as soon as one of the input bits returns an event.
 
 ## Interface Structure
@@ -27,7 +22,6 @@ The function block does not have traditional event inputs (EVENT). Event control
 No traditional event outputs. The output of the assembled LWORD is event-driven via the **AL adapter (plug)** `OUT`.
 
 | Name | Type | Description |
-
 
 | Name | Type | Description |
 
@@ -75,19 +69,13 @@ The combined result is output as a 64-bit word via the AL adapter.
 
 4. **Output**: The stored value is made available as an LWORD via the AL plug `OUT`. Simultaneously, an event is generated at the flip-flop's output (EO), which triggers the connected AL adapter input (E1).
 
-
 The logic operates **event-driven**: The output is only updated when any input bit changes (via the event). This saves processing power and ensures a stable output.
 
 ## Technical Features
-
 - **Full Bit Mapping**: All 64 bits of an LWORD are derived from individual Boolean adapters. Exactly 64 sockets are required – no gaps.
-
 - **Event Synchronization**: An event from *any* bit adapter triggers a complete recalculation of the LWORD. It is not necessary to update all inputs simultaneously.
-
 - **Flip-Flop Buffering**: The composite value is buffered, so the output remains stable even if the inputs fluctuate during processing.
-
 - **Adapter-based interface**: The inputs and outputs are implemented as standardized 4diac adapters, enabling easy chaining with other adapter-based function blocks.
-
 - **Packages**: The function block is organized in the package `adapter::assembling`.
 
 ## State overview
@@ -95,23 +83,17 @@ The logic operates **event-driven**: The output is only updated when any input b
 The function block does not have an explicit state machine. The internal logic operates as a combination of two components:
 
 - **ASSEMBLE_LWORD_FROM_BOOLS**: Stateless – executes the assembly on every request.
-
 - **E_D_FF_ANY**: Has two states: stored value (Q) and current data input (D). The state changes on every rising edge at the CLK input.
 
 Event-driven behavior:
 
 - **Wait for event**: No calculation is performed; the output remains unchanged.
-
 - **Event Arrived**: Flip-flop assembly + clocking → output is updated.
 
 ## Application Scenarios
-
 - **Parallel Digital Inputs**: Combines 64 digital sensors or switches into a machine-readable LWORD for easy further processing.
-
 - **Bit-Oriented Controls**: In applications where many binary status messages (e.g., error bits, position feedback) need to be bundled.
-
 - **Fieldbus Communication**: An LWORD can be efficiently transmitted via PROFINET, EtherCAT, or similar; this function block converts the individual bits into the compact data format.
-
 - **Adapter-Based Module Libraries**: In modular control architectures based on standardized adapters, this function block can serve as a universal "bit collector."
 
 ## Comparison with Similar Function Blocks
@@ -137,5 +119,4 @@ The **ASSEMBLE_AL_FROM_AX** function block is a powerful tool for creating a com
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de]](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

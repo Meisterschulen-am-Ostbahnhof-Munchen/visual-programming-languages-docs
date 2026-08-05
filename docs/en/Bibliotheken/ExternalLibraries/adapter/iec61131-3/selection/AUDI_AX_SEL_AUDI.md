@@ -1,13 +1,9 @@
 # AUDI_AX_SEL_AUDI
-
 ![AUDI_AX_SEL_AUDI](./AUDI_AX_SEL_AUDI.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_AX_SEL_AUDI** implements a binary selection between two input values. It acts as a multiplexer, switching one of the two inputs to the output depending on a selector signal. Communication occurs exclusively via unidirectional adapters that encapsulate both event and data signals. This allows for flexible and type-specific integration into existing signal paths.
-
 ## Interface Structure
-
 ### **Event Inputs**
 The function block does not have dedicated event inputs. However, events are provided via the **Selector Adapter G**:
 
@@ -44,7 +40,6 @@ The FB does not have dedicated data outputs. The selected data value is output v
 
 | **OUT** | Plug (Output) | `adapter::types::unidirectional::AUDI` | Output field with event and data |
 
-
 ## Functionality
 The function block internally contains an instance of the IEC 61131 function block `F_SEL` (from the library `iec61131::selection`). The logic proceeds as follows:
 
@@ -55,7 +50,6 @@ The function block internally contains an instance of the IEC 61131 function blo
 3. **Selection**: `F_SEL` checks the value of **G.D1**. Typical Semantics (depending on the data type `AX`):
 
 - If the selector field is **False** (or 0), **IN0** is selected.
-
 - If the selector field is **True** (or not equal to 0), **IN1** is selected.
 
 4. **Output**: The selected signal is passed on to **OUT.D1**. Simultaneously, an event is sent to **OUT.E1** to inform downstream processing.
@@ -63,20 +57,15 @@ The function block internally contains an instance of the IEC 61131 function blo
 The internal flow is event-driven and avoids continuous read accesses, enabling efficient communication in time-controlled environments.
 
 ## Technical Features
-
 - **Pure Adapter Communication**: All interfaces are defined as unidirectional adapters. Event and data paths are combined within a single adapter, simplifying configuration in the 4diac IDE.
-
 - **Reuse of IEC 61131 libraries**: The selection logic is fully implemented by the standard function block `F_SEL`, which requires no additional state machines or complex algorithms.
-
 - **Type safety**: The adapters are specialized for the user-defined types `AUDI` and `AX`. This prevents miscoupling with incompatible signals at design time.
-
 - **No state of its own**: The function block itself is stateless – it simply forwards the signals to the internal `F_SEL`. The internal function block manages the selection logic autonomously.
 
 ## State overview
 The function block **AUDI_AX_SEL_AUDI** does **not have its own state machine**. The entire selection logic is executed by the inner `F_SEL` block, which itself is a pure function block without state memory. Therefore, its behavior is **stateless**:
 
 - After receiving an event at **G.E1**, the selection is made immediately and the result is output to **OUT.D1**.
-
 - There are no initialization, wait, or error states; the block is always ready for a new selector request.
 
 ## Application Scenarios
@@ -84,11 +73,8 @@ The function block **AUDI_AX_SEL_AUDI** does **not have its own state machine**.
 This block is ideally suited for the following applications in automation technology:
 
 - **Signal switching** between two sensors (e.g., temperature sensors, pressure transducers) depending on an operating mode or a manual switch.
-
 - **Bypass selection** in control paths: if one channel malfunctions, the system automatically switches to a backup channel.
-
 - **Parameter selection**: a selector field is used to choose between two fixed parameter sets (e.g., for different products).
-
 - **Test Mode**: Switching between a real and a simulated signal for commissioning or maintenance.
 
 The use of user-defined adapter types (`AUDI`, `AX`) allows for easy adaptation to project-specific data structures.
@@ -117,8 +103,4 @@ The **AUDI_AX_SEL_AUDI** is a specialized binary selector that leverages the adv
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

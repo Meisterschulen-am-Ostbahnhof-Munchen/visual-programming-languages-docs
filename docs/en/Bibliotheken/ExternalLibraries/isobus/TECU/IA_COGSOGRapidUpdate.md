@@ -1,11 +1,8 @@
 # IA_COGSOGRapidUpdate
-
 ![IA_COGSOGRapidUpdate](./IA_COGSOGRapidUpdate.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **IA_COGSOGRapidUpdate** serves as an ISOBUS adapter for the NMEA 2000 PGN 129026 messages "Course Over Ground (COG)" and "Speed Over Ground (SOG)" with support for rapid updates. It decouples the ISOBUS communication and provides the received navigation data and a timeout status via standardized adapter interfaces. The block was developed under the Eclipse Public License 2.0 and is optimized for use in agricultural control systems (TECU).
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -68,11 +65,8 @@ An event at **INIT** activates the function block. The **QI** input controls the
 The internal core (FB `I_CORE` of type `isobus::tecu::I_COGSOGRapidUpdate`) continuously receives NMEA 2000 PGN 129026 messages. As soon as new data is available, the following values are output via the corresponding adapters:
 
 - **COG**: Course over ground (e.g., in 0.01° increments)
-
 - **SOG**: Speed over ground (e.g., in 0.01 km/h)
-
 - **SID**: Sequence ID for synchronization
-
 - **COG_REF**: Reference (True or Magnetic)
 
 3. **Timeout Monitoring**
@@ -84,13 +78,9 @@ If no valid message is received within a configured time period, the function bl
 The **COG**, **SOG**, **SID**, and **COG_REF** adapters are triggered together with each valid data reception (event connection `IND`). The **TIMEOUT** adapter is triggered independently upon timeout.
 
 ## Technical Features
-
 - **NMEA 2000 PGN 129026** – This module is specifically designed to interpret this PGN, enabling rapid updates of COG and SOG.
-
 - **Adapters instead of direct inputs/outputs** – All navigation data is provided via unidirectional adapters (type `unidirectional::AUI`, `AX`, etc.), allowing for flexible further processing and encapsulation in higher-level networks.
-
 - **License and Origin** – This module is available under the Eclipse Public License 2.0 and was developed by **HR Agrartechnik GmbH** (Version 1.0, April 19, 2026, Author: Franz Höpfinger).
-
 
 **Adapters instead of direct inputs/outputs** – - **Integration in isobus::tecu** – The function block is part of the `isobus::tecu` library and is based on a low-level ISOBUS implementation.
 
@@ -112,13 +102,9 @@ The function block does not have explicitly modeled states; however, the followi
 | **Error** | Initialization failed (STATUS = error text) |
 
 ## Application Scenarios
-
 - **Agricultural Tractors** – Providing course and speed data for automatic steering systems or application maps.
-
 - **ISOBUS-based ECUs** – Integration into a TECU network for evaluating GPS/GNSS data.
-
 - **Fast Control Loops** – Utilizing the rapid update function for dynamic control variables (e.g., for site-specific treatment).
-
 - **Fault Monitoring** – Using the TIMEOUT adapter to detect data failures and activate redundancy mechanisms.
 
 ## Comparison with Similar Modules

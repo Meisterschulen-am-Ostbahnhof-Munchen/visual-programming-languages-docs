@@ -1,13 +1,8 @@
 # PUBLISH_7
-
 <img width="1180" height="416" alt="image" src="https://github.com/user-attachments/assets/f4ddc744-e21c-430b-979c-1cdd0463adf6" />
-
 * * * * * * * * * *
-
 ## Introduction
 The PUBLISH_7 function block is used to distribute data to one or more SUBSCRIBE_7 blocks. It enables the unacknowledged transmission of up to seven different data values via a publish-subscribe architecture.
-
-
 ![PUBLISH_7](PUBLISH_7.svg)
 
 ## Interface Structure
@@ -18,7 +13,6 @@ The PUBLISH_7 function block is used to distribute data to one or more SUBSCRIBE
 
 ### **Event Outputs**
 - **INITO**: Initialization acknowledgement with QO and STATUS
-
 - **CNF**: Acknowledgement that data has been sent with QO and STATUS
 
 ### **Data Inputs**
@@ -27,7 +21,6 @@ The PUBLISH_7 function block is used to distribute data to one or more SUBSCRIBE
 - **SD_1** to **SD_7** (ANY): Seven different data values of any type
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Quality indicator for output state
 - **STATUS** (WSTRING): Status information as a Unicode string
 
@@ -57,7 +50,6 @@ The PUBLISH_7 block initializes itself via the INIT event with a specific channe
 
 ## ⚖️ Comparison with Similar Blocks
 Compared to simpler PUBLISH blocks, PUBLISH_7 offers the ability to distribute seven different data values in parallel, while simpler variants typically support only one or a few data channels.
-
 
 ## Conclusion
 

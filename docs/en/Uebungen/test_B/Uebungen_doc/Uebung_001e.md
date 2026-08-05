@@ -1,15 +1,9 @@
 # Exercise_001e: DigitalInput_I1 negated to DigitalOutput_Q1
-
 ![Uebung_001e_network](./Uebung_001e_network.svg)
-
 *Note: This exercise does not include a separate image.*
-
 ---
-
 ## Introduction
-
 This exercise demonstrates the basic negation of a digital input signal. The digital input **Input_I1** (pin I1) is read, logically negated, and output to the digital output **Output_Q1** (pin Q1). This disables the output when the input is active and vice versa.
-
 
 *Note: This exercise does not include a separate image.*
 
@@ -33,47 +27,28 @@ This exercise demonstrates the basic negation of a digital input signal. The dig
 ### **DigitalInput_I1** (`logiBUS::io::DI::logiBUS_IX`)
 - **Type:** `logiBUS::io::DI::logiBUS_IX`
 - **Parameters:**
-
 - `QI` = `TRUE` (Qualifier – always active)
-
 - `Input` = `Input_I1` (physical pin I1)
-
 - **Event output:** `IND` – triggered as soon as the input value is updated
-
 - **Data output:** `IN` – the current digital state (BOOL) of the pin
-
 - **Functionality:** Reads the digital state of input I1 and makes it available at output `IN`. An incoming event (e.g., via the network) activates the readout.
 
-
 ### **F_NOT_BOOL** (`iec61131::bitwiseOperators::F_NOT_BOOL`)
-
 - **Type:** `iec61131::bitwiseOperators::F_NOT_BOOL`
-
 - **Parameters:** None
-
 - **Event Input:** `REQ` – starts the negation
-
 - **Event Output:** `CNF` – confirms the completed negation
-
 - **Data Input:** `IN` (BOOL) – value to be negated
-
 - **Data Output:** `OUT` (BOOL) – negated value
-
 - **Functionality:** Performs a logical NOT operation on the Boolean input value. `IN = TRUE` becomes `OUT = FALSE` and vice versa.
-
 
 ### **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QX`)
 - **Type:** `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters:**
-
 - `QI` = `TRUE` (Qualifier – always active)
-
 - `Output` = `Output_Q1` (Physical Pin Q1)
-
 - **Event Input:** `REQ` – triggers setting the output
-
 - **Data Input:** `OUT` (BOOL) – desired output state
-
 - **Functionality:** Sets the digital output Q1 to the value present at input `OUT` as soon as an event occurs at the input The input `REQ` arrives.
 
 ---
@@ -90,11 +65,9 @@ The flow is strictly event-driven:
 
 4. **Set output:** The `CNF` event is sent via another **event connection** to the event input `REQ` of `DigitalOutput_Q1`. Simultaneously, the negated data value from `F_NOT_BOOL.OUT` is set to the data input `DigitalOutput_Q1.OUT` via a **data connection**. This updates output Q1 with the negated value.
 
-
 4. **Set output:** The `CNF` event is sent to the event input `REQ` of `DigitalOutput_Q1` via another **data connection**. **Summary of Connections:**
 
 - Event: `DigitalInput_I1.IND` → `F_NOT_BOOL.REQ` → `F_NOT_BOOL.CNF` → `DigitalOutput_Q1.REQ`
-
 - Data: `DigitalInput_I1.IN` → `F_NOT_BOOL.IN` → `F_NOT_BOOL.OUT` → `DigitalOutput_Q1.OUT`
 
 This exercise can be performed in 4diac by starting the application (e.g., with a simulation run). Observe the behavior: Output Q1 is active only when input I1 is inactive (and vice versa).
@@ -108,7 +81,6 @@ Exercise **Exercise_001e** implements a simple negation of a digital input using
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

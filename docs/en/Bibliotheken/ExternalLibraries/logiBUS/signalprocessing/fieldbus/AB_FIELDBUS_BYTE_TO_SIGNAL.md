@@ -1,11 +1,8 @@
 # AB_FIELDBUS_BYTE_TO_SIGNAL
-
 ![AB_FIELDBUS_BYTE_TO_SIGNAL](./AB_FIELDBUS_BYTE_TO_SIGNAL.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AB_FIELDBUS_BYTE_TO_SIGNAL** mirrors an incoming byte signal (via the adapter *IN*) to the output (*OUT*) if the signal is recognized as valid. Validity is indicated by a separate output (*VALID*). The block encapsulates the processing of a fieldbus byte signal and ensures that only valid data is passed on to the subsequent logic. It is based on an internal `FIELDBUS_BYTE_TO_SIGNAL` block, supplemented by a D flip-flop for stable output of the validity signal.
-
 ## Interface Structure
 The function block has **no** direct event or data inputs/outputs at the top level. All communication takes place via three **adapter interfaces**:
 
@@ -30,7 +27,6 @@ None (events are sent via the plug adapters `OUT` and `VALID`).
 ### **Data Inputs**
 None (data is received via the socket adapter `IN`).
 
-
 ### ### **Data Outputs**
 
 None (data is sent via the plug adapters `OUT` and `VALID`).
@@ -40,19 +36,16 @@ None (data is sent via the plug adapters `OUT` and `VALID`).
 **IN (Socket)**
 
 - **E1**: Event input – triggers the processing of a new byte value.
-
 - **D1**: Data input – the byte to be processed (e.g., a fieldbus datagram).
 
 **OUT (Plug)**
 
 - **E1**: Event output – activated after successful mirroring of a valid signal.
-
 - **D1**: Data output – the mirrored byte signal (only if the value is valid).
 
 **VALID (Plug)**
 
 - **E1**: Event output – activated with every processing cycle, regardless of validity.
-
 - **D1**: Data output (BOOL) – `TRUE` if the currently processed signal is valid; otherwise, `FALSE`.
 
 ## Functionality
@@ -70,13 +63,9 @@ None (data is sent via the plug adapters `OUT` and `VALID`).
 Thus, the byte is always passed to `OUT` when it is valid. The validity state is retained until the next processing iteration.
 
 ## Technical Features
-
 - **Adapter-based communication**: The function block uses only adapter interfaces, which enables a modular and typed connection in the 4diac IDE.
-
 - **D flip-flop for debouncing**: The validity signal is clocked by a flip-flop to ensure stability and prevent DIN rail effects.
-
 - **License**: This component is released under the **Eclipse Public License 2.0** (Copyright HR Agrartechnik GmbH).
-
 - **Compiler package**: `logiBUS::signalprocessing::fieldbus` – specifically for fieldbus applications.
 
 ## State overview
@@ -95,13 +84,9 @@ The component does not have an explicit state machine at the top level; the stat
 The state is cycled through in each cycle.
 
 ## Application Scenarios
-
 - **Fieldbus Integration**: Receiving a byte value from a fieldbus (e.g., CAN, Profibus) and forwarding it to a control logic, whereby only valid telegrams are passed through.
-
 - **Signal Conditioning**: Converting a raw byte stream into a clocked, validation-checked signal for downstream function blocks.
-
 - **Error Detection**: The function block can be combined with an external validation checker connected to the `IN` adapter.
-
 
 ## Comparison with Similar Function Blocks
 Simpler **Mirror** function blocks forward a signal without validation. This function block adds explicit validation and outputs the validity signal separately. Unlike a purely flip-flop-based hold function block, it processes a byte and not just Boolean values. The internal `FIELDBUS_BYTE_TO_SIGNAL` handles the specific fieldbus interpretation.
@@ -109,11 +94,9 @@ Simpler **Mirror** function blocks forward a signal without validation. This fun
 ## Conclusion
 The `AB_FIELDBUS_BYTE_TO_SIGNAL` is a specialized function block for the safe transmission of fieldbus byte signals. The combination of mirroring and validation makes it ideal for real-time applications where only valid data may be processed. The adapter-based interface allows for easy integration into existing 4diac projects.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

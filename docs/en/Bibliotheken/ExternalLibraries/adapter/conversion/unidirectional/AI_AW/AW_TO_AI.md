@@ -1,13 +1,8 @@
 # AW_TO_AI
-
 ![AW_TO_AI](./AW_TO_AI.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **AW_TO_AI** function block is a composite function block that converts a unidirectional **WORD adapter (AW)** to a unidirectional **INT adapter (AI)**. It encapsulates the type conversion from 16-bit word values to integer values, thus enabling the seamless integration of components that use different adapter types.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -19,7 +14,6 @@ The following events are received via the connected AW socket:
 |------|--------------|
 
 | E1 (AW_IN.E1) | Trigger for converting the incoming WORD value |
-
 
 ### **Event Outputs**
 
@@ -78,13 +72,9 @@ The function block contains an instance of the standard conversion block `F_WORD
 All processing is strictly event-driven: Conversion only occurs when a new event is received at the input.
 
 ## Technical Features
-
 - **Pure Data Conversion:** No states are stored, nor is any additional logic executed.
-
 - **Standard Library:** The `F_WORD_TO_INT` used is an established conversion module and ensures a correct mapping of the WORD value (0…65535) to the INT value (-32768…32767).
-
 - **Unidirectional:** Both the input and output adapters are unidirectional, meaning they transmit event and data flows in only one direction (input → output).
-
 - **No data loss due to type conversion:** The bit width remains identical (16 bits); only the interpretation as unsigned (WORD) or signed (INT) changes.
 
 ## State Overview
@@ -92,24 +82,16 @@ All processing is strictly event-driven: Conversion only occurs when a new event
 The FB is a **Composite FB** and does not have its own state machine (ECC). Its behavior is entirely determined by the wiring of the internal block. Only the following implicit states exist:
 
 - **Idle:** Waiting for an event at the input.
-
 - **Conversion active:** From the receipt of `AW_IN.E1` until the arrival of `Convert.CNF`.
 
 ## Application Scenarios
-
 - **Adapter conversion in heterogeneous systems:** A control module operates with INT values, but a connected sensor delivers WORD data via an AW adapter.
-
-
 - **Library Integration:** Existing function blocks that only accept an AI adapter should be connected to components that provide an AW adapter.
-
 - **Prototype Systems:** Rapid coupling of different function blocks during development without changing the underlying adapter definitions.
 
 ## Comparison with Similar Function Blocks
-
 - **AW_TO_AI** converts **WORD → INT** (unidirectionally).
-
 - Comparable converters from the same library (`iec61131::conversion`) cover other type conversions, e.g., `F_INT_TO_WORD` or `F_WORD_TO_DINT`. These are available as traditional function blocks without adapters.
-
 - If bidirectional conversion or other adapter types are required, similar composite function blocks with corresponding conversion blocks are conceivable (e.g., `AI_TO_AW`).
 
 ## Conclusion

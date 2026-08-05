@@ -1,30 +1,21 @@
 # F_LWORD_AS_STRING
-
 <img width="1478" height="214" alt="F_LWORD_AS_STRING" src="https://github.com/user-attachments/assets/29fc831d-b4b3-4e7c-8264-93a698db1ab6" />
-
 * * * * * * * * * *
 ## Introduction
 The function block `F_LWORD_AS_STRING` converts a `LWORD` data type to a `STRING` data type. This block is particularly useful when large binary data (64-bit) needs to be converted into a readable string.
-
 ![F_LWORD_AS_STRING](F_LWORD_AS_STRING.svg)
-
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `REQ`: Starts the conversion. This event input is linked to the data input `IN`.
 
-
 ### **Event Outputs**
-
 - `CNF`: Signals the completion of the conversion. This event output is linked to the data output `OUT`.
 
 ### **Data Inputs**
-
 - `IN` (LWORD): The input value to be converted.
 
 ### **Data Outputs**
-
 - `OUT` (STRING): The result of the conversion.
 
 ### **Adapters**
@@ -35,7 +26,6 @@ The function block performs the conversion as soon as the `REQ` event is trigger
 
 ## Technical Features
 - The function block uses the standard algorithm `LWORD_AS_STRING` for conversion.
-
 - The block is part of the `iec61131::conversion` package.
 
 ## State Overview
@@ -47,9 +37,7 @@ The function block performs the conversion as soon as the `REQ` event is trigger
 3. **Completion State**: After successful conversion, the `CNF` event is triggered.
 
 ## Application Scenarios
-
 - Conversion of large binary data into readable strings.
-
 - Use in systems that need to work with binary and textual data.
 
 ## ⚖️ Comparison with Similar Function Blocks

@@ -1,12 +1,8 @@
 # ATM_AX_TON
-
 ![ATM_AX_TON](./ATM_AX_TON.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **ATM_AX_TON** is a function block for on-delay. It implements standard timer functionality according to IEC 61499-2, which is controlled via an adapter interface (AX/AT). The block allows a timer to be started via an input adapter and the output state and confirmation of completion to be provided via an output adapter.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,7 +49,6 @@ The input adapter **IN** provides the start pulse (REQ) via its event **E1** and
 
 The desired delay time is provided via the adapter **PT** (via **PT.D1**). Once the timer is running, the output **Q.D1** is set to TRUE after this delay time has elapsed.
 
-
 3. **Output Signal and Acknowledgement:**
 
 The output adapter **Q** outputs the current timer state via **Q.D1** (TRUE when the delay time has elapsed, FALSE when the input goes to FALSE). The event **Q.E1** is sent after each state change (CNF of the internal E_TON).
@@ -66,17 +61,11 @@ According to the specification, the event input **EIPT** is used to set the lead
 
 If **IN** goes to FALSE, the timer is immediately reset and **Q.D1** becomes FALSE (without delay).
 
-
 ## Technical Features
-
 - **Adapter-Based Interface:** The function block uses only adapters (AX and ATM) for communication, not traditional input/output grooves. This enables flexible encapsulation and reuse in complex systems.
-
 - **Unidirectional Adapters:** The adapters used are unidirectional (AX for Boolean values and ATM for time values). The function block expects the adapters to be correctly integrated into the higher-level hierarchy.
-
 - **Unconnected Event Input EIPT:** The **EIPT** input is defined but not connected to the internal E_TON. This could indicate a planned extension or external use by the user. In the current version, it has no direct function within the function block network.
-
 - **Authors and Version:** The function block was originally developed by Franz Höpfinger (HR Agrartechnik GmbH) and later revised by Patrick Aigner (version 3.0, April 2025). It is available under the Eclipse Public License 2.0.
-
 
 ## State Overview
 
@@ -96,15 +85,10 @@ The FB itself does not manage its own state machine – the state logic resides 
 
 | FALSE (any) | Output remains FALSE | FALSE |
 
-
 ## Application Scenarios
-
 - **Machine Control:** Delaying the activation of drives or valves to prevent multiple components from starting simultaneously.
-
 - **Signal Conditioning:** Debouncing switching signals by only considering a short pulse as valid after a defined time.
-
 - **Process Automation:** Initiating subsequent steps only after a waiting period (e.g., in conveyor belts or dosing systems).
-
 - **Adapter Integration:** Use in systems already based on the AX/AT adapter protocol without additional data lines.
 
 ## Comparison with Similar Function Blocks
@@ -127,16 +111,9 @@ The **ATM_AX_TON** differs in its pure adapter interface and the lack of direct 
 
 The **ATM_AX_TON** is a ready-made on-delay timer with a modern, adapter-based interface. It simplifies the integration of time delays into larger systems that already use the AX/AT concept. The unconnected **EIPT** input offers potential for future expansions or customer-specific adaptations. Overall, the module is robust, well-documented, and available under an open-source license.
 
-
 The **ATM_AX_TON** is a ready-to-use on-delay timer with a modern, adapter-based interface. It simplifies the integration of time delays into larger systems that already use the AX/AT concept. The unconnected **EIPT** input offers potential for future expansions or customer-specific adaptations. Overall, the module is robust, well-documented, and available under an open-source license.
-
-
 
 The **ATM_AX_TON** is a ready-to-use, adapter-based interface. ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-
-
-```

@@ -1,13 +1,9 @@
 # ALR_D_FF_TMIN
-
 ![ALR_D_FF_TMIN](./ALR_D_FF_TMIN.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_D_FF_TMIN** implements a clock-edge-triggered data latch flip-flop (D flip-flop) with a minimum inter-disposal time (MIT) between two consecutive event outputs. It enables the latching of a data value upon receiving an event and ensures that the output event pulse does not occur faster than a definable time interval. This is particularly useful for protecting downstream systems from overload or for maintaining minimum time intervals in event communication.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Event | Type | Comment |
@@ -40,23 +36,17 @@ The function block **ALR_D_FF_TMIN** implements a clock-edge-triggered data latc
 
 | Adapter | Direction | Type | Comment |
 
-
 | Adapter | Direction | Type | Comment |
 
-
 | Adapter | Direction | Type | Comment |
-
 
 | Tmin | TIME | Minimum wait time between two EO events |
 
-
 ### **Data Outputs**
-
 
 ### **Adapter**
 
 | Adapter | Direction | Type | Comment |
-
 
 | Adapter | | ... |---------|----------|-------------|-----------------------------------|
 
@@ -64,9 +54,7 @@ The function block **ALR_D_FF_TMIN** implements a clock-edge-triggered data latc
 
 | Q | Plug | ALR (unidirectional) | Output value (`D1`) and acknowledgement (`E1`) |
 
-
 The unidirectional adapter `ALR` has an event input `E1` and a data input `D1` (socket side) and an event output `E1` and a data output `D1` (plug side). The exact semantics of `E1` and `D1` are application-specific; here, `E1` serves as the clock signal and `D1` as the data value to be latched.
-
 
 ``` ## Functionality
 After initialization (INIT), the function block operates as follows:
@@ -82,13 +70,9 @@ If another `I.E1` event arrives within the waiting time, it is ignored (or proce
 The data value is updated on every valid clock cycle, but the event output is delayed.
 
 ## Technical Features
-
 - **Composite Function Block**: The function block is implemented as a composite function block and internally uses the function block `iec61499::events::E_D_FF_ANY_TMIN`. The logic of the actual flip-flop and the timing control are encapsulated there.
-
 - **Universal Time Interval**: `Tmin` can be set at runtime via INIT and is not fixed.
-
 - **Buffered Events**: Since the event output is delayed, incoming clock events can be lost during the waiting period unless the internal function block buffers them (not specified here). Typically, they are simply ignored.
-
 - **Adapter-based interface**: The use of adapters enables flexible interconnection in modular control applications without the need for hardwiring.
 
 ## State overview
@@ -96,30 +80,19 @@ The data value is updated on every valid clock cycle, but the event output is de
 The function block does not have explicit states but operates event-driven:
 
 - **Idle**: Waiting for `I.E1` (after INIT).
-
 - **Latching**: The data value is transferred upon `I.E1`, and `Q.E1` is triggered after `Tmin` has expired.
-
 - **Blocked**: While `Tmin` has not yet expired, further `I.E1` are ignored.
-
 - After the waiting period expires, the function block returns to the idle state.
 
-
 ## Application Scenarios
-
 - **Sensor Signal Debouncing**: A sensor delivers events faster than the subsequent controller can process them. `Tmin` defines the minimum interval.
-
 - **Pulse Width Limiting**: Ensures that actuator controls are not switched too quickly in succession (e.g., valves, motors).
-
 - **Clock Synchronization**: When a data value is latched with an asynchronous clock and only passed on after a defined dead time.
-
 - **Safety Functions**: Prevents "rapid-fire" commands in critical applications.
 
 ## Comparison with Similar Function Blocks
-
 - **E_D_FF_ANY_TMIN**: This is the internal function block – it offers the same functionality, but without the adapter interface. `ALR_D_FF_TMIN` encapsulates this in a more user-friendly, adapter-based form.
-
 - **Standard IEC 61499 D flip-flops**: These often lack time-based control of output events. The function block described here extends this functionality with the `Tmin` delay.
-
 - **Function block with TON/Timer**: A simple timer would only trigger after a delay but would not hold a data value. The combination with a latch is specific.
 
 ## Conclusion

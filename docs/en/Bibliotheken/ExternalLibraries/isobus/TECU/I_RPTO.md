@@ -1,43 +1,28 @@
 # I_RPTO
-
 * * * * * * * * * *
-
 ## Introduction
 The **I_RPTO** (Rear Power Take-Off) is a standards-compliant function block for controlling and monitoring the rear power take-off (PTO), developed under the EPL-2.0 license.
-
 Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise control of PTO parameters in agricultural machinery.
-
-
 ![I_RPTO](I_RPTO.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT`: Initialization Request (with qualifier `QI`)
 
 ### **Event Outputs**
-
 - `INITO`: Initialization Confirmation (with status)
-
 - `IND`: Indication Event with all PTO Parameters
-
 - `TIMEOUT`: Timeout Event
 
 ### **Data Inputs**
-
 - `QI` (BOOL): Qualifier for Initialization
 
 ### **Data Outputs**
-
 - `QO` (BOOL): Qualifier for Output Events
-
 - `STATUS` (STRING): Operating status message
-
 - `Q_timeout` (BOOL): Timeout indicator
-
 - `timestamp_timeout` (DINT): Timeout timestamp
-
 - `timestamp_data` (DINT): PTO data timestamp
 
 ## PTO parameters
@@ -84,19 +69,16 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise
 1. **Initialization**:
 
 - `INIT` with `QI`=TRUE starts system calibration
-
 - `INITO` confirms operational readiness with `QO` and `STATUS`
 
 2. **Speed Control**:
 
 - `IND` provides actual and target speeds
-
 - Automatic adjustment to load changes
 
 3. **Error Handling**:
 
 - `TIMEOUT` in case of communication problems
-
 - Detailed error codes in `REAR_PTO_EXIT_REASON_CODE`
 
 ## Technical Features
@@ -108,7 +90,6 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise
 ✔ **64-Level Fault Diagnostics** with Detailed Codes
 
 ## Application Scenarios
-
 - **Agricultural Machinery**: Drive for Combine Harvesters and Balers
 - **Speed Control**: Precise Adaptation to Implements
 - **Energy Efficiency**: Economy Mode for Part-Load Operation
@@ -129,9 +110,7 @@ Diagnostic Scope | 64 Codes | 8 Codes | 128 Codes |
 Response Time | <100ms | 200ms | 50ms |
 
 ## 🛠️ Related Exercises
-
 * [Exercise_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)]
-
 * [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)]
 
 ## Conclusion

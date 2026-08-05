@@ -1,11 +1,8 @@
 # AQ
-
 ![AQ](./AQ.svg)
-
 * * * * * * * * * *
 ## Introduction
 The `AQ` adapter provides a unidirectional interface (plug side) for transmitting an event and a byte value (used for 2 bits). It serves as a standard definition for communication between function blocks according to IEC 61499-1 and enables simple, directed data transfer.
-
 ## Interface Structure
 ### **Event Inputs**
 None.
@@ -37,11 +34,8 @@ The `AQ` adapter defines a unidirectional connection. A connected function block
 
 ## Technical Features
 - **Unidirectional**: Only event and data outputs are present; no inputs. Suitable for plug pages in adapter pairings.
-
 - **Data Usage**: Of the 8 bits of the byte value, only the lower 2 bits are considered significant. The remaining bits should be set to `0` or ignored by the sending function block.
-
 - **Event + Data**: The event `E1` is linked to the data output `D1` (`With` relation). Both are sent together.
-
 - **Compact**: Minimal interface with one event and one byte.
 
 ## State Overview
@@ -49,11 +43,8 @@ The `AQ` adapter defines a unidirectional connection. A connected function block
 The adapter itself has no internal state. The sending function block controls the outputs based on its own state machine. The adapter simply defines the protocol: Events and data are transmitted together.
 
 ## Application Scenarios
-
 - Transmission of 2-bit status information (e.g., operating state “On/Off/Fault” or two separate flags).
-
 - Simple command transmission with encoded bytes (e.g., 2-bit control words in automation systems).
-
 - As part of a higher-level adapter pairing for minimal, directed communication between function blocks.
 
 ## Comparison with Similar Function Blocks

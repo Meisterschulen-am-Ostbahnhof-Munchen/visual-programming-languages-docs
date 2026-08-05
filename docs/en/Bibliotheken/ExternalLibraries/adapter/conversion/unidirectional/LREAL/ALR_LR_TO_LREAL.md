@@ -1,13 +1,8 @@
 # ALR_LR_TO_LREAL
-
 ## Introduction
 The ALR_LR_TO_LREAL function block is a composite function block used to convert the ALR adapter format to an LREAL value.
-
-
 ![ALR_LR_TO_LREAL](ALR_LR_TO_LREAL.svg)
-
 ## Interface Structure
-
 ### **Event Inputs**
 - No direct event inputs available
 

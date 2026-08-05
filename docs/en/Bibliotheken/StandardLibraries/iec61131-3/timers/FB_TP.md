@@ -1,14 +1,9 @@
 # FB_TP
-
 <img width="1339" height="243" alt="image" src="https://github.com/user-attachments/assets/81d9eac8-28d0-415d-9678-95305521054c" />
-
 * * * * * * * * * *
-
 ## Introduction
 **Important note: This function block only functions correctly if it is called cyclically.**
-
 The FB_TP (Timer Pulse) is a standardized timer function block according to IEC 61131-3 that provides a pulsed output function. The function block generates a pulse with a defined duration, independent of the duration of the input signal.
-
 
 ![FB_TP](FB_TP.svg)
 
@@ -22,12 +17,10 @@ The FB_TP (Timer Pulse) is a standardized timer function block according to IEC 
 
 ### **Data Inputs**
 - **IN**: Input signal (BOOL) - Controls the start of the timer
-
 - **PT**: Pulse Time (TIME) - Defines the duration of the output pulse
 
 ### **Data Outputs**
 - **Q**: Output signal (BOOL) - Outputs the current state of the timer
-
 - **ET**: Elapsed Time (TIME) - Displays the elapsed time of the current pulse
 
 ### **Adapters**
@@ -35,7 +28,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The FB_TP functions as a monostable multivibrator (one-shot). On a rising edge at the IN input, the timer starts and sets the Q output to TRUE for the duration defined in PT. The elapsed time is continuously output at the ET output. After the set time PT has expired, Q is automatically reset to FALSE, regardless of the state of the IN input.
-
 
 When a rising edge is detected at the IN input, the timer starts and sets the Q output to TRUE for the duration defined in PT. ## Technical Features
 - Time measurement is independent of the input signal duration
@@ -59,11 +51,9 @@ When a rising edge is detected at the IN input, the timer starts and sets the Q 
 ## ⚖️ Comparison with similar function blocks
 - **FB_TON**: Switch-on delay - Q only becomes active after PT has elapsed
 - **FB_TOF**: Switch-off delay - Q remains active for PT after IN reset
-
 - **FB_TP**: Pulse generator - Generates a fixed pulse independent of IN
 
 ## 🛠️ Related exercises
-
 * [Exercise_020f2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f2.md)
 * [Exercise_020f2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
 

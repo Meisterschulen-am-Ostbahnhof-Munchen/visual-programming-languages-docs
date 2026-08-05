@@ -1,12 +1,8 @@
 # AULI_TO_AI
-
 ![AULI_TO_AI](./AULI_TO_AI.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AULI_TO_AI** is a composite function block (FB) that converts an incoming adapter of type **AULI** (ULINT-based) into an outgoing adapter of type **AI** (INT-based). It serves as an interface converter between components that use different data types for analog values.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -18,11 +14,9 @@ The function block itself has no direct event inputs. Event control is handled v
 There are also no dedicated event outputs at this level; output events are passed on via the AI_OUT adapter.
 
 ### **Data Inputs**
-
 - No direct data inputs at the block level. The data is transferred to the block via socket `AULI_IN`.
 
 ### **Data Outputs**
-
 - No direct data outputs at the block level. The converted data is output via plug `AI_OUT`.
 
 ### **Adapters**
@@ -50,13 +44,9 @@ The function block internally uses the predefined function block `F_ULINT_TO_INT
 This enables seamless, event-driven conversion from AULI to AI adapters.
 
 ## Technical Features
-
 - **Composition:** The function block is implemented as a composite function block, meaning it encapsulates the logic in a clear and concise block and uses a standardized conversion block.
-
 - **Unidirectional Adapters:** Both `AULI_IN` and `AI_OUT` are unidirectional adapters that support data flow in only one direction.
-
 - **Event-driven:** The conversion process only starts upon an incoming event, enabling efficient processing.
-
 - **License notice:** This function block is subject to the Eclipse Public License 2.0.
 
 ## State overview
@@ -66,17 +56,12 @@ Since the function block operates purely event-driven and does not store any int
 Internal flow (simplified):
 
 - **Idle:** Waiting for an event from `AULI_IN`.
-
 - **Processing:** Conversion is running (instant, as it is a synchronous function block).
-
 - **Done:** Output event is sent, return to Idle.
 
 ## Application scenarios
-
 - **System integration:** Connecting components that use different data types for analog signals (e.g., a sensor provides ULINT, an actuator expects INT).
-
 - **Adapter Cascades:** Extending protocol conversions in automation projects.
-
 - **Data Type Conversion:** When a fieldbus or gateway module only provides ULINT values, but the control system requires INT.
 
 ## Comparison with Similar Function Blocks

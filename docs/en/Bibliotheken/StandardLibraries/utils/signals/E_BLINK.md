@@ -1,35 +1,24 @@
 # E_BLINK
-
 ![E_BLINK Funktionsblock](https://github.com/user-attachments/assets/29d3de7c-a775-4796-9c22-096e97347a6e)
-
 * * * * * * * * * *
-
 ## Introduction
 The E_BLINK function block simulates a flashing signal that alternates between the states TRUE and FALSE. The duration of each state can be configured individually. Unlike similar implementations, this function block always returns to FALSE upon the STOP event.
-
 ![E_BLINK](E_BLINK.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **START**: Starts the periodic generation of events. Uses the data `TIMELOW` and `TIMEHIGH`.
-
 - **STOP**: Stops the generation of events and sets the output to FALSE.
 
-
 ### **Event Outputs**
-
 - **CNF**: Acknowledges execution and returns the current output value `OUT`.
 
 ### **Data Inputs**
-
 - **TIMELOW**: Time in milliseconds during which the output is FALSE.
-
 - **TIMEHIGH**: Time in milliseconds during which the output is TRUE.
 
 ### **Data Outputs**
-
 - **OUT**: The output value that toggles between TRUE and FALSE.
 
 ### **Adapters**
@@ -40,7 +29,6 @@ The E_BLINK function block internally uses an E_PULSE timer and an E_CYCLE gener
 
 ## Technical Features
 - The function block always resets the output to FALSE upon the STOP event.
-
 - The implementation differs from similar solutions like CODESYS BLINK, which retain the last state.
 
 ## State Overview

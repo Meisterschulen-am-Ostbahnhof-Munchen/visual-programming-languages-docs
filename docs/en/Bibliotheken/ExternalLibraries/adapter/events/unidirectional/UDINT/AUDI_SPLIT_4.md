@@ -1,13 +1,8 @@
 # AUDI_SPLIT_4
-
 ![AUDI_SPLIT_4](./AUDI_SPLIT_4.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AUDI_SPLIT_4** is used to distribute an incoming unidirectional **AUDI** adapter signal to four identical outputs. It functions as a simple signal distributor (fan-out) for the generic adapter type **AUDI**. The block is implemented as a generic function block (Generic FB) and can be adapted to different adapter types via the class `GEN_AUDI_SPLIT`.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -21,7 +16,6 @@ No event outputs available.
 ### **Data Inputs**
 
 No data inputs available.
-
 
 ### **Data Outputs**
 
@@ -49,28 +43,20 @@ The module operates **eventlessly** and **continuously**:
 
 As soon as socket `IN` is connected to an AUDI adapter, the data or signals transmitted via this adapter are forwarded unchanged to all four output adapters (`OUT1` to `OUT4`). No processing or conversion of the data takes place – the module functions solely as a passive distributor (splitter). Since no events or state changes are involved, the distribution occurs implicitly through the connection structure.
 
-
 ``` ## Technical Features
 
 - **Generic Function Block**: The function block is declared as a generic type with the class name `'GEN_AUDI_SPLIT'`. This allows the specific adapter type (e.g., a specialized AUDI subtype) to be adapted at design time or through code generation.
-
 - **Unidirectional Adapters**: All adapters used (`AUDI`) are unidirectional, meaning data flows only from the socket to the plugs.
-
 - **No Event Control**: The function block has no event inputs or outputs. Signal distribution is data flow-driven and requires no explicit triggering.
-
 - **Scalability**: The function block is specifically designed for 4 outputs. Variants exist for other numbers (e.g., `AUDI_SPLIT_2`, `AUDI_SPLIT_3`).
-
 
 ## State Overview
 
 This function block does **not have a state machine (ECC)**, as it does not process events or store an internal state. Its function is purely combinatorial: The outputs continuously reflect the input.
 
 ## Application Scenarios
-
 - **Signal Distribution in Control Systems**: An audio signal provided by a sensor or higher-level system is to be passed on in parallel to multiple consumers (actuators, visualizations, logic units).
-
 - **Test and Simulation Environments**: A single test signal is split across multiple parallel test paths.
-
 - **Prototypical Adapter Coupling**: When multiple downstream blocks require the same input signal without the need for logical replication.
 
 ## Comparison with Similar Function Blocks

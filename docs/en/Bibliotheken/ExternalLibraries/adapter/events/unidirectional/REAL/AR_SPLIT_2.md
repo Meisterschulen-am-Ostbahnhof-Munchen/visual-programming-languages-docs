@@ -1,11 +1,8 @@
 # AR_SPLIT_2
-
 ![AR_SPLIT_2](./AR_SPLIT_2.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **AR_SPLIT_2** is a generic function block that splits an incoming adapter of type `adapter::types::unidirectional::AR` into two separate outputs (OUT1, OUT2). It serves to forward a signal to two subsequent function blocks without modifying the data. The function block is implemented as a generic type (`GEN_AR_SPLIT`) and is parameterized at runtime.
-
 ## Interface Structure
 ### **Event Inputs**
 No event inputs available.
@@ -34,13 +31,9 @@ No data outputs available.
 ## Functionality
 This module forwards the AR signal present at socket **IN** unchanged to both plugs **OUT1** and **OUT2**. No data manipulation, filtering, or delay occurs. The distribution is purely structural: Each output receives its own copy of the reference to the underlying AR object.
 
-
 ## Technical Features
-
 - **Generic Implementation**: The function block uses the generic class name attribute (`eclipse4diac::core::GenericClassName`) with the value `'GEN_AR_SPLIT'`, allowing for application-specific configuration.
-
 - **Unidirectional Adapters**: All adapters are of type `adapter::types::unidirectional::AR` (forward direction only).
-
 - **No State Automation**: The function block does not have an explicit ECC (Execution Control Chart); signal routing is direct and event-independent.
 
 ## State Overview
@@ -48,11 +41,8 @@ This module forwards the AR signal present at socket **IN** unchanged to both pl
 The function block does not implement state automation. Its functionality is limited to passively routing the input signal to both outputs. Therefore, state visualization is not required.
 
 ## Application Scenarios
-
 - **Signal Distribution**: Splitting an AR-based sensor signal to two parallel-operating control components.
-
 - **Redundancy**: Providing the same AR data stream for a primary and a redundant system.
-
 - **Debugging**: Connecting an analysis or logging module in parallel to the existing path without interrupting the original signal chain.
 
 ## Comparison with Similar Modules
@@ -64,7 +54,6 @@ The **AR_SPLIT_2** is a simple yet essential module for multiplying an AR signal
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

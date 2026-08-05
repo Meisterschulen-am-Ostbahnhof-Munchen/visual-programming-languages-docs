@@ -1,13 +1,8 @@
 # QW
-
 ![](https://user-images.githubusercontent.com/69573151/210781478-8f72e916-a5af-485b-9b70-0cb6ee45204e.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The QW function block is an output service interface module for outputting Word data. It serves as an interface between the control logic and physical output devices or resources, enabling the secure transfer of 16-bit data to external hardware.
-
-
 ![QW](QW.svg)
 
 ## Interface Structure
@@ -34,7 +29,6 @@ No adapter interfaces are present.
 
 ## Functionality
 Upon receiving the INIT event, the QW block initializes the hardware interface with the passed PARAMS. After successful initialization, it confirms this with INITO. A REQ request outputs the WORD data received by OUT to the configured resource. The operation is confirmed with CNF, where STATUS provides information about the success or failure of the operation.
-
 
 ``` ## Technical Features
 - Processes 16-bit WORD data

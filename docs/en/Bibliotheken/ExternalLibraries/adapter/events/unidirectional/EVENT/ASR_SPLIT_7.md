@@ -1,13 +1,8 @@
 # ASR_SPLIT_7
-
 ![ASR_SPLIT_7](./ASR_SPLIT_7.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **ASR_SPLIT_7** is a generic function block that distributes a single ASR adapter input to seven ASR adapter outputs. It acts as a 1:7 splitter for ASR data and enables the parallel transmission of a signal to multiple downstream components.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -52,13 +47,9 @@ Output (Plug) | **OUT7** | `adapter::types::unidirectional::ASR` | Seventh outpu
 
 The module receives an ASR signal via socket `IN`. This signal is internally duplicated to all seven plugs (`OUT1` … `OUT7`) and forwarded without modification. No data manipulation or filtering takes place – the incoming signal is copied one-to-one to each output.
 
-
 ## Technical Features
-
 - **Generic Type**: The function block is declared as a generic block with the class name `GEN_ASR_SPLIT`. This allows it to be used in various contexts where an ASR splitter is required.
-
 - **Pure Adapter Interface**: Only adapters (no events or data inputs/outputs) are used. Communication takes place via the unidirectional ASR adapter protocol.
-
 - **No Internal State**: The block has no state management; signal distribution is continuous and instantaneous.
 
 ## State Overview
@@ -66,11 +57,8 @@ The module receives an ASR signal via socket `IN`. This signal is internally dup
 The block has no explicit states. Its functionality is limited to the static duplication of the input signal.
 
 ## Application Scenarios
-
 - **Signal Distribution**: An ASR signal (e.g., a control command or a configuration message) is to be sent to multiple independent receivers.
-
 - **Parallel Processing**: In an automated control system, information must reach multiple subsystems simultaneously, each designed for the ASR protocol.
-
 - **Test Environments**: A test adapter is connected to `IN`, and the outputs are connected to various monitoring or logging modules.
 
 ## Comparison with Similar Modules

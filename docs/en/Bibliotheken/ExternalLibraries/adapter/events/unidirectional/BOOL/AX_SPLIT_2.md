@@ -1,12 +1,8 @@
 # AX_SPLIT_2
-
 <img width="711" height="266" alt="image" src="https://github.com/user-attachments/assets/35bdbc21-637d-4e15-9327-20c28f43b4b5" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_SPLIT_2 function block serves as a generic building block for distributing an AX signal to two separate outputs. The block enables the splitting of an incoming AX signal to two independent output channels.
-
-
 ![AX_SPLIT_2](AX_SPLIT_2.svg)
 
 ## Interface Structure
@@ -29,7 +25,6 @@ No direct data outputs available
 **Output Adapters:**
 
 - **OUT1**: AX adapter (unidirectional) - First output channel for the distributed signal
-
 - **OUT2**: AX adapter (unidirectional) - Second output channel for the distributed signal
 
 ## Functionality
@@ -53,11 +48,9 @@ The function block operates statelessly – with every incoming signal via the I
 ## ⚖️ Comparison with Similar Function Blocks
 Compared to other distribution blocks, AX_SPLIT_2 offers a specific 1:2 split for AX signals. Other splitter blocks may support different numbers of outputs or other signal types.
 
-
 Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## 🛠️ Related exercises
-
 * [Uebung_002_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002_AX.md)
 * [Uebung_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
 * [Uebung_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)

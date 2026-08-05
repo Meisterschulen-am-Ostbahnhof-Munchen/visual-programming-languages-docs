@@ -1,13 +1,8 @@
 # AX_AND_3
-
 <img width="1009" height="296" alt="image" src="https://github.com/user-attachments/assets/42842c64-6ed6-4728-8d41-60a0c3f2ab31" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_AND_3 is a generic function block for calculating a three-input logical AND operation. The block performs a Boolean AND operation on three independent input signals and outputs the result via an adapter output.
-
-
 ![AX_AND_3](AX_AND_3.svg)
 
 ## Interface Structure
@@ -29,9 +24,7 @@ No direct data outputs available
 **Input Adapters (Sockets):**
 
 - **IN1** - AND Input 1 (Type: adapter::types::unidirectional::AX)
-
 - **IN2** - AND Input 2 (Type: adapter::types::unidirectional::AX)
-
 - **IN3** - AND Input 3 (Type: adapter::types::unidirectional::AX)
 
 **Output Adapters (Plugs):**
@@ -68,7 +61,6 @@ Compared to standard AND blocks, AX_AND_3 offers:
 Comparison with [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_3.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)]
 
 ## Conclusion

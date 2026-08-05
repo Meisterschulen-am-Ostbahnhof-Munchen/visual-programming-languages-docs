@@ -1,13 +1,8 @@
 # ADI_TO_ALI
-
 ![ADI_TO_ALI](./ADI_TO_ALI.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **ADI_TO_ALI** function block is a composite block that converts a unidirectional ADI adapter (DINT data type) into a unidirectional ALI adapter (LINT data type). It adapts the data width from 32 bits to 64 bits, thus enabling the seamless integration of components of different integer types in automation systems according to IEC 61499-2. The block is available under the Eclipse Public License 2.0.
-
-
-
 ``` ## Interface Structure
 ### **Event Inputs**
 None
@@ -34,30 +29,21 @@ Outputs the converted LINT value (64-bit) and the forwarded event.
 This function block implements direct passthrough:
 
 - The event `E1` from the ADI_IN socket is passed to the ALI_OUT plug without delay.
-
 - Simultaneously, the data value `D1` (DINT) is transmitted; this involves an implicit type conversion from 32-bit integer (DINT) to 64-bit integer (LINT).
-
 - No intermediate storage or processing logic takes place – every incoming event-data combination is immediately forwarded to the output side.
 
 ## Technical Features
-
 - **No internal state** – The function block is entirely combinatorial and has no memory.
-
 - **Automatic type conversion** via the data connection; the value range of DINT is fully covered by LINT, so no information loss occurs.
-
 - **Adapter-based communication** according to IEC 61499-2 enables loose coupling and reusability.
-
 - The function block is implemented as a composite, meaning its behavior is defined solely by the internal function block network (one event and one data connection).
 
 ## State Overview
 This function block does not have a state machine. Its functionality is limited to the direct forwarding of adapter signals.
 
 ## Application Scenarios
-
 - **System migration** from 32-bit to 64-bit data processing, e.g., during the modernization of controllers.
-
 - **Integration of older components** that provide DINT values into new modules that require LINT interfaces.
-
 - **Adapter bridge** in heterogeneous networks to adapt different integer types between function blocks.
 
 ## Comparison with Similar Function Blocks

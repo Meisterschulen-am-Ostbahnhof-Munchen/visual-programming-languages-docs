@@ -1,35 +1,24 @@
 # AND_3
-
 ![AND_3](https://user-images.githubusercontent.com/116869307/214143860-e43fc5ba-af8d-4a77-8d0b-04d1481ad370.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The AND_3 function block is a generic function block for calculating the bitwise logical AND operation with three inputs. It performs a bitwise AND operation on three input values and outputs the result. The function block supports all ANY_BIT data types and is therefore flexible for use with different bit widths.
-
-
 ![AND_3](AND_3.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **REQ**: Normal execution request - triggers the calculation of the AND operation
 
 ### **Event Outputs**
-
 - **CNF**: Execution confirmation - signals the completion of the calculation
 
 ### **Data Inputs**
-
 - **IN1**: AND input 1 (ANY_BIT)
-
 - **IN2**: AND input 2 (ANY_BIT)
-
 - **IN3**: AND input 3 (ANY_BIT)
 
 ### **Data Outputs**
-
 - **OUT**: AND result (ANY_BIT)
 
 ### **Adapters**
@@ -37,7 +26,6 @@ No adapters available.
 
 ## Functionality
 Upon arrival of the REQ event, the AND_3 block performs a bitwise AND operation on the three input values IN1, IN2, and IN3. The result is output at the OUT data output, and simultaneously a CNF event is generated to signal successful computation.
-
 
 ``` The operation follows the formula: OUT = IN1 ∧ IN2 ∧ IN3
 
@@ -62,7 +50,6 @@ Upon arrival of the REQ event, the AND_3 block performs a bitwise AND operation 
 Compared to Compared to standard two-input AND gates, AND_3 offers the ability to process three inputs simultaneously, reducing the number of gates required in more complex circuits. AND_3 provides greater flexibility compared to fixed-bit-width gates due to its generic ANY_BIT typing.
 
 ## 🛠️ Related Exercises
-
 * [Exercise_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)]
 
 ## Conclusion

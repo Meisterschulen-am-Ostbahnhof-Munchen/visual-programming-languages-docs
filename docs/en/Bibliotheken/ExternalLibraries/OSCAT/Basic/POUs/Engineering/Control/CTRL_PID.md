@@ -1,13 +1,9 @@
 ![CTRL_PID](CTRL_PID.svg)
-
 # CTRL_PID
-
 FT_PI is a PI controller with manual functionality.
-
 version 2.0 June 30th 2008
 programmer hugo
 tested by oscat
-
 FT_PI is a PI controller with manual functionality.
 The PID controller works according to the fomula Y = e *(KP+ KI * INTEG(e) ) + offset, while e = set_point - actual.
 a rst will reset all internal data, while a switch to manual will cause the controller to follow the function Y = manual_in + offset.
@@ -54,6 +50,5 @@ The output flags lim will signal that the output limits are active.
 | LIM | BOOL | Limit Reached |
 
 ## 🛠️ Related exercises
-
 * [Uebung_153](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 

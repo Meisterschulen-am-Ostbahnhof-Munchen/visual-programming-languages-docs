@@ -1,12 +1,8 @@
 # AIWS_MUX_4
-
 ![AIWS_MUX_4](./AIWS_MUX_4.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The function block **AIWS_MUX_4** is a multiplexer for four unidirectional AIWS adapters. It selects one of the four inputs (IN1 to IN4) based on an index value **K** and forwards its data to the output **OUT**. It is implemented as a generic function block (Generic FB) based on the IEC 61499 standard.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -62,15 +58,11 @@ OUT | adapter::types::unidirectional::AIWS | Plug | Output (receives the data fr
 
 4. After successful activation, the **CNF** event is output.
 
-
 The selection is made without additional intermediate storage; the data is copied **transparently** from the selected input to the output.
 
 ## Technical Features
-
 - The function block is marked as **Generic FB** (attribute `GenericClassName` = `'GEN_AIWS_MUX'`), which allows for later type specialization or reuse.
-
 - The connection to the inputs and output is exclusively via **unidirectional adapters** (type `AIWS`), which enables a clean separation of data and control flow.
-
 - No data interfaces beyond index **K** are required – all information transfer takes place via the adapter interfaces.
 
 ## State Overview
@@ -78,17 +70,13 @@ The selection is made without additional intermediate storage; the data is copie
 The function block has **no explicit states**, as it is implemented as a pure function block without a state machine (ECC). The response to **REQ** is strictly deterministic: after event processing, **CNF** is sent immediately.
 
 ## Application Scenarios
-
 - **Selection of a sensor signal** from multiple AIWS-compatible sources (e.g., temperature, pressure, or level sensors).
-
 - **Switching between redundant measured values** in safety-critical control systems.
-
 - **Multiplexing of measurement data** into a central data stream for further processing or visualization.
 
 ## Comparison with Similar Function Blocks
 
 The **AIWS_MUX_4** is specifically designed for the unidirectional AIWS adapter type. A general multiplexer for other adapter types (e.g., for byte or Boolean data) differs in its interface definition, while the underlying logic (index-based selection) is identical. Due to its generic design, the function block can be easily adapted to other adapter types.
-
 
 ## Conclusion
 

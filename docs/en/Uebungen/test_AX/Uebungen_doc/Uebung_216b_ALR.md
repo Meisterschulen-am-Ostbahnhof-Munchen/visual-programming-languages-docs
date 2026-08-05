@@ -1,93 +1,51 @@
 # Exercise_216b_ALR: Standard IEC 61131-3 ADI_FB_CTD (Adapter Version, DINT) with Terminal Output (PHYS)
-
 ![Uebung_216b_ALR_network](./Uebung_216b_ALR_network.svg)
-
 * * * * * * * * * *
 ## Introduction
 Exercise **Exercise_216b_ALR** implements a down counter according to IEC 61131-3 using an adapter-based function block `ADI_FB_CTD`. The counter value is output to an alphanumeric terminal (PHYS) via an adapter conversion chain. Additionally, a digital output is set when the counter value reaches zero. This exercise illustrates the integration of logiBUS inputs, adapter conversions, and terminal output in a compact sub-application.
-
-
 ## Function Blocks (FBs) Used
 
 ### Internal Function Blocks
-
 - **ADI_FB_CTD** (Type: `adapter::iec61131::counters::ADI_FB_CTD`)
-
 - **Description**: Adapter version of an IEC 61131-3 down counter (CTD). The block decrements the current value (`CV`) by 1 on each falling edge at the event input `CD`. The preset value is loaded via the adapter input `PV` as soon as the input `LD` is activated. The output `Q` is set as soon as `CV` reaches the value 0.
-
 - **Parameters**: (no explicit parameters set – uses default values)
-
 - **Event/Data Interfaces**:
-
 - Event Input: `CD` (Count Down), `LD` (Load)
-
 - Adapter Data Input: `PV` (Preset Value, DINT)
-
 - Adapter Data Output: `CV` (Current Value, DINT), `Q` (BOOL)
-
 - **ADI_DINT_TO_DI** (Type: `adapter::conversion::unidirectional::ADI_DINT_TO_DI`)
-
 - **Description**: Converts a DINT value to an adapter data input (DI). A fixed preset value of DINT#10 is provided here.
-
 - **Parameters**: `OUT` = DINT#10
-
 - **Event/Data Interfaces**:
-
 - Event Input: `REQ` (Trigger for output)
-
 - Adapter Data Output: `ADI_OUT` (DINT)
-
 - **Input_CD** (Type: `logiBUS::io::DI::logiBUS_IXA`)
-
 - **Description**: Digital input module for logiBUS that provides the signal of the physical input `Input_I1`.
-
 - **Parameters**: `QI` = TRUE (Qualifier), `Input` = Input_I1
-
 - **Adapter Output**: `IN` (digital information)
-
 - **Input_LD** (Type: `logiBUS::io::DI::logiBUS_IXA`)
-
 - **Description**: Digital input module for logiBUS that provides the signal of the physical input `Input_I2`.
-
-
 - **Parameters**: `QI` = TRUE, `Input` = Input_I2
-
 - **Adapter Output**: `IN`
-
 - **Event Output**: `INITO` (triggered on initialization)
-
 - **Output_Q1** (Type: `logiBUS::io::DQ::logiBUS_QXA`)
-
 - **Description**: Digital output module for logiBUS that controls the physical output `Output_Q1`.
-
 - **Parameters**: `QI` = TRUE, `Output` = Output_Q1
-
 - **Adapter Input**: `OUT` (digital information)
-
 - **ADI_TO_ALR** (Type: `adapter::conversion::unidirectional::ADI_TO_ALR`)
-
 - **Description**: Converts an adapter data value (DINT) into an alphanumeric format (ALR) suitable for terminal output.
-
 - **No parameters** set.
-
 - **Interfaces**:
-
 - Adapter input: `ADI_IN` (DINT)
-
 - Adapter output: `ALR_OUT` (ALR)
-
 - **Q_NumericValue_PHYSA_LREAL** (Type: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`)
-
 - **Description**: Outputs a numeric value (interpreted as LREAL) to a physical terminal. The value is represented by the connected `stObj` (here `OutputNumber_N3`).
-
 - **Parameter**: `stObj` = OutputNumber_N3 (reference to a terminal object)
-
 - **Adapter Input**: `lrPhys` (physical value as LREAL)
 
 ## Program Flow and Connections
 
 1. **Initialization**: When the subapplication starts, the function block `Input_LD` becomes active and triggers the event `INITO`. This event triggers `ADI_DINT_TO_DI.REQ`, so the preset value (DINT#10) is applied to the adapter output `ADI_OUT`.
-
 
 2. **Load Preset**: The preset value is transferred via the adapter connection to input `PV` of the counter `ADI_FB_CTD`. Simultaneously, the event `INITO` activates the load input `LD` of the counter. (The event connection `Input_LD.INITO` only goes to `ADI_DINT_TO_DI.REQ`, not directly to the counter. However, `Input_LD.IN` is connected to `ADI_FB_CTD.LD` – this connection is implemented as an adapter connection and transmits the digital signal. The initialization of `Input_LD` presumably sets the input `LD` to TRUE, so that the counter loads the preset.)
 

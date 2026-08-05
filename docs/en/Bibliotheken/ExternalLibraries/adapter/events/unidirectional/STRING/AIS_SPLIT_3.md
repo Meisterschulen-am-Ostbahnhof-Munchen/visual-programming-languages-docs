@@ -1,13 +1,8 @@
 # AIS_SPLIT_3
-
 ![AIS_SPLIT_3](./AIS_SPLIT_3.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AIS_SPLIT_3** is used to distribute an incoming AIS data stream to three identical outputs. It is implemented as a generic function block and enables the simple duplication of AIS information in control systems according to IEC 61499.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -36,17 +31,13 @@ Not present – output data is provided exclusively via the adapter plugs.
 
 | `adapter::types::unidirectional::AIS` | OUT3 | Plug (Output) | Third output channel – identical copy of the input. |
 
-
 ## Functionality
 
 The module receives an AIS data stream via the **IN** socket and forwards it without delay or manipulation to the three output adapters **OUT1**, **OUT2**, and **OUT3**. Each output receives identical data. No buffering, filtering, or protocol conversion takes place – the module functions purely as a splitter at the adapter level.
 
 ## Technical Features
-
 - **Generic Type**: The module is assigned the generic class name `GEN_AIS_SPLIT`, allowing it to be reused in various contexts and with different AIS data types.
-
 - **Unidirectional Adapters**: Both inputs and outputs use the unidirectional adapter `adapter::types::unidirectional::AIS`, ensuring a clear data flow direction.
-
 - **No Event-Driven Synchronization**: Since there are no event inputs/outputs, data transmission occurs immediately and without triggering by external events.
 
 ## State Overview
@@ -54,11 +45,8 @@ The module receives an AIS data stream via the **IN** socket and forwards it wit
 This function block does not have an explicit state machine. Its behavior is that of a continuously active pass-through connection: As long as the input adapter is supplying data, it is output on all three outputs. There are no internal states or modes.
 
 ## Application Scenarios
-
 - **Distributing AIS data to multiple consumers** – e.g., simultaneous visualization, logging, and further processing.
-
 - **Redundant data provision** – feeding data into different subsystems without placing an additional load on the data source.
-
 - **Test and diagnostic setups** – parallel monitoring of an AIS stream at multiple points.
 
 ## Comparison with similar function blocks
@@ -79,11 +67,9 @@ The AIS_SPLIT_3 fills the gap between a simple 2-way splitter and a fully config
 
 The **AIS_SPLIT_3** is a simple yet effective component for multiplying an AIS data stream. Thanks to its generic nature and clear, adapter-based interface, it can be easily integrated into larger 4diac projects. It offers a robust and maintainable solution for applications requiring multiple distributions without data modification.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,13 +1,8 @@
 # AIWS_DEMUX_5
-
 ![AIWS_DEMUX_5](./AIWS_DEMUX_5.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The AIWS_DEMUX_5 function block is a generic demultiplexer for the **AIWS** data type. It distributes an incoming data stream, provided via a unidirectional adapter, to one of five possible output adapters. The target output is selected via an index `K`, which is evaluated upon an event at input `REQ`. Confirmation of successful routing is provided via the event output `CNF`.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -66,17 +61,13 @@ Plug (Output 5) | OUT5 | adapter::types::unidirectional::AIWS | Target output 5 
 
 4. After successful forwarding, an event is output at output `CNF`.
 
-
 5. If the value of `K` is outside the valid range (1–5), the event is handled inconsistently (no output is written, but `CNF` is still sent – this depends on the specific implementation).
 
 The adapters used are unidirectional, meaning that data flows only from the socket to the plug. No feedback or acknowledgment occurs via the adapter.
 
 ## Technical Features
-
 - **Generic Function Block**: The function block carries the attribute `GenericClassName` and can be used as a template in a generic context.
-
 - **Adapter-Based Communication**: Instead of direct data ports, an adapter type (`unidirectional::AIWS`) is used, enabling flexible coupling with other function blocks of the same protocol.
-
 - **No State Machine**: The action is event-driven and stateless. Output selection and routing are deterministic.
 
 ## State Overview
@@ -84,11 +75,8 @@ The adapters used are unidirectional, meaning that data flows only from the sock
 The function block does not have an explicit state machine defined in the ECC. The operation is performed **purely functionally**: With each `REQ` event, the index is evaluated and the data value is immediately sent to the corresponding output. After the `CNF` event, the function block remains ready for the next call.
 
 ## Application Scenarios
-
 - **Protocol Demultiplexing**: A data stream from a sensor (e.g., via a bus) is to be distributed to different downstream processing units depending on the configuration.
-
 - **Test and Simulation Environments**: Feeding a single data path into multiple parallel test channels.
-
 - **Control of Multiple Actuators**: An analog setpoint is passed on to different actuators depending on the index.
 
 ## Comparison with Similar Components
@@ -104,7 +92,6 @@ The function block does not have an explicit state machine defined in the ECC. T
 | `AIWS_SWITCH` | Switch (1→1) | Binary Decision |
 
 The `AIWS_DEMUX_5` is specifically designed for the simultaneous provision of five unidirectional outputs, whereas a simple switch only offers two paths. Unlike a multiplexer, here an input source is distributed to one of many outputs.
-
 
 ## Conclusion
 

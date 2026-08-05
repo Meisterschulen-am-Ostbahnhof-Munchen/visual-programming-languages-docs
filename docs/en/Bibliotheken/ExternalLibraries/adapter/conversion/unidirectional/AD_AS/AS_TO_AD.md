@@ -1,32 +1,25 @@
 # AS_TO_AD
-
 ![AS_TO_AD](./AS_TO_AD.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AS_TO_AD** is a composite function block (FB) that converts a SINT adapter interface (AS) to a DWORD adapter interface (AD). It serves as a converter between two unidirectional adapter types and is typically used to adapt data from a SINT-based signal path to a DWORD-based signal path.
-
 ## Interface Structure
 The function block does not have its own event or data inputs/outputs, but provides only adapter interfaces.
 
 ### **Event Inputs**
-
 - No direct event inputs – event control is handled via the incoming adapter **AS_IN** (socket).
 
 The adapter provides the start signal for the conversion via its event output **E1**.
 
 ### **Event Outputs**
-
 - No direct event outputs – event output is handled via the outgoing adapter **AD_OUT** (Plug).
 
 After conversion is complete, the event **E1** is sent to the outgoing adapter.
 
 ### **Data Inputs**
-
 - No direct data inputs – the SINT value to be converted is provided via the adapter **AS_IN** (Socket) through its data output **D1**.
 
 ### **Data Outputs**
-
 - No direct data outputs – the converted DWORD value is output via the adapter **AD_OUT** (Plug) through its data input **D1**.
 
 ### **Adapters**
@@ -54,11 +47,8 @@ The entire process is synchronous and without data buffering – each conversion
 
 ## Technical Features
 - **Unidirectional Adapters**: The block uses only unidirectional adapters (socket for input, plug for output). Reverse communication is not supported.
-
 - **Reusable Standard Block**: The conversion is implemented using the IEC 61131-compliant block `F_SINT_TO_DWORD`, which is available in the library `iec61131::conversion`.
-
 - **Composite Architecture**: The block is implemented as a composite function block (FB) and allows for easy adaptation or reuse of the internal network.
-
 - **License**: The block is licensed under the Eclipse Public License 2.0 (EPL-2.0) and includes a corresponding copyright notice.
 
 ## State Overview
@@ -73,19 +63,13 @@ The block does not have its own state machine. Its operation is purely event-dri
 > **Note:** Since no delay or buffering occurs, no other event can be processed during the conversion.
 
 ## Application Scenarios
-
 - **Sensor Integration**: A sensor provides data as SINT (e.g., 8-bit values), while the control unit processes only DWORD values.
-
 - **System Integration**: Existing SINT-based communication interfaces are to be integrated into a system that expects DWORD adapters.
-
 - **Protocol Conversion**: Modular manufacturing systems use various adapter types that can be interconnected using such converters.
-
 
 ## Comparison with Similar Function Blocks
 - **BYTE_TO_WORD, BYTE_TO_DWORD, WORD_TO_DWORD** – Corresponding converters for other data types are available in the IEC 61131 library.
-
 - **AS_TO_AD** differs in that it uses adapter interfaces instead of direct inputs/outputs. This makes it particularly suitable for the modular design of adapter chains.
-
 - **Direct Converter FBs** such as `F_SINT_TO_DWORD` offer a simpler interface (inputs/outputs), while the Composite FB has the advantage of adapter compatibility.
 
 ## Conclusion
@@ -95,8 +79,4 @@ The **AS_TO_AD** function block is a specialized adapter converter that enables 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

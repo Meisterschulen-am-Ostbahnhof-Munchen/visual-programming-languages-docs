@@ -1,13 +1,8 @@
 ![AX2](AX2.svg)
-
 #AX2
-
 bidirectional adapter interface for 1 event and 1 bool
-
 ## Interface
-
 ### Event inputs
-
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | EI1 | Request (or Indication) | DI1 |

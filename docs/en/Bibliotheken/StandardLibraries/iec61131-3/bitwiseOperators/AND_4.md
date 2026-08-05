@@ -1,13 +1,8 @@
 # AND_4
-
 ![AND_4](https://user-images.githubusercontent.com/116869307/214143907-734625fe-6ca3-48ce-b30e-ae7b7edfc288.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The AND_4 function block is a generic function block for calculating bitwise Boolean AND operations. It processes four input values and performs a logical AND operation at the bit level. The function block is classified according to the IEC 61131-3 standard and supports any bit data type.
-
-
 ![AND_4](AND_4.svg)
 
 ## Interface Structure
@@ -30,10 +25,8 @@ The AND_4 function block is a generic function block for calculating bitwise Boo
 ### **Adapters**
 No adapter interfaces are available.
 
-
 ## Functionality
 Upon receiving the REQ event, the AND_4 block performs a bitwise AND operation on all four input values. The result is output at the OUT data output, and simultaneously, the CNF event is triggered to confirm successful calculation. The operation is performed separately for each bit of the input values.
-
 
 ``` ## Technical Features
 - Supports the generic data type ANY_BIT, enabling use with various bit data types such as BOOL, BYTE, WORD, DWORD, etc.

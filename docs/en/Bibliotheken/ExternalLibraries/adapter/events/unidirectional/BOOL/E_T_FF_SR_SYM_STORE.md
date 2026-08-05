@@ -1,13 +1,8 @@
 # E_T_FF_SR_SYM_STORE
-
 ![E_T_FF_SR_SYM_STORE](./E_T_FF_SR_SYM_STORE.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `E_T_FF_SR_SYM_STORE` implements an event-driven bistable flip-flop with the functions **Set** (S), **Reset** (R), and **Toggle** (CLK). Its special feature is the **symmetrical start-up behavior**: The initial state of the output Q is set via an adapter (`Q_INIT`) during startup or after a `INIT` event. This ensures that the function block behaves deterministically and repeatably at every start time – an important property for safety-critical or predictable automation systems.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -59,34 +54,24 @@ The internal process is controlled by the finite state machine (ECC):
 2. **Initialization (State `Init`):** As soon as the event `Q_INIT.EI1` occurs, state `Init` is reached. The following is then determined based on the Boolean value of `Q_INIT.DI1`:
 
 - `TRUE` → Transition to state `SET`
-
 - `FALSE` → Transition to state `RESET`
 3. **Operating states `SET` and `RESET`:**
 
 - **SET:** Sets `Q := TRUE` and `Q_INIT.DO1 := TRUE`. Sends output event `EO` and adapter output event `Q_INIT.EO1`.
-
-
 - **RESET:** Sets `Q := FALSE` and `Q_INIT.DO1 := FALSE`. Also sends `EO` and `Q_INIT.EO1`.
 
 4. **Toggling between SET and RESET:**
 
 - Event `S` (when in RESET state) → toggles to SET.
-
 - Event `R` (when in SET state) → toggles to RESET.
-
 - Event `CLK` (always) → toggles between the two states.
 
 The output `EO` is activated with every state change of Q.
 
-
 ## Technical Features
-
 - **Symmetrical Start-Up:** Unlike simple SR flip-flops with a fixed start value (e.g., FALSE), the start value can be configured via the adapter. This increases flexibility and reproducibility.
-
 - **Toggle Function:** The `CLK` input allows changing the state without knowing the current value – useful for counters, flashers, or state machines.
-
 - **Bidirectional Adapter Interface:** The device reports its set value back to the adapter (`Q_INIT.DO1`), so the initializer can confirm the final state.
-
 - **Prioritization:** If `S`, `R`, or `CLK` arrive simultaneously, only the first processed event is considered (based on the event order in the 4diac IDE). In this specific design, `CLK` is applied as a toggle to the current state, while `S` and `R` set the state independently of the toggle. The state transitions show that `CLK` transitions from each state to the other.
 
 ## State Overview
@@ -107,13 +92,9 @@ The state machine (ECC) comprises four states:
 
 After exiting `Init`, the state `SET` or `RESET` is reached; the states `START` and `Init` are not traversed during normal operation.
 
-
 ## Application Scenarios
-
 - **Machine Control with Defined Start State:** A system should always start in a specific operating mode after a reset. Using `Q_INIT`, for example, a PLC configuration can be used to specify whether a valve position is open or closed at startup.
-
 - **Toggling as a Flashing Function:** The `CLK` input can be triggered periodically (e.g., by a timer block) to implement a flashing signal.
-
 - **Redundant Feedback:** The adapter output `Q_INIT.DO1` returns the set value – ideal for safety functions that require feedback on the switching state.
 
 ## Comparison with Similar Blocks
@@ -136,13 +117,10 @@ The `E_T_FF_SR_SYM_STORE`Combines SR functionality, toggle switching, and an ini
 
 The **E_T_FF_SR_SYM_STORE** is a powerful event-driven flip-flop component for the 4diac IDE. It offers full SR functionality, a toggle option, and symmetrical start-up behavior configurable via an adapter. This makes it particularly suitable for applications requiring deterministic initialization and flexible switching mechanisms. The bidirectional adapter interface increases the integration depth in complex control architectures.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

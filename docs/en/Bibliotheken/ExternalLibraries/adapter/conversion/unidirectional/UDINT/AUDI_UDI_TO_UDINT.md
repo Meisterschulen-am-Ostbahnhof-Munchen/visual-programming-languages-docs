@@ -1,13 +1,8 @@
 # AUDI_UDI_TO_UDINT
-
 ## Introduction
 The AUDI_UDI_TO_UDINT function block is a composite function block used to convert the AUDI adapter format to a UDINT value.
-
-
 ![AUDI_UDI_TO_UDINT](AUDI_UDI_TO_UDINT.svg)
-
 ## Interface Structure
-
 ### **Event Inputs**
 - No direct event inputs available
 

@@ -1,13 +1,8 @@
 # AULI_TO_AB
-
 ![AULI_TO_AB](./AULI_TO_AB.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `AULI_TO_AB` is a composite function block that converts an AULI adapter (ULINT data type) into an AB adapter (BYTE data type). It enables the seamless connection of components using different adapter interfaces by converting the incoming data and providing it as a compatible output.
-
 ## Interface Structure
 
 The function block has no direct event or data inputs/outputs. All input and output is handled via adapters.
@@ -19,7 +14,6 @@ None (events are received via the AULI adapter).
 ### **Event Outputs**
 
 None (events are sent via the AB adapter).
-
 
 ### **Data Inputs**
 
@@ -52,13 +46,9 @@ The component internally uses the IEC 61131 component `F_ULINT_TO_BYTE` for ULIN
 The entire process occurs synchronously within one execution cycle of the composite block.
 
 ## Technical Features
-
 - **Composite Block**: The logic is implemented entirely through the internal network of predefined blocks – there is no separate ECC (Execution Control Chart).
-
 - **License and Copyright**: The block is licensed under the Eclipse Public License 2.0 (EPL-2.0) and is subject to third-party copyright.
-
 - **Dependencies**: It requires the IEC 61131 function block `F_ULINT_TO_BYTE` from the library `iec61131::conversion`.
-
 - **Package Structure**: The function block belongs to the package `adapter::conversion::unidirectional`.
 
 ## State Overview
@@ -66,11 +56,8 @@ The entire process occurs synchronously within one execution cycle of the compos
 Since the function block does not have its own ECC, there are no explicit states. The internal flow is strictly defined by the event chain `AULI_IN.E1 → Convert.REQ → Convert.CNF → AB_OUT.E1`.
 
 ## Application Scenarios
-
 - Integration of a ULINT-providing sensor (e.g., a high-resolution distance sensor) into a control system based on BYTE adapter interfaces.
-
 - Retrofitting existing systems where components with different adapter types (ULINT vs. BYTE) need to be integrated.
-
 - Prototype development where ULINT values are temporarily processed via a BYTE channel (e.g., simulation or testing).
 
 ## Comparison with similar function blocks
@@ -84,7 +71,6 @@ The `AULI_TO_AB` is a compact, reliable composite function block for converting 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

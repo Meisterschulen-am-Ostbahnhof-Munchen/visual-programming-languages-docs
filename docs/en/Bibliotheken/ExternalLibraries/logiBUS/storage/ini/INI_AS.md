@@ -1,11 +1,8 @@
 # INI_AS
-
 ![INI_AS](./INI_AS.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **INI_AS** is used to load and save SINT data from a `settings.ini` file. It accesses a configuration value via a section name (`SECTION`) and a key (`KEY`). The value can be both read and written via the adapter interface `AS`. The block encapsulates the internal `INI` function block and extends it with a standardized adapter interface.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -68,50 +65,30 @@ Subsequently (possibly within the same cycle), a `GET` event is automatically ex
 
 A new value (event `E1` and data `D1`) can be sent to the block via the socket `AS_IN`. This event is forwarded to the `SET` input of the internal `INI` block, which saves the value to the INI file. After successful saving, the `SETO` event of the `INI` block is triggered, which in turn serves the adapter output `AS_OUT` (event `E1`) and outputs the saved value via `D1`.
 
-
-
-
-
-
-
-
-
 ... 3. **Feedback**
 
 The internal `INI` module provides the output signals `QO` and `STATUS`, which are directly routed to the corresponding outputs of the `INI_AS` module.
 
 ## Technical Features
-
 - **Adapter Interface `AS`**: The module uses a unidirectional adapter (`adapter::types::unidirectional::AS`). This enables standardized connectivity to other modules that support the same adapter type.
-
 - **Data Type SINT**: The read and stored value is of the "Short Integer" (SINT, 8-bit) type. This makes the module particularly suitable for small integer configuration values.
-
 - **Reuse of the `INI` block**: All logic for accessing the INI file is taken over from the proven `eclipse4diac::storage::INI` block. The `INI_AS` block encapsulates this and extends the adapter interface.
-
 - **Automatic GET after INIT**: After initialization, a read operation is started immediately, so the current value is available at the adapter output without a separate event.
 
 ## State Overview
 The block does not have an explicit state machine (ECC). Its behavior is controlled purely via event chaining within the internal FB network:
 
 - After `INIT`, the sequence is: INIT of the `INI` block → INITO → GET (automatic) → VALUO at the adapter output.
-
 - After a SET event from the adapter input: SET of the `INI` block → SETO → adapter output with the new value.
 
 ## Application Scenarios
-
 - **Persistent Configuration**: Saving and reading settings such as thresholds, mode flags, or device addresses in a `settings.ini` block.
-
 - **Parameterization of Control Applications**: When a PLC or other automation system needs to load or modify values from a configuration file at runtime.
-
 - **Adapter-Based Communication**: Integration into a higher-level adapter structure that groups several such read/write blocks.
 
-
 ## Comparison with Similar Function Blocks
-
 - **INI_STRING, INI_INT, INI_BOOL**: These function blocks also use the internal `INI` function block, but support different data types (STRING, INT, BOOL) and often have a different interface structure (no adapters). The `INI_AS` function block offers a uniform and reusable interface through its adapter.
-
 - **Direct `INI` Function Block**: The `INI` function block itself has several event inputs (INIT, GET, SET) and requires manual wiring of read and write operations. The `INI_AS` simplifies handling by standardizing typical usage (reading on startup, writing via adapters).
-
 
 ## Conclusion
 
@@ -120,8 +97,4 @@ The function block `INI_AS` is a convenient building block for persistently read
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

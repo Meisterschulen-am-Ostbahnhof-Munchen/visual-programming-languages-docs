@@ -1,11 +1,8 @@
 # AX_TO_AQ
-
 ![AX_TO_AQ](./AX_TO_AQ.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **AX_TO_AQ** function block converts a Boolean signal (AX adapter) into a quarter-byte signal (AQ adapter). The conversion is based on event-driven COMMAND logic, where an incoming event triggers the conversion and the result is acknowledged via an output event. The function block encapsulates the conversion logic in an internal sub-function block, thus enabling a clean separation between adapter types.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -31,7 +28,6 @@ The **AX_TO_AQ** function block converts a Boolean signal (AX adapter) into a qu
 
 | `IN.D1` | BOOL (via AX adapter) | Boolean input value to be converted into a quarter byte. |
 
-
 ### **Data Outputs**
 
 | Data | Type | Description |
@@ -56,7 +52,6 @@ The **AX_TO_AQ** function block converts a Boolean signal (AX adapter) into a qu
 
 2. The sub-function block `BOOL_TO_QUARTER` is activated via its event input `REQ` and converts the Boolean value at `I` into a quarter byte.
 
-
 ``` 3. After the conversion is complete, `BOOL_TO_QUARTER` reports this via its event `CNF`, which is then passed on to `OUT.E1`.
 
 4. Simultaneously, the converted value is transferred via the data connection from the output `QB` of the sub-block to `OUT.D1`.
@@ -65,26 +60,19 @@ The entire process is event-driven and operates without internal state storage â
 
 ## Technical Features
 - **Internal Encapsulation**: The conversion logic is fully implemented by the embedded function block `logiBUS::utils::quarter::BOOL_TO_QUARTER`. This simplifies maintenance and replacement of the conversion implementation.
-
 - **Unidirectionality**: Both the input and output adapters are unidirectional; Feedback or bidirectional use is not supported.
-
 - **Event Synchronization**: The output event pulse `OUT.E1` guarantees that the data at output `OUT.D1` is valid before the calling block continues processing.
-
 - **License and Origin**: The block is licensed under EPL-2.0 and is included in the package `adapter::conversion::unidirectional` (see CompilerInfo).
 
 ## State Overview
 The function block does not have an explicit state machine. It operates as pure combinational logic with event-driven triggering:
 
 - **Idle State**: No event is present at `IN.E1`. Outputs remain unchanged.
-
 - **Active**: An event at `IN.E1` starts the conversion. Upon completion, `OUT.E1` is triggered, and the new value is output to `OUT.D1`. The function block then returns to its idle state.
 
 ## Application Scenarios
-
 - **Bus Signal Translation**: In an industrial bus system, Boolean control signals (e.g., bit values from sensors) are converted into compact 4-bit data words to reduce bandwidth.
-
 - **Bit-to-Quarter-Byte Converter in Automation Networks**: When a subsystem can only process quarter-byte values but receives Boolean inputs.
-
 - **Adapter Bridge**: The function block acts as an intermediary between an AX-compatible transmitter and an AQ-compatible receiver in a unidirectional chain.
 
 ## Comparison with Similar Function Blocks

@@ -1,12 +1,8 @@
 # FB_MM710_IMU
-
 ![FB_MM710_IMU](./FB_MM710_IMU.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The function block **FB_MM710_IMU** is a service-oriented module (SIFB) for connecting the Bosch MM7.10 IMU sensor via CAN/J1939. It enables the reading of acceleration, yaw rate, and tilt values, as well as the monitoring of system and error states. The FB encapsulates all CAN communication and signal processing and provides the data in a standardized format via event and data outputs.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -96,16 +92,10 @@ Upon receiving **INIT** with QI = TRUE, the FB_MM710_IMU initializes the CAN com
 The signal statuses (eStatus*) enable individual fault analysis for each axis. The hardware index distinguishes between older MM5.10 and current MM7.10 sensors.
 
 ## Technical Features
-
 - **CAN/J1939 Protocol** – Uses a fixed source address (default: `16#DA`).
-
 - **Timeout Monitoring** – The `uiMessageCounter` (0-15) is incremented with each valid message; if it fails to increment, a communication error is reported after 16 missing messages.
-
 - **Signal Status Bits** – Provide more granular information than simple "ready/error" flags.
-
-
 - **CRC Check** – Faulty CAN frames are detected and reported via `bCRCError` and **ERROR**.
-
 - **Hardware Differentiation** – `uiHW_Index` enables adaptive behavior for different sensor versions.
 
 ## State Overview
@@ -124,13 +114,9 @@ The module goes through the following states (not explicitly as ECC, but inferab
 6. **Error** – In case of timeout or CRC error; ERROR is sent (fallback to Ready after error handling).
 
 ## Application Scenarios
-
 - **Mobile Machinery** – Tilt and acceleration monitoring of excavators, cranes, or forklifts.
-
 - **Vehicle Dynamics** – Acquisition of roll, pitch, and yaw angles for stability control.
-
 - **Industrial Robots** – Monitoring of vibrations and unexpected movements.
-
 - **IoT Sensor Nodes** – Integration into higher-level controllers via CAN bus.
 
 ## Comparison with Similar Function Blocks

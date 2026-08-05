@@ -1,11 +1,8 @@
 # ADI_SPLIT_6
-
 ![ADI_SPLIT_6](./ADI_SPLIT_6.svg)
-
 * * * * * * * * * *
 ## Introduction
 The ADI_SPLIT_6 function block is used to distribute a single (unidirectional) ADI adapter input to six identical ADI adapter outputs. It is designed as a generic building block for the Eclipse 4diac framework and is typically used when an ADI signal needs to be forwarded to multiple downstream components.
-
 ## Interface Structure
 ### **Event Inputs**
 No event inputs available.
@@ -35,13 +32,9 @@ The module communicates exclusively via adapter interfaces:
 The module performs a simple 1:6 distribution of the ADI adapter signal. All data and events arriving at socket `IN` are passed on unchanged and simultaneously to all six plugs `OUT1`…`OUT6`. No buffering, filtering, or delay occurs. The function block thus operates as a passive splitter at the adapter level.
 
 ## Technical Features
-
 - **Generic Implementation:** The function block is implemented as a generic block (`eclipse4diac::core::GenericClassName = 'GEN_ADI_SPLIT'`) and can be reused in various projects.
-
 - **Unidirectional Adapters:** The ADI adapters used are unidirectional; feedback via the outputs is not provided.
-
 - **No Internal States:** Since the function block does not perform any event or data processing, it does not have an internal state machine.
-
 - **Performance:** Due to the direct forwarding without logic or memory, there is virtually no latency.
 
 ## State Overview
@@ -49,19 +42,13 @@ The module performs a simple 1:6 distribution of the ADI adapter signal. All dat
 This function block does not have a state machine or explicit operating states. It is always active and immediately passes the input signal to all outputs.
 
 ## Application Scenarios
-
 - **Signal Distribution in Control Systems:** An ADI signal provided by a sensor or central logic unit is to be sent in parallel to multiple actuators, displays, or downstream functions.
-
 - **Test Environments:** During simulation or debugging, a single signal can be split across multiple receivers to test different components simultaneously.
-
 - **Redundancy Mapping:** If a signal is needed multiple times (e.g., for monitoring and control paths), this splitter can provide clean decoupling of the outputs.
 
 ## Comparison with Similar Function Blocks
-
 - **SPLIT for Standard Data Types:** Many frameworks offer splitters for simple data types (e.g., `SPLIT_INT`). The `ADI_SPLIT_6` function block is specifically designed for the `ADI` adapter type and operates at a higher level of abstraction (adapters instead of individual data points).
-
 - **ADI_MERGE / ADI_COMBINE:** While this function block distributes a signal, other function blocks combine multiple adapter inputs into a single output.
-
 - **Other Splitter Variants:** Splitters may exist for other adapter types (e.g., bidirectional ADI). This function block is limited to unidirectional signals.
 
 ## Conclusion
@@ -70,7 +57,6 @@ The `ADI_SPLIT_6` function block is a simple yet effective function block for mu
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,13 +1,8 @@
 # SPLIT_AD_INTO_AW
-
 ![SPLIT_AD_INTO_AW](./SPLIT_AD_INTO_AW.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **SPLIT_AD_INTO_AW** is used to split a 32-bit DWORD value, received via a **AD** adapter (unidirectional), into two 16-bit WORD values and output them via two separate **AW** adapters (unidirectional). The splitting is event-driven, and the output data is stabilized by flip-flops until a new trigger arrives. The function block is implemented as a composite function block and internally uses the **SPLIT_DWORD_INTO_WORDS** function block as well as two **E_D_FF_ANY** flip-flops.
-
 
 ## Interface Structure
 
@@ -52,7 +47,6 @@ The function block **SPLIT_AD_INTO_AW** is used to split a 32-bit DWORD value, r
 The adapters are designed as **unidirectional**:
 
 - **AD** (Input): Provided via a socket, containing one event (E1) and one data (D1) channel.
-
 - **AW** (Output): Provided via two plugs, each with one event (E1) and one data (D1) channel.
 
 ## Functionality
@@ -67,19 +61,10 @@ The adapters are designed as **unidirectional**:
 
 5. Simultaneously, the output events **WORD_00.E1** and **WORD_01.E1** are triggered, indicating that the corresponding data (**WORD_00.D1** and **WORD_01.D1**) are valid.
 
-
-
-
-
-
-
-
 ... ## Technical Features
 
 - **Data Synchronization:** The flip-flops ensure that the output data remains stable, even if the input value changes between two events. Only a new event at the input updates both outputs.
-
 - **Simultaneous Output:** Both WORD outputs are updated by the same input event – there is no staggered timing.
-
 - **Adapter Compatibility:** The function block is specifically designed for use with **AD-** and **AW-** adapters and allows seamless integration into adapter-based data flows.
 
 ## State Overview
@@ -87,18 +72,12 @@ The adapters are designed as **unidirectional**:
 The function block does not have an explicit state machine. Its behavior is purely event-driven:
 
 - **Idle:** Waiting for an event at **IN.E1**.
-
 - **Processing:** Upon receipt of **IN.E1**, the data is split and the flip-flops are set.
-
 - **Output:** The events at the outputs are triggered exactly once after processing.
 
-
 ## Application Scenarios
-
 - **Adapter-Based Decomposition:** Splitting a 32-bit value (e.g., from a sensor data word) into two 16-bit parts for separate processing chains.
-
 - **Communication Protocols:** Preparing data for interfaces that transmit WORD-wise (e.g., Modbus registers or CAN messages).
-
 - **Bit Manipulation:** Preprocessing for subsequent components that only expect WORD adapters.
 
 ## Comparison with Similar Components

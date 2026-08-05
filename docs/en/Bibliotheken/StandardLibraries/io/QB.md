@@ -1,12 +1,8 @@
 # QB
-
 ![](https://user-images.githubusercontent.com/69573151/210781164-b9fa5de3-e61e-47b8-b34f-86fa3bd398ff.png)
-
 * * * * * * * * * *
 ## Introduction
 The QB function block is an output service interface for byte output data. It serves as an interface between the control logic and physical output devices or resources, enabling the output of byte data to external hardware.
-
-
 ![QB](QB.svg)
 
 ## Interface Structure
@@ -34,7 +30,6 @@ No adapter interfaces are available.
 ## Functionality
 The QB block initializes itself with the corresponding PARAMS via the INIT event. After successful initialization, it confirms this with INITO. Byte data (OUT) can be output to the connected resource via the REQ event. Processing is acknowledged with the CNF event and status information.
 
-
 ``` ## Technical Features
 - Specialized for byte data output
 - Supports configurable initialization
@@ -55,7 +50,6 @@ The QB block initializes itself with the corresponding PARAMS via the INIT event
 
 ## ⚖️ Comparison with Similar Blocks
 Compared to more general output blocks, QB is specifically optimized for byte data. Other blocks, such as WORD or DWORD output blocks, work with larger data types, while QB enables efficient processing of 8-bit data.
-
 
 ## Conclusion
 

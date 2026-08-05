@@ -1,15 +1,10 @@
 # RT_Bridge_8
-
 * * * * * * * * * *
-
 ## Introduction
 The RT_Bridge_8 function block serves as a decoupling bridge for 8 data connections between real-time event chains.
-
 ## Interface Structure
-
 ### **Event Inputs**
 - **RD**: Read data.
-
 - **WR**: Write data.
 
 ### **Event Outputs**
@@ -38,7 +33,4 @@ The RT_Bridge_8 function block serves as a decoupling bridge for 8 data connecti
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-```

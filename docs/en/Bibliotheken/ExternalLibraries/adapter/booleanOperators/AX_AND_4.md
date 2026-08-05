@@ -1,13 +1,8 @@
 # AX_AND_4
-
 <img width="1010" height="334" alt="image" src="https://github.com/user-attachments/assets/439ed538-1eef-44d6-95c8-5d2a9f64fd6a" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_AND_4 function block is a generic function block for calculating a four-input logical AND operation. It is used to process Boolean signals in automation systems and allows the combination of multiple input signals into a single output signal.
-
-
 ![AX_AND_4](AX_AND_4.svg)
 
 ## Interface Structure
@@ -33,11 +28,8 @@ No direct data outputs available
 **Socket Adapter:**
 
 - **IN1**: AND input 1 (Adapter type: adapter::types::unidirectional::AX)
-
 - **IN2**: AND input 2 (Adapter type: adapter::types::unidirectional::AX)
-
 - **IN3**: AND input 3 (Adapter type: adapter::types::unidirectional::AX)
-
 - **IN4**: AND input 4 (Adapter type: adapter::types::unidirectional::AX)
 
 ## Functionality
@@ -52,9 +44,7 @@ This function block performs a logical AND operation across four inputs. The out
 ## State Overview
 Since it is a combinational logic block, the AX_AND_4 has no internal states. The output is determined solely by the current input values.
 
-
 ## Application Scenarios
-
 - Safety controllers where multiple conditions must be met simultaneously
 - Monitoring of multiple sensors
 - Linking enable signals in process controllers

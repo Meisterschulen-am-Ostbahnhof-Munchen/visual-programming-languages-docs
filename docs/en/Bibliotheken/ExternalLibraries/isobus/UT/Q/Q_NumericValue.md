@@ -1,38 +1,27 @@
 # Q_NumericValue
-
 ![Q_NumericValue](https://user-images.githubusercontent.com/113907471/204326982-47eea33a-9b9c-4107-8f96-97c85a945fbc.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_NumericValue** is a standards-compliant function block for changing numeric values in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.22) specification for numeric VT objects.
-
-
 ![Q_NumericValue](Q_NumericValue.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT`: Initialization Request (with object ID)
 - `REQ`: Value Change Request
 
 ### **Event Outputs**
-
 - `INITO`: Initialization Acknowledgement
 - `CNF`: Change Acknowledgement
 
 ### **Data Inputs**
-
 - `u16ObjId` (UINT): Object ID (16-bit)
 - `u32NewValue` (UDINT): New Numeric Value (32-bit unsigned)
 
 ### **Data Outputs**
-
 - `STATUS` (STRING): Operational Status Message
-
 - `u32OldValue` (UDINT): Previous numeric value
-
 - `s16result` (INT): ISO-compliant result code
 
 ## Functionality
@@ -40,15 +29,12 @@ The **Q_NumericValue** is a standards-compliant function block for changing nume
 1. **Initialization**:
 
 - `INIT` with target object ID
-
 - `INITO` confirms operational readiness
 
 2. **Value Update**:
 
 - `REQ` with new 32-bit value
-
 - Updates the numeric VT object
-
 - `CNF` returns operational status and previous value
 
 3. **Value Range**:
@@ -96,7 +82,6 @@ The **Q_NumericValue** is a standards-compliant function block for changing nume
 | -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
-
 - **Process Visualization**: Real-time Measurement Data
 - **Control Elements**: Setpoint Specifications
 - **Diagnostic Systems**: Error Code Display
@@ -117,7 +102,6 @@ The **Q_NumericValue** is a standards-compliant function block for changing nume
 | Object Type | Numeric | All | All |
 
 ## 🛠️ Related exercises
-
 * [Uebung_009](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
 * [Uebung_009a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
 * [Uebung_011a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)

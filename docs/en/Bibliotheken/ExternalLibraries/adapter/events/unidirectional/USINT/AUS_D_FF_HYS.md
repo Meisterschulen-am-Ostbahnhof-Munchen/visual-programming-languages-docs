@@ -1,12 +1,8 @@
 # AUS_D_FF_HYS
-
 ![AUS_D_FF_HYS](./AUS_D_FF_HYS.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block `AUS_D_FF_HYS` implements a data latch (D flip-flop) with hysteresis (threshold band). It serves to receive an incoming data value on an edge-triggered basis and make it available at the output. The hysteresis ensures stable switching behavior even with noisy or fluctuating input signals. The block uses generic adapters (`AUS`) that enable unidirectional data transmission with event-driven control, making it usable with any data type.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -55,7 +51,6 @@ The function block encapsulates an internal block, `E_D_FF_ANY_HYS`, which imple
 
 - **Initialization:** The hysteresis value (`HYSTERESIS`) is passed to the internal block via the event `INIT`. The initialization is acknowledged via the event `INITO`.
 
-
 The FB encapsulates an internal block, `E_D_FF_ANY_HYS`, which implements the actual D flip-flop with hysteresis. - **Data Transfer:** An event on `I.E1` causes the internal component to take the current data value from `I.D1` and pass the latched value to `Q.D1`. Simultaneously, `Q.E1` is triggered.
 
 - **Hysteresis Function:** The flip-flop output changes its state only when the input value exceeds an upper or lower threshold defined by the hysteresis value. This suppresses bounce or noise in the input signal (Schmitt trigger behavior).
@@ -63,14 +58,9 @@ The FB encapsulates an internal block, `E_D_FF_ANY_HYS`, which implements the ac
 The exact switching threshold depends on the data type used by the adapter (the `AUS` adapter supports any type). The hysteresis value (`USINT`) is internally scaled or interpreted to the corresponding numerical range.
 
 ## Technical Features
-
 - **Generic Adapter:** The use of the unidirectional adapter `AUS` allows the use of a wide variety of data types (e.g., `INT`, `REAL`, `BOOL`) without requiring the function block itself to be typed. Type conversion is handled by the internal function block.
-
 - **Hysteresis as USINT:** Hysteresis is specified as an unsigned 8-bit value. The specific interpretation (e.g., as an absolute difference or percentage) depends on the implementation and is defined in the internal function block.
-
 - **Event Passthrough:** The INIT event is passed directly to the INITO event. This enables a simple initialization chain in the network.
-
-
 - **Event Passthrough:** - **No visible state machine:** The function block (FB) does not have its own Execution Control Chart (ECC); the logic is implemented entirely by the internal FB.
 
 ## State Overview
@@ -78,7 +68,6 @@ The exact switching threshold depends on the data type used by the adapter (the 
 Since the FB does not explicitly expose a state machine, its behavior is determined by the internal D flip-flop with hysteresis. This flip-flop has two stable output states:
 
 - **State 0:** The output value corresponds to the logical "low" level (or the lower limit of the data range).
-
 - **State 1:** The output value corresponds to the logical "high" level (or the upper limit).
 
 State transitions occur only when the respective hysteresis thresholds are exceeded:
@@ -94,13 +83,9 @@ State transitions occur only when the respective hysteresis thresholds are excee
 The thresholds are offset by the hysteresis value relative to a mean or reference value (typically upper threshold = reference + hysteresis/2, lower threshold = reference - hysteresis/2).
 
 ## Application Scenarios
-
 - **Sensor Debouncing:** A digital or analog sensor delivers fluctuating values (e.g., due to mechanical bouncing). The function block smooths the signal and provides a stable output.
-
 - **Threshold Switch with Reset Delay:** Monitoring of a process value that triggers a signal when an upper limit is exceeded and is only reset when a lower limit is undershot.
-
 - **Signal Conditioning in Building Automation:** Suppression of short interference pulses from temperature, brightness, or level sensors.
-
 - **Hysteresis in Position Controllers:** Prevents rapid switching on and off of actuators near a setpoint limit.
 
 ## Comparison with Similar Function Blocks

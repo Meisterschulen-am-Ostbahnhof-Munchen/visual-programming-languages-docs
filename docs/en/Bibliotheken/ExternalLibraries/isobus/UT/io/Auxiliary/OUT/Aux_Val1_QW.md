@@ -1,12 +1,8 @@
 # Aux_Val1_QW
-
 <img width="1496" height="174" alt="image" src="https://github.com/user-attachments/assets/06793149-2165-45d1-91f2-b47c071b9248" />
-
 * * * * * * * * * *
 ## Introduction
 The Aux_Val1_QW is an output service interface function block for word output data. This block serves as an interface to auxiliary output resources and enables the output of 16-bit data words to external peripheral devices.
-
-
 ![Aux_Val1_QW](Aux_Val1_QW.svg)
 
 ## Interface Structure
@@ -35,7 +31,6 @@ No adapter interfaces available.
 ## Functionality
 This function block initializes and controls auxiliary output devices via the ISOBUS UT protocol stack. During initialization (INIT event), the service parameters are configured and the auxiliary device is set up accordingly. Upon service requests (REQ event), the WORD data is sent to the configured output device. The block supports various auxiliary device types and provides status feedback on the success or failure of operations.
 
-
 ``` ## Technical Features
 - Supports Auxiliary Types: 0, 1, 2, 3, 4, 6, 11, 12, 13
 - Uses WORD data type (16-bit) for output data
@@ -51,7 +46,6 @@ The function block has two main operating states:
 2. **Service State**: Processes REQ requests and outputs data to the configured device
 
 ## Application Scenarios
-
 - Control of auxiliary output devices in mobile machinery
 - ISOBUS-compliant peripheral control
 - Agricultural and construction machinery applications

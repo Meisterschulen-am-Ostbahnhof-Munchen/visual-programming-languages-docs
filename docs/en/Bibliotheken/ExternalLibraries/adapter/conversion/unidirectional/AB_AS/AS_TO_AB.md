@@ -1,13 +1,9 @@
 # AS_TO_AB
-
 ![AS_TO_AB](./AS_TO_AB.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AS_TO_AB** is a composite function block that converts an AS adapter (SINT) into an AB adapter (BYTE).
-
 It serves as a bridge between different adapter types and enables data type conversion within an adapter-based communication chain.
-
 The block internally uses the IEC 61131 function **F_SINT_TO_BYTE** and is implemented as a pure data converter without state logic.
 
 ## Interface Structure
@@ -55,7 +51,6 @@ Since the function block does not have direct event or data ports, inputs and ou
 
 | `AB_OUT` | `adapter::types::unidirectional::AB` | Plug (Output) | BYTE Adapter Output |
 
-
 ## Functionality
 1. An incoming event on `AS_IN.E1` triggers processing.
 
@@ -67,15 +62,10 @@ Since the function block does not have direct event or data ports, inputs and ou
 
 The conversion strictly adheres to IEC 61131 semantics: The SINT value is mapped bitwise to the BYTE data type, without any sign or range considerations (since SINT comprises 8 bits, identical to BYTE).
 
-
 ## Technical Features
-
 - **Composite FB**: The function block encapsulates the conversion logic and provides it as an adapter converter.
-
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional – data flows in only one direction.
-
 - **No Internal State**: The FB behaves like a pure function; each activation produces the correct result regardless of the previous state.
-
 - **Dependency**: The function block imports the IEC 61131 function `F_SINT_TO_BYTE`, which must be available in the target environment.
 
 ## State Overview
@@ -84,19 +74,13 @@ The FB has **no state diagram** – it is event-driven and performs a one-time c
 
 The internal element `F_SINT_TO_BYTE` is also stateless.
 
-
 ## Application Scenarios
-
 - **Adapter Coupling**: If a sensor or actuator provides an AS adapter (SINT), but the downstream system expects an AB adapter (BYTE), this function block (FB) is used as an intermediary.
-
 - **Protocol Conversion**: In PLC or automation systems, different data types often need to be converted between adapters – specifically SINT ↔ BYTE.
-
 - **Modularization**: The FB allows conversion logic to be encapsulated in reusable adapter blocks, instead of having to implement it anew in each application FB.
 
 ## Comparison with Similar Function Blocks
-
 - **AS_TO_WORD / AS_TO_INT**: Convert SINT to WORD or INT; AS_TO_AB specializes in BYTE.
-
 
 ``` - **Direct use of `F_SINT_TO_BYTE`**: The composite function block offers the advantage that the conversion is performed via adapter ports, eliminating the need for manual wiring of event and data flows.
 

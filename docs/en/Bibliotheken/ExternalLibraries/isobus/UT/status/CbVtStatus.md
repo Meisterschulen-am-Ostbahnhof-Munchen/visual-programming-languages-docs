@@ -1,13 +1,8 @@
 # CbVtStatus
-
 ![CbVtStatus](https://user-images.githubusercontent.com/116869307/214146846-2d9f0694-b5f4-4e70-aae0-dc64540eb356.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **CbVtStatus** is a standardized callback module for virtual terminal page changes, developed under the EPL 2.0 license. Version 1.0 supports ISO 11783-6 (ISOBUS) in agricultural tax systems.
-
-
 ![CbVtStatus](CbVtStatus.svg)
 
 ## Interface Structure
@@ -30,19 +25,16 @@ The **CbVtStatus** is a standardized callback module for virtual terminal page c
 1. **Initialization**:
 
 - Event `INIT` starts setup
-
 - Event `INITO` confirms with STATUS
 
 2. **Page Change**:
 
 - Event `IND` is triggered on screen change
-
 - Returns: Page ID, Active Status, Instance Number
 
 3. **Operation**:
 
 - Real-time monitoring of the VT status
-
 - Multi-ECU capable architecture
 
 ## Technical Features
@@ -65,7 +57,6 @@ The **CbVtStatus** is a standardized callback module for virtual terminal page c
 Diagnostics | STATUS Messages for Service |
 
 ## Application Scenarios
-
 - **Tractor Control Units**: Operator Screen Monitoring
 - **Harvesting Machines**: Work Data Display
 - **Diagnostic Tools**: VT Status Monitoring
@@ -83,23 +74,15 @@ Diagnostics | STATUS Messages for Service |
 
 STATUS feedback | ✔ | ✖ | ✔ |
 
-
 ## Error Handling
-
 - Invalid Page ID:
-
 - STATUS = "ERR_INVALID_PAGE"
-
 - wPage = 0xFFFF
-
 - Initialization Error:
-
 - STATUS = "ERR_INIT_FAILED"
-
 - System in Safe State
 
 ## 🛠️ Related Exercises
-
 * [Exercise_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)]
 * [Exercise_012a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a.md)]
 * [Exercise_012b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)]

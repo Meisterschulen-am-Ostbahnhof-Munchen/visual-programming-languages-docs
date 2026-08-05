@@ -1,11 +1,8 @@
 # ATM_D_FF_TMIN
-
 ![ATM_D_FF_TMIN](./ATM_D_FF_TMIN.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `ATM_D_FF_TMIN` implements a clock-controlled D flip-flop (data latch) that takes the incoming data value at a clock event and outputs it as a stored value. A special feature is the adjustable minimum time (`Tmin`) between two consecutive output events, which guarantees a defined dead time.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -54,14 +51,9 @@ The adapter `ATM` provides one event channel and one data channel (`E1`, `D1` fo
 3. **Minimum Output Delay**: After each output event (`Q.E1`), an internal lock is activated. Only after the time specified in `Tmin` has elapsed can another clock event trigger a new output. If a new clock signal arrives within the lock time, it is ignored, or the output is delayed until `Tmin` expires (depending on the implementation of the internal function block `E_D_FF_ANY_TMIN`).
 
 ## Technical Features
-
 - **Dead Time Control**: The parameter `Tmin` forces a minimum pause between two output events – useful for protecting downstream components or debouncing signal edges.
-
 - **Internal Implementation**: The function block internally uses the function block `iec61499::events::E_D_FF_ANY_TMIN`, which provides the actual flip-flop logic with timing. `ATM_D_FF_TMIN` acts as an interface adapter for the adapter `ATM`.
-
-
 - **Internal Implementation**: The function block internally uses the function block `iec61499::events::E_D_FF_ANY_TMIN`, which provides the actual flip-flop logic with timing control. `ATM_D_FF_TMIN` acts as an interface adapter for the adapter `ATM`.
-
 
 **Default Time Control**: - **Adapter Interface**: Both input and output data are exchanged via unidirectional adapters, enabling loose coupling in the application.
 
@@ -77,19 +69,13 @@ Although no explicit state diagram is available, the following logical states ca
 After the lock expires, the function block returns to the **Ready** state.
 
 ## Application Scenarios
-
 - **Signal conditioning** in automation technology, where a switching signal needs to be re-evaluated after a defined minimum pause (e.g., dead time during valve switching).
-
 - **Debouncing** of binary sensors where a downstream output may only be generated after a stable time of `Tmin`.
-
 - **Synchronization** of data streams where a minimum packet gap must be maintained.
 
 ## Comparison with similar components
-
 - **Standard D flip-flop** (e.g., `E_D_FF`): Provides an output immediately after each clock cycle – without any time constraint. The `ATM_D_FF_TMIN` extends this with the dead time `Tmin`.
-
 - **Monostable flip-flops** (timers): Generate a pulse of defined length. The `ATM_D_FF_TMIN`, however, only disables the output without resetting the output level.
-
 
 This component combines the properties of a flip-flop with an adjustable minimum delay time and is therefore particularly suitable for time-critical control tasks.
 

@@ -1,12 +1,8 @@
 # ILOCK_BLOCK_PROTECT
-
 ![ILOCK_BLOCK_PROTECT](./ILOCK_BLOCK_PROTECT.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block `ILOCK_BLOCK_PROTECT` implements an interlock-protected direction control with an adjustable dead time. As soon as an active input (e.g., `EI_UP` with `DI_UP = TRUE`) is detected, it is prioritized, and all conflicting signals are ignored until the active input is reset. After resetting, a configurable protection time (`DT_PROTECT`) elapses before a new direction can be activated. This reliably prevents unwanted direction changes or short circuits.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -66,7 +62,6 @@ The function block operates according to the **first priority** principle:
 
 Both outputs are `FALSE`. When an event with a valid condition is received (e.g., `EI_UP` for `DI_UP = TRUE`), the state changes in the corresponding direction (`UP` or `DOWN`).
 
-
 2. **Directional States (`UP` / `DOWN`)**
 
 The corresponding output (`DO_UP` or `DO_DOWN`) is set to `TRUE`, the other to `FALSE`.
@@ -74,19 +69,6 @@ The corresponding output (`DO_UP` or `DO_DOWN`) is set to `TRUE`, the other to `
 As long as the active input remains active, new events are ignored (especially opposing ones).
 
 A new event with the same input is only processed if the input previously fell to `FALSE` (falling edge) – see `UP_STOP`/`DOWN_STOP`.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ... 3. **Reset to Protection Phase (`UP_STOP` / `DOWN_STOP`)**
 
@@ -97,23 +79,16 @@ If the active input is reset (e.g., `DI_UP` from `TRUE` to `FALSE`), the output 
 After the dead time has elapsed, the function block leaves the protection phase and enters the `EVAL` state. The following decisions are made based on the current inputs:
 
 - `DI_UP = TRUE` and `DI_DOWN = FALSE` → Transition to `UP`
-
 - `DI_DOWN = TRUE` and `DI_UP = FALSE` → Transition to `DOWN`
-
 - Both `FALSE` or both `TRUE` → Return to `STOP`
 
 **Important:** As long as a new event arrives in the state `UP`/`DOWN` while the corresponding input is still `TRUE`, this event is ignored (no State transition). The stop phase is only initiated upon a falling edge.
 
 ## Technical Features
-
 - **Internal timer** via adapter `timeOut` (type `ATimeOut`) – the protection time is started by each state transition that deactivates a direction.
-
 - **No simultaneous outputs** – `DO_UP` and `DO_DOWN` are never simultaneously `TRUE`. In the `EVAL` state, both outputs are `FALSE`.
-
 - **Configurable dead time** via input `DT_PROTECT` (factory default 50 ms).
-
 - **Compact implementation** as a Basic Function Block with a finite state machine (6 states).
-
 - The interlock not only prevents conflicting commands but also enforces a minimum pause between two direction changes.
 
 ## State Overview
@@ -134,15 +109,10 @@ After the dead time has elapsed, the function block leaves the protection phase 
 
 | `EVAL` | Evaluation state after timer expiration: Decision on next direction or return to `STOP` |
 
-
 ## Application Scenarios
-
 - **Directional control of motors** (e.g., conveyor belts, hoists, revolving gates) – prevents simultaneous control in both directions and enforces a dead time for the mechanical change of direction.
-
 - **Interlocking of valves or flaps** – e.g., open/close control with protection against rapid switching to prevent mechanical stress.
-
 - **Safety-related controls** – as part of a simple interlock logic when a safety-certified component is not required.
-
 - **Control of feeders** in agricultural technology (see Copyright HR Agrartechnik GmbH) or in conveyor technology.
 
 ## Comparison with similar components

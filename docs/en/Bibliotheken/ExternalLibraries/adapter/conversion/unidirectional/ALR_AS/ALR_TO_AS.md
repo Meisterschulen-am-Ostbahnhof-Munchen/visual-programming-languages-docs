@@ -1,13 +1,8 @@
 # ALR_TO_AS
-
 ![ALR_TO_AS](./ALR_TO_AS.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **ALR_TO_AS** function block is a composite function block that converts an **LREAL adapter** (ALR) into a **SINT adapter** (AS). It encapsulates the conversion of a floating-point value (LREAL) into a signed 8-bit integer value (SINT) and provides the result data via the SINT adapter. This function block is typically used in automation technology when data needs to be transferred between different adapter interfaces.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -49,13 +44,9 @@ The function block is implemented as a composite FB. Internally, it contains a f
 This enables synchronous, event-driven conversion of an LREAL value to a SINT value via adapter interfaces.
 
 ## Technical Features
-
 - **Composite Structure**: The function block completely encapsulates the conversion logic in a network, making the implementation transparent and easily extensible.
-
 - **Adapter-based**: Instead of individual event and data ports, standardized unidirectional adapters (`ALR` and `AS`) are used. This simplifies integration into existing adapter-based architectures.
-
 - **Reuse**: The internal function block `F_LREAL_TO_SINT` is a proven IEC function block and ensures correct conversion to the standard.
-
 - **No dedicated state machine**: Since this is a composite function block, there is no independent state machine; control is achieved solely through the connected adapter events.
 
 ## State Overview
@@ -63,17 +54,13 @@ This enables synchronous, event-driven conversion of an LREAL value to a SINT va
 The function block does not have an explicit state machine. Its behavior is determined by the internal function block `F_LREAL_TO_SINT` and the event connections. This internal function block (FB) executes a simple **IDLE → CONVERTING → DONE** cycle, controlled by the events `REQ` and `CNF`. For the user, the block is therefore transparent and usable as an **event-driven converter**.
 
 ## Application Scenarios
-
 - **Data Bridge Between Systems**: When a control module provides LREAL values via a `ALR` adapter, but a downstream module expects SINT values via a `AS` adapter.
-
 - **Uniform Adapter Interfaces**: Simplifying system design by outsourcing conversions to standalone function blocks.
-
 - **PLC Connection**: Connecting sensors or actuators that operate with LREAL accuracy to a SINT-based bus communication.
 
 ## Comparison with Similar Components
 
 Compared to directly wiring a `F_LREAL_TO_SINT` component with individual event/data ports, the `ALR_TO_AS` component offers **a higher level of abstraction through adapters**. This facilitates the exchange of data between components that are already designed for adapter interfaces. Similar components could be `ALR_TO_ADI` (conversion to INT) or `ALR_TO_UDI` (conversion to UDINT), which are structured analogously but use different target data types.
-
 
 ## Conclusion
 
@@ -82,8 +69,4 @@ The `ALR_TO_AS` function block is a clean, adapter-based solution for converting
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

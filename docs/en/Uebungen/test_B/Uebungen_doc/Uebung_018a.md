@@ -1,11 +1,7 @@
 Here is the documentation for exercise `Uebung_018a` in the required format.
-
 # Exercise_018a: Control Audio Signal and Delay
-
 ![Uebung_018a_network](./Uebung_018a_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 This exercise demonstrates the control of audio signals in an ISOBUS Universal Terminal environment in combination with a time delay. The goal is to play a sequence of two different tones, separated by a short pause, when a softkey is released. This illustrates event processing and the use of delay blocks for sequencing actions.
 
@@ -13,77 +9,49 @@ This exercise demonstrates the control of audio signals in an ISOBUS Universal T
 
 In this sub-application, various function blocks are instantiated and interconnected to implement the desired logic.
 
-
 ### Sub-modules:
 
 #### **SoftKey_UP_F1**
-
 - **Type**: `isobus::UT::io::Softkey::Softkey_IE`
-
 - **Description**: This module monitors input at the Universal Terminal (UT) for a specific softkey.
-
 
 ### Sub-modules:
 
 ### SoftKey_UP_F1**
-
 - **Type**: `isobus::UT::io::Softkey::Softkey_IE`
-
 - **Description**: This module monitors input at the Universal Terminal (UT) for a specific softkey. ... - **Configuration**:
-
 - **Parameter**: `QI` = `TRUE` (Activates the function block)
-
 - **Parameter**: `u16ObjId` = `SoftKey_F1` (F1 key identifier)
-
 - **Parameter**: `InputEvent` = `SK_RELEASED` (Reacts to key release)
-
 - **Event Output**: `IND` (Indicates that the event has occurred)
 
 #### **Q_CtrlAudioSignal_0**
-
 - **Type**: `isobus::UT::Q::Q_CtrlAudioSignal`
-
 - **Description**: Generates the first acoustic signal (lower tone).
-
 - **Configuration**:
-
 - **Parameters**: `u8NumOfRepit` = `1` (One-time playback)
-
 - **Parameters**: `u16Frequency` = `440` (Frequency in Hz - Concert pitch A)
-
 - **Parameters**: `u16OnTimeMs` = `150` (Duration of the tone in milliseconds)
-
 - **Parameters**: `u16OffTimeMs` = `0`
 - **Event Input**: `REQ` (Starts the tone output)
-
 - **Event Output**: `CNF` (Confirms the (Processing)
 
 #### **E_RDELAY**
 - **Type**: `iec61499::events::E_RDELAY`
 - **Description**: A delay block that postpones the forwarding of an event by a defined time.
-
 - **Configuration**:
-
 - **Parameters**: `DT` = `T#250ms` (Delay time of 250 milliseconds)
 - **Event Input**: `START` (Starts the timer)
-
 - **Event Output**: `EO` (Fires after the time has elapsed)
 
 #### **Q_CtrlAudioSignal_1**
-
 - **Type**: `isobus::UT::Q::Q_CtrlAudioSignal`
 - **Description**: Generates the second audible signal (higher pitch).
-
 - **Configuration**:
-
 - **Parameter**: `u8NumOfRepit` = `1` (One-time playback)
-
 - **Parameter**: `u16Frequency` = `880` (Frequency in Hz - one octave higher)
-
 - **Parameter**: `u16OnTimeMs` = `150` (Duration of the tone in milliseconds)
-
 - **Parameter**: `u16OffTimeMs` = `0`
-
 - **Event Input**: `REQ` (Starts the sound output)
 
 ## Program Flow and Connections

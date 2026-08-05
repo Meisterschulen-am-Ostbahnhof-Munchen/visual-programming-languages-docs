@@ -1,39 +1,26 @@
 # E_TABLE
-
 <img width="1139" height="202" alt="E_TABLE" src="https://user-images.githubusercontent.com/113907528/204904862-ebdcc4da-7a49-4931-b534-673c9449cf5e.png">
-
 * * * * * * * * * *
-
 ## Introduction
 The `E_TABLE` (Event Table) is a function block according to IEC 61499 that generates a finite sequence of events with individually definable time intervals. It reads the time intervals from a table (an array) and fires a specified number of events sequentially.
-
 ![E_TABLE](E_TABLE.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **START**: Starts the generation of the event sequence.
-
 - **Connected Data**: `DT`, `N`
-
 - **STOP**: Stops the sequence prematurely.
 
 ### **Event Outputs**
-
 - **EO (Event Output)**: The output event that is triggered qzmsdocs000005 times.
-
 - **Associated Data**: qzmsdocs000006
 
 ### **Data Inputs**
-
 - **DT**: An array of durations (data type: `TIME`, size: 4). `DT[i]` defines the delay time *before* the qzmsdocs000009th event.
-
 - **N**: The total number of events to be generated (data type: `UINT`, max. 4 for this function block).
 
-
 ### **Data Outputs**
-
 - **CV (Current Value)**: The index of the currently triggered event (0 to N-1) (Data type: `UINT`).
 
 ## Functionality
@@ -43,16 +30,12 @@ The `E_TABLE` (Event Table) is a function block according to IEC 61499 that gene
 2. **Event generation**: The function block processes the table:
 
 - It waits for the time interval defined in `DT[0]`. Then, the first `EO` event is triggered, and `CV` is set to `0`.
-
-
 - It waits for the time interval defined in `DT[1]`. Then, the second `EO` event is triggered, and `CV` is set to `1`.
-
 - This process repeats until `N` events have been generated.
 
 3. **End of Sequence**: The sequence ends automatically after `N` events have been triggered.
 
 4. **Stop**: A `STOP` event immediately terminates the sequence at any point.
-
 
 **Example:**
 
@@ -68,18 +51,13 @@ The `E_TABLE` (Event Table) is a function block according to IEC 61499 that gene
 
 4. The sequence is complete.
 
-
 ## Technical Features
 - **Table-Controlled Time Intervals**: The strength of this function block lies in its ability to define variable time intervals between events, rather than a fixed interval.
-
 - **Sequence Counter**: The `CV` output provides valuable information about the current position in the sequence.
 
 ## Application Scenarios
-
 - **Control of Step Sequences**: Triggering steps with varying wait or processing times.
-
 - **Complex Control**: Controlling an actuator with a series of pulses with variable pauses.
-
 - **Test Automation**: Generating a complex, time-defined stimulus sequence for a test object, where the `CV` output can be used for synchronization with the evaluation.
 
 ## ⚖️ Comparison with Similar Function Blocks
@@ -95,7 +73,6 @@ The `E_TABLE` (Event Table) is a function block according to IEC 61499 that gene
 | Counter Output (`CV`) | Yes | No | No (internal) |
 
 ## 🛠️ Related Exercises
-
 * [Exercise_093](../../../Uebungen/test_B/Uebungen_doc/Uebung_093.md)
 
 ## Conclusion

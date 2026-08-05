@@ -1,13 +1,8 @@
 # Exercise_020f3_AX: DigitalInput_I1 to DigitalOutput_Q1; Flasher
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-
 This article describes the logiBUS® exercise `Uebung_020f3_AX`.
-
 ----
-
 ## Objective of the Exercise
-
 Using the `AX_BLINK` block for asymmetric flashing.
 
 -----
@@ -21,9 +16,7 @@ Using the `AX_BLINK` block for asymmetric flashing.
 ![Uebung_020f3_AX_network](./Uebung_020f3_AX_network.svg)
 
 * **`AX_BLINK`**: Generates a flashing signal.
-
 * **Parameter `TIMELOW`**: Time for "Off" (1 s).
-
 * **Parameter `TIMEHIGH`**: Time for "On" (1.2 s).
 
 ----

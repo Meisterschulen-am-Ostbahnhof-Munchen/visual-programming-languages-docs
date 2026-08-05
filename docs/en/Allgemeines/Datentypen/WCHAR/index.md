@@ -1,4 +1,1 @@
 # Data type: WCHAR
-
-
-` ...

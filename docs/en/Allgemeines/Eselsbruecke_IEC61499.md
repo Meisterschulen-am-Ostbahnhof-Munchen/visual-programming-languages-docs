@@ -1,12 +1,8 @@
 # Mnemonic: IEC 61499
-
 How can you reliably remember the number of the standard **IEC 61499** (Function Blocks for Industrial-Process Measurement and Control Systems) – the standard on which
 4diac/FORTE, and thus this entire project, is based?
-
 Answer: with a tractor.
-
 ## The mnemonic in one sentence
-
 > **Case IH 1455** – everyone knows it. A 6-cylinder tractor. You already have the **6** and the
 > **14** memorized. Now you just have to change the **55**
 > to a **99** – and there you have **61499**.
@@ -32,7 +28,6 @@ last digits **55 → 99**. Two images that can help:
 
 - **Mathematically:** 55 + 44 = 99 (the "44" can be thought of as rounding up the horsepower of the
 tractor, if that helps).
-
 
 - **Figuratively:** The two fives of the tractor type "grow" in your mind into two
 nines – `1455` becomes `1499`.
@@ -61,7 +56,6 @@ Mnemonic devices work best when they link an abstract fact (a
 > **Case IH 1455, 6 cylinders. Turn 55 into 99. IEC 61499.**
 
 ## Further Information
-
 * [Tractor Encyclopedia: Case-IH 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL)
 * [Tractor Encyclopedia: IHC 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL)
 

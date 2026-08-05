@@ -1,35 +1,26 @@
 # F_USINT_TO_DINT
-
 <img width="1454" height="214" alt="F_USINT_TO_DINT" src="https://github.com/user-attachments/assets/94cb99ea-b608-4a9b-b390-02601460c14b" />
-
 * * * * * * * * * *
-
 ## Introduction
 The function block `F_USINT_TO_DINT` converts a `USINT` value (8-bit unsigned integer) to a `DINT` value (32-bit signed integer). This conversion is useful when values need to be converted between different data types, especially when an extension of the bit width is required.
-
 ![F_USINT_TO_DINT](F_USINT_TO_DINT.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **REQ**: Starts the conversion. When this event is triggered, the value of `IN` is converted to `OUT`.
 
 ### **Event Outputs**
-
 - **CNF**: Signals the completion of the conversion. This event is output along with the updated value of `OUT`.
 
 ### **Data Inputs**
-
 - **IN** (`USINT`): The input value to be converted.
 
 ### **Data Outputs**
-
 - **OUT** (`DINT`): The converted output value.
 
 ### **Adapters**
 No adapters available.
-
 
 ### ## Functionality
 
@@ -38,9 +29,7 @@ The function block directly assigns the input value `IN` (of type `USINT`) to th
 The algorithm is triggered by the `REQ` event and outputs the `CNF` event after the conversion.
 
 ## Technical Features
-
 - The function block is deterministic and has no internal state.
-
 - The conversion is lossless, as `DINT` can represent all values of `USINT`.
 
 ## State Overview
@@ -48,7 +37,6 @@ The function block has no internal states. Execution occurs immediately after th
 
 ## Application Scenarios
 - Extension of 8-bit unsigned values to 32-bit signed values in control applications.
-
 - Compatibility between different parts of a control system that use different data types.
 
 ## ⚖️ Comparison with Similar Function Blocks

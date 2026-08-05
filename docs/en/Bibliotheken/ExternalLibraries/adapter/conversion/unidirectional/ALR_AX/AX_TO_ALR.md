@@ -1,13 +1,8 @@
 # AX_TO_ALR
-
 ![AX_TO_ALR](./AX_TO_ALR.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AX_TO_ALR** is used to convert a BOOL adapter signal (AX) into an LREAL adapter signal (ALR). Internally, it uses the IEC 61131 standard function `F_SEL` (Selection) to generate a discrete LREAL value from a Boolean input. The block is implemented as a composite function block and is suitable for the simple, adapter-based conversion of digital states into numerical values.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -63,42 +58,29 @@ The function block operates according to the following scheme:
 3. Depending on the Boolean value, ``F_SEL`` selects one of two constant values:
 
 - ``FALSE`` (G = 0) → Output of **0.0** (LREAL#0.0)
-
 - ``TRUE`` (G = 1) → Output of **1.0** (LREAL#1.0)
 
 4. The result is passed to ``ALR_OUT.D1``, and the acknowledgment event ``ALR_OUT.E1`` is simultaneously output.
 
-
-
 ``ALR_OUT.D1`` is passed to the gate input (G) of the embedded function ``ALR_OUT.E1``. The conversion is event-driven: Each incoming event causes exactly one conversion of the current BOOL value.
 
 ## Technical Features
-
 - **Adapter Interface**: The function block uses only unidirectional adapters (socket/plug), allowing it to integrate seamlessly into adapter-based architectures.
-
 - **Internal Use of F_SEL**: The IEC 61131 standard function guarantees deterministic and portable behavior.
-
 - **Fixed Thresholds**: The output values are fixed at `0.0` and `1.0`. Adjusting these thresholds requires modifying the internal network.
-
 - **Packaging**: The function block is packaged in `adapter::conversion::unidirectional`.
-
 - **License**: The function block is available under the Eclipse Public License 2.0.
-
 
 ## State Overview
 
 Since this is a composite function block (FB) without its own execution state, the state logic is derived from the event and data processing of the included `F_SEL` block. Two stable states exist:
 
 - **Waiting for Event**: No event at `AX_IN.E1` – no output.
-
 - **Processing Active**: An event is being processed: the Boolean value is read, converted into an LREAL value, and made available at the output; subsequently, the acknowledgment event is sent.
 
 ## Application Scenarios
-
 - **Digital-to-Analog Conversion**: A digital sensor (e.g., switch, limit switch) provides a Boolean value that is to be further processed in the controller as an LREAL signal (0.0/1.0).
-
 - **Adapter Integration**: Integration into existing systems that already use unidirectional AX and ALR adapters – e.g., in agricultural technology or industrial automation.
-
 - **State Scaling**: Simplified conversion of on/off signals into numerical values for calculations or visualizations.
 
 ## Comparison with Similar Function Blocks

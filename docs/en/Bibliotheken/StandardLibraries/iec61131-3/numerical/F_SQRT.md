@@ -1,13 +1,8 @@
 # F_SQRT
-
 ![F_SQRT](https://user-images.githubusercontent.com/116869307/214145163-97573336-a23e-420b-88ab-99876f5083e5.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The F_SQRT function block is a standard function block according to IEC 61131-3 that calculates the square root of a numeric input. It belongs to the category of numeric functions and is used for the mathematical calculation of the square root of any real input value.
-
-
 ![F_SQRT](F_SQRT.svg)
 
 ## Interface Structure
@@ -19,11 +14,9 @@ The F_SQRT function block is a standard function block according to IEC 61131-3 
 - **CNF**: Confirmation of the requested service - signals the completion of the calculation
 
 ### **Data Inputs**
-
 - **IN** (ANY_REAL): Input value from which the square root is to be calculated
 
 ### **Data Outputs**
-
 - **OUT** (ANY_REAL): Result of the square root calculation
 
 ### **Adapters**
@@ -31,7 +24,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The F_SQRT function block calculates the square root of the input value IN. The calculation is performed when activated by the REQ event. After the calculation is complete, the CNF event is triggered, and the result is output via the OUT variable.
-
 
 ## Technical Features
 - Uses the ANY_REAL data type for maximum flexibility with various real number types
@@ -52,7 +44,6 @@ The F_SQRT function block calculates the square root of the input value IN. The 
 
 ## ⚖️ Comparison with Similar Blocks
 Compared to other mathematical function blocks, F_SQRT offers a specialized function for calculating square roots. Other blocks such as F_ADD or F_MUL offer basic arithmetic operations, while F_SQRT provides a specific mathematical function.
-
 
 ## Conclusion
 

@@ -1,11 +1,8 @@
 # LED_COLOURS
-
 ![LED_COLOURS](./LED_COLOURS.svg)
-
 * * * * * * * * * *
 ## Introduction
 LED_COLOURS is a global constant definition that provides standardized color values for LED displays. These constants are used in logiBUS systems for the uniform control of colored LED outputs.
-
 ## Interface Structure
 ### **Event Inputs**
 *No event inputs available*
@@ -36,7 +33,6 @@ LED_COLOURS defines a collection of global constants of type UINT (16-bit unsign
 
 ## Technical Specifications
 - All constants are of type UINT (16-bit unsigned integer)
-
 - Value range: 1-8 for the defined colors
 - Constants are set at compile time and are immutable
 - Part of the logiBUS::io::DO_LED package
@@ -45,7 +41,6 @@ LED_COLOURS defines a collection of global constants of type UINT (16-bit unsign
 *Since these are static constants, no state model exists*
 
 ## Application Scenarios
-
 - Color coding in machine controllers
 - Status indicators with colored LEDs
 - Standardization of color control in distributed systems

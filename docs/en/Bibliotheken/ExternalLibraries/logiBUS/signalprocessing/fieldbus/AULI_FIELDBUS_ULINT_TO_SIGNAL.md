@@ -1,11 +1,8 @@
 # AULI_FIELDBUS_ULINT_TO_SIGNAL
-
 ![AULI_FIELDBUS_ULINT_TO_SIGNAL](./AULI_FIELDBUS_ULINT_TO_SIGNAL.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_FIELDBUS_ULINT_TO_SIGNAL** serves as a composite module for processing a ULINT value from a fieldbus. It mirrors the incoming value to the output if the signal is recognized as valid and also outputs a synchronized validity signal. The module combines an internal fieldbus converter with a D flip-flop to ensure clocked, reliable signal transmission.
-
 ## Interface Structure
 The module does not have traditional top-level event or data ports, but communicates exclusively via adapters. These are implemented as sockets (inputs) and plugs (outputs).
 
@@ -78,80 +75,30 @@ The function block operates internally with two sub-functions:
 
 6. The flip-flop output `Q` is output to the adapter `VALID.D1`, generating an event `VALID.E1`.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 `` `` ``VALID`` ``Q` ``VALID.D1` ``VALID.E1` ... This ensures that the output value and the validity signal are always updated consistently and synchronously.
 
 ## Technical Features
-
 - **Adapter-Based Interface**: The function block uses standardized unidirectional adapters (`AULI`, `AX`), enabling loose coupling and reusability.
-
 - **Synchronization via Flip-Flop**: The validity signal is edge-triggered to avoid clock and glitch issues.
-
 - **Composite Structure**: The internal logic is implemented as a network of two standard function blocks, increasing maintainability and transparency.
-
 - **No Direct Event/Data Ports**: All communication occurs via adapters, facilitating integration into adapter-based architectures.
 
 ## State Overview
 The function block itself is stateless (purely combinatorial with clocked takeover). The internal flip-flop `E_D_FF` has two states:
 
 - **Q = FALSE**: No valid signal (initial or after an invalid value).
-
 - **Q = TRUE**: Valid signal is present.
 
 A state diagram for the entire function block is not required, as the behavior is fully described by the event and data flows.
 
 ## Application Scenarios
-
 - **Fieldbus Signal Conditioning**: A ULINT value (e.g., counter reading, position value) is received from a fieldbus, checked for validity, and passed on to a controller or visualization system.
-
 - **Quality Indication**: A Boolean signal indicating validity (e.g., "Data valid" / "Data faulty") is provided along with the data value.
-
 - **Safety-Oriented Transmission**: By synchronously receiving the validity signal, errors in the data line can be detected and signaled.
 
 ## Comparison with Similar Function Blocks
-
 - **Simple Pass-Through Function Block**: A simple `MOVE` or `REPEAT` function block forwards the value without validation. `AULI_FIELDBUS_ULINT_TO_SIGNAL` adds explicit validity checking and signaling.
-
 - **FIELDBUS_ULINT_TO_SIGNAL (Single)**: This core function block already provides the validity signal, but without edge-triggered synchronization. This composite function block enhances signal quality with a flip-flop.
-
 - **Adapter-Based Function Blocks**: Specifically designed for use in 4diac environments that rely on adapter communication; other function blocks with direct ports are less flexible.
 
 ## Conclusion
@@ -160,7 +107,6 @@ A state diagram for the entire function block is not required, as the behavior i
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

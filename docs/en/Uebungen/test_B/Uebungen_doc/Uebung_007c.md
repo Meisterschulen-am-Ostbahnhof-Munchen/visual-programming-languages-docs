@@ -1,17 +1,11 @@
 # Exercise_007c: Flasher with E_CYCLE and E_T_FF
-
 ![Uebung_007c_network](./Uebung_007c_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise demonstrates the creation of a simple flasher using the IEC 61499 function blocks `E_CYCLE` and `E_T_FF`.
-
 The flasher is controlled via two digital inputs:
 
 - **Input I1** (single-click push button) starts the flashing function.
-
 - **Input I2** (single-click push button) stops it.
 
 The output **Q1** toggles periodically between on and off every 10 ms as long as the flashing function is active.
@@ -38,7 +32,6 @@ This exercise teaches how to work with cyclic events, event splitting/merging, a
 
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q1` | Controls digital output Q1. An event at input `REQ` takes the data value at input `OUT` and outputs it physically. |
 
-
 ## Program Flow and Connections
 
 1. **Start**: Pressing a key on **I1** generates an event on `DigitalInput_CLK_I1.IND`. This event is connected to the **START** input of `E_CYCLE` and activates the cyclic timer.
@@ -53,19 +46,13 @@ This exercise teaches how to work with cyclic events, event splitting/merging, a
 
 6. **Toggle**: The merged event triggers the `CLK` input of `E_T_FF`. The flip-flop's state toggles with each clock cycle. The current value is provided at the data output `Q`.
 
-
 7. **Output**: The event `EO` from `E_T_FF` is routed to the `REQ` input of `DigitalOutput_Q1`. Simultaneously, the data value `Q` (0 or 1) is passed to the `OUT` input of the output module. Output Q1 is set accordingly at each clock cycle.
-
-
 
 ``` **Learning Objectives**:
 
 - Understanding cyclic events (`E_CYCLE`)
-
 - Using a toggle flip-flop (`E_T_FF`)
-
 - Event multiplication and merging (`E_SPLIT_3`, `E_MERGE_3`)
-
 - Switching a function on and off via digital inputs
 
 **Difficulty Level**: Beginner
@@ -74,9 +61,7 @@ This exercise teaches how to work with cyclic events, event splitting/merging, a
 **Preliminary Notes**:
 
 - This exercise uses the logiBUS hardware interface – ensure that inputs I1 and I2 and output Q1 are correctly connected.
-
 - The pushbuttons must be configured in **single-click** mode.
-
 - After activating E_CYCLE (Start), Q1 flashes until the Stop button is pressed.
 
 ## Summary

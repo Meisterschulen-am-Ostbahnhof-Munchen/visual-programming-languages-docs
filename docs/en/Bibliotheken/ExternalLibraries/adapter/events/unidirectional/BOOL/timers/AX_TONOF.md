@@ -1,14 +1,9 @@
 # AX_TONOF
-
 <img width="1154" height="290" alt="image" src="https://github.com/user-attachments/assets/eecdf987-773b-4d5a-9da7-7ba858235b94" />
-
 * * * * * * * * * *
-
 ## Introduction
 **Important note: This function block requires only one event and no cyclic calls. It has no output ET and does not display the elapsed time.**
-
 AX_TONOF is a standardized timer function block that implements both on and off delays. This function block combines the functionalities of an on-delay and an off-delay timer in a compact solution.
-
 
 ![AX_TONOF](AX_TONOF.svg)
 
@@ -33,8 +28,6 @@ AX_TONOF is a standardized timer function block that implements both on and off 
 
 ## Functionality
 The AX_TONOF function block processes input signals via the IN adapter and applies the configured delay times depending on the signal state. When an input signal is active, the PT_ON delay is taken into account; when the signal is inactive, the PT_OFF delay is used. The result is output via the Q-adapter.
-
-
 
 ` ...)````) ```) ```) ```) ``) ``) ``)`) is taken into account. The `PT_ON` delay is taken into account when an ## Technical Features
 - Supports bidirectional time delays (on and off delay)
@@ -62,7 +55,6 @@ Compared to simple timer function blocks like TON or TOF, AX_TONOF offers the co
 Comparison with [E_TONOF](../../../../../../StandardLibraries/events/timers/E_TONOF.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_020g_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020g_AX.md)]
 
 ## Conclusion

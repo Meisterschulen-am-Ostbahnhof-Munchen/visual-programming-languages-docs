@@ -1,14 +1,9 @@
 # AX_T_FF_SR
-
 <img width="1218" height="240" alt="image" src="https://github.com/user-attachments/assets/92d95ec9-3cf5-48b7-b262-35e136f6371e" />
-
 ![AX_T_FF_SR_ecc](./AX_T_FF_SR_ecc.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_T_FF_SR is an event-driven bistable function block with toggle functionality. It is a flip-flop element that can operate as both a set-reset flip-flop and a toggle flip-flop. The component combines the properties of an SR flip-flop with additional toggle functionality via a clock input.
-
 
 ![AX_T_FF_SR](AX_T_FF_SR.svg)
 
@@ -56,27 +51,24 @@ With each state change, the corresponding algorithm is executed, setting the ada
 
 ## State Overview
 
-```
 START (Initialzustand)
-    │
-    ├── S ───→ SET (Q.D1 = TRUE)
-    │
-    └── CLK ─→ SET (Q.D1 = TRUE)
+│
+├── S ───→ SET (Q.D1 = TRUE)
+│
+└── CLK ─→ SET (Q.D1 = TRUE)
 
 SET (Q.D1 = TRUE)
-    │
-    ├── R ────→ RESET (Q.D1 = FALSE)
-    │
-    └── CLK ─→ RESET (Q.D1 = FALSE)
+│
+├── R ────→ RESET (Q.D1 = FALSE)
+│
+└── CLK ─→ RESET (Q.D1 = FALSE)
 
 RESET (Q.D1 = FALSE)
-    │
-    ├── S ────→ SET (Q.D1 = TRUE)
-    │
-    └── CLK ─→ SET (Q.D1 = TRUE)
-```
+│
+├── S ────→ SET (Q.D1 = TRUE)
+│
+└── CLK ─→ SET (Q.D1 = TRUE)
 ## Application Scenarios
-
 - State storage in control applications
 - Clock and frequency division
 - Event counting
@@ -86,11 +78,9 @@ RESET (Q.D1 = FALSE)
 ## ⚖️ Comparison with similar components
 Compared to a simple E_SR flip-flop, the AX_T_FF_SR offers additional toggle functionality through its CLK input. While a pure SR flip-flop only has set and reset inputs, this component also allows clock-controlled switching of the output state.
 
-
 Comparison with [E_T_FF_SR](../../../../../StandardLibraries/events/E_T_FF_SR.md)
 
 ## 🛠️ Related exercises
-
 * [Uebung_004a7_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
 * [Uebung_006a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a2_AX.md)
 * [Uebung_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)

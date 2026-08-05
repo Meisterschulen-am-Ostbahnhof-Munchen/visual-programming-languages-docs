@@ -1,11 +1,8 @@
 # BasicOne
-
 ![BasicOne](./BasicOne.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **BasicOne** function block is a basic, event-driven block according to IEC 61499. It serves as a simple sequence element for initialization, execution of a main operation, and proper deinitialization. The block is particularly suitable for control sequences where a resource state (e.g., device ready) needs to be monitored and reset. The block is included in the package `logiBUS::utils::sequence::one`.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -59,19 +56,14 @@ The function block goes through a clearly defined lifecycle:
 
 3. **Normal Operation (NormalOp)**: In the **Initialized** state, a `REQ` event can initiate normal operation. The *normalOperation* algorithm sets `QO := QI` (still `TRUE`) and, if `QI = TRUE` is present, transfers the value from `DI1` to `DO1`. Afterward, `CNF` is sent, and the function block automatically returns to **Initialized**.
 
-
-
 The normalOperation* algorithm sets `QO := QI` (still `TRUE`) and transfers the value from `DI1` to `DO1`. 4. **DeInitialization**: If a `INIT` event with `QI = FALSE` is received in the **Initialized** state, the function block executes the *deInitialize* algorithm. This sets `QO := FALSE` and `DO1 := FALSE`. Subsequently, `INITO` is sent, and the function block returns to the **START** start state.
 
 Important: The normal operation is only executed if `QI = TRUE` is present. In the `REQ` event, the algorithm is executed, but `DO1` remains unchanged (it is not set to `DI1`; instead, the last value or the default value `FALSE` remains as defined by the algorithm – in `QI = FALSE`, the IF condition is not met, therefore `DO1` does not change).
 
-
 ``QI = FALSE`` ## Technical Features
 
 - **Event Dependency of QI**: The transitions `INIT[TRUE = QI]` and `INIT[FALSE = QI]` demonstrate that the same event, `INIT`, triggers different state transitions depending on the value of `QI`. This enables compact control of initialization and deinitialization via a single event.
-
 - **Automatic Fallback**: After a `REQ` event, the function block returns to the **Initialized** state without an external event (transition with condition `1`). This simplifies integration into cyclic processes.
-
 - **No Self-Locking**: The function block does not block; after each successful execution, it is ready for the next event.
 
 ## State Overview
@@ -91,19 +83,13 @@ Important: The normal operation is only executed if `QI = TRUE` is present. In t
 | `DeInit` | Deinitialization phase; sets `QO = FALSE` and `DO1 = FALSE`. | Executes the *deInitialize* algorithm, sending `INITO`. |
 
 ## Application Scenarios
-
 - **Initializing a Component**: A device must be configured upon power-up. Using `INIT` (QI=TRUE), the device state is set to "ready." `REQ` then executes the actual logic cyclically.
-
 - **Resource Management**: The function block can be used as a simple sequencer for one-time initialization and subsequent deinitialization (e.g., for a database connection).
-
 - **Safety-Oriented Control**: The qualifier `QI` ensures that the output `DO1` can only accept the input value if the function block is initialized. Deinitialization resets all outputs (`FALSE`).
 
 ## Comparison with similar building blocks
-
 - **BasicBOOLEAN**: A simple Boolean building block without a state machine that only reacts to an event and passes a value. `BasicOne`, on the other hand, offers an explicit initialization and deinitialization sequence.
-
 - **SR Flip-Flop**: A memory building block with set and reset capabilities. `BasicOne` is more of a state machine that implements a single start and stop operation, but does not have a hold function.
-
 - **SimpleCycle**: A cyclic building block that repeatedly performs the same operation. `BasicOne`It distinguishes between initialization and cyclic execution, allowing for a clean separation.
 
 ## Conclusion

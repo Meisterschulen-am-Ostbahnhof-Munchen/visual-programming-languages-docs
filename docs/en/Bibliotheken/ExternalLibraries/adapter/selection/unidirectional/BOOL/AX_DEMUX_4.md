@@ -1,13 +1,8 @@
 # AX_DEMUX_4
-
 <img width="1220" height="274" alt="image" src="https://github.com/user-attachments/assets/b2301b38-e22d-4369-99f4-29de847e9d20" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_DEMUX_4 is a generic demultiplexer function block that receives incoming data via an adapter input and selectively forwards it to one of four output adapters based on an index value. This function block is used to distribute data streams in distributed automation systems.
-
-
 ![AX_DEMUX_4](AX_DEMUX_4.svg)
 
 ## Interface Structure
@@ -19,7 +14,6 @@ The AX_DEMUX_4 is a generic demultiplexer function block that receives incoming 
 - **CNF**: Confirms index setting and successful demultiplexing operation
 
 ### **Data Inputs**
-
 - **K** (UINT): Index value for selecting the target output (0-3)
 
 ### **Data Outputs**
@@ -28,15 +22,12 @@ The AX_DEMUX_4 is a generic demultiplexer function block that receives incoming 
 ### **Adapters**
 - **IN** (Socket): Unidirectional AX adapter for the input value for demultiplexing
 - **OUT1** (Plug): Unidirectional AX adapter for output 1
-
 - **OUT2** (Plug): Unidirectional AX adapter for output 2
 - **OUT3** (Plug): Unidirectional AX adapter for output 3
-
 - **OUT4** (Plug): Unidirectional AX adapter for output 4
 
 ## Functionality
 The AX_DEMUX_4 operates as a 4-way demultiplexer. Upon receiving a REQ event, the current value of index K is evaluated. Based on this index value, the incoming data stream is selectively routed from the IN adapter to one of the four OUT adapters. After successful distribution, the CNF event is triggered.
-
 
 ## Technical Features
 - Generic function block with type-hash support
@@ -68,8 +59,4 @@ The AX_DEMUX_4 is a robust and easy-to-configure demultiplexer for industrial au
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]
-
-
-```

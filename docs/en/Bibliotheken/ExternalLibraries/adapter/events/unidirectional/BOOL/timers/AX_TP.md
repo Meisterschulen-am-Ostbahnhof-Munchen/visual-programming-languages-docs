@@ -1,13 +1,9 @@
 # AX_TP
-
 <img width="915" height="258" alt="image" src="https://github.com/user-attachments/assets/650ebf90-0b85-464b-a6bb-79536b7a5119" />
-
 * * * * * * * * * *
 ## Introduction
 **Important Note: This function block requires only one event and no cyclic calls. It has no output ET and does not display the elapsed time.**
-
 The AX_TP is a standardized timer function block of type "Pulse" used in 4diac IDE applications. This function block generates a timed pulse output based on a configurable time interval.
-
 
 ![AX_TP](AX_TP.svg)
 
@@ -31,7 +27,6 @@ The AX_TP is a standardized timer function block of type "Pulse" used in 4diac I
 
 ## Functionality
 The AX_TP function block operates as a pulse timer. When an event is received via the IN adapter, a timed pulse is generated, the duration of which is defined by the PT input. The reset input (R) allows the timer to be reset prematurely. The internal E_TP function block handles the actual timer functionality.
-
 
 ``` ## Technical Features
 - Uses the standardized E_TP timer block as its core component
@@ -62,7 +57,6 @@ Compared to other timer blocks, AX_TP offers:
 Comparison with [E_TP](../../../../../../StandardLibraries/events/timers/E_TP.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_020f_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f_AX.md)]
 * [Exercise_020j2_AX_sub](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020j2_AX_sub.md)]
 * [Exercise_020j_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020j_AX.md)]
@@ -72,12 +66,5 @@ Comparison with [E_TP](../../../../../../StandardLibraries/events/timers/E_TP.md
 ## Conclusion
 The AX_TP is a robust and standards-compliant timer function block, ideally suited for time-controlled applications in distributed automation systems. Its adapter-based architecture enables flexible integration into more complex control structures.
 
-
-``` ---
-
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

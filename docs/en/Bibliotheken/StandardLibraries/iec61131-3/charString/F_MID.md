@@ -1,51 +1,35 @@
 # F_MID
-
 <img width="1158" height="232" alt="F_MID" src="https://github.com/user-attachments/assets/0f4a4667-023e-4ada-8ea0-2df3b494c7db" />
-
 * * * * * * * * * *
 ## Introduction
 The function block `F_MID` is used to extract a substring from a given string. A specific number of characters are extracted starting from a defined position. This function block is part of the standard character and string functions according to IEC 61131-3.
-
 ![F_MID](F_MID.svg)
-
 ## Interface Structure
 ### **Event Inputs**
 - **REQ**: Service request to execute the extraction. This is linked to the data inputs `IN`, `L`, and `P`.
 
-
 ### **Event Outputs**
-
 - **CNF**: Confirmation of successful request execution. Linked to the data output `OUT`.
 
 ### **Data Inputs**
-
 - **IN**: The input string from which the substring is to be extracted (Type: `ANY_STRING`).
-
 - **L**: The length of the substring to be extracted (Type: `ANY_INT`).
-
 - **P**: The starting position from which the extraction should begin (Type: `ANY_INT`).
 
 ### **Data Outputs**
-
 - **OUT**: The extracted substring (Type: `ANY_STRING`).
 
 ### **Adapters**
-
 - No adapters available.
-
 
 ### ## Functionality
 The function block `F_MID` extracts a substring from the input string `IN`. The extraction begins at position `P` and includes `L` characters. The result is output via output `OUT` as soon as the event output `CNF` is triggered.
 
 ## Technical Features
-
 - The function block supports any string type (`ANY_STRING`) and integer type (`ANY_INT`).
 
-
 # Technical Features
-
 - The function block supports arbitrary string types (`ANY_STRING`) and integer types (`ANY_INT`).
-
 
 ``` - The start position `P` and the length `L` must be valid values within the length of the input string to ensure correct results.
 
@@ -58,13 +42,10 @@ The function block `F_MID` extracts a substring from the input string `IN`. The 
 3. **Output**: The extracted substring is output via `OUT`, and `CNF` is triggered.
 
 ## Application Scenarios
-
 - Extraction of substrings from longer texts or data strings.
-
 - Use in string processing routines, e.g., for parsing data formats.
 
 ## ⚖️ Comparison with Similar Function Blocks
-
 - Similar function blocks like `F_LEFT` or `F_RIGHT` extract substrings from the beginning or end of a string, while `F_MID` allows for flexible extraction from any position.
 
 ## Conclusion

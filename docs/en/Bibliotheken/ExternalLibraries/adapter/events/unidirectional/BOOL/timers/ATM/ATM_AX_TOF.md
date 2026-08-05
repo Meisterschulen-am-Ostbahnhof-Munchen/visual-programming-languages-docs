@@ -1,11 +1,8 @@
 # ATM_AX_TOF
-
 ![ATM_AX_TOF](./ATM_AX_TOF.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `ATM_AX_TOF` implements off-delay timing with a modular adapter interface based on the types `AX` and `ATM`. It is typically used to keep an output active for a defined period after an input signal is lost. The block is classified as a standard timer function block according to IEC 61499-2 and is implemented internally with the function block `E_TOF`.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -49,11 +46,8 @@ The trigger is the event `IN.E1` – a new value at `IN.D1` is only applied afte
 
 ## Technical Features
 - **Adapter-Based Interface:** The use of the universal adapters `AX` and `ATM` enables flexible connection to addressing or other modules without fixed wiring.
-
 - **Internal Implementation:** The function block uses the standard FB `E_TOF` from the IEC 61499 library, ensuring robust and tested timer logic.
-
 - **Reset Function:** The reset input `R` allows for immediate cancellation of the delay, e.g., for controlling safety functions.
-
 - **Compatibility:** Developed for the 4diac IDE and based on the Eclipse Public License 2.0.
 
 ## State Overview
@@ -72,13 +66,9 @@ The function block goes through the following operating states:
 **Resetting** | Event R during Timing or Active | FALSE | Timer is stopped immediately, output goes to FALSE |
 
 ## Application Scenarios
-
 - **Fan Run-On:** After a motor is switched off, the fan continues to run for an adjustable time to dissipate residual heat.
-
 - **Signal Debouncing:** Short interruptions in a sensor signal are bridged by the delay.
-
 - **Lighting Control:** Lights remain on for a defined run-on time after leaving a room.
-
 - **Safety Shutdowns:** Reset via R enables immediate shutdown in emergencies.
 
 ## Comparison with Similar Function Blocks
@@ -103,7 +93,6 @@ The `ATM_AX_TOF` offers a reliable and flexible turn-off delay for modular autom
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

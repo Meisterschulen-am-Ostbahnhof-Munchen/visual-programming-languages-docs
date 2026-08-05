@@ -1,31 +1,21 @@
 # I_WBSD
-
 * * * * * * * * * *
-
 ## Introduction
 The **I_WBSD** function block (Wheel-based Speed and Distance) is an ISO 11783-7 compliant system for acquiring wheel-based speed and distance data, developed under the EPL-2.0 license.
-
 The block enables the precise monitoring of vehicle movements and operating conditions for agricultural and construction machinery.
-
-
 ![I_WBSD](I_WBSD.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT`: Initialization Request (with qualifier `QI`)
 
 ### **Event Outputs**
-
 - `INITO`: Initialization Confirmation (with status)
-
 - `IND`: Data Indication with Motion and State Parameters
-
 - `TIMEOUT`: Timeout Event
 
 ### **Data Inputs**
-
 - `QI` (BOOL): Qualifier for Initialization
 
 ### **Data Outputs**
@@ -71,19 +61,16 @@ The block enables the precise monitoring of vehicle movements and operating cond
 1. **Initialization**:
 
 - `INIT` with `QI`=TRUE starts wheel sensor calibration
-
 - `INITO` confirms operational readiness with system status
 
 2. **Data Provision**:
 
 - `IND` provides continuously updated motion data
-
 - Automatic adjustment of the update rate (100 ms at >0.5 m/s)
 
 3. **Error Handling**:
 
 - `TIMEOUT` in case of signal loss from the wheel speed sensors
-
 - Status messages in the `STATUS` field
 
 ## Technical Features
@@ -94,7 +81,6 @@ The block enables the precise monitoring of vehicle movements and operating cond
 ✔ **Integrated status monitoring** (ignition, start/stop)
 
 ## Application Scenarios
-
 - **Tractors**: Speed control for field work
 - **Harvesting machines**: Working distance calculation
 - **Fleet management**: Operating hour recording
@@ -135,9 +121,7 @@ The block enables the precise monitoring of vehicle movements and operating cond
 
 | ISO compliance | Full | Partial | Full |
 
-
 ## 🛠️ Related exercises
-
 * [Uebung_070](../../../../Uebungen/test_B/Uebungen_doc/Uebung_070.md)
 * [Uebung_071](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)
 * [Uebung_071a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)

@@ -1,11 +1,8 @@
 # ADI_MUX_2
-
 ![ADI_MUX_2](./ADI_MUX_2.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_MUX_2** is a generic multiplexer for ADI (Agricultural Data Interface) adapters. It allows selection between two ADI inputs (IN1 and IN2) and routes the selected input to the output OUT. Selection is made via the index K, which is set by an event.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -58,13 +55,9 @@ Socket (Input) | IN2 | `adapter::types::unidirectional::ADI` | Second input (K =
 
 The selection is purely event-driven; any change to **K** requires another **REQ** event to take effect.
 
-
 ## Technical Features
-
 - **Generic Function Block**: The FB is declared as a generic block (`GEN_ADI_MUX`) and can be used for various ADI data types (e.g., by adapting the ADI adapter definition).
-
 - **Adapter-Based Interface**: Communication occurs exclusively via ADI adapters (unidirectional). No direct data variables are used at the outputs.
-
 - **Simple Logic**: No internal state machine – the action is triggered directly by the event.
 
 ## State Overview
@@ -79,21 +72,14 @@ The FB does not have an explicit state machine. The workflow can be described as
 4. Returning to the wait state.
 
 ## Application Scenarios
-
 - **Sensor Switching**: Selection between two ADI-compliant sensors (e.g., temperature/pressure) in an agricultural control system.
-
 - **Redundancy**: Switching to a backup ADI input in case of primary signal failure.
-
 - **Mode Selection**: A different data stream is used depending on the operating mode (e.g., manual/automatic).
 
 ## Comparison with Similar Function Blocks
-
 - **ADI_MUX_2** is limited to exactly two inputs.
-
 - For more inputs, corresponding variants (e.g., ADI_MUX_4, ADI_MUX_8) would be conceivable, which would extend the index **K** accordingly.
-
 - Unlike a general multiplexer for standard data types (e.g., INT, REAL), this function block works exclusively with ADI adapters and is therefore integrated into ADI-based system architectures.
-
 
 ## Conclusion
 

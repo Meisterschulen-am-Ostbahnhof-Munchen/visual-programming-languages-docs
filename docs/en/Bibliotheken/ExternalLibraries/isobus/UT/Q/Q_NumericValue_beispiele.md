@@ -1,13 +1,8 @@
 ### Q\_NumericValue
-
 ![](https://user-images.githubusercontent.com/113907471/204326982-47eea33a-9b9c-4107-8f96-97c85a945fbc.png)
-
 Normative Reference:
-
 This function block refers to section ISO 11783-6 F.22 Change Numeric Value command
-
 CAUTION: This command can be called as often as desired by the application programmer; however, excessively frequent calls can severely overload the ISOBUS, therefore this function block should be used with caution.
-
 
 The purpose of this function block is to update one of the following objects displayed on a VT:
 
@@ -24,9 +19,7 @@ The purpose of this function block is to update one of the following objects dis
 ![](https://user-images.githubusercontent.com/69573151/227979018-91510384-180d-450b-a34e-c8a8ec7c12ed.png)
 
 * List output field: 1 byte for list index
-
 * (same as list input field, but not present in VT3)
-
 * Number output field: 4 bytes for integer output
 
 ![](https://user-images.githubusercontent.com/69573151/227979612-e3538226-b587-42c3-b123-4790dce151f0.png)
@@ -44,11 +37,8 @@ The purpose of this function block is to update one of the following objects dis
 ![](https://user-images.githubusercontent.com/69573151/227979499-dd27d3ff-2bd5-40ab-b204-89dd96728006.png)
 
 * Number variable: 4 bytes for integer value
-
 * The Number variable cannot be displayed directly on the screen, but it can be linked to all previously mentioned objects; advantage: multiple links are possible.
-
 * Object pointer: 2 bytes for Object ID
-
 * Useful for showing and hiding other objects instead of the pointer.
 
 ![](https://user-images.githubusercontent.com/69573151/227979478-da0e0584-7714-442f-a5ba-ffce7d5b882b.png)

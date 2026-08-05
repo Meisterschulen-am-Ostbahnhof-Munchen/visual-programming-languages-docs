@@ -1,19 +1,11 @@
 # IL
-
 ## 📺 Video
-
 * [The silent failure]
-
 ## 🎧 Podcast
-
 * [4diac IDE: Your open-source toolkit for distributed industrial automation according to IEC 61499]
-
 * [Eclipse 4diac 3.0: ST interpreter, FBE, and 7200 commits – The turbocharger for distributed automation]
-
 * [Eclipse 4diac: Your bicycle for Industry 4.0 – Mastering software complexity and controlling distributed systems]
-
 * [IEC 61499: The future of industrial automation and distributed systems]
-
 * [Step 2 - 4diac applications] Distribute](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Schritt-2---4diac-Anwendungen-verteilen-e36974b)
 
 ----
@@ -24,7 +16,6 @@
 
 ## Introduction
 The IL (Input Long Word) function block is a Service Interface Function Block for processing long word input data. It serves as an interface between the control logic and external input devices or resources that provide 64-bit data values.
-
 
 ![IL](IL.svg)
 
@@ -45,19 +36,15 @@ The IL (Input Long Word) function block is a Service Interface Function Block fo
 
 ### **Data Outputs**
 - **QO** (BOOL): Event Output Qualifier - Displays the status of the operation
-
 - **STATUS** (STRING): Service Status Information
-
 - **IN** (LWORD): Input Data from the Resource (64-bit value)
 
 ### **Adapters**
 No adapter interfaces are available.
 
-
 ## Functionality
 
 The IL block functions as an input service interface for long word data. Upon receiving the INIT event, the service is initialized and the configuration parameters are passed via PARAMS. The REQ event triggers a read operation, in which data is read from the connected resource. The block supports both requested reads (CNF) and spontaneous data updates (IND) from the resource.
-
 
 ``` ## Technical Features
 - Processes 64-bit Long Word (LWORD) data types
@@ -88,7 +75,6 @@ The IL function block provides a robust and flexible interface for processing 64
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

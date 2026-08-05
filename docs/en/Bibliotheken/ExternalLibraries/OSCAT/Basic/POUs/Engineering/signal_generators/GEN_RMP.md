@@ -1,9 +1,6 @@
 ![GEN_RMP](GEN_RMP.svg)
-
 # GEN_RMP
-
 this signal generator generates a ramp wave output
-
 this signal generator generates a ramp wave output. The ramp wave signal is defined by period time (PT),
 amplitude (AM), offset (OS) and a specific delay for the output signal (DL).
 The Output waveform will have its minimum peak at OS and its maximum peak at AM + OS.

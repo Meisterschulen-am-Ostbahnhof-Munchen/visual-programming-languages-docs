@@ -1,19 +1,13 @@
 # IA_Lighting
-
 ![IA_Lighting](./IA_Lighting.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **IA_Lighting** function block serves as an ISOBUS adapter for lighting data (LD) according to ISO 11783-7 (PGN 65088). It encapsulates an internal `I_Lighting` core and converts its 32-bit integer outputs for each lighting function into individual Boolean signals. A variety of adapter plugs transmit the individual lighting functions, such as daytime running lights, low beams, turn signals, work lights, etc., as separate logical signals to the application.
-
 * * * * * * * * * *
 ## Interface Structure
 ### **Event Inputs**
 
 | Event | Type | Description |
-
-
-``` |----------|-----|-----------------------------|
 
 | INIT | EInit | Initialization of the function block. Triggered by `QI`. |
 
@@ -124,42 +118,26 @@ The resulting Boolean signals are then provided via the adapter plugs simultaneo
 
 * * * * * * * * * *
 ## Technical Features
-
 - **ISOBUS Compliance**: The module implements the standardized PGN 65088 (Lighting Data) according to ISO 11783-7 and can be directly connected to an ISOBUS bus.
-
 - **Bit Division**: The internal 32-bit values from the ISOBUS telegram are divided into individual Boolean signals using `QUARTER_TO_BOOL` modules. The term "quarter" indicates a division into groups of 4 bits each.
-
-
 - **Unidirectional Adapters**: Each adapter plug is unidirectional (output only) and provides both an event (`E1`) and a Boolean value (`D1`). This allows for easy further processing in IEC 61499 applications, e.g., for controlling actuators.
-
 - **Status Output**: In addition to the actual light status, there is a special adapter, `TIMEOUT`, which signals the timeout status of the ISOBUS core.
-
 * * * * * * * * * *
 ## State Overview
 The module itself does not have an explicit state machine, as it is essentially a data converter. Its behavior is controlled by the internal kernel `I_Lighting`:
 
 - **Initialization**: After a `INIT` event, the kernel switches to the operational state (provided `QI = TRUE` is present). The process is completed with `INITO`.Acknowledged.
-
 - **Data Provisioning**: As long as the core is active, it updates the output data with each incoming ISOBUS telegram and generates an event on the corresponding adapter for each lighting function.
-
 - **Timeout**: The timeout adapter is set if no ISOBUS messages are received.
-
 * * * * * * * * * *
 ## Application Scenarios
-
 - **Agricultural Control Systems**: Integration of all vehicle lighting (tractor and implement) into an IEC 61499-based control system, e.g., for automatic lighting control according to ISO 11783.
-
 - **ISOBUS Gateway Modules**: This module is suitable as an intermediary layer to convert ISOBUS lighting data into a simpler binary signal format and thus transmit it to programmable logic controllers (PLCs) or visualization systems.
-
-
 - **Retrofit**: Older tractors without a CAN bus can be equipped with modern ISOBUS lighting control using this adapter.
-
 * * * * * * * * * *
 ## Comparison with similar modules
 Other ISOBUS adapter wrappers exist for other PGNs (e.g., for work hydraulics, seat control, or PTO control). These modules follow the same principle: An internal, specialized core is connected to the application code via an adapter. The main difference lies in the number and type of output signals – `IA_Lighting` offers a particularly high number of lighting functions with 32 adapters. Other adapters (e.g., `IA_ImplementSteer`) have fewer outputs because they report only a few states.
 
-
-``` * * * * * * * * * *
 ## Conclusion
 
 The function block `IA_Lighting` enables convenient and standardized integration of ISOBUS lighting data into IEC 61499 applications. By splitting the telegram content into individual Boolean signals via adapters, simple further processing in the application logic is achieved. This module is particularly suitable for agricultural control systems that require a complete representation of all common lighting functions according to ISO 11783-7.

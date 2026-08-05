@@ -1,50 +1,34 @@
 # 🔌 IORevPiDIO
-
 <img width="921" height="625" alt="image" src="https://github.com/user-attachments/assets/755478f0-ea5d-495b-b524-68330b4f45d5" />
-
 * * * * * * * * * *
-
 ## Introduction
 The IORevPiDIO function block is a digital input/output module for Revolution Pi systems from KUNBUS GmbH. It enables the control and monitoring of digital inputs and outputs via the Revolution Pi system and serves as an interface between the 4diac IDE and the Revolution Pi hardware.
-
-
 ![IORevPiDIO](IORevPiDIO.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **MAP**: Event for mapping the pins with all Digital Input and Digital Output data variables, as well as QI
 
 ### **Event Outputs**
-
 - **MAPO**: Confirmation event for successful pin mapping with QO
-
 - **IND**: Indication event from the resource with QO and STATUS
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Event Input Qualifier
-
 - **DigitalInput_1** to **DigitalInput_14** (STRING): Configuration of digital inputs 1-14
-
 - **DigitalOutput_1** to **DigitalOutput_14** (STRING): Configuration of digital outputs 1-14
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Event Output Qualifier
-
 - **STATUS** (WSTRING): Service Status
 
 ### **Adapter**
-
 - **BusAdapterOut** (Plug): Outgoing bus adapter of type IORevPiBusAdapter
-
 - **BusAdapterIn** (Socket): Incoming bus adapter of type IORevPiBusAdapter
 
 ## Functionality
 This function block enables the configuration and control of up to 14 digital inputs and 14 digital outputs of a Revolution Pi system. The MAP event transmits the pin configurations, which are confirmed with MAPO. The IND output signals status changes and error states. Communication with the hardware occurs via the IORevPiBusAdapter interface.
-
 
 ## Technical Features
 - Supports up to 14 digital inputs and 14 digital outputs
@@ -74,7 +58,6 @@ The IORevPiDIO function block provides a powerful interface for digital inputs/o
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

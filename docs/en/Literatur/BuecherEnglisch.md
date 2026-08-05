@@ -1,15 +1,10 @@
 # Books in English
-
 ## IEC 61499 Function Blocks for Embedded and Distributed Control Systems Design
-
 ### About the Book
 This book is considered the definitive English-language standard work on the IEC 61499 standard. It examines the paradigm shift from centralized PLC control to distributed, component-based automation. The author provides a thorough introduction to the architectural model, execution semantics, and service interface function blocks. It is an invaluable resource for software architects and control engineers designing the next generation of industrial IoT (IIoT) systems.
-
 ### About the Author
 **Valeriy Vyatkin** is a professor of computer science in industrial automation. With professorships at Aalto University (Finland) and Luleå University of Technology (Sweden), he is a leading academic voice in the advancement of intelligent, distributed automation. His work was crucial in demonstrating how formal methods and distributed intelligence can make automation systems more flexible and reliable.
-
 * [Amazon](https://www.amazon.de/Function-Embedded-Distributed-Control-Systems/dp/1936007932)
-
 * [Sample pages (PDF)](http://www.vyatkin.org/book/Pages%20from%20IEC%2061499%20Vyatkin%20Second%20Edition.pdf)
 
 ---
@@ -43,6 +38,5 @@ This book provides an in-depth look at the modeling aspects of industrial contro
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]
 

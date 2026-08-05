@@ -1,13 +1,8 @@
 # AW_TO_ALI
-
 ![AW_TO_ALI](./AW_TO_ALI.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **AW_TO_ALI** function block is a composite function block that converts a unidirectional adapter of type **AW** (WORD) into an adapter of type **ALI** (LINT). It is used to convert data between different adapter interfaces without requiring the user to implement the actual conversion logic. Internally, the function block uses the IEC 61131 function block `F_WORD_TO_LINT` and provides typical event/data control via the supplied adapter interfaces.
-
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -24,7 +19,6 @@ Incoming data is received via the **Socket AW_IN**:
 
 * **D1** (Data Type: WORD) – the 16-bit value to be converted.
 
-
 ### **Data Outputs**
 
 The converted data is output via the **ALI_OUT** plug:
@@ -36,11 +30,9 @@ The converted data is output via the **ALI_OUT** plug:
 The module has two adapter interfaces:
 
 * **Socket AW_IN** – Unidirectional input adapter (type AW) that establishes a connection to a previous module that provides WORD data.
-
 * **ALI_OUT** – Unidirectional output adapter (type ALI) that passes the converted LINT data to subsequent modules.
 
 Both adapters are unidirectional, meaning they transmit events and data in only one direction (input → output).
-
 
 ## Functionality
 
@@ -59,15 +51,10 @@ The process within the composite block is strictly sequential:
 This completes the data conversion at a safe, event-driven time.
 
 ## Technical Features
-
 * **Composite Block** – The conversion logic is completely encapsulated in an internal network consisting of only a single conversion function block. The block does not have its own ECC state machine.
-
 * **Adapter-Based Interface** – Instead of individual event/data inputs/outputs, adapters are used. This enables a modular, reusable connection in adapter-based control architectures.
-
 * **Package Structure** – The function block is located in the package `adapter::conversion::unidirectional` and uses the converter `iec61131::conversion::F_WORD_TO_LINT` from the IEC 61131 conversion library.
-
 * **Unidirectional Direction** – Data flows only from the input adapter to the output adapter; reverse communication is not supported.
-
 * **License** – The source code is licensed under the Eclipse Public License 2.0 (EPL-2.0), developed by HR Agrartechnik GmbH.
 
 ## State Overview
@@ -75,11 +62,8 @@ This completes the data conversion at a safe, event-driven time.
 Since this is a composite function block without its own state machine (ECC), there are no defined states. The functionality is entirely controlled by the embedded function block `F_WORD_TO_LINT`, which performs a one-time, event-driven conversion. The function block is always ready when an event arrives at the input adapter. After the conversion, it waits for the next event.
 
 ## Application Scenarios
-
 * **Data Conversion in Adapter Chains** – If a control system is based on unidirectional adapters and one component delivers WORD data, but a subsequent component expects LINT data, AW_TO_ALI can be inserted as an intermediary.
-
 * **Connecting Field Devices with Different Bit Widths** – For example, integrating a sensor that delivers 16-bit measured values (WORD) into logic that works with 64-bit values (LINT) (e.g., for high-resolution counters or timestamps).
-
 * **Type Conversion in Libraries** – Extending an existing adapter library with convenient conversion blocks to ensure compatibility between different data formats.
 
 ## Comparison with Similar Blocks
@@ -93,7 +77,6 @@ Since this is a composite function block without its own state machine (ECC), th
 | `F_WORD_TO_LINT` (IEC 61131) | Single REQ input, IN (WORD) | Single CNF output, OUT (LINT) | WORD → LINT | Standard FB, no adapter |
 
 | `ALI_TO_AW` (hypothetical) | ALI (LINT) | AW (WORD) | LINT → WORD | Reverse direction |
-
 
 The advantage of AW_TO_ALI lies in its seamless integration into adapter-based systems, whereas the pure IEC component `F_WORD_TO_LINT` would require separate wiring. Components with adapter interfaces simplify control design because they offer standardized plugs/sockets.
 

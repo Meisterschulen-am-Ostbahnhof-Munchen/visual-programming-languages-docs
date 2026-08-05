@@ -1,15 +1,9 @@
 # Exercise_003b2_AX: Wireless 16 Buttons on DataPanel 16
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-
 This article describes the logiBUS® exercise `Uebung_003b2_AX`. This exercise demonstrates the system's scalability using the example of linking 15 wireless buttons with 15 digital outputs, implemented through untyped sub-applications (or reused typed sub-applications, which were manually placed here).
-
 ----
-
 ## Objective of the Exercise
-
 The objective of this exercise is to efficiently manage a large number of similar connections. Instead of drawing the same function blocks and connections 15 times in the main view, the logic is packaged into modular blocks (sub-applications). This demonstrates how IEC 61499 is used for extensive I/O mappings.
-
 
 -----
 
@@ -28,11 +22,8 @@ The objective of this exercise is to efficiently manage a large number of simila
 [cite_start]This sub-module connects a radio input (`Funk_IXA`) to a DataPanel output (`DataPanel_MI_QXA`)[cite: 2]. It has the following configuration parameters:
 
 * **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
-
 * * **`Output`**: The physical output (e.g., `DigitalOutput_1B`).
-
 * **`u8SAMember`**: The address of the DataPanel.
-
 
 ### Mapping
 
@@ -57,7 +48,6 @@ Each instance, `F1` to `F15`, operates independently:
 3. The output on the DataPanel switches accordingly.
 
 Since all 15 channels operate in parallel, multiple buttons can be pressed simultaneously, and the corresponding outputs react concurrently.
-
 
 -----
 

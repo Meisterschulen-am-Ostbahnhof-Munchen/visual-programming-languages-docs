@@ -1,13 +1,8 @@
 ![DataPanel_MI_QW_PWMp](DataPanel_MI_QW_PWMp.svg)
-
 # DataPanel_MI_QW_PWMp
-
 Output service interface function block for PWM output data (Percent Mode 3)
-
 ## Interface
-
 ### Event inputs
-
 | Name | Comment | With |
 | :--- | :--- | :--- |
 | INIT | Service Initialization | QI, PARAMS, u8SAMember, Output |
@@ -40,8 +35,4 @@ Output service interface function block for PWM output data (Percent Mode 3)
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
-
-
-```

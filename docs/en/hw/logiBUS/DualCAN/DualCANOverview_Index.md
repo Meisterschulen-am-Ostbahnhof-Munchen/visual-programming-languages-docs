@@ -1,4 +1,1 @@
 # DualCAN Overview
-
-
-```

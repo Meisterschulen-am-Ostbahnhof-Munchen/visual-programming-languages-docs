@@ -1,13 +1,8 @@
 # AX_OR_9
-
 <img width="960" height="503" alt="image" src="https://github.com/user-attachments/assets/8e2166fd-c540-4651-a06b-83a9435a923c" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_OR_9 is a generic function block for calculating the Boolean OR operation with nine inputs. This block is used for the logical processing of signals in automation systems and outputs the result of the OR operation on all input signals.
-
-
 ![AX_OR_9](AX_OR_9.svg)
 
 ## Interface Structure
@@ -53,7 +48,6 @@ The function block continuously calculates the Boolean OR operation of all nine 
 The function block has no internal state and operates stateless. The output is calculated solely based on the current input values.
 
 ## Application Scenarios
-
 - Safety circuits with multiple emergency stop buttons
 - Monitoring systems with multiple sensors
 - Control logic with redundant input signals

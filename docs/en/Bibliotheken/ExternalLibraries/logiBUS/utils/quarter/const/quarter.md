@@ -1,13 +1,8 @@
 # quarter
-
 ## 🎧 Podcast
-
 ![quarter](./quarter.svg)
-
 * [The Secret of the 2-Bit Quarter: Efficiency in CAN Bus for Commercial Vehicles ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Das-Geheimnis-des-2-Bit-Quarter-Effizienz-im-CAN-Bus-fr-Nutzfahrzeuge-e3673bk)
-
 * [QUARTER ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
-
 ----
 
 * * * * * * * * *
@@ -32,36 +27,27 @@ Not present (constant collection).
 ### **Adapters**
 Not present (constant collection).
 
-
 ## Functionality
 
 The library provides only named constants. When used in code, the symbolic name (e.g., `STATUS_ENABLED`) is replaced by the assigned value (e.g., `2#01`). The `_msg` variants contain descriptive text that can be used for debugging, logging, or user output.
 
 ## Technical Details
 * **Data Types:** All status and command constants are of type `BYTE`, even though they only use the lower two bits (values 0-3). The corresponding text constants are of type `STRING`.
-
 * **Values:** The values are defined as binary literals (`2#00`, `2#01`, etc.), which clearly indicates their interpretation as 2-bit fields.
-
 * **Package:** The constants are organized in the package `logiBUS::utils::quarter::const`.
 
 ## State Overview
 Not applicable, as this is a static collection of values.
 
 ## Application Scenarios
-
 * **SAE J1939 Communication:** Used in function blocks that send or receive parameters according to SAE J1939, especially for status and control information transmitted as 2-bit fields.
-
 * **Status Management:** Assigning and querying device or function states (e.g., on/off, faulty, unavailable) within a control application.
 
-
 ## * **Command Interfaces:** Definition of control commands for remote devices or subsystems (disable, enable, no action).
-
 * **Logging and Diagnostics:** Use of the `_msg` strings to generate readable log entries or displays in the control panel.
 
 ## ⚖️ Comparison with Similar Blocks
-
 * **`logiBUS::utils::bit::const`:** Contains constants for single bits (e.g., `BIT_FALSE`, `BIT_TRUE`). `quarter` extends this concept to 2-bit fields with application-specific semantics.
-
 * **Manual Definition:** Instead of using this library, the values could be written directly in the code as numbers or binary literals. However, using `quarter` increases maintainability, readability, and consistency across the entire project.
 
 **SAE J1939-Specific Libraries:** `quarter` is a basic utility library. More comprehensive J1939 libraries would likely rely on these constants to define more specific messages (PGNs) or parameters (SPNs).

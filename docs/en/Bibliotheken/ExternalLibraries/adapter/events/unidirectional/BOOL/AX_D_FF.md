@@ -1,14 +1,9 @@
 # AX_D_FF
-
 <img width="1087" height="229" alt="image" src="https://github.com/user-attachments/assets/05b9faba-dff2-41e8-86a4-1031ffe644af" />
-
 ![AX_D_FF_ecc](./AX_D_FF_ecc.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_D_FF is a data latch flip-flop that serves as a basic building block in digital circuitry. It is a D-type flip-flop that stores the applied data value and outputs it upon certain events.
-
 
 ![AX_D_FF](AX_D_FF.svg)
 
@@ -28,7 +23,6 @@ The AX_D_FF is a data latch flip-flop that serves as a basic building block in d
 
 ### **Adapters**
 - **I** (Socket): Input adapter of type `adapter::types::unidirectional::AX` - Receives the value to be stored
-
 - **Q** (Plug): Output adapter of type `adapter::types::unidirectional::AX` - Outputs the stored value
 
 ## Functionality
@@ -39,8 +33,6 @@ The AX_D_FF operates as a D-latch flip-flop with three states:
 - **RESET**: Sets the output Back
 
 The LATCH algorithm copies the input value `I.D1` to the output `Q.D1`. The state transitions are controlled by the value of `I.D1`.
-
-
 
 ``` ## Technical Features
 - Uses unidirectional adapters for inputs and outputs
@@ -64,7 +56,6 @@ Compared to clocked D flip-flops, the AX_D_FF is asynchronous and saves the valu
 Compare with [E_D_FF](../../../../../StandardLibraries/events/E_D_FF.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_170_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_170_AX.md)]
 
 ## Conclusion
@@ -73,5 +64,4 @@ The AX_D_FF offers a simple and effective solution for basic data storage tasks 
 ---
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]

@@ -1,13 +1,8 @@
 # Exercise_008_AX: Flasher with E_CYCLE, E_SWITCH, and E_SR
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-
 This article describes the logiBUS® exercise `Uebung_008_AX`.
-
 ----
-
 ## Objective of the Exercise
-
 Implementation of a continuously running flasher as a basic function block.
 
 -----

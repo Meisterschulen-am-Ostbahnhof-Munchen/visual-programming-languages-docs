@@ -1,12 +1,8 @@
 # FIELDBUS_WORD_TO_SIGNAL
-
 ![FIELDBUS_WORD_TO_SIGNAL](./FIELDBUS_WORD_TO_SIGNAL.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The FIELDBUS_WORD_TO_SIGNAL function block is used for simple signal filtering in fieldbus applications. It reflects an incoming WORD value at the output, provided the signal is classified as valid. A Boolean output indicates the validity status. Implementation is based on a comparison with an externally defined limit constant.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -56,7 +52,6 @@ The module operates using a simple algorithm:
 
 – If the converted value is **less than or equal to** `VALID_SIGNAL_W`, **IN** is directly passed to **OUT** and **VALID** is set to `TRUE`.
 
-
 ``` Otherwise, **OUT** is reset to `16#0000` and **VALID** to `FALSE`.
 
 4. The **CNF** event is then triggered.
@@ -65,13 +60,9 @@ The initial value of input `IN` is `NOT_AVAILABLE_WM`, so the function block sig
 
 ## Technical Features
 - **External Constants:** The comparison limit `VALID_SIGNAL_W` and the default unavailable value `NOT_AVAILABLE_WM` are imported from the package `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`. Their values are defined outside the function block.
-
 - **Data Type Conversion:** The comparison is performed after converting `WORD` to `UINT` (`WORD_TO_UINT`) to enable an unsigned numerical comparison.
-
 - **Initial Values:** The output `OUT` starts with `16#0000`, and `VALID` with `FALSE`. The input `IN` starts with the invalid value `NOT_AVAILABLE_WM`.
-
 - **Simple State Machine:** There is only one execution state (REQ) – the function block is event-driven and does not remain in any other states.
-
 
 **Initial State Machine:** ## State Overview
 The function block has exactly one state:
@@ -85,11 +76,8 @@ The function block has exactly one state:
 There are no loops or branches in the state machine; each call to REQ is executed only once.
 
 ## Application Scenarios
-
 - **Fieldbus Signal Filtering:** Checks whether a WORD value originating from a fieldbus is within a valid range (e.g., sensor values, control commands).
-
 - **Plausibility Check:** Suppresses values marked as "unavailable" or "erroneous" (represented by `NOT_AVAILABLE_WM`).
-
 - **Data Consistency:** Used as a simple gate in industrial controllers, passing only valid data to subsequent logic.
 
 ## Comparison with Similar Function Blocks
@@ -101,7 +89,6 @@ The function block `FIELDBUS_WORD_TO_SIGNAL` offers a compact and reliable way t
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

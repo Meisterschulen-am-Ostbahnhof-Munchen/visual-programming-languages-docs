@@ -1,18 +1,14 @@
 # AD_TO_AB
-
 ![AD_TO_AB](./AD_TO_AB.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **AD_TO_AB** function block is a composite module for the unidirectional conversion of a 32-bit DWORD adapter (AD) to an 8-bit BYTE adapter (AB). It serves as a bridge between components designed for different data widths and encapsulates the necessary type conversion according to IEC 61131-3.
-
 ## Interface Structure
 ### **Event Inputs**
 The module has no directly visible event inputs. Event control is handled via the **AD_IN** adapter.
 
 #### **Event Outputs**
 The module has no directly visible event outputs. Event feedback is provided via the **AB_OUT** adapter.
-
 
 ### **Data Inputs**
 This function block has no directly visible data inputs. The DWORD value is provided via the **AD_IN** adapter.
@@ -46,22 +42,16 @@ The function block operates purely event-driven and encapsulates the conversion 
 The conversion is performed according to IEC 61131-3: The least significant 8 bits of the incoming DWORD are interpreted as a BYTE.
 
 ## Technical Features
-
 - The module is implemented as a composite, meaning it does not contain its own state machine but delegates all logic to the internal base module.
-
 - Neither buffering nor error handling is implemented; data transfer occurs directly synchronously with the event.
-
 - This module is designed for use in systems that require a clear separation between adapters for different data widths.
 
 ## State Overview
 Since this is a pure composite module without its own state machine, there is no explicit state machine. Its behavior is entirely determined by the internal **F_DWORD_TO_BYTE** module, which has a simple wait state (IDLE) and a processing state.
 
 ## Application Scenarios
-
 - **Connecting Sensors/Actuators**: A sensor delivers 32-bit raw data via an AD adapter, which, after conversion to an 8-bit value, is passed on to a downstream BYTE adapter.
-
 - **Protocol Conversion**: In a communication chain, a DWORD interface is mapped to a BYTE interface, e.g., when integrating older fieldbus devices.
-
 - **Data Width Reduction**: Targeted extraction of the least significant byte from a DWORD for subsequent processing steps.
 
 ## Comparison with Similar Function Blocks
@@ -84,7 +74,6 @@ The composite block **AD_TO_AB** offers a simple, event-driven way to convert a 
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

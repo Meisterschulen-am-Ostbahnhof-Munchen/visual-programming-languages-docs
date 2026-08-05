@@ -1,15 +1,9 @@
 # Exercise_012j_AIS: String Input and Storage
-
 ![Uebung_012j_AIS_network](./Uebung_012j_AIS_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise demonstrates reading a string value via a virtual input, storing it in non-volatile memory (NVS), and then outputting the stored value. It shows how to use the adapter interfaces of the 4diac IDE and how to utilize predefined constants for memory areas.
-
 The goal is to store an initial value (default: "Test") in NVS and output it using a function block, with the value being loaded from memory on every restart.
-
 
 ## Function Blocks Used (FBs)
 
@@ -18,57 +12,33 @@ The exercise consists of three function blocks connected via adapters:
 ### FB: InputString\_I1
 - **Type**: `isobus::UT::io::StringValue::StringValue_AIS`
 - **Parameters**:
-
 - `QI` = `TRUE` (Block active)
-
 - `u16ObjId` = `InputNumber\_I1` (Constant for identifying the input object)
-
 - **Event output/input**: Default INIT/REQT (not configured in detail)
-
 - **Data output/input**: Output `IN` (Adapter output, returns the input string)
-
 - **Functionality**: This block reads a string value from a virtual input point (e.g., HMI or simulation) and outputs it via The adapter `IN` is available. Its value is identified by the object ID `InputNumber_I1`.
-
-
 
 ``` ### FB: INI\_AIS
 - **Type**: `eclipse4diac::storage::INI_AIS`
 - **Parameters**:
-
 - `QI` = `TRUE` (Block active)
-
 - `SECTION` = `SECTION_S1_STORE` (Constant for memory section)
-
 - `KEY` = `KEY_S1_STORE` (Constant for memory key)
-
 - `DEFAULT_VALUE` = `STRING#'Test'` (Default value if no value is stored yet)
-
 - **Event output/input**: Default INIT/REQT
-
 - **Data output/input**:
-
 - `AIS_IN` (Adapter input, expects a string)
-
 - `AIS_OUT` (Adapter output, returns the stored or loaded string)
-
 - **Functionality**: This module functions as a memory access point for non-volatile memory (NVS). It stores a string received via `AIS_IN` under the specified section and key. If no new value is supplied, it returns the last stored value or `DEFAULT_VALUE` via `AIS_OUT`.
 
-
 ### FB: Q\_StringValue\_AIS
-
 - **Type**: `isobus::UT::Q::Q_StringValue_AIS`
 - **Parameters**:
-
 - `u16ObjId` = `InputNumber_I1` (same object ID as input)
-
 - **Event Output/Input**: Standard INIT/REQT
-
 - **Data Output/Input**:
-
 - `pau8String` (adapter input, expects the string to be displayed)
-
 - **Functionality**: This function block passes the string received via `pau8String` to an output location (e.g., display, higher-level application). The output is based on the object ID `InputNumber_I1`.
-
 
 ## Program Flow and Connections
 
@@ -85,9 +55,7 @@ The subapp is designed so that the last saved value from the NVS is automaticall
 Notes:
 
 - The constants `InputNumber_I1`, `SECTION_S1_STORE`, and `KEY_S1_STORE` are defined in higher-level libraries and must be imported before use.
-
 - This exercise demonstrates a typical pattern for persistent data storage in automation technology.
-
 
 ## Summary
 
@@ -96,7 +64,6 @@ The exercise **Exercise_012j_AIS** demonstrates the basic handling of string dat
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

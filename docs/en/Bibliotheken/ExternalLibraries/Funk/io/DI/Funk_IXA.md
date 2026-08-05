@@ -1,13 +1,8 @@
 # Funk_IXA
-
 <img width="1725" height="316" alt="image" src="https://github.com/user-attachments/assets/18811a6e-8efc-454f-b9ec-ea728163a624" />
-
 * * * * * * * * * *
-
 ## Introduction
 The **Funk_IXA** function block is a composite function block for processing Boolean input data. It serves as an interface for digital inputs and enables the initialization and querying of input signals via a standardized interface.
-
-
 ![Funk_IXA](Funk_IXA.svg)
 
 ## Interface Structure
@@ -33,7 +28,6 @@ The **Funk_IXA** function block is a composite function block for processing Boo
 
 ## Functionality
 The The Funk_IXA block acts as a wrapper for the underlying Funk_IX block. During INIT initialization, the parameters QI, PARAMS, and Input are passed to the internal IX block. The REQ request triggers a query of the current input state. The IN adapter enables communication with external systems.
-
 
 Funk_IXA acts as a wrapper for the underlying Funk_IX block. ## Technical Features
 - Uses the specific data type Funk_DI_S to identify digital inputs
@@ -64,7 +58,6 @@ Compared to simple digital input blocks, Funk_IXA offers:
 - Typed Input Identification
 
 ## 🛠️ Related Exercises
-
 * [Exercise_003b2_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
 * [Exercise_003b3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
 

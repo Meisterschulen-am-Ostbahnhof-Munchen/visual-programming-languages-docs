@@ -1,18 +1,13 @@
 # AX_TO_OFF
-
 ![AX_TO_AUS](./AX_TO_AUS.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **AX_TO_OFF** function block is a composite function block that converts a Boolean input adapter (type `AX`) into an integer output adapter (type `AUS`). It serves as a bridge between components that operate with different data types and enables seamless integration into control applications according to IEC 61499.
-
 ## Interface Structure
 
 ### **Event Inputs**
 
 The function block does not have direct event inputs; however, the incoming adapter `AX_IN` provides the event `E1`. This triggers the conversion.
-
 
 ### **Event Outputs**
 
@@ -26,11 +21,9 @@ Data is received via the adapter `AX_IN` as a Boolean value (`D1` of type `BOOL`
 
 The converted value is output via the adapter `AUS_OUT` as an unsigned 8-bit integer (`D1` of type `USINT`).
 
-
 ### **Data Outputs**
 
 The converted value is output via the adapter `AUS_OUT` as an unsigned 8-bit integer (`D1` of type `USINT`).
-
 
 ### **Adapter**
 
@@ -52,17 +45,13 @@ Internally, the function block uses the predefined conversion function block `ie
 
 3. The internal function block converts the value of `BOOL` into a value of `USINT` (`false` → 0, `true` → 1) and places it at its output `OUT`.
 
-
 4. The confirmation event `CNF` of the internal function block is forwarded to the adapter output `AUS_OUT.E1`.
 
 5. The converted value from output `OUT` is transferred to the data output `AUS_OUT.D1`.
 
 ## Technical Features
-
 - **Composite Function Block**: The function block encapsulates the conversion logic and provides a clean, reusable interface via adapters.
-
 - **Plug/Socket Coupling**: The function block uses the adapter pattern (socket for input, plug for output), enabling flexible connectivity in an IEC 61499 application.
-
 - **Dependency**: It imports the function block `iec61131::conversion::F_BOOL_TO_USINT`, which is part of the IEC 61131 conversion library.
 
 ## State Overview
@@ -70,13 +59,9 @@ Internally, the function block uses the predefined conversion function block `ie
 The function block does not have its own state machine. All functionality is implemented by the internal `F_BOOL_TO_USINT` function block, which operates in an event-driven manner and does not store internal states.
 
 ## Application Scenarios
-
 - **Signal Adaptation**: When a sensor or a Boolean adapter (e.g., switch, limit switch) needs to be connected to a component that expects an integer adapter.
-
 - **Protocol Conversion**: In heterogeneous systems that use different data formats, this function block can serve as a simple converter.
-
 - **Test and Simulation Environments**: To convert Boolean values into numerical values that can be more easily processed by analysis tools.
-
 
 ## Comparison with Similar Function Blocks
 

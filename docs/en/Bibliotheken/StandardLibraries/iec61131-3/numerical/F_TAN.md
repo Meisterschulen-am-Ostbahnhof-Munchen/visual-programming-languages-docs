@@ -1,13 +1,9 @@
 # F_TAN
-
 ![F_TAN](https://user-images.githubusercontent.com/116869307/214145191-77e281a6-b6e0-4ead-bc17-9638dc4fdf03.png)
-
 * * * * * * * * * *
 ## Introduction
 The F_TAN function block calculates the tangent of an input value in radians. It is a standard function for numerical calculations according to IEC 61131-3.
-
 ![F_TAN](F_TAN.svg)
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,11 +13,9 @@ The F_TAN function block calculates the tangent of an input value in radians. It
 - **CNF**: Confirmation of requested service - signals the completion of the calculation
 
 ### **Data Inputs**
-
 - **IN**: Input value in radians (ANY_REAL data type)
 
 ### **Data Outputs**
-
 - **OUT**: Calculated tangent value (ANY_REAL data type)
 
 ### **Adapters**
@@ -29,7 +23,6 @@ No adapter interfaces are available.
 
 ## Functionality
 Upon receiving a REQ event, the F_TAN block calculates the tangent of the angle passed to IN in radians. The result is output to OUT, and simultaneously, a CNF event is generated to signal the completion of the calculation.
-
 
 ``` ## Technical Features
 - Supports the ANY_REAL data type for maximum flexibility with numeric inputs

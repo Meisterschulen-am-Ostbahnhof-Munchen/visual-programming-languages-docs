@@ -1,13 +1,9 @@
 # AD_DEMUX_5
-
 ![AD_DEMUX_5](./AD_DEMUX_5.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AD_DEMUX_5** is a generic demultiplexer for adapter connections. It distributes an incoming unidirectional adapter data stream to one of five output channels, controlled by an index value. This block is used for dynamically switching signals in distributed automation systems and increases the flexibility in connecting communication adapters.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
@@ -61,13 +57,9 @@ If **K** returns a value outside the valid range (e.g., 0 or >5), the **CNF** ev
 The function block is **stateless** with respect to a previous connection – each REQ call overwrites the previous assignment.
 
 ## Technical Features
-
 - **Generic Type:** The function block is implemented as a generic FB (ClassName `'GEN_AD_DEMUX'`) and can be reused in different adapter contexts.
-
 - **Unidirectional Adapters:** Both the input and output adapters are of type `unidirectional::AD`, meaning that data flow is only in one direction (from the socket to the selected plug).
-
 - **Easy Extensibility:** The generic definition allows the number of outputs to be adjusted, provided the interface definition is extended accordingly.
-
 - **No Data Buffering:** Switching occurs without intermediate storage – delays only arise from event processing.
 
 ## State Overview
@@ -83,13 +75,9 @@ The function block has a minimalist flow control – it implicitly consists of t
 
 A state machine is not explicitly defined in the XML, but corresponds to the typical behavior of an event-driven service block.
 
-
 ## Application Scenarios
-
 - **Dynamic Signal Distribution:** In production plants where a sensor value (e.g., analog measurement value) must be forwarded to different control units depending on the operating mode.
-
 - **Multiplexing in Communication Networks:** Switching adapter connections in systems with multiple peripheral devices (e.g., bus couplers, I/O modules).
-
 - **Test and Simulation Environments:** Easy redirection of data streams between different logical units for troubleshooting.
 
 ## Comparison with Similar Function Blocks

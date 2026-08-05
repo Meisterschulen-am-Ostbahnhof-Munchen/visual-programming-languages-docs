@@ -1,19 +1,14 @@
 # OFF_TO_AB
-
 ![AUS_TO_AB](./AUS_TO_AB.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The **OFF_TO_AB** is a composite function block for converting a unidirectional **OFF adapter** (USINT data type) to an **AB adapter** (BYTE data type). It serves as a bridge between different adapter interfaces in automation systems and enables the seamless integration of components based on different data types. Internally, the block uses the standard conversion block *F_USINT_TO_BYTE* from the IEC 61131 library.
-
 ## Interface Structure
 
 ### **Event Inputs**
 The block does not have its own event input ports. Events are received via the **OFF_IN** adapter (socket):
 
 - **OFF_IN.E1** – Trigger for data conversion and forwarding to the output.
-
 
 ### **Event Outputs**
 Events are output via the **AB_OUT** adapter (plug):
@@ -55,38 +50,24 @@ The **AUS_TO_AB** is implemented as a pure composite function block without its 
 
 This ensures synchronized, event-driven data transfer.
 
-
 ## Technical Features
-
 - **Composite FB**: Does not contain its own state machine; all logic is implemented by the internal FB `F_USINT_TO_BYTE`.
-
 - **Unidirectional Adapters**: Both the incoming and outgoing adapters are unidirectional – data flows occur exclusively in one direction.
-
 - **Standard Compliance**: The block is based on IEC 61499-2 and uses the IEC 61131 conversion function `F_USINT_TO_BYTE`. This makes it immediately usable in compatible runtime environments (e.g., 4diac-FORTE).
-
 - **License**: Released under the Eclipse Public License 2.0 (EPL-2.0). Copyright © 2026 HR Agrartechnik GmbH.
-
 
 ## State Overview
 Since this is a composite function block without its own ECC (Execution Control Chart), there is no explicit state machine. Its behavior is purely event-driven and determined by the internal interconnection of the individual function blocks. After startup, the system is always ready – an incoming event is processed immediately.
 
 ## Application Scenarios
-
 - **System integration** in agricultural technology or other automation environments where an **OFF adapter** (USINT) needs to be connected to an **AB adapter** (BYTE).
-
 - **Retrofitting older components** that provide a BYTE output with modern USINT-based sensors or actuators.
-
 - **Prototyping and test setups** where rapid switching between different adapter types is required.
-
 - **Data processing** in communication nodes that standardize different adapter protocols.
 
-
 ## Comparison with Similar Function Blocks
-
 - **F_USINT_TO_BYTE** – a direct function block for pure data type conversion, but without adapter integration. **AUS_TO_AB** adds the adapter and event logic.
-
 - **BYTE_TO_USINT** – inverse conversion (BYTE → USINT) if the reverse adapter direction is required (not included with this function block).
-
 - **Generic Adapter Converters** – more complex blocks that convert multiple data types simultaneously. **AUS_TO_AB** is optimized for the specific use case and is therefore more compact.
 
 ## Conclusion
@@ -95,7 +76,6 @@ The **AUS_TO_AB** is a useful and lightweight function block for converting an *
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

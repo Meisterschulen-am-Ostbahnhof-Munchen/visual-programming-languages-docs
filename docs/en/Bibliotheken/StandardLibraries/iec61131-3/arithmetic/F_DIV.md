@@ -1,13 +1,8 @@
 # F_DIV
-
 ![F_DIV](https://user-images.githubusercontent.com/116869307/214143200-dff8deec-3ba6-4ac9-aad3-6418b42506c1.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **F_DIV** is a standards-compliant function block for dividing numeric values, developed under the EPL-2.0 license. Version 1.0 enables type-safe division of various numeric data types according to the IEC 61131-3 standard.
-
-
 ![F_DIV](F_DIV.svg)
 
 ## Interface Structure
@@ -30,25 +25,19 @@ The **F_DIV** is a standards-compliant function block for dividing numeric value
 1. **Calculation Trigger**:
 
 - `REQ` event with values for IN1 and IN2
-
 - Both inputs must be of type ANY_NUM
 
 2. **Division**:
 
 - Type-preserving calculation (IN1 / IN2)
-
 - Supported types:
-
 - Integers (INT, DINT)
-
 - Floating-point numbers (REAL, LREAL)
-
 - Mixed types (automatic conversion)
 
 3. **Result Output**:
 
 - `CNF` event with calculated OUT value
-
 - Floating-point result for integer division
 
 ## Technical Features
@@ -60,23 +49,15 @@ The **F_DIV** is a standards-compliant function block for dividing numeric value
 ✔ **Deterministic execution**
 
 ## Error Handling
-
 - **Division by zero**:
-
 - OUT = 0 (for Integers)
-
 - OUT = INF/NAN (for floating-point numbers)
-
 - No execution abort
-
 - **Type incompatibility**:
-
 - OUT = 0
-
 - No exception generation
 
 ## Application Scenarios
-
 - **Process control**: Control deviation calculation
 - **Data analysis**: Normalization of measured values
 - **Machine control**: Speed calculations
@@ -107,7 +88,6 @@ The **F_DIV** is a standards-compliant function block for dividing numeric value
 | Type Combinations | INT/REAL, DINT/LREAL |
 
 ## 🛠️ Related Exercises
-
 * [Exercise_111](../../../../Uebungen/test_B/Uebungen_doc/Uebung_111.md)
 
 ## Conclusion

@@ -1,11 +1,8 @@
 # AUI\_DEMUX\_3
-
 ![AUI_DEMUX_3](./AUI_DEMUX_3.svg)
-
 * * * * * * * * * *
 ## Introduction
 The AUI\_DEMUX\_3 function block implements a generic demultiplexer for the AUI adapter protocol. It distributes an incoming, unidirectional data stream to one of three output channels. The active output is selected via an index parameter, which is set by an event.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -53,41 +50,28 @@ The module operates as a 1-to-3 demultiplexer based on the AUI adapter interface
 
 As soon as the REQ event arrives, the value of K is read and the corresponding output (OUT1 for K=0, OUT2 for K=1, OUT3 for K=2) is activated. The acknowledgment event CNF is then sent. During the connection, all adapter data arriving via IN is forwarded to the active output. A subsequent REQ can change the index and thus switch the active output.
 
-
 ``` ## Technical Features
 
 - **Generic Structure** – The function block is implemented as a generic FB (`GEN\_AUI\_DEMUX`), allowing the number of outputs to be extended by modifying the generic type.
-
 - **Unidirectional Data Flow** – All adapters (IN, OUT1…OUT3) are of type `unidirectional::AUI`, meaning data flows only from the socket to the plug. Feedback from the output to the input is not supported.
-
 - **Index Check** – If a value outside the valid range (0…2) is entered, the function block behaves in an undefined manner or ignores the value (depending on the specific implementation).
-
 - **Synchronization** – The function block operates in an event-driven manner; a persistent connection remains active without a new REQ.
 
 ## State Overview
 An explicit state machine is not defined in the XML. The behavior can be conceptually described as follows:
 
 - **IDLE** – Waiting for the first REQ. No output is active.
-
 - **ACTIVE_OUT1 / ACTIVE_OUT2 / ACTIVE_OUT3** – The corresponding output is connected to IN. A subsequent REQ switches to a different ACTIVE state.
-
 - After switching, CNF is always output.
 
 ## Application Scenarios
-
 - **Multipoint Data Distribution** – A sensor or data source (e.g., an AUI-compatible fieldbus master) is to be connected alternately to different actuators or subsystems.
-
 - **Channel Switching** – In a control application that requires different output paths depending on the operating mode (e.g., diagnostics, normal operation, maintenance).
-
 - **Test and Simulation Environments** – For targeted addressing of individual components within a system.
 
-
 ## Comparison with Similar Function Blocks
-
 - **AUI\_DEMUX\_1 / AUI\_DEMUX\_2** – Simple demultiplexers with only one or two outputs. AUI\_DEMUX\_3 offers exactly three channels.
-
 - **AUI\_MUX** – The associated multiplexer, which combines multiple inputs into one output. Both complement each other in symmetrical data paths.
-
 - **Standard IEC 61499 demultiplexers (e.g., SELECT)** – These usually use simple data types, while AUI\_DEMUX\_3 is specifically designed for the AUI adapter protocol and thus enables complex, structured data transmission.
 
 ## Conclusion

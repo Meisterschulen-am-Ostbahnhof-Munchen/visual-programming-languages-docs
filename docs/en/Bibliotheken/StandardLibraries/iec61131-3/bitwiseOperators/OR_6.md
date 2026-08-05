@@ -1,12 +1,8 @@
 # OR_6
-
 ![OR_6](https://user-images.githubusercontent.com/116869307/214143660-1a2216f3-f723-4864-8a8a-8deeb4e0ea8c.png)
-
 * * * * * * * * * *
 ## Introduction
 The OR_6 function block is a generic bitwise OR function block that processes six input values. It performs a bitwise logical OR operation on the six input values and outputs the result. The function block is classified according to the IEC 61131-3 standard and can work with any bit data type (ANY_BIT).
-
-
 ![OR_6](OR_6.svg)
 
 ## Interface Structure
@@ -34,9 +30,7 @@ No adapters Available.
 ## Functionality
 Upon receiving the REQ event, the OR_6 block performs a bitwise OR operation on all six input values. The operation is executed according to the following logic:
 
-```
 OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5 OR IN6
-```
 Once the calculation is complete, the CNF event is output along with the result value.
 ... ## Technical Features
 - **Generic Data Type**: Uses ANY_BIT, enabling use with various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)
@@ -60,13 +54,9 @@ Once the calculation is complete, the CNF event is output along with the result 
 - **Data Filtering**: Selective activation of bits from different sources
 
 ## ⚖️ Comparison with similar building blocks
-
 - **OR_2**: Processes only two inputs
-
 - **OR_4**: Processes four inputs
-
 - **GEN_OR**: Generic basic implementation that extends OR_6
-
 - **XOR building blocks**: Perform exclusive OR operations
 
 ## Conclusion

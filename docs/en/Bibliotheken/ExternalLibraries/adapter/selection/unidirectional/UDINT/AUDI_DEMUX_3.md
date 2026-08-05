@@ -1,12 +1,8 @@
 # AUDI_DEMUX_3
-
 ![AUDI_DEMUX_3](./AUDI_DEMUX_3.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AUDI_DEMUX_3** is a generic demultiplexer for the unidirectional adapter type `AUDI`. It distributes an incoming adapter signal to one of three possible outputs, based on an index specified via the data input `K`. The block is controlled by an event at `REQ`.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -60,9 +56,7 @@ No standalone data outputs are available. Output is exclusively via the followin
 3. **Demultiplexing:** Depending on the value of `K`, the incoming `IN` signal is routed to the corresponding adapter output:
 
 - `K = 1` → `OUT1` receives the signal from `IN`
-
 - `K = 2` → `OUT2` receives the signal from `IN`
-
 - `K = 3` → `OUT3` receives the signal from `IN`
 
 4. **Acknowledgement:** After routing, the event `CNF` Triggered.
@@ -70,13 +64,9 @@ No standalone data outputs are available. Output is exclusively via the followin
 5. **Side note:** Unselected outputs remain inactive. The value of `K` at the time of the `REQ` event is crucial.
 
 ## Technical Features
-
 - The function block is implemented as a generic function block (`GenericClassName = 'GEN_AUDI_DEMUX'`) but remains fixed to three outputs.
-
 - There is no state machine – the function block operates in an event-driven and stateless manner.
-
 - The adapters are unidirectional (`adapter::types::unidirectional::AUDI`), meaning communication only occurs in one direction.
-
 - The input of `K` is not validated. Values greater than 3 or equal to 0 do not result in any switching (outputs remain inactive). However, `CNF` is still triggered.
 
 ## State Overview
@@ -84,17 +74,12 @@ No standalone data outputs are available. Output is exclusively via the followin
 This function block has no explicit states. It behaves like a combinatorics function: Each `REQ` event is immediately followed by a pass operation and a `CNF` event.
 
 ## Application Scenarios
-
 - **Audio Signal Distribution:** Passing an audio stream to one of three target components (e.g., loudspeaker, recording device, analysis module).
-
 - **Channel Selection in Measurement Systems:** Switching a sensor signal to one of three data paths.
-
 - **Adapter Routing:** Within an IEC 61499-based controller, this function block can be used to implement flexible signal paths based on index selection.
 
 ## Comparison with Similar Function Blocks
-
 - **AUDI_MUX_3** (Multiplexer): Performs the reverse function – selects one of three inputs and outputs it to one output.
-
 
 **AUDI_MUX_3** (Multiplexer):** Selects one of three inputs and outputs it to one output. - **AUDI_DEMUX_2**, **AUDI_DEMUX_4**: Variants with two or four outputs, respectively. The present module is designed for exactly three channels.
 

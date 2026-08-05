@@ -1,12 +1,8 @@
 # AUDI_DEMUX_4
-
 ![AUDI_DEMUX_4](./AUDI_DEMUX_4.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AUDI_DEMUX_4** implements a generic 1:4 demultiplexer for the unidirectional **AUDI** adapter type. It routes a signal present at its input (socket) to one of four outputs (plugs). The active output is selected via an index parameter and is triggered by an event at input `REQ`. After successful switching, an acknowledgment event is sent at output `CNF`.
-
 The block is implemented as a generic function block (Generic FB) and can therefore be used in various projects with the corresponding adapter type.
 
 ## Interface Structure
@@ -67,11 +63,8 @@ The function block operates strictly event-driven:
 Unused outputs remain unchanged (e.g., disconnected from the source). The index `K` expects values in the range 1 to 4; other values do not result in a valid switchover. The behavior with invalid indices is undefined and should be avoided by higher-level logic.
 
 ## Technical Features
-
 - **Generic Function Block**: The function block is declared as a generic type (`GEN_AUDI_DEMUX`). It can be instantiated with any adapter that follows the scheme `adapter::types::unidirectional::AUDI`. The actual adapter definition is determined at compile time.
-
 - **Unidirectional Adapters**: All adapters used are unidirectional. Signal flow occurs only from the socket (`IN`) to the plugs (`OUT1` … `OUT4`).
-
 - **No Internal States**: The function block does not have an explicit state machine. Processing is purely event-driven without intermediate data storage, except for the index `K`.
 
 ## State Overview
@@ -89,13 +82,9 @@ The function block does not have a defined ECC (Execution Control Chart). Its be
 Parallel processing of multiple events is not supported; the FB is designed for strictly sequential operation.
 
 ## Application Scenarios
-
 - **Signal forwarding** in modular automation systems where a sensor value or control variable must be selectively forwarded to various consumers (e.g., actuators, visualizations).
-
 - **Channel switching** in communication interfaces based on the AUDI adapter protocol.
-
 - **Test and simulation environments** where a data stream needs to be selectively switched to different analysis or logging paths.
-
 
 ## Comparison with Similar Function Blocks
 

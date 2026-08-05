@@ -1,13 +1,8 @@
 # EliteBoard
-
 <img width="676" height="440" alt="image" src="https://github.com/user-attachments/assets/2d3b5eb6-9266-4eae-bc4e-44fbcf12f6e3" />
-
 * * * * * * * * * *
-
 ## Introduction
 The EliteBoard function block is a Service Interface Function Block Type that serves as an interface for the EliteBoard hardware. This block enables the connection and control of up to 11 different ports via standardized adapter interfaces.
-
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,8 +26,6 @@ These adapters enable connection to various port interfaces of the EliteBoard ha
 
 ## Functionality
 Upon receiving the MAP event, the EliteBoard function block initializes the configured port adapters. After successful initialization of all connected ports, the MAPO event is triggered. Each port adapter (Port A to Port K) can be individually configured for specific input/output functions.
-
-
 
 ``` ## Technical Features
 - Supports up to 11 independent port interfaces
@@ -61,7 +54,6 @@ The EliteBoard function block provides a flexible and scalable solution for conn
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

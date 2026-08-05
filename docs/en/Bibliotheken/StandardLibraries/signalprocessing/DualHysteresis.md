@@ -1,37 +1,25 @@
 # DualHysteresis
-
 <img width="1018" height="208" alt="DualHysteresis" src="https://github.com/user-attachments/assets/35798c6a-73cc-4b4d-b1ce-f9635b8f4546" />
-
 * * * * * * * * * *
 ## Introduction
 The DualHysteresis function block enables bidirectional conversion of analog to digital signals using hysteresis. It is particularly useful in control applications where reliable switching point conversion with deadband and hysteresis is required.
-
-
 ![DualHysteresis](DualHysteresis.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT`: Initialization Request (with `QI`)
 - `REQ`: Normal Execution Request (with `QI`, `MI`, `DEAD`, `INPUT`, `HYSTERESIS`)
 
 ### **Event Outputs**
-
 - `INITO`: Initialization Acknowledgement (with `QO`)
-
 - `CNF`: Execution Confirmation (with `DO_UP`, `DO_DOWN`)
 
 ### **Data Inputs**
-
 - `QI` (BOOL): Input Event Qualifier
-
 - `MI` (REAL, Initial Value: 0.5): Average Setting (e.g., 0.5 for 50%)
-
 - `DEAD` (REAL, Initial Value: 0.1): Dead Band around MI (e.g., 0.1 for 10%)
-
 - `HYSTERESIS` (REAL, Initial Value: 0.1): Hysteresis (e.g., 0.1 for 10%)
-
 - `INPUT` (REAL): Input value
 
 ### **Data Outputs**
@@ -55,7 +43,6 @@ The function block goes through various states:
 
 Hysteresis prevents excessive switching for small signal changes around the threshold value.
 
-
 ## Technical Features
 - Uses a deadband (DEAD) around the mean (MI)
 - Implements symmetrical hysteresis (HYSTERESIS)
@@ -72,19 +59,14 @@ Hysteresis prevents excessive switching for small signal changes around the thre
 7. **DeInit** → **START** (automatic)
 
 ## Application Scenarios
-
 - Position control with deadband
 - Temperature monitoring with hysteresis
 - Level detection with different switching points for filling/emptying
-
 - General signal conditioning with noise suppression
 
 ## ⚖️ Comparison with similar components
-
 - Simple hysteresis blocks typically only have one switching output
-
 - Standard comparators do not offer deadband or hysteresis functionality
-
 - This block combines both directions in a single component with configurable parameters
 
 ## Conclusion

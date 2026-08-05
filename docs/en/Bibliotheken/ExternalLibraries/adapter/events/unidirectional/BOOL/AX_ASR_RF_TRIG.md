@@ -1,32 +1,22 @@
 # AX_ASR_RF_TRIG
-
 ![AX_ASR_RF_TRIG](./AX_ASR_RF_TRIG.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AX_ASR_RF_TRIG** is used for bidirectional edge detection (rising and falling) of a Boolean input signal. It is designed as an adapter-based envelope of the IEC 61499 standard function block `E_RF_TRIG`. The signal to be monitored is read via two unidirectional adapters, and the result is provided as a set/reset output.
-
 ## Interface Structure
 
 The function block has **no direct** event or data inputs/outputs. All communication takes place via two adapters.
 
-
 ### Event Inputs
-
 - **none**
 
 ### Event Outputs
-
 - **none**
 
 ### Data Inputs
-
 - **none**
 
 ### Data Outputs
-
 - **none**
 
 ### Adapters
@@ -52,11 +42,8 @@ The function block has **no direct** event or data inputs/outputs. All communica
 Thus, the input signal is converted into a set/reset signal without the user having to deal with the internal event processing.
 
 ## Technical Features
-
 - **Pure Adapter Interface:** The FB has no direct inputs/outputs in the FB type interface, which enables loose coupling and reusability in different adapter networks.
-
 - **Use of the standard function block `E_RF_TRIG`:** Edge detection is based on the proven IEC 61499 implementation, which reliably detects both rising and falling edges.
-
 - **No state storage outside the internal function block:** All logic is implemented by the embedded `E_RF_TRIG`; the external function block serves solely as encapsulation and adapter adaptation.
 
 ## State Overview
@@ -76,11 +63,8 @@ The function block does **not have its own explicit state machine**. The interna
 State storage occurs exclusively within the internal function block.
 
 ## Application Scenarios
-
 - **Button Press Detection:** Monitoring of a button signal; `SET` when pressed, `RESET` when released.
-
 - **Signal Edge Evaluation in Controllers:** Detection of limit exceedances or pulse beginnings/ends.
-
 - **Adapter-Based Sensor Integration:** Integration of sensors with Boolean outputs into an adapter network, e.g., via the AX/ASR adapter family.
 
 ## Comparison with Similar Function Blocks
@@ -98,8 +82,6 @@ State storage occurs exclusively within the internal function block.
 | **AX_ASR_RF_TRIG** | Ascending + Falling | Set/Reset Events via Adapter | Pure Adapters |
 
 Unlike pure event blocks, this function block offers an adapter interface, enabling simpler connections in hierarchical or typed adapter networks.
-
-
 
 ## Conclusion
 

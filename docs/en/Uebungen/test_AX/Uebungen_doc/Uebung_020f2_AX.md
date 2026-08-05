@@ -1,13 +1,8 @@
 # Exercise_020f2_AX: DigitalInput_I1 to DigitalOutput_Q1; AX_FB_TP; Pulse Shaping
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-
 This article describes the logiBUS® exercise `Uebung_020f2_AX`. Here, the adapter-based IEC 61131-3 timer block `AX_FB_TP` is used, which requires regular triggering (clocking).
-
 ----
-
 ## Objective of the Exercise
-
 The objective is to bridge the gap between classic PLC programming (cyclic) and IEC 61499 (event-based). Since a `AX_FB_TP` internally counts the time, its `REQ` input must be regularly supplied with events while the timer is running.
 
 -----
@@ -22,15 +17,12 @@ The subapplication `Uebung_020f2_AX.SUB` uses a `E_CYCLE` function block to gene
 
 * **`AX_FB_TP`**: The pulse timer with adapter interfaces. It reacts to the rising edge at the input and holds the output TRUE for the time `PT`.
 
-
 ### Function Blocks (FBs)
 
 ![Uebung_020f2_AX_network](./Uebung_020f2_AX_network.svg)
 
 * **`AX_FB_TP`**: The pulse timer with adapter interfaces. It reacts to the rising edge at the input and holds the output TRUE for the time `PT`.
-
 * * **`E_CYCLE`**: Generates an event every 500ms to update the timer.
-
 * **`AX_SWITCH`**: Monitors the status to start or stop the clock as needed.
 
 -----

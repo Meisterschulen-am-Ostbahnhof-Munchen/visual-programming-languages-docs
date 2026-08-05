@@ -1,12 +1,4 @@
 # Numeric Index (test_B)
-
-
-```
-````
-```````````````````
-````
-````
-`
 `# Numeric Index (`test_B`)
 ...# Nu```{toctree}
 :maxdepth: 1
@@ -375,6 +367,5 @@ Uebungen_Sequenzer_Index
 Uebungen_Signale_Index
 Uebungen_SubApps_Index
 Uebungen_Timer_Index
-```
 Here you will find all exercises from the `test_B` workspace, listed in ascending order.
 ...

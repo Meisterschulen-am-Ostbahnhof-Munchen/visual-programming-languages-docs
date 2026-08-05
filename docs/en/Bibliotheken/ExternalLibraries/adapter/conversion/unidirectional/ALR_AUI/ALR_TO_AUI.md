@@ -1,12 +1,8 @@
 # ALR_TO_AUI
-
 ![ALR_TO_AUI](./ALR_TO_AUI.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **ALR_TO_AUI** is a composite function block (FB) that converts an LREAL value, received via an **ALR** adapter (unidirectional), into a UINT value and makes it available via an **AUI** adapter (unidirectional). The conversion is performed using the internal IEC 61131 function block `F_LREAL_TO_UINT`. This block encapsulates the adapter conversion and provides a clean interface for data exchange between the two adapter types.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -56,13 +52,9 @@ The function block operates as a pure translation layer between two adapters:
 The entire process is event-driven and occurs once per triggering event.
 
 ## Technical Features
-
 - **Adapter Encapsulation:** The block combines two different adapter types (ALR and AUI), thus enabling type-safe communication between components that use these adapters.
-
 - **Unidirectional Adapters:** Both the input and output adapters are unidirectional, meaning there is only one direction of data and events (input → output).
-
 - **Internal Conversion:** The actual conversion is performed by the standardized IEC 61131 function block `F_LREAL_TO_UINT`. This ensures well-defined and platform-independent conversion behavior.
-
 - **No Control:** The composite function block itself does not have its own state machine. Its behavior is entirely determined by the embedded function block.
 
 ## State Overview
@@ -70,17 +62,12 @@ The entire process is event-driven and occurs once per triggering event.
 Since this is a composite function block without its own Execution Control Chart (ECC), there is no internal state machine. The process is controlled by the event links:
 
 - **IDLE:** Waiting for an event at socket **ALR_IN.E1**.
-
 - **CONVERT:** After receiving the event, the conversion is triggered; The internal function block iterates through its own state machine (e.g., REQ → CNF).
-
 - **OUTPUT:** After the conversion is complete, the output event **AUI_OUT.E1** and the converted value are output.
 
 ## Application Scenarios
-
 - **Connecting Sensors/Actuators:** A sensor provides an LREAL value (e.g., temperature, pressure) which is read into a PLC via an ALR adapter. For display or transmission to a system that only processes integers (UINT), the function block is used.
-
 - **Adapter Migration:** In existing systems, adapters need to be converted from ALR to AUI without changing the connected components. The function block acts as an intermediary.
-
 - **Test and Simulation Environments:** Generating UINT values from LREAL sources for testing purposes.
 
 ## Comparison with Similar Function Blocks
@@ -96,7 +83,6 @@ Since this is a composite function block without its own Execution Control Chart
 | `LREAL_TO_INT` | LREAL | INT | Conversion to a signed integer. |
 
 Unlike pure data converters, **ALR_TO_AUI** operates at the adapter level, so both the data and the associated events are exchanged via the adapter interfaces. This simplifies integration into adapter-based architectures.
-
 
 ## Conclusion
 

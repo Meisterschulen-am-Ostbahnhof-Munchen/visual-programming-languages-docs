@@ -1,13 +1,8 @@
 # Button_IX
-
 <img width="1352" height="285" alt="image" src="https://github.com/user-attachments/assets/6e6968e4-bc91-448b-abea-62a909edce06" />
-
 * * * * * * * * * *
-
 ## Introduction
 Button_IX is a service interface function block for Boolean input data, specifically designed for processing key presses in 4diac systems. This block serves as an interface between the application logic and physical input devices such as pushbuttons or switches.
-
-
 ![Button_IX](Button_IX.svg)
 
 ## Interface Structure
@@ -36,7 +31,6 @@ None Adapter interfaces are available.
 
 ## Functionality
 The Button_IX function block manages the entire lifecycle of a keystroke. During initialization (INIT event), the service parameters are configured and the system is prepared for operation. The REQ event triggers a current query of the input state, while the IND event signals asynchronous state changes of the keystroke.
-
 
 ## Technical Features
 - Supports ISOBUS-compliant communication
@@ -69,7 +63,6 @@ Compared to simple digital input blocks, Button_IX offers extended functionaliti
 - Asynchronous Event Handling
 
 ## 🛠️ Related Exercises
-
 * [Exercise_010a2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a2.md)
 * [Exercise_010a3](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a3.md)
 
@@ -79,8 +72,4 @@ The Button_IX function block provides a robust and flexible solution for integra
 --
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

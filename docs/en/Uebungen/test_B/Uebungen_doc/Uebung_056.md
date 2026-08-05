@@ -1,13 +1,8 @@
 # Exercise_056: DigitalInput_I1-_I4 to DigitalOutput_Q1-_Q4
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_056`. Here, the quarter concept is extended to a four-channel structure.
-
 ----
-
 ## Overview
-
 [cite_start]The sub-application `Uebung_056.SUB` shows a complete diagnostic pipeline[cite: 1]:
 
 ![Uebung_056_network](./Uebung_056_network.svg)

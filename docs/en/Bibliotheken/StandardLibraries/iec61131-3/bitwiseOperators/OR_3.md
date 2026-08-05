@@ -1,13 +1,8 @@
 # OR_3
-
 ![OR_3](https://user-images.githubusercontent.com/116869307/214144056-e850a789-92e3-46c0-ba3c-97960b404daa.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The OR_3 function block is a generic function block for calculating bitwise Boolean OR operations with three inputs. It performs a logical OR operation at the bit level and supports various bit data types according to the IEC 61131-3 standard.
-
-
 ![OR_3](OR_3.svg)
 
 ## Interface Structure
@@ -32,12 +27,10 @@ No adapters available.
 ## Functionality
 The OR_3 function block performs a bitwise OR operation on the three input values IN1, IN2, and IN3 upon each REQ event. The result is output at the OUT data output, and simultaneously a CNF event is generated to signal the completion of the operation.
 
-
 ``` The operation is performed separately for each bit position: OUT[i] = IN1[i] OR IN2[i] OR IN3[i]
 
 ## Technical Features
 - Supports the generic ANY_BIT data type, enabling its use with various bit data types such as BOOL, BYTE, WORD, DWORD, etc.
-
 - Implemented as a generic function block according to the IEC 61131-3 standard
 - Belongs to the "iec61131::bitwiseOperators" package
 
@@ -49,9 +42,7 @@ The OR_3 function block performs a bitwise OR operation on the three input value
 3. **Output State**: Result is output to OUT and a CNF event is generated
 
 ## Application Scenarios
-
 - Combining multiple digital signals in control applications
-
 - Mask operations in data processing
 - Parallel processing of multiple conditions
 - Signal linking in automation systems
@@ -61,9 +52,7 @@ The OR_3 function block performs a bitwise OR operation on the three input value
 Compared to simple OR blocks with only two inputs, OR_3 offers the possibility of directly connecting three inputs, simplifying the program structure and avoiding additional chaining. Unlike arithmetic blocks, OR_3 operates exclusively at the bit level.
 
 ## 🛠️ Related Exercises
-
 * [Exercise_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)]
-
 * [Exercise_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)]
 
 ## Conclusion

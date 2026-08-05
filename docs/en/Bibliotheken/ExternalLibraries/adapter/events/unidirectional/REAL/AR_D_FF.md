@@ -1,21 +1,15 @@
 # AR_D_FF
-
 ![AR_D_FF](./AR_D_FF.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The function block **AR_D_FF** implements a data-controlled flip-flop (D-latch) according to the IEC 61499-1 Annex A specification. It serves as an encapsulation for the standard function block `iec61499::events::E_D_FF_ANY` and provides its functionality via two unidirectional adapters. The block accepts a data value on a rising edge of the clock signal and holds it until the next rising edge.
-
 ## Interface Structure
 The AR_D_FF has no direct event or data inputs/outputs; all communication takes place via its two adapters.
 
 ## **Event Inputs**
-
 - **No direct inputs.**
 
 The clock event is provided via the input adapter **I** (see Adapter section).
-
 
 ### **Event Outputs**
 - **No direct outputs.**
@@ -56,11 +50,8 @@ The component operates on the principle of an edge-triggered D flip-flop:
 The internal state remains unchanged between two clock edges (memory behavior).
 
 ## Technical Features
-
 - **Adapter-based encapsulation:** The AR_D_FF uses only unidirectional adapters (type `AR`) for input and output. This enables modular, standardized integration into larger adapter networks.
-
 - **Use of the standard component `E_D_FF_ANY`:** The actual flip-flop logic is implemented using the IEC 61499 standard component. Changes to the internal implementation do not affect the externally visible interface.
-
 - **No reset input:** Unlike other flip-flop variants, this component has no reset function. The state can only be changed by a new data value and a clock pulse.
 
 ## State overview
@@ -76,11 +67,8 @@ The component has a single internal memory (the latched data value). State trans
 There are no other internal states or branches.
 
 ## Application Scenarios
-
 - **Data Synchronization:** Transfer of a data word at a defined time, e.g., in a cyclic control system.
-
 - **Buffering:** Intermediate storage of a value between two calculation steps.
-
 - **Event-driven signal propagation:** Applications where a value may only be updated when a specific event occurs.
 
 ## Comparison with similar components

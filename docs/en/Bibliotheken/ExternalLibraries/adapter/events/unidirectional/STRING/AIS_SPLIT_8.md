@@ -1,11 +1,8 @@
 # AIS_SPLIT_8
-
 ![AIS_SPLIT_8](./AIS_SPLIT_8.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_SPLIT_8** distributes an incoming AIS (Application Interface Socket) signal to eight identical output adapters. It is designed as a generic block and allows the simultaneous transmission of an AIS signal to multiple subsequent function blocks without data loss or delay.
-
 ## Interface Structure
 ### **Event Inputs**
 None available.
@@ -46,13 +43,9 @@ Output | OUT6 | `adapter::types::unidirectional::AIS` | Sixth output channel (id
 ## Functionality
 The module forwards the AIS signal present at adapter input `IN` unchanged and without delay to all eight output adapters `OUT1` to `OUT8`. No transformation, filtering, or buffering takes place. This behavior corresponds to a passive distribution (broadcast) of an AIS interface.
 
-
 ## Technical Features
-
 - **Generic Type** – The function block is declared as `GEN_AIS_SPLIT` and can be adapted to specific AIS implementations via type parameterization (e.g., for different data types or event structures).
-
 - **No Runtime Logic** – All functionality is implemented solely through the interconnection of the adapters; there are no internal algorithms or state machines.
-
 - **Minimal Resource Requirements** – Since no active processing takes place, the function block incurs neither CPU load nor memory consumption during execution.
 
 ## State Overview
@@ -60,11 +53,8 @@ The module forwards the AIS signal present at adapter input `IN` unchanged and w
 The function block has no internal states. The output signal is always a direct mapping of the input signal.
 
 ## Application Scenarios
-
 - **Parallel Processing** – Splitting a sensor signal across multiple independent evaluation blocks.
-
 - **Redundancy** – Distributing a control signal to multiple actuators in safety-critical systems.
-
 - **Test and Simulation Environments** – Providing an identical signal for different observers or loggers.
 
 ## Comparison with Similar Modules

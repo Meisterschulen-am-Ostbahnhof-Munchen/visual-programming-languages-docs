@@ -1,13 +1,8 @@
 # OR_4
-
 ![OR_4](https://user-images.githubusercontent.com/116869307/214143582-4f76941e-a1fd-411f-96d2-9a28b48f8147.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The OR_4 function block is a generic function block for calculating bitwise OR operations with four inputs. It performs a bitwise OR operation on the input data and outputs the result. The function block is suitable for all ANY_BIT data types, thus enabling flexible use with various bit data types.
-
-
 ![OR_4](OR_4.svg)
 
 ## Interface Structure
@@ -30,15 +25,12 @@ The OR_4 function block is a generic function block for calculating bitwise OR o
 ### **Adapters**
 No adapters available.
 
-
 ## Functionality
 Upon arrival of the REQ event, the OR_4 block performs a bitwise OR operation on all four inputs. The operation is executed separately for each bit position: OUT[i] = IN1[i] OR IN2[i] OR IN3[i] OR IN4[i]. After completion of the calculation, the CNF event is output along with the result.
-
 
 ``` ## Technical Features
 - Generic building block for ANY_BIT data types
 - Supports various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)
-
 - Bitwise processing of all inputs
 - Four independent inputs for maximum flexibility
 

@@ -1,11 +1,8 @@
 # ADI_MUX_3
-
 ![ADI_MUX_3](./ADI_MUX_3.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_MUX_3** is a generic multiplexer (MUX) for three input signals. It was developed for use in automation systems and selects one of the three connected adapter inputs based on an index value and forwards its signal via the output. The block is implemented as a generic FB and is particularly suitable for flexible signal switching in control applications. Copyright HR Agrartechnik GmbH (2026).
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -14,7 +11,6 @@ The function block **ADI_MUX_3** is a generic multiplexer (MUX) for three input 
 |------|-----|------------|
 
 | REQ | Event | Signals a new index request. Evaluated with the data input **K**. |
-
 
 ### **Event Outputs**
 
@@ -52,16 +48,11 @@ The function block **ADI_MUX_3** is a generic multiplexer (MUX) for three input 
 ## Functionality
 The function block operates as a 3-to-1 multiplexer. Upon the arrival of a **REQ** event, the current value of the data input **K** is read. Based on this index (0, 1, or 2), the signal of the corresponding socket adapter (IN1, IN2, or IN3) is passed through to the plug adapter **OUT**. The **CNF** event is then triggered to acknowledge the successful operation.
 
-
-
 ``` The input and output signals are transmitted via the standardized **ADI** adapter (unidirectional), which can be configured for any analog or digital values.
 
 ## Technical Features
-
 - **Generic Function Block**: The function block is implemented as a generic function block (GenericClassName `'GEN_ADI_MUX'`) and can be adapted to different data types during instantiation.
-
 - **Pure Adapter-Based Communication**: No separate data inputs/outputs are used; all signals are transmitted via the ADI adapters.
-
 - **Simple Index Handling**: The **K** index of type UINT allows selection from three possible sources; values greater than 2 are not specified and should be avoided in the application.
 
 ## State Overview
@@ -74,11 +65,8 @@ Since the XML does not contain an explicit state machine (ECC), the function blo
 This sequence repeats with each new **REQ** event.
 
 ## Application Scenarios
-
 - **Sensor Multiplexing**: Selection between three different sensors (e.g., temperature, pressure, speed) via a common measurement adapter.
-
 - **Signal Switching in Agricultural Engineering**: Switching between different analog input channels in control units for tractors or harvesters.
-
 - **Configurable Channel Selection**: Flexible routing of control data in modular automation systems.
 
 ## Comparison with Similar Components

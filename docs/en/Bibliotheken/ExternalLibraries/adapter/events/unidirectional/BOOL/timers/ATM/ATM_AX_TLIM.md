@@ -1,12 +1,8 @@
 # ATM_AX_TLIM
-
 ![ATM_AX_TLIM](./ATM_AX_TLIM.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The function block **ATM_AX_TLIM** is a standardized time monitoring module (timer) with a special adapter interface. It implements time limiting (timeout) for Boolean input signals. The module communicates via adapters instead of individual event and data ports, enabling flexible and encapsulated integration into industrial control systems.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -50,17 +46,12 @@ The function block internally uses the standard function block **E_TLIM** and wr
 
 5. **Setting the Time Limit**: The event input **EIPT** allows you to specify the value of **PT** without triggering a new event. This is used to configure the time limit before the actual use.
 
-
 4. **Premature Termination**: The output adapter **Q** outputs an event on its `E1` port as soon as `Q` changes (rising or falling edge).
 
 ## Technical Features
-
 - **Adapter-Based Communication**: Instead of individual event and data ports, AX/ATM adapters are used. These enable modular and reusable coupling with other components.
-
 - **Internal Standard Component**: The implementation uses the established **E_TLIM** (IEC 61499), ensuring reliable and tested timing logic.
-
 - **Non-Triggering Time Setting**: The **EIPT** input only changes the time limit without starting or resetting the timer. This is useful for dynamically adjusting parameters.
-
 - **Typical Time Measurement**: Suitable for monitoring applications where a signal must not be active for a specific duration.
 
 ## State Overview
@@ -79,21 +70,14 @@ The function block (FB) implicitly cycles through the following states:
 A switch back to **Idle** occurs as soon as IN becomes FALSE. The **Timeout** state is only reached when the timeout has occurred.
 
 ## Application Scenarios
-
 - **Monitoring of signals** in automation technology (e.g., maximum on-time of an actuator).
-
 - **Safety functions** where an output must be deactivated if a signal persists for too long.
-
 - **Timed resets** in communication protocols (watchdog functionality).
-
 - **Simple time limiting** in complex control systems based on adapter interfaces.
 
 ## Comparison with similar function blocks
-
 - **E_TLIM (Standard)**: Offers the same core logic, but with classic input/output ports. **ATM_AX_TLIM** encapsulates this logic in an adapter interface and is therefore better suited for modular and reusable components.
-
 - **E_TON / E_TOF**: These function blocks implement turn-on and turn-off delays, respectively. In contrast, **ATM_AX_TLIM** monitors the maximum duration of an active signal and responds with a timeout.
-
 - **E_CYCLE**: A cyclic timer that periodically generates signals has a different objective than simple monitoring.
 
 ## Conclusion

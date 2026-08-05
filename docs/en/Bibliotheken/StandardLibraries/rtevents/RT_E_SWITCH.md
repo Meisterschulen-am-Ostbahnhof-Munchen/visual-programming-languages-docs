@@ -1,12 +1,8 @@
 # RT_E_SWITCH
-
 * * * * * * * * * *
-
 ## Introduction
 Real-time version of the E_SWITCH block. Turns the event flow on or off.
-
 ![RT_E_SWITCH](RT_E_SWITCH.svg)
-
 ## Metadata
 
 | Attribute | Value |
@@ -22,6 +18,5 @@ Real-time version of the E_SWITCH block. Turns the event flow on or off.
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 

@@ -1,12 +1,8 @@
 # AD_D_FF_TMIN
-
 ![AD_D_FF_TMIN](./AD_D_FF_TMIN.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AD_D_FF_TMIN** implements a data-retaining flip-flop (D-latch) based on adapters with a unidirectional interface. It features a configurable minimum inter-disposal time (MDR) between two consecutive events, making it suitable for time-critical signal processing.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -54,11 +50,8 @@ This component encapsulates an internal instance of the function block `iec61499
 The minimum dwell time `Tmin` is passed to the internal block during initialization and limits the frequency of clock events: Events arriving before the elapsed time of `Tmin` since the last clock cycle are suppressed.
 
 ## Technical Features
-
 - **Adapter-based I/O**: The block uses unidirectional adapters (type `adapter::types::unidirectional::AD`) that combine events and data in a structured interface.
-
 - **Event-driven minimum dwell time**: The configurable time `Tmin` prevents excessively fast clocking and protects downstream logic from overload.
-
 - **Reuse**: The internal logic is implemented as a separate function block (`E_D_FF_ANY_TMIN`), which facilitates modular maintenance and testing.
 
 ## State Overview
@@ -66,13 +59,10 @@ The minimum dwell time `Tmin` is passed to the internal block during initializat
 The function block itself does not have an explicit state machine (no ECC definition). Its behavior is entirely determined by the embedded function block `E_D_FF_ANY_TMIN`. This operates as a **D flip-flop with a time filter**:
 
 - **Idle State**: Waiting for the next clock event.
-
 - **Clock Processing**: Checking whether the time interval `Tmin` has elapsed since the last clock cycle. If yes → Data transfer and generation of an output event. If no → Event ignored.
-
 - **Initialization State**: Only when `INIT` is `Tmin` set and the internal timer reset.
 
 ## Application Scenarios
-
 - **Data Acquisition with Minimum Interval**:
 
 Sensor data should only be acquired if a specific time interval from the previous value is maintained (e.g., debouncing or sampling rate limiting).
@@ -104,7 +94,6 @@ The **AD_D_FF_TMIN** extends the classic D Flip-Flop with a time-based filter fu
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 E_CTU Event Counter Module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 
 ]

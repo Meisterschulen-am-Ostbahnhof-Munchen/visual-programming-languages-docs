@@ -1,9 +1,6 @@
 ![GEN_SQR](GEN_SQR.svg)
-
 # GEN_SQR
-
 this signal generator generates a square wave output
-
 this signal generator generates a square wave output. The square wave signal is defined by period time (PT),
 amplitude (AM), offset (OS), duty cycle (DC) and a specific delay for the output signal (DL).
 The Output waveform will switch between AM/2 + OS and -AM/2 + OS. The DC input specifies the duty cycle,

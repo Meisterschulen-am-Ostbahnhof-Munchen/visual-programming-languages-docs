@@ -1,13 +1,8 @@
 # AQ_DEMUX_3
-
 ![AQ_DEMUX_3](./AQ_DEMUX_3.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AQ_DEMUX_3** implements a generic demultiplexer for analog signals (AQ – Analog Quantity). It routes the signal present at its input adapter to one of three output adapters. The active output is selected via the index parameter K, which is set by an event at the **REQ** input. The block is designed as a **generic FB** and can be used in IEC 61499-based control systems for flexible signal distribution.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -60,16 +55,11 @@ No standalone data outputs. The output data is provided via the adapter outputs.
 
 The module behaves like a 1-to-3 demultiplexer: The input signal is always routed to only one of the three outputs. The other two outputs do not provide a valid value (usually 0 or undefined).
 
-
-
 ``` ## Technical Features
 
 - **Generic Function Block:** The function block is declared as a type with the generic class name `'GEN_AQ_DEMUX'`. This allows it to be used in various forms (e.g., with more outputs) by adapting the metadata.
-
 - **Adaptive Adapter Interface:** Using the type `adapter::types::unidirectional::AQ` enables loose coupling of signal sources and sinks. The exact AQ data structure may vary in the specific implementation.
-
 - **Event-Driven Switching:** The output is changed exclusively via the `REQ` event. Without another event, the current output remains unchanged.
-
 - **No Cyclic Update:** The input signal is not passed on autonomously; the output data is only updated after a `REQ` event.
 
 ## State Overview
@@ -77,21 +67,15 @@ The module behaves like a 1-to-3 demultiplexer: The input signal is always route
 The function block (FB) does not have a state machine explicitly defined in the XML, as it operates in an event-driven manner. Its internal behavior can be described as follows:
 
 - **Idle** → Waiting for `REQ`
-
 - **Processing** → Evaluation of `K` and switching of the active output
-
 - **Done** → Output of `CNF`, return to Idle
 
 After a valid `REQ`, the **Processing** state is entered, followed immediately by **Idle**.
 
 ## Application Scenarios
-
 - **Dividing an analog sensor signal** to various actuators or downstream control blocks.
-
 - **Switching between multiple consumers** (e.g., depending on the operating mode or product recipe).
-
 - **Test and diagnostic environments** where a signal must be selectively routed to different analysis paths.
-
 - **Redundant signal distribution** where only one active path is used at a time.
 
 ## Comparison with similar components

@@ -1,13 +1,8 @@
 # AD_DEMUX_4
-
 No image available.
-
 ![AD_DEMUX_4](./AD_DEMUX_4.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `AD_DEMUX_4` is a generic AD demultiplexer. It distributes an input received via a socket adapter to one of four output adapters. The selection of the active output is event-driven via an index.
 
 ## Interface Structure
@@ -40,7 +35,6 @@ The function block `AD_DEMUX_4` is a generic AD demultiplexer. It distributes an
 
 No separate data outputs are available.
 
-
 ### **Adapters**
 
 #### Socket (Input)
@@ -70,11 +64,8 @@ No separate data outputs are available.
 As soon as an event arrives at input `REQ`, the current value of index `K` is evaluated. The function block connects the input adapter `IN` to the output adapter designated by `K` (`OUT1` … `OUT4`). After a successful switchover, the event `CNF` is output. The unselected outputs are inactive or disconnected at this time.
 
 ## Technical Features
-
 - **Generic Function Block**: The function block is declared as generic (`GenericClassName = 'GEN_AD_DEMUX'`). This allows it to be parameterized with different adapter types.
-
 - **Unidirectional**: Both the socket and the plugs are of type `unidirectional::AD`, meaning the data flow direction is fixed.
-
 - **Event-Driven Switching**: Switching occurs exclusively upon the `REQ` event – no cyclic sampling is performed.
 
 ## State Overview
@@ -92,13 +83,9 @@ An explicit state machine is not defined in the function block's source code. It
 5. Return to standby mode.
 
 ## Application Scenarios
-
 - Switching an analog measurement signal between different processing units.
-
 - Controlling multiple actuators from a common signal source.
-
 - Selecting one of several adapter-based communication paths (1-to-N switch).
-
 - Flexible routing in modular automation systems based on IEC 61499.
 
 ## Comparison with similar components

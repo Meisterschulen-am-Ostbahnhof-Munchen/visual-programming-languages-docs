@@ -1,41 +1,27 @@
 # SUBSCRIBE_1
-
 <img width="1067" height="302" alt="image" src="https://github.com/user-attachments/assets/952821fc-318a-4f24-8140-74d1dc6759eb" />
-
 * * * * * * * * * *
-
 ## Introduction
 The SUBSCRIBE_1 function block is used to subscribe to data from a PUBLISH_1 block. It enables communication between different components in a distributed system by receiving data from a publisher and making it available when new data is available.
-
-
 ``` ![SUBSCRIBE_1](SUBSCRIBE_1.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Initialization event with associated data QI and ID
-
 - **RSP**: Response event with associated data QI
 
 ### **Event Outputs**
-
 - **INITO**: Initialization output with associated data QO and STATUS
-
 - **IND**: Indication event when new data is available with associated data QO, STATUS, and RD_1
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Qualifier Input - Controls block activation
-
 - **ID** (WSTRING): Identifier - Unique ID for the subscription connection
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Qualifier Output - Block execution status
-
 - **STATUS** (WSTRING): Status information as Unicode String
-
 - **RD_1** (ANY): Received Data - Can contain any data type
 
 ### **Adapter**
@@ -43,7 +29,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The SUBSCRIBE_1 block initializes itself via the INIT event and subscribes to data from a PUBLISH_1 block with the specified ID. Upon successful initialization, it confirms this via INITO. When new data is available from the publisher, the IND event is triggered, and the received data is made available via RD_1. The STATUS output provides status information about the subscription process.
-
 
 ## Technical Features
 - Uses WSTRING for ID and STATUS for Unicode compatibility
@@ -72,7 +57,6 @@ The SUBSCRIBE_1 function block is an essential building block for distributed sy
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

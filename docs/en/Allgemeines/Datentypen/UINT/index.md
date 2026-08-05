@@ -1,13 +1,9 @@
 # Data Type Details: UINT
-
 ## Description
 Unsigned integer
-
 ## Normative Definition
 According to **DIN EN 61131-3**, this data type is specified as follows:
-
 | Property | Value |
-
 | :--- | :--- |
 
 | **Bits** | 16 |
@@ -21,9 +17,7 @@ In IEC 61131-3 and IEC 61499, this type is used for declaring variables and in f
 
 When used as a literal, a prefix can be used, e.g., `UINT#...`.
 
-
 ## 🛠️ Related exercises
-
 * [Uebung_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
 * [Uebung_010b4_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
 * [Uebung_010b4_sub_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)

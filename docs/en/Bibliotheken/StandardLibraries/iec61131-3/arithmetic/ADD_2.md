@@ -1,33 +1,23 @@
 # ADD_2
-
 ![ADD_2](https://user-images.githubusercontent.com/116869307/214142966-3facb074-7909-40e0-a9c9-4588e1bfc938.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **ADD_2** is a generic function block for adding two values, developed under the EPL-2.0 license. Version 1.0 supports various numeric data types according to the IEC 61131-3 standard.
-
-
 ![ADD_2](ADD_2.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `REQ`: Calculation request (with input values)
 
 ### **Event Outputs**
-
 - `CNF`: Calculation confirmation (with result)
 
 ### **Data Inputs**
-
 - `IN1` (ANY_MAGNITUDE): First summand
-
 - `IN2` (ANY_MAGNITUDE): Second summand
 
 ### **Data Outputs**
-
 - `OUT` (ANY_MAGNITUDE): Sum result
 
 ## Functionality
@@ -39,13 +29,11 @@ The **ADD_2** is a generic function block for adding two values, developed under
 2. **Addition**:
 
 - Type-preserving calculation (IN1 + IN2)
-
 - Supported types: INT, DINT, REAL, LREAL, etc.
 
 3. **Result Output**:
 
 - `CNF` event with calculated OUT value
-
 - Automatic type adjustment
 
 ## Technical Features
@@ -70,7 +58,6 @@ The **ADD_2** is a generic function block for adding two values, developed under
 LREAL | 1.23e10 + 4.56e10 |
 
 ## Application Scenarios
-
 - **Process Control**: Signal Processing
 - **Data Analysis**: Measurement Aggregation
 - **Machine Control**: Position Calculation
@@ -89,17 +76,12 @@ LREAL | 1.23e10 + 4.56e10 |
 | Type Support | ANY_MAG | ANY_MAG | ANY_MAG |
 
 ## Error Handling
-
 - Type incompatibility results in:
-
 - OUT = 0 (for numeric types)
-
 - Empty value (for other types)
-
 - No exception generation
 
 ## 🛠️ Related Exercises
-
 * [Exercise_000](../../../../Uebungen/test_B/Uebungen_doc/Uebung_000.md)
 * [Exercise_000_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_000_AX.md)
 * [Exercise_110](../../../../Uebungen/test_B/Uebungen_doc/Uebung_110.md)

@@ -1,13 +1,8 @@
 # AUDI_FB_CTD
-
 ![AUDI_FB_CTD](./AUDI_FB_CTD.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AUDI_FB_CTD** implements a down counter based on the UDINT data type. It is specifically designed for use with adapter interfaces and uses the types `AX` and `AUDI` for event-driven communication. The actual counting logic is executed by an internal function block of type `iec61131::counters::FB_CTD_UDINT`.
-
-
 This function block fires an event on the output channel `CD`, `LD`, or `PV` with every update—regardless of whether the input was triggered by `CD`, `LD`, or `PV`. For change-based triggering, the use of a downstream `AX_D_FF` filter is recommended.
 
 ## Interface Structure
@@ -80,43 +75,29 @@ The output data is displayed via the plugs.
 
 Internally, a standardized IEC 61131 down counter (`FB_CTD_UDINT`) is used. The adapter events `CD.E1`, `LD.E1`, and `PV.E1` are combined into a single `REQ` event of the internal module. This causes the internal counter to be recalculated with every external event.
 
-
 - **CD (Count Down)**: If the data signal `CD.D1 = TRUE` is present, the current counter value is decremented by 1. With `FALSE`, the value remains unchanged.
-
 - **LD (Load)**: If `LD.D1 = TRUE` is present, the counter is set to the value of `PV.D1`.
-
 - **PV (Preset Value)**: This event updates the stored preset value; a subsequent `LD` event adopts this value.
 
 After each calculation, the output data `CV` (current counter value) and `Q` (TRUE if `CV = 0`) are output via the corresponding plugs. Simultaneously, the acknowledgment event `CNF` is triggered.
 
 ## Technical Features
-
 - **Event Behavior**: For every input event (`CD`, `LD`, or `PV`), the output channel `Q` is activated. This means that a `Q.E1` event is sent even if the counter value or the `Q` state has not changed. This can lead to an unnecessarily high number of events in the subsequent logic.
-
-
 - **Filtering Recommendation**: If the output event should only be triggered when `Q` actually changes state, an **AX_D_FF** (flip-flop) should be used as a filter. This suppresses repetitions.
-
 - **Adapter-Based Connection**: All inputs and outputs are made via standardized adapters (`AX`, `AUDI`). This simplifies modular wiring and reuse in different environments.
 
 ## State Overview
 
 The component has no explicit states. The internal counter operates according to the rules of an IEC 61131 CTD component. The current counter value is determined by the data signals.
 
-
 ## Application Scenarios
-
 - **Event-driven Down Count**: Used in automation systems where a counter value is decremented by external events (e.g., number of workpieces processed).
-
 - **Modular Control Components**: Integration into adapter-based architectures where standardized interfaces facilitate data exchange between different functional blocks.
-
 - **Timer Simulation**: Combined with a clock generator to count a defined number of cycles and trigger an action when zero is reached.
 
 ## Comparison with Similar Function Blocks
-
 - **Standard CTD** (e.g., `FB_CTD_UDINT`): Has direct input/output variables, no adapters. The `AUDI_FB_CTD`, on the other hand, encapsulates the logic and provides the signals via adapters, enabling a clean separation of event and data channels.
-
 - **Upward Counting Unit (CTU)**: Unlike the `AUDI_FB_CTD`, a CTU counts upwards. Both can be implemented using adapters, but are designed for different counting directions.
-
 - **Always fire feature**: Many standard counters only output a signal when the initial state changes. The `AUDI_FB_CTD` does this with every processing step, which is a unique feature and can be an advantage or disadvantage depending on the application.
 
 ## Conclusion

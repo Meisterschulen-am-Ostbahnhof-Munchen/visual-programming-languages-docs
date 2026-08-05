@@ -1,12 +1,8 @@
 # Q_BackgroundColourAux_AUS
-
 ![Q_BackgroundColourAux_AUS](./Q_BackgroundColourAux_AUS.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 This function block implements the command to change the background color of an object according to ISO 11783-6, Part F.20.
-
 It enables interaction with the Virtual Terminal (VT) and handles the transmission of the new color as well as the feedback of the result.
 
 ## Interface Structure
@@ -69,29 +65,17 @@ The previous color is output via the plug adapter `u8OldColour`.
 
 All the logic is encapsulated in a subordinate function block of the same family, so this block serves only as an outer shell for the adapter coupling.
 
-
-
 This function block executes the VT command and returns the status (`STATUS`) and the result (`s16result`) via the output `CNF`. ## Technical Features
 
 - The initial value for `u16ObjId` is `ID_NULL`, meaning the function block must be initialized with a valid object ID before use.
-
 - Color values are transmitted as 8-bit values via the AUS adapter. The valid colors are defined in the VT standard color palette (ISO 11783-6 Annex A.3).
-
-
 - The initial value for `u16ObjId` is `ID_NULL`, meaning the function block must be initialized with a valid object ID before use.
-
 - The color values are transmitted as 8-bit values via the AUS adapter. The valid colors are defined in the VT standard color palette (ISO 11783-6 Annex A.3). - Possible return values (`s16result`):
-
 - `VT_E_NO_ERR` (0): Success
-
 - `VT_E_OVERFLOW` (-6): Buffer overflow
-
 - `VT_E_NOACT` (-8): Command not possible in the current state
-
 - `VT_E_NO_INSTANCE` (-21): No VT client available
-
 - `VT_E_ISO_INSTANCE_INVALID` (-129): Invalid connection identifier
-
 - `VT_E_NOT_ALIVE` (-130): VT instance valid, but VT not reachable
 
 ## State Overview
@@ -105,9 +89,7 @@ The FB does not have explicit state machines in the XML. Event control is handle
 3. **CNF** → Completion of the operation with status and return value.
 
 ## Application Scenarios
-
 - Dynamic adjustment of the background color of an ISOBUS VT object (e.g., button, text field) depending on operating states or user input.
-
 - Implementation of color changes in agricultural control and visualization systems.
 
 ## Comparison with Similar Function Blocks

@@ -1,13 +1,8 @@
 # IA_RPTO
-
 ![IA_RPTO](./IA_RPTO.svg)
-
 **********
-
 ## Introduction
-
 The IA_RPTO function block is an ISOBUS adapter for the rear power take-off (RPTO) according to ISO 11783-7 (PGN 65091). It provides an encapsulated interface to an internal I_RPTO function block and outputs the most important parameters (speed, setpoint, timeout status) via adapter ports.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +12,6 @@ The IA_RPTO function block is an ISOBUS adapter for the rear power take-off (RPT
 |-------|--------|-------------------------------|-----------|
 
 | INIT | EInit | Service Initialization | QI |
-
 
 ### **Event Outputs**
 

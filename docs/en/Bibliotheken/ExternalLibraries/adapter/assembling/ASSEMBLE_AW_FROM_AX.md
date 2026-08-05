@@ -1,16 +1,12 @@
 # ASSEMBLE_AW_FROM_AX
-
 ![ASSEMBLE_AW_FROM_AX](./ASSEMBLE_AW_FROM_AX.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `ASSEMBLE_AW_FROM_AX` combines 16 Boolean signals, provided by separate AX adapters, into a 16-bit word (WORD) and outputs it via an AW adapter. It enables the conversion of a discrete group of digital signals into a uniform data word value for further processing.
-
 ## Interface Structure
 ### **Event Inputs**
 
 No direct event inputs. Events are received via the 16 AX adapters (sockets): Each AX adapter triggers an event (`E1`) upon a data change, which initiates processing.
-
 
 ### **Event Outputs**
 
@@ -73,32 +69,22 @@ No direct data outputs. The resulting 16-bit word (WORD) is output via the AW ad
 
 4. **Output**: After successful transfer, the flip-flop outputs a clock signal at its output `EO` and places the stored word at its Q output. This event triggers the AW adapter `OUT`, which makes the WORD available on its data channel (`D1`).
 
-
 ## Technical Features
-
 - **Use of a flip-flop**: Output occurs only after a complete merge cycle. This prevents inconsistent or fluctuating data – the output remains stable until a new event occurs.
-
 - **No state machine**: The function block is purely event-driven and has no inherent state; its behavior is determined by the internal function blocks `ASSEMBLE_WORD_FROM_BOOLS` and `E_D_FF_ANY`.
-
 - **Adapter interface**: Both the inputs and the output are implemented as adapters. This allows for flexible reuse and encapsulation of the signal types.
 
 ## State overview
 The function block does not contain an explicit state machine. The internal D flip-flop `E_D_FF_ANY` has two states (`Q = 0` or `Q = 1`) that store the current data value. The flip-flop's output is updated only on a rising edge at the clock input.
 
 ## Application Scenarios
-
 - **Bundling of Discrete Signals**: In automation technology, 16 individual digital sensors or switches (e.g., limit switches, pushbuttons) are often required. This function block combines these into a single word, which can be used via a fieldbus or as an input for a higher-level controller.
-
 - **Data Preparation for Communication**: Before transmission via a network adapter (e.g., PROFINET, EtherCAT), multiple binary signals must be packed into a single data word.
-
 - **Signal Register**: The component can be used as a simple 16-bit register that buffers the current state of all inputs and updates them only when changes occur.
 
 ## Comparison with Similar Components
-
 - **Classic Boolean-to-WORD Components**: Standard components often combine Boolean inputs directly into an integer type, but without an adapter interface. `ASSEMBLE_AW_FROM_AX` uses an adapter, which enables clearly separated signal and event transmission and simplifies reuse in modular architectures.
-
 - **Adapter-Based Alternatives**: Similar components exist for other word sizes (e.g., BYTE, DWORD) or with additional filtering capabilities. This component focuses on the essentials and uses a flip-flop output for clean synchronization.
-
 
 ## Conclusion
 

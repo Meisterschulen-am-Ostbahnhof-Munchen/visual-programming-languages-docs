@@ -1,13 +1,8 @@
 # RS (Bistable, Priority Reset) - IEC 61131-3
-
 The function block **RS** is a bistable element (flip-flop) where resetting takes precedence over setting.
-
 ## Interface
-
 | Type | Name | Data Type | Description |
-
 | :--- | :--- | :--- | :--- |
-
 **Input** | S | BOOL | Set Input (Set) |
 
 **Input** | R1 | BOOL | Reset Input (Reset) |
@@ -38,14 +33,9 @@ The logic is described by the following truth table:
 
 According to the function block body in the standard (Table 43, 2a):
 
-
 ```text
 Q1 := NOT R1 AND (S OR Q1);
-```
 If ``R1`` is TRUE, the expression ``NOT R1`` becomes FALSE, and thus ``Q1`` inevitably becomes ``FALSE`` (0), regardless of the state of ``S``. This implements reset dominance.
 
 ## See also
-
 * [E_RS (IEC 61499)](../../StandardLibraries/events/E_RS.md): The event-driven equivalent in IEC 61499. Note that there is no guaranteed "dominance" for concurrent events.
-
-```

@@ -1,13 +1,8 @@
 # AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE
-
 ![AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE](./AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AW_FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE** converts a 16-bit word received via a fieldbus into a scaled signal value. The word is multiplied byte by byte by different scaling factors, an offset is added, and the result is output as a normalized signal. Additionally, a validity signal is provided to indicate whether the incoming value is valid.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -70,7 +65,6 @@ The sum of both scaled byte values is incremented by the configured `OFFSET`.
 
 The result is passed to the **OUT** adapter (event **OUT.E1** with data **OUT.D1**).
 
-
 4. **Validity Handling**
 
 An internal flip-flop (`E_D_FF`) is clocked in parallel. The validity status (signal **VALID**) is taken from the internal **VALID** output of the scaling module and is retained until the next valid signal.
@@ -78,7 +72,6 @@ An internal flip-flop (`E_D_FF`) is clocked in parallel. The validity status (si
 The internal flip-flop ensures that the validity signal is only updated upon the next input event. This guarantees a stable signal state at the output.
 
 ## Technical Features
-
 - **Compound Scaling**
 
 Separate scaling of the upper and lower bytes allows the processing of fieldbus signals encoded in two differently scaled byte halves (e.g., temperature or pressure values with range and resolution).
@@ -107,11 +100,9 @@ The FB has an internal state represented by the flip-flop `E_D_FF`:
 
 | VALID | Valid signal detected. The **VALID** output displays TRUE. |
 
-
 The state changes with each new input event (i.e., with each word transmission) according to the validity information of the internal scaling module.
 
 ## Application Scenarios
-
 - **Analog Value Acquisition via Fieldbus**
 
 A fieldbus device sends a 16-bit raw value, where the upper byte represents a coarse value (e.g., 0…255) and the lower byte a fine value (e.g., 0…1000). The physical measured value is calculated using `SCALE_HIGH` and `SCALE_LOW`.
@@ -120,13 +111,11 @@ A fieldbus device sends a 16-bit raw value, where the upper byte represents a co
 
 A controller requires several scaled signals whose validity must be monitored. The function block combines scaling and validation in a single block.
 
-
 - **Gateway Function**
 
 This function block can be used as a converter between a fieldbus protocol (word-based) and an internal signal protocol (with a validity flag).
 
 ## Comparison with Similar Function Blocks
-
 - **FIELDBUS_WORD_TO_SIGNAL** (simple)
 
 This function block scales the entire 16-bit word by a single factor. The compound function block, on the other hand, allows byte-by-byte scaling.
@@ -138,7 +127,6 @@ A universal scaling function block without a fieldbus interface. This function b
 - **BADAPTER_STATUS**
 
 Returns only a status regarding validity, without scaling. The compound function block combines both functions.
-
 
 ## Conclusion
 

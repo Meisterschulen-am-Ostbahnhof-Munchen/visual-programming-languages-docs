@@ -1,13 +1,8 @@
 # AIS_DEMUX_4
-
 ![AIS_DEMUX_4](./AIS_DEMUX_4.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **AIS_DEMUX_4** function block is a generic AIS demultiplexer. It receives an AIS data stream via a single input adapter and selectively forwards it to one of four output adapters. Switching is performed via the index input K. The block is designed for use in IEC 61499 applications that require flexible distribution of AIS signals.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +12,6 @@ The **AIS_DEMUX_4** function block is a generic AIS demultiplexer. It receives a
 |----------|---------------|---------------------|
 
 | REQ | Sets the index K and triggers forwarding | K (UINT) |
-
 
 ### **Event Outputs**
 
@@ -69,13 +63,9 @@ No explicit data outputs. Output is provided via adapters OUT1 … OUT4.
 
 The exact handling of the input signal (e.g., whether buffering or direct pass-through) depends on the implementation of the underlying AIS adapter type.
 
-
 ## Technical Features
-
 - **Generic Type** – The function block is managed under the generic class name `GEN_AIS_DEMUX` and can be instantiated for various AIS adapter implementations.
-
 - **Adapter-Based Communication** – Instead of direct data inputs/outputs, the function block uses the IEC 61499 adapter concept, which enables loose coupling and easy reuse in different distribution architectures.
-
 - **No Internal State Machine Predefined** – The exact sequence control is determined by the implementation; typically, a simple two-state state machine (IDLE → ROUTE → IDLE) is used.
 
 ## State Overview
@@ -89,11 +79,8 @@ An explicit ECC diagram is not included in this type definition. Typical states 
 The transition from IDLE to ROUTE is performed using REQ, and after the forwarding is complete, CNF is triggered, and the function block returns to IDLE.
 
 ## Application Scenarios
-
 - **AIS Data Distribution** – An incoming AIS data stream should be forwarded to different downstream processing units depending on the context (e.g., season or operating mode).
-
 - **Load or Signal Routing** – Four parallel paths are available; the index K can be dynamically set by a higher-level controller.
-
 - **Test and Simulation Environments** – Switching between different signal sources or sinks during operation.
 
 ## Comparison with Similar Function Blocks
@@ -109,7 +96,6 @@ The transition from IDLE to ROUTE is performed using REQ, and after the forwardi
 | `MUX` (multiplexer) | Adapter/data | 1 input → multiple outputs | Reverse direction |
 
 The AIS_DEMUX_4 stands out due to its adapter interface and its specific focus on AIS protocols.
-
 
 ## Conclusion
 

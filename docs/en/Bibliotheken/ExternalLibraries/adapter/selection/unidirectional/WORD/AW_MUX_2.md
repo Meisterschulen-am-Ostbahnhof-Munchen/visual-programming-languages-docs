@@ -1,13 +1,8 @@
 # AW_MUX_2
-
 ![AW_MUX_2](./AW_MUX_2.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AW_MUX_2** is a generic multiplexer for two adapter inputs. Based on an index value (`K`), it selects one of the two adapters (`IN1`, `IN2`) and forwards it to the output adapter (`OUT`). The block operates in an event-driven manner and is suitable for switching between two unidirectional adapter connections of type "AW".
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -64,26 +59,18 @@ The function block performs the following steps on each event at `REQ`:
 
 The adapter type `AW` is defined as unidirectional, so data transmission only occurs in one direction (from the socket to the plug).
 
-
 ## Technical Features
-
 - **Generic Function Block**: The function block is declared as a generic type (`GenericClassName = 'GEN_AW_MUX'`). It can be used in various contexts with the underlying adapter type `AW`.
-
 - **No State Machine**: The function block has no explicit state logic – switching occurs purely event-driven and instantaneously.
-
 - **Adapter-Oriented**: Instead of individual data points, entire adapter connections are switched, making the function block ideal for modular, adapter-based architectures.
 
 ## State Overview
 
 The function block does not have an internal state machine. Its functionality is limited to the direct response to the `REQ` event. Therefore, no defined states exist except for the implicit **idle state** (waiting for `REQ`).
 
-
 ## Application Scenarios
-
 - **Sensor Switching**: Selection between two sensors (e.g., temperature from two different sensors) via an index.
-
 - **Configuration Switching**: Switching between two different data sources (e.g., two parameter sets) via adapter multiplexing.
-
 - **Test and Diagnostics**: Selective switching between test or normal operation to a common output interface.
 
 ## Comparison with Similar Function Blocks
@@ -107,7 +94,6 @@ The **AW_MUX_2** is a simple yet powerful function block for adapter switching i
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,13 +1,8 @@
 # ADI_TO_AB
-
 ![ADI_TO_AB](./ADI_TO_AB.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `ADI_TO_AB` serves as a composite module for converting a 32-bit integer value (DINT) into a byte value (BYTE). It encapsulates the conversion between two unidirectional adapters: the **ADI adapter** (input) and the **AB adapter** (output). The module is used to transfer data from a DINT adapter to a BYTE adapter without requiring the user to implement the actual conversion logic.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +24,6 @@ Event output is also handled exclusively via the **AB_OUT plug adapter**:
 |--------------|------------|--------------------------------------|
 
 | AB_OUT.E1 | Event | Signals that the value has been converted and is ready at the output. |
-
 
 ### **Data Inputs**
 
@@ -66,7 +60,6 @@ Internally, the function block uses the predefined IEC 61131-3 function block `F
 
 1. An event at **ADI_IN.E1** triggers the conversion.
 
-
 ``` 2. The data value from **ADI_IN.D1** is forwarded to the input `IN` of the internal `F_DINT_TO_BYTE` function block.
 
 3. After the conversion is complete, the internal function block generates the event **CNF**.
@@ -78,24 +71,17 @@ Internally, the function block uses the predefined IEC 61131-3 function block `F
 All the logic is encapsulated in a composite function block, so the user only needs to connect the adapters.
 
 ## Technical Features
-
 - **Composite Function Block**: The function block consists of an internal network and does not have its own state machine (ECC). It performs the conversion strictly event-driven.
-
 - **Use of IEC 61131-3 standard function blocks**: Conversion is performed using the standardized function block `F_DINT_TO_BYTE`, ensuring portability and compliance with industry standards.
-
 - **Adapter-based input/output**: All data and events are routed via adapters – not individual ports. This simplifies integration with similar adapter interfaces in the 4diac environment.
 
 ## State Overview
 
 Since this is a composite function block without its own state machine, there are no explicit states. The function block reacts to the incoming event, converts the value, and outputs the result. After outputting the result, it is immediately ready for another conversion.
 
-
 ## Application Scenarios
-
 - **Data Protocol Adaptation**: When a sensor or controller delivers DINT values, but the connected device or communication channel expects BYTE values.
-
 - **Adapter Mediation**: In a modular architecture that allows the exchange of adapters with different data types without having to rewrite the connection logic each time.
-
 - **Interface Coupling**: Between components that use unidirectional adapters, e.g., in a pipeline structure.
 
 ## Comparison with Similar Components
@@ -106,11 +92,9 @@ There are numerous conversion components for direct data type conversions (e.g.,
 
 The function block `ADI_TO_AB` offers a cleanly encapsulated, adapter-based conversion of DINT to BYTE values. It uses standard IEC function blocks and event-driven control, allowing for seamless integration into 4diac projects. Its adapter interfaces make it particularly suitable for modular and reusable control applications.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

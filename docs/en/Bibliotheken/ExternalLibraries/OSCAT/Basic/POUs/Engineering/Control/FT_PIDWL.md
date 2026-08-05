@@ -1,13 +1,9 @@
 ![FT_PIDWL](FT_PIDWL.svg)
-
 # FT_PIDWL
-
 PI Controller with Anti-Windup
-
 version 1.3 November 13th 2009
 programmer hugo
 tested by tobias
-
 FT_PIDWL is a PID controller with dynamic wind_up reset.
 The PID controller works according to the form Y = KP *(IN + KI * INTEG(e) + DERIV(e) ).
 a rst will reset the integrator to 0

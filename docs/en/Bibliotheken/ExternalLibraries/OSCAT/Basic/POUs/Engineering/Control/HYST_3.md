@@ -1,12 +1,9 @@
 #HYST_3
-
 Hysteresis function
-
 this is a double hysteresis function. Out1 follows a hysteresis function defined by val1and hyst,
 while out 2 follows val2 and hyst.
 if the input signal is between the two hysteresis switches (val1 and val2) then non of the
 outputs is active.
-
 ## Interface
 
 ### Event inputs

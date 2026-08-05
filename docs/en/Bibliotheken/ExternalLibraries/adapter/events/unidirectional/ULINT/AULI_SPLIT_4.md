@@ -1,12 +1,8 @@
 # AULI_SPLIT_4
-
 ![AULI_SPLIT_4](./AULI_SPLIT_4.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AULI_SPLIT_4** is used to split an incoming **AULI** adapter into four separate, identical outputs. It is designed as a generic function block (Generic FB) and is distributed under the Eclipse Public License 2.0. It was developed for use in automation technology, particularly within the HR Agrartechnik GmbH environment.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -46,13 +42,9 @@ No data outputs available.
 This function block operates as a passive distribution structure. The AULI adapter connected to `IN` is internally routed to the four outputs `OUT1` to `OUT4`. Since no active logic, processing, or buffering takes place, the data present at the input (e.g., signals, values, states) is passed on unchanged to all four outputs. The connection is unidirectional – changes to the outputs do not affect the input.
 
 ## Technical Features
-
 - **Generic Function Block**: The function block is declared as a generic function block with the generic class name `GEN_AULI_SPLIT`. This allows for flexible adaptation and reuse in various contexts (e.g., through parameterization during instantiation).
-
 - **Unidirectional Adapters**: All adapters used are of type `adapter::types::unidirectional::AULI`, meaning they only support data flow in one direction.
-
 - **License**: The block is licensed under the Eclipse Public License 2.0 and may be used and modified in accordance with the terms of this license.
-
 - **No Own Events or Data**: All functionality is implemented exclusively via adapters. This reduces overhead and simplifies integration into existing 4diac architectures.
 
 ## State Overview
@@ -60,11 +52,8 @@ This function block operates as a passive distribution structure. The AULI adapt
 The block does not have its own state machine (no ECC states). It behaves stateless: The outputs always reflect the current state of the input. Initialization or special state transitions are not required.
 
 ## Application Scenarios
-
 - **Signal Distribution**: An AULI-based signal (e.g., control command, measured value) is to be forwarded to multiple consumers or downstream function blocks.
-
 - **Redundancy or Parallel Processing**: Several independent instances of a component require the same input value – the split enables simple distribution without additional logic.
-
 - **Test and Simulation Environments**: In test setups, an AULI signal can be distributed to multiple observers or loggers.
 
 ## Comparison with Similar Function Blocks
@@ -78,5 +67,4 @@ The **AULI_SPLIT_4** is a simple yet useful function block for multiplying an AU
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

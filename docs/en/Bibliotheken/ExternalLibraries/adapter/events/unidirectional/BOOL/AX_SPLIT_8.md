@@ -1,12 +1,8 @@
 # AX_SPLIT_8
-
 <img width="618" height="415" alt="image" src="https://github.com/user-attachments/assets/2f54eb67-b52a-498d-b27b-6225a19450fd" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_SPLIT_8 function block is a generic function block that splits a single AX adapter into eight separate AX outputs. It is used to distribute adapter signals in complex control architectures.
-
-
 ![AX_SPLIT_8](AX_SPLIT_8.svg)
 
 ## Interface Structure
@@ -30,7 +26,6 @@ The AX_SPLIT_8 function block is a generic function block that splits a single A
 **Output Adapter:**
 
 - **OUT1** (Plug): AX adapter output 1 type `adapter::types::unidirectional::AX`
-
 - **OUT2** (Plug): AX adapter output 2 type `adapter::types::unidirectional::AX`
 - **OUT3** (Plug): AX adapter output 3 of type `adapter::types::unidirectional::AX`
 - **OUT4** (Plug): AX adapter output 4 of type `adapter::types::unidirectional::AX`
@@ -68,8 +63,4 @@ The AX_SPLIT_8 function block provides a simple and efficient solution for distr
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]
-
-
-```

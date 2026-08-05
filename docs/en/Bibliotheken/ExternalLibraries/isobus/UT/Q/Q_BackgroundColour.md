@@ -1,41 +1,29 @@
 # Q_BackgroundColour
-
 ![Q_BackgroundColour](https://user-images.githubusercontent.com/113907471/204320542-f628c868-03d7-4d81-9ebb-5cf63d9ce541.png)
-
 ![Beispiel](https://user-images.githubusercontent.com/113907471/204320176-773a1f69-281c-4d83-873a-671f1680081a.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_BackgroundColour** is a standards-compliant function block for controlling background colors in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.20) specification for agricultural tax systems.
-
 
 ![Q_BackgroundColour](Q_BackgroundColour.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT`: Initialization Request (with object ID)
-
 - `REQ`: Color Change Request (with color code)
 
 ### **Event Outputs**
-
 - `INITO`: Initialization Confirmation
 - `CNF`: Change Confirmation (with result data)
 
 ### **Data Inputs**
-
 - `u16ObjId` (UINT): Object Identifier
 - `u8Colour` (USINT): New Color Value (ISO 11783-6 palette)
 
 ### **Data Outputs**
-
 - `STATUS` (STRING): Operating status message
-
 - `u8OldColour` (USINT): Previous color value
-
 - `s16result` (INT): ISO-compliant result code
 
 ## Functionality
@@ -43,19 +31,16 @@ The **Q_BackgroundColour** is a standards-compliant function block for controlli
 1. **Initialization**:
 
 - `INIT` with object ID
-
 - `INITO` confirms operational readiness
 
 2. **Color Change**:
 
 - `REQ` triggers with new color code (0-255)
-
 - `CNF` returns result and previous color value
 
 3. **Error Handling**:
 
 - ISO-standardized error codes
-
 - Detailed status messages
 
 ## Technical Features
@@ -96,10 +81,8 @@ The **Q_BackgroundColour** is a standards-compliant function block for controlli
 -128 | VT_E_HANDLE_INVALID | Invalid Object ID |
 
 ## Application Scenarios
-
 - **Machine Status**: Color-coded Alarm Indication
 - **Night Mode**: Dark Color Palettes
-
 - **Markings**: Highlighting Objects
 - **Branding**: Manufacturer-Specific Colors
 
@@ -116,7 +99,6 @@ The **Q_BackgroundColour** is a standards-compliant function block for controlli
 | Object Binding | Explicit | Implicit | Stylesheet |
 
 ## 🛠️ Related Exercises
-
 * [Exercise_016](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)]
 * [Exercise_016a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_016a.md)]
 

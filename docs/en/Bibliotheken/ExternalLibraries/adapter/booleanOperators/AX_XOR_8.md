@@ -1,12 +1,8 @@
 # AX_XOR_8
-
 <img width="1009" height="465" alt="image" src="https://github.com/user-attachments/assets/360232e2-8dcb-496e-84cf-311179b598af" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_XOR_8 function block is a generic block for calculating Boolean XOR operations with 8 inputs. It enables the processing of logic signals according to the exclusive-OR principle and is designed for use in control applications.
-
-
 ![AX_XOR_8](AX_XOR_8.svg)
 
 ## Interface Structure
@@ -33,21 +29,16 @@ No direct data outputs available
 - **IN3**: Unidirectional adapter for XOR input 3
 - **IN4**: Unidirectional adapter for XOR input 4
 - **IN5**: Unidirectional adapter for XOR input 5
-
 - **IN6**: Unidirectional adapter for XOR input 6
-
 - **IN7**: Unidirectional adapter for XOR input 7
-
 - **IN8**: Unidirectional adapter for XOR input 8
 
 ## Functionality
 This function block calculates the XOR operation across all 8 inputs. The XOR operation (exclusive OR) returns a TRUE signal if and only if an odd number of inputs are TRUE. If an even number of inputs are TRUE, FALSE is output.
 
 ## Technical Features
-
 - Generic function block with the class 'GEN_AX_XOR'
 - Uses unidirectional adapters for all inputs and outputs
-
 - No direct event or data interfaces
 - Adapter-based architecture for flexible connectivity
 

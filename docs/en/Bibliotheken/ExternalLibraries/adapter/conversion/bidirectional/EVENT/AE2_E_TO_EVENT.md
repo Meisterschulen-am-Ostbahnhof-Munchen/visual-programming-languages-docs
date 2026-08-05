@@ -1,12 +1,8 @@
 # AE2_E_TO_EVENT
-
 <img width="1172" height="190" alt="image" src="https://github.com/user-attachments/assets/02b7c06e-111f-4166-ac20-aebdf89c9956" />
-
 * * * * * * * * * *
 ## Introduction
 The AE2_E_TO_EVENT function block is a composite function block used to convert AE2 adapter signals into events. It enables bidirectional communication between adapter-based components and event-driven function blocks.
-
-
 ![AE2_E_TO_EVENT](AE2_E_TO_EVENT.svg)
 
 ## Interface Structure
@@ -23,13 +19,10 @@ The AE2_E_TO_EVENT function block is a composite function block used to convert 
 *No data outputs available*
 
 ### **Adapter**
-
 - **AE2_IN** (Adapter Input): Bidirectional AE2 adapter input for communication with AE2-compatible components
 
 ## Functionality
 This function block acts as a simple converter between the AE2 adapter protocol and the standard 4diac event system. Upon receiving a REQ event, a request is sent via the AE2 adapter. The adapter's response is received via the EO1 signal and output as a CNF event.
-
-
 
 ``` ## Technical Features
 - Implemented as a composite function block
@@ -59,7 +52,6 @@ The AE2_E_TO_EVENT function block offers a reliable and simple solution for inte
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

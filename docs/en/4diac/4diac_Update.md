@@ -1,7 +1,5 @@
 # Eclipse 4diac™ update
-
 Assignment GIT branch to download:
-
 | Git | Git Link | Download | Download Link |
 |---------|----------------------------------------------------------------|----------|----------------------------------------------------------------|
 | develop | [link](https://github.com/eclipse-4diac/4diac-ide/tree/develop) | nightly | [link](https://download.eclipse.org/4diac/updates/nightly) |
@@ -57,9 +55,7 @@ To adjust the update source in the IDE:
 3. For different versions:
 
 - **Stable Releases**: [https://www.eclipse.org/4diac/downloads/updates/release](https://www.eclipse.org/4diac/downloads/updates/release)
-
 - **Nightly Builds**: [https://download.eclipse.org/4diac/updates/nightly](https://download.eclipse.org/4diac/updates/nightly)]
-
 - Further URLs are listed below
 
 4. New sites can be added via "Add..."
@@ -70,17 +66,13 @@ You have two options to obtain the latest version of the 4diac IDE:
 1. **Via the update system in the IDE** (recommended for minor updates):
 
 - Open the 4diac IDE
-
 - Select "Help" > "Check for Updates"
-
 - Follow the instructions
 
 2. **Manual Download** (recommended for new installations or major updates):
 
 - Download the latest Download the ZIP archive from the download page
-
 - Be sure to use **7-Zip** (or a similar tool) to extract the files.
-
 - *Important:* The built-in Windows ZIP tool is extremely slow with 4diac archives and can cause long waiting times!
 
 #### Updating via a ZIP file
@@ -150,7 +142,6 @@ Eclipse 4diac is an open-source platform for developing Industry 4.0 application
 
 An Eclipse 4diac milestone build is therefore an intermediate version of the Eclipse 4diac platform that includes various new features, improvements, and bug fixes compared to the previous stable version. However, it has not yet been fully tested and may still contain some bugs. These versions are typically distributed to developers and interested users to gather feedback and contribute to the further development of the platform.
 
-
 #### Eclipse 4diac Milestone
 
 [https://download.eclipse.org/4diac/updates/milestone/](https://download.eclipse.org/4diac/updates/milestone/)
@@ -159,7 +150,6 @@ An Eclipse 4diac milestone build is therefore an intermediate version of the Ecl
 
 Nightly builds are automatically generated daily versions of software that include the latest changes and developments. These builds are often used by developers to test the latest features and find bugs. Nightly build update URLs for 4diac are web addresses that point to the latest daily versions of the 4diac software. These URLs are used to allow users to test the latest 4diac developments and provide feedback. However, nightly builds are not intended as stable versions and should therefore not be used in production environments. The nightly build update URL for 4diac is not always publicly accessible.
 
-
 #### Eclipse 4diac Nightly Download Page
 
 [https://download.eclipse.org/4diac/updates/nightly/](https://download.eclipse.org/4diac/updates/nightly/)
@@ -167,7 +157,6 @@ Nightly builds are automatically generated daily versions of software that inclu
 ---
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

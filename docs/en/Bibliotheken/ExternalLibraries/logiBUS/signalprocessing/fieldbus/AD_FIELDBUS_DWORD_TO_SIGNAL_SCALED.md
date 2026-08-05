@@ -1,12 +1,8 @@
 # AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED
-
 ![AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED](./AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block `AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED` processes a digital fieldbus signal (DWORD) into a scaled analog output value. It mirrors the input value to the output, provided the signal is valid, and applies linear scaling with an offset. The valid signal state information is synchronized via an edge-triggered flip-flop and provided as a separate output signal.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -51,7 +47,6 @@ This module has no direct data outputs. All output data is provided via the adap
 
 | VALID | AX (unidirectional) | Plug | Output adapter for signal validity (TRUE = valid) |
 
-
 ## Functionality
 
 The module implements the following signal chain:
@@ -65,13 +60,9 @@ The module implements the following signal chain:
 The internal circuitry ensures that the validity status always corresponds to the last processed data value.
 
 ## Technical Features
-
 - **Scaling Order**: First, multiplication by `SCALE` (LREAL), then addition by `OFFSET` (DINT). This allows the offset to be specified in units of the scaled range.
-
 - **Edge Synchronization**: The validity signal is output via a D flip-flop using edge triggering, so there are no metastable states on the output side.
-
 - **Initial Value Default**: `SCALE` is predefined to 1.0, `OFFSET` to 0. In the unscaled case, the output thus directly corresponds to the input.
-
 - **Adapter Structure**: The inputs and outputs are implemented as adapters, enabling type-safe connections with other devices from the same adapter family (AD, ALR, AX).
 
 ## State Overview
@@ -79,14 +70,9 @@ The internal circuitry ensures that the validity status always corresponds to th
 The device does not have its own explicit state diagram (ECC). All state logic resides in the internal core device `FIELDBUS_DWORD_TO_SIGNAL_SCALED` and the edge-triggered D flip-flop. This stores the last valid validity state. With each processing event, the flip-flop is clocked and outputs the current validity value.
 
 ## Application Scenarios
-
 - **Fieldbus Data Acquisition**: A raw DWORD value (e.g., from an analog-to-digital converter or encoder) is converted using physical factors (scaling) and offset and transmitted as an analog value to a controller.
-
 - **Signal Validation with Storage**: When the fieldbus provides a validity flag (e.g., "Data Updated"), this can be evaluated via the validity adapter level. The flip-flop ensures that the validity signal remains stable until the next update.
-
 - **Configurable Scaling**: By externally specifying `SCALE` and `OFFSET`, the same function block can be used for different sensor ranges without modifying the function block itself.
-
-
 - ## Comparison with Similar Function Blocks
 
 Compared to a simple `MOVE` or `SCALE` function block, this FB offers integrated validation handling and a clean separation between data and event adapters. Similar function blocks (e.g., `FIELD_DWORD_TO_ANALOG`) often lack separate signal validity output or edge-synchronous storage. The combination of core function block and D flip-flop used here is a proven solution for safety-critical applications where the validity of a data value must be reliably maintained.

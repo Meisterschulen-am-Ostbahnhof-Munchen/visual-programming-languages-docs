@@ -1,13 +1,8 @@
 # GetVtcStatus
-
 ![GetVtcStatus](./GetVtcStatus.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **GetVtcStatus** is a Service Interface Block (SIFB) that encapsulates the function `IsoVtcGetStatusInfo()` from the ISOBUS driver. It enables the reading of various status information from a VT client and the connected Virtual Terminal (VT). The block was developed according to the ISO 11783-6 standard and is suitable for integration into ISOBUS applications.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -64,25 +59,18 @@ No adapters available.
 
 The module is activated by the event `INIT`. The parameter `QI` must be set to TRUE for the service to start. The VT client instance to be used is specified via `u8Instance`. After successful initialization, the event `INITO` is sent with the output data `QO` and `STATUS`.
 
-
 2. **Reading Status Information**
 
 The event `REQ` initiates a specific query. The desired status value must be selected from the enumeration `ISOVT_STATUS_e` using `eVTInfo` (see the list in the technical specifications). Internally, the function block calls the function `IsoVtcGetStatusInfo()` and sends the event `CNF` upon completion. The outputs contain:
 
 - `QO` = TRUE if the read operation was successful,
-
 - `STATUS` = description of the result,
-
 - `wValue` = the retrieved numerical value.
-
-
 
 ``` If `QI` is FALSE during the REQ call, the service is not executed and a corresponding error status is returned.
 
 ## Technical Features
-
 - The function block is implemented as a **Service Interface Block** (SIFB) and accesses the system-level ISOBUS driver library.
-
 - The possible values for `eVTInfo` (ISOVT_STATUS_e) are:
 
 | Value | Label | Description |
@@ -147,13 +135,9 @@ The function block implements simple state-driven logic:
 4. **Error Handling** – If an internal error occurs during a REQ, `CNF` is output with QO=FALSE and an error description in `STATUS`.
 
 ## Application Scenarios
-
 - **Diagnostics and Monitoring** of an ISOBUS system: Reading the current VT address, graphics type, or boot time.
-
 - **Detection of VT Availability** by querying `VT_ALIVE` and `VT_DOWNLOAD_FINISHED`.
-
 - **Control of the softkey configuration** by querying the number of physical and virtual softkeys (`VT_PHYSICALSOFTKEYS`, `VT_VIRTUALSOFTKEYS`).
-
 - **Comparison of the working set version** between different components using `VT_VERSIONNR` and `WS_VERSION_NR`.
 
 ## Comparison with similar modules

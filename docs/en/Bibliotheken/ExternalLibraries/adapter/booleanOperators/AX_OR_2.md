@@ -1,12 +1,8 @@
 # AX_OR_2
-
 <img width="963" height="265" alt="image" src="https://github.com/user-attachments/assets/3c1d3b81-2420-46cc-b7cf-fc6828db919c" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_OR_2 function block is a generic function block for calculating Boolean OR operations. It processes two input signals and outputs the logical OR result. This function block is specifically designed for use in automation systems.
-
-
 ![AX_OR_2](AX_OR_2.svg)
 
 ## Interface Structure
@@ -42,9 +38,7 @@ The AX_OR_2 function block performs a logical OR operation between the two input
 ## State Overview
 Since it is a combinational logic block, AX_OR_2 has no internal state. The output is determined solely by the current input values.
 
-
 ## Application Scenarios
-
 - Safety circuits with redundant sensors
 - Parallel control commands
 - Monitoring systems with multiple input signals
@@ -54,11 +48,9 @@ Since it is a combinational logic block, AX_OR_2 has no internal state. The outp
 
 Compared to other OR components, AX_OR_2 is distinguished by its adapter-based interface, which enables flexible integration into various system architectures. The unidirectional adapters ensure a clear signal flow direction.
 
-
 Comparison with [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
 
 ## 🛠️ Related exercises
-
 * [Uebung_002a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a3_AX.md)
 * [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
 * [Uebung_035a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
@@ -73,7 +65,6 @@ The AX_OR_2 function block offers a reliable A simple solution for Boolean OR op
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

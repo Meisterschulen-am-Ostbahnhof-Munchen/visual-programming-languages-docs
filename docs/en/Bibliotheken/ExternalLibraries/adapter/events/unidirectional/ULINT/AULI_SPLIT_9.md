@@ -1,12 +1,8 @@
 # AULI_SPLIT_9
-
 ![AULI_SPLIT_9](./AULI_SPLIT_9.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AULI_SPLIT_9** serves as a distributor for the unidirectional AULI adapter. It receives an incoming AULI data set via the **IN** socket and forwards it unchanged to all nine output adapters (**OUT1** to **OUT9**). The block is designed as a generic splitter and is suitable for applications where an AULI signal needs to be split among multiple devices.
-
 ## Interface Structure
 
 ### Event Inputs
@@ -48,30 +44,21 @@ Data output occurs exclusively via the **OUT1** to **OUT9** adapters.
 The module operates as a pure 1:9 distribution stage. As soon as a data set is present at the **IN** socket, this data set is copied unchanged to all nine plugs **OUT1** to **OUT9**. Since there are no event-driven activations or processing steps, the pass-through occurs implicitly through the runtime environment as soon as the input data record changes. The function block has no internal logic or state memory.
 
 ## Technical Features
-
 - **Generic Structure**: The function block is registered under the generic class name `GEN_AULI_SPLIT` and can be adapted depending on the runtime environment configuration.
-
 - **Unidirectional Data Flow**: All involved adapters are of type `adapter::types::unidirectional::AULI`, which defines a clear data flow direction – from the socket IN to the plugs. No feedback is intended.
-
 - **No State Maintenance**: The function block is stateless and requires no initialization or special control.
 
 ## State Overview
 
 The function block does not have an explicit state machine. It is always in active pass-through mode. The only "state" is the identity of the input data record being passed through.
 
-
 ## Application Scenarios
-
 - **Multiplication of a control/measurement signal** in automation technology, e.g., in agricultural or farm engineering (the origin of the function block indicates corresponding environments).
-
 - **Division of an AULI-based protocol channel** across multiple parallel receivers without requiring active copying or signal amplification.
-
 - **Simple star distribution** within a 4diac application when multiple subsequent function blocks require the same AULI data set.
 
 ## Comparison with Similar Function Blocks
-
 - **AULI_SPLIT_4 / AULI_SPLIT_8**: These variants differ only in the number of output channels. The function block described here offers a particularly high distribution density with 9 outputs.
-
 - **Generic splitter function blocks for other adapter types**: In principle, analog splitters exist for... B. `AULI` adapter with a lower output count. All of them share stateless 1:n duplication.
 
 ## Conclusion
@@ -81,8 +68,4 @@ The **AULI_SPLIT_9** is a simple yet effective distribution block for the unidir
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

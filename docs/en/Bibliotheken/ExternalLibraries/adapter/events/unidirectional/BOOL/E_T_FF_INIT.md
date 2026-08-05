@@ -1,11 +1,8 @@
 # E_T_FF_INIT
-
 ![E_T_FF_INIT](./E_T_FF_INIT.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **E_T_FF_INIT** implements a **toggle flip-flop** with integrated initialization logic. It combines the classic behavior of a T flip-flop (switching the output *Q* on each *CLK* event) with targeted output setting during initialization. This block is particularly suitable for applications where a defined initial state is required after startup before normal toggle operation begins.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -56,42 +53,30 @@ The module operates as a **state-controlled machine (ECC)** with five states: `S
 1. **Initialization (state *Init*)**:
 
 - Triggered by the **INIT** event, provided *QI* = TRUE.
-
 - The algorithm `initialize` sets *QO* to the value of *QI* (here TRUE).
-
 - The transition from *Init* depends on the value of *Q_INIT*:
-
 - *Q_INIT* = TRUE → transition to the **SET** state (*Q* becomes TRUE).
-
 - *Q_INIT* = FALSE → Transition to the **RESET** state (*Q* remains FALSE).
-
 - After the transition, the **INITO** event is output.
 
 2. **De-Initialization (State *DeInit*)**:
 
 - Triggered by an **INIT** event with *QI* = FALSE (from the *SET* or *RESET* states).
-
 - The algorithm `deInitialize` sets *QO* to FALSE.
-
 - Subsequently, the transition back to the **START** start state occurs, and the **INITO** event is output.
 
 3. **Normal Toggle Operation**:
 
 - In the **SET** (*Q* = TRUE) and **RESET** (*Q* = FALSE) states.
-
 - Each **CLK** event toggles between the two states.
-
 - The algorithms `SET` and `RESET` set *QO* to the current value of *QI* and, if *QI* = TRUE, the output *Q* to the corresponding state (TRUE or FALSE).
-
 - After each toggle, the event **EO** is output.
 
 **Important**: The toggle function is only active if *QI* = TRUE. If *QI* = FALSE, *Q* remains unchanged (the IF condition in the algorithms prevents the change).
 
 ## Technical Features
 - **Combined Init/Toggle Logic**: This function block allows the output *Q* to be set to a defined value during initialization (*Q_INIT*). This distinguishes it from a simple T flip-flop, which usually starts in the RESET state.
-
 - **Enable via QI**: The variable *QI* acts as a global enable. Switching occurs only when *QI* = TRUE at *CLK*. When *QI* = FALSE, INIT events can still be processed, but toggle operation is disabled.
-
 - **Output Qualifier QO**: *QO* reflects the enable state – it is set to TRUE upon successful initialization and to FALSE upon de-initialization. This allows for easy monitoring of the block status.
 
 ## State Overview
@@ -109,8 +94,6 @@ The module operates as a **state-controlled machine (ECC)** with five states: `S
 | SET | Normal toggle state: *Q* = TRUE. | Init → SET (when Q_INIT = TRUE) <br> RESET → SET (when CLK) | `SET` | EO |
 
 | RESET | Normal toggle state: *Q* = FALSE. | Init → RESET (when Q_INIT = FALSE) <br>SET → RESET (when CLK) | `RESET` | EO |
-
-
 
 ``` **Transition conditions** (simplified):  
 - `START → Init` : `INIT & (QI = TRUE)`  
@@ -134,7 +117,6 @@ A safety signal *QI* enables the block. Toggle operations may only be performed 
 
 In a sequence control, *E_T_FF_INIT* is used as a flip-flop for a step. Initialization allows the step to be set to either active or inactive immediately after starting, without a separate set or reset pulse.
 
-
 ```## Comparison with Similar Components
 
 | Component | Special Feature |
@@ -150,7 +132,6 @@ In a sequence control, *E_T_FF_INIT* is used as a flip-flop for a step. Initiali
 **E_T_FF_INIT** | Combines toggle functionality with a freely selectable initial state and enable via *QI*. |
 
 Unlike *E_T_FF*, *E_T_FF_INIT* can set the output to TRUE during initialization and provides explicit enable for toggle operation via *QI*.
-
 
 ## Conclusion
 

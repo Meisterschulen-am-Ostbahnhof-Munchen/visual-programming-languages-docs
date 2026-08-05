@@ -1,23 +1,16 @@
 # SYS_ONTIME
-
 <img width="1095" height="143" alt="SYS_ONTIME" src="https://github.com/user-attachments/assets/154ba5c7-4a31-4dc3-8dbc-c6a731fdf46b" />
-
 * * * * * * * * * *
 ## Introduction
 The SYS_ONTIME function block serves as a service interface for communication between an application and a resource. It enables the transfer of operating time data in decimal minutes (0.01 hours) from the resource to the application.
-
 ![SYS_ONTIME](SYS_ONTIME.svg)
-
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT` (Type: EInit): Initializes the service. Triggered by the application.
 
 ### **Event Outputs**
-
 - `INITO` (Type: EInit): Confirms the initialization. Combined with the data output `ONTIME`.
-
 - `IND` (Type: Event): Indication from the resource. Combined with the data output `ONTIME`.
 
 ### **Data Inputs**
@@ -34,7 +27,6 @@ The SYS_ONTIME function block enables the transfer of operating time data from a
 
 ## Technical Features
 - The function block supports various service sequences for initialization, request acknowledgment, and error handling.
-
 - The operating time is transmitted in decimal minutes (0.01 hours).
 
 ## Time Base Configuration
@@ -60,7 +52,6 @@ The block operates with an industrial time base (0.6-minute increments) instead 
 | 150 | 90 min (1.5 h) |
 
 ### Technical Background:
-
 - This time standard originates from process automation
 - Enables integer representation of typical time intervals
 - Particularly advantageous for batch processes and shift planning
@@ -75,16 +66,13 @@ The block operates with an industrial time base (0.6-minute increments) instead 
 3. **Error Handling**: Errors are reported via `IND-` with a status code.
 
 ## Application Scenarios
-
 - Monitoring the operating time of machines and systems.
-
 - Integration into maintenance and diagnostic systems.
 
 ## ⚖️ Comparison with Similar Function Blocks
 Compared to other Service Interface function blocks, SYS_ONTIME offers specialized functionality for transmitting operating time data. Other blocks might transmit more general data or other specific information.
 
 ## 🛠️ Related Exercises
-
 * [Exercise_140](../../../../Uebungen/test_B/Uebungen_doc/Uebung_140.md)]
 
 ## Conclusion

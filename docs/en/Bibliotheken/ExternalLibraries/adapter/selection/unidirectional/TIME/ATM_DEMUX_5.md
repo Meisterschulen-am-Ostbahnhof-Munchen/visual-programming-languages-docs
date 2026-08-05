@@ -1,12 +1,8 @@
 # ATM_DEMUX_5
-
 ![ATM_DEMUX_5](./ATM_DEMUX_5.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **ATM_DEMUX_5** is a generic demultiplexer IC for five output channels. It forwards data received via a unidirectional ATM adapter to one of the five outputs, which is selected by an index **K**. The IC thus implements a 1-to-N distribution (N=5) based on the ATM adapter type.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -16,7 +12,6 @@ The **ATM_DEMUX_5** is a generic demultiplexer IC for five output channels. It f
 | :------- | :----------- |
 
 | `REQ` | Sets the index **K** and triggers the forwarding. The index value is updated at the time of the event. |
-
 
 ### **Event Outputs**
 
@@ -66,11 +61,9 @@ Plug (Output 4) | `OUT4` | `adapter::types::unidirectional::ATM` | Fourth output
 
 4. After successful forwarding, the event `CNF` is triggered.
 
-
 Valid values for **K** are 1 to 5. For values outside this range or undefined indices (e.g., 0), the behavior may be undefined – in this case, the function block will not perform any action or send `CNF`. The maximum number of outputs is fixed at five.
 
 ## Technical Features
-
 - **Generic Design**
 
 The function block is declared as a generic demultiplexer (`GEN_ATM_DEMUX`). This allows for easy adjustment of the number of channels or the adapter type used by re-instantiating with different parameters.
@@ -78,7 +71,6 @@ The function block is declared as a generic demultiplexer (`GEN_ATM_DEMUX`). Thi
 - **Unidirectional ATM Adapters**
 
 Both the input and output adapters are of type `adapter::types::unidirectional::ATM`. Communication is unidirectional (from input to output), which is sufficient for typical distribution tasks.
-
 
 - **Index as UINT**
 
@@ -89,18 +81,13 @@ The index **K** is defined as an unsigned 16-bit value, resulting in 65,536 poss
 The component does not have an explicit state machine. Its behavior is purely event-driven:
 
 - **Idle State**: Waiting for `REQ`.
-
 - **Processing State**: Upon arrival of `REQ`, the index is evaluated and the data is forwarded. Immediately afterward, `CNF` is sent. The component returns to the idle state.
 
 There is no persistent memory or internal state.
 
-
 ## Application Scenarios
-
 - **Distributing ATM data streams** in industrial communication networks where a data channel needs to be split across up to five target devices.
-
 - **Routing in automation systems** – for example, to control multiple identical actuators via a common control channel.
-
 - **Test bench and testing environments** where a signal needs to be applied sequentially to different measurement points.
 
 ## Comparison with Similar Components

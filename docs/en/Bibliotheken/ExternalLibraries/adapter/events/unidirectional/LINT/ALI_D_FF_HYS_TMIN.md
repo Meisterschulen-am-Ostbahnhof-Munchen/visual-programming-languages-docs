@@ -1,11 +1,8 @@
 # ALI_D_FF_HYS_TMIN
-
 ![ALI_D_FF_HYS_TMIN](./ALI_D_FF_HYS_TMIN.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_D_FF_HYS_TMIN** implements a data-driven D flip-flop with an adjustable hysteresis width (threshold band) and a minimum waiting time between two consecutive output events. It is used for debouncing and stabilizing signal transitions in industrial automation, particularly when a signal should only be considered valid after it has left a defined tolerance range and a minimum time has elapsed since the last valid edge.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -43,10 +40,7 @@ The function block outputs its status via the adapter **Q** (see Adapters).
 
 | Type | Name | Direction | Comment |
 
-
 | Type | Name | Direction | Comment |
-
-``` |--------|------|----------|-----------|
 
 | `adapter::types::unidirectional::ALI` | I | Socket | Input adapter – provides the signal to be received (event and data value). |
 
@@ -63,20 +57,14 @@ The function block **ALI_D_FF_HYS_TMIN** is implemented as a composition and int
 
 3. **Minimum Time Control** – After a valid value is acquired, output via plug **Q** (event **Q.E1** and value **Q.D1**) is only enabled after at least **Tmin** has elapsed since the last output event. This suppresses unwanted rapid signal changes.
 
-
 2. **Signal Acquisition** – After a valid value is acquired, output via plug **Q** (event **Q.E1** and value **Q.D1**) is only enabled after at least **Tmin** has elapsed since the last output event. This suppresses unwanted rapid signal changes.
-
 
 ``` 4. **Output** – Once the minimum time has elapsed, the new value is output via the output adapter **Q**. The function block then waits for the next input event.
 
 ## Technical Features
-
 - **Hysteresis Data Width** – The hysteresis is defined as a LINT (64-bit integer); this allows for the processing of very large value ranges.
-
 - **Time Parameters** – The minimum inter-disposal time **Tmin** is specified as IEC-61499-`TIME` (e.g., `T#10ms`).
-
 - **Adapter-Based Coupling** – The use of the adapters `ALI` allows loose coupling between signal-generating and signal-processing function blocks. The socket **I** receives the data, and the plug **Q** provides it.
-
 - **Type of Dependency** – The function block is based on the internal FB `E_D_FF_ANY_HYS_TMIN`, which implements the actual hysteresis and timing logic. The outer function block merely encapsulates the adapter interface.
 
 ## State Overview
@@ -89,7 +77,6 @@ The function block goes through the following states:
 3. **SAMPLE** – An event has arrived; the data value is checked for exceeding the hysteresis.
 
 - *Hysteresis violated:* The value is ignored, returning to **IDLE**.
-
 - *Hysteresis satisfied:* Transition to state **WAIT_TMIN**.
 
 4. **WAIT_TMIN** – The new value is saved; release is delayed by **Tmin**.
@@ -99,11 +86,8 @@ The function block goes through the following states:
 A formal state machine is not visible via the XML interface, but it can be deduced from the behavior of the internal flip-flop.
 
 ## Application Scenarios
-
 - **Sensor Value Smoothing** – A digital sensor (e.g., rotary encoder) delivers values that fluctuate briefly due to vibrations or noise. Hysteresis prevents small fluctuations from being interpreted as valid changes.
-
 - **Button Debouncing** – For mechanical contacts, **Tmin** ensures that bouncing events within a specific time do not result in multiple output events.
-
 - **Measurement Acquisition with Dead Time** – In dosing or positioning systems, the minimum time between two valid measurements must be maintained to avoid overloading the system dynamics.
 
 ## Comparison with Similar Components
@@ -119,7 +103,6 @@ A formal state machine is not visible via the XML interface, but it can be deduc
 | `ALI_D_FF_HYS_TMIN` | Yes | Yes | Yes (adapter usage) |
 
 The function block described here combines the advantages of hysteresis and minimum time intervals and, thanks to its adapter interface, is particularly well-suited for a modular, event-driven architecture according to IEC 61499.
-
 
 ## Conclusion
 

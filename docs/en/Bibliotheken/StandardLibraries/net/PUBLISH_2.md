@@ -1,43 +1,28 @@
 # PUBLISH_2
-
 <img width="1179" height="286" alt="image" src="https://github.com/user-attachments/assets/ae23ed15-e54c-43ad-8379-07e0e8126f56" />
-
 * * * * * * * * * *
-
 ## Introduction
 The PUBLISH_2 function block is used to send data to one or more SUBSCRIBE_2 blocks. It enables unacknowledged communication between different components in a distributed system.
-
-
 ![PUBLISH_2](PUBLISH_2.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Initialization event with the associated data QI and ID
-
 - **REQ**: Request event to send data with the associated data QI, SD_1, and SD_2
 
 ### **Event Outputs**
-
 - **INITO**: Confirmation of initialization with the associated data QO and STATUS
-
 - **CNF**: Confirmation that data has been sent, with the associated data QO and STATUS
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Qualifier for initialization and operation
-
 - **ID** (WSTRING): Identifier for communication
-
 - **SD_1** (ANY): First data value to be sent (any data type)
-
 - **SD_2** (ANY): Second data value to be sent (any data type)
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Qualifier for the output state
-
 - **STATUS** (WSTRING): Status information about the operating state
 
 ### **Adapters**
@@ -45,7 +30,6 @@ No adapters available.
 
 ## Functionality
 The PUBLISH_2 block initializes itself via the INIT event and then sends data via the REQ event. The data SD_1 and SD_2 are distributed to all connected SUBSCRIBE_2 blocks. Communication is unacknowledged, meaning that no response is expected from the receivers.
-
 
 ## Technical Features
 - Supports any data type for SD_1 and SD_2
@@ -67,7 +51,6 @@ The PUBLISH_2 block initializes itself via the INIT event and then sends data vi
 
 ## ⚖️ Comparison with Similar Blocks
 Compared to acknowledged communication blocks, PUBLISH_2 offers higher performance but lower reliability. Its support for any data type makes it more flexible than type-specific communication blocks.
-
 
 ## Conclusion
 

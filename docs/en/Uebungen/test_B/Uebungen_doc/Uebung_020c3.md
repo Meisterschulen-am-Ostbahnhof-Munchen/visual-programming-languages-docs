@@ -1,13 +1,8 @@
 # Exercise_020c3: DigitalInput_I1 to DigitalOutput_Q1; FB_TON; Power-On Delay
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_020c3`. It uses the classic IEC 61131-3 timer block `FB_TON`, which requires regular triggering (clock).
-
 ![Uebung_020c3_network](./Uebung_020c3_network.svg)
-
 **Important note: This block only functions correctly if it is called cyclically.**
-
 ----
 
 ## Objective of the exercise
@@ -21,11 +16,8 @@ The objective is to implement a power-on delay using classic PLC behavior (inclu
 [cite_start]In `Uebung_020c3.SUB`, a clock is used to drive the classic timer[cite: 1].
 
 ### Function Blocks (FBs)
-
 * **`FB_TON`**: The classic TON block.
-
 * **`E_CYCLE`**: A timer that sends an event to the `REQ` input of the timer every 500 ms.
-
 
 -----
 
@@ -42,6 +34,5 @@ For the `FB_TON` to function correctly, it must be "queried."
 4. Only during these queries does the timer check how much time has elapsed.
 
 5. As soon as 5 seconds are reached, the output `Q` switches to TRUE.
-
 
 This method is necessary when integrating building blocks from the 61131 world into the 61499 event world.

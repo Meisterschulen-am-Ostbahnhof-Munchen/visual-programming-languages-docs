@@ -1,12 +1,8 @@
 # AX_OR_5
-
 <img width="963" height="369" alt="image" src="https://github.com/user-attachments/assets/7be25f5c-a69e-444a-9f06-b216c3290d77" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_OR_5 function block is a generic block for calculating Boolean OR operations with five inputs. It is used for the logical processing of signals in automation systems and allows the combination of multiple input signals into a single output signal.
-
 ![AX_OR_5](AX_OR_5.svg)
 
 ## Interface Structure
@@ -23,7 +19,6 @@ No direct data inputs available.
 ### **Data Outputs**
 No direct data outputs available.
 
-
 ### **Adapters**
 **Plug Adapter:**
 
@@ -32,18 +27,13 @@ No direct data outputs available.
 **Socket Adapter:**
 
 - **IN1**: Unidirectional adapter for OR input 1
-
 - **IN2**: Unidirectional adapter for OR input 2
-
 - **IN3**: Unidirectional adapter for OR input 3
-
 - **IN4**: Unidirectional adapter for OR input 4
-
 - **IN5**: Unidirectional adapter for OR input 5
 
 ## Functionality
 This function block calculates the logical OR operation of the five input signals. The output signal is TRUE if at least one of the five inputs is TRUE. If all inputs are FALSE, the output signal is also FALSE. Processing is performed via adapter interfaces, with all inputs and outputs configured unidirectionally.
-
 
 ## Technical Features
 - Generic function block with five inputs
@@ -62,7 +52,6 @@ The block has no internal state and operates stateless. The output is continuous
 
 ## ⚖️ Comparison with Similar Blocks
 Compared to standard OR blocks with fewer inputs, AX_OR_5 offers the ability to process five signals simultaneously, simplifying wiring and saving space. Compared to cascaded OR gates, this block provides an integrated solution.
-
 
 Comparison with [OR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_5.md)]
 

@@ -1,12 +1,8 @@
 # AUDI_TO_ALI
-
 ![AUDI_TO_ALI](./AUDI_TO_ALI.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **AUDI_TO_ALI** function block is a composite module that bridges an **AUDI** adapter (of type *UDINT*) and an **ALI** adapter (of type *LINT*). It converts incoming UDINT values to LINT values using a standardized conversion function and forwards them to the output adapter. This module is typically used in applications that need to connect different address or integer types within a 4diac adapter concept.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -51,7 +47,6 @@ The **AUDI_TO_ALI** function block is a composite module that bridges an **AUDI*
 
 | **ALI** (unidirectional) | `ALI_OUT` | Plug (Output) | LINT data adapter that outputs the converted value based on event E1 and date D1. |
 
-
 ## Functionality
 
 The module functions as a pure **type conversion bridge** for adapters:
@@ -65,15 +60,10 @@ The module functions as a pure **type conversion bridge** for adapters:
 The entire processing is **event-driven** and takes place within a single execution step (without any additional delay).
 
 ## Technical Features
-
 - **Composite Block** – it contains no logic of its own but delegates the conversion entirely to the IEC 61131 block `F_UDINT_TO_LINT`.
-
 - **Adapter-oriented interface** – All inputs and outputs are handled via standardized unidirectional adapters (`AUDI` and `ALI`), enabling easy integration into existing adapter networks.
-
 - **License & Copyright** – This block is licensed under the **Eclipse Public License 2.0** and was developed by **HR Agrartechnik GmbH** (as of 2026).
-
 - **Type safety** – Conversion from UDINT (unsigned 32-bit) to LINT (signed 64-bit) is lossless, as the value is simply sign-extended.
-
 - **Package name** – In the CompilerInfo, the block is listed as `adapter::conversion::unidirectional`.
 
 ## State overview
@@ -81,13 +71,9 @@ The entire processing is **event-driven** and takes place within a single execut
 As a composite block, `AUDI_TO_ALI` does not have its own states. The state logic is contained within the integrated `F_UDINT_TO_LINT` block, which transitions to a processing state after each `REQ` event and acknowledges this with `CNF`.
 
 ## Application Scenarios
-
 - **Transition between different automation protocols** – when a system delivers UDINT values via an AUDI adapter, but the target system expects LINT values via an ALI adapter.
-
 - **Data adaptation in adapter hierarchies** – redirection of 32-bit counter values (e.g., speed, pulse counter) to a 64-bit bus.
-
 - **Migration** – legacy systems with UDINT sections can be connected to new 64-bit interfaces without changing the adapter structure.
-
 - **Test Environments** – Simple loop-through of type conversion between two adapters, without separate conversion modules in the network.
 
 ## Comparison with similar modules
@@ -102,18 +88,15 @@ As a composite block, `AUDI_TO_ALI` does not have its own states. The state logi
 
 | `ALI_TO_AUDI` (hypothetical) | Adapter converter | Would convert LINT backwards to UDINT (potentially lossy). |
 
-
 The **main difference** compared to directly using `F_UDINT_TO_LINT` is the seamless integration into adapter networks and the avoidance of additional lines for event and data connections.
 
 ## Conclusion
 
 The **AUDI_TO_ALI** function block is a practical adapter converter that bridges the gap between a UDINT-based AUDI adapter and a LINT-based ALI adapter. By internally using the standardized IEC 61131 converter `F_UDINT_TO_LINT`, the conversion is efficient and type-safe. The block is particularly suitable for modular architectures where different address widths are encountered and simplifies the reuse of adapter interfaces in heterogeneous automation environments.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

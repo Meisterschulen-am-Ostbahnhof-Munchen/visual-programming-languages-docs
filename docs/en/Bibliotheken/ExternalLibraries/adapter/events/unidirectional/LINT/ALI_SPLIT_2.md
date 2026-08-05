@@ -1,12 +1,8 @@
 # ALI_SPLIT_2
-
 ![ALI_SPLIT_2](./ALI_SPLIT_2.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **ALI_SPLIT_2** function block serves as a generic distributor for a unidirectional ALI (Application Layer Interface) adapter. It copies all incoming data and events from a single input socket to two output plugs. This allows a signal or data source to be passed on to two independent receivers.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -20,7 +16,6 @@ No event outputs are available. Event control is handled via the adapter connect
 ### **Data Inputs**
 
 No dedicated data inputs. All data is provided via the incoming adapter **IN**.
-
 
 ### ### **Data Outputs**
 
@@ -45,11 +40,8 @@ All adapters are of type `adapter::types::unidirectional::ALI`.
 The module implements a 1:2 split at the adapter level. As soon as data or events are present at socket **IN**, they are passed on unchanged and simultaneously to both plugs **OUT1** and **OUT2**. No buffering or processing of the data takes place – the module operates purely as a signal distributor.
 
 ## Technical Features
-
 - **Generic Module**: The attribute `eclipse4diac::core::GenericClassName` marks the module as a generic instance `GEN_ALI_SPLIT`. It can therefore be used with different ALI types or parameters, as long as the underlying adapter definition is compatible.
-
 - **No State Management**: The module has no internal states or variables – its functionality is purely combinatorial.
-
 - **Unidirectionality**: The adapters are defined as unidirectional, meaning data flows only from the input to the outputs; reverse communication is not supported.
 
 ## State Overview
@@ -57,13 +49,9 @@ The module implements a 1:2 split at the adapter level. As soon as data or event
 Since the module has no event inputs/outputs or internal states, there is no state machine. Data transmission is continuous and instantaneous.
 
 ## Application Scenarios
-
 - **Distributing a Sensor Signal**: An analog or digital ALI sensor is connected to two control units that need to access the measurement data independently.
-
 - **Parallel Processing**: A data stream should be processed simultaneously by two different function blocks without requiring manual branching in the application.
-
 - **Redundancy**: An application requires duplicate ALI communication to increase reliability.
-
 
 ## Comparison with Similar Function Blocks
 
@@ -86,7 +74,6 @@ Since the module has no event inputs/outputs or internal states, there is no sta
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

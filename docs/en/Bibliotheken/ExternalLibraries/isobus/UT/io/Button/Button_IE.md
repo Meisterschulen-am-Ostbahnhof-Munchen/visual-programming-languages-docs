@@ -1,13 +1,8 @@
 # Button_IE
-
 <img width="1385" height="216" alt="image" src="https://github.com/user-attachments/assets/95422805-a0b9-47d0-9696-02c3ede5c9cf" />
-
 * * * * * * * * * *
-
 ## Introduction
 The Button_IE function block is an input service interface function block for event input data. It serves as an interface for button events in control systems and enables the processing of various button activities such as pressing, releasing, or multiple clicks.
-
-
 ![Button_IE](Button_IE.svg)
 
 ## Interface Structure
@@ -47,7 +42,6 @@ The Button_IE function block processes button events via the ISOBUS-UT protocol.
 The function block has an initialization state (INIT/INITO) and operational states for service requests (REQ/CNF), as well as asynchronous event indications (IND). The exact state machine depends on the implementation.
 
 ## Application Scenarios
-
 - Agricultural control systems with ISOBUS compatibility
 - Operator panels with push-button inputs
 - Machine controls with event-based inputs
@@ -57,9 +51,7 @@ The function block has an initialization state (INIT/INITO) and operational stat
 
 Compared to simple digital input blocks, Button_IE offers advanced functionality for push-button-specific events such as multiple clicks and distinguishes between different activation states. Its ISOBUS integration makes it particularly suitable for agricultural applications.
 
-
 ## 🛠️ Related exercises
-
 * [Uebung_010b7](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b7.md)
 * [Uebung_010b7_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b7_AX.md)
 * [Uebung_010b8](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b8.md)

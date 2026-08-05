@@ -1,13 +1,8 @@
 # DataPanel_MI_QX
-
 <img width="1373" height="208" alt="image" src="https://github.com/user-attachments/assets/8a1255b9-89e3-4fc4-bcc6-e88ae8562622" />
-
 * * * * * * * * * *
-
 ## Introduction
 The DataPanel_MI_QX is a Service Interface Function Block for outputting Boolean data to a resource. This block serves as an interface between the control logic and the physical outputs of a DataPanel MI system and enables the configuration and control of digital outputs.
-
-
 ``` ![DataPanel_MI_QX](DataPanel_MI_QX.svg)
 
 ## Interface Structure
@@ -25,13 +20,10 @@ The DataPanel_MI_QX is a Service Interface Function Block for outputting Boolean
 - **PARAMS** (STRING): Service Parameters
 - **OUT** (BOOL): Output Data for Resource
 - **u8SAMember** (USINT): Node SA 224..239, Initial Value: MI::MI_00
-
 - **Output** (DataPanel_MI_DO_S): Identifies the output (DigitalOutput_1A..8B and Input_Power_Port_5..8), Initial Value: Invalid
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Event Output Qualifier
-
 - **STATUS** (STRING): Service Status
 
 ### **Adapters**
@@ -39,7 +31,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The DataPanel_MI_QX function block manages communication with the digital outputs of a DataPanel MI system. During initialization (INIT event), the service parameters are configured and the hardware interface is set up. The REQ event triggers the output of Boolean data to the specified resource. The function block acknowledges both initialization and service operations via the corresponding output events.
-
 
 ## Technical Features
 - Supports the configuration of SA nodes in the 224-239 range
@@ -58,7 +49,6 @@ The Function Block goes through the following states:
 4. **Acknowledgement**: Sending CNF/INITO events with status information
 
 ## Application Scenarios
-
 - Control of digital outputs in industrial automation systems
 - Connection of DataPanel MI hardware components
 - Implementation of secure output protocols
@@ -74,9 +64,7 @@ Compared to simple digital output blocks, DataPanel_MI_QX offers advanced functi
 - Flexible output configuration via the output parameter
 
 ## 🛠️ Related Exercises
-
 * [Exercise_003b2_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b2_sub.md)]
-
 * [Exercise_010a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a4.md)]
 
 ## Conclusion

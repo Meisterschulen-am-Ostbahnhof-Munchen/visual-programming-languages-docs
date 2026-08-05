@@ -1,13 +1,8 @@
 # AW_W_TO_WORD
-
 ## Introduction
 The AW_W_TO_WORD function block is a composite function block used to convert the AW adapter format to a WORD value.
-
-
 ![AW_W_TO_WORD](AW_W_TO_WORD.svg)
-
 ## Interface Structure
-
 ### **Event Inputs**
 - No direct event inputs available
 

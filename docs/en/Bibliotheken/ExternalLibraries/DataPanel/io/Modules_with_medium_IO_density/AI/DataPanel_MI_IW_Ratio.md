@@ -1,13 +1,8 @@
 # DataPanel_MI_IW_Ratio
-
 ![DataPanel_MI_IW_Ratio](./DataPanel_MI_IW_Ratio.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **DataPanel_MI_IW_Ratio** is a service interface function block (SIFB) for acquiring analog input data with ratiometric conversion. It provides the interface to a sensor connected to a node (SA 224..239) whose measured value is output as a 16-bit word (WORD). This block is part of the library `DataPanel::io::MI::AI` and is typically used in automation technology, particularly in agricultural engineering.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -78,7 +73,6 @@ The function block is configured via the INIT event. The inputs `PARAMS`, `u8SAM
 
 The REQ event requests a new measurement from the sensor. The function block evaluates the hardware and returns the result via the CNF event at output `IN`. Here too, `QO` indicates the validity of the value.
 
-
 3. **Indication (IND)**:
 
 If the hardware supports asynchronous events (e.g., cyclic updates), the IND event is used to report the current measurement value without prompting.
@@ -86,38 +80,26 @@ If the hardware supports asynchronous events (e.g., cyclic updates), the IND eve
 The measurement value is output as a 16-bit word (WORD) in ratiometric format. This means that the digital value is directly proportional to the ratio of the measured voltage to the reference voltage.
 
 ## Technical Features
-
 - **Ratiometric Measurement**: The function block is specifically designed for ratiometric sensors where the output is proportional to the supply voltage. This minimizes measurement errors caused by voltage fluctuations.
-
 - **Configuration via constants**: The initial value of `u8SAMember` (`MI::MI_00`) and the data type `DataPanel_MI_AI_S` are derived from imported libraries (`DataPanel::io::MI::const::MI` and `DataPanel::io::MI::AI::DataPanel_MI_AI`). The valid address range for the node is between 224 and 239 (Node SA 224..239).
-
 - **Hysteresis**: Threshold hysteresis behavior can be implemented using `AnalogInput_hysteresis`; the exact effect depends on the underlying driver.
-
 - **TypeHash attribute**: The attribute `eclipse4diac::core::TypeHash` is used for unique type identification in the runtime system.
-
 
 ## State Overview
 
 Since the function block is implemented as a service interface function block, it has an internal state machine. The typical states are:
 
 - **IDLE**: Waiting for an INIT event.
-
 - **INIT**: Initialization is being executed (parameterization, hardware access).
-
 - **READY**: Initialization is complete, waiting for REQ or IND.
-
 - **REQ**: Processing a measurement request.
-
 - **IND**: Asynchronous indication is being processed.
 
 In case of an error, `QO = FALSE` is set and `STATUS` contains a corresponding error message.
 
 ## Application Scenarios
-
 - **Agricultural Machinery**: Acquisition of sensor values (e.g., fill levels, pressure, position) via the ratiometric input of a data panel.
-
 - **Industrial Automation**: Connection of analog sensors with voltage output (0…5V, 0…10V) that operate ratiometrically.
-
 - **Early Prototypes**: The module can be directly integrated into a controller from the 4diac IDE and tested with any parameters.
 
 ## Comparison with Similar Modules
@@ -141,5 +123,4 @@ The `DataPanel_MI_IW_Ratio` is a specialized service interface function block fo
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]

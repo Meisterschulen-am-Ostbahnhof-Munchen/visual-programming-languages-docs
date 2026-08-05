@@ -1,13 +1,8 @@
 # F_ACOS
-
 ![F_ACOS](https://user-images.githubusercontent.com/116869307/214144918-882d5a0f-6ab0-42bb-ad25-3ae5e10aade7.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The F_ACOS function block calculates the principal value of the arccosine of a numerical input. It implements the mathematical function for determining the angle whose cosine corresponds to the input value. The block belongs to the category of standard functions for numeric variables according to IEC 61131-3.
-
-
 * ![F_ACOS](F_ACOS.svg)
 
 ## Interface Structure
@@ -31,7 +26,6 @@ No adapter interfaces are available.
 Upon receipt of a REQ event, the F_ACOS block calculates the arccosine of the current IN value. The result is output to the OUT port, and a CNF event is simultaneously generated to signal the successful completion of the operation.
 
 The function calculates the prime value of the arccosine, which lies in the range from 0 to π (0° to 180°).
-
 
 ## Technical Features
 - Supports the ANY_REAL data type for maximum flexibility with numeric inputs

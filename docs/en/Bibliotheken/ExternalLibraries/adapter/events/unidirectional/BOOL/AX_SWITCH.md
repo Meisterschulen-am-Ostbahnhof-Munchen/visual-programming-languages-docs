@@ -1,40 +1,28 @@
 # AX_SWITCH
-
 <img width="1215" height="181" alt="image" src="https://github.com/user-attachments/assets/e3a4235c-ef25-4396-b440-3929cea8731a" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_SWITCH function block serves as a switching module (demultiplexer) for events based on a Boolean input value. It forwards incoming events to one of two possible outputs, depending on the state of the control signal.
-
-
 ![AX_SWITCH](AX_SWITCH.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - No direct event inputs - event input is handled via adapters
 
 ### **Event Outputs**
-
 - **EO0**: Output event that is activated when an event occurs at G=0
-
 - **EO1**: Output event that is activated when an event occurs at G=1
 
 ### **Data Inputs**
-
 - No direct data inputs - data is provided via adapters
 
 ### **Data Outputs**
-
 - No data outputs available
 
 ### **Adapters**
-
 - **G**: Adapter of type `adapter::types::unidirectional::AX`
-
 - Switches incoming events from EI to EO0 when G=0
-
 - Switches incoming events from EI to EO1 when G=1
 
 ## Functionality
@@ -57,11 +45,9 @@ The block has no internal states in the traditional sense. It operates purely ev
 ## ⚖️ Comparison with Similar Function Blocks
 Compared to the standard E_SWITCH block, AX_SWITCH offers an adapter-based interface, enabling better integration into adapter-based architectures. While E_SWITCH has direct inputs and outputs, AX_SWITCH communicates exclusively via adapters.
 
-
 Comparison with [E_SWITCH](../../../../../StandardLibraries/events/E_SWITCH.md)
 
 ## 🛠️ Related exercises
-
 * [Uebung_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
 * [Uebung_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
 * [Uebung_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)

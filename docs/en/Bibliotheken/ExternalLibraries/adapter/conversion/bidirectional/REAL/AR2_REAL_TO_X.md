@@ -1,12 +1,8 @@
 # AR2_REAL_TO_X
-
 ![AR2_REAL_TO_X](./AR2_REAL_TO_X.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block `AR2_REAL_TO_X` is a composite function block (FB) for converting a REAL value into an AR2 format. It encapsulates a bidirectional adapter of type `adapter::types::bidirectional::AR2` and acts as a transparent interface between a simple REAL variable and the more complex AR2 data type. The conversion logic resides entirely within the adapter, while the FB only handles signal and data transmission.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -63,21 +59,15 @@ The function block operates as a simple forwarding block:
 
 5. The value provided by the adapter at its data input `DI1` is transferred to the **data output `IN`** of the function block.
 
-
 The actual conversion (REAL ↔ AR2) takes place exclusively within the adapter – the function block itself does not perform any arithmetic operations.
 
 ## Technical Features
-
 - **Composite Block**: The functionality is implemented through the internal wiring of an external adapter type. The function block is therefore dependent on the implementation of the adapter `adapter::types::bidirectional::AR2`.
-
 - **Bidirectional Data Flow**: The variable names (`OUT` as input, `IN` as output) can be confusing. In reality, the data flows as follows:
-
 - REAL value → Adapter → AR2 object (forward)
-
 - AR2 object → Adapter → REAL value (reverse)
 
 The function block provides both directions via the event handlers `REQ` / `CNF`.
-
 
 - **No State Logic**: The function block (FB) does not have its own state machine – all processes are event-driven and direct.
 
@@ -91,15 +81,11 @@ Since the FB does not have an internal state machine, there is no classic state 
 4. Output of `CNF` and updated `IN`
 
 ## Application Scenarios
-
 - **Interface to External Systems**: When an external device or another function block expects data in AR2 format, but the user code works with REAL values.
-
 - **Data Preprocessing**: Integration into a chain of conversion blocks to convert REAL data into a specific binary or structured format (AR2).
-
 - **Testing and Simulation**: Used in test environments to verify adapter functionality without requiring in-depth knowledge of the adapter itself.
 
 ## Comparison with Similar Function Blocks
-
 - **AR2_REAL_TO_X vs. Simple Type Conversion (REAL_TO_INT etc.)**:
 
 Simple converters work directly with elementary data types. `AR2_REAL_TO_X`, on the other hand, uses an adapter that encapsulates a complex conversion (e.g., to an array or structure).
@@ -107,7 +93,6 @@ Simple converters work directly with elementary data types. `AR2_REAL_TO_X`, on 
 - **AR2_REAL_TO_X vs. Direct Adapter Use**:
 
 The function block simplifies handling by performing the signal wiring (event and data connections). The user only needs to instantiate the function block and connect it to their code.
-
 
 - **AR2_REAL_TO_X vs. CONVERT Adapter Blocks**:
 

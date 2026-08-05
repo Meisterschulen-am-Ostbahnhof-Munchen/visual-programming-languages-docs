@@ -1,13 +1,9 @@
 # Data Type Details: STRING
-
 ## Description
 The **STRING** data type represents a string consisting of 8-bit characters (usually ISO/IEC 10646-1 or ASCII).
-
 ## Normative Definition
 According to **DIN EN 61131-3** (Table 10, No. 16a):
-
 | Property | Value |
-
 | :--- | :--- |
 
 | **Bits** | 8 bits per character |
@@ -18,7 +14,6 @@ According to **DIN EN 61131-3** (Table 10, No. 16a):
 
 ## Literal Representation
 String literals are enclosed in **single quotation marks** (`'`).
-
 
 ### Special Characters (Escape Sequences)
 Special characters are introduced by a dollar sign (`$`):
@@ -50,7 +45,6 @@ Special characters are introduced by a dollar sign (`$`):
 - `'STRING#''Abc'''` (With explicit type prefix)
 
 ## 🛠️ Related exercises
-
 * [Uebung_012a_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
 * [Uebung_020c2_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
 * [Uebung_051](../../../Uebungen/test_B/Uebungen_doc/Uebung_051.md)

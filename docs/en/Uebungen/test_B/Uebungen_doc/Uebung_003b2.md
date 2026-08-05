@@ -1,17 +1,9 @@
 # Exercise_003b2: Wireless 16 Buttons to DataPanel 16
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_003b2`. This exercise demonstrates the system's scalability by mapping 15 buttons of a wireless remote control to 15 digital outputs of a DataPanel.
-
 ----
-
 ## Objective of the Exercise
-
 The objective of this exercise is the efficient management of a large number of hardware interfaces. By using standardized sub-applications with exposed parameters, the complete mapping between wireless inputs and CAN bus outputs can be performed centrally in the main application without having to modify the internal logic.
-
-
-``` -----
 
 ## Description and Components
 
@@ -22,13 +14,10 @@ The objective of this exercise is the efficient management of a large number of 
 [cite_start]This component serves as a universal "channel driver" for radio-to-CAN communication [cite: 2]. It has the following parameters:
 
 * **`Input`**: The name of the radio button (e.g., `Key_01`, `START`, `STOP`).
-
 * **`u8SAMember`**: The CAN address of the DataPanel (here fixed to `MI_00`).
-
 * **`Output`**: The name of the physical output on the DataPanel (e.g., `DigitalOutput_1A`).
 
 Internally, the module contains a `Funk_IX` for receiving radio signals and a `DataPanel_MI_QX` for sending CAN messages.
-
 
 ### Channel Configuration
 

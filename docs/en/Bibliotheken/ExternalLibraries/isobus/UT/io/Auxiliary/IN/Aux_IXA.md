@@ -1,48 +1,33 @@
 # Aux_IXA
-
 <img width="1383" height="318" alt="image" src="https://github.com/user-attachments/assets/d064bd8f-6af0-4b04-9952-995892584e9a" />
-
 * * * * * * * * * *
-
 ## Introduction
 The Aux_IXA is a composite function block for processing Boolean input data. It serves as a wrapper for the basic function block Aux_IX and provides an extended interface for integration into ISOBUS-compatible systems.
-
-
 ![Aux_IXA](Aux_IXA.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Service initialization with the associated data QI, PARAMS, and u16ObjId
-
 - **REQ**: Service request with the associated data QI
 
 ### **Event Outputs**
-
 - **INITO**: Initialization confirmation with the associated data QO and STATUS
 
 ### **Data Inputs**
-
 - **QI**: Event Input Qualifier (BOOL) - Qualifier for event inputs
-
 - **PARAMS**: Service Parameters (STRING) - Configuration parameters for the service
-
 - **u16ObjId**: Object ID (UINT) - Object identifier with initial value ID_NULL
 
 ### **Data Outputs**
-
 - **QO**: Event Output Qualifier (BOOL) - Qualifier for event outputs
-
 - **STATUS**: Service Status (STRING) - Service status information
 
 ### **Adapter**
-
 - **IN**: Unidirectional AX-type adapter for data communication
 
 ## Functionality
 The Aux_IXA acts as a composite block that encapsulates the basic function block Aux_IX. Upon an INIT event, all parameters are forwarded to the internal IX block. REQ events trigger service requests, while INITO confirms successful initialization. The IN adapter enables bidirectional communication with external components.
-
 
 **IN** ## Technical Features
 - Integration into ISOBUS environments through a special package structure
@@ -72,11 +57,9 @@ Compared to simple Boolean input blocks, Aux_IXA offers:
 - Extended parameterization options
 - ISOBUS specification
 - Adapter-based interface
-
 - Composite structure for improved reusability
 
 ## 🛠️ Related exercises
-
 * [Exercise_010b1_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b1_AX.md)
 
 ## Conclusion

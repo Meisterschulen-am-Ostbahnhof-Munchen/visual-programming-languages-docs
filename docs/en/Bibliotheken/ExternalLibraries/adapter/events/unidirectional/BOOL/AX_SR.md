@@ -1,14 +1,9 @@
 # AX_SR
-
 <img width="1186" height="279" alt="image" src="https://github.com/user-attachments/assets/da4a5f8e-5e9f-45f9-be8f-ac02a9cdb0ca" />
-
 ![AX_SR_ecc](./AX_SR_ecc.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_SR function block is an event-driven bistable element (flip-flop) that functions as a set-reset memory. It allows setting and resetting a logical state and makes this state available via an adapter interface.
-
 
 ![AX_SR](AX_SR.svg)
 
@@ -34,11 +29,8 @@ The AX_SR function block is an event-driven bistable element (flip-flop) that fu
 The AX_SR function block operates as a set-reset flip-flop with the following properties:
 
 - On an S event, the internal state is set to SET and output Q to TRUE
-
 - On an R event, the internal state is set to RESET and output Q to FALSE
-
 - The state Remains in state until a contrary event occurs.
-
 - State changes are communicated via adapter Q.
 
 ## Technical Features and Comparison with Standards
@@ -46,11 +38,8 @@ The AX_SR function block operates as a set-reset flip-flop with the following pr
 As with all event-driven bistable elements in IEC 61499 (see also Note 8 in Table A.1 of DIN EN 61499-1), there is no inherent "dominance" of one input, as is known from IEC 61131-3.
 
 - **Comparison to IEC 61131-3**: See [SR (Bistable, set with priority)](../../../../../Vergleich/IEC61131_3/SR_ALT.md). While in the classic PLC world, if S1 and R are TRUE simultaneously, the set takes precedence, in IEC 61499, each event is processed sequentially. The final state depends on which event was processed last in the execution chain (ECC).
-
 - **Functional Identity**: `AX_SR` is functionally identical to [AX_RS](AX_RS.md)]. The different naming and pin arrangement are solely for the convenience of developers familiar with IEC 61131-3.
-
 - **Adapter Communication**: The device makes its status available via the adapter `Q`.
-
 
 ## State Overview
 
@@ -67,19 +56,14 @@ State Transitions:
 - RESET → SET: On S-event
 
 ## Application Scenarios
-
 - Storage of switching states in distributed control applications
 - State management via adapter interfaces
-
 - Signal processing with memory function
 - Monitoring of operating states
 
 ## Related Function Blocks
-
 - **[AX_RS](AX_RS.md)**: Functionally identical, inputs reversed in the symbol.
-
 - **[E_SR](../../../../../StandardLibraries/events/E_SR.md)**: The standard equivalent with direct data/event outputs instead of adapters.
-
 
 ## ⚖️ Comparison with Similar Building Blocks
 Compared to other memory elements, AX_SR offers:
@@ -92,7 +76,6 @@ Compared to other memory elements, AX_SR offers:
 Comparison with [E_SR](../../../../../StandardLibraries/events/E_SR.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)]
 * [Exercise_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)]
 * [Exercise_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)]

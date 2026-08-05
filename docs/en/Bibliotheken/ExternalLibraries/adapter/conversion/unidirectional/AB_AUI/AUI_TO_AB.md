@@ -1,13 +1,8 @@
 # AUI_TO_AB
-
 ![AUI_TO_AB](./AUI_TO_AB.svg)
-
 *No image available*
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **AUI_TO_AB** function block is a composite block that converts an AUI interface (UINT) to an AB interface (BYTE). It encapsulates the conversion using the internal IEC 61131 block `F_UINT_TO_BYTE` and provides a uniform, unidirectional data flow via adapters. This block was developed for use in automation systems that need to transfer different data types between adapters.
 
 ## Interface Structure
@@ -69,33 +64,22 @@ This component functions as a pure signal converter:
 Internally, the mapping logic is implemented by a single IEC 61131 component, resulting in minimal latency and deterministic operation.
 
 ## Technical Features
-
 - **Composite Structure**: The function block is implemented as a composite, meaning it contains an internal network with a single function block. This facilitates reuse and encapsulation.
-
 - **Adapter Concept**: Input and output are handled exclusively via typed adapters (`AUI` and `AB`). This enables loose coupling and easy exchange of communication protocols within the application.
-
 - **License**: The function block is licensed under the Eclipse Public License 2.0 (EPL-2.0). The source code is open and can be freely modified.
-
 - **Dependency**: It requires the IEC 61131 function block `F_UINT_TO_BYTE`, which must be included in the package `iec61131::conversion`.
-
 
 ## State Overview
 
 Since the function block does not have an internal state machine (composite without its own ECC), its state is determined solely by the internal function block `F_UINT_TO_BYTE`. This block operates in an event-driven manner and does not have a persistent state. After each event, the function block returns to its idle state.
 
 ## Application Scenarios
-
 - **Data Conversion**: When a sensor delivers data in UINT format via an AUI adapter, but the downstream system expects a BYTE value via an AB adapter.
-
 - **System Integration**: As an intermediary between different adapter types in heterogeneous automation networks.
-
 - **Protocol Conversion**: In scenarios where existing libraries only support certain adapter types and type conversion is required.
 
-
 ## Comparison with Similar Function Blocks
-
 - **Direct `F_UINT_TO_BYTE`**: This IEC function block is also used internally, but operates without an adapter – it requires direct data and event ports. `AUI_TO_AB` encapsulates this interface in adapter form.
-
 - **Other Adapter Converters**: Similar function blocks exist, such as `AB_TO_AUI` or `ADI_TO_AB`, for other type combinations. They follow the same pattern and are interchangeable.
 
 The key advantage of `AUI_TO_AB` is its complete integration into adapter-based architectures – without the application needing to know the internal conversion logic.

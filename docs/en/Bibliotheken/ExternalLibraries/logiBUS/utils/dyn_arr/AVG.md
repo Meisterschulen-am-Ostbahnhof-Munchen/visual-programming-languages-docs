@@ -1,11 +1,8 @@
 # AVG
-
 ![AVG](./AVG.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **AVG** (Array Average) function block calculates the arithmetic mean (average) of all elements in an integer array. It is designed for use in control engineering and enables rapid statistical analysis of measured values or process data.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -55,26 +52,19 @@ None.
 5. After the calculation is complete, the event `CNF` is triggered. The output value is then available.
 
 ## Technical Features
-
 - **Dynamic Array Size**: The function block accepts arrays of arbitrary length (indicated by `ARRAY[*]`), allowing for flexible adaptation to different data volumes.
-
 - **Type Conversions**: The sum is represented as `DINT` (double word) to prevent overflows with large arrays. Division is performed after conversion to `REAL`, resulting in a floating-point value.
-
 - **No State Machine**: The function block is purely functional – `REQ` is immediately followed by `CNF`. There are no internal states or delays.
 
 ## State Overview
 Since this is a **combinatorial function block**, there are no explicit states. The process is as follows:
 
 - Initial: Wait for `REQ`
-
 - After `REQ`: Calculation and immediate output of `CNF`
 
 ## Application Scenarios
-
 - **Averaging of Sensor Data**: Smoothing of measured values (e.g., temperature, pressure) over a defined measurement cycle.
-
 - **Average Calculation in Batch Processes**: Determination of the average fill level, weight, or other process parameters.
-
 - **Statistical Evaluation in Quality Control**: For example, calculating the diameter of multiple test specimens as a floating-point value for accuracy analysis.
 
 ## Comparison with Similar Function Blocks
@@ -99,7 +89,6 @@ The **AVG** function block offers a simple and efficient way to calculate the av
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

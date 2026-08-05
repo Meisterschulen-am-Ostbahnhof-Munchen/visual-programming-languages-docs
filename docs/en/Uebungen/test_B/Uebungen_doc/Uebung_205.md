@@ -1,13 +1,8 @@
 # Exercise_205: Interlock: ILOCK_SWITCH_PROTECT (Switching Priority with Protection Time)
-
 ![Uebung_205_network](./Uebung_205_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise demonstrates the use of the function block `ILOCK_SWITCH_PROTECT` to implement a switching priority with protection time (interlock). Two digital inputs (I1, I2) control two digital outputs (Q1, Q2) via interlocked logic. The `ILOCK_SWITCH_PROTECT` ensures that a configurable protection time (`DT_PROTECT`) is observed after a switching operation before another switching operation is possible. This prevents rapid, unwanted switching back and forth (oscillation). The outputs are controlled via event-driven output blocks. A function block `E_TimeOut` is connected to `ILOCK` via an adapter and enables time monitoring of the protection period.
-
 ## Function Blocks (FBs) Used
 
 ### Function blocks of the subapplication `Uebung_205`
@@ -32,24 +27,16 @@ This exercise demonstrates the use of the function block `ILOCK_SWITCH_PROTECT` 
 1. **Event Control:**
 
 - A rising/falling edge at `DigitalInput_I1` triggers the event `DigitalInput_I1.IND` → connected to `ILOCK.EI_UP`.
-
 - An edge at `DigitalInput_I2` triggers `DigitalInput_I2.IND` → connected to `ILOCK.EI_DOWN`.
-
 - Upon successful switching, `ILOCK` generates the event `EO_UP` (for the upper output) or `EO_DOWN` (for the lower output).
-
 - `ILOCK.EO_UP` is connected to `DigitalOutput_Q1.REQ` (output Q1 switches).
-
 - `ILOCK.EO_DOWN` is connected to `DigitalOutput_Q2.REQ` (output Q2 switches).
 
 2. **Data Path:**
 
 - The value of input `DigitalInput_I1.IN` is transferred to `ILOCK.DI_UP`.
-
 - The value of `DigitalInput_I2.IN` is transferred to `ILOCK.DI_DOWN`.
-
 - The ILOCK transmits the state for the upper output (1 = active) to `DigitalOutput_Q1.OUT` via `DO_UP`.
-
-
 - Accordingly, `DO_DOWN` passes the status to `DigitalOutput_Q2.OUT`.
 
 3. **Protection Time Monitoring:**
@@ -59,22 +46,17 @@ This exercise demonstrates the use of the function block `ILOCK_SWITCH_PROTECT` 
 4. **Interlock Functionality:**
 
 - The `ILOCK_SWITCH_PROTECT` operates with priority: Whichever input becomes active first sets the corresponding output. As long as the protection time (`DT_PROTECT = 1s`) is running, the other input is ignored. Switching is only possible again after the protection time has expired.
-
 - This prevents rapid switching between the two outputs (e.g., with mechanical bounce switches or fast pushbuttons).
 
 **Learning Objectives:**
 
 - Using the interlock block `ILOCK_SWITCH_PROTECT` with a guard time.
-
 - Understanding event-driven communication (IND → EI, EO → REQ).
-
 - Integrating a timer adapter to monitor the guard time.
-
 - Configuring hardware inputs/outputs (`logiBUS_IX`, `logiBUS_QX`).
 
 **Difficulty Level:** Medium
 **Prerequisites:** Basic knowledge of event control in 4diac, working with input/output blocks.
-
 
 ## Summary
 
@@ -83,7 +65,6 @@ Exercise **Exercise_205** demonstrates the practical application of an interlock
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

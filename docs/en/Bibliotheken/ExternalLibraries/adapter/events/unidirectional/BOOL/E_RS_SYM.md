@@ -1,12 +1,8 @@
 # E_RS_SYM
-
 ![E_RS_SYM](./E_RS_SYM.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **E_RS_SYM** is an event-driven, bistable flip-flop with symmetrical start behavior. It implements set-reset functionality, where the output Q is defined by both a set and a reset event. Unlike a classic RS flip-flop, this component has an explicit start state that reacts to both events equally.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -43,25 +39,19 @@ No data inputs available.
 
 No adapters available.
 
-
 ## Functionality
 
 After being switched on, the module is in the **START** state. From this state, an event at `S` triggers the **SET** state, and an event at `R` triggers the **RESET** state. In each case, the output `Q` is set to `TRUE` (SET) or `FALSE` (RESET), and the event `EO` is output.
 
 - In the **SET** state, an event at `R` returns the module to the **RESET** state.
-
 - In the **RESET** state, an event at `S` returns the module to the **SET** state.
-
 - The output `Q` is only updated upon a state change (i.e., transition to SET or RESET).
 
 The symmetrical start behavior means that both a Set and a Reset event are accepted immediately after initialization – there is no default setting for `Q`.
 
 ## Technical Features
-
 - **Symmetrical Start Behavior:** No output value is set in the START state. The device responds equally to the first arriving event (S or R). This distinguishes it from typical RS flip-flops, which usually deliver a defined (often FALSE) initial value after startup.
-
 - **Event-Driven Output:** The event `EO` is triggered precisely when the value of `Q` changes. Thus, a signal change is explicitly transmitted.
-
 - **No Data Inputs:** This function block operates purely event-driven without additional data parameters.
 
 ## State Overview
@@ -78,7 +68,6 @@ The function block has three states:
 
 | RESET | Q = FALSE; can be switched to the SET state by S. |
 
-
 **Transitions:**
 
 - START → SET on event `S`
@@ -87,11 +76,8 @@ The function block has three states:
 - RESET → SET on event `S`
 
 ## Application Scenarios
-
 - **Initialization of memory bits** in controllers where the initial value should not be predefined.
-
 - **Symmetrical switching logic** that allows both setting and resetting a marker at the beginning.
-
 - **Alternative to classic RS holders** when a defined startup behavior must be avoided (e.g., in safety-critical applications where an undefined initial state is tolerated).
 
 ## Comparison with Similar Function Blocks

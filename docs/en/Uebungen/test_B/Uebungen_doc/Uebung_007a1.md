@@ -1,13 +1,8 @@
 # Exercise_007a1: Flasher with E_CYCLE and E_T_FF
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_007a1`. Here, the exercise attempts to switch the flasher from exercise 007 on and off using external pushbuttons.
-
 ----
-
 ## Objective of the exercise
-
 Controlling a clock generator using start and stop events.
 
 -----
@@ -16,15 +11,12 @@ Controlling a clock generator using start and stop events.
 
 [cite_start]In `Uebung_007a1.SUB`, the control inputs of the `E_CYCLE` block are used[cite: 1].
 
-
 ### Function Blocks (FBs)
 
 ![Uebung_007a1_network](./Uebung_007a1_network.svg)
 
 * **`START` (I1)**: Sends an event to `E_CYCLE.START`.
-
 * **`STOP` (I2)**: Sends an event to `E_CYCLE.STOP`.
-
 * **`E_CYCLE`**: Starts or stops the generation of clock events.
 
 -----

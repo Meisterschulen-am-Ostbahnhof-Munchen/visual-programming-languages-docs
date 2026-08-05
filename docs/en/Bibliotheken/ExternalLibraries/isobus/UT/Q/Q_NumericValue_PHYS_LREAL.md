@@ -1,13 +1,9 @@
 # Q_NumericValue_PHYS_LREAL
-
 ![Q_NumericValue_PHYS_LREAL](./Q_NumericValue_PHYS_LREAL.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **Q_NumericValue_PHYS_LREAL** is used to set a numeric value as a physical quantity via ISOBUS (ISO 11783-6). It receives a physical value of type `LREAL`, automatically converts it into the required raw value, and sends the corresponding command to the connected device. This complies with the specification in Part 6, Annex F.22.
-
 The function block encapsulates the necessary steps of the physical conversion and the actual command execution, allowing the user to work directly with physical units.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -69,13 +65,9 @@ The function block works internally with three subordinate function blocks:
 The outputs `STATUS`, `u32OldValue`, and `s16result` originate directly from `Q_NumericValue`. The overflow/underflow messages (`xOver`, `xUnder`) are provided by the conversion function.
 
 ## Technical Features
-
 - **Automatic Conversion**: The user does not need to manually convert physical values into raw values; this is done transparently within the function block.
-
 - **Default Values**: If no specific object pool properties are passed, the function block uses sensible defaults (scaling 1.0, offset 0, no decimal places). The object ID is then `ID_NULL`.
-
 - **Limit Check**: The outputs `xOver` and `xUnder` signal whether the passed physical value is outside the range permitted for ISOBUS. This allows applications to react early.
-
 - **Cache Storage**: The initialization (`INIT`) copies the object properties only once and stores them for later `REQ` calls.
 
 ## State Overview
@@ -92,18 +84,14 @@ The function block does not have an explicit state machine in the sense of an EC
 **Error Handling** | If an overflow/underflow occurs during the conversion, `xOver` or `xUnder`, respectively, are set before the command is issued. An erroneous command is signaled by `s16result` and the status message. |
 
 ## Application Scenarios
-
 - **Control of ISOBUS Devices**: Setting setpoints for actuators (e.g., valves, drives) in physical units such as pressure (bar, kPa), temperature (°C), or fill level.
-
 
 **Error Handling** - **Agricultural Machinery**: Change operating parameters (e.g., application rate, speed) directly from a control application.
 
 - **Test and Simulation Environments**: Easily send physical values without having to worry about raw value conversion.
 
 ## Comparison with Similar Blocks
-
 - **`Q_NumericValue` (without PHYS)**: Expects the raw value (UDINT) directly. The user must perform the conversion manually. `Q_NumericValue_PHYS_LREAL` encapsulates this step and improves the readability and maintainability of applications that work with physical quantities.
-
 - **`Q_NumericValue_PHYS_REAL`** (analogous for REAL type): Functions identically, but with single-precision accuracy. For applications requiring higher accuracy (LREAL), this block is the right choice.
 
 ## Conclusion

@@ -1,13 +1,9 @@
 # IA_MSS
-
 ![IA_MSS](./IA_MSS.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **IA_MSS** function block represents an ISOBUS adapter for machine-selected speed (MSS). It encapsulates the communication with the underlying ISOBUS protocol (PGN 61474) and provides the determined values for speed, distance traveled, and timeout status via standardized adapter interfaces. The block is typically embedded in an ISOBUS-compatible control unit (TECU) and enables easy integration into IEC 61499-based automation systems.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Event | Type | Description |
@@ -66,11 +62,8 @@ The adapter thus provides a clean separation between ISOBUS communication and th
 
 ## Technical Features
 - **Standard Compliance** – The module is based on the ISOBUS standard ISO 11783-7 (PGN 61474) for machine-selected speed.
-
 - **Unidirectional Adapters** – The outputs `SPEED`, `DISTANCE`, and `TIMEOUT` are defined as unidirectional adapters (types `AUI`, `AUDI`, `AX`). They only transmit data from the module to the calling application; feedback is not provided.
-
 - **Adapter Wrapper** – The internal logic is fully encapsulated in component `I_CORE`. `IA_MSS` is used exclusively for interface adaptation and event forwarding.
-
 - **Error Handling** – The initialization status is signaled via `STATUS` (STRING) and `QO` (BOOL). Any timeout is reported via the `TIMEOUT` adapter.
 
 ## State Overview
@@ -87,19 +80,13 @@ Since the function block does not have its own execution state (ECC), the state 
 **Error/Timeout** | If the internal initialization fails or a timeout is detected, this is signaled via `STATUS` and the `TIMEOUT` adapter. |
 
 ## Application Scenarios
-
 - **ISOBUS Control Units (TECU)** – Integration into agricultural machinery to read the speed provided by the tractor or implement.
-
 - **Traction Control** – Use of the selected speed for site-specific applications (e.g., fertilization, crop protection).
-
 - **Distance and Path Measurement** – Evaluation of the distance traveled for controlling working widths or for documentation purposes.
-
 - **Communication Monitoring** – Detection of timeout situations in the ISOBUS network via the `TIMEOUT` adapter.
 
 ## Comparison with Similar Modules
-
 - **I_MSS (Direct)** – The internal module `I_CORE` of type `isobus::tecu::I_MSS` offers the same functionality, but without adapter interfaces. `IA_MSS` facilitates integration into systems based on standardized adapters (AUI, AUDI, AX).
-
 - **Other ISOBUS Adapters** – Numerous adapters exist for other PGNs (e.g., for GPS, working width, engine speed). `IA_MSS` is specifically designed for machine-selected speed.
 
 ## Conclusion

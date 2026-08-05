@@ -1,11 +1,8 @@
 # ALI_D_FF_TMIN
-
 ![ALI_D_FF_TMIN](./ALI_D_FF_TMIN.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **ALI_D_FF_TMIN** implements a data storage (D flip-flop) with an adapter-based input and output and a configurable minimum dwell time between output events. It serves to accept an incoming data value on a rising edge at the input and release it after a minimum time to avoid cyclical conditions or timing issues in communication.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -39,7 +36,6 @@ No direct data outputs. The latched value is provided via the **Q-Adapter**.
 
 | Label | Type | Direction | Comment |
 
-
 ### **Adapter** |-------------|-----|----------|-----------|
 
 | I | ALI (unidirectional) | Socket (Input) | Value to be transferred |
@@ -50,20 +46,15 @@ No direct data outputs. The latched value is provided via the **Q-Adapter**.
 The **ALI_D_FF_TMIN** encapsulates an internal function block of type `E_D_FF_ANY_TMIN`. Its functionality:
 
 - Upon an event at the input adapter **I.E1** (rising edge), the data value **I.D1** is transferred.
-
 - However, the output event **EO** is only triggered if at least the time **Tmin** has elapsed since the last **EO**.
-
 - Initialization (INIT) sets the internal timer and prepares the function block.
 
 The function block operates asynchronously; timing is controlled via the internal function block.
 
 ## Technical Features
 - The logic is completely outsourced to the internal function block `E_D_FF_ANY_TMIN`, which has its own state machine and timer.
-
 - The **Tmin** time is set only once during INIT and remains valid for the entire lifetime.
-
 - Adapters **I** (input) and **Q** (output) are unidirectional of type `ALI`; they transmit both events and data.
-
 - The function block does not implement its own top-level behavior but delegates all functions.
 
 ## State Overview
@@ -80,11 +71,8 @@ Since the function block uses `E_D_FF_ANY_TMIN` internally, it implicitly has th
 The exact state machine is located in the internal function block and is not shown here.
 
 ## Application Scenarios
-
 - **Data Backup in Time-Controlled Bus Systems**: Buffering of values at a clock signal, which may only be passed on at defined intervals.
-
 - **Signal Debouncing**: Prevents rapid switching on and off from resulting in numerous events at the logic level.
-
 - **Sequential Processing with Minimum Interval**: Ensures that subsequent function blocks have sufficient processing time.
 
 ## Comparison with Similar Function Blocks

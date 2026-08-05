@@ -1,13 +1,9 @@
 ![FT_PIWL](FT_PIWL.svg)
-
 # FT_PIWL
-
 PI Controller with Anti-Windup
-
 version 1.3 mar 11 2009
 programmer hugo
 tested by oscat
-
 FT_PIWL is a PI controller.
 The PID controller works according to the formula Y = IN *(KP+ KI * INTEG(e) ).
 a rst will reset the integrator to 0

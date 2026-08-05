@@ -1,13 +1,8 @@
 # AUDI_UDINT_GT
-
 ![AUDI_UDINT_GT](./AUDI_UDINT_GT.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `AUDI_UDINT_GT` performs a comparison of two unsigned 32-bit integers (UDINT). It checks whether the value of an input (IN1) provided via an adapter socket is greater than a second value (IN2) passed directly as a data input. The result is output via an adapter plug. The block implements the **GREAT AS** comparison operator specified in IEC 61131-3.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -57,13 +52,9 @@ The FB does not have its own data outputs. The result value is provided via the 
 5. The function block then returns to the wait state and can be triggered again via REQ.
 
 ## Technical Features
-
 - **Adapter-based interface:** The function block uses 4diac's proprietary adapter technology to flexibly encapsulate inputs and outputs. The adapters `AUDI` and `AX` correspond to the standard unidirectional types.
-
 - **IEC 61131-3 Compliance:** The comparison is implemented using the standardized function block `F_GT`, ensuring reusability and interoperability.
-
 - **Implicit Event Chaining:** By coupling the internal `F_GT` with the output adapter, the event-data relationship is automatically established – no manual linking of output events is required.
-
 - **Type Safety:** Both comparison values must be of type `UDINT`. The function block does not perform any implicit type conversions.
 
 ## State Overview
@@ -71,19 +62,14 @@ The FB does not have its own data outputs. The result value is provided via the 
 The function block does not have an explicit state machine. It operates in an event-driven manner:
 
 - **Idle:** Waiting for the **REQ** event.
-
 - **Processing:** After REQ, the values are read, the internal `F_GT` is processed, and the result is output via the OUT adapter. The state is exited immediately after the output is complete.
 
 The internal execution of `F_GT` is carried out in one step according to its specification.
 
 ## Application Scenarios
-
 - **Threshold Monitoring:** Monitor whether a process value (via IN1) exceeds a limit value (via IN2).
-
 - **Quality Control:** Check whether a count or a measured value exceeds a predefined target value.
-
 - **Sequence Controls:** Activate subsequent logic steps when a specific numerical range is exceeded.
-
 - **Safety Functions:** Trigger alarms when a measurable parameter (e.g., temperature, pressure) exceeds a maximum permissible value.
 
 ## Comparison with Similar Function Blocks
@@ -101,19 +87,13 @@ The internal execution of `F_GT` is carried out in one step according to its spe
 | `AUDI_UDINT_LT` | < (Kleiner als)                | UDINT                              |
 | `F_GT` (direkt)   | > (Greater than) | UDINT (and other supported types) |
 
-
 The difference compared to directly using `F_GT` lies in the adapter-based encapsulation: `AUDI_UDINT_GT` expects the initial value via a socket adapter, enabling modular and reusable integration within project frameworks.
 
 ## Conclusion
 
 The function block `AUDI_UDINT_GT` offers a standardized and type-safe way to implement a "greater than" comparison for unsigned 32-bit integers. Its adapter interface allows for seamless integration into IEC 61131-3 compliant automation projects and makes it particularly suitable for threshold comparisons and monitoring functions. Internal use of the standardized function block `F_GT` ensures deterministic and portable behavior.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

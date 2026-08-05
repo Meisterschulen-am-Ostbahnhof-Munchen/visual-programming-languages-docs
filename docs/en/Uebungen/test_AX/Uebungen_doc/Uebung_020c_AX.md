@@ -1,13 +1,8 @@
 # Exercise_020c_AX: DigitalInput_I1 to DigitalOutput_Q1; AX_TON; On-Delay
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-
 This article describes the logiBUS® exercise `Uebung_020c_AX`.
-
 ----
-
 ## Objective of the Exercise
-
 To become familiar with the timer block `AX_TON`.
 
 -----
@@ -21,7 +16,6 @@ To become familiar with the timer block `AX_TON`.
 ![Uebung_020c_AX_network](./Uebung_020c_AX_network.svg)
 
 * **`AX_TON`**: Timer On-Delay.
-
 * **Parameter `PT`**: Preset Time (here 5 seconds).
 
 -----

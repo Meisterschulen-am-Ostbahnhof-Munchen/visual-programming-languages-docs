@@ -1,13 +1,8 @@
 # EC_STOP_ELEM
-
 ![EC_STOP_ELEM](https://user-images.githubusercontent.com/116869307/214154650-cf730975-2179-4eb9-8312-7affc7c95a31.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The EC_STOP_ELEM function block is used to stop instances according to the state machine of IEC 61499 function blocks. It can stop function block instances, connections (event/data), resources, or devices. This block belongs to the category of reconfiguration services and implements an execution control service according to IEC 61499-1.
-
-
 ![EC_STOP_ELEM](EC_STOP_ELEM.svg)
 
 ## Interface Structure
@@ -30,12 +25,9 @@ The EC_STOP_ELEM function block is used to stop instances according to the state
 ### **Adapters**
 No adapter interfaces are available.
 
-
 ## Functionality
 
 The EC_STOP_ELEM function block processes stop requests for various elements within an IEC 61499 system. Upon receipt of a REQ event with an enabled QI input, the stop process for the specified element is initiated. After completion of the stop process, a CNF event is output with the corresponding status.
-
-
 
 ``` ## Technical Features
 - Supports stopping various element types: FBs, connections, resources, and devices
@@ -55,11 +47,9 @@ The function block has several service sequences:
 - **resource_initiated_termination**: Resource-initiated termination
 
 ## Application Scenarios
-
 - Dynamic reconfiguration of control systems
 - Planned shutdown of system components
 - Error handling Targeted stopping of faulty components
-
 - Maintenance work on running systems
 
 ## ⚖️ Comparison with similar function blocks

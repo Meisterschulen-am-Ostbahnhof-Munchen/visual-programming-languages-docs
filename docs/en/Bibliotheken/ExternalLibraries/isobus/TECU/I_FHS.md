@@ -1,13 +1,8 @@
 # I_FHS
-
 * * * * * * * * * *
-
 ## Introduction
 The **I_FHS** is a standards-compliant function block for front-mounted implement status information according to ISO 11783-7 (PGN 65094).
-
 Developed under the EPL-2.0 license, it enables the monitoring and control of front-mounted implements in modern agricultural systems.
-
-
 ![I_FHS](I_FHS.svg)
 
 ## Interface Structure
@@ -27,7 +22,6 @@ Developed under the EPL-2.0 license, it enables the monitoring and control of fr
 - `QO` (BOOL): Status Qualifier
 - `STATUS` (STRING): Operational Status
 - `timestamp_*` (DINT): Timestamp
-
 - `Q_timeout` (BOOL): Timeout Indicator
 
 ## Parameters (SPN Details)
@@ -47,25 +41,21 @@ Developed under the EPL-2.0 license, it enables the monitoring and control of fr
 
 | `FRONT_HITCH_EXIT_REASON_CODE` | 5816 | BYTE | 6 bits | 64 states | 0-63 | Basic code for system shutdown |
 
-
 ## Functionality
 
 1. **Initialization**:
 
 - Activation via `INIT` event
-
 - Confirmation via `INITO` with status information
 
 2. **Data Update**:
 
 - Automatic status messages via `IND` event
-
 - Contains all relevant front-mounted implement parameters
 
 3. **Error Handling**:
 
 - Timeout detection via `TIMEOUT` event
-
 - Detailed status codes in the `STATUS` field
 
 ## Technical Features
@@ -77,7 +67,6 @@ Developed under the EPL-2.0 license, it enables the monitoring and control of fr
 ✔ **Integrated fault diagnostics**
 
 ## Application Scenarios
-
 - **Front Loader Control**: Precise Position Control
 - **Force Measurement**: Real-time Monitoring of Traction Forces
 - **Safety Systems**: Detection of Limit Exceedances
@@ -98,7 +87,6 @@ Developed under the EPL-2.0 license, it enables the monitoring and control of fr
 | Diagnostic Codes | ✔ | ✖ | ✔ |
 
 ## 🛠️ Related Exercises
-
 * [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)]
 
 ## Conclusion

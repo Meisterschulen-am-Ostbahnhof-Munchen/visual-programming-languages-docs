@@ -1,13 +1,8 @@
 # UDINT_AUDI_NE
-
 ![UDINT_AUDI_NE](./UDINT_AUDI_NE.svg)
-
 *(No image available)*
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **UDINT_AUDI_NE** compares two values for inequality ("not equal"). It is implemented as a composite block and uses adapters for the second input and output to enable flexible integration with other components. The block is designed for use in automation systems based on the 4diac IDE.
 
 ## Interface Structure
@@ -51,7 +46,6 @@ No direct data outputs. The comparison result (Boolean value: TRUE for inequalit
 | Socket | IN2 | `adapter::types::unidirectional::AUDI` | Input for the second value |
 
 - **OUT** (Plug) transmits the result as a Boolean value via the data field `D1` and is controlled by the event `E1`.
-
 - **IN2** (Socket) provides the second comparison value via the data field `D1` and the event `E1` (e.g., to trigger the comparison).
 
 ## Functionality
@@ -69,13 +63,9 @@ This function block performs an inequality comparison between two values:
 The control is event-driven: The comparison is triggered either by the external event **REQ** or by the event **IN2.E1** from the adapter (OR operation). This allows the function block to operate both cyclically and in a data-driven manner.
 
 ## Technical Features
-
 - **Adapter-based Input/Output:** The second input and the output are implemented as adapters. This enables loose coupling and reusability in different contexts.
-
 - **Support for any elementary data types:** The data input **IN1** is of type `ANY_ELEMENTARY`, so the function block can work with all IEC 61131-3 elementary data types (e.g., INT, REAL, BOOL). The adapter **IN2** should provide a compatible data type.
-
 - **Reusability:** The function block is defined as a composite and internally uses the standardized comparison function block **F_NE**. Modifying the comparison logic is possible by replacing the internal function block.
-
 - **Copyright:** The function block is subject to the Eclipse Public License 2.0.
 
 ## State Overview
@@ -84,7 +74,6 @@ The function block does not have an explicit state machine. It behaves like a fu
 
 - **Waiting:** The function block waits for an event at **REQ** or **IN2.E1**.
 
-
 **Reusability:** - **Compare:** As soon as an event occurs, the comparison is performed.
 
 - **Output:** The result is output via **OUT** and the event **OUT.E1** is triggered.
@@ -92,13 +81,9 @@ The function block does not have an explicit state machine. It behaves like a fu
 The block then returns to the wait state.
 
 ## Application Scenarios
-
 - **Inequality Check in Control Logic:** Monitoring whether a process value deviates from a setpoint.
-
 - **Signal Comparison in Communication Interfaces:** Comparing two measured values from different sources.
-
 - **Enable Conditions:** Triggering an action if two input signals are not identical (e.g., in safety applications).
-
 - **Adapter-Coupled Systems:** Integration into modular automation projects that rely on adapters for signal forwarding.
 
 ## Comparison with Similar Blocks
@@ -122,7 +107,6 @@ The **UDINT_AUDI_NE** is specifically designed for inequality comparison with ad
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

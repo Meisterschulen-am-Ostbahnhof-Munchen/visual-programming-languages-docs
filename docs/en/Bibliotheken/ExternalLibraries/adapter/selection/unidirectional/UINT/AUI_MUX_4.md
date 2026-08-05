@@ -1,11 +1,8 @@
 # AUI_MUX_4
-
 ![AUI_MUX_4](./AUI_MUX_4.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_MUX_4** is a generic multiplexer for AUI (Unidirectional Application Interface) adapters. It enables dynamic switching between four AUI inputs (IN1 to IN4) to a common AUI output (OUT) using an integer index.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -55,24 +52,17 @@ When a signal is applied to the **REQ** event input, the current value of the **
 
 ## Technical Features
 - The FB is declared as a **generic block** (GenericClassName `'GEN_AUI_MUX'`) and can therefore be reused in various contexts.
-
 - All adapters are of type `adapter::types::unidirectional::AUI` – a unidirectional interface protocol.
-
 - The **K** index is defined as `UINT`; values outside 0…3 are not processed.
-
 - The attribute `eclipse4diac::core::TypeHash` enables unique identification of the type definition in the 4diac framework.
 
 ## State Overview
 The function block has **no explicit internal state machine** (ECC). Its functionality is purely event-driven: A REQ event immediately triggers the switching and the CNF confirmation.
 
 ## Application Scenarios
-
 - **Data source switching** in distributed automation systems when multiple AUI-compliant sensors or actuators need to be connected via a common channel.
-
 - **Dynamic path selection** in AUI-based communication networks, e.g., for fault switching or load balancing.
-
 - **Parameterizable configuration** of devices where the index is set from a higher-level control program.
-
 
 ## Comparison with Similar Components
 
@@ -81,11 +71,9 @@ The **AUI_MUX_4** is functionally identical to a classic 4-to-1 multiplexer, but
 ## Conclusion
 The **AUI_MUX_4** offers a clean, reusable solution for selecting between four AUI signals. Its event-driven operation and generic type definition make it flexible to use, especially in modular automation solutions based on the 4diac framework.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

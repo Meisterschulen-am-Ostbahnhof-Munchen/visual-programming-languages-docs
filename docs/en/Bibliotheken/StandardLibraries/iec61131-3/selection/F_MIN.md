@@ -1,13 +1,8 @@
 # F_MIN
-
 ![F_MIN](https://user-images.githubusercontent.com/116869307/214145380-70470032-f41d-4e56-b478-a1a7d237ca1d.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The F_MIN function block is a standard selection function block according to IEC 61131-3 that determines the minimum of two input values. The block compares any two elementary data types and returns the smaller of the two values as the result.
-
-
 ![F_MIN](F_MIN.svg)
 
 ## Interface Structure

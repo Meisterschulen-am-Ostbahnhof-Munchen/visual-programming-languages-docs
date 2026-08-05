@@ -1,4 +1,1 @@
 # DualOut Overview
-
-
-```

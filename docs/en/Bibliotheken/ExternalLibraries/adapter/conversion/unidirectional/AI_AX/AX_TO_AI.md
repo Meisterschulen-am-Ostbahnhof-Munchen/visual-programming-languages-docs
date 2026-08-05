@@ -1,13 +1,8 @@
 # AX_TO_AI
-
 ![AX_TO_AI](./AX_TO_AI.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AX_TO_AI** is a composite function block that converts a BOOL adapter (AX) into an INT adapter (AI). It serves as a bridge between interfaces that process Boolean signals (TRUE / FALSE) and those that expect integer values. The conversion is performed via an internal call to the function block `F_BOOL_TO_INT` from the IEC 61131 library.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -44,14 +39,9 @@ The adapter `AI` provides an event output `E1` and a data output `D1` (INT).
 
 This function block operates as a so-called *Composite FB*, meaning it internally uses another function block to implement its logic.
 
-
 - A BOOL signal is received at socket `AX_IN` via the data input `D1`.
-
 - An incoming event at `AX_IN.E1` triggers the internal function block `Convert` (type: `F_BOOL_TO_INT`) via its input `REQ`.
-
 - The function block `F_BOOL_TO_INT` converts the BOOL value at input `IN` into an INT value (0 for `FALSE`, 1 for `TRUE`).
-
-
 
 ``` - The result is provided at output `OUT` and forwarded to plug `AI_OUT.D1`.
 
@@ -60,13 +50,9 @@ This function block operates as a so-called *Composite FB*, meaning it internall
 Processing is strictly sequential: first, the Boolean input is processed, then the integer output is provided.
 
 ## Technical Features
-
 - **Adapter-based communication:** The block uses only adapter interfaces (socket and plug) and no traditional input/output ports. This enables loose coupling between components and easy reuse in different environments.
-
 - **Unidirectional Data Exchange:** The adapters used, `AX` and `AI`, are defined as unidirectional types, meaning data flows only in one direction – from the socket to the plug.
-
 - **External Library:** For conversion, the function block `F_BOOL_TO_INT` is imported from the library `iec61131::conversion`. This eliminates the need to implement custom conversion logic.
-
 - **No Internal State Machine:** Because this is a composite function block, it does not have its own Execution Control Chart (ECC). The state logic is fully implemented by the internal function block.
 
 ## State Overview
@@ -82,11 +68,8 @@ The function block does not have its own state machine. Execution is event-drive
 This behavior is implicitly controlled by the event cabling in the network.
 
 ## Application Scenarios
-
 - **Signal Conversion in Automation Technology:** If a sensor or controller delivers Boolean values (e.g., "door open/closed"), but a downstream module expects integer values (0/1), this function block can handle the conversion.
-
 - **Adapter Integration:** It serves as a converter between different adapter types to connect components from different manufacturers or libraries.
-
 - **Protocol Adaptation:** In heterogeneous systems, Boolean signals can be converted into standardized integer formats using this function block.
 
 ## Comparison with Similar Function Blocks

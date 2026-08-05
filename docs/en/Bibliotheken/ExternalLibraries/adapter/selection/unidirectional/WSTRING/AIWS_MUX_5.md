@@ -1,11 +1,8 @@
 # AIWS_MUX_5
-
 ![AIWS_MUX_5](./AIWS_MUX_5.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AIWS_MUX_5** is a generic multiplexer for AIWS adapter data. It selects one of five AIWS inputs (IN1…IN5) connected to the **Socket** and forwards the value to the **Plug** output OUT. The selection is made using the integer index **K** (0-4), which is inherited from an event at the **REQ** input. The block confirms the executed selection with a **CNF** event.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -64,26 +61,19 @@ The function block (FB) operates in an event-driven manner:
 If **K** is outside the valid range (0…4), the behavior remains undefined; typically, no selection is made or the output is not updated.
 
 ## Technical Features
-
 - The FB is declared as a **generic block** (`GenericClassName = 'GEN_AIWS_MUX'`), i.e., It can be parameterized in an IEC 61499 environment for different adapter types or channel counts.
-
 - The interface uses only **unidirectional AIWS adapters** – this enables a clear separation between input and output data flows.
-
 - No internal states or timing behaviors are defined; the selection is purely combinatorial with each REQ call.
 
 ## State Overview
 The function block (FB) does not have an explicit state machine. The process is event-driven and deterministic:
 
 - **Waiting for REQ** → on REQ: perform selection, send CNF.
-
 - The function block remains active after execution and ready for the next REQ event.
 
 ## Application Scenarios
-
 - **Sensor Multiplexing** in agricultural technology: Selection of one of five analog sensors (e.g., pressure, temperature, pH value) via a central index.
-
 - **Signal switching** in control systems where multiple AIWS sources exist, but only one is to be processed further.
-
 - **Test and diagnostic modules** that alternately query different inputs.
 
 ## Comparison with similar modules

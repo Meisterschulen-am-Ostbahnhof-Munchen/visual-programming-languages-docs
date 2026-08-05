@@ -1,12 +1,8 @@
 # AULI_MUX_5
-
 ![AULI_MUX_5](./AULI_MUX_5.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AULI_MUX_5** is a generic multiplexer that allows one of five AULI adapters (IN1 to IN5) to be selectively switched to the output adapter (OUT). The active channel is selected via the input parameter K (index). The block is triggered by an event at the REQ input and acknowledges the switchover with an event at the CNF output.
-
 This block was defined as a generic type within the Eclipse 4diac IDE and is designed for use in automation solutions, particularly in the context of HR Agrartechnik GmbH.
 
 ## Interface Structure
@@ -71,17 +67,11 @@ The mapping is as follows:
 
 If other values are passed for K, the behavior is unspecified and should be avoided.
 
-
 ## Technical Features
-
 - **Generic Function Block:** The function block is declared as a generic type (`GEN_AULI_MUX`) and can be instantiated in various forms with different numbers of inputs.
-
 - **Unidirectional Adapters:** All adapters used are of type `AULI` and are unidirectional, meaning data flows in only one direction (from the inputs to the output).
-
 - **No Internal State:** The function block is stateless – it responds to every REQ event regardless of previous calls.
-
 - **Validity Range K:** K is expected to be in the range 0…4. Checking for other values is not included in the basic design.
-
 
 ## State Overview
 
@@ -96,11 +86,8 @@ Since the function block does not have an internal state machine, the only state
 A more detailed state machine is not required because the function block operates entirely event-driven and deterministic.
 
 ## Application Scenarios
-
 - **Sensor Selection:** In a machine control system, the function block can be used to switch between different sensors (e.g., five temperature sensors) and pass the currently relevant value to a processing logic.
-
 - **Signal Routing:** In communication systems, the multiplexer serves to connect different data sources (e.g., five fieldbuses) to a common interface.
-
 - **Test and Verification Benches:** Selection of various test signals for a test setup.
 
 ## Comparison with Similar Components
@@ -119,7 +106,6 @@ A more detailed state machine is not required because the function block operate
 
 The AULI_MUX_5 is distinguished by its use of AULI adapters, which enables clean, modular encapsulation of data and protocols.
 
-
 ## Conclusion
 
 The **AULI_MUX_5** is a flexible and easy-to-use function block for selecting one of five AULI signals. Its generic definition allows for reuse even with a different number of inputs. The clear, event-driven interface and stateless operation make it a reliable building block for modular automation solutions.
@@ -129,7 +115,6 @@ The **AULI_MUX_5** is a flexible and easy-to-use function block for selecting on
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

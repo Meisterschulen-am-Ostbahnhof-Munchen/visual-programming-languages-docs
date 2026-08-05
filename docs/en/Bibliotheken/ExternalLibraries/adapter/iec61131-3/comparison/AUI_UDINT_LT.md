@@ -1,11 +1,8 @@
 # AUI_UDINT_LT
-
 ![AUI_UDINT_LT](./AUI_UDINT_LT.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AUI_UDINT_LT** performs a less-than comparison between two values. The first value is provided as an input via an **AUI adapter**, the second value via a scalar **UDINT** data input. The result of the comparison (Boolean value) is output via an **AX adapter**. The function block is triggered by a **REQ** event.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -41,8 +38,8 @@ No direct data outputs. The result is provided via the **OUT adapter** (data val
 ## Funktionsweise
 1. Der Baustein wartet auf ein Ereignis **REQ** (oder auf ein eingehendes Ereignis des **IN1**-Adapters).  
 2. Mit dem Ereignis werden die beiden Werte erfasst:  
-   - **IN1.D1** (vom Adapter) als erster Wert  
-   - **IN2** (Dateneingang) als zweiter Wert  
+- **IN1.D1** (vom Adapter) als erster Wert  
+- **IN2** (Dateneingang) als zweiter Wert  
 3. Ein interner Funktionsbaustein **F_LT** (Typ `iec61131::comparison::F_LT`) führt den Kleiner-als-Vergleich durch.  
 4. Das boolesche Ergebnis wird über **OUT.D1** ausgegeben und auf dem **OUT**-Adapter das Ereignis **E1** ausgelöst.  
 
@@ -65,11 +62,8 @@ Der Baustein besitzt keine explizite Zustandsmaschine (ECC). Er verhält sich wi
 
 ## Vergleich mit ähnlichen Bausteinen
 - **AUI_UDINT_GT**: Führt einen Größer-als-Vergleich durch (Wert 1 > if value 2).
-
 - **AUI_UDINT_EQ**: Checks for equality (value 1 = value 2).
-
 - **AUI_UDINT_LE** / **AUI_UDINT_GE**: Perform less-than-or-equal-to and greater-than-or-equal-to comparisons, respectively.
-
 - All these function blocks share the same structure with AUI/AX adapters and differ only in their internal comparison function.
 
 ## Conclusion

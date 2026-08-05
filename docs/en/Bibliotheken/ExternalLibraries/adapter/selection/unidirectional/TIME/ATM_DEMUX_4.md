@@ -1,12 +1,8 @@
 # ATM_DEMUX_4
-
 ![ATM_DEMUX_4](./ATM_DEMUX_4.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **ATM_DEMUX_4** is a generic ATM demultiplexer. It distributes a data stream arriving via an incoming adapter (socket) to one of four outgoing adapters (plugs). The output channel is selected via an index `K`, which is evaluated upon the arrival of an event.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -66,13 +62,9 @@ The function block **ATM_DEMUX_4** is a generic ATM demultiplexer. It distribute
 5. If the index `K` is invalid (e.g., 0 or >4), no forwarding occurs – the behavior then depends on the implementation (typically an error or output of the event without any action).
 
 ## Technical Features
-
 - **Generic Function Block** – the function block is declared as a generic class (`GEN_ATM_DEMUX`) and can be instantiated in various contexts as long as the adapters used are of type `ATM`.
-
 - **Adapter-Based Coupling** – the inputs and outputs are implemented as unidirectional adapters, which allows for loose coupling of the components.
-
 - **Event-Driven Selection** – the index `K` is only evaluated upon an event; statically setting the input alone does not trigger any action.
-
 - **No internal buffering** – the function block forwards the currently received value at the `IN` adapter. The calling application is responsible for handling time-shifted data.
 
 ## State Overview
@@ -80,19 +72,14 @@ The function block **ATM_DEMUX_4** is a generic ATM demultiplexer. It distribute
 A state machine is not explicitly included in the provided XML. The typical behavior of a demultiplexer results in the following sequence:
 
 - **IDLE** – Waiting for the `REQ` event.
-
 - **FORDER** – As soon as `REQ` arrives and `K` is within the valid range, the value of `IN` is copied to the corresponding `OUTK`.
-
 - **CONFIRM** – After successful forwarding, `CNF` is sent, and the function block returns to the IDLE state.
 
 An incorrect index can result in a separate **ERROR** state (not defined in the XML, but common).
 
 ## Application Scenarios
-
 - **Signal Distribution** – A signal from a sensor can be selectively forwarded to various actuators or controllers.
-
 - **Routing** – In a modular machine control system, data packets can be sent to different modules depending on the operating state.
-
 - **Test/Simulation Environments** – Switching between real and simulated data streams by selecting the corresponding output.
 
 ## Comparison with Similar Function Blocks

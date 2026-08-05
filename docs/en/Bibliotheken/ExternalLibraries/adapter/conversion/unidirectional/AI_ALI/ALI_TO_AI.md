@@ -1,11 +1,8 @@
 # ALI_TO_AI
-
 ![ALI_TO_AI](./ALI_TO_AI.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **ALI_TO_AI** function block is a composite function block (FB) that converts an **ALI adapter** (input of a LINT value interface) into an **AI adapter** (output of an INT value interface). It serves to convert data from a LINT-based adapter to the INT-based adapter type without requiring the user to implement the conversion themselves.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -62,27 +59,19 @@ The entire process is atomic within a single cycle – delays only occur due to 
 
 ## Technical Features
 - **Pure Adapter Coupling**: The block does not contain its own state logic or timing.
-
 - **Use of IEC 61131 Conversion**: The actual type conversion is performed by the standardized block `F_LINT_TO_INT`.
-
 - **Simple Composition**: All connections are direct and without intermediate logic.
-
 - **Type- and Event-Driven**: The conversion is only executed when an event occurs at the ALI input.
-
 
 ## State Overview
 As a composite function block without its own state diagram, **ALI_TO_AI** does not have its own state machine. The internal conversion function block `F_LINT_TO_INT` operates according to the simple pattern:
 
 - **IDLE**: Waiting for an event.
-
 - **CONVERT**: Executing the conversion and outputting the result.
 
 ## Application Scenarios
-
 - **System Coupling**: When a sensor module provides LINT values via an ALI adapter, but the control system expects INT values via an AI adapter.
-
 - **Protocol or Interface Adaptation**: Integration of components from different manufacturers that use different adapter types.
-
 - **Data Path Cleanup**: Simplifying the signal flow through defined conversion at a central location.
 
 ## Comparison with Similar Function Blocks

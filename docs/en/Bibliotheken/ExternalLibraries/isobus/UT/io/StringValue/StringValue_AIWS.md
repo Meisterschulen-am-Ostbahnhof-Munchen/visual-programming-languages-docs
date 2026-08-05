@@ -1,12 +1,8 @@
 # StringValue_AIWS
-
 ![StringValue_AIWS](./StringValue_AIWS.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **StringValue_AIWS** is an input-service interface block for processing wide-string data (UTF-16) in an ISOBUS context. It provides an adapter-based interface through which external resources can input strings. The block acts as a wrapper for the internal block *StringValue_IWS* and offers a standardized initialization and request interface.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -68,13 +64,9 @@ The event `REQ` initiates a request to provide a new wide-string value. The actu
 The module encapsulates all the logic for initialization and communication with the underlying wide-string service and provides a uniform adapter interface to the outside.
 
 ## Technical Features
-
 - **Wide-String Support**: The module is designed for UTF-16 (Wide Strings) and is therefore particularly suitable for international character sets (Unicode).
-
 - **Adapter-based communication**: The use of a unidirectional adapter (`AIWS`) allows for a clean separation between service logic and the resource interface.
-
 - **ISOBUS compliance**: The object ID (`u16ObjId`) is assigned the initial value `ID_NULL`, indicating ISOBUS-specific assignment.
-
 - **Event-driven processing**: Both initialization and data requests are triggered by explicit events, making the function block suitable for use in time-critical environments.
 
 ## State overview
@@ -89,13 +81,9 @@ The function block does not have an explicit state machine; its behavior is cont
 
 4. **Error Handling** – If an error occurs during initialization, `QO` is set to `FALSE`, and a corresponding message `STATUS` is output.
 
-
 ## Application Scenarios
-
 - **Input of Unicode text** into agricultural operator terminals (ISOBUS-UT) – e.g., for vehicle names, field names, or product designations.
-
 - **Configuration interface** for ISOBUS devices that require wide-string parameters.
-
 - **Connection of external input devices** (keyboards, touchscreens) to an ISOBUS control unit via a standardized adapter interface.
 
 ## Comparison with Similar Modules

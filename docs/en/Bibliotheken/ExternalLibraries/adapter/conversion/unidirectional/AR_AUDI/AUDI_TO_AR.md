@@ -1,12 +1,8 @@
 # AUDI_TO_AR
-
 ![AUDI_TO_AR](./AUDI_TO_AR.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block `AUDI_TO_AR` is a composite function block (FB) that converts a UDINT-sized integer received via a unidirectional AUDI adapter into a REAL value and outputs it via a unidirectional AR adapter. It encapsulates the conversion logic, thus enabling clean interface adaptation between different adapter types.
-
 ## Interface Structure
 
 This FB has no direct event or data inputs/outputs. All communication takes place exclusively via adapter interfaces.
@@ -52,11 +48,8 @@ None.
 6. The converted REAL value is written from `Convert.OUT` to the data input `AR_OUT.D1` and is thus available at the AR adapter.
 
 ## Technical Features
-
 - The conversion uses an IEC 61131-3 standard function block (`F_UDINT_TO_REAL`), which is instantiated within the Composite FB.
-
 - The adapters are implemented as unidirectional interfaces, which enforces a clear data flow direction (from the AUDI to the AR adapter).
-
 - The Composite FB does not generate any state logic of its own, but delegates all processing to the internal conversion function block.
 
 ## State Overview
@@ -64,17 +57,12 @@ None.
 The function block does not have its own state machine. Its functionality follows the simple sequence:
 
 - **Waiting for input event** – as long as `AUDI_IN.E1` is not active, the function block remains passive.
-
 - **Conversion** – after `AUDI_IN.E1` arrives, the integrated `F_UDINT_TO_REAL` is executed.
-
 - **Output** – after successful conversion, `AR_OUT.E1` is triggered and the real value is provided.
 
 ## Application Scenarios
-
 - Connecting a UDINT-based counter (e.g., pulse counter) to a controller that expects real values for calculations or visualizations.
-
 - Converting adapter signals between different data types in a modular, adapter-based communication architecture.
-
 - As a building block in a library for type-safe adapter conversions.
 
 ## Comparison with similar building blocks
@@ -82,7 +70,6 @@ The function block does not have its own state machine. Its functionality follow
 This function block is specifically designed for the combination of AUDI (UDINT) and AR (REAL) adapters. Comparable building blocks exist for other data types, e.g.:
 
 - `SINT_TO_AR` (SINT → REAL)
-
 - `AUDI_TO_AI` (UDINT → INT)
 
 The advantage of this building block lies in its clear encapsulation and reusability within an adapter-based system design.

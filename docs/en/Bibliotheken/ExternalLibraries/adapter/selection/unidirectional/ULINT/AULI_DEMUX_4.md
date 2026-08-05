@@ -1,13 +1,9 @@
 # AULI_DEMUX_4
-
 ![AULI_DEMUX_4](./AULI_DEMUX_4.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **AULI_DEMUX_4** is a generic demultiplexer that forwards an incoming AULI adapter data stream to one of four possible output adapters. Selection is made via a numeric index (K), which is evaluated when the REQ event is set. The function block is designed for use in agricultural automation (AULI) and allows for flexible signal distribution.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Name | Type | Comment |
@@ -62,40 +58,28 @@ The module operates in an event-driven manner:
 
 4. After successful transmission, the **CNF** event is output.
 
-
 The function block is generic (GenericClassName `'GEN_AULI_DEMUX'`) and can be adapted to various AULI subtypes through parameterization.
 
 ## Technical Features
-
 - **Adapter-based**: Input and output are handled exclusively via AULI adapters, enabling loose coupling and modular reuse.
-
 - **Unidirectional**: Data flows only from socket **IN** to one of the plugs; feedback is not supported.
-
 - **Generic**: The function block is defined as a template (Generic FB), allowing it to be used with different AULI data types.
-
 - **Simple Indexing**: Index K is implemented as a UINT (values 0 to 3). For invalid values, the behavior is undefined (no range check in the FB interface).
-
 
 ## State Overview
 
 The function block does not have an explicit state machine (ECC) in the XML. Its functionality is reduced to a pure event-data transaction:
 
 - **IDLE**: Waiting for REQ.
-
 - **ACTIVE**: Copying the IN adapter value to the OUT adapter determined by K.
-
 - **DONE**: Outputting CNF and returning to IDLE.
 
 A detailed state graph is not required because the function block operates atomically.
 
 ## Application Scenarios
-
 - **Distribution of Sensor Data**: An AULI sensor (e.g., soil moisture) is sequentially forwarded to various actuator units.
-
 - **Channel Switching**: Controlling four different loads (valves, motors) via a common data source.
-
 - **Test and Simulation Environments**: Targeted addressing of individual components in an AULI-based test platform.
-
 
 ## Comparison with Similar Components
 
@@ -115,7 +99,6 @@ The **AULI_DEMUX_4** is a compact, generic demultiplexer for AULI adapters, idea
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

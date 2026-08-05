@@ -1,13 +1,8 @@
 # AL_TO_ALI
-
 ![AL_TO_ALI](./AL_TO_ALI.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `AL_TO_ALI` is a composite function block (FB) for converting an AL adapter (LWORD) to an ALI adapter (LINT). It serves as an interface between LWORD-based and LINT-based data communication within the control logic. Internally, the block uses the conversion block `F_LWORD_TO_LINT` to perform the actual type conversion.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -43,16 +38,10 @@ The function block `AL_TO_ALI` is a composite function block (FB) for converting
 
 4. **Result:** The `ALI_OUT` adapter now forwards the new LINT data to the connected function block.
 
-
 ## Technical Features
-
 - **Type Conversion:** This function block converts an LWORD (64-bit sequence) into a LINT (64-bit signed integer). The conversion is bit-for-bit, meaning the binary representation is interpreted as a signed integer.
-
 - **Composition:** This is a composite function block that does not contain its own logic but relies on the standardized conversion function block `iec61131::conversion::F_LWORD_TO_LINT`.
-
 - **Adapter-Based Interface:** Input and output are exclusively via unidirectional adapters (`AL` and `ALI`), enabling a modular and type-checked connection in the 4diac IDE.
-
-
 - **Adapter-Based Interface:** - **Package Structure:** The FB is located in the package `adapter::conversion::unidirectional`.
 
 ## State Overview
@@ -60,38 +49,24 @@ The function block `AL_TO_ALI` is a composite function block (FB) for converting
 Since this is a composite FB, there is no separate state machine. The state logic is entirely determined by the internally used block `F_LWORD_TO_LINT`. This block operates in an event-driven manner:
 
 - **IDLE:** Wait for an event at the `REQ` input.
-
 - **PROCESSING:** Convert the LWORD to LINT (takes one step).
-
 - **FINISHED:** Output the converted value and send the `CNF` event.
 
-
 ## Application Scenarios
-
 - **PLC Data Conversion:** When a control program receives LINT values (e.g., counter readings or times) via an LWORD-based adapter and a LINT interface is required.
-
 - **Communication Adapter:** Used as an intermediary in an adapter chain to translate different data types between various hardware or software modules.
-
 - **Protocol Adaptation:** For example, converting raw LWORD data (e.g., from a bus system) into a LINT representation for further processing in the control logic.
 
 ## Comparison with Similar Function Blocks
-
 - **AL_TO_AL (LWORD ↔ LWORD):** Simple pass-through without conversion.
-
 - **ALI_TO_AL (LINT ↔ LWORD):** Performs the reverse conversion.
-
 - **F_LWORD_TO_LINT (direct conversion block):** Offers the same functionality, but without an adapter interface. `AL_TO_ALI` encapsulates this block and adds the adapter connection.
 
 ## Conclusion
 
 The `AL_TO_ALI` function block is a simple yet important converter that bridges the gap between LWORD-based and LINT-based adapter interfaces. Its composite structure keeps it clear and allows for flexible integration into existing 4diac projects. The use of standard conversion blocks ensures correct and efficient type conversion.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

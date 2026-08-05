@@ -1,12 +1,8 @@
 # ASR_SWITCH
-
 ![ASR_SWITCH](./ASR_SWITCH.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **ASR_SWITCH** function block acts as a demultiplexer for **ASR events** (SET/RESET). It forwards events received via the adapter socket `EI` to either the adapter plug `EO0` or `EO1`, depending on the Boolean value of the input `G`. This allows switching between two different signal paths in an automation application.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -56,14 +52,11 @@ When the event `EIG` occurs, the value of `G` is adopted. The function block rem
 2. **Forwarding `EI.SET`:**
 
 - `EI.SET` and `G = FALSE`: Transition to the state `G0_SET`, where `EO0.SET` is output.
-
 - `EI.SET` and `G = TRUE`: Transition to state `G1_SET`, where `EO1.SET` is output.
 
 3. **Forwarding from `EI.RESET`:**
 
 - `EI.RESET` and `G = FALSE`: Transition to state `G0_RESET`, where `EO0.RESET` is output.
-
-
 - `EI.RESET` and `G = TRUE`: Transition to state `G1_RESET`, where `EO1.RESET` is output.
 
 4. **Return:**
@@ -71,13 +64,9 @@ When the event `EIG` occurs, the value of `G` is adopted. The function block rem
 After the action is output, the ECC immediately (condition = `1`) returns to the start state `START` to process the next event.
 
 ## Technical Features
-
 - The function block works exclusively with the **unidirectional adapter type `ASR`**, meaning it can transport both SET and RESET events via the same adapter.
-
 - The switchover is **event-triggered** via `EIG` (non-cyclically).
-
 - No data outputs are required – all signaling is handled via the adapter plugs.
-
 - Due to the immediate reset to the start state, the module is ready to restart **deterministically and quickly**.
 
 ## State Overview
@@ -98,26 +87,17 @@ The following table summarizes the ECC states and the actions performed:
 
 | `G1_RESET` | `EI.RESET` at `G = TRUE` | Output `EO1.RESET` |
 
-
 All states (except `START`) return to `START` with an unconditional transition (`1`).
 
 ## Application Scenarios
-
 - **Control of two parallel process paths:** Depending on the position of a switch, SET/RESET signals are distributed to different parts of the system.
-
 - **Operating mode switching:** For example, between automatic and manual operation – a logical variable `G` determines which events affect which logic.
-
 - **Test environments:** A test frame can send the same events to different test objects by switching `G`.
 
-
 ## Comparison with Similar Function Blocks
-
 - **`SELECT` Function Block:** A classic multiplexer/demultiplexer usually works with data, not events. The **ASR_SWITCH** specializes in ASR event forwarding.
-
 - **`F_TRIG` / `R_TRIG` / `SR`:** These function blocks set or reset a memory function, but do not forward events. The **ASR_SWITCH** does not create states itself, but only channels existing events.
-
 - **Adapter-Based Solutions:** In the 4diac IDE, the use of adapters is typical for modular communication – the **ASR_SWITCH** is a prime example of the flexible coupling of function blocks.
-
 
 ** ## Conclusion
 
@@ -126,7 +106,6 @@ The **ASR_SWITCH** is a simple yet effective function block for demultiplexing S
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

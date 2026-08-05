@@ -1,13 +1,8 @@
 # ALR_D_FF_HYS
-
 ![ALR_D_FF_HYS](./ALR_D_FF_HYS.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **ALR_D_FF_HYS** function block implements a data latch (D flip-flop) with adjustable hysteresis. It receives a data value via an adapter socket and outputs the latched value via an adapter plug. The hysteresis is set during the initialization event and serves to suppress noise or small fluctuations in the input signal.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -61,11 +56,8 @@ The function block (FB) works internally with the block `E_D_FF_ANY_HYS`, which 
 3. **Output**: As soon as the latched value leaves the hysteresis band, the internal function block generates an event on `EO`, which is output externally as `Q.E1`, and the new value is available on `Q.D1`.
 
 ## Technical Features
-
 - The hysteresis is set exclusively on the `INIT` event and remains constant during operation.
-
 - The function block (FB) does not use its own state machine, but delegates all logic to the internal block `E_D_FF_ANY_HYS`.
-
 - The initial state of the latch is undefined; initialization with `INIT` is mandatory before valid latch operations can occur.
 
 ## State Overview
@@ -73,18 +65,12 @@ The function block (FB) works internally with the block `E_D_FF_ANY_HYS`, which 
 Since the FB implements the behavior via an internal block, there is no separate state diagram. The internal block `E_D_FF_ANY_HYS` typically operates with the following states:
 
 - **Initial** – Waiting for the hysteresis setting.
-
 - **Normal** – Latch operation with hysteresis band check (delayed output update).
-
 - **Output** – Sending the newly latched value via the output adapter.
 
-
 ## Application Scenarios
-
 - **Signal Conditioning**: Latching of measured values with noise suppression in automation technology.
-
 - **Debouncing**: Processing of switching signals where short pulses or bouncing need to be suppressed.
-
 - **Threshold Monitoring**: Detection of analog values that only assume a new valid state above or below a hysteresis band.
 
 ## Comparison with Similar Components

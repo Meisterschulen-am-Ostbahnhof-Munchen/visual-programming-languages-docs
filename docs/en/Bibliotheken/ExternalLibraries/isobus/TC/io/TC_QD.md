@@ -1,13 +1,8 @@
 # TC_QD
-
 <img width="1355" height="263" alt="image" src="https://github.com/user-attachments/assets/9eac6074-381e-43b4-a37b-11784ad4fd72" />
-
 * * * * * * * * * *
-
 ## Introduction
 The TC_QD function block is an output service interface function block for double-word output data. It serves as an interface for communication with external resources and enables the output of 32-bit data values via specified device elements.
-
-
 ![TC_QD](TC_QD.svg)
 
 ## Interface Structure
@@ -25,11 +20,9 @@ The TC_QD function block is an output service interface function block for doubl
 - **PARAMS** (STRING): Service Parameters
 - **OUT** (DWORD): Output Data for the Resource
 - **wDevElementNumb** (UINT): Requested TC Element Number for Output
-
 - **wDDI** (UINT): Output Data Dictionary Identifier
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Event Output Qualifier
 - **STATUS** (STRING): Service Status
 
@@ -38,7 +31,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The TC_QD function block initializes and manages communication with external output devices. Upon activating the INIT event, the service is initialized, configuring the parameters PARAMS, wDevElementNumb, and wDDI. The REQ event triggers the actual data output, sending the double-word value provided in the OUT input to the specified resource.
-
 
 ## Technical Features
 - Processes 32-bit data values (DWORD)
@@ -64,12 +56,10 @@ Compared to simpler output blocks, TC_QD offers enhanced functionality through:
 
 - DDI-based data identification
 - Configurable device element numbers
-
 - ISOBUS specification compatibility
 - Comprehensive status feedback
 
 ## 🛠️ Related exercises
-
 * [Exercise_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Conclusion

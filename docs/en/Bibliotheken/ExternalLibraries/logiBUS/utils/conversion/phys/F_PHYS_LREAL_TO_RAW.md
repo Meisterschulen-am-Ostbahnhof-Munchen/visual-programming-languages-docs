@@ -1,13 +1,8 @@
 # F_PHYS_LREAL_TO_RAW
-
 ![F_PHYS_LREAL_TO_RAW](./F_PHYS_LREAL_TO_RAW.svg)
-
 *Image not available*
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block F_PHYS_LREAL_TO_RAW converts a physical measured value in the LREAL data type into an ISOBUS-compliant raw value as a UDINT. Saturation limits are observed, and overflow and underflow states are signaled as Boolean outputs. The conversion follows the ISOBUS formula:
 
 **Display value = (Raw value + Offset) · Scaling**
@@ -59,7 +54,6 @@ This function block is suitable for applications that need to integrate physical
 
 This function block does not use adapters.
 
-
 ## Functionality
 
 The function block performs the following steps:
@@ -67,7 +61,6 @@ The function block performs the following steps:
 1. **Calculation of limits:**
 
 - Lower limit: `i32Offset * r32Scale`
-
 - Upper limit: `(i32Offset + 4294967295) * r32Scale`
 
 2. **Comparison and saturation:**
@@ -78,19 +71,13 @@ If `lrPhys < untere Grenze` is present → Raw value = **0**, `xUnder = TRUE`.
 
 - Otherwise → Raw value = `DINT_TO_UDINT( LREAL_TO_DINT( lrPhys / r32Scale ) - i32Offset )`, no overflow/underflow message.
 
-
 3. **Output:** The calculated raw value is provided at the unnamed `UDINT` output, and the event `CNF` is triggered.
 
 ## Technical Features
-
 - **ISOBUS Compliance:** The conversion follows the ISOBUS specification exactly (ISO 11783).
-
 - **Saturation Behavior:** Critical ranges are represented by the overflow/underflow outputs `xOver` and `xUnder`, allowing subsequent functions (e.g., alarms) to react.
-
 - **Scaling Unit:** The scaling factor `r32Scale` is of type `REAL` and is directly included in the calculation.
-
 - **Integer Conversion:** The conversion from LREAL via DINT to UDINT is performed using the rounding standard in IEC 61499 (truncation of decimal places).
-
 - **No State Machines:** The function block operates purely functionally without an internal state machine.
 
 ## State Overview
@@ -98,11 +85,8 @@ If `lrPhys < untere Grenze` is present → Raw value = **0**, `xUnder = TRUE`.
 The function block does not have an explicit state machine. The calculation is triggered by the event `REQ`; after one cycle, the result is provided at the data output and the event `CNF` is sent. The execution time is deterministic and depends only on the runtime environment.
 
 ## Application Scenarios
-
 - **Agricultural Control Units:** Conversion of sensor values (e.g., torque, pressure) into ISOBUS raw data for transmission to terminals or actuators.
-
 - **Diagnostics and Monitoring:** Detection of measurement range exceedances via `xOver`/`xUnder` to trigger warnings.
-
 - **Data Logging:** Preparation of physical measured values for archiving in ISOBUS format.
 
 ## Comparison with Similar Function Blocks
@@ -112,11 +96,8 @@ Typical alternatives are custom-written calculation functions or generic convers
 The F_PHYS_LREAL_TO_RAW offers the following advantages:
 
 - **Predefined parameterization** via the structure `NumericObjectPool_S` (object ID, scaling, offset, decimal places).
-
 - **Integrated saturation** and limit value monitoring.
-
 - **Reusable** in all logiBUS projects.
-
 
 Disadvantages compared to a custom solution include the reliance on the ISOBUS formula and the fixed data structure.
 

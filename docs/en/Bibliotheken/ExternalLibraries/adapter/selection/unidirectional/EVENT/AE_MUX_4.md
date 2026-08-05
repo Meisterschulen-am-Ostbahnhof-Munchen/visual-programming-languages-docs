@@ -1,13 +1,8 @@
 # AE_MUX_4
-
 ![AE_MUX_4](./AE_MUX_4.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AE_MUX_4** implements a 4-way multiplexer for AE adapters ("Analog Events"). Depending on an index **K**, it selects exactly one of the four input adapters (IN1..IN4) and forwards its signal to the output adapter **OUT**. The function block is designed as a generic (template-based) block and is instantiated as `GEN_AE_MUX`.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +12,6 @@ The function block **AE_MUX_4** implements a 4-way multiplexer for AE adapters (
 |----------|-------------|
 
 | **REQ** | Request to switch to the input determined by **K** |
-
 
 ### **Event Outputs**
 
@@ -43,7 +37,6 @@ No data outputs. Values are forwarded exclusively via the adapter interfaces.
 
 | Adapter | Direction | Type | Description |
 
-
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
@@ -68,7 +61,6 @@ No data outputs. Values are forwarded exclusively via the adapter interfaces.
 
 **IN4** | Socket | `adapter::types::unidirectional::AE` | Input 4 (K = 3) |
 
-
 **IN1** | Socket | `adapter::types::unidirectional::AE` | Input 4 (K = 3) |
 
 **IN2** | Socket | `adapter::types::unidirectional::AE` | Input 4 (K = 3) |
@@ -88,56 +80,38 @@ The module operates in an event-driven manner:
 3. Depending on **K**, the corresponding socket adapter is switched to the plug adapter **OUT**:
 
 - K = 0 → IN1
-
 - K = 1 → IN2
-
 - K = 2 → IN3
-
 - K = 3 → IN4
 
 4. After successful switching, the **CNF** event is output. The output adapter then continuously updates all further signal updates of the selected input.
 
 The module itself does not perform any signal processing – it functions solely as a selective connection.
 
-
 ## Technical Features
-
 - **Generic Type**: The function block (FB) is implemented as a generic class (`eclipse4diac::core::GenericClassName = 'GEN_AE_MUX'`). A user-defined type hash can be specified during declaration.
-
 - **No State Machine Implementation Visible**: The logic is presumably generated automatically by the 4diac IDE based on the interfaces or provided via a separate ECC file.
-
 - **Component-Based Use**: The inputs and outputs are defined as adapters, allowing the function block to be integrated into standardized AE transmission paths.
-
 - **Value Range of K**: The index is declared as `UINT`; values outside the range 0 to 3 are undefined and can lead to undefined behavior.
-
 
 ## State Overview
 
 Since there is no explicit state machine (ECC) in the XML, the behavior is simplified as:
 
 - **IDLE** – Waiting for a REQ event.
-
 - **ACTIVE** – Upon receipt of REQ: Multiplexer switching, output of CNF, return to IDLE.
 
 There are no persistent states that can be observed externally.
 
 ## Application Scenarios
-
 - **Selection of an analog signal** from up to four sources (e.g., sensors) for further processing in a subsequent AE component.
-
 - **Switching of measurement ranges** in a control engineering application without signal loss.
-
 - **Redundancy switching** to a substitute signal if the current input fails (due to a change in K).
 
-
 ## Comparison with Similar Function Blocks
-
 - **MUX function blocks for simple data types** (e.g., `MUX` for `INT`, `REAL`) operate analogously, but with data inputs/outputs instead of adapters.
-
 - **`AE_MUX_2` / `AE_MUX_8`** would be extensions with fewer or more inputs – the function block presented here covers four channels.
-
 - Compared to a **data multiplexer**, the adapter approach allows the transmission of complex, event-driven signal structures (events + data), as are common in IEC 61499.
-
 
 ## Conclusion
 
@@ -146,7 +120,6 @@ The **AE_MUX_4** is a compact, generic multiplexer for AE adapters. It enables c
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

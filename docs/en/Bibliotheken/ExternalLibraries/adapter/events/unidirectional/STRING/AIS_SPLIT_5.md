@@ -1,12 +1,8 @@
 # AIS_SPLIT_5
-
 ![AIS_SPLIT_5](./AIS_SPLIT_5.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AIS_SPLIT_5** serves as a generic splitter for adapters of type `AIS` (unidirectional). It receives an incoming AIS signal via a socket and forwards it to five separate AIS plugs. This allows a single adapter signal to be distributed to multiple target blocks.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -44,11 +40,8 @@ Plug (Output 4) | OUT4 | `adapter::types::unidirectional::AIS` | Fourth Outgoing
 This function block operates as a pure broadcast without its own logic or states. As soon as an event or data change arrives via socket `IN`, this signal is passed unchanged to all five plugs (`OUT1`–`OUT5`). Each plug can be connected to a different receiver function block, allowing the original signal to be processed simultaneously by multiple components.
 
 ## Technical Features
-
 - **Generic Function Block**: The function block is marked as a generic function block (`eclipse4diac::core::GenericClassName = 'GEN_AIS_SPLIT'`). This allows it to be instantiated in various contexts with appropriate AIS adapter types.
-
 - **No Event or Data Inputs/Outputs**: All communication takes place exclusively via the adapter interfaces. This makes it particularly simple and efficient.
-
 - **Unidirectional**: The adapter type `AIS` is unidirectional, meaning the signal direction is fixed (from the socket to the plugs). Feedback is not provided.
 
 ## State Overview
@@ -56,11 +49,8 @@ This function block operates as a pure broadcast without its own logic or states
 The module has no internal state logic (no ECC). There is no internal state machine or delay. Its operation is based on a rigid, combinational routing.
 
 ## Application Scenarios
-
 - **Signal Distribution in Control Systems**: An AIS signal supplied by a source (e.g., sensor or communication module) is to be passed on to several independent processing blocks.
-
 - **Test and Simulation Environments**: A test signal can be sent simultaneously to various monitoring or analysis modules.
-
 - **Redundant Processing**: The same signal is evaluated multiple times to detect errors or compare different algorithms.
 
 ## Comparison with Similar Components
@@ -74,7 +64,6 @@ The `AIS_SPLIT_5` is a simple yet effective generic function block for multiplyi
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

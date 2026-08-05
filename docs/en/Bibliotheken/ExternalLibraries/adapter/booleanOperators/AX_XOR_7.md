@@ -1,12 +1,8 @@
 # AX_XOR_7
-
 <img width="1009" height="436" alt="image" src="https://github.com/user-attachments/assets/8716bef5-f158-4685-87dd-32c92fc8a6d4" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX_XOR_7 function block is a generic function block for calculating the Boolean XOR operation with seven inputs. It allows the processing of up to seven input signals and outputs the result of the XOR operation.
-
 ![AX_XOR_7](AX_XOR_7.svg)
 
 ## Interface Structure
@@ -34,17 +30,12 @@ No direct data outputs available.
 - `IN2` - XOR input 2 (Adapter type: `adapter::types::unidirectional::AX`)
 - `IN3` - XOR input 3 (Adapter type: `adapter::types::unidirectional::AX`)
 - `IN4` - XOR input 4 (Adapter type: `adapter::types::unidirectional::AX`)
-
 - `IN5` - XOR input 5 (Adapter type: `adapter::types::unidirectional::AX`)
-
 - `IN6` - XOR input 6 (Adapter type: `adapter::types::unidirectional::AX`)
-
 - `IN7` - XOR input 7 (Adapter type: `adapter::types::unidirectional::AX`)
 
 ## Functionality
 This function block performs the XOR operation across all seven inputs. The XOR operation returns a "TRUE" signal if and only if an odd number of inputs are set to "TRUE". An even number of "TRUE" inputs results in a "FALSE" output.
-
-
 
 ``` ## Technical Features
 - Generic function block with the generic class name `GEN_AX_XOR`
@@ -56,7 +47,6 @@ This function block performs the XOR operation across all seven inputs. The XOR 
 The function block has no internal state and operates stateless. The output is calculated solely based on the current input values.
 
 ## Application Scenarios
-
 - Parity checking in data transmission systems
 - Safety-critical controllers with majority voting
 - Error detection in binary signal chains

@@ -1,13 +1,9 @@
 # NumericValue_PHYS
-
 (Image not available)
-
 ![NumericValue_PHYS](./NumericValue_PHYS.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **NumericValue_PHYS** is an input service interface block according to ISO 11783-6. It returns a physical REAL value by reading a raw digital value (DWORD) from the ISOBUS object pool and converting it into a physical value, taking into account a predefined scaling and offset. The conversion is performed entirely in software (within the function block).
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -63,7 +59,6 @@ The internal process is controlled via the INIT and REQ events and utilizes four
 1. **INIT**
 
 - The passed structure parameter `stObj` is copied via the sub-function block `F_MOVE` (of type `iec61131::selection::F_MOVE`).
-
 - The copied value (`stObj.u16ObjId`) is forwarded to the sub-function block `NumericValue_ID`, which is thereby initialized (`NumericValue_ID.INIT`).
 
 2. **REQ** (or re-output after INIT)
@@ -77,28 +72,12 @@ The sub-module `F_RAW_TO_PHYS` receives the integer value and the original struc
 Finally, the output `IND` is activated, and the calculated value is output at the data output `rPhys`.
 ...``
 
-```
-
-```````````````````````````````````````````````````````````````````````````````````````````````````````````````````
-
-```
-
-
-````
-
-`````
-
-``````
-
 ``` The chaining ensures that the current raw value is read from the object pool and calculated for each REQ.
 
 ## Technical Features
 - **Standard Compliance**: The function block complies with the ISO 11783-6 standard (ISOBUS).
-
 - **Software Scaling**: Unlike purely hardware interfaces, the conversion (scaling/offset) is performed within the function block, allowing for flexible adaptation without changing the peripherals.
-
 - **Reusable Sub-Function Blocks**: The sub-function blocks used (`NumericValue_ID`, `F_DWORD_TO_UDINT`, `F_RAW_TO_PHYS`, `F_MOVE`) are standardized logiBUS or IEC 61131 function blocks and can be used in other contexts.
-
 - **Object Pool Structure**: The input structure `stObj` contains all necessary parameters (object ID, scale, offset, decimal places) and can be managed centrally.
 
 ## State Overview
@@ -115,17 +94,12 @@ Reading the raw value, conversion, and output of the physical value.
 After successful initialization, `REQ` can be executed any number of times.
 
 ## Application Scenarios
-
 - **ISOBUS Vehicle Control**: Reading sensor data (e.g., speed, pressure, temperature) from the ISOBUS object pool and converting it into physical units.
-
 - **Agricultural Automation**: Processing measured values from ISOBUS-compatible devices (tractors, implements) for further control or visualization.
-
 - **Test and Simulation Environments**: Replacing real hardware components with software emulation using defined scaling.
 
 ## Comparison with Similar Components
-
 - **NumericValue_ID**: Returns only the raw DWORD value without scaling/offset. `NumericValue_PHYS` extends this value with the physical conversion.
-
 
 **NumericValue_ID**: Returns only the raw DWORD value without scaling/offset. - **Analog input blocks** (e.g., `AI_SCALED`) in PLC systems: These often scale directly in the hardware driver. `NumericValue_PHYS`, on the other hand, operates purely in software and is therefore more flexible with regard to parameterization.
 

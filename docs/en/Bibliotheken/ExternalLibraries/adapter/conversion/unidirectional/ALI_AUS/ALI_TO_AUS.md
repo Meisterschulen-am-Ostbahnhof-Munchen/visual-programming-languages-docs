@@ -1,30 +1,20 @@
 # ALI_TO_AUS
-
 ![ALI_TO_AUS](./ALI_TO_AUS.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **ALI_TO_AUS** is a composite function block according to IEC 61499, used to convert an **ALI adapter** (data of type **LINT**, Long Integer) into an **AUS adapter** (data of type **USINT**, Unsigned Short Integer). The block encapsulates the necessary conversion logic to enable a simple and type-safe connection between differently typed adapter interfaces.
-
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **ALI_IN.E1** (via adapter socket) – triggers the conversion as soon as an event arrives from the connected ALI source.
 
-
 ### **Event Outputs**
-
 - **AUS_OUT.E1** (via adapter plug) – signals the completion of the conversion to the downstream OFF sink.
 
 ### **Data Inputs**
-
 - **ALI_IN.D1** (via adapter socket) – the LINT (Long Integer) value to be converted.
 
 ### **Data Outputs**
-
 - **AUS_OUT.D1** (via adapter plug) – the converted USINT (Unsigned Short Integer) value.
 
 ### **Adapter**
@@ -54,11 +44,8 @@ The function block internally contains an instance of the function block **F_LIN
 Event and data flows are coupled entirely via the internal network; the user only sees the two adapter interfaces.
 
 ## Technical Features
-
 - **Reusable Converter**: The block uses the standardized **F_LINT_TO_USINT** (iec61131::conversion), so the conversion logic does not need to be reimplemented.
-
 - **Adapter-Based**: The entire interface is implemented as a unidirectional adapter, simplifying exchange and reuse in larger systems.
-
 - **License**: The block is provided under the **Eclipse Public License 2.0** (EPL-2.0).
 
 ## State Overview
@@ -66,11 +53,8 @@ Event and data flows are coupled entirely via the internal network; the user onl
 Since this is a composite block, there is no explicit top-level state machine. The internal converter **F_LINT_TO_USINT** operates in an event-driven manner and performs exactly one conversion step after each **REQ** event. The function block remains inactive as long as no event is present.
 
 ## Application Scenarios
-
 - **Interface Adaptation**: Connecting components that use **LINT** (e.g., high-resolution counters) to those that expect **USINT** (e.g., simple actuator controllers).
-
 - **System Integration**: When a predefined adapter type (ALI) is available and a different adapter type (AUS) is required – e.g., when combining modules from different manufacturers.
-
 - **Protocol Conversion**: Used in data preprocessing chains where long integer values need to be mapped to a smaller range.
 
 ## Comparison with Similar Function Blocks

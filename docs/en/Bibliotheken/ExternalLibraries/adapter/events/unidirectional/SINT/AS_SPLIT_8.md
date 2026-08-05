@@ -1,13 +1,9 @@
 # AS_SPLIT_8
-
 ![AS_SPLIT_8](./AS_SPLIT_8.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AS_SPLIT_8** is used to split an incoming *Application Specific* (AS) adapter data stream into eight identical outputs. It is provided as a generic function block (generic FB) and is specifically designed for distributing adapter data within an IEC 61499-based control application.
-
 ## Interface Structure
-
 ### **Event Inputs**
 None.
 
@@ -47,34 +43,23 @@ None.
 ## Functionality
 The module operates purely on an adapter basis, without using events or data inputs/outputs. The adapter data stream present at socket `IN` is internally mirrored to all eight output plugs (`OUT1` … `OUT8`). Each output passes on exactly the same data that is present at the input. No delay, filtering, or modification takes place. Branching occurs passively and without active runtime logic (no state machine).
 
-
 ## Technical Features
-
 - **Pure Adapter Block**: The function block (FB) has neither event nor data interfaces in the traditional sense; all data transmission occurs via the adapter connections.
-
 - **Generic Implementation**: By declaring it as a generic FB (`GenericClassName = 'GEN_AS_SPLIT'`), the block can be used for any AS adapter type, provided the underlying adapter type is `unidirectional::AS`.
-
 - **No State Machine**: Due to the lack of events, an Execution Control Chart (ECC) is not required. Distribution is continuous.
-
 - **Simple 1:8 Splitting**: Optimized for situations where a signal needs to be distributed to multiple subsequent modules.
 
 ## State Overview
 Not applicable – the block has no internal states or sequence control.
 
 ## Application Scenarios
-
 - **Parallel Distribution of Sensor Data**: A single adapter that... B. If a tank's fill level data is provided, it is distributed across eight monitoring or controlling functional units.
-
 - **Signal Multicasting in Industry 4.0**: Distribution of a control command to multiple actuators or subsystems.
-
 - **Test Environments** for simulating multiple receivers of a data stream.
 
 ## Comparison with Similar Function Blocks
-
 - **AS_SPLIT_2 / AS_SPLIT_4**: Analog function blocks with fewer outputs. AS_SPLIT_8 offers maximum distribution in one step with eight outputs.
-
 - **Event-based splitters (e.g., E_SPLIT)**: These operate with events and distribute them according to a time-controlled process. In contrast, this function block continuously distributes all adapter data without event control.
-
 - **Data-based splitters (e.g., ANY_DISTRIBUTE)**: Split data values but require additional events. AS_SPLIT_8 is optimized for simple adapter forwarding.
 
 ## Conclusion

@@ -1,13 +1,8 @@
 ![FT_PT1](FT_PT1.svg)
-
 #FT_PT1
-
 Low pass filter (PT1)
-
 FT_PT1 is a low pass filter with a programmable time T and factor K.
-
 ## Interface
-
 ### Event inputs
 
 | Name | Comment | With |

@@ -1,13 +1,9 @@
 # AND_8_BOOL
-
 <img width="1383" height="422" alt="image" src="https://github.com/user-attachments/assets/6babe236-7f4e-4a2f-abde-9d35eaf1ef76" />
-
 * * * * * * * * * *
 ## Introduction
 The function block `AND_8_BOOL` is a standard function block for calculating the logical AND operation. It performs a bitwise AND operation on eight Boolean input values and outputs the result to a single Boolean output. The function block follows the event-driven execution model of IEC 61499.
-
 ![AND_8_BOOL](AND_8_BOOL.svg)
-
 ## Interface Structure
 ### **Event Inputs**
 * **REQ (Normal Execution Request):** Triggers the execution of the function block. Upon receipt of this event, all eight data inputs are read, the AND operation is calculated, and the result is provided at output `OUT`. The acknowledgment event `CNF` is then generated.
@@ -54,9 +50,7 @@ The result `OUT = IN1 AND IN2 AND IN3 AND IN4 AND IN5 AND IN6 AND IN7 AND IN8` i
 
 ## Technical Features
 * **Generic Block:** The block is implemented as an instance of a generic AND template (`GEN_AND`), ensuring a consistent architecture within the library.
-
 * **Fixed Input Count:** Unlike variable or configurable blocks, `AND_8_BOOL` has exactly eight fixed inputs. For a different number of operands, a corresponding block (e.g., `AND_2_BOOL`, `AND_16_BOOL`) must be used.
-
 * **Event-driven execution:** The calculation only takes place upon the arrival of a `REQ` event. Continuous sampling of the inputs without an event does not result in an output update.
 
 ## State overview
@@ -64,22 +58,14 @@ The result `OUT = IN1 AND IN2 AND IN3 AND IN4 AND IN5 AND IN6 AND IN7 AND IN8` i
 The function block has no internal state (memory-free / combinatorial). Its behavior depends solely on the current values at the data inputs at the time of the `REQ` event. Previous calculations have no influence on the current result.
 
 ## Application scenarios
-
 * **Safety-critical connections:** Monitoring of multiple safety switches (e.g., emergency stop, safety gates, light barriers) where all conditions must be met to signal a safe state (`OUT=TRUE`).
-
-
 * **Multiple Conditions in Process Sequences:** Checks whether all prerequisites for starting a machine cycle are met (e.g., "Workpiece inserted," "Pressure reached," "Temperature reached," "Protective cover closed").
-
 * **Status Message Combination:** Combines multiple error or status bits into a single, summarized signal.
 
 ## ⚖️ Comparison with Similar Blocks
-
 * **`AND_2_BOOL`, `AND_16_BOOL`, etc.:** These blocks offer the same logical function, but for a different number of inputs (2, 16, etc.). The choice of block depends on the required number of operands. See: [AND_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_8.md)]
-
 * **`OR_n_BOOL`:** Performs a logical OR operation. The result is `TRUE` if at least one input is `TRUE`.
-
 * **`XOR_n_BOOL`:** Performs an exclusive OR (XOR) operation.
-
 * **Continuous Function Blocks (IEC 61131-3):** In IEC 61131-3, AND operations are typically implemented as continuous contacts or operations in languages such as FBD or LD. The `AND_8_BOOL` function block, however, is event-driven and explicitly requires a trigger event.
 
 ## Conclusion

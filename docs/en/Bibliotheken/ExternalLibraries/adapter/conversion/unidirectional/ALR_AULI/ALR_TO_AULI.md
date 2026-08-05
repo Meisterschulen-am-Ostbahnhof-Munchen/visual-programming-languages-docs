@@ -1,12 +1,8 @@
 # ALR_TO_AULI
-
 ![ALR_TO_AULI](./ALR_TO_AULI.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_TO_AULI** is a **composite FB** for the unidirectional conversion of an **LREAL adapter signal** (type `ALR`) into a **ULINT adapter signal** (type `AULI`). By internally using the IEC 61131 standard FB `F_LREAL_TO_ULINT`, the floating-point number (LREAL) is converted into an unsigned integer (ULINT) and provided via an output adapter. This block is particularly suitable for integrating floating-point data sources into systems that expect an integer adapter interface.
-
-
 ## Interface Structure
 The FB has **no direct** event or data inputs/outputs. Communication takes place exclusively via the two **adapters** (socket & plug). The following tables describe the signals provided via the adapters.
 
@@ -51,7 +47,6 @@ The FB has **no direct** event or data inputs/outputs. Communication takes place
 
 | `AULI_OUT` | `adapter::types::unidirectional::AULI` | Plug (Output) | Outputs the converted ULINT value with an acknowledgment event. |
 
-
 ## Functionality
 The FB operates according to the **gearbox principle** of a composite block:
 
@@ -68,24 +63,17 @@ The FB operates according to the **gearbox principle** of a composite block:
 The entire conversion is **event-driven** and without its own state logic.
 
 ## Technical Features
-
 - **License**: The function block is provided under the **Eclipse Public License 2.0** (see copyright notice).
-
 - **Standard Compliance**: The internally used conversion block `F_LREAL_TO_ULINT` complies with the IEC 61131-3 standard.
-
 - **No State Machine**: As a composite function block (FB), this block has no inherent state logic – the conversion is purely combinatorial.
-
 - **Unidirectional Adapters**: Input and output are separate adapter types that define a clear signal direction.
 
 ## State Overview
 Since this is a **composite FB without its own state machine**, there is no explicit state overview. The functionality is event-triggered and behaves like a **combinatorial function**: An event at the input, after internal processing, results in exactly one event at the output.
 
 ## Application Scenarios
-
 - **Connecting floating-point sensors** to a controller that only processes integer adapter signals (e.g., in agricultural technology).
-
 - **Data processing** in an adapter-based communication chain when the source delivers LREAL, but the destination expects ULINT.
-
 - **Replacement of manual type conversions** in systems that rely on the standardized IEC 61131 functions.
 
 ## Comparison with similar function blocks

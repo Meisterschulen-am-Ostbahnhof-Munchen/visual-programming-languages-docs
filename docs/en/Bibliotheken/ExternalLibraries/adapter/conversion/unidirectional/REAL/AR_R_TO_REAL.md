@@ -1,13 +1,8 @@
 # AR_R_TO_REAL
-
 ## Introduction
 The AR_R_TO_REAL function block is a composite function block used to convert the AR adapter format into a REAL value.
-
-
 ![AR_R_TO_REAL](AR_R_TO_REAL.svg)
-
 ## Interface Structure
-
 ### **Event Inputs**
 - No direct event inputs available
 

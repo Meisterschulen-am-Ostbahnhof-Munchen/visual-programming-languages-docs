@@ -1,13 +1,8 @@
 # Exercise_010b8_AX: Toggle Flip-Flop with IE Button_A1 BT_PRESSED_LATCHED
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-
 This article describes the logiBUS® exercise `Uebung_010b8_AX`.
-
 ----
-
 ## Purpose of the Exercise
-
 Events for latching buttons.
 
 -----

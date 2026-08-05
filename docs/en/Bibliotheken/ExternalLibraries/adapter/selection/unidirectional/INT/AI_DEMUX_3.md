@@ -1,13 +1,9 @@
 # AI_DEMUX_3
-
 ![AI_DEMUX_3](./AI_DEMUX_3.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AI_DEMUX_3** implements a generic demultiplexer for an analog input value. Based on an index parameter, the value present at the adapter input is redirected to one of three adapter outputs. The block operates unidirectionally and is event-driven.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Event | Description |
@@ -59,29 +55,21 @@ When a **REQ** event is received, the module reads the index **K**. The current 
 After successful transmission, the **CNF** event is triggered. If **K** has an invalid value (other than 1–3), the request is ignored or no output is activated. The manufacturer's documentation specifies the exact behavior.
 
 ## Technical Features
-
 - **Generic Block:** The function block is defined as a generic type (`GEN_AI_DEMUX`) and can be used for different adapter instances of type `adapter::types::unidirectional::AI`.
-
 - **Unidirectional Adapters:** All adapters (both inputs and outputs) are unidirectional, meaning data flows only from the socket to the plug.
-
 - **No Data Outputs:** Output is not provided via traditional data outputs but exclusively via adapters, which facilitates modular wiring with other components.
 
 ## State Overview
 
 The block does not have an explicit state machine. Its functionality is purely event-driven: A **REQ** event is followed by a **CNF** event after processing. No internal state is stored.
 
-
 ## Application Scenarios
-
 - **Distribution of a measured value** to multiple control components, e.g., in agricultural technology for simultaneously supplying several control units with an analog sensor value.
-
 - **Multiplexing in industrial plants**, when an analog signal needs to be supplied to different actuators depending on the operating mode.
-
 - **Prototyping and flexible interconnection** in modular automation systems that rely on adapter-based data flows.
 
 ## Comparison with Similar Function Blocks
 Compared to a classic **demultiplexer function block** with data outputs, the **AI_DEMUX_3** offers the advantage of adapter interfaces. This simplifies wiring at the function block level and increases reusability. Disadvantages may include the smaller number of outputs (3 instead of variable) and the requirement for the adapter type **AI**. A comparable **demultiplexer function block** with generic data outputs requires additional type conversions.
-
 
 ## Conclusion
 

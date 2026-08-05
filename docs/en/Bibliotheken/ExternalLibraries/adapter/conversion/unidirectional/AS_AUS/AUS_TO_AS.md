@@ -1,12 +1,8 @@
 # AUS_TO_AS
-
 ![AUS_TO_AS](./AUS_TO_AS.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The function block **AUS_TO_AS** is a composite function block (FB) for converting a unidirectional OFF adapter (based on the USINT data type) into a unidirectional AS adapter (based on the SINT data type). It serves as a standardized interface between components that use different unsigned/signed integer types.
-
 ## Interface Structure
 The FB has no direct event or data inputs/outputs, but only two adapter interfaces:
 
@@ -40,7 +36,6 @@ The interface of the adapters themselves contains:
 ## Functionality
 The function block is implemented as a composite and contains an internal function block `Convert` of type `iec61131::conversion::F_USINT_TO_SINT`, which performs the actual value conversion.
 
-
 1. **Data Acquisition:** An incoming USINT value is provided via socket `AUS_IN.D1`.
 
 2. **Triggering:** An event at output `AUS_IN.E1` triggers input `REQ` of the conversion block.
@@ -60,44 +55,28 @@ The connections in the FBNetwork are:
 
 ## Technical Features
 - **Adapter-Based:** The module functions as a pure adapter converter and can be seamlessly integrated into existing adapter-oriented systems.
-
-
 - Event: `AUS_IN.D1` → `Convert.IN`
-
 - Data: `Convert.OUT` → `AS_OUT.D1`
 
 ## Technical Features
-
 - **Adapter-Based:** The module functions as a pure adapter converter and can be seamlessly integrated into existing adapter-oriented systems.
-
-
 - Event: `AUS_IN.E1` → `Convert.IN`
-
 - Event: `Convert.OUT` → `AS_OUT.D1`
-
 - **Adapter-Based:** - **Composite Structure:** Conversion is performed by an internal, standardized IEC 61131 converter, ensuring reliable and certified conversion.
-
 - **Unidirectional Interface:** Data and event flows are strictly unidirectional (from input to output).
-
 - **No Explicit State Machine:** Control is purely event-driven via adapter events. There are no internal states.
 
 ## State Overview
 The function block (FB) has no visible state machine. It behaves like a transparent gateway that triggers the conversion upon each input event and provides the result at the output.
 
 ## Application Scenarios
-
 - **Integration of components** with different data types, e.g., when a sensor delivers USINT data, but a subsequent controller expects SINT values.
-
 - **Adapter Conversion** in modular control systems based on unidirectional adapters (e.g., according to IEC 61499).
-
 - **Safety-critical systems** where precise type conversion (without overflow) is essential – the internal function block `F_USINT_TO_SINT` is specification-compliant.
 
 ## Comparison with similar function blocks
-
 - **Simple converters like `F_USINT_TO_SINT`:** Only convert scalar values but do not use adapters. `AUS_TO_AS` encapsulates this conversion in an adapter-based function block.
-
 - **`INT_TO_DINT` adapter:** Other type conversions (e.g., INT to DINT) follow the same pattern but differ in bit width and sign handling.
-
 - **Bidirectional adapters:** Unlike bidirectional variants, this function block is designed for only one data flow, which reduces complexity.
 
 ## Conclusion

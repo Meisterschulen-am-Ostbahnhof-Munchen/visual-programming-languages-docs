@@ -1,13 +1,9 @@
 # GET_LREAL
-
 ![GET_LREAL](./GET_LREAL.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `GET_LREAL` provides read access to a `LREAL` variable (64-bit floating-point number) which is passed as an InOut parameter. The read value is buffered internally and made available at the output `OUT`. Execution is triggered by an event.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Event | Data Type | Comment |
@@ -47,11 +43,8 @@ No adapters available.
 3. After successful reading, the event `CNF` is output. The value of `OUT` is retained until the next execution.
 
 ## Technical Features
-
 - The source `IN` is declared as an **InOut variable**. It must be linked to an actual variable (e.g., a global or hardware resource) by the calling environment.
-
 - The function block buffers the read value: as long as no new `REQ` pulse is received, `OUT` returns the last read state.
-
 - Both parameters (`IN` and `OUT`) are initialized with the value `0.0`.
 
 ## State Overview
@@ -64,11 +57,8 @@ Since this is a simple function block (SimpleFB), there is only one ECC state:
 | REQ | `OUT := IN;` | CNF |
 
 ## Application Scenarios
-
 - **Buffered reading of a high-frequency process variable** (e.g., temperature or pressure) to keep the value constant during the control cycle.
-
 - **Accessing a shared memory variable** in a multitasking environment where decoupled read speed is desired.
-
 - **Preparing data for downstream calculations** that rely on a stable, buffered floating-point value.
 
 ## Comparison with Similar Components

@@ -1,39 +1,26 @@
 # AND_6
-
 ![AND_6](https://user-images.githubusercontent.com/116869307/214143980-5f9fcd38-c66e-4627-9ad6-6695d954dd53.png)
-
 * * * * * * * * * *
 ## Introduction
 The AND_6 function block is a generic function block for calculating the bitwise Boolean AND operation with six inputs. It implements a standard function according to IEC 61131-3 and performs a logical AND operation at the bit level for up to six input values.
-
 ![AND_6](AND_6.svg)
-
 ## Interface Structure
 
 ### **Event Inputs**
 - **REQ** (Normal Execution Request): Starts the execution of the AND operation. Triggers the processing of the input data.
 
 ### **Event Outputs**
-
 - **CNF** (Execution Confirmation): Signals the completion of the calculation and the availability of the result.
 
-
 ### **Data Inputs**
-
 - **IN1** (ANY_BIT): AND Input 1
-
 - **IN2** (ANY_BIT): AND Input 2
-
 - **IN3** (ANY_BIT): AND Input 3
-
 - **IN4** (ANY_BIT): AND Input 4
-
 - **IN5** (ANY_BIT): AND Input 5
-
 - **IN6** (ANY_BIT): AND Input 6
 
 ### **Data Outputs**
-
 - **OUT** (ANY_BIT): AND result of the bitwise operation of all six inputs
 
 ### **Adapter**

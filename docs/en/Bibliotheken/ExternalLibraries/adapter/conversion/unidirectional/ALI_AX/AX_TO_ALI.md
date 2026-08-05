@@ -1,11 +1,8 @@
 # AX_TO_ALI
-
 ![AX_TO_ALI](./AX_TO_ALI.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **AX_TO_ALI** is a composite function block (FB) that converts a unidirectional AX adapter (BOOL) into a unidirectional ALI adapter (LINT). It was developed to convert BOOL values received via an AX socket into LINT values and output them via an ALI plug. The block internally uses the IEC 61131 conversion function `F_BOOL_TO_LINT`.
-
 ## Interface Structure
 The AX_TO_ALI has no direct event or data inputs/outputs. All communication takes place exclusively via adapters.
 
@@ -52,23 +49,16 @@ This enables synchronous, event-driven conversion from BOOL to LINT.
 Copyright © 2026 HR Agrartechnik GmbH.
 
 - **Author & Version**: Developed by Franz Höpfinger, Version 1.0, February 17, 2026.
-
 - **Adapter Package**: Uses adapters from the `adapter::types::unidirectional` package, which are designed for one-way data and event transmission.
-
 - **Internal Implementation**: The conversion is performed using the IEC 61131 function block `F_BOOL_TO_LINT` from the library `iec61131::conversion`. This function block operates deterministically and does not require intermediate storage.
-
 - **Hash Attribute**: The function block contains an empty type hash attribute (`eclipse4diac::core::TypeHash`).
 
 ## State Overview
 The AX_TO_ALI function block does not have its own state machine. It forwards events and data directly to the internal conversion function block and outputs the result without delay. Since the internal function block `F_BOOL_TO_LINT` is pure function logic without state management, the entire composite function block behaves stateless. After each event at the AX adapter, the corresponding output is immediately generated at the ALI adapter.
 
-
 ## Application Scenarios
-
 - **Type Conversion in Adapter Chains**: When a BOOL value arrives in an IEC 61499 application via a unidirectional AX adapter, but subsequent function blocks expect a LINT value (e.g., for counter functions or analog value processing).
-
 - **Interface Adaptation**: Connecting binary sensors (BOOL) to control logic that works with integer LINT values.
-
 - **Event-Driven Data Conversion**: Simple and fast conversion without intermediate storage, ideal for time-critical paths.
 
 ## Comparison with Similar Function Blocks
@@ -80,7 +70,6 @@ The AX_TO_ALI is a compact, license-compliant composite function block for relia
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

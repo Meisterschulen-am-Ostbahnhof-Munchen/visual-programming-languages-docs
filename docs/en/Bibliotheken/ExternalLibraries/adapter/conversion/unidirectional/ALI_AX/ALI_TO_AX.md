@@ -1,12 +1,8 @@
 # ALI_TO_AX
-
 ![ALI_TO_AX](./ALI_TO_AX.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **ALI_TO_AX** is a composite function block that converts an adapter of type **ALI** (containing a LINT value) into an adapter of type **AX** (containing a BOOL value).
-
 The conversion follows the rule: A LINT value other than 0 is interpreted as a BOOL value **TRUE**, and a value equal to 0 as **FALSE**.
 
 The function block serves as a bidirectional bridge between adapters based on different data types.
@@ -14,12 +10,9 @@ The function block serves as a bidirectional bridge between adapters based on di
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **ALI_IN.E1** – Input event from the ALI adapter. Triggers processing.
 
-
 ### **Event Outputs**
-
 - **AX_OUT.E1** – Output event to the AX adapter. Sent after successful processing.
 
 ### **Data Inputs**
@@ -52,13 +45,11 @@ The function block internally uses the comparison function block **F_NE** ("Not 
 
 2. The event `ALI_IN.E1` triggers the function block `F_NE` via its `REQ` input.
 
-
 ``` 3. In `F_NE`, the input value (`IN1`) is compared with the constant value `LINT#0` (`IN2`).
 
 4. The result `OUT` is a BOOL:
 
 - **TRUE** if `IN1 ≠ 0`
-
 - **FALSE** if `IN1 = 0`
 
 5. After the comparison is complete, `F_NE` sends a `CNF` event, which triggers the output adapter `AX_OUT` via its `E1`.
@@ -68,15 +59,10 @@ The function block internally uses the comparison function block **F_NE** ("Not 
 Thus, any LINT value (including negative numbers) is converted into a binary signal.
 
 ## Technical Features
-
 - **Pure Logic Conversion**: No scaling or thresholding takes place. Any non-zero value is interpreted as `TRUE`.
-
 - **Composite Function Block Use**: The function block encapsulates the adapter conversion in a reusable unit and allows for easy integration into larger networks.
-
 - **Event-Driven**: Processing only occurs upon an incoming event (`ALI_IN.E1`). The output is only updated after successful processing.
-
 - **License**: The function block is licensed under the **Eclipse Public License 2.0** (EPL-2.0).
-
 
 ## State Overview
 
@@ -90,21 +76,14 @@ Since this is a composite function block without its own state machine, the stat
 
 There are no loops, time delays, or error states – the function is deterministic and error-free.
 
-
 ## Application Scenarios
-
 - **Signal Conversion in Control Systems**: When a LINT-based protocol (e.g., counter readings, encoders) needs to be converted into simple binary information (e.g., "active," "presence").
-
 - **Adapter Bridges**: Used in systems that employ heterogeneous adapter types to enable communication between components with different data types.
-
 - **Test Environments**: Fast conversion of numerical values into Boolean signals for debugging or simulation.
 
 ## Comparison with Similar Function Blocks
-
 - **Direct Compare Function Block**: Instead of `F_NE`, a `F_EQ` (equal) followed by negation could also be used – functionally identical.
-
 - **Threshold Function Blocks (e.g., Greater_than)**: Would require an explicit threshold; `ALI_TO_AX` makes a hard zero decision.
-
 - **Type conversions (e.g., LINT_TO_BOOL)**: Some libraries offer primitive converters – however, these usually do not operate at the adapter level. `ALI_TO_AX` is specifically designed for adapter interfaces.
 
 ## Conclusion

@@ -1,13 +1,8 @@
 # Exercise_007d3: Flasher with E_CYCLE and E_T_FF
-
 ![Uebung_007d3_network](./Uebung_007d3_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise implements a randomly controlled flasher using the function blocks `E_CYCLE`, `FB_RANDOM`, `E_D_FF_ANY_HYS`, `F_MOVE`, and `F_GT`. A cyclic clock triggers the generation of a random value, which, via a flip-flop with hysteresis and a comparator, switches a digital output. The flasher thus simulates an irregular on/off behavior.
-
 ## Function Blocks Used
 
 | Block Name | Type | Parameters | Short Description |
@@ -26,7 +21,6 @@ This exercise implements a randomly controlled flasher using the function blocks
 
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QX` | QI = TRUE, Output = Output_Q1 | Digital output module that forwards the passed signal (`OUT`) to the physical address `Output_Q1`. |
 
-
 ## Program Flow and Connections
 
 1. **Clock Generation**
@@ -37,12 +31,9 @@ This exercise implements a randomly controlled flasher using the function blocks
 
 This event is passed via the event connection to the input `REQ` of `FB_RANDOM`. `FB_RANDOM` calculates a random REAL value between 0 and 1 and outputs it at the data output `VAL`. Simultaneously, it signals completion via `CNF`.
 
-
 3. **Flip-Flop with Hysteresis**
 
 The `CNF` event triggers the clock input `CLK` of `E_D_FF_ANY_HYS`. The data value of `FB_RANDOM.VAL` is applied to the data input `D`. Due to the set hysteresis of 0.95, the output `Q` is only set to TRUE if the random value significantly exceeds the previous threshold; if it falls below the threshold, it is reset after a corresponding delay. The output `Q` is a BOOL value.
-
-
 
 ``` 4. **Type Conversion**
 
@@ -52,13 +43,11 @@ After the flip-flop, the BOOL value is converted to a REAL number (TRUE → 1.0,
 
 The converted value is sent via the data connection to input `IN1` of `F_GT`. This input compares it to the constant `IN2 = 0.49`. If `IN1` is greater, output `OUT` is set to TRUE; otherwise, it is set to FALSE.
 
-
 6. **Output to Digital Output**
 
 The result of the comparison (`F_GT.OUT`) is both fed as a data value to the input `OUT` of the digital output module `DigitalOutput_Q1` and triggered via the event connection (`F_GT.CNF → DigitalOutput_Q1.REQ`). `DigitalOutput_Q1` then outputs the value to the physical line `Output_Q1`.
 
 The entire process repeats with each clock cycle of `E_CYCLE` (every 1 ms), resulting in an irregular flashing signal at the output. This signal is delayed by hysteresis and further shaped by the threshold value.
-
 
 ## Summary
 
@@ -67,7 +56,6 @@ This exercise demonstrates the combination of cyclic event control, random value
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

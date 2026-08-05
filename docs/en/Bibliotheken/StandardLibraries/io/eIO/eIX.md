@@ -1,52 +1,35 @@
 # eIX
-
 <img width="1435" height="298" alt="image" src="https://github.com/user-attachments/assets/cae6a064-563d-41dd-9f8e-9cb9bb401bc6" />
-
 * * * * * * * * * *
-
 ## Introduction
 The eIX function block is an input service interface for Boolean input data with event-based triggering. It serves as an interface between the control logic and physical input devices and enables the querying of digital input signals.
-
-
 ![eIX](eIX.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Service Initialization - Initializes the function block with parameters
-
 - **REQ**: Service Request - Triggers a query of the input signal
 
 ### **Event Outputs**
-
 - **INITO**: Initialization Acknowledgement - Confirms successful initialization
-
 - **CNF**: Service Acknowledgement - Confirms the processed service request
-
 - **IND**: Resource Indication - Signals a status change of the input
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Event Input Qualifier - Enables/disables processing
-
 - **PARAMS** (STRING): Service Parameters - Configuration parameters for the service
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Event Output Qualifier - Processing status
-
 - **STATUS** (STRING): Service status - Error or status information
-
 - **IN** (BOOL): Input data from the resource - Current value of the digital input
 
 ### **Adapter**
-
 - **eCONF**: Configuration of event-based triggering - Adapter for trigger configuration
 
 ## Functionality
 The eIX block acts as a service interface for digital inputs. During initialization (INIT), the service parameters are configured. Targeted queries of the input signal can be triggered via REQ events. The block returns the current input values via CNF and can report asynchronous status changes via IND.
-
 
 ## Technical Features
 - Event-based query mechanisms

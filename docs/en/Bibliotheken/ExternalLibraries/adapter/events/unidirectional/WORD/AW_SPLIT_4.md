@@ -1,13 +1,8 @@
 # AW_SPLIT_4
-
 ![AW_SPLIT_4](./AW_SPLIT_4.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `AW_SPLIT_4` distributes an incoming AW adapter (unidirectional) to four identical AW output adapters. The block is designed generically and can be used with different AW types.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -43,11 +38,8 @@ None (output occurs exclusively via the adapter plugs).
 This function block acts as a passive distributor: Every value (or data packet) arriving via socket `IN` is forwarded unchanged to all four plugs `OUT1` to `OUT4`. No processing, buffering, or time synchronization takes place. The entire data flow is uneventful and purely adapter-based.
 
 ## Technical Features
-
 - **Generic Function Block**: The function block is declared with the generic name `GEN_AW_SPLIT`. This allows for late binding to specific AW adapter types (e.g., `AT_AW`, `CT_AW`, etc.) at compile or configuration time.
-
 - **Unidirectional Communication**: The adapters used are of type `unidirectional::AW`, meaning data flows only in one direction. There are no return channels or acknowledgments.
-
 - **No Dynamics**: The function block (FB) has no events, states, or time-dependent logic. It is purely combinatorial.
 
 ## State Overview
@@ -55,11 +47,8 @@ This function block acts as a passive distributor: Every value (or data packet) 
 Not applicable – the FB does not contain a state machine (ECC) and operates entirely in a data-driven manner.
 
 ## Application Scenarios
-
 - Distribution of a single sensor or actuator signal path across multiple parallel evaluations.
-
 - Preparation of a data source for different consumers in a control application.
-
 - Generation of test or simulation points by multiplying an AW data stream.
 
 ## Comparison with similar function blocks

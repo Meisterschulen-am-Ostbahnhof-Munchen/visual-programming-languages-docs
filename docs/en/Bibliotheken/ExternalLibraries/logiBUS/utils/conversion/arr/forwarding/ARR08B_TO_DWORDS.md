@@ -1,12 +1,8 @@
 # ARR08B_TO_DWORDS
-
 This function block converts an 8-byte array into two 32-bit data words (DWORDs). It is used to split a contiguous 8-byte data block into two 4-byte integer values.
-
 ![ARR08B_TO_DWORDS](./ARR08B_TO_DWORDS.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **ARR08B_TO_DWORDS** is a pure conversion function block that creates two separate DWORD values from an incoming 8-byte array. The conversion is performed byte by byte, with the first four bytes assigned to the first output (OUT_00) and the last four bytes to the second output (OUT_01). The function block is triggered by an event (REQ) and outputs a confirmation event (CNF) after the conversion is complete.
 
 ## Interface Structure
@@ -49,7 +45,6 @@ The **ARR08B_TO_DWORDS** is a pure conversion function block that creates two se
 
 No adapters available.
 
-
 ## Functionality
 
 This function block performs a direct byte-by-byte copy from the input array to the output variables:
@@ -60,7 +55,6 @@ This function block performs a direct byte-by-byte copy from the input array to 
 
 The assignment is performed in the structured text body:
 
-```
 OUT_00.%B0 := IN[0];
 OUT_00.%B1 := IN[1];
 OUT_00.%B2 := IN[2];
@@ -69,28 +63,20 @@ OUT_01.%B0 := IN[4];
 OUT_01.%B1 := IN[5];
 OUT_01.%B2 := IN[6];
 OUT_01.%B3 := IN[7];
-```
 The function block operates without delay or state memory; the outputs are updated immediately upon arrival of the REQ event, and the CNF event is triggered instantly.
 
 ## Technical Features
-
 - **Endianness**: The function block interprets the array in little-endian format – the first byte (index 0) is assigned to the least significant byte of the DWORD. This assumption is typical for many industrial protocols and systems.
-
 - **No Array Length Check**: The array is assumed to be exactly 8 bytes. A different input size would lead to undefined behavior.
-
 - **Functional Function Block**: The function block is purely functional and has no internal states.
 
 ## State Overview
 
 The function block has no internal state machine. It operates event-driven and immediately returns the CNF signal after each activation. The outputs remain active until the next REQ activation.
 
-
 ## Application Scenarios
-
 - **Data Packet Decomposition**: Separation of an 8-byte telegram into two 32-bit values, e.g., for communication with industrial field devices (CANopen, Modbus, etc.).
-
 - **Sensor Value Processing**: Splitting an 8-byte raw data block from sensors that deliver two physical measured values (4 bytes each).
-
 - **Conversion in the logiBUS Environment**: Within the `logiBUS::utils::conversion::arr::forwarding` package, this is a standard function block for forward conversion of array data.
 
 ## Comparison with Similar Function Blocks

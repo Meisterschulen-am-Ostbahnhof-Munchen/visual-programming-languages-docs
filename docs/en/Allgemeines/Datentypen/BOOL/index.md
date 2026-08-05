@@ -1,13 +1,9 @@
 # Data Type Details: BOOL
-
 ## Description
 Boolean Variable
-
 ## Normative Definition
 According to **DIN EN 61131-3**, this data type is specified as follows:
-
 | Property | Value |
-
 | :--- | :--- |
 
 | **Bits** | 1 |
@@ -21,9 +17,7 @@ In IEC 61131-3 and IEC 61499, this type is used for declaring variables and in f
 
 When used as a literal, a prefix can be used, e.g., `BOOL#...`.
 
-
 ## 🛠️ Related exercises
-
 * [Uebung_001_AX_b](../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
 * [Uebung_002a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
 * [Uebung_002a4](../../../Uebungen/test_B/Uebungen_doc/Uebung_002a4.md)

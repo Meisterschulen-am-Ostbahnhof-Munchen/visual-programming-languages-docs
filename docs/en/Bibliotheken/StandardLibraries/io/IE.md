@@ -1,60 +1,40 @@
 # IE
-
 ## 🎧 Podcast
-
 * [4diac IDE: Your "Hello World" of Automation – The Blinking Tutorial Local](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Hello-World-der-Automatisierung--Das-Blinking-Tutorial-Lokal-e36971r)
-
 * [4diac IDE: Your Open-Source Toolkit for Distributed Industrial Automation according to IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Open-Source-Werkzeugkasten-fr-verteilte-Industrieautomatisierung-nach-IEC-61499-e36821e)
-
 * [4diac IDE: How the IEC 61499 Standard is Revolutionizing Industrial Automation](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Wie-der-IEC-61499-Standard-die-Industrieautomatisierung-revolutioniert-e36756a)
-
 * [4diac Presentation: Target Groups, Structure, and Unique Selling Proposition Sharpening](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-Prsentation-Zielgruppen--Struktur-und-Alleinstellungsmerkmal-Schrfen-e38ckbo)
-
 * [Taming the Software Dragon: Industrial Automation and the Future of Production](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Den-Software-Drachen-zhmen-Industrielle-Automatisierung-und-die-Zukunft-der-Produktion-e372eg1)
 
 ## 📺 Video
-
 * [The Great Migration](https://www.youtube.com/watch?v=XcBu7y6ch4E)
 * [The Art of Soldering (](https://www.youtube.com/watch?v=I6Srdxx6fzU))
-
 * The World of Standardization (](https://www.youtube.com/watch?v=9phDmkJVaGM))
-
 * Soldering Like a Pro (](https://www.youtube.com/watch?v=8ulMWcxaB-c))
-
 * The Secret of the Field (](https://www.youtube.com/watch?v=MmMrEXum4w4))
 
 ## Introduction
 The IE (Input Event) function block is a service interface function block for processing event input data. It serves as an interface between the control logic and external input devices or signals and enables the initialization, querying, and indication of input events.
-
 
 ![IE](IE.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Service Initialization - Initializes the function block with parameters
-
 - **REQ**: Service Request - Triggers a query of the input state
 
 ### **Event Outputs**
-
 - **INITO**: Initialization Acknowledgement - Confirms successful initialization
-
 - **CNF**: Service Acknowledgement - Confirms the processed service request
-
 - **IND**: Resource Indication - Signals incoming events from the hardware
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Event Input Qualifier - Enables/disables event processing
-
 - **PARAMS** (STRING): Service Parameters - Configuration parameters for the service
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Event Output Qualifier - Status of the Event Processing
-
 - **STATUS** (STRING): Service status - Feedback on the current operating state
 
 ### **Adapter**
@@ -62,7 +42,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The IE function block operates as a bidirectional interface for input events. During initialization (INIT), the service parameters are configured. Targeted queries of the input state can be performed via REQ events. Simultaneously, the block can asynchronously generate IND events when input events are spontaneously detected by the hardware.
-
 
 ## Technical Features
 - Supports both poll-based (REQ/CNF) and interrupt-based (IND) operating modes
@@ -80,7 +59,6 @@ The function block goes through the following main states:
 4. **Indication Active**: Processing a spontaneous input event
 
 ## Application Scenarios
-
 - Querying digital inputs (e.g., pushbuttons, switches)
 - Monitoring sensor signals
 - Interface to external input devices
@@ -93,11 +71,9 @@ Compared to simpler input blocks, IE offers extended functionality:
 
 - Compared to pure I/O blocks: Supports both poll-based and event-based queries
 - Compared to static input blocks: Dynamic parameterization at runtime
-
 - Enhanced status feedback for improved error diagnosis
 
 ## 🛠️ Related Exercises
-
 * [Exercise_004a](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a.md)
 * [Exercise_004a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2.md)
 * [Exercise_004a2_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_2.md)
@@ -265,11 +241,7 @@ Compared to simpler input blocks, IE offers extended functionality:
 ## Conclusion
 The IE function block provides a flexible and robust solution for handling input events in 4diac-based control systems. Its ability to process both synchronous queries and asynchronous indications makes it particularly suitable for applications requiring both reactive and proactive input processing.
 
-
-``` ---
-
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

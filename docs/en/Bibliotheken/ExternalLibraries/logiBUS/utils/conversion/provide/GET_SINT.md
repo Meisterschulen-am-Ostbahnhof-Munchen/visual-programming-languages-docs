@@ -1,13 +1,8 @@
 # GET_SINT
-
 ![GET_SINT](./GET_SINT.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **GET_SINT** function block is used to read a value of the data type `SINT` (signed short integer) from a variable declared as `InOut` and provide it as a buffered output. It is typically used to access a shared variable or a physical input without modifying the original value. The function block operates according to the **IEC 61499** standard.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -46,7 +41,6 @@ This function block does not have traditional data inputs. Instead, it uses a va
 
 None.
 
-
 ## Functionality
 
 The function block performs a simple copy operation:
@@ -60,13 +54,9 @@ The function block performs a simple copy operation:
 The InOut variable `IN` allows direct access to an external variable or memory location without requiring it to be defined as a separate input or output. The function block buffers the read value, ensuring that the output `OUT` remains stable even after changes to the source, until the next request is made.
 
 ## Technical Features
-
 - **Use of InOut Variables**: `IN` is declared as `InOut`, meaning it can be both read and written. In this case, it is only read, allowing for flexible coupling with the calling network.
-
 - **Buffering**: The output `OUT` stores the read value until the next update by `REQ`. This prevents unwanted side effects from changes to the source.
-
 - **No State Logic**: The function block consists of a single state (`REQ`) that reacts immediately to each incoming event. No delay, no waiting for conditions.
-
 - **Initial Values**: Both `IN` and `OUT` are initialized with `0`, ensuring a defined start state.
 
 ## State Overview
@@ -79,17 +69,12 @@ The function block uses a simple ECA state machine with exactly one state:
 
 | `REQ` | `REQ` Algorithm (OUT := IN) | `CNF` |
 
-
 - Every incoming `REQ` event triggers an immediate action and sends `CNF`. There are no branches, error states, or timing issues.
 
 ## Application Scenarios
-
 - **Reading Hardware Inputs**: When a SINT value needs to be read from an analog input chip or a programmable logic controller (PLC), `GET_SINT` can be used as an interface to capture the current value at a specific point in time.
-
 - **Accessing Shared Variables**: In a distributed control system, `GET_SINT` can be used to transfer the value of a global or peripheral variable into a local processing chain.
-
 - **Data Consistency**: Buffering ensures that the read value remains stable throughout the entire processing of the subsequent network, even if the source is updated asynchronously.
-
 
 ## Comparison with Similar Building Blocks
 

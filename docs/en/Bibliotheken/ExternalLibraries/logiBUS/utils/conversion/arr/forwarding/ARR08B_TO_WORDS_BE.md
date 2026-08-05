@@ -1,13 +1,8 @@
 # ARR08B_TO_WORDS_BE
-
 ![ARR08B_TO_WORDS_BE](./ARR08B_TO_WORDS_BE.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `ARR08B_TO_WORDS_BE` extracts four 16-bit words (WORD) from an 8-byte array (big-endian). It is primarily used to convert binary data streams stored in an ascending byte array and interpret them as an ordered word sequence. This block belongs to the package group `logiBUS::utils::conversion::arr::forwarding`.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -52,7 +47,6 @@ The function block `ARR08B_TO_WORDS_BE` extracts four 16-bit words (WORD) from a
 
 No adapters available.
 
-
 ## Functionality
 
 Upon arrival of a `REQ` event, the eight bytes of the input array `IN` are encoded into four 16-bit words in strict **big-endian order**:
@@ -65,13 +59,9 @@ Upon arrival of a `REQ` event, the eight bytes of the input array `IN` are encod
 The output event is then The event ``CNF`` is triggered, indicating the validity of all output values. This is implemented directly in the structured text portion of the function block, without an internal state machine.
 
 ## Technical Features
-
 - **Big-Endian Convention:** The first byte of a word (`IN[0]`, `IN[2]`, …) is the higher-order byte (`%B1`), and the second byte (`IN[1]`, `IN[3]`, …) is the lower-order byte (`%B0`).
-
 - **Fixed Array Size:** Exactly 8 bytes are expected; the array is declared as ``ARRAY[0..7] OF BYTE``.
-
 - **No side effects:** The function block is purely combinatorial – it requires no internal state and operates within a single event cycle.
-
 - **Typical use:** Converting data from binary protocols (e.g., CAN messages, Modbus registers, or serial streams) that are stored as byte arrays.
 
 ## State overview
@@ -109,7 +99,6 @@ The function block does not have its own state machine. It is triggered by the *
 | `ARR04B_TO_WORD` | Works with a 4-byte array and creates only one WORD. |
 
 | `BYTE_TO_WORD` | Converts two individual bytes into one WORD; requires separate concatenation. |
-
 
 `ARR08B_TO_WORDS_BE` focuses on the efficient, predefined partitioning of an 8-byte array into four words in big-endian order – ideal for standardized protocols.
 

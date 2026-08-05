@@ -1,62 +1,40 @@
 # 🔌 IORevPiAIO
-
 <img width="1354" height="423" alt="image" src="https://github.com/user-attachments/assets/165bf812-6c94-4b44-9d43-ee2d8f33454b" />
-
 * * * * * * * * * *
-
 ## Introduction
 The IORevPiAIO function block provides an interface for the analog I/O module of the Revolution Pi from KUNBUS GmbH. This module enables the control and reading of analog inputs and outputs, as well as RTD (Resistance Temperature Detector) sensors, via the Revolution Pi system.
-
-
 ![IORevPiAIO](IORevPiAIO.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **MAP**: Starts the pin mapping for all configured analog inputs and outputs
 
 ### **Event Outputs**
-
 - **MAPO**: Confirms successful pin mapping
-
 - **IND**: Displays status information from the resource manager
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Event Input Qualifier - Enables/Disables the function block
-
 - **AnalogInput_1** (STRING): Configuration for analog input 1
-
 - **AnalogInput_2** (STRING): Configuration for analog input 2
-
 - **AnalogInput_3** (STRING): Configuration for analog input 3
-
 - **AnalogInput_4** (STRING): Configuration for analog input 4
-
 - **RTD_1** (STRING): Configuration for RTD sensor 1
-
 - **RTD_2** (STRING): Configuration for RTD Sensor 2
-
 - **AnalogOutput_1** (STRING): Configuration for Analog Output 1
-
 - **AnalogOutput_2** (STRING): Configuration for Analog Output 2
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Event Output Qualifier - Operation Status
-
 - **STATUS** (WSTRING): Detailed Service Status Information
 
 ### **Adapters**
-
 - **BusAdapterIn** (Socket): Input adapter for Revolution Pi bus communication
-
 - **BusAdapterOut** (Plug): Output adapter for Revolution Pi bus communication
 
 ## Functionality
 The IORevPiAIO function block manages communication with the Revolution Pi Analog I/O module. Upon receiving the MAP event, all configured analog inputs and outputs, as well as RTD sensors, are initialized and assigned according to the string parameters. The block uses dedicated bus adapters for communication with the Revolution Pi hardware.
-
 
 ## Technical Features
 - Supports up to 4 analog inputs

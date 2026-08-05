@@ -1,13 +1,8 @@
 # AULI_TO_AUI
-
 ![AULI_TO_AUI](./AULI_TO_AUI.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_TO_AUI** is a composite function block (FB) that converts an **AULI** adapter (based on the data type `ULINT`) into an **AUI** adapter (based on the data type `UINT`). It is used when a 64-bit unsigned integer interface (`ULINT`) needs to be mapped to a 16-bit unsigned integer interface (`UINT`), for example, when connecting different sensor or actuator components in automation technology.
-
-
-
 ``` ## Interface Structure
 ### **Event Inputs**
 An event of type `AULI_IN` is provided via the adapter socket. This is forwarded internally to the conversion module.
@@ -17,7 +12,6 @@ An event of type `AUI_OUT` is output via the adapter plug as soon as the convers
 
 ### **Data Inputs**
 A data value of type `D1` (corresponding to `ULINT`) is received via the adapter socket `AULI_IN`.
-
 
 ### ### **Data Outputs**
 The adapter plug `AUI_OUT` outputs a data value of type `D1` (equivalent to `UINT`).
@@ -31,7 +25,6 @@ The adapter plug `AUI_OUT` outputs a data value of type `D1` (equivalent to `UIN
 | AULI_IN | Socket | `adapter::types::unidirectional::AULI` |
 
 | AUI_OUT | Plug | `adapter::types::unidirectional::AUI` |
-
 
 ## Functionality
 
@@ -51,20 +44,15 @@ The conversion is performed according to IEC 61131 standard `F_ULINT_TO_UINT`. V
 
 ## Technical Features
 - **Adapter-Based Encapsulation**: The module allows for the seamless replacement of adapters in the 4diac IDE without changing the logic of the surrounding network.
-
 - **Reuse of IEC standard conversion**: The actual type conversion is performed by the standardized IEC function block `F_ULINT_TO_UINT`, ensuring portability and correctness.
-
 - **No state storage**: The function block is purely combinatorial – after each execution, the current result is available at the output.
 
 ## State overview
 The function block does not have its own finite state machine. The internal conversion is event-driven and without internal states. The runtime is determined solely by the underlying `F_ULINT_TO_UINT` function block.
 
 ## Application scenarios
-
 - **Sensor integration**: A 64-bit sensor (e.g., high-resolution displacement measurement) is connected to a controller that only accepts 16-bit inputs.
-
 - **Communication Gateway**: Adapter interfaces between bus systems (e.g., CANopen with 64-bit data to PROFINET I device with 16-bit data).
-
 - **Data Reduction**: Targeted reduction of the resolution for subsequent processing steps (e.g., display or simple threshold logic).
 
 ## Comparison with similar components
@@ -87,7 +75,6 @@ The **AULI_TO_AUI** block is a practical solution for mapping 64-bit UINT data t
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,13 +1,9 @@
 # Data Type Details: LDT
-
 ## Description
 The **LDT** (Long Date and Time) data type combines date and high-resolution time in a single 64-bit element.
-
 ## Normative Definition
 According to **DIN EN 61131-3** (Table 10, No. 15b):
-
 | Property | Value |
-
 | :--- | :--- |
 
 | **Bits** | 64 Bits |

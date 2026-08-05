@@ -1,12 +1,8 @@
 # AX_FB_TON
-
 <img width="962" height="243" alt="image" src="https://github.com/user-attachments/assets/d92dd0e6-fa14-499e-8a97-5c1432d0df3e" />
-
 * * * * * * * * * *
-
 ## Introduction
 **Important note: This function block only functions correctly if it is called cyclically.**
-
 AX_FB_TON is a standardized timer function block according to IEC 61131-3 that implements on-delay timing and has adapter interfaces. After activation, the block waits a defined time before setting the output signal and provides the elapsed time.
 
 ![AX_FB_TON](AX_FB_TON.svg)
@@ -14,25 +10,19 @@ AX_FB_TON is a standardized timer function block according to IEC 61131-3 that i
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **REQ** (Event): Normal Execution Request (takes the value from PT); Calls the function block (must be called cyclically)
 
 ### **Event Outputs**
-
 - No direct event outputs available (control via adapter)
 
 ### **Data Inputs**
-
 - **PT** (TIME): Process time - defines the delay duration
 
 ### **Data Outputs**
-
 - **ET** (TIME): Elapsed time
 
 ### **Adapters**
-
 - **IN** (Socket): Receives input events and data (Type: `adapter::types::unidirectional::AX`)
-
 - **Q** (Plug): Sends output events and data (Type: `adapter::types::unidirectional::AX`)
 
 ## Functionality
@@ -62,19 +52,14 @@ The AX_FB_TON block functions as a power-on delay timer. The internal timer star
 4. **Reset**: IN becomes FALSE, timer stops, Q becomes FALSE, ET becomes 0.
 
 ## Application Scenarios
-
 - Classic power-on delays in PLC programming
-
 - Monitoring of process times with visualization of remaining runtime (via ET)
-
 - Cascading of time sequences in adapter-based systems
 
 ## ⚖️ Comparison with similar function blocks
 Compared to [AX_TON](../../events/unidirectional/BOOL/timers/AX_TON.md)], AX_FB_TON additionally offers the **ET** output for the elapsed time and strictly follows the behavior of the IEC 61131-3 TON block, while AX_TON is optimized more for the IEC 61499 E_TON.
 
-
 ## 🛠️ Related Exercises
-
 * [Exercise_020c3_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
 
 ## Conclusion

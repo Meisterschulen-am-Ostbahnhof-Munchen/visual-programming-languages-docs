@@ -1,13 +1,8 @@
 # Aux_QD
-
 <img width="1484" height="176" alt="image" src="https://github.com/user-attachments/assets/ddafadb6-6b79-43d3-9d30-dc888d6fca95" />
-
 * * * * * * * * * *
-
 ## Introduction
 The Aux_QD function block is an output service interface module for processing double-word output data (DWORD). It serves as an interface for auxiliary output functions and supports various auxiliary types for flexible data output.
-
-
 ![Aux_QD](Aux_QD.svg)
 
 ## Interface Structure
@@ -35,7 +30,6 @@ No adapter interfaces are available.
 
 ## Functionality
 The Aux_QD block processes double-word data (32-bit) and outputs it via auxiliary interfaces. During initialization (INIT), the service parameters are configured. The output data is sent to the corresponding resource via the REQ event. The block supports multiple auxiliary types and allows the parallel output of both values in a single operation.
-
 
 ``` ## Technical Features
 - Supports Auxiliary Types: 0, 1, 2, 3, 4, 6, 11, 12, 13

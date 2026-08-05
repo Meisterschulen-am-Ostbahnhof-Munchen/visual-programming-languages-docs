@@ -1,44 +1,30 @@
 # Q_EndPoint
-
 ![Q_EndPoint](https://user-images.githubusercontent.com/116869307/214147340-866900ae-dc9c-4cbd-a9e8-c8755d833674.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_EndPoint** is a standards-compliant function block for controlling line endpoints in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.26) specification for agricultural tax systems.
-
-
 ![Q_EndPoint](Q_EndPoint.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT`: Initialization Request (with object ID)
 - `REQ`: Endpoint Change Request (with position/direction)
 
 ### **Event Outputs**
-
 - `INITO`: Initialization Confirmation
 - `CNF`: Change Confirmation (with result data)
 
 ### **Data Inputs**
-
 - `u16ObjId` (UINT): Line Object ID
-
 - `u16Width` (UINT): New X End Position (0-65535 pixels)
-
 - `u16Height` (UINT): New Y-End Position (0-65535 pixels)
-
 - `u8LineDirection` (USINT): Line Direction (ISO 11783-6 B.27)
 
 ### **Data Outputs**
-
 - `STATUS` (STRING): Operating Status Message
-
 - `u16OldWidth` (UINT): Previous X-End Position
 - `u16OldHeight` (UINT): Previous Y-End Position
-
 - `u8OldLineDirection` (USINT): Previous Line Direction
 - `s16result` (INT): ISO-compliant Result Code
 
@@ -47,21 +33,17 @@ The **Q_EndPoint** is a standards-compliant function block for controlling line 
 1. **Initialization**:
 
 - `INIT` with Line Object ID
-
 - `INITO` confirms operational readiness
 
 2. **Endpoint Change**:
 
 - `REQ` with new position and direction parameters
-
 - Changes the endpoint and orientation of the line
-
 - `CNF` returns the result and the old values
 
 3. **Error Handling**:
 
 - ISO-standardized error codes
-
 - Detailed status messages
 
 ## Technical Features
@@ -100,7 +82,6 @@ The **Q_EndPoint** is a standards-compliant function block for controlling line 
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid instance |
 
 ## Application Scenarios
-
 - **Machine Visualization**: Dynamic Connecting Lines
 - **Diagrams**: Customizable Data Displays
 - **Technical Drawings**: Configurable Guidelines
@@ -117,7 +98,6 @@ The **Q_EndPoint** is a standards-compliant function block for controlling line 
 | Control | Endpoint | Full | Position Only |
 
 | Directions | 4 Options | 8 Options | None |
-
 
 ## Conclusion
 

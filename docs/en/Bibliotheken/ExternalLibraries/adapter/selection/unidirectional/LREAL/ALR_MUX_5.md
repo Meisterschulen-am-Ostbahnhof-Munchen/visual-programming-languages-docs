@@ -1,12 +1,8 @@
 # ALR_MUX_5
-
 ![ALR_MUX_5](./ALR_MUX_5.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **ALR_MUX_5** is a generic multiplexer for the adapter type `adapter::types::unidirectional::ALR`. It selects one of five input adapters (IN1 to IN5) and forwards its values via the output adapter OUT. The selection is made using the index K (an integer value from 0 to 4). The function block is controlled via the event input REQ and confirms execution with the output CNF.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -76,13 +72,9 @@ OUT | adapter::types::unidirectional::ALR | Output: returns the selected input v
 Data transmission is **unidirectional** from input to output. The function block is implemented generically and can be used for any adapter of type `adapter::types::unidirectional::ALR`, regardless of the specific contents of the adapter interface.
 
 ## Technical Features
-
 - **Generic Function Block**: The function block is declared as a generic class (`GEN_ALR_MUX`) and can be adapted to various ALR adapters by typing.
-
 - **Adapter-based**: All inputs and outputs are adapters of the same unidirectional type. This allows for flexible coupling with other function blocks that provide the same adapter.
-
 - **No internal states** except for readiness upon REQ – the function block operates purely combinatorially for each event.
-
 - **5 inputs** are hard-coded; expanding to other numbers requires a new version of the function block.
 
 ## State Overview
@@ -96,11 +88,8 @@ The function block does not have an explicit state machine. It remains in the **
 | IDLE | Waiting for REQ |
 
 ## Application Scenarios
-
 - **Signal switching** in automation technology: e.g. B. Selection of one of five sensor data streams (ALR format) for further processing.
-
 - **Test and simulation environments**: Switching between different test sources without rewiring.
-
 - **Multiplexing of ALR adapter data** in a central controller, where different data sources are activated depending on the operating mode.
 
 ## Comparison with similar function blocks

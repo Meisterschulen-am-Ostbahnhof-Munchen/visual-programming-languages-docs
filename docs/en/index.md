@@ -1,14 +1,12 @@
 ---
 myst:
-  enable_extensions: ["colon_fence", "admonition"]
-  html_meta:
-    "description lang=de": "Dokumentation für visuelle Programmiersprachen und IEC 61499"
-    "keywords": "IEC 61499, 4diac, SPS, Automatisierung, Visuelle Programmierung"
-    "property=og:locale": "de"
+enable_extensions: ["colon_fence", "admonition"]
+html_meta:
+"description lang=de": "Dokumentation für visuelle Programmiersprachen und IEC 61499"
+"keywords": "IEC 61499, 4diac, SPS, Automatisierung, Visuelle Programmierung"
+"property=og:locale": "de"
 * [PDF Handbook](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/en/pdf/visual-programming-languages-docs-en.pdf)
-
 ---
-
 
 # Wiki 4: Visual Programming Languages (IEC 61499)
 
@@ -20,13 +18,9 @@ myst:
 
 > **Visual programming (IEC 61499 / 4diac) is the central core method of the Framework Curriculum 2025** for creating and diagnosing automated and autonomous functions on agricultural and construction machinery (LandBauMechMstrV of September 9, 2024, effective August 1, 2025).
 
-
 * 📋 **[This is in the curriculum – Visual languages as a main curriculum topic]
-
 * ⚡ [Automated functions with IEC 61499 (LE 1.4 / 40 units)]
-
 * 🔍 [Fault diagnosis in automated & autonomous systems (LE 2.6 / 20 units)]
-
 * 🧩 [Systems engineering, signal flow & state machines (LE 1.1 / 160 units)]
 
 ---
@@ -35,16 +29,11 @@ myst:
 
 This documentation is part of the knowledge base of the Meisterschulen at Munich East Station.
 
-
 * **Useful Links:**
-
 * 📋 **[This is in the curriculum (Curriculum 2025)]
 * [🏠 Main Menu]
-
 * [🔍 Super Search (all wikis)]
-
 * [📄 Download PDF Manual]
-
 
 ---
 
@@ -55,133 +44,6 @@ Welcome to the world of graphical programming! This documentation provides a com
 ## 🚀 Getting Started
 
 Have you ever wondered how to create programs visually? Here you will find resources for beginners and advanced users – from the basics in **Blockly** or **Scratch** to professional applications in industry.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * : (This is in the curriculum (Curriculum 2025) - **Why Visual Programming?**
 
@@ -249,7 +111,6 @@ Visit our [Discussion Forum ](https://github.com/Meisterschulen-am-Ostbahnhof-Mu
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

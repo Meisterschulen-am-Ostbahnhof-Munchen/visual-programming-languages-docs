@@ -1,12 +1,8 @@
 # DataPanel_MI_IW_0_5V
-
 ![DataPanel_MI_IW_0_5V](./DataPanel_MI_IW_0_5V.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **DataPanel_MI_IW_0_5V** is a service interface function block (SIFB) for acquiring analog input signals in the voltage range **0 ... 5 V**. It provides the interface to an analog input channel of the DataPanel-MI-IW series and enables initialization, cyclic querying, and asynchronous reception of measured values via a bus system. The block is implemented as an IEC 61499-compliant FB and uses system-specific data types from the package `DataPanel::io::MI::AI`.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -77,11 +73,9 @@ Once the function block (FB) is initialized, a current measurement value can be 
 
 The resource can independently report changes in measured values or alarms. These are reported via the ``IND`` event with the corresponding value in ``IN``.
 
-
 In case of a negative value (`QI`) or an error, `QO` is set to `FALSE` and `STATUS` to an error description.
 
 ## Technical Features
-
 - **System-Specific Types**
 
 The function block uses the user-defined structures `DataPanel_MI_AI_S` (channel selection) and the constants `MI::MI_00` (address specification). These are defined in the package `DataPanel::io::MI::AI`.
@@ -89,7 +83,6 @@ The function block uses the user-defined structures `DataPanel_MI_AI_S` (channel
 - **Hysteresis**
 
 A hysteresis value can be specified via the input `AnalogInput_hysteresis` as a `WORD` value to suppress the noise of the analog signal.
-
 
 - **Channel Addressing**
 
@@ -115,15 +108,11 @@ Since the XML definition does not contain an ECC (Execution Control Chart), the 
 
 **ERROR** | Error status | – | Set QO=FALSE, STATUS=Error text |
 
-
 Asynchronous `IND` events can occur in the **READY** or **BUSY** states and result in the immediate availability of the value.
 
 ## Application Scenarios
-
 - **Agricultural Sensors** (e.g., level sensors, pressure sensors, temperature sensors with 0-5V output)
-
 - **Data Acquisition in Stationary Motors** or **Vehicle Control Units** of the DataPanel family
-
 - **Multi-Channel Analog Value Acquisition** through parallel instances of the FB with different `Input` and `u8SAMember` values
 
 ## Comparison with Similar Function Blocks

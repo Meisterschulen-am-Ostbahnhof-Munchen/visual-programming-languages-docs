@@ -1,13 +1,9 @@
 # AIS_MUX_4
-
 ![AIS_MUX_4](./AIS_MUX_4.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AIS_MUX_4** is a generic AIS multiplexer with four inputs. It selects one of the four AIS adapter inputs (`IN1`–`IN4`) based on an index value `K` (0–3) and forwards its data via the adapter output `OUT`. The block is controlled by the event `REQ`.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Name | Type | Comment |
@@ -61,30 +57,22 @@ _None. The output data is provided via the adapter plugin `OUT`.
 
 4. For values outside the range 0–3, the behavior is undefined (the function block relies on valid inputs).
 
-
 3. ## Technical Features
 
 - **Generic Type**: The function block is declared as a generic FB (`GenericClassName = 'GEN_AIS_MUX'`) and can be parameterized in various type instances.
-
 - **License**: Eclipse Public License 2.0 (EPL-2.0).
-
 - **Package Structure**: The function block is organized in the package `adapter::selection::unidirectional`.
-
 - **AIS Adapter**: All involved inputs and outputs use the same adapter type `adapter::types::unidirectional::AIS`, ensuring a uniform data structure.
 
 ## State Overview
 The function block does not have an explicit state machine. Its behavior is purely functional:
 
 - **Idle State**: No event is processed; the output `OUT` retains its last set value.
-
 - **Selection Execution**: After receiving `REQ`, the new index is applied and `OUT` is updated; subsequently, `CNF` is output.
 
 ## Application Scenarios
-
 - **Data Path Switching**: Selection of one of several AIS data sources in agricultural or automation control systems.
-
 - **Redundancy**: With multiple parallel AIS sensors, a specific source can be activated depending on the conditions.
-
 - **Testing and Diagnostics**: Switching between different measuring points for analysis purposes.
 
 ## Comparison with Similar Components
@@ -96,5 +84,4 @@ The `AIS_MUX_4` is a simple yet effective component for selecting one of four AI
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

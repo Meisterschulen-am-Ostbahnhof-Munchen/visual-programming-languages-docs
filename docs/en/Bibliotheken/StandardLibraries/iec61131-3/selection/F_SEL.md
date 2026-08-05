@@ -1,14 +1,9 @@
 # F_SEL
-
 ![image](https://user-images.githubusercontent.com/69573151/210802734-9caf89bd-f437-43d3-8ed5-294c89df8c3d.png)
-
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_sel.html>
-
 * * * * * * * * * *
-
 ## Introduction
 The F_SEL function block is a binary selector according to the IEC 61131-3 standard. It enables selection between two input values based on a control signal. The block is used for conditional data selection in control applications.
-
 
 ![F_SEL](F_SEL.svg)
 
@@ -21,30 +16,23 @@ The F_SEL function block is a binary selector according to the IEC 61131-3 stand
 - **CNF**: Confirmation of the requested service operation
 
 ### **Data Inputs**
-
 - **G**: Selector (BOOL) - Control signal for selection
-
 - **IN0**: Selectable Input Variable (ANY) - First Input
-
 - **IN1**: Selectable Input Variable (ANY) - Second Input
 
 ### **Data Outputs**
-
 - **OUT**: Selected Input (ANY) - Result of the selection
 
 ### **Adapters**
 No adapter interfaces available.
 
-
 ## Functionality
 When a REQ event arrives, the F_SEL block evaluates the selector input G:
 
 - If G = FALSE (0): OUT is set to the value of IN0
-
 - If G = TRUE (1): OUT is set to the value of IN1
 
 After the selection operation is complete, the CNF event is output with the calculated output value.
-
 
 ## Technical Features
 - Uses generic data types (ANY) for the inputs and outputs IN0, IN1, and OUT
@@ -72,11 +60,8 @@ Compared to other selection blocks, F_SEL offers:
 - Standardized Event Control according to IEC 61131-3
 
 ## 🛠️ Related Exercises
-
 * [Exercise_015](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)]
-
 * [Exercise_016](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)]
-
 * [Exercise_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)]
 
 ## Conclusion

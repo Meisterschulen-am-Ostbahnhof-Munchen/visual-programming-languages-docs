@@ -1,13 +1,8 @@
 # Exercise_004c5: Toggle Flip-Flop with IE using BUTTON_PRESS_END
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_004c5`.
-
 ----
-
 ## Objective of the Exercise
-
 Using the event `BUTTON_PRESS_END`.
 
 -----
@@ -15,7 +10,6 @@ Using the event `BUTTON_PRESS_END`.
 ## Functionality
 
 [cite_start]The function block `DigitalInput_CLK_I1` in `Uebung_004c5.SUB` reacts to every falling edge[cite: 1].
-
 
 ![Uebung_004c5_network](./Uebung_004c5_network.svg)
 

@@ -1,13 +1,8 @@
 # SPLIT_WORD_INTO_QUARTERS
-
 ## 🎧 Podcast
-
 * [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
-
 ----
-
 ![SPLIT_WORD_INTO_QUARTERS](https://github.com/user-attachments/assets/f26e7474-c9bf-4fb4-923f-d8c2ad4ac48e)
-
 * * * * * * * * * *
 ## Introduction
 The function block `SPLIT_WORD_INTO_QUARTERS` is used to split a 16-bit word into eight 2-bit quarter bytes. This is particularly useful when processing compressed data or extracting specific bit patterns.
@@ -15,20 +10,15 @@ The function block `SPLIT_WORD_INTO_QUARTERS` is used to split a 16-bit word int
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `REQ`: Starts processing the input word. Linked to the data input `IN`.
 
-
 ### **Event Outputs**
-
 - `CNF`: Signals the completion of processing. It is linked to all eight quarter-byte outputs.
 
 ### **Data Inputs**
-
 - `IN` (WORD): The 16-bit input word, which is split into quarter bytes.
 
 ### **Data Outputs**
-
 - `QUARTER_BYTE_00` to `QUARTER_BYTE_07` (BYTE): The eight extracted 2-bit quarter bytes. Each output contains one of the quarter bytes of the input word.
 
 ### **Adapters**
@@ -39,7 +29,6 @@ The function block uses bitmasks and shift operations to extract the individual 
 
 ## Technical Features
 - Uses constants (`quarterconst::WORD_QUARTER_XX` and `quarterconst::SHIFT_QUARTER_XX`) for the masks and shift positions.
-
 - Extraction is performed by combining AND operations and right shifts.
 
 ## State Overview
@@ -50,17 +39,12 @@ The function block uses bitmasks and shift operations to extract the individual 
 3. **Completion**: Sends the `CNF` event and outputs the quarter bytes.
 
 ## Application Scenarios
-
 - Decoding compressed data.
-
 - Extraction of control bits from a status word.
-
 - Processing of coded sensor data.
 
 ## ⚖️ Comparison with similar function blocks
-
 - **SPLIT_WORD_INTO_BYTES**: Splits a word into two bytes, not eight quarter-bytes.
-
 - **BIT_EXTRACT**: Extracts individual bits or groups of bits, but is less specialized for quarter-bytes.
 
 ## Conclusion

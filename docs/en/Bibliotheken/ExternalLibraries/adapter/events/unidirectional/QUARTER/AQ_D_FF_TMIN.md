@@ -1,13 +1,8 @@
 # AQ_D_FF_TMIN
-
 ![AQ_D_FF_TMIN](./AQ_D_FF_TMIN.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AQ_D_FF_TMIN** implements a data-locking D flip-flop with a minimum inter-disposal time (MIT) between two consecutive output events (EOs). It serves as an extension of a simple D flip-flop, adding time-based debouncing or minimum-distance control, and is connected to the signal transmitter and receiver via adapters.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +12,6 @@ The function block **AQ_D_FF_TMIN** implements a data-locking D flip-flop with a
 |----------|-----|--------------|-----------|
 
 | INIT | EInit | Tmin | Initialization request, sets the minimum MIT. |
-
 
 ### **Event Outputs**
 
@@ -43,11 +37,9 @@ No dedicated data outputs; the latched signal is output via the adapter `Q`.
 
 | Type | Label | Direction | Comment |
 
-
 ### **Adapters**
 
 | Type | Label | Direction | Comment |
-
 
 ### |-----|-------------|----------|-----------|
 
@@ -62,9 +54,7 @@ This function block encapsulates an internal function block of type `iec61499::e
 The initialization (`INIT`) passes the parameter `Tmin` to the internal function block, thus defining the timing condition.
 
 ## Technical Features
-
 - **Minimum Interval Time (Tmin):** Prevents excessively rapid succession of output events, e.g., for debouncing or limiting the update rate.
-
 
 ``` - **Adapter-Based Communication:** The function block (FB) uses unidirectional adapters (`AQ`) that bundle both data and events, enabling loose coupling between the signal source and sink.
 
@@ -89,13 +79,9 @@ The FB does not have an explicit public state machine. Its behavior is determine
 A detailed state representation can be found in the source code of the internal function block.
 
 ## Application Scenarios
-
 - **Signal Smoothing/Debouncing:** Preventing multiple triggers with mechanical pushbuttons or rapid signal changes.
-
 - **Data Rate Limiting:** Limiting the output frequency of measured values in monitoring systems.
-
 - **Synchronization of Asynchronous Signals:** Forwarding a data value with a defined minimum time interval.
-
 - **Control of Slow Actuators:** Ensuring that actuators are not controlled faster than their mechanical response time allows.
 
 ## Comparison with Similar Function Blocks

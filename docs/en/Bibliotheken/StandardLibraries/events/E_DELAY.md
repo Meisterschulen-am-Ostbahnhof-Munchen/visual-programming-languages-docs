@@ -1,13 +1,8 @@
 # E_DELAY
-
 ## 🎧 Podcast
-
 * [E_DELAY in IEC 61499: Precise, Cancelable Time Delay in Control Systems ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_DELAY-in-IEC-61499-Przise--Abbrechbare-Zeitverzgerung-in-Steuerungssystemen-e3674le)
-
 ## Introduction
 The **E_DELAY** is a key functional block in the IEC 61499 standard for industrial control systems. As an event-driven timer, it enables the delayed triggering of events with a configurable duration and the option to cancel. This block is widely used in time-controlled automation processes.
-
-
 ![E_DELAY](E_DELAY.svg)
 
 ## Structure of the E_DELAY Block
@@ -32,19 +27,16 @@ The **E_DELAY** is a key functional block in the IEC 61499 standard for industri
 1. **Delay Start:**
 
 - On the `START` event, the timer starts with the set time `DT`
-
 - During runtime, further `START` events ignored
 
 2. **Delay Termination:**
 
 - The `STOP` event immediately terminates the active delay
-
 - No `EO` event is generated
 
 3. **Delay Completion:**
 
 - The `EO` event is triggered exactly after `DT`
-
 - If DT ≤ T#0s, immediate triggering occurs without delay
 
 ## Technical Features
@@ -58,7 +50,6 @@ The **E_DELAY** is a key functional block in the IEC 61499 standard for industri
 ✔ **Real-time capable** for industrial applications
 
 ## Application Scenarios
-
 - **Machine Safety**: Delayed shutdown of systems
 - **Process Control**: Time-controlled process steps
 - **Alarm Management**: Delayed fault messages
@@ -77,7 +68,6 @@ The **E_DELAY** is a key functional block in the IEC 61499 standard for industri
 | Time parameters | DT (Delay) | DT (Cycle time) | PT (Pulse duration) |
 
 ## 🛠️ Related exercises
-
 * [Uebung_018](../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
 * [Uebung_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
 * [Uebung_020b_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)

@@ -1,13 +1,8 @@
 # ALR_SPLIT_5
-
 ![ALR_SPLIT_5](./ALR_SPLIT_5.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **ALR_SPLIT_5** is used to distribute an incoming ALR signal to five identical outputs. It is implemented as a generic function block (Generic FB) and enables simple signal multiplication in control systems based on the adapter concept of IEC 61499.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -50,34 +45,25 @@ Output | OUT5 | `adapter::types::unidirectional::ALR` | Fifth output with the id
 
 This function block forwards the ALR signal received from socket `IN` unchanged to all five plugs `OUT1` to `OUT5`. This is a purely combinational forwarding process – no logic, delay, or data manipulation takes place. The block operates without requiring an event or state; as soon as a signal is present at the input, it is available at all outputs.
 
-
 # Functionality
 
 This function block forwards the ALR signal received from socket `IN` unchanged to all five plugs `OUT1` to `OUT5`. ## Technical Features
 
 - **Generic Function Block:** The function block is defined as a Generic FB and uses the Eclipse 4diac Generics mechanisms (`eclipse4diac::core::GenericClassName`). This allows it to be used in various contexts without modifying the core logic.
-
 - **Pure Adapter Communication:** No traditional event or data inputs/outputs are used. All communication takes place via adapters of type `ALR`, which enable unidirectional data exchange.
-
 - **Simple Structure:** No state machines or time dependencies – the function block is deterministic and resource-efficient.
 
 ## State Overview
 
 The function block has no explicit state logic or state machine. It operates entirely combinatorially, meaning the output signal is derived directly from the input signal without delay.
 
-
 ## Application Scenarios
-
 - **Signal Distribution in Automation:** A sensor delivers an ALR signal that must be forwarded in parallel to several actuators (e.g., valves, drives).
-
 - **Redundancy:** The signal can be distributed to various control units or monitoring modules.
-
 - **Test and Simulation Environments:** A central ALR signal is split across multiple test points to enable parallel evaluations.
 
 ## Comparison with Similar Function Blocks
-
 - **ALR_SPLIT_2, ALR_SPLIT_3, ALR_SPLIT_4:** These function blocks split an ALR signal across two, three, and four outputs, respectively. This function block extends this to five outputs.
-
 - **General Split Function Blocks (e.g., DATA_SPLIT):** Similar function blocks exist for other data types. Their functionality is identical; only the adapter type used differs. The advantage of ALR_SPLIT_5 lies in its direct use of the ALR adapter protocol without additional type conversion.
 
 ## Conclusion
@@ -87,7 +73,6 @@ The **ALR_SPLIT_5** is a simple yet valuable component for multiplying ALR signa
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

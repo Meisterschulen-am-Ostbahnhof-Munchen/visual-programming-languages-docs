@@ -1,13 +1,8 @@
 # AX_AUI_SEL_AUI
-
 ![AX_AUI_SEL_AUI](./AX_AUI_SEL_AUI.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AX_AUI_SEL_AUI** implements binary selection. It selects between two 16-bit input values (**IN0** and **IN1**) and outputs the selected value via a standardized output adapter. The selection is controlled by a Boolean signal provided via an input adapter. The block combines the functionality of the IEC 61131-3 block `F_SEL` with modular adapter interfaces and is particularly suitable for control applications with reusable, encapsulated connections.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -21,7 +16,6 @@ The function block **AX_AUI_SEL_AUI** implements binary selection. It selects be
 | EI1 | Event | Set IN1 | IN1 |
 
 - **EI0**: Sending an event to `EI0` updates the value of **IN0** (the provided data value is adopted).
-
 - **EI1**: Analogous to `EI0` for **IN1**.
 
 **Note:** Events are used to update the input data **before** the actual selection. The selection itself is triggered exclusively by the event of the input adapter **G**.
@@ -59,26 +53,20 @@ No direct data outputs. The result is provided via the output adapter **OUT**.
 
 Provides an event **E1** and a date **D1**.
 
-
 - `G.D1` (BOOL) – Selection signal: `TRUE` selects **IN1**, `FALSE` selects **IN0**.
-
 - `G.E1` (Event) – Triggers the selection operation.
-
 - **Adapter OUT (Plug):**
 
 Returns an event **E1** and a date **D1**.
 
 - `OUT.D1` (UINT) – The selected value (IN0 or IN1).
-
 - `OUT.E1` (Event) – Signals that a new output value is available.
-
 
 ## Functionality
 
 The component functions as an encapsulation of the standard component `F_SEL` from IEC 61131-3. The internal wiring connects:
 
 - `G.E1` → `F_SEL.REQ` (Start of selection)
-
 - `IN0` → `F_SEL.IN0`
 - `IN1` → `F_SEL.IN1`
 - `G.D1` → `F_SEL.G` (Control input)
@@ -94,21 +82,15 @@ The component functions as an encapsulation of the standard component `F_SEL` fr
 3. The internal `F_SEL` evaluates the Boolean signal `G.D1`:
 
 - If `G.D1 = FALSE` is present: Output = **IN0**
-
 - If `G.D1 = TRUE` is present: Output = **IN1**
 4. The result is placed on `OUT.D1`, and simultaneously the event `OUT.E1` is triggered to inform downstream components.
 ...`` `` ``` `` `` `` The function block thus implements a time-controlled, event-driven assignment: Selection occurs only upon an external event, and the data must already be available.
 
 ## Technical Features
-
 - **Composite Function Block:** The function block is built from an existing IEC 61131-3 function block (`F_SEL`) – this simplifies maintenance and certification.
-
 - **Adapter-Based Interfaces:** The use of the adapters `AX` and `AUI` enables loose coupling and facilitates the exchange of submodules.
-
 - **Data Type:** `UINT` (16-bit) – suitable for counters, configuration values, or analog scales.
-
 - **License:** Eclipse Public License 2.0 – allows unrestricted industrial use.
-
 - **No Internal States:** The function block is purely combinatorial with event-driven output; no states are stored.
 
 ## State Overview
@@ -121,15 +103,10 @@ The function block does not have an explicit state machine. Its functionality is
 
 An explicit state machine is not required because the internal `F_SEL` has no delays or memory.
 
-
 ## Application Scenarios
-
 - **Switching Between Operating Modes:** A control signal (e.g., via a digital input) selects between two sets of parameters, such as speed limits or configuration values.
-
 - **MUX Function in Data Paths:** In a measurement chain, it is possible to select between two sensor channels without duplicating the entire signal processing.
-
 - **Fail-Safe Switchover:** If the primary value fails, a logical signal can be used to switch to a substitute value.
-
 - **Connection to Adapter Networks:** Thanks to the standardized adapters `AX`/`AUI`, the module can be seamlessly integrated into existing modular control architectures.
 
 ## Comparison with Similar Modules

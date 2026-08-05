@@ -1,13 +1,8 @@
 # F_LIMIT
-
 ![F_LIMIT](https://user-images.githubusercontent.com/113907647/227977194-5735bf57-4df7-4ffb-9457-25cf02c36fc7.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The F_LIMIT function block is a standard selection function block according to IEC 61131-3 that acts as a limiter. It limits an input value to a defined range between a lower and upper limit.
-
-
 ![F_LIMIT](F_LIMIT.svg)
 
 ## Interface Structure
@@ -34,17 +29,13 @@ The F_LIMIT function block takes an input value (IN) and limits it to the range 
 
 - If IN < MN, dann OUT = MN
 - Wenn IN > MX, then OUT = MX
-
 - If MN ≤ IN ≤ MX, then OUT = IN
 
 After the operation is complete, the CNF event is output with the calculated OUT value.
 
-
 ## Technical Features
 - Uses the generic data type ANY_ELEMENTARY, meaning the block can be used with various elementary data types (INT, REAL, etc.)
-
 - All data inputs and the data output use the same data type for consistent operation
-
 - EPL-2.0 License (Eclipse Public License)
 
 ## State Transitions
@@ -67,9 +58,7 @@ Bsp. individuelle Eingabe
 Compared to Other selection function blocks:
 
 - F_LIMIT specifically optimized for value limiting
-
 - Simpler than complex comparison blocks with multiple outputs
-
 - More universally applicable due to the ANY_ELEMENTARY data type
 
 ## Conclusion

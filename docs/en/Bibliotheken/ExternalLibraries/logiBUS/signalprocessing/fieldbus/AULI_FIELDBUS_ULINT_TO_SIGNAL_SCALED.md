@@ -1,11 +1,8 @@
 # AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED
-
 ![AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED](./AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED** is used for the scalable mirroring of an unsigned integer value (ULINT) into a scaled signal value (LREAL), taking validity information into account. It is implemented as a composite block and combines the actual scaling logic with a synchronized valid output. The block is designed for use in fieldbus environments where raw data (e.g., sensor values) must be converted using a linear factor and offset, and the signal's validity must be reliably transmitted.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -66,14 +63,10 @@ The function block operates in an event-driven manner. After an INIT event (at i
 
 The internal scaling block is of the same type as the outer one, meaning that the scaling logic could be recursive. However, in this design, the inner instance contains the actual computational logic. The outer shell adds the synchronization of the validity information and provides the adapter interfaces.
 
-
-
 The internal scaling block is of the same type as the outer one, meaning that the scaling logic could be recursive. ## Technical Features
 
 - **Adapted Inputs/Outputs:** The module uses adapters exclusively for data transmission. This enables loose coupling in fieldbus and component networks.
-
 - **Validity Synchronization:** The validation information is clocked via a D flip-flop so that it coincides with the output signal value.
-
 - **Scaling Parameters:** `SCALE` and `OFFSET` are directly accessible as input variables and can be changed at runtime. Initial values allow immediate operation without configuration.
 
 ## State Overview
@@ -81,25 +74,17 @@ The internal scaling block is of the same type as the outer one, meaning that th
 The module does not have an explicit state machine. Its behavior is determined by event control:
 
 - **Initialized:** After successful `INIT`, the internal scaling block is ready.
-
 - **Ready:** Data processing is triggered upon an event on `IN.E1`. Upon completion, `OUT.E1` and `VALID.E1` are triggered.
-
 - **Error Case:** An erroneous scaling operation (e.g., overflow) is handled by the internal block; the validation signal would then be `FALSE`.
 
 ## Application Scenarios
-
 - **Fieldbus Sensor Evaluation:** A sensor delivers a raw ULINT value via a bus (e.g., CANopen, PROFIBUS). The block scales the value into a physical unit (e.g., temperature, pressure) and passes it to the controller as LREAL, along with a validation flag.
-
 - **Signal conditioning in agricultural machinery** (as indicated in the copyright notice): Conversion of speed, fill level, or velocity data into standardized signals for a higher-level control system.
-
 - **Quality-assured data transmission:** When the validity of a signal (e.g., sensor error, communication failure) must be explicitly tracked, the synchronized valid output ensures consistent signals.
 
 ## Comparison with similar function blocks
-
 - **FIELDBUS_ULINT_TO_SIGNAL** (without scaled): A direct pass without scaling – scaling is integrated here.
-
 - **Standard scaling function blocks** (e.g., from IEC 61131-3): These often operate with simple inputs/outputs and without adapters or validity synchronization.
-
 - **Function blocks with integrated validation:** Many fieldbus function blocks output only a single data value. This function block stands out due to its separate, clocked validity output.
 
 ## Conclusion

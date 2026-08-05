@@ -1,14 +1,8 @@
 # AE_MUX_5
-
 ![AE_MUX_5](./AE_MUX_5.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **AE_MUX_5** function block is a generic 5-way multiplexer for AE adapters (unidirectional). It selects one of five inputs (`IN1` … `IN5`) based on an integer index `K` and passes its data to the output `OUT`. The block operates in an event-driven manner: Upon receiving a `REQ` signal, the current index is evaluated, the input is passed through, and an acknowledgment (`CNF`) is then sent.
-
-
 
 ``` ## Interface Structure
 
@@ -59,13 +53,9 @@ No dedicated data outputs – data transmission is exclusively via the adapter `
 3. Based on `K`, the corresponding adapter input is switched to the output adapter `OUT`:
 
 - `K = 0` → Connection from `IN1` to `OUT`
-
 - `K = 1` → Connection from `IN2` to `OUT`
-
 - `K = 2` → Connection from `IN3` to `OUT`
-
 - `K = 3` → Connection from `IN4` to `OUT`
-
 - `K = 4` → Connection from `IN5` to `OUT`
 
 4. After successful connection, the event `CNF` is sent.
@@ -73,24 +63,18 @@ No dedicated data outputs – data transmission is exclusively via the adapter `
 5. If `K` is outside the valid range (0…4), the last valid connection remains active, or no new connection is established (depending on the implementation; by default, the value is not processed).
 
 ## Technical Features
-
 - **Generic Function Block**: The function block is instantiated as `GEN_AE_MUX` and is designed for any AE adapter of type `adapter::types::unidirectional::AE`.
-
 - **Pure Adapter Interface**: There are no direct data inputs/outputs – data flows entirely via adapters, enabling type-safe and flexible coupling in IEC 61499 systems.
-
 - **Simple Event Model**: With only one event input and one event output, the behavior is deterministic and easily analyzed.
 
 ## State Overview
 
 The function block (FB) does not have an explicit state machine. Its behavior is purely combinatorial (upon receipt of `REQ`, the selection is made immediately and `CNF` is sent). Its operation can be visualized as a single "active" state that exists only during the switching process.
 
-
 ``` ## Application Scenarios
 
 - **Sensor Multiplexing**: In an agricultural or industrial control system, multiple analog or digital AE interfaces (e.g., from sensors) are passed through a common output to a higher-level logic controller, with selection determined by an index.
-
 - **Mode Switching**: Depending on the operating mode (index), a different data stream is used – e.g., different measurement channels or configuration data.
-
 - **Redundancy Switching**: Five redundant AE sources are available, and the system switches to a specific source as needed.
 
 ## Comparison with Similar Components

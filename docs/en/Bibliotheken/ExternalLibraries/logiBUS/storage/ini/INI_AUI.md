@@ -1,13 +1,8 @@
 # INI_AUI
-
 ![INI_AUI](./INI_AUI.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block `INI_AUI` is used to read and store **UINT data** (more precisely: `UDINT` values) from a `settings.ini` file. The parameters **Section** and **Key** determine which value is read. Additionally, a **Default Value** can be specified if no entry exists in the INI file. The function block offers both direct access via its inputs and an **Adapter Interface (AUI)** for unidirectional communication with other function blocks.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -67,56 +62,37 @@ The `INI_AUI` function block encapsulates an internal `INI` function block (`ecl
 1. **Reading a Value**
 
 - An **INIT** event at the input triggers the internal `INI.INIT`.
-
 - The data `QI`, `SECTION`, `KEY`, and `DEFAULT_VALUE` are forwarded to the `INI` function block.
-
 - After successful processing, `INI.INITO` sends the confirmation event and internally triggers `INI.GET` to load the value from the file.
-
 - The read value appears at `INI.VALUEO` and is output via the **AUI_OUT** adapter (plug) as `D1`.
-
-
 - Simultaneously, `QO` and `STATUS` are taken from the internal function block.
 
 2. **Writing a Value**
 
 - An event at the **AUI_IN.Socket** (via the input adapter) triggers the internal `INI.SET`.
-
 - The value provided via the adapter (D1) is passed to `INI.VALUE` and written to `settings.ini`.
-
 - After writing, `INI.SETO` sends the confirmation event, which is output via the **AUI_OUT.Plug** as `E1`.
-
-
 - Here too, the outputs `QO` and `STATUS` are updated.
 
 > **Note:** The adapter **AUI_IN** acts as a socket (receiving), and **AUI_OUT** as a plug (providing). Both use the same unidirectional AUI type.
 
 ## Technical Features
-
 - **Adapter-based communication:** The function block enables the exchange of configuration data via a unidirectional adapter (AUI) without requiring direct data connections. This simplifies module communication in distributed systems.
-
 - **Dual operation:** The value can be set via the classic data inputs (`SECTION`, `KEY`, `DEFAULT_VALUE`) as well as via the adapter (`AUI_IN.D1`).
-
 - **Default Value:** If an entry is missing in the INI file, `DEFAULT_VALUE` is used – this prevents undefined states.
-
 - **Status Information:** The user can check the success of each operation via `STATUS` and `QO`.
 
 ## State Overview
 
 The function block `INI_AUI` does **not have its own state machine**. The entire process control is implemented by the integrated `INI` function block and the defined event connections (e.g., INIT → INI.INIT, INI.INITO → INITO, INI.INITO → INI.GET). Therefore, the function block operates strictly event-driven and executes read/write operations sequentially.
 
-
 ## Application Scenarios
-
 - **Parameter Management** in modular automation systems where multiple components access shared configuration data via an adapter.
-
 - **Initialization** of control functions with a default value that can be overwritten from an INI file if needed.
-
 - **Exchange of settings** between different function blocks connected via the AUI adapter (e.g., a higher-level manager block and multiple worker blocks).
 
 ## Comparison with Similar Blocks
-
 - **`INI` (Basic Function Block):** The `INI_AUI` extends the simple `INI` function block with a standardized adapter interface. While the `INI` only has direct inputs/outputs, the `INI_AUI` allows loose coupling via AUI.
-
 - **Other memory blocks (e.g., `Memory`, `Persist`):** These usually work with internal variables or files, but often lack an adapter interface and dedicated `settings.ini` integration.
 
 ## Conclusion
@@ -126,8 +102,4 @@ The `INI_AUI` function block is a flexible solution for reading and saving confi
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

@@ -1,13 +1,8 @@
 ![E_TOF](E_TOF.svg)
-
 # E_TOF
-
 ## 🎧 Podcast
-
 * [E_TOF vs. FB_TOF: The event timer that doesn't tick cyclically – a revolution for automation systems? ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
-
 * [FB_TOF and E_TOF: Delay timers in IEC 61131-3 and 61499 ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
-
 ## Description:
 
 ### The E_TOF function block in IEC 61499: An overview
@@ -25,23 +20,14 @@ The E_TOF function block is a **Composite Function Block (CFB)** specified accor
 The interface of the E_TOF block consists of:
 
 - **Event Inputs**:
-
 - **REQ (Request)**: This event triggers the execution of the block. It is linked to the input variables **IN** and **PT**.
-
 - **R (Reset)**: This event resets the timer.
-
 - **Output Event**:
-
 - **CNF (Confirmation)**: This event is triggered when the execution of the block is complete. It is linked to the output variable **Q**.
-
 - **Input Variables**:
-
 - **IN (Input)**: This is a Boolean variable that controls the state of the timer. If **IN** is set to **TRUE**, the timer starts. If **IN** is set to **FALSE**, the delay time begins.
-
 - **PT (Process Time)**: This is a time variable (TIME) that defines the delay time after which the output **Q** is set to **FALSE**.
-
 - **Output Variable**:
-
 - **Q (Output)**: This is a Boolean variable that indicates the timer's state. It remains **TRUE** until the delay time **PT** has elapsed.
 
 ##### Internal Network (FBNetwork)
@@ -75,15 +61,12 @@ A key advantage of the E_TOF block is that it **does not need to be called cycli
 The E_TOF block can be used in various industrial control applications, especially in scenarios where a delayed shutdown function is required. Some examples are:
 
 - **Machine Control**: The block can be used to ensure that a machine continues to run for a specific period of time after being switched off, for example, to complete processes or to implement safety precautions.
-
 - **Lighting Control**: The block can be used in lighting systems to keep the light on for a specific period of time after the switch has been turned off.
-
 - **Valve Control**: This function block can be used to keep a valve open for a specific period of time after it has closed, for example, to release pressure.
 
 ##
 
 ## 🛠️ Related Exercises
-
 * [Exercise_020e](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e.md)
 
 ## Conclusion
@@ -91,7 +74,6 @@ The E_TOF block can be used in various industrial control applications, especial
 The E_TOF function block is a versatile function block in IEC 61499 that implements a delayed shutdown function. Due to its internal use of the **E_DELAY** function block, it can function correctly **even if it is not called cyclically**. This makes it particularly suitable for event-driven and distributed control systems where cyclic calls are not always guaranteed.
 
 The provided source code demonstrates how the E_TOF function block can be implemented in practice and provides a solid foundation for developing similar function blocks in industrial control systems. The independence from cyclical calls is a crucial advantage that makes the component suitable for a wide variety of applications.
-
 
 The fact that it doesn't require cyclical calls is a key advantage.## ⚖️ Comparison of E_TOF and FB_TOF
 

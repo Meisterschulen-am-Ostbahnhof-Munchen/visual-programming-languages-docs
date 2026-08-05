@@ -1,13 +1,8 @@
 # ALR_TO_AI
-
 ![ALR_TO_AI](./ALR_TO_AI.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **ALR_TO_AI** function block is a composite block that converts an ALR (LREAL data) adapter to an AI (INT data) adapter. It is used to convert signals from agricultural technology (e.g., sensor values) to a standardized integer-based adapter interface. The block encapsulates the conversion and event forwarding, thus simplifying integration into existing 4diac applications.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +12,6 @@ The function block does not have its own top-level event inputs. Event control i
 | Input | Type | Description |
 
 | Input | Type | Description |
-
 
 # |---------|-----|--------------|
 
@@ -64,7 +58,6 @@ The function block has two adapter interfaces:
 
 The **ALR_TO_AI** function block contains an internal conversion block `F_LREAL_TO_INT` from the IEC 61131 library.
 
-
 1. When socket `ALR_IN` sends an event at its output `E1`, it is forwarded to the input `REQ` of the internal converter.
 
 2. The converter transforms the incoming LREAL value (`ALR_IN.D1`) into an INT value and outputs the result via its output `OUT`, along with an acknowledgment event `CNF`.
@@ -76,11 +69,8 @@ The **ALR_TO_AI** function block contains an internal conversion block `F_LREAL_
 The entire process is synchronous and performed in a single step.
 
 ## Technical Features
-
 * The function block (FB) is a **composite function block** – it does not have its own state machine (ECC) but implements the logic via an internal subnetwork.
-
 * The conversion follows the IEC 61131-3 function `LREAL_TO_INT`: decimal places are truncated (truncation to zero), and overflows or underflows are implementation-dependent.
-
 * The function block is designed as a unidirectional adapter coupling – no feedback channels are supported.
 
 ## State Overview
@@ -88,11 +78,8 @@ The entire process is synchronous and performed in a single step.
 As a composite FB, **ALR_TO_AI** does not have its own state diagram. The internal converter `F_LREAL_TO_INT` operates in an event-driven manner: An event at input `REQ` triggers the conversion, and output `CNF` signals the end of the operation. The function block behaves like a transparent block for event and data forwarding.
 
 ## Application Scenarios
-
 * **Sensor Value Processing**: Conversion of an LREAL signal (e.g., from an analog sensor adapter) into an INT signal, which is then processed by a PLC or a controller with integer-based adapters.
-
 * **Adapter Bridge**: Connecting adapter types of different physical units when only the data type, not the scaling, needs to be changed.
-
 * **Interface Adaptation**: Used in agricultural control systems (e.g., HR Agricultural Technology – general), where LREAL values from sensors are mapped to a CAN-based INT adapter interface.
 
 ## Comparison with Similar Function Blocks
@@ -116,7 +103,6 @@ The **ALR_TO_AI** is a practical composite function block for the standardized c
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

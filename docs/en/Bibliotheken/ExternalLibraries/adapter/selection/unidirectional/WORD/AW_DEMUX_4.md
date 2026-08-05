@@ -1,11 +1,8 @@
 # AW_DEMUX_4
-
 ![AW_DEMUX_4](./AW_DEMUX_4.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AW_DEMUX_4** is a generic demultiplexer for adapters of type `adapter::types::unidirectional::AW`. It distributes an incoming adapter signal (via socket `IN`) to one of four output adapters (`OUT1` to `OUT4`). The target output is selected via the integer index `K`, which is set via the event input `REQ`. This function block is suitable for the dynamic routing of data streams in automation applications.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -71,28 +68,21 @@ The adapters are unidirectional and of type `AW` (e.g., for analog or value forw
 The function block operates in an event-driven manner and only changes the signal routing upon a new `REQ`.
 
 ## Technical Features
-
 - **Generic Function Block:** The function block is provided as a generic template (`GEN_AW_DEMUX`) and can be customized for other adapter types if required.
-
 - **Index Range:** The index `K` is declared as `UINT`. If a value outside the range 1…4 is passed, the switch remains undefined or the function block ignores the value (depending on the implementation).
-
 - **EPL 2.0 License:** This function block is licensed under the Eclipse Public License 2.0 and may be used and modified in your own projects.
 
 ## State Overview
 Since this is a basic demultiplexer, the function block has only one implicit state:
 
 - **IDLE:** Waiting for `REQ`.
-
 - **PROCESSING:** When `REQ` is passed, `K` is evaluated and the switch is executed. Then, `CNF` is sent, and the function block returns to the IDLE state.
 
 An explicit state machine is not defined in the XML, but the described behavior is typical for such function blocks.
 
 ## Application Scenarios
-
 - **Signal Distribution:** In a controller, an analog measured value should be sent to various consumers (e.g., display, logging, control).
-
 - **Switching Communication Paths:** A data stream from a source is forwarded to different downstream function blocks depending on the operating mode.
-
 - **Test and Simulation Environments:** A signal generator can be flexibly connected to multiple test objects via the index `K`.
 
 ## Comparison with Similar Function Blocks

@@ -1,12 +1,8 @@
 # AUI_CTUD
-
 ![AUI_CTUD](./AUI_CTUD.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AUI_CTUD** is an event-driven up/down counter in the adapter version. It is based on the standard function block E_CTUD and extends it with "On-Change" triggering for the output states. The counter value (CV), the preset value (PV), and the comparison results (QU, QD) are exchanged with other function blocks via the adapter interfaces. The function block is intended for use in IEC 61499 applications where loose coupling via adapters is desired.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -73,37 +69,26 @@ This function block operates as an event-driven counter with a resolution of 0 t
 2. **Calculation**: In each algorithm, the internal counter (`CV.D1`) is updated, and the output adapters QU and QD are recalculated:
 
 - **CU**: `CV.D1 := CV.D1 + 1` (only if the previous value < 65535)
-   - **CD**: `CV.D1 := CV.D1 - 1` (nur, wenn der Wert vorher > was 0)
-
+- **CD**: `CV.D1 := CV.D1 - 1` (nur, wenn der Wert vorher > was 0)
 - **R**: `CV.D1 := 0`
-
 - **LD**: `CV.D1 := PV.D1`
-
 - Subsequently, `QU.D1 := (CV.D1 >= PV.D1)` and `QD.D1 := (CV.D1 <= 0)` are set.
 
 3. **Counter Value Output**: After each value change, the event `CV.E1` is sent to propagate the new counter value via the adapter.
 
-
 **CU**: ** ... 4. **On-Change Triggering**:
 
 - After each counting operation or after a change to the PV (event from the PV adapter), the state of QU and QD is checked.
-
 - The internal variables `QU_OLD` and `QD_OLD` store the previous state. Only if the value has changed is the corresponding adapter event (`QU.E1` or `QD.E1`) triggered.
-
 - This behavior prevents unnecessary event flooding with constant threshold values.
 
 5. **Processing of PV Changes**: An incoming event on the PV adapter (`PV.E1`) results in the state `UPDATE_PV`, in which only the comparison results are recalculated (without changing the counter). The on-change check is also performed afterward.
 
 ## Technical Features
-
 - **On-Change Triggering** (Change Detection): The module sends events to the output adapters only if the logical state has actually changed compared to the last iteration. This reduces the bus load and prevents infinite loops in cyclic systems.
-
 - **Adapter-Based Communication**: All input and output values are exchanged via adapters (plug/socket), enabling flexible interconnection without fixed data connections. The counter value (CV) and the comparison results (QU, QD) are provided as plug adapters, while the preset value (PV) is supplied as a socket from external modules.
-
 - **State Overflow Protection**: During count-up, the module checks whether the current value is less than 65535; during count-down, it checks whether it is greater than 0. This prevents overflows and underflows.
-
 - **Two internal state variables**: `QU_OLD` and `QD_OLD` serve as shadow registers for change detection.
-
 - **Extended ECC**: After each counting operation, the function block cycles through a sequential chain of states (e.g., CU → CHECK_QU → CHECK_QD → START) to ensure change detection.
 
 ## State Overview
@@ -135,13 +120,9 @@ This function block operates as an event-driven counter with a resolution of 0 t
 The state transitions are controlled by the events and conditions `[QU.D1 <> QU_OLD]` and `[QD.D1 <> QD_OLD]`. After change detection is complete, the function block returns to the START state.
 
 ## Application Scenarios
-
 - **Counters with External Preset**: In a system, the preset value (PV) can be dynamically set by a higher-level system or an HMI via the PV adapter. The function block then counts events and reports when the thresholds are reached or fallen below via the QU and QD adapters.
-
 - **Direction-Dependent Counters**: By using CU and CD, a forward/reverse counter can be implemented, e.g., for position detection or inventory counting.
-
 - **Event-Driven Limit Monitoring**: The on-change triggering of QU and QD is ideally suited for sending a discrete signal (e.g., "fill level reached") only when a state changes – similar to an edge detector.
-
 
 -- **Modular Control Architecture**: Thanks to the adapter interface, the function block can be integrated into an existing IEC 61499 application without fixed data port wiring. The logical connection is established solely via the adapter runtime environment.
 
@@ -172,7 +153,6 @@ The **AUI_CTUD** function block represents a modern, adapter-based variant of an
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 E_CTU Event Counter component on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 
 ]

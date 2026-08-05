@@ -1,11 +1,8 @@
 # GET_DATE
-
 ![GET_DATE](./GET_DATE.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **GET_DATE** function block reads a DATE value from an InOut variable and provides it as a buffered output. When requested by an event, the current value of the source is copied into an internal buffer and then output to the output as well as to the InOut variable itself.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -56,13 +53,9 @@ The function block has a simple execution state **REQ**:
 The functionality corresponds to a simple value transfer without further processing or state storage across multiple calls.
 
 ## Technical Features
-
 - The use of an **InOut** variable allows direct access to an external variable without declaring a separate data input.
-
 - Buffering occurs only during the execution of the algorithm; the current value of **IN** is read again with each new **REQ**.
-
 - The function block is implemented as a **SimpleFB** and has no internal state transitions – processing is purely combinatorial in a single step.
-
 
 ``` ## State Overview
 The function block consists of exactly one state:
@@ -72,19 +65,13 @@ The function block consists of exactly one state:
 There are no other states or conditional transitions.
 
 ## Application Scenarios
-
 - **Reading a Global Date**: When a system time or date needs to be read from a central variable and used locally.
-
 - **Buffering for Subsequent Processing**: To hold a DATE value at a specific point in time and pass it to other function blocks.
-
 - **Cascading InOut Accesses**: In combination with other function blocks that access the same InOut variable to ensure consistent data.
 
 ## Comparison with Similar Function Blocks
-
 - **GET_BOOL**, **GET_INT**, **GET_STRING**, etc.: These function blocks operate on the same principle but with different data types. They all use an InOut variable as a source and a buffered output.
-
 - **SET_DATE**: The counterpart – it writes a value to an InOut variable instead of reading it.
-
 - All these function blocks have a simple structure and are suitable for standardized access to shared data.
 
 ## Conclusion

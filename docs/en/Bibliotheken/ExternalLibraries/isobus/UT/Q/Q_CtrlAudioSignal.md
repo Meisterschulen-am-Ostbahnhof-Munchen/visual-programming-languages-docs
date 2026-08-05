@@ -1,36 +1,27 @@
 # Q_CtrlAudioSignal
-
 ![Q_CtrlAudioSignal](https://user-images.githubusercontent.com/116869307/214147202-f060b872-d3d6-4c56-92c9-84961ce5127b.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_CtrlAudioSignal** is a standards-compliant function block for controlling audio devices in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.10) specification for agricultural tax systems.
-
-
 ![Q_CtrlAudioSignal](Q_CtrlAudioSignal.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT`: Initialization Request
 - `REQ`: Audio Control Request (with signal parameters)
 
 ### **Event Outputs**
-
 - `INITO`: Initialization Acknowledgement
 - `CNF`: Control Acknowledgement (with result data)
 
 ### **Data Inputs**
-
 - `u8NumOfRepit` (USINT): Repetitions (1-255)
 - `u16Frequency` (UINT): Frequency in Hz
 - `u16OnTimeMs` (UINT): On-time in ms
 - `u16OffTimeMs` (UINT): Off-time in ms
 
 ### **Data Outputs**
-
 - `STATUS` (STRING): Operating status message
 - `u8OldNumOfRepit` (USINT): Previous repetitions
 - `u16OldFrequency` (UINT): Previous frequency
@@ -43,21 +34,17 @@ The **Q_CtrlAudioSignal** is a standards-compliant function block for controllin
 1. **Initialization**:
 
 - `INIT` without parameters
-
 - `INITO` confirmed Operational Readiness
 
 2. **Audio Control**:
 
 - Trigger `REQ` with signal parameters
-
 - Generates tone with a configurable pattern
-
 - `CNF` returns result and previous values
 
 3. **Error Handling**:
 
 - ISO-standardized error codes
-
 - Detailed status messages
 
 ## Technical Features
@@ -96,7 +83,6 @@ Repetitions | 1-255 | 3 |
 | -128 | VT_E_HANDLE_INVALID | Invalid audio configuration |
 
 ## Application Scenarios
-
 - **Warning Signals**: Audible alarm messages
 - **Confirmation Tones**: Operator feedback
 - **Voice Announcements**: Pre-recorded messages
@@ -114,9 +100,7 @@ Repetitions | 1-255 | 3 |
 
 | Frequency Control | Yes | No | No |
 
-
 ## 🛠️ Related Exercises
-
 * [Exercise_017](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)]
 * [Exercise_018](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)]
 * [Exercise_018a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)]

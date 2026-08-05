@@ -1,15 +1,9 @@
 # Exercise_004a4: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_SPLIT
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_004a4`. It demonstrates how a single event can be used to sequentially trigger multiple independent processes using a `E_SPLIT` function block.
-
 -----
-
 ## Objective of the Exercise
-
 The objective is to understand sequential event processing. The `E_SPLIT` function block receives a single input event and then fires its outputs one after the other. This allows an action to be distributed across multiple targets while defining the order of execution.
-
 
 -----
 
@@ -22,26 +16,20 @@ The objective is to understand sequential event processing. The `E_SPLIT` functi
 ![Uebung_004a4_network](./Uebung_004a4_network.svg)
 
 * **`DigitalInput_CLK_I1`**: The event generator (click button).
-
 * **`E_SPLIT`**: An event distributor. It has one input `EI` and two outputs `EO1` and `EO2`.
-
 * **`E_T_FF_Q1` & `E_T_FF_Q2`**: Two independent flip-flops.
-
 * **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Two physical outputs.
 
 -----
 
 ## Functionality
 
-
 ```xml
 <EventConnections>
-    <Connection Source="DigitalInput_CLK_I1.IND" Destination="E_SPLIT.EI"/>
-    <Connection Source="E_SPLIT.EO1" Destination="E_T_FF_Q1.CLK"/>
-    <Connection Source="E_SPLIT.EO2" Destination="E_T_FF_Q2.CLK"/>
+<Connection Source="DigitalInput_CLK_I1.IND" Destination="E_SPLIT.EI"/>
+<Connection Source="E_SPLIT.EO1" Destination="E_T_FF_Q1.CLK"/>
+<Connection Source="E_SPLIT.EO2" Destination="E_T_FF_Q2.CLK"/>
 </EventConnections>
-```
-
 
 [cite_start][cite: 1]
 

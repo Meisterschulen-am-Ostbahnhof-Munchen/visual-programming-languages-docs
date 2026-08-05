@@ -1,13 +1,8 @@
 # AULI_ULI_TO_ULINT
-
 ## Introduction
 The AULI_ULI_TO_ULINT function block is a composite function block used to convert the AULI adapter format to a ULINT value.
-
-
 ![AULI_ULI_TO_ULINT](AULI_ULI_TO_ULINT.svg)
-
 ## Interface Structure
-
 ### **Event Inputs**
 - No direct event inputs available
 

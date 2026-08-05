@@ -1,13 +1,8 @@
 # logiBUS_IX
-
 <img width="1789" height="343" alt="image" src="https://github.com/user-attachments/assets/8c558337-facf-438d-87ba-69a1b8e110a9" />
-
 * * * * * * * * * *
-
 ## Introduction
 The logiBUS_IX function block is an input service interface for Boolean input data, specifically designed for communication with logiBUS input modules. It serves as an interface between the control logic and physical input signals, enabling the querying of digital input values.
-
-
 ![logiBUS_IX](logiBUS_IX.svg)
 
 ## Interface Structure
@@ -37,7 +32,6 @@ No adapter interfaces are available.
 ## Functionality
 The function block initializes itself via the INIT event and can then request input data via the REQ event. Upon successful initialization, it returns the INITO event. The actual input values are provided via the IN output, while the STATUS output provides information about the current operating state.
 
-
 ## Technical Features
 - Supports up to 8 digital inputs (I1..I8)
 - Uses special logiBUS data types for input identification
@@ -53,7 +47,6 @@ The function block typically goes through the following states:
 4. **Active**: Currently processing a service request
 
 ## Application Scenarios
-
 - Querying digital input signals in automation systems
 - Integrating logiBUS input modules into 4diac-based controllers
 - Monitoring switch states and sensor signals
@@ -68,7 +61,6 @@ Compared to simple digital input blocks, this offers logiBUS_IX:
 - More comprehensive initialization and confirmation mechanisms
 
 ## 🛠️ Related exercises
-
 * [Uebung_001](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_001.md)
 * [Uebung_001c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_001c.md)
 * [Uebung_002](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_002.md)
@@ -125,17 +117,11 @@ Compared to simple digital input blocks, this offers logiBUS_IX:
 * [Uebung_090a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
 * [Uebung_090a2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
 * [Exercise_094](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_094.md)
-
 * [Exercise_094a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_094a.md)
-
 * [Exercise_095](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_095.md)
-
 * [Exercise_160](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_160.md)
-
 * [Exercise_160b2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
-
 * [Exercise_177](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
-
 * [Exercise_178](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_178.md)
 
 ## Conclusion
@@ -144,7 +130,6 @@ The logiBUS_IX function block represents a robust and flexible solution for inte
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,12 +1,8 @@
 # AB_TO_AUDI
-
 ![AB_TO_AUDI](./AB_TO_AUDI.svg)
-
 * * * * * * * * * *
-
 ## Introduction
 The function block **AB_TO_AUDI** is a composite function block (FB) that converts an AB adapter (data type BYTE) into an AUDI adapter (data type UDINT). It serves as an interface between different data formats in an IEC 61499-based automation environment.
-
 ## Interface Structure
 The function block has no direct event or data input/output at the top level. Communication occurs exclusively via two adapters:
 
@@ -44,41 +40,28 @@ The module internally uses a predefined conversion module `F_BYTE_TO_UDINT` from
 
 5. The converted UDINT value is passed to the connected component via `AUDI_OUT.D1`.
 
-
 This enables unidirectional BYTE-to-UDINT conversion with event-driven control.
 
 ## Technical Features
-
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional – data flows in only one direction (BYTE → UDINT).
-
 - **Synchronous Operation**: The conversion is strictly event-driven: Each incoming event `E1` triggers exactly one conversion and one outgoing event.
-
 - **Standard Conversion**: The internal function block `F_BYTE_TO_UDINT` is an established IEC 61131 function block, ensuring that the conversion is standards-compliant and portable.
-
 
 ## State Overview
 Since this is a purely composite component without its own state machine, the state logic results from the interaction of the internal connections:
 
 - **Ready**: After initialization, wait for event `AB_IN.E1`.
-
 - **Conversion Active**: After receiving `AB_IN.E1`, while the internal converter is working.
-
 - **Output Ready**: After confirmation by `Convert.CNF`, until event `AUDI_OUT.E1` and the associated data value are transmitted.
 
 ## Application Scenarios
-
 - **Protocol Adaptation**: When a sensor or actuator with a BYTE interface is to be connected to a control unit that expects UDINT (e.g., for counts, frequencies, or time values).
-
 - **Data Preparation in Automation Networks**: Used in PLC or distributed systems to harmonize different data widths.
-
 - **Adapter Bridge**: As an intermediary between predefined adapter types in an IEC 61499 application.
 
 ## Comparison with Similar Function Blocks
-
 - **AB_TO_DINT**: Converts BYTE to DINT (signed) – here, the conversion is to UDINT (unsigned).
-
 - **Direct Converters** such as `F_BYTE_TO_UDINT`: These are simple function blocks without an adapter interface. `AB_TO_AUDI` encapsulates this function block in an adapter structure and integrates event control.
-
 
 ## Conclusion
 

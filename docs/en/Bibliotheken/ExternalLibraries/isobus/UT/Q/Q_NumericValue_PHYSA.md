@@ -1,13 +1,9 @@
 # Q_NumericValue_PHYSA
-
 ![Q_NumericValue_PHYSA](./Q_NumericValue_PHYSA.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `Q_NumericValue_PHYSA` serves as a wrapper for the function block `Q_NumericValue_PHYS`. It allows setting a numeric value, which is received as a physical value (`REAL`) via an AR adapter (socket `rPhys`). The function block is designed according to the ISO 11783-6 standard and is suitable for ISOBUS applications that require a physical value input.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Name | Type | Description |
@@ -59,7 +55,6 @@ The function block `Q_NumericValue_PHYSA` serves as a wrapper for the function b
 
 1. After the **INIT** event, the function block is initialized with the object pool properties defined in `stObj`.
 
-
 ``` 2. As soon as a new physical value arrives via the **rPhys** adapter (socket event `E1`), it is internally forwarded to the bound **Q_NumericValue_PHYS** block.
 
 3. The `Q_NumericValue_PHYS` processes the value (taking scaling, offset, and decimal places into account) and triggers the **CNF** event.
@@ -69,25 +64,17 @@ The function block `Q_NumericValue_PHYSA` serves as a wrapper for the function b
 5. The outputs `xOver` and `xUnder` are provided as AX adapters to inform higher-level logic whether the entered value is outside the permissible ISOBUS range.
 
 ## Technical Features
-
 - The function block (FB) is a **pure adapter wrapper component**. The actual logic resides in the internally used `Q_NumericValue_PHYS`.
-
 - The parameters for scaling and offset are configured via the **structure `NumericObjectPool_S`** – this allows for flexible adaptation to different physical units.
-
 - Communication is **event-driven** via the adapters `AR` (value input) and `AX` (limit signal output). This enables modular integration into existing ISOBUS communication sequences.
-
 
 ## State Overview
 
 The function block itself does not have an explicit state machine. The initialized state is established by the first `INIT` event. Subsequent value changes via `rPhys.E1` lead directly to processing and output. Error states are communicated via the output `STATUS`.
 
 ## Application Scenarios
-
 - **ISOBUS APP Control:** Setting a numeric value (e.g., setpoint for machine parameters) from a physical sensor value connected via an adapter.
-
 - **Real to ISOBUS Format Conversion:** The function block handles the conversion of physical values to the internal integer format using scaling and offset.
-
-
 - **Limit Monitoring:** The outputs `xOver` and `xUnder` allow the higher-level controller to react to exceedances or falls below limits.
 
 ## Comparison with Similar Function Blocks

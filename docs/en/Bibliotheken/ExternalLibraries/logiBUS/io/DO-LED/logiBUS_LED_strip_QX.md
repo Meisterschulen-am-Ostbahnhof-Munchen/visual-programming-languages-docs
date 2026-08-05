@@ -1,13 +1,8 @@
 # logiBUS_LED_strip_QX
-
 <img width="1879" height="394" alt="image" src="https://github.com/user-attachments/assets/3a675690-c734-4d38-bc52-a9ff1d611d4f" />
-
 * * * * * * * * * *
-
 ## Introduction
 The logiBUS_LED_strip_QX function block is an output service interface function block for Boolean output data, specifically designed for controlling LED strips. It offers extensive configuration options for various LED parameters such as color, frequency, and output number.
-
-
 ![logiBUS_LED_strip_QX](logiBUS_LED_strip_QX.svg)
 
 ## Interface Structure
@@ -25,13 +20,10 @@ The logiBUS_LED_strip_QX function block is an output service interface function 
 - **PARAMS** (STRING): Service Parameters
 - **OUT** (BOOL): Output Data to the Resource
 - **Output** (USINT): Identifies the strip's output number (initial value: LED_strip::Output_strip)
-
 - **Colour** (UINT): Identifies the color (initial value: LED_COLOURS::LED_GREEN)
-
 - **FREQ** (UINT): Defines the LED frequency and priority (Initial value: LED_FREQ::LED_OFF)
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Event output qualifier
 - **STATUS** (STRING): Service status
 
@@ -40,7 +32,6 @@ No adapter interfaces available.
 
 ## Functionality
 This function block enables the control of LED strips via a standardized interface. During initialization (INIT), configuration parameters such as output number, color, and frequency are set. Output data (OUT) can be sent to the LED strip via the REQ event. The block acknowledges each operation via the corresponding output events INITO and CNF.
-
 
 ## Technical Features
 - Support for various LED colors via the Colour parameter
@@ -66,11 +57,8 @@ The function block has two main states:
 ## ⚖️ Comparison with Similar Function Blocks
 Compared to simple digital output blocks, logiBUS_LED_strip_QX offers extended functionality for LED-specific applications, particularly through integrated color and frequency control and the ability to address multiple LED strips independently.
 
-
 ## 🛠️ Related Exercises
-
 * [Exercise_032](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_032.md)]
-
 * [Exercise_033_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_033_sub.md)]
 
 ## Conclusion

@@ -1,11 +1,7 @@
 # BOOL conversions
-
 ## 🎧 Podcast
-
 * [George Boole: How an autodidact laid the foundation of our digital world with 0 and 1](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/George-Boole-Wie-ein-Autodidakt-mit-0-und-1-das-Fundament-unserer-digitalen-Welt-legte-e39hb34)
-
 ## 🛠️ Related exercises
-
 * [Uebung_001_AX_b](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_001_AX_b.md)
 * [Uebung_002a2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a2_AX.md)
 * [Uebung_002a4](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a4.md)

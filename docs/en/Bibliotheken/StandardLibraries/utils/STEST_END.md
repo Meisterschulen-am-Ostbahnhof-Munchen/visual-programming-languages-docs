@@ -1,18 +1,13 @@
 # STEST_END
-
 ![STEST_END](https://github.com/user-attachments/assets/1b3b48f8-4224-4d02-9c1c-d69e283b22a2)
-
 * * * * * * * * * *
-
 ## Introduction
 The STEST_END function block is a Service Interface Function Block that serves as an endpoint for service requests. It is typically used in conjunction with other service function blocks to implement a service-oriented architecture in the 4diac IDE.
-
 ![STEST_END](STEST_END.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **REQ**: Service Request - Triggered to initiate a service request.
 
 ### **Event Outputs**
@@ -32,7 +27,6 @@ The STEST_END function block serves as an endpoint for service requests. When th
 
 ## Technical Features
 - Implemented as a Service Interface Function Block.
-
 - Supports communication between RESOURCE and APPLICATION interfaces.
 
 ## State Overview
@@ -40,7 +34,6 @@ The function block has no complex states. It simply responds to and processes th
 
 ## Application Scenarios
 - As an endpoint in a service-oriented architecture.
-
 - In test environments to simulate or terminate service requests.
 
 ## ⚖️ Comparison with Similar Function Blocks
@@ -53,7 +46,6 @@ The STEST_END function block is a simple yet essential building block for servic
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,37 +1,26 @@
 # hsv2rgb
-
 <img width="1412" height="272" alt="image" src="https://github.com/user-attachments/assets/d564035b-fcbb-4237-a4be-75da3e2fd29d" />
-
 * * * * * * * * * *
 ## Introduction
 The function block `hsv2rgb` is a utility block for color space conversion. It converts a color defined in the HSV color model (Hue, Saturation, Value) into the corresponding values of the RGB color model (Red, Green, Blue). This is particularly useful for applications that need to control colors based on their perceptual properties (hue, saturation, brightness), while output devices (such as LEDs or displays) expect RGB values.
-
 ![hsv2rgb](hsv2rgb.svg)
-
 ## Interface Structure
 
 ### **Event Inputs**
-
 * **REQ (Service Request):** Triggers the conversion calculation. This event updates the current values at data inputs `hue`, `saturation`, and `value`.
 
 ### **Event Outputs**
-
 * **CNF (Confirmation of Requested Service):** Triggered once the conversion is complete. This event outputs the calculated RGB values at data outputs `r`, `g`, and `b`.
 
 ### **Data Inputs**
-
 * **hue (UDINT):** The hue in the HSV model. The value range is not predefined in the function block, but typically a range of 0-360° or 0-65535 is used.
 
 ### * **saturation (UDINT):** The saturation value in the HSV model. Typical range: 0-100% or 0-255.
-
 * **value (UDINT):** The brightness value in the HSV model. Typical range: 0-100% or 0-255.
 
 ### **Data Outputs**
-
 * **r (UDINT):** The calculated red component in the RGB model.
-
 * **g (UDINT):** The calculated green component in the RGB model.
-
 * **b (UDINT):** The calculated blue component in the RGB model.
 
 ### **Adapters**
@@ -42,9 +31,7 @@ The block operates in an event-driven manner. The internal algorithm starts when
 
 ## Technical Specifications
 * **Data Type:** All input and output data are of type `UDINT` (unsigned double integer, 32-bit). This enables high resolution and accuracy in color representation.
-
 * **Value Range:** The module itself does not define any scaling or limiting of the value ranges for HSV or RGB. The interpretation of the numerical values (e.g., 0-360 for Hue, 0-255 for RGB) is the responsibility of the connecting application. The conversion algorithm must be designed accordingly for the expected input range.
-
 * **Deterministic Behavior:** The execution is deterministic and always produces the same RGB output values for identical input values.
 
 ## State Overview
@@ -57,21 +44,14 @@ The function block has a simple, stateless sequence:
 3. **Output State:** The results are written to the outputs and the `CNF` event is generated. The module immediately returns to standby mode.
 
 ## Application Scenarios
-
 * **Color Control of RGB LEDs:** User-friendly color selection via HSV parameters (e.g., rotary encoder or touch interface) with subsequent conversion for LED control.
-
 * **Visualization Systems:** Conversion of alarm or status colors defined in HSV for display on RGB monitors or panels.
-
 * **Industrial Lighting:** Dynamic lighting control in production or logistics environments, where color transitions are intuitively defined via brightness and saturation.
-
-
 * ## ⚖️ Comparison with Similar Building Blocks
 
 Unlike general-purpose computing blocks (such as `MUL`, `ADD`) or scalers, `hsv2rgb` is an application-specific block that encapsulates a complex, non-linear algorithm. It saves the user the time-consuming and error-prone implementation of the conversion to Structured Text or other languages. A direct counterpart, `rgb2hsv`, for the reverse conversion would be a similarly specialized block.
 
-
 ## 🛠️ Related Exercises
-
 * [Exercise_031](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_031.md)
 
 ## Conclusion
@@ -80,5 +60,4 @@ The `hsv2rgb` function block is a useful and specialized tool for all 4diac appl
 ---
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

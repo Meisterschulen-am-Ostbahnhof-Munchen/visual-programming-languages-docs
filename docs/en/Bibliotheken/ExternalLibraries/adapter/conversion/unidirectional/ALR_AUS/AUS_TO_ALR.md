@@ -1,13 +1,8 @@
 # OFF_TO_ALR
-
 ![AUS_TO_ALR](./AUS_TO_ALR.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **OFF_TO_ALR** function block is a composite function block that converts an **OFF adapter** (with USINT data) into an **ALR adapter** (with LREAL data). It serves purely as a forwarding interface and does not perform any complex logic or conversion calculations.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,15 +28,12 @@ No separate data outputs are available. Data is forwarded via the **ALR_OUT** ad
 | **Plug (Output)** | ALR_OUT | `adapter::types::unidirectional::ALR` | LREAL Adapter Output |
 
 - The **AUS_IN** adapter provides the interface for incoming USINT data, including an associated event.
-
 - The **ALR_OUT** adapter provides the interface for outgoing LREAL data, including an associated event.
-
 - Inside the function block, the events (`E1`) and data (`D1`) are directly routed from the *AUS_IN* interface to the *ALR_OUT* interface.
 
 ## Functionality
 
 1. **Event Forwarding**: The event (`E1`) received by the **AUS_IN** adapter is passed unchanged to the **ALR_OUT** adapter (`E1`).
-
 
 2. **Data Forwarding**: The data value (`D1`) from the **OFF_IN** adapter is passed directly to the **ALR_OUT** adapter (`D1`).
 
@@ -49,13 +41,9 @@ No separate data outputs are available. Data is forwarded via the **ALR_OUT** ad
 
 The function block itself contains no computation logic or state machine; it consists solely of connections between the adapters.
 
-
 ## Technical Features
-
 - **Composite Function Block**: The function block is implemented as a composite function block (CFB) whose internal network contains only two connections.
-
 - **No Internal Logic**: All functionality is provided by external function blocks or the adapter implementation.
-
 - **Type Compliance**: The connection between `AUS.D1` (USINT) and `ALR.D1` (LREAL) requires that the underlying adapter implementation allows implicit type conversion. For caution, explicit conversion outside the function block is necessary.
 
 ## State Overview
@@ -63,11 +51,8 @@ The function block itself contains no computation logic or state machine; it con
 The function block has **no internal state machine**. It operates transparently: As soon as an event arrives at the input adapter, it is immediately forwarded to the output adapter. There are no delays, storage, or internal states.
 
 ## Application Scenarios
-
 - **Connecting Heterogeneous Control Systems**: A sensor delivers values as USINT via an AUS adapter, while the subsequent control module expects LREAL via an ALR adapter.
-
 - **Structural Adaptation**: The function block (FB) serves as a pure conversion adapter when protocol/interface adapter types use different data formats.
-
 - **Test and Simulation Environments**: Simple pass-through of data and events for testing adapter communication.
 
 ## Comparison with Similar Function Blocks

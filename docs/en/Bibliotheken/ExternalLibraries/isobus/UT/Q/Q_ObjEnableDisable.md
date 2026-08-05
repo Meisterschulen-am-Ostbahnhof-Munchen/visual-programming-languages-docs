@@ -1,13 +1,8 @@
 # Q_ObjEnableDisable
-
 ![Q_ObjEnableDisable](https://user-images.githubusercontent.com/116869307/214148082-167eae93-48d4-40cd-96e2-d0983e475187.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_ObjEnableDisable** is a standards-compliant function block for enabling/disabling input objects in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.4) specification for VT input elements.
-
-
 ![Q_ObjEnableDisable](Q_ObjEnableDisable.svg)
 
 ## Interface Structure
@@ -26,9 +21,7 @@ The **Q_ObjEnableDisable** is a standards-compliant function block for enabling/
 
 ### **Data Outputs**
 - `STATUS` (STRING): Operational status message
-
 - `qOldAbility` (BOOL): Previous activation status
-
 - `s16result` (INT): ISO-compliant result code
 
 ## Functionality
@@ -36,15 +29,12 @@ The **Q_ObjEnableDisable** is a standards-compliant function block for enabling/
 1. **Initialization**:
 
 - `INIT` with target object ID
-
 - `INITO` confirms operational readiness
 
 2. **Status Change**:
 
 - `REQ` with desired activation state
-
 - Changes the object's interaction capability
-
 - `CNF` returns operational status and previous state
 
 3. **Special Cases**:
@@ -89,10 +79,8 @@ The **Q_ObjEnableDisable** is a standards-compliant function block for enabling/
 -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
-
 - **Form Control**: Conditional input approval
 - **Security Features**: Block critical input
-
 - **Workflow Management**: Step-by-step approval
 - **Diagnostic Modes**: Input restrictions
 

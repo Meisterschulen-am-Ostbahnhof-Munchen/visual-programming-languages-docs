@@ -1,11 +1,8 @@
 # ADI_MUX_4
-
 ![ADI_MUX_4](./ADI_MUX_4.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **ADI_MUX_4** is a generic multiplexer that selects one of four identical ADI input adapters (IN1…IN4) via the index **K** and routes it to the output adapter **OUT**. It enables dynamic signal routing without requiring data to flow through traditional variable inputs/outputs.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -66,36 +63,24 @@ The function block operates in an event-driven manner:
 An undefined index (K > 3) does not result in a valid connection – this behavior is implementation-dependent.
 
 ## Technical Features
-
 - **Adapter-Based Data Transmission:** The function block (FB) has no conventional data outputs; the output data is provided exclusively via the **OUT** adapter.
-
 - **Generic Type:** The FB is declared as a generic function block (`generic FB`) and can be used with different ADI adapter configurations.
-
 - **Unidirectional:** Data exchange occurs only in one direction – from the sockets (inputs) to the plug (output).
-
 
 ## State Overview
 Since the FB does not have an explicit state machine in its XML definition, its behavior is implicit:
 
 - **Inactive:** Waits for a REQ event.
-
 - **Processing:** After the REQ, the index K is read, the switching is performed, and the **CNF** event is sent immediately. The FB then returns to the inactive state.
 
 ## Application Scenarios
-
 - **Sensor Data Selection:** Multiple sensors (e.g., temperature, pressure, level) are connected via ADI adapters; a control system selects the currently required sensor using the index **K**.
-
 - **Signal Routing:** In a modular controller, various signal sources can be dynamically routed to a common output.
-
 - **Test and Simulation Environments:** Easy switching between real and simulated adapters at runtime.
 
-
 ## Comparison with Similar Components
-
 - **ADI_MUX_2:** Simple multiplexer with only two inputs, correspondingly smaller index range (0-1).
-
 - **Standard multiplexers (e.g., MUX4):** Usually use classic data I/Os instead of adapters. The ADI_MUX_4 integrates the adapter interface directly and can therefore be seamlessly integrated into adapter-based architectures.
-
 - **Demultiplexers (e.g., DEMUX):** Distributes one input signal to multiple outputs – the opposite function.
 
 ## Conclusion

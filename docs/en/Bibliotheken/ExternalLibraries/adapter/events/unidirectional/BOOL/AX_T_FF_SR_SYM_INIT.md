@@ -1,13 +1,8 @@
 # AX_T_FF_SR_SYM_INIT
-
 ![AX_T_FF_SR_SYM_INIT](./AX_T_FF_SR_SYM_INIT.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AX_T_FF_SR_SYM_INIT** implements an event-driven bistable flip-flop with **Set**, **Reset**, and **Toggle** functionality. It features **symmetrical start-up behavior**, where the output state after the INIT event can be defined via the parameter `Q_INIT`. The block is designed according to IEC 61499-1 Annex A and is suitable for applications requiring a resettable, set, or toggleable binary state with an initializable preset.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -62,40 +57,25 @@ The function block **AX_T_FF_SR_SYM_INIT** implements an event-driven bistable f
 
 The component has a finite state machine with five states: **START**, **INIT**, **DEINIT**, **SET**, and **RESET**.
 
-
 - **START** is the initial state after power-on.
-
 - An **INIT** event initiates the initialization:
-
 - When `QI = TRUE` occurs, the system switches to the **Init** state. The algorithms `initialize` set `QO := QI`.
-
 - Subsequently, based on `Q_INIT`, a decision is made whether to transition to the **SET** state (`Q_INIT = TRUE`) or the **RESET** state (`Q_INIT = FALSE`).
-
-
 
 ``` - During operation, **S**, **R**, or **CLK** can be processed:
 
 - With **S** (Set), the adapter output `Q.D1` is set to `TRUE` in the algorithm `QI = TRUE`. `QO` receives the value of `QI`.
-
 - With **R** (Reset), `Q.D1` is set to `FALSE`, also only if `QI` is active.
-
-
 - With **CLK** (Toggle), the state is toggled: If the FB is in the **SET** state, a CLK event leads to the **RESET** state; if it is in **RESET**, it leads to **SET**. Does the toggle function operate independently of `QI`? *Note:* The transitions `SET—CLK→RESET` and `RESET—CLK→SET` are defined without further conditions; however, in the algorithms, `Q.D1` is only changed at `QI = TRUE`. If `QI = FALSE`, the adapter value remains unchanged, but the state transition still occurs. The internal state (SET/RESET) is always toggled, but the actual output to `Q.D1` only occurs if `QI` is true.
-
 - A subsequent **INIT** event with `QI = FALSE` leads to the **DeInit** state, in which `QO := FALSE` is set. Afterward, the function block returns to the **START** state.
 
 The output `QO` is set to the current value of `QI` with each executed algorithm. It serves as an event qualifier for the INITO output.
 
-
-
 ``` ## Technical Features
 
 - **Symmetrical Start-up Behavior**: The initial value of the output is set via `Q_INIT`, allowing for both set and reset start states.
-
 - **Event Qualifier QI**: The actual change to the adapter `Q.D1` (i.e., the flip-flop output) is only executed if `QI` = `TRUE`. With `QI = FALSE`, the events S, R, and CLK are processed (state change), but the adapter value remains unchanged.
-
 - **Toggle Functionality**: The CLK event allows the output to be switched between 0 and 1, enabling simple square wave generation or state transitions in many applications.
-
 - **INIT Handling**: The INIT event can be used for both initialization (`QI = TRUE`) and deinitialization (`QI = FALSE`).
 
 ## State Overview
@@ -113,7 +93,6 @@ The output `QO` is set to the current value of `QI` with each executed algorithm
 **SET** | `SET` | Q.E1 | Sets `Q.D1 := TRUE` (if QI = TRUE) and `QO := QI`. |
 
 **RESET** | `RESET` | Q.E1 | Sets `Q.D1 := FALSE` (if QI = TRUE) and `QO := QI`. |
-
 
 **DeInit** | `RESET` | Q.E1 | Sets `Q.D1 := FALSE` (if QI = TRUE) and `QO := QI`. |
 
@@ -133,13 +112,9 @@ The output `QO` is set to the current value of `QI` with each executed algorithm
 - DeInit → START: (always, condition = 1)
 
 ## Application Scenarios
-
 - **Machine Control**: Defined start state after power-up (e.g., Valve Closed = `Q_INIT = FALSE`).
-
 - **State Change with Toggle**: Switches a light or drive with each CLK pulse.
-
 - **Safe Initialization**: The action can be made conditional via `QI` (e.g., enabling by a higher-level controller).
-
 - **Fault Reset**: A RESET event resets the output, while setting is possible via S.
 
 ## Comparison with Similar Function Blocks

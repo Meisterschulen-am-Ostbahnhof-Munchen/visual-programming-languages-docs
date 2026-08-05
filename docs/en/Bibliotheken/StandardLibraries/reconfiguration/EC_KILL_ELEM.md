@@ -1,13 +1,8 @@
 # EC_KILL_ELEM
-
 ![EC_KILL_ELEM](https://user-images.githubusercontent.com/116869307/214154585-0a3f092a-270e-47aa-ad82-6f643b65be11.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The EC_KILL_ELEM function block is used to terminate instances according to the state machine of IEC 61499 function blocks. It enables the targeted termination of function block instances, connections (event/data), resources, or devices within a 4diac system.
-
-
 ![EC_KILL_ELEM](EC_KILL_ELEM.svg)
 
 ## Interface Structure
@@ -30,11 +25,9 @@ The EC_KILL_ELEM function block is used to terminate instances according to the 
 ### **Adapters**
 No adapter interfaces are available.
 
-
 ## Functionality
 
 The function block responds to the REQ event and attempts to terminate the specified element (function block, connection, resource, or device) at the specified target resource. Upon execution, the CNF event is output with the corresponding status.
-
 
 ``` ## Technical Features
 - Supports terminating various element types (FBs, connections, resources, devices)
@@ -54,12 +47,10 @@ The function block has several service sequences:
 - **resource_initiated_termination**: Resource-initiated termination
 
 ## Application Scenarios
-
 - Dynamic reconfiguration of automation systems
 - Targeted termination of faulty components
 - Resource management in distributed systems
 - System maintenance and -Updates
-
 - Error Handling and System Recovery
 
 ## ⚖️ Comparison with Similar Blocks
@@ -71,7 +62,6 @@ EC_KILL_ELEM is an essential building block for reconfiguration tasks in IEC 614
 --
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

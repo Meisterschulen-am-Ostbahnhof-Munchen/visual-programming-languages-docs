@@ -1,12 +1,8 @@
 # AULI_SPLIT_6
-
 ![AULI_SPLIT_6](./AULI_SPLIT_6.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AULI_SPLIT_6** is used to distribute a single AULI adapter input (unidirectional) to six identical AULI outputs. It provides a generic solution for forwarding an AULI signal to multiple subsequent blocks without compromising signal integrity.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -47,28 +43,20 @@ This component functions as a pure signal distributor (splitter). An AULI signal
 
 Since there are no events or data inputs/outputs, communication is based entirely on the adapter interface. The component is event-free and is activated solely by connecting the adapters.
 
-
 ``` ## Technical Features
 
 - **Generic Type:** The function block is implemented as a generic function block (`GEN_AULI_SPLIT`), allowing it to be reused for various AULI variants.
-
 - **Unidirectional Adapters:** The adapters used are declared as unidirectional interfaces – they only support one direction of data flow (from the socket to the plugs).
-
 - **No Data or Event Processing:** The function block contains no internal algorithms or states; it functions solely as a passive splitter.
-
 - **Simple Scaling:** With a fixed number of six outputs, the function block is optimized for typical applications in agricultural technology (e.g., HR agricultural technology).
 
 ## State Overview
 
 Since the function block has no event control and manages no internal states, there is no state machine. The function block is purely combinational and passes the input signals unchanged to all outputs.
 
-
 ## Application Scenarios
-
 - **Distributing a Sensor Signal:** In agricultural control systems, a single AULI sensor (e.g., for crop flow) can be connected to multiple downstream evaluation modules.
-
 - **Parallel Actuator Controls:** A control command (e.g., for hydraulic valves) is to be simultaneously forwarded to six identical actuators.
-
 - **Redundancy Setup:** In safety-critical applications, the same signal can be routed multiple times to redundant control units.
 
 ## Comparison with Similar Modules

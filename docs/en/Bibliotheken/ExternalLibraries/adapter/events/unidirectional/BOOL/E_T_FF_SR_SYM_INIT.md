@@ -1,13 +1,9 @@
 # E_T_FF_SR_SYM_INIT
-
 ![E_T_FF_SR_SYM_INIT](./E_T_FF_SR_SYM_INIT.svg)
-
 **Image of the function block:** (not available)
-
 * * * * * * * * * *
 ## Introduction
 The function block `E_T_FF_SR_SYM_INIT` implements an event-driven, bistable flip-flop with set, reset, and toggle functionality. It features symmetrical startup behavior: Upon the initialization event (`INIT`), the output `Q` is set to the value specified at the input `Q_INIT`, provided the qualifier `QI` is active. The block combines the properties of an SR flip-flop and a toggle flip-flop in a single unit.
-
 
 ## Interface Structure
 
@@ -58,7 +54,6 @@ The function block `E_T_FF_SR_SYM_INIT` implements an event-driven, bistable fli
 ### **Adapters**
 None.
 
-
 ## Functionality
 
 The function block traverses a finite state machine with five states: `START`, `Init`, `DeInit`, `SET`, and `RESET`.
@@ -83,29 +78,16 @@ When an event occurs at `R`, the algorithm `RESET` is executed:
 
 `QO` receives the value of `QI`. If `QI = TRUE` is present, `Q` is set to `FALSE`. In this case, `EO` is also triggered.
 
-
-
-
-
-
-
-
-
-
 `QI = TRUE` is set to `Q`. `EO` is also triggered in this case. - **Toggle (`CLK`)**
 
 An event at `CLK` always causes a state change:
 
 If the automaton is in state `SET`, it switches to `RESET` and vice versa. The respective algorithm (`SET` or `RESET`) is executed with the current evaluation from `QI`. The output `Q` is therefore toggled at every clock cycle, provided `QI = TRUE` is in state.
 
-
-
 ``` ## Technical Features
 
 - **Symmetrical Start-up Behavior**: The initial value of `Q` is determined by the configurable input `Q_INIT` and is not set to a fixed default. This allows the system to start reproducibly in a defined state.
-
 - **Event Qualifier `QI`**: All actions (`SET`, `RESET`) are only executed if `QI = TRUE` is present. For `QI = FALSE`, the output qualifier `QO` is simply set to `FALSE`; the value of `Q` remains unchanged. This enables conditional control by upstream function blocks.
-
 - **Deinitialization**: If a `INIT` event with `QI = FALSE` is received during runtime, the function block is deinitialized and enters its idle state (`START`). In this state, it does not respond to any further events until it is reinitialized.
 
 ## State Overview
@@ -124,9 +106,7 @@ If the automaton is in state `SET`, it switches to `RESET` and vice versa. The r
 
 | RESET | Q is reset (`FALSE`) | `Q := FALSE` (only if QI=true); Trigger `EO` |
 
-
 Q is reset (`FALSE`) | `Q := FALSE` (only if QI=true);
-
 
 Q is reset (`EO`) ...80qz) | 
 
@@ -144,21 +124,14 @@ Q is reset (q Transitions:
 - `DeInit` → `START` : always (transition with condition `1`)
 
 ## Application Scenarios
-
 - **Control with defined start state**: In safety controllers or systems that require a specific initial state after a restart, `Q_INIT` can be set accordingly.
-
 - **Toggle function for command switches**: A single push button (connected to `CLK`)) switches an output with each press – e.g., for lighting controls.
-
 - **Conditional Set/Reset Logic**: The qualifier `QI` allows actions to be made dependent on higher-level conditions without losing the flip-flop's state.
 
 ## Comparison with Similar Components
-
 - **Standard SR Flip-Flop (`E_SR`)**: Offers only set and reset functionality, no toggle function, and no adjustable initial value.
-
 - **Toggle Flip-Flop (`E_TOGGLE`)**: Only toggles on each clock cycle; no separate set/reset functionality and no defined initial value.
-
 - **SR Flip-Flop with Initialization (`E_SR_INIT`)**: Similar, but without a toggle function.
-
 
 This function block combines all three functions (Set, Reset, Toggle) with flexible initialization behavior – a comprehensive solution for many event-driven control tasks.
 

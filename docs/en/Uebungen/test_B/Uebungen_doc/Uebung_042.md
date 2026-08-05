@@ -1,13 +1,8 @@
 # Exercise_042: Scaling Function Block Testing
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_042`. It demonstrates the mathematical conversion of value ranges.
-
 ----
-
 ## Objective of the Exercise
-
 Using the function block `SCALE`. In automation technology, raw values (e.g., 4-20 mA) often need to be converted into physical quantities (e.g., 0-10 bar). The Scale function block performs this linear conversion.
 
 -----
@@ -16,21 +11,15 @@ Using the function block `SCALE`. In automation technology, raw values (e.g., 4-
 
 [cite_start]In `Uebung_042.SUB`, a test scenario for the Scaling function block is set up[cite: 1].
 
-
 ### Function Blocks (FBs)
 
 ![Uebung_042_network](./Uebung_042_network.svg)
 
 * **`SCALE`**: The conversion block.
-
 * **Parameters**:
-
 * `MIN_IN` / `MAX_IN`: The source range (here 4.0 to 20.0).
-
 * `MIN_OUT` / `MAX_OUT`: The target range (here 0.0 to 100.0).
-
 * `IN`: The current input value (here fixed at 10.0).
-
 
 -----
 

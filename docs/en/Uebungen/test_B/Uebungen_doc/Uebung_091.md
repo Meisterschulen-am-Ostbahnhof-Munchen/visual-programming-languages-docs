@@ -1,18 +1,11 @@
 # Exercise_091: Example for E_TRAIN
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_091`. It demonstrates the automatic generation of a fixed number of events.
-
-
 ``` ## 🎧 Podcast
-
 ![Uebung_091_network](./Uebung_091_network.svg)
 
 * [As an agricultural machinery specialist through hell: How Lanz-Wery survived war, occupation, and hyperinflation – Insights into original business reports 1915-1922](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Als-Landtechnik-Spezialist-durch-die-Hlle-Wie-Lanz-Wery-Krieg--Besatzung-und-Hyperinflation-berlebte--Einblicke-in-Original-Geschftsberichte-1915-1922-e39athj)
-
 * [Rudolf Diesel: Brilliant work, mysterious end – Who disappeared on the ferry in 1913?](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Rudolf-Diesel-Geniales-Werk--mysterises-Ende--Wer-verschwand-1913-auf-der-Fhre-e396oa6)
-
 * [Smart Farming Vision 1991 Auernhammer's blueprints](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Smart-Farming-Vision-1991-Auernhammers-Blaupausen-e3b09r2)
 
 ----
@@ -20,7 +13,6 @@ This article describes the logiBUS® exercise `Uebung_091`. It demonstrates the 
 ## Objective of the exercise
 
 Using the building block `E_TRAIN`. The goal is to trigger a defined sequence of events after a single start impulse.
-
 
 -----
 
@@ -39,7 +31,6 @@ Using the building block `E_TRAIN`. The goal is to trigger a defined sequence of
 4. These events are sent to the toggle flip-flop.
 
 5. The lamp on `Q1` then blinks exactly four times (4 on, 4 off) and then remains in its last position.
-
 
 -----
 

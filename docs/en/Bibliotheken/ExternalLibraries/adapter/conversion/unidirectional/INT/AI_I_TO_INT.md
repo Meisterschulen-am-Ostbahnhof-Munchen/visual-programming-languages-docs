@@ -1,13 +1,8 @@
 # AI_I_TO_INT
-
 ## Introduction
 The AI_I_TO_INT function block is a composite function block used to convert the AI adapter format to an INT value.
-
-
 ![AI_I_TO_INT](AI_I_TO_INT.svg)
-
 ## Interface Structure
-
 ### **Event Inputs**
 - No direct event inputs available
 

@@ -1,7 +1,5 @@
 # Unidirectional UDINT adapter
-
 ## 🛠️ Related exercises
-
 * [Uebung_009](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
 * [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
 * [Uebung_009a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)

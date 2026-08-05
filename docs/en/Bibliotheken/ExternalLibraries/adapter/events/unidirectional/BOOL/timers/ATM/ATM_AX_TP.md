@@ -1,12 +1,8 @@
 # ATM_AX_TP
-
 ![ATM_AX_TP](./ATM_AX_TP.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The **ATM_AX_TP** is a special timer function block that generates a time-limited pulse from an input signal. It implements the functionality of a **non-retriggerable pulse shaper**. The block is controlled via an AX adapter and outputs the result via another AX adapter; the pulse duration is specified via a separate ATM adapter. The adapter interfaces make it particularly easy to integrate into modular automation systems.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -16,7 +12,6 @@ The **ATM_AX_TP** is a special timer function block that generates a time-limite
 |------|-------|------------------------------|
 
 | R | Event | Resets the timer |
-
 
 ### **Event Outputs**
 
@@ -49,11 +44,8 @@ No direct data outputs. The output value (Q) is provided via the **Q** adapter.
 The **ATM_AX_TP** operates based on the standardized IEC 61499 function block **E_TP**, which is instantiated within the network.
 
 - **Triggering:** A rising edge at input **IN** (event IN.E1 and data value IN.D1 = TRUE) starts the timing.
-
 - **Pulse Generation:** The output **Q** is immediately set to TRUE and remains active for the duration **PT**. After this time has elapsed, Q returns to FALSE.
-
 - **Non-Retriggerable:** During an ongoing pulse, a subsequent rising edge from IN is ignored – the pulse continues at its original length.
-
 - **Reset:** An event at input **R** immediately ends the current pulse (Q = FALSE) and resets the timer. A new pulse can then be started.
 
 Internal wiring:
@@ -66,14 +58,9 @@ Internal wiring:
 `R       → E_TP.R`
 
 ## Technical Features
-
 - **Adapter-based connection:** Unlike a direct E_TP, ATM_AX_TP operates exclusively via adapters (AX and ATM). This allows for loose coupling in distributed systems and simplifies the exchange of signal types.
-
-
 - **Compatibility:** This function block is optimized for use with the Eclipse 4diac framework (recognizable by the package attribute `adapter::events::unidirectional::timers`).
-
 - **Versioning:** Multiple versions document the evolution (reset function, package changes).
-
 - **License:** Eclipse Public License 2.0 – the source code may be used, modified, and distributed.
 
 ## State Overview
@@ -81,20 +68,14 @@ Internal wiring:
 This function block does not have any explicit state machines at the top level – the state logic is implemented entirely by the internal **E_TP**. This state cycles through the following states:
 
 - **IDLE** – waiting for the rising edge of IN
-
 - **ACTIVE** – pulse is running (Q = TRUE, timer is running)
-
 - **RESET** – returned to IDLE by event R (pulse terminates prematurely)
 
 After the timer expires, E_TP automatically switches from ACTIVE to IDLE.
 
-
 ## Application Scenarios
-
 - **Control of momentary actuators:** Valves, lights, signal transmitters that should only be switched on for a specific duration.
-
 - **Debouncing / Pulse shaping:** An incoming signal (e.g., push button) is converted into a precisely defined pulse.
-
 - **Modular automation:** Thanks to the adapter interfaces, the function block is suitable for use in distributed systems where signals are exchanged between different components.
 
 ## Comparison with similar function blocks
@@ -116,5 +97,4 @@ The **ATM_AX_TP** is a useful function block for generating a non-retriggerable 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)]

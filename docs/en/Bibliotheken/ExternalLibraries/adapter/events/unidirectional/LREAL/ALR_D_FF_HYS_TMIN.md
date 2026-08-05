@@ -1,12 +1,8 @@
 # ALR_D_FF_HYS_TMIN
-
 ![ALR_D_FF_HYS_TMIN](./ALR_D_FF_HYS_TMIN.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **ALR_D_FF_HYS_TMIN** implements a clock-controlled D-latch (flip-flop) with adjustable hysteresis for data acquisition and a minimal time delay between successive output events. It processes an analog or Boolean value via an adapter input and outputs the buffered value via an adapter output. The hysteresis prevents unintended switching due to fluctuating input values, while the minimum time (Tmin) limits the event frequency at the output.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -64,15 +60,10 @@ The function block (FB) is implemented as a composite block that internally uses
 5. **Output**: The latched value is provided via the adapter output `Q.D1`, and an event (`Q.E1`) signals the update.
 
 ## Technical Features
-
 - **Hysteresis**: The function block operates with an adjustable hysteresis band. The actual implementation (whether symmetrical or with thresholds) depends on the internal function block. A Schmitt trigger characteristic is common.
-
 - **Time-Controlled Output**: `Tmin` limits the maximum output frequency. This is useful for reducing the load on downstream components or ensuring a minimum signal duration.
-
 - **Adapter Interface**: The use of adapters (`ALR`) enables loose coupling between the data value and the event – an event implicitly carries the corresponding data value.
-
 - **Reusability**: The FB is built from a standardized hysteresis flip-flop and can be easily adapted to other data formats.
-
 
 ## State Overview
 
@@ -85,19 +76,14 @@ Since the function block consists of several internal states (e.g., waiting for 
 3. **Hysteresis Check** – compares the new value with the latched value
 
 - If the hysteresis limit is exceeded: the new value is adopted, and the process transitions to **Waiting for Minimum Time**
-
 - Otherwise: returns to **Ready** without output
 
 4. **Waiting for Minimum Time** – after the minimum time has elapsed, the output event `Q.E1` is generated, and the latched value is displayed at `Q.D1`Output; then return to **Ready**
 
 ## Application Scenarios
-
 - **Analog Switching Thresholds**: Monitoring of sensors (e.g., temperature, pressure) with adjustable hysteresis and a minimum switching pause to suppress bounce or noise.
-
 - **Digital Signal Conditioning**: Processing of square wave signals with noise, where hysteresis stabilizes the edges and Tmin enforces a defined pulse duration.
-
 - **Stepper Motor Control**: Latching of position values with hysteresis to counter mechanical vibrations, accompanied by time-debouncing of the output commands.
-
 - **Safety-Critical Systems**: Minimum time between output changes prevents excessively rapid state transitions and protects subsequent actuators.
 
 ## Comparison with Similar Function Blocks

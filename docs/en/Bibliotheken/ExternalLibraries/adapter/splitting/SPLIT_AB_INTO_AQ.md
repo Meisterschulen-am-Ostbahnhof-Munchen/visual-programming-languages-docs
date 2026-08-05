@@ -1,13 +1,9 @@
 # SPLIT_AB_INTO_AQ
-
 ![SPLIT_AB_INTO_AQ](./SPLIT_AB_INTO_AQ.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `SPLIT_AB_INTO_AQ` is used to split a data byte received via a `AB` adapter (byte) into four individual 2-bit quartets and output each of these via a `AQ` adapter (quarter). It encapsulates the decomposition of a byte into manageable partial values and makes them available for further processing via standardized unidirectional adapter interfaces.
-
 ## Interface Structure
-
 ### **Event Inputs**
 
 | Name | Description |
@@ -56,7 +52,6 @@ No direct data outputs; the quartets are provided via the data interfaces of the
 
 3. The four quartets are fed in parallel to the data inputs of `E_D_FF_ANY` flip-flops.
 
-
 ``` 4. Simultaneously, the splitter's acknowledgment event (`CNF`) is distributed to the clock inputs (`CLK`) of all four flip-flops.
 
 5. On the rising edge of this event, the flip-flops take over the quartets and pass them on to their respective outputs (`Q`).
@@ -66,13 +61,9 @@ No direct data outputs; the quartets are provided via the data interfaces of the
 Thus, with each activation of the socket, an entire byte is split into four quartets and transmitted synchronously to all four output adapters.
 
 ## Technical Features
-
 - **Internal Flip-Flops:** The use of `E_D_FF_ANY` ensures that the splitting occurs only once per event and that the values are buffered until a new event arrives.
-
 - **Adapter Coupling:** Instead of direct inputs/outputs, only unidirectional adapters are used, enabling loose coupling and reusability in complex adapter networks.
-
 - **Synchronization:** The flip-flops are clocked via the shared `CNF` event, ensuring all quartets are present simultaneously.
-
 - **No State Machine:** The function block operates purely event-driven without its own sequential state – the logic is entirely implemented through the interconnected internal components.
 
 ## State Overview
@@ -83,19 +74,13 @@ Since `SPLIT_AB_INTO_AQ` is a composite function block without its own state mac
 2. **Processing:** An event at the socket triggers the decomposition and updating of all outputs. Upon completion, the function block returns to its idle state.
 
 ## Application Scenarios
-
 - **Control of Four Actuators:** A byte (e.g., from a master control bus) is split into four 2-bit values to provide separate control signals for independent actuators.
-
 - **Data Reduction:** Splitting a byte into four individual signals for transmission to parallel, simpler processing units.
-
 - **Adapter-Based Architectures:** Used in systems that consistently operate with unidirectional adapters to increase modularity.
 
 ## Comparison with Similar Components
-
 - **`SPLIT_BYTE_INTO_QUARTERS`:** Performs the simple splitting of a byte into four quartets, but via direct data and event inputs/outputs. `SPLIT_AB_INTO_AQ` encapsulates this logic in an adapter interface and adds flip-flops for stable output.
-
 - **`SPLIT_WORD_INTO_BYTES`:** Splits a 16-bit word into two bytes – analogous principle, but for different data widths and adapter types.
-
 - **Simple Multiplexers/Demultiplexers:** While these signals switch, `SPLIT_AB_INTO_AQ` focuses on the fixed, parallel division of a composite data type.
 
 ## Conclusion

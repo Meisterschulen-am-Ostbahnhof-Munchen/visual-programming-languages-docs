@@ -1,12 +1,8 @@
 # ALI_DEMUX_4
-
 ![ALI_DEMUX_4](./ALI_DEMUX_4.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **ALI_DEMUX_4** is a generic demultiplexer for the ALI protocol (Agriculture-Agriculture Interface). It distributes an ALI value received via a socket to one of four adapter outputs, controlled by an index parameter. This block is typically used in agricultural control applications to selectively route signals to different downstream components.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -52,7 +48,6 @@ Plug | `OUT3` | Output | Third output (Index 3). |
 
 Plug | `OUT4` | Output | Fourth output (Index 4). |
 
-
 All adapters are of type `adapter::types::unidirectional::ALI` (unidirectional, data-flowing).
 
 ## Functionality
@@ -68,32 +63,23 @@ All adapters are of type `adapter::types::unidirectional::ALI` (unidirectional, 
 5. The function block remains ready for the next `REQ` call.
 
 ## Technical Features
-
 - **Generic Extension:** The function block is declared as a generic type (attribute `GenericClassName = 'GEN_ALI_DEMUX'`). More specific variants for different ALI adapter subtypes can be created using type hashing without changing the underlying demultiplex logic.
-
 - **Simple Index Control:** The index `K` is implemented as `UINT` and covers the values 1 to 4. The assignment is done directly via the plug numbering.
-
 - **Adapter-Based:** All data transmission occurs via ALI adapters, allowing the function block to be integrated into existing ALI communication environments.
-
 
 ## State Overview
 
 The ALI_DEMUX_4 function block has an implicit, event-driven sequence:
 
 - **IDLE** (Wait State): The function block performs no operation; no `REQ` is present.
-
 - **EXEC** (Execution): Upon receipt of `REQ`, the demultiplexing process is started. In this state, the index is evaluated and the adapter forwarding is performed.
-
 - **DONE** (Completion): The transfer is complete, and `CNF` is output. The function block then returns to the IDLE state.
 
 A detailed state machine is not explicitly modeled because the function block operates purely event-driven.
 
 ## Application Scenarios
-
 - **Signal Distribution in Agricultural Engineering:** A sensor delivers a measured value (e.g., soil temperature, humidity) via the `IN` adapter. Depending on the index, this value is forwarded to one of four actuators or higher-level control blocks.
-
 - **Radio or Fieldbus Selection:** In a machine with multiple parallel communication channels, the FB can be used to route an incoming ALI packet specifically to the correct processing module.
-
 - **Test and Simulation Environments:** By switching the index, different output paths can be quickly changed without rewiring the data flow.
 
 ## Comparison with Similar Modules

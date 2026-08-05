@@ -1,11 +1,8 @@
 # ALR_MUX_3
-
 ![ALR_MUX_3](./ALR_MUX_3.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **ALR_MUX_3** is a generic multiplexer for ALR adapter connections. Based on an index value `K`, it selects one of three ALR inputs (`IN1`, `IN2`, `IN3`) and forwards its data to the output `OUT`. The block is controlled by the event `REQ` and acknowledges processing with `CNF`.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -64,41 +61,28 @@ The function block operates strictly event-driven:
 
 If an invalid index value (e.g., greater than 2) is applied, the behavior is unspecified—in practice, a safe error state should be avoided.
 
-
 ## Technical Features
-
 - **Generic Type**: The function block (FB) is implemented as a generic class block (`GenericClassName = 'GEN_ALR_MUX'`), which allows its internal structure to be adapted to various ALR adapter variants.
-
 - **ALR Adapter**: All inputs and outputs are implemented as unidirectional ALR adapters. This encapsulates complex data structures or signals in a standardized interface.
-
 - **No Data Outputs**: Output is provided solely via the adapter plug, simplifying integration into existing component networks.
 
 ## State Overview
 The FB does not contain any explicit state machines in its XML. The behavior is defined purely by event control:
 
 - **Waiting** for `REQ`
-
 - After `REQ`: Evaluate `K`, switch the corresponding input
-
 - Output `CNF`
 
 A detailed state machine is provided by the generic framework when compiling the FB instance.
 
 ## Application Scenarios
-
 - **Source Switching**: In a controller, three different ALR data sources (e.g., sensors, calculations) can be selected via an index.
-
 - **Modular Configuration**: The function block is suitable for switching between different operating modes during operation.
-
 - **Test and Simulation Environments**: For importing various test data into an ALR-based system.
 
-
 ## Comparison with Similar Function Blocks
-
 - **ALR_MUX_3**: Specifically designed for two inputs (channels 0 and 1) – here, all three inputs are used.
-
 - **General Multiplexer Function Blocks** (e.g., `MUX` from IEC 61499 standard libraries): These usually work with scalar data types (BOOL, INT) and not with adapters. The **ALR_MUX_3** is optimized for the ALR adapter interface.
-
 - Unlike an analog switch or data distributor, the focus is on event-driven transmission of complete ALR packets.
 
 ## Conclusion

@@ -1,13 +1,8 @@
 # Practice Exercises
-
 ## The exercises build upon each other, so it is recommended to complete them in the given order.
-
 #### Inputs IX / QX (all momentary)
-
 #### Exercise Simple Connection I
-
 Connect input I1 to output Q1 so that pressing I1 activates the actuator at Q1.
-
 #### Exercise Simple Connection II
 
 Connect I1 to outputs Q1 and Q3.
@@ -23,7 +18,6 @@ A rocket launch pad (Q1) should only launch when buttons I1, I2, and I3 are pres
 #### Exercise Click
 
 Build a program that turns on the light at Q1 with one click and off again with another click.
-
 
 ### Rendezvous and Flip-Flop
 
@@ -77,11 +71,9 @@ Turn Signals: Input I3 should also be the hazard warning lights.
 
 Build a program where the LED lights up red when you press the red button and blue when you press the blue button.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

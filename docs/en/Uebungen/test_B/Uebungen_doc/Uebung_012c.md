@@ -1,13 +1,8 @@
 # Exercise_012c: Numeric Value Input and Storage via INI with Subapp
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_012c`. It demonstrates that text information can also be stored persistently.
-
 ----
-
 ## Objective of the Exercise
-
 Handling the data type `STRING` during storage.
 
 -----
@@ -17,9 +12,7 @@ Handling the data type `STRING` during storage.
 [cite_start]In `Uebung_012c.SUB`, a string value is managed via an INI block[cite: 1].
 
 ### Function Blocks (FBs)
-
 * **`INI`**: Configured here for the data type `STRING`.
-
 * **`Q_StringValue`**: An ISOBUS output module specifically designed for displaying text (instead of numbers).
 
 -----

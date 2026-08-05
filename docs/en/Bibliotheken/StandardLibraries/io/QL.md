@@ -1,13 +1,8 @@
 # QL
-
 ![](https://user-images.githubusercontent.com/69573151/210781586-ad33d398-c369-4e16-b79e-20ed939fcdd6.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The QL function block is an output service interface block for processing long-word output data. It serves as an interface between the control logic and external resources and enables the output of 64-bit data values.
-
-
 ![QL](QL.svg)
 
 ## Interface Structure
@@ -35,8 +30,6 @@ No adapter interfaces are available.
 ## Functionality
 The QL block processes two main operations: initialization and data output. During the INIT operation, the service parameters are configured and the connection to the resource is initialized. The REQ operation performs the actual data output of the LWORD value to the connected resource. Each operation is acknowledged by corresponding confirmation events.
 
-
-
 ``` ## Technical Features
 - Processing of 64-bit data values (LWORD)
 - String-based parameter configuration
@@ -58,7 +51,6 @@ The block has two main states:
 
 ## ⚖️ Comparison with Similar Blocks
 Compared to simpler output blocks, QL offers 64-bit data processing and extended parameter configuration. Compared to more general-purpose communication blocks, QL is specifically optimized for output functionality.
-
 
 ## Conclusion
 

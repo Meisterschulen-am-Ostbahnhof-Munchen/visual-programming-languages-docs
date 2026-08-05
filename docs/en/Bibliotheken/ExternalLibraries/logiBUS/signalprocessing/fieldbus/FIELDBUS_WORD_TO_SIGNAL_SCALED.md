@@ -1,11 +1,8 @@
 # FIELDBUS_WORD_TO_SIGNAL_SCALED
-
 ![FIELDBUS_WORD_TO_SIGNAL_SCALED](./FIELDBUS_WORD_TO_SIGNAL_SCALED.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **FIELDBUS_WORD_TO_SIGNAL_SCALED** is used to convert a digital fieldbus raw value (16-bit WORD) into a scaled physical signal value (REAL). A valid output is only provided if the incoming value is recognized as a valid signal. The block checks the validity against a predefined constant (`VALID_SIGNAL_W`) and can reliably suppress unsafe or "unavailable" values.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -49,7 +46,6 @@ The function block **FIELDBUS_WORD_TO_SIGNAL_SCALED** is used to convert a digit
 
 | `VALID` | BOOL | `FALSE` | Validation flag – `TRUE`, if the incoming raw value is recognized as a valid signal. |
 
-
 ### **Adapter**
 No adapters available.
 
@@ -60,15 +56,12 @@ The module operates in a state-controlled manner:
 
 After the `INIT` event occurs, the initialization algorithm (empty) is executed and the `INITO` event is output. The scaling factors are then applied to the inputs `SCALE` and `OFFSET` (the values are already present at the inputs).
 
-
 2. **REQ State** (Main Logic):
 
 For each `REQ` event, the following algorithm is executed:
 
 - The incoming `IN` (WORD) is first converted to `UINT`.
-
 - If this value is **less than or equal to** the threshold defined in the global constant `VALID_SIGNAL_W` (also as WORD/UINT), the signal is considered **valid**.
-
 - If valid:
 
 `OUT = UINT_TO_REAL(IN) * SCALE + DINT_TO_REAL(OFFSET)`
@@ -85,15 +78,10 @@ For each `REQ` event, the following algorithm is executed:
 
 The comparison value `VALID_SIGNAL_W` and the default input value `NOT_AVAILABLE_WM` are imported as constants in the namespace `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`.
 
-
 ## Technical Features
-
 - **Use of External Constants**: The validity threshold (`VALID_SIGNAL_W`) and the "Not Available" marker (`NOT_AVAILABLE_WM`) are retrieved from a global library. This enables consistent signal definition across multiple FB instances.
-
 - **Scaling with REAL and DINT**: The offset is defined as `DINT`, but is converted to a floating-point number by `DINT_TO_REAL`. This can lead to minor rounding errors with large values, but is usually negligible in practice.
-
 - **Validation Logic**: Unlike simple "word-to-real" converters, the value is only output if it lies within the defined valid range. This prevents misinterpretations of errors or invalid telegrams.
-
 - **Initial Behavior**: The inputs `IN` have a default value of `NOT_AVAILABLE_WM`, so the function block immediately reports "invalid" after a reset or in case of no communication until a valid value is received.
 
 ## State Overview
@@ -109,11 +97,8 @@ The comparison value `VALID_SIGNAL_W` and the default input value `NOT_AVAILABLE
 The function block (FB) has no further states; after each event, it returns to the corresponding start state. There is no explicit error handling or timeouts.
 
 ## Application Scenarios
-
 - **Agricultural Technology / Agricultural Control Systems**: A fieldbus device (e.g., ISOBUS) provides raw values for sensors (speed, temperature, pressure). The FB scales these to physical units and detects invalid measurement ranges.
-
 - **Industrial Automation**: With Profibus/IO-Link connectivity, word codes can be converted into process-relevant quantities – e.g., 0…1000 → 0.0…10.0 V.
-
 - **Diagnostic and Safety Functions**: Validation checks allow for easy detection of signal losses or range exceedances and the initiation of an error response.
 
 ## Comparison with Similar Function Blocks
@@ -136,7 +121,6 @@ This function block offers a compact and robust solution for processing fieldbus
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

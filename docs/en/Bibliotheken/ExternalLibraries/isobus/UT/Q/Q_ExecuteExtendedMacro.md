@@ -1,12 +1,8 @@
 # Q_ExecuteExtendedMacro
-
 ![Q_ExecuteExtendedMacro](https://user-images.githubusercontent.com/116869307/214147426-6df72399-0812-4695-ac3f-cda61c5e74c4.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_ExecuteExtendedMacro** is a standards-compliant function block for executing extended macros in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.62) specification for VT from version 5 onwards.
-
 ![Q_ExecuteExtendedMacro](Q_ExecuteExtendedMacro.svg)
 
 ## Interface Structure
@@ -24,7 +20,6 @@ The **Q_ExecuteExtendedMacro** is a standards-compliant function block for execu
 
 ### **Data Outputs**
 - `STATUS` (STRING): Operational status message
-
 - `s16result` (INT): ISO-compliant result code
 
 ## Functionality
@@ -32,21 +27,17 @@ The **Q_ExecuteExtendedMacro** is a standards-compliant function block for execu
 1. **Initialization**:
 
 - `INIT` with macro object ID
-
 - `INITO` confirms operational readiness
 
 2. **Macro Execution**:
 
 - `REQ` without additional parameters
-
 - Executes saved macro sequence
-
 - `CNF` returns result status
 
 3. **Error Handling**:
 
 - ISO-standardized error codes
-
 - Detailed status messages
 
 ## Technical Features
@@ -85,7 +76,6 @@ The **Q_ExecuteExtendedMacro** is a standards-compliant function block for execu
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid VT instance |
 
 ## Application Scenarios
-
 - **Automated Processes**: Complex Command Chains
 - **System Initialization**: Startup Procedures
 - **Diagnostic Routines**: Automated Tests

@@ -1,13 +1,9 @@
 # AUDI_TO_AS
-
 ![AUDI_TO_AS](./AUDI_TO_AS.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **AUDI_TO_AS** is a composite block that converts an AUDI adapter (data type `UDINT`) into an AS adapter (data type `SINT`). It serves as a bridge between two different adapter interfaces and enables the lossy conversion of an unsigned 32-bit value into a signed 8-bit value. The conversion is event-driven using the internal conversion function `F_UDINT_TO_SINT`.
-
 ## Interface Structure
-
 ### **Event Inputs**
 The function block does not have its own dedicated event inputs. Event control is handled via the **socket adapter `AUDI_IN`**, which provides an event `E1`.
 
@@ -18,7 +14,6 @@ The function block (FB) does not have its own independent event outputs. The res
 Data inputs are available exclusively via the **socket adapter `AUDI_IN`**:
 
 - **`D1`** (data type `UDINT`): The 32-bit value to be converted.
-
 
 ### ### **Data Outputs**
 Data outputs are provided via the **`AS_OUT`** plug adapter:
@@ -43,30 +38,21 @@ This function block acts as a transparent conversion stage between two unidirect
 The internal process is purely causal and requires no separate states or timings – the response occurs immediately after the input event.
 
 ## Technical Features
-
 - **Adapter-based interface**: The function block communicates exclusively via special adapters, enabling loose coupling and reusability in different environments.
-
 - **Data loss possible**: Since `SINT` only contains 8 bits, over 127 bits of information are lost with a `UDINT` input value. The exact mapping (e.g., clipping or modular reduction) depends on the internal conversion function.
-
 - **No Internal Logic**: The function block consists entirely of the interconnection of the existing conversion function block and two adapters – a pure composition type.
 
 ## State Overview
 The function block does not have its own state machine. It behaves statelessly: Each incoming event at the socket triggers exactly one output at the plug. Processing is deterministic and event-synchronous.
 
 ## Application Scenarios
-
 - **Protocol Adaptation**: When a subsystem delivers data as `UDINT` via an AUDI adapter, but the target system only accepts `SINT` via an AS adapter (e.g., with 8-bit actuator controllers).
-
 - **Value Range Reduction**: Explicitly restricting a large number range to a smaller one to ensure compatibility with older or resource-constrained components.
-
 - **Testing and Simulation**: Use in test environments where adapter interfaces of different data types interact.
 
 ## Comparison with similar function blocks
-
 - **`UDINT_TO_SINT` (direct)**: The pure conversion function block without adapter integration. `AUDI_TO_AS` encapsulates this function block and adds the specific adapters.
-
 - Other adapter converters (e.g., `DINT_TO_AS`, `AUDI_TO_INT`) handle different data type combinations. This function block is specifically optimized for the combination `AUDI` ↔ `AS`.
-
 
 ## Conclusion
 

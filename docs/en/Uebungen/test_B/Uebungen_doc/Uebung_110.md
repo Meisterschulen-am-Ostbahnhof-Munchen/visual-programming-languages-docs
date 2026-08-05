@@ -1,13 +1,8 @@
 # Exercise_110: Exercise on Integer Overflow
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_110`. It demonstrates an important phenomenon in digital data processing: variable overflow.
-
 ----
-
 ## Objective of the Exercise
-
 Understanding the limitations of data types. It shows what happens when the result of a calculation exceeds the maximum value range of a data type.
 
 -----
@@ -21,9 +16,7 @@ Understanding the limitations of data types. It shows what happens when the resu
 ![Uebung_110_network](./Uebung_110_network.svg)
 
 * **`ADD_2`**: Adds two values.
-
 * **Parameters**: `IN1 = 200`, `IN2 = 200`.
-
 * **`F_GT`**: Checks if the result is greater than 200.
 
 -----
@@ -33,7 +26,6 @@ Understanding the limitations of data types. It shows what happens when the resu
 1. Mathematically, `200 + 200 = 400` results in a value of 0.
 
 2. However, since the variable of type `USINT` can only count up to 255, an overflow (wrap-around) occurs.
-
 
 **Parameters**: `200 + 200 = 400`
 

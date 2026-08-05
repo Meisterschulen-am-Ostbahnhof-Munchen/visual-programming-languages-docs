@@ -1,13 +1,8 @@
 # OR_5
-
 ![OR_5](https://user-images.githubusercontent.com/116869307/214143625-4af69974-60f8-424f-a81f-1dbeafacb707.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The OR_5 function block is a generic function block for performing a bitwise OR operation with five inputs. It implements a standard bit function according to IEC 61131-3 and can work with any bit data type.
-
-
 ![OR_5](OR_5.svg)
 
 ## Interface Structure
@@ -36,9 +31,7 @@ The OR_5 function block performs a bitwise OR operation on all five input values
 
 The OR operation is performed according to the following logic:
 
-```
 OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5
-```
 
 ## Technical Features
 - **Generic Data Type**: Uses ANY_BIT, enabling use with various bit data types (BOOL, BYTE, WORD, DWORD, LWORD)
@@ -55,19 +48,14 @@ OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5
 4. Returns to Wait State
 
 ## Application Scenarios
-
 - Combining multiple binary signals in control applications
-
 - Monitoring systems with multiple input conditions
 - Signal processing in industrial automation systems
 - Use in safety circuits with multiple monitoring sensors
 
 ## ⚖️ Comparison with similar devices Function Blocks
-
 - **Standard OR Blocks**: Typically only two inputs, OR_5 offers five inputs
-
 - **AND Blocks**: Perform AND operations instead of OR operations
-
 - **XOR Blocks**: Perform exclusive OR operations
 
 ## Conclusion

@@ -1,11 +1,8 @@
 # GET_UDINT
-
 ![GET_UDINT](./GET_UDINT.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **GET_UDINT** function block reads the current value of a variable of type **UDINT** declared as InOut and provides it as a buffered output. Buffering ensures that the output value remains stable during a cycle, even if the source data changes later.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -30,7 +27,6 @@ The **GET_UDINT** function block reads the current value of a variable of type *
 *Associated Data:*
 
 - **OUT** (Output Value) is provided after a successful read.
-
 - **IN** (InOut Variable) is also associated, meaning its value can be read at the output after the event.
 
 ### **Data Inputs**
@@ -56,12 +52,9 @@ None.
 Upon an event at the **REQ** input, the function block executes the algorithm and sends an acknowledgment event to **CNF**. The algorithm copies the current value of the InOut variable **IN** to the output variable **OUT**. This freezes the value at the time of the request and makes it stably available at the output until the next request.
 
 ## Technical Features
-
 - **InOut Variable:** The parameter **IN** is declared as InOut. This allows direct access to the memory address of the source variable, which can be useful for communication over distributed systems (e.g., fieldbuses). However, the function block only reads the value; it does not write back.
 
-
 ## Technical Features - **Buffering:** The output **OUT** is only updated upon a **REQ** event. Changes to **IN** between two requests have no effect on **OUT**.
-
 - **No Side Effects:** The function block does not modify the InOut variable.
 
 ## State Overview
@@ -72,19 +65,13 @@ The function block has only one state:
 There are no other states; the function block is always ready to process a request.
 
 ## Application Scenarios
-
 - **Buffering of Process Values:** In automation systems where a measured value or manipulated variable (e.g., a counter reading or speed) needs to be frozen at a specific interval before being passed on to other function blocks.
-
 - **Decoupling of Cycles:** When an InOut variable is read by multiple function blocks and a stable value is required within a cycle.
-
 - **Replacement for direct access:** Instead of directly reading an InOut variable, the function block (FB) provides a clear interface (event input, output) and improves system readability.
 
 ## Comparison with similar function blocks
-
 - **MUX (Multiplexer):** A MUX selects between multiple inputs, while **GET_UDINT** buffers exactly one defined value from an InOut variable.
-
 - **GET_DINT / GET_REAL:** Analogous function blocks for other data types that implement the same principle of buffered output of InOut values.
-
 - **Latch function blocks:** These store values and output them upon an event; **GET_UDINT**, on the other hand, overwrites the output with the current value of the source on every request.
 
 ## Conclusion

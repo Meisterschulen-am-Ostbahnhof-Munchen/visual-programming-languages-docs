@@ -1,13 +1,8 @@
 # FB_TOF
-
 ## 🎧 Podcast
-
 * [E_TOF vs. FB_TOF: The event timer that doesn't tick cyclically – a revolution for automation systems? ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
-
 * [FB_TOF and E_TOF: Delay timers in IEC 61131-3 and 61499 ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
-
 ----
-
 ![image](https://github.com/user-attachments/assets/e60568d1-aba5-4e35-9488-8a79d1cb877b)
 
 * * * * * * * * * *
@@ -32,23 +27,14 @@ The FB_TOF block is a standardized function block according to IEC 61131-3. It c
 The interface of the FB_TOF block consists of:
 
 - **Input Event**:
-
 - **REQ (Request)**: This event triggers the execution of the block. It is linked to the input variables **IN** and **PT**.
-
 - **Output Event**:
-
 - **CNF (Confirmation)**: This event is triggered when the execution of the block is complete. It is linked to the output variables **Q** and **ET**.
-
 - **Input Variables**:
-
 - **IN (Input)**: This is a Boolean variable that controls the state of the timer. If **IN** is set to **TRUE**, the timer starts. If **IN** is set to **FALSE**, the delay time begins.
-
 - **PT (Process Time)**: This is a time variable (TIME) that defines the delay time after which the output **Q** is set to **FALSE**.
-
 - **Output Variables**:
-
 - **Q (Output)**: This is a Boolean variable that indicates the timer's state. It remains **TRUE** until the delay time **PT** has elapsed.
-
 - **ET (Elapsed Time)**: This is a time variable (TIME) that indicates the elapsed time since the delay started.
 
 #### Behavior of the FB_TOF Block
@@ -73,7 +59,6 @@ The FB_TOF function block can be used in various industrial control applications
 
 - **Machine Control**: The function block can be used to ensure that a machine continues to run for a specific period of time after being switched off, for example, to complete processes or to implement safety precautions.
 
-
 ``` - **Lighting Control**: This function block can be used in lighting systems to keep the light on for a specific period of time after the switch is turned off.
 
 - **Valve Control**: This function block can be used to keep a valve open for a specific period of time after it has closed, for example, to release pressure.
@@ -81,9 +66,7 @@ The FB_TOF function block can be used in various industrial control applications
 ##
 
 ## 🛠️ Related Exercises
-
 * [Exercise_020e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e2.md)]
-
 * [Exercise_020e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)]
 
 ## Conclusion
@@ -99,7 +82,6 @@ The provided source code demonstrates how the FB_TOF function block can be imple
 ### Chapter 1: The FB_TOF Function Block
 
 The **FB_TOF** (Off-Delay Timer) is a standardized function block according to IEC 61131-3 that implements a delayed shutdown function. A key feature of this function block is the **ET** (Elapsed Time) output, which displays the elapsed time since the delay started. This output is particularly useful for monitoring the delay time progress and for use in control logic.
-
 
 ```A critical aspect of the FB_TOF block, however, is that it **must be called cyclically** to function correctly. This means that the block must be executed in every cycle of the PLC program to correctly calculate the elapsed time **ET** and adhere to the delay time **PT**. If the block is not called regularly, the timer cannot operate correctly, and the delay time may not be adhered to. This dependency on cyclic calling makes the FB_TOF block ideal for traditional PLC systems that operate in fixed cycles.
 

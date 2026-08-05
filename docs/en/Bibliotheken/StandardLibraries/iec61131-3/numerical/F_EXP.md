@@ -1,30 +1,22 @@
 # F_EXP
-
 ![F_EXP](https://user-images.githubusercontent.com/116869307/214145048-d4df6519-62bb-4841-bdd6-c1a7820972e3.png)
-
 * * * * * * * * * *
 ## Introduction
 The F_EXP function block calculates the natural exponential function (e^x) for numerical input values. It is one of the standard functions for numerical variables according to IEC 61131-3 and is used for mathematical calculations in control applications.
-
-
 ![F_EXP](F_EXP.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **REQ**: Service Request - Triggers the calculation of the exponential function
 
 ### **Event Outputs**
-
 - **CNF**: Confirmation of Requested Service - Confirms successful calculation
 
 ### **Data Inputs**
-
 - **IN**: ANY_REAL - Numeric input value for which the exponential function is to be calculated
 
 ### **Data Outputs**
-
 - **OUT**: ANY_REAL - Result of the exponential function (e^IN)
 
 ### **Adapters**
@@ -32,7 +24,6 @@ No adapter interfaces are available.
 
 ## Functionality
 Upon receipt of a REQ event, the F_EXP block calculates the natural exponential function of the value passed to IN. The result is output to OUT and confirmed by a CNF event. The function is mathematically equivalent to calculating e^x, where x is the input value.
-
 
 ``` ## Technical Features
 - Supports the ANY_REAL data type for maximum flexibility with numerical inputs

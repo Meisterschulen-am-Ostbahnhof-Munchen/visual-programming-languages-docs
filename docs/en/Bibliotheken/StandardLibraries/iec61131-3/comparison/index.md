@@ -1,4 +1,1 @@
 # ⚖️ Comparison functions
-
-
-```

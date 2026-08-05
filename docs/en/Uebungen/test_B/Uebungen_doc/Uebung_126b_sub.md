@@ -1,13 +1,8 @@
 # Exercise_126b_sub: Plotting a Sine Wave Function on PCAN Explorer
-
 ![Uebung_126b_sub_network](./Uebung_126b_sub_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise demonstrates the generation of a sine wave signal using the function block `GEN_SIN` and the preparation of the data for transmission via the CAN bus. The generated values are converted into a message format suitable for PCAN Explorer and sent to the adapter `isobus::pgn::tx::Callback` via a callback function block. The goal is to understand signal generation, type conversion, and the structuring of CAN messages in the 4diac IDE.
-
 ## Function Blocks Used
 
 | FB Name | Type | Important Parameters | Short Description |
@@ -37,7 +32,6 @@ The entire processing chain is started by the event `CallbackFB.REQ`. The data t
 
 The output `GEN_SIN.Out` is connected to `F_LREAL_TO_USINT.IN`. The function block `F_LREAL_TO_USINT` is activated by the event `CNF` from `GEN_SIN` and converts the value. Its data output `OUT` feeds the next function block.
 
-
 3. **Type Conversion USINT → BYTE**
 
 `F_USINT_TO_BYTE` receives the value `USINT` and outputs a value `BYTE`. The event sequence is: `GEN_SIN.CNF` → `F_LREAL_TO_USINT.REQ` → `F_LREAL_TO_USINT.CNF` → `F_USINT_TO_BYTE.REQ`.
@@ -50,22 +44,18 @@ The value `BYTE` is connected to `BYTES_TO_ARR08B.IN_00`. The remaining inputs (
 
 `STRUCT_MUX` is triggered by the event of `BYTES_TO_ARR08B.CNF`. It constructs a CAN message of type `isobus::pgn::CAN_MSG` from the received data array (input `data`) and the predefined parameters (`u8Priority = 7`, `u16DaSize = 0`). The structured output `OUT` is forwarded to `CallbackFB.DI1`.
 
-
 6. **Sending via CAN**
 
 `CallbackFB` receives the event `CNF` from `STRUCT_MUX` and sends the message via the adapter `PLUG1` to the PCAN Explorer. The next event is then triggered via `CallbackFB.REQ`, and the cycle begins again.
 
 The event and data connections are implemented in the subapp diagram as follows (simplified representation):
 
-
-```
 CallbackFB.REQ  →  GEN_SIN.REQ
 GEN_SIN.CNF     →  F_LREAL_TO_USINT.REQ
 F_LREAL_TO_USINT.CNF  →  F_USINT_TO_BYTE.REQ
 F_USINT_TO_BYTE.CNF   →  BYTES_TO_ARR08B.REQ
 BYTES_TO_ARR08B.CNF   →  STRUCT_MUX.REQ
 STRUCT_MUX.CNF        →  CallbackFB.CNF
-```
 Data Flows:
 
 `GEN_SIN.Out` → `F_LREAL_TO_USINT.IN` → `OUT` → `F_USINT_TO_BYTE.IN` → `OUT` → `BYTES_TO_ARR08B.IN_00` → `OUT` → `STRUCT_MUX.data` → `OUT` → `CallbackFB.DI1`
@@ -77,7 +67,6 @@ This exercise illustrates the entire path from analog signal generation to the o
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

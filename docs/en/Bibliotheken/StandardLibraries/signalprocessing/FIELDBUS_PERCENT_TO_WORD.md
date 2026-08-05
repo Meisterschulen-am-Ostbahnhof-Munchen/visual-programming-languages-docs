@@ -1,28 +1,19 @@
 # FIELDBUS_PERCENT_TO_WORD
-
 <img width="919" height="181" alt="FIELDBUS_PERCENT_TO_WORD" src="https://github.com/user-attachments/assets/559a5a2e-44fd-433f-b22a-d685fe90c062" />
-
 * * * * * * * * * *
 ## Introduction
 The function block `FIELDBUS_PERCENT_TO_WORD` converts a REAL value in the range of 0.0 to 100.0 into a WORD value in the range of 0 to FAFF (hexadecimal). This function block is particularly suitable for signal processing in fieldbus systems according to the SAE J1939 and ISO 11783 standards.
-
 ## Interface Structure
-
 ### **Event Inputs**
-
 - `REQ`: Trigger event for the conversion. Linked to the input value `RI`.
 
-
 ### **Event Outputs**
-
 - `CNF`: Confirmation event triggered after successful conversion.
 
 ### **Data Inputs**
-
 - `RI` (REAL): Input value in the range 0.0 to 100.0 to be converted.
 
 ### **Data Outputs**
-
 - (WORD): The converted output value in the range 0 to FAFF (hexadecimal).
 
 ### **Adapters**
@@ -39,9 +30,7 @@ The function block performs the following steps:
 
 The conversion is performed using the following formula:
 
-```
 FIELDBUS_PERCENT_TO_WORD = UDINT_TO_WORD(REAL_TO_UDINT(RI * UDINT_TO_REAL(WORD_TO_UDINT(FIELDBUS_SIGNAL::VALID_SIGNAL_W))))
-```
 
 ## Technical Features
 - Uses special type conversion functions (REAL_TO_UDINT, UDINT_TO_WORD, etc.)
@@ -63,9 +52,7 @@ FIELDBUS_PERCENT_TO_WORD = UDINT_TO_WORD(REAL_TO_UDINT(RI * UDINT_TO_REAL(WORD_T
 
 ## ⚖️ Comparison with similar modules
 - Specialized to the specific requirements of SAE J1939 and ISO 11783
-
 - Offers more precise control over the value range than generic conversion blocks
-
 - Optimized for use in signal processing
 
 ## Conclusion
@@ -74,7 +61,6 @@ The `FIELDBUS_PERCENT_TO_WORD` function block is a specialized tool for the prec
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

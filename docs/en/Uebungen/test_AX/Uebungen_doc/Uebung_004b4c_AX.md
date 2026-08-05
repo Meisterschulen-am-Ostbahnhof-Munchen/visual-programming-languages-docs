@@ -1,13 +1,9 @@
 # Exercise_004b4c_AX: Three Interlocked Toggle Flip-Flops in a Chain via AE2 Adapter
-
 ![Uebung_004b4c_AX_network](./Uebung_004b4c_AX_network.svg)
-
 * * * * * * * * * *
 ## Introduction
 This exercise deals with the implementation of a chain of three interlocked toggle flip-flops. The interlocking is achieved via AE2 adapters (bidirectional interfaces), so that each sub-function can only change its state when the preceding flip-flops are inactive. This ensures that only one output can be active at any given time. The inputs are controlled via logiBUS pushbuttons (single-click event), and the outputs are indicated via logiBUS LEDs.
-
 ## Function Blocks (FBs) Used
-
 The following table lists the function blocks used in the network:
 
 | Function Block Name | Type | Description |
@@ -20,52 +16,19 @@ The following table lists the function blocks used in the network:
 
 | `Uebung_004b4c_sub_AX1` … `AX3` | `Uebung_004b4c_sub_AE` (SubApp) | Sub-component, each containing a toggle flip-flop with latching logic. |
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 `| `Uebung_004b4c_sub_AX1` … `AX3` | `Uebung_004b4c_sub_AE` | ... ### Sub-Blocks: `Uebung_004b4c_sub_AE`
 
 - **Type**: SubApp (reusable component)
-
 - **Internal Function Blocks Used**: The SubApp implements a toggle flip-flop (e.g., with an SR flip-flop or a memory element) and a latching circuit that evaluates the state of neighboring SubApps via the AE2 adapters.
-
 
 ``` - **Interfaces**:
 
 - Event input `IND` (from the button)
-
 - Adapter socket and adapter plug (type AE2) for bidirectional communication with neighboring devices
-
 - Data output `Q` (Boolean) for the current flip-flop state
-
 - **Functionality**:
 
 Each sub-function operates as a toggle flip-flop: Upon each positive event at `IND`, the internal state (and thus `Q`) changes, provided the latching condition is met. The latching ensures that a flip-flop can only switch if all preceding flip-flops in the chain are in an inactive state (`Q=0`). The AE2 adapters enable unidirectional state transmission to the next link in the chain. The comment **"using a bidirectional adapter: 1 connection IS SUFFICIENT!"** indicates that only a single adapter connection (to the next link) is necessary for the entire locking logic per sub-app.
-
 
 ``` ## Program Flow and Connections
 
@@ -78,9 +41,7 @@ The three sub-modules are arranged in a chain:
 Each button (`DigitalInput_CLK_I1` … `I3`) generates an event at output `IND` when pressed, which is directly forwarded to event input `IND` of the corresponding sub-module.
 
 - **Adapter Connections**:
-
 - The plug of `Uebung_004b4c_sub_AX1` is connected to the socket of `Uebung_004b4c_sub_AX2`.
-
 - The plug of `Uebung_004b4c_sub_AX2` is connected to the socket of `Uebung_004b4c_sub_AX3`.
 
 These connections pass the current state of each flip-flop to the next (e.g., as a block signal). This ensures that a flip-flop can only toggle if all preceding flip-flops are in the state `false`.
@@ -100,7 +61,6 @@ The output `Q` of each sub-module is connected via an adapter connection (e.g., 
 4. Only when button I1 is pressed again (AX1 becomes inactive) can button I2 activate the second flip-flop.
 
 5. The same applies analogously to the third stage.
-
 
 This exercise demonstrates the implementation of a sequential interlocking chain with minimal connections using bidirectional AE2 adapters.
 

@@ -1,12 +1,8 @@
 # AX_MUX_3
-
 <img width="1205" height="246" alt="image" src="https://github.com/user-attachments/assets/24731b76-9e70-4627-9c7d-a57b754d23f9" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_MUX_3 is a generic multiplexer function block that can switch three input signals to one output. The block allows the selection of one of three input signals based on an index value and forwards the corresponding signal.
-
-
 ![AX_MUX_3](AX_MUX_3.svg)
 
 ## Interface Structure
@@ -38,8 +34,6 @@ The AX_MUX_3 operates as 3:1 multiplexer. Upon receiving a REQ event, the index 
 
 A CNF event is output after successful switching.
 
-
-
 K=1: Connection IN2 → OUT
 
 K=2: Connection IN3 → OUT
@@ -64,11 +58,9 @@ A CNF event is output after successful switching. ## Technical Features
 ## ⚖️ Comparison with Similar Devices
 Compared to simpler multiplexers, the AX_MUX_3 offers three inputs instead of the usual two and uses adapter-based interfaces for standardized signal transmission. The unidirectional AX adapter interface ensures a clear signal flow direction.
 
-
 Comparison with [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_3.md)]
 
 ## 🛠️ Related Exercises
-
 * [Exercise_090a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a2_AX.md)]
 * [Exercise_103](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)]
 * [Exercise_103c](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)]

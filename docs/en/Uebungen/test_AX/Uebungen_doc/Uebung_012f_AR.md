@@ -1,20 +1,13 @@
 # Exercise_012f_AR: Numeric Value Input PHYS and Storage in Non-Volatile Memory (NVS) with Subapp (AR Adapter)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise deals with reading a numeric value (physical quantity) and storing it in non-volatile memory (NVS) using an AR adapter. The subapp serves as a building block for applications that need to read a value once and store it permanently.
-
-
 ``` ## Function Blocks (FBs) Used
 
 ### Sub-Block: `Uebung_012f_sub_AR`
 - **Type**: `MyLib::sys::NVS_IN_AND_STORE_AR`
 - **Parameters**:
-
 - `KEY` = `KEY_I1_STORE`
-
 - `stObj` = `InputNumber_I3`
 - **Functionality**:
 
@@ -27,9 +20,7 @@ The sub-app `Uebung_012f_AR` itself has no input or output interfaces. It instan
 **Learning Objectives of this Exercise:**
 
 - Understand how an AR adapter is used for value input.
-
 - Storing values in non-volatile memory using predefined keys.
-
 - Managing constants from external libraries.
 
 **Difficulty Level:** Medium
@@ -39,11 +30,9 @@ The sub-app `Uebung_012f_AR` itself has no input or output interfaces. It instan
 
 The exercise `Uebung_012f_AR` demonstrates the persistent storage of a numeric value using an AR adapter. The pre-built block `NVS_IN_AND_STORE_AR` is parameterized and encapsulated in a SubApp, resulting in a clear and reusable solution for reading and saving data.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

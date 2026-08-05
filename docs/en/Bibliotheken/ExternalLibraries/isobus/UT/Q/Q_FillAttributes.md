@@ -1,13 +1,8 @@
 # Q_FillAttributes
-
 ![Q_FillAttributes](https://user-images.githubusercontent.com/116869307/214147532-6ef11045-1dcb-4c4d-bdf3-84d87ed73257.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_FillAttributes** is a standards-compliant function module for modifying fill attributes in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.32) specification for VT systems.
-
-
 ![Q_FillAttributes](Q_FillAttributes.svg)
 
 ## Interface Structure
@@ -38,21 +33,17 @@ The **Q_FillAttributes** is a standards-compliant function module for modifying 
 1. **Initialization**:
 
 - `INIT` with object ID
-
 - `INITO` confirms operational readiness
 
 2. **Attribute Change**:
 
 - `REQ` with new fill attributes
-
 - Changes Object Fill Properties
-
 - `CNF` provides result status and previous values
 
 3. **Error Handling**:
 
 - ISO-standardized error codes
-
 - Detailed status messages
 
 ## Technical Features
@@ -97,7 +88,6 @@ The **Q_FillAttributes** is a standards-compliant function module for modifying 
 | -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
-
 - **Design Adjustments**: Dynamic Interface Design
 - **Status Visualization**: Color Highlighting
 - **Pattern Change**: Context-Sensitive Displays

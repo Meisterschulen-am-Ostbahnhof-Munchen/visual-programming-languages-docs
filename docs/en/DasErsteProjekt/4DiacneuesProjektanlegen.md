@@ -1,13 +1,8 @@
 # Creating a new 4Diac project
-
 **Basic understanding of 4Diac**
-
 **4Diac consists of several parts (3)**
-
 1. IDE = Programming on the PC
-
 2. FORTE = Program on the target device (DIN rail moped)
-
 3. Type Library = Block library (part in FORTE and part in the IDE).
 
 **Starting or creating a new project**
@@ -49,8 +44,4 @@ Mapping can now begin. Further instructions can be found in File > Create New Co
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

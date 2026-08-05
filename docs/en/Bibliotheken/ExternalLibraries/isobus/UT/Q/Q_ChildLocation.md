@@ -1,41 +1,28 @@
 # Q_ChildLocation
-
 ![Q_ChildLocation](https://user-images.githubusercontent.com/116869307/214147140-820ec964-b57a-499c-9e0d-1811b56a585c.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_ChildLocation** is a standards-compliant function block for changing the position of child objects in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.14) specification for agricultural tax systems.
-
-
 ![Q_ChildLocation](Q_ChildLocation.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - `INIT`: Initialization Request (with object and parent ID)
 - `REQ`: Position Change Request (with relative coordinates)
 
 ### **Event Outputs**
-
 - `INITO`: Initialization Acknowledgement
 - `CNF`: Change Acknowledgement (with result data)
 
 ### **Data Inputs**
-
 - `u16ObjId` (UINT): Child Object ID
-
 - `u16ObjIdParent` (UINT): Parent Object ID
-
 - `u8Xchange` (USINT): Relative X-Position Change (-128 to +127)
-
 - `u8Ychange` (USINT): Relative Y-position change (-128 to +127)
 
 ### **Data Outputs**
-
 - `STATUS` (STRING): Operational status message
-
 - `u8OldXchange` (USINT): Previous X-change
 - `u8OldYchange` (USINT): Previous Y-change
 - `s16result` (INT): ISO-compliant result code
@@ -45,21 +32,17 @@ The **Q_ChildLocation** is a standards-compliant function block for changing the
 1. **Initialization**:
 
 - `INIT` with child and parent object IDs
-
 - `INITO` confirms operational readiness
 
 2. **Position Change**:
 
 - `REQ` with relative coordinate changes
-
 - Values are interpreted as signed 8-bit
-
 - `CNF` returns the result and previous values
 
 3. **Error Handling**:
 
 - ISO-standardized error codes
-
 - Detailed status messages
 
 ## Technical Features
@@ -92,13 +75,9 @@ The **Q_ChildLocation** is a standards-compliant function block for changing the
 | -128 | VT_E_HANDLE_INVALID | Invalid Object ID |
 
 ## Application Scenarios
-
 - **Dynamic Layouts**: Object Positioning
-
 - **Animated Elements**: Smooth Movements
-
 - **Responsive Designs**: Adaptation to Different Screen Sizes
-
 - **Grouped Objects**: Shared Movements
 
 ## ⚖️ Comparison with Similar Building Blocks

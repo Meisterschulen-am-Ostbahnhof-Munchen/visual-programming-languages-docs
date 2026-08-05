@@ -1,16 +1,10 @@
 # Exercise_201b_AX: Interlock: ILOCK_BLOCK_AX (Motor clockwise/counterclockwise rotation via adapter)
-
 ![Uebung_201b_AX_network](./Uebung_201b_AX_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise demonstrates the control of a motor with clockwise and counterclockwise rotation using an interlock circuit. The function block `ILOCK_BLOCK_AX` prevents both directions of rotation from being active simultaneously. The input signals come from two digital sensors (I1 and I2) via logiBUS digital signal adapters. The outputs control the motor (clockwise rotation Q5, counterclockwise rotation Q6) and a common low-side driver (Q56) via logiBUS output blocks. Signal adaptation is implemented by the sub-application block `AX_2_TO_3`.
 
-
 ## Function Blocks (FBs) Used
-
 - **DigitalInput_I1** / **DigitalInput_I2**
 
 Type: `logiBUS::io::DI::logiBUS_IXA`
@@ -35,24 +29,15 @@ Type: `logiBUS::io::DQ::logiBUS_QXA`
 
 Parameterized with `Output_Q56`. This output activates the common low-side switch (e.g., ground connection for the motor).
 
-
 ### Sub-Blocks: `AX_2_TO_3`
-
 - **Type**: `MyLib::sys::AX_2_TO_3` (Sub-application, no standalone FB declaration)
-
 - **Internal FBs Used**: The internal structure is not detailed in this exercise. It is a logical implementation that splits two adapter inputs (`UP_IN`, `DOWN_IN`) into three output signals (`UP_OUT`, `DOWN_OUT`, `OR_OUT`).
-
 - **Functionality**:
-
 - `UP_IN` → `UP_OUT` (clockwise rotation signal)
-
 - `DOWN_IN` → `DOWN_OUT` (counterclockwise rotation signal)
-
 - The OR operation of both inputs generates the signal for the low-side driver (`OR_OUT`), since the motor requires a common ground in every direction of rotation.
 
 The exact logic (e.g., edge processing or delay) is determined by the manufacturer of the sub-component.
-
-
 
 ``` ## Program Flow and Connections
 
@@ -63,21 +48,15 @@ The exact logic (e.g., edge processing or delay) is determined by the manufactur
 3. **Signal Conversion**: The outputs of the Interlock module (`UP_OUT`, `DOWN_OUT`) are connected to the corresponding inputs of the Sub-Application module `AX_2_TO_3`. This converts the two adapter signals into three output signals:
 
 - `UP_OUT` → Clockwise (to `Rechtslauf.OUT`)
-
 - `DOWN_OUT` → Counterclockwise (to `Linkslauf.OUT`)
-
 - `OR_OUT` → Low-side driver (to `LowSide_Treiber.OUT`)
 4. **Output Blocks**: The three logiBUS_QXA blocks convert the adapter signals into physical outputs at `Output_Q5`, `Output_Q56`, and `Output_Q6`.
-
 
 **Learning Objectives**:
 
 - Understanding the interlock principle for motor rotation directions
-
 - Working with logiBUS input/output adapters
-
 - Signal conditioning through sub-applications
-
 - Error prevention through mutual interlocking
 
 **Notes**: The exercise can be started in the 4diac IDE after the required logiBUS libraries have been imported. The entire process is real-time capable and simulates safe motor control.
@@ -89,8 +68,4 @@ The exercise `Uebung_201b_AX` implements an interlock-controlled motor with cloc
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

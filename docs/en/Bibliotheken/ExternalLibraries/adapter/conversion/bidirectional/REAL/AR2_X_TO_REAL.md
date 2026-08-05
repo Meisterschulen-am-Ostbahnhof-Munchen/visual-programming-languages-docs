@@ -1,11 +1,8 @@
 # AR2_X_TO_REAL
-
 ![AR2_X_TO_REAL](./AR2_X_TO_REAL.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **AR2_X_TO_REAL** function block is a composite module that acts as a bridge between an AR2 adapter interface and REAL values. It enables bidirectional data transfer and conversion, with the actual conversion being performed by an external adapter of type `adapter::types::bidirectional::AR2`.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -14,7 +11,6 @@ The **AR2_X_TO_REAL** function block is a composite module that acts as a bridge
 |----------|---------------|
 
 | `REQ` | Starts data transfer to the adapter. The data value `OUT` is sent. |
-
 
 ### **Event Outputs**
 
@@ -48,7 +44,6 @@ The **AR2_X_TO_REAL** function block is a composite module that acts as a bridge
 
 | `AR2_IN` | `adapter::types::bidirectional::AR2` | Socket | Bidirectional adapter for AR2 communication and conversion. |
 
-
 ## Functionality
 
 The module functions purely as a mediation layer:
@@ -62,29 +57,21 @@ The module functions purely as a mediation layer:
 The actual conversion direction is determined by the implementation of the connected adapter. The name of the function block suggests a primary conversion from AR2 to REAL, but the bidirectional adapter interface also allows for the reverse direction.
 
 ## Technical Features
-
 - **Composite Function Block**: Contains no internal logic; it simply combines an adapter socket with event and data connections.
-
 - **Bidirectional Adapter**: The interface `AR2_IN` must provide an adapter of type `adapter::types::bidirectional::AR2`, which implements the actual conversion.
-
 - **Simple Coupling**: The function block separates the REAL world from the AR2 world, thus enabling modular integration.
 
 ## State Overview
 The function block has no internal states of its own. Its behavior is entirely controlled by the external events `REQ` and the adapter's feedback.
 
-
 ## Application Scenarios
-
 - **Connecting AR2-based sensors/actuators** to a control system that uses REAL values.
-
 - **Bidirectional data bridge** in mixed automation environments where AR2 and REAL protocols interact.
-
 - **Test and simulation setups** where AR2 data needs to be replaced with easily manageable REAL values.
 
 ## Comparison with Similar Components
 
 While direct conversion components (e.g., AR2_TO_REAL) hardwire the conversion, this composite component allows for the flexible connection of an external adapter. This decouples the conversion logic, allowing it to be replaced depending on the application without changing the rest of the configuration.
-
 
 ## Conclusion
 

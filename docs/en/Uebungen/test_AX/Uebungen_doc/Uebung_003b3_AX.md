@@ -1,15 +1,9 @@
 # Exercise_003b3_AX: 16 Wireless Buttons on DataPanel 16
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-
 This article describes the logiBUS® exercise `Uebung_003b3_AX`. This exercise is the logical continuation of `Uebung_003b2_AX`. It uses explicitly parameterized, typed sub-applications to map 15 wireless buttons to 15 outputs.
-
 ----
-
 ## Objective of the Exercise
-
 The objective is maximum reusability and clarity. By using typed sub-applications with exposed parameters, the entire configuration (which button to which output) can be made directly in the main view without having to click through to the sub-modules.
-
 
 -----
 
@@ -20,8 +14,6 @@ The objective is maximum reusability and clarity. By using typed sub-application
 ### Typed Subapplication: `Uebung_003b3_sub_AX`
 
 [cite_start]This component is identical to the functionality in `Uebung_003b2_sub_AX`, however, the parameters `Input`, `Output`, and `u8SAMember` are clearly exposed[cite: 2].
-
-
 
 ### Instance Configuration
 

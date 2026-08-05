@@ -1,30 +1,19 @@
 # Exercise_011e_MIXA: Passing through Numeric Value Input I1 to N3 (Software Scale via NumericObjectPool_S) incorrectly!
-
 ![Uebung_011e_MIXA_network](./Uebung_011e_MIXA_network.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 This exercise demonstrates the incorrect passing through of a numeric input value from **InputNumber_I1** to **OutputNumber_N3**. The value is passed without correct scaling (software scale) because the namespaces used, `DefaultPool` and `DefaultPool_Numeric`, are incompatible. The goal is to raise awareness of the problem of correctly mapping source and target objects.
-
 
 ## Function Blocks (FBs) Used
 
 ### InputNumber_I1
-
 - **Type**: `isobus::UT::io::NumericValue::NumericValue_IDA`
-
 - **Parameters**:
-
 - `QI` = `TRUE`
-
 - `u16ObjId` = `InputNumber_I1`
-
 - **Functionality**:
 
 Reads the current value of the numeric input **I1** from the pool `DefaultPool` and makes it available at the adapter output `IN`.
-
 
 ### F_DWORD_TO_UDINT
 - **Type**: `adapter::conversion::unidirectional::AD_TO_AR`
@@ -33,12 +22,9 @@ Reads the current value of the numeric input **I1** from the pool `DefaultPool` 
 
 Converts the DWORD value at the adapter input `AD_IN` into a UDINT value and outputs it at the adapter output `AR_OUT`.
 
-
 ### Q_NumericValue_PHYS
-
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYSA`
 - **Parameters**:
-
 - `stObj` = `OutputNumber_N3`
 - **Functionality**:
 
@@ -57,9 +43,7 @@ The SubApp network connects the three function blocks in a chain:
 **Note**: The namespaces of the two objects are incompatible:
 
 - `InputNumber_I1` originates from `Uebungen::const::UT::DefaultPool`.
-
 - `OutputNumber_N3` originates from `Uebungen::const::UT::DefaultPool_Numeric`.
-
 
 Therefore, while the value is technically passed on, the scaling or object association (software scale) is not correctly configured – this exercise serves as a negative example.
 

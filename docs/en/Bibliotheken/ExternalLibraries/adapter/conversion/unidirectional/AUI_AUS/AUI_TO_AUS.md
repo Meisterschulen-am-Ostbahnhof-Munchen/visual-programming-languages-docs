@@ -1,12 +1,8 @@
 # AUI_TO_AUS
-
 ![AUI_TO_AUS](./AUI_TO_AUS.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **AUI_TO_AUS** serves as a composite module for converting an AUI adapter (data type UINT) into an AUS adapter (data type USINT). It is typically used to mediate between different adapter types in the 4diac IDE when a reduction in the value range or a type conversion is required. The module encapsulates the conversion logic and enables seamless integration into existing runtime environments.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -49,13 +45,9 @@ The function block operates as a simple pass-through element with type conversio
 All coupling occurs via the event and data connections in the FB network of the composite block.
 
 ## Technical Features
-
 - **Range Limitation**: Converting UINT (0…65535) to USINT (0…255) inevitably results in information loss if the input value is greater than 255. Users must ensure that the input value range meets expectations.
-
 - **No State Storage**: The FB is stateless – all processing occurs independently of previous conversions.
-
 - **Reusability**: The function block is designed as an encapsulated component and can be used in different projects without having to reimplement the conversion logic.
-
 - **Compatibility**: The availability of the library `iec61131::conversion::F_UINT_TO_USINT` is required.
 
 ## State Overview
@@ -63,20 +55,14 @@ All coupling occurs via the event and data connections in the FB network of the 
 The function block does not have an explicit state machine. However, the internal process can be described as two-step:
 
 - **Ready (Idle)**: The function block waits for an incoming event at the socket.
-
 - **Processing (Convert)**: After the event is received, the conversion is performed and the output event is triggered. The function block then immediately returns to the ready state.
 
 A detailed state graph is not required, as the function block does not have any delays or multi-stage steps.
 
-
 ## Application Scenarios
-
 - **Sensor Connection**: A sensor delivers values in UINT format that must be passed to subsequent logic with a USINT request.
-
 - **Device Coupling**: Seamless communication is established between two devices or components that use different adapter types.
-
 - **Data Reduction**: In cases where the higher resolution of a UINT is not required, conversion to USINT can offer storage and bandwidth advantages.
-
 - **System Migration**: When switching from older to newer adapter protocols, this function block can serve as a temporary or permanent bridge.
 
 ## Comparison with Similar Function Blocks
@@ -87,11 +73,9 @@ Other conversion function blocks exist in the 4diac library, e.g., `F_UINT_TO_US
 
 The **AUI_TO_AUS** is a compact and focused function block for adapter-based conversion from UINT to USINT. Its composite structure facilitates integration into existing 4diac projects, reduces wiring effort, and improves clarity. Its simple functionality and clear interface make it a useful tool for all applications requiring type conversion at the adapter level.
 
-
 # Conclusion ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,11 +1,8 @@
 # SPLIT_MI_DO_S_Octal_SA
-
 ![SPLIT_MI_DO_S_Octal_SA](./SPLIT_MI_DO_S_Octal_SA.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **SPLIT_MI_DO_S_Octal_SA** is used to split a single data value of type `DataPanel_MI_DO_S_Octal_SA` into eight separate outputs of type `DataPanel_MI_DO_S_Single_SA`. The common portion (`u8SAMember`) is retained unchanged, and the respective port information from the octal input is distributed to the individual outputs.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -61,7 +58,6 @@ This function block implements a simple, event-driven process:
 
 1. An incoming `REQ` event triggers the execution of the algorithm `REQ`.
 
-
 ### **Adapters**
 No adapters available.
 
@@ -71,7 +67,6 @@ This function block implements a simple, event-driven sequence:
 
 1. An incoming `REQ` event triggers the execution of the algorithm `REQ`.
 
-
 ### **Adapters**
 
 # 2. The algorithm copies the array `u8SAMember` from the input `IN` to each of the eight outputs (`OUT1` … `OUT8`).
@@ -79,45 +74,32 @@ This function block implements a simple, event-driven sequence:
 3. Each output also receives the corresponding port value from the octal input:
 
 - `OUT1.Port := IN.Port1`
-
 - `OUT2.Port := IN.Port2`
-
 - …
-
 - `OUT8.Port := IN.Port8`
 4. Upon completion, the event `CNF` is sent, indicating that all eight outputs are valid.
 
 ## Technical Features
-
 - The function block is implemented as a **SimpleFB** (simple function block) and operates without a state machine with multiple states – processing occurs in a single step.
-
 - There is no concurrency or time-critical processes; the partitioning occurs synchronously with the `REQ` event.
-
 - The types `DataPanel_MI_DO_S_Octal_SA` and `DataPanel_MI_DO_S_Single_SA` must be defined in the same data namespace (here, `DataPanel::io::MI::DQ`).
 
 ## State Overview
 The function block has exactly one state, `REQ`:
 
 - **Entry** via the `REQ` event.
-
 - **Action**: Execution of the algorithm `REQ`.
-
 - **Output**: Sending the `CNF` event (all outputs are carried out simultaneously).
-
 
 There are no other states that indicate delay or error handling.
 
 ## Application Scenarios
-
 - Splitting an octal data bus (e.g., a module with eight identical digital outputs) into individual logical channels.
-
 - Interface between an octal sensor/actuator panel and a controller that processes individual outputs separately.
-
 - Preprocessing in automation technology when a data packet contains multiple ports that need to be forwarded separately.
 
 ## Comparison with Similar Components
 Comparable components exist for other data structures (e.g., `SPLIT_MI_DO_S_Octal_SA` for specific panel types). The basic mechanism—splitting a composite data type into its components—is universal but differs depending on the data field name and type.
-
 
 ## Conclusion
 

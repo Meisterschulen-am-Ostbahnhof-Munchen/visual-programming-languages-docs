@@ -1,23 +1,16 @@
 # AND_6_BOOL
-
 <img width="1383" height="362" alt="image" src="https://github.com/user-attachments/assets/c763f4fa-77f1-49b2-a946-396f41d8094f" />
-
 * * * * * * * * * *
 ## Introduction
 The function block `AND_6_BOOL` is a standard function block for calculating the logical AND operation. It performs a bitwise AND operation using six separate Boolean inputs. This block belongs to the category of standard Boolean functions and is designed for use in control applications according to IEC 61131-3.
-
 ![AND_6_BOOL](AND_6_BOOL.svg)
-
 ## Interface Structure
 
 ### **Event Inputs**
-
 * **REQ** (Normal Execution Request): This event triggers the calculation of the AND operation. Upon receiving `REQ`, the values of all six data inputs (qzmsdocs000004 to `IN6`) are read and processed.
 
 ### **Event Outputs**
-
 * **CNF** (Execution Confirmation): This event signals the completion of the calculation. It is output along with the calculated result at data output `OUT`.
-
 
 ### **Data Inputs**
 * **IN1** (BOOL): AND input 1.
@@ -30,7 +23,6 @@ The function block `AND_6_BOOL` is a standard function block for calculating the
 ### **Data Outputs**
 * **OUT** (BOOL): Result of the AND operation. The output is only `TRUE` if **all** six inputs (`IN1` to `IN6`) have the value `TRUE`. In all other cases, the output is `FALSE`.
 
-
 ### **Adapter**
 This function block has no adapter interfaces.
 
@@ -40,9 +32,7 @@ The functionality is deterministic and simple: Upon each occurrence of the event
 
 ## Technical Features
 * **Generic Block:** The block is implemented as a generic block (`GEN_AND`), meaning it is a specific instance of a more general AND function block family.
-
 * **Fixed Number of Inputs:** Unlike blocks with a variable number of inputs, this block has exactly six fixed inputs.
-
 * **Event-driven:** The operation is executed exclusively by an incoming event (`REQ`), which is typical for the function block (FB) architecture in 4diac.
 
 ## State Overview
@@ -53,17 +43,12 @@ Typical applications include safety and enable chains in control logic, where mu
 
 * **Machine Start:** A machine will only start if all safety doors are closed (`TRUE`) and all emergency stop buttons are not pressed (`TRUE`).
 
-
 ## Application Scenarios * **Process Release:** A process step is released only if all upstream steps have been successfully completed (`TRUE`) and all required resources are available (`TRUE`).
-
 * **Multiple Sensor Polling:** Evaluates multiple sensors, all of which must provide a signal to confirm a position or state.
 
 ## ⚖️ Comparison with Similar Blocks
-
 * **AND (with 2 inputs):** The standard `AND` block typically has only two inputs. `AND_6_BOOL` offers a specialized, more compact representation for applications with exactly six inputs, without the need to chain multiple blocks together. See: [AND_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_6.md)
-
 * **GEN_AND (Generic AND Block):** `AND_6_BOOL` is a concrete instance of this generic type. Other instances could have a different number of inputs (e.g., `AND_4_BOOL`).
-
 * **OR_6_BOOL:** A similar block, but it performs a logical OR operation where the result is `TRUE` if at least one input is `TRUE`.
 
 ## Conclusion
@@ -72,7 +57,6 @@ The `AND_6_BOOL` function block is a reliable and easy-to-use block for six-inpu
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

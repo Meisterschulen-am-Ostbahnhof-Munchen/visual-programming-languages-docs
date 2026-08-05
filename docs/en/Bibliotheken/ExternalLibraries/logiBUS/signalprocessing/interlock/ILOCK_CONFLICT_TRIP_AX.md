@@ -1,16 +1,11 @@
 # ILOCK_CONFLICT_TRIP_AX
-
 ![ILOCK_CONFLICT_TRIP_AX](./ILOCK_CONFLICT_TRIP_AX.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block `ILOCK_CONFLICT_TRIP_AX` implements interlock logic for two opposing directions (UP and DOWN). It prioritizes the first active input signal and immediately switches to a trip state when both inputs are activated simultaneously. Resetting from the trip state is only possible via the event `EI_RESET` when both inputs are inactive. All communication takes place via adapters of type `unidirectional::AX`, enabling flexible and modular integration.
-
 ## Interface Structure
 ### **Event Inputs**
-
 - **EI_RESET** – Event to reset the trip state (only effective if both data inputs of the adapters are FALSE).
-
 
 ### **Event Outputs**
 The FB has no direct event outputs. State changes are signaled via the event outputs of the output adapters (plugs):
@@ -23,14 +18,12 @@ The FB has no direct event outputs. State changes are signaled via the event out
 The FB has no direct data inputs. The input data is provided via the adapter sockets:
 
 - **UP_IN.D1** (BOOL) – Enables the up direction.
-
 - **DOWN_IN.D1** (BOOL) – Enables the down direction.
 
 ### **Data Outputs**
 The FB has no direct data outputs. The output data is provided via the adapter plugs:
 
 - **UP_OUT.D1** (BOOL) – Signal for the up direction.
-
 - **DOWN_OUT.D1** (BOOL) – Signal for the down direction. - **TRIP_OUT.D1** (BOOL) – Signal for trip state.
 
 ### **Adapters**
@@ -64,21 +57,17 @@ The function block operates as a finite state machine with four states:
 1. **STOP** – Idle state. All outputs are FALSE.
 
 - On event `UP_IN.E1` with the condition `UP_IN.D1 AND NOT DOWN_IN.D1` → transition to **UP**.
-
 - On event `DOWN_IN.E1` with condition `DOWN_IN.D1 AND NOT UP_IN.D1` → transition to **DOWN**.
-
 - On event at either input with condition `UP_IN.D1 AND DOWN_IN.D1` → transition to **TRIP**.
 
 2. **UP** – Upward direction active. `UP_OUT.D1 = TRUE`, all others FALSE.
 
 - On event `UP_IN.E1` with `NOT UP_IN.D1` → return to **STOP**.
-
 - On event `DOWN_IN.E1` with `DOWN_IN.D1` → **TRIP** (conflict).
 
 3. **DOWN** – Downward direction active. `DOWN_OUT.D1 = TRUE`, all others FALSE.
 
 - On event `DOWN_IN.E1` with `NOT DOWN_IN.D1` → return to **STOP**.
-
 - On event `UP_IN.E1` with `UP_IN.D1` → **TRIP** (conflict).
 
 4. **TRIP** – Error/conflict state. `TRIP_OUT.D1 = TRUE`, all others FALSE.
@@ -89,11 +78,8 @@ Prioritization is implicit: As long as there is no conflict, the first detected 
 
 ## Technical Features
 - **Adapter-based communication:** All inputs and outputs are implemented as adapters, enabling loose coupling and easy reuse in complex systems.
-
 - **Trip on conflict:** Simultaneous activation of both directions immediately triggers a separate trip state, which can only be exited by an explicit reset.
-
 - **Reset condition:** The reset (`EI_RESET`) is only effective if both input data are FALSE – this prevents accidental release while a conflict persists.
-
 - **No direct events/data:** The function block has no traditional event or data inputs/outputs, but uses only the adapter interfaces.
 
 ## State overview
@@ -113,36 +99,22 @@ Prioritization is implicit: As long as there is no conflict, the first detected 
 **Important Transitions:**
 
 - STOP → UP: when UP_IN is active and DOWN_IN is inactive.
-
 - STOP → DOWN: when DOWN_IN is active and UP_IN is inactive.
-
 - STOP → TRIP: when both inputs are active simultaneously (conflict).
-
 - UP → STOP: when UP_IN is deactivated.
-
 - UP → TRIP: when DOWN_IN is active.
-
 - DOWN → STOP: when DOWN_IN is deactivated.
-
 - DOWN → TRIP: when UP_IN is active.
-
 - TRIP → STOP: only via EI_RESET when both inputs are inactive.
 
 ## Application Scenarios
-
 - **Interlock Control on Machines:** Prevents simultaneous movement in two opposite directions (e.g., raising/lowering, forward/backward).
-
 - **Safety-Related Applications:** Detects critical conflict situations and enforces a defined error state that must be acknowledged.
-
 - **Adapter-Based Systems:** Integration into modular automation solutions where components communicate via standardized adapters.
 
-
 ## Comparison with Similar Function Blocks
-
 - Simple interlock function blocks (e.g., `ILOCK`) often switch directly between directions without implementing a trip state.
-
 - Function blocks with priority logic favor one direction, while this function block prioritizes the first arriving request and reports an error in case of a conflict.
-
 - `ILOCK_CONFLICT_TRIP_AX` is distinguished by its explicit trip state and adapter interface – this enables a clean separation of control and diagnostic functions.
 
 ## Conclusion

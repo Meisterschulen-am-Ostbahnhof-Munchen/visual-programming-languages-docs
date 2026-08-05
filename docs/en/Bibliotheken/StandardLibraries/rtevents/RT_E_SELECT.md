@@ -1,12 +1,8 @@
 # RT_E_SELECT
-
 * * * * * * * * * *
-
 ## Introduction
 Real-time version of the E_SELECT block. Selects one of two input events based on a selector.
-
 ![RT_E_SELECT](RT_E_SELECT.svg)
-
 ## Metadata
 
 | Attribute | Value |
@@ -22,5 +18,4 @@ Real-time version of the E_SELECT block. Selects one of two input events based o
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

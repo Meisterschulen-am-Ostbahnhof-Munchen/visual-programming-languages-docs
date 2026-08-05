@@ -1,12 +1,8 @@
 # ASR2_SR2_TO_4EVENTS
-
 <img width="1144" height="209" alt="image" src="https://github.com/user-attachments/assets/86e61c8f-102b-496b-bc1f-d0e024540466" />
-
 * * * * * * * * * *
-
 ## Introduction
 The ASR2_SR2_TO_4EVENTS function block is a composite function block that provides the ASR2 adapter signals as four discrete event endpoints. It enables bidirectional conversion between ASR2 adapter interfaces and discrete event inputs and outputs.
-
 ![ASR2_SR2_TO_4EVENTS](ASR2_SR2_TO_4EVENTS.svg)
 
 ## Interface Structure
@@ -22,12 +18,10 @@ The ASR2_SR2_TO_4EVENTS function block is a composite function block that provid
 ### **Data Inputs**
 No data inputs available.
 
-
 ### **Data Outputs**
 No data outputs available.
 
 #### **Adapters**
-
 - **ASR_IN**: Adapter input of type `adapter::types::bidirectional::ASR2`
 
 ## Functionality
@@ -54,11 +48,9 @@ Compared to simple converter blocks, ASR2_SR2_TO_4EVENTS offers the unique featu
 ## Conclusion
 The ASR2_SR2_TO_4EVENTS function block represents an efficient solution for integrating ASR2 interfaces into 4diac-based control systems. Its simple yet effective pass-through architecture enables seamless communication between different interface types without additional processing latency.
 
-
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

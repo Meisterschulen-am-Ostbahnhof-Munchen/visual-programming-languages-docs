@@ -1,12 +1,8 @@
 # RT_E_PERMIT
-
 * * * * * * * * * *
-
 ## Introduction
 Real-time version of the E_PERMIT block. Allows an event only if the condition (PERMIT) is true.
-
 ![RT_E_PERMIT](RT_E_PERMIT.svg)
-
 ## Metadata
 
 | Attribute | Value |
@@ -22,5 +18,4 @@ Real-time version of the E_PERMIT block. Allows an event only if the condition (
 --
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

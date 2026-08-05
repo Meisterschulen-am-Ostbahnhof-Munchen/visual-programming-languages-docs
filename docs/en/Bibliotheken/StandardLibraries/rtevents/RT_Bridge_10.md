@@ -1,15 +1,10 @@
 # RT_Bridge_10
-
 * * * * * * * * * *
-
 ## Introduction
 The RT_Bridge_10 function block serves as a decoupling bridge for 10 data connections between real-time event chains.
-
 ## Interface Structure
-
 ### **Event Inputs**
 - **RD**: Read data.
-
 - **WR**: Write data.
 
 ### **Event Outputs**
@@ -37,7 +32,4 @@ The RT_Bridge_10 function block serves as a decoupling bridge for 10 data connec
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-```

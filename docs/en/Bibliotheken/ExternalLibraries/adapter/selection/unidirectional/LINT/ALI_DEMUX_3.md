@@ -1,12 +1,8 @@
 # ALI_DEMUX_3
-
 ![ALI_DEMUX_3](./ALI_DEMUX_3.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **ALI_DEMUX_3** is a generic demultiplexer for the ALI (Application Layer Interface) data type. It distributes an incoming ALI data stream to three separate output adapters, with the selection of the active output controlled by an index `K`. This block is suitable for applications where a data source needs to be sequentially routed to different sinks.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -51,32 +47,22 @@ This function block does not have traditional data outputs. The output data is p
 
 | `OUT3` | ALI | Plug | Third output (active with `K = 3`) |
 
-
 ## Functionality
 
 The module operates on the principle of a 1-out-of-3 demultiplexer. As soon as an event `REQ` arrives, the index `K` is evaluated. Depending on the value of `K`, the incoming ALI data stream **from socket `IN`** is routed to the corresponding plug (`OUT1`, `OUT2`, or `OUT3`). After successful routing, the event `CNF` is output.
 
 - Upon `K = 1`, the module forwards the data to `OUT1`.
-
 - For `K = 2`, it forwards the data to `OUT2`.
-
 - For `K = 3`, it forwards the data to `OUT3`.
-
 - All other values of `K` (especially 0 or >3) do not result in any defined behavior; the function block should be limited to valid values in the calling application.
 
 The function block is implemented as a **generic function block** (`GEN_ALI_DEMUX`). This allows the number of outputs to be varied by type parameterization. For the specific instance `ALI_DEMUX_3`, exactly three outputs are defined.
 
-
 ## Technical Features
-
 - **Generic Class:** The function block is based on the generic type `GEN_ALI_DEMUX`. This allows for easy reuse with different channel counts.
-
 - **Adapter-Based Communication:** All data interfaces are implemented as ALI adapters, enabling loose coupling and modular integration into adapter networks.
-
 - **Unidirectional Data Flow:** The socket `IN` and the plugs `OUT1..OUT3` are unidirectional (inbound/outbound), clearly defining the data flow direction.
-
 - **No State Machine:** The function block operates purely event-driven and does not have an explicit internal state machine. Switching occurs synchronously with each `REQ` event.
-
 
 ## State Overview
 
@@ -93,11 +79,8 @@ The component has **no explicit state machine**. The process is deterministic:
 Distinguishing between multiple internal states is not required.
 
 ## Application Scenarios
-
 - **Controlling Multiple Actuators:** A sensor provides ALI data that can be selectively forwarded to three different actuators. The index is set by a higher-level control logic.
-
 - **Channel Selection in Communication Systems:** Distributing an incoming data stream to three parallel receivers, e.g., for testing or monitoring purposes.
-
 - **Resource Switching:** In a manufacturing plant, a measured value can be sent to one of three evaluation units depending on the operating mode.
 
 ## Comparison with Similar Function Blocks

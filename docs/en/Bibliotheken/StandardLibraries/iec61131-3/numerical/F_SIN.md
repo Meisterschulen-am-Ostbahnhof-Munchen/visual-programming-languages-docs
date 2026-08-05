@@ -1,31 +1,22 @@
 # F_SIN
-
 ![F_SIN](https://user-images.githubusercontent.com/116869307/214145144-c567d2d6-40d6-4df3-a9ef-5e336b6ff32f.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The F_SIN function block calculates the sine of an input value in radians. It is a standard function for numerical calculations according to IEC 61131-3, enabling mathematical sine operations in control applications.
-
-
 ![F_SIN](F_SIN.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **REQ**: Service Request - triggers the sine calculation
 
 ### **Event Outputs**
-
 - **CNF**: Confirmation of the requested service - signals the completion of the calculation
 
 ### **Data Inputs**
-
 - **IN**: Input value in radians (Type: ANY_REAL) - the angle whose sine is to be calculated
 
 ### **Data Outputs**
-
 - **OUT**: Output value (Type: ANY_REAL) - the result of the sine calculation
 
 ### **Adapters**

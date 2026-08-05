@@ -1,13 +1,8 @@
 # Read-Only Settings (`settingsReadOnly.ini`)
-
 ## Introduction
-
 In logiBUS® systems, configuration values and parameters are managed in INI files on the ECU's file system. In addition to the freely writable standard configuration file (`settings.ini`), the system supports a read-only settings file: **`settingsReadOnly.ini`**.
-
 This feature is used to permanently freeze factory settings, manufacturer-defined system parameters, fixed communication addresses, or critical hardware and security options. This prevents important parameters from being accidentally changed by operators or by the control system itself.
-
 ---
-
 ## Concept of the Two Configuration Files
 
 The ECU distinguishes between two levels of configuration storage:
@@ -39,11 +34,8 @@ Parameters are read transparently. If a key is stored in `settingsReadOnly.ini`,
 If an attempt is made to change a read-only key (whether via control functions or 4diac IEC 61499 function blocks), the following occurs:
 
 * The **write attempt is rejected**.
-
 * The value defined in `settingsReadOnly.ini` **remains unchanged**.
-
 * The rejection of the write operation is logged and reported back to the calling block logic.
-
 
 ---
 
@@ -52,13 +44,9 @@ If an attempt is made to change a read-only key (whether via control functions o
 For users of 4diac FORTE control programs, the INI function blocks (`INI`, `INI_AX`, `INI_AUI`, `INI_AR`, etc.) behave as follows with read-only parameters:
 
 * **Read event (`GET`)**: Signals the confirmation event `GETO` as usual. The protected value is present at output `VALUEO`, and `STATUS` reports `"OK"`.
-
 * **Read event (`GET`)**: Signals the confirmation event `GETO` as usual. The protected value is present at output `VALUEO`, and `STATUS` reports `"OK"`. * **Write Event (`SET`)**:
-
 * The **normal success event (`SETO`)** is not triggered, but rather the error event **`SETOE`** (*Set Output Error*).
-
 * The data output **`STATUS`** provides the understandable message: **`"Key is read-only"`**.
-
 * The output **`QO`** indicates the error state.
 
 !!! Note "Note for Application Developers"
@@ -100,7 +88,6 @@ bootTimeVT = 90
 
 [System]
 DeviceName = LOGIBUS-NODE-01
-```
 
 ### Example file `settings.ini` (user settings):
 
@@ -110,13 +97,10 @@ UserLanguage = DE
 
 [User]
 OperatorID = 42
-```
 **Result in operation:**
 
 * `NODE1_SA` (`128`), `bootTimeVT` (`90`), and `DeviceName` (`"LOGIBUS-NODE-01"`) are protected and cannot be modified.
-
 * `UserLanguage` (`"DE"`) and `OperatorID` (`42`) can be freely modified and permanently saved by the controller.
-
 * If an old value, `NODE1_SA = 130`, was accidentally present in `settings.ini`, the control unit will automatically delete it during boot, ensuring that the default value, `128`, is always used.
 
 ---
@@ -136,8 +120,4 @@ OperatorID = 42
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

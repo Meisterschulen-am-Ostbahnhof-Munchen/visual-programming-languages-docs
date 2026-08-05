@@ -1,11 +1,8 @@
 # AE_DEMUX_5
-
 ![AE_DEMUX_5](./AE_DEMUX_5.svg)
-
 * * * * * * * * * *
 ## Introduction
 The **AE_DEMUX_5** function block is a generic AE demultiplexer that routes an incoming AE signal via socket **IN** to one of five output adapters (OUT1 … OUT5) based on a selected index. This allows for the targeted distribution of a data stream to different paths.
-
 ## Interface Structure
 ### **Event Inputs**
 
@@ -63,32 +60,22 @@ No data outputs available.
 - If the index is invalid (< 1 oder > 5), no switching occurs; **CNF** is not used.
 
 ## Technical Features
-
 - **Generic Block**: The class can be instantiated under the name `GEN_AE_DEMUX`, where the number of outputs is determined by the symbol name (here, 5).
-
 - **Adapter-Based**: Instead of fixed data ports, AE adapters are used, enabling flexible coupling with other blocks.
-
 - **Type Hash**: A type hash is provided via an attribute for runtime identification.
-
 - **No Internal State Machine**: The functionality is purely event-driven without internal states.
 
 ## State Overview
 The block does not have an explicit state machine. It operates event-driven in one step per **REQ** call. An implicit idle state is represented by waiting for the next event.
 
 ## Application Scenarios
-
 - **Signal Distribution**: Transmission of an AE signal (e.g., sensor value, control command) to various actuators or sub-functions.
-
 - **Channel Selection**: Selection of one of five output channels, e.g., in multi-valve or multiplexer applications.
-
 - **Routing Switch**: Dynamic switching of the target path within a controller.
 
 ## Comparison with Similar Function Blocks
-
 - **AE_DEMUX_2 / AE_DEMUX_10**: Corresponding variants with two or ten outputs – same logic, different number of channels.
-
 - **AE_MUX_X**: Multiplexer (multiple inputs, one output) – the inverse function.
-
 - Compared to a specialized selection block at the data level (e.g., `SELECT_INT`), this block operates at the adapter level and transmits the entire AE context.
 
 ## Conclusion

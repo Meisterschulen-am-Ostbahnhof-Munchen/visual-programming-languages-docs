@@ -1,13 +1,9 @@
 # Data Type Details: WORD
-
 ## Description
 Bit sequence of length 16
-
 ## Normative Definition
 According to **DIN EN 61131-3**, this data type is specified as follows:
-
 | Property | Value |
-
 | :--- | :--- |
 
 | **Bits** | 16 |

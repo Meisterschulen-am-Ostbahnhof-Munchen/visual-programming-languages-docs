@@ -1,12 +1,9 @@
 # logiBUS_DO_S
-
 * * * * * * * * * *
 ## Introduction
 The function block `logiBUS_DO_S` is a structured data type (struct) used to configure a digital output (DO) within the logiBUS system. It defines the necessary parameters to uniquely address and control a physical output pin of a logiBUS I/O module. This data type is typically used as input for function blocks that provide the actual output functionality.
-
 ## Interface Structure
 As a structured data type, `logiBUS_DO_S` does not have event or adapter interfaces in the conventional sense of a function block. Instead, it defines a data structure that is passed as a whole to other blocks.
-
 ## **Data Inputs**
 The structure itself contains the following data field, which is populated when the type is instantiated:
 
@@ -34,12 +31,9 @@ The `logiBUS_DO_S` struct acts as a configuration container. Its main task is to
 
 The initial value of 255 for `Pin` indicates that the pin is not yet configured. Valid pin numbers are within the range supported by the respective logiBUS I/O module (e.g., 0-7 for an 8-channel module).
 
-
 ## Technical Features
 * **Typing:** Using a structured data type instead of a simple `USINT` increases type safety and application readability. It is clear that the value represents a logiBUS output pin.
-
 * **Initial Value:** The initial value of 255 serves as a "Safe State" indicator. Before the structure is correctly configured, this value indicates an inactive or faulty state.
-
 * **Package Assignment:** The struct is part of the `logiBUS::io::DQ` package, indicating its membership in the digital input/output (Digital I/O) of the logiBUS framework.
 
 ## State Overview
@@ -53,16 +47,10 @@ Since it is a passive data type, `logiBUS_DO_S` does not have an internal state 
 
 3. **Initialization:** The default initial value allows variables of this type to be declared without having to populate them immediately. The actual configuration (assigning a valid pin number) can be performed later in the program flow.
 
-
 ## ⚖️ Comparison with Similar Building Blocks
-
 * **Simple `USINT`:** Directly using a `USINT` value for the pin number is possible, but offers less semantic clarity and type safety. The `logiBUS_DO_S` makes the purpose of the data element explicit.
-
 * **`logiBUS_DI_S`:** This is the structural counterpart for digital inputs (DIs). It has an identical structure (a `USINT` field `Pin`), but conceptually belongs to the input side. Separating DO and DI structs improves code readability and maintainability.
-
-
 * ## 🛠️ Related exercises
-
 * [Uebung_003a_AX_sub](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
 * [Uebung_003a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003a_sub.md)
 * [Uebung_003b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b_sub.md)
@@ -86,8 +74,4 @@ The The `logiBUS_DO_S` struct is a simple yet essential helper element in the lo
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-
-```

@@ -1,13 +1,8 @@
 # AX2_X_TO_BOOL
-
 <img width="1186" height="196" alt="image" src="https://github.com/user-attachments/assets/f72801f7-3cc1-4935-9f9d-8c58011e6876" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AX2_X_TO_BOOL function block is a composite function block for converting AX2 data to BOOL values. It serves as a bidirectional adapter for data type conversion between different interfaces in automation systems.
-
-
 ![AX2_X_TO_BOOL](AX2_X_TO_BOOL.svg)
 
 ## Interface Structure
@@ -29,8 +24,6 @@ The AX2_X_TO_BOOL function block is a composite function block for converting AX
 
 ## Functionality
 The function block receives a conversion request via the REQ event and forwards it to the AX2 adapter. The adapter converts AX2 data to BOOL values. After successful conversion, the CNF event containing the converted data is output at the IN output. Simultaneously, BOOL data can be returned to the adapter via the OUT input.
-
-
 
 ``` ## Technical Features
 - Bidirectional data transfer between AX2 and BOOL data types

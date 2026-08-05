@@ -1,23 +1,16 @@
 # AE2_SPLIT_MERGE
-
 <img width="1100" height="217" alt="image" src="https://github.com/user-attachments/assets/2e9417e6-db5d-41ea-95a9-b176f5538af4" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AE2_SPLIT_MERGE is a bidirectional splitter and merge function block that can process events in both directions. The block enables the distribution and merging of events via adapter interfaces, without direct routing between the SOCKET and PLUG.
-
-
 ![AE2_SPLIT_MERGE](AE2_SPLIT_MERGE.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **EI**: Main event input for incoming events
 
 ### **Event Outputs**
-
 - **EO**: Main event output for outgoing events
 
 ### **Data Inputs**
@@ -27,9 +20,7 @@ The AE2_SPLIT_MERGE is a bidirectional splitter and merge function block that ca
 *No data outputs available*
 
 ### **Adapters**
-
 - **PLUG**: Adapter interface of type "adapter::types::bidirectional::AE2"
-
 - **SOCKET**: Adapter interface of type "adapter::types::bidirectional::AE2"
 
 ## Functionality
@@ -51,9 +42,7 @@ The function block operates according to the following principles:
 
 The functional block has no internal state and operates stateless. All incoming events are processed and forwarded immediately.
 
-
 ## Application Scenarios
-
 - Distribution of control events to multiple subsystems
 - Merging of status events from various sources
 - Bidirectional communication in distributed control systems

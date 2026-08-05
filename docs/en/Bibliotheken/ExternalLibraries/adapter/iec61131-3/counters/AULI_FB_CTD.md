@@ -1,13 +1,8 @@
 # AULI_FB_CTD
-
 ![AULI_FB_CTD](./AULI_FB_CTD.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **AULI_FB_CTD** implements a **down counter** based on the data type `ULINT` (unsigned long integer). It is implemented as an **adapter version** and encapsulates the standard function block `FB_CTD_ULINT` from the IEC 61131-3 library. The block allows modular connection via the adapter interfaces CD (Count Down), LD (Load), and PV (Preset Value), as well as the output of the current count value (CV) and a binary signal (Q) via corresponding plug adapters.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -100,16 +95,13 @@ On a rising edge of `CD.D1` and a simultaneous event on `CD.E1`, the counter val
 
 On a rising edge of `LD.D1` and an event on `LD.E1`, the current preset value (`PV.D1`) is loaded into the counter. The counter value is then set to the preset value.
 
-
 3. **PV Event (Preset Value Update):**
 
 An event on `PV.E1` updates the internally stored preset value (without changing the counter). This is useful for dynamically changing the preset during operation.
 
 After each processing operation, the confirmation event `CNF` is sent, along with the events on the plug adapters `Q.E1` and `CV.E1`. The data `Q.D1` and `CV.D1` are updated accordingly.
 
-
 ## Technical Features
-
 - **ULINT Data Type:**
 
 The module uses unsigned 64-bit integers (ULINT), enabling counting ranges from 0 to 2⁶⁴‑1 – suitable for very large counting tasks.
@@ -121,7 +113,6 @@ All inputs and outputs are via adapters (`AX` for binary signals, `AULI` for ULI
 - **Event Output on Every Update:**
 
 The module fires the output events on every incoming event (CD, LD, PV) – even if the counter reading or output value does not change. This creates **permanent triggering** of the downstream network.
-
 
 → **Recommendation:** Use a `AX_D_FF` (differentiator/filter) at the outputs if you only want to react to value changes.
 
@@ -146,7 +137,6 @@ Internally, the function block only manages the **counter value** (CV) and the *
 The output `Q` is set to `TRUE` when `CV = 0` is present; otherwise, it is `FALSE`..
 
 ## Application Scenarios
-
 - **Large-Range Piece Counter:**
 
 Detection of production quantities with a value range > 32 bits (e.g., 10 billion pieces).
@@ -184,7 +174,6 @@ The **AULI_FB_CTD** is a powerful down counter for 64-bit values that is integra
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

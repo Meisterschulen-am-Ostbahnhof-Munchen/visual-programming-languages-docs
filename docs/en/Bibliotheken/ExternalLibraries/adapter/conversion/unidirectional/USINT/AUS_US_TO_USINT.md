@@ -1,13 +1,8 @@
 # AUS_US_TO_USINT
-
 ## Introduction
 The AUS_US_TO_USINT function block is a composite function block used to convert the AUS adapter format to a USINT value.
-
-
 ![AUS_US_TO_USINT](AUS_US_TO_USINT.svg)
-
 ## Interface Structure
-
 ### **Event Inputs**
 - No direct event inputs available
 

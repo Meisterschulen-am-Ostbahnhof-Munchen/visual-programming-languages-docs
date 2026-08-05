@@ -1,13 +1,8 @@
 # Q_ObjHideShow
-
 ![Q_ObjHideShow](https://user-images.githubusercontent.com/116869307/214148121-b8115f93-fc92-499d-ae8f-b207656d64c0.png)
-
 * * * * * * * * * *
-
 ## Introduction
 The **Q_ObjHideShow** is a standards-compliant function block for controlling the visibility of container objects in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.2) specification for VT containers.
-
-
 ![Q_ObjHideShow](Q_ObjHideShow.svg)
 
 ## Interface Structure
@@ -26,9 +21,7 @@ The **Q_ObjHideShow** is a standards-compliant function block for controlling th
 
 ### **Data Outputs**
 - `STATUS` (STRING): Operational status message
-
 - `qOldVisible` (BOOL): Previous visibility status
-
 - `s16result` (INT): ISO-compliant result code
 
 ## Functionality
@@ -36,15 +29,12 @@ The **Q_ObjHideShow** is a standards-compliant function block for controlling th
 1. **Initialization**:
 
 - `INIT` with container object ID
-
 - `INITO` confirms operational readiness
 
 2. **Visibility Change**:
 
 - `REQ` with desired visibility status
-
 - Changes the display of the container and all contained objects
-
 - `CNF` returns operational status and previous state
 
 3. **Special Cases**:
@@ -87,13 +77,9 @@ The **Q_ObjHideShow** is a standards-compliant function block for controlling th
 | -130 | VT_E_NOT_ALIVE | VT not active |
 
 ## Application Scenarios
-
 - **Dynamic Interfaces**: Context-sensitive displays
-
 - **Screen Manager**: View switching
-
 - **Alarm Management**: Fault message containers
-
 - **User Guidance**: Step-by-step instructions
 
 ## ⚖️ Comparison with similar components
@@ -111,7 +97,6 @@ The **Q_ObjHideShow** is a standards-compliant function block for controlling th
 | Feedback | ✔ | ✖ | ✔ |
 
 ## 🛠️ Related Exercises
-
 * [Exercise_014](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_014.md)
 
 ## Conclusion

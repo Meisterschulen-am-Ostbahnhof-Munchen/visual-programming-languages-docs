@@ -1,13 +1,8 @@
 # logiBUS_LED_strip_QXA
-
 ![logiBUS_LED_strip_QXA](./logiBUS_LED_strip_QXA.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **logiBUS_LED_strip_QXA** is a composite function block for controlling an LED strip via the logiBUS protocol. It encapsulates the communication with the hardware and enables color- and frequency-dependent control of individual outputs. This block is particularly suitable for use in agricultural technology, where flexible LED signaling is required.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -70,24 +65,16 @@ As soon as an event (E1) arrives via the **OUT* adapter, a **REQ** request is tr
 Data flows:
 
 - **Out.D1** → internal FB.QX.OUT (output data of the adapter)
-
 - **Qi**, **PARAMS**, **Output**, **Colour**, **FREQ** → forwarded to QX accordingly.
-
 
 The outputs **QO** and **STATUS** reflect the internal state of the sub-block.
 
 ## Technical Features
-
 - Composite FB: facilitates the reuse and encapsulation of the hardware control.
-
 - Use of an adapter (OUT) for unidirectional data transfer to the logiBUS resource.
-
 - Initial parameter values are predefined as constants (e.g., `LED_strip::Output_strip`, `LED_COLOURS::LED_GREEN`) but can be overwritten at runtime.
-
 - The internal FB `logiBUS_LED_strip_QX` is responsible for the actual bus communication; this block only provides a simplified interface.
-
 - Copyright and developer: HR Agrartechnik GmbH (Version 1.0, 2026-02-23).
-
 
 ## State Overview
 
@@ -102,21 +89,14 @@ The function block has no explicitly modeled states; its behavior is determined 
 4. **Error State**: If QO = FALSE or STATUS contains an error, communication is disrupted.
 
 ## Application Scenarios
-
 - **Agricultural Machinery**: Color-coded status indicators (e.g., green for ready, red for alarm) on LED strips.
-
 - **Field Edge Lighting**: Control of multiple LED strip outputs with different colors and flashing frequencies.
-
 - **Custom Signaling**: Integration into higher-level control systems for visualizing operating states.
-
 - **Development and Testing**: Use as a simple building block for simulating and commissioning logiBUS components.
 
 ## Comparison with Similar Building Blocks
-
 - **logiBUS_LED_strip_QX** (direct FB): Offers a more detailed interface with multiple events (REQ) and data. The composite FB **QXA** described here simplifies its use through an adapter interface and a clear separation of initialization and execution.
-
 - **logiBUS_DO_Bit**: Controls individual digital outputs; no color/frequency control.
-
 - **Composite FBs in General**: The QXA is specifically designed for LED strip applications and reduces wiring effort in the higher-level network.
 
 ## Conclusion

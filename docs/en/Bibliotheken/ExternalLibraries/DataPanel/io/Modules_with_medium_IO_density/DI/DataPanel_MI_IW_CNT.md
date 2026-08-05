@@ -1,13 +1,8 @@
 # DataPanel_MI_IW_CNT
-
 ![DataPanel_MI_IW_CNT](./DataPanel_MI_IW_CNT.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The **DataPanel_MI_IW_CNT** is a service interface function block from the DataPanel family of HR Agrartechnik GmbH. It is used to acquire **pulse counter data** via the dedicated hardware inputs 7A and 8A of the underlying bus system. The block encapsulates the initialization, cyclic querying, and event-driven output of the counter values. Typical applications include agricultural machinery where pulse generators (e.g., speed, flow, or position sensors) need to be evaluated. The function block is designed for the IEC 61499-compliant 4diac IDE and uses the service interface patterns defined therein.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -77,15 +72,10 @@ Additionally, the function block can asynchronously output an **IND** indication
 Error handling is provided via the `STATUS` output and the `QO` flag. If an error occurs (e.g., invalid input configuration, hardware unreachable), `QO` is set to `FALSE`, and a corresponding error message is output in `STATUS`.
 
 ## Technical Features
-
 - **Input Identification:** The parameter `Input` must be set to a valid DataPanel input type (7A or 8A). The default value `Invalid` prevents incorrect initialization.
-
 - **Node SA (`u8SAMember`):** Defines the slave address of the DataPanel participant. Valid values are 224 to 239. The predefined value `MI::MI_00` represents the first slave.
-
 - **Asynchronous Indication:** The function block can independently generate **IND** events using `ImpulseDelta` and `TimeDelta`. Both thresholds can be active independently. If either value exceeds the configured threshold, an IND event is triggered. This reduces the bus load compared to cyclic polling.
-
 - **Data Format:** The counter value `IN` is a 16-bit word and allows values from 0 to 65535. The counter is reset to 0 upon overflow.
-
 - **Copyright & Version:** This function block is published under version 1.0 for the year 2026 by HR Agrartechnik GmbH.
 
 ## Status Overview
@@ -110,7 +100,6 @@ The FB (Function Block) cycles through classic service interface states:
 
 After an error, only a new INIT can return the FB to the IDLE state.
 
-
 ## Application Scenarios
 
 1. **Speed Measurement:** A radar sensor or magnetic pulse generator delivers rectangular pulses. The module counts the pulses and outputs the value as CNF or IND. `TimeDelta` can be used for time-based speed calculation.
@@ -120,13 +109,9 @@ After an error, only a new INIT can return the FB to the IDLE state.
 3. **Position Detection:** Distances are measured using an incremental encoder. By combining pulse and time monitoring, both position and speed can be determined.
 
 ## Comparison with Similar Function Blocks
-
 - **DataPanel_MI_DI:** A purely digital input function block (status 0/1) without a counting function. The IW_CNT extends it with pulse counting and asynchronous event triggering.
-
 - **DataPanel_MI_AI:** An analog input function block for voltage or current signals. In contrast, the IW_CNT processes only pulses (discrete) and not a continuous value.
-
 - **CTUD** (IEC 61499 standard counter): This standard function block can count forwards/backwards but does not require low-level initialization. The DataPanel_MI_IW_CNT is specifically connected to the DataPanel hardware and offers the IND function, which is often missing in standard function blocks.
-
 
 ```## Conclusion
 
@@ -135,7 +120,6 @@ The **DataPanel_MI_IW_CNT** is a powerful service interface function block for t
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

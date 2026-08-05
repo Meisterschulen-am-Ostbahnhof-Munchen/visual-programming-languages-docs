@@ -1,13 +1,9 @@
 # DualHysteresis_AR_AX
-
 ![DualHysteresis_AR_AX](./DualHysteresis_AR_AX.svg)
-
 * * * * * * * * * *
 ## Introduction
 The function block **DualHysteresis_AR_AX** performs a two-way analog-to-digital conversion with adjustable hysteresis.
-
 Two binary output signals (`DO_UP`, `DO_DOWN`) are generated from an analog input value. These signals are switched depending on the position of the input signal relative to three parameters:
-
 - **MI** – Average (setpoint center)
 - **DEAD** – Deadband (absolute value)
 - **HYSTERESIS** – Hysteresis (absolute value)
@@ -54,7 +50,6 @@ This ensures reliable switching behavior with a reduced switching frequency, typ
 
 | `QO` | BOOL | Output qualifier – is set to the value of `QI`, reflects the operating state. |
 
-
 ### **Adapters**
 **Sockets (Input Adapters):**
 
@@ -92,20 +87,14 @@ As soon as a new value arrives via the adapter `INPUT` (event `E1`), the hystere
 3. **Return to Neutral**:
 
 - From **UP**, the return occurs at `INPUT.D1 < MI.D1 + ABS(DEAD.D1)` (strict condition).
-
 - From **DOWN**, the return occurs at `INPUT.D1 > MI.D1 - ABS(DEAD.D1)` (strict condition).
 
 If `QI = FALSE` occurs during a `INIT` event, the function block is deinitialized and both outputs are set to `FALSE`. A subsequent `INIT` event with `QI = TRUE` restarts the process.
 
-
 ## Technical Features
-
 - **Use of Absolute Values**: The parameters `DEAD` and `HYSTERESIS` are internally treated as `ABS()`, so negative values do not lead to undesirable behavior.
-
 - **Symmetrical Switching Points**: The thresholds are symmetrically positioned around the mean value `MI`.
-
 - **Qualifier `QI`**: The function block only operates at `QI = TRUE`. At `FALSE`, all outputs are forcibly reset (safe state).
-
 - **Event-Driven Processing**: The hysteresis logic is only evaluated with each new `INPUT.E1` event – no cyclical polling.
 
 ## State Overview
@@ -126,36 +115,25 @@ If `QI = FALSE` occurs during a `INIT` event, the function block is deinitialize
 
 | `DeInit` | Deinitialization at `INIT` with `QI = FALSE`. Sets all outputs to `FALSE` and outputs `INITO`. |
 
-
 **Transitions:**
 
 - `START` → `Init` (with `INIT` and `QI = TRUE`)
-
 - `Init` → `Neutral` (after the first `INPUT.E1`)
-
 - `Neutral` → `UP` / `DOWN` (depending on the input value)
-
 - `UP` → `Neutral` (when the deadband threshold is crossed)
-
 - `DOWN` → `Neutral` (when the deadband limit is exceeded)
-
 - `Neutral` → `DeInit` (with `INIT` and `QI = FALSE`)
-
 - `DeInit` → `START`(Automatic)
 
 ## Application Scenarios
-
 - **Two-Stage Temperature Control**: A heating and a cooling circuit can be operated with their own hysteresis settings, e.g., heating switched on below 18 °C, switched off above 22 °C; cooling switched on above 30 °C, switched off below 26 °C.
-
 - **Level Monitoring**: Two switching points (MIN/MAX) with hysteresis to prevent contact bounce in pump or valve controls.
-
 - **Limit Monitoring with Two Alarm Thresholds**: Upper and lower alarms with on/off delay via hysteresis.
 
 ## Comparison with Similar Function Blocks
 The **DualHysteresis_AR_AX** extends simple hysteresis (switch-on point = switch-off point + hysteresis) by adding a second, inverse direction.
 
 - **Simple Hysteresis**: only one output, one switching threshold.
-
 
 ``` - **DualHysteresis**: two outputs, two opposing thresholds with a shared deadband. This allows, for example, heating and cooling to be controlled separately without overlap.
 

@@ -1,12 +1,8 @@
 # AX_SPLIT_6
-
 <img width="705" height="397" alt="image" src="https://github.com/user-attachments/assets/1b0e2281-e41d-47e1-bad4-9690070e18e8" />
-
 * * * * * * * * * *
 ## Introduction
 The AX_SPLIT_6 function block is a generic component used to split a single AX adapter into six separate AX outputs. This component enables the distribution of signals and data streams from a central source to multiple devices.
-
-
 ![AX_SPLIT_6](AX_SPLIT_6.svg)
 
 ## Interface Structure
@@ -40,7 +36,6 @@ All adapters use the type: `adapter::types::unidirectional::AX`
 ## Functionality
 The AX_SPLIT_6 module functions as a signal distributor. It receives signals via the input adapter IN and forwards them in parallel to all six output adapters (OUT1 to OUT6). Since these are unidirectional AX adapters, signal transmission only occurs in one direction – from the input to the outputs.
 
-
 ## Technical Features
 - Generic function block with the class 'GEN_AX_SPLIT'
 - Uses unidirectional AX adapters for communication
@@ -60,7 +55,6 @@ The block has a simple state:
 
 ## ⚖️ Comparison with Similar Blocks
 Compared to other splitter blocks, AX_SPLIT_6 offers a fixed number of six outputs, which is advantageous for specific applications. Other splitters can offer more or fewer outputs, but may be more complex to configure.
-
 
 Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)]
 

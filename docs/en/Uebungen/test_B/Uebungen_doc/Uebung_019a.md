@@ -1,13 +1,8 @@
 # Exercise_019a: Switching a Mask
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_019a`. Here, mask switching is extended to include a safety function: the alarm.
-
 ----
-
 ## Objective of the Exercise
-
 Learning how to work with alarm masks. In the ISOBUS standard, alarms take precedence over normal data masks and can often only be exited by an explicit acknowledgment (ACK).
 
 -----
@@ -16,17 +11,13 @@ Learning how to work with alarm masks. In the ISOBUS standard, alarms take prece
 
 [cite_start]In `Uebung_019a.SUB`, a four-stage selector (`F_SEL_E_4`) is used for mask selection[cite: 1].
 
-
 ### Function Blocks (FBs)
 
 ![Uebung_019a_network](./Uebung_019a_network.svg)
 
 * **`I1` & `I2`**: Normal screen selection (M1, M2).
-
 * **`I3`**: Alarm trigger.
-
 * **`ACK`**: A softkey on the terminal to acknowledge the alarm.
-
 * **`AlarmMask_A2_medium`**: A special alarm screen from the pool.
 
 -----

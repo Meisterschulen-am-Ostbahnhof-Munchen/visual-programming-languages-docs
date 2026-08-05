@@ -1,13 +1,8 @@
 # AE_E_TO_EVENT
-
 <img width="1231" height="221" alt="image" src="https://github.com/user-attachments/assets/2194d39b-b5e1-4ac1-a0ec-3cc874a94b26" />
-
 * * * * * * * * * *
-
 ## Introduction
 The AE_E_TO_EVENT function block is a composite function block used to convert adapter events into standard events. It enables the conversion of adapter signals into generally usable event outputs and serves as a bridge between adapter interfaces and standardized event-based communication structures.
-
-
 ![AE_E_TO_EVENT](AE_E_TO_EVENT.svg)
 
 ## Interface Structure
@@ -29,7 +24,6 @@ The AE_E_TO_EVENT function block is a composite function block used to convert a
 
 ## Functionality
 The function block forwards the E1 event from the adapter input AE_IN directly to the CNF output. This is a simple pass-through functionality where adapter events are converted into standardized function block events.
-
 
 ## Technical Features
 - Unidirectional signal processing

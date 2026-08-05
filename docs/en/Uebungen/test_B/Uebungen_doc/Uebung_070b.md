@@ -1,18 +1,11 @@
 # Exercise_070b: Outputting WBSD to UT with QI
-
 ![Uebung_070b_network](./Uebung_070b_network.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 This exercise demonstrates the output of the wheel-based machine speed (WBSD) to an ISOBUS Universal Terminal (UT). The qualifier input **QI** of the WBSD block is controlled by a T flip-flop, which is toggled by a digital input (button I2). The current speed value is output via the UT block **Q_NumericValue**.
-
 ## Function Blocks (FBs) Used
-
 - **I_WBSD**
-
 - Type: `isobus::tecu::I_WBSD`
-
 - Provides the wheel-based machine speed as a 16-bit value.
 
 – Events: `IND` (Output), `INIT` (Input)
@@ -52,9 +45,7 @@ This exercise demonstrates the output of the wheel-based machine speed (WBSD) to
 – Data: `Q` (Output)
 
 - **DigitalInput_CLK_I2**
-
 - Type: `logiBUS::io::DI::logiBUS_IE`
-
 - Digital input (I2) with event triggering on button press (BUTTON_SINGLE_CLICK).
 
 – Parameters: `QI` = `TRUE`, `Input` = `Input_I2`, `InputEvent` = `BUTTON_SINGLE_CLICK`
@@ -82,20 +73,15 @@ This exercise demonstrates the output of the wheel-based machine speed (WBSD) to
 3. **Control of WBSD and Output Q2**:
 
 - The flip-flop output `Q` is connected to the qualifier input `QI` of **I_WBSD** and to the data input `OUT` of the digital output **DigitalOutput_Q2**.
-
 - When the flip-flop changes state, the event `EO` is triggered simultaneously, which initializes **I_WBSD** (`INIT`) and updates the digital output (`REQ`).
-
 
 4. **Value Output**:
 
 - The initialized **I_WBSD** outputs the current speed (16-bit) via `WHEELBASEDMACHINESPEED`.
-
 - This value is converted to a 32-bit value in the **F_UINT_TO_UDINT** function block.
-
 - The converter's acknowledgment event `CNF` triggers the **Q_NumericValue** (`REQ`), which takes the converted value (`u32NewValue`) and displays it on the UT.
 
 This exercise thus illustrates the combined use of hardware input, flip-flop logic, and ISOBUS communication for acquiring and displaying a machine parameter.
-
 
 ## Summary
 

@@ -1,23 +1,16 @@
 # OR_5_BOOL
-
 <img width="1370" height="337" alt="image" src="https://github.com/user-attachments/assets/d3d2531f-35f3-4013-86ae-fbe3da61ed57" />
-
 * * * * * * * * * *
 ## Introduction
 The function block `OR_5_BOOL` is a standard function block for calculating the logical OR operation. It performs an OR operation on five separate Boolean input signals. The function block belongs to the category of standard Boolean functions according to IEC 61131-3 and is implemented as a generic function block.
-
 ![OR_5_BOOL](OR_5_BOOL.svg)
-
 ## Interface Structure
 
 ### **Event Inputs**
-
 * **REQ (Normal Execution Request):** This event triggers the execution of the function block. Upon receiving `REQ`, the values of all five inputs (qzmsdocs000004 to `IN5`) are read, and the OR operation is calculated.
 
 ### **Event Outputs**
-
 * **CNF (Execution Confirmation):** This event signals the completion of the calculation. It is output along with the calculated result `OUT`.
-
 
 ### **Data Inputs**
 * **IN1 (BOOL):** OR Input 1.
@@ -31,7 +24,6 @@ The function block `OR_5_BOOL` is a standard function block for calculating the 
 
 ### **Adapters**
 This function block does not have any adapter interfaces.
-
 
 ### ## Functionality
 
@@ -47,31 +39,24 @@ The functionality is deterministic and event-driven:
 
 ## Technical Features
 * **Generic Block:** The block is marked with the attribute `eclipse4diac::core::GenericClassName` as `'GEN_OR'`. This indicates that it is part of a family of generic OR gates with varying numbers of inputs.
-
 * **Package:** The gate is included in package `iec61131::bitwiseOperators`.
-
 * **Event-driven execution:** Computation only occurs when requested by a `REQ` event, enabling energy-efficient and deterministic execution.
 
 ## State overview
 The function block has no internal state in the sense of a memory. Its behavior is purely combinatorial and depends solely on the current input values at the time of the `REQ` event. The block returns to a passive wait state after the `CNF` event is triggered.
 
-
 ## Application Scenarios
 Typical applications can be found in control logic, where a condition is considered fulfilled if one of several possible subconditions is met:
 
 * Monitoring: Alarm triggering when at least one of several monitoring sensors exceeds a threshold.
-
 * Enabling logic: Starting a machine when at least one of several safety devices is activated.
-
 * Selection or prioritization logic in interconnected control systems.
 
 ## ⚖️ Comparison with Similar Function Blocks
 In contrast to this function block with five fixed inputs, 4diac often also includes:
 
 * **OR_2_BOOL, OR_3_BOOL, etc.:** Same functionality, but with a smaller, fixed number of inputs (e.g., 2, 3, 4). See: [OR_5](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_5.md)
-
 * **GEN_OR (Generic OR):** A higher-level, configurable function block that can have a variable number of inputs depending on its instantiation. `OR_5_BOOL` is a specific instantiation of this principle.
-
 * **AND_5_BOOL:** Performs a logical AND operation across all five inputs (the result is only `TRUE` if *all* inputs are `TRUE`).
 
 ## Conclusion
@@ -80,7 +65,6 @@ The `OR_5_BOOL` is a simple, robust, and standards-compliant function block for 
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

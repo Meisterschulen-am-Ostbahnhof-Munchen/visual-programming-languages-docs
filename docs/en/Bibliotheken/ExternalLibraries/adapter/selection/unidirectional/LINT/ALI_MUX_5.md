@@ -1,13 +1,8 @@
 # ALI_MUX_5
-
 ![ALI_MUX_5](./ALI_MUX_5.svg)
-
 * * * * * * * * * *
-
 ## Introduction
-
 The function block **ALI_MUX_5** implements a generic multiplexer for five ALI adapter interfaces. It selects one of the five inputs **IN1** to **IN5** based on an index value **K** (0…4) and forwards its data to the output **OUT**. The selection is triggered by the **REQ** event and acknowledged with **CNF**.
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -69,13 +64,9 @@ Socket (Input) | **IN5** | `adapter::types::unidirectional::ALI` | Fifth input v
 5. For invalid index values (e.g., K ≥ 5), the behavior is undefined; the function block assumes correct index ranges.
 
 ## Technical Features
-
 - **Generic Type**: The function block is declared as a generic function block (GenericClassName `GEN_ALI_MUX`) and can be instantiated in projects for different ALI data types.
-
 - **Adapter-based**: The inputs and outputs are implemented as unidirectional ALI adapters, enabling flexible coupling to other ALI-compatible components.
-
 - **Type Hash**: A `TypeHash` attribute is present but is passed as an empty string and can be completed at runtime by the framework.
-
 - **Package Structure**: The component uses the `adapter::selection::unidirectional` package and imports `TypeHash` from the `eclipse4diac` core.
 
 ## State Overview
@@ -83,23 +74,16 @@ Socket (Input) | **IN5** | `adapter::types::unidirectional::ALI` | Fifth input v
 The component does not have explicit state machines (no ECC states are defined). The sequence control is purely event-driven:
 
 - **IDLE**: Waiting for **REQ**.
-
 - **BUSY**: Upon receiving **REQ**, the adapter connection is switched and **CNF** is triggered. The FB then immediately returns to the IDLE state.
 
 ## Application Scenarios
-
 - **Data Source Switching**: Selection between five different sensors or data sources, all connected via the ALI adapter.
-
 - **Redundancy Management**: A system with multiple identical measuring points can switch to a common evaluation using the multiplexer.
-
 - **Configurable Signal Paths**: In control applications where different inputs must be active depending on the operating mode.
 
 ## Comparison with Similar Function Blocks
-
 - **ALI_MUX_2 / ALI_MUX_4**: These function blocks offer the same functionality for two or four inputs, respectively. The ALI_MUX_5 expands the selection to five channels.
-
 - **ALI_DEMUX**: The demultiplexer distributes one input signal to multiple outputs; the ALI_MUX_5 works in the opposite way.
-
 - **SCALE/CLAMP blocks**: These perform signal processing, while the ALI_MUX_5 offers a simple pass-through function without data manipulation.
 
 ## Conclusion
@@ -109,7 +93,6 @@ The **ALI_MUX_5** is a compact, generic multiplexer for five ALI adapter channel
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

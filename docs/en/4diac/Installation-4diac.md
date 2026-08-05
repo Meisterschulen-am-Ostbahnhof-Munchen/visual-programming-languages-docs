@@ -1,13 +1,8 @@
 # 📦 Installing Eclipse 4diac™
-
 How to install 4diac
-
 [https://cloud.ms-muc.de/](https://cloud.ms-muc.de/)
-
 /volume1/GroupDrives/Students/AgriculturalMechanics/Teaching/SL/Visual-Programming/4diac-ide.zip
-
 4diac-ide.zip
-
 or: [https://drive.google.com/file/d/14FY9VwpcvyYthvsfPYKd3vDPlA09ZFST/view?usp=sharing](https://drive.google.com/file/d/14FY9VwpcvyYthvsfPYKd3vDPlA09ZFST/view?usp=sharing)
 
 Ideally:
@@ -42,7 +37,6 @@ Double-click 4diac-ide
 
 Run anyway.
 
-
 ![](https://user-images.githubusercontent.com/69573151/191045122-9594a014-46e6-4c1f-b5f4-5624626ec24f.png)
 
 ![](https://user-images.githubusercontent.com/69573151/191045265-9d699fb0-7006-400e-9a46-04cc9fcb2a43.png)
@@ -72,6 +66,5 @@ Monitor
 ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
-
 * [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 

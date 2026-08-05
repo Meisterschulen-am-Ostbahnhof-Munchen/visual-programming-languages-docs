@@ -1,13 +1,8 @@
 # Exercise_005: Toggle Flip-Flop with IX
-
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-
 This article describes the logiBUS® exercise `Uebung_005`. It demonstrates how a state-based hardware input (`IX`) can be used to control an event-based toggle flip-flop.
-
 ## 🎧 Podcast
-
 ![Uebung_005_network](./Uebung_005_network.svg)
-
 * [Automation Decoded: Control, Control, Regulate – The Invisible Language of Technology (DIN IEC 60050-351)](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Automatisierung-entschlsselt-Leiten--Steuern--Regeln--Die-unsichtbare-Sprache-der-Technik-DIN-IEC-60050-351-e36t52b)
 
 ----
@@ -23,11 +18,8 @@ Understanding edge detection using event switches. This section demonstrates how
 [cite_start]The subapplication `Uebung_005.SUB` combines a standard input (`IX`) with an event gate to clock a flip-flop[cite: 1].
 
 ### Function Blocks (FBs)
-
 * **`DigitalInput_I1`**: Type `logiBUS_IX`. Provides an event on each level change (press and release).
-
 * **`E_SWITCH`**: Serves as a gate to allow only one of the two edges to pass.
-
 * **`E_T_FF`**: The Toggle Flip-Flop.
 
 -----
@@ -36,17 +28,14 @@ Understanding edge detection using event switches. This section demonstrates how
 
 The circuit uses the data connection from the input to the gate of the switch:
 
-
 ```xml
 <EventConnections>
-    <Connection Source="DigitalInput_I1.IND" Destination="E_SWITCH.EI"/>
-    <Connection Source="E_SWITCH.EO1" Destination="E_T_FF.CLK"/>
+<Connection Source="DigitalInput_I1.IND" Destination="E_SWITCH.EI"/>
+<Connection Source="E_SWITCH.EO1" Destination="E_T_FF.CLK"/>
 </EventConnections>
 <DataConnections>
-    <Connection Source="DigitalInput_I1.IN" Destination="E_SWITCH.G"/>
+<Connection Source="DigitalInput_I1.IN" Destination="E_SWITCH.G"/>
 </DataConnections>
-```
-
 
 [cite_start][cite: 1]
 

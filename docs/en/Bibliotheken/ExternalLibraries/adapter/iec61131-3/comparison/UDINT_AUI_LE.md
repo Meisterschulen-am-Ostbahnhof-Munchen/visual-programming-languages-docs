@@ -1,12 +1,8 @@
 # UDINT_AUI_LE
-
 ![UDINT_AUI_LE](./UDINT_AUI_LE.svg)
-
 * * * * * * * * * *
 ## Introduction
-
 The function block **UDINT_AUI_LE** performs a less-than-equal-to comparison of two values. It is classified as a standard comparison function according to IEC 61131-3 and is specifically designed for use with adapter interfaces. The block encapsulates an internal `F_LE` comparison block and provides its functionality via a unidirectional input adapter (socket) and a unidirectional output adapter (plug).
-
 ## Interface Structure
 
 ### **Event Inputs**
@@ -43,7 +39,6 @@ This function block (FB) does not have its own independent data outputs. The res
 
 | `OUT` | `adapter::types::unidirectional::AX` | Plug (Output) | Outputs the comparison result as a Boolean value (`D1`) and an acknowledgment event (`E1`) |
 
-
 ## Functionality
 
 The function block performs a comparison `IN1 <= IN2`. The comparison is triggered either by an event at input `REQ` or by an incoming event from adapter `IN2.E1` (e.g., after a value update). The internal block `F_LE` (type `iec61131::comparison::F_LE`) compares the two values and sets the result to `OUT.D1`. Simultaneously, the event output `OUT.E1` signals that a new result is available.
@@ -51,13 +46,9 @@ The function block performs a comparison `IN1 <= IN2`. The comparison is trigger
 The logic corresponds to an OR operation of the two trigger sources – both the explicit call via `REQ` and the implicit update of the input adapter trigger the comparison. This enables flexible control of the comparison process.
 
 ## Technical Features
-
 - **Adapter-based interface**: Instead of direct input/output variables, adapters (Socket `IN2`, Plug `OUT`) are used. This makes the function block particularly suitable for use in modular and reusable components.
-
 - **Dual triggering**: The comparison is triggered by both the `REQ` event and the input adapter event. This prevents data loss and simplifies connection to continuously updated data sources.
-
 - **ANY_ELEMENTARY for IN1**: The first input accepts any elementary data type (e.g., INT, REAL, UDINT), making the function block universally applicable.
-
 - **No dedicated event or data outputs**: All external communication takes place exclusively via the adapters, which improves encapsulation.
 
 ## State Overview
@@ -72,15 +63,10 @@ The function block (FB) does not have an explicit state machine; its behavior is
 
 4. Return to **Idle**.
 
-
 ## Application Scenarios
-
 - **Limit Value Monitoring**: The current measured value is entered via `IN1` (e.g., as `REAL`), and the limit value is entered via the adapter `IN2` from a higher-level controller. The output signal `OUT.D1` indicates whether the limit value has been reached or fallen below.
-
 - **Comparison in Modular Systems**: In a distributed automation application, different function block types can communicate via adapters. This block serves as a standardized comparison component with a uniform interface.
-
 - **Data-Driven Logic**: Automatic triggering via `IN2.E1` enables reactive execution as soon as the second comparison value changes – without cyclic polling.
-
 
 ## Comparison with Similar Function Blocks
 

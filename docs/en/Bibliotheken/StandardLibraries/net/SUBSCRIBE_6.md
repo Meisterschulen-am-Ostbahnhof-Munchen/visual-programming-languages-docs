@@ -1,46 +1,31 @@
 # SUBSCRIBE_6
-
 <img width="1291" height="454" alt="image" src="https://github.com/user-attachments/assets/78e6c97e-e525-4b75-a586-df1070801dc0" />
-
 * * * * * * * * * *
-
 ## Introduction
 The SUBSCRIBE_6 function block is used to subscribe to data from a PUBLISH_6 block. It allows the receipt of up to six different data values via a network connection and makes them available for further processing in an IEC 61499 system.
-
-
 ![SUBSCRIBE_6](SUBSCRIBE_6.svg)
 
 ## Interface Structure
 
 ### **Event Inputs**
-
 - **INIT**: Initialization event with associated data QI and ID
-
 - **RSP**: Response event with associated data QI
 
 ### **Event Outputs**
-
 - **INITO**: Initialization confirmation with associated data QO and STATUS
-
 - **IND**: Indication event for newly available data with associated data QO, STATUS, and RD_1 to RD_6
 
 ### **Data Inputs**
-
 - **QI** (BOOL): Qualifier Input - Controls block activation
-
 - **ID** (WSTRING): Identification string for assignment to the corresponding PUBLISH_6 block
 
 ### **Data Outputs**
-
 - **QO** (BOOL): Qualifier Output - Block operation status
-
 - **STATUS** (WSTRING): Status information as a Unicode string
-
 - **RD_1** to **RD_6** (ANY): Received data values (up to 6 different data types)
 
 ## Functionality
 The SUBSCRIBE_6 block initializes itself via the INIT event and establishes a connection to a PUBLISH_6 block with the specified ID. Upon successful initialization, it confirms this with INITO. As soon as new data is available from the PUBLISH_6 block, the SUBSCRIBE_6 block triggers the IND event and makes the received data available via the RD_1 to RD_6 outputs.
-
 
 ## Technical Features
 - Supports up to six different data values simultaneously

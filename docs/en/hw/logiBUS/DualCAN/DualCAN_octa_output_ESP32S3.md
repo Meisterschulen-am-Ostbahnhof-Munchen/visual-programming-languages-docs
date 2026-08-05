@@ -11,9 +11,11 @@ CAN RX 5
 | AnalogInput_I2 |  4 |
 | AnalogInput_I3 |  6 |
 
+```c
 ADC1_CHANNEL_3,     /*!< ADC1 channel 3 is GPIO4  */
 ADC1_CHANNEL_4,     /*!< ADC1 channel 4 is GPIO5  */
 ADC1_CHANNEL_5,     /*!< ADC1 channel 5 is GPIO6  */
+```
 
 Voltage divider is located in the controller:
 

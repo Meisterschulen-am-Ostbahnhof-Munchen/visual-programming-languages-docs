@@ -16,13 +16,11 @@ CAN-RX 35
 | AnalogInput_I3 | 34            |
 | AnalogInput_I4 | 33            |
 
-```
-
-    ADC1_CHANNEL_0 = 0, /*!< ADC1 channel 0 is GPIO36 */
-    ADC1_CHANNEL_3,     /*!< ADC1 channel 3 is GPIO39 */
-    ADC1_CHANNEL_5,     /*!< ADC1 channel 5 is GPIO33 */
-    ADC1_CHANNEL_6,     /*!< ADC1 channel 6 is GPIO34 */
-
+```c
+ADC1_CHANNEL_0 = 0, /*!< ADC1 channel 0 is GPIO36 */
+ADC1_CHANNEL_3,     /*!< ADC1 channel 3 is GPIO39 */
+ADC1_CHANNEL_5,     /*!< ADC1 channel 5 is GPIO33 */
+ADC1_CHANNEL_6,     /*!< ADC1 channel 6 is GPIO34 */
 ```
 
 Spannungsteiler ist im Controller:

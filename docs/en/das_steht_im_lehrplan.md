@@ -14,7 +14,7 @@ Modern agricultural and construction machinery are highly networked, decentraliz
 
 ## 📚 Curriculum Integration (Modules & Learning Units)
 
-### 1. ⚡ [Automated Functions with IEC 61499](./lehrplan_praxis/iec61499_automatisierte_funktionen.md)]
+### 1. ⚡ [Automated Functions with IEC 61499](./lehrplan_praxis/iec61499_automatisierte_funktionen.md)
 - **Curriculum Reference:** Part I LE 1.4 (40 teaching units) | Part II LE 1.1 (160 teaching units)
 - **Content:** Planning, graphical creation, and commissioning of networked mechatronic systems for implementing automated functions (e.g., automatic sequence control for hoists, valves, and drive systems).
 
@@ -22,7 +22,7 @@ Modern agricultural and construction machinery are highly networked, decentraliz
 - **Curriculum Reference:** Part I LE 2.6 (20 teaching units) | Part II LE 1.3 (100 teaching units)
 - **Content:** Structured fault diagnosis, signal tracing, and online debugging in visual function block networks and state machines (ECC) for autonomously operating machines and attachments.
 
-`### 3. 🧩 [Systems Engineering, Signal Flow & State Machines ](./lehrplan_praxis/funktionsbausteine_systemtechnik.md)
+### 3. 🧩 [Systems Engineering, Signal Flow & State Machines ](./lehrplan_praxis/funktionsbausteine_systemtechnik.md)
 
 - **Curriculum Reference:** Part II LE 1.1 (160 hours) & LE 1.4 (40 hours)
 - **Content:** Technical fundamentals of control engineering, signal flow diagrams, abstraction of sensors/actuators, state transition graphs (Execution Control Charts - ECC), vendor-independent function block libraries.

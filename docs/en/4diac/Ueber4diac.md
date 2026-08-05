@@ -24,7 +24,7 @@ we marvel at and admire this technological marvel.
 
 ## xx
 
-[Literatur.md#sonstiges-englisch](../Literatur/SonstigesEnglisch.md)
+[Other English literature](../Literatur/SonstigesEnglisch.md)
 
 [https://www.eclipse.org/4diac/](https://www.eclipse.org/4diac/)
 
